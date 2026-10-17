@@ -1,0 +1,102 @@
+[
+  {
+    "path": "EXECUTION.json",
+    "bytes": 1704,
+    "sha256": "86ed51e02e476e424310ecc20626742b5976402dfe7810126164322fcdae5f99"
+  },
+  {
+    "path": "FINAL_RECEIPT.json",
+    "bytes": 3347,
+    "sha256": "18e92a49f1f4b35acc8c74cede77b0eb97245f4f38e9e810f835e1cd9286ba9c"
+  },
+  {
+    "path": "REVIEW.md",
+    "bytes": 15318,
+    "sha256": "bba09ef378466a3787ebfbbbd942a81fbe200031a24d04f799d2543e510673f6"
+  },
+  {
+    "path": "SOURCE_PINS.json",
+    "bytes": 4408,
+    "sha256": "eebb8957fddca4ea15b51f2e31a711dc59dda34b181d860294af020087314f5e"
+  },
+  {
+    "path": "attempt_1/EXECUTION.json",
+    "bytes": 1703,
+    "sha256": "bd4f69de639d8af0bdde16e132394957eb7868f83ba30df31adc6aee83031a26"
+  },
+  {
+    "path": "attempt_1/check_stderr.txt",
+    "bytes": 735,
+    "sha256": "6a1bbb5171c8a490f4fba4180fbf2a075de1ecf0eafd6c5f72f75be7b59c74ac"
+  },
+  {
+    "path": "attempt_1/check_stdout.json",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "attempt_1/checks.py",
+    "bytes": 5176,
+    "sha256": "83f976f573c9ab5d86286f705fd35a6e56487aadbed505fd5d4498259c1aa5b9"
+  },
+  {
+    "path": "attempt_1/run_checks.py",
+    "bytes": 1353,
+    "sha256": "f1b919f6fc88c62ae7562df7f7e1939a99469924fb401082a51cf34b3d5999e8"
+  },
+  {
+    "path": "check_stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "check_stdout.json",
+    "bytes": 1808,
+    "sha256": "85eb1f4a8f2ec42e44f350be854ab15a2a0f75c1391993d40c38c9ecace6efb3"
+  },
+  {
+    "path": "checks.py",
+    "bytes": 5198,
+    "sha256": "634efeee876ef0bbfeaebd581b76bc974c4f604bbf2b8fe77304139d0f49dfa7"
+  },
+  {
+    "path": "run_checks.py",
+    "bytes": 1353,
+    "sha256": "f1b919f6fc88c62ae7562df7f7e1939a99469924fb401082a51cf34b3d5999e8"
+  },
+  {
+    "path": "sources/CHECK_EXECUTION.json",
+    "bytes": 1760,
+    "sha256": "b3b6ec701759051e37a96a00a1f0787c01040086f92a8c92276ba6e7f1d6e2cc"
+  },
+  {
+    "path": "sources/FINAL_MANIFEST.json",
+    "bytes": 3285,
+    "sha256": "3f195c332bb56ec77aadeac1896d5b5fb8e013a7be22bb45457671c5e2064250"
+  },
+  {
+    "path": "sources/THEOREM.md",
+    "bytes": 26963,
+    "sha256": "fffd7d405935226aba4a5e6528112b984b6dde4580747641159f554e97e2189a"
+  },
+  {
+    "path": "sources/check_stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "sources/check_stdout.txt",
+    "bytes": 964,
+    "sha256": "b1808ec788055149854247ead2f59d2cd3c8fb219c4a404acbf96edb0821e115"
+  },
+  {
+    "path": "sources/column_norm_check.py",
+    "bytes": 1881,
+    "sha256": "ba60f080adaa5edd60f94409a85ffd36f1d6ff35bc1dd1141ae2515d2ea34625"
+  },
+  {
+    "path": "sources/run_check.py",
+    "bytes": 1452,
+    "sha256": "1f08d94c03b22954bad538f3c18272d81c68323b71a94cf2d9c0906e26ff57dc"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_root_qualification",
+  "scope": "Lossless reconstruction map; historical paths and statuses retained, no scientific replay.",
+  "files": [
+    {
+      "original_path": "ACCEPTANCE.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/qualification/ACCEPTANCE.json.txt",
+      "bytes": 10085,
+      "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325",
+      "compression": "none",
+      "raw_bytes": 10085,
+      "raw_sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325"
+    },
+    {
+      "original_path": "QUALIFICATION.md",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/qualification/QUALIFICATION.md.txt",
+      "bytes": 2896,
+      "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814",
+      "compression": "none",
+      "raw_bytes": 2896,
+      "raw_sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814"
+    }
+  ],
+  "count": 2
+}

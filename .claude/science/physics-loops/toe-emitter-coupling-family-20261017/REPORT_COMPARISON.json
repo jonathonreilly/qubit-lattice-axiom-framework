@@ -1,0 +1,52 @@
+{
+  "historical_author_output": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/attempt_01/stdout.json",
+    "bytes": 41223,
+    "sha256": "14125e34295e570e4338d0718ab35efb261edd2e151984fa61f18ae49712072c"
+  },
+  "canonical_result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/emitter_coupling_family_2026_10_17.json",
+    "bytes": 54703,
+    "sha256": "d347959ffd75d3f3a08d3d3be802b8ff4c721bd6748dd4d0def97e5fc48699de"
+  },
+  "scientific_payload_equality": true,
+  "scientific_discrepancies": [],
+  "comparison_exclusions": [
+    {
+      "field": "report.actual_resources.python",
+      "historical": "3.13.5",
+      "canonical": "3.13.5"
+    },
+    {
+      "field": "report.actual_resources.sympy",
+      "historical": "1.14.0",
+      "canonical": "1.14.0"
+    },
+    {
+      "field": "report.actual_resources.cpu_soft_hard_seconds",
+      "historical": [
+        20,
+        20
+      ],
+      "canonical": [
+        20,
+        20
+      ]
+    },
+    {
+      "field": "report.actual_resources.wall_cap_external_seconds",
+      "historical": 30,
+      "canonical": 30
+    },
+    {
+      "field": "report.actual_resources.program_wall_seconds",
+      "historical": 0.6152988341636956,
+      "canonical": 0.5394777501933277
+    }
+  ],
+  "added_metadata_excluded": [
+    "report._canonical_execution",
+    "outer canonical wrapper fields"
+  ],
+  "scope": "Exact equality of all remaining parsed JSON fields; no mathematical or limitation field excluded; reproducibility, not independent proof."
+}

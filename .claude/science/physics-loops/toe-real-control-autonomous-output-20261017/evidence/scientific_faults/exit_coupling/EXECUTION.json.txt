@@ -1,0 +1,29 @@
+{
+  "label": "exit_coupling",
+  "started_utc": "2026-10-17T05:39:08.175003+00:00",
+  "finished_utc": "2026-10-17T05:39:08.552021+00:00",
+  "elapsed_seconds": 0.3728419169783592,
+  "exit_code": 1,
+  "timed_out": false,
+  "intended_assertion_reached": true,
+  "all_bound_bytes_unchanged": true,
+  "no_result_written": true,
+  "user_cpu_seconds": 0.3279170000000001,
+  "system_cpu_seconds": 0.034781000000000006,
+  "launcher_children_peak_rss_bytes_macos_so_far": 70549504,
+  "prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/exit_coupling/PRELAUNCH.json",
+    "bytes": 39221,
+    "sha256": "df047326cf430d9d84764a46f98121a1f5dfe42dd465a8514b7c82f409a9a6fe"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/exit_coupling/stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/exit_coupling/stderr",
+    "bytes": 943,
+    "sha256": "d4552cfa3f9030beeb2a7975dd47692ad88e007ea886a033ab2f887d223c9c4d"
+  }
+}

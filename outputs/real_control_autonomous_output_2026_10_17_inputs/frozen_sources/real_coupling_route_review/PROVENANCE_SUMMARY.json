@@ -1,0 +1,14 @@
+{
+  "actual_current_prelaunch_bindings": 31,
+  "analysis_files_unchanged": 23,
+  "author_frozen_entries": 33,
+  "author_inventory_files": 34,
+  "author_returncode": 0,
+  "original_snapshot_pairs": 16,
+  "provenance": {
+    "bytes": 35497,
+    "sha256": "88b810629d7c9e75e9ad0e558340722447bca217e4efb835765b382f473c5ccf"
+  },
+  "review_scientific_runs": 0,
+  "runtime_bindings": 7
+}

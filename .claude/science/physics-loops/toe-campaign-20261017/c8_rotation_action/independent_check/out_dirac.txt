@@ -1,0 +1,6 @@
+flux pi on every plaquette: OK
+k/pi where all 4 bands vanish (cell momenta kx,ky in [0,pi) after folding): [(np.float64(0.5), np.float64(0.5), np.float64(0.5)), (np.float64(0.5), np.float64(0.5), np.float64(1.5))]
+dispersion near node along [1. 0. 0.] : [-2. -2.  2.  2.]
+dispersion near node along [0. 1. 0.] : [-2. -2.  2.  2.]
+dispersion near node along [0. 0. 1.] : [-2. -2.  2.  2.]
+E = +-2 sqrt(sum cos^2 k), each doubly degenerate: OK

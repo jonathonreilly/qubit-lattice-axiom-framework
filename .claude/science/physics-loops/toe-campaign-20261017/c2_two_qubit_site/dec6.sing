@@ -1,0 +1,13 @@
+LIB "primdec.lib"; LIB "elim.lib";
+ring r=2,(x,y,z),dp;
+// Laurent polys times x y z: sX = y+1/y+z+1/z, sZ = x+1/x+y+1/y, d = x+1/x+y+1/y+z+1/z
+poly sX = x*(y2*z+z+y*z2+y); poly sZ = z*(x2*y+y+x*y2+x); poly d = x2*y*z+y*z+x*y2*z+x*z+x*y*z2+x*y;
+ideal J0 = sX, sZ, d;
+def S = sat(J0, x*y*z); ideal J; if (typeof(S)=="list") { J = S[1]; } else { J = S; }
+J = std(J);
+print("J:"); print(J); print("dim:"); print(dim(J)); print("vdim (length of R/J):"); print(vdim(J));
+print("minimal associated primes:"); print(minAssGTZ(J));
+list pd = primdecGTZ(J); int i; for(i=1;i<=size(pd);i++){ print("primary " + string(i) + ": vdim " + string(vdim(std(pd[i][1]))) + "  radical:"); print(pd[i][2]); }
+ideal Q = std(quotient(J, ideal(x+1,y+1,z+1)));
+print("fully mobile charge space dimension (vdim J - vdim (J:m1)):"); print(vdim(J) - vdim(Q));
+quit;

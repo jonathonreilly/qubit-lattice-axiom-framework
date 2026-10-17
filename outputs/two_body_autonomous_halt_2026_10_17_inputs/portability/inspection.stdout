@@ -1,0 +1,13 @@
+{
+  "status": "static comparisons succeeded",
+  "assertion_counts": {
+    "author": 60,
+    "independent": 66
+  },
+  "declared_inputs": 45,
+  "verified_manifest_records": 41,
+  "missing_inputs": [
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+  ],
+  "elapsed_seconds": 0.07149345800280571
+}

@@ -1,0 +1,57 @@
+L = 8 radius 1 min |x-Rx|_inf 4 (code, C2) pairs: 108
+   ('edge', 'D2', 'C2axis', 'Bparity', ((1, 1),)) 24
+   ('edge', 'D2', 'C2axis', 'charge(x,Rx,far)', ((1, 1, 0),)) 24
+   ('edge', 'D2', 'C2axis', 'flux0', (1,)) 24
+   ('edge', 'D2', 'C2axis', 'fluxpi', (1,)) 24
+   ('edge', 'D2', 'C2edge', 'Bparity', ((1, 1),)) 48
+   ('edge', 'D2', 'C2edge', 'charge(x,Rx,far)', ((1, 1, 0),)) 48
+   ('edge', 'D2', 'C2edge', 'flux0', (1,)) 48
+   ('edge', 'D2', 'C2edge', 'fluxpi', (1,)) 48
+   ('edge', 'D3', 'C2edge', 'Bparity', ((1, 1),)) 72
+   ('edge', 'D3', 'C2edge', 'charge(x,Rx,far)', ((1, 1, 0),)) 72
+   ('edge', 'D3', 'C2edge', 'flux0', (1,)) 72
+   ('edge', 'D3', 'C2edge', 'fluxpi', (1,)) 72
+   ('edge', 'Z2', 'C2edge', 'Bparity', ((1, 1),)) 72
+   ('edge', 'Z2', 'C2edge', 'charge(x,Rx,far)', ((1, 1, 0),)) 72
+   ('edge', 'Z2', 'C2edge', 'flux0', (1,)) 72
+   ('edge', 'Z2', 'C2edge', 'fluxpi', (1,)) 72
+   ('half', 'D2', 'C2axis', 'Bparity', ((0, 0), (1, 1))) 22
+   ('half', 'D2', 'C2axis', 'Bparity', ((1, 1),)) 2
+   ('half', 'D2', 'C2axis', 'charge(x,Rx,far)', ((1, 1, 0),)) 24
+   ('half', 'D2', 'C2axis', 'flux0', (1,)) 24
+   ('half', 'D2', 'C2axis', 'fluxpi', (1,)) 24
+   ('half', 'D2', 'C2edge', 'Bparity', ((0, 0), (1, 1))) 47
+   ('half', 'D2', 'C2edge', 'Bparity', ((1, 1),)) 1
+   ('half', 'D2', 'C2edge', 'charge(x,Rx,far)', ((1, 1, 0),)) 48
+   ('half', 'D2', 'C2edge', 'flux0', (1,)) 48
+   ('half', 'D2', 'C2edge', 'fluxpi', (1,)) 48
+   ('half', 'D3', 'C2edge', 'Bparity', ((0, 0), (1, 1))) 71
+   ('half', 'D3', 'C2edge', 'Bparity', ((1, 1),)) 1
+   ('half', 'D3', 'C2edge', 'charge(x,Rx,far)', ((1, 1, 0),)) 72
+   ('half', 'D3', 'C2edge', 'flux0', (1,)) 72
+   ('half', 'D3', 'C2edge', 'fluxpi', (1,)) 72
+   ('half', 'Z2', 'C2edge', 'Bparity', ((0, 0), (1, 1))) 69
+   ('half', 'Z2', 'C2edge', 'Bparity', ((1, 1),)) 3
+   ('half', 'Z2', 'C2edge', 'charge(x,Rx,far)', ((1, 1, 0),)) 72
+   ('half', 'Z2', 'C2edge', 'flux0', (1,)) 72
+   ('half', 'Z2', 'C2edge', 'fluxpi', (1,)) 72
+   ('half_Rminus', 'D2', 'C2axis', 'Bparity', ((0, 0), (1, 1))) 24
+   ('half_Rminus', 'D2', 'C2axis', 'charge(x,Rx,far)', ((1, 1, 0),)) 24
+   ('half_Rminus', 'D2', 'C2axis', 'flux0', (1,)) 24
+   ('half_Rminus', 'D2', 'C2axis', 'fluxpi', (1,)) 24
+   ('half_Rminus', 'D2', 'C2edge', 'Bparity', ((0, 0), (1, 1))) 47
+   ('half_Rminus', 'D2', 'C2edge', 'Bparity', ((1, 1),)) 1
+   ('half_Rminus', 'D2', 'C2edge', 'charge(x,Rx,far)', ((1, 1, 0),)) 48
+   ('half_Rminus', 'D2', 'C2edge', 'flux0', (1,)) 48
+   ('half_Rminus', 'D2', 'C2edge', 'fluxpi', (1,)) 48
+   ('half_Rminus', 'D3', 'C2edge', 'Bparity', ((0, 0), (1, 1))) 70
+   ('half_Rminus', 'D3', 'C2edge', 'Bparity', ((1, 1),)) 2
+   ('half_Rminus', 'D3', 'C2edge', 'charge(x,Rx,far)', ((1, 1, 0),)) 72
+   ('half_Rminus', 'D3', 'C2edge', 'flux0', (1,)) 72
+   ('half_Rminus', 'D3', 'C2edge', 'fluxpi', (1,)) 72
+   ('half_Rminus', 'Z2', 'C2edge', 'Bparity', ((0, 0), (1, 1))) 72
+   ('half_Rminus', 'Z2', 'C2edge', 'charge(x,Rx,far)', ((1, 1, 0),)) 72
+   ('half_Rminus', 'Z2', 'C2edge', 'flux0', (1,)) 72
+   ('half_Rminus', 'Z2', 'C2edge', 'fluxpi', (1,)) 72
+no-solution cases: 0 []
+elapsed 52 s

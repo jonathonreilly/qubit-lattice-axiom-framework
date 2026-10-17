@@ -1,0 +1,24 @@
+{
+  "start_utc": "2026-10-17T01:17:31.953271+00:00",
+  "end_utc": "2026-10-17T01:17:32.008813+00:00",
+  "elapsed_seconds": 0.055157666094601154,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/weighted_emitter_escape_candidate/check_bounds.py"
+  ],
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/weighted_emitter_escape_candidate/check_bounds.py",
+    "bytes": 3703,
+    "sha256": "0be886d71839040982f0b372d39450a88166e1624b116a14d54442dc681490af"
+  },
+  "stdout_sha256": "736db8ba5f90cbd4823516f484b8a1b572622b9aa0af22639034cde743c31407",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "caps": {
+    "cpu_seconds": 5,
+    "wall_seconds": 10,
+    "matrix_dimension": 0,
+    "quadrature": false,
+    "dynamics": false
+  }
+}

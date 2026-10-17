@@ -1,0 +1,49 @@
+{
+  "started_utc": "2026-10-17T04:57:26.455696+00:00",
+  "finished_utc": "2026-10-17T04:57:27.705577+00:00",
+  "runner": "scripts/thermal_resonance_halt_2026_10_17.py",
+  "prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/canonical_01/PRELAUNCH.json",
+    "bytes": 51701,
+    "sha256": "d53814049281798eca494f94ef9816ef1892ba2197d11f8fe761791f856a5b0c"
+  },
+  "all_source_input_bytes_unchanged": true,
+  "runner_cache_also_checked_filesystem_generation_tokens": true,
+  "status": "ok",
+  "exit_code": 0,
+  "elapsed_seconds": 1.114833116531372,
+  "child_user_cpu_seconds": 0.71382,
+  "child_system_cpu_seconds": 0.07717,
+  "launcher_children_peak_rss_bytes_macos": 73236480,
+  "rss_scope": "Maximum reported for children of this launcher; no OS memory cap or transitive environment lock.",
+  "caps": {
+    "CPU_soft_hard_seconds": [
+      30,
+      30
+    ],
+    "external_wall_seconds": 45
+  },
+  "stream_semantics": "runner_cache merges child stderr into stdout; the empty stderr field is protocol-only, not an independently observed child stream.",
+  "stdout_merged": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/canonical_01/stdout_merged.txt",
+    "bytes": 524,
+    "sha256": "5e9ec02299720c814f032652ba450448495d91ba17ee656f5206891883bcc4a9"
+  },
+  "stderr_protocol": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/canonical_01/stderr_protocol.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "cache_status": "fresh",
+  "cache": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/canonical_01/cache.txt",
+    "bytes": 874,
+    "sha256": "fc50d04f7ce138919b951ead585c3edebedaab1b8fccf058e3e45ee1e7da02d3"
+  },
+  "result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/canonical_01/result.json",
+    "bytes": 85663,
+    "sha256": "f105259f7484ada777dced53b69214f8d351264a1783e0898db0f3aec98c0d2a"
+  },
+  "scope": "Actual replay of three qualified author scalar/algebra calculations. This is reproducibility, not a new independent theorem proof, interval proof from samples, dynamics simulation or retained audit."
+}

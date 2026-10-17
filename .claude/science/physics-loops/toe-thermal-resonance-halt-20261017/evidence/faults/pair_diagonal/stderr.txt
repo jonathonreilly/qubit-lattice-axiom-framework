@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/pair_diagonal/driver.py", line 7, in <module>
+    result=ns['run_product_preparation_author'](inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/pair_diagonal/mutated.py", line 321, in run_product_preparation_author
+    zero('emitter_pair_charpoly_' + label + '_' + str(sign), mat.charpoly(lam).as_expr() - lam ** 2 * (lam - 2 * kap) ** 2)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/pair_diagonal/mutated.py", line 304, in zero
+    assert good, (name, value)
+           ^^^^
+AssertionError: ('emitter_pair_charpoly_L_1', 3*kap**3*lam/4 + kap**2*lam**2/4 - 2*kap*lam**3 + lam**4 - lam**2*(-2*kap + lam)**2)

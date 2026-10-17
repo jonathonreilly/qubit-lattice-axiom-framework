@@ -1,0 +1,23 @@
+{
+  "name": "localized_columns_orthogonal",
+  "started_utc": "2026-10-17T00:37:30.136089+00:00",
+  "elapsed_seconds": 0.31891137501224875,
+  "exit_code": 1,
+  "wall_cap_seconds": 30,
+  "source": {
+    "bytes": 21544,
+    "sha256": "d1402b0a26bc1c2160bb0b313b6ebb8c527240360b56f1b6a8ab5cd3b0564887"
+  },
+  "old": "Dpacket=F(88000)",
+  "new": "Dpacket=F(62004)",
+  "expected_scientific_assertion": "assert Dj<62004 and 2*Dj*Dj<Dpacket*Dpacket",
+  "scientific_assertion_rejected": true,
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 338,
+    "sha256": "4a56f488c3fde29895b5c23a23f54786f23dffdd4f28ea6445cdc3f350df1c57"
+  }
+}

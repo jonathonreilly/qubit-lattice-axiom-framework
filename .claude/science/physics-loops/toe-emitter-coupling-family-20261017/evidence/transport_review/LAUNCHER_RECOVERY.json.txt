@@ -1,0 +1,9 @@
+{
+  "method": "Reverse only the recorded symlink-input amendment from final launcher; hash matched actual prelaunch bindings of run01 and run02. This is recovery after execution, not a claim of a saved prelaunch execution copy.",
+  "sha256": "c8daaabb8897aef0c764a5790ab17223bbf8427cf71b320f919afdb736943f7e",
+  "bytes": 3823,
+  "attempts": [
+    "run01",
+    "run02"
+  ]
+}

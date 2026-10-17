@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+"""Bind stage-two source and runtime before starting the review subprocess."""
+import datetime
+import hashlib
+import importlib.metadata
+import json
+import os
+from pathlib import Path
+import resource
+import shutil
+import subprocess
+import sys
+import time
+
+sys.dont_write_bytecode=True
+ROOT=Path(__file__).resolve().parent
+ATTEMPT=ROOT/'stage2_run01'
+assert not ATTEMPT.exists();ATTEMPT.mkdir()
+def stamp():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def identity(p):
+ b=p.read_bytes();return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def serial(p,obj):
+ with p.open('x') as f:
+  json.dump(obj,f,indent=2,sort_keys=True);f.write('\n');f.flush();os.fsync(f.fileno())
+executed=ATTEMPT/'executed_source.py';shutil.copyfile(ROOT/'check_family_delta.py',executed)
+sm=json.loads((ROOT/'AUTHOR_SOURCE_MANIFEST.json').read_text())
+first=json.loads((ROOT/'STAGE1_FREEZE.json').read_text())
+names=[row['path'] for row in first['files']]+['STAGE1_FREEZE.json']+[row['snapshot'] for row in sm['sources']]+['AUTHOR_SOURCE_MANIFEST.json','STAGE2_PLAN.json','check_family_delta.py','launch_stage2.py']
+assert len(names)==len(set(names))
+inputs=[{'path':name,**identity(ROOT/name)} for name in names]
+dist=importlib.metadata.distribution('sympy')
+external=[Path(sys.executable).resolve(),Path(dist.locate_file('sympy/__init__.py')).resolve(),next(Path(dist.locate_file(f)).resolve() for f in dist.files if str(f).endswith('.dist-info/METADATA'))]
+runtime=[{'path':str(p),**identity(p)} for p in external]
+prepath=ATTEMPT/'PRELAUNCH.json'
+command=[sys.executable,'-B',str(executed),str(ROOT),str(prepath)]
+pre={'state':'serialized_before_subprocess_creation','serialized_utc':stamp(),
+ 'executed_source':{'path':str(executed.relative_to(ROOT)),**identity(executed)},
+ 'bound_inputs':inputs,'external_runtime_bindings':runtime,'command':command,
+ 'python_version':sys.version,'sympy_version':dist.version,
+ 'runtime_scope':'Resolved binary, package entry and distribution metadata pinned, not every dependency byte.',
+ 'caps':{'CPU_soft_hard_seconds':[30,30],'wall_seconds':45,'matrix_dimension_max':4,'actual_stage2_expected_dimension':4},
+ 'exposure':'Frozen new family candidate read after stage-one reasoning and evidence freeze. Author checker has not been read, imported or executed; full author packet is bound by bytes.'}
+serial(prepath,pre)
+launch_stamp=stamp();started=time.monotonic();before=resource.getrusage(resource.RUSAGE_CHILDREN)
+timeout=False
+env=os.environ.copy();env['PYTHONDONTWRITEBYTECODE']='1'
+with (ATTEMPT/'stdout.json').open('wb') as out,(ATTEMPT/'stderr.txt').open('wb') as err:
+ p=subprocess.Popen(command,cwd=ROOT,env=env,stdout=out,stderr=err)
+ try:code=p.wait(timeout=45)
+ except subprocess.TimeoutExpired:timeout=True;p.kill();code=p.wait()
+after=resource.getrusage(resource.RUSAGE_CHILDREN)
+checks=[{'path':row['path'],'matches':identity(ROOT/row['path'])=={k:row[k] for k in ['bytes','sha256']}} for row in inputs]
+runtimechecks=[{'path':row['path'],'matches':identity(Path(row['path']))=={k:row[k] for k in ['bytes','sha256']}} for row in runtime]
+receipt={'launch_utc_after_prelaunch_fsync':launch_stamp,'finished_utc':stamp(),'returncode':code,'timed_out':timeout,
+ 'wall_seconds':time.monotonic()-started,'child_user_CPU_seconds':after.ru_utime-before.ru_utime,
+ 'child_system_CPU_seconds':after.ru_stime-before.ru_stime,'child_peak_RSS_native_bytes_macos':after.ru_maxrss,
+ 'prelaunch':identity(prepath),'executed_source_after':identity(executed),
+ 'stdout':identity(ATTEMPT/'stdout.json'),'stderr':identity(ATTEMPT/'stderr.txt'),
+ 'input_postchecks':checks,'runtime_postchecks':runtimechecks,
+ 'all_bound_inputs_unchanged':all(x['matches'] for x in checks+runtimechecks)}
+serial(ATTEMPT/'RECEIPT.json',receipt)
+print(json.dumps({k:v for k,v in receipt.items() if k not in ['input_postchecks','runtime_postchecks']},indent=2))
+assert code==0 and not timeout and receipt['all_bound_inputs_unchanged']

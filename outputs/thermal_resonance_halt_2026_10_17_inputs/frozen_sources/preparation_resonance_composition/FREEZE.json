@@ -1,0 +1,10 @@
+{
+  "frozen_utc": "2026-10-17T04:20:06.065624+00:00",
+  "candidate": {
+    "path": "CANDIDATE.md",
+    "bytes": 8933,
+    "sha256": "250d431f3b818e08225b97b9d65d539c447ddd7b6ab00a36f5f7c7a7cc3868ca"
+  },
+  "status": "Proposed interface composition; root interacting preparation source remains under separate review; no scientific execution",
+  "format_correction": "Literal plus before not replaced by newline. Previous text/freeze preserved unchanged in historical_format_v1; no mathematical or scope change."
+}

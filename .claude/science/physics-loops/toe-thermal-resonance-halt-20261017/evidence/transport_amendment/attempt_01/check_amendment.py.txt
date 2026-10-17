@@ -1,0 +1,104 @@
+"""Independent static transport amendment check. No source program is executed."""
+from pathlib import Path
+import argparse,ast,copy,gzip,hashlib,json,resource,time
+p=argparse.ArgumentParser();p.add_argument('--root',required=True);a=p.parse_args();D=Path(a.root);R=D/'inputs/repo';O=D/'inputs/original';B=D/'inputs/before';I=Path('outputs/thermal_resonance_halt_2026_10_17_inputs');Q=Path('.claude/science/physics-loops/toe-thermal-resonance-halt-20261017');started=time.monotonic();checks=[]
+def sha(b):return hashlib.sha256(b).hexdigest()
+def dig(b):return {'bytes':len(b),'sha256':sha(b)}
+def ck(n,b):
+ if not b:raise AssertionError(n)
+ checks.append(n)
+def read(p):return json.loads(p.read_bytes())
+ck('cpu_cap',resource.getrlimit(resource.RLIMIT_CPU)==(30,30))
+inputs=read(D/'INPUTS.json')
+for r in inputs['files']:ck('snapshot:'+r['snapshot'],dig((D/r['snapshot']).read_bytes())=={k:r[k] for k in ('bytes','sha256')})
+am=read(D/'inputs/integration/spacing_amendment/AMENDMENT.json');repair=read(D/'inputs/integration/format_archive_followup/REPAIR.json')
+for rel,row in am['before'].items():ck('amendment_before:'+rel,dig((B/rel).read_bytes())==row)
+for rel,row in am['after'].items():
+ source=D/'inputs/integration/format_archive_followup/PACKAGING_MAP.before.json' if rel==str(Q/'evidence/PACKAGING_MAP.json') else R/rel
+ ck('amendment_after:'+rel,dig(source.read_bytes())==row)
+pri=Path('scripts/thermal_resonance_halt_2026_10_17.py');note=Path('docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md');oldpath=str(I/'frozen_sources/emitter_preparation_independent/CANDIDATE.md.txt');newpath=oldpath+'.gz'
+ck('new_primary_pin',sha((R/pri).read_bytes())=='944f256cd1e894601d2e483db47f9faba57d371532ed22d2b5e1835b409de872')
+ck('new_note_pin',sha((R/note).read_bytes())=='939a505813adb86ce8bccf335781fd8a1d3ce5ef96367836fe68339bc7c01b30')
+ck('new_manifest_pin',sha((R/I/'ARTIFACT_MANIFEST.json').read_bytes())=='9ef23d8044235449b6f4b0cc04d20aa7f6f1c95675b7b20fd38926c25fc4dc83')
+oldpri=(O/pri).read_bytes();newpri=(R/pri).read_bytes()
+ck('primary_only_literal_path_change',newpri==oldpri.replace(repr(oldpath).encode(),repr(newpath).encode()) and oldpri.count(oldpath.encode())==1)
+ot,nt=ast.parse(oldpri),ast.parse(newpri)
+def defs(t):return {x.name:ast.dump(x,include_attributes=False) for x in t.body if isinstance(x,(ast.FunctionDef,ast.ClassDef))}
+ck('all_functions_and_classes_unchanged',defs(ot)==defs(nt))
+def audit(t):return next(ast.literal_eval(n.value) for n in t.body if isinstance(n,ast.Assign) and any(isinstance(x,ast.Name) and x.id=='AUDIT_INPUT_PATHS' for x in n.targets))
+old_audit,new_audit=audit(ot),audit(nt)
+ck('audit_149_one_path_only',len(new_audit)==149 and len(set(new_audit))==149 and tuple(newpath if x==oldpath else x for x in old_audit)==new_audit)
+raw=(B/oldpath).read_bytes();packed=(R/newpath).read_bytes()
+ck('raw_pin',sha(raw)=='b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227')
+ck('gzip_pin',sha(packed)=='5174b0311ac0841e2c4947e25488b23c19aef820c1de62482c99631fff08c312')
+ck('lossless_raw_gzip',gzip.decompress(packed)==raw)
+ck('proof_not_runtime_alias',oldpath not in (R/I/'INPUT_MAP.json').read_text() and newpath not in (R/I/'INPUT_MAP.json').read_text())
+smold=read(O/I/'SOURCE_MAP.json');sm=read(R/I/'SOURCE_MAP.json');cnt=0
+for before,after in zip(smold['files'],sm['files']):
+ expected=copy.deepcopy(before)
+ if before['path']==oldpath:
+  expected.update(path=newpath,**dig(packed),compression='gzip',raw_bytes=len(raw),raw_sha256=sha(raw),transport='lossless_gzip_of_exact_frozen_source');cnt+=1
+ ck('exact_source_map_change:'+before['source_label'],expected==after)
+ r=(R/after['path']).read_bytes();ck('source_stored:'+after['source_label'],dig(r)=={k:after[k] for k in ('bytes','sha256')})
+ if after.get('compression')=='gzip':ck('source_raw:'+after['source_label'],dig(gzip.decompress(r))=={'bytes':after['raw_bytes'],'sha256':after['raw_sha256']})
+ck('two_source_labels',cnt==2 and len(sm['files'])==len(smold['files'])==239)
+# Full source map differs only by the reviewed two rows.
+smcopy=copy.deepcopy(sm);smcopy['files']=smold['files'];ck('source_map_other_fields_unchanged',smcopy==smold)
+# All updated calculation inputs checked; manifest intentionally excludes itself.
+mf=read(R/I/'ARTIFACT_MANIFEST.json');rows={r['path']:r for r in mf['files']}
+ck('updated_closure_exact',set(rows)==set(new_audit)-{str(I/'ARTIFACT_MANIFEST.json')})
+for rel,r in rows.items():
+ pp=Path(rel);ck('relative_input:'+rel,not pp.is_absolute() and '..' not in pp.parts and pp.as_posix()==rel)
+ ck('input_hash:'+rel,dig((R/rel).read_bytes())=={k:r[k] for k in ('bytes','sha256')})
+# Wrapper-only root clarification shifts every original body by449 bytes.
+wc=read(R/Q/'ROOT_WRAPPER_CHANGE.json');ob=read(O/I/'PROOF_BODY_MAP.json');bb=read(B/I/'PROOF_BODY_MAP.json');nb=read(R/I/'PROOF_BODY_MAP.json');frozen_note=(O/note).read_bytes();before_note=(B/note).read_bytes();current_note=(R/note).read_bytes()
+ck('root_wrapper_old_new_note',dig(frozen_note)==wc['old_note'] and dig(before_note)==wc['new_note'])
+for a,b in zip(ob['bodies'],bb['bodies']):
+ ck('wrapper_body_unchanged:'+a['title'],frozen_note[a['note_byte_start_inclusive']:a['note_byte_end_exclusive']]==before_note[b['note_byte_start_inclusive']:b['note_byte_end_exclusive']] and b['note_byte_start_inclusive']-a['note_byte_start_inclusive']==449)
+# Verify all final bodies by reconstructing from exact originals, including spacing.
+body_results=[]
+for row in nb['bodies']:
+ orig=(R/row['original']['path']).read_bytes()
+ if row['original'].get('compression')=='gzip':
+  ck('body_stored_identity',dig(orig)=={'bytes':row['original']['stored_bytes'],'sha256':row['original']['stored_sha256']});orig=gzip.decompress(orig)
+ ck('body_raw_identity:'+row['title'],dig(orig)=={k:row['original'][k] for k in ('bytes','sha256')})
+ expected=orig
+ for e in sorted(row['link_target_edits'],key=lambda x:x['original_start'],reverse=True):
+  l,h=e['original_start'],e['original_end'];old=orig[l:h];ck('target_original:'+str(l),old.decode().strip('<>')==e['original_target'])
+  replacement=e['replacement_target'].encode();replacement=b'<'+replacement+b'>' if old.startswith(b'<') else replacement
+  expected=expected[:l]+replacement+expected[h:]
+ fmt=row.get('format_edits',[])
+ for e in fmt:
+  old=e['original_text'].encode();new=e['replacement_text'].encode();ck('format_exact_original',old==b'\\boxed{\\ \n' and new==b'\\boxed{\\,\n' and expected.count(old)==1 and orig.index(old)==e['original_start'] and expected.index(old)==e['embedded_start'])
+  expected=expected.replace(old,new)
+ embedded=current_note[row['note_byte_start_inclusive']:row['note_byte_end_exclusive']]
+ ck('body_full_reconstruct:'+row['title'],embedded==expected and sha(embedded)==row['embedded_sha256'])
+ body_results.append({'title':row['title'],'target_edits':len(row['link_target_edits']),'format_edits':len(fmt),'raw_sha256':sha(orig),'embedded_sha256':sha(embedded)})
+# The spacing change and transparent wrapper paragraph are the only additional note edits.
+prefix_old=before_note[:bb['bodies'][0]['note_byte_start_inclusive']];prefix_new=current_note[:nb['bodies'][0]['note_byte_start_inclusive']]
+oldpara=b'Four bodies are byte-identical; in the exact-product body only Markdown link destinations are adapted to portable targets. The raw originals, exact link-target map and reversible body map preserve every other byte.'
+newpara=b'Four bodies are byte-identical. The exact-product body has ten portable Markdown destination edits and one TeX control-space replaced by a thin-space command to remove trailing source whitespace. Its exact raw original is stored losslessly as gzip; the reversible body map identifies every change, with no mathematical expression altered.'
+ck('spacing_wrapper_paragraph_only',prefix_new==prefix_old.replace(oldpara,newpara) and prefix_old.count(oldpara)==1)
+ck('note_no_trailing_space',not any(l.endswith((b' ',b'\t')) for l in current_note.splitlines()))
+for rel in [str(Q/'ROOT_PORTABILITY_ACCEPTANCE.json'),str(Q/'EXECUTION_STATUS.md')]:
+ ck('external_status_pointer:'+rel,('../'+rel).encode() in prefix_new and rel not in new_audit)
+ck('external_records_explicit',b'outside the calculation input closure' in prefix_new and b'frozen preparation status does not self-certify' in prefix_new)
+# Archive follow-up: exactly five pointers, all other row fields retained.
+map_before=read(D/'inputs/integration/format_archive_followup/PACKAGING_MAP.before.json');archive=read(R/Q/'evidence/PACKAGING_MAP.json')
+ck('repair_pin',sha((R/Q/'evidence/PACKAGING_MAP.json').read_bytes())=='62699c8203c84940054c0d687603c8acbd919e4379c8b865b06610c38f5957af')
+ck('repair_before_identity',dig((D/'inputs/integration/format_archive_followup/PACKAGING_MAP.before.json').read_bytes())==repair['before'])
+fixes={r['original_path']:r for r in repair['fixes']};ck('exact_five_fixes',len(fixes)==5)
+for old,new in zip(map_before['files'],archive['files']):
+ expected=copy.deepcopy(old)
+ if old['original_path'] in fixes:
+  f=fixes[old['original_path']];ck('old_pointer:'+old['original_path'],old['path']==f['old_destination']);expected['path']=f['new_destination']
+ ck('archive_retarget_only:'+old['original_path'],new==expected)
+ck('archive_count',len(archive['files'])==len(map_before['files'])==1177)
+archive_copy=copy.deepcopy(archive);archive_copy['files']=map_before['files'];ck('archive_top_fields_unchanged',archive_copy==map_before)
+P=Path(inputs['historical_packet']);archive_compressed=0
+for r in archive['files']:
+ stored=(R/r['path']).read_bytes();ck('archive_stored:'+r['original_path'],dig(stored)=={k:r[k] for k in ('bytes','sha256')})
+ decoded=gzip.decompress(stored) if r['compression']=='gzip' else stored;archive_compressed+=r['compression']=='gzip'
+ ck('archive_raw:'+r['original_path'],dig(decoded)=={'bytes':r['raw_bytes'],'sha256':r['raw_sha256']})
+ ck('archive_matches_original_packet:'+r['original_path'],decoded==(P/r['original_path']).read_bytes())
+print(json.dumps({'status':'NARROW_STATIC_AMENDMENT_ACCEPTABLE','scientific_executions':0,'source_program_executions':0,'checks':len(checks),'source_labels':239,'declared_inputs':149,'archive_members':1177,'compressed_archive_labels':archive_compressed,'archive_pointer_repairs':5,'body_reconstructions':body_results,'all_functions_classes_AST_unchanged':True,'literal_primary_path_changes':1,'elapsed_seconds':time.monotonic()-started,'check_names':checks},indent=2),flush=True)

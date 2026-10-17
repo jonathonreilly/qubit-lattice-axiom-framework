@@ -1,0 +1,2023 @@
+{
+  "reported_parent": "67108090f68ed9b2bc62eee23701b2d3d71dce4a",
+  "Git_read_or_refresh": false,
+  "finite_sources": "Parent thermal primary input tuple, parent packaging map and explicit process/parent-note files",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/canonical/executed_sources/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "bytes": 50396,
+      "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87",
+      "compression": "none",
+      "raw_bytes": 50396,
+      "raw_sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/family_review/author_sources/inputs/physics_loop_skill.md.txt",
+      "bytes": 5767,
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "compression": "none",
+      "raw_bytes": 5767,
+      "raw_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/qualification/ACCEPTANCE.json.txt",
+      "bytes": 10085,
+      "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325",
+      "compression": "none",
+      "raw_bytes": 10085,
+      "raw_sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/qualification/QUALIFICATION.md.txt",
+      "bytes": 2896,
+      "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814",
+      "compression": "none",
+      "raw_bytes": 2896,
+      "raw_sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/transport_review/inputs/bytes/62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44.txt",
+      "bytes": 95866,
+      "sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44",
+      "compression": "none",
+      "raw_bytes": 95866,
+      "raw_sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/format_before/1b34d6c4133871f5ea4124d203e9448ad35e3630e085bde457d5087c37274e38.txt",
+      "bytes": 240327,
+      "sha256": "1b34d6c4133871f5ea4124d203e9448ad35e3630e085bde457d5087c37274e38",
+      "compression": "none",
+      "raw_bytes": 240327,
+      "raw_sha256": "1b34d6c4133871f5ea4124d203e9448ad35e3630e085bde457d5087c37274e38"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/format_before/3308c3d3f1ff96143bff2ae0d3d255da72b218c160a7d8420064c52a4aeb6aad.txt",
+      "bytes": 59056,
+      "sha256": "3308c3d3f1ff96143bff2ae0d3d255da72b218c160a7d8420064c52a4aeb6aad",
+      "compression": "none",
+      "raw_bytes": 59056,
+      "raw_sha256": "3308c3d3f1ff96143bff2ae0d3d255da72b218c160a7d8420064c52a4aeb6aad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/BUILD_RESULT.json.txt",
+      "bytes": 739,
+      "sha256": "5934f653c913c64202e3779c9560766eb9ebe2ade51c92225e124c20559980b2",
+      "compression": "none",
+      "raw_bytes": 739,
+      "raw_sha256": "5934f653c913c64202e3779c9560766eb9ebe2ade51c92225e124c20559980b2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/CAPTURE_BINDINGS.json.txt",
+      "bytes": 208456,
+      "sha256": "47e9f6f8ea0ae2eb642279f805a7016171e619386329c903cc7f473e4a7e49ce",
+      "compression": "none",
+      "raw_bytes": 208456,
+      "raw_sha256": "47e9f6f8ea0ae2eb642279f805a7016171e619386329c903cc7f473e4a7e49ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/DIFF_interacting_preparation_author.patch.gz",
+      "bytes": 4701,
+      "sha256": "1c82b702a562b6a779da84d5a73da9618bdda0a115dfcdfc126d1110e376c64b",
+      "compression": "gzip",
+      "raw_bytes": 17267,
+      "raw_sha256": "e7ae5cf6c9a613c4d8189e2ec9b45cd35224b8eb759dd7347a5000dd71847f74"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/DIFF_product_preparation_author.patch.txt",
+      "bytes": 27908,
+      "sha256": "7f93a06b10a08ee60ea7aa86d48d2298eb4c062240f124f826eb084608e05734",
+      "compression": "none",
+      "raw_bytes": 27908,
+      "raw_sha256": "7f93a06b10a08ee60ea7aa86d48d2298eb4c062240f124f826eb084608e05734"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/DIFF_resonance_author.patch.gz",
+      "bytes": 6544,
+      "sha256": "7b192b74613fa8891ea82ebccf1c3b23580ce69bed2a40451d9569c21bb13c75",
+      "compression": "gzip",
+      "raw_bytes": 20445,
+      "raw_sha256": "d7beb4413f199a6c4510dd655204783fa3135181e660daf9093a7dda96d5d6e9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/FAILURE_EVIDENCE_MAP.json.txt",
+      "bytes": 1038,
+      "sha256": "b8e8ac22e3db48792aba0fc93411ad748c25866120c47041a8d3d755c0bc479e",
+      "compression": "none",
+      "raw_bytes": 1038,
+      "raw_sha256": "b8e8ac22e3db48792aba0fc93411ad748c25866120c47041a8d3d755c0bc479e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/FINAL_IDENTITIES.json.txt",
+      "bytes": 2767,
+      "sha256": "0e65645ff9b0542f175b7ce5f0fbea529feff9073af815ad14839c0cc16b5627",
+      "compression": "none",
+      "raw_bytes": 2767,
+      "raw_sha256": "0e65645ff9b0542f175b7ce5f0fbea529feff9073af815ad14839c0cc16b5627"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/FREEZE.json.txt",
+      "bytes": 1553,
+      "sha256": "001e6f9fb06cc7cf8b23187ae87af304b45e982e254c4f94068fea4bd876719c",
+      "compression": "none",
+      "raw_bytes": 1553,
+      "raw_sha256": "001e6f9fb06cc7cf8b23187ae87af304b45e982e254c4f94068fea4bd876719c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/MUTATION_FAMILIES.json.txt",
+      "bytes": 3761,
+      "sha256": "62eebb8cb7c54da5211ef50ab2813718f6eed7680d49d12962313f3c69146073",
+      "compression": "none",
+      "raw_bytes": 3761,
+      "raw_sha256": "62eebb8cb7c54da5211ef50ab2813718f6eed7680d49d12962313f3c69146073"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/PACKAGING.md.txt",
+      "bytes": 5056,
+      "sha256": "ebee71df83a0283348d1a75c5c00c9a6939d5454ec7911151f36dcbe1fc485d7",
+      "compression": "none",
+      "raw_bytes": 5056,
+      "raw_sha256": "ebee71df83a0283348d1a75c5c00c9a6939d5454ec7911151f36dcbe1fc485d7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/PACKAGING_PLAN.json.txt",
+      "bytes": 1035,
+      "sha256": "a371ce581e8c1d10b7cbdf2d0710a49cd07ad72fece638189b2eec014f610d24",
+      "compression": "none",
+      "raw_bytes": 1035,
+      "raw_sha256": "a371ce581e8c1d10b7cbdf2d0710a49cd07ad72fece638189b2eec014f610d24"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/PACKET_MANIFEST.json.txt",
+      "bytes": 305905,
+      "sha256": "ea3d6dd8a60e89e23c37bdf392d2ccd10dc4b359a8e5a528c19a905b81dd9cde",
+      "compression": "none",
+      "raw_bytes": 305905,
+      "raw_sha256": "ea3d6dd8a60e89e23c37bdf392d2ccd10dc4b359a8e5a528c19a905b81dd9cde"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/PROOF_LINK_TARGET_DIFF.patch.gz",
+      "bytes": 1738,
+      "sha256": "34bb78bedccfac1c2a722f19943ac3fdcdfcb3cfa2dd58213f45429f7ab3600a",
+      "compression": "gzip",
+      "raw_bytes": 4217,
+      "raw_sha256": "06f8ee295ce6d30902ea31de9adc99ff5e6e8f71001a54dbde8a49df2c06bd14"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/READY_FILES.json.txt",
+      "bytes": 28941,
+      "sha256": "b99954e3ae23b2ed1491b16e06eb7c906d73731ada15425e23838bc3949e79c9",
+      "compression": "none",
+      "raw_bytes": 28941,
+      "raw_sha256": "b99954e3ae23b2ed1491b16e06eb7c906d73731ada15425e23838bc3949e79c9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/READ_FAILURES.json.txt",
+      "bytes": 847,
+      "sha256": "02127a87edd43910124a7f42ede5bd364111b36649d6b1c8ed1b2dc9a83bc559",
+      "compression": "none",
+      "raw_bytes": 847,
+      "raw_sha256": "02127a87edd43910124a7f42ede5bd364111b36649d6b1c8ed1b2dc9a83bc559"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/SOURCE_READ_COVERAGE.md.txt",
+      "bytes": 3002,
+      "sha256": "def0d687e703e3599f77cbb0a6cf20f7d12c5de53e1d99e005a5c53b0e0ef448",
+      "compression": "none",
+      "raw_bytes": 3002,
+      "raw_sha256": "def0d687e703e3599f77cbb0a6cf20f7d12c5de53e1d99e005a5c53b0e0ef448"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/STATIC_REPAIR_01.json.txt",
+      "bytes": 679,
+      "sha256": "de91d68688056860c1ee1792275231d63d7f5b78a0789a8742277deb7fcf5d88",
+      "compression": "none",
+      "raw_bytes": 679,
+      "raw_sha256": "de91d68688056860c1ee1792275231d63d7f5b78a0789a8742277deb7fcf5d88"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/STATIC_REPAIR_02.json.txt",
+      "bytes": 632,
+      "sha256": "833eb5eb91f3982be1691c3371500cc83791617331777825dab27f45685b9a24",
+      "compression": "none",
+      "raw_bytes": 632,
+      "raw_sha256": "833eb5eb91f3982be1691c3371500cc83791617331777825dab27f45685b9a24"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/STATIC_REPAIR_03.json.txt",
+      "bytes": 662,
+      "sha256": "d8f07c6c3cd299d52a56e448971454c363f93fa43471540ee833c4c24f2e6bbe",
+      "compression": "none",
+      "raw_bytes": 662,
+      "raw_sha256": "d8f07c6c3cd299d52a56e448971454c363f93fa43471540ee833c4c24f2e6bbe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/WRAPPER.md.txt",
+      "bytes": 12985,
+      "sha256": "c9272e5e62caaae79bc0ec7ada7defe60fa44de0b5c91ba83dc3a25fa4b20495",
+      "compression": "none",
+      "raw_bytes": 12985,
+      "raw_sha256": "c9272e5e62caaae79bc0ec7ada7defe60fa44de0b5c91ba83dc3a25fa4b20495"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/WRAPPER_DIFF.patch.gz",
+      "bytes": 1441,
+      "sha256": "ac97b4b104a78ce20c126aa9a27d335a5352ecdf22306e57e66eee756d267266",
+      "compression": "gzip",
+      "raw_bytes": 3500,
+      "raw_sha256": "ff0abf5067252526a3431cfea77454060b0b2dab7893cb64124be67713a9a925"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/build_package.py.txt",
+      "bytes": 30737,
+      "sha256": "def21250637e5d72575edc5a09bbb4d0702869b218453c0bd8a28384a6188e69",
+      "compression": "none",
+      "raw_bytes": 30737,
+      "raw_sha256": "def21250637e5d72575edc5a09bbb4d0702869b218453c0bd8a28384a6188e69"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/canonical/docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md.gz",
+      "bytes": 45442,
+      "sha256": "85071f37d6d62c511f70588ef5e2bd539b3cd2432966090274dff72fad6459ef",
+      "compression": "gzip",
+      "raw_bytes": 118919,
+      "raw_sha256": "91c95df5e66f34e92fadfe821b3ca5688089fbcaad7d642bef01f0c074ae1166"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json.txt",
+      "bytes": 35726,
+      "sha256": "f1f04a07618e19278f940ba1fdb5f99080fe2572e95638f08867eef786271ff8",
+      "compression": "none",
+      "raw_bytes": 35726,
+      "raw_sha256": "f1f04a07618e19278f940ba1fdb5f99080fe2572e95638f08867eef786271ff8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/PROOF_BODY_MAP.json.txt",
+      "bytes": 14538,
+      "sha256": "437fac82e22e2bd50e8e865481fcffabf0b861fe812162c0f9fb88c0097567b0",
+      "compression": "none",
+      "raw_bytes": 14538,
+      "raw_sha256": "437fac82e22e2bd50e8e865481fcffabf0b861fe812162c0f9fb88c0097567b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/finalize_packet.py.txt",
+      "bytes": 11148,
+      "sha256": "c5208e2c01c8b828b5e406fc8b875072700769bc2468c3a961ce1cc7ef79d800",
+      "compression": "none",
+      "raw_bytes": 11148,
+      "raw_sha256": "c5208e2c01c8b828b5e406fc8b875072700769bc2468c3a961ce1cc7ef79d800"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/BUILD_RESULT.json.txt",
+      "bytes": 738,
+      "sha256": "a8097bf7ac8e637cf293602cbca8f616a73f4402c207c4b08cce9cf2733752ee",
+      "compression": "none",
+      "raw_bytes": 738,
+      "raw_sha256": "a8097bf7ac8e637cf293602cbca8f616a73f4402c207c4b08cce9cf2733752ee"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/CAPTURE_BINDINGS.json.txt",
+      "bytes": 198622,
+      "sha256": "44fa941353962953b847c1cdbc1cdfb22faf307f5729c3b44689ccda14bbe0dd",
+      "compression": "none",
+      "raw_bytes": 198622,
+      "raw_sha256": "44fa941353962953b847c1cdbc1cdfb22faf307f5729c3b44689ccda14bbe0dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/DIFF_interacting_preparation_author.patch.gz",
+      "bytes": 4619,
+      "sha256": "5397ef6292867d4a2201c6bfdb176270dcdf0bc2e4955c47282acd5b9f6419e0",
+      "compression": "gzip",
+      "raw_bytes": 17027,
+      "raw_sha256": "db069fae4f990a54698f3786a691a57fd16009b69bfc38b4569e1f39fcaf4c8f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/DIFF_product_preparation_author.patch.txt",
+      "bytes": 27228,
+      "sha256": "f87600bdfea09c86377f9266c3b4cd275e3c47524726b08ffa38cc1ef771e72f",
+      "compression": "none",
+      "raw_bytes": 27228,
+      "raw_sha256": "f87600bdfea09c86377f9266c3b4cd275e3c47524726b08ffa38cc1ef771e72f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/DIFF_resonance_author.patch.gz",
+      "bytes": 6313,
+      "sha256": "bc637ab1ba6b2ef96bb7851e57c8a0b6beecb63db638a759dbf28c4e1c330675",
+      "compression": "gzip",
+      "raw_bytes": 19725,
+      "raw_sha256": "c688a6111873aadd0a667e6c7ae46cef4556b432ed302c3d40d624db7e6704df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/WRAPPER.md.txt",
+      "bytes": 11621,
+      "sha256": "6369e0732564ba79e3af2aaff2d9ee079b082edcbe2c48bcfd3d48159f6d13dc",
+      "compression": "none",
+      "raw_bytes": 11621,
+      "raw_sha256": "6369e0732564ba79e3af2aaff2d9ee079b082edcbe2c48bcfd3d48159f6d13dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/WRAPPER_DIFF.patch.txt",
+      "bytes": 2008,
+      "sha256": "ceb257e0df1b3d2906a0af53833b90ec4909b01c59e9d6ddc0ba4c5ce9512b8f",
+      "compression": "none",
+      "raw_bytes": 2008,
+      "raw_sha256": "ceb257e0df1b3d2906a0af53833b90ec4909b01c59e9d6ddc0ba4c5ce9512b8f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/build_package.py.txt",
+      "bytes": 26999,
+      "sha256": "50d299df1ca058d332544562199e64578845e1763d97594663b0a8b3263580db",
+      "compression": "none",
+      "raw_bytes": 26999,
+      "raw_sha256": "50d299df1ca058d332544562199e64578845e1763d97594663b0a8b3263580db"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/canonical/docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md.gz",
+      "bytes": 44967,
+      "sha256": "789eb116c046c91a9ef1199b399c9e20326724081fa75bce01854a92823356d6",
+      "compression": "gzip",
+      "raw_bytes": 116563,
+      "raw_sha256": "b7b1ae955eb1b53e44cb33cbf175316dbcf037dd0fd00bebcabd2d1a75a5121e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json.txt",
+      "bytes": 32948,
+      "sha256": "556493ae39829db4ab3b071e67acb0b21ca4fff2ef120e62c7df9d70ab5a10ba",
+      "compression": "none",
+      "raw_bytes": 32948,
+      "raw_sha256": "556493ae39829db4ab3b071e67acb0b21ca4fff2ef120e62c7df9d70ab5a10ba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/PROOF_BODY_MAP.json.txt",
+      "bytes": 3411,
+      "sha256": "076333c614acb11987fa3f15ec5d33d38a48b71227573e8b7b714a61449e1992",
+      "compression": "none",
+      "raw_bytes": 3411,
+      "raw_sha256": "076333c614acb11987fa3f15ec5d33d38a48b71227573e8b7b714a61449e1992"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/PUBLICATION_STATUS.json.txt",
+      "bytes": 784,
+      "sha256": "ffa7db1ca2bef01cb66ed95d20f0c15c1abfe3da03dd24ef700162696ec521bd",
+      "compression": "none",
+      "raw_bytes": 784,
+      "raw_sha256": "ffa7db1ca2bef01cb66ed95d20f0c15c1abfe3da03dd24ef700162696ec521bd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json.txt",
+      "bytes": 212997,
+      "sha256": "195cee23c62c44034283d90c3cdcf7a057e277c40b970119cadd010a589e8b9d",
+      "compression": "none",
+      "raw_bytes": 212997,
+      "raw_sha256": "195cee23c62c44034283d90c3cdcf7a057e277c40b970119cadd010a589e8b9d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json.txt",
+      "bytes": 385474,
+      "sha256": "92799c2d0c941a8a17993435ceaffa0f5a8162b61c09b216d1988ee79b4486dd",
+      "compression": "none",
+      "raw_bytes": 385474,
+      "raw_sha256": "92799c2d0c941a8a17993435ceaffa0f5a8162b61c09b216d1988ee79b4486dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/thermal_resonance_integration/WRAPPER_DRAFT.md.txt.txt",
+      "bytes": 10416,
+      "sha256": "d151a6b46dcb9d136df6e613f8f50dd189aa93f9f83e389f03291d69148878e1",
+      "compression": "none",
+      "raw_bytes": 10416,
+      "raw_sha256": "d151a6b46dcb9d136df6e613f8f50dd189aa93f9f83e389f03291d69148878e1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_01/canonical/scripts/thermal_resonance_halt_2026_10_17.py.txt",
+      "bytes": 57762,
+      "sha256": "44fd3ceb37e57297402c5fd03a036521b0a9f7acbc541480f109b89b26c6b238",
+      "compression": "none",
+      "raw_bytes": 57762,
+      "raw_sha256": "44fd3ceb37e57297402c5fd03a036521b0a9f7acbc541480f109b89b26c6b238"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_02/BUILD_RESULT.json.txt",
+      "bytes": 739,
+      "sha256": "58703e6e294348e067c02dbe94c28de93e763be6afc31c6293d6141293da6644",
+      "compression": "none",
+      "raw_bytes": 739,
+      "raw_sha256": "58703e6e294348e067c02dbe94c28de93e763be6afc31c6293d6141293da6644"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_02/CAPTURE_BINDINGS.json.txt",
+      "bytes": 208456,
+      "sha256": "4df8199d19a32b90a7b5276716eaa50ce431ffe204fb56a6035e04250c591333",
+      "compression": "none",
+      "raw_bytes": 208456,
+      "raw_sha256": "4df8199d19a32b90a7b5276716eaa50ce431ffe204fb56a6035e04250c591333"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_02/WRAPPER.md.txt",
+      "bytes": 12111,
+      "sha256": "7c5f92721ac34ab1456e69a5a75705df952adbc082be9d0a24e40e4ff200b95a",
+      "compression": "none",
+      "raw_bytes": 12111,
+      "raw_sha256": "7c5f92721ac34ab1456e69a5a75705df952adbc082be9d0a24e40e4ff200b95a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_02/WRAPPER_DIFF.patch.txt",
+      "bytes": 2025,
+      "sha256": "68fec4132bc6cd27f6fe64a92bcd0fc9892834a69c9be2c2683549758ee19a80",
+      "compression": "none",
+      "raw_bytes": 2025,
+      "raw_sha256": "68fec4132bc6cd27f6fe64a92bcd0fc9892834a69c9be2c2683549758ee19a80"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_02/build_package.py.txt",
+      "bytes": 27501,
+      "sha256": "3e437e8a35b51112ab3edb567f3fb97006f97e08a66a3aee5e0d001b00c2f175",
+      "compression": "none",
+      "raw_bytes": 27501,
+      "raw_sha256": "3e437e8a35b51112ab3edb567f3fb97006f97e08a66a3aee5e0d001b00c2f175"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_02/canonical/docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md.gz",
+      "bytes": 45155,
+      "sha256": "df48fad9286000bbb0ba1aa485463fa18e35891fa4d679f58472340cf628c934",
+      "compression": "gzip",
+      "raw_bytes": 117053,
+      "raw_sha256": "0f61edc2325f10db48ac110ca77e756dd14f6d0ee8f5d08ca9a5cc188421f781"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_02/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json.txt",
+      "bytes": 35525,
+      "sha256": "6e465ab344210d2e6f24e336d75903c7a25636a66054a6af4127beee6008fbe9",
+      "compression": "none",
+      "raw_bytes": 35525,
+      "raw_sha256": "6e465ab344210d2e6f24e336d75903c7a25636a66054a6af4127beee6008fbe9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_02/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/PROOF_BODY_MAP.json.txt",
+      "bytes": 3411,
+      "sha256": "a02d686118918a472e2fc850f18a6597d887b39d97d05f261254ea4af6f6cfd7",
+      "compression": "none",
+      "raw_bytes": 3411,
+      "raw_sha256": "a02d686118918a472e2fc850f18a6597d887b39d97d05f261254ea4af6f6cfd7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_02/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/PUBLICATION_STATUS.json.txt",
+      "bytes": 854,
+      "sha256": "f6e0459ef46336c05fec82185d802f6ef265034a03d76e531fe2b6067b70efc1",
+      "compression": "none",
+      "raw_bytes": 854,
+      "raw_sha256": "f6e0459ef46336c05fec82185d802f6ef265034a03d76e531fe2b6067b70efc1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_02/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json.txt",
+      "bytes": 240327,
+      "sha256": "ad8b7cb50ce04d5835e94cf30ea314de9c1dfbc8de2b6959d58e16862ea87468",
+      "compression": "none",
+      "raw_bytes": 240327,
+      "raw_sha256": "ad8b7cb50ce04d5835e94cf30ea314de9c1dfbc8de2b6959d58e16862ea87468"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_02/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json.txt",
+      "bytes": 385474,
+      "sha256": "3d2233653ac7d16c31c96a59f976beb53c70dba7631b0f597ca5f9f645ac8c2d",
+      "compression": "none",
+      "raw_bytes": 385474,
+      "raw_sha256": "3d2233653ac7d16c31c96a59f976beb53c70dba7631b0f597ca5f9f645ac8c2d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_02/canonical/scripts/thermal_resonance_halt_2026_10_17.py.txt",
+      "bytes": 59026,
+      "sha256": "2b923238d021ad2bd162fd7b2b643d24a954a98f55d54dcb3956f95edb849c6d",
+      "compression": "none",
+      "raw_bytes": 59026,
+      "raw_sha256": "2b923238d021ad2bd162fd7b2b643d24a954a98f55d54dcb3956f95edb849c6d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_03/BUILD_RESULT.json.txt",
+      "bytes": 739,
+      "sha256": "5b70cc559e0d8694040dcff3384a5cb43b88f0ead41ce1a6537fa922564c4501",
+      "compression": "none",
+      "raw_bytes": 739,
+      "raw_sha256": "5b70cc559e0d8694040dcff3384a5cb43b88f0ead41ce1a6537fa922564c4501"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_03/CAPTURE_BINDINGS.json.txt",
+      "bytes": 208456,
+      "sha256": "75146cc6dbe30440270b5107c1467bc22541883b18cfc23b7cc765a59743696a",
+      "compression": "none",
+      "raw_bytes": 208456,
+      "raw_sha256": "75146cc6dbe30440270b5107c1467bc22541883b18cfc23b7cc765a59743696a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_03/WRAPPER.md.txt",
+      "bytes": 12967,
+      "sha256": "38ca3880548d7e4f9ae870a91a09399c15d49c7ecc50c89d75d99d65cbd7f28f",
+      "compression": "none",
+      "raw_bytes": 12967,
+      "raw_sha256": "38ca3880548d7e4f9ae870a91a09399c15d49c7ecc50c89d75d99d65cbd7f28f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_03/WRAPPER_DIFF.patch.txt",
+      "bytes": 2891,
+      "sha256": "db8e1a201b3f94a0f9a72af68adb839ef55d05b502e8981a292adb7e825846ee",
+      "compression": "none",
+      "raw_bytes": 2891,
+      "raw_sha256": "db8e1a201b3f94a0f9a72af68adb839ef55d05b502e8981a292adb7e825846ee"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_03/build_package.py.txt",
+      "bytes": 29513,
+      "sha256": "f4d77bc74122bccfccff8accfb6971fb0dc51abf6722d93274d43e3765f54958",
+      "compression": "none",
+      "raw_bytes": 29513,
+      "raw_sha256": "f4d77bc74122bccfccff8accfb6971fb0dc51abf6722d93274d43e3765f54958"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_03/canonical/docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md.gz",
+      "bytes": 45449,
+      "sha256": "1e07b77dc3a1454b204c5fc08c36313c6fb10e116a7f5abc9d7ccaaf70a300bd",
+      "compression": "gzip",
+      "raw_bytes": 118901,
+      "raw_sha256": "e704d9462abc8d4f579957b006e6fa198b16a8e14fecfa17d05c2c93d92acbfe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_03/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json.txt",
+      "bytes": 35526,
+      "sha256": "4af962a379795936b1cb1e08cdedf569bf398f70db8fe4c5793a815fe3cd0643",
+      "compression": "none",
+      "raw_bytes": 35526,
+      "raw_sha256": "4af962a379795936b1cb1e08cdedf569bf398f70db8fe4c5793a815fe3cd0643"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_03/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/PROOF_BODY_MAP.json.txt",
+      "bytes": 14538,
+      "sha256": "943a5101a4acae370bb70a76400588a7888e10bf112bc22279263b00534c06e9",
+      "compression": "none",
+      "raw_bytes": 14538,
+      "raw_sha256": "943a5101a4acae370bb70a76400588a7888e10bf112bc22279263b00534c06e9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_03/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/PUBLICATION_STATUS.json.txt",
+      "bytes": 854,
+      "sha256": "8ecdc3c75faa33186ba3c6563ff8794c7aee977f085a7bf831405b8657ee3ee0",
+      "compression": "none",
+      "raw_bytes": 854,
+      "raw_sha256": "8ecdc3c75faa33186ba3c6563ff8794c7aee977f085a7bf831405b8657ee3ee0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_03/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json.txt",
+      "bytes": 240327,
+      "sha256": "e044650e60f364c2244b383d0eda7a3340759fc91cf42286bb233f4d5bd60aa3",
+      "compression": "none",
+      "raw_bytes": 240327,
+      "raw_sha256": "e044650e60f364c2244b383d0eda7a3340759fc91cf42286bb233f4d5bd60aa3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_03/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json.txt",
+      "bytes": 385474,
+      "sha256": "d8632ee30682816abcc5393712c4df72cf71df13b169b25b01b04f008bb1bf63",
+      "compression": "none",
+      "raw_bytes": 385474,
+      "raw_sha256": "d8632ee30682816abcc5393712c4df72cf71df13b169b25b01b04f008bb1bf63"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_04/BUILD_RESULT.json.txt",
+      "bytes": 739,
+      "sha256": "fdf10ffd3773560004b56c4d8cab317aaf495e424f14323659dab493ae5ce695",
+      "compression": "none",
+      "raw_bytes": 739,
+      "raw_sha256": "fdf10ffd3773560004b56c4d8cab317aaf495e424f14323659dab493ae5ce695"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_04/CAPTURE_BINDINGS.json.txt",
+      "bytes": 208456,
+      "sha256": "0ad1328693a0745ea6b19e8f5a6ac263e902b28164b788f1049a50c4b4ac021b",
+      "compression": "none",
+      "raw_bytes": 208456,
+      "raw_sha256": "0ad1328693a0745ea6b19e8f5a6ac263e902b28164b788f1049a50c4b4ac021b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_04/build_package.py.txt",
+      "bytes": 29841,
+      "sha256": "4f5ece2deb22362667fb0305ca47eef798ba1536d25a890a9f6bd1af9f857d5d",
+      "compression": "none",
+      "raw_bytes": 29841,
+      "raw_sha256": "4f5ece2deb22362667fb0305ca47eef798ba1536d25a890a9f6bd1af9f857d5d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_04/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json.txt",
+      "bytes": 35526,
+      "sha256": "3fffe873c9d5cd2b6e29060190ed0218e959130ca76dd37d8dfc6d6739db47c9",
+      "compression": "none",
+      "raw_bytes": 35526,
+      "raw_sha256": "3fffe873c9d5cd2b6e29060190ed0218e959130ca76dd37d8dfc6d6739db47c9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_04/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/PUBLICATION_STATUS.json.txt",
+      "bytes": 854,
+      "sha256": "2c191867ae72ad1740e669844824f18db065d743e1a3c6387a2f5373a69c06d6",
+      "compression": "none",
+      "raw_bytes": 854,
+      "raw_sha256": "2c191867ae72ad1740e669844824f18db065d743e1a3c6387a2f5373a69c06d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_04/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json.txt",
+      "bytes": 240327,
+      "sha256": "6e1f132ecbe52fe588bfd22e7b36251f541a518399fc11417f294062e8bfd1d7",
+      "compression": "none",
+      "raw_bytes": 240327,
+      "raw_sha256": "6e1f132ecbe52fe588bfd22e7b36251f541a518399fc11417f294062e8bfd1d7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_04/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json.txt",
+      "bytes": 385474,
+      "sha256": "253bc5145e65aaef5576dcea7fe757f8bfe59d4fe06416ec05fc285c07cbad9c",
+      "compression": "none",
+      "raw_bytes": 385474,
+      "raw_sha256": "253bc5145e65aaef5576dcea7fe757f8bfe59d4fe06416ec05fc285c07cbad9c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_04/canonical/scripts/thermal_resonance_halt_2026_10_17.py.txt",
+      "bytes": 58989,
+      "sha256": "2b6ee9999032a142049adefc206309bf7fccc50bf6b927d0c2fcded53864d76b",
+      "compression": "none",
+      "raw_bytes": 58989,
+      "raw_sha256": "2b6ee9999032a142049adefc206309bf7fccc50bf6b927d0c2fcded53864d76b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_05/BUILD_RESULT.json.txt",
+      "bytes": 739,
+      "sha256": "33e94e28f00b606b3cb5e150029809d84ebc931a4db77486fa15a1a4ea1f89e2",
+      "compression": "none",
+      "raw_bytes": 739,
+      "raw_sha256": "33e94e28f00b606b3cb5e150029809d84ebc931a4db77486fa15a1a4ea1f89e2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_05/CAPTURE_BINDINGS.json.txt",
+      "bytes": 208456,
+      "sha256": "60d1620896d5c596cd9bff9cec8df100ccebd63c79ed176835a7ead8cc49cebb",
+      "compression": "none",
+      "raw_bytes": 208456,
+      "raw_sha256": "60d1620896d5c596cd9bff9cec8df100ccebd63c79ed176835a7ead8cc49cebb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_05/build_package.py.txt",
+      "bytes": 30314,
+      "sha256": "d5c1c90b69d9e57c00927061cb4c351d143ab0dee3c51853ef23faa2634cda99",
+      "compression": "none",
+      "raw_bytes": 30314,
+      "raw_sha256": "d5c1c90b69d9e57c00927061cb4c351d143ab0dee3c51853ef23faa2634cda99"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_05/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json.txt",
+      "bytes": 35725,
+      "sha256": "21d938a82d8ada8dc7e14fca66ac3de2e122360abc24dbfa5710aba1ca49955b",
+      "compression": "none",
+      "raw_bytes": 35725,
+      "raw_sha256": "21d938a82d8ada8dc7e14fca66ac3de2e122360abc24dbfa5710aba1ca49955b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_05/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/PUBLICATION_STATUS.json.txt",
+      "bytes": 854,
+      "sha256": "b5e2a4cae310262ea9d2671dfbdee9ae26144b38a2f6ed3d8f8c79fa743d9a45",
+      "compression": "none",
+      "raw_bytes": 854,
+      "raw_sha256": "b5e2a4cae310262ea9d2671dfbdee9ae26144b38a2f6ed3d8f8c79fa743d9a45"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_05/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json.txt",
+      "bytes": 240327,
+      "sha256": "460b5c6ff7b459284263972bf334d23f94045e68bc81e96130349e2afdae6208",
+      "compression": "none",
+      "raw_bytes": 240327,
+      "raw_sha256": "460b5c6ff7b459284263972bf334d23f94045e68bc81e96130349e2afdae6208"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/historical_build_05/canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json.txt",
+      "bytes": 385474,
+      "sha256": "a4c1f3f5143d9d86402e396a421287133a19cb204eeb15a6aab72ea8bd2768e2",
+      "compression": "none",
+      "raw_bytes": 385474,
+      "raw_sha256": "a4c1f3f5143d9d86402e396a421287133a19cb204eeb15a6aab72ea8bd2768e2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/launch_static.py.txt",
+      "bytes": 3361,
+      "sha256": "4b9057e370121a24bc7201e6b2fdf8f44e518d3b44e1d8c25c4971e460951dd2",
+      "compression": "none",
+      "raw_bytes": 3361,
+      "raw_sha256": "4b9057e370121a24bc7201e6b2fdf8f44e518d3b44e1d8c25c4971e460951dd2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_01/PRELAUNCH.json.txt",
+      "bytes": 71901,
+      "sha256": "618a84e6a1aaaa46552dd11eb85247a5550b811836b2f3c19e73d2b0a270db66",
+      "compression": "none",
+      "raw_bytes": 71901,
+      "raw_sha256": "618a84e6a1aaaa46552dd11eb85247a5550b811836b2f3c19e73d2b0a270db66"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_01/RECEIPT.json.txt",
+      "bytes": 1678,
+      "sha256": "db7bc28666d762f7c4429d099be0c8a522e548e271e2ccb4ba9c9b619604b53a",
+      "compression": "none",
+      "raw_bytes": 1678,
+      "raw_sha256": "db7bc28666d762f7c4429d099be0c8a522e548e271e2ccb4ba9c9b619604b53a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_01/stderr.txt.txt",
+      "bytes": 628,
+      "sha256": "f90c67949c4b6c9c8570bd0dd53f286b7129f18b4a8dd18794629dd5551a9905",
+      "compression": "none",
+      "raw_bytes": 628,
+      "raw_sha256": "f90c67949c4b6c9c8570bd0dd53f286b7129f18b4a8dd18794629dd5551a9905"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_01/verify_static.py.txt",
+      "bytes": 12662,
+      "sha256": "bc8a5e11ac4fe144940fcceaeadd73b957cc370660e2a4d7271bee8a7007d8db",
+      "compression": "none",
+      "raw_bytes": 12662,
+      "raw_sha256": "bc8a5e11ac4fe144940fcceaeadd73b957cc370660e2a4d7271bee8a7007d8db"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_02/PRELAUNCH.json.txt",
+      "bytes": 71901,
+      "sha256": "51ff00eff61a61507b5fb355ffb3bb047da7b6f2f545a2444956ea68c3d821ed",
+      "compression": "none",
+      "raw_bytes": 71901,
+      "raw_sha256": "51ff00eff61a61507b5fb355ffb3bb047da7b6f2f545a2444956ea68c3d821ed"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_02/RECEIPT.json.txt",
+      "bytes": 1677,
+      "sha256": "76041db7fd924f3d657998f854d9d309d5880bbef4e627037e6f12cc892eed39",
+      "compression": "none",
+      "raw_bytes": 1677,
+      "raw_sha256": "76041db7fd924f3d657998f854d9d309d5880bbef4e627037e6f12cc892eed39"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_02/fixture_repo/fixture/good.txt.txt",
+      "bytes": 23,
+      "sha256": "1399edaf37763733b79902843928049b1472fac6551a28018810dfbf98cf2094",
+      "compression": "none",
+      "raw_bytes": 23,
+      "raw_sha256": "1399edaf37763733b79902843928049b1472fac6551a28018810dfbf98cf2094"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_02/stderr.txt.txt",
+      "bytes": 630,
+      "sha256": "b6f979831ba4f1c7931b53f52bdcf0ad51fb1de5a2ef1b543df0ed27f2c0722c",
+      "compression": "none",
+      "raw_bytes": 630,
+      "raw_sha256": "b6f979831ba4f1c7931b53f52bdcf0ad51fb1de5a2ef1b543df0ed27f2c0722c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_03/PRELAUNCH.json.txt",
+      "bytes": 71901,
+      "sha256": "2cbd059e64bf1fc84d87b8cb8e0ed7d3a4128fe173673d4542c840f1cbb65432",
+      "compression": "none",
+      "raw_bytes": 71901,
+      "raw_sha256": "2cbd059e64bf1fc84d87b8cb8e0ed7d3a4128fe173673d4542c840f1cbb65432"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_03/RECEIPT.json.txt",
+      "bytes": 1676,
+      "sha256": "472054da376bb5a96056a070141564b9b76e6a9b8110aa51c3f02b6d19108279",
+      "compression": "none",
+      "raw_bytes": 1676,
+      "raw_sha256": "472054da376bb5a96056a070141564b9b76e6a9b8110aa51c3f02b6d19108279"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_03/stderr.txt.txt",
+      "bytes": 641,
+      "sha256": "20d91afc7b952f5306ae1bde000c0b58f7bfde768595931b70999f4afc6959b6",
+      "compression": "none",
+      "raw_bytes": 641,
+      "raw_sha256": "20d91afc7b952f5306ae1bde000c0b58f7bfde768595931b70999f4afc6959b6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_03/verify_static.py.txt",
+      "bytes": 12813,
+      "sha256": "b3aa6b9d9dbe84115f3034418f525e41c685cda96acf598fff8e0c8d41b014ae",
+      "compression": "none",
+      "raw_bytes": 12813,
+      "raw_sha256": "b3aa6b9d9dbe84115f3034418f525e41c685cda96acf598fff8e0c8d41b014ae"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_04/PRELAUNCH.json.txt",
+      "bytes": 72278,
+      "sha256": "79a2744ebafbae4329306ac9af8976a7711f99a603093d84e8a9b7c8517fc27d",
+      "compression": "none",
+      "raw_bytes": 72278,
+      "raw_sha256": "79a2744ebafbae4329306ac9af8976a7711f99a603093d84e8a9b7c8517fc27d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_04/RECEIPT.json.txt",
+      "bytes": 1666,
+      "sha256": "85ce456c0c87646b7c6043d7a6eae1a1fd3acc842c2d4f7106010d977e7732b3",
+      "compression": "none",
+      "raw_bytes": 1666,
+      "raw_sha256": "85ce456c0c87646b7c6043d7a6eae1a1fd3acc842c2d4f7106010d977e7732b3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_04/STATIC_RESULT.json.txt",
+      "bytes": 279987,
+      "sha256": "79423d319f443b15ef6bf079dfd070fd90d1c62512eefecb9809d102cf544d00",
+      "compression": "none",
+      "raw_bytes": 279987,
+      "raw_sha256": "79423d319f443b15ef6bf079dfd070fd90d1c62512eefecb9809d102cf544d00"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/packaging/static_04/stdout.txt.txt",
+      "bytes": 2634,
+      "sha256": "357c5eb650e3af328ed62feeb8632fb46402786dac9890f440d482ca002fa01e",
+      "compression": "none",
+      "raw_bytes": 2634,
+      "raw_sha256": "357c5eb650e3af328ed62feeb8632fb46402786dac9890f440d482ca002fa01e"
+    },
+    {
+      "path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 50396,
+      "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87",
+      "compression": "none",
+      "raw_bytes": 50396,
+      "raw_sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+    },
+    {
+      "path": "docs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 117717,
+      "sha256": "7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021",
+      "compression": "none",
+      "raw_bytes": 117717,
+      "raw_sha256": "7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021"
+    },
+    {
+      "path": "docs/INSTALLED_GENERATOR_PREPARATION_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 77852,
+      "sha256": "cdb42d6682ee56968c20229b2e012a23afc6de75bceab0f42f06bc94b95a4fe6",
+      "compression": "none",
+      "raw_bytes": 77852,
+      "raw_sha256": "cdb42d6682ee56968c20229b2e012a23afc6de75bceab0f42f06bc94b95a4fe6"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "bytes": 4770,
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "compression": "none",
+      "raw_bytes": 4770,
+      "raw_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 166194,
+      "sha256": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89",
+      "compression": "none",
+      "raw_bytes": 166194,
+      "raw_sha256": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89"
+    },
+    {
+      "path": "docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 102731,
+      "sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9",
+      "compression": "none",
+      "raw_bytes": 102731,
+      "raw_sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "compression": "none",
+      "raw_bytes": 11333,
+      "raw_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
+      "bytes": 7275,
+      "sha256": "7bedb81876474133c560bcbb2ee9a360fe048c945b4802676a01855391282a0a",
+      "compression": "none",
+      "raw_bytes": 7275,
+      "raw_sha256": "7bedb81876474133c560bcbb2ee9a360fe048c945b4802676a01855391282a0a"
+    },
+    {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 94335,
+      "sha256": "bfa0b68ba5954b10f435846cae48df9a71fc04bcdb08215ca945319c13caef03",
+      "compression": "none",
+      "raw_bytes": 94335,
+      "raw_sha256": "bfa0b68ba5954b10f435846cae48df9a71fc04bcdb08215ca945319c13caef03"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "bytes": 5313,
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "compression": "none",
+      "raw_bytes": 5313,
+      "raw_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "docs/RECORD_BLANK_BOUNDARY_RESET_NO_GO_2026-06-05.md",
+      "bytes": 4820,
+      "sha256": "a135ca429e41725140382e2046cab4604263dcfaec2fef801be9d954acc971ea",
+      "compression": "none",
+      "raw_bytes": 4820,
+      "raw_sha256": "a135ca429e41725140382e2046cab4604263dcfaec2fef801be9d954acc971ea"
+    },
+    {
+      "path": "docs/RECORD_RESET_WITH_SINK_CONDITIONAL_2026-06-05.md",
+      "bytes": 3862,
+      "sha256": "ae0cbec1281a1e8d0e0fa50fb611afcac0b211847f67128feb3bfd1b89903304",
+      "compression": "none",
+      "raw_bytes": 3862,
+      "raw_sha256": "ae0cbec1281a1e8d0e0fa50fb611afcac0b211847f67128feb3bfd1b89903304"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "bytes": 2581,
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "compression": "none",
+      "raw_bytes": 2581,
+      "raw_sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 119492,
+      "sha256": "939a505813adb86ce8bccf335781fd8a1d3ce5ef96367836fe68339bc7c01b30",
+      "compression": "none",
+      "raw_bytes": 119492,
+      "raw_sha256": "939a505813adb86ce8bccf335781fd8a1d3ce5ef96367836fe68339bc7c01b30"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 106965,
+      "sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac",
+      "compression": "none",
+      "raw_bytes": 106965,
+      "raw_sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac"
+    },
+    {
+      "path": "docs/WRITING_VOICE_GUIDE_2026-04-25.md",
+      "bytes": 1958,
+      "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b",
+      "compression": "none",
+      "raw_bytes": 1958,
+      "raw_sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b"
+    },
+    {
+      "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "bytes": 34639,
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "compression": "none",
+      "raw_bytes": 34639,
+      "raw_sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "compression": "none",
+      "raw_bytes": 11788,
+      "raw_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "compression": "none",
+      "raw_bytes": 2180,
+      "raw_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md",
+      "bytes": 3253,
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "compression": "none",
+      "raw_bytes": 3253,
+      "raw_sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "compression": "none",
+      "raw_bytes": 16755,
+      "raw_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "compression": "none",
+      "raw_bytes": 16454,
+      "raw_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "bytes": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "compression": "none",
+      "raw_bytes": 30709,
+      "raw_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "compression": "none",
+      "raw_bytes": 6416,
+      "raw_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/CANDIDATE.md.txt",
+      "bytes": 39464,
+      "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+      "compression": "none",
+      "raw_bytes": 39464,
+      "raw_sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+    },
+    {
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt",
+      "bytes": 31244,
+      "sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f",
+      "compression": "none",
+      "raw_bytes": 31244,
+      "raw_sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f"
+    },
+    {
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json",
+      "bytes": 12525,
+      "sha256": "bd2059184e105bd41437b1c28ca3f106a441215e09eac7a2b3ec316cbd674318",
+      "compression": "none",
+      "raw_bytes": 12525,
+      "raw_sha256": "bd2059184e105bd41437b1c28ca3f106a441215e09eac7a2b3ec316cbd674318"
+    },
+    {
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt",
+      "bytes": 2484,
+      "sha256": "0b0ce9eaba582d878b982ecd0f86a53857c5f394b9a42b4e27306e58bb405102",
+      "compression": "none",
+      "raw_bytes": 2484,
+      "raw_sha256": "0b0ce9eaba582d878b982ecd0f86a53857c5f394b9a42b4e27306e58bb405102"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt",
+      "bytes": 27328,
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1",
+      "compression": "none",
+      "raw_bytes": 27328,
+      "raw_sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/INTERVAL_CANDIDATE.md.txt",
+      "bytes": 23457,
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+      "compression": "none",
+      "raw_bytes": 23457,
+      "raw_sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/THEOREM_V2.md.txt",
+      "bytes": 27028,
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+      "compression": "none",
+      "raw_bytes": 27028,
+      "raw_sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt",
+      "bytes": 30796,
+      "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee",
+      "compression": "none",
+      "raw_bytes": 30796,
+      "raw_sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "bytes": 24275,
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+      "compression": "none",
+      "raw_bytes": 24275,
+      "raw_sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/process/physics-claim-reviewer/SKILL.md.txt",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "compression": "none",
+      "raw_bytes": 14490,
+      "raw_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/process/proof-search-governance.md.txt",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "compression": "none",
+      "raw_bytes": 4975,
+      "raw_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/ACCEPTANCE.json",
+      "bytes": 37048,
+      "sha256": "c99e0c13ec2469910d74d1fe487d9d4ae09539d1ca3d46f53047dc36d509963c",
+      "compression": "none",
+      "raw_bytes": 37048,
+      "raw_sha256": "c99e0c13ec2469910d74d1fe487d9d4ae09539d1ca3d46f53047dc36d509963c"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/QUALIFICATION.md.txt",
+      "bytes": 2489,
+      "sha256": "dfe73e8d332dc81bac378daf480662f74e95e3091f01fce11d6e2098f7d7596d",
+      "compression": "none",
+      "raw_bytes": 2489,
+      "raw_sha256": "dfe73e8d332dc81bac378daf480662f74e95e3091f01fce11d6e2098f7d7596d"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt",
+      "bytes": 10962,
+      "sha256": "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5",
+      "compression": "none",
+      "raw_bytes": 10962,
+      "raw_sha256": "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/ACCEPTANCE.json",
+      "bytes": 25670,
+      "sha256": "01e6cf9d8e54d8dd38157f5901a0c9c2b7bc0ed2890e7895b2213a26b1469a16",
+      "compression": "none",
+      "raw_bytes": 25670,
+      "raw_sha256": "01e6cf9d8e54d8dd38157f5901a0c9c2b7bc0ed2890e7895b2213a26b1469a16"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/QUALIFICATION.md.txt",
+      "bytes": 2186,
+      "sha256": "f3513816c0bbe060f50860e02a2f1c49afcd42056314af9cc161885076882f4b",
+      "compression": "none",
+      "raw_bytes": 2186,
+      "raw_sha256": "f3513816c0bbe060f50860e02a2f1c49afcd42056314af9cc161885076882f4b"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "bytes": 35729,
+      "sha256": "9ef23d8044235449b6f4b0cc04d20aa7f6f1c95675b7b20fd38926c25fc4dc83",
+      "compression": "none",
+      "raw_bytes": 35729,
+      "raw_sha256": "9ef23d8044235449b6f4b0cc04d20aa7f6f1c95675b7b20fd38926c25fc4dc83"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/INFRASTRUCTURE_SOURCE.json",
+      "bytes": 701,
+      "sha256": "1d2b5c30ade8ef4af39c109120060d47fb42c85091b09e2317e0e7460f3786f2",
+      "compression": "none",
+      "raw_bytes": 701,
+      "raw_sha256": "1d2b5c30ade8ef4af39c109120060d47fb42c85091b09e2317e0e7460f3786f2"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/INPUT_MAP.json",
+      "bytes": 9486,
+      "sha256": "4f66e0e922a49bbff388bee64a4f90e1524c693c3008e7126b6a0937ce6a3797",
+      "compression": "none",
+      "raw_bytes": 9486,
+      "raw_sha256": "4f66e0e922a49bbff388bee64a4f90e1524c693c3008e7126b6a0937ce6a3797"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/PROOF_BODY_MAP.json",
+      "bytes": 15224,
+      "sha256": "214d99af02f0e84f9a6aee59e07082f35e529d6ead2a9531412e2a5d1a7035e7",
+      "compression": "none",
+      "raw_bytes": 15224,
+      "raw_sha256": "214d99af02f0e84f9a6aee59e07082f35e529d6ead2a9531412e2a5d1a7035e7"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/PUBLICATION_STATUS.json",
+      "bytes": 1099,
+      "sha256": "82e5a8242884e0015003e21a791c1549ad10ec0384e277197cbe9d83d69673aa",
+      "compression": "none",
+      "raw_bytes": 1099,
+      "raw_sha256": "82e5a8242884e0015003e21a791c1549ad10ec0384e277197cbe9d83d69673aa"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/REPRODUCTION_PLAN.json",
+      "bytes": 1634,
+      "sha256": "f002a0d8679aa1174bc66c0d6c23f74b83739a92dab3258c205b9af1a18b104d",
+      "compression": "none",
+      "raw_bytes": 1634,
+      "raw_sha256": "f002a0d8679aa1174bc66c0d6c23f74b83739a92dab3258c205b9af1a18b104d"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json",
+      "bytes": 240644,
+      "sha256": "e6a0f1fa41d500a53731d569e46f63fff08aecd255d7f46000936275ebf72535",
+      "compression": "none",
+      "raw_bytes": 240644,
+      "raw_sha256": "e6a0f1fa41d500a53731d569e46f63fff08aecd255d7f46000936275ebf72535"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+      "bytes": 385474,
+      "sha256": "827c65ce4eb84c0a27b446c30179564c1d3000aa4bdc4a68dfbfb41eb60cf39e",
+      "compression": "none",
+      "raw_bytes": 385474,
+      "raw_sha256": "827c65ce4eb84c0a27b446c30179564c1d3000aa4bdc4a68dfbfb41eb60cf39e"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/CANDIDATE.md.txt.gz",
+      "bytes": 12035,
+      "sha256": "5174b0311ac0841e2c4947e25488b23c19aef820c1de62482c99631fff08c312",
+      "compression": "gzip",
+      "raw_bytes": 28456,
+      "raw_sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/FILE_MANIFEST.json",
+      "bytes": 4354,
+      "sha256": "6593244eeac318b3d2cbd2327ef8960566f552fe7b951abbd20d4e20612a0fd6",
+      "compression": "none",
+      "raw_bytes": 4354,
+      "raw_sha256": "6593244eeac318b3d2cbd2327ef8960566f552fe7b951abbd20d4e20612a0fd6"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/FREEZE.json",
+      "bytes": 1693,
+      "sha256": "fb4b80aada7275e110fc76ea0c4ac49974daf123db79a5639156e9332e958855",
+      "compression": "none",
+      "raw_bytes": 1693,
+      "raw_sha256": "fb4b80aada7275e110fc76ea0c4ac49974daf123db79a5639156e9332e958855"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/PRIOR_SEARCH.json",
+      "bytes": 16008,
+      "sha256": "2b3b60f6c33d79ccbc6ea34e7f8e368234d6dbfd814b2dfc82d448cc565c5ec6",
+      "compression": "none",
+      "raw_bytes": 16008,
+      "raw_sha256": "2b3b60f6c33d79ccbc6ea34e7f8e368234d6dbfd814b2dfc82d448cc565c5ec6"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/RESOURCE_PLAN.json",
+      "bytes": 2150,
+      "sha256": "298504905f055e7187554f2f5a2c1c1dc9b650e5d80f4b6014d5ad8ee4d3ce15",
+      "compression": "none",
+      "raw_bytes": 2150,
+      "raw_sha256": "298504905f055e7187554f2f5a2c1c1dc9b650e5d80f4b6014d5ad8ee4d3ce15"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/SOURCE_COVERAGE.md.txt",
+      "bytes": 6395,
+      "sha256": "0f4d30312972e320112ce42e7b489c87d025559438906d9467a0d0181315da58",
+      "compression": "none",
+      "raw_bytes": 6395,
+      "raw_sha256": "0f4d30312972e320112ce42e7b489c87d025559438906d9467a0d0181315da58"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/SOURCE_MAP.json",
+      "bytes": 4689,
+      "sha256": "7d8c278958582704f1f8c54875618336bc1f38756592d7bcec83701e09228835",
+      "compression": "none",
+      "raw_bytes": 4689,
+      "raw_sha256": "7d8c278958582704f1f8c54875618336bc1f38756592d7bcec83701e09228835"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/STATIC_AND_EVIDENCE_CHECK.json",
+      "bytes": 10268,
+      "sha256": "ebffb295fa4fc6982fd5ea726d450fc1503e2f3344d1da7fe894ccadbd563d39",
+      "compression": "none",
+      "raw_bytes": 10268,
+      "raw_sha256": "ebffb295fa4fc6982fd5ea726d450fc1503e2f3344d1da7fe894ccadbd563d39"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/PRELAUNCH.json",
+      "bytes": 9642,
+      "sha256": "278f4805d655f6f469895f4062f3718675cda92c64b01aa585228c956609e609",
+      "compression": "none",
+      "raw_bytes": 9642,
+      "raw_sha256": "278f4805d655f6f469895f4062f3718675cda92c64b01aa585228c956609e609"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/RECEIPT.json",
+      "bytes": 10782,
+      "sha256": "88cc2a22357bb116878a788ec7d9ba6615dc2c70a7e62ac064b04184b380c321",
+      "compression": "none",
+      "raw_bytes": 10782,
+      "raw_sha256": "88cc2a22357bb116878a788ec7d9ba6615dc2c70a7e62ac064b04184b380c321"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/check_preparation.py",
+      "bytes": 13034,
+      "sha256": "15825c012370af1a260d37cb940e44cdaec9049dc2d897e0db68283062450d55",
+      "compression": "none",
+      "raw_bytes": 13034,
+      "raw_sha256": "15825c012370af1a260d37cb940e44cdaec9049dc2d897e0db68283062450d55"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/stdout.json",
+      "bytes": 25536,
+      "sha256": "4c64211724e698a53111ba6dcb3aa88b80c779d795b37dcd955428a1b0afd982",
+      "compression": "none",
+      "raw_bytes": 25536,
+      "raw_sha256": "4c64211724e698a53111ba6dcb3aa88b80c779d795b37dcd955428a1b0afd982"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/capture_sources.py",
+      "bytes": 2770,
+      "sha256": "ee42c4f69f000aae572cdc7a9f860cbb153582432d2cd4e97bccd56da1ffca4a",
+      "compression": "none",
+      "raw_bytes": 2770,
+      "raw_sha256": "ee42c4f69f000aae572cdc7a9f860cbb153582432d2cd4e97bccd56da1ffca4a"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/ANALYTICAL_FREEZE.json",
+      "bytes": 1965,
+      "sha256": "146697585c3e5eff8c6e4b4852cdd64576da3dc85a161beaa8b0486277574ea0",
+      "compression": "none",
+      "raw_bytes": 1965,
+      "raw_sha256": "146697585c3e5eff8c6e4b4852cdd64576da3dc85a161beaa8b0486277574ea0"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/CAPTURE_FAILURE_01.json",
+      "bytes": 858,
+      "sha256": "d6763a55005524bd70f73d5a758f90867bf1ca99c6a76692c03081df77892d33",
+      "compression": "none",
+      "raw_bytes": 858,
+      "raw_sha256": "d6763a55005524bd70f73d5a758f90867bf1ca99c6a76692c03081df77892d33"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/COMPARISON_REVIEW.md.txt",
+      "bytes": 23764,
+      "sha256": "cdf14b870fb6d1f706f9a4a09f46fbf42a5dd0b5bc4f7a0c964bb0927b78ac09",
+      "compression": "none",
+      "raw_bytes": 23764,
+      "raw_sha256": "cdf14b870fb6d1f706f9a4a09f46fbf42a5dd0b5bc4f7a0c964bb0927b78ac09"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/EXPOSURE_START.json",
+      "bytes": 1387,
+      "sha256": "d982e03c87f44e719c1709735de4765c5f3aee2dca61c553035a307b044e77cf",
+      "compression": "none",
+      "raw_bytes": 1387,
+      "raw_sha256": "d982e03c87f44e719c1709735de4765c5f3aee2dca61c553035a307b044e77cf"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/REVIEW_MANIFEST.json",
+      "bytes": 1640,
+      "sha256": "071e005f02347e64f60e2f2920a0a0d2ce96f0d5fb174adfe33d97379d6567fa",
+      "compression": "none",
+      "raw_bytes": 1640,
+      "raw_sha256": "071e005f02347e64f60e2f2920a0a0d2ce96f0d5fb174adfe33d97379d6567fa"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/SOURCE_EXPOSURE.json",
+      "bytes": 1050,
+      "sha256": "8d583c1a836d0a1386d990c598cc6154767682d4b5b91d77ca7de79ac2502428",
+      "compression": "none",
+      "raw_bytes": 1050,
+      "raw_sha256": "8d583c1a836d0a1386d990c598cc6154767682d4b5b91d77ca7de79ac2502428"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/STATIC_REVIEW_CHECK.json",
+      "bytes": 1180,
+      "sha256": "52ef22464c805db543a25b1616963193531b71405583ee693e9bd571b3b1406a",
+      "compression": "none",
+      "raw_bytes": 1180,
+      "raw_sha256": "52ef22464c805db543a25b1616963193531b71405583ee693e9bd571b3b1406a"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/freeze_review.py",
+      "bytes": 4273,
+      "sha256": "b1ffae44078848e33332115d2d14ebe78ad191e0044da31d880fa1f8d49f9033",
+      "compression": "none",
+      "raw_bytes": 4273,
+      "raw_sha256": "b1ffae44078848e33332115d2d14ebe78ad191e0044da31d880fa1f8d49f9033"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/finalize_packet.py",
+      "bytes": 7468,
+      "sha256": "7a4bdfae9a61919e988760b66d52575857e2a759a8be12534224ad9fecc5995a",
+      "compression": "none",
+      "raw_bytes": 7468,
+      "raw_sha256": "7a4bdfae9a61919e988760b66d52575857e2a759a8be12534224ad9fecc5995a"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/launch_check.py",
+      "bytes": 3074,
+      "sha256": "f7631d81614c8080dc98ef18b4b9dc31bc769d136df4c9c8279c36eadc719c80",
+      "compression": "none",
+      "raw_bytes": 3074,
+      "raw_sha256": "f7631d81614c8080dc98ef18b4b9dc31bc769d136df4c9c8279c36eadc719c80"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/CANDIDATE.md.txt",
+      "bytes": 21245,
+      "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0",
+      "compression": "none",
+      "raw_bytes": 21245,
+      "raw_sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/EVIDENCE.json",
+      "bytes": 2541,
+      "sha256": "821666f6be9624d1e3a8f6260919264c21dde129343095f3ef04d7c3cbfa0d6e",
+      "compression": "none",
+      "raw_bytes": 2541,
+      "raw_sha256": "821666f6be9624d1e3a8f6260919264c21dde129343095f3ef04d7c3cbfa0d6e"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/FILE_MANIFEST.json",
+      "bytes": 4772,
+      "sha256": "083a756e896feeb0b07d4c65ca9143008a6839c378a240ac42abce8b92a24d6c",
+      "compression": "none",
+      "raw_bytes": 4772,
+      "raw_sha256": "083a756e896feeb0b07d4c65ca9143008a6839c378a240ac42abce8b92a24d6c"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/FREEZE.json",
+      "bytes": 751,
+      "sha256": "2337aec4a67826733d78499507754e1b37ae4f04c8cacded4149d7d767f4c421",
+      "compression": "none",
+      "raw_bytes": 751,
+      "raw_sha256": "2337aec4a67826733d78499507754e1b37ae4f04c8cacded4149d7d767f4c421"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/SOURCE_MANIFEST.json",
+      "bytes": 8534,
+      "sha256": "8e36d040e152ccdea525024751d9a8b314b75bfb3b28c49d600d1d56f1081737",
+      "compression": "none",
+      "raw_bytes": 8534,
+      "raw_sha256": "8e36d040e152ccdea525024751d9a8b314b75bfb3b28c49d600d1d56f1081737"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/STAGED_RELEASE_ADDENDUM.md.txt",
+      "bytes": 7945,
+      "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885",
+      "compression": "none",
+      "raw_bytes": 7945,
+      "raw_sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/STAGED_RELEASE_FREEZE.json",
+      "bytes": 433,
+      "sha256": "5a15bbbbc55f092e8ff3b1388e8ca804ff439b1ca20360ffb4a66411ae72b546",
+      "compression": "none",
+      "raw_bytes": 433,
+      "raw_sha256": "5a15bbbbc55f092e8ff3b1388e8ca804ff439b1ca20360ffb4a66411ae72b546"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/check_preparation.py",
+      "bytes": 11515,
+      "sha256": "5cf3a0db8abe26cdc6008730a0cc8eb95640aeeafdf963a86f99e34e17235b9b",
+      "compression": "none",
+      "raw_bytes": 11515,
+      "raw_sha256": "5cf3a0db8abe26cdc6008730a0cc8eb95640aeeafdf963a86f99e34e17235b9b"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/launch_check.py",
+      "bytes": 4078,
+      "sha256": "de61255a832eb95ef74cf1b67ca2741c9fc21417a1da3229f47de34977500263",
+      "compression": "none",
+      "raw_bytes": 4078,
+      "raw_sha256": "de61255a832eb95ef74cf1b67ca2741c9fc21417a1da3229f47de34977500263"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/run01/EXECUTION.json",
+      "bytes": 1412,
+      "sha256": "2d4e2cb2864152926088010add43cda02516e5e1331a324291b2f977e8df8a71",
+      "compression": "none",
+      "raw_bytes": 1412,
+      "raw_sha256": "2d4e2cb2864152926088010add43cda02516e5e1331a324291b2f977e8df8a71"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/run01/PRELAUNCH.json",
+      "bytes": 8683,
+      "sha256": "fe3b8694cb53d7298c72de37de0ad296e82290b48c1b80d0db3c3a5219a6bf35",
+      "compression": "none",
+      "raw_bytes": 8683,
+      "raw_sha256": "fe3b8694cb53d7298c72de37de0ad296e82290b48c1b80d0db3c3a5219a6bf35"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/run01/stdout.txt",
+      "bytes": 5164,
+      "sha256": "2f7ba209a8db5a4f5ceeb11cde7e216a641c4168ca5342f7480d3d657b6403b0",
+      "compression": "none",
+      "raw_bytes": 5164,
+      "raw_sha256": "2f7ba209a8db5a4f5ceeb11cde7e216a641c4168ca5342f7480d3d657b6403b0"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_interacting_root_qualification/ACCEPTANCE.json",
+      "bytes": 34658,
+      "sha256": "c3729f67a8c5ffa8b3aec646c8ca940764289408177646956b4b1d6a9ef6c267",
+      "compression": "none",
+      "raw_bytes": 34658,
+      "raw_sha256": "c3729f67a8c5ffa8b3aec646c8ca940764289408177646956b4b1d6a9ef6c267"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_interacting_root_qualification/CLARIFICATION.md.txt",
+      "bytes": 2069,
+      "sha256": "3a38c656e28fdef327c77ce3c49a9665e0fb200889dee0c990d8ff06bd97fa71",
+      "compression": "none",
+      "raw_bytes": 2069,
+      "raw_sha256": "3a38c656e28fdef327c77ce3c49a9665e0fb200889dee0c990d8ff06bd97fa71"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_product_root_qualification/ACCEPTANCE.json",
+      "bytes": 13476,
+      "sha256": "43e1609d6e38b2220e35e1637428263e49b38d1ac22ed282ee64f3d7d3f60ca5",
+      "compression": "none",
+      "raw_bytes": 13476,
+      "raw_sha256": "43e1609d6e38b2220e35e1637428263e49b38d1ac22ed282ee64f3d7d3f60ca5"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_product_root_qualification/REVIEW.md.txt",
+      "bytes": 8169,
+      "sha256": "5e4cc2c916d9240ec5bb0b2a84559ae38fd2b20959e63c52d6b3c0bda04a2d69",
+      "compression": "none",
+      "raw_bytes": 8169,
+      "raw_sha256": "5e4cc2c916d9240ec5bb0b2a84559ae38fd2b20959e63c52d6b3c0bda04a2d69"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition/CANDIDATE.md.txt",
+      "bytes": 8933,
+      "sha256": "250d431f3b818e08225b97b9d65d539c447ddd7b6ab00a36f5f7c7a7cc3868ca",
+      "compression": "none",
+      "raw_bytes": 8933,
+      "raw_sha256": "250d431f3b818e08225b97b9d65d539c447ddd7b6ab00a36f5f7c7a7cc3868ca"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition/FREEZE.json",
+      "bytes": 513,
+      "sha256": "38c236c95a87fae06c1a6631867c698fc872791d8dcecc9a6b3d8fc865ce0575",
+      "compression": "none",
+      "raw_bytes": 513,
+      "raw_sha256": "38c236c95a87fae06c1a6631867c698fc872791d8dcecc9a6b3d8fc865ce0575"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition/historical_format_v1/CANDIDATE.md.txt",
+      "bytes": 8933,
+      "sha256": "cff7f94507245665cd69b9c86a95981fd5292b94bbcbe7999c448b8b4f10d6c8",
+      "compression": "none",
+      "raw_bytes": 8933,
+      "raw_sha256": "cff7f94507245665cd69b9c86a95981fd5292b94bbcbe7999c448b8b4f10d6c8"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition/historical_format_v1/FREEZE.json",
+      "bytes": 377,
+      "sha256": "ed0690aec07ab544867f1b243f87f828747c3167657f1354d30bf7977f262f25",
+      "compression": "none",
+      "raw_bytes": 377,
+      "raw_sha256": "ed0690aec07ab544867f1b243f87f828747c3167657f1354d30bf7977f262f25"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_qualification/ACCEPTANCE.json",
+      "bytes": 23174,
+      "sha256": "1c332524121c9777f099948ffea6bcbae048bff47784942d2734a6c72021407e",
+      "compression": "none",
+      "raw_bytes": 23174,
+      "raw_sha256": "1c332524121c9777f099948ffea6bcbae048bff47784942d2734a6c72021407e"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/FILE_MANIFEST.json",
+      "bytes": 3481,
+      "sha256": "8c4ae9e967653b1fe06066a6df97a5bcf8458269318aa0a7cd3fbec3081992f3",
+      "compression": "none",
+      "raw_bytes": 3481,
+      "raw_sha256": "8c4ae9e967653b1fe06066a6df97a5bcf8458269318aa0a7cd3fbec3081992f3"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/FREEZE.json",
+      "bytes": 1761,
+      "sha256": "94e1e606b7ace5e80713a843c61e2cc08535e54fb62fc1cc2b7a8cdc9e49a8a0",
+      "compression": "none",
+      "raw_bytes": 1761,
+      "raw_sha256": "94e1e606b7ace5e80713a843c61e2cc08535e54fb62fc1cc2b7a8cdc9e49a8a0"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/REVIEW.md.txt",
+      "bytes": 21044,
+      "sha256": "150090e32afd08fe55bb49611e83ee9f185d0529129284874181379143027515",
+      "compression": "none",
+      "raw_bytes": 21044,
+      "raw_sha256": "150090e32afd08fe55bb49611e83ee9f185d0529129284874181379143027515"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/SOURCE_MANIFEST.json",
+      "bytes": 7442,
+      "sha256": "23e07a332a8299e6ab74081dee06ef68a4c849fa72eec45a06d82fac114dcdc0",
+      "compression": "none",
+      "raw_bytes": 7442,
+      "raw_sha256": "23e07a332a8299e6ab74081dee06ef68a4c849fa72eec45a06d82fac114dcdc0"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/VALIDATION.json",
+      "bytes": 6143,
+      "sha256": "b55ab12d64203442fa9ecd3dbac1a7b916e924c1709a6aa81f1df31f947c1a76",
+      "compression": "none",
+      "raw_bytes": 6143,
+      "raw_sha256": "b55ab12d64203442fa9ecd3dbac1a7b916e924c1709a6aa81f1df31f947c1a76"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/capture_sources.py",
+      "bytes": 3668,
+      "sha256": "9ba0a5c7975368d920a27b69555477a4b51afcf01d576f118c6e25a5df97e46b",
+      "compression": "none",
+      "raw_bytes": 3668,
+      "raw_sha256": "9ba0a5c7975368d920a27b69555477a4b51afcf01d576f118c6e25a5df97e46b"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/finalize_review.py",
+      "bytes": 4146,
+      "sha256": "00fb145063d958ff1f5eb804a704335bcc575acfc65bea8acdf76c37c9307c9b",
+      "compression": "none",
+      "raw_bytes": 4146,
+      "raw_sha256": "00fb145063d958ff1f5eb804a704335bcc575acfc65bea8acdf76c37c9307c9b"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/CANDIDATE.md.txt",
+      "bytes": 37370,
+      "sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0",
+      "compression": "none",
+      "raw_bytes": 37370,
+      "raw_sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/FAILURES.md.txt",
+      "bytes": 1605,
+      "sha256": "1b003181da1080be07ab382ffc5fdf29b8808c9886c2403411225515dd209aea",
+      "compression": "none",
+      "raw_bytes": 1605,
+      "raw_sha256": "1b003181da1080be07ab382ffc5fdf29b8808c9886c2403411225515dd209aea"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/FILE_MANIFEST.json",
+      "bytes": 6246,
+      "sha256": "442bb68f26e27176f293c2b8b45eab1c76896f38f76bb273138a70630ff31834",
+      "compression": "none",
+      "raw_bytes": 6246,
+      "raw_sha256": "442bb68f26e27176f293c2b8b45eab1c76896f38f76bb273138a70630ff31834"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/FREEZE.json",
+      "bytes": 1806,
+      "sha256": "8cdf10121e4c42247d4aba730a48413817a62b9ada420adfc6bc70df7df64879",
+      "compression": "none",
+      "raw_bytes": 1806,
+      "raw_sha256": "8cdf10121e4c42247d4aba730a48413817a62b9ada420adfc6bc70df7df64879"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/READ_COVERAGE.json",
+      "bytes": 2027,
+      "sha256": "cf78515f5556ae06dc8c4102e20b70f0fcac0eda627cdbd395cb9e6c60167664",
+      "compression": "none",
+      "raw_bytes": 2027,
+      "raw_sha256": "cf78515f5556ae06dc8c4102e20b70f0fcac0eda627cdbd395cb9e6c60167664"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/RESOURCE_PLAN.json",
+      "bytes": 3290,
+      "sha256": "80d14f540d1884d0a58f9ae35c02a3eca43a24ba2abac9eee0b36a3b11b30e81",
+      "compression": "none",
+      "raw_bytes": 3290,
+      "raw_sha256": "80d14f540d1884d0a58f9ae35c02a3eca43a24ba2abac9eee0b36a3b11b30e81"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/SCALAR_INPUTS.json",
+      "bytes": 629,
+      "sha256": "3e7a938c2a04e1da45189e728ac65c1e65309f97d4331dab0ef08bcbfb5a0c65",
+      "compression": "none",
+      "raw_bytes": 629,
+      "raw_sha256": "3e7a938c2a04e1da45189e728ac65c1e65309f97d4331dab0ef08bcbfb5a0c65"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/SOURCE_MANIFEST.json",
+      "bytes": 9467,
+      "sha256": "fef1d432e80bc0604def3a46d3dbff655020eab9587a73e2f357ed0b7f462c40",
+      "compression": "none",
+      "raw_bytes": 9467,
+      "raw_sha256": "fef1d432e80bc0604def3a46d3dbff655020eab9587a73e2f357ed0b7f462c40"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/STATIC_VALIDATION.json",
+      "bytes": 7859,
+      "sha256": "8db3abea6ec2d073a11ed0803f0d95b616a9974a10f2cd8a3c274adee2a3bcab",
+      "compression": "none",
+      "raw_bytes": 7859,
+      "raw_sha256": "8db3abea6ec2d073a11ed0803f0d95b616a9974a10f2cd8a3c274adee2a3bcab"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/check_bounds.py",
+      "bytes": 9876,
+      "sha256": "b5383a88626e3bd378ba9155ee88577b49f8cf28e9b6031a2be5aada9fa48ef6",
+      "compression": "none",
+      "raw_bytes": 9876,
+      "raw_sha256": "b5383a88626e3bd378ba9155ee88577b49f8cf28e9b6031a2be5aada9fa48ef6"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/inputs/fixed.md.txt",
+      "bytes": 31556,
+      "sha256": "c68350310ac5c471a38940660d76ba74d982306e2d62a28bbf9c330e79c984b8",
+      "compression": "none",
+      "raw_bytes": 31556,
+      "raw_sha256": "c68350310ac5c471a38940660d76ba74d982306e2d62a28bbf9c330e79c984b8"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/inputs/fixed_acceptance.json",
+      "bytes": 6673,
+      "sha256": "1a3f12fa10400e13906a09954f328e996f5cba2755a91c879399662f7a3f1421",
+      "compression": "none",
+      "raw_bytes": 6673,
+      "raw_sha256": "1a3f12fa10400e13906a09954f328e996f5cba2755a91c879399662f7a3f1421"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/inputs/fixed_qualification.md.txt",
+      "bytes": 2280,
+      "sha256": "0f77e687647ceaec73408aaf58eea65b4291337c9bddb496e3ca759b1690bed5",
+      "compression": "none",
+      "raw_bytes": 2280,
+      "raw_sha256": "0f77e687647ceaec73408aaf58eea65b4291337c9bddb496e3ca759b1690bed5"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/inputs/fixed_review.md.txt",
+      "bytes": 30019,
+      "sha256": "4d7694f51ec85edcc38977bef43412d8c9bc5baba4fa3c35809fe9adf3d00284",
+      "compression": "none",
+      "raw_bytes": 30019,
+      "raw_sha256": "4d7694f51ec85edcc38977bef43412d8c9bc5baba4fa3c35809fe9adf3d00284"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/launch01.stdout",
+      "bytes": 378,
+      "sha256": "fe52491b4d0c94a4d86e70ff289bc529321a73689d42d9adbca67a26395515a0",
+      "compression": "none",
+      "raw_bytes": 378,
+      "raw_sha256": "fe52491b4d0c94a4d86e70ff289bc529321a73689d42d9adbca67a26395515a0"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/launch_check.py",
+      "bytes": 5481,
+      "sha256": "5c96cf7d03d19a9d265254d2661a5df9a3e5b59b567aa9245345aebd2ab8c15a",
+      "compression": "none",
+      "raw_bytes": 5481,
+      "raw_sha256": "5c96cf7d03d19a9d265254d2661a5df9a3e5b59b567aa9245345aebd2ab8c15a"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/prepare_inputs.py",
+      "bytes": 4574,
+      "sha256": "873ee6369e80a48281bb213e1849a31bf0eaca298b5c6664ec448bba3814236a",
+      "compression": "none",
+      "raw_bytes": 4574,
+      "raw_sha256": "873ee6369e80a48281bb213e1849a31bf0eaca298b5c6664ec448bba3814236a"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/run01/PRELAUNCH.json",
+      "bytes": 12028,
+      "sha256": "64f8369ae07325c3e38f2482e6e399e43a45ab4e50d63be400ab965225b06afb",
+      "compression": "none",
+      "raw_bytes": 12028,
+      "raw_sha256": "64f8369ae07325c3e38f2482e6e399e43a45ab4e50d63be400ab965225b06afb"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/run01/RECEIPT.json",
+      "bytes": 19800,
+      "sha256": "0ead3f309bd1b6952228cd74d389c02c12225736f90ea79f1b23b02b6f69db79",
+      "compression": "none",
+      "raw_bytes": 19800,
+      "raw_sha256": "0ead3f309bd1b6952228cd74d389c02c12225736f90ea79f1b23b02b6f69db79"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/run01/stdout.json",
+      "bytes": 12367,
+      "sha256": "f94907937c47f29197681d05d8275efaaacb1ee7df54fcc92ef61d8c5533ce0c",
+      "compression": "none",
+      "raw_bytes": 12367,
+      "raw_sha256": "f94907937c47f29197681d05d8275efaaacb1ee7df54fcc92ef61d8c5533ce0c"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/validate_and_freeze.py",
+      "bytes": 5321,
+      "sha256": "beb2f7202b8e9a217e1b6960f276f68aa588f0f569852f03abb58cbc7f130f63",
+      "compression": "none",
+      "raw_bytes": 5321,
+      "raw_sha256": "beb2f7202b8e9a217e1b6960f276f68aa588f0f569852f03abb58cbc7f130f63"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/AUTHOR_CAPTURE_BINDINGS.json",
+      "bytes": 13929,
+      "sha256": "20318ccffd8c0a271de69d6f2d92014e82c678b20a0f5e7a7229708421c0cdb0",
+      "compression": "none",
+      "raw_bytes": 13929,
+      "raw_sha256": "20318ccffd8c0a271de69d6f2d92014e82c678b20a0f5e7a7229708421c0cdb0"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/EVIDENCE_VALIDATION.json",
+      "bytes": 5955,
+      "sha256": "6713fc3dd35d6b5149defd0ad6795dce115d59ce7e1763078dbd672c6cf3f9bd",
+      "compression": "none",
+      "raw_bytes": 5955,
+      "raw_sha256": "6713fc3dd35d6b5149defd0ad6795dce115d59ce7e1763078dbd672c6cf3f9bd"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/FILE_MANIFEST.json",
+      "bytes": 14615,
+      "sha256": "4b90e408accdf324ba742a8c235f113792924e87a3a2b261d53f368b9f7fef12",
+      "compression": "none",
+      "raw_bytes": 14615,
+      "raw_sha256": "4b90e408accdf324ba742a8c235f113792924e87a3a2b261d53f368b9f7fef12"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/FINAL_VALIDATION.json",
+      "bytes": 610,
+      "sha256": "745af70e6c376d7c72a6e51fee93862e743e78725feaf69445572b85d696c199",
+      "compression": "none",
+      "raw_bytes": 610,
+      "raw_sha256": "745af70e6c376d7c72a6e51fee93862e743e78725feaf69445572b85d696c199"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/FREEZE.json",
+      "bytes": 2689,
+      "sha256": "6ead24431690a1b62f549d1adca9d7250ac92231cb0103cfe6953dee56be17b7",
+      "compression": "none",
+      "raw_bytes": 2689,
+      "raw_sha256": "6ead24431690a1b62f549d1adca9d7250ac92231cb0103cfe6953dee56be17b7"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/INDEPENDENT_DERIVATION.md.txt",
+      "bytes": 16477,
+      "sha256": "8ded59142de426e65f32ffb0c245d0d5c0bff3334fb293c932744dbef1f231f1",
+      "compression": "none",
+      "raw_bytes": 16477,
+      "raw_sha256": "8ded59142de426e65f32ffb0c245d0d5c0bff3334fb293c932744dbef1f231f1"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/INDEPENDENT_FREEZE.json",
+      "bytes": 6470,
+      "sha256": "aaaeb80e889b8d6de92af607a0d7d912d9d8e4c36b98480d451e54dc251ac1ad",
+      "compression": "none",
+      "raw_bytes": 6470,
+      "raw_sha256": "aaaeb80e889b8d6de92af607a0d7d912d9d8e4c36b98480d451e54dc251ac1ad"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/INDEPENDENT_RESULT.md.txt",
+      "bytes": 3735,
+      "sha256": "90565a190900a78cce958b5ab6df4cea9c2a338b40d8daeb4f883fb9ddc77be1",
+      "compression": "none",
+      "raw_bytes": 3735,
+      "raw_sha256": "90565a190900a78cce958b5ab6df4cea9c2a338b40d8daeb4f883fb9ddc77be1"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/INITIAL_SOURCE_BINDINGS.json",
+      "bytes": 12201,
+      "sha256": "2779ff1b583d0707b46be0eb644a0efe2c1e1478149c7d092c50b867553ca606",
+      "compression": "none",
+      "raw_bytes": 12201,
+      "raw_sha256": "2779ff1b583d0707b46be0eb644a0efe2c1e1478149c7d092c50b867553ca606"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/REPORT.md.txt",
+      "bytes": 32461,
+      "sha256": "70eaca751449653eb33255a8b6c0509cde2d4f69de14d39d353c5b96b838c172",
+      "compression": "none",
+      "raw_bytes": 32461,
+      "raw_sha256": "70eaca751449653eb33255a8b6c0509cde2d4f69de14d39d353c5b96b838c172"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/RESOURCE_PLAN.json",
+      "bytes": 2111,
+      "sha256": "c444ad9bfb007a765acb3307496d2fcaffc1d996e60c8c647887ab350e1afe80",
+      "compression": "none",
+      "raw_bytes": 2111,
+      "raw_sha256": "c444ad9bfb007a765acb3307496d2fcaffc1d996e60c8c647887ab350e1afe80"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/capture_author_packet.py",
+      "bytes": 1782,
+      "sha256": "3f654c28b88b2b230d9225c04fbe91d3df4129c9337f18e155666f6e0183b447",
+      "compression": "none",
+      "raw_bytes": 1782,
+      "raw_sha256": "3f654c28b88b2b230d9225c04fbe91d3df4129c9337f18e155666f6e0183b447"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/capture_initial_sources.py",
+      "bytes": 2206,
+      "sha256": "547c541a8afffc6a8736133ac4494d46de27ff3219e93c9d0d95d08a9c954d43",
+      "compression": "none",
+      "raw_bytes": 2206,
+      "raw_sha256": "547c541a8afffc6a8736133ac4494d46de27ff3219e93c9d0d95d08a9c954d43"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/check_independent.py",
+      "bytes": 9066,
+      "sha256": "ca29a5f16956dd00594184d122088c78fca757c56873837167834b36844fd45e",
+      "compression": "none",
+      "raw_bytes": 9066,
+      "raw_sha256": "ca29a5f16956dd00594184d122088c78fca757c56873837167834b36844fd45e"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/finalize_review.py",
+      "bytes": 4147,
+      "sha256": "7129b1b3afb572e5854389aed8c5a5d6411117afcaa0c84b9599c35a9d78f346",
+      "compression": "none",
+      "raw_bytes": 4147,
+      "raw_sha256": "7129b1b3afb572e5854389aed8c5a5d6411117afcaa0c84b9599c35a9d78f346"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/freeze_independent.py",
+      "bytes": 1014,
+      "sha256": "fc113cfa249d42c7fe8244fa9fabcb8dbe938543b41b054321e3a8cc48cfe30d",
+      "compression": "none",
+      "raw_bytes": 1014,
+      "raw_sha256": "fc113cfa249d42c7fe8244fa9fabcb8dbe938543b41b054321e3a8cc48cfe30d"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/launch_independent.py",
+      "bytes": 4235,
+      "sha256": "594defd0c86c5f759ca81a6bc51bfcc4b31b43c8c01c57fdd217ba572e137593",
+      "compression": "none",
+      "raw_bytes": 4235,
+      "raw_sha256": "594defd0c86c5f759ca81a6bc51bfcc4b31b43c8c01c57fdd217ba572e137593"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/launcher_stdout.json",
+      "bytes": 8247,
+      "sha256": "19f2877bb8bc53c0bdd3d5e9f301a62fd6e73bd6b55276360897008e4a3ffa49",
+      "compression": "none",
+      "raw_bytes": 8247,
+      "raw_sha256": "19f2877bb8bc53c0bdd3d5e9f301a62fd6e73bd6b55276360897008e4a3ffa49"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/run01/PRELAUNCH.json",
+      "bytes": 15606,
+      "sha256": "07b9575f47025f437a0d1c82dddbdbf8bca29b137aa592290cd52732c349e408",
+      "compression": "none",
+      "raw_bytes": 15606,
+      "raw_sha256": "07b9575f47025f437a0d1c82dddbdbf8bca29b137aa592290cd52732c349e408"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/run01/stdout.json",
+      "bytes": 12515,
+      "sha256": "439649efffe03f48925b99c4a50c5fe7f23a1777edc30fbfededb8fd232d1b01",
+      "compression": "none",
+      "raw_bytes": 12515,
+      "raw_sha256": "439649efffe03f48925b99c4a50c5fe7f23a1777edc30fbfededb8fd232d1b01"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/validate_evidence.py",
+      "bytes": 7144,
+      "sha256": "a58c94055ff3672c208bed81d1bec3eef2b6aac9b9b255459000feee1dd5f3a7",
+      "compression": "none",
+      "raw_bytes": 7144,
+      "raw_sha256": "a58c94055ff3672c208bed81d1bec3eef2b6aac9b9b255459000feee1dd5f3a7"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_root_qualification/ACCEPTANCE.json",
+      "bytes": 6363,
+      "sha256": "bb280c96d290e28b42c45994cab3fe9871d671b0d20d39a36ae09d211ef98686",
+      "compression": "none",
+      "raw_bytes": 6363,
+      "raw_sha256": "bb280c96d290e28b42c45994cab3fe9871d671b0d20d39a36ae09d211ef98686"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_root_qualification/QUALIFICATION.md.txt",
+      "bytes": 1896,
+      "sha256": "88db9d4dcfdae159ad3478776441857db7dac0117db80dc13123be94267e4e84",
+      "compression": "none",
+      "raw_bytes": 1896,
+      "raw_sha256": "88db9d4dcfdae159ad3478776441857db7dac0117db80dc13123be94267e4e84"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/thermal_resonance_integration/BRANCH_START.json",
+      "bytes": 416,
+      "sha256": "09793e9f230c783f356edbc45e7a6e36bd26dc9c5dfbcc06c566f4eb96f72fe2",
+      "compression": "none",
+      "raw_bytes": 416,
+      "raw_sha256": "09793e9f230c783f356edbc45e7a6e36bd26dc9c5dfbcc06c566f4eb96f72fe2"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/thermal_resonance_integration/SCOPE.md.txt",
+      "bytes": 2600,
+      "sha256": "42d262b7839cb11a394ddc81364cab931512a0210c4c456931e5cf3b7d56b9eb",
+      "compression": "none",
+      "raw_bytes": 2600,
+      "raw_sha256": "42d262b7839cb11a394ddc81364cab931512a0210c4c456931e5cf3b7d56b9eb"
+    },
+    {
+      "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/thermal_resonance_integration/WRAPPER_DRAFT.md.txt",
+      "bytes": 10888,
+      "sha256": "5cc1d82702ad10b90369c3b2773a313664d36eaea5be9573ded980a9b767eed7",
+      "compression": "none",
+      "raw_bytes": 10888,
+      "raw_sha256": "5cc1d82702ad10b90369c3b2773a313664d36eaea5be9573ded980a9b767eed7"
+    },
+    {
+      "path": "scripts/emitter_coupling_family_2026_10_17.py",
+      "bytes": 24786,
+      "sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba",
+      "compression": "none",
+      "raw_bytes": 24786,
+      "raw_sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba"
+    }
+  ]
+}

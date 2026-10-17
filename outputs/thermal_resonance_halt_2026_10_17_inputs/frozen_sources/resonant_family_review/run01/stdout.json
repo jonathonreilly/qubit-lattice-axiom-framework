@@ -1,0 +1,375 @@
+{
+  "status": "all requested exact checks held",
+  "completed_utc": "2026-10-17T04:08:28.328924+00:00",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "sympy": "1.14.0",
+  "pid": 86337,
+  "caps": [
+    30,
+    30
+  ],
+  "matrix_dimension_maximum": 2,
+  "scientific_runtime_seconds": 0.5825333753600717,
+  "self_cpu_user": 0.30948,
+  "self_cpu_system": 0.056166999999999995,
+  "peak_rss": 60260352,
+  "checks": [
+    {
+      "name": "exact_trigonometric_circle",
+      "evidence": "rational half-angle identity"
+    },
+    {
+      "name": "velocity_on_full_real_band",
+      "evidence": "Lipschitz bound, not endpoint sampling"
+    },
+    {
+      "name": "curvature_ratio",
+      "evidence": "3752638388379/1562500000000"
+    },
+    {
+      "name": "center_b0_and_width",
+      "evidence": [
+        "43622465478810771543912030761074996121296252596000000000000000/28470942580001221460551733349533582334670664139372522141370801",
+        "8789594091354927179060415316850710536598500513874275855734216074738810661291500000000000000000000000000000/190028276927500359118957340526472099923916153165223851195743295332308109387619437116581245386076582249393"
+      ]
+    },
+    {
+      "name": "self_energy_center_identity",
+      "evidence": "exact real/imaginary expansion"
+    },
+    {
+      "name": "rectangle_center_bounds",
+      "evidence": "all kappa dependence is kappa^2"
+    },
+    {
+      "name": "residue_time_rate",
+      "evidence": "18269629394331925258689544721978579948961456358884782922945938281250000000000000000000000/400936208750469948766797622318447609361460551312325921696326904778518440827643248530441"
+    },
+    {
+      "name": "square_root_majorants",
+      "evidence": [
+        "9/400",
+        "1/40"
+      ]
+    },
+    {
+      "name": "real_relative_denominator",
+      "evidence": "3752645388379/1250000000000000000"
+    },
+    {
+      "name": "rational_profile_l2",
+      "evidence": [
+        "50/2249991",
+        "1041666972221/42968578125000000"
+      ]
+    },
+    {
+      "name": "density_relative_error",
+      "evidence": "3666695/83332666668"
+    },
+    {
+      "name": "density_comparison_floor",
+      "evidence": "3301/68750000"
+    },
+    {
+      "name": "exp_base",
+      "evidence": "strict positive exponential series remainder"
+    },
+    {
+      "name": "log_argument",
+      "evidence": "80000000000000019/19"
+    },
+    {
+      "name": "energy_rectangle_bound",
+      "evidence": "3750001/125000000000000"
+    },
+    {
+      "name": "L1_profile_bound",
+      "evidence": "800000000/249999"
+    },
+    {
+      "name": "incoming_target",
+      "evidence": "114900007/3750000000000"
+    },
+    {
+      "name": "outgoing_target",
+      "evidence": "69452796948874118655136937024519/2266735911777429702574080000000000000"
+    },
+    {
+      "name": "half_line_time_threshold",
+      "evidence": "250000000000000"
+    },
+    {
+      "name": "emitter_scalar_target",
+      "evidence": "23611832575057471250902531322946653/472236648286964521369600000000000000000"
+    },
+    {
+      "name": "incoming_scalar_target",
+      "evidence": "11000649997649999/31249875000000000000000000"
+    },
+    {
+      "name": "full_clock_ceiling",
+      "evidence": "50595638543679078094241896018077105709043/393528966116976144592928768000000000000000000000"
+    },
+    {
+      "name": "full_localized_ceiling",
+      "evidence": "22088217880921112954921063100263142970199043/393528966116976144592928768000000000000000000000"
+    },
+    {
+      "name": "escape_budget",
+      "evidence": "138611025462876289642614901207402041129347129/1180586898350928433778786304000000000000000000000"
+    },
+    {
+      "name": "complete_target",
+      "evidence": "4523310765938224492697027234263402041129347129/1180586898350928433778786304000000000000000000000"
+    },
+    {
+      "name": "exact_phase_identity",
+      "evidence": "0"
+    },
+    {
+      "name": "phase_reciprocal_discriminator",
+      "evidence": [
+        "0",
+        "-2*I"
+      ]
+    },
+    {
+      "name": "density_partial_fraction",
+      "evidence": "0"
+    },
+    {
+      "name": "density_clockwise_residue",
+      "evidence": "I/(2*pi*N)"
+    },
+    {
+      "name": "incoming_pole_is_upper",
+      "evidence": "denominator q-c-i gamma vanishes at c+i gamma; gamma>0"
+    },
+    {
+      "name": "hard_cutoff_endpoint_discriminator",
+      "evidence": "-2*I"
+    },
+    {
+      "name": "localized_aligned_column_discriminator",
+      "evidence": "{2: 1, 0: 1}"
+    },
+    {
+      "name": "parity_operator_rounding",
+      "evidence": "sqrt(2)<3/2; largest column alone is insufficient"
+    },
+    {
+      "name": "restricted_normalization",
+      "evidence": "For all delta in [0,1], (1-delta)^2<=1-delta^2 follows from 2delta(delta-1)<=0; example delta=3/5."
+    },
+    {
+      "name": "integer_path",
+      "evidence": "one emitter hop plus M-(L+2) clock hops"
+    },
+    {
+      "name": "finite_margin",
+      "evidence": "43999999999999978"
+    },
+    {
+      "name": "finite_correction_ceiling",
+      "evidence": "19683/20971520"
+    },
+    {
+      "name": "finite_total_target",
+      "evidence": "5631360727039819625623388834263402041129347129/1180586898350928433778786304000000000000000000000"
+    },
+    {
+      "name": "positive_emitter_reserve",
+      "evidence": "1501050019534644743642870570883894599/266790847762817856471455805270050000000"
+    },
+    {
+      "name": "old_estimates_fail_target_budget",
+      "evidence": "Failure of sufficient allowances, not a leakage lower bound or physical no-go."
+    }
+  ],
+  "values": {
+    "v0": {
+      "exact": "135405736045147688887127393136/5335816955256357129429116105401",
+      "approximate": 0.025376758082332338,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "b0": {
+      "exact": "43622465478810771543912030761074996121296252596000000000000000/28470942580001221460551733349533582334670664139372522141370801",
+      "approximate": 1.5321749659757453,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "E0": {
+      "exact": "30021107107032000000000000000/5335816955256357129429116105401",
+      "approximate": 0.005626337514718896,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "density_L1": {
+      "exact": "3301/68750000",
+      "approximate": 4.8014545454545454e-05,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "TV_coefficient": {
+      "exact": "20",
+      "approximate": 20.0,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "curvature_coefficient": {
+      "exact": "10",
+      "approximate": 10.0,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "two_vertical_edges_coefficient": {
+      "exact": "4",
+      "approximate": 4.0,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "half_line_edges_and_cutoff": {
+      "exact": "2400001/3750000000000",
+      "approximate": 6.400002666666666e-07,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "incoming_bottom": {
+      "exact": "1/625000000000",
+      "approximate": 1.6e-12,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "residue_onset": {
+      "exact": "205891132094649/618970019642690137449562112",
+      "approximate": 3.326350639947033e-13,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "incoming_ceiling": {
+      "exact": "114900007/3750000000000",
+      "approximate": 3.0640001866666664e-05,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "outgoing_ceiling": {
+      "exact": "69452796948874118655136937024519/2266735911777429702574080000000000000",
+      "approximate": 3.064000379930173e-05,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "common_emitter_scalar": {
+      "exact": "23611832575057471250902531322946653/472236648286964521369600000000000000000",
+      "approximate": 5.0000000340315066e-05,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "incoming_scalar": {
+      "exact": "11000649997649999/31249875000000000000000000",
+      "approximate": 3.52022208013632e-10,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "Cg_center": {
+      "exact": "341020149927149969/31249875000000000000000000",
+      "approximate": 1.0912688448422592e-08,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "Cg_variation": {
+      "exact": "27/500000000",
+      "approximate": 5.4e-08,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "Kloc_center": {
+      "exact": "23611832575057471250902531322946653/2361183241434822606848000000000000000000000",
+      "approximate": 1.0000000068063013e-08,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "Kloc_variation": {
+      "exact": "1/100000000",
+      "approximate": 1e-08,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "Kloc_delta_y": {
+      "exact": "400000001/500000000000000000",
+      "approximate": 8.00000002e-10,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "full_clock_column": {
+      "exact": "50595638543679078094241896018077105709043/590293449175464216889393152000000000000000000000",
+      "approximate": 8.571268851848561e-08,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "full_clock_operator": {
+      "exact": "50595638543679078094241896018077105709043/393528966116976144592928768000000000000000000000",
+      "approximate": 1.285690327777284e-07,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "full_localized": {
+      "exact": "22088217880921112954921063100263142970199043/393528966116976144592928768000000000000000000000",
+      "approximate": 5.6128569388092795e-05,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "escape_only": {
+      "exact": "138611025462876289642614901207402041129347129/1180586898350928433778786304000000000000000000000",
+      "approximate": 0.00011740857505406118,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "complete_infinite": {
+      "exact": "4523310765938224492697027234263402041129347129/1180586898350928433778786304000000000000000000000",
+      "approximate": 0.0038314085750540613,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "minimum_T": {
+      "exact": "10000000000000000",
+      "approximate": 1e+16,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "minimum_M": {
+      "exact": "500000000000000000",
+      "approximate": 5e+17,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "minimum_distance_margin": {
+      "exact": "43999999999999978",
+      "approximate": 4.3999999999999976e+16,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "finite_correction": {
+      "exact": "19683/20971520",
+      "approximate": 0.0009385585784912109,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "complete_finite": {
+      "exact": "5631360727039819625623388834263402041129347129/1180586898350928433778786304000000000000000000000",
+      "approximate": 0.004769967153545272,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "minimum_qubits": 500000000000000005,
+    "actual_upper_scalar": {
+      "exact": "1459892833020969/1000000000000000",
+      "approximate": 1.459892833020969,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "clock_attachment_load": {
+      "exact": "3752639325879/31250000000000",
+      "approximate": 0.120084458428128,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "emitter_load": {
+      "exact": "1501060691168555256357129429116105401/266790847762817856471455805270050000000",
+      "approximate": 0.005626357514718896,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "seed_variance_extra_at_upper": {
+      "exact": "1/5000000000000000",
+      "approximate": 2e-16,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "failed_fixed_cutoff_allowance": {
+      "exact": "1/625",
+      "approximate": 0.0016,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "failed_absolute_clock_allowance": {
+      "exact": "153/100000",
+      "approximate": 0.00153,
+      "approximate_is_not_an_outward_enclosure": true
+    },
+    "failed_qin_for_Cg_allowance": {
+      "exact": "279/200000",
+      "approximate": 0.001395,
+      "approximate_is_not_an_outward_enclosure": true
+    }
+  },
+  "unchanged_bindings": 35,
+  "limits": "Rational/symbolic corroboration of separately written analysis; no grid/quadrature/dynamics or author-code execution."
+}

@@ -1,0 +1,134 @@
+C13 independent check: item 4 of
+docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md
+("on-site Cliffords make every tested code cube-invariant")
+Date 2026-10-17. Checker: fresh-context agent, same model family (Claude Opus 5.5).
+I wrote all code from the task's definitions before reading the runner's
+_signed_onsite_check or the c13 files. I read them only afterwards, to compare.
+
+Files (run from this directory, in this order):
+  paulialg.py, model.py   Pauli algebra with exact phases (i^k X^x Z^z), signed-group membership,
+                          the half-edge and edge models, bare / Majorana / CZ maps
+  classify.py             720 orderings -> 60 codes; bare orbits 4/6/12 (12/12/36 codes)   [9 s]
+  check_invariance.py     parts (1) and (2)                                    [8 min] -> .log/.json
+  check_grouplaw.py       part (3)                                             [4 min] -> .log/.json
+  check_attack.py         part (4): edge-model CZ, equivalence, pair test      [1 min] -> .log/.json
+  check_extra.py          Majorana identities; code dependence of the action   [2 s]   -> .log
+
+Conventions. DIRS = +x,+y,+z,-x,-y,-z. mu_d = X_d Z_{<d}, nu_d = Y_d Z_{<d} in the code's ordering o.
+S_p = A(v,a) A(v+a,b) A(v+b,a) A(v,b), made Hermitian, times (-1)^{s_c}. Membership test: a Pauli
+P is "in" if P is in the signed group, "minus" if -P is. Every group was checked to exclude -1
+and to have log2 dimension 3.
+
+---------------------------------------------------------------------------------------------
+(1) INVARIANCE: CONFIRMED, for all 60 codes, all 720 orderings, L = 4 and L = 6
+- I used eps = eps' = +1 throughout, i.e. mu_d -> mu_{Rd} and nu_d -> nu_{Rd}, with the same
+  ordering o at source and target.
+- Full generator sets, one rep per orbit type, both uniform sectors, all 24 R:
+  0 failures at L = 4 and at L = 6.
+  - Control: the bare map preserves the group for exactly |Stab| = 6, 4, 2 rotations.
+- All 60 codes x 2 sectors x 24 R, generators at site 0 (valid because the map is translation
+  covariant; checked in (2)): 0 failures out of 2880 at L = 4, and 0 out of 2880 at L = 6.
+- All 720 orderings, L = 4: 0 failures out of 34560.
+- Mixed sectors (control): only 8 of the 24 R preserve the signed group, namely those that fix
+  the odd axis. So the restriction to uniform sectors is needed.
+- Identities of item 4: A(v,a) = mu_{v,+a} mu_{v+a,-a} exactly (phase +1), and
+  Z_d = -i mu_d nu_d. Checked for all 720 orderings.
+
+WORDING POINT. "There are signs eps" understates the result. The sign search is vacuous:
+- eps = eps' = 1 always works.
+- The admissible set is exactly 512 of 4096 choices for every R, every code and both sectors,
+  and it is the same set each time. The rule is (eps eps')_{+a} = (eps eps')_{-a} for each
+  axis a. It comes from R and B; the plaquette signs cancel, since each plaquette contains
+  each Majorana direction twice.
+- As in C12, the invariance is close to a tautology. In the Majorana variables the hops,
+  B and R do not depend on o, and the map sends S_p to S_{Rp} exactly.
+- (The runner's search loops over itertools.product((1,-1)) starting from all +1, so in effect
+  it checks eps = 1. It tests the generators that touch site 0 and does not check translation
+  covariance separately.)
+
+(2) LEGITIMATE CLIFFORD: CONFIRMED
+- Tested at L = 4, for the 3 reps x 24 R x 3 random sign choices:
+  - the 12 images of the local X_d and Z_d are Hermitian, square to +I, and have the correct
+    (anti)commutation;
+  - mu_d and nu_d go to exactly eps mu_{Rd} and eps' nu_{Rd};
+  - the map is a homomorphism, with exact phases, on random multi-site Paulis;
+  - Hermiticity is preserved;
+  - translation covariance holds: U T_t U^-1 = T_{Rt} on random Paulis.
+  Failures: 0.
+- Explicit form (exact, all 720 o x 24 R, as images on all qubits):
+      U_R(eps = 1) = V_R . P_R.
+  - P_R is the bare site and direction permutation.
+  - V_R is an on-site network of CZ gates, the same at every site, on each pair of directions
+    whose relative order differs between o and Ro (0 to 15 CZ per site).
+  - A general admissible eps adds a conjugation by an on-site Pauli: any pattern of Majorana
+    sign flips is conjugation by a Majorana monomial.
+  So each map is an honest, translation-covariant, on-site Clifford circuit of depth O(1).
+
+(3) GROUP ACTION: YES, and an honest one exists (unlike C12)
+- I took lifts of a C4 (about z) and a C3 (about (1,1,1)) from the 512 x 512 admissible
+  choices and generated the group of signed permutations of the 12 Majoranas. Results, the
+  same for every rep and sector:
+    order 24, trivial kernel (an honest O action, including eps = 1):   1024 choices
+    order 48, kernel {1, -1}, where -1 flips all 12 Majoranas
+      (= conjugation by prod_v B_v; an action up to fermion parity):    3072 choices
+        - edge-C2 lifts square to -1 in 2048 of these, and to +1 in 1024
+        - axis-C2 lifts always square to +1
+    order 48 with some other central Z2 kernel:                         2048 choices
+    the rest generate groups of order > 48.
+- Difference from C12: there the condition prod eps = sign(perm) forced -1 into the group, and
+  forced edge-C2 lifts to square to -1. Here the direction permutation acts on mu and on nu
+  alike, so it is always even, and no sign is forced.
+
+(4) ATTACK ON "minimal orbit four is a statement about the bare site action only"
+The conclusion holds. Its scope is narrower than the note suggests, and the note leaves out
+one consequence.
+a. It does not need six qubits per site. In the orbit note's own edge model, compose the bare
+   edge permutation with the vertex-centred commuting CZ network on edge qubits (the same V_R,
+   with each half-edge replaced by its edge). The result preserves the signed group:
+   - 2880/2880 cases (60 codes x 2 sectors x 24 R) at L = 4;
+   - 144/144 at L = 6 (3 reps);
+   - the bare permutation alone manages 384/2880.
+   So "minimal orbit four" is also bare-only in the edge model, once two-qubit vertex-centred
+   gates are allowed. The C6 check excluded only per-edge single-qubit Cliffords. The orbit
+   note's N1 attributes the escape to the six-qubit model; that is narrower than the facts.
+b. The 60-fold classification is itself an artifact of the bare action. The same CZ network
+   V_{o->o'} maps code(o, s) to code(o', s) for all 8 sectors: 320/320 cases in the edge model
+   and 320/320 in the half-edge model (40 random pairs). Under on-site or vertex-centred
+   Cliffords, all 720 orderings give one code.
+c. Code dependence. The O action that fixes a code is built from that code's own ordering.
+   With the action built from one rep's ordering, exactly 1 of the 60 codes (that rep's) is
+   O-invariant. This holds for each of the three reps. So "each code is O-invariant" means
+   that each code has its own on-site action. It does not mean one action under which the
+   family is invariant.
+d. Missing consequence for item 5 ("spin-1/2 class under bare rotations"). This is an
+   exploratory pair test at L = 8 with clean hop-string creators. I used the same lambda
+   definition and the relation lambda = theta_f eta_f as in C8.
+   - Under U_R (eps = 1): lambda = -1 for all 9 C2 of O (3 axis, 6 edge), for each orbit rep,
+     in both uniform sectors, at 4 positions x 3 paths. It does not depend on the lift: the
+     same for 12 sampled consistent groups (honest, and order 48 with edge squares +1 or -1).
+     So eta_f(C2, C2) = +1 for both classes, and the fermion's class on O is trivial under the
+     action that makes the code O-invariant. This is the same as C12, and not w2.
+   - Calibration, bare P_R. For the bare-stabilizer C2 with clean images, lambda = +1
+     (eta_f = -1), which reproduces C8. The other bare-stabilizer C2 give images that are not
+     clean (they need dressing, as in C8).
+   - So the realization dependence is larger than item 5 states (it names only W twists).
+     The O-covariant on-site realization exists, and in it the fermion is spinless.
+e. Defence of the note. V_R is strictly on-site, translation invariant, and maps B and R
+   exactly. So in the framework's site-local reading it is a legitimate on-site unitary. The
+   only question is whether the Lattice axiom allows rotations to act with such an on-site
+   unitary. The note already presents that as the choice.
+
+VERDICTS
+ (1) Confirmed exactly (with phases): all 60 codes and all 720 orderings, both uniform
+     sectors, all 24 R, L = 4 and L = 6. The sign search is vacuous (eps = 1 works, with 512
+     admissible choices independent of R and code).
+ (2) Confirmed. The map equals (on-site CZ network) x (bare permutation), times an on-site
+     Pauli for other eps. It is translation covariant.
+ (3) Yes: 1024 honest order-24 actions and 3072 order-48 actions up to fermion parity. Unlike
+     C12, -1 is not forced.
+ (4) Conclusion upheld but understated:
+     - the escape already exists in the edge model through vertex CZ circuits;
+     - the 60 codes are all one code under on-site Cliffords;
+     - the invariance-giving action depends on the code;
+     - under it the fermion's class on O is trivial (pair test, exploratory). The note's
+       transfer of the spin-1/2 class should say so explicitly.

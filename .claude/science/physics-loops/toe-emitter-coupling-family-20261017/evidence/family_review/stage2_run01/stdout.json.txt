@@ -1,0 +1,229 @@
+{
+  "L2": {
+    "author_triangle_f_scaled": {
+      "decimal_display_only": 0.0097600010000065,
+      "exact": "19520002000013/2000000000000000"
+    },
+    "author_triangle_outgoing_scaled": {
+      "decimal_display_only": 0.2830400010000528,
+      "exact": "14152000050002639/50000000000000000"
+    },
+    "independent_squared_f_scaled_upper": {
+      "decimal_display_only": 8.67998358618584e-05,
+      "exact": "186050023180152114018772061009/2143437500000000000000000000000000"
+    },
+    "independent_squared_outgoing_scaled_upper": {
+      "decimal_display_only": 0.07784918455285737,
+      "exact": "7228585800830459995277759470732427/92853712500000000000000000000000000"
+    },
+    "uniformity": "All expanded scaled upper polynomials have nonnegative coefficients; hi bounds the whole interval."
+  },
+  "author_checker_imported_or_executed": false,
+  "complete_family": {
+    "T_max": {
+      "decimal_display_only": 1e+30,
+      "exact": "1000000000000000000000000000000"
+    },
+    "T_min": {
+      "decimal_display_only": 1e+22,
+      "exact": "10000000000000000000000"
+    },
+    "actual_scalar_profile_old_aging_required": true,
+    "ceiling_M_rule": "M=ceil(50T) >=50T; d=M-13; d-19(2T)(6/5)-9 >=(22/5)T-22.",
+    "finite_tail_rational_upper": {
+      "decimal_display_only": 0.0009385585784912109,
+      "exact": "19683/20971520"
+    },
+    "finite_total_with_001": {
+      "decimal_display_only": 0.004781203377137125,
+      "exact": "3735315138388379/781250000000000000"
+    },
+    "infinite_total": {
+      "decimal_display_only": 0.0037812033771371253,
+      "exact": "2954065138388379/781250000000000000"
+    },
+    "kappa_squared_T": {
+      "decimal_display_only": 1000000.0,
+      "exact": "1000000"
+    },
+    "localized_at_T": {
+      "decimal_display_only": 5e-05,
+      "exact": "1/20000"
+    },
+    "maximum_M": 50000000000000000000000000000000,
+    "minimum_M": 500000000000000000000000,
+    "minimum_ceiling_buffer": {
+      "decimal_display_only": 4.4e+22,
+      "exact": "43999999999999999999978"
+    },
+    "qin_at_T": {
+      "decimal_display_only": 2.80168856856256e-06,
+      "exact": "4377638388379/1562500000000000000"
+    },
+    "qout_at_T": {
+      "decimal_display_only": 1.440168856856256e-05,
+      "exact": "22502638388379/1562500000000000000"
+    },
+    "weighted_fallback_remainder_upper": {
+      "decimal_display_only": 9.62963462962963e-05,
+      "exact": "52000027/540000000000"
+    }
+  },
+  "mass_identity": {
+    "a_lower": {
+      "decimal_display_only": 0.9999999999999287,
+      "exact": "400936208750441356097001546525944963265931283214927998783609135212672548951080748530441/400936208750469948766797622318447609361460551312325921696326904778518440827643248530441"
+    },
+    "author_Bmass": {
+      "decimal_display_only": 1.0403584e-06,
+      "exact": "40639/39062500000"
+    },
+    "author_delta_m": {
+      "decimal_display_only": 3.4678655930806944e-07,
+      "exact": "77332739381481439129509215799125119336745302995249539064893325625178639145833766842010871601956666796554873887058852108123354786755320383039/222998087168604888259196819186089804057348339546395275858152326884744098030685507584087459098314045833677891786447494784966321958052531367187500000"
+    },
+    "corrected_arctangent_identity": true,
+    "fixed_c_self_energy_and_a_factor": true,
+    "rounded_seed_squared_upper": {
+      "decimal_display_only": 8.70000002e-06,
+      "exact": "435000001/50000000000000"
+    },
+    "seed_squared_upper": {
+      "decimal_display_only": 8.52560749413601e-06,
+      "exact": "153020257744446675925096125132517404797636555324180830171702915299183067526696003670149212905948013370904280089557862782164578112936238580819334970439329337215028107347582538101208596349691195629565790053129373965690628226027418063466377052486312769441487252326835438572635645387065870623278307301603124140907672135613899595773/17948311349038223098438905461937391509770226984937177379425191776402264167599147860221294678167369032855470299166738837091580918836544713743733212702281006625945880102387902015650350469126382474101199126696459818080976485491256011574308374675876314600721195673665833663647121607030787889880676100102552034468916503586312177734375000"
+    },
+    "wrong_sign_defect": "-2*x*yp/(a*(x**2 + y**2))"
+  },
+  "phase_and_regularities": {
+    "K0": {
+      "decimal_display_only": 13621.412,
+      "exact": "3405353/250"
+    },
+    "K1": {
+      "decimal_display_only": 591961.905,
+      "exact": "118392381/200"
+    },
+    "Maug_derivative_upper": {
+      "decimal_display_only": 0.061293573676857,
+      "exact": "61293573676857/1000000000000000"
+    },
+    "Sigma_g_derivative_upper": {
+      "decimal_display_only": 10448.017888,
+      "exact": "326500559/31250"
+    },
+    "common_reflection_phase_upper": {
+      "decimal_display_only": 1.0442722714861375e-05,
+      "exact": "115552409148620373564549307655410072032261328882899419972678176009404375435562646135986828357939726059659281745838545058707409589982014553603513041737716987339900626134721525947654436051360126646265879436743103681919836227289984559123725827657907468160827671896961520011679279565718055034596182405906343978/11065352619597379653458929691580964093984092018167432850128145014952273685563703723067376601108110272709862263361604822971209360646069490721837108191509877158712345109184244207585359962179803602008772496758610601504155534464566590862696766611233839817240901377649953952210315457229010368210002442330732578171989"
+    },
+    "drive_derivative_upper": {
+      "decimal_display_only": 28.001426697918635,
+      "exact": "10381494347240381/370748764312500"
+    },
+    "drive_norm_upper": {
+      "decimal_display_only": 2.000002057798093,
+      "exact": "13841301442287201/6920643600500000"
+    },
+    "fixed_target_residual_kept": {
+      "decimal_display_only": 1.76e-13,
+      "exact": "11/62500000000000"
+    },
+    "gate_comparison_upper": {
+      "decimal_display_only": 0.000713000000176,
+      "exact": "44562500011/62500000000000"
+    },
+    "weighted_Dj_scaled_upper": {
+      "decimal_display_only": 1.3660003790408586,
+      "exact": "6830001895204293/5000000000000000"
+    },
+    "weighted_F1_scaled": {
+      "decimal_display_only": 1.05700013,
+      "exact": "105700013/100000000"
+    },
+    "weighted_inverse_coefficient": {
+      "decimal_display_only": 1.0000026106781228,
+      "exact": "2791183234738936753134388031534785155870929663708013030741352832995583338109349222939415502481330279450718573109204209813362147009409084753716354349831287940113202831442125166176348810645081/2791175947876952573935841848224837231269701631947410153926939907819210740543679805300910151496406369806812378237466606539709674950971494503802930528586657248428982863957281150680000000000000"
+    },
+    "weighted_phase_L1_scaled": {
+      "decimal_display_only": 19.520000000044895,
+      "exact": "610000000001403/31250000000000"
+    }
+  },
+  "physical": {
+    "loads_at_upper_endpoint": {
+      "clock_0": {
+        "decimal_display_only": 8.015120691541702,
+        "exact": "8015120691541701/1000000000000000"
+      },
+      "clock_1": {
+        "decimal_display_only": 6.730044773026091,
+        "exact": "6730044773026091/1000000000000000"
+      },
+      "emitter": {
+        "decimal_display_only": 0.005626357514718896,
+        "exact": "1501060691168555256357129429116105401/266790847762817856471455805270050000000"
+      },
+      "emitter_attachment": {
+        "decimal_display_only": 0.120084458428128,
+        "exact": "3752639325879/31250000000000"
+      },
+      "existing_old_edge": {
+        "decimal_display_only": 3.0,
+        "exact": "3"
+      },
+      "old1_added": {
+        "decimal_display_only": 1.99375712763334,
+        "exact": "99687856381667/50000000000000"
+      },
+      "old2_added": {
+        "decimal_display_only": 1.198638631120596,
+        "exact": "299659657780149/250000000000000"
+      },
+      "ordinary_clock": {
+        "decimal_display_only": 0.120084428428128,
+        "exact": "3752638388379/31250000000000"
+      },
+      "physical_scalar": {
+        "decimal_display_only": 1.459892833020969,
+        "exact": "1459892833020969/1000000000000000"
+      },
+      "source_A": {
+        "decimal_display_only": 20.332662089993455,
+        "exact": "10166331044996727/500000000000000"
+      },
+      "source_B": {
+        "decimal_display_only": 17.078839343776313,
+        "exact": "17078839343776311/1000000000000000"
+      }
+    },
+    "maximum_matrix_dimension": 4,
+    "prepared_sector_radius_upper": {
+      "decimal_display_only": 17.48509960443467,
+      "exact": "17485099604434669/1000000000000000"
+    },
+    "two_qubit_Q_over_kappa_characteristic": "lambda^2*(lambda-2)^2"
+  },
+  "prelaunch_sha256": "504f433e4abeb19a4714f2c2e9929de6804eba34d522b50fa408df81be43bd32",
+  "resources": {
+    "CPU_soft_hard_seconds": [
+      30,
+      30
+    ],
+    "dynamics": 0,
+    "grids": 0,
+    "matrix_dimension_max": 4,
+    "peak_RSS_native_bytes_macos": 64110592,
+    "quadratures": 0,
+    "system_CPU_seconds": 0.045024999999999996,
+    "user_CPU_seconds": 0.231482,
+    "wall_cap_seconds": 45,
+    "wall_seconds": 0.48210200015455484
+  },
+  "result": "All declared stage-two exact checks passed.",
+  "role": "Source-exposed independent family changed-premise check",
+  "runtime": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "sympy": "1.14.0"
+  },
+  "scope": "Original exact ladder only; frozen source-exposed family implication. No retained audit, native preparation, joint calibration box or arbitrary accuracy.",
+  "verified_input_count": 73
+}

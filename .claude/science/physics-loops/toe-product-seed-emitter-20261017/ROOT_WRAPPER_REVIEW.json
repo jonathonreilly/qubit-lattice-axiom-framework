@@ -1,0 +1,69 @@
+{
+  "reviewed_utc": "2026-10-17T02:33:06.499543+00:00",
+  "disposition": "Exact-ladder product-seed emitter wrapper accepted for conditional regular publication, subject to final focused and staged-byte checks. Not an audit verdict or merge permission.",
+  "coverage": [
+    "Complete qualified source arguments reused by identity",
+    "All new publication framing read; three embedded proof bodies byte-identical",
+    "Full canonical primary and source adaptation with six unchanged calculation bodies reviewed",
+    "Root status/link finalization diff read",
+    "Canonical second execution and six complete payload comparisons reviewed",
+    "Mutation harness/launcher/verifier and all twelve complete assertion streams reviewed",
+    "Graph manifest exact one-node/one-edge delta",
+    "Scoped prior-art and publication marginal-value evaluation"
+  ],
+  "review_records": {
+    "ROOT_DRAFT_REVIEW.json": {
+      "bytes": 3134,
+      "sha256": "0ba6c3ffa006a150f77bb30d865983004770dfc12d2e0d438fdce9fd35b6e15c"
+    },
+    "ROOT_PORTABILITY_ACCEPTANCE.json": {
+      "bytes": 7311,
+      "sha256": "4442fa7f1409992d37feb8f56065e2f36ca44d83ab8d398c4fd18e0d4f2451f6"
+    },
+    "ROOT_WRAPPER_FINALIZATION.json": {
+      "bytes": 1057,
+      "sha256": "62bcc66c626c9d04db9b49576fd569e51d350be8501839e0e1bb4adc6801a71d"
+    },
+    "REPORT_COMPARISON.json": {
+      "bytes": 6695,
+      "sha256": "fe6290c4a1a3250120130fdbaf35b18237406367b18064ac0b79257d4ef6ff77"
+    },
+    "ROOT_MUTATION_REVIEW.json": {
+      "bytes": 7988,
+      "sha256": "4ab03da5952e77cb7fa2d87db005bd363f764f7b729ac9c9e9e670d8044fe1bb"
+    }
+  },
+  "current_sources": {
+    "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md": {
+      "bytes": 95866,
+      "sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44"
+    },
+    "scripts/product_seed_emitter_2026_10_17.py": {
+      "bytes": 27118,
+      "sha256": "6eaf2e5c9716616f103b13a53f5fdf39d8baced9da7abe7dbc8263dc6e95be26"
+    },
+    "scripts/product_seed_emitter_installed_2026_10_17.py": {
+      "bytes": 34371,
+      "sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d"
+    },
+    "scripts/product_seed_emitter_local_2026_10_17.py": {
+      "bytes": 19892,
+      "sha256": "c567cfeaaddff24d9f59d70e99a7d59cb324e389a10d18db04e46a173407f25e"
+    },
+    "scripts/product_seed_emitter_weighted_2026_10_17.py": {
+      "bytes": 17888,
+      "sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669"
+    }
+  },
+  "exposure": "Same selected model, source-exposed root review; reuse of earlier independent analytic checks is explicit. Mutation execution is fault sensitivity, not a new independent theorem proof.",
+  "limits": [
+    "Exact supplied ladder and coherent loop phase",
+    "Product excitation and clean vacuum supplied",
+    "Actual scalar nu+2kappa, full outputs, old aging, passive references",
+    "Fixed .004 accuracy at enormous sufficient time1e36; finite .005 only through2e36",
+    "Native preparation, practical cost, arbitrary accuracy, reset/reuse and physical Hamiltonian/Record identification open",
+    "Calibration, joint box and sharper-time candidate excluded",
+    "First cache failure and unavailable deleted first merged stream preserved"
+  ],
+  "editable_prompt_changes": []
+}

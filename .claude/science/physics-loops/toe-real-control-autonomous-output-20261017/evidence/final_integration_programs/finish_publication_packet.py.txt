@@ -1,0 +1,31 @@
+"""Finalize publication-only evidence; do not alter checked calculation inputs."""
+from validate_packet import *
+from datetime import datetime,timezone
+import subprocess,sys
+sys.dont_write_bytecode=True;sys.path.insert(0,str(W/'scripts'));import runner_cache
+old_ready=read(D/'READY_PATHS.json');record=read(D/'FOCUSED_VERIFICATION.json')
+for r in old_ready['files']:assert digest((W/r['path']).read_bytes())=={k:r[k] for k in ('bytes','sha256')}
+assert record['cache_status']=='fresh' and runner_cache.cache_status('scripts/real_control_autonomous_output_2026_10_17.py')=='fresh'
+archive('focused_receipt',N/'runs/real_control_focused_02')
+archive('preservation_receipt',N/'runs/real_control_preserve_execution')
+for name in ('real_control_final_open_prs','real_control_final_main_fetch','real_control_upstream_scope'):archive(name,N/'runs'/name)
+archive('final_integration_programs',D,[D/x for x in ('focused_verify.py','finish_publication_packet.py','PR_BODY.md','FINAL_UPSTREAM_REFRESH.json','OTHER_PR_DELTA.json','OTHER_PR_DELTA.stderr','refresh_upstream.py','VOCAB_fix.json','VOCAB_report-only.json','vocab_fix.stdout','vocab_fix.stderr','vocab_report-only.stdout','vocab_report-only.stderr')])
+p=Q/'EXECUTION_STATUS.md';s=p.read_text();old='Citation/focused checks and publication remain pending in their separate records.';assert old in s
+p.write_text(s.replace(old,'Focused readiness, syntax, vocabulary, links, whitespace and source identities\npassed. The serialized graph build adds one node and one parent edge with no\nold-node rewiring. [Focused checks](PUBLISH_CHECKS.json) and\n[final packet](FINAL_PUBLICATION_PACKET.json) record these limits. The regular\nPR is prepared on exact9666; remote publication is verified separately.'))
+p=Q/'CLUSTER_CAP_EVALUATION.md';s=p.read_text();assert 'OPEN subject to focused publication checks.' in s
+p.write_text(s.replace('OPEN subject to focused publication checks.','OPEN. Focused publication checks passed.')+'\nFinal05:40UTC refresh: main/planning and relevant9661/9663/9664/9665/9666\nheads unchanged. Unrelated9662 advanced to1a3546f6; complete20-path inventory,\nboth changed theorem-note patches and C10/C11 readmes inspected for overlap.\nOther code/log bodies not independently reviewed or imported. The site-local\nfermion construction declares enlarged per-site qubits and range; it does not\nclose this runtime native-supply premise. No instruction or source collision.\n')
+changed=[Q/'EXECUTION_STATUS.md',Q/'CLUSTER_CAP_EVALUATION.md']
+before={str(p):digest(p.read_bytes()) for p in changed}
+for mode in ('--fix','--report-only'):
+ v=subprocess.run([sys.executable,'scripts/vocab_lint.py',mode,'--report-path',str(D/('FINAL_VOCAB_'+mode[2:]+'.json')),*[str(p.relative_to(W)) for p in changed]],cwd=W,capture_output=True,text=True,timeout=20)
+ (D/('FINAL_VOCAB_'+mode[2:]+'.stdout')).write_text(v.stdout);(D/('FINAL_VOCAB_'+mode[2:]+'.stderr')).write_text(v.stderr)
+ assert v.returncode==0 and '0 files with violations' in v.stdout,v.stdout+v.stderr
+assert all(digest(Path(p).read_bytes())==d for p,d in before.items())
+write(Q/'FINAL_PUBLICATION_PACKET.json',{'finalized_utc':datetime.now(timezone.utc).isoformat(),'parent_head':old_ready['parent_head'],'focused_record':pin(Q/'PUBLISH_CHECKS.json'),'source_body_primary_or_input_changes_after_execution':[],'publication_only_delta':[{'path':str(p.relative_to(W)),**digest(p.read_bytes())} for p in changed],'delta_checks':{'vocabulary_violating_files':0,'new_link_targets':['PUBLISH_CHECKS.json','FINAL_PUBLICATION_PACKET.json']},'cache_status':'fresh','final_source_observation':pin(D/'FINAL_UPSTREAM_REFRESH.json'),'remaining_obligations':['Remote regular PR creation and verification','Ancestor inclusion, exact integrated-current-main landing checks and retained audit','Native supply, calibration/noise, practical resources and complete capture/reset/reuse'],'editable_prompt_files_changed':[]})
+paths={r['path'] for r in old_ready['files']}|{str(p.relative_to(W)) for p in Q.rglob('*') if p.is_file()}
+for rel in sorted(paths):
+ r=subprocess.run(['git','diff','--no-index','--check','/dev/null',rel],cwd=W,capture_output=True,text=True);assert not r.stdout and not r.stderr,(rel,r.stdout,r.stderr)
+assert runner_cache.cache_status('scripts/real_control_autonomous_output_2026_10_17.py')=='fresh'
+validate_inputs();archives=validate_archives()
+write(D/'FINAL_READY_PATHS.json',{'parent_head':old_ready['parent_head'],'files':[{'path':p,**digest((W/p).read_bytes())} for p in sorted(paths)],'file_count':len(paths),'scope':'Exact final publication paths. Generated citation_graph.json excluded; added post-check evidence does not alter calculation closure.'})
+print(json.dumps({'files':len(paths),'cache':'fresh','archives':len(archives),'declared_inputs_unchanged':True},indent=2))

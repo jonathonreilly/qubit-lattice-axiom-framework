@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/noncommuting_resolvent_order/mutated.py", line 321, in <module>
+    run_independent_checks(Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/structural_coefficient_box_2026_10_17_inputs/review'))
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/noncommuting_resolvent_order/mutated.py", line 168, in run_independent_checks
+    zero('noncommuting_resolvent_identity', Rs-Rt+Rs*Rt*dHt)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/noncommuting_resolvent_order/mutated.py", line 42, in zero
+    require(name, matrix.applyfunc(sp.cancel) == sp.zeros(*matrix.shape))
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/noncommuting_resolvent_order/mutated.py", line 31, in require
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: noncommuting_resolvent_identity

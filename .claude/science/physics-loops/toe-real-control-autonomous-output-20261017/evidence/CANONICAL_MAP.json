@@ -1,0 +1,214 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/canonical_01",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "EXECUTION.json",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical/EXECUTION.json.txt",
+      "bytes": 2508,
+      "sha256": "e81f484215a7361b9ed2c31a8600d7b299a4d160549a870c2ed084d09dcab010",
+      "compression": "none",
+      "raw_bytes": 2508,
+      "raw_sha256": "e81f484215a7361b9ed2c31a8600d7b299a4d160549a870c2ed084d09dcab010"
+    },
+    {
+      "original_path": "PRELAUNCH.json",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical/PRELAUNCH.json.txt",
+      "bytes": 39199,
+      "sha256": "35791aa8f55a8e5d8219e38da05dcae6e2b2c4ccf9f0f9dcdd2d8976ea24fefd",
+      "compression": "none",
+      "raw_bytes": 39199,
+      "raw_sha256": "35791aa8f55a8e5d8219e38da05dcae6e2b2c4ccf9f0f9dcdd2d8976ea24fefd"
+    },
+    {
+      "original_path": "RAW_ENVELOPE_RESULT.json",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical/RAW_ENVELOPE_RESULT.json.txt",
+      "bytes": 1494,
+      "sha256": "27b3ba624080a8e064ae1189e48da4969d1a240199ddf9147de58d812270100e",
+      "compression": "none",
+      "raw_bytes": 1494,
+      "raw_sha256": "27b3ba624080a8e064ae1189e48da4969d1a240199ddf9147de58d812270100e"
+    },
+    {
+      "original_path": "cache.txt",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical/cache.txt.gz",
+      "bytes": 834,
+      "sha256": "867f1c2318fa8e1665d31d31ee0130b225072d04c42fd91246aa26f6fac556a1",
+      "compression": "gzip",
+      "raw_bytes": 1434,
+      "raw_sha256": "f8b11a6f56f52b962b470906156d98f6080ff87b769a0640ad43efb1a9cdd6b6"
+    },
+    {
+      "original_path": "executed_sources/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/.claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/canonical/executed_sources/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt.txt",
+      "bytes": 50396,
+      "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87",
+      "compression": "none",
+      "raw_bytes": 50396,
+      "raw_sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+    },
+    {
+      "original_path": "executed_sources/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md.txt",
+      "bytes": 5313,
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "compression": "none",
+      "raw_bytes": 5313,
+      "raw_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "original_path": "executed_sources/docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/canonical/docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "bytes": 74148,
+      "sha256": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca",
+      "compression": "none",
+      "raw_bytes": 74148,
+      "raw_sha256": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca"
+    },
+    {
+      "original_path": "executed_sources/docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "bytes": 119492,
+      "sha256": "939a505813adb86ce8bccf335781fd8a1d3ce5ef96367836fe68339bc7c01b30",
+      "compression": "none",
+      "raw_bytes": 119492,
+      "raw_sha256": "939a505813adb86ce8bccf335781fd8a1d3ce5ef96367836fe68339bc7c01b30"
+    },
+    {
+      "original_path": "executed_sources/docs/WRITING_VOICE_GUIDE_2026-04-25.md",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/WRITING_VOICE_GUIDE_2026-04-25.md.txt",
+      "bytes": 1958,
+      "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b",
+      "compression": "none",
+      "raw_bytes": 1958,
+      "raw_sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b"
+    },
+    {
+      "original_path": "executed_sources/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md.txt",
+      "bytes": 34639,
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "compression": "none",
+      "raw_bytes": 34639,
+      "raw_sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+    },
+    {
+      "original_path": "executed_sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/ai_methodology/SCIENCE_WORKFLOW.md.txt",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "compression": "none",
+      "raw_bytes": 11788,
+      "raw_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "original_path": "executed_sources/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md.txt",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "compression": "none",
+      "raw_bytes": 2180,
+      "raw_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "original_path": "executed_sources/docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md.txt",
+      "bytes": 3253,
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "compression": "none",
+      "raw_bytes": 3253,
+      "raw_sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9"
+    },
+    {
+      "original_path": "executed_sources/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md.txt",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "compression": "none",
+      "raw_bytes": 16755,
+      "raw_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "original_path": "executed_sources/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md.txt",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "compression": "none",
+      "raw_bytes": 16454,
+      "raw_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "original_path": "executed_sources/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md.txt",
+      "bytes": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "compression": "none",
+      "raw_bytes": 30709,
+      "raw_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "original_path": "executed_sources/docs/audit/data/axiom_premise_nodes.json",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/audit/data/axiom_premise_nodes.json.txt",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "compression": "none",
+      "raw_bytes": 6416,
+      "raw_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "original_path": "executed_sources/scripts/real_control_autonomous_output_2026_10_17.py",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/canonical/scripts/real_control_autonomous_output_2026_10_17.py.txt",
+      "bytes": 47127,
+      "sha256": "b7d63ff04babbf0cf4abd6fde6056a8d7a14684eadb66a2773f645cdea430bc5",
+      "compression": "none",
+      "raw_bytes": 47127,
+      "raw_sha256": "b7d63ff04babbf0cf4abd6fde6056a8d7a14684eadb66a2773f645cdea430bc5"
+    },
+    {
+      "original_path": "result.json",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical/result.json.txt",
+      "bytes": 88768,
+      "sha256": "aa7f53815ea2bd07b3c167bced2dc1e736df99ce6f290b9e6b78fc012fc35fce",
+      "compression": "none",
+      "raw_bytes": 88768,
+      "raw_sha256": "aa7f53815ea2bd07b3c167bced2dc1e736df99ce6f290b9e6b78fc012fc35fce"
+    },
+    {
+      "original_path": "stderr_protocol.txt",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "stderr_protocol_before_guard.txt",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "stdout_merged.txt",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical/stdout_merged.txt.txt",
+      "bytes": 1076,
+      "sha256": "23863e4d23a3ebde5cd265d15b50ec9c800d79081afc07e00ecf005d8f9ac5ea",
+      "compression": "none",
+      "raw_bytes": 1076,
+      "raw_sha256": "23863e4d23a3ebde5cd265d15b50ec9c800d79081afc07e00ecf005d8f9ac5ea"
+    },
+    {
+      "original_path": "stdout_merged_before_guard.txt",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical/stdout_merged.txt.txt",
+      "bytes": 1076,
+      "sha256": "23863e4d23a3ebde5cd265d15b50ec9c800d79081afc07e00ecf005d8f9ac5ea",
+      "compression": "none",
+      "raw_bytes": 1076,
+      "raw_sha256": "23863e4d23a3ebde5cd265d15b50ec9c800d79081afc07e00ecf005d8f9ac5ea"
+    }
+  ],
+  "count": 23
+}

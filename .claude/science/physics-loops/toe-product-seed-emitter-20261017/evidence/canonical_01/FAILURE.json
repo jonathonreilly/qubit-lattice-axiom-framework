@@ -1,0 +1,36 @@
+{
+  "status": "Canonical cache rejected by filesystem-generation guard; no successful canonical receipt.",
+  "root_cause": "Root launcher failed to precreate the new output slot before execution. Creating the output changed only the declared inputs ancestor directory outputs. Runner and all168 input content hashes remained equal.",
+  "source_content_unchanged": true,
+  "before_after_content": {
+    "runner_sha256": "6eaf2e5c9716616f103b13a53f5fdf39d8baced9da7abe7dbc8263dc6e95be26",
+    "input_fingerprint_sha256": "2ad6675a08e91c98e659d6239fee357ea886e62a88d637354487e7be2af88f83"
+  },
+  "unique_stat_changes": [
+    [
+      [
+        "outputs",
+        16877,
+        16777231,
+        516217067,
+        21056,
+        1792202633133732128,
+        1792202633133732128
+      ],
+      [
+        "outputs",
+        16877,
+        16777231,
+        516217067,
+        21088,
+        1792203450790557786,
+        1792203450790557786
+      ]
+    ]
+  ],
+  "raw_error_file": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/emitter_canonical_01/stderr",
+  "raw_error_sha256": "e82a80a2a9b39be100a46edbb0cd66f7c968d641e1c2fd846cbbfcd03e3f8073",
+  "emitted_result_sha256": "921ec540dae935e18eaf38706ae56a513d9d5b1bbc717ff0aba66e924a70a496",
+  "evidence_limit": "runner_cache removed its merged live log on identity rejection and returned no result; original merged child stdout is unavailable. The emitted complete JSON and actual outer failure streams are preserved. No status or timing is reconstructed as a successful canonical execution.",
+  "correction_plan": "Preserve this failure. Precreate output slots before future identity capture, capture exceptions explicitly, leave scientific bodies and cap unchanged, run a new distinct bounded attempt."
+}

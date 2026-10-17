@@ -1,0 +1,10 @@
+[
+  {
+    "script": "docs/audit/scripts/run_citation_graph_build.py",
+    "started_utc": "2026-10-17T01:36:37.151148+00:00",
+    "elapsed_seconds": 60.07510283309966,
+    "wall_cap_seconds": 60,
+    "exit_code": null,
+    "script_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+  }
+]

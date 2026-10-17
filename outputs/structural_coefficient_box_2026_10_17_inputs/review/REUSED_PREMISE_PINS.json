@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-10-17T01:16:24.858938+00:00",
+  "prior_exposure": "This reviewer authored the earlier stationary and interval reviews. This check is source-exposed, not blind or model-diverse.",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_certificate_review/REVIEW.md",
+      "bytes": 21142,
+      "sha256": "23b78506dc56fe141f9e19347b60ed0e420b4e817b599cafa246a502a2a3f830",
+      "scope": "Previously reviewed stationary old-cap state/reflection premise; identity refreshed, no historical execution replayed."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_certificate_review/old_cap_delta/WITNESS.json",
+      "bytes": 721897,
+      "sha256": "b04ab3b89b699814334d27e867bc2b5ed57295cb4d558eda1e8b9289ad96ec44",
+      "scope": "Previously reviewed stationary old-cap state/reflection premise; identity refreshed, no historical execution replayed."
+    }
+  ]
+}

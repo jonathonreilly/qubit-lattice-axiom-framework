@@ -1,0 +1,158 @@
+{
+  "checked_utc": "2026-10-17T02:30:37.410295+00:00",
+  "scope": "Root source/traceback/binding check of existing fault-sensitivity evidence, not a new mathematical proof or retained audit.",
+  "reviewed_completely": [
+    "mutation plan reused by exact identity",
+    "report",
+    "case harness",
+    "launcher",
+    "post-run bookkeeping verifier",
+    "all twelve complete stdout/stderr streams",
+    "all twelve exact source deltas and assertion locations"
+  ],
+  "freeze": {
+    "bytes": 24602,
+    "sha256": "2d20d28a9d705485e2e8309b6fa487f95274b6bdd47ec204e0f22a73553b3b15"
+  },
+  "frozen_files_verified": 126,
+  "archived_files": 127,
+  "cases": [
+    {
+      "case": "local_vacancy_scalar",
+      "scientific_assertion": "full 16-dimensional scalar-reserve identity",
+      "elapsed_seconds": 0.5850991252809763,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/01_local_vacancy_scalar/attempt_1/EXECUTION.json",
+        "bytes": 2145,
+        "sha256": "02831ff54dd7c989c960a832f922785f4f316c84073e362723cfc0d8451a7b04"
+      }
+    },
+    {
+      "case": "local_phase_conjugation",
+      "scientific_assertion": "return/right-emission central notch",
+      "elapsed_seconds": 0.3695766250602901,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/02_local_phase_conjugation/attempt_1/EXECUTION.json",
+        "bytes": 2164,
+        "sha256": "403a96cc747cd61785e18bdf79df77be9bc7523434662af2808ad9fc2076c309"
+      }
+    },
+    {
+      "case": "installed_noncommuting_order",
+      "scientific_assertion": "assert exact_zero(sigma_direct - (sigma_free + Y * T * X))",
+      "elapsed_seconds": 0.5381714999675751,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/03_installed_noncommuting_order/attempt_1/EXECUTION.json",
+        "bytes": 2204,
+        "sha256": "8968d1fe40da765d9365e62e6f4423f0d7498c8d374ae9d048736769811dabba"
+      }
+    },
+    {
+      "case": "installed_lower_sign",
+      "scientific_assertion": "assert exact_zero(direct_aug - aug)",
+      "elapsed_seconds": 0.48945329105481505,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/04_installed_lower_sign/attempt_1/EXECUTION.json",
+        "bytes": 2167,
+        "sha256": "2cb9ed20af125b7694493b364c3d8b80c9bf4dd99c7c70f72d7b77987975d532"
+      }
+    },
+    {
+      "case": "installed_density_jacobian",
+      "scientific_assertion": "assert simp(jump_dk_times_pi - weights_dk_times_pi) == 0",
+      "elapsed_seconds": 0.5991040840744972,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/05_installed_density_jacobian/attempt_1/EXECUTION.json",
+        "bytes": 2192,
+        "sha256": "f645566abbe4928769ba9e7f0c169079537dda388aede9cf03a7182e542219ee"
+      }
+    },
+    {
+      "case": "installed_overlap_diagonal_only",
+      "scientific_assertion": "assert exact_zero(error_gram - (2 * eye - overlap - overlap.H))",
+      "elapsed_seconds": 0.659040458034724,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/06_installed_overlap_diagonal_only/attempt_1/EXECUTION.json",
+        "bytes": 2231,
+        "sha256": "6f084815e83ce2b4ac857d4a37776f7f97e56540b55c04cefd8fea512481ffcf"
+      }
+    },
+    {
+      "case": "installed_grouped_localization",
+      "scientific_assertion": "assert Dj < 5 * 10 ** 42 and 2 * Dj ** 2 < Dpacket ** 2",
+      "elapsed_seconds": 0.26896312460303307,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/07_installed_grouped_localization/attempt_1/EXECUTION.json",
+        "bytes": 2228,
+        "sha256": "eeb3e7a1fd1ee785566d40c2cee4472730052befee6b5c077421fc9e822d6a7e"
+      }
+    },
+    {
+      "case": "weighted_closed_inverse",
+      "scientific_assertion": "full_eight_coordinate_rank_one_inverse",
+      "elapsed_seconds": 4.053270666860044,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/08_weighted_closed_inverse/attempt_1/EXECUTION.json",
+        "bytes": 2173,
+        "sha256": "380b59f39b24709cb555510f25486480fdce286882925867e288d9ebbb0f9bae"
+      }
+    },
+    {
+      "case": "weighted_cutoff_derivative",
+      "scientific_assertion": "cutoff_and_quotient_derivative",
+      "elapsed_seconds": 0.4282954167574644,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/09_weighted_cutoff_derivative/attempt_1/EXECUTION.json",
+        "bytes": 2203,
+        "sha256": "8b9206157fc28a88ef5b139e5d14ad0376987d1a1c94d5da415b63117c0720f0"
+      }
+    },
+    {
+      "case": "weighted_localized_derivative",
+      "scientific_assertion": "U_coefficient_complete",
+      "elapsed_seconds": 10.344992249738425,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/10_weighted_localized_derivative/attempt_1/EXECUTION.json",
+        "bytes": 2211,
+        "sha256": "3959208aeebe7fc081f304640a5831d62fd68078712d86e325a9b55ecac5c92b"
+      }
+    },
+    {
+      "case": "weighted_first_omitted_hops",
+      "scientific_assertion": "graph_distance_formula",
+      "elapsed_seconds": 10.643350459169596,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/11_weighted_first_omitted_hops/attempt_1/EXECUTION.json",
+        "bytes": 2208,
+        "sha256": "6699dce399abf042da4b61fa57617e991610e8346b979d965cede361b45eebb4"
+      }
+    },
+    {
+      "case": "weighted_grouped_ceiling",
+      "scientific_assertion": "assert 2 * Dj * Dj < D * D",
+      "elapsed_seconds": 0.1998707503080368,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/12_weighted_grouped_ceiling/attempt_1/EXECUTION.json",
+        "bytes": 2192,
+        "sha256": "458afbe3cd14d158cc671c4759307028cc4db1ecd10a2d08caabf6fb9f2e0ac6"
+      }
+    }
+  ],
+  "all_initial_attempts": true,
+  "unexpected_failures": 0,
+  "current_bytes_verified_for_every_prelaunch_binding": true,
+  "historical_generation_stability": "Reported by executed launcher; root checked the launcher and preserved receipts, not a retroactive observation of execution.",
+  "successful_baseline": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/EXECUTION.json",
+    "bytes": 2360,
+    "sha256": "40b90d012a3358b22225955cdb77c3ac988c8550a24d09fafe6b71338d514783"
+  },
+  "total_child_wall_seconds": 29.179187750909477,
+  "metadata_limit": "FrozenInputs retains its generic canonical-runner wall-enforcement string. The mutation launcher actually enforces subprocess timeout=60 and child CPU60; both numeric recorded caps are60.",
+  "evidence_map": {
+    "bytes": 78511,
+    "sha256": "68701e11684cb762b2473fa287f88c7975b8b4a02ef480a1ed8b8091ed9f814a"
+  },
+  "scientific_limit": "Twelve copied-source fault checks only; source-exposed same-model execution. Canonical payload replay and inherited analytic/independent theorem evidence remain distinct.",
+  "editable_prompt_changes": []
+}

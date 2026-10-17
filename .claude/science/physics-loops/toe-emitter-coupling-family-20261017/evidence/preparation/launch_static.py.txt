@@ -1,0 +1,84 @@
+"""Serialize bounded static-only subprocess provenance before each launch."""
+from pathlib import Path
+import argparse
+import hashlib
+import json
+import os
+import platform
+import resource
+import shutil
+import subprocess
+import sys
+import time
+from datetime import datetime, timezone
+
+p = argparse.ArgumentParser()
+p.add_argument('phase', choices=['build_package', 'verify_static'])
+args = p.parse_args()
+D = Path(__file__).resolve().parent
+S = D.parent / 'emitter_resource_family_candidate'
+plan = json.loads((D / 'RESOURCE_PLAN.json').read_text())
+caps = plan['static_subprocess_caps']
+old = sorted(D.glob(args.phase + '_attempt_*'))
+assert len(old) < caps['maximum_attempts_per_phase']
+A = D / (args.phase + '_attempt_' + str(len(old) + 1).zfill(2))
+A.mkdir()
+program = D / (args.phase + '.py')
+execution = A / 'executed.py'
+shutil.copyfile(program, execution)
+
+def binding(path):
+    path = path.resolve()
+    raw = path.read_bytes()
+    st = path.stat()
+    return {'path': str(path), 'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest(),
+            'generation': {'device': st.st_dev, 'inode': st.st_ino, 'mtime_ns': st.st_mtime_ns, 'ctime_ns': st.st_ctime_ns}}
+
+def save(path, data):
+    with path.open('x', encoding='utf-8') as f:
+        f.write(json.dumps(data, indent=2, sort_keys=True) + '\n')
+        f.flush()
+        os.fsync(f.fileno())
+
+inputs = [Path(__file__), program, execution, D / 'RESOURCE_PLAN.json', D / 'WRAPPER.md', Path(sys.executable)]
+inputs += sorted(q for q in S.rglob('*') if q.is_file())
+if args.phase == 'verify_static':
+    inputs += sorted(q for q in (D / 'canonical').rglob('*') if q.is_file())
+    inputs += [D / 'BUILD_RESULT.json', D / 'SOURCE_TO_FUNCTION.diff']
+bindings = [binding(q) for q in inputs]
+env = dict(os.environ)
+env['PYTHONDONTWRITEBYTECODE'] = '1'
+pre = {'utc': datetime.now(timezone.utc).isoformat(), 'phase': args.phase,
+       'execution_kind': 'static construction/verification only; no scientific function invocation',
+       'argv': [sys.executable, str(execution), '--packet-root', str(D)],
+       'cwd': str(D), 'caps': caps, 'python_version': platform.python_version(),
+       'python_dont_write_bytecode': True, 'bindings': bindings,
+       'parent_git_read_policy': 'Read-only git show at exact 0f1022e03dbbed8085035f2a378be8ae1aca02e8; expected source bytes are already in the frozen source manifest.'}
+save(A / 'PRELAUNCH.json', pre)
+start = time.monotonic()
+before = resource.getrusage(resource.RUSAGE_CHILDREN)
+def limits():
+    resource.setrlimit(resource.RLIMIT_CPU, tuple(caps['cpu_soft_hard_seconds']))
+timed_out = False
+with (A / 'stdout.txt').open('wb') as out, (A / 'stderr.txt').open('wb') as err:
+    proc = subprocess.Popen(pre['argv'], cwd=D, env=env, stdout=out, stderr=err, preexec_fn=limits)
+    try:
+        code = proc.wait(timeout=caps['external_wall_seconds'])
+    except subprocess.TimeoutExpired:
+        timed_out = True
+        proc.kill()
+        code = proc.wait()
+after = resource.getrusage(resource.RUSAGE_CHILDREN)
+post = [binding(Path(row['path'])) for row in bindings]
+receipt = {'utc': datetime.now(timezone.utc).isoformat(), 'exit_code': code, 'timeout': timed_out,
+           'elapsed_wall_seconds': time.monotonic() - start,
+           'user_cpu_seconds': after.ru_utime - before.ru_utime, 'system_cpu_seconds': after.ru_stime - before.ru_stime,
+           'child_peak_rss_native_units': after.ru_maxrss, 'platform': platform.platform(), 'caps': caps,
+           'prelaunch': binding(A / 'PRELAUNCH.json'), 'stdout': binding(A / 'stdout.txt'), 'stderr': binding(A / 'stderr.txt'),
+           'all_bound_input_bytes_and_generations_unchanged': post == bindings,
+           'after_bindings': post, 'scientific_executions': 0, 'scientific_mutations': 0}
+save(A / 'RECEIPT.json', receipt)
+print(json.dumps({'attempt': str(A), 'exit_code': code, 'timeout': timed_out,
+                  'elapsed_wall_seconds': receipt['elapsed_wall_seconds'],
+                  'bindings_unchanged': receipt['all_bound_input_bytes_and_generations_unchanged']}, indent=2))
+sys.exit(0 if code == 0 and not timed_out and post == bindings else 1)

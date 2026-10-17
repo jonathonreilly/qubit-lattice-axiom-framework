@@ -1,0 +1,102 @@
+{
+  "qualified_utc": "2026-10-17T03:40:06.647079+00:00",
+  "status": "Conditional fixed-apparatus theorem accepted for reuse and coherent future publication preparation; no retained audit or canonical publication result.",
+  "author_candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_escape_candidate/CANDIDATE.md",
+    "bytes": 31556,
+    "sha256": "c68350310ac5c471a38940660d76ba74d982306e2d62a28bbf9c330e79c984b8"
+  },
+  "author_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_escape_candidate/FREEZE.json",
+    "bytes": 2205,
+    "sha256": "9061530b9af3e5e9f13c748b6c87f985ee8ac1eec48db78e47e5817ce58c0146"
+  },
+  "review_report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_escape_review/REPORT.md",
+    "bytes": 30019,
+    "sha256": "4d7694f51ec85edcc38977bef43412d8c9bc5baba4fa3c35809fe9adf3d00284"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_escape_review/FREEZE.json",
+    "bytes": 3292,
+    "sha256": "26fa34cce02162cfe5b016a66b92288f4af92da83dd0539b7f1a3a6de3142ca1"
+  },
+  "full_packet_files_checked": {
+    "resonant_escape_candidate": 33,
+    "resonant_escape_review": 76
+  },
+  "review_source_pairs_checked": {
+    "INITIAL_SOURCE_MANIFEST.json": 21,
+    "AUTHOR_SOURCE_MANIFEST.json": 33
+  },
+  "author_dependency_pairs_checked": 18,
+  "author_prelaunch_bindings_checked": 24,
+  "review_prelaunch_bindings_checked": 31,
+  "review_runtime_bindings": 3,
+  "independent_run_freeze_members_checked": 32,
+  "author_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_escape_candidate/run01_execution.json",
+    "bytes": 9443,
+    "sha256": "6f776a61f29438f0d5f7fdcf54a3033721943f1b705119c58fb191e91cc8963c"
+  },
+  "review_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_escape_review/run01/RECEIPT.json",
+    "bytes": 10402,
+    "sha256": "80ae7e768ebd85f7b68aa69ba11aad9490f62a602624b5a4c13f240d08bda43e"
+  },
+  "review_prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_escape_review/run01/PRELAUNCH.json",
+    "bytes": 17115,
+    "sha256": "698048e7db3a0549602cca7b5343a0e58d56a91bfeb5b73478e13485cc8d88d0"
+  },
+  "review_output": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_escape_review/run01/stdout.json",
+    "bytes": 6709,
+    "sha256": "922796a21c3fd00fd19e9159a74aa3c70685f30b8838046b75dee2476770ceed"
+  },
+  "review_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_escape_review/INDEPENDENT_DERIVATION_BEFORE_CHECKER.md",
+    "bytes": 9514,
+    "sha256": "94958a7fbbb72873cf81f3838ed2a97f5aa4b4f51eab161aeec6d774cf9565c8"
+  },
+  "prior_root_author_read": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/RESONANT_AUTHOR_ROOT_READ.json",
+    "bytes": 11837,
+    "sha256": "27b1482a475c80aa8dd6072f8db0a14075a48115d5f6b34d409a6e6b86c56485"
+  },
+  "root_read": "Complete frozen candidate and author checker/launcher/output from prior root read, complete new review and pre-checker derivation, independent checker/launcher/plan and full scientific stdout. Large binding arrays were mechanically checked in full; truncated metadata display was not treated as completed validation.",
+  "mathematical_judgment": [
+    "Real-band L2 replacement uses the actual outgoing phase conjugate(Df)/Df and retains exact cosine time evolution. No unbounded affine-time error is hidden.",
+    "Finite lower rectangles have correct Fourier half-line signs and clockwise residue orientation. Hilbert-space edge estimates use finite partial sums and an integrable y^-1/2 endpoint bound.",
+    "Density comparison uses an analytic auxiliary D0sharp, not an analytic continuation of conjugation or of the installed matrix resolvent. The emitter residue coefficient is +1/N.",
+    "All seven complementary emitter coordinates, all closed clock tails and the within-parity operator factor are paid. The actual normalized restricted waveform, point-spectrum seed discrepancy, old aging and scalar remain.",
+    "Prepared-sector radius19 and graph distance M-13 support only the declared finite horizon."
+  ],
+  "scope": {
+    "kappa": "1e-12",
+    "sigma": "1e-6",
+    "L": 12,
+    "T": "1e24",
+    "infinite_complete_error_strict_upper": "0.003831",
+    "M": "5e25",
+    "finite_horizon": "[1e24,2e24]",
+    "finite_complete_error_strict_upper": "0.004831",
+    "apparatus": "Same exact nominal supplied positive two-body emitter apparatus"
+  },
+  "preserved_failures": [
+    "Reciprocal outgoing phase has defect -2i.",
+    "Reversed density orientation gives -1/N.",
+    "Affine-time phase ceiling at T is 3752638388379/125 and does not justify an all-future comparison."
+  ],
+  "root_bookkeeping_failure": "One read-only inventory query assumed SOURCE_MANIFEST.sources instead of .files and raised KeyError before writing. Correct schema was read and all18 source pairs verified here; no scientific execution was affected.",
+  "limits": [
+    "Same model with substantial inherited authorship/review exposure; root suggested the unproved opposite-pole route.",
+    "Candidate-exposed derivation/run precede author-checker exposure; not blind discovery or full-dependency independence.",
+    "Author prelaunch was serialized and closed, not fsynced; interpreter pin only. Actual CPU pair20/21, wall30.",
+    "Reviewer prelaunch was fsynced; interpreter/SymPy entry/metadata pins do not cover every transitive library byte. CPU30/30,wall45; no RSS cap or measured thread count.",
+    "No new grids, quadrature, enormous-device dynamics or formal verification.",
+    "No changed coupling, static/calibration box composition, optimal runtime, actual exact exponential law, native seed/vacuum/phase supply, fixed finite-device permanence, arbitrary accuracy, reset/reuse or physical Hamiltonian/Record identification."
+  ],
+  "next_decision": "Family PR publication is separate. Seek a coherent resonance-family extension only by rechecking every changed profile, mass, complement, clock-localization and finite-horizon premise; otherwise preserve this fixed-apparatus result without overextending it.",
+  "editable_prompt_files_changed": []
+}

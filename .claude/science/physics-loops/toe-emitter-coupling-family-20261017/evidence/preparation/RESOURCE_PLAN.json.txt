@@ -1,0 +1,12 @@
+{
+  "task": "Local publication draft and static portability checks only",
+  "parent_commit": "0f1022e03dbbed8085035f2a378be8ae1aca02e8",
+  "source_candidate_sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+  "write_boundary": "This emitter_family_publication_draft directory only",
+  "authorized_phases": ["deterministic construction", "hash/byte/AST equivalence", "syntax compilation without execution", "resolver-only transport fixtures", "metadata/link/input closure checks"],
+  "static_subprocess_caps": {"cpu_soft_hard_seconds": [30, 30], "external_wall_seconds": 60, "maximum_attempts_per_phase": 3, "os_memory_cap": null},
+  "planned_future_canonical_caps_not_executed": {"shared_cpu_soft_hard_seconds": [20, 20], "external_wall_seconds": 30, "scientific_function_bodies": 1, "matrix_dimension": 0, "parameter_grid_points": 0, "quadrature_calls": 0, "optimizer_calls": 0, "time_evolution_calls": 0},
+  "forbidden_during_this_task": ["scientific checker execution", "scientific mutations", "worktree writes", "Git mutations", "publication", "audit verdicts", "claim promotion", "model or effort overrides", "subdelegation"],
+  "prelaunch_policy": "Write, flush, fsync and close the actual execution copy, plan and all source/binary bindings before spawning each bounded static subprocess. Preserve each attempt and its complete streams, including failures.",
+  "review_boundary": "The separate family scientific review, root qualification, root transport review, actual canonical execution and final publication gates remain pending. No static check is an independent scientific review."
+}

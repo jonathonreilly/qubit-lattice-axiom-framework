@@ -1,0 +1,119 @@
+{
+  "captured_utc": "2026-10-17T01:11:43.566969+00:00",
+  "author_freeze": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_robustness/FREEZE.json",
+  "worktree_revision_supplied_by_parent": "0e8375354c42963234cc4b15b14ab6bb553c713d",
+  "files": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_robustness/BOUNDS.json",
+      "snapshot": "sources/author/BOUNDS.json",
+      "bytes": 3157,
+      "sha256": "e18d8cff679dcb67c6fdde2a0b05db5d40f35e1a23f6a35da7fd386ecad1c958",
+      "coverage": "complete; prior interval/generic bodies reused with selective premise refresh"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_robustness/CANDIDATE.md",
+      "snapshot": "sources/author/CANDIDATE.md",
+      "bytes": 13522,
+      "sha256": "5d3c2dd41f6af96bf7bd793b5e5cfe39e5d0f5c7c0d16517c95249542cdc81ca",
+      "coverage": "complete; prior interval/generic bodies reused with selective premise refresh"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_robustness/EXECUTION_SOURCE_BINDING.json",
+      "snapshot": "sources/author/EXECUTION_SOURCE_BINDING.json",
+      "bytes": 1425,
+      "sha256": "28e46db96379d12b3535d8739249052d789f0bfd1d1092be734f90eaf8ecab31",
+      "coverage": "complete; prior interval/generic bodies reused with selective premise refresh"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_robustness/SOURCE_PINS.json",
+      "snapshot": "sources/author/SOURCE_PINS.json",
+      "bytes": 1718,
+      "sha256": "6b50a40e1c669b6659ecd6934f1bdcfeef2e82abb4c1215d51e5d071fa1ec739",
+      "coverage": "complete; prior interval/generic bodies reused with selective premise refresh"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_robustness/check_bounds.py",
+      "snapshot": "sources/author/check_bounds.py",
+      "bytes": 4828,
+      "sha256": "19adc9be1ee764005bf390e797b287fff8ad9bb0fa44ab650bed8dfa1418d64c",
+      "coverage": "complete; prior interval/generic bodies reused with selective premise refresh"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_robustness/inputs/CERTIFICATE.json",
+      "snapshot": "sources/author/inputs/CERTIFICATE.json",
+      "bytes": 24275,
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+      "coverage": "complete; prior interval/generic bodies reused with selective premise refresh"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_robustness/inputs/INTERVAL_CANDIDATE.md",
+      "snapshot": "sources/author/inputs/INTERVAL_CANDIDATE.md",
+      "bytes": 23457,
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+      "coverage": "complete; prior interval/generic bodies reused with selective premise refresh"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_robustness/inputs/INTERVAL_REVIEW.md",
+      "snapshot": "sources/author/inputs/INTERVAL_REVIEW.md",
+      "bytes": 19878,
+      "sha256": "a3ab8c94ce4c842980e2144766be0994b5f5d783f29d14d1cd25a7a2567dfe8a",
+      "coverage": "complete; prior interval/generic bodies reused with selective premise refresh"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_robustness/inputs/PRIOR_QUALIFICATION.md",
+      "snapshot": "sources/author/inputs/PRIOR_QUALIFICATION.md",
+      "bytes": 3291,
+      "sha256": "33f4e340f2909d907e4c8fe166c86b306e82e369a6fa3ddb5eca1ab4f19405c8",
+      "coverage": "complete; prior interval/generic bodies reused with selective premise refresh"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_robustness/inputs/THEOREM_V2.md",
+      "snapshot": "sources/author/inputs/THEOREM_V2.md",
+      "bytes": 27028,
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+      "coverage": "complete; prior interval/generic bodies reused with selective premise refresh"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_robustness/FREEZE.json",
+      "snapshot": "sources/author/FREEZE.json",
+      "bytes": 3049,
+      "sha256": "5e526899bf7d17b1546f8eed8497bd48220c3238ffc4b5f186f044613005078a",
+      "coverage": "complete"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/structural_box_scalar_check/EXECUTION.json",
+      "snapshot": "sources/author_run/EXECUTION.json",
+      "bytes": 1306,
+      "sha256": "dc35bc2a3da57facb001be40b548bc15b67cc43d95fecf93eeb2ec1692114295",
+      "coverage": "complete"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/structural_box_scalar_check/stdout",
+      "snapshot": "sources/author_run/stdout",
+      "bytes": 248,
+      "sha256": "2f55cdc9375ab8272d34d8601290fbd3b2ec2ef00a2ebd05b3237df8b21dbccf",
+      "coverage": "complete"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/structural_box_scalar_check/stderr",
+      "snapshot": "sources/author_run/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "coverage": "complete"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "snapshot": "sources/instructions/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "coverage": "complete"
+    },
+    {
+      "source": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "snapshot": "sources/instructions/PHYSICS_CLAIM_REVIEWER_SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "coverage": "complete"
+    }
+  ]
+}

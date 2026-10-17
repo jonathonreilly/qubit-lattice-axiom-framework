@@ -1,0 +1,8 @@
+{
+  "original_run_input_sha256": "fffd7d405935226aba4a5e6528112b984b6dde4580747641159f554e97e2189a",
+  "controlling_source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/THEOREM_V2.md",
+  "controlling_source_bytes": 27028,
+  "controlling_source_sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+  "unified_diff": "--- frozen_run_input/THEOREM.md\n+++ controlling/THEOREM_V2.md\n@@ -58,8 +58,9 @@\n \n     I=[k0-sigma,k0+sigma] subset (0,pi),\n     E(k)=2J(1-cos k),\n-    v=min_I E'(k)>0,       E2=max_I |E''(k)|.                (5)\n-\n+    0<v<=min_I E'(k),      E2>=max_I |E''(k)|.              (5)\n+\n+Here v and E2 are certified lower and upper bounds, respectively.\n The use of one common kinetic packet is essential to the old-independent\n product preparation below. Different total energy bands are allowed:\n lambda_j(k)=b_j+E(k).\n",
+  "qualification": "Original execution pins preserved. Interval code already uses certified lower/upper derivative bounds, with no mathematical path changed by V2."
+}

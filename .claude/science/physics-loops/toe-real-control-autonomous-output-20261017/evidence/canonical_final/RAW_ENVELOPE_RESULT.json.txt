@@ -1,0 +1,10 @@
+{
+  "runner": "scripts/real_control_autonomous_output_2026_10_17.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"completed source-exposed corroboration\",\n  \"author_bodies\": 2,\n  \"shared_limits\": {\n    \"cpu_soft_hard_seconds\": [\n      30,\n      30\n    ],\n    \"external_wall_cap_seconds\": 45,\n    \"wall_enforcement\": \"Required external canonical runner; this class does not implement wall timeout.\"\n  },\n  \"maximum_dense_dimension\": 6,\n  \"weak_historical_clause\": \"budget arithmetic only\"\n}\nper_element: checked positive real local cells and explicit signed-core identities; no native physical realization was executed.\nper_site: checked finite site loads and ordinary NN prefixes; arbitrary-size geometry follows the separately preserved proof.\nper_mode: checked chiral sectors, literal old witnesses and local exit Gram identities; inherited spectral modes were not replayed.\nper_block: checked exact finite local matrices and sparse Pauli columns; the supported ramp theorem is analytical, not the budget clause.\nlattice_wide: analytical source scope checked; huge finite/infinite dynamics not executed, and complete-output horizons remain conditional on preserved proofs.\n",
+  "stderr": "",
+  "elapsed_sec": 0.8179440498352051,
+  "timeout_sec": 45,
+  "live_log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/.in-progress/real_control_autonomous_output_2026_10_17.txt"
+}

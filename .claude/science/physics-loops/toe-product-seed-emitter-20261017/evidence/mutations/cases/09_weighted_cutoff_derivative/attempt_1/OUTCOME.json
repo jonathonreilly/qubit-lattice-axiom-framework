@@ -1,0 +1,154 @@
+{
+  "exception_type": "AssertionError",
+  "exception_message": "cutoff_and_quotient_derivative",
+  "traceback_frames": [
+    {
+      "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/09_weighted_cutoff_derivative/attempt_1/case_harness.py",
+      "lineno": 52,
+      "name": "<module>",
+      "line": "result=function(inputs)"
+    },
+    {
+      "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/09_weighted_cutoff_derivative/attempt_1/executed_helper.py",
+      "lineno": 169,
+      "name": "run_weighted_reviewer",
+      "line": "identity('cutoff_and_quotient_derivative', s.diff(f_expr, t) - f_derivative)"
+    },
+    {
+      "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/09_weighted_cutoff_derivative/attempt_1/executed_helper.py",
+      "lineno": 110,
+      "name": "identity",
+      "line": "require(name, simplified == 0)"
+    },
+    {
+      "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/09_weighted_cutoff_derivative/attempt_1/executed_helper.py",
+      "lineno": 105,
+      "name": "require",
+      "line": "assert bool(condition), name"
+    }
+  ],
+  "selected_function_elapsed_seconds": 0.30713600013405085,
+  "actual_process_limits": {
+    "cpu_soft_hard_seconds": [
+      60,
+      60
+    ],
+    "external_wall_cap_seconds": 60,
+    "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+  },
+  "resolved_input_reads": [
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "SOURCE_PINS.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/SOURCE_PINS.json",
+      "sha256": "04f4b586dba144f9c8830be1f23346860a3fc017a86a68a67084c55582ec1c50"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/BOUNDS.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/BOUNDS.json",
+      "sha256": "c87b11324584d3cc461010b155644f3e4d25201ec0267ad14158f8cd0c50d6b5"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/CANDIDATE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/CANDIDATE.md.txt",
+      "sha256": "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/EXECUTION.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/EXECUTION.json",
+      "sha256": "3be3665de14a5961f7cbda7d589f4925eb0aea96bd12f7a08fce76501315a174"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/SOURCE_PINS.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/SOURCE_PINS.json",
+      "sha256": "4d5178221ee4a48e89f79aba7a6d4f9d755c29ef674a7930e81fe0ff2781e376"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/check_bounds.py",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/check_bounds.py",
+      "sha256": "0be886d71839040982f0b372d39450a88166e1624b116a14d54442dc681490af"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/inputs/EMITTER_ROUTE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/EMITTER_ROUTE.md.txt",
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/inputs/INSTALLED_CANDIDATE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CANDIDATE.md.txt",
+      "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/inputs/INSTALLED_CERTIFICATE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CERTIFICATE.json",
+      "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/inputs/PACKET_THEOREM.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/PACKET_THEOREM.md.txt",
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/run_check.py",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/run_check.py",
+      "sha256": "7850555720d04de4c9b8f60ae44ccb323820963094f9f4caa85331e21c70eedb"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/stderr",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/stdout",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/stdout",
+      "sha256": "736db8ba5f90cbd4823516f484b8a1b572622b9aa0af22639034cde743c31407"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/FREEZE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/FREEZE.json",
+      "sha256": "6db59cab5cb3537070f8e29890fc4d93b38b353a87632b174b759ca1722a2198"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/prior_review/REPORT.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/prior_review/REPORT.md.txt",
+      "sha256": "e4eec63593ce9f04cee67ef9734d570db1d6cd29886190a44be8f817a541ae7f"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/instructions/SCIENCE_WORKFLOW.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/instructions/SCIENCE_WORKFLOW.md.txt",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/inputs/INSTALLED_CERTIFICATE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CERTIFICATE.json",
+      "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+    }
+  ],
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "loaded_scientific_modules": {
+    "sympy": {
+      "version": "1.14.0",
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+    },
+    "mpmath": {
+      "version": "1.3.0",
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/__init__.py"
+    }
+  }
+}

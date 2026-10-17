@@ -1,0 +1,142 @@
+INDEPENDENT ADVERSARIAL CHECK -- Majorana-per-direction cubic fermion code
+Note: docs/MAJORANA_PER_DIRECTION_CUBIC_FERMION_CODE_HAS_ONE_SPECIES_COVARIANT_UNDER_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md
+Date: 2026-10-17.  Checker: Claude Opus 5.5 subagent (fresh context, same model family as the author, so not
+an independent model).  Own code first, written from the definitions. The campaign runner and the c12
+scripts were opened only after all of the results below existed (that was needed for the item-7 diagnosis).
+
+FILES (this directory)
+  mpd_core.py               exact Pauli algebra (bitsets, phase i^k), Majoranas, generators, tableau, O and O_h
+  check1_sectors.py         (1)  -> out_check1.txt   ; xcheck_rank_numpy.py (independent GF(2) rank)
+  check1b_oddL.py           finite-size remark -> out_check1b.txt
+  check2_tjunction.py       (2)  -> out_check2.txt
+  check3_rotations.py       (3)+(5) -> out_check3.txt  (~5 min)
+  check4_grouplaw.py        (4)  -> out_check4.txt
+  check7_fractionalization.py [L]  (7) -> out_check7_L10.txt, out_check7_L12.txt
+  check7b_inconsistent_eps.py  control -> out_check7b.txt
+  check7c_dressed_pair.py      diagnostic -> out_check7c.txt
+Conventions: gamma_{v,d} with d = (+x,+y,+z,-x,-y,-z) -> JW index 0..5; B_v = i*gamma_0..gamma_5 = Z1Z2Z3
+exactly. S_p = A(v,a)A(v+a,b)A(v+b,a)A(v,b) (the ordered product; cyclic shifts and reversal give the same
+operator). Sectors = signs (s_yz, s_zx, s_xy). Group membership with sign comes from an exact echelon tableau,
+and its rank was cross-checked against numpy GF(2) elimination.
+
+(1) SECTORS. CONFIRMED.
+  L=4 and L=6: all 8 sectors give Hermitian, pairwise commuting generators, the group does not contain -I,
+  and log2 dim = 3. The same holds at L=2 and L=8.
+  Remark (outside the note's stated scope, but relevant to "8 translation-invariant sectors"): on ODD L
+  (3, 5, 7) only +++ is consistent. The other 7 sectors, including the uniform --- sector, contain -I, and
+  +++ has log2 dim 2. So "8 sectors / two uniform sectors / dim 3" holds on even tori only.
+
+(2) T-JUNCTION. CONFIRMED.
+  At L=5 (legs of length 2), L=6 (2), L=7 (3) and L=10 (4), every straight leg commutes with all S_p and
+  flips B at {o, end} only. W1W2W3 = s W3W2W1 gives s = -1 for 20 of 20 triples. The bosonic control gives
+  +1 for 20 of 20.
+  The result is structural: each leg holds exactly one Majorana at the junction, gamma_{o,d}, and these are
+  pairwise anticommuting and distinct.
+
+(3) ROTATION COVARIANCE. CONFIRMED, and it holds more widely than stated.
+  - All 24 rotations x 32 admissible eps preserve the signed groups of +++ and --- at L=4 AND L=6.
+    Every generator image was checked, with its sign.
+  - B_v -> +B_{Rv} exactly.
+  - Non-uniform sectors go to the sector with permuted orientations.
+  - The 32 non-admissible eps never preserve the group, because they send B -> -B.
+  - The 24 improper elements (O_h \ O), with the same determinant-type eps condition, also preserve the
+    uniform groups in 1536 of 1536 cases. So the code is O_h-covariant with unitary on-site Cliffords; the
+    note understates this.
+  - The check is close to a tautology. With translation-invariant eps, every plaquette contains each of its
+    Majorana directions exactly twice, so S_p -> (prod eps^2) S_{Rp} = S_{Rp} for ANY eps, and
+    B -> (prod eps)(sgn) B. The 24 x 32 scan therefore confirms a two-line argument.
+
+(4) GROUP LAW. CONFIRMED.
+  - Sizes over the 1024 (C4, C3) eps choices: 48 occurs 128 times, 192 occurs 384 times, 768 occurs 512
+    times. All of them contain -1.
+  - In the 128 order-48 groups the kernel onto O is exactly {+1, -1}. Every axis-C2 lift squares to +1 and
+    every edge-C2 lift squares to -1.
+  - The squares are forced. Over all admissible lifts, axis C2 squares are +1 (24) or not +-1 (72), never
+    -1. Edge C2 squares are -1 (48) or not +-1 (144), never +1.
+  - Addition: all 128 groups have element orders {1:1, 2:7, 3:8, 4:24, 6:8}, with no element of order 8.
+    The even part is A4 x Z2. The group is A4 x| Z4, the extension pulled back from sgn: S4 -> Z2. It is
+    NOT the spin double cover 2O (which has order-8 elements and axis-C2 lifts of order 4), and NOT GL(2,3).
+    The note's phrase "central extension of O by fermion parity" is true but unspecific; it should name
+    this class.
+
+(5) INTERPRETATION ATTACK.
+  - Locality: legitimate. Every (R, eps) is implemented by an explicit 8x8 on-site unitary (built and
+    checked), which is a 3-qubit Clifford, composed with a permutation of site blocks. That is a strictly
+    on-site symmetry. However, 736 of the 768 on-site Cliffords are ENTANGLING: every non-identity
+    rotation needs one. A bare permutation of the 3 site qubits implements only the identity rotation.
+  - "One species": fine as worded. B-violations are the only point charge; plaquette violations form
+    loops. The single species maps to itself.
+  - Overreach in the interpretation section. "The species count is a statement about the symmetry action"
+    is not established. The comparison changes two things at once:
+      (a) the encoding: 3 qubits per site with Majoranas per direction, versus BKSF qubits on edges;
+      (b) the action: entangling on-site Cliffords, versus bare permutations.
+    The BKSF companion's independent check had already allowed per-edge single-qubit Cliffords without
+    success. It is not shown that the BKSF code itself becomes O-invariant under some local Clifford
+    action. So the evidence is: this different encoding, with a different kind of action, is covariant.
+  - The Majorana-level extension is not the emergent fermion's fractionalization; see (7). The note
+    correctly makes no fractionalization claim.
+  - Scope caveat: (1) needs even L; see the remark there.
+
+(6) PRIOR ART. The "new here" claim is weak.
+  Access caveat: arxiv.org, APS, Semantic Scholar and INSPIRE are blocked by this session's egress policy.
+  The judgments below come from search-engine abstracts and snippets, not full texts.
+  - The code is standard. It is the Majorana-per-edge-end ("Gamma-model") bosonization on the cubic
+    lattice: Bravyi-Kitaev 2002 in Majorana form, the GSE of Setia-Bravyi-Mezzacapo-Whitfield 2019, and
+    Levin-Wen PRB 67, 245316 (2003), whose exactly soluble 3D examples use string hopping operators of
+    this type (I recall that structure but could not open the full text). Here the vertex parities are
+    imposed as stabilizers, which gives Z2 gauge theory with a fermionic charge.
+  - Closest prior art, which the note does not cite: K. Li and H. C. Po, "Higher-dimensional Jordan-Wigner
+    transformation and auxiliary Majorana fermions", PRB 106, 115109 (2022), arXiv:2107.14083. Its
+    abstract describes a JW/bosonization on 2D and 3D lattices of even coordination that "keeps internal
+    and spatial symmetries manifest", worked out for the CUBIC lattice, built from a "Gamma model" of
+    auxiliary Majoranas, with an analysis of how the symmetries act. Also relevant: H. C. Po,
+    arXiv:2107.10842 (symmetric JW, 4-coordinated lattices). Manifest point-group covariance of this
+    construction with on-site Majorana-permutation actions is therefore essentially known.
+  - The citation of Wu-Arovas-Hung is off target for the cubic case. Their 3D example is the DIAMOND
+    lattice with 4x4 Gamma matrices, as is Ryu's. Neither is the cubic six-Majorana code.
+  - Honest residual novelty: (i) the explicit exact finite check; (ii) the explicit order-48 group count
+    and its identification as A4 x| Z4, which may or may not be in Li-Po (not verifiable here); (iii) the
+    repository-internal contrast with the BKSF orbit result. Recommendation: cite Li-Po and Levin-Wen,
+    downgrade "new here", and state that (3) follows from a two-line structural argument.
+
+(7) FRACTIONALIZATION eta_f(C2, C2). Result under the prescribed pair test.
+  Setup:
+  - The eps come from each of the 128 consistent order-48 groups, with both lifts of every C2.
+  - All 3 axis C2 and all 6 edge C2 rotations, about the origin site.
+  - 5 positions x per C2 class, with separation at most 4 (below half the torus).
+  - 8 paths per pair: 6 Manhattan orders plus 2 detours.
+  - Sectors +++ and ---, at L = 10 and L = 12.
+  - Pair creator S = product of A along the path. S and S^R were verified to have exactly the syndrome
+    {B_x, B_Rx} and no plaquette violations.
+  Result: lambda = sign(S^dag S^R) = -1 in EVERY case (L=10: 28672 axis and 61440 edge evaluations; the
+  same at L=12). Conjugate elements agree.
+  => eta_f(axis C2) = eta_f(edge C2) = -lambda = +1.
+  Hand derivation for axis C2 about z, x = (1,0,0), path through the origin: S = A1 A2 and S^R = A2 A1 =
+  -S, so lambda = -1 independently of eps.
+  This is the trivial pattern on the order-2 data. It is not spin-1/2-like (2O would give -1, -1), and it
+  is not the Majorana-level pattern (+1, -1). The naive reading "U_R^2 = (-1)^F, so the edge C2 is
+  Kramers-like on f" is wrong here.
+  Controls:
+  - (7b) Admissible but group-inconsistent eps for an edge C2: 16 of 32 choices give a lambda that depends
+    on the pair or path. The consistent-group requirement is load-bearing.
+  - (7c) A creator dressed with flux, S = gamma_{x,d} gamma_{Rx,Rd} (8 violated plaquettes), gives
+    lambda = +1 for an axis C2. So lambda is canonical only when S creates the bare B-violations.
+  Note on the campaign's preliminary result. The c12 README reports "axis C2 lambda = +1" at L = 8. After
+  finishing, I looked at gse_pair2.py. Its solver drops the commutation constraint for plaquettes within
+  L_inf <= 1 of the endpoints, so it can return flux-dressed creators. That reproduces exactly the +1 of
+  (7c). Its separations of 3 to 5 at L = 8 also reach half the torus. I expect the bare-fermion answer to
+  be lambda = -1, eta = +1 for both classes.
+  Caveat: eta = -lambda assumes the standard relation lambda = theta * eta for a C2-exchanged pair. I did
+  not fix the fractionalization class beyond the C2 squares (C4 and C3 data were not computed).
+
+VERDICTS
+  (1) PASS on even L (L = 2, 4, 6, 8). On odd L only +++ is valid, with dim 2.
+  (2) PASS (structural).
+  (3) PASS; it extends to O_h; it is nearly a tautology.
+  (4) PASS, all numbers reproduced. The group is A4 x| Z4, not 2O.
+  (5) The locality claim holds (on-site, but entangling, Cliffords). "Species count is a statement about
+      the action" is overreach, because the encoding changes as well.
+  (6) "New here" is weak or largely known. Missing citation: Li & Po PRB 106, 115109 (2022). The cubic
+      case in the Wu-Arovas-Hung citation is misattributed (their 3D example is diamond).
+  (7) eta_f(C2,C2) = +1 for both axis and edge C2, robustly. This conflicts with the campaign's
+      preliminary axis-C2 lambda = +1, which is explained by flux-dressed pair creators.

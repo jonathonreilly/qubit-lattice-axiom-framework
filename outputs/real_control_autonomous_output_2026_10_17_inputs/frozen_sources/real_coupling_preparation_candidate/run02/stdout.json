@@ -1,0 +1,529 @@
+{
+  "status": "exact local corroboration passed; conditional theorem still requires separate review",
+  "checks": [
+    {
+      "name": "exact_trigonometry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive_c_s_and_d",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_family_onsite_coefficients_positive",
+      "passed": true,
+      "detail": "affine decreasing in kappa; checked at exact upper endpoint"
+    },
+    {
+      "name": "isolation_norm_sum_less_than_one_seventh",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "supported_shift_less_than_one_eighth",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "literal_K_W_unitarity_and_commutation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive_real_cells_and_complements_full_four_space",
+      "passed": true,
+      "detail": "spectrum 0,0,2w,2w; w>=0"
+    },
+    {
+      "name": "three_real_positive_pulses_exact_chiral_state_and_common_phase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pulse_generators_positive_on_core",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wrong_exchange_sign_selects_orthogonal_chirality",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pulse_area_and_C1_endpoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cubic_ramp_areas_and_C1_endpoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_pulse_peak_and_slew",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ramp_derivative_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_control_load_and_work_ceilings",
+      "passed": true,
+      "detail": "uses elementary pi<22/7 and sqrt(3)<7/4, not floating-point ceilings"
+    },
+    {
+      "name": "M16_core_old0_position4_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_core_old0_position20_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_core_old0_position5_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_seed_old0_emit4_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_seed_old0_emit5_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_old0_complete_rail_exit_Gram",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_core_old1_position4_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_core_old1_position20_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_core_old1_position5_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_seed_old1_emit4_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_seed_old1_emit5_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_old1_complete_rail_exit_Gram",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_core_old2_position4_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_core_old2_position20_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_core_old2_position5_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_seed_old2_emit4_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_seed_old2_emit5_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_old2_complete_rail_exit_Gram",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_core_old3_position4_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_core_old3_position20_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_core_old3_position5_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_seed_old3_emit4_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_seed_old3_emit5_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_old3_complete_rail_exit_Gram",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_omit_pin_nonflat_discriminator",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_full_space_identity_coefficients",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_positive_runtime_block_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_runtime_positive_norm_sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_isolation_positive_norm_sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_old_source_untouched",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_old_added_incident_cap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_emitter_runtime_incident_loads",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_mediator_runtime_incident_load",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_combined_mediator_load",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M16_combined_emitter_loads",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_core_old0_position4_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_core_old0_position20_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_core_old0_position5_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_seed_old0_emit4_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_seed_old0_emit5_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_old0_complete_rail_exit_Gram",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_core_old1_position4_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_core_old1_position20_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_core_old1_position5_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_seed_old1_emit4_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_seed_old1_emit5_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_old1_complete_rail_exit_Gram",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_core_old2_position4_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_core_old2_position20_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_core_old2_position5_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_seed_old2_emit4_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_seed_old2_emit5_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_old2_complete_rail_exit_Gram",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_core_old3_position4_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_core_old3_position20_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_core_old3_position5_full_Pauli_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_seed_old3_emit4_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_seed_old3_emit5_supported_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_old3_complete_rail_exit_Gram",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_omit_pin_nonflat_discriminator",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_full_space_identity_coefficients",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_positive_runtime_block_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_runtime_positive_norm_sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_isolation_positive_norm_sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_old_source_untouched",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_old_added_incident_cap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_emitter_runtime_incident_loads",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_mediator_runtime_incident_load",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_combined_mediator_load",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M17_combined_emitter_loads",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_eight_isolation_edges_and_pulse_edges_ordinary_NN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "eight_local_sites_distinct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "five_unit_supported_scalar_phase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_identity_integrated_pulse_scalar",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ramp_error_and_complete_trace_ceiling",
+      "passed": true,
+      "detail": "sqrt(2)*kappa < 2*kappa <= 2e-8; final trace ceiling .00966404"
+    }
+  ],
+  "fixtures": [
+    {
+      "clock_sites_per_rail": 16,
+      "physical_qubits": 38,
+      "dense_Hilbert_space_allocated": false,
+      "maximum_dense_dimension": 4,
+      "core_seed_columns": 12,
+      "Pauli_terms_runtime": 123,
+      "Pauli_terms_isolator": 25,
+      "runtime_blocks_excluding_K": 60,
+      "alpha_R": "137162967977790228868402499737605325459978909153490088565483204*kappa/28470942580001221460551733349533582334670664139372522141370801 + 389462043803044574553607270229569768154399125969/21343267821025428517716464421604000000000000000",
+      "alpha_isolator": "245854993375579236276253266125677068585287154167607654989595607*kappa/56941885160002442921103466699067164669341328278745044282741602 + 20961551136753308770975344974090481737534979/333488559703522320589319756587562500000000000",
+      "runtime_block_norm_sum_excluding_K": "274325935955580457736804999475210650919957818306980177130966408*kappa/28470942580001221460551733349533582334670664139372522141370801 + 62852193231665698907019198002564105793863323361/1333954238814089282357279026350250000000000000",
+      "source_A_load": "13968112426577929/500000000000000",
+      "source_B_load": "4445781375070661/200000000000000"
+    },
+    {
+      "clock_sites_per_rail": 17,
+      "physical_qubits": 40,
+      "dense_Hilbert_space_allocated": false,
+      "maximum_dense_dimension": 4,
+      "core_seed_columns": 12,
+      "Pauli_terms_runtime": 129,
+      "Pauli_terms_isolator": 25,
+      "runtime_blocks_excluding_K": 62,
+      "alpha_R": "137162967977790228868402499737605325459978909153490088565483204*kappa/28470942580001221460551733349533582334670664139372522141370801 + 3125948326892661778519597538463292471884810917/170746142568203428141731715372832000000000000",
+      "alpha_isolator": "245854993375579236276253266125677068585287154167607654989595607*kappa/56941885160002442921103466699067164669341328278745044282741602 + 20961551136753308770975344974090481737534979/333488559703522320589319756587562500000000000",
+      "runtime_block_norm_sum_excluding_K": "274325935955580457736804999475210650919957818306980177130966408*kappa/28470942580001221460551733349533582334670664139372522141370801 + 63012380363982967377187000762356829647763603193/1333954238814089282357279026350250000000000000",
+      "source_A_load": "13968112426577929/500000000000000",
+      "source_B_load": "4445781375070661/200000000000000"
+    }
+  ],
+  "exact_constants": {
+    "c": "18299308669488507201693501138731582334670664139372522141370801/28470942580001221460551733349533582334670664139372522141370801",
+    "s": "21811232739405385771956015380537498060648126298000000000000000/28470942580001221460551733349533582334670664139372522141370801",
+    "d": "68581483988895114434201249868802662729989454576745044282741602/28470942580001221460551733349533582334670664139372522141370801",
+    "E0": "30021107107032000000000000000/5335816955256357129429116105401",
+    "cR": "137162967977790228868402499737605325459978909153490088565483204*kappa/28470942580001221460551733349533582334670664139372522141370801 + 1459892813020969/500000000000000",
+    "cseed": "137162967977790228868402499737605325459978909153490088565483204*kappa/28470942580001221460551733349533582334670664139372522141370801 + 7804731378127701091549647947864469518627153569/2667908477628178564714558052700500000000000000",
+    "r": "205744451966685343302603749606407988189968363730235132848224806*kappa/28470942580001221460551733349533582334670664139372522141370801 + 3752638388379/31250000000000",
+    "Ciso": "342907419944475572171006249344013313649947272883725221413708010*kappa/28470942580001221460551733349533582334670664139372522141370801 + 8125105642762238031885253467449917226427713233/2667908477628178564714558052700500000000000000",
+    "Aiso": "245854993375579236276253266125677068585287154167607654989595607*kappa/28470942580001221460551733349533582334670664139372522141370801 + 20961551136753308770975344974090481737534979/166744279851761160294659878293781250000000000",
+    "setup_error_upper": "sqrt(2)*kappa",
+    "setup_scalar": "5*cseed+4*r+3*pi/4"
+  },
+  "limits": {
+    "cpu_soft_hard_seconds": [
+      20,
+      20
+    ],
+    "external_wall_seconds": 30,
+    "max_dense_dimension": 4,
+    "sparse_clock_lengths": [
+      16,
+      17
+    ],
+    "max_physical_qubits": 40,
+    "seed_columns_per_fixture": 12,
+    "scientific_point_grids": 0,
+    "optimizers": 0,
+    "quadrature": 0,
+    "dynamics_steps": 0,
+    "inherited_scientific_checker_replays": 0,
+    "symbolic_kappa": true
+  },
+  "runtime": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "sympy": "1.14.0",
+    "elapsed_seconds_after_import": 0.24057466676458716
+  },
+  "executed_source_sha256": "70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0",
+  "scope": "Finite exact corroboration and discriminators; not an independent scattering replay or a substitute for all-M analytical proof."
+}

@@ -1,0 +1,31 @@
+{
+  "authority": "Direct parent/root task message during final freeze; exact acceptance read to locate its review references and all four file identities hash-checked. Review and qualification arguments not newly analytically reviewed by packager.",
+  "canonical_metadata_policy": "Leave current draft calculation closure and frozen body unchanged. Root integrates separate qualification/evidence surfaces and status updates later.",
+  "canonical_scientific_execution": "not_performed",
+  "observed_utc": "2026-10-17T03:21:55.200684+00:00",
+  "reported_scope": "Family science conditionally qualified for reuse/publication preparation; not canonical execution or PR approval",
+  "root_transport_approval": "pending",
+  "scientific_mutations": "not_performed",
+  "sources": [
+    {
+      "bytes": 10085,
+      "relative_to_campaign": "emitter_family_root_qualification/ACCEPTANCE.json",
+      "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325"
+    },
+    {
+      "bytes": 2896,
+      "relative_to_campaign": "emitter_family_root_qualification/QUALIFICATION.md",
+      "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814"
+    },
+    {
+      "bytes": 35719,
+      "relative_to_campaign": "emitter_resource_family_review/REPORT.md",
+      "sha256": "053e40728f0336c3a5b5409f8c3ba96bd4d8acb96bf0a57192483a28f4099d3a"
+    },
+    {
+      "bytes": 3029,
+      "relative_to_campaign": "emitter_resource_family_review/FREEZE.json",
+      "sha256": "3e8f94554835dfa6a1775a2b45fd1b8d244cda63614adf1ff8eddcc4a8c6456b"
+    }
+  ]
+}

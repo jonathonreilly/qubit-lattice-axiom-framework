@@ -1,0 +1,28 @@
+# Preserved failed routes and execution record
+
+There was one scientific run, `run01`, which exited zero. It had no retry,
+discarded candidate or failed scientific stream. Both complete stderr files
+are retained and empty. This does not establish independent qualification.
+
+The unchanged earlier absolute estimates fail to fit the new uniform target
+budget at kappa=1e-8: one cutoff L2 allowance is 0.0016 and the absolute clock
+allowance is 0.00153. These are failures of sufficient estimates, not actual
+error lower bounds or impossibility claims. Using 30sigma for the scalar
+background amplitude would cost 0.001395 after its column factor, also too
+large. The new proof pays directional cutoff variation and a separate scalar
+amplitude instead.
+
+The exact script preserves the reciprocal-phase residual -2i and the
+endpoint-omission countercase: integral from 0 to pi of exp(-ik) is -2i even
+though the amplitude derivative is zero. The affine-time phase-error ceiling
+tJ sigma^2 cannot control all future times. No source matrix is analytically
+continued by this route; no unresolved linewidth is sampled.
+
+Before scientific work, a read-only `rg --files` inventory named both
+`resonant_escape_review` and the guessed nonexistent
+`resonant_escape_independent_review`. It listed the real review packet and
+reported the second directory absent. The actual complete report was then
+read at its pinned path. This descriptive recovery record is not represented
+as a saved raw subprocess log. It did not change or execute a source.
+
+No further scientific computation occurred after the sole planned run.

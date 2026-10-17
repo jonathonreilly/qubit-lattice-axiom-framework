@@ -1,0 +1,421 @@
+---
+claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+source_status: root_candidate_pending_independent_check
+native_preparation_claim: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+---
+
+# A finite thermal seed and bounded release with the emitter Hamiltonian left installed
+
+This is a proposed conditional construction, not a source acceptance, physical
+cooling model, or audit verdict. It was derived by root without seeing the
+separately assigned preparation derivation. A source map and freeze record
+will bind its exact dependencies. No scientific program has run for this
+candidate at the time this body is first written.
+
+## 1. Question, prior work and exact domain
+
+PR9665 supplies a finite autonomous runtime from an independently pure excited
+emitter, an empty clock and two empty source qubits. The new question is whether
+that input can be replaced by a finite-temperature auxiliary delivery, and
+whether positive local preparation controls can be released into the same
+runtime without an error proportional to the enormous clock length.
+
+The answer proposed here is conditional on additional positive local controls
+and a genuine Gibbs-marginal delivery. Those permissions are not consequences
+of the minimal axioms. They remain separate from the approved scale reference,
+kinetic-form isotropy and pointwise realized-state primitives. No axiom,
+primitive, physical Hamiltonian identification, thermalization mechanism or
+Record law is added. The registered primitives and their current source notes
+were read. They do not select the local coefficients, a temperature, this
+initial state, or a physical controller.
+
+The main mathematical runtime source is
+`docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md` at
+PR9665/head `0e3993770a7a2dd872018f9dd3c76c2d9a624db9`, SHA256
+`f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87`.
+The full physical blocks are also explicitly given in the product-seed and
+two-body autonomous-halt notes in that exact checkout. The runtime remains
+provisional conditional mathematics; publication is not retained audit.
+
+The existing local Gibbs-controller source already proves a supplied
+Hamiltonian-to-Gibbs-to-complete-reference interface. Its weighted unary
+ground-state engineering is not needed for a product seed. Its sharp
+correlated-reference estimate is credited and rederived below. The
+product-source controlled-stop note already uses state-supported Duhamel
+comparisons during ramps, but for a different weak-mediator device and an
+already pure source. It supplies neither the thermal input nor this emitter
+release. The present proposed gain is their compatible use with a new
+interacting, gapped seed Hamiltonian and the actual finite emitter. This is
+not an exhaustive novelty claim. The bounded search and reading record are
+preserved separately.
+
+Let M>=16 be the actual fixed number of clock qubits. Keep the two old sites,
+two sources A,B, emitter e, bent clock geometry and every finite endpoint
+diagonal of PR9665. There are N=M+3 auxiliary qubits (clock, A,B,e), and M+5
+device qubits including the old pair. No inventory grows after design.
+All additional retained factors, including a preparation bath or apparatus
+output if present, may be in an arbitrary passive reference R. They are
+retained, not traced out to assert a complete-output result. During the
+release and runtime, their interactions must be absent or explicitly charged.
+The old input may be mixed and entangled with R.
+
+Use exactly K=2I+Z1 Z2 and W=((9+12i)I+(-16+12i)X1 X2)/25. All terminating
+decimals in the runtime's parameter table are exact. In particular
+
+    J=0.030021107107032, nu=1.459892813020969,
+    gA=0.996878563816670, gB=0.599319315560298,
+    q0=4.510351185997098,
+    E0=4J/(q0^2+1), L=12, phi=4 arctan(1/q0),
+    10^-12 <= kappa <= 10^-8, sigma=10^-6.
+
+All Hamiltonian times, energies, inverse temperatures and derivative caps are
+in the declared model units. No physical temperature or seconds conversion
+is derived by this construction.
+
+## 2. The complete finite physical Hamiltonian
+
+Put n_j=(I-Z_j)/2 and a_j=|0><1|_j. Write
+
+    G_A=gA n_A(I+X1), G_B=gB n_B(I+X2), G=G_A+G_B,
+    b_A=2gA, b_B=2gB,
+    C=DeltaA n_A+DeltaB n_B
+      +hAB(n_A+n_B-a_A^dagger a_B-a_B^dagger a_A)+u n_A n_B,
+    Hc=J n_c0+J n_c(M-1)
+       +J sum_(j=0)^(M-2)(n_cj+n_c(j+1)
+                         -a_c(j+1)^dagger a_cj-a_cj^dagger a_c(j+1)),
+    Vc=lambdaA n_c0(I+X_A)+lambdaB n_c1(I+X_B)+mu0 n_c0.
+
+Every term of C,Hc,Vc displayed here is positive. The two finite endpoint
+fields in Hc maintain the same 2J one-head diagonal as the infinite clock.
+Use the runtime's exact DeltaA,DeltaB,hAB,u,lambdaA,lambdaB,mu0 values.
+They are positive. Neither an unspecified new source Hamiltonian nor a
+commutation of K with the interacting old/source Hamiltonian is assumed.
+
+At j=L,L+2 put t_L=kappa, t_(L+2)=-kappa exp(i phi) and
+
+    Q_ej=kappa(n_e+n_cj)+t_j a_cj^dagger a_e
+                           +conj(t_j)a_e^dagger a_cj.
+
+The exact installed full-qubit runtime is
+
+    Hrun=K+C+G+Hc+Vc+nu(I-n_c1)
+         +Q_eL+Q_e(L+2)+(E0-2kappa)n_e
+         +kappa(I-n_cL)+kappa(I-n_c(L+2)).                 (1)
+
+All its terms are positive, E0>2kappa, and Hrun>=K>=I. The pair Q has spectrum
+0,0,2kappa,2kappa. The old/source G_i has spectrum 0,0,0,2g_i.
+The runtime's actual scalar on the one-head sector is nu+2kappa. Equation
+(1), not that restriction, governs preparation and all thermal sectors.
+
+Let Omega be the auxiliary product with e excited and every other auxiliary
+empty, and let E append Omega to the old system. There is an isometry-valued
+map V_seed with V_seed^* V_seed=2I, whose two orthogonal clock locations are
+c_L and c_(L+2), such that
+
+    Hrun E=E[K+c_run I]+kappa V_seed,
+    c_run=E0+nu+2kappa.                                  (2)
+
+V_seed leaves both sources empty and has emitter empty. It has no component
+in ran(E). This follows directly from (1): every term except the old K,
+literal scalar, emitter energy and its two hopping matrix elements is dark
+on E. Equation (2) is a full input-operator identity on the old pair, so it
+remains true with every passive reference. It is stronger than a statement
+about one old basis state or an auxiliary marginal.
+
+## 3. Positive controls selecting the seed while Hrun stays installed
+
+Choose a supplied preparation gap Delta>0. Add the following separate
+positive controls, all on already occupied onsite or NN pair supports:
+
+    b_A I-G_A, b_B I-G_B;
+    2kappa I-Q_eL, 2kappa I-Q_e(L+2);
+    nu n_c1, kappa n_cL, kappa n_c(L+2);
+    Delta n_j for each of the M+2 blank-target qubits j;
+    (E0-2kappa+Delta)(I-n_e).                            (3)
+
+Call their sum A. The complements are positive on their complete pair
+spaces, not just the one-head subspace. They are independently supplied
+controls on the same actual supports. Identity reserves in complements are
+part of the physical implementation. Such complement manufacture is an
+additional permission; an arbitrary physical positive-channel dictionary
+need not provide it. No original term of Hrun is removed or rescaled.
+
+Their exact sum yields
+
+    Hprep=Hrun+A=K+c_prep I+Haux,
+    c_prep=b_A+b_B+nu+E0+4kappa,
+    Haux=C+Hc+Vc+Delta D,
+    D=(I-n_e)+n_A+n_B+sum_j n_cj.                        (4)
+
+Haux acts only on the N auxiliary factors. All its terms are positive and
+annihilate Omega, except that Delta D has exactly that one-dimensional
+kernel. Therefore
+
+    Haux Omega=0, Haux>=Delta D,
+    ker(Haux)=span{Omega}, gap(Haux)>=Delta.              (5)
+
+The clock/source terms need not commute with D: Vc flips a source when its
+clock control is occupied. The argument uses positivity on the whole
+Hilbert space, not a free-particle spectrum or assumed number conservation.
+Only the preparation auxiliary ground is selected. The old system remains
+arbitrary and evolves under literal K. Its ground is neither selected nor
+required. The complete Hprep is not asserted to have a unique full-device
+ground.
+
+This limited cancellation is important. Canceling every clock bond would
+also be a possible supplied construction, but would add extensive
+compensator reserves unnecessarily. Here only the two old/source ports and
+two emitter bonds are complemented. The interacting positive clock/source
+Hamiltonian remains in Haux.
+
+## 4. A full-sector thermal certificate
+
+Supply the finite auxiliary marginal Gamma_beta=exp(-beta Haux)/Z at beta>0,
+or a delivered marginal within half-trace distance eta_delivery of it.
+This is a delivery promise, not a cooling theorem or a product-state
+assumption. Since Hprep separates old and auxiliary dynamics, isolated
+preparation at a known elapsed duration can keep old K literal. Any actual
+bath coupling must be auxiliary-only for that older-input conclusion; the
+general theorem compares with the actual old/reference marginal at release.
+
+Let lambda_j be the increasingly ordered 2^N eigenvalues of Haux and d_j
+those of D, with multiplicities. The min-max principle and (5) give
+lambda_j>=Delta d_j. The eigenvalues d_j are the binomial list 0,...,N,
+with multiplicities choose(N,k). Scalar exponential monotonicity on these
+ordered eigenvalues, not a false operator-exponential monotonicity claim,
+gives, for q=exp(-beta Delta),
+
+    1 <= Z <= sum_k choose(N,k) q^k=(1+q)^N,
+    d_thermal=1-<Omega|Gamma_beta|Omega>
+             =1-1/Z <=1-(1+q)^(-N) <=N q.               (6)
+
+The last inequality follows from convexity of (1+q)^(-N), whose tangent at
+zero is 1-Nq. The estimate includes every excitation sector and every
+noncommuting source-clock interaction. It does not assert a product Gibbs
+law or identify the actual spectrum with Delta D. The finite-beta state is
+mixed. The sufficient inverse temperature scales logarithmically with the
+finite auxiliary count at a fixed supplied Delta and error budget; no
+equilibration-time conclusion is drawn.
+
+One useful mean-energy bound also follows without replacing that spectrum.
+If beta Delta>=1, x exp(-beta x) is nonincreasing for x>=Delta. The positive
+eigenvalue lambda_j associated by order with k>=1 is at least Delta k.
+Consequently
+
+    E_aux=Tr(Gamma_beta Haux)
+      <=Delta N q(1+q)^(N-1).                           (7)
+
+Here the numerator is bounded term by term and Z>=1 is used. If Nq<=r<1,
+then E_aux<=Delta r exp(r)<=Delta r/(1-r). This is a nominal Gibbs mean,
+not a general mean bound from trace distance alone. For a merely nearby
+delivered marginal, a sufficient extra allowance is
+2||Haux|| eta_delivery; no small trace distance is silently upgraded into
+a dimension-free energy certificate. Alternatively supply its actual mean.
+
+Every old/reference extension rho_aux,old,R with that delivered marginal
+satisfies d=1-Tr(P_Omega rho_aux)<=min(1,Nq+eta_delivery). Let rho_old,R be
+its exact unconditioned marginal. The known sharp pure-factor estimate gives
+
+    ||rho-P_Omega tensor rho_old,R||_1
+      <=g(d):=d+sqrt[d(4-3d)] <=3sqrt(d).                (8)
+
+For completeness, purify rho by retaining a further factor and split the
+pure vector into sqrt(1-d)|Omega>u+sqrt(d)v with v orthogonal to Omega in
+the auxiliary factor. Its reference marginal is (1-d)|u><u|+d rho_v.
+The full difference from P_Omega times that marginal is the sum of
+-d P_Omega tensor rho_v and a rank-two Hermitian operator on the orthogonal
+vectors |Omega>u,v with matrix [[0,sqrt(d(1-d))],[sqrt(d(1-d)),d]]. Their
+trace norms are d and sqrt(4d-3d^2), respectively. Triangle inequality and
+partial-trace contraction prove (8). The scalar bound is monotone in d on
+[0,1], with the endpoint values interpreted directly. An independent product
+Gibbs delivery instead has the sharper complete error 2d_thermal. A thermal
+marginal alone does not entitle that product estimate. The comparison keeps
+the exact unconditioned old/reference marginal; conditioning it on the good
+subspace would change the target.
+
+## 5. Actual smooth release and its length-independent error
+
+For 0<=s<=tau use a(s)=1-3(s/tau)^2+2(s/tau)^3. Keep a=1 before release
+and a=0 afterwards. The actual Hamiltonian is
+
+    H(s)=Hrun+a(s) A.                                   (9)
+
+It remains a sum of positive onsite/NN pair blocks. All original runtime
+blocks, including K, stay installed. The control is C1 at its joins,
+max|a'|=3/(2tau), and integral_0^tau a(s)ds=tau/2. It is a prescribed
+external release, not a whole-apparatus autonomous controller, band-limited
+drive, or proof of switching manufacture. No drive acts in the subsequent
+runtime interval.
+
+By (2),(4),
+
+    A E=(c_prep-c_run)E-kappa V_seed,
+    H(s)E=E[K+c(s)I]+(1-a(s))kappa V_seed,
+    c(s)=c_run+a(s)(b_A+b_B+2kappa).                     (10)
+
+Define E(s)=E exp[-isK-i integral_0^s c(v)dv]. Its norm is one. Subtract
+its derivative from the actual Schrodinger equation, and apply the unitary
+Duhamel formula. The inhomogeneous term has operator norm exactly
+sqrt(2)kappa(1-a(s)); no commutation of K with Hrun or A is used. Hence
+
+    ||U_release E-E exp(-i tau K-i Phi)||
+       <=sqrt(2)kappa integral_0^tau(1-a(s))ds
+       =kappa tau/sqrt(2),
+    Phi=c_run tau+(b_A+b_B+2kappa)tau/2.                 (11)
+
+This is a complete old-input isometry bound with arbitrary references. Its
+lack of M comes from the exact seed identity, not from dropping extensive
+fields, assuming a typical state or estimating a many-head propagator by a
+one-head operator. Actual finite-temperature inputs are first compared by
+(8), then propagated by the actual full unitary. The two error steps must
+not be reversed to apply (11) directly to all thermal sectors.
+
+The physical scalar and emitter energy during release occur in Phi. During
+the later autonomous runtime, E0 instead enters the actual spectral envelope;
+an extra exp(-itE0) must not be added to the runtime comparator. A long hold
+at Hprep preserves the thermal marginal and has its own old age and scalar
+c_prep times that actual hold duration. Preparation time before release is
+not inferred, zeroed or supplied by this calculation.
+
+## 6. Literal block loads, reserves and slew
+
+The extra incident positive-block norm sums from (3) are
+
+| Site | Extra preparation load |
+|---|---:|
+| old1, old2 | b_A, b_B respectively |
+| A, B | Delta+b_A, Delta+b_B respectively |
+| c1 | Delta+nu |
+| c_L, c_(L+2) | Delta+3kappa |
+| e | Delta+E0+2kappa |
+| every other clock site | Delta |
+
+The sites in these rows are distinct at L=12,M>=16. All maxima occur at
+a=1 because these extra blocks have a common nonnegative envelope. For the
+exact family coefficients, max extra incident load=Delta+b_A. Thus a
+supplied per-site derivative allowance Lambda>0 is met if
+
+    tau >=3(Delta+b_A)/(2 Lambda).                       (12)
+
+The sum of all extra positive-block norms is exactly
+
+    S_A=Delta N+c_prep.                                 (13)
+
+It is an upper bound on ||A||, not necessarily its exact operator norm.
+The coefficient of the full identity in A's Pauli expansion is instead
+
+    alpha_A=[Delta N+3(gA+gB)+nu+E0+4kappa]/2.            (14)
+
+Both differ from the seed expectation b_A+b_B+2kappa. Equation (10) uses
+that actual seed action, including its orthogonal component, rather than
+mistaking any one of these three prices for another. Extensive identity
+pieces of onsite projectors cancel their Z pieces on a blank target; this
+does not discard their norm, load, precision or supplied control cost.
+
+For Delta=1, the largest combined incident block sum is at A and is
+20.332662089993454+1+1.993757127633340=23.326419217626794.
+The old1 added load during preparation becomes 3.987514255266680, with
+the old edge's norm 3 additional. Thus the runtime's added-old-site cap two
+does not hold during this preparation. There is no all-site cap two or free
+compensation. The generic full-space control-calibration allowance remains
+an integral of the actual error norm; arbitrary extensive errors can still
+scale with M. The improved nominal release comparison does not remove that
+physical calibration obligation.
+
+## 7. Complete finite-horizon composition and a sufficient example
+
+For a runtime-certified M and t, let epsilon_halt denote the actual finite
+isometry bound of PR9665. Write U_id,kappa(t) for its full normalized
+half-line comparator, with emitter empty, both sources empty, all clock
+amplitudes, the same zeta and the physical scalar exp[-i(nu+2kappa)t].
+After the release and then t units of actual autonomous runtime, the pure
+seed comparator is
+
+    U_id,kappa(t) exp(-i tau K-i Phi)
+      =zeta exp[-i Phi-i(nu+2kappa)t]
+         beta_kappa,t tensor iota exp(-itK) W exp(-i tau K). (15)
+
+Its old factor is exp[-i(t+tau)K] W because the explicit W commutes with K.
+This never commutes K through the physical interacting evolution. The
+profile beta_kappa,t uses the actual kappa; its time argument is runtime
+since the end of release, not laboratory time t+tau. Its finite comparison
+is embedded into the infinite output space as in the parent theorem. The
+embedding does not discard finite-device outputs or condition on a clock
+position.
+
+Combining (8),(11) with the runtime theorem gives the unhalved complete
+trace-norm bound
+
+    error <=min(2, g(d)+sqrt(2)kappa tau+2epsilon_halt).  (16)
+
+A further supplied release perturbation integral eta_release adds at most
+2eta_release by full-space Duhamel. A runtime perturbation needs its own
+actual-time allowance; static joint-parameter robustness and temporal noise
+are not supplied here. Finite Gibbs input sectors other than one head are
+controlled only through (8); no new runtime theorem on those sectors is
+asserted.
+
+For a concrete proposed allocation, throughout kappa in [10^-12,10^-8],
+choose T=10^6/kappa^2, M=ceil(50T), Delta=1, beta=100, tau=10000 and
+Lambda=10^-3. Take eta_delivery=eta_release=0 for this example. Then
+N<=5*10^31+3, and the elementary e>8/3 yields the rational certificate target
+
+    (5*10^31+3)(3/8)^100 <1/22500000000.                 (17)
+
+If this displayed integer inequality is checked, (6),(8) give g(d)<2*10^-5.
+Also (12) holds since Delta+b_A<3 and 3*3/(2*10000)<10^-3.
+The release trace allowance is sqrt(2)kappa tau<1.5*10^-4.
+PR9665 supplies epsilon_halt<.005 on [T,2T]. Consequently (16) is below
+.01017, and hence below .0102, throughout that interval measured from the
+end of release. At kappa=10^-8, T=10^22 and M=5*10^23; at kappa=10^-12,
+T=10^30 and M=5*10^31. These remain enormous sufficient finite devices.
+The example does not establish practical preparation, a measured apparatus,
+minimal resources, an all-future finite device or a derived temperature.
+
+An actual delivery/calibration error must consume its own part of (16),
+and can invalidate this numerical allocation. The strict bound (17) and
+block identities are proposed checks, not reported program outputs.
+
+## 8. Prescribed release work and what remains unpriced
+
+With the actual closed device and prescribed Hamiltonian (9), define only
+W_release=integral Tr(rho(s) dH(s)/ds)ds. Since a'<=0 and A>=0,
+W_release<=0 even on the actual correlated thermal input. The exact energy
+balance is E_run,end-E_prep,start. For a nominal Gibbs auxiliary marginal,
+E_prep,start=Tr(K rho_old)+c_prep+E_aux. Hrun>=I and 1<=K<=3 imply
+
+    -(2+c_prep+E_aux) <=W_release<=0.                   (18)
+
+This intentionally coarse bound follows for the entire actual evolution,
+without replacing the endpoint by a freshly pure seed. Under beta Delta>=1
+the nominal E_aux may be bounded by (7). For an approximate delivery use
+an actual mean certificate or the explicit norm-sensitive correction after
+(7). The result accounts for energy returned to a prescribed release drive;
+it is not a recovered controller, work-fluctuation bound, thermodynamic
+cycle, cooling cost or renewable resource. All initial apparatus manufacture,
+Gibbs supply, temperature control, the setup clock and its outputs, phase
+reference, calibration and cooling environment remain supplied and unpriced.
+
+## 9. Failed substitutions and verification boundary
+
+The proof does not cancel every clock bond, assume a free-mode Gibbs law,
+apply operator monotonicity of the exponential, or infer a product input from
+a marginal. It does not use a full-space ||A||tau estimate as the nominal
+seed-release error: that would scale as M and miss the exact supported
+identity (10). Conversely, (10) does not permit replacing arbitrary actual
+faults by a supported error. It does not erase the positive complements'
+reserves or reuse the runtime old-site cap during preparation. These are
+specific distinctions in the proposed construction, not universal no-go
+claims about competing architectures.
+
+This candidate needs a separate mathematical check of the full decomposition,
+thermal spectral comparison, state-supported release, correlated target,
+scalar/time composition and literal resource account. The selected same
+model and earlier shared runtime work limit independence. Planned small exact
+algebra and scalar checks can corroborate these arguments; they cannot
+validate a 2^(M+5)-dimensional physical simulation, cooling, all actual
+coefficients or the inherited scattering proof. No new Lean proof, dynamics
+simulation, bath model or physical axiom has been supplied.

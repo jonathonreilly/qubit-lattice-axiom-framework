@@ -1,0 +1,43 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/thermal_transport_acceptance",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "EXECUTION.json",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/thermal_transport_acceptance/EXECUTION.json.txt",
+      "bytes": 1461,
+      "sha256": "f580dc8058788fc55639bf2eb0628c10254e551b1cb360d315ffeb614aba3c57",
+      "compression": "none",
+      "raw_bytes": 1461,
+      "raw_sha256": "f580dc8058788fc55639bf2eb0628c10254e551b1cb360d315ffeb614aba3c57"
+    },
+    {
+      "original_path": "executed_source.py",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/integration_before_execution/accept_transport.py.txt",
+      "bytes": 5375,
+      "sha256": "0ce833d7b0acbe6bce2771e194fd47370704980994546e37ca350b75fcefecca",
+      "compression": "none",
+      "raw_bytes": 5375,
+      "raw_sha256": "0ce833d7b0acbe6bce2771e194fd47370704980994546e37ca350b75fcefecca"
+    },
+    {
+      "original_path": "stderr",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/algebra.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "stdout",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/thermal_transport_acceptance/stdout.txt",
+      "bytes": 394,
+      "sha256": "6739ee04c1794c23251dfbefdecd0e4c5428d8192d4c678712f4817521588a71",
+      "compression": "none",
+      "raw_bytes": 394,
+      "raw_sha256": "6739ee04c1794c23251dfbefdecd0e4c5428d8192d4c678712f4817521588a71"
+    }
+  ],
+  "count": 4
+}

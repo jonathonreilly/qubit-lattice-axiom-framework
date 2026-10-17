@@ -1,0 +1,69 @@
+{
+  "scope": "Metadata-only calculation-body AST adaptations and output transport; no new science review.",
+  "checked_utc": "2026-10-17T01:32:31.520316+00:00",
+  "frozen_sources": [
+    {
+      "path": "outputs/structural_coefficient_box_2026_10_17_inputs/author/check_bounds.py",
+      "bytes": 4828,
+      "sha256": "19adc9be1ee764005bf390e797b287fff8ad9bb0fa44ab650bed8dfa1418d64c"
+    },
+    {
+      "path": "outputs/structural_coefficient_box_2026_10_17_inputs/review/check_structural_box.py",
+      "bytes": 15480,
+      "sha256": "e82bc008d335e439c84bfa0117ad2aa391539e40bade3c53be8cce68684dd7ad"
+    }
+  ],
+  "metadata_edits": [
+    {
+      "body": "author",
+      "statement_index_zero_based": 46,
+      "original_statement_ast": "Assign(targets=[Name(id='out', ctx=Store())], value=Dict(keys=[Constant(value='scope'), Constant(value='parameters'), Constant(value='coefficient_radius'), Constant(value='constants'), Constant(value='preserved_generic_ceilings'), Constant(value='max_added_incident_load_changes'), Constant(value='phase_scope'), Constant(value='limits'), Constant(value='elapsed_seconds')], values=[Constant(value='Exact scalar checks for the proposed structural coefficient box only; analytical proof and independent review remain separate.'), DictComp(key=Name(id='name', ctx=Load()), value=Call(func=Name(id='str', ctx=Load()), args=[Name(id='x', ctx=Load())]), generators=[comprehension(target=Tuple(elts=[Name(id='name', ctx=Store()), Name(id='x', ctx=Store())], ctx=Store()), iter=Call(func=Attribute(value=Name(id='parameters', ctx=Load()), attr='items', ctx=Load())), is_async=0)]), Call(func=Name(id='str', ctx=Load()), args=[Name(id='a', ctx=Load())]), DictComp(key=Name(id='name', ctx=Load()), value=Call(func=Name(id='scalar', ctx=Load()), args=[Name(id='x', ctx=Load())]), generators=[comprehension(target=Tuple(elts=[Name(id='name', ctx=Store()), Name(id='x', ctx=Store())], ctx=Store()), iter=Call(func=Attribute(value=Dict(keys=[Constant(value='bulk_norm_radius'), Constant(value='contact_norm_radius'), Constant(value='remaining_closed_gap'), Constant(value='matching_norm_radius'), Constant(value='physical_inverse_bound'), Constant(value='bridge_inverse_bound'), Constant(value='extra_reflection_error'), Constant(value='finite_preparation_all_future_bound'), Constant(value='finite_clock_horizon_bound'), Constant(value='B_spectral_upper'), Constant(value='contact_norm_upper')], values=[Name(id='b', ctx=Load()), Name(id='c', ctx=Load()), Name(id='gap', ctx=Load()), Name(id='eta', ctx=Load()), Name(id='actual_inverse_bound', ctx=Load()), Name(id='inv24', ctx=Load()), Name(id='extra_reflection', ctx=Load()), Name(id='actual_ready', ctx=Load()), Name(id='actual_finite', ctx=Load()), BinOp(left=Name(id='Bbound', ctx=Load()), op=Add(), right=Name(id='b', ctx=Load())), BinOp(left=Name(id='Vbound', ctx=Load()), op=Add(), right=Name(id='c', ctx=Load()))]), attr='items', ctx=Load())), is_async=0)]), Dict(keys=[Constant(value='root'), Constant(value='root_derivative'), Constant(value='X0'), Constant(value='X1'), Constant(value='C0'), Constant(value='C1'), Constant(value='D')], values=[Constant(value='1/7'), Constant(value='1/24'), Constant(value=16), Constant(value=700), Constant(value=31), Constant(value=2700), Constant(value=88000)]), Dict(keys=[Constant(value='old_each'), Constant(value='source_each'), Constant(value='contact_clock_each')], values=[Call(func=Name(id='str', ctx=Load()), args=[BinOp(left=Constant(value=2), op=Mult(), right=Name(id='a', ctx=Load()))]), Call(func=Name(id='str', ctx=Load()), args=[BinOp(left=Constant(value=8), op=Mult(), right=Name(id='a', ctx=Load()))]), Call(func=Name(id='str', ctx=Load()), args=[BinOp(left=Constant(value=3), op=Mult(), right=Name(id='a', ctx=Load()))])]), Constant(value='Actual nutilde in ten-coefficient comparison; fixed nominal scalar corollary requires nu exact, leaving nine variable coefficients.'), Dict(keys=[Constant(value='matrices'), Constant(value='grid_points'), Constant(value='time_evolution'), Constant(value='independent_review'), Constant(value='cpu_cap_seconds'), Constant(value='wrapper_wall_cap_seconds')], values=[Constant(value=0), Constant(value=0), Constant(value=False), Constant(value=False), Constant(value=10), Constant(value=20)]), BinOp(left=Call(func=Attribute(value=Name(id='time', ctx=Load()), attr='monotonic', ctx=Load())), op=Sub(), right=Name(id='start', ctx=Load()))]))",
+      "adapted_statement_ast": "Assign(targets=[Name(id='out', ctx=Store())], value=Dict(keys=[Constant(value='scope'), Constant(value='parameters'), Constant(value='coefficient_radius'), Constant(value='constants'), Constant(value='preserved_generic_ceilings'), Constant(value='max_added_incident_load_changes'), Constant(value='phase_scope'), Constant(value='limits'), Constant(value='elapsed_seconds')], values=[Constant(value='Exact scalar checks for the proposed structural coefficient box only; analytical proof and independent review remain separate.'), DictComp(key=Name(id='name', ctx=Load()), value=Call(func=Name(id='str', ctx=Load()), args=[Name(id='x', ctx=Load())]), generators=[comprehension(target=Tuple(elts=[Name(id='name', ctx=Store()), Name(id='x', ctx=Store())], ctx=Store()), iter=Call(func=Attribute(value=Name(id='parameters', ctx=Load()), attr='items', ctx=Load())), is_async=0)]), Call(func=Name(id='str', ctx=Load()), args=[Name(id='a', ctx=Load())]), DictComp(key=Name(id='name', ctx=Load()), value=Call(func=Name(id='scalar', ctx=Load()), args=[Name(id='x', ctx=Load())]), generators=[comprehension(target=Tuple(elts=[Name(id='name', ctx=Store()), Name(id='x', ctx=Store())], ctx=Store()), iter=Call(func=Attribute(value=Dict(keys=[Constant(value='bulk_norm_radius'), Constant(value='contact_norm_radius'), Constant(value='remaining_closed_gap'), Constant(value='matching_norm_radius'), Constant(value='physical_inverse_bound'), Constant(value='bridge_inverse_bound'), Constant(value='extra_reflection_error'), Constant(value='finite_preparation_all_future_bound'), Constant(value='finite_clock_horizon_bound'), Constant(value='B_spectral_upper'), Constant(value='contact_norm_upper')], values=[Name(id='b', ctx=Load()), Name(id='c', ctx=Load()), Name(id='gap', ctx=Load()), Name(id='eta', ctx=Load()), Name(id='actual_inverse_bound', ctx=Load()), Name(id='inv24', ctx=Load()), Name(id='extra_reflection', ctx=Load()), Name(id='actual_ready', ctx=Load()), Name(id='actual_finite', ctx=Load()), BinOp(left=Name(id='Bbound', ctx=Load()), op=Add(), right=Name(id='b', ctx=Load())), BinOp(left=Name(id='Vbound', ctx=Load()), op=Add(), right=Name(id='c', ctx=Load()))]), attr='items', ctx=Load())), is_async=0)]), Dict(keys=[Constant(value='root'), Constant(value='root_derivative'), Constant(value='X0'), Constant(value='X1'), Constant(value='C0'), Constant(value='C1'), Constant(value='D')], values=[Constant(value='1/7'), Constant(value='1/24'), Constant(value=16), Constant(value=700), Constant(value=31), Constant(value=2700), Constant(value=88000)]), Dict(keys=[Constant(value='old_each'), Constant(value='source_each'), Constant(value='contact_clock_each')], values=[Call(func=Name(id='str', ctx=Load()), args=[BinOp(left=Constant(value=2), op=Mult(), right=Name(id='a', ctx=Load()))]), Call(func=Name(id='str', ctx=Load()), args=[BinOp(left=Constant(value=8), op=Mult(), right=Name(id='a', ctx=Load()))]), Call(func=Name(id='str', ctx=Load()), args=[BinOp(left=Constant(value=3), op=Mult(), right=Name(id='a', ctx=Load()))])]), Constant(value='Actual nutilde in ten-coefficient comparison; fixed nominal scalar corollary requires nu exact, leaving nine variable coefficients.'), Dict(keys=[Constant(value='matrices'), Constant(value='grid_points'), Constant(value='time_evolution'), Constant(value='independent_review'), Constant(value='historical_source_run_limits'), Constant(value='actual_combined_process_limits')], values=[Constant(value=0), Constant(value=0), Constant(value=False), Constant(value=False), Dict(keys=[Constant(value='cpu_cap_seconds'), Constant(value='external_wall_cap_seconds')], values=[Constant(value=10), Constant(value=20)]), Dict(keys=[Constant(value='cpu_cap_seconds'), Constant(value='external_wall_cap_seconds')], values=[Constant(value=60), Constant(value=60)])]), BinOp(left=Call(func=Attribute(value=Name(id='time', ctx=Load()), attr='monotonic', ctx=Load())), op=Sub(), right=Name(id='start', ctx=Load()))]))",
+      "only_resource_metadata_changed": true,
+      "historical_limits": {
+        "cpu_cap_seconds": 10,
+        "external_wall_cap_seconds": 20
+      },
+      "actual_combined_limits": {
+        "cpu_cap_seconds": 60,
+        "external_wall_cap_seconds": 60
+      }
+    },
+    {
+      "body": "independent",
+      "statement_index_zero_based": 170,
+      "original_statement_ast": "Assign(targets=[Subscript(value=Name(id='evidence', ctx=Load()), slice=Constant(value='resources'), ctx=Store())], value=Dict(keys=[Constant(value='cpu_cap_seconds'), Constant(value='external_wall_cap_seconds'), Constant(value='largest_matrix_dimension'), Constant(value='largest_inverse_dimension'), Constant(value='coefficient_grid_points'), Constant(value='time_evolution'), Constant(value='author_program_executed'), Constant(value='historical_point_state_or_reflection_recomputed'), Constant(value='clock_sites_allocated'), Constant(value='elapsed_seconds'), Constant(value='python'), Constant(value='python_executable'), Constant(value='sympy'), Constant(value='platform')], values=[Constant(value=45), Constant(value=60), Constant(value=16), Constant(value=4), Constant(value=0), Constant(value=False), Constant(value=False), Constant(value=False), Constant(value=0), BinOp(left=Call(func=Attribute(value=Name(id='time', ctx=Load()), attr='monotonic', ctx=Load())), op=Sub(), right=Name(id='started', ctx=Load())), Attribute(value=Name(id='sys', ctx=Load()), attr='version', ctx=Load()), Attribute(value=Name(id='sys', ctx=Load()), attr='executable', ctx=Load()), Attribute(value=Name(id='sp', ctx=Load()), attr='__version__', ctx=Load()), Call(func=Attribute(value=Name(id='platform', ctx=Load()), attr='platform', ctx=Load()))]))",
+      "adapted_statement_ast": "Assign(targets=[Subscript(value=Name(id='evidence', ctx=Load()), slice=Constant(value='resources'), ctx=Store())], value=Dict(keys=[Constant(value='historical_source_run_limits'), Constant(value='actual_combined_process_limits'), Constant(value='largest_matrix_dimension'), Constant(value='largest_inverse_dimension'), Constant(value='coefficient_grid_points'), Constant(value='time_evolution'), Constant(value='author_program_executed'), Constant(value='historical_point_state_or_reflection_recomputed'), Constant(value='clock_sites_allocated'), Constant(value='elapsed_seconds'), Constant(value='python'), Constant(value='python_executable'), Constant(value='sympy'), Constant(value='platform')], values=[Dict(keys=[Constant(value='cpu_cap_seconds'), Constant(value='external_wall_cap_seconds')], values=[Constant(value=45), Constant(value=60)]), Dict(keys=[Constant(value='cpu_cap_seconds'), Constant(value='external_wall_cap_seconds')], values=[Constant(value=60), Constant(value=60)]), Constant(value=16), Constant(value=4), Constant(value=0), Constant(value=False), Constant(value=False), Constant(value=False), Constant(value=0), BinOp(left=Call(func=Attribute(value=Name(id='time', ctx=Load()), attr='monotonic', ctx=Load())), op=Sub(), right=Name(id='started', ctx=Load())), Attribute(value=Name(id='sys', ctx=Load()), attr='version', ctx=Load()), Attribute(value=Name(id='sys', ctx=Load()), attr='executable', ctx=Load()), Attribute(value=Name(id='sp', ctx=Load()), attr='__version__', ctx=Load()), Call(func=Attribute(value=Name(id='platform', ctx=Load()), attr='platform', ctx=Load()))]))",
+      "only_resource_metadata_changed": true,
+      "historical_limits": {
+        "cpu_cap_seconds": 45,
+        "external_wall_cap_seconds": 60
+      },
+      "actual_combined_limits": {
+        "cpu_cap_seconds": 60,
+        "external_wall_cap_seconds": 60
+      }
+    }
+  ],
+  "all_other_calculation_statements_ast_identical": true,
+  "frozen_argument_byte_identical": true,
+  "body_offset_zero_based": 10574,
+  "body_bytes": 13522,
+  "body_sha256": "5d3c2dd41f6af96bf7bd793b5e5cfe39e5d0f5c7c0d16517c95249542cdc81ca",
+  "canonical_primary": {
+    "path": "scripts/structural_coefficient_box_2026_10_17.py",
+    "bytes": 12278,
+    "sha256": "b11febc057db28f305c27dd684f45c8a92f743d95ebb8344afb5b5c21a0f10b7"
+  },
+  "canonical_helper": {
+    "path": "scripts/structural_coefficient_box_check_2026_10_17.py",
+    "bytes": 16066,
+    "sha256": "b112819693da02966e23f153f4d2725e4fa472021b2af606a8ea709ed605e1df"
+  },
+  "note": {
+    "path": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "bytes": 24138,
+    "sha256": "9f4934a5d1e63c93ee7e5f8956ff7b35c748f241204348c2510b04f38142a35f"
+  },
+  "later_whitespace_adaptation": "WHITESPACE_ADAPTATION.json records AST-identical formatting; mutation tests predate only this whitespace normalization."
+}

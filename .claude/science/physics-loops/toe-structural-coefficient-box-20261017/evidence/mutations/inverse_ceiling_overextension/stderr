@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/inverse_ceiling_overextension/mutated.py", line 144, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/inverse_ceiling_overextension/mutated.py", line 120, in main
+    author = run_author_checks(INPUT_ROOT/'author')
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/inverse_ceiling_overextension/mutated.py", line 43, in run_author_checks
+    assert actual_inverse_bound < 167
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

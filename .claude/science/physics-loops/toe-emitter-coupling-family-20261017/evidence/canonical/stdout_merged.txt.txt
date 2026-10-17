@@ -1,0 +1,21 @@
+{
+  "scope": "Portable replay of one source-exposed author scalar body. The complete analytical proof, family review and qualification remain separate.",
+  "function_bodies_completed": 1,
+  "scalar_comparisons": 103,
+  "complete_infinite": {
+    "rational": "2954065138388379/781250000000000000",
+    "display_only": 0.0037812033771371253
+  },
+  "complete_finite": {
+    "rational": "3735315138388379/781250000000000000",
+    "display_only": 0.004781203377137125
+  },
+  "actual_shared_process_limits": {
+    "cpu_soft_hard_seconds": [
+      20,
+      20
+    ],
+    "external_wall_cap_seconds": 30,
+    "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+  }
+}

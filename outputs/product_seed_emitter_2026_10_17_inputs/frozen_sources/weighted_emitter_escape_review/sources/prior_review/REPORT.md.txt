@@ -1,0 +1,349 @@
+# Independent review of the two-contact product-seed emitter route
+
+**No blocking mathematical defect found in the frozen local formulas or the
+stated conditional complete-output implication.** The positive two-body cell,
+scalar reserve, free-lead directional and return estimates, installed seed
+variance, background closed-tail estimates, seed-overlap identity, late-time
+constants and finite-clock hop count are supported as scoped below.
+
+This does **not** establish an autonomous gate from the proposed seed. The
+installed augmented inverse, actual common seed-overlap certificate,
+augmented common-phase error and late-time constants remain unproved.
+Consequently no numerical emission-completion time or working finite clock
+size follows. The author keeps these obligations explicit. No correction to
+the checked equations is required; no audit or retained status is conferred.
+
+## Sources, reuse and exposure
+
+The complete 546-line [ROUTE.md](sources/author/ROUTE.md), complete algebra
+program, algebra certificate, execution receipt, freeze, source manifest and
+literature-limit notes were read. The route identity is
+`f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1`.
+The author script identity is
+`236f558f94b8e3270c67b4cb218056b4024a2c902e276793b0c522100de461b9`,
+and its algebra certificate is
+`c281398bf83fc3f76b1c416221fc7a931402207f90a5cb13197124a3b14c9b8d`.
+All twelve author freeze entries were checked against their bytes and hashes.
+
+The interval candidate at
+`b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45`
+and generic theorem V2 at
+`db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3`
+are unchanged. Their previous complete reads and qualified reviews were
+reused after identity verification. In particular, this uses the established
+literal vacuum-energy embedding, exact parity reduction, original gate's
+one-open-channel interval, absolute-site reflection convention, and the
+packet normalization/integration-by-parts arguments. The new finite-graph
+and seed-overlap steps were reconstructed below rather than attributed to
+those earlier theorems.
+
+[SOURCE_PINS.json](SOURCE_PINS.json) records 18 snapshots and current-main
+instruction revision `5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2`. Prior
+preparation inventory files are preserved as author context, not newly
+reviewed proof premises. The external papers are not used in any proof
+here; their full arguments and the author's novelty search were not
+independently verified. No novelty or literature-completeness conclusion
+is made. This is a same-model, source-exposed check; no model override or
+subagent was used.
+
+## Positive cell, phases and scalar
+
+The square geometry in section 2 is admissible for the specified nearest
+neighbor graph: `e,c_L,c_(L+1),c_(L+2)` are the four plaquette vertices.
+The bend preserves the abstract path Hamiltonian and introduces no triangle.
+Vacant sites and permission to install only the listed couplings remain
+physical assumptions.
+
+For either attachment, in two-qubit order `|e,j>=00,01,10,11`, write
+
+```
+v=(0,t/kappa,1,0),   d=|11>,   |t|=kappa.
+Q = kappa v v* + 2 kappa d d*.
+```
+
+The two vectors are orthogonal and `||v||^2=2`, so this proves positivity
+and norm `2 kappa` on the entire two-qubit space, including double
+occupation. The reviewer independently builds the two edges by bit actions
+on the three active qubits, rather than checking the author's four-qubit
+projector polynomial. The intermediate plaquette qubit is an identity
+spectator for these new terms. The exact full-qubit sum is
+
+```
+Q_eL + Q_e,L+2 + (E0-2kappa)n_e
+ + kappa(I-n_L) + kappa(I-n_(L+2))
+ = E0 n_e + hopping + 2 kappa I.
+```
+
+The head-number commutator vanishes exactly. All summands are positive
+when `0<2 kappa<=E0`. The added incident sums are therefore precisely
+`E0+2kappa` at the emitter and `3kappa` at each attachment. The other
+incident sums retain the previous scope: only the added old-site loads
+meet cap two. The pre-existing source and gate-clock loads remain higher.
+
+The Pauli identity (8) has the correct cross-quadrature sign for
+`a=|0><1|`: the imaginary part of `t` multiplies
+`(Y_j X_e-X_j Y_e)/2`. It was independently checked against the bit-action
+hopping matrices for both attachments. Conjugating the physical loop phase
+changes the direction of the interference zero; it is not an innocuous
+notation change. The nontrivial plaquette flux cannot be removed by local
+site phases while making all four bonds real. Permission for these static
+complex XY couplings remains unestablished by the route.
+
+The physical scalar is `nu+2kappa`. Omitting a vacancy term does more than
+lose a scalar: the resulting difference has diagonal entries `-kappa` and
+zero on different head configurations. This exact discriminator is retained
+in the checker. Both vacancy terms and the scalar are needed for the claimed
+full-qubit and one-head identities. The complete comparator correctly keeps
+`exp[-i(nu+2kappa)t]`.
+
+## Free-lead directional calculation and its limits
+
+For `z=exp(ik)`, solving the bulk recurrence away from the source gives
+`G_n=A z^|n|`. The unit delta jump at zero gives
+
+```
+J A (z-z^-1)=1,
+A=1/[J(z-z^-1)]=-i/(2J sin k).
+```
+
+This independently fixes the retarded sign. Reversing it gives delta jump
+`-1`, which the checker rejects. For `v=|0>-c|2>`, `c=exp(i phi)`, contraction
+with this kernel gives
+
+```
+Sigma=A[2-(c+conj(c))z^2].
+```
+
+To verify the physical scattering identification, the checker solves four
+local equations at clock sites 0,1,2 and the emitter for each incoming
+direction. For right incidence, for example, it uses
+`psi_0=1+r`, `psi_-1=z^-1+r z`, `psi_2=t z^2`, and `psi_3=t z^3`, with
+independent unknowns `r,t,psi_1,psi_e`. Those solutions reproduce (14) at
+the exact center and at a different exact algebraic momentum. This is a
+different calculation from inserting the proposed rank-one matrix and
+checking its unitarity.
+
+The general derivation is also consistent: the emitted right amplitude is
+proportional to `g_+=1-c z^-2`, while a right-moving incident wave drives
+the emitter with `conj(g_+)`. Left amplitudes use `g_-=1-c z^2`. Thus the
+matrix in (14), including its conjugations and direction order, is the
+actual scattering matrix. Translating to `L` gives
+
+```
+g_+^L=e^(-ikL) g_+,   g_-^L=e^(ikL) g_-.
+```
+
+These translation phases matter in subsequent composition, even though
+they do not affect the free-lead magnitudes.
+
+Writing `a=|g_+|`, `b=|g_-|`, the optical identity is
+`-Im Sigma=(a^2+b^2)/(2vg)`. Hence
+`Im D=kappa^2(a^2+b^2)/(2vg)>0` on the proposed band. It gives both exact
+unitarity and the bounds
+
+```
+|r_+|<=2ab/(a^2+b^2),
+|t_+-1|<=2a^2/(a^2+b^2).
+```
+
+At `phi=2k0`, `g_+(k0)=0` and `|g_-(k0)|=2 sin(2k0)`. The zero fixes the
+right-emission/right-return channel, as claimed. It is not a zero on a
+nonzero interval. The derivative bound `|g_±'|<=2` gives the ratio in (12),
+and the exact diagnostic ceilings in section 4 were independently
+recalculated from `J,q0,kappa,sigma`. They agree with the rational fields
+of the author certificate. Rounded displays were not used as enclosures.
+
+For the seed spectral measure, `-Im(1/D)` equals the sum of the two proposed
+directional weights after removing their common `1/pi`. The checker verifies
+that normalization against the independently solved amplitudes. The outgoing
+weights, not an assumed exponential decay law, give the wrong-direction
+fraction at most `eta^2/(1+eta^2)`. Since the free-lead `D` has strictly
+positive imaginary part here, there is no seed point weight in this band.
+No claim about out-of-band point weight, finite emission completion, or the
+installed gate's point spectrum follows from that statement.
+
+The one-point comparison is correctly scoped. With `Sigma=-i/vg` and
+`E=E0`, the direct solution gives `t=0`, `r=-1`, for every nonzero coupling,
+while the two radiation weights are equal. This is a counterexample to the
+shortcut “a weak contact is transparent to a resonant return.” It is not
+a no-go theorem for autonomous preparation or other emitter designs.
+
+## What survives the installed gate
+
+The seed-energy identity (18) holds columnwise because the original gate
+contacts vanish on the empty clock, and `B u_j=b_j u_j` is exact. The
+physical variance is `2 kappa^2`, including the reserve `nu+2kappa` in its
+center. The checker independently verifies the two-edge variance by direct
+action on the product seed. The spectral theorem then gives
+
+```
+||P_out,j Eseed e_j|| <= sqrt(2) kappa/(v sigma).
+```
+
+The discarded projections depend on the old-energy column. Their outputs
+cannot be assumed orthogonal within one parity sector. Hilbert–Schmidt
+bounding the two columns gives `2 kappa/(v sigma)=8*10^-5`; distinct parity
+output spaces are orthogonal. This is a valid old/reference operator bound,
+not a claim that one common spectral projection has been constructed. It
+does not control in-band trapping, repeated gate visits or common packet
+shape.
+
+The scalar repeated-scattering formula (21) is consistent with its direction
+labels. Expanding the inverse produces each delayed gate revisit. Splitting
+`t_+/(1-r_+R_G)-1` into the direct transmission correction and the remaining
+geometric tail yields exactly (22); `|t_±|<=1` is sufficient for the stated
+bound. Two-port unitarity gives
+`1-|t_-|=|r_+|^2/(1+sqrt(1-|r_+|^2))<=|r_+|^2`.
+The route correctly does not substitute this scalar composition for the
+full internal source dynamics or for radiation from the actual initial seed.
+
+The Schur elimination (23) and the inhomogeneous emitter amplitude (24) have
+the correct sign for `lambda-Htilde`. They include all sixteen internal
+directions, with eight per reducing parity sector. At zero coupling the
+emitter's open coordinate is resonant at `lambda=b_j+E0`, so the previous
+gate-only inverse ceiling cannot simply be carried over by a small
+perturbation argument. This remains a new quantitative inverse obligation.
+
+For the original background scattering column, direct application of `V*`
+gives
+
+```
+e^(-ikL)conj(g_-) + r_j e^(ikL)conj(g_+)
+```
+
+in the vacuum channel. This fixes the translation convention in (25).
+For each closed tail, with `m=L-2>=1`, its coefficient is
+`alpha q^m(1-exp(-i phi)q^2)`. Thus the norm bound uses
+`16(1+1/49)7^-m`. Independently differentiating the two monomials gives the
+alternative bound
+
+```
+700[(1/7)^m+(1/7)^(m+2)]
+ + (16/24)[m(1/7)^(m-1)+(m+2)(1/7)^(m+1)].
+```
+
+This is algebraically identical to (26), including its `16/84` coefficient.
+The phase `phi=2k0` is installed and constant during differentiation.
+These estimates bound only the background drive of the new emitter Schur
+problem. They do not bound its inverse or remove propagating feedback.
+
+## Conditional seed-to-output implication
+
+Under the section 7 hypotheses, the finite graph attachment changes only
+the Hilbert-space localized correction: it now includes the emitter and
+the whole finite core. The assumed uniform `C0_j,C1_j,L_Rj` provide the
+same incoming and reflected nonstationary-phase estimates as the generic
+bridge, and the localized Bochner integral decays as `1/|t|`. Bounded
+selfadjoint evolution at the actual energies `b_j+E(k)` then gives the
+exact intertwining identity (29).
+
+At past infinity the common incident packet has norm tending to one on the
+half-line, with orthogonal `u_j` columns; reflected and localized errors
+vanish in operator norm. The evolved Gram matrix is constant, so this proves
+`Gamma_t* Gamma_t=I`. It does not require scattering completeness or absence
+of bound states. Weak past convergence proves that these exact packets are
+orthogonal to every normal bound eigenvector, including any associated with
+the attached finite graph.
+
+The seed-overlap identity (30) is exact:
+
+```
+(Eseed-Gamma_0)*(Eseed-Gamma_0)=2I-A-A*,
+A=Eseed*Gamma_0.
+```
+
+The matrix is positive semidefinite, and its operator norm is the squared
+isometry error. Its off-diagonal entries and phases matter. The checker
+verifies the identity with nontrivial rectangular isometries. It also records
+two exact counterexamples to weaker tests: `A=diag(1,-1)` has unit diagonal
+overlap magnitudes but squared error four, and an error matrix with aligned
+columns has individual squared column norm two but squared operator norm
+four. Separate column phases or a maximum column error would not suffice.
+The author's operator test and within-parity square sum avoid both mistakes.
+No actual installed-emitter overlap integral was evaluated in this review.
+
+For the outgoing comparison, full-line Parseval with `|rho|=1` gives
+`||b_t||_full=1`. On the half-line, if the omitted norm is `r<=1/2`, then
+`||b_t||=sqrt(1-r^2)` and positive-real normalization costs
+
+```
+1-sqrt(1-r^2)=r^2/(1+sqrt(1-r^2))<=r.
+```
+
+The negative-site norm bound is `B0/sqrt(pi v t)`; the unwanted incoming
+wave costs `A0/sqrt(pi v t)`; the localized map costs
+`D/[sqrt(2pi)v t]`. Here `D` is the square-sum bound within each parity,
+followed by the maximum over the two orthogonal parity spaces. The open
+output and phase-error columns lie in distinct orthogonal vacuum old states,
+so their maximum error is valid. These facts give exactly (33), with one
+`A0` and one `B0`, rather than an unexplained normalization factor.
+
+The complete comparator keeps the fixed `zeta`, the common `rho`-dependent
+clock phase, the scalar `exp[-i(nu+2kappa)t]`, source vacuum, empty emitter,
+and full old aging `exp(-itK)` from the initial seed time. No commutator of
+the interaction with `K` has been inserted. The seed error propagates
+unchanged; point-spectrum amplitude is at most `eta_seed` and is already
+included. Tensoring a passive reference preserves the operator bound, and
+the complete unhalved trace bound is at most twice it.
+
+For positive `epsilon`, the four terms in (34) respectively ensure
+`vt>=1`, normalization tail at most `1/2`, the square-root escape term at
+most `epsilon/2`, and the localized escape term at most `epsilon/2`.
+Thus the displayed onset formula is sufficient **after** the assumed
+constants, overlap and common augmented phase comparison are certified.
+Their existence for this actual emitter is not proved by the conditional
+lemma, by its local notch, or by a small seed variance.
+
+## Finite-clock consequence
+
+For `M>=L+3`, the shortest seed-to-omitted-site path is
+`e -> c_(L+2) -> ... -> c_M`, of length `M-L-1`; the other attachment
+route is two hops longer. Internal onsite matrices do not change this
+support argument. The reviewer checks exact powers on a nine-vertex graph
+with `L=3,M=7`: powers of degree below three agree with the compression;
+at degree three the omitted amplitude is nonzero,
+`-5/1989-4i/663`. The corresponding third Chebyshev amplitude is also
+nonzero. Extending polynomial agreement by one degree is therefore rejected.
+
+The original centered gate interval of radius 18 also contains
+`B+E0`: `1<=B<=20`, `0<E0<4J`, and the same center is
+`(1+20+4J)/2`. The new off-diagonal block has norm exactly
+`sqrt(2)kappa`; for the diagnostic coupling this is below one. Hence
+radius 19 suffices, with the physical scalar shifting the center only.
+The finite compression retains both emitter attachments and the far-end
+clock diagonal correction. The inherited polynomial/Chebyshev estimate
+therefore gives (35), including its factor four and the correct hop count.
+This supplies a finite-horizon implication once an infinite-emitter seed
+certificate and onset time exist; it does not supply those missing inputs.
+
+## Execution and remaining scope
+
+The reviewer program [check_emitter.py](check_emitter.py), SHA256
+`c2faafa025ca3905bd88c6d8110a2a8888765e881f451ff1df1a5acf1ad37196`,
+was executed once under a **45 CPU-second / 60 wall-second cap**. It exited
+zero in **1.7422960000112653 seconds**; user CPU was **1.059028 seconds**,
+system CPU **0.083054 seconds**, and macOS peak RSS **70,352,896 bytes**.
+The largest matrix was dimension **9**; physical-qubit matrices were
+dimension 8, local scattering systems dimension 4, and overlap examples
+4-by-2. Python 3.13.5 and SymPy 1.14.0 performed exact arithmetic. Thread
+environment requests were one; no measured thread-count claim is made.
+
+[RESULTS.json](RESULTS.json), [EXECUTION.json](EXECUTION.json),
+[check.stdout](check.stdout) and [check.stderr](check.stderr) preserve the
+complete calculation, command, versions, resource data and hashes. Stderr
+is empty. No failed execution occurred; wrong-sign, wrong-phase,
+insufficient-overlap, column-norm and hop-count alternatives are preserved
+as discriminators in the source/results. Two exact scattering points are
+algebra checks, not an interval grid. Interval claims were checked by the
+analytic inequalities above. No author program was imported or executed.
+
+The remaining obligations are the installed augmented matching inverse and
+its derivatives, an actual common normalized envelope and seed-overlap
+operator certificate, an actual augmented common-phase certificate, and
+the resulting finite late-time constants. Phase-coupling permission, a
+clean source/clock vacuum, the excited seed and coefficient installation
+also remain supplied physical resources. No simulation, optimization,
+finite emission time, native readiness, arbitrary-accuracy family or
+selected Record has been established. Every write is confined to this
+review directory; no repository, prior frozen source, checkpoint, editable
+prompt, axiom, Git, PR or audit file was changed.

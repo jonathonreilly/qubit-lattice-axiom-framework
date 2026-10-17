@@ -1,0 +1,22 @@
+{
+  "canonical_execution": "Consult separate EXECUTION_STATUS.md and actual receipts; this input does not self-certify a later run.",
+  "excluded_claims": [
+    "joint coefficient box",
+    "calibration extension",
+    "native supply",
+    "physical units",
+    "minimum resources",
+    "arbitrary accuracy",
+    "finite-device all-future permanence"
+  ],
+  "family_independent_review": "completed_selective_same_model_check_with_disclosed_source_exposure",
+  "family_root_qualification": "conditional_reuse_accepted_a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325",
+  "new_family_sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+  "parent_commit": "0f1022e03dbbed8085035f2a378be8ae1aca02e8",
+  "publication": "Reviewable milestone; consult separate publication record.",
+  "retained_audit": "not_requested_or_performed",
+  "scientific_mutations": "Consult separate mutation receipts; none inferred from source approval.",
+  "shared_source_exposure": "Same author/model as the family and earlier stationary work; prior generic/installed review and publication adaptation. No new independence claim.",
+  "theorem_body": "unchanged frozen author candidate",
+  "wrapper_transport_review": "Consult separate ROOT_PORTABILITY_ACCEPTANCE.json before execution."
+}

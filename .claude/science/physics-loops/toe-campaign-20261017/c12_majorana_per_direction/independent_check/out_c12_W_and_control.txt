@@ -1,0 +1,20 @@
+per-element pair eigenvalue, clean string creators:
+  axis C2 ((1, 0, 0), (0, -1, 0), (0, 0, -1)): lambda(U_R) = -1   lambda(U_R W) = +1
+  axis C2 ((-1, 0, 0), (0, 1, 0), (0, 0, -1)): lambda(U_R) = -1   lambda(U_R W) = +1
+  axis C2 ((-1, 0, 0), (0, -1, 0), (0, 0, 1)): lambda(U_R) = -1   lambda(U_R W) = +1
+  edge C2 ((-1, 0, 0), (0, 0, 1), (0, 1, 0)): lambda(U_R) = -1   lambda(U_R W) = +1
+  edge C2 ((-1, 0, 0), (0, 0, -1), (0, -1, 0)): lambda(U_R) = -1   lambda(U_R W) = +1
+  edge C2 ((0, 1, 0), (1, 0, 0), (0, 0, -1)): lambda(U_R) = -1   lambda(U_R W) = +1
+  edge C2 ((0, -1, 0), (-1, 0, 0), (0, 0, -1)): lambda(U_R) = -1   lambda(U_R W) = +1
+  edge C2 ((0, 0, 1), (0, -1, 0), (1, 0, 0)): lambda(U_R) = -1   lambda(U_R W) = +1
+  edge C2 ((0, 0, -1), (0, -1, 0), (-1, 0, 0)): lambda(U_R) = -1   lambda(U_R W) = +1
+group law up to (-1)^F, n = 0 (U_g)                                  : failing (g,h) pairs    0 / 576 on all test ops;    0 / 576 on even ops only
+group law up to (-1)^F, n = 1 for all g (U_g W, incl. identity)      : failing (g,h) pairs  576 / 576 on all test ops;  576 / 576 on even ops only
+group law up to (-1)^F, n = 1 for g != e (U_g W)                     : failing (g,h) pairs  506 / 576 on all test ops;  506 / 576 on even ops only
+group law up to (-1)^F, n = [sgn g = -1] (W on C4 and edge C2 only)  : failing (g,h) pairs    0 / 576 on all test ops;    0 / 576 on even ops only
+eta_f under the consistent sgn-twist V_g = U_g W^[sgn g=-1]:
+  axis C2: eta_f = [1]
+  edge C2: eta_f = [-1]
+control: full flux-dressed creator space in the c12 code (window margin 2):
+  axis C2 ((-1, 0, 0), (0, 1, 0), (0, 0, -1)) x=(1, 0, 0): dressed space dim 495, lam0 +1, F(b)=-1 for 53 basis vectors, K offdiag nonzero 0 -> constant=False; clean-only space: dim 431 lam0 -1 constant=True
+  edge C2 ((0, 1, 0), (1, 0, 0), (0, 0, -1)) x=(2, 0, 1): dressed space dim 961, lam0 -1, F(b)=-1 for 0 basis vectors, K offdiag nonzero 0 -> constant=True; clean-only space: dim 883 lam0 -1 constant=True

@@ -1,0 +1,68 @@
+# Independent derivation/run result, before author-code exposure
+
+The separate analytical derivation and sole exact scalar/symbolic execution
+support the proposed numerical budget, subject to the explicitly reused
+qualified family premises. No mathematical obstruction was found in the
+changed cutoff, contour or full-localization composition. This result does
+not yet assess the new author's executable provenance.
+
+The exact reconstruction gave
+
+```
+Q = 138611025462876289642614901207402041129347129 /
+    1180586898350928433778786304000000000000000000000
+
+.003 + .000714 + Q
+  = 4523310765938224492697027234263402041129347129 /
+    1180586898350928433778786304000000000000000000000
+  < .003832.
+```
+
+The auxiliary values are qin approximately 3.0640001867e-5, qout
+3.0640003799e-5, full localized norm 5.6128569388e-5 and full clock operator
+norm 1.2856903278e-7. These decimal displays are explanatory only; the
+program's exact rational strings carry all comparisons. The result agrees
+with the rational total printed in the already-read candidate, but that
+total was not an input to my program. Component bounds were separately
+assembled from the derivative/contour analysis.
+
+The finite correction is exactly bounded by 19683/20971520<.001.
+The combined rational upper expression is approximately .00476996715355,
+which supports the stated relaxed .004832 bound. The minimum distance
+margin is exactly 43999999999999978. At the largest coupling the qubit
+count is 500000000000000005. No large apparatus was allocated or evolved.
+
+Symbolic checks preserve the reciprocal transmission phase, upper incoming
+pole and clockwise lower density residue. A wrong reciprocal leaves -2i.
+The hard-cutoff endpoint test gives -2i despite zero interior derivative;
+the two aligned unit columns have squared operator norm two. These are
+discriminators for specific mistakes, not validation of every premise.
+The old shortcut allowances .0016, .00153 and .001395 are retained as
+failed sufficient bounds; none is an actual leakage lower bound.
+
+There was one scientific attempt, exit zero, no timeout or retry. Full
+stdout (12,515 bytes) and both empty stderr streams were read. The launcher
+fsynced PRELAUNCH at 2026-10-17T04:08:27.705145+00:00 and its directory at
+04:08:27.705168; the recorded pre-Popen boundary was 04:08:27.705236.
+Completion was 04:08:28.370806. Wall duration was 0.665611166972667 s,
+child user CPU 0.347229 s and system CPU 0.057771 s; measured macOS peak
+child RSS was 63,651,840 bytes. The program's measured interval was
+0.5825333753600717 s, including its imports after the timer was set but
+excluding interpreter startup. Python was 3.13.5, SymPy 1.14.0.
+
+Actual limits were CPU soft/hard 30/30 s and external wall 45 s. Maximum
+matrix dimension was two; maximum integer power requested was 40. No
+quadrature, optimization, grids, dynamics or author imports were used.
+Memory was measured, not capped. Single-thread environment settings were
+requests, not measured thread counts. Thirty-one packet files and four
+runtime files were byte/metadata bound before launch; all 35 remained
+unchanged. The executed source equals the checked source. Python,
+SymPy's entry file and distribution metadata, and fractions.py were pinned;
+this is a partial runtime binding, not transitive toolchain attestation.
+
+This result and its complete source/evidence are being frozen before any
+inspection of the new author's check_bounds.py, launch_check.py,
+SCALAR_INPUTS.json or output. Prior source exposure and same-model limits
+are as stated in INDEPENDENT_DERIVATION.md. No source repair is currently
+required by the mathematical check. Author provenance and final source
+validation remain to be examined before the final report.

@@ -1,0 +1,26 @@
+{
+  "name": "lost_vacuum_darkness",
+  "source_role": "independent",
+  "started_utc": "2026-10-17T01:33:56.190701+00:00",
+  "elapsed_seconds": 0.1757258754223585,
+  "exit_code": 1,
+  "timed_out": false,
+  "cpu_cap_seconds": 60,
+  "external_wall_cap_seconds": 20,
+  "old": "derivatives = {'DeltaA': nA,",
+  "new": "derivatives = {'DeltaA': eye-nA,",
+  "expected_scientific_assertion": "DeltaA_annihilates_full_vacuum_embedding",
+  "scientific_assertion_rejected": true,
+  "source": {
+    "bytes": 16417,
+    "sha256": "b602aa020691dbbc85a2aed97c7f9a6fc362cc01646b9878f07abfdf36c1a66c"
+  },
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 1582,
+    "sha256": "98bcc09ec80a6ff03a9bacb687ca9f755ab5d31531340c2c020e0e1c66bce3cb"
+  }
+}

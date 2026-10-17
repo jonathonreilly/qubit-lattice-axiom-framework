@@ -1,0 +1,4 @@
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_publication_draft/build_package_attempt_01/executed.py", line 173
+    input_map = {'schema': 'finite_local_input_map_v1', 'roles': {'family_author': {
+                ^
+SyntaxError: '{' was never closed

@@ -1,0 +1,216 @@
+{
+  "status": "Declared exact algebra and inequalities completed; all installed-system premises remain conditional.",
+  "premise_status": "Installed theorem is PROVISIONAL; this execution does not accept or recheck its physical inverse, optical, seed-overlap, or reflection certificates.",
+  "checks": {
+    "coupling_and_width_match_provisional_inputs": true,
+    "I2_antiderivative": true,
+    "I3_antiderivative": true,
+    "I2_whole_line_value": true,
+    "I3_whole_line_value": true,
+    "real_denominator_monotonicity_margin": true,
+    "I2_coefficient_below_17": true,
+    "I3_coefficient_below_one_half": true,
+    "Cauchy_Schwarz_I1_squared_margin": true,
+    "I3_linewidth_scaling": true,
+    "cutoff_left_zero_trace": true,
+    "cutoff_right_zero_trace": true,
+    "cutoff_left_join_continuous": true,
+    "cutoff_right_join_continuous": true,
+    "cutoff_total_variation_two": true,
+    "cutoff_and_quotient_derivative": true,
+    "form_factor_derivative_bound_26": true,
+    "packet_a1": true,
+    "packet_U_squared_coefficient": true,
+    "full_eight_coordinate_rank_one_inverse": true,
+    "rank_one_inverse_matches_direct_inverse": true,
+    "all_complementary_coordinates_present": true,
+    "discarding_closed_summand_fails": true,
+    "scalar_only_inverse_fails": true,
+    "exact_center_on_unit_circle": true,
+    "reference_form_factor_lower": true,
+    "reference_optical_coefficient_lower": true,
+    "closed_tail_formula_matches_input": true,
+    "reconstructed_xi_matches_input": true,
+    "xi_below_one": true,
+    "rank_factor_below_two_cross_multiplied": true,
+    "unit_phase_derivative_Cauchy_identity": true,
+    "form_factor_modulus_squared_derivative": true,
+    "n_derivative_constants": true,
+    "F1_below_two_over_kappa": true,
+    "incoming_A0_margin": true,
+    "outgoing_B0_margin": true,
+    "y_derivative_rounding_coefficient_0": true,
+    "y_derivative_rounding_coefficient_1": true,
+    "y_derivative_rounding_coefficient_2": true,
+    "complete_C_rounding_coefficient_0": true,
+    "complete_C_rounding_coefficient_1": true,
+    "complete_C_derivative_rounding_coefficient_0": true,
+    "complete_C_derivative_rounding_coefficient_1": true,
+    "complete_C_derivative_rounding_coefficient_2": true,
+    "weighted_integrand_has_no_constant_term": true,
+    "weighted_integrand_degree_three": true,
+    "U_coefficient_complete": true,
+    "U2_coefficient_complete": true,
+    "U3_coefficient_complete": true,
+    "weighted_column_bound_rearrangement": true,
+    "column_bound_below_1p5_over_kappa_squared": true,
+    "within_parity_square_sum_ceiling": true,
+    "weighted_IBP_product_derivative": true,
+    "positive_real_normalization_inequality_polynomial": true,
+    "square_root_denominator_lower": true,
+    "sqrt_two_pi_lower_from_pi_above_three": true,
+    "normalization_vT_above_one": true,
+    "normalization_outgoing_tail_below_half": true,
+    "seed_error_is_an_inherited_premise": true,
+    "reflection_error_is_an_inherited_premise": true,
+    "escape_below_0p000097": true,
+    "complete_below_0p004": true,
+    "graph_distance_formula": true,
+    "finite_clock_chebyshev_margin": true,
+    "finite_complete_below_0p005": true
+  },
+  "positive_exact_margins": {
+    "real_denominator_monotonicity_margin": "156249999999999999993/12500000000000000000000",
+    "I2_coefficient_below_17": "3/19",
+    "I3_coefficient_below_one_half": "41/722",
+    "Cauchy_Schwarz_I1_squared_margin": "499983/500000",
+    "reference_form_factor_lower": "457997333461889675320754816653961776062793522806469021449757879199/14235471290000610730275866674766791167335332069686261070685400500000",
+    "reference_optical_coefficient_lower": "1670581140625575722777967282968879604772688322425219310635683987065417570616947053708744346049468157962710017218753371122877203315219324/3041868306023720476617049700472764972815450817181164566513326468776701786392947361967789157395291484398132398833319705237256116768814779",
+    "xi_below_one": "6977939869692381434839604620562093087855608240636677969929482241951855113392244039297414686158055418272998199390412329755821049270597431233501238148913411311621241413849571598932028767/6977958086847341882835079909272440596732598910957267058185140706857540573935322937770913488779217889083485121945578107190485343859058687467814437362757756326562500000000000000000000000",
+    "rank_factor_below_two_cross_multiplied": "27911686610149683947376517327371375533333578563475345594189216665957368250132125527891698513251721589284233686595007131870707794645371185805932082372284412102920687444369356284808640189559247898651189354919/27911832347389367531340319637089762386930395643829068232740562827430162295741291751083653955116871556333940487782312428761941375436234749871257749451031025306250000000000000000000000000000000000000000000000",
+    "F1_below_two_over_kappa": "962997999987",
+    "incoming_A0_margin": "392599599997399/200",
+    "outgoing_B0_margin": "7634368749959346874847/3125000000",
+    "y_derivative_rounding_coefficient_0": "67/250000000000000",
+    "y_derivative_rounding_coefficient_1": "19/31250000000000",
+    "y_derivative_rounding_coefficient_2": "103/250000000000000",
+    "complete_C_rounding_coefficient_0": "149999997/25000000000000000000",
+    "complete_C_rounding_coefficient_1": "24999999999549999991/25000000000000000000",
+    "complete_C_derivative_rounding_coefficient_0": "49999999/50000000000000000000",
+    "complete_C_derivative_rounding_coefficient_1": "659999927/10000000000000000000",
+    "complete_C_derivative_rounding_coefficient_2": "49999999990649998913/50000000000000000000",
+    "column_bound_below_1p5_over_kappa_squared": "133999999966815527991414",
+    "within_parity_square_sum_ceiling": "5268087999818680044942883677635022744493484561208",
+    "square_root_denominator_lower": "2100000000000000000000000000000000",
+    "sqrt_two_pi_lower_from_pi_above_three": "6/25",
+    "normalization_vT_above_one": "24999999999999999999999999999999999",
+    "normalization_outgoing_tail_below_half": "134977/270000",
+    "escape_below_0p000097": "379973/540000000000",
+    "complete_below_0p004": "102439973/540000000000",
+    "finite_clock_chebyshev_margin": "4399999999999999999999999999999999978",
+    "finite_complete_below_0p005": "102439973/540000000000"
+  },
+  "identities": {
+    "whole_line_I2": "pi/h",
+    "whole_line_I3": "2/h**2",
+    "y_derivative_rounding": "67*U**2/250000000000000 + 19*U/31250000000000 + 103/250000000000000",
+    "complete_C_rounding": "149999997*U/25000000000000000000 + 24999999999549999991/25000000000000000000",
+    "complete_C_derivative_rounding": "49999999*U**2/50000000000000000000 + 659999927*U/10000000000000000000 + 49999999990649998913/50000000000000000000",
+    "weighted_product_coefficients": {
+      "1": "64003197/1000000000000",
+      "2": "1952024000317/1000000000000000000000000",
+      "3": "683/250000000000000000000000000"
+    }
+  },
+  "countercases": {
+    "cutoff_omission": {
+      "test": "Constant nonzero form factor and denominator; only chi varies.",
+      "actual_normalized_taper_variation": "2",
+      "variation_if_cutoff_derivative_is_omitted": 0,
+      "meaning": "Omitting the taper derivative fails even before resonance behavior is considered."
+    },
+    "closed_inverse_omission": {
+      "dimension": 8,
+      "complementary_coordinates": 7,
+      "rank_of_retained_resonant_term": 1,
+      "meaning": "The rank-one resonant term alone is not an inverse of the eight-coordinate system; the closed summand is essential."
+    },
+    "emitter_coordinate_omission": {
+      "test": "Clock correction zero and emitter correction a unit vector.",
+      "full_localized_norm": 1,
+      "clock_only_norm": 0,
+      "meaning": "The separate y and y-prime terms must remain in the complete localized norm."
+    }
+  },
+  "derived_bounds": {
+    "real_denominator_derivative_lower": {
+      "exact": "312499999999999999993/12500000000000000000000",
+      "display_only_float": 0.025
+    },
+    "I2_coefficient_pi_below_four": {
+      "exact": "320/19",
+      "display_only_float": 16.842105263157894
+    },
+    "I3_coefficient": {
+      "exact": "160/361",
+      "display_only_float": 0.44321329639889195
+    },
+    "rank_one_factor": {
+      "exact": "27911832347389367531340319637125369169511287361618078165246641269657472657005826786487618976012721756899751908528291506175860599519408264062077822819022878390049243866427216506647589946440752101348810645081/27911759478769525739358418482248372351422432962546711879717928967807420453568976157189658744632221673091992797561649319023284197082389724934004952595653645246484965655398286395728115068000000000000000000000",
+      "display_only_float": 1.0000026106781228
+    },
+    "F1_upper": {
+      "exact": "1037002000013",
+      "display_only_float": 1037002000013.0
+    },
+    "weighted_phase_upper": {
+      "exact": "61000000000000012500153/3125000000",
+      "display_only_float": 19520000000000.004
+    },
+    "localized_column_upper": {
+      "exact": "1366000000033184472008586",
+      "display_only_float": 1.3660000000331844e+24
+    },
+    "grouped_D": {
+      "exact": "3000000000000000000000000",
+      "display_only_float": 3e+24
+    },
+    "A0": {
+      "exact": "3000000000000",
+      "display_only_float": 3000000000000.0
+    },
+    "B0": {
+      "exact": "23000000000000",
+      "display_only_float": 23000000000000.0
+    },
+    "outgoing_tail_norm_upper_at_T": {
+      "exact": "23/270000",
+      "display_only_float": 8.518518518518518e-05
+    },
+    "escape_at_T": {
+      "exact": "52000027/540000000000",
+      "display_only_float": 9.62963462962963e-05
+    },
+    "complete_at_T": {
+      "exact": "2057560027/540000000000",
+      "display_only_float": 0.0038102963462962962
+    },
+    "finite_complete": {
+      "exact": "2597560027/540000000000",
+      "display_only_float": 0.004810296346296297
+    }
+  },
+  "time_and_distance": {
+    "onset": 1000000000000000000000000000000000000,
+    "observation_horizon": 2000000000000000000000000000000000000,
+    "clock_sites": 50000000000000000000000000000000000000,
+    "first_omitted_distance": 49999999999999999999999999999999999987
+  },
+  "resources": {
+    "cpu_cap_seconds": 45,
+    "external_wall_cap_seconds": 60,
+    "largest_matrix_dimension": 8,
+    "largest_inverse_dimension": 8,
+    "quadrature": false,
+    "resonance_samples": 0,
+    "time_evolution": false,
+    "author_program_imported_or_executed": false,
+    "installed_physical_inverse_recomputed": false,
+    "seed_overlap_recomputed": false,
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "sympy": "1.14.0",
+    "python_executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "elapsed_seconds": 10.538953458890319
+  }
+}

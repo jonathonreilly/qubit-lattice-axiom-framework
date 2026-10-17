@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/exit_coupling/driver.py", line 7, in <module>
+    result=ns['run_preparation_author'](inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/exit_coupling/mutated.py", line 512, in run_preparation_author
+    check(f'M{M}_old{oldbits}_complete_rail_exit_Gram', zero(gram - 2 * kappa * kappa * sp.eye(2)))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/exit_coupling/mutated.py", line 352, in check
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: M16_old0_complete_rail_exit_Gram

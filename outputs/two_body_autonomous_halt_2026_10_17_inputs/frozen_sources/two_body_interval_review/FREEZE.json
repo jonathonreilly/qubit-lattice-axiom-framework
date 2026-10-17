@@ -1,0 +1,46 @@
+{
+  "recorded_utc": "2026-10-17T00:28:23.141504+00:00",
+  "status": "Frozen bounded independent review; no blocking mathematical finding; conditional reuse only, not audit verdict",
+  "review": {
+    "path": "REVIEW.md",
+    "bytes": 19878,
+    "sha256": "a3ab8c94ce4c842980e2144766be0994b5f5d783f29d14d1cd25a7a2567dfe8a"
+  },
+  "executed_check": {
+    "path": "check_composition.py",
+    "bytes": 15157,
+    "sha256": "3f25ff5b24829d8876246c99bec01a66bc049295b424e4ed95f057800e9b5460"
+  },
+  "execution_receipt": {
+    "path": "EXECUTION.json",
+    "bytes": 2473,
+    "sha256": "af2f13dfb6cbc45223fbd1293afb3e92790706154a9f4d35fdf0523eff450068"
+  },
+  "source_pins": {
+    "path": "SOURCE_PINS.json",
+    "bytes": 12271,
+    "sha256": "41b2f768ee9a0dd2b16301feff3b8aad0e6276f8b251da06d6c0ddce0a48cb4a"
+  },
+  "source_refresh": {
+    "originals_unchanged": 35,
+    "receipt_files_unchanged": 6
+  },
+  "coverage": {
+    "new_point_checks": "Physical16 bit-basis assembly, 12-dimensional root residual and full32 inverse residual/spectral certificate at both old energies; author parity-inverse alignment",
+    "new_composition_checks": "Common interval gaps, uniform inverse, all-RHS Schur and phase discriminators, packet/column constants, finite preparation and observation costs",
+    "inherited_point_checks": "Prior pinned full point-state/reflection error certificates; not recomputed in this execution",
+    "point_state_witnesses_included": true,
+    "generic_theorem_read_complete": true,
+    "author_code_replayed": false,
+    "candidate_bounds_changed": false
+  },
+  "mathematical_limits": [
+    "Supplied exact coefficients and finite one-head product preparation",
+    "Infinite blank tail for all-future claim",
+    "Finite clock only through explicit horizon",
+    "Only added old-site load cap two",
+    "No arbitrary-accuracy, native preparation, physical closure or retained audit claim"
+  ],
+  "link_targets_verified": 12,
+  "editable_prompt_files_changed": []
+}

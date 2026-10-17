@@ -1,0 +1,33 @@
+# Read and source coverage
+
+Complete fresh reads: both source proof bodies, both original author checkers,
+root ACCEPTANCE/QUALIFICATION/FREEZE, preparation EXECUTION/RETRY/failure stderr,
+all16 transport event original/replacement sources, generated wrapper, current
+SCIENCE_WORKFLOW, SKILL_FRESHNESS_CHECK, lane-builder skill, DELIVERY,
+REVIEW_LOOP_PR_CONFORMANCE_SPEC and writing voice guide. The realifier was
+previously authored by this agent; that exposure is explicit. No new theorem
+review, blind review or model diversity is claimed.
+
+The two separate review scopes, analytical-freeze chronology and limitations
+were read. Their complete frozen contents are preserved and hash-verified, but
+this mechanical task does not claim to have re-read or independently re-proved
+every inherited review/argument. Root's qualification already states its complete
+reading and precise conclusion. Large inventories/provenance arrays are checked
+mechanically, not interpreted as mathematical evidence.
+
+Five finite frozen scopes were captured by their manifest entries plus manifests/
+freezes themselves: source realifier, its separate review, source preparation,
+its separate review, and root qualification. Source source-path strings are
+historical provenance, never fallback input paths. The root-private idea directory
+was not accessed; ACCEPTANCE's pre-code chronology pointer is preserved but is
+not a new load-bearing mathematical dependency. No recursive campaign copy or
+shared checkpoint is created.
+
+The supplied parent is67108090f68ed9b2bc62eee23701b2d3d71dce4a. Root separately
+reported main69cf6a289b2ec06213473f1549c51a57c29b6d70 unchanged at05:24:22UTC.
+The drafter did not run Git or contact external services. Exact reused parent
+bytes are selected from a finite published input/archive index plus explicit
+process/note paths; each is checked against its stored/raw identity.
+
+Scientific and mutation executions in this assignment: zero. Editable prompt
+files changed: none. Model/effort overrides and subdelegation: none.

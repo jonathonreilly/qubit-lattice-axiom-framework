@@ -1,0 +1,43 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/thermal_compare_reports",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "EXECUTION.json",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/thermal_compare_reports/EXECUTION.json.txt",
+      "bytes": 1450,
+      "sha256": "c30c71ab3ac4ba52ba2c58f778ea6c88fb4897e0eb35cf1f499d0a62551bc5c3",
+      "compression": "none",
+      "raw_bytes": 1450,
+      "raw_sha256": "c30c71ab3ac4ba52ba2c58f778ea6c88fb4897e0eb35cf1f499d0a62551bc5c3"
+    },
+    {
+      "original_path": "executed_source.py",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/integration_before_execution/compare_reports.py.txt",
+      "bytes": 3251,
+      "sha256": "d008bfc8c5d67624df7c0a480ebe9eab4fa4ea0947497ab615c1a2b08303562c",
+      "compression": "none",
+      "raw_bytes": 3251,
+      "raw_sha256": "d008bfc8c5d67624df7c0a480ebe9eab4fa4ea0947497ab615c1a2b08303562c"
+    },
+    {
+      "original_path": "stderr",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/thermal_compare_reports/stderr.txt",
+      "bytes": 298,
+      "sha256": "cc8795af423d4676f80a81c3ff8e1dcc27e6148179e770fa5a381f9a4ca44880",
+      "compression": "none",
+      "raw_bytes": 298,
+      "raw_sha256": "cc8795af423d4676f80a81c3ff8e1dcc27e6148179e770fa5a381f9a4ca44880"
+    },
+    {
+      "original_path": "stdout",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/algebra.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "count": 4
+}

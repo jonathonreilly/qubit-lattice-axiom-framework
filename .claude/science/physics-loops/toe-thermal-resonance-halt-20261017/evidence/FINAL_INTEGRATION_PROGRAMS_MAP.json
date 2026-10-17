@@ -1,0 +1,97 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "FINAL_UPSTREAM_REFRESH.json",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/final_integration_programs/FINAL_UPSTREAM_REFRESH.json.txt",
+      "bytes": 1659,
+      "sha256": "67547f20fda615ef9149a5b125fe503a51c0dd74ecf07c93e74b71985365ca7b",
+      "compression": "none",
+      "raw_bytes": 1659,
+      "raw_sha256": "67547f20fda615ef9149a5b125fe503a51c0dd74ecf07c93e74b71985365ca7b"
+    },
+    {
+      "original_path": "PR_BODY.md",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/final_integration_programs/PR_BODY.md.txt",
+      "bytes": 3255,
+      "sha256": "0c9d69f8f8d5414e95ec7236953a53e37532b7bc4b1d2e734800aab1090dfcd8",
+      "compression": "none",
+      "raw_bytes": 3255,
+      "raw_sha256": "0c9d69f8f8d5414e95ec7236953a53e37532b7bc4b1d2e734800aab1090dfcd8"
+    },
+    {
+      "original_path": "VOCAB_fix.json",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/final_integration_programs/VOCAB_fix.json.txt",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "compression": "none",
+      "raw_bytes": 153,
+      "raw_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original_path": "VOCAB_report-only.json",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/final_integration_programs/VOCAB_fix.json.txt",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "compression": "none",
+      "raw_bytes": 153,
+      "raw_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original_path": "finish_publication_packet.py",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/final_integration_programs/finish_publication_packet.py.txt",
+      "bytes": 4605,
+      "sha256": "d7314d527cdd901771834851b3928476e75de0fa95d18198e9fcafdc3f8acfec",
+      "compression": "none",
+      "raw_bytes": 4605,
+      "raw_sha256": "d7314d527cdd901771834851b3928476e75de0fa95d18198e9fcafdc3f8acfec"
+    },
+    {
+      "original_path": "focused_verify.py",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/focused_receipt/executed_source.py.txt",
+      "bytes": 10554,
+      "sha256": "62291b5ee604e2a971351745b4153c63e54a1e023b8fa02edd3b534a05310e1d",
+      "compression": "none",
+      "raw_bytes": 10554,
+      "raw_sha256": "62291b5ee604e2a971351745b4153c63e54a1e023b8fa02edd3b534a05310e1d"
+    },
+    {
+      "original_path": "vocab_fix.stderr",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/algebra.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "vocab_fix.stdout",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/final_integration_programs/vocab_fix.stdout.txt",
+      "bytes": 243,
+      "sha256": "11e7dd65fbfcb2ff4fbbfed6fe6eb38bd0a119da4f168e321f15194c6c75c5b6",
+      "compression": "none",
+      "raw_bytes": 243,
+      "raw_sha256": "11e7dd65fbfcb2ff4fbbfed6fe6eb38bd0a119da4f168e321f15194c6c75c5b6"
+    },
+    {
+      "original_path": "vocab_report-only.stderr",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/algebra.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "vocab_report-only.stdout",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/final_integration_programs/vocab_report-only.stdout.txt",
+      "bytes": 251,
+      "sha256": "d03c6f6338d259b4a987142c337cefee9e34747188afe810bab6472f8f63da75",
+      "compression": "none",
+      "raw_bytes": 251,
+      "raw_sha256": "d03c6f6338d259b4a987142c337cefee9e34747188afe810bab6472f8f63da75"
+    }
+  ],
+  "count": 10
+}

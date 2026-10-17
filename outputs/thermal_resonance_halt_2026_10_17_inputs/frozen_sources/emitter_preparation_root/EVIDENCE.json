@@ -1,0 +1,51 @@
+{
+  "written_utc": "2026-10-17T04:02:28.990380+00:00",
+  "status": "root author corroboration only; independent preparation derivation and review still pending",
+  "candidate_sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0",
+  "actual_execution": {
+    "all_bindings_unchanged": true,
+    "binding_count": 26,
+    "elapsed_seconds": 0.07662320788949728,
+    "ended_utc": "2026-10-17T04:01:33.730488+00:00",
+    "limits": {
+      "cpu_hard_seconds": 15,
+      "cpu_soft_seconds": 15,
+      "external_wall_seconds": 30,
+      "memory_cap": null,
+      "output_file_bytes": 8388608,
+      "thread_environment_requested": 1
+    },
+    "prelaunch": {
+      "bytes": 8683,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/PRELAUNCH.json",
+      "sha256": "fe3b8694cb53d7298c72de37de0ad296e82290b48c1b80d0db3c3a5219a6bf35"
+    },
+    "returncode": 0,
+    "runtime_coverage": "Interpreter plus selected standard-library files pinned, not the entire runtime or operating system. Thread count requested, not measured.",
+    "started_utc": "2026-10-17T04:01:33.653858+00:00",
+    "stderr": {
+      "bytes": 0,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout": {
+      "bytes": 5164,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/stdout.txt",
+      "sha256": "2f7ba209a8db5a4f5ceeb11cde7e216a641c4168ca5342f7480d3d657b6403b0"
+    },
+    "timeout": false
+  },
+  "complete_stdout_read": true,
+  "script_and_launcher_read": "authored in full by root; source-identities frozen before launch",
+  "independent_derivation_exposure": "not yet received or read by root",
+  "bindings_revalidated": 26,
+  "failed_scientific_runs": 0,
+  "meaningful_checks": [
+    "complete full-Pauli decomposition at M17 and three exact kappa values",
+    "four old-input seed columns and orthogonal emitter leakage Gram",
+    "full pair polynomial spectra including 00/11",
+    "rational all-family thermal count and release allocation",
+    "missing vacancy and undersized complement discriminators"
+  ],
+  "limits": "No full many-body matrix, Gibbs density, dynamics simulation, continuum scattering replay, bath, physical calibration or uniform-family numerical sweep."
+}

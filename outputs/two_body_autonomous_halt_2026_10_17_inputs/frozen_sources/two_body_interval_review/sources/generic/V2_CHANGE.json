@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-17T00:14:36.987987+00:00",
+  "original": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/THEOREM.md",
+    "bytes": 26963,
+    "sha256": "fffd7d405935226aba4a5e6528112b984b6dde4580747641159f554e97e2189a"
+  },
+  "revised": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/THEOREM_V2.md",
+    "bytes": 27028,
+    "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+  },
+  "change": "Clarify equation (5): v is any certified positive lower bound on group velocity, and E2 any certified upper bound on its derivative. The previous conservative example already used these inequalities. No error constant, packet, hypothesis strength, numerical calculation or conclusion changes.",
+  "review_basis": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_review/REVIEW.md",
+    "bytes": 15318,
+    "sha256": "bba09ef378466a3787ebfbbbd942a81fbe200031a24d04f799d2543e510673f6"
+  },
+  "root_delta_check": "Complete old argument and complete independent review read. The changed lines were checked directly: each proof occurrence uses Eprime>=v and abs(Esecond)<=E2. Original source and reviewer executions remain unchanged; no historical run relabeled as V2."
+}

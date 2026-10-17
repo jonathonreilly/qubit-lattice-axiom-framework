@@ -1,0 +1,147 @@
+# Coupling-family publication packet for root review
+
+This is a local draft overlay above exact PR9664 head
+`0f1022e03dbbed8085035f2a378be8ae1aca02e8`. No worktree, Git, PR, checkpoint,
+prompt, axiom or audit record was changed. Scientific executions and scientific
+mutations in this task: **zero**. The canonical draft preserves its construction
+time pending review/qualification labels. During final freezing, root reported
+that the family science had been conditionally qualified. `LATER_ROOT_STATUS.json`
+records that separate report and its verified file hashes; this packaging task
+did not re-review those new sources. Root will add the qualification surfaces
+and update the integration wrapper/status precisely. Root transport approval
+and scientific execution remain pending; the adapter stays unexecuted.
+
+The root's separately owned scope/value note at
+`../emitter_family_integration/PUBLICATION_SCOPE_AND_VALUE.md`, SHA256
+`43bda24a133232233b374ca9314bd7709273416295e2184f8bdba67996ee2e45`, was read in
+full. It authorizes this family-only drafting unit, not theorem or publication
+acceptance. The live main/open-PR observations belong to root; this packet does
+not invent a new remote refresh, main synchronization or landing.
+
+## Files to review
+
+The proposed repository overlay is `canonical/`. Its 36 files are listed with
+hashes in `READINESS.json`. The key paths are:
+
+- `canonical/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- `canonical/scripts/emitter_coupling_family_2026_10_17.py`
+- `canonical/outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json`
+- `canonical/outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json`
+- `canonical/outputs/emitter_coupling_family_2026_10_17_inputs/PROOF_BODY_MAP.json`
+- `canonical/outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json`
+- `canonical/outputs/emitter_coupling_family_2026_10_17_inputs/ARTIFACT_MANIFEST.json`
+- `canonical/outputs/emitter_coupling_family_2026_10_17_inputs/PUBLICATION_STATUS.json`
+- `canonical/outputs/emitter_coupling_family_2026_10_17_inputs/REPRODUCTION_PLAN.json`
+
+The original 45-file author packet is completely represented: 27 byte-preserved
+new files and 18 byte-identical existing parent files. One further parent file,
+the primary runner, pins the reused resolver/integrity-check infrastructure.
+These 19 existing files are dependencies, not proposed edits. Every one is
+verified against the exact parent Git object. There is no absolute local-source
+fallback and no automatic replay of old scientific programs.
+
+All original manifests, receipts, streams, earlier plans and failed-route
+records remain byte-identical. Markdown snapshots have passive `.md.txt`
+destinations. Historical absolute path labels and original timestamps remain
+historical provenance. `SOURCE_MAP.json` gives the finite reconstruction map;
+their stale physical paths are not runtime dependencies. Parent transitive
+source trees are not copied again.
+
+`WRAPPER.md` is the new prose before the frozen source marker. The note embeds
+the complete 39,464-byte, 835-line family theorem, with no body changes. The
+wrapper distinguishes the actual profile for each apparatus, exact old aging
+and scalar, complete outputs, fixed residual, old-only incident cap, larger
+source/contact loads and enormous finite costs. It credits the earlier moment
+implication, excludes the joint/calibration conclusions, and preserves the
+pending status of the new family. Historical moment snapshots retain their
+own broader context without extending this claimed scope.
+
+## Exact adaptation boundary
+
+The primary wraps one source module as `run_family_author(inputs)`. It reuses
+the exact parent `FrozenInputs` and `verify_artifacts` ASTs. Five historical
+path/prelaunch/cap-assertion statements are removed. The one certificate read
+uses the finite resolver. One output wall-limit metadata expression becomes
+dynamic, and final printing becomes execution metadata plus `return report`.
+The other 216 top-level statements, including all 103 comparison-call ASTs,
+are unchanged. Reversing these explicit transport operations recovers the
+entire original module AST. No scientific constants, formulas, inequalities
+or assertion bodies are changed.
+
+Comments and blank lines in the wrapped executable are presentation changes;
+the complete original source remains preserved. `SOURCE_TO_FUNCTION.diff`
+shows the text transport, and the ledger gives every original/replacement
+statement, hash and line range. The initial module docstring becomes an exact
+Python string-value representation so its AST value is unchanged by wrapping.
+
+The planned future canonical process has shared CPU20/wall30 limits. Its
+actual CPU values are read from the running process; its wall-cap declaration
+is read from the canonical wrapper. The original source limits are separately
+historical metadata. The external canonical runner must enforce the wall cap.
+There is no new matrix, grid, optimizer, quadrature or dynamics calculation.
+
+## Actual static evidence
+
+`STATIC_VERIFICATION.json` records 718 bookkeeping checks, including the full
+AST reversal, source-pair equality, all 54 declared inputs, 53 artifact-manifest
+members, two logical aliases, 12 wrapper links, exact body range, import/call
+confinement and nine rejected resolver transport fixtures. These are not 718
+scientific validations or an independent review. The complete scientific
+argument is still subject to the separate family review.
+
+Three builder attempts and one verifier attempt ran under CPU30/wall60, with
+at most three attempts per phase declared beforehand. Python was 3.13.5. Each
+serialized its actual execution copy, source/input/interpreter bindings and
+limits before spawning; all captured bytes and generation fields remained
+unchanged at completion. Full streams and receipts are retained.
+
+| Static attempt | Exit | Wall seconds | Meaning |
+|---|---:|---:|---|
+| `build_package_attempt_01` | 1 | 0.05136520881205797 | Missing closing brace; parsing failed before builder statements |
+| `build_package_attempt_02` | 0 | 0.5506348325870931 | First overlay; docstring indentation issue found in subsequent reading |
+| `build_package_attempt_03` | 0 | 0.7064433330669999 | Corrected final overlay |
+| `verify_static_attempt_01` | 0 | 0.9769067079760134 | Final source/AST/closure/resolver verification |
+
+`STATIC_FAILURES.md` records both corrections. The second complete overlay,
+build result and diff are archived under its attempt; it is not the proposed
+canonical overlay. There is no OS memory-cap claim. Parent Git objects are
+content-checked read-only; no scientific program is imported or called by these
+checks. The verifier executes only the isolated inherited resolver class.
+
+## Root integration sequence and remaining gates
+
+1. Integrate the now separately reported family analytical review and root
+   qualification. Do not infer acceptance from the fixed-coupling moment source
+   or silently rewrite historical pending labels in frozen mathematical bodies.
+2. Review the full wrapper, primary, finite input map and transport removals.
+   Record root portability acceptance separately before scientific execution.
+3. If accepted, copy the proposed overlay above the exact parent, and select
+   the necessary local static evidence for a companion loop packet, suggested
+   `.claude/science/physics-loops/toe-emitter-coupling-family-20261017/`.
+   The archived first overlay and fixture files can remain scratch evidence;
+   do not commit duplicate historical trees merely to reproduce an earlier
+   packaging correction. Preserve their manifests and executed-source/stream
+   receipts if selecting a compact publication evidence set.
+4. Update only wrapper/status/link metadata as justified by actual decisions;
+   keep the 835-line mathematical body and frozen source files unchanged.
+   Regenerate the note/body and artifact bindings after any such edits.
+5. Precreate the result directory and intended output slot before canonical
+   cache input fingerprinting. Serialize exact source/input/binary/cap bindings,
+   then execute through the repository canonical cache API under the planned
+   shared caps. Preserve failures and complete stdout/stderr/receipt/cache.
+   Compare all scientific report fields to the preserved author output, with
+   only the explicit transport/runtime exclusions in `REPRODUCTION_PLAN.json`.
+   Any subsequent declared-input edit requires a new canonical run/receipt.
+6. Approve and execute copied-source scientific mutation cases separately;
+   this packet contains no completed mutations. Final graph, value, readiness,
+   Git, PR and audit actions belong to root. The wrapper has one direct parent
+   theorem-note link; no graph topology or citation artifact is asserted here.
+   Focused milestone gates apply now. Conformance section 12 reserves full
+   integrated-main landing checks for the later exact shared landing candidate.
+
+The original family checker and proof were authored with the same model and
+shared prior source exposure. The static verifier is a separately written
+transport check, not an independent scientific derivation. No mathematical
+adaptation needs a new judgment beyond review of the explicit transport edits;
+the new family's mathematical acceptance itself remains an open required gate.
+No editable prompt files changed.

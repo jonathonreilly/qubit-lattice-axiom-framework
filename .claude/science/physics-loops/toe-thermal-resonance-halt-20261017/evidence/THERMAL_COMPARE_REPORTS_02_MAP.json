@@ -1,0 +1,43 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/thermal_compare_reports_02",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "EXECUTION.json",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/thermal_compare_reports_02/EXECUTION.json.txt",
+      "bytes": 1456,
+      "sha256": "40923d67485ae27e609f6dec373ad9370dab486ac19c2da9b8279562f617573e",
+      "compression": "none",
+      "raw_bytes": 1456,
+      "raw_sha256": "40923d67485ae27e609f6dec373ad9370dab486ac19c2da9b8279562f617573e"
+    },
+    {
+      "original_path": "executed_source.py",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/thermal_compare_reports_02/executed_source.py.txt",
+      "bytes": 4528,
+      "sha256": "017ffdda8ba49f7f5c74d730bc28dcea5e053a34016dc53de518a2ad338ff605",
+      "compression": "none",
+      "raw_bytes": 4528,
+      "raw_sha256": "017ffdda8ba49f7f5c74d730bc28dcea5e053a34016dc53de518a2ad338ff605"
+    },
+    {
+      "original_path": "stderr",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/algebra.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "stdout",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/thermal_compare_reports_02/stdout.txt",
+      "bytes": 255,
+      "sha256": "3da964b27df01feb13d4abf64b8bbae83a915eb4eca0a796821d9d78d2bfebb7",
+      "compression": "none",
+      "raw_bytes": 255,
+      "raw_sha256": "3da964b27df01feb13d4abf64b8bbae83a915eb4eca0a796821d9d78d2bfebb7"
+    }
+  ],
+  "count": 4
+}

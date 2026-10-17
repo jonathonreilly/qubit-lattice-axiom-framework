@@ -1,0 +1,461 @@
+---
+claim_type: conditional_author_theorem
+actual_current_surface_status: new-author-work-awaiting-independent-review
+native_preparation_claim: false
+retained_audit_claim: false
+---
+# A uniform installed-emitter Schur certificate and a common product-seed envelope
+
+The exact capped ladder with one added emitter does admit a uniform installed-system certificate at L=12, coupling kappa=10^-12, and momentum half-width sigma=10^-6. The resonant coordinate must be separated from the other seven emitter coordinates in each parity block. Its optical denominator stays bounded below even though a perturbation of the old matching inverse alone cannot establish this. Every one of the sixteen old/source directions is retained.
+
+The resulting common envelope approximates the actual one-qubit product seed with isometry error below 0.003. The installed reflection columns share one phase with error below 0.000714, including the original positive central residual ceiling 1.76*10^-13. Explicit, deliberately loose derivative bounds give a complete-output isometry error below 0.004 for every t>=10^72 on the infinite clock. This huge sufficient time comes from integration by parts, not a linewidth or an assumed decay law. A finite horizon consequence is stated below.
+
+This is a new source-exposed author derivation. Its analytic inequalities and bounded algebra checks have passed, but the installed-system argument has not received an independent review. The construction assumes a supplied clean clock/source vacuum, a supplied excited emitter, and the static complex loop couplings described below. It establishes neither native preparation of these resources nor a practical size or time. The frozen exploratory route is unchanged.
+
+## 1. Exact dependencies and model
+
+The controlling source copies are in `inputs/`; full identities and original paths are in `SOURCE_MANIFEST.json`.
+
+| Source | SHA256 |
+|---|---|
+| `autonomous_emitter_route/ROUTE.md` | `f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1` |
+| Its `FREEZE.json` | `f5278acb3899cb2749009031c5cff5fd24f72a05d539aa0f3957c6a500af04db` |
+| `two_body_interval_bridge/CANDIDATE.md` | `b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45` |
+| Its `CERTIFICATE.json` | `a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251` |
+| Its input `rational_point_certificate.json` | `6f057d8a580217d29a09d7683462f5b35b71de093e75c8d07a12283cde33593f` |
+| `finite_channel_wavepacket_bridge/THEOREM_V2.md` | `db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3` |
+
+The earlier packet theorem is used with its certified velocity lower bound and curvature upper bound, as specified in V2. The extension to a finite attached graph and the seed-overlap identity are equations (27)-(33) of the frozen emitter route. Those local formulas have separately been checked and provisionally qualified by root; that does not constitute an independent check of the new bounds here.
+
+Use the exact old/source operator and positive physical blocks of the frozen ladder:
+
+    Hg = h0 tensor I + B + P0 tensor VA + P1 tensor VB,
+    h0 = 2J I-J(S+S*),   K=2I+Z1 Z2,
+    B=K+C+G,    B iota=iota K,    iota x=x tensor Omega,
+    Omega=|00>_AB,       Hphysical=Hg+nu I.                (1)
+
+Here J=0.030021107107032 and nu=1.459892813020969 are exact. All other exact ladder coefficients are the pinned certificate's `exact_parameters`; no fit is changed. The old space has dimension four, the old/source space dimension sixteen, and P=X1X2 gives two reducing parity blocks of dimension eight. In either block the two source-vacuum old eigenvalues are 1 and 3. The contact interaction can mix these energies; no commutation of K with the full Hamiltonian is assumed.
+
+Set
+
+    q0=4.510351185997098,   k0=2 arctan(1/q0),  z0=exp(ik0),
+    E(k)=2J(1-cos k),      E0=E(k0),            phi=2k0,
+    L=12,   kappa=1/10^12,  sigma=1/10^6,
+    I=[k0-sigma,k0+sigma].                                (2)
+
+The rational values used in all comparisons are
+
+    Re z0=4835816955256357129429116105401/
+          5335816955256357129429116105401,
+    Im z0=2255175592998549000000000000000/
+          5335816955256357129429116105401,
+    E0=30021107107032000000000000000/
+          5335816955256357129429116105401.
+
+Thus exp(i phi)=z0^2 is exact too. On the larger frozen band |k-k0|<=10^-3 the original certificate supplies
+
+    closed-band gap g=9/50,   |q_closed|<=r=1/7,
+    |q_closed'|<=1/24,       ||M16^-1||2<166,
+    ||M16'||2<=2J/(1-r^2),  |r_j'|<=700,
+    ||alpha_closed,j||<=16, ||alpha_closed,j'||<=700,
+    ||C_g,j||<=31,          ||C_g,j'||<=2700.              (3)
+
+There is exactly one propagating channel at lambda_j(k)=b_j+E(k) in each selected parity block, with b_j in {1,3}. The supplied gap applies to every other channel band. These bounds concern the full physical matrices, not rounded eigenvectors. Also
+
+    0<v=1/40<E'(k),   |E''(k)|<=E2=2J,   E2/v<5/2.       (4)
+
+The new head graph is the half-line plus one emitter e. Bend the path at the four sites
+
+    c_L=(L,2,0), c_(L+1)=(L+1,2,0),
+    c_(L+2)=(L+1,3,0), c_(L+3)=(L+2,3,0), e=(L,3,0).
+
+The new two bonds complete a square. On the one-head sector define V=|L>-exp(i phi)|L+2>, tensored with the identity on all internal directions, and
+
+    Htilde = [[Hg, kappa V], [kappa V*, B+E0]],
+    Htilde_physical=Htilde+(nu+2kappa)I.                  (5)
+
+The explicit full-qubit positive realization is retained from the route. For j=L,L+2, t_L=kappa and t_(L+2)=-kappa exp(i phi), use
+
+    Q_ej=kappa(n_e+n_j)+t_j a_j^dagger a_e+conj(t_j)a_e^dagger a_j,
+    (E0-2kappa)n_e,    kappa(I-n_L),    kappa(I-n_(L+2)).  (6)
+
+Each Q_ej has norm 2kappa and is positive; E0>2kappa. The sum is exactly E0 n_e plus the two desired hoppings plus 2kappa I. It conserves total emitter-plus-clock head number. Its added incident positive-block norm sums are E0+2kappa at e and 3kappa at either clock attachment. Old/source loads are unchanged. The original added old loads are below 2, but its source and boundary-clock loads are not all below 2. The existing old edge is additional. No all-site cap 2 is claimed.
+
+Complex XY/cross-quadrature bonds with this nontrivial loop phase are an explicit extra physical permission. They are not replaced by real native hopping. The initial ready isometry is exactly
+
+    Eseed x=|1>_e tensor |all clock zero> tensor Omega tensor x. (7)
+
+This is an old-independent one-qubit excited product seed. The clock/source vacuum, excitation, exact coefficients and their static phase relation are supplied assumptions. No external drive is applied after t=0, and no output is absorbed into a one-way sink.
+
+## 2. Exact retarded matching, with the resonant coordinate visible
+
+Fix a parity and incident old energy. All norms in this section are Euclidean operator norms in orthonormal physical coordinates. Let Pj=|u_j><u_j| on the eight-dimensional internal block and Pc=I-Pj. Let
+
+    Q=z Pj+sum_closed q_l P_l,    z=exp(ik),
+    A=[J(Q-Q^-1)]^-1,    A Pj=(-i/vg)Pj,   vg=2J sin k.
+
+The fixed spectral projections of B are used only to define matrix functions; the proof does not require certified numerical eigenvectors. Closed channels satisfy ||Pc A||<=1/g by the full-line resolvent gap. Differentiation gives ||A||<=40, ||A'||<=100, using 2J/v^2<100 and 2J/g^2<100.
+
+With M16 in the frozen physical convention, set
+
+    R=M16^-1,   R11=E1* R E1,   T=R11-A,
+    M16=[[lambda-2J-B-VA, JI], [JI, -JQ^-1-VB]],         (8)
+
+where E1 embeds the internal coordinates at clock site 1. Then
+
+    ||T||<=206,   ||T'||<2000,
+    ||R'||<=166^2*2J/(1-r^2)<1710.                       (9)
+
+The Dirichlet-tail recurrence and its unit delta jump give, for n,m>=2,
+
+    Rg(n,m)=A Q^|n-m|+Q^(n-1) T Q^(m-1),
+    Rg=(lambda+i0-Hg)^-1.                               (10)
+
+For example the Dirichlet kernel has the first term minus Q^(n-1) A Q^(m-1); gluing sites 0,1 back adds Q^(n-1)R11 Q^(m-1). This fixes both signs without a scattering-completeness assumption. Define
+
+    X=Q^(L-1)(I-exp(-i phi)Q^2),
+    Y=Q^(L-1)(I-exp(+i phi)Q^2),
+    Sigma_f=A[2I-2cos(phi)Q^2].
+
+Consequently the full installed self-energy and emitter denominator are exactly
+
+    Sigma_g=V*Rg V=Sigma_f+XTY,
+    D_e=(lambda-E0)I-B-kappa^2 Sigma_g.                  (11)
+
+Eliminating only the tail, not the emitter, gives the following actual physical matching matrix on (x0,x1,y_e):
+
+    Maug = [[M16,                  -kappa E1 Y],
+            [-kappa X E1*, (lambda-E0)I-B
+                               -kappa^2(Sigma_f-XAY)]]. (12)
+
+It has dimension 24 per parity, equivalent to a direct sum of two 24-dimensional blocks on the whole internal space. Its Schur complement is (11). The old bridge also used a matrix of dimension 24, but in a different unknown convention. Its bound 366 is not a bound for (12). No norm conversion between those unrelated unknown lists is used. Instead (12) has its own physical-coordinate norm bound below.
+
+The open amplitudes
+
+    g_plus=z^(-L)(1-exp(i phi)z^-2),
+    g_minus=z^L(1-exp(i phi)z^2),
+    a=|g_plus|,  b=|g_minus|,
+    a_max=2sigma, b_min=2sin(2k0)-2sigma, b_max=2,
+    eta=a_max/b_min                                      (13)
+
+satisfy a/b<=eta. In particular a(k0)=0 and b_min>3/2. One has
+
+    |X_open|=a, |Y_open|=b,
+    ||Pc X||,||Pc Y||<=delta=(1+r^2)r^(L-1)
+                            =50/96889010407,
+    ||X||<=a_max, ||Y||<=2, ||X'||,||Y'||<=2L=24.         (14)
+
+The inequality delta<a_max is explicitly checked. Differentiating the open power and closed spectral powers proves the last bound.
+
+A sharper identity than ||T||<=206 is decisive:
+
+    T_jj=(-i/vg) z^2 r_j.                               (15)
+
+Indeed the original absolute-site incoming RHS is (i vg/z)E1u_j, so its site-1 component is (i vg/z)(R11)_jj=z^-1+r_j z. Rearranging gives R11_jj=(-i/vg)(1+r_j z^2), hence (15). Conserved flux gives |r_j|=1. This step keeps the entire gate/source interaction inside its actual reflection coefficient.
+
+## 3. Uniform Schur inverse, closed directions, and bound states
+
+Let Dq=Pc D_e Pc on its seven-dimensional range. Since E0 lies in [0,4J], the closed-band gap in (3) implies
+
+    dist(lambda-E0, spectrum(B|Pc))>=g.
+
+The closed self-energy obeys
+
+    ||Pc Sigma_g Pc||<=Sqq=2(1+r^2)/g+delta^2*206,
+    g-kappa^2 Sqq>1/6,       ||Dq^-1||<6.                (16)
+
+This controls all seven coordinates, including the other vacuum old energy, without replacing them by a scalar spectator. The off-diagonal self-energies satisfy
+
+    ||Pj Sigma_g Pc||<=sPQ=a_max*206*delta,
+    ||Pc Sigma_g Pj||<=sQP=delta*206*b_max.               (17)
+
+The free resonant denominator and its optical imaginary part are
+
+    Df=E(k)-E0-kappa^2 (Sigma_f)_jj,
+    Im Df=kappa^2(a^2+b^2)/(2vg)
+          >=kappa^2 gamma0,
+    gamma0=b_min^2/(4J)>19.549...>19.                    (18)
+
+The only resonant scalar left after eliminating Pc is
+
+    ds=Df-kappa^2 X_jj T_jj Y_jj
+          -kappa^4 (Sigma_g)_jc Dq^-1 (Sigma_g)_cj.     (19)
+
+By (15), the first subtracted term has magnitude kappa^2 ab/vg, at most 2eta Im Df. The second has magnitude at most kappa^4 sPQ*6*sQP. Thus, with
+
+    xi_c=kappa^4 sPQ*6*sQP/(kappa^2 gamma0),
+    xi=2eta+xi_c,
+
+both |ds-Df|<=xi |Df| and
+
+    Im ds >=kappa^2 gamma0(1-xi)>19 kappa^2             (20)
+
+hold uniformly. The second assertion follows by comparing the first correction directly to Im Df, not by confusing a relative modulus bound with an imaginary-part bound. The exact rational check gives xi approximately 2.6106713073*10^-6.
+
+The block triangular inverse factorization now gives
+
+    ||D_e^-1|| <= (1+kappa^2 sPQ*6)(1+kappa^2 sQP*6)
+                        /(19 kappa^2)+6
+                 <1/(18 kappa^2),
+    ||Maug^-1|| <=(1+166 kappa b_max)(1+166 kappa a_max)
+                           /(18 kappa^2)
+                  <1/(17 kappa^2).                      (21)
+
+Here 166<1/(18 kappa^2), so the latter factorization controls the original block too. All norm comparisons are exact rational inequalities. Equivalently the smallest singular value of the precise matrix (12) exceeds 17 kappa^2. In particular this is a uniform interval bound, not a grid of nonsingular points.
+
+An eigenvector at any selected-band energy would have zero open tail and a decaying closed tail. It would therefore solve the homogeneous outgoing matching equations (12). Invertibility forces its contact/emitter coordinates, and then its whole tail, to vanish. There are no installed bound states in either selected old-energy band in either parity. Outside those bands bound states are allowed.
+
+For the physical product seed, exact application of (5) gives
+
+    ||(Htilde_physical-b_j-E0-nu-2kappa)Eseed e_j||^2
+          =2kappa^2.
+
+The spectral theorem and (4) bound each column's amplitude outside its band by sqrt(2)kappa/(v sigma). There are two potentially nonorthogonal columns per parity, so the safe operator bound is 2kappa/(v sigma)=8*10^-5. Since no point eigenvalue lies in these bands, this also bounds the full point-spectral amplitude of the seed. It is not set to zero or postselected away. The overlap error below already covers it.
+
+## 4. One common seed profile and the full operator overlap
+
+Let Phi_j^g be the original unit-incoming stationary column. Direct substitution in the certified tail gives
+
+    w_j=V*Phi_j^g=[conj(g_minus)+r_j conj(g_plus)]u_j+w_cj,
+    ||w_cj||<=w_c=16(1+r^2)r^(L-2)=800/13841287201,
+    ||w_cj'|| <=[700(1+r^2)+32r/24]r^(L-2)
+                     +16(L-2)(1+r^2)r^(L-3)/24.         (22)
+
+The augmented column is exactly
+
+    y_j=kappa D_e^-1 w_j,
+    Phi_j|clock=Phi_j^g+kappa Rg V y_j,
+    Phi_j(e)=y_j.                                       (23)
+
+Define the common scalar profile
+
+    yref(k)=kappa conj(g_minus(k))/Df(k).                (24)
+
+It is independent of j: all four columns have the same E(k), E0 and free form factor after their actual old energy b_j has been subtracted. Solving the two Schur rows, rather than declaring separate column phases, yields
+
+    |(y_j)_j/yref-1|<=eta_p,
+    eta_p=[eta+kappa^2 sPQ*6*w_c/b_min+xi]/(1-xi)
+             <4*10^-6,
+    ||Pc y_j||<=6 kappa w_c
+               +6 kappa^2 delta*206*b_max*(1+eta_p)|yref|. (25)
+
+The exact stored eta_p is approximately 3.9160171843*10^-6. None of the other emitter coordinates has been projected away in (25).
+
+For normalization use the scalar full-line two-contact emitter, only as an exactly calculable reference spectral measure. Its emitter resolvent is 1/Df and its two continuum weights, in dk, are
+
+    kappa^2 a^2/(2pi |Df|^2),
+    kappa^2 b^2/(2pi |Df|^2)=|yref|^2/(2pi).             (26)
+
+The retarded jump of 1/Df gives their sum. On the selected band its denominator has positive imaginary part and a smooth boundary value, so scalar Stieltjes inversion gives an absolutely continuous measure there. Its total spectral measure is one, including any outside-band point masses. No global scattering completeness or Markov law is imposed.
+
+Set h=sigma/2. On |k-k0|<=h, the wrong-direction weight fraction is at most [h/(sin(2k0)-h)]^2. The reference seed variance is exactly 2kappa^2; therefore its spectral mass outside this inner energy band is at most 2kappa^2/(vh)^2. Choose the common real cutoff chi equal to one on |k-k0|<=h, linear down to zero on each remaining half-band, and zero outside I. Define
+
+    N^2=(1/(2pi)) integral_I chi^2 |yref|^2 dk,
+    f(k)=chi(k) conj(yref(k))/(sqrt(2pi) N),
+    delta_m=2kappa^2/(vh)^2+[h/(sin(2k0)-h)]^2.           (27)
+
+It follows rigorously that
+
+    1>=N^2>=1-delta_m,   delta_m<13*10^-9,   N>0.99,
+    ||f||2=1,   f in W^(1,1)_0(I),
+    Aref=(1/(2pi N)) integral_I chi |yref|^2 dk in [N,1]. (28)
+
+The lower Aref bound uses chi>=chi^2; the upper is Cauchy-Schwarz and the total mass bound from (26). No narrow-resonance quadrature is used.
+
+Use this same f in every column and set
+
+    Gamma_t e_j=(1/sqrt(2pi)) integral_I
+                     f(k) Phi_j(k) exp[-iE(k)t] dk,
+    Aseed=Eseed* Gamma_0.                                (29)
+
+The regularity bounds in section 6 and the past-limit normalization proof of the pinned bridge show that Gamma_t is an exact isometry. Specifically the incident full-line packet is normalized, its excluded half tends to zero in the past, and reflected/localized parts tend to zero. Selfadjoint evolution then preserves the limiting inner products. This proof includes the emitter as a localized coordinate and does not require the scattering columns to span the whole Hilbert space.
+
+Equation (25) bounds each diagonal entry of Aseed-Aref I by eta_p. Each off-diagonal entry inside a parity block is bounded by
+
+    epsilon_off=6 kappa w_c
+                  +6 kappa^2 delta*206*b_max*(1+eta_p)
+                 <10^-18.                               (30)
+
+Here ||f||1/sqrt(2pi)<=1 and integral |f yref|/sqrt(2pi)=Aref<=1 were used. Entries between parities vanish exactly. For a 2 by 2 block, the diagonal part has norm at most eta_p and the off-diagonal part norm at most epsilon_off. Consequently
+
+    ||Aseed-Aref I||<=eta_p+epsilon_off,
+    ||Eseed-Gamma_0||^2=||2I-Aseed-Aseed*||
+         <=2(delta_m+eta_p+epsilon_off)
+          <(3/1000)^2.                                  (31)
+
+The exact squared ceiling before the last rounding is approximately 7.8576352206*10^-6. This is the requested full operator overlap test, not a diagonal-only or columnwise phase test. It covers arbitrary old states and passive references. The f in (27) describes the seed's common mathematical scattering envelope; an external apparatus is not asked to synthesize that packet. The physical readiness premise remains the supplied product state (7).
+
+## 5. Complete reflection, returns, and the single common scalar
+
+For n>=L+2, equation (10) gives
+
+    (Rg V)(n)=Q^(n-L-2) Dtail,
+    Dtail=A(Q^2-exp(i phi)I)+Q^(L+1)TY,
+    brow=z^(-L-2) Pj Dtail,
+    R_aug,j=r_j+kappa brow y_j.                          (32)
+
+Selfadjoint current conservation for (5), including the complex loop bonds, gives |R_aug,j|=1. There is one open channel, closed tails carry no asymptotic flux, and there is no absorber.
+
+The open coordinate of brow is exactly (-i/vg)(g_plus+r_j g_minus), by (15). Let
+
+    t_minus=1+kappa^2(-i/vg)b^2/Df,
+    tau=t_minus/|t_minus|.                              (33)
+
+The free two-port optical identity gives |t_minus|^2=1-|r_free|^2, with |r_free|<=2eta. Thus |t_minus|>1/2 and replacing it by tau costs at most 4eta^2. Substituting (24)-(25) into (32) gives the explicit full-system estimate
+
+    |R_aug,j-r_j t_minus|
+       <=2eta+2(1+eta)eta_p+epsilon_closed,
+    epsilon_closed=6 kappa^2*206*delta*w_c
+          +6 kappa^2 delta^2*206^2*b_max*(1+eta_p)*(4J/b_min).
+
+The first term is the prompt emitter-reflected amplitude. The second controls the actual change of the resonant coordinate, including repeated open feedback. The last term is the complete closed-coordinate contribution. They follow from the exact resolvent (23), so no returning pass is dropped from a path sum. In the second term of epsilon_closed one uses |yref|<=2vg/(kappa b) and vg<=2J. Hence
+
+    |R_aug,j-r_j tau|<=epsilon_phase
+       =2eta+2(1+eta)eta_p+epsilon_closed+4eta^2
+          <11*10^-6.                                    (34)
+
+Retain precisely the old target
+
+    W=((9+12i)I+(-16+12i)X1X2)/25,
+    omega_+=(-7+24i)/25, omega_-=1,
+    zeta=-exp(-4ik0) alpha,
+    r0(k)=-exp(2ik),     rho(k)=r0(k) tau(k).             (35)
+
+Here alpha is the exact unit reflection of the frozen (s=-1,p=-1) witness in its site-1 normalization. Multiplying that stationary column by exp(-ik) converts to absolute-site normalization and r_abs=exp(-2ik)r_site1. Thus zeta in (35), not alpha alone, is the fixed target scalar. This is the same scalar as the frozen interval theorem. Its physical vacancy scalar remains separate.
+
+The original comparison and (34) now imply on the entire I
+
+    max_j |R_aug,j-zeta omega_j rho|
+        <=1.76*10^-13+702 sigma+epsilon_phase
+          <714/10^6.                                    (36)
+
+One rho and one f serve all four channels. No old-dependent phase fitting, exact chirality on an interval, arbitrary exact calibration or irreversible sink is used.
+
+## 6. Explicit regularity and complete localized tails
+
+This section supplies conservative constants so that the seed-overlap and late-time claims have checked hypotheses. Differentiating (11)-(14) gives
+
+    ||Sigma_g'||<11000,   ||D_e'||<0.061,
+    ||Maug'||<0.063,
+    ||w_j||<3, ||w_j'||<30,
+    ||y_j||<=1/kappa, ||y_j'||<=1/kappa^3.                (37)
+
+For example ||Sigma_f'||<=4*100+4*40=560; the XTY derivative is bounded by 24*206*2+a_max*2000*2+a_max*206*24. The inverse derivative is -D_e^-1 D_e' D_e^-1. Its substitution with (21) verifies the last two generous bounds in (37).
+
+Let Kloc map an emitter-coordinate vector y to Rg V y minus its outgoing open wave on every clock site, including sites 0 and 1. On sites 0,1 the unsubtracted stack is R E1Y, with norm <=332 and derivative <7404. On each site 2 through L+1 it has norm <=492 and derivative <16000. The outgoing coefficient obeys
+
+    ||Dtail||<=492, ||Dtail'||<=14580,
+    ||brow||<=492,  ||brow'||<=21468.                    (38)
+
+For n>=L+2 the subtracted expression is exactly the closed tail Q^(n-L-2)Pc Dtail. Its norm and derivative sums use
+
+    sum_(m>=0) r^(2m)=1/(1-r^2),
+    sum_(m>=1) m^2 r^(2m-2)=(1+r^2)/(1-r^2)^3.
+
+Their square roots are below 1.011 and 1.05. Adding the finitely many earlier coordinates by the triangle inequality yields
+
+    ||Kloc||<20000,       ||Kloc'||<10^6.                (39)
+
+For clarity, the actual positive upper expressions checked are
+
+    K0<=332+2*492+L*(492+492)+492*1.011,
+    K1<=7404+492+2*21468
+          +L*[16000+(L+1)*492+21468]
+          +14580*1.011+492*(1/24)*1.05.
+
+The augmented localized correction is C_g,j+kappa Kloc y_j on the clock and y_j on the emitter. Thus its full Hilbert-space bounds, retaining all source outputs and every closed tail, are
+
+    ||C_aug,j||<=31+(1+20000 kappa)/kappa <C0=2*10^12,
+    ||C_aug,j'||<=2700+kappa*10^6/kappa
+                         +(1+20000 kappa)/kappa^3
+                      <C1=2*10^36,
+    |R_aug,j'|<700+kappa[21468/kappa+492/kappa^3]
+                 <1000/kappa^2.                         (40)
+
+The scalar Df has derivative magnitude below 0.061. From (24), |yref|<=1/kappa and |yref'|<=1/kappa^3. Since ||chi'||1=2 and sqrt(2pi)N>2, (27) gives
+
+    F0=||f||1<1/500,
+    F1=||f'||1<=1/kappa+sigma/kappa^3<2*10^30.            (41)
+
+Differentiating (33) bounds
+
+    |t_minus'|<=720/19+160*0.061/(19^2 kappa^2)<1/kappa^2,
+    |rho'|<=2+4/kappa^2<5/kappa^2=:Lrho.                 (42)
+
+The first inequality uses ||A_open'||<=100, b<=2 and |(b^2)'|<=8. All coefficients are C^1 on the compact band; the cutoff is Lipschitz with zero endpoint trace. Equations (37)-(42) are consequently sufficient for the bridge's Hilbert-valued integration by parts.
+
+## 7. Conditional complete-output result, actual aging, and a finite horizon
+
+Let b_t(n)=(1/sqrt(2pi)) integral_I f(k)rho(k) exp[ikn-iE(k)t] dk on n>=0 and let beta_t=b_t/||b_t||, embedded with emitter unoccupied. Define
+
+    Uideal(t)x=zeta exp[-i(nu+2kappa)t]
+                   beta_t tensor iota exp(-itK)W x.      (43)
+
+The complete-output estimate concerns the full graph, old system, both source qubits, and an arbitrary passive reference. The source is compared to its actual vacuum in the ideal state; it is not traced out to claim success. The old factor uses the entire elapsed time from the seed at t=0, including emission and flight. It follows from the exact column intertwining
+
+    exp(-it Htilde)Gamma_0=Gamma_t exp(-it diag(b_j)),
+
+not from an invalid commutation of K through the interacting Hamiltonian.
+
+Set the conservative packet constants
+
+    A0=B0=3*10^30,
+    Dj=F1*C0+F0*C1+(5/2)F0*C0<5*10^42,
+    D=8*10^42>sqrt(2) max_j Dj.                          (44)
+
+There are two localized error columns per parity; (44) pays their square-sum factor, with no assumption that they are orthogonal. Distinct parities are orthogonal. Open outgoing vacuum columns are orthogonal and use the maximum in (36).
+
+The exact isometry normalization and integration-by-parts estimates of the pinned bridge and route give, whenever vt>=1 and B0/sqrt(pi vt)<=1/2,
+
+    ||exp(-it Htilde_physical)Eseed-Uideal(t)||
+       <=0.003+0.000714+(A0+B0)/sqrt(pi vt)
+                                    +D/(sqrt(2pi)vt).   (45)
+
+This follows by applying unitary evolution to (31), then estimating the unwanted incoming half-line wave, the normalized outgoing wave, and the localized part in (29). The normalization cost is bounded by the negative-half-line norm of the full-line outgoing Fourier packet. The exact scattering packet is orthogonal to normal bound eigenvectors by the past-limit argument; any seed point amplitude is included in (31), with the sharper separate bound 8*10^-5 from section 3. It is not added twice or omitted.
+
+For the declared finite sufficient onset
+
+    T=10^72,
+
+the exact inequalities (27*10^34)^2<3vT, pi>3, sqrt(2pi)>12/5 show that the final two terms in (45) are at most
+
+    6*10^30/(27*10^34)+8*10^42/[(12/5)vT]
+       =500000000000000000000003/22500000000000000000000000000.
+
+The whole right side is at most
+
+    84065000000000000000000003/22500000000000000000000000000
+        <0.004                                             (46)
+
+for every t>=T. Complete unhalved trace distance is therefore below 0.008. These costs are intentionally poor sufficient analytic bounds; there was no long-time dynamics simulation and no claim that T is close to the actual emission or gate time.
+
+For a finite device retain clock sites 0,...,M-1 and e, using the actual compression of the same Hamiltonian and the far-end clock diagonal J n_(M-1). The radius 19 about the old certificate's spectral center contains both the decoupled clock and B+E0 emitter spectra plus the off-diagonal perturbation of norm sqrt(2)kappa. The physical common scalar changes that center only. From the seed e the first omitted clock site c_M is exactly
+
+    dM=M-L-1
+
+graph hops away, through c_(L+2). The other route is two hops longer. The polynomial/Chebyshev argument therefore bounds the embedded finite versus infinite evolution by
+
+    4 exp[-dM+19t sinh(1)]/[1-exp(-1)].                   (47)
+
+Choose integers
+
+    Tobs=2*10^72,        M=5*10^73.
+
+The checked strict inequality dM>19*Tobs*(6/5)+9, together with the inherited elementary bounds sinh(1)<6/5 and log[4/((1-exp(-1))*10^-3)]<9, makes (47) less than 0.001 throughout [T,Tobs]. Thus that embedded finite output has complete isometry error below 0.005 and unhalved trace error below 0.01 on this finite time interval. The comparator in (43) remains the normalized half-line output. This is a finite existence example, not a hardware resource proposal; no matrix of size M was created. No fixed finite device is claimed to satisfy (46) for all future times.
+
+## 8. Bounded evidence, independence limits, and remaining obligations
+
+`CAPS.json` was written before computation: 30 CPU seconds, 60 wall seconds, maximum executed dimension 48, three diagnostic momenta times four sectors, no optimizer and no time evolution. The actual largest executed matrix was 24. The one execution of `certify_installed_emitter.py` exited 0 in 2.565229 seconds of wrapper wall time (2.431585 seconds reported by the program). Python 3.13.5, SymPy 1.14.0 and mpmath 1.3.0 were used. `run01_execution.json` records the command, binary hash, source hash, environment and output hashes. The script's SHA256 is `950973354e69857ab19e40dbbf185ada46d1cda8a8a6c201c35fecf97a74623c`.
+
+All uniform numerical ceilings are exact Fraction comparisons. In particular `display_float` entries in `CERTIFICATE.json` are rounded displays, not outward enclosures. The interval argument is (16)-(21), not a nonsingularity grid. The code additionally performs two distinct checks:
+
+1. Exact finite elimination on the actual L=12 attachment geometry, using a scalar closed lead q=3/5, J=1, kappa=1/10 and non-real phase (3+4i)/5. Direct elimination of sites 2,...,14 in a 16-dimensional matrix with the exact outgoing Robin boundary gives (12) and its emitter Schur complement identically. This tests the signs and coordinate convention by a separate finite computation; it is not the physical interval proof.
+2. Full physical matrices at k0 and k0+-10^-6 in all four (old-energy, parity) sectors, at 90 decimal digits. The code retains every closed channel, checks the augmented inverse against its Schur complement, verifies (15), evaluates the profile comparison and checks flux. The largest inverse residual was below 3*10^-81 and the largest observed relative profile error below 1.306*10^-6. These floating diagnostics are not substituted for rigorous enclosures. Full sixteen-dimensional B, its vacuum identity and its exact parity reductions are also checked symbolically.
+
+Full stdout and stderr are preserved as `run01.stdout` and `run01.stderr`; the actual executed source is copied to `run01_script.py`. `CERTIFICATE.json` is the unchanged JSON stdout. No failed numerical run, discarded search candidate, optimizer, unreported retuning or alternative installation was used in this bounded step. The earlier one-point-emitter failure remains in the unchanged exploratory route.
+
+The main independent-review targets are the noncommuting matrix tail gluing in (10)-(12), the resonant/open-closed Schur bounds, the common-envelope spectral-mass argument and the full operator overlap in (31), and the complete-localized regularity/normalization chain leading to (45). The distinct algebra calculation is a useful sign check but does not make this author's derivation independent of itself. The inherited model and reasoning effort were preserved; there was no delegation or model override.
+
+Within this conditional mathematical model, the former installed inverse, common overlap and finite-time constant obligations now have explicit proposed certificates. Independent review of this new theorem remains required before accepting them. Physical permissions still open are the supplied clean vacuum and excited seed, exact static complex loop couplings and ladder coefficients, apparatus construction/precision, and any native interpretation or practical optimization. No uniform fit family, arbitrary accuracy below the fixed central ceiling, reset, reuse, selected classical Record, noise robustness, or global source/clock cap is inferred. The source qualification of earlier work does not grant these permissions.
+
+All writes in this step are confined to `emitter_installed_certificate/`. The frozen route and original sources are unchanged. No repository, Git state, PR, prompt, axiom, audit or shared checkpoint was edited.

@@ -1,0 +1,1185 @@
+{
+  "analytical_entries_unchanged": 24,
+  "attempts": [
+    {
+      "bindings_current": [
+        {
+          "identity": {
+            "bytes": 2202,
+            "device": 16777231,
+            "inode": 518538225,
+            "mtime_ns": 1792212541179238826,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/PLAN.md",
+            "sha256": "4d2179a635b5faa3f73a5a7ac345a51900fecc2402def84afdb5aafdab72f280"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 791,
+            "device": 16777231,
+            "inode": 518538226,
+            "mtime_ns": 1792212541179341533,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/RESOURCE_PLAN.json",
+            "sha256": "43fe3aa6ab6aedda6c76e509f0187594b32c7e081ca68404ce04b85fa854341e"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 7467,
+            "device": 16777231,
+            "inode": 518538224,
+            "mtime_ns": 1792212541179108784,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/SOURCE_MAP.json",
+            "sha256": "c1a701881fdeb81ce3f878b7851f9f6f0b36f15d04b879f213d2fb76f902f1f9"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 28103,
+            "device": 16777231,
+            "inode": 518539817,
+            "mtime_ns": 1792213009974238154,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/CANDIDATE.md",
+            "sha256": "57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 13957,
+            "device": 16777231,
+            "inode": 518539494,
+            "mtime_ns": 1792212816168169440,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/check_preparation.py",
+            "sha256": "70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 6185,
+            "device": 16777231,
+            "inode": 518540164,
+            "mtime_ns": 1792213056831666315,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/launch_check.py",
+            "sha256": "3cf8834d377e20553c4d979967b45b868ab245b620395a07b826b5693579cafe"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 32324,
+            "device": 16777231,
+            "inode": 518538207,
+            "mtime_ns": 1792212541163115096,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/realifier.md",
+            "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 11001,
+            "device": 16777231,
+            "inode": 518538208,
+            "mtime_ns": 1792212541163445178,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/realifier_freeze.json",
+            "sha256": "16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 8399,
+            "device": 16777231,
+            "inode": 518538209,
+            "mtime_ns": 1792212541165275546,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/realifier_source_manifest.json",
+            "sha256": "717b918b6b67b736daaddf9f51bde2182ff6013b3a925395744a5881a2b1149a"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 39464,
+            "device": 16777231,
+            "inode": 518538210,
+            "mtime_ns": 1792212541166363625,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/family.md",
+            "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 10085,
+            "device": 16777231,
+            "inode": 518538211,
+            "mtime_ns": 1792212541166936415,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/family_acceptance.json",
+            "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 2896,
+            "device": 16777231,
+            "inode": 518538212,
+            "mtime_ns": 1792212541167555620,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/family_qualification.md",
+            "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 24275,
+            "device": 16777231,
+            "inode": 518538213,
+            "mtime_ns": 1792212541168058119,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/parameters.json",
+            "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 37370,
+            "device": 16777231,
+            "inode": 518538214,
+            "mtime_ns": 1792212541169190197,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/resonance.md",
+            "sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 6363,
+            "device": 16777231,
+            "inode": 518538215,
+            "mtime_ns": 1792212541170256360,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/resonance_acceptance.json",
+            "sha256": "bb280c96d290e28b42c45994cab3fe9871d671b0d20d39a36ae09d211ef98686"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 1896,
+            "device": 16777231,
+            "inode": 518538216,
+            "mtime_ns": 1792212541170763983,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/resonance_qualification.md",
+            "sha256": "88db9d4dcfdae159ad3478776441857db7dac0117db80dc13123be94267e4e84"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 28456,
+            "device": 16777231,
+            "inode": 518538217,
+            "mtime_ns": 1792212541171607313,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/product_preparation.md",
+            "sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 8169,
+            "device": 16777231,
+            "inode": 518538218,
+            "mtime_ns": 1792212541172080020,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/product_preparation_qualification.md",
+            "sha256": "5e4cc2c916d9240ec5bb0b2a84559ae38fd2b20959e63c52d6b3c0bda04a2d69"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 11788,
+            "device": 16777231,
+            "inode": 518538219,
+            "mtime_ns": 1792212541173742138,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/workflow.md",
+            "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 9276,
+            "device": 16777231,
+            "inode": 518538220,
+            "mtime_ns": 1792212541174548094,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/physics_loop.md",
+            "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 30709,
+            "device": 16777231,
+            "inode": 518538221,
+            "mtime_ns": 1792212541175401257,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/discovery.md",
+            "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 16755,
+            "device": 16777231,
+            "inode": 518538222,
+            "mtime_ns": 1792212541175902088,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/claim_status.md",
+            "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 16454,
+            "device": 16777231,
+            "inode": 518538223,
+            "mtime_ns": 1792212541176290795,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/delivery.md",
+            "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 13957,
+            "device": 16777231,
+            "inode": 518540170,
+            "mtime_ns": 1792213060008449832,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run01/executed_source.py",
+            "sha256": "70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 52640,
+            "device": 16777231,
+            "inode": 31187059,
+            "mtime_ns": 1751028755689299885,
+            "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+            "sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 40021,
+            "device": 16777231,
+            "inode": 31183739,
+            "mtime_ns": 1749656217000000000,
+            "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/fractions.py",
+            "sha256": "58f7750133f2e23999ba3f634d1b14edfec6dc48bf8bb00a9911262cd7198f63"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 29422,
+            "device": 16777231,
+            "inode": 96387496,
+            "mtime_ns": 1776471071872214098,
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py",
+            "sha256": "4e9476348ba105feab28d82f5bcf6cdba2e3e84de6e059bbfe7a13728c0a4ab0"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 12816,
+            "device": 16777231,
+            "inode": 96389224,
+            "mtime_ns": 1776471072101500080,
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy-1.14.0.dist-info/METADATA",
+            "sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595"
+          },
+          "matches_pre_and_post": true
+        }
+      ],
+      "captured_utc": "2026-10-17T04:57:40.033133+00:00",
+      "completed_utc": "2026-10-17T04:57:40.101451+00:00",
+      "cpu_system_seconds": 0.007796999999999998,
+      "cpu_user_seconds": 0.022975,
+      "exit_code": 1,
+      "input_count": 24,
+      "limits": {
+        "cpu_soft_hard_seconds": [
+          20,
+          20
+        ],
+        "external_wall_seconds": 30,
+        "memory_cap": null
+      },
+      "prelaunch": {
+        "bytes": 11652,
+        "sha256": "dab1aad62baf91606f756a2ed196a4d1637c3abadda9cf2898cb170a60bd44b0"
+      },
+      "receipt": {
+        "bytes": 12252,
+        "sha256": "72523278579e95f68383ff7bd367b4b731f244ff99ac8dfabf53910574e4bce0"
+      },
+      "rss_bytes": 22052864,
+      "run": "run01",
+      "runtime_count": 4,
+      "started_utc": "2026-10-17T04:57:40.053170+00:00",
+      "status": "failure",
+      "wall_seconds": 0.04669991694390774
+    },
+    {
+      "bindings_current": [
+        {
+          "identity": {
+            "bytes": 2202,
+            "device": 16777231,
+            "inode": 518538225,
+            "mtime_ns": 1792212541179238826,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/PLAN.md",
+            "sha256": "4d2179a635b5faa3f73a5a7ac345a51900fecc2402def84afdb5aafdab72f280"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 791,
+            "device": 16777231,
+            "inode": 518538226,
+            "mtime_ns": 1792212541179341533,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/RESOURCE_PLAN.json",
+            "sha256": "43fe3aa6ab6aedda6c76e509f0187594b32c7e081ca68404ce04b85fa854341e"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 7467,
+            "device": 16777231,
+            "inode": 518538224,
+            "mtime_ns": 1792212541179108784,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/SOURCE_MAP.json",
+            "sha256": "c1a701881fdeb81ce3f878b7851f9f6f0b36f15d04b879f213d2fb76f902f1f9"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 28103,
+            "device": 16777231,
+            "inode": 518539817,
+            "mtime_ns": 1792213009974238154,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/CANDIDATE.md",
+            "sha256": "57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 13957,
+            "device": 16777231,
+            "inode": 518539494,
+            "mtime_ns": 1792212816168169440,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/check_preparation.py",
+            "sha256": "70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 6690,
+            "device": 16777231,
+            "inode": 518540251,
+            "mtime_ns": 1792213102333918048,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/launch_check_v2.py",
+            "sha256": "01aea125363730584637792cd33773e5ed3cc081b29fd748fb34e660e2712e66"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 1515,
+            "device": 16777231,
+            "inode": 518540248,
+            "mtime_ns": 1792213102226323896,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/RETRY_AMENDMENT.md",
+            "sha256": "3fdd04be15d4f0f7f5a2fa4793183aa6e9d7d886f950c72d107a25a462977dbc"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 32324,
+            "device": 16777231,
+            "inode": 518538207,
+            "mtime_ns": 1792212541163115096,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/realifier.md",
+            "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 11001,
+            "device": 16777231,
+            "inode": 518538208,
+            "mtime_ns": 1792212541163445178,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/realifier_freeze.json",
+            "sha256": "16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 8399,
+            "device": 16777231,
+            "inode": 518538209,
+            "mtime_ns": 1792212541165275546,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/realifier_source_manifest.json",
+            "sha256": "717b918b6b67b736daaddf9f51bde2182ff6013b3a925395744a5881a2b1149a"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 39464,
+            "device": 16777231,
+            "inode": 518538210,
+            "mtime_ns": 1792212541166363625,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/family.md",
+            "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 10085,
+            "device": 16777231,
+            "inode": 518538211,
+            "mtime_ns": 1792212541166936415,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/family_acceptance.json",
+            "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 2896,
+            "device": 16777231,
+            "inode": 518538212,
+            "mtime_ns": 1792212541167555620,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/family_qualification.md",
+            "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 24275,
+            "device": 16777231,
+            "inode": 518538213,
+            "mtime_ns": 1792212541168058119,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/parameters.json",
+            "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 37370,
+            "device": 16777231,
+            "inode": 518538214,
+            "mtime_ns": 1792212541169190197,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/resonance.md",
+            "sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 6363,
+            "device": 16777231,
+            "inode": 518538215,
+            "mtime_ns": 1792212541170256360,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/resonance_acceptance.json",
+            "sha256": "bb280c96d290e28b42c45994cab3fe9871d671b0d20d39a36ae09d211ef98686"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 1896,
+            "device": 16777231,
+            "inode": 518538216,
+            "mtime_ns": 1792212541170763983,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/resonance_qualification.md",
+            "sha256": "88db9d4dcfdae159ad3478776441857db7dac0117db80dc13123be94267e4e84"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 28456,
+            "device": 16777231,
+            "inode": 518538217,
+            "mtime_ns": 1792212541171607313,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/product_preparation.md",
+            "sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 8169,
+            "device": 16777231,
+            "inode": 518538218,
+            "mtime_ns": 1792212541172080020,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/product_preparation_qualification.md",
+            "sha256": "5e4cc2c916d9240ec5bb0b2a84559ae38fd2b20959e63c52d6b3c0bda04a2d69"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 11788,
+            "device": 16777231,
+            "inode": 518538219,
+            "mtime_ns": 1792212541173742138,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/workflow.md",
+            "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 9276,
+            "device": 16777231,
+            "inode": 518538220,
+            "mtime_ns": 1792212541174548094,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/physics_loop.md",
+            "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 30709,
+            "device": 16777231,
+            "inode": 518538221,
+            "mtime_ns": 1792212541175401257,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/discovery.md",
+            "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 16755,
+            "device": 16777231,
+            "inode": 518538222,
+            "mtime_ns": 1792212541175902088,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/claim_status.md",
+            "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 16454,
+            "device": 16777231,
+            "inode": 518538223,
+            "mtime_ns": 1792212541176290795,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/delivery.md",
+            "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 13957,
+            "device": 16777231,
+            "inode": 518540259,
+            "mtime_ns": 1792213107309163458,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run02/executed_source.py",
+            "sha256": "70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 291,
+            "device": 16777231,
+            "inode": 518540260,
+            "mtime_ns": 1792213107316413918,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run02/import_bootstrap.py",
+            "sha256": "ef9ce7914a1a91b6ad66546d1f3c6e2b8d90caf8b06a446ada0862bfafafb954"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 52640,
+            "device": 16777231,
+            "inode": 31187059,
+            "mtime_ns": 1751028755689299885,
+            "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+            "sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 40021,
+            "device": 16777231,
+            "inode": 31183739,
+            "mtime_ns": 1749656217000000000,
+            "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/fractions.py",
+            "sha256": "58f7750133f2e23999ba3f634d1b14edfec6dc48bf8bb00a9911262cd7198f63"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 29422,
+            "device": 16777231,
+            "inode": 96387496,
+            "mtime_ns": 1776471071872214098,
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py",
+            "sha256": "4e9476348ba105feab28d82f5bcf6cdba2e3e84de6e059bbfe7a13728c0a4ab0"
+          },
+          "matches_pre_and_post": true
+        },
+        {
+          "identity": {
+            "bytes": 12816,
+            "device": 16777231,
+            "inode": 96389224,
+            "mtime_ns": 1776471072101500080,
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy-1.14.0.dist-info/METADATA",
+            "sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595"
+          },
+          "matches_pre_and_post": true
+        }
+      ],
+      "captured_utc": "2026-10-17T04:58:27.317683+00:00",
+      "completed_utc": "2026-10-17T04:58:27.837500+00:00",
+      "cpu_system_seconds": 0.045882,
+      "cpu_user_seconds": 0.37763599999999997,
+      "exit_code": 0,
+      "input_count": 26,
+      "limits": {
+        "cpu_soft_hard_seconds": [
+          20,
+          20
+        ],
+        "external_wall_seconds": 30,
+        "memory_cap": null
+      },
+      "prelaunch": {
+        "bytes": 12400,
+        "sha256": "ece64c03346f6b886d5ae665ac0b4938158d4f48e6b8a93360a6f9872d079197"
+      },
+      "receipt": {
+        "bytes": 13213,
+        "sha256": "4e2bcee5a4fee720317edda68204bf65f5902d6e6720bed99fa837f1f375c2c5"
+      },
+      "rss_bytes": 66846720,
+      "run": "run02",
+      "runtime_count": 4,
+      "started_utc": "2026-10-17T04:58:27.339722+00:00",
+      "status": "ok",
+      "wall_seconds": 0.4957573749125004
+    }
+  ],
+  "author_freeze_utc": "2026-10-17T05:00:53.137097+00:00",
+  "author_inventory": [
+    {
+      "bytes": 28103,
+      "sha256": "57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c",
+      "snapshot": "author_packet/CANDIDATE.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/CANDIDATE.md"
+    },
+    {
+      "bytes": 4237,
+      "sha256": "da361e699a57375056663a3a04cf88fee7c3f3c3182e78515916bcae5fbcf129",
+      "snapshot": "author_packet/EXECUTION.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/EXECUTION.md"
+    },
+    {
+      "bytes": 6576,
+      "sha256": "0d3845e3902127f5260f34dd57112cc8db4e284adadab7ce63cfeff3f2a512f3",
+      "snapshot": "author_packet/FILE_MANIFEST.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/FILE_MANIFEST.json"
+    },
+    {
+      "bytes": 7627,
+      "sha256": "7d106bb39458858263c70ea41d9ae7605fdfbc8cd2753d05a261551ad397dd31",
+      "snapshot": "author_packet/FINAL_CHECK.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/FINAL_CHECK.json"
+    },
+    {
+      "bytes": 1170,
+      "sha256": "41ce93b77d46c1dbecdde6f674201ca8b6e20026ae10231fe9b925fb69468e49",
+      "snapshot": "author_packet/FREEZE.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/FREEZE.json"
+    },
+    {
+      "bytes": 2202,
+      "sha256": "4d2179a635b5faa3f73a5a7ac345a51900fecc2402def84afdb5aafdab72f280",
+      "snapshot": "author_packet/PLAN.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/PLAN.md"
+    },
+    {
+      "bytes": 1543,
+      "sha256": "c9906b433cb9f15d443e429e85f493cca64ed193a21e0c214955ba19ca8fd462",
+      "snapshot": "author_packet/README.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/README.md"
+    },
+    {
+      "bytes": 791,
+      "sha256": "43fe3aa6ab6aedda6c76e509f0187594b32c7e081ca68404ce04b85fa854341e",
+      "snapshot": "author_packet/RESOURCE_PLAN.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/RESOURCE_PLAN.json"
+    },
+    {
+      "bytes": 1515,
+      "sha256": "3fdd04be15d4f0f7f5a2fa4793183aa6e9d7d886f950c72d107a25a462977dbc",
+      "snapshot": "author_packet/RETRY_AMENDMENT.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/RETRY_AMENDMENT.md"
+    },
+    {
+      "bytes": 2899,
+      "sha256": "b542fa374808ec55bd91d78e5fcadc4fd63bc417b028fe7dcfed3172a0614359",
+      "snapshot": "author_packet/SOURCE_COVERAGE.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/SOURCE_COVERAGE.md"
+    },
+    {
+      "bytes": 7467,
+      "sha256": "c1a701881fdeb81ce3f878b7851f9f6f0b36f15d04b879f213d2fb76f902f1f9",
+      "snapshot": "author_packet/SOURCE_MAP.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/SOURCE_MAP.json"
+    },
+    {
+      "bytes": 13957,
+      "sha256": "70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0",
+      "snapshot": "author_packet/check_preparation.py",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/check_preparation.py"
+    },
+    {
+      "bytes": 5396,
+      "sha256": "30f83d36f1937ed83b94454c1c0323a1f2b03d2af8677e4cd87ff8dc794f82cb",
+      "snapshot": "author_packet/finalize_packet.py",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/finalize_packet.py"
+    },
+    {
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "snapshot": "author_packet/inputs/claim_status.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/claim_status.md"
+    },
+    {
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "snapshot": "author_packet/inputs/delivery.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/delivery.md"
+    },
+    {
+      "bytes": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "snapshot": "author_packet/inputs/discovery.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/discovery.md"
+    },
+    {
+      "bytes": 39464,
+      "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+      "snapshot": "author_packet/inputs/family.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/family.md"
+    },
+    {
+      "bytes": 10085,
+      "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325",
+      "snapshot": "author_packet/inputs/family_acceptance.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/family_acceptance.json"
+    },
+    {
+      "bytes": 2896,
+      "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814",
+      "snapshot": "author_packet/inputs/family_qualification.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/family_qualification.md"
+    },
+    {
+      "bytes": 24275,
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+      "snapshot": "author_packet/inputs/parameters.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/parameters.json"
+    },
+    {
+      "bytes": 9276,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "snapshot": "author_packet/inputs/physics_loop.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/physics_loop.md"
+    },
+    {
+      "bytes": 28456,
+      "sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227",
+      "snapshot": "author_packet/inputs/product_preparation.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/product_preparation.md"
+    },
+    {
+      "bytes": 8169,
+      "sha256": "5e4cc2c916d9240ec5bb0b2a84559ae38fd2b20959e63c52d6b3c0bda04a2d69",
+      "snapshot": "author_packet/inputs/product_preparation_qualification.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/product_preparation_qualification.md"
+    },
+    {
+      "bytes": 32324,
+      "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018",
+      "snapshot": "author_packet/inputs/realifier.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/realifier.md"
+    },
+    {
+      "bytes": 11001,
+      "sha256": "16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b",
+      "snapshot": "author_packet/inputs/realifier_freeze.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/realifier_freeze.json"
+    },
+    {
+      "bytes": 8399,
+      "sha256": "717b918b6b67b736daaddf9f51bde2182ff6013b3a925395744a5881a2b1149a",
+      "snapshot": "author_packet/inputs/realifier_source_manifest.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/realifier_source_manifest.json"
+    },
+    {
+      "bytes": 37370,
+      "sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0",
+      "snapshot": "author_packet/inputs/resonance.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/resonance.md"
+    },
+    {
+      "bytes": 6363,
+      "sha256": "bb280c96d290e28b42c45994cab3fe9871d671b0d20d39a36ae09d211ef98686",
+      "snapshot": "author_packet/inputs/resonance_acceptance.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/resonance_acceptance.json"
+    },
+    {
+      "bytes": 1896,
+      "sha256": "88db9d4dcfdae159ad3478776441857db7dac0117db80dc13123be94267e4e84",
+      "snapshot": "author_packet/inputs/resonance_qualification.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/resonance_qualification.md"
+    },
+    {
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "snapshot": "author_packet/inputs/workflow.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/workflow.md"
+    },
+    {
+      "bytes": 6185,
+      "sha256": "3cf8834d377e20553c4d979967b45b868ab245b620395a07b826b5693579cafe",
+      "snapshot": "author_packet/launch_check.py",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/launch_check.py"
+    },
+    {
+      "bytes": 6690,
+      "sha256": "01aea125363730584637792cd33773e5ed3cc081b29fd748fb34e660e2712e66",
+      "snapshot": "author_packet/launch_check_v2.py",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/launch_check_v2.py"
+    },
+    {
+      "bytes": 11652,
+      "sha256": "dab1aad62baf91606f756a2ed196a4d1637c3abadda9cf2898cb170a60bd44b0",
+      "snapshot": "author_packet/run01/PRELAUNCH.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run01/PRELAUNCH.json"
+    },
+    {
+      "bytes": 12252,
+      "sha256": "72523278579e95f68383ff7bd367b4b731f244ff99ac8dfabf53910574e4bce0",
+      "snapshot": "author_packet/run01/RECEIPT.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run01/RECEIPT.json"
+    },
+    {
+      "bytes": 13957,
+      "sha256": "70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0",
+      "snapshot": "author_packet/run01/executed_source.py",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run01/executed_source.py"
+    },
+    {
+      "bytes": 284,
+      "sha256": "8a01c7c16c240ac8c4bc7a0b7c9afe912da43f0e5eb88e049627c96edca15b2b",
+      "snapshot": "author_packet/run01/stderr.txt",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run01/stderr.txt"
+    },
+    {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": "author_packet/run01/stdout.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run01/stdout.json"
+    },
+    {
+      "bytes": 12400,
+      "sha256": "ece64c03346f6b886d5ae665ac0b4938158d4f48e6b8a93360a6f9872d079197",
+      "snapshot": "author_packet/run02/PRELAUNCH.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run02/PRELAUNCH.json"
+    },
+    {
+      "bytes": 13213,
+      "sha256": "4e2bcee5a4fee720317edda68204bf65f5902d6e6720bed99fa837f1f375c2c5",
+      "snapshot": "author_packet/run02/RECEIPT.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run02/RECEIPT.json"
+    },
+    {
+      "bytes": 13957,
+      "sha256": "70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0",
+      "snapshot": "author_packet/run02/executed_source.py",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run02/executed_source.py"
+    },
+    {
+      "bytes": 291,
+      "sha256": "ef9ce7914a1a91b6ad66546d1f3c6e2b8d90caf8b06a446ada0862bfafafb954",
+      "snapshot": "author_packet/run02/import_bootstrap.py",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run02/import_bootstrap.py"
+    },
+    {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": "author_packet/run02/stderr.txt",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run02/stderr.txt"
+    },
+    {
+      "bytes": 15298,
+      "sha256": "6d61182e1ee3e5fc9b5fbe6c774e487589092c390e9e40a692461ee66fc06646",
+      "snapshot": "author_packet/run02/stdout.json",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run02/stdout.json"
+    }
+  ],
+  "candidate_and_checker_identical_across_attempts": true,
+  "check_count_is_not_independent_proof": true,
+  "checked_utc": "2026-10-17T05:10:38.325728+00:00",
+  "checker_scope_finding": "Last ramp_error_and_complete_trace_ceiling first clause is a non-discriminating endpoint comparison, not a check of the Duhamel ramp theorem. Independent analytic proof and earlier supported Gram checks provide that support.",
+  "operation": "copy/hash/generation/record consistency only; no scientific execution or author replay",
+  "private_root_idea_accessed": false,
+  "realifier_dependency_status": "provisional; no root qualification inferred",
+  "retry_amendment_mtime_utc": "2026-10-17T04:58:22.226324+00:00",
+  "review_analysis_freeze_utc": "2026-10-17T05:07:53.885164+00:00",
+  "review_scientific_runs": 0,
+  "saved_check_count": 90,
+  "source_pairs": [
+    {
+      "current_original": {
+        "bytes": 32324,
+        "device": 16777231,
+        "inode": 518533628,
+        "mtime_ns": 1792211319713457350,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/ROUTE.md",
+        "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018"
+      },
+      "snapshot": "inputs/realifier.md",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 11001,
+        "device": 16777231,
+        "inode": 518534019,
+        "mtime_ns": 1792211368012680311,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/FREEZE.json",
+        "sha256": "16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b"
+      },
+      "snapshot": "inputs/realifier_freeze.json",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 8399,
+        "device": 16777231,
+        "inode": 518532996,
+        "mtime_ns": 1792210722457969775,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/SOURCE_MANIFEST.json",
+        "sha256": "717b918b6b67b736daaddf9f51bde2182ff6013b3a925395744a5881a2b1149a"
+      },
+      "snapshot": "inputs/realifier_source_manifest.json",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 39464,
+        "device": 16777231,
+        "inode": 518532980,
+        "mtime_ns": 1792210722451109115,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/family.md",
+        "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+      },
+      "snapshot": "inputs/family.md",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 10085,
+        "device": 16777231,
+        "inode": 518532982,
+        "mtime_ns": 1792210722452105787,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/family_acceptance.json",
+        "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325"
+      },
+      "snapshot": "inputs/family_acceptance.json",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 2896,
+        "device": 16777231,
+        "inode": 518532981,
+        "mtime_ns": 1792210722451542784,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/family_qualification.md",
+        "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814"
+      },
+      "snapshot": "inputs/family_qualification.md",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 24275,
+        "device": 16777231,
+        "inode": 518531158,
+        "mtime_ns": 1792209671807052290,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/parameters.json",
+        "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+      },
+      "snapshot": "inputs/parameters.json",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 37370,
+        "device": 16777231,
+        "inode": 518530799,
+        "mtime_ns": 1792209504778361735,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_candidate/CANDIDATE.md",
+        "sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0"
+      },
+      "snapshot": "inputs/resonance.md",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 6363,
+        "device": 16777231,
+        "inode": 518532933,
+        "mtime_ns": 1792210699656331308,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_root_qualification/ACCEPTANCE.json",
+        "sha256": "bb280c96d290e28b42c45994cab3fe9871d671b0d20d39a36ae09d211ef98686"
+      },
+      "snapshot": "inputs/resonance_acceptance.json",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 1896,
+        "device": 16777231,
+        "inode": 518532934,
+        "mtime_ns": 1792210699656590143,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_root_qualification/QUALIFICATION.md",
+        "sha256": "88db9d4dcfdae159ad3478776441857db7dac0117db80dc13123be94267e4e84"
+      },
+      "snapshot": "inputs/resonance_qualification.md",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 28456,
+        "device": 16777231,
+        "inode": 518532109,
+        "mtime_ns": 1792210318308954248,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/CANDIDATE.md",
+        "sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227"
+      },
+      "snapshot": "inputs/product_preparation.md",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 8169,
+        "device": 16777231,
+        "inode": 518532773,
+        "mtime_ns": 1792210601227029328,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/preparation_product_root_qualification/REVIEW.md",
+        "sha256": "5e4cc2c916d9240ec5bb0b2a84559ae38fd2b20959e63c52d6b3c0bda04a2d69"
+      },
+      "snapshot": "inputs/product_preparation_qualification.md",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 11788,
+        "device": 16777231,
+        "inode": 518532992,
+        "mtime_ns": 1792210722456174683,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/workflow.md",
+        "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+      },
+      "snapshot": "inputs/workflow.md",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 9276,
+        "device": 16777231,
+        "inode": 513827355,
+        "mtime_ns": 1791469053737943814,
+        "path": "/Users/jonreilly/.codex/skills/physics-loop/SKILL.md",
+        "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+      },
+      "snapshot": "inputs/physics_loop.md",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 30709,
+        "device": 16777231,
+        "inode": 518531161,
+        "mtime_ns": 1792209671864747801,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/discovery.md",
+        "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+      },
+      "snapshot": "inputs/discovery.md",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 16755,
+        "device": 16777231,
+        "inode": 518531162,
+        "mtime_ns": 1792209671883222736,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/claim_status.md",
+        "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+      },
+      "snapshot": "inputs/claim_status.md",
+      "unchanged": true
+    },
+    {
+      "current_original": {
+        "bytes": 16454,
+        "device": 16777231,
+        "inode": 518531163,
+        "mtime_ns": 1792209671900749593,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/delivery.md",
+        "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+      },
+      "snapshot": "inputs/delivery.md",
+      "unchanged": true
+    }
+  ]
+}

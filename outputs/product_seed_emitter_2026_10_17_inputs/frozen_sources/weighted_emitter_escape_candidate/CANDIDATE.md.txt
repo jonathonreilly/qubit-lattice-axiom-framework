@@ -1,0 +1,248 @@
+---
+claim_type: proposed_bounded_theorem
+actual_current_surface_status: unreviewed-author-work
+independent_review: pending
+---
+# Weighted emitter integrals give a smaller sufficient escape time
+
+This is a root-authored proposed refinement of the installed-emitter argument,
+not a qualified result. Its complete installed-system dependency is
+`emitter_installed_certificate/CANDIDATE.md`, SHA256
+`4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee`.
+That new theorem is itself undergoing a separate check. The original source
+files are unchanged. This refinement keeps exactly the same Hamiltonian,
+product seed, common spectral envelope, complete comparator and error
+contract. Only the sufficient analytic escape time and associated finite
+clock horizon are changed.
+
+The proposed result is: under every premise and certified inequality of that
+installed theorem, its complete isometry error is below 0.004 for every
+t>=10^36 on the infinite clock. A finite clock with M=5*10^37 sites gives
+error below 0.005 for 10^36<=t<=2*10^36 in the same output embedding.
+These are sufficient mathematical bounds in the declared units, with no
+large-clock evolution or practical resource claim. The earlier 10^72 bound
+remains valid if its own theorem is accepted; this argument does not refute it.
+
+## 1. Fixed premises and the integral that is actually needed
+
+Use kappa=10^-12, sigma=10^-6, v=1/40, L=12 and the exact original ladder,
+loop phase, emitter energy, vacuum and one-excited-emitter product input. Use
+the same old K and W, the same physical scalar nu+2kappa and the same common
+envelope and output phase from the installed source:
+
+    Df=E(k)-E0-kappa^2 Sigma_f,jj(k),
+    yref=kappa conjugate(g_minus)/Df,
+    f=chi conjugate(yref)/(sqrt(2pi) N),
+    rho=r0 t_minus/|t_minus|,
+    t_minus=1-i kappa^2 |g_minus|^2/(vg Df).
+
+Here chi is one on the central half of I and linear to zero at the two
+endpoints of I=[k0-sigma,k0+sigma]. Its pointwise derivative is bounded by
+2/sigma almost everywhere. The actual N and f are the source's normalized
+ones, not a replacement fitted packet. In particular sqrt(2pi)N>2 and
+F0=integral |f|<1/500 are inherited.
+
+For a fixed old/parity column let C_j(k) be the complete localized correction
+after subtracting its incoming and outgoing open waves on all clock sites.
+It includes the emitter coordinate and every closed source tail. The direct
+Hilbert-valued integration by parts uses
+
+    D_j = integral_I [ |f'| ||C_j|| + |f| ||C_j'||
+                                   +(E2/v)|f| ||C_j|| ] dk.       (1)
+
+The old estimate F1 C0+F0 C1+(E2/v)F0 C0 is a sufficient upper bound for
+(1). We instead keep the correlated denominators in these products. This
+does not change the integration-by-parts identity or weaken its hypotheses.
+Likewise the outgoing half-line estimate uses
+
+    B0 = integral |f'| + integral |f| |rho'| +(E2/v)F0,          (2)
+
+and the incoming estimate uses A0=integral |f'|+(E2/v)F0.
+The proof of these estimates requires only the displayed integrability and
+zero endpoint trace; it does not require taking a separate supremum of
+rho' before integration. E2/v<5/2 remains the certified curvature ratio.
+
+## 2. Uniform denominator integrals without resonance quadrature
+
+Let U(k)=1/|Df(k)|. The installed inequalities supply
+
+    Im Df >= 19 kappa^2,
+    |Df'|<61/1000,
+    |Sigma_f,jj'|<=560,
+    E'(k)>v.
+
+Writing x(k)=Re Df(k), we have
+
+    x'(k)>=v-560 kappa^2>v/2.                              (3)
+
+Thus x is strictly increasing, and dk<=2 dx/v for the change of variables.
+This remains valid if its image does not contain zero. Extending the resulting
+positive integrals to the full real line and using pi<4 gives
+
+    I2 := integral_I U^2 dk
+       <= (2/v) integral_R dx/[x^2+(19 kappa^2)^2]
+        = 2pi/(19 v kappa^2) <17/kappa^2,
+    I3 := integral_I U^3 dk
+       <= (2/v) integral_R dx/[x^2+(19 kappa^2)^2]^(3/2)
+        = 4/(361 v kappa^4) <1/(2 kappa^4).                (4)
+
+Cauchy-Schwarz on the interval of length 2sigma gives
+
+    I1 := integral_I U dk <=sqrt(2sigma I2)<1/kappa.        (5)
+
+These are uniform analytic bounds, not numerical integration over a linewidth
+too narrow for a grid. The only scalar conditions used are
+560 kappa^2<v/2, 8/(19v)<17, 4/(361v)<1/2 and 34sigma<1.
+
+## 3. Weighted packet and outgoing-phase derivatives
+
+The inherited form factor satisfies |g_minus|<=2 and |g_minus'|<=26.
+Set a1=2/sigma+13 and d=61/1000. Differentiating f almost everywhere gives
+
+    |f| <= kappa U,
+    |f'| <= kappa [a1 U+d U^2].                          (6)
+
+For example the cutoff contribution is at most
+kappa*(2/sigma)*U, because its form factor is at most two and the
+normalizing denominator exceeds two. No cutoff derivative is omitted.
+Consequently
+
+    F1 := integral |f'| <=a1+17d/kappa<2/kappa.            (7)
+
+To keep the phase derivative inside its integral, write
+t_minus=1+kappa^2 n(k)/Df with n=-i |g_minus|^2/vg.
+The inherited open-resolvent bounds give |n|<=160, |n'|<=720, so
+
+    |t_minus'| <=kappa^2[720 U+160d U^2].
+
+The source proves |t_minus|>1/2. Differentiating its unit phase therefore
+gives the safe estimate |(t_minus/|t_minus|)'|<=4|t_minus'|.
+Since |r0'|=2,
+
+    integral |f| |rho'|
+      <=2F0+4 kappa^3[720 I2+160d I3]
+       <2/500+48960 kappa+(320d)/kappa.                  (8)
+
+Using (7),(8) in (2), we can take
+
+    A0=3/kappa,             B0=23/kappa.                 (9)
+
+All four columns still use exactly the same f and rho. There is no separate
+column phase adjustment or parameter-dependent substitution into W.
+
+## 4. Weighted complete localized correction
+
+The installed Schur analysis has one resonant scalar ds with
+|ds-Df|<=xi |Df|, xi<1, and a closed emitter block inverse of norm below six.
+Its off-diagonal coefficient bounds are sPQ and sQP as explicitly defined
+in the source. The rank-one block inverse formula, keeping the closed inverse
+as a separate summand, yields
+
+    ||De^-1||
+      <=6+[(1+6 kappa^2 sPQ)(1+6 kappa^2 sQP)/(1-xi)] U
+       <6+2U.                                           (10)
+
+This step is not an unproved replacement of the uniform inverse by a scalar:
+it includes the seven complementary emitter coordinates in each parity.
+The bracket is independently checked using the exact source expressions.
+For y_j=kappa De^-1 w_j, the inherited ||w_j||<3, ||w_j'||<30 and
+||De'||<d imply
+
+    ||y_j|| <=kappa(18+6U),
+    ||y_j'|| <=kappa[3d(6+2U)^2+30(6+2U)]
+              <kappa(187+65U+U^2).                     (11)
+
+The source's full localized representation is C_g,j+kappa Kloc y_j on
+the clock and y_j on the emitter. Its checked bounds are
+
+    ||C_g,j||<=31, ||C_g,j'||<=2700,
+    ||Kloc||<20000, ||Kloc'||<10^6.
+
+No derivative of the fixed internal basis is needed. From (11) and
+1+20000 kappa<2,
+
+    ||C_j|| <32+12 kappa U,
+    ||C_j'|| <2701+131 kappa U+2 kappa U^2.              (12)
+
+For the derivative, the constant leftovers obey
+374 kappa+18*10^6*kappa^2<1, and the additional coefficient of U is
+6*10^6*kappa^2<kappa. These explicit inequalities justify the rounding
+in (12); the emitter derivative and all closed tails are counted.
+
+Substituting (6),(12) in (1) and using E2/v<5/2 gives
+
+    D_j <= kappa(32a1+2781) I1
+       + [kappa^2(12a1+161)+32 kappa d] I2
+       + kappa^2(12d+2) I3
+       <236a1+5518+(544d)/kappa+(6d+1)/kappa^2
+       <3/(2 kappa^2).                                 (13)
+
+There are two potentially nonorthogonal localized columns in each parity.
+Paying their square sum exactly as in the original proof, the safe grouped
+constant is
+
+    D=3/kappa^2 >sqrt(2) max_j D_j.                     (14)
+
+Different parity subspaces remain orthogonal. This is a bound on the full
+localized map, not an assumption that the two old-energy columns are
+orthogonal in the interaction region.
+
+## 5. Complete output and finite apparatus
+
+Inherit the installed source's seed-isometry error below 0.003, common
+reflection comparison below 0.000714, and complete comparator
+
+    Uideal(t)x=zeta exp[-i(nu+2kappa)t]
+                    beta_t tensor iota exp(-itK)W x,
+
+where beta_t is the very same normalized outgoing half-line packet from
+that source. The seed starts at t=0, so all old aging includes emission
+and flight. The exact scattering-packet intertwining and seed overlap imply
+
+    ||exp(-it Hphysical)Eseed-Uideal(t)||
+      <0.003+0.000714+(A0+B0)/sqrt(pi v t)
+                                  +D/(sqrt(2pi) v t).    (15)
+
+With T=10^36, sqrt(pi v T)>27*10^16 and sqrt(2pi)>12/5,
+
+    (A0+B0)/sqrt(pi v T)+D/(sqrt(2pi) v T)
+      <[26/kappa]/[27*10^16]+[3/kappa^2]/[(12/5)v T].   (16)
+
+The right side is below 0.000097, and the total is below 0.004. Moreover
+vT>1 and B0/sqrt(pi vT)<1/2, so the outgoing normalization conditions
+actually hold. Both remainder terms decrease for every later t. The full
+unhalved trace-distance bound with a passive reference is twice (15), below
+0.008. No seed bound-state amplitude is discarded or added twice: it is
+already included in the unchanged seed-overlap norm.
+
+The inherited spectral radius 19 and actual graph hop distance from emitter
+to the first omitted site, dM=M-L-1, are unchanged. With Tobs=2*10^36 and
+M=5*10^37, dM>19*Tobs*(6/5)+9. The same Chebyshev argument therefore gives
+finite-device error below 0.001 on [T,Tobs], and complete embedded output
+error below 0.005, with unhalved trace distance below 0.01. The far-end
+diagonal correction and infinite-output comparison remain exactly as in
+the source; this is not an all-future statement for a fixed finite device.
+
+## 6. Evidence scope and next check
+
+The new proof obligations are (3)-(5), replacement of separate supremum
+bounds by the weighted integrals (1),(2), the full block inverse in (10),
+and all product/rounding constants in (6)-(16). They require a distinct
+analytical check. Exact scalar arithmetic can verify displayed comparisons,
+but cannot by itself qualify the new weighted proof or its installed source.
+
+The single recorded execution of `check_bounds.py` completed successfully
+through `run_check.py`; the child source was hashed before execution. The
+program and wrapper declared five CPU seconds and ten wall seconds before
+that run. `EXECUTION.json`, full stdout/stderr and exact `BOUNDS.json` preserve
+the actual evidence. The resulting complete-error upper expression is
+approximately 0.0038102963462962962, a display only; its exact rational is
+controlling. No failed scientific execution occurred in this bounded step.
+
+No new interactions, new initial state, fit, numerical quadrature, parameter
+search, dynamics simulation or physical permission are used. This note does
+not compose with the separate ladder-coefficient or emitter-calibration
+proposals. Native realization, vacuum/seed supply, exact structural symmetry,
+static complex couplings, capture/reset/reuse and practical resource costs
+remain separate physical obligations. No canonical publication or retained
+status is approved by this author note.

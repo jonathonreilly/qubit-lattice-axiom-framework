@@ -1,0 +1,35 @@
+{
+  "start_utc": "2026-10-17T01:18:43.959623+00:00",
+  "end_utc": "2026-10-17T01:18:44.840555+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_review/attempt_01/check_installed.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_review/attempt_01",
+  "wall_seconds": 0.8808858329430223,
+  "prior_scientific_wall_seconds": 0.0,
+  "exit_code": 0,
+  "timed_out": false,
+  "user_cpu_seconds": 0.535633,
+  "system_cpu_seconds": 0.045979,
+  "peak_rss_raw": 61521920,
+  "peak_rss_platform_units": "bytes on macOS",
+  "script_sha256": "92cff9237938a430c68aa36bbf4c5f952c8392ea3d01c5d0bcc736d1a9b7d680",
+  "python_binary": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+  "python_binary_sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5",
+  "stdout_sha256": "145c93679e8b9e9b8ea14751d6edfe1080aa7a93334cfe773fb730e883f89e94",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "caps": {
+    "cpu_seconds": 45,
+    "wall_seconds": 60,
+    "maximum_attempts": 3,
+    "total_wall_seconds": 180,
+    "maximum_matrix_dimension": 16
+  },
+  "thread_environment_requested": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "thread_count_measured": false
+}

@@ -1,0 +1,89 @@
+# Source coverage and scientific independence
+
+The source revision for this task is
+0e3993770a7a2dd872018f9dd3c76c2d9a624db9. SOURCE_MAP.json binds twelve
+complete files extracted from that Git object and records that all twelve
+matched their worktree files at capture. Their copies are inputs to the
+bounded checker. Complete copying is not described as complete fresh reading.
+
+The current repository SCIENCE_WORKFLOW.md and physics-loop skill,
+DISCOVERY, CLAIM_STATUS and DELIVERY references were read in this coherent
+task. The bounded assignment governs: root owns broader campaign recovery,
+publication, Git, checkpoint, audit and framework-premise operations.
+This task supplies a candidate only, using inherited conditional science.
+No editable prompt file changed and no platform instruction change is claimed.
+
+## Scientific sources actually used
+
+| Snapshot | Fresh coverage in this task | Reused identity or role |
+|---|---|---|
+| family.md | Complete current wrapper, lines 1–177; model/channel parts 218–380; profile and mass parts 440–570; seed/reflection parts 588–660; complete moment and finite-horizon parts 772–933, and execution context through 960 | The full 835-line unchanged author body had already been authored/read by this agent; its exact body SHA is verified. The finite theorem and its actual profiles are inherited, not newly independently reviewed. |
+| product_seed.md | Lines 68–341, including the full-qubit emitter blocks, finite compression, source-sector definitions, phase and actual profile convention | Earlier installed/generic derivation exposure is disclosed. The fixed-kappa spectral bounds are not substituted for the family's renewed bounds. |
+| two_body.md | Lines 125–194, the complete full-qubit positive gate/source/clock construction and incident loads | Literal runtime block definitions and coefficients, including both positive vacancy and endpoint terms |
+| parameters.json | Exact rational parameter object read by the checker; its full file is pinned | Exact apparatus constants and E0, center trigonometry; no optimization or refit |
+| local_gibbs.md | Complete main wrapper lines 1–200, and complete sharp correlated-marginal proof and pertinent calibration context at 842–906 | Product Gibbs versus arbitrary extension, exact retained marginal, sharp g(epsilon), physical scalar/work obligations |
+| controlled_stop.md | Complete main wrapper and four original install/work/off/C1 addenda, lines 1–294 | Existing positive compensation and chronological finite-ramp reasoning |
+| local_bias.md | Complete main wrapper lines 1–170; directly refreshed the whole ready-range handoff argument at 540–572; targeted heading/text results elsewhere | General ready-range Gamma removal principle, full-space versus prepared-range distinction, exact old aging and paid positive counterterms |
+
+The initial very long local-Gibbs file display was truncated. The necessary
+sections were then fetched in full; the remaining inherited review bodies
+are not counted as freshly read. A later aggregate display of this candidate
+was also truncated at the tool-output budget; the complete affected
+301-to-end section was fetched separately and read before freeze. Neither
+truncated display is reported as complete verification.
+
+The candidate's complete changed argument and its checker/launcher were read
+in full. The full structured scientific output was inspected, including the
+exact rational budget, all 122 named check records and actual-resource fields.
+Finite diagnostic lengths, endpoint PSD checks and source hashes are not
+substituted for the written uniform argument.
+
+## Prior-work search and contribution boundary
+
+The initial read-only search was restricted to existing emitter, Gibbs,
+product-source and autonomous notes. Its pattern was:
+
+    emitter.{0,80}(gibbs|thermal|prepar|release)|gibbs.{0,80}(emitter|handoff)|length.independent.{0,80}(release|seed)
+
+It identified the local-Gibbs, product-seed, local conditional-bias and
+two-body notes as relevant. A subsequent targeted search for ready-range,
+Gamma, release, removal and counterterms in the pinned local-bias snapshot
+confirmed that a generic ready-range removal theorem already exists.
+PRIOR_SEARCH.json preserves a final exact rerun of the narrow text search
+over the six pinned scientific note snapshots. That final text search
+is bookkeeping, not another scientific execution.
+
+No claim of exhaustive literature novelty is made. No remote search, broad
+background scan, parent scientific-program replay or source modification
+occurred. In particular, the generic Duhamel estimate and correlated-marginal
+lemma are credited prior machinery. The proposed new result is their
+explicit full-space, positive nearest-neighbor realization for the literal
+PR9665 finite emitter and its complete runtime composition.
+
+## Independence and remaining limits
+
+This agent previously authored the stationary ladder and coupling-family
+argument, reviewed source-exposed installed/generic arguments, and adapted
+publication code. The current analytical argument and checker share that
+source exposure and model. They are not a blind, model-diverse or
+whole-dependency independent review.
+
+Root withheld its new preparation mechanism until this packet's freeze.
+The present construction was derived without viewing that mechanism.
+No subagent, model override, other-chat message or external computation
+service was used. This limited separation motivates an independent-route
+comparison; it does not establish the truth of either route.
+
+The exact inherited finite theorem is a conditional premise. Its sources,
+full profile/phase convention, fixed residual and output norm were checked
+for compatibility with the new handoff. We did not independently redo its
+spectral normalization, closed-channel inverses, common seed overlap,
+localized estimates, moment proof or finite-horizon polynomial estimate.
+The new candidate must still receive a separate analytical check.
+
+The controls and finite-temperature marginal are supplied. The literal old
+K is never canceled, but preparation increases its incident added loads
+above two. Microscopic cooling and classical-controller realization, exact
+calibration supply, and interacting bath/controller outputs remain outside
+the conditional model. Every modeled quantum output and arbitrary passive
+reference is retained.

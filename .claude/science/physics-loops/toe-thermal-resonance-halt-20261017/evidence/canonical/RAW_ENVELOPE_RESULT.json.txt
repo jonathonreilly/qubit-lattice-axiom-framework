@@ -1,0 +1,10 @@
+{
+  "runner": "scripts/thermal_resonance_halt_2026_10_17.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"scope\": \"Three source-exposed author corroboration bodies. Analytical source/interface acceptance and independent review remain separate.\",\n  \"function_bodies_completed\": 3,\n  \"actual_shared_process_limits\": {\n    \"cpu_soft_hard_seconds\": [\n      30,\n      30\n    ],\n    \"external_wall_cap_seconds\": 45,\n    \"wall_enforcement\": \"Required canonical runner_cache execution; this class does not enforce wall time.\"\n  },\n  \"resonance_status\": \"PASS_exact_scalar_corroboration_only\",\n  \"maximum_dense_matrix_dimension\": 4\n}\n",
+  "stderr": "",
+  "elapsed_sec": 1.114833116531372,
+  "timeout_sec": 45,
+  "live_log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/.in-progress/thermal_resonance_halt_2026_10_17.txt"
+}

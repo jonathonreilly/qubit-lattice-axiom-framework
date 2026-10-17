@@ -1,0 +1,25 @@
+{
+  "id": "weighted_localized_derivative",
+  "role": "weighted_reviewer",
+  "function": "run_weighted_reviewer",
+  "source": "scripts/product_seed_emitter_weighted_2026_10_17.py",
+  "source_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
+  "old": "integrand = s.Poly(s.expand(fp_upper * C_upper + f_upper * Cp_upper + R(5, 2) * f_upper * C_upper), U)",
+  "new": "integrand = s.Poly(s.expand(fp_upper * C_upper + R(5, 2) * f_upper * C_upper), U)",
+  "unique_anchor_verified": true,
+  "expected_scientific_assertion": "U_coefficient_complete",
+  "purpose": "Omit the derivative of the full localized correction.",
+  "status": "planned_not_executed",
+  "cap_cpu_soft_hard_seconds": [
+    60,
+    60
+  ],
+  "external_wall_cap_seconds": 60,
+  "repo": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "resolver_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/snapshots/FrozenInputs.py.txt",
+  "original_helper_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/snapshots/product_seed_emitter_weighted_2026_10_17.py.txt",
+  "single_function_AST_changed": [
+    "run_weighted_reviewer"
+  ],
+  "canonical_helper_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669"
+}

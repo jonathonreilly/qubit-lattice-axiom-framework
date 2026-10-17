@@ -1,0 +1,37 @@
+"""Serialize/fsync a bounded STATIC checker plan, then preserve every stream."""
+from pathlib import Path
+import datetime,hashlib,json,os,resource,subprocess,sys,time
+D=Path(__file__).resolve().parent
+RUN=D/sys.argv[1];RUN.mkdir(exist_ok=False)
+C=D/'canonical';W=D.parent.parent/'correlation_worktree'
+def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def ident(path):
+ p=Path(path).resolve();raw=p.read_bytes();s=p.stat();return {'path':str(p),'sha256':hashlib.sha256(raw).hexdigest(),'bytes':len(raw),'device':s.st_dev,'inode':s.st_ino,'mtime_ns':s.st_mtime_ns}
+def durable(path,value):
+ with path.open('x')as f:json.dump(value,f,indent=2);f.write('\n');f.flush();os.fsync(f.fileno())
+source=D/'verify_static.py';executed=RUN/'verify_static.py';executed.write_bytes(source.read_bytes())
+# Executed checker lives in D because its __file__ chooses this immutable overlay.
+primary=C/'scripts/thermal_resonance_halt_2026_10_17.py'
+import ast
+tr=ast.parse(primary.read_text());inputs=ast.literal_eval(next(n.value for n in tr.body if isinstance(n,ast.Assign)and any(isinstance(t,ast.Name)and t.id=='AUDIT_INPUT_PATHS'for t in n.targets)))
+paths=[source,executed,Path(__file__).resolve(),D/'PACKAGING_PLAN.json',D/'BUILD_RESULT.json',D/'CAPTURE_BINDINGS.json',primary]
+paths+=[C/p if(C/p).is_file()else W/p for p in inputs]
+paths+=[Path(sys.executable).resolve(),Path(ast.__file__).resolve(),Path(json.__file__).resolve(),Path(hashlib.__file__).resolve()]
+bindings=[ident(p)for p in dict.fromkeys(paths)]
+command=[sys.executable,'-I','-B',str(source),str(RUN)]
+plan={'serialized_utc':now(),'scope':'STATIC AST/byte/resolver tests only; scientific calls forbidden','command':command,'cwd':str(D),'bindings':bindings,'limits':{'cpu_soft_hard_seconds':[20,20],'external_wall_seconds':30,'output_file_bytes':32*1024*1024,'max_dense_dimension':0,'memory_cap':None},'runtime_coverage':'Interpreter and selected stdlib entries only; not whole transitive runtime. No SymPy import or scientific program run.'}
+durable(RUN/'PRELAUNCH.json',plan)
+fd=os.open(RUN,os.O_RDONLY);os.fsync(fd);os.close(fd)
+start=now();before=time.monotonic();usage=resource.getrusage(resource.RUSAGE_CHILDREN)
+def caps():
+ resource.setrlimit(resource.RLIMIT_CPU,(20,20));resource.setrlimit(resource.RLIMIT_FSIZE,(32*1024*1024,32*1024*1024))
+with(RUN/'stdout.txt').open('xb')as out,(RUN/'stderr.txt').open('xb')as err:
+ timeout=False
+ try:r=subprocess.run(command,cwd=D,stdout=out,stderr=err,timeout=30,preexec_fn=caps);returncode=r.returncode
+ except subprocess.TimeoutExpired:timeout=True;returncode=124
+ for stream in(out,err):stream.flush();os.fsync(stream.fileno())
+after=resource.getrusage(resource.RUSAGE_CHILDREN)
+post=[ident(x['path'])for x in bindings]
+receipt={'started_utc':start,'ended_utc':now(),'wall_seconds':time.monotonic()-before,'returncode':returncode,'timeout':timeout,'cpu_user_seconds':after.ru_utime-usage.ru_utime,'cpu_system_seconds':after.ru_stime-usage.ru_stime,'max_rss_macos_bytes':after.ru_maxrss,'limits':plan['limits'],'prelaunch':ident(RUN/'PRELAUNCH.json'),'bindings_unchanged':post==bindings,'binding_count':len(bindings),'stdout':ident(RUN/'stdout.txt'),'stderr':ident(RUN/'stderr.txt'),'scientific_executions':0}
+durable(RUN/'RECEIPT.json',receipt);print(json.dumps(receipt,indent=2));assert post==bindings
+raise SystemExit(returncode)

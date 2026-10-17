@@ -1,0 +1,70 @@
+{
+  "note": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+  "bodies": [
+    {
+      "title": "Real local apparatus and unprepared-seed counterexample",
+      "source_label": "real_coupling_halt_route/ROUTE.md",
+      "original": {
+        "path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/ROUTE.md.txt",
+        "bytes": 32324,
+        "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018",
+        "compression": "none",
+        "raw_bytes": 32324,
+        "raw_sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018"
+      },
+      "note_byte_start_inclusive": 13071,
+      "note_byte_end_exclusive": 45395,
+      "embedded_sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018",
+      "bytes": 32324,
+      "link_target_edits": [],
+      "all_non_target_bytes_unchanged": true
+    },
+    {
+      "title": "Real local preparation and autonomous-output composition",
+      "source_label": "real_coupling_preparation_candidate/CANDIDATE.md",
+      "original": {
+        "path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/CANDIDATE.md.txt",
+        "bytes": 28103,
+        "sha256": "57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c",
+        "compression": "none",
+        "raw_bytes": 28103,
+        "raw_sha256": "57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c"
+      },
+      "note_byte_start_inclusive": 45626,
+      "note_byte_end_exclusive": 74066,
+      "embedded_sha256": "481897598b0de16542dd7a9dcef5e09e83784cee155c2a94c5efca5df92bdd7d",
+      "bytes": 28440,
+      "link_target_edits": [
+        {
+          "original_start": 2200,
+          "original_end": 2215,
+          "original_target": "SOURCE_MAP.json",
+          "replacement_target": "../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/SOURCE_MAP.json",
+          "resolved_repository_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/SOURCE_MAP.json",
+          "embedded_start": 2200,
+          "embedded_end": 2326
+        },
+        {
+          "original_start": 27264,
+          "original_end": 27276,
+          "original_target": "EXECUTION.md",
+          "replacement_target": "../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/EXECUTION.md.txt",
+          "resolved_repository_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/EXECUTION.md.txt",
+          "embedded_start": 27375,
+          "embedded_end": 27502
+        },
+        {
+          "original_start": 27373,
+          "original_end": 27391,
+          "original_target": "RESOURCE_PLAN.json",
+          "replacement_target": "../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/RESOURCE_PLAN.json",
+          "resolved_repository_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/RESOURCE_PLAN.json",
+          "embedded_start": 27599,
+          "embedded_end": 27728
+        }
+      ],
+      "all_non_target_bytes_unchanged": true
+    }
+  ],
+  "allowed_changes": "Explicit Markdown destinations only; no mathematical, historical status or whitespace content rewritten."
+}

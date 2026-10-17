@@ -1,0 +1,21 @@
+{
+  "kappa_low": "1/1000000000000",
+  "kappa_high": "1/100000000",
+  "sigma": "1/1000000",
+  "v": "1/40",
+  "sqrt_v_lower": "3/20",
+  "epsilon": "1/250000",
+  "N_inverse_upper": "100/99",
+  "Bstar": "1/25000000",
+  "log_upper": "40",
+  "off_diagonal_integrated_upper": "1/100000000000000",
+  "complete_seed_error": "3/1000",
+  "complete_reflection_error": "357/500000",
+  "proposed_escape_remainder_upper": "59/500000",
+  "proposed_infinite_error_upper": "479/125000",
+  "proposed_finite_error_upper": "604/125000",
+  "clock_extent_factor": "50",
+  "observation_time_factor": "2",
+  "prepared_sector_radius": "19",
+  "L": "12"
+}

@@ -1,0 +1,28 @@
+{
+  "label": "outgoing_moment",
+  "started_utc": "2026-10-17T03:34:01.863477+00:00",
+  "finished_utc": "2026-10-17T03:34:02.044378+00:00",
+  "elapsed_seconds": 0.17865370819345117,
+  "exit_code": 1,
+  "timed_out": false,
+  "intended_assertion_reached": true,
+  "all_bound_bytes_unchanged": true,
+  "no_result_written": true,
+  "user_cpu_seconds": 0.143395,
+  "system_cpu_seconds": 0.026794,
+  "prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/outgoing_moment/PRELAUNCH.json",
+    "bytes": 18918,
+    "sha256": "c8111c3f5358e399b1c9e34100c7d3ac8fdd8bc000044c03c19a28e664588a00"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/outgoing_moment/stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/outgoing_moment/stderr",
+    "bytes": 1138,
+    "sha256": "989c5ea152a8def5b5a2855b32dca9885fd3b3529677e23e4e0fad1a12be58f4"
+  }
+}

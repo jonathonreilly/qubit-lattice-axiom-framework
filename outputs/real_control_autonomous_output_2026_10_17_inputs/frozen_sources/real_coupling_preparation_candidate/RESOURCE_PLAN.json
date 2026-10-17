@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-10-17T04:49:01.176316+00:00",
+  "scientific_attempt_cap": 2,
+  "initial_attempts_authorized": 1,
+  "retry_condition": "Only after preserved failure and written amendment; no silent tuning",
+  "cpu_soft_hard_seconds": [
+    20,
+    20
+  ],
+  "external_wall_seconds": 30,
+  "maximum_dense_dimension": 4,
+  "sparse_clock_lengths_per_rail": [
+    16,
+    17
+  ],
+  "maximum_physical_qubits_in_sparse_fixture": 40,
+  "seed_columns_per_fixture": 12,
+  "symbolic_kappa": true,
+  "grids": 0,
+  "optimizers": 0,
+  "quadrature": 0,
+  "dynamics_steps": 0,
+  "source_checker_replays": 0,
+  "runtime_pins": "Interpreter, fractions, SymPy entry/distribution metadata; partial runtime only",
+  "memory_cap": null,
+  "source_exposure_time_utc": "2026-10-17T04:49:01.176316+00:00"
+}

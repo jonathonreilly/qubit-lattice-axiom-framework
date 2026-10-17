@@ -1,0 +1,37 @@
+[
+  {
+    "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_reviewer.diff",
+    "stdout": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_reviewer.diff:37: trailing whitespace.\n+ \n.claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_reviewer.diff:44: trailing whitespace.\n+ \n.claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_reviewer.diff:51: trailing whitespace.\n+ \n.claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_reviewer.diff:60: trailing whitespace.\n+ \n.claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_reviewer.diff:65: trailing whitespace.\n+ \n.claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_reviewer.diff:75: trailing whitespace.\n+ \n",
+    "stderr": ""
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_reviewer.diff",
+    "stdout": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_reviewer.diff:6: trailing whitespace.\n+ \n",
+    "stderr": ""
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_author.diff",
+    "stdout": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_author.diff:6: trailing whitespace.\n+ \n.claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_author.diff:37: trailing whitespace.\n+ \n.claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_author.diff:46: trailing whitespace.\n+ \n.claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_author.diff:66: trailing whitespace.\n+ \n.claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_author.diff:96: trailing whitespace.\n+ \n",
+    "stderr": ""
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_author.diff",
+    "stdout": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_author.diff:102: trailing whitespace.\n+ \n",
+    "stderr": ""
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_reviewer.diff",
+    "stdout": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_reviewer.diff:6: trailing whitespace.\n+ \n.claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_reviewer.diff:17: trailing whitespace.\n+ \n.claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_reviewer.diff:22: trailing whitespace.\n+ \n.claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_reviewer.diff:26: trailing whitespace.\n+ \n.claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_reviewer.diff:37: trailing whitespace.\n+ \n",
+    "stderr": ""
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_author.diff",
+    "stdout": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_author.diff:6: trailing whitespace.\n+ \n",
+    "stderr": ""
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/portability_evidence/static_build_attempt_2/stdout.txt",
+    "stdout": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/portability_evidence/static_build_attempt_2/stdout.txt:35: new blank line at EOF.\n",
+    "stderr": ""
+  }
+]

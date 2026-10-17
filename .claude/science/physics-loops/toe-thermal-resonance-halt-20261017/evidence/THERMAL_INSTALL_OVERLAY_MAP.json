@@ -1,0 +1,43 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/thermal_install_overlay",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "EXECUTION.json",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/thermal_install_overlay/EXECUTION.json.txt",
+      "bytes": 1449,
+      "sha256": "67e865e574e09897390256a29d3a33dbf888c10dc2b5edd032b862af621dd917",
+      "compression": "none",
+      "raw_bytes": 1449,
+      "raw_sha256": "67e865e574e09897390256a29d3a33dbf888c10dc2b5edd032b862af621dd917"
+    },
+    {
+      "original_path": "executed_source.py",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/integration_before_execution/install_overlay.py.txt",
+      "bytes": 6166,
+      "sha256": "1b384d831bf6a58f4e96cfa3f23ac7dfa53069dd4415e2d65dd150ac5a687696",
+      "compression": "none",
+      "raw_bytes": 6166,
+      "raw_sha256": "1b384d831bf6a58f4e96cfa3f23ac7dfa53069dd4415e2d65dd150ac5a687696"
+    },
+    {
+      "original_path": "stderr",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/algebra.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "stdout",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/thermal_install_overlay/stdout.gz",
+      "bytes": 386,
+      "sha256": "33f82f7b276c0fe28e22473b6447fb797cfb849080b8dd52190048e48abc7cd0",
+      "compression": "gzip",
+      "raw_bytes": 606,
+      "raw_sha256": "24206d257a735e13446683910f0f8d8bde75f71166865a93ccace2edac32246d"
+    }
+  ],
+  "count": 4
+}

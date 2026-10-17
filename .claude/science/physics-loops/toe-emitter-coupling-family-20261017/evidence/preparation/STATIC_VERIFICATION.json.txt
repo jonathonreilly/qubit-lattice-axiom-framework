@@ -1,0 +1,5791 @@
+{
+  "active_wrapper_links": [
+    {
+      "repository_path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44",
+      "target": "PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "repository_path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt",
+      "sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f",
+      "target": "../outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt"
+    },
+    {
+      "repository_path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt",
+      "sha256": "cf6507b8b0dc3c9075b424602ab4969202c6e6bd665cabda4dc016125a21ee77",
+      "target": "../outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt"
+    },
+    {
+      "repository_path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt",
+      "sha256": "0b0ce9eaba582d878b982ecd0f86a53857c5f394b9a42b4e27306e58bb405102",
+      "target": "../outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt"
+    },
+    {
+      "repository_path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json",
+      "sha256": "bd2059184e105bd41437b1c28ca3f106a441215e09eac7a2b3ec316cbd674318",
+      "target": "../outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json"
+    },
+    {
+      "repository_path": "scripts/emitter_coupling_family_2026_10_17.py",
+      "sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba",
+      "target": "../scripts/emitter_coupling_family_2026_10_17.py"
+    },
+    {
+      "repository_path": "outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json",
+      "sha256": "79fcc95e43b600faec17db21abc30ca96dfc62eb7214851df9b64c69b2c2ecb2",
+      "target": "../outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json"
+    },
+    {
+      "repository_path": "outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json",
+      "sha256": "e7ddaef56366ea418c65b7831ad0d7705ffbb139d79a7b48c3653ea499265da9",
+      "target": "../outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json"
+    },
+    {
+      "repository_path": "outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+      "sha256": "94df73ea48613754892e9cfc9a9759a0d542f8bf7706eaf14c191d6845af615d",
+      "target": "../outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json"
+    },
+    {
+      "repository_path": "outputs/emitter_coupling_family_2026_10_17_inputs/PROOF_BODY_MAP.json",
+      "sha256": "7ef82716d872c2eaed88785e07828003514b7e12dd1107ea5a83295bb1d06a4e",
+      "target": "../outputs/emitter_coupling_family_2026_10_17_inputs/PROOF_BODY_MAP.json"
+    },
+    {
+      "repository_path": "outputs/emitter_coupling_family_2026_10_17_inputs/PUBLICATION_STATUS.json",
+      "sha256": "a6034f496169a791930f28b361241df66b3adc6d3c6a20ba3a16ee78d63d1030",
+      "target": "../outputs/emitter_coupling_family_2026_10_17_inputs/PUBLICATION_STATUS.json"
+    },
+    {
+      "repository_path": "outputs/emitter_coupling_family_2026_10_17_inputs/REPRODUCTION_PLAN.json",
+      "sha256": "b98fc1939491eebe93438cae86e78367f287761979c30be2aa0e4e242d3a301e",
+      "target": "../outputs/emitter_coupling_family_2026_10_17_inputs/REPRODUCTION_PLAN.json"
+    }
+  ],
+  "actual_static_cpu_soft_hard_seconds": [
+    30,
+    30
+  ],
+  "artifact_members": 53,
+  "body_sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+  "checked_utc": "2026-10-17T03:17:16.129420+00:00",
+  "checks": [
+    {
+      "details": null,
+      "name": "all_45_source_files_mapped_once",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "all_source_destinations_unique",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/CANDIDATE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:CANDIDATE.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/EVIDENCE_READOUT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:EVIDENCE_READOUT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FILE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:FILE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FREEZE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:FREEZE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/MATCHING_PREMISE_SEARCH.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:MATCHING_PREMISE_SEARCH.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/READ_FAILURES.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:READ_FAILURES.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:RESOURCE_PLAN.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN_BEFORE_MOMENT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:RESOURCE_PLAN_BEFORE_MOMENT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RUN_SUMMARY.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:RUN_SUMMARY.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:SOURCE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST_BEFORE_MOMENT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:SOURCE_MANIFEST_BEFORE_MOMENT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_RECHECK.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:SOURCE_RECHECK.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/add_moment_dependency.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:add_moment_dependency.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/PRELAUNCH.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:attempt_01/PRELAUNCH.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/RECEIPT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:attempt_01/RECEIPT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/check_family.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:attempt_01/check_family.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:attempt_01/stderr.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stdout.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:attempt_01/stdout.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/capture_sources.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:capture_sources.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:check_family.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/finalize_packet.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:finalize_packet.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/THEOREM_V2.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/generic_v2.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/installed.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/ACCEPTANCE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/installed_acceptance.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/QUALIFICATION.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/installed_qualification.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/REPORT.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/installed_review.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/interval.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/interval.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_root_qualification/QUALIFICATION.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/local_qualification.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/moment.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/moment_acceptance.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_freeze.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/moment_freeze.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/moment_qualification.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/moment_review.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/physics_loop_skill.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/publication.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/publication_inventory.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/route.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/stationary.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/weighted.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/ACCEPTANCE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/weighted_acceptance.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/QUALIFICATION.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/weighted_qualification.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/REPORT.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/weighted_review.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:inputs/workflow.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/launch_check.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "preserved_source:launch_check.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "exact_parent_deduplication",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "full_theorem_body_byte_identity",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "body_map_note_identity",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_and_markers_exact",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_binds_primary_and_original",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_covers_all_original_statements",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "function_signature_only_inputs",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:0",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:0",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:1",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:1",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:2",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:2",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:3",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:3",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:4",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:4",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:5",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_original_transport_text:5",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:6",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_original_transport_text:6",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:7",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_original_transport_text:7",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:8",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_original_transport_text:8",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:9",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_original_transport_text:9",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:10",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:10",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:11",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:11",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:12",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:12",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:13",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:13",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:14",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:14",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "only_interval_read_adapted",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:15",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_original_transport_text:15",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:16",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:16",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:17",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:17",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:18",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:18",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:19",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:19",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:20",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:20",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:21",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:21",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:22",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:22",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:23",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:23",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:24",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:24",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:25",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:25",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:26",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:26",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:27",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:27",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:28",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:28",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:29",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:29",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:30",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:30",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:31",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:31",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:32",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:32",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:33",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:33",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:34",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:34",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:35",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:35",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:36",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:36",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:37",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:37",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:38",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:38",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:39",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:39",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:40",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:40",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:41",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:41",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:42",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:42",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:43",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:43",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:44",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:44",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:45",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:45",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:46",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:46",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:47",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:47",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:48",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:48",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:49",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:49",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:50",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:50",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:51",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:51",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:52",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:52",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:53",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:53",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:54",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:54",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:55",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:55",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:56",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:56",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:57",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:57",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:58",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:58",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:59",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:59",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:60",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:60",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:61",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:61",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:62",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:62",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:63",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:63",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:64",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:64",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:65",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:65",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:66",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:66",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:67",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:67",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:68",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:68",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:69",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:69",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:70",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:70",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:71",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:71",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:72",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:72",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:73",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:73",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:74",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:74",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:75",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:75",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:76",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:76",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:77",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:77",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:78",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:78",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:79",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:79",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:80",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:80",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:81",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:81",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:82",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:82",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:83",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:83",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:84",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:84",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:85",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:85",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:86",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:86",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:87",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:87",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:88",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:88",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:89",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:89",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:90",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:90",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:91",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:91",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:92",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:92",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:93",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:93",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:94",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:94",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:95",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:95",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:96",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:96",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:97",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:97",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:98",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:98",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:99",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:99",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:100",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:100",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:101",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:101",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:102",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:102",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:103",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:103",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:104",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:104",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:105",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:105",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:106",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:106",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:107",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:107",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:108",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:108",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:109",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:109",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:110",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:110",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:111",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:111",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:112",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:112",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:113",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:113",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:114",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:114",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:115",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:115",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:116",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:116",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:117",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:117",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:118",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:118",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:119",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:119",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:120",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:120",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:121",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:121",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:122",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:122",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:123",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:123",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:124",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:124",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:125",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:125",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:126",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:126",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:127",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:127",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:128",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:128",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:129",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:129",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:130",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:130",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:131",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:131",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:132",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:132",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:133",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:133",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:134",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:134",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:135",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:135",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:136",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:136",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:137",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:137",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:138",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:138",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:139",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:139",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:140",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:140",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:141",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:141",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:142",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:142",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:143",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:143",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:144",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:144",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:145",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:145",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:146",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:146",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:147",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:147",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:148",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:148",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:149",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:149",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:150",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:150",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:151",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:151",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:152",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:152",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:153",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:153",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:154",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:154",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:155",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:155",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:156",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:156",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:157",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:157",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:158",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:158",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:159",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:159",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:160",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:160",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:161",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:161",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:162",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:162",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:163",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:163",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:164",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:164",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:165",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:165",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:166",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:166",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:167",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:167",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:168",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:168",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:169",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:169",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:170",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:170",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:171",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:171",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:172",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:172",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:173",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:173",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:174",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:174",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:175",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:175",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:176",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:176",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:177",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:177",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:178",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:178",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:179",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:179",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:180",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:180",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:181",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:181",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:182",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:182",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:183",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:183",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:184",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:184",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:185",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:185",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:186",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:186",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:187",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:187",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:188",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:188",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:189",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:189",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:190",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:190",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:191",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:191",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:192",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:192",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:193",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:193",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:194",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:194",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:195",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:195",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:196",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:196",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:197",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:197",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:198",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:198",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:199",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:199",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:200",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:200",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:201",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:201",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:202",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:202",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:203",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:203",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:204",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:204",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:205",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:205",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:206",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:206",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:207",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:207",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:208",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:208",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:209",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:209",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:210",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:210",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:211",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:211",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:212",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:212",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:213",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:213",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:214",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:214",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:215",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:215",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:216",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:216",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:217",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:217",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:218",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:218",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:219",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:219",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:220",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:220",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unchanged_statement:221",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:221",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "only_actual_wall_cap_metadata_adapted",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "report_scientific_fields_ast_identical",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:222",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_original_transport_text:222",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "only_metadata_and_return_replace_final_print",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_event:223",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ledger_original_transport_text:223",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "no_extra_function_statements",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "exact_original_ast_recovered",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "precisely_eight_transport_events",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "all_103_scientific_comparison_call_asts_identical",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "no_unmapped_scientific_file_read",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "no_historical_runtime_name:HERE",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "no_historical_runtime_name:PRE",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "no_historical_runtime_name:D",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "exact_parent_infrastructure_ast:FrozenInputs",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "infrastructure_ledger_ast:FrozenInputs",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "exact_parent_infrastructure_ast:verify_artifacts",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "infrastructure_ledger_ast:verify_artifacts",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "module_imports_stdlib_only",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "single_family_call_from_main",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "finite_declared_input_closure",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_count",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/PROOF_BODY_MAP.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/PROOF_BODY_MAP.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/PUBLICATION_STATUS.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/PUBLICATION_STATUS.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/REPRODUCTION_PLAN.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/REPRODUCTION_PLAN.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/CANDIDATE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/CANDIDATE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/EVIDENCE_READOUT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/EVIDENCE_READOUT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FILE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FILE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FREEZE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FREEZE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/MATCHING_PREMISE_SEARCH.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/MATCHING_PREMISE_SEARCH.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/READ_FAILURES.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/READ_FAILURES.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN_BEFORE_MOMENT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN_BEFORE_MOMENT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RUN_SUMMARY.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RUN_SUMMARY.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST_BEFORE_MOMENT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST_BEFORE_MOMENT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_RECHECK.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_RECHECK.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/add_moment_dependency.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/add_moment_dependency.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/PRELAUNCH.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/PRELAUNCH.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/RECEIPT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/RECEIPT.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/check_family.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/check_family.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stdout.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stdout.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/capture_sources.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/capture_sources.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/finalize_packet.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/finalize_packet.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_freeze.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_freeze.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/launch_check.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/launch_check.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/THEOREM_V2.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/THEOREM_V2.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/REPORT.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/REPORT.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/ACCEPTANCE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/ACCEPTANCE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/QUALIFICATION.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/QUALIFICATION.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_root_qualification/QUALIFICATION.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_root_qualification/QUALIFICATION.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/REPORT.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/REPORT.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/ACCEPTANCE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/ACCEPTANCE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/QUALIFICATION.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/QUALIFICATION.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:scripts/product_seed_emitter_2026_10_17.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "artifact_binding:scripts/product_seed_emitter_2026_10_17.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "every_new_input_declared",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "no_output_or_cache_fabricated",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "two_explicit_logical_aliases",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "alias_declared:__original_program__",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "alias_hash:__original_program__",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "alias_declared:inputs/interval.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "alias_hash:inputs/interval.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "new_fixture_directory",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "resolver_actual_interval_bytes",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "resolver_original_program_bytes",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "resolver_dynamic_actual_limits",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "all_nine_transport_negatives_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_has_no_external_link_assumption:PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_has_no_external_link_assumption:../outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_has_no_external_link_assumption:../outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_has_no_external_link_assumption:../outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_has_no_external_link_assumption:../outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_has_no_external_link_assumption:../scripts/emitter_coupling_family_2026_10_17.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:scripts/emitter_coupling_family_2026_10_17.py",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_has_no_external_link_assumption:../outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_has_no_external_link_assumption:../outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_has_no_external_link_assumption:../outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_has_no_external_link_assumption:../outputs/emitter_coupling_family_2026_10_17_inputs/PROOF_BODY_MAP.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/PROOF_BODY_MAP.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_has_no_external_link_assumption:../outputs/emitter_coupling_family_2026_10_17_inputs/PUBLICATION_STATUS.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/PUBLICATION_STATUS.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_has_no_external_link_assumption:../outputs/emitter_coupling_family_2026_10_17_inputs/REPRODUCTION_PLAN.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "relative_canonical_path:outputs/emitter_coupling_family_2026_10_17_inputs/REPRODUCTION_PLAN.json",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_links_declared_or_primary",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "pending_review_and_execution_status",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrapper_does_not_promote_status",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "planned_scientific_caps",
+      "passed": true
+    }
+  ],
+  "complete_original_ast_recovered": true,
+  "declared_inputs": 54,
+  "kind": "Static source transport verification only; no scientific body or mutation executed",
+  "limitations": "The family proof, independent review, root qualification, root transport acceptance, canonical cache/execution, scientific mutations, citation graph and publication gates remain separate. Static AST checking is author-side packaging evidence, not independent science.",
+  "new_overlay_files": 36,
+  "note_sha256": "6f935ddea34b016ca8ef3c099a48c003d131a4ef20b1b0d92bab8ba5a1dfd27d",
+  "parent_primary_sha256": "6eaf2e5c9716616f103b13a53f5fdf39d8baced9da7abe7dbc8263dc6e95be26",
+  "planned_scientific_cpu_soft_hard_seconds_not_executed": [
+    20,
+    20
+  ],
+  "planned_scientific_wall_seconds_not_executed": 30,
+  "primary_sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba",
+  "resolver_transport_negatives": [
+    {
+      "case": "undeclared_logical_name",
+      "exception": "KeyError",
+      "message": "'missing'"
+    },
+    {
+      "case": "absolute_logical_path_is_not_a_fallback",
+      "exception": "KeyError",
+      "message": "'/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_publication_draft/resolver_fixture/outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json'"
+    },
+    {
+      "case": "undeclared_role",
+      "exception": "KeyError",
+      "message": "'missing'"
+    },
+    {
+      "case": "absolute_destination",
+      "exception": "AssertionError",
+      "message": ""
+    },
+    {
+      "case": "parent_traversal_destination",
+      "exception": "AssertionError",
+      "message": ""
+    },
+    {
+      "case": "wrong_hash",
+      "exception": "AssertionError",
+      "message": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json"
+    },
+    {
+      "case": "wrong_byte_count",
+      "exception": "AssertionError",
+      "message": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json"
+    },
+    {
+      "case": "symlink_file",
+      "exception": "AssertionError",
+      "message": "link"
+    },
+    {
+      "case": "symlink_ancestor",
+      "exception": "AssertionError",
+      "message": ""
+    }
+  ],
+  "scientific_comparison_calls_preserved_without_execution": 103,
+  "scientific_executions": 0,
+  "scientific_mutations": 0,
+  "source_pairs": [
+    {
+      "bytes": 39464,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/CANDIDATE.md.txt",
+      "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+      "source": "CANDIDATE.md"
+    },
+    {
+      "bytes": 19827,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/EVIDENCE_READOUT.json",
+      "sha256": "2764e78511c4211f4c1b0207f83899d490d1e95d7be8af1e6504774365161128",
+      "source": "EVIDENCE_READOUT.json"
+    },
+    {
+      "bytes": 6923,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FILE_MANIFEST.json",
+      "sha256": "02fbb90a48e99227c4f8ea7482363af59bf1fdcb4fffb42060d6cf420b2a0d4f",
+      "source": "FILE_MANIFEST.json"
+    },
+    {
+      "bytes": 1418,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FREEZE.json",
+      "sha256": "ed250a089a13e033c81fe98fb1cd1736e2db8639793b90087226307e3874ce98",
+      "source": "FREEZE.json"
+    },
+    {
+      "bytes": 14727,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/MATCHING_PREMISE_SEARCH.json",
+      "sha256": "2e9b90232c1517ebccc77a28a709ca8b9c16e9b75f337e17bbd5b8ce700f3f8f",
+      "source": "MATCHING_PREMISE_SEARCH.json"
+    },
+    {
+      "bytes": 1587,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/READ_FAILURES.md.txt",
+      "sha256": "16ae970887b1d7ca558200e90af6f383e522d0c855aa4d5e5fa6f95320173173",
+      "source": "READ_FAILURES.md"
+    },
+    {
+      "bytes": 3166,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN.json",
+      "sha256": "35ce8f6221b426ec0abb292854ff986dca620e9883eb64c1156c6ef88dfb1612",
+      "source": "RESOURCE_PLAN.json"
+    },
+    {
+      "bytes": 2571,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN_BEFORE_MOMENT.json",
+      "sha256": "21af578d7cd6f14e68b5682a87689ad33a2b12923cc04b57edf864d6a6ff0855",
+      "source": "RESOURCE_PLAN_BEFORE_MOMENT.json"
+    },
+    {
+      "bytes": 4738,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RUN_SUMMARY.json",
+      "sha256": "982a84f238b6319a3b9c9ab5166981e0ae9ae88e26314735958c80b66cd214fe",
+      "source": "RUN_SUMMARY.json"
+    },
+    {
+      "bytes": 11292,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST.json",
+      "sha256": "e43611834d507a88e7f63602a2c73de131fc09789c0b60dfef2065e9c5febc02",
+      "source": "SOURCE_MANIFEST.json"
+    },
+    {
+      "bytes": 8594,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST_BEFORE_MOMENT.json",
+      "sha256": "0fe9c4259323f266f41335ffddf333866d4f3de1b99221cd8eeb20001452a7da",
+      "source": "SOURCE_MANIFEST_BEFORE_MOMENT.json"
+    },
+    {
+      "bytes": 7898,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_RECHECK.json",
+      "sha256": "3eb15bd31a1ab3cf5e5a3d0b6eb76bd6494803ce3b8a78890d3fb485f939ba1f",
+      "source": "SOURCE_RECHECK.json"
+    },
+    {
+      "bytes": 2961,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/add_moment_dependency.py",
+      "sha256": "3c4e6b2be4218652f59eec531ce8145d2f91c20138ce1fa4647afd641f1b7b6b",
+      "source": "add_moment_dependency.py"
+    },
+    {
+      "bytes": 17025,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/PRELAUNCH.json",
+      "sha256": "273a7c055fd04b6a630280ea79ddd1bc0b0945cc636c407c6ab9db9d9f14f83c",
+      "source": "attempt_01/PRELAUNCH.json"
+    },
+    {
+      "bytes": 8942,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/RECEIPT.json",
+      "sha256": "f7810c5746c5428ce601d4bb4b062807fe3ffb87590ed7d71a466a92900eb636",
+      "source": "attempt_01/RECEIPT.json"
+    },
+    {
+      "bytes": 14431,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/check_family.py",
+      "sha256": "731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027",
+      "source": "attempt_01/check_family.py"
+    },
+    {
+      "bytes": 0,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "attempt_01/stderr.txt"
+    },
+    {
+      "bytes": 41223,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stdout.json",
+      "sha256": "14125e34295e570e4338d0718ab35efb261edd2e151984fa61f18ae49712072c",
+      "source": "attempt_01/stdout.json"
+    },
+    {
+      "bytes": 4699,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/capture_sources.py",
+      "sha256": "8d689f52f44147342e2f23df862341614790cb1c20b1503650a26eef3bf2a6a0",
+      "source": "capture_sources.py"
+    },
+    {
+      "bytes": 14431,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+      "sha256": "731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027",
+      "source": "check_family.py"
+    },
+    {
+      "bytes": 5297,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/finalize_packet.py",
+      "sha256": "ccef225eb5e1405c14863f30df153e4efe6d280eed432d5715ffc84a93bd3be1",
+      "source": "finalize_packet.py"
+    },
+    {
+      "bytes": 27028,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/THEOREM_V2.md.txt",
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+      "source": "inputs/generic_v2.md"
+    },
+    {
+      "bytes": 30796,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt",
+      "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee",
+      "source": "inputs/installed.md"
+    },
+    {
+      "bytes": 37048,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/ACCEPTANCE.json",
+      "sha256": "c99e0c13ec2469910d74d1fe487d9d4ae09539d1ca3d46f53047dc36d509963c",
+      "source": "inputs/installed_acceptance.json"
+    },
+    {
+      "bytes": 2489,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/QUALIFICATION.md.txt",
+      "sha256": "dfe73e8d332dc81bac378daf480662f74e95e3091f01fce11d6e2098f7d7596d",
+      "source": "inputs/installed_qualification.md"
+    },
+    {
+      "bytes": 23238,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/REPORT.md.txt",
+      "sha256": "cf9f05affa0155ff4069549490f61971d1d136b9f1e37a5d566c45b0f8d9590f",
+      "source": "inputs/installed_review.md"
+    },
+    {
+      "bytes": 24275,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+      "source": "inputs/interval.json"
+    },
+    {
+      "bytes": 23457,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md.txt",
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+      "source": "inputs/interval.md"
+    },
+    {
+      "bytes": 2685,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_root_qualification/QUALIFICATION.md.txt",
+      "sha256": "41d7ef0ce15f54c710b0b7c7a7b9734e1bec25b78d275c73ac34d098bcbee3dd",
+      "source": "inputs/local_qualification.md"
+    },
+    {
+      "bytes": 31244,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt",
+      "sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f",
+      "source": "inputs/moment.md"
+    },
+    {
+      "bytes": 12525,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json",
+      "sha256": "bd2059184e105bd41437b1c28ca3f106a441215e09eac7a2b3ec316cbd674318",
+      "source": "inputs/moment_acceptance.json"
+    },
+    {
+      "bytes": 2526,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_freeze.json",
+      "sha256": "962038fee412c3a173689660236083519b08177b61163d5f1990ce00842f1197",
+      "source": "inputs/moment_freeze.json"
+    },
+    {
+      "bytes": 2484,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt",
+      "sha256": "0b0ce9eaba582d878b982ecd0f86a53857c5f394b9a42b4e27306e58bb405102",
+      "source": "inputs/moment_qualification.md"
+    },
+    {
+      "bytes": 32078,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt",
+      "sha256": "cf6507b8b0dc3c9075b424602ab4969202c6e6bd665cabda4dc016125a21ee77",
+      "source": "inputs/moment_review.md"
+    },
+    {
+      "bytes": 5767,
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "source": "inputs/physics_loop_skill.md"
+    },
+    {
+      "bytes": 95866,
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44",
+      "source": "inputs/publication.md"
+    },
+    {
+      "bytes": 109892,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json",
+      "sha256": "b132191aeeb6411ce9d5711f6d3546f7d87befaff5541e62a923edf9f43ad6f0",
+      "source": "inputs/publication_inventory.json"
+    },
+    {
+      "bytes": 27328,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt",
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1",
+      "source": "inputs/route.md"
+    },
+    {
+      "bytes": 25229,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json",
+      "sha256": "6f057d8a580217d29a09d7683462f5b35b71de093e75c8d07a12283cde33593f",
+      "source": "inputs/stationary.json"
+    },
+    {
+      "bytes": 10962,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt",
+      "sha256": "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5",
+      "source": "inputs/weighted.md"
+    },
+    {
+      "bytes": 25670,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/ACCEPTANCE.json",
+      "sha256": "01e6cf9d8e54d8dd38157f5901a0c9c2b7bc0ed2890e7895b2213a26b1469a16",
+      "source": "inputs/weighted_acceptance.json"
+    },
+    {
+      "bytes": 2186,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/QUALIFICATION.md.txt",
+      "sha256": "f3513816c0bbe060f50860e02a2f1c49afcd42056314af9cc161885076882f4b",
+      "source": "inputs/weighted_qualification.md"
+    },
+    {
+      "bytes": 16576,
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/REPORT.md.txt",
+      "sha256": "cb309d98863a09a0db9b47b559a4e7a3a6f55d314b78dfd5379b57a089504028",
+      "source": "inputs/weighted_review.md"
+    },
+    {
+      "bytes": 11788,
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "source": "inputs/workflow.md"
+    },
+    {
+      "bytes": 4137,
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/launch_check.py",
+      "sha256": "1988d77f55ed45dd05bf15c4426135e31d7f83f02893a7bcf68442589f9b585b",
+      "source": "launch_check.py"
+    }
+  ],
+  "statement_results": [
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        0
+      ],
+      "original_ast_sha256": "6b8ca0469a9ba86305b8f85255ef1fc0fe8d3bf6c315d4bf3dd178e3c36c9d45",
+      "original_index": 0
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        1
+      ],
+      "original_ast_sha256": "59051b17634cdcb5a576ceb58fdc0a4e5652ed3b60d66667e92ddefd931abeca",
+      "original_index": 1
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        2
+      ],
+      "original_ast_sha256": "d277aa59579ba85bd587bfdf4a0706d5b8253b07d6deca4d97565e6e3acad594",
+      "original_index": 2
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        3
+      ],
+      "original_ast_sha256": "f00d35e9f34e815a0362e9cba0951173475d865bc14ad3f5963fde364f30aff0",
+      "original_index": 3
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        4
+      ],
+      "original_ast_sha256": "2446888d7e51fdc172dd168011bcfad30b739033d2281658431b23035d25db08",
+      "original_index": 4
+    },
+    {
+      "kind": "removed_historical_launch_transport",
+      "new_indices": [],
+      "original_ast_sha256": "ed38af9acff9df2b77e66d1370e0fa51645fe2c90b48ddbdf515a572245c7cb5",
+      "original_index": 5
+    },
+    {
+      "kind": "removed_historical_launch_transport",
+      "new_indices": [],
+      "original_ast_sha256": "38f3c957ae48969a6f845376f80b3994cbead0ec766a8d143bfba667c6241869",
+      "original_index": 6
+    },
+    {
+      "kind": "removed_historical_launch_transport",
+      "new_indices": [],
+      "original_ast_sha256": "a76443bb097a47d92eed3e2c0eeaa328fc4248c7c66476e5d238254d509a2344",
+      "original_index": 7
+    },
+    {
+      "kind": "removed_historical_launch_transport",
+      "new_indices": [],
+      "original_ast_sha256": "61b94f0b3984ad94bcd93cfeac8fe0918a9f7df5618ea3699918a63acc0dce1f",
+      "original_index": 8
+    },
+    {
+      "kind": "removed_historical_launch_transport",
+      "new_indices": [],
+      "original_ast_sha256": "d14a3a47bf314226362abdfeb3fbaa6d99257ffc5d8bc23d931b25aeb88e37c9",
+      "original_index": 9
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        5
+      ],
+      "original_ast_sha256": "0c77c8b4bc983ea3ad4b39e3b6160b1912c9cf02fca80b4d64043689431a5485",
+      "original_index": 10
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        6
+      ],
+      "original_ast_sha256": "6818d1ea9be9dc60a096a5c82aa4a828793fde0f6ea9c2cdd6d9b7bc0e3dda2d",
+      "original_index": 11
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        7
+      ],
+      "original_ast_sha256": "3097998efa42cf7232a3f6ee0bde8543c84e8d89d5e6c74ff7cc969b679f1542",
+      "original_index": 12
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        8
+      ],
+      "original_ast_sha256": "d0864198f46da1fc6bad5e8fa3a89c74836114339f094ef6761664fc4a62d236",
+      "original_index": 13
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        9
+      ],
+      "original_ast_sha256": "ddf283beb1a38c2be6c6efa247ec785d32e21a88a1af9967f5a4c3ea381074c9",
+      "original_index": 14
+    },
+    {
+      "kind": "adapted_input_read",
+      "new_indices": [
+        10
+      ],
+      "original_ast_sha256": "c35adf38f80e00c21cf7d3c4a7fcbe49e06ecf14de5f00267211b3ea9cc0ae12",
+      "original_index": 15
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        11
+      ],
+      "original_ast_sha256": "05981a3c8c87ab16ad365f36dee18184a7b5aa5429794430b89160cea1c627a1",
+      "original_index": 16
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        12
+      ],
+      "original_ast_sha256": "0c44862a01106cb462893fff7e5865e6fd907419809e0431eee3582c9ffe21da",
+      "original_index": 17
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        13
+      ],
+      "original_ast_sha256": "9c666bd13857607b6f2186f8c51a872fb00907fa7ba2b159f37510a2097d7793",
+      "original_index": 18
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        14
+      ],
+      "original_ast_sha256": "8a1743a4cdfe39d0269d3a80ee5a8c8413fada637486d14280ebad4a8126a547",
+      "original_index": 19
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        15
+      ],
+      "original_ast_sha256": "703afaacd6f1156e8141bb1f273ef518b92de09415ddbaafadae803424f2d6e8",
+      "original_index": 20
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        16
+      ],
+      "original_ast_sha256": "698a51c0dab44b223cda09f2bb4f5a2bdd39f829d78cea741c270454cef0895a",
+      "original_index": 21
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        17
+      ],
+      "original_ast_sha256": "b0a9e52aefe79c2cde655fb6671a253416e165cdfe3af02e410da402386ea08b",
+      "original_index": 22
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        18
+      ],
+      "original_ast_sha256": "6db5efb08b6fdb50f0b0d18db406513c0ae66d71bfeb8c44f519894459169ebf",
+      "original_index": 23
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        19
+      ],
+      "original_ast_sha256": "11342863d0082e86debeb117fcf1047b30f8488023382c8c69b9538e0da66f34",
+      "original_index": 24
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        20
+      ],
+      "original_ast_sha256": "62d921c3c22e342c70a3b30650dbed4ca146889384310fbffaf4d8bc06a76c8d",
+      "original_index": 25
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        21
+      ],
+      "original_ast_sha256": "27171bfc330a9d2bbffee0cbea6a0a53111f4aa78da8a0b79550218a31de648c",
+      "original_index": 26
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        22
+      ],
+      "original_ast_sha256": "666174ef2407d89b6668a79d9c982d3e8cd26e32152ef4f8f79dac31d3cf5f7e",
+      "original_index": 27
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        23
+      ],
+      "original_ast_sha256": "08daf6718ff0636ae1aa42c81ec4fafd53135401f401ea577711e19df0a0a746",
+      "original_index": 28
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        24
+      ],
+      "original_ast_sha256": "c02ae7bd3f8a6653e98d5c1fcc5787c80a2610d6604602ca3e9a268e4a3e66ad",
+      "original_index": 29
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        25
+      ],
+      "original_ast_sha256": "ebc6c86f1a69631f3948fdb3f1cbb5893ff41fe8c89711cce399a65a357d2545",
+      "original_index": 30
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        26
+      ],
+      "original_ast_sha256": "a8758f11a3b06c476f6a74bb17a7c4609e41f3ef3bd6d1124e3f63db8c21b8af",
+      "original_index": 31
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        27
+      ],
+      "original_ast_sha256": "48f88cd3c0558f918a82f8f72c9f2e13503a14aecd65366683297caffe688139",
+      "original_index": 32
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        28
+      ],
+      "original_ast_sha256": "ed0dc8367e438cc54b1f082c8460c5ceb7c6083c8c6eee635919c6a563519217",
+      "original_index": 33
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        29
+      ],
+      "original_ast_sha256": "bbeb45036a1bae0e0a31ab9ef0c5669ace7617d73cc782ca72ce1e897c016a5b",
+      "original_index": 34
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        30
+      ],
+      "original_ast_sha256": "b726262ecac207040de31a26e55cbcd7e8383f96a84bf9f47fce3fcb8d97c8c2",
+      "original_index": 35
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        31
+      ],
+      "original_ast_sha256": "73f608da3a3d3d1664c763d2222e562a15526de3570f5adbe112d85a5f68eebf",
+      "original_index": 36
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        32
+      ],
+      "original_ast_sha256": "044dad6c944b9b00cd1b82f88446cb2cbdcdfc91145cc406450a6bcf57b6ec79",
+      "original_index": 37
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        33
+      ],
+      "original_ast_sha256": "88b393a459af8949ca96f3aac0ce61bf58f63d8e3fcb893e4c08701c5b9e0dae",
+      "original_index": 38
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        34
+      ],
+      "original_ast_sha256": "45d1a4947601b277ecf48546e6ba3dfa95b66f017ad88b7506fff7c558cf4e0e",
+      "original_index": 39
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        35
+      ],
+      "original_ast_sha256": "c0d509e575a321cc04f5c0aff2415d2a7ca3b1a9b8c31acc02804788dd7f4aea",
+      "original_index": 40
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        36
+      ],
+      "original_ast_sha256": "25dea19ad49dfc63603062f06b937531ca481e42f7aefd7c84cf435afbe77a66",
+      "original_index": 41
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        37
+      ],
+      "original_ast_sha256": "717c4d053b97c2172edfe674ef623f44ff530878eba9109bc7aa1afa5e0c377e",
+      "original_index": 42
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        38
+      ],
+      "original_ast_sha256": "760983c9852b6c806f485cad23e9bc3a3ec1c616c3b8dc304c95ec8347b31ebe",
+      "original_index": 43
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        39
+      ],
+      "original_ast_sha256": "253fda3e36c4f54ec2425fc16292a75866d428e0faf453ba311ae9907c0340a8",
+      "original_index": 44
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        40
+      ],
+      "original_ast_sha256": "6a4e2ceb368d208e768c9f80f9a42b3820ce615aa59d97524fb4ba2eb0413e7d",
+      "original_index": 45
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        41
+      ],
+      "original_ast_sha256": "192633f571292385a735957cba9aebe44dc3a93dffc4ffd4b25de497d44e2ff9",
+      "original_index": 46
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        42
+      ],
+      "original_ast_sha256": "f7f32b99fcb6b78e0b8401213e70d57b2576de4220ce6c4317620c815ed41893",
+      "original_index": 47
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        43
+      ],
+      "original_ast_sha256": "f0c29756865b8cd2ae83a740eca8cad3aa24e4a8039cb82b8d6219c8cea4785a",
+      "original_index": 48
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        44
+      ],
+      "original_ast_sha256": "683f5b05a7d7f43dbe50b990e6780e1af2e765d3785d7aefc94960a4abf94963",
+      "original_index": 49
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        45
+      ],
+      "original_ast_sha256": "be07ef81b9adcc72b2acac44e389c510ff750590990c6b13a4f79ed7fedc1903",
+      "original_index": 50
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        46
+      ],
+      "original_ast_sha256": "726f73c69d30bcdc9c090d87e3d56be41b7d80b66f97ed1dde99305c11d76429",
+      "original_index": 51
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        47
+      ],
+      "original_ast_sha256": "27dbb65d59c736a431845df3c3a857f2ec986882456e3ec20aa465c76adbf89c",
+      "original_index": 52
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        48
+      ],
+      "original_ast_sha256": "f99338570e3d334c52abd31968e04c2478d199253e19eba76435ca1daa62113a",
+      "original_index": 53
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        49
+      ],
+      "original_ast_sha256": "46c35248d9dd233a4bae820e8420fc844b00a82b57eb4209519eea9e87b41619",
+      "original_index": 54
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        50
+      ],
+      "original_ast_sha256": "acee95a96ccea2cacef2c5dac9f88bc3f3ef864a7d58ead99c25ea13cc96e076",
+      "original_index": 55
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        51
+      ],
+      "original_ast_sha256": "891be5e87560d1f9d7538fd10915b8c2abe4827d91c6c00fd0a2283fa6396957",
+      "original_index": 56
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        52
+      ],
+      "original_ast_sha256": "1d6d1e2795494f94c3b2676ab5e19d916d737edbbd93f56206cd63150b5465e4",
+      "original_index": 57
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        53
+      ],
+      "original_ast_sha256": "ab140fbe98e89c067dce0f1a858b647ac1c37ad8d34304d864f738fa889a7f70",
+      "original_index": 58
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        54
+      ],
+      "original_ast_sha256": "8b951b194eac8659d0a06bd2976b93712d86dd4d86a1c4ae53b597f34447154b",
+      "original_index": 59
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        55
+      ],
+      "original_ast_sha256": "a8060833dab23a4df25a486340d414edd4cf62359d910203e39602af95f7cc0d",
+      "original_index": 60
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        56
+      ],
+      "original_ast_sha256": "970419c56f10889470d396b9eddf32bda93125167dc38a99f9108f049d17be8e",
+      "original_index": 61
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        57
+      ],
+      "original_ast_sha256": "689c1dbde628df04f373e05ed9a59411933f78d916663106b474d80bb506374d",
+      "original_index": 62
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        58
+      ],
+      "original_ast_sha256": "88467126bcee565cea14d22589ad3a89f4b870fff47243b7c1d1ef5b52225b5b",
+      "original_index": 63
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        59
+      ],
+      "original_ast_sha256": "048c779b1e814fb3e0b4b34534e18db18f23c8276132ed78739ff86e49d8eb33",
+      "original_index": 64
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        60
+      ],
+      "original_ast_sha256": "cbf20f31a98541b2f86e8b8a1b69b50379825c64d783016e3e8606906fb0376d",
+      "original_index": 65
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        61
+      ],
+      "original_ast_sha256": "a994cc9b1ce621d2b9fbdc87fc000690ef191eb0cdfccad44c373776f38fce36",
+      "original_index": 66
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        62
+      ],
+      "original_ast_sha256": "7e936e19a25c5a8b4133e5cf8c60053ddfb698dca3da79826fd83856027108dc",
+      "original_index": 67
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        63
+      ],
+      "original_ast_sha256": "b837cb1e287a612929b0a8210531cfc72377503e8c2a8b7fe5d4d9a56487b29f",
+      "original_index": 68
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        64
+      ],
+      "original_ast_sha256": "029428f34ee1c90839cf801988a0ec25fcfa7303bb36c18b99ebf8e06e3518b4",
+      "original_index": 69
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        65
+      ],
+      "original_ast_sha256": "284475b6aa97859af05286c24c6c96c8394875698f49304acbe25fc4e670bd1a",
+      "original_index": 70
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        66
+      ],
+      "original_ast_sha256": "fba036c74ac8e76be5e5594bfc952530284d873226edc70dca2c5279dd8e539e",
+      "original_index": 71
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        67
+      ],
+      "original_ast_sha256": "4fe09fd100a7f7c23e376828c1701ef7e12fd00281415b4d48850a437c9ab920",
+      "original_index": 72
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        68
+      ],
+      "original_ast_sha256": "350b47f828d0f2482d69cc244e3beda4c081a996e34dbd6a44ab3894964e093e",
+      "original_index": 73
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        69
+      ],
+      "original_ast_sha256": "4b4a279dc38aba2d8a0b6c6a2bfc1102e703a8a4125666fdb92bdcdc029cff54",
+      "original_index": 74
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        70
+      ],
+      "original_ast_sha256": "688a4150e799617f16ff70dd74c810982d0a7e392683fb0a2635a62d79b322e8",
+      "original_index": 75
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        71
+      ],
+      "original_ast_sha256": "88cbbcbc6f8b34804c4d92406eca35f569ed75869f82773ebaf06afb427d37fb",
+      "original_index": 76
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        72
+      ],
+      "original_ast_sha256": "81267dfa8efa1374fe7db89f691a82f6eb6b05f89bb8a51b99bd42e02184d07d",
+      "original_index": 77
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        73
+      ],
+      "original_ast_sha256": "bb72a3059c8f9429ffd91c08260d7207e792ffff1f7219076b22199aec516df7",
+      "original_index": 78
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        74
+      ],
+      "original_ast_sha256": "05dba88e73a7d101fcac0eabe366eb33592c115579f2c03b345451f469ce1e4c",
+      "original_index": 79
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        75
+      ],
+      "original_ast_sha256": "f4c58180a14650dd4f90b2e7399a6a0225fcd7f4d929c56f1f86b1ccb4735246",
+      "original_index": 80
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        76
+      ],
+      "original_ast_sha256": "759de984f5f05817eeaad18301d45ee4460a4efe73c91ed62af7e7c957db7371",
+      "original_index": 81
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        77
+      ],
+      "original_ast_sha256": "3db6cce67c476ec94ea0247633ea485d921e6f2a7a2cbf9ccb82c028c8926605",
+      "original_index": 82
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        78
+      ],
+      "original_ast_sha256": "0a73b6cd86a5ad1e69dcd05de9f82730fe3b236cd5156462d486bede00bf7d91",
+      "original_index": 83
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        79
+      ],
+      "original_ast_sha256": "6e1977b730fe0e58354d50514c3ea8346de725f0e41b0fbfeaf1b670d8fdc8b1",
+      "original_index": 84
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        80
+      ],
+      "original_ast_sha256": "9cf567f38ef7697fa0b3e531cd28b6b04a358f433467f22522de3cc433bbcd14",
+      "original_index": 85
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        81
+      ],
+      "original_ast_sha256": "9117c6e110f2cafcdb5e8eb7804b8ab01d0cdfe345176d8163bca8e6fef5b514",
+      "original_index": 86
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        82
+      ],
+      "original_ast_sha256": "78ad29ccdaf95eaf9aa1a282b7d83986af306028fd55d862069da5dca22d71f8",
+      "original_index": 87
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        83
+      ],
+      "original_ast_sha256": "2e9b45c67e91709a0cc88bbc20c982de61079e443b3314c1719564b200797878",
+      "original_index": 88
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        84
+      ],
+      "original_ast_sha256": "79c72eb78c1b166c3031ba984e283a49c4f2a31b4028c51f78f133c236725f95",
+      "original_index": 89
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        85
+      ],
+      "original_ast_sha256": "6852eed27d9b6c62b009caea89452cb7591b3707bca5b4689a8f4eef6fcfdabe",
+      "original_index": 90
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        86
+      ],
+      "original_ast_sha256": "b6e1f27af562089f12da14aa8432668a0bac5936e474717cb9fe94c3c8b1dc93",
+      "original_index": 91
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        87
+      ],
+      "original_ast_sha256": "88f8a9210a2657f492fe6ff1a997acbb94e16641a6557ebdc2b274cc0a1376a9",
+      "original_index": 92
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        88
+      ],
+      "original_ast_sha256": "406a1981843595ae16bf1e9f538eefce12a84df0cee0799a626fc1a3b71b3441",
+      "original_index": 93
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        89
+      ],
+      "original_ast_sha256": "af04571796a5639a314c681ef3ada0266015503e291fa9f93099a25ad46815f3",
+      "original_index": 94
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        90
+      ],
+      "original_ast_sha256": "6a95dbb822526f00c78fe79a177d0afbabe689dd6d8ee5422ca549114c33185f",
+      "original_index": 95
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        91
+      ],
+      "original_ast_sha256": "b752c6021c949f24c078b82c51c5c908a5538a6ff675d5404b2d02d792d734d0",
+      "original_index": 96
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        92
+      ],
+      "original_ast_sha256": "f20b730bef5b2f930a547e2b18cb6ba05b37f7b488f092441c256a060c3f08e6",
+      "original_index": 97
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        93
+      ],
+      "original_ast_sha256": "76ead17fa8e78f2d0d52daaf2388a47099884091bdf0c34d771bdb130a1a0289",
+      "original_index": 98
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        94
+      ],
+      "original_ast_sha256": "59b478771d932057bc7dee16fc0fa931be8f932880e11605a6aa019d4b8a1008",
+      "original_index": 99
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        95
+      ],
+      "original_ast_sha256": "95ece5c472b6404fec8474d03ab46d5bfe009e0f11f5e5ac71bcd0b74eeb659d",
+      "original_index": 100
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        96
+      ],
+      "original_ast_sha256": "383479e92e2db6091f619bb19280b969ab5a0bac732bac3e9482c3a3a7c0203c",
+      "original_index": 101
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        97
+      ],
+      "original_ast_sha256": "6f6e2b65018c9282ddad0289fc094bb03e03bc5ed9139db6ee98c072412f5c95",
+      "original_index": 102
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        98
+      ],
+      "original_ast_sha256": "6327cfe8ff692e22b80b417dc82c094cb31c9b44771b625cbf77820e034fba7e",
+      "original_index": 103
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        99
+      ],
+      "original_ast_sha256": "392f8e2dc2829826e0b75a2598e2f99758105790cde37a7f94016e077bd52880",
+      "original_index": 104
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        100
+      ],
+      "original_ast_sha256": "2c9c7ed86d137f8af4be887541600a1c5c12b6b1779b774dbec9ac839958cf8f",
+      "original_index": 105
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        101
+      ],
+      "original_ast_sha256": "6b65bd499e32d6cbc6c986be56c981198008e320b90f220d29b27a5c48cdbea0",
+      "original_index": 106
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        102
+      ],
+      "original_ast_sha256": "ada3fc41926d698f26a32383d06e684dc826c2cb460ee4771926bd94d3ebed7c",
+      "original_index": 107
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        103
+      ],
+      "original_ast_sha256": "cb6002b62ba9d010399ae6d9d607bd484a6ccf21506a42e1299d1a173260bccf",
+      "original_index": 108
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        104
+      ],
+      "original_ast_sha256": "b936def46641dbd200db503c2fc470eae797c7eac7e2dccea82c10386ae4c758",
+      "original_index": 109
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        105
+      ],
+      "original_ast_sha256": "57ed52e5e700118d57d282f3c4dd8b05a3e26078b17593335f09ab3a3d2b84ee",
+      "original_index": 110
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        106
+      ],
+      "original_ast_sha256": "552702128dbd2cfbc96b7dbb11d830a88d5d68a6f3a7fa8e2805fe5a04447239",
+      "original_index": 111
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        107
+      ],
+      "original_ast_sha256": "844bf870cbc6de97a7d4cdd7b47f5ca1fc33b81de10e1d822cee4a113e4d5554",
+      "original_index": 112
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        108
+      ],
+      "original_ast_sha256": "156a950f12936bec34d6ef4af4f098b32c34e469eb61a6d8b01f887e31705549",
+      "original_index": 113
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        109
+      ],
+      "original_ast_sha256": "7c14fcf6ac1eee12ce831c4b1a233b338c7bd8919656a222db8ddec0b7a3b3b8",
+      "original_index": 114
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        110
+      ],
+      "original_ast_sha256": "75d8ac12d249b551923d9be32ecc35c3b12925bc9b42bb38a2903f54a6d9ac4d",
+      "original_index": 115
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        111
+      ],
+      "original_ast_sha256": "00ba6fe13d2f548377c9f60788702392119dad5b27a8a7ce486a9b4452dfeeb5",
+      "original_index": 116
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        112
+      ],
+      "original_ast_sha256": "e30ec3a04b1bdcdd9b91a21a0cb4326d6461b98f3e19eb46761f09c7cb293710",
+      "original_index": 117
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        113
+      ],
+      "original_ast_sha256": "e72687926dc3159c71413b333d2a755cc59dbb1545b75b3c268f31fdbaa328d9",
+      "original_index": 118
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        114
+      ],
+      "original_ast_sha256": "0434c69486b4e2a1651afa2861fe6200792b6eae8b0d3ff55425d362d1016c29",
+      "original_index": 119
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        115
+      ],
+      "original_ast_sha256": "ffe782976fc2ee0fdafea95a318125c21527605012dea22e71e4102f766d2e03",
+      "original_index": 120
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        116
+      ],
+      "original_ast_sha256": "44599834795da569bdcaad7d61755433e054d3eeddde59ea64163f31ab2c8c66",
+      "original_index": 121
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        117
+      ],
+      "original_ast_sha256": "cde92158aa1024f7a9ac6e8e09cf58193b6519aba96c75392f42574dc7ca02b3",
+      "original_index": 122
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        118
+      ],
+      "original_ast_sha256": "06d709ddda1715642ff84e9aec77f4ba79786558ba1f8fef4624508a97afe967",
+      "original_index": 123
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        119
+      ],
+      "original_ast_sha256": "7ee63e028fe9d0660ff67c71fbdb539cf717efd7d14a20aa4c227c2799e55ddf",
+      "original_index": 124
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        120
+      ],
+      "original_ast_sha256": "8a9d44479b42281f39f7e701c6914b92b40be4c37b2fbd8f6b15369c072e003e",
+      "original_index": 125
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        121
+      ],
+      "original_ast_sha256": "21ebf796dea1775df7f33bb03568018e686bb72cd82b1b4c56a816206ac18f06",
+      "original_index": 126
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        122
+      ],
+      "original_ast_sha256": "0d2f06ea3d1f60031c60ba8b3d37ff4a325297ffd073cb9d447c60e0c602eca8",
+      "original_index": 127
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        123
+      ],
+      "original_ast_sha256": "5a44c2414a0695e6fb5608d891ac8a8eab88d210da27423ee8bd95fbee2d8068",
+      "original_index": 128
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        124
+      ],
+      "original_ast_sha256": "913d7ea8c4bd778efd010f57a2e15d88bd1bce2a062169379edeb6e643ace997",
+      "original_index": 129
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        125
+      ],
+      "original_ast_sha256": "b5f16bc5ca369670bf4047394ae937fcc904e2479e1988ecdbd7c23fee99c786",
+      "original_index": 130
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        126
+      ],
+      "original_ast_sha256": "d3c80c523732297217c3e0924ea86e747515943f80a929a4f98dd462a6a3af86",
+      "original_index": 131
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        127
+      ],
+      "original_ast_sha256": "f31e6cfaaf2acf4ab3216c02713e3b341056ca66555a10a4acf918cbb9397073",
+      "original_index": 132
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        128
+      ],
+      "original_ast_sha256": "c7892ebbfe349ab809b3cac15185ec4781d540311eba2b3254cbc9c951200e9f",
+      "original_index": 133
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        129
+      ],
+      "original_ast_sha256": "690aa83524c93e3880b3f9a77da4bb489682b112ec81751de6bd47850c2984e1",
+      "original_index": 134
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        130
+      ],
+      "original_ast_sha256": "0be70e179d9a073041b02f0745d868ed4bd399c757c2c44f37ea8a798b178ee6",
+      "original_index": 135
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        131
+      ],
+      "original_ast_sha256": "8059d94984161c788e3eb68e663fb23e4c2d2200ecfc7eea82c724ed7749ddde",
+      "original_index": 136
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        132
+      ],
+      "original_ast_sha256": "494ca8d98348d24ec7532a6914f7c4a80e7763df3c8113e641cff8bd547ac3c5",
+      "original_index": 137
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        133
+      ],
+      "original_ast_sha256": "635b19608140ab389d39d7aef0db0f0cedea7afb365824b12907c622e01930bb",
+      "original_index": 138
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        134
+      ],
+      "original_ast_sha256": "c009472d1de13eec65c2fdfdda079a8fb34cfb2b229d4c36ef1fe8150e7f1525",
+      "original_index": 139
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        135
+      ],
+      "original_ast_sha256": "2bd57f373378b14a32f63cc28f57428a30eb6ce39e7b6f70c7633087c2c8981a",
+      "original_index": 140
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        136
+      ],
+      "original_ast_sha256": "c27449a516fcaf358a13322186296bd5011de555ce483170dd21e36f13e3d061",
+      "original_index": 141
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        137
+      ],
+      "original_ast_sha256": "4733f0d3a420bc7951a23b5ba3e11af95886844207342452ebf75cc97aaa0e96",
+      "original_index": 142
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        138
+      ],
+      "original_ast_sha256": "51b285ba2ef7def28c97529d0589d6911f3d9b8cdeec0e508501709e2ab11aa6",
+      "original_index": 143
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        139
+      ],
+      "original_ast_sha256": "2edf684d0370be5a25c9a2b49c62655d3e87e47542e3741f670c49d92ca35c67",
+      "original_index": 144
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        140
+      ],
+      "original_ast_sha256": "509e376277b5072cd2d1e645caf097113a25b4128937e599799dc56871a39b96",
+      "original_index": 145
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        141
+      ],
+      "original_ast_sha256": "bda1f138685a434d25e61bc66e23cfb21b3b1f2494693b97e7d9ca85d1115e1c",
+      "original_index": 146
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        142
+      ],
+      "original_ast_sha256": "fd37e92694e958dfa1e7f534fe85a905cb90ac9b0247b5d6f425b7d531e2b25c",
+      "original_index": 147
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        143
+      ],
+      "original_ast_sha256": "16a9a271a3ff68171c591b4a68b20967876bccf432e591c9f0db42f4b66965a6",
+      "original_index": 148
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        144
+      ],
+      "original_ast_sha256": "0aac11c00e6320947cdb620c14bc301ced84ec620d592f5a7b7afadabf89d46d",
+      "original_index": 149
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        145
+      ],
+      "original_ast_sha256": "82124e8389c7649a31b23b96394473e9e781887460f46f0810939a0e6e7ee84b",
+      "original_index": 150
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        146
+      ],
+      "original_ast_sha256": "36a759ef5197bc5117d445414e7e2543943254f4c9eef3a816f25dfbcb7ade78",
+      "original_index": 151
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        147
+      ],
+      "original_ast_sha256": "ecdd71b999838642b27e2779651060b1eab1f924722a522902a140528e160983",
+      "original_index": 152
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        148
+      ],
+      "original_ast_sha256": "0b9658a22e6d226ae4b6490961d3ad527917dfcf68b4b3aeef732292f152bc6e",
+      "original_index": 153
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        149
+      ],
+      "original_ast_sha256": "6436f2e94cddb4cee9e4b7bb39d2fa781e85c7b2c0818ec2e588af5fbc494e64",
+      "original_index": 154
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        150
+      ],
+      "original_ast_sha256": "f9c76b8eabd6b6ddb5a9a84664a52beb239be594a7f2a6f4c24556a9fae132d7",
+      "original_index": 155
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        151
+      ],
+      "original_ast_sha256": "adbb7a735efff6d86acb8fd2e552c242fba4ce056181e213bbcc813e909ebaf6",
+      "original_index": 156
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        152
+      ],
+      "original_ast_sha256": "664107e200b64833894ed0f4649436e6e4a66ef811b561eda93172ab5e975ede",
+      "original_index": 157
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        153
+      ],
+      "original_ast_sha256": "00701b03a8d999f54e9d428d2c2472771457c115c685a538d92c532818345fdb",
+      "original_index": 158
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        154
+      ],
+      "original_ast_sha256": "7043b9c9fba4484523219ff493370ac373646ed5c062f80b0ac0418a1d2a98c6",
+      "original_index": 159
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        155
+      ],
+      "original_ast_sha256": "5c7b5f816b088280d54cec15eb6bee883958ccb0d61f8f5549d4249d284e439c",
+      "original_index": 160
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        156
+      ],
+      "original_ast_sha256": "f763692f0aae110334b65b8d34766f616da3311847ee9cf93cdb1eb000cfad7e",
+      "original_index": 161
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        157
+      ],
+      "original_ast_sha256": "12b9bde496be17febc2bb40488714d04e3b8830ae1c9928c2f38400f70919e82",
+      "original_index": 162
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        158
+      ],
+      "original_ast_sha256": "6afe3012127458a7fe2435cd98c04a22720d686604dc06e20f6f9e89289334ea",
+      "original_index": 163
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        159
+      ],
+      "original_ast_sha256": "269117fa2f78c7991fe730952ac0682fb062536e66ab6ee3142618af169a2ef8",
+      "original_index": 164
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        160
+      ],
+      "original_ast_sha256": "cae9b5f3771c4f50802d4c58480553cfcf79ce9f45868fc85bd78f8ccf9252fa",
+      "original_index": 165
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        161
+      ],
+      "original_ast_sha256": "2e1b0049691d26a0cb071e85a096cba6c5d71b5da6cd78b736379445e008760d",
+      "original_index": 166
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        162
+      ],
+      "original_ast_sha256": "66f2da770f7d29a5264760e774bd876585a57b4f1f93c364bd803bef6acddc07",
+      "original_index": 167
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        163
+      ],
+      "original_ast_sha256": "cabbb22b1d15da2e0ea40039d14d99007d3dce8a3662f389251193bd1f73dc33",
+      "original_index": 168
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        164
+      ],
+      "original_ast_sha256": "cc96bf373a303ee574f15f4cb8ccc44045bdcf39fe361754be222a94bce5e034",
+      "original_index": 169
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        165
+      ],
+      "original_ast_sha256": "36915a6b6fda15daaed88763089750bcd97092438bb32ba18ff350cc509d087e",
+      "original_index": 170
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        166
+      ],
+      "original_ast_sha256": "edd524b3d02cb8be6f7b37130443fb71761ae0dd78cc4e4ae7bfe50d15891ecb",
+      "original_index": 171
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        167
+      ],
+      "original_ast_sha256": "1291730a159c28b7ec6f80c45374d76c60429ed6f5708d6bc711304319599bb2",
+      "original_index": 172
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        168
+      ],
+      "original_ast_sha256": "8584d9759d9903580a8e3d2e7f8d38e452c6e2d457999ec0465a7a468652e21c",
+      "original_index": 173
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        169
+      ],
+      "original_ast_sha256": "0c54923e9493780d82a2250bdcbddbef9bcaf74109ff3ed734a4f41b879a4f2c",
+      "original_index": 174
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        170
+      ],
+      "original_ast_sha256": "eff795f759981630eca25686bb8a3029fede92fa03d439d8c64c58925f723ab7",
+      "original_index": 175
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        171
+      ],
+      "original_ast_sha256": "b78c6ae1e0860f57816bb43eabe109ef740f42154b028d16e8d34e7bab97786c",
+      "original_index": 176
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        172
+      ],
+      "original_ast_sha256": "5b8b027c9540b16cd27a8c568219ac113731d9d352cf54b4654f5412e9b40df5",
+      "original_index": 177
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        173
+      ],
+      "original_ast_sha256": "0be81f3586744fcd12a30409bdec9cc915e28bb9fc31d067d3aee7c838296425",
+      "original_index": 178
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        174
+      ],
+      "original_ast_sha256": "30a34a5a9319a14b825e757244d6f348df03052bf0ce398c18596c02b9877eab",
+      "original_index": 179
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        175
+      ],
+      "original_ast_sha256": "569b3fc8090ef2f2d0e88604a9827dd525fa3b742d2a28b2df044088e0d1296f",
+      "original_index": 180
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        176
+      ],
+      "original_ast_sha256": "f779ba6296296965445ede786205f5c173deb86f1b411b4bfc6c4c057372bd1a",
+      "original_index": 181
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        177
+      ],
+      "original_ast_sha256": "fbbd85eec98f14c967c6837b311b6cc8c661366ff6139479940c639614eb83c3",
+      "original_index": 182
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        178
+      ],
+      "original_ast_sha256": "2a9c7b52608da75f8e4f9327266429aabe948b31664d0b3617ca6b20c7dac719",
+      "original_index": 183
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        179
+      ],
+      "original_ast_sha256": "24617031b2460ab34be506947fd617ae7b3bb97c45d6dbe9d7120e5ecc7cf6bf",
+      "original_index": 184
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        180
+      ],
+      "original_ast_sha256": "b8ee3caa361375677f06575f2c8853a5a9c50aadc018eceeac9d0e16d895f078",
+      "original_index": 185
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        181
+      ],
+      "original_ast_sha256": "fcf7d5a397d8a3d9ebbc5083c56af9f824cf2ee61fe571a6dea64328497f9de1",
+      "original_index": 186
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        182
+      ],
+      "original_ast_sha256": "343aa70d56abc1ed89444513899ceebda0bbbc243f276e3f896d478e30bde8e3",
+      "original_index": 187
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        183
+      ],
+      "original_ast_sha256": "f6a5bde9108c173a9be07752738b1a1200583c1af27d7afda1ad05307b7032f0",
+      "original_index": 188
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        184
+      ],
+      "original_ast_sha256": "1ff1897a19c6e0027f95efda99481ed8d9900bdb18bbb4c694559a87e1383187",
+      "original_index": 189
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        185
+      ],
+      "original_ast_sha256": "e0a87721b8f02c5781924b595748a854b284f224eb297269760b08e58c99a32b",
+      "original_index": 190
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        186
+      ],
+      "original_ast_sha256": "016c26349e3eeb1851d2778f87431217dfc8d0a106da5155f9d8dbb3bf54f713",
+      "original_index": 191
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        187
+      ],
+      "original_ast_sha256": "4ec5c18c5ddbfe23e0d9e0e6204aa1845955eb9c811b27577c59d9b452168979",
+      "original_index": 192
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        188
+      ],
+      "original_ast_sha256": "0ab7c2c697d694def35875bd2def2b176ad56fe2e5d792788e27333f99fdccb5",
+      "original_index": 193
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        189
+      ],
+      "original_ast_sha256": "858c3ffb1b92613499aa935f5fe7456cf26c7365c0daffa231cf29a009e3bb02",
+      "original_index": 194
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        190
+      ],
+      "original_ast_sha256": "565e3cc684a4621e4d2084f105d5ee2c5b0498ce95371ba02a9eca62fbb4bc6c",
+      "original_index": 195
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        191
+      ],
+      "original_ast_sha256": "ca1b46403a98fa6e07295e2bf61b097b232343b93ee779759c11937bc5c7a4ed",
+      "original_index": 196
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        192
+      ],
+      "original_ast_sha256": "3da65a4dfd55848c81b24f13ed5a772989a3e8022cb5f98c439d7f79b74e9cd2",
+      "original_index": 197
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        193
+      ],
+      "original_ast_sha256": "4823b8765ee301852802d4d05661b51e2dfc0e1d2c7f2c42231fda19299ccc03",
+      "original_index": 198
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        194
+      ],
+      "original_ast_sha256": "e9c469efc6f51d04e833ce8a952e37b2624989e6fdce38f5de77c3ba5a6c1ae6",
+      "original_index": 199
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        195
+      ],
+      "original_ast_sha256": "0ee022bd2d83d90a9a91a6bea0ddbcc36a0e04ff68102609c249c642badd8d74",
+      "original_index": 200
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        196
+      ],
+      "original_ast_sha256": "ce4197fc526a8082792a9f23ca58caee8989e1591414fd4ff5eb4bdda4dac618",
+      "original_index": 201
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        197
+      ],
+      "original_ast_sha256": "0b35f811d2791ac0f198eed0371f3918116c1ec8ab90db348d1bfdfea3031255",
+      "original_index": 202
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        198
+      ],
+      "original_ast_sha256": "e65bb57c10efe7268b98f86f117b592496f8d2710d28c627d1ae68f6a132494d",
+      "original_index": 203
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        199
+      ],
+      "original_ast_sha256": "7b7de1ad66cf6d0db519189379d34cb3dc2eb8c595a6f3a1573508b746a30c2f",
+      "original_index": 204
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        200
+      ],
+      "original_ast_sha256": "8075fbef431a80b9c032d59604ad9d71a40302002cf8db24a877420232fb3301",
+      "original_index": 205
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        201
+      ],
+      "original_ast_sha256": "6aa6c0f4614930f8ce893eeb38a7c155adbfcb5c10edf97bc85fd712a8e12b8b",
+      "original_index": 206
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        202
+      ],
+      "original_ast_sha256": "db7797ea199b738023135cc63d7ec3698a0212d1e0d81b0704fae39d2655667a",
+      "original_index": 207
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        203
+      ],
+      "original_ast_sha256": "59f6a3fa2509a366f504eba389180d4a55e98b63b1b59a9d83a7d29431f292d8",
+      "original_index": 208
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        204
+      ],
+      "original_ast_sha256": "9d7cc94a3c661c88910a5fd7b0907aace17abc165d247d101e103aec066905eb",
+      "original_index": 209
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        205
+      ],
+      "original_ast_sha256": "1f2d3c990fa701ad9fc762f1f3f7fd4ecb2b1f3bf7f7b5d5de2f739676e073b9",
+      "original_index": 210
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        206
+      ],
+      "original_ast_sha256": "030e65e3a56200a86feb7e002c976a1066f1937a20e52f97444e9b7f4a5d25a9",
+      "original_index": 211
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        207
+      ],
+      "original_ast_sha256": "4cf516fd396e8213589f07191cebd02ba0cd1fd9599f9db8bc59b50ea0c4fbb2",
+      "original_index": 212
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        208
+      ],
+      "original_ast_sha256": "8dde839182c3be6d4a12fd736c6b023a6845010d00f373dc50bf4fcb027b7ab6",
+      "original_index": 213
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        209
+      ],
+      "original_ast_sha256": "0f38cb7401fccc3990adc50cfcbaec91ba2873ff20cc150b5dacd5c70d5ac28c",
+      "original_index": 214
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        210
+      ],
+      "original_ast_sha256": "2be7004b9ecbc405538d5f2cab925d127c7a8c31b56c67fba20b7225092f2c51",
+      "original_index": 215
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        211
+      ],
+      "original_ast_sha256": "1f6472f9ce489ff6d2bd0703f0987ad6e081717dc8d5e3e4a6bd3890d1645260",
+      "original_index": 216
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        212
+      ],
+      "original_ast_sha256": "a1c6a447fa3cad22b82e8aa1800b60b178edcd1a51a13ee48b16aca4bc8813f5",
+      "original_index": 217
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        213
+      ],
+      "original_ast_sha256": "d311c04765b5f6afc1d1822fa41077ce6b96e6715b081c86c9285aa11cf8f120",
+      "original_index": 218
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        214
+      ],
+      "original_ast_sha256": "f5adf88bc9c6b74b979878d3b2f87c106039474a3a134d2d8b7fcd35c9dad7a6",
+      "original_index": 219
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        215
+      ],
+      "original_ast_sha256": "f9d11a77e948ed2574c9ca3c88abd0888c30e0550537b7fa335b3d146de00c2d",
+      "original_index": 220
+    },
+    {
+      "kind": "unchanged_statement_ast",
+      "new_indices": [
+        216
+      ],
+      "original_ast_sha256": "689a314527b09448ea8e9d110509de007386ec6848d10276d91600ed4244b577",
+      "original_index": 221
+    },
+    {
+      "kind": "actual_limit_metadata_only",
+      "new_indices": [
+        217
+      ],
+      "original_ast_sha256": "12daa2ab8b21e12c131986b3e8740b06b854cd59a9dac9f953d80b4cc5ffa901",
+      "original_index": 222
+    },
+    {
+      "kind": "return_instead_of_print_transport",
+      "new_indices": [
+        218,
+        219
+      ],
+      "original_ast_sha256": "772ad293e0936cc3436d3b05eaec7205af80c0be30a10c4e4034bb4c2791a437",
+      "original_index": 223
+    }
+  ],
+  "static_check_count": 718,
+  "transport_event_counts": {
+    "actual_limit_metadata_only": 1,
+    "adapted_input_read": 1,
+    "removed_historical_launch_transport": 5,
+    "return_instead_of_print_transport": 1,
+    "unchanged_statement_ast": 216
+  }
+}

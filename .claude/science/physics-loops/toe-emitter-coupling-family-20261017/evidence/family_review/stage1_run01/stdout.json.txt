@@ -1,0 +1,146 @@
+{
+  "author_checker_imported_or_executed": false,
+  "child_utc": "2026-10-17T03:02:19.107114+00:00",
+  "new_family_author_files_read": false,
+  "prelaunch_sha256": "6e9fc2ea3e1f7b8fedd6c5e80b65cf58b86a4608841a444cbdcaca235a4a7d8f",
+  "preserved_failed_old_bounds": {
+    "inner_mass_variance_ceiling_at_upper_kappa": {
+      "decimal_display_only": 1.28,
+      "exact": "32/25"
+    },
+    "separate_installed_point_amplitude_variance_ceiling_at_upper_kappa": {
+      "decimal_display_only": 0.8,
+      "exact": "4/5"
+    }
+  },
+  "resources": {
+    "CPU_soft_hard_seconds": [
+      30,
+      30
+    ],
+    "external_wall_cap_seconds": 45,
+    "matrix_dimension": 0,
+    "parameter_grid_points": 0,
+    "peak_RSS_native_bytes_macos": 62226432,
+    "system_CPU_seconds": 0.042581,
+    "user_CPU_seconds": 0.205536,
+    "wall_seconds": 0.6099585830233991
+  },
+  "result": "Declared stage-one exact checks passed.",
+  "role": "Pre-author-exposure independent reference spectral normalization check",
+  "runtime": {
+    "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "sympy_version": "1.14.0"
+  },
+  "scope_limits": [
+    "Symbolic/rational checks supplement INITIAL_ANALYSIS.md; no automated infinite spectral proof.",
+    "No author-family argument or execution read yet. No family verdict.",
+    "Exact original ladder/loop only, no joint coefficient box.",
+    "No numerical quadrature or time evolution. No native readiness or optimality."
+  ],
+  "symbolic_checks": {
+    "arctangent_derivative": true,
+    "retarded_density_sign": true,
+    "signed_correction_identity": true
+  },
+  "uniform_density_certificate": {
+    "boundary_loss_upper": {
+      "decimal_display_only": 4.320005529607078e-07,
+      "exact": "27/62499920"
+    },
+    "denominator_endpoint_distance_lower": {
+      "decimal_display_only": 1.2499984e-08,
+      "exact": "781249/62500000000000"
+    },
+    "gamma_upper": {
+      "decimal_display_only": 81.0,
+      "exact": "81"
+    },
+    "imaginary_self_energy_derivative_correction": {
+      "decimal_display_only": 1.1946666666666666e-10,
+      "exact": "7/58593750000"
+    },
+    "inner_half_width": {
+      "decimal_display_only": 5e-07,
+      "exact": "1/2000000"
+    },
+    "inner_mass_loss_upper": {
+      "decimal_display_only": 4.3213911857474286e-07,
+      "exact": "30068235143909/69579989062500000000"
+    },
+    "kappa_max": {
+      "decimal_display_only": 1e-08,
+      "exact": "1/100000000"
+    },
+    "kappa_min": {
+      "decimal_display_only": 1e-12,
+      "exact": "1/1000000000000"
+    },
+    "log_argument_upper": {
+      "decimal_display_only": 4.4321329639889194e+30,
+      "exact": "1600000000000000000000000000000361/361"
+    },
+    "log_ceiling": 80,
+    "normalization_loss_upper": {
+      "decimal_display_only": 4.321401185747429e-07,
+      "exact": "481092875582369/1113279825000000000000"
+    },
+    "real_denominator_magnitude_cap": {
+      "decimal_display_only": 4e-08,
+      "exact": "1/25000000"
+    },
+    "real_self_energy_derivative_correction": {
+      "decimal_display_only": 1.9098947368421053e-11,
+      "exact": "567/29687500000000"
+    },
+    "rounded_normalization_loss_ceiling": {
+      "decimal_display_only": 4.4e-07,
+      "exact": "11/25000000"
+    },
+    "wrong_direction_fraction_upper": {
+      "decimal_display_only": 4.4444444444444444e-13,
+      "exact": "1/2250000000000"
+    }
+  },
+  "upper_endpoint_Schur_overlap_checks": {
+    "claimed_seed_squared_ceiling": {
+      "decimal_display_only": 9e-06,
+      "exact": "9/1000000"
+    },
+    "closed_gap_lower": {
+      "decimal_display_only": 0.17999999999999886,
+      "exact": "950482384186829136533480607299521/5280457689926861796927562500000000"
+    },
+    "epsilon_off_upper": {
+      "decimal_display_only": 3.4678856864015735e-15,
+      "exact": "558235210110551118465930569752973389786634087227808123555057074925608816255686168854909555940267058152400830443253433656520500613946146774464977693489434321451209737210105155001/160972783012867944935425724870810933914506659072343753619359971813309006020870696127306915139825752016257937556277572832345776758978133539130538950631744431633558157801417665840273485194500000"
+    },
+    "eta_p_upper": {
+      "decimal_display_only": 3.91601718429205e-06,
+      "exact": "91085774802239977376443551737688588778091277679729173941978048430148311259337619745580464780006232926101490375359639355125427329898732775695449861657582012609220105990411/23259799565641271449465348735206976927247513599561751282724499231826756171197331710840917929136719748390103151978888387830913957924762454198357754404888810403574857199644009589"
+    },
+    "imaginary_denominator_scaled_lower": {
+      "decimal_display_only": 19.549144711798206,
+      "exact": "23259799565641271449465348735206976927247513599561751282724499231826756171197331710840917929136719748390103151978888387830913957924762454198357754404888810403574857199644009589/1189811621354648246761288218483106714813835140753333534983628156971915596965178044167580994880506186755134499269529385084501060806325537390877591901159766107125000000000000000"
+    },
+    "kappa_squared_times_De_inverse_upper": {
+      "decimal_display_only": 0.05263157894736902,
+      "exact": "5867175211029913326828779208603289429519075000000095481/111476329009567082379581875000000000000000000000000000000"
+    },
+    "kappa_squared_times_Maug_inverse_upper": {
+      "decimal_display_only": 0.05555574000018444,
+      "exact": "69444675000230556321/1250000000000000000000"
+    },
+    "rounded_seed_squared_upper": {
+      "decimal_display_only": 8.88000002e-06,
+      "exact": "444000001/50000000000000"
+    },
+    "seed_squared_upper": {
+      "decimal_display_only": 8.696314612669358e-06,
+      "exact": "222635284261797431370031301623608220747502741841751049601188308999180905857788097929769371377584423724958082598526657753846052984016007650235315624017403256399920423386817936216378435301821378089067363/25601107386046942640831483897810649159489791196199073767029169433189368984834124990319488601165009105021861982501946276316951527103463383609982436444998868613390298577783520539795449078496150137500000000000"
+    },
+    "uniformity": "All displayed positive Schur error upper expressions increase with kappa while xi<1. Upper endpoint suffices; no grid."
+  },
+  "verified_input_count": 17
+}

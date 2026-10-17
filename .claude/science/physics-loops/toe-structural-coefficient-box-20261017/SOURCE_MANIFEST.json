@@ -1,0 +1,46 @@
+{
+  "candidate": {
+    "path": "outputs/structural_coefficient_box_2026_10_17_inputs/author/CANDIDATE.md",
+    "bytes": 13522,
+    "sha256": "5d3c2dd41f6af96bf7bd793b5e5cfe39e5d0f5c7c0d16517c95249542cdc81ca"
+  },
+  "candidate_body_sha256": "5d3c2dd41f6af96bf7bd793b5e5cfe39e5d0f5c7c0d16517c95249542cdc81ca",
+  "body_markers": [
+    "<!-- BEGIN FROZEN COEFFICIENT ARGUMENT -->",
+    "<!-- END FROZEN COEFFICIENT ARGUMENT -->"
+  ],
+  "source_acceptance": {
+    "path": "outputs/structural_coefficient_box_2026_10_17_inputs/root/ACCEPTANCE.json",
+    "bytes": 15734,
+    "sha256": "ec522e7c0a20ac95c47e3c8b87af9fdc683e135e54269afd251ba97e5cb207c5"
+  },
+  "independent_review": {
+    "path": "outputs/structural_coefficient_box_2026_10_17_inputs/review/REPORT.md",
+    "bytes": 18018,
+    "sha256": "7ec59622c9acaf321bc2363839a8631f81c5b1b75e78a99a03c7500366b4f5f8"
+  },
+  "parent_head": "0e8375354c42963234cc4b15b14ab6bb553c713d",
+  "source_implementation_changes": "Frozen bodies remain byte-identical. Wrapped calculation ASTs differ only in two resource-report dictionaries: original limits are labeled historical and combined60CPU/60wall limits are added. All coefficients, equations, scientific assertions and other calculation statements are AST-identical. Outer transport adds a module docstring, combined process metadata, and declared-input hashes. No independent science verdict is supplied by packaging.",
+  "canonical_primary": {
+    "path": "scripts/structural_coefficient_box_2026_10_17.py",
+    "bytes": 12278,
+    "sha256": "b11febc057db28f305c27dd684f45c8a92f743d95ebb8344afb5b5c21a0f10b7"
+  },
+  "canonical_helper": {
+    "path": "scripts/structural_coefficient_box_check_2026_10_17.py",
+    "bytes": 16066,
+    "sha256": "b112819693da02966e23f153f4d2725e4fa472021b2af606a8ea709ed605e1df"
+  },
+  "historical_inputs": 47,
+  "declared_inputs": 50,
+  "note": {
+    "path": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "bytes": 24313,
+    "sha256": "845fb32de988058055e4907cb37fae66c45d8edb8df003ed4fbcc908509014a1"
+  },
+  "body_offset_zero_based": 10749,
+  "body_bytes": 13522,
+  "metadata_adaptation": "evidence/METADATA_ADAPTATION.json",
+  "whitespace_adaptation": "evidence/WHITESPACE_ADAPTATION.json",
+  "root_requested_wrapper_refresh": "evidence/NOTE_REFRESH.json"
+}

@@ -420,6 +420,26 @@
       "source_sha256": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b",
       "timeout_sec": 120,
       "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration."
+    },
+    "scripts/structural_coefficient_box_check_2026_10_17.py": {
+      "source_sha256": "b112819693da02966e23f153f4d2725e4fa472021b2af606a8ea709ed605e1df",
+      "timeout_sec": 60,
+      "reason": "Explicit 60-second helper cap, matching preserved historical child wall limits (weighted helper includes independent 60-second check); shared primary remains subject to its own cap. Hash-bound sidecar preserves original helper bytes."
+    },
+    "scripts/product_seed_emitter_installed_2026_10_17.py": {
+      "source_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+      "timeout_sec": 60,
+      "reason": "Explicit 60-second helper cap, matching preserved historical child wall limits (weighted helper includes independent 60-second check); shared primary remains subject to its own cap. Hash-bound sidecar preserves original helper bytes."
+    },
+    "scripts/product_seed_emitter_local_2026_10_17.py": {
+      "source_sha256": "c567cfeaaddff24d9f59d70e99a7d59cb324e389a10d18db04e46a173407f25e",
+      "timeout_sec": 60,
+      "reason": "Explicit 60-second helper cap, matching preserved historical child wall limits (weighted helper includes independent 60-second check); shared primary remains subject to its own cap. Hash-bound sidecar preserves original helper bytes."
+    },
+    "scripts/product_seed_emitter_weighted_2026_10_17.py": {
+      "source_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
+      "timeout_sec": 60,
+      "reason": "Explicit 60-second helper cap, matching preserved historical child wall limits (weighted helper includes independent 60-second check); shared primary remains subject to its own cap. Hash-bound sidecar preserves original helper bytes."
     }
   }
 }

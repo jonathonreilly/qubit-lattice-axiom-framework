@@ -1,0 +1,57 @@
+{
+  "old_counts": {
+    "node_count": 7208,
+    "edge_count": 16163
+  },
+  "new_counts": {
+    "node_count": 7209,
+    "edge_count": 16164
+  },
+  "added": [
+    "structural_coefficient_box_bounded_theorem_note_2026-10-17"
+  ],
+  "removed": [],
+  "rewired": [],
+  "new_node": {
+    "claim_id": "structural_coefficient_box_bounded_theorem_note_2026-10-17",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "`bounded_theorem`. Source-status request: `proposed_retained`.",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
+    ],
+    "helper_runner_paths": [
+      "scripts/structural_coefficient_box_check_2026_10_17.py"
+    ],
+    "note_hash": "9f4934a5d1e63c93ee7e5f8956ff7b35c748f241204348c2510b04f38142a35f",
+    "path": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "runner_path": "scripts/structural_coefficient_box_2026_10_17.py",
+    "title": "A coefficient tolerance for the positive two-body reflection apparatus"
+  },
+  "new_edges": [
+    {
+      "from": "structural_coefficient_box_bounded_theorem_note_2026-10-17",
+      "to": "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
+    }
+  ],
+  "manifest_sha256": "d4cd7260f9cb514bcb30bad1d472baf8484f54a8dd20544525c33360dca8e258",
+  "executions": [
+    {
+      "script": "docs/audit/scripts/run_citation_graph_build.py",
+      "started_utc": "2026-10-17T01:38:08.738309+00:00",
+      "elapsed_seconds": 124.28917916724458,
+      "wall_cap_seconds": 180,
+      "exit_code": 0,
+      "script_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+    },
+    {
+      "script": "docs/audit/scripts/write_citation_graph_manifest.py",
+      "started_utc": "2026-10-17T01:40:13.029809+00:00",
+      "elapsed_seconds": 0.1403145408257842,
+      "wall_cap_seconds": 60,
+      "exit_code": 0,
+      "script_sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+    }
+  ],
+  "scope": "New structural note and its explicit citation only. Generated citation_graph.json is validation residue, not publication source."
+}

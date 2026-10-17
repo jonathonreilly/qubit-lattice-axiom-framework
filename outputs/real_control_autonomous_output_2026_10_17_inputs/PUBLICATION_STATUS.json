@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-17T05:25:49.241947+00:00",
+  "scope": "Frozen mechanical drafting history; later actual state lives in external Q records",
+  "source_math": "Root-qualified conditional support, exact source acceptance preserved",
+  "transport_review": "pending separate source-transport check",
+  "canonical_scientific_execution": "not performed by this draft",
+  "mutations": "not performed by this draft",
+  "publication": "not performed by this draft",
+  "retained_audit": "not performed",
+  "no_status_promotion": true,
+  "editable_prompt_files_changed": []
+}

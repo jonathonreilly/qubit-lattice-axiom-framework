@@ -1,0 +1,27 @@
+# Preserved non-scientific failures and limitations
+
+- One read targeted the nonexistent path
+  `W/.claude/skills/physics-loop/references/DISCOVERY.md`; `sed` exited 1 with
+  `No such file or directory`. The actual path
+  `W/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md` was found
+  using `rg --files`, and the needed lines 251-274 were read. This was not a
+  scientific execution.
+- Some aggregated file/web output and the broad 181-line repository-search
+  display were truncated. The relevant family spans and local-emitter model
+  were recovered in smaller reads; previously read exact argument identities
+  are separately disclosed. The full repository search is saved. No complete
+  review of every search hit is claimed.
+- A final two-hunk `apply_patch` attempt failed because its second context
+  did not match the prose wrapping around the resource paragraph. Its error
+  was `apply_patch verification failed: Failed to find expected lines`. The
+  desired unit-modulus clarification and exact-coefficient limitation were
+  subsequently applied with the actual contexts. The failed attempt did not
+  run scientific code or change its frozen execution artifacts.
+- The exact checker ran once and exited zero. No scientific failure, retry,
+  optimization, quadrature or dynamics stream is omitted. Its intentional
+  wrong-cross-sign countercase is preserved in `run01/stdout.json` as the
+  exact nonzero intertwining defect, not described as a run failure.
+- `scientific_parameter_samples: 0` in that immutable stdout is imprecise
+  wording for absence of a sampling study. The actual small-core algebra uses
+  exact kappa_max; analytic homogeneity provides the stated parameter transfer.
+  ROUTE.md records this limitation explicitly. No post-run output was altered.

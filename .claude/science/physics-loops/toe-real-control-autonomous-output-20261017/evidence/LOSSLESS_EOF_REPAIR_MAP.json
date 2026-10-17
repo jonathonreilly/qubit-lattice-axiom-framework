@@ -1,0 +1,25 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "LOSSLESS_EOF_REPAIR.json",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/lossless_eof_repair/LOSSLESS_EOF_REPAIR.json.txt",
+      "bytes": 11135,
+      "sha256": "7e7ab4f9b70c941bac25919ac2bf370deaf53e79ba0ead8b3905e4083aa786bf",
+      "compression": "none",
+      "raw_bytes": 11135,
+      "raw_sha256": "7e7ab4f9b70c941bac25919ac2bf370deaf53e79ba0ead8b3905e4083aa786bf"
+    },
+    {
+      "original_path": "repair_archive_eof.py",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/lossless_eof_repair/repair_archive_eof.py.txt",
+      "bytes": 3751,
+      "sha256": "7b0bbfc80cfb438242398279bb66f1ac4ed4646ac1407cb0bd9c239878fac604",
+      "compression": "none",
+      "raw_bytes": 3751,
+      "raw_sha256": "7b0bbfc80cfb438242398279bb66f1ac4ed4646ac1407cb0bd9c239878fac604"
+    }
+  ],
+  "count": 2
+}

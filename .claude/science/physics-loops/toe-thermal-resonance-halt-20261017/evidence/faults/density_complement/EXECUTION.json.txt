@@ -1,0 +1,29 @@
+{
+  "label": "density_complement",
+  "started_utc": "2026-10-17T04:57:33.720350+00:00",
+  "finished_utc": "2026-10-17T04:57:34.145068+00:00",
+  "elapsed_seconds": 0.4193764589726925,
+  "exit_code": 1,
+  "timed_out": false,
+  "intended_assertion_reached": true,
+  "all_bound_bytes_unchanged": true,
+  "no_result_written": true,
+  "user_cpu_seconds": 0.36791899999999994,
+  "system_cpu_seconds": 0.03802699999999999,
+  "launcher_children_peak_rss_bytes_macos_so_far": 67829760,
+  "prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/density_complement/PRELAUNCH.json",
+    "bytes": 51781,
+    "sha256": "67ee6fc080b2c8539b2df62c65beb7f52b00e2f81dcd1caaedd42fc2aa653fe5"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/density_complement/stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/density_complement/stderr",
+    "bytes": 753,
+    "sha256": "cbd67b6af58facbb80c6b62176af6f6ae5ee68e9b14f8b037e25c9cae46fbfca"
+  }
+}

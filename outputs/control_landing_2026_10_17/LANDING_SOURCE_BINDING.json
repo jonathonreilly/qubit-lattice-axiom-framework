@@ -1,0 +1,571 @@
+{
+  "scope": "Current landing transport only. Validate actual current bytes before comparing preserved original bytes to immutable historical pins. No old execution is attributed to current source; actual execution requires a fresh receipt.",
+  "files": {
+    "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md": {
+      "original": {
+        "bytes": 106965,
+        "sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac"
+      },
+      "current": {
+        "bytes": 108089,
+        "sha256": "3c4d69b421a7ef3622fb14cd76141bccc0efa70341ad4e9d395058e828e430cc"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/originals/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md": {
+      "original": {
+        "bytes": 24313,
+        "sha256": "845fb32de988058055e4907cb37fae66c45d8edb8df003ed4fbcc908509014a1"
+      },
+      "current": {
+        "bytes": 24303,
+        "sha256": "80f5190d214d1e43f7ef0fee14ce4964274dde1e7428b660316c7296b5da5a5e"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/originals/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md": {
+      "original": {
+        "bytes": 95866,
+        "sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44"
+      },
+      "current": {
+        "bytes": 95832,
+        "sha256": "0a74026a9eda4b29f91cd0f9c249f3095b80cfc4b4ef48b50ec187781023667d"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/originals/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md": {
+      "original": {
+        "bytes": 50396,
+        "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+      },
+      "current": {
+        "bytes": 50376,
+        "sha256": "05bff01ce3be24b6dd3f83e8e34ffde1e84912f4e260620a20e388aa9407b8e3"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/originals/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md": {
+      "original": {
+        "bytes": 119492,
+        "sha256": "939a505813adb86ce8bccf335781fd8a1d3ce5ef96367836fe68339bc7c01b30"
+      },
+      "current": {
+        "bytes": 119456,
+        "sha256": "76211c8df553fe3421762048529f3308fccb0d9f1cfccb1e17a6d4b349ba4455"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/originals/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md": {
+      "original": {
+        "bytes": 74148,
+        "sha256": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca"
+      },
+      "current": {
+        "bytes": 74715,
+        "sha256": "a2e5d6d3bb5feb98b793ca635fab5877f8f7b1190c5162347a639bef0d3097bb"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/originals/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    "scripts/two_body_autonomous_halt_2026_10_17.py": {
+      "original": {
+        "bytes": 21202,
+        "sha256": "6111c95e2add4eb92fbc3f46d49f45085c3e95dc73431a68da7dcd602c912618"
+      },
+      "current": {
+        "bytes": 23820,
+        "sha256": "c743ed62dcd5422a45a1f0a690c7ed866b877609180dbc55fc2121ffe7af5e9f"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/originals/two_body_autonomous_halt_2026_10_17.py"
+    },
+    "scripts/structural_coefficient_box_2026_10_17.py": {
+      "original": {
+        "bytes": 12278,
+        "sha256": "b11febc057db28f305c27dd684f45c8a92f743d95ebb8344afb5b5c21a0f10b7"
+      },
+      "current": {
+        "bytes": 15083,
+        "sha256": "b46c50a9c27d98ea1e541e8f2795ba851be8752fc43d646cf67302f0f516976c"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/originals/structural_coefficient_box_2026_10_17.py"
+    },
+    "scripts/product_seed_emitter_2026_10_17.py": {
+      "original": {
+        "bytes": 27118,
+        "sha256": "6eaf2e5c9716616f103b13a53f5fdf39d8baced9da7abe7dbc8263dc6e95be26"
+      },
+      "current": {
+        "bytes": 29945,
+        "sha256": "98efb295b02fb60d0fa2cad4e314c62badbf2f667545682f129101f965d57efd"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/originals/product_seed_emitter_2026_10_17.py"
+    },
+    "scripts/emitter_coupling_family_2026_10_17.py": {
+      "original": {
+        "bytes": 24786,
+        "sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba"
+      },
+      "current": {
+        "bytes": 27284,
+        "sha256": "e434a3d0fd5962fb76506a34ca1f436f83b5e3f29ba5042b99d5d041b9a996fe"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/originals/emitter_coupling_family_2026_10_17.py"
+    },
+    "scripts/thermal_resonance_halt_2026_10_17.py": {
+      "original": {
+        "bytes": 59059,
+        "sha256": "944f256cd1e894601d2e483db47f9faba57d371532ed22d2b5e1835b409de872"
+      },
+      "current": {
+        "bytes": 61702,
+        "sha256": "2c59cbf364f3765f57eeff09748d7f3f116b9396bb3e46b829da9f1022b14b86"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/originals/thermal_resonance_halt_2026_10_17.py"
+    },
+    "scripts/real_control_autonomous_output_2026_10_17.py": {
+      "original": {
+        "bytes": 47133,
+        "sha256": "87ed66a14a21e20a7d747454cca1854d6adcd52ffb00f1532e78b33967d4af29"
+      },
+      "current": {
+        "bytes": 49827,
+        "sha256": "b38b779564fc86f0630bd7c551c50bb6dde05044af200e997e4dc14bea0505c0"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/originals/real_control_autonomous_output_2026_10_17.py"
+    }
+  },
+  "link_edits": [
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[source decision](../outputs/two_body_autonomous_halt_2026_10_17_inputs/root/SOURCE_ACCEPTANCE.json)",
+      "replacement": "source decision (`outputs/two_body_autonomous_halt_2026_10_17_inputs/root/SOURCE_ACCEPTANCE.json`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[qualification](../outputs/two_body_autonomous_halt_2026_10_17_inputs/root/QUALIFICATION.md)",
+      "replacement": "qualification (`outputs/two_body_autonomous_halt_2026_10_17_inputs/root/QUALIFICATION.md`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[result](../outputs/two_body_autonomous_halt_2026_10_17.json)",
+      "replacement": "result (`outputs/two_body_autonomous_halt_2026_10_17.json`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[point witnesses](../outputs/two_body_autonomous_halt_2026_10_17_point_witnesses.json)",
+      "replacement": "point witnesses (`outputs/two_body_autonomous_halt_2026_10_17_point_witnesses.json`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[artifact manifest](../outputs/two_body_autonomous_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json)",
+      "replacement": "artifact manifest (`outputs/two_body_autonomous_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[stationary review](../outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_certificate_review/REVIEW.md)",
+      "replacement": "stationary review (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_certificate_review/REVIEW.md`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[generic review](../outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/finite_channel_wavepacket_review/REVIEW.md)",
+      "replacement": "generic review (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/finite_channel_wavepacket_review/REVIEW.md`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[concrete review](../outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/REVIEW.md)",
+      "replacement": "concrete review (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/REVIEW.md`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[current-main scope](../outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/current_main_scope.json)",
+      "replacement": "current-main scope (`outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/current_main_scope.json`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[portability review](../outputs/two_body_autonomous_halt_2026_10_17_inputs/portability/REPORT.md)",
+      "replacement": "portability review (`outputs/two_body_autonomous_halt_2026_10_17_inputs/portability/REPORT.md`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[Generic theorem V2](../outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/finite_channel_wavepacket_bridge/THEOREM_V2.md)",
+      "replacement": "Generic theorem V2 (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/finite_channel_wavepacket_bridge/THEOREM_V2.md`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[Concrete interval application](../outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/CANDIDATE.md)",
+      "replacement": "Concrete interval application (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/CANDIDATE.md`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[Historical stationary route](../outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/ROUTE.md)",
+      "replacement": "Historical stationary route (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/ROUTE.md`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[Selected capped result](../outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/old_cap_search/RESULT.md)",
+      "replacement": "Selected capped result (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/old_cap_search/RESULT.md`)"
+    },
+    {
+      "path": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[actual result](../outputs/structural_coefficient_box_2026_10_17.json)",
+      "replacement": "actual result (`outputs/structural_coefficient_box_2026_10_17.json`)"
+    },
+    {
+      "path": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[root decision](../outputs/structural_coefficient_box_2026_10_17_inputs/root/ACCEPTANCE.json)",
+      "replacement": "root decision (`outputs/structural_coefficient_box_2026_10_17_inputs/root/ACCEPTANCE.json`)"
+    },
+    {
+      "path": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[qualification](../outputs/structural_coefficient_box_2026_10_17_inputs/root/QUALIFICATION.md)",
+      "replacement": "qualification (`outputs/structural_coefficient_box_2026_10_17_inputs/root/QUALIFICATION.md`)"
+    },
+    {
+      "path": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[independent report](../outputs/structural_coefficient_box_2026_10_17_inputs/review/REPORT.md)",
+      "replacement": "independent report (`outputs/structural_coefficient_box_2026_10_17_inputs/review/REPORT.md`)"
+    },
+    {
+      "path": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[artifact manifest](../outputs/structural_coefficient_box_2026_10_17_inputs/ARTIFACT_MANIFEST.json)",
+      "replacement": "artifact manifest (`outputs/structural_coefficient_box_2026_10_17_inputs/ARTIFACT_MANIFEST.json`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[installed qualification](../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/QUALIFICATION.md.txt)",
+      "replacement": "installed qualification (`outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/QUALIFICATION.md.txt`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[decision](../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/ACCEPTANCE.json)",
+      "replacement": "decision (`outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/ACCEPTANCE.json`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[weighted qualification](../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/QUALIFICATION.md.txt)",
+      "replacement": "weighted qualification (`outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/QUALIFICATION.md.txt`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[decision](../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/ACCEPTANCE.json)",
+      "replacement": "decision (`outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/ACCEPTANCE.json`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[source inventory](../outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json)",
+      "replacement": "source inventory (`outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[point certificate](../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json)",
+      "replacement": "point certificate (`outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[complete local construction](../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt)",
+      "replacement": "complete local construction (`outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[independent local review](../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/REPORT.md.txt)",
+      "replacement": "independent local review (`outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/REPORT.md.txt`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[qualification](../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_root_qualification/QUALIFICATION.md.txt)",
+      "replacement": "qualification (`outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_root_qualification/QUALIFICATION.md.txt`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[installed proof](../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt)",
+      "replacement": "installed proof (`outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[generic bridge V2](../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md.txt)",
+      "replacement": "generic bridge V2 (`outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md.txt`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[weighted proof](../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt)",
+      "replacement": "weighted proof (`outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[source inventory](../outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md)",
+      "replacement": "source inventory (`outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[SOURCE_INVENTORY.json](../outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json)",
+      "replacement": "SOURCE_INVENTORY.json (`outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[installed independent report](../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/REPORT.md.txt)",
+      "replacement": "installed independent report (`outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/REPORT.md.txt`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[weighted independent report](../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/REPORT.md.txt)",
+      "replacement": "weighted independent report (`outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/REPORT.md.txt`)"
+    },
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[byte map](../outputs/product_seed_emitter_2026_10_17_inputs/EMBEDDED_SOURCE_MAP.json)",
+      "replacement": "byte map (`outputs/product_seed_emitter_2026_10_17_inputs/EMBEDDED_SOURCE_MAP.json`)"
+    },
+    {
+      "path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[fixed-coupling moment argument](../outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt)",
+      "replacement": "fixed-coupling moment argument (`outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt`)"
+    },
+    {
+      "path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[separate review](../outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt)",
+      "replacement": "separate review (`outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt`)"
+    },
+    {
+      "path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[qualification](../outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt)",
+      "replacement": "qualification (`outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt`)"
+    },
+    {
+      "path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[acceptance](../outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json)",
+      "replacement": "acceptance (`outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json`)"
+    },
+    {
+      "path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[input map](../outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json)",
+      "replacement": "input map (`outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json`)"
+    },
+    {
+      "path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[source map](../outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json)",
+      "replacement": "source map (`outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json`)"
+    },
+    {
+      "path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[transport ledger](../outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json)",
+      "replacement": "transport ledger (`outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json`)"
+    },
+    {
+      "path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[body map](../outputs/emitter_coupling_family_2026_10_17_inputs/PROOF_BODY_MAP.json)",
+      "replacement": "body map (`outputs/emitter_coupling_family_2026_10_17_inputs/PROOF_BODY_MAP.json`)"
+    },
+    {
+      "path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[status record](../outputs/emitter_coupling_family_2026_10_17_inputs/PUBLICATION_STATUS.json)",
+      "replacement": "status record (`outputs/emitter_coupling_family_2026_10_17_inputs/PUBLICATION_STATUS.json`)"
+    },
+    {
+      "path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[reproduction plan](../outputs/emitter_coupling_family_2026_10_17_inputs/REPRODUCTION_PLAN.json)",
+      "replacement": "reproduction plan (`outputs/emitter_coupling_family_2026_10_17_inputs/REPRODUCTION_PLAN.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[source map](../outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json)",
+      "replacement": "source map (`outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[publication status](../outputs/thermal_resonance_halt_2026_10_17_inputs/PUBLICATION_STATUS.json)",
+      "replacement": "publication status (`outputs/thermal_resonance_halt_2026_10_17_inputs/PUBLICATION_STATUS.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[transport ledger](../outputs/thermal_resonance_halt_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json)",
+      "replacement": "transport ledger (`outputs/thermal_resonance_halt_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[reproduction plan](../outputs/thermal_resonance_halt_2026_10_17_inputs/REPRODUCTION_PLAN.json)",
+      "replacement": "reproduction plan (`outputs/thermal_resonance_halt_2026_10_17_inputs/REPRODUCTION_PLAN.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[Resonance qualification](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_root_qualification/ACCEPTANCE.json)",
+      "replacement": "Resonance qualification (`outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_root_qualification/ACCEPTANCE.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[Exact-product qualification](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_product_root_qualification/ACCEPTANCE.json)",
+      "replacement": "Exact-product qualification (`outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_product_root_qualification/ACCEPTANCE.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[Interacting qualification](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_interacting_root_qualification/ACCEPTANCE.json)",
+      "replacement": "Interacting qualification (`outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_interacting_root_qualification/ACCEPTANCE.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[Interacting wording clarification](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_interacting_root_qualification/CLARIFICATION.md.txt)",
+      "replacement": "Interacting wording clarification (`outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_interacting_root_qualification/CLARIFICATION.md.txt`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[Composition qualification](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_qualification/ACCEPTANCE.json)",
+      "replacement": "Composition qualification (`outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_qualification/ACCEPTANCE.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[SOURCE_MAP.json](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/SOURCE_MAP.json)",
+      "replacement": "SOURCE_MAP.json (`outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/SOURCE_MAP.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[inputs](../outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json)",
+      "replacement": "inputs (`outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[SOURCE_COVERAGE.md](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/SOURCE_COVERAGE.md.txt)",
+      "replacement": "SOURCE_COVERAGE.md (`outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/SOURCE_COVERAGE.md.txt`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[RESOURCE_PLAN.json](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/RESOURCE_PLAN.json)",
+      "replacement": "RESOURCE_PLAN.json (`outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/RESOURCE_PLAN.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[PRELAUNCH.json](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/PRELAUNCH.json)",
+      "replacement": "PRELAUNCH.json (`outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/PRELAUNCH.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[receipt](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/RECEIPT.json)",
+      "replacement": "receipt (`outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/RECEIPT.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[check_preparation.py](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/check_preparation.py)",
+      "replacement": "check_preparation.py (`outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/check_preparation.py`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[stdout](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/stdout.json)",
+      "replacement": "stdout (`outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/stdout.json`)"
+    },
+    {
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[stderr](../outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt)",
+      "replacement": "stderr (`outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt`)"
+    },
+    {
+      "path": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[root qualification](../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_control_root_review/QUALIFICATION.md.txt)",
+      "replacement": "root qualification (`outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_control_root_review/QUALIFICATION.md.txt`)"
+    },
+    {
+      "path": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[acceptance](../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_control_root_review/ACCEPTANCE.json)",
+      "replacement": "acceptance (`outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_control_root_review/ACCEPTANCE.json`)"
+    },
+    {
+      "path": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[source map](../outputs/real_control_autonomous_output_2026_10_17_inputs/SOURCE_MAP.json)",
+      "replacement": "source map (`outputs/real_control_autonomous_output_2026_10_17_inputs/SOURCE_MAP.json`)"
+    },
+    {
+      "path": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[transport ledger](../outputs/real_control_autonomous_output_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json)",
+      "replacement": "transport ledger (`outputs/real_control_autonomous_output_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json`)"
+    },
+    {
+      "path": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[reproduction plan](../outputs/real_control_autonomous_output_2026_10_17_inputs/REPRODUCTION_PLAN.json)",
+      "replacement": "reproduction plan (`outputs/real_control_autonomous_output_2026_10_17_inputs/REPRODUCTION_PLAN.json`)"
+    },
+    {
+      "path": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[preparation status](../outputs/real_control_autonomous_output_2026_10_17_inputs/PUBLICATION_STATUS.json)",
+      "replacement": "preparation status (`outputs/real_control_autonomous_output_2026_10_17_inputs/PUBLICATION_STATUS.json`)"
+    },
+    {
+      "path": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[SOURCE_MAP.json](../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/SOURCE_MAP.json)",
+      "replacement": "SOURCE_MAP.json (`outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/SOURCE_MAP.json`)"
+    },
+    {
+      "path": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[EXECUTION.md](../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/EXECUTION.md.txt)",
+      "replacement": "EXECUTION.md (`outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/EXECUTION.md.txt`)"
+    },
+    {
+      "path": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[RESOURCE_PLAN.json](../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/RESOURCE_PLAN.json)",
+      "replacement": "RESOURCE_PLAN.json (`outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/RESOURCE_PLAN.json`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[the immutable route](../ROUTE.md)",
+      "replacement": "the immutable route (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/ROUTE.md`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[rational_point_certificate.json](rational_point_certificate.json)",
+      "replacement": "rational_point_certificate.json (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/old_cap_search/rational_point_certificate.json`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[different_path_check.json](different_path_check.json)",
+      "replacement": "different_path_check.json (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/old_cap_search/different_path_check.json`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[SEARCH.json](SEARCH.json)",
+      "replacement": "SEARCH.json (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/old_cap_search/SEARCH.json`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[SEARCH.json](SEARCH.json)",
+      "replacement": "SEARCH.json (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/old_cap_search/SEARCH.json`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[ALLOWED_SEARCH.json](ALLOWED_SEARCH.json)",
+      "replacement": "ALLOWED_SEARCH.json (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/old_cap_search/ALLOWED_SEARCH.json`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[certify_old_cap.py](certify_old_cap.py)",
+      "replacement": "certify_old_cap.py (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/old_cap_search/certify_old_cap.py`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[check_old_cap.py](check_old_cap.py)",
+      "replacement": "check_old_cap.py (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/old_cap_search/check_old_cap.py`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[the original manifest](../sources/MANIFEST.json)",
+      "replacement": "the original manifest (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/sources/MANIFEST.json`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[ORIGINAL_SNAPSHOT.json](ORIGINAL_SNAPSHOT.json)",
+      "replacement": "ORIGINAL_SNAPSHOT.json (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/old_cap_search/ORIGINAL_SNAPSHOT.json`)"
+    },
+    {
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[RECEIPT.json](RECEIPT.json)",
+      "replacement": "RECEIPT.json (`outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/old_cap_search/RECEIPT.json`)"
+    },
+    {
+      "path": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "exhibits a gate branch and an identity branch, and a common-output separation",
+      "replacement": "records a candidate gate branch and an identity branch, and a common-output separation",
+      "kind": "scope clarification requested by independent reviewer9648"
+    },
+    {
+      "path": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "new positive construction.\n",
+      "replacement": "new positive construction.\n\nThe preserved realifier lower-bound analysis is partial-attempt material with an unresolved N1 packet limitation: it records three tested mechanisms, not five distinct ruled-out route families. It is outside this publication\u2019s accepted positive theorem and is not assigned a negative-packet PASS. Its exact proof, quantitative bounds and live alternatives are retained for separate review. The accepted real-control preparation and output construction uses only the realifier\u2019s positive local realization and sector intertwining, not its negative lower-bound conclusion.\n",
+      "kind": "scope clarification requested by independent reviewer9648"
+    }
+  ]
+}

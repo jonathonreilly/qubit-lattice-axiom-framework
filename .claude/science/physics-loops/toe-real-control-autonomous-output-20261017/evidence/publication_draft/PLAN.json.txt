@@ -1,0 +1,14 @@
+{
+ "scope":"Mechanical publication overlay for qualified realifier and real local preparation; not new mathematics or canonical scientific execution",
+ "parent_commit":"67108090f68ed9b2bc62eee23701b2d3d71dce4a",
+ "source_route":"c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018",
+ "source_preparation":"57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c",
+ "qualification":"4ac00b22cc37f4e2d4179ca0963f7228a16e5512663c86ebe04e34d23f0c70b4",
+ "source_scopes":["real_coupling_halt_route","real_coupling_route_review","real_coupling_preparation_candidate","real_coupling_preparation_review","real_control_root_review"],
+ "static_caps":{"cpu_seconds":[30,30],"wall_seconds":45,"max_attempts":3,"max_files":2048,"max_input_bytes":134217728,"max_resolver_fixtures":24,"scientific_executions":0,"mutation_executions":0,"matrix_dimension":0,"memory_cap":null,"requested_threads":1},
+ "future_canonical_plan":{"shared_cpu_seconds":[30,30],"external_wall_seconds":45,"max_dense_dimension":6,"max_graph_vertices":46,"scientific_executions_in_this_assignment":0},
+ "preservation":"Full bodies with explicit reversible destination edits only; exact raw source and reviews/failures; gzip any newly stored historical text with trailing whitespace; no math repair or silent historical-label changes",
+ "runner_interpretation":"Historical preparation ramp_error_and_complete_trace_ceiling first clause is budget arithmetic only; no independent ramp theorem validation",
+ "forbidden":"W/Git/PR/shared graph or manifest/checkpoint/prompt/physical axiom/audit/external service edits; scientific or mutation runs; model override; delegation",
+ "deadline_utc":"2026-10-17T23:07:27Z"
+}

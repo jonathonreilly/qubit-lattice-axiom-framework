@@ -1,0 +1,25 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "vocab.stderr",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "vocab.stdout",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/focused_streams/vocab.stdout.txt",
+      "bytes": 289,
+      "sha256": "24f3297efaee5ed9aa2f2bf10fe4adc572708da4b5ad294c259ea8660fc3b2b6",
+      "compression": "none",
+      "raw_bytes": 289,
+      "raw_sha256": "24f3297efaee5ed9aa2f2bf10fe4adc572708da4b5ad294c259ea8660fc3b2b6"
+    }
+  ],
+  "count": 2
+}

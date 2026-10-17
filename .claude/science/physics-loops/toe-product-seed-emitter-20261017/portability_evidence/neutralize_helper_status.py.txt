@@ -1,0 +1,33 @@
+"""Apply root-requested status-neutral module docstrings, preserving functions."""
+from pathlib import Path
+import ast
+import hashlib
+import json
+import shutil
+
+D=Path(__file__).resolve().parent;W=D.parent.parent/'correlation_worktree'
+Q=W/'.claude/science/physics-loops/toe-product-seed-emitter-20261017'
+A=D/'before_status_neutral_docstrings';A.mkdir()
+old='No calculation executes on import. Root portability review and the first\ncanonical execution are pending; the frozen source files remain unchanged.'
+new='No calculation executes on import. Current review and execution status is\nrecorded in the paired publication packet; frozen source files remain unchanged.'
+records=[]
+def info(p):
+ b=p.read_bytes();return {'path':str(p.relative_to(W)),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+for family in ('local','installed','weighted'):
+ p=W/f'scripts/product_seed_emitter_{family}_2026_10_17.py'
+ before=p.read_text();assert before.count(old)==1
+ shutil.copyfile(p,A/p.name)
+ beforepin=info(p)
+ after=before.replace(old,new)
+ old_tree=ast.parse(before);new_tree=ast.parse(after)
+ assert ast.dump(ast.Module(body=old_tree.body[1:],type_ignores=[]),include_attributes=False)==ast.dump(ast.Module(body=new_tree.body[1:],type_ignores=[]),include_attributes=False)
+ p.write_text(after)
+ records.append({'before':beforepin,'after':info(p),'change':'Module docstring only; both function ASTs unchanged.'})
+manifest=Q/'SOURCE_MANIFEST.json';shutil.copyfile(manifest,A/manifest.name)
+data=json.loads(manifest.read_text())
+data['helpers']=[info(W/r['path']) for r in data['helpers']]
+manifest.write_text(json.dumps(data,indent=2)+'\n')
+(Q/'STATUS_NEUTRAL_DOCSTRING_CHANGE.json').write_text(json.dumps({'authority':'Root request in current collaboration turn before final portability freeze.',
+ 'scope':'Status-neutral module docstrings only. No function-body, primary, note, frozen-input or mathematical change.',
+ 'records':records,'original_source_status_strings':'Historical scientific status/limitations inside source functions remain unchanged.'},indent=2)+'\n')
+print(json.dumps(records,indent=2))

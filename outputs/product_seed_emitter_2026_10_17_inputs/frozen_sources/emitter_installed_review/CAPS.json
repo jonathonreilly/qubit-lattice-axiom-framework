@@ -1,0 +1,22 @@
+{
+  "review_scope": "Frozen installed-emitter conditional theorem, with explicit inherited ladder evidence",
+  "declared_before_new_scientific_computation": true,
+  "per_attempt_cpu_seconds": 45,
+  "per_attempt_wall_seconds": 60,
+  "maximum_attempts": 3,
+  "total_scientific_wall_seconds_cap": 180,
+  "maximum_matrix_dimension": 16,
+  "planned_checks": [
+    "Independently assemble a small exact noncommuting two-channel tail and compare its direct outgoing solve with the proposed gluing and augmented Schur conventions",
+    "Reject wrong matrix ordering and sign variants with exact nonzero residuals",
+    "Reconstruct declared scalar Schur, seed-overlap, derivative and finite-horizon budgets using exact rational arithmetic",
+    "Check common-envelope and complete column-overlap normalization in independently derived finite algebra where decisive"
+  ],
+  "no_author_code_execution": true,
+  "no_parameter_search": true,
+  "no_large_clock_simulation": true,
+  "failure_policy": "Preserve every attempted script, complete output and receipt; a limit or failed attempt is not a scientific no-go",
+  "model_or_reasoning_override": false,
+  "delegation": false,
+  "writes_confined_to_this_directory": true
+}

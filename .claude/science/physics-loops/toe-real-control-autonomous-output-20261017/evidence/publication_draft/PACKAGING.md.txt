@@ -1,0 +1,170 @@
+# Real-control publication draft
+
+This frozen overlay is ready for a separate transport review. It does not claim
+canonical scientific reproduction, a fault-test outcome, publication or retained
+status. The source mathematics remains the root-qualified conditional result;
+this drafting pass supplies no new theorem review.
+
+The intended parent is PR9666 head
+`67108090f68ed9b2bc62eee23701b2d3d71dce4a`. Root reports unchanged current-main
+instructions at `69cf6a289b2ec06213473f1549c51a57c29b6d70`; the drafter did not use
+Git or a remote service to refresh that identity. Only this assigned directory
+was written. No editable prompt, axiom, shared graph/manifest, checkpoint, audit
+surface, worktree, Git state or external application was changed.
+
+## Delivery and exact preservation
+
+`canonical/` is an 88-file, 1,618,902-byte proposed overlay. Its two principal
+files are the complete theorem note and portable primary at the requested
+repository-relative paths. Six small publication companions under the new lane
+provide trace/status, handoff/history and pending external decision/execution
+records. These companion records are deliberately outside calculation closure.
+
+The two raw source proof pins are:
+
+- Realifier: `c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018`.
+- Preparation: `57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c`.
+
+The note embeds the first proof byte-identically. The second differs only in
+three explicitly recorded Markdown destinations; reversing those edits recovers
+its complete exact raw source. No mathematical text, literal equation,
+historical pending label or failure was repaired. Both original analytical
+review/freezes, source packets, author failures and root qualification are in
+the finite source map. The later wrapper states the actual qualification and
+preserves model/source-exposure limits.
+
+The source map has 229 historical labels resolving to 99 unique stored paths:
+73 newly stored files, 87 labels reusing exact parent bytes and 69 labels
+deduplicating exact newly stored bytes. All five source/review scopes are
+preserved by their frozen manifests. Three labels use the parent's exact
+lossless gzip source; no new source required gzip. Stored and decompressed
+identities are separate. The root acceptance's private pre-code chronology
+pointer is preserved as a pointer, explicitly not copied or used as a theorem
+premise. No private preparation-idea source was accessed.
+
+The primary declares 109 literal inputs. Its artifact manifest binds the other
+108; the primary's own identity is separate. Every source destination and all
+21 role/logical aliases are in that finite closure. Paths are repository
+relative and hash/length checked; there is no absolute-path or parent-campaign
+fallback. All 16 original realifier snapshot names resolve through finite
+aliases. Original source programs and receipts are preserved data, not imported
+or replayed as inherited checks.
+
+## Executable adaptation
+
+The ledger accounts for all 448 original statements, 16 explicit changes and
+one appended return after the realifier's try/finally. Reversing these changes
+recovers both original module ASTs exactly, including literal docstrings.
+The six event families are input routing, historical CLI removal, removal of
+old-run path-binding checks, executable/report identities, shared limit metadata
+and return/report aggregation. The final return is outside `finally`, so
+original failed demands still propagate. No scientific expression/assertion is
+changed outside the listed transport/report metadata edits.
+
+The primary is inert on import. It imports only six standard-library modules at
+top level. Its normal main invokes the two preserved author bodies sequentially
+within one shared CPU30/30-second process and declared external45-second
+timeout. It does not implement the external wall timeout itself. The original
+20/20CPU and30-second historical allowances remain separately labeled. Actual
+science requires available pinned SymPy and normal assertions; this drafting
+pass did not test that future launch.
+
+The primary retains maximum dense dimension6 and graph46 for the realifier;
+preparation has dense dimension4 and sparse M16/M17 fixtures. Its future result
+will report complete actual input hashes and resolved reads, and explicitly
+qualify source-exposed corroboration and inherited analytical scope. It writes
+only the requested canonical result JSON on successful completion; partial
+failure streams belong in root's actual launcher record.
+
+The original `ramp_error_and_complete_trace_ceiling` first comparison remains
+unchanged. It is budget arithmetic, not independent ramp validation. The
+wrapper and report state this explicitly, without deleting or inflating its
+historical passing flag. Ramp support is the separately reviewed Gram/Duhamel
+proof and substantive Gram/profile identities.
+
+## Actual static evidence and failure
+
+The saved plan preceded all static execution. Attempt01 failed at the adapted
+AST pin because the inspection script incorrectly removed the original
+docstring as though it were an adapter docstring. It had not reached inert
+import or resolver fixtures. Its full source, prelaunch, stdout, stderr and
+receipt remain unchanged. The repair changed only inspection code, as recorded
+in `STATIC_REPAIR_01.md`; canonical bytes were unchanged.
+
+Attempt02 completed in 0.2593919169 seconds launcher wall time. Its source,
+finite inputs and selected runtime identities were serialized and fsynced
+before Popen; the PRELAUNCH identity was captured before Popen and compared
+afterward. All 121 bound files and selected runtime/launcher bindings were
+unchanged. The full receipts and streams are retained. Runtime capture covers
+selected interpreter/stdlib/extension bytes, not the whole operating system.
+CPU30/30 and external45 seconds were enforced; no OS memory cap was claimed.
+One-thread settings were requested, not measured.
+
+Attempt02 checked all 229 raw/stored source labels and five freeze pins; the
+109-input closure and108 manifest entries; exact two-program AST reversal and
+448 statement records; the absence of a finally-return exception suppression;
+all 21 aliases and 16 nested snapshot labels; inert import without SymPy or a
+science call; two valid and eighteen malformed resolver cases; both complete
+proof reconstructions; all 13 local note Markdown destinations; preservation of
+the original SymPy import failure and identical retry checker bytes; and no
+trailing whitespace in the new overlay's ordinary text. The resolver fixtures
+include unknown labels, absolute/traversal/noncanonical paths, missing files,
+leaf/parent/escape symlinks, size/digest mismatches and invalid gzip. These are
+static fixture checks, not scientific mutation tests.
+
+The final glue inspection replaced the ineffective `assert __debug__` with an
+explicit `if not __debug__: raise RuntimeError` before all science and resource
+mutation. Attempt03 repeated the full static pass and verified only that isolated
+refusal statement under optimized compilation. It completed in 0.3142190832
+seconds, with all prelaunch/source/runtime bindings unchanged and no science
+execution. `GLUE_AMENDMENT.md` records the edit and an unapplied malformed patch
+attempt; the mathematical bodies and all input/note pins stayed unchanged.
+
+After attempt03, root requested a clearer `lattice_wide` coverage string.
+`FINAL_WORDING_AMENDMENT.json` records the exact one-literal replacement in main
+and its matching builder, with a serialized/fsynced pre-edit identity. That is
+the only final-primary difference from the static03 fixture. The full checker
+was not rerun after this presentation-only edit; its exact before/after binding
+is explicit. Neither original body, resolver, refusal, input list, proof/source
+maps nor note changed. The three planned full static attempts are preserved;
+there is no hidden fourth attempt.
+
+Scientific executions: zero. Mutation executions: zero. Matrix allocation for
+this check: zero. No optimizer, grid, quadrature, dynamics, retained audit,
+scientific helper import or original checker replay occurred. Exact finite
+fixture copies exist solely to preserve the actual tested input bytes; they are
+not recursive campaign archives.
+
+## Claim boundary and remaining integration
+
+The positive claim is five units of supplied real C1 setup from the supplied
+pure product seed, then autonomous runtime. The complete finite operator bound
+is below 0.00483202 and unhalved trace below 0.00966404 on [T,2T], with T=kappa^-2,
+M=ceil50T and 2M+6 qubits. The actual doubled scalar, old age t+5 and all outputs
+remain. The original unprepared-seed failure keeps its slower 10^6/kappa² onset
+and exact narrow scope. It is neither a universal real-coupling no-go nor a
+failure theorem at the new onset. The original N1 packet limit is explicit.
+No thermal supply theorem for this doubled apparatus, native controller/pure
+seed supply, reset or practical bound is inferred. Root's separate finite-
+permanence candidate is outside this overlay.
+
+Root still needs to:
+
+1. Independently inspect the changed executable adapter, source preservation,
+   wrapper and actual static receipts; record the separate transport decision.
+2. Integrate only `canonical/` against the exact intended parent and verify
+   parent reuse paths. Preserve historical originals and archive maps when
+   making any subsequent wrapper-only edit; refresh note/body/manifest pins.
+3. Execute the actual primary/cache with assertions and pinned SymPy under the
+   shared envelope, using a true prelaunch binding and full failed streams.
+4. Perform distinct scientific fault families from `MUTATION_PLAN.md`, then
+   focused vocabulary, tracked-link, diff and changed-evidence checks. Do not
+   use the weak budget clause as evidence of ramp sensitivity.
+5. Resolve graph/generated-manifest dispositions, final conformance and PR
+   ancestry/status. Replace pending verification prose with actual outcomes.
+   Integrated-current-main and independent retained-audit gates remain later.
+
+`CONFORMANCE.md`, `MUTATION_PLAN.md`, `PR_BODY_DRAFT.md` and
+`SOURCE_READ_COVERAGE.md` give the concise handoff. No pending item is marked
+passed by this draft. `PACKET_MANIFEST.json` and `FREEZE.json` bind the final
+inventory, including failed attempts, without excluding nested source freezes.

@@ -1,0 +1,9 @@
+{
+  "frozen_utc": "2026-10-17T04:07:40.626218+00:00",
+  "path": "STAGED_RELEASE_ADDENDUM.md",
+  "bytes": 7945,
+  "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885",
+  "source_candidate_sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0",
+  "status": "root analytical candidate; no new scientific run; separate derivation not yet received or read",
+  "independent_check": "pending"
+}

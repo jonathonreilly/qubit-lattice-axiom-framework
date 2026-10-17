@@ -1,0 +1,29 @@
+{
+  "label": "cross_sign",
+  "started_utc": "2026-10-17T05:39:07.148070+00:00",
+  "finished_utc": "2026-10-17T05:39:07.230915+00:00",
+  "elapsed_seconds": 0.07821499975398183,
+  "exit_code": 1,
+  "timed_out": false,
+  "intended_assertion_reached": true,
+  "all_bound_bytes_unchanged": true,
+  "no_result_written": true,
+  "user_cpu_seconds": 0.056907,
+  "system_cpu_seconds": 0.015889,
+  "launcher_children_peak_rss_bytes_macos_so_far": 26968064,
+  "prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/cross_sign/PRELAUNCH.json",
+    "bytes": 39209,
+    "sha256": "ce4f39dc3bec1d60df179d7206e0ca9a333de313242234126aa0e1e596dcf26f"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/cross_sign/stdout",
+    "bytes": 12868,
+    "sha256": "21a1799451364d368890881643b2a59c69ede2bb0958d6ec633dd28e9d42e421"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/cross_sign/stderr",
+    "bytes": 970,
+    "sha256": "e79fd2adeb1b8bb962112e3cb8d07078f7d43f70fccdf39503a46d28daaa78c4"
+  }
+}

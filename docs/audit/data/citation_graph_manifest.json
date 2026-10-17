@@ -1,6 +1,6 @@
 {
- "edge_count": 16162,
- "node_count": 7207,
+ "edge_count": 16188,
+ "node_count": 7221,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2469,6 +2469,18 @@
   "binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "bksf_cubic_fermion_codes_are_not_rotation_invariant_minimal_orbit_four_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "b49585dcd91f",
+   "out_degree": 3
+  },
+  "bksf_cubic_fermion_codes_bare_permutation_rotations_act_spinorially_on_the_fermion_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "cc803153f655",
+   "out_degree": 2
+  },
+  "bksf_cubic_fermion_codes_site_local_realization_with_six_direction_qubits_per_site_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "3ff959929c4b",
+   "out_degree": 3
   },
   "bksf_holonomy_compression_cycle728_bounded_theorem_note_2026-07-28": {
    "deps_hash": "2bdda41c6188",
@@ -6185,6 +6197,10 @@
   "emergent_product_law_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "emitter_coupling_family_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "efb1eceb74aa",
+   "out_degree": 1
   },
   "endpoint_localization_three_route_discriminator_cycle705_note_2026-07-26": {
    "deps_hash": "4a2a6080dd99",
@@ -14686,6 +14702,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "majorana_per_direction_cubic_fermion_code_has_one_species_covariant_under_all_cubic_rotations_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "cc803153f655",
+   "out_degree": 2
+  },
   "marked_tree_single_seed_dynamic_program_and_finite_rational_certificates_bounded_theorem_note_2026-09-17": {
    "deps_hash": "b810717681ab",
    "out_degree": 2
@@ -17926,6 +17946,10 @@
    "deps_hash": "cbe42f571241",
    "out_degree": 3
   },
+  "product_seed_emitter_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "86ebd4676891",
+   "out_degree": 1
+  },
   "product_source_controlled_stop_bounded_theorem_note_2026-10-16": {
    "deps_hash": "7b36ba3a5261",
    "out_degree": 1
@@ -18449,6 +18473,10 @@
   "readout_bridge_frame_extension_unifies_marginal_read_and_registered_factor_conditional_bounded_theorem_note_2026-07-06": {
    "deps_hash": "9c7f3a5777fd",
    "out_degree": 4
+  },
+  "real_control_autonomous_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "4b9bf6e861bd",
+   "out_degree": 1
   },
   "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08": {
    "deps_hash": "e3b0c44298fc",
@@ -20434,6 +20462,10 @@
    "deps_hash": "8e85237fd4da",
    "out_degree": 6
   },
+  "spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_carries_spin_half_class_on_all_cubic_rotations_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "af498dbb091f",
+   "out_degree": 2
+  },
   "spinnetwork_full_ed_bounded_theorem_note_2026-05-07_w1full": {
    "deps_hash": "838364dd6763",
    "out_degree": 4
@@ -20877,6 +20909,10 @@
   "strongly_regular_bus_bounded_theorem_note_2026-10-15": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "structural_coefficient_box_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "86ebd4676891",
+   "out_degree": 1
   },
   "structural_no_go_survey_note": {
    "deps_hash": "e7df0adc06f6",
@@ -21554,6 +21590,10 @@
    "deps_hash": "34c59e1f517e",
    "out_degree": 6
   },
+  "thermal_resonance_halt_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "a78b3dd82fa7",
+   "out_degree": 1
+  },
   "thermodynamic_ph_quantitative_clause_record_budget_ledger_bounded_theorem_note_2026-06-11": {
    "deps_hash": "203e7538709c",
    "out_degree": 4
@@ -21661,6 +21701,14 @@
   "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "three_axis_qubit_site_stabilizer_rules_unsoldered_toric_codes_move_soldered_maximal_rules_do_not_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "5d376c077da5",
+   "out_degree": 3
+  },
+  "three_axis_qubit_symmetric_stabilizer_rules_fermion_search_finds_no_coherently_mobile_fermion_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "cb3bc5ba9981",
+   "out_degree": 2
   },
   "three_cap_order_blind_lines_on_one_orbit_bounded_theorem_note_2026-10-10": {
    "deps_hash": "d211c1597417",
@@ -21830,6 +21878,10 @@
    "deps_hash": "10b6ffe3f823",
    "out_degree": 1
   },
+  "two_body_autonomous_halt_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "2e58cfb50ce9",
+   "out_degree": 1
+  },
   "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": {
    "deps_hash": "bd71c5f30cb7",
    "out_degree": 3
@@ -21841,6 +21893,10 @@
   "two_field_retarded_probe_note_2026-04-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "two_qubit_site_soldered_spin_stabilizer_rules_three_dimensional_charge_motion_flips_a_free_local_variable_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "f6b42014f976",
+   "out_degree": 3
   },
   "two_qubit_site_unfreezes_the_cubic_tick_doubler_free_dirac_walk_bounded_theorem_note_2026-10-16": {
    "deps_hash": "f8cc0c81b987",

@@ -1,0 +1,180 @@
+{
+  "accepted_utc": "2026-10-17T04:57:22.342976+00:00",
+  "disposition": "Qualified source transport accepted for one bounded canonical replay and six predeclared copied scientific faults. Actual execution and focused publication checks remain pending.",
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/thermal_resonance_halt_2026_10_17.py",
+    "bytes": 59059,
+    "sha256": "944f256cd1e894601d2e483db47f9faba57d371532ed22d2b5e1835b409de872"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "bytes": 119492,
+    "sha256": "939a505813adb86ce8bccf335781fd8a1d3ce5ef96367836fe68339bc7c01b30"
+  },
+  "artifact_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/thermal_resonance_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+    "bytes": 35729,
+    "sha256": "9ef23d8044235449b6f4b0cc04d20aa7f6f1c95675b7b20fd38926c25fc4dc83"
+  },
+  "source_labels": 239,
+  "declared_input_count": 149,
+  "manifest_member_count": 148,
+  "bodies": [
+    {
+      "title": "Resonance family",
+      "raw": {
+        "bytes": 37370,
+        "sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0"
+      },
+      "link_changes": 0,
+      "format_changes": 0
+    },
+    {
+      "title": "Exact-product preparation",
+      "raw": {
+        "bytes": 28456,
+        "sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227"
+      },
+      "link_changes": 10,
+      "format_changes": 1
+    },
+    {
+      "title": "Interacting preparation",
+      "raw": {
+        "bytes": 21245,
+        "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+      },
+      "link_changes": 0,
+      "format_changes": 0
+    },
+    {
+      "title": "Staged release",
+      "raw": {
+        "bytes": 7945,
+        "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885"
+      },
+      "link_changes": 0,
+      "format_changes": 0
+    },
+    {
+      "title": "Preparation/resonance composition",
+      "raw": {
+        "bytes": 8933,
+        "sha256": "250d431f3b818e08225b97b9d65d539c447ddd7b6ab00a36f5f7c7a7cc3868ca"
+      },
+      "link_changes": 0,
+      "format_changes": 0
+    }
+  ],
+  "review_evidence": [
+    {
+      "review": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/REVIEW.md",
+        "bytes": 18778,
+        "sha256": "69f89458fb51f9ddf8c15b68339c8a96c8f95cf5e07b82b0487f52434ebdf530"
+      },
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/FREEZE.json",
+        "bytes": 1002,
+        "sha256": "e0a44cc82e25ac3680492b4b0aa3a90fd207a37e16b9774ffc2b49ed43e4ca64"
+      },
+      "manifest": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/FILE_MANIFEST.json",
+        "bytes": 47380,
+        "sha256": "50f32b0020f39e4b02f7598a786efe4ef1686bb3a664e0e09226633bec829493"
+      },
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/attempt_01/RECEIPT.json",
+        "bytes": 2618,
+        "sha256": "6e0fcba543ba888a0a56d93b3b369f4ff6047cf83090dcbe0efbe3074a1c8621"
+      },
+      "validated_prelaunch_bindings": 1380,
+      "archived_regular_members": 210,
+      "scope": "Independent static implementation, source-exposed same-model reviewer; no science executed."
+    },
+    {
+      "review": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/amendment_review/REVIEW.md",
+        "bytes": 9876,
+        "sha256": "bb4f7e239df7135fdb3665fa33d4bc0cedaa6010b3fce9c9063c2d9bb7386e9c"
+      },
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/amendment_review/FREEZE.json",
+        "bytes": 969,
+        "sha256": "cb594e3a520e85973fe78c3bce450bede2e1fc85c4770ed3c8dd40c8ef26a422"
+      },
+      "manifest": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/amendment_review/FILE_MANIFEST.json",
+        "bytes": 69713,
+        "sha256": "4b813c1e14c26a0ecf5d393876a969bf88ab58334130bfdf75bb18241b86fbee"
+      },
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/amendment_review/attempt_01/RECEIPT.json",
+        "bytes": 1770,
+        "sha256": "8651ca6bab51c051b5a09e67a64d06ac4e79dfcb5f7abe49ca172ca5e2f75259"
+      },
+      "validated_prelaunch_bindings": 1462,
+      "archived_regular_members": 274,
+      "scope": "Independent static implementation, source-exposed same-model reviewer; no science executed."
+    }
+  ],
+  "archives": [
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/FORMAT_AMENDMENT_MAP.json",
+      "bytes": 4653,
+      "sha256": "b0f578d009106fc84ffbb5743c1b5df024a98f36e76886de2596fa0aa349878a",
+      "members": 8
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/FORMAT_ARCHIVE_FOLLOWUP_MAP.json",
+      "bytes": 1275,
+      "sha256": "d2baf88ba70eb6b1b34c8775139be2bc1db83c6a4df34f5cf7934f66f1685df6",
+      "members": 2
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/INTEGRATION_BEFORE_EXECUTION_MAP.json",
+      "bytes": 5726,
+      "sha256": "3bede6d1117e719dca8efbd044c13233dab2faadd19c191de80d3765bab272e4",
+      "members": 12
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/PACKAGING_MAP.json",
+      "bytes": 639652,
+      "sha256": "62699c8203c84940054c0d687603c8acbd919e4379c8b865b06610c38f5957af",
+      "members": 1177
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/TRANSPORT_AMENDMENT_MAP.json",
+      "bytes": 154408,
+      "sha256": "4e6765f83d0555eb6a0a2c745576c5d5680eaaa694e5ec5d6cb884d5632afccd",
+      "members": 274
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/TRANSPORT_REVIEW_MAP.json",
+      "bytes": 108935,
+      "sha256": "d358db23c136a29fcffb5701ac4410329f2ac4b7961dfb7f0e55f76e768250de",
+      "members": 210
+    }
+  ],
+  "root_read_scope": "Complete wrapper, original three programs, all26 transport edits, executable infrastructure, original and amendment reviews/checkers/launchers, actual static receipt fields, historical failure streams, all changed format/map logic. Frozen mathematical source qualifications retain their separate full-argument read scope. Large inventories and repetitive check-name arrays validated by deterministic identity comparison, not claimed as fresh mathematical reading.",
+  "format_scope": "Ten product Markdown destinations plus one TeX spacing span; raw product losslessly compressed. All scientific functions/classes unchanged. Five historical archive pointers repaired separately with failures/history retained.",
+  "scientific_executions_in_this_decision": 0,
+  "execution_plan": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/run_canonical.py",
+    "bytes": 7308,
+    "sha256": "9648f58e7d4f22db90466a121fbf83027829ef6ad4ff411fee327f8ef78a0e67"
+  },
+  "fault_plan": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/run_mutations.py",
+    "bytes": 7711,
+    "sha256": "203c94433a0c32f8c09bdedb7101f3954ed4ff597b82d6766619627510ee7344"
+  },
+  "verification_limits": [
+    "Same selected model and substantial inherited/source exposure; no model diversity or blind full-dependency audit.",
+    "Transport/identity checks are not mathematical proof.",
+    "Three author calculations retain older numerical examples; staged/resonance composition is analytically qualified separately.",
+    "Native supply, calibration/noise, practical resources, complete capture/reset/reuse and physical identification remain open.",
+    "Integrated-main landing gates and independent retained audit remain separate."
+  ],
+  "editable_prompt_files_changed": []
+}

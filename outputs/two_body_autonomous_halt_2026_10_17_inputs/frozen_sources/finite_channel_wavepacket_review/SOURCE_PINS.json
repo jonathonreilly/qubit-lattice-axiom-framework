@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-10-17T00:06:04.730673+00:00",
+  "candidate": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/THEOREM.md",
+      "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_review/sources/THEOREM.md",
+      "bytes": 26963,
+      "sha256": "fffd7d405935226aba4a5e6528112b984b6dde4580747641159f554e97e2189a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/column_norm_check.py",
+      "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_review/sources/column_norm_check.py",
+      "bytes": 1881,
+      "sha256": "ba60f080adaa5edd60f94409a85ffd36f1d6ff35bc1dd1141ae2515d2ea34625"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/run_check.py",
+      "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_review/sources/run_check.py",
+      "bytes": 1452,
+      "sha256": "1f08d94c03b22954bad538f3c18272d81c68323b71a94cf2d9c0906e26ff57dc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/CHECK_EXECUTION.json",
+      "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_review/sources/CHECK_EXECUTION.json",
+      "bytes": 1760,
+      "sha256": "b3b6ec701759051e37a96a00a1f0787c01040086f92a8c92276ba6e7f1d6e2cc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/check_stdout.txt",
+      "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_review/sources/check_stdout.txt",
+      "bytes": 964,
+      "sha256": "b1808ec788055149854247ead2f59d2cd3c8fb219c4a404acbf96edb0821e115"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/check_stderr.txt",
+      "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_review/sources/check_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/FINAL_MANIFEST.json",
+      "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_review/sources/FINAL_MANIFEST.json",
+      "bytes": 3285,
+      "sha256": "3f195c332bb56ec77aadeac1896d5b5fb8e013a7be22bb45457671c5e2064250"
+    }
+  ],
+  "methodology": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/review-loop/SKILL.md",
+      "bytes": 20052,
+      "sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+    }
+  ],
+  "methodology_source_revision": "c86e61caf46c848fe8cee57ecbea6e6fdad7a4bc; identified local snapshot, no network refresh"
+}

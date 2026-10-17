@@ -1,0 +1,120 @@
+"""Install reviewed science bytes; status updates are outside the frozen proof."""
+from pathlib import Path
+from datetime import datetime, timezone
+import gzip
+import hashlib
+import json
+import re
+import subprocess
+
+D=Path(__file__).resolve().parent
+N=D.parent
+W=N.parent/'correlation_worktree'
+DP=N/'emitter_family_publication_draft'
+Q=W/'.claude/science/physics-loops/toe-emitter-coupling-family-20261017'
+F=W/'outputs/emitter_coupling_family_2026_10_17_inputs'
+note=W/'docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+def digest(b):return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def read(p):return json.loads(p.read_text())
+def write(p,v):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,indent=2)+'\n')
+assert subprocess.check_output(['git','-C',str(W),'rev-parse','HEAD'],text=True).strip()=='0f1022e03dbbed8085035f2a378be8ae1aca02e8'
+assert not subprocess.check_output(['git','-C',str(W),'status','--porcelain'],text=True)
+assert digest((DP/'FREEZE.json').read_bytes())['sha256']=='3e4f183d7bfda728b9e3ed68cecebaedaccbbda2af9484ff4672c4c26f0657cf'
+mf=read(DP/'FILE_MANIFEST.json')
+assert len(mf['files'])==112
+for row in mf['files']:
+    p=DP/row['path']
+    if p.is_symlink():
+        assert row['kind']=='symlink_transport_fixture_only'
+        assert str(p.readlink())==row['target']
+        assert hashlib.sha256(str(p.readlink()).encode()).hexdigest()==row['target_text_sha256']
+    else:assert digest(p.read_bytes())=={k:row[k] for k in ('bytes','sha256')},row['path']
+overlay=read(DP/'READINESS.json')['new_repository_overlay_files']
+assert len(overlay)==36
+for row in overlay:
+    src=DP/row['path'];dest=W/Path(row['path']).relative_to('canonical')
+    assert digest(src.read_bytes())=={k:row[k] for k in ('bytes','sha256')}
+    assert not dest.exists();dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(src.read_bytes())
+Q.mkdir(parents=True,exist_ok=False)
+(D/'BASE_GRAPH_MANIFEST.json').write_bytes((W/'docs/audit/data/citation_graph_manifest.json').read_bytes())
+
+# Reconstruct every archive from exact raw bytes, deduplicating immutable inputs.
+# Note/status/body map/manifest are deliberately excluded: their wrapper changes below.
+mutable={note,F/'PUBLICATION_STATUS.json',F/'PROOF_BODY_MAP.json',F/'ARTIFACT_MANIFEST.json'}
+known={}
+roots=[F,W/'outputs/product_seed_emitter_2026_10_17_inputs']
+for p in [*[p for root in roots for p in root.rglob('*') if p.is_file()],
+          W/'scripts/emitter_coupling_family_2026_10_17.py',
+          W/'scripts/product_seed_emitter_2026_10_17.py',
+          W/'docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md']:
+    if p in mutable:continue
+    b=p.read_bytes();known.setdefault(hashlib.sha256(b).hexdigest(),(p,'none',b))
+def archive(label,root,paths):
+    rows=[]
+    for src in sorted(paths):
+        rel=str(src.relative_to(root))
+        if src.is_symlink():
+            target=str(src.readlink());rows.append({'original_path':rel,'kind':'symlink_fixture_metadata_only','target':target,'target_text_sha256':hashlib.sha256(target.encode()).hexdigest()});continue
+        b=src.read_bytes();raw=digest(b)
+        if raw['sha256'] in known:
+            p,compression,stored=known[raw['sha256']]
+        else:
+            # Preserve exact problematic raw whitespace losslessly, never rewrite it.
+            compression='gzip' if re.search(rb'[ \t]+\r?$',b,re.M) or b.endswith(b'\n\n') else 'none'
+            stored=gzip.compress(b,mtime=0) if compression=='gzip' else b
+            p=Q/'evidence'/label/(rel+('.gz' if compression=='gzip' else '.txt'))
+            p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(stored)
+            known[raw['sha256']]=(p,compression,stored)
+        rows.append({'original_path':rel,'kind':'file','path':str(p.relative_to(W)),**digest(stored),'compression':compression,'raw_bytes':raw['bytes'],'raw_sha256':raw['sha256']})
+    record={'source_directory':str(root),'scope':'Lossless reconstruction map; historical paths and statuses retained, no scientific replay.', 'files':rows,'count':len(rows)}
+    write(Q/'evidence'/(label.upper()+'_MAP.json'),record)
+    return record
+archives={}
+for label,root,expected in [('preparation',DP,114),('family_review',N/'emitter_resource_family_review',87),('qualification',N/'emitter_family_root_qualification',2)]:
+    paths=[p for p in root.rglob('*') if p.is_file() or p.is_symlink()]
+    assert len(paths)==expected,(label,len(paths))
+    archives[label]=archive(label,root,paths)
+qual=archives['qualification']['files']
+qualpath=next(r['path'] for r in qual if r['original_path']=='QUALIFICATION.md')
+reviewpath=next(r['path'] for r in archives['family_review']['files'] if r['original_path']=='REPORT.md')
+
+wrapper=(DP/'WRAPPER.md').read_text()
+changes={
+'next_trace_action: "Complete the separate family analytical review and root qualification, review the portable adaptation, then execute the frozen canonical runner and focused milestone checks. Shared integrated-main landing gates remain later obligations."':'next_trace_action: "Use the separate source qualification and transport acceptance; consult the current execution and publication records. Shared integrated-main landing checks and retained audit remain later obligations."',
+'Its analytical review and qualification are pending.':'Its analytical review and root qualification are complete with disclosed source exposure; retained status is separate.',
+'source_science_acceptance_complete: false':'source_science_acceptance_complete: true',
+'wrapper_root_approval: pending_separate_transport_review':'wrapper_root_approval: see_root_transport_acceptance',
+'canonical_execution: pending_not_executed':'canonical_execution: see_separate_execution_record',
+'publication: local_reviewable_draft_only':'publication: reviewable_milestone_see_publication_record',
+'**Claim type:** proposed `bounded_theorem`. **Current status:** frozen author\ncandidate with separate analytical review and root qualification pending. This\nlocal publication packet has not executed its canonical scientific runner.\nIt makes no independent, retained, merged or hardware-realization claim.':'**Claim type:** `bounded_theorem`. **Current status:** conditional support\nwith a completed separate analytical check and root qualification. This is a\nreviewable milestone; retained audit and physical realization remain open.\n\n**Runner:** [scripts/emitter_coupling_family_2026_10_17.py](../scripts/emitter_coupling_family_2026_10_17.py).\n\nThe [execution status](../.claude/science/physics-loops/toe-emitter-coupling-family-20261017/EXECUTION_STATUS.md) records actual canonical reproduction and focused checks separately.',
+'the proposed family permits':'the checked conditional family permits',
+'The proposed uniform conclusion':'The conditional uniform conclusion',
+'The ongoing\nseparate family review, its eventual root decision, wrapper portability approval,\ncanonical execution and retained audit are distinct records; none is inferred\nfrom the inherited fixed-parameter qualifications.':f'The completed [separate family review](../{reviewpath}) and\n[root qualification](../{qualpath}) include a pre-author-exposure mass\ncalculation and a source-exposed family check with an independently expanded\nsquared-L2 estimate. Both use the same model and substantial inherited source\nexposure. They do not establish model-diverse or full-dependency independence.\nThe actual runs took 0.770373 and 0.594293 seconds, under CPU30/30 and wall45\ncaps; the maximum matrix dimensions were zero and four. Wrapper portability,\ncanonical reproduction and retained audit are separate records.',
+'The proposed primary is':'The primary is',
+'The proposed shared canonical caps':'The shared canonical caps',
+'Historical author output remains historical evidence. No canonical\nresult or cache is supplied by this draft. The':'Historical author output remains historical evidence. Actual canonical\nresults and freshness are recorded outside the declared scientific input closure\nin the execution status linked above. The',
+'separate the pending decisions and execution. Focused milestone checks precede':'separate the source decisions and actual execution. Focused milestone checks precede',
+'status and eventual review records':'status and separate review records'
+}
+for old,new in changes.items():
+    assert wrapper.count(old)==1,old
+    wrapper=wrapper.replace(old,new)
+begin=b'<!-- BEGIN UNCHANGED FAMILY AUTHOR BODY -->\n'
+end=b'\n<!-- END UNCHANGED FAMILY AUTHOR BODY -->\n'
+original=note.read_bytes();body=(N/'emitter_resource_family_candidate/CANDIDATE.md').read_bytes()
+assert original.split(begin,1)[1]==body+end
+prefix=wrapper.encode()+b'\n'+begin
+note.write_bytes(prefix+body+end)
+bodymap=read(F/'PROOF_BODY_MAP.json')
+bodymap.update(body_start_byte_inclusive=len(prefix),body_end_byte_exclusive=len(prefix)+len(body),note_sha256=digest(note.read_bytes())['sha256'],wrapper_sha256=digest(wrapper.encode())['sha256'])
+write(F/'PROOF_BODY_MAP.json',bodymap)
+status=read(F/'PUBLICATION_STATUS.json')
+status.update(family_independent_review='completed_selective_same_model_check_with_disclosed_source_exposure',family_root_qualification='conditional_reuse_accepted_a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325',canonical_execution='Consult separate EXECUTION_STATUS.md and actual receipts; this input does not self-certify a later run.',scientific_mutations='Consult separate mutation receipts; none inferred from source approval.',publication='Reviewable milestone; consult separate publication record.',wrapper_transport_review='Consult separate ROOT_PORTABILITY_ACCEPTANCE.json before execution.')
+write(F/'PUBLICATION_STATUS.json',status)
+manifest=read(F/'ARTIFACT_MANIFEST.json')
+for row in manifest['files']:row.update(digest((W/row['path']).read_bytes()))
+write(F/'ARTIFACT_MANIFEST.json',manifest)
+(Q/'EXECUTION_STATUS.md').write_text('# Coupling-family execution status\n\nSource science is conditionally qualified. Canonical execution, copied-source\nmutation checks, citation/focused verification and publication remain pending.\nNo retained audit, merge or native implementation is asserted.\n')
+write(Q/'ROOT_WRAPPER_CHANGE.json',{'utc':datetime.now(timezone.utc).isoformat(),'scope':'Root status/link clarification only; body and primary unchanged. Historical preparation bytes reconstruct from evidence/PREPARATION_MAP.json.', 'replacements':changes,'body':digest(body),'new_note':digest(note.read_bytes()),'new_primary':digest((W/'scripts/emitter_coupling_family_2026_10_17.py').read_bytes()),'editable_prompt_files_changed':[]})
+write(D/'INSTALLATION.json',{'installed_utc':datetime.now(timezone.utc).isoformat(),'overlay_files':36,'archive_member_counts':{k:v['count'] for k,v in archives.items()},'note':digest(note.read_bytes()),'primary':digest((W/'scripts/emitter_coupling_family_2026_10_17.py').read_bytes()),'manifest':digest((F/'ARTIFACT_MANIFEST.json').read_bytes()),'body':digest(body),'science_body_edits':[],'canonical_execution':'not_executed'})
+print((D/'INSTALLATION.json').read_text())

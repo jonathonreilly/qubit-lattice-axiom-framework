@@ -1,0 +1,74 @@
+{
+  "utc": "2026-10-17T00:45:07.332609+00:00",
+  "main": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+  "original_parent": "f5f5eda7427453aac726b394381c965f9e28ac03",
+  "instructions_unchanged": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 1118,
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "bytes": 5767,
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "bytes": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md",
+      "bytes": 9827,
+      "sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/long-running-execution.md",
+      "bytes": 8756,
+      "sha256": "730a6304650d43a27099c3047a4b796d4a7bf1907d8803c38f4368919fad7f47"
+    },
+    {
+      "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "bytes": 34639,
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "bytes": 6427,
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    }
+  ],
+  "notes": [
+    {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "parent_sha256": "b25d812dc1a4cdad2959f003ddd36346f2de0058292c74c7d0e07c9c5e395a4d",
+      "main_sha256": "bfa0b68ba5954b10f435846cae48df9a71fc04bcdb08215ca945319c13caef03",
+      "original_body_is_unchanged_prefix": true,
+      "diff": "--- f5f5eda7427453aac726b394381c965f9e28ac03:docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md\n+++ 69cf6a289b2ec06213473f1549c51a57c29b6d70:docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md\n@@ -1158,3 +1158,14 @@\n Cubic joins are C1, with a fixed minimum duration in the stated units; they are not C2 or a hard-bandwidth theorem. Exact waveform matching, endpoint zeroing, usable physical slew/calibration/timing and an autonomous controller remain unresolved physical identifications. These results do not promote externally supplied control to autonomous halt.\n \n The checks use the same selected model and disclose source/outline exposure and reused parent evidence. Four separate exposed analytical reviews support the coherent argument; none is blind or a different-model replication. Metadata verifies exact sources and receipts only. No product compiler, coefficient list, symbolic program, numerical time evolution or physical experiment ran for these extensions. Formal retained status remains the independent audit path. No editable prompts/physical axioms changed, no science merged, no main pushed, no audit verdict applied.\n+\n+## Portable provenance verification\n+\n+The canonical helper resolves historical path labels through the repository-local\n+`PORTABLE_RECOVERY.json` in the companion packet. It verifies the ten unchanged\n+canonical science bodies, captured evidence and receipts, and the exact canonical\n+parent. Eleven unavailable historical freeze-member objects remain explicit\n+inventory references; their bytes are not validated and carry no proof authority.\n+The original historical helper and manifests are preserved unchanged. Current\n+verification is bounded to 60 seconds and performs no scientific calculation or\n+approval; historical acceptance fields do not authorize publication or retention.\n"
+    },
+    {
+      "path": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "parent_sha256": "4050dabaac602bcd711a9c0eea21b648e3f1ba8fdcb28007f85f1ed9bdce1577",
+      "main_sha256": "38549d1ad11b2978786f3e21e809d4958b9911b1958916016ba9c29d89c30c11",
+      "original_body_is_unchanged_prefix": false,
+      "diff": "--- f5f5eda7427453aac726b394381c965f9e28ac03:docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md\n+++ 69cf6a289b2ec06213473f1549c51a57c29b6d70:docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md\n@@ -27,8 +27,8 @@\n The actual source surface is `conditional-support`; no independent retained\n audit is supplied. Root accepted the exact two mathematical sources below for\n conditional provisional reuse, under the complete\n-[source qualification](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/QUALIFICATION.md).\n-The [source decision](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/SOURCE_ACCEPTANCE.json)\n+source qualification (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/QUALIFICATION.md`).\n+The source decision (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/SOURCE_ACCEPTANCE.json`)\n does not approve this new wrapper or certify canonical execution, publication\n or physical hardware. Their actual outcomes are separately recorded in the\n [publication review history](../.claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/REVIEW_HISTORY.md)\n@@ -38,14 +38,17 @@\n The root-owned [primary](../scripts/autonomous_boundary_reflection_2026_10_16.py)\n directly imports the separately assembled\n [check module](../scripts/autonomous_boundary_reflection_check_2026_10_16.py).\n-The [result](../outputs/autonomous_boundary_reflection_2026_10_16.json) and\n+The result (`outputs/autonomous_boundary_reflection_2026_10_16.json`) and\n [canonical cache](../logs/runner-cache/autonomous_boundary_reflection_2026_10_16.txt)\n are execution evidence only when their actual run and freshness are recorded.\n This wrapper does not predeclare a successful run. The\n-[input artifact manifest](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/ARTIFACT_MANIFEST.json)\n+input artifact manifest (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/ARTIFACT_MANIFEST.json`)\n binds the root-owned historical evidence; the companion\n [source manifest](../.claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/SOURCE_MANIFEST.json)\n-binds the unchanged embedded mathematical bodies.\n+records the original wrapper and unchanged mathematical bodies. The\n+[current source binding](../.claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/LANDING_SOURCE_BINDING.json)\n+records the present wrapper and body offsets; original source-acceptance and\n+execution records remain historical.\n \n ## Conditional result and its resource boundaries\n \n@@ -135,12 +138,12 @@\n \n ## Review record and unchanged source bodies\n \n-The [source acceptance record](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/SOURCE_ACCEPTANCE.json)\n+The source acceptance record (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/SOURCE_ACCEPTANCE.json`)\n has SHA256 `5f0653431bf3ea5965221da4c2e9a0da873c29e1cebabc2e12574b9601be1de4`;\n its controlling qualification has SHA256\n `e9324bc0b3e9a811860b0a993343fa908cb78c8089f99750f5bfb4efe7078fe4`.\n Root read both complete mathematical arguments, the complete\n-[focused checker report](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/independent_check/REVIEW.md)\n+focused checker report (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/independent_check/REVIEW.md`)\n (SHA256 `6f54fcfe020972e4154be2f0ee59e9205155e3a80249186faac22bcdd91396df`),\n and the actual diagnostic sources and selected numerical evidence. The\n checker separately reconstructed boundary/bound-state, normalization, tail\n@@ -154,8 +157,8 @@\n \n V2 corrects the support quantifier identified in review and changes no\n numerical calculation. The historical author run used V1; the preserved\n-[author diagnostic](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/author/diagnostic.py)\n-and its [execution record](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/author/execution/EXECUTION.json)\n+author diagnostic (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/author/diagnostic.py`)\n+and its execution record (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/author/execution/EXECUTION.json`)\n must not be relabeled as a V2 execution. Both original implementations,\n results and receipts remain in the root evidence pack. Canonical adaptation,\n mutations, execution and final wrapper conformance have their actual status\n@@ -170,8 +173,8 @@\n \n | Frozen body | Bytes | SHA256 |\n |---|---:|---|\n-| [CANDIDATE_V2.md](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/CANDIDATE_V2.md) | 13239 | `694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36` |\n-| [FINITE_READINESS_ADDENDUM.md](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/FINITE_READINESS_ADDENDUM.md) | 4856 | `ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f` |\n+| CANDIDATE_V2.md (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/CANDIDATE_V2.md`) | 13239 | `694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36` |\n+| FINITE_READINESS_ADDENDUM.md (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/FINITE_READINESS_ADDENDUM.md`) | 4856 | `ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f` |\n \n \n <!-- BEGIN UNCHANGED SOURCE: CANDIDATE_V2.md; SHA256=694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36 -->\n@@ -557,3 +560,10 @@\n three-body boundary hardware and readiness remain explicit resources.\n \n <!-- END UNCHANGED SOURCE: FINITE_READINESS_ADDENDUM.md -->\n+\n+## Landing evidence references\n+\n+Output artifacts above are identified by explicit repository paths. They remain\n+unchanged historical source and execution evidence, not citation-graph premises.\n+The landing run has separate raw output and a freshly bound canonical cache;\n+the original result JSON is preserved without relabelling it as that new run.\n"
+    }
+  ],
+  "scope": "Fresh comparison only; original child parent preserved. External parent landing does not apply an audit verdict to this result."
+}

@@ -1,0 +1,34 @@
+"""Deterministic lossless evidence preservation with exact-byte deduplication."""
+from pathlib import Path
+import gzip,hashlib,json,re
+D=Path(__file__).resolve().parent
+N=D.parent
+W=N.parent/'correlation_worktree'
+Q=W/'.claude/science/physics-loops/toe-thermal-resonance-halt-20261017'
+F=W/'outputs/thermal_resonance_halt_2026_10_17_inputs'
+def digest(b):return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def pin(p):return {'path':str(p),**digest(p.read_bytes())}
+def write(p,j):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(j,indent=2)+'\n')
+def archive(label,root,paths=None):
+    known={}
+    for r in [F,Q/'evidence',W/'outputs/product_seed_emitter_2026_10_17_inputs']:
+        for p in sorted(r.rglob('*')):
+            if not p.is_file() or p.is_symlink():continue
+            stored=p.read_bytes();comp='gzip' if p.suffix=='.gz' else 'none'
+            b=gzip.decompress(stored) if comp=='gzip' else stored
+            known.setdefault(hashlib.sha256(b).hexdigest(),(p,comp,stored))
+    rows=[]
+    for p in sorted(paths if paths is not None else [p for p in root.rglob('*') if p.is_file()]):
+        assert not p.is_symlink(), 'Pass regular frozen members only; preserve fixture symlink declarations in their original manifest.'
+        b=p.read_bytes();raw=digest(b)
+        if raw['sha256'] in known:dest,comp,stored=known[raw['sha256']]
+        else:
+            comp='gzip' if re.search(rb'[ \t]+\r?$',b,re.M) or b.endswith(b'\n\n') else 'none'
+            stored=gzip.compress(b,mtime=0) if comp=='gzip' else b
+            dest=Q/'evidence'/label/(str(p.relative_to(root))+('.gz' if comp=='gzip' else '.txt'))
+            dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(stored)
+            known[raw['sha256']]=(dest,comp,stored)
+        rows.append({'original_path':str(p.relative_to(root)),'path':str(dest.relative_to(W)),**digest(stored),'compression':comp,'raw_bytes':raw['bytes'],'raw_sha256':raw['sha256']})
+    record={'source_directory':str(root),'scope':'Lossless original byte reconstruction, including failed attempts; no scientific execution.','files':rows,'count':len(rows)}
+    write(Q/'evidence'/(label.upper()+'_MAP.json'),record)
+    return record

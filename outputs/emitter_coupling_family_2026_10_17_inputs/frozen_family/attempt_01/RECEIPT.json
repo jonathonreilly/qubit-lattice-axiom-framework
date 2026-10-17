@@ -1,0 +1,202 @@
+{
+  "launch_after_prelaunch_fsync_utc": "2026-10-17T02:54:16.773745+00:00",
+  "completed_utc": "2026-10-17T02:54:17.490709+00:00",
+  "prelaunch_sha256": "273a7c055fd04b6a630280ea79ddd1bc0b0945cc636c407c6ab9db9d9f14f83c",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.7150317076593637,
+  "child_user_cpu_seconds": 0.285256,
+  "child_system_cpu_seconds": 0.050011,
+  "child_peak_rss_macos_bytes": 62652416,
+  "actual_caps": {
+    "cpu_soft_hard_seconds": [
+      20,
+      20
+    ],
+    "external_wall_seconds": 30,
+    "os_memory_limit": null
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/attempt_01/stdout.json",
+    "kind": "output",
+    "sha256": "14125e34295e570e4338d0718ab35efb261edd2e151984fa61f18ae49712072c",
+    "bytes": 41223,
+    "generation": {
+      "device": 16777231,
+      "inode": 518512069,
+      "size": 41223,
+      "mtime_ns": 1792205657423441077,
+      "ctime_ns": 1792205657423441077
+    }
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/attempt_01/stderr.txt",
+    "kind": "output",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "generation": {
+      "device": 16777231,
+      "inode": 518512070,
+      "size": 0,
+      "mtime_ns": 1792205656773834782,
+      "ctime_ns": 1792205656773854241
+    }
+  },
+  "postchecks": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/RESOURCE_PLAN.json",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/SOURCE_MANIFEST.json",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/check_family.py",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/launch_check.py",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/attempt_01/check_family.py",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/generic_v2.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/installed.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/installed_acceptance.json",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/installed_qualification.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/installed_review.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/interval.json",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/interval.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/local_qualification.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/moment.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/moment_acceptance.json",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/moment_freeze.json",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/moment_qualification.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/moment_review.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/physics_loop_skill.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/publication.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/publication_inventory.json",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/route.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/stationary.json",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/weighted.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/weighted_acceptance.json",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/weighted_qualification.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/weighted_review.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/workflow.md",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    },
+    {
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy-1.14.0.dist-info/METADATA",
+      "hash_and_bytes_equal": true,
+      "generation_equal": true
+    }
+  ]
+}

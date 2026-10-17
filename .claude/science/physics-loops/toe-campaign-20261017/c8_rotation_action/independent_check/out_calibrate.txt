@@ -1,0 +1,2 @@
+84 (('hsym', False), ('alpha0 ok', True), ('lam alpha0', (-1.0,)), ('lam P_R', ()), ('#B in D_e', (('not in group', 3),)))
+24 (('hsym', True), ('alpha0 ok', True), ('lam alpha0', (-1.0,)), ('lam P_R', (1.0,)), ('#B in D_e', ((2, 3),)))

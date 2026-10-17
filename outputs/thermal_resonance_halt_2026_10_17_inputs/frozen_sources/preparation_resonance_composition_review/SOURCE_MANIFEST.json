@@ -1,0 +1,153 @@
+{
+  "created_utc": "2026-10-17T04:22:56.431455+00:00",
+  "purpose": "Source-exposed analytical interface review. No scientific executable copied or replayed.",
+  "runtime_status": "Qualified exact resonance-family theorem reused at unchanged identity.",
+  "product_status": "Qualified conditional preparation source reused.",
+  "interacting_status": "Unaccepted source and staged-release premise remain conditional as assigned.",
+  "entries": [
+    {
+      "snapshot": "inputs/composition.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/preparation_resonance_composition/CANDIDATE.md",
+      "sha256": "250d431f3b818e08225b97b9d65d539c447ddd7b6ab00a36f5f7c7a7cc3868ca",
+      "bytes": 8933,
+      "original_device": 16777231,
+      "original_inode": 518533094,
+      "original_mtime_ns": 1792210806065558186
+    },
+    {
+      "snapshot": "inputs/composition_freeze.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/preparation_resonance_composition/FREEZE.json",
+      "sha256": "38c236c95a87fae06c1a6631867c698fc872791d8dcecc9a6b3d8fc865ce0575",
+      "bytes": 513,
+      "original_device": 16777231,
+      "original_inode": 518533115,
+      "original_mtime_ns": 1792210806065921521
+    },
+    {
+      "snapshot": "inputs/resonance.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_candidate/CANDIDATE.md",
+      "sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0",
+      "bytes": 37370,
+      "original_device": 16777231,
+      "original_inode": 518530799,
+      "original_mtime_ns": 1792209504778361735
+    },
+    {
+      "snapshot": "inputs/resonance_freeze.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_candidate/FREEZE.json",
+      "sha256": "8cdf10121e4c42247d4aba730a48413817a62b9ada420adfc6bc70df7df64879",
+      "bytes": 1806,
+      "original_device": 16777231,
+      "original_inode": 518530997,
+      "original_mtime_ns": 1792209586133905852
+    },
+    {
+      "snapshot": "inputs/resonance_review.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/REPORT.md",
+      "sha256": "70eaca751449653eb33255a8b6c0509cde2d4f69de14d39d353c5b96b838c172",
+      "bytes": 32461,
+      "original_device": 16777231,
+      "original_inode": 518532477,
+      "original_mtime_ns": 1792210487136319828
+    },
+    {
+      "snapshot": "inputs/resonance_review_freeze.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/FREEZE.json",
+      "sha256": "6ead24431690a1b62f549d1adca9d7250ac92231cb0103cfe6953dee56be17b7",
+      "bytes": 2689,
+      "original_device": 16777231,
+      "original_inode": 518532545,
+      "original_mtime_ns": 1792210535894823653
+    },
+    {
+      "snapshot": "inputs/resonance_acceptance.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_root_qualification/ACCEPTANCE.json",
+      "sha256": "bb280c96d290e28b42c45994cab3fe9871d671b0d20d39a36ae09d211ef98686",
+      "bytes": 6363,
+      "original_device": 16777231,
+      "original_inode": 518532933,
+      "original_mtime_ns": 1792210699656331308
+    },
+    {
+      "snapshot": "inputs/product.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/CANDIDATE.md",
+      "sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227",
+      "bytes": 28456,
+      "original_device": 16777231,
+      "original_inode": 518532109,
+      "original_mtime_ns": 1792210318308954248
+    },
+    {
+      "snapshot": "inputs/product_freeze.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/FREEZE.json",
+      "sha256": "fb4b80aada7275e110fc76ea0c4ac49974daf123db79a5639156e9332e958855",
+      "bytes": 1693,
+      "original_device": 16777231,
+      "original_inode": 518532352,
+      "original_mtime_ns": 1792210435331205784
+    },
+    {
+      "snapshot": "inputs/product_acceptance.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/preparation_product_root_qualification/ACCEPTANCE.json",
+      "sha256": "43e1609d6e38b2220e35e1637428263e49b38d1ac22ed282ee64f3d7d3f60ca5",
+      "bytes": 13476,
+      "original_device": 16777231,
+      "original_inode": 518532803,
+      "original_mtime_ns": 1792210601667901109
+    },
+    {
+      "snapshot": "inputs/product_review.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/preparation_product_root_qualification/REVIEW.md",
+      "sha256": "5e4cc2c916d9240ec5bb0b2a84559ae38fd2b20959e63c52d6b3c0bda04a2d69",
+      "bytes": 8169,
+      "original_device": 16777231,
+      "original_inode": 518532773,
+      "original_mtime_ns": 1792210601227029328
+    },
+    {
+      "snapshot": "inputs/interacting.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/CANDIDATE.md",
+      "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0",
+      "bytes": 21245,
+      "original_device": 16777231,
+      "original_inode": 518530831,
+      "original_mtime_ns": 1792209482059996920
+    },
+    {
+      "snapshot": "inputs/interacting_freeze.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/FREEZE.json",
+      "sha256": "2337aec4a67826733d78499507754e1b37ae4f04c8cacded4149d7d767f4c421",
+      "bytes": 751,
+      "original_device": 16777231,
+      "original_inode": 518530900,
+      "original_mtime_ns": 1792209511920537202
+    },
+    {
+      "snapshot": "inputs/staged.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/STAGED_RELEASE_ADDENDUM.md",
+      "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885",
+      "bytes": 7945,
+      "original_device": 16777231,
+      "original_inode": 518531778,
+      "original_mtime_ns": 1792210060505899583
+    },
+    {
+      "snapshot": "inputs/staged_freeze.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/STAGED_RELEASE_FREEZE.json",
+      "sha256": "5a15bbbbc55f092e8ff3b1388e8ca804ff439b1ca20360ffb4a66411ae72b546",
+      "bytes": 433,
+      "original_device": 16777231,
+      "original_inode": 518531780,
+      "original_mtime_ns": 1792210060627106876
+    },
+    {
+      "snapshot": "inputs/SCIENCE_WORKFLOW.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/SCIENCE_WORKFLOW.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "original_device": 16777231,
+      "original_inode": 518531678,
+      "original_mtime_ns": 1792209990262357147
+    }
+  ]
+}

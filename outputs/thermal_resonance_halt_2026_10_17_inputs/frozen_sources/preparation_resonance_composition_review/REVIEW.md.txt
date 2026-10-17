@@ -1,0 +1,432 @@
+---
+review_type: selective_source_exposed_interface_check
+candidate_sha256: 250d431f3b818e08225b97b9d65d539c447ddd7b6ab00a36f5f7c7a7cc3868ca
+disposition: supported_with_alternative_I_still_conditional
+required_composition_correction: none_identified
+alternative_P_source: root_qualified_conditional_theorem
+alternative_I_source: pending_separate_source_decision
+scientific_executions_in_this_review: 0
+retained_audit: false
+same_inherited_model_and_effort: true
+---
+# Review of the thermal preparation/resonance interface composition
+
+The complete frozen composition is mathematically supported at its stated
+scope. **Alternative P** composes its qualified exact-product preparation
+with the qualified resonance runtime, yielding complete unhalved trace
+error below **0.009665** on the stated finite observation window.
+**Alternative I** has a valid interface implication, yielding the stated
+**0.009685** ceiling if its interacting preparation and staged-release
+source premises are accepted. This interface review does **not** qualify
+that still-pending source or promote I through P's acceptance.
+
+I found no correction needed in the composition's chronology, scalar,
+waveform, full-reference comparison, thermal count, local control account
+or concrete budgets. The crucial device interpretation is that a new
+finite M is chosen at design time and then the **same literal H_M** is
+used throughout its preparation, release and runtime. The older and new
+finite devices are different members of an explicitly all-M construction;
+no physical clock is truncated or resized during the protocol.
+
+## 1. Exact sources and limits of this check
+
+The reviewed 8,933-byte `../preparation_resonance_composition/CANDIDATE.md`
+has SHA256
+`250d431f3b818e08225b97b9d65d539c447ddd7b6ab00a36f5f7c7a7cc3868ca`.
+Its 513-byte `FREEZE.json` has SHA256
+`38c236c95a87fae06c1a6631867c698fc872791d8dcecc9a6b3d8fc865ce0575`.
+I read the complete current argument. The freeze records a prior formatting
+recovery; this review is of the current bytes, not an acceptance of an
+unread prior formatting version.
+
+Sixteen byte-exact snapshots, original paths, sizes and generation metadata
+are preserved in `inputs/` and `SOURCE_MANIFEST.json`. The latter has SHA256
+`23e07a332a8299e6ab74081dee06ef68a4c849fa72eec45a06d82fac114dcdc0`.
+The controlling source pins are:
+
+| Source | SHA256 |
+|---|---|
+| Resonance-family candidate | 401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0 |
+| Resonance-family author freeze | 8cdf10121e4c42247d4aba730a48413817a62b9ada420adfc6bc70df7df64879 |
+| My unchanged resonance-family review | 70eaca751449653eb33255a8b6c0509cde2d4f69de14d39d353c5b96b838c172 |
+| Resonance-family review freeze | 6ead24431690a1b62f549d1adca9d7250ac92231cb0103cfe6953dee56be17b7 |
+| Resonance-family root acceptance | bb280c96d290e28b42c45994cab3fe9871d671b0d20d39a36ae09d211ef98686 |
+| Exact-product preparation candidate P | b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227 |
+| P author freeze | fb4b80aada7275e110fc76ea0c4ac49974daf123db79a5639156e9332e958855 |
+| P root acceptance | 43e1609d6e38b2220e35e1637428263e49b38d1ac22ed282ee64f3d7d3f60ca5 |
+| P root analytical review | 5e4cc2c916d9240ec5bb0b2a84559ae38fd2b20959e63c52d6b3c0bda04a2d69 |
+| Interacting preparation candidate I | 416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0 |
+| I original freeze | 2337aec4a67826733d78499507754e1b37ae4f04c8cacded4149d7d767f4c421 |
+| I staged-release addendum | 1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885 |
+| I addendum freeze | 5a15bbbbc55f092e8ff3b1388e8ca804ff439b1ca20360ffb4a66411ae72b546 |
+| Reused science workflow | 71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3 |
+
+The complete P candidate, its root review/acceptance, the complete I
+candidate and staged addendum, their freezes, and the new resonance root
+acceptance were read. The unchanged resonance proof and my completed
+review are reused by exact identity. An aggregate read truncated part of
+I and omitted the following files; I re-read the full I/addendum and the
+separate qualification material explicitly. No truncated result counted
+as completed reading.
+
+This is a source-exposed analytical interface check, not a second unexposed
+preparation discovery or a blind review of the spectral dependency graph.
+I had substantial previous authorship/review exposure to the installed
+emitter, generic bridge and family/resonance analysis; the same model and
+effort remain. P's earlier independent derivation relative to root's
+withheld mechanism is an attribute of that source history, not a claim
+about my present review. I does not inherit P's qualification.
+
+No numerical scientific program, source checker, dynamics, Gibbs matrix,
+grid or symbolic test was executed here. The analysis below proves the
+short interface statements directly and reuses qualified source constants.
+The saved Python files only copy/hash inputs and freeze the review. They
+are bookkeeping, not scientific runs. No new CPU/run PASS count is offered
+as scientific evidence. The referenced Git revision is inherited source
+context; I did not query Git or a remote service.
+
+## 2. The runtime substitution is valid for the chosen finite device
+
+Choose a fixed kappa in [10^-12,10^-8], sigma=10^-6, L=12,
+T=kappa^-2 and M=ceil(50T). Monotonicity of the ceiling and the integer
+upper endpoint give
+
+```
+5*10^17 <= M <= 5*10^25,
+N=M+3 <=5*10^25+3 <10^32.
+```
+
+The count N includes M clock qubits, both source qubits and the emitter.
+It excludes the arbitrary old pair from the thermal count. The active
+device has M+5 qubits; an arbitrary passive reference is additional.
+
+P's full-space cancellation and supported-release identities explicitly
+hold for every finite M>=16. I's full-space decomposition and staged
+supported identities have the same all-M domain. Their auxiliary count
+and far-end pattern, rather than an old numerical M, enter their proofs.
+The new M is well inside this domain. The changed far-end clock is
+constructed with its actual J n_(M-1) term; for P its preparation pin uses
+the corresponding endpoint coefficient 3J. No old endpoint term or pin is
+left at an interior site. The controls are derived for this chosen H_M.
+
+The runtime H_M keeps the identical old K, source couplings, source ports,
+loop phase, emitter onsite energy and vacuum reserves. Its restriction to
+the seed's one-head sector is the resonance theorem's signed matching
+operator plus exactly c_phys=nu+2kappa. The frozen resonance theorem
+therefore supplies the finite interface
+
+```
+||e^(-itH_M) E - zeta e^(-ic_phys t) B_(kappa,t) e^(-itK) W|| < F_res,
+F_res < .004832,       T <= t <= 2T.
+```
+
+The source P's older finite isometry constant at T=10^6/kappa^2 is not
+substituted for this shorter-time constant. Nor is a finite theorem made
+all-future by the infinite resonance theorem. Only the new finite
+[T,2T] interface is used. The normalized infinite outgoing packet remains
+the comparator after embedding the actual finite device by extra clock
+vacuum. No additional truncation/renormalization changes the target.
+
+Decreasing M also preserves the conservative thermal ceilings based on
+N<10^32 or N<=5*10^31+3, but this is a statement about their bound on the
+chosen new device. It is not a claim that the interacting Gibbs states at
+different M have identical marginals or that one can remove sites during
+an existing preparation.
+
+## 3. Full trace composition, chronological old aging and phase
+
+Let U_s=U_setup have actual complete duration s, and put
+V_s=e^(-i Phi_setup) E e^(-isK). The premise
+||U_s E-V_s||<=delta_release and the runtime isometry estimate imply
+
+```
+||e^(-itH_M)U_s E
+  -zeta e^[-i(Phi_setup+c_phys t)]
+       B_(kappa,t) e^(-itK)W e^(-isK)||
+ <=delta_release+F_res.
+```
+
+Only unitarity on the first error and right multiplication by the input
+unitary on the second are used. Because X1X2 commutes with Z1Z2,
+[W,K]=0, so the old factor is e^[-i(s+t)K]W. No claim that K commutes
+with H_M or any partially released Hamiltonian is needed.
+
+For the actual full delivered state rho, first apply
+||rho-E rho_OR E*||_1<=d_prep, where rho_OR is its exact **unconditioned**
+old/reference marginal at delivery. Unitary evolution and the output
+embedding preserve this error. For two isometries A,B and a density
+matrix sigma, expansion as
+(A-B)sigma A*+B sigma(A*-B*) gives
+
+```
+||A sigma A*-B sigma B*||_1 <=2||A-B||.
+```
+
+Tensoring the maps with any passive reference preserves their operator
+norm. The resulting complete trace error is therefore less than
+d_prep+2delta_release+2F_res, exactly as stated. The thermal error is not
+multiplied by a huge evolution time, counted twice, or converted into an
+isometry error without justification.
+
+The auxiliary marginal may be Gibbs while the full input is correlated
+with old/reference. The source pure-factor estimate is the appropriate
+one: if epsilon is the bad auxiliary weight, purification followed by the
+good/bad rank-two split gives
+sqrt[epsilon(4-3epsilon)] for the difference from the unnormalized good
+block; replacing that block's old/reference marginal by the unconditioned
+one costs epsilon. Thus
+
+```
+g(epsilon)=epsilon+sqrt[epsilon(4-3epsilon)] <=3 sqrt(epsilon).
+```
+
+The smaller 2epsilon bound would require a product *joint* input and is
+not used. No postselection on the good seed or redefinition of rho_OR
+occurs.
+
+The trace comparison is applied **before** the single-head supported
+isometry theorem. All bad thermal sectors then undergo their actual
+full-qubit unitaries. The infinite output comparison space can contain
+the complete finite device, including its many-head sectors, by appending
+clock vacuum; this embedding is an isometry. No scattering theorem on
+those bad sectors, or infinite many-head dynamics, is needed. Every modeled
+clock, emitter, source, old and reference output remains.
+
+The comparator's packet index is runtime t since the end of release.
+Its profile f_kappa rho_kappa is the actual one for the chosen apparatus,
+common across old columns. Its phase is the one common zeta and the actual
+c_phys t plus setup phase. E0 is already present in the runtime spectral
+profile; adding E0 t again would be incorrect. The old pair ages through
+all of setup and runtime even though the packet uses only t. The composition
+preserves these distinctions.
+
+## 4. Alternative P: exact identity, thermal count, release and budget
+
+The qualified P source adds positive pair complements and onsite pins to
+the literal H_M, yielding on the full qubit space
+
+```
+H_p=K+chi_p I+13Q,
+chi_p=nu+E0+u+4kappa,
+Q=sum_clock n_j+n_A+n_B+(I-n_e).
+```
+
+All-M compatibility can be seen directly: the clock bond complements
+change clock number coefficients to 4J internally and 3J at endpoints;
+the pin prescription then changes every blank defect coefficient to 13.
+Both emitter exits are canceled with their original phases, and its vacancy
+pin supplies the excited-emitter ground. The full scalar chi_p, including
+the u and vacancy reserves, is retained. This is a supplied full-space
+counterterm construction, not a single-head cancellation claim.
+
+At beta=10 the actual auxiliary Gibbs law is a product on all N defect
+qubits, so
+epsilon=1-(1+e^-130)^-N<=N e^-130. Using the new N or the source's larger
+N<10^32 gives epsilon<10^-22 and g(epsilon)<3e-11. An elementary check
+without a numerical program is available: e>8/3 and
+(3/8)^10=59049/1073741824<1/18000 because
+59049*18000=1062882000<1073741824. Therefore
+10^32(3/8)^130<10^32/18000^13<10^-22;
+the latter follows from 18^13>10^15 (18^5>10^6 and 18^3>10^3).
+All N qubits and all many-head sectors are paid.
+
+For the one-unit hold, the ideal seed has exact phase chi_p and old age
+one. The full initial trace estimate remains valid through the hold even
+if the joint state is correlated; no stationarity of the entire joint
+state is presumed. For the one-unit cubic release,
+
+```
+H(r)E=E[K+c_seed+a(r)(u+2kappa)]+(1-a(r))kappa V_seed,
+c_seed=nu+2kappa+E0,       ||V_seed||=sqrt(2),
+integral_0^1 a(r)dr=1/2.
+```
+
+Full-unitary Duhamel against the seed-supported comparison gives
+delta_release<=kappa/sqrt(2). Its scalar is
+c_seed+(u+2kappa)/2. Combining with the hold gives precisely
+
+```
+s=2,
+Phi_setup=chi_p+c_seed+(u+2kappa)/2.
+```
+
+Thus the unhalved trace bound is strictly below
+
+```
+.009664 + .00000002000 + .00000000003
+ = .00966402003 < .009665.
+```
+
+Here 2delta_release<=sqrt(2)kappa<2e-8, and 2F_res<.009664.
+The earlier source's smaller numerical final expression for its older
+runtime is not used. The new result's actual elapsed observation window
+from the delivered preparation state is [2+T,2+2T]. No supply or
+thermalization duration before delivery is being inferred or erased.
+
+The control count is correct: M-1 clock-edge complements, two separate
+source/source controls, two old/source complements, two source-port
+complements and two emitter complements total M+7 pair blocks. There
+are M+3 onsite pins, so the added count is **2M+10**, with no new quantum
+site. Sharing an edge does not merge two independently paid blocks.
+
+The source-A added control sum is
+13-Delta_A+u+2lambda_A=18.956134512551988. Added to its literal runtime
+load 20.332662089993454, it gives **39.288796602545442**. The old-site
+loads double their runtime added values to **3.987514255266680** and
+**2.397277262241192**, with the old edge norm three additional.
+Each new incident control sum is below 19. A unit cubic has peak derivative
+3/2, so its incident slew is below 28.5 and the supplied allowance **30**
+suffices. The runtime added-old-site cap two returns after all controls
+reach zero; it does not hold during preparation.
+
+## 5. Alternative I: conditional interface and staged release
+
+The source's preparation identity is
+
+```
+H_p=K+c_p I+H_aux,
+H_aux=C+H_c+V_c+Delta D >=Delta D,
+ker(H_aux)=span{seed_aux}.
+```
+
+Assuming this source identity, the thermal inference used in the composition
+is valid on the full auxiliary space. Ordered eigenvalues obey
+lambda_j(H_aux)>=Delta d_j(D) by min-max. The defect-count eigenvalues have
+binomial multiplicities on all N=M+3 factors. Applying the scalar exponential
+to those ordered eigenvalues gives
+Z<=sum_k binom(N,k)e^(-beta Delta k)=(1+e^(-beta Delta))^N.
+The zero-energy seed has Gibbs probability 1/Z; hence
+epsilon<=N e^(-beta Delta). This uses no operator monotonicity of the
+exponential, commutation with D, product Gibbs assumption or restriction
+to single-head states.
+
+At beta=100, Delta=1 the source's older conservative N<=5*10^31+3 also
+suffices for the smaller new M. Its quoted thermal ceiling can be checked
+by hand using the preceding (3/8)^10<1/18000:
+
+```
+(5*10^31+3)(3/8)^100
+ < 6*10^31/18000^10 =60/18^10
+ <1/22500000000 =1/150000^2.
+```
+
+For the penultimate inequality, 18^5=1889568>1500000 implies
+18^10>2250000000000>60*22500000000. Thus
+g(epsilon)<=3 sqrt(epsilon)<2e-5. This validates the scalar/count
+substitution; it does not make I's complete source accepted by this review.
+
+The staged phase and residual follow from its explicit supported actions.
+The two held emitter complements each act as
+kappa E-kappa V_j, with the two V_j orthogonal and their phases fixed by
+the installed hopping. Every other added control acts on E as a scalar:
+b_A, b_B for the old/source complements and zero for cold blank fields
+and the emitter vacancy pin. Keeping both emitter complements fully on
+therefore cancels the entire kappa(V_1+V_2) exit during the early stage.
+For its common cubic of duration D_early=10000,
+
+```
+H_early(r)E
+  =E[K+c_seed+2kappa+(b_A+b_B)a_early(r)],
+Phi_early=(c_seed+2kappa)D_early+(b_A+b_B)D_early/2.
+```
+
+This is exact invariance of the comparison seed range for all old inputs,
+not adiabatic following of the actual thermal state. It accumulates old
+age D_early and the displayed scalar. During the final unit cubic of only
+the emitter complements, the supported scalar is c_seed+2kappa a_late
+and the residual is (1-a_late)kappa V_seed. Consequently
+
+```
+delta_release<=kappa/sqrt(2),
+s=10001,
+Phi_setup=(c_seed+2kappa)10000
+            +(b_A+b_B)5000+c_seed+kappa.
+```
+
+These are exactly the composition's formulas. No factor of 10000 belongs
+in the **nominal** late release error, because the early seed residual
+vanishes identically. A real uncanceled hopping during the early stage
+would require its own time integral and could grow with D_early; no
+calibration tolerance or asynchronous completion promise is imported.
+
+Conditional on the source premises, the complete trace bound is below
+
+```
+.009664+.00000002+.00002=.00968402<.009685,
+```
+
+and the elapsed observation window is [10001+T,10001+2T]. The earlier
+single-ramp duration 10000 and its larger error are not confused with this
+two-stage schedule. The common early cubic, not the source's optional
+asynchronous/sequential variant, is the concrete schedule composed here.
+
+The added control count is also correct: four pair complements, three
+positive occupancy compensators, M+2 blank fields and one emitter vacancy
+pin total **M+10**. There is no new quantum site. At source A, the added
+control sum is Delta+b_A=2.993757127633340, giving the peak combined load
+**23.326419217626794**. The preparation old-site loads are the same
+larger values as P; runtime cap two is exceeded during this setup.
+
+For early release, Delta+b_A<3 bounds every relevant incident control
+sum, so its peak incident slew is
+3(Delta+b_A)/(2*10000)<9/20000=.00045<.001.
+The emitter complements are held constant then and add no early derivative.
+For late release their total incident norm at the emitter is 4kappa,
+giving peak slew 6kappa<=6e-8<.001. The two stages join with zero cubic
+endpoint derivatives, so there is no hidden jump. The stated supplied
+allowance **.001** therefore suffices for this exact schedule.
+
+I remains a **pending conditional source premise**. The full interacting
+preparation and staged-release source review belongs to its separate
+worker/decision. This interface check confirms what follows from the pinned
+identities and bounds and checks their compatibility with the new runtime;
+it must not be cited as source qualification of every I assertion.
+
+## 6. Resources, outputs and publication boundary
+
+At kappa=10^-8, T=10^16 and M=5*10^17. The device contains
+500000000000000005 qubits before choosing any passive reference.
+The autonomous runtime interval is [10^16,2*10^16]; the elapsed windows
+are the shifted ones above. At kappa=10^-12 the prescribed clock length
+is 5*10^25. These are sufficient costs in declared Hamiltonian units, not
+physical seconds, optimal devices or practical estimates.
+
+Each route supplies a Gibbs marginal with controls already fully on at
+the declared protocol start. The old/reference state is arbitrary. No
+thermalization dynamics or missing supply-time estimate is claimed. During
+the explicitly controlled setup, the same installed runtime remains
+present. After release all added controls are exactly zero and the actual
+H_M evolves autonomously. A passive retained environment can be included
+in R; a bath/controller that continues interacting would need a new full
+dynamical premise and cannot be silently called passive.
+
+Both sources retain extensive Pauli identity coefficients and signed work
+formulas. Those are distinct from the smaller scalar obtained by acting
+on the seed. Extensive positive projector reserves cancel their diagonal
+Pauli pieces on a blank seed; this does not erase their local block load,
+manufacture, control precision or work account. For exact finite closed
+setup with decreasing positive-control coefficients,
+Tr(rho(r) dH(r)/dr)<=0, and its integral is the actual final minus initial
+mean energy. This remains valid for correlated thermal input in both the
+single release and the two-stage schedule. The composition rightly requires
+the source formulas to remain present in publication and does not turn
+that signed energy balance into free cooling, a recovered controller,
+extractable work or a reset cycle.
+
+The source permissions remain substantial: exact positive counterterms,
+their gains and phases, finite distributed slew/timing, supplied Gibbs
+state, clean isolation after delivery and the exact nominal runtime.
+The actual output includes every modeled qubit/reference factor, but the
+external prescribed drive is not newly modeled as an autonomous quantum
+controller by this theorem. There is no joint calibration/ladder box,
+native preparation, fixed finite-device all-future statement, exact halt,
+arbitrary accuracy, physical Hamiltonian/Record identification or retained
+audit claim.
+
+No numerical source was rerun and no source revision was corrected.
+Root qualification/publication of this composition remains a separate
+decision; I's separate pending decision must remain visible. All writes
+were confined to this review directory. No W, Git, PR, shared checkpoint,
+source theorem, physical axiom, audit result or editable prompt changed.
+There were no model/effort overrides, subdelegation, network calls or
+other-chat messages.

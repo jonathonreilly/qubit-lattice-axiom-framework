@@ -1,0 +1,567 @@
+"""Portable source-exposed author corroboration; import is inert.
+Two preserved programs corroborate local algebra and a scoped counterexample.
+They do not independently re-prove inherited scattering or the ramp theorem.
+"""
+from pathlib import Path
+import gzip
+import hashlib
+import json
+import resource
+import time
+AUDIT_TIMEOUT_SEC = 45
+REPO = Path(__file__).resolve().parents[1]
+INPUT_ROOT = REPO / 'outputs/real_control_autonomous_output_2026_10_17_inputs'
+
+class FrozenInputs:
+    def __init__(self, repo, table_path):
+        self.repo=Path(repo).resolve()
+        self.table=json.loads(Path(table_path).read_text(encoding='utf-8'))
+        self.reads=[]
+    def read_bytes(self, role, logical):
+        row=self.table['roles'][role]['aliases'][str(logical)]
+        rel=Path(row['path'])
+        assert not rel.is_absolute() and '..' not in rel.parts and rel.as_posix()==row['path']
+        path=self.repo/rel
+        assert path.is_file() and not path.is_symlink(), row['path']
+        assert not any(p.is_symlink() for p in path.parents if p!=self.repo and self.repo in p.parents)
+        path.resolve().relative_to(self.repo)
+        stored=path.read_bytes()
+        assert len(stored)==row['bytes'] and hashlib.sha256(stored).hexdigest()==row['sha256'], row['path']
+        assert row['compression'] in ('none','gzip') and 0<=row['raw_bytes']<=16777216
+        raw=gzip.decompress(stored) if row['compression']=='gzip' else stored
+        assert len(raw)==row['raw_bytes'] and hashlib.sha256(raw).hexdigest()==row['raw_sha256'], row['path']
+        self.reads.append({'role':role,'logical':str(logical),'path':row['path'],'kind':'finite declared source/integrity input','stored_sha256':row['sha256'],'raw_sha256':row['raw_sha256']})
+        return raw
+    def read_text(self, role, logical):
+        return self.read_bytes(role,logical).decode('utf-8')
+    def original_program_bytes(self, role):
+        return self.read_bytes(role,'__original_program__')
+    def shared_limits(self):
+        return {'cpu_soft_hard_seconds':list(resource.getrlimit(resource.RLIMIT_CPU)), 'external_wall_cap_seconds':45, 'wall_enforcement':'Required external canonical runner; this class does not implement wall timeout.'}
+    def execution_metadata(self, role):
+        return {'historical_original_limits':self.table['roles'][role]['historical_limits'],'actual_shared_process_limits':self.shared_limits(),'original_program_sha256':hashlib.sha256(self.original_program_bytes(role)).hexdigest(),'interpretation':'Historical source status/receipts remain historical. Current source qualification and actual execution are separate records; no independent science status is inferred.'}
+
+def verify_artifacts():
+    manifest=json.loads((INPUT_ROOT/'ARTIFACT_MANIFEST.json').read_text(encoding='utf-8'))
+    for row in manifest['files']:
+        rel=Path(row['path'])
+        assert not rel.is_absolute() and '..' not in rel.parts and rel.as_posix()==row['path']
+        path=REPO/rel
+        assert path.is_file() and not path.is_symlink(), row['path']
+        assert not any(p.is_symlink() for p in path.parents if p!=REPO and REPO in p.parents)
+        path.resolve().relative_to(REPO)
+        raw=path.read_bytes()
+        assert len(raw)==row['bytes'] and hashlib.sha256(raw).hexdigest()==row['sha256'], row['path']
+
+def run_realifier_author(inputs):
+    'Exact author corroboration only. No inherited scientific program is imported.'
+    from pathlib import Path
+    from fractions import Fraction as F
+    from hashlib import sha256
+    from collections import deque
+    import argparse
+    import json
+    import sys
+    import time
+    pass
+    pass
+    pass
+    pass
+    pass
+    start = time.monotonic()
+    records = []
+
+    def record(name, value):
+        records.append({'test': name, 'result': value})
+
+    def demand(name, condition, detail):
+        record(name, {'satisfied': bool(condition), 'detail': detail})
+        if not condition:
+            raise AssertionError(name)
+
+    def encode(x):
+        if isinstance(x, F):
+            return str(x)
+        if isinstance(x, tuple):
+            return [encode(v) for v in x]
+        if isinstance(x, list):
+            return [encode(v) for v in x]
+        if isinstance(x, dict):
+            return {str(k): encode(v) for k, v in x.items()}
+        return x
+
+    def z(a=0, b=0):
+        return (F(a), F(b))
+
+    def za(x, y):
+        return (x[0] + y[0], x[1] + y[1])
+
+    def zn(x):
+        return (-x[0], -x[1])
+
+    def zs(x, y):
+        return za(x, zn(y))
+
+    def zm(x, y):
+        return (x[0] * y[0] - x[1] * y[1], x[0] * y[1] + x[1] * y[0])
+
+    def zc(x):
+        return (x[0], -x[1])
+
+    def za2(x):
+        return x[0] * x[0] + x[1] * x[1]
+
+    def zero(m, n=None):
+        return [[z() for _ in range(n or m)] for _ in range(m)]
+
+    def eye(m):
+        a = zero(m)
+        for j in range(m):
+            a[j][j] = z(1)
+        return a
+
+    def add(a, b):
+        return [[za(x, y) for x, y in zip(r, s)] for r, s in zip(a, b)]
+
+    def neg(a):
+        return [[zn(x) for x in r] for r in a]
+
+    def sub(a, b):
+        return add(a, neg(b))
+
+    def scale(a, q):
+        return [[zm(x, q) for x in r] for r in a]
+
+    def mul(a, b):
+        return [[sumz((zm(a[i][k], b[k][j]) for k in range(len(b)))) for j in range(len(b[0]))] for i in range(len(a))]
+
+    def sumz(seq):
+        ans = z()
+        for x in seq:
+            ans = za(ans, x)
+        return ans
+
+    def adj(a):
+        return [[zc(a[j][i]) for j in range(len(a))] for i in range(len(a[0]))]
+
+    def conj(a):
+        return [[zc(x) for x in r] for r in a]
+
+    def kron(a, b):
+        return [[zm(a[i // len(b)][j // len(b[0])], b[i % len(b)][j % len(b[0])]) for j in range(len(a[0]) * len(b[0]))] for i in range(len(a) * len(b))]
+    ok = False
+    try:
+        manifest = json.loads(inputs.read_text('realifier_author', 'SOURCE_MANIFEST.json'))
+        hashes = []
+        for entry in manifest['entries']:
+            digest = sha256(inputs.read_bytes('realifier_author', entry['snapshot'])).hexdigest()
+            demand('snapshot:' + entry['snapshot'], digest == entry['sha256'], digest)
+            hashes.append({'path': entry['snapshot'], 'sha256': digest})
+        pass
+        pre_bound = []
+        pass
+        inp = json.loads(inputs.read_text('realifier_author', 'SCALAR_INPUTS.json'))
+        p = {k: F(v) for k, v in inp.items()}
+        q = p['q0']
+        J = p['J']
+        kap = p['kappa_max']
+        nu = p['nu']
+        ck = (q * q - 1) / (q * q + 1)
+        sk = 2 * q / (q * q + 1)
+        c = ck * ck - sk * sk
+        s = 2 * ck * sk
+        d = 1 + c + s
+        E0 = 2 * J * (1 - ck)
+        demand('central_phase_unit_circle', c * c + s * s == 1, {'cos_phi': c, 'sin_phi': s})
+        demand('central_phase_and_positive_onsite', c > 0 and s > 0 and (d < 3) and (E0 > 3 * kap), {'d': d, 'E0_minus_3kappa_max': E0 - 3 * kap})
+        jf = [[z(), z(-1)], [z(1), z()]]
+        vp = [[z(1)], [z(0, -1)]]
+        vm = conj(vp)
+        demand('chiral_flag_eigenvalues', mul(jf, vp) == scale(vp, z(0, 1)) and mul(jf, vm) == scale(vm, z(0, -1)), {'J': jf, 'v_plus_unnormalized': vp, 'v_minus_unnormalized': vm})
+        Pplus = scale(sub(eye(2), scale(jf, z(0, 1))), z(F(1, 2)))
+        Pminus = sub(eye(2), Pplus)
+        e0flag = [[z(1)], [z()]]
+        wp = mul(adj(mul(Pplus, e0flag)), mul(Pplus, e0flag))[0][0]
+        wm = mul(adj(mul(Pminus, e0flag)), mul(Pminus, e0flag))[0][0]
+        demand('product_flag_half_weights', wp == z(F(1, 2)) and wm == z(F(1, 2)), {'plus': wp, 'minus': wm})
+        H = zero(3)
+        H[0][0] = z(E0)
+        H[1][0] = H[0][1] = z(kap)
+        H[2][0] = z(-kap * c, -kap * s)
+        H[0][2] = zc(H[2][0])
+        A = [[z(x[0]) for x in r] for r in H]
+        B = [[z(x[1]) for x in r] for r in H]
+        HR = add(kron(A, eye(2)), kron(B, jf))
+        Tp = kron(eye(3), vp)
+        Tm = kron(eye(3), vm)
+        demand('six_by_six_sector_intertwining', HR == adj(HR) and mul(HR, Tp) == mul(Tp, H) and (mul(HR, Tm) == mul(Tm, conj(H))), {'H': H, 'HR': HR})
+        expected = {(2, 0): kap, (3, 1): kap, (4, 0): -kap * c, (5, 1): -kap * c, (4, 1): kap * s, (5, 0): -kap * s}
+        demand('six_real_edge_signs', all((HR[i][j] == z(h) for (i, j), h in expected.items())), {str(edge): h for edge, h in expected.items()})
+        wrong = [r[:] for r in HR]
+        wrong[4][1] = wrong[1][4] = z(-kap * s)
+        defect = sub(mul(wrong, Tp), mul(Tp, H))
+        demand('wrong_cross_sign_is_detected', any((x != z() for r in defect for x in r)), {'nonzero_defect_entries': [[i, j, x] for i, r in enumerate(defect) for j, x in enumerate(r) if x != z()]})
+        for sign in (-1, 1):
+            Q = zero(4)
+            Q[1][1] = Q[2][2] = z(1)
+            Q[3][3] = z(2)
+            Q[1][2] = Q[2][1] = z(sign)
+            demand('positive_cell_polynomial_sign_' + str(sign), mul(Q, Q) == scale(Q, z(2)) and Q == adj(Q), {'Q': Q, 'spectrum_by_polynomial_and_trace': [0, 0, 2, 2]})
+        coeff = [F(0)] * 6
+        for (i, j), h in expected.items():
+            coeff[i] += abs(h)
+            coeff[j] += abs(h)
+        coeff[0] += E0 - kap * d
+        coeff[1] += E0 - kap * d
+        coeff[2] -= kap
+        coeff[3] -= kap
+        coeff[4] -= kap * (c + s)
+        coeff[5] -= kap * (c + s)
+        scalar = 2 * kap * d
+        demand('full_occupation_identity', coeff == [E0, E0, F(0), F(0), F(0), F(0)], {'remaining_number_coefficients': coeff, 'contact_vacancy_scalar': scalar, 'complete_scalar': 2 * nu + scalar, 'difference_from_original_physical_scalar': nu + 2 * kap * (c + s)})
+        demand('seed_second_moment', kap * kap + (kap * c) ** 2 + (kap * s) ** 2 == 2 * kap * kap, {'variance_addition': 2 * kap * kap})
+        X = [[z(), z(1)], [z(1), z()]]
+        Z = [[z(1), z()], [z(), z(-1)]]
+        K = add(scale(eye(4), z(2)), kron(Z, Z))
+        P = kron(X, X)
+        Wgate = add(scale(eye(4), z(F(9, 25), F(12, 25))), scale(P, z(F(-16, 25), F(12, 25))))
+        demand('literal_target_unitary_and_old_commutation', mul(adj(Wgate), Wgate) == eye(4) and mul(K, Wgate) == mul(Wgate, K), {'K': K, 'W': Wgate})
+        uplus = [[z()], [z(1)], [z(1)], [z()]]
+        uminus = [[z()], [z(1)], [z(-1)], [z()]]
+        omega = z(F(-7, 25), F(24, 25))
+        demand('same_energy_real_old_falsifier', mul(K, uplus) == uplus and mul(K, uminus) == uminus and (mul(Wgate, uplus) == scale(uplus, omega)) and (mul(Wgate, uminus) == uminus), {'u_plus_unnormalized': uplus, 'u_minus_unnormalized': uminus, 'omega_plus': omega})
+        separation_squared = za2(zs(omega, z(1))) / 2
+        lower_squared = separation_squared / 4
+        demand('common_output_separation', separation_squared == F(32, 25) and lower_squared == F(8, 25) and (lower_squared > F(9, 16) ** 2), {'environment_separation_squared': separation_squared, 'minimax_lower_bound_squared': lower_squared})
+
+        def coord(rail, n):
+            if rail == 0:
+                if n == 0:
+                    return (0, 1, 1)
+                if n == 1:
+                    return (1, 1, 1)
+                if n == 2:
+                    return (1, 1, 2)
+                if n == 3:
+                    return (1, 1, 3)
+                if 4 <= n <= 10:
+                    return (n - 2, 1, 3)
+                if n == 11:
+                    return (8, 1, 2)
+                if n == 12:
+                    return (8, 1, 1)
+                if n == 13:
+                    return (9, 1, 1)
+                if n == 14:
+                    return (9, 2, 1)
+                return (n - 5, 2, 1)
+            if n <= 9:
+                return (n, 1, -1)
+            if n == 10:
+                return (9, 2, -1)
+            if n == 11:
+                return (9, 3, -1)
+            if n == 12:
+                return (9, 3, 0)
+            if n == 13:
+                return (8, 3, 0)
+            if n == 14:
+                return (8, 3, 1)
+            return (8, n - 11, 1)
+        vertices = {'old1': (0, 0, 0), 'old2': (1, 0, 0), 'A': (0, 1, 0), 'B': (1, 1, 0), 'e0': (8, 2, 1), 'e1': (9, 3, 1)}
+        for rail in range(2):
+            for n in range(20):
+                vertices[f'c{n},{rail}'] = coord(rail, n)
+        edges = [('old1', 'old2'), ('old1', 'A'), ('old2', 'B'), ('A', 'B')]
+        head_edges = []
+        for rail in range(2):
+            edges.extend([('A', f'c0,{rail}'), ('B', f'c1,{rail}')])
+            head_edges.extend([(f'c{n},{rail}', f'c{n + 1},{rail}') for n in range(19)])
+            head_edges.append((f'e{rail}', f'c12,{rail}'))
+            for target in range(2):
+                head_edges.append((f'e{rail}', f'c14,{target}'))
+        edges += head_edges
+        demand('cubic_NN_embedding', len(vertices) == len(set(vertices.values())) and all((sum((abs(x - y) for x, y in zip(vertices[a], vertices[b]))) == 1 for a, b in edges)), {'vertices': vertices, 'installed_support_edges': edges, 'vertex_count': len(vertices), 'edge_count': len(edges)})
+        graph = {name: set() for name in vertices}
+        for a, b in head_edges:
+            graph[a].add(b)
+            graph[b].add(a)
+        dist = {'e0': 0}
+        todo = deque(['e0'])
+        while todo:
+            a = todo.popleft()
+            for b in graph[a]:
+                if b not in dist:
+                    dist[b] = dist[a] + 1
+                    todo.append(b)
+        demand('first_omitted_distance_prefix_M19', dist['c19,0'] == 6 and dist['c19,1'] == 6, {'retained_M': 19, 'distance_to_first_omitted_each_rail': [dist['c19,0'], dist['c19,1']], 'general_formula': 'M-13, proved by no attachment beyond index14'})
+        demand('infinite_tail_symbolic_conditions', coord(0, 15) == (10, 2, 1) and coord(1, 15) == (8, 4, 1), {'rail0_tail': '(n-5,2,1), n>=15', 'rail1_tail': '(8,n-11,1), n>=15', 'proof': 'Each step has length1; tails have respectively x>=10,y=2 and x=8,y>=4, and no core site has those tail coordinates.'})
+        loads = {'old1_added': 2 * p['gA'], 'old2_added': 2 * p['gB'], 'old_edge_separate': F(3), 'A': p['DeltaA'] + 2 * p['hAB'] + p['u'] + 2 * p['gA'] + 4 * p['lambdaA'], 'B': p['DeltaB'] + 2 * p['hAB'] + p['u'] + 2 * p['gB'] + 4 * p['lambdaB'], 'each_c0': 3 * J + 2 * p['lambdaA'] + p['mu0'], 'each_c1': 4 * J + 2 * p['lambdaB'] + nu, 'ordinary_clock': 4 * J, 'each_c12': 4 * J + 3 * kap, 'each_c14': 4 * J + 3 * kap * (c + s), 'each_emitter': E0 + kap * d, 'each_far_end': 3 * J}
+        demand('exact_source_loads', loads['A'] == F('27.936224853155858') and loads['B'] == F('22.228906875353305'), loads)
+        v = p['v']
+        C = p['T_scaled']
+        sig = p['sigma']
+        reverse = p['seed_error'] + F(1001) / (v * C) + F(5, 2) * sig + F(1, 100) / (v * C) + F(5, 2) * sig + F(3, 2) / (v * C)
+        demand('reverse_branch_complete_budget', reverse == F('0.0431054') and reverse < F('0.044'), {'seed_plus_incoming_plus_normalization_plus_localized': reverse})
+        error_squared = (p['forward_error'] ** 2 + F('0.044') ** 2) / 2
+        demand('orthogonal_branch_error', error_squared == F(61, 62500) and error_squared < F(8, 250) ** 2, {'branch_error_squared': error_squared})
+        lower_coarse = F(9, 16) - F(8, 250)
+        demand('strict_full_output_falsifier', lower_coarse > F('0.53') and lower_coarse - F('0.001') > F('0.52'), {'infinite_strict_lower_bound': lower_coarse, 'finite_strict_lower_bound': lower_coarse - F('0.001')})
+        Tmin = C / (kap * kap)
+        margin = F(22, 5) * Tmin - 22
+        finite = F(32, 5) * F(3, 8) ** 9
+        demand('finite_buffer_and_error', margin > 0 and finite == F(19683, 20971520) and (finite < F('0.001')), {'minimum_T': Tmin, 'minimum_margin': margin, 'finite_error_ceiling': finite, 'qubits': '2 ceil(50T)+6'})
+        record('actual_dimensions', {'maximum_matrix_dimension': 6, 'graph_vertices': len(vertices), 'scientific_parameter_samples': 0, 'dynamics_steps': 0, 'quadrature_nodes': 0})
+        ok = True
+    finally:
+        report = encode({'status': 'completed' if ok else 'failed', 'author_corroboration_only': True, 'executed_primary_sha256': sha256(Path(__file__).read_bytes()).hexdigest(), 'actual_prelaunch_binding': 'See separate root-owned actual canonical execution record; historical receipts are not this run.', 'program_wall_seconds': time.monotonic() - start, 'records': records, 'original_program_sha256': sha256(inputs.original_program_bytes('realifier_author')).hexdigest()})
+        report['_canonical_execution'] = inputs.execution_metadata('realifier_author')
+        if not ok:
+            print(json.dumps(report, indent=2), flush=True)
+    return report
+
+
+def run_preparation_author(inputs):
+    'Exact bounded corroboration of a real, positive local preparation route.\n\nThis does not import or execute any inherited checker, integrate dynamics,\ncertify scattering anew, or prove an interval by point sampling. Symbolic\nkappa and exact rational coefficients check the new finite local identities.\nThe all-length and all-time claims have separate analytical proofs.\n'
+    import hashlib
+    import json
+    import platform
+    import sys
+    import time
+    from pathlib import Path
+    import sympy as sp
+    START = time.monotonic()
+    pass
+    p = {k: sp.Rational(v) for k, v in json.loads(inputs.read_text('preparation_author', 'inputs/parameters.json'))['exact_parameters'].items()}
+    kappa = sp.Symbol('kappa', positive=True)
+    J, E0 = (p['J'], p['epsilon'])
+    c = p['cos_k'] ** 2 - p['sin_k'] ** 2
+    s = 2 * p['cos_k'] * p['sin_k']
+    d = 1 + c + s
+    nu = -p['mu1']
+    kp = sp.Rational(1, 10 ** 8)
+    cR = 2 * nu + 2 * kappa * d
+    cseed = E0 + cR
+    r = 4 * J + 3 * kappa * d
+    Ciso = cseed + r
+    beta = E0 - kappa
+    Aiso = 4 * J + 4 * kappa * d + beta
+    checks = []
+
+    def check(name, condition, detail=None):
+        assert bool(condition), name
+        checks.append({'name': name, 'passed': True, 'detail': detail})
+
+    def zero(x):
+        if isinstance(x, sp.MatrixBase):
+            return all((sp.simplify(v) == 0 for v in x))
+        return sp.expand(x) == 0
+
+    def clean(a):
+        return {key: sp.expand(v) for key, v in a.items() if sp.expand(v) != 0}
+
+    def add(*terms):
+        out = {}
+        for term in terms:
+            for key, value in term.items():
+                out[key] = out.get(key, 0) + value
+        return clean(out)
+
+    def scale(a, value):
+        return clean({key: value * v for key, v in a.items()})
+
+    def pauli(*sites):
+        return {tuple(sorted(sites)): sp.Integer(1)}
+    I = {(): sp.Integer(1)}
+
+    def number(i):
+        return add(scale(I, sp.Rational(1, 2)), scale(pauli((i, 'Z')), -sp.Rational(1, 2)))
+
+    def vacancy(i):
+        return add(I, scale(number(i), -1))
+
+    def hop(i, j):
+        return scale(add(pauli((i, 'X'), (j, 'X')), pauli((i, 'Y'), (j, 'Y'))), sp.Rational(1, 2))
+
+    def density(i, j):
+        return scale(add(I, scale(pauli((i, 'Z')), -1), scale(pauli((j, 'Z')), -1), pauli((i, 'Z'), (j, 'Z'))), sp.Rational(1, 4))
+
+    def controlled_flip(i, j):
+        return scale(add(I, scale(pauli((i, 'Z')), -1), pauli((j, 'X')), scale(pauli((i, 'Z'), (j, 'X')), -1)), sp.Rational(1, 2))
+
+    def qblock(i, j, h, a):
+        return add(scale(add(number(i), number(j)), a), scale(hop(i, j), h))
+
+    def apply(a, state):
+        out = {}
+        for word, value in a.items():
+            dest, phase = (state, sp.Integer(1))
+            for index, letter in word:
+                bit = state >> index & 1
+                if letter == 'Z':
+                    phase *= 1 - 2 * bit
+                elif letter == 'X':
+                    dest ^= 1 << index
+                elif letter == 'Y':
+                    dest ^= 1 << index
+                    phase *= sp.I * (1 - 2 * bit)
+                else:
+                    raise AssertionError('unknown Pauli')
+            out[dest] = out.get(dest, 0) + phase * value
+        return clean(out)
+
+    def overlap(v, w):
+        return sp.expand(sum((sp.conjugate(x) * w.get(b, 0) for b, x in v.items())))
+    check('exact_trigonometry', c * c + s * s == 1)
+    check('positive_c_s_and_d', c > 0 and s > 0 and (d < 3))
+    check('all_family_onsite_coefficients_positive', E0 - kp * d > 0 and E0 - kp > 0, 'affine decreasing in kappa; checked at exact upper endpoint')
+    check('isolation_norm_sum_less_than_one_seventh', Aiso.subs(kappa, kp) < sp.Rational(1, 7))
+    check('supported_shift_less_than_one_eighth', r.subs(kappa, kp) < sp.Rational(1, 8))
+    X = sp.Matrix([[0, 1], [1, 0]])
+    Z = sp.diag(1, -1)
+    Id2 = sp.eye(2)
+    K = 2 * sp.eye(4) + sp.kronecker_product(Z, Z)
+    W = ((9 + 12 * sp.I) * sp.eye(4) + (-16 + 12 * sp.I) * sp.kronecker_product(X, X)) / 25
+    check('literal_K_W_unitarity_and_commutation', zero(W.H * W - sp.eye(4)) and zero(K * W - W * K))
+    w, lam = sp.symbols('w lam', positive=True)
+    cell = sp.Matrix([[0, 0, 0, 0], [0, w, w, 0], [0, w, w, 0], [0, 0, 0, 2 * w]])
+    cell_minus = cell.copy()
+    cell_minus[1, 2] = cell_minus[2, 1] = -w
+    poly = lam ** 2 * (lam - 2 * w) ** 2
+    check('positive_real_cells_and_complements_full_four_space', all((zero((mat - lam * sp.eye(4)).det() - poly) for mat in (cell, cell_minus, 2 * w * sp.eye(4) - cell, 2 * w * sp.eye(4) - cell_minus))), 'spectrum 0,0,2w,2w; w>=0')
+    theta1, theta2, theta3 = (sp.pi / 4, sp.pi / 2, sp.pi / 2)
+    E01 = sp.Matrix([[0, 1, 0], [1, 0, 0], [0, 0, 0]])
+    E12 = sp.Matrix([[0, 0, 0], [0, 0, 1], [0, 1, 0]])
+    P1, P2, P3 = (sp.eye(3) + E01, sp.eye(3) - E12, sp.diag(0, 0, 1))
+    U1 = sp.exp(-sp.I * theta1) * (sp.eye(3) + (sp.cos(theta1) - 1) * E01 ** 2 - sp.I * sp.sin(theta1) * E01)
+    U2 = sp.exp(-sp.I * theta2) * (sp.eye(3) + (sp.cos(theta2) - 1) * E12 ** 2 + sp.I * sp.sin(theta2) * E12)
+    U3 = sp.diag(1, 1, sp.exp(-sp.I * theta3))
+    seed = sp.Matrix([1, 0, 0])
+    chiral = sp.Matrix([1, 0, -sp.I]) / sp.sqrt(2)
+    check('three_real_positive_pulses_exact_chiral_state_and_common_phase', zero(U3 * U2 * U1 * seed - sp.exp(-3 * sp.I * sp.pi / 4) * chiral))
+    check('pulse_generators_positive_on_core', sorted(P1.eigenvals()) == [0, 1, 2] and sorted(P2.eigenvals()) == [0, 1, 2] and (sorted(P3.eigenvals()) == [0, 1]))
+    wrongU2 = sp.exp(-sp.I * theta2) * (sp.eye(3) + (sp.cos(theta2) - 1) * E12 ** 2 - sp.I * sp.sin(theta2) * E12)
+    wrong = sp.simplify(sp.exp(3 * sp.I * sp.pi / 4) * U3 * wrongU2 * U1 * seed)
+    check('wrong_exchange_sign_selects_orthogonal_chirality', zero((chiral.H * wrong)[0]) and zero(wrong.H * wrong - sp.eye(1)))
+    x = sp.Symbol('x', real=True)
+    q = 30 * x * x * (1 - x) ** 2
+    up = 3 * x * x - 2 * x ** 3
+    check('pulse_area_and_C1_endpoints', sp.integrate(q, (x, 0, 1)) == 1 and all((v.subs(x, j) == 0 for v in (q, sp.diff(q, x)) for j in (0, 1))))
+    check('cubic_ramp_areas_and_C1_endpoints', sp.integrate(up, (x, 0, 1)) == sp.Rational(1, 2) and up.subs(x, 0) == 0 and (up.subs(x, 1) == 1) and all((sp.diff(up, x).subs(x, j) == 0 for j in (0, 1))))
+    check('exact_pulse_peak_and_slew', q.subs(x, sp.Rational(1, 2)) == sp.Rational(15, 8) and zero(sp.diff(q, x).subs(x, (3 - sp.sqrt(3)) / 6) - 10 * sp.sqrt(3) / 3))
+    check('ramp_derivative_bound', sp.diff(up, x).subs(x, sp.Rational(1, 2)) == sp.Rational(3, 2))
+    check('finite_control_load_and_work_ceilings', sp.Rational(1, 7) + 45 * sp.Rational(22, 7) / 16 < 9 and 10 * sp.Rational(22, 7) * sp.Rational(7, 4) / 3 < 20 and (2 * sp.Rational(1, 7) + 165 * sp.Rational(22, 7) / 16 < 33), 'uses elementary pi<22/7 and sqrt(3)<7/4, not floating-point ceilings')
+    fixtures = []
+    for M in (16, 17):
+        old1, old2, A, B, e0, e1 = range(6)
+        clock = lambda n, q: 6 + q * M + n
+        m = clock(14, 0)
+        blocks = []
+        loads = {}
+
+        def block(name, op, norm, support):
+            blocks.append((name, op, norm, tuple(support)))
+            for site in support:
+                loads[site] = loads.get(site, 0) + norm
+        block('DeltaA', scale(number(A), p['DeltaA']), p['DeltaA'], (A,))
+        block('DeltaB', scale(number(B), p['DeltaB']), p['DeltaB'], (B,))
+        block('source_hop', qblock(A, B, -p['t'], p['t']), 2 * p['t'], (A, B))
+        block('source_density', scale(density(A, B), p['u']), p['u'], (A, B))
+        for source, old, g in ((A, old1, p['gA']), (B, old2, p['gB'])):
+            block('old_contact', scale(controlled_flip(source, old), g), 2 * g, (source, old))
+        for rail in (0, 1):
+            for n in range(M - 1):
+                block('clock_bond', qblock(clock(n, rail), clock(n + 1, rail), -J, J), 2 * J, (clock(n, rail), clock(n + 1, rail)))
+            for n in (0, M - 1):
+                block('clock_endpoint', scale(number(clock(n, rail)), J), J, (clock(n, rail),))
+            for n, source, lc in ((0, A, p['lambdaA']), (1, B, p['lambdaB'])):
+                block('clock_source', scale(controlled_flip(clock(n, rail), source), lc), 2 * lc, (clock(n, rail), source))
+            block('mu0', scale(number(clock(0, rail)), p['mu0']), p['mu0'], (clock(0, rail),))
+            block('nu_vacancy', scale(vacancy(clock(1, rail)), nu), nu, (clock(1, rail),))
+        edges = [(e0, clock(12, 0), kappa, kappa), (e1, clock(12, 1), kappa, kappa), (e0, m, -kappa * c, kappa * c), (e1, clock(14, 1), -kappa * c, kappa * c), (e1, m, kappa * s, kappa * s), (e0, clock(14, 1), -kappa * s, kappa * s)]
+        for i, j, h, a in edges:
+            block('emitter_bond', qblock(i, j, h, a), 2 * a, (i, j))
+        for emit in (e0, e1):
+            block('emitter_onsite', scale(number(emit), E0 - kappa * d), E0 - kappa * d, (emit,))
+        for rail in (0, 1):
+            block('emitter_vacancy12', scale(vacancy(clock(12, rail)), kappa), kappa, (clock(12, rail),))
+            block('emitter_vacancy14', scale(vacancy(clock(14, rail)), kappa * (c + s)), kappa * (c + s), (clock(14, rail),))
+        oldK = add(scale(I, 2), pauli((old1, 'Z'), (old2, 'Z')))
+        HR = add(oldK, *(b[1] for b in blocks))
+        isolated_edges = edges + [(m, clock(13, 0), -J, J), (m, clock(15, 0), -J, J)]
+        complements = [add(scale(I, 2 * a), scale(qblock(i, j, h, a), -1)) for i, j, h, a in isolated_edges]
+        R = add(*complements, scale(number(m), beta))
+        Hiso = add(HR, R)
+        columns = []
+        exits = []
+        for oldbits in range(4):
+            old_energy = 2 + (1 - 2 * (oldbits >> old1 & 1)) * (1 - 2 * (oldbits >> old2 & 1))
+            for position in (e0, m, e1):
+                basis = oldbits | 1 << position
+                result = apply(Hiso, basis)
+                check(f'M{M}_core_old{oldbits}_position{position}_full_Pauli_action', clean(add(result, {basis: -old_energy - Ciso})) == {})
+                columns.append(basis)
+            old_exits = []
+            for emit in (e0, e1):
+                basis = oldbits | 1 << emit
+                residual = add(apply(HR, basis), {basis: -old_energy - cseed})
+                residual_R = add(apply(R, basis), {basis: -r})
+                check(f'M{M}_seed_old{oldbits}_emit{emit}_supported_residual', add(residual, residual_R) == {})
+                old_exits.append(residual)
+            gram = sp.Matrix([[overlap(v, w) for w in old_exits] for v in old_exits])
+            check(f'M{M}_old{oldbits}_complete_rail_exit_Gram', zero(gram - 2 * kappa * kappa * sp.eye(2)))
+            exits.append(gram)
+        omitted_pin = add(HR, *complements)
+        bad = apply(omitted_pin, 1 << m)
+        check(f'M{M}_omit_pin_nonflat_discriminator', bad.get(1 << m) - (3 + Ciso) == -beta)
+        alphaR = 2 + (p['DeltaA'] + p['DeltaB'] + p['gA'] + p['gB']) / 2 + p['t'] + p['u'] / 4 + 2 * J * M + p['lambdaA'] + p['lambdaB'] + p['mu0'] + nu + E0 + 2 * kappa * d
+        alphaIso = 2 * J + 2 * kappa * d + beta / 2
+        total_norm = p['DeltaA'] + p['DeltaB'] + 2 * p['t'] + p['u'] + 2 * (p['gA'] + p['gB']) + 4 * J * M + 4 * (p['lambdaA'] + p['lambdaB']) + 2 * p['mu0'] + 2 * nu + 2 * E0 + 4 * kappa * d
+        check(f'M{M}_full_space_identity_coefficients', zero(HR[()] - alphaR) and zero(R[()] - alphaIso))
+        check(f'M{M}_positive_runtime_block_counts', len(blocks) == 2 * M + 28 and sum((len(b[3]) == 2 for b in blocks)) == 2 * M + 12)
+        check(f'M{M}_runtime_positive_norm_sum', zero(sum((b[2] for b in blocks)) - total_norm))
+        rload = {}
+        for i, j, h, a in isolated_edges:
+            rload[i] = rload.get(i, 0) + 2 * a
+            rload[j] = rload.get(j, 0) + 2 * a
+        rload[m] += beta
+        check(f'M{M}_isolation_positive_norm_sum', zero(sum((2 * a for i, j, h, a in isolated_edges)) + beta - Aiso))
+        check(f'M{M}_old_source_untouched', all((rload.get(i, 0) == 0 for i in (old1, old2, A, B))))
+        check(f'M{M}_old_added_incident_cap', loads[old1] < 2 and loads[old2] < 2)
+        check(f'M{M}_emitter_runtime_incident_loads', zero(loads[e0] - E0 - kappa * d) and zero(loads[e1] - E0 - kappa * d))
+        check(f'M{M}_mediator_runtime_incident_load', zero(loads[m] - 4 * J - 3 * kappa * (c + s)))
+        check(f'M{M}_combined_mediator_load', zero(loads[m] + rload[m] - (8 * J + E0 + 5 * kappa * (c + s) - kappa)))
+        check(f'M{M}_combined_emitter_loads', all((zero(loads[e] + rload[e] - E0 - 3 * kappa * d) for e in (e0, e1))))
+        fixtures.append({'clock_sites_per_rail': M, 'physical_qubits': 2 * M + 6, 'dense_Hilbert_space_allocated': False, 'maximum_dense_dimension': 4, 'core_seed_columns': len(columns), 'Pauli_terms_runtime': len(HR), 'Pauli_terms_isolator': len(R), 'runtime_blocks_excluding_K': len(blocks), 'alpha_R': str(alphaR), 'alpha_isolator': str(alphaIso), 'runtime_block_norm_sum_excluding_K': str(total_norm), 'source_A_load': str(loads[A]), 'source_B_load': str(loads[B])})
+    coordinates = {'e0': (8, 2, 1), 'e1': (9, 3, 1), 'm': (9, 2, 1), 'c12,0': (8, 1, 1), 'c12,1': (9, 3, 0), 'c14,1': (8, 3, 1), 'c13,0': (9, 1, 1), 'c15,0': (10, 2, 1)}
+    local_edges = [('e0', 'c12,0'), ('e1', 'c12,1'), ('e0', 'm'), ('e1', 'c14,1'), ('e1', 'm'), ('e0', 'c14,1'), ('m', 'c13,0'), ('m', 'c15,0')]
+    check('all_eight_isolation_edges_and_pulse_edges_ordinary_NN', all((sum((abs(a - b) for a, b in zip(coordinates[i], coordinates[j]))) == 1 for i, j in local_edges)))
+    check('eight_local_sites_distinct', len(set(coordinates.values())) == 8)
+    check('five_unit_supported_scalar_phase', zero(2 * (cseed + r / 2) + 3 * Ciso - (5 * cseed + 4 * r)))
+    check('full_identity_integrated_pulse_scalar', sp.Rational(3, 2) * (theta1 + theta2) + theta3 / 2 == 11 * sp.pi / 8)
+    check('ramp_error_and_complete_trace_ceiling', 2 * kp < sp.Rational(2, 10 ** 8) + sp.Rational(1, 10 ** 30) and 2 * (sp.Rational(4832, 10 ** 6) + 2 * kp) == sp.Rational(966404, 10 ** 8), 'sqrt(2)*kappa < 2*kappa <= 2e-8; final trace ceiling .00966404')
+    out = {'status': 'exact local corroboration passed; conditional theorem still requires separate review', 'checks': checks, 'fixtures': fixtures, 'exact_constants': {'c': str(c), 's': str(s), 'd': str(d), 'E0': str(E0), 'cR': str(cR), 'cseed': str(cseed), 'r': str(r), 'Ciso': str(Ciso), 'Aiso': str(Aiso), 'setup_error_upper': 'sqrt(2)*kappa', 'setup_scalar': '5*cseed+4*r+3*pi/4'}, 'limits': {'cpu_soft_hard_seconds': inputs.shared_limits()['cpu_soft_hard_seconds'], 'external_wall_seconds': inputs.shared_limits()['external_wall_cap_seconds'], 'max_dense_dimension': 4, 'sparse_clock_lengths': [16, 17], 'max_physical_qubits': 40, 'seed_columns_per_fixture': 12, 'scientific_point_grids': 0, 'optimizers': 0, 'quadrature': 0, 'dynamics_steps': 0, 'inherited_scientific_checker_replays': 0, 'symbolic_kappa': True}, 'runtime': {'python': sys.version, 'executable': sys.executable, 'platform': platform.platform(), 'sympy': sp.__version__, 'elapsed_seconds_after_import': time.monotonic() - START}, 'executed_source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(), 'scope': 'Finite exact corroboration and discriminators; not an independent scattering replay or a substitute for all-M analytical proof.'}
+    out['_canonical_execution'] = inputs.execution_metadata('preparation_author')
+    out['historical_check_interpretation'] = {'ramp_error_and_complete_trace_ceiling': 'Original first comparison is budget arithmetic only, not independent ramp validation. Gram/Duhamel proof and substantive Gram/profile identities supply the ramp support. Mathematical clause and check count are unchanged.'}
+    return out
+
+def main():
+    assert __debug__, 'Normal Python assertions must be active; no -O/PYTHONOPTIMIZE.'
+    resource.setrlimit(resource.RLIMIT_CPU,(30,30))
+    started=time.monotonic()
+    verify_artifacts()
+    inputs=FrozenInputs(REPO,INPUT_ROOT/'INPUT_MAP.json')
+    reports={'realifier_author':run_realifier_author(inputs),'preparation_author':run_preparation_author(inputs)}
+    output={'scope':'Two source-exposed author corroborations only; original narrow counterexample uses 10^6/kappa^2. New preparation composition uses separately qualified resonance premise. Historical ramp-budget first clause is arithmetic, not independent ramp validation.', 'reports':reports, 'actual_shared_process_limits':inputs.shared_limits(),'maximum_dense_dimension':6,'maximum_graph_vertices':46,'elapsed_seconds':time.monotonic()-started,'input_sha256':{name:hashlib.sha256((REPO/name).read_bytes()).hexdigest() for name in AUDIT_INPUT_PATHS},'resolved_reads':inputs.reads,'integrity_reads':'Artifact/source manifests, exact source snapshots, originals and executing-primary self-hashes; no historical absolute path fallback. Scientific scalar/parameter inputs are separately identified by the roles.','limits':'No huge apparatus, dynamics, Gibbs evolution, calibration box, parameter grid, inherited checker replay, native supply, independent theorem review or retained audit.'}
+    (REPO/'outputs/real_control_autonomous_output_2026_10_17.json').write_text(json.dumps(output,indent=2)+'\n',encoding='utf-8')
+    print(json.dumps({'status':'completed source-exposed corroboration','author_bodies':2,'shared_limits':inputs.shared_limits(),'maximum_dense_dimension':6,'weak_historical_clause':'budget arithmetic only'},indent=2))
+    print('per_element: checked positive real local cells and explicit signed-core identities; no native physical realization was executed.')
+    print('per_site: checked finite site loads and ordinary NN prefixes; arbitrary-size geometry follows the separately preserved proof.')
+    print('per_mode: checked chiral sectors, literal old witnesses and local exit Gram identities; inherited spectral modes were not replayed.')
+    print('per_block: checked exact finite local matrices and sparse Pauli columns; the supported ramp theorem is analytical, not the budget clause.')
+    print('lattice_wide: checked and not executed — enormous finite/infinite dynamics were not simulated; full-output horizons use the preserved analytical premises.')
+
+AUDIT_INPUT_PATHS = ('.claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/canonical/executed_sources/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt', '.claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/qualification/ACCEPTANCE.json.txt', '.claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/qualification/QUALIFICATION.md.txt', 'docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md', 'docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md', 'docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md', 'docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md', 'docs/WRITING_VOICE_GUIDE_2026-04-25.md', 'docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md', 'docs/ai_methodology/SCIENCE_WORKFLOW.md', 'docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md', 'docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md', 'docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md', 'docs/ai_methodology/skills/physics-loop/references/DELIVERY.md', 'docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md', 'docs/audit/data/axiom_premise_nodes.json', 'outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/CANDIDATE.md.txt', 'outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt', 'outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/INTERVAL_CANDIDATE.md.txt', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/THEOREM_V2.md.txt', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/INPUT_MAP.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/PROOF_BODY_MAP.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/PUBLICATION_STATUS.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/REPRODUCTION_PLAN.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/SOURCE_MAP.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_control_root_review/ACCEPTANCE.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_control_root_review/FREEZE.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_control_root_review/PROVENANCE.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_control_root_review/QUALIFICATION.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/FREEZE.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/PLAN.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/READ_AND_EDIT_FAILURES.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/RESOURCE_PLAN.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/ROUTE.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/SCALAR_INPUTS.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/SOURCE_MANIFEST.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/check_route.py', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/freeze_packet.py', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/inputs/no_go_discipline.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/inputs/reflection_finite.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/inputs/reflection_v2.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/inputs/reflection_wrapper.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/launch_check.py', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/literature/SEARCH_NOTES.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/literature/repo_search.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/prepare_inputs.py', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/run01/PRELAUNCH.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/run01/RECEIPT.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/run01/stdout.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/CANDIDATE.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/EXECUTION.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/FILE_MANIFEST.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/FINAL_CHECK.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/FREEZE.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/PLAN.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/README.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/RESOURCE_PLAN.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/RETRY_AMENDMENT.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/SOURCE_COVERAGE.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/SOURCE_MAP.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/check_preparation.py', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/finalize_packet.py', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/inputs/physics_loop.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/launch_check.py', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/launch_check_v2.py', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/run01/PRELAUNCH.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/run01/RECEIPT.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/run01/stderr.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/run02/PRELAUNCH.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/run02/RECEIPT.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/run02/import_bootstrap.py', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/run02/stdout.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/ANALYTIC_FREEZE.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/FREEZE.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/PLAN.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/PRECHECK_ANALYSIS.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/PROVENANCE.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/PROVENANCE_SUMMARY.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/REVIEW.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/REVIEW_HEADER.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/REVIEW_POSTCHECK.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/SOURCE_BINDINGS.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/finalize_review.py', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/freeze_analysis.py', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/inspect_provenance.py', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/ANALYTIC_FREEZE.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/FREEZE.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/PLAN.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/PRECHECK_ANALYSIS.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/PROVENANCE.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/PROVENANCE_SUMMARY.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/REVIEW.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/REVIEW_HEADER.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/REVIEW_POSTCHECK.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/SOURCE_BINDINGS.json', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/finish_review.py', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/inspect_provenance.py', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/prepare_review.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/CANDIDATE.md.txt.gz', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_product_root_qualification/REVIEW.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/CANDIDATE.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_root_qualification/ACCEPTANCE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_root_qualification/QUALIFICATION.md.txt')
+
+if __name__ == '__main__':
+    main()

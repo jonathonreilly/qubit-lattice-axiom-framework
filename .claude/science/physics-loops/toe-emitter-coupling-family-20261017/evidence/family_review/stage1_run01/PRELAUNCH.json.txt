@@ -1,0 +1,133 @@
+{
+  "bound_inputs": [
+    {
+      "bytes": 30796,
+      "path": "initial_sources/emitter_installed_certificate/CANDIDATE.md",
+      "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+    },
+    {
+      "bytes": 10962,
+      "path": "initial_sources/weighted_emitter_escape_candidate/CANDIDATE.md",
+      "sha256": "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5"
+    },
+    {
+      "bytes": 31244,
+      "path": "initial_sources/ballistic_emitter_escape_candidate/CANDIDATE.md",
+      "sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f"
+    },
+    {
+      "bytes": 12525,
+      "path": "initial_sources/ballistic_emitter_root_qualification/ACCEPTANCE.json",
+      "sha256": "bd2059184e105bd41437b1c28ca3f106a441215e09eac7a2b3ec316cbd674318"
+    },
+    {
+      "bytes": 2484,
+      "path": "initial_sources/ballistic_emitter_root_qualification/QUALIFICATION.md",
+      "sha256": "0b0ce9eaba582d878b982ecd0f86a53857c5f394b9a42b4e27306e58bb405102"
+    },
+    {
+      "bytes": 24275,
+      "path": "initial_sources/two_body_interval_bridge/CERTIFICATE.json",
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+    },
+    {
+      "bytes": 27028,
+      "path": "initial_sources/finite_channel_wavepacket_bridge/THEOREM_V2.md",
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+    },
+    {
+      "bytes": 27328,
+      "path": "initial_sources/autonomous_emitter_route/ROUTE.md",
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+    },
+    {
+      "bytes": 32078,
+      "path": "initial_sources/ballistic_emitter_escape_review/REPORT.md",
+      "sha256": "cf6507b8b0dc3c9075b424602ab4969202c6e6bd665cabda4dc016125a21ee77"
+    },
+    {
+      "bytes": 2489,
+      "path": "initial_sources/emitter_installed_root_review/QUALIFICATION.md",
+      "sha256": "dfe73e8d332dc81bac378daf480662f74e95e3091f01fce11d6e2098f7d7596d"
+    },
+    {
+      "bytes": 2186,
+      "path": "initial_sources/weighted_emitter_root_qualification/QUALIFICATION.md",
+      "sha256": "f3513816c0bbe060f50860e02a2f1c49afcd42056314af9cc161885076882f4b"
+    },
+    {
+      "bytes": 4128,
+      "path": "INITIAL_SOURCE_MANIFEST.json",
+      "sha256": "9eb059e399020e1ff4dc94d1f33305795a5a29a4e55f270c11abdc5fb160c005"
+    },
+    {
+      "bytes": 10198,
+      "path": "INITIAL_ANALYSIS.md",
+      "sha256": "568280f950b7082ee08b850b5e4966956db499f9fe69f0203fa7de4e95f4fa08"
+    },
+    {
+      "bytes": 756,
+      "path": "INITIAL_REASONING_FREEZE.json",
+      "sha256": "ca6f274b32e8ad3174ef26313582575d6ab2e0d3d99dd5b29c111221ff3fe210"
+    },
+    {
+      "bytes": 1597,
+      "path": "RESOURCE_PLAN.json",
+      "sha256": "3d8aeb19c9e124926fe3e27ba8524f6282cf6f82f0283d8604d94caa66bd745e"
+    },
+    {
+      "bytes": 6766,
+      "path": "check_reference_mass.py",
+      "sha256": "2272f1dee9d40348cacfaf85ceaa4738ca70006da2e9cea92e8ff1fd1b8b7d6a"
+    },
+    {
+      "bytes": 3811,
+      "path": "launch_stage1.py",
+      "sha256": "f50150b98a07a6a4bb0b5fd530c0e16dfc5e908d69c0f42659cacf4870476959"
+    }
+  ],
+  "caps": {
+    "CPU_soft_hard_seconds": [
+      30,
+      30
+    ],
+    "actual_stage1_expected_dimension": 0,
+    "matrix_dimension_max": 24,
+    "wall_seconds": 45
+  },
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review/stage1_run01/executed_source.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review/stage1_run01/PRELAUNCH.json"
+  ],
+  "executed_source": {
+    "bytes": 6766,
+    "path": "stage1_run01/executed_source.py",
+    "sha256": "2272f1dee9d40348cacfaf85ceaa4738ca70006da2e9cea92e8ff1fd1b8b7d6a"
+  },
+  "exposure": "No mutable/frozen new family author argument or code has been read. Frozen prior dependencies only.",
+  "external_runtime_bindings": [
+    {
+      "bytes": 52640,
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+      "sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5"
+    },
+    {
+      "bytes": 29422,
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py",
+      "sha256": "4e9476348ba105feab28d82f5bcf6cdba2e3e84de6e059bbfe7a13728c0a4ab0"
+    },
+    {
+      "bytes": 12816,
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy-1.14.0.dist-info/METADATA",
+      "sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595"
+    }
+  ],
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "runtime_scope": "Resolved binary, package entry and distribution metadata pinned, not every dependency byte.",
+  "serialized_utc": "2026-10-17T03:02:18.420020+00:00",
+  "state": "serialized_before_subprocess_creation",
+  "sympy_version": "1.14.0"
+}

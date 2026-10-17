@@ -1,0 +1,344 @@
+---
+review_type: bounded_independent_conditional_refinement_review
+exposure: source-exposed_same-model
+new_argument_disposition: supported_conditionally_no_material_correction_found
+installed_emitter_dependency: provisional_separate_review_not_presumed_passed
+retained_status: not_assessed
+---
+# Review of the weighted emitter escape refinement
+
+The weighted argument follows from its explicitly stated prior inequalities.
+I found no material correction needed in the new denominator integrals,
+rank-one inverse bound, derivative products or late-time normalization.
+Conditional on the installed-emitter premises, it supports complete isometry
+error below **0.004 for every t>=10^36** on the infinite clock and below
+**0.005 on [10^36,2*10^36]** for the specified finite clock. The outgoing
+state, physical scalar, target gate, initial product seed and full old aging
+remain the same as in the installed source.
+
+The installed-emitter theorem remains a **provisional dependency undergoing
+a separate review**. This report neither assumes that review passed nor
+recertifies its optical identities, physical matching inverse, seed overlap,
+reflection error or localized-tail bounds. The present disposition is a
+conditional refinement, not acceptance of an operating apparatus, a formal
+audit, publication approval or retained-status decision.
+
+## 1. Sources, exposure and inherited obligations
+
+The complete changed candidate is SHA256
+`a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5`;
+its freeze is
+`6db59cab5cb3537070f8e29890fc4d93b38b353a87632b174b759ca1722a2198`.
+The complete installed candidate, its complete JSON certificate, the new
+author checker and wrapper, result, receipt, logs and source-pin metadata
+were inspected. A truncated first display of the installed source was
+followed by a complete read of its affected reflection and regularity
+sections; no missing excerpt was treated as completed coverage.
+
+| Exact mathematical input | SHA256 |
+|---|---|
+| Installed-emitter candidate | `4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee` |
+| Installed-emitter certificate | `594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763` |
+| Original emitter route | `f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1` |
+| Generic packet theorem V2 | `db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3` |
+
+This reviewer previously checked the local emitter route, the earlier
+stationary/interval composition and the generic packet premises. Their
+identities remain unchanged; the integration-by-parts, seed-intertwining,
+normalization and finite-distance sections were refreshed here. The earlier
+emitter review is preserved at SHA256
+`e4eec63593ce9f04cee67ef9734d570db1d6cd29886190a44be8f817a541ae7f`.
+That review explicitly left the installed inverse, actual common seed
+overlap and finite emission time unproved. It does not silently supply the
+new installed claims. The current review is source-exposed and uses the
+same model; it is not blind or model-diverse checking.
+
+[SOURCE_PINS.json](SOURCE_PINS.json) records fifteen exact snapshots.
+The current workflow is unchanged at SHA256
+`71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3`.
+The final [SOURCE_RECHECK.json](SOURCE_RECHECK.json) verifies the snapshots
+against their original files. No moving installed-review output was read
+or adopted.
+
+The conditional interface includes the following substantive prior results:
+the stated optical lower bound and derivative ceilings for `Df`; the
+seven-coordinate closed inverse and Schur error/off-diagonal bounds; the
+common normalized `f`, `sqrt(2pi)N>2` and nonvanishing `t_minus`; the full
+`w`, `w'`, `De'`, `Kloc`, `Kloc'`, `C_g`, `C_g'` bounds; exact packet
+intertwining/isometry and seed error below 0.003; common reflection error
+below 0.000714; and the unchanged graph/radius assumptions. These are
+premises of this report, not conclusions drawn from author PASS fields.
+
+## 2. Monotone substitution and the three integral bounds
+
+Write `Df=x+iy`, `h=19 kappa^2`. From the assumed bounds,
+
+    x'=E'-kappa^2 Re(Sigma_f,jj')
+       >=v-560 kappa^2 >v/2,
+    y>=h>0.
+
+Thus `x` has a continuously differentiable increasing inverse on its image,
+whose derivative is at most `2/v`. For each positive power, the norm bound
+`|Df|^2>=x^2+h^2`, change of variables and extension from `x(I)` to the
+whole real line are legitimate. No zero of `x` in the interval is needed.
+
+The independently differentiated antiderivatives are
+
+    integral dx/(x^2+h^2) = atan(x/h)/h,
+    integral dx/(x^2+h^2)^(3/2) = x/[h^2 sqrt(x^2+h^2)].
+
+Their whole-line values are `pi/h` and `2/h^2`. With the Jacobian bound,
+
+    I2 <= 2pi/(19 v kappa^2) < (320/19)/kappa^2 <17/kappa^2,
+    I3 <= 4/(361 v kappa^4) = (160/361)/kappa^4 <1/(2 kappa^4).
+
+The power `kappa^-4` in `I3` is retained. Cauchy–Schwarz on an interval of
+length `2sigma` gives `I1^2<=2sigma I2<34sigma/kappa^2<1/kappa^2`.
+The margins `17-320/19=3/19` and `1/2-160/361=41/722` were checked
+exactly. This calculation uses symbolic antiderivatives and limits; no
+numerical quadrature or resonance grid is involved.
+
+## 3. Why the integration-by-parts theorem permits the weights
+
+For the localized term put `H_j(k)=f(k)C_j(k)`, as a vector in the full
+clock/source/emitter Hilbert space. The inherited regularity makes it
+absolutely continuous with zero endpoint trace. Its derivative is
+`H_j'=f'C_j+f C_j'`. Integration by parts gives
+
+    ||integral H_j exp(-iEt) dk||
+      <=(1/|t|) integral [||H_j'||/E'
+                                +|E''| ||H_j||/(E')^2] dk
+      <=(1/(v|t|)) integral [|f'| ||C_j||+|f| ||C_j'||
+                                  +(E2/v)|f| ||C_j||] dk.
+
+Division by `sqrt(2pi)` gives the proposed weighted `D_j` estimate. The
+old theorem's separate suprema are sufficient bounds for this integral,
+not a required extra step in the identity. The replacement is therefore
+a valid sharpening of that proof. The inherited uniform regularity is
+still available for constructing and normalizing the exact scattering
+isometry; it has not been discarded merely because a smaller integral is
+now estimated.
+
+For an unwanted incoming coordinate, the phase derivative has magnitude
+at least `n+vt`. After integration by parts, the amplitude is bounded by
+`A0/[sqrt(2pi)(n+vt)]`, where
+`A0=integral |f'|+(E2/v)F0`. Summing the squares using
+`sum_(n>=0)(n+vt)^-2<=2/(vt)` for `vt>=1` gives
+`A0/sqrt(pi vt)`. For the negative-site part of the outgoing wave, apply
+the same argument to `f rho`: since `|rho|=1`,
+
+    |(f rho)'| <= |f'|+|f||rho'|.
+
+This proves the proposed `B0` without taking a separate supremum of
+`rho'`. The emitter coordinate belongs to `H_j` throughout. The two
+localized columns within each parity still require their square sum;
+distinct parity subspaces remain orthogonal. No column orthogonality in
+the interaction region has been introduced.
+
+## 4. Cutoff and weighted outgoing phase
+
+The cutoff is continuous, equal to one on the middle half of the interval,
+and has slopes `+2/sigma` and `-2/sigma` on the two remaining ramps.
+Its total variation is exactly two and its endpoint traces vanish. Corners
+cause no delta terms in its weak first derivative. Differentiating
+`f=kappa chi g_minus/[sqrt(2pi)N conjugate(Df)]` gives all three terms:
+cutoff derivative, form-factor derivative and denominator derivative.
+With normalization denominator greater than two,
+
+    |f|<=kappa U,
+    |f'|<=kappa[(2/sigma+13)U+d U^2],  d=61/1000.
+
+The form-factor derivative bound follows from `2L+2=26`. In particular
+the cutoff coefficient is `2/sigma`, not zero or `1/sigma`. An exact
+constant-form-factor/constant-denominator example in the checker retains
+cutoff variation two; dropping that derivative would give zero. Hence the
+cutoff term is discriminating. Integrating gives
+`F1<=a1+17d/kappa=1037002000013<2/kappa`.
+
+For `n=-i |g_minus|^2/vg`, the source open-resolvent bounds imply
+`|n|<=4*40=160` and `|n'|<=4*100+8*40=720`. These bounds keep the
+derivative of the form-factor modulus squared; its oscillating translation
+phase does not enter that modulus. Then
+
+    |t_minus'| <=kappa^2(720U+160d U^2).
+
+For any nonzero complex function, differentiating its unit phase gives
+`|(t/|t|)'|<=2|t'|/|t|`. Thus the candidate's `4|t'|` is safe under
+`|t|>1/2` (a sharper constant is unnecessary). Multiplication by `r0`
+adds `|r0'|=2`. Keeping this derivative inside its integral gives
+
+    integral |f||rho'|
+      <=2F0+4kappa^3(720I2+160d I3)
+      <2/500+48960kappa+320d/kappa.
+
+The exact rational inequalities then justify `A0=3/kappa` and
+`B0=23/kappa`. The same `f`, `rho`, target `W` and fixed `zeta` are
+retained for all four logical columns.
+
+## 5. Full block inverse and localized product bounds
+
+For a general block matrix `De=[[a,b],[c,Q]]`, let
+`ds=a-b Q^-1 c`. The exact inverse is
+
+    De^-1 = diag(0,Q^-1)
+             + [1;-Q^-1 c] ds^-1 [1,-b Q^-1].
+
+It follows from the inherited `||Q^-1||<6`,
+`||b||<=kappa^2 sPQ`, `||c||<=kappa^2 sQP` and
+`|ds|>=(1-xi)|Df|` that
+
+    ||De^-1|| <=6+
+      [(1+6kappa^2 sQP)(1+6kappa^2 sPQ)/(1-xi)] U.
+
+All seven complementary emitter coordinates remain inside `Q^-1`; the
+first summand cannot be suppressed. A separate exact non-Hermitian
+eight-dimensional example with every complementary coordinate coupled
+verifies this factorization against direct inversion. Omitting the closed
+summand or replacing the whole inverse by its resonant scalar fails that
+example. This finite test is an algebra discriminator, not a replay of
+the installed physical matching problem.
+
+The checker reconstructs `delta`, `b_min`, `gamma0`, `sPQ`, `sQP` and
+`xi` from the source's exact center phase and formulas. The reconstructed
+`xi` agrees with the certificate. Cross multiplication proves the bracket
+is less than two; its display is `1.0000026106781228`. This verifies the
+new numerical use of those expressions, while the applicability of their
+physical Schur inequalities remains an installed-system premise.
+
+For `y=kappa De^-1 w`, the derivative identity
+
+    y'=kappa[De^-1 w'-De^-1 De' De^-1 w]
+
+and the assumed `||w||<3`, `||w'||<30`, `||De'||<d` give
+
+    ||y||<=kappa(18+6U),
+    ||y'||<=kappa[3d(6+2U)^2+30(6+2U)]
+            <kappa(187+65U+U^2).
+
+The unrounded derivative coefficients are `186.588`, `64.392` and
+`0.732`, respectively. The complete localized vector has clock component
+`C_g+kappa Kloc y` and emitter component `y`. Accordingly its derivative
+includes **both** `kappa Kloc' y` and `y'`, in addition to
+`kappa Kloc y'`. Substitution gives
+
+    ||C||<32+12kappa U,
+    ||C'||<2701+131kappa U+2kappa U^2.
+
+The independent check proves these roundings coefficient by coefficient
+for every `U>=0`, using exact rationals. It does not test only selected
+values near a resonance. It also retains a simple diagnostic in which
+the clock correction vanishes but the emitter correction has unit norm:
+discarding the emitter would incorrectly make the complete norm zero.
+
+Expanding the weighted integrand independently yields exactly
+
+    kappa(32a1+2781) U
+    +[kappa^2(12a1+161)+32kappa d] U^2
+    +kappa^2(12d+2) U^3.
+
+All three moments are required. Substitution of their analytic bounds gives
+
+    Dj <236a1+5518+544d/kappa+(6d+1)/kappa^2
+       =1366000000033184472008586
+       <3/(2kappa^2).
+
+Thus `D=3/kappa^2` safely dominates the within-parity square sum
+`sqrt(2) max Dj`. No emitter/source component, derivative product or
+nonorthogonal-column cost is absent from this estimate.
+
+## 6. Normalization, exact comparator and finite horizon
+
+Since `||f rho||2=1`, Parseval makes the complete integer-line outgoing
+packet have norm one. Let its omitted negative-site norm be `q_t`. The
+weighted bound gives `q_t<=B0/sqrt(pi vt)`. The retained norm is
+`sqrt(1-q_t^2)`; when `q_t<=1/2`, positive-real normalization is well-defined
+and costs
+
+    1-sqrt(1-q_t^2) <= q_t.
+
+Therefore the outgoing normalization costs one `B0` term, not zero and
+not an additional arbitrary phase. The comparison of actual open waves
+to the common `rho` uses the inherited maximum reflection error; their
+distinct old vacuum output vectors are orthogonal. The remaining terms
+are the incoming `A0` and the complete localized grouped `D`.
+
+Unitarity propagates the inherited seed-isometry error unchanged. Exact
+column intertwining supplies old aging for the entire time from the seed,
+including emission and flight. The resulting comparator is precisely
+
+    zeta exp[-i(nu+2kappa)t]
+      beta_t tensor iota exp(-itK)W,
+
+with the same normalized outgoing `beta_t` from the source. No new packet
+fit, old-dependent phase, interaction-picture age reset or change to the
+physical scalar appears. The seed's possible bound-state component is
+already in its full isometry mismatch and is neither removed nor counted
+again. Passive references remain covered by the operator-norm estimate.
+
+At `T=10^36`, exact squaring with `pi>3` proves
+`sqrt(pi vT)>27*10^16`, while `sqrt(2pi)>12/5`. The unwanted outgoing
+tail ceiling is `23/270000<1/2`, and `vT>1`. The exact numerical budgets
+are therefore:
+
+| Quantity | Exact upper expression | Display only |
+|---|---|---:|
+| Escape remainder at onset | `52000027/540000000000` | 0.0000962963462962963 |
+| Complete infinite-clock error | `2057560027/540000000000` | 0.0038102963462962962 |
+| Complete finite-clock error | `2597560027/540000000000` | 0.004810296346296297 |
+
+Both remainder terms decrease for every later time, so the infinite-clock
+isometry ceiling is strictly below 0.004 for all `t>=T`. Complete unhalved
+trace distance is below 0.008. This is a sufficient mathematical onset;
+it is not an estimate of a measured lifetime or an exponential decay law.
+
+For the finite clock, the unchanged seed-to-omitted-site distance is
+`1+[M-(L+2)]=M-L-1`, with `L=12`. At `M=5*10^37` and
+`Tobs=2*10^36`, the sufficient Chebyshev inequality has exact positive
+margin
+
+    dM-19*Tobs*(6/5)-9
+      =4399999999999999999999999999999999978.
+
+Using the inherited radius 19 and the previously checked elementary
+exponential ceilings gives boundary error below 0.001 throughout the
+stated horizon. The far-end diagonal correction and comparison to the
+embedded infinite output are unchanged. A fixed finite apparatus is
+covered only on `[T,Tobs]`, with complete unhalved trace error below 0.01.
+No large clock was allocated or simulated.
+
+## 7. Actual evidence and precise remaining limit
+
+The independent [checker](check_weighted_escape.py), SHA256
+`1810b2042defa23bcfe5a32bed37f025ff41d75d7727cdeb3c2e3c620bdfcc8e`,
+was executed once with predeclared caps of 45 CPU seconds, 60 wall seconds
+and matrix dimension at most 32. It exited zero in
+**10.88888437487185 seconds** of wrapper wall time; the program reported
+10.538953458890319 seconds. The largest matrix and inverse were **8 by 8**.
+Python was 3.13.5 and SymPy 1.14.0. There were no failed invocations;
+the discriminating omission cases remain in the complete output.
+
+[runs/attempt_1](runs/attempt_1) preserves the complete stdout, empty
+stderr, launch-pinned source copy, input manifest, receipt and
+[RESULT.json](runs/attempt_1/RESULT.json). Source and input hashes were
+unchanged across execution. The author checker was neither imported nor
+executed. No numerical quadrature, resonance samples, optimizer, dynamics,
+installed physical inverse replay or seed-overlap recalculation occurred.
+The result contains exact margins and symbolic identities rather than only
+a success summary. The author's separate historical source-pinned receipt
+and logs are retained unchanged as provenance, not as independent evidence.
+
+The remaining scientific dependency is concrete: the frozen installed
+theorem must actually supply the optical, Schur, full-tail regularity,
+common seed-overlap, reflection and packet-isometry premises listed above.
+This review establishes the new weighted implication if they hold. It
+does not resolve any defect that their separate review may find. The
+candidate correctly avoids composing this refinement with the separate
+coefficient-box or emitter-calibration proposals.
+
+All physical permissions are inherited unchanged: the supplied clean
+vacuum and excited seed, exact static complex loop coupling, exact ladder
+structure and coefficients, and an infinite blank tail for permanence.
+Native realization, installation precision, feasible resources, reset,
+reuse and arbitrary accuracy remain outside this result. No author file,
+worktree, shared checkpoint, Git state, editable prompt, physical axiom,
+publication or audit output was changed.

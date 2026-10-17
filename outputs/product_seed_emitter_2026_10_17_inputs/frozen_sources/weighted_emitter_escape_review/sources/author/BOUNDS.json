@@ -1,0 +1,62 @@
+{
+  "scope": "Author scalar checks only. Weighted integral proof and installed theorem remain provisional pending separate review.",
+  "weighted_constants": {
+    "resonant_rank_factor": {
+      "exact_rational": "27911832347389367531340319637125369169511287361618078165246641269657472657005826786487618976012721756899751908528291506175860599519408264062077822819022878390049243866427216506647589946440752101348810645081/27911759478769525739358418482248372351422432962546711879717928967807420453568976157189658744632221673091992797561649319023284197082389724934004952595653645246484965655398286395728115068000000000000000000000",
+      "display_only_float": 1.0000026106781228
+    },
+    "F1_upper": {
+      "exact_rational": "1037002000013",
+      "display_only_float": 1037002000013.0
+    },
+    "weighted_phase_derivative_upper": {
+      "exact_rational": "61000000000000012500153/3125000000",
+      "display_only_float": 19520000000000.004
+    },
+    "localized_column_upper": {
+      "exact_rational": "1366000000033184472008586",
+      "display_only_float": 1.3660000000331844e+24
+    },
+    "grouped_D": {
+      "exact_rational": "3000000000000000000000000",
+      "display_only_float": 3e+24
+    },
+    "A0": {
+      "exact_rational": "3000000000000",
+      "display_only_float": 3000000000000.0
+    },
+    "B0": {
+      "exact_rational": "23000000000000",
+      "display_only_float": 23000000000000.0
+    },
+    "escape_at_onset": {
+      "exact_rational": "52000027/540000000000",
+      "display_only_float": 9.62963462962963e-05
+    },
+    "complete_isometry_at_onset": {
+      "exact_rational": "2057560027/540000000000",
+      "display_only_float": 0.0038102963462962962
+    },
+    "finite_complete_isometry_upper": {
+      "exact_rational": "2597560027/540000000000",
+      "display_only_float": 0.004810296346296297
+    }
+  },
+  "time_and_clock": {
+    "onset": 1000000000000000000000000000000000000,
+    "Tobs": 2000000000000000000000000000000000000,
+    "M": 50000000000000000000000000000000000000,
+    "first_omitted_distance": 49999999999999999999999999999999999987
+  },
+  "unchanged_comparator": "Same f, rho, beta, zeta, actual scalar nu+2kappa and total old aging as the installed source.",
+  "limits": {
+    "cpu_cap_seconds": 5,
+    "wrapper_wall_cap_seconds": 10,
+    "matrices": 0,
+    "quadrature": false,
+    "parameter_search": false,
+    "time_evolution": false,
+    "independent_review": false
+  },
+  "elapsed_seconds": 0.0013725408352911472
+}

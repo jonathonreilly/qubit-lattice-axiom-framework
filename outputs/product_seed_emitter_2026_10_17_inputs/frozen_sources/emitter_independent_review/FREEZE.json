@@ -1,0 +1,28 @@
+{
+  "recorded_utc": "2026-10-17T00:56:03.319673+00:00",
+  "status": "Source-exposed bounded independent review; local formulas and conditional implication supported; installed-system certificates absent; no audit verdict",
+  "report": {
+    "path": "REPORT.md",
+    "bytes": 17441,
+    "sha256": "e4eec63593ce9f04cee67ef9734d570db1d6cd29886190a44be8f817a541ae7f"
+  },
+  "reviewer_script": {
+    "path": "check_emitter.py",
+    "bytes": 11404,
+    "sha256": "c2faafa025ca3905bd88c6d8110a2a8888765e881f451ff1df1a5acf1ad37196"
+  },
+  "execution_receipt": {
+    "path": "EXECUTION.json",
+    "bytes": 2469,
+    "sha256": "ad7609c14553a3fa794cc0120e870e9288315ca0f18aa4fde717c2ec1a7d98dc"
+  },
+  "sources_unchanged": 18,
+  "executed_runs": 1,
+  "actual_installed_inverse": false,
+  "actual_seed_overlap": false,
+  "actual_emission_time": null,
+  "largest_matrix_dimension": 9,
+  "read_coverage": "Complete new546-line route, algebra source/output/receipt and freeze; exact prior interval/generic reads reused by pins; new conditional implication reconstructed",
+  "writes_scope": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_independent_review",
+  "editable_prompt_files_changed": []
+}

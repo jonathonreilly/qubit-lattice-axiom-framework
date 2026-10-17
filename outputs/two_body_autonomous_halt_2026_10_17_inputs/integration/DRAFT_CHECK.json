@@ -1,0 +1,24 @@
+{
+  "kind": "draft_packaging_check_only",
+  "utc": "2026-10-17T00:34:33.880206+00:00",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "checks": {
+    "staged_files_checked": 166,
+    "originals_unchanged": 166,
+    "embedded_bodies_exact": 4,
+    "later_dependency_pins_checked": 11,
+    "active_wrapper_links_verified": 7
+  },
+  "source_map_sha256": "577ea4437c93a225fdcfa3424ef28a1e4e1c699bf0ab7e3fb286cbe642d60af4",
+  "note_sha256": "665758ecf7cc80378ae14ce863b6421f250c0c602f4f98baccf777a70d08835d",
+  "note_bytes": 104702,
+  "note_lines": 2020,
+  "selected_staged_evidence_files": 35,
+  "required_mathematical_files": 4,
+  "later_dependencies_not_copied": 11,
+  "new_scientific_execution": false,
+  "independent_review": false,
+  "non_scientific_tool_failure": "One read-only rg pattern had an unmatched group; corrected with a simple heading pattern. No source was changed.",
+  "writes_confined_to": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_publication_draft",
+  "editable_prompt_files_changed": []
+}

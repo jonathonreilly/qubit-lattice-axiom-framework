@@ -1,0 +1,51 @@
+{
+  "frozen_utc": "2026-10-17T03:59:46.133546+00:00",
+  "status": "Frozen conditional author candidate, awaiting distinct independent and root checks; no retained/audit/publication claim",
+  "candidate": {
+    "path": "CANDIDATE.md",
+    "sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0",
+    "bytes": 37370
+  },
+  "file_manifest": {
+    "path": "FILE_MANIFEST.json",
+    "sha256": "442bb68f26e27176f293c2b8b45eab1c76896f38f76bb273138a70630ff31834",
+    "bytes": 6246
+  },
+  "packet_files_including_manifest_and_freeze": 41,
+  "source_snapshots": 21,
+  "scientific_runs": 1,
+  "scientific_checker": {
+    "path": "check_bounds.py",
+    "sha256": "b5383a88626e3bd378ba9155ee88577b49f8cf28e9b6031a2be5aada9fa48ef6",
+    "bytes": 9876
+  },
+  "prelaunch": {
+    "path": "run01/PRELAUNCH.json",
+    "sha256": "64f8369ae07325c3e38f2482e6e399e43a45ab4e50d63be400ab965225b06afb",
+    "bytes": 12028
+  },
+  "receipt": {
+    "path": "run01/RECEIPT.json",
+    "sha256": "0ead3f309bd1b6952228cd74d389c02c12225736f90ea79f1b23b02b6f69db79",
+    "bytes": 19800
+  },
+  "scientific_output": {
+    "path": "run01/stdout.json",
+    "sha256": "f94907937c47f29197681d05d8275efaaacb1ee7df54fcc92ef61d8c5533ce0c",
+    "bytes": 12367
+  },
+  "validation": {
+    "path": "STATIC_VALIDATION.json",
+    "sha256": "8db3abea6ec2d073a11ed0803f0d95b616a9974a10f2cd8a3c274adee2a3bcab",
+    "bytes": 7859
+  },
+  "scope": "Exact ladder, sigma1e-6, kappa in[1e-12,1e-8]; actual complete comparator; T=1/kappa^2; M=ceil(50T) for[T,2T] only",
+  "claimed_bounds": {
+    "infinite": ".003832",
+    "finite": ".004832"
+  },
+  "failed_routes_preserved": "FAILURES.md and complete scientific output",
+  "no_editable_prompt_files_changed": true,
+  "no_delegation": true,
+  "campaign_deadline_utc": "2026-10-17T23:07:27Z"
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_publication_draft/verify_static.py", line 56, in <module>
+    check('adapted_ast:'+body['role'],ah(adapted)==body['adapted_body_ast_sha256'])
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_publication_draft/verify_static.py", line 15, in check
+    assert test,name
+           ^^^^
+AssertionError: adapted_ast:resonance_author

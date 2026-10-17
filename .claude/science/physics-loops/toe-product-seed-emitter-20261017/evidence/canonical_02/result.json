@@ -1,0 +1,1830 @@
+{
+  "scope": "Canonical replay of six source-exposed finite calculation bodies; original source qualifications and complete analytical proofs remain separate.",
+  "reports": {
+    "local_author": {
+      "scope": "exact cell/form-factor/optical algebra and analytic diagnostic constants; no installed-emitter time certificate",
+      "parameters_exact": {
+        "J": "3752638388379/125000000000000",
+        "q0": "2255175592998549/500000000000000",
+        "E0": "30021107107032000000000000000/5335816955256357129429116105401",
+        "coupling": "1/1000000000000",
+        "sigma": "1/1000000",
+        "speed": "1/40"
+      },
+      "constants_exact": {
+        "sin_2k0": "21811232739405385771956015380537498060648126298000000000000000/28470942580001221460551733349533582334670664139372522141370801",
+        "directional_ratio": "28470942580001221460551733349533582334670664139372522141370801/21811204268462805770734554828804148527065791627335860627477858629199",
+        "return_reflection_ceiling": "56941885160002442921103466699067164669341328278745044282741602/21811204268462805770734554828804148527065791627335860627477858629199",
+        "return_transmission_error_ceiling": "1621189142787453217332928544240098528609920592226049900061135340448431525973064041360488007435199219621244330091894750763202/475728631640610118228015292735611312706130030790938768595111095150582012096663575448773906692480050892217804760414622165045947375381601",
+        "wrong_way_in_band_probability_fraction_ceiling": "810594571393726608666464272120049264304960296113024950030567670224215762986532020680244003717599609810622165045947375381601/475728631640610118228015292735611312706130030790938768595111095150582012096663575448773906692480050892217804760414622165045947375381601",
+        "single_column_out_of_band_norm_squared_ceiling": "1/312500000",
+        "grouped_out_of_band_operator_norm_squared_ceiling": "1/156250000",
+        "added_common_scalar": "1/500000000000",
+        "emitter_incident_positive_block_norm_sum": "15010553558851816955256357129429116105401/2667908477628178564714558052700500000000000",
+        "clock_attachment_added_positive_block_norm_sum": "3/1000000000000"
+      },
+      "display_only": {
+        "k0": 0.43636579340926135,
+        "E0": 0.005626337514718896,
+        "sin_2k0": 0.7660874829878727,
+        "directional_ratio": 1.3053356536194495e-06,
+        "return_reflection_ceiling": 2.610671307238899e-06,
+        "return_transmission_error_ceiling": 3.4078023372202306e-12,
+        "wrong_way_in_band_probability_fraction_ceiling": 1.7039011686101153e-12
+      },
+      "point_algebra": [
+        {
+          "label": "central",
+          "q_exact": "2255175592998549/500000000000000",
+          "return_reflection_squared_display": 0.0,
+          "return_transmission_minus_one_squared_display": 0.0
+        },
+        {
+          "label": "off_center_algebra_only",
+          "q_exact": "2305175592998549/500000000000000",
+          "return_reflection_squared_display": 2.366299604616311e-41,
+          "return_transmission_minus_one_squared_display": 3.448408480997118e-45
+        }
+      ],
+      "checks": [
+        {
+          "check": "z0 is exactly unit modulus",
+          "passed": true
+        },
+        {
+          "check": "E0 - 2 coupling is positive",
+          "passed": true
+        },
+        {
+          "check": "sin(2 k0) is positive",
+          "passed": true
+        },
+        {
+          "check": "speed lower bound on k0 +- sigma",
+          "passed": true
+        },
+        {
+          "check": "first edge Hermitian",
+          "passed": true
+        },
+        {
+          "check": "first edge positive with norm 2 coupling",
+          "passed": true
+        },
+        {
+          "check": "second edge Hermitian",
+          "passed": true
+        },
+        {
+          "check": "second edge positive with norm 2 coupling",
+          "passed": true
+        },
+        {
+          "check": "full 16-dimensional scalar-reserve identity",
+          "passed": true
+        },
+        {
+          "check": "addition conserves total emitter-plus-clock head number",
+          "passed": true
+        },
+        {
+          "check": "return/right-emission central notch",
+          "passed": true
+        },
+        {
+          "check": "left-emission central amplitude squared",
+          "passed": true
+        },
+        {
+          "check": "central self-energy optical identity",
+          "passed": true
+        },
+        {
+          "check": "central exact two-port unitarity",
+          "passed": true
+        },
+        {
+          "check": "central equal transmission probabilities",
+          "passed": true
+        },
+        {
+          "check": "return transmission at center is exactly one",
+          "passed": true
+        },
+        {
+          "check": "both reflection amplitudes at center vanish",
+          "passed": true
+        },
+        {
+          "check": "off_center_algebra_only self-energy optical identity",
+          "passed": true
+        },
+        {
+          "check": "off_center_algebra_only exact two-port unitarity",
+          "passed": true
+        },
+        {
+          "check": "off_center_algebra_only equal transmission probabilities",
+          "passed": true
+        },
+        {
+          "check": "directional ratio strict ceiling",
+          "passed": true
+        },
+        {
+          "check": "return reflection amplitude strict ceiling",
+          "passed": true
+        },
+        {
+          "check": "return transmission error strict ceiling",
+          "passed": true
+        },
+        {
+          "check": "wrong-way in-band probability-fraction strict ceiling",
+          "passed": true
+        },
+        {
+          "check": "single-column out-of-band amplitude below 6e-5",
+          "passed": true
+        },
+        {
+          "check": "grouped operator out-of-band amplitude at most 8e-5",
+          "passed": true
+        }
+      ],
+      "resources": {
+        "max_matrix_dimension": 16,
+        "onshell_exact_points": 2,
+        "interval_grid_points": 0,
+        "optimizer_iterations": 0,
+        "historical_source_run_limits": {
+          "cpu_cap_seconds": 10,
+          "wrapper_wall_cap_seconds": 30
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            120,
+            120
+          ],
+          "external_wall_cap_seconds": 120,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        }
+      },
+      "runtime": {
+        "python_executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+        "sympy_version": "1.14.0",
+        "historical_source_program_sha256": "236f558f94b8e3270c67b4cb218056b4024a2c902e276793b0c522100de461b9",
+        "elapsed_seconds": 0.79334795800969
+      },
+      "limitations": [
+        "same-model source-exposed author algebra, not independent review",
+        "no finite emission-completion time",
+        "no augmented old/source matching inverse",
+        "no in-band point-spectrum bound for the installed apparatus",
+        "no complete-output gate theorem for the autonomous seed"
+      ],
+      "portable_execution": {
+        "source_role": "local_author",
+        "historical_source_run_limits": {
+          "cpu_cap_seconds": 10,
+          "external_wall_cap_seconds": 30
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            120,
+            120
+          ],
+          "external_wall_cap_seconds": 120,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "source_statement_scope": "Original report scope/limitations strings retain their historical scientific meaning. This is a portable replay, not a new review.",
+        "original_program_sha256": "236f558f94b8e3270c67b4cb218056b4024a2c902e276793b0c522100de461b9"
+      }
+    },
+    "local_reviewer": {
+      "scope": "Independent local identities and conditional-lemma risks only; no installed inverse, seed overlap or emission time certified",
+      "local_positive_Gram_decompositions": [
+        {
+          "attachment": 1,
+          "positive_Gram_weights": [
+            "1/1000000000000",
+            "1/500000000000"
+          ],
+          "nonzero_eigenvalue": "1/500000000000"
+        },
+        {
+          "attachment": 2,
+          "positive_Gram_weights": [
+            "1/1000000000000",
+            "1/500000000000"
+          ],
+          "nonzero_eigenvalue": "1/500000000000"
+        }
+      ],
+      "full_qubit_dimension": 8,
+      "full_qubit_scalar_identity": true,
+      "Pauli_cross_quadrature_signs": true,
+      "seed_variance_exact": "1/500000000000000000000000",
+      "local_matching": [
+        {
+          "label": "notch",
+          "z": "4835816955256357129429116105401/5335816955256357129429116105401 + 2255175592998549000000000000000*I/5335816955256357129429116105401",
+          "local_equations_dimension": 4,
+          "return_reflection_squared": "0",
+          "return_transmission_difference_squared": "0"
+        },
+        {
+          "label": "separate_algebra_point",
+          "z": "3/5 + 4*I/5",
+          "local_equations_dimension": 4,
+          "return_reflection_squared": "1645504258520154655748378725686327192768034175608990755058894312477584085958010726967020080427635194572742832210731935084378906250000/377021847519370422904021095922707454264213215158890591172654399302942095727419774330868307998591898934402162267100125680946272843143115022207686855044109951277480313938321049",
+          "return_transmission_difference_squared": "381883298640551385817214597562817594679937096903528837182830338419556877781785410689012005270081972517519992366981935084378906250000/377021847519370422904021095922707454264213215158890591172654399302942095727419774330868307998591898934402162267100125680946272843143115022207686855044109951277480313938321049"
+        }
+      ],
+      "Green_jump_with_wrong_sign": -1,
+      "wrong_phase_notch_squared": "1902919494450037475854351996384153666965131636956667554190914714797365693344160125832636739216000000000000000000000000000000/810594571393726608666464272120049264304960296113024950030567670224215762986532020680244003717599609810622165045947375381601",
+      "exact_constants": {
+        "sin_2k0": "21811232739405385771956015380537498060648126298000000000000000/28470942580001221460551733349533582334670664139372522141370801",
+        "directional_ratio": "28470942580001221460551733349533582334670664139372522141370801/21811204268462805770734554828804148527065791627335860627477858629199",
+        "return_reflection_ceiling": "56941885160002442921103466699067164669341328278745044282741602/21811204268462805770734554828804148527065791627335860627477858629199",
+        "return_transmission_error_ceiling": "1621189142787453217332928544240098528609920592226049900061135340448431525973064041360488007435199219621244330091894750763202/475728631640610118228015292735611312706130030790938768595111095150582012096663575448773906692480050892217804760414622165045947375381601",
+        "wrong_way_in_band_probability_fraction_ceiling": "810594571393726608666464272120049264304960296113024950030567670224215762986532020680244003717599609810622165045947375381601/475728631640610118228015292735611312706130030790938768595111095150582012096663575448773906692480050892217804760414622165045947375381601",
+        "single_column_out_of_band_norm_squared_ceiling": "1/312500000",
+        "grouped_out_of_band_operator_norm_squared_ceiling": "1/156250000",
+        "added_common_scalar": "1/500000000000",
+        "emitter_incident_positive_block_norm_sum": "15010553558851816955256357129429116105401/2667908477628178564714558052700500000000000",
+        "clock_attachment_added_positive_block_norm_sum": "3/1000000000000"
+      },
+      "closed_tail_derivative_alternative_exact": "2*7**(1 - m)*m/3 + 700*7**(-m - 2) + 2*7**(-m - 1)*(m + 2)/3 + 700/7**m",
+      "seed_overlap_test": {
+        "rectangular_dimensions": [
+          4,
+          2
+        ],
+        "Gram_identity": [
+          [
+            "32/25",
+            "0"
+          ],
+          [
+            "0",
+            "32/25"
+          ]
+        ],
+        "unit_diagonal_overlap_magnitudes_do_not_suffice_squared_error": 4,
+        "aligned_error_single_column_norm_squared": 2,
+        "aligned_error_operator_norm_squared": 4,
+        "actual_installed_overlap_computed": false
+      },
+      "normalization_test": {
+        "omitted_norm": "5/13",
+        "retained_norm": "12/13",
+        "normalization_cost": "1/13"
+      },
+      "finite_graph_test": {
+        "L": 3,
+        "M": 7,
+        "dimension": 9,
+        "first_omitted_hops": 3,
+        "first_nonzero_omitted_power_amplitude": "-5/1989 - 4*I/663",
+        "first_nonzero_omitted_chebyshev_amplitude": "-20/13642551 - 16*I/4547517",
+        "rho19_sufficient_for_diagnostic_parameters": true
+      },
+      "limits": {
+        "author_program_imported_or_run": false,
+        "installed_matching_inverted": false,
+        "actual_seed_overlap_integrated": false,
+        "finite_emission_time": null,
+        "clock_time_evolution": false,
+        "interval_grid": false,
+        "optimizer": false,
+        "same_model_source_exposed": true,
+        "formal_audit": false
+      },
+      "runtime": {
+        "largest_matrix_dimension": 9,
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "sympy": "1.14.0",
+        "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+        "elapsed_seconds": 0.7791907503269613,
+        "historical_source_run_limits": {
+          "cpu_seconds_cap": 45,
+          "parent_wall_seconds_cap": 60
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            120,
+            120
+          ],
+          "external_wall_cap_seconds": 120,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        }
+      },
+      "portable_execution": {
+        "source_role": "local_reviewer",
+        "historical_source_run_limits": {
+          "cpu_cap_seconds": 45,
+          "external_wall_cap_seconds": 60
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            120,
+            120
+          ],
+          "external_wall_cap_seconds": 120,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "source_statement_scope": "Original report scope/limitations strings retain their historical scientific meaning. This is a portable replay, not a new review.",
+        "original_program_sha256": "c2faafa025ca3905bd88c6d8110a2a8888765e881f451ff1df1a5acf1ad37196"
+      }
+    },
+    "installed_author": {
+      "status": "new conditional author certificate, not independent review or native-hardware validation",
+      "parameters": {
+        "L": 12,
+        "coupling": "1/1000000000000",
+        "half_width": "1/1000000",
+        "center_z_real": "4835816955256357129429116105401/5335816955256357129429116105401",
+        "center_z_imag": "2255175592998549000000000000000/5335816955256357129429116105401",
+        "E0": "30021107107032000000000000000/5335816955256357129429116105401",
+        "old_source_dimension": 16,
+        "parity_dimension": 8,
+        "closed_coordinates_per_parity": 7
+      },
+      "uniform_schur": {
+        "closed_tail_factor": {
+          "exact_rational": "50/96889010407",
+          "display_float": 5.160543986357778e-10
+        },
+        "closed_drive_norm": {
+          "exact_rational": "800/13841287201",
+          "display_float": 5.779809264720711e-08
+        },
+        "closed_emitter_inverse_upper": 6,
+        "free_optical_lower_after_dividing_by_coupling_squared": {
+          "exact_rational": "59466078955076264778501911591951414088266253848867346074388886893822751512082946931096738336560006361527225595051827770630743421922700125/3041868306023720476617049700472764972815450817181164566513326468776701786392947361967789157395291484398132398833319705237256116768814779",
+          "display_float": 19.549195748322624
+        },
+        "relative_resonant_denominator_error": {
+          "exact_rational": "18217154960447995475288710347508876990670320589088255658464905685460543078898473498802621162470810486922555165777434664294588461256234313199213844345014941258586150428401067971233/6977958086847341882835079909272440596732598910957267058185140706857540573935322937770913488779217889083485121945578107190485343859058687467814437362757756326562500000000000000000000000",
+          "display_float": 2.610671307238899e-06
+        },
+        "resonant_imaginary_lower": "19 coupling^2",
+        "De_inverse_2_upper": "1/(18 coupling^2)",
+        "augmented_matching_inverse_2_upper": "1/(17 coupling^2)",
+        "augmented_matching_dimension_per_parity": 24,
+        "full_dimension": 48,
+        "augmented_matching_derivative_2_upper": "63/1000",
+        "all_in_band_bound_states_excluded": true,
+        "why": "original matching invertible, finite augmented Schur invertible, and homogeneous outgoing tail matching"
+      },
+      "common_seed": {
+        "profile": "yref= coupling conjugate(g_minus translated)/Df",
+        "envelope": "f=chi conjugate(yref)/(sqrt(2pi) N); chi=1 on inner half-band, linear to zero at endpoints; N^2=integral chi^2 |yref|^2/(2pi)",
+        "normalization_mass_loss_upper": {
+          "exact_rational": "1902980338206318514703114924575892373471479655819040184063787660849052570051666320864995295035070295250234464767662836803747634953506601/148665391445736592172797879457393202704898893030930183905434884589829398687123671722724972732209363889118594524298329856644214638701687578125000",
+          "display_float": 1.2800425974736113e-08
+        },
+        "relative_diagonal_profile_error": {
+          "exact_rational": "9108577480223997737644355173754438495430957348479961800594787830021772400984667391616337136265679013644678238108448149552727529971136336742298162312750876720847637609220105990411/2325979956564127144946534873520697695951869413545559323309827413983951704464081346432471562052685139424332733130137443251940349756865810411167079382971137103873747137949857199644009589",
+          "display_float": 3.91601718429205e-06
+        },
+        "off_diagonal_overlap_error": {
+          "exact_rational": "111647037915488806169507249172995649524560385723427203368558229306207357845539036373562676715848805390723659655490559579374729957172603345374693122667288112928494283195946228215796190056973/321945566025735889870851449741621868275687996257315262921145351426949991464008237045986156426363081079969171670395200606539457815051702035185794433360693773482639037804157398372103316805469703890000000000000",
+          "display_float": 3.4678855588451837e-19
+        },
+        "seed_isometry_error_squared_upper": {
+          "exact_rational": "2406933903450754060205892047984858983856529883900204478757031965360800715843550802568936062896332100878673305820105245939562403193279223046235264314573719783710869872471862068438177259213311156278641628136873458503876049506854045830995275496981173779107621872415672470874577700777616861221655683338773013365142582561938367516986642945773/306317847023585674213357319883731482191737628780872549416009909229091442467697675860918548875022392512251124367004577532021866991240651427397279355047700220757239326898429946187615602597220212956422843875983907943227783670913205275005742497633593481638196347398200588830960444541513902461522122986492835765269219091028416612063945000000000000",
+          "display_float": 7.857635220534265e-06
+        },
+        "chosen_seed_isometry_error_upper": "3/1000",
+        "bound_state_operator_amplitude_upper": "1/12500"
+      },
+      "target": {
+        "same_fixed_gate_scalar": "zeta from frozen interval candidate; no refitting",
+        "common_outgoing_phase": "rho(k)=r0(k) t_minus(k)/|t_minus(k)|",
+        "physical_scalar": "exp(-i (nu+2 coupling) t)",
+        "old_aging": "exp(-i t K) for total time since product seed",
+        "emitter_reflection_phase_correction": {
+          "exact_rational": "11555240914862037356454925510038509069136908938679942463097450667829672330768171592894672514089103882082964548384987838724893300905655787952172000961887783445212410369940068233198460927618797606110441616976837826275051485911491383723303633874792709864458623054618947611878584045440631474434853503346182405906343978/1106535261959737965345892969158096410933641657593530142096641089436122576424653711226667181810762242258583809108573337843005156538589878644542699784522869970755598225424683310873867338352492450581431111747320149010054761129465854597934476195118558310032091121282347577578729048367332337904964726609236817330732578171989",
+          "display_float": 1.0442722714861375e-05
+        },
+        "original_gate_band_error": {
+          "exact_rational": "43875000011/62500000000000",
+          "display_float": 0.000702000000176
+        },
+        "augmented_phase_error": {
+          "exact_rational": "49271437187834268445886604484993709507273645055853689621962550028812284545102040645297130457571101371643934573757138837976463790710291134200810368196028604061979217466940815008837349697804321841519609585370466131178865001535384954391206020755280528365490803297529686526114971853322765324773161440894013753456643356559075734891879/69158453872483622834118310572381025683352603599595633881040068089757661026540856951666698863172640141161488069285833615187822283661867415283918736532679373172224889089042706929616708647030778161339444484207509313128422570591615912370904762194909894377005695080146723598670565522958271119060295413077301083170786135749312500000000000",
+          "display_float": 0.0007124427228908614
+        },
+        "chosen_augmented_phase_error_upper": "714/1000000"
+      },
+      "regularity": {
+        "C0": "2000000000000",
+        "C1": "2000000000000000000000000000000000000",
+        "R_aug_derivative_upper": "1000000000000000000000000000",
+        "rho_derivative_upper": "5000000000000000000000000",
+        "F0": "1/500",
+        "F1": "2000000000000000000000000000000",
+        "CA": "3000000000000000000000000000000",
+        "CB": "3000000000000000000000000000000",
+        "Dj": {
+          "exact_rational": "4000000004000000000000000000000010000000000",
+          "display_float": 4.000000004e+42
+        },
+        "grouped_D": "8000000000000000000000000000000000000000000",
+        "clock_resolvent_localized_map_K0": 20000,
+        "K1": 1000000
+      },
+      "conditional_complete_output": {
+        "onset": 1000000000000000000000000000000000000000000000000000000000000000000000000,
+        "all_future_infinite_clock": true,
+        "escape_bound": {
+          "exact_rational": "500000000000000000000003/22500000000000000000000000000",
+          "display_float": 2.2222222222222223e-05
+        },
+        "complete_isometry_error": {
+          "exact_rational": "84065000000000000000000003/22500000000000000000000000000",
+          "display_float": 0.0037362222222222224
+        },
+        "strict_ceiling": "4/1000",
+        "unhalved_trace_strict_ceiling": "8/1000",
+        "finite_horizon": 2000000000000000000000000000000000000000000000000000000000000000000000000,
+        "finite_clock_sites": 50000000000000000000000000000000000000000000000000000000000000000000000000,
+        "first_omitted_site_distance": 49999999999999999999999999999999999999999999999999999999999999999999999987,
+        "finite_boundary_tolerance": "1/1000",
+        "finite_complete_isometry_strict_ceiling": "5/1000",
+        "time_source": "integration by parts with explicit uniform constants; not a linewidth or exponential-decay inference"
+      },
+      "distinct_exact_algebra": {
+        "direct_scalar_tail_elimination_equals_augmented_matching": true,
+        "scalar_geometry_dimension": 16,
+        "contact_to_emitter_signs_checked": true,
+        "all_16_internal_B_and_parity_identities_checked": true
+      },
+      "physical_point_diagnostics_not_interval_proof": [
+        {
+          "p": 1,
+          "s": 1,
+          "shift_exact": "-1/1000000",
+          "augmented_inverse_max_entry_display": "39406179.02872600776482719",
+          "inverse_residual_max_entry_display": "1.0457897e-91",
+          "schur_inverse_relative_difference_display": "1.7063306e-91",
+          "open_T_reflection_identity_error_display": "2.750845e-89",
+          "open_emitter_relative_profile_error_display": "1.3053350448781551033e-6",
+          "augmented_flux_error_display": "0.0"
+        },
+        {
+          "p": 1,
+          "s": 1,
+          "shift_exact": "0",
+          "augmented_inverse_max_entry_display": "16562571929356309080588.09",
+          "inverse_residual_max_entry_display": "2.7675485e-81",
+          "schur_inverse_relative_difference_display": "2.2488432e-91",
+          "open_T_reflection_identity_error_display": "2.0240711e-89",
+          "open_emitter_relative_profile_error_display": "3.1760630323018209382e-71",
+          "augmented_flux_error_display": "9.8181869e-91"
+        },
+        {
+          "p": 1,
+          "s": 1,
+          "shift_exact": "1/1000000",
+          "augmented_inverse_max_entry_display": "39406094.52937915392179654",
+          "inverse_residual_max_entry_display": "5.5640008e-92",
+          "schur_inverse_relative_difference_display": "7.960172e-92",
+          "open_T_reflection_identity_error_display": "9.0118977e-90",
+          "open_emitter_relative_profile_error_display": "1.3053328545655626769e-6",
+          "augmented_flux_error_display": "4.9090935e-91"
+        },
+        {
+          "p": 1,
+          "s": -1,
+          "shift_exact": "-1/1000000",
+          "augmented_inverse_max_entry_display": "39406179.02872600776482719",
+          "inverse_residual_max_entry_display": "1.3910261e-91",
+          "schur_inverse_relative_difference_display": "7.6131738e-92",
+          "open_T_reflection_identity_error_display": "2.0240711e-89",
+          "open_emitter_relative_profile_error_display": "1.3053350448781551033e-6",
+          "augmented_flux_error_display": "0.0"
+        },
+        {
+          "p": 1,
+          "s": -1,
+          "shift_exact": "0",
+          "augmented_inverse_max_entry_display": "16562571929356309080588.09",
+          "inverse_residual_max_entry_display": "1.0336351e-81",
+          "schur_inverse_relative_difference_display": "2.2479146e-91",
+          "open_T_reflection_identity_error_display": "2.7279722e-89",
+          "open_emitter_relative_profile_error_display": "3.1760630323018209381e-71",
+          "augmented_flux_error_display": "9.8181869e-91"
+        },
+        {
+          "p": 1,
+          "s": -1,
+          "shift_exact": "1/1000000",
+          "augmented_inverse_max_entry_display": "39406094.52937915392179654",
+          "inverse_residual_max_entry_display": "9.7622479e-92",
+          "schur_inverse_relative_difference_display": "1.4491595e-92",
+          "open_T_reflection_identity_error_display": "3.4363654e-90",
+          "open_emitter_relative_profile_error_display": "1.3053328545655626769e-6",
+          "augmented_flux_error_display": "2.4545467e-91"
+        },
+        {
+          "p": -1,
+          "s": 1,
+          "shift_exact": "-1/1000000",
+          "augmented_inverse_max_entry_display": "39406179.02872600776453267",
+          "inverse_residual_max_entry_display": "6.5346354e-92",
+          "schur_inverse_relative_difference_display": "2.061476e-92",
+          "open_T_reflection_identity_error_display": "9.8181869e-90",
+          "open_emitter_relative_profile_error_display": "1.3053350448781551032e-6",
+          "augmented_flux_error_display": "2.4545467e-91"
+        },
+        {
+          "p": -1,
+          "s": 1,
+          "shift_exact": "0",
+          "augmented_inverse_max_entry_display": "16562571929356309080588.09",
+          "inverse_residual_max_entry_display": "1.5498067e-81",
+          "schur_inverse_relative_difference_display": "1.2692578e-91",
+          "open_T_reflection_identity_error_display": "1.5709099e-89",
+          "open_emitter_relative_profile_error_display": "3.1760630323018209381e-71",
+          "augmented_flux_error_display": "1.9636374e-90"
+        },
+        {
+          "p": -1,
+          "s": 1,
+          "shift_exact": "1/1000000",
+          "augmented_inverse_max_entry_display": "39406094.52937915392150203",
+          "inverse_residual_max_entry_display": "1.7273223e-92",
+          "schur_inverse_relative_difference_display": "1.024617e-91",
+          "open_T_reflection_identity_error_display": "3.9272748e-90",
+          "open_emitter_relative_profile_error_display": "1.3053328545655626769e-6",
+          "augmented_flux_error_display": "0.0"
+        },
+        {
+          "p": -1,
+          "s": -1,
+          "shift_exact": "-1/1000000",
+          "augmented_inverse_max_entry_display": "39406179.02872600776453267",
+          "inverse_residual_max_entry_display": "1.6941197e-92",
+          "schur_inverse_relative_difference_display": "6.5314092e-92",
+          "open_T_reflection_identity_error_display": "5.8909122e-90",
+          "open_emitter_relative_profile_error_display": "1.3053350448781551032e-6",
+          "augmented_flux_error_display": "2.4545467e-91"
+        },
+        {
+          "p": -1,
+          "s": -1,
+          "shift_exact": "0",
+          "augmented_inverse_max_entry_display": "16562571929356309080588.09",
+          "inverse_residual_max_entry_display": "4.3044205e-82",
+          "schur_inverse_relative_difference_display": "1.2681018e-91",
+          "open_T_reflection_identity_error_display": "1.7563307e-89",
+          "open_emitter_relative_profile_error_display": "3.1760630323018209382e-71",
+          "augmented_flux_error_display": "1.472728e-90"
+        },
+        {
+          "p": -1,
+          "s": -1,
+          "shift_exact": "1/1000000",
+          "augmented_inverse_max_entry_display": "39406094.52937915392150203",
+          "inverse_residual_max_entry_display": "3.0435659e-92",
+          "schur_inverse_relative_difference_display": "6.8375836e-92",
+          "open_T_reflection_identity_error_display": "5.8909122e-90",
+          "open_emitter_relative_profile_error_display": "1.3053328545655626769e-6",
+          "augmented_flux_error_display": "0.0"
+        }
+      ],
+      "limits": [
+        "supplied clean clock/source vacuum and excited seed",
+        "static complex loop couplings are an explicit additional physical permission",
+        "no practical size or time claim",
+        "no arbitrary exact fit family",
+        "new packet implication and Schur argument require independent review"
+      ],
+      "runtime": {
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "sympy": "1.14.0",
+        "mpmath": "1.3.0",
+        "mpmath_dps": 90,
+        "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+        "elapsed_seconds": 2.0081568751484156,
+        "largest_executed_matrix_dimension": 24,
+        "equivalent_full_two_parity_matching_dimension": 48,
+        "on_shell_diagnostic_points": 3,
+        "sectors_per_point": 4,
+        "optimizers": 0,
+        "time_evolution_simulations": 0,
+        "historical_source_run_limits": {
+          "cpu_cap_seconds": 30,
+          "wall_cap_seconds": 60
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            120,
+            120
+          ],
+          "external_wall_cap_seconds": 120,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        }
+      },
+      "historical_source_program_sha256": "950973354e69857ab19e40dbbf185ada46d1cda8a8a6c201c35fecf97a74623c",
+      "portable_execution": {
+        "source_role": "installed_author",
+        "historical_source_run_limits": {
+          "cpu_cap_seconds": 30,
+          "external_wall_cap_seconds": 60
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            120,
+            120
+          ],
+          "external_wall_cap_seconds": 120,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "source_statement_scope": "Original report scope/limitations strings retain their historical scientific meaning. This is a portable replay, not a new review.",
+        "original_program_sha256": "950973354e69857ab19e40dbbf185ada46d1cda8a8a6c201c35fecf97a74623c"
+      }
+    },
+    "installed_reviewer": {
+      "scope": "New exact model and independent conservative inequalities; no author-code replay or physical momentum sampling",
+      "small_model": {
+        "internal_dimension": 2,
+        "open_channels": 1,
+        "closed_channels": 1,
+        "L": 3,
+        "last_retained_clock": 5,
+        "largest_matrix_dimension": 14,
+        "J": "1",
+        "z": "3/5 + 4*I/5",
+        "q": "1/7",
+        "phase": "5/13 + 12*I/13",
+        "coupling": "1/13",
+        "emitter_energy": "1/7",
+        "energy": "4/5",
+        "B": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "208/35"
+          ]
+        ],
+        "V0": [
+          [
+            "1/3",
+            "1/5"
+          ],
+          [
+            "1/5",
+            "-2/7"
+          ]
+        ],
+        "V1": [
+          [
+            "1/4",
+            "-1/6"
+          ],
+          [
+            "-1/6",
+            "2/9"
+          ]
+        ],
+        "commutator_T_Q_nonzero": {
+          "row": 0,
+          "column": 1,
+          "value": "-9762565728/573951842555 + 9186296856*I/573951842555"
+        },
+        "tail_pairs_exactly_checked": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "direct_augmented_matching": [
+          [
+            "-23/15",
+            "-1/5",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1/5",
+            "-48/7",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "-17/20 + 4*I/5",
+            "1/6",
+            "3672/105625 - 15804*I/105625",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "1/6",
+            "-65/9",
+            "0",
+            "-632/405769 + 12*I/405769"
+          ],
+          [
+            "0",
+            "0",
+            "-4392/105625 - 3156*I/105625",
+            "0",
+            "796720013/1201484375 + 2040912*I/171640625",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "-632/405769 - 12*I/405769",
+            "0",
+            "-9560472111/1809323971"
+          ]
+        ],
+        "direct_emitter_schur": [
+          [
+            "12911333763790310837/19702690595208359375 + 17932456279969488*I/2814670085029765625",
+            "-5621520076128/7723454713321676875 + 101983344867072*I/54064182993251738125"
+          ],
+          [
+            "-327914056051488/54064182993251738125 - 3748560989184*I/54064182993251738125",
+            "-5487250227331097855493/1038464826934379385905 + 1295401423104*I/1038464826934379385905"
+          ]
+        ],
+        "background_reflection": "-281092049153/409965601825 - 298427637096*I/409965601825",
+        "augmented_reflection": "-245821338139985060660109502294974027712040910761313/351338347525235646281631128558839565015878562890625 - 251018931869352003530114533586570647489583133230216*I/351338347525235646281631128558839565015878562890625",
+        "full_closed_emitter_coordinate": "-64299967505514044488314502431695651427776/13491392544969048817214635336659439296609736815 + 149171268755722677853361688340363562864768*I/13491392544969048817214635336659439296609736815",
+        "green_jump_and_matching_identities": "exact",
+        "full_augmented_flux": "exact unit modulus",
+        "wrong_tail_order": {
+          "row": 0,
+          "column": 1,
+          "value": "9762565728/196865481996365 - 9186296856*I/196865481996365"
+        },
+        "wrong_X_Y_order": {
+          "row": 0,
+          "column": 1,
+          "value": "-288563415518592/319906408244093125 - 105731905856256*I/319906408244093125"
+        },
+        "wrong_augmented_lower_sign": {
+          "row": 4,
+          "column": 2,
+          "value": "-8784/105625 - 6312*I/105625"
+        }
+      },
+      "reference_measure": {
+        "jump_times_velocity_equals_sum_dk_weights": "77510160/2575045981",
+        "omitted_velocity_residual": "-29066310/2575045981",
+        "global_mass_reason": "normalized seed spectral measure of a bounded selfadjoint full-line Hamiltonian; analytically reviewed, not inferred from this point"
+      },
+      "complete_overlap_discriminators": {
+        "rectangular_isometry_shape": [
+          4,
+          2
+        ],
+        "seed_overlap_matrix": [
+          [
+            "36/169 + 432*I/845",
+            "48/169 + 576*I/845"
+          ],
+          [
+            "-48/169 - 576*I/845",
+            "36/169 + 432*I/845"
+          ]
+        ],
+        "exact_error_gram": [
+          [
+            "266/169",
+            "-1152*I/845"
+          ],
+          [
+            "1152*I/845",
+            "266/169"
+          ]
+        ],
+        "exact_squared_operator_error": "2482/845",
+        "incorrect_diagonal_only_ceiling": "266/169",
+        "off_diagonal_matrix_gram": [
+          [
+            "169/4000000",
+            "0"
+          ],
+          [
+            "0",
+            "1/40000"
+          ]
+        ],
+        "aligned_column_squared_operator_norm": 2,
+        "aligned_maximum_individual_column_squared_norm": 1
+      },
+      "independent_uniform_enclosures": {
+        "eta": {
+          "exact": "131/100000000",
+          "approximate_display": 1.31e-06
+        },
+        "delta": {
+          "exact": "13/25000000000",
+          "approximate_display": 5.2e-10
+        },
+        "closed_drive": {
+          "exact": "29/500000000",
+          "approximate_display": 5.8e-08
+        },
+        "gamma_lower": {
+          "exact": "977/50",
+          "approximate_display": 19.54
+        },
+        "xi": {
+          "exact": "263/100000000",
+          "approximate_display": 2.63e-06
+        },
+        "profile_relative_error": {
+          "exact": "3941/1000000000",
+          "approximate_display": 3.941e-06
+        },
+        "off_overlap": {
+          "exact": "7/20000000000000000000",
+          "approximate_display": 3.5e-19
+        },
+        "reference_mass_loss": {
+          "exact": "13/1000000000",
+          "approximate_display": 1.3e-08
+        },
+        "seed_squared_error": {
+          "exact": "79080000000007/10000000000000000000",
+          "approximate_display": 7.9080000000007e-06
+        },
+        "reflection_correction": {
+          "exact": "6409922601208496093750000000000029480749750204686638539197519/610351562500000000000000000000000000000000000000000000000000000000",
+          "approximate_display": 1.050201718982e-05
+        },
+        "K0_expression": {
+          "exact": "3405353/250",
+          "approximate_display": 13621.412
+        },
+        "K1_expression": {
+          "exact": "118392381/200",
+          "approximate_display": 591961.905
+        },
+        "Dj": {
+          "exact": "4000000004000000000000000000000010000000000",
+          "approximate_display": 4.000000004e+42
+        },
+        "escape": {
+          "exact": "500000000000000000000003/22500000000000000000000000000",
+          "approximate_display": 2.2222222222222223e-05
+        },
+        "all_future_error": {
+          "exact": "84065000000000000000000003/22500000000000000000000000000",
+          "approximate_display": 0.0037362222222222224
+        },
+        "finite_horizon_exponent_margin": "4399999999999999999999999999999999999999999999999999999999999999999999978",
+        "point_spectrum_operator_ceiling": "1/12500",
+        "headline_bounds_recovered": {
+          "seed": "3/1000",
+          "phase": "714/1000000",
+          "all_future": "4/1000",
+          "finite_horizon": "5/1000"
+        }
+      },
+      "runtime": {
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "sympy": "1.14.0",
+        "elapsed_seconds": 0.3641491667367518,
+        "maximum_matrix_dimension": 14
+      },
+      "limits": [
+        "The small exact model checks conventions and noncommuting identities, not the physical interval",
+        "The interval certificate follows analytic norm inequalities with inherited ladder constants",
+        "No new physical point-state certificate, optimizer, wavepacket quadrature or large-clock evolution",
+        "Reviewer authored earlier stationary ladder and reviewed earlier generic packet proof; source-exposed same model"
+      ],
+      "portable_execution": {
+        "source_role": "installed_reviewer",
+        "historical_source_run_limits": {
+          "cpu_cap_seconds": 45,
+          "external_wall_cap_seconds": 60
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            120,
+            120
+          ],
+          "external_wall_cap_seconds": 120,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "source_statement_scope": "Original report scope/limitations strings retain their historical scientific meaning. This is a portable replay, not a new review.",
+        "original_program_sha256": "92cff9237938a430c68aa36bbf4c5f952c8392ea3d01c5d0bcc736d1a9b7d680"
+      }
+    },
+    "weighted_author": {
+      "scope": "Author scalar checks only. Weighted integral proof and installed theorem remain provisional pending separate review.",
+      "weighted_constants": {
+        "resonant_rank_factor": {
+          "exact_rational": "27911832347389367531340319637125369169511287361618078165246641269657472657005826786487618976012721756899751908528291506175860599519408264062077822819022878390049243866427216506647589946440752101348810645081/27911759478769525739358418482248372351422432962546711879717928967807420453568976157189658744632221673091992797561649319023284197082389724934004952595653645246484965655398286395728115068000000000000000000000",
+          "display_only_float": 1.0000026106781228
+        },
+        "F1_upper": {
+          "exact_rational": "1037002000013",
+          "display_only_float": 1037002000013.0
+        },
+        "weighted_phase_derivative_upper": {
+          "exact_rational": "61000000000000012500153/3125000000",
+          "display_only_float": 19520000000000.004
+        },
+        "localized_column_upper": {
+          "exact_rational": "1366000000033184472008586",
+          "display_only_float": 1.3660000000331844e+24
+        },
+        "grouped_D": {
+          "exact_rational": "3000000000000000000000000",
+          "display_only_float": 3e+24
+        },
+        "A0": {
+          "exact_rational": "3000000000000",
+          "display_only_float": 3000000000000.0
+        },
+        "B0": {
+          "exact_rational": "23000000000000",
+          "display_only_float": 23000000000000.0
+        },
+        "escape_at_onset": {
+          "exact_rational": "52000027/540000000000",
+          "display_only_float": 9.62963462962963e-05
+        },
+        "complete_isometry_at_onset": {
+          "exact_rational": "2057560027/540000000000",
+          "display_only_float": 0.0038102963462962962
+        },
+        "finite_complete_isometry_upper": {
+          "exact_rational": "2597560027/540000000000",
+          "display_only_float": 0.004810296346296297
+        }
+      },
+      "time_and_clock": {
+        "onset": 1000000000000000000000000000000000000,
+        "Tobs": 2000000000000000000000000000000000000,
+        "M": 50000000000000000000000000000000000000,
+        "first_omitted_distance": 49999999999999999999999999999999999987
+      },
+      "unchanged_comparator": "Same f, rho, beta, zeta, actual scalar nu+2kappa and total old aging as the installed source.",
+      "limits": {
+        "matrices": 0,
+        "quadrature": false,
+        "parameter_search": false,
+        "time_evolution": false,
+        "independent_review": false,
+        "historical_source_run_limits": {
+          "cpu_cap_seconds": 5,
+          "wrapper_wall_cap_seconds": 10
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            120,
+            120
+          ],
+          "external_wall_cap_seconds": 120,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        }
+      },
+      "elapsed_seconds": 0.0016614170745015144,
+      "portable_execution": {
+        "source_role": "weighted_author",
+        "historical_source_run_limits": {
+          "cpu_cap_seconds": 5,
+          "external_wall_cap_seconds": 10
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            120,
+            120
+          ],
+          "external_wall_cap_seconds": 120,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "source_statement_scope": "Original report scope/limitations strings retain their historical scientific meaning. This is a portable replay, not a new review.",
+        "original_program_sha256": "0be886d71839040982f0b372d39450a88166e1624b116a14d54442dc681490af"
+      }
+    },
+    "weighted_reviewer": {
+      "status": "Declared exact algebra and inequalities completed; all installed-system premises remain conditional.",
+      "premise_status": "Installed theorem is PROVISIONAL; this execution does not accept or recheck its physical inverse, optical, seed-overlap, or reflection certificates.",
+      "checks": {
+        "coupling_and_width_match_provisional_inputs": true,
+        "I2_antiderivative": true,
+        "I3_antiderivative": true,
+        "I2_whole_line_value": true,
+        "I3_whole_line_value": true,
+        "real_denominator_monotonicity_margin": true,
+        "I2_coefficient_below_17": true,
+        "I3_coefficient_below_one_half": true,
+        "Cauchy_Schwarz_I1_squared_margin": true,
+        "I3_linewidth_scaling": true,
+        "cutoff_left_zero_trace": true,
+        "cutoff_right_zero_trace": true,
+        "cutoff_left_join_continuous": true,
+        "cutoff_right_join_continuous": true,
+        "cutoff_total_variation_two": true,
+        "cutoff_and_quotient_derivative": true,
+        "form_factor_derivative_bound_26": true,
+        "packet_a1": true,
+        "packet_U_squared_coefficient": true,
+        "full_eight_coordinate_rank_one_inverse": true,
+        "rank_one_inverse_matches_direct_inverse": true,
+        "all_complementary_coordinates_present": true,
+        "discarding_closed_summand_fails": true,
+        "scalar_only_inverse_fails": true,
+        "exact_center_on_unit_circle": true,
+        "reference_form_factor_lower": true,
+        "reference_optical_coefficient_lower": true,
+        "closed_tail_formula_matches_input": true,
+        "reconstructed_xi_matches_input": true,
+        "xi_below_one": true,
+        "rank_factor_below_two_cross_multiplied": true,
+        "unit_phase_derivative_Cauchy_identity": true,
+        "form_factor_modulus_squared_derivative": true,
+        "n_derivative_constants": true,
+        "F1_below_two_over_kappa": true,
+        "incoming_A0_margin": true,
+        "outgoing_B0_margin": true,
+        "y_derivative_rounding_coefficient_0": true,
+        "y_derivative_rounding_coefficient_1": true,
+        "y_derivative_rounding_coefficient_2": true,
+        "complete_C_rounding_coefficient_0": true,
+        "complete_C_rounding_coefficient_1": true,
+        "complete_C_derivative_rounding_coefficient_0": true,
+        "complete_C_derivative_rounding_coefficient_1": true,
+        "complete_C_derivative_rounding_coefficient_2": true,
+        "weighted_integrand_has_no_constant_term": true,
+        "weighted_integrand_degree_three": true,
+        "U_coefficient_complete": true,
+        "U2_coefficient_complete": true,
+        "U3_coefficient_complete": true,
+        "weighted_column_bound_rearrangement": true,
+        "column_bound_below_1p5_over_kappa_squared": true,
+        "within_parity_square_sum_ceiling": true,
+        "weighted_IBP_product_derivative": true,
+        "positive_real_normalization_inequality_polynomial": true,
+        "square_root_denominator_lower": true,
+        "sqrt_two_pi_lower_from_pi_above_three": true,
+        "normalization_vT_above_one": true,
+        "normalization_outgoing_tail_below_half": true,
+        "seed_error_is_an_inherited_premise": true,
+        "reflection_error_is_an_inherited_premise": true,
+        "escape_below_0p000097": true,
+        "complete_below_0p004": true,
+        "graph_distance_formula": true,
+        "finite_clock_chebyshev_margin": true,
+        "finite_complete_below_0p005": true
+      },
+      "positive_exact_margins": {
+        "real_denominator_monotonicity_margin": "156249999999999999993/12500000000000000000000",
+        "I2_coefficient_below_17": "3/19",
+        "I3_coefficient_below_one_half": "41/722",
+        "Cauchy_Schwarz_I1_squared_margin": "499983/500000",
+        "reference_form_factor_lower": "457997333461889675320754816653961776062793522806469021449757879199/14235471290000610730275866674766791167335332069686261070685400500000",
+        "reference_optical_coefficient_lower": "1670581140625575722777967282968879604772688322425219310635683987065417570616947053708744346049468157962710017218753371122877203315219324/3041868306023720476617049700472764972815450817181164566513326468776701786392947361967789157395291484398132398833319705237256116768814779",
+        "xi_below_one": "6977939869692381434839604620562093087855608240636677969929482241951855113392244039297414686158055418272998199390412329755821049270597431233501238148913411311621241413849571598932028767/6977958086847341882835079909272440596732598910957267058185140706857540573935322937770913488779217889083485121945578107190485343859058687467814437362757756326562500000000000000000000000",
+        "rank_factor_below_two_cross_multiplied": "27911686610149683947376517327371375533333578563475345594189216665957368250132125527891698513251721589284233686595007131870707794645371185805932082372284412102920687444369356284808640189559247898651189354919/27911832347389367531340319637089762386930395643829068232740562827430162295741291751083653955116871556333940487782312428761941375436234749871257749451031025306250000000000000000000000000000000000000000000000",
+        "F1_below_two_over_kappa": "962997999987",
+        "incoming_A0_margin": "392599599997399/200",
+        "outgoing_B0_margin": "7634368749959346874847/3125000000",
+        "y_derivative_rounding_coefficient_0": "67/250000000000000",
+        "y_derivative_rounding_coefficient_1": "19/31250000000000",
+        "y_derivative_rounding_coefficient_2": "103/250000000000000",
+        "complete_C_rounding_coefficient_0": "149999997/25000000000000000000",
+        "complete_C_rounding_coefficient_1": "24999999999549999991/25000000000000000000",
+        "complete_C_derivative_rounding_coefficient_0": "49999999/50000000000000000000",
+        "complete_C_derivative_rounding_coefficient_1": "659999927/10000000000000000000",
+        "complete_C_derivative_rounding_coefficient_2": "49999999990649998913/50000000000000000000",
+        "column_bound_below_1p5_over_kappa_squared": "133999999966815527991414",
+        "within_parity_square_sum_ceiling": "5268087999818680044942883677635022744493484561208",
+        "square_root_denominator_lower": "2100000000000000000000000000000000",
+        "sqrt_two_pi_lower_from_pi_above_three": "6/25",
+        "normalization_vT_above_one": "24999999999999999999999999999999999",
+        "normalization_outgoing_tail_below_half": "134977/270000",
+        "escape_below_0p000097": "379973/540000000000",
+        "complete_below_0p004": "102439973/540000000000",
+        "finite_clock_chebyshev_margin": "4399999999999999999999999999999999978",
+        "finite_complete_below_0p005": "102439973/540000000000"
+      },
+      "identities": {
+        "whole_line_I2": "pi/h",
+        "whole_line_I3": "2/h**2",
+        "y_derivative_rounding": "67*U**2/250000000000000 + 19*U/31250000000000 + 103/250000000000000",
+        "complete_C_rounding": "149999997*U/25000000000000000000 + 24999999999549999991/25000000000000000000",
+        "complete_C_derivative_rounding": "49999999*U**2/50000000000000000000 + 659999927*U/10000000000000000000 + 49999999990649998913/50000000000000000000",
+        "weighted_product_coefficients": {
+          "1": "64003197/1000000000000",
+          "2": "1952024000317/1000000000000000000000000",
+          "3": "683/250000000000000000000000000"
+        }
+      },
+      "countercases": {
+        "cutoff_omission": {
+          "test": "Constant nonzero form factor and denominator; only chi varies.",
+          "actual_normalized_taper_variation": "2",
+          "variation_if_cutoff_derivative_is_omitted": 0,
+          "meaning": "Omitting the taper derivative fails even before resonance behavior is considered."
+        },
+        "closed_inverse_omission": {
+          "dimension": 8,
+          "complementary_coordinates": 7,
+          "rank_of_retained_resonant_term": 1,
+          "meaning": "The rank-one resonant term alone is not an inverse of the eight-coordinate system; the closed summand is essential."
+        },
+        "emitter_coordinate_omission": {
+          "test": "Clock correction zero and emitter correction a unit vector.",
+          "full_localized_norm": 1,
+          "clock_only_norm": 0,
+          "meaning": "The separate y and y-prime terms must remain in the complete localized norm."
+        }
+      },
+      "derived_bounds": {
+        "real_denominator_derivative_lower": {
+          "exact": "312499999999999999993/12500000000000000000000",
+          "display_only_float": 0.025
+        },
+        "I2_coefficient_pi_below_four": {
+          "exact": "320/19",
+          "display_only_float": 16.842105263157894
+        },
+        "I3_coefficient": {
+          "exact": "160/361",
+          "display_only_float": 0.44321329639889195
+        },
+        "rank_one_factor": {
+          "exact": "27911832347389367531340319637125369169511287361618078165246641269657472657005826786487618976012721756899751908528291506175860599519408264062077822819022878390049243866427216506647589946440752101348810645081/27911759478769525739358418482248372351422432962546711879717928967807420453568976157189658744632221673091992797561649319023284197082389724934004952595653645246484965655398286395728115068000000000000000000000",
+          "display_only_float": 1.0000026106781228
+        },
+        "F1_upper": {
+          "exact": "1037002000013",
+          "display_only_float": 1037002000013.0
+        },
+        "weighted_phase_upper": {
+          "exact": "61000000000000012500153/3125000000",
+          "display_only_float": 19520000000000.004
+        },
+        "localized_column_upper": {
+          "exact": "1366000000033184472008586",
+          "display_only_float": 1.3660000000331844e+24
+        },
+        "grouped_D": {
+          "exact": "3000000000000000000000000",
+          "display_only_float": 3e+24
+        },
+        "A0": {
+          "exact": "3000000000000",
+          "display_only_float": 3000000000000.0
+        },
+        "B0": {
+          "exact": "23000000000000",
+          "display_only_float": 23000000000000.0
+        },
+        "outgoing_tail_norm_upper_at_T": {
+          "exact": "23/270000",
+          "display_only_float": 8.518518518518518e-05
+        },
+        "escape_at_T": {
+          "exact": "52000027/540000000000",
+          "display_only_float": 9.62963462962963e-05
+        },
+        "complete_at_T": {
+          "exact": "2057560027/540000000000",
+          "display_only_float": 0.0038102963462962962
+        },
+        "finite_complete": {
+          "exact": "2597560027/540000000000",
+          "display_only_float": 0.004810296346296297
+        }
+      },
+      "time_and_distance": {
+        "onset": 1000000000000000000000000000000000000,
+        "observation_horizon": 2000000000000000000000000000000000000,
+        "clock_sites": 50000000000000000000000000000000000000,
+        "first_omitted_distance": 49999999999999999999999999999999999987
+      },
+      "resources": {
+        "largest_matrix_dimension": 8,
+        "largest_inverse_dimension": 8,
+        "quadrature": false,
+        "resonance_samples": 0,
+        "time_evolution": false,
+        "author_program_imported_or_executed": false,
+        "installed_physical_inverse_recomputed": false,
+        "seed_overlap_recomputed": false,
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "sympy": "1.14.0",
+        "python_executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+        "elapsed_seconds": 10.323132417164743,
+        "historical_source_run_limits": {
+          "cpu_cap_seconds": 45,
+          "external_wall_cap_seconds": 60
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            120,
+            120
+          ],
+          "external_wall_cap_seconds": 120,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        }
+      },
+      "portable_execution": {
+        "source_role": "weighted_reviewer",
+        "historical_source_run_limits": {
+          "cpu_cap_seconds": 45,
+          "external_wall_cap_seconds": 60
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            120,
+            120
+          ],
+          "external_wall_cap_seconds": 120,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "source_statement_scope": "Original report scope/limitations strings retain their historical scientific meaning. This is a portable replay, not a new review.",
+        "original_program_sha256": "1810b2042defa23bcfe5a32bed37f025ff41d75d7727cdeb3c2e3c620bdfcc8e"
+      }
+    }
+  },
+  "actual_combined_process_limits": {
+    "cpu_soft_hard_seconds": [
+      120,
+      120
+    ],
+    "external_wall_cap_seconds": 120,
+    "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+  },
+  "elapsed_seconds": 14.289141959045082,
+  "input_sha256": {
+    "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44",
+    "outputs/product_seed_emitter_2026_10_17_inputs/ARTIFACT_MANIFEST.json": "a88cec6d36d9e686d4a00e256ebd9b13a6dfe2525a757dc0f8ebb5c40c4b9540",
+    "outputs/product_seed_emitter_2026_10_17_inputs/EMBEDDED_SOURCE_MAP.json": "1e1070368a7d2734279aefbcc0ec6a255d67d0e3973b4503fb2b48779838fbad",
+    "outputs/product_seed_emitter_2026_10_17_inputs/INPUT_MAP.json": "145ea13e0876b664a6dc1f0815d758c6a795b694dc961cd9fc962db873e91c0c",
+    "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json": "b132191aeeb6411ce9d5711f6d3546f7d87befaff5541e62a923edf9f43ad6f0",
+    "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md": "e5cc6a51376132ae0dcfc925f392ee011b9096a4b7fc7ac6649ff7b391054967",
+    "outputs/product_seed_emitter_2026_10_17_inputs/draft_history/DRAFT_VERIFICATION.json": "1178e4550df10405c4949c256365c394dfb29cdd19c37e4e70c9fd50751cb2fe",
+    "outputs/product_seed_emitter_2026_10_17_inputs/draft_history/EMBEDDED_SOURCE_MAP.json": "0996629e757cadaa7aff2c55beea16feb2ba7efa4a327692fab22b9027d5a806",
+    "outputs/product_seed_emitter_2026_10_17_inputs/draft_history/FREEZE.json": "ebaec3d56d513b671515c3caf03e360e420ed7c8a4af35512ed3efeb460a20ac",
+    "outputs/product_seed_emitter_2026_10_17_inputs/draft_history/INTEGRATION_PLAN.md.txt": "6ea7acba2028c088287421a4c82cb509bd8fb33da39cd182b90a192c4ddc3068",
+    "outputs/product_seed_emitter_2026_10_17_inputs/draft_history/PROGRAM_INPUTS.json": "e55edb109c6f05b943310edfcc046e583ee5a9e26ff2beef369366a0f130c329",
+    "outputs/product_seed_emitter_2026_10_17_inputs/draft_history/SOURCE_INVENTORY.json": "f21424757c51796c6fb1daf561d7959720c5833ad5534c1bf8717ac4e2219546",
+    "outputs/product_seed_emitter_2026_10_17_inputs/draft_history/SOURCE_INVENTORY.md.txt": "45122cd56cf9942737c4f135af8edc19a0a5ad36417f689bf76d1111b8f4f52f",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_context/CLAIM_STATUS.md.txt": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_context/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md.txt": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_context/SCIENCE_WORKFLOW.md.txt": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_context/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ALGEBRA_CERTIFICATE.json": "c281398bf83fc3f76b1c416221fc7a931402207f90a5cb13197124a3b14c9b8d",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/EXECUTION.json": "166f5689ed8c0a1cca9d7de1680e2aaab6854925c89c21680bccbe4a76af58b4",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/FREEZE.json": "f5278acb3899cb2749009031c5cff5fd24f72a05d539aa0f3957c6a500af04db",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/LITERATURE_NOTES.md.txt": "9bc10d11f46a9c51d5419da0afc44c3f801aedd37224c3638e7946560922a527",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/SOURCE_MANIFEST.json": "10ae4467eaa888d29e1cc21150a75b158ed197909c2e39af1c907355fd49542f",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/algebra.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/algebra.stdout": "c281398bf83fc3f76b1c416221fc7a931402207f90a5cb13197124a3b14c9b8d",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/emitter_algebra_check.py": "236f558f94b8e3270c67b4cb218056b4024a2c902e276793b0c522100de461b9",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/INTERVAL_CANDIDATE.md.txt": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/PREPARATION_NEXT_DECISION.md.txt": "0965984b3fdcff4014cac81079e2ca881bdc3bb8178f80497d24935ff38bcc55",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/PREPARATION_SOURCE_SEARCH.json": "38cf5d4e03f1b10b4d7a148bef08217938d2859f974a42b5fe54347d1ed397ee",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/THEOREM_V2.md.txt": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/EXECUTION.json": "ad7609c14553a3fa794cc0120e870e9288315ca0f18aa4fde717c2ec1a7d98dc",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/FILE_MANIFEST.json": "843e43e45118328698fa5ced1d9329f9eb4d531cefe52d49268b9d49675ce42e",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/FREEZE.json": "41f82eadafa1a803617753485af94a50dc5bb277bb22a61f8b049bb80d0df3a8",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/REPORT.md.txt": "e4eec63593ce9f04cee67ef9734d570db1d6cd29886190a44be8f817a541ae7f",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/RESULTS.json": "c43d1d1750fc33fedba9347ea70c131cfc8738432167106de6b6873c6c3e43dd",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/SOURCE_PINS.json": "5a700b1dc7c56e7805ebfba4cea88bca6746139beb189fe501f6e6294b16f8d0",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/check.stdout": "e73b7ebba85e3ac8e0d79b9338131819e02a07acae87f4166ee4893f6f78ba16",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/check_emitter.py": "c2faafa025ca3905bd88c6d8110a2a8888765e881f451ff1df1a5acf1ad37196",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/run_check.py": "e6076fa51f40e3319588658a898dd5636d9d05fafe4193ba363ec0411a393540",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/ALGEBRA_CERTIFICATE.json": "c281398bf83fc3f76b1c416221fc7a931402207f90a5cb13197124a3b14c9b8d",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/EXECUTION.json": "166f5689ed8c0a1cca9d7de1680e2aaab6854925c89c21680bccbe4a76af58b4",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/FREEZE.json": "f5278acb3899cb2749009031c5cff5fd24f72a05d539aa0f3957c6a500af04db",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/LITERATURE_NOTES.md.txt": "9bc10d11f46a9c51d5419da0afc44c3f801aedd37224c3638e7946560922a527",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/ROUTE.md.txt": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/SOURCE_MANIFEST.json": "10ae4467eaa888d29e1cc21150a75b158ed197909c2e39af1c907355fd49542f",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/algebra.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/algebra.stdout": "c281398bf83fc3f76b1c416221fc7a931402207f90a5cb13197124a3b14c9b8d",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/emitter_algebra_check.py": "236f558f94b8e3270c67b4cb218056b4024a2c902e276793b0c522100de461b9",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/inputs/INTERVAL_CANDIDATE.md.txt": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/inputs/PREPARATION_NEXT_DECISION.md.txt": "0965984b3fdcff4014cac81079e2ca881bdc3bb8178f80497d24935ff38bcc55",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/inputs/PREPARATION_SOURCE_SEARCH.json": "38cf5d4e03f1b10b4d7a148bef08217938d2859f974a42b5fe54347d1ed397ee",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/inputs/THEOREM_V2.md.txt": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/generic_review/REVIEW.md.txt": "bba09ef378466a3787ebfbbbd942a81fbe200031a24d04f799d2543e510673f6",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/interval_review/FREEZE.json": "26b4295697311102b543303ef3f441dd8ef620a4eab6b34e3609a5da87b185a4",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/interval_review/REVIEW.md.txt": "a3ab8c94ce4c842980e2144766be0994b5f5d783f29d14d1cd25a7a2567dfe8a",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/process/SCIENCE_WORKFLOW.md.txt": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/root/QUALIFICATION.md.txt": "a1700102e8d15d37252469e3af6df5648d8054ff77e3bf836f3802328c25826f",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CAPS.json": "95493e12b46819b0418f1b618eeaf9a6621674123f542eb3961523682c270bb1",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CERTIFICATE.json": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/FREEZE.json": "2f3255b02b961dcff4cef36b4c59139a8c86ecdfeccac9a327ed11412772170d",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/RUNTIME_IDENTITIES.json": "e7702bff1c628b2acdc21b452a42ae3f3c274f8262bc3c9f510fb039279730b4",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/SOURCE_MANIFEST.json": "0811516c109480f61074ce53c837843f636857401f615d8d45ad856b13bb57e7",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/certify_installed_emitter.py": "950973354e69857ab19e40dbbf185ada46d1cda8a8a6c201c35fecf97a74623c",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/autonomous_emitter_route__FREEZE.json": "f5278acb3899cb2749009031c5cff5fd24f72a05d539aa0f3957c6a500af04db",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/autonomous_emitter_route__ROUTE.md.txt": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md.txt": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md.txt": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json": "6f057d8a580217d29a09d7683462f5b35b71de093e75c8d07a12283cde33593f",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/run01.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/run01.stdout": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/run01_execution.json": "7301869972d068c99c7e8052f677e5fc1d16afe7b83a1596c7672f70b7ff27eb",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/run01_script.py": "950973354e69857ab19e40dbbf185ada46d1cda8a8a6c201c35fecf97a74623c",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/CAPS.json": "641338f2a879b46a8806fc75dbafc51e381c4d87ceab113a5c147e29393c5231",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/EXECUTION.json": "2a3b0f06ae82da2c87f025d35d5529ad73c93f82a82c908f066534aebc06897c",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/FILE_MANIFEST.json": "4ee7be5d50883ad26b1cf3f897b9645058d83608c441364e0578172a32a104ba",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/FREEZE.json": "56fdd78222dc4b8df65546a481b585b49766abcd388d2775076ac6f4ddf5af9f",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/REPORT.md.txt": "cf9f05affa0155ff4069549490f61971d1d136b9f1e37a5d566c45b0f8d9590f",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/RESULTS.json": "145c93679e8b9e9b8ea14751d6edfe1080aa7a93334cfe773fb730e883f89e94",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/SOURCE_PINS.json": "b47ce14623db1efc9347a7f9447a32f8ea07bebfdf51c16c2633c5e2fe3a0726",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/attempt_01/EXECUTION.json": "2a3b0f06ae82da2c87f025d35d5529ad73c93f82a82c908f066534aebc06897c",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/attempt_01/check_installed.py": "92cff9237938a430c68aa36bbf4c5f952c8392ea3d01c5d0bcc736d1a9b7d680",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/attempt_01/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/attempt_01/stdout.json": "145c93679e8b9e9b8ea14751d6edfe1080aa7a93334cfe773fb730e883f89e94",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/check_installed.py": "92cff9237938a430c68aa36bbf4c5f952c8392ea3d01c5d0bcc736d1a9b7d680",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/run_check.py": "d091d2bd5d77931a69635058ce5ba6be9208bbe5e831ff37532895e7ea0b75ec",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/CANDIDATE.md.txt": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/CAPS.json": "95493e12b46819b0418f1b618eeaf9a6621674123f542eb3961523682c270bb1",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/CERTIFICATE.json": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/FREEZE.json": "2f3255b02b961dcff4cef36b4c59139a8c86ecdfeccac9a327ed11412772170d",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/RUNTIME_IDENTITIES.json": "e7702bff1c628b2acdc21b452a42ae3f3c274f8262bc3c9f510fb039279730b4",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/SOURCE_MANIFEST.json": "0811516c109480f61074ce53c837843f636857401f615d8d45ad856b13bb57e7",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/certify_installed_emitter.py": "950973354e69857ab19e40dbbf185ada46d1cda8a8a6c201c35fecf97a74623c",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/inputs/autonomous_emitter_route__FREEZE.json": "f5278acb3899cb2749009031c5cff5fd24f72a05d539aa0f3957c6a500af04db",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/inputs/autonomous_emitter_route__ROUTE.md.txt": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md.txt": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/inputs/two_body_interval_bridge__CANDIDATE.md.txt": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/inputs/two_body_interval_bridge__CERTIFICATE.json": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json": "6f057d8a580217d29a09d7683462f5b35b71de093e75c8d07a12283cde33593f",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/run01.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/run01.stdout": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/run01_execution.json": "7301869972d068c99c7e8052f677e5fc1d16afe7b83a1596c7672f70b7ff27eb",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/run01_script.py": "950973354e69857ab19e40dbbf185ada46d1cda8a8a6c201c35fecf97a74623c",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/autonomous_emitter_route/ROUTE.md.txt": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/emitter_independent_review/REPORT.md.txt": "e4eec63593ce9f04cee67ef9734d570db1d6cd29886190a44be8f817a541ae7f",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/emitter_root_qualification/ACCEPTANCE.json": "c7ff809b997643948045f161db54ff596be8240896d5c0319ca7fa6279a4888d",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/emitter_root_qualification/QUALIFICATION.md.txt": "41d7ef0ce15f54c710b0b7c7a7b9734e1bec25b78d275c73ac34d098bcbee3dd",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/process/SCIENCE_WORKFLOW.md.txt": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/process/SKILL_FRESHNESS_CHECK.md.txt": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/process/physics-claim-reviewer/SKILL.md.txt": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/process/proof-search-governance.md.txt": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/process/review-loop/SKILL.md.txt": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/ACCEPTANCE.json": "c99e0c13ec2469910d74d1fe487d9d4ae09539d1ca3d46f53047dc36d509963c",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/QUALIFICATION.md.txt": "dfe73e8d332dc81bac378daf480662f74e95e3091f01fce11d6e2098f7d7596d",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/SOURCE_READ.json": "c8129b6b9020ac06321354beee2db03b918fa1be160c0c7a35fd495c9e61ceed",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/qualify.py": "209329bb5d20142e22ef6fb6c11da7a5879bc4634f8214fa9b266f21d555ce29",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_root_qualification/ACCEPTANCE.json": "c7ff809b997643948045f161db54ff596be8240896d5c0319ca7fa6279a4888d",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_root_qualification/QUALIFICATION.md.txt": "41d7ef0ce15f54c710b0b7c7a7b9734e1bec25b78d275c73ac34d098bcbee3dd",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/BOUNDS.json": "c87b11324584d3cc461010b155644f3e4d25201ec0267ad14158f8cd0c50d6b5",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt": "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/EXECUTION.json": "3be3665de14a5961f7cbda7d589f4925eb0aea96bd12f7a08fce76501315a174",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/FREEZE.json": "6db59cab5cb3537070f8e29890fc4d93b38b353a87632b174b759ca1722a2198",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/SOURCE_PINS.json": "4d5178221ee4a48e89f79aba7a6d4f9d755c29ef674a7930e81fe0ff2781e376",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/check_bounds.py": "0be886d71839040982f0b372d39450a88166e1624b116a14d54442dc681490af",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/EMITTER_ROUTE.md.txt": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/INSTALLED_CANDIDATE.md.txt": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/INSTALLED_CERTIFICATE.json": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/PACKET_THEOREM.md.txt": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/run_check.py": "7850555720d04de4c9b8f60ae44ccb323820963094f9f4caa85331e21c70eedb",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/stdout": "736db8ba5f90cbd4823516f484b8a1b572622b9aa0af22639034cde743c31407",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/FILE_MANIFEST.json": "1c6c71a662a75f52ac341a4cbeec80d66b4c0c0ade5119398e5de5e3e72d3706",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/FREEZE.json": "c75e1fe474ea336a0295d1a4699e2266277bc8c0111e4f11d813cce1cdd2b9c4",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/REPORT.md.txt": "cb309d98863a09a0db9b47b559a4e7a3a6f55d314b78dfd5379b57a089504028",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/RESOURCE_PLAN.md.txt": "5ea3923770581013b81c525af079f81600d105f960cc03906cd0251e07df9268",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/SOURCE_PINS.json": "04f4b586dba144f9c8830be1f23346860a3fc017a86a68a67084c55582ec1c50",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/SOURCE_RECHECK.json": "77dc9b604fccdc58d4aed57abf874a29285208a5c28d4f91a2d4c19f8ce9dcb2",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/check_weighted_escape.py": "1810b2042defa23bcfe5a32bed37f025ff41d75d7727cdeb3c2e3c620bdfcc8e",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/run_check.py": "97e2ae97cc753b9e36d2f5ed01851d86ee78af0f87dcc07ca53cb88d81c25423",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/runs/attempt_1/EXECUTION.json": "2d73302e1d6fd85429bfcaf2bda6d92bbfb8af78a8a54f3c030638bc6cd1d64d",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/runs/attempt_1/RESULT.json": "559766804ced7727e12fc5aeeacba7608e1956a8f4b50f84329038056365fb23",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/runs/attempt_1/SOURCE_PINS_AT_LAUNCH.json": "04f4b586dba144f9c8830be1f23346860a3fc017a86a68a67084c55582ec1c50",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/runs/attempt_1/executed_source.py": "1810b2042defa23bcfe5a32bed37f025ff41d75d7727cdeb3c2e3c620bdfcc8e",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/runs/attempt_1/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/runs/attempt_1/stdout": "ffe4ec0afb2c5f260813316ae983101f03ee550a752c871733a784b9ea881113",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/BOUNDS.json": "c87b11324584d3cc461010b155644f3e4d25201ec0267ad14158f8cd0c50d6b5",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/CANDIDATE.md.txt": "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/EXECUTION.json": "3be3665de14a5961f7cbda7d589f4925eb0aea96bd12f7a08fce76501315a174",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/FREEZE.json": "6db59cab5cb3537070f8e29890fc4d93b38b353a87632b174b759ca1722a2198",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/SOURCE_PINS.json": "4d5178221ee4a48e89f79aba7a6d4f9d755c29ef674a7930e81fe0ff2781e376",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/check_bounds.py": "0be886d71839040982f0b372d39450a88166e1624b116a14d54442dc681490af",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/EMITTER_ROUTE.md.txt": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CANDIDATE.md.txt": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CERTIFICATE.json": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/PACKET_THEOREM.md.txt": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/run_check.py": "7850555720d04de4c9b8f60ae44ccb323820963094f9f4caa85331e21c70eedb",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/stdout": "736db8ba5f90cbd4823516f484b8a1b572622b9aa0af22639034cde743c31407",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/instructions/SCIENCE_WORKFLOW.md.txt": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/prior_review/REPORT.md.txt": "e4eec63593ce9f04cee67ef9734d570db1d6cd29886190a44be8f817a541ae7f",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/ACCEPTANCE.json": "01e6cf9d8e54d8dd38157f5901a0c9c2b7bc0ed2890e7895b2213a26b1469a16",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/QUALIFICATION.md.txt": "f3513816c0bbe060f50860e02a2f1c49afcd42056314af9cc161885076882f4b",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/qualify.py": "f95f42a87beed1a430098fea401fa2ce8c717b272bd19fdc36aeff757c45fa05",
+    "scripts/product_seed_emitter_installed_2026_10_17.py": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+    "scripts/product_seed_emitter_local_2026_10_17.py": "c567cfeaaddff24d9f59d70e99a7d59cb324e389a10d18db04e46a173407f25e",
+    "scripts/product_seed_emitter_weighted_2026_10_17.py": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669"
+  },
+  "resolved_reads": [
+    {
+      "role": "local_author",
+      "logical_identity": "__original_program__",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/emitter_algebra_check.py",
+      "sha256": "236f558f94b8e3270c67b4cb218056b4024a2c902e276793b0c522100de461b9"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "SOURCE_PINS.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/SOURCE_PINS.json",
+      "sha256": "5a700b1dc7c56e7805ebfba4cea88bca6746139beb189fe501f6e6294b16f8d0"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/author/ALGEBRA_CERTIFICATE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/ALGEBRA_CERTIFICATE.json",
+      "sha256": "c281398bf83fc3f76b1c416221fc7a931402207f90a5cb13197124a3b14c9b8d"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/author/EXECUTION.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/EXECUTION.json",
+      "sha256": "166f5689ed8c0a1cca9d7de1680e2aaab6854925c89c21680bccbe4a76af58b4"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/author/LITERATURE_NOTES.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/LITERATURE_NOTES.md.txt",
+      "sha256": "9bc10d11f46a9c51d5419da0afc44c3f801aedd37224c3638e7946560922a527"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/author/ROUTE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/ROUTE.md.txt",
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/author/SOURCE_MANIFEST.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/SOURCE_MANIFEST.json",
+      "sha256": "10ae4467eaa888d29e1cc21150a75b158ed197909c2e39af1c907355fd49542f"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/author/algebra.stderr",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/algebra.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/author/algebra.stdout",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/algebra.stdout",
+      "sha256": "c281398bf83fc3f76b1c416221fc7a931402207f90a5cb13197124a3b14c9b8d"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/author/emitter_algebra_check.py",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/emitter_algebra_check.py",
+      "sha256": "236f558f94b8e3270c67b4cb218056b4024a2c902e276793b0c522100de461b9"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/author/inputs/INTERVAL_CANDIDATE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/inputs/INTERVAL_CANDIDATE.md.txt",
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/author/inputs/PREPARATION_NEXT_DECISION.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/inputs/PREPARATION_NEXT_DECISION.md.txt",
+      "sha256": "0965984b3fdcff4014cac81079e2ca881bdc3bb8178f80497d24935ff38bcc55"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/author/inputs/PREPARATION_SOURCE_SEARCH.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/inputs/PREPARATION_SOURCE_SEARCH.json",
+      "sha256": "38cf5d4e03f1b10b4d7a148bef08217938d2859f974a42b5fe54347d1ed397ee"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/author/inputs/THEOREM_V2.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/inputs/THEOREM_V2.md.txt",
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/author/FREEZE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/FREEZE.json",
+      "sha256": "f5278acb3899cb2749009031c5cff5fd24f72a05d539aa0f3957c6a500af04db"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/interval_review/REVIEW.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/interval_review/REVIEW.md.txt",
+      "sha256": "a3ab8c94ce4c842980e2144766be0994b5f5d783f29d14d1cd25a7a2567dfe8a"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/interval_review/FREEZE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/interval_review/FREEZE.json",
+      "sha256": "26b4295697311102b543303ef3f441dd8ef620a4eab6b34e3609a5da87b185a4"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/generic_review/REVIEW.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/generic_review/REVIEW.md.txt",
+      "sha256": "bba09ef378466a3787ebfbbbd942a81fbe200031a24d04f799d2543e510673f6"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/root/QUALIFICATION.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/root/QUALIFICATION.md.txt",
+      "sha256": "a1700102e8d15d37252469e3af6df5648d8054ff77e3bf836f3802328c25826f"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/process/SCIENCE_WORKFLOW.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/process/SCIENCE_WORKFLOW.md.txt",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "role": "local_reviewer",
+      "logical_identity": "sources/author/ALGEBRA_CERTIFICATE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/ALGEBRA_CERTIFICATE.json",
+      "sha256": "c281398bf83fc3f76b1c416221fc7a931402207f90a5cb13197124a3b14c9b8d"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "SOURCE_MANIFEST.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/SOURCE_MANIFEST.json",
+      "sha256": "0811516c109480f61074ce53c837843f636857401f615d8d45ad856b13bb57e7"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/autonomous_emitter_route__ROUTE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/autonomous_emitter_route__ROUTE.md.txt",
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/autonomous_emitter_route__FREEZE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/autonomous_emitter_route__FREEZE.json",
+      "sha256": "f5278acb3899cb2749009031c5cff5fd24f72a05d539aa0f3957c6a500af04db"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md.txt",
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json",
+      "sha256": "6f057d8a580217d29a09d7683462f5b35b71de093e75c8d07a12283cde33593f"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md.txt",
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "__original_program__",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/certify_installed_emitter.py",
+      "sha256": "950973354e69857ab19e40dbbf185ada46d1cda8a8a6c201c35fecf97a74623c"
+    },
+    {
+      "role": "weighted_author",
+      "logical_identity": "SOURCE_PINS.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/SOURCE_PINS.json",
+      "sha256": "4d5178221ee4a48e89f79aba7a6d4f9d755c29ef674a7930e81fe0ff2781e376"
+    },
+    {
+      "role": "weighted_author",
+      "logical_identity": "inputs/INSTALLED_CANDIDATE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/INSTALLED_CANDIDATE.md.txt",
+      "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+    },
+    {
+      "role": "weighted_author",
+      "logical_identity": "inputs/INSTALLED_CERTIFICATE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/INSTALLED_CERTIFICATE.json",
+      "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+    },
+    {
+      "role": "weighted_author",
+      "logical_identity": "inputs/EMITTER_ROUTE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/EMITTER_ROUTE.md.txt",
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+    },
+    {
+      "role": "weighted_author",
+      "logical_identity": "inputs/PACKET_THEOREM.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/PACKET_THEOREM.md.txt",
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+    },
+    {
+      "role": "weighted_author",
+      "logical_identity": "inputs/INSTALLED_CERTIFICATE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/INSTALLED_CERTIFICATE.json",
+      "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "SOURCE_PINS.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/SOURCE_PINS.json",
+      "sha256": "04f4b586dba144f9c8830be1f23346860a3fc017a86a68a67084c55582ec1c50"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/BOUNDS.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/BOUNDS.json",
+      "sha256": "c87b11324584d3cc461010b155644f3e4d25201ec0267ad14158f8cd0c50d6b5"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/CANDIDATE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/CANDIDATE.md.txt",
+      "sha256": "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/EXECUTION.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/EXECUTION.json",
+      "sha256": "3be3665de14a5961f7cbda7d589f4925eb0aea96bd12f7a08fce76501315a174"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/SOURCE_PINS.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/SOURCE_PINS.json",
+      "sha256": "4d5178221ee4a48e89f79aba7a6d4f9d755c29ef674a7930e81fe0ff2781e376"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/check_bounds.py",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/check_bounds.py",
+      "sha256": "0be886d71839040982f0b372d39450a88166e1624b116a14d54442dc681490af"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/inputs/EMITTER_ROUTE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/EMITTER_ROUTE.md.txt",
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/inputs/INSTALLED_CANDIDATE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CANDIDATE.md.txt",
+      "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/inputs/INSTALLED_CERTIFICATE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CERTIFICATE.json",
+      "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/inputs/PACKET_THEOREM.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/PACKET_THEOREM.md.txt",
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/run_check.py",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/run_check.py",
+      "sha256": "7850555720d04de4c9b8f60ae44ccb323820963094f9f4caa85331e21c70eedb"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/stderr",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/stdout",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/stdout",
+      "sha256": "736db8ba5f90cbd4823516f484b8a1b572622b9aa0af22639034cde743c31407"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/FREEZE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/FREEZE.json",
+      "sha256": "6db59cab5cb3537070f8e29890fc4d93b38b353a87632b174b759ca1722a2198"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/prior_review/REPORT.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/prior_review/REPORT.md.txt",
+      "sha256": "e4eec63593ce9f04cee67ef9734d570db1d6cd29886190a44be8f817a541ae7f"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/instructions/SCIENCE_WORKFLOW.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/instructions/SCIENCE_WORKFLOW.md.txt",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "role": "weighted_reviewer",
+      "logical_identity": "sources/author/inputs/INSTALLED_CERTIFICATE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CERTIFICATE.json",
+      "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+    }
+  ],
+  "limits": "No calibration/joint coefficient box, new preparation assumption, optimizer, time evolution, resonance quadrature, hardware realization or independent retained audit."
+}

@@ -1,0 +1,95 @@
+{
+  "status": "PASS_STATIC_TRANSPORT_ONLY",
+  "scientific_executions": 0,
+  "scientific_functions_called": [],
+  "author_AST_summary": [
+    {
+      "role": "resonance_author",
+      "statements": 173,
+      "transport_events": 15,
+      "whole_AST_reconstruction": true
+    },
+    {
+      "role": "product_preparation_author",
+      "statements": 238,
+      "transport_events": 9,
+      "whole_AST_reconstruction": true
+    },
+    {
+      "role": "interacting_preparation_author",
+      "statements": 170,
+      "transport_events": 2,
+      "whole_AST_reconstruction": true
+    }
+  ],
+  "source_labels": 239,
+  "declared_inputs": 149,
+  "proof_bodies": 5,
+  "target_only_link_edits": 10,
+  "new_note_links_checked": 21,
+  "frozen_relative_pointers_checked": 86,
+  "resolver_fail_closed": [
+    {
+      "case": "unknown_role",
+      "exception": "KeyError",
+      "message": "'fixture'"
+    },
+    {
+      "case": "unknown_alias_existing_absolute_path",
+      "exception": "KeyError",
+      "message": "'/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_publication_draft/static_04/fixture_repo/fixture/good.txt'"
+    },
+    {
+      "case": "absolute_destination",
+      "exception": "AssertionError",
+      "message": ""
+    },
+    {
+      "case": "parent_traversal",
+      "exception": "AssertionError",
+      "message": ""
+    },
+    {
+      "case": "noncanonical_double_separator",
+      "exception": "AssertionError",
+      "message": ""
+    },
+    {
+      "case": "missing_file",
+      "exception": "AssertionError",
+      "message": "fixture/missing.txt"
+    },
+    {
+      "case": "wrong_hash",
+      "exception": "AssertionError",
+      "message": "fixture/good.txt"
+    },
+    {
+      "case": "wrong_size",
+      "exception": "AssertionError",
+      "message": "fixture/good.txt"
+    },
+    {
+      "case": "file_symlink",
+      "exception": "AssertionError",
+      "message": "fixture/filelink.txt"
+    },
+    {
+      "case": "parent_directory_symlink",
+      "exception": "AssertionError",
+      "message": ""
+    }
+  ],
+  "actual_resources": {
+    "cpu_soft_hard_seconds": [
+      20,
+      20
+    ],
+    "external_wall_cap_seconds": 30,
+    "wall_seconds": 0.312309792265296,
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "max_dense_matrix_dimension": 0,
+    "science_dependency_imported": false
+  },
+  "limits": "Static reversible AST/byte and integrity checks only. No author function, scientific assertion, full apparatus, mutation or canonical calculation executed. Root reviews transport and owns execution."
+}

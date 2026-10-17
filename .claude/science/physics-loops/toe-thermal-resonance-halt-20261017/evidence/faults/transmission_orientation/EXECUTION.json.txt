@@ -1,0 +1,29 @@
+{
+  "label": "transmission_orientation",
+  "started_utc": "2026-10-17T04:57:32.865190+00:00",
+  "finished_utc": "2026-10-17T04:57:32.972575+00:00",
+  "elapsed_seconds": 0.09920745808631182,
+  "exit_code": 1,
+  "timed_out": false,
+  "intended_assertion_reached": true,
+  "all_bound_bytes_unchanged": true,
+  "no_result_written": true,
+  "user_cpu_seconds": 0.052764,
+  "system_cpu_seconds": 0.018874000000000002,
+  "launcher_children_peak_rss_bytes_macos_so_far": 27443200,
+  "prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/transmission_orientation/PRELAUNCH.json",
+    "bytes": 51805,
+    "sha256": "efb0d3135c79ceb14bb95421b842c44791de2f9a0380249c60078b4a47cd206c"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/transmission_orientation/stdout",
+    "bytes": 9408,
+    "sha256": "9c43898aaac7bdaefacde41dbb7514e65f38066d9b30b9d2b72b9347a1c28bb8"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/transmission_orientation/stderr",
+    "bytes": 876,
+    "sha256": "c3a1d09f06d8c49a45caad313789086334ddd2e75b09004756dabd86bf783751"
+  }
+}

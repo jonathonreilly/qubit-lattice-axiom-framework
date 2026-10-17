@@ -1,0 +1,6 @@
+12 ('C2only', 'edgeC2', 'NO symmetric ordering')
+24 ('C2only', 'edgeC2', 'has symmetric ordering')
+36 ('D3', 'edgeC2', 'has symmetric ordering')
+12 ('order4', 'axisC2', 'NO symmetric ordering')
+12 ('order4', 'edgeC2', 'NO symmetric ordering')
+12 ('order4', 'edgeC2', 'has symmetric ordering')

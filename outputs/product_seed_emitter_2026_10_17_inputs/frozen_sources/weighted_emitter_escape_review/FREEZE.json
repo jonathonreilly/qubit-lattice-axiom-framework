@@ -1,0 +1,41 @@
+{
+  "frozen_utc": "2026-10-17T01:28:57.177009+00:00",
+  "status": "New weighted argument supported conditionally; provisional installed theorem not independently accepted by this review.",
+  "author_candidate_sha256": "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5",
+  "author_freeze_sha256": "6db59cab5cb3537070f8e29890fc4d93b38b353a87632b174b759ca1722a2198",
+  "provisional_installed_dependency_sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee",
+  "report": {
+    "path": "REPORT.md",
+    "bytes": 16576,
+    "sha256": "cb309d98863a09a0db9b47b559a4e7a3a6f55d314b78dfd5379b57a089504028"
+  },
+  "checker": {
+    "path": "check_weighted_escape.py",
+    "bytes": 12933,
+    "sha256": "1810b2042defa23bcfe5a32bed37f025ff41d75d7727cdeb3c2e3c620bdfcc8e"
+  },
+  "manifest": {
+    "path": "FILE_MANIFEST.json",
+    "bytes": 4559,
+    "sha256": "1c6c71a662a75f52ac341a4cbeec80d66b4c0c0ade5119398e5de5e3e72d3706"
+  },
+  "execution": {
+    "path": "runs/attempt_1/EXECUTION.json",
+    "bytes": 2729,
+    "sha256": "2d73302e1d6fd85429bfcaf2bda6d92bbfb8af78a8a54f3c030638bc6cd1d64d"
+  },
+  "actual_execution": {
+    "runs": 1,
+    "exit_code": 0,
+    "wall_seconds": 10.88888437487185,
+    "largest_matrix_dimension": 8,
+    "largest_inverse_dimension": 8,
+    "cpu_cap_seconds": 45,
+    "wall_cap_seconds": 60,
+    "quadrature": false,
+    "resonance_samples": 0,
+    "time_evolution": false,
+    "installed_physical_inverse_recomputed": false,
+    "seed_overlap_recomputed": false
+  }
+}

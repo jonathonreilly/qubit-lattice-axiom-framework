@@ -1,0 +1,23 @@
+{
+  "name": "finite_ready_support",
+  "started_utc": "2026-10-17T00:37:30.455759+00:00",
+  "elapsed_seconds": 0.32727958308532834,
+  "exit_code": 1,
+  "wall_cap_seconds": 30,
+  "source": {
+    "bytes": 21527,
+    "sha256": "30a2d5beb641b8c66b2d74efbdfc9a5b9486fca1b5318cfb05f7b3bca856464a"
+  },
+  "old": "N=22*10**12",
+  "new": "N=2*10**12",
+  "expected_scientific_assertion": "assert d>=max(F(1),2*J*T,16*(F1+F0)**2/(3*eta_p**2))",
+  "scientific_assertion_rejected": true,
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 348,
+    "sha256": "0c07d1dd0659a2b72cecc78223898375c6bc9b28d338391fb103ad6d7366f4d7"
+  }
+}

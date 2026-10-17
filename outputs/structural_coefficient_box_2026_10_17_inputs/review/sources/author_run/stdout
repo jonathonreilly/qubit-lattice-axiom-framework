@@ -1,0 +1,7 @@
+{
+  "status": "exact scalar comparisons completed",
+  "extra_reflection_display": 0.00020268904500846948,
+  "finite_ready_display": 0.011147623271512414,
+  "finite_horizon_display": 0.012147623271512415,
+  "elapsed_seconds": 0.000723457895219326
+}

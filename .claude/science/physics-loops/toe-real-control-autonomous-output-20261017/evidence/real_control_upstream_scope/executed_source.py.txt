@@ -1,0 +1,20 @@
+"""Read-only current-main, relevant PR and other-lane overlap refresh."""
+from validate_packet import *
+from datetime import datetime,timezone
+import subprocess
+main=subprocess.check_output(['git','rev-parse','origin/main'],cwd=W,text=True).strip()
+assert main=='69cf6a289b2ec06213473f1549c51a57c29b6d70'
+fresh=read(D/'INSTRUCTION_FRESHNESS.json')
+prs=read(N/'runs/real_control_final_open_prs/stdout');index={x['number']:x for x in prs}
+for number,sha in [(9661,'0e8375354c42963234cc4b15b14ab6bb553c713d'),(9663,'cc06c0cc93d7c07dc726bb16556d6e68de24f204'),(9664,'0f1022e03dbbed8085035f2a378be8ae1aca02e8'),(9665,'0e3993770a7a2dd872018f9dd3c76c2d9a624db9'),(9666,'67108090f68ed9b2bc62eee23701b2d3d71dce4a')]:
+ assert index[number]['headRefOid']==sha and not index[number]['isDraft']
+old='aebf049cb2614b43daacbd644c41f958fc0508b8';new=index[9662]['headRefOid']
+assert new=='1a3546f6d63ba2728ff5010f1681a7c9df13bc10'
+cmd=['gh','api',f'repos/jonathonreilly/qubit-lattice-axiom-framework/compare/{old}...{new}']
+r=subprocess.run(cmd,capture_output=True,timeout=45)
+(D/'OTHER_PR_DELTA.json').write_bytes(r.stdout);(D/'OTHER_PR_DELTA.stderr').write_bytes(r.stderr);assert r.returncode==0
+comparison=json.loads(r.stdout);paths=[x['filename'] for x in comparison['files']]
+assert len(paths)<300
+record={'checked_utc':datetime.now(timezone.utc).isoformat(),'main':main,'instructions_unchanged_by_main_identity':fresh,'open_prs':prs,'other_lane_delta':{'pr':9662,'old':old,'new':new,'compare':pin(D/'OTHER_PR_DELTA.json'),'paths':paths,'head_status':'Read-only observation, no science qualification or import.'},'editable_prompt_files_changed':[]}
+write(D/'FINAL_UPSTREAM_REFRESH.json',record)
+print(json.dumps({'main':main,'relevant_heads_unchanged':[9661,9663,9664,9665,9666],'other_lane_changed_files':paths,'other_lane_commits':[{'sha':x['sha'],'message':x['commit']['message']} for x in comparison['commits']]},indent=2))

@@ -1,0 +1,4 @@
+Majorana identity failures (A = mu mu, Z_d = -i mu_d nu_d), 720 orderings: 0
+action built from orbit4 rep code0: rotations preserving each of the 60 codes (sector 000): {24: 1, 2: 39, 1: 12, 6: 5, 4: 3}; codes O-invariant under this one action: [0]
+action built from orbit6 rep code1: rotations preserving each of the 60 codes (sector 000): {2: 32, 24: 1, 1: 20, 6: 4, 4: 2, 8: 1}; codes O-invariant under this one action: [1]
+action built from orbit12 rep code3: rotations preserving each of the 60 codes (sector 000): {1: 24, 6: 2, 2: 28, 24: 1, 4: 4, 8: 1}; codes O-invariant under this one action: [3]

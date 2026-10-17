@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/bksf_cubic_fermion_codes_rotation_orbits_2026_10_17.py
+runner_sha256: baf786a5633a6b4f5e9d95e9d80a645bb5f3fcf9ea0825121d54fded38b697c7
+input_fingerprint_sha256: 6a8eaedbfe4fed0518ca5d1289718409b16cde901ccaf5614aaf5dc8a213ce97
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 18.92
+status: ok
+----- stdout -----
+PASS generators commute with all translates (sampled orderings, every 37th of 720)
+PASS for all 720 orderings, each A_e commutes with every plaquette stabilizer and flips exactly its two endpoint charges
+PASS control: the untwisted toric code (A_e = X_e) has a bosonic charge, +1 for all 20 straight-leg triples
+PASS the 720 orderings give 60 distinct stabilizer groups (span equality on the L = 4 torus)
+PASS every one of the 60 codes has a fermionic point charge: T-junction sign -1 for all 20 triples of straight axis legs
+orbit sizes (size: number of codes): {4: 12, 6: 12, 12: 36}
+  orbit size 4: example ordering (0, 4, 2, 3, 1, 5), stabilizer elements {'E': 1, 'C2edge': 3, 'C3': 2}
+  orbit size 6: example ordering (0, 4, 3, 2, 1, 5), stabilizer elements {'E': 1, 'C2axis': 1, 'C2edge': 2}
+  orbit size 12: example ordering (0, 4, 3, 1, 2, 5), stabilizer elements {'E': 1, 'C2edge': 1}
+PASS O permutes the 60 codes in orbits of sizes 4, 6 and 12 (12, 12 and 36 codes); no code is O-invariant
+PASS the largest stabilizer is D3: one C3 pair about a body diagonal and three edge C2 (orbit size 4)
+torus log2 code dimensions (L = 4, 6) per orbit type: {4: [3, 3], 6: [3, 3], 12: [3, 3]}
+PASS one code of each orbit type has bounded torus code dimension: log2 = 3 at L = 4 and L = 6
+per_element: all 720 orderings; exact GF(2) algebra
+per_site: one qubit per edge of Z^3 (not site-covariant qubits); no dynamics
+per_mode: checked and not executed — no momentum-mode or spectral-dispersion claim is tested
+per_block: checked and not executed — no coarse-grained block dynamics is tested
+lattice_wide: L = 4 torus for group equality; L = 4, 6 for code dimension
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

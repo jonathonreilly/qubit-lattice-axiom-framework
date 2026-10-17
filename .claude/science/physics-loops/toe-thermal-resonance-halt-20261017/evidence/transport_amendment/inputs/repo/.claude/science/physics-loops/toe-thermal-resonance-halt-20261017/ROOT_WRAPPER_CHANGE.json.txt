@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-17T04:44:07.530940+00:00",
+  "scope": "Status/history wording and two external decision links only; all five embedded bodies and primary unchanged relative to frozen overlay.",
+  "old_wrapper": {
+    "bytes": 12985,
+    "sha256": "c9272e5e62caaae79bc0ec7ada7defe60fa44de0b5c91ba83dc3a25fa4b20495"
+  },
+  "new_wrapper": {
+    "bytes": 13434,
+    "sha256": "eddf0a06c6162c6e28b76994a3ce46c3954bde4d28a7e40c349ce41bc5798f26"
+  },
+  "old_note": {
+    "bytes": 118919,
+    "sha256": "91c95df5e66f34e92fadfe821b3ca5688089fbcaad7d642bef01f0c074ae1166"
+  },
+  "new_note": {
+    "bytes": 119368,
+    "sha256": "13f226eca0041b5333bc087b69354ac2830d0eddb266d10cd698773ffc19657a"
+  },
+  "primary": {
+    "bytes": 59056,
+    "sha256": "3308c3d3f1ff96143bff2ae0d3d255da72b218c160a7d8420064c52a4aeb6aad"
+  },
+  "body_map": {
+    "bytes": 14538,
+    "sha256": "af708caa715b9fec8843b7c857363d2e873578d0134937151858be9aeaf7fecf"
+  },
+  "body_offset_shift": 449,
+  "editable_prompt_files_changed": []
+}

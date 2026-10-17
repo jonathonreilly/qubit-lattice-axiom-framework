@@ -1,0 +1,37 @@
+{
+  "finalized_utc": "2026-10-17T03:37:27.713795+00:00",
+  "parent_head": "0f1022e03dbbed8085035f2a378be8ae1aca02e8",
+  "focused_record": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-emitter-coupling-family-20261017/PUBLISH_CHECKS.json",
+    "bytes": 12461,
+    "sha256": "90c001807b73e07942fb531873775e8bc1bcde807d1899ecd29d2564beabc485"
+  },
+  "source_body_or_primary_or_declared_input_changes_after_execution": [],
+  "publication_only_delta": [
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/EXECUTION_STATUS.md",
+      "bytes": 1711,
+      "sha256": "e6f10f779a7e905ed6c24862938296c90cb0593a9db2d432ec135d1abcef75df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/CLUSTER_CAP_EVALUATION.md",
+      "bytes": 2721,
+      "sha256": "c3ddd46cf07134c843366672603ad87d404ffb12479cf6b3f804eded3913d0f0"
+    }
+  ],
+  "delta_checks": {
+    "whitespace": "clean",
+    "vocabulary_violating_files": 0,
+    "new_link_targets": [
+      "PUBLISH_CHECKS.json",
+      "FINAL_PUBLICATION_PACKET.json"
+    ]
+  },
+  "cache_status": "fresh",
+  "remaining_obligations": [
+    "Remote regular PR creation and verification",
+    "Ancestor integration, shared exact current-main landing checks and retained audit",
+    "Physical implementation, practical resources and reset/reuse"
+  ],
+  "editable_prompt_files_changed": []
+}

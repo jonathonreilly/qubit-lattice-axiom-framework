@@ -1,0 +1,34 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/thermal_final_parent",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "EXECUTION.json",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/thermal_final_parent/EXECUTION.json.txt",
+      "bytes": 1229,
+      "sha256": "ec6272a965cdb90c5feb5cc6b2a6d3911ca585ea090e693a43e6db48b0324db4",
+      "compression": "none",
+      "raw_bytes": 1229,
+      "raw_sha256": "ec6272a965cdb90c5feb5cc6b2a6d3911ca585ea090e693a43e6db48b0324db4"
+    },
+    {
+      "original_path": "stderr",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/algebra.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "stdout",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/thermal_final_parent/stdout.txt",
+      "bytes": 330,
+      "sha256": "beacd758f08b79f73749afca943b837f26d172343cab8ef6bc8dd1afd60051ec",
+      "compression": "none",
+      "raw_bytes": 330,
+      "raw_sha256": "beacd758f08b79f73749afca943b837f26d172343cab8ef6bc8dd1afd60051ec"
+    }
+  ],
+  "count": 3
+}

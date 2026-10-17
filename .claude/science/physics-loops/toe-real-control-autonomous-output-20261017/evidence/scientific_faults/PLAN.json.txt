@@ -1,0 +1,167 @@
+{
+  "planned_utc": "2026-10-17T05:39:07.138016+00:00",
+  "base": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/real_control_autonomous_output_2026_10_17.py",
+    "bytes": 47127,
+    "sha256": "b7d63ff04babbf0cf4abd6fde6056a8d7a14684eadb66a2773f645cdea430bc5"
+  },
+  "cases": [
+    {
+      "label": "cross_sign",
+      "role": "realifier_author",
+      "scientific_edit": {
+        "old": "(4, 1): kap * s",
+        "new": "(4, 1): -kap * s"
+      },
+      "expected_stderr": "AssertionError: six_real_edge_signs",
+      "expected_traceback_statement": null,
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/cross_sign/mutated.py",
+        "bytes": 47186,
+        "sha256": "bb301b99ab829779ace427eebe073c041df9fbf9727d83d7f71674de0a8d099b"
+      },
+      "driver": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/cross_sign/driver.py",
+        "bytes": 649,
+        "sha256": "1261ddf925c5af532370b4c37a9d91769bff6028849abc1949becc50f256ef21"
+      },
+      "transport": "Only REPO becomes fixed W path. Original guarded main stays inert; driver verifies unchanged inputs and calls one selected body."
+    },
+    {
+      "label": "positive_pair_diagonal",
+      "role": "realifier_author",
+      "scientific_edit": {
+        "old": "Q[3][3] = z(2)",
+        "new": "Q[3][3] = z(1)"
+      },
+      "expected_stderr": "AssertionError: positive_cell_polynomial_sign_-1",
+      "expected_traceback_statement": null,
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/positive_pair_diagonal/mutated.py",
+        "bytes": 47185,
+        "sha256": "2ecf477ea0533833db311dca1a83ebdcaf11e6a20292d33132bf5f38f432f2ce"
+      },
+      "driver": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/positive_pair_diagonal/driver.py",
+        "bytes": 673,
+        "sha256": "7bcf5e4415c2cdd4353874137f0e650f9735270a84fe901ad4f4ecc4f2277d68"
+      },
+      "transport": "Only REPO becomes fixed W path. Original guarded main stays inert; driver verifies unchanged inputs and calls one selected body."
+    },
+    {
+      "label": "old_target_phase",
+      "role": "realifier_author",
+      "scientific_edit": {
+        "old": "omega = z(F(-7, 25), F(24, 25))",
+        "new": "omega = z(F(-6, 25), F(24, 25))"
+      },
+      "expected_stderr": "AssertionError: same_energy_real_old_falsifier",
+      "expected_traceback_statement": null,
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/old_target_phase/mutated.py",
+        "bytes": 47185,
+        "sha256": "c04164b2fe8f25d29d60b7440d88935da7c62808cc48d8ef16c7959b3619cda1"
+      },
+      "driver": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/old_target_phase/driver.py",
+        "bytes": 661,
+        "sha256": "6bd2f5f72ef1e2b6623f8b910faccba4f002db758d67fdabb3d60a226b367d5a"
+      },
+      "transport": "Only REPO becomes fixed W path. Original guarded main stays inert; driver verifies unchanged inputs and calls one selected body."
+    },
+    {
+      "label": "isolation_pin",
+      "role": "preparation_author",
+      "scientific_edit": {
+        "old": "R = add(*complements, scale(number(m), beta))",
+        "new": "R = add(*complements)"
+      },
+      "expected_stderr": "AssertionError: M16_core_old0_position20_full_Pauli_action",
+      "expected_traceback_statement": null,
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/isolation_pin/mutated.py",
+        "bytes": 47161,
+        "sha256": "cd8c870d037e3fa46cf658f60240e8f4d147205a483c9fc770acb4f1e8f85871"
+      },
+      "driver": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/isolation_pin/driver.py",
+        "bytes": 657,
+        "sha256": "c34f29eb9fdd026f3708fe4542d9a09d9d3553a672d44005caaa21ecf563be25"
+      },
+      "transport": "Only REPO becomes fixed W path. Original guarded main stays inert; driver verifies unchanged inputs and calls one selected body."
+    },
+    {
+      "label": "pulse_chirality",
+      "role": "preparation_author",
+      "scientific_edit": {
+        "old": "E12 ** 2 + sp.I * sp.sin(theta2) * E12",
+        "new": "E12 ** 2 - sp.I * sp.sin(theta2) * E12"
+      },
+      "expected_stderr": "AssertionError: three_real_positive_pulses_exact_chiral_state_and_common_phase",
+      "expected_traceback_statement": null,
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/pulse_chirality/mutated.py",
+        "bytes": 47185,
+        "sha256": "26deca9247e1c575d3bb4e044001b790f79f455bd976e857d1e9393c65f747b0"
+      },
+      "driver": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/pulse_chirality/driver.py",
+        "bytes": 661,
+        "sha256": "901109d4b43f8b77ca218bb0de53d207f29cfb409fe7492966d98fc348710138"
+      },
+      "transport": "Only REPO becomes fixed W path. Original guarded main stays inert; driver verifies unchanged inputs and calls one selected body."
+    },
+    {
+      "label": "exit_coupling",
+      "role": "preparation_author",
+      "scientific_edit": {
+        "old": "(e0, clock(12, 0), kappa, kappa)",
+        "new": "(e0, clock(12, 0), 2 * kappa, kappa)"
+      },
+      "expected_stderr": "AssertionError: M16_old0_complete_rail_exit_Gram",
+      "expected_traceback_statement": null,
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/exit_coupling/mutated.py",
+        "bytes": 47189,
+        "sha256": "f0c13cd3da56b781b61cba523b4c54b0554db2710cd3781cb6a5ab2d57a4fbd3"
+      },
+      "driver": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/exit_coupling/driver.py",
+        "bytes": 657,
+        "sha256": "ea77b78cf2ea7e0c1b5468efe1f83c605268b3c772d909bf9d2b9b7ed1b79bb1"
+      },
+      "transport": "Only REPO becomes fixed W path. Original guarded main stays inert; driver verifies unchanged inputs and calls one selected body."
+    }
+  ],
+  "CPU_soft_hard_seconds": [
+    30,
+    30
+  ],
+  "external_wall_seconds": 45,
+  "total_case_count": 6,
+  "maximum_dense_dimension": 6,
+  "runtime": [
+    {
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py",
+      "bytes": 29422,
+      "sha256": "4e9476348ba105feab28d82f5bcf6cdba2e3e84de6e059bbfe7a13728c0a4ab0"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/fractions.py",
+      "bytes": 40021,
+      "sha256": "58f7750133f2e23999ba3f634d1b14edfec6dc48bf8bb00a9911262cd7198f63"
+    },
+    {
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy-1.14.0.dist-info/METADATA",
+      "bytes": 12816,
+      "sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595"
+    }
+  ],
+  "sympy_version": "1.14.0",
+  "launcher": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/run_mutations.py",
+    "bytes": 7438,
+    "sha256": "916d935607994dcb1432aaddf3a47b2261b7afebe0efd1ca5e284a52bc7b46c6"
+  },
+  "scope": "Fault sensitivity, not independent proof. Three realifier faults and three real preparation faults; no all-premise coverage claim. No full many-body or time dynamics calculation."
+}

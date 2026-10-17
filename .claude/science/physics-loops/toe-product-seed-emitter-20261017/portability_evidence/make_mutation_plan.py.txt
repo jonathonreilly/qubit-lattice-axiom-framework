@@ -1,0 +1,68 @@
+"""Record unique future copied-source mutations; never import their programs."""
+from pathlib import Path
+import hashlib
+import json
+
+D=Path(__file__).resolve().parent
+W=D.parent.parent/'correlation_worktree'
+Q=W/'.claude/science/physics-loops/toe-product-seed-emitter-20261017'
+cases=[
+('local_vacancy_scalar','local','local_author',
+ 'addition = Qa + Qb + (E0 - 2 * coupling) * nn[0] + coupling * (I16 - nn[1]) + coupling * (I16 - nn[3])',
+ 'addition = Qa + Qb + (E0 - 2 * coupling) * nn[0] + coupling * (I16 - nn[3])',
+ 'full 16-dimensional scalar-reserve identity','Remove a positive vacancy term while keeping the intended complete scalar identity.'),
+('local_phase_conjugation','local','local_author',
+ 'phase = s.expand(z0 * z0)','phase = s.expand(s.conjugate(z0 * z0))',
+ 'return/right-emission central notch','Conjugate the loop phase; the central return notch should fail.'),
+('installed_noncommuting_order','installed','installed_reviewer',
+ 'assert exact_zero(sigma_direct - (sigma_free + X * T * Y))',
+ 'assert exact_zero(sigma_direct - (sigma_free + Y * T * X))',
+ 'assert exact_zero(sigma_direct - (sigma_free + Y * T * X))','Reverse the noncommuting factors in the proposed self-energy identity.'),
+('installed_lower_sign','installed','installed_reviewer',
+ 'aug[4:6, 2:4] = -coupling * X','aug[4:6, 2:4] = coupling * X',
+ 'assert exact_zero(direct_aug - aug)','Reverse the lower coupling sign in the augmented matching matrix.'),
+('installed_density_jacobian','installed','installed_reviewer',
+ 'jump_dk_times_pi = simp(-s.im(1 / df) * speed)','jump_dk_times_pi = simp(-s.im(1 / df))',
+ 'assert simp(jump_dk_times_pi - weights_dk_times_pi) == 0','Omit the velocity Jacobian from the reference spectral density.'),
+('installed_overlap_diagonal_only','installed','installed_reviewer',
+ 'error_gram = cleaned((seed - packet).H * (seed - packet))',
+ 'error_gram = s.diag(*[cleaned((seed - packet).H * (seed - packet))[j, j] for j in range(2)])',
+ 'assert exact_zero(error_gram - (2 * eye - overlap - overlap.H))','Discard the off-diagonal operator Gram entries.'),
+('installed_grouped_localization','installed','installed_author',
+ 'Dpacket = F(8 * 10 ** 42)','Dpacket = F(10 ** 42)',
+ 'assert Dj < 5 * 10 ** 42 and 2 * Dj ** 2 < Dpacket ** 2','Understate the bound for the complete grouped localized columns.'),
+('weighted_closed_inverse','weighted','weighted_reviewer',
+ 'inv_formula = closed + rankterm','inv_formula = rankterm',
+ 'full_eight_coordinate_rank_one_inverse','Omit the closed complementary inverse summand.'),
+('weighted_cutoff_derivative','weighted','weighted_reviewer',
+ 'f_derivative = k / normalizer * ((s.diff(chi, t) * G + chi * s.diff(G, t)) / Dbar - chi * G * s.diff(Dbar, t) / Dbar ** 2)',
+ 'f_derivative = k / normalizer * (chi * s.diff(G, t) / Dbar - chi * G * s.diff(Dbar, t) / Dbar ** 2)',
+ 'cutoff_and_quotient_derivative','Omit the cutoff derivative in the packet derivative.'),
+('weighted_localized_derivative','weighted','weighted_reviewer',
+ 'integrand = s.Poly(s.expand(fp_upper * C_upper + f_upper * Cp_upper + R(5, 2) * f_upper * C_upper), U)',
+ 'integrand = s.Poly(s.expand(fp_upper * C_upper + R(5, 2) * f_upper * C_upper), U)',
+ 'U_coefficient_complete','Omit the derivative of the full localized correction.'),
+('weighted_first_omitted_hops','weighted','weighted_reviewer',
+ 'distance = M - (L + 2) + 1','distance = M - (L + 2) + 2',
+ 'graph_distance_formula','Add one incorrect hop to the first omitted site.'),
+('weighted_grouped_ceiling','weighted','weighted_author',
+ 'D = 3 / (k * k)','D = 1 / (k * k)',
+ 'assert 2 * Dj * Dj < D * D','Understate the weighted grouped operator ceiling.')]
+rows=[]
+for cid,family,role,old,new,assertion,purpose in cases:
+ path=W/f'scripts/product_seed_emitter_{family}_2026_10_17.py'
+ text=path.read_text();assert text.count(old)==1,(cid,text.count(old))
+ assert assertion in text or assertion in new,(cid,assertion)
+ rows.append({'id':cid,'role':role,'function':'run_'+role,'source':str(path.relative_to(W)),
+ 'source_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'old':old,'new':new,
+ 'unique_anchor_verified':True,'expected_scientific_assertion':assertion,'purpose':purpose,
+ 'status':'planned_not_executed','cap_cpu_soft_hard_seconds':[60,60],'external_wall_cap_seconds':60})
+plan={'scope':'Pre-run plan only; no mutation code imported or executed.',
+ 'case_limit':12,'attempts_per_case_initially':1,'aggregate_initial_wall_cap_seconds':720,
+ 'limits':'Each future case has its own shared CPU60/wall60 envelope. Do not weaken assertions or hide failed harness attempts. Root reviews any retry plan.',
+ 'method':'Copy one canonical helper per case to a new scratch attempt, apply its single unique source replacement, syntax-check, pin copied bytes, and execute only the selected function using the unchanged declared local inputs. Canonical/frozen files stay unchanged. Inject actual mutation limits into resolver metadata; do not claim canonical CPU120/wall120 for these cases.',
+ 'success_criterion':'An AssertionError at the named scientific assertion, with matching traceback and preserved streams/source/receipt. Checksum/import/syntax/path/harness failures and timeouts are not intended scientific rejections.',
+ 'independence':'Fault sensitivity checks of the existing calculations, not an independent theorem proof, interval proof from sampling, or a retained audit.',
+ 'cases':rows}
+(Q/'MUTATION_PLAN.json').write_text(json.dumps(plan,indent=2)+'\n')
+print(json.dumps({'cases':len(rows),'all_anchors_unique':True,'executed':0},indent=2))

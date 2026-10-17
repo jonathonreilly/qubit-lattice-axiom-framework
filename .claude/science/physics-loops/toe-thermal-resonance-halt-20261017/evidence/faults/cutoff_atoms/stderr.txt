@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/cutoff_atoms/driver.py", line 7, in <module>
+    result=ns['run_resonance_author'](inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/cutoff_atoms/mutated.py", line 182, in run_resonance_author
+    ck('cutoff_total_variation', sum(tv_terms) == 20)
+    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/cutoff_atoms/mutated.py", line 108, in ck
+    raise AssertionError(name)
+AssertionError: cutoff_total_variation

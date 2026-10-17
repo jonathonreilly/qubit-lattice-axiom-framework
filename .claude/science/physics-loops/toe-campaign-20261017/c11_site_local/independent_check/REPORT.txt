@@ -1,0 +1,140 @@
+INDEPENDENT CHECK: BKSF cubic fermion codes, site-local realization with six direction qubits per site
+Note: docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md
+Checker: fresh-context agent, same model family (Claude Opus 5.5). This is not independent of the model family.
+I wrote all code from the definitions in the task prompt and the notes. I did not open the runner
+(scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py) or the c11
+scratch scripts (halfedge.py, siteaction.py). I read only the c11 README.
+
+FILES (this directory)
+  ilib.py               Pauli algebra with phases (i^k X^x Z^z), edge and half-edge models, the 24 proper
+                        rotations, signed echelon span (tracks eigenvalue phases), qubit permutations
+  check_123.py/.out     items (1)-(3)                                   about 90 s
+  check_plaq_order.py/.out  sign convention of S_p (cyclic hop product)
+  check_4.py / check_4_L6.out   T-junction, mixed sectors, controls, naive pair test (see note below)
+  check_4b.py / check_4b_L8.out general pair test with phases: half-edge (R=+ZZ and R=-ZZ) and edge model, L=8
+
+(1) COMMUTING, CODE DIMENSION: CONFIRMED (stronger than claimed)
+  - L=4, all 720 orderings, half-edge model <B, R, S>: all generators commute; the signed group is consistent
+    (no -I); log2 dim = 384 - 381 = 3. The edge model gives 192 - 189 = 3, the same.
+  - L=6: log2 dim = 3 for a representative of every one of the 60 codes. The note checks only one code per
+    orbit type.
+  - S_p = cyclic product of the four A's. Its sign does not depend on the start point or the direction (all 720
+    orderings, all 3 planes), and it is Hermitian. So "the product of the four A around a plaquette" is
+    well defined, and it equals the companion note's flux-0 generator.
+
+(2) EXACT COVARIANCE: CONFIRMED
+  - The site action is (v,d) -> (Rv, Rd), with Pauli labels unchanged. Under it,
+    P A^o_(v,a) P^-1 = A^{Ro}_{R(v,a)}, including phase. Here Ro = (R d1, ..., R d6), and the rotated edge
+    has tail Rv if R(+a) is positive, and R(v+e_a) otherwise.
+  - Checked for every vertex and axis at L=4, all 24 rotations and all 720 orderings: 3,317,760 checks,
+    0 failures.
+  - B_v -> B_{Rv} and R_e -> R_{Re} hold exactly.
+  - The intertwining also holds at the state level. Enc|z_e> = |z_e z_e> on the two halves, so
+    P_site Enc = Enc P_edge, with no phases.
+
+(3) STABILIZERS AND ORBITS: CONFIRMED
+  - The stabilizers were computed directly. For the site action, I permuted the half-edge generators and
+    tested membership. For the edge action, I permuted the edge generators. Item (2) was not used.
+  - The 720 orderings fall into 60 codes, and the half-edge and edge partitions are identical.
+  - For all 60 codes, the site stabilizer equals the edge stabilizer:
+      12 codes: orbit 4,  stabilizer D3 = {E, 2 C3, 3 edge C2}
+      12 codes: orbit 6,  stabilizer {E, 1 axis C2, 2 edge C2}
+      36 codes: orbit 12, stabilizer {E, 1 edge C2}
+  - The stabilizer of the identity ordering is the same at L = 4, 5, 6 and 8, in both models.
+
+(4) TRANSFER: SOUND, WITH WORDING CORRECTIONS
+  Direct tests in the half-edge model, with phases:
+  a. Levin-Wen T-junction, straight A-strings of length 2, L=6: -1 for all 20 triples in all 60 codes.
+     The toric-code control (A = XX only) gives +1 for all 20.
+  b. Sign sectors, L=4. All 8 translation-invariant S-sign sectors are consistent. In the flux-0 and flux-pi
+     sectors, every stabilizing rotation maps the signed group to itself under the bare site permutation.
+     In each of the 6 mixed sectors, 44 codes have a stabilizing rotation that needs a correction. The edge
+     model gives the same numbers, as the bare-permutation note states.
+  c. Pair test (check_4b, L=8), for all 108 (code, C2) pairs (36 D3-type, 36 D2-type including the 12 axis
+     C2, 36 Z2-type), in the flux-0 and flux-pi sectors.
+     Method:
+       - S = S0 C, where S0 is an A^o hop string from x to Rx, and |x - Rx|_inf = 4.
+       - C is solved over GF(2) on the radius-1 boxes around x and Rx so that syn(S) = syn(P_R S P_R^-1).
+       - Each accepted S carries gauge-invariant charge 1 at x and at Rx, and has no excitation outside the
+         boxes.
+       - lambda = eigenvalue of S^dag (P_R S P_R^-1) on the signed code space.
+       - Two x per pair, and 7 random solutions per x (nullspace shifts).
+     Result: lambda = +1 in every trial, in:
+       - the half-edge model with R = +ZZ (the note's model);
+       - the half-edge model with R = -ZZ;
+       - the edge model (cross-check).
+     Controls (half-edge site action, toric code):
+       - zero flux: +1 under the vertex C2 and under the plaquette-centred C2;
+       - pi flux: +1 under the vertex C2 and -1 under the plaquette-centred C2.
+     So the test can return -1.
+     With theta_f = -1 from (a), eta_f(C2,C2) = -1 for every C2 of every code under the bare site action.
+     This reproduces the bare-permutation note's spin-1/2 result directly in the site-local model.
+  d. Repetition sign. Uniform R = -ZZ (with B = +Z^6 and S unchanged) is also consistent and symmetric, and
+     gives lambda = +1. So the uniform sign does not matter. Axis-dependent R signs would break the
+     axis-permuting rotations, because P maps R_e to R_{Re} with the sign of the source edge's axis. The note
+     fixes R = +ZZ, which is fine.
+
+  Corrections and caveats for the note's transfer item:
+  i. Fermion charge in the half-edge model. B_v alone is NOT the gauge-invariant charge.
+     - A single X on a half-edge flips B_v together with R_e and some S_p. A local operator can therefore
+       move the fermion's "B-defect" onto a broken repetition bond.
+     - In check_4b, most symmetric solutions S have even B-parity at x and at Rx, yet carry charge 1 measured
+       by Q_Omega = prod_{v in Omega} B_v * prod_{e inside Omega} R_e (the Z flux through the boundary).
+     - Suggested wording: the point charge is a B_v or R_e violation, and the charge in a region is measured
+       by Q_Omega, not by prod B_v. This does not change any conclusion; sectors are local-unitary invariant.
+  ii. "Verbatim" should keep the realization caveat of the bare-permutation note's item 6.
+     - P_R W, with W = prod_v exp(-i pi B_v/4), is also a site-local realization here. B_v is a one-site
+       operator, so W is site-local. It gives the trivial class.
+     - The spin-1/2 class therefore belongs to the bare site action, not to the site-local code. The note's
+       item 4 lists "the spin-1/2 fractionalization class under bare rotations", which is correct, but it
+       should say the dressing remark transfers as well.
+  iii. "Holds verbatim" should be read as "within the declared encoding family".
+     - "No O-invariant code, minimal orbit four" is a statement about the half-edge images of the 60 BKSF
+       codes.
+     - Other six-qubit or site-local Pauli codes, such as GSE with on-site Clifford rotation actions, are not
+       covered. N1 already says this.
+  iv. Methodological warning for any runner. A naive pair test (S = A^o string, S^R = its image) does NOT
+     work for most pairs.
+     - P A^o_e P^-1 = A^{Ro}_{Re}, which equals the A^o hop times endpoint vertex terms. So S and S^R have
+       different syndromes.
+     - In check_4.py this left 84 of 108 pairs undecided (T not in the group), with none at -1.
+     - The syndrome-symmetrized method in (c) is required. If the runner's pair test (if any) uses
+       hops only, it covers only the 24 pairs where the hops are P_R-clean.
+     - Windows must also not let the correction bridge x and Rx. In my first attempt, overlapping boxes let
+       C annihilate the pair. The gauge-invariant charge check above guards against this.
+
+PRIOR WORK
+  - Bravyi-Kitaev, Ann. Phys. 298, 210 (2002): correct.
+  - Setia, Bravyi, Mezzacapo, Whitfield, "Superfast encodings for fermionic quantum simulation",
+    Phys. Rev. Research 1, 033033 (2019), arXiv:1810.05274: the citation is correct.
+    - The GSE places d/2 qubits on each vertex of even degree d, with one local Majorana per incident edge.
+      On the cubic lattice this is 3 qubits per site, the same total count as edge BKSF (3 edges per site).
+      Source: web search snippets only; full text unreachable from this sandbox.
+    - The note's description "qubits attached to vertices" is accurate.
+  - Suggested additions:
+    (a) The half-edge encoding doubles the qubit count relative to both edge BKSF and GSE. GSE is the
+        economical site-local BKSF-type encoding.
+    (b) In GSE, a site rotation permutes the local Majoranas. On 3 qubits that is generally an on-site
+        Clifford, not a bare qubit permutation. So the "bare action" question there is different, as N1 notes.
+  - Novelty: the repetition (half-edge) splitting is elementary, as the note says. The "new" observation, that
+    the site permutation reproduces the edge permutation, holds by construction once the qubits carry
+    direction labels. Calling it an observation rather than a result is appropriate. I found no prior
+    statement of it, but my literature search was limited.
+
+VERDICTS
+  (1) CONFIRMED (also all 60 codes at L=6).
+  (2) CONFIRMED (exact, phases included, 3.3M checks).
+  (3) CONFIRMED (60 codes; orbits 4/6/12 with 12/12/36 codes; site stabilizer = edge stabilizer).
+  (4) SOUND. Direct half-edge pair test: lambda = +1 for all 108 pairs, both sectors, both repetition signs;
+      T-junction -1. The wording needs corrections i-iii (charge = B with R, not B alone; carry over the
+      W-dressing caveat; "verbatim" only within the encoding family). Prior work is accurate; add the GSE
+      qubit-count comparison.
+
+POST-HOC LOOK AT THE RUNNER (after all results above were obtained; grep of its check lines only)
+  - The runner has 6 checks: commuting, dim 3 at L=4, exact A-mapping, equal stabilizers, orbits, and dim 3 at
+    L=6 (one code per orbit type).
+  - It has NO sign-sector, T-junction, or pair test in the half-edge model. The phase-level part of the
+    transfer (sign sectors, lambda, spin-1/2 class) therefore rests on the intertwining argument alone.
+  - The argument is valid: Enc is an isometry with P_site Enc = Enc P_edge, and A has no phase. The direct
+    half-edge pair test in check_4b now confirms it numerically.
+  - Recommendation: the note's N4 could cite this check, or the runner could add a signed-sector or pair check.

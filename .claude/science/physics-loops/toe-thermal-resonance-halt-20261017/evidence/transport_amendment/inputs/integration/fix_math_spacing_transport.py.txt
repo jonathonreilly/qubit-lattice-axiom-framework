@@ -1,0 +1,74 @@
+"""Lossless raw-source storage and one explicit TeX spacing transport fix."""
+from pathlib import Path
+from datetime import datetime,timezone
+import ast,gzip,hashlib,json
+D=Path(__file__).resolve().parent
+W=D.parent.parent/'correlation_worktree'
+F=W/'outputs/thermal_resonance_halt_2026_10_17_inputs'
+Q=W/'.claude/science/physics-loops/toe-thermal-resonance-halt-20261017'
+note=W/'docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+primary=W/'scripts/thermal_resonance_halt_2026_10_17.py'
+oldpath='outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/CANDIDATE.md.txt'
+newpath=oldpath+'.gz'
+def dig(b):return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def read(p):return json.loads(p.read_text())
+def write(p,d):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(d,indent=2)+'\n')
+A=D/'spacing_amendment';A.mkdir(exist_ok=False)
+paths=[note,primary,W/oldpath,F/'SOURCE_MAP.json',F/'PROOF_BODY_MAP.json',F/'ARTIFACT_MANIFEST.json',Q/'evidence/PACKAGING_MAP.json']
+before={}
+for p in paths:
+ b=p.read_bytes();q=A/'before'/p.relative_to(W);q.parent.mkdir(parents=True,exist_ok=True);q.write_bytes(b);before[str(p.relative_to(W))]=dig(b)
+assert before[str(primary.relative_to(W))]['sha256']=='3308c3d3f1ff96143bff2ae0d3d255da72b218c160a7d8420064c52a4aeb6aad'
+raw=(W/oldpath).read_bytes();assert dig(raw)['sha256']=='b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227'
+packed=gzip.compress(raw,mtime=0);assert gzip.decompress(packed)==raw
+(W/newpath).write_bytes(packed)
+# No scientific function reads this proof file through FrozenInputs. Only
+# integrity inventory changes; none of the three calculation ASTs changes.
+imap=(F/'INPUT_MAP.json').read_text();assert oldpath not in imap
+pt=primary.read_text();assert pt.count(oldpath)==1
+pt=pt.replace(repr(oldpath),repr(newpath));primary.write_text(pt)
+oldtree=ast.parse((A/'before'/primary.relative_to(W)).read_text());newtree=ast.parse(pt)
+def funcs(tree):return {x.name:ast.dump(x,include_attributes=False) for x in tree.body if isinstance(x,(ast.FunctionDef,ast.ClassDef))}
+assert funcs(oldtree)==funcs(newtree)
+sm=read(F/'SOURCE_MAP.json');changed=0
+for r in sm['files']:
+ if r['path']==oldpath:
+  r.update(path=newpath,**dig(packed),compression='gzip',raw_bytes=len(raw),raw_sha256=dig(raw)['sha256'],transport='lossless_gzip_of_exact_frozen_source')
+  changed+=1
+assert changed==2;write(F/'SOURCE_MAP.json',sm)
+bm=read(F/'PROOF_BODY_MAP.json');bodies=[];nb=note.read_bytes()
+for r in bm['bodies']:bodies.append(nb[r['note_byte_start_inclusive']:r['note_byte_end_exclusive']])
+old=b'\\boxed{\\ \n';new=b'\\boxed{\\,\n';assert raw.count(old)==1 and bodies[1].count(old)==1
+pos=bodies[1].index(old);rawpos=raw.index(old);bodies[1]=bodies[1].replace(old,new)
+# All remaining source content is preserved; the complete formula was read.
+assert bodies[1].replace(new,old)==nb[bm['bodies'][1]['note_byte_start_inclusive']:bm['bodies'][1]['note_byte_end_exclusive']]
+prefix=nb[:bm['bodies'][0]['note_byte_start_inclusive']]
+a=b'Four bodies are byte-identical; in the exact-product body only Markdown link destinations are adapted to portable targets. The raw originals, exact link-target map and reversible body map preserve every other byte.'
+b=b'Four bodies are byte-identical. The exact-product body has ten portable Markdown destination edits and one TeX control-space replaced by a thin-space command to remove trailing source whitespace. Its exact raw original is stored losslessly as gzip; the reversible body map identifies every change, with no mathematical expression altered.'
+assert prefix.count(a)==1;prefix=prefix.replace(a,b)
+rebuilt=prefix
+previous_end=bm['bodies'][0]['note_byte_start_inclusive']
+for r,body in zip(bm['bodies'],bodies):
+ if r is not bm['bodies'][0]:rebuilt+=nb[previous_end:r['note_byte_start_inclusive']]
+ previous_end=r['note_byte_end_exclusive']
+ r['note_byte_start_inclusive']=len(rebuilt);rebuilt+=body;r['note_byte_end_exclusive']=len(rebuilt)
+ r['embedded_sha256']=dig(body)['sha256'];r['bytes']=len(body)
+rebuilt+=nb[previous_end:];note.write_bytes(rebuilt)
+r=bm['bodies'][1];r['original'].update(path=newpath,compression='gzip',stored_bytes=len(packed),stored_sha256=dig(packed)['sha256'])
+r['format_edits']=[{'original_start':rawpos,'embedded_start':pos,'original_text':old.decode(),'replacement_text':new.decode(),'role':'TeX spacing only; preserves displayed mathematical symbols','inverse_order':'Undo this format edit, then undo the ten existing link-target edits in descending embedded offset.'}]
+r['mathematical_and_non_target_bytes_unchanged']=False;r['mathematical_content_unchanged']=True
+bm['fifth_reversible_target_only_change']=False;bm['fifth_reversible_target_and_tex_spacing_change']=True
+write(F/'PROOF_BODY_MAP.json',bm)
+pm=read(Q/'evidence/PACKAGING_MAP.json');remapped=0
+for r in pm['files']:
+ if r['path']==oldpath:r.update(path=newpath,**dig(packed),compression='gzip');remapped+=1
+write(Q/'evidence/PACKAGING_MAP.json',pm)
+mf=read(F/'ARTIFACT_MANIFEST.json')
+for r in mf['files']:
+ if r['path']==oldpath:r['path']=newpath
+ r.update(dig((W/r['path']).read_bytes()))
+write(F/'ARTIFACT_MANIFEST.json',mf)
+(W/oldpath).unlink()
+record={'utc':datetime.now(timezone.utc).isoformat(),'cause':'git diff --no-index --check rejected one trailing TeX control-space in original product proof and embedded note; this is publication formatting, not a scientific failure.','before':before,'after':{str(p.relative_to(W)):dig(p.read_bytes()) for p in [note,primary,W/newpath,F/'SOURCE_MAP.json',F/'PROOF_BODY_MAP.json',F/'ARTIFACT_MANIFEST.json',Q/'evidence/PACKAGING_MAP.json']},'original_proof_raw':dig(raw),'compressed_proof':dig(packed),'source_labels_remapped':changed,'archive_rows_remapped':remapped,'scientific_functions_and_helpers_AST_unchanged':True,'scientific_runs':0,'next_action':'Narrow independent transport amendment check, then actual canonical execution','editable_prompt_files_changed':[]}
+write(A/'AMENDMENT.json',record);write(Q/'FORMAT_TRANSPORT_AMENDMENT.json',record)
+print(json.dumps(record,indent=2))

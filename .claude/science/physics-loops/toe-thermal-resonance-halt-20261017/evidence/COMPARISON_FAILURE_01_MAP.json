@@ -1,0 +1,16 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/report_comparison_failure_01",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "compare_reports.py",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/integration_before_execution/compare_reports.py.txt",
+      "bytes": 3251,
+      "sha256": "d008bfc8c5d67624df7c0a480ebe9eab4fa4ea0947497ab615c1a2b08303562c",
+      "compression": "none",
+      "raw_bytes": 3251,
+      "raw_sha256": "d008bfc8c5d67624df7c0a480ebe9eab4fa4ea0947497ab615c1a2b08303562c"
+    }
+  ],
+  "count": 1
+}

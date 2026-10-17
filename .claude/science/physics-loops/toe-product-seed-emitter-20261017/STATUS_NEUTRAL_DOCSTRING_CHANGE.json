@@ -1,0 +1,46 @@
+{
+  "authority": "Root request in current collaboration turn before final portability freeze.",
+  "scope": "Status-neutral module docstrings only. No function-body, primary, note, frozen-input or mathematical change.",
+  "records": [
+    {
+      "before": {
+        "path": "scripts/product_seed_emitter_local_2026_10_17.py",
+        "bytes": 19885,
+        "sha256": "538c263d5756872af57d325cbcbb5223c5f3f42628092b50d5c2c3cb2b9a747d"
+      },
+      "after": {
+        "path": "scripts/product_seed_emitter_local_2026_10_17.py",
+        "bytes": 19892,
+        "sha256": "c567cfeaaddff24d9f59d70e99a7d59cb324e389a10d18db04e46a173407f25e"
+      },
+      "change": "Module docstring only; both function ASTs unchanged."
+    },
+    {
+      "before": {
+        "path": "scripts/product_seed_emitter_installed_2026_10_17.py",
+        "bytes": 34364,
+        "sha256": "8435990e21d7a99952907d348975e7cd0a99c5b962906a91cbb2d8616a3db40f"
+      },
+      "after": {
+        "path": "scripts/product_seed_emitter_installed_2026_10_17.py",
+        "bytes": 34371,
+        "sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d"
+      },
+      "change": "Module docstring only; both function ASTs unchanged."
+    },
+    {
+      "before": {
+        "path": "scripts/product_seed_emitter_weighted_2026_10_17.py",
+        "bytes": 17881,
+        "sha256": "6cf5814ff6d4e7c18b303092365bac0e1017d626bc9bb41407cbb507a697bf21"
+      },
+      "after": {
+        "path": "scripts/product_seed_emitter_weighted_2026_10_17.py",
+        "bytes": 17888,
+        "sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669"
+      },
+      "change": "Module docstring only; both function ASTs unchanged."
+    }
+  ],
+  "original_source_status_strings": "Historical scientific status/limitations inside source functions remain unchanged."
+}

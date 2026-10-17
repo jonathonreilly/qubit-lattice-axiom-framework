@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-17T00:37:00.507488+00:00",
+  "root_wrapper_source_correspondence_approved": true,
+  "note": {
+    "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "bytes": 106792,
+    "sha256": "ce701169ef01f0b185dab37bf9279b90efdf4e648377ea0e53707f1ce57156d1"
+  },
+  "source_bodies_checked": 4,
+  "complete_wrapper_read": true,
+  "source_acceptance_separate": true,
+  "canonical_execution_at_decision": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

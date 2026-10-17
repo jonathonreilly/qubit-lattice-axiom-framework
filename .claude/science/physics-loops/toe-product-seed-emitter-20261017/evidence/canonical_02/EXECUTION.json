@@ -1,0 +1,47 @@
+{
+  "started_utc": "2026-10-17T02:19:35.269109+00:00",
+  "finished_utc": "2026-10-17T02:19:50.147365+00:00",
+  "runner": "scripts/product_seed_emitter_2026_10_17.py",
+  "prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/PRELAUNCH.json",
+    "bytes": 58518,
+    "sha256": "24fbda3936d0d44dc1f92ac3a3cd71d42e66e38a021ca68d660ae04adf931c85"
+  },
+  "all_source_input_bytes_unchanged": true,
+  "runner_cache_also_checked_filesystem_generation_tokens": true,
+  "status": "ok",
+  "exit_code": 0,
+  "elapsed_seconds": 14.675396919250488,
+  "child_user_cpu_seconds": 13.624878,
+  "child_system_cpu_seconds": 0.302407,
+  "caps": {
+    "CPU_soft_hard_seconds": [
+      120,
+      120
+    ],
+    "external_wall_seconds": 120
+  },
+  "stream_semantics": "runner_cache merges child stderr into stdout; the empty stderr field is protocol-only, not an independently observed child stream.",
+  "stdout_merged": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/stdout_merged.txt",
+    "bytes": 1029,
+    "sha256": "4924a072a3bf2e73c7c017f0d1efd4713c05202ee7712ac28b9306ccebc0845d"
+  },
+  "stderr_protocol": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/stderr_protocol.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "cache_status": "fresh",
+  "cache": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/cache.txt",
+    "bytes": 1379,
+    "sha256": "2041dec63236ebfa21f52aca1b32050faf4d5dec10b525bb3e0d92b5ae624b78"
+  },
+  "result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/result.json",
+    "bytes": 110471,
+    "sha256": "84b5680f5b5fd747121ee6e4abdff210a14a782662814bdeaafda3140870a4f5"
+  },
+  "scope": "Actual replay of six qualified finite calculations. This is reproducibility, not a new independent theorem proof, interval proof from samples, dynamics simulation or retained audit."
+}

@@ -1,0 +1,35 @@
+{
+  "started_utc": "2026-10-17T01:41:27.707639+00:00",
+  "ended_utc": "2026-10-17T01:41:28.284664+00:00",
+  "runner": "scripts/structural_coefficient_box_2026_10_17.py",
+  "cpu_cap_seconds": 60,
+  "external_wall_cap_seconds": 60,
+  "shared_budget": "Both finite calculations in one primary process; no per-body reset.",
+  "status": "ok",
+  "exit_code": 0,
+  "elapsed_sec": 0.5255649089813232,
+  "cache_path": "logs/runner-cache/structural_coefficient_box_2026_10_17.txt",
+  "cache_status": "fresh",
+  "stdout": {
+    "bytes": 939,
+    "sha256": "d8f7af952f167bf5cb6fcbbe0d882eb33d0823a5f30619550aa40aa1fd073916"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runner_at_receipt": {
+    "bytes": 12278,
+    "sha256": "b11febc057db28f305c27dd684f45c8a92f743d95ebb8344afb5b5c21a0f10b7"
+  },
+  "canonical_result": {
+    "bytes": 26960,
+    "sha256": "4f1eea1cfd0e8b884d58b6f7e298af11961ee49fa196ca350fdc8ff3831a033d"
+  },
+  "preexecution_output_slots": "Missing canonical output was initialized to not_executed before runner identity capture.",
+  "scope": "Actual exact finite algebra only. No stationary refit, coefficient grid, time evolution, hardware experiment or retained audit.",
+  "cache": {
+    "bytes": 1293,
+    "sha256": "b38f852a8c91c5ad5860f4791994e15a5629acfdbe7b0907b5bd46d1d675fc55"
+  }
+}

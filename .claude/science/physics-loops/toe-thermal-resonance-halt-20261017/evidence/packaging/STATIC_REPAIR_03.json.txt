@@ -1,0 +1,10 @@
+{
+  "recorded_utc": "2026-10-17T04:37:38.147363+00:00",
+  "failed_attempt": "static_03",
+  "failure": "note_link:EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+  "cause": "Parent dedup chose byte-identical archived family-note path, leaving the distinct canonical parent-note link outside declared closure.",
+  "correction": "Explicitly include all new note-link destinations in declared inputs except separately pinned primary. Exact tracked parent canonical note added; no scientific body change.",
+  "frozen_failure_overlay": "historical_build_04",
+  "scientific_runs": 0,
+  "retry": "Static retry CPU20/20 wall30; earlier attempts retained."
+}

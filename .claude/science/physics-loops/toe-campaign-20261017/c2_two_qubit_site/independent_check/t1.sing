@@ -1,0 +1,14 @@
+LIB "homolog.lib";
+ring S=2,(x,y,z),dp;
+ideal I = x*(y2+1)+y*(x2+1), z*(y2+1)+y*(z2+1);
+ideal Is = sat(I, x*y*z);
+Is;
+ideal p1=x+y,y+z; ideal p2=x+y,y*z+1; ideal p3=x*y+1,y+z; ideal p4=x*y+1,y*z+1;
+ideal K = intersect(p1,p2,p3,p4);
+ideal Ks = sat(K,x*y*z);
+"compare"; size(reduce(std(Is),std(Ks))); size(reduce(std(Ks),std(Is)));
+module E = Ext_R(3, module(I));
+E;
+module E2 = Ext_R(2, module(I));
+"ext2 rows"; nrows(E2);
+quit;

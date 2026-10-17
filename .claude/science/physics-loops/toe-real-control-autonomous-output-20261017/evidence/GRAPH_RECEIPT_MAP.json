@@ -1,0 +1,43 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/real_control_graph_01",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "EXECUTION.json",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/graph_receipt/EXECUTION.json.txt",
+      "bytes": 1428,
+      "sha256": "9f8e3019abef17442a4f44bfe4c5053c469d027fd667baa7c8e2071861ba7a76",
+      "compression": "none",
+      "raw_bytes": 1428,
+      "raw_sha256": "9f8e3019abef17442a4f44bfe4c5053c469d027fd667baa7c8e2071861ba7a76"
+    },
+    {
+      "original_path": "executed_source.py",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/graph/graph_check.py.txt",
+      "bytes": 2759,
+      "sha256": "6d9716a83320020387f23d94dc49a7393a5935b8670dacf57cc2871cc804c807",
+      "compression": "none",
+      "raw_bytes": 2759,
+      "raw_sha256": "6d9716a83320020387f23d94dc49a7393a5935b8670dacf57cc2871cc804c807"
+    },
+    {
+      "original_path": "stderr",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "stdout",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/graph/GRAPH_VERIFICATION.json.txt",
+      "bytes": 2068,
+      "sha256": "ed12c2fb49799c07742b04a354012015437f6f773d60baf4f0272faec8f9a890",
+      "compression": "none",
+      "raw_bytes": 2068,
+      "raw_sha256": "ed12c2fb49799c07742b04a354012015437f6f773d60baf4f0272faec8f9a890"
+    }
+  ],
+  "count": 4
+}

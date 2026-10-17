@@ -1,0 +1,129 @@
+{
+  "accepted_utc": "2026-10-17T05:38:58.310360+00:00",
+  "status": "Accepted reversible source transport for bounded canonical execution; not a new theorem/retained verdict or publication approval.",
+  "parent_head": "67108090f68ed9b2bc62eee23701b2d3d71dce4a",
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/real_control_autonomous_output_2026_10_17.py",
+    "bytes": 47127,
+    "sha256": "b7d63ff04babbf0cf4abd6fde6056a8d7a14684eadb66a2773f645cdea430bc5"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "bytes": 74148,
+    "sha256": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca"
+  },
+  "artifact_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_control_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+    "bytes": 26620,
+    "sha256": "2360cdbe3f57b100bec6a9cfc7e9792ab38af683f24d9e0747dc07b546a2f3b8"
+  },
+  "source_labels": 229,
+  "declared_input_count": 109,
+  "manifest_member_count": 108,
+  "bodies": [
+    {
+      "title": "Real local apparatus and unprepared-seed counterexample",
+      "raw": {
+        "bytes": 32324,
+        "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018"
+      },
+      "link_changes": 0
+    },
+    {
+      "title": "Real local preparation and autonomous-output composition",
+      "raw": {
+        "bytes": 28103,
+        "sha256": "57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c"
+      },
+      "link_changes": 3
+    }
+  ],
+  "original_statements": 448,
+  "transport_events": 16,
+  "optimized_python_refusal": true,
+  "draft_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_publication_draft/FREEZE.json",
+    "bytes": 3400,
+    "sha256": "be5f5d8de532eb361a741bfdc18858bae55ec825113abc6a5be56b05f5654a5e"
+  },
+  "draft_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_publication_draft/PACKET_MANIFEST.json",
+    "bytes": 126081,
+    "sha256": "17d54aeebc10b49a36825cce57bbb7e1352473894ef3e0d4c807d05b3ca68146"
+  },
+  "overlay_files": 88,
+  "frozen_draft_regular_members": 497,
+  "static_attempts": [
+    {
+      "attempt": 1,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_publication_draft/static_01/RECEIPT.json",
+        "bytes": 1829,
+        "sha256": "614a0674c1e7e29335449535b9308a5020fbdd9e8da8c32c502c06cdf2704e61"
+      },
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_publication_draft/static_01/PRELAUNCH.json",
+        "bytes": 45901,
+        "sha256": "5701f8b06789d30550e36ca5fbebcba4e6a34b7a5670e2b71268658db7e043a6"
+      },
+      "elapsed_seconds": 0.14235245808959007,
+      "exit_code": 1,
+      "bindings": 121
+    },
+    {
+      "attempt": 2,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_publication_draft/static_02/RECEIPT.json",
+        "bytes": 1827,
+        "sha256": "5472a972d767a27eccbdd312a1dfa289b9284386fda09de3cd111059befd2b12"
+      },
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_publication_draft/static_02/PRELAUNCH.json",
+        "bytes": 45901,
+        "sha256": "6fa0c066d84404cc7aae903aa68951f3b7732309491e9f00ae70277633d18e14"
+      },
+      "elapsed_seconds": 0.25939191691577435,
+      "exit_code": 0,
+      "bindings": 121
+    },
+    {
+      "attempt": 3,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_publication_draft/static_03/RECEIPT.json",
+        "bytes": 1827,
+        "sha256": "dc8894e6af20e05fcef1851786edd2242722c80ba8bb79812d2ea0fd4c2e42b7"
+      },
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_publication_draft/static_03/PRELAUNCH.json",
+        "bytes": 45901,
+        "sha256": "7ff767b34a1634ebabff56b8c2b9e89444465d07983649e4a3018c8fdeff4294"
+      },
+      "elapsed_seconds": 0.31421908317133784,
+      "exit_code": 0,
+      "bindings": 121
+    }
+  ],
+  "last_static_relation": "Static03 exact final artifact except the sole verified printed coverage literal. Explicit optimized-Python refusal included. No fourth static or scientific run.",
+  "root_read_scope": "Both source arguments, two analytical reviews and original author programs/evidence were previously fully read and source-qualified at exact unchanged identities. This pass read the full new wrapper, all sixteen executable event before/after texts, adapters/main, full static inspection/launcher, complete static03 outcomes and failed01 stderr, conformance/packaging/fault plan. Reversed448 AST statement records and complete proof destination edits mechanically. Historical source arrays hashed, not counted as mathematics.",
+  "root_source_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_root_review/ACCEPTANCE.json",
+    "bytes": 3752,
+    "sha256": "98315ba16275ceb44dd3fcf32d655d1e92d42da7c7678600327be89d9d1ba852"
+  },
+  "preserved_failure": "Static01 inspection incorrectly removed original docstring;02 corrected checker;03 explicitly refuses optimized Python. Historical preparation isolated SymPy import failure and identical-code retry remain exact.",
+  "limits": [
+    "Original ramp budget first clause is non-discriminating arithmetic; analytical Gram/Duhamel and substantive local identities carry ramp support.",
+    "Original product-seed countercase remains at slower1e6/kappa\u00b2 onset, narrow runtime/seed only. No five-route or general no-go PASS.",
+    "Original same-model source exposure remains; this is transport qualification, not independent re-proof of inherited scattering.",
+    "Pure seed, exact static real apparatus and supplied C1 controls; no new calibration, larger-window, finite-permanence or doubled thermal claim."
+  ],
+  "pending": [
+    "One bounded actual canonical/cache run",
+    "Six distinct scientific fault tests and exact report comparison",
+    "Focused source/cache/readiness/graph/vocabulary/link/diff checks and remote regular PR",
+    "Integrated-current-main landing and retained audit"
+  ],
+  "archived_draft_members": 499,
+  "scientific_executions_this_script": 0,
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run01/executed_source.py", line 16, in <module>
+    import sympy as sp
+ModuleNotFoundError: No module named 'sympy'

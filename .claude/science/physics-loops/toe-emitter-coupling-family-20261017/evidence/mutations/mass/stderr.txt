@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/mass/mutated.py", line 618, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/mass/mutated.py", line 543, in main
+    report = run_family_author(inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/mass/mutated.py", line 271, in run_family_author
+    lt('new_reference_mass_loss',mass_loss,mass_ceiling)
+    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/mass/mutated.py", line 98, in lt
+    assert left<right, (name,str(left),str(right))
+           ^^^^^^^^^^
+AssertionError: ('new_reference_mass_loss', '223075419907986369698326328401888929176685084849390525397217220210369276669831341350929469969916002500474446660334553637074445312839286687570539/222998087168604888259196819186089804057348339546395275858152326884744098030685507584087459098314045833677891786447494784966321958052531367187500000', '7/20000000')

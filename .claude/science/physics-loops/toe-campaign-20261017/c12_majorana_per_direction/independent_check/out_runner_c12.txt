@@ -1,0 +1,22 @@
+PASS L = 4: all 8 sign sectors are commuting, valid stabilizer groups
+PASS L = 4: log2 code dimension 3 in every sector
+PASS L = 6: log2 code dimension 3 in the sectors (0,0,0) and (1,1,1)
+T-junction signs (L = 6): {-1: 20}
+PASS straight legs of edge operators commute with all plaquettes and flip exactly two vertex terms (L = 6)
+PASS fermionic charge: Levin-Wen T-junction sign -1 for all 20 triples of directions (L = 6)
+covariance tests (sector, preserved): count {((0, 0, 0), True): 768, ((1, 1, 1), True): 768}
+PASS every rotation with every admissible sign choice (24 x 32) maps the signed groups of sectors (0,0,0) and (1,1,1) to themselves
+group-law choices: {'other': 896, (('C2axis', 1), ('C2edge', -1)): 128}
+PASS group law: 128 of 1024 generator sign choices give an order-48 group containing -1 (central extension of O by fermion parity); in all, axis-C2 lifts square to +1 and edge-C2 lifts to -1
+clean pair test (sector, rotation, lambda): count {((0, 0, 0), 'C2axis', -1): 2, ((0, 0, 0), 'C2edge', -1): 2, ((1, 1, 1), 'C2axis', -1): 2, ((1, 1, 1), 'C2edge', -1): 2}
+PASS clean pair test (L = 8, consistent group action): lambda = -1 for the axis C2 and the edge C2 in both sectors, so eta_f = +1 for both (trivial class on O)
+per_element: 8 sign sectors; 24 rotations x 32 sign choices; 1024 generator choices
+per_site: three qubits per site (six local Majoranas)
+per_mode: not applicable
+per_block: not applicable
+lattice_wide: L = 4 (sectors, covariance), L = 6 (dimension, statistics)
+TOTAL: PASS=8 FAIL=0
+
+real	2m0.476s
+user	1m59.088s
+sys	0m0.192s

@@ -1,0 +1,9 @@
+{
+  "status": "All exact arithmetic checks completed; conditional composition scope only",
+  "inverse_center_Frobenius_bound": 119.0,
+  "independent_uniform_inverse_bound": 119.87434889384814,
+  "source_gap_lower": 0.18114012916808103,
+  "infinite_error": 0.010944934226503944,
+  "finite_error": 0.011944934226503945,
+  "elapsed_seconds": 2.2926645409315825
+}

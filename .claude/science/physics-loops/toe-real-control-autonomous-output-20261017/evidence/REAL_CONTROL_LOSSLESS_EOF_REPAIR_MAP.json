@@ -1,0 +1,43 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/real_control_lossless_eof_repair",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "EXECUTION.json",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_lossless_eof_repair/EXECUTION.json.txt",
+      "bytes": 1464,
+      "sha256": "5b6a320731b259795eea0600e93d30aff1947172e8930d6bb48e7c9c83991bf8",
+      "compression": "none",
+      "raw_bytes": 1464,
+      "raw_sha256": "5b6a320731b259795eea0600e93d30aff1947172e8930d6bb48e7c9c83991bf8"
+    },
+    {
+      "original_path": "executed_source.py",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/lossless_eof_repair/repair_archive_eof.py.txt",
+      "bytes": 3751,
+      "sha256": "7b0bbfc80cfb438242398279bb66f1ac4ed4646ac1407cb0bd9c239878fac604",
+      "compression": "none",
+      "raw_bytes": 3751,
+      "raw_sha256": "7b0bbfc80cfb438242398279bb66f1ac4ed4646ac1407cb0bd9c239878fac604"
+    },
+    {
+      "original_path": "stderr",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "stdout",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_lossless_eof_repair/stdout.txt",
+      "bytes": 1805,
+      "sha256": "6f8a393e2d27b8370e22830487bbc481067a98cb893a12489e68d478df02d9d3",
+      "compression": "none",
+      "raw_bytes": 1805,
+      "raw_sha256": "6f8a393e2d27b8370e22830487bbc481067a98cb893a12489e68d478df02d9d3"
+    }
+  ],
+  "count": 4
+}

@@ -1,0 +1,101 @@
+{
+  "note": {
+    "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "bytes": 106965,
+    "sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac"
+  },
+  "unchanged_bodies": [
+    {
+      "label": "generic",
+      "source": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/finite_channel_wavepacket_bridge/THEOREM_V2.md",
+      "bytes": 27028,
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+      "body_byte_start_inclusive": 22271,
+      "body_byte_end_exclusive": 49299
+    },
+    {
+      "label": "interval",
+      "source": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/CANDIDATE.md",
+      "bytes": 23457,
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+      "body_byte_start_inclusive": 49522,
+      "body_byte_end_exclusive": 72979
+    },
+    {
+      "label": "stationary_history",
+      "source": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/ROUTE.md",
+      "bytes": 21276,
+      "sha256": "04ffdf68d3bdadf17f5c0838dde2a8a2bd1608d786ea58e427c5c25fd33ef8d1",
+      "body_byte_start_inclusive": 73190,
+      "body_byte_end_exclusive": 94466
+    },
+    {
+      "label": "selected_coefficients",
+      "source": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/old_cap_search/RESULT.md",
+      "bytes": 12175,
+      "sha256": "397c18e02c0d583bdc3e51df8f5c513f677b448862526a362eac4cc43577af00",
+      "body_byte_start_inclusive": 94703,
+      "body_byte_end_exclusive": 106878
+    }
+  ],
+  "draft_note_sha256": "665758ecf7cc80378ae14ce863b6421f250c0c602f4f98baccf777a70d08835d",
+  "draft_wrapper_sha256": "76ede9476c0f536b4cb33ffd63fd8ca97a6c7ece1d1ae98aa2df47913ec34073",
+  "wrapper_refinements": [
+    {
+      "old": "wrapper_root_approval: pending\ncanonical_execution: pending\npublication: pending_and_separate_from_source_acceptance",
+      "new": "wrapper_root_approval: separately_recorded\ncanonical_execution: separately_recorded\npublication: separate_from_source_acceptance"
+    },
+    {
+      "old": "independently prepared common product packet.",
+      "new": "independently prepared common clock packet, in product with the old input and source vacuum."
+    },
+    {
+      "old": "Can an escaping one-head clock perform the fixed old-pair operation with\npositive nearest-neighbor two-body added blocks and leave no persistent\nadded old interaction in the source vacuum? The supplied ladder below gives\na conditional affirmative construction with a certified nonzero calibration\nceiling and explicit packet errors.",
+      "new": "The supplied positive nearest-neighbor two-body ladder implements the fixed\nold-pair operation by reflection of an escaping one-head clock, with a\ncertified nonzero calibration ceiling and explicit complete-output packet\nerrors. Its source vacuum leaves no persistent added old interaction."
+    },
+    {
+      "old": "Claim type: bounded theorem. The actual source surface is conditional support,\nwith no retained audit.",
+      "new": "Claim type: `bounded_theorem`. Source-status request: `proposed_retained`.\nThe actual source surface is `conditional-support`, with no retained audit."
+    },
+    {
+      "old": "This proposed wrapper, canonical execution and publication remain pending.\nThe source map records original evidence locations and proposed portable\ndestinations; root must supply actual integration records before publication.\n\nThe proposed primary program is scripts/two_body_autonomous_halt_2026_10_17.py,\nwith a direct import of scripts/two_body_autonomous_halt_check_2026_10_17.py.\nThe intended output is outputs/two_body_autonomous_halt_2026_10_17.json.\nThese are planned canonical paths, not a claim that this drafting task created,\nran or approved those programs. The companion publication record belongs in\n.claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/.",
+      "new": "The [source decision](../outputs/two_body_autonomous_halt_2026_10_17_inputs/root/SOURCE_ACCEPTANCE.json)\nand [qualification](../outputs/two_body_autonomous_halt_2026_10_17_inputs/root/QUALIFICATION.md)\nare separate from wrapper review, portable execution and publication. Their\nactual integration outcomes are recorded in the\n[review history](../.claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/REVIEW_HISTORY.md)\nand [publication checks](../.claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/PUBLISH_CHECKS.json).\n\n**Primary runner:** `scripts/two_body_autonomous_halt_2026_10_17.py`.\nThe root-owned [primary](../scripts/two_body_autonomous_halt_2026_10_17.py)\ndirectly imports the separately written\n[check module](../scripts/two_body_autonomous_halt_check_2026_10_17.py).\nThe [result](../outputs/two_body_autonomous_halt_2026_10_17.json),\n[point witnesses](../outputs/two_body_autonomous_halt_2026_10_17_point_witnesses.json)\nand [cache](../logs/runner-cache/two_body_autonomous_halt_2026_10_17.txt)\nare evidence only for their actual recorded execution and freshness in the\n[execution record](../.claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/CANONICAL_EXECUTION.json).\nThe [source manifest](../.claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/SOURCE_MANIFEST.json)\nbinds the unchanged mathematical bodies, and the\n[artifact manifest](../outputs/two_body_autonomous_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json)\nbinds the historical evidence. Historical absolute paths label original runs;\nthe portable programs consume repository-local declared inputs."
+    },
+    {
+      "old": "old input and any passive reference, as constructed in the concrete source.\nLet",
+      "new": "old input and any passive reference, as constructed in the concrete source.\nThe readiness is a product across old input, source vacuum and clock; the\none-head clock vector need not be a product across its individual qubits.\nLet"
+    },
+    {
+      "old": "This fixed calibration ceiling remains in every packet estimate.",
+      "new": "Here R(k0) denotes four logical columns at the same kinetic momentum but\nold-dependent total energies 2+s+epsilon(k0); it is not a single-energy\nfour-open-channel scattering matrix. This fixed calibration ceiling remains\nin every packet estimate."
+    },
+    {
+      "old": "The later concrete review has SHA256",
+      "new": "The later [concrete review](../outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/REVIEW.md)\nhas SHA256"
+    },
+    {
+      "old": "This draft does not infer a merge or synchronization into its source tree.\nNo editable prompt, physical axiom, audit result, repository file or Git state\nwas changed by the drafting task.",
+      "new": "The [current-main scope](../outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/current_main_scope.json)\nrecords ten unchanged instruction sources and the unchanged original target\nbody followed by portable-provenance prose. No science was merged into this\nbranch, and no audit verdict was adopted. Historical process snapshots in\nthe evidence pack are immutable records; editable prompts and physical\naxioms are unchanged."
+    },
+    {
+      "old": "A new regular child PR,\nwith its own wrapper review and execution, is the proposed packaging route;\nthe previous PR is not rewritten.",
+      "new": "This milestone is packaged on a child branch of PR9659 with its own\nwrapper review and execution; the previous result is unchanged. The\n[portability review](../outputs/two_body_autonomous_halt_2026_10_17_inputs/portability/REPORT.md)\nchecks the complete code adaptation without relabeling the original runs.\nFull combined-current-main pipeline, strict lint and changed-evidence checks\nremain shared landing gates under conformance section12; independent retained\naudit is separate. No landing is authorized or claimed here."
+    }
+  ],
+  "source_base": "c86e61caf46c848fe8cee57ecbea6e6fdad7a4bc",
+  "publication_parent": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+  "current_main_instruction_revision": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+  "root_source_acceptance_sha256": "fba41e11ee5e282800547e7571ab520abddeda1d9d3947d7095b9dfbf6fbc4fb",
+  "scope": "Complete mathematical bodies unchanged. Root read the full wrapper and refined only framing, exact product/energy-column meanings, paths and separate integration-status references. Actual execution/publication remain independently recorded.",
+  "original_science_parent": "f5f5eda7427453aac726b394381c965f9e28ac03",
+  "publication_wrapper_refinements": [
+    {
+      "old": "records ten unchanged instruction sources and the unchanged original target\nbody followed by portable-provenance prose. No science was merged into this\nbranch, and no audit verdict was adopted.",
+      "new": "records ten unchanged instruction sources, the unchanged original target\nbody and the complete narrow publication-provenance changes. No science was\nmerged or pushed to main by this campaign, and no audit verdict was adopted."
+    },
+    {
+      "old": "This milestone is packaged on a child branch of PR9659 with its own\nwrapper review and execution; the previous result is unchanged.",
+      "new": "This milestone is packaged against current main at\n69cf6a289b2ec06213473f1549c51a57c29b6d70 after PR9659 was landed externally\nand its branch deleted. Only this new milestone was rebased; its original\nscience parent and prior execution remain preserved historical sources."
+    }
+  ]
+}

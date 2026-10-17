@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-17T03:11:28.379601+00:00",
+  "worktree_head": "0f1022e03dbbed8085035f2a378be8ae1aca02e8",
+  "origin_main": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+  "scope": "Current W includes imported PR9661/9664. No claim of complete literature coverage.",
+  "queries": [
+    {
+      "argv": [
+        "rg",
+        "-l",
+        "-i",
+        "--glob",
+        "*.md",
+        "emitter|two.contact|square.loop",
+        "docs"
+      ],
+      "exit": 0,
+      "stdout_bytes": 2599,
+      "sha256": "506144c67733772ed035f651604b6ddad7da17acdc97e2b55c0ebadd10fe29e6"
+    },
+    {
+      "argv": [
+        "rg",
+        "-n",
+        "-i",
+        "--glob",
+        "*.md",
+        "spectral.mass.{0,60}arctan|arctan.{0,60}spectral|coupling.family|position.moment.{0,60}emitter|emitter.{0,60}position.moment",
+        "docs"
+      ],
+      "exit": 0,
+      "stdout_bytes": 5208,
+      "sha256": "f4d641ef2d8b2d7ab1ad0a95b84dbc041eec10267969c4e412f4a19c8ea971dd"
+    }
+  ],
+  "candidate_file_count": 27,
+  "scoped_context_records": 20
+}

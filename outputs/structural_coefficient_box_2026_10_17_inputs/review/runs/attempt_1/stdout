@@ -1,0 +1,10 @@
+{
+  "status": "All declared exact algebra and strict comparisons completed; scope remains conditional.",
+  "checks": 157,
+  "strict_comparisons": 43,
+  "extra_reflection": 0.00020268904500846948,
+  "ready_complete": 0.011147623271512414,
+  "finite_complete": 0.012147623271512415,
+  "elapsed_seconds": 0.48668408300727606,
+  "largest_matrix_dimension": 16
+}

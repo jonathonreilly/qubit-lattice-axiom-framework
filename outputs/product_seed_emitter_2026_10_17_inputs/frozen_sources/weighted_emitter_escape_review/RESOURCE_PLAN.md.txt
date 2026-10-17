@@ -1,0 +1,5 @@
+# Predeclared bounded calculation
+
+One independent exact algebra/scalar checker invocation, capped at45 CPU seconds and60 wall seconds; matrix dimension at most32 (planned maximum8, including all seven complementary emitter coordinates). Any failed invocation will be preserved before a repair. No author code will be imported or executed. No resonance quadrature, coefficient/momentum grid, optimizer, time evolution or large-clock allocation.
+
+The calculation will derive the whole-line denominator integral identities symbolically, reconstruct the cutoff derivative and weighted product coefficients, test the non-Hermitian block inverse on a full1+7 exact example, and compare the numerical ceilings using exact rationals. Analytic integration by parts and the conditional complete-output implication are reviewed separately. The installed-emitter source remains an explicit unaccepted premise; this review does not recertify its optical identity, overlap, physical matching inverse, tail bounds or numerical diagnostics.

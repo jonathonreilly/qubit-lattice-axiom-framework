@@ -1,0 +1,302 @@
+{
+  "utc": "2026-10-17T00:50:27.227921+00:00",
+  "scope": "Focused deterministic publication checks and actual finite execution only. No independent retained audit, large-clock evolution, shared combined-main landing gate or new scientific conclusion is asserted by this checker.",
+  "artifact_hashes_verified": 289,
+  "artifact_manifest": {
+    "bytes": 54147,
+    "sha256": "3eaa44251c4bc53c3a2ff4bd0015152809d5b6ea31647dd9c628c0bdf30f9a73"
+  },
+  "unchanged_mathematical_bodies": 4,
+  "source_manifest": {
+    "bytes": 9664,
+    "sha256": "7a5d0f0a005f39c0f644afceb01d61dd3ab7bf26916721d68c098ca5640b06ab"
+  },
+  "canonical_result_input_hashes": {
+    "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/SOURCE_MANIFEST.json": "f5fab620b4cc9bb9e2ea09dabd94e5269bf9ae452877bce43cff5376d02ea08c",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/FILE_MANIFEST.json": "7cfc37c4efbea811a3c6b9a20675350f59abc5a4c7ef9cc461c462222f14944d",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/RESULT.md": "397c18e02c0d583bdc3e51df8f5c513f677b448862526a362eac4cc43577af00",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/ROUTE.md": "04ffdf68d3bdadf17f5c0838dde2a8a2bd1608d786ea58e427c5c25fd33ef8d1",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/THEOREM.md": "fffd7d405935226aba4a5e6528112b984b6dde4580747641159f554e97e2189a",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/certify_old_cap.py": "acbf5b37b2705a6a2b47ab23a48d92ca4cfb7be2f5bb4993fa4d04e94418b636",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/rational_point_certificate.json": "6f057d8a580217d29a09d7683462f5b35b71de093e75c8d07a12283cde33593f",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/SOURCE_PINS.json": "41b2f768ee9a0dd2b16301feff3b8aad0e6276f8b251da06d6c0ddce0a48cb4a",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/BRIDGE_V2_DELTA.json": "aecb5ce09e83910a7eac4754e3cda3957d1cea520cb12a7154667880b61aa50f",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/CANDIDATE.md": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/CERTIFICATE.json": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/EXECUTION.json": "254a0b0c038f40640010e0925223ff919b0dd69db0e8e24041869f3147c41b6a",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/FREEZE.json": "303f50119f8d42530bab4c6818bc3d71ed991cc1b0f296e5cd655a8b8f966898",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/POINT_WITNESSES.json": "7c231289b52353abee06063737bb202fd413fa17a426c13e696e5967014e86c2",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/SOURCE_MANIFEST.json": "f5fab620b4cc9bb9e2ea09dabd94e5269bf9ae452877bce43cff5376d02ea08c",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/certificate.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/certificate.stdout": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/certify_interval.py": "06b71bb656d17289d0f1759f9dd385bf9a49e07d58e6c840f4741eca6ae1e07f",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/ACCEPTANCE.json": "c48f3afd6d682450221c89ed3f468c2efd9fb3e618eb593c4a4d181419bc9018",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/FILE_MANIFEST.json": "7cfc37c4efbea811a3c6b9a20675350f59abc5a4c7ef9cc461c462222f14944d",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/QUALIFICATION.md": "a1700102e8d15d37252469e3af6df5648d8054ff77e3bf836f3802328c25826f",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/RESULT.md": "397c18e02c0d583bdc3e51df8f5c513f677b448862526a362eac4cc43577af00",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/ROUTE.md": "04ffdf68d3bdadf17f5c0838dde2a8a2bd1608d786ea58e427c5c25fd33ef8d1",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/THEOREM.md": "fffd7d405935226aba4a5e6528112b984b6dde4580747641159f554e97e2189a",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/THEOREM_V2.md": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/certify_old_cap.py": "acbf5b37b2705a6a2b47ab23a48d92ca4cfb7be2f5bb4993fa4d04e94418b636",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/rational_point_certificate.json": "6f057d8a580217d29a09d7683462f5b35b71de093e75c8d07a12283cde33593f",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/run_certificate.py": "301748693c737aea7948fdccf21a7a29dcec54c82b09c265d25d06236a1b99ea",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/generic/THEOREM_V2.md": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/generic/V2_CHANGE.json": "e2eef19f500fb33b79b64b23bc230af6ded5829782187f2958af2e866d62b9b8",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/generic_review/REVIEW.md": "bba09ef378466a3787ebfbbbd942a81fbe200031a24d04f799d2543e510673f6",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/prior_review/FINAL_MANIFEST.json": "145a01dbde3a6d816cf6d4fa779017c79f4453d5ab108bce9ef6e9c98f103960",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/prior_review/RESULTS.json": "d9bf7daa3920029fc7695b19467355f9ecf3a39e09cf480a4f79a4f6abf43ca9",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/prior_review/REVIEW.md": "23b78506dc56fe141f9e19347b60ed0e420b4e817b599cafa246a502a2a3f830",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/prior_review/RUN_RECEIPT.json": "5f97ce07a84c0868578175637399a50d3b3e8e3e1bc0d8afe9779dc56b9658d1",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/prior_review/WITNESS.json": "b04ab3b89b699814334d27e867bc2b5ed57295cb4d558eda1e8b9289ad96ec44",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/prior_review/reviewer_old_cap_delta.py": "64325eef136b1f2d587caa55d69c073d11e5bcec08d2366f657026bea5fc6f59",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/process/PROOF_SEARCH_GOVERNANCE.md": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/process/REVIEWER_SKILL.md": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/process/SCIENCE_WORKFLOW.md": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/process/SKILL_FRESHNESS_CHECK.md": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/root/ACCEPTANCE.json": "c48f3afd6d682450221c89ed3f468c2efd9fb3e618eb593c4a4d181419bc9018",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/root/QUALIFICATION.md": "a1700102e8d15d37252469e3af6df5648d8054ff77e3bf836f3802328c25826f",
+    "scripts/two_body_autonomous_halt_check_2026_10_17.py": "ee4b71de1d1ab3f92dd1c812974a9dac1b740bea2b8fa3c442890b1854881b92"
+  },
+  "declared_input_count": 45,
+  "helper_discovery": [
+    "scripts/two_body_autonomous_halt_check_2026_10_17.py"
+  ],
+  "deterministic_readiness_issue": null,
+  "cache_status": "fresh",
+  "canonical_execution": {
+    "started_utc": "2026-10-17T00:47:54.920932+00:00",
+    "ended_utc": "2026-10-17T00:47:57.885835+00:00",
+    "runner": "scripts/two_body_autonomous_halt_2026_10_17.py",
+    "timeout_sec": 120,
+    "status": "ok",
+    "exit_code": 0,
+    "elapsed_sec": 2.832818031311035,
+    "cache_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/two_body_autonomous_halt_2026_10_17.txt",
+    "cache_status": "fresh",
+    "stdout_bytes": 5485,
+    "stderr_bytes": 0,
+    "stdout_sha256": "9c2d025e5cda6d2169c51b2a4d59c88d889da4d1c5089f4e1bff4bde79a20ede",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preexecution_output_slots": "Missing output files were explicitly initialized as not_executed before identity capture, avoiding output-parent creation during execution.",
+    "scope": "Exact finite certificate and separate checker execution only; no large-clock evolution, infinite-time experiment or retained audit.",
+    "cache_bytes": 5838,
+    "cache_sha256": "a001116fb8ccf765463a7526e3081ab6cd586d0342e258770d17c6b51b6a40b0"
+  },
+  "mutation_cases_and_archived_streams": 7,
+  "no_go_gate_trigger": false,
+  "compiled_sources": [
+    "scripts/two_body_autonomous_halt_2026_10_17.py",
+    "scripts/two_body_autonomous_halt_check_2026_10_17.py"
+  ],
+  "relative_regular_file_links": [
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/root/SOURCE_ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/root/QUALIFICATION.md"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/REVIEW_HISTORY.md"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/PUBLISH_CHECKS.json"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "scripts/two_body_autonomous_halt_2026_10_17.py"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "scripts/two_body_autonomous_halt_check_2026_10_17.py"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17.json"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_point_witnesses.json"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "logs/runner-cache/two_body_autonomous_halt_2026_10_17.txt"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/CANONICAL_EXECUTION.json"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/SOURCE_MANIFEST.json"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_certificate_review/REVIEW.md"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/finite_channel_wavepacket_review/REVIEW.md"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/REVIEW.md"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/current_main_scope.json"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/portability/REPORT.md"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/finite_channel_wavepacket_bridge/THEOREM_V2.md"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/CANDIDATE.md"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/ROUTE.md"
+    },
+    {
+      "source": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/old_cap_search/RESULT.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/CLAIM_STATUS_CERTIFICATE.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/root/SOURCE_ACCEPTANCE.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/CLAIM_STATUS_CERTIFICATE.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/root/QUALIFICATION.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/CLAIM_STATUS_CERTIFICATE.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/CANONICAL_EXECUTION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/CLAIM_STATUS_CERTIFICATE.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/PUBLISH_CHECKS.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/SOURCE_MANIFEST.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/REVIEW_HISTORY.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/CANONICAL_EXECUTION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/PUBLISH_CHECKS.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/REVIEW_HISTORY.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/SOURCE_MANIFEST.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/REVIEW_HISTORY.md",
+      "target": "outputs/two_body_autonomous_halt_2026_10_17_inputs/portability/REPORT.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/REVIEW_HISTORY.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/PUBLISH_CHECKS.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/TRACE_GATE.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/TRACE_GATE.md",
+      "target": ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/HANDOFF.md"
+    }
+  ],
+  "graph": {
+    "old_counts": {
+      "node_count": 7207,
+      "edge_count": 16162
+    },
+    "new_counts": {
+      "node_count": 7208,
+      "edge_count": 16163
+    },
+    "added": [
+      "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
+    ],
+    "removed": [],
+    "rewired": [],
+    "new_node": {
+      "claim_id": "two_body_autonomous_halt_bounded_theorem_note_2026-10-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "`bounded_theorem`. Source-status request: `proposed_retained`.",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "autonomous_boundary_reflection_bounded_theorem_note_2026-10-16"
+      ],
+      "helper_runner_paths": [
+        "scripts/two_body_autonomous_halt_check_2026_10_17.py"
+      ],
+      "note_hash": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac",
+      "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "runner_path": "scripts/two_body_autonomous_halt_2026_10_17.py",
+      "title": "Autonomous reflection from a positive two-body source ladder"
+    },
+    "new_edges": [
+      {
+        "from": "two_body_autonomous_halt_bounded_theorem_note_2026-10-17",
+        "to": "autonomous_boundary_reflection_bounded_theorem_note_2026-10-16"
+      }
+    ],
+    "manifest_sha256": "255002c56670e27356aa6f5b6b5fecf6d256ca63670d8458f33d9d577e0c1114",
+    "scope": "Only the intended new note and its citation links; prior-result context is not a new mathematical import. Old topology preserved. Generated graph JSON is validation residue and will not be committed."
+  },
+  "tracked_diff_whitespace_exit_code": 0,
+  "publication": "pending; regular PR URL and exact head recorded separately after creation",
+  "shared_landing_gates": "not run; combined-current-main pipeline, strict lint, changed-evidence checks and independent retained audit remain separate",
+  "final_staged_checks": {
+    "utc": "2026-10-17T00:50:53.596823+00:00",
+    "publication_base": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+    "staged_path_count": 304,
+    "staged_path_inventory_sha256": "ae26db9fc226422d5007f4a4b685085735bc23b5747c74974f4d3b5c59b05b20",
+    "outside_owned_scope_paths": [],
+    "raw_staged_whitespace_exit_code": 2,
+    "raw_staged_whitespace_stdout_sha256": "def0e75f30fc169a1a98df0c2162a3e2ca19fc86c403380437e02c38509cf0b4",
+    "preserved_historical_warning_files": [
+      "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_certificate_review/OLD_CAP_CHECKER_DELTA.diff",
+      "outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/DRAFT_WRAPPER.md",
+      "outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/pre_main_publication/logs/runner-cache/two_body_autonomous_halt_2026_10_17.txt",
+      "outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/pre_main_publication/staged_check.stdout",
+      "outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/prepublication_refresh/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.diff",
+      "outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/prepublication_refresh/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.diff",
+      "outputs/two_body_autonomous_halt_2026_10_17_inputs/portability/COMPLETE_CHANGED_LOGIC.diff"
+    ],
+    "all_other_staged_paths_whitespace_exit_code": 0,
+    "unstaged_or_untracked_files": [],
+    "editable_prompt_files_changed": [],
+    "scope": "All paths reviewed by exact body pins, complete changed wrapper/code review, artifact manifest and scoped final inventory. Seven historical text artifacts preserve original bytes; no blanket raw-whitespace pass is claimed. No merge, audit verdict or main push."
+  }
+}

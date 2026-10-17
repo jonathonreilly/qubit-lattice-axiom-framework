@@ -1,0 +1,732 @@
+"""Portable author-checker replay for conditional thermal/resonance output.
+
+Current review, qualification and execution status lives in the paired packet.
+Import is inert: no scientific function, input read, output write or CPU-limit
+change occurs. Guarded main alone starts the combined CPU30/30 calculation;
+the required external canonical runner enforces the shared wall45 limit.
+The three original scientific bodies are transported with explicit AST maps.
+Historical receipts remain historical; this replay is not a theorem review.
+"""
+from pathlib import Path
+import hashlib
+import json
+import resource
+import time
+
+AUDIT_TIMEOUT_SEC = 45
+REPO = Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree')
+INPUT_ROOT = REPO / 'outputs/thermal_resonance_halt_2026_10_17_inputs'
+
+class FrozenInputs:
+    """Resolve only declared logical identities to hash-checked local bytes.
+
+    Historical absolute strings are lookup keys, never filesystem fallbacks.
+    read_text decodes the exact checked bytes as UTF-8. The class has no write
+    method, no network access and no directory or undeclared-path fallback.
+    """
+
+    def __init__(self, repo, table_path):
+        self.repo = Path(repo).resolve()
+        self.table = json.loads(Path(table_path).read_text(encoding='utf-8'))
+        self.reads = []
+
+    def read_bytes(self, role, logical):
+        row = self.table['roles'][role]['aliases'][str(logical)]
+        rel = Path(row['path'])
+        assert not rel.is_absolute() and '..' not in rel.parts and rel.as_posix() == row['path']
+        path = self.repo / rel
+        assert path.is_file() and not path.is_symlink(), row['path']
+        assert not any(parent.is_symlink() for parent in path.parents if parent != self.repo and self.repo in parent.parents)
+        path.resolve().relative_to(self.repo)
+        raw = path.read_bytes()
+        assert len(raw) == row['bytes'], row['path']
+        assert hashlib.sha256(raw).hexdigest() == row['sha256'], row['path']
+        self.reads.append({'role': role, 'logical_identity': str(logical), 'path': row['path'], 'sha256': row['sha256']})
+        return raw
+
+    def read_text(self, role, logical):
+        return self.read_bytes(role, logical).decode('utf-8')
+
+    def original_program_bytes(self, role):
+        return self.read_bytes(role, '__original_program__')
+
+    def shared_limits(self):
+        return {'cpu_soft_hard_seconds': list(resource.getrlimit(resource.RLIMIT_CPU)),
+                'external_wall_cap_seconds': AUDIT_TIMEOUT_SEC,
+                'wall_enforcement': 'Required canonical runner_cache execution; this class does not enforce wall time.'}
+
+    def execution_metadata(self, role):
+        return {'source_role': role,
+                'historical_source_run_limits': self.table['roles'][role]['historical_limits'],
+                'actual_shared_process_limits': self.shared_limits(),
+                'source_statement_scope': 'Original report scope/limitations strings retain their historical scientific meaning. This is a portable replay, not a new review.',
+                'original_program_sha256': self.table['roles'][role]['aliases']['__original_program__']['sha256']}
+
+def verify_artifacts():
+    manifest = json.loads((INPUT_ROOT / 'ARTIFACT_MANIFEST.json').read_text())
+    for row in manifest['files']:
+        rel = Path(row['path'])
+        assert not rel.is_absolute() and '..' not in rel.parts
+        path = REPO / rel
+        assert path.is_file() and not path.is_symlink(), row['path']
+        path.resolve().relative_to(REPO)
+        raw = path.read_bytes()
+        assert len(raw) == row['bytes'] and hashlib.sha256(raw).hexdigest() == row['sha256'], row['path']
+
+def run_resonance_author(inputs):
+    'New author-owned exact scalar corroboration, not an independent theorem review.\n\nNo prior scientific program is imported or executed. Analytic contour, BV and\noperator hypotheses remain proof obligations of CANDIDATE.md. No parameter grid,\nquadrature, matrix or dynamics computation occurs here.\n'
+    from pathlib import Path
+    from fractions import Fraction as F
+    from hashlib import sha256
+    from datetime import datetime, timezone
+    import argparse
+    import json
+    import resource
+    import sys
+    import time
+    pass
+    pass
+    pass
+    pass
+    pass
+    pass
+    pass
+    started = time.monotonic()
+    out = {'status': 'running', 'started_utc': datetime.now(timezone.utc).isoformat(), 'independence': 'author corroboration only; no prior checker import/replay', 'checks': {}, 'values': {}, 'failed_routes': {}, 'resources': {}}
+
+    def ident(path):
+        st = path.stat()
+        return {'sha256': sha256(path.read_bytes()).hexdigest(), 'bytes': st.st_size, 'device': st.st_dev, 'inode': st.st_ino, 'mtime_ns': st.st_mtime_ns}
+
+    def val(name, x):
+        out['values'][name] = {'rational': str(x), 'display_float': float(x)}
+        return x
+
+    def ck(name, test):
+        out['checks'][name] = bool(test)
+        if not test:
+            raise AssertionError(name)
+
+    def zadd(a, b):
+        return (a[0] + b[0], a[1] + b[1])
+
+    def zsub(a, b):
+        return (a[0] - b[0], a[1] - b[1])
+
+    def zmul(a, b):
+        return (a[0] * b[0] - a[1] * b[1], a[0] * b[1] + a[1] * b[0])
+
+    def zdiv(a, b):
+        den = b[0] * b[0] + b[1] * b[1]
+        return ((a[0] * b[0] + a[1] * b[1]) / den, (a[1] * b[0] - a[0] * b[1]) / den)
+
+    def zs(z):
+        return [str(z[0]), str(z[1])]
+    try:
+        pass
+        ck('cpu_limit_is_predeclared', resource.getrlimit(resource.RLIMIT_CPU) == (30, 30))
+        source_manifest = json.loads(inputs.read_text('resonance_author', 'SOURCE_MANIFEST.json'))
+        for entry in source_manifest['entries']:
+            raw = inputs.read_bytes('resonance_author', entry['snapshot'])
+            ck('snapshot:' + entry['snapshot'], sha256(raw).hexdigest() == entry['sha256'] and len(raw) == entry['bytes'])
+        data = {k: F(v) for k, v in json.loads(inputs.read_text('resonance_author', 'SCALAR_INPUTS.json')).items()}
+        point = json.loads(inputs.read_text('resonance_author', 'inputs/interval.json'))['exact_parameters']
+        J = F(point['J'])
+        sn = F(point['sin_k'])
+        cs = F(point['cos_k'])
+        lo = data['kappa_low']
+        hi = data['kappa_high']
+        sig = data['sigma']
+        v = data['v']
+        eps = data['epsilon']
+        ninv = data['N_inverse_upper']
+        sv = data['sqrt_v_lower']
+        off = data['off_diagonal_integrated_upper']
+        ck('exact_unit_circle', sn * sn + cs * cs == 1)
+        v0 = val('v0', 2 * J * sn)
+        b0 = val('b0', 4 * sn * cs)
+        sinphi = 2 * sn * cs
+        cosphi = cs * cs - sn * sn
+        sigmare = val('Sigma0_real', -2 * cosphi * sinphi / v0)
+        sigmaim = val('Sigma0_imag', -2 * sinphi * sinphi / v0)
+        ck('Sigma0_modulus_identity', sigmare * sigmare + sigmaim * sigmaim == (b0 / v0) ** 2)
+        ck('Sigma0_imag_identity', -sigmaim == b0 * b0 / (2 * v0))
+        ck('center_velocity_interval', v < v0 < F(3, 100))
+        ck('form_factor_interval', F(3, 2) < b0 < 2)
+        ck('curvature_ratio', 2 * J / v < F(5, 2))
+        ck('sqrt_velocity_surrogate', 0 < sv and sv * sv < v)
+        ck('Gamma_coefficient', -sigmaim > 19)
+        ck('pole_horizontal_bound', abs(sigmare / v0) < 3200)
+        ck('pole_vertical_bound', -sigmaim / v0 < 3200)
+        ck('all_poles_inside_rectangle', 3200 * hi * hi < sig / 4)
+        ck('pole_decay_coefficient', v * -sigmaim / v0 > F(125, 4) > 30)
+        ck('denominator_q_ratio', (1 + 2 / b0) / v0 < 100)
+        drel = val('denominator_relative_upper', 100 * (J * sig + 560 * hi * hi))
+        ck('uniform_denominator_relative', drel < eps == 4 * sig)
+        rin = val('incoming_pointwise_relative', (18 * sig + eps) / (1 - eps))
+        rout = val('outgoing_pointwise_relative', (20 * sig + eps) / (1 - eps))
+        eta = F(4, 3) * sig
+        ck('incoming_L2_floor', ninv * rin < 30 * sig)
+        ck('outgoing_L2_floor', ninv * rout + 4 * eta * eta < 30 * sig)
+        rd = val('density_relative', (36 * sig + (18 * sig) ** 2 + 2 * eps + eps * eps) / (1 - eps) ** 2)
+        ck('density_relative_rounding', rd < 45 * sig)
+        density_error = val('density_L1_floor', 45 * sig * ninv + 16 * hi * hi / (v * v * sig))
+        ck('density_cutoff_kept', density_error < 50 * sig)
+        Bstar = data['Bstar']
+        ck('real_affine_range', F(3, 100) * sig + 2 / v * hi * hi < Bstar)
+        logarg = val('max_log_argument', 1 + 2 * Bstar / (19 * lo * lo))
+        ck('exact_log_majorant', logarg < F(8, 3) ** 40)
+        ck('H0_coefficient', 2 / v * 40 == 3200)
+        ck('F0_coefficient', 3200 / (1 - eps) < 4000)
+        tv_terms = [F(8), F(8), F(4)]
+        ck('cutoff_total_variation', sum(tv_terms) == 20)
+        ck('cutoff_curvature_coefficient', F(5, 2) * 4 == 10)
+        out['values']['cutoff_TV_coefficients'] = {'cutoff_derivative': '8', 'rational_derivative': '8', 'two_outer_endpoint_jumps': '4'}
+        Tmin = val('minimum_onset', 1 / (hi * hi))
+        Tmax = val('maximum_onset', 1 / (lo * lo))
+        ck('halfline_sum_regime', v * Tmin > 1)
+        ck('finite_bottom_regime', v * sig * Tmin > 1)
+        pole = val('uniform_pole_ceiling', 2 * F(3, 8) ** 30)
+        half = val('uniform_directional_cutoff_plus_vertical', hi * hi / (v * sv) * (24 / sig + 10))
+        sqsig = F(1, 1000)
+        ck('exact_sqrt_sigma', sqsig * sqsig == sig)
+        bottom = val('uniform_incoming_bottom', hi ** 3 / (v * v * sig * sqsig))
+        qin = val('qin', 30 * sig + half + bottom)
+        qout = val('qout', 30 * sig + half + 2 * bottom + pole)
+        ck('actual_halfline_normalization_exists', qout < F(1, 2))
+        density_edges = val('uniform_density_contour_edges', 12 * hi ** 4 / (v ** 3 * sig * sig))
+        ae = val('emitter_reference_amplitude', 50 * sig + pole + density_edges)
+        sf = val('scalar_incoming_amplitude', 1600 * hi * rin + hi ** 3 / (v * v) * (13 / sig + 5))
+        cg0 = val('constant_background_clock', 31 * sf)
+        cgvar = val('varying_background_clock', 2700 * sig * 2000 * hi)
+        kloc0 = val('constant_localized_response_clock', hi * 20000 * ae)
+        klocvar = val('varying_localized_response_clock', hi * 1000000 * sig)
+        klocerr = val('all_emitter_error_coordinates_clock', hi * 20000 * (4 * sig + off))
+        clockcol = val('localized_clock_per_column', cg0 + cgvar + kloc0 + klocvar + klocerr)
+        clockop = val('localized_clock_operator', F(3, 2) * clockcol)
+        emitterop = val('full_emitter_operator', ae + F(3, 2) * (4 * sig + off))
+        loc = val('complete_localized_operator', clockop + emitterop)
+        remainder = val('complete_escape_remainder', qin + qout + loc)
+        ck('proposed_remainder', remainder < data['proposed_escape_remainder_upper'])
+        total = val('complete_infinite_upper_expression', data['complete_seed_error'] + data['complete_reflection_error'] + remainder)
+        ck('proposed_infinite_error', total < data['proposed_infinite_error_upper'])
+        ck('proposed_trace_error', 2 * total < 2 * data['proposed_infinite_error_upper'])
+        buffer = val('minimum_finite_buffer', (data['clock_extent_factor'] - data['observation_time_factor'] * data['prepared_sector_radius'] * F(6, 5)) * Tmin - (data['L'] + 1) - 9)
+        ck('finite_graph_distance_buffer', buffer > 0)
+        finiteextra = val('finite_extra', F(32, 5) * F(3, 8) ** 9)
+        ck('finite_extra_rounding', finiteextra < F(1, 1000))
+        val('complete_finite_upper_expression', total + finiteextra)
+        ck('proposed_finite_error', total + finiteextra < data['proposed_finite_error_upper'])
+        val('upper_coupling_clock_sites', 50 * Tmin)
+        val('lower_coupling_clock_sites', 50 * Tmax)
+        E0 = val('E0', 2 * J * (1 - cs))
+        ck('positive_emitter_onsite_all_family', E0 > 2 * hi)
+        val('maximum_new_emitter_incident_load', E0 + 2 * hi)
+        val('maximum_added_attachment_incident_load', 3 * hi)
+        val('actual_scalar_upper_endpoint', F(point['scalar_reserve']) + 2 * hi)
+        val('actual_scalar_lower_endpoint', F(point['scalar_reserve']) + 2 * lo)
+        old_cut = val('failed_old_cutoff_L2_single', 4 * hi / (v * sqsig))
+        old_clock = val('failed_old_absolute_clock', 153000 * hi)
+        ck('naive_substitution_misses_004', data['complete_seed_error'] + data['complete_reflection_error'] + 2 * old_cut + old_clock > F(1, 250))
+        ck('scalar_not_halfline_required', F(3, 2) * 31 * 30 * sig > F(1, 250) - data['complete_seed_error'] - data['complete_reflection_error'])
+        one = (F(1), F(0))
+        im = (F(0), F(1))
+        Dz = (F(1), F(1))
+        Dzbar = (F(1), F(-1))
+        tminus = zsub(one, zdiv((F(0), F(2)), Dz))
+        correct = zsub(tminus, zdiv(Dz, Dzbar))
+        wrong = zsub(tminus, zdiv(Dz, Dzbar))
+        ck('correct_phase_discriminator', correct == (F(0), F(0)))
+        ck('wrong_reciprocal_discriminator', wrong == (F(0), F(-2)))
+        out['failed_routes']['reciprocal_phase'] = {'correct_residual': zs(correct), 'wrong_residual': zs(wrong)}
+        endpoint_integral = zdiv((F(-2), F(0)), (F(0), F(-1)))
+        ck('nonzero_endpoint_countercase', endpoint_integral == (F(0), F(-2)))
+        out['failed_routes']['omitted_endpoints'] = {'constant_amplitude_derivative': '0', 'exact_integral_over_0_pi': zs(endpoint_integral), 'invalid_derivative_only_bound': '0', 'meaning': 'Piecewise integration by parts must keep endpoint terms.'}
+        out['failed_routes']['old_absolute_estimates'] = {'meaning': 'Their sufficient ceilings exceed the desired budget; this is not an actual leakage lower bound.'}
+        out['status'] = 'PASS_exact_scalar_corroboration_only'
+        out['resources'] = {'matrix_dimension': 0, 'grid_points': 0, 'quadrature_points': 0, 'optimizer_calls': 0, 'dynamics_steps': 0, 'largest_integer_power_requested': 40, 'cpu_soft_hard_seconds': list(resource.getrlimit(resource.RLIMIT_CPU)), 'scientific_program_wall_seconds': time.monotonic() - started, 'python_version': sys.version, 'transitive_runtime_fully_pinned': False}
+        out['source_identity'] = {'original_program_sha256': sha256(inputs.original_program_bytes('resonance_author')).hexdigest(), 'source_manifest_sha256': sha256(inputs.read_bytes('resonance_author', 'SOURCE_MANIFEST.json')).hexdigest(), 'input_count': len(source_manifest['entries']), 'executed_primary_sha256': sha256(Path(__file__).read_bytes()).hexdigest(), 'prelaunch_binding': 'See actual separate root-owned canonical execution receipt; historical receipt is not this run.'}
+    except BaseException as error:
+        out['status'] = 'FAILED'
+        out['error'] = {'type': type(error).__name__, 'message': str(error)}
+        print(json.dumps(out, indent=2), flush=True)
+        raise
+    else:
+        out['_canonical_execution'] = inputs.execution_metadata('resonance_author')
+        return out
+
+
+def run_product_preparation_author(inputs):
+    'Bounded author corroboration of a finite thermal preparation handoff.\n\nNo runtime dynamics, parent checker replay, grid, quadrature or optimizer.\nDense matrices are at most four by four. Whole-device identities use sparse\nPauli coefficients and seed columns; diagnostic lengths are not a proof of\narbitrary-length uniformity, which is term-by-term in CANDIDATE.md.\n'
+    from pathlib import Path
+    import hashlib, json, platform, resource, time
+    from fractions import Fraction as F
+    import sympy as sp
+    START = time.monotonic()
+    pass
+    pass
+    pass
+    assert resource.getrlimit(resource.RLIMIT_CPU) == (30, 30)
+    pass
+    data = json.loads(inputs.read_text('product_preparation_author', 'inputs/parameters.json'))
+    p = {key: sp.Rational(value) for key, value in data['exact_parameters'].items()}
+    J = p['J']
+    h = p['t']
+    u0 = p['u']
+    nu = -p['mu1']
+    E0 = p['epsilon']
+    kap = sp.Symbol('kap', positive=True)
+    lo = sp.Rational(1, 10 ** 12)
+    hi = sp.Rational(1, 10 ** 8)
+    gap = sp.Rational(13)
+    L = 12
+    z0 = p['cos_k'] + sp.I * p['sin_k']
+    phase = sp.expand(z0 * z0)
+    I = sp.eye(2)
+    X = sp.Matrix([[0, 1], [1, 0]])
+    Y = sp.Matrix([[0, -sp.I], [sp.I, 0]])
+    Z = sp.diag(1, -1)
+    n = sp.diag(0, 1)
+    a = sp.Matrix([[0, 1], [0, 0]])
+    I4 = sp.eye(4)
+    kron = sp.kronecker_product
+    hop = kron(a, a.H) + kron(a.H, a)
+    number_pair = kron(n, I) + kron(I, n)
+    K = 2 * I4 + kron(Z, Z)
+    W = ((9 + 12 * sp.I) * I4 + (-16 + 12 * sp.I) * kron(X, X)) / 25
+    checks = []
+
+    def zero(name, value):
+        if isinstance(value, sp.MatrixBase):
+            good = all((sp.simplify(v) == 0 for v in value))
+        else:
+            good = sp.simplify(value) == 0
+        assert good, (name, value)
+        checks.append({'name': name, 'exact_zero': True})
+
+    def lt(name, left, right):
+        assert left < right, (name, str(left), str(right))
+        checks.append({'name': name, 'left': str(left), 'relation': '<', 'right': str(right)})
+    zero('center_phase_unit_modulus', sp.expand(phase * sp.conjugate(phase) - 1))
+    zero('literal_W_commutes_with_K', W * K - K * W)
+    zero('literal_W_unitary', W.H * W - I4)
+    lt('runtime_emitter_onsite_positive', 2 * hi, E0)
+
+    def qedge(t, sign=1):
+        return kap * number_pair + sign * (t * kron(a, a.H) + sp.conjugate(t) * kron(a.H, a))
+    lam = sp.Symbol('lam')
+    for label, t in [('L', kap), ('Lplus2', -kap * phase)]:
+        for sign in [1, -1]:
+            mat = qedge(t, sign)
+            zero('emitter_pair_charpoly_' + label + '_' + str(sign), mat.charpoly(lam).as_expr() - lam ** 2 * (lam - 2 * kap) ** 2)
+            zero('emitter_pair_11_' + label + '_' + str(sign), mat[3, 3] - 2 * kap)
+    zero('clock_counter_pair', number_pair - hop + (number_pair + hop) - 2 * number_pair)
+    zero('source_density_complement', kron(n, n) + (I4 - kron(n, n)) - I4)
+    zero('conditional_flip_complement', kron(n, I + X) + kron(n, I - X) - 2 * kron(n, I))
+    paulis = [I, X, Y, Z]
+    chars = ['I', 'X', 'Y', 'Z']
+    expansion_cache = {}
+
+    def expansion(mat):
+        key = sp.ImmutableMatrix(mat)
+        if key in expansion_cache:
+            return expansion_cache[key]
+        size = 1 if mat.rows == 2 else 2
+        ans = []
+        if size == 1:
+            for q in range(4):
+                c = sp.expand(sp.trace(paulis[q] * mat) / 2)
+                if c != 0:
+                    ans.append(((chars[q],), c))
+        else:
+            for q in range(4):
+                for r in range(4):
+                    c = sp.expand(sp.trace(kron(paulis[q], paulis[r]) * mat) / 4)
+                    if c != 0:
+                        ans.append(((chars[q], chars[r]), c))
+        expansion_cache[key] = ans
+        return ans
+
+    def operator(blocks):
+        ans = {}
+        for label, sites, mat, norm in blocks:
+            for word, c in expansion(mat):
+                key = tuple(sorted(((site, ch) for site, ch in zip(sites, word) if ch != 'I')))
+                ans[key] = sp.expand(ans.get(key, 0) + c)
+        return {key: val for key, val in ans.items() if val != 0}
+
+    def plus(*ops):
+        ans = {}
+        for factor, op in ops:
+            for key, val in op.items():
+                ans[key] = sp.expand(ans.get(key, 0) + factor * val)
+        return {key: val for key, val in ans.items() if val != 0}
+
+    def apply_seed(op, M):
+        emitter = 4 + M
+        initial = 1 << emitter
+        result = {}
+        for word, c in op.items():
+            bits = initial
+            scalar = c
+            old = [I, I]
+            for site, ch in word:
+                if site < 2:
+                    old[site] = paulis[chars.index(ch)]
+                    continue
+                occupied = bits >> site & 1
+                if ch == 'X':
+                    bits ^= 1 << site
+                elif ch == 'Y':
+                    scalar *= sp.I * (1 - 2 * occupied)
+                    bits ^= 1 << site
+                elif ch == 'Z':
+                    scalar *= 1 - 2 * occupied
+            result[bits] = result.get(bits, sp.zeros(4)) + scalar * kron(*old)
+        return {key: sp.simplify(mat) for key, mat in result.items() if mat != sp.zeros(4)}
+    diagnostics = []
+    first_loads = None
+    for M in [16, 20]:
+        O1, O2, SA, SB = (0, 1, 2, 3)
+        clock = lambda j: 4 + j
+        emitter = 4 + M
+        runtime = []
+        controls = []
+
+        def add(where, label, sites, mat, norm):
+            where.append((label, tuple(sites), mat, norm))
+        add(runtime, 'literal_K', (O1, O2), K, sp.Integer(3))
+        for source, label, delta, g, old in [(SA, 'A', p['DeltaA'], p['gA'], O1), (SB, 'B', p['DeltaB'], p['gB'], O2)]:
+            add(runtime, 'penalty_' + label, (source,), delta * n, delta)
+            add(runtime, 'old_source_' + label, (source, old), g * kron(n, I + X), 2 * g)
+            add(controls, 'counter_old_source_' + label, (source, old), g * kron(n, I - X), 2 * g)
+        add(runtime, 'source_hop', (SA, SB), h * (number_pair - hop), 2 * h)
+        add(controls, 'counter_source_hop', (SA, SB), h * (number_pair + hop), 2 * h)
+        add(runtime, 'source_density', (SA, SB), u0 * kron(n, n), u0)
+        add(controls, 'counter_source_density', (SA, SB), u0 * (I4 - kron(n, n)), u0)
+        for j in range(M - 1):
+            add(runtime, 'clock_' + str(j), (clock(j), clock(j + 1)), J * (number_pair - hop), 2 * J)
+            add(controls, 'counter_clock_' + str(j), (clock(j), clock(j + 1)), J * (number_pair + hop), 2 * J)
+        for j in [0, M - 1]:
+            add(runtime, 'clock_endpoint_' + str(j), (clock(j),), J * n, J)
+        for j, source, lam0, label in [(0, SA, p['lambdaA'], 'A'), (1, SB, p['lambdaB'], 'B')]:
+            add(runtime, 'contact_' + label, (clock(j), source), lam0 * kron(n, I + X), 2 * lam0)
+            add(controls, 'counter_contact_' + label, (clock(j), source), lam0 * kron(n, I - X), 2 * lam0)
+        add(runtime, 'mu0', (clock(0),), p['mu0'] * n, p['mu0'])
+        add(runtime, 'nu_vacancy', (clock(1),), nu * (I - n), nu)
+        for j, t in [(L, kap), (L + 2, -kap * phase)]:
+            add(runtime, 'emitter_edge_' + str(j), (emitter, clock(j)), qedge(t), 2 * kap)
+            add(controls, 'counter_emitter_edge_' + str(j), (emitter, clock(j)), qedge(t, -1), 2 * kap)
+            add(runtime, 'emitter_attachment_vacancy_' + str(j), (clock(j),), kap * (I - n), kap)
+        add(runtime, 'emitter_onsite', (emitter,), (E0 - 2 * kap) * n, E0 - 2 * kap)
+        d = {SA: p['DeltaA'] + 2 * h + 2 * p['gA'], SB: p['DeltaB'] + 2 * h + 2 * p['gB'], emitter: E0 + 2 * kap}
+        for j in range(M):
+            d[clock(j)] = 4 * J - J * int(j in [0, M - 1]) + (2 * p['lambdaA'] + p['mu0']) * int(j == 0) + (2 * p['lambdaB'] - nu) * int(j == 1) + kap * int(j in [L, L + 2])
+        for site in [SA, SB] + [clock(j) for j in range(M)]:
+            coeff = gap - d[site]
+            lt('onsite_pin_positive_M' + str(M) + '_site' + str(site), 0, coeff.subs(kap, hi))
+            add(controls, 'pin_' + str(site), (site,), coeff * n, coeff)
+        add(controls, 'emitter_vacancy_pin', (emitter,), (gap + d[emitter]) * (I - n), gap + d[emitter])
+        run = operator(runtime)
+        ctrl = operator(controls)
+        cphys = nu + 2 * kap
+        cseed = cphys + E0
+        rseed = u0 + 2 * kap
+        cprep = cseed + rseed
+        expected_blocks = [('K', (O1, O2), K, 3), ('cprep', (O1,), cprep * I, cprep)]
+        for site in [SA, SB] + [clock(j) for j in range(M)]:
+            expected_blocks.append(('defect', (site,), gap * n, gap))
+        expected_blocks.append(('emitter_defect', (emitter,), gap * (I - n), gap))
+        defect = plus((1, run), (1, ctrl), (-1, operator(expected_blocks)))
+        assert not defect, defect
+        checks.append({'name': 'full_Pauli_cancellation_M' + str(M), 'nonzero_residual_words': 0, 'symbolic_kappa': True})
+        images = apply_seed(run, M)
+        same = 1 << emitter
+        zero('runtime_seed_diagonal_M' + str(M), images[same] - K - cseed * I4)
+        gram = sp.zeros(4)
+        for bits, mat in images.items():
+            if bits != same:
+                gram += mat.H * mat
+        zero('runtime_seed_residual_Gram_M' + str(M), gram - 2 * kap ** 2 * I4)
+        ci = apply_seed(ctrl, M)
+        zero('control_seed_diagonal_M' + str(M), ci[same] - rseed * I4)
+        for bits, mat in images.items():
+            if bits != same:
+                zero('control_seed_counter_M' + str(M) + '_' + str(bits), ci[bits] + mat)
+        arun = 2 + (p['DeltaA'] + p['DeltaB'] + p['gA'] + p['gB'] + p['lambdaA'] + p['lambdaB'] + p['mu0'] + nu + E0) / 2 + h + u0 / 4 + J * M + 2 * kap
+        apre = 2 + cprep + gap * (M + 3) / 2
+        zero('full_runtime_identity_coefficient_M' + str(M), run[()] - arun)
+        zero('full_preparation_identity_coefficient_M' + str(M), run[()] + ctrl[()] - apre)
+        loads = {site: {'runtime': 0, 'control': 0} for site in range(M + 5)}
+        for which, blocks in [('runtime', runtime), ('control', controls)]:
+            for label, sites, mat, norm in blocks:
+                if label == 'literal_K':
+                    continue
+                for site in sites:
+                    loads[site][which] += norm
+        roles = {'old1': O1, 'old2': O2, 'source_A': SA, 'source_B': SB, 'c0': clock(0), 'c1': clock(1), 'ordinary_clock': clock(2), 'attachment_L': clock(L), 'attachment_Lplus2': clock(L + 2), 'far_end': clock(M - 1), 'emitter': emitter}
+        formatted = {}
+        for role, site in roles.items():
+            ll = loads[site]
+            rr = sp.expand(ll['runtime'])
+            cc = sp.expand(ll['control'])
+            tt = sp.expand(rr + cc)
+            lt('control_incident_below19_M' + str(M) + '_' + role, cc.subs(kap, hi), 19)
+            lt('combined_added_incident_below40_M' + str(M) + '_' + role, tt.subs(kap, hi), 40)
+            formatted[role] = {'runtime': str(rr), 'new_controls': str(cc), 'combined_during_preparation': str(tt), 'new_controls_at_kmax': str(cc.subs(kap, hi)), 'combined_at_kmax': str(tt.subs(kap, hi)), 'combined_display_only': float(tt.subs(kap, hi))}
+        assert len(controls) == 2 * M + 10
+        assert sum((len(b[1]) == 2 for b in controls)) == M + 7
+        assert len({tuple(sorted(b[1])) for b in controls if len(b[1]) == 2}) == M + 6
+        if first_loads is None:
+            first_loads = formatted
+        else:
+            assert first_loads == formatted
+        for label, sites, mat, norm in runtime + controls:
+            actual = mat.subs(kap, hi)
+            for ev in actual.eigenvals():
+                assert ev >= 0, (label, ev)
+            assert max(actual.eigenvals()) == norm.subs(kap, hi) if hasattr(norm, 'subs') else max(actual.eigenvals()) == norm
+        diagnostics.append({'clock_sites': M, 'quantum_qubits': M + 5, 'global_Hilbert_dimension_not_allocated': 2 ** (M + 5), 'maximum_dense_dimension': 4, 'runtime_Pauli_words': len(run), 'control_Pauli_words': len(ctrl), 'new_control_blocks': len(controls), 'new_two_body_blocks': M + 7, 'new_control_edges': M + 6, 'new_onsite_blocks': M + 3, 'full_space_cancellation_residual_words': 0, 'seed_residual_gram': '2*kappa^2 I_old'})
+    x = sp.Symbol('x', real=True)
+    s = 1 - 3 * x * x + 2 * x * x * x
+    zero('cubic_half_area', sp.integrate(s, (x, 0, 1)) - sp.Rational(1, 2))
+    zero('cubic_endpoint0', s.subs(x, 0) - 1)
+    zero('cubic_endpoint1', s.subs(x, 1))
+    zero('cubic_derivative', sp.diff(s, x) + 6 * x * (1 - x))
+    zero('cubic_slope_maximum', -sp.diff(s, x).subs(x, sp.Rational(1, 2)) - sp.Rational(3, 2))
+    thermal = F(10 ** 32) * F(3, 8) ** 130
+    assert thermal < F(1, 10 ** 22)
+    runtime_bound = F(3735315138388379, 781250000000000000)
+    assert str(runtime_bound) in inputs.read_text('product_preparation_author', 'inputs/family.md')
+    complete = 2 * runtime_bound + 2 * F(1, 10 ** 8) + F(3, 10 ** 11)
+    assert complete < F(1, 100)
+    assert runtime_bound + F(1, 10 ** 8) < F(1, 200)
+    checks.append({'name': 'uniform_thermal_bad_probability', 'left': str(thermal), 'relation': '<', 'right': '1/10000000000000000000000', 'method': 'N<10^32 and exp(1)>8/3, beta*G=130'})
+    checks.append({'name': 'complete_correlated_input_trace_budget', 'left': str(complete), 'relation': '<', 'right': '1/100'})
+    report = {'status': 'Author algebraic corroboration passed; analytical preparation theorem needs separate review', 'sources': {'commit': '0e3993770a7a2dd872018f9dd3c76c2d9a624db9', 'family_sha256': 'f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87'}, 'parameters': {'kappa_min': str(lo), 'kappa_max': str(hi), 'G': str(gap), 'beta': 10, 'hold_duration': 1, 'release_duration': 1, 'exact_runtime_parameters': {k: str(v) for k, v in p.items()}}, 'diagnostics': diagnostics, 'loads': first_loads, 'checks': checks, 'budgets': {'uniform_thermal_bad_probability_upper': str(thermal), 'simple_thermal_bad_upper': '1/10^22', 'correlated_joint_initial_trace_upper': '3/10^11', 'release_isometry_exact': 'kappa/sqrt(2)', 'release_isometry_upper': '1/10^8', 'inherited_finite_isometry_upper': str(runtime_bound), 'complete_correlated_trace_upper': str(complete), 'complete_correlated_trace_display_only': float(complete), 'coarse_complete_trace_bound': '1/100'}, 'scalar_formulas': {'physical_runtime': 'nu+2*kappa', 'runtime_seed': 'nu+2*kappa+E0', 'control_on_seed': 'u+2*kappa', 'preparation_seed': 'nu+E0+u+4*kappa', 'whole_output_phase_for_hold_h_release_tau': '(nu+E0+u+4*kappa)*h+(nu+2*kappa+E0)*tau+(u+2*kappa)*tau/2+(nu+2*kappa)*t'}, 'actual_resources': {'python': platform.python_version(), 'sympy': sp.__version__, 'cpu_soft_hard_seconds': list(resource.getrlimit(resource.RLIMIT_CPU)), 'external_wall_seconds': inputs.shared_limits()['external_wall_cap_seconds'], 'maximum_dense_matrix_dimension': 4, 'diagnostic_clock_lengths': [16, 20], 'parameter_grid_points': 0, 'quadrature_calls': 0, 'optimizer_calls': 0, 'time_evolution_calls': 0, 'program_wall_seconds': time.monotonic() - START}, 'limits': 'Local PSD checks use the upper-endpoint exact rational coefficients; the written positive-block proof supplies uniform positivity. Finite lengths corroborate endpoint bookkeeping, not an all-length theorem. No full apparatus Hilbert matrix is allocated and no time evolution, thermalization, native control or independent theorem review is executed.'}
+    report['_canonical_execution'] = inputs.execution_metadata('product_preparation_author')
+    return report
+
+
+def run_interacting_preparation_author(inputs):
+    'Exact local/full-Pauli and scalar corroboration; not a dynamics or Gibbs simulation.'
+    from fractions import Fraction as F
+    from math import comb
+    import json
+    import time
+
+    def cadd(a, b):
+        return (a[0] + b[0], a[1] + b[1])
+
+    def cmul(a, b):
+        return (a[0] * b[0] - a[1] * b[1], a[0] * b[1] + a[1] * b[0])
+
+    def conj(a):
+        return (a[0], -a[1])
+    ZERO = (F(0), F(0))
+    ONE = (F(1), F(0))
+    IPHASE = (ONE, (F(0), F(1)), (F(-1), F(0)), (F(0), F(-1)))
+
+    def add(*operators):
+        out = {}
+        for op in operators:
+            for key, value in op.items():
+                out[key] = out.get(key, F(0)) + value
+        return {k: v for k, v in out.items() if v}
+
+    def scale(value, op):
+        return {key: value * coefficient for key, coefficient in op.items() if value * coefficient}
+
+    def term(value, *support):
+        key = tuple(sorted(support))
+        assert len(dict(key)) == len(key)
+        return {key: F(value)} if value else {}
+    Iop = term(1)
+
+    def number(j):
+        return add(scale(F(1, 2), Iop), term(F(-1, 2), (j, 'Z')))
+
+    def vacancy(j):
+        return add(Iop, scale(-1, number(j)))
+
+    def control_x(g, control, target):
+        return add(term(g / 2), term(g / 2, (target, 'X')), term(-g / 2, (control, 'Z')), term(-g / 2, (control, 'Z'), (target, 'X')))
+
+    def hop(t_re, t_im, j, e):
+        return add(term(t_re / 2, (j, 'X'), (e, 'X')), term(t_re / 2, (j, 'Y'), (e, 'Y')), term(t_im / 2, (j, 'Y'), (e, 'X')), term(-t_im / 2, (j, 'X'), (e, 'Y')))
+
+    def lap(jvalue, j, k):
+        return add(scale(jvalue, number(j)), scale(jvalue, number(k)), hop(-jvalue, F(0), j, k))
+
+    def apply(op, bits):
+        out = {}
+        for key, coefficient in op.items():
+            target, phase = (bits, 0)
+            for site, pauli in key:
+                bit = bits >> site & 1
+                if pauli == 'X':
+                    target ^= 1 << site
+                elif pauli == 'Y':
+                    target ^= 1 << site
+                    phase += 3 if bit else 1
+                elif pauli == 'Z':
+                    phase += 2 * bit
+                else:
+                    raise AssertionError(pauli)
+            value = cmul((coefficient, F(0)), IPHASE[phase % 4])
+            out[target] = cadd(out.get(target, ZERO), value)
+        return {k: v for k, v in out.items() if v != ZERO}
+
+    def apply_vector(op, vector):
+        out = {}
+        for bits, value in vector.items():
+            for target, coefficient in apply(op, bits).items():
+                out[target] = cadd(out.get(target, ZERO), cmul(coefficient, value))
+        return {k: v for k, v in out.items() if v != ZERO}
+
+    def inner(x, y):
+        ans = ZERO
+        for k in x.keys() & y.keys():
+            ans = cadd(ans, cmul(conj(x[k]), y[k]))
+        return ans
+
+    def spectral_projector_check(op, top, expected_trace):
+        columns = [apply(op, j) for j in range(4)]
+        for j in range(4):
+            for k in range(4):
+                assert columns[j].get(k, ZERO) == conj(columns[k].get(j, ZERO))
+            assert apply_vector(op, columns[j]) == {k: cmul((top, F(0)), v) for k, v in columns[j].items()}
+        trace = sum((columns[j].get(j, ZERO)[0] for j in range(4)), F(0))
+        assert trace == expected_trace
+        assert top > 0
+        return {'top': str(top), 'trace': str(trace), 'rank': int(trace / top)}
+
+    def fixture(kappa):
+        M, Delta = (17, F(1))
+        old1, old2, A, B = (0, 1, 2, 3)
+        clocks, e = (list(range(4, M + 4)), M + 4)
+        J = F('0.030021107107032')
+        nu = F('1.459892813020969')
+        ga, gb = (F('0.996878563816670'), F('0.599319315560298'))
+        da, db = (F('2.192035527016003'), F('2.186826508897014'))
+        h, u = (F('3.999349697888060'), F('0.544607276405587'))
+        la, lb = (F('3.801781381581202'), F('2.575033765788497'))
+        mu0, q0 = (F('0.321494607058201'), F('4.510351185997098'))
+        cosk, sink = ((q0 * q0 - 1) / (q0 * q0 + 1), 2 * q0 / (q0 * q0 + 1))
+        cosphi, sinphi = (cosk * cosk - sink * sink, 2 * cosk * sink)
+        E0 = 4 * J / (q0 * q0 + 1)
+        assert cosphi * cosphi + sinphi * sinphi == 1
+        assert E0 > 2 * kappa
+        ba, bb = (2 * ga, 2 * gb)
+        K = add(term(2), term(1, (old1, 'Z'), (old2, 'Z')))
+        Ga, Gb = (control_x(ga, A, old1), control_x(gb, B, old2))
+        pair_occupancy = add(term(u / 4), term(-u / 4, (A, 'Z')), term(-u / 4, (B, 'Z')), term(u / 4, (A, 'Z'), (B, 'Z')))
+        C = add(scale(da, number(A)), scale(db, number(B)), lap(h, A, B), pair_occupancy)
+        Hc = add(scale(J, number(clocks[0])), scale(J, number(clocks[-1])), *(lap(J, j, k) for j, k in zip(clocks, clocks[1:])))
+        Vc = add(control_x(la, clocks[0], A), control_x(lb, clocks[1], B), scale(mu0, number(clocks[0])))
+        j1, j2 = (clocks[12], clocks[14])
+        Q1 = add(scale(kappa, number(e)), scale(kappa, number(j1)), hop(kappa, F(0), j1, e))
+        Q2 = add(scale(kappa, number(e)), scale(kappa, number(j2)), hop(-kappa * cosphi, -kappa * sinphi, j2, e))
+        run = add(K, C, Ga, Gb, Hc, Vc, scale(nu, vacancy(clocks[1])), Q1, Q2, scale(E0 - 2 * kappa, number(e)), scale(kappa, vacancy(j1)), scale(kappa, vacancy(j2)))
+        blanks = [A, B] + clocks
+        controls = [add(scale(ba, Iop), scale(-1, Ga)), add(scale(bb, Iop), scale(-1, Gb)), add(scale(2 * kappa, Iop), scale(-1, Q1)), add(scale(2 * kappa, Iop), scale(-1, Q2)), scale(nu, number(clocks[1])), scale(kappa, number(j1)), scale(kappa, number(j2)), *(scale(Delta, number(j)) for j in blanks), scale(E0 - 2 * kappa + Delta, vacancy(e))]
+        extra = add(*controls)
+        D = add(vacancy(e), *(number(j) for j in blanks))
+        aux = add(C, Hc, Vc, scale(Delta, D))
+        cprep, crun = (ba + bb + nu + E0 + 4 * kappa, nu + E0 + 2 * kappa)
+        assert not add(run, extra, scale(-1, K), scale(-cprep, Iop), scale(-1, aux))
+        alpha = (Delta * (M + 3) + 3 * (ga + gb) + nu + E0 + 4 * kappa) / 2
+        assert extra.get((), F(0)) == alpha
+        assert max((len(key) for op in controls for key in op)) <= 2
+        residual_columns = []
+        for old_bits in range(4):
+            seed = old_bits | 1 << e
+            old_energy = F(3 if old_bits in (0, 3) else 1)
+            assert not apply(aux, seed)
+            assert apply(add(run, extra), seed) == {seed: (old_energy + cprep, F(0))}
+            residual = apply(add(run, scale(-1, K), scale(-crun, Iop)), seed)
+            expected = {old_bits | 1 << j1: (kappa, F(0)), old_bits | 1 << j2: (-kappa * cosphi, -kappa * sinphi)}
+            assert residual == expected
+            residual_columns.append(residual)
+            assert apply(extra, seed) == {seed: (ba + bb + 2 * kappa, F(0)), old_bits | 1 << j1: (-kappa, F(0)), old_bits | 1 << j2: (kappa * cosphi, kappa * sinphi)}
+        for j in range(4):
+            for k in range(4):
+                assert inner(residual_columns[j], residual_columns[k]) == (2 * kappa * kappa if j == k else F(0), F(0))
+        pair_Q = add(scale(kappa, number(0)), scale(kappa, number(1)), hop(-kappa * cosphi, -kappa * sinphi, 0, 1))
+        spectra = {'emitter_pair': spectral_projector_check(pair_Q, 2 * kappa, 4 * kappa), 'old_source_A': spectral_projector_check(control_x(ga, 0, 1), ba, ba), 'clock_bond': spectral_projector_check(lap(J, 0, 1), 2 * J, 4 * J), 'clock_source_A': spectral_projector_check(control_x(la, 0, 1), 2 * la, 2 * la)}
+        missing_vacancy = add(run, extra, scale(-nu, number(clocks[1])), scale(-1, K), scale(-cprep, Iop), scale(-1, aux))
+        assert missing_vacancy
+        wrong_complement = add(scale(ga, Iop), scale(-1, control_x(ga, 0, 1)))
+        plus_on_old_with_source_one = {1: (F(1), F(0)), 3: (F(1), F(0))}
+        assert apply_vector(wrong_complement, plus_on_old_with_source_one) == {j: (-ga, F(0)) for j in (1, 3)}
+        return {'M': M, 'physical_qubits': M + 5, 'auxiliary_qubits': M + 3, 'kappa': str(kappa), 'global_pauli_terms': len(run), 'extra_pauli_terms': len(extra), 'exact_decomposition': True, 'seed_columns': 4, 'residual_gram': str(2 * kappa * kappa), 'extra_identity_coefficient': str(alpha), 'spectra': spectra, 'preserved_discriminators': ['missing vacancy compensation breaks decomposition', 'g I-G is negative on an actual pair vector']}
+
+    def scalar_checks():
+        max_n = 5 * 10 ** 31 + 3
+        q_bound = F(3, 8) ** 100
+        r = max_n * q_bound
+        thermal_target = F(1, 22500000000)
+        assert r < thermal_target
+        assert 9 * r < F(2, 100000) ** 2
+        ga = F('0.996878563816670')
+        tau, kmax, allowance = (F(10000), F(1, 10 ** 8), F(1, 1000))
+        max_slew = F(3, 2) * (1 + 2 * ga) / tau
+        assert max_slew < allowance
+        a = [F(1), F(0), F(-3), F(2)]
+        integral = sum((coefficient / (power + 1) for power, coefficient in enumerate(a)), F(0))
+        assert integral == F(1, 2)
+        assert sum(a) == 0 and a[0] == 1
+        derivative_at_half = -6 * F(1, 2) + 6 * F(1, 2) ** 2
+        assert derivative_at_half == F(-3, 2)
+        release_trace_squared = 2 * (kmax * tau) ** 2
+        assert release_trace_squared < F(15, 100000) ** 2
+        total_bound = F(1, 100) + F(2, 100000) + F(15, 100000)
+        assert total_bound == F(1017, 100000) and total_bound < F(102, 10000)
+        q, n = (F(1, 10), 20)
+        partition = sum((F(comb(n, k)) * q ** k for k in range(n + 1)), F(0))
+        assert partition == (1 + q) ** n
+        defect = 1 - 1 / partition
+        assert defect > q
+        d = F(1, 100)
+        assert 4 * d - 3 * d * d > d * d
+        return {'N_max': max_n, 'thermal_q_upper': str(q_bound), 'Nq_upper': str(r), 'thermal_target': str(thermal_target), 'correlated_trace_upper': '1/50000', 'max_release_slew': str(max_slew), 'slew_allowance': str(allowance), 'cubic_integral': str(integral), 'release_trace_upper': '3/20000', 'complete_trace_upper': str(total_bound), 'mean_aux_upper': str(r / (1 - r)), 'many_sector_discriminator_N': n, 'many_sector_defect': str(defect), 'many_sector_false_one_qubit_bound': str(q)}
+
+    def main():
+        started = time.monotonic()
+        fixtures = [fixture(F(1, 10 ** p)) for p in (12, 10, 8)]
+        report = {'scope': 'Exact fraction arithmetic in full Pauli representations and complete 4x4 local matrices; scalar rational bounds only.', 'limits': 'No full many-body matrix, Gibbs density, dynamics simulation, continuum scattering replay, bath, physical calibration or uniform-family numerical sweep.', 'fixtures': fixtures, 'scalar': scalar_checks(), 'largest_dense_dimension': 4, 'conceptual_qubits_in_pauli_fixture': 22, 'elapsed_seconds': time.monotonic() - started}
+        report['_canonical_execution'] = inputs.execution_metadata('interacting_preparation_author')
+        return report
+    return main()
+
+
+def main():
+    resource.setrlimit(resource.RLIMIT_CPU, (30, 30))
+    started = time.monotonic()
+    verify_artifacts()
+    inputs = FrozenInputs(REPO, INPUT_ROOT / 'INPUT_MAP.json')
+    reports = {
+        'resonance_author': run_resonance_author(inputs),
+        'product_preparation_author': run_product_preparation_author(inputs),
+        'interacting_preparation_author': run_interacting_preparation_author(inputs),
+    }
+    output = {
+        'scope': 'Three source-exposed author corroboration bodies. Analytical source/interface acceptance and independent review remain separate.',
+        'reports': reports,
+        'actual_shared_process_limits': inputs.shared_limits(),
+        'maximum_dense_matrix_dimension': 4,
+        'elapsed_seconds': time.monotonic() - started,
+        'input_sha256': {name: hashlib.sha256((REPO / name).read_bytes()).hexdigest() for name in AUDIT_INPUT_PATHS},
+        'resolved_reads': inputs.reads,
+        'limits': 'Exact nominal family, supplied thermal marginal and controls; no dynamics, cooling, joint calibration, practical realization, retained audit or finite all-future claim.'}
+    (REPO / 'outputs/thermal_resonance_halt_2026_10_17.json').write_text(json.dumps(output, indent=2) + '\n', encoding='utf-8')
+    print(json.dumps({'scope': output['scope'], 'function_bodies_completed': len(reports),
+                      'actual_shared_process_limits': output['actual_shared_process_limits'],
+                      'resonance_status': reports['resonance_author']['status'],
+                      'maximum_dense_matrix_dimension': 4}, indent=2))
+
+
+AUDIT_INPUT_PATHS = ('.claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/canonical/executed_sources/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt', '.claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/family_review/author_sources/inputs/physics_loop_skill.md.txt', '.claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/qualification/ACCEPTANCE.json.txt', '.claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/qualification/QUALIFICATION.md.txt', '.claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/transport_review/inputs/bytes/62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44.txt', 'docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md', 'docs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md', 'docs/INSTALLED_GENERATOR_PREPARATION_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md', 'docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md', 'docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md', 'docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md', 'docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md', 'docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md', 'docs/RECORD_BLANK_BOUNDARY_RESET_NO_GO_2026-06-05.md', 'docs/RECORD_RESET_WITH_SINK_CONDITIONAL_2026-06-05.md', 'docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md', 'docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md', 'docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md', 'docs/ai_methodology/SCIENCE_WORKFLOW.md', 'docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md', 'docs/ai_methodology/skills/physics-loop/references/DELIVERY.md', 'docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md', 'docs/audit/data/axiom_premise_nodes.json', 'outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/CANDIDATE.md.txt', 'outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt', 'outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt', 'outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json', 'outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/INTERVAL_CANDIDATE.md.txt', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/THEOREM_V2.md.txt', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/process/physics-claim-reviewer/SKILL.md.txt', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/process/proof-search-governance.md.txt', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/ACCEPTANCE.json', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/QUALIFICATION.md.txt', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/ACCEPTANCE.json', 'outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/QUALIFICATION.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/INFRASTRUCTURE_SOURCE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/INPUT_MAP.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/PROOF_BODY_MAP.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/PUBLICATION_STATUS.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/REPRODUCTION_PLAN.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/CANDIDATE.md.txt.gz', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/FILE_MANIFEST.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/FREEZE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/PRIOR_SEARCH.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/RESOURCE_PLAN.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/SOURCE_COVERAGE.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/SOURCE_MAP.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/STATIC_AND_EVIDENCE_CHECK.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/PRELAUNCH.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/RECEIPT.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/check_preparation.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/stdout.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/capture_sources.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/ANALYTICAL_FREEZE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/CAPTURE_FAILURE_01.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/COMPARISON_REVIEW.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/EXPOSURE_START.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/REVIEW_MANIFEST.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/SOURCE_EXPOSURE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/STATIC_REVIEW_CHECK.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/freeze_review.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/finalize_packet.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/launch_check.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/CANDIDATE.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/EVIDENCE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/FILE_MANIFEST.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/FREEZE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/SOURCE_MANIFEST.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/STAGED_RELEASE_ADDENDUM.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/STAGED_RELEASE_FREEZE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/check_preparation.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/launch_check.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/run01/EXECUTION.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/run01/PRELAUNCH.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/run01/stdout.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_interacting_root_qualification/ACCEPTANCE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_interacting_root_qualification/CLARIFICATION.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_product_root_qualification/ACCEPTANCE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_product_root_qualification/REVIEW.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition/CANDIDATE.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition/FREEZE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition/historical_format_v1/CANDIDATE.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition/historical_format_v1/FREEZE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_qualification/ACCEPTANCE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/FILE_MANIFEST.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/FREEZE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/REVIEW.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/SOURCE_MANIFEST.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/VALIDATION.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/capture_sources.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/finalize_review.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/CANDIDATE.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/FAILURES.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/FILE_MANIFEST.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/FREEZE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/READ_COVERAGE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/RESOURCE_PLAN.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/SCALAR_INPUTS.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/SOURCE_MANIFEST.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/STATIC_VALIDATION.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/check_bounds.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/inputs/fixed.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/inputs/fixed_acceptance.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/inputs/fixed_qualification.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/inputs/fixed_review.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/launch01.stdout', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/launch_check.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/prepare_inputs.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/run01/PRELAUNCH.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/run01/RECEIPT.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/run01/stdout.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/validate_and_freeze.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/AUTHOR_CAPTURE_BINDINGS.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/EVIDENCE_VALIDATION.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/FILE_MANIFEST.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/FINAL_VALIDATION.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/FREEZE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/INDEPENDENT_DERIVATION.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/INDEPENDENT_FREEZE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/INDEPENDENT_RESULT.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/INITIAL_SOURCE_BINDINGS.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/REPORT.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/RESOURCE_PLAN.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/capture_author_packet.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/capture_initial_sources.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/check_independent.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/finalize_review.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/freeze_independent.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/launch_independent.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/launcher_stdout.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/run01/PRELAUNCH.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/run01/stdout.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/validate_evidence.py', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_root_qualification/ACCEPTANCE.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_root_qualification/QUALIFICATION.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/thermal_resonance_integration/BRANCH_START.json', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/thermal_resonance_integration/SCOPE.md.txt', 'outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/thermal_resonance_integration/WRAPPER_DRAFT.md.txt', 'scripts/emitter_coupling_family_2026_10_17.py')
+
+if __name__ == "__main__":
+    main()

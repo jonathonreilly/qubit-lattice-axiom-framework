@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-10-17T05:25:49.241947+00:00",
+  "source_scopes": [
+    {
+      "scope": "real_coupling_halt_route",
+      "freeze_sha256": "16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b",
+      "manifest_member_count": 33,
+      "captured_count": 34
+    },
+    {
+      "scope": "real_coupling_route_review",
+      "freeze_sha256": "fa375e1facab0442e2158508a916829af9a95fcef837a201ac1de7f6b9b0538b",
+      "manifest_member_count": 65,
+      "captured_count": 66
+    },
+    {
+      "scope": "real_coupling_preparation_candidate",
+      "freeze_sha256": "41ce93b77d46c1dbecdde6f674201ca8b6e20026ae10231fe9b925fb69468e49",
+      "manifest_member_count": 41,
+      "captured_count": 43
+    },
+    {
+      "scope": "real_coupling_preparation_review",
+      "freeze_sha256": "3c67c7c7346ebb459ea2cf88c8cde671e21a43994bb4d0207dd2c53a8446ee5a",
+      "manifest_member_count": 75,
+      "captured_count": 76
+    },
+    {
+      "scope": "real_control_root_review",
+      "freeze_sha256": "af9a2ab1843a8d026265a6c326002c1003cdff5e7ad4382c73a060de4cb7d3f1",
+      "manifest_member_count": 3,
+      "captured_count": 4
+    }
+  ],
+  "source_labels": 229,
+  "new_unique_stored_sources": 73,
+  "reused_parent_labels": 87,
+  "deduplicated_new_labels": 69,
+  "declared_inputs": 109,
+  "transport_events": 16,
+  "added_tail_statements": 1,
+  "original_statement_records": 448,
+  "proof_target_edits": 3,
+  "primary": {
+    "bytes": 47127,
+    "sha256": "b7d63ff04babbf0cf4abd6fde6056a8d7a14684eadb66a2773f645cdea430bc5"
+  },
+  "note": {
+    "bytes": 74148,
+    "sha256": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca"
+  },
+  "scientific_runs": 0,
+  "post_build_glue_change": "Explicit RuntimeError refusal under optimized Python; see GLUE_AMENDMENT.md; original body/event/proof/input hashes unchanged.",
+  "final_wording_amendment": "FINAL_WORDING_AMENDMENT.json; exact root-requested coverage string only after static03."
+}

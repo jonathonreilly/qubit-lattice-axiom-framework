@@ -1,0 +1,12 @@
+10 Majoranas per site, Clifford relations: True
+D_v = Z1Z2Z3Z4Z5: True
+link parity B = Z1Z2Z3: True
+P_up = Z4, P_dn = Z5: True True
+D = B P_up P_dn: True
+c_up = B (x) sigma(4): True
+link bilinears act only on qubits 1-3: True
+matter bilinears act only on qubits 4-5: True
+Majoranas at different sites commute: True
+[c_up^dag(x), c_up^dag(y)] = 0: True
+example even link unitary (C4z type): images of chi_0..9 = [(-1, 1), (1, 0), (1, 2), (-1, 4), (1, 3), (1, 5), (1, 6), (1, 7), (1, 8), (1, 9)]
+  acts only on qubits 1-3: True

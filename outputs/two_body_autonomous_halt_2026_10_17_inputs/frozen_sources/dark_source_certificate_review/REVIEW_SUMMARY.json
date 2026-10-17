@@ -1,0 +1,200 @@
+{
+  "recorded_utc": "2026-10-17T00:09:59.185489+00:00",
+  "review_disposition": "Conditional stationary-channel support for both fixed rational witnesses; no material stationary defect found",
+  "physical_cap_scope": "Only the second witness satisfies added old-site cap two; neither satisfies a universal added-site cap two",
+  "nonblocking_finding": "Author upper_float fields are approximate displays, not outward-rounded bounds; exact rational gates remain valid",
+  "wavepacket_or_all_future_theorem": "not reviewed or established",
+  "independent_retained_audit": "not performed",
+  "exposure": "source-exposed same model; independently assembled full physical basis and Newton proposals; no author code imported or executed",
+  "runs": [
+    {
+      "name": "original",
+      "certified_point_error": {
+        "rational": "109402708016122705303418952681062735646180945756009141169281272212124282984629148289398846001673086184913079301368374385733531998254554274071393014755526944121636317898929668459837399487529024744718615125006432141481858123026306516253478621243956225998597909093096328316761525750571539051241814206250645451459451641063410178725809792418188177828874211444446162350633589093586350354335731885227971762807962390045998655771522762243319856904766605939629980808885567013451275499438321677765415895615423030386676629280192087990041743/210623302046121533323346284406185175392001174096245194481098650521824194464202111958237235306316824252250531382631141180605486008902018788080373602352767865349477662979198180209789170869191389321867236126004909905872319301721458253727260924647650682664367595125717616630179361188110911697469395845790193733442546088533702809905899422179812361321948512581872437463220433706597384933454691075351202632060238019908451202925272125218522077992220826067614257942258510915893163860387562812500000000000000000000000000000000000000000000000000000000",
+        "approximate_float": 5.194235725739695e-13
+      },
+      "largest_amplitude_error": "49408505673670569053523805437774596282006513025278810719606159843021172766494045797820844955790209207945628693165194929075375147538844667763372628924119086172410040548936986464081779394320215242527042781537917826613092615886854090053999442899819/12099769135794235938517465433106097627141740996363311670391730606010087552893118130689255106169225207011994322991867582802749405376151281474769625808221160658836242678874836431682904687677865248162895541188578887466222516383738130057322964250000000000000000000000000000000000000000000000000000000000",
+      "dimensions": {
+        "internal": 16,
+        "source_excited": 12,
+        "boundary": 32,
+        "right_hand_sides_per_energy": 2,
+        "energies": 2
+      },
+      "receipt_path": "RUN_RECEIPT.json",
+      "elapsed_seconds": 1.4072473333217204
+    },
+    {
+      "name": "old_cap_delta",
+      "certified_point_error": {
+        "rational": "551550186213473081673423782398383738631821119786396543341119676688687206912977335725361179386627720481693247817097562196399154803652498806281004000870096308047059207085962004188081130222340598903037264937805544563267180025205677501398165625958308093535067435557621180031324244101125026999/3147264522678651513956361077630461878213322187264676316193580654130662270745021025181621370161973398697612545722377959497156567274996203380505980330114548414963933525460348518037219783020042111674220107908259579565385337367504352038999320787500000000000000000000000000000000000000000000000000000000000",
+        "approximate_float": 1.752474830885985e-13
+      },
+      "largest_amplitude_error": "76812756579694750064644587998000476855344053998139978683947132616510068596035280933325477888085987203640192550732402920111179740193969634188295861278153969999043749373767040753040736384326272620352838123498079207305920042476555209247353132357883/373383199458074089657932932557674978729386765044328169065185412919014841414247322856084364006584874705359519963048607367985244630886585570105426796919286351335642424044965970393559027790777512040189153208357577222738566218857314877031902054875000000000000000000000000000000000000000000000000000000000",
+      "dimensions": {
+        "internal": 16,
+        "source_excited": 12,
+        "boundary": 32,
+        "right_hand_sides_per_energy": 2,
+        "energies": 2
+      },
+      "receipt_path": "old_cap_delta/RUN_RECEIPT.json",
+      "elapsed_seconds": 1.3733761669136584
+    }
+  ],
+  "source_refresh": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/ROUTE.md",
+      "unchanged": true,
+      "sha256": "04ffdf68d3bdadf17f5c0838dde2a8a2bd1608d786ea58e427c5c25fd33ef8d1"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/certify_point.py",
+      "unchanged": true,
+      "sha256": "74460bcbd0db30671a6d676b79d24d1ebb5439523df62a5fa3c231760b010558"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/independent_check.py",
+      "unchanged": true,
+      "sha256": "06e14d43a2f0b9f09c594dd547981d5e25002997e6df661d542221c400632d0d"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/evidence/ladder_refinement.json",
+      "unchanged": true,
+      "sha256": "f13b126c7b8569f217324fbd54ac8ec134226620c100854b8b0b30574aedb1b1"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/evidence/rational_point_certificate.json",
+      "unchanged": true,
+      "sha256": "c4c8c4bd27054497edd87b8fe5deda86bf221e5e95ac395a13aca9b5e879d971"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/evidence/different_path_check.json",
+      "unchanged": true,
+      "sha256": "be356d059cca36f2960f877e2c7aaad335cef76d87d76e08d2827887a2c12e64"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/evidence/EXECUTION_RECEIPT.json",
+      "unchanged": true,
+      "sha256": "412251772b1b87f4f26a5b72c39d041c211121dfdd21558e71442fa66c2a1dfa"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/evidence/FILE_MANIFEST.json",
+      "unchanged": true,
+      "sha256": "05c7753f84e29be22ed66e11a949d9da04be730904840ecdcc09fb21cae52484"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/evidence/rational_point_certificate.stdout",
+      "unchanged": true,
+      "sha256": "1579ebaf0c99a1a18f4d584ed26d75f3f2b9e89b501f28b055d8cd6f54393f38"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/evidence/rational_point_certificate.stderr",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/evidence/different_path_check.stdout",
+      "unchanged": true,
+      "sha256": "be356d059cca36f2960f877e2c7aaad335cef76d87d76e08d2827887a2c12e64"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/evidence/different_path_check.stderr",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/evidence/ladder_refinement.stdout",
+      "unchanged": true,
+      "sha256": "f13b126c7b8569f217324fbd54ac8ec134226620c100854b8b0b30574aedb1b1"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/evidence/ladder_refinement.stderr",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/sources/REVIEWER_SKILL.md",
+      "unchanged": true,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/sources/SKILL_FRESHNESS_CHECK.md",
+      "unchanged": true,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/sources/PROOF_SEARCH_GOVERNANCE.md",
+      "unchanged": true,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/RESULT.md",
+      "unchanged": true,
+      "sha256": "397c18e02c0d583bdc3e51df8f5c513f677b448862526a362eac4cc43577af00"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/FILE_MANIFEST.json",
+      "unchanged": true,
+      "sha256": "7cfc37c4efbea811a3c6b9a20675350f59abc5a4c7ef9cc461c462222f14944d"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/certify_old_cap.py",
+      "unchanged": true,
+      "sha256": "acbf5b37b2705a6a2b47ab23a48d92ca4cfb7be2f5bb4993fa4d04e94418b636"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/check_old_cap.py",
+      "unchanged": true,
+      "sha256": "f4bb2cf596615b8aea97ea71aa7fb2f6a3024c7af7945d80b340b2711c231b5c"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/VERIFIER_PROVENANCE.json",
+      "unchanged": true,
+      "sha256": "13e27fec4937631a587786b9e526354c7deec53dba26c2a35b8b0732e0fe00f6"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/RECEIPT.json",
+      "unchanged": true,
+      "sha256": "9728fc12e212ed7bae574d366f496736bef725e80f128b9211585d4008bb396b"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/ALLOWED_SEARCH.json",
+      "unchanged": true,
+      "sha256": "bacac229bbeb260cc14d59e272601b4eac757de6af7a14e98c9eed585950b29e"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/rational_point_certificate.json",
+      "unchanged": true,
+      "sha256": "6f057d8a580217d29a09d7683462f5b35b71de093e75c8d07a12283cde33593f"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/different_path_check.json",
+      "unchanged": true,
+      "sha256": "63a860432907c6e9b250782df64e637d067dd0638773738e8fb539a6876a3858"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/CERTIFICATE.stdout",
+      "unchanged": true,
+      "sha256": "3684d2ae053430ed31482a40d22a927d923ee028ab3e47556ca0268ae54e0fdb"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/CERTIFICATE.stderr",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/DIFFERENT_PATH.stdout",
+      "unchanged": true,
+      "sha256": "63a860432907c6e9b250782df64e637d067dd0638773738e8fb539a6876a3858"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/DIFFERENT_PATH.stderr",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "link_targets_verified_regular_files": 15,
+  "editable_prompt_files_changed": [],
+  "writes_scope": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_certificate_review"
+}

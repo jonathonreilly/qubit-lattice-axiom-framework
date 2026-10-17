@@ -1,0 +1,26 @@
+{
+  "name": "noncommuting_resolvent_order",
+  "source_role": "independent",
+  "started_utc": "2026-10-17T01:33:56.545745+00:00",
+  "elapsed_seconds": 0.190613416954875,
+  "exit_code": 1,
+  "timed_out": false,
+  "cpu_cap_seconds": 60,
+  "external_wall_cap_seconds": 20,
+  "old": "zero('noncommuting_resolvent_identity', Rs-Rt+Rs*dHt*Rt)",
+  "new": "zero('noncommuting_resolvent_identity', Rs-Rt+Rs*Rt*dHt)",
+  "expected_scientific_assertion": "noncommuting_resolvent_identity",
+  "scientific_assertion_rejected": true,
+  "source": {
+    "bytes": 16413,
+    "sha256": "26aea74dcad26c7f520aec3cf3b7933b58ded93fdc716b831f3a9b14a028f68e"
+  },
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 1608,
+    "sha256": "90a9562c55aff8f1d3a1c1877ece87f70dc9e181af2920e1057d306bc57c3b84"
+  }
+}

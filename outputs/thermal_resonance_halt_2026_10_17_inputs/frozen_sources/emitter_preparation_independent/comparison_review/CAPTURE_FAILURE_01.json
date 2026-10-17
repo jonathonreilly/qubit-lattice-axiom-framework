@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-10-17T04:15:37.858441+00:00",
+  "kind": "Non-scientific source-capture path failure",
+  "failed_tool_chunks": [
+    "eaca84",
+    "057f0a"
+  ],
+  "initial_expression": "D=Path('.'); S=D.parent.parent/'emitter_preparation_root'",
+  "cause": "Relative Path dot has dot parents; source was sought below comparison_review rather than its sibling directory.",
+  "source_capture_exit": 1,
+  "source_capture_stderr": "FileNotFoundError: [Errno 2] No such file or directory: 'emitter_preparation_root/CANDIDATE.md'",
+  "subsequent_cat_exit": 1,
+  "subsequent_cat_stderr": "cat: root_CANDIDATE.md: No such file or directory\ncat: root_STAGED_RELEASE_ADDENDUM.md: No such file or directory\n",
+  "root_proof_bytes_read": false,
+  "scientific_program_executed": false,
+  "correction": "Resolve D to an absolute path before walking parents."
+}

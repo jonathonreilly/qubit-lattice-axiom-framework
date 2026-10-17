@@ -1,0 +1,37 @@
+# Root qualification of fixed-apparatus resonant escape
+
+The unchanged candidate c68350310ac5c471a38940660d76ba74d982306e2d62a28bbf9c330e79c984b8
+and separate analytical review support the exact nominal apparatus with
+kappa1e-12, sigma1e-6 and L12. Complete infinite isometry error is below
+.003831 for every t>=1e24. For M5e25, complete embedded finite error is
+below .004831 on [1e24,2e24] only. These are sufficient bounds in the
+declared Hamiltonian units, not minimum resources or physical seconds.
+
+Root read the complete new arguments, their independent derivation and
+both actual calculation sources/outputs. The real-band profile comparison,
+opposite Fourier poles, exact cosine contour, density orientation and full
+seven-coordinate emitter/closed-clock norm budgets hold. The actual
+waveform, restricted normalization, point-spectrum seed error, common
+scalar and literal old aging remain. No actual matrix resonance is needed.
+
+Evidence validation covers all33 author and76 review files,54 review
+source pairs,18 author dependency pairs,24 author and31 reviewer prelaunch
+bindings, and the32-file independent-run freeze. The reviewer run took
+.886754 seconds under CPU30/30 and wall45; author time was .855125 seconds
+under actual CPU20/21 and wall30. Matrix dimension, grids and quadrature
+were zero. Root did not replay a scientific program.
+
+The candidate was exposed before the review; a separately written
+derivation and exact run were frozen before its executable/output exposure.
+The same model and substantial inherited source exposure remain, including
+root's suggested unproved route. This is selective checking, not independent
+retained audit. Author capture lacked explicit fsync and library-byte pins;
+reviewer library pins were partial. Complete limitations are in ACCEPTANCE.
+
+Changed coupling and joint/calibration boxes remain excluded. This result
+does not provide native phase/seed/vacuum supply, practical cost, finite
+all-future permanence, reset/reuse, arbitrary accuracy or physical
+Hamiltonian/Record identification. A later coherent composition must
+re-establish all affected bounds. Canonical publication execution and
+eventual integrated-main/retained gates are separate. No editable prompt
+changed, science merged or audit verdict applied.

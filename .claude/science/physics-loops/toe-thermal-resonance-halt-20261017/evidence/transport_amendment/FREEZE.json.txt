@@ -1,0 +1,27 @@
+{
+  "frozen_utc": "2026-10-17T04:56:11.387900+00:00",
+  "status": "Selective narrow static amendment acceptance; no canonical science or publication verdict",
+  "review": {
+    "path": "REVIEW.md",
+    "bytes": 9876,
+    "sha256": "bb4f7e239df7135fdb3665fa33d4bc0cedaa6010b3fce9c9063c2d9bb7386e9c"
+  },
+  "manifest": {
+    "path": "FILE_MANIFEST.json",
+    "bytes": 69713,
+    "sha256": "4b813c1e14c26a0ecf5d393876a969bf88ab58334130bfdf75bb18241b86fbee"
+  },
+  "receipt": {
+    "path": "attempt_01/RECEIPT.json",
+    "bytes": 1770,
+    "sha256": "8651ca6bab51c051b5a09e67a64d06ac4e79dfcb5f7abe49ca172ca5e2f75259"
+  },
+  "executed_checker": {
+    "path": "attempt_01/check_amendment.py",
+    "bytes": 10463,
+    "sha256": "ef2c50b4495eaa488e37c6275156a78acda070228e4e93eddae6899022d68193"
+  },
+  "original_review_freeze_unchanged": "e0a44cc82e25ac3680492b4b0aa3a90fd207a37e16b9774ffc2b49ed43e4ca64",
+  "scientific_executions": 0,
+  "editable_prompt_files_changed": []
+}

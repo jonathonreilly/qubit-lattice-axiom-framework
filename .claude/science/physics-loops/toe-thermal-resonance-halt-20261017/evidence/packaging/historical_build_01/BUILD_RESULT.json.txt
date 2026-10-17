@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-17T04:31:57.324562+00:00",
+  "base": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+  "source_labels": 213,
+  "source_scopes": 9,
+  "new_raw_files": 88,
+  "parent_reused_source_labels": 89,
+  "duplicate_new_source_labels": 36,
+  "declared_inputs": 138,
+  "proof_bodies": 5,
+  "author_functions": 3,
+  "scientific_execution_count": 0,
+  "primary": {
+    "path": "scripts/thermal_resonance_halt_2026_10_17.py",
+    "sha256": "44fd3ceb37e57297402c5fd03a036521b0a9f7acbc541480f109b89b26c6b238",
+    "bytes": 57762
+  },
+  "note": {
+    "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "sha256": "b7b1ae955eb1b53e44cb33cbf175316dbcf037dd0fd00bebcabd2d1a75a5121e",
+    "bytes": 116563
+  }
+}

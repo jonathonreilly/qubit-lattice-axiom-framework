@@ -1,0 +1,134 @@
+
+---
+
+## Post-exposure implementation and provenance review
+
+After freezing the preceding derivation, I read the complete author checker,
+launcher, plans, exact scalar inputs, source preparer, freeze program,
+PRELAUNCH.json, RECEIPT.json and 38604-byte stdout. The executed checker copy
+has identical bytes to the inspected source. I also read the complete author
+failure/limitation log and literature search notes. The 74301-byte raw lexical
+repository search is preserved and hashed, but I do not claim to have read
+every hit or to have independently repeated the literature search. No external
+theorem from that search is needed for the new derivation checked here.
+
+The code is consistent with the note, with these specific scope limits:
+
+1. It uses standard-library Fraction pairs for complex arithmetic. The largest
+   matrix is the 6-by-6 local emitter/attachment realification; it does not
+   solve the full installed matching system or simulate the device.
+2. Its core algebra is evaluated exactly at kappa=10^-8. The uniform family
+   transfer uses the analytical homogeneity and monotone positivity bounds
+   proved in the text. The immutable output's `scientific_parameter_samples: 0`
+   is explicitly qualified in the note as no sampling study, not symbolic
+   execution at all kappa. No correction of the preserved output is needed.
+3. The physical edge-sign table is checked against the matrix lift. Reversing
+   only one cross sign produces two exact nonzero intertwining entries, of
+   magnitude 2kappa sin(phi), with the expected real/imaginary components.
+   This is a discriminating sign check. It does not supply the full packet
+   theorem; the latter was independently derived above from the pinned family.
+4. The cell tests check Q^2=2Q and selfadjointness for both normalized hopping
+   signs. Together with the explicitly displayed matrix (trace four), this
+   supports the stated spectrum and full-cell positivity. The occupation
+   coefficient sum, scalar reserve, target K/W and same-energy old falsifier
+   are represented directly and agree with the derivation.
+5. The graph check contains 46 vertices and 52 installed support edges. It
+   checks unit edge lengths, no coordinate collision and distance six to
+   c19 on either rail. The infinite-tail strings and general M-13 distance
+   are not established merely by checking that prefix; the analytical axis
+   construction and index argument above provide those steps.
+6. Scalar budget inputs such as the family seed and derivative constants
+   are imported assumptions bound to the source snapshots. Their successful
+   arithmetic comparison is not an independent spectral certificate. Some
+   constants are written literally in the checker; it is a check of these
+   exact frozen parameters, not a general certified parameter-input API.
+
+The full output reports the same exact reverse budget 215527/5000000,
+branch-error square 61/62500, conservative infinite separation 1061/2000,
+finite separation 1059/2000 and finite correction 19683/20971520. These
+agree with the independent hand derivation fixed before viewing the output.
+There is no code/prose drift affecting the supported result. No reviewer
+scientific program, author-code replay/import, optimizer, quadrature, grid
+or time evolution ran. Hash/copy/record-consistency scripts are bookkeeping.
+
+### Actual author run and binding evidence
+
+The inspected launcher writes the executed source first, serializes and
+fsyncs the PRELAUNCH file, closes it, fsyncs its directory, and only then
+creates the subprocess. The receipt records:
+
+| Event or cost | Actual value |
+|---|---|
+| Prelaunch created | 2026-10-17T04:20:42.971168+00:00 |
+| Prelaunch fsync completed | 2026-10-17T04:20:43.022554+00:00 |
+| Subprocess created after | 2026-10-17T04:20:43.022700+00:00 |
+| Finished | 2026-10-17T04:20:43.106334+00:00 |
+| Exit / timeout | 0 / false |
+| Wrapper wall | 0.08358712494373322 seconds |
+| Child user / system CPU | 0.033349 / 0.011493999999999999 seconds |
+| Peak child RSS on Darwin | 22921216 bytes |
+| CPU soft/hard caps | 20 / 20 seconds |
+| External scientific subprocess wall cap | 30 seconds |
+| Declared / actual matrix dimension | <=6 / 6 |
+| Declared / actual graph vertices | <=64 / 46 |
+| Attempt allowance / actual attempts | <=2 / 1 |
+
+The OS CPU limits and wall timeout are imposed in the inspected launch path.
+There is no OS memory cap, measured thread-count claim, or complete transitive
+runtime dependency inventory. Requested thread environment variables were
+one; the selected seven runtime files identify Python 3.13.5 and relevant
+standard-library/native modules. The code binds 31 files in all: eight
+program/plan/input identities, sixteen source snapshots and seven runtime
+identities. My bookkeeping independently checked their current content and
+generation fields against both PRELAUNCH and the receipt, not just the
+receipt's boolean summaries. All 31 matched. All sixteen original/snapshot
+pairs matched, and all 33 author-freeze entries plus FREEZE itself matched.
+The chronology of prelaunch, run, author freeze and this review's analytic
+freeze is consistent with the claimed order. This is source/runtime binding
+evidence, not proof of physical realizability or an independent process monitor.
+
+Decisive execution identities are:
+
+| Artifact | SHA256 |
+|---|---|
+| check_route.py and run01/executed_source.py | 7c0df32b052778776b05c41e0f6674898fa3c5749c98e46c415cffaa85907fc0 |
+| launch_check.py | 46c89bc4707cf3d8a0deac0a63976330c7efc1087dc3981e2b922612462b48da |
+| RESOURCE_PLAN.json | b774d6fa0678c00111717654d56edae469599c86a1793e018deafdd86d480d63 |
+| SCALAR_INPUTS.json | 9249fd95d793dcb2c2ba6e89517576fb3418d3ece965233a11c810bec6c1668d |
+| SOURCE_MANIFEST.json | 717b918b6b67b736daaddf9f51bde2182ff6013b3a925395744a5881a2b1149a |
+| run01/PRELAUNCH.json | 36e0d3ece73b96d92ca631447ddd5207ac0ab438935dee8c598e90801a450274 |
+| run01/RECEIPT.json | 1562bea003bbc74b364b4c03dc5bf20cf7a409b4097c3a576f9b0a6982a364c5 |
+| run01/stdout.json | e7e6ce5349dd0cd6aa0c41164c3b38f8b802e3dc5df3379ee2b10e300719c2a6 |
+| run01/stderr.txt, empty | e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 |
+| Review PROVENANCE.json | 88b810629d7c9e75e9ad0e558340722447bca217e4efb835765b382f473c5ccf |
+
+`PROVENANCE.json` retains every binding, current original/snapshot pair,
+author inventory entry, cost and chronology; `PROVENANCE_SUMMARY.json` gives
+the compact counts. The only reviewer read error was an initial attempt to
+open nonexistent `check_realification.py`; the shell returned `No such file
+or directory`. The actual `check_route.py` was then read completely. No
+scientific run failed, and no attempted counterexample or result was erased.
+
+## Remaining scope and repair obligations
+
+There is no required source correction within this selective mathematical
+scope. The explicit qualified-family dependency, exact phase relations,
+selected-edge geometry, supplied vacuum/product seed and finite-window
+restrictions must remain if this result is reused. The true physical scalar
+and full old aging must remain in all comparators and energy accounts.
+The source's historical `unqualified-author-candidate` label is not edited
+by this separate review. Root disposition and publication are separate.
+
+A proposed successful repair must provide an actual changed mechanism and
+its complete-output theorem. Supplying the chiral seed alone changes the
+readiness premise. A real preparer must account for its own time, controls,
+couplings, source/clock outputs and handoff, including the old evolution
+during preparation. A redesigned real one-port or multiport apparatus must
+check common spectral magnitudes, phases and all rejected/returned channels;
+equation (27) alone is not enough. A different multi-excitation or encoded
+architecture is outside the conserved two-rail proof. None is excluded here.
+
+All reviewer writes are confined to this review directory. No prior frozen
+source, W, Git, PR, shared checkpoint, prompt, physical axiom or audit record
+was edited. No model/effort override, subdelegation, other-chat message or
+scientific network retrieval occurred. No editable prompt files changed.

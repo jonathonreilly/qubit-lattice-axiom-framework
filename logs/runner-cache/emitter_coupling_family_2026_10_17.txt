@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/emitter_coupling_family_2026_10_17.py
+runner_sha256: e434a3d0fd5962fb76506a34ca1f436f83b5e3f29ba5042b99d5d041b9a996fe
+input_fingerprint_sha256: 3bb5983cdcdda9ae29020d4093e4f1c48a958414e0c5fa8c008418d4e6204692
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+{
+  "scope": "Portable replay of one source-exposed author scalar body. The complete analytical proof, family review and qualification remain separate.",
+  "function_bodies_completed": 1,
+  "scalar_comparisons": 103,
+  "complete_infinite": {
+    "rational": "2954065138388379/781250000000000000",
+    "display_only": 0.0037812033771371253
+  },
+  "complete_finite": {
+    "rational": "3735315138388379/781250000000000000",
+    "display_only": 0.004781203377137125
+  },
+  "actual_shared_process_limits": {
+    "cpu_soft_hard_seconds": [
+      20,
+      20
+    ],
+    "external_wall_cap_seconds": 30,
+    "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+  }
+}
+
+----- stderr -----
+

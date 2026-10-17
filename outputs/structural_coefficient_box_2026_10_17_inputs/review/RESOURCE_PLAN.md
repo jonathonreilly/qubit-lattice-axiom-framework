@@ -1,0 +1,5 @@
+# Predeclared bounded independent check
+
+Same-model, source-exposed review. No delegation. At most 45 CPU seconds and 60 wall seconds per checker invocation; matrix dimension at most 32 (planned exact physical matrices16 and toy resolvents/matching at most8). A timeout terminates the child and is preserved. No optimizer, coefficient sweep, time evolution, large clock allocation, or author-code execution.
+
+The independent program will construct exact bit-basis coefficient derivatives, check their polynomial spectra, darkness and parity, derive surface/matching identities on signed exact scalar and noncommuting toy cases, and certify new numerical comparisons by positive integer/rational arithmetic. It will also test excluded vacuum-leakage and fixed-nominal-phase countercases. Historical stationary-state/reflection certificates and the previously checked interval/generic theorem remain explicit pinned premises, not new executions. Any failed invocation will remain under its own numbered directory. The analytic infinite-tail and all-future implication remain mathematical arguments, not conclusions from finite test output.

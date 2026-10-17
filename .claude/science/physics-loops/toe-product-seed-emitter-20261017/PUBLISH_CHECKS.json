@@ -1,0 +1,534 @@
+{
+  "checked_utc": "2026-10-17T02:35:17.843271+00:00",
+  "status": "Focused publication checks complete; regular PR preparation allowed. No retained audit or integrated-main landing result.",
+  "scope": "Root packaging/portability review and actual canonical replay of already qualified source mathematics.",
+  "branch": "physics-loop/toe-product-seed-emitter-20261017",
+  "parent_head": "0e8375354c42963234cc4b15b14ab6bb553c713d",
+  "artifact_hashes_verified": 163,
+  "declared_inputs_verified": 168,
+  "byte_identical_proof_bodies": [
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt",
+      "logical_original": "autonomous_emitter_route/ROUTE.md",
+      "offset_bytes_zero_based": 26052,
+      "length_bytes": 27328,
+      "end_byte_exclusive": 53380,
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt",
+      "logical_original": "emitter_installed_certificate/CANDIDATE.md",
+      "offset_bytes_zero_based": 53694,
+      "length_bytes": 30796,
+      "end_byte_exclusive": 84490,
+      "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt",
+      "logical_original": "weighted_emitter_escape_candidate/CANDIDATE.md",
+      "offset_bytes_zero_based": 84821,
+      "length_bytes": 10962,
+      "end_byte_exclusive": 95783,
+      "sha256": "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5"
+    }
+  ],
+  "canonical_execution": {
+    "started_utc": "2026-10-17T02:19:35.269109+00:00",
+    "finished_utc": "2026-10-17T02:19:50.147365+00:00",
+    "runner": "scripts/product_seed_emitter_2026_10_17.py",
+    "prelaunch": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/PRELAUNCH.json",
+      "bytes": 58518,
+      "sha256": "24fbda3936d0d44dc1f92ac3a3cd71d42e66e38a021ca68d660ae04adf931c85"
+    },
+    "all_source_input_bytes_unchanged": true,
+    "runner_cache_also_checked_filesystem_generation_tokens": true,
+    "status": "ok",
+    "exit_code": 0,
+    "elapsed_seconds": 14.675396919250488,
+    "child_user_cpu_seconds": 13.624878,
+    "child_system_cpu_seconds": 0.302407,
+    "caps": {
+      "CPU_soft_hard_seconds": [
+        120,
+        120
+      ],
+      "external_wall_seconds": 120
+    },
+    "stream_semantics": "runner_cache merges child stderr into stdout; the empty stderr field is protocol-only, not an independently observed child stream.",
+    "stdout_merged": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/stdout_merged.txt",
+      "bytes": 1029,
+      "sha256": "4924a072a3bf2e73c7c017f0d1efd4713c05202ee7712ac28b9306ccebc0845d"
+    },
+    "stderr_protocol": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/stderr_protocol.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cache_status": "fresh",
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/cache.txt",
+      "bytes": 1379,
+      "sha256": "2041dec63236ebfa21f52aca1b32050faf4d5dec10b525bb3e0d92b5ae624b78"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/result.json",
+      "bytes": 110471,
+      "sha256": "84b5680f5b5fd747121ee6e4abdff210a14a782662814bdeaafda3140870a4f5"
+    },
+    "scope": "Actual replay of six qualified finite calculations. This is reproducibility, not a new independent theorem proof, interval proof from samples, dynamics simulation or retained audit."
+  },
+  "six_payload_scientific_discrepancies": 0,
+  "canonical_input_changes_after_successful_execution": false,
+  "first_attempt_failure": "Output-directory generation change rejected cache; full emitted JSON and outer error preserved. Removed first merged child stream unavailable.",
+  "mutation_cases": 12,
+  "root_mutation_review": {
+    "bytes": 7988,
+    "sha256": "4ab03da5952e77cb7fa2d87db005bd363f764f7b729ac9c9e9e670d8044fe1bb"
+  },
+  "helper_discovery": [
+    "scripts/product_seed_emitter_installed_2026_10_17.py",
+    "scripts/product_seed_emitter_local_2026_10_17.py",
+    "scripts/product_seed_emitter_weighted_2026_10_17.py"
+  ],
+  "readiness_issue": null,
+  "cache_status": "fresh",
+  "graph": {
+    "old_counts": {
+      "node_count": 7208,
+      "edge_count": 16163
+    },
+    "new_counts": {
+      "node_count": 7209,
+      "edge_count": 16164
+    },
+    "added": [
+      "product_seed_emitter_bounded_theorem_note_2026-10-17"
+    ],
+    "removed": [],
+    "rewired": [],
+    "new_node": {
+      "claim_id": "product_seed_emitter_bounded_theorem_note_2026-10-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "`bounded_theorem`. **Status:** `proposed_retained`.",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
+      ],
+      "helper_runner_paths": [
+        "scripts/product_seed_emitter_installed_2026_10_17.py",
+        "scripts/product_seed_emitter_local_2026_10_17.py",
+        "scripts/product_seed_emitter_weighted_2026_10_17.py"
+      ],
+      "note_hash": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44",
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "runner_path": "scripts/product_seed_emitter_2026_10_17.py",
+      "title": "A product-seed emitter for autonomous two-body reflection"
+    },
+    "new_edges": [
+      {
+        "from": "product_seed_emitter_bounded_theorem_note_2026-10-17",
+        "to": "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
+      }
+    ],
+    "manifest_sha256": "3b7f03f494ec2a4559a9c03c597aa962306c0849fe64a374e24a188e94737816",
+    "executions": [
+      {
+        "script": "docs/audit/scripts/run_citation_graph_build.py",
+        "started_utc": "2026-10-17T02:21:32.375013+00:00",
+        "elapsed_seconds": 129.4403789169155,
+        "wall_cap_seconds": 180,
+        "exit_code": 0,
+        "script_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+      },
+      {
+        "script": "docs/audit/scripts/write_citation_graph_manifest.py",
+        "started_utc": "2026-10-17T02:23:41.824073+00:00",
+        "elapsed_seconds": 0.07231299998238683,
+        "wall_cap_seconds": 60,
+        "exit_code": 0,
+        "script_sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+      }
+    ],
+    "scope": "New product-seed emitter note and its explicit parent citation only. Generated citation_graph.json is validation residue, not publication source."
+  },
+  "no_go_gate_trigger": false,
+  "compiled_sources": [
+    "scripts/product_seed_emitter_2026_10_17.py",
+    "scripts/product_seed_emitter_installed_2026_10_17.py",
+    "scripts/product_seed_emitter_local_2026_10_17.py",
+    "scripts/product_seed_emitter_weighted_2026_10_17.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/qualify.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/check_weighted_escape.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/run_check.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/check_emitter.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/run_check.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/qualify.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/emitter_algebra_check.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/certify_installed_emitter.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/run01_script.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/run_check.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/check_installed.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/check_bounds.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/run_check.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/attempt_01/check_installed.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/certify_installed_emitter.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/run01_script.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/sources/author/emitter_algebra_check.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/runs/attempt_1/executed_source.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/check_bounds.py",
+    "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/run_check.py"
+  ],
+  "vocabulary_violating_files": 0,
+  "local_links": [
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/QUALIFICATION.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/QUALIFICATION.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "scripts/product_seed_emitter_2026_10_17.py"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/ROOT_PORTABILITY_ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/EXECUTION_STATUS.md"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/SOURCE_ADAPTATION.json"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/REPORT.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_root_qualification/QUALIFICATION.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/REPORT.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/REPORT.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "logs/runner-cache/product_seed_emitter_2026_10_17.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/EMBEDDED_SOURCE_MAP.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/canonical_02/EXECUTION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/canonical_02/PRELAUNCH.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/REPORT_COMPARISON.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/ROOT_MUTATION_REVIEW.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/MUTATION_EVIDENCE_MAP.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/ROOT_WRAPPER_FINALIZATION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/prepared_PUBLISH_CHECKS.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PUBLISH_CHECKS.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/PORTABILITY_ARCHIVE_MAP.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "scripts/product_seed_emitter_2026_10_17.py"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "scripts/product_seed_emitter_local_2026_10_17.py"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "scripts/product_seed_emitter_installed_2026_10_17.py"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "scripts/product_seed_emitter_weighted_2026_10_17.py"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/SOURCE_ADAPTATION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/INPUT_MAP.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/SOURCE_MANIFEST.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/ROOT_DRAFT_REVIEW.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/EMBEDDED_SOURCE_MAP.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/SOURCE_ADAPTATION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/STATUS_NEUTRAL_DOCSTRING_CHANGE.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/STATIC_CHECKS.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/MUTATION_PLAN.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/ROOT_DRAFT_REVIEW.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "target": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "target": "scripts/product_seed_emitter_2026_10_17.py"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/SOURCE_ADAPTATION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "target": "outputs/product_seed_emitter_2026_10_17_inputs/INPUT_MAP.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "target": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/MUTATION_PLAN.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "target": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md"
+    }
+  ],
+  "archive_maps": [
+    {
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/ROOT_EVIDENCE_MAP.json",
+      "bytes": 38653,
+      "sha256": "fe6ece162e3845337bf41cd8267428a7001b47052d8c337b8cbfc4b0ab962d65"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/MUTATION_EVIDENCE_MAP.json",
+      "bytes": 78511,
+      "sha256": "68701e11684cb762b2473fa287f88c7975b8b4a02ef480a1ed8b8091ed9f814a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/PORTABILITY_ARCHIVE_MAP.json",
+      "bytes": 3845,
+      "sha256": "34cb0948549dac8191ab06592bf3bf57e164a68e4146ce95e1cb564d36cf0f41"
+    }
+  ],
+  "historical_preparation_transitions": [
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "historical": {
+        "bytes": 95437,
+        "sha256": "3a63a01dc72e0506fe5a5fb52ab7a25a1884f50453b3010e649e4902f67d15fa"
+      },
+      "current": {
+        "bytes": 95866,
+        "sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44"
+      },
+      "archived_original": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/wrapper_finalization_before_run02/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md.gz"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "historical": {
+        "bytes": 40934,
+        "sha256": "24bb0dda492eb65f6753be1439816b42fdcb60fe7e6e0fc392ef5fbfb9a1036d"
+      },
+      "current": {
+        "bytes": 40934,
+        "sha256": "a88cec6d36d9e686d4a00e256ebd9b13a6dfe2525a757dc0f8ebb5c40c4b9540"
+      },
+      "archived_original": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/wrapper_finalization_before_run02/ARTIFACT_MANIFEST.json"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/EMBEDDED_SOURCE_MAP.json",
+      "historical": {
+        "bytes": 1476,
+        "sha256": "dd4f3f590b7cb8948136d5b61b079ead8899998a59e67bb48478dca23774c191"
+      },
+      "current": {
+        "bytes": 1476,
+        "sha256": "1e1070368a7d2734279aefbcc0ec6a255d67d0e3973b4503fb2b48779838fbad"
+      },
+      "archived_original": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/wrapper_finalization_before_run02/EMBEDDED_SOURCE_MAP.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/portability_evidence/static_build_attempt_2/stdout.txt",
+      "historical": {
+        "bytes": 1149,
+        "sha256": "7f986d768cac1a3b841e19ab38591c13e81ed91fb066f03279e11d242e286a13"
+      },
+      "current": null,
+      "archived_original": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/portability_evidence/static_build_attempt_2/stdout.txt.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_author.diff",
+      "historical": {
+        "bytes": 34154,
+        "sha256": "1079c7b1471b78398f458cb9dbdb51fa0013eb528f1bf33cadb6ee09e2775f23"
+      },
+      "current": null,
+      "archived_original": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_author.diff.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_reviewer.diff",
+      "historical": {
+        "bytes": 25914,
+        "sha256": "0719a1595ea7fe69a727a98fd934e980be190e7cf097bf01fd91db2942a527d0"
+      },
+      "current": null,
+      "archived_original": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_reviewer.diff.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_author.diff",
+      "historical": {
+        "bytes": 13879,
+        "sha256": "68027c54f55ab77fdb1dba2418f7f5ae59598f16b88d2de41ce3eadababdf83d"
+      },
+      "current": null,
+      "archived_original": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_author.diff.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_reviewer.diff",
+      "historical": {
+        "bytes": 22538,
+        "sha256": "fd20beff02a8216b7dd13ae2040221f19e8c374d33926712d36615a204806e9b"
+      },
+      "current": null,
+      "archived_original": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_reviewer.diff.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_author.diff",
+      "historical": {
+        "bytes": 6197,
+        "sha256": "6ca7fe1edfa77613011133b2a55f6e2b184f28d7464debe69859147391849f13"
+      },
+      "current": null,
+      "archived_original": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_author.diff.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_reviewer.diff",
+      "historical": {
+        "bytes": 24976,
+        "sha256": "bfdb0e916e7b50b22fb057550ade966b74075d783d09e11d4cdf2ef940abd9b3"
+      },
+      "current": null,
+      "archived_original": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_reviewer.diff.gz"
+    }
+  ],
+  "historical_publish_checks_archive": "evidence/prepared_PUBLISH_CHECKS.json",
+  "editable_prompt_files_changed": [],
+  "remaining_gates": [
+    "Exact staged-path/root publication review and regular PR creation",
+    "Parent9661 landing or reviewed joint integration",
+    "Shared actual integrated-current-main full pipeline, strict lint and changed-evidence checks",
+    "Independent retained audit"
+  ],
+  "publication_paths_whitespace_checked": 458,
+  "tracked_diff_whitespace_exit_code": 0
+}

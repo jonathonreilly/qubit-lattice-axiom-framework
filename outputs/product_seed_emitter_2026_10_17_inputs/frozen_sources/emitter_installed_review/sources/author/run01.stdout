@@ -1,0 +1,284 @@
+{
+  "common_seed": {
+    "bound_state_operator_amplitude_upper": "1/12500",
+    "chosen_seed_isometry_error_upper": "3/1000",
+    "envelope": "f=chi conjugate(yref)/(sqrt(2pi) N); chi=1 on inner half-band, linear to zero at endpoints; N^2=integral chi^2 |yref|^2/(2pi)",
+    "normalization_mass_loss_upper": {
+      "display_float": 1.2800425974736113e-08,
+      "exact_rational": "1902980338206318514703114924575892373471479655819040184063787660849052570051666320864995295035070295250234464767662836803747634953506601/148665391445736592172797879457393202704898893030930183905434884589829398687123671722724972732209363889118594524298329856644214638701687578125000"
+    },
+    "off_diagonal_overlap_error": {
+      "display_float": 3.4678855588451837e-19,
+      "exact_rational": "111647037915488806169507249172995649524560385723427203368558229306207357845539036373562676715848805390723659655490559579374729957172603345374693122667288112928494283195946228215796190056973/321945566025735889870851449741621868275687996257315262921145351426949991464008237045986156426363081079969171670395200606539457815051702035185794433360693773482639037804157398372103316805469703890000000000000"
+    },
+    "profile": "yref= coupling conjugate(g_minus translated)/Df",
+    "relative_diagonal_profile_error": {
+      "display_float": 3.91601718429205e-06,
+      "exact_rational": "9108577480223997737644355173754438495430957348479961800594787830021772400984667391616337136265679013644678238108448149552727529971136336742298162312750876720847637609220105990411/2325979956564127144946534873520697695951869413545559323309827413983951704464081346432471562052685139424332733130137443251940349756865810411167079382971137103873747137949857199644009589"
+    },
+    "seed_isometry_error_squared_upper": {
+      "display_float": 7.857635220534265e-06,
+      "exact_rational": "2406933903450754060205892047984858983856529883900204478757031965360800715843550802568936062896332100878673305820105245939562403193279223046235264314573719783710869872471862068438177259213311156278641628136873458503876049506854045830995275496981173779107621872415672470874577700777616861221655683338773013365142582561938367516986642945773/306317847023585674213357319883731482191737628780872549416009909229091442467697675860918548875022392512251124367004577532021866991240651427397279355047700220757239326898429946187615602597220212956422843875983907943227783670913205275005742497633593481638196347398200588830960444541513902461522122986492835765269219091028416612063945000000000000"
+    }
+  },
+  "conditional_complete_output": {
+    "all_future_infinite_clock": true,
+    "complete_isometry_error": {
+      "display_float": 0.0037362222222222224,
+      "exact_rational": "84065000000000000000000003/22500000000000000000000000000"
+    },
+    "escape_bound": {
+      "display_float": 2.2222222222222223e-05,
+      "exact_rational": "500000000000000000000003/22500000000000000000000000000"
+    },
+    "finite_boundary_tolerance": "1/1000",
+    "finite_clock_sites": 50000000000000000000000000000000000000000000000000000000000000000000000000,
+    "finite_complete_isometry_strict_ceiling": "5/1000",
+    "finite_horizon": 2000000000000000000000000000000000000000000000000000000000000000000000000,
+    "first_omitted_site_distance": 49999999999999999999999999999999999999999999999999999999999999999999999987,
+    "onset": 1000000000000000000000000000000000000000000000000000000000000000000000000,
+    "strict_ceiling": "4/1000",
+    "time_source": "integration by parts with explicit uniform constants; not a linewidth or exponential-decay inference",
+    "unhalved_trace_strict_ceiling": "8/1000"
+  },
+  "distinct_exact_algebra": {
+    "all_16_internal_B_and_parity_identities_checked": true,
+    "contact_to_emitter_signs_checked": true,
+    "direct_scalar_tail_elimination_equals_augmented_matching": true,
+    "scalar_geometry_dimension": 16
+  },
+  "limits": [
+    "supplied clean clock/source vacuum and excited seed",
+    "static complex loop couplings are an explicit additional physical permission",
+    "no practical size or time claim",
+    "no arbitrary exact fit family",
+    "new packet implication and Schur argument require independent review"
+  ],
+  "parameters": {
+    "E0": "30021107107032000000000000000/5335816955256357129429116105401",
+    "L": 12,
+    "center_z_imag": "2255175592998549000000000000000/5335816955256357129429116105401",
+    "center_z_real": "4835816955256357129429116105401/5335816955256357129429116105401",
+    "closed_coordinates_per_parity": 7,
+    "coupling": "1/1000000000000",
+    "half_width": "1/1000000",
+    "old_source_dimension": 16,
+    "parity_dimension": 8
+  },
+  "physical_point_diagnostics_not_interval_proof": [
+    {
+      "augmented_flux_error_display": "0.0",
+      "augmented_inverse_max_entry_display": "39406179.02872600776482719",
+      "inverse_residual_max_entry_display": "1.0457897e-91",
+      "open_T_reflection_identity_error_display": "2.750845e-89",
+      "open_emitter_relative_profile_error_display": "1.3053350448781551033e-6",
+      "p": 1,
+      "s": 1,
+      "schur_inverse_relative_difference_display": "1.7063306e-91",
+      "shift_exact": "-1/1000000"
+    },
+    {
+      "augmented_flux_error_display": "9.8181869e-91",
+      "augmented_inverse_max_entry_display": "16562571929356309080588.09",
+      "inverse_residual_max_entry_display": "2.7675485e-81",
+      "open_T_reflection_identity_error_display": "2.0240711e-89",
+      "open_emitter_relative_profile_error_display": "3.1760630323018209382e-71",
+      "p": 1,
+      "s": 1,
+      "schur_inverse_relative_difference_display": "2.2488432e-91",
+      "shift_exact": "0"
+    },
+    {
+      "augmented_flux_error_display": "4.9090935e-91",
+      "augmented_inverse_max_entry_display": "39406094.52937915392179654",
+      "inverse_residual_max_entry_display": "5.5640008e-92",
+      "open_T_reflection_identity_error_display": "9.0118977e-90",
+      "open_emitter_relative_profile_error_display": "1.3053328545655626769e-6",
+      "p": 1,
+      "s": 1,
+      "schur_inverse_relative_difference_display": "7.960172e-92",
+      "shift_exact": "1/1000000"
+    },
+    {
+      "augmented_flux_error_display": "0.0",
+      "augmented_inverse_max_entry_display": "39406179.02872600776482719",
+      "inverse_residual_max_entry_display": "1.3910261e-91",
+      "open_T_reflection_identity_error_display": "2.0240711e-89",
+      "open_emitter_relative_profile_error_display": "1.3053350448781551033e-6",
+      "p": 1,
+      "s": -1,
+      "schur_inverse_relative_difference_display": "7.6131738e-92",
+      "shift_exact": "-1/1000000"
+    },
+    {
+      "augmented_flux_error_display": "9.8181869e-91",
+      "augmented_inverse_max_entry_display": "16562571929356309080588.09",
+      "inverse_residual_max_entry_display": "1.0336351e-81",
+      "open_T_reflection_identity_error_display": "2.7279722e-89",
+      "open_emitter_relative_profile_error_display": "3.1760630323018209381e-71",
+      "p": 1,
+      "s": -1,
+      "schur_inverse_relative_difference_display": "2.2479146e-91",
+      "shift_exact": "0"
+    },
+    {
+      "augmented_flux_error_display": "2.4545467e-91",
+      "augmented_inverse_max_entry_display": "39406094.52937915392179654",
+      "inverse_residual_max_entry_display": "9.7622479e-92",
+      "open_T_reflection_identity_error_display": "3.4363654e-90",
+      "open_emitter_relative_profile_error_display": "1.3053328545655626769e-6",
+      "p": 1,
+      "s": -1,
+      "schur_inverse_relative_difference_display": "1.4491595e-92",
+      "shift_exact": "1/1000000"
+    },
+    {
+      "augmented_flux_error_display": "2.4545467e-91",
+      "augmented_inverse_max_entry_display": "39406179.02872600776453267",
+      "inverse_residual_max_entry_display": "6.5346354e-92",
+      "open_T_reflection_identity_error_display": "9.8181869e-90",
+      "open_emitter_relative_profile_error_display": "1.3053350448781551032e-6",
+      "p": -1,
+      "s": 1,
+      "schur_inverse_relative_difference_display": "2.061476e-92",
+      "shift_exact": "-1/1000000"
+    },
+    {
+      "augmented_flux_error_display": "1.9636374e-90",
+      "augmented_inverse_max_entry_display": "16562571929356309080588.09",
+      "inverse_residual_max_entry_display": "1.5498067e-81",
+      "open_T_reflection_identity_error_display": "1.5709099e-89",
+      "open_emitter_relative_profile_error_display": "3.1760630323018209381e-71",
+      "p": -1,
+      "s": 1,
+      "schur_inverse_relative_difference_display": "1.2692578e-91",
+      "shift_exact": "0"
+    },
+    {
+      "augmented_flux_error_display": "0.0",
+      "augmented_inverse_max_entry_display": "39406094.52937915392150203",
+      "inverse_residual_max_entry_display": "1.7273223e-92",
+      "open_T_reflection_identity_error_display": "3.9272748e-90",
+      "open_emitter_relative_profile_error_display": "1.3053328545655626769e-6",
+      "p": -1,
+      "s": 1,
+      "schur_inverse_relative_difference_display": "1.024617e-91",
+      "shift_exact": "1/1000000"
+    },
+    {
+      "augmented_flux_error_display": "2.4545467e-91",
+      "augmented_inverse_max_entry_display": "39406179.02872600776453267",
+      "inverse_residual_max_entry_display": "1.6941197e-92",
+      "open_T_reflection_identity_error_display": "5.8909122e-90",
+      "open_emitter_relative_profile_error_display": "1.3053350448781551032e-6",
+      "p": -1,
+      "s": -1,
+      "schur_inverse_relative_difference_display": "6.5314092e-92",
+      "shift_exact": "-1/1000000"
+    },
+    {
+      "augmented_flux_error_display": "1.472728e-90",
+      "augmented_inverse_max_entry_display": "16562571929356309080588.09",
+      "inverse_residual_max_entry_display": "4.3044205e-82",
+      "open_T_reflection_identity_error_display": "1.7563307e-89",
+      "open_emitter_relative_profile_error_display": "3.1760630323018209382e-71",
+      "p": -1,
+      "s": -1,
+      "schur_inverse_relative_difference_display": "1.2681018e-91",
+      "shift_exact": "0"
+    },
+    {
+      "augmented_flux_error_display": "0.0",
+      "augmented_inverse_max_entry_display": "39406094.52937915392150203",
+      "inverse_residual_max_entry_display": "3.0435659e-92",
+      "open_T_reflection_identity_error_display": "5.8909122e-90",
+      "open_emitter_relative_profile_error_display": "1.3053328545655626769e-6",
+      "p": -1,
+      "s": -1,
+      "schur_inverse_relative_difference_display": "6.8375836e-92",
+      "shift_exact": "1/1000000"
+    }
+  ],
+  "regularity": {
+    "C0": "2000000000000",
+    "C1": "2000000000000000000000000000000000000",
+    "CA": "3000000000000000000000000000000",
+    "CB": "3000000000000000000000000000000",
+    "Dj": {
+      "display_float": 4.000000004e+42,
+      "exact_rational": "4000000004000000000000000000000010000000000"
+    },
+    "F0": "1/500",
+    "F1": "2000000000000000000000000000000",
+    "K1": 1000000,
+    "R_aug_derivative_upper": "1000000000000000000000000000",
+    "clock_resolvent_localized_map_K0": 20000,
+    "grouped_D": "8000000000000000000000000000000000000000000",
+    "rho_derivative_upper": "5000000000000000000000000"
+  },
+  "runtime": {
+    "cpu_cap_seconds": 30,
+    "elapsed_seconds": 2.43158495798707,
+    "equivalent_full_two_parity_matching_dimension": 48,
+    "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "largest_executed_matrix_dimension": 24,
+    "mpmath": "1.3.0",
+    "mpmath_dps": 90,
+    "on_shell_diagnostic_points": 3,
+    "optimizers": 0,
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "sectors_per_point": 4,
+    "sympy": "1.14.0",
+    "time_evolution_simulations": 0,
+    "wall_cap_seconds": 60
+  },
+  "script_sha256": "950973354e69857ab19e40dbbf185ada46d1cda8a8a6c201c35fecf97a74623c",
+  "status": "new conditional author certificate, not independent review or native-hardware validation",
+  "target": {
+    "augmented_phase_error": {
+      "display_float": 0.0007124427228908614,
+      "exact_rational": "49271437187834268445886604484993709507273645055853689621962550028812284545102040645297130457571101371643934573757138837976463790710291134200810368196028604061979217466940815008837349697804321841519609585370466131178865001535384954391206020755280528365490803297529686526114971853322765324773161440894013753456643356559075734891879/69158453872483622834118310572381025683352603599595633881040068089757661026540856951666698863172640141161488069285833615187822283661867415283918736532679373172224889089042706929616708647030778161339444484207509313128422570591615912370904762194909894377005695080146723598670565522958271119060295413077301083170786135749312500000000000"
+    },
+    "chosen_augmented_phase_error_upper": "714/1000000",
+    "common_outgoing_phase": "rho(k)=r0(k) t_minus(k)/|t_minus(k)|",
+    "emitter_reflection_phase_correction": {
+      "display_float": 1.0442722714861375e-05,
+      "exact_rational": "11555240914862037356454925510038509069136908938679942463097450667829672330768171592894672514089103882082964548384987838724893300905655787952172000961887783445212410369940068233198460927618797606110441616976837826275051485911491383723303633874792709864458623054618947611878584045440631474434853503346182405906343978/1106535261959737965345892969158096410933641657593530142096641089436122576424653711226667181810762242258583809108573337843005156538589878644542699784522869970755598225424683310873867338352492450581431111747320149010054761129465854597934476195118558310032091121282347577578729048367332337904964726609236817330732578171989"
+    },
+    "old_aging": "exp(-i t K) for total time since product seed",
+    "original_gate_band_error": {
+      "display_float": 0.000702000000176,
+      "exact_rational": "43875000011/62500000000000"
+    },
+    "physical_scalar": "exp(-i (nu+2 coupling) t)",
+    "same_fixed_gate_scalar": "zeta from frozen interval candidate; no refitting"
+  },
+  "uniform_schur": {
+    "De_inverse_2_upper": "1/(18 coupling^2)",
+    "all_in_band_bound_states_excluded": true,
+    "augmented_matching_derivative_2_upper": "63/1000",
+    "augmented_matching_dimension_per_parity": 24,
+    "augmented_matching_inverse_2_upper": "1/(17 coupling^2)",
+    "closed_drive_norm": {
+      "display_float": 5.779809264720711e-08,
+      "exact_rational": "800/13841287201"
+    },
+    "closed_emitter_inverse_upper": 6,
+    "closed_tail_factor": {
+      "display_float": 5.160543986357778e-10,
+      "exact_rational": "50/96889010407"
+    },
+    "free_optical_lower_after_dividing_by_coupling_squared": {
+      "display_float": 19.549195748322624,
+      "exact_rational": "59466078955076264778501911591951414088266253848867346074388886893822751512082946931096738336560006361527225595051827770630743421922700125/3041868306023720476617049700472764972815450817181164566513326468776701786392947361967789157395291484398132398833319705237256116768814779"
+    },
+    "full_dimension": 48,
+    "relative_resonant_denominator_error": {
+      "display_float": 2.610671307238899e-06,
+      "exact_rational": "18217154960447995475288710347508876990670320589088255658464905685460543078898473498802621162470810486922555165777434664294588461256234313199213844345014941258586150428401067971233/6977958086847341882835079909272440596732598910957267058185140706857540573935322937770913488779217889083485121945578107190485343859058687467814437362757756326562500000000000000000000000"
+    },
+    "resonant_imaginary_lower": "19 coupling^2",
+    "why": "original matching invertible, finite augmented Schur invertible, and homogeneous outgoing tail matching"
+  }
+}

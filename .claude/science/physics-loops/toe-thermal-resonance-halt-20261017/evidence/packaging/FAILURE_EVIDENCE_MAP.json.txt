@@ -1,0 +1,28 @@
+{
+  "static_01": {
+    "cause": "Multiline docstring indentation changed AST literal value",
+    "overlay": "historical_build_03/canonical",
+    "checker": "static_01/verify_static.py",
+    "receipt": "static_01/RECEIPT.json",
+    "stderr": "static_01/stderr.txt",
+    "repair": "STATIC_REPAIR_01.json"
+  },
+  "static_02": {
+    "cause": "Private link-check fixture omitted separately bound primary",
+    "overlay": "historical_build_04/canonical",
+    "checker": "static_02/verify_static.py",
+    "receipt": "static_02/RECEIPT.json",
+    "stderr": "static_02/stderr.txt",
+    "repair": "STATIC_REPAIR_02.json"
+  },
+  "static_03": {
+    "cause": "Canonical parent note link missing from input closure after byte dedup to archive",
+    "overlay": "historical_build_04/canonical",
+    "checker": "static_03/verify_static.py",
+    "receipt": "static_03/RECEIPT.json",
+    "stderr": "static_03/stderr.txt",
+    "repair": "STATIC_REPAIR_03.json"
+  },
+  "read_only_failures": "READ_FAILURES.json",
+  "no_science_run_failed_or_occurred": true
+}

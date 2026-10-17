@@ -1,0 +1,9 @@
+{
+  "scope":"Narrow static spacing/status/archive amendment only; original review remains frozen",
+  "cpu_seconds":[30,30],"wall_seconds":45,"maximum_attempts":2,
+  "maximum_input_files":2048,"maximum_input_bytes":134217728,
+  "scientific_executions":0,"scientific_mutations":0,"inert_imports_required":0,
+  "checks":["Exact root script pins and unchanged source history","Entire primary AST only changes one audit path; functions/classes unchanged","Ten Markdown target changes plus one reversible TeX spacing span","Lossless gzip stored/raw source labels and all1177 archive members","Five archive retargets only","149 literal inputs exactly covered after update","Wrapper-only decision links intentionally outside calculation closure"],
+  "evidence":"Serialize and fsync source/runtime bindings before subprocess; full streams and before/after comparison",
+  "forbidden":"No scientific program, root repair program, Git, W/source/checkpoint/prompt/axiom/audit edits"
+}

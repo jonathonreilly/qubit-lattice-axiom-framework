@@ -1,0 +1,170 @@
+{
+  "base_primary": {
+    "bytes": 21202,
+    "sha256": "6111c95e2add4eb92fbc3f46d49f45085c3e95dc73431a68da7dcd602c912618"
+  },
+  "scope": "Mutations alter one scientific relation in copied primary code. Input files and cache authority are unchanged. Each rejection must identify the planned mathematical assertion; no checksum rejection counts.",
+  "cases": [
+    {
+      "name": "target_conjugation",
+      "started_utc": "2026-10-17T00:37:28.536489+00:00",
+      "elapsed_seconds": 0.6174879581667483,
+      "exit_code": 1,
+      "wall_cap_seconds": 30,
+      "source": {
+        "bytes": 21525,
+        "sha256": "43071c4f209b914347b9241eb4ec321ac4ba5b03f8343998835b9d70ac6be76c"
+      },
+      "old": "w=(F(-7,25),F(24,25))",
+      "new": "w=(F(-7,25),F(-24,25))",
+      "expected_scientific_assertion": "assert central_bound<central_contract",
+      "scientific_assertion_rejected": true,
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 316,
+        "sha256": "bfd95eb71e05cf01a447c3b3c48fe89d6f1dbec031700e79c02ce5bd6289655f"
+      }
+    },
+    {
+      "name": "common_phase_sign",
+      "started_utc": "2026-10-17T00:37:29.155039+00:00",
+      "elapsed_seconds": 0.3139738328754902,
+      "exit_code": 1,
+      "wall_cap_seconds": 30,
+      "source": {
+        "bytes": 21516,
+        "sha256": "7330789777a37850f8a57e534f3a6c201081738f24717acfe53a8982d91a8a5d"
+      },
+      "old": "zeta_approx=cneg(cmul(cpow(zi,4),alpha))",
+      "new": "zeta_approx=cmul(cpow(zi,4),alpha)",
+      "expected_scientific_assertion": "assert cmul(r0_abs,zeta_approx)==cmul(cpow(zi,2),alpha)",
+      "scientific_assertion_rejected": true,
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 351,
+        "sha256": "b582894d403250030f7730967e26250a37f0792ab30da162a3337ea750cf94b1"
+      }
+    },
+    {
+      "name": "closed_root_underbound",
+      "started_utc": "2026-10-17T00:37:29.469722+00:00",
+      "elapsed_seconds": 0.3282825001515448,
+      "exit_code": 1,
+      "wall_cap_seconds": 30,
+      "source": {
+        "bytes": 21534,
+        "sha256": "c7fc65ce8f1af7e7cbc55778be18dc666ece65bdc92f4f4974f4c3602565e161"
+      },
+      "old": "kappa=F(1,7)",
+      "new": "kappa=F(1,100)",
+      "expected_scientific_assertion": "assert 2+g/J>kappa+1/kappa",
+      "scientific_assertion_rejected": true,
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 298,
+        "sha256": "0762c09dc71bfeeaea560ee169c74493fff7716b50be60cd8e4efa4d84f46148"
+      }
+    },
+    {
+      "name": "interval_overextension",
+      "started_utc": "2026-10-17T00:37:29.798756+00:00",
+      "elapsed_seconds": 0.3361082919873297,
+      "exit_code": 1,
+      "wall_cap_seconds": 30,
+      "source": {
+        "bytes": 21530,
+        "sha256": "7cff420765b85d8f0255effd6bfc581aa615beac89e7c2587d2f1f50f0b5d515"
+      },
+      "old": "width=F(1,1000)",
+      "new": "width=F(1,20)",
+      "expected_scientific_assertion": "assert min(source_gap,old_gap)>g",
+      "scientific_assertion_rejected": true,
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 310,
+        "sha256": "8a9d2bbe51d6e41b5820c8fc1ac9b78269757b5ea82b1e514ee0881c4c51af83"
+      }
+    },
+    {
+      "name": "localized_columns_orthogonal",
+      "started_utc": "2026-10-17T00:37:30.136089+00:00",
+      "elapsed_seconds": 0.31891137501224875,
+      "exit_code": 1,
+      "wall_cap_seconds": 30,
+      "source": {
+        "bytes": 21544,
+        "sha256": "d1402b0a26bc1c2160bb0b313b6ebb8c527240360b56f1b6a8ab5cd3b0564887"
+      },
+      "old": "Dpacket=F(88000)",
+      "new": "Dpacket=F(62004)",
+      "expected_scientific_assertion": "assert Dj<62004 and 2*Dj*Dj<Dpacket*Dpacket",
+      "scientific_assertion_rejected": true,
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 338,
+        "sha256": "4a56f488c3fde29895b5c23a23f54786f23dffdd4f28ea6445cdc3f350df1c57"
+      }
+    },
+    {
+      "name": "finite_ready_support",
+      "started_utc": "2026-10-17T00:37:30.455759+00:00",
+      "elapsed_seconds": 0.32727958308532834,
+      "exit_code": 1,
+      "wall_cap_seconds": 30,
+      "source": {
+        "bytes": 21527,
+        "sha256": "30a2d5beb641b8c66b2d74efbdfc9a5b9486fca1b5318cfb05f7b3bca856464a"
+      },
+      "old": "N=22*10**12",
+      "new": "N=2*10**12",
+      "expected_scientific_assertion": "assert d>=max(F(1),2*J*T,16*(F1+F0)**2/(3*eta_p**2))",
+      "scientific_assertion_rejected": true,
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 348,
+        "sha256": "0c07d1dd0659a2b72cecc78223898375c6bc9b28d338391fb103ad6d7366f4d7"
+      }
+    },
+    {
+      "name": "finite_observation_horizon",
+      "started_utc": "2026-10-17T00:37:30.783831+00:00",
+      "elapsed_seconds": 0.3133931662887335,
+      "exit_code": 1,
+      "wall_cap_seconds": 30,
+      "source": {
+        "bytes": 21540,
+        "sha256": "b95457deee2f7f78a684ec4f2677f3134324a522ea9f45aa357e23a8f2472ff8"
+      },
+      "old": "M=9*10**14",
+      "new": "M=8*10**14",
+      "expected_scientific_assertion": "assert dM>rho*Tobs*F(6,5)+9",
+      "scientific_assertion_rejected": true,
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 304,
+        "sha256": "ddcc3b29f7fa6e6cde2affeb713189f115c08f6b485ed7bac1f09da8e09249d2"
+      }
+    }
+  ]
+}

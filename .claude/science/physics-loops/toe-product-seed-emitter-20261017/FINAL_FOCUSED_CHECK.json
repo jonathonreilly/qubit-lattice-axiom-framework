@@ -1,0 +1,436 @@
+{
+  "scope": "After report/evidence packaging: identity, active link, whitespace and branch checks only.",
+  "checked_utc": "2026-10-17T02:14:16.207528+00:00",
+  "source_manifest_pins_current": true,
+  "declared_input_count": 168,
+  "active_markdown_files": 4,
+  "active_links_checked": 84,
+  "links": [
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "resolved": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/QUALIFICATION.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/QUALIFICATION.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/ACCEPTANCE.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/QUALIFICATION.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/QUALIFICATION.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/ACCEPTANCE.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../scripts/product_seed_emitter_2026_10_17.py",
+      "resolved": "scripts/product_seed_emitter_2026_10_17.py"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../.claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "resolved": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../.claude/science/physics-loops/toe-product-seed-emitter-20261017/SOURCE_ADAPTATION.json",
+      "resolved": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/SOURCE_ADAPTATION.json"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/REPORT.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/REPORT.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_root_qualification/QUALIFICATION.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_root_qualification/QUALIFICATION.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/REPORT.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/REPORT.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/REPORT.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/REPORT.md.txt"
+    },
+    {
+      "source": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "../outputs/product_seed_emitter_2026_10_17_inputs/EMBEDDED_SOURCE_MAP.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/EMBEDDED_SOURCE_MAP.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "SOURCE_INVENTORY.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "draft_history/PROGRAM_INPUTS.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/draft_history/PROGRAM_INPUTS.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/autonomous_emitter_route/ROUTE.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/CANDIDATE.md.txt"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_independent_review/REPORT.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/REPORT.md.txt"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_root_qualification/QUALIFICATION.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_root_qualification/QUALIFICATION.md.txt"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_review/REPORT.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/REPORT.md.txt"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_root_review/QUALIFICATION.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/QUALIFICATION.md.txt"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_root_review/ACCEPTANCE.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_root_review/ACCEPTANCE.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/weighted_emitter_escape_review/REPORT.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/REPORT.md.txt"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/weighted_emitter_root_qualification/QUALIFICATION.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/QUALIFICATION.md.txt"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/weighted_emitter_root_qualification/ACCEPTANCE.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_root_qualification/ACCEPTANCE.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md.txt"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md.txt",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md.txt"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "../../docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "resolved": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "EMBEDDED_SOURCE_MAP.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/EMBEDDED_SOURCE_MAP.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/autonomous_emitter_route/emitter_algebra_check.py",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/emitter_algebra_check.py"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/autonomous_emitter_route/ALGEBRA_CERTIFICATE.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ALGEBRA_CERTIFICATE.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/autonomous_emitter_route/EXECUTION.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/EXECUTION.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_independent_review/check_emitter.py",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/check_emitter.py"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_independent_review/RESULTS.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/RESULTS.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_independent_review/EXECUTION.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/EXECUTION.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_independent_review/run_check.py",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_independent_review/run_check.py"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_certificate/certify_installed_emitter.py",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/certify_installed_emitter.py"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_certificate/CERTIFICATE.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CERTIFICATE.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_certificate/run01_execution.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/run01_execution.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_review/check_installed.py",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/check_installed.py"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_review/RESULTS.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/RESULTS.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_review/EXECUTION.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/EXECUTION.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/emitter_installed_review/run_check.py",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/run_check.py"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/weighted_emitter_escape_candidate/check_bounds.py",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/check_bounds.py"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/weighted_emitter_escape_candidate/BOUNDS.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/BOUNDS.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/weighted_emitter_escape_candidate/EXECUTION.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/EXECUTION.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/weighted_emitter_escape_candidate/run_check.py",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/run_check.py"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/weighted_emitter_escape_review/check_weighted_escape.py",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/check_weighted_escape.py"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/weighted_emitter_escape_review/runs/attempt_1/RESULT.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/runs/attempt_1/RESULT.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/weighted_emitter_escape_review/runs/attempt_1/EXECUTION.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/runs/attempt_1/EXECUTION.json"
+    },
+    {
+      "source": "outputs/product_seed_emitter_2026_10_17_inputs/SOURCE_INVENTORY.md",
+      "target": "frozen_sources/weighted_emitter_escape_review/run_check.py",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/run_check.py"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "../../../../docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "resolved": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "../../../../scripts/product_seed_emitter_2026_10_17.py",
+      "resolved": "scripts/product_seed_emitter_2026_10_17.py"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "../../../../scripts/product_seed_emitter_local_2026_10_17.py",
+      "resolved": "scripts/product_seed_emitter_local_2026_10_17.py"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "../../../../scripts/product_seed_emitter_installed_2026_10_17.py",
+      "resolved": "scripts/product_seed_emitter_installed_2026_10_17.py"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "../../../../scripts/product_seed_emitter_weighted_2026_10_17.py",
+      "resolved": "scripts/product_seed_emitter_weighted_2026_10_17.py"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "SOURCE_ADAPTATION.json",
+      "resolved": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/SOURCE_ADAPTATION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "../../../../outputs/product_seed_emitter_2026_10_17_inputs/INPUT_MAP.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/INPUT_MAP.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "PRE_RUN_PLAN.md",
+      "resolved": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "SOURCE_MANIFEST.json",
+      "resolved": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/SOURCE_MANIFEST.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "ROOT_DRAFT_REVIEW.json",
+      "resolved": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/ROOT_DRAFT_REVIEW.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "../../../../outputs/product_seed_emitter_2026_10_17_inputs/EMBEDDED_SOURCE_MAP.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/EMBEDDED_SOURCE_MAP.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "SOURCE_ADAPTATION.json",
+      "resolved": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/SOURCE_ADAPTATION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "STATUS_NEUTRAL_DOCSTRING_CHANGE.json",
+      "resolved": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/STATUS_NEUTRAL_DOCSTRING_CHANGE.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "STATIC_CHECKS.json",
+      "resolved": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/STATIC_CHECKS.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_REVIEW.md",
+      "target": "MUTATION_PLAN.json",
+      "resolved": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/MUTATION_PLAN.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "target": "ROOT_DRAFT_REVIEW.json",
+      "resolved": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/ROOT_DRAFT_REVIEW.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "target": "../../../../docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "resolved": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "target": "../../../../scripts/product_seed_emitter_2026_10_17.py",
+      "resolved": "scripts/product_seed_emitter_2026_10_17.py"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "target": "SOURCE_ADAPTATION.json",
+      "resolved": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/SOURCE_ADAPTATION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "target": "../../../../outputs/product_seed_emitter_2026_10_17_inputs/INPUT_MAP.json",
+      "resolved": "outputs/product_seed_emitter_2026_10_17_inputs/INPUT_MAP.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "target": "MUTATION_PLAN.json",
+      "resolved": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/MUTATION_PLAN.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md",
+      "target": "../../../../docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md#12-focused-pre-review-and-combined-landing-gates",
+      "resolved": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md"
+    }
+  ],
+  "trailing_whitespace": [],
+  "original_frozen_whitespace_exceptions": [],
+  "canonical_result_absent": true,
+  "scientific_functions_executed": 0,
+  "scientific_mutations_executed": 0,
+  "staged_files": 0
+}

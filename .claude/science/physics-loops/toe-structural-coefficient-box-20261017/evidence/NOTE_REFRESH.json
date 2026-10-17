@@ -1,0 +1,58 @@
+{
+  "scope": "Root-requested wrapper metadata and root-record link only; no source-body or scientific changes.",
+  "old_note": {
+    "bytes": 24138,
+    "sha256": "9f4934a5d1e63c93ee7e5f8956ff7b35c748f241204348c2510b04f38142a35f"
+  },
+  "new_note": {
+    "bytes": 24313,
+    "sha256": "845fb32de988058055e4907cb37fae66c45d8edb8df003ed4fbcc908509014a1"
+  },
+  "changes": [
+    {
+      "old": "wrapper_root_approval: pending_separate_root_review",
+      "new": "wrapper_root_approval: see_separate_root_review_record"
+    },
+    {
+      "old": "publication are separate records.",
+      "new": "publication are separate records. Final wrapper approval is addressed by the\n[root wrapper review record](../.claude/science/physics-loops/toe-structural-coefficient-box-20261017/ROOT_WRAPPER_REVIEW.json)."
+    }
+  ],
+  "body_byte_identical": true,
+  "body_sha256": "5d3c2dd41f6af96bf7bd793b5e5cfe39e5d0f5c7c0d16517c95249542cdc81ca",
+  "graph_extraction_before": {
+    "claim_id": "structural_coefficient_box_bounded_theorem_note_2026-10-17",
+    "path": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "title": "A coefficient tolerance for the positive two-body reflection apparatus",
+    "claim_type_author_hint_raw": "`bounded_theorem`. Source-status request: `proposed_retained`.",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "runner_path": "scripts/structural_coefficient_box_2026_10_17.py",
+    "helper_runner_paths": [
+      "scripts/structural_coefficient_box_check_2026_10_17.py"
+    ],
+    "deps": [
+      "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
+    ]
+  },
+  "graph_extraction_after": {
+    "claim_id": "structural_coefficient_box_bounded_theorem_note_2026-10-17",
+    "path": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "title": "A coefficient tolerance for the positive two-body reflection apparatus",
+    "claim_type_author_hint_raw": "`bounded_theorem`. Source-status request: `proposed_retained`.",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "runner_path": "scripts/structural_coefficient_box_2026_10_17.py",
+    "helper_runner_paths": [
+      "scripts/structural_coefficient_box_check_2026_10_17.py"
+    ],
+    "deps": [
+      "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
+    ]
+  },
+  "all_graph_fields_except_note_hash_identical": true,
+  "graph_builder_sha256": "ea80a55574196fcb9b3573b01f2ed51d4893612f0e15b02354d4fcb2d023ca9e",
+  "manifest_unchanged_sha256": "d4cd7260f9cb514bcb30bad1d472baf8484f54a8dd20544525c33360dca8e258",
+  "graph_scope": "Completed graph JSON retains its actual pre-edit note hash and is validation residue. Its topology manifest is unchanged and remains correct; no graph rebuild or synthetic note-hash refresh is claimed.",
+  "root_owned_record_pending": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/ROOT_WRAPPER_REVIEW.json"
+}

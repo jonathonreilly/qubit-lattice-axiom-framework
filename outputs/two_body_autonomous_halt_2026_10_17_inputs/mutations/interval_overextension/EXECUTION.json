@@ -1,0 +1,23 @@
+{
+  "name": "interval_overextension",
+  "started_utc": "2026-10-17T00:37:29.798756+00:00",
+  "elapsed_seconds": 0.3361082919873297,
+  "exit_code": 1,
+  "wall_cap_seconds": 30,
+  "source": {
+    "bytes": 21530,
+    "sha256": "7cff420765b85d8f0255effd6bfc581aa615beac89e7c2587d2f1f50f0b5d515"
+  },
+  "old": "width=F(1,1000)",
+  "new": "width=F(1,20)",
+  "expected_scientific_assertion": "assert min(source_gap,old_gap)>g",
+  "scientific_assertion_rejected": true,
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 310,
+    "sha256": "8a9d2bbe51d6e41b5820c8fc1ac9b78269757b5ea82b1e514ee0881c4c51af83"
+  }
+}

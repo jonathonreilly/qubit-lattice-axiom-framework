@@ -1,0 +1,7 @@
+{
+  "copied_originals": {
+    "certify_point.py": "74460bcbd0db30671a6d676b79d24d1ebb5439523df62a5fa3c231760b010558",
+    "independent_check.py": "06e14d43a2f0b9f09c594dd547981d5e25002997e6df661d542221c400632d0d"
+  },
+  "adaptations": "New output directory; saved capped fit; Delta=2+4J+0.05+extra; exact g caps; fresh target threshold. Same residual-certification algorithm, re-executed on new exact coefficients. No original bytes changed."
+}

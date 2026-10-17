@@ -1,0 +1,183 @@
+---
+claim_type: bounded_theorem
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+target_claim_id: emitter_coupling_family_bounded_theorem_note_2026-10-17
+target_blocker_text: "The supplied emitter still requires an exact seed and its published sufficient onset is 10^6/kappa^2. Account for finite thermal preparation and release, and recheck a shorter complete-output runtime."
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "Consult the exact source qualifications, source-transport decision and execution records; pursue native preparation/control/phase supply and complete capture/reset/reuse."
+conditional_surface_status: "Exact nominal positive NN two-body apparatus, supplied auxiliary Gibbs marginal and finite classical setup controls, exact static loop phase and coefficients, complete quantum outputs with arbitrary passive references."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "A complete conditional preparation/runtime composition with explicit finite horizon, output norm, scalar, chronological old aging and local hardware costs; no native realization is inferred."
+source_science_acceptance_complete: true
+wrapper_root_approval: pending
+canonical_execution: see_separate_execution_record
+publication: reviewable_packet_pending_checks
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+---
+
+# Thermal preparation and resonance-scale autonomous output
+
+**Claim type:** `bounded_theorem`. **Current status:** conditional support.
+The resonance, both preparation constructions, staged release and final
+composition have selective mathematical checks and root source qualifications.
+These are conditional theorems; canonical reproduction and publication status
+follow their separate actual execution and integration records.
+
+**Runner:** [scripts/thermal_resonance_halt_2026_10_17.py](../scripts/thermal_resonance_halt_2026_10_17.py).
+
+The [parent coupling-family theorem](EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md)
+starts from an exactly prepared emitter. This milestone supplies two explicit
+positive-control preparation models and their finite release into the same
+runtime. It also improves the sufficient onset through a new directional
+cutoff, finite-contour and full localized-vector estimate. Both changes retain
+every modeled clock, source, emitter, old-system and passive-reference output.
+
+Fix the exact nominal ladder, one actual kappa in `[1e-12,1e-8]`, bandwidth
+`sigma=1e-6` and emitter position `L=12`. Every other runtime coefficient,
+phase and edge is unchanged. The complete infinite-clock isometry error is
+below **0.003832 for every t >= T = 1/kappa^2**. A finite clock with
+`M=ceil(50T)` gives error below **0.004832 only on [T,2T]**. At the largest
+coupling, this is `T=1e16`, `M=5e17` and `M+5=500000000000000005` qubits.
+These remain enormous sufficient resources in declared Hamiltonian units;
+they are not physical seconds, measured resources or minimum costs.
+
+The unchanged old Hamiltonian and target gate are
+
+\[
+ K=2I+Z_1Z_2,\qquad
+ W=\frac{(9+12i)I+(-16+12i)X_1X_2}{25}.
+\]
+
+After a complete setup of duration s and seed phase Phi_setup, the comparator is
+
+\[
+ \mathcal I(t)=\zeta e^{-i[\Phi_{\rm setup}+(\nu+2\kappa)t]}
+ \mathcal B_{\kappa,t}e^{-i(s+t)K}W.
+\]
+
+The actual normalized outgoing packet in B uses the source's complete
+`f_kappa rho_kappa`. It is common to all old input columns of one apparatus;
+it is not a fixed nominal waveform shared across different kappas. Its time
+index is runtime t. The old system ages through every setup interval and
+runtime. The physical scalar `nu+2kappa` remains, and E0 is not counted again
+as an extra runtime phase. Only `[W,K]=0` is used for chronological composition;
+the actual interacting Hamiltonian need not commute with K.
+
+## The two preparation contracts
+
+The alternatives are separate physical control prescriptions. They are not
+combined into one Hamiltonian or credited each other's resource budget.
+The input is a supplied auxiliary Gibbs marginal, potentially correlated with
+the arbitrary old/reference input. Its bad seed probability d gives complete
+unhalved trace error at most `g(d)=d+sqrt(d(4-3d))`, using the unconditioned
+old/reference marginal. A product joint input instead permits `2d`. This
+distinction comes from prior correlated-marginal machinery and is essential.
+
+| Contract | Exact-product preparation P | Interacting preparation I |
+|---|---|---|
+| Auxiliary operator | `13Q`, after explicit positive counterterms | `H_aux >= Delta D`, unique seed ground |
+| Supplied inverse temperature | beta=10 | beta=100, Delta=1 |
+| Initial hold | 1 | 0 |
+| Control release | Common cubic, duration 1 | Early cubic 10000 with emitter cancellation held; final emitter cubic 1 |
+| Setup duration s | 2 | 10001 |
+| Additional positive blocks | `2M+10` | `M+10` |
+| Peak combined source-A load | 39.288796602545442 | 23.326419217626794 |
+| Supplied incident slew allowance | 30 | 0.001 |
+| Complete unhalved trace bound on runtime `[T,2T]` | `<0.009665` | `<0.009685` |
+
+For P the full preparation Hamiltonian is exactly `K+chi_p I+13Q`.
+For I it is `K+c_p I+H_aux`; this auxiliary operator is interacting, and
+the thermal bound uses eigenvalue min-max order. It does not assume operator
+monotonicity of the exponential or a free Gibbs law. Both count all M+3
+auxiliary qubits and all many-head sectors. The full thermal comparison is
+propagated before applying the supported seed estimate, so no one-head
+scattering assertion is made about bad thermal components.
+
+Both releases have a supported seed residual `kappa*tau/sqrt(2)` for the
+interval during which emitter cancellation is removed. The staged construction
+keeps the seed exactly invariant while all other controls are released, even
+over a long finite early interval. That interval still contributes its exact
+phase and old aging. An uncanceled emitter coupling persisting through it
+would require a separate integrated error budget. No cancellation or exact
+control precision is free physical supply.
+
+The qualified I source narrows its early stage to **D>0** whenever nonempty
+controls must be removed with finite slew. Its concrete D=10000 schedule
+satisfies this restriction. The exit map `V_seed` is a scaled isometry with
+Gram `2I` and norm `sqrt(2)`; the source formulas already pay that factor.
+Frozen historical wording and the explicit qualification clarification are
+both preserved. The interface review's historically pending I dependency is
+discharged by its separate subsequent source qualification, not by P's result.
+
+The added old-site loads during either preparation are **3.987514255266680**
+and **2.397277262241192**, beyond the runtime cap two; the unchanged old edge
+has norm three in addition. Cancellation in the summed Hamiltonian does not
+remove any physical block from the incident norm sum. Both alternatives use
+only existing sites and ordinary nearest-neighbor two-qubit or onsite blocks.
+The complete source proofs below retain every individual block, identity
+coefficient, scalar phase and signed quantum-system work formula. They do not
+account for a microscopic cooling device, a controller's energy or a reset cycle.
+
+## What the new proof changes
+
+The earlier sufficient bound is `10^6/kappa^2`. Replacing its time constant
+by one is not a valid substitution: naive fixed-coupling cutoff and absolute
+clock bounds become 0.0016 and 0.00153 at the enlarged coupling. The new proof
+pays endpoint jumps in the cutoff's total variation, keeps time decay on the
+finite contour's vertical edges, and splits the complete real-band Cg/Kloc
+vectors into center and derivative terms. It uses the full closed tail and
+all seven complementary emitter directions, with the within-parity column
+factor. Only scalar auxiliary rational functions and the exact cosine dispersion
+are continued; no installed matrix resonance is assumed.
+
+The actual transmission phase, clockwise density residue, restricted waveform
+normalization and full seed discrepancy remain. The seed discrepancy includes
+possible point spectrum; no absence-of-bound-states claim is needed. The original
+strictly nonzero target residual allowance `1.76e-13` is retained. A fixed
+finite device is not claimed to halt for all future times, and no arbitrary
+accuracy or exact target implementation follows.
+
+The preparation contribution is an explicit full-space realization of existing
+thermal-reference and ready-range removal machinery for this literal emitter.
+No broad literature-priority claim is made. The standard variation, contour,
+spectral ordering, trace-distance and Duhamel tools retain their attribution.
+No new external theorem or empirical prediction is imported.
+
+## Source, evidence and publication boundary
+
+The parent is regular PR9665 at `0e3993770a7a2dd872018f9dd3c76c2d9a624db9`.
+It is unmerged conditional science, with its inherited dependencies and audit
+limits. The complete new source bodies, review reports, actual executions,
+failed routes and qualifications are preserved through the finite source map.
+Historical pending labels and absolute path strings are original provenance;
+the current qualification and execution records determine subsequent status.
+
+The resonance reviewer froze a separate derivation and actual scalar/symbolic
+run before seeing the author's executable/output. The two preparation routes
+were frozen before their mutual mechanism exposure. Subsequent cross-reviews
+are explicitly source-exposed. All use the same selected model and substantial
+inherited source context. These are selective checks, not blind review of every
+dependency, model diversity or retained audit.
+
+Canonical reproduction will execute only the three explicitly transported
+author checking bodies: resonance scalar bounds and the two preparation
+algebra/scalar checks. Their small fixtures corroborate written arguments;
+they do not evolve the huge apparatus, prepare a Gibbs state or supply a
+uniform theorem by numerical sampling. The input map has no historical path
+fallback. A complete transport ledger separates path/cap/report adaptations
+from unchanged scientific statements. Actual prelaunch bindings, failures,
+resource limits and comparisons belong in the separate execution record.
+
+Native positive-block, phase, thermal and controller supply remain open.
+Temporal noise and joint calibration are outside this exact-family claim.
+Complete capture/reset/reuse, practical resources, physical Hamiltonian/energy
+and framework Record identification remain unresolved. Independent retained
+audit and integrated-current-main landing checks remain separate obligations.
+No science merge, main push, audit verdict, physical axiom or editable prompt
+change is part of this milestone.

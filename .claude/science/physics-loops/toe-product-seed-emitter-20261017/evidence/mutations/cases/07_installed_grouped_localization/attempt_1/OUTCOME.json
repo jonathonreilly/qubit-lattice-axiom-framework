@@ -1,0 +1,88 @@
+{
+  "exception_type": "AssertionError",
+  "exception_message": "",
+  "traceback_frames": [
+    {
+      "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/07_installed_grouped_localization/attempt_1/case_harness.py",
+      "lineno": 52,
+      "name": "<module>",
+      "line": "result=function(inputs)"
+    },
+    {
+      "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/07_installed_grouped_localization/attempt_1/executed_helper.py",
+      "lineno": 156,
+      "name": "run_installed_author",
+      "line": "assert Dj < 5 * 10 ** 42 and 2 * Dj ** 2 < Dpacket ** 2"
+    }
+  ],
+  "selected_function_elapsed_seconds": 0.14798045763745904,
+  "actual_process_limits": {
+    "cpu_soft_hard_seconds": [
+      60,
+      60
+    ],
+    "external_wall_cap_seconds": 60,
+    "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+  },
+  "resolved_input_reads": [
+    {
+      "role": "installed_author",
+      "logical_identity": "SOURCE_MANIFEST.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/SOURCE_MANIFEST.json",
+      "sha256": "0811516c109480f61074ce53c837843f636857401f615d8d45ad856b13bb57e7"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/autonomous_emitter_route__ROUTE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/autonomous_emitter_route__ROUTE.md.txt",
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/autonomous_emitter_route__FREEZE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/autonomous_emitter_route__FREEZE.json",
+      "sha256": "f5278acb3899cb2749009031c5cff5fd24f72a05d539aa0f3957c6a500af04db"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md.txt",
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json",
+      "sha256": "6f057d8a580217d29a09d7683462f5b35b71de093e75c8d07a12283cde33593f"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md.txt",
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+    },
+    {
+      "role": "installed_author",
+      "logical_identity": "inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+    }
+  ],
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "loaded_scientific_modules": {
+    "sympy": {
+      "version": "1.14.0",
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+    },
+    "mpmath": {
+      "version": "1.3.0",
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/__init__.py"
+    }
+  }
+}

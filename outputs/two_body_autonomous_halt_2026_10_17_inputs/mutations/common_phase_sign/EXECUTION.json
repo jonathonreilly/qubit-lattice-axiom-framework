@@ -1,0 +1,23 @@
+{
+  "name": "common_phase_sign",
+  "started_utc": "2026-10-17T00:37:29.155039+00:00",
+  "elapsed_seconds": 0.3139738328754902,
+  "exit_code": 1,
+  "wall_cap_seconds": 30,
+  "source": {
+    "bytes": 21516,
+    "sha256": "7330789777a37850f8a57e534f3a6c201081738f24717acfe53a8982d91a8a5d"
+  },
+  "old": "zeta_approx=cneg(cmul(cpow(zi,4),alpha))",
+  "new": "zeta_approx=cmul(cpow(zi,4),alpha)",
+  "expected_scientific_assertion": "assert cmul(r0_abs,zeta_approx)==cmul(cpow(zi,2),alpha)",
+  "scientific_assertion_rejected": true,
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 351,
+    "sha256": "b582894d403250030f7730967e26250a37f0792ab30da162a3337ea750cf94b1"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "scope": "Author composition; not blind or independent review",
+  "complete_current_task_reads": [
+    "inputs/family.md",
+    "inputs/family_acceptance.json",
+    "inputs/family_qualification.md",
+    "inputs/fixed.md",
+    "inputs/fixed_review.md",
+    "inputs/fixed_acceptance.json",
+    "inputs/fixed_qualification.md"
+  ],
+  "previous_complete_reads_reused_by_unchanged_pins": [
+    "inputs/installed.md",
+    "inputs/installed_acceptance.json",
+    "inputs/installed_qualification.md",
+    "inputs/weighted.md",
+    "inputs/weighted_acceptance.json",
+    "inputs/weighted_qualification.md",
+    "inputs/moment.md",
+    "inputs/moment_acceptance.json",
+    "inputs/moment_qualification.md",
+    "inputs/generic_v2.md",
+    "inputs/route.md",
+    "inputs/interval.md",
+    "inputs/interval.json",
+    "inputs/SCIENCE_WORKFLOW.md"
+  ],
+  "affected_interfaces_refreshed": "Family complete mass/Gram seed overlap, actual common phase, full emitter complement, real-band Cg/Kloc regularity, prepared-sector radius/distance and loads. Fixed-profile real-band comparison, finite contour, density, complete normalization, scalar and old aging. Exact interval center parameters and phase convention.",
+  "new_program_readout": "Complete new source and full scientific stdout, wrapper stdout and empty stderr streams inspected. No source checker replayed or imported.",
+  "prior_exposure": "Author of fixed-resonance and position-moment arguments; prior source-exposed generic/weighted/interval/emitter checks and family publication transport work. Root suggested directional cutoff estimates, retaining contour-edge decay and a Cg/Kloc split before this task.",
+  "limits": "Inherited accepted premises are not independently re-proved here. No fresh external literature search, formal proof assistant or independent whole-dependency-graph validation. Read-only guessed-directory lookup failure is preserved descriptively in FAILURES.md. Same inherited model and effort, no delegation.",
+  "editable_prompt_files_changed": []
+}

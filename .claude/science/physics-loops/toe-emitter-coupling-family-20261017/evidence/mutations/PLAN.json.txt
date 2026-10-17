@@ -1,0 +1,124 @@
+{
+  "planned_utc": "2026-10-17T03:34:01.399356+00:00",
+  "base": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/emitter_coupling_family_2026_10_17.py",
+    "bytes": 24786,
+    "sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba"
+  },
+  "cases": [
+    {
+      "label": "mass",
+      "scientific_edit": {
+        "old": "mass_loss=(phase_deficit+integral_deficit)/3+eta_inner*eta_inner",
+        "new": "mass_loss=(phase_deficit+integral_deficit)/3+eta_inner*eta_inner+F(1,1000)"
+      },
+      "expected_assertion": "new_reference_mass_loss",
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/mass/mutated.py",
+        "bytes": 24957,
+        "sha256": "65edc6f4bf0f537d4620ba6267ca07d6cfef71605af76f4d05f2d810b1f7fee3"
+      },
+      "transport_only_edits": [
+        "Read canonical inputs from fixed W path",
+        "Write any unexpected result only inside this case"
+      ]
+    },
+    {
+      "label": "seed",
+      "scientific_edit": {
+        "old": "seed_sq=2*(mass_ceiling+eta_p+off)",
+        "new": "seed_sq=2*(mass_ceiling+eta_p+off)+F(1,1000)"
+      },
+      "expected_assertion": "complete_seed_overlap_squared",
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/seed/mutated.py",
+        "bytes": 24957,
+        "sha256": "7414984e02fabe362c04cf62294e4b22fae5d261e9b43809a01d4c374af24612"
+      },
+      "transport_only_edits": [
+        "Read canonical inputs from fixed W path",
+        "Write any unexpected result only inside this case"
+      ]
+    },
+    {
+      "label": "outgoing_moment",
+      "scientific_edit": {
+        "old": "frho2_scaled=f2_scaled+(2+2880*F(4,25))*hi*hi+640*d*F(7,1000)",
+        "new": "frho2_scaled=f2_scaled+(2+2880*F(4,25))*hi*hi+640*d*F(7,1000)+1"
+      },
+      "expected_assertion": "actual_f_rho_L2_derivative_scaled",
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/outgoing_moment/mutated.py",
+        "bytes": 24960,
+        "sha256": "4fc01e0f5950d9bc5178404adf4fe460a2a9e416243816af74b1b7befdc50df2"
+      },
+      "transport_only_edits": [
+        "Read canonical inputs from fixed W path",
+        "Write any unexpected result only inside this case"
+      ]
+    },
+    {
+      "label": "onset",
+      "scientific_edit": {
+        "old": "time_scale=F(10**6)",
+        "new": "time_scale=F(10**2)"
+      },
+      "expected_assertion": "infinite_complete_error",
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/onset/mutated.py",
+        "bytes": 24948,
+        "sha256": "69100a8396dadf81198b2fbb614759fa547a93c8a6871f85e5dcf97534e7574e"
+      },
+      "transport_only_edits": [
+        "Read canonical inputs from fixed W path",
+        "Write any unexpected result only inside this case"
+      ]
+    },
+    {
+      "label": "finite_buffer",
+      "scientific_edit": {
+        "old": "M_hi=50*T_hi",
+        "new": "M_hi=40*T_hi"
+      },
+      "expected_assertion": "finite_clock_distance_margin_at_smallest_clock",
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/finite_buffer/mutated.py",
+        "bytes": 24956,
+        "sha256": "566de0a097d099b102c636a3fa8adcfd834be9aa7dac4b12092b6a0da5b42a58"
+      },
+      "transport_only_edits": [
+        "Read canonical inputs from fixed W path",
+        "Write any unexpected result only inside this case"
+      ]
+    },
+    {
+      "label": "arctan_sign",
+      "scientific_edit": {
+        "old": "eq('arctan_density_identity',sp.cancel(theta_prime+x*yp/(x*x+y*y)-xp0*y/(x*x+y*y)),0)",
+        "new": "eq('arctan_density_identity',sp.cancel(theta_prime-x*yp/(x*x+y*y)-xp0*y/(x*x+y*y)),0)"
+      },
+      "expected_assertion": "arctan_density_identity",
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/arctan_sign/mutated.py",
+        "bytes": 24954,
+        "sha256": "06f29381ae3b483ab2b0b318d3ff1f9a43a15e3e5567d52c10fbe6c7374d259e"
+      },
+      "transport_only_edits": [
+        "Read canonical inputs from fixed W path",
+        "Write any unexpected result only inside this case"
+      ]
+    }
+  ],
+  "CPU_soft_hard_seconds": [
+    20,
+    20
+  ],
+  "wall_cap_seconds_each": 30,
+  "total_case_count": 6,
+  "scope": "Fault sensitivity of six distinct scalar/formula/budget obligations, not theorem independence or coverage of every premise. Original comparison thresholds are unchanged.",
+  "launcher": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/run_mutations.py",
+    "bytes": 6112,
+    "sha256": "190f6e33529d1dfa7356a6e8888151803107e62fbf2a54e20676688df1f7875f"
+  }
+}

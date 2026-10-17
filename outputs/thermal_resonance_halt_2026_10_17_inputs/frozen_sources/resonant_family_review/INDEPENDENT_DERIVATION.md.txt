@@ -1,0 +1,295 @@
+# Derivation recorded before author-program or output exposure
+
+Target bytes are `401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0`
+for the 37,370-byte candidate, with freeze
+`8cdf10121e4c42247d4aba730a48413817a62b9ada420adfc6bc70df7df64879`.
+This note is source-exposed: I read the complete new argument and the stated
+dependency interfaces, but not the new author's program, scalar input file,
+launcher or outputs before writing this derivation and my program. The note
+will be frozen with my actual run before that exposure. I have extensive prior
+authorship/review exposure to the installed emitter, generic bridge, interval,
+fixed-resonance and coupling-family work, under the same model/effort. Root's
+suggested finite-contour and center/derivative split were known proposals.
+There is no blind or full-dependency independence claim.
+
+The controlling family is exact nominal ladder, L=12, sigma=10^-6 and
+10^-12 <= kappa <= 10^-8. All parameters other than this fixed apparatus's
+kappa are exact. T=kappa^-2 is to be tested. Nothing is composed with a
+calibration or ladder perturbation box. Bounds below concern complete vectors,
+not reduced logical states.
+
+## 1. Accepted unchanged interfaces and their use
+
+The separately qualified family supplies actual one-channel stationary
+columns, the complementary seven internal directions, all closed clock
+tails, and the exact scattering isometry. The quantitative inputs are
+v=1/40<E', |E''|<=2J, 2J/v<5/2; v<v0<.03; b0=|gminus(k0)|>3/2;
+|gminus'|<=26, |Sigma_f'|<=560 and Im Df>=19 kappa^2.
+The actual common f=chi conj(yref)/(sqrt(2pi)N), yref=kappa conj(gminus)/Df,
+has norm one; .99<N<=1, Aref=integral |f yref|/sqrt(2pi) in [N,1].
+The qualified inner-band mass bound is 1-N^2<=3.5e-7. It replaces a
+fixed-coupling variance estimate that fails at the upper coupling endpoint.
+
+The exact isometry Gamma_t satisfies
+exp(-it Htilde) Gamma_0 = Gamma_t exp(-it Db), and
+||Eseed-Gamma_0||<.003. The common reflection approximation is
+max_j |Raug,j-zeta omega_j rho|<.000714. These are reused, not rederived by
+the new scalar check. They retain the nonzero central witness residual
+<1.76e-13, actual rho, and the seven-dimensional emitter complement.
+Specifically the integrated emitter remainder per column is <4 sigma+1e-14.
+For the complete real-band clock Hilbert vectors,
+Cclock,j=Cg,j+kappa Kloc,j y_j, with Cg bounds 31 and 2700 for value and
+derivative, and Kloc bounds 20000 and 10^6. These are full tails, not contact
+matrix bounds. Each parity has two old-energy columns; a column ceiling C
+gives operator ceiling sqrt(2) C <1.5 C. Distinct parities are orthogonal.
+
+I refreshed these exact interfaces in the frozen family note, including its
+full-tail geometric-series derivative formula and normalization by the past
+limit rather than completeness. The fixed-resonance and family qualification
+notes were read. Their scope and exposure limits are retained. All 21 source
+snapshot/original identities are checked by the local capture script. The
+new argument does not get blanket acceptance from these qualifications.
+
+## 2. Opposite-pole signs and real-band comparison
+
+Write Df=x+i y, where y=kappa^2(a^2+b^2)/(2 E')>0. Then
+1-i kappa^2 b^2/(E'Df)-conj(Df)/Df=i kappa^2 a^2/(E'Df).
+Thus the normalized transmission phase tau is within 4 eta^2 of
+conj(Df)/Df. This must be the reciprocal of Df/conj(Df).
+The incoming f contains conj(Df) and its pole is above the real axis;
+f rho contains Df and its pole is below. The scalar r0=-exp(2ik)
+must also be retained. There is one common zeta=-exp(-4ik0)alpha;
+no old-column phase adjustment is allowed.
+
+Let q=k-k0; Gamma=-kappa^2 Im Sigma0,
+c=kappa^2 Re Sigma0/v0, gamma=Gamma/v0,
+D0=v0(q-c+i gamma), D0sharp=v0(q-c-i gamma),
+C0=kappa gminus(k0)/(sqrt(2pi)N).
+Then gamma>1250 kappa^2, v gamma>31.25 kappa^2>30 kappa^2,
+|c|,gamma<3200 kappa^2<sigma/4 and |C0|<=kappa.
+Define h_in=C0/D0sharp and h_out=r0(k0) C0/D0, only as real-band
+comparison functions (with scalar rational continuations for contour use).
+Their full-real-line squared L2 norms are exactly 1/N^2, since
+gamma=kappa^2 b0^2/(2v0^2).
+
+The following denominator estimate is uniform, without numerical poles:
+|q|/|D0| <= (1+|c|/gamma)/v0
+<= (1+2/b0)/v0 <100.
+The Taylor error obeys |Df-D0|<=J q^2+560 kappa^2 |q|.
+Hence relative error <=100(J sigma+560 kappa_+^2)<eps=4 sigma.
+The numerator relative changes are <18 sigma for gminus, and <20 sigma
+for r0 gminus, using |r0'|=2, b0>1.5 and |gminus'|<=26.
+Consequently, with rin=22 sigma/(1-4 sigma) and rout=24 sigma/(1-4 sigma),
+||f-chi h_in||2<=rin/N<30 sigma and
+||f rho-chi h_out||2<=rout/N+4 eta^2<30 sigma.
+The analogous pointwise/L1 error is also available. Retaining chi here is
+essential; paying the full cutoff loss as a fixed L2 error would be too large.
+
+## 3. Independent bounded-variation treatment of the cutoff
+
+Set w=(1-chi)h on I and zero outside. Its support has sigma/2<=|q|<=sigma.
+Since |c|<sigma/4, |q-c|>=|q|/2, so
+|h|<=2 kappa/(v|q|), |h'|<=4 kappa/(v q^2).
+The two outer intervals yield ||w||1<=4 kappa/v, using log 2<1.
+As a measure on the whole real line, the derivative of w contains both
+outer endpoint atoms. The absolute contributions to its total variation are
+bounded respectively by 8, 8 and 4 times kappa/(v sigma): derivative of chi,
+ordinary derivative of h, and the two endpoint atoms. Thus TV(w)<=20 kappa/(v sigma).
+The inner cutoff joins are continuous and produce no additional atoms.
+
+For a wrong-direction coefficient, write the phase as theta=-mk-tE(k), m>=0.
+Then |theta'|>=m+vt and |theta''|<=2Jt. Stieltjes integration by parts on the
+zero-extended BV function gives
+|integral w e^{i theta}| <= TV(w)/(m+vt)
+ +2Jt ||w||1/(m+vt)^2
+ <=[TV(w)+(2J/v)||w||1]/(m+vt).
+This derivation includes endpoint jumps automatically. At vt>=1,
+sum_(m>=0)(m+vt)^-2 <=(vt)^-2+(vt)^-1<=2/(vt).
+With Fourier normalization, the wrong half-line norm is <Dcut/sqrt(vt),
+where Dcut=(kappa/v)(20/sigma+10). The coefficient at m=0 alone is
+<Dcut/(2vt), since sqrt(2pi)>2. Treating only w's interior derivative would
+be invalid: the constant function on [0,pi] has zero interior derivative
+but integral exp(-ik) dk=-2i. This is an explicit failure discriminator.
+
+## 4. Rectangle estimates derived with the edge exponential retained
+
+Use the finite rectangle k=x-iy, x in I, 0<=y<=sigma. Its clockwise boundary
+has lower edges appropriate to both wrong directions. The exact cosine
+dispersion satisfies Im E(x-iy)=-2J sin(x) sinh(y)<=-vy. For the incoming
+n>=0, and the outgoing n=-m<0, the spatial factor is exp(-my).
+At y>0 its l2 norm is at most y^-1/2, since
+1-exp(-2y)>=y for 0<y<=sigma. For a rigorous endpoint y=0, apply Minkowski
+to finite coordinate sums first, then monotone convergence. The integrable
+y^-1/2 bound controls the limit; the non-l2 vector at y=0 is never taken as
+an l2 integrand value.
+
+On either vertical edge |D0| and |D0sharp| exceed v sigma/2. Including
+1/sqrt(2pi)<1/2, each edge is bounded by
+kappa/(v sigma) integral_0^sigma y^-1/2 exp(-vty)dy
+<2 kappa/(v sigma sqrt(vt)). The gamma-integral uses sqrt(pi)<2.
+This is the decisive gain over the fixed-coupling proof. The bottom edge
+is bounded by kappa/(v sqrt(sigma)) exp(-v sigma t) for h_in and twice that
+for h_out: at depth sigma the upper pole is farther away, whereas for the
+lower pole |sigma-gamma|>sigma/2.
+
+The incoming pole is outside the rectangle. The outgoing pole is
+kp=k0+c-i gamma, inside. Its clockwise contribution is
+-i sqrt(2pi) r0(k0) C0/v0 times exp(-ikp m-itE(kp)). The negative half-line
+starts at m=1. Its geometric norm is at most
+sqrt(2pi)|C0|/[v0 sqrt(2gamma)]=1/N,
+because sum_(m>=1)exp(-2gamma m)<=1/(2gamma).
+The temporal factor is <=exp(-v gamma t)<exp(-30 kappa^2 t).
+A common convenient residue bound is P(t)=2 exp(-30 kappa^2 t).
+There is no analytic continuation of an actual installed matrix or its poles.
+
+Combining the BV piece and the real-band L2 differences gives
+qin<=30 sigma+[Dcut+4kappa/(v sigma)]/sqrt(vt)
+                  +kappa/(v^2 sigma sqrt(sigma)t),
+qout<=30 sigma+[Dcut+4kappa/(v sigma)]/sqrt(vt)
+                  +2kappa/(v^2 sigma sqrt(sigma)t)+P(t).
+The bottom bound uses exp(-x)<=1/x, not an affine approximation to E.
+At t>=kappa^-2, all variable terms decrease. With s=3/20<sqrt(v),
+H=kappa_+^2(24/sigma+10)/(v s),
+B=kappa_+^3/(v^2 sigma sqrt(sigma)), P=2(3/8)^30,
+qin<=30 sigma+H+B, qout<=30 sigma+H+2B+P.
+These are increasing positive majorants in kappa, so endpoint evaluation
+is a proof of a uniform bound, not a sample grid. The exponential rational
+bound follows from e>8/3. The intended exact arithmetic checks these budgets.
+
+## 5. Density and all seven emitter coordinates
+
+The common emitter coefficient is Ae=integral_I p(k) exp(-itE(k))dk,
+p=chi kappa^2 b^2/(2pi N |Df|^2). On the real line the comparison density is
+p0=gamma/[pi N((q-c)^2+gamma^2)], with mass 1/N.
+The relative error to chi p0 is bounded by
+(2rn+rn^2+2eps+eps^2)/(1-eps)^2<45 sigma, rn=18 sigma.
+The omitted cutoff mass on I is <=16 kappa^2/(v^2 sigma): numerator
+kappa^2 and |q-c|>=|q|/2 suffice, even without using 1-chi<1.
+Thus integral_I |p-p0| <45 sigma/.99+16 kappa_+^2/(v^2 sigma)<50 sigma.
+This comparison is between real densities on I, not between complete
+normalized states, and requires no spectral completeness assumption.
+
+Both denominators on each vertical edge have real part of magnitude
+>=v sigma/2, giving combined edge bound <=8 kappa^2/(v^3 sigma^2 t).
+On the bottom the two distances are >=v sigma and v sigma/2. Its bound
+after exp(-x)<=1/x is <=4 kappa^2/(v^3 sigma^2 t).
+The partial-fraction identity is
+p0=(1/(2pi i N))[1/(q-c-i gamma)-1/(q-c+i gamma)].
+The lower-pole residue is -1/(2pi i N); clockwise orientation yields
++exp(-itE(kp))/N. This sign is independently checked symbolically.
+Hence |Ae|<50 sigma+P(t)+12 kappa^2/(v^3 sigma^2 t), and at onset
+A=50 sigma+P+12 kappa_+^4/(v^3 sigma^2) is a uniform ceiling.
+
+For the full emitter operator, the Ae u_j columns are orthonormal. The
+seven-coordinate remainders may align within a parity. Therefore the emitter
+norm is at most |Ae|+1.5(4 sigma+1e-14), not merely |Ae|. The inherited
+integrated error bound already contains the full complement; no coordinate
+is dropped at the new onset.
+
+## 6. Real-band clock decomposition checked independently
+
+The scalar Sf=(1/sqrt(2pi)) integral f exp(-itE) must be bounded more sharply
+than the l2 wrong-half-line norm. Let H0=integral_I |h_in|.
+Changing variable x=v0q-kappa^2 ReSigma0, the shifted interval lies within
+[-Bstar,Bstar], Bstar=4e-8. The rational denominator gives
+H0 <=(2kappa/v) asinh(Bstar/Gamma)
+ <=(2kappa/v)log(1+2Bstar/(19kappa^2))<3200 kappa.
+The worst logarithm is at kappa_-=1e-12; its argument is below (8/3)^40.
+One must not infer F0<=H0/(1-eps) by omitting gminus's varying numerator.
+Instead, using |C0|<=kappa in the H0 calculation proves a common integral
+majorant; the actual numerator |kappa gminus/(sqrt(2pi)N)|<=kappa also holds
+throughout I. Applying |f|<=kappa/|Df| and the relative denominator estimate
+to that same majorant proves F0<3200 kappa/(1-eps)<4000 kappa directly.
+The candidate explicitly takes this valid direct route after (38).
+
+At n=0 the incoming rational contour has no residue. Its two edges and
+bottom total <=3kappa/(v^2 sigma t). The cutoff's scalar cost is
+Dcut/(2vt); the actual-profile L1 difference is <=rin H0/2.
+Consequently |Sf|<=1600 kappa rin+kappa(13/sigma+5)/(v^2t).
+At onset its increasing majorant is
+S=1600 kappa_+ rin+kappa_+^3(13/sigma+5)/v^2.
+
+Now write Cg(k)=Cg(k0)+[Cg(k)-Cg(k0)] and the analogous identity for Kloc,
+only on the real band in the full clock Hilbert space. The fundamental
+theorem for Hilbert-valued C1 maps gives respective changes <=2700|q| and
+10^6|q|. The five per-column terms are therefore bounded by
+31 S +2700 sigma (F0/sqrt(2pi))
+ +kappa 20000 |Ae| +kappa 10^6 sigma Aref
+ +kappa 20000 integral |f| ||delta y_j||/sqrt(2pi).
+Using F0/sqrt(2pi)<2000 kappa and Aref<=1 gives
+Clock_col <=31 S+2700 sigma(2000 kappa_+)
+ +kappa_+ 20000(A+4 sigma+1e-14)+kappa_+ 10^6 sigma.
+Both old-energy clock columns may coincide, so Clock_op<=1.5 Clock_col.
+The total localized norm is <=A+1.5(4 sigma+1e-14)+Clock_op.
+The full-tail Kloc derivative is essential. A derivative bound only on the
+finite interaction matrix would not suffice. This step neither presumes
+K commutes with the installed Hamiltonian nor analytically continues Cg/Kloc.
+
+## 7. Comparator, point spectrum and complete operator error
+
+Extend f rho by zero on the momentum circle. Fourier Plancherel gives a
+unit full-line outgoing vector; its excluded negative half has norm delta
+<=qout. Its retained half b has norm sqrt(1-delta^2)>0. With beta=b/||b||,
+the *retained-vector* normalization cost is
+||b-beta||=1-sqrt(1-delta^2)<=delta for 0<=delta<=1.
+It is not the distance between the full vector and beta embedded by zero.
+
+Propagating Eseed-Gamma0 costs .003 once and includes possible point spectrum
+or other components outside this packet range. Exact packet intertwining
+keeps exp(-itDb) on the input side. Incoming and outgoing vacuum columns
+have orthogonal old internal vectors, so each uses its scalar maximum; the
+localized column factors were already paid. The complete estimate is
+.003+.000714+qin+qout+Loc. The same formula holds after tensoring any passive
+reference. Its comparator is exactly
+zeta exp[-i(nu+2kappa)t] beta_(kappa,t) tensor iota exp(-itK)W,
+with the actual common f_kappa and rho_kappa for each apparatus. There is
+no extra exp(-itE0), no per-column phase, and no fixed nominal waveform
+claim across kappa. Source/emitter/clock outputs are retained.
+
+All polynomial and exponential time terms above decrease after onset; the
+small real-band comparison floors are fixed and included. Thus the intended
+infinite result really is all t>=kappa^-2 if the exact sum fits. It is not
+deduced merely on [T,2T] and extrapolated. The finite result is separate.
+
+## 8. Exact finite clock and physical resources
+
+The prepared-sector radius 19 is unchanged and uniform; the scalar only
+shifts its center. With M sites indexed 0,...,M-1 and the real endpoint
+positive diagonal retained, the shortest path from seed e to omitted c_M
+has one e-to-c_(L+2) hop followed by M-(L+2) clock hops. Its length is
+M-L-1=M-13. No internal onsite mixing shortens it. Polynomial evolutions
+agree through degree d-1. The inherited bound is
+4 exp[-d+19t sinh(1)]/(1-exp(-1)).
+For M=ceil(50T), t<=2T, sinh1<6/5,
+d-19(2T)(6/5)-9 >=(22/5)T-22.
+Its least value at T=10^16 is 43999999999999978>0. Therefore the finite
+correction is below (32/5)(3/8)^9=19683/20971520<.001. It is only for
+[T,2T]; the comparator remains the normalized infinite packet in the common
+comparison space, with no independent renormalization of a finite truncation.
+
+The positive contact term has eigenvalues 0,0,2kappa,2kappa. Its diagonal
+reserves, (E0-2kappa)n_e and kappa(I-n_L)+kappa(I-n_(L+2)), are positive
+because E0>2kappa_+. Their sum adds exactly 2kappa I to the stated effective
+Hamiltonian. The seed mean is K+(E0+nu+2kappa)I and variance Var(K)+2kappa^2.
+There are M clock qubits, one emitter, two old and two source: M+5. At
+kappa_+, T=10^16 and M=5*10^17. Only the added old-site cap two applies;
+source/clock loads are not all capped by two. Exact phase, clean vacuum and
+product excited emitter are supplied resources, not native generation.
+
+## 9. Planned decisive calculation and limits
+
+My separate program will reconstruct the rational majorants from these
+component terms; it will not import the author's code or expected rational
+total. It will use exact fractions for all strict ceilings, a scalar symbolic
+phase identity and residue signs, and a two-column example showing the cost
+of aligned localized columns. It will also check the endpoint countercase,
+the correct retained normalization inequality, positive coefficient
+monotonicity, the minimum integer/path margin and the original failed
+fixed-coupling shortcuts. No sampling or dynamics is planned. Execution
+will obey RESOURCE_PLAN.json and a genuinely fsynced prelaunch binding.
+
+At this stage I find no mathematical obstruction in the new decomposition.
+That is provisional pending the exact arithmetic, author-execution comparison
+and final source validation. Any failed attempt or disagreement will be
+preserved. The earlier read-only lookup confirming this review directory did
+not yet exist returned exit 1; it was not a scientific run or lost result.

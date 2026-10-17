@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-10-17T03:12:35.830328+00:00",
+  "purpose": "Bookkeeping only; no author or reviewer scientific source executed or imported.",
+  "snapshot_manifests": [
+    {
+      "manifest": "INITIAL_SOURCE_MANIFEST.json",
+      "count": 11,
+      "all_original_and_snapshot_bytes_match": true
+    },
+    {
+      "manifest": "AUTHOR_SOURCE_MANIFEST.json",
+      "count": 45,
+      "all_original_and_snapshot_bytes_match": true
+    }
+  ],
+  "author_manifest_validation": {
+    "file_entries": 43,
+    "source_snapshot_entries": 23,
+    "absolute_original_pairs_rechecked": 5,
+    "repository_commit_fields": "Preserved as supplied metadata; no Git query or current-head verification."
+  },
+  "author_run": {
+    "bindings": 31,
+    "source_or_input_bindings": 28,
+    "runtime_bindings": 3,
+    "all_hashes_and_sizes_match_now": true,
+    "all_recorded_historical_generation_postchecks_true": true,
+    "current_original_generations_equal_prelaunch": true,
+    "current_original_generation_equal_count": 31,
+    "chronology_valid": true,
+    "executed_source_equals_declared_source": true,
+    "scientific_assertion_rows": 103,
+    "actual_science_runs": 1,
+    "program_replayed_by_reviewer": false,
+    "receipt": {
+      "sha256": "f7810c5746c5428ce601d4bb4b062807fe3ffb87590ed7d71a466a92900eb636",
+      "bytes": 8942
+    },
+    "prelaunch": {
+      "sha256": "273a7c055fd04b6a630280ea79ddd1bc0b0945cc636c407c6ab9db9d9f14f83c",
+      "bytes": 17025
+    },
+    "stdout": {
+      "sha256": "14125e34295e570e4338d0718ab35efb261edd2e151984fa61f18ae49712072c",
+      "bytes": 41223
+    },
+    "runtime_limit": "Interpreter binary, SymPy entry and distribution metadata pinned; not every transitive installed-library byte. Thread requests are recorded, actual thread counts are not measured."
+  },
+  "reviewer_runs": [
+    {
+      "run": "stage1_run01",
+      "input_count": 17,
+      "runtime_count": 3,
+      "all_current_bindings_valid": true,
+      "chronology_valid": true,
+      "prelaunch": {
+        "sha256": "6e9fc2ea3e1f7b8fedd6c5e80b65cf58b86a4608841a444cbdcaca235a4a7d8f",
+        "bytes": 5183
+      },
+      "receipt": {
+        "sha256": "2ef694eb9d5ed15650ef80ff41bf21cb005d7b82f5125a6600d53e75c4b7287d",
+        "bytes": 3060
+      },
+      "stdout": {
+        "sha256": "8b06ff48bd3a87f98ccfd96a01b5d4a87a8af9aeb56fe1e870cbfeea23e6d598",
+        "bytes": 6406
+      }
+    },
+    {
+      "run": "stage2_run01",
+      "input_count": 73,
+      "runtime_count": 3,
+      "all_current_bindings_valid": true,
+      "chronology_valid": true,
+      "prelaunch": {
+        "sha256": "504f433e4abeb19a4714f2c2e9929de6804eba34d522b50fa408df81be43bd32",
+        "bytes": 14772
+      },
+      "receipt": {
+        "sha256": "b4a112510143b9adb51f53102a4e0c9b69cddf35a97d9b3a4c28ee8edb67493b",
+        "bytes": 7974
+      },
+      "stdout": {
+        "sha256": "9dcd54dab486d2889da865ed6f117f98aa5e27e0e84690ae21be0fd65c6c5b45",
+        "bytes": 9592
+      }
+    }
+  ],
+  "preexposure_sequence_bound": true,
+  "stage1_frozen_entries_revalidated": 23,
+  "result": "All declared identity, snapshot, historical-receipt, present-byte and chronology checks passed."
+}

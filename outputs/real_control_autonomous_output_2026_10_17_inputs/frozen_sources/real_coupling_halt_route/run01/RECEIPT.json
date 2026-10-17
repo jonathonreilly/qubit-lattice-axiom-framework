@@ -1,0 +1,495 @@
+{
+  "status": "completed",
+  "prelaunch_fsync_completed_utc": "2026-10-17T04:20:43.022554+00:00",
+  "subprocess_created_after_utc": "2026-10-17T04:20:43.022700+00:00",
+  "finished_utc": "2026-10-17T04:20:43.106334+00:00",
+  "command": [
+    "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/run01/executed_source.py",
+    "--packet-root",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route",
+    "--prelaunch",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/run01/PRELAUNCH.json"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "wrapper_wall_seconds": 0.08358712494373322,
+  "child_user_cpu_seconds": 0.033349,
+  "child_system_cpu_seconds": 0.011493999999999999,
+  "child_peak_rss_raw": 22921216,
+  "child_peak_rss_units": "bytes on Darwin; KiB on Linux",
+  "cpu_soft_hard_seconds": [
+    20,
+    20
+  ],
+  "external_wall_seconds": 30,
+  "prelaunch_identity": {
+    "sha256": "36e0d3ece73b96d92ca631447ddd5207ac0ab438935dee8c598e90801a450274",
+    "bytes": 11419,
+    "device": 16777231,
+    "inode": 518533172,
+    "mtime_ns": 1792210843022409667
+  },
+  "prelaunch_unchanged": true,
+  "bindings_after": [
+    {
+      "label": "checker",
+      "identity": {
+        "sha256": "7c0df32b052778776b05c41e0f6674898fa3c5749c98e46c415cffaa85907fc0",
+        "bytes": 10953,
+        "device": 16777231,
+        "inode": 518533109,
+        "mtime_ns": 1792210796321312202
+      },
+      "unchanged": true
+    },
+    {
+      "label": "executed_copy",
+      "identity": {
+        "sha256": "7c0df32b052778776b05c41e0f6674898fa3c5749c98e46c415cffaa85907fc0",
+        "bytes": 10953,
+        "device": 16777231,
+        "inode": 518533171,
+        "mtime_ns": 1792210842947539562
+      },
+      "unchanged": true
+    },
+    {
+      "label": "launcher",
+      "identity": {
+        "sha256": "46c89bc4707cf3d8a0deac0a63976330c7efc1087dc3981e2b922612462b48da",
+        "bytes": 5507,
+        "device": 16777231,
+        "inode": 518533169,
+        "mtime_ns": 1792210842627453713
+      },
+      "unchanged": true
+    },
+    {
+      "label": "resource_plan",
+      "identity": {
+        "sha256": "b774d6fa0678c00111717654d56edae469599c86a1793e018deafdd86d480d63",
+        "bytes": 1533,
+        "device": 16777231,
+        "inode": 518532970,
+        "mtime_ns": 1792210718801666706
+      },
+      "unchanged": true
+    },
+    {
+      "label": "original_plan",
+      "identity": {
+        "sha256": "45fae2702bfae4556b706df67447735492b4945f6737a74431c4c0363974e630",
+        "bytes": 2344,
+        "device": 16777231,
+        "inode": 518531757,
+        "mtime_ns": 1792210043752224863
+      },
+      "unchanged": true
+    },
+    {
+      "label": "scalar_inputs",
+      "identity": {
+        "sha256": "9249fd95d793dcb2c2ba6e89517576fb3418d3ece965233a11c810bec6c1668d",
+        "bytes": 670,
+        "device": 16777231,
+        "inode": 518532971,
+        "mtime_ns": 1792210718801823165
+      },
+      "unchanged": true
+    },
+    {
+      "label": "source_manifest",
+      "identity": {
+        "sha256": "717b918b6b67b736daaddf9f51bde2182ff6013b3a925395744a5881a2b1149a",
+        "bytes": 8399,
+        "device": 16777231,
+        "inode": 518532996,
+        "mtime_ns": 1792210722457969775
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot_preparer",
+      "identity": {
+        "sha256": "7196e54b4753abb45afe5615d9f330d2a407e0795c6400f2e721e58e5ef32e7d",
+        "bytes": 4433,
+        "device": 16777231,
+        "inode": 518532972,
+        "mtime_ns": 1792210718801996625
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/family.md",
+      "identity": {
+        "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+        "bytes": 39464,
+        "device": 16777231,
+        "inode": 518532980,
+        "mtime_ns": 1792210722451109115
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/family_qualification.md",
+      "identity": {
+        "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814",
+        "bytes": 2896,
+        "device": 16777231,
+        "inode": 518532981,
+        "mtime_ns": 1792210722451542784
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/family_acceptance.json",
+      "identity": {
+        "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325",
+        "bytes": 10085,
+        "device": 16777231,
+        "inode": 518532982,
+        "mtime_ns": 1792210722452105787
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/local_emitter.md",
+      "identity": {
+        "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1",
+        "bytes": 27328,
+        "device": 16777231,
+        "inode": 518532983,
+        "mtime_ns": 1792210722452590915
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/installed.md",
+      "identity": {
+        "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee",
+        "bytes": 30796,
+        "device": 16777231,
+        "inode": 518532984,
+        "mtime_ns": 1792210722453002125
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/generic_v2.md",
+      "identity": {
+        "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+        "bytes": 27028,
+        "device": 16777231,
+        "inode": 518532985,
+        "mtime_ns": 1792210722453315043
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/moment.md",
+      "identity": {
+        "sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f",
+        "bytes": 31244,
+        "device": 16777231,
+        "inode": 518532986,
+        "mtime_ns": 1792210722453952255
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/interval.md",
+      "identity": {
+        "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+        "bytes": 23457,
+        "device": 16777231,
+        "inode": 518532987,
+        "mtime_ns": 1792210722454201298
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/reflection_v2.md",
+      "identity": {
+        "sha256": "694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36",
+        "bytes": 13239,
+        "device": 16777231,
+        "inode": 518532988,
+        "mtime_ns": 1792210722454774176
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/reflection_finite.md",
+      "identity": {
+        "sha256": "ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f",
+        "bytes": 4856,
+        "device": 16777231,
+        "inode": 518532989,
+        "mtime_ns": 1792210722455107927
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/family_wrapper.md",
+      "identity": {
+        "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87",
+        "bytes": 50396,
+        "device": 16777231,
+        "inode": 518532990,
+        "mtime_ns": 1792210722455466137
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/reflection_wrapper.md",
+      "identity": {
+        "sha256": "38549d1ad11b2978786f3e21e809d4958b9911b1958916016ba9c29d89c30c11",
+        "bytes": 32779,
+        "device": 16777231,
+        "inode": 518532991,
+        "mtime_ns": 1792210722455902556
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/workflow.md",
+      "identity": {
+        "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+        "bytes": 11788,
+        "device": 16777231,
+        "inode": 518532992,
+        "mtime_ns": 1792210722456174683
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/no_go_discipline.md",
+      "identity": {
+        "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+        "bytes": 16941,
+        "device": 16777231,
+        "inode": 518532993,
+        "mtime_ns": 1792210722456829519
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/primitive_registry.json",
+      "identity": {
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+        "bytes": 6416,
+        "device": 16777231,
+        "inode": 518532994,
+        "mtime_ns": 1792210722457150396
+      },
+      "unchanged": true
+    },
+    {
+      "label": "snapshot:inputs/realized_state_primitive.md",
+      "identity": {
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+        "bytes": 5313,
+        "device": 16777231,
+        "inode": 518532995,
+        "mtime_ns": 1792210722457559565
+      },
+      "unchanged": true
+    },
+    {
+      "label": "runtime:interpreter",
+      "identity": {
+        "sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5",
+        "bytes": 52640,
+        "device": 16777231,
+        "inode": 31187059,
+        "mtime_ns": 1751028755689299885
+      },
+      "unchanged": true
+    },
+    {
+      "label": "runtime:fractions",
+      "identity": {
+        "sha256": "58f7750133f2e23999ba3f634d1b14edfec6dc48bf8bb00a9911262cd7198f63",
+        "bytes": 40021,
+        "device": 16777231,
+        "inode": 31183739,
+        "mtime_ns": 1749656217000000000
+      },
+      "unchanged": true
+    },
+    {
+      "label": "runtime:numbers",
+      "identity": {
+        "sha256": "ac381960a3dc1db0498b0bd43d8ef278d6599713121a186b153ff09d9552e0db",
+        "bytes": 11467,
+        "device": 16777231,
+        "inode": 31184078,
+        "mtime_ns": 1749656217000000000
+      },
+      "unchanged": true
+    },
+    {
+      "label": "runtime:decimal",
+      "identity": {
+        "sha256": "ed070025c9742f71f7ea92ec1a3d24f85b3199dd79b9d15a141716154e647989",
+        "bytes": 2798,
+        "device": 16777231,
+        "inode": 31183570,
+        "mtime_ns": 1749656217000000000
+      },
+      "unchanged": true
+    },
+    {
+      "label": "runtime:_decimal",
+      "identity": {
+        "sha256": "012ccc5fc549ca1da531e00957e6f1807e364971fcd55209f51d5545d788e585",
+        "bytes": 195120,
+        "device": 16777231,
+        "inode": 31187078,
+        "mtime_ns": 1751028756046952959
+      },
+      "unchanged": true
+    },
+    {
+      "label": "runtime:json",
+      "identity": {
+        "sha256": "d5d41e2c29049515d295d81a6d40b4890fbec8d8482cfb401630f8ef2f77e4d5",
+        "bytes": 14020,
+        "device": 16777231,
+        "inode": 31183956,
+        "mtime_ns": 1749656217000000000
+      },
+      "unchanged": true
+    },
+    {
+      "label": "runtime:collections",
+      "identity": {
+        "sha256": "2347f647577b6c11b82fc48fa4a1744f7af1af87f15942f92b7cc4410f0a817b",
+        "bytes": 52500,
+        "device": 16777231,
+        "inode": 31183512,
+        "mtime_ns": 1749656217000000000
+      },
+      "unchanged": true
+    }
+  ],
+  "all_bindings_unchanged": true,
+  "original_source_pairs_after": [
+    {
+      "snapshot": "inputs/family.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/CANDIDATE.md",
+      "current_sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/family_qualification.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_root_qualification/QUALIFICATION.md",
+      "current_sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/family_acceptance.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_root_qualification/ACCEPTANCE.json",
+      "current_sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/local_emitter.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/autonomous_emitter_route/ROUTE.md",
+      "current_sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/installed.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/CANDIDATE.md",
+      "current_sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/generic_v2.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/THEOREM_V2.md",
+      "current_sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/moment.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_candidate/CANDIDATE.md",
+      "current_sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/interval.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_interval_bridge/CANDIDATE.md",
+      "current_sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/reflection_v2.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/autonomous_reflection_candidate/CANDIDATE_V2.md",
+      "current_sha256": "694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/reflection_finite.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/autonomous_reflection_candidate/FINITE_READINESS_ADDENDUM.md",
+      "current_sha256": "ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/family_wrapper.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "current_sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/reflection_wrapper.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "current_sha256": "38549d1ad11b2978786f3e21e809d4958b9911b1958916016ba9c29d89c30c11",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/workflow.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "current_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/no_go_discipline.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "current_sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/primitive_registry.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/axiom_premise_nodes.json",
+      "current_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "unchanged_content": true
+    },
+    {
+      "snapshot": "inputs/realized_state_primitive.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "current_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "unchanged_content": true
+    }
+  ],
+  "all_original_source_contents_unchanged": true,
+  "stdout": {
+    "sha256": "e7e6ce5349dd0cd6aa0c41164c3b38f8b802e3dc5df3379ee2b10e300719c2a6",
+    "bytes": 38604,
+    "device": 16777231,
+    "inode": 518533173,
+    "mtime_ns": 1792210843094803093
+  },
+  "stderr": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "device": 16777231,
+    "inode": 518533174,
+    "mtime_ns": 1792210843022828544
+  },
+  "thread_count_measured": false,
+  "source_count": 16,
+  "binding_count": 31
+}

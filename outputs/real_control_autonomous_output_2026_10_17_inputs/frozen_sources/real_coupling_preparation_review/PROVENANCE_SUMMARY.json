@@ -1,0 +1,23 @@
+{
+  "attempt_bindings": [
+    {
+      "inputs": 24,
+      "run": "run01",
+      "runtimes": 4
+    },
+    {
+      "inputs": 26,
+      "run": "run02",
+      "runtimes": 4
+    }
+  ],
+  "author_members_verified": 41,
+  "author_total_files_copied": 43,
+  "provenance": {
+    "bytes": 53822,
+    "sha256": "4ecdcc2e79db2f4bdeed0715c56f34a60958e539265b27db1af7281021986d65"
+  },
+  "review_analytic_entries_unchanged": 24,
+  "review_scientific_runs": 0,
+  "source_pairs_verified": 17
+}

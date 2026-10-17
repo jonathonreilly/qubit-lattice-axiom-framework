@@ -1,0 +1,23 @@
+--- root/WRAPPER_DRAFT.md
++++ overlay/wrapper
+@@ -15,7 +15,7 @@
+ claim_type_reason: "A complete conditional preparation/runtime composition with explicit finite horizon, output norm, scalar, chronological old aging and local hardware costs; no native realization is inferred."
+ source_science_acceptance_complete: false
+ wrapper_root_approval: pending
+-canonical_execution: see_separate_execution_record
++canonical_execution: pending_root_owned_execution
+ publication: reviewable_packet_pending_checks
+ audit_required_before_effective_retained: true
+ bare_retained_allowed: false
+@@ -173,3 +173,11 @@
+ audit and integrated-current-main landing checks remain separate obligations.
+ No science merge, main push, audit verdict, physical axiom or editable prompt
+ change is part of this milestone.
++
++## Portable sources and pending decisions
++
++The [source map](../outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json) resolves each historical label to exact repository bytes. The [publication status](../outputs/thermal_resonance_halt_2026_10_17_inputs/PUBLICATION_STATUS.json) records the draft boundary. The [transport ledger](../outputs/thermal_resonance_halt_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json) describes every executable adaptation; the [reproduction plan](../outputs/thermal_resonance_halt_2026_10_17_inputs/REPRODUCTION_PLAN.json) distinguishes historical evidence from the unexecuted canonical plan.
++
++The preparation checkers retain their original parent-runtime numerical examples. They do not recompute the shorter resonance composition or the staged addendum; those analytical interfaces require the separately recorded decisions. Their historical report status strings do not decide current source acceptance.
++
++The complete embedded bodies below retain their original bytes, including historical frontmatter, pending labels, local path strings and source-level link targets. Use the source map for those historical targets. No link target inside a proof body was changed.

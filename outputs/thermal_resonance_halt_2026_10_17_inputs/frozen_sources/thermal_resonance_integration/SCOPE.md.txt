@@ -1,0 +1,43 @@
+# Coherent publication scope: thermal preparation and resonance-scale halt
+
+Prepare one regular stacked milestone above PR9665, exact head
+0e3993770a7a2dd872018f9dd3c76c2d9a624db9. The new bounded theorem reduces
+the supplied emitter's sufficient onset from10^6/kappa^2 to1/kappa^2 by a
+new directional cutoff/finite-contour/full-localization proof. It also gives
+explicit positive local preparation controls, a finite-temperature complete
+input comparison and a fully phased release into that unchanged runtime.
+
+The root-qualified resonance source is401e5c23 and exact-product thermal
+source isb7ef6e98. Root's smaller-control interacting preparation416a0cd7,
+staged release1c021b81 and combined interface250d431f are still pending
+separate selective checks at this decision. Do not publish them merely
+because packaging has started. Preserve both preparation alternatives if
+both qualify; do not silently mix their Hamiltonians, temperatures, scalar
+phases, slew allowances or block counts.
+
+The value is one complete conditional setup/runtime contract, rather than
+an isolated constant improvement. The same nominal supplied runtime has
+actual f_kappa rho_kappa, all source/emitter/clock/old/reference outputs,
+literal old aging, nonzero error floors and a specified finite horizon.
+No conditional supply permission is converted to native realization. The
+finite apparatus remains enormous (M5e17 at upper coupling); autonomous
+setup, thermalization dynamics, exact phase supply, interacting control
+outputs, practical resources, capture/reset/reuse and physical energy/Record
+identification remain open.
+
+Main69cf6a and relevant open PR heads were refreshed at04:04UTC. Repeat the
+affected remote/instruction check before publication. The distinct active
+real-coupling architecture is not included unless it independently reaches
+a coherent checked milestone; it must not delay this one indefinitely.
+
+Root owns W/Git, publication and current checkpoint. A portable overlay may
+be prepared outside W. Canonical source adaptations may change only path,
+prelaunch/cap metadata and return transport, preserving scientific ASTs and
+original bytes with an explicit ledger. Historical evidence retains status,
+actual failures and exposure limits. Any embedded Markdown link adaptation
+must be an exact target-only mapping to preserved source bytes, with a
+lossless original and a checked diff. Regular PR only after qualification,
+selective wrapper checks, actual canonical evidence and conformance.
+
+No science merge, main push, audit verdict, physical axiom or editable
+prompt change is authorized.

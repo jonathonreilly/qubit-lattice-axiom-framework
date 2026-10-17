@@ -1,0 +1,82 @@
+{
+  "note": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+  "bodies": [
+    {
+      "title": "Resonance family",
+      "source_label": "resonant_family_candidate/CANDIDATE.md",
+      "original": {
+        "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/CANDIDATE.md.txt",
+        "bytes": 37370,
+        "sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0"
+      },
+      "note_byte_start_inclusive": 12223,
+      "note_byte_end_exclusive": 49593,
+      "embedded_sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0",
+      "bytes": 37370,
+      "body_changed": false,
+      "link_target_edits": []
+    },
+    {
+      "title": "Exact-product preparation",
+      "source_label": "emitter_preparation_independent/CANDIDATE.md",
+      "original": {
+        "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/CANDIDATE.md.txt",
+        "bytes": 28456,
+        "sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227"
+      },
+      "note_byte_start_inclusive": 49790,
+      "note_byte_end_exclusive": 78246,
+      "embedded_sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227",
+      "bytes": 28456,
+      "body_changed": false,
+      "link_target_edits": []
+    },
+    {
+      "title": "Interacting preparation",
+      "source_label": "emitter_preparation_root/CANDIDATE.md",
+      "original": {
+        "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/CANDIDATE.md.txt",
+        "bytes": 21245,
+        "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+      },
+      "note_byte_start_inclusive": 78440,
+      "note_byte_end_exclusive": 99685,
+      "embedded_sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0",
+      "bytes": 21245,
+      "body_changed": false,
+      "link_target_edits": []
+    },
+    {
+      "title": "Staged release",
+      "source_label": "emitter_preparation_root/STAGED_RELEASE_ADDENDUM.md",
+      "original": {
+        "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/STAGED_RELEASE_ADDENDUM.md.txt",
+        "bytes": 7945,
+        "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885"
+      },
+      "note_byte_start_inclusive": 99877,
+      "note_byte_end_exclusive": 107822,
+      "embedded_sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885",
+      "bytes": 7945,
+      "body_changed": false,
+      "link_target_edits": []
+    },
+    {
+      "title": "Preparation/resonance composition",
+      "source_label": "preparation_resonance_composition/CANDIDATE.md",
+      "original": {
+        "path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition/CANDIDATE.md.txt",
+        "bytes": 8933,
+        "sha256": "250d431f3b818e08225b97b9d65d539c447ddd7b6ab00a36f5f7c7a7cc3868ca"
+      },
+      "note_byte_start_inclusive": 108042,
+      "note_byte_end_exclusive": 116975,
+      "embedded_sha256": "250d431f3b818e08225b97b9d65d539c447ddd7b6ab00a36f5f7c7a7cc3868ca",
+      "bytes": 8933,
+      "body_changed": false,
+      "link_target_edits": []
+    }
+  ],
+  "target_only_link_map": [],
+  "all_five_bodies_byte_identical": true
+}

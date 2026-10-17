@@ -1,0 +1,94 @@
+{
+ "legitimacy_failures": 0,
+ "cz_identity_failures": 0,
+ "full_L4_orb4_sec(0, 0, 0)": {
+  "fail": 0,
+  "bare_stab": 6
+ },
+ "full_L4_orb4_sec(1, 1, 1)": {
+  "fail": 0,
+  "bare_stab": 6
+ },
+ "full_L4_orb6_sec(0, 0, 0)": {
+  "fail": 0,
+  "bare_stab": 4
+ },
+ "full_L4_orb6_sec(1, 1, 1)": {
+  "fail": 0,
+  "bare_stab": 4
+ },
+ "full_L4_orb12_sec(0, 0, 0)": {
+  "fail": 0,
+  "bare_stab": 2
+ },
+ "full_L4_orb12_sec(1, 1, 1)": {
+  "fail": 0,
+  "bare_stab": 2
+ },
+ "full_L6_orb4_sec(0, 0, 0)": {
+  "fail": 0,
+  "bare_stab": 6
+ },
+ "full_L6_orb4_sec(1, 1, 1)": {
+  "fail": 0,
+  "bare_stab": 6
+ },
+ "full_L6_orb6_sec(0, 0, 0)": {
+  "fail": 0,
+  "bare_stab": 4
+ },
+ "full_L6_orb6_sec(1, 1, 1)": {
+  "fail": 0,
+  "bare_stab": 4
+ },
+ "full_L6_orb12_sec(0, 0, 0)": {
+  "fail": 0,
+  "bare_stab": 2
+ },
+ "full_L6_orb12_sec(1, 1, 1)": {
+  "fail": 0,
+  "bare_stab": 2
+ },
+ "all60_L4": {
+  "cases": 2880,
+  "fail": 0
+ },
+ "all60_L6": {
+  "cases": 2880,
+  "fail": 0
+ },
+ "all720_L4": {
+  "cases": 34560,
+  "fail": 0
+ },
+ "sectors_orb4": {
+  "(0, 0, 0)": 24,
+  "(0, 0, 1)": 8,
+  "(0, 1, 0)": 8,
+  "(0, 1, 1)": 8,
+  "(1, 0, 0)": 8,
+  "(1, 0, 1)": 8,
+  "(1, 1, 0)": 8,
+  "(1, 1, 1)": 24
+ },
+ "sectors_orb6": {
+  "(0, 0, 0)": 24,
+  "(0, 0, 1)": 8,
+  "(0, 1, 0)": 8,
+  "(0, 1, 1)": 8,
+  "(1, 0, 0)": 8,
+  "(1, 0, 1)": 8,
+  "(1, 1, 0)": 8,
+  "(1, 1, 1)": 24
+ },
+ "sectors_orb12": {
+  "(0, 0, 0)": 24,
+  "(0, 0, 1)": 8,
+  "(0, 1, 0)": 8,
+  "(0, 1, 1)": 8,
+  "(1, 0, 0)": 8,
+  "(1, 0, 1)": 8,
+  "(1, 1, 0)": 8,
+  "(1, 1, 1)": 24
+ }
+}

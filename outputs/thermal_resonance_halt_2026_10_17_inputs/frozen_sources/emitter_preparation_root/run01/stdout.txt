@@ -1,0 +1,139 @@
+{
+  "conceptual_qubits_in_pauli_fixture": 22,
+  "elapsed_seconds": 0.022154332604259253,
+  "fixtures": [
+    {
+      "M": 17,
+      "auxiliary_qubits": 20,
+      "exact_decomposition": true,
+      "extra_identity_coefficient": "140087140163001305139704081612359541036548170073/10671633910512714258858232210802000000000000000",
+      "extra_pauli_terms": 31,
+      "global_pauli_terms": 71,
+      "kappa": "1/1000000000000",
+      "physical_qubits": 22,
+      "preserved_discriminators": [
+        "missing vacancy compensation breaks decomposition",
+        "g I-G is negative on an actual pair vector"
+      ],
+      "residual_gram": "1/500000000000000000000000",
+      "seed_columns": 4,
+      "spectra": {
+        "clock_bond": {
+          "rank": 2,
+          "top": "3752638388379/62500000000000",
+          "trace": "3752638388379/31250000000000"
+        },
+        "clock_source_A": {
+          "rank": 1,
+          "top": "1900890690790601/250000000000000",
+          "trace": "1900890690790601/250000000000000"
+        },
+        "emitter_pair": {
+          "rank": 2,
+          "top": "1/500000000000",
+          "trace": "1/250000000000"
+        },
+        "old_source_A": {
+          "rank": 1,
+          "top": "99687856381667/50000000000000",
+          "trace": "99687856381667/50000000000000"
+        }
+      }
+    },
+    {
+      "M": 17,
+      "auxiliary_qubits": 20,
+      "exact_decomposition": true,
+      "extra_identity_coefficient": "140087140165114288653985599035613471014286966073/10671633910512714258858232210802000000000000000",
+      "extra_pauli_terms": 31,
+      "global_pauli_terms": 71,
+      "kappa": "1/10000000000",
+      "physical_qubits": 22,
+      "preserved_discriminators": [
+        "missing vacancy compensation breaks decomposition",
+        "g I-G is negative on an actual pair vector"
+      ],
+      "residual_gram": "1/50000000000000000000",
+      "seed_columns": 4,
+      "spectra": {
+        "clock_bond": {
+          "rank": 2,
+          "top": "3752638388379/62500000000000",
+          "trace": "3752638388379/31250000000000"
+        },
+        "clock_source_A": {
+          "rank": 1,
+          "top": "1900890690790601/250000000000000",
+          "trace": "1900890690790601/250000000000000"
+        },
+        "emitter_pair": {
+          "rank": 2,
+          "top": "1/5000000000",
+          "trace": "1/2500000000"
+        },
+        "old_source_A": {
+          "rank": 1,
+          "top": "99687856381667/50000000000000",
+          "trace": "99687856381667/50000000000000"
+        }
+      }
+    },
+    {
+      "M": 17,
+      "auxiliary_qubits": 20,
+      "exact_decomposition": true,
+      "extra_identity_coefficient": "140087140376412640082137341361006468788166566073/10671633910512714258858232210802000000000000000",
+      "extra_pauli_terms": 31,
+      "global_pauli_terms": 71,
+      "kappa": "1/100000000",
+      "physical_qubits": 22,
+      "preserved_discriminators": [
+        "missing vacancy compensation breaks decomposition",
+        "g I-G is negative on an actual pair vector"
+      ],
+      "residual_gram": "1/5000000000000000",
+      "seed_columns": 4,
+      "spectra": {
+        "clock_bond": {
+          "rank": 2,
+          "top": "3752638388379/62500000000000",
+          "trace": "3752638388379/31250000000000"
+        },
+        "clock_source_A": {
+          "rank": 1,
+          "top": "1900890690790601/250000000000000",
+          "trace": "1900890690790601/250000000000000"
+        },
+        "emitter_pair": {
+          "rank": 2,
+          "top": "1/50000000",
+          "trace": "1/25000000"
+        },
+        "old_source_A": {
+          "rank": 1,
+          "top": "99687856381667/50000000000000",
+          "trace": "99687856381667/50000000000000"
+        }
+      }
+    }
+  ],
+  "largest_dense_dimension": 4,
+  "limits": "No full many-body matrix, Gibbs density, dynamics simulation, continuum scattering replay, bath, physical calibration or uniform-family numerical sweep.",
+  "scalar": {
+    "N_max": 50000000000000000000000000000003,
+    "Nq_upper": "25768876036600566551823056488282609767667572134043109383389296863818106322566003/2037035976334486086268445688409378161051468393665936250636140449354381299763336706183397376",
+    "complete_trace_upper": "1017/100000",
+    "correlated_trace_upper": "1/50000",
+    "cubic_integral": "1/2",
+    "many_sector_defect": "572749994932560009201/672749994932560009201",
+    "many_sector_discriminator_N": 20,
+    "many_sector_false_one_qubit_bound": "1/10",
+    "max_release_slew": "449063569145001/1000000000000000000",
+    "mean_aux_upper": "25768876036600566551823056488282609767667572134043109383389296863818106322566003/2037035976308717210231845121857555104563185783898268678502097339970992002899518599860831373",
+    "release_trace_upper": "3/20000",
+    "slew_allowance": "1/1000",
+    "thermal_q_upper": "515377520732011331036461129765621272702107522001/2037035976334486086268445688409378161051468393665936250636140449354381299763336706183397376",
+    "thermal_target": "1/22500000000"
+  },
+  "scope": "Exact fraction arithmetic in full Pauli representations and complete 4x4 local matrices; scalar rational bounds only."
+}

@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-10-16T23:57:46.231353+00:00",
+  "scope": "New conditional author derivation; source-exposed prior context, inherited model/effort, independent review pending. No concrete fit or uniform fit family certified.",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/CHECK_EXECUTION.json",
+      "bytes": 1760,
+      "sha256": "b3b6ec701759051e37a96a00a1f0787c01040086f92a8c92276ba6e7f1d6e2cc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/THEOREM.md",
+      "bytes": 26963,
+      "sha256": "fffd7d405935226aba4a5e6528112b984b6dde4580747641159f554e97e2189a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/check_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/check_stdout.txt",
+      "bytes": 964,
+      "sha256": "b1808ec788055149854247ead2f59d2cd3c8fb219c4a404acbf96edb0821e115"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/column_norm_check.py",
+      "bytes": 1881,
+      "sha256": "ba60f080adaa5edd60f94409a85ffd36f1d6ff35bc1dd1141ae2515d2ea34625"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/run_check.py",
+      "bytes": 1452,
+      "sha256": "1f08d94c03b22954bad538f3c18272d81c68323b71a94cf2d9c0906e26ff57dc"
+    }
+  ],
+  "prior_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/autonomous_reflection_candidate/CANDIDATE_V2.md",
+      "bytes": 13239,
+      "sha256": "694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/autonomous_reflection_candidate/FINITE_READINESS_ADDENDUM.md",
+      "bytes": 4856,
+      "sha256": "ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/bootstrap/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    }
+  ],
+  "remaining_obligations": [
+    "Exact input-energy embedding and reducing symmetries for concrete B,V0,V1",
+    "One-open-channel and closed-gap certificates over a common kinetic interval",
+    "Uniform finite matching inverse bound and derivative/tail constants",
+    "Common scalar and target reflection-phase residual over that interval",
+    "Concrete preparation and finite-clock endpoint/horizon validation if used",
+    "Independent review before substantial downstream reliance; separate native realization obligations"
+  ]
+}

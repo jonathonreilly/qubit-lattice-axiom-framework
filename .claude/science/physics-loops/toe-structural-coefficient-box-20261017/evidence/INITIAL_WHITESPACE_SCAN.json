@@ -1,0 +1,11 @@
+{
+  "paths": 135,
+  "findings": [
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical_attempt_1/canonical_cache.txt",
+      "exit_code": 3,
+      "stdout": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical_attempt_1/canonical_cache.txt:29: new blank line at EOF.\n",
+      "stderr": ""
+    }
+  ]
+}

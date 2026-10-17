@@ -1,0 +1,112 @@
+{
+  "artifacts": {
+    "primary": {
+      "path": "canonical/scripts/real_control_autonomous_output_2026_10_17.py",
+      "bytes": 47127,
+      "sha256": "b7d63ff04babbf0cf4abd6fde6056a8d7a14684eadb66a2773f645cdea430bc5"
+    },
+    "note": {
+      "path": "canonical/docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 74148,
+      "sha256": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca"
+    },
+    "source_map": {
+      "path": "canonical/outputs/real_control_autonomous_output_2026_10_17_inputs/SOURCE_MAP.json",
+      "bytes": 215896,
+      "sha256": "0250e22141d72c51c03c19db10da5e5b5bb1aab27f776b82a16218c53da54ade"
+    },
+    "input_map": {
+      "path": "canonical/outputs/real_control_autonomous_output_2026_10_17_inputs/INPUT_MAP.json",
+      "bytes": 10264,
+      "sha256": "fe86c392ef0354470a47a8dbd6ea1a4dc2c7863f90839db3b78a264ace3fe96c"
+    },
+    "artifact_manifest": {
+      "path": "canonical/outputs/real_control_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "bytes": 26620,
+      "sha256": "2360cdbe3f57b100bec6a9cfc7e9792ab38af683f24d9e0747dc07b546a2f3b8"
+    },
+    "transport_ledger": {
+      "path": "canonical/outputs/real_control_autonomous_output_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+      "bytes": 270498,
+      "sha256": "5ccd2f94737632ecef9bcdb285a2b5d20e52d2753d807a3ba6948eaebbc05b58"
+    },
+    "proof_body_map": {
+      "path": "canonical/outputs/real_control_autonomous_output_2026_10_17_inputs/PROOF_BODY_MAP.json",
+      "bytes": 3538,
+      "sha256": "84df07032725c77c19b1245f99176dee43df827f93bfa9b51bb4d229f30dec00"
+    },
+    "static_final_receipt": {
+      "path": "static_03/RECEIPT.json",
+      "bytes": 1827,
+      "sha256": "dc8894e6af20e05fcef1851786edd2242722c80ba8bb79812d2ea0fd4c2e42b7"
+    },
+    "final_wording_amendment": {
+      "path": "FINAL_WORDING_AMENDMENT.json",
+      "bytes": 1415,
+      "sha256": "6e5ca434e430966d99c5d8be6a34d4a19a64bbc6b43b9409f10a99d3432c71f1"
+    }
+  },
+  "source_counts": {
+    "created_utc": "2026-10-17T05:25:49.241947+00:00",
+    "source_scopes": [
+      {
+        "scope": "real_coupling_halt_route",
+        "freeze_sha256": "16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b",
+        "manifest_member_count": 33,
+        "captured_count": 34
+      },
+      {
+        "scope": "real_coupling_route_review",
+        "freeze_sha256": "fa375e1facab0442e2158508a916829af9a95fcef837a201ac1de7f6b9b0538b",
+        "manifest_member_count": 65,
+        "captured_count": 66
+      },
+      {
+        "scope": "real_coupling_preparation_candidate",
+        "freeze_sha256": "41ce93b77d46c1dbecdde6f674201ca8b6e20026ae10231fe9b925fb69468e49",
+        "manifest_member_count": 41,
+        "captured_count": 43
+      },
+      {
+        "scope": "real_coupling_preparation_review",
+        "freeze_sha256": "3c67c7c7346ebb459ea2cf88c8cde671e21a43994bb4d0207dd2c53a8446ee5a",
+        "manifest_member_count": 75,
+        "captured_count": 76
+      },
+      {
+        "scope": "real_control_root_review",
+        "freeze_sha256": "af9a2ab1843a8d026265a6c326002c1003cdff5e7ad4382c73a060de4cb7d3f1",
+        "manifest_member_count": 3,
+        "captured_count": 4
+      }
+    ],
+    "source_labels": 229,
+    "new_unique_stored_sources": 73,
+    "reused_parent_labels": 87,
+    "deduplicated_new_labels": 69,
+    "declared_inputs": 109,
+    "transport_events": 16,
+    "added_tail_statements": 1,
+    "original_statement_records": 448,
+    "proof_target_edits": 3,
+    "primary": {
+      "bytes": 47127,
+      "sha256": "b7d63ff04babbf0cf4abd6fde6056a8d7a14684eadb66a2773f645cdea430bc5"
+    },
+    "note": {
+      "bytes": 74148,
+      "sha256": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca"
+    },
+    "scientific_runs": 0,
+    "post_build_glue_change": "Explicit RuntimeError refusal under optimized Python; see GLUE_AMENDMENT.md; original body/event/proof/input hashes unchanged.",
+    "final_wording_amendment": "FINAL_WORDING_AMENDMENT.json; exact root-requested coverage string only after static03."
+  },
+  "scientific_executions": 0,
+  "full_static_attempts": 3,
+  "full_static_outcomes": [
+    "failed inspection-docstring handling",
+    "passed",
+    "passed including explicit optimized-Python refusal"
+  ],
+  "final_primary_limit": "Final one-literal root coverage wording follows static03; exact reversible amendment preserved; no additional full checker execution."
+}

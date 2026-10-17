@@ -1,0 +1,164 @@
+# Reference spectral normalization before exposure to the new author packet
+
+This record was written before opening any argument, code or evidence in `emitter_resource_family_candidate`. Only the frozen installed, weighted and ballistic sources and their stated qualifications were available. This reviewer authored the installed/interval/generic/local/calibration precursors and checked the ballistic refinement; the reasoning is independent of the new mutable author packet, not blind to its dependency graph. Model and effort remain unchanged.
+
+The current question is the exact original ladder and loop, with kappa in [10^-12,10^-8], sigma=10^-6, L=12, emitter energy E0=E(k0) and phase phi=2k0. No joint coefficient/calibration box is being composed. The provisional route below appears to retain inner-band normalization and a common product-seed overlap below .003, but its scalar ceilings will be checked by a separately predeclared exact run. This initial note is not a verdict on the still-unread family candidate.
+
+## 1. A failed fixed-kappa estimate
+
+Let ell=sigma/2=5*10^-7 and v=1/40. The original reference variance bound for spectral mass outside the inner band is
+
+```text
+2 kappa^2/(v ell)^2.
+```
+
+At kappa=10^-8 this is 1.28, so it gives no useful lower bound on inner-band mass. The old numerical delta_m<13*10^-9 is not uniform in the requested family. Likewise the old separate installed point-amplitude ceiling 8*10^-5, obtained from variance at kappa=10^-12, cannot simply be retained at the upper endpoint. This is a failure of those estimates, not an actual spectral counterexample.
+
+A crude comparison of the density to a Lorentzian using only independent lower and upper imaginary-part bounds also loses a fixed ratio of those bounds and is too weak for the required near-unit overlap. The successful-looking alternative below integrates the actual denominator phase and controls its derivative correction. It is not a Markovian exponential-decay or linewidth completion-time argument.
+
+## 2. Actual full-line reference resolvent and spectral measure
+
+Use the scalar full-line free chain h=2JI-J(S+S*) and an emitter at E0 with contacts V=|L>-exp(i phi)|L+2>. It is only the exact reference spectral problem; the installed physical clock remains a half-line with the original gate. For E(k)=2J(1-cos k), k in (0,pi), put vg=E'(k). The retarded free kernel is
+
+```text
+R_f(n,m) = (-i/vg) exp(ik|n-m|),
+Sigma_f = V* R_f V = (-i/vg)[2-2cos(phi)exp(2ik)],
+Df = E(k)-E0-kappa^2 Sigma_f = x+i kappa^2 gamma,
+s=Re Sigma_f, gamma=-Im Sigma_f,
+x=E(k)-E0-kappa^2 s.
+```
+
+These signs agree with the actual retarded convention in the installed source. The scalar emitter resolvent is 1/Df. With
+
+```text
+g_plus=exp(-ikL)(1-exp(i phi)exp(-2ik)),
+g_minus=exp(ikL)(1-exp(i phi)exp(2ik)),
+a=|g_plus|, b=|g_minus|,
+gamma=(a^2+b^2)/(2vg),
+```
+
+Stieltjes inversion on the compact interior band gives
+
+```text
+d mu/dk = vg kappa^2 gamma/[pi (x^2+kappa^4 gamma^2)]
+        = kappa^2(a^2+b^2)/(2pi |Df|^2).
+```
+
+The two directional contributions are nonnegative. The desired one is `kappa^2 b^2/(2pi |Df|^2)=|yref|^2/(2pi)`, where `yref=kappa conjugate(g_minus)/Df`. The underlying emitter vector is normalized, so the full spectral measure has mass one, including any outside-band point masses. No completeness of scattering states over the entire spectrum is assumed. Positive gamma and the regular resolvent boundary value exclude a singular part on the inner band, as in the qualified installed argument.
+
+The source's bounds on the wider fixed band are independent of kappa because Sigma_f depends only on the unchanged chain and loop:
+
+```text
+|Sigma_f| <= 160,  |Sigma_f'| <= 560,
+gamma >= 19, vg >= v, |E''| <= 2J < .061.
+```
+
+On the inner band |k-k0|<=ell, a<=2ell=10^-6 and b<=2. Hence
+
+```text
+gamma <= (4+10^-12)/(2v) < G=81,
+|s'| <= S=560, |gamma'| <= G1=560.
+```
+
+Writing kappa_min=10^-12 and kappa_max=10^-8, define
+
+```text
+Delta = v ell-160 kappa_max^2 > 0,
+X = 4*10^-8.
+```
+
+At the inner-band endpoints x_-<=-Delta and x_+>=Delta. Throughout that band `|x| <= 2J ell+160 kappa_max^2 < X`. Also `x'=vg-kappa^2 s' > v/2`. These elementary scalar comparisons are to be checked exactly. No resonance is presumed centered exactly at E0 after its real self-energy shift.
+
+## 3. A phase integral with its correction
+
+For each positive kappa set `theta(k)=atan[x/(kappa^2 gamma)]`, taking the continuous principal arctangent. Since gamma>0, it is smooth throughout the inner band. Direct differentiation gives the exact identity
+
+```text
+theta' = kappa^2(gamma x'-x gamma')/(x^2+kappa^4 gamma^2),
+
+d mu/dk = theta'/pi
+       + [kappa^4 gamma s' + kappa^2 x gamma']
+                       /[pi(x^2+kappa^4 gamma^2)].
+```
+
+The correction can have either sign; a lower mass bound subtracts its absolute integral. Monotonicity of theta is not required. At the endpoints, `atan(y)>=pi/2-1/y` for y>0 gives
+
+```text
+(theta_+-theta_-)/pi >= 1-2 kappa^2 G/(pi Delta).
+```
+
+Using x'>v/2 and gamma>=19,
+
+```text
+integral_inner 1/|Df|^2 dk <= 2pi/(19 v kappa^2),
+integral_inner |x|/|Df|^2 dk
+  <= (2/v) log[1+X^2/(19^2 kappa^4)].
+```
+
+The first is the exact real-line quadratic integral after the monotone substitution. The second follows by integration over [-X,X] of `|x|/(x^2+(19 kappa^2)^2)`. Thus, denoting the inner-band mass by m_inner,
+
+```text
+1-m_inner <= 2 kappa^2 G/(pi Delta)
+           +2 kappa^2 G S/(19v)
+           +(2 kappa^2 G1/(pi v))
+                         log[1+X^2/(19^2 kappa^4)].
+```
+
+A deliberately loose uniform upper expression replaces kappa^2 outside the logarithm by kappa_max^2, replaces kappa^4 inside its denominator by kappa_min^4, and uses pi>3. No monotonicity of their product is needed. The logarithm is below 80: it suffices to check the exact rational inequality `1+X^2/(19^2 kappa_min^4) < (8/3)^80`, since e>8/3. The resulting rational mass-loss ceiling is
+
+```text
+Bmass = 2 kappa_max^2 G/(3 Delta)
+       +2 kappa_max^2 G S/(19v)
+       +(2 kappa_max^2 G1/(3v))*80.
+```
+
+An informal calculation puts Bmass near 4.3214*10^-7. The exact planned check will test `Bmass+10^-12 < 4.4*10^-7`. The extra 10^-12 will cover the directional fraction below. Unlike the variance estimate, this direct spectral-density bound includes all outside-band spectral mass without requiring a global density formula near thresholds or a separate classification of outside-band bound states.
+
+## 4. Common envelope and conditional full seed overlap
+
+The source cutoff chi is one on the inner band and goes linearly to zero at the endpoints of the full band. Its normalization is
+
+```text
+N_kappa^2 = integral chi^2 |yref|^2/(2pi),
+f_kappa = chi conjugate(yref)/(sqrt(2pi)N_kappa).
+```
+
+On the inner band b>3/2, so the wrong-direction fraction is at most `(a/b)^2 <= (4ell/3)^2 < 10^-12`. Consequently
+
+```text
+1 >= N_kappa^2 >= (1-10^-12)m_inner
+                >= 1-Bmass-10^-12 > 1-4.4*10^-7,
+Aref = integral chi |yref|^2/(2pi N_kappa) is in [N_kappa,1].
+```
+
+The upper normalization uses the actual total spectral mass. The lower Aref bound uses chi>=chi^2; its upper bound is Cauchy-Schwarz. The normalization is positive real. For each kappa this is one old-independent mathematical envelope of the supplied product seed, not a new external packet preparation or a profile common to all different kappa values.
+
+The exact installed Schur formulas are algebraic identities at any positive kappa. To apply them to this family, their inequalities must be freshly checked at kappa_max, rather than imported with the original numeric labels. With the original rational constants,
+
+```text
+delta=50/96889010407, w_c=800/13841287201,
+a_max=2sigma, b_min=2sin(2k0)-2sigma, b_max=2,
+eta=a_max/b_min, gamma0=b_min^2/(4J),
+sPQ=a_max*206*delta, sQP=delta*206*b_max,
+xi=2eta+kappa^2*sPQ*6*sQP/gamma0,
+eta_p=[eta+kappa^2*sPQ*6*w_c/b_min+xi]/(1-xi),
+epsilon_off=6 kappa w_c
+            +6 kappa^2 delta*206*b_max*(1+eta_p).
+```
+
+Every positive upper expression here is monotone in kappa provided xi<1. The proposed exact check is `eta_p(kappa_max)<4*10^-6` and `epsilon_off(kappa_max)<10^-14`, together with the full closed block gap, `gamma0(1-xi)>19`, and inverse-factor inequalities. These include all seven complementary emitter coordinates in each parity. If they hold, the same full 2-by-2 parity-block overlap argument, without orthogonality of localized columns or per-column phase changes, gives
+
+```text
+||Eseed-Gamma_kappa,0||^2
+  <= 2[(1-Aref)+eta_p+epsilon_off]
+  <= 2[Bmass+10^-12+eta_p+epsilon_off]
+  < 2(4.4*10^-7+4*10^-6+10^-14) < .003^2.
+```
+
+The exact packet isometry still comes from the past-limit decay argument and selfadjoint intertwining. Finite, uniform inverse/derivative bounds on the compact positive kappa interval suffice for its regularity; the position-moment bound's nonzero floor is not used for exact normalization. The seed discrepancy includes any point-spectrum amplitude once. A successful overlap bound can replace the failed separately quoted small-kappa variance ceiling; it does not prove that the latter ceiling remained unchanged.
+
+## 5. What remains before any family verdict
+
+This initial route establishes a plausible new normalization estimate and lists exact scalar tests, not a completed selective review. The fresh full inverse factors, incoming normalization, actual outgoing phase and its derivative, complete localized estimates, old aging and `nu+2kappa` scalar, source/reference retention, onset/finite-clock scaling and actual author execution all require the later frozen argument and changed-premise check. The original central target residual must remain positive and bounded, not silently set to zero. A finite horizon cannot be turned into fixed finite-device permanence. No native readiness, loop-phase implementation, broad perturbation or arbitrary-accuracy family is inferred.
+
+The initial source manifest and resource plan are already saved. An exact stage-one program will record actual source/runtime/input bindings before launch, use no grid or quadrature and preserve any failure. This note will be frozen before exposure to the author's new packet; later changes or comparisons belong in separate files.

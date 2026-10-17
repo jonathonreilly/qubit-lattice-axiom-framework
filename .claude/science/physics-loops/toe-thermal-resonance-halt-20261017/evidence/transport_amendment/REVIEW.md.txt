@@ -1,0 +1,156 @@
+# Narrow acceptance of spacing, status and archive transport amendment
+
+**Selective disposition:** the exact amended transport below is acceptable for
+root's subsequent canonical execution and publication checks. It resolves the
+known trailing-space defect without losing the raw proof, and the repaired
+archive resolves every historical member correctly. This is not scientific
+execution, mathematical re-qualification, publication approval or retained audit.
+The original REVIEW.md and FREEZE.json remain untouched.
+
+## Exact scope and identities
+
+The unchanged original review is SHA256
+`69f89458fb51f9ddf8c15b68339c8a96c8f95cf5e07b82b0487f52434ebdf530`, with freeze
+`e0a44cc82e25ac3680492b4b0aa3a90fd207a37e16b9774ffc2b49ed43e4ca64`.
+This amendment follows the separate root-supplied records, not an inferred
+change to the earlier publication freeze.
+
+| Reviewed source | SHA256 |
+|---|---|
+| Integration spacing_amendment/AMENDMENT.json | `c23e88a9e565291eea2c0a6b79aae65614495c68fe8bdde7d4bb61d63b0fce77` |
+| fix_math_spacing_transport.py | `7d855580f5665f0f8245ac76bbc2168318d57553eb004ad5d76c5f7636cc5d37` |
+| Integration format_archive_followup/REPAIR.json | `7bde2e482b28aa8e3a7d777c0ed51a528502462496f04f2f4be859b575e45747` |
+| repair_format_archive.py | `169e858b378e5b329dbd88803b9131f0e7c0e600081adf137903e87c3e2ddbfe` |
+| Q/ROOT_WRAPPER_CHANGE.json | `326b24616986131c0f4a9f30286a9ea17ad5e53f96f4602343b8ae2bc0e608b9` |
+| Current canonical note | `939a505813adb86ce8bccf335781fd8a1d3ce5ef96367836fe68339bc7c01b30` |
+| Current canonical primary | `944f256cd1e894601d2e483db47f9faba57d371532ed22d2b5e1835b409de872` |
+| Current ARTIFACT_MANIFEST.json | `9ef23d8044235449b6f4b0cc04d20aa7f6f1c95675b7b20fd38926c25fc4dc83` |
+| Current SOURCE_MAP.json | `e6a0f1fa41d500a53731d569e46f63fff08aecd255d7f46000936275ebf72535` |
+| Current PROOF_BODY_MAP.json | `214d99af02f0e84f9a6aee59e07082f35e529d6ead2a9531412e2a5d1a7035e7` |
+| Current Q/evidence/PACKAGING_MAP.json | `62699c8203c84940054c0d687603c8acbd919e4379c8b865b06610c38f5957af` |
+
+Q is the supplied repository path
+`.claude/science/physics-loops/toe-thermal-resonance-halt-20261017/`.
+The current note and primary are the same repository-relative filenames
+identified in the original review. INPUTS.json pins all273 preserved snapshots
+(12,772,192 bytes), including each changed input, pre-amendment files, both repair
+programs, the complete current input closure and unique archive destinations.
+Neither repair program was executed by this reviewer.
+
+## Exact changes and decisive checks
+
+The primary differs from the reviewed3308c3d3 source by **one literal suffix**:
+its raw product-proof inventory path now ends `.md.txt.gz`. Every function and
+class AST is unchanged. In fact the entire source is equal after that single
+string replacement. All earlier scientific-expression, cap, report, resolver
+and inert-import judgments therefore retain their exact scope. The gzip proof
+is not a runtime alias in INPUT_MAP and no scientific body reads or decompresses
+it. No new executable import or decoding path has been added.
+
+The gzip file has12,035 stored bytes and SHA256
+`5174b0311ac0841e2c4947e25488b23c19aef820c1de62482c99631fff08c312`.
+Independent decompression recovers all28,456 original bytes, SHA256
+`b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227`,
+including the historical trailing space. Two SOURCE_MAP labels change only to
+the declared gzip representation, with separate stored/raw length and hash.
+Every other label and top-level source-map field is identical. All239 labels
+resolve to their declared exact bytes; compressed labels additionally verify
+their decoded raw identity.
+
+The rendered product body still changes exactly ten Markdown destination
+spans. It now additionally changes one byte span from Python byte literal
+`b'\\boxed{\\ \n'` to `b'\\boxed{\\,\n'`. This replaces TeX control-space with
+thin-space before the existing newline. It alters spacing, not the formula's
+symbols, operands or relationships. The written offset/replacement ledger is
+exact and reversible. Independent reconstruction applies the ten original link
+replacements, then the single spacing replacement, and recovers the entire
+rendered body. Its final SHA256 is
+`0084f7344213689b1de907c287e7185a3102e41ff730fb5f81a3cc17f35edd02`.
+The four other complete bodies remain byte-identical to their originals.
+The final note has no trailing-space/tab line under the explicit static scan.
+No Git publication/conformance command was run by this reviewer.
+
+The body map's `target_only_link_map` intentionally still identifies the
+**intermediate** body after just the ten destination edits, SHA5e38baab..., while
+`bodies[1].embedded_sha256` identifies the final0084f734... body after the spacing
+edit. The map now sets the target-only-completion flag false, supplies the
+format edit and its inverse order, and states mathematical-content preservation.
+A consumer must apply both stages; the intermediate hash is not the current
+embedded hash. This distinction does not defeat reconstruction or require
+changing the frozen intermediate history.
+
+The root status-only wrapper update is fully visible: it renames the section
+from pending to separate decisions, labels publication/reproduction JSON as
+preparation history, and adds ROOT_PORTABILITY_ACCEPTANCE.json and
+EXECUTION_STATUS.md links. It shifts all five bodies by exactly449bytes and
+changes none of them. The later spacing update changes only the transparent
+proof-transport paragraph in the wrapper plus the one body span. The wrapper
+now describes the gzip preservation and spacing edit explicitly.
+
+The two actual-decision records are deliberately **outside** the149-file
+calculation closure. The wrapper says so and does not self-certify a later run.
+Their future contents were not accepted or checked here. Root must provide the
+actual decisions/execution records before treating publication as complete;
+the frozen preparation JSON should remain historical. This avoids a cache cycle
+without omitting calculation inputs.
+
+The revised literal input tuple has exactly149 unique paths, replacing only the
+raw proof path. Its artifact manifest binds exactly the other148 inputs; every
+length/hash was independently verified. The primary and manifest remain externally
+prelaunch-bound, as in the original design. No changed input is hidden behind
+an undeclared resolver dependency.
+
+## Preserved archive failure and repair
+
+The first spacing amendment left five archival labels pointing at live primary/
+SOURCE_MAP destinations whose bytes had changed. Root's archive-wide check
+found this concrete integrity defect. The original amendment record and broken
+intermediate map remain preserved; they were not rewritten into a success.
+
+The separate repair changes exactly five `path` fields: three historical
+original-primary labels and two historical original-SOURCE_MAP labels now point
+to exact saved pre-amendment bytes under Q/evidence/format_before. Every other
+field, stored/raw identity and top-level archive field remains unchanged.
+No note, primary or calculation input changes in this second repair.
+
+The reviewer did not rely on root's PASS claim. The new independent static
+program checked all **1,177 archived labels**, each stored identity, each raw
+identity after declared decompression, and byte-for-byte equality with the
+corresponding member of the original frozen publication packet. This includes
+35 labels using gzip and the nine original-proof archival labels redirected by
+the spacing amendment. All pass. Complete raw proofs, pre-amendment executable
+and maps, failed static attempts, streams and historical receipts remain
+recoverable with their exact original identities.
+
+## Actual evidence and limitations
+
+PLAN.json was saved before the new static calculation. The own implementation
+`check_amendment.py` is independent of both root repair programs, and executes
+only AST/byte/path/hash/gzip checks. It neither imports nor calls the scientific
+program, the root repair programs or the packager checker. There was one bounded
+attempt, exit0, empty stderr, no retries and no scientific execution/mutation.
+A mistaken preliminary read used the wrong ROOT_WRAPPER_CHANGE location; its
+error and recovery are preserved in READ_FAILURES.json.
+
+Start2026-10-17T04:54:39.427659+00:00; subprocess wall0.251019708seconds,
+userCPU0.127721,systemCPU0.073324,maxRSS40,648,704bytes. Caps were CPU30/30,
+external wall45,max2,048files,128MiB input bytes,at most2attempts. The launcher
+serialized/fsynced its prelaunch record and directory, then captured that record's
+identity before spawning. All1,462 source/runtime bindings and the prelaunch
+record were unchanged afterward. No OS memory cap or measured thread count is
+claimed. Selected runtime pins do not cover the OS or complete transitive runtime.
+
+* Prelaunch SHA256 `8dfc2f85bec614926946e88a2abb8374729b1c0d9fac424cc658e760c2f163d8`.
+* Full output SHA256 `f0a2dc5b119b9e99e147a761d69c85f8ef7ddeaabb194da6cbe5c7afc74afe11`.
+* The5,828 static assertions are bookkeeping/transport checks, not independent
+  scientific claims. All names and reconstruction results remain in the output.
+
+Complete manual coverage includes both root repair scripts, both amendment/
+repair records, wrapper-status record and complete wrapper delta, all changed
+proof-format logic, gzip storage/source-map semantics and the archive repair.
+Machine coverage includes all updated declared inputs and all archived stored/
+raw/source identities. Scientific premises, source exposure, same-model limits
+and the unexecuted recommended fault plan remain those of the original review.
+No editable prompt, physical axiom, checkpoint, source, W, Git, PR or audit was
+changed. Canonical scientific execution and its actual faults, cache, publication
+checks and later audit remain root-owned pending actions.

@@ -1,0 +1,15 @@
+syndrome checks passed: 1408
+C2 class axis sector (-1, -1, -1): lambda counts {-1: 28672}  -> eta_f = [1]
+C2 class axis sector (1, 1, 1): lambda counts {-1: 28672}  -> eta_f = [1]
+C2 class edge sector (-1, -1, -1): lambda counts {-1: 61440}  -> eta_f = [1]
+C2 class edge sector (1, 1, 1): lambda counts {-1: 61440}  -> eta_f = [1]
+  axis C2 ((1, 0, 0), (0, -1, 0), (0, 0, -1)): lambda values [-1]
+  axis C2 ((-1, 0, 0), (0, 1, 0), (0, 0, -1)): lambda values [-1]
+  axis C2 ((-1, 0, 0), (0, -1, 0), (0, 0, 1)): lambda values [-1]
+  edge C2 ((-1, 0, 0), (0, 0, 1), (0, 1, 0)): lambda values [-1]
+  edge C2 ((-1, 0, 0), (0, 0, -1), (0, -1, 0)): lambda values [-1]
+  edge C2 ((0, 1, 0), (1, 0, 0), (0, 0, -1)): lambda values [-1]
+  edge C2 ((0, -1, 0), (-1, 0, 0), (0, 0, -1)): lambda values [-1]
+  edge C2 ((0, 0, 1), (0, -1, 0), (1, 0, 0)): lambda values [-1]
+  edge C2 ((0, 0, -1), (0, -1, 0), (-1, 0, 0)): lambda values [-1]
+time 56.6s

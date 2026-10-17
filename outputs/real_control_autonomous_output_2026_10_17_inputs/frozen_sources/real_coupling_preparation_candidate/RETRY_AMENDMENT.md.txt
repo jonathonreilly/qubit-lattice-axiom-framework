@@ -1,0 +1,25 @@
+# One predeclared infrastructure repair
+
+The first attempted run began at 2026-10-17T04:57:40.053170+00:00 and
+exited 1 after 0.04669991694390774 wall seconds. Its complete source,
+prelaunch, receipt and streams remain in run01. The child failed on
+`import sympy` with `ModuleNotFoundError`; no scientific assertion ran.
+The first launcher imported the user's installed SymPy successfully but
+invoked its child with `-I`, which excludes that user package path.
+
+The original RESOURCE_PLAN permits at most one repair retry after preserving
+failure and writing an amendment. The second launcher keeps `-I` and writes
+a small explicit import bootstrap which inserts exactly the existing pinned
+SymPy package parent before executing the identical checker copy. That
+bootstrap, interpreter, SymPy entry and distribution metadata are captured
+before Popen. There is no package install, fallback search or inherited
+scientific checker import. The launcher and checker originals are preserved.
+
+The mathematical checker remains byte-identical to run01 (SHA256
+70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0).
+The theorem body remains byte-identical to the first prelaunch (SHA256
+57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c).
+CPU20/20, external wall30, maximum dense4, symbolic kappa and sparse
+M16/M17 fixtures remain unchanged. No further run is authorized by this
+packet after this retry. A further unexpected failure would remain an open
+execution obligation, not trigger tuning.

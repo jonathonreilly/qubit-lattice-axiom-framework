@@ -1,0 +1,20 @@
+{
+  "task": "Selective independent check of the frozen exact-ladder resonant coupling-family theorem",
+  "candidate_sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0",
+  "freeze_sha256": "8cdf10121e4c42247d4aba730a48413817a62b9ada420adfc6bc70df7df64879",
+  "exposure_before_independent_run": "Full new candidate and its manifest, freeze, source snapshots; no new author checker, launcher, scalar inputs or outputs. Extensive earlier author/reviewer and root-suggested-route exposure is retained.",
+  "purpose": "Check exact scalar majorants obtained from a separately written BV/contour and real-band decomposition; symbolic phase and residue identities; endpoint and column-factor countercases; exact finite-distance and load accounting.",
+  "scientific_attempts_authorized": 1,
+  "implementation_retry_policy": "At most one additional attempt only after saving the failed streams and a written amendment; no adaptive search or parameter changes.",
+  "cpu_soft_seconds": 30,
+  "cpu_hard_seconds": 30,
+  "wall_seconds": 45,
+  "maximum_matrix_dimension": 2,
+  "maximum_integer_power_requested": 80,
+  "symbolic_variables_maximum": 8,
+  "memory": "Measure peak RSS; no enforced virtual-memory ceiling on this macOS runtime.",
+  "thread_environment": "OMP_NUM_THREADS=OPENBLAS_NUM_THREADS=MKL_NUM_THREADS=NUMEXPR_NUM_THREADS=1; requests, not measured thread counts.",
+  "prohibited": ["grids", "optimizers", "quadrature", "dynamics", "author-checker replay/import", "network", "large clock allocation"],
+  "prelaunch": "Before creating the child, serialize, flush, fsync and close a JSON binding of every review input/code/note and the actual executed source plus Python, SymPy entry and distribution metadata bytes. Child verifies bindings before scientific work. Recheck afterward and preserve full stdout/stderr and costs.",
+  "scope_limit": "Finite exact arithmetic and small symbolic identities corroborate, but do not mechanically prove, the Hilbert-space and contour argument. Runtime binding is partial, not transitive closure. No physical or publication acceptance is granted."
+}

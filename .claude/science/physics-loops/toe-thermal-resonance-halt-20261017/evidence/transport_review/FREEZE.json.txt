@@ -1,0 +1,27 @@
+{
+  "frozen_utc": "2026-10-17T04:49:59.615698+00:00",
+  "status": "Selective static transport review; known publication-format repair remains separately reviewable; no science or retained verdict",
+  "review": {
+    "path": "REVIEW.md",
+    "bytes": 18778,
+    "sha256": "69f89458fb51f9ddf8c15b68339c8a96c8f95cf5e07b82b0487f52434ebdf530"
+  },
+  "manifest": {
+    "path": "FILE_MANIFEST.json",
+    "bytes": 47380,
+    "sha256": "50f32b0020f39e4b02f7598a786efe4ef1686bb3a664e0e09226633bec829493"
+  },
+  "executed_checker": {
+    "path": "attempt_01/check_transport.py",
+    "bytes": 14642,
+    "sha256": "6eb69844f103f97f5e4fc21af4b786a6d32663954f37657b7678435ca901dcbd"
+  },
+  "receipt": {
+    "path": "attempt_01/RECEIPT.json",
+    "bytes": 2618,
+    "sha256": "6e0fcba543ba888a0a56d93b3b369f4ff6047cf83090dcbe0efbe3074a1c8621"
+  },
+  "scientific_executions": 0,
+  "frozen_publication_packet": "001e6f9fb06cc7cf8b23187ae87af304b45e982e254c4f94068fea4bd876719c",
+  "editable_prompt_files_changed": []
+}

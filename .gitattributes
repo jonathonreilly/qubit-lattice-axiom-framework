@@ -104,3 +104,12 @@ archive_unlanded/memory_recovery_2026_09_03/** -whitespace
 .claude/science/physics-loops/toe-product-source-controlled-stop-20261016/integration_evidence/9e44a87ebaed5352dd8e402598b83b250e0a3def8a98dc0763d278ecb3bc1328 whitespace=-blank-at-eol,-blank-at-eof
 .claude/science/physics-loops/toe-product-source-controlled-stop-20261016/integration_evidence/b66bddf6e14bb2fe1b9bd26a13e8bbbcf48aa1ff5571f4c6603e50c46e6656a8 whitespace=-blank-at-eol,-blank-at-eof
 .claude/science/physics-loops/toe-product-source-controlled-stop-20261016/wrapper_check/WRAPPER_LINES_1_65.md whitespace=-blank-at-eof
+
+# Preserve exact captured historical patches and publication logs for autonomous halt.
+/outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_certificate_review/OLD_CAP_CHECKER_DELTA.diff whitespace=-blank-at-eol,-blank-at-eof
+/outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/DRAFT_WRAPPER.md whitespace=-blank-at-eol,-blank-at-eof
+/outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/pre_main_publication/logs/runner-cache/two_body_autonomous_halt_2026_10_17.txt whitespace=-blank-at-eol,-blank-at-eof
+/outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/pre_main_publication/staged_check.stdout whitespace=-blank-at-eol,-blank-at-eof
+/outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/prepublication_refresh/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.diff whitespace=-blank-at-eol,-blank-at-eof
+/outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/prepublication_refresh/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.diff whitespace=-blank-at-eol,-blank-at-eof
+/outputs/two_body_autonomous_halt_2026_10_17_inputs/portability/COMPLETE_CHANGED_LOGIC.diff whitespace=-blank-at-eol,-blank-at-eof

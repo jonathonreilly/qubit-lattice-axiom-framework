@@ -1,0 +1,47 @@
+{
+  "started_utc": "2026-10-17T03:33:56.554017+00:00",
+  "finished_utc": "2026-10-17T03:33:57.278696+00:00",
+  "runner": "scripts/emitter_coupling_family_2026_10_17.py",
+  "prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/canonical_01/PRELAUNCH.json",
+    "bytes": 19032,
+    "sha256": "36f834863d18d0c71b297240afa872e76443419d79fc176a39c6b1f92d433af7"
+  },
+  "all_source_input_bytes_unchanged": true,
+  "runner_cache_also_checked_filesystem_generation_tokens": true,
+  "status": "ok",
+  "exit_code": 0,
+  "elapsed_seconds": 0.6763970851898193,
+  "child_user_cpu_seconds": 0.298449,
+  "child_system_cpu_seconds": 0.05990399999999999,
+  "caps": {
+    "CPU_soft_hard_seconds": [
+      20,
+      20
+    ],
+    "external_wall_seconds": 30
+  },
+  "stream_semantics": "runner_cache merges child stderr into stdout; the empty stderr field is protocol-only, not an independently observed child stream.",
+  "stdout_merged": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/canonical_01/stdout_merged.txt",
+    "bytes": 712,
+    "sha256": "1ceee6aac88d16e09e90c51089b1bf06af45f776cfd7244630e384304adaae63"
+  },
+  "stderr_protocol": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/canonical_01/stderr_protocol.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "cache_status": "fresh",
+  "cache": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/canonical_01/cache.txt",
+    "bytes": 1063,
+    "sha256": "581afa1c4e5774dc5de5b105d2425a5c166d4b15d6a09d0b16d400d89cd01ada"
+  },
+  "result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/canonical_01/result.json",
+    "bytes": 54703,
+    "sha256": "d347959ffd75d3f3a08d3d3be802b8ff4c721bd6748dd4d0def97e5fc48699de"
+  },
+  "scope": "Actual replay of one qualified scalar calculation. This is reproducibility, not a new independent theorem proof, interval proof from samples, dynamics simulation or retained audit."
+}

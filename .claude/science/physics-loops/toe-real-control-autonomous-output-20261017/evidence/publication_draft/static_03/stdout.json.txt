@@ -1,0 +1,330 @@
+{
+  "status": "static transport checks satisfied",
+  "scientific_executions": 0,
+  "mutation_executions": 0,
+  "checks": [
+    {
+      "name": "CPU envelope installed by launcher",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "entire finite fixture and executed source match prelaunch",
+      "satisfied": true,
+      "detail": 121
+    },
+    {
+      "name": "source labels unique and expected",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "all stored/raw source labels preserved",
+      "satisfied": true,
+      "detail": 229
+    },
+    {
+      "name": "source freeze real_coupling_halt_route",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "source freeze real_coupling_route_review",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "source freeze real_coupling_preparation_candidate",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "source freeze real_coupling_preparation_review",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "source freeze real_control_root_review",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "canonical main explicitly refuses optimized Python",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "optimized refusal remains active",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "literal finite closure",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "every source destination declared",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "manifest stored hashes and lengths match",
+      "satisfied": true,
+      "detail": 108
+    },
+    {
+      "name": "realifier_author original AST pin",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "realifier_author adapted AST pin",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "realifier_author exact original reconstruction",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "preparation_author original AST pin",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "preparation_author adapted AST pin",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "preparation_author exact original reconstruction",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "complete statement and adaptation accounting",
+      "satisfied": true,
+      "detail": {
+        "statements": 448,
+        "events": 16,
+        "added_after_finally_returns": 1
+      }
+    },
+    {
+      "name": "failure is not suppressed by finally return",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "all dynamic snapshot labels finite and pinned",
+      "satisfied": true,
+      "detail": 16
+    },
+    {
+      "name": "scientific bodies have no historic absolute fallback",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "inert import excludes scientific dependencies and calls",
+      "satisfied": true,
+      "detail": [
+        "pathlib",
+        "gzip",
+        "hashlib",
+        "json",
+        "resource",
+        "time"
+      ]
+    },
+    {
+      "name": "finite real aliases resolved without scientific execution",
+      "satisfied": true,
+      "detail": 21
+    },
+    {
+      "name": "resolver rejects malformed finite mappings",
+      "satisfied": true,
+      "detail": [
+        {
+          "name": "valid plain",
+          "expected": "accept",
+          "exception": null,
+          "satisfied": true
+        },
+        {
+          "name": "valid gzip",
+          "expected": "accept",
+          "exception": null,
+          "satisfied": true
+        },
+        {
+          "name": "unknown role",
+          "expected": "reject",
+          "exception": "KeyError",
+          "satisfied": true
+        },
+        {
+          "name": "unknown alias",
+          "expected": "reject",
+          "exception": "KeyError",
+          "satisfied": true
+        },
+        {
+          "name": "absolute",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "parent traversal",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "dot component",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "double separator",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "missing",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "leaf symlink",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "parent symlink",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "escape symlink",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "stored size",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "stored digest",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "raw size",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "raw digest",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "unsupported compression",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "negative raw size",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "oversized declared raw",
+          "expected": "reject",
+          "exception": "AssertionError",
+          "satisfied": true
+        },
+        {
+          "name": "invalid gzip",
+          "expected": "reject",
+          "exception": "BadGzipFile",
+          "satisfied": true
+        }
+      ]
+    },
+    {
+      "name": "both complete proofs reconstructed by three target edits only",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "all local note Markdown destinations exist",
+      "satisfied": true,
+      "detail": [
+        "../scripts/real_control_autonomous_output_2026_10_17.py",
+        "THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+        "../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_control_root_review/QUALIFICATION.md.txt",
+        "../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_control_root_review/ACCEPTANCE.json",
+        "../outputs/real_control_autonomous_output_2026_10_17_inputs/SOURCE_MAP.json",
+        "../outputs/real_control_autonomous_output_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+        "../outputs/real_control_autonomous_output_2026_10_17_inputs/REPRODUCTION_PLAN.json",
+        "../outputs/real_control_autonomous_output_2026_10_17_inputs/PUBLICATION_STATUS.json",
+        "../.claude/science/physics-loops/toe-real-control-autonomous-output-20261017/ROOT_PORTABILITY_ACCEPTANCE.json",
+        "../.claude/science/physics-loops/toe-real-control-autonomous-output-20261017/EXECUTION_STATUS.md",
+        "../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/SOURCE_MAP.json",
+        "../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/EXECUTION.md.txt",
+        "../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/RESOURCE_PLAN.json"
+      ]
+    },
+    {
+      "name": "original failed import preserved",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "original retry did not alter mathematics",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "root budget qualification explicit",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "new overlay normal text contains no trailing whitespace",
+      "satisfied": true,
+      "detail": []
+    }
+  ],
+  "limits": {
+    "CPU_seconds": [
+      30,
+      30
+    ],
+    "external_wall_seconds": 45,
+    "matrix_dimension": 0,
+    "resolver_fixtures": 20,
+    "runtime_binding": "partial selected interpreter/stdlib bytes, not full OS",
+    "memory_limit": null
+  },
+  "elapsed_seconds": 0.1866331249475479
+}

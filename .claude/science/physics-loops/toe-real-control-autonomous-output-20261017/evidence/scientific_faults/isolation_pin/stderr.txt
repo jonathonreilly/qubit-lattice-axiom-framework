@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/isolation_pin/driver.py", line 7, in <module>
+    result=ns['run_preparation_author'](inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/isolation_pin/mutated.py", line 502, in run_preparation_author
+    check(f'M{M}_core_old{oldbits}_position{position}_full_Pauli_action', clean(add(result, {basis: -old_energy - Ciso})) == {})
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/isolation_pin/mutated.py", line 352, in check
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: M16_core_old0_position20_full_Pauli_action

@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_2026_10_17.py
+runner_sha256: 053cbe8d3cf02759988b941c19b18e1720b4252c50b2f3c299461b803c3ffc60
+input_fingerprint_sha256: 8366e5d0dacac31e6f9d5dbab166bbefd31fdb4473391764eae7e9af4aaea33b
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 4.51
+status: ok
+----- stdout -----
+PASS occupation-parity signs and D = B_link P_up P_dn; empty matter has +1 parity
+PASS L = 6: commuting stabilizer group with no -1
+PASS L = 6: log2 code dimension 3
+PASS a single matter Majorana flips exactly D_v and P_up,v (a local neutral D/P pair; dressed P-only endpoints carry the charge)
+PASS no operator in a radius-2 ball flips P_up,v alone (finite radius-2 control; charge identification uses the stabilizer identity)
+PASS up and down at one site are related by a local operator (one anyon type, two states)
+PASS gauge-dressed matter hops create only the two end charges
+T-junction signs of the up excitation: {-1: 20}
+PASS the up excitation is a fermion: T-junction sign -1 for all 20 triples
+matter spin action checks: {'order48': True, 'rep': True, 'minus_is_parity': True, 'preserves': True, 'doublet': True, 'c2': True}
+PASS 2O acts on the matter pair by a representation with U(-1) = matter parity, preserving number and parity
+PASS c_s^dag transforms as the spin-1/2 doublet and all 18 C2 lifts square to -1 on it
+gauge-charge pair eigenvalues (link sector): {'C2axis': -1, 'C2edge': -1}
+PASS link sector (companion code, consistent action, clean creators): lambda_f = -1 for an axis C2 and an edge C2
+PASS composition: for all 18 C2 lifts and both eigenvectors, the relative doublet pair factor lambda_f m^2 is +1 (w2 inference requires the declared localization input)
+per_element: L = 6 code; 48 elements of 2O; one axis and one edge C2 for the link pair test
+per_site: five qubits per site (six link and four matter Majoranas)
+per_mode: two matter modes per site
+per_block: not applicable
+lattice_wide: L = 6 (code), L = 8 (link pair test)
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

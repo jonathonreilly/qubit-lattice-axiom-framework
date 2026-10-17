@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/old_target_phase/driver.py", line 7, in <module>
+    result=ns['run_realifier_author'](inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/old_target_phase/mutated.py", line 232, in run_realifier_author
+    demand('same_energy_real_old_falsifier', mul(K, uplus) == uplus and mul(K, uminus) == uminus and (mul(Wgate, uplus) == scale(uplus, omega)) and (mul(Wgate, uminus) == uminus), {'u_plus_unnormalized': uplus, 'u_minus_unnormalized': uminus, 'omega_plus': omega})
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/old_target_phase/mutated.py", line 80, in demand
+    raise AssertionError(name)
+AssertionError: same_energy_real_old_falsifier

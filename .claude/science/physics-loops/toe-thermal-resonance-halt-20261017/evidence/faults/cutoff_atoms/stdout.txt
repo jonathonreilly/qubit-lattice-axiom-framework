@@ -1,0 +1,100 @@
+{
+  "status": "FAILED",
+  "started_utc": "2026-10-17T04:57:32.841749+00:00",
+  "independence": "author corroboration only; no prior checker import/replay",
+  "checks": {
+    "cpu_limit_is_predeclared": true,
+    "snapshot:inputs/fixed.md": true,
+    "snapshot:inputs/fixed_review.md": true,
+    "snapshot:inputs/fixed_acceptance.json": true,
+    "snapshot:inputs/fixed_qualification.md": true,
+    "snapshot:inputs/family.md": true,
+    "snapshot:inputs/family_acceptance.json": true,
+    "snapshot:inputs/family_qualification.md": true,
+    "snapshot:inputs/installed.md": true,
+    "snapshot:inputs/installed_acceptance.json": true,
+    "snapshot:inputs/installed_qualification.md": true,
+    "snapshot:inputs/weighted.md": true,
+    "snapshot:inputs/weighted_acceptance.json": true,
+    "snapshot:inputs/weighted_qualification.md": true,
+    "snapshot:inputs/moment.md": true,
+    "snapshot:inputs/moment_acceptance.json": true,
+    "snapshot:inputs/moment_qualification.md": true,
+    "snapshot:inputs/generic_v2.md": true,
+    "snapshot:inputs/route.md": true,
+    "snapshot:inputs/interval.md": true,
+    "snapshot:inputs/interval.json": true,
+    "snapshot:inputs/SCIENCE_WORKFLOW.md": true,
+    "exact_unit_circle": true,
+    "Sigma0_modulus_identity": true,
+    "Sigma0_imag_identity": true,
+    "center_velocity_interval": true,
+    "form_factor_interval": true,
+    "curvature_ratio": true,
+    "sqrt_velocity_surrogate": true,
+    "Gamma_coefficient": true,
+    "pole_horizontal_bound": true,
+    "pole_vertical_bound": true,
+    "all_poles_inside_rectangle": true,
+    "pole_decay_coefficient": true,
+    "denominator_q_ratio": true,
+    "uniform_denominator_relative": true,
+    "incoming_L2_floor": true,
+    "outgoing_L2_floor": true,
+    "density_relative_rounding": true,
+    "density_cutoff_kept": true,
+    "real_affine_range": true,
+    "exact_log_majorant": true,
+    "H0_coefficient": true,
+    "F0_coefficient": true,
+    "cutoff_total_variation": false
+  },
+  "values": {
+    "v0": {
+      "rational": "135405736045147688887127393136/5335816955256357129429116105401",
+      "display_float": 0.025376758082332338
+    },
+    "b0": {
+      "rational": "43622465478810771543912030761074996121296252596000000000000000/28470942580001221460551733349533582334670664139372522141370801",
+      "display_float": 1.5321749659757453
+    },
+    "Sigma0_real": {
+      "rational": "-22123026783345543136159112298123406566745599283894017365054667106208838958502501966134949050250000000000000/570084830782501077356872021579416299771748459495671553587229885996924328162858311349743736158229746748179",
+      "display_float": -38.80655226868495
+    },
+    "Sigma0_imag": {
+      "rational": "-8789594091354927179060415316850710536598500513874275855734216074738810661291500000000000000000000000000000/190028276927500359118957340526472099923916153165223851195743295332308109387619437116581245386076582249393",
+      "display_float": -46.25413771818989
+    },
+    "denominator_relative_upper": {
+      "rational": "3752645388379/1250000000000000000",
+      "display_float": 3.0021163107032e-06
+    },
+    "incoming_pointwise_relative": {
+      "rational": "11/499998",
+      "display_float": 2.2000088000352e-05
+    },
+    "outgoing_pointwise_relative": {
+      "rational": "2/83333",
+      "display_float": 2.4000096000384e-05
+    },
+    "density_relative": {
+      "rational": "3666695/83332666668",
+      "display_float": 4.400069200483203e-05
+    },
+    "density_L1_floor": {
+      "rational": "3301/68750000",
+      "display_float": 4.8014545454545454e-05
+    },
+    "max_log_argument": {
+      "rational": "80000000000000019/19",
+      "display_float": 4210526315789474.5
+    }
+  },
+  "failed_routes": {},
+  "resources": {},
+  "error": {
+    "type": "AssertionError",
+    "message": "cutoff_total_variation"
+  }
+}

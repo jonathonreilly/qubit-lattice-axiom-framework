@@ -1,0 +1,5 @@
+{
+  "redirected_historical_rows": 16,
+  "distinct_exact_historical_files": 4,
+  "all_live_archives_valid": true
+}

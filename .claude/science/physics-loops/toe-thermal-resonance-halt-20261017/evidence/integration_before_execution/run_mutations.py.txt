@@ -1,0 +1,64 @@
+"""Six predeclared copied-source scientific faults; preserve every attempt."""
+from pathlib import Path
+from datetime import datetime, timezone
+import ast, hashlib, importlib.metadata, importlib.util, json, os, resource, subprocess, sys, time
+D=Path(__file__).resolve().parent
+W=D.parents[1]/'correlation_worktree'
+Q=W/'.claude/science/physics-loops/toe-thermal-resonance-halt-20261017'
+R=D/'mutations';R.mkdir(exist_ok=False)
+base=W/'scripts/thermal_resonance_halt_2026_10_17.py'
+raw=base.read_bytes();source=raw.decode()
+def pin(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def write(p,j):p.write_text(json.dumps(j,indent=2)+'\n')
+assert pin(base)['sha256']=='944f256cd1e894601d2e483db47f9faba57d371532ed22d2b5e1835b409de872'
+assert json.loads((D/'canonical_01/EXECUTION.json').read_text())['status']=='ok'
+declared=next(ast.literal_eval(n.value) for n in ast.parse(source).body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in n.targets))
+assert len(declared)==149
+runtime=[pin(Path(importlib.util.find_spec(n).origin)) for n in ('sympy','fractions')]
+dist=importlib.metadata.distribution('sympy')
+runtime += [pin(Path(dist.locate_file(x))) for x in dist.files if str(x).endswith('.dist-info/METADATA')]
+specs=[
+ ('cutoff_atoms','resonance_author','tv_terms = [F(8), F(8), F(4)]','tv_terms = [F(8), F(8), F(0)]',"AssertionError: cutoff_total_variation",None),
+ ('transmission_orientation','resonance_author','correct = zsub(tminus, zdiv(Dzbar, Dz))','correct = zsub(tminus, zdiv(Dz, Dzbar))',"AssertionError: correct_phase_discriminator",None),
+ ('pair_diagonal','product_preparation_author','return kap * number_pair + sign *','return kap / 2 * number_pair + sign *',"AssertionError: ('emitter_pair_charpoly_L_1',",None),
+ ('density_complement','product_preparation_author',"add(controls, 'counter_source_density', (SA, SB), u0 * (I4 - kron(n, n)), u0)","pass  # Deliberately omit the density complement.","AssertionError:",'assert not defect, defect'),
+ ('vacancy_reserve','interacting_preparation_author','scale(nu, number(clocks[1])), scale(kappa, number(j1))','scale(0, number(clocks[1])), scale(kappa, number(j1))','AssertionError','assert not add(run, extra, scale(-1, K), scale(-cprep, Iop), scale(-1, aux))'),
+ ('scalar_complement','interacting_preparation_author','controls = [add(scale(ba, Iop), scale(-1, Ga))','controls = [add(scale(ba / 2, Iop), scale(-1, Ga))','AssertionError','assert not add(run, extra, scale(-1, K), scale(-cprep, Iop), scale(-1, aux))')]
+cases=[]
+for label,role,old,new,expected,line in specs:
+ assert source.count(old)==1,(label,source.count(old))
+ folder=R/label;folder.mkdir()
+ changed=source.replace(old,new).replace('REPO = Path(__file__).resolve().parents[1]',f'REPO = Path({str(W)!r})')
+ # The guarded original main is inert. A separate driver calls precisely one
+ # selected body, with unchanged input verifier and finite resolver.
+ p=folder/'mutated.py';p.write_text(changed);compile(changed,str(p),'exec')
+ driver=folder/'driver.py'
+ driver.write_text('import json, resource, runpy\nfrom pathlib import Path\nresource.setrlimit(resource.RLIMIT_CPU,(30,30))\n'+f"ns=runpy.run_path({str(p)!r},run_name='copied_scientific_fault')\nns['verify_artifacts']()\ninputs=ns['FrozenInputs'](ns['REPO'],ns['INPUT_ROOT']/'INPUT_MAP.json')\nresult=ns['run_{role}'](inputs)\nPath({str(folder/'unexpected_result.json')!r}).write_text(json.dumps(result,indent=2))\n")
+ compile(driver.read_text(),str(driver),'exec')
+ cases.append({'label':label,'role':role,'scientific_edit':{'old':old,'new':new},'expected_stderr':expected,'expected_traceback_statement':line,'program':pin(p),'driver':pin(driver),'transport':'Only REPO becomes fixed W path. Original guarded main stays inert; driver verifies unchanged inputs and calls one selected body.'})
+plan={'planned_utc':datetime.now(timezone.utc).isoformat(),'base':pin(base),'cases':cases,'CPU_soft_hard_seconds':[30,30],'external_wall_seconds':45,'total_case_count':6,'maximum_dense_dimension':4,'runtime':runtime,'sympy_version':dist.version,'launcher':pin(Path(__file__)),'scope':'Fault sensitivity, not independent proof. Two resonance faults and four full-space preparation faults; no all-premise coverage claim. No full many-body or time dynamics calculation.'}
+write(R/'PLAN.json',plan)
+env=os.environ.copy();env.update(PYTHONDONTWRITEBYTECODE='1', PYTHONOPTIMIZE='0',OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='1',VECLIB_MAXIMUM_THREADS='1',NUMEXPR_NUM_THREADS='1')
+results=[]
+for case in cases:
+ folder=R/case['label'];driver=Path(case['driver']['path'])
+ bindings=[pin(base),case['program'],case['driver'],pin(R/'PLAN.json'),pin(Path(__file__)),pin(Path(sys.executable).resolve()),*runtime,*[pin(W/x) for x in declared]]
+ pre={'captured_utc':datetime.now(timezone.utc).isoformat(),'before_execution':True,'bindings':bindings,'caps':{'CPU_soft_hard_seconds':[30,30],'external_wall_seconds':45},'argv':[sys.executable,'-u',str(driver)],'cwd':str(folder),'environment_requests':{k:env[k] for k in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','VECLIB_MAXIMUM_THREADS','NUMEXPR_NUM_THREADS')},'thread_count_measured':False,'memory_cap':None,'runtime_coverage':'Interpreter plus selected dependency files, not a full environment lock.'}
+ with (folder/'PRELAUNCH.json').open('w') as f:f.write(json.dumps(pre,indent=2)+'\n');f.flush();os.fsync(f.fileno())
+ started=datetime.now(timezone.utc).isoformat();tick=time.monotonic();before=resource.getrusage(resource.RUSAGE_CHILDREN)
+ try:
+  proc=subprocess.run(pre['argv'],cwd=folder,env=env,capture_output=True,timeout=45)
+  out,err,code=proc.stdout,proc.stderr,proc.returncode;timeout=False
+ except subprocess.TimeoutExpired as exc:out,err,code=exc.stdout or b'',exc.stderr or b'',None;timeout=True
+ elapsed=time.monotonic()-tick;after=resource.getrusage(resource.RUSAGE_CHILDREN)
+ (folder/'stdout').write_bytes(out);(folder/'stderr').write_bytes(err)
+ unchanged=all(pin(Path(row['path']))==row for row in bindings)
+ decoded=err.decode(errors='replace');tail=decoded.strip().splitlines()[-1] if decoded.strip() else ''
+ intended=code==1 and tail.startswith(case['expected_stderr']) and (case['expected_traceback_statement'] is None or case['expected_traceback_statement'] in decoded)
+ record={'label':case['label'],'started_utc':started,'finished_utc':datetime.now(timezone.utc).isoformat(),'elapsed_seconds':elapsed,'exit_code':code,'timed_out':timeout,'intended_assertion_reached':intended,'all_bound_bytes_unchanged':unchanged,'no_result_written':not (folder/'unexpected_result.json').exists(),'user_cpu_seconds':after.ru_utime-before.ru_utime,'system_cpu_seconds':after.ru_stime-before.ru_stime,'launcher_children_peak_rss_bytes_macos_so_far':after.ru_maxrss,'prelaunch':pin(folder/'PRELAUNCH.json'),'stdout':pin(folder/'stdout'),'stderr':pin(folder/'stderr')}
+ write(folder/'EXECUTION.json',record);results.append(record);write(R/'RESULTS.json',{'plan':pin(R/'PLAN.json'),'cases':results})
+ assert intended and unchanged and record['no_result_written'],record
+assert base.read_bytes()==raw
+write(Q/'ROOT_MUTATION_REVIEW.json',{'reviewed_utc':datetime.now(timezone.utc).isoformat(),'plan':pin(R/'PLAN.json'),'cases':results,'case_count':6,'unexpected_failures':0,'canonical_source_unchanged':True,'scope':plan['scope'],'all_initial_attempts':True,'root_full_failure_stream_read':'Pending separate root inspection; machine assertion identification only.'})
+print(json.dumps({'cases':len(results),'intended_failures':sum(r['intended_assertion_reached'] for r in results),'elapsed_sum_seconds':sum(r['elapsed_seconds'] for r in results)},indent=2))

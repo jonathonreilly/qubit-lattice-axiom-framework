@@ -1,0 +1,30 @@
+from pathlib import Path
+import ast,hashlib,json,os
+A=Path(__file__).resolve().parent;D=A.parent;N=D.parent;W=N.parent/'correlation_worktree';S=N/'thermal_resonance_integration';Q=Path('.claude/science/physics-loops/toe-thermal-resonance-halt-20261017')
+def sha(b):return hashlib.sha256(b).hexdigest()
+def save(p,b):
+ p.parent.mkdir(parents=True,exist_ok=True)
+ with p.open('wb') as f:f.write(b);f.flush();os.fsync(f.fileno())
+rows=[]
+def cp(src,rel,pin=None):
+ b=src.read_bytes()
+ if pin:assert sha(b)==pin,(str(src),sha(b))
+ save(A/'inputs'/rel,b);rows.append({'source':str(src),'snapshot':str(Path('inputs')/rel),'bytes':len(b),'sha256':sha(b)})
+for name,pin in [('fix_math_spacing_transport.py','7d855580f5665f0f8245ac76bbc2168318d57553eb004ad5d76c5f7636cc5d37'),('repair_format_archive.py','169e858b378e5b329dbd88803b9131f0e7c0e600081adf137903e87c3e2ddbfe')]:cp(S/name,Path('integration')/name,pin)
+for rel in ['spacing_amendment/AMENDMENT.json','format_archive_followup/REPAIR.json','format_archive_followup/PACKAGING_MAP.before.json']:cp(S/rel,Path('integration')/rel)
+for p in sorted((S/'spacing_amendment/before').rglob('*')):
+ if p.is_file():cp(p,Path('before')/p.relative_to(S/'spacing_amendment/before'))
+primary=Path('scripts/thermal_resonance_halt_2026_10_17.py');tree=ast.parse((W/primary).read_bytes())
+audit=next(ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in n.targets))
+archive=json.loads((W/Q/'evidence/PACKAGING_MAP.json').read_text())
+paths=set(audit)|{str(primary),str(Q/'ROOT_WRAPPER_CHANGE.json'),str(Q/'evidence/PACKAGING_MAP.json')}
+paths.update(r['path'] for r in archive['files'])
+for rel in sorted(paths):cp(W/rel,Path('repo')/rel)
+# Reference original reviewer-preserved closure, not moving historical source directories.
+for name in ['FREEZE.json','REVIEW.md','attempt_01/RECEIPT.json']:cp(D/name,Path('original_review')/name)
+for rel in ['scripts/thermal_resonance_halt_2026_10_17.py','docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md','outputs/thermal_resonance_halt_2026_10_17_inputs/PROOF_BODY_MAP.json','outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json']:
+ cp(D/'inputs/repo'/rel,Path('original')/rel)
+for name in ['FREEZE.json','PACKET_MANIFEST.json','WRAPPER.md']:cp(D/'inputs/packet_metadata'/name,Path('original')/name)
+save(A/'INPUTS.json',(json.dumps({'files':rows,'archive_members':1177,'historical_packet':str(N/'thermal_resonance_publication_draft')},indent=2)+'\n').encode())
+save(A/'READ_FAILURES.json',(json.dumps({'events':[{'kind':'read-only wrong location','exact_output':'cat: thermal_resonance_integration/ROOT_WRAPPER_CHANGE.json: No such file or directory','recovery':'Read complete actual Q/ROOT_WRAPPER_CHANGE.json from supplied repository path.'}],'root_preserved_failure':'Spacing amendment left five stale archival pointers; separate repair record retained and reviewed, without rewriting AMENDMENT history.'},indent=2)+'\n').encode())
+print(json.dumps({'snapshots':len(rows),'bytes':sum(r['bytes'] for r in rows)}))

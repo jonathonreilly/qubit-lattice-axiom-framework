@@ -1,0 +1,916 @@
+{
+  "scope": "Title and keyword inventory only, not complete source review or import acceptance",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 170504,
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f",
+      "search_hits": [
+        {
+          "line": 26,
+          "text": "## 1. Existing core and imported synthesis"
+        },
+        {
+          "line": 34,
+          "text": "## 2. Two runtime schedules that must not be interchanged"
+        },
+        {
+          "line": 51,
+          "text": "## 3. Explicit preparation and the checked composition"
+        },
+        {
+          "line": 78,
+          "text": "## 4. Precision, energy and work corrections"
+        },
+        {
+          "line": 100,
+          "text": "## 5. Evidence and remaining boundary"
+        },
+        {
+          "line": 111,
+          "text": "# Proposed local conservative control for an equal-gap qubit register"
+        },
+        {
+          "line": 120,
+          "text": "## Sources and selection"
+        },
+        {
+          "line": 148,
+          "text": "## 1. Explicit restricted domain and one buffered battery"
+        },
+        {
+          "line": 205,
+          "text": "## 2. Exact finite circuit and spatial routing"
+        },
+        {
+          "line": 226,
+          "text": "does not justify deleting theta_circ from an amplitude comparator."
+        },
+        {
+          "line": 228,
+          "text": "## 3. Positive local pulses with bounded modeled strength and slew"
+        },
+        {
+          "line": 243,
+          "text": "There is no negative amplitude or negative elapsed time. Every generator"
+        },
+        {
+          "line": 261,
+          "text": "These are modeled bounds, not a hardware amplitude/derivative certificate."
+        },
+        {
+          "line": 268,
+          "text": "## 4. Literal free drift and a noncircular declared endpoint"
+        },
+        {
+          "line": 298,
+          "text": "## 5. Error and free-energy ledger"
+        },
+        {
+          "line": 305,
+          "text": "an amplitude claim need their separate phase allowance."
+        },
+        {
+          "line": 325,
+          "text": "## 6. Open checks and next decision"
+        },
+        {
+          "line": 346,
+          "text": "# Exposed analytical review: local conserving control on an equal-gap register"
+        },
+        {
+          "line": 350,
+          "text": "## 1. Exact scope and exposure"
+        },
+        {
+          "line": 358,
+          "text": "## 2. Buffer completion is unitary on every physical state"
+        },
+        {
+          "line": 384,
+          "text": "## 3. Independent sine and whole-output calculation"
+        },
+        {
+          "line": 428,
+          "text": "Adding a returned vacuum ancilla does not change it. There is no hidden sum over amplitudes or dimension factor. For a requested budget `epsilon_bat>0`, it suffices to choose the integer `L` with `L+1>=4 pi q/epsilon_bat`; the proposal's use of `e_bat` on both sides should be read as a requested budget, not an equation defining the realized error."
+        },
+        {
+          "line": 432,
+          "text": "## 4. What the imported theorem supplies"
+        },
+        {
+          "line": 454,
+          "text": "## 5. Explicit routing and positive pulse calculation"
+        },
+        {
+          "line": 490,
+          "text": "## 6. Strength, first derivative, and free drift"
+        },
+        {
+          "line": 517,
+          "text": "## 7. Endpoint selection and scalar order are noncircular"
+        },
+        {
+          "line": 538,
+          "text": "## 8. Complete output and energy budgets"
+        },
+        {
+          "line": 548,
+          "text": "therefore holds, with the optional universal cap two. For a self-adjoint full-generator discrepancy `E(t)`, Duhamel gives operator error at most `integral ||E(t)||dt` and hence adds at most twice that integral to the trace bound. A many-gate control prescription must keep this *total* allowance small; a fixed per-pulse tolerance cannot be silently reused without accumulation. Scalar errors matter separately for amplitude/isometry comparators even when invisible to density matrices. None of these statements supplies a physical clock, pulse calibration, packet preparation or controller output model."
+        },
+        {
+          "line": 585,
+          "text": "## 9. Qualified disposition and remaining obligations"
+        },
+        {
+          "line": 602,
+          "text": "# A conditional local, conserving endpoint with positive bounded controls"
+        },
+        {
+          "line": 608,
+          "text": "## 1. Sources and exact domain"
+        },
+        {
+          "line": 633,
+          "text": "## 2. Identical-gap reservoir and the complete finite unitary"
+        },
+        {
+          "line": 666,
+          "text": "## 3. Uniform full-output approximation"
+        },
+        {
+          "line": 686,
+          "text": "## 4. Circuit certificate and positive local gate realizations"
+        },
+        {
+          "line": 716,
+          "text": "### Effective certificate selection versus finite-real existence"
+        },
+        {
+          "line": 722,
+          "text": "## 5. Fixed strength and slew, with a noncircular laboratory endpoint"
+        },
+        {
+          "line": 775,
+          "text": "## 6. Energy, scalar reserves and external work accounting"
+        },
+        {
+          "line": 812,
+          "text": "## 7. Physical calibration, phase readiness and an error allocation"
+        },
+        {
+          "line": 851,
+          "text": "Thus a phase reference error is physically relevant. A known age t has theta=Delta t/hbar; it can be incorporated before circuit selection by compiling exp(+i theta N_S) V exp(-i theta N_S). If the comparator retains the actual beta_theta, the additional target trace error is at most 2q|theta|. If the comparator requires beta_L itself, apply (22) instead: its readiness trace error is at most 2 sigma_N |theta|<= (L-1)|theta|, where sigma_N is the square root of the finite variance in (19) divided by Delta. These are alternative comparison conventions, not errors to double count. Preparing the sine amplitudes, their phases and the initial product with S/R remains supplied."
+        },
+        {
+          "line": 866,
+          "text": "## 8. Resource and limitation ledger"
+        },
+        {
+          "line": 888,
+          "text": "## 9. Failed shortcuts and narrow negative-claim discipline"
+        },
+        {
+          "line": 901,
+          "text": "No scientific numerical runner was launched. The independent checks still required before acceptance are the finite-block/reference proof, gate and routing phases, the fixed-slot endpoint identity and the physical scope of the supplied control graph. A useful next finite discriminator is a nontrivial two-old-qubit target with complex amplitudes: certify its complete isometry, include both full SWAP and a fermionic-SWAP mutant, and verify (16) with an elapsed phase not equal to a multiple of 2pi. That proposed check has not been executed and is not evidence in this packet."
+        },
+        {
+          "line": 903,
+          "text": "## 10. Exposure and handoff"
+        },
+        {
+          "line": 912,
+          "text": "# Exposed review of the author's fixed-duration local conserving endpoint"
+        },
+        {
+          "line": 918,
+          "text": "## 1. Source identity and coverage"
+        },
+        {
+          "line": 926,
+          "text": "## 2. Physical finite lift and arbitrary-reference norm"
+        },
+        {
+          "line": 938,
+          "text": "For `theta=pi/(L+1)`, the normalized zero-extended amplitudes `b_j=sqrt(2/(L+1))sin(j theta)` obey `b_(j-1)+b_(j+1)=2cos(theta)b_j` and vanish at `j=0,L+1`. Multiplying by `b_j` and summing gives `sum b_j b_(j+1)=cos(theta)`. Thus"
+        },
+        {
+          "line": 961,
+          "text": "## 3. Imported synthesis, effective certificate and routing"
+        },
+        {
+          "line": 979,
+          "text": "## 4. Positive pulse and scalar calculation"
+        },
+        {
+          "line": 1000,
+          "text": "## 5. Fixed-duration parallel phase layer"
+        },
+        {
+          "line": 1043,
+          "text": "## 6. Physical admissibility, precision and complete output"
+        },
+        {
+          "line": 1059,
+          "text": "Summing serial slots, all final onsite terms, and a static norm error `b` gives exactly equation (24). The three categories in (25) spend at most one third of `eta_H_budget` each. In particular the common final amplitude error is multiplied by `m`, and the finite precision must be requested after the actual circuit count is known."
+        },
+        {
+          "line": 1061,
+          "text": "The norm cap in this algebra is a cap on `Q_tilde` before the amplitude multiplier. The displayed small-error allocation supplies ample headroom: every nominal final generator has norm at most `9pi/2`, below `6pi`, and every serial generator at most `2pi`. For the solved `epsilon<=1` budget the requested generator errors are far smaller than the gap to `Q_*`, and the requested amplitude errors are smaller than one. Thus positivity-compatible parameter families can maintain nonnegative pulse coefficients and the stated headroom. Arbitrary shape changes, temporal overlap, edge-orientation errors or extra actuated supports require their own integrated terms; merely matching the pulse area is insufficient."
+        },
+        {
+          "line": 1069,
+          "text": "## 7. Phase readiness and storage order"
+        },
+        {
+          "line": 1098,
+          "text": "## 8. Energy and prescribed-drive work"
+        },
+        {
+          "line": 1119,
+          "text": "For any specified observable and equal-trace states, `|Tr O(rho-sigma)|<=||O-cI|| ||rho-sigma||_1`. Since `H_B+H_A` ranges from zero to `(M+1)Delta`, its positive integer power has the centered range bound `((M+1)Delta)^p/2`. These errors can grow with accuracy-dependent `M`, so trace readiness alone is not a moment-accuracy certificate. The scalar `E0` cancels from differences of equal-trace energy expectations but remains in absolute means, the actual generator and all amplitude phases."
+        },
+        {
+          "line": 1136,
+          "text": "## 9. Provenance finding and disposition boundaries"
+        },
+        {
+          "line": 1155,
+          "text": "# Controlling qualifications: local conserving control"
+        },
+        {
+          "line": 1159,
+          "text": "## Restricted physical premises"
+        },
+        {
+          "line": 1161,
+          "text": "The old generator is the actual noninteracting equal-gap operator K_S=E0 I+Delta N_S, with E0>=0, Delta>0 and q>=1. The physical computational basis, matched new gaps, a connected path containing all old, battery and synthesis-ancilla sites, full adjacent SWAP, arbitrary onsite phase control, XY exchange, initial coherent sine packet, a clean synthesis ancilla, isolation and externally prescribed timing are supplied. These are additional permissions. A strict path with only XY and Z is not silently granted full SWAP. Neither an arbitrary interacting old H nor an inaccessible old site is covered."
+        },
+        {
+          "line": 1167,
+          "text": "## Finite packet, full completion and conditional synthesis"
+        },
+        {
+          "line": 1177,
+          "text": "## Author's fixed-duration phase route"
+        },
+        {
+          "line": 1206,
+          "text": "## Root's period-wait route"
+        },
+        {
+          "line": 1214,
+          "text": "## Readiness, storage and energy-transfer correction"
+        },
+        {
+          "line": 1233,
+          "text": "## Work and moments"
+        },
+        {
+          "line": 1243,
+          "text": "## Evidence, failed routes and scope"
+        },
+        {
+          "line": 1257,
+          "text": "# Local driven preparation of the buffered sine battery"
+        },
+        {
+          "line": 1265,
+          "text": "## 1. Domain and supplied permissions"
+        },
+        {
+          "line": 1298,
+          "text": "## 2. An explicit nearest-neighbor circuit"
+        },
+        {
+          "line": 1309,
+          "text": "the ith edge, the stopped amplitudes b_1,...,b_i and the continuing amplitude"
+        },
+        {
+          "line": 1346,
+          "text": "## 3. Literal installed free evolution and positive smooth pulses"
+        },
+        {
+          "line": 1381,
+          "text": "## 4. A noncircular endpoint phase correction"
+        },
+        {
+          "line": 1412,
+          "text": "## 5. Energy, covariance and modeled work"
+        },
+        {
+          "line": 1450,
+          "text": "## 6. Finite precision and full-output comparison"
+        },
+        {
+          "line": 1496,
+          "text": "## 7. Conditional composition with the runtime"
+        },
+        {
+          "line": 1525,
+          "text": "## 8. Evidence and remaining check"
+        },
+        {
+          "line": 1550,
+          "text": "# Source-exposed analytic check of local sine preparation"
+        },
+        {
+          "line": 1558,
+          "text": "## Exact target and evidence scope"
+        },
+        {
+          "line": 1568,
+          "text": "## 1. Circuit, signs and positive reserves (lines 34\u201388)"
+        },
+        {
+          "line": 1574,
+          "text": "normalizes the amplitudes. It follows by writing `sin^2=(1-cos(2 l alpha))/2` and summing the nontrivial `(L+1)`st roots of unity. In particular `w_1=1`, all `b_l,w_l` are positive, and `c_i^2+s_i^2=1`."
+        },
+        {
+          "line": 1588,
+          "text": "This proves the asserted state and relative signs through `i=L-1`; the last continuing amplitude is `sqrt(w_L)=b_L`. No branch is dropped. The largest occupied prefix has length `q+L-1<M`; the unused buffer sites stay zero. `L=1` correctly uses q flips alone, never evaluates an undefined conditional angle, and has zero sine-packet variance. The count `G=q+L-1` is exact for this schedule."
+        },
+        {
+          "line": 1602,
+          "text": "## 2. Literal free evolution, carrier derivative and caps (lines 90\u2013154)"
+        },
+        {
+          "line": 1630,
+          "text": "## 3. Fixed endpoint and noncircular phase choice (lines 125\u2013146)"
+        },
+        {
+          "line": 1650,
+          "text": "## 4. Energy, work and covariance (lines 156\u2013192)"
+        },
+        {
+          "line": 1676,
+          "text": "## 5. Precision, timing and moments (lines 194\u2013238)"
+        },
+        {
+          "line": 1697,
+          "text": "## 6. Conditional runtime composition (lines 240\u2013267)"
+        },
+        {
+          "line": 1707,
+          "text": "## 7. Author fixture and rejected shortcuts"
+        },
+        {
+          "line": 1717,
+          "text": "## Disposition and reopening conditions"
+        },
+        {
+          "line": 1726,
+          "text": "# Controlling qualifications: local sine preparation"
+        },
+        {
+          "line": 1730,
+          "text": "For q,L>=1, M=L+2q physical battery qubits carry H_B=Delta N_B. Starting from independent vacuum, q onsite flips and L-1 conditional rotations prepare the real amplitudes b_l=sqrt(2/(L+1)) sin(pi*l/(L+1)) on prefixes of lengths q+l-1. The number of serial rotation slots is G=q+L-1. The actual old Hamiltonian remains installed and decoupled during preparation."
+        }
+      ]
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 115070,
+      "sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823",
+      "search_hits": [
+        {
+          "line": 26,
+          "text": "## 1. Parent, inputs and supplied controls"
+        },
+        {
+          "line": 43,
+          "text": "## 2. Exact stages and the two release contracts"
+        },
+        {
+          "line": 92,
+          "text": "The corresponding nominal isometry defects are half the displayed ramp terms. Every reference is retained. The additive-complement error shorthand 2 nu A_u is valid only if nu bounds ||delta Gamma|| in energy units. A dimensionless relative coefficient bound nu instead costs 2 nu ||Gamma|| A_u. Integrated error control does not establish pointwise amplitude or derivative bounds."
+        },
+        {
+          "line": 94,
+          "text": "## 3. Strength, modeled slew and ordering of resources"
+        },
+        {
+          "line": 106,
+          "text": "The disjoint stages then have incident modeled strength <=2J_*+g and sum of incident first-derivative norms <=S_*. Flat endpoints handle joins. The global derivative norm can grow with apparatus size. The claim concerns the specified mathematical waveform, not hard bandwidth, a microscopic controller, or physical implementation slew. Actual implementation caps require separately supplied pointwise amplitude/derivative control or slack; the integrated error budget is insufficient."
+        },
+        {
+          "line": 120,
+          "text": "## 4. Release-to-runtime composition and chronology"
+        },
+        {
+          "line": 142,
+          "text": "## 5. Full physical release moments"
+        },
+        {
+          "line": 176,
+          "text": "## 6. Evidence, attribution and unresolved suppliers"
+        },
+        {
+          "line": 186,
+          "text": "## 7. Immutable arguments and controlling qualifications"
+        },
+        {
+          "line": 192,
+          "text": "# Conditional preparation and release for the installed strong-spectral bus"
+        },
+        {
+          "line": 198,
+          "text": "## 1. Exact sources and the interface they leave open"
+        },
+        {
+          "line": 211,
+          "text": "## 2. Literal bus and additional supplied resources"
+        },
+        {
+          "line": 238,
+          "text": "## 3. Exact finite schedule and phases"
+        },
+        {
+          "line": 287,
+          "text": "## 4. Full-output ramp, calibration and release bounds"
+        },
+        {
+          "line": 321,
+          "text": "## 5. Common incident cap, action, scalar and work ledgers"
+        },
+        {
+          "line": 370,
+          "text": "## 6. Exact runtime composition and noncircular choice order"
+        },
+        {
+          "line": 393,
+          "text": "## 7. Complete installed release moments"
+        },
+        {
+          "line": 445,
+          "text": "## 8. Exact obstructions to careless composition and one new check"
+        },
+        {
+          "line": 460,
+          "text": "## 9. The physical premise that remains"
+        },
+        {
+          "line": 475,
+          "text": "# Independent mathematical review: installed bus preparation and release"
+        },
+        {
+          "line": 477,
+          "text": "**Result: the new composition is supported within its declared conditional driven-model scope. No blocking mathematical defect was found in the frozen candidate.** This supports a root decision about this source revision; it is not root acceptance, publication approval, a formal audit verdict, or independent revalidation of the entire inherited runtime-bus theorem."
+        },
+        {
+          "line": 489,
+          "text": "There is one nonblocking notation clarification at candidate line 121. The shorthand `2 nu A_u` is valid if nu bounds the full additive operator error `||delta Gamma||`. If nu denotes a dimensionless common amplitude error in `(1+delta a)Gamma`, the corresponding bound is `2 nu ||Gamma|| A_u`. The candidate's general full-generator bound (11) is correct and already covers either case; the shorthand should name its norm/units before independent reuse. This review uses the additive operator-norm interpretation and makes no claim that a scalar coefficient alone bounds a large generator."
+        },
+        {
+          "line": 491,
+          "text": "## Exact source coverage and inheritance"
+        },
+        {
+          "line": 511,
+          "text": "## Independent derivation"
+        },
+        {
+          "line": 517,
+          "text": "## 1. Full SWAP with arbitrary correlations"
+        },
+        {
+          "line": 534,
+          "text": "## 2. Duhamel, positivity, and physical load"
+        },
+        {
+          "line": 550,
+          "text": "## 3. Literal time, source phase, and the exact marginal"
+        },
+        {
+          "line": 564,
+          "text": "## 4. Full installed moments from a Gram operator"
+        },
+        {
+          "line": 596,
+          "text": "## 5. A general off-code discriminator derived here"
+        },
+        {
+          "line": 610,
+          "text": "## 6. Scope and limits at this stage"
+        },
+        {
+          "line": 619,
+          "text": "## Independent exact-arithmetic execution"
+        },
+        {
+          "line": 638,
+          "text": "## Remaining obligations and recovery"
+        },
+        {
+          "line": 649,
+          "text": "# Root reconstruction before the separate preparation review"
+        },
+        {
+          "line": 680,
+          "text": "f_l=a_l N_l+b_l D_l. The port part has one excitation at c1 and amplitude"
+        },
+        {
+          "line": 737,
+          "text": "# Qualified acceptance of installed-bus preparation and release"
+        },
+        {
+          "line": 760,
+          "text": "# Proposed bounded-slew preparation with explicit memory evolution"
+        },
+        {
+          "line": 808,
+          "text": "For mixed arbitrary inputs this denotes conjugation on the retained D/E/R state, tensored with the pure C state; the scalar phase is meaningful only at the isometry/amplitude level. The proposed trace error bound is"
+        },
+        {
+          "line": 824,
+          "text": "These gates use disjoint site matchings or independent onsite rotations. Their amplitudes and slew bounds do not depend on the source phase. During the gate plateaus the complement is constant. Therefore the complete modeled addition retains incident norm at most2J_*+g and incident derivative norm at most S_*, with smooth endpoints. This is a bound on the supplied Hamiltonian schedule, not hard spectral bandwidth or microscopic drive energy."
+        },
+        {
+          "line": 835,
+          "text": "# Exposed review: bounded modeled slew with evolved retained memory"
+        },
+        {
+          "line": 841,
+          "text": "## 1. Reconstructed stage comparison"
+        },
+        {
+          "line": 903,
+          "text": "This equals the root's integral formula. All H phases remain in its actual free flow; all on-ramp A_C phases remain in the full U_E. C0 is the actual chosen sum of complement coefficients, even when those coefficients were chosen as conservative norm bounds. Using a different upper bound for C0 or R in Phi would change this amplitude-level assertion."
+        },
+        {
+          "line": 905,
+          "text": "## 2. Error factors and arbitrary correlated inputs"
+        },
+        {
+          "line": 919,
+          "text": "## 3. Per-site strength and derivative accounting"
+        },
+        {
+          "line": 943,
+          "text": "These are per-site bounds. The global `||dK_prep/dt||` can grow with the number of simultaneously driven sites. They are not hard bandwidth, microscopic-drive energy, or a derivative bound on unspecified implementation errors. To promote nominal bounds to a perturbed physical implementation, separate pointwise incident amplitude **and derivative** slack/certificates are required; small integrated `||E_p||` alone supplies neither."
+        },
+        {
+          "line": 945,
+          "text": "## 4. Choice order and moment accuracy"
+        },
+        {
+          "line": 965,
+          "text": "## 5. The memory comparator cannot be silently inherited"
+        },
+        {
+          "line": 985,
+          "text": "## 6. One actual finite discriminator"
+        },
+        {
+          "line": 991,
+          "text": "The new complete comparator agrees with the directly composed stage isometry to about **5.6e-15**. Replacing U_E by identity gives isometry error **1.2884**; the overlap is not a scalar matrix (nonscalar norm **.7311**), so this is not merely an arbitrary global phase. Reversing the off-ramp phase correction gives error **1.1430**; omitting it gives **.6377**. Omitting the R ramp contribution to Phi gives amplitude error **1.8255**. The first and second physical-moment operator compressions for the two different memory comparators nevertheless agree to within **4.4e-15**."
+        },
+        {
+          "line": 997,
+          "text": "## 7. Qualified conclusion"
+        },
+        {
+          "line": 1006,
+          "text": "# Controlling qualifications for preparation with bounded modeled slew"
+        },
+        {
+          "line": 1012,
+          "text": "## Accepted endpoint and error"
+        },
+        {
+          "line": 1027,
+          "text": "## Fixed per-site modeled bounds"
+        },
+        {
+          "line": 1039,
+          "text": "## Changed memory contract and moment scope"
+        },
+        {
+          "line": 1047,
+          "text": "## Evidence and unresolved suppliers"
+        }
+      ]
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/INSTALLED_LOCAL_CLOCK_RESET_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 49324,
+      "sha256": "fa4f38f2097a30b141bae9ae6115ec81e95102c61b94d509536ac81bba8cf0b8",
+      "search_hits": [
+        {
+          "line": 32,
+          "text": "# Installed local-clock reset and entry preparation: conditional finite-time support"
+        },
+        {
+          "line": 42,
+          "text": "## Concrete result and output domain"
+        },
+        {
+          "line": 49,
+          "text": "implements the stipulated uniform one-site amplitude-damping generator; all"
+        },
+        {
+          "line": 79,
+          "text": "## Explicit time, action, strength and energy prices"
+        },
+        {
+          "line": 130,
+          "text": "## Exact mathematical import and downstream use"
+        },
+        {
+          "line": 150,
+          "text": "## Sources, exposure, verification and remaining conditions"
+        },
+        {
+          "line": 171,
+          "text": "Amplitude damping, dilation, complete trace contraction and Duhamel are"
+        },
+        {
+          "line": 184,
+          "text": "## Complete reset and entry-preparation proof; one citation target rendered"
+        },
+        {
+          "line": 186,
+          "text": "# Conditional finite-time reset and one-head preparation with the boundary apparatus installed"
+        },
+        {
+          "line": 188,
+          "text": "This is a proposed conditional extension of the checked boundary apparatus, not an independently accepted result, retained audit, native cooling mechanism or microscopic bath construction. It supplies an explicit reduced channel if local amplitude damping and one bounded local pulse are supplied. It does not assume that the clock starts clean. Every original factor, the complete original generator K including its scalar/reserve, and every apparatus term remain installed throughout."
+        },
+        {
+          "line": 192,
+          "text": "## 1. Exact premise and literal operator"
+        },
+        {
+          "line": 252,
+          "text": "## 2. The supplied reset interface and its output domain"
+        },
+        {
+          "line": 263,
+          "text": "The finite-dimensional evolution in (5) is CPTP. One direct construction alternates the unitary generated by H with local amplitude-damping channels over small time slices. The local channel at integrated action x has Kraus operators"
+        },
+        {
+          "line": 281,
+          "text": "## 3. Local vacuum silence yields an integrable backaction bound"
+        },
+        {
+          "line": 330,
+          "text": "## 4. Complete replacement error, including initial clock/reference coherence"
+        },
+        {
+          "line": 358,
+          "text": "## 5. A finite smooth reset schedule and explicit rates"
+        },
+        {
+          "line": 385,
+          "text": "## 6. Prepare the entry head while the complete H remains active"
+        },
+        {
+          "line": 418,
+          "text": "## 7. Complete finite-time preparation theorem and later time order"
+        },
+        {
+          "line": 443,
+          "text": "## 8. Calibration and domain errors"
+        },
+        {
+          "line": 455,
+          "text": "## 9. Installed energy, scalar, moments and reservoir price"
+        },
+        {
+          "line": 512,
+          "text": "## 10. Literal resource boundary and failed alternatives"
+        },
+        {
+          "line": 528,
+          "text": "No numerical scientific program was needed or run. The proof uses standard amplitude damping, explicit finite dilations, complete trace contraction and Duhamel, with their hypotheses shown here. Its specific contribution is the literal installed-apparatus application, coefficient count, correlated-input estimate and finite positive-pulse/resource composition. There is no priority claim for the generic machinery. All source-only executions, exposure limits and actual interruptions are recorded separately. This candidate awaits separate substantive review."
+        },
+        {
+          "line": 530,
+          "text": "## Complete necessary reset-action proof; unchanged"
+        },
+        {
+          "line": 532,
+          "text": "# Exact number-sector laws and necessary reset action"
+        },
+        {
+          "line": 539,
+          "text": "## 1. Domain and comparator"
+        },
+        {
+          "line": 571,
+          "text": "## 2. Exact population law despite interactions"
+        },
+        {
+          "line": 606,
+          "text": "## 3. Vacuum\u2013one-excitation coherence"
+        },
+        {
+          "line": 616,
+          "text": "block X_t=P_1 rho(t) P_0 the jump term is zero: a jump would need an incoming"
+        },
+        {
+          "line": 643,
+          "text": "## 4. Necessary action and sufficient-schedule comparison"
+        },
+        {
+          "line": 672,
+          "text": "## 5. Entry pulse: a bounded consequence, not a new reset protocol"
+        },
+        {
+          "line": 694,
+          "text": "## 6. Scope and remaining checks"
+        },
+        {
+          "line": 703,
+          "text": "the absence of incoming jump blocks in the chosen0/1 domain, the trace witness,"
+        }
+      ]
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 41771,
+      "sha256": "3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad",
+      "search_hits": [
+        {
+          "line": 32,
+          "text": "# Finite reservoir preparation of a boundary clock with its generator installed"
+        },
+        {
+          "line": 47,
+          "text": "The downstream use is preparation of a clock entry while arbitrary old inputs remain available, with the transferred reservoir treated as retained reference. Reset/reuse of that consumed memory, classical readout and native supply remain separate. The full original145-file offline packet, actual control and metadata failures, complete current procedural derivative and later matching execution streams are reconstructible in publication evidence. Its earlier null bindings and unperformed-execution statements remain dated history. REVIEW_HISTORY/HANDOFF/TRACE_GATE are publication records, not a replacement operational campaign checkpoint."
+        },
+        {
+          "line": 49,
+          "text": "## Retained output and preparation domain"
+        },
+        {
+          "line": 61,
+          "text": "## Finite error, timing and subsequent word"
+        },
+        {
+          "line": 69,
+          "text": "## Strength, energy, scalar and memory prices"
+        },
+        {
+          "line": 90,
+          "text": "## Evidence, original failures and remaining suppliers"
+        },
+        {
+          "line": 102,
+          "text": "## Complete accepted argument, unchanged historical source"
+        },
+        {
+          "line": 104,
+          "text": "# A finite, driven unitary reservoir for the boundary clock's reset endpoint"
+        },
+        {
+          "line": 116,
+          "text": "## 1. Source, state and Hamiltonian contract"
+        },
+        {
+          "line": 195,
+          "text": "## 2. Literal additional vacancies and selected edges"
+        },
+        {
+          "line": 259,
+          "text": "## 3. Explicit positive two-qubit pulse and full retained target"
+        },
+        {
+          "line": 309,
+          "text": "## 4. Full-space comparison with the installed drift active"
+        },
+        {
+          "line": 342,
+          "text": "## 5. Finite head preparation and the later word"
+        },
+        {
+          "line": 403,
+          "text": "## 6. Full-space positivity, support, scalar and control price"
+        },
+        {
+          "line": 469,
+          "text": "## 7. Mean, variance, covariance, work and finite information capacity"
+        },
+        {
+          "line": 556,
+          "text": "## 8. Calibration, actual time and remaining physical operations"
+        },
+        {
+          "line": 572,
+          "text": "For amplitude errors delta_gamma_u(s) on individual pair generators, and"
+        },
+        {
+          "line": 609,
+          "text": "## 9. Failed shortcuts, selected evidence and exact closure"
+        }
+      ]
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 69312,
+      "sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007",
+      "search_hits": [
+        {
+          "line": 36,
+          "text": "## Fixed interface and proof dependencies"
+        },
+        {
+          "line": 46,
+          "text": "## Runtime construction and sufficient resources"
+        },
+        {
+          "line": 73,
+          "text": "## Actual complete target and distinct error contracts"
+        },
+        {
+          "line": 119,
+          "text": "## Calibration, moments and open suppliers"
+        },
+        {
+          "line": 135,
+          "text": "## Review record and publication boundary"
+        },
+        {
+          "line": 146,
+          "text": "## Immutable source body: root_runtime_body"
+        },
+        {
+          "line": 150,
+          "text": "# Conditional autonomous substitution: root candidate"
+        },
+        {
+          "line": 213,
+          "text": "## Immutable source body: extended_body"
+        },
+        {
+          "line": 217,
+          "text": "# Conditional autonomous realization of the accuracy-scaled one-port compiler"
+        },
+        {
+          "line": 223,
+          "text": "## 1. Exact imported results and supplied data"
+        },
+        {
+          "line": 245,
+          "text": "## 2. The actual autonomous input waveform and horizon"
+        },
+        {
+          "line": 278,
+          "text": "## 3. Clock size, both mediator recipes and exact finite constants"
+        },
+        {
+          "line": 349,
+          "text": "## 4. Derivation of the composite powers"
+        },
+        {
+          "line": 386,
+          "text": "## 5. Complete same-time target before release"
+        },
+        {
+          "line": 409,
+          "text": "## 6. Supplied input, finite release and corrected actual-aging phase"
+        },
+        {
+          "line": 470,
+          "text": "## 7. One combined error budget, physical precision and moments"
+        },
+        {
+          "line": 510,
+          "text": "## 8. What closes, what remains open, and evidence"
+        },
+        {
+          "line": 525,
+          "text": "## Immutable source body: exposed_comparison_body"
+        },
+        {
+          "line": 529,
+          "text": "# Exposed comparison of the autonomous compiler compositions"
+        },
+        {
+          "line": 537,
+          "text": "## 1. Exact sources and matching contracts"
+        },
+        {
+          "line": 551,
+          "text": "## 2. Clock and mediator constants rechecked"
+        },
+        {
+          "line": 595,
+          "text": "## 3. Exact complete runtime target and error allocations"
+        },
+        {
+          "line": 625,
+          "text": "## 4. Supplied pre-release extension: separate check and scope"
+        },
+        {
+          "line": 652,
+          "text": "## 5. Calibration, positivity and growing moments"
+        },
+        {
+          "line": 670,
+          "text": "## 7. Disposition, qualifications and actual verification limits"
+        }
+      ]
+    }
+  ]
+}

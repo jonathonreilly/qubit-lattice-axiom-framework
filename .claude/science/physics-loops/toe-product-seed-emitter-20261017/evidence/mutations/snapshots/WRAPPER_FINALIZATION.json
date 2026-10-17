@@ -1,0 +1,25 @@
+{
+  "scope": "Root status/link changes only before the next actual run; all three proof bodies remain byte-identical. Preparation freeze and first failed run remain historical.",
+  "changed_files": [
+    {
+      "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 95866,
+      "sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/EMBEDDED_SOURCE_MAP.json",
+      "bytes": 1476,
+      "sha256": "1e1070368a7d2734279aefbcc0ec6a255d67d0e3973b4503fb2b48779838fbad"
+    },
+    {
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "bytes": 40934,
+      "sha256": "a88cec6d36d9e686d4a00e256ebd9b13a6dfe2525a757dc0f8ebb5c40c4b9540"
+    }
+  ],
+  "proof_body_hashes": [
+    "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1",
+    "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee",
+    "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5"
+  ]
+}

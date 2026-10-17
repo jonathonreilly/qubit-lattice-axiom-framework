@@ -1,0 +1,326 @@
+{
+  "scope": "New exact model and independent conservative inequalities; no author-code replay or physical momentum sampling",
+  "small_model": {
+    "internal_dimension": 2,
+    "open_channels": 1,
+    "closed_channels": 1,
+    "L": 3,
+    "last_retained_clock": 5,
+    "largest_matrix_dimension": 14,
+    "J": "1",
+    "z": "3/5 + 4*I/5",
+    "q": "1/7",
+    "phase": "5/13 + 12*I/13",
+    "coupling": "1/13",
+    "emitter_energy": "1/7",
+    "energy": "4/5",
+    "B": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "208/35"
+      ]
+    ],
+    "V0": [
+      [
+        "1/3",
+        "1/5"
+      ],
+      [
+        "1/5",
+        "-2/7"
+      ]
+    ],
+    "V1": [
+      [
+        "1/4",
+        "-1/6"
+      ],
+      [
+        "-1/6",
+        "2/9"
+      ]
+    ],
+    "commutator_T_Q_nonzero": {
+      "row": 0,
+      "column": 1,
+      "value": "-9762565728/573951842555 + 9186296856*I/573951842555"
+    },
+    "tail_pairs_exactly_checked": [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        5
+      ]
+    ],
+    "direct_augmented_matching": [
+      [
+        "-23/15",
+        "-1/5",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1/5",
+        "-48/7",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "-17/20 + 4*I/5",
+        "1/6",
+        "3672/105625 - 15804*I/105625",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "1/6",
+        "-65/9",
+        "0",
+        "-632/405769 + 12*I/405769"
+      ],
+      [
+        "0",
+        "0",
+        "-4392/105625 - 3156*I/105625",
+        "0",
+        "796720013/1201484375 + 2040912*I/171640625",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-632/405769 - 12*I/405769",
+        "0",
+        "-9560472111/1809323971"
+      ]
+    ],
+    "direct_emitter_schur": [
+      [
+        "12911333763790310837/19702690595208359375 + 17932456279969488*I/2814670085029765625",
+        "-5621520076128/7723454713321676875 + 101983344867072*I/54064182993251738125"
+      ],
+      [
+        "-327914056051488/54064182993251738125 - 3748560989184*I/54064182993251738125",
+        "-5487250227331097855493/1038464826934379385905 + 1295401423104*I/1038464826934379385905"
+      ]
+    ],
+    "background_reflection": "-281092049153/409965601825 - 298427637096*I/409965601825",
+    "augmented_reflection": "-245821338139985060660109502294974027712040910761313/351338347525235646281631128558839565015878562890625 - 251018931869352003530114533586570647489583133230216*I/351338347525235646281631128558839565015878562890625",
+    "full_closed_emitter_coordinate": "-64299967505514044488314502431695651427776/13491392544969048817214635336659439296609736815 + 149171268755722677853361688340363562864768*I/13491392544969048817214635336659439296609736815",
+    "green_jump_and_matching_identities": "exact",
+    "full_augmented_flux": "exact unit modulus",
+    "wrong_tail_order": {
+      "row": 0,
+      "column": 1,
+      "value": "9762565728/196865481996365 - 9186296856*I/196865481996365"
+    },
+    "wrong_X_Y_order": {
+      "row": 0,
+      "column": 1,
+      "value": "-288563415518592/319906408244093125 - 105731905856256*I/319906408244093125"
+    },
+    "wrong_augmented_lower_sign": {
+      "row": 4,
+      "column": 2,
+      "value": "-8784/105625 - 6312*I/105625"
+    }
+  },
+  "reference_measure": {
+    "jump_times_velocity_equals_sum_dk_weights": "77510160/2575045981",
+    "omitted_velocity_residual": "-29066310/2575045981",
+    "global_mass_reason": "normalized seed spectral measure of a bounded selfadjoint full-line Hamiltonian; analytically reviewed, not inferred from this point"
+  },
+  "complete_overlap_discriminators": {
+    "rectangular_isometry_shape": [
+      4,
+      2
+    ],
+    "seed_overlap_matrix": [
+      [
+        "36/169 + 432*I/845",
+        "48/169 + 576*I/845"
+      ],
+      [
+        "-48/169 - 576*I/845",
+        "36/169 + 432*I/845"
+      ]
+    ],
+    "exact_error_gram": [
+      [
+        "266/169",
+        "-1152*I/845"
+      ],
+      [
+        "1152*I/845",
+        "266/169"
+      ]
+    ],
+    "exact_squared_operator_error": "2482/845",
+    "incorrect_diagonal_only_ceiling": "266/169",
+    "off_diagonal_matrix_gram": [
+      [
+        "169/4000000",
+        "0"
+      ],
+      [
+        "0",
+        "1/40000"
+      ]
+    ],
+    "aligned_column_squared_operator_norm": 2,
+    "aligned_maximum_individual_column_squared_norm": 1
+  },
+  "independent_uniform_enclosures": {
+    "eta": {
+      "exact": "131/100000000",
+      "approximate_display": 1.31e-06
+    },
+    "delta": {
+      "exact": "13/25000000000",
+      "approximate_display": 5.2e-10
+    },
+    "closed_drive": {
+      "exact": "29/500000000",
+      "approximate_display": 5.8e-08
+    },
+    "gamma_lower": {
+      "exact": "977/50",
+      "approximate_display": 19.54
+    },
+    "xi": {
+      "exact": "263/100000000",
+      "approximate_display": 2.63e-06
+    },
+    "profile_relative_error": {
+      "exact": "3941/1000000000",
+      "approximate_display": 3.941e-06
+    },
+    "off_overlap": {
+      "exact": "7/20000000000000000000",
+      "approximate_display": 3.5e-19
+    },
+    "reference_mass_loss": {
+      "exact": "13/1000000000",
+      "approximate_display": 1.3e-08
+    },
+    "seed_squared_error": {
+      "exact": "79080000000007/10000000000000000000",
+      "approximate_display": 7.9080000000007e-06
+    },
+    "reflection_correction": {
+      "exact": "6409922601208496093750000000000029480749750204686638539197519/610351562500000000000000000000000000000000000000000000000000000000",
+      "approximate_display": 1.050201718982e-05
+    },
+    "K0_expression": {
+      "exact": "3405353/250",
+      "approximate_display": 13621.412
+    },
+    "K1_expression": {
+      "exact": "118392381/200",
+      "approximate_display": 591961.905
+    },
+    "Dj": {
+      "exact": "4000000004000000000000000000000010000000000",
+      "approximate_display": 4.000000004e+42
+    },
+    "escape": {
+      "exact": "500000000000000000000003/22500000000000000000000000000",
+      "approximate_display": 2.2222222222222223e-05
+    },
+    "all_future_error": {
+      "exact": "84065000000000000000000003/22500000000000000000000000000",
+      "approximate_display": 0.0037362222222222224
+    },
+    "finite_horizon_exponent_margin": "4399999999999999999999999999999999999999999999999999999999999999999999978",
+    "point_spectrum_operator_ceiling": "1/12500",
+    "headline_bounds_recovered": {
+      "seed": "3/1000",
+      "phase": "714/1000000",
+      "all_future": "4/1000",
+      "finite_horizon": "5/1000"
+    }
+  },
+  "runtime": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "sympy": "1.14.0",
+    "elapsed_seconds": 0.7548902500420809,
+    "maximum_matrix_dimension": 14
+  },
+  "limits": [
+    "The small exact model checks conventions and noncommuting identities, not the physical interval",
+    "The interval certificate follows analytic norm inequalities with inherited ladder constants",
+    "No new physical point-state certificate, optimizer, wavepacket quadrature or large-clock evolution",
+    "Reviewer authored earlier stationary ladder and reviewed earlier generic packet proof; source-exposed same model"
+  ]
+}

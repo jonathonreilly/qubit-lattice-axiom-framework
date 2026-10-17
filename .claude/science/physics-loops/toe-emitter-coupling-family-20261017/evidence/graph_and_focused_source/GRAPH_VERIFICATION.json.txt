@@ -1,0 +1,55 @@
+{
+  "old_counts": {
+    "node_count": 7209,
+    "edge_count": 16164
+  },
+  "new_counts": {
+    "node_count": 7210,
+    "edge_count": 16165
+  },
+  "added": [
+    "emitter_coupling_family_bounded_theorem_note_2026-10-17"
+  ],
+  "removed": [],
+  "rewired": [],
+  "new_node": {
+    "claim_id": "emitter_coupling_family_bounded_theorem_note_2026-10-17",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "`bounded_theorem`. **Current status:** conditional support",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "product_seed_emitter_bounded_theorem_note_2026-10-17"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87",
+    "path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "runner_path": "scripts/emitter_coupling_family_2026_10_17.py",
+    "title": "A coupling family for a supplied autonomous emitter"
+  },
+  "new_edges": [
+    {
+      "from": "emitter_coupling_family_bounded_theorem_note_2026-10-17",
+      "to": "product_seed_emitter_bounded_theorem_note_2026-10-17"
+    }
+  ],
+  "manifest_sha256": "a5267582d488dea35c6eb8d11842289cd61cea68984a223c826d8b1be509121f",
+  "executions": [
+    {
+      "script": "docs/audit/scripts/run_citation_graph_build.py",
+      "started_utc": "2026-10-17T03:34:16.935413+00:00",
+      "elapsed_seconds": 126.46219104202464,
+      "wall_cap_seconds": 180,
+      "exit_code": 0,
+      "script_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+    },
+    {
+      "script": "docs/audit/scripts/write_citation_graph_manifest.py",
+      "started_utc": "2026-10-17T03:36:23.403884+00:00",
+      "elapsed_seconds": 0.16832833318039775,
+      "wall_cap_seconds": 60,
+      "exit_code": 0,
+      "script_sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+    }
+  ],
+  "scope": "New coupling-family emitter note and its explicit parent citation only. Generated citation_graph.json is validation residue, not publication source."
+}

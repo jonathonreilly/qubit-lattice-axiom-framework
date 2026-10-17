@@ -1,0 +1,176 @@
+"""Static source-transport and resolver checks; no scientific function is called."""
+from pathlib import Path
+import ast, copy, hashlib, json, os, re, resource, sys, time
+D=Path(__file__).resolve().parent
+C=D/'canonical'
+W=D.parent.parent/'correlation_worktree'
+RUN=Path(sys.argv[1]).resolve()
+PREFIX='outputs/thermal_resonance_halt_2026_10_17_inputs'
+P=C/PREFIX
+PRIMARY=C/'scripts/thermal_resonance_halt_2026_10_17.py'
+START=time.monotonic()
+checks=[]
+def sha(b):return hashlib.sha256(b).hexdigest()
+def check(name,test,**evidence):
+ assert test,name
+ checks.append({'name':name,'evidence':evidence})
+def read_repo(path):
+ return (C/path).read_bytes()if(C/path).is_file()else(W/path).read_bytes()
+def adump(x):return ast.dump(x,include_attributes=False)
+def ah(x):return sha(adump(x).encode())
+def get(node,path):
+ for piece in path:node=node[piece]if isinstance(piece,int)else getattr(node,piece)
+ return node
+def walk(node,path=()):
+ yield path,node
+ for field,v in ast.iter_fields(node):
+  if isinstance(v,list):
+   for i,x in enumerate(v):
+    if isinstance(x,ast.AST):yield from walk(x,path+(field,i))
+  elif isinstance(v,ast.AST):yield from walk(v,path+(field,))
+source_map=json.loads((P/'SOURCE_MAP.json').read_text())
+for row in source_map['files']:
+ raw=read_repo(row['path']);check('source_bytes:'+row['source_label'],len(raw)==row['bytes']and sha(raw)==row['sha256'])
+ # Each original stays untouched; historical filename strings need not resolve there in the published repository.
+ check('source_current:'+row['source_label'],Path(row['source_path']).read_bytes()==raw)
+manifest=json.loads((P/'ARTIFACT_MANIFEST.json').read_text())
+for row in manifest['files']:
+ p=Path(row['path']);check('manifest_path:'+row['path'],not p.is_absolute()and'..'not in p.parts and p.as_posix()==row['path'])
+ raw=read_repo(row['path']);check('manifest_bytes:'+row['path'],len(raw)==row['bytes']and sha(raw)==row['sha256'])
+text=PRIMARY.read_text();tree=ast.parse(text);compile(text,str(PRIMARY),'exec')
+declared=ast.literal_eval(next(n.value for n in tree.body if isinstance(n,ast.Assign)and any(isinstance(t,ast.Name)and t.id=='AUDIT_INPUT_PATHS'for t in n.targets)))
+check('declared_unique',len(declared)==len(set(declared)),count=len(declared))
+check('declared_exact_manifest_plus_manifest',set(declared)=={x['path']for x in manifest['files']}|{PREFIX+'/ARTIFACT_MANIFEST.json'})
+all_overlay=[p for p in C.rglob('*')if p.is_file()]
+check('overlay_every_file_declared_except_primary',set(str(p.relative_to(C))for p in all_overlay)==set(x for x in declared if(C/x).is_file())|{str(PRIMARY.relative_to(C))})
+for p in all_overlay:
+ if p.suffix=='.py':compile(p.read_text(),str(p),'exec')
+check('all_python_sources_compile',True,files=sum(p.suffix=='.py'for p in all_overlay))
+ledger=json.loads((P/'TRANSPORT_EDIT_LEDGER.json').read_text())
+summary=[]
+for body in ledger['source_to_function']:
+ function=next(n for n in tree.body if isinstance(n,ast.FunctionDef)and n.name==body['function'])
+ adapted=ast.Module(body=copy.deepcopy(function.body),type_ignores=[])
+ original=ast.parse(read_repo(body['source']['path']).decode())
+ check('original_ast:'+body['role'],ah(original)==body['original_module_ast_sha256'])
+ check('adapted_ast:'+body['role'],ah(adapted)==body['adapted_body_ast_sha256'])
+ check('full_statement_coverage:'+body['role'],{tuple(x['source_ast_path'])for x in body['statements']}=={p for p,n in walk(original)if isinstance(n,ast.stmt)},count=len(body['statements']))
+ for row in body['statements']:
+  source=get(original,row['source_ast_path']);check('statement_source:'+body['role']+str(row['source_ast_path']),ah(source)==row['source_ast_sha256'])
+  if row['adapted_ast_path']is not None:
+   actual=get(adapted,row['adapted_ast_path']);check('statement_destination:'+body['role']+str(row['source_ast_path']),ah(actual)==row['adapted_ast_sha256'])
+ for event in reversed(body['events']):
+  paths=[x['path']for x in event['adapted_paths']]
+  for path,expected in zip(paths,event['replacement_ast_sha256']):check('event_actual:'+body['role']+str(event['event_id'])+str(path),ah(get(adapted,path))==expected)
+  source=copy.deepcopy(get(original,event['source_ast_path']))
+  check('event_original:'+body['role']+str(event['event_id']),ah(source)==event['original_ast_sha256'])
+  if event['kind']=='statement':
+   parent=get(adapted,paths[0][:-1]);indices=[path[-1]for path in paths]
+   check('event_contiguous:'+body['role']+str(event['event_id']),indices==list(range(indices[0],indices[0]+len(indices))))
+   parent[indices[0]:indices[-1]+1]=[source]
+  else:
+   parent=get(adapted,paths[0][:-1]);last=paths[0][-1]
+   if isinstance(last,int):parent[last]=source
+   else:setattr(parent,last,source)
+ check('entire_original_ast_reconstructed:'+body['role'],adump(adapted)==adump(original))
+ summary.append({'role':body['role'],'statements':len(body['statements']),'transport_events':len(body['events']),'whole_AST_reconstruction':True})
+# Infrastructure equality is independent of author-body AST transformations.
+parent=ast.parse((W/'scripts/emitter_coupling_family_2026_10_17.py').read_text())
+for name in ('FrozenInputs','verify_artifacts'):
+ a=next(n for n in tree.body if getattr(n,'name',None)==name);b=next(n for n in parent.body if getattr(n,'name',None)==name)
+ check('infrastructure_unchanged:'+name,adump(a)==adump(b))
+# Reconstruct the original note bodies by reversing ONLY destination spans.
+bm=json.loads((P/'PROOF_BODY_MAP.json').read_text());note=read_repo(bm['note']);link_count=0
+for body in bm['bodies']:
+ raw=read_repo(body['original']['path']);start,end=body['note_byte_start_inclusive'],body['note_byte_end_exclusive'];embedded=note[start:end]
+ check('embedded_sha:'+body['source_label'],sha(embedded)==body['embedded_sha256']and len(embedded)==body['bytes'])
+ actual_links={ (m.start(1),m.end(1)):m.group(1).decode()for m in re.finditer(rb'\]\(([^)]+)\)',raw)}
+ for e in reversed(body['link_target_edits']):
+  check('original_link_span:'+str(e['original_start']),actual_links[(e['original_start'],e['original_end'])]==e['original_target'])
+  check('embedded_target_span:'+str(e['embedded_start']),embedded[e['embedded_start']:e['embedded_end']].decode()==e['replacement_target'])
+  embedded=embedded[:e['embedded_start']]+e['original_target'].encode()+embedded[e['embedded_end']:];link_count+=1
+ check('original_body_bytes_reconstructed:'+body['source_label'],embedded==raw)
+check('exact_target_only_edit_count',link_count==10,count=link_count)
+# The imported module must neither read declared inputs nor write/cap/calculate.
+limit_before=resource.getrlimit(resource.RLIMIT_CPU);writes=[];called=[]
+original_methods={name:getattr(Path,name)for name in ('read_bytes','read_text','write_bytes','write_text','open')}
+original_cap=resource.setrlimit
+old_profile=sys.getprofile()
+def forbidden(*args,**kwargs):raise AssertionError('Import attempted a filesystem read/write or CPU-limit change')
+def profile(frame,event,arg):
+ if event=='call'and(frame.f_code.co_name.startswith('run_')or frame.f_code.co_name in('fixture','scalar_checks','main')):called.append(frame.f_code.co_name)
+namespace={'__name__':'thermal_resonance_static_import_probe','__file__':str(PRIMARY)}
+try:
+ for name in original_methods:setattr(Path,name,forbidden)
+ resource.setrlimit=forbidden;sys.setprofile(profile)
+ exec(compile(text,str(PRIMARY),'exec'),namespace)
+finally:
+ sys.setprofile(old_profile);resource.setrlimit=original_cap
+ for name,fn in original_methods.items():setattr(Path,name,fn)
+check('import_inert',called==[]and resource.getrlimit(resource.RLIMIT_CPU)==limit_before,calls=called)
+check('science_dependency_not_imported','sympy'not in sys.modules)
+# Build a private complete repository view for resolver tests, never W writes.
+repo=RUN/'fixture_repo';repo.mkdir()
+for path in declared:
+ dst=repo/path;dst.parent.mkdir(parents=True,exist_ok=True);dst.write_bytes(read_repo(path))
+namespace['REPO']=repo;namespace['INPUT_ROOT']=repo/PREFIX
+namespace['verify_artifacts']()
+check('portable_artifact_verifier_accepts_exact_closure',True)
+Inputs=namespace['FrozenInputs'];resolver=Inputs(repo,repo/PREFIX/'INPUT_MAP.json')
+for role,spec in resolver.table['roles'].items():
+ for alias,row in spec['aliases'].items():check('valid_alias:'+role+':'+alias,resolver.read_bytes(role,alias)==read_repo(row['path']))
+check('wall_metadata_current',resolver.shared_limits()['external_wall_cap_seconds']==45)
+check('current_cpu_metadata_honest',resolver.shared_limits()['cpu_soft_hard_seconds']==list(limit_before))
+for role,limits in [('resonance_author',[20,21]),('product_preparation_author',[20,20]),('interacting_preparation_author',[15,15])]:
+ check('historical_cpu_separated:'+role,resolver.execution_metadata(role)['historical_source_run_limits']['cpu_soft_hard_seconds']==limits)
+rejections=[]
+def reject(name,table=None,role='fixture',alias='x',expected=(AssertionError,KeyError,FileNotFoundError)):
+ obj=Inputs(repo,repo/PREFIX/'INPUT_MAP.json')
+ if table is not None:obj.table=table
+ try:obj.read_bytes(role,alias)
+ except expected as e:rejections.append({'case':name,'exception':type(e).__name__,'message':str(e)})
+ else:raise AssertionError('Unexpected resolver acceptance: '+name)
+base=repo/'fixture';base.mkdir();raw=b'finite checked fixture\n';good=base/'good.txt';good.write_bytes(raw)
+def tab(path,**updates):
+ row={'path':path,'bytes':len(raw),'sha256':sha(raw)};row.update(updates);return {'roles':{'fixture':{'aliases':{'x':row}}}}
+reject('unknown_role')
+reject('unknown_alias_existing_absolute_path',role='resonance_author',alias=str(good))
+reject('absolute_destination',tab(str(good)))
+reject('parent_traversal',tab('fixture/../fixture/good.txt'))
+reject('noncanonical_double_separator',tab('fixture//good.txt'))
+reject('missing_file',tab('fixture/missing.txt'))
+reject('wrong_hash',tab('fixture/good.txt',sha256='0'*64))
+reject('wrong_size',tab('fixture/good.txt',bytes=len(raw)+1))
+link=base/'filelink.txt';link.symlink_to(good);reject('file_symlink',tab('fixture/filelink.txt'));link.unlink()
+dirlink=repo/'dirlink';dirlink.symlink_to(base,target_is_directory=True);reject('parent_directory_symlink',tab('dirlink/good.txt'));dirlink.unlink()
+check('fail_closed_cases',len(rejections)==10,cases=rejections)
+# Complete new-note links resolve in the private root. No target mutation test calls science.
+from urllib.parse import unquote
+links=[]
+for m in re.finditer(r'\]\(([^)]+)\)',note.decode()):
+ target=m.group(1).split('#',1)[0]
+ if not target or '://'in target:continue
+ dest=(repo/'docs'/unquote(target)).resolve()
+ check('note_link:'+target,dest.is_file()and repo in dest.parents)
+ links.append(target)
+check('canonical_science_output_absent',not(C/'outputs/thermal_resonance_halt_2026_10_17.json').exists())
+check('caps_metadata_and_main_plan',namespace['AUDIT_TIMEOUT_SEC']==45 and "resource.setrlimit(resource.RLIMIT_CPU, (30, 30))"in text)
+# Recheck explicitly frozen source-manifest pointers without recursively expanding packets.
+labels={x['source_label']:x for x in source_map['files']};pointers=0
+for label,row in labels.items():
+ if label.endswith(('FREEZE.json','ANALYTICAL_FREEZE.json','STAGED_RELEASE_FREEZE.json')):
+  try:value=json.loads(read_repo(row['path']))
+  except json.JSONDecodeError:continue
+  prefix=label.rsplit('/',1)[0]+'/'
+  def pointer_walk(v):
+   global pointers
+   if isinstance(v,dict):
+    if {'path','sha256'}<=v.keys() and prefix+v['path']in labels:
+     target=labels[prefix+v['path']];check('frozen_pointer:'+label+':'+v['path'],v['sha256']==target['sha256']);pointers+=1
+    for item in v.values():pointer_walk(item)
+   elif isinstance(v,list):
+    for item in v:pointer_walk(item)
+  pointer_walk(value)
+report={'status':'PASS_STATIC_TRANSPORT_ONLY','scientific_executions':0,'scientific_functions_called':called,'author_AST_summary':summary,'source_labels':len(source_map['files']),'declared_inputs':len(declared),'proof_bodies':len(bm['bodies']),'target_only_link_edits':link_count,'new_note_links_checked':len(links),'frozen_relative_pointers_checked':pointers,'resolver_fail_closed':rejections,'checks':checks,'actual_resources':{'cpu_soft_hard_seconds':list(limit_before),'external_wall_cap_seconds':30,'wall_seconds':time.monotonic()-START,'python':sys.version,'max_dense_matrix_dimension':0,'science_dependency_imported':False},'limits':'Static reversible AST/byte and integrity checks only. No author function, scientific assertion, full apparatus, mutation or canonical calculation executed. Root reviews transport and owns execution.'}
+(RUN/'STATIC_RESULT.json').write_text(json.dumps(report,indent=2)+'\n')
+print(json.dumps({k:v for k,v in report.items()if k!='checks'},indent=2))

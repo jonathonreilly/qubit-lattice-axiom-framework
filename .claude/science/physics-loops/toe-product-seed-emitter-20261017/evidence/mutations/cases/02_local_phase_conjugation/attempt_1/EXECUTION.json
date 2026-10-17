@@ -1,0 +1,44 @@
+{
+  "started_utc": "2026-10-17T02:23:28.426625+00:00",
+  "finished_utc": "2026-10-17T02:23:28.803180+00:00",
+  "case": "local_phase_conjugation",
+  "attempt": 1,
+  "prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/02_local_phase_conjugation/attempt_1/PRELAUNCH.json",
+    "bytes": 85759,
+    "sha256": "a92ec37be2964bb413b6d40fea90a2e53639eb7ff18d0f1cd50d0298a775929b"
+  },
+  "executed_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/02_local_phase_conjugation/attempt_1/executed_helper.py",
+    "bytes": 19905,
+    "sha256": "d03d71a7afd3b8cb99e080feadba5587b1f53ef273968914444b80a2d8aaff25"
+  },
+  "returncode": 1,
+  "timeout": false,
+  "elapsed_seconds": 0.3695766250602901,
+  "child_user_cpu_seconds": 0.257189,
+  "child_system_cpu_seconds": 0.044724,
+  "cpu_soft_hard_seconds": [
+    60,
+    60
+  ],
+  "external_wall_seconds": 60,
+  "all_source_input_bytes_and_file_generations_unchanged": true,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/02_local_phase_conjugation/attempt_1/stdout.txt",
+    "bytes": 302,
+    "sha256": "2a77ee3c37241c8c6d1ba1663ba86d06f8f171dff1eab3f14c3fc74317ddabbc"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/02_local_phase_conjugation/attempt_1/stderr.txt",
+    "bytes": 1044,
+    "sha256": "1203c63d50d8c63aedd8522a767d509cb42c1ef849124ac27a913f89043b2cb7"
+  },
+  "outcome": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/02_local_phase_conjugation/attempt_1/OUTCOME.json",
+    "bytes": 1923,
+    "sha256": "3f6fbcc9c91ae0dde475f69501bfcb249c95b4cc4d53696b20e25b098e59bf48"
+  },
+  "intended_scientific_rejection": true,
+  "classification": "Exact intended scientific AssertionError and traceback confirmed."
+}

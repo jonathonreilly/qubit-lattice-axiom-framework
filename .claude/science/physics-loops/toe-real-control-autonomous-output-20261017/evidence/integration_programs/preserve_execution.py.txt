@@ -1,0 +1,95 @@
+"""Preserve actual execution and update publication-only status surfaces."""
+from validate_packet import *
+from datetime import datetime,timezone
+execution=read(D/'canonical_01/EXECUTION.json');assert execution['status']=='ok'
+assert read(Q/'REPORT_COMPARISON.json')['scientific_payload_equality']
+assert read(Q/'ROOT_MUTATION_REVIEW.json')['unexpected_failures']==0
+for label,root in [('canonical',D/'canonical_01'),('scientific_faults',D/'mutations')]:archive(label,root)
+archive('integration_programs',D,[D/x for x in ['run_canonical.py','run_mutations.py','compare_reports.py','FAULT_PAYLOAD_DIFFS.json','preserve_execution.py']])
+for name in ['real_control_install_accept','real_control_canonical_01','real_control_faults_01','real_control_report_comparison']:
+ archive(name,N/'runs'/name)
+(Q/'EXECUTION_STATUS.md').write_text('''# Actual execution and verification
+
+The separate [transport decision](ROOT_PORTABILITY_ACCEPTANCE.json) qualified
+the exact two-program adapter and complete proof preservation. Source theorem
+qualification remains conditional and separately pinned. Frozen drafting records
+inside calculation inputs retain their historical pending labels.
+
+One actual canonical execution on 2026-10-17T05:39:02UTC completed in
+0.6567168236 seconds under shared CPU30/30 and external wall45. The governed
+runner cache is fresh. Primary,109 declared inputs, interpreter, launcher,
+cache implementation and selected runtime files were bound before spawn and
+verified unchanged afterward. Full merged output, protocol stderr and receipt
+are preserved in [canonical evidence](evidence/CANONICAL_MAP.json). Partial
+runtime pins are not a complete environment lock; no OS memory cap or measured
+thread count is claimed. Maximum dense dimension6; no huge-clock dynamics.
+
+[Exact report comparison](REPORT_COMPARISON.json) matches both author payloads,
+apart from explicitly listed execution metadata,31 historical run-binding
+records and the added coverage label. This is reproduction of previously
+checked local algebra, not a new independent proof of the inherited spectrum,
+all-length geometry, full-time dynamics or supported ramp theorem.
+
+Six copied-source faults failed at the intended scientific assertions: cross
+sign, full occupied-pair diagonal, old target phase, mediator isolation pin,
+second pulse chirality and exit Gram. They were six first attempts, total
+1.3535761251 seconds, under per-case CPU30/30 and wall45. All bound bytes stayed
+unchanged and no false result file was emitted. Complete stderr and changed
+stdout payloads were inspected. [Fault review](ROOT_MUTATION_REVIEW.json) and
+[full evidence](evidence/SCIENTIFIC_FAULTS_MAP.json) preserve the limits. These
+are sensitivity checks, not six independent theorem proofs or coverage of every
+premise. The historical final ramp-budget clause remains arithmetic only.
+
+Citation/focused checks and publication remain pending in their separate records.
+Independent retained audit and shared integrated-current-main landing checks
+remain later obligations. No science merge, axiom or editable prompt change.
+''')
+with (Q/'HANDOFF.md').open('a') as f:f.write('''\n## Root integration update
+
+Root accepted transport and completed the actual bounded canonical/cache run,
+exact two-report comparison and six intended scientific faults. See
+[execution status](EXECUTION_STATUS.md) and external decision records.
+The draft history above is preserved; it is not the current execution status.
+This milestone excludes the separate calibration, larger-coupling, finite-
+permanence and fully autonomous real-transmission candidates. Publish only
+after focused checks and exact remote verification; never merge science.
+''')
+with (Q/'REVIEW_HISTORY.md').open('a') as f:f.write('''\n## Root source transport and actual replay
+
+All448 original statement records reverse exactly through16 explicit input/
+metadata edits. Complete source proofs reverse via three Markdown targets.
+The original historical import failure and draft static01 failure remain.
+Static02 passed;03 added a real optimized-Python refusal. The sole later
+coverage-literal change is exactly bound, with no mathematical body change.
+Actual canonical reproduction and six first-attempt faults are recorded in
+EXECUTION_STATUS.md. Same-model source exposure persists; no retained audit.
+''')
+(Q/'CLUSTER_CAP_EVALUATION.md').write_text('''# Real-control publication value
+
+OPEN subject to focused publication checks. This is a coherent positive
+conditional construction above regular9666 at67108090f68ed9b2bc62eee23701b2d3d71dce4a.
+It replaces supplied complex static hopping with explicit real positive local
+cells and a five-unit real preparation from a product seed. It does not replace
+that classical control or seed permission with a native physical supplier.
+
+V1: user-selected autonomous halt and physical realization gap. V2: a complete
+realifier, three-core pulse construction and two supported ramps compose with
+the actual resonance waveform. V3: separate frozen analytical checks and root
+source qualification, with exposure limits, actual portable reproduction and
+fault sensitivity. V4: finite operator<.00483202,unhalvedtrace<.00966404 on[T,2T],
+old age t+5,actual scalar retained;2M+6qubits and enormous sufficient costs.
+V5: changing real coefficients alone fails for the unchanged unprepared seed;
+the supplied setup is an explicit additional permission. That original narrow
+countercase remains at slower1e6/kappa² onset, with live alternatives and no
+broad five-route no-go PASS. This is not claim-type variety or progress inferred
+from a check count. It preserves the full failed route and the positive repair.
+
+No doubled-device thermal supply, autonomous setup, native control fabrication,
+joint runtime calibration/noise, practical cost, complete capture/reset/reuse
+or physical identification is claimed. Separate new candidates are outside
+this milestone. Ancestors remain unmerged conditional science; all shared
+integrated-main and retained-audit obligations remain. No audit verdict,
+physical axiom, editable prompt or model override is part of this publication.
+''')
+write(D/'EXECUTION_PRESERVATION.json',{'created_utc':datetime.now(timezone.utc).isoformat(),'source_inputs_unchanged':validate_inputs(),'archives':validate_archives(),'scientific_executions':{'canonical':1,'fault_cases':6},'other_changes':'Publication-only evidence/status; no source math or calculation input edits.'})
+print(json.dumps({'execution_preserved':True,'archives':len(validate_archives()),'calculation_input_count':109},indent=2))

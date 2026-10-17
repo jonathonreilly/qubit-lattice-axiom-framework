@@ -1,0 +1,42 @@
+{
+  "main": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+  "relevant_heads_unchanged": [
+    9661,
+    9663,
+    9664,
+    9665,
+    9666
+  ],
+  "other_lane_changed_files": [
+    ".claude/science/physics-loops/toe-campaign-20261017/HANDOFF.md",
+    ".claude/science/physics-loops/toe-campaign-20261017/STATE.yaml",
+    ".claude/science/physics-loops/toe-campaign-20261017/c10_pair_coverage/README.md",
+    ".claude/science/physics-loops/toe-campaign-20261017/c10_pair_coverage/cover.py",
+    ".claude/science/physics-loops/toe-campaign-20261017/c10_pair_coverage/pairsym.py",
+    ".claude/science/physics-loops/toe-campaign-20261017/c10_pair_coverage/pairsym_covered.log",
+    ".claude/science/physics-loops/toe-campaign-20261017/c10_pair_coverage/pairsym_uncovered.log",
+    ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/README.md",
+    ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/halfedge.py",
+    ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/siteaction.py",
+    ".claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/cohomology_check.py",
+    ".claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/general_pair_axis_L10.py",
+    ".claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/general_pair_test.py",
+    ".claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/out_cohomology.txt",
+    ".claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/out_general_pair_L8.txt",
+    ".claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/out_general_pair_axis_L10.txt",
+    "docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py",
+    "scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py"
+  ],
+  "other_lane_commits": [
+    {
+      "sha": "ed01119f56592543c29e00c23070c3a96fce92d0",
+      "message": "C8/C10: general pair test closes all 108 (code, C2) pairs; the bare-permutation class is w2 on every code's rotation stabilizer\n\nAdds a pair test that needs no symmetric hop system (L = 8) and an Aharonov-Bohm control that returns\n-1; runner PASS=9.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_0186zYf1gqhH6RqwTgVb8jro"
+    },
+    {
+      "sha": "1a3546f6d63ba2728ff5010f1681a7c9df13bc10",
+      "message": "C11: site-local realization of the BKSF cubic codes with six direction qubits per site (site action = edge action)\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_0186zYf1gqhH6RqwTgVb8jro"
+    }
+  ]
+}

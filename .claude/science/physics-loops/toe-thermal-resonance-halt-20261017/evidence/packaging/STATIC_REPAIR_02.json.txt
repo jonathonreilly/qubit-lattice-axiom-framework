@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-10-17T04:37:07.282881+00:00",
+  "failed_attempt": "static_02",
+  "failure": "note_link:../scripts/thermal_resonance_halt_2026_10_17.py",
+  "cause": "Static fixture copied every declared input but omitted primary, which is separately bound rather than self-declared. The actual canonical primary exists.",
+  "correction": "Add the already pinned primary to the private fixture repository before checking note links.",
+  "canonical_overlay_changes": false,
+  "science_changed": false,
+  "scientific_runs": 0,
+  "retry": "One static retry CPU20/20 wall30; all previous receipts and source copies retained."
+}

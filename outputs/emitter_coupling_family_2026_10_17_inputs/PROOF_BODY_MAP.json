@@ -1,0 +1,13 @@
+{
+  "body_edits": [],
+  "body_end_byte_exclusive": 50353,
+  "body_start_byte_inclusive": 10889,
+  "note_path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+  "note_sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87",
+  "qualification": "Original historical source/status/path labels are unchanged. Wrapper status is separate.",
+  "source_bytes": 39464,
+  "source_lines": 835,
+  "source_path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/CANDIDATE.md.txt",
+  "source_sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+  "wrapper_sha256": "befa62ac2afe691fdfca6de90c3da1e136d084517a83af76fb961926151ad58d"
+}

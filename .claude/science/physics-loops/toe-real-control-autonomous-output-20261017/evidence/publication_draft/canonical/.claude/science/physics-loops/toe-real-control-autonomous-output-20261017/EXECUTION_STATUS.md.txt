@@ -1,0 +1,11 @@
+# Actual execution status
+
+Canonical scientific execution and mutation checks are pending. The mechanical
+drafter ran no mathematical body. Historical source runs remain preserved in the
+input source map and are not canonical executions of the new primary.
+
+Root must record the actual primary/input/runtime prelaunch, all streams, caps,
+exit status and canonical execute_and_write_cache result here or in linked
+companion evidence. This record is outside calculation inputs and may describe
+later events without changing the scientific input closure. No retained or
+publication status follows from this placeholder.

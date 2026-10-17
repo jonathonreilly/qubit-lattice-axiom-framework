@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py
+runner_sha256: 2c3b2a1a88641a1a7009bfbacdb575c4b1824299e71729f522aee9cff394b114
+input_fingerprint_sha256: 09181008e961afd893214623e45321167cbde90f8342905189ebca5f587a540a
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 103.35
+status: ok
+----- stdout -----
+PASS all 60 half-edge codes are commuting stabilizer groups (L = 4)
+PASS all 60 have log2 code dimension 3 on the L = 4 torus
+PASS the site action (permute sites and the six direction labels) maps A_(v,a) of ordering o exactly to A of the rotated edge with the rotated ordering (all 24 rotations, all 60 codes)
+PASS for every code, its stabilizer in O under the site action equals its stabilizer under the edge action
+orbit sizes under the site action (size: number of codes): {4: 12, 6: 12, 12: 36}
+PASS orbits under the site action have sizes 4, 6 and 12 (12, 12 and 36 codes); no code is O-invariant
+L = 6 log2 code dimension, one code per orbit type: {4: 3, 6: 3, 12: 3}
+PASS L = 6: log2 code dimension 3 for one code of each orbit type
+on-site Clifford O-invariance (orbit type: all 24 rotations preserved in both uniform sectors): {4: True, 6: True, 12: True}
+PASS with on-site signed Majorana-permutation Cliffords, one code of each orbit type is invariant under all 24 rotations (both uniform sectors, L = 4)
+per_element: all 60 codes; all 24 rotations
+per_site: six qubits per site (one per direction); generators on one site, nearest-neighbour pairs and plaquettes
+per_mode: checked and not executed — no momentum-mode or spectral-dispersion claim is tested
+per_block: checked and not executed — no coarse-grained block dynamics is tested
+lattice_wide: L = 4 torus (all codes), L = 6 (one per orbit type)
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

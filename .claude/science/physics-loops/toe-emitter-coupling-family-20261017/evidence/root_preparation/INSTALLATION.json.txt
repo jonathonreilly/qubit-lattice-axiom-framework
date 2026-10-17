@@ -1,0 +1,27 @@
+{
+  "installed_utc": "2026-10-17T03:30:53.085530+00:00",
+  "overlay_files": 36,
+  "archive_member_counts": {
+    "preparation": 114,
+    "family_review": 87,
+    "qualification": 2
+  },
+  "note": {
+    "bytes": 50396,
+    "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+  },
+  "primary": {
+    "bytes": 24786,
+    "sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba"
+  },
+  "manifest": {
+    "bytes": 14091,
+    "sha256": "d0785ccbc7e01950ee94909f1065d3d716cad48fc6dacf597b1971af14fd37d5"
+  },
+  "body": {
+    "bytes": 39464,
+    "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+  },
+  "science_body_edits": [],
+  "canonical_execution": "not_executed"
+}

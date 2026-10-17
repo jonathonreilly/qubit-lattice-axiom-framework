@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/focused_verify.py", line 83, in <module>
+    assert not proc.stdout and not proc.stderr,(str(p),proc.stdout,proc.stderr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/REVIEW_HEADER.md.txt', 'outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/REVIEW_HEADER.md.txt:66: new blank line at EOF.\n', '')

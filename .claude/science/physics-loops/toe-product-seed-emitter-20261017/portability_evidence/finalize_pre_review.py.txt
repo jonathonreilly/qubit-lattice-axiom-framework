@@ -1,0 +1,120 @@
+"""Freeze only the portability-review packet; no scientific execution."""
+from pathlib import Path
+import ast
+import datetime
+import hashlib
+import json
+import re
+import shutil
+import subprocess
+import urllib.parse
+
+D=Path(__file__).resolve().parent;W=D.parent.parent/'correlation_worktree'
+Q=W/'.claude/science/physics-loops/toe-product-seed-emitter-20261017'
+F=W/'outputs/product_seed_emitter_2026_10_17_inputs'
+E=Q/'portability_evidence';E.mkdir()
+def pin(p):
+ b=p.read_bytes();return {'path':str(p.relative_to(W)),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def dump(p,x):p.write_text(json.dumps(x,indent=2)+'\n')
+def copy_passive(src,dest):
+ dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(src,dest)
+for name in ('build_adaptation.py','primary_template.py.txt','run_static_build.py',
+             'verify_adaptation.py','run_static_verify.py','make_mutation_plan.py',
+             'neutralize_helper_status.py','finalize_pre_review.py','BUILD_RESULT.json'):
+ copy_passive(D/name,E/(name+'.txt' if name.endswith('.py') else name))
+for directory in ('static_build_attempt_1','static_build_attempt_2','static_verify_attempt_1','static_verify_attempt_2','before_status_neutral_docstrings'):
+ for p in sorted((D/directory).iterdir()):
+  if p.is_file():copy_passive(p,E/directory/(p.name+'.txt' if p.suffix=='.py' else p.name))
+copy_passive(Q/'STATIC_CHECKS.json',E/'static_verify_attempt_2'/'STATIC_CHECKS.json')
+# Successful builder source was unchanged after its run; preserve its bytes
+# beside the receipt, in addition to the original scratch labels in receipts.
+for name in ('build_adaptation.py','primary_template.py.txt'):
+ copy_passive(D/name,E/'static_build_attempt_2'/(name+'.txt' if name.endswith('.py') else name))
+failure={'scope':'Preparation failures only; no failed scientific attempt occurred.',
+ 'bounded_attempts':[{'attempt':'static_build_attempt_1','result':'SyntaxError: positional argument follows keyword argument at builder line 157. Parsing failed before any canonical file was created.','preserved':'portability_evidence/static_build_attempt_1/'},
+ {'attempt':'static_build_attempt_2','result':'Corrected syntax; deterministic build completed.','preserved':'portability_evidence/static_build_attempt_2/'},
+ {'attempt':'static_verify_attempt_1','result':'Passed before status-neutral docstring request. Complete streams and executed script retained.','preserved':'portability_evidence/static_verify_attempt_1/'},
+ {'attempt':'static_verify_attempt_2','result':'Passed after module-docstring-only change; final full static JSON and streams preserved.','preserved':'portability_evidence/static_verify_attempt_2/'}],
+ 'inspection_corrections':['A preliminary read guessed weighted_emitter_escape_review/RESULTS.json; the declared output is weighted_emitter_escape_review/runs/attempt_1/RESULT.json, which was then read. No source edited.',
+ 'An initial read looked for scripts/build_citation_graph.py; exact inventory resolved docs/audit/scripts/build_citation_graph.py before parser checks.',
+ 'One patch used a nonexistent context line and was rejected without modifying a file. The subsequent explicit-context report edit succeeded.'],
+ 'scientific_functions_executed':0,'scientific_mutations_executed':0}
+dump(Q/'PREPARATION_HISTORY.json',failure)
+
+primary=W/'scripts/product_seed_emitter_2026_10_17.py'
+tree=ast.parse(primary.read_text())
+declared=next(ast.literal_eval(x.value) for x in tree.body if isinstance(x,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in x.targets))
+dump(Q/'PRE_EXECUTION_IDENTITIES.json',{'status':'Pre-execution byte identities only; not a runner cache or execution receipt.',
+ 'primary':pin(primary),'declared_input_count':len(declared),'inputs':[pin(W/p) for p in declared]})
+source_manifest=json.loads((Q/'SOURCE_MANIFEST.json').read_text())
+for key in ('note','primary','artifact_manifest','input_map','proof_body_map','source_adaptation_map','root_draft_review'):
+ row=source_manifest[key];assert pin(W/row['path'])==row
+for row in source_manifest['helpers']:assert pin(W/row['path'])==row
+
+def visible(text):
+ lines=[];fence=None
+ for line in text.splitlines():
+  m=re.match(r'^\s*(`{3,}|~{3,})',line)
+  if m:
+   if fence is None:fence=(m.group(1)[0],len(m.group(1)))
+   elif m.group(1)[0]==fence[0] and len(m.group(1))>=fence[1]:fence=None
+   continue
+  if fence is None:lines.append(line)
+ assert fence is None
+ return '\n'.join(lines)
+note=W/source_manifest['note']['path']
+active=[note,F/'SOURCE_INVENTORY.md',*sorted(Q.glob('*.md'))]
+links=[]
+for path in active:
+ for target in re.findall(r'\[[^\]]*\]\(([^\s)]+)\)',visible(path.read_text())):
+  if target.startswith(('http:','https:','#','mailto:')):continue
+  dst=(path.parent/urllib.parse.unquote(target.split('#',1)[0])).resolve()
+  assert dst.is_file(),(str(path),target);dst.relative_to(W)
+  links.append({'source':str(path.relative_to(W)),'target':target,'resolved':str(dst.relative_to(W))})
+ assert not any(line.rstrip()!=line for line in path.read_text().splitlines())
+assert not (W/'outputs/product_seed_emitter_2026_10_17.json').exists()
+assert subprocess.check_output(['git','rev-parse','HEAD'],cwd=W,text=True).strip()=='0e8375354c42963234cc4b15b14ab6bb553c713d'
+assert subprocess.check_output(['git','branch','--show-current'],cwd=W,text=True).strip()=='physics-loop/toe-product-seed-emitter-20261017'
+assert not subprocess.check_output(['git','diff','--cached','--name-only'],cwd=W,text=True).strip()
+dump(Q/'FINAL_FOCUSED_CHECK.json',{'scope':'After report/evidence packaging: identity, active link, whitespace and branch checks only.',
+ 'checked_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source_manifest_pins_current':True,
+ 'declared_input_count':len(declared),'active_markdown_files':len(active),'active_links_checked':len(links),'links':links,
+ 'trailing_whitespace':[],'original_frozen_whitespace_exceptions':[],
+ 'canonical_result_absent':True,'scientific_functions_executed':0,'scientific_mutations_executed':0,'staged_files':0})
+dump(Q/'PUBLISH_CHECKS.json',{'status':'Ready for root portability review only; not ready to claim canonical execution or publication.',
+ 'passed_in_this_task':['original freeze and 152 source/context byte identities','three unchanged proof-body byte maps',
+ 'six function AST transformation/reversal maps','201 exact Assert ASTs retained','explicit input resolver and manifest closure',
+ 'primary/helper/citation parser recognition without graph build','canonical and frozen Python syntax checks',
+ 'actual historical report-field comparisons','twelve unique unexecuted scientific mutation anchors',
+ 'status-neutral helper module docstrings with all function ASTs unchanged','active links and whitespace','current declared-input identities'],
+ 'pending':['root complete canonical portability review','actual canonical execute_and_write_cache under shared CPU120/wall120',
+ 'actual copied-source scientific mutations under stated caps','runtime result comparison and source/cache freshness receipt',
+ 'focused publication gates and later graph publication checks','regular PR creation by root','shared integrated-current-main landing gates','independent retained audit'],
+ 'future_canonical_caps':{'CPU_soft_hard_seconds':[120,120],'external_wall_seconds':120,'scope':'Combined six-body process, not six separate allowances.'},
+ 'actual_bookkeeping_caps':{'CPU_soft_hard_seconds':[30,30],'external_wall_seconds':60,'scope':'Per static builder/verification attempt; see preserved receipts.'},
+ 'scientific_functions_executed':0,'scientific_mutations_executed':0,'canonical_cache_created':False,'graph_build_executed':False,
+ 'git_staged':False,'git_commit_created':False,'published':False,'editable_prompt_changes':[],
+ 'review_record':'PORTABILITY_REVIEW.md','static_result':'STATIC_CHECKS.json','latest_static_receipt':'portability_evidence/static_verify_attempt_2/RECEIPT.json',
+ 'source_adaptation':'SOURCE_ADAPTATION.json','input_identities':'PRE_EXECUTION_IDENTITIES.json',
+ 'conformance':'Current section 12: focused checks now; full shared exact integrated-main landing gates later. Historical plan 6.4 does not add blanket per-PR gates.'})
+all_current=[note,primary,*[W/r['path'] for r in source_manifest['helpers']],*sorted(p for p in F.rglob('*') if p.is_file()),*sorted(p for p in Q.rglob('*') if p.is_file())]
+assert len(all_current)==len(set(all_current))
+freeze={'status':'Frozen pre-execution portability-review packet; later review/execution records remain separate.',
+ 'parent_head':'0e8375354c42963234cc4b15b14ab6bb553c713d','files':[pin(p) for p in all_current],
+ 'self_excluded':str((Q/'PORTABILITY_FREEZE.json').relative_to(W)),
+ 'scientific_executions':0,'mathematical_formula_changes':[]}
+dump(Q/'PORTABILITY_FREEZE.json',freeze)
+ready=[*all_current,Q/'PORTABILITY_FREEZE.json']
+status=subprocess.check_output(['git','status','--short','--untracked-files=all'],cwd=W,text=True)
+listed={line[3:] for line in status.splitlines() if line.startswith('?? ')}
+assert len(listed)==len(status.splitlines()) and listed=={str(p.relative_to(W)) for p in ready},sorted(listed-{str(p.relative_to(W)) for p in ready})
+result={'status':'Prepared and frozen for root portability review; stop before scientific execution.',
+ 'root_review_entry':pin(Q/'PORTABILITY_REVIEW.md'),'packet_freeze':pin(Q/'PORTABILITY_FREEZE.json'),
+ 'source_manifest':pin(Q/'SOURCE_MANIFEST.json'),'source_adaptation':pin(Q/'SOURCE_ADAPTATION.json'),
+ 'static_result':pin(Q/'STATIC_CHECKS.json'),'static_receipt':pin(Q/'portability_evidence/static_verify_attempt_2/RECEIPT.json'),
+ 'note':pin(note),'primary':pin(primary),'helpers':source_manifest['helpers'],
+ 'ready_file_count':len(ready),'files':[pin(p) for p in ready],
+ 'mathematical_formula_changes':[],'scientific_functions_executed':0,'scientific_mutations_executed':0,
+ 'cache_created':False,'staged_files':0,'editable_prompt_changes':[]}
+dump(D/'READY_FOR_PORTABILITY_REVIEW.json',result)
+print(json.dumps({k:v for k,v in result.items() if k!='files'},indent=2))

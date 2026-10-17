@@ -1,0 +1,141 @@
+INDEPENDENT CHECK, ROUND 2 -- c12 items 4-6, the runner's clean pair test, and the C8 conditional pairs
+Date: 2026-10-17.  Checker: Claude Opus 5.5 subagent (same model family as the author, so not an independent model).
+Files are in this directory. Outputs are the out_*.txt files named below.
+
+==========================================================================================
+(a) ITEM 5 (W-dressed realization U_R W): PER-ELEMENT CLAIM CORRECT; "w2 ON ALL OF O" WRONG
+==========================================================================================
+Script: c12_W_and_control.py -> out_c12_W_and_control.txt
+Setup: L = 10, sector +++, eps from a consistent order-48 group. W acts by exact Pauli conjugation:
+each B_v that anticommutes with P contributes a factor (-i B_v).
+
+1. Per element, the claim is CORRECT. On a clean string creator, lambda(U_R) = -1 and
+   lambda(U_R W) = +1 for all 3 axis C2 and all 6 edge C2.
+   - Reason: W S W^dag = (-i B_x)(-i B_Rx) S = -B_x B_Rx S.
+   - So inside the Z2 subgroup {1, R}, the action {1, U_R W} gives eta_f = -1.
+
+2. The group law FAILS when every element is dressed. The note's step is wrong. It states
+   (U_R W)(U_S W) = U_R U_S W^2 with W^2 = const (-1)^F. But the realization of RS is U_RS W, not U_RS W^2.
+   The leftover factor is W itself. W is not proportional to 1 or to (-1)^F on the excitation space: it
+   acts as i^{N_f}, which is -1 on two-fermion states relative to the vacuum.
+   Numerical test: check whether V_g V_h = V_gh, up to (-1)^F, as automorphisms on test operators
+   (A_e, B_v, single gamma; also even operators only):
+     n = 0           (U_g)                      : fails for   0 / 576 (g,h)
+     n = 1 for all g (incl. identity)           : fails for 576 / 576
+     n = 1 for g != e (the note's U_R W)        : fails for 506 / 576  (also fails on even operators alone)
+     n = [sgn g = -1] (W only on C4 and edge C2) : fails for   0 / 576
+   So V_g = U_g W^{n(g)} is an action up to fermion parity iff n mod 2 is a homomorphism O -> Z2. Since
+   W^2 is proportional to (-1)^F, only the parity of n matters.
+
+3. The only nontrivial consistent twist is n = [sgn = -1], because H^1(O; Z2) = Z2. Under it:
+   - eta_f(axis C2) = +1, unchanged (the axis C2 is even: the square of a C4);
+   - eta_f(edge C2) = -1 (computed: axis [+1], edge [-1]).
+   The resulting class is sgn^2 (pattern +,-), the same pattern as the Majorana-level extension A4 x| Z4.
+   It is NOT w2 (-,-).
+   - No W-twist can reach w2. eta(axis C2) cannot be flipped, because n(axis C2) = 2 n(C4) = 0 for any
+     homomorphism n.
+   - Twists by other internal symmetries are not excluded by this argument.
+   Required correction to item 5:
+   - "U_R W for every R" is not an O action.
+   - The per-C2 statement holds only within each Z2 subgroup.
+   - The consistent W-twisted O action carries sgn^2, not w2.
+
+4. The same issue affects C8 item 6 ("P_R W gives the trivial class"). In BKSF, prod_v B_v = I exactly, so
+   W^2 is a constant there. The consistency condition is again that n must be a homomorphism from the
+   stabilizer to Z2.
+   - D3 codes: n(C2) = 1, n(C3) = 0 is a homomorphism. All three C2 flip, so trivial on D3. OK.
+   - Single-C2 codes: OK.
+   - Order-4 codes (one axis C2, two edge C2): any homomorphism has n(axis) = n(e1) + n(e2). So at most
+     two of the three can flip. Starting from w2 = (-,-,-), the reachable patterns are (+,+,-), (+,-,+)
+     and (-,+,+), never trivial.
+     -> C8 item 6 is false for the 12 order-4 codes, and it needs n restricted to a homomorphism
+        everywhere ("P_R W" for every R, including C3, is not an action).
+
+==========================================================================================
+(b) RUNNER (scripts/majorana_per_direction_..._2026_10_17.py): PASS = 8 REPRODUCED
+==========================================================================================
+out_runner_c12.txt: TOTAL PASS=8 FAIL=0, about 2 minutes.
+The clean pair test gives lambda = -1 for (axis C2, edge C2) x 2 positions x 2 sectors at L = 8.
+- It agrees with my independent result: all 9 C2, all 128 groups, L = 10 and L = 12 (REPORT.txt item 7).
+- Its window is [min-1, max+1] with separation 2-3, so side at most 6 < 8. No wrapping.
+- The phase fix (W[2] - k for gamma_sub = i^k X^x Z^z) is correct.
+  Note: the old gse_pair2.py used +k, a second phase error besides the flux-dressing freedom.
+- Its coverage is thin (one element per class and the first consistent group only), but it is correct.
+
+==========================================================================================
+(c) C8: THE 36 UNCOVERED BKSF PAIRS ARE SETTLED, WITHOUT DEPENDENCE ON THE DRESSING
+==========================================================================================
+Scripts: bksf_core.py, c8_classify.py, pairspace.py, c8_pairtest.py, c8_structure.py
+
+Classification (L = 4, own code from the definition), out_c8_classify.txt:
+- 60 codes, 12 orderings each. Stabilizer orders: 36 x 2, 12 x 4, 12 x 6.
+- 108 (code, C2) pairs (96 edge, 12 axis).
+- 72 covered (some ordering in the class has a plaquette span preserved by P_R), 36 uncovered:
+  12 axis + 12 edge from the order-4 codes, and 12 edge from single-C2 codes. This reproduces the C8 split.
+- P_R preserves both uniform signed groups for every stabilizing R.
+- Each signed group is independent of which ordering in the class is used.
+
+Method: compute lambda over the WHOLE admissible creator space, not for one creator (pairspace.py).
+- Admissible S follows the C8 rules, inside an R-invariant window: B-syndrome exactly {x, Rx}; flux
+  allowed only within distance 1 of x or Rx (for S and for S^R); and S and S^R have the same syndrome.
+- The solutions form an affine space S0 * V0 over GF(2). The exact identity is
+      lambda(S0 N1 N2) / lambda(S0) = F(N1) F(N2) c(N2, N1 N1^R),
+  so F(N) := lambda(S0 N) / lambda(S0) is a GF(2) quadratic function.
+- Hence lambda is constant on the entire space iff F(b_i) = +1 on a basis AND the bilinear (linking)
+  form K_ij = c(b_j, b_i b_i^R) vanishes. Both were checked exactly.
+- This removes the "one particular dressed creator" objection: every admissible dressing in the window is
+  covered at once.
+
+Control: the method does detect dressing dependence where it exists. On the c12 code itself
+(out_c12_W_and_control.txt):
+- axis C2: dressed space dim 495, F = -1 on 53 basis vectors -> NOT constant. The clean-only space gives
+  constant lambda = -1.
+- edge C2: the dressed space happens to be constant (-1).
+
+RESULTS
+  L = 10, margin 2, separations 2 and 3, all 108 pairs, both uniform sectors (out_c8_pairtest_L10.txt):
+     UNCOVERED axis C2 (12 pairs, sep 2):        24 runs  lambda = +1, constant over the full space
+     UNCOVERED edge C2 (24 pairs, sep 2 and 3):  96 runs  lambda = +1, constant
+     covered edge C2   (72 pairs):               288 runs lambda = +1, constant (agrees with C8's clean +1)
+  L = 12, margin 3, separations 1 (edge) and 4 (axis), the 36 uncovered pairs (out_c8_pairtest_L12_unc_m3.txt):
+     axis: 24 runs, edge: 96 runs, all lambda = +1 and constant.
+  Creator-space dimensions range from 327 to 1140. In every run F(b_i) = +1 on every basis vector and
+  K_ij = 0 for all i != j.
+  No clean creator with a clean image exists in any uncovered run, so C8's diagnosis is confirmed.
+  (With the representative ordering's plaquettes, a clean creator also fails to exist for some covered
+  runs. Clean-ness depends on the generator convention; the full-space lambda does not.)
+  => For all 108 pairs, lambda = +1 is a property of the whole admissible class, not of a chosen dressing.
+     With lambda = theta eta and theta = -1, eta_f(C2,C2) = -1 under P_R for every C2 of every code.
+
+Why BKSF differs from c12 (c8_structure.py):
+- In BKSF, prod_v B_v = I identically. Every local operator flips an even number of B's, so no local
+  dressing can turn the fermion endpoint into a trivial excitation. Two admissible creators differ by
+  N = E * R(E) * (stabilizer). The linking contributions of E near x and R(E) near Rx then cancel in pairs
+  (K = 0), so lambda is fixed.
+- In c12, a single Majorana gamma_{x,d} is a one-qubit Pauli. It flips B_x and the 4 plaquettes around
+  the edge (x, x+d). So "fermion + elementary flux" is a LOCAL, topologically trivial excitation. A creator
+  dressed this way, such as gamma_x gamma_Rx, does not create the emergent fermion at all. Its lambda
+  = eps(d) eps(Rd) measures the Majorana-level square (+1 axis, -1 edge), not eta_f.
+  -> Suggested rewording of c12 item 6: the dressed creator changed the topological sector of the
+     endpoints (to the local Majorana). It is not a linking effect: symmetric linking contributions
+     cancel (K = 0 in both models).
+- Scoping verdict for C8: marking the 36 as conditional was right with the old evidence, and that evidence
+  is now superseded. The dressing-independent computation settles all 36 (see the summary): lambda = +1,
+  so eta_f = -1 under P_R. The D2 (Q8-type, all squares -1) statement for the order-4 codes and the
+  remaining single-C2 statements become unconditional within the stated scope (window, L, lambda = theta
+  eta). The P_R W part of C8 item 6 must still be corrected for the order-4 codes, see (a)4.
+
+SCOPE CAVEATS
+- Constancy is proven exactly for the full admissible creator space inside the stated R-invariant windows
+  (margin 2 at L = 10, margin 3 at L = 12) and the stated positions. Larger windows add only operators that
+  are products of local pieces near x and Rx and stabilizers, by the locality argument above.
+- eta = -lambda rests on lambda = theta_f eta_f, an input for both notes.
+- The bare P_R used here is the BKSF edge-qubit permutation.
+- Nothing was committed and no note was edited.
+
+FILES ADDED IN THIS ROUND
+  c12_W_and_control.py / out_c12_W_and_control.txt
+  out_runner_c12.txt
+  bksf_core.py, c8_classify.py (-> c8_pairs.pkl, out_c8_classify.txt)
+  pairspace.py, c8_pairtest.py (-> out_c8_pairtest_L10.txt, out_c8_pairtest_L12_unc_m3.txt, *.pkl)
+  c8_structure.py / out_c8_structure.txt

@@ -1,0 +1,8 @@
+distinct codes: 60  class sizes: [12]
+class membership symmetric: True
+stabilizer orders: Counter({2: 36, 6: 12, 4: 12})
+(code, C2) pairs: 108 Counter({'C2edge': 96, 'C2axis': 12})
+covered pairs: 72  uncovered: 36
+uncovered by (stabilizer order, C2 kind): {(4, 'C2axis'): 12, (4, 'C2edge'): 12, (2, 'C2edge'): 12}
+P_R preserves both uniform signed groups for every stabilizing R: True
+uniform signed groups independent of ordering within class (6 members tested each): True

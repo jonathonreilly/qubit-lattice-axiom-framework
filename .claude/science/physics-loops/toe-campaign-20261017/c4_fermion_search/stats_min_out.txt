@@ -1,0 +1,36 @@
+189 minimal orbits [1763, 6175] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III IYY IYY YII YII YII YII
+193 minimal orbits [1763, 4331] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III IYY IYY YII YII YII YII
+210 minimal orbits [1939, 5523] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III IZZ IZZ ZII ZII ZII ZII
+213 minimal orbits [1939, 4403] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III IZZ IZZ ZII ZII ZII ZII
+241 minimal orbits [3603, 5523] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III XXY XXY XXY XXY ZZI ZZI
+245 minimal orbits [2723, 3603] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III IYX IYX XIY XIY YXI YXI
+261 minimal orbits [2843, 3071] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III IZX IZX XIZ XIZ ZXI ZXI
+264 minimal orbits [3071, 6175] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III XXZ XXZ XXZ XXZ YYI YYI
+332 minimal orbits [2319, 3459] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III YYZ YYZ YYZ YYZ XXI XXI
+336 minimal orbits [2319, 6163] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III YYZ YYZ YYZ YYZ XXI XXI
+379 minimal orbits [2287, 3459] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III ZZY ZZY ZZY ZZY XXI XXI
+382 minimal orbits [2287, 5391] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III ZZY ZZY ZZY ZZY XXI XXI
+699 minimal orbits [2723, 3579] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III IYX IYX XIY XIY YXI YXI
+783 minimal orbits [2843, 2979] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III IZX IZX XIZ XIZ ZXI ZXI
+913 minimal orbits [2979, 4331] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III ZZX ZZX ZZX ZZX YYI YYI
+945 minimal orbits [3579, 4403] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III YYX YYX YYX YYX ZZI ZZI
+1123 minimal orbits [1587, 5391] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III IXX IXX XII XII XII XII
+1217 minimal orbits [1587, 6163] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III IXX IXX XII XII XII XII
+187 minimal orbits [6167, 6295] 4 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III ZYY ZYY YZI YZI YIZ YIZ
+191 minimal orbits [4307, 4963] 4 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III XYY XYY YXI YXI YIX YIX
+207 minimal orbits [5507, 5995] 4 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III YZZ YZZ ZYI ZYI ZIY ZIY
+209 minimal orbits [4371, 5187] 4 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III XZZ XZZ ZXI ZXI ZIX ZIX
+240 minimal orbits [5515, 6211] 4 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III YIZ YIZ XZX XZX ZIY ZIY
+243 minimal orbits [3603, 4011, 5187] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III XXY XXY XXY XXY ZZI ZZI
+259 minimal orbits [3071, 4011, 4963] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III XXZ XXZ XXZ XXZ YYI YYI
+262 minimal orbits [5971, 5995] 4 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III ZIY ZIY IZY IZY ZZY ZZY
+334 minimal orbits [5131, 5187] 4 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III ZIX ZIX IZX IZX ZZX ZZX
+338 minimal orbits [3451, 5547] 4 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III YXX YXX ZIY ZIY ZYI ZYI
+381 minimal orbits [3443, 6027] 4 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III ZII ZII ZIY ZIY ZYI ZYI
+385 minimal orbits [5091, 5187] 4 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III YXI YXI XYI XYI ZZX ZZX
+667 minimal orbits [3579, 5239, 5995] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III YYX YYX YYX YYX ZZI ZZI
+741 minimal orbits [2979, 6027, 6295] 5 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III ZZX ZZX ZZX ZZX YYI YYI
+891 minimal orbits [4335, 5995] 4 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III XIY XIY ZYZ ZYZ YIX YIX
+929 minimal orbits [4395, 6295] 4 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III XIZ XIZ YZY YZY ZIX ZIX
+1085 minimal orbits [5367, 5547] 4 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III YXX YXX XYI XYI XIY XIY
+1187 minimal orbits [6155, 6211] 4 gens; mobile charge patterns at origin: 1 exchange signs found: [1] | III ZXX ZXX XZI XZI XIZ XIZ

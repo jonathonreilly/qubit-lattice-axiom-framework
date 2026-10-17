@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_publication_draft/static_01/executed_source.py", line 98, in <module>
+    demand(entry['role']+' adapted AST pin',digest(dump(adapted).encode())==entry['adapted_body_ast_sha256'])
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_publication_draft/static_01/executed_source.py", line 34, in demand
+    raise AssertionError(name)
+AssertionError: realifier_author adapted AST pin

@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-17T00:47:41.986450+00:00",
+  "reason": "External parent landing and remote branch deletion require a current-main publication base.",
+  "original_note_sha256": "ce701169ef01f0b185dab37bf9279b90efdf4e648377ea0e53707f1ce57156d1",
+  "current_note": {
+    "bytes": 106965,
+    "sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac"
+  },
+  "replacements": [
+    {
+      "old": "records ten unchanged instruction sources and the unchanged original target\nbody followed by portable-provenance prose. No science was merged into this\nbranch, and no audit verdict was adopted.",
+      "new": "records ten unchanged instruction sources, the unchanged original target\nbody and the complete narrow publication-provenance changes. No science was\nmerged or pushed to main by this campaign, and no audit verdict was adopted."
+    },
+    {
+      "old": "This milestone is packaged on a child branch of PR9659 with its own\nwrapper review and execution; the previous result is unchanged.",
+      "new": "This milestone is packaged against current main at\n69cf6a289b2ec06213473f1549c51a57c29b6d70 after PR9659 was landed externally\nand its branch deleted. Only this new milestone was rebased; its original\nscience parent and prior execution remain preserved historical sources."
+    }
+  ],
+  "unchanged_mathematical_bodies": 4,
+  "source_programs_changed": false,
+  "root_review": "Complete two replacement paragraphs and companion provenance read; four bodies reverified byte for byte. No scientific argument changed. New execution and graph checks are separate."
+}

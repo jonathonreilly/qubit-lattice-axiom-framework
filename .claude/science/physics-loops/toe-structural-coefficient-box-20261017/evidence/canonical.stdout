@@ -1,0 +1,17 @@
+{
+  "scope": "Portable replay of two separately written finite exact calculations. The infinite resolvent/packet argument is analytically reviewed; historical point results are inherited premises.",
+  "independent_checks": 157,
+  "extra_reflection": {
+    "exact_rational": "1979343963533505010076724332885926810108419/9765421527595617928242046157797906250000000000",
+    "display_only_float": 0.00020268904500846948
+  },
+  "ready_complete": {
+    "exact_rational": "94273834080014687082390827348167944818813316533/8456855042897805125857611972652986812500000000000",
+    "display_only_float": 0.011147623271512414
+  },
+  "finite_complete": {
+    "exact_rational": "102730689122912492208248439320820931631313316533/8456855042897805125857611972652986812500000000000",
+    "display_only_float": 0.012147623271512415
+  },
+  "limits": "No stationary refit, coefficient grid, quadrature, time evolution, native realization or retained audit."
+}

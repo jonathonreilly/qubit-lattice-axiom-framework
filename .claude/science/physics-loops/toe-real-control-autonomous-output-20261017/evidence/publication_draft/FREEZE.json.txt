@@ -1,0 +1,73 @@
+{
+  "frozen_utc": "2026-10-17T05:37:33.674699+00:00",
+  "kind": "mechanical publication draft; unexecuted canonical science",
+  "intended_parent": "67108090f68ed9b2bc62eee23701b2d3d71dce4a",
+  "root_reported_current_main": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+  "deadline_utc": "2026-10-17T23:07:27Z",
+  "manifest": {
+    "path": "PACKET_MANIFEST.json",
+    "bytes": 126081,
+    "sha256": "17d54aeebc10b49a36825cce57bbb7e1352473894ef3e0d4c807d05b3ca68146"
+  },
+  "identities": {
+    "primary": {
+      "path": "canonical/scripts/real_control_autonomous_output_2026_10_17.py",
+      "bytes": 47127,
+      "sha256": "b7d63ff04babbf0cf4abd6fde6056a8d7a14684eadb66a2773f645cdea430bc5"
+    },
+    "note": {
+      "path": "canonical/docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 74148,
+      "sha256": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca"
+    },
+    "source_map": {
+      "path": "canonical/outputs/real_control_autonomous_output_2026_10_17_inputs/SOURCE_MAP.json",
+      "bytes": 215896,
+      "sha256": "0250e22141d72c51c03c19db10da5e5b5bb1aab27f776b82a16218c53da54ade"
+    },
+    "input_map": {
+      "path": "canonical/outputs/real_control_autonomous_output_2026_10_17_inputs/INPUT_MAP.json",
+      "bytes": 10264,
+      "sha256": "fe86c392ef0354470a47a8dbd6ea1a4dc2c7863f90839db3b78a264ace3fe96c"
+    },
+    "artifact_manifest": {
+      "path": "canonical/outputs/real_control_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "bytes": 26620,
+      "sha256": "2360cdbe3f57b100bec6a9cfc7e9792ab38af683f24d9e0747dc07b546a2f3b8"
+    },
+    "transport_ledger": {
+      "path": "canonical/outputs/real_control_autonomous_output_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+      "bytes": 270498,
+      "sha256": "5ccd2f94737632ecef9bcdb285a2b5d20e52d2753d807a3ba6948eaebbc05b58"
+    },
+    "proof_body_map": {
+      "path": "canonical/outputs/real_control_autonomous_output_2026_10_17_inputs/PROOF_BODY_MAP.json",
+      "bytes": 3538,
+      "sha256": "84df07032725c77c19b1245f99176dee43df827f93bfa9b51bb4d229f30dec00"
+    },
+    "static_final_receipt": {
+      "path": "static_03/RECEIPT.json",
+      "bytes": 1827,
+      "sha256": "dc8894e6af20e05fcef1851786edd2242722c80ba8bb79812d2ea0fd4c2e42b7"
+    },
+    "final_wording_amendment": {
+      "path": "FINAL_WORDING_AMENDMENT.json",
+      "bytes": 1415,
+      "sha256": "6e5ca434e430966d99c5d8be6a34d4a19a64bbc6b43b9409f10a99d3432c71f1"
+    }
+  },
+  "overlay_files": 88,
+  "source_labels": 229,
+  "unique_source_destinations": 99,
+  "new_unique_source_files": 73,
+  "declared_inputs": 109,
+  "original_statement_records": 448,
+  "transport_events": 16,
+  "added_after_finally_return": 1,
+  "proof_link_edits": 3,
+  "scientific_executions": 0,
+  "mutation_executions": 0,
+  "full_static_attempts": 3,
+  "limits": "Static03 covers exact final primary except the one root-requested printed coverage literal, fully bound in FINAL_WORDING_AMENDMENT.json. Independent transport review/canonical execution/faults/focused conformance/publication pending. Historical ramp clause remains budget arithmetic only.",
+  "claim_scope": "Supplied real C1 setup from pure product seed and conditional autonomous runtime; original unprepared-seed failure at slower onset only. No new calibration, larger-window, permanence, thermal doubled-device or native-supply claim."
+}

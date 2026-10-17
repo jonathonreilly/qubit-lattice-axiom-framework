@@ -1,0 +1,29 @@
+60 codes; stabilizer orders Counter({2: 36, 6: 12, 4: 12})
+T-junction (half-edge, L=6, 60 codes, 20 triples each): {((-1, 20),): 60}
+T-junction toric-code control: Counter({1: 20})
+  .. 10 codes 6 s
+  .. 20 codes 8 s
+  .. 30 codes 11 s
+  .. 40 codes 14 s
+  .. 50 codes 16 s
+  .. 60 codes 19 s
+pairs (code, C2): 108
+   ('edge', 'flux0', True, (1, 1)) 24
+   ('edge', 'flux0', True, (None, None)) 84
+   ('edge', 'fluxpi', True, (1, 1)) 24
+   ('edge', 'fluxpi', True, (None, None)) 84
+   ('half R=-ZZ', 'flux0', True, (1, 1)) 24
+   ('half R=-ZZ', 'flux0', True, (None, None)) 84
+   ('half R=-ZZ', 'fluxpi', True, (1, 1)) 24
+   ('half R=-ZZ', 'fluxpi', True, (None, None)) 84
+   ('half', 'flux0', True, (1, 1)) 24
+   ('half', 'flux0', True, (None, None)) 84
+   ('half', 'fluxpi', True, (1, 1)) 24
+   ('half', 'fluxpi', True, (None, None)) 84
+codes with a stabilizing rotation needing sign correction, per sector (half): {(1, 1, -1): 44, (1, -1, 1): 44, (1, -1, -1): 44, (-1, 1, 1): 44, (-1, 1, -1): 44, (-1, -1, 1): 44}
+                                                           (edge): {(1, 1, -1): 44, (1, -1, 1): 44, (1, -1, -1): 44, (-1, 1, 1): 44, (-1, 1, -1): 44, (-1, -1, 1): 44}
+control toric-code boson flux0 vertex C2z [1, 1, 1]
+control toric-code boson flux0 plaquette C2z [1, 1, 1]
+control toric-code boson fluxpi vertex C2z [1, 1, 1]
+control toric-code boson fluxpi plaquette C2z [-1, -1, -1]
+elapsed 24 s

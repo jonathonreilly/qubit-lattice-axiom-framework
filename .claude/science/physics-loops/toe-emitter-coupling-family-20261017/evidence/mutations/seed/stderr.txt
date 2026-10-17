@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/seed/mutated.py", line 618, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/seed/mutated.py", line 543, in main
+    report = run_family_author(inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/seed/mutated.py", line 281, in run_family_author
+    lt('complete_seed_overlap_squared',seed_sq,F(3,1000)**2)
+    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/seed/mutated.py", line 98, in lt
+    assert left<right, (name,str(left),str(right))
+           ^^^^^^^^^^
+AssertionError: ('complete_seed_overlap_squared', '3246924166621136708441854456134364261618614150884516696275570870380952128762043144700594201632171614141002511328625177123859982821468843368603505109804298373568326720448360337676229958882763/3219455660257358898708514497416218678290133181446875072387199436266180120417413922546138302796515040325158751125551456646915535179562670782610779012634888632671163156028353316805469703890000000', '9/1000000')

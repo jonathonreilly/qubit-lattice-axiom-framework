@@ -1,0 +1,260 @@
+{
+  "stage": "before Popen; scientific program not yet launched",
+  "captured_utc": "2026-10-17T04:57:40.033133+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-I",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run01/executed_source.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate",
+  "resource_plan_sha256": "43fe3aa6ab6aedda6c76e509f0187594b32c7e081ca68404ce04b85fa854341e",
+  "input_bindings": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/PLAN.md",
+      "bytes": 2202,
+      "sha256": "4d2179a635b5faa3f73a5a7ac345a51900fecc2402def84afdb5aafdab72f280",
+      "device": 16777231,
+      "inode": 518538225,
+      "mtime_ns": 1792212541179238826
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/RESOURCE_PLAN.json",
+      "bytes": 791,
+      "sha256": "43fe3aa6ab6aedda6c76e509f0187594b32c7e081ca68404ce04b85fa854341e",
+      "device": 16777231,
+      "inode": 518538226,
+      "mtime_ns": 1792212541179341533
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/SOURCE_MAP.json",
+      "bytes": 7467,
+      "sha256": "c1a701881fdeb81ce3f878b7851f9f6f0b36f15d04b879f213d2fb76f902f1f9",
+      "device": 16777231,
+      "inode": 518538224,
+      "mtime_ns": 1792212541179108784
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/CANDIDATE.md",
+      "bytes": 28103,
+      "sha256": "57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c",
+      "device": 16777231,
+      "inode": 518539817,
+      "mtime_ns": 1792213009974238154
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/check_preparation.py",
+      "bytes": 13957,
+      "sha256": "70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0",
+      "device": 16777231,
+      "inode": 518539494,
+      "mtime_ns": 1792212816168169440
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/launch_check.py",
+      "bytes": 6185,
+      "sha256": "3cf8834d377e20553c4d979967b45b868ab245b620395a07b826b5693579cafe",
+      "device": 16777231,
+      "inode": 518540164,
+      "mtime_ns": 1792213056831666315
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/realifier.md",
+      "bytes": 32324,
+      "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018",
+      "device": 16777231,
+      "inode": 518538207,
+      "mtime_ns": 1792212541163115096
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/realifier_freeze.json",
+      "bytes": 11001,
+      "sha256": "16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b",
+      "device": 16777231,
+      "inode": 518538208,
+      "mtime_ns": 1792212541163445178
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/realifier_source_manifest.json",
+      "bytes": 8399,
+      "sha256": "717b918b6b67b736daaddf9f51bde2182ff6013b3a925395744a5881a2b1149a",
+      "device": 16777231,
+      "inode": 518538209,
+      "mtime_ns": 1792212541165275546
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/family.md",
+      "bytes": 39464,
+      "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+      "device": 16777231,
+      "inode": 518538210,
+      "mtime_ns": 1792212541166363625
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/family_acceptance.json",
+      "bytes": 10085,
+      "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325",
+      "device": 16777231,
+      "inode": 518538211,
+      "mtime_ns": 1792212541166936415
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/family_qualification.md",
+      "bytes": 2896,
+      "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814",
+      "device": 16777231,
+      "inode": 518538212,
+      "mtime_ns": 1792212541167555620
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/parameters.json",
+      "bytes": 24275,
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+      "device": 16777231,
+      "inode": 518538213,
+      "mtime_ns": 1792212541168058119
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/resonance.md",
+      "bytes": 37370,
+      "sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0",
+      "device": 16777231,
+      "inode": 518538214,
+      "mtime_ns": 1792212541169190197
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/resonance_acceptance.json",
+      "bytes": 6363,
+      "sha256": "bb280c96d290e28b42c45994cab3fe9871d671b0d20d39a36ae09d211ef98686",
+      "device": 16777231,
+      "inode": 518538215,
+      "mtime_ns": 1792212541170256360
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/resonance_qualification.md",
+      "bytes": 1896,
+      "sha256": "88db9d4dcfdae159ad3478776441857db7dac0117db80dc13123be94267e4e84",
+      "device": 16777231,
+      "inode": 518538216,
+      "mtime_ns": 1792212541170763983
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/product_preparation.md",
+      "bytes": 28456,
+      "sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227",
+      "device": 16777231,
+      "inode": 518538217,
+      "mtime_ns": 1792212541171607313
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/product_preparation_qualification.md",
+      "bytes": 8169,
+      "sha256": "5e4cc2c916d9240ec5bb0b2a84559ae38fd2b20959e63c52d6b3c0bda04a2d69",
+      "device": 16777231,
+      "inode": 518538218,
+      "mtime_ns": 1792212541172080020
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/workflow.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "device": 16777231,
+      "inode": 518538219,
+      "mtime_ns": 1792212541173742138
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/physics_loop.md",
+      "bytes": 9276,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "device": 16777231,
+      "inode": 518538220,
+      "mtime_ns": 1792212541174548094
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/discovery.md",
+      "bytes": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "device": 16777231,
+      "inode": 518538221,
+      "mtime_ns": 1792212541175401257
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/claim_status.md",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "device": 16777231,
+      "inode": 518538222,
+      "mtime_ns": 1792212541175902088
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/inputs/delivery.md",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "device": 16777231,
+      "inode": 518538223,
+      "mtime_ns": 1792212541176290795
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run01/executed_source.py",
+      "bytes": 13957,
+      "sha256": "70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0",
+      "device": 16777231,
+      "inode": 518540170,
+      "mtime_ns": 1792213060008449832
+    }
+  ],
+  "runtime_bindings": [
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+      "bytes": 52640,
+      "sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5",
+      "device": 16777231,
+      "inode": 31187059,
+      "mtime_ns": 1751028755689299885
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/fractions.py",
+      "bytes": 40021,
+      "sha256": "58f7750133f2e23999ba3f634d1b14edfec6dc48bf8bb00a9911262cd7198f63",
+      "device": 16777231,
+      "inode": 31183739,
+      "mtime_ns": 1749656217000000000
+    },
+    {
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py",
+      "bytes": 29422,
+      "sha256": "4e9476348ba105feab28d82f5bcf6cdba2e3e84de6e059bbfe7a13728c0a4ab0",
+      "device": 16777231,
+      "inode": 96387496,
+      "mtime_ns": 1776471071872214098
+    },
+    {
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy-1.14.0.dist-info/METADATA",
+      "bytes": 12816,
+      "sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595",
+      "device": 16777231,
+      "inode": 96389224,
+      "mtime_ns": 1776471072101500080
+    }
+  ],
+  "runtime_versions": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "sympy": "1.14.0",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
+  },
+  "cpu_soft_hard_seconds": [
+    20,
+    20
+  ],
+  "external_wall_seconds": 30,
+  "max_dense_dimension": 4,
+  "no_OS_memory_cap": true,
+  "thread_environment": {
+    "PYTHONHASHSEED": "0",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "runtime_pin_limit": "Selected executable/module/distribution files only; not a hermetic transitive runtime image.",
+  "flush_protocol": "Each prelaunch/source file flushed and fsynced, then run directory fsynced before Popen."
+}

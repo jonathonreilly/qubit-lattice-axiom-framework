@@ -1,0 +1,10 @@
+96 orderings: ('C2only', 'preserving span(S^o)', ('edgeC', 'id'), 'exact perm', ('edgeC2', 'id'))
+336 orderings: ('C2only', 'preserving span(S^o)', ('id',), 'exact perm', ('id',))
+144 orderings: ('D3', 'preserving span(S^o)', ('edgeC', 'id'), 'exact perm', ('edgeC2', 'id'))
+48 orderings: ('order4', 'preserving span(S^o)', ('edgeC', 'id'), 'exact perm', ('edgeC2', 'id'))
+96 orderings: ('order4', 'preserving span(S^o)', ('id',), 'exact perm', ('id',))
+per class: (type, how many orderings each preserved C2 serves) -> #classes
+  12 ('C2only', ())
+  24 ('C2only', (4,))
+  12 ('D3', (4, 4, 4))
+  12 ('order4', (4,))

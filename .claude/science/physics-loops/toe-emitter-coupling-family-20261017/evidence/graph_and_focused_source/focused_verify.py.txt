@@ -1,0 +1,112 @@
+"""Focused milestone checks; no scientific program is replayed here."""
+from archive_evidence import *
+from datetime import datetime, timezone
+import ast,copy,subprocess,sys
+sys.dont_write_bytecode=True
+sys.path[:0]=[str(W/'scripts'),str(W/'docs/audit/scripts')]
+import runner_cache,build_citation_graph,forensic_evidence_readiness,no_go_discipline_gate
+primary='scripts/emitter_coupling_family_2026_10_17.py'
+note='docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+claim='emitter_coupling_family_bounded_theorem_note_2026-10-17'
+output='outputs/emitter_coupling_family_2026_10_17.json'
+cache='logs/runner-cache/emitter_coupling_family_2026_10_17.txt'
+graph='docs/audit/data/citation_graph_manifest.json'
+def read(p):return json.loads(p.read_text())
+mf=read(F/'ARTIFACT_MANIFEST.json');assert len(mf['files'])==53
+for row in mf['files']:assert digest((W/row['path']).read_bytes())=={k:row[k] for k in ('bytes','sha256')}
+bm=read(F/'PROOF_BODY_MAP.json');nb=(W/note).read_bytes();body=(W/bm['source_path']).read_bytes()
+assert nb[bm['body_start_byte_inclusive']:bm['body_end_byte_exclusive']]==body
+assert digest(body)['sha256']==bm['source_sha256']=='9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac'
+assert digest(nb)['sha256']==bm['note_sha256']
+source_map=read(F/'SOURCE_MAP.json')
+for row in source_map['files']:assert digest((W/row['path']).read_bytes())=={k:row[k] for k in ('bytes','sha256')}
+assert len(source_map['files'])==45
+accept=read(Q/'ROOT_PORTABILITY_ACCEPTANCE.json')
+assert digest((W/primary).read_bytes())=={k:accept['primary'][k] for k in ('bytes','sha256')}
+archives=[]
+for mapping in sorted((Q/'evidence').glob('*_MAP.json')):
+    j=read(mapping)
+    for row in j['files']:
+        if row.get('kind')=='symlink_fixture_metadata_only':
+            assert hashlib.sha256(row['target'].encode()).hexdigest()==row['target_text_sha256'];continue
+        stored=(W/row['path']).read_bytes();assert digest(stored)=={k:row[k] for k in ('bytes','sha256')}
+        raw=gzip.decompress(stored) if row['compression']=='gzip' else stored
+        assert digest(raw)=={'bytes':row['raw_bytes'],'sha256':row['raw_sha256']}
+    archives.append({'path':str(mapping.relative_to(W)),**digest(mapping.read_bytes()),'mapped_members':len(j['files'])})
+declared=runner_cache.declared_input_paths(primary)
+result=read(W/output);execution=read(D/'canonical_01/EXECUTION.json')
+assert len(declared)==54 and set(declared)==set(result['input_sha256'])
+for rel,h in result['input_sha256'].items():assert digest((W/rel).read_bytes())['sha256']==h
+assert execution['status']=='ok' and execution['exit_code']==0 and execution['cache_status']=='fresh'
+assert execution['caps']=={'CPU_soft_hard_seconds':[20,20],'external_wall_seconds':30}
+assert execution['all_source_input_bytes_unchanged'] and execution['runner_cache_also_checked_filesystem_generation_tokens']
+assert result['actual_shared_process_limits']['cpu_soft_hard_seconds']==[20,20]
+assert result['actual_shared_process_limits']['external_wall_cap_seconds']==30
+for file,key in [(output,'result'),(cache,'cache')]:assert digest((W/file).read_bytes())=={k:execution[key][k] for k in ('bytes','sha256')}
+pre=read(D/'canonical_01/PRELAUNCH.json')
+for row in [pre['runner'],*pre['inputs'],pre['launcher'],pre['binary'],pre['cache_implementation']]:assert digest(Path(row['path']).read_bytes())=={k:row[k] for k in ('bytes','sha256')}
+author=read(N/'emitter_resource_family_candidate/attempt_01/stdout.json');actual=copy.deepcopy(result['report']);actual.pop('_canonical_execution')
+for key in ['python','sympy','cpu_soft_hard_seconds','wall_cap_external_seconds','program_wall_seconds']:
+    author['actual_resources'].pop(key);actual['actual_resources'].pop(key)
+assert author==actual
+comparison=read(Q/'REPORT_COMPARISON.json');assert comparison['scientific_payload_equality'] and comparison['scientific_discrepancies']==[]
+assert comparison['canonical_result']['sha256']==digest((W/output).read_bytes())['sha256']
+mutation=read(Q/'ROOT_MUTATION_REVIEW.json');assert mutation['case_count']==6 and mutation['unexpected_failures']==0
+for row in mutation['cases']:
+    assert row['intended_assertion_reached'] and row['all_bound_bytes_unchanged'] and row['no_result_written']
+    mpre=read(Path(row['prelaunch']['path']))
+    for binding in mpre['bindings']:assert digest(Path(binding['path']).read_bytes())=={k:binding[k] for k in ('bytes','sha256')}
+    for key in ('prelaunch','stdout','stderr'):
+        r=row[key];assert digest(Path(r['path']).read_bytes())=={k:r[k] for k in ('bytes','sha256')}
+helpers=build_citation_graph.resolve_helper_runner_paths(primary);assert helpers==[],helpers
+row={'claim_id':claim,'note_path':note,'runner_path':primary,'helper_runner_paths':[],'claim_type':'bounded_theorem'}
+issue=forensic_evidence_readiness.cached_row_readiness_issue(row,{claim:row},W);assert issue is None,issue
+assert runner_cache.cache_status(primary)=='fresh'
+g=read(D/'GRAPH_VERIFICATION.json')
+assert g['added']==[claim] and not g['removed'] and not g['rewired']
+assert g['new_edges']==[{'from':claim,'to':'product_seed_emitter_bounded_theorem_note_2026-10-17'}]
+assert g['manifest_sha256']==digest((W/graph).read_bytes())['sha256']
+assert g['new_node']['note_hash']==digest(nb)['sha256'] and g['new_node']['runner_path']==primary and g['new_node']['helper_runner_paths']==[]
+assert all(r['exit_code']==0 for r in g['executions'])
+trigger=no_go_discipline_gate.source_requires_no_go_discipline(note,nb.decode(),'bounded_theorem');assert not trigger,trigger
+compiled=[]
+for p in [W/primary,*sorted(F.rglob('*.py'))]:compile(p.read_bytes(),str(p),'exec');compiled.append(str(p.relative_to(W)))
+texts=[W/note,*sorted(Q.glob('*.md'))]
+vocab=subprocess.run([sys.executable,'scripts/vocab_lint.py','--report-only','--report-path',str(Q/'evidence/VOCAB_REPORT.json'),*[str(p.relative_to(W)) for p in texts],primary],cwd=W,capture_output=True,text=True,timeout=20)
+(D/'vocab.stdout').write_text(vocab.stdout);(D/'vocab.stderr').write_text(vocab.stderr)
+assert vocab.returncode==0 and '0 files with violations' in vocab.stdout,vocab.stdout+vocab.stderr
+def outside_code(text):
+    lines=[];fence=None
+    for line in text.splitlines():
+        match=re.match(r'^ {0,3}(`{3,}|~{3,})(.*)$',line)
+        if fence:
+            if match and match[1][0]==fence[0] and len(match[1])>=len(fence) and not match[2].strip():fence=None
+            continue
+        if match:fence=match[1];continue
+        lines.append(line)
+    assert fence is None
+    return re.sub(r'(`+).*?\1','','\n'.join(lines))
+links=[]
+for p in texts:
+    for target in re.findall(r'\[[^\]\n]+\]\(([^)\s]+)\)',outside_code(p.read_text())):
+        if target.startswith(('http:','https:','#')):continue
+        raw=p.parent/target.split('#')[0];dest=raw.resolve()
+        assert dest.is_file() and not raw.is_symlink(),(str(p),target)
+        links.append({'source':str(p.relative_to(W)),'target':str(dest.relative_to(W))})
+head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=W,text=True).strip()
+branch=subprocess.check_output(['git','branch','--show-current'],cwd=W,text=True).strip()
+assert head=='0f1022e03dbbed8085035f2a378be8ae1aca02e8' and branch=='physics-loop/toe-emitter-coupling-family-20261017'
+assert not subprocess.check_output(['git','diff','--cached','--name-only'],cwd=W,text=True)
+write(Q/'PUBLICATION_EVIDENCE.json',{'scope':'Evidence outside the canonical input closure; preserved original bytes and actual execution records.','files':[{'path':str(p.relative_to(W)),**digest(p.read_bytes())} for p in sorted((Q/'evidence').rglob('*')) if p.is_file()]})
+ready=sorted(set([W/note,W/primary,W/output,W/cache,W/graph,Q/'PUBLISH_CHECKS.json',*[p for root in (F,Q) for p in root.rglob('*') if p.is_file()]]))
+for p in ready:
+    if not p.exists():assert p==Q/'PUBLISH_CHECKS.json';continue
+    proc=subprocess.run(['git','diff','--no-index','--check','/dev/null',str(p.relative_to(W))],cwd=W,capture_output=True,text=True)
+    assert not proc.stdout and not proc.stderr,(str(p),proc.stdout,proc.stderr)
+tracked=subprocess.run(['git','diff','--check'],cwd=W,capture_output=True,text=True);assert tracked.returncode==0,tracked.stdout+tracked.stderr
+assert runner_cache.cache_status(primary)=='fresh'
+record={'checked_utc':datetime.now(timezone.utc).isoformat(),'status':'Focused publication checks complete; regular milestone PR allowed. No retained audit or integrated-main landing claim.', 'head':head,'branch':branch,'artifact_members':53,'declared_inputs':54,'unchanged_source_body':digest(body),'canonical_execution':execution,'scientific_report_equality':True,'mutation_cases':6,'fault_sensitivity_only':True,'archives':archives,'cache_status':'fresh','readiness_issue':issue,'helper_runner_paths':helpers,'graph':g,'no_go_gate_trigger':trigger,'compiled_sources':compiled,'vocabulary_violating_files':0,'local_links':links,'publication_paths':len(ready),'editable_prompt_files_changed':[], 'remaining_obligations':['Exact staged publication-path and remote PR verification','Ancestor PRs and shared integrated-current-main landing checks','Independent retained audit','Native physical supply and reset/reuse']}
+write(Q/'PUBLISH_CHECKS.json',record);write(D/'FOCUSED_VERIFICATION.json',record)
+proc=subprocess.run(['git','diff','--no-index','--check','/dev/null',str((Q/'PUBLISH_CHECKS.json').relative_to(W))],cwd=W,capture_output=True,text=True);assert not proc.stdout and not proc.stderr
+write(D/'READY_PATHS.json',{'parent_head':head,'files':[{'path':str(p.relative_to(W)),**digest(p.read_bytes())} for p in ready],'file_count':len(ready),'scope':'Exact publication paths; generated citation_graph.json excluded.'})
+print(json.dumps({'status':record['status'],'publication_paths':len(ready),'declared_inputs':54,'cache':'fresh','mutations':6,'vocabulary_violations':0,'added_graph_nodes':1,'added_graph_edges':1},indent=2))

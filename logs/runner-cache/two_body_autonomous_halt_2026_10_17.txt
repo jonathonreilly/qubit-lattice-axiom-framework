@@ -1,0 +1,141 @@
+===== runner cache v1 =====
+runner: scripts/two_body_autonomous_halt_2026_10_17.py
+runner_sha256: c743ed62dcd5422a45a1f0a690c7ed866b877609180dbc55fc2121ffe7af5e9f
+input_fingerprint_sha256: 1bf7a600d353414e22725311d1fbcd1d8b8e384456ab760675049255cc61b3e3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.48
+status: ok
+----- stdout -----
+{
+  "status": "Certified exact fixed-point replay and analytic interval inequalities; wavepacket conclusion conditional on separately reviewed bridge",
+  "central_bound": {
+    "rational": "1157268673584970815363412380359719588406374536821067328428758632535116767761732953676885221963884191448669661638514980080650319496665121603158059601895058654614027185868905730909681729516896539157608232296437789291519590249910609757589835020169869942550954151221274178207559766986521565841728229705097784023394241197661380405884812197810813198190630303720543558672191303623752089291587729027062271850724257753910401557122933426990154194036211453312999182645151894660527283510366837142839938241403/6603625074603207806895655397250227084863623876388708896736325715216434779649232774114270914620505268015298045166136890363146464739186837724570723483924212261235512296514263492622170521875957855375414756563638232035272654542477972239151000883397343629433746324331489646245877693106335947016014813896698436696526058294452933889579177603129060648940431945394512368554738204266334179488345842766872613156477880811882167412894761475807227735630201275282456556250000000000000000000000000000000000000000000000000000",
+    "display_float": 1.752474830885985e-13
+  },
+  "interval": {
+    "center": "k0=2 arctan(1/q), q=2255175592998549/500000000000000",
+    "half_width": "1/1000",
+    "epsilon_lower": {
+      "rational": "1856295802649841441229024655025909518262465021/333488559703522320589319756587562500000000000000",
+      "display_float": 0.005566295300504833
+    },
+    "epsilon_upper": {
+      "rational": "1896342585729158558770975344974090481737534979/333488559703522320589319756587562500000000000000",
+      "display_float": 0.00568637972893296
+    },
+    "source_gap_lower": {
+      "rational": "15102040195193334697720876938699569940162063349/83372139925880580147329939146890625000000000000",
+      "display_float": 0.18114012916808103
+    },
+    "old_band_gap_lower": {
+      "rational": "58747361611621/31250000000000",
+      "display_float": 1.879915571571872
+    },
+    "chosen_closed_gap": "9/50",
+    "kappa_upper": "1/7",
+    "closed_root_derivative_upper": "1/24",
+    "velocity_lower": {
+      "rational": "8442835111282071996674486726025909518262465021/333488559703522320589319756587562500000000000000",
+      "display_float": 0.025316715868118275
+    },
+    "chosen_velocity_lower": "1/40"
+  },
+  "matching": {
+    "point_M16_inverse_2_upper": 164,
+    "M16_derivative_2_upper": {
+      "rational": "61293093676857/1000000000000000",
+      "display_float": 0.061293093676857
+    },
+    "Neumann_parameter_upper": {
+      "rational": "2513016840751137/250000000000000000",
+      "display_float": 0.010052067363004548
+    },
+    "interval_M16_inverse_2_upper": {
+      "rational": "41000000000000000000/247486983159248863",
+      "display_float": 165.66527853959087
+    },
+    "chosen_M16_inverse_2_upper": 166,
+    "M24_inverse_2_upper": {
+      "rational": "1370875944941828/3752638388379",
+      "display_float": 365.3098974809548
+    },
+    "chosen_M24_inverse_2_upper": 366,
+    "M24_sigma_min_lower": "1/366",
+    "M24_derivative_upper": "11/100",
+    "X0": 16,
+    "X1_and_L": 700,
+    "C0": 31,
+    "C1": 2700,
+    "numerical_eigenvectors_used_in_norm_conversion": false
+  },
+  "packet": {
+    "half_width": "1/1000000",
+    "F0_upper": "1/750",
+    "F1_upper": "2000",
+    "CA": "2001",
+    "CB": "2001",
+    "Dj_upper": {
+      "rational": "18601111/300",
+      "display_float": 62003.70333333333
+    },
+    "D_grouped_upper": "88000",
+    "Delta_upper": {
+      "rational": "43875000011/62500000000000",
+      "display_float": 0.000702000000176
+    },
+    "T": 10000000000000,
+    "all_future_from_elapsed_time": 20000000000000,
+    "delta_in_upper": {
+      "rational": "75042263/32475000000",
+      "display_float": 0.002310770223248653
+    },
+    "infinite_untruncated_isometry_upper": {
+      "rational": "269134782504763/27062500000000000",
+      "display_float": 0.009944934226503945
+    },
+    "eta_p": "1/1000",
+    "support_sites": 22000000000000,
+    "infinite_finite_preparation_isometry_upper": {
+      "rational": "296197282504763/27062500000000000",
+      "display_float": 0.010944934226503944
+    },
+    "infinite_bound_state_amplitude_upper": {
+      "rational": "91279763/16237500000",
+      "display_float": 0.005621540446497306
+    },
+    "approximate_preparation_error_assumed": 0,
+    "preparation_scope": "Specified normalized finite vector of Fourier integrals; no native generator supplied"
+  },
+  "finite_horizon": {
+    "B_spectral_lower": 1,
+    "B_spectral_upper": 20,
+    "positive_block_B_upper": {
+      "rational": "955728223342433/50000000000000",
+      "display_float": 19.11456446684866
+    },
+    "Vmax": {
+      "rational": "1585011474044121/200000000000000",
+      "display_float": 7.925057370220605
+    },
+    "rho_upper": "18",
+    "Tobs": 40000000000000,
+    "mu": 1,
+    "clock_sites": 900000000000000,
+    "first_omitted_site_path_distance": 878000000000001,
+    "finite_boundary_tolerance": "1/1000",
+    "complete_isometry_upper": {
+      "rational": "323259782504763/27062500000000000",
+      "display_float": 0.011944934226503945
+    },
+    "complete_unhalved_trace_upper": {
+      "rational": "323259782504763/13531250000000000",
+      "display_float": 0.02388986845300789
+    }
+  },
+  "independent_status": "All exact arithmetic checks completed; conditional composition scope only",
+  "elapsed_seconds": 1.2855248339474201
+}
+
+----- stderr -----
+

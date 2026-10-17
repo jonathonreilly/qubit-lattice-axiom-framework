@@ -1,0 +1,6 @@
+{
+  "canonical": 1,
+  "faults": 6,
+  "scientific_payload_equality": true,
+  "archives": 18
+}

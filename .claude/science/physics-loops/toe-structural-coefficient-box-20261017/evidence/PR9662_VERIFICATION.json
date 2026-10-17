@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-10-17T01:36:32.182525+00:00",
+  "authority": "Read-only gh pr view against actual Git origin jonathonreilly/qubit-lattice-axiom-framework",
+  "number": 9662,
+  "head": "3f641f336a1ab6ea36f37b3ccfbbbe5269241fc7",
+  "base": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+  "file_count": 45,
+  "raw_response": {
+    "bytes": 9171,
+    "sha256": "14c4b27406bf7a43724a665135c096ff40cb77db06a401aa2e60018f23ae96a9"
+  },
+  "coverage": "Complete returned PR body and45-path inventory read; no scientific source review of that unrelated PR.",
+  "scope": "Supplied Pauli-stabilizer classification and charge motion. Not a premise of this structural coefficient result. START count45 is confirmed at this observed head."
+}

@@ -1,0 +1,8 @@
+import json, resource, runpy
+from pathlib import Path
+resource.setrlimit(resource.RLIMIT_CPU,(30,30))
+ns=runpy.run_path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/isolation_pin/mutated.py',run_name='copied_scientific_fault')
+ns['verify_artifacts']()
+inputs=ns['FrozenInputs'](ns['REPO'],ns['INPUT_ROOT']/'INPUT_MAP.json')
+result=ns['run_preparation_author'](inputs)
+Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/isolation_pin/unexpected_result.json').write_text(json.dumps(result,indent=2))

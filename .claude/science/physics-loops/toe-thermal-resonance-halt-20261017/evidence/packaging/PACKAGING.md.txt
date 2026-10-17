@@ -1,0 +1,76 @@
+# Thermal/resonance publication overlay
+
+This is a frozen mechanical handoff for separate transport review. The five
+scientific sources now have the root decisions captured in SOURCE_MAP.json;
+this packet adds no theorem qualification. Canonical science and mutations
+have not run. No W/Git/checkpoint/prompt/axiom/audit/PR change was made.
+
+Copy only the 108 entries under `canonical/`, as enumerated and hashed in
+READY_FILES.json. The overlay contains one note, one primary and 106 input
+files. It is based on exact parent0e3993770a7a2dd872018f9dd3c76c2d9a624db9.
+There are149 declared inputs, including exact reused tracked parent files.
+Do not copy private fixture repositories or historical build directories to W.
+Historical absolute strings are finite provenance labels, not path fallbacks.
+
+SOURCE_MAP preserves239 source labels from12 explicit frozen scopes. Ninety
+labels reuse exact tracked parent bytes;51 reuse identical new bytes;98 raw
+files are newly preserved. Scope selection uses manifest rows and explicitly
+named addenda/qualifications, never an arbitrary growing source-tree recursion.
+All original failure evidence is retained. Existing prompt/axiom snapshots in
+source history are byte evidence, not new editable instructions or axioms.
+
+Four proof bodies are byte-identical. The exact-product body has ten changed
+Markdown destination spans only, with every other byte unchanged. The raw
+original, target span map, reversible verification and PROOF_LINK_TARGET_DIFF
+are retained. All21 note links resolve against the finite overlay/parent view.
+The wrapper diff is against root's5cc1d827 pin. Its only requested status/tense
+changes are external-record pointers and “executes only”; added paragraphs
+explain transport, old numerical checker examples and qualifications.
+
+The three source functions have581 statement records and26 transport events
+(15 resonance,9 product,2 interacting). The static checker reverses those
+explicit events and reconstructs each complete original AST, including literal
+docstrings. FrozenInputs and verify_artifacts match the checked parent ASTs.
+Only path/prelaunch/cap/report mechanics changed; the scientific expressions
+and assertions are unchanged. See the complete ledger and three source diffs.
+The preparation checkers intentionally keep their older parent-runtime and
+single-ramp examples. They do not numerically replay the staged addendum or
+new composition; those are separately qualified analytical implications.
+
+Static attempt04 passed in0.43737604189664125 wall seconds, CPU20/20 and
+external wall30, with160 prelaunch bindings unchanged. Child user/system CPU
+were0.236820/0.061451 seconds; peak RSS36503552 bytes was measured, not capped.
+The verifier imported no SymPy and invoked no scientific body. It checked all
+source/input bytes, reversible ASTs and note bodies, import inertness and ten
+fail-closed resolver cases. Source/manifest pointers were checked mechanically.
+Three failed static attempts remain with their complete streams and source
+copies. They exposed a multiline-docstring literal drift, an incomplete private
+link fixture and an omitted parent-note input. Their repairs are documented;
+only the first and third affected the overlay. These are packaging failures,
+not scientific rejection or proof evidence.
+
+Before canonical science, root should read/accept transport separately. Bind
+the primary plus all149 inputs and selected runtime files in a genuinely
+serialized/fsynced actual prelaunch. Precreate the intended output slot before
+capturing runner-cache directory-generation state, as required by the existing
+canonical procedure. Invoke the guarded primary only through the canonical
+runner under shared CPU30/30 and external wall45. Maximum dense dimension is4;
+no huge clock state, dynamics or Gibbs density is allocated. Historical caps
+20/21,20/20,15/15 and wall30 remain historical in INPUT_MAP and raw receipts.
+The primary/manifest do not form a self-hash cycle: primary and manifest are
+separately prelaunch/cache bound; manifest binds all other declared inputs.
+
+Root execution/publication/transport records belong outside this calculation
+closure. Their current state is not inferred by the note's pointer values.
+Any subsequent change to a declared note/input must precede a fresh canonical
+run/cache binding. MUTATION_FAMILIES.json proposes six scientific discriminators
+but records no mutation outcome. Root chooses/checks them and must distinguish
+intended mathematical assertions from checksum/import/path/harness failures.
+Focused publication gates remain separate from full integrated-main gates
+under current review-loop conformance section12 and later retained audit.
+
+The exact original sources, full final note, all new code, source mapping,
+source exposure coverage and static receipts are reviewable here. No model or
+reasoning override, subdelegation, other-chat message, network query or new
+physical/spectral claim was added. FINAL_IDENTITIES.json contains the principal
+pins and READY_FILES.json the complete overlay list.

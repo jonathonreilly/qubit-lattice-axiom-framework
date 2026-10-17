@@ -1,0 +1,26 @@
+{
+  "name": "common_phase_sign",
+  "source_role": "independent",
+  "started_utc": "2026-10-17T01:33:56.737312+00:00",
+  "elapsed_seconds": 0.21892041573300958,
+  "exit_code": 1,
+  "timed_out": false,
+  "cpu_cap_seconds": 60,
+  "external_wall_cap_seconds": 20,
+  "old": "zeta = -alpha/z**4",
+  "new": "zeta = alpha/z**4",
+  "expected_scientific_assertion": "nominal_common_phase_contract",
+  "scientific_assertion_rejected": true,
+  "source": {
+    "bytes": 16412,
+    "sha256": "e3605ba43dfa340bd3d2d54cf1da706b6a33b29f5d23ca87d655ae8eea1cda3f"
+  },
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 1272,
+    "sha256": "82486c29a7f39e0e82fe5053575d0810fafb9e87519b4698e3dceb558b85b284"
+  }
+}

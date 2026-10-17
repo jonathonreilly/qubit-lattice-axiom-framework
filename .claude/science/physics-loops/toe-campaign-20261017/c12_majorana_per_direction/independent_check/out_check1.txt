@@ -1,0 +1,43 @@
+PASS Majoranas: square +1, Hermitian, anticommute on-site, commute off-site
+PASS B_v = Z1 Z2 Z3 exactly (+ sign): (0, 7, 0)
+  L=4 sector(yz,zx,xy)=+++ herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=4 sector +++ valid with log2 dim 3
+  L=4 sector(yz,zx,xy)=++- herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=4 sector ++- valid with log2 dim 3
+  L=4 sector(yz,zx,xy)=+-+ herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=4 sector +-+ valid with log2 dim 3
+  L=4 sector(yz,zx,xy)=+-- herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=4 sector +-- valid with log2 dim 3
+  L=4 sector(yz,zx,xy)=-++ herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=4 sector -++ valid with log2 dim 3
+  L=4 sector(yz,zx,xy)=-+- herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=4 sector -+- valid with log2 dim 3
+  L=4 sector(yz,zx,xy)=--+ herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=4 sector --+ valid with log2 dim 3
+  L=4 sector(yz,zx,xy)=--- herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=4 sector --- valid with log2 dim 3
+  L=5 sector(yz,zx,xy)=+++ herm=True commute=True no(-I)=True log2dim=2  (0.0s)
+  L=5 sector(yz,zx,xy)=++- herm=True commute=True no(-I)=False log2dim=2  (0.0s)
+  L=5 sector(yz,zx,xy)=+-+ herm=True commute=True no(-I)=False log2dim=2  (0.0s)
+  L=5 sector(yz,zx,xy)=+-- herm=True commute=True no(-I)=False log2dim=2  (0.0s)
+  L=5 sector(yz,zx,xy)=-++ herm=True commute=True no(-I)=False log2dim=2  (0.0s)
+  L=5 sector(yz,zx,xy)=-+- herm=True commute=True no(-I)=False log2dim=2  (0.0s)
+  L=5 sector(yz,zx,xy)=--+ herm=True commute=True no(-I)=False log2dim=2  (0.0s)
+  L=5 sector(yz,zx,xy)=--- herm=True commute=True no(-I)=False log2dim=2  (0.0s)
+  L=6 sector(yz,zx,xy)=+++ herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=6 sector +++ valid with log2 dim 3
+  L=6 sector(yz,zx,xy)=++- herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=6 sector ++- valid with log2 dim 3
+  L=6 sector(yz,zx,xy)=+-+ herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=6 sector +-+ valid with log2 dim 3
+  L=6 sector(yz,zx,xy)=+-- herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=6 sector +-- valid with log2 dim 3
+  L=6 sector(yz,zx,xy)=-++ herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=6 sector -++ valid with log2 dim 3
+  L=6 sector(yz,zx,xy)=-+- herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=6 sector -+- valid with log2 dim 3
+  L=6 sector(yz,zx,xy)=--+ herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=6 sector --+ valid with log2 dim 3
+  L=6 sector(yz,zx,xy)=--- herm=True commute=True no(-I)=True log2dim=3  (0.0s)
+PASS L=6 sector --- valid with log2 dim 3
+OVERALL PASS

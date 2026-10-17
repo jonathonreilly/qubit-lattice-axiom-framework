@@ -1,0 +1,955 @@
+{
+  "scope": "Exact frozen review, historical failures and actual execution evidence outside the canonical input closure.",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/CANONICAL_FINAL_MAP.json",
+      "bytes": 13215,
+      "sha256": "c0709884d27bf88734f93ea4c351968070236bd96599af343eefd1bce83a28df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/CANONICAL_MAP.json",
+      "bytes": 12320,
+      "sha256": "4c18d483fc63dff59b8a2851fee7ca3021b0c2df7a00708e67cfe0653ab7d797"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/FINAL_COMPARISON_PROGRAM_MAP.json",
+      "bytes": 748,
+      "sha256": "0c8ac3ec97cb3c1509fa6cc0adc96022d42d180cccfbc797d35ddf769f9885d3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/FIRST_FOCUSED_FAILURE_MAP.json",
+      "bytes": 2114,
+      "sha256": "99d164d4fe8ec40c09e266ddb6ea2c58f396553786e9da0f4e3716132de6a0f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/FIRST_FOCUSED_PROGRAM_MAP.json",
+      "bytes": 728,
+      "sha256": "350a2b51eeed284fd0930eb48cf04c55427b01c40e6f4e1dadb52ec593d281c8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/FIRST_PORTABLE_RECORDS_MAP.json",
+      "bytes": 2176,
+      "sha256": "300b445255fb35d23968d76f4eaa9499416452921438e0a8dbe0e8b106b5b272"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/GRAPH_MAP.json",
+      "bytes": 3510,
+      "sha256": "ce4e88d39bbd4d3b790b2308833309a947170213a07347f19ecad25d6438f28e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/GRAPH_RECEIPT_MAP.json",
+      "bytes": 2085,
+      "sha256": "e4285da20fcbb2bee1e850ea4f017531a0c8215f73eb66e374b77ae667147ef9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/INTEGRATION_PROGRAMS_MAP.json",
+      "bytes": 2528,
+      "sha256": "5ea79a92e2e4096a965e018362d93bcd5d0bbf949a92f9b3f7bc15f65a66193d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/LOSSLESS_EOF_REPAIR_MAP.json",
+      "bytes": 1192,
+      "sha256": "be1ee1779c5cc930b863d3a73317da7acc3bdc0876badd71d76e4431e87d5fb8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/PRE_REPAIR_ALIASES_MAP.json",
+      "bytes": 1722,
+      "sha256": "3738bee75e2ffb2804be601340b28dceb460a0ee83daaa1ec3aff700cd7e4e81"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/PUBLICATION_DRAFT_MAP.json",
+      "bytes": 280260,
+      "sha256": "5644030525acc01358cc7a13c390f585b6dcd14cdeee44b35cf049151a0575b9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_CANONICAL_01_MAP.json",
+      "bytes": 2113,
+      "sha256": "eb6500224b507bed2aa6cc7c262b15bb276101c5e1cf6fc0733348e225bfb39d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_CANONICAL_02_MAP.json",
+      "bytes": 2119,
+      "sha256": "c2467f0cbd7da030e300c38673da847031457b43fac8b17a078ad63dbaf8dae5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_FAULTS_01_MAP.json",
+      "bytes": 2108,
+      "sha256": "103871db7c0bd85778da877dc758e296259a5634ace423c6b4d799ab4c35faea"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_INSTALL_ACCEPT_MAP.json",
+      "bytes": 2128,
+      "sha256": "912a1b79704113f587a34b2cb2809cb6d74c0023c00baa852f8a698bfe344381"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_LOSSLESS_EOF_REPAIR_MAP.json",
+      "bytes": 2146,
+      "sha256": "75f76a178f34e5a57a676fb8da0350286f2d7846e19a3d0263490b4efc5ea934"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_PRESERVE_OLD_ALIASES_MAP.json",
+      "bytes": 2155,
+      "sha256": "021fc72ea50fd74c9c61de957bae5f1b268057c5509983544f75a510d84bfcc9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_REPORT_COMPARISON_FINAL_MAP.json",
+      "bytes": 2166,
+      "sha256": "99e9d3a839f54e1b7a1e47bc870a4af9c5165a14a5d493ec4620f732147b7667"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_REPORT_COMPARISON_MAP.json",
+      "bytes": 2138,
+      "sha256": "377e74b4765096c32835744437ac462f5831cecc80e98ea485a0c557a3f6bea0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/SCIENTIFIC_FAULTS_MAP.json",
+      "bytes": 17979,
+      "sha256": "675fa572f882aa95b092bd429dfca60d820e81603f0a0a215c46549d9370b9e1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/TRANSPORT_PROGRAMS_MAP.json",
+      "bytes": 1624,
+      "sha256": "dd275b3918dbfed0f66e97bd2917de21549e219f92e4c21f8d15ea45274cff9a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical/EXECUTION.json.txt",
+      "bytes": 2508,
+      "sha256": "e81f484215a7361b9ed2c31a8600d7b299a4d160549a870c2ed084d09dcab010"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical/PRELAUNCH.json.txt",
+      "bytes": 39199,
+      "sha256": "35791aa8f55a8e5d8219e38da05dcae6e2b2c4ccf9f0f9dcdd2d8976ea24fefd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical/RAW_ENVELOPE_RESULT.json.txt",
+      "bytes": 1494,
+      "sha256": "27b3ba624080a8e064ae1189e48da4969d1a240199ddf9147de58d812270100e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical/cache.txt.gz",
+      "bytes": 834,
+      "sha256": "867f1c2318fa8e1665d31d31ee0130b225072d04c42fd91246aa26f6fac556a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical/result.json.txt",
+      "bytes": 88768,
+      "sha256": "aa7f53815ea2bd07b3c167bced2dc1e736df99ce6f290b9e6b78fc012fc35fce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical/stdout_merged.txt.txt",
+      "bytes": 1076,
+      "sha256": "23863e4d23a3ebde5cd265d15b50ec9c800d79081afc07e00ecf005d8f9ac5ea"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical_final/EXECUTION.json.txt",
+      "bytes": 2519,
+      "sha256": "8c11fae5f87145f65ca71a85aa5f41da9b00f47fcad25e72131ec669b7d7c069"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical_final/PRELAUNCH.json.txt",
+      "bytes": 39205,
+      "sha256": "f8249fc0d302f1ed456e04a53a8aa568b9524d12cbf73e3cd83900b232f1eebc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical_final/RAW_ENVELOPE_RESULT.json.txt",
+      "bytes": 1494,
+      "sha256": "02f7fa6bbe827944c6dbb9439051764202c56246e96a84ef5b9e4c94dff12647"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical_final/cache.txt.gz",
+      "bytes": 836,
+      "sha256": "58909e0f8f33b7c0f87c007816daa7c9f8a6ea25d359cf4126552331a9cedf9f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical_final/executed_sources/scripts/real_control_autonomous_output_2026_10_17.py.txt",
+      "bytes": 47133,
+      "sha256": "87ed66a14a21e20a7d747454cca1854d6adcd52ffb00f1532e78b33967d4af29"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical_final/result.json.txt",
+      "bytes": 88773,
+      "sha256": "28fab12f2ba9874a296f62cd7ed0afb7b956c8ab8af55d263b34f67b02d1c401"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/first_focused_failure/EXECUTION.json.txt",
+      "bytes": 1438,
+      "sha256": "097294816f00523662b85dd857cdae509c166c35a09dcf47c12bc9a658d8afcd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/first_focused_failure/executed_source.py.txt",
+      "bytes": 10691,
+      "sha256": "c12ae377e8054f6fe461858a59dc09dcedf6e4119123ab20253860f5b3eb8829"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/first_focused_failure/stderr.txt",
+      "bytes": 719,
+      "sha256": "821c1c0031167a2bd4ab86589ade425ba067ee7244698ed104df9a3be885fa40"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/first_portable_records/EXECUTION_STATUS.md.txt",
+      "bytes": 2255,
+      "sha256": "ac9dd0d2e710f01b4d20bc2a6b08e6fc3bf1b59c779be43771a09b43627532e7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/first_portable_records/REPORT_COMPARISON.json.txt",
+      "bytes": 6433,
+      "sha256": "2bf3be377881494da8ab81949e7118edaee9ce337f5fabebb908f03ec20fe80f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/first_portable_records/ROOT_MUTATION_REVIEW.json.txt",
+      "bytes": 9881,
+      "sha256": "39e94e36d6dd164ac7726cb308e9eedbdf0ab333ab42e483d0c7a46fe410240c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/first_portable_records/ROOT_PORTABILITY_ACCEPTANCE.json.txt",
+      "bytes": 6903,
+      "sha256": "f7fa45f316d26b82fec3a723c85ad2d1a5f128dce608d99d786515069acde38c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/graph/GRAPH_EXECUTIONS.json.txt",
+      "bytes": 624,
+      "sha256": "cd7d9838f8b66fa6e19fe3ec686fa2a504bc39022e6378e402c87cc3ffacce17"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/graph/GRAPH_VERIFICATION.json.txt",
+      "bytes": 2068,
+      "sha256": "ed12c2fb49799c07742b04a354012015437f6f773d60baf4f0272faec8f9a890"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/graph/graph_build.stdout.txt",
+      "bytes": 281,
+      "sha256": "835cfda064e9128925ae6b46e5cf4049ac09c3cce39dbd350cf476e786569c1d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/graph/graph_check.py.txt",
+      "bytes": 2759,
+      "sha256": "6d9716a83320020387f23d94dc49a7393a5935b8670dacf57cc2871cc804c807"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/graph/graph_manifest.stdout.txt",
+      "bytes": 77,
+      "sha256": "321a5c72fdedea4074bf145f13a05425a1c651525c469c45fc2952413db5e02e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/graph_receipt/EXECUTION.json.txt",
+      "bytes": 1428,
+      "sha256": "9f8e3019abef17442a4f44bfe4c5053c469d027fd667baa7c8e2071861ba7a76"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/integration_programs/FAULT_PAYLOAD_DIFFS.json.txt",
+      "bytes": 3847,
+      "sha256": "6215dea53bb2253964597e12ef32b4ad80c24f43fc578c3a6904e51cdc91427c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/integration_programs/compare_reports.py.txt",
+      "bytes": 4602,
+      "sha256": "ccddf07b3d9ad8e70397c90fd9a3da15be21ac89470b3bdd952907c1eeed5a3c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/integration_programs/preserve_execution.py.txt",
+      "bytes": 6576,
+      "sha256": "115d9703fc955a8678189e825a4a0006c2c675808c5a5d545dced85629e65953"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/integration_programs/run_canonical.py.txt",
+      "bytes": 7326,
+      "sha256": "025c15fbefa58fdf9dc6b7d8561bbddd533bc0bc68f6e88b76130e30a9f785cd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/integration_programs/run_mutations.py.txt",
+      "bytes": 7438,
+      "sha256": "916d935607994dcb1432aaddf3a47b2261b7afebe0efd1ca5e284a52bc7b46c6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/lossless_eof_repair/LOSSLESS_EOF_REPAIR.json.txt",
+      "bytes": 11135,
+      "sha256": "7e7ab4f9b70c941bac25919ac2bf370deaf53e79ba0ead8b3905e4083aa786bf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/lossless_eof_repair/repair_archive_eof.py.txt",
+      "bytes": 3751,
+      "sha256": "7b0bbfc80cfb438242398279bb66f1ac4ed4646ac1407cb0bd9c239878fac604"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_aliases/PRE_REPAIR_ALIAS_REDIRECTS.json.txt",
+      "bytes": 6640,
+      "sha256": "b5daf02425efdee29c01a2592310cf4b36a573c7b705ce57f5327b07818a739b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_aliases/PUBLICATION_DRAFT_MAP_BEFORE_EOF_REPAIR.json.txt",
+      "bytes": 278934,
+      "sha256": "ca11b826ede5df53c79f2f9f9dceaf0c8d3c675cc609169f8620e0c0a42530ff"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_aliases/preserve_pre_repair_aliases.py.txt",
+      "bytes": 1697,
+      "sha256": "82cb332ed4f63a9ad079ea533a3f0a121efdafcb0a376c1155f403c0687a74f7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/0250e22141d72c51c03c19db10da5e5b5bb1aab27f776b82a16218c53da54ade.gz",
+      "bytes": 21972,
+      "sha256": "319f496c6b0ee858fe193fb6dd94e64d1687762d9d5269727f99275835727485"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/2360cdbe3f57b100bec6a9cfc7e9792ab38af683f24d9e0747dc07b546a2f3b8.gz",
+      "bytes": 6651,
+      "sha256": "3a2a53c46f6bbf91579cfc33c92064acb8902740179c719035450f73739c742f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/37a66045784b4b0cfada5996e2781dcb155dd6ad0b2e600a8de4455a47b57a23.gz",
+      "bytes": 1857,
+      "sha256": "f788901bc533b99dd770c168d8391f3b7728c5429b4b15f16525cdf8abbaf62b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/9cd46ea04955a4fc9805a3f6cbe0684211e7c4a87c614a7e6f22d86829a4de0d.gz",
+      "bytes": 2428,
+      "sha256": "b8b029bf6ed665f31e0914b75acedfb0b938a6e9e3bd8e4e71088cccf3109942"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/BUILD_RESULT.json.txt",
+      "bytes": 1954,
+      "sha256": "7f24fa688a4e9d8c2ec67f56f75109222275fe3588a150844f4521ba4d30bfd4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/CAPTURE_BINDINGS.json.txt",
+      "bytes": 102648,
+      "sha256": "913e88dd20d0cc2dd002b116c7df26d6162b193e2fd24311cdea811813538d09"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/CONFORMANCE.md.txt",
+      "bytes": 4323,
+      "sha256": "a389261c272dd6f714f1d1b1cd1d798fdff5da02ae9f64668178edcd7fd9e801"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/DIFF_preparation_author.patch.txt",
+      "bytes": 3893,
+      "sha256": "46c5084fcd351d6638539c753770f3c0a39acb95c6c1d0e5130c2eac3f44e290"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/DIFF_realifier_author.patch.gz",
+      "bytes": 1161,
+      "sha256": "970420a94035c530a596ce650d72a0dbfe481f4c13441d136d09505096cd07bd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/FINAL_IDENTITIES.json.txt",
+      "bytes": 4477,
+      "sha256": "bef5e4a08058274c2a6352246592a438a44010784f0d9970baf2939bc5a80d79"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/FINAL_WORDING_AMENDMENT.json.txt",
+      "bytes": 1415,
+      "sha256": "6e5ca434e430966d99c5d8be6a34d4a19a64bbc6b43b9409f10a99d3432c71f1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/FREEZE.json.txt",
+      "bytes": 3400,
+      "sha256": "be5f5d8de532eb361a741bfdc18858bae55ec825113abc6a5be56b05f5654a5e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/GLUE_AMENDMENT.md.txt",
+      "bytes": 961,
+      "sha256": "07d7b5203ab7050e2ed2086e27a75e086be027a65ef9008caaa618f02599c0f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/MUTATION_PLAN.md.txt",
+      "bytes": 2810,
+      "sha256": "1d6828ae1cde6ca9b79a841e14d717512117f5996914942671f5db107255bedd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/PACKAGING.md.txt",
+      "bytes": 10368,
+      "sha256": "5610eb138e4064e4b2a1673591f903270a1e00aa295770f1e05b62ec6ca32084"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/PACKET_MANIFEST.json.txt",
+      "bytes": 126081,
+      "sha256": "17d54aeebc10b49a36825cce57bbb7e1352473894ef3e0d4c807d05b3ca68146"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/PARENT_INPUT_INDEX.json.txt",
+      "bytes": 99932,
+      "sha256": "704cad9b39640ebe84acaee8b13c04ad792ae8ebc9c95ddea3c2fa6acd289f55"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/PLAN.json.txt",
+      "bytes": 1693,
+      "sha256": "cbb69849f55825b7d485c85c8bc844af995512113c9a25057c8b5258548f0347"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/PR_BODY_DRAFT.md.txt",
+      "bytes": 2018,
+      "sha256": "a7d488255d6cb93538472d9163ef5bc6343a86a437e4224ce551bc351d63c1e4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/READY_FILES.json.txt",
+      "bytes": 23043,
+      "sha256": "feb28de2698c95c569e3511b03c7b53e713a76f28c36d9a727174882e540ff73"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/SOURCE_READ_COVERAGE.md.txt",
+      "bytes": 2036,
+      "sha256": "2a61dcdfd49f10493f443ed7e34b15e98a327fed1936e9594b055f543206d9e3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/STATIC_REPAIR_01.md.txt",
+      "bytes": 703,
+      "sha256": "aef922c5c94461db2f8e6365504c37f0328818112bfb010a877e50c8389032a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/WORDING_PRE_EDIT.json.txt",
+      "bytes": 1186,
+      "sha256": "aa96382c04d2c251b3b6af5cfe9ef4be7136e0befacc6b080de2e84330e13119"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/WRAPPER.md.txt",
+      "bytes": 12923,
+      "sha256": "e21a0dfde8e99bd7c3a5ce26795ee847dfaf9dd9ba0253e1013281fd6a34e1f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/WRAPPER.template.md.txt",
+      "bytes": 12711,
+      "sha256": "a01cb0148db2eb528c714c5010845002960a07848e49a99255af6e0ab18793d2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/apply_wording.py.txt",
+      "bytes": 3055,
+      "sha256": "10be1b2b73b004d533db982b0e87e8bda5f384e9d785e11941ce8af49b8dea3d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/build_package.py.txt",
+      "bytes": 28696,
+      "sha256": "62452ae47e2165393f2597e692598dd1c7babf1aaf63575fd697025226962dbb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/canonical/.claude/science/physics-loops/toe-real-control-autonomous-output-20261017/CLAIM_STATUS_CERTIFICATE.md.txt",
+      "bytes": 923,
+      "sha256": "e01e5c4732384a82c44477f38409171ef757e6cbbd5f3a7f8333d432cfd40a8a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/canonical/.claude/science/physics-loops/toe-real-control-autonomous-output-20261017/EXECUTION_STATUS.md.txt",
+      "bytes": 617,
+      "sha256": "a41662e94076ed215f753b5ee2bda8cbdce8d498e115b454028fa17949884002"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/canonical/.claude/science/physics-loops/toe-real-control-autonomous-output-20261017/HANDOFF.md.txt",
+      "bytes": 1352,
+      "sha256": "d1639e88f6c05772dc9d4f83f4dc3f805ce7ddb4f253a720486f693b01a6ae88"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/canonical/.claude/science/physics-loops/toe-real-control-autonomous-output-20261017/REVIEW_HISTORY.md.txt",
+      "bytes": 1010,
+      "sha256": "52f2b548df81ba9c79c05dc9a7fccba8d982eae04112b0043552dddc386889cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/canonical/.claude/science/physics-loops/toe-real-control-autonomous-output-20261017/ROOT_PORTABILITY_ACCEPTANCE.json.txt",
+      "bytes": 392,
+      "sha256": "943cce478d5aea9f0b239af4b9c52bcfa209e0961f15ab3f0cb437b655a640b9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/canonical/.claude/science/physics-loops/toe-real-control-autonomous-output-20261017/TRACE_GATE.md.txt",
+      "bytes": 945,
+      "sha256": "c7196097519f2c3d10cbd34d0dcc32e4bec7ff3420595b258d37dce9fa4a805e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/canonical/docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "bytes": 74148,
+      "sha256": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/canonical/scripts/real_control_autonomous_output_2026_10_17.py.txt",
+      "bytes": 47127,
+      "sha256": "b7d63ff04babbf0cf4abd6fde6056a8d7a14684eadb66a2773f645cdea430bc5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/check_transport.py.txt",
+      "bytes": 15859,
+      "sha256": "af3d8eff7c6ed7be326f87b32ca2596c247ffcf3c2c33e49c494b9ae322ca48f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/freeze_packet.py.txt",
+      "bytes": 4250,
+      "sha256": "18392b9c2cd3c9f1defd48bf19a0b3d0d61f837480e4d7eb74efa413d64dfd35"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/launch_static.py.txt",
+      "bytes": 5815,
+      "sha256": "dc59dbcdff81eb03ec46600a20d343535fd0f80e5c78e1029db37b5f0277203f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/OVERLAY_FILES.json.txt",
+      "bytes": 10572,
+      "sha256": "671a3dd58e58dcca4f878fe32920975260c22e51148828e69005f3b996e32a6a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/PRELAUNCH.json.txt",
+      "bytes": 45901,
+      "sha256": "5701f8b06789d30550e36ca5fbebcba4e6a34b7a5670e2b71268658db7e043a6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/RECEIPT.json.txt",
+      "bytes": 1829,
+      "sha256": "614a0674c1e7e29335449535b9308a5020fbdd9e8da8c32c502c06cdf2704e61"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/SOURCE_TRANSPORT.json.txt",
+      "bytes": 67141,
+      "sha256": "564a87dc3ae7f7ae123c6c612b502f95824eb8fda3ece6df7b3531558bfa2515"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/executed_source.py.txt",
+      "bytes": 15088,
+      "sha256": "1cb3dad4195fde6211a46db1e8039ea5a76c260a586920fdbfd69250ad1063fe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/.claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/canonical/executed_sources/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt.txt",
+      "bytes": 50396,
+      "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/.claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/qualification/ACCEPTANCE.json.txt.txt",
+      "bytes": 10085,
+      "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/.claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/qualification/QUALIFICATION.md.txt.txt",
+      "bytes": 2896,
+      "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md.txt",
+      "bytes": 5313,
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "bytes": 119492,
+      "sha256": "939a505813adb86ce8bccf335781fd8a1d3ce5ef96367836fe68339bc7c01b30"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/WRITING_VOICE_GUIDE_2026-04-25.md.txt",
+      "bytes": 1958,
+      "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md.txt",
+      "bytes": 34639,
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/ai_methodology/SCIENCE_WORKFLOW.md.txt",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md.txt",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md.txt",
+      "bytes": 3253,
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md.txt",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md.txt",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md.txt",
+      "bytes": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/docs/audit/data/axiom_premise_nodes.json.txt",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/CANDIDATE.md.txt.txt",
+      "bytes": 39464,
+      "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt.txt",
+      "bytes": 31244,
+      "sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/ROUTE.md.txt.txt",
+      "bytes": 27328,
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/INTERVAL_CANDIDATE.md.txt.txt",
+      "bytes": 23457,
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/inputs/THEOREM_V2.md.txt.txt",
+      "bytes": 27028,
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/CANDIDATE.md.txt.txt",
+      "bytes": 30796,
+      "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json.txt",
+      "bytes": 24275,
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/CANDIDATE.md.txt.gz.txt",
+      "bytes": 12035,
+      "sha256": "5174b0311ac0841e2c4947e25488b23c19aef820c1de62482c99631fff08c312"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/scripts/real_control_autonomous_output_2026_10_17.py.txt",
+      "bytes": 47096,
+      "sha256": "ba1f6f9ff62fdd4d2c159d5ba69fe8f2551b518eda9330439b1d71511b1d5d2e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/stderr.txt.txt",
+      "bytes": 693,
+      "sha256": "636f875c0a0f0939d5263fd0e5c305c25a53db9cfc37b66dd0f5eb2c104e08d2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/stdout.json.txt",
+      "bytes": 1805,
+      "sha256": "0d1b735ab51653ad32f89367cf4b4baf8bfdc222300b1f83d8a299bb570e76f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_02/PRELAUNCH.json.txt",
+      "bytes": 45901,
+      "sha256": "6fa0c066d84404cc7aae903aa68951f3b7732309491e9f00ae70277633d18e14"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_02/RECEIPT.json.txt",
+      "bytes": 1827,
+      "sha256": "5472a972d767a27eccbdd312a1dfa289b9284386fda09de3cd111059befd2b12"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_02/executed_source.py.txt",
+      "bytes": 15267,
+      "sha256": "8414dc3ab610d1349f711d0fa51e2a4ad6390d1ee4d89c48e3b6ad034a1e9863"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_02/outside.txt.txt",
+      "bytes": 15,
+      "sha256": "5dd857d5aeb12deba498580baecf65b9e42f1ae4587696cf4aaef65ea85c43b1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_02/resolver_fixtures/table.json.txt",
+      "bytes": 278,
+      "sha256": "da6b5298111ec26fdce9ba0a88e1033b05d8d44cc6f913027af6a0e54bb87c0f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_02/resolver_fixtures/valid.gz.txt",
+      "bytes": 35,
+      "sha256": "d6c46b9b528170a2d5208167b1605b4c757e311605781227bbcbb512149e3fc0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_02/stdout.json.txt",
+      "bytes": 8839,
+      "sha256": "0f1f351367e8caa279191c46e5c1672d05eaffaa75e0a589b03362c27e73f0c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_03/PRELAUNCH.json.txt",
+      "bytes": 45901,
+      "sha256": "7ff767b34a1634ebabff56b8c2b9e89444465d07983649e4a3018c8fdeff4294"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_03/RECEIPT.json.txt",
+      "bytes": 1827,
+      "sha256": "dc8894e6af20e05fcef1851786edd2242722c80ba8bb79812d2ea0fd4c2e42b7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_03/SOURCE_TRANSPORT.json.txt",
+      "bytes": 67141,
+      "sha256": "17bea137384754dd1fd56cf164522217af7bfa3c9e1efb7dee67cbebdb6ec1b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_03/fixture_repo/scripts/real_control_autonomous_output_2026_10_17.py.txt",
+      "bytes": 47124,
+      "sha256": "389f0b214acc64d3c8c86a9b0c62cb50743d6da6f3a0ce241c8e51a5f218eeb0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_03/stdout.json.txt",
+      "bytes": 9074,
+      "sha256": "c33c009251243615d02acb81b288c1c06979788d5e1f1823cb54ce64eba00f94"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_canonical_01/EXECUTION.json.txt",
+      "bytes": 1460,
+      "sha256": "7be45e0b1d801f0243f3c6c41c369be4722d70702a4b478755cb9824a673dfbd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_canonical_02/EXECUTION.json.txt",
+      "bytes": 1460,
+      "sha256": "176a4ee0235901247583043077e56792393b8e9bd8078afee77467ce26315648"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_faults_01/EXECUTION.json.txt",
+      "bytes": 1432,
+      "sha256": "fd0fc44c25276c0282fbbeb0552b5281d774c328b281ad83cb93150081661524"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_faults_01/stdout.txt",
+      "bytes": 88,
+      "sha256": "057538227f2f212a9f1542ccfad8efdb22f8ff9a940263da7dc93631e1d13f2a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_install_accept/EXECUTION.json.txt",
+      "bytes": 1452,
+      "sha256": "dd18b533f9dd9213236fceaab274948e224026286a585ffef33873c678b60b56"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_install_accept/stdout.txt",
+      "bytes": 497,
+      "sha256": "99b7e5aefa681a6f581bab2c2ad4efe97395c6371d2709b66e11516ab11ce6e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_lossless_eof_repair/EXECUTION.json.txt",
+      "bytes": 1464,
+      "sha256": "5b6a320731b259795eea0600e93d30aff1947172e8930d6bb48e7c9c83991bf8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_lossless_eof_repair/stdout.txt",
+      "bytes": 1805,
+      "sha256": "6f8a393e2d27b8370e22830487bbc481067a98cb893a12489e68d478df02d9d3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_preserve_old_aliases/EXECUTION.json.txt",
+      "bytes": 1484,
+      "sha256": "971e69e9b3377547cd8f7950bbf606bc3153786d9f2f2ed16edcb3b8af372349"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_preserve_old_aliases/stdout.txt",
+      "bytes": 114,
+      "sha256": "ebd446a4d08811d1463e16bcd7e026810cc8d7f054d475b276283c1b69389e4b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_report_comparison/EXECUTION.json.txt",
+      "bytes": 1456,
+      "sha256": "2b1c7b5e94bd35bcddfabfba384d5358dcfefe2e14cef6abecb1fa04949d65b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_report_comparison/stdout.txt",
+      "bytes": 4372,
+      "sha256": "1c280594f363e62ec7de2fe070948a3b65339f84196ab085ee85e7e5ca9f639b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_report_comparison_final/EXECUTION.json.txt",
+      "bytes": 1479,
+      "sha256": "4736077c4daa28712936da71370057374e3ee319fbc842e8c17b6393bee27dd7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_report_comparison_final/executed_source.py.txt",
+      "bytes": 4602,
+      "sha256": "89b99d723bf46eff89f047581c557d050a9cc7476b8aef2166ef728f39ab23da"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/PLAN.json.txt",
+      "bytes": 8248,
+      "sha256": "4aa1f3ebad58cfe552041d6aca31ccf86e197178aec13b5a4c3456b47e73047f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/RESULTS.json.txt",
+      "bytes": 8902,
+      "sha256": "db03fc7247992df0333778fbb15e0a093099d3bdf0ca54a473a4b4faf4a47f16"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/cross_sign/EXECUTION.json.txt",
+      "bytes": 1288,
+      "sha256": "67bd049a1d8bd25676d5c8af2883452059e5d99538a29b0dba3e7626a530b808"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/cross_sign/PRELAUNCH.json.txt",
+      "bytes": 39209,
+      "sha256": "ce4f39dc3bec1d60df179d7206e0ca9a333de313242234126aa0e1e596dcf26f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/cross_sign/driver.py.txt",
+      "bytes": 649,
+      "sha256": "1261ddf925c5af532370b4c37a9d91769bff6028849abc1949becc50f256ef21"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/cross_sign/mutated.py.txt",
+      "bytes": 47186,
+      "sha256": "bb301b99ab829779ace427eebe073c041df9fbf9727d83d7f71674de0a8d099b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/cross_sign/stderr.txt",
+      "bytes": 970,
+      "sha256": "e79fd2adeb1b8bb962112e3cb8d07078f7d43f70fccdf39503a46d28daaa78c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/cross_sign/stdout.txt",
+      "bytes": 12868,
+      "sha256": "21a1799451364d368890881643b2a59c69ede2bb0958d6ec633dd28e9d42e421"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/exit_coupling/EXECUTION.json.txt",
+      "bytes": 1317,
+      "sha256": "7be741779e772d307bf3cfc7b2fd1dedd1e95d95340b16253d8daa39775fd3f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/exit_coupling/PRELAUNCH.json.txt",
+      "bytes": 39221,
+      "sha256": "df047326cf430d9d84764a46f98121a1f5dfe42dd465a8514b7c82f409a9a6fe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/exit_coupling/driver.py.txt",
+      "bytes": 657,
+      "sha256": "ea77b78cf2ea7e0c1b5468efe1f83c605268b3c772d909bf9d2b9b7ed1b79bb1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/exit_coupling/mutated.py.txt",
+      "bytes": 47189,
+      "sha256": "f0c13cd3da56b781b61cba523b4c54b0554db2710cd3781cb6a5ab2d57a4fbd3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/exit_coupling/stderr.txt",
+      "bytes": 943,
+      "sha256": "d4552cfa3f9030beeb2a7975dd47692ad88e007ea886a033ab2f887d223c9c4d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/isolation_pin/EXECUTION.json.txt",
+      "bytes": 1320,
+      "sha256": "77cfdaaa3d4ff914f46bdda9f941ba722b9578556b4cb5df4cd1f1538a6f7f95"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/isolation_pin/PRELAUNCH.json.txt",
+      "bytes": 39221,
+      "sha256": "df2e1d9add54ee0cca9268d4beea75bbad353f8a30385e370fd7324ef25598b2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/isolation_pin/driver.py.txt",
+      "bytes": 657,
+      "sha256": "c34f29eb9fdd026f3708fe4542d9a09d9d3553a672d44005caaa21ecf563be25"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/isolation_pin/mutated.py.txt",
+      "bytes": 47161,
+      "sha256": "cd8c870d037e3fa46cf658f60240e8f4d147205a483c9fc770acb4f1e8f85871"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/isolation_pin/stderr.txt",
+      "bytes": 1011,
+      "sha256": "37683f0070e9752b9e99a4608d09885c766d8ffd4ee604d88f273ab57eb494ab"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/old_target_phase/EXECUTION.json.txt",
+      "bytes": 1336,
+      "sha256": "5be015bc532331a2a9adb459143fd6f01eadc55e19e1bc7c76235521c828662e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/old_target_phase/PRELAUNCH.json.txt",
+      "bytes": 39233,
+      "sha256": "494f1614f33f5d50e1b35cbd1b827a7dedf0458b4b9258600e79b0eb5d5d1821"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/old_target_phase/driver.py.txt",
+      "bytes": 661,
+      "sha256": "6bd2f5f72ef1e2b6623f8b910faccba4f002db758d67fdabb3d60a226b367d5a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/old_target_phase/mutated.py.txt",
+      "bytes": 47185,
+      "sha256": "c04164b2fe8f25d29d60b7440d88935da7c62808cc48d8ef16c7959b3619cda1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/old_target_phase/stderr.txt",
+      "bytes": 1247,
+      "sha256": "0be79342c982172b5d5d7a1fa3006fafeb2b0a0c16796ec583d3ad9885c88581"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/old_target_phase/stdout.txt",
+      "bytes": 21921,
+      "sha256": "a35fa171463adc9629af3dbb6beb682118ed8e3b457b0ef58325aae76fbc4562"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/positive_pair_diagonal/EXECUTION.json.txt",
+      "bytes": 1349,
+      "sha256": "b5a930703851094da356a483b055e77e9f3757dbc44f4c40d6addac8ae14127c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/positive_pair_diagonal/PRELAUNCH.json.txt",
+      "bytes": 39257,
+      "sha256": "6c030de76d2125d036489b2254d2b830a5f9a7259f65bf5aef58dec53da347bb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/positive_pair_diagonal/driver.py.txt",
+      "bytes": 673,
+      "sha256": "7bcf5e4415c2cdd4353874137f0e650f9735270a84fe901ad4f4ecc4f2277d68"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/positive_pair_diagonal/mutated.py.txt",
+      "bytes": 47185,
+      "sha256": "2ecf477ea0533833db311dca1a83ebdcaf11e6a20292d33132bf5f38f432f2ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/positive_pair_diagonal/stderr.txt",
+      "bytes": 1061,
+      "sha256": "4e3b8c54f5c5672bd71f6278c4e4150de516061e1d1a49e17b93d2bad38651c3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/positive_pair_diagonal/stdout.txt",
+      "bytes": 15155,
+      "sha256": "69084876239c5967ca3d2d1dddb19f0bb9599b0f6d3089853fcf478e06de936d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/pulse_chirality/EXECUTION.json.txt",
+      "bytes": 1304,
+      "sha256": "5d22473a013b7a264587cb22c2871b7f80d9bfceeeec4aa046ba37717607dd28"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/pulse_chirality/PRELAUNCH.json.txt",
+      "bytes": 39229,
+      "sha256": "27472e67f0576590bc9bdfb8f0d7fd6bf02a13827a309a6f49ef3cff9cda6a56"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/pulse_chirality/driver.py.txt",
+      "bytes": 661,
+      "sha256": "901109d4b43f8b77ca218bb0de53d207f29cfb409fe7492966d98fc348710138"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/pulse_chirality/mutated.py.txt",
+      "bytes": 47185,
+      "sha256": "26deca9247e1c575d3bb4e044001b790f79f455bd976e857d1e9393c65f747b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/scientific_faults/pulse_chirality/stderr.txt",
+      "bytes": 1067,
+      "sha256": "ec9bf0a95962408ae4d156b275352924a7a108cc7575d75d79343f2bfd0e9d26"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/transport_programs/archive_evidence.py.txt",
+      "bytes": 2245,
+      "sha256": "71787d1e76679c9c7c5955b639790ee1d721ca84e505a1a8872912255060f919"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/transport_programs/install_and_accept.py.txt",
+      "bytes": 6367,
+      "sha256": "e2119dc8c10a96f6bde31dc5cef3a62ee3726bdedf194288fc519b7012ed771f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/transport_programs/validate_packet.py.txt",
+      "bytes": 5042,
+      "sha256": "a123f47d2ab45d90450474b71624b762e1ef6df887f52842b03f7fab267d6f6c"
+    }
+  ]
+}

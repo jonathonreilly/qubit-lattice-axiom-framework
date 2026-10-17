@@ -1,0 +1,39 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/column_norm_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge",
+  "started_utc": "2026-10-16T23:49:58.412125+00:00",
+  "ended_utc": "2026-10-16T23:49:59.011796+00:00",
+  "elapsed_seconds": 0.5983548332005739,
+  "exit_code": 0,
+  "timed_out": false,
+  "resource_caps": {
+    "child_cpu_seconds": 10,
+    "wall_seconds": 30,
+    "maximum_matrix_dimension": 2
+  },
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/column_norm_check.py",
+      "bytes": 1881,
+      "sha256": "ba60f080adaa5edd60f94409a85ffd36f1d6ff35bc1dd1141ae2515d2ea34625"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/run_check.py",
+      "bytes": 1452,
+      "sha256": "1f08d94c03b22954bad538f3c18272d81c68323b71a94cf2d9c0906e26ff57dc"
+    }
+  ],
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/check_stdout.txt",
+    "bytes": 964,
+    "sha256": "b1808ec788055149854247ead2f59d2cd3c8fb219c4a404acbf96edb0821e115"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/check_stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

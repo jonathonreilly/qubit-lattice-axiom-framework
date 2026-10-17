@@ -1,0 +1,56 @@
+"""Install exact frozen overlay and record the root transport disposition."""
+from validate_packet import *
+from datetime import datetime,timezone
+import subprocess
+DP=N/'real_control_publication_draft';base='67108090f68ed9b2bc62eee23701b2d3d71dce4a'
+assert subprocess.check_output(['git','rev-parse','HEAD'],cwd=W,text=True).strip()==base
+assert subprocess.check_output(['git','branch','--show-current'],cwd=W,text=True).strip()=='physics-loop/toe-real-control-autonomous-output-20261017'
+assert not subprocess.check_output(['git','status','--porcelain'],cwd=W,text=True).strip()
+assert digest((DP/'FREEZE.json').read_bytes())['sha256']=='be5f5d8de532eb361a741bfdc18858bae55ec825113abc6a5be56b05f5654a5e'
+freeze=read(DP/'FREEZE.json');manifest=read(DP/'PACKET_MANIFEST.json')
+assert digest((DP/'PACKET_MANIFEST.json').read_bytes())=={k:freeze['manifest'][k] for k in ('bytes','sha256')}
+assert len(manifest['files'])==497
+for row in manifest['files']:
+ p=DP/row['path'];assert not p.is_symlink()
+ assert digest(p.read_bytes())=={k:row[k] for k in ('bytes','sha256')},row['path']
+for row in manifest['symlinks']:assert (DP/row['path']).readlink().as_posix()==row['target']
+static=[]
+for i in (1,2,3):
+ A=DP/f'static_{i:02}';pre=read(A/'PRELAUNCH.json');r=read(A/'RECEIPT.json')
+ assert pre['captured_utc']<r['started_before_Popen_utc'] and r['prelaunch_unchanged_after']
+ assert digest((A/'PRELAUNCH.json').read_bytes())=={k:r['prelaunch_identity_captured_before_Popen'][k] for k in ('bytes','sha256')}
+ for row in pre['files']:assert digest((A/row['path']).read_bytes())=={k:row[k] for k in ('bytes','sha256')}
+ validate_bindings(pre['runtime_bindings'])
+ # Earlier live launcher was changed for the refusal fixture; its exact bound snapshot remains.
+ assert digest((A/'launcher_snapshot.py').read_bytes())=={k:pre['executed_launcher_origin'][k] for k in ('bytes','sha256')}
+ for f,key in [('stdout.json','stdout'),('stderr.txt','stderr')]:assert digest((A/f).read_bytes())=={k:r[key][k] for k in ('bytes','sha256')}
+ assert r['returncode']==(1 if i==1 else 0) and not r['timeout'] and not r['input_source_mutations'] and not r['runtime_launcher_mutations']
+ static.append({'attempt':i,'receipt':pin(A/'RECEIPT.json'),'prelaunch':pin(A/'PRELAUNCH.json'),'elapsed_seconds':r['elapsed_wall_seconds'],'exit_code':r['returncode'],'bindings':len(pre['files'])})
+old=(DP/'static_03/fixture_repo/scripts/real_control_autonomous_output_2026_10_17.py').read_text()
+new=(DP/'canonical/scripts/real_control_autonomous_output_2026_10_17.py').read_text()
+a='lattice_wide: checked and not executed — enormous finite/infinite dynamics were not simulated; full-output horizons use the preserved analytical premises.'
+b='lattice_wide: analytical source scope checked; huge finite/infinite dynamics not executed, and complete-output horizons remain conditional on preserved proofs.'
+assert old.count(a)==1 and old.replace(a,b)==new
+(D/'BASE_GRAPH_MANIFEST.json').write_bytes((W/'docs/audit/data/citation_graph_manifest.json').read_bytes())
+overlay=[]
+for p in sorted((DP/'canonical').rglob('*')):
+ if p.is_file():
+  assert not p.is_symlink();rel=p.relative_to(DP/'canonical');dest=W/rel
+  assert not dest.exists(),rel
+  dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(p.read_bytes());overlay.append(str(rel))
+assert len(overlay)==88
+checks=validate_inputs()
+arch=archive('publication_draft',DP,[DP/r['path'] for r in manifest['files']]+[DP/'PACKET_MANIFEST.json',DP/'FREEZE.json'])
+record={'accepted_utc':datetime.now(timezone.utc).isoformat(),'status':'Accepted reversible source transport for bounded canonical execution; not a new theorem/retained verdict or publication approval.',
+ 'parent_head':base,**checks,'draft_freeze':pin(DP/'FREEZE.json'),'draft_manifest':pin(DP/'PACKET_MANIFEST.json'),'overlay_files':88,'frozen_draft_regular_members':497,
+ 'static_attempts':static,'last_static_relation':'Static03 exact final artifact except the sole verified printed coverage literal. Explicit optimized-Python refusal included. No fourth static or scientific run.',
+ 'root_read_scope':'Both source arguments, two analytical reviews and original author programs/evidence were previously fully read and source-qualified at exact unchanged identities. This pass read the full new wrapper, all sixteen executable event before/after texts, adapters/main, full static inspection/launcher, complete static03 outcomes and failed01 stderr, conformance/packaging/fault plan. Reversed448 AST statement records and complete proof destination edits mechanically. Historical source arrays hashed, not counted as mathematics.',
+ 'root_source_acceptance':pin(N/'real_control_root_review/ACCEPTANCE.json'),
+ 'preserved_failure':'Static01 inspection incorrectly removed original docstring;02 corrected checker;03 explicitly refuses optimized Python. Historical preparation isolated SymPy import failure and identical-code retry remain exact.',
+ 'limits':['Original ramp budget first clause is non-discriminating arithmetic; analytical Gram/Duhamel and substantive local identities carry ramp support.','Original product-seed countercase remains at slower1e6/kappa² onset, narrow runtime/seed only. No five-route or general no-go PASS.','Original same-model source exposure remains; this is transport qualification, not independent re-proof of inherited scattering.','Pure seed, exact static real apparatus and supplied C1 controls; no new calibration, larger-window, finite-permanence or doubled thermal claim.'],
+ 'pending':['One bounded actual canonical/cache run','Six distinct scientific fault tests and exact report comparison','Focused source/cache/readiness/graph/vocabulary/link/diff checks and remote regular PR','Integrated-current-main landing and retained audit'],
+ 'archived_draft_members':arch['count'],'scientific_executions_this_script':0,'editable_prompt_files_changed':[]}
+write(Q/'ROOT_PORTABILITY_ACCEPTANCE.json',record);write(D/'ROOT_PORTABILITY_ACCEPTANCE.json',record)
+archive('transport_programs',D,[D/x for x in ('install_and_accept.py','validate_packet.py','archive_evidence.py')])
+assert validate_inputs()==checks
+print(json.dumps({'installed':88,'inputs':109,'source_labels':229,'original_statements':448,'events':16,'static_attempts':len(static),'acceptance':pin(Q/'ROOT_PORTABILITY_ACCEPTANCE.json'),'archived_draft_members':arch['count']},indent=2))

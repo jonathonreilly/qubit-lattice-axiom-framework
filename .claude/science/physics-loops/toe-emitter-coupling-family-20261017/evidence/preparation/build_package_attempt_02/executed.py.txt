@@ -1,0 +1,287 @@
+"""Construct a publication overlay without executing any scientific function."""
+from pathlib import Path
+import argparse
+import ast
+import copy
+import difflib
+import hashlib
+import json
+import subprocess
+import textwrap
+from datetime import datetime, timezone
+
+P = argparse.ArgumentParser()
+P.add_argument('--packet-root', required=True)
+D = Path(P.parse_args().packet_root).resolve()
+N = D.parent
+S = N / 'emitter_resource_family_candidate'
+W = N.parent / 'correlation_worktree'
+BASE = '0f1022e03dbbed8085035f2a378be8ae1aca02e8'
+PREFIX = 'outputs/emitter_coupling_family_2026_10_17_inputs'
+NOTE = 'docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+PRIMARY = 'scripts/emitter_coupling_family_2026_10_17.py'
+PARENT_PRIMARY = 'scripts/product_seed_emitter_2026_10_17.py'
+C = D / 'canonical'
+
+def digest(raw):
+    return hashlib.sha256(raw).hexdigest()
+
+def dump(path, value):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(value, indent=2, sort_keys=True) + '\n', encoding='utf-8')
+
+def put(rel, raw):
+    path = C / rel
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(raw)
+
+def git_bytes(rel):
+    return subprocess.check_output(['git', 'show', BASE + ':' + rel], cwd=W)
+
+def ast_text(node):
+    return ast.dump(node, include_attributes=False)
+
+def ast_hash(node):
+    return digest(ast_text(node).encode())
+
+def source_node(text, node):
+    return ast.get_source_segment(text, node)
+
+assert D.name == 'emitter_family_publication_draft'
+assert not C.exists(), 'An existing overlay is not silently overwritten.'
+freeze = json.loads((S / 'FREEZE.json').read_text())
+fm = json.loads((S / 'FILE_MANIFEST.json').read_text())
+sm = json.loads((S / 'SOURCE_MANIFEST.json').read_text())
+assert fm['count'] == 43
+assert freeze['candidate']['sha256'] == '9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac'
+assert digest((S / 'FREEZE.json').read_bytes()) == 'ed250a089a13e033c81fe98fb1cd1736e2db8639793b90087226307e3874ce98'
+assert digest((S / 'FILE_MANIFEST.json').read_bytes()) == freeze['file_manifest']['sha256']
+for row in fm['files']:
+    raw = (S / row['path']).read_bytes()
+    assert (len(raw), digest(raw)) == (row['bytes'], row['sha256']), row['path']
+files = sorted([row['path'] for row in fm['files']] + ['FILE_MANIFEST.json', 'FREEZE.json'])
+assert files == sorted(p.relative_to(S).as_posix() for p in S.rglob('*') if p.is_file())
+tracked = {row['snapshot']: row for row in sm['sources'] if 'repository_path' in row}
+assert len(files) == 45 and len(tracked) == 18 and len(sm['sources']) == 23
+reused = {}
+mapping = []
+for rel in files:
+    raw = (S / rel).read_bytes()
+    if rel in tracked:
+        source = tracked[rel]
+        dest = source['repository_path']
+        assert source['commit'] == BASE
+        parent_raw = git_bytes(dest)
+        assert parent_raw == raw, rel
+        reused[dest] = raw
+        transport = 'reuse_exact_tracked_parent_file'
+    else:
+        dest = PREFIX + '/frozen_family/' + rel + ('.txt' if rel.endswith('.md') else '')
+        put(dest, raw)
+        transport = 'byte_preserved_new_copy'
+    mapping.append({'source_relative_path': rel, 'path': dest, 'sha256': digest(raw),
+                    'bytes': len(raw), 'transport': transport,
+                    'source_packet': 'emitter_resource_family_candidate'})
+by_source = {row['source_relative_path']: row for row in mapping}
+parent_primary = git_bytes(PARENT_PRIMARY)
+reused[PARENT_PRIMARY] = parent_primary
+parent_tree = ast.parse(parent_primary.decode())
+resolver_node = next(n for n in parent_tree.body if isinstance(n, ast.ClassDef) and n.name == 'FrozenInputs')
+artifact_node = next(n for n in parent_tree.body if isinstance(n, ast.FunctionDef) and n.name == 'verify_artifacts')
+resolver = source_node(parent_primary.decode(), resolver_node)
+verifier = source_node(parent_primary.decode(), artifact_node)
+
+start_marker = b'<!-- BEGIN UNCHANGED FAMILY AUTHOR BODY -->\n'
+end_marker = b'\n<!-- END UNCHANGED FAMILY AUTHOR BODY -->\n'
+wrapper = (D / 'WRAPPER.md').read_bytes()
+assert wrapper.endswith(b'\n')
+body = (S / 'CANDIDATE.md').read_bytes()
+assert len(body.splitlines()) == 835
+note = wrapper + start_marker + body + end_marker
+put(NOTE, note)
+body_map = {'source_sha256': digest(body), 'source_bytes': len(body),
+            'source_lines': 835, 'source_path': by_source['CANDIDATE.md']['path'],
+            'note_path': NOTE, 'note_sha256': digest(note),
+            'body_start_byte_inclusive': len(wrapper) + len(start_marker),
+            'body_end_byte_exclusive': len(wrapper) + len(start_marker) + len(body),
+            'wrapper_sha256': digest(wrapper), 'body_edits': [],
+            'qualification': 'Original historical source/status/path labels are unchanged. Wrapper status is separate.'}
+dump(C / PREFIX / 'PROOF_BODY_MAP.json', body_map)
+
+source = (S / 'check_family.py').read_text()
+tree = ast.parse(source)
+removed_names = {'HERE', 'PRE', 'D'}
+adapted = []
+events = []
+new_index = 0
+for index, node in enumerate(tree.body):
+    original = source_node(source, node)
+    event = {'original_statement_index': index, 'original_lines': [node.lineno, node.end_lineno],
+             'original_ast_sha256': ast_hash(node)}
+    remove = ((isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id in removed_names for t in node.targets))
+              or (isinstance(node, ast.For) and original.startswith("for row in PRE['bindings']"))
+              or (isinstance(node, ast.Assert) and original.startswith('assert resource.getrlimit')))
+    if remove:
+        event.update(kind='removed_historical_launch_transport', original_text=original,
+                     reason='Historical source/prelaunch paths and fixed old launch assertion are replaced by declared local hash checking and actual main-process cap metadata.')
+    elif isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'data' for t in node.targets):
+        replacement = "data=json.loads(inputs.read_text('family_author', 'inputs/interval.json'))"
+        adapted.append(replacement)
+        event.update(kind='adapted_input_read', original_text=original, replacement_text=replacement,
+                     new_statement_indices=[new_index], mathematical_change=False)
+        new_index += 1
+    elif isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'report' for t in node.targets):
+        old = "'wall_cap_external_seconds':30"
+        new = "'wall_cap_external_seconds':inputs.shared_limits()['external_wall_cap_seconds']"
+        assert original.count(old) == 1
+        replacement = original.replace(old, new)
+        adapted.append(replacement)
+        event.update(kind='actual_limit_metadata_only', original_text=old, replacement_text=new,
+                     new_statement_indices=[new_index], mathematical_change=False)
+        new_index += 1
+    elif isinstance(node, ast.Expr) and isinstance(node.value, ast.Call) and isinstance(node.value.func, ast.Name) and node.value.func.id == 'print':
+        replacement = "report['_canonical_execution'] = inputs.execution_metadata('family_author')\nreturn report"
+        adapted.append(replacement)
+        event.update(kind='return_instead_of_print_transport', original_text=original, replacement_text=replacement,
+                     new_statement_indices=[new_index, new_index + 1], mathematical_change=False)
+        new_index += 2
+    else:
+        adapted.append(original)
+        event.update(kind='unchanged_statement_ast', new_statement_indices=[new_index])
+        new_index += 1
+    events.append(event)
+assert sum(e['kind'] == 'removed_historical_launch_transport' for e in events) == 5
+assert sum(e['kind'] == 'adapted_input_read' for e in events) == 1
+assert sum(e['kind'] == 'actual_limit_metadata_only' for e in events) == 1
+assert sum(e['kind'] == 'return_instead_of_print_transport' for e in events) == 1
+function = 'def run_family_author(inputs):\n' + textwrap.indent('\n\n'.join(adapted) + '\n', '    ')
+function_tree = ast.parse(function).body[0]
+for event in events:
+    indices = event.get('new_statement_indices', [])
+    event['new_ast_sha256'] = [ast_hash(function_tree.body[i]) for i in indices]
+
+source_map = {
+    'schema': 'finite_source_transport_map_v1', 'exact_parent_commit': BASE,
+    'source_packet_file_count': 45, 'new_byte_preserved_file_count': 27,
+    'reused_parent_source_file_count': 18, 'files': mapping,
+    'infrastructure': [{'path': PARENT_PRIMARY, 'sha256': digest(parent_primary), 'bytes': len(parent_primary),
+                        'commit': BASE, 'reused_nodes': ['FrozenInputs', 'verify_artifacts'],
+                        'policy': 'Read as provenance only; no import or replay of parent scientific functions.'}],
+    'scope': 'Complete author packet, including historical attempts, plans, manifests, failed routes and source snapshots. Historical absolute labels never become fallback file lookups.',
+    'joint_scope_exclusion': 'Historical moment argument/review/qualification snapshots may contain their own joint-box scope. Only their fixed-coupling mathematical implication is credited; the new family claims exact-ladder scope only.'}
+dump(C / PREFIX / 'SOURCE_MAP.json', source_map)
+input_map = {'schema': 'finite_local_input_map_v1', 'roles': {'family_author': {
+    'historical_limits': {'cpu_soft_hard_seconds': [20, 20], 'external_wall_cap_seconds': 30,
+                          'source_attempt': 'attempt_01', 'status': 'historical author calculation only'},
+    'aliases': {key: {k: by_source[rel][k] for k in ['path', 'sha256', 'bytes']}
+                for key, rel in [('inputs/interval.json', 'inputs/interval.json'), ('__original_program__', 'check_family.py')]}}}}
+dump(C / PREFIX / 'INPUT_MAP.json', input_map)
+status = {'theorem_body': 'unchanged frozen author candidate',
+          'family_independent_review': 'pending_separate_review',
+          'family_root_qualification': 'pending_not_inferred_from_fixed_parameter_acceptance',
+          'wrapper_transport_review': 'pending_separate_root_review',
+          'canonical_execution': 'not_executed_in_this_draft', 'scientific_mutations': 'not_executed_in_this_draft',
+          'publication': 'local_reviewable_packet_not_a_PR', 'retained_audit': 'not_requested_or_performed',
+          'parent_commit': BASE, 'new_family_sha256': digest(body),
+          'shared_source_exposure': 'Same author/model as the family and earlier stationary work; prior generic/installed review and publication adaptation. No new independence claim.',
+          'excluded_claims': ['joint coefficient box', 'calibration extension', 'native supply', 'physical units', 'minimum resources', 'arbitrary accuracy', 'finite-device all-future permanence']}
+dump(C / PREFIX / 'PUBLICATION_STATUS.json', status)
+reproduction = {
+    'planned_canonical_primary': PRIMARY, 'planned_output': 'outputs/emitter_coupling_family_2026_10_17.json',
+    'planned_shared_cpu_soft_hard_seconds': [20, 20], 'planned_external_wall_cap_seconds': 30,
+    'status': 'Plan only: canonical science and mutations not executed',
+    'scope': 'One author scalar checking function, 103 historical scalar/algebra comparisons. No parent checker imports, numerical samples, matrices, quadrature, optimization or dynamics.',
+    'prerequisites': ['Separate analytical family review and root qualification', 'Root read of full wrapper and exact transport ledger', 'Root transport acceptance recorded separately', 'Finalize note/status/input bytes and declared input manifest'],
+    'execution_order': ['Precreate the intended output directory and output slot before canonical cache input fingerprinting', 'Serialize exact source, input, binary, environment and cap bindings before subprocess launch', 'Use repository execute_and_write_cache with the declared external wall limit and process CPU limit', 'Preserve full stdout/stderr, receipt, result and cache, including every failed attempt', 'Compare all scientific report fields with preserved author stdout; exclude only explicitly named transport/runtime fields', 'Verify source/input hashes and generation tokens after the run before claiming freshness'],
+    'non_scientific_comparison_exclusions': ['report._canonical_execution', 'report.actual_resources.python', 'report.actual_resources.sympy', 'report.actual_resources.cpu_soft_hard_seconds', 'report.actual_resources.wall_cap_external_seconds', 'report.actual_resources.program_wall_seconds', 'outer canonical wrapper fields'],
+    'mutation_policy': 'Only after separately approved exact copied-source cases and cap/source bindings; count intended scientific assertions only. No mutations are supplied as completed evidence here.',
+    'cache_cycle_rule': 'Any declared note/input change after a canonical run invalidates that run for final freshness and requires a new receipt, while preserving the earlier result.',
+    'landing_boundary': 'Focused milestone checks now. Current conformance section 12 reserves full integrated-main pipeline, strict lint and changed-evidence gates for the exact shared landing candidate.',
+    'root_owned': ['Git and worktree operations', 'value/scope decisions', 'citation graph decisions and execution', 'final readiness', 'publication', 'audit']}
+dump(C / PREFIX / 'REPRODUCTION_PLAN.json', reproduction)
+
+metadata_names = ['SOURCE_MAP.json', 'INPUT_MAP.json', 'PROOF_BODY_MAP.json', 'TRANSPORT_EDIT_LEDGER.json', 'PUBLICATION_STATUS.json', 'REPRODUCTION_PLAN.json', 'ARTIFACT_MANIFEST.json']
+audit_paths = sorted(set([row['path'] for row in mapping] + [PARENT_PRIMARY, NOTE] + [PREFIX + '/' + name for name in metadata_names]))
+assert len(audit_paths) == 54
+header = '''"""Portable author-checker replay for the conditional emitter coupling family.
+
+Review, qualification and execution status are recorded in the paired input
+packet. Importing this module executes no scientific body and changes no CPU
+limit. Only main() starts the declared shared CPU20/wall30 calculation.
+Historical evidence remains historical; scalar replay is not analytical or
+independent review of the theorem. No parent scientific programs are imported.
+"""
+from pathlib import Path
+import hashlib
+import json
+import resource
+import time
+
+AUDIT_TIMEOUT_SEC = 30
+REPO = Path(__file__).resolve().parents[1]
+INPUT_ROOT = REPO / 'outputs/emitter_coupling_family_2026_10_17_inputs'
+
+'''
+main = '''def main():
+    resource.setrlimit(resource.RLIMIT_CPU, (20, 20))
+    started = time.monotonic()
+    verify_artifacts()
+    inputs = FrozenInputs(REPO, INPUT_ROOT / 'INPUT_MAP.json')
+    report = run_family_author(inputs)
+    output = {
+        'scope': 'Portable replay of one source-exposed author scalar body. The complete analytical proof, family review and qualification remain separate.',
+        'report': report,
+        'actual_shared_process_limits': inputs.shared_limits(),
+        'elapsed_seconds': time.monotonic() - started,
+        'input_sha256': {name: hashlib.sha256((REPO / name).read_bytes()).hexdigest() for name in AUDIT_INPUT_PATHS},
+        'resolved_reads': inputs.reads,
+        'limitations': 'Exact-ladder family only; no joint/calibration extension, native supply, arbitrary accuracy or independent retained audit.'}
+    (REPO / 'outputs/emitter_coupling_family_2026_10_17.json').write_text(json.dumps(output, indent=2) + '\\n', encoding='utf-8')
+    print(json.dumps({'scope': output['scope'], 'function_bodies_completed': 1,
+                      'scalar_comparisons': len(report['checks']),
+                      'complete_infinite': report['budgets']['complete_infinite'],
+                      'complete_finite': report['budgets']['complete_finite'],
+                      'actual_shared_process_limits': output['actual_shared_process_limits']}, indent=2))
+'''
+declaration = 'AUDIT_INPUT_PATHS = (\n' + ''.join('    ' + repr(p) + ',\n' for p in audit_paths) + ')\n'
+primary = header + resolver + '\n\n\n' + verifier + '\n\n\n' + function + '\n\n' + main + '\n\n' + declaration + "\nif __name__ == '__main__':\n    main()\n"
+compile(primary, PRIMARY, 'exec')  # Syntax compilation only; no execution.
+put(PRIMARY, primary.encode())
+primary_tree = ast.parse(primary)
+actual_func = next(n for n in primary_tree.body if isinstance(n, ast.FunctionDef) and n.name == 'run_family_author')
+for event in events:
+    event['new_lines'] = [[actual_func.body[i].lineno, actual_func.body[i].end_lineno] for i in event.get('new_statement_indices', [])]
+ledger = {
+    'original_program': by_source['check_family.py'], 'adapted_primary': {'path': PRIMARY, 'sha256': digest(primary.encode())},
+    'adapted_function': 'run_family_author', 'mathematical_changes': [],
+    'equivalence_definition': 'Original top-level statements are wrapped in one function. Five historical launch/path statements are removed; one read is routed through the finite resolver; one actual wall-cap metadata expression becomes dynamic; final print becomes execution metadata plus return. Every other statement AST is identical.',
+    'events': events,
+    'infrastructure': {'source_commit': BASE, 'source_path': PARENT_PRIMARY, 'source_sha256': digest(parent_primary),
+                       'FrozenInputs_ast_sha256': ast_hash(resolver_node), 'verify_artifacts_ast_sha256': ast_hash(artifact_node),
+                       'copied_nodes_ast_identical': True},
+    'comment_transport': 'Source comments and blank lines are not executable AST nodes. The complete original file remains byte-preserved. The source/body prose is unchanged.',
+    'added_wrapper': ['status-neutral module docstring', 'stdlib imports and repo-relative paths', 'shared-cap main wrapper', 'exact finite input declaration', 'canonical result/output metadata', 'main guard'],
+    'scope_limit': 'AST equivalence preserves source science; it does not validate its mathematical hypotheses or establish review independence.'}
+dump(C / PREFIX / 'TRANSPORT_EDIT_LEDGER.json', ledger)
+(D / 'SOURCE_TO_FUNCTION.diff').write_text(''.join(difflib.unified_diff(source.splitlines(True), function.splitlines(True), fromfile='frozen check_family.py', tofile='wrapped run_family_author')), encoding='utf-8')
+
+rows = []
+for rel in audit_paths:
+    if rel == PREFIX + '/ARTIFACT_MANIFEST.json':
+        continue  # Manifest does not bind itself; canonical cache declares it.
+    raw = (C / rel).read_bytes() if (C / rel).is_file() else reused[rel]
+    rows.append({'path': rel, 'sha256': digest(raw), 'bytes': len(raw),
+                 'location': 'new_overlay' if (C / rel).is_file() else 'exact_tracked_parent'})
+dump(C / PREFIX / 'ARTIFACT_MANIFEST.json', {'files': rows, 'count': len(rows),
+    'manifest_self_binding': 'Declared canonical input, excluded from its own member list to avoid a hash cycle.',
+    'primary_binding': 'Primary source is bound by canonical runner/cache and the transport ledger; it is not an artifact-manifest member.'})
+summary = {'built_utc': datetime.now(timezone.utc).isoformat(), 'source_files_preserved': len(mapping),
+           'new_frozen_copies': sum(r['transport'] == 'byte_preserved_new_copy' for r in mapping),
+           'reused_parent_sources': len(tracked), 'reused_parent_infrastructure_sources': 1,
+           'declared_inputs': len(audit_paths), 'artifact_members': len(rows),
+           'primary_sha256': digest(primary.encode()), 'note_sha256': digest(note),
+           'body_sha256': digest(body), 'scientific_executions': 0, 'scientific_mutations': 0,
+           'source_statement_count': len(tree.body), 'transport_event_count': sum(e['kind'] != 'unchanged_statement_ast' for e in events),
+           'new_overlay_files': sorted(p.relative_to(C).as_posix() for p in C.rglob('*') if p.is_file())}
+dump(D / 'BUILD_RESULT.json', summary)
+print(json.dumps(summary, indent=2))

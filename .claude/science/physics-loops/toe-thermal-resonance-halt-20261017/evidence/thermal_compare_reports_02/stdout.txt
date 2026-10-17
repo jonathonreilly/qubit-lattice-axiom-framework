@@ -1,0 +1,10 @@
+{
+  "scientific_payloads_equal": [
+    "resonance_author",
+    "product_preparation_author",
+    "interacting_preparation_author"
+  ],
+  "canonical_elapsed_seconds": 1.114833116531372,
+  "largest_dense_matrix": 4,
+  "no_new_scientific_conclusion": true
+}

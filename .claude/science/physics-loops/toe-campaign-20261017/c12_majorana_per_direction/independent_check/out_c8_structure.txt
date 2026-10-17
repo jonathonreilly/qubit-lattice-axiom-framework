@@ -1,0 +1,3 @@
+BKSF: product of all B_v is the identity operator: True
+BKSF: every single-qubit Pauli flips an even number of B's (so no local odd-charge operator): True
+c12: single local Majorana gamma_{0,+x} (a 1-qubit Pauli X1) flips 1 B and 4 plaquettes

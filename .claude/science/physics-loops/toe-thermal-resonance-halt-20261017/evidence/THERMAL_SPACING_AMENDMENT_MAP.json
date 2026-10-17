@@ -1,0 +1,43 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/thermal_spacing_amendment",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "EXECUTION.json",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/thermal_spacing_amendment/EXECUTION.json.txt",
+      "bytes": 1477,
+      "sha256": "4319136ddb83f78de8f4add5525b739663e41dd7c9a99e728b39e255ee750778",
+      "compression": "none",
+      "raw_bytes": 1477,
+      "raw_sha256": "4319136ddb83f78de8f4add5525b739663e41dd7c9a99e728b39e255ee750778"
+    },
+    {
+      "original_path": "executed_source.py",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/transport_amendment/inputs/integration/fix_math_spacing_transport.py.txt",
+      "bytes": 6118,
+      "sha256": "7d855580f5665f0f8245ac76bbc2168318d57553eb004ad5d76c5f7636cc5d37",
+      "compression": "none",
+      "raw_bytes": 6118,
+      "raw_sha256": "7d855580f5665f0f8245ac76bbc2168318d57553eb004ad5d76c5f7636cc5d37"
+    },
+    {
+      "original_path": "stderr",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/autonomous_emitter_route/algebra.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "stdout",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/transport_amendment/inputs/integration/spacing_amendment/AMENDMENT.json.txt",
+      "bytes": 3555,
+      "sha256": "c23e88a9e565291eea2c0a6b79aae65614495c68fe8bdde7d4bb61d63b0fce77",
+      "compression": "none",
+      "raw_bytes": 3555,
+      "raw_sha256": "c23e88a9e565291eea2c0a6b79aae65614495c68fe8bdde7d4bb61d63b0fce77"
+    }
+  ],
+  "count": 4
+}

@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/two_qubit_site_soldered_spin_stabilizer_rules_charge_motion_flips_free_local_variable_2026_10_17.py
+runner_sha256: c8521975b13c0e9da9a7bf2bd917aafcef53452023424cea05bcd270d0979a50
+input_fingerprint_sha256: 785e21c8de501fa25059422ba8e01b1ef5be7ba1223c7ef630409d62c9877c77
+timeout_sec: 2400
+exit_code: 0
+elapsed_sec: 170.82
+status: ok
+----- stdout -----
+flavour fixed: 775 strings, 127 sign-consistent orbits, maximal sets [3, 3, 3, 3, 3, 3, 39, 39, 39]
+PASS flavour fixed: 775 strings commute with all rotated translates; 127 sign-consistent orbits; 9 maximal commuting sets (3 of 39, 6 of 3)
+PASS flavour fixed: every string has spin part Chamon C or identity
+PASS flavour fixed, large sets: every flavour factor in a set is one label P (one set for each of X, Y, Z)
+PASS flavour fixed, small sets: each is {C (x) 1, K, C K} with K a flavour cluster string (P at centre, Q != P on all six neighbours)
+flavour soldered: 16387 strings, 858 sign-consistent orbits, maximal sets [2, 3, 855]
+PASS flavour soldered: 16387 strings; 858 sign-consistent orbits; maximal commuting sets of sizes 2, 3 and 855
+PASS flavour soldered: every string in the 855-orbit set uses only Bell labels {II, XX, YY, ZZ}
+PASS flavour soldered: the 3-orbit set is {spin Chamon, flavour Chamon, their product B (XX, YY, ZZ on the axis pairs)}
+PASS flavour soldered: the 2-orbit set is {E-orbit, B}, E = YZ(+-x) ZX(+-y) XY(+-z) and its partner ZY XZ YX; E E' = B up to phase
+PASS Chamon curve primes: x^t + 1 lies in the prime of diagonal d exactly when t is orthogonal to d (so no Chamon charge is fixed by three independent translations)
+PASS the commutant of {XX, ZZ} in the two-qubit Pauli group is the Bell alphabet {II, XX, YY, ZZ}
+PASS with both qubits soldered, O permutes XX, YY, ZZ transitively (all or none of them lie in an O-invariant group)
+PASS example "spin Chamon (x) flavour X on six neighbours": charge ideal (Laurent) = ((x+1)^2, (y+1)^2, (z+1)^2) over GF(2)
+PASS example: the charge module has F2-dimension 8 (standard monomials x^a y^b z^c, a, b, c in {0, 1}), supported only at (1, 1, 1)
+PASS example: every charge moves by even steps; the elementary class 1 does not move by (1,0,0)
+PASS example: spin-only operators cannot move the elementary class 1 by (2,0,0) (x^2 + 1 is not in the Chamon ideal), so the move must flip flavour X
+PASS E family <E, E'>: Ext^3(C, R) has empty support off the coordinate planes (no 3D-mobile charge; GF(2), Singular)
+PASS E family <E, E', B>: Ext^3(C, R) has empty support off the coordinate planes (no 3D-mobile charge; GF(2), Singular)
+per_element: exhaustive enumeration of 16^7 strings per flavour action; exact GF(2) algebra
+per_site: two qubits per site; no dynamics or tick is supplied
+per_mode: checked and not executed — no momentum-mode or spectral-dispersion claim is tested
+per_block: checked and not executed — no coarse-grained block dynamics is tested
+lattice_wide: charge modules over the Laurent ring (infinite lattice)
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

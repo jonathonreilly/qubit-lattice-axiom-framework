@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/autonomous_emitter_route/emitter_algebra_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/autonomous_emitter_route",
+  "started_utc": "2026-10-17T00:34:46Z",
+  "wall_elapsed_seconds": 1.124339041300118,
+  "exit_code": 0,
+  "timed_out": false,
+  "cpu_cap_seconds": 10,
+  "wall_cap_seconds": 30,
+  "matrix_dimension_cap": 16,
+  "grid_points": 0,
+  "optimization_iterations": 0,
+  "python_realpath": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+  "python_binary_sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5",
+  "script_sha256": "236f558f94b8e3270c67b4cb218056b4024a2c902e276793b0c522100de461b9",
+  "stdout_sha256": "c281398bf83fc3f76b1c416221fc7a931402207f90a5cb13197124a3b14c9b8d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "environment_requested": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "thread_limit_measurement": "requested environment only, no measured thread claim",
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
+}

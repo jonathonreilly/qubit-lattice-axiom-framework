@@ -1,0 +1,30 @@
+{
+  "frozen_utc": "2026-10-17T05:00:53.137097+00:00",
+  "status": "frozen proposed conditional theorem and bounded corroboration, not independent/root acceptance",
+  "candidate": {
+    "path": "CANDIDATE.md",
+    "bytes": 28103,
+    "sha256": "57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c"
+  },
+  "source_map": {
+    "path": "SOURCE_MAP.json",
+    "bytes": 7467,
+    "sha256": "c1a701881fdeb81ce3f878b7851f9f6f0b36f15d04b879f213d2fb76f902f1f9"
+  },
+  "final_check": {
+    "path": "FINAL_CHECK.json",
+    "bytes": 7627,
+    "sha256": "7d106bb39458858263c70ea41d9ae7605fdfbc8cd2753d05a261551ad397dd31"
+  },
+  "manifest": {
+    "path": "FILE_MANIFEST.json",
+    "bytes": 6576,
+    "sha256": "0d3845e3902127f5260f34dd57112cc8db4e284adadab7ce63cfeff3f2a512f3"
+  },
+  "member_count": 41,
+  "failure_retained": true,
+  "private_root_construction_exposure": "none through freeze",
+  "scientific_attempt_cap_used": "two child launches: one import failure, one scientific success",
+  "next_decision": "Separate review of local preparation, release and realifier-to-resonance interface.",
+  "no_further_writes_to_frozen_members_without_separate_record": true
+}

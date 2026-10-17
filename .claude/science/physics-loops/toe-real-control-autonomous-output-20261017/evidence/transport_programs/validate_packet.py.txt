@@ -1,0 +1,78 @@
+"""Deterministic identity and reversible-transport checks; no science execution."""
+from archive_evidence import *
+import ast, copy
+def read(p):return json.loads(p.read_text())
+def raw_row(row):
+ b=(W/row['path']).read_bytes()
+ assert digest(b)=={k:row[k] for k in ('bytes','sha256')}
+ b=gzip.decompress(b) if row.get('compression')=='gzip' else b
+ assert digest(b)=={'bytes':row.get('raw_bytes',row['bytes']),'sha256':row.get('raw_sha256',row['sha256'])}
+ return b
+def validate_bindings(rows):
+ for row in rows:assert digest(Path(row['path']).read_bytes())=={k:row[k] for k in ('bytes','sha256')},row['path']
+ return len(rows)
+def validate_inputs():
+ primary=W/'scripts/real_control_autonomous_output_2026_10_17.py'
+ note=W/'docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+ tree=ast.parse(primary.read_text());compile(tree,str(primary),'exec')
+ declared=next(ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in n.targets))
+ mf=read(F/'ARTIFACT_MANIFEST.json');assert len(declared)==len(set(declared))==109
+ assert set(declared)=={r['path'] for r in mf['files']}|{str((F/'ARTIFACT_MANIFEST.json').relative_to(W))}
+ for row in mf['files']:
+  p=Path(row['path']);assert not p.is_absolute() and '..' not in p.parts and p.as_posix()==row['path']
+  assert not (W/p).is_symlink() and not any(x.is_symlink() for x in (W/p).parents)
+  assert digest((W/p).read_bytes())=={k:row[k] for k in ('bytes','sha256')}
+ sm=read(F/'SOURCE_MAP.json');assert len(sm['files'])==229
+ for row in sm['files']:assert row['path'] in declared;raw_row(row)
+ bm=read(F/'PROOF_BODY_MAP.json');nb=note.read_bytes();bodies=[]
+ for row in bm['bodies']:
+  original=raw_row(row['original']);b=nb[row['note_byte_start_inclusive']:row['note_byte_end_exclusive']]
+  assert digest(b)=={'bytes':row['bytes'],'sha256':row['embedded_sha256']}
+  for e in sorted(row['link_target_edits'],key=lambda x:x['embedded_start'],reverse=True):
+   x,y=e['embedded_start'],e['embedded_end'];assert b[x:y].decode()==e['replacement_target']
+   b=b[:x]+e['original_target'].encode()+b[y:]
+  assert b==original,row['title']
+  bodies.append({'title':row['title'],'raw':digest(original),'link_changes':len(row['link_target_edits'])})
+ assert len(bodies)==2 and sum(x['link_changes'] for x in bodies)==3
+ assert not any(x.endswith((b' ',b'\t')) for x in nb.splitlines())
+ # Reverse the explicit AST edits; scientific expressions are already source-qualified.
+ functions={n.name:n for n in tree.body if isinstance(n,ast.FunctionDef)}
+ dump=lambda n:ast.dump(n,include_attributes=False)
+ def at(n,path):
+  for k in path:n=n[k] if isinstance(k,int) else getattr(n,k)
+  return n
+ count=0;events=0
+ for e in read(F/'TRANSPORT_EDIT_LEDGER.json')['source_to_function']:
+  original=ast.parse(raw_row(e['source']).decode())
+  adapted=ast.Module(body=copy.deepcopy(functions[e['function']].body),type_ignores=[])
+  assert digest(dump(original).encode())['sha256']==e['original_module_ast_sha256']
+  assert digest(dump(adapted).encode())['sha256']==e['adapted_body_ast_sha256']
+  for row in e['statements']:
+   assert digest(dump(at(original,row['source_ast_path'])).encode())['sha256']==row['source_ast_sha256']
+   if row['adapted_ast_path'] is not None:assert digest(dump(at(adapted,row['adapted_ast_path'])).encode())['sha256']==row['adapted_ast_sha256']
+  count+=len(e['statements'])
+  for tail in reversed(e['added_tail_statements']):
+   nodes=ast.parse(tail).body;assert dump(ast.Module(body=adapted.body[-len(nodes):],type_ignores=[]))==dump(ast.Module(body=nodes,type_ignores=[]));del adapted.body[-len(nodes):]
+  for edit in reversed(e['events']):
+   path=edit['source_ast_path'];parent=at(adapted,path[:-1]);key=path[-1];old=copy.deepcopy(at(original,path))
+   assert dump(old)==edit['original_ast']
+   if edit['kind']=='statement':
+    new=ast.parse(edit['replacement_source']).body
+    assert dump(ast.Module(body=parent[key:key+len(new)],type_ignores=[]))==dump(ast.Module(body=new,type_ignores=[]))
+    parent[key:key+len(new)]=[old]
+   else:
+    assert dump(at(adapted,path))==dump(ast.parse(edit['replacement_source'],mode='eval').body)
+    if isinstance(key,int):parent[key]=old
+    else:setattr(parent,key,old)
+  events+=len(e['events']);assert dump(adapted)==dump(original)
+ assert count==448 and events==16
+ guard=functions['main'].body[0]
+ assert isinstance(guard,ast.If) and ast.unparse(guard.test)=='not __debug__' and isinstance(guard.body[0],ast.Raise)
+ return {'primary':pin(primary),'note':pin(note),'artifact_manifest':pin(F/'ARTIFACT_MANIFEST.json'),'source_labels':229,'declared_input_count':109,'manifest_member_count':108,'bodies':bodies,'original_statements':count,'transport_events':events,'optimized_python_refusal':True}
+def validate_archives():
+ out=[]
+ for p in sorted((Q/'evidence').glob('*_MAP.json')):
+  j=read(p)
+  for row in j['files']:raw_row(row)
+  out.append({'path':str(p.relative_to(W)),**digest(p.read_bytes()),'members':len(j['files'])})
+ return out

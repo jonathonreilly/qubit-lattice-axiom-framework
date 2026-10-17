@@ -1,0 +1,55 @@
+--- reviewer_certificate.py
++++ reviewer_old_cap_delta.py
+@@ -21,7 +21,8 @@
+ import mpmath as mp
+ 
+ START = time.monotonic()
+-ROOT = Path(__file__).resolve().parent
++ROOT = Path(__file__).resolve().parent/'old_cap_delta'
++ROOT.mkdir(exist_ok=True)
+ resource.setrlimit(resource.RLIMIT_CPU, (90, 90))
+ mp.mp.dps = 90
+ DEN = 10**60
+@@ -73,23 +74,24 @@
+ def matrix_data(a):
+     return [[str(x) for x in row] for row in a]
+ 
+-# Independent exact transcription of the finite decimals in ROUTE.md.
++# Bounded coefficient delta: exact transcription from frozen old-cap RESULT.md.
+ P = {k:Q(v) for k,v in {
+-    'J':'0.388903151872671', 'gA':'19.999998155265832',
+-    'gB':'9.869584235578144', 't':'19.999999311960544',
+-    'lambdaA':'0.359303251635283', 'lambdaB':'2.497330381697014',
+-    'u':'14.99540892430831', 'mu0':'0.520036275799164',
+-    'mu1':'-0.151066135275764', 'tan_half_complement':'0.040021355301287'
++    'J':'0.030021107107032', 'gA':'0.996878563816670',
++    'gB':'0.599319315560298', 't':'3.999349697888060',
++    'lambdaA':'3.801781381581202', 'lambdaB':'2.575033765788497',
++    'u':'0.544607276405587', 'mu0':'0.321494607058201',
++    'mu1':'-1.459892813020969', 'tan_half_complement':'4.510351185997098'
+ }.items()}
+ q = P['tan_half_complement']
+ P['cos_k'] = (q*q-1)/(q*q+1)
+ P['sin_k'] = 2*q/(q*q+1)
+ J = P['J']; co = P['cos_k']; si = P['sin_k']
+ P['epsilon'] = 2*J*(1-co)
+-P['DeltaA'] = 2+P['epsilon']+Q(1,20)+Q('1.143803166553335')
+-P['DeltaB'] = 2+P['epsilon']+Q(1,20)+Q('1.063556366205592')
++P['DeltaA'] = Q('2.192035527016003')
++P['DeltaB'] = Q('2.186826508897014')
++assert 0<P['gA']<=1 and 0<P['gB']<=1
+ P['scalar_reserve'] = -P['mu1']
+-author = json.loads((ROOT/'sources/author/evidence/rational_point_certificate.json').read_text())
++author = json.loads((ROOT.parent/'sources/old_cap/rational_point_certificate.json').read_text())
+ assert P == {k:Q(v) for k,v in author['exact_parameters'].items()}
+ assert all(P[k]>0 for k in P if k not in ['mu1','cos_k'])
+ assert co*co+si*si == 1 and si>0
+@@ -246,7 +248,7 @@
+         comparisons.append({'s':s,'p':p,'bound':number(bound),'reflection_real':str(r[0]),
+                             'reflection_imag':str(r[1]),'reflection_certificate_error':number(amplitude_errors[s,p])})
+ maximum=max(Q(row['bound']['rational']) for row in comparisons)
+-assert maximum<Q(52,10**14)
++assert maximum<Q(176,10**15)
+ wrong_target_lower=Q(48,25)-maximum
+ assert wrong_target_lower>Q('1.91')
+ alpha_drop=mp.mpc(*[mp.mpf(v) for v in mutations[1]['remove_lambdaA_contact_diagnostic']['-1']])

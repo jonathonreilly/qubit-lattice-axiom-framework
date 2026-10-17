@@ -1,0 +1,67 @@
+# Coupling-family publication decision, pending qualification
+
+The proposed review unit is the complete coupling-family theorem above
+PR9664 at `0f1022e03dbbed8085035f2a378be8ae1aca02e8`, including the
+position-moment escape implication re-established in its sections 7–8.
+The author candidate is
+`9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac`.
+Separate analytical review and root qualification are still pending. This
+record authorizes preparation of a reviewable packet; it does not approve
+the theorem, a canonical execution, a PR, a merge or an audit verdict.
+
+The family cannot follow by substituting a larger coupling in the parent.
+At the proposed upper endpoint, that substitution gives a variance-based
+mass ceiling of 1.28 and an old point-spectrum amplitude ceiling of 0.8.
+The proposed repair needs an analytic spectral-mass lower bound, a complete
+seed-overlap estimate, and all affected inverse, actual-phase, C1 and L2
+estimates. The position-moment estimate then gives a sufficient onset
+`1e6/kappa^2`, with finite comparison length `ceil(50T)` through `2T`.
+The proposed interval is `[1e-12,1e-8]`, at fixed bandwidth `1e-6` on the
+exact nominal ladder. A successful review would give `T=1e22` and
+`M=5e23` at the upper endpoint, compared with PR9664's `1e36` and `5e37`.
+These are sufficient bounds in Hamiltonian units, not measured runtimes,
+minimum resources, a practical implementation or physical seconds.
+
+This is another conditional positive theorem in the same research family;
+claim-type variety is not its justification. Its potential marginal value
+is making coupling a checked resource parameter, where the previous
+normalization argument fails, and connecting that interval to a complete
+output/finite-horizon guarantee. A constant-only fixed-moment PR would
+duplicate part of this proposed argument, so it is not planned. Standard
+spectral-density and position-moment machinery should be credited; no
+general mathematical novelty claim is made.
+
+The joint static/calibration theorem is a different scope. It remains
+separately qualified and unpublished, for a later coherent composition.
+Its conclusions do not automatically extend to this larger-coupling
+interval. Historical joint content retained inside exact moment input
+snapshots is inherited evidence, not part of the proposed family claim.
+The separately active resonance investigation does not delay this unit
+if the family result is checked and the publication artifact is ready.
+
+The full output includes emitter, source, clock, old system and passive
+reference. The actual common profile and scalar, literal old-system aging,
+point-spectrum accounting, positive local blocks and fixed nonzero target
+residual stay explicit. Native block/phase/seed supply, temporal noise,
+practical cost, permanent finite-volume halt, capture/reset/reuse and
+physical Hamiltonian/Record identification remain open.
+
+V1 is the user's autonomous-halt resource gap. V2 is the complete family
+argument, conditional on its premises. V3 is currently pending the separate
+changed-premise review and root evidence qualification. V4 would be the
+uniform coupling-to-resource implication. V5 is the new normalization and
+full affected-premise analysis, not a renamed parent or a numerical fit.
+Final OPEN/CLOSE publication disposition must be made after V3 and focused
+publication checks, with current source heads and open PRs verified.
+
+The scoped source search in `prior_art/SEARCH.json` used the current
+worktree (including parents9661/9664), not an isolated main checkout. The
+complete 27-path first search and literal second-query results were read.
+The second query finds generic coupling-family uses but no emitter
+arctan/moment-family statement. A larger mechanically assembled context
+inventory is retained but has not been fully read; it is not claimed as a
+completed novelty audit. The main/open-PR refresh at03:02UTC has unchanged
+9661/9663/9664 and unrelated9662. No literature-wide priority claim or
+unreviewed external premise is imported.
+
+No editable prompts, physical axioms or audit results were changed.

@@ -1,0 +1,144 @@
+# Source and program inventory
+
+This inventory records immutable evidence copied for a drafting task. No
+scientific program was imported or executed. Every copied byte, original path
+and proposed canonical destination is in [SOURCE_INVENTORY.json](SOURCE_INVENTORY.json).
+The explicit static runtime read closures are in [PROGRAM_INPUTS.json](PROGRAM_INPUTS.json).
+Full source trees retain outputs, stderr, caps, original inputs, launchers,
+executed-source snapshots and historical status labels.
+
+## Complete source bodies and current qualification
+
+| Source | Bytes | SHA256 |
+|---|---:|---|
+| [autonomous_emitter_route/ROUTE.md](sources/autonomous_emitter_route/ROUTE.md) | 27328 | `f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1` |
+| [emitter_installed_certificate/CANDIDATE.md](sources/emitter_installed_certificate/CANDIDATE.md) | 30796 | `4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee` |
+| [weighted_emitter_escape_candidate/CANDIDATE.md](sources/weighted_emitter_escape_candidate/CANDIDATE.md) | 10962 | `a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5` |
+| [emitter_independent_review/REPORT.md](sources/emitter_independent_review/REPORT.md) | 17441 | `e4eec63593ce9f04cee67ef9734d570db1d6cd29886190a44be8f817a541ae7f` |
+| [emitter_root_qualification/QUALIFICATION.md](sources/emitter_root_qualification/QUALIFICATION.md) | 2685 | `41d7ef0ce15f54c710b0b7c7a7b9734e1bec25b78d275c73ac34d098bcbee3dd` |
+| [emitter_installed_review/REPORT.md](sources/emitter_installed_review/REPORT.md) | 23238 | `cf9f05affa0155ff4069549490f61971d1d136b9f1e37a5d566c45b0f8d9590f` |
+| [emitter_installed_root_review/QUALIFICATION.md](sources/emitter_installed_root_review/QUALIFICATION.md) | 2489 | `dfe73e8d332dc81bac378daf480662f74e95e3091f01fce11d6e2098f7d7596d` |
+| [emitter_installed_root_review/ACCEPTANCE.json](sources/emitter_installed_root_review/ACCEPTANCE.json) | 37048 | `c99e0c13ec2469910d74d1fe487d9d4ae09539d1ca3d46f53047dc36d509963c` |
+| [weighted_emitter_escape_review/REPORT.md](sources/weighted_emitter_escape_review/REPORT.md) | 16576 | `cb309d98863a09a0db9b47b559a4e7a3a6f55d314b78dfd5379b57a089504028` |
+| [weighted_emitter_root_qualification/QUALIFICATION.md](sources/weighted_emitter_root_qualification/QUALIFICATION.md) | 2186 | `f3513816c0bbe060f50860e02a2f1c49afcd42056314af9cc161885076882f4b` |
+| [weighted_emitter_root_qualification/ACCEPTANCE.json](sources/weighted_emitter_root_qualification/ACCEPTANCE.json) | 25670 | `01e6cf9d8e54d8dd38157f5901a0c9c2b7bc0ed2890e7895b2213a26b1469a16` |
+| [emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md](sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md) | 27028 | `db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3` |
+| [emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md](sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md) | 23457 | `b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45` |
+| [emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json](sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json) | 24275 | `a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251` |
+| [emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json](sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json) | 25229 | `6f057d8a580217d29a09d7683462f5b35b71de093e75c8d07a12283cde33593f` |
+
+The full local, installed and weighted arguments also appear, without byte
+changes, in [NOTE_DRAFT.md](NOTE_DRAFT.md). Their offsets are in
+[EMBEDDED_SOURCE_MAP.json](EMBEDDED_SOURCE_MAP.json). The local positive-cell
+proof is not replaced by the installed theorem's reference to it. Generic V2
+and the concrete interval argument remain accessible as full pinned copies;
+the existing parent canonical note retains its own complete inherited sources.
+
+## Exact scientific programs, actual evidence and inputs
+
+### Local author
+
+Program: [autonomous_emitter_route/emitter_algebra_check.py](sources/autonomous_emitter_route/emitter_algebra_check.py); 7761 bytes; SHA256 `236f558f94b8e3270c67b4cb218056b4024a2c902e276793b0c522100de461b9`.
+
+Exact constants embedded in the program; runtime self-source hash only. The source manifest supplies proof/history provenance, not an unrecorded numerical read.
+
+Actual preserved [result](sources/autonomous_emitter_route/ALGEBRA_CERTIFICATE.json) and [execution receipt](sources/autonomous_emitter_route/EXECUTION.json). 1 run; 1.124339041300118 s wall; CPU 10 / wall 30 s; maximum matrix 16.
+
+No separate launcher source is present; the actual command is in the execution receipt. No launcher has been invented for this packet.
+
+Static non-self file reads inventoried: 0. The JSON closure gives every path, exact identity and proposed local canonical replacement.
+
+### Local independent reviewer
+
+Program: [emitter_independent_review/check_emitter.py](sources/emitter_independent_review/check_emitter.py); 11404 bytes; SHA256 `c2faafa025ca3905bd88c6d8110a2a8888765e881f451ff1df1a5acf1ad37196`.
+
+Independently constructed bit-action/Gram and local-matching checks; reads the local author certificate for exact constant comparisons and hashes the SOURCE_PINS snapshots. No author program imported.
+
+Actual preserved [result](sources/emitter_independent_review/RESULTS.json) and [execution receipt](sources/emitter_independent_review/EXECUTION.json). 1 run; 1.7422960000112653 s wall; CPU 45 / wall 60 s; maximum matrix 9 (full-qubit block 8).
+
+Launcher: [emitter_independent_review/run_check.py](sources/emitter_independent_review/run_check.py); 1766 bytes; SHA256 `e6076fa51f40e3319588658a898dd5636d9d05fafe4193ba363ec0411a393540`.
+
+Static non-self file reads inventoried: 19. The JSON closure gives every path, exact identity and proposed local canonical replacement.
+
+### Installed author
+
+Program: [emitter_installed_certificate/certify_installed_emitter.py](sources/emitter_installed_certificate/certify_installed_emitter.py); 16136 bytes; SHA256 `950973354e69857ab19e40dbbf185ada46d1cda8a8a6c201c35fecf97a74623c`.
+
+Parses exact interval-certificate parameters and inherited matching/gap constants; hashes six frozen inputs through absolute historical snapshot paths; runtime self-source hash. Exact scalar inequalities and 16D algebra are distinct from twelve 90-digit physical diagnostics.
+
+Actual preserved [result](sources/emitter_installed_certificate/CERTIFICATE.json) and [execution receipt](sources/emitter_installed_certificate/run01_execution.json). 1 run; 2.5652289167046547 s wall; CPU 30 / wall 60 s; actual maximum matrix 24, declared envelope 48.
+
+No separate launcher source is present; the actual command is in the execution receipt. No launcher has been invented for this packet.
+
+Static non-self file reads inventoried: 7. The JSON closure gives every path, exact identity and proposed local canonical replacement.
+
+### Installed independent reviewer
+
+Program: [emitter_installed_review/check_installed.py](sources/emitter_installed_review/check_installed.py); 13328 bytes; SHA256 `92cff9237938a430c68aa36bbf4c5f952c8392ea3d01c5d0bcc736d1a9b7d680`.
+
+All toy matrices and independent conservative rational ceilings embedded in this checker; no author-output read, author import, physical momentum grid or source-manifest read inside the mathematical checker. Its surrounding review pins and inherited premises remain explicit proof/history inputs.
+
+Actual preserved [result](sources/emitter_installed_review/RESULTS.json) and [execution receipt](sources/emitter_installed_review/EXECUTION.json). 1 run; 0.8808858329430223 s wall; CPU 45 / wall 60 s; actual maximum matrix 14, declared cap 16.
+
+Launcher: [emitter_installed_review/run_check.py](sources/emitter_installed_review/run_check.py); 2746 bytes; SHA256 `d091d2bd5d77931a69635058ce5ba6be9208bbe5e831ff37532895e7ea0b75ec`.
+
+Static non-self file reads inventoried: 0. The JSON closure gives every path, exact identity and proposed local canonical replacement.
+
+### Weighted author
+
+Program: [weighted_emitter_escape_candidate/check_bounds.py](sources/weighted_emitter_escape_candidate/check_bounds.py); 3703 bytes; SHA256 `0be886d71839040982f0b372d39450a88166e1624b116a14d54442dc681490af`.
+
+Reads exact installed certificate constants; hashes four frozen proof/input snapshots. Fraction comparisons only; no matrices, search, quadrature or dynamics.
+
+Actual preserved [result](sources/weighted_emitter_escape_candidate/BOUNDS.json) and [execution receipt](sources/weighted_emitter_escape_candidate/EXECUTION.json). 1 run; 0.055157666094601154 s wall; CPU 5 / wall 10 s; matrix dimension 0.
+
+Launcher: [weighted_emitter_escape_candidate/run_check.py](sources/weighted_emitter_escape_candidate/run_check.py); 1431 bytes; SHA256 `7850555720d04de4c9b8f60ae44ccb323820963094f9f4caa85331e21c70eedb`.
+
+Static non-self file reads inventoried: 5. The JSON closure gives every path, exact identity and proposed local canonical replacement.
+
+### Weighted independent reviewer
+
+Program: [weighted_emitter_escape_review/check_weighted_escape.py](sources/weighted_emitter_escape_review/check_weighted_escape.py); 12933 bytes; SHA256 `1810b2042defa23bcfe5a32bed37f025ff41d75d7727cdeb3c2e3c620bdfcc8e`.
+
+Reads installed certificate parameters/constants and hashes its SOURCE_PINS snapshots. Independently derives symbolic integrals, a complete non-Hermitian 1+7 block inverse and coefficientwise weighted bounds. No author program imported; no installed physical inverse replay.
+
+Actual preserved [result](sources/weighted_emitter_escape_review/runs/attempt_1/RESULT.json) and [execution receipt](sources/weighted_emitter_escape_review/runs/attempt_1/EXECUTION.json). 1 run; 10.88888437487185 s wrapper wall (10.538953458890319 s child); CPU 45 / wall 60 s; maximum matrix and inverse 8.
+
+Launcher: [weighted_emitter_escape_review/run_check.py](sources/weighted_emitter_escape_review/run_check.py); 1783 bytes; SHA256 `97e2ae97cc753b9e36d2f5ed01851d86ee78af0f87dcc07ca53cb88d81c25423`.
+
+Static non-self file reads inventoried: 16. The JSON closure gives every path, exact identity and proposed local canonical replacement.
+
+## Context and preservation limits
+
+The pinned existing parent has 106,965 bytes and SHA256
+`332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac`.
+The current workflow has SHA256
+`71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3`;
+the conformance specification has SHA256
+`2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1`;
+the claim-status reference has SHA256
+`c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be`.
+They are drafting context, not new physical premises. The parent compatibility
+and current conformance entry points must be refreshed on the actual integration
+base. No Git identity was inferred or updated in this task.
+
+Historical Markdown snapshots retain their original relative/absolute links
+and metadata. Their `.md.txt` canonical destination map avoids making these
+historical links active in the future citation graph. Only the new wrapper and
+inventory links are rewritten at integration; source bytes remain unchanged.
+The standalone draft intentionally does not promise that every link inside an
+unchanged historical source resolves in its new research snapshot location.
+
+The exact frozen point/interval residual is inherited, not refitted. The
+separate reviewers used the same inherited model and effort with source
+exposure; the local and weighted reviewers had prior bridge/emitter exposure,
+and the installed reviewer authored earlier stationary ladder work. Program
+independence is the distinct mathematical construction described in the full
+reports, not a count of PASS strings. Root qualification resolves the weighted
+dependency on the installed source without rewriting the old reports.
+
+The source bundle includes the preparation inventory and literature notes
+because they are part of the immutable exploratory history. No new literature
+claim or preparation no-go is promoted, and no new network lookup was made.
+Calibration and structural-box scientific source trees are excluded. No new
+canonical result or runner cache exists in this packet.

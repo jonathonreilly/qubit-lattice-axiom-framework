@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/onset/mutated.py", line 618, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/onset/mutated.py", line 543, in main
+    report = run_family_author(inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/onset/mutated.py", line 443, in run_family_author
+    lt('infinite_complete_error',complete,F(1,250))
+    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/onset/mutated.py", line 98, in lt
+    assert left<right, (name,str(left),str(right))
+           ^^^^^^^^^^
+AssertionError: ('infinite_complete_error', '490405315138388379/781250000000000000', '1/250')

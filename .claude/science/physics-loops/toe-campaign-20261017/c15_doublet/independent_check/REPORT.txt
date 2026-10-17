@@ -1,0 +1,167 @@
+INDEPENDENT CHECK -- SPINFUL_MAJORANA_PER_DIRECTION_CUBIC_CODE_EMERGENT_FERMION_DOUBLET_..._2026-10-17
+Checker: fresh-context agent (Claude Opus 5.5, same model family as the author; NOT an
+independent model family). All code here was written from the definitions in the task
+before the runner was read; the runner was run and skimmed only at the end, to compare.
+
+Files (this directory):
+  mj.py               Majorana-monomial algebra (10 bits/site, exact phases), stabilizer group with signs
+  matter.py           2O on the matter pair, from definitions (quaternions -> SU(2) -> Fock U)
+  code_checks.py      items (1), (2), (5)                       -> code_checks.log
+  rot.py              link signed-permutation groups (the 128 consistent ones) and the full on-site action
+  pair_tests.py       item (4), DIRECT pair test in the 5-qubit model -> pair_tests_L6.log, pair_tests_L8.log
+  representatives.py  attack on (4)/(6): pair signs of different representatives of one anyon -> representatives.log
+  grouplaw_vacuum.py  combined group law, the faithful group, invariant vacuum -> grouplaw_vacuum.log
+  quotient_order.py   element-order census of the faithful group on D=+1 states
+  qubit_level.py      explicit 32x32 and 1024x1024 checks of the site-local JW encoding -> qubit_level.log
+
+Method for the direct pair test (item 4). V = (on-site link signed permutation) x (on-site
+matter U(u)) composed with the site permutation, applied by conjugating Majorana monomials.
+The non-Clifford matter part is expanded exactly as a linear map on chi_6..chi_9. Pair
+eigenvalue lambda = <A^dag (V A V^dag)> / <A^dag A> on the code space. Each monomial is reduced
+exactly: it either anticommutes with a generator (giving 0), or lies in the signed stabilizer
+group (giving +-1). A logical term would abort the run, and none occurred. Each state is also
+checked to be an eigenstate, |lambda| = 1; failures were 0.
+
+======================================================================================
+(1) CODE.  CONFIRMED.
+  L=4: 384 generators, 0 anticommuting pairs, 67 relations, all +1 (no -1), log2 dim 3.
+  L=6: 1296 generators, 0 anticommuting pairs, 219 relations, all +1, log2 dim 3.
+  Extra: on L=3 the code is also valid (no -1) with log2 dim 2. Odd L is not excluded.
+
+(2) MATTER EXCITATION.  CONFIRMED.
+  chi6(v) flips exactly {D_v, P_up,v}; chi8(v) flips exactly {D_v, P_dn,v}.
+  In the L_inf radius-2 ball (125 sites, all 1250 single Majoranas, F2 span) these patterns
+  are NOT locally creatable: P_up alone, D alone, and the 4-plaquette loop around an edge alone.
+  These ARE locally creatable: P_up+P_dn, P_up+D, 4W+D, 4W+P_up.
+  The up<->dn converter chi6 chi8 flips {P_up, P_dn} only, so up and dn are one anyon.
+  The hops chi6(v) u_e chi6(w) flip only P_up at the two ends.
+  The Levin-Wen T-junction (W_c W_b^-1 W_a W_c^-1 W_b W_a^-1, legs of length 2, L=6) gives -1
+  on all 20 triples.
+
+(3) SPIN ACTION ON THE MATTER PAIR.  CONFIRMED, with one wording correction.
+  The 48 lifts give an exact representation (0 failures in 48^2 products, no phase).
+  U(-1) = P_up P_dn. N and P_up P_dn are preserved, and so is P_up+P_dn; P_up alone is NOT.
+  U c_s^dag U^dag = sum_t c_t^dag D_ts exactly, and U S_b U^dag = sum_a R_ab S_a, with R the
+  same SO(3) image that permutes the sites. The vacuum |00> is invariant. All 18 C2 lifts
+  square to -1 on the doublet. The character is that of 1/2 + 0 + 0.
+  WORDING: the note says the action is "non-Clifford ... for the C3 elements". In fact only
+  the 8 elements of Q8 act as signed permutations of the matter Majoranas. All C3 and C4
+  lifts and all 12 EDGE-C2 lifts are non-Clifford.
+
+(4) THE CLASS CLAIM.
+  (4a) ARITHMETIC / COMPOSITION: CONFIRMED BY A DIRECT TEST in the full 5-qubit model.
+       The runner's "composition" PASS only multiplies two numbers, lambda_f * m^2. Its link
+       test runs in the 3-qubit companion code. The direct test here is new evidence.
+     - Link-only clean pair S_f (product of u_e along a path from x to Rx) in the 5-qubit
+       model: lambda_f = -1 for the axis and the edge C2. This holds for all 128 consistent
+       link groups, both lifts and 2 positions (L=6), and for 2 groups at L=8.
+     - Doublet pair c_e^dag(x) c_e^dag(Rx) S_f |vac> gives lambda = +1. This holds for all 9 C2,
+       both link lifts, both matter lifts (all 18 2O lifts), both eigenvectors e and 2 positions,
+       over 8 link groups at L=6 and 2 at L=8. It is the same with the operator order reversed.
+       m^2 = -1 throughout.
+     - Factorization is exact at the qubit level (qubit_level.py). D = B P_up P_dn, B = Z1Z2Z3,
+       and c_up = B (x) sigma_4. Even link bilinears act only on qubits 1-3 and even matter
+       bilinears only on qubits 4-5. Majoranas at different sites commute, so c^dag(x) and
+       c^dag(y) commute.
+       So Psi = [B_x B_Rx S_f |link vac>] (x) |e>_x |e>_Rx, and lambda = lambda_f m^2 holds
+       analytically.
+  (4b) IS IT A CONSISTENT O-ACTION?  Only on the code space and on the D=W=+1 sector.
+     - The combined group generated by the C4z and C3 lifts has order 96 for every one of the
+       128 link groups. It contains -1_L (all link Majoranas flipped), -1_M (all matter
+       Majoranas flipped) and their product.
+       Axis-C2 lifts square to -1_M. Edge-C2 lifts square to (-1_L)(-1_M).
+     - The product (-1_L)(-1_M) is conjugation by prod_v D_v, which is trivial on D=+1 states.
+       So on D=+1 states the faithful group is a double cover of O with central element
+       V(-1) = global matter parity. In it, axis-C2 lifts have order 4 and edge-C2 lifts have
+       order 2. The element-order census (1:1, 2:13, 3:8, 4:6, 6:8, 8:12) is that of GL(2,3).
+       So the group is neither O nor 2O.
+     - V(-1) = -1 on LOCAL states: on c_up^dag(x)|vac> (energy 2K+2mu) and on
+       c_up^dag(x) b_{x,+x}|vac> (D=+1 everywhere, P_up + 4W, energy 2mu+8J).
+       "U(-1) is a stabilizer, so O acts on the code space" is true but does not cover
+       excited states.
+  (4c) ATTACK -- THE PAIR SIGN IS NOT AN INVARIANT OF THE ANYON IN THIS MODEL.
+       Pair signs (axis C2, edge C2) from representatives.py:
+         same charge anyon at x and at Rx:
+           bare S_f                      (-,-)
+           doublet c c S_f               (+,+)   <- the note's case
+           flux-loop b b S_f             (-,+)
+           doublet+flux c c b b S_f      (+,-)
+         purely LOCAL, trivial-sector objects:
+           c^dag(x) c^dag(Rx)            (-,-)   = w2 itself, carried by a local excitation
+           b b                           (+,-)
+           (c^dag b)(c^dag b)            (-,+)
+       Local excitations carry projective O-classes that span all of H^2(O;Z2) = Z2^2. So
+       the same anyon gives all four values, and "eta = w2 on O" is not a fractionalization
+       invariant of the fermion in the full model.
+       The doublet's w2 is literally the class of the local operator c^dag (the matter qubits
+       4,5 are a tensor factor). The doublet is the spinless link fermion times a local spinor;
+       its spin-1/2 is not fractional.
+       The claim is internally consistent ONLY restricted to the D=+1, W=+1 sector. There
+       V(-1) = +1, every matter excitation is a doublet, and local excitations have integer
+       spin. This sector sits below roughly min(2K, 8J) per added defect.
+       The upstream note's "clean creators only" rule (its item 6) is in effect this sector
+       restriction. Its stated reason ("changes what the endpoints are") is not the mechanism.
+       The mechanism is that local dressings carry projective classes. The same caveat
+       applies to the upstream note, where b_{x,d}|vac> is local and carries (+,-).
+  VERDICT (4): the number (+1 for all 18 lifts) is correct and directly verified. The
+  inference "the doublet carries w2 on all of O" is valid only as a sector-restricted
+  statement (D=W=+1). It is not an anyon invariant. The note must state the restriction and
+  drop or qualify the "spin-statistics" reading.
+
+(5) LOWEST CHARGED EXCITATION.  PARTLY REFUTED: one more condition is needed.
+  The 4-plaquette flux loop around an edge is ALONE in the charge sector (F2 test above).
+  It is created by b_{x,d} times a charge string, at cost 8J. The charged-sector costs are
+  therefore 2mu (P flip, doublet), 2K (D flip) and 8J (flux loop, spinless). The doublet is
+  lowest iff mu < K AND mu < 4J; "K > mu" alone is not enough.
+  Exact up/dn degeneracy: confirmed (H contains P_up+P_dn, which is SU(2)-invariant).
+
+(6) INTERPRETATION / PRIOR ART.
+  - "1/2+0+0 as an on-site symmetry": it is a legitimate on-site unitary, but it is a linear
+    rep of 2O, not of O. With the link part, the faithful group on D=+1 states is a
+    GL(2,3)-type cover. Calling the result "the spin-1/2 class on O" needs the sector
+    restriction of (4c).
+  - "Spin-statistics" and "electron-like": these do not hold in the full model. Spinless
+    fermions exist (the bare charge at 2K and the flux loop at 8J), and so do local bosons
+    with 2pi = -1 (c^dag b at 2mu+8J). 2pi rotation equals matter parity, not exchange
+    statistics.
+  - Vacuum: a symmetric vacuum exists. With all Wilson loops +1 (or all -1), the stabilizer
+    state is invariant under all 24 rotations (L=4, L=6). It is NOT unique on the torus
+    (8-fold topological degeneracy). "Unique" holds only in the infinite or sphere sense.
+  - Citations:
+    * Nandkishore-Metlitski-Senthil, PRB 86, 045128 (2012), "Orthogonal metals":
+      correct; it is very close prior art in physics content (a Z2-charged spin-1/2 fermion
+      with the electron = fermion x Ising slave spin).
+    * Wu-Arovas-Hung, PRB 79, 134427 (2009), "Gamma-matrix generalization of the Kitaev
+      model": correct (decorated square, 3D diamond).
+    * Yao-Zhang-Kivelson, PRL 102, 217202 (2009), "Algebraic spin liquid in an exactly
+      solvable spin model": the reference exists (spin-3/2, square lattice, Gamma
+      matrices). The note's label "the SU(2)-invariant exactly solvable model" is likely
+      wrong. To my knowledge that model is time-reversal invariant, not SU(2) invariant.
+      Full-text access was blocked here, so this is UNVERIFIED. The SU(2)-invariant
+      exactly solvable Kitaev-type model with spinful Majoranas is Yao-Lee, arXiv:1010.3724
+      (PRL 107, 087205 (2011)); see also Lai-Motrunich, arXiv:1106.0028.
+      Suggest: cite Yao-Lee for SU(2) invariance and keep YZK as a Gamma-matrix example.
+    * Missing relevant prior art:
+      - Chen-Kapustin, 3D exact bosonization on the cubic lattice (emergent fermion in a
+        qubit model), PRB 100, 245127 (2019).
+      - Gazit et al., spinful fermions minimally coupled to Z2 gauge theory (Nat. Phys. 13,
+        484 (2017); PNAS 115, E6987 (2018)).
+      - Essin-Hermele, PRB 87, 104406 (2013), for why fractionalization classes need local
+        excitations to carry linear reps.
+  - Novelty: the exact finite checks and the cube-covariance bookkeeping are fine as stated.
+    "The class computation, which yields w2 on all of O" should be qualified per (4c).
+
+SUMMARY OF VERDICTS
+  (1) confirmed.  (2) confirmed.  (3) confirmed; Clifford wording too narrow.
+  (4) arithmetic and composition directly confirmed in the 5-qubit model (lambda = +1 for
+      all 18 C2 lifts; factorization exact).
+      Class interpretation: valid only in the D=W=+1 sector. Not an anyon invariant: local
+      excitations (c^dag, b, c^dag b) carry (-,-), (+,-), (-,+), and the charge anyon shows
+      all four pair signs.
+      The faithful symmetry group on D=+1 states is a GL(2,3)-type double cover with
+      V(-1) = matter parity, not O.
+  (5) needs mu < 4J in addition to mu < K (the flux loop is a spinless charge at 8J).
+  (6) symmetric vacuum exists but is not unique on the torus. "Spin-statistics" and
+      "electron-like" do not hold model-wide. The YZK "SU(2)-invariant" attribution is
+      likely wrong (unverified). Prior art is missing (Chen-Kapustin, Gazit et al.,
+      Essin-Hermele, Yao-Lee).

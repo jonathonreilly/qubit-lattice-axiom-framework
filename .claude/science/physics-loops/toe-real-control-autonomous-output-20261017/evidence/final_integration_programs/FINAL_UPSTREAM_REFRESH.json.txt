@@ -1,0 +1,132 @@
+{
+  "checked_utc": "2026-10-17T05:41:09.102351+00:00",
+  "main": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+  "instructions_unchanged_by_main_identity": {
+    "checked_utc": "2026-10-17T05:24:22.948932+00:00",
+    "main": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+    "instructions": [
+      {
+        "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+        "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+        "bytes": 11788,
+        "read_copy_matches_main": true
+      },
+      {
+        "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+        "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+        "bytes": 16941,
+        "read_copy_matches_main": true
+      },
+      {
+        "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+        "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+        "bytes": 2180,
+        "read_copy_matches_main": true
+      },
+      {
+        "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+        "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+        "bytes": 4975,
+        "read_copy_matches_main": true
+      },
+      {
+        "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+        "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+        "bytes": 34639,
+        "read_copy_matches_main": true
+      }
+    ],
+    "scope": "Current origin/main after actual fetch; source read copies compared byte-for-byte. No instructions installed or edited."
+  },
+  "open_prs": [
+    {
+      "baseRefName": "physics-loop/toe-emitter-coupling-family-20261017",
+      "headRefName": "physics-loop/toe-thermal-resonance-halt-20261017",
+      "headRefOid": "67108090f68ed9b2bc62eee23701b2d3d71dce4a",
+      "isDraft": false,
+      "number": 9666,
+      "title": "[physics-loop] toe-thermal-resonance-halt bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9666"
+    },
+    {
+      "baseRefName": "physics-loop/toe-product-seed-emitter-20261017",
+      "headRefName": "physics-loop/toe-emitter-coupling-family-20261017",
+      "headRefOid": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+      "isDraft": false,
+      "number": 9665,
+      "title": "[physics-loop] toe-emitter-coupling-family bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9665"
+    },
+    {
+      "baseRefName": "physics-loop/toe-two-body-autonomous-halt-20261017",
+      "headRefName": "physics-loop/toe-product-seed-emitter-20261017",
+      "headRefOid": "0f1022e03dbbed8085035f2a378be8ae1aca02e8",
+      "isDraft": false,
+      "number": 9664,
+      "title": "[physics-loop] toe-product-seed-emitter bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9664"
+    },
+    {
+      "baseRefName": "physics-loop/toe-two-body-autonomous-halt-20261017",
+      "headRefName": "physics-loop/toe-structural-coefficient-box-20261017",
+      "headRefOid": "cc06c0cc93d7c07dc726bb16556d6e68de24f204",
+      "isDraft": false,
+      "number": 9663,
+      "title": "[physics-loop] toe-structural-coefficient-box bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9663"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "claude/toe-campaign-12h-20261017-c2",
+      "headRefOid": "1a3546f6d63ba2728ff5010f1681a7c9df13bc10",
+      "isDraft": false,
+      "number": 9662,
+      "title": "C2\u2013C6: covariant stabilizer rules \u2014 no coherent soldered motion, bosons only; BKSF fermions need \u22654 copies",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9662"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/toe-two-body-autonomous-halt-20261017",
+      "headRefOid": "0e8375354c42963234cc4b15b14ab6bb553c713d",
+      "isDraft": false,
+      "number": 9661,
+      "title": "[physics-loop] toe-two-body-autonomous-reflection bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9661"
+    }
+  ],
+  "other_lane_delta": {
+    "pr": 9662,
+    "old": "aebf049cb2614b43daacbd644c41f958fc0508b8",
+    "new": "1a3546f6d63ba2728ff5010f1681a7c9df13bc10",
+    "compare": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/OTHER_PR_DELTA.json",
+      "bytes": 201903,
+      "sha256": "c7e691ca16cdc355f0986f725f359d125fc2e621d3a8306978f7d926b41efeed"
+    },
+    "paths": [
+      ".claude/science/physics-loops/toe-campaign-20261017/HANDOFF.md",
+      ".claude/science/physics-loops/toe-campaign-20261017/STATE.yaml",
+      ".claude/science/physics-loops/toe-campaign-20261017/c10_pair_coverage/README.md",
+      ".claude/science/physics-loops/toe-campaign-20261017/c10_pair_coverage/cover.py",
+      ".claude/science/physics-loops/toe-campaign-20261017/c10_pair_coverage/pairsym.py",
+      ".claude/science/physics-loops/toe-campaign-20261017/c10_pair_coverage/pairsym_covered.log",
+      ".claude/science/physics-loops/toe-campaign-20261017/c10_pair_coverage/pairsym_uncovered.log",
+      ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/README.md",
+      ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/halfedge.py",
+      ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/siteaction.py",
+      ".claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/cohomology_check.py",
+      ".claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/general_pair_axis_L10.py",
+      ".claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/general_pair_test.py",
+      ".claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/out_cohomology.txt",
+      ".claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/out_general_pair_L8.txt",
+      ".claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/out_general_pair_axis_L10.txt",
+      "docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py",
+      "scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py"
+    ],
+    "head_status": "Read-only observation, no science qualification or import.",
+    "root_read_scope": "Complete20-path inventory, both complete changed theorem-note patches and C10/C11 READMEs. No new pipeline/instruction/calculation dependency path overlaps. Other code/log bodies not independently reviewed and no science imported. C11 explicitly enlarges qubits per site and generator range; it does not close this runtime native-supply premise."
+  },
+  "editable_prompt_files_changed": []
+}

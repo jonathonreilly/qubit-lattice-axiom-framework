@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-10-17T04:36:41.797941+00:00",
+  "failed_attempt": "static_01",
+  "failure": "adapted_ast:resonance_author",
+  "cause": "Indenting ast.unparse output for the top multiline docstring inserted spaces into its actual string value.",
+  "correction": "Render each source top-level docstring with repr(value) before wrapping; all literal values now preserve source AST.",
+  "frozen_failure": "static_01 complete prelaunch/receipt/stdout/stderr and original static checker; historical_build_03 exact executed overlay",
+  "science_changed": false,
+  "scientific_runs": 0,
+  "authorized_recheck": "One static retry under unchanged CPU20/20 wall30; no science."
+}

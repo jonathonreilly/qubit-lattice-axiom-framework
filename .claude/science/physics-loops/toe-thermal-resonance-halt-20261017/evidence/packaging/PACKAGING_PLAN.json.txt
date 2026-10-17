@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-10-17T04:28:30.030932+00:00",
+  "scope": "Mechanical portable publication overlay only",
+  "owned_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_publication_draft",
+  "base_commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+  "no_scientific_execution": true,
+  "canonical_plan": {
+    "cpu_soft_hard_seconds": [
+      30,
+      30
+    ],
+    "external_wall_seconds": 45,
+    "max_dense_dimension": 4,
+    "root_owned_execution": true
+  },
+  "static_plan": {
+    "cpu_soft_hard_seconds": [
+      20,
+      20
+    ],
+    "external_wall_seconds": 30,
+    "scientific_functions_called": 0
+  },
+  "sources_pending_at_start": [
+    "root preparation qualification/corrections",
+    "preparation-resonance interface acceptance"
+  ],
+  "restrictions": [
+    "No W writes or Git mutations",
+    "No parent scientific import or replay",
+    "No model override/subdelegation",
+    "Frozen source bodies and failed-route evidence preserved"
+  ]
+}

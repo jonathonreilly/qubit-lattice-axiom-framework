@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/three_axis_qubit_symmetric_stabilizer_rules_fermion_search_2026_10_17.py
+runner_sha256: e8f8ea993c37eff841cd71a5995ab252207d0e286aa8b9b85c56195780cf60f5
+input_fingerprint_sha256: 63cffda4aee3a904eaa48853d7de3ac70ffb7049733808a2b6905f5a2e7a55ab
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 136.68
+status: ok
+----- stdout -----
+PASS statistics tool (tube-confined legs): 2D toric code e and m are bosons (+1) and e x m is a fermion (-1)
+PASS alphabet lemma, finite part: each alphabet used is abelian, is its own single-site commutant, and the complement of every proper subgroup generates it
+PASS soldered: all 34927 loaded strings are fixed by a C2 (axis or edge), C4 or C3 rotation and commute with every translate of every rotated image
+PASS soldered: recomputed from scratch, the C4-, C3- and edge-C2-fixed survivors are all in the loaded set (axis-C2 completeness needs --full)
+PASS soldered: 4319 sign-consistent orbits, of which 4259 use only the alphabet <X_x, Y_y, Z_z>
+soldered: maximal sets containing an outsider (size, (L4 dim, bad), (L6 dim, bad)): [(3, (48, 0), (72, 0)), (3, (48, 0), (72, 0)), (3, (48, 0), (72, 0)), (3, (48, 0), (72, 0)), (3, (48, 0), (72, 0)), (3, (48, 0), (72, 0)), (3, (48, 0), (72, 0)), (3, (48, 0), (72, 0)), (43, (32, 8176), (48, 32404)), (47, (32, 2560), (48, 8640))]
+PASS soldered: the ten maximal sets containing a non-alphabet orbit are eight valid 3-orbit sets (dims 48, 72) and two of 43 and 47 orbits that contain -1 (3L^3 - rank 32, 48)
+PASS soldered: full-union polynomial ranks give odd-L unbounded-dimension proof, independently of finite L4/L6 values
+unsoldered: 36 bounded rules; mobile same-site charge patterns per rule: [1]
+PASS unsoldered: all 36 bounded maximal rules are valid with log2 code dimension 24 at L = 4 and L = 6
+PASS unsoldered: in every one, each same-site charge pattern movable along tube-confined legs to 4e_x, 4e_y, 4e_z is a boson (no fermion found)
+per_element: soldered survivor set re-verified element by element; axis-C2 completeness only with --full
+per_site: three axis-labelled qubits per site; no dynamics
+per_mode: exact Laurent momentum-rank specializations checked for the odd-L dimension bound; no spectral dispersion or energy dynamics computed
+per_block: checked and not executed — no coarse-grained block dynamics is tested
+lattice_wide: tori L = 4, 6; statistics on an open box R = 5 with tube-confined legs
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

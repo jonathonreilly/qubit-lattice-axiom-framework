@@ -1,0 +1,86 @@
+{
+  "frozen_utc": "2026-10-17T03:17:52.015596+00:00",
+  "status": "Completed selective source-exposed review; no retained audit outcome.",
+  "report": {
+    "path": "REPORT.md",
+    "bytes": 35719,
+    "sha256": "053e40728f0336c3a5b5409f8c3ba96bd4d8acb96bf0a57192483a28f4099d3a"
+  },
+  "summary": {
+    "path": "REVIEW_SUMMARY.json",
+    "bytes": 3431,
+    "sha256": "b5c9b0722ff9f5a4440418aab0dadf87bce8767d1f976642a67782a821201e11"
+  },
+  "file_manifest": {
+    "path": "FILE_MANIFEST.json",
+    "bytes": 14708,
+    "sha256": "9dc0f4c57989e08628fb1ff1dc3aba76febb4e7a27cdf0cfa41b3744ec1b249d"
+  },
+  "candidate": {
+    "path": "author_sources/CANDIDATE.md",
+    "bytes": 39464,
+    "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+  },
+  "candidate_freeze": {
+    "path": "author_sources/FREEZE.json",
+    "bytes": 1418,
+    "sha256": "ed250a089a13e033c81fe98fb1cd1736e2db8639793b90087226307e3874ce98"
+  },
+  "final_binding_check": {
+    "path": "FINAL_BINDING_CHECK.json",
+    "bytes": 1196,
+    "sha256": "82e4e3d7cfbf99e41c8776bbb5bab3ad8f9eacb5c943ed626801fefaa2920bde"
+  },
+  "initial_reasoning_freeze": {
+    "path": "INITIAL_REASONING_FREEZE.json",
+    "bytes": 756,
+    "sha256": "ca6f274b32e8ad3174ef26313582575d6ab2e0d3d99dd5b29c111221ff3fe210"
+  },
+  "stage1_freeze": {
+    "path": "STAGE1_FREEZE.json",
+    "bytes": 4487,
+    "sha256": "ce86e11afcab82c4db4714cb2f3c52a12231944ad270c6e83d966a281bbf1c59"
+  },
+  "reviewer_programs": [
+    {
+      "path": "check_reference_mass.py",
+      "bytes": 6766,
+      "sha256": "2272f1dee9d40348cacfaf85ceaa4738ca70006da2e9cea92e8ff1fd1b8b7d6a"
+    },
+    {
+      "path": "check_family_delta.py",
+      "bytes": 10866,
+      "sha256": "da6a10d31daabbe43f2c8e760f30b0654feb9739576e4ef913b926c4210409b1"
+    }
+  ],
+  "reviewer_receipts": [
+    {
+      "path": "stage1_run01/RECEIPT.json",
+      "bytes": 3060,
+      "sha256": "2ef694eb9d5ed15650ef80ff41bf21cb005d7b82f5125a6600d53e75c4b7287d"
+    },
+    {
+      "path": "stage2_run01/RECEIPT.json",
+      "bytes": 7974,
+      "sha256": "b4a112510143b9adb51f53102a4e0c9b69cddf35a97d9b3a4c28ee8edb67493b"
+    }
+  ],
+  "reviewer_outputs": [
+    {
+      "path": "stage1_run01/stdout.json",
+      "bytes": 6406,
+      "sha256": "8b06ff48bd3a87f98ccfd96a01b5d4a87a8af9aeb56fe1e870cbfeea23e6d598"
+    },
+    {
+      "path": "stage2_run01/stdout.json",
+      "bytes": 9592,
+      "sha256": "9dcd54dab486d2889da865ed6f117f98aa5e27e0e84690ae21be0fd65c6c5b45"
+    }
+  ],
+  "scientific_runs": 2,
+  "scientific_failures": 0,
+  "member_count_excluding_root_manifest_and_freeze": 85,
+  "disposition": "Conditional exact-ladder coupling-family claim supported; no source correction required.",
+  "limitations": "Same model/effort; substantial prior dependency authorship/review. Initial family reasoning predates new author exposure; stage two is source-exposed. No blind full-dependency or model-diverse claim.",
+  "next_decision": "Parent may assess this bounded review; no further task or publication started."
+}

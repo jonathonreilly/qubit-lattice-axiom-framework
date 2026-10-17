@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/outgoing_moment/mutated.py", line 618, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/outgoing_moment/mutated.py", line 543, in main
+    report = run_family_author(inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/outgoing_moment/mutated.py", line 427, in run_family_author
+    lt('actual_f_rho_L2_derivative_scaled',frho2_scaled,F(3,10))
+    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/outgoing_moment/mutated.py", line 98, in lt
+    assert left<right, (name,str(left),str(right))
+           ^^^^^^^^^^
+AssertionError: ('actual_f_rho_L2_derivative_scaled', '64152000050002639/50000000000000000', '3/10')

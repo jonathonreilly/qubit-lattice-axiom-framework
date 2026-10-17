@@ -1,0 +1,12 @@
+# Static fixture correction after attempt 01
+
+Attempt 01 failed at the realifier adapted-AST pin, before inert import or
+resolver fixtures. The draft canonical bytes were not changed. The static
+checker incorrectly dropped the function's first statement on the assumption
+that it was an added adapter docstring. It is the exact original module
+statement. The corrected checker includes the whole function body and handles
+explicitly replaced statements whose ledger destination is null. This repairs
+the inspection code, not the mathematics or transport.
+
+Full failed source, prelaunch, stdout, stderr and receipt remain in static_01.
+Attempt 02 receives its own source/input/runtime prelaunch capture.

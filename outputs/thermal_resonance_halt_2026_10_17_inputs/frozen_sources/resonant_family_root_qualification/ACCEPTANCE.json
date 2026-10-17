@@ -1,0 +1,113 @@
+{
+  "qualified_utc": "2026-10-17T04:18:19.653976+00:00",
+  "status": "Exact conditional resonance-family theorem qualified for coherent publication; not retained audit or canonical execution.",
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_candidate/CANDIDATE.md",
+    "bytes": 37370,
+    "sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0"
+  },
+  "author_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_candidate/FREEZE.json",
+    "bytes": 1806,
+    "sha256": "8cdf10121e4c42247d4aba730a48413817a62b9ada420adfc6bc70df7df64879"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/REPORT.md",
+    "bytes": 32461,
+    "sha256": "70eaca751449653eb33255a8b6c0509cde2d4f69de14d39d353c5b96b838c172"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/FREEZE.json",
+    "bytes": 2689,
+    "sha256": "6ead24431690a1b62f549d1adca9d7250ac92231cb0103cfe6953dee56be17b7"
+  },
+  "independent_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/INDEPENDENT_DERIVATION.md",
+    "bytes": 16477,
+    "sha256": "8ded59142de426e65f32ffb0c245d0d5c0bff3334fb293c932744dbef1f231f1"
+  },
+  "independent_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/INDEPENDENT_FREEZE.json",
+    "bytes": 6470,
+    "sha256": "aaaeb80e889b8d6de92af607a0d7d912d9d8e4c36b98480d451e54dc251ac1ad"
+  },
+  "author_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_candidate/run01/RECEIPT.json",
+    "bytes": 19800,
+    "sha256": "0ead3f309bd1b6952228cd74d389c02c12225736f90ea79f1b23b02b6f69db79"
+  },
+  "reviewer_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/run01/RECEIPT.json",
+    "bytes": 8247,
+    "sha256": "19f2877bb8bc53c0bdd3d5e9f301a62fd6e73bd6b55276360897008e4a3ffa49"
+  },
+  "reviewer_output": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/run01/stdout.json",
+    "bytes": 12515,
+    "sha256": "439649efffe03f48925b99c4a50c5fe7f23a1777edc30fbfededb8fd232d1b01"
+  },
+  "full_packet_files_verified": {
+    "resonant_family_candidate": 41,
+    "resonant_family_review": 90
+  },
+  "source_pairs_verified": {
+    "initial": 24,
+    "author_capture": 41,
+    "author_upstream": 21
+  },
+  "independent_frozen_members_verified": 39,
+  "author_prelaunch_bindings_verified": 33,
+  "reviewer_prelaunch_bindings_verified": 35,
+  "root_scientific_replays": 0,
+  "root_read": "Complete new candidate and author code/launcher/output previously read; complete 32461-byte review,16477-byte separate derivation,result note,independent code/launcher/plan and full structured stdout now read. Binding arrays checked in full mechanically; no truncated metadata display counted as complete verification.",
+  "mathematical_judgment": [
+    "Stieltjes integration by parts includes both outer endpoint atoms; finite lower rectangles retain edge time decay, with finite-sum/Minkowski justification at the non-l2 top corner.",
+    "Opposite incoming/outgoing poles and clockwise density residue have correct signs; exact cosine evolution remains, with no installed-matrix continuation.",
+    "The scalar incoming estimate and full real-band Cg/Kloc derivative split pay every localized coordinate and closed tail; within-parity factors are retained.",
+    "Actual f_kappa rho_kappa, restricted normalization, seed discrepancy including point spectrum, common physical scalar and literal old aging remain.",
+    "Every variable-time majorant decreases after kappa^-2, every worst-case kappa power is monotone, and the graph distance M-13 plus radius19 justify only the specified finite horizon."
+  ],
+  "scope": {
+    "kappa": "[1e-12,1e-8]",
+    "sigma": "1e-6",
+    "L": 12,
+    "T": "1/kappa^2",
+    "infinite_complete_error_strict_upper": "0.003832",
+    "M": "ceil(50/kappa^2)",
+    "finite_complete_error_strict_upper": "0.004832",
+    "finite_horizon": "[T,2T]",
+    "upper_coupling_T": "1e16",
+    "upper_coupling_clock_sites": "5e17",
+    "upper_coupling_qubits": "500000000000000005"
+  },
+  "actual_execution": {
+    "author_seconds": 0.08568883407860994,
+    "reviewer_seconds": 0.665611166972667,
+    "author_cpu_caps": [
+      20,
+      21
+    ],
+    "reviewer_cpu_caps": [
+      30,
+      30
+    ],
+    "author_wall_cap": 30,
+    "reviewer_wall_cap": 45,
+    "scientific_failures": 0
+  },
+  "preserved_failures": [
+    "Fixed cutoff .0016 and absolute clock .00153 fail sufficient budgets at larger coupling; they are not lower bounds.",
+    "Using directional norm for the scalar Cg coefficient gives .001395 and fails.",
+    "Wrong reciprocal leaves -2i; missing endpoint jumps fails the constant interval test; aligned columns require the parity factor.",
+    "Affine-time phase allowance grows without bound."
+  ],
+  "limits": [
+    "Candidate-exposed same-model separate analysis/run preceded author executable/output exposure; inherited authorship and root unproved route suggestions remain.",
+    "Source mass/matching/moment/physical interfaces are selectively reused, not a blind whole-dependency review.",
+    "Both runs used genuine fsynced prelaunch bindings, with partial runtime closures, no measured thread count or OS memory cap.",
+    "Final author prose was frozen after its scalar run; theorem bytes were not prelaunch-bound to that run.",
+    "No grid, dynamics, actual exact exponential decay, optimal onset, arbitrary accuracy, joint calibration extension, native supply, finite all-future permanence, reset/reuse or physical Hamiltonian/Record identification."
+  ],
+  "next_decision": "Package a coherent setup/runtime milestone only after the separate preparation result and any composition are checked; no duplicate PR9665.",
+  "editable_prompt_files_changed": []
+}

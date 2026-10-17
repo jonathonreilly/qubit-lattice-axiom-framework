@@ -1,0 +1,26 @@
+{
+  "name": "finite_clock_horizon_overextension",
+  "source_role": "independent",
+  "started_utc": "2026-10-17T01:33:56.957103+00:00",
+  "elapsed_seconds": 0.21621845802292228,
+  "exit_code": 1,
+  "timed_out": false,
+  "cpu_cap_seconds": 60,
+  "external_wall_cap_seconds": 20,
+  "old": "T, N, M, Tobs = 10**13, 22*10**12, 9*10**14, 4*10**13",
+  "new": "T, N, M, Tobs = 10**13, 22*10**12, 9*10**14, 5*10**13",
+  "expected_scientific_assertion": "finite_clock_chebyshev_exponent_margin",
+  "scientific_assertion_rejected": true,
+  "source": {
+    "bytes": 16413,
+    "sha256": "ef52f2173a73f81baf9dadf16723a79498db3845ca607b401cbad921730d702f"
+  },
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 1660,
+    "sha256": "2d23b677b1d73b397ce350ac21e507e5bbf6f675949dfd610e7fd9e649ab2239"
+  }
+}

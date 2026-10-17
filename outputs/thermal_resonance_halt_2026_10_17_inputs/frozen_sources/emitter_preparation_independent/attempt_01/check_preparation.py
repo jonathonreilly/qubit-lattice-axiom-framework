@@ -1,0 +1,208 @@
+"""Bounded author corroboration of a finite thermal preparation handoff.
+
+No runtime dynamics, parent checker replay, grid, quadrature or optimizer.
+Dense matrices are at most four by four. Whole-device identities use sparse
+Pauli coefficients and seed columns; diagnostic lengths are not a proof of
+arbitrary-length uniformity, which is term-by-term in CANDIDATE.md.
+"""
+from pathlib import Path
+import hashlib,json,platform,resource,time
+from fractions import Fraction as F
+import sympy as sp
+
+START=time.monotonic()
+A=Path(__file__).resolve().parent
+pre=json.loads((A/'PRELAUNCH.json').read_text())
+for row in pre['bindings']:
+    assert hashlib.sha256(Path(row['path']).read_bytes()).hexdigest()==row['sha256']
+assert resource.getrlimit(resource.RLIMIT_CPU)==(20,20)
+D=A.parent
+data=json.loads((D/'inputs/parameters.json').read_text())
+p={key:sp.Rational(value) for key,value in data['exact_parameters'].items()}
+J=p['J']; h=p['t']; u0=p['u']; nu=-p['mu1']; E0=p['epsilon']
+kap=sp.Symbol('kap',positive=True); lo=sp.Rational(1,10**12); hi=sp.Rational(1,10**8)
+gap=sp.Rational(13); L=12
+z0=p['cos_k']+sp.I*p['sin_k']; phase=sp.expand(z0*z0)
+I=sp.eye(2); X=sp.Matrix([[0,1],[1,0]]); Y=sp.Matrix([[0,-sp.I],[sp.I,0]]); Z=sp.diag(1,-1)
+n=sp.diag(0,1); a=sp.Matrix([[0,1],[0,0]]); I4=sp.eye(4)
+kron=sp.kronecker_product
+hop=kron(a,a.H)+kron(a.H,a)
+number_pair=kron(n,I)+kron(I,n)
+K=2*I4+kron(Z,Z)
+W=((9+12*sp.I)*I4+(-16+12*sp.I)*kron(X,X))/25
+checks=[]
+def zero(name,value):
+    if isinstance(value,sp.MatrixBase):
+        good=all(sp.simplify(v)==0 for v in value)
+    else:good=sp.simplify(value)==0
+    assert good,(name,value)
+    checks.append({'name':name,'exact_zero':True})
+def lt(name,left,right):
+    assert left<right,(name,str(left),str(right))
+    checks.append({'name':name,'left':str(left),'relation':'<','right':str(right)})
+zero('center_phase_unit_modulus',sp.expand(phase*sp.conjugate(phase)-1))
+zero('literal_W_commutes_with_K',W*K-K*W)
+zero('literal_W_unitary',W.H*W-I4)
+lt('runtime_emitter_onsite_positive',2*hi,E0)
+
+def qedge(t,sign=1):
+    return kap*number_pair+sign*(t*kron(a,a.H)+sp.conjugate(t)*kron(a.H,a))
+
+# Exact full pair characteristic polynomials, including the |11> sector.
+lam=sp.Symbol('lam')
+for label,t in [('L',kap),('Lplus2',-kap*phase)]:
+    for sign in [1,-1]:
+        mat=qedge(t,sign)
+        zero('emitter_pair_charpoly_'+label+'_'+str(sign),mat.charpoly(lam).as_expr()-lam**2*(lam-2*kap)**2)
+        zero('emitter_pair_11_'+label+'_'+str(sign),mat[3,3]-2*kap)
+zero('clock_counter_pair',((number_pair-hop)+(number_pair+hop))-2*number_pair)
+zero('source_density_complement',kron(n,n)+(I4-kron(n,n))-I4)
+zero('conditional_flip_complement',kron(n,I+X)+kron(n,I-X)-2*kron(n,I))
+
+paulis=[I,X,Y,Z]; chars=['I','X','Y','Z']; expansion_cache={}
+def expansion(mat):
+    key=sp.ImmutableMatrix(mat)
+    if key in expansion_cache:return expansion_cache[key]
+    size=1 if mat.rows==2 else 2
+    ans=[]
+    if size==1:
+        for q in range(4):
+            c=sp.expand(sp.trace(paulis[q]*mat)/2)
+            if c!=0:ans.append(((chars[q],),c))
+    else:
+        for q in range(4):
+            for r in range(4):
+                c=sp.expand(sp.trace(kron(paulis[q],paulis[r])*mat)/4)
+                if c!=0:ans.append(((chars[q],chars[r]),c))
+    expansion_cache[key]=ans
+    return ans
+def operator(blocks):
+    ans={}
+    for label,sites,mat,norm in blocks:
+        for word,c in expansion(mat):
+            key=tuple(sorted((site,ch) for site,ch in zip(sites,word) if ch!='I'))
+            ans[key]=sp.expand(ans.get(key,0)+c)
+    return {key:val for key,val in ans.items() if val!=0}
+def plus(*ops):
+    ans={}
+    for factor,op in ops:
+        for key,val in op.items():ans[key]=sp.expand(ans.get(key,0)+factor*val)
+    return {key:val for key,val in ans.items() if val!=0}
+def apply_seed(op,M):
+    emitter=4+M; initial=1<<emitter; result={}
+    for word,c in op.items():
+        bits=initial; scalar=c; old=[I,I]
+        for site,ch in word:
+            if site<2:old[site]=paulis[chars.index(ch)];continue
+            occupied=(bits>>site)&1
+            if ch=='X':bits^=1<<site
+            elif ch=='Y':scalar*=sp.I*(1-2*occupied);bits^=1<<site
+            elif ch=='Z':scalar*=1-2*occupied
+        result[bits]=result.get(bits,sp.zeros(4))+scalar*kron(*old)
+    return {key:sp.simplify(mat) for key,mat in result.items() if mat!=sp.zeros(4)}
+
+diagnostics=[]; first_loads=None
+for M in [16,20]:
+    O1,O2,SA,SB=0,1,2,3; clock=lambda j:4+j; emitter=4+M
+    runtime=[]; controls=[]
+    def add(where,label,sites,mat,norm):where.append((label,tuple(sites),mat,norm))
+    add(runtime,'literal_K',(O1,O2),K,sp.Integer(3))
+    for source,label,delta,g,old in [(SA,'A',p['DeltaA'],p['gA'],O1),(SB,'B',p['DeltaB'],p['gB'],O2)]:
+        add(runtime,'penalty_'+label,(source,),delta*n,delta)
+        add(runtime,'old_source_'+label,(source,old),g*kron(n,I+X),2*g)
+        add(controls,'counter_old_source_'+label,(source,old),g*kron(n,I-X),2*g)
+    add(runtime,'source_hop',(SA,SB),h*(number_pair-hop),2*h)
+    add(controls,'counter_source_hop',(SA,SB),h*(number_pair+hop),2*h)
+    add(runtime,'source_density',(SA,SB),u0*kron(n,n),u0)
+    add(controls,'counter_source_density',(SA,SB),u0*(I4-kron(n,n)),u0)
+    for j in range(M-1):
+        add(runtime,'clock_'+str(j),(clock(j),clock(j+1)),J*(number_pair-hop),2*J)
+        add(controls,'counter_clock_'+str(j),(clock(j),clock(j+1)),J*(number_pair+hop),2*J)
+    for j in [0,M-1]:add(runtime,'clock_endpoint_'+str(j),(clock(j),),J*n,J)
+    for j,source,lam0,label in [(0,SA,p['lambdaA'],'A'),(1,SB,p['lambdaB'],'B')]:
+        add(runtime,'contact_'+label,(clock(j),source),lam0*kron(n,I+X),2*lam0)
+        add(controls,'counter_contact_'+label,(clock(j),source),lam0*kron(n,I-X),2*lam0)
+    add(runtime,'mu0',(clock(0),),p['mu0']*n,p['mu0'])
+    add(runtime,'nu_vacancy',(clock(1),),nu*(I-n),nu)
+    for j,t in [(L,kap),(L+2,-kap*phase)]:
+        add(runtime,'emitter_edge_'+str(j),(emitter,clock(j)),qedge(t),2*kap)
+        add(controls,'counter_emitter_edge_'+str(j),(emitter,clock(j)),qedge(t,-1),2*kap)
+        add(runtime,'emitter_attachment_vacancy_'+str(j),(clock(j),),kap*(I-n),kap)
+    add(runtime,'emitter_onsite',(emitter,),(E0-2*kap)*n,E0-2*kap)
+    d={SA:p['DeltaA']+2*h+2*p['gA'],SB:p['DeltaB']+2*h+2*p['gB'],emitter:E0+2*kap}
+    for j in range(M):
+        d[clock(j)]=4*J-J*int(j in [0,M-1])+(2*p['lambdaA']+p['mu0'])*int(j==0)+(2*p['lambdaB']-nu)*int(j==1)+kap*int(j in [L,L+2])
+    for site in [SA,SB]+[clock(j) for j in range(M)]:
+        coeff=gap-d[site]
+        lt('onsite_pin_positive_M'+str(M)+'_site'+str(site),0,coeff.subs(kap,hi))
+        add(controls,'pin_'+str(site),(site,),coeff*n,coeff)
+    add(controls,'emitter_vacancy_pin',(emitter,),(gap+d[emitter])*(I-n),gap+d[emitter])
+    run=operator(runtime); ctrl=operator(controls)
+    cphys=nu+2*kap; cseed=cphys+E0; rseed=u0+2*kap; cprep=cseed+rseed
+    expected_blocks=[('K',(O1,O2),K,3),('cprep',(O1,),cprep*I,cprep)]
+    for site in [SA,SB]+[clock(j) for j in range(M)]:expected_blocks.append(('defect',(site,),gap*n,gap))
+    expected_blocks.append(('emitter_defect',(emitter,),gap*(I-n),gap))
+    defect=plus((1,run),(1,ctrl),(-1,operator(expected_blocks)))
+    assert not defect,defect
+    checks.append({'name':'full_Pauli_cancellation_M'+str(M),'nonzero_residual_words':0,'symbolic_kappa':True})
+    images=apply_seed(run,M); same=1<<emitter
+    zero('runtime_seed_diagonal_M'+str(M),images[same]-K-cseed*I4)
+    gram=sp.zeros(4)
+    for bits,mat in images.items():
+        if bits!=same:gram+=mat.H*mat
+    zero('runtime_seed_residual_Gram_M'+str(M),gram-2*kap**2*I4)
+    ci=apply_seed(ctrl,M)
+    zero('control_seed_diagonal_M'+str(M),ci[same]-rseed*I4)
+    for bits,mat in images.items():
+        if bits!=same:zero('control_seed_counter_M'+str(M)+'_'+str(bits),ci[bits]+mat)
+    arun=2+(p['DeltaA']+p['DeltaB']+p['gA']+p['gB']+p['lambdaA']+p['lambdaB']+p['mu0']+nu+E0)/2+h+u0/4+J*M+2*kap
+    apre=2+cprep+gap*(M+3)/2
+    zero('full_runtime_identity_coefficient_M'+str(M),run[()]-arun)
+    zero('full_preparation_identity_coefficient_M'+str(M),run[()]+ctrl[()]-apre)
+    loads={site:{'runtime':0,'control':0} for site in range(M+5)}
+    for which,blocks in [('runtime',runtime),('control',controls)]:
+        for label,sites,mat,norm in blocks:
+            if label=='literal_K':continue
+            for site in sites:loads[site][which]+=norm
+    roles={'old1':O1,'old2':O2,'source_A':SA,'source_B':SB,'c0':clock(0),'c1':clock(1),'ordinary_clock':clock(2),'attachment_L':clock(L),'attachment_Lplus2':clock(L+2),'far_end':clock(M-1),'emitter':emitter}
+    formatted={}
+    for role,site in roles.items():
+        ll=loads[site]; rr=sp.expand(ll['runtime']); cc=sp.expand(ll['control']); tt=sp.expand(rr+cc)
+        lt('control_incident_below19_M'+str(M)+'_'+role,cc.subs(kap,hi),19)
+        lt('combined_added_incident_below40_M'+str(M)+'_'+role,tt.subs(kap,hi),40)
+        formatted[role]={'runtime':str(rr),'new_controls':str(cc),'combined_during_preparation':str(tt),'new_controls_at_kmax':str(cc.subs(kap,hi)),'combined_at_kmax':str(tt.subs(kap,hi)),'combined_display_only':float(tt.subs(kap,hi))}
+    assert len(controls)==2*M+10
+    assert sum(len(b[1])==2 for b in controls)==M+7
+    assert len({tuple(sorted(b[1])) for b in controls if len(b[1])==2})==M+6
+    if first_loads is None:first_loads=formatted
+    else:assert first_loads==formatted
+    # All pair/onsite blocks checked on their actual entire local spaces.
+    for label,sites,mat,norm in runtime+controls:
+        actual=mat.subs(kap,hi)
+        for ev in actual.eigenvals():assert ev>=0,(label,ev)
+        assert max(actual.eigenvals())==norm.subs(kap,hi) if hasattr(norm,'subs') else max(actual.eigenvals())==norm
+    diagnostics.append({'clock_sites':M,'quantum_qubits':M+5,'global_Hilbert_dimension_not_allocated':2**(M+5),'maximum_dense_dimension':4,'runtime_Pauli_words':len(run),'control_Pauli_words':len(ctrl),'new_control_blocks':len(controls),'new_two_body_blocks':M+7,'new_control_edges':M+6,'new_onsite_blocks':M+3,'full_space_cancellation_residual_words':0,'seed_residual_gram':'2*kappa^2 I_old'})
+
+x=sp.Symbol('x',real=True); s=1-3*x*x+2*x*x*x
+zero('cubic_half_area',sp.integrate(s,(x,0,1))-sp.Rational(1,2))
+zero('cubic_endpoint0',s.subs(x,0)-1);zero('cubic_endpoint1',s.subs(x,1))
+zero('cubic_derivative',sp.diff(s,x)+6*x*(1-x))
+zero('cubic_slope_maximum',-sp.diff(s,x).subs(x,sp.Rational(1,2))-sp.Rational(3,2))
+thermal=F(10**32)*F(3,8)**130
+assert thermal<F(1,10**22)
+runtime_bound=F(3735315138388379,781250000000000000)
+assert str(runtime_bound) in (D/'inputs/family.md').read_text()
+complete=2*runtime_bound+2*F(1,10**8)+F(3,10**11)
+assert complete<F(1,100)
+assert runtime_bound+F(1,10**8)<F(1,200)
+checks.append({'name':'uniform_thermal_bad_probability','left':str(thermal),'relation':'<','right':'1/10000000000000000000000','method':'N<10^32 and exp(1)>8/3, beta*G=130'})
+checks.append({'name':'complete_correlated_input_trace_budget','left':str(complete),'relation':'<','right':'1/100'})
+report={'status':'Author algebraic corroboration passed; analytical preparation theorem needs separate review',
+ 'sources':{'commit':'0e3993770a7a2dd872018f9dd3c76c2d9a624db9','family_sha256':'f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87'},
+ 'parameters':{'kappa_min':str(lo),'kappa_max':str(hi),'G':str(gap),'beta':10,'hold_duration':1,'release_duration':1,'exact_runtime_parameters':{k:str(v) for k,v in p.items()}},
+ 'diagnostics':diagnostics,'loads':first_loads,'checks':checks,
+ 'budgets':{'uniform_thermal_bad_probability_upper':str(thermal),'simple_thermal_bad_upper':'1/10^22','correlated_joint_initial_trace_upper':'3/10^11','release_isometry_exact':'kappa/sqrt(2)','release_isometry_upper':'1/10^8','inherited_finite_isometry_upper':str(runtime_bound),'complete_correlated_trace_upper':str(complete),'complete_correlated_trace_display_only':float(complete),'coarse_complete_trace_bound':'1/100'},
+ 'scalar_formulas':{'physical_runtime':'nu+2*kappa','runtime_seed':'nu+2*kappa+E0','control_on_seed':'u+2*kappa','preparation_seed':'nu+E0+u+4*kappa','whole_output_phase_for_hold_h_release_tau':'(nu+E0+u+4*kappa)*h+(nu+2*kappa+E0)*tau+(u+2*kappa)*tau/2+(nu+2*kappa)*t'},
+ 'actual_resources':{'python':platform.python_version(),'sympy':sp.__version__,'cpu_soft_hard_seconds':list(resource.getrlimit(resource.RLIMIT_CPU)),'external_wall_seconds':30,'maximum_dense_matrix_dimension':4,'diagnostic_clock_lengths':[16,20],'parameter_grid_points':0,'quadrature_calls':0,'optimizer_calls':0,'time_evolution_calls':0,'program_wall_seconds':time.monotonic()-START},
+ 'limits':'Local PSD checks use the upper-endpoint exact rational coefficients; the written positive-block proof supplies uniform positivity. Finite lengths corroborate endpoint bookkeeping, not an all-length theorem. No full apparatus Hilbert matrix is allocated and no time evolution, thermalization, native control or independent theorem review is executed.'}
+print(json.dumps(report,indent=2))

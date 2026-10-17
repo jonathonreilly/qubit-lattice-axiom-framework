@@ -1,0 +1,53 @@
+{
+  "started_before_Popen_utc": "2026-10-17T05:33:40.866226+00:00",
+  "completed_utc": "2026-10-17T05:33:41.125599+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-I",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_publication_draft/static_02/executed_source.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_publication_draft/static_02"
+  ],
+  "returncode": 0,
+  "timeout": false,
+  "elapsed_wall_seconds": 0.25939191691577435,
+  "prelaunch_identity_captured_before_Popen": {
+    "bytes": 45901,
+    "sha256": "6fa0c066d84404cc7aae903aa68951f3b7732309491e9f00ae70277633d18e14",
+    "device": 16777231,
+    "inode": 518548611,
+    "mtime_ns": 1792215220866127979
+  },
+  "prelaunch_unchanged_after": true,
+  "input_source_mutations": [],
+  "runtime_launcher_mutations": [],
+  "stdout": {
+    "bytes": 8839,
+    "sha256": "0f1f351367e8caa279191c46e5c1672d05eaffaa75e0a589b03362c27e73f0c4",
+    "device": 16777231,
+    "inode": 518548612,
+    "mtime_ns": 1792215221089296326
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "device": 16777231,
+    "inode": 518548613,
+    "mtime_ns": 1792215220866336891
+  },
+  "caps": {
+    "CPU_soft_hard_seconds": [
+      30,
+      30
+    ],
+    "external_wall_seconds": 45,
+    "max_files": 2048,
+    "max_input_bytes": 134217728,
+    "resolver_fixtures": 24,
+    "matrix_dimension": 0,
+    "OS_memory_cap": null
+  },
+  "scientific_executions": 0,
+  "mutation_executions": 0,
+  "limitation": "Static AST/hash/inert-import/resolver checks only. Does not execute either author body or canonical main. Top-level executed-source hash is bound before launch."
+}

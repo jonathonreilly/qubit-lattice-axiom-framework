@@ -1,0 +1,57 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_independent_review/check_emitter.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_independent_review",
+  "started_utc": "2026-10-17T00:53:05.613380+00:00",
+  "ended_utc": "2026-10-17T00:53:07.361715+00:00",
+  "elapsed_seconds": 1.7422960000112653,
+  "exit_code": 0,
+  "timed_out": false,
+  "cpu_seconds_cap": 45,
+  "wall_seconds_cap": 60,
+  "largest_matrix_dimension": 9,
+  "user_cpu_seconds": 1.059028,
+  "system_cpu_seconds": 0.083054,
+  "peak_rss_bytes_macos": 70352896,
+  "environment_requests": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_independent_review/check_emitter.py",
+      "bytes": 11404,
+      "sha256": "c2faafa025ca3905bd88c6d8110a2a8888765e881f451ff1df1a5acf1ad37196"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_independent_review/run_check.py",
+      "bytes": 1766,
+      "sha256": "e6076fa51f40e3319588658a898dd5636d9d05fafe4193ba363ec0411a393540"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_independent_review/SOURCE_PINS.json",
+      "bytes": 6289,
+      "sha256": "5a700b1dc7c56e7805ebfba4cea88bca6746139beb189fe501f6e6294b16f8d0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_independent_review/check.stdout",
+      "bytes": 289,
+      "sha256": "e73b7ebba85e3ac8e0d79b9338131819e02a07acae87f4166ee4893f6f78ba16"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_independent_review/check.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "generated_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_independent_review/RESULTS.json",
+      "bytes": 5330,
+      "sha256": "c43d1d1750fc33fedba9347ea70c131cfc8738432167106de6b6873c6c3e43dd"
+    }
+  ]
+}

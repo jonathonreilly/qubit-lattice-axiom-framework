@@ -1,0 +1,10 @@
+[    0.0s] axis C2: orbits [[0], [1, 2], [3, 4], [5], [6]], options [64, 64, 64, 64, 64], total 1073741824
+[   12.5s] chunk 0/257: survivors 2055
+[  287.2s] chunk 32/257: survivors 10307
+[  553.3s] chunk 64/257: survivors 16503
+[  817.1s] chunk 96/257: survivors 16503
+[ 1091.0s] chunk 128/257: survivors 16503
+[ 1361.9s] chunk 160/257: survivors 16503
+[ 1629.5s] chunk 192/257: survivors 18551
+[ 1895.0s] chunk 224/257: survivors 26795
+[ 2152.5s] survivors 32991

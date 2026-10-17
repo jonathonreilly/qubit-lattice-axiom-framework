@@ -1,0 +1,14 @@
+{
+  "installed": 88,
+  "inputs": 109,
+  "source_labels": 229,
+  "original_statements": 448,
+  "events": 16,
+  "static_attempts": 3,
+  "acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-real-control-autonomous-output-20261017/ROOT_PORTABILITY_ACCEPTANCE.json",
+    "bytes": 6903,
+    "sha256": "f7fa45f316d26b82fec3a723c85ad2d1a5f128dce608d99d786515069acde38c"
+  },
+  "archived_draft_members": 499
+}

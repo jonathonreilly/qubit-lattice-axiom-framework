@@ -1,0 +1,255 @@
+"""Check source transport and package closure; never invoke scientific code."""
+from pathlib import Path, PurePosixPath
+import argparse
+import ast
+import copy
+import hashlib
+import json
+import posixpath
+import re
+import resource
+import subprocess
+from datetime import datetime, timezone
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--packet-root', required=True)
+D = Path(parser.parse_args().packet_root).resolve()
+C = D / 'canonical'
+S = D.parent / 'emitter_resource_family_candidate'
+W = D.parent.parent / 'correlation_worktree'
+BASE = '0f1022e03dbbed8085035f2a378be8ae1aca02e8'
+PREFIX = 'outputs/emitter_coupling_family_2026_10_17_inputs'
+NOTE = 'docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+PRIMARY = 'scripts/emitter_coupling_family_2026_10_17.py'
+PARENT = 'scripts/product_seed_emitter_2026_10_17.py'
+assert D.name == 'emitter_family_publication_draft'
+checks = []
+
+def sha(raw):
+    return hashlib.sha256(raw).hexdigest()
+
+def adump(n):
+    return ast.dump(n, include_attributes=False)
+
+def check(name, condition, details=None):
+    assert condition, (name, details)
+    checks.append({'name': name, 'passed': True, 'details': details})
+
+def load(name):
+    return json.loads((C / PREFIX / name).read_text())
+
+def parent_bytes(path):
+    return subprocess.check_output(['git', 'show', BASE + ':' + path], cwd=W)
+
+def resolved_bytes(path):
+    check('relative_canonical_path:' + path,
+          not PurePosixPath(path).is_absolute() and '..' not in PurePosixPath(path).parts)
+    local = C / path
+    return local.read_bytes() if local.is_file() else parent_bytes(path)
+
+source_map = load('SOURCE_MAP.json')
+source_rows = source_map['files']
+fm = json.loads((S / 'FILE_MANIFEST.json').read_text())
+expected_sources = sorted([row['path'] for row in fm['files']] + ['FILE_MANIFEST.json', 'FREEZE.json'])
+check('all_45_source_files_mapped_once', sorted(row['source_relative_path'] for row in source_rows) == expected_sources and len(expected_sources) == 45)
+check('all_source_destinations_unique', len({r['path'] for r in source_rows}) == 45)
+source_checks = []
+for row in source_rows:
+    a = (S / row['source_relative_path']).read_bytes()
+    b = resolved_bytes(row['path'])
+    check('preserved_source:' + row['source_relative_path'], a == b and len(b) == row['bytes'] and sha(b) == row['sha256'])
+    source_checks.append({'source': row['source_relative_path'], 'path': row['path'], 'sha256': sha(b), 'bytes': len(b)})
+check('exact_parent_deduplication', sum(r['transport'] == 'reuse_exact_tracked_parent_file' for r in source_rows) == 18 and sum(r['transport'] == 'byte_preserved_new_copy' for r in source_rows) == 27)
+body_map = load('PROOF_BODY_MAP.json')
+note = (C / NOTE).read_bytes()
+body = (S / 'CANDIDATE.md').read_bytes()
+start, end = body_map['body_start_byte_inclusive'], body_map['body_end_byte_exclusive']
+check('full_theorem_body_byte_identity', note[start:end] == body and sha(body) == '9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac')
+check('body_map_note_identity', sha(note) == body_map['note_sha256'] and len(body) == body_map['source_bytes'] and len(body.splitlines()) == 835)
+wrapper = (D / 'WRAPPER.md').read_bytes()
+check('wrapper_and_markers_exact', note == wrapper + b'<!-- BEGIN UNCHANGED FAMILY AUTHOR BODY -->\n' + body + b'\n<!-- END UNCHANGED FAMILY AUTHOR BODY -->\n')
+
+primary_text = (C / PRIMARY).read_text()
+compile(primary_text, PRIMARY, 'exec')  # Deliberately not exec/import.
+pt = ast.parse(primary_text)
+original_text = (S / 'check_family.py').read_text()
+ot = ast.parse(original_text)
+fn = next(n for n in pt.body if isinstance(n, ast.FunctionDef) and n.name == 'run_family_author')
+ledger = load('TRANSPORT_EDIT_LEDGER.json')
+check('ledger_binds_primary_and_original', ledger['adapted_primary']['sha256'] == sha(primary_text.encode()) and ledger['original_program']['sha256'] == sha(original_text.encode()))
+check('ledger_covers_all_original_statements', len(ledger['events']) == len(ot.body) == 224)
+check('function_signature_only_inputs', isinstance(fn.args, ast.arguments) and [a.arg for a in fn.args.args] == ['inputs'] and not fn.args.defaults and fn.args.vararg is None and fn.args.kwarg is None)
+
+# Reconstruct independently from the two ASTs. Do not accept the builder's
+# equivalence assertion or use its replacement strings to decide permitted edits.
+restored = []
+index = 0
+statement_results = []
+kind_counts = {}
+for i, old in enumerate(ot.body):
+    text = ast.get_source_segment(original_text, old)
+    removed = ((isinstance(old, ast.Assign) and len(old.targets) == 1 and isinstance(old.targets[0], ast.Name) and old.targets[0].id in {'HERE', 'PRE', 'D'})
+               or (isinstance(old, ast.For) and text.startswith("for row in PRE['bindings']"))
+               or (isinstance(old, ast.Assert) and text == 'assert resource.getrlimit(resource.RLIMIT_CPU)==(20,20)'))
+    new_indices = []
+    if removed:
+        kind = 'removed_historical_launch_transport'
+        restored.append(copy.deepcopy(old))
+    elif isinstance(old, ast.Assign) and isinstance(old.targets[0], ast.Name) and old.targets[0].id == 'data':
+        kind = 'adapted_input_read'
+        expected = ast.parse("data=json.loads(inputs.read_text('family_author', 'inputs/interval.json'))").body[0]
+        check('only_interval_read_adapted', adump(fn.body[index]) == adump(expected))
+        restored.append(copy.deepcopy(old))
+        new_indices = [index]
+        index += 1
+    elif isinstance(old, ast.Assign) and isinstance(old.targets[0], ast.Name) and old.targets[0].id == 'report':
+        kind = 'actual_limit_metadata_only'
+        new = copy.deepcopy(fn.body[index])
+        resources = next(value for key, value in zip(new.value.keys, new.value.values) if isinstance(key, ast.Constant) and key.value == 'actual_resources')
+        wall_index = next(j for j, key in enumerate(resources.keys) if key.value == 'wall_cap_external_seconds')
+        expected_wall = ast.parse("inputs.shared_limits()['external_wall_cap_seconds']", mode='eval').body
+        check('only_actual_wall_cap_metadata_adapted', adump(resources.values[wall_index]) == adump(expected_wall))
+        resources.values[wall_index] = ast.Constant(value=30)
+        check('report_scientific_fields_ast_identical', adump(new) == adump(old))
+        restored.append(new)
+        new_indices = [index]
+        index += 1
+    elif isinstance(old, ast.Expr) and isinstance(old.value, ast.Call) and isinstance(old.value.func, ast.Name) and old.value.func.id == 'print':
+        kind = 'return_instead_of_print_transport'
+        expected = ast.parse("report['_canonical_execution'] = inputs.execution_metadata('family_author')\nreturn report").body
+        check('only_metadata_and_return_replace_final_print', [adump(x) for x in fn.body[index:index+2]] == [adump(x) for x in expected])
+        restored.append(copy.deepcopy(old))
+        new_indices = [index, index + 1]
+        index += 2
+    else:
+        kind = 'unchanged_statement_ast'
+        check('unchanged_statement:' + str(i), adump(fn.body[index]) == adump(old))
+        restored.append(copy.deepcopy(fn.body[index]))
+        new_indices = [index]
+        index += 1
+    event = ledger['events'][i]
+    check('ledger_event:' + str(i), event['kind'] == kind and event['original_statement_index'] == i
+          and event['original_ast_sha256'] == sha(adump(old).encode())
+          and event.get('new_statement_indices', []) == new_indices
+          and event['new_ast_sha256'] == [sha(adump(fn.body[j]).encode()) for j in new_indices]
+          and event['new_lines'] == [[fn.body[j].lineno, fn.body[j].end_lineno] for j in new_indices])
+    if kind != 'unchanged_statement_ast':
+        check('ledger_original_transport_text:' + str(i), event['original_text'] == ("'wall_cap_external_seconds':30" if kind == 'actual_limit_metadata_only' else text))
+    kind_counts[kind] = kind_counts.get(kind, 0) + 1
+    statement_results.append({'original_index': i, 'new_indices': new_indices, 'kind': kind, 'original_ast_sha256': sha(adump(old).encode())})
+check('no_extra_function_statements', index == len(fn.body))
+check('exact_original_ast_recovered', adump(ast.Module(body=restored, type_ignores=[])) == adump(ot))
+check('precisely_eight_transport_events', kind_counts == {'unchanged_statement_ast': 216, 'removed_historical_launch_transport': 5, 'adapted_input_read': 1, 'actual_limit_metadata_only': 1, 'return_instead_of_print_transport': 1})
+scientific_calls_old = [adump(n) for n in ast.walk(ot) if isinstance(n, ast.Call) and isinstance(n.func, ast.Name) and n.func.id in {'lt', 'eq'}]
+scientific_calls_new = [adump(n) for n in ast.walk(fn) if isinstance(n, ast.Call) and isinstance(n.func, ast.Name) and n.func.id in {'lt', 'eq'}]
+check('all_103_scientific_comparison_call_asts_identical', scientific_calls_old == scientific_calls_new and len(scientific_calls_old) == 103)
+check('no_unmapped_scientific_file_read', [ast.unparse(n) for n in ast.walk(fn) if isinstance(n, ast.Call) and isinstance(n.func, ast.Attribute) and n.func.attr in {'read_bytes', 'read_text', 'write_text', 'write_bytes'}] == ["inputs.read_text('family_author', 'inputs/interval.json')"])
+for name in ['HERE', 'PRE', 'D']:
+    check('no_historical_runtime_name:' + name, not any(isinstance(n, ast.Name) and n.id == name for n in ast.walk(fn)))
+
+parent_tree = ast.parse(parent_bytes(PARENT).decode())
+for name, cls in [('FrozenInputs', ast.ClassDef), ('verify_artifacts', ast.FunctionDef)]:
+    actual = next(n for n in pt.body if isinstance(n, cls) and n.name == name)
+    inherited = next(n for n in parent_tree.body if isinstance(n, cls) and n.name == name)
+    check('exact_parent_infrastructure_ast:' + name, adump(actual) == adump(inherited))
+    check('infrastructure_ledger_ast:' + name, ledger['infrastructure'][name + '_ast_sha256'] == sha(adump(actual).encode()))
+imports = []
+for node in pt.body:
+    if isinstance(node, ast.Import):
+        imports += [n.name for n in node.names]
+    if isinstance(node, ast.ImportFrom):
+        imports.append(node.module)
+check('module_imports_stdlib_only', imports == ['pathlib', 'hashlib', 'json', 'resource', 'time'])
+check('single_family_call_from_main', sum(isinstance(n, ast.Call) and isinstance(n.func, ast.Name) and n.func.id == 'run_family_author' for n in ast.walk(pt)) == 1)
+decl = next(n for n in pt.body if isinstance(n, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'AUDIT_INPUT_PATHS' for t in n.targets))
+paths = ast.literal_eval(decl.value)
+manifest = load('ARTIFACT_MANIFEST.json')
+check('finite_declared_input_closure', len(paths) == len(set(paths)) == 54 and set(paths) == {r['path'] for r in manifest['files']} | {PREFIX + '/ARTIFACT_MANIFEST.json'})
+check('artifact_count', len(manifest['files']) == manifest['count'] == 53)
+for row in manifest['files']:
+    raw = resolved_bytes(row['path'])
+    check('artifact_binding:' + row['path'], len(raw) == row['bytes'] and sha(raw) == row['sha256'])
+new_files = {p.relative_to(C).as_posix() for p in C.rglob('*') if p.is_file()}
+check('every_new_input_declared', new_files - {PRIMARY} <= set(paths))
+check('no_output_or_cache_fabricated', new_files == set(json.loads((D / 'BUILD_RESULT.json').read_text())['new_overlay_files']) and not (C / 'outputs/emitter_coupling_family_2026_10_17.json').exists())
+
+table = load('INPUT_MAP.json')
+aliases = table['roles']['family_author']['aliases']
+check('two_explicit_logical_aliases', set(aliases) == {'inputs/interval.json', '__original_program__'})
+for alias, row in aliases.items():
+    check('alias_declared:' + alias, row['path'] in paths)
+    raw = resolved_bytes(row['path'])
+    check('alias_hash:' + alias, sha(raw) == row['sha256'] and len(raw) == row['bytes'])
+
+# Execute only the inherited resolver class in a sterile stdlib namespace.
+# The scientific function and primary main are not compiled into this module.
+resolver_ast = copy.deepcopy(next(n for n in pt.body if isinstance(n, ast.ClassDef) and n.name == 'FrozenInputs'))
+namespace = {'Path': Path, 'json': json, 'hashlib': hashlib, 'resource': resource, 'AUDIT_TIMEOUT_SEC': 30}
+exec(compile(ast.fix_missing_locations(ast.Module(body=[resolver_ast], type_ignores=[])), '<isolated FrozenInputs only>', 'exec'), namespace)
+FrozenInputs = namespace['FrozenInputs']
+F = D / 'resolver_fixture'
+check('new_fixture_directory', not F.exists())
+F.mkdir()
+for row in aliases.values():
+    p = F / row['path']
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_bytes(resolved_bytes(row['path']))
+(F / 'INPUT_MAP.json').write_text(json.dumps(table, indent=2) + '\n')
+r = FrozenInputs(F, F / 'INPUT_MAP.json')
+check('resolver_actual_interval_bytes', r.read_bytes('family_author', 'inputs/interval.json') == resolved_bytes(aliases['inputs/interval.json']['path']))
+check('resolver_original_program_bytes', r.original_program_bytes('family_author') == original_text.encode())
+check('resolver_dynamic_actual_limits', r.shared_limits()['cpu_soft_hard_seconds'] == list(resource.getrlimit(resource.RLIMIT_CPU)) and r.shared_limits()['external_wall_cap_seconds'] == 30)
+negative = []
+def rejected(label, callback, expected):
+    try:
+        callback()
+    except expected as exc:
+        negative.append({'case': label, 'exception': type(exc).__name__, 'message': str(exc)})
+    else:
+        raise AssertionError('Resolver accepted invalid fixture: ' + label)
+
+rejected('undeclared_logical_name', lambda: r.read_bytes('family_author', 'missing'), KeyError)
+rejected('absolute_logical_path_is_not_a_fallback', lambda: r.read_bytes('family_author', str(F / aliases['inputs/interval.json']['path'])), KeyError)
+rejected('undeclared_role', lambda: r.read_bytes('missing', 'inputs/interval.json'), KeyError)
+def changed_resolver(changes):
+    x = FrozenInputs(F, F / 'INPUT_MAP.json')
+    x.table['roles']['family_author']['aliases']['inputs/interval.json'].update(changes)
+    return x
+rejected('absolute_destination', lambda: changed_resolver({'path': str(F / 'absolute')}).read_bytes('family_author', 'inputs/interval.json'), AssertionError)
+rejected('parent_traversal_destination', lambda: changed_resolver({'path': '../outside'}).read_bytes('family_author', 'inputs/interval.json'), AssertionError)
+rejected('wrong_hash', lambda: changed_resolver({'sha256': '0' * 64}).read_bytes('family_author', 'inputs/interval.json'), AssertionError)
+rejected('wrong_byte_count', lambda: changed_resolver({'bytes': aliases['inputs/interval.json']['bytes'] + 1}).read_bytes('family_author', 'inputs/interval.json'), AssertionError)
+target = F / aliases['inputs/interval.json']['path']
+(F / 'link').symlink_to(target)
+rejected('symlink_file', lambda: changed_resolver({'path': 'link'}).read_bytes('family_author', 'inputs/interval.json'), AssertionError)
+(F / 'linked_directory').symlink_to(target.parent, target_is_directory=True)
+rejected('symlink_ancestor', lambda: changed_resolver({'path': 'linked_directory/' + target.name}).read_bytes('family_author', 'inputs/interval.json'), AssertionError)
+check('all_nine_transport_negatives_rejected', len(negative) == 9)
+
+links = []
+for target in re.findall(r'\[[^\]]*\]\(([^)]+)\)', wrapper.decode()):
+    check('wrapper_has_no_external_link_assumption:' + target, '://' not in target and not target.startswith('/'))
+    rel = posixpath.normpath(posixpath.join('docs', target.split('#')[0]))
+    raw = resolved_bytes(rel)
+    links.append({'target': target, 'repository_path': rel, 'sha256': sha(raw)})
+check('wrapper_links_declared_or_primary', all(x['repository_path'] in paths or x['repository_path'] == PRIMARY for x in links))
+status = load('PUBLICATION_STATUS.json')
+check('pending_review_and_execution_status', status['family_independent_review'] == 'pending_separate_review' and status['canonical_execution'] == 'not_executed_in_this_draft' and status['scientific_mutations'] == 'not_executed_in_this_draft')
+check('wrapper_does_not_promote_status', b'source_science_acceptance_complete: false' in wrapper and b'canonical_execution: pending_not_executed' in wrapper and b'publication: local_reviewable_draft_only' in wrapper)
+check('planned_scientific_caps', next(ast.literal_eval(n.value) for n in pt.body if isinstance(n, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'AUDIT_TIMEOUT_SEC' for t in n.targets)) == 30 and 'resource.setrlimit(resource.RLIMIT_CPU, (20, 20))' in primary_text)
+
+report = {'checked_utc': datetime.now(timezone.utc).isoformat(),
+          'kind': 'Static source transport verification only; no scientific body or mutation executed',
+          'checks': checks, 'static_check_count': len(checks), 'source_pairs': source_checks,
+          'statement_results': statement_results, 'transport_event_counts': kind_counts,
+          'scientific_comparison_calls_preserved_without_execution': len(scientific_calls_old),
+          'complete_original_ast_recovered': True, 'body_sha256': sha(body), 'note_sha256': sha(note),
+          'primary_sha256': sha(primary_text.encode()), 'parent_primary_sha256': sha(parent_bytes(PARENT)),
+          'declared_inputs': len(paths), 'artifact_members': len(manifest['files']),
+          'new_overlay_files': len(new_files), 'resolver_transport_negatives': negative, 'active_wrapper_links': links,
+          'actual_static_cpu_soft_hard_seconds': list(resource.getrlimit(resource.RLIMIT_CPU)),
+          'planned_scientific_cpu_soft_hard_seconds_not_executed': [20, 20], 'planned_scientific_wall_seconds_not_executed': 30,
+          'scientific_executions': 0, 'scientific_mutations': 0,
+          'limitations': 'The family proof, independent review, root qualification, root transport acceptance, canonical cache/execution, scientific mutations, citation graph and publication gates remain separate. Static AST checking is author-side packaging evidence, not independent science.'}
+(D / 'STATIC_VERIFICATION.json').write_text(json.dumps(report, indent=2, sort_keys=True) + '\n')
+print(json.dumps({k: report[k] for k in ['kind', 'static_check_count', 'transport_event_counts', 'complete_original_ast_recovered', 'scientific_comparison_calls_preserved_without_execution', 'declared_inputs', 'artifact_members', 'new_overlay_files', 'note_sha256', 'primary_sha256', 'scientific_executions', 'scientific_mutations']}, indent=2))

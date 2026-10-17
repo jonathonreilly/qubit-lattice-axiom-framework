@@ -1,0 +1,546 @@
+---
+claim_type: exploratory_conditional_route
+actual_current_surface_status: unaccepted-author-work
+independent_review: not-performed
+native_preparation_claim: false
+---
+# A two-contact product-seed emitter: exact local checks and an open installed-system certificate
+
+## Outcome and scope
+
+A one-qubit excited seed with two phase-controlled attachments to a bent
+clock path survives the first directional and return-scattering tests. The
+attachments fit on one square plaquette of the cubic lattice. Their full-qubit
+positive realization, scalar reserve, central interference zero, and uniform
+free-lead return bounds are explicit below. These are author derivations and
+an exact bounded algebra check, not an independently checked autonomous gate.
+
+The outstanding issue is substantive: the emitter and installed old/source
+gate form one coherent scattering system. No finite emission-completion time,
+small in-band bound-state weight, or complete seed-to-gate isometry error has
+been certified for that system. Weak coupling by itself does not supply those
+facts. Section 7 gives a finite matching and overlap contract whose verification
+would imply a complete-output result without assuming exponential decay or
+discarding any source. No numerical dynamics or optimization was run.
+
+The simpler one-point weak emitter is a failed shortcut in the free-lead
+comparison: its two emitted branches have equal weight, and at its resonant
+energy it completely reflects a returned wave, independently of how weak the
+coupling is. This does not exclude other emitter designs or boundary-assisted
+preparation. The two-contact route is the single alternative examined here.
+
+## 1. Prior work used and the target retained
+
+The preparation inventory and `PREPARATION_NEXT_DECISION.md` were read first.
+The canonical wrapper of the installed-bus preparation note and the complete
+controlling local-sine qualification were then read. Those constructions use
+externally timed complements, swaps, rotations, or phase-locked quadratures.
+They do not establish this static emitter. The bounded keyword scan of the
+five inventory notes found no treatment of the directional-emission mechanism;
+that scan is not a novelty or exhaustive prior-art claim. Exact source hashes
+and read coverage are in `SOURCE_MANIFEST.json`.
+
+The target contracts are the frozen `two_body_interval_bridge/CANDIDATE.md`
+(SHA256 `b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45`)
+and the controlling `finite_channel_wavepacket_bridge/THEOREM_V2.md`
+(SHA256 `db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3`).
+Their conditional model, rather than a hardware interpretation, is used.
+In particular, with the emitter absent,
+
+    Hg = h0 tensor I + I tensor B + P0 tensor VA + P1 tensor VB,
+    h0 = 2J I - J(S+S*),       B iota = iota K,
+    K = 2I+Z1 Z2,             iota x=x tensor Omega,
+    Omega=|00>_AB,            Hphysical=Hg+nu I.               (1)
+
+The exact decimals are J=0.030021107107032 and
+nu=1.459892813020969. The old/source dimension is sixteen, split into two
+eight-dimensional parity blocks. For each old-energy incident channel the
+other seven channels in its block are closed on |k-k0|<=10^-3, with gap
+at least 0.18 and closed-root magnitude at most 1/7. Here
+
+    q0=4.510351185997098,    k0=2 arctan(1/q0),
+    z0=exp(ik0)=(q0^2-1+2i q0)/(q0^2+1),
+    E(k)=2J(1-cos k),       E0=E(k0).                       (2)
+
+The old target W and the one common scalar zeta stay those of the frozen
+candidate. In absolute-site normalization r0(k)=-exp(2ik), and its original
+gate has
+
+    |r_j(k)-zeta omega_j r0(k)| <= 1.76*10^-13+702 sigma
+                  for |k-k0|<=sigma<=10^-3.                (3)
+
+The nonzero central ceiling is retained. No arbitrary-accuracy family is
+inferred. The emitter may change the common spectral envelope and phase;
+it has not been shown to create the particular parabolic finite vector in
+the candidate. The generic bridge permits other common W^(1,1)_0 packets,
+but their actual norms, derivatives, preparation error, and output phase
+must be certified anew. The candidate's T=10^13 resource example cannot be
+reused as an emission time.
+
+## 2. One extra qubit, a square loop, and the full-qubit price
+
+Fix an integer L>=3. Keep the gate end of the clock and bend the distant
+path through
+
+    c_L=(L,2,0),       c_(L+1)=(L+1,2,0),
+    c_(L+2)=(L+1,3,0), c_(L+3)=(L+2,3,0),
+    e=(L,3,0).                                               (4)
+
+The remaining ray continues to the right. The emitter e is adjacent to c_L
+and c_(L+2), so the two new bonds and two intervening clock bonds make a
+square, not a forbidden nearest-neighbor triangle. This presumes available
+vacant sites for the bend; it preserves the abstract path Hamiltonian h0.
+It does not shorten the long clock or supply its vacuum.
+
+Let kappa>0, 2kappa<=E0, and put phi=2k0. On the one-head graph consisting
+of the clock path and e, the desired new terms, before a common scalar, are
+
+    E0 |e><e| tensor I
+      + kappa[(|L>-exp(i phi)|L+2>)<e|+h.c.] tensor I.      (5)
+
+The old/source B acts also when the head is at e. In the physical qubits
+that is automatic: B is an installed old/source term, independent of clock
+occupation. Source-contact terms are still controlled only by n_c0,n_c1.
+
+Write a=|0><1| and n=a^dagger a. For j=L,L+2 choose
+t_L=kappa and t_(L+2)=-kappa exp(i phi), and use the positive blocks
+
+    Q_ej=kappa(n_e+n_j)+t_j a_j^dagger a_e+conj(t_j)a_e^dagger a_j,
+    (E0-2kappa)n_e,       kappa(I-n_L),       kappa(I-n_(L+2)). (6)
+
+Each Q_ej has spectrum {0,2kappa} on its full two-qubit space. On the full
+qubit space, summing (6) gives exactly
+
+    E0 n_e + sum_(j=L,L+2)(t_j a_j^dagger a_e+h.c.) + 2kappa I.
+
+Its one-head restriction is (5) plus 2kappa I. Total emitter-plus-clock
+head number is conserved. The complete one-head Hamiltonian is therefore
+
+    Htilde_physical=Htilde+(nu+2kappa)I,
+    Htilde = Hg on the clock, B+E0 on e, with (5)'s hopping. (7)
+
+In particular the physical scalar exp[-i(nu+2kappa)t] cannot be dropped.
+The added positive-block incident norm sums are E0+2kappa at e and 3kappa
+at each attachment clock site. Old and source incident loads are unchanged.
+The old-cap 2 from the stationary witness still does not cap its source or
+boundary-clock sites. This new cell neither changes that fact nor assumes
+an all-site cap. Its coefficients are static, hence have zero runtime slew;
+installation and precision remain assumptions.
+
+The coupling phase is a physical permission. For t=|t|exp(i theta),
+
+    t a_j^dagger a_e+conj(t)a_e^dagger a_j
+      = |t|[cos(theta)(X_j X_e+Y_j Y_e)
+             +sin(theta)(Y_j X_e-X_j Y_e)]/2.               (8)
+
+The nontrivial phase around this loop cannot generally be removed while
+keeping all four hoppings real. Native permission for these static
+phase-dependent XY/cross-quadrature couplings is not established. No drive,
+synthetic flux implementation, or irreversible sink is assumed implicitly.
+
+The proposed ready state is
+
+    |1>_e tensor |all clock zero> tensor Omega_AB tensor x_old,R. (9)
+
+It is old-independent and is a one-qubit excited product seed, not an
+initially entangled or phase-engineered two-site seed. It still assumes a
+supplied clean clock/source vacuum, the excited emitter, and the coherent
+static phase reference encoded in (6). It does not derive any of those
+readiness resources from the framework.
+
+## 3. Exact directional and return calculation on a uniform lead
+
+This section concerns a full infinite uniform lead, with no gate or internal
+closed channels. It is a local diagnostic, not an approximation already
+certified for (7). Denote its operator on l2(Z) by
+h_Z=2J I-J(S_Z+S_Z^*). Translation by L only changes unit phases, so set
+L=0 when evaluating magnitudes. Define
+
+    vvec=|0>-exp(i phi)|2>,
+    g_+(k)=1-exp(i phi)exp(-2ik),
+    g_-(k)=1-exp(i phi)exp(2ik),     vg(k)=2J sin k.        (10)
+
+A mode exp(ikn) travels right; exp(-ikn) travels left toward the gate.
+The plus form factor controls both rightward emission and excitation of
+the emitter by a right-moving return. At the chosen center,
+
+    g_+(k0)=0,       |g_-(k0)|=2 sin(2k0)>0.              (11)
+
+This is one exact interference zero, not exact chirality on an interval.
+On |k-k0|<=sigma with sigma<sin(2k0), the elementary Lipschitz estimates are
+
+    a=|g_+(k)|<=2sigma,
+    b=|g_-(k)|>=2sin(2k0)-2sigma,
+    a/b<=eta:=sigma/[sin(2k0)-sigma].                     (12)
+
+These bounds use no decay law. The exact retarded lead Green function is
+
+    <n|(E(k)+i0-h_Z)^-1|m>=-i exp(ik|n-m|)/vg(k),
+    Sigma(k)=<vvec|(E(k)+i0-h_Z)^-1|vvec>
+            =-i[2-2cos(phi)exp(2ik)]/vg(k),
+    D(k)=E(k)-E0-kappa^2 Sigma(k),
+    -Im Sigma(k)=(a^2+b^2)/(2vg(k)).                       (13)
+
+The first formula follows by solving the second-order recurrence and its
+unit delta jump at n=m; it fixes the retarded sign. Feshbach elimination
+of the single emitter then gives, in momentum-direction channel order,
+
+    S(k)=I-i kappa^2 [g_+,g_-]^T [conj(g_+),conj(g_-)]
+                                  /[vg(k)D(k)].          (14)
+
+Equation (13) makes S^*S=I exactly. For a right-moving return, let t_+ be
+the diagonal entry and r_+ the amplitude reflected back toward the gate.
+The imaginary part of D, including at resonance, gives the uniform bounds
+
+    |r_+| <= 2ab/(a^2+b^2) <= 2eta,
+    |t_+-1| <= 2a^2/(a^2+b^2) <= 2eta^2.                 (15)
+
+In particular t_+(k0)=1 and r_+(k0)=0 for every kappa>0. The opposite
+transmission t_- can carry a substantial common phase. It must remain in
+the eventual clock state. Lossless two-port unitarity also gives
+|t_+|=|t_-| and equal reflection magnitudes. This is not an isolator.
+
+The emitter resolvent is G_ee=1/D. Its absolutely continuous spectral
+density on this band follows from -Im G_ee/pi. Resolving the two outgoing
+radiation directions in the same resolvent jump gives the weights
+
+    dmu_e^+/dE=kappa^2 a^2/[2pi vg |D|^2],
+    dmu_e^-/dE=kappa^2 b^2/[2pi vg |D|^2].                (16)
+
+Equivalently these are the squared stationary outgoing amplitudes obtained
+from the same rank-one resolvent; no flat-density or Markov replacement is
+made. Thus, within this band, the wrong-direction continuum fraction is
+at most eta^2/(1+eta^2)<=eta^2. Equation (16) does not assert that emission
+has finished at any finite time. Since b is bounded away from zero, D has
+strictly positive imaginary part here, so this free-lead emitter has no
+seed point-spectral weight in the band. Outside it, bound states are allowed.
+The installed gate in (7) requires its own analysis.
+
+For comparison, a single real point attachment has a=b=1. Reflection
+symmetry gives equal left/right outgoing weights. At E=E0 its uniform-lead
+self-energy is -i/vg, so t=0 and r=-1 exactly, for every kappa>0. Weakening
+that contact does not repair either the bypass branch or resonant return
+reflection. The particular two-contact zero (11) removes these two free-lead
+defects without postselecting an emission direction.
+
+## 4. A numerical scale check, and a bound that already survives the gate
+
+Choose only for this diagnostic
+
+    sigma=10^-6,        kappa=10^-12,       v=1/40.        (17)
+
+The exact rational z0 fixes sin(2k0) without trigonometric roundoff. The
+code checks the following strict rational ceilings, not floating enclosures:
+
+| Free-lead quantity on the entire packet band | Certified ceiling |
+|---|---:|
+| eta in (12) | <1.31*10^-6 |
+| Return-reflection amplitude | <2.62*10^-6 |
+| Return-transmission amplitude difference from 1 | <3.44*10^-12 |
+| In-band wrong-direction continuum fraction | <1.72*10^-12 |
+
+There is also an exact installed-system energy-concentration estimate.
+Let u_j=iota e_j, B u_j=b_j u_j, and Eseed e_j=|e> tensor u_j. With
+c_j=b_j+E0+nu+2kappa, direct application of the full physical Hamiltonian is
+
+    (Htilde_physical-c_j)Eseed e_j
+       =kappa(|L>-exp(i phi)|L+2>) tensor u_j,
+    ||(Htilde_physical-c_j)Eseed e_j||^2=2kappa^2.         (18)
+
+The old/source interaction need not commute with K for (18): all gate
+contacts vanish on the initially empty clock, and B u_j=b_j u_j is exact.
+The spectral theorem therefore bounds the norm outside the total-energy
+interval b_j+nu+2kappa+E([k0-sigma,k0+sigma]) by
+
+    sqrt(2)kappa/dE <= sqrt(2)kappa/(v sigma) <6*10^-5.    (19)
+
+Here E is increasing and E'>=v on the band. This includes out-of-band
+point spectrum; it does not exclude in-band point spectrum or source
+entanglement. The two parity blocks remain reducing after adding (5).
+There are two old-energy columns per parity block, so the safe operator
+bound for the map of discarded column parts is
+
+    sqrt(2)*sqrt(2)kappa/(v sigma)=8*10^-5,                (20)
+
+not the single-column ceiling. Within a parity block the discarded parts
+are not assumed orthogonal. Every old/reference input is covered by the
+operator bound. Small energy spread is not a certificate that the old
+gate has run once, that the emitter has emptied, or that the output is
+an old-independent clock packet.
+
+The numbers (17)-(20) are not an emission-time or apparatus-size example.
+No exponential decay rate is used to convert them into one.
+
+## 5. Returning waves and the actual unresolved composition
+
+Even in a scalar single-channel reduction one must keep repeated gate
+visits. With propagation phases absorbed into R_G, |R_G|=1, the exact
+stationary series for a two-port emitter to the right of a reflecting gate is
+
+    R_total=r_- + t_+ R_G (1-r_+ R_G)^-1 t_-.             (21)
+
+The inverse is a convergent geometric series if |r_+|<=r_*<1. Visits after
+the first have total amplitude at most r_*/(1-r_*); the prompt reflected
+branch r_- is also present. They can implement extra old gates and cannot
+be absorbed into an unexamined common clock phase. For example, (15) gives
+the scalar bound
+
+    |R_total-R_G t_-|
+       <=r_*+2eta^2+r_*/(1-r_*).                          (22)
+
+Replacing t_- by its unit-modulus phase costs at most r_*^2, since
+1-|t_-|<=|r_+|^2. Equations (21)-(22) are exact for the scalar two-port
+composition with the stated factors; they have not been proved to describe
+all channels of (7). In particular the initial emitter's radiation is not
+an external incident wave independent of subsequent feedback.
+
+In (7) the couplings act as identity on the *whole* old/source space. A
+source-vacuum projector inserted on those bonds would be a different
+interaction with a new many-body permission. The actual returning field
+can contain closed-channel tails and transient source excitation, which
+couple to the additional internal states of the emitter sector. A large L
+suppresses closed tails but does not remove the open propagating feedback.
+Moreover increasing L changes travel time and derivatives of propagation
+phases. It cannot be declared harmless without a joint bound.
+
+There is a compact exact starting point. For lambda in an incident band
+let V=|v_L> tensor I, v_L=|L>-exp(i phi)|L+2>. The finite emitter resolvent
+is governed by the 16-dimensional matrix (eight in each parity block)
+
+    D_e(lambda)=(lambda-E0)I-B
+                 -kappa^2 V^*(lambda+i0-Hg)^-1 V.         (23)
+
+For the original gate's unit-incoming column phi_j^g(k), the emitter
+component of the augmented scattering solution is exactly
+
+    y_ej(k)=kappa D_e(lambda_j(k))^-1 V^*phi_j^g(k),
+    lambda_j(k)=b_j+E(k).                                 (24)
+
+The gate's certified finite matching and closed roots can evaluate (23)
+without a long finite-time simulation. But its inverse is a new certificate:
+at kappa=0 the open emitter coordinate is resonant, so the old matching
+inverse bound 366 cannot be carried over by a naive small-perturbation
+argument. The resonant coordinate must be treated separately, with its
+optical imaginary part and coupling to the other internal coordinates.
+
+For clarity, the already-certified original gate gives the genuine partial
+bound, valid for L>=3,
+
+    V^*phi_j^g(k)
+      =[conj(g_-(k))+r_j(k)conj(g_+(k))]u_j + d_closed,j(k),
+    ||d_closed,j(k)|| <=16*(50/49)*7^(-(L-2)).             (25)
+
+The g's here include the translation phases exp(+-ikL). Equation (25)
+uses its closed coefficient norm <=16, |q_l|<=1/7, and
+q_l^(L-2)(1-exp(-i phi)q_l^2) for each tail. A sufficient derivative bound is
+
+    ||d_closed,j'|| <=[700*(50/49)+16/(84)]*7^(-(L-2))
+                 +[16*(L-2)*(50/49)/24]*7^(-(L-3)).        (26)
+
+The last term in the first bracket is 16*2*(1/7)*(1/24).
+This is a bound on the background driving vector, not on the inverse in
+(23), the completed emission, or all delayed returns. It does not supply
+the missing complete-output certificate.
+
+## 6. The sufficient certificate must concern the actual initial seed
+
+An adequate future certificate must do more than show nonsingular stationary
+matrices on a momentum grid. It must establish, on a common interval I,
+
+1. Exact selfadjoint full-qubit coefficients, conserved total head number,
+   the stated vacuum-input identity, and the same reducing parity blocks.
+   The additional loop phase and readiness resources must be allowed.
+2. Uniform invertibility and derivative bounds for the *augmented* finite
+   matching problem, such as a rigorously controlled Schur treatment of
+   (23). Include every internal old/source direction and both attachments.
+3. A common complex spectral envelope f and common unit-modulus phase
+   rho(k), with finite W^(1,1) and C^1 bounds as specified below. They must
+   approximate the actual one-qubit seed and the actual full reflection
+   columns in operator norm. The different old energies cannot each be
+   assigned a separate fitted envelope or scalar phase.
+4. Quantitative late-time escape constants for the interaction region,
+   closed tails and emitter. These give a finite onset time directly;
+   an assumed Markov lifetime does not substitute for them.
+
+The following implication makes these requirements testable. It is an
+extension of the frozen bridge's proof to a finite attached graph, stated
+here as a new conditional author lemma, not as a reviewed theorem already
+satisfied by this emitter.
+
+## 7. Conditional complete-output implication, with a seed-overlap test
+
+Use Htilde without its common scalar. Suppose its unit-incoming scattering
+columns Phi_j(k) have the same energies lambda_j(k)=b_j+E(k), exactly one
+propagating channel in each selected block, and satisfy
+
+    Phi_j(k,n)=[exp(-ikn)+R_j(k)exp(ikn)]u_j+C_j(k,n),
+    Phi_j(k,e)=C_j(k,e).                                  (27)
+
+The localized vector C_j includes the whole finite core 0,...,L+2, the
+emitter, and every closed tail. Assume uniformly C^1 Hilbert-space bounds
+||C_j||<=C0_j, ||C_j'||<=C1_j, |R_j'|<=L_Rj. These follow from an actual
+uniform inverse bound on the finite matching matrix, not merely its point
+invertibility. The current identity gives |R_j|=1.
+
+Choose one f in W^(1,1)_0(I), ||f||2=1, and define
+
+    Gamma_t e_j=(1/sqrt(2pi)) integral_I f(k)Phi_j(k)exp[-iE(k)t] dk.
+    F0=||f||1, F1=||f'||1, 0<v<=min_I E', E2>=max_I |E''|. (28)
+
+These are certified lower/upper velocity bounds as in controlling V2.
+The bridge's past-limit argument applies unchanged: the incident wave is
+normalized on the full line, its excluded half-line tends to zero in the
+distant past, and the reflected and localized terms tend to zero by
+integration by parts. The emitter is included in the localized term.
+Selfadjoint evolution then proves
+
+    Gamma_t^*Gamma_t=I,
+    exp(-it Htilde)Gamma_0=Gamma_t exp(-it Db),
+    Db=diag(b_j).                                         (29)
+
+No scattering completeness or commutation of K through the interaction is
+needed. Exact packet columns are orthogonal to normal bound eigenvectors
+by the same weak-past-limit argument.
+
+The finite matrix that tests the *physical seed* is
+
+    A=Eseed^* Gamma_0,
+    A_lj=(1/sqrt(2pi)) integral_I f(k)<u_l,Phi_j(k,e)> dk,
+    ||Eseed-Gamma_0||^2=||2I-A-A^*||.                      (30)
+
+Both maps in (30) are isometries, which proves the identity. Thus a rigorous
+upper bound ||2I-A-A^*||<=eta_seed^2 is sufficient. Interval quadrature
+with controlled tails and an operator bound, rather than separate column
+phases or diagonal overlaps alone, can certify it. The parities may reduce
+the matrix to two 2-by-2 blocks. This overlap requirement has not been
+checked. It captures out-of-band weight, possible bound states, incomplete
+emission preparation and old-dependent spectral shape in one actual norm.
+
+Suppose also that a single rho in C^1(I), |rho|=1, |rho'|<=L_rho, obeys
+
+    max_j sup_I |R_j(k)-zeta omega_j rho(k)|<=Delta_aug.    (31)
+
+The physical gate's fixed zeta is retained; emitter propagation and its
+common spectral phase belong in rho or f. If (31) is obtained by comparison
+to the old gate plus an emitter correction, Delta_aug must include the
+original ceiling (3). No independent per-column scalar choice is allowed.
+Define
+
+    A0=F1+(E2/v)F0,
+    B0=F1+(L_rho+E2/v)F0,
+    D_j=F1 C0_j+F0 C1_j+(E2/v)F0 C0_j,
+    D=max_parity sqrt(sum_(j in parity) D_j^2),
+    b_t(n)=(1/sqrt(2pi)) integral_I f(k)rho(k)exp[ikn-iE(k)t] dk,
+    beta_t=b_t/||b_t|| on n>=0, with emitter unoccupied.  (32)
+
+The negative-site restriction of the full-line b_t has norm at most
+B0/sqrt(pi v t); the unwanted incoming wave on n>=0 has norm at most
+A0/sqrt(pi v t). The localized operator has norm at most
+D/[sqrt(2pi)v t]. These follow by precisely the integration-by-parts
+estimates in the bridge, applied also to f rho. The within-parity square
+sum is required because localized error columns need not be orthogonal.
+The open output columns are orthogonal, and use the maximum in (31).
+
+For vt>=1 and B0/sqrt(pi v t)<=1/2, beta_t is well-defined. Full-line
+Parseval gives ||b_t||^2=1-||b_t on n<0||^2, so normalizing it costs at
+most B0/sqrt(pi v t). Combining (29)-(32) yields, for every t>=T satisfying
+these inequalities,
+
+    ||exp(-it Htilde_physical)Eseed-Uideal(t)||
+       <=eta_seed+Delta_aug+(A0+B0)/sqrt(pi v t)
+                                  +D/[sqrt(2pi)v t],
+    Uideal(t)x=zeta exp[-i(nu+2kappa)t]
+                  beta_t tensor iota exp(-itK)W x.        (33)
+
+All emitter, clock, source, old and passive-reference outputs remain in
+this comparison. Old evolution is measured from the initial product seed:
+t is the entire physical time, including emission and flight. There is no
+reset of its age at an arbitrarily chosen collision time. Tensoring a
+reference preserves (33); complete unhalved trace distance is at most
+twice its right side. The infinite-apparatus bound-state amplitude is at
+most eta_seed, already counted in (33), and is not discarded separately.
+
+For example, an escape term at most epsilon follows from the sufficient
+finite condition
+
+    T>=max{1/v, 4 B0^2/(pi v),
+           4(A0+B0)^2/(pi v epsilon^2),
+           2D/[sqrt(2pi)v epsilon]}.                      (34)
+
+This is a finite-time formula *after* the constants and (30)-(31) are
+certified. None of eta_seed, Delta_aug, C0_j, C1_j, L_rho for the installed
+emitter has been bounded here. Consequently (34) is not yet a finite
+resource example or a proof that the proposed emitter meets the target.
+
+## 8. Finite apparatus and the next bounded decision
+
+One finite-horizon consequence is available without a decay model. Keep
+clock sites 0,...,M-1 with M>=L+3, retain e, and use the true compression
+of (7), including the usual far-end clock diagonal J n_(M-1). From the
+seed e the first omitted clock site c_M is exactly
+
+    d_M=M-L-1
+
+graph hops away, via e,c_(L+2),...,c_M. The other route is two hops longer.
+Internal old/source matrices do not move head support. The frozen gate's
+spectral radius bound 18 also contains the decoupled B+E0 emitter block
+about the same center; the added off-diagonal norm is sqrt(2)kappa. Thus
+rho_star=19 is sufficient for (17), with the common scalar shifting the
+spectral center only. The bridge's polynomial/Chebyshev argument gives
+
+    ||exp(-it Htilde_physical)Eseed
+        -embed exp(-it Htilde_physical,M)Eseed||
+      <=4 exp[-mu d_M+19t sinh(mu)]/[1-exp(-mu)]            (35)
+
+for mu>0,t>=0. Given a separately certified T and an observation horizon
+Tobs>=T, a chosen finite M can make (35) small on [T,Tobs]. A fixed finite
+chain is not covered for all future times. Since the infinite-emitter
+certificate (30)-(31) is still absent, no finite M is advertised as a
+working autonomous gate size.
+
+The next useful bounded decision is to fix one L,kappa,sigma and certify
+(23), its derivatives, and the seed overlap (30), including all sixteen
+internal directions. A scalar linewidth estimate or a long-time simulation
+that omits the wrong branch, emitter, or closed source channels would not
+settle that question. If the required loop phase is unavailable, this
+particular one-qubit route lacks a physical permission. Surviving alternatives
+include a separately supplied two-site phase-engineered seed or the already
+known driven preparation routes, each with its different readiness costs.
+They are not analyzed or declared successful here.
+
+## 9. Evidence and literature limits
+
+`emitter_algebra_check.py` performs one exact bounded check. Its largest
+matrix is 16 by 16, covering all four plaquette qubits. It verifies the
+positive-edge polynomial identity Q^2=2kappa Q, the scalar identity (6)-(7),
+head conservation, the exact directional zero, the optical identity and
+two-port unitarity, and the rational strict ceilings in section 4. Two
+exact on-shell points test the scattering algebra; they are not an interval
+grid. The band bounds come from (12)-(15), with exact rational comparisons.
+
+The single execution exited 0 in approximately 1.124 seconds of wrapper wall time.
+Caps were 10 CPU seconds and 30 wall seconds; no optimizer, finite-chain
+simulation or search over designs was used. Python 3.13.5 and SymPy 1.14.0
+performed exact rational arithmetic. Full stdout, stderr, actual script
+and runtime identities are retained in `algebra.stdout`, `algebra.stderr`,
+`EXECUTION.json` and `ALGEBRA_CERTIFICATE.json`. `display_only` fields are
+rounded displays and are never used as rigorous enclosures. The check is
+source-exposed author verification, not independent review.
+
+A narrow primary-literature search was used for the mechanism and its
+known limitations. Chen et al., [Nonreciprocal and chiral single-photon
+scattering for giant atoms](https://arxiv.org/abs/2203.00823v2), distinguish
+local coupling phases from nonreciprocal transmission: their two-level
+model also needs external dissipation for the latter. No dissipative
+isolator result is imported here. Li and Shen, [Non-Markovian dynamics
+with a giant atom coupled to a semi-infinite photonic waveguide](https://arxiv.org/html/2404.07890v1),
+analyze reflected-field reabsorption and bound states. Their waveguide
+calculation linearizes dispersion and extends its momentum integral;
+its delay equation is not a theorem for this finite-band lattice. The
+present Green-function and norm calculations were derived directly for
+the stated lattice model. Neither source supplies the missing installed
+old/source certificate or native couplings. Search scope is recorded in
+`LITERATURE_NOTES.md`.
+
+All writes are confined to this route directory. No original source,
+repository, Git state, prompt, axiom, checkpoint or audit record changed.

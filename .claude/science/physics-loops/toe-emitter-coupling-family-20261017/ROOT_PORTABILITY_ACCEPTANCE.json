@@ -1,0 +1,71 @@
+{
+  "accepted_utc": "2026-10-17T03:33:52.016389+00:00",
+  "disposition": "Source transport accepted for the one bounded canonical execution and six predeclared copied-source faults; publication remains subject to actual results and focused checks.",
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/emitter_coupling_family_2026_10_17.py",
+    "bytes": 24786,
+    "sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "bytes": 50396,
+    "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+  },
+  "body": {
+    "bytes": 39464,
+    "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+  },
+  "artifact_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/emitter_coupling_family_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+    "bytes": 14091,
+    "sha256": "d0785ccbc7e01950ee94909f1065d3d716cad48fc6dacf597b1971af14fd37d5"
+  },
+  "science_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_root_qualification/ACCEPTANCE.json",
+    "bytes": 10085,
+    "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325"
+  },
+  "transport_report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_portability_review/REPORT.md",
+    "bytes": 19242,
+    "sha256": "360e4ed40dc195432aa1e4e7dfc4ee66723c3fae6f213b77b55b9192f13be07c"
+  },
+  "transport_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_portability_review/FREEZE.json",
+    "bytes": 2535,
+    "sha256": "2a0594df40fbb86ed00857cc3e0846292d962f30995543c0d8c668cc1e6a0a09"
+  },
+  "transport_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_portability_review/run03/RECEIPT.json",
+    "bytes": 133275,
+    "sha256": "fdeebc9f9f25d6c6a82abb900b261d0b075344f20def836b9c7a57b8554e70fd"
+  },
+  "reviewer_files_verified": 122,
+  "successful_prelaunch_bindings_verified": 283,
+  "declared_input_count": 54,
+  "manifest_member_count": 53,
+  "root_read_scope": "Complete wrapper and new executable infrastructure, all eight transport edits and original family checker; complete transport report/checker/launcher and affected output fields. Source qualification retains its own full mathematical review record.",
+  "root_wrapper_change": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-emitter-coupling-family-20261017/ROOT_WRAPPER_CHANGE.json",
+    "bytes": 4447,
+    "sha256": "694a5b45d3b2be31f482c8a4baecf31acc3fd6d163287e6c91be25ba76d4b6ee"
+  },
+  "source_body_or_primary_edits": [],
+  "execution_plan": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/run_canonical.py",
+    "bytes": 5714,
+    "sha256": "d55678eb15ac01601248689622c5f18a6bdb0f39963bb56531ccf8605ae934a6"
+  },
+  "mutation_plan_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/run_mutations.py",
+    "bytes": 6112,
+    "sha256": "190f6e33529d1dfa7356a6e8888151803107e62fbf2a54e20676688df1f7875f"
+  },
+  "verification_limits": [
+    "Same model and substantial source exposure; not blind or model-diverse review.",
+    "Static source equality is transport evidence, not an independent mathematical proof.",
+    "Reviewer setup failures and recovered historical launcher remain disclosed.",
+    "Canonical reproduction, publication, shared integrated-main gates and retained audit are separate."
+  ],
+  "editable_prompt_files_changed": []
+}

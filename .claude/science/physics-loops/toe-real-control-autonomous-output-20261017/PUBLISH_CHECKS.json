@@ -1,0 +1,425 @@
+{
+  "checked_utc": "2026-10-17T05:46:03.925439+00:00",
+  "status": "Focused publication checks complete; regular milestone PR allowed. No retained audit or integrated-main landing claim.",
+  "head": "67108090f68ed9b2bc62eee23701b2d3d71dce4a",
+  "branch": "physics-loop/toe-real-control-autonomous-output-20261017",
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/real_control_autonomous_output_2026_10_17.py",
+    "bytes": 47133,
+    "sha256": "87ed66a14a21e20a7d747454cca1854d6adcd52ffb00f1532e78b33967d4af29"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "bytes": 74148,
+    "sha256": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca"
+  },
+  "artifact_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_control_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+    "bytes": 26626,
+    "sha256": "f00f7a7e4a3fd9239704296e9bd86508f418d691c1e4e965a219d861f620d880"
+  },
+  "source_labels": 229,
+  "declared_input_count": 109,
+  "manifest_member_count": 108,
+  "bodies": [
+    {
+      "title": "Real local apparatus and unprepared-seed counterexample",
+      "raw": {
+        "bytes": 32324,
+        "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018"
+      },
+      "link_changes": 0
+    },
+    {
+      "title": "Real local preparation and autonomous-output composition",
+      "raw": {
+        "bytes": 28103,
+        "sha256": "57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c"
+      },
+      "link_changes": 3
+    }
+  ],
+  "original_statements": 448,
+  "transport_events": 16,
+  "optimized_python_refusal": true,
+  "canonical_execution": {
+    "started_utc": "2026-10-17T05:45:04.301112+00:00",
+    "finished_utc": "2026-10-17T05:45:05.220718+00:00",
+    "runner": "scripts/real_control_autonomous_output_2026_10_17.py",
+    "prelaunch": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/canonical_02/PRELAUNCH.json",
+      "bytes": 39205,
+      "sha256": "f8249fc0d302f1ed456e04a53a8aa568b9524d12cbf73e3cd83900b232f1eebc"
+    },
+    "all_source_input_bytes_unchanged": true,
+    "runner_cache_also_checked_filesystem_generation_tokens": true,
+    "status": "ok",
+    "exit_code": 0,
+    "elapsed_seconds": 0.8179440498352051,
+    "child_user_cpu_seconds": 0.415568,
+    "child_system_cpu_seconds": 0.07554999999999999,
+    "launcher_children_peak_rss_bytes_macos": 72892416,
+    "rss_scope": "Maximum reported for children of this launcher; no OS memory cap or transitive environment lock.",
+    "caps": {
+      "CPU_soft_hard_seconds": [
+        30,
+        30
+      ],
+      "external_wall_seconds": 45
+    },
+    "stream_semantics": "runner_cache merges child stderr into stdout; the empty stderr field is protocol-only, not an independently observed child stream.",
+    "stdout_merged": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/canonical_02/stdout_merged.txt",
+      "bytes": 1076,
+      "sha256": "23863e4d23a3ebde5cd265d15b50ec9c800d79081afc07e00ecf005d8f9ac5ea"
+    },
+    "stderr_protocol": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/canonical_02/stderr_protocol.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cache_status": "fresh",
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/canonical_02/cache.txt",
+      "bytes": 1434,
+      "sha256": "13e005df2e94416592ad587eda337606c6197f863a90390bf7ab5964e3af4983"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/canonical_02/result.json",
+      "bytes": 88773,
+      "sha256": "28fab12f2ba9874a296f62cd7ed0afb7b956c8ab8af55d263b34f67b02d1c401"
+    },
+    "scope": "Actual replay of two qualified author local algebra calculations. This is reproducibility, not a new independent theorem proof, interval proof from samples, dynamics simulation or retained audit."
+  },
+  "scientific_report_equality": true,
+  "copied_fault_count": 6,
+  "fault_sensitivity_only": true,
+  "archives": [
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/CANONICAL_FINAL_MAP.json",
+      "bytes": 13215,
+      "sha256": "c0709884d27bf88734f93ea4c351968070236bd96599af343eefd1bce83a28df",
+      "members": 25
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/CANONICAL_MAP.json",
+      "bytes": 12320,
+      "sha256": "4c18d483fc63dff59b8a2851fee7ca3021b0c2df7a00708e67cfe0653ab7d797",
+      "members": 23
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/FINAL_COMPARISON_PROGRAM_MAP.json",
+      "bytes": 748,
+      "sha256": "0c8ac3ec97cb3c1509fa6cc0adc96022d42d180cccfbc797d35ddf769f9885d3",
+      "members": 1
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/FIRST_FOCUSED_FAILURE_MAP.json",
+      "bytes": 2114,
+      "sha256": "99d164d4fe8ec40c09e266ddb6ea2c58f396553786e9da0f4e3716132de6a0f8",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/FIRST_FOCUSED_PROGRAM_MAP.json",
+      "bytes": 728,
+      "sha256": "350a2b51eeed284fd0930eb48cf04c55427b01c40e6f4e1dadb52ec593d281c8",
+      "members": 1
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/FIRST_PORTABLE_RECORDS_MAP.json",
+      "bytes": 2176,
+      "sha256": "300b445255fb35d23968d76f4eaa9499416452921438e0a8dbe0e8b106b5b272",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/GRAPH_MAP.json",
+      "bytes": 3510,
+      "sha256": "ce4e88d39bbd4d3b790b2308833309a947170213a07347f19ecad25d6438f28e",
+      "members": 7
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/GRAPH_RECEIPT_MAP.json",
+      "bytes": 2085,
+      "sha256": "e4285da20fcbb2bee1e850ea4f017531a0c8215f73eb66e374b77ae667147ef9",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/INTEGRATION_PROGRAMS_MAP.json",
+      "bytes": 2528,
+      "sha256": "5ea79a92e2e4096a965e018362d93bcd5d0bbf949a92f9b3f7bc15f65a66193d",
+      "members": 5
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/LOSSLESS_EOF_REPAIR_MAP.json",
+      "bytes": 1192,
+      "sha256": "be1ee1779c5cc930b863d3a73317da7acc3bdc0876badd71d76e4431e87d5fb8",
+      "members": 2
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/PRE_REPAIR_ALIASES_MAP.json",
+      "bytes": 1722,
+      "sha256": "3738bee75e2ffb2804be601340b28dceb460a0ee83daaa1ec3aff700cd7e4e81",
+      "members": 3
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/PUBLICATION_DRAFT_MAP.json",
+      "bytes": 280260,
+      "sha256": "5644030525acc01358cc7a13c390f585b6dcd14cdeee44b35cf049151a0575b9",
+      "members": 499
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_CANONICAL_01_MAP.json",
+      "bytes": 2113,
+      "sha256": "eb6500224b507bed2aa6cc7c262b15bb276101c5e1cf6fc0733348e225bfb39d",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_CANONICAL_02_MAP.json",
+      "bytes": 2119,
+      "sha256": "c2467f0cbd7da030e300c38673da847031457b43fac8b17a078ad63dbaf8dae5",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_FAULTS_01_MAP.json",
+      "bytes": 2108,
+      "sha256": "103871db7c0bd85778da877dc758e296259a5634ace423c6b4d799ab4c35faea",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_INSTALL_ACCEPT_MAP.json",
+      "bytes": 2128,
+      "sha256": "912a1b79704113f587a34b2cb2809cb6d74c0023c00baa852f8a698bfe344381",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_LOSSLESS_EOF_REPAIR_MAP.json",
+      "bytes": 2146,
+      "sha256": "75f76a178f34e5a57a676fb8da0350286f2d7846e19a3d0263490b4efc5ea934",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_PRESERVE_OLD_ALIASES_MAP.json",
+      "bytes": 2155,
+      "sha256": "021fc72ea50fd74c9c61de957bae5f1b268057c5509983544f75a510d84bfcc9",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_REPORT_COMPARISON_FINAL_MAP.json",
+      "bytes": 2166,
+      "sha256": "99e9d3a839f54e1b7a1e47bc870a4af9c5165a14a5d493ec4620f732147b7667",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/REAL_CONTROL_REPORT_COMPARISON_MAP.json",
+      "bytes": 2138,
+      "sha256": "377e74b4765096c32835744437ac462f5831cecc80e98ea485a0c557a3f6bea0",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/SCIENTIFIC_FAULTS_MAP.json",
+      "bytes": 17979,
+      "sha256": "675fa572f882aa95b092bd429dfca60d820e81603f0a0a215c46549d9370b9e1",
+      "members": 38
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/TRANSPORT_PROGRAMS_MAP.json",
+      "bytes": 1624,
+      "sha256": "dd275b3918dbfed0f66e97bd2917de21549e219f92e4c21f8d15ea45274cff9a",
+      "members": 3
+    }
+  ],
+  "cache_status": "fresh",
+  "readiness_issue": null,
+  "helper_runner_paths": [],
+  "graph": {
+    "old_counts": {
+      "node_count": 7211,
+      "edge_count": 16166
+    },
+    "new_counts": {
+      "node_count": 7212,
+      "edge_count": 16167
+    },
+    "added": [
+      "real_control_autonomous_output_bounded_theorem_note_2026-10-17"
+    ],
+    "removed": [],
+    "rewired": [],
+    "new_node": {
+      "claim_id": "real_control_autonomous_output_bounded_theorem_note_2026-10-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "thermal_resonance_halt_bounded_theorem_note_2026-10-17"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca",
+      "path": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "runner_path": "scripts/real_control_autonomous_output_2026_10_17.py",
+      "title": "Real local preparation followed by autonomous output"
+    },
+    "new_edges": [
+      {
+        "from": "real_control_autonomous_output_bounded_theorem_note_2026-10-17",
+        "to": "thermal_resonance_halt_bounded_theorem_note_2026-10-17"
+      }
+    ],
+    "manifest_sha256": "d0220ab56c1a9fe73505166f9443aaa6d20fa5f00a8a765690250d160be74635",
+    "executions": [
+      {
+        "script": "docs/audit/scripts/run_citation_graph_build.py",
+        "started_utc": "2026-10-17T05:39:15.599151+00:00",
+        "elapsed_seconds": 128.37148704193532,
+        "wall_cap_seconds": 180,
+        "exit_code": 0,
+        "script_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+      },
+      {
+        "script": "docs/audit/scripts/write_citation_graph_manifest.py",
+        "started_utc": "2026-10-17T05:41:23.973825+00:00",
+        "elapsed_seconds": 0.08668566681444645,
+        "wall_cap_seconds": 60,
+        "exit_code": 0,
+        "script_sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+      }
+    ],
+    "scope": "New real preparation/autonomous-output note and its explicit parent citation only. Generated citation_graph.json is validation residue, not publication source."
+  },
+  "no_go_gate_trigger": false,
+  "compiled_sources": [
+    "scripts/real_control_autonomous_output_2026_10_17.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/check_route.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/freeze_packet.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/launch_check.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_halt_route/prepare_inputs.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/check_preparation.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/finalize_packet.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/launch_check.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/launch_check_v2.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/run02/import_bootstrap.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/finalize_review.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/freeze_analysis.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/inspect_provenance.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/finish_review.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/inspect_provenance.py",
+    "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/prepare_review.py"
+  ],
+  "vocabulary": [
+    {
+      "mode": "--fix",
+      "returncode": 0,
+      "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/VOCAB_fix.json\n",
+      "stderr": ""
+    },
+    {
+      "mode": "--report-only",
+      "returncode": 0,
+      "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/VOCAB_report-only.json\n",
+      "stderr": ""
+    }
+  ],
+  "local_links": [
+    {
+      "source": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "scripts/real_control_autonomous_output_2026_10_17.py"
+    },
+    {
+      "source": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "source": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_control_root_review/QUALIFICATION.md.txt"
+    },
+    {
+      "source": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_control_root_review/ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/real_control_autonomous_output_2026_10_17_inputs/SOURCE_MAP.json"
+    },
+    {
+      "source": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/real_control_autonomous_output_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json"
+    },
+    {
+      "source": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/real_control_autonomous_output_2026_10_17_inputs/REPRODUCTION_PLAN.json"
+    },
+    {
+      "source": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/real_control_autonomous_output_2026_10_17_inputs/PUBLICATION_STATUS.json"
+    },
+    {
+      "source": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/ROOT_PORTABILITY_ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/EXECUTION_STATUS.md"
+    },
+    {
+      "source": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/SOURCE_MAP.json"
+    },
+    {
+      "source": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/EXECUTION.md.txt"
+    },
+    {
+      "source": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/RESOURCE_PLAN.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/ROOT_PORTABILITY_ACCEPTANCE.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/CANONICAL_FINAL_MAP.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/REPORT_COMPARISON.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/ROOT_MUTATION_REVIEW.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/SCIENTIFIC_FAULTS_MAP.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/LOSSLESS_EOF_REPAIR.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/EXECUTION_STATUS.md"
+    }
+  ],
+  "publication_paths": 288,
+  "editable_prompt_files_changed": [],
+  "conformance_dispositions": {
+    "1_self_containment": "All exact proof bodies/reviews/source identities/failures are portable, raw bytes recoverable; finite109-input calculation closure.",
+    "2_cache_execution": "Actual governed cache replay, explicit caps and true fsynced prelaunch; full streams and all failed attempts preserved.",
+    "3_claim_scope": "Conditional-support, exact nominal real apparatus and supplied pure seed/C1 control premises; no native, practical, all-future-finite or calibration claim.",
+    "4_negative_claims": "Positive theorem preserves the original narrow unprepared-seed countercase at slower onset. Explicit N1 five-family limitation, no general no-go PASS; machine gate false.",
+    "5_proof_obligations": "Two complete written bodies and separate source/interface qualifications; mathematical premises and historical pending scopes preserved.",
+    "6_runner_validity": "16 reviewed AST adaptations, inert fail-closed finite resolver, exact payload comparison and six scientific fault cases. Replay is not independent proof.",
+    "7_reachability": "Single bounded-theorem artifact with paired runner and explicit upstream target; focused cached readiness passes.",
+    "8_graph_links": "Serialized governed graph build then writer; one child and one parent edge, no old rewiring; manifest co-published. All current wrapper/packet links resolve.",
+    "9_note_structure": "Explicit claim type, source/parent identity, premises, conclusions, full proofs, verification and open obligations.",
+    "10_propose_ratify": "Regular review PR only; no audit authority, axiom/prompt edits or science merge.",
+    "11_sourced_counts": "Exact manifests/source pairs and runtime records; check counts are not independent results. Standard machinery credited, no literature-priority claim.",
+    "12_delivery_gates": "Focused changed-scope pre-review complete. Full integrated-current-main pipeline, strict audit-status lint and changed-evidence checks remain shared later landing obligations."
+  },
+  "remaining_obligations": [
+    "Exact staged and remote publication verification",
+    "Ancestor inclusion, shared integrated-current-main landing gates and independent retained audit",
+    "Native physical supply, calibration/noise and complete capture/reset/reuse"
+  ]
+}

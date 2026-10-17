@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py
+runner_sha256: 1f9df6279783d86841ce6cae79a02319f2b605cac2875e5a71d6dd4fb4ed21b0
+input_fingerprint_sha256: 4e8cd060187cbf99e3466db84e3cfadc04780b10da98ebac02a1280a68c39e7e
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 116.10
+status: ok
+----- stdout -----
+PASS 60 codes (as in the orbit note)
+PASS all 8 translation-invariant sign sectors of all 60 codes are valid (-1 not in the signed group, L = 4)
+plaquette flux (sector, i-exponent per orientation): count {((0, 0, 0), (0, 0, 0)): 60, ((1, 1, 1), (2, 2, 2)): 60}
+PASS the hopping charge sees flux 0 on every plaquette in sector (0,0,0) and flux pi in sector (1,1,1), all 60 codes
+  (orbit size, sector, rotation type, bare permutation preserves signs): (4, (0, 0, 0), 'C2edge', True) 36
+  (orbit size, sector, rotation type, bare permutation preserves signs): (4, (0, 0, 0), 'C3', True) 24
+  (orbit size, sector, rotation type, bare permutation preserves signs): (4, (0, 0, 0), 'E', True) 12
+  (orbit size, sector, rotation type, bare permutation preserves signs): (4, (1, 1, 1), 'C2edge', True) 36
+  (orbit size, sector, rotation type, bare permutation preserves signs): (4, (1, 1, 1), 'C3', True) 24
+  (orbit size, sector, rotation type, bare permutation preserves signs): (4, (1, 1, 1), 'E', True) 12
+  (orbit size, sector, rotation type, bare permutation preserves signs): (6, (0, 0, 0), 'C2axis', True) 12
+  (orbit size, sector, rotation type, bare permutation preserves signs): (6, (0, 0, 0), 'C2edge', True) 24
+  (orbit size, sector, rotation type, bare permutation preserves signs): (6, (0, 0, 0), 'E', True) 12
+  (orbit size, sector, rotation type, bare permutation preserves signs): (6, (1, 1, 1), 'C2axis', True) 12
+  (orbit size, sector, rotation type, bare permutation preserves signs): (6, (1, 1, 1), 'C2edge', True) 24
+  (orbit size, sector, rotation type, bare permutation preserves signs): (6, (1, 1, 1), 'E', True) 12
+  (orbit size, sector, rotation type, bare permutation preserves signs): (12, (0, 0, 0), 'C2edge', True) 36
+  (orbit size, sector, rotation type, bare permutation preserves signs): (12, (0, 0, 0), 'E', True) 36
+  (orbit size, sector, rotation type, bare permutation preserves signs): (12, (1, 1, 1), 'C2edge', True) 36
+  (orbit size, sector, rotation type, bare permutation preserves signs): (12, (1, 1, 1), 'E', True) 36
+PASS in sectors (0,0,0) and (1,1,1), every stabilizing rotation of every code acts as a bare qubit permutation (no sign correction)
+mixed sectors: number of codes with a stabilizing rotation that needs a sign correction {(0, 0, 1): 44, (0, 1, 0): 44, (0, 1, 1): 44, (1, 0, 0): 44, (1, 0, 1): 44, (1, 1, 0): 44}
+PASS control: in each of the 6 mixed sectors, some code has a stabilizing rotation that needs a sign correction
+pair test: covered (code, C2) pairs 72 not covered 36
+pair eigenvalues (sector, rotation, lambda): count {('flux0', 'C2edge', 1): 672, ('fluxpi', 'C2edge', 1): 672}
+PASS pair test: for all 72 covered (code, C2) pairs, in both sectors and for every tested x, the swapped fermion pair has P_R-eigenvalue lambda = +1, eta=-1 is conditional on the stated localization relation
+control (toric code boson) pair eigenvalues: {1: 56}
+PASS control: in the untwisted toric code (bosonic charge) the swapped pair has lambda = +1 for every edge C2
+general pair test, L = 8 (orbit size, rotation, sector, lambda): count {(4, 'C2edge', (0, 0, 0), 1): 72, (4, 'C2edge', (1, 1, 1), 1): 72, (6, 'C2axis', (0, 0, 0), 1): 24, (6, 'C2edge', (0, 0, 0), 1): 48, (6, 'C2axis', (1, 1, 1), 1): 24, (6, 'C2edge', (1, 1, 1), 1): 48, (12, 'C2edge', (0, 0, 0), 1): 72, (12, 'C2edge', (1, 1, 1), 1): 72}
+PASS general pair test (L = 8): all 108 (code, C2) pairs, both sectors, two separated x each: lambda = +1, eta=-1 is conditional on the stated localization relation, with D2 consistency open
+control: toric code, lambda for (plaquette-centred C2z, vertex C2z) at flux 0 and pi: {0: (1, 1), 1: (-1, 1)}
+PASS control: toric code boson has lambda = +1 at flux 0; with pi flux, lambda = -1 for the plaquette-centred C2 (Aharonov-Bohm) and +1 for the vertex C2
+per_element: all 60 codes, all 8 translation-invariant sign sectors, every stabilizing rotation
+per_site: one qubit per edge; exact Pauli algebra with phases on the L = 4 torus
+per_mode: checked and not executed — no momentum-mode or spectral-dispersion claim is tested
+per_block: checked and not executed — no coarse-grained block dynamics is tested
+lattice_wide: L = 4 torus for sign sectors and covariance; L = 8 for all 108 pair tests; no infinite-volume localization is certified
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

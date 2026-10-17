@@ -1,0 +1,2 @@
+time 34.3s
+edge C2 eps classes (square kind, set of lambda over pairs/paths): {('other', (-1,)): 8, ('other', (-1, 1)): 16, ('-1', (-1,)): 8}

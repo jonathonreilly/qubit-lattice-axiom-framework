@@ -1,0 +1,142 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "BRANCH_START.json",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/root_preparation/BRANCH_START.json.txt",
+      "bytes": 581,
+      "sha256": "2f239410a92355d5f3a970ae74dacf67922aff7285e87bcd717c209336f1900d",
+      "compression": "none",
+      "raw_bytes": 581,
+      "raw_sha256": "2f239410a92355d5f3a970ae74dacf67922aff7285e87bcd717c209336f1900d"
+    },
+    {
+      "original_path": "INSTALLATION.json",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/root_preparation/INSTALLATION.json.txt",
+      "bytes": 735,
+      "sha256": "5e095b9a03cffcb9cb2b28943143185bcacbae99f6e52671130511a60f77e069",
+      "compression": "none",
+      "raw_bytes": 735,
+      "raw_sha256": "5e095b9a03cffcb9cb2b28943143185bcacbae99f6e52671130511a60f77e069"
+    },
+    {
+      "original_path": "PUBLICATION_SCOPE_AND_VALUE.md",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/root_preparation/PUBLICATION_SCOPE_AND_VALUE.md.txt",
+      "bytes": 4114,
+      "sha256": "43bda24a133232233b374ca9314bd7709273416295e2184f8bdba67996ee2e45",
+      "compression": "none",
+      "raw_bytes": 4114,
+      "raw_sha256": "43bda24a133232233b374ca9314bd7709273416295e2184f8bdba67996ee2e45"
+    },
+    {
+      "original_path": "accept_transport.py",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/root_preparation/accept_transport.py.txt",
+      "bytes": 4555,
+      "sha256": "442b27a93b583fdfa0b99772daa3206ec57748ecb309f86aa2fe3b130c07d272",
+      "compression": "none",
+      "raw_bytes": 4555,
+      "raw_sha256": "442b27a93b583fdfa0b99772daa3206ec57748ecb309f86aa2fe3b130c07d272"
+    },
+    {
+      "original_path": "archive_evidence.py",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/root_preparation/archive_evidence.py.txt",
+      "bytes": 2126,
+      "sha256": "a75ff7d5d8cd02be2e10b7877f71998ca7ddad7b93de1528e22861c1a5fce09d",
+      "compression": "none",
+      "raw_bytes": 2126,
+      "raw_sha256": "a75ff7d5d8cd02be2e10b7877f71998ca7ddad7b93de1528e22861c1a5fce09d"
+    },
+    {
+      "original_path": "graph_check.py",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/root_preparation/graph_check.py.txt",
+      "bytes": 2739,
+      "sha256": "54b4c37e22490789496583769f514c0fa882cee8aaa0617b0604c174d2a67c27",
+      "compression": "none",
+      "raw_bytes": 2739,
+      "raw_sha256": "54b4c37e22490789496583769f514c0fa882cee8aaa0617b0604c174d2a67c27"
+    },
+    {
+      "original_path": "install_overlay.py",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/root_preparation/install_overlay.py.txt",
+      "bytes": 11112,
+      "sha256": "4fbbc6729ea87d47fcd4e564745c9b28a18099c7a243c2052f740c962414201b",
+      "compression": "none",
+      "raw_bytes": 11112,
+      "raw_sha256": "4fbbc6729ea87d47fcd4e564745c9b28a18099c7a243c2052f740c962414201b"
+    },
+    {
+      "original_path": "prior_art/SCOPED_CONTEXT.json",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/root_preparation/prior_art/SCOPED_CONTEXT.json.txt",
+      "bytes": 161747,
+      "sha256": "682832f925e2256d1f149410214e4294da478f1fa353897f855a1ff1957a3fe8",
+      "compression": "none",
+      "raw_bytes": 161747,
+      "raw_sha256": "682832f925e2256d1f149410214e4294da478f1fa353897f855a1ff1957a3fe8"
+    },
+    {
+      "original_path": "prior_art/SEARCH.json",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/root_preparation/prior_art/SEARCH.json.txt",
+      "bytes": 1043,
+      "sha256": "c3be44e6e57200ce6f6f5e56fd5c1f6d9ec373b3822e4417117a53ca202ec9fc",
+      "compression": "none",
+      "raw_bytes": 1043,
+      "raw_sha256": "c3be44e6e57200ce6f6f5e56fd5c1f6d9ec373b3822e4417117a53ca202ec9fc"
+    },
+    {
+      "original_path": "prior_art/search_0.stderr",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "prior_art/search_0.stdout",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/root_preparation/prior_art/search_0.stdout.txt",
+      "bytes": 2599,
+      "sha256": "506144c67733772ed035f651604b6ddad7da17acdc97e2b55c0ebadd10fe29e6",
+      "compression": "none",
+      "raw_bytes": 2599,
+      "raw_sha256": "506144c67733772ed035f651604b6ddad7da17acdc97e2b55c0ebadd10fe29e6"
+    },
+    {
+      "original_path": "prior_art/search_1.stderr",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "prior_art/search_1.stdout",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/root_preparation/prior_art/search_1.stdout.gz",
+      "bytes": 2145,
+      "sha256": "88d4e63b409ecfbcf2de2e5b4589ab3f47b4decc1e120476045fd362222b890f",
+      "compression": "gzip",
+      "raw_bytes": 5208,
+      "raw_sha256": "f4d641ef2d8b2d7ab1ad0a95b84dbc041eec10267969c4e412f4a19c8ea971dd"
+    },
+    {
+      "original_path": "run_canonical.py",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/root_preparation/run_canonical.py.txt",
+      "bytes": 5714,
+      "sha256": "d55678eb15ac01601248689622c5f18a6bdb0f39963bb56531ccf8605ae934a6",
+      "compression": "none",
+      "raw_bytes": 5714,
+      "raw_sha256": "d55678eb15ac01601248689622c5f18a6bdb0f39963bb56531ccf8605ae934a6"
+    },
+    {
+      "original_path": "run_mutations.py",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/root_preparation/run_mutations.py.txt",
+      "bytes": 6112,
+      "sha256": "190f6e33529d1dfa7356a6e8888151803107e62fbf2a54e20676688df1f7875f",
+      "compression": "none",
+      "raw_bytes": 6112,
+      "raw_sha256": "190f6e33529d1dfa7356a6e8888151803107e62fbf2a54e20676688df1f7875f"
+    }
+  ],
+  "count": 15
+}

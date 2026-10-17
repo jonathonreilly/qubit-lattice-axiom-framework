@@ -1,0 +1,217 @@
+{
+  "scope": "Scientific rejection tests, not additional independent theorem evidence. Frozen sources/inputs unchanged. Only an intended scientific assertion failure counts; a checksum failure, timeout or syntax failure does not.",
+  "plan": {
+    "bytes": 2825,
+    "sha256": "cbd8a857822e63d59fab6a25df96936c6bed36b26fe273a75f83ffeea046d3ec"
+  },
+  "cases": [
+    {
+      "name": "coefficient_box_overextension",
+      "source_role": "author",
+      "started_utc": "2026-10-17T01:33:54.839139+00:00",
+      "elapsed_seconds": 0.8806232498027384,
+      "exit_code": 1,
+      "timed_out": false,
+      "cpu_cap_seconds": 60,
+      "external_wall_cap_seconds": 20,
+      "old": "a = F(1, 10**8)",
+      "new": "a = F(1, 10**6)",
+      "expected_scientific_assertion": "assert eta < F(1226, 10**10) and A*eta < 1",
+      "scientific_assertion_rejected": true,
+      "source": {
+        "bytes": 12497,
+        "sha256": "36383750c1210b3960830d8c39ddf95abff7a43ac57d16f5ee79028f5cfab054"
+      },
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 843,
+        "sha256": "1881bbfb7572b0f10c21654bb3aba2db24cb40fe6a25a185c0d529fa7a3f9bb0"
+      }
+    },
+    {
+      "name": "inverse_ceiling_overextension",
+      "source_role": "author",
+      "started_utc": "2026-10-17T01:33:55.720909+00:00",
+      "elapsed_seconds": 0.17517504189163446,
+      "exit_code": 1,
+      "timed_out": false,
+      "cpu_cap_seconds": 60,
+      "external_wall_cap_seconds": 20,
+      "old": "A = F(166)",
+      "new": "A = F(167)",
+      "expected_scientific_assertion": "assert actual_inverse_bound < 167",
+      "scientific_assertion_rejected": true,
+      "source": {
+        "bytes": 12497,
+        "sha256": "533aeffb0591f2086e20d596392580c91e2419a7f56204dba31fabf9afecc139"
+      },
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 825,
+        "sha256": "d872ebc868a0622f48df5cb1c3423193a572d846021d78c74b11ce1e65367c6f"
+      }
+    },
+    {
+      "name": "omitted_closed_tail_variation",
+      "source_role": "author",
+      "started_utc": "2026-10-17T01:33:55.897234+00:00",
+      "elapsed_seconds": 0.29263979103416204,
+      "exit_code": 1,
+      "timed_out": false,
+      "cpu_cap_seconds": 60,
+      "external_wall_cap_seconds": 20,
+      "old": "eta = b+c+J*J*b/(g*(g-b))",
+      "new": "eta = b+c",
+      "expected_scientific_assertion": "assert author['constants']['extra_reflection_error']['exact_rational'] == independent['derived_bounds']['extra_reflection']['exact']",
+      "scientific_assertion_rejected": true,
+      "source": {
+        "bytes": 12481,
+        "sha256": "3b3740dcc7735242755d81af4739884d447c247a224a1540829c2c5e79b9d9d3"
+      },
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 756,
+        "sha256": "d632d7c2458ab1c454a122621e90e8470297cf0abbcf2d9759db590455b0d22b"
+      }
+    },
+    {
+      "name": "lost_vacuum_darkness",
+      "source_role": "independent",
+      "started_utc": "2026-10-17T01:33:56.190701+00:00",
+      "elapsed_seconds": 0.1757258754223585,
+      "exit_code": 1,
+      "timed_out": false,
+      "cpu_cap_seconds": 60,
+      "external_wall_cap_seconds": 20,
+      "old": "derivatives = {'DeltaA': nA,",
+      "new": "derivatives = {'DeltaA': eye-nA,",
+      "expected_scientific_assertion": "DeltaA_annihilates_full_vacuum_embedding",
+      "scientific_assertion_rejected": true,
+      "source": {
+        "bytes": 16417,
+        "sha256": "b602aa020691dbbc85a2aed97c7f9a6fc362cc01646b9878f07abfdf36c1a66c"
+      },
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 1582,
+        "sha256": "98bcc09ec80a6ff03a9bacb687ca9f755ab5d31531340c2c020e0e1c66bce3cb"
+      }
+    },
+    {
+      "name": "closed_surface_sign",
+      "source_role": "independent",
+      "started_utc": "2026-10-17T01:33:56.367262+00:00",
+      "elapsed_seconds": 0.1775901671499014,
+      "exit_code": 1,
+      "timed_out": false,
+      "cpu_cap_seconds": 60,
+      "external_wall_cap_seconds": 20,
+      "old": "G = q/J",
+      "new": "G = -q/J",
+      "expected_scientific_assertion": "surface_endpoint_1/7",
+      "scientific_assertion_rejected": true,
+      "source": {
+        "bytes": 16414,
+        "sha256": "42c01489ffefb36096e66c0c0f171ec76cb845423d09e71d111ee63de21abd44"
+      },
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 1233,
+        "sha256": "fbd32b1add05ad1a1e3016039f8010eabc7b3cd7441ef02fea90cce7b3bbc9b4"
+      }
+    },
+    {
+      "name": "noncommuting_resolvent_order",
+      "source_role": "independent",
+      "started_utc": "2026-10-17T01:33:56.545745+00:00",
+      "elapsed_seconds": 0.190613416954875,
+      "exit_code": 1,
+      "timed_out": false,
+      "cpu_cap_seconds": 60,
+      "external_wall_cap_seconds": 20,
+      "old": "zero('noncommuting_resolvent_identity', Rs-Rt+Rs*dHt*Rt)",
+      "new": "zero('noncommuting_resolvent_identity', Rs-Rt+Rs*Rt*dHt)",
+      "expected_scientific_assertion": "noncommuting_resolvent_identity",
+      "scientific_assertion_rejected": true,
+      "source": {
+        "bytes": 16413,
+        "sha256": "26aea74dcad26c7f520aec3cf3b7933b58ded93fdc716b831f3a9b14a028f68e"
+      },
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 1608,
+        "sha256": "90a9562c55aff8f1d3a1c1877ece87f70dc9e181af2920e1057d306bc57c3b84"
+      }
+    },
+    {
+      "name": "common_phase_sign",
+      "source_role": "independent",
+      "started_utc": "2026-10-17T01:33:56.737312+00:00",
+      "elapsed_seconds": 0.21892041573300958,
+      "exit_code": 1,
+      "timed_out": false,
+      "cpu_cap_seconds": 60,
+      "external_wall_cap_seconds": 20,
+      "old": "zeta = -alpha/z**4",
+      "new": "zeta = alpha/z**4",
+      "expected_scientific_assertion": "nominal_common_phase_contract",
+      "scientific_assertion_rejected": true,
+      "source": {
+        "bytes": 16412,
+        "sha256": "e3605ba43dfa340bd3d2d54cf1da706b6a33b29f5d23ca87d655ae8eea1cda3f"
+      },
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 1272,
+        "sha256": "82486c29a7f39e0e82fe5053575d0810fafb9e87519b4698e3dceb558b85b284"
+      }
+    },
+    {
+      "name": "finite_clock_horizon_overextension",
+      "source_role": "independent",
+      "started_utc": "2026-10-17T01:33:56.957103+00:00",
+      "elapsed_seconds": 0.21621845802292228,
+      "exit_code": 1,
+      "timed_out": false,
+      "cpu_cap_seconds": 60,
+      "external_wall_cap_seconds": 20,
+      "old": "T, N, M, Tobs = 10**13, 22*10**12, 9*10**14, 4*10**13",
+      "new": "T, N, M, Tobs = 10**13, 22*10**12, 9*10**14, 5*10**13",
+      "expected_scientific_assertion": "finite_clock_chebyshev_exponent_margin",
+      "scientific_assertion_rejected": true,
+      "source": {
+        "bytes": 16413,
+        "sha256": "ef52f2173a73f81baf9dadf16723a79498db3845ca607b401cbad921730d702f"
+      },
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "bytes": 1660,
+        "sha256": "2d23b677b1d73b397ce350ac21e507e5bbf6f675949dfd610e7fd9e649ab2239"
+      }
+    }
+  ]
+}

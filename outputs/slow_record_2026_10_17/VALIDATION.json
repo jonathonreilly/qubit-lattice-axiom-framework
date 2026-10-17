@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-17T18:23:01.602135+00:00",
+  "note_sha256": "2bda0ce48663763bdd3964b2a8bd9c6a160a45a32f7e56e94772cbfa98865d9d",
+  "manifest_sha256": "2bbb2380c208fe46e76d4727221d82aa1056510e6fa0b2b8d0ea8df9de342e07",
+  "integration_review_sha256": "b332365ae599719faf13baec91e859f2eb72c5d99ad291aa749747e0a9533337",
+  "citation_graph": {
+    "nodes": 7228,
+    "edges": 16201,
+    "builder_exit": 0,
+    "manifest_writer_exit": 0
+  },
+  "limits": "Analytical checks with disclosed shared ancestry. No new dynamics runner, combined-main pipeline or retained audit. No editable prompt changes."
+}

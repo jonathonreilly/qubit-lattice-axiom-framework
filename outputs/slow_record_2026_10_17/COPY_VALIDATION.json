@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-10-17T18:23:01.602135+00:00",
+  "note_sha256": "2bda0ce48663763bdd3964b2a8bd9c6a160a45a32f7e56e94772cbfa98865d9d",
+  "manifest_sha256": "2bbb2380c208fe46e76d4727221d82aa1056510e6fa0b2b8d0ea8df9de342e07",
+  "new_source_files": 16,
+  "inherited_mappings": 52,
+  "repository_dependencies": 4,
+  "main_note_links": 25,
+  "scope": "Exact byte hashes/lengths, inherited repository identities, note local link existence. No scientific rerun/audit."
+}

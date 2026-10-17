@@ -1,6 +1,6 @@
 {
- "edge_count": 16197,
- "node_count": 7227,
+ "edge_count": 16201,
+ "node_count": 7228,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -20113,6 +20113,10 @@
   "slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12": {
    "deps_hash": "9defae253834",
    "out_degree": 2
+  },
+  "slow_output_local_record_finite_window_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "abd71353574e",
+   "out_degree": 4
   },
   "slow_variables_derived_one_body_closure_link_is_a_coordinate_bounded_theorem_note_2026-06-09": {
    "deps_hash": "96b72bb31cc5",

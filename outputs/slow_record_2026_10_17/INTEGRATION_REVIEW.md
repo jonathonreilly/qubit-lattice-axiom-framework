@@ -1,0 +1,52 @@
+# Publication integration check: slow output storage
+
+Disposition: conditional support for the publication note and source-inventory integration, with the narrow reference-description corrections recorded below. No new mathematical gap or numerical correction was found. This is a selective publication review, not retained audit certification, a repository-copy receipt, or a new independent proof of every ancestor.
+
+## Revision, exposure and corrections
+
+Read the complete prepared note at8b85abd8518ad3089d27e39ef51f4645c2c7e707421530d190c63634b95e2c89 and the complete manifest structure at2bbb2380c208fe46e76d4727221d82aa1056510e6fa0b2b8d0ea8df9de342e07. The initial manifest display was truncated; all entries were subsequently parsed and printed as a complete compact inventory, and every declared source/repository hash was checked. The truncation was not treated as finished verification.
+
+The complete original proof component readings and my immediately preceding synthesis review remain applicable: compositionab552c4002af8388d5e223cf81390cdcbaa74685affda5c263048cbea73cdb2a, reviewc6d82eaf1e4789f6b4f6b6f5c0fe97a0201fce1dbe7e99b294995d76e516a628. I authored the attachment and slow-resource derivation and checked the gate, emitter and synthesis. This integration check is independent of the publication author, not blind, model-diverse or independent recertification of my own ancestors. The author/root exposed the intended comparison and status changes.
+
+I requested two closely related wording clarifications in the new standalone proof summary: the FULL8 mathematical reference is shifted by ALL B eigenvalues, including six excited-source directions per parity; only the four prepared-vacuum restrictions have old energies b=1,3. Also, it is the TWO distinct b=1 and b=3 spectral supports that are disjoint; both parities share those same two supports. The underlying emitter proof already states the correct construction, so these changes repair the publication description without altering its mathematics or numbers. The author makes the edits; I do not rewrite the source.
+
+Final supported NOTE.md SHA256: 2bda0ce48663763bdd3964b2a8bd9c6a160a45a32f7e56e94772cbfa98865d9d. Final SOURCES.json SHA256: 2bbb2380c208fe46e76d4727221d82aa1056510e6fa0b2b8d0ea8df9de342e07. Inspected both exact correction deltas against the preserved NOTE_v2.md (8b85abd8518ad3089d27e39ef51f4645c2c7e707421530d190c63634b95e2c89) and NOTE_v3.md (496f3399d096384b508e0e52f023cb0ac6ee585aec2530f5f069a224decdfa9b). Only the reference-description sentence and its adjacent support clarification changed; no formula, proof constant, link or manifest changed. Both requested corrections are resolved.
+
+Only the requested review directory was written. No science runner, numerical sweep, dynamics, solver, original recalibration, delegation, W/Git, publication, audit, checkpoint, model or editable-prompt change was performed. Applicable unchanged local instructions were reused.
+
+## Scientific integration
+
+The standalone physical section preserves the inherited exact coefficients, shared B, source contacts, literal K/W, scalar c_att, two45-head arms, F40 converters, ell20 input and emitter, eighteen cable sites,24-head gate, single record and rigid lattice transform. I compared its inherited geometry/coefficient passages with the existing attached-record note atf5ad73714d96536b965802e7bcb54c011f329e684d1ffd84e4e13fb4a37a429f and the previously checked attachment/resource sources. No second source pair or record is introduced. The slow ray begins at a distinct new site beyond retained gate o. The nearest-neighbor realization keeps selective installation as an explicit premise; incidental geometric adjacency does not become an extra interaction.
+
+The new connector, first-site and later occupation terms are the same fullspace positive construction as the checked scalar-interface and resource sources. They restore relative diagonal2j without new vacancy constants. The structured emitter, global scalar, old aging and common calibration phase are retained. The note correctly distinguishes hoppingg from the full one-head diagonal and large physical source loads. The full eight-dimensional reference clarification is essential to its new mass-summary paragraph and is now part of the corrected publication wording.
+
+The packet coefficient has the checked61.5q+.5k+172k_old(q) phase and the correct slow velocity/Jacobian, with firstslowm0 origin. It retains the hard-band cutoff, reflected reference mass and supplied unimodular zeta. Wrong-window prepared inputs remain charged with their actual output-window phases. The note carries the exact two-lip signs and direct DeltaL recovery term, complete finite coordinates and closed tails, one omitted-state charge, and full inversec=1/1.03. It does not replace that constant by the selected scalar.98 margin.
+
+The all-time sum remains .003382<.0034, the two-window local allowance remains .000410, and the qualitative complete normalized asymptotic ceiling remains .001332. The finite compression gives .003401 through2e15, and the scalar onset yields success>.9932 and normalized successful-vector error<.00681 on[1e15,2e15]. The complete finite-vector bound.083 is distinct from the asymptotic.001332. The successful CP comparator is subnormalized, and no normalized-channel diamond bound is claimed after nonlinear conditioning. These statements reproduce the checked synthesis scope; publication headings and explanatory additions do not promote a scalar packet bound into an actual-device claim without its source/emitter/recovery legs.
+
+## Resources and comparison
+
+The exact unmerged decomposition retains M+236 heads, M+241 physical qubits, M+237 head edges and2M+277 positive blocks. At M=5e9 these are5,000,000,236;5,000,000,241;5,000,000,237; and10,000,000,277 respectively. The M=1 cap/first-site special case is explicit. All original source loads and exact correlated coefficient-supply assumptions survive.
+
+I refreshed the actual comparison statements in the existing attached-record note, including its finite section. That note supplies old M=1.5e13, physical count15,000,000,000,240, subnormalized record1 error<.004501 through2e15 and success>.991 on[1e15,2e15]. Its complete asymptotic ceiling is.001061. The new note compares the SAME type of finite branch norm and chosen read interval, using each device's own specified outgoing packet, and discloses the different M indexing. The factor3000 is the ratio of the displayed receiver-count parameters, not an exact ratio of total physical qubits or a lower-bound/optimality theorem.
+
+The worsening from infinite asymptotic.001061 to.001332 is expressly stated. Neither a speed improvement nor an across-the-board accuracy improvement is claimed. These are sufficient exact-nominal constructions; no tolerance or practical-engineering claim follows. PR9675 is local-document provenance in this review; I did not inspect a remote PR or claim its current merge state.
+
+## Manifest and portable dependencies
+
+Deterministic inventory checks read all listed data without executing any scientific file. Actual outcomes:
+
+- All16 new source/check files exist at their declared research paths, match the manifest SHA256 values, and match all declared byte counts. There are eight pairs and no duplicate source paths.
+- All52 inherited mappings resolve to existing files in outputs/attached_record_2026_10_17/source_checks and match their declared hashes. Their original paths are unique. The inherited manifest itself matches9e1515b0f478bc6ce569b4c827126560a063fd902643c40a056de1defc5eaad5.
+- All four repository dependencies match their pins: original endpoint71c65d72570a32365ded6dacfc78308ac8429d9e8003a3731af88b5600eb45ff; weighted transfer735ec540842018f17ecde72b43d102f52dd76f9df65682eaaeec64498628c429; converterf8480df631730d3e4e9fadb07b73486a1e02aec650511f7eae859ae2dabbe311; previous record notef5ad73714d96536b965802e7bcb54c011f329e684d1ffd84e4e13fb4a37a429f.
+- All25 note Markdown targets, interpreted relative to the declared docs destination, resolve either to an existing repository file or to a declared new packet destination. Seventeen are the new manifest and16 declared copies; eight are existing destinations. No missing undeclared note target was found.
+
+This verifies proposed source identities and portable mapping coverage, NOT completed repository copying. Root owns subsequent copy/link/dependency-graph execution evidence and final placement. Immutable-source sibling links are intentionally resolved through the manifest; the note does not falsely claim they are all directly clickable at their copied relative positions.
+
+The dependency edges point from composition to its six proof components; gate, emitter, recovery, profile, scalar-reference and resource dependencies have controlling mapped sources and checks. The unchanged source, endpoint, scalar-reference, original moment, finite inverse, exact center arithmetic and corrected recovery/endpoint material are available through the inherited packet and repository notes. Correction-history entries remain marked nonproof; the endpoint center erratum remains controlling qualification rather than an overwritten historical pass. Exposure-only triage and failed alternatives are explicitly excluded from proof obligations. This is adequate integration coverage for the changed proof, not a claim to have re-audited all52 inherited texts in this turn.
+
+## Status and limits
+
+The note says prepared for review, preserves conditional physical/calibration premises and makes no retained/audit claim. It separates component checks from publication integration and later copy evidence; historical pending headers do not erase their paired final checks. Same-model exposure and the drafter's authored legs are disclosed. The source packet's preparation history is not confused with a completed repository publication.
+
+Infinite all-time and asymptotic statements remain tied to the infinite apparatus. The finite guarantee is a single chosen read in its stated window, not continuous monitoring, repeated measurement, a stopping-time protocol, an irreversible latch or all-future storage. No reset/reuse, native coefficient generator, manufacturing tolerance, autonomous preparation, native Record semantics or physical-unit derivation is supplied. Subject to the listed conditional ancestry, the corrected note is ready for the root's separate publication integration steps.

@@ -1,0 +1,26 @@
+{
+  "status": "Conditional all-late integration supported; no retained audit",
+  "note_sha256": "d18f41d78e08096d45d85b331271175d8116b1d4a67cb93d4fdb4021fe6e06f0",
+  "manifest_sha256": "28258dc33ffaa6955748a07f9ad079aae168ff85c46b6e1003ca62f5a45212ad",
+  "integration_sha256": "e9ddcbfa3a3e9988494741675e65f388a487966d35bbf52d5de5e199538938ed",
+  "new_files": 4,
+  "inherited_mappings": 170,
+  "inherited_context_not_numerical_premise": 1,
+  "canonical_dependencies": 12,
+  "inherited_manifests": 9,
+  "resolved_note_links": 14,
+  "explicit_new_source_paths_resolved": true,
+  "limits": "Infinite receiver only; no numeric onset selected, finite permanence, scientific simulation or retained audit. Shared source/model exposure disclosed.",
+  "graph": {
+    "old_nodes_unchanged": true,
+    "new_nodes": {
+      "all_late_three_site_complete_output_bounded_theorem_note_2026-10-17": {
+        "deps_hash": "a56a18f03b30",
+        "out_degree": 3
+      }
+    },
+    "node_count": 7238,
+    "edge_count": 16222,
+    "added_edges": 3
+  }
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 16219,
- "node_count": 7237,
+ "edge_count": 16222,
+ "node_count": 7238,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1841,6 +1841,10 @@
   "ai_methodology_note_2026-04-25": {
    "deps_hash": "d9d9486f55b0",
    "out_degree": 19
+  },
+  "all_late_three_site_complete_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "a56a18f03b30",
+   "out_degree": 3
   },
   "all_time_energy_comparison_bounded_theorem_note_2026-10-13": {
    "deps_hash": "ddd47276b74a",

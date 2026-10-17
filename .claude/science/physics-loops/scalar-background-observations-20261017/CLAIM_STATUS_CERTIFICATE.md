@@ -1,0 +1,2 @@
+# Claim certificate
+Target type bounded_theorem; actual current surface conditional-support. Kinematic reconstruction and explicit original-equation witnesses are checked mathematical consequences of declared premises. No empirical test, action selection, audit verdict or retained promotion is claimed. New action functions are examples, not approved physical primitives. Independent exact checks completed; full-source Astra-low review complete with bounded claims. Formal audit remains separate.

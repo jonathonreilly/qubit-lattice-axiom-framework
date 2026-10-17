@@ -1,0 +1,47 @@
+{
+  "1/2": {
+    "F": "6 - exp(-6*zeta)/2",
+    "V": "6*exp(-2*zeta) - exp(-8*zeta)/16",
+    "H_E": "3/(2*sqrt(tau))",
+    "zeta_dot": "1/(2*sqrt(tau))",
+    "rho_E": "1/(8*tau**4)",
+    "identities": {
+      "Friedmann": "0",
+      "Raychaudhuri": "0",
+      "dust_continuity": "0",
+      "scalar_equation": "0",
+      "Jordan_density": "0",
+      "Jordan_Hubble": "0",
+      "Jordan_scale": "0",
+      "normalization_A1": "0"
+    },
+    "F_min": "2",
+    "V_min": "95/16",
+    "V_derivative_bracket": "1/4 - 6*tau**3",
+    "alpha_squared_at_A1": "2/11",
+    "V_at_A1": "95/16"
+  },
+  "1/4": {
+    "F": "42 - 2*exp(-14*zeta)",
+    "V": "63*exp(-6*zeta)/8 - exp(-20*zeta)/16",
+    "H_E": "7/(4*tau**(3/4))",
+    "zeta_dot": "1/(4*tau**(3/4))",
+    "rho_E": "1/(8*tau**5)",
+    "identities": {
+      "Friedmann": "0",
+      "Raychaudhuri": "0",
+      "dust_continuity": "0",
+      "scalar_equation": "0",
+      "Jordan_density": "0",
+      "Jordan_Hubble": "0",
+      "Jordan_scale": "0",
+      "normalization_A1": "0"
+    },
+    "F_min": "42 - 16*sqrt(2)",
+    "V_min": "125/16",
+    "V_derivative_bracket": "5/16 - 189*tau**(7/2)/16",
+    "alpha_squared_at_A1": "1/40",
+    "V_at_A1": "125/16"
+  }
+}
+Eight mutation controls rejected.

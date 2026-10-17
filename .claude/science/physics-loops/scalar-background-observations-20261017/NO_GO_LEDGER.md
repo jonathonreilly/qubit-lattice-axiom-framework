@@ -1,0 +1,2 @@
+# Scope and preserved boundaries
+No global no-go is proposed. Rank loss is not equated with nonidentifiability: independent checking supplied a rank-three unique physical example. The zero-drift scale family and the two action backgrounds are positive existence witnesses at their exact stated scopes. Neither establishes a full-action all-observable ambiguity. Finite-duration bounds keep the third-derivative supplier explicit; a failed empirical implementation would not refute scalar theory.

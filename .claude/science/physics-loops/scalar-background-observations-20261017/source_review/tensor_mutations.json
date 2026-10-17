@@ -1,0 +1,41 @@
+[
+  {
+    "name": "tensor_friction",
+    "source_sha256": "330db200edfca64b886451dab5d8588300c1991aeb65fd41881acbe5363fca29",
+    "failures": [
+      "FAIL: tensor_canonical_mode"
+    ],
+    "exit": 1
+  },
+  {
+    "name": "tensor_inverse_ratio",
+    "source_sha256": "330db200edfca64b886451dab5d8588300c1991aeb65fd41881acbe5363fca29",
+    "failures": [
+      "FAIL: tensor_q_1/2",
+      "FAIL: tensor_q_1/4"
+    ],
+    "exit": 1
+  },
+  {
+    "name": "F_reconstruction_source",
+    "source_sha256": "330db200edfca64b886451dab5d8588300c1991aeb65fd41881acbe5363fca29",
+    "failures": [
+      "FAIL: tensor_F_recovery_1/2",
+      "FAIL: tensor_Q_recovery_1/2",
+      "FAIL: tensor_E_recovery_1/2",
+      "FAIL: tensor_F_recovery_1/4",
+      "FAIL: tensor_Q_recovery_1/4",
+      "FAIL: tensor_E_recovery_1/4"
+    ],
+    "exit": 1
+  },
+  {
+    "name": "E_reconstruction_factor",
+    "source_sha256": "330db200edfca64b886451dab5d8588300c1991aeb65fd41881acbe5363fca29",
+    "failures": [
+      "FAIL: tensor_E_recovery_1/2",
+      "FAIL: tensor_E_recovery_1/4"
+    ],
+    "exit": 1
+  }
+]

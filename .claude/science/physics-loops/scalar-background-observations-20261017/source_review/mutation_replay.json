@@ -1,0 +1,75 @@
+[
+  {
+    "mutation": "lift_drift_sign",
+    "source_sha256": "f6335f924d2e30c860f9f18a0bd9760678874f360cc15d28c2a422d26c4f582c",
+    "exit": 1,
+    "failures": [
+      "FAIL: recovered_parameters",
+      "FAIL: drift_identity"
+    ]
+  },
+  {
+    "mutation": "flat_integral_redshift_factor",
+    "source_sha256": "f6335f924d2e30c860f9f18a0bd9760678874f360cc15d28c2a422d26c4f582c",
+    "exit": 1,
+    "failures": [
+      "FAIL: flat_integral"
+    ]
+  },
+  {
+    "mutation": "error_bound_underestimate",
+    "source_sha256": "f6335f924d2e30c860f9f18a0bd9760678874f360cc15d28c2a422d26c4f582c",
+    "exit": 1,
+    "failures": [
+      "FAIL: inverse_bound"
+    ]
+  },
+  {
+    "mutation": "clock_curvature_scaling",
+    "source_sha256": "f6335f924d2e30c860f9f18a0bd9760678874f360cc15d28c2a422d26c4f582c",
+    "exit": 1,
+    "failures": [
+      "FAIL: clock_gain_symmetry"
+    ]
+  },
+  {
+    "mutation": "central_difference_remainder",
+    "source_sha256": "f6335f924d2e30c860f9f18a0bd9760678874f360cc15d28c2a422d26c4f582c",
+    "exit": 1,
+    "failures": [
+      "FAIL: central_cubic_error"
+    ]
+  },
+  {
+    "mutation": "original_action_potential",
+    "source_sha256": "f6335f924d2e30c860f9f18a0bd9760678874f360cc15d28c2a422d26c4f582c",
+    "exit": 1,
+    "failures": [
+      "FAIL: twin_1/2_equation_0",
+      "FAIL: twin_1/2_equation_3",
+      "FAIL: twin_1/2_V_scaled_monotone"
+    ]
+  },
+  {
+    "mutation": "proper_time_conversion",
+    "source_sha256": "f6335f924d2e30c860f9f18a0bd9760678874f360cc15d28c2a422d26c4f582c",
+    "exit": 1,
+    "failures": [
+      "FAIL: twin_1/2_equation_0",
+      "FAIL: twin_1/2_equation_1",
+      "FAIL: twin_1/2_equation_3",
+      "FAIL: twin_1/4_equation_0",
+      "FAIL: twin_1/4_equation_1",
+      "FAIL: twin_1/4_equation_3"
+    ]
+  },
+  {
+    "mutation": "matter_density_conversion",
+    "source_sha256": "f6335f924d2e30c860f9f18a0bd9760678874f360cc15d28c2a422d26c4f582c",
+    "exit": 1,
+    "failures": [
+      "FAIL: twin_1/2_density",
+      "FAIL: twin_1/4_density"
+    ]
+  }
+]

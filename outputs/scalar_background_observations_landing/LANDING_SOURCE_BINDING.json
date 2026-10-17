@@ -1,0 +1,36 @@
+{
+  "scope": "Portable output citation and inert main wrapper only; the original runner execution body is preserved exactly. Historical reviews and executions retain their original source hashes and do not certify this landing.",
+  "original_head": "7cabf97d628c5e737b7372af4e8d3dcfe56c0e85",
+  "files": {
+    "docs/SCALAR_BACKGROUND_OBSERVATIONS_NOTE_2026-10-17.md": {
+      "original": {
+        "bytes": 20029,
+        "sha256": "26db393347d9d15b9f7f912f1fb84e5c992fc35ed5a31a0e7640563ecfa84649"
+      },
+      "current": {
+        "bytes": 20013,
+        "sha256": "844c68311fc1dbe9ed4263bc0bf2f2b177247034d4408bd42a63b90b91498694"
+      },
+      "original_snapshot": "outputs/scalar_background_observations_landing/originals/SCALAR_BACKGROUND_OBSERVATIONS_NOTE_2026-10-17.md"
+    },
+    "scripts/scalar_background_observations.py": {
+      "original": {
+        "bytes": 7480,
+        "sha256": "330db200edfca64b886451dab5d8588300c1991aeb65fd41881acbe5363fca29"
+      },
+      "current": {
+        "bytes": 8029,
+        "sha256": "aa96789323b83b8ec53ae695c1890b634959b8df281599d2c6d51fae003b70e8"
+      },
+      "original_snapshot": "outputs/scalar_background_observations_landing/originals/scalar_background_observations.py"
+    }
+  },
+  "edits": [
+    {
+      "path": "docs/SCALAR_BACKGROUND_OBSERVATIONS_NOTE_2026-10-17.md",
+      "original": "[result.json](../outputs/scalar_background_observations/result.json)",
+      "replacement": "`outputs/scalar_background_observations/result.json`"
+    }
+  ],
+  "runner_transport": "Only main wrapper and guard added; removing wrapper and one indentation level recovers original bytes exactly."
+}

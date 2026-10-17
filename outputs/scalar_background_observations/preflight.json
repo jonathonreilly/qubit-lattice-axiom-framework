@@ -1,0 +1,14 @@
+{
+  "base": "84ec6fdfe5861a42ef9ee9448f111098cdd3816f",
+  "files_at_preflight": 39,
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "sympy": "1.14.0",
+  "all_added_python_compiled": true,
+  "note_local_links_resolve": true,
+  "source_sha256": {
+    "docs/SCALAR_BACKGROUND_OBSERVATIONS_NOTE_2026-10-17.md": "26db393347d9d15b9f7f912f1fb84e5c992fc35ed5a31a0e7640563ecfa84649",
+    "scripts/scalar_background_observations.py": "330db200edfca64b886451dab5d8588300c1991aeb65fd41881acbe5363fca29"
+  },
+  "shared_landing_pipeline": "pending; not run on this author unit",
+  "audit": "not performed"
+}

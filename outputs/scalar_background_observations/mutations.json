@@ -1,0 +1,98 @@
+[
+  {
+    "mutation": "lift_drift_sign",
+    "source_sha256": "24d667b5651e158cec8f30eb2cfbfb07c8c83b4e5b41a871ce71639b3356e116",
+    "replacement": [
+      "row = s.Matrix([[A,-2*A*v,-1,d*d]])",
+      "row = s.Matrix([[A,2*A*v,-1,d*d]])"
+    ],
+    "exit": 1,
+    "stdout": "PASS: lift_expansion\nPASS: rank_four\nFAIL: recovered_parameters\nPASS: continuum_compatibility\nPASS: distance_ODE\nFAIL: drift_identity\nPASS: flat_integral\nPASS: fifth_point\nPASS: wrong_scale_rejected\nPASS: drift_sign_mutation_rejected\nPASS: curvature_sign_control\nPASS: coasting_family\nPASS: coasting_rank_two\nPASS: ratio_derivative_kernel\nPASS: inverse_smallness\nPASS: inverse_bound\nPASS: clock_gain_symmetry\nPASS: central_cubic_error\nPASS: baseline_optimum\nPASS: twin_1/2_equation_0\nPASS: twin_1/2_equation_1\nPASS: twin_1/2_equation_2\nPASS: twin_1/2_equation_3\nPASS: twin_1/2_metric\nPASS: twin_1/2_density\nPASS: twin_1/2_F_positive\nPASS: twin_1/2_V_positive\nPASS: twin_1/2_F_monotone\nPASS: twin_1/2_V_scaled_monotone\nPASS: twin_1/4_equation_0\nPASS: twin_1/4_equation_1\nPASS: twin_1/4_equation_2\nPASS: twin_1/4_equation_3\nPASS: twin_1/4_metric\nPASS: twin_1/4_density\nPASS: twin_1/4_F_positive\nPASS: twin_1/4_V_positive\nPASS: twin_1/4_F_monotone\nPASS: twin_1/4_V_scaled_monotone\nPASS: distinct_scalar_histories\nPASS: canonical_matter_slopes_distinct\nPASS: rank_three_physical_unique\nPASS: twins_same_drift\nTOTAL: PASS=41 FAIL=2\n",
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutation": "flat_integral_redshift_factor",
+    "source_sha256": "24d667b5651e158cec8f30eb2cfbfb07c8c83b4e5b41a871ce71639b3356e116",
+    "replacement": [
+      "s.integrate(1/((1+z)*(1-v))",
+      "s.integrate(1/((1+2*z)*(1-v))"
+    ],
+    "exit": 1,
+    "stdout": "PASS: lift_expansion\nPASS: rank_four\nPASS: recovered_parameters\nPASS: continuum_compatibility\nPASS: distance_ODE\nPASS: drift_identity\nFAIL: flat_integral\nPASS: fifth_point\nPASS: wrong_scale_rejected\nPASS: drift_sign_mutation_rejected\nPASS: curvature_sign_control\nPASS: coasting_family\nPASS: coasting_rank_two\nPASS: ratio_derivative_kernel\nPASS: inverse_smallness\nPASS: inverse_bound\nPASS: clock_gain_symmetry\nPASS: central_cubic_error\nPASS: baseline_optimum\nPASS: twin_1/2_equation_0\nPASS: twin_1/2_equation_1\nPASS: twin_1/2_equation_2\nPASS: twin_1/2_equation_3\nPASS: twin_1/2_metric\nPASS: twin_1/2_density\nPASS: twin_1/2_F_positive\nPASS: twin_1/2_V_positive\nPASS: twin_1/2_F_monotone\nPASS: twin_1/2_V_scaled_monotone\nPASS: twin_1/4_equation_0\nPASS: twin_1/4_equation_1\nPASS: twin_1/4_equation_2\nPASS: twin_1/4_equation_3\nPASS: twin_1/4_metric\nPASS: twin_1/4_density\nPASS: twin_1/4_F_positive\nPASS: twin_1/4_V_positive\nPASS: twin_1/4_F_monotone\nPASS: twin_1/4_V_scaled_monotone\nPASS: distinct_scalar_histories\nPASS: canonical_matter_slopes_distinct\nPASS: rank_three_physical_unique\nPASS: twins_same_drift\nTOTAL: PASS=42 FAIL=1\n",
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutation": "error_bound_underestimate",
+    "source_sha256": "24d667b5651e158cec8f30eb2cfbfb07c8c83b4e5b41a871ce71639b3356e116",
+    "replacement": [
+      ")/(1-eta)\nobserved",
+      ")/(1000000*(1-eta))\nobserved"
+    ],
+    "exit": 1,
+    "stdout": "PASS: lift_expansion\nPASS: rank_four\nPASS: recovered_parameters\nPASS: continuum_compatibility\nPASS: distance_ODE\nPASS: drift_identity\nPASS: flat_integral\nPASS: fifth_point\nPASS: wrong_scale_rejected\nPASS: drift_sign_mutation_rejected\nPASS: curvature_sign_control\nPASS: coasting_family\nPASS: coasting_rank_two\nPASS: ratio_derivative_kernel\nPASS: inverse_smallness\nFAIL: inverse_bound\nPASS: clock_gain_symmetry\nPASS: central_cubic_error\nPASS: baseline_optimum\nPASS: twin_1/2_equation_0\nPASS: twin_1/2_equation_1\nPASS: twin_1/2_equation_2\nPASS: twin_1/2_equation_3\nPASS: twin_1/2_metric\nPASS: twin_1/2_density\nPASS: twin_1/2_F_positive\nPASS: twin_1/2_V_positive\nPASS: twin_1/2_F_monotone\nPASS: twin_1/2_V_scaled_monotone\nPASS: twin_1/4_equation_0\nPASS: twin_1/4_equation_1\nPASS: twin_1/4_equation_2\nPASS: twin_1/4_equation_3\nPASS: twin_1/4_metric\nPASS: twin_1/4_density\nPASS: twin_1/4_F_positive\nPASS: twin_1/4_V_positive\nPASS: twin_1/4_F_monotone\nPASS: twin_1/4_V_scaled_monotone\nPASS: distinct_scalar_histories\nPASS: canonical_matter_slopes_distinct\nPASS: rank_three_physical_unique\nPASS: twins_same_drift\nTOTAL: PASS=42 FAIL=1\n",
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutation": "clock_curvature_scaling",
+    "source_sha256": "24d667b5651e158cec8f30eb2cfbfb07c8c83b4e5b41a871ce71639b3356e116",
+    "replacement": [
+      "c*c*k*d0*d0",
+      "c*k*d0*d0"
+    ],
+    "exit": 1,
+    "stdout": "PASS: lift_expansion\nPASS: rank_four\nPASS: recovered_parameters\nPASS: continuum_compatibility\nPASS: distance_ODE\nPASS: drift_identity\nPASS: flat_integral\nPASS: fifth_point\nPASS: wrong_scale_rejected\nPASS: drift_sign_mutation_rejected\nPASS: curvature_sign_control\nPASS: coasting_family\nPASS: coasting_rank_two\nPASS: ratio_derivative_kernel\nPASS: inverse_smallness\nPASS: inverse_bound\nFAIL: clock_gain_symmetry\nPASS: central_cubic_error\nPASS: baseline_optimum\nPASS: twin_1/2_equation_0\nPASS: twin_1/2_equation_1\nPASS: twin_1/2_equation_2\nPASS: twin_1/2_equation_3\nPASS: twin_1/2_metric\nPASS: twin_1/2_density\nPASS: twin_1/2_F_positive\nPASS: twin_1/2_V_positive\nPASS: twin_1/2_F_monotone\nPASS: twin_1/2_V_scaled_monotone\nPASS: twin_1/4_equation_0\nPASS: twin_1/4_equation_1\nPASS: twin_1/4_equation_2\nPASS: twin_1/4_equation_3\nPASS: twin_1/4_metric\nPASS: twin_1/4_density\nPASS: twin_1/4_F_positive\nPASS: twin_1/4_V_positive\nPASS: twin_1/4_F_monotone\nPASS: twin_1/4_V_scaled_monotone\nPASS: distinct_scalar_histories\nPASS: canonical_matter_slopes_distinct\nPASS: rank_three_physical_unique\nPASS: twins_same_drift\nTOTAL: PASS=42 FAIL=1\n",
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutation": "central_difference_remainder",
+    "source_sha256": "24d667b5651e158cec8f30eb2cfbfb07c8c83b4e5b41a871ce71639b3356e116",
+    "replacement": [
+      "-s.diff(f,t)-T*T",
+      "-s.diff(f,t)-T*T/2"
+    ],
+    "exit": 1,
+    "stdout": "PASS: lift_expansion\nPASS: rank_four\nPASS: recovered_parameters\nPASS: continuum_compatibility\nPASS: distance_ODE\nPASS: drift_identity\nPASS: flat_integral\nPASS: fifth_point\nPASS: wrong_scale_rejected\nPASS: drift_sign_mutation_rejected\nPASS: curvature_sign_control\nPASS: coasting_family\nPASS: coasting_rank_two\nPASS: ratio_derivative_kernel\nPASS: inverse_smallness\nPASS: inverse_bound\nPASS: clock_gain_symmetry\nFAIL: central_cubic_error\nPASS: baseline_optimum\nPASS: twin_1/2_equation_0\nPASS: twin_1/2_equation_1\nPASS: twin_1/2_equation_2\nPASS: twin_1/2_equation_3\nPASS: twin_1/2_metric\nPASS: twin_1/2_density\nPASS: twin_1/2_F_positive\nPASS: twin_1/2_V_positive\nPASS: twin_1/2_F_monotone\nPASS: twin_1/2_V_scaled_monotone\nPASS: twin_1/4_equation_0\nPASS: twin_1/4_equation_1\nPASS: twin_1/4_equation_2\nPASS: twin_1/4_equation_3\nPASS: twin_1/4_metric\nPASS: twin_1/4_density\nPASS: twin_1/4_F_positive\nPASS: twin_1/4_V_positive\nPASS: twin_1/4_F_monotone\nPASS: twin_1/4_V_scaled_monotone\nPASS: distinct_scalar_histories\nPASS: canonical_matter_slopes_distinct\nPASS: rank_three_physical_unique\nPASS: twins_same_drift\nTOTAL: PASS=42 FAIL=1\n",
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutation": "original_action_potential",
+    "source_sha256": "24d667b5651e158cec8f30eb2cfbfb07c8c83b4e5b41a871ce71639b3356e116",
+    "replacement": [
+      "6*s.exp(-2*zet)-s.exp(-8*zet)/16",
+      "6*s.exp(-2*zet)+s.exp(-8*zet)/16"
+    ],
+    "exit": 1,
+    "stdout": "PASS: lift_expansion\nPASS: rank_four\nPASS: recovered_parameters\nPASS: continuum_compatibility\nPASS: distance_ODE\nPASS: drift_identity\nPASS: flat_integral\nPASS: fifth_point\nPASS: wrong_scale_rejected\nPASS: drift_sign_mutation_rejected\nPASS: curvature_sign_control\nPASS: coasting_family\nPASS: coasting_rank_two\nPASS: ratio_derivative_kernel\nPASS: inverse_smallness\nPASS: inverse_bound\nPASS: clock_gain_symmetry\nPASS: central_cubic_error\nPASS: baseline_optimum\nFAIL: twin_1/2_equation_0\nPASS: twin_1/2_equation_1\nPASS: twin_1/2_equation_2\nFAIL: twin_1/2_equation_3\nPASS: twin_1/2_metric\nPASS: twin_1/2_density\nPASS: twin_1/2_F_positive\nPASS: twin_1/2_V_positive\nPASS: twin_1/2_F_monotone\nFAIL: twin_1/2_V_scaled_monotone\nPASS: twin_1/4_equation_0\nPASS: twin_1/4_equation_1\nPASS: twin_1/4_equation_2\nPASS: twin_1/4_equation_3\nPASS: twin_1/4_metric\nPASS: twin_1/4_density\nPASS: twin_1/4_F_positive\nPASS: twin_1/4_V_positive\nPASS: twin_1/4_F_monotone\nPASS: twin_1/4_V_scaled_monotone\nPASS: distinct_scalar_histories\nPASS: canonical_matter_slopes_distinct\nPASS: rank_three_physical_unique\nPASS: twins_same_drift\nTOTAL: PASS=40 FAIL=3\n",
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutation": "proper_time_conversion",
+    "source_sha256": "24d667b5651e158cec8f30eb2cfbfb07c8c83b4e5b41a871ce71639b3356e116",
+    "replacement": [
+      "aa*s.diff(f,tau)",
+      "s.diff(f,tau)"
+    ],
+    "exit": 1,
+    "stdout": "PASS: lift_expansion\nPASS: rank_four\nPASS: recovered_parameters\nPASS: continuum_compatibility\nPASS: distance_ODE\nPASS: drift_identity\nPASS: flat_integral\nPASS: fifth_point\nPASS: wrong_scale_rejected\nPASS: drift_sign_mutation_rejected\nPASS: curvature_sign_control\nPASS: coasting_family\nPASS: coasting_rank_two\nPASS: ratio_derivative_kernel\nPASS: inverse_smallness\nPASS: inverse_bound\nPASS: clock_gain_symmetry\nPASS: central_cubic_error\nPASS: baseline_optimum\nFAIL: twin_1/2_equation_0\nFAIL: twin_1/2_equation_1\nPASS: twin_1/2_equation_2\nFAIL: twin_1/2_equation_3\nPASS: twin_1/2_metric\nPASS: twin_1/2_density\nPASS: twin_1/2_F_positive\nPASS: twin_1/2_V_positive\nPASS: twin_1/2_F_monotone\nPASS: twin_1/2_V_scaled_monotone\nFAIL: twin_1/4_equation_0\nFAIL: twin_1/4_equation_1\nPASS: twin_1/4_equation_2\nFAIL: twin_1/4_equation_3\nPASS: twin_1/4_metric\nPASS: twin_1/4_density\nPASS: twin_1/4_F_positive\nPASS: twin_1/4_V_positive\nPASS: twin_1/4_F_monotone\nPASS: twin_1/4_V_scaled_monotone\nPASS: distinct_scalar_histories\nPASS: canonical_matter_slopes_distinct\nPASS: rank_three_physical_unique\nPASS: twins_same_drift\nTOTAL: PASS=37 FAIL=6\n",
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutation": "matter_density_conversion",
+    "source_sha256": "24d667b5651e158cec8f30eb2cfbfb07c8c83b4e5b41a871ce71639b3356e116",
+    "replacement": [
+      "rho/aa**4-tau**-6/8",
+      "rho/aa**3-tau**-6/8"
+    ],
+    "exit": 1,
+    "stdout": "PASS: lift_expansion\nPASS: rank_four\nPASS: recovered_parameters\nPASS: continuum_compatibility\nPASS: distance_ODE\nPASS: drift_identity\nPASS: flat_integral\nPASS: fifth_point\nPASS: wrong_scale_rejected\nPASS: drift_sign_mutation_rejected\nPASS: curvature_sign_control\nPASS: coasting_family\nPASS: coasting_rank_two\nPASS: ratio_derivative_kernel\nPASS: inverse_smallness\nPASS: inverse_bound\nPASS: clock_gain_symmetry\nPASS: central_cubic_error\nPASS: baseline_optimum\nPASS: twin_1/2_equation_0\nPASS: twin_1/2_equation_1\nPASS: twin_1/2_equation_2\nPASS: twin_1/2_equation_3\nPASS: twin_1/2_metric\nFAIL: twin_1/2_density\nPASS: twin_1/2_F_positive\nPASS: twin_1/2_V_positive\nPASS: twin_1/2_F_monotone\nPASS: twin_1/2_V_scaled_monotone\nPASS: twin_1/4_equation_0\nPASS: twin_1/4_equation_1\nPASS: twin_1/4_equation_2\nPASS: twin_1/4_equation_3\nPASS: twin_1/4_metric\nFAIL: twin_1/4_density\nPASS: twin_1/4_F_positive\nPASS: twin_1/4_V_positive\nPASS: twin_1/4_F_monotone\nPASS: twin_1/4_V_scaled_monotone\nPASS: distinct_scalar_histories\nPASS: canonical_matter_slopes_distinct\nPASS: rank_three_physical_unique\nPASS: twins_same_drift\nTOTAL: PASS=41 FAIL=2\n",
+    "stderr": "",
+    "detected": true
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "source_sha256": "330db200edfca64b886451dab5d8588300c1991aeb65fd41881acbe5363fca29",
+  "source_files": 1,
+  "exit": 0,
+  "result_identical": true,
+  "result_sha256": "5f3c417ea17935680d424e58443a6b0cacbd72429e4dddcfff0bf322d08a1aea",
+  "stdout": "PASS: lift_expansion\nPASS: rank_four\nPASS: recovered_parameters\nPASS: continuum_compatibility\nPASS: distance_ODE\nPASS: drift_identity\nPASS: flat_integral\nPASS: fifth_point\nPASS: wrong_scale_rejected\nPASS: drift_sign_mutation_rejected\nPASS: curvature_sign_control\nPASS: coasting_family\nPASS: coasting_rank_two\nPASS: ratio_derivative_kernel\nPASS: inverse_smallness\nPASS: inverse_bound\nPASS: clock_gain_symmetry\nPASS: central_cubic_error\nPASS: baseline_optimum\nPASS: twin_1/2_equation_0\nPASS: twin_1/2_equation_1\nPASS: twin_1/2_equation_2\nPASS: twin_1/2_equation_3\nPASS: twin_1/2_metric\nPASS: twin_1/2_density\nPASS: twin_1/2_F_positive\nPASS: twin_1/2_V_positive\nPASS: twin_1/2_F_monotone\nPASS: twin_1/2_V_scaled_monotone\nPASS: twin_1/4_equation_0\nPASS: twin_1/4_equation_1\nPASS: twin_1/4_equation_2\nPASS: twin_1/4_equation_3\nPASS: twin_1/4_metric\nPASS: twin_1/4_density\nPASS: twin_1/4_F_positive\nPASS: twin_1/4_V_positive\nPASS: twin_1/4_F_monotone\nPASS: twin_1/4_V_scaled_monotone\nPASS: distinct_scalar_histories\nPASS: canonical_matter_slopes_distinct\nPASS: rank_three_physical_unique\nPASS: twins_same_drift\nPASS: tensor_canonical_mode\nPASS: tensor_q_1/2\nPASS: tensor_F_recovery_1/2\nPASS: tensor_Q_recovery_1/2\nPASS: tensor_E_recovery_1/2\nPASS: tensor_q_1/4\nPASS: tensor_F_recovery_1/4\nPASS: tensor_Q_recovery_1/4\nPASS: tensor_E_recovery_1/4\nPASS: tensor_twins_distinct\nPASS: endpoint_compensation_example\nTOTAL: PASS=54 FAIL=0\n"
+}

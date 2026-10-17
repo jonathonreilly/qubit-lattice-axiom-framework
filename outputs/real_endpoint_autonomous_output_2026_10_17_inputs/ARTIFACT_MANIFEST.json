@@ -205,6 +205,90 @@
       "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_spectral_check/REVIEW.md"
     },
     {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_background_perturbation__PROPOSAL.md",
+      "bytes": 16080,
+      "sha256": "8c308e8d699122318f41fc0195028f3626ba3bd14558d589b3271f16a6c7d32e",
+      "role": "selective fixed-spectrum composition sources; historical text not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_background_perturbation/PROPOSAL.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_background_perturbation_check__REVIEW.md",
+      "bytes": 11182,
+      "sha256": "a7fd6b54e1be5fe21e2001d8509bf8961247ee47c506968ae0eed46db08906fd",
+      "role": "selective fixed-spectrum composition sources; historical text not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_background_perturbation_check/REVIEW.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_fixed_spectrum_interface_check__REVIEW.md",
+      "bytes": 9481,
+      "sha256": "d370f70e5232904389368434a18a88407d30474b98b030a03c96e4d2e24fc7ce",
+      "role": "selective fixed-spectrum composition sources; historical text not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_fixed_spectrum_interface_check/REVIEW.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_precision_root_notes__FIXED_EIGENVALUE_INTERFACE.md",
+      "bytes": 2494,
+      "sha256": "548c8579d603200db45c7c7f4fdd3f2cef08aee53846efe524ef94591b692057",
+      "role": "selective fixed-spectrum composition sources; historical text not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_precision_root_notes/FIXED_EIGENVALUE_INTERFACE.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_composition__PROPOSAL.md",
+      "bytes": 15841,
+      "sha256": "167780ae8a31b3bb0dbc8daee76518390b77978105bca1e7124636feb4d1ba12",
+      "role": "selective fixed-spectrum composition sources; historical text not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/fixed_spectrum_composition/PROPOSAL.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_composition_check__REVIEW.md",
+      "bytes": 13782,
+      "sha256": "4e85d1982bd8b8193874ea7dd575aa67edcb4e374e0458216c31c26ea9eaf586",
+      "role": "selective fixed-spectrum composition sources; historical text not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/fixed_spectrum_composition_check/REVIEW.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_orientation_scope__ASSESSMENT.md",
+      "bytes": 3354,
+      "sha256": "25221ebc70b09702b38aa626410f7760c57968d732b2c0b620c46fda548afaa3",
+      "role": "selective fixed-spectrum composition sources; historical text not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/fixed_spectrum_orientation_scope/ASSESSMENT.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_orientation_scope__QUALIFIED.md",
+      "bytes": 4089,
+      "sha256": "d9b13303f9a2f0aa21ce1991748d66787f3e71b35919f845ac0765ad1be60462",
+      "role": "selective fixed-spectrum composition sources; historical text not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/fixed_spectrum_orientation_scope/QUALIFIED.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_orientation_scope__REVIEW.md",
+      "bytes": 8863,
+      "sha256": "00cc88339fbd6864bc756600403ca25bb960bc13e92ffcb8ef4920482a1dbefe",
+      "role": "selective fixed-spectrum composition sources; historical text not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/fixed_spectrum_orientation_scope/REVIEW.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_publication__ARITHMETIC_DRAFT.py.txt",
+      "bytes": 4239,
+      "sha256": "688bc36b49981a55c1aba289c75e782dfc6a3f34ed1bfbfcb7085f76515f5ac3",
+      "role": "selective fixed-spectrum composition sources; historical text not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/fixed_spectrum_publication/ARITHMETIC_DRAFT.py.txt"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_publication__CHECK_MAP.md",
+      "bytes": 6390,
+      "sha256": "69ea49e73b715783b6fca13e1ffc4d89bc863f26111987244efd7574abcee5aa",
+      "role": "selective fixed-spectrum composition sources; historical text not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/fixed_spectrum_publication/CHECK_MAP.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_publication__SECTION_QUALIFIED.md",
+      "bytes": 11423,
+      "sha256": "ab580a11d75728b2c056eefc7e6d9aed5734d5955b53843e159c76fd4726ce22",
+      "role": "selective fixed-spectrum composition sources; historical text not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/fixed_spectrum_publication/SECTION_QUALIFIED.md"
+    },
+    {
       "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/LARGER_COUPLING_COMPOSITION.md.txt",
       "bytes": 6547,
       "sha256": "3fd18e576fb394caea2b93272c4b430d782ec5c4663a9e961c8e3205d179952f"

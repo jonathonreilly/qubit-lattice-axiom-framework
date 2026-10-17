@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/real_endpoint_autonomous_output_2026_10_17.py
-runner_sha256: d819bfe60a08810eb767a2fc5dadd4f87ad135246db11ec188de3058ef0a3047
-input_fingerprint_sha256: 2c2f210876887850c719fb717b75f2aec5d7c3d1ea38f0debcd25f7137c9958b
+runner_sha256: 4431365350f4337ec2b9d4b104e291d577da6176fc9919f9f92b7ab9bff79612
+input_fingerprint_sha256: dcfff9c9d0c2eba02795aad0cd63ab1678280def5550a293226ce22bcddcdf05
 timeout_sec: 30
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 SCOPE: exact local finite algebra and conditional analytical-bound arithmetic.
@@ -457,6 +457,51 @@ PASS arithmetic: BD complete nominal finite same tolerance
 PASS arithmetic: BD complete nominal finite alternate
 PASS arithmetic: BD same tolerance time length gain
 PASS arithmetic: BD alternate time length gain
+PASS arithmetic: FS positive local gap
+PASS arithmetic: FS rotation radius square
+PASS arithmetic: FS detuning absolute
+PASS arithmetic: FS detuning relative
+PASS arithmetic: FS endpoint perturbation domain
+PASS arithmetic: FS angle upper width only
+PASS arithmetic: FS sufficient angle lower radius square
+PASS arithmetic: FS background inverse denominator
+PASS arithmetic: FS background Green difference
+PASS arithmetic: FS background outgoing difference
+PASS arithmetic: FS shifted complement gap
+PASS arithmetic: FS selfenergy difference
+PASS arithmetic: FS selfenergy derivative
+PASS arithmetic: FS relative denominator difference
+PASS arithmetic: FS full complex profile increment
+PASS arithmetic: FS unrounded profile slack
+PASS arithmetic: FS shifted mass interval
+PASS arithmetic: FS mass denominator
+PASS arithmetic: FS mass smallness
+PASS arithmetic: FS mass logarithm
+PASS arithmetic: FS mass H ceiling
+PASS arithmetic: FS actual omitted mass
+PASS arithmetic: FS auxiliary reference deficit
+PASS arithmetic: FS auxiliary detuning ratio
+PASS arithmetic: FS restricted moment pointwise
+PASS arithmetic: FS restricted moment square
+PASS arithmetic: FS complete complex mismatch
+PASS arithmetic: FS endpoint column square
+PASS arithmetic: FS complete background source
+PASS arithmetic: FS complex selfenergy oscillation
+PASS arithmetic: FS resonance strip loss
+PASS arithmetic: FS cutoff margin
+PASS arithmetic: FS bottom full inverse
+PASS arithmetic: FS side full inverse
+PASS arithmetic: FS emitter update square
+PASS arithmetic: FS complete bottom source
+PASS arithmetic: FS complete side source
+PASS arithmetic: FS localized bottom
+PASS arithmetic: FS complete localized escape
+PASS arithmetic: FS auxiliary nominal ratio denominator
+PASS arithmetic: FS fixed nominal normalized profile
+PASS arithmetic: FS complete actual auxiliary error
+PASS arithmetic: FS complete fixed nominal infinite
+PASS arithmetic: FS complete fixed nominal finite
+PASS arithmetic: FS full local perturbation square
 {
   "checks": [
     {
@@ -3128,10 +3173,284 @@ PASS arithmetic: BD alternate time length gain
       "name": "BD alternate time length gain",
       "relation": "=",
       "rhs": "1000"
+    },
+    {
+      "lhs": "3/125",
+      "name": "FS positive local gap",
+      "relation": "<",
+      "rhs": "16270753151279558770975344974090481737534979/666977119407044641178639513175125000000000000"
+    },
+    {
+      "lhs": "264737408110051635699676723901547131897161145668518395265197983041902008333893248530441/444858477812519085321120833586462223979229127177695658458918765625000000000000000000000000",
+      "name": "FS rotation radius square",
+      "relation": "<",
+      "rhs": "16/15625"
+    },
+    {
+      "lhs": "10671628574695759002501102781685894599/1301660252102364701678027597927238539002798320000000000000",
+      "name": "FS detuning absolute",
+      "relation": "<",
+      "rhs": "21/2500000000000000000000"
+    },
+    {
+      "lhs": "10671628574695759002501102781685894599/4335816955256357129429116105401000000000000",
+      "name": "FS detuning relative",
+      "relation": "<",
+      "rhs": "13/5000000"
+    },
+    {
+      "lhs": "10671628574695759002501102781685894599/1301660252102364701678027597927238539002798320000000000000",
+      "name": "FS endpoint perturbation domain",
+      "relation": "<",
+      "rhs": "1/100000000000000000000"
+    },
+    {
+      "lhs": "1/2400000000000",
+      "name": "FS angle upper width only",
+      "relation": "<",
+      "rhs": "4167/10000000000000000"
+    },
+    {
+      "lhs": "264737408110051635699676723901547131897161145668518395265197983041902008333893248530441/4555350812800195433688277335925373173547306262299603542619328160000000000000000000000000000000000000000000000000000",
+      "name": "FS sufficient angle lower radius square",
+      "relation": "<",
+      "rhs": "1/10000000000000000000000000000"
+    },
+    {
+      "lhs": "0",
+      "name": "FS background inverse denominator",
+      "relation": "<",
+      "rhs": "24999999999999999991/25000000000000000000"
+    },
+    {
+      "lhs": "324/24999999999999999991",
+      "name": "FS background Green difference",
+      "relation": "<",
+      "rhs": "13/1000000000000000000"
+    },
+    {
+      "lhs": "238/19999999999999999993",
+      "name": "FS background outgoing difference",
+      "relation": "<",
+      "rhs": "3/250000000000000000"
+    },
+    {
+      "lhs": "1/6",
+      "name": "FS shifted complement gap",
+      "relation": "<",
+      "rhs": "29287355672292532172338157237820857867176345651295349747163465021/162707531512795587709753449740904817375349790000000000000000000000"
+    },
+    {
+      "lhs": "20312500000000877500000000009477/1562500000000000000000000000000000000000000000000",
+      "name": "FS selfenergy difference",
+      "relation": "<",
+      "rhs": "7/500000000000000000"
+    },
+    {
+      "lhs": "21875625000000950859/625000000000000",
+      "name": "FS selfenergy derivative",
+      "relation": "<",
+      "rhs": "36000"
+    },
+    {
+      "lhs": "217/200000000000000000000",
+      "name": "FS relative denominator difference",
+      "relation": "<",
+      "rhs": "11/10000000000000000000"
+    },
+    {
+      "lhs": "15041/9999740000000000000000",
+      "name": "FS full complex profile increment",
+      "relation": "<",
+      "rhs": "1/500000000000000000"
+    },
+    {
+      "lhs": "88051/500000000000000000",
+      "name": "FS unrounded profile slack",
+      "relation": "<",
+      "rhs": "1/5000000000000"
+    },
+    {
+      "lhs": "499999999999/20000000000000000000",
+      "name": "FS shifted mass interval",
+      "relation": "<",
+      "rhs": "32541506302548445913375994189178462372288272105401/1301660252102364701678027597927238539002798320000000000000"
+    },
+    {
+      "lhs": "0",
+      "name": "FS mass denominator",
+      "relation": "<",
+      "rhs": "203384385917109772219372114475511685168458659972543/8135376575639779385487672487045240868767489500000000000000"
+    },
+    {
+      "lhs": "47/120000000000",
+      "name": "FS mass smallness",
+      "relation": "<",
+      "rhs": "1/2"
+    },
+    {
+      "lhs": "20833337249998000001/999998000001",
+      "name": "FS mass logarithm",
+      "relation": "<",
+      "rhs": "18014398509481984/387420489"
+    },
+    {
+      "lhs": "823/18",
+      "name": "FS mass H ceiling",
+      "relation": "<",
+      "rhs": "46"
+    },
+    {
+      "lhs": "73828541769031649537690774772821316143398209929368489/1525382894378323291645290858566337638763439949794072500000000",
+      "name": "FS actual omitted mass",
+      "relation": "<",
+      "rhs": "97/2000000000"
+    },
+    {
+      "lhs": "34578470566333416769338225457550442517023999699302638782163/762691447189161645822645429283168819381719974897036250000000000000",
+      "name": "FS auxiliary reference deficit",
+      "relation": "<",
+      "rhs": "227/5000000000"
+    },
+    {
+      "lhs": "10671628574695759002501102781685894599/4335808283626782433670113604298218314105401",
+      "name": "FS auxiliary detuning ratio",
+      "relation": "<",
+      "rhs": "1300003/500000000000"
+    },
+    {
+      "lhs": "213834578576510461566624235161283753599770093057610500000/1479156419071775178637189325651955354685963128343594089",
+      "name": "FS restricted moment pointwise",
+      "relation": "<",
+      "rhs": "145"
+    },
+    {
+      "lhs": "841/20000",
+      "name": "FS restricted moment square",
+      "relation": "<",
+      "rhs": "441/10000"
+    },
+    {
+      "lhs": "7875001/5000000000000",
+      "name": "FS complete complex mismatch",
+      "relation": "<",
+      "rhs": "1/625000"
+    },
+    {
+      "lhs": "984375000000000000000000000000000000000000000000000000000000000000/5880624999999999995765950000000000000762129",
+      "name": "FS endpoint column square",
+      "relation": "<",
+      "rhs": "168100000000000000000000"
+    },
+    {
+      "lhs": "117187500491318750002297499996094/60624999999999999978175",
+      "name": "FS complete background source",
+      "relation": "<",
+      "rhs": "2000000000"
+    },
+    {
+      "lhs": "2432432605080981837832081081/67567500000000000000000000000000",
+      "name": "FS complex selfenergy oscillation",
+      "relation": "<",
+      "rhs": "19/500000"
+    },
+    {
+      "lhs": "620000000/999998000001",
+      "name": "FS resonance strip loss",
+      "relation": "<",
+      "rhs": "621/1000000"
+    },
+    {
+      "lhs": "249/10000000000",
+      "name": "FS cutoff margin",
+      "relation": "<",
+      "rhs": "20338438510357130111710400503064305318566987913290627902608909054769517637445063/813537657563977938548767248704524086876748950000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "25000000000000090000000000011664000648000009/150000000000000000000000000000000000000000000",
+      "name": "FS bottom full inverse",
+      "relation": "<",
+      "rhs": "9/50"
+    },
+    {
+      "lhs": "813537779594609000691547919346491255862526785343105217515455137604144184203109884300000/20338438510357130111710400503064305318566987913290627902608909054769517637445063",
+      "name": "FS side full inverse",
+      "relation": "<",
+      "rhs": "50000000"
+    },
+    {
+      "lhs": "16810001",
+      "name": "FS emitter update square",
+      "relation": "<",
+      "rhs": "16818201"
+    },
+    {
+      "lhs": "16404000000222222000148148/37037",
+      "name": "FS complete bottom source",
+      "relation": "<",
+      "rhs": "500000000000000000000"
+    },
+    {
+      "lhs": "12309000000004",
+      "name": "FS complete side source",
+      "relation": "<",
+      "rhs": "14000000000000"
+    },
+    {
+      "lhs": "1/151515000",
+      "name": "FS localized bottom",
+      "relation": "<",
+      "rhs": "6601/1000000000000"
+    },
+    {
+      "lhs": "7499993/75757500000000",
+      "name": "FS complete localized escape",
+      "relation": "<",
+      "rhs": "1/10000000"
+    },
+    {
+      "lhs": "9671629074695759002501102781685894599/867163391051271425885823221080200000000000",
+      "name": "FS auxiliary nominal ratio denominator",
+      "relation": "<",
+      "rhs": "1"
+    },
+    {
+      "lhs": "21077584931494060856773852005532189198/867153719422196730126820719977418314105401",
+      "name": "FS fixed nominal normalized profile",
+      "relation": "<",
+      "rhs": "13/500000"
+    },
+    {
+      "lhs": "31834334100000001/100000000000000000000",
+      "name": "FS complete actual auxiliary error",
+      "relation": "<",
+      "rhs": "1/3125"
+    },
+    {
+      "lhs": "29713019713293278349923289637707088366952237980729042316203/86715371942219673012682071997741831410540100000000000000000000",
+      "name": "FS complete fixed nominal infinite",
+      "relation": "<",
+      "rhs": "347/1000000"
+    },
+    {
+      "lhs": "116428391655512951362605361635448919777492337980729042316203/86715371942219673012682071997741831410540100000000000000000000",
+      "name": "FS complete fixed nominal finite",
+      "relation": "<",
+      "rhs": "1347/1000000"
+    },
+    {
+      "lhs": "4235798529760826168347734036198196464329941509536269829115659681499783403518265410757081/42357985297579790769368274602786989370196249724628272578292304764562950532422919764870560000000000000000000000000000",
+      "name": "FS full local perturbation square",
+      "relation": "<",
+      "rhs": "121/1000000000000000000000000000000"
     }
   ],
   "dense_dimension_max": 4,
   "executed_geometry_vertices": 121,
+  "fixed_spectrum_finite_ceiling": ".001347",
+  "fixed_spectrum_infinite_ceiling": ".000347",
+  "fixed_spectrum_onset": "4000000000000000000000",
+  "fixed_spectrum_output_sites": "200000000000000000000000",
   "historical_onsets": {
     "corrected_pointwise": "1000000000000000000000000000000000000000000000000000000000000000000000000000000",
     "integrated_spectral_mass": "1000000000000000000000000000000000000000000000000000000000000000000",
@@ -3184,6 +3503,18 @@ PASS arithmetic: BD alternate time length gain
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_rankone_integration_check__REVIEW.md",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_structural_precision__CORRECTIONS.md",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_spectral_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_background_perturbation__PROPOSAL.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_background_perturbation_check__REVIEW.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_fixed_spectrum_interface_check__REVIEW.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_precision_root_notes__FIXED_EIGENVALUE_INTERFACE.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_composition__PROPOSAL.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_composition_check__REVIEW.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_orientation_scope__ASSESSMENT.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_orientation_scope__QUALIFIED.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_orientation_scope__REVIEW.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_publication__ARITHMETIC_DRAFT.py.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_publication__CHECK_MAP.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_publication__SECTION_QUALIFIED.md",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/LARGER_COUPLING_COMPOSITION.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/LARGER_COUPLING_QUALIFICATION.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/complex_selfenergy_bridge/PROPOSAL.md.txt",

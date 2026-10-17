@@ -104,6 +104,18 @@ AUDIT_INPUT_PATHS = (
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/REVIEW.md',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/SECTION_QUALIFIED.md',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/ARITHMETIC_DRAFT.py.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_composition__PROPOSAL.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_composition_check__REVIEW.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_precision_root_notes__FIXED_EIGENVALUE_INTERFACE.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_fixed_spectrum_interface_check__REVIEW.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_background_perturbation__PROPOSAL.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_background_perturbation_check__REVIEW.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_orientation_scope__ASSESSMENT.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_orientation_scope__QUALIFIED.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_orientation_scope__REVIEW.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_publication__SECTION_QUALIFIED.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_publication__CHECK_MAP.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_publication__ARITHMETIC_DRAFT.py.txt',
 )
 PARAMETERS_PATH = 'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/parameters.json'
 MANIFEST_PATH = 'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json'
@@ -913,7 +925,74 @@ def check_arithmetic(params):
     eq('BD same tolerance time length gain',lc_T/bd_T,400)
     eq('BD alternate time length gain',lc_T/bd_Talt,1000)
 
+    # Fixed-spectrum orientation: simultaneous local/background scalar margins.
+    fs_k=lc_kap;fs_eta=F('1e-6');fs_r=1-fs_eta;fs_ka=fs_r*fs_k
+    fs_g=J-E0;fs_R2=fs_g**2+4*fs_k**2
+    lt('FS positive local gap',F('.024'),fs_g)
+    lt('FS rotation radius square',fs_R2,F('.032')**2)
+    fs_det=fs_k**2*(1-fs_r**2)/fs_g;fs_eps=F('1e-20')
+    lt('FS detuning absolute',fs_det,F('8.4e-21'))
+    lt('FS detuning relative',fs_det*J/fs_k**2,F('2.6e-6'))
+    lt('FS endpoint perturbation domain',fs_det,fs_eps)
+    lt('FS angle upper width only',fs_eta*fs_k/F('.024'),F('4.167e-13'))
+    lt('FS sufficient angle lower radius square',F('3.125e-13')**2*fs_R2,(fs_eta*fs_k)**2)
+    lt('FS background inverse denominator',0,1-36*fs_eps)
+    fs_H=1/(1-36*fs_eps)
+    lt('FS background Green difference',fs_eps*36**2*fs_H,F('1.3e-17'))
+    lt('FS background outgoing difference',fs_eps*34*35/(1-35*fs_eps),F('1.2e-17'))
+    lt('FS shifted complement gap',F(1,6),F('.18')-fs_det-F('.062')*F('1e-12')-F('36.000001')*fs_k**2)
+    lt('FS selfenergy difference',F('1.3e-17')*(1+432*fs_k**2+46656*fs_k**4),F('1.4e-17'))
+    lt('FS selfenergy derivative',35001+fs_k**2*(2*35001*6*36+72*36**2),36000)
+    lt('FS relative denominator difference',F('.031')/F('.4')*F('1.4e-17'),F('1.1e-18'))
+    lt('FS full complex profile increment',(F('.031')*F('1.3e-17')+F('1.001')*F('1.1e-18'))/(1-F('.000026')),F('2e-18'))
+    lt('FS unrounded profile slack',F('1.761e-13')+F('2e-18'),F('2e-13'))
+    fs_d=F('.025')*F('1e-6');fs_da=fs_d-fs_det
+    lt('FS shifted mass interval',fs_d*(1-F('2e-12')),fs_da)
+    lt('FS mass denominator',0,fs_da-35*fs_k**2)
+    lt('FS mass smallness',fs_k**2*F('1e6')*(1+F(35,12)),F(1,2))
+    lt('FS mass logarithm',1+(fs_d+35*fs_k**2)/(12*fs_ka**2),F(8,3)**18)
+    lt('FS mass H ceiling',36+F(10,3)*F(35,12),46)
+    fs_tail=34*fs_k**2/(3*(fs_da-35*fs_k**2))
+    lt('FS actual omitted mass',fs_tail+2*fs_k**2*F('1e6')*46/3,F('4.85e-8'))
+    lt('FS auxiliary reference deficit',fs_tail+2*fs_k**2*1334*46/3,F('4.54e-8'))
+    fs_drel=fs_det*J/fs_ka**2
+    lt('FS auxiliary detuning ratio',fs_drel,F('2.600006e-6'))
+    lt('FS restricted moment pointwise',F('.062')/(2*J)*(1+(1+fs_drel)/F('.4'))/F('.025')*F('1.0000001'),145)
+    lt('FS restricted moment square',F('2e-6')*145**2,F('.21')**2)
+    lt('FS complete complex mismatch',F('2e-13')+750*F('.21')*fs_k,F('1.6e-6'))
+    fs_P2=F('1.008e23')/F('.776')**2
+    fs_X=(F('1.5e9')+F('.062')*F('2.24e18')*F('1e-18'))/F('.776')
+    lt('FS endpoint column square',fs_P2*fs_H**2,F('4.1e11')**2)
+    lt('FS complete background source',fs_X*(1+fs_eps*F('4.1e11')*fs_H),F('2e9'))
+    fs_h=F('1e-18');fs_G=F('36.000001')
+    fs_osc=fs_G*(fs_h/F('1e-12'))/(1-fs_h/F('1e-12'))+12*fs_k**2*fs_G**2
+    lt('FS complex selfenergy oscillation',fs_osc,F('.000038'))
+    lt('FS resonance strip loss',F('.062')*fs_h/fs_ka**2,F('.000621'))
+    fs_side=fs_d-fs_det-F('.061')*fs_h**2-fs_k**2*fs_G-6*fs_k**4*fs_G**2
+    lt('FS cutoff margin',F('2.49e-8'),fs_side)
+    fs_rank=1+36*fs_k**4*fs_G**2
+    lt('FS bottom full inverse',6*fs_k**2+fs_rank/6,F('.18'))
+    lt('FS side full inverse',6+fs_rank/fs_side,F('5e7'))
+    lt('FS emitter update square',1+fs_k**2*F('4.1e11')**2,4101**2)
+    lt('FS complete bottom source',3*F('2e9')*(1+F('.18')*4101/fs_ka)+4,F('5e20'))
+    lt('FS complete side source',3*F('2e9')*(1+fs_k*4101*F('5e7'))+4,F('1.4e13'))
+    fs_bottom=F('1.5e-6')*F('.088')/fs_ka*F('5e20')/10**30
+    fs_sides=F('1.5')*44*fs_k/F('1e-6')*F('1.4e13')/(F('.025')*lc_T)
+    lt('FS localized bottom',fs_bottom,F('6.601e-9'))
+    lt('FS complete localized escape',fs_bottom+fs_sides,F('1e-7'))
+    fs_e=F('2.5')*((1-fs_r**2)+fs_det*J/fs_k**2)
+    lt('FS auxiliary nominal ratio denominator',fs_e,1)
+    fs_profile=2*(fs_eta+fs_e)/(1-fs_e)
+    lt('FS fixed nominal normalized profile',fs_profile,F('.000026'))
+    fs_actual=lc_static+F('1e-7')+F('1e-10')+F('1e-20')
+    lt('FS complete actual auxiliary error',fs_actual,F('.000320'))
+    lt('FS complete fixed nominal infinite',fs_actual+fs_profile+2*F('1e-20'),F('.000347'))
+    lt('FS complete fixed nominal finite',fs_actual+fs_profile+2*F('1e-20')+F('.001'),F('.001347'))
+    lt('FS full local perturbation square',fs_det**2+(fs_eta*fs_k)**2,F('1.1e-14')**2)
+
     return {'checks': rows,
+            'fixed_spectrum_onset':str(lc_T), 'fixed_spectrum_output_sites':str(lc_M),
+            'fixed_spectrum_infinite_ceiling':'.000347','fixed_spectrum_finite_ceiling':'.001347',
             'nominal_disk_onset':str(bd_T),'nominal_disk_output_sites':str(bd_M),
             'nominal_disk_infinite_ceiling':'.000320','nominal_disk_finite_ceiling':'.001320',
             'nominal_disk_alternate_onset':str(bd_Talt),'nominal_disk_alternate_output_sites':str(bd_Malt),

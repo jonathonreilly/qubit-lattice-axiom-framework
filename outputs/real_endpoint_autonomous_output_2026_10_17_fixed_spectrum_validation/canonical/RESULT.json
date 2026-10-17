@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "elapsed_sec": 0.3388701672665775,
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/fixed_spectrum_validation/canonical/stdout.txt",
+      "bytes": 485,
+      "sha256": "029e25abb0634bc1c9e027d64a78ab83d9fb8494347a3f3fd3e41779eea16e03"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/fixed_spectrum_validation/canonical/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

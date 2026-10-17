@@ -1,0 +1,8 @@
+triangle=0 t1=-1 chiral=-0.5: [(np.float64(-3.414), {'E1/2': 1}), (np.float64(-0.871), {'G3/2': 1}), (np.float64(-0.586), {'E5/2': 1}), (np.float64(2.871), {'G3/2': 1})]
+triangle=0 t1=-1 chiral=+0.5: [(np.float64(-3.414), {'E5/2': 1}), (np.float64(-0.871), {'G3/2': 1}), (np.float64(-0.586), {'E1/2': 1}), (np.float64(2.871), {'G3/2': 1})]
+triangle=0 t1=+1 chiral=-0.5: [(np.float64(-2.871), {'G3/2': 1}), (np.float64(0.586), {'E1/2': 1}), (np.float64(0.871), {'G3/2': 1}), (np.float64(3.414), {'E5/2': 1})]
+triangle=0 t1=+1 chiral=+0.5: [(np.float64(-2.871), {'G3/2': 1}), (np.float64(0.586), {'E5/2': 1}), (np.float64(0.871), {'G3/2': 1}), (np.float64(3.414), {'E1/2': 1})]
+triangle=1 t1=-1 chiral=-0.5: [(np.float64(-2.871), {'G3/2': 1}), (np.float64(0.586), {'E1/2': 1}), (np.float64(0.871), {'G3/2': 1}), (np.float64(3.414), {'E5/2': 1})]
+triangle=1 t1=-1 chiral=+0.5: [(np.float64(-2.871), {'G3/2': 1}), (np.float64(0.586), {'E5/2': 1}), (np.float64(0.871), {'G3/2': 1}), (np.float64(3.414), {'E1/2': 1})]
+triangle=1 t1=+1 chiral=-0.5: [(np.float64(-3.414), {'E1/2': 1}), (np.float64(-0.871), {'G3/2': 1}), (np.float64(-0.586), {'E5/2': 1}), (np.float64(2.871), {'G3/2': 1})]
+triangle=1 t1=+1 chiral=+0.5: [(np.float64(-3.414), {'E5/2': 1}), (np.float64(-0.871), {'G3/2': 1}), (np.float64(-0.586), {'E1/2': 1}), (np.float64(2.871), {'G3/2': 1})]

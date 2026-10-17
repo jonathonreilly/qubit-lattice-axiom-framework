@@ -1,0 +1,12 @@
+L=6: 2592 vertices, 7776 edges (5184 on-site)
+PSG {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1]}
+t1=-1 t2=+0.3 chiral=+0.2: lowest E=-2.9004 deg=48 gap=0.0195 irreps={'E1/2': 4, 'E5/2': 4, 'G3/2': 8}
+t1=-1 t2=+0.3 chiral=-0.2: lowest E=-2.9004 deg=48 gap=0.0195 irreps={'E1/2': 4, 'E5/2': 4, 'G3/2': 8}
+t1=+1 t2=+0.3 chiral=+0.2: lowest E=-2.9470 deg=16 gap=0.1001 irreps={'E1/2': 2, 'E5/2': 2, 'G3/2': 2}
+t1=+1 t2=+0.3 chiral=-0.2: lowest E=-2.9470 deg=16 gap=0.1001 irreps={'E1/2': 2, 'E5/2': 2, 'G3/2': 2}
+t1=-1 t2=+1 chiral=+0.3: lowest E=-3.5276 deg=48 gap=0.0198 irreps={'E1/2': 4, 'E5/2': 4, 'G3/2': 8}
+t1=-1 t2=+1 chiral=-0.3: lowest E=-3.5276 deg=48 gap=0.0198 irreps={'E1/2': 4, 'E5/2': 4, 'G3/2': 8}
+
+real	6m54.351s
+user	20m59.172s
+sys	2m3.784s

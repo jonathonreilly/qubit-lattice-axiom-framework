@@ -1,7 +1,7 @@
 ---
 claim_id: bksf_cubic_fermion_codes_bare_permutation_rotations_act_spinorially_on_the_fermion_bounded_theorem_note_2026-10-17
 claim_type: bounded_theorem
-claim_scope: "Supplied model: the 60 translation-invariant BKSF stabilizer codes on the cubic lattice (one qubit per edge of Z^3, one ordering of the six edge directions at every vertex) of the companion orbit note, with signed plaquette generators, one sign per plaquette orientation (8 translation-invariant sign sectors). Exact (Pauli algebra with phases, L = 4 torus): all 8 sectors of all 60 codes are valid; in two sectors the hop product of a fixed ordering's edge operators around every plaquette is plus, respectively minus, the signed generator (flux 0 and flux pi; this labels the sectors); every rotation in each code's stabilizer maps the signed group of those two sectors to itself as a bare qubit permutation P_R, while in each of the 6 mixed sectors 44 codes have a stabilizing rotation that needs a sign correction. Pair test, exact (L = 8 torus): for every one of the 108 (code, C2) pairs, in both sectors, a state with fermions at x and Rx (solved so that its excitations are R-symmetric and confined near x and Rx) has P_R-eigenvalue +1 relative to the vacuum (controls: +1 for the toric-code boson; -1 for the toric-code boson in pi flux under a plaquette-centred C2). With exchange sign -1 this gives eta_f(C2, C2) = -1 for every C2 of every code under P_R. For the 72 pairs with a span-preserving ordering the pair creators are clean (pure hop strings), so lambda is the sector invariant; for the other 36 the test needs creators dressed by local flux near the endpoints, and the result (+1) is strong evidence but not a proof, since flux dressing linking the string can change lambda in principle. Group cohomology then gives: for the 12 D3 codes and the 24 covered single-C2 codes, the fermion's class for the whole rotation stabilizer under P_R equals the restriction of the spin-1/2 class w2 of SO(3); for the order-4 codes (D2, Q8 class) and the other 12 single-C2 codes the same holds conditionally on the dressed test. The realization P_R W with W = prod_v exp(-i pi B_v / 4) (a function of the stabilizers, constant on the code space) gives the trivial class instead, so the class belongs to the realization, not to the code alone. Not claimed: C3-only statements (no Z2 class), sign patterns that are not translation-invariant, the mixed sectors, other encodings, dynamics, the continuum limit, or any physical identification (electron, spin).""
+claim_scope: "Supplied model: the 60 translation-invariant BKSF stabilizer codes on the cubic lattice (one qubit per edge of Z^3, one ordering of the six edge directions at every vertex) of the companion orbit note, with signed plaquette generators, one sign per plaquette orientation (8 translation-invariant sign sectors). Exact (Pauli algebra with phases, L = 4 torus): all 8 sectors of all 60 codes are valid; in two sectors the hop product of a fixed ordering's edge operators around every plaquette is plus, respectively minus, the signed generator (flux 0 and flux pi; this labels the sectors); every rotation in each code's stabilizer maps the signed group of those two sectors to itself as a bare qubit permutation P_R, while in each of the 6 mixed sectors 44 codes have a stabilizing rotation that needs a sign correction. Pair test, exact (L = 8 torus): for every one of the 108 (code, C2) pairs, in both sectors, a state with fermions at x and Rx (solved so that its excitations are R-symmetric and confined near x and Rx) has P_R-eigenvalue +1 relative to the vacuum (controls: +1 for the toric-code boson; -1 for the toric-code boson in pi flux under a plaquette-centred C2). With exchange sign -1 this gives eta_f(C2, C2) = -1 for every C2 of every code under P_R. For 72 pairs the creators are clean hop strings; for the other 36 they need local flux dressing, and lambda = +1 holds on the entire space of admissible dressed creators (exact quadratic-form argument, independent check). Group cohomology then gives, for every code, that the fermion's class for its whole rotation stabilizer (D3, D2 = Q8 class, or Z2) under P_R equals the restriction of the spin-1/2 class w2 of SO(3). Twisting by W = prod_v exp(-i pi B_v / 4) (a function of the stabilizers, constant on the code space) on the elements where a Z2 character is -1 gives a valid realization that flips those C2: the trivial class for D3 and single-C2 codes, but not for the order-4 codes, whose reachable twisted patterns flip exactly two of the three C2. So the class belongs to the realization, not to the code alone. Not claimed: C3-only statements (no Z2 class), sign patterns that are not translation-invariant, the mixed sectors, other encodings, dynamics, the continuum limit, or any physical identification (electron, spin).""
 upstream_dependencies:
   - bksf_cubic_fermion_codes_are_not_rotation_invariant_minimal_orbit_four_bounded_theorem_note_2026-10-17
 runner: scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py
@@ -66,20 +66,21 @@ for P_R.
      in the stabilizer of every code.
    - A simpler version, with the hops of an ordering whose plaquette span
      P_R preserves, covers 72 of the pairs at L = 4 and agrees.
-   - **Robustness caveat.**
+   - **Robustness.**
      - For those 72 pairs, the pair creators are clean: hop strings that
-       create nothing but the two charges. Their λ = +1 is the sector
-       invariant.
+       create nothing but the two charges.
      - For the other 36, no ordering's plaquettes are permuted by P_R. A
-       clean creator then has a non-clean image, so the general test must
-       let S create local flux excitations near the endpoints.
-     - The companion Majorana-per-direction note shows that such flux
-       dressing can change λ when a small flux loop links the string.
-     - So the 36 values (+1, and stable under the independent check's
-       random sampling) are strong evidence, not a proof.
-     - The D3 and single-C2 statements below use only the 72 clean pairs.
-       The D2 statement for the order-4 codes uses the 36 and is
-       conditional.
+       clean creator then has a non-clean image, so S must be allowed local
+       flux excitations near the endpoints.
+     - The independent check showed that λ does not depend on that
+       dressing. Over the whole space of admissible dressed creators
+       (dimension 327 to 1140), λ is a GF(2) quadratic function whose
+       values on a basis are +1 and whose off-diagonal pairing vanishes.
+       So λ = +1 on the entire space, for all 108 pairs: at L = 10, and for
+       the 36 uncovered pairs again at L = 12.
+     - The reason is that in BKSF the product of all B_v is the identity,
+       so no local operator flips an odd number of charges. A dressing
+       cannot change what the endpoints are.
    - **Controls.** The toric-code boson gives +1. The toric-code boson in
      pi flux gives -1 under a C2 about a plaquette-centred axis (the
      Aharonov–Bohm phase) and +1 under the vertex C2. So the test can
@@ -112,22 +113,27 @@ for P_R.
      to -1. So the restriction of w2 is:
      - the nontrivial class on D3 (the binary dihedral group of order 12);
      - the class with all three squares -1 on the order-4 groups, whose
-       three C2 axes are mutually orthogonal (the quaternion group). This
-       is conditional on the dressed pair test, see item 4;
+       three C2 axes are mutually orthogonal (the quaternion group);
      - the nontrivial class on Z2.
-   - **Conclusion.** Under P_R, the fermion's fractionalization class for
-     the code's whole rotation stabilizer equals the restriction of w2, the
-     class of a spin-1/2 particle:
-     - for the 12 D3 codes and the 24 covered single-C2 codes, from clean
-       creators;
-     - for the order-4 codes and the remaining single-C2 codes,
-       conditionally.
+   - **Conclusion.** For every one of the 60 codes, under P_R the
+     fermion's fractionalization class for the code's whole rotation
+     stabilizer equals the restriction of w2, the class of a spin-1/2
+     particle.
 6. **The class belongs to the realization.**
    - Let W = prod_v exp(-i pi B_v / 4). It is a function of the
      stabilizers, so it is constant on the code space. On a state with
      n fermions it contributes a relative phase e^{i pi n / 2}.
-   - P_R W is therefore also a realization of R, and it flips lambda, so
-     eta_f = +1. It is the scalar rotation c_v -> c_{Rv}.
+   - Dressing one involution R by W flips its λ.
+   - **The group law limits which elements can be dressed** (found by the
+     independent check). Write V_g = P_g W^{n(g)}. Since W commutes with
+     P_g and leaves a two-fermion state with phase -1, the V_g form an
+     action up to fermion parity exactly when n is a homomorphism from the
+     stabilizer to Z2.
+     - **D3 and single-C2 codes:** n is the sign character (dress the C2,
+       not the C3). This flips every C2 and gives the trivial class.
+     - **Order-4 codes (D2):** each nontrivial character flips exactly two
+       of the three C2. The reachable patterns are (+,+,-), (+,-,+) and
+       (-,+,+). The trivial class is not reachable by such a twist.
    - Within one realization, dressing by stabilizer products cannot change
      the class: f x f = 1 fixes the gauge freedom to nu_f = +-1, and
      (F P_R)^2 is constant for a Pauli dressing F that respects the group
@@ -143,17 +149,18 @@ for P_R.
   For every code in the family, the sign pattern is exactly the one a
   spin-1/2 particle shows under the code's rotation symmetry.
 - **Two caveats.**
-  - The dressed realization P_R W gives the scalar answer. Which one is
+  - The twisted realizations of item 6 change the answer. Which one is
     physical depends on the dynamics.
     - The bare permutation is not a symmetry of Majorana hopping
-      sum t_e A_e built from one ordering's edge operators; P_R W is.
+      sum t_e A_e built from one ordering's edge operators; P_R W is, for
+      each R separately.
     - With number-conserving hopping both are symmetries, and they differ
       by e^{i pi N / 2}.
     - Exactly: in BKSF, B_v is the encoded fermion parity at v, so the
       occupation is n_v = (1 - B_v)/2. Then
       W = prod_v exp(-i pi B_v / 4) = e^{-i pi L^3 / 4} e^{i pi N / 2}.
-      The dressing that removes the spin-1/2 class is a quarter-turn of the
-      fermion-number U(1).
+      The twist of item 6 is a quarter-turn of the fermion-number U(1),
+      applied to the odd elements.
     - So with charge conservation, "spin-1/2 under rotations" and "charge
       rotation by pi/2" are interchangeable. This is the lattice form of a
       spin-charge relation. A prediction needs the framework to fix both
@@ -203,8 +210,14 @@ reading the runner. Its verdicts:
   - It also argued why the "same syndrome" condition fixes lambda: two
     valid solutions differ only by separated local clusters and
     stabilizers.
+- **Third round (run from the C12 check): two results.**
+  - **Dressing independence.** It proved λ = +1 on the entire space of
+    admissible dressed creators for all 108 pairs (item 4).
+  - **A correction to item 6.** Dressing every element by W violates the
+    group law; only twists along a Z2 character are consistent.
 
-Files: `.claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/`.
+Files: `.claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/` and
+`.claude/science/physics-loops/toe-campaign-20261017/c12_majorana_per_direction/independent_check/` (`REPORT2.txt`, `pairspace.py`).
 
 ## Premises
 
@@ -239,7 +252,7 @@ Files: `.claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/i
 ## No-Go Discipline Gate
 
 - **N1 — routes around the claim.** Not covered:
-  - realizations other than P_R and P_R W;
+  - realizations other than P_R and its character twists by W;
   - sign patterns that are not translation-invariant;
   - the mixed sectors;
   - other encodings;

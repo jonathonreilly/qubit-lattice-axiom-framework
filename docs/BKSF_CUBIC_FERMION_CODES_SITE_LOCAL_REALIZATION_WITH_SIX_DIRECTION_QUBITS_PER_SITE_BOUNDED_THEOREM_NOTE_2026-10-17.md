@@ -63,8 +63,11 @@ site rotation reproduces the edge rotation exactly?
      region is the product of B_v over the region times the product of R
      on the edges inside it.
    - **The realization.** As in the companion note, the class belongs to
-     the bare site action. The dressing W = prod_v exp(-i pi B_v / 4) is
-     also site-local and gives the trivial class.
+     the bare site action.
+     - The dressing W = prod_v exp(-i pi B_v / 4) is site-local.
+     - Twisted along a Z2 character of the stabilizer, it gives other
+       classes: the trivial class for D3 and single-C2 codes, but not for
+       the order-4 codes.
    - **The scope.** "No O-invariant code" refers to the half-edge images
      of the 60 BKSF codes only, not to six-qubit-per-site codes in
      general.

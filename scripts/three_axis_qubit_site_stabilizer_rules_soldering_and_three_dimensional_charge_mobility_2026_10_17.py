@@ -15,9 +15,10 @@ not locally creatable), and that one Z moves it by 2 e_a (coherent motion in thr
 
 Part B (exact within the restriction, soldered): all star strings fixed by a C4 or C3 rotation
 (this includes every toric-code-type generator shape) that commute with all translates of all
-their rotated images; sign-consistent orbits; maximal commuting sets; torus code dimension of each
-maximal set's rule at L = 4, 6, 8 (none is bounded: linear growth or zero); and, with Singular, the
-Ext^3 test for three-dimensionally mobile charges on the 3-orbit sets.
+their rotated images; sign-consistent orbits; maximal commuting sets; 3L^3 - rank of each set's
+generator union at L = 4, 6 (a lower bound on the code dimension of every valid sub-rule); the
+abelian-alphabet structure of the 187-orbit family; and, with Singular, the Ext^3 test on the eight
+3-orbit rules.
 """
 
 from __future__ import annotations
@@ -315,14 +316,15 @@ def main() -> int:
         gens = [dec(e) for k in c for e in elems[k]]
         Ls = (4, 6) if len(c) <= 31 else (4,)
         ds = [torus_logdim(gens, L) for L in Ls]
-        print(f'B: maximal set of {len(c)} orbits: log2 code dim {dict(zip(Ls, ds))}')
+        print(f'B: maximal set of {len(c)} orbits: 3L^3 - rank of the generator union {dict(zip(Ls, ds))}')
         if len(c) == 3:
             unbounded &= ds == [48, 72]
         elif len(c) in (23, 31):
             unbounded &= ds[0] == 32 and ds[1] > ds[0]
         else:
             unbounded &= ds == [0]
-    ck.check('B: no maximal soldered rule has bounded nonzero code dimension: the 3-orbit sets grow as 12L, the 23- and 31-orbit sets grow, the 187-orbit set has a unique state at L = 4',
+    ck.check('B: rank bounds: 3L^3 - rank is 48, 72 for the 3-orbit sets and 32, 48 for the 23- and 31-orbit sets at L = 4, 6, and 0 for the 187-orbit union at L = 4; '
+             'every valid sub-rule of the first ten sets therefore has growing code dimension (the 23/31/187 unions themselves contain -1, per the independent check)',
              unbounded)
     big = next(c for c in cl if len(c) == 187)
     labs = set(l for k in big for e in elems[k] for l in dec(e)) - {0}
@@ -333,12 +335,12 @@ def main() -> int:
              'that alphabet is its own single-site commutant and O permutes its three generators transitively '
              '(so either all lie in the group, a product state, or all are free single-site variables and every operator commuting with them commutes with every generator)',
              len(labs) == 7 and all(not SP[a_, b_] for a_ in labs for b_ in labs) and commutant == labs and orbit_gen == set(gen3))
-    small = [c for c in cl if len(c) in (3, 23, 31)]
+    small = [c for c in cl if len(c) == 3]
     res = [ext3_singular([dec(e) for k in c for e in elems[k]]) for c in small]
     if res[0] is None:
         print('SKIP B Ext^3 checks: Singular not found (set SINGULAR_BIN)')
     else:
-        ck.check('B: in every maximal soldered rule of the 3-, 23- and 31-orbit sets, Ext^3(C, R) has empty support off the coordinate planes (no three-dimensionally mobile charge; GF(2), Singular)',
+        ck.check('B: in each of the eight 3-orbit soldered rules (their -1-freeness with signs + is the independent check's result), Ext^3(C, R) has empty support off the coordinate planes (no three-dimensionally mobile charge; GF(2), Singular)',
                  not any(res))
 
     print('per_element: Part A exact (finite checks plus the toric-code structure); Part B exhaustive over C4/C3-fixed star strings')

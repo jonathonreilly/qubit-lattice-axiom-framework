@@ -32,5 +32,7 @@
 - Runner: `scripts/three_axis_qubit_site_stabilizer_rules_soldering_and_three_dimensional_charge_mobility_2026_10_17.py` (PASS=10 with Singular)
 - Status: bounded support, unaudited. Exact within the supplied model;
   Part B is also exact within the C4/C3 symmetry restriction.
-- Independent check: running.
+- Independent check: Part A confirmed. Part B's counts confirmed. It found
+  that the 23-, 31- and 187-orbit unions contain -1; the claims are now
+  stated through the rank bound.
 - Intended claim_type: bounded_theorem. Trace: frontier_discovery.

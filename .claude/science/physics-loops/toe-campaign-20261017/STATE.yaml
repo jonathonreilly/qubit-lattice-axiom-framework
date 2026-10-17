@@ -27,8 +27,8 @@ blocks:
     status: delivered_to_branch
     note: docs/THREE_AXIS_QUBIT_SITE_STABILIZER_RULES_UNSOLDERED_TORIC_CODES_MOVE_SOLDERED_MAXIMAL_RULES_DO_NOT_BOUNDED_THEOREM_NOTE_2026-10-17.md
     runner: scripts/three_axis_qubit_site_stabilizer_rules_soldering_and_three_dimensional_charge_mobility_2026_10_17.py (PASS=10 with Singular)
-    exact: ["unsoldered: 8 interleaved toric codes, bounded code dim, coherently 3D-mobile bosons", "soldered C4/C3-fixed class: 11 maximal sets; 10 with growing code dim and no 3D-mobile charge in maximal rules; 187-family obstructed as in C2"]
-    independent_check: running
+    exact: ["unsoldered: 8 interleaved toric codes, bounded code dim, coherently 3D-mobile bosons", "soldered C4/C3-fixed class: 11 maximal sets; valid sub-rules of 10 have growing code dim (rank bound); the eight 3-orbit rules have no 3D-mobile charge; 187-family obstructed as in C2"]
+    independent_check: "A confirmed; B counts confirmed; found 23/31/187 unions contain -1 (not rules) -> claims restated via rank bound; 3-orbit rules valid; 187-family dichotomy confirmed"
     trace_class: frontier_discovery
 scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
 next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"

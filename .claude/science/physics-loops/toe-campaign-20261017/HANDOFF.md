@@ -60,4 +60,5 @@ adopted; every result is unaudited bounded support with a declared model.
 - C3 onwards in OPPORTUNITY_QUEUE.
 
 ## Next decision
-- C3 independent check (running). Start C4: fermionic charges.
+- C3 independent check: done. It corrected the validity of three large unions (they contain -1); the conclusions are restated through the rank bound.
+- Start C4: fermionic charges.

@@ -340,7 +340,7 @@ def main() -> int:
     if res[0] is None:
         print('SKIP B Ext^3 checks: Singular not found (set SINGULAR_BIN)')
     else:
-        ck.check('B: in each of the eight 3-orbit soldered rules (their -1-freeness with signs + is the independent check's result), Ext^3(C, R) has empty support off the coordinate planes (no three-dimensionally mobile charge; GF(2), Singular)',
+        ck.check('B: in each of the eight 3-orbit soldered rules (their -1-freeness with signs + is the result of the independent check), Ext^3(C, R) has empty support off the coordinate planes (no three-dimensionally mobile charge; GF(2), Singular)',
                  not any(res))
 
     print('per_element: Part A exact (finite checks plus the toric-code structure); Part B exhaustive over C4/C3-fixed star strings')

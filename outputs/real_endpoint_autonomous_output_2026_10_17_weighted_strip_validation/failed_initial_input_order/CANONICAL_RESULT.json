@@ -1,0 +1,10 @@
+{
+  "runner": "scripts/real_endpoint_autonomous_output_2026_10_17.py",
+  "status": "nonzero_exit",
+  "exit_code": 1,
+  "stdout": "SCOPE: exact local finite algebra and conditional analytical-bound arithmetic.\nBOUNDARY: no spectrum, dynamics, 904/1808 matrix, native realization, or independent proof computed.\nBOUNDARY: residual spectral mass remains paid; finite guarantee is only [T,2T].\nBOUNDARY: no general impossibility claim or negative-packet verdict is tested.\nTOTAL FAIL: Expecting value: line 1 column 1 (char 0)\n",
+  "stderr": "",
+  "elapsed_sec": 0.0871279239654541,
+  "timeout_sec": 30,
+  "live_log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/.in-progress/real_endpoint_autonomous_output_2026_10_17.txt"
+}

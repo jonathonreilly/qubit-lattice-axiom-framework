@@ -1,0 +1,16 @@
+{
+  "exit_code": 1,
+  "elapsed_sec": 0.08791520819067955,
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/weighted_strip_validation/mutation_inverse/stdout.txt",
+      "bytes": 9314,
+      "sha256": "62b08bcbb5222139bb643512a0c23a30dbc5dafb34df856adfd3dfdfd273f9af"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/weighted_strip_validation/mutation_inverse/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

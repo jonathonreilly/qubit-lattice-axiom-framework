@@ -15,7 +15,6 @@ from collections import deque
 
 AUDIT_TIMEOUT_SEC = 30
 AUDIT_INPUT_PATHS = (
-    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/parameters.json',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/FAILURES_AND_SCOPE.md.txt',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/RESOURCE_PLAN.md.txt',
@@ -29,6 +28,7 @@ AUDIT_INPUT_PATHS = (
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/RESULT.json.txt',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/stderr.txt',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/stdout.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/parameters.json',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/ROOT_QUALIFICATION.md.txt',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/ROUTE_SOURCE_IDENTITY_CHECK.json',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_spectral_check/REVIEW.md.txt',
@@ -64,9 +64,19 @@ AUDIT_INPUT_PATHS = (
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/interval.md.txt',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/interval_acceptance.json.txt',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/interval_qualification.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour/PROPOSAL.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour/CORRECTED_V2.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour/CORRECTIONS.json.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour_independent_check/REVIEW.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_scalar_independent_check/REVIEW.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/CORE_STRIP_QUALIFICATION.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/endpoint_weighted_profile/PROPOSAL.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/endpoint_weighted_profile_independent_check/REVIEW.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/WEIGHTED_STRIP_COMPOSITION.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/weighted_strip_composition_check/REVIEW.md.txt',
 )
-PARAMETERS_PATH = AUDIT_INPUT_PATHS[0]
-MANIFEST_PATH = AUDIT_INPUT_PATHS[1]
+PARAMETERS_PATH = 'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/parameters.json'
+MANIFEST_PATH = 'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json'
 
 
 def read_regular_input(repo, rel):
@@ -466,9 +476,56 @@ def check_arithmetic(params):
     lt('tradeoff infinite complete ceiling',tradeoff_total,F(3,1000))
     lt('tradeoff finite exponent margin',18*(2*Ttradeoff)*F(6,5)+9,Mtradeoff+23)
     lt('tradeoff finite complete ceiling',tradeoff_total+F(1,1000),F(4,1000))
+    # Thin-strip and weighted-profile constants only; analyticity is an analytical proof.
+    thin_h=F(1,10**23);Tthin=10**27;Mthin=50*Tthin
+    lt('thin closed spectral gap',F(17,100),F('2.186826508897014')-2-F('0.0061'))
+    lt('thin energy band ceiling',E0+F('.061')*sig,F('.0061'))
+    lt('thin closed resolvent coefficient',J/(F('.17')*(F('.17')-F('.062')*thin_h)),2)
+    lt('thin closed root continuation',r+2*F('.062')*thin_h,F(1,6))
+    lt('thin closed self energy variation',J*2*F('.062'),F('.004'))
+    lt('thin physical matrix variation',F('.062')+F('.031'),F('.1'))
+    thin_neumann=12*10**22*F('.1')*thin_h
+    eq('thin Neumann product',thin_neumann,F('.12'))
+    lt('thin continued inverse',F(12*10**22)/(1-thin_neumann),14*10**22)
+    lt('thin incoming core column',14*10**22*F('.062'),9*10**21)
+    lt('thin closed tail squared',(F(1,6)**2)/(1-F(1,6)**2),F(1,5)**2)
+    lt('thin complete localized vector',3*9*10**21+4,4*10**22)
+    lt('thin outgoing imaginary floor',12*kap**2,F('.4')*(32*kap**2-F('.061')*thin_h))
+    lt('thin conjugate coefficient',17*kap*F('.062')/(12*kap**2),10**11)
+    lt('thin target coefficient',2*17*kap*F('.062')/(12*kap**2),2*10**11)
+    lt('thin outgoing side floor',F('.024')*sig,v*sig-F('.061')*thin_h**2-2*alpha)
+    eq('thin exponential argument',v*Tthin*thin_h,250)
+    lt('thin integer exponential majorant',10**75,2**250)
+    lt('thin target bottom squared prefactor',(2*10**11*sig)**2/thin_h,(10**17)**2)
+    lt('thin localized aggregate',F(3,2)*(F(4*10**27,10**75)+F(176*10**16)/(v*Tthin)),F(3,10**7))
+    lt('thin negative tail side denominator',(10**13)**2,6*(v*Tthin-113))
+    thin_tail=F(10**17,10**75)+88*kap/(sig*10**13)
+    lt('thin negative tail ceiling',thin_tail,F(1,10**16))
+    lt('thin incoming denominator',(8*10**12)**2,3*v*Tthin)
+    lt('thin incoming total',F(13,10**8)+88*kap/(sig*8*10**12),F(2,10**7))
+    rmax=F(12,10**6);dmax=F(25,10**6)
+    lt('profile weighted denominator floor',F('.99996'),(1-rmax)*(1-dmax))
+    lt('profile weighted denominator slope',23/(1-rmax),24)
+    lt('profile weighted denominator intercept',F(1,10**20)/(1-rmax)+F(1,10**23),F(2,10**20))
+    lt('profile weighted complex slope',(749+F('.000288'))/F('.99996'),750)
+    point_intercept=(d0+F(3,10**20)+F(24,10**26))/F('.99996')+F(32,10**24)
+    lt('profile weighted complex intercept',point_intercept,F(2,10**13))
+    lt('profile weighted moment squared',kap**2/((1-massdef)*v**2),F(41,10**12)**2)
+    delta_weighted=F(2,10**13)+750*F(41,10**12)
+    lt('profile weighted L2 mismatch',delta_weighted,F(31,10**9))
+    weighted_preparation=F(1415,1000)*(F(4,10**5)+F(31,10**9)+F(16,10**10))
+    lt('profile weighted preparation',weighted_preparation,F(567,10**7))
+    weighted_static=F(567,10**7)+2*F(31,10**9)
+    lt('profile weighted static',weighted_static,F(568,10**7))
+    thin_composed=F(568,10**7)+F(3,10**7)+F(2,10**7)+F(1,10**32)
+    lt('weighted strip complete infinite',thin_composed,F(58,10**6))
+    lt('weighted strip finite exponent',18*2*Tthin*F(6,5)+9,Mthin+23)
+    lt('weighted strip complete finite',thin_composed+F(1,1000),F(1058,10**6))
     return {'checks': rows,
             'historical_onsets': {'original':str(T), 'corrected_pointwise':str(Tpoint),
                                  'integrated_spectral_mass':str(Tnew)},
+            'thin_weighted_onset':str(Tthin), 'thin_weighted_output_sites':str(Mthin),
+            'thin_weighted_infinite_ceiling':'.000058', 'thin_weighted_finite_ceiling':'.001058',
             'tradeoff_onset':str(Ttradeoff), 'tradeoff_output_sites':str(Mtradeoff),
             'tradeoff_infinite_ceiling':'.003', 'tradeoff_finite_ceiling':'.004',
             'weighted_onset': str(Tweighted), 'weighted_output_sites': str(Mweighted),

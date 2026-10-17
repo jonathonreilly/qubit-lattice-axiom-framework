@@ -1,0 +1,1 @@
+Runner copied the target-side denominator1e13 into the incoming-side corroboration, but sqrt(3vT)>8e12, not1e13 atT1e27. Repaired this scalar corroboration to8e12; incoming total still<2e-7, consistent with reviewed proof. Original failed result preserved.

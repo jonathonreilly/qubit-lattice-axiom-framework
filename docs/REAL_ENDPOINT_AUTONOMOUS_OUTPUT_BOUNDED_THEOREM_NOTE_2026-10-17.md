@@ -50,12 +50,13 @@ specified common-profile isometry with operator error <0.0013 for every
 `M=50T=5e43` output sites, fixed before delivery, has error <0.0023 for every
 `t in [T,2T]`, after embedding into the infinite output space.
 
-A second, separately checked tolerance/runtime tradeoff below gives infinite
-error <.003 for all t>=10^30 and finite error <.004 on [10^30,2*10^30]
-with M=5e31. Each finite M is fixed before delivery; these are two choices
-of device, not a size change during operation. The smaller-error T42 theorem
-is preserved. The final common waveform and supplied physical premises are
-the same in both regimes; the tradeoff changes an intermediate proof packet.
+The checked weighted-profile and complete thin-strip refinement below gives
+infinite error <.000058 for every t>=10^27, and finite error <.001058 on
+[10^27,2*10^27] with M=5e28 fixed before delivery. It therefore also meets
+the original .0013/.0023 tolerances at this earlier sufficient onset. The
+prior T42 proof and T30/.003/.004 tradeoff are preserved as historical routes.
+Each finite size denotes a separately fixed device; the infinite apparatus,
+common waveform, seed and supplied physical premises are unchanged.
 
 The bounds include arbitrary old inputs entangled with any passive reference,
 all emitter/clock/source outputs, the actual common scalar, full complex output
@@ -837,8 +838,8 @@ its receipt preserves that failure and no memory-cap success is claimed.
 
 The source package pins the unchanged mathematical interval/kernel premises,
 complete proposal and correction history, and exposed review reports. The
-initial publication cache bound its runner and43 declared inputs. The refined
-runner declares49 inputs; its current cache and separate
+initial publication cache bound its runner and43 declared inputs. The T30
+runner declared49 inputs; its historical cache and separate
 postexecution evidence preserves actual streams, caps and mutation failures.
 Independent audit and combined current-main landing gates remain future work.
 This regular review PR does not grant retained status or authorize a merge.
@@ -1051,3 +1052,274 @@ Full streams, runtime/source prelaunch identities and resource receipts are
 preserved in `outputs/real_endpoint_autonomous_output_2026_10_17_tradeoff_validation/`.
 The older mutation results remain historical evidence, not repeated runs.
 No whole-apparatus simulation, retained audit or combined-main gate is claimed.
+
+## Checked thin-strip continuation and weighted-profile improvement
+
+The following two refinements retain the exact fixed kappa=1e-12, sigma=1e-6,
+apparatus, delivered seed, common f/a0, old aging and all reference/output
+conventions. They do not import any proposed coupling family. Original sources,
+correction ledger and independent reviews are preserved separately. The complete
+core argument and the scalar target argument received separate source-exposed
+same-model checks. A distinct check reconstructed the weighted complex mismatch.
+No retained audit or simulation is implied.
+
+Set h=1e-23 and T27=1e27. The real-axis selected-column estimate above supplies
+||M_j(x)^-1||<1.2e23 uniformly on the original interval. The purpose of the
+next argument is to justify a thin continuation of the ACTUAL complete
+localized vector; a scalar pole-free contour alone would not suffice.
+
+### Physical matching analyticity and inverse
+
+Use the exact fixed real physical core (113 sites, eight internal coordinates per parity), with all output exterior channels eliminated at the existing physical reference plane. Its energy-dependent entries are lambda(z)=b_j+E(z) on core diagonals and the outgoing lead self-energies J exp(iz) on the selected open direction, J q_l(z) on seven closed directions. Static contacts, emitter coupling and graph coefficients are unchanged. Thus no k-dependent basis is introduced; B spectral projections are fixed. The sign of the self-energy is immaterial for this norm bound but matches the source M. In exact form M_j(z)=(b_j+E(z))I-Hcore+J P_out Q_j(z) P_out*, with fixed spectral projectors in Q_j.
+
+The closed half-line spectral separation can conservatively be bounded below by .17 throughout real I. For nonvacuum sources B>=1+Delta_min, hence their threshold minus b_j+E(k) is at least Delta_min-2-E(k)>.17 since E(k)<.0061. The other vacuum old energy is separated from its entire lead band by more than 1.8. Source excitation number is preserved by B and all added terms in Csrc/Gsrc are positive, so this lower bound is on the whole nonvacuum subspace, not a guessed eigenvalue. The original |q_l|<=1/7 still holds on I.
+
+For |Im z|<=h, |E'(z)|<.062, so |E(z)-E(x)|<.062y. Resolvent analyticity for the closed free half-line, whose endpoint Green function equals -q_l/J up to convention, yields
+
+ |q_l(z)-q_l(x)| <= J |E(z)-E(x)|/[.17(.17-|E(z)-E(x)|)] <2 |E(z)-E(x)|.
+
+Therefore |q_l(z)|<1/6, uniformly, and the chosen decaying roots continue without branch ambiguity. The closed self-energy variation is <.004y. The open variation is J|exp(iz)-exp(ix)|<.031y. Since the boundary projection is orthogonal and there is only the actual output lead boundary, the full matching variation is
+
+ ||M(z)-M(x)|| < (.062+.031)y <.1y.
+
+The physical core includes the terminated stub and emitter; only the output tail m>=1 is eliminated at the retained output site m=0. Thus this energy-dependent boundary occurs exactly once.
+
+Using the published real-axis ||M(x)^-1||<1.2e23, the perturbation norm is <.12 throughout the rectangle. Hence M(z) is analytic/invertible there and ||M(z)^-1||<1.2e23/(1-.12)<1.4e23. Define the analytically continued incoming column x(z)=M(z)^-1 i E'(z) u and reflection R(z)=u^T x(z)-1, with the same real constant u. Then ||x(z)||<9e21. No use is made of unitarity off the real axis.
+
+The localized column C is obtained by subtracting the open incoming/outgoing waves and including all closed tails. On the core, even allowing the subtracted open component via |R|<=||x||+1 gives <=2||x||+2. The closed-tail map has norm <=r_c/sqrt(1-r_c^2)<1/5 for r_c=1/6, multiplying the boundary vector of norm<=||x||. Thus conservatively ||C(z)||<3||x||+4<4e22. This is a holomorphic vector in the fixed finite-core plus closed-tail Hilbert space: the tails are uniformly geometric in that space. This does not continue an infinite full resolvent across its spectrum; it continues a finite matching construction and its decaying closed tails.
+
+### Localized integral
+
+The published conjugate comparison coefficient is a0(z)=conj(omega*zeta0) A E'(z) exp(-i113z)/Dbar(z), A<17kappa, Dbar=E(z)-E0+(kappa^2/J)exp(-iz). For z=x-iy,
+
+ Im Dbar = -sin x [2J sinh y+(kappa^2/J)exp(-y)].
+
+There is no zero in this rectangle, and |Dbar|>12kappa^2. Also |exp(-i113z)|<=1. Thus |a0|<1e11 everywhere. On each vertical side the existing real-part margin gives |Dbar|>.024 sigma and |a0|<44kappa/sigma=4.4e-5. The much thinner h only improves that side estimate.
+
+The time factor has modulus exp(t Im E(z))=exp[-2J t sin x sinh y]<=exp(-vty). A vector-valued rectangle deformation of (2pi)^-1/2 integral_I a0 C exp(-itE) dk is legitimate by the finite-matching and closed-tail analyticity above.
+
+Bottom norm <=(2sigma/sqrt(2pi))*1e11*4e22 exp(-vth)<4e27 exp(-vth).
+
+Two side norms combined <=(2/sqrt(2pi))*(4.4e-5)*(4e22)/(vt)<1.76e18/(vt).
+
+At T=1e27, vTh=250. The bottom is negligible (even e^250>2^250 suffices for <1e-40); side <7.04e-8 per old column. Pay sqrt(2)<1.5 for the two potentially overlapping old-energy columns within parity; different parities remain orthogonal. A complete localized ceiling <3e-7 follows, for every t>=T. Reference tensoring preserves it. Both cutoff edges remain paid.
+
+### Scalar target negative tail, separately
+
+For the actual target f(z)=zeta0 A E'(z) exp(i113z)/Dref(z), the same thin rectangle remains above its reference resonance pole. Indeed
+
+ Im Dref = sin x[(kappa^2/J) exp(y)-2J sinh y] >12kappa^2
+
+at this h, because kappa^2/J>32kappa^2 whereas 2J sinh h<.061h=.61kappa^2. The sin x>.4 margin still leaves >12kappa^2. Thus |f(z)|<2e11 allowing exp(113h)<2. Side real-part margin remains >.024sigma, and the numerator phase can be retained in the time-decay rate vt-113 rather than dropped.
+
+For negative integer m, the bottom geometric l2 sum yields a bound <1e17 exp(-vth), using 1-exp(-2h)>=h, h=1e-23, and 2sigma/sqrt(2pi)<sigma. The exp(113h) is already paid above.
+
+For the vertical sides, integration gives coefficients at most (44kappa/sigma)/(|m|+vt-113), with Fourier factor1/sqrt(2pi), on each side. Since sum_(n>=1)(n+A)^-2<=1/A for A>0, their combined l2 norm <=88kappa/[sigma sqrt(2pi(vt-113))]. At T=1e27 this is <1e-16. Both sides and the bottom imply q_t<1e-16 after a loose margin (the side is actually far smaller than that ceiling). The exact target normalization cost is 1-sqrt(1-q_t^2)<=q_t^2, not postselection of actual output.
+
+
+### Weighted static comparison on the same fixed apparatus
+
+The next pointwise estimate improves the complete static cost while leaving
+the localized coefficient a0=conjugate(omega_p f) and its analytic continuation
+unchanged. Define (P) as |F_j/Fref-omega_p|<2e-13+750|k-k0| and (S) as the
+combined preparation and outgoing discrepancy <5.68e-5. Both are derived below.
+
+### 1. Preserve momentum distance through the filter
+
+Put s=|k-k0|<=sigma=10^-6. Write r_g for the bare ladder reflection and r_m for the exact filtered-arm reflection, both at the common absolute arm origin. The supplied exact central filter values are a(k0)=0 and b(k0)/z0=i. Their derivative bounds on the unchanged full interval imply
+
+    |a(k)|<=5s, |b(k)/z-i|<=6s.
+
+These are direct fundamental-theorem-of-calculus estimates. They do not shrink the certified interval or treat s as a new parameter-family bandwidth. In the exact concatenation formula
+
+    r_scalar=z^(-2(F+1))a+(b/z)^2 r_g/(1-a r_g z^(2F)),
+
+the same algebra used by the published uniform bound gives
+
+    |r_scalar+r_g| <=5s+17s/(1-5s)<=23s.
+
+The last inequality is strict for s>0; at s=0 both sides vanish.
+
+The complete physical closed-channel correction is still bounded uniformly by
+
+    |r_m-r_scalar| <epsilon_A=1e-20.
+
+It is NOT multiplied by s and is NOT set to zero at k0. This bound retains the seven complementary coordinates and the noncommuting filter response exactly as in the source. Thus
+
+    |r_m+r_g| <23s+1e-20.                               (1)
+
+### 2. Shared-system port reflection and transmission
+
+After the exact Hadamard junction and common reference-plane shift, the diagonal reflection is half the sum and the transmission half the difference of the two arm reflections. Unit-modulus propagation factors change no norm. Equation (1) therefore gives
+
+    |R_j| <=r(s):=11.5s+5e-21,
+    |tau_j-z^(2(N+1))r_g| <=11.5s+5e-21.
+
+The bare calibration estimate itself retains its pointwise distance:
+
+    |r_g-r0 zeta omega_p| <=d0+702s.
+
+This follows from its exact central allowance d0 and the supplied derivative bounds |r_g'|<=700, |r0'|=2. Hence
+
+    |tau_j-rho_g omega_p| <=t(s):=d0+713.5s+5e-21.       (2)
+
+In particular r(s)<12e-6 uniformly on I. The source's physical kernel/tail estimates, epsilon_G=1e-22 and epsilon_L=1e-21 continue to apply unchanged. No scalar scattering estimate replaces those full internal interfaces.
+
+### 3. Full emitter denominator, including its nonzero floor
+
+The scalar terminated-end reference is
+
+    g_j=-(z/J)(1+R_j z^(2ell))/(1+R_j z^(2ell+2)),
+    g_j+z/J=-(z/J)R_j z^(2ell)(1-z^2)/(1+R_j z^(2ell+2)).
+
+The actual end Green matrix differs from that diagonal reference by <epsilon_G, and both off-diagonal P/Pc norms are <epsilon_G. Complementary emitter elimination is exact:
+
+    D_j=E-E0-kappa^2 G_jj-kappa^4 G_jc D_cc^-1 G_cj,
+    ||D_cc^-1||<6,
+    Dref=E-E0+kappa^2 z/J.
+
+Divide |D_j-Dref| by Im Dref=kappa^2 sin(k)/J, which is no larger than |Dref|. Using |1-z^2|=2sin(k) gives
+
+    |D_j/Dref-1|
+      <=2r(s)/(1-r(s))
+          +(J/sin(k))[epsilon_G+6kappa^2 epsilon_G^2].
+
+The second bracket explicitly includes the full complementary Schur term. With J<.031, sin(k)>.4, kappa^2=1e-24 and epsilon_G=1e-22, its contribution is <1e-23; the complementary part alone is <1e-67. Since r(s)<12e-6,
+
+    2r(s)/(1-r(s))
+      <=[23s+1e-20]/(1-12e-6).
+
+Its slope is <24 and its constant plus1e-23 is <2e-20. Consequently
+
+    |D_j/Dref-1| <=d(s):=24s+2e-20 <25e-6.             (3)
+
+The same comparison to Im Dref, rather than modulus alone, preserves the positive imaginary-part lower bound. No resonance pole, central zero, complementary emitter removal or kappa-family continuation has been assumed.
+
+### 4. Exact outgoing response and its residual row term
+
+Let DeltaL=L-L0, ||DeltaL||<epsilon_L=1e-21, where
+
+    L0=-(tau_j/J)z^(ell+1)/(1+R_j z^(2ell+2)) P.
+
+Block elimination gives
+
+    D_e^-1 u_j=D_j^-1(u_j+c_j),
+    c_j=kappa^2 D_cc^-1 G_cj, ||c_j||<6kappa^2 epsilon_G,
+    Aout,j=-kappa L D_e^-1 u_j.
+
+Since L0 Pc=0, the complementary vector does not enter the leading row, but it DOES enter DeltaL(u_j+c_j). Including Stone's unchanged iE'/sqrt(2pi) factor, the normalized scalar ratio is exactly
+
+    F_j/Fref = [tau_j/rho_g]
+                 /[(1+R_j z^(2ell+2))(D_j/Dref)] + e_L,j.
+
+All fixed complex phases cancel here only because Fref includes the original rho_g and z^(ell+1); no new per-column phase is chosen. The row remainder obeys
+
+    |e_L,j| <= J epsilon_L (1+6kappa^2 epsilon_G)/(1-d(s))
+             <3.2e-23.                               (4)
+
+This pays epsilon_L and its complementary-emitter correction rather than hiding them in a zero central error.
+
+For the leading ratio, subtract omega_p and use (2)-(3). The numerator difference is bounded by t(s)+r(s)+d(s)+r(s)d(s), and the denominator is at least (1-r(s))(1-d(s)). Since r(s)<12e-6 and d(s)<25e-6,
+
+    (1-r)(1-d) > (1-12e-6)(1-25e-6) >.99996,
+    r(s)d(s) <=12e-6[24s+2e-20].
+
+It follows explicitly that
+
+    |F_j/Fref-omega_p|
+      < [d0+3e-20+2.4e-25+(749+.000288)s]/.99996
+          +3.2e-23.
+
+The coefficient of s is <750. The constant, with d0=1.76e-13, is <2e-13. This proves the bound (P) from the pinned source premises by a new analytic derivation. Each central floor remains strictly charged. The calculation establishes a bound on the full complex ratio, not just its modulus or phase separately.
+
+### 5. Actual reference moment without a Lorentzian substitute
+
+The scalar endpoint reference has normalized global emitter spectral measure mu_ref, mean E0 and variance kappa^2. On E(I), dmu_ref=|Fref(k)|^2 dk. Since E'>v on the interval containing k0,
+
+    v^2 (k-k0)^2 <=(E(k)-E0)^2.
+
+Integrating over this interval and using positivity of the omitted global measure yields
+
+    integral_I (k-k0)^2 |f|^2 dk
+      =p0^-1 integral_I (k-k0)^2 |Fref|^2 dk
+      <=kappa^2/(p0 v^2).
+
+No point mass or missing continuum is discarded to obtain equality of a full moment; only an inequality is used. The actual normalization satisfies p0>=1-1.6e-9, so
+
+    ||(k-k0)f||_2 <=kappa/(v sqrt(p0)) <4.1e-11.
+
+Multiplying (P) by |f| and applying the L2 triangle inequality gives
+
+    delta_j:=||F_j/sqrt(p0)-omega_p f||_2
+      <2e-13+750*4.1e-11=3.07502e-8<3.1e-8.           (5)
+
+The hard cutoff and full actual reference shape remain; no small-linewidth asymptotic or infinite-Lorentzian second moment is used. Signed averaging of the complex mismatch would not establish (5).
+
+### 6. Static full-output interface
+
+Use the already published comparison coefficient a0,j=conjugate(omega_p f), multiplying the same actual unit-incoming generalized column. This is a linear basis-column construction and does not conjugate arbitrary old-input coefficients. Actual incoming coefficient is conjugate(F_j). From (5),
+
+    ||F_j-omega_p f||_2
+       <=sqrt(p0) delta_j+1-sqrt(p0)
+       <3.1e-8+1.6e-9.
+
+Add the unchanged actual off-band amplitude <=4e-5, including point spectrum. Two old-energy residuals within a parity may overlap; multiplying by sqrt(2)<1.415 gives
+
+    preparation operator <1.415*(4e-5+3.1e-8+1.6e-9)
+                         =5.6646129e-5<5.67e-5.
+
+Distinct parities are orthogonal. No outside-band or actual-state normalization is changed.
+
+For e_j=F_j/sqrt(p0)-omega_p f, reality and one-channel unitarity give exactly
+
+    R_inst,j a0,j-omega_p f=e_j-R_inst,j conjugate(e_j).
+
+Its L2 norm is <=2delta_j<6.2e-8. Fourier propagation and physical half-line restriction are contractions, and the four open internal output fibers u_j are orthogonal. Thus this is already the complete outgoing operator ceiling without a sqrt(2) multiplier. Summing the two costs gives <5.6762e-5<5.68e-5, proving interface (S).
+
+No derivative estimate changes: the new argument only improves spectral mismatch and preparation. Full elapsed old phase exp(-itK), the original W, c_new and common complex f are unchanged; passive-reference tensoring preserves every operator bound.
+
+
+### Complete weighted-strip composition and verification limits
+
+The two checked improvements concern the same f, p0, a0, physical C_j and
+seed. Weighted comparison replaces only preparation plus outgoing discrepancy;
+it changes neither the contour integrand a0 C_j nor the target. With T27=1e27,
+all complete operator costs are therefore
+
+    static <5.68e-5,
+    localized <3e-7,
+    incoming <2e-7,
+    positive target normalization <1e-32,
+    total <.0000573+1e-32 <.000058.
+
+The original finite transfer against the embedded infinite target adds<.001
+on[T27,2T27] for fixed M=5e28, giving<.001058. No truncated target is
+renormalized. Unhalved trace bounds are .000116/.002116. Both sharpened
+operator bounds are below the original .0013/.0023 pair, at a sufficient
+onset15 orders lower than T42. The sites are still astronomical and these
+are sufficient bounds, not optimality or physical lower bounds.
+
+The full core, scalar tail, weighted profile and compatibility reports are
+frozen under `review_sources/weighted_strip/`. Root read each in full.
+These are same-model/source-exposed checks with declared reused premises;
+no blind/model-diverse review or retained audit is claimed. The core-only
+V1 total .0026255 omitted explicit room for a tiny normalization allowance;
+its preserved V2 uses .002626 before the distinct weighted improvement.
+The composed .000058 ceiling explicitly has room for that allowance.
+
+The primary runner corroborates scalar constants and exact fixtures only;
+it does not establish analytic continuation, Hilbert-valued contour deformation,
+spectral synthesis or a whole-apparatus simulation. Current execution and
+mutation evidence is recorded separately from the earlier151/179-check runs.
+
+The current weighted-strip execution passed214 scoped arithmetic checks and
+59-input integrity, exit0 in .08302688598632812 seconds, with58,926 stdout bytes.
+Nineteen new mathematical mutations failed in their intended families under
+Python -O. Four current integrity cases rejected altered bytes, symlink file
+and ancestor, and nonregular input; inert import produced no output. Complete
+receipts, streams and failures are frozen in
+`outputs/real_endpoint_autonomous_output_2026_10_17_weighted_strip_validation/`.
+The first integration run used stale positional input-path constants; a second
+run caught a copied incoming denominator1e13 where8e12 is justified. Both failed
+runs are preserved and repaired; neither changes the reviewed theorem. Earlier
+151/179-check evidence and mutation results remain separately historical.

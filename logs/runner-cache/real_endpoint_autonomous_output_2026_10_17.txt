@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/real_endpoint_autonomous_output_2026_10_17.py
-runner_sha256: 3d9f8e0b65eb89f02353855abd2f1420f0ca5400ff9eab07e9ef1b89e87404b6
-input_fingerprint_sha256: 10864607b892122e4ea4626c1ae481a39c7fd602eb5e3953946c20aece680110
+runner_sha256: cf1c78e122e0db0e5e3f1986c5f9ee8cdfe3b35453e26cd2e36b7b6851a8eb2a
+input_fingerprint_sha256: 0eb2a964dc2e5acb77775bba59dfb73d950f63ff71308c9c873263d12f79c6d4
 timeout_sec: 30
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 SCOPE: exact local finite algebra and conditional analytical-bound arithmetic.
@@ -191,6 +191,41 @@ PASS arithmetic: tradeoff five-term budget
 PASS arithmetic: tradeoff infinite complete ceiling
 PASS arithmetic: tradeoff finite exponent margin
 PASS arithmetic: tradeoff finite complete ceiling
+PASS arithmetic: thin closed spectral gap
+PASS arithmetic: thin energy band ceiling
+PASS arithmetic: thin closed resolvent coefficient
+PASS arithmetic: thin closed root continuation
+PASS arithmetic: thin closed self energy variation
+PASS arithmetic: thin physical matrix variation
+PASS arithmetic: thin Neumann product
+PASS arithmetic: thin continued inverse
+PASS arithmetic: thin incoming core column
+PASS arithmetic: thin closed tail squared
+PASS arithmetic: thin complete localized vector
+PASS arithmetic: thin outgoing imaginary floor
+PASS arithmetic: thin conjugate coefficient
+PASS arithmetic: thin target coefficient
+PASS arithmetic: thin outgoing side floor
+PASS arithmetic: thin exponential argument
+PASS arithmetic: thin integer exponential majorant
+PASS arithmetic: thin target bottom squared prefactor
+PASS arithmetic: thin localized aggregate
+PASS arithmetic: thin negative tail side denominator
+PASS arithmetic: thin negative tail ceiling
+PASS arithmetic: thin incoming denominator
+PASS arithmetic: thin incoming total
+PASS arithmetic: profile weighted denominator floor
+PASS arithmetic: profile weighted denominator slope
+PASS arithmetic: profile weighted denominator intercept
+PASS arithmetic: profile weighted complex slope
+PASS arithmetic: profile weighted complex intercept
+PASS arithmetic: profile weighted moment squared
+PASS arithmetic: profile weighted L2 mismatch
+PASS arithmetic: profile weighted preparation
+PASS arithmetic: profile weighted static
+PASS arithmetic: weighted strip complete infinite
+PASS arithmetic: weighted strip finite exponent
+PASS arithmetic: weighted strip complete finite
 {
   "checks": [
     {
@@ -1266,6 +1301,216 @@ PASS arithmetic: tradeoff finite complete ceiling
       "name": "tradeoff finite complete ceiling",
       "relation": "<",
       "rhs": "1/250"
+    },
+    {
+      "lhs": "17/100",
+      "name": "thin closed spectral gap",
+      "relation": "<",
+      "rhs": "90363254448507/500000000000000"
+    },
+    {
+      "lhs": "30021432591866270637784895176082429461/5335816955256357129429116105401000000000",
+      "name": "thin energy band ceiling",
+      "relation": "<",
+      "rhs": "61/10000"
+    },
+    {
+      "lhs": "16678392837240000000000000/16055555555555555555555497",
+      "name": "thin closed resolvent coefficient",
+      "relation": "<",
+      "rhs": "2"
+    },
+    {
+      "lhs": "25000000000000000000000217/175000000000000000000000000",
+      "name": "thin closed root continuation",
+      "relation": "<",
+      "rhs": "1/6"
+    },
+    {
+      "lhs": "116331790039749/31250000000000000",
+      "name": "thin closed self energy variation",
+      "relation": "<",
+      "rhs": "1/250"
+    },
+    {
+      "lhs": "93/1000",
+      "name": "thin physical matrix variation",
+      "relation": "<",
+      "rhs": "1/10"
+    },
+    {
+      "lhs": "3/25",
+      "name": "thin Neumann product",
+      "relation": "=",
+      "rhs": "3/25"
+    },
+    {
+      "lhs": "1500000000000000000000000/11",
+      "name": "thin continued inverse",
+      "relation": "<",
+      "rhs": "140000000000000000000000"
+    },
+    {
+      "lhs": "8680000000000000000000",
+      "name": "thin incoming core column",
+      "relation": "<",
+      "rhs": "9000000000000000000000"
+    },
+    {
+      "lhs": "1/35",
+      "name": "thin closed tail squared",
+      "relation": "<",
+      "rhs": "1/25"
+    },
+    {
+      "lhs": "27000000000000000000004",
+      "name": "thin complete localized vector",
+      "relation": "<",
+      "rhs": "40000000000000000000000"
+    },
+    {
+      "lhs": "3/250000000000000000000000",
+      "name": "thin outgoing imaginary floor",
+      "relation": "<",
+      "rhs": "3139/250000000000000000000000000"
+    },
+    {
+      "lhs": "263500000000/3",
+      "name": "thin conjugate coefficient",
+      "relation": "<",
+      "rhs": "100000000000"
+    },
+    {
+      "lhs": "527000000000/3",
+      "name": "thin target coefficient",
+      "relation": "<",
+      "rhs": "200000000000"
+    },
+    {
+      "lhs": "3/125000000",
+      "name": "thin outgoing side floor",
+      "relation": "<",
+      "rhs": "938159597094747499999999999999999999999771089058308881/37526383883790000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "250",
+      "name": "thin exponential argument",
+      "relation": "=",
+      "rhs": "250"
+    },
+    {
+      "lhs": "1000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "thin integer exponential majorant",
+      "relation": "<",
+      "rhs": "1809251394333065553493296640760748560207343510400633813116524750123642650624"
+    },
+    {
+      "lhs": "4000000000000000000000000000000000",
+      "name": "thin target bottom squared prefactor",
+      "relation": "<",
+      "rhs": "10000000000000000000000000000000000"
+    },
+    {
+      "lhs": "52800000000000000000000000000000000000003/500000000000000000000000000000000000000000000000",
+      "name": "thin localized aggregate",
+      "relation": "<",
+      "rhs": "3/10000000"
+    },
+    {
+      "lhs": "100000000000000000000000000",
+      "name": "thin negative tail side denominator",
+      "relation": "<",
+      "rhs": "149999999999999999999999322"
+    },
+    {
+      "lhs": "88000000000000000000000000000000000000001/10000000000000000000000000000000000000000000000000000000000",
+      "name": "thin negative tail ceiling",
+      "relation": "<",
+      "rhs": "1/10000000000000000"
+    },
+    {
+      "lhs": "64000000000000000000000000",
+      "name": "thin incoming denominator",
+      "relation": "<",
+      "rhs": "75000000000000000000000000"
+    },
+    {
+      "lhs": "130000000011/1000000000000000000",
+      "name": "thin incoming total",
+      "relation": "<",
+      "rhs": "1/5000000"
+    },
+    {
+      "lhs": "24999/25000",
+      "name": "profile weighted denominator floor",
+      "relation": "<",
+      "rhs": "9999630003/10000000000"
+    },
+    {
+      "lhs": "5750000/249997",
+      "name": "profile weighted denominator slope",
+      "relation": "<",
+      "rhs": "24"
+    },
+    {
+      "lhs": "250249997/24999700000000000000000000000",
+      "name": "profile weighted denominator intercept",
+      "relation": "<",
+      "rhs": "1/50000000000000000000"
+    },
+    {
+      "lhs": "93625036/124995",
+      "name": "profile weighted complex slope",
+      "relation": "<",
+      "rhs": "750"
+    },
+    {
+      "lhs": "275000046925373/1562437500000000000000000000",
+      "name": "profile weighted complex intercept",
+      "relation": "<",
+      "rhs": "1/5000000000000"
+    },
+    {
+      "lhs": "1/624999999000000000000",
+      "name": "profile weighted moment squared",
+      "relation": "<",
+      "rhs": "1681/1000000000000000000000000"
+    },
+    {
+      "lhs": "153751/5000000000000",
+      "name": "profile weighted L2 mismatch",
+      "relation": "<",
+      "rhs": "31/1000000000"
+    },
+    {
+      "lhs": "56646129/1000000000000",
+      "name": "profile weighted preparation",
+      "relation": "<",
+      "rhs": "567/10000000"
+    },
+    {
+      "lhs": "28381/500000000",
+      "name": "profile weighted static",
+      "relation": "<",
+      "rhs": "71/1250000"
+    },
+    {
+      "lhs": "5730000000000000000000000001/100000000000000000000000000000000",
+      "name": "weighted strip complete infinite",
+      "relation": "<",
+      "rhs": "29/500000"
+    },
+    {
+      "lhs": "43200000000000000000000000009",
+      "name": "weighted strip finite exponent",
+      "relation": "<",
+      "rhs": "50000000000000000000000000023"
+    },
+    {
+      "lhs": "105730000000000000000000000001/100000000000000000000000000000000",
+      "name": "weighted strip complete finite",
+      "relation": "<",
+      "rhs": "529/500000"
     }
   ],
   "dense_dimension_max": 4,
@@ -1321,6 +1566,16 @@ PASS arithmetic: tradeoff finite complete ceiling
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/conjugate_packet_tradeoff_proposal/PROPOSAL.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/endpoint_column_independent_check/REVIEW.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/weighted_core_derivative_proposal/PROPOSAL.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/CORE_STRIP_QUALIFICATION.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/WEIGHTED_STRIP_COMPOSITION.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour/CORRECTED_V2.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour/CORRECTIONS.json.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour/PROPOSAL.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour_independent_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_scalar_independent_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/endpoint_weighted_profile/PROPOSAL.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/endpoint_weighted_profile_independent_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/weighted_strip_composition_check/REVIEW.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family_acceptance.json.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family_qualification.md.txt",
@@ -1334,6 +1589,10 @@ PASS arithmetic: tradeoff finite complete ceiling
     "self_integrity": []
   },
   "scope": "Scalar corroboration of conditional bounds; no proof or audit status.",
+  "thin_weighted_finite_ceiling": ".001058",
+  "thin_weighted_infinite_ceiling": ".000058",
+  "thin_weighted_onset": "1000000000000000000000000000",
+  "thin_weighted_output_sites": "50000000000000000000000000000",
   "tradeoff_finite_ceiling": ".004",
   "tradeoff_infinite_ceiling": ".003",
   "tradeoff_onset": "1000000000000000000000000000000",

@@ -336,6 +336,56 @@
       "sha256": "33f4e340f2909d907e4c8fe166c86b306e82e369a6fa3ddb5eca1ab4f19405c8",
       "role": "pinned conditional bare-ladder premise and qualification",
       "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_transmission_autonomous_route/inputs/interval_qualification.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour/PROPOSAL.md.txt",
+      "bytes": 7643,
+      "sha256": "4667ce65a41e55e21a624d521838271cad0ab98e30b2dbbffca5ef1c34a87f31"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour/CORRECTED_V2.md.txt",
+      "bytes": 8053,
+      "sha256": "d05c342bcdd5d31f9696c33aa0a81306fae8abb81e7adae87995490fe9a17874"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour/CORRECTIONS.json.txt",
+      "bytes": 439,
+      "sha256": "aada05c2f46f45e42f3bd5eb662d176908e947f7f6227aa10d66fc75a0b1ae5a"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour_independent_check/REVIEW.md.txt",
+      "bytes": 14632,
+      "sha256": "297e324d25905a1a70fa934f37dc1c1b3c2c32051bda2a888e7ddc09b7628dc1"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_scalar_independent_check/REVIEW.md.txt",
+      "bytes": 6931,
+      "sha256": "2fa1b96545f01eb9d38a5682a9018dcff341f68efc11d979476487d4d14b0fa0"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/CORE_STRIP_QUALIFICATION.md.txt",
+      "bytes": 1649,
+      "sha256": "03da9dfad78db9d2861197d52cbc627b38cd03c22ac590b60cb00aa96c84aa26"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/endpoint_weighted_profile/PROPOSAL.md.txt",
+      "bytes": 13069,
+      "sha256": "28a0f35bc28b46d4cd343967543b24b51afb7368dd5bfc4c707565daddbeae3c"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/endpoint_weighted_profile_independent_check/REVIEW.md.txt",
+      "bytes": 8543,
+      "sha256": "74ca5c9f8137e0f37afc762dc79bddbe0642bca3cc4e3f09fe32a596f2a4d948"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/WEIGHTED_STRIP_COMPOSITION.md.txt",
+      "bytes": 1928,
+      "sha256": "27d36e89ed7b5389b4bf929030367de3ce6c2f490d0195074a62d4912fdd0b82"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/weighted_strip_composition_check/REVIEW.md.txt",
+      "bytes": 8604,
+      "sha256": "03bff8954690e0fa1dd827989cc0514a740ff53bf7d8077963e498d5fd09ac25"
     }
   ]
 }

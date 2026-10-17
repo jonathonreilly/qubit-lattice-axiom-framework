@@ -1,0 +1,98 @@
+# Selective independent reconstruction: scalar target negative tail
+
+Disposition: the scalar section's claimed q_t<10^-16 for all t>=10^27 follows, with explicit margin. This is a source-exposed independent analytical reconstruction of that section only. It does not accept or review the proposed core continuation, localized contour estimate, or complete apparatus budget. No retained audit status is conferred.
+
+## Exact sources and exposure
+
+Reviewed proposal: `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/core_strip_contour/PROPOSAL.md`, SHA256 `4667ce65a41e55e21a624d521838271cad0ab98e30b2dbbffca5ef1c34a87f31`.
+
+Needed definitions: `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/resource_next_sources/ENDPOINT_NOTE_716e159253.md`, SHA256 `5342fb429ffb238c8db2ebad588cdf772211e9590210f52b1bb94e47277a4221`. This source was read for the exact parameters, normalized profile and Fourier convention in the preceding coherent task; its hash was refreshed here and is unchanged. The full proposed document was exposed when read, but only its scalar target-negative-tail argument was assessed. The reviewer had previously constructed a different, pole-crossing contour proposal at `../target_tail_contour/PROPOSAL.md`, SHA256 `3e7d480ad951b50a77cfbf4c820d44781faf9c3db46cbb54f76942d0ec58a8d5`; that remains a proposed alternative, not independent evidence for this shallow-strip calculation.
+
+No scientific code, inherited runner, numerical integration or simulation was executed. The calculations below are elementary inequalities. No source, working tree, Git state, prior proposal or checkpoint was edited. This report is the only new deliverable. Previously read applicable methodology instructions remain in effect.
+
+## Reconstructed pole-free strip
+
+Set kappa=10^-12, sigma=10^-6, J=.030021107107032, v=.025, h=10^-23, T=10^27, E(z)=2J(1−cos z), E0=E(k0). On I=[a,b]=k0+[-sigma,sigma], sin x>.4, E'(x)>v and |E''(x)|<.061. The exact normalized profile is
+
+    f(k)=zeta0 A E'(k) exp(i113k)/D(k),
+    D(z)=E(z)−E0+(kappa²/J) exp(iz),
+    A=kappa/[sqrt(2pi) J sqrt(p0)]<17kappa,
+    |zeta0|=1, p0>=1−1.6e−9, ||f||_L2(I)=1.
+
+For z=x−iy, 0<=y<=h, direct substitution gives
+
+    Im D(z)=sin x[(kappa²/J) exp(y)−2J sinh y].
+
+Here kappa²/J>32kappa², and 2J sinh y<=2J sinh h<.061h=.61kappa². The last strict inequality is safe since 2J=.060042214214064 and sinh h<1.001h. Hence
+
+    Im D(z)>.4(32−.61)kappa²=12.556kappa²>12kappa².
+
+This proves absence of any denominator zero on the entire closed rectangle, including both sides and the real-axis boundary. No residue is crossed. Terminology matters: the bottom is below the real axis but ABOVE the resonance pole in the complex plane. In depth coordinates it is shallower than the pole. For comparison only, the exact pole depth is −log(1−kappa²/J²)/2>5*10^-22>h; that explicit root is unnecessary for the proof just given.
+
+Throughout the rectangle |E'(z)|<=2J cosh y<.062. Thus
+
+    |f(z)|<17kappa*.062*2/(12kappa²)<2*10^11,
+
+where exp(113h)<2 explicitly pays the growing spatial phase. On each vertical side, comparison with E(a)−E0 or E(b)−E0 gives
+
+    |Re D(x−iy)|>=v sigma−.061h²−(kappa²/J)exp(h)>.024sigma.
+
+Consequently the coefficient WITHOUT exp(i113z) is bounded by
+
+    |A E'(z)/D(z)|<44kappa/sigma.
+
+These are separate uses of the phase: it is paid as exp(113h)<2 in the bottom coefficient and retained exactly in the vertical exponent. It is neither omitted nor paid inconsistently.
+
+## Finite lattice sum and Fourier normalization
+
+For m=−n, n>=1, the Fourier integrand is f(z)exp(−inz−itE(z)), and b_t(m) uses the prefactor 1/sqrt(2pi). The rectangle contains no pole, so the original integral equals the bottom integral plus the signed two vertical integrals. Their signs are irrelevant to the triangle bound, but both edges must be included.
+
+Use the finite norm n=1,...,L before taking a limit. On the bottom, |exp(−inz−itE(z))|<=exp(−nh−vth). Therefore
+
+    ||bottom||_{1:L}
+      <2*10^11 sigma exp(−vth)
+          *sqrt([1−exp(−2Lh)]/[exp(2h)−1])
+      <=2*10^11 sigma exp(−vth)/sqrt(h)
+      <10^17 exp(−vth).
+
+The first line uses 2sigma/sqrt(2pi)<sigma. The geometric formula is exact for n=1,...,L. Its upper bound follows either from exp(2h)−1>=2h or from 1−exp(−2h)>=h and exp(−2h)<=1. The last strict inequality follows by squaring sqrt(h)>2*10^-12, since h=10^-23>4*10^-24. This supplies the numerical step left implicit in the proposed bottom prefactor.
+
+For either vertical side the full phase has modulus
+
+    |exp[i(113−n)(x−iy)−itE(x−iy)]|
+      =exp[−(n−113)y−2Jt sin x sinh y]
+      <=exp[−(n+s)y], s=vt−113>0.
+
+Integrating y from 0 to h and enlarging to [0,infinity) gives, after summing the TWO side magnitudes, the component bound
+
+    88kappa/[sigma sqrt(2pi)(n+s)].
+
+Using sum_{n=1}^L(n+s)^(-2)<=integral_0^infinity(x+s)^(-2)dx=1/s yields
+
+    ||edges||_{1:L}<=88kappa/[sigma sqrt(2pi(vt−113))].
+
+The finite-dimensional triangle inequality and monotone convergence L→infinity establish the uniform scalar bound
+
+    q_t <=10^17 exp(−vth)
+             +88kappa/[sigma sqrt(2pi(vt−113))].
+
+No multiplicity factor for old columns or parities enters q_t, which is the norm of one common scalar target. This conclusion does not certify any operator aggregation for the separate core argument.
+
+## Explicit margin and positive target normalization
+
+At t>=T=10^27, vth>=250 and s=vt−113>2*10^25. Since 2pi>6, sqrt(2pi s)>10^13, giving
+
+    edge norm<8.8*10^-18.
+
+Also exp(250)>2^250>10^75, because 2^10=1024>10^3. Thus the bottom norm is <10^-58. Both terms decrease with t. Their sum is <9*10^-18<10^-16 uniformly for every t>=T. In particular the proposed ceiling has more than a factor-ten margin; it is not obtained by summing two terms each merely known to be <10^-16.
+
+For p_t=b_t restricted to m>=0, the source's exact ||f||_2=1 and Parseval imply ||p_t||²=1−q_t²>0. The unchanged target beta_t=p_t/||p_t|| therefore has well-defined positive normalization and
+
+    ||p_t−beta_t||=1−sqrt(1−q_t²)
+      =q_t²/[1+sqrt(1−q_t²)]<=q_t²<10^-32.
+
+This is a comparison-target normalization cost, not conditioning or postselection of the physical output.
+
+## Limits
+
+No scalar correction is required. The requested pole avoidance, phase113 factor, both cutoff edges, finite geometric sum, Fourier normalization and all-future-in-time scalar ceiling are supported by the reconstructed inequalities above. The proof imports the pinned source's exact scalar profile and spectral normalization. It does not independently prove those spectral premises, continue a finite or infinite core resolvent, validate the localized Hilbert-valued contour, or establish the proposed complete .003/.004 budgets. Those remain separate integration obligations.

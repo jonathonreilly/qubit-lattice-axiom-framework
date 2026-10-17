@@ -1,0 +1,116 @@
+[
+  {
+    "name": "closed_gap",
+    "expected_failure": "thin closed spectral gap",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "closed_branch",
+    "expected_failure": "thin closed root continuation",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "extra_boundary",
+    "expected_failure": "thin physical matrix variation",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "neumann",
+    "expected_failure": "thin Neumann product",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "inverse",
+    "expected_failure": "thin continued inverse",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "core_vector",
+    "expected_failure": "thin complete localized vector",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "tail_geometry",
+    "expected_failure": "thin closed tail squared",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "target_denominator",
+    "expected_failure": "thin outgoing imaginary floor",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "side_margin",
+    "expected_failure": "thin outgoing side floor",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "onset",
+    "expected_failure": "thin exponential argument",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "parity_aggregation",
+    "expected_failure": "thin localized aggregate",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "phase113",
+    "expected_failure": "thin negative tail side denominator",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "weighted_slope",
+    "expected_failure": "profile weighted complex slope",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "central_floor",
+    "expected_failure": "profile weighted complex intercept",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "moment_normalization",
+    "expected_failure": "profile weighted moment squared",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "preparation_factor",
+    "expected_failure": "profile weighted preparation",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "outgoing_factor",
+    "expected_failure": "profile weighted static",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "complete_budget",
+    "expected_failure": "weighted strip complete infinite",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "finite_sites",
+    "expected_failure": "weighted strip finite exponent",
+    "detected": true,
+    "exit_code": 1
+  }
+]

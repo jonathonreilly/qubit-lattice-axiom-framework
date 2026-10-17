@@ -1,0 +1,6 @@
+{
+  "original_sha256": "4667ce65a41e55e21a624d521838271cad0ab98e30b2dbbffca5ef1c34a87f31",
+  "corrected_sha256": "d05c342bcdd5d31f9696c33aa0a81306fae8abb81e7adae87995490fe9a17874",
+  "change": "loosen reported intermediate total .0026255/.0036255 to .002626/.003626 to explicitly include target normalization; final tolerances unchanged",
+  "status": "full and scalar independent reports read; correction matches requested loose totals"
+}

@@ -1,0 +1,157 @@
+# Independent check of the complete thin-strip contour argument
+
+## Finding and correction
+
+The proposed thin-strip continuation and complete contour argument are supported under the pinned endpoint note's conditional premises. I found no missing open boundary, closed-channel threshold obstruction, incorrect continuation sign, hidden off-real unitarity assumption, or omitted localized/output component. The actual finite-core inverse can be continued to h=1e-23; the complete localized contour and scalar target contour then give the claimed <.003 infinite bound for every t>=1e27 and <.004 finite bound on [1e27,2e27] with fixed M=5e28.
+
+One narrow correction is needed in the displayed sum: rounded contributions .002625 +3e-7+2e-7 plus a positive normalization allowance <1e-32 do not by themselves imply <.0026255. Use the robust explicit total **<.002626**, and finite **<.003626**. This does not affect the advertised .003/.004 tolerances, onset or factor1000 output-site reduction. The underlying contour estimates have additional slack, but the stated budget should not rely on an unstated strict-margin comparison. The root independently acknowledged this bookkeeping issue after my preliminary review message and requested the same robust correction; the original proposal was not modified.
+
+This is a checked conditional mathematical implication, not a retained/audit verdict, whole-device simulation, or derivation of the supplied Hamiltonian/state. My own weighted-profile proposal is not a premise and was not composed here.
+
+## Source identities, exposure and scope
+
+N=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934.
+
+| Source | SHA256 |
+|---|---|
+| N/core_strip_contour/PROPOSAL.md, complete argument read | 4667ce65a41e55e21a624d521838271cad0ab98e30b2dbbffca5ef1c34a87f31 |
+| N/resource_next_sources/ENDPOINT_NOTE_716e159253.md, controlling supplied published snapshot | 5342fb429ffb238c8db2ebad588cdf772211e9590210f52b1bb94e47277a4221 |
+
+The full new proposal was read before reconstruction. The exact endpoint source's model, interval, physical matching, selected endpoint inverse, conjugate comparison, scalar profile and finite-transfer arguments had already been read in this agent's earlier tasks. Necessary B/threshold and physical-boundary formulas were refreshed against the same bytes for this review. No unchanged ancestor calibration certificate or execution record was requalified. Previously read applicable AGENTS/SCIENCE_WORKFLOW/reviewer instructions are reused for this bounded selective check.
+
+I had prior exposure to the endpoint normalization/conjugate-packet arguments, and authored a separate weighted-profile proposal. That proposal supplies no estimate used here. The root's intended T27 result, proposed constants and complete proof were visible; this is source-exposed same-model independent reconstruction, not blind/model-diverse review. No inherited code, author checker/results, scientific executable, quadrature, numerical resonance search or dynamics was run. Reads/hashes and this report write were the only operations. No agents/model override, W/Git/checkpoint, proposal, prompt, axiom, publication or audit change occurred.
+
+## 1. The actual physical core and outgoing continuation
+
+The canonical matching matrix is exactly
+
+    M_j(k)=(b_j+E(k))I-Hcore+J P_out Q_j(k) P_out*,
+    Q_j(k)=exp(ik)P_j + sum_(seven closed l) q_l(k)P_l.
+
+Hcore is the fixed compression containing 113 head sites and eight internal coordinates in one parity. It already contains the terminated input stub and emitter. The only eliminated infinite component is the output tail at m>=1, coupled to the retained output site m=0. Thus the boundary term above occurs once; neither the former auxiliary input lead nor either arm contributes an additional energy-dependent self-energy. All internal B projectors are fixed orthogonal projections. The energy term acts as a scalar times identity, not once in operator norm per coordinate.
+
+For complex z the open root is continued as exp(iz), exactly matching the retarded outgoing branch on the real interval. Below the real k axis this open root grows spatially. This does not prevent continuation of the finite matching matrix, and it is not the advanced whole-operator resolvent. The argument never bounds an infinite outgoing resolvent on its spectrum or regards the growing open tail as a Hilbert vector.
+
+The inhomogeneous column remains x(z)=M_j(z)^-1 iE'(z)u, with u=P_out u_j fixed and real. This follows algebraically from psi_1=exp(iz)psi_0+[exp(-iz)-exp(iz)]u_j, so the original iE' boundary source is retained off real axis without a conjugation. R(z)=u^T x(z)-1 is analytic; no modulus-one assertion about R(z) is available or used off axis.
+
+## 2. Closed free-channel threshold and branch control
+
+B preserves total source excitation number. In its nonvacuum source sector, Delta_A n_A+Delta_B n_B>=Delta_min. K>=1; the h hopping Laplacian, positive u_AB n_A n_B, and g n(I+X) terms are positive. Therefore B>=1+Delta_min on this whole invariant subspace, despite noncommutation of the old operators. Its free-lead spectrum begins at each eigenvalue b_l and extends to b_l+4J.
+
+For the worst open old energy b_j=3 and E(k)<.0061, the distance to any nonvacuum free band is at least
+
+    Delta_min-2-.0061 >.1807 >.17.
+
+The complementary old vacuum band is two energy units away, up to its width4J<.124 and E(k)<.0061, so its distance exceeds1.8. These statements cover every one of the seven complementary directions. No assumption about the full interacting core's spectral gap is made here: this gap is only for each closed free half-line.
+
+Let m_l(lambda) be that half-line's endpoint resolvent element, with q_l=-J m_l in the source convention. For delta=|E(z)-E(x)|, resolvent identity and the real gap .17 give
+
+    |q_l(z)-q_l(x)| <= J delta/[.17(.17-delta)].
+
+The closed resolvent is holomorphic in the delta-neighborhood because it stays off its real spectrum. On the strip delta<.062y<=.062e-23, the coefficient is <2. Hence q_l continues on the same decaying branch, and
+
+    |q_l(z)| <=1/7+2*.062h <1/6.
+
+This proof is insensitive to negative real closed roots and needs no square-root branch convention at a threshold. The uniform gap places the strip far from every closed threshold.
+
+## 3. Matrix variation and Neumann inverse
+
+Throughout the rectangle |E'(z)|<.062, so the diagonal energy variation is <.062y. The open self-energy variation obeys
+
+    J|exp(iz)-exp(ix)|=J(exp(y)-1)<.031y,
+
+using the actual J=.030021107107032 and y<=1e-23. The closed self-energy variation is <J*2*.062y<.004y. Since the projectors in Q are orthogonal, the boundary-block norm is the maximum of these open and closed changes, not their sum over seven channels. P_out is isometric, so
+
+    ||M_j(z)-M_j(x)||<(.062+.031)y<.1y.
+
+At each x in the fixed real interval the source provides ||M_j(x)^-1||<1.2e23 in exactly these physical coordinates. The perturbation product is therefore <.12. The Neumann series proves analyticity and invertibility throughout the strip and
+
+    ||M_j(z)^-1||<1.2e23/(1-.12)<1.4e23,
+    ||x(z)||<1.4e23*.062<9e21.
+
+Strict gap and inverse margins give an open neighborhood around the closed rectangle, including the corners, sufficient for the contour theorem. No claim about a wider strip or a different kappa follows.
+
+## 4. Complete localized vector off real axis
+
+The localized core part is the physical x vector minus the retained m=0 open component (1+R)u. Even the loose triangle estimate gives norm <=2||x||+2, because |R|<=||x||+1. In fact this subtraction is a fixed projection at m=0, but no sharper estimate is needed. It does not use real-axis unitarity.
+
+For m>=1 the localized vector is exactly the closed tail Q_c(z)^m P_c x_out(z). All growing open waves cancel algebraically before a Hilbert-space norm is taken. Fixed orthogonal internal projectors and |q_l|<1/6 imply
+
+    ||closed tail|| <=[(1/6)/sqrt(1-1/36)] ||x_out||
+                     <||x||/5.
+
+The resulting finite-core plus closed-tail vector has norm <3||x||+4<4e22. It is holomorphic with values in the physical Hilbert space: each finite coordinate is analytic, while the squared geometric tail is uniformly summable on the rectangle and on a slightly larger local neighborhood. Truncation converges locally uniformly in Hilbert norm. Thus a vector-valued contour deformation is justified, for example by finite truncations and uniform norm convergence, or continuous linear functionals and Bochner integration.
+
+This is the needed additional bridge beyond the previously scalar contour. It is established here for the actual complete C_j, rather than assuming that a scalar pole-free denominator automatically continues the localized scattering state.
+
+## 5. Conjugate coefficient and localized contour
+
+The analytic continuation of the real-axis conjugate coefficient is
+
+    a0(z)=conjugate(omega_p zeta0) A E'(z)exp(-i113z)/Dbar(z),
+    Dbar=E(z)-E0+alpha exp(-iz), alpha=kappa^2/J,
+    A<17kappa.
+
+For z=x-iy its imaginary part is exactly
+
+    Im Dbar=-sin x[2J sinh y+alpha exp(-y)].
+
+Since alpha>32kappa^2, sin x>.4 and h=1e-23, its magnitude is >12kappa^2 even at the top; the denominator is nonzero. Thus |a0|<17kappa*.062/(12kappa^2)<1e11. The numerator exp(-i113z) decays, not grows. On each vertical edge, the real-part reverse triangle inequality gives |Dbar|>.024sigma; the coefficient including its non-growing phase is <44kappa/sigma=4.4e-5.
+
+The exact time factor decays as exp[-2Jt sin x sinh y]<=exp(-vty). The bottom contribution to the localized integral is <4e27 exp(-vth). Both sides together contribute
+
+    (2/sqrt(2pi))*4.4e-5*4e22/(vt)<1.76e18/(vt).
+
+Both hard-cutoff endpoints are present. This is a norm bound on the vector integral; no phase cancellation or Fourier isometry for localized coordinates is invoked.
+
+At T=1e27, vTh=250. Since 2^250>10^75, the bottom is <4e-48. The sides are <7.04e-8 per column. Two old-energy columns within a parity may overlap, so sqrt(2)<1.5 gives a complete norm <1.056e-7 plus the negligible bottom, in particular <3e-7 as proposed. Different parities are orthogonal. This holds for every t>=T, since both ceilings decrease, and survives passive-reference tensoring.
+
+## 6. Scalar target negative tail: different denominator, correct signs
+
+The target uses
+
+    f(z)=zeta0 A E'(z)exp(i113z)/Dref(z),
+    Im Dref=sin x[alpha exp(y)-2J sinh y].
+
+This sign differs from Dbar and must be checked separately. Here alpha>32kappa^2 while 2J sinh h<.061h=.61kappa^2. Thus Im Dref>.4*(32-.61)kappa^2>12kappa^2. The chosen thin strip stays above every reference-denominator zero in this rectangle. No guessed resonance location is needed. Allowing exp(113h)<2 gives |f(z)|<2e11.
+
+At both vertical sides, the real part is
+
+    E(x)-E0-2J cos x(cosh y-1)+alpha exp(y)cos x.
+
+Its distance from zero is at least v sigma-.061h^2-alpha exp(h)>.024sigma. This explicitly rechecks the side estimate for the outgoing denominator; the earlier exp(-y) side calculation cannot simply be copied without changing this term. It supplies the same <44kappa/sigma coefficient before the exp(113y) factor.
+
+For negative integer m=-n, n>=1, exp(imz) decays as exp(-ny). The target numerator grows as exp(113y), paid either by |f| on the bottom or by replacing vt with vt-113 on the sides. The bottom l2 geometric sum gives
+
+    bottom tail <=(2sigma/sqrt(2pi))*2e11
+                  *exp(-vth)/sqrt(1-exp(-2h))
+                <1e17 exp(-vth).
+
+Using sum_(n>=1)(n+A)^(-2)<=1/A for A=vt-113>0, the two vertical sides give
+
+    side tail <=88kappa/[sigma sqrt(2pi(vt-113))].
+
+At T this is <8.8e-18 (the denominator is >1e13); the bottom is <1e-58 using the same crude exponential bound. Therefore q_t<1e-16 is safe. Both sides are included and the direction of deformation is correct. The normalization cost on the physical half-line is exactly 1-sqrt(1-q_t^2)<=q_t^2<1e-32. No actual state or spectral remainder is postselected.
+
+## 7. Complete budget and finite transfer
+
+The argument retains the published static preparation .001121, including actual off-band/point-spectrum amplitude, and the paid outgoing discrepancy .001504. It changes neither seed nor common target. The published incoming conjugate contour is still valid at T=1e27: its constant bottom bound remains <1.3e-7 and its side bound is <1.1e-17, safely within <2e-7. General preparation/localized errors use their within-parity factors; open incoming/outgoing errors occupy orthogonal internal fibers and use maximum column bounds. All actual old phases exp(-itb_j), scalar c_new and arbitrary passive references are retained.
+
+Combining the stated ceilings, including positive normalization, gives
+
+    total <.002625+3e-7+2e-7+1e-32 <.002626 <.003.
+
+This explicitly corrects the rounded-total line without requiring sharper intermediate ceilings. All terms are uniform for t>=T=1e27.
+
+The finite apparatus with M=50T=5e28 is selected before delivery. The canonical radius18 and omitted-site distance M+23 are independent of the spectral proof packet. For t<=2T,
+
+    finite/infinite difference
+      <=4 exp[-(M+23)+18t sinh(1)]/(1-exp(-1))<.001.
+
+The same compensated compression and seed-subspace polynomial cancellation therefore give complete finite error <.003626<.004 on [T,2T], against the embedded original infinite target. This is M+116 qubits with the unchanged resource convention, and a factor1000 output-site reduction from M5e31. It is not an all-future finite halt, a lower bound on necessary size, or a finite-system point-spectrum estimate.
+
+## Remaining limits and disposition
+
+No new physical premise was needed to justify the thin complex strip. Its load-bearing mathematical inputs are the existing fixed-kappa physical core inverse, exact boundary/self-energy convention, free closed-channel gaps, and original spectral comparison. Those remain conditional source premises; this review does not independently regenerate their calibration or execution certificates. The proposed extension beyond real k is now explicitly checked at h=1e-23 only. It does not authorize a broad complex strip, larger kappa, smaller arbitrary tolerance or resonance-scale extrapolation.
+
+Preserve the original proposal and correct the total in a successor to <.002626/<.003626 (or supply an explicit sharper budget). With that narrow correction, the advertised T27/.003 and fixed M5e28/.004 implication is supported. No own weighted-profile result, other worker's new contour, whole-apparatus simulation, retained audit or native physical identification enters this conclusion.

@@ -644,3 +644,33 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **The resume.** Jon said "Try again" on 2026-10-17. Panel E is re-convened and TOR-1 is resumed from its saved transcript.
 - **New close:** about 05:00Z on 2026-10-18, which restores the 24 working hours.
 - No reading or pre-registration was changed.
+
+## Campaign wave 3 (pre-registered 2026-10-17T11:22Z; from the panel E strategy lens)
+
+The other four panel E lenses were stopped to save tokens (Jon, 10-17).
+
+**GEN-1. Generation placement (X2′).** Cap 0.4 GB.
+- **Object.** X2′ puts 3×16 at Γ (k = 0), uses a filter vanishing only at Γ, and has one k = 0 Higgs with law-level G_SM Yukawas fitting PDG masses and CKM. The comparator is X2-corner.
+- **Items.**
+  - (a1) CKM is realisable with exact translations and one k = 0 Higgs.
+  - (a2) X2-L1 and X2-L2 hold at Γ.
+  - (a3) The Z₁₆/ν_R gate and the mixed Z₂³ anomaly of the 7-corner mirror.
+  - (a4) Whether a CKM-forced first-order strain channel exists.
+  - (a5) Whether any tree-level ΔF = 2 arises beyond the Standard Model's.
+  - (b) The one-loop LV residual on the clean D44 rows after the per-field counterterm; the number n of linear flavour-covariant counterterms needed; the tuning.
+- **Readings.**
+  - **GEN-CONE(n):** a1–a5 hold and n ≤ 8.
+  - **GEN-PRICE(n):** a1–a5 hold, but n > 8 or a non-covariant structure is needed.
+  - **GEN-NO-GAIN:** any of a1–a3 fails.
+  - **OPEN:** otherwise.
+
+**QMC-1b. Is the GPR-like signal set by the corner filter?** Cap 1.5 GB, one process at a time.
+- **Setup.** QMC-1's engine and scope. Compare f_Γ = (2 − cos p_x − cos p_y)/4 with a rerun of f2. L = 4 and 6, β = 4, Δτ = 0.05, W ∈ {2, 4}, at least 200 sweeps. Gates (i)–(iv) are re-passed first.
+- **Precondition (not a gap claim).** A suppressed window: E3w ≤ 0.1 at both L.
+- **Readings.**
+  - **FILTER-SENSITIVE:** for f_Γ, some window W has an S10/L² L6/L4 ratio ≤ 0.75 and at least 2σ below 1, while f2 gives ≥ 0.85.
+  - **FILTER-ROBUST:** both filters give ≥ 0.85 at every window W.
+  - **OPEN:** otherwise.
+- **Neither reading establishes a gap, SMG or GPR.**
+
+**F4/X1 referee.** The codex referee checks F4-L1, L2 and L3, and X1's Lemmas E and Z. These lemmas are unrefereed, and the outside ask cites L2.

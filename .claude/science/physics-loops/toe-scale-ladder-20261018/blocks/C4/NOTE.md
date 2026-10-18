@@ -2,8 +2,8 @@
 
 **Block:** C4 of `toe-scale-ladder-20261018` (target: `SCALE_LADDER_MAP.md`, section C4).
 **Date:** 2026-10-18.
-**Status:** worker result. Unaudited; no independent checker has run yet. No axiom, primitive or
-dynamics clause is adopted.
+**Status:** Independently reviewed (REVIEW.md); unaudited. No axiom, primitive or dynamics clause
+is adopted.
 
 ## Result up front
 
@@ -145,8 +145,11 @@ translates. The result is **4 unsigned / 4 signed QCAs for each action**:
 - [2] α = ∏_r exp(iπ/4 C_r), where C = X(±x) Y(±y) Z(±z) is the Chamon octahedron.
   Its matrix is M = 1 + v v^†Λ with v = (s_x + s_y, s_y + s_z) and s_a = x_a + x_a^{-1}, checked
   exactly.
-- [1] the same construction with the 12-site cuboctahedral string;
-- [3] a 73-site-image involution. It is not decomposed here.
+- [1] the same construction with the 12-site cuboctahedral string. It is confirmed with phases
+  by the independent reviewer (REVIEW.md, rv_circuits.log), and so is [2]. The sign of the
+  exponent does not matter.
+- [3] a 73-site-image involution. Its structure is **open**: it is not decomposed here, and the
+  reviewer did not decompose it either.
 
 All four have τ = 0, M^2 = 1 and signed period 1 or 2. The four are *not* closed under
 composition within radius 2: the closure check FAILs in c4_07, so some products have larger range.
@@ -171,8 +174,11 @@ and H fixes no nonzero vector. O, T, D4, D3 and the axis D2 all satisfy this. Pu
 (d) A *glider* is a finite Pauli operator Q ≠ 1, with n ≥ 1 and t ∈ Z^d, such that α^n(Q) ∝ the
     translate of Q by t. A glider with t ≠ 0 exists **iff** τ = x^r + x^{-r} for some r ≠ 0.
     An operator recurring in place (t = 0) exists iff τ is constant. Consequently:
-    - If τ is nonconstant, every nonidentity finite Pauli operator has support diameter tending to
-      infinity (unbounded) under iteration.
+    - If τ is nonconstant **and not of the form x^r + x^{-r}**, every nonidentity finite Pauli
+      operator has support diameter tending to infinity under iteration. The glider form is
+      nonconstant, but it carries bounded gliders; the D4 and D3 rows below contain them. This
+      fix is from review issue C-1. It does not change any O or T conclusion, because the glider
+      form cannot occur under O or T.
     - Under H = O or T there is no glider at any range, for every action. τ is H-invariant, and
       x^r + x^{-r} is H-invariant only if H·r ⊆ {±r}, which forces r = 0 for O and T.
 
@@ -351,3 +357,30 @@ the covariance conditions from the action with phases, or work directly in the L
 it should not reuse `c4lib.py`. `c4_05` is a partial independent route written by the same agent.
 Theorem 2 is short and pen-checkable. Its step most worth re-checking is the claim that the
 Galois-conjugation case forces τ to be constant (part d).
+
+
+## Review dispositions
+
+The independent review is in `REVIEW.md`. It was written by the same model family in a fresh
+context, with its own code that does not import or copy `c4lib.py`.
+
+- **Disclosure.** The reviewer's Phase A was blind to the author's logs and code but **not** to
+  the headline counts: the orchestrator's prompt included them. Its code is independent.
+- **Reproduced independently:**
+  - Theorem 1 counts on the 27-cell for all five actions, signed and unsigned;
+  - the 84 nonconstant-τ matrices and the sign-f involutions;
+  - Theorem 1b at range 2: 4/4 each for axis and full, with sign (+,+) only;
+  - the Chamon and cuboctahedral circuits [2] and [1], with phases;
+  - Theorem 2 (a)–(d), including the Galois step and the O/T glider no-go;
+  - the non-closure of the range-2 solutions under composition.
+- **C-1 (minor): accepted and applied.** Theorem 2(d) for general H now excludes
+  τ = x^r + x^{-r}. The O and T conclusions are unchanged.
+- **Cosmetic: accepted.** The exponent sign in ∏ exp(±iπ/4 P_r) is immaterial.
+- **Still open:** the structure of the 73-site range-2 solution [3].
+- **Not independently re-checked** (author evidence only):
+  - the subgroup tables (T, D4, D3, D2);
+  - the twist runs (in/out soldering pairs and the time-reversal twist);
+  - the 58-homomorphism sweep and the 5-class result, which come from c4_01 and c4_02;
+  - the C1 E(g) C2 structure claim;
+  - the sign-f radius-2 count;
+  - the c4_04 dynamics numerics.

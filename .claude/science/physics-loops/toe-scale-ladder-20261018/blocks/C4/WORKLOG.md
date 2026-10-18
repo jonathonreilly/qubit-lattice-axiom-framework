@@ -56,3 +56,6 @@
   prod exp(i pi/4 C_r) and a 12-site cuboctahedral string rotation; 4th (73-site) undecomposed.
 - NOTE.md finalised. Reruns of c4_02 (41/0) and c4_03 T,D4,D3 (63/0) with final lib consistent.
 - c4_01 rerun with final lib (34/0). c4_04/c4_05 logs were produced before the dK=0 fast path was added (they use r1 only; fast path validated against brute-force counts).
+
+## review dispositions applied
+- REVIEW.md read. Applied C-1 (Thm 2(d) excludes glider form for general H), recorded cuboctahedral/Chamon phase confirmation, kept [3] open, listed the parts not re-checked, disclosed that Phase A was not blind to the counts, status line updated, appended 'Review dispositions'.

@@ -184,6 +184,20 @@ Each verdict is the probing agent's, with its own numbers. None is checked here 
 | Record apparatus | — | The 1e-13 mediated fine-tuning looks like a hidden phase-reference (clock) obligation: in a toy model only the differential endpoint detuning is relevant (tolerance ≈ 0.115 λ_eff); the decay rate and GKSL time could come from a weak-coupling (Davies) limit | Permanent halt; preparation (needs a non-unital low-entropy resource) |
 | Readout weights | Frequency consistency for order-blind formation from 1-dependence, hence ergodicity (conditional; to be checked) | Menu abundance and regularity become block-rung Gleason plus rung-consistency; finite Clifford-closed apparatus leaves 205 free frame-function dimensions against 15 | The fair-coin weight class |
 
+### Campaign follow-up, 2026-10-18 (interpretation)
+
+A 12-hour campaign converted the strongest probe leads into proofs or decisive computations. Workers and checkers are fresh-context agents of the same model family, not independent human reviewers. Evidence is in `.claude/science/physics-loops/scale-ladder-campaign-20261018/`; the proved lane statements are in a companion lane-theorem PR.
+
+| Lane | Campaign result |
+|---|---|
+| Formation | **Proved.** Every iid-priority, finite-range formation rule is a finitary factor of iid noise with a factorial coding-radius tail. From an empty start, no long-range order, power laws, pinch points or proper 3-colourings arise. Checked. |
+| Readout weights | **Proved, partial.** Spatial frequencies converge with explicit rates for that class. This is a partial, conditional discharge of the frequency-consistency obligation; the limits equal the rule weights only for order-blind rules. Checked. |
+| Emergent electron | **Corner model.** Parameter-free step rules (item 6): an isotropic spin-½ Weyl step at speed √2/3 with six cube-point doublers. **Proved** (checked): odd filling is forced gapless by anticommuting gauge-dressed C2 lifts. The doubling corollary holds for gapped steps and odd-filling Hamiltonians. In mean-field RPA, interaction channels favour the chiral triangle term over the Dirac mass (checking). The step is an exact depth-25 circuit on the corner code, but not Clifford+T. |
+| Gravity | **One cone, closure.** Every gauge-invariant two-derivative form gives both TT polarisations one cone (symbolic determinant). Lattice constraint closure leaves only the DeWitt ray, conditional on supplied clauses (Hojman–Kuchař–Teitelboim analogue). The 06-08 induced bubble needs an underived seagull, so the induced 1/G is not fixed. Checked. |
+| Native transfer | **One loop.** The heat-kernel saddle action vs Wilson in 4D gives Λ_HK/Λ_W = 1.819 for SU(3); the probe's 7/4 was the 2D shift. Unreviewed. |
+| Record apparatus | **Hypothesis refuted.** The hidden-clock hypothesis fails for the certified tolerances: they are budget and linewidth choices. A nominal-clock reading would carry a 1/T obligation, which the repo handles as a premise; a co-transported reference could replace that premise. Unreviewed. |
+| Finite-spin EM | **Partly settled.** Exact sizes reach only 2×2×L tubes. Along the long direction χ_L matches K_T(q_min) to about 1%, so the L=2 mismatch is a lattice-scale effect. Coulomb vs confined needs isotropic QMC. Unreviewed. |
+
 ## Answer to the question (interpretation)
 
 The ladder does unify the lanes, but not by deriving everything from the finest rung. It gives three exact tools that every lane can use. It also collects what is left open onto a short list of shared primitives.

@@ -1,8 +1,8 @@
 # C12 findings: W₃ ≠ 0 is allowed in the declared class; an explicit quasi-local letter gives a single isotropic Weyl node with no doubler; finite range forces W₃ = 0
 
-Provenance: a worker of the same model family. **Unchecked.** Saved by the supervisor from the hand-back (the worker's file write was blocked). `c12_runner.py` sections 0–2 copy the wt-lanes C11 model build verbatim, with nothing imported. **TOTAL: PASS=35 FAIL=0** (462 s, ≤ 3 threads). Scratch is in the session scratchpad `c12/` (`d6.py`, `d6probe.py`, `cert.py`).
+Provenance: a worker of the same model family. Checked by a fresh-context same-family agent on the separate C11_check build (`../C12_check/REPORT.md`, 19 PASS, 0 FAIL): no claim refuted; four framing corrections applied below. Saved by the supervisor from the hand-back (the worker's file write was blocked). `c12_runner.py` sections 0–2 copy the wt-lanes C11 model build verbatim, with nothing imported. **TOTAL: PASS=35 FAIL=0** (462 s, ≤ 3 threads). Scratch is in the session scratchpad `c12/` (`d6.py`, `d6probe.py`, `cert.py`).
 
-**Supervisor's prior-art note (unchecked recollection).** Evading fermion doubling by giving up strict locality is the classic Nielsen–Ninomiya loophole: SLAC-type non-local derivatives evade it. For Floquet unitaries the net chirality equals W₃ (Bessho–Sato) and can be nonzero for smooth maps. So the C12 construction is the Floquet analogue of that loophole, now O-covariant in this model. Whether S6 (finite range ⇒ W₃ = 0) is known in the quantum-walk/QCA literature was not checked.
+**Supervisor's prior-art note (unchecked recollection).** Evading fermion doubling by giving up strict locality is the classic Nielsen–Ninomiya loophole: SLAC-type non-local derivatives evade it. For Floquet unitaries the net chirality equals W₃ (Bessho–Sato) and can be nonzero for smooth maps. The Floquet loophole is wider than SLAC's (check): analytic, exponentially local unitaries escape it, so the locality that matters is finite range or generation by a local Hamiltonian, not smoothness or decay. S6 resembles the no-go results for compactly supported flat Chern bands (Dubail–Read 2015; Chen et al. 2014), recalled only. Whether S6 (finite range ⇒ W₃ = 0) is known in the quantum-walk/QCA literature was not checked.
 
 ## Question
 
@@ -56,10 +56,10 @@ D_b(k) = 1 − P_b + n̂₄(q)P_b + i Σ_i n̂_i(q) D_b τ_i^{(b)} D_b†, with 
 - **Q1 (exact, plus numerics): the one-letter step D_b reaches E = π only at −k*.**
   - The complement of D_b is frozen at 1, and e^{±iθ} = −1 only at q = (π,π,π) ≡ −k*.
   - The node is an isolated 2-fold D_b level, so by the C11 lemma it is an untilted isotropic cone, with speed 1/(3−m) = 1 and FHS charge −1.
-  - **So the B20 criterion is met: a single Weyl node, no doubler.**
+  - **So the B20 criterion is met at E = π: a single Weyl node, no doubler, in the node-counting sense.** W₃ ≠ 0 rules out a spectral gap at every quasi-energy (check: otherwise a logarithm cut there would give a homotopy to 1). The D_b step has closed quasi-energy surfaces around −k* at every E ∈ (0, π), and a 10-fold flat band at E = 0.
   - D₊D₋ at E = π is 4-fold at −k*, with equal speeds and the same chirality (charge −2).
 - **Q2 (exact two-band argument, plus numerics): the Bessho–Sato-type bookkeeping holds in this example.**
-  - The same block has 7 nodes in its E = 0 gap, with net lower-band charge −1, equal to the π node's −1.
+  - For the step D₊·C̄ (complement moved to −1), equivalently the 2×2 block, there are 7 nodes at E = 0, with net lower-band charge −1, equal to the π node's −1.
   - Their speeds are 1/5, 1/3 and 1, so E = 0 fails the one-speed criterion.
 - **Q3: steps with S fail.**
   - **Screen:** 342 cyclic word classes of length ≤ 3 in {D±^{±1}, S^{±1,±2}, R_L, Rt, A0, C± = 1−2P_{D±}}, giving 758 (word, E) pairs.
@@ -88,6 +88,8 @@ D_b(k) = 1 − P_b + n̂₄(q)P_b + i Σ_i n̂_i(q) D_b τ_i^{(b)} D_b†, with 
 - **Numerical:** W₃ integrals, speeds, FHS charges, the screen, Q4 and the 40³ correction.
 - **Conditional:** net chirality = W₃ for general steps (Bessho–Sato).
 - **Weak runner lines:** D5 (records only that the classification ran) and C1 (an ad hoc 0.35 threshold; illustration).
+- **Exact corollary (check):** sup_k ‖V − D_b‖ = 2 for every finite-range unitary V, so D_b is not a norm limit of strictly local steps. Admitting it is a real change of premise.
+- **Checked:** S6's logic re-derived independently (K-theory recalled); D_b on a different build.
 - **Not claimed:** physical identification; admissibility of quasi-local, non-finite-range letters as QCA steps; novelty of S6.
 
 ## Open
@@ -95,4 +97,4 @@ D_b(k) = 1 − P_b + n̂₄(q)P_b + i Σ_i n̂_i(q) D_b τ_i^{(b)} D_b†, with 
 1. **A premise decision for the owner: must letters be finite range?** If yes, S6 makes W₃ = 0 exact for every step. If quasi-local letters are allowed, the obstruction fails (D_b).
 2. A rigorous certificate for the Q4 perturbed steps.
 3. Θ-even finite-range words at E ∈ {0, π}: where the compensating Kramers point nodes are forced to sit.
-4. Independent re-derivation of S6; a check of D_b on a different build.
+4. Novelty of S6, and a check from a different model family.

@@ -6,3 +6,11 @@
    (55s)
    c1 finite-range covariant words: len 5: W3(N=12) +0.0e+00, W3(N=16) +0.0e+00; len 5: W3(N=12) +0.0e+00, W3(N=16) +0.0e+00; len 4: W3(N=12) -7.9e-24, W3(N=16) -7.3e-25; len 6: W3(N=12) -3.0e-11, W3(N=16) -3.1e-11; len 6: W3(N=12) +1.1e-11, W3(N=16) +8.1e-12; len 4: W3(N=12) +1.2e-14, W3(N=16) +4.2e-16
 [PASS] c1 W3 = 0 (to 1e-8) for 6 random finite-range covariant words in S^p, R_L, Rt, A0, on-site unitaries
+   c2 exp(iH) words: N=12 +2.8e-01, N=20 -9.8e-05; N=12 +4.3e-04, N=20 -1.1e-07; N=12 -1.7e-02, N=20 +7.4e-07; N=12 -1.7e-02, N=20 -1.5e-05
+[PASS] c2 W3 -> 0 for 4 random words with covariant exp(iH) letters, shifts and R_L
+[PASS] c2 control: inserting D+ into such a word gives W3 = +0.999992
+   c3 circuits: n=2 depth=6: +3.6e-13 / +1.2e-11; n=3 depth=8: -2.6e-10 / -3.0e-10; n=4 depth=8: +1.1e-09 / +1.1e-09; n=4 depth=12: +1.5e-03 / +1.3e-09
+[PASS] c3 W3 = 0 for non-covariant random finite-depth circuits (Haar layers + partial shifts), N=28
+[PASS] c4 finite-range projector-twist U = 1 - P + z P (P trig-polynomial, kz-rotated): W3 = +4.2e-12 (N=24), +4.2e-12 (N=32); control with a Chern-1 quasi-local P: W3 = +1.00000
+[PASS] c5 Fourier-truncated D+ (l1-range 6, sup error 5.6e-03, not unitary: 1.1e-02) is a Laurent-polynomial GL map with W3 = +1.00000: S6 genuinely needs a Laurent-polynomial INVERSE (unitarity supplies it), consistent with S6
+TOTAL PASS=11 FAIL=0 (159s)

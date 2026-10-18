@@ -5,8 +5,8 @@ deadline: 2026-10-19T00:47:35Z
 final_packaging_at: 2026-10-19T00:32:35Z
 checkpoint_interval_minutes: 30
 actual_current_surface_status: bounded-support
-active_route: native four-layer collective response
-next_action: package reviewed four-layer response and challenge continuation to a bulk neutral mode
+active_route: native slab response density and heavy-probe coupling
+next_action: package response-density theorem and derive native heavy-probe loop coupling
 main_at_launch: fa841753c1a6296e5ad45518375660b0f1004769
 prior_campaigns: stopped
 proposal_allowed: false
@@ -35,3 +35,5 @@ checkpoint_history: |
 
   ## 2026-10-18T14:24:31.440948+00:00 four-layer checkpoint
   PR9788 lightwindow verifiedOPENda7b65f66e92c79e99f23001a79131a5a991c0f9; attachmentcap100persists. Root four-layer effectivecollectiveH K=-4P-5E, sourceO=3K-3E independentlychecked; exactPFgroundsector andpositiveVar(E) imply nonzeroactualfixedslab source scalingλ8 atenergiesλ4, transferchecked. Root open-transverseR3-R6 coefficient response computed, R6D4dim4211744 residual1.27e-11; lowestvisiblegap39.04088, weight27.05366, thinboundary effectsbeingtested. PeriodictransverseR4,R5 computed (R5visiblegap74.26777 weight136.54358); R6periodicsolveownedPID91237 session27564active. Root open-z challenge derivesK=-18P-16E,O=-51P-48E independentlychecked;R3-R5benchmarkscomputed. Fullnativephysicalsites4R², butnumericsleadingcoefficientonly. RejectedhighRitznodespreserved; Collatzestimatesnotrigorouscertificates. Allmodeldevelopment,noempiricaltest,deadlineunchanged.
+
+  Native slab response density proved at actual coefficient ratio: amplitude-ratio and variational bounds give M1/area>=9.193074485; exact local Pauli third-moment bound9003008 implies Var(E)/area>.00928960 and broad-window weight/area>.00328437. Original normalized microscopic ordered-limit weight>4.510e-7lambda8. No clustering or addedinteraction; no pole, jointlimit or3Dscalar claim. Independent algebra/moment/finalreviewsPASS after rotated-basis wording correction; replay2.242413sPASS. Auxiliary feature-motion expansion derives cardinal/knight hopping and momentumsource, explicitly not controlled atphysicalu1. Root next nativeheavy-probe loopvertex: firstorderN2 hopping carriesexistingcolumnplaquetteflux, fourthreturnmoment28I+2sumP; preparedsource protocol andbackreaction distinction undercheck.

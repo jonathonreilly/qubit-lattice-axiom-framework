@@ -1,0 +1,8 @@
+  t/pi [0.3333, 0.0, 0.0] spectral True U True
+  t/pi [0.1667, 0.1667, 0.1667] spectral True U True
+  t/pi [0.6667, 0.6667, 0.6667] spectral True U True
+  t/pi [0.3333, 0.3333, 0.0] spectral True U True
+  t/pi [0.1667, 0.0, 0.0] spectral False U False
+[PASS] every tested off-grid spectral taste of S2.P7.S4.H00 has a k-independent U intertwiner (and non-tastes have none)
+
+TOTAL: PASS=1 FAIL=0

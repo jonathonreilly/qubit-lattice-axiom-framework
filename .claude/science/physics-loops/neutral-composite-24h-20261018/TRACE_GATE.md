@@ -116,3 +116,5 @@ Six-end block: trace_class upstream_support; source_of_blocker_text user_goal; r
 Finite collision: trace_class upstream_support; reachability_to_target partially_closes; source_of_blocker_text user_goal; artifact_role theorem. Derives original contact readout while exposing native finite-feature escape; on-shell coupling/physical scalar remains open.
 
 Transverse bound: trace_class upstream_support; reachability_to_target partially_closes; source_of_blocker_text user_goal; artifact_role theorem. Nativeisolated neutralmode andoriginalsource arederivedwithoutnewinteraction. Large-featurelimit,higherorders andphysicalscalar remainopen.
+
+Large bound feature: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Derives a large spatial mode and original-source weight from the existing K1 interaction; chosen momentum, higher-order transfer and physical scalar interpretation remain open. Exact threshold and vanishing-weight tradeoff are preserved rather than added as selectors.

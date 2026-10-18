@@ -156,3 +156,40 @@ The drafts `panel_D/D1_SITE_CONTENT_PROPOSAL.md` and `panel_D/COLLABORATOR_ASKS.
 - OBS-2: route 2 kill test;
 - QMC-1: the sign-free simulation pilot;
 - NT-1′: a legitimate chiral measure and RP.
+
+## 8. The 24-hour campaign (2026-10-15 to 10-17)
+
+**Provenance.** Each test was run by one Opus 5.5 agent at xhigh. These agents are all one model family, so none is independent of the others. Each test was pre-registered in TESTS.md before it ran. Referees were codex gpt-5.6-sol at xhigh. **Refereed:** OBS-2, OBS-3, OBS-4, CLS-1, NT-1′, NT-1″, QMC-1, and the F4/X1 lemmas. **Not refereed:** TOR-1, GEN-1, GEN-2, QMC-1b and LOCK-1, because the codex account was out of credit until 10-22; they are queued in `ref_*`. The run was cut short twice, once by a session crash and once by a usage limit, about 2 days in all.
+
+**Route 2: the corner package (X2) and its re-scope (X2′)**
+
+| Test | Reading | What it established, at the scope the referee allowed |
+|---|---|---|
+| OBS-2 | LV-PRICE (refereed) | With OBS-1's textures, the d quark shifts c_TT by about −2e-8, against a bound of 1e-22. Both the direct vector row and the axial row fail. The minimal number of counterterms needed is not established. |
+| OBS-3 | TEXTURE-ESCAPE (refereed) | The exact "B-gen" equal-strength textures fit all quark masses, CKM and J, and leave zero one-loop residual. So OBS-2's violation depends on the texture and is not forced by CKM at one loop. |
+| OBS-4 | FCNC-PRICE (refereed) | With exact translations, CKM is a permutation unless something breaks translations: B-gen needs carriers at hw2. In the D3 benchmark those carriers sit at TeV scale, and ΔF = 2 fails by a factor of 180 or more even after tuning. The way out (class S) is a lattice-scale condensate that breaks translations to BCC and gives up X2-L2. |
+| CLS-1 | CLS-PRICE (refereed) | Class S allows light–light operators that no symmetry protects. Removing the Lorentz violation they cause needs Θ plus tuning of about 1e-27 (toy one-loop calculation and one-body proxies). |
+| GEN-1 | GEN-CONE, n ≤ 8 (unrefereed) | X2′ puts all three generations at Γ as an internal label. That frees CKM, leaves only SM-sized ΔF = 2, removes the strain channel, and keeps light protection. The cost: one-loop LV of about 1e14 over the bound, which needs 2 covariant counterterms tuned to about 1e-16 (the same class as the set-C cone price); 96 modes per site; and the "3" is supplied by hand. |
+| GEN-2 | DIR-PRICE (unrefereed; checked only at the symmetry level) | Using the orientation of an extended cell as the generation label brings back a forced Eg strain channel and needs at least 7 LV counterterms. |
+| LOCK-1 | LOCK-MIXED (unrefereed) | The landed record gas forms a chessboard only when g < g_N(ρ). At main's g ≥ 1 (neutral scale, and the RP range) it stays liquid. A chessboard folds (π,π,π) onto Γ, which would break X2′'s protection inside that region (supervisor's reading). |
+| QMC-1 | OPEN (refereed) | A validated sign-free AFQMC. At L ≤ 6 the 10-vector correlations span the whole box once the mirrors are suppressed, which suggests a GPR-like crossover. It does not establish a gap, GPR or SMG. |
+| QMC-1b | OPEN (unrefereed) | At W = 2 and 4, f_Γ does not suppress its (π,0) mirrors. The f2 ratios hold at 4× the statistics. At W = 8 (supplementary), both filters agree, which suggests the signal comes from the 10-vector channel rather than the filter. |
+
+**Route 1: the overlap / set B**
+
+| Test | Reading | What it established |
+|---|---|---|
+| NT-1′ | OPEN at G-LEG(b) (refereed) | A chart-local Lüscher measure at Lx = 4 on open time. RP is negative on 3 of 3 pools, and the negativity is carried by the modulus. |
+| NT-1″ | OPEN at (b″) (refereed) | Open time itself blocks a legitimate measure: H_W has edge zero modes, which make any Wilson-line winding inadmissible. On the torus, C(11112) = 0. |
+| TOR-1 | OPEN on power (unrefereed) | A torus Lüscher measure that passes every legitimacy gate. The RP kernel at 4×4 cannot be resolved: every λ_min is at the 1e-7 level, below the error, including the vector reference. |
+
+**Route 3.** The F4-L2 lemma ("a far-wall zero or a gapless composite") is NOT CONFIRMED (refereed). Only a conditional pole–zero alternative survives. F4-L3 and X1 Lemma E are also not confirmed. §2 and §3 above overstate route 3.
+
+**What changed (reading).**
+- **Corners as generations is the weak point of X2, not its chirality mechanism.** CKM conflicts with the corner-label protection: carriers at the electroweak scale run into FCNC, and breaking translations at the lattice scale brings in LV tuning.
+- **The best placement found is X2′:** generations as an internal label at Γ. Its remaining bill is Lorentz-violation tuning of the same class the framework already owes for gravity's matter light cones. One owner decision would cover both.
+- **The mirror-gapping danger (GPR) is now the binding open question for route 2,** and the simulation leans against it at pilot sizes.
+- **Route 1 is parked at 2D-proxy scope.** A legitimate measure now exists; deciding its sign needs lattices larger than this machine can run.
+- **The record rules are safe at main's neutral setting.** A strongly repulsive record gas would freeze matter into a chessboard.
+
+**Did the campaign crack the wall? No.** It moved route 2's obstacle away from flavour and onto symmetric mass generation, and left route 1 needing lattices beyond this machine.

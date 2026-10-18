@@ -3,4 +3,4 @@
 | Block | Author run | Independent check | Findings | Disposition |
 |---|---|---|---|---|
 | C2 | PASS=49 FAIL=0 | different derivation (Coulomb gauge, exact angular integrals), PASS=35 FAIL=0 | 10 non-blocking (scope/wording; T_tie proper-rotation invariant count) | all applied; reviewer confirmed: ready |
-| C3 | PASS=58 FAIL=0 | forward-time simulation + exact enumeration, PASS=75 FAIL=0 | F1 wording false (tie-exchangeable counterexample), F2-F8 wording/scope | corrections in progress |
+| C3 | PASS=59 FAIL=0 | forward-time simulation + exact enumeration, PASS=75 FAIL=0 | F1 wording false (tie-exchangeable counterexample W-tie), F2-F8 wording/scope; 3 editorial nits at confirmation | all applied; reviewer confirmed: ready (nits being applied) |

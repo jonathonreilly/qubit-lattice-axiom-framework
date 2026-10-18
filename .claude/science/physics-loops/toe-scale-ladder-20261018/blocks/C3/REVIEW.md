@@ -192,3 +192,28 @@ The map's statement `P(R≥n) ≤ 2d(2d−1)^{n−1}/(n+1)!` is therefore **fals
 - `review_scripts/r3_stopping_set_exact_and_markov.py`: exact B2 resampling with ties, the negative control, and C5 against the exact jump chain.
 - `review_scripts/r4_clocks_bounds_witness.py`: Theorem D enumeration, the B1/B2 inequalities, F arithmetic, κ values, and the F1 counterexample.
 - `review_scripts/run_review.sh` → `review_scripts/logs/review_all.log` (`TOTAL: PASS=75 FAIL=0`).
+
+## Correction confirmation
+
+I re-read the complete corrected `NOTE.md`, §0–§12. The proofs of A–D and the import of F are unchanged from the version reviewed above. The author's `logs/run_all.log` ends `TOTAL: PASS=59 FAIL=0`; the new check s3(f) is the W-tie witness, and it agrees with my r4 value `Cov = 1/9`. I did not re-run the author's suite, and my own evidence is unchanged (`review_scripts/logs/review_all.log`, `TOTAL: PASS=75 FAIL=0`).
+
+| Finding | Resolved? |
+|---|---|
+| F1 | **Yes.** (i) now says "tie-free exchangeable" and "dependence". W-tie is recorded with correct values: `Eξ = 1/3`, `Eξ_0ξ_r = 2/9`, `Cov = 1/9`. Adding (ii), mixtures of clock laws inducing different record laws, is correct. It is a special case of (i): a non-ergodic clock law is not a finite-range factor of iid, and tie-free exchangeable mixtures induce one record law by A′. Items (iii) and (iv) are the old open options. The new disclaimer, "a restatement of 'outside G-I', not a sufficiency claim, not exhaustive", is accurate. |
+| F2 | Yes (§6 "What F does and does not show"). |
+| F3 | Yes (Theorem F bullets; §0 item 4). |
+| F4 | **Yes.** "Three-regime classification (not exhaustive)" is now accurate. The new title, "within bounded-rate Markov clocks, an ordered record phase needs infinite-range clock dependence", is true: it excludes the open options (iii) and (iv) by its qualifier. |
+| F5–F8, B1 remark | Yes. |
+
+**New issues introduced: minor, all non-blocking.**
+- **N-a.** §6 now says the §1 LRO notion "is meant for ergodic laws", but the §1 definition is unchanged, and the necessity corollary cites the non-ergodic W-tie and `W` as LRO examples.
+  - The corollary is true under either reading, because every G-I law is ergodic.
+  - Fix: keep §1 as stated and change the remark to "for non-ergodic laws, covariance-LRO only signals a non-trivial mixture".
+- **N-b.** The W-tie block sits between the statement of Theorem F and its `*Proof.*`, so the proof now reads as if it were W-tie's. Fix: move W-tie after F's proof.
+- **N-c.** Residual wording:
+  - N1 route 3 still says "Exchangeable … closed by A′"; it should say tie-free, consistent with route 5.
+  - N2 still says "infinite-range clock correlation"; W-tie's clocks are pairwise uncorrelated, so this should say "dependence".
+  - W-tie lives on Z, so "O_h-covariant" should read "reflection-covariant on Z (the construction works on any Z^d)".
+  - Pre-existing: N1 says "five distinct" routes but lists seven.
+
+**Final verdict: READY.** No mathematical defect remains, and every claim is correct as stated with its domain and quantifiers. N-a to N-c are editorial and can be fixed in the same pass without re-review.

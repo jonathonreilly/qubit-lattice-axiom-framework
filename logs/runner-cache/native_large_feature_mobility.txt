@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/native_large_feature_mobility.py
+runner_sha256: 3ec838127bbfdd43e64a0dd97ddb921c4dd6177d027c09b40c52dce581b901cb
+input_fingerprint_sha256: aa2e553d4dcf0da6eaced13b579bedceeccf2f8f0ce0f70bf24ac3a1a63ba742
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 38.42
+status: ok
+----- stdout -----
+{"status": "bounded-support", "cavity_controls": [{"b": 0.05, "gap": 0.08670622705466005, "E": -4.28670622705466, "curvature_x": 0.7759563126026487, "curvature_y": -8.531904461893117, "curvature_z": 0.2737825392838551, "source_weight_over_lambda2": 0.004058139513461201, "curvature_weight_ratio": 67.46503868969873}, {"b": 0.1, "gap": 0.014667681500123368, "E": -4.414667681500124, "curvature_x": 0.9171762996259687, "curvature_y": -5.9126576083722755, "curvature_z": 0.10447079331287043, "source_weight_over_lambda2": 0.005107044653445152, "curvature_weight_ratio": 20.456213015955456}, {"b": 0.15, "gap": 0.0002743339111765634, "E": -4.600274333911177, "curvature_x": 0.995536980083638, "curvature_y": -0.7514539482970757, "curvature_z": 0.005855810274459852, "source_weight_over_lambda2": 0.0004876631043001948, "curvature_weight_ratio": 12.007900993172417}, {"b": 0.18, "gap": 6.468264699436965e-07, "E": -4.72000064682647, "curvature_x": 0.9999727966313927, "curvature_y": 0.16633579627511055, "curvature_z": 3.651893943924699e-05, "source_weight_over_lambda2": 3.623811644687457e-06, "curvature_weight_ratio": 10.077493815878677}, {"b": 0.2, "gap": 3.080793965463709e-11, "E": -4.800000000030808, "curvature_x": 0.999999996635957, "curvature_y": 0.19999576710991984, "curvature_z": 4.582446873222102e-09, "source_weight_over_lambda2": 4.934153730690521e-10, "curvature_weight_ratio": 9.287199230780352}], "finite_graph_control": {"energy": -4.414667680948671, "predicted_curvature": 0.10447082429716048, "finite_difference_curvature": 0.10447085966092118, "error": 3.536376069757097e-08, "source_weight": 0.0051070461560850265}, "scope": "Native K1 curvature and leading source coefficient, not full-H dispersion or empirical scalar test"}
+
+----- stderr -----
+

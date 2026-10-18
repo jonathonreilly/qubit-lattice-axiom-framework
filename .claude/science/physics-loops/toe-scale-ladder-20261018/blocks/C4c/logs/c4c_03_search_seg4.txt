@@ -1,0 +1,1 @@
+case=seg4 |S|=4 params=70 overlapping members=6

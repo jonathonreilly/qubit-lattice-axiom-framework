@@ -76,6 +76,19 @@ of z3 (W3[P] = W3[M] by the scalar-phase lemma). Then det P = u·z3^d with u ∈
    via Toeplitz operators). I checked the normalisation numerically on U = 1 − Q + z3 Q with Q the QWZ band
    projector. Its cokernel bundle is range Q, and |W3| = |Chern(Q)| for m = ±1, 3 (`r3_K_structure.log`).
 
+*Finishing reviewer's tightening of step 4 (removes the "recalled" normalisation).* Both
+`W3` and `c_1∘ind` (ind: K^1(T^2×S^1) → K^0(T^2) the Toeplitz/Atiyah families index, additive; c_1 additive
+on virtual bundles) are homotopy-invariant homomorphisms `K^1(T^3) → Z`, and `K^1(T^3) ≅ Z^4` is torsion-free,
+spanned by the three coordinate loops z_1, z_2, z_3 and one top class. Both functionals vanish on z_1, z_2
+(constant in z_3: index 0) and on z_3 (cokernel = trivial line bundle, c_1 = 0). On U = 1 − Q + z_3 Q
+(QWZ, m = 1) the cokernel bundle is range Q, so c_1∘ind = −Chern(Q) = +1, while W3 = −1 (`r3_K_structure.log`).
+Hence `c_1∘ind = −W3` on all of K^1(T^3) in this orientation, with no appeal to a recalled index formula;
+the only external inputs of the second route are then Pic(UFD) = 0, the constant-fibre-rank ⇒ projective
+lemma, and additivity/homotopy invariance of the families index. I also re-checked steps 1–3 line by line:
+det P = c z_1^{m_1} z_2^{m_2} z_3^d with d ≥ 0 because units of R are monomials and P is polynomial in z_3;
+`adj(P)P = det P` gives z_3^d Q = 0, so Q is generated over R2 by {z_3^j e_i, j < d}; injectivity of
+C[z_3]^n/P → H^2/PH^2 and equal dimension d give the isomorphism. I agree with this second proof.
+
 Hence W3[M] = 0. This also confirms the note's §11(b) sketch, which in fact needs only Pic = 0 and not the
 full Quillen–Suslin–Swan theorem. It shows, too, that a finite-range counterexample to K would be
 equivalent to a strictly local (Laurent-polynomial) band projector on T^2 with nonzero Chern number. The

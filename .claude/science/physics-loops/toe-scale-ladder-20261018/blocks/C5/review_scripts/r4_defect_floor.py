@@ -7,7 +7,11 @@ import sys, time, itertools, numpy as np
 from scipy.optimize import least_squares, minimize
 from rlib import Ck, w3_GL, grid
 ck = Ck()
-p = np.load('../logs/s4d_params_final.npy')
+# chunked: argv[1] = wall cap (s) for the LM stage loop, argv[2] = optional resume file (own previous chunk)
+CAP = float(sys.argv[1]) if len(sys.argv) > 1 else 600.0
+SRC = sys.argv[2] if len(sys.argv) > 2 else '../logs/s4d_params_final.npy'
+print(f'chunk: source {SRC}, LM wall cap {CAP:.0f}s', flush=True)
+p = np.load(SRC)
 H = np.array(list(itertools.product(range(-2,3), repeat=3))); nh = len(H)
 def A_of(p): return (p[:nh*4] + 1j*p[nh*4:]).reshape(nh,2,2)
 def U_at(A, k):  # k (...,3)
@@ -58,12 +62,13 @@ ck('own analytic Jacobian matches finite difference', np.allclose(jac(p)[:,5], f
 hist = [(0.5*np.sum(r0**2), sd, ws[0][0])]
 q = p.copy(); t0 = time.time()
 for stage in range(6):
-    if time.time()-t0 > 900: break
-    sol = least_squares(res, q, jac=jac, method='lm', max_nfev=200, xtol=3e-16, ftol=3e-16, gtol=3e-16)
+    if time.time()-t0 > CAP: break
+    sol = least_squares(res, q, jac=jac, method='lm', max_nfev=60, xtol=3e-16, ftol=3e-16, gtol=3e-16)
     q = sol.x; Aq = A_of(q); sdq = sup_defect(Aq, N=24, nloc=8); wq, md = w3_of(Aq, 40, 0.5)
     hist.append((sol.cost, sdq, wq))
     print(f'own LM stage {stage}: cost {sol.cost:.3e}  sup defect {sdq:.3e}  W3(N=40) {wq:+.6f}  min|det| {md:.5f}  t={time.time()-t0:.0f}s', flush=True)
 np.save('r4_params_after_review_LM.npy', q)
+print(f'final sup defect {hist[-1][1]:.4e} (start {hist[0][1]:.4e}); cost {hist[-1][0]:.4e} (start {hist[0][0]:.4e})', flush=True)
 ck('all continuation iterates keep integer W3 (no silent crossing of det = 0)', all(abs(h[2]-round(h[2])) < 1e-6 for h in hist))
 ck('no exact (defect < 1e-10) range-2 unitary with W3 = -1 reached (Theorem K consistency)', not (hist[-1][1] < 1e-10 and abs(hist[-1][2]+1) < 1e-6))
 sys.exit(ck.total())

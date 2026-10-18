@@ -1,3 +1,4 @@
+chunk: source ../logs/s4d_params_final.npy, LM wall cap 600s
 loaded params: max|coef| 0.751; sup defect (operator norm, dense+local max) 1.989e-06; W3 at N=40,56,72: [np.float64(-1.0), np.float64(-1.0), np.float64(-1.0)]; min|det| [np.float64(0.999998), np.float64(0.999998), np.float64(0.999998)]
 PASS: worker defect figure reproduced to within a factor 2 (own sup 1.99e-06 vs reported 1.82e-6)
 PASS: W3 = -1 converged on three independent grids (|W3+1| < 1e-6)

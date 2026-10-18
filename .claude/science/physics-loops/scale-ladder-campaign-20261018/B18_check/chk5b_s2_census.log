@@ -1,0 +1,22 @@
+E = +0.000000: k* level multiplicity [2]; 32 distinct E-touchings per Lambda-cell [420s]
+   (pi/4)Z^3 point, parities 001    speeds (np.float64(2.4943), np.float64(1.5813), np.float64(1.5813))  sign det B -1  Fukui +1  count 12  (multiplicity at E: [2])
+   (pi/4)Z^3 point, parities 011    speeds (np.float64(2.4943), np.float64(1.5813), np.float64(1.5813))  sign det B +1  Fukui -1  count 12  (multiplicity at E: [2])
+   (pi/4)Z^3 point, parities 111    speeds (np.float64(1.8856), np.float64(1.8856), np.float64(1.8856))  sign det B -1  Fukui +1  count 4  (multiplicity at E: [2])
+   O-fixed (k*-type)                speeds (np.float64(1.8856), np.float64(1.8856), np.float64(1.8856))  sign det B +1  Fukui -1  count 1  (multiplicity at E: [2])
+   X (pi/2)e_x                      speeds (np.float64(1.8856), np.float64(1.8856), np.float64(1.8856))  sign det B +1  Fukui -1  count 1  (multiplicity at E: [2])
+   X (pi/2)e_y                      speeds (np.float64(1.8856), np.float64(1.8856), np.float64(1.8856))  sign det B +1  Fukui -1  count 1  (multiplicity at E: [2])
+   X (pi/2)e_z                      speeds (np.float64(1.8856), np.float64(1.8856), np.float64(1.8856))  sign det B +1  Fukui -1  count 1  (multiplicity at E: [2])
+   net chirality per cell: sign det +0, Fukui +0.000
+[PASS] census at E = +0.0000: net chirality per Lambda-cell is zero (consistent with 3-winding 0)  
+E = +3.141593: k* level multiplicity [2]; 32 distinct E-touchings per Lambda-cell [134s]
+   (pi/4)Z^3 point, parities 001    speeds (np.float64(2.4943), np.float64(1.5813), np.float64(1.5813))  sign det B +1  Fukui -1  count 12  (multiplicity at E: [2])
+   (pi/4)Z^3 point, parities 011    speeds (np.float64(2.4943), np.float64(1.5813), np.float64(1.5813))  sign det B -1  Fukui +1  count 12  (multiplicity at E: [2])
+   (pi/4)Z^3 point, parities 111    speeds (np.float64(1.8856), np.float64(1.8856), np.float64(1.8856))  sign det B +1  Fukui -1  count 4  (multiplicity at E: [2])
+   O-fixed (k*-type)                speeds (np.float64(1.8856), np.float64(1.8856), np.float64(1.8856))  sign det B -1  Fukui +1  count 1  (multiplicity at E: [2])
+   X (pi/2)e_x                      speeds (np.float64(1.8856), np.float64(1.8856), np.float64(1.8856))  sign det B -1  Fukui +1  count 1  (multiplicity at E: [2])
+   X (pi/2)e_y                      speeds (np.float64(1.8856), np.float64(1.8856), np.float64(1.8856))  sign det B -1  Fukui +1  count 1  (multiplicity at E: [2])
+   X (pi/2)e_z                      speeds (np.float64(1.8856), np.float64(1.8856), np.float64(1.8856))  sign det B -1  Fukui +1  count 1  (multiplicity at E: [2])
+   net chirality per cell: sign det +0, Fukui +0.000
+[PASS] census at E = +3.1416: net chirality per Lambda-cell is zero (consistent with 3-winding 0)  
+
+TOTAL: PASS=2 FAIL=0

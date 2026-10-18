@@ -1,0 +1,13 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+[PASS] each of the 24 rotations has exactly one shift class s_R (generic symmetric word), all 8 classes occur  
+  lattice (a), T-fixed points (k/pi, reduced): [(np.float64(0.5), np.float64(1.5), np.float64(0.5)), (np.float64(1.5), np.float64(0.5), np.float64(1.5))]
+  lattice (a), O-fixed points (k/pi, reduced): [(np.float64(0.5), np.float64(1.5), np.float64(0.5)), (np.float64(1.5), np.float64(0.5), np.float64(1.5))]
+  lattice (b), T-fixed points (k/pi, reduced): [(np.float64(0.5), np.float64(1.5), np.float64(0.5))]
+  lattice (b), O-fixed points (k/pi, reduced): [(np.float64(0.5), np.float64(1.5), np.float64(0.5))]
+  lattice (c), T-fixed points (k/pi, reduced): [(np.float64(0.0), np.float64(0.0), np.float64(0.0)), (np.float64(0.25), np.float64(0.25), np.float64(0.25))]
+  lattice (c), O-fixed points (k/pi, reduced): [(np.float64(0.0), np.float64(0.0), np.float64(0.0)), (np.float64(0.25), np.float64(0.25), np.float64(0.25))]
+[PASS] (a) modulo 2pi Z^3 the O-fixed and the T-fixed points are exactly +-k* = +-(pi/2)(1,-1,1)  
+[PASS] (b) modulo 2pi Z^3 + pi(1,1,1)Z (words without R_L) the T-fixed set is the single class k* = -k*  
+[PASS] (c) modulo (pi/2) Z^3 the T-fixed set is {0 (= k*), (pi/4)(1,1,1)}, both O-fixed  
+
+TOTAL: PASS=4 FAIL=0   [2s]

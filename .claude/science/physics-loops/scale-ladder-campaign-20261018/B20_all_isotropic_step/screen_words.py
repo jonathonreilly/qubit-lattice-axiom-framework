@@ -3,8 +3,8 @@
 factors of H_on and Lambda.  For every 2-fold level E at k* with a linear Weyl splitting, test whether E is
 reached ONLY at isolated linear Weyl nodes that are isotropic with the k* speed.
 Stage A: levels and degenerate-perturbation velocity matrix at k*.
-Stage B: batched 14^3 grid of dist(spec W, E) plus special points; Nelder-Mead from the lowest grid points;
-         any zero whose nearest two eigenphases are not degenerate is a single-band crossing (a Fermi surface
+Stage B: determinant sign test on a 16^3 grid (a sign change proves a band crossing E); for the survivors, dist(spec W, E)
+         on the grid plus special points and Nelder-Mead from the lowest grid points; any zero whose nearest two eigenphases are not degenerate is a single-band crossing (a Fermi surface
          at E), which rejects the (word, E) pair.  Remaining zeros are classified with velocity matrices.
 Output: screen_<tag>.pkl and a log; prints PASS/FAIL and TOTAL (the checks are bookkeeping and sanity
 checks; the scientific output is the candidate table).
@@ -54,7 +54,7 @@ def mat(n):
     return PALL[n]
 def build(sk,names):
     it=iter(names); return [mat(next(it)) if L=='o' else L for L in sk]
-g=np.linspace(-np.pi,np.pi,14,endpoint=False)+0.0731
+g=np.linspace(-np.pi,np.pi,16,endpoint=False)+0.0731
 GRID=np.array(list(itertools.product(g,repeat=3)))
 SPEC=np.array([np.array(s)*np.pi/2 for s in itertools.product((1,-1),repeat=3)]+[np.zeros(3)]+[np.pi*e for e in EX]+[np.pi/2*e for e in EX]
                +[np.pi/4*e for e in EX]+[np.pi/4*np.array(v) for v in ((1,1,1),(1,-1,0),(1,1,0),(1,-1,1))]+[np.pi*np.array(v) for v in ((1,1,0),(1,1,1))])
@@ -72,26 +72,32 @@ def analyse(args):
         rec=dict(sk=sk,names=names,E=float(E),vstar=float(v['sv'].mean()),chistar=v['chi'],anisostar=float(v['aniso']))
         vm=vel_matrix(w,-kst,E) if any(abs(wrap(e-E))<1e-7 and mm==2 for e,mm in node_levels(w,-kst)) else None
         rec['minus']=None if vm is None else (float(vm['sv'].min()),float(vm['sv'].max()),vm['chi'])
-        d=dist_to_E(w,GRID,E); ds=dist_to_E(w,SPEC,E)
+        # determinant sign test: r(k) = det(W - e^{iE}) / (e^{6iE} sqrt(det W)) is real and continuous (det W is
+        # k-independent for these letters); a simple zero surface (a band crossing E) changes its sign, an isolated
+        # Weyl node (double zero) does not.  A sign change on the grid proves a Fermi surface at E.
+        Ws=Wbatch(w,GRID); c0=np.linalg.det(Ws[0]); r=(np.linalg.det(Ws-np.exp(1j*E)*np.eye(12))/(np.exp(6j*E)*np.sqrt(c0)))
+        rec['rimag']=float(np.abs(r.imag).max()/max(np.abs(r).max(),1e-300))
+        rr=r.real; fermi=bool(rr.max()>0 and rr.min()<0)
+        rec['fermi']=fermi
+        if fermi:
+            rec['special']=[]; rec['zeros']=[]; rec['gridmin_far']=0.0; out.append(rec); continue
+        d=np.min(np.abs(wrap(np.angle(np.linalg.eigvals(Ws))-E)),axis=-1); ds=dist_to_E(w,SPEC,E)
         far=np.array([min(pdist(k,kst),pdist(k,-kst))>0.3 for k in GRID])
         rec['gridmin_far']=float(d[far].min())
-        # special-point nodes
         sp=[]
         for k,dd in zip(SPEC,ds):
             if dd<1e-7 and min(pdist(k,kst),pdist(k,-kst))>1e-6:
-                mm=sum(1 for e,mu in node_levels(w,k) if abs(wrap(e-E))<1e-7)
-                vv=vel_matrix(w,k,E); sp.append((k/np.pi,float(vv['sv'].min()),float(vv['sv'].max()),vv['chi'],float(vv['spread'])))
+                vv=vel_matrix(w,k,E); sp.append((k/np.pi,float(vv['sv'].min()),float(vv['sv'].max()),vv['chi'],float(vv['spread']),float(vv['next'])))
         rec['special']=sp
-        # Nelder-Mead from the lowest far grid points
         f=lambda k: float(dist_to_E(w,np.asarray(k)[None],E)[0])
-        idx=np.argsort(np.where(far,d,9))[:4]; zeros=[]; fermi=False
+        idx=np.argsort(np.where(far,d,9))[:6]; zeros=[]
         for i in idx:
-            r=minimize(f,GRID[i],method='Nelder-Mead',options={'xatol':1e-10,'fatol':1e-13,'maxiter':800})
-            if r.fun<1e-6:
-                vv=vel_matrix(w,r.x,E)
-                if vv['spread']>1e-4: fermi=True; zeros.append((r.x/np.pi,'band',float(vv['spread']))); break
-                zeros.append((r.x/np.pi,float(vv['sv'].min()),float(vv['sv'].max()),vv['chi']))
-            else: zeros.append((r.x/np.pi,'min',float(r.fun)))
+            r_=minimize(f,GRID[i],method='Nelder-Mead',options={'xatol':1e-10,'fatol':1e-13,'maxiter':1500})
+            if r_.fun<1e-6:
+                vv=vel_matrix(w,r_.x,E)
+                if vv['spread']>1e-4: fermi=True; zeros.append((r_.x/np.pi,'band',float(vv['spread']))); break
+                zeros.append((r_.x/np.pi,float(vv['sv'].min()),float(vv['sv'].max()),vv['chi']))
+            else: zeros.append((r_.x/np.pi,'min',float(r_.fun)))
         rec['zeros']=zeros; rec['fermi']=fermi
         out.append(rec)
     return out
@@ -104,7 +110,7 @@ if __name__=='__main__':
     recs=[r for rr in res for r in rr]
     pickle.dump(recs,open(OUT+f"screen_{TAG.replace(':','_').replace(',','-')}.pkl",'wb'))
     nf=[r for r in recs if not r['fermi']]
-    print(f"{len(recs)} (word, E) pairs with a linear spin-1/2 Weyl doublet at k*; {len(nf)} without a single-band crossing found by Nelder-Mead  [{time.time()-t0:.0f}s]")
+    print(f"{len(recs)} (word, E) pairs with a linear spin-1/2 Weyl doublet at k*; {len(nf)} without a band crossing E (determinant sign test on 16^3, then Nelder-Mead)  [{time.time()-t0:.0f}s]")
     check("every k* Weyl doublet is isotropic (O-forced) to 1e-6",all(r['anisostar']<1e-6 for r in recs),f"max {max([r['anisostar'] for r in recs],default=0):.1e}")
     import collections
     print("k* speeds (per unit sqrt2/3):",dict(collections.Counter(round(r['vstar']/(np.sqrt(2)/3),4) for r in recs)))
@@ -130,5 +136,6 @@ if __name__=='__main__':
             if not isinstance(z[1],str): why.append('offsym-aniso' if z[2]-z[1]>1e-5 else ('offsym-iso-otherspeed' if abs(z[1]-vs)>1e-5 else 'offsym-iso'))
         pat[tuple(sorted(set(why)))]+=1
     print("obstruction pattern among non-Fermi pairs:",dict(pat))
+    check("the determinant test function r(k) is real on every grid (det W is k-independent)",all(r['rimag']<1e-8 for r in recs),f"max relative imag {max([r['rimag'] for r in recs],default=0):.1e}")
     check("bookkeeping: every record has a k* doublet with nonzero speed",all(r['vstar']>1e-3 for r in recs))
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}   [{time.time()-t0:.0f}s]")

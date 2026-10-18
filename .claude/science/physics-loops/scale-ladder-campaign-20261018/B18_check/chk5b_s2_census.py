@@ -3,7 +3,7 @@
 in ONE fundamental cell of its period lattice Lambda = <pi e_x, pi e_y, (pi/2)(1,1,1)> (1/16 of the BZ).
 Chirality = sign det B (first-order PT on the near-degenerate pair at the refined node) and an own Fukui flux."""
 import time, sys
-sys.argv = sys.argv[:1]
+ARGS = sys.argv[1:]; sys.argv = sys.argv[:1]
 exec(open('chk5_s2_b1.py').read().split("# ---------------- (A) S^2 family")[0])
 from scipy.optimize import minimize
 def fukui(Wd, k0, E, r=2e-3, n=16):
@@ -20,7 +20,9 @@ def fukui(Wd, k0, E, r=2e-3, n=16):
             a, b, c, d = U[i][j], U[i + 1][j], U[i + 1][(j + 1) % (2 * n)], U[i][(j + 1) % (2 * n)]
             tot += np.angle(np.vdot(a, b) * np.vdot(b, c) * np.vdot(c, d) * np.vdot(d, a))
     return tot / (2 * np.pi)
-WA = word(fS2, const(onsite("H20")), fS2, const(onsite("L202")))
+A_, B_ = (ARGS[0], ARGS[1]) if len(ARGS) >= 2 else ("H20", "L202")
+WA = word(fS2, const(onsite(A_)), fS2, const(onsite(B_)))
+print(f"word S2.{A_}.S2.{B_}")
 Abas = np.array([[np.pi, 0, 0], [0, np.pi, 0], [np.pi / 2, np.pi / 2, np.pi / 2]]).T   # columns a1, a2, a3
 Ainv = np.linalg.inv(Abas)
 def frac(k): return np.mod(Ainv @ k, 1.0)
@@ -36,7 +38,8 @@ def classify(k):
     if np.allclose(k, m * np.pi / 4, atol=1e-6): return "(pi/4)Z^3 point, parities " + "".join(str(abs(x) % 2) for x in sorted(np.abs(m) % 2))
     return "generic"
 n = 20; g = (np.arange(n) + 0.5) / n
-for E in (0.0, np.pi):
+EL = [float(x) for x in ARGS[2:]] or [0.0, np.pi]
+for E in EL:
     t0 = time.time()
     lv = [m for e, m, Q in levels_at(WA, kst) if abs(wrap(e - E)) < 1e-7]
     def gap(k): return np.min(np.abs(wrap(np.angle(np.linalg.eigvals(WA(k)[0])) - E)))

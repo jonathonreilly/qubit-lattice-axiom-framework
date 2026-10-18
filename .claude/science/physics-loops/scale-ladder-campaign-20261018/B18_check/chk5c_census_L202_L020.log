@@ -1,0 +1,21 @@
+word S2.L202.S2.L020
+E = +0.000000: k* level multiplicity [2]; 240 distinct E-touchings per Lambda-cell [244s]
+   (pi/4)Z^3 point, parities 001    speeds (np.float64(2.2627), np.float64(1.6971), np.float64(1.6971))  sign det B -1  Fukui +1  count 12  (multiplicity at E: [2])
+   O-fixed (k*-type)                speeds (np.float64(1.8856), np.float64(1.8856), np.float64(1.8856))  sign det B +1  Fukui -1  count 1  (multiplicity at E: [2])
+   X (pi/2)e_x                      speeds (np.float64(1.8856), np.float64(1.8856), np.float64(1.8856))  sign det B +1  Fukui -1  count 1  (multiplicity at E: [2])
+   X (pi/2)e_y                      speeds (np.float64(1.8856), np.float64(1.8856), np.float64(1.8856))  sign det B +1  Fukui -1  count 1  (multiplicity at E: [2])
+   X (pi/2)e_z                      speeds (np.float64(1.8856), np.float64(1.8856), np.float64(1.8856))  sign det B +1  Fukui -1  count 1  (multiplicity at E: [2])
+   generic                          speeds (np.float64(2.8284), np.float64(2.8284), np.float64(0.0))  sign det B -1  Fukui -2  count 2  (multiplicity at E: [2])
+   generic                          speeds (np.float64(2.8284), np.float64(2.8284), np.float64(0.0))  sign det B -1  Fukui -1  count 18  (multiplicity at E: [2])
+   generic                          speeds (np.float64(2.8284), np.float64(2.8284), np.float64(0.0))  sign det B -1  Fukui +0  count 78  (multiplicity at E: [2])
+   generic                          speeds (np.float64(2.8284), np.float64(2.8284), np.float64(0.0))  sign det B -1  Fukui +1  count 28  (multiplicity at E: [2])
+   generic                          speeds (np.float64(2.8284), np.float64(2.8284), np.float64(0.0))  sign det B -1  Fukui +2  count 3  (multiplicity at E: [2])
+   generic                          speeds (np.float64(2.8284), np.float64(2.8284), np.float64(0.0))  sign det B +1  Fukui -2  count 1  (multiplicity at E: [2])
+   generic                          speeds (np.float64(2.8284), np.float64(2.8284), np.float64(0.0))  sign det B +1  Fukui -1  count 11  (multiplicity at E: [2])
+   generic                          speeds (np.float64(2.8284), np.float64(2.8284), np.float64(0.0))  sign det B +1  Fukui +0  count 62  (multiplicity at E: [2])
+   generic                          speeds (np.float64(2.8284), np.float64(2.8284), np.float64(0.0))  sign det B +1  Fukui +1  count 20  (multiplicity at E: [2])
+   generic                          speeds (np.float64(2.8284), np.float64(2.8284), np.float64(0.0))  sign det B +1  Fukui +2  count 1  (multiplicity at E: [2])
+   net chirality per cell: sign det -42, Fukui +29.000
+[FAIL] census at E = +0.0000: net chirality per Lambda-cell is zero (consistent with 3-winding 0)  
+
+TOTAL: PASS=0 FAIL=1

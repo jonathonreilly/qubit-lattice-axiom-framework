@@ -38,6 +38,21 @@ f2=ctrl(2.0); sq=lambda k: (lambda a: (a[0]@a[0],[a[0]@g+g@a[0] for g in a[1]]))
 c22=W3(sq,24)
 check("control: the degree map U=(n0+i n.sigma)/|n|, n=(m-sum cos k, sin k) has W3 = +-1 at m=2 and 0 at m=4; its square has W3 = 2 W3 (tolerance 1e-4: the normalised map is smooth but not a trigonometric polynomial)",
       abs(abs(c2.real)-1)<1e-4 and abs(c4)<1e-4 and abs(c22-2*c2)<1e-4 and abs(c2.imag)<1e-9,f"W3(m=2)={c2.real:+.8f}, W3(m=4)={abs(c4):.1e}, W3(U^2)={c22.real:+.8f}")
+# (iii) discriminating control: the degree-1 map at m=2 is an anomalous unitary (W3 = +-1).  E = pi is reached only at
+# Gamma, E = 0 only at the seven other points of {0,pi}^3; both node sets must have net chirality equal to W3 (same value).
+def chi2(fun,k):
+    U,G=fun(k); h=[-1j*U.conj().T@g for g in G]; h=[(x+x.conj().T)/2 for x in h]
+    M=np.array([[np.trace(x@s_).real/2 for s_ in (sx,sy,sz)] for x in h]); return int(np.sign(np.linalg.det(M))),np.linalg.svd(M,compute_uv=False)
+f2=ctrl(2.0); corners=[np.array(c)*np.pi for c in itertools.product((0,1),repeat=3)]
+atpi=[];at0=[]
+for c in corners:
+    U,_=f2(c); e=np.angle(np.linalg.eigvals(U))
+    (atpi if np.allclose(np.abs(e),np.pi) else at0).append(chi2(f2,c)[0])
+gg=np.linspace(-np.pi,np.pi,24,endpoint=False)+0.05; GG=np.array(list(itertools.product(gg,repeat=3)))
+dmin={E_:min(np.min(np.abs(wrap(np.angle(np.linalg.eigvals(f2(k)[0]))-E_))) for k in GG) for E_ in (0.0,np.pi)}
+check("control (anomalous unitary, W3=+-1): E=pi only at Gamma (1 node), E=0 at the 7 other points of {0,pi}^3; both nets equal W3 (Sum chi = +W3 in the det-M convention used here; the net is the same at both quasi-energies)",
+      len(atpi)==1 and len(at0)==7 and sum(atpi)==sum(at0)==round(c2.real) and min(dmin.values())>1e-3,
+      f"chi at E=pi {atpi}, at E=0 {at0}, W3 {c2.real:+.4f}; 24^3 grid min distance to E away from the corners {min(dmin.values()):.3f}")
 step8=['S','R',UH,UL]; s2w=['S2',onH(2,0),'S2',onL(2,0,2)]
 rng=np.random.default_rng(3); X=rng.normal(size=(12,12))+1j*rng.normal(size=(12,12)); Ur=np.linalg.qr(X)[0]
 longw=['S',Ur,'R','Si',onL(1,2,3),'S2',Ur.conj().T,'R',onH(1,3)]

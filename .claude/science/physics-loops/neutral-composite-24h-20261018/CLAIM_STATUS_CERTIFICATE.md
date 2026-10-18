@@ -107,3 +107,6 @@ Charged hierarchy actual_current_surface_status: bounded-support; proposal_allow
 
 
 Odd rectangle actual_current_surface_status: bounded-support; proposal_allowed: false; bare_retained_allowed: false; review_loop_disposition: pass. Fixedfinite native asymptotics, original readout and periodicrectangle actualground; openrectangle maximalcenter only. Empirical and embedding bridges open. No formal audit verdict.
+
+
+Joining actual_current_surface_status: bounded-support; proposal_allowed: false; bare_retained_allowed: false; review_loop_disposition: pass. Exact finite-band selection conditional on supplied nativeH/regime, not all-response no-go.

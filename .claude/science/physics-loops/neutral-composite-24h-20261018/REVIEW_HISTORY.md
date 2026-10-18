@@ -93,3 +93,7 @@ PR9760 verifiedOPEN7045f4264973c8535700dcf678dae5add81bb44b; attachment cap100 p
 
 
 Odd rectangle final affected-source review PASS, native/REVIEW_ODD_RECTANGLE.md. Independent source check resolved lambda8 globalcenter comparison; open-path coefficients checked separately and canonical scope kept maximalcenter. Runner source-binding corrected to three literal proof paths, replay4.267194sPASS. No audit/landing.
+
+
+## 2026-10-18T10:32:13.070329+00:00 native joining checkpoint
+PR9762 verifiedOPEN dbe329e0c217459bc8dc67e3674dc1bb9d7b5537; attachment cap100 persists. Oddrectangle original-C activation and periodicglobalground classification independentlychecked and published. Restoring24nativeJz joiningbonds between two4x6x5 halves produces evenheight10 band with512characters multiplicityone, exact neutral intrabanddarkness. Restrictedinterface cost8g distinguishedfromarbitrary2g mismatch; fixedpositiveg only. NativepairamplitudeJperp10/[(2Jz)^8(2g)] exactsubsetchecked. Joining final scopedreviewPASS, sourceboundreplay.086300sPASS. Root bulkCOM route derives endpointcos(p/2) hopping andcandidateoutgoingpolefamily; independentgeometry/mathchecksPASS, canonicalpackagingnext. Allrootnumericaljobscomplete; matchinglockexpires11:30:32Z. Noempiricaltest, physicalbridgeorfullHpole. Fixeddeadlineunchanged.

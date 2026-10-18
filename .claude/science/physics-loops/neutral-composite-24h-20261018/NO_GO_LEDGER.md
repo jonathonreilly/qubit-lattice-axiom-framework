@@ -7,3 +7,6 @@ A finite aligned column with cut end bonds is not an intrinsic finite feature in
 
 ## Bulk segment block
 Unconfinedbulk sourcechannel has nooutsidehostbandstate fromrankonecondition; confinedpartialmodel lowlevelsareoutgoingresonances. Longitudinalpositiveandtransversenegativequadraticcoefficients preventisotropicscalarinterpretation.
+
+
+Native joining test: twoodd4x6x5 arrays joined by native longitudinalJz bonds have evenheight512character multiplicityone band, so original neutral C is intrabanddark. Excludes using this odd-half mode unchanged as embeddedlowband scalar. Otherbands/connectedfeatures remainopen; fixedgpositive limitnotuniformg0.

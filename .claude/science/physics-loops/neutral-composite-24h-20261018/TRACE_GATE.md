@@ -104,3 +104,6 @@ reachability_to_target: partially_closes
 artifact_role: theorem
 next_trace_action: restore native joining bonds and derive embedded bulk propagation
 Native odd-height plane multiplicity -> row/column hierarchy -> original C matrix element and actual periodic-rectangle ground selection. Open-array maximal-center control removes transverse wrap only. Physical scalar, embedding and universal coupling remain open.
+
+
+Joining block: trace_class: negative_route_pruning; source_of_blocker_text: user_goal; reachability_to_target: prunes; artifact_role: theorem. Restored native bonds remove the odd-half neutral low-band transition. No all-feature exclusion. Next: connected bulk mode propagation.

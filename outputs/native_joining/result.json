@@ -1,0 +1,22 @@
+{
+  "status": "bounded-support",
+  "pair_coefficients": [
+    {
+      "g": "1/3",
+      "t10": "3/512"
+    },
+    {
+      "g": "1",
+      "t10": "1/512"
+    },
+    {
+      "g": "2",
+      "t10": "1/1024"
+    }
+  ],
+  "pattern_count": 512,
+  "min_pattern_interface_cost_over_g": 8,
+  "characters": 512,
+  "neutral_multiplicity": 1,
+  "scope": "Exact path and representation controls, not240-spin diagonalization or observational test"
+}

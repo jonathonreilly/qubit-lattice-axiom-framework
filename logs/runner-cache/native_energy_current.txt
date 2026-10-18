@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/native_energy_current.py
+runner_sha256: 089e511a483bfbe0923298460ab24928709a78a5dbf57c8bb74b913ed338f724
+input_fingerprint_sha256: 94389ea4bc27b1c593f7a8e4eae57c7314c0ceea367e65905f14b3df74126e89
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+{"status": "bounded-support", "scope": "Native energy continuity and pole Ward relation; finite control is not an L10 pole or observation test", "control": {"sites": 8, "bonds": 12, "continuity": [{"q": [0.0, 0.0, 0.0], "operator_residual": 2.806464371691559e-16, "spectral_residual": 5.766863552976027e-15}, {"q": [0.31, 0.47, 0.83], "operator_residual": 3.140003073086225e-15, "spectral_residual": 5.427853360637675e-15}, {"q": [0.7, -0.2, 0.11], "operator_residual": 3.413906271511089e-15, "spectral_residual": 5.448544377477854e-15}], "hermitian_source_susceptibility": 0.0001983444753708904, "finite_field_ground_curvature": 0.00019835333375795017}}
+
+----- stderr -----
+

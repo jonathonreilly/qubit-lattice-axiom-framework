@@ -216,3 +216,8 @@ Status: bounded-support; trace: upstream_support; proposal_allowed: false.
 ## Secondary neutral molecule
 Secondary neutral molecule complete: exhaustiveQ8/per16classification includesinfiniteoddrod+singletonfamily; fullD8selectsaxisdistance3minimum. Native2hoptranslations tparallel=gamma²/v,tperp=4gamma²/v lambda12 and6hoporientationmixlambda20 derived, transverseisotropiclowerbranchq<<lambda4. Centeredphysicalsourceq0weight1-5lambda²/2+Olambda4; genericqerrorq4/lambda16explicit. Independentgeometry,energy,motion,transferandfinalPASS; sourceboundreplay.617992sPASS. ActualHfixedp>4energytailM>12+4p,sourceM>24+3p; p5M70works. Noobservational/commonmetric/fermionclaim. Mainrefreshunchanged584755767deb8dfb670f07211d8446873fd0999b.
 Status: conditional-support; trace: upstream_support; proposal_allowed: false.
+
+
+## Native energy current
+Nativeenergycurrent complete: exactlocal3-spin commutator current obeys[H,E_q]=-q.J_q. ExistingactualQ4poleenergyreadout fixeslongitudinalcurrentamplitudeJ²Delta gamma(L+2)lambda^(L+4)|q|/(8sqrt2L). Isolatedpole-only staticsusceptibilityproportional lambda16q4 atL10; otherchannelsuncontrolled, nogravitynogo/fullstresstensorclaim. IndependentandfinalPASS, native8qubitoperator/spectral/finitefieldcontrolsPASS; sourceboundreplay.344309sPASS. Standardcontinuitymethodpriorart cited. Nextroot testsallfixedheight commonmetric compatibility beforechoosingfurtherTOEroute.
+Status: bounded-support; trace: upstream_support; proposal_allowed: false.

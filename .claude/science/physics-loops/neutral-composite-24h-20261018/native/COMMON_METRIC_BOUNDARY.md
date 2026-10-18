@@ -104,3 +104,37 @@ Next constructive targets are an actual collective critical regime with a
 shared dispersion, a derivation of how only a suitable subset becomes physical
 matter, or a native mechanism equalizing kinetics. Adding independent speed
 coefficients to force equality would supply the missing connection.
+
+
+## Height choice and the newly derived secondary molecule
+
+For every fixed even L>=10 in the same strong-column construction, write
+Delta_L=L/16, gamma_L=binom(2L-2,L-1)/8^(L-1), and v_L=9L/32768.
+The charged-column and Q4 lower-pole leading rest energies are both
+JDelta_L lambda4, while their quadratic momentum coefficients are
+Jgamma_L lambdaL and 2Jgamma_L²/v_L lambda^(2L-8). Thus their squared-energy
+curvature ratio is
+
+ C_Q4/C_charged=(2gamma_L/v_L)lambda^(L-8)[1+o(1)].
+
+It vanishes at every fixed even L>=10. This is a fixed-height conclusion;
+no uniform growing-L continuation is presumed. Equalizing the powers would
+suggest L=8, but at that height the native endpoint attraction/hopping ratio
+is v_8/(2gamma_8)=96/143<1. The particular lower endpoint bound mode therefore
+does not exist by this mechanism there. Picking height eight does not repair
+this family by retaining its bound-mode formula outside its binding regime.
+This does not exclude another mode or phase at height eight.
+
+There is a further mismatch entirely within the now checked L10 neutral
+families. The secondary axis-three molecule has rest energy 2JDelta lambda4
+and curvature (5/2)Jgamma²/v lambda12, while the Q4 mode has rest energy
+JDelta lambda4 and curvature 2Jgamma²/v lambda12. Hence
+
+ C_secondary/C_Q4 -> 5/2.
+
+Even their equal lambda powers do not give a common relativistic slope.
+Common units or source normalization leave this ratio unchanged. These remain
+conditional model identification tests, not a claim that ordinary bound states
+in a medium must obey vacuum relativistic dispersion. The missing mechanism
+is a common physical kinetic structure, not another freely chosen scalar
+normalization.

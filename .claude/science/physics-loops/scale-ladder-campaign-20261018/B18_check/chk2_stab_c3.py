@@ -14,8 +14,9 @@ KS = [np.array(t) * 2 * np.pi / L for t in TV]; BK = [Bloch(k) for k in KS]
 def kid(k): return [i for i, q in enumerate(KS) if np.allclose(np.exp(1j * (q - k)), 1)][0]
 def mom_map(Mop):
     out = {}
+    BALL = np.hstack(BK); Y = BALL.conj().T @ (Mop @ BALL)
     for i in range(64):
-        w = [np.linalg.norm(BK[j].conj().T @ Mop @ BK[i]) for j in range(64)]; j = int(np.argmax(w))
+        w = [np.linalg.norm(Y[12*j:12*j+12, 12*i:12*i+12]) for j in range(64)]; j = int(np.argmax(w))
         assert abs(w[j] - np.sqrt(12)) < 1e-8; out[i] = j
     return out
 rmaps = [mom_map(M) for M in Rm]
@@ -48,7 +49,7 @@ def taste_v(w, alpha):
                     if v[b] == 0: v[b] = val; todo.append(b)
                     elif not np.isclose(v[b], val): return None
     return v
-xs = np.array([v[0] for v, c in VERTS]); cid = np.array([CI[c] for v, c in VERTS])
+xs = np.array([v for v, c in VERTS]); cid = np.array([CI[c] for v, c in VERTS])
 Hl = H0(0.0, 1.0)
 def Treal(v): return np.diag((-1.0) ** xs[:, 0] * v[cid])
 ok_t = []

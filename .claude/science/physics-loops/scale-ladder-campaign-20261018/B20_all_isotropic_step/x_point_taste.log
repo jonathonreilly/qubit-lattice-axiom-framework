@@ -1,0 +1,23 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+[PASS] (a) S^2(k) = diag(exp(2i k.f_c)) and equals the library S(k)^2  
+[PASS] (b) S^2(k+(pi/2)e_i) = S^2(k) Z_i (i=x,y,z) and S^2(k+(pi/4)(1,1,1)) = S^2(k) Y  
+[PASS] (d) L202 commutes with Z_x, Z_y, Z_z (block diagonal in the corner planes) and anticommutes with Y; H20 does neither  
+[PASS] (d') L202 = (i/sqrt2) x (signed in-plane square hopping): nonzero entries only between corners of one plane sharing one axis, modulus 1/sqrt2  |f_c - f_d| patterns [(np.int64(0), np.int64(0), np.int64(2)), (np.int64(0), np.int64(2), np.int64(0)), (np.int64(2), np.int64(0), np.int64(0))]
+[PASS] (c) Z_i W(k) Z_i = W(k + (pi/2) e_i) exactly (unitary taste, linear part 1) for W = S2.H20.S2.L202  
+[PASS] (c) Y W(k) Y = -W(k + (pi/4)(1,1,1)) exactly (taste combined with a quasi-energy shift by pi)  
+[PASS] control: for S2.L202.S2.H20 (B = H20) the operator Z_x does not intertwine W(k) and W(k+(pi/2)e_x)  
+[PASS] the node at (pi/2)e_x has the identical cone metric M M^T and chirality (M itself is fixed only up to the SU(2) basis choice in the doublet) as the O-fixed copy k = 0 (isotropic, speed 4 sqrt2/3 for two S^2)  sv [1.88561808 1.88561808 1.88561808] chi -1
+   node at k/pi = [-0.25  0.25 -0.25]: speeds [1.885618 1.885618 1.885618] chi(det M) +1 lattice flux -1.000 tilt 1.5e-15 split 1.1e-13
+   node at k/pi = [-0.  0.  0.]: speeds [1.885618 1.885618 1.885618] chi(det M) -1 lattice flux +1.000 tilt 1.2e-15 split 2.4e-14
+   node at k/pi = [ 0.25 -0.25 -0.  ]: speeds [2.49426  1.581297 1.581297] chi(det M) -1 lattice flux +1.000 tilt 1.6e-15 split 2.5e-14
+   node at k/pi = [ 0.   -0.25  0.  ]: speeds [2.49426  1.581297 1.581297] chi(det M) +1 lattice flux -1.000 tilt 8.5e-16 split 5.1e-14
+   node at k/pi = [-0.25 -0.   -0.25]: speeds [2.49426  1.581297 1.581297] chi(det M) -1 lattice flux +1.000 tilt 1.8e-15 split 1.8e-14
+   node at k/pi = [ 0.    0.   -0.25]: speeds [2.49426  1.581297 1.581297] chi(det M) +1 lattice flux -1.000 tilt 2.0e-15 split 5.3e-14
+   node at k/pi = [-0.25  0.    0.  ]: speeds [2.49426  1.581297 1.581297] chi(det M) +1 lattice flux -1.000 tilt 6.0e-16 split 5.1e-14
+   node at k/pi = [-0.   -0.25 -0.25]: speeds [2.49426  1.581297 1.581297] chi(det M) -1 lattice flux +1.000 tilt 1.5e-15 split 1.8e-14
+[PASS] census at E=-pi in the (pi/2)-cube: 8 linear Weyl nodes; 2 isotropic (k=0 and a (pi/4)(1,1,1)-type point) with opposite chiralities, 6 uniaxial at (pi/4)e_i-type points (3 of each chirality); net chirality 0  uniaxial speeds [np.float64(1.581297), np.float64(2.49426)]
+[PASS] lattice Berry flux agrees with -sign det M at every node (B18's 'flux +1 at every class' is not reproduced)  
+[PASS] Lipschitz certificate: no crossing of E in the (pi/2)-cube outside 0.03-balls around these 8 nodes  25088 evaluations, 0 uncertified cells
+[PASS] inside each ball, dist(spec, E) >= 0.3 v_min |q| on shells |q| = 0.03, 0.01, 0.003, 0.001 (isolated linear nodes; numerical, not certified)  
+
+TOTAL: PASS=12 FAIL=0   [21s]

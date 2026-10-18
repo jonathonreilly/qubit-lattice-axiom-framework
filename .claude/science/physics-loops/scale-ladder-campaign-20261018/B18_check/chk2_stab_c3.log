@@ -1,0 +1,9 @@
+[PASS] c1: |Stab(k*)| = 24, |Stab(k*+pi e_x)| = 8 (D4 about x) in the affine action of the 24 gauge-dressed rotations  24, 8; rotation axes in Stab(k*+pi e_x): [(np.int64(0), np.int64(0), np.int64(1)), (np.int64(0), np.int64(1), np.int64(0)), (np.int64(0), np.int64(1), np.int64(1)), (np.int64(1), np.int64(0), np.int64(0))]
+[PASS] only k* and -k* are fixed by all 24 lifted rotations  
+[PASS] H_link keeps each corner in its plane; the link-sign conditions are consistent for w = +1 and w = -1, giving the diagonal tastes T_x = (-1)^{x_1} diag(v_c) with one free amplitude per plane (verified in real space on the L=4 torus)  
+commutant of rho alone at k*: (6, [4, 2, 2, 4])
+alpha-independent (axis-C2) taus, per w: (w, alpha-independent?, (commutant dim, multiplicities)) [(1, True, (2, [6, 6])), (-1, True, (2, [6, 6]))]
+[PASS] c3 for ALL alpha: the axis-C2 conjugates alone (alpha-independent ratio taus) already cut the k* commutant to blocks with no 2-fold level, for w = +1 and w = -1  [(1, (2, [6, 6])), (-1, (2, [6, 6]))]
+[PASS] c3 with all 24 conjugates (16 alpha choices incl. non-unimodular): commutant at k* has no 2-fold level  [(2, (6, 6))]
+
+TOTAL: PASS=5 FAIL=0   [409s]

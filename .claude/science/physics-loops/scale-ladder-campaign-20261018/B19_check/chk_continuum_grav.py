@@ -23,7 +23,8 @@ def check(tag, ok, msg):
     RES["pass" if ok else "fail"] += 1
     print(("PASS" if ok else "FAIL") + f": {tag} {msg}", flush=True)
 
-R1, R2 = pickle.load(open("R12.pkl", "rb"))
+from grav_common import load_R12
+R1, R2 = load_R12()
 kN = sp.symbols("kN0:3"); kX = sp.symbols("kX0:3")
 kH = [-kN[j] - kX[j] for j in range(3)]
 AX = sp.symbols("X0:3")

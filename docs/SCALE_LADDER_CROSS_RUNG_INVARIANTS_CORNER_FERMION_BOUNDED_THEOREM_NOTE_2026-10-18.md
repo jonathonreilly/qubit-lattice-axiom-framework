@@ -264,10 +264,10 @@ The ladder does unify the lanes, but not by deriving everything from the finest 
 - **Spin 1 (B16, independently checked).**
   - A lattice Maxwell field closes on the same cone, independently of g.
   - Among translation-invariant timings this needs one of eight one-sided timings. Reflection-symmetric alternatives break unit translations and appear to fail elsewhere.
-  - **Normalisation.** The relabelling normalisation that sets the cone is partly derived (B19, unchecked).
+  - **Normalisation.** The relabelling normalisation that sets the cone is partly derived (B19, independently checked).
     - In the continuum at leading order, {G, G} and the single lapse rule force the scalar and Maxwell generators onto one structure constant. So those matter cones equal each other with no premise.
     - For spin ½ this is open. The Kosmann relabellings do not form a Lie algebra unless a triad or rotation constraint is added (companion lane note, Result 4).
-    - Their value relative to the gravity coefficients additionally needs gravity's own {G, C} at order h, with a quadratic relabelling term. That bracket gives every matter cone = the graviton's TT cone, K₂/(4α), which is K/(4α) because block 62 carries one K on both curvature terms.
+    - Their value relative to the gravity coefficients additionally needs gravity's own {G, C} at order h, with a quadratic relabelling term. That bracket gives every matter cone = the graviton's TT cone, K₂/(4α). This is K/(4α) because block 62 carries one K on both curvature terms, reading block 101's quadratic Hamiltonian as the unit-lapse value of one lapse-smeared constraint. Further premises: one total constraint and relabelling, a local first-order lapse rule, and a one-derivative quadratic relabelling term.
     - On the lattice the relabellings do not close: the scalar at O(a²), Maxwell at O(a). There the normalisation is selected only in the continuum limit.
   - The one-sided timing forces an O(a) lattice obstruction.
 - **Prior art.** In the continuum this is the known Teitelboim / Hojman–Kuchař–Teitelboim / Schwinger universality. What is new is its exact lattice realisation and the explicit obstructions.

@@ -1,0 +1,8 @@
+   M6 trial 0 (55s) lam1=2 lam_m=7 lam_A=2/9: scalar consistent=True S1=[-7, 0, 0, 0, -7, 0, 0, 0, -7] S2 unique?=[None, None, None, None, None, None, None, None, None]; Maxwell consistent=True S1=[-2/9, 0, 0, 0, -2/9, 0, 0, 0, -2/9] S2 unique?=[None, None, None, None, None, None, None, None, None]
+   M6 trial 1 (73s) lam1=2 lam_m=9/7 lam_A=1/2: scalar consistent=True S1=[-9/7, 0, 0, 0, -9/7, 0, 0, 0, -9/7] S2 unique?=[None, None, None, None, None, None, None, None, None]; Maxwell consistent=True S1=[-1/2, 0, 0, 0, -1/2, 0, 0, 0, -1/2] S2 unique?=[None, None, None, None, None, None, None, None, None]
+PASS: M6 general matter couplings (scalar 120, Maxwell 126 coefficients), general N', G_s[B N xi], general Gauss multipliers: S1 = -lam_s * delta forced for each species; S2 is NOT fixed by the matter bracket alone (trace freedom)
+   J trial 0 (159s) lam1=8/9 K1=1 K2=9/4 alpha=1/3: consistent=True, lam_m=2, lam_A=2 (expect lam1 K2/K1 = 2), S2 = 0: True; (v_m^2, v_A^2, K2/4alpha) = (27/16, 27/16, 27/16)
+   J trial 1 (203s) lam1=8/3 K1=1/9 K2=2 alpha=1/4: consistent=True, lam_m=48, lam_A=48 (expect lam1 K2/K1 = 48), S2 = 0: True; (v_m^2, v_A^2, K2/4alpha) = (2, 2, 2)
+   J trial 2 (217s) lam1=1/2 K1=8/5 K2=7/9 alpha=2/5: consistent=True, lam_m=35/144, lam_A=35/144 (expect lam1 K2/K1 = 35/144), S2 = 0: True; (v_m^2, v_A^2, K2/4alpha) = (35/72, 35/72, 35/72)
+PASS: J ONE constraint, ONE N', general matter couplings, isotropic G2: order-eps {G,C} forces lam_m = lam_A = lam1 K2/K1 and N' = -(lam1 K2/K1) xi.dN; then {C,C} gives v_m^2 = v_A^2 = K2/(4 alpha) = TT graviton speed^2, at three exact random points
+TOTAL: PASS=2 FAIL=0

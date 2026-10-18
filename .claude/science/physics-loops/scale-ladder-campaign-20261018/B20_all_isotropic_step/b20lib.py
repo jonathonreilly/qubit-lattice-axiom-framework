@@ -5,7 +5,7 @@ for _v in ("OMP_NUM_THREADS","OPENBLAS_NUM_THREADS","MKL_NUM_THREADS"): os.envir
 # translation-invariant gauge).  Adds: batched word evaluation, exact factor derivatives, degenerate
 # perturbation theory velocity matrices, refined node search, and a Lipschitz cleanliness certificate.
 import itertools, numpy as np
-B20=os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else '/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B20_all_isotropic_step'
+B20='/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B20_all_isotropic_step'
 B18=os.path.join(os.path.dirname(B20),'B18_taste_isotropic_doublers')
 _cwd=os.getcwd()
 exec(open(os.path.join(B18,'b18lib.py')).read())

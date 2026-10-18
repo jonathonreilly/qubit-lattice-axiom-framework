@@ -60,3 +60,13 @@ def ft(expr, mom):
     ex = ex.replace(lambda a: isinstance(a, sp.core.function.AppliedUndef) and a.func.__name__ in mom,
                     lambda a: mom[a.func.__name__][0])
     return sp.expand(ex)
+
+
+def load_R12(path="R12.pkl"):
+    """[sqrt g R]^(1), ^(2): cached pickle, rebuilt (~4 s) if absent."""
+    import os, pickle
+    if os.path.exists(path):
+        return pickle.load(open(path, "rb"))
+    R = sqrtgR()
+    pickle.dump(R, open(path, "wb"))
+    return R

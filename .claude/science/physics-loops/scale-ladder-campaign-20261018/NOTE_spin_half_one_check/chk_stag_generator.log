@@ -1,0 +1,2 @@
+L=8: |smooth(D T' A)| / |smooth(D T_fwd A)| = 1.0411; doubler-momentum part of D T' A relative to its smooth part = 1.4751; (fwd: 4.38e-16)
+L=12: |smooth(D T' A)| / |smooth(D T_fwd A)| = 0.9659; doubler-momentum part of D T' A relative to its smooth part = 1.9072; (fwd: 2.61e-15)

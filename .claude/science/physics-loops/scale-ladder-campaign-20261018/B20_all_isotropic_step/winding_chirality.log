@@ -1,0 +1,14 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+[PASS] control: the degree map U=(n0+i n.sigma)/|n|, n=(m-sum cos k, sin k) has W3 = +-1 at m=2 and 0 at m=4; its square has W3 = 2 W3 (tolerance 1e-4: the normalised map is smooth but not a trigonometric polynomial)  W3(m=2)=-0.99999946, W3(m=4)=9.4e-08, W3(U^2)=-1.99999099
+   W3[eight-node step S.R_L.U_H.U_L] on 20^3 grid = -2.10e-19 +2.9e-19i
+   W3[eight-node step S.R_L.U_H.U_L] on 24^3 grid = +9.14e-19 +6.9e-19i
+[PASS] W3 = 0 for the eight-node step S.R_L.U_H.U_L (numerical, two grid sizes; the integrand is a trigonometric polynomial, so the grid sum is exact once N exceeds its degree)  
+   W3[S2.H20.S2.L202] on 20^3 grid = +1.04e-15 +4.5e-17i
+   W3[S2.H20.S2.L202] on 24^3 grid = -2.72e-16 -3.4e-16i
+[PASS] W3 = 0 for the S2.H20.S2.L202 (numerical, two grid sizes; the integrand is a trigonometric polynomial, so the grid sum is exact once N exceeds its degree)  
+   W3[long word with a generic on-site unitary] on 20^3 grid = -1.25e-15 -4.5e-17i
+   W3[long word with a generic on-site unitary] on 24^3 grid = +9.92e-16 -5.7e-17i
+[PASS] W3 = 0 for the long word with a generic on-site unitary (numerical, two grid sizes; the integrand is a trigonometric polynomial, so the grid sum is exact once N exceeds its degree)  
+[PASS] eight-node step: E = pi/2 reached only in 0.03-balls around the 8 cube points (Lipschitz certificate); chiralities sum to 0  chiralities [-1, 1, 1, -1, 1, -1, -1, 1]; 869968 evaluations
+
+TOTAL: PASS=5 FAIL=0   [212s]

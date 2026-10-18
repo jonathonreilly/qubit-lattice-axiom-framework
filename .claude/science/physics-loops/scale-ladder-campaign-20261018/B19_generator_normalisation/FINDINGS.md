@@ -1,6 +1,6 @@
 # B19 findings: is the relabelling-generator normalisation, and hence the common cone, derived?
 
-Provenance: a worker of the same model family as the B14/B16 authors and checkers. Not independently checked. All code is new; nothing is imported from B14 or B16, whose generator definitions were re-implemented.
+Provenance: a worker of the same model family as the B14/B16 authors and checkers. Checked by a fresh-context same-family agent (`../B19_check/REPORT.md`): all claims are confirmed. Corrections: s2 = 0 is a lapse/density-weight convention (only s1 enters the cone); K1 = K2 needs block 101's quadratic Hamiltonian to be read as C(N = 1) of a lapse-smeared constraint; and further premises are listed in the report. All code is new; nothing is imported from B14 or B16, whose generator definitions were re-implemented.
 
 Runners, all printing PASS/FAIL and a TOTAL:
 - `b19_continuum.py`: exact sympy jet calculus in 3D. PASS=19 FAIL=0.

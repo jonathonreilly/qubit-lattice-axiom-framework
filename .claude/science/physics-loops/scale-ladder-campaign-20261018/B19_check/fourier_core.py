@@ -65,6 +65,10 @@ def fourier_kernel(expr, slots):
                 g = sp.Function(f"{c.func.__name__}__{r}")(*X)
                 newsum += t[idx] * g
             sub[c] = newsum
+    allslot = {c for s_ in slots for c in s_.comps}
+    for a in expr.atoms(sp.core.function.AppliedUndef):
+        if a not in allslot:
+            sub[a] = 0          # fields outside the slot pattern: select the exact degree pattern
     e = expr.subs(sub).doit()
     e = sp.expand(e)
     mono = sp.Mul(*t)

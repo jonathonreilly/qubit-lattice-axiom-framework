@@ -1,0 +1,20 @@
+[PASS] own X0 dim ker div = 2L^3+1  (192, 129)
+[PASS] own: only plaquette-diagonal lapse pairs can appear (L=4)  12 non-bond pairs from origin carry monomials
+[PASS] own X5 exact: 8 one-sided classes, matching corners  24 independent conditions; 8 solutions
+[PASS] own X5 mod Gauss: same 8 classes  24 independent conditions; 8 solutions
+[PASS] own X6 local rule: rule-obeying random position-dependent timings are bond-supported; single violations fail mod Gauss  12 obeying samples (mean 0.2 two-sided links), 12/12 violations fail mod Gauss
+[PASS] own X9/X10 forward timing: bracket = G_A[-c xi~] bond by bond with the stated G_A (L=4)  
+[PASS] own X8 staggered timing bond-supported exactly (L=4)  non-bond pairs: 0
+8 {'|D T_stag A|/|D T_fwd A|': np.float64(1.8553024851600113), '|stag - fwd|/|fwd|': np.float64(1.6537957946053574)}
+12 {'|D T_stag A|/|D T_fwd A|': np.float64(2.0800789051376483), '|stag - fwd|/|fwd|': np.float64(1.8602964408432865)}
+16 {'|D T_stag A|/|D T_fwd A|': np.float64(2.1688534424617005), '|stag - fwd|/|fwd|': np.float64(1.9442339680107132)}
+[PASS] own 09-24 T1 reproduced: {C_g(N),C_g(M)} = G_g[(sK/4alpha) xi~] (L=3, both s)  
+[PASS] own Y7 per-axis scalar bracket = G_m[-c_j xi~] exactly  
+[PASS] own Y7 gravity + per-axis scalar closes iff c_j = kappa for all j  {('1', '1', '1'): True, ('1', '1', '2'): False, ('2', '1', '1'): False, ('1', '2', '1'): False, ('1/2', '1/2', '1/2'): False, ('1', '1', '1/3'): False}
+[PASS] own X12b gravity + scalar + Maxwell closes iff c = cB = kappa (3x3 grid)  {('1', '1'): True, ('1', '2'): False, ('1', '1/2'): False, ('2', '1'): False, ('2', '2'): False, ('2', '1/2'): False, ('1/2', '1'): False, ('1/2', '2'): False, ('1/2', '1/2'): False}
+[PASS] own X9 (numeric lapses, own engine): {H_EM(N),H_EM(M)} = G_A[-cB xi~]  
+TOTAL 12/12
+
+real	2m57.100s
+user	1m54.598s
+sys	0m39.938s

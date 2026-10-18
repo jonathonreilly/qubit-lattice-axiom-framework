@@ -1,0 +1,10 @@
+PASS: E1_N5 exact closure of the area-preserving lattice relabellings on Z_5^2: max |[X_p,X_r] - kappa c(p,r) X_(p+r)| = 1.8e-15
+PASS: E5_SLAC_N5 adjoining the uniform translation D_1 (SLAC) breaks closure: max rel. residual of [D_1,X_p] off span X_p = 1.000e+00
+PASS: E5_naive_N5 adjoining the uniform translation D_1 (naive) breaks closure: max rel. residual of [D_1,X_p] off span X_p = 1.000e+00
+PASS: E4_N5 site-localised f: the relabelling kernel reaches torus distance 2 = N//2 from the f-site (non-local)
+PASS: E1_N7 exact closure of the area-preserving lattice relabellings on Z_7^2: max |[X_p,X_r] - kappa c(p,r) X_(p+r)| = 1.2e-14
+PASS: E5_SLAC_N7 adjoining the uniform translation D_1 (SLAC) breaks closure: max rel. residual of [D_1,X_p] off span X_p = 1.000e+00
+PASS: E5_naive_N7 adjoining the uniform translation D_1 (naive) breaks closure: max rel. residual of [D_1,X_p] off span X_p = 1.000e+00
+PASS: E4_N7 site-localised f: the relabelling kernel reaches torus distance 3 = N//2 from the f-site (non-local)
+PASS: E2 kappa c(p,q) -> p2 q1 - p1 q2 = 5: rel. errors 7.57e-01, 4.34e-01, 2.28e-01, 1.16e-01, 5.85e-02, slope -0.96 (O(a) deviation of the exact structure constants)
+TOTAL: PASS=9 FAIL=0

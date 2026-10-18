@@ -1,0 +1,18 @@
+PASS: PC1 L=3, Lam=(1,-1): sl2 is a consistent graded Lie algebra (control; 1 vars, 0.0s)
+PASS: PC2 L=5, Lam_(+-2) = -+1/2: affine sl2 (sl2 |x C^2) consistent -> Theorem B's half-odd weights are attained (sharpness control; 6 vars, 0.0s)
+PASS: PC3 L=4, Lam_2 = 0 (violates (Z)): sl2 (+) C X_2 consistent (control; 2 vars, 0.0s)
+PASS: B_L4 L=4: (S)+(W)+(Z) with all other Lam_n FREE -> Groebner basis = [1] (no such Lie algebra over C; 4 vars, 0.0s)
+PASS: B_L5 L=5: (S)+(W)+(Z) with all other Lam_n FREE -> Groebner basis = [1] (no such Lie algebra over C; 8 vars, 0.0s)
+PASS: B_L6 L=6: (S)+(W)+(Z) with all other Lam_n FREE -> Groebner basis = [1] (no such Lie algebra over C; 13 vars, 0.1s)
+PASS: B_L7 L=7: (S)+(W)+(Z) with all other Lam_n FREE -> Groebner basis = [1] (no such Lie algebra over C; 19 vars, 0.6s)
+PASS: B_L8 L=8: (S)+(W)+(Z) with all other Lam_n FREE -> Groebner basis = [1] (no such Lie algebra over C; 26 vars, 3.2s)
+PASS: B_L9 L=9: (S)+(W)+(Z) with all other Lam_n FREE -> Groebner basis = [1] (no such Lie algebra over C; 34 vars, 17.0s)
+PASS: BnoZ_L5 L=5: (S)+(W) WITHOUT (Z) also inconsistent (7 vars, 0.0s)
+PASS: BnoZ_L6 L=6: (S)+(W) WITHOUT (Z) also inconsistent (12 vars, 0.0s)
+PASS: BnoZ_L7 L=7: (S)+(W) WITHOUT (Z) also inconsistent (18 vars, 0.5s)
+PASS: BnoZ_L8 L=8: (S)+(W) WITHOUT (Z) also inconsistent (25 vars, 2.7s)
+PASS: SLAC_L5 L=5: Lam_n = nbar (the SLAC/continuum spectrum on the whole zone) -> inconsistent (5 vars, 0.0s)
+PASS: SLAC_L7 L=7: Lam_n = nbar (the SLAC/continuum spectrum on the whole zone) -> inconsistent (14 vars, 0.0s)
+PASS: SLAC_L9 L=9: Lam_n = nbar (the SLAC/continuum spectrum on the whole zone) -> inconsistent (27 vars, 0.2s)
+PASS: Q_L5 L=5, (S)+(Z), Lam_2 free: elimination ideal in lam2 = lam2 + 1/2 -> 2*Lam_2/Lam_1 in {+-1} (odd), as Theorem B predicts
+TOTAL: PASS=17 FAIL=0

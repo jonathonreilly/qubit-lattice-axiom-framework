@@ -1,0 +1,59 @@
+orbits: [['-k*'], ['k*'], ['-k*+pi ex', '-k*+pi ey', '-k*+pi ez'], ['k*+pi ex', 'k*+pi ey', 'k*+pi ez']]
+[PASS] A1 four rotation orbits {k*}, {-k*}, A, B with constant chirality on each; chi(k* + pi n) = (-1)^|n| chi(k*)  {'k*': 1, '-k*': -1, 'k*+pi ex': -1, '-k*+pi ex': 1, 'k*+pi ey': -1, '-k*+pi ey': 1, 'k*+pi ez': -1, '-k*+pi ez': 1}
+[PASS] A2 (convention check) unit translations act on each node doublet by e^{iK.e} (chk momentum convention); removing the common U(1) phase e^{ik*.e} leaves the taste sign (-1)^{n.e}: T_e e^{-ik*.e N} acts in the IR as Z2^3  
+subset            # sum chi      b/pi mod 2  U(1)^2-Z2^(x,y,z) mod 2
+empty             0       0  [0.0, 0.0, 0.0]  (0, 0, 0)
+{-k*}             1      -1  [0.5, 1.5, 0.5]  (1, 1, 1)
+{k*}              1       1  [0.5, 1.5, 0.5]  (0, 0, 0)
+B                 3       3  [1.5, 0.5, 1.5]  (0, 0, 0)
+A                 3      -3  [1.5, 0.5, 1.5]  (1, 1, 1)
+{-k*}+{k*}        2       0  [1.0, 1.0, 1.0]  (1, 1, 1)
+B+{-k*}           4       2  [0.0, 0.0, 0.0]  (1, 1, 1)
+A+{-k*}           4      -4  [0.0, 0.0, 0.0]  (0, 0, 0)
+B+{k*}            4       4  [0.0, 0.0, 0.0]  (0, 0, 0)
+A+{k*}            4      -2  [0.0, 0.0, 0.0]  (1, 1, 1)
+A+B               6       0  [1.0, 1.0, 1.0]  (1, 1, 1)
+B+{-k*}+{k*}      5       3  [0.5, 1.5, 0.5]  (1, 1, 1)
+A+{-k*}+{k*}      5      -3  [0.5, 1.5, 0.5]  (0, 0, 0)
+A+B+{-k*}         7      -1  [1.5, 0.5, 1.5]  (0, 0, 0)
+A+B+{k*}          7       1  [1.5, 0.5, 1.5]  (1, 1, 1)
+A+B+{-k*}+{k*}    8       0  [0.0, 0.0, 0.0]  (0, 0, 0)
+[PASS] A3 among rotation-invariant node subsets only 'empty' and 'all eight' have zero net chirality, zero Weyl dipole mod 2pi and zero U(1)^2-Z2 counts; the six doublers (A+B) and the pair {+-k*} each carry b = pi(1,1,1) mod 2pi (Z2 counts (1,1,1))  anomaly-free symmetric subsets: ['empty', 'A+B+{-k*}+{k*}']
+[PASS] A3b for a zero-net-chirality set b mod 2pi Z^3 is independent of the momentum representatives (shift test)  
+[PASS] A4a Q = 0 pairing: BdG Weyl charge chi_K - chi_{-K} = +-2 at every node (K and -K have opposite chirality), so no small Q = 0 pairing gaps any node, doubler or not  {'k*': 2, '-k*': -2, 'k*+pi ex': -2, '-k*+pi ex': 2, 'k*+pi ey': -2, '-k*+pi ey': 2, 'k*+pi ez': -2, '-k*+pi ez': 2}
+   Q/pi = [0, 0, 0]  rotation-invariant: True   all pairs opposite (protected)
+   Q/pi = [0, 0, 1]  rotation-invariant: False   all pairs equal-chirality (gappable)
+   Q/pi = [0, 1, 0]  rotation-invariant: False   all pairs equal-chirality (gappable)
+   Q/pi = [0, 1, 1]  rotation-invariant: False   all pairs opposite (protected)
+   Q/pi = [1, 0, 0]  rotation-invariant: False   all pairs equal-chirality (gappable)
+   Q/pi = [1, 0, 1]  rotation-invariant: False   all pairs opposite (protected)
+   Q/pi = [1, 1, 0]  rotation-invariant: False   all pairs opposite (protected)
+   Q/pi = [1, 1, 1]  rotation-invariant: True   all pairs equal-chirality (gappable)
+[PASS] A4b Q = pi p maps every node to a node; pairs are equal-chirality (gappable) iff |p| odd; rotation-invariant Q: only 0 (protected) and R = pi(1,1,1) (intra-node, gappable)  
+   L= 1 theta=k*  sign=+1: nodes in the twisted momentum set: ['k*']
+   L= 1 theta=k*  sign=-1: nodes in the twisted momentum set: ['-k*']
+   L= 1 theta=-k* sign=+1: nodes in the twisted momentum set: ['-k*']
+   L= 1 theta=-k* sign=-1: nodes in the twisted momentum set: ['k*']
+   L= 3 theta=k*  sign=+1: nodes in the twisted momentum set: ['-k*']
+   L= 3 theta=k*  sign=-1: nodes in the twisted momentum set: ['k*']
+   L= 3 theta=-k* sign=+1: nodes in the twisted momentum set: ['k*']
+   L= 3 theta=-k* sign=-1: nodes in the twisted momentum set: ['-k*']
+   L= 5 theta=k*  sign=+1: nodes in the twisted momentum set: ['k*']
+   L= 5 theta=k*  sign=-1: nodes in the twisted momentum set: ['-k*']
+   L= 5 theta=-k* sign=+1: nodes in the twisted momentum set: ['-k*']
+   L= 5 theta=-k* sign=-1: nodes in the twisted momentum set: ['k*']
+   L= 7 theta=k*  sign=+1: nodes in the twisted momentum set: ['-k*']
+   L= 7 theta=k*  sign=-1: nodes in the twisted momentum set: ['k*']
+   L= 7 theta=-k* sign=+1: nodes in the twisted momentum set: ['k*']
+   L= 7 theta=-k* sign=-1: nodes in the twisted momentum set: ['-k*']
+   L= 9 theta=k*  sign=+1: nodes in the twisted momentum set: ['k*']
+   L= 9 theta=k*  sign=-1: nodes in the twisted momentum set: ['-k*']
+   L= 9 theta=-k* sign=+1: nodes in the twisted momentum set: ['-k*']
+   L= 9 theta=-k* sign=-1: nodes in the twisted momentum set: ['k*']
+   L=11 theta=k*  sign=+1: nodes in the twisted momentum set: ['-k*']
+   L=11 theta=k*  sign=-1: nodes in the twisted momentum set: ['k*']
+   L=11 theta=-k* sign=+1: nodes in the twisted momentum set: ['k*']
+   L=11 theta=-k* sign=-1: nodes in the twisted momentum set: ['-k*']
+[PASS] A5 on every odd twisted torus of B7 (theta = +-k*) the allowed momenta contain exactly one of +-k* and none of the six doublers: B7's exact odd-N degeneracy and its conditional LSM are carried by the +-k* doublets, not by the doublers  
+
+TOTAL: PASS=7 FAIL=0

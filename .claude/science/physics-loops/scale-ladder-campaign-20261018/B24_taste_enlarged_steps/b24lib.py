@@ -127,7 +127,7 @@ def stageC(rec):
     G = grid(16 if maxpow(w) <= 2 else 24)
     d = dist_E(w, G, E); ds = dist_E(w, SPEC8, E)
     nodes = [k for k, x in zip(SPEC8, ds) if x < 1e-7]
-    for i in np.argsort(d)[:40]:
+    for i in np.argsort(d)[:int(os.environ.get('B24_NM', '40'))]:
         r_ = minimize(f, G[i], method='Nelder-Mead', options={'xatol': 1e-11, 'fatol': 1e-13, 'maxiter': 3000})
         if r_.fun < 1e-7: nodes.append(r_.x)
     uniq = []

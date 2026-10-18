@@ -1,0 +1,61 @@
+PASS: U_central_ultralocal_L7 uniform part {P,H(N)} = H(N'), D=central (local), ultralocal density: FAILS, rel. residual 8.821e-01
+PASS: U_central_antialiased_L7 uniform part {P,H(N)} = H(N'), D=central (local), antialiased density: FAILS, rel. residual 4.713e-01
+PASS: U_imp4_ultralocal_L7 uniform part {P,H(N)} = H(N'), D=imp4 (local), ultralocal density: FAILS, rel. residual 8.516e-01
+PASS: U_imp4_antialiased_L7 uniform part {P,H(N)} = H(N'), D=imp4 (local), antialiased density: FAILS, rel. residual 4.384e-01
+PASS: U_randlocal_ultralocal_L7 uniform part {P,H(N)} = H(N'), D=randlocal (local), ultralocal density: FAILS, rel. residual 9.914e-01
+PASS: U_randlocal_antialiased_L7 uniform part {P,H(N)} = H(N'), D=randlocal (local), antialiased density: FAILS, rel. residual 4.590e-01
+PASS: U_SLAC_ultralocal_L7 D=SLAC (non-local) with ULTRALOCAL density: FAILS, rel. residual 8.774e-01 (Theorem C: full-support kernel)
+PASS: U_SLAC_antialiased_L7 D=SLAC with ANTI-ALIASED density: CLOSES, rel. residual 7.9e-15, N' = +D_SLAC N to 1.2e-15
+PASS: N0_L7 SLAC transport at uniform xi reproduces the SLAC derivative
+PASS: N1_L7 non-uniform xi, no coupling: residual after best N' = 4.110e-01 (coupling needed, as in the continuum)
+   [antialiased] L=7 R=0: 420 eqs, 133 unknowns, rel. residual 1.809e-01
+   [antialiased] L=7 R=1: 630 eqs, 357 unknowns, rel. residual 1.111e-01
+   [antialiased] L=7 R=2: 840 eqs, 581 unknowns, rel. residual 3.237e-02
+   [antialiased] L=7 R=3: 1050 eqs, 805 unknowns, rel. residual 9.430e-15
+PASS: N2_L7 N-LOCAL coupling (R=0, B14 placement) with arbitrary non-local T_0: NOT absorbed, rel. residual 1.809e-01
+PASS: N3_L7 fully general coupling (lapse-strain separation up to R=L//2=3): ABSORBED, rel. residual 9.4e-15 (factorisation lemma)
+PASS: N4_L7 smallest lapse-strain separation that absorbs exactly: R = 3 (of m = 3); residuals 1.8e-01, 1.1e-01, 3.2e-02, 9.4e-15 (informational)
+   [ultralocal] L=7 R=3: 1050 eqs, 805 unknowns, rel. residual 3.705e-02
+PASS: N5_L7 negative control: B14 local G_m + ultralocal H_m, fully general coupling R=3: NOT absorbed, rel. residual 3.705e-02 (the uniform-xi part carries no strain, so no coupling can cancel it)
+PASS: U_central_ultralocal_L9 uniform part {P,H(N)} = H(N'), D=central (local), ultralocal density: FAILS, rel. residual 9.123e-01
+PASS: U_central_antialiased_L9 uniform part {P,H(N)} = H(N'), D=central (local), antialiased density: FAILS, rel. residual 6.205e-01
+PASS: U_imp4_ultralocal_L9 uniform part {P,H(N)} = H(N'), D=imp4 (local), ultralocal density: FAILS, rel. residual 8.854e-01
+PASS: U_imp4_antialiased_L9 uniform part {P,H(N)} = H(N'), D=imp4 (local), antialiased density: FAILS, rel. residual 6.666e-01
+PASS: U_randlocal_ultralocal_L9 uniform part {P,H(N)} = H(N'), D=randlocal (local), ultralocal density: FAILS, rel. residual 9.061e-01
+PASS: U_randlocal_antialiased_L9 uniform part {P,H(N)} = H(N'), D=randlocal (local), antialiased density: FAILS, rel. residual 7.774e-01
+PASS: U_SLAC_ultralocal_L9 D=SLAC (non-local) with ULTRALOCAL density: FAILS, rel. residual 8.830e-01 (Theorem C: full-support kernel)
+PASS: U_SLAC_antialiased_L9 D=SLAC with ANTI-ALIASED density: CLOSES, rel. residual 1.0e-14, N' = +D_SLAC N to 1.8e-15
+PASS: N0_L9 SLAC transport at uniform xi reproduces the SLAC derivative
+PASS: N1_L9 non-uniform xi, no coupling: residual after best N' = 2.246e-01 (coupling needed, as in the continuum)
+   [antialiased] L=9 R=0: 684 eqs, 207 unknowns, rel. residual 1.897e-01
+   [antialiased] L=9 R=1: 1026 eqs, 567 unknowns, rel. residual 1.085e-01
+   [antialiased] L=9 R=2: 1368 eqs, 927 unknowns, rel. residual 6.199e-02
+   [antialiased] L=9 R=3: 1710 eqs, 1287 unknowns, rel. residual 2.610e-02
+   [antialiased] L=9 R=4: 2052 eqs, 1647 unknowns, rel. residual 6.288e-15
+PASS: N2_L9 N-LOCAL coupling (R=0, B14 placement) with arbitrary non-local T_0: NOT absorbed, rel. residual 1.897e-01
+PASS: N3_L9 fully general coupling (lapse-strain separation up to R=L//2=4): ABSORBED, rel. residual 6.3e-15 (factorisation lemma)
+PASS: N4_L9 smallest lapse-strain separation that absorbs exactly: R = 4 (of m = 4); residuals 1.9e-01, 1.1e-01, 6.2e-02, 2.6e-02, 6.3e-15 (informational)
+   [ultralocal] L=9 R=4: 2052 eqs, 1647 unknowns, rel. residual 3.094e-02
+PASS: N5_L9 negative control: B14 local G_m + ultralocal H_m, fully general coupling R=4: NOT absorbed, rel. residual 3.094e-02 (the uniform-xi part carries no strain, so no coupling can cancel it)
+PASS: U_central_ultralocal_L11 uniform part {P,H(N)} = H(N'), D=central (local), ultralocal density: FAILS, rel. residual 8.280e-01
+PASS: U_central_antialiased_L11 uniform part {P,H(N)} = H(N'), D=central (local), antialiased density: FAILS, rel. residual 6.767e-01
+PASS: U_imp4_ultralocal_L11 uniform part {P,H(N)} = H(N'), D=imp4 (local), ultralocal density: FAILS, rel. residual 8.458e-01
+PASS: U_imp4_antialiased_L11 uniform part {P,H(N)} = H(N'), D=imp4 (local), antialiased density: FAILS, rel. residual 4.544e-01
+PASS: U_randlocal_ultralocal_L11 uniform part {P,H(N)} = H(N'), D=randlocal (local), ultralocal density: FAILS, rel. residual 9.825e-01
+PASS: U_randlocal_antialiased_L11 uniform part {P,H(N)} = H(N'), D=randlocal (local), antialiased density: FAILS, rel. residual 2.742e-01
+PASS: U_SLAC_ultralocal_L11 D=SLAC (non-local) with ULTRALOCAL density: FAILS, rel. residual 9.010e-01 (Theorem C: full-support kernel)
+PASS: U_SLAC_antialiased_L11 D=SLAC with ANTI-ALIASED density: CLOSES, rel. residual 1.8e-14, N' = +D_SLAC N to 8.0e-15
+PASS: N0_L11 SLAC transport at uniform xi reproduces the SLAC derivative
+PASS: N1_L11 non-uniform xi, no coupling: residual after best N' = 3.212e-01 (coupling needed, as in the continuum)
+   [antialiased] L=11 R=0: 1012 eqs, 297 unknowns, rel. residual 1.725e-01
+   [antialiased] L=11 R=1: 1518 eqs, 825 unknowns, rel. residual 1.316e-01
+   [antialiased] L=11 R=2: 2024 eqs, 1353 unknowns, rel. residual 6.561e-02
+   [antialiased] L=11 R=3: 2530 eqs, 1881 unknowns, rel. residual 4.492e-02
+   [antialiased] L=11 R=4: 3036 eqs, 2409 unknowns, rel. residual 1.740e-02
+   [antialiased] L=11 R=5: 3542 eqs, 2937 unknowns, rel. residual 8.093e-15
+PASS: N2_L11 N-LOCAL coupling (R=0, B14 placement) with arbitrary non-local T_0: NOT absorbed, rel. residual 1.725e-01
+PASS: N3_L11 fully general coupling (lapse-strain separation up to R=L//2=5): ABSORBED, rel. residual 8.1e-15 (factorisation lemma)
+PASS: N4_L11 smallest lapse-strain separation that absorbs exactly: R = 5 (of m = 5); residuals 1.7e-01, 1.3e-01, 6.6e-02, 4.5e-02, 1.7e-02, 8.1e-15 (informational)
+   [ultralocal] L=11 R=5: 3542 eqs, 2937 unknowns, rel. residual 2.099e-02
+PASS: N5_L11 negative control: B14 local G_m + ultralocal H_m, fully general coupling R=5: NOT absorbed, rel. residual 2.099e-02 (the uniform-xi part carries no strain, so no coupling can cancel it)
+TOTAL: PASS=42 FAIL=0

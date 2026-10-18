@@ -1,0 +1,25 @@
+PASS: U_central_ultralocal_L7 uniform part {P,H(N)} = H(N'), D=central (local), ultralocal density: FAILS, rel. residual 8.821e-01
+PASS: U_central_antialiased_L7 uniform part {P,H(N)} = H(N'), D=central (local), antialiased density: FAILS, rel. residual 4.713e-01
+PASS: U_imp4_ultralocal_L7 uniform part {P,H(N)} = H(N'), D=imp4 (local), ultralocal density: FAILS, rel. residual 8.516e-01
+PASS: U_imp4_antialiased_L7 uniform part {P,H(N)} = H(N'), D=imp4 (local), antialiased density: FAILS, rel. residual 4.384e-01
+PASS: U_randlocal_ultralocal_L7 uniform part {P,H(N)} = H(N'), D=randlocal (local), ultralocal density: FAILS, rel. residual 9.914e-01
+PASS: U_randlocal_antialiased_L7 uniform part {P,H(N)} = H(N'), D=randlocal (local), antialiased density: FAILS, rel. residual 4.590e-01
+PASS: U_SLAC_ultralocal_L7 D=SLAC (non-local) with ULTRALOCAL density: FAILS, rel. residual 8.774e-01 (Theorem C: full-support kernel)
+FAIL: U_SLAC_antialiased_L7 D=SLAC with ANTI-ALIASED density: CLOSES, rel. residual 7.9e-15, N' = -D_SLAC N to 2.0e+00
+PASS: N0_L7 SLAC transport at uniform xi reproduces the SLAC derivative
+PASS: N1_L7 non-uniform xi, no coupling: residual after best N' = 4.110e-01 (coupling needed, as in the continuum)
+PASS: N2_L7 N-LOCAL coupling sum_x N_x (D xi)_x T_x with arbitrary non-local T_0 (105 params) + free N': rel. residual 2.019e-01 -> NOT absorbed (informational)
+PASS: N3_L7 factorisation premise: the uniform-xi part of {G,H} is exactly H(N') (rel. 7.8e-15), so R(N,xi) vanishes on ker D_SLAC = constants and factors through D_SLAC xi (lemma) -> absorbable by an N-h non-local coupling
+PASS: U_central_ultralocal_L9 uniform part {P,H(N)} = H(N'), D=central (local), ultralocal density: FAILS, rel. residual 8.839e-01
+PASS: U_central_antialiased_L9 uniform part {P,H(N)} = H(N'), D=central (local), antialiased density: FAILS, rel. residual 7.267e-01
+PASS: U_imp4_ultralocal_L9 uniform part {P,H(N)} = H(N'), D=imp4 (local), ultralocal density: FAILS, rel. residual 8.418e-01
+PASS: U_imp4_antialiased_L9 uniform part {P,H(N)} = H(N'), D=imp4 (local), antialiased density: FAILS, rel. residual 6.341e-01
+PASS: U_randlocal_ultralocal_L9 uniform part {P,H(N)} = H(N'), D=randlocal (local), ultralocal density: FAILS, rel. residual 8.853e-01
+PASS: U_randlocal_antialiased_L9 uniform part {P,H(N)} = H(N'), D=randlocal (local), antialiased density: FAILS, rel. residual 2.822e-01
+PASS: U_SLAC_ultralocal_L9 D=SLAC (non-local) with ULTRALOCAL density: FAILS, rel. residual 8.952e-01 (Theorem C: full-support kernel)
+FAIL: U_SLAC_antialiased_L9 D=SLAC with ANTI-ALIASED density: CLOSES, rel. residual 1.1e-14, N' = -D_SLAC N to 2.0e+00
+PASS: N0_L9 SLAC transport at uniform xi reproduces the SLAC derivative
+PASS: N1_L9 non-uniform xi, no coupling: residual after best N' = 3.520e-01 (coupling needed, as in the continuum)
+PASS: N2_L9 N-LOCAL coupling sum_x N_x (D xi)_x T_x with arbitrary non-local T_0 (171 params) + free N': rel. residual 1.834e-01 -> NOT absorbed (informational)
+PASS: N3_L9 factorisation premise: the uniform-xi part of {G,H} is exactly H(N') (rel. 1.2e-14), so R(N,xi) vanishes on ker D_SLAC = constants and factors through D_SLAC xi (lemma) -> absorbable by an N-h non-local coupling
+TOTAL: PASS=22 FAIL=2

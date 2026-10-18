@@ -28,12 +28,17 @@ def m_of(x,order):
     w=word(x,order); E=Eof(w)
     if E is None: return 0.0
     return float(np.min(np.abs(wrap(np.angle(np.linalg.eigvals(Wbatch(w,GF)))-E))))
+import pickle
+CACHE='/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B20_all_isotropic_step/continuous_taste_opt_best.pkl'
 rng=np.random.default_rng(2026); best=[]
-NST=int(ARGV[1]) if 'ARGV' in dir() and len(ARGV)>1 else 16
-for st in range(NST):
-    order=st%2; x0=rng.uniform(0,2*np.pi,6)
-    r=minimize(lambda x: -m_of(x,order),x0,method='Nelder-Mead',options={'maxiter':250,'xatol':1e-4,'fatol':1e-6})
-    best.append((-r.fun,order,r.x)); print(f"  start {st}: max-min distance {-r.fun:.4f}  [{time.time()-t0:.0f}s]",flush=True)
+NST=int(ARGV[1]) if len(ARGV)>1 else 16
+if os.path.exists(CACHE): best=pickle.load(open(CACHE,'rb')); print(f"  (loaded {len(best)} optimised starts from the cache)")
+else:
+    for st in range(NST):
+        order=st%2; x0=rng.uniform(0,2*np.pi,6)
+        r=minimize(lambda x: -m_of(x,order),x0,method='Nelder-Mead',options={'maxiter':250,'xatol':1e-4,'fatol':1e-6})
+        best.append((-r.fun,order,r.x)); print(f"  start {st}: max-min distance {-r.fun:.4f}  [{time.time()-t0:.0f}s]",flush=True)
+    pickle.dump(best,open(CACHE,'wb'))
 best.sort(key=lambda t:-t[0])
 check("the k* doublets of the family are at E and E+pi with opposite chiralities and speed 2 sqrt2/3 (bookkeeping lemma)",
       all((lambda w: (lambda lv: len(lv)==2 and abs(abs(wrap(lv[0][0]-lv[1][0]))-np.pi)<1e-8)([(e,m) for e,m in node_levels(w,kst,1e-8) if m==2]))(word(b[2],b[1])) for b in best[:4]))
@@ -49,7 +54,10 @@ for mm,order,x in best[:4]:
     kinds=[]
     for s in other[:6]:
         v=vel_matrix(w,s,E); kinds.append((np.round(s/np.pi,3).tolist(),'band' if v['spread']>1e-4 else 'node',float(np.round(v['spread'],4))))
-    fin.append((mm,fermi,len(other))); print(f"  best m={mm:.4f} order={order} x={np.round(x,4)} E={E:+.4f}: 40^3 det sign change {fermi}; {len(other)} crossings away from Gamma_r,R_r, e.g. {kinds[:3]}",flush=True)
-check("no continuous-phase point found at which E is reached only at Gamma_r and R_r (negative search; best points listed)",
-      all(f[1] or f[2]>0 for f in fin),f"best max-min grid distance {best[0][0]:.4f}")
+    dXM=[min(abs(wrap(e-E)) for e,m_ in node_levels(w,k,1e-7)) for k in (np.pi/2*EX[0],np.pi/2*np.array([1,1,0]))]
+    cert,bad,ev,_=certify_clean(w,E,[np.zeros(3),kst],0.03,lo=-np.pi/2,hi=np.pi/2,n0=24,maxdepth=8,budget=4_000_000)
+    print(f"     dist(spec W, E) at X_r, M_r: {dXM[0]:.2e}, {dXM[1]:.2e}; Lipschitz certificate outside 0.03-balls at Gamma_r, R_r: {cert} ({bad} uncertified cells, {ev} evaluations)",flush=True)
+    fin.append((mm,fermi,len(other),cert)); print(f"  best m={mm:.4f} order={order} x={np.round(x,4)} E={E:+.4f}: 40^3 det sign change {fermi}; {len(other)} crossings away from Gamma_r,R_r, e.g. {kinds[:3]}",flush=True)
+check("no optimised continuous-phase point is certified clean (E reached only at Gamma_r, R_r); the best points drive the X_r/M_r doublets towards E (negative search)",
+      not any(f[3] for f in fin),f"best max-min grid distance {best[0][0]:.4f}")
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}   [{time.time()-t0:.0f}s]")

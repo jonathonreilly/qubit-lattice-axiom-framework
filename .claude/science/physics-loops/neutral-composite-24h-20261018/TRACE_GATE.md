@@ -151,3 +151,6 @@ Actualfixedbox lightwindow complete: noaddedinteraction orsourcecoupling; everya
 
 
 All-height assisted hop: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Native virtual paths determine prepared neutral vertex without added interaction. Full relaxed source/detector bridge remains open.
+
+
+Environment cost/balance: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Native Hamiltonian supplies energy balance and transport scale, replacing a chosen environmental energy functional. Actual radius/profile and scalar dynamical pole remain open.

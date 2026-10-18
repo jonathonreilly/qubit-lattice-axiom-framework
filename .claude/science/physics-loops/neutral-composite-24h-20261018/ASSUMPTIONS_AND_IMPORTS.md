@@ -103,3 +103,6 @@ Actualfixedbox lightwindow complete: noaddedinteraction orsourcecoupling; everya
 
 
 All-height block: no new interaction. Open Ising matrix is an exact path encoding, not added physical bits. Supplied even fixed L, R>2L, J, weak lambda and canonical preparation remain. Fendley2016 is prior-art context only. No physical species hierarchy follows from chosen height.
+
+
+Environment balance: removed chosen environmental potential/stiffness in this conditional model. Geometry, weakanisotropy, J and state/measurement identification remain supplied. White-Affleck2000 Nagaoka-polaron paper is context for known kinetic/environment mechanism, no imported radius or t-J interaction. Native inequalities derive the bounds independently.

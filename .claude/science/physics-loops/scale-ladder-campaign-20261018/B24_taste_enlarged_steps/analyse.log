@@ -1,0 +1,4 @@
+  screen_mix2_0-1-2-3.pkl: stats {'m12': 352, 'm8': 5152, 'D+D-': 4448, 'm4': 27200, 'm10': 1728, 'D2': 23232, 'm6': 11904}
+  screen_small_A-B-C-D-E.pkl: stats {'m6': 764, 'm4': 1498, 'D2': 1426, 'm8': 321, 'm10': 114, 'D+D-': 207, 'm12': 23}
+  totals (kind, outcome): {('D+D-', 'fermi'): 4366, ('D2', 'fermi'): 24498, ('D+D-', 'survivor'): 289, ('D2', 'survivor'): 160}
+  survivors 449, clean 0

@@ -1,0 +1,7 @@
+== Part A: the walker's coupling strength to h
+[PASS] A1: uniform frame: H(k)^2 = s^T (E^T E) s * 1 exactly (Clifford relation of the coin); the walker's cone is g^{-1} = E^T E
+[PASS] A2a: h = (E^T E)^{-1} - delta = -(eps + eps^T) t + O(t^2): only the symmetric part of the tilt enters (block 62 T3(a))
+[PASS] A2b: order-t match of the walker's cone with matter on delta + a h for all eps, s: solution [{a: 1}] (a_s = 1 uniquely)
+[PASS] A2c: second order: (delta + h)(E^T E) = 1 + O(t^3) with h = -tX + t^2(X^2 - eps^T eps); unit coupling persists beyond first order
+[PASS] A3: block 62's source -(1/2) sum Theta_(ij) h_ij is the metric-variational stress at unit strength: a_s = 1
+[PASS] A5a: two-step coupling: H^2 = |s|^2 - a_R P^T h P + O(h^2) at every wave vector (s_a c_a = P_a)

@@ -194,3 +194,17 @@ def jobs24(tag):
 def build24(sk, names):
     it = iter(names); return [ALL[next(it)] if L in ('o', 'p', 'q') else L for L in sk]
 build = build24
+
+# ---- reduced subfamilies (time budget): plane letters L101, L202, L303 x generic Clifford PC letters
+_j24b = jobs24
+def jobs24(tag):
+    if tag.startswith('small'):
+        for f in tag.split(':')[1].split(','):
+            sk = TSK[f]
+            for p in (PLANE if f == 'A' else ('L101', 'L303')):
+                if sk.count('q'):
+                    for q in PLANE:
+                        for g in PC: yield sk, (p, q, g)
+                else:
+                    for g in PC: yield sk, (p, g)
+    else: yield from _j24b(tag)

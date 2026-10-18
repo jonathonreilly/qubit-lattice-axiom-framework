@@ -107,35 +107,36 @@ for n in ((0, 0, 0), (1, 1, 1)):
 dbl = min(gK[n] for n in DOUB)
 check("X2 T-omega on-site pairing (tau=0.5): first-order singlet exactly zero at +-k*, nonzero at the six doublers; the six doublers are gapped",
       max(mK[(0, 0, 0)], mK[(1, 1, 1)]) < 1e-12 and min(mK[n] for n in DOUB) > 1e-3 and dbl > 1e-2, f"min doubler gap {dbl:.4f}")
-z_k = gK[(0, 0, 0)] < 1e-9 and gK[(1, 1, 1)] < 1e-9
-print("   exact BdG zero at +-k*:", z_k)
-# cone test at +-k* (small q) and Bogoliubov-Fermi-surface test
-cone = []
+# +-k*: is the 4-fold BdG zero protected by the residual T?  (first run expected yes -> FAIL; see *_firstrun.log)
+blk = {}
 for n in ((0, 0, 0), (1, 1, 1)):
-    for _ in range(12):
-        d = rng.normal(size=3); d /= np.linalg.norm(d); q = 1e-4
-        ev = np.sort(np.abs(bdg_eps(NODES[n] + q * d, Don, tau, QR)[0]))[:4]; cone.append(ev / q)
-cone = np.array(cone)
-print(f"   +-k* small-q |eps|/q (4 lowest BdG bands): range [{cone.min():.6f}, {cone.max():.6f}]   (sqrt2/3 = {np.sqrt(2)/3:.6f})")
-for tt in (0.1, 0.3, 0.5, 1.0):
-    print(f"   tau={tt}: |eps|(+-k*) = {gap0(NODES[(0,0,0)], Don, tt, QR)[0]:.2e}, {gap0(NODES[(1,1,1)], Don, tt, QR)[0]:.2e}; doubler gap {min(gap0(NODES[n], Don, tt, QR)[0] for n in DOUB):.4f}")
-check("X3 T-omega on-site: +-k* remain EXACT BdG zeros for all tau tested (protected by the residual T, no tuning)", z_k and
-      all(gap0(NODES[n], Don, tt, QR)[0] < 1e-9 for n in ((0, 0, 0), (1, 1, 1)) for tt in (0.1, 0.3, 1.0)))
-iso = np.allclose(cone, np.sqrt(2) / 3, atol=5e-4)
-print("   isotropic cone at sqrt2/3:", iso)
+    for E, Qm in levels(NODES[n]):
+        if abs(wrap(E - np.pi / 2)) < 1e-6: continue
+        blk[(n, Qm.shape[1], round(E, 3))] = np.abs(DQ[n].conj().T @ (2 * A) @ Qm.conj()).max()
+print("   node doublet <-> other levels at +-k*:", {f"{NAME[k[0]]},dim{k[1]},E={k[2]}": f"{v:.2e}" for k, v in blk.items()})
+taus = (0.05, 0.1, 0.2, 0.4)
+sh = {n: [np.sort(np.abs(bdg_eps(NODES[n], Don, tt, QR)[0]))[0] for tt in taus] for n in ((0, 0, 0), (1, 1, 1))}
+sl = {n: np.polyfit(np.log(taus), np.log(sh[n]), 1)[0] for n in sh}
+fourfold = all(np.allclose(np.sort(np.abs(bdg_eps(NODES[n], Don, 0.2, QR)[0]))[:4], sh[n][2], atol=1e-9) for n in sh)
+print("   lowest |eps| at +-k* vs tau:", {NAME[n]: [f"{x:.2e}" for x in v] for n, v in sh.items()}, " log-log slopes:", {NAME[n]: round(v, 3) for n, v in sl.items()})
+check("X3 T-omega on-site: the residual T does NOT protect a +-k* point node -- the node doublet couples to the G3/2 levels "
+      "(D x G3/2 contains E, which contains omega under T), so the 4-fold BdG level at +-k* is shifted off zero by delta ~ tau^2 "
+      "(still 4-fold), i.e. a quasi-energy (chemical-potential-like) offset: a small Bogoliubov shell of radius ~delta/v replaces "
+      "the point (probe_tomega.log)", all(1.9 < v < 2.1 for v in sl.values()) and fourfold and
+      min(v for k, v in blk.items() if k[1] == 4) > 1e-3 and max(v for k, v in blk.items() if k[1] == 2) < 1e-10)
 (b0, k0), (bp, kp) = grid_min(Don, tau, QR, N=20, exclude=(KST, -KST), r_ex=0.35)
 print(f"   global scan outside 0.35-balls of +-k* (N=20): min 0-gap {b0:.4f}, min pi-gap {bp:.4f}")
-check("X4 T-omega on-site: small-q BdG spectrum at +-k* is an isotropic 4-band cone at sqrt2/3 (pairing enters only at O(q^2)) and no "
-      "other quasi-energy-0/pi zero outside the balls (grid N=20; numerical, uncertified)", iso and b0 > 1e-3 and bp > 1e-3)
+check("X4 T-omega on-site: the six doublers are gapped and nothing else crosses quasi-energy 0/pi outside the +-k* balls "
+      "(grid N=20; numerical, uncertified)", dbl > 1e-2 and b0 > 1e-3 and bp > 1e-3)
 # range-1 T-omega pairing
 blT = sym_pair(rand_blocks(rng, 1), chiT, QR, idx=sorted(Hs))
 assert check_sym(blT, chiT, QR, idx=sorted(Hs), rng=rng)
 nrm = np.linalg.norm(Delta(blT, QR, KST)[0]) + 1e-12
 Dr = lambda ks: Delta(blT, QR, ks) / nrm
 gr = {n: gap0(NODES[n], Dr, 0.3, QR)[0] for n in NODES}
+mr = {n: abs(singlet(DQ[n], Delta(blT, QR, NODES[n])[0] - Delta(blT, QR, -QR - NODES[n])[0].T)) for n in NODES}
+print("   range-1 T-omega: first-order singlets:", ", ".join(f"{NAME[n]}:{v:.1e}" for n, v in mr.items()))
 print("   range-1 T-omega: BdG |eps| at nodes:", ", ".join(f"{NAME[n]}:{v:.2e}" for n, v in gr.items()))
-for n in ((0, 0, 0), (1, 1, 1)):
-    rs, g = radial(n, Dr, 0.3, rs=np.linspace(0, 0.2, 41), ndir=20)
-    print(f"   range-1 {NAME[n]}: min over directions of max_r... per-direction min |eps| (r<=0.2): {g.min(axis=1).max():.2e}")
-check("X5 range-1 T-omega pairing: +-k* exact BdG zeros, six doublers gapped", max(gr[(0, 0, 0)], gr[(1, 1, 1)]) < 1e-9 and min(gr[n] for n in DOUB) > 1e-3)
+check("X5 range-1 T-omega pairing: singlet forbidden at +-k* (exact), doublers gapped, but +-k* again shifted off zero (not protected)",
+      max(mr[(0, 0, 0)], mr[(1, 1, 1)]) < 1e-10 and min(gr[n] for n in DOUB) > 1e-3 and min(gr[(0, 0, 0)], gr[(1, 1, 1)]) > 1e-5)
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}   [{time.time()-t0:.0f}s]")

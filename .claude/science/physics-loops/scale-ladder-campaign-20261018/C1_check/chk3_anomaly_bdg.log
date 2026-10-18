@@ -1,0 +1,38 @@
+   k*+pi(0, 1, 0)   Berry flux of upper band = +1.0000   (degenerate-PT sign det B = +1)
+   k*+pi(0, 1, 1)   Berry flux of upper band = -1.0000   (degenerate-PT sign det B = -1)
+   k*               Berry flux of upper band = -1.0000   (degenerate-PT sign det B = -1)
+   k*+pi(0, 0, 1)   Berry flux of upper band = +1.0000   (degenerate-PT sign det B = +1)
+   k*+pi(1, 1, 0)   Berry flux of upper band = -1.0000   (degenerate-PT sign det B = -1)
+   -k*              Berry flux of upper band = +1.0000   (degenerate-PT sign det B = +1)
+   k*+pi(1, 0, 0)   Berry flux of upper band = +1.0000   (degenerate-PT sign det B = +1)
+   k*+pi(1, 0, 1)   Berry flux of upper band = -1.0000   (degenerate-PT sign det B = -1)
+[PASS] A1 Berry-flux chiralities: |flux| = 1 at all eight, chi(k*+pi n) = (-1)^{|n|} chi(k*); net zero  {'k*+pi(0, 1, 0)': 1, 'k*+pi(0, 1, 1)': -1, 'k*': -1, 'k*+pi(0, 0, 1)': 1, 'k*+pi(1, 1, 0)': -1, '-k*': 1, 'k*+pi(1, 0, 0)': 1, 'k*+pi(1, 0, 1)': -1}
+   empty          #0  net chi +0  b/pi mod 2 = [0.0, 0.0, 0.0]  Z2 counts (0, 0, 0)
+   k*             #1  net chi -1  b/pi mod 2 = [1.5, 0.5, 1.5]  Z2 counts (0, 0, 0)
+   -k*            #1  net chi +1  b/pi mod 2 = [1.5, 0.5, 1.5]  Z2 counts (1, 1, 1)
+   A              #3  net chi +3  b/pi mod 2 = [0.5, 1.5, 0.5]  Z2 counts (1, 1, 1)
+   B              #3  net chi -3  b/pi mod 2 = [0.5, 1.5, 0.5]  Z2 counts (0, 0, 0)
+   k*+-k*         #2  net chi +0  b/pi mod 2 = [1.0, 1.0, 1.0]  Z2 counts (1, 1, 1)
+   k*+A           #4  net chi +2  b/pi mod 2 = [0.0, 0.0, 0.0]  Z2 counts (1, 1, 1)
+   k*+B           #4  net chi -4  b/pi mod 2 = [0.0, 0.0, 0.0]  Z2 counts (0, 0, 0)
+   -k*+A          #4  net chi +4  b/pi mod 2 = [0.0, 0.0, 0.0]  Z2 counts (0, 0, 0)
+   -k*+B          #4  net chi -2  b/pi mod 2 = [0.0, 0.0, 0.0]  Z2 counts (1, 1, 1)
+   A+B            #6  net chi +0  b/pi mod 2 = [1.0, 1.0, 1.0]  Z2 counts (1, 1, 1)
+   k*+-k*+A       #5  net chi +3  b/pi mod 2 = [1.5, 0.5, 1.5]  Z2 counts (0, 0, 0)
+   k*+-k*+B       #5  net chi -3  b/pi mod 2 = [1.5, 0.5, 1.5]  Z2 counts (1, 1, 1)
+   k*+A+B         #7  net chi -1  b/pi mod 2 = [0.5, 1.5, 0.5]  Z2 counts (1, 1, 1)
+   -k*+A+B        #7  net chi +1  b/pi mod 2 = [0.5, 1.5, 0.5]  Z2 counts (0, 0, 0)
+   k*+-k*+A+B     #8  net chi +0  b/pi mod 2 = [0.0, 0.0, 0.0]  Z2 counts (0, 0, 0)
+[PASS] A2 dipole table: doublers (A+B) and {+-k*} each have net chirality 0 and b = pi(1,1,1) mod 2pi (Z2 counts (1,1,1)); all eight: b = 0; only 'empty' and 'all eight' are anomaly-free among rotation-invariant subsets  anomaly-free: ['empty', 'k*+-k*+A+B']
+[PASS] A2b for net-zero subsets the Z2^3 counts equal b/pi mod 2 (they are the same invariant, not independent anomalies)  
+   BdG zero-sector charges (particle, hole): {'Q=R,k*+pi(0, 1, 0)': (1, -1), 'Q=R,k*+pi(0, 1, 1)': (-1, 1), 'Q=R,k*': (-1, 1), 'Q=R,k*+pi(0, 0, 1)': (1, -1), 'Q=R,k*+pi(1, 1, 0)': (-1, 1), 'Q=R,-k*': (1, -1), 'Q=R,k*+pi(1, 0, 0)': (1, -1), 'Q=R,k*+pi(1, 0, 1)': (-1, 1), 'Q=0,k*+pi(0, 1, 0)': (1, 1), 'Q=0,k*+pi(0, 1, 1)': (-1, -1), 'Q=0,k*': (-1, -1), 'Q=0,k*+pi(0, 0, 1)': (1, 1), 'Q=0,k*+pi(1, 1, 0)': (-1, -1), 'Q=0,-k*': (1, 1), 'Q=0,k*+pi(1, 0, 0)': (1, 1), 'Q=0,k*+pi(1, 0, 1)': (-1, -1)}
+[PASS] A3 BdG charge at each node: Q = R -> particle + hole = 0 (gappable, intra-node); Q = 0 -> particle + hole = +-2 (not gappable by small pairing)  
+[FAIL] A4 Q = 0 symmetric on-site pairing (A1, tau = 0.5): a BdG zero survives within 0.3 of every node (local minimisation)  k*+pi(0, 1, 0):4.2e-02, k*+pi(0, 1, 1):4.2e-02, k*:1.9e-01, k*+pi(0, 0, 1):4.2e-02, k*+pi(1, 1, 0):4.2e-02, -k*:1.9e-01, k*+pi(1, 0, 0):4.2e-02, k*+pi(1, 0, 1):4.2e-02
+[PASS] B1 Q=R A2 on-site (random, ||A||=1, tau=0.5): all eight nodes gapped; global 0 and pi gaps open (grid N=20 + Nelder-Mead; uncertified)  node gaps min 0.0955; global 0-gap 0.0954, pi-gap 0.0954
+[PASS] B2 Q=R A1 on-site: +-k* keep an exact 4-fold BdG zero (tau = 0.3, 1.1) although A1 couples the node doublet to the -pi/2 doublet  
+[PASS] B4 Wilson pairing w(k) A2 (w invariant under the 24 affine maps and k -> -Q-k; w(+-k*) = 0, w(doublers) = 4): +-k* exact 4-fold zeros with isotropic cone sqrt2/3 (40 directions), doublers gapped, nothing else outside 0.35-balls (grid N=20)  cone [0.471405,0.471405]; doubler gaps min 0.3343; outside-ball min 0/pi 0.2081/0.2081
+[PASS] B5b on-site A2 tuned to m_{+-k*} = 0 (rank of the two functionals on V_A2 = 2): +-k* exact zeros for all tau, doublers gapped, nothing else outside 0.35-balls (grid N=20)  doubler gaps 0.1727..0.1727; outside-ball 0/pi 0.1727/0.1727; small-q cone/q range [0.47140,0.47140]
+   B5b cone at +-k*: anisotropy max/min of 4 lowest |eps|/q = 1.000000 (on-site pairing enters the node block only at O(q))
+[PASS] B5c generic A2 admixture eta re-gaps +-k* linearly (tuning, not protection)  slope 0.995, gaps ['3.4e-04', '3.4e-03', '3.3e-02']
+
+TOTAL: PASS=9 FAIL=1   [152s]

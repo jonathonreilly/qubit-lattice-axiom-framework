@@ -1,0 +1,15 @@
+dim channel 7  |m| at k*, -k*: 6.142829314930932e-17 1.5724158334887668e-16
+  k* node<->level E=-3.142 dim4: |block| = 4.033e-01
+  k* node<->level E=-1.571 dim2: |block| = 3.198e-16
+  k* node<->level E=-0.000 dim4: |block| = 2.169e-01
+  k* tau=0.05: 4 lowest |eps| at K = [0.000304 0.000304 0.000304 0.000304]; per-direction min |eps|: median 1.7e-06, max 3.1e-06; zero radius range [0.0006, 0.0006]; fraction of directions with a zero: 0.12
+  k* tau=0.1: 4 lowest |eps| at K = [0.001214 0.001214 0.001214 0.001214]; per-direction min |eps|: median 1.5e-05, max 2.5e-05; zero radius range [0.0026, 0.0026]; fraction of directions with a zero: 0.03
+  k* tau=0.2: 4 lowest |eps| at K = [0.004848 0.004848 0.004848 0.004848]; per-direction min |eps|: median 1.0e-04, max 2.0e-04; zero radius range [0.0103, 0.0103]; fraction of directions with a zero: 0.03
+  k* tau=0.4: 4 lowest |eps| at K = [0.019287 0.019287 0.019287 0.019287]; per-direction min |eps|: median 8.2e-04, max 1.3e-03; zero radius range [nan, nan]; fraction of directions with a zero: 0.00
+  -k* node<->level E=-3.142 dim4: |block| = 7.159e-02
+  -k* node<->level E=-1.571 dim2: |block| = 4.381e-16
+  -k* node<->level E=-0.000 dim4: |block| = 4.993e-01
+  -k* tau=0.05: 4 lowest |eps| at K = [0.000437 0.000437 0.000437 0.000437]; per-direction min |eps|: median 4.5e-06, max 7.0e-06; zero radius range [0.0009, 0.0009]; fraction of directions with a zero: 0.07
+  -k* tau=0.1: 4 lowest |eps| at K = [0.001748 0.001748 0.001748 0.001748]; per-direction min |eps|: median 3.1e-05, max 5.4e-05; zero radius range [nan, nan]; fraction of directions with a zero: 0.00
+  -k* tau=0.2: 4 lowest |eps| at K = [0.006977 0.006977 0.006977 0.006977]; per-direction min |eps|: median 2.9e-04, max 4.3e-04; zero radius range [nan, nan]; fraction of directions with a zero: 0.00
+  -k* tau=0.4: 4 lowest |eps| at K = [0.027669 0.027669 0.027669 0.027669]; per-direction min |eps|: median 1.9e-03, max 3.2e-03; zero radius range [0.0617, 0.0617]; fraction of directions with a zero: 0.03

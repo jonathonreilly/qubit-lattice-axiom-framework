@@ -49,3 +49,12 @@
   iso   x    [0.1 0.1 0.1]   4096   0.9832     0.9933      1.0
   iso   x    [0.1 0.1 0.1]   8192   0.9936     0.9933      1.0
   iso   x    [-0.15  0.1  -0.05]   4096   1.0104     0.9958      1.0
+  iso   x    [-0.15  0.1  -0.05]   8192   0.9957     0.9958      1.0
+  ani   x    [0.1  0.05 0.05]   4096   0.9845     0.9958      1.0
+  ani   x    [0.1  0.05 0.05]   8192   0.9961     0.9958      1.0
+  ani   z    [0.05 0.05 0.1 ]   4096   3.8687     3.9932      4.0
+  ani   z    [0.05 0.05 0.1 ]   8192   3.9969     3.9932      4.0
+[PASS] G4 [numerical, revised] exponentiated smooth-lapse group commutator: packet displacement along the lapse axis tends to -w g^{aa}(k0) (isotropic step ~ -w; uniaxial ~ -w along x, ~ -4w along z): deviation < 2% at Lx = 8192 and smaller than at 4096 (lapse slope halved)
+        relative deviations (4096, 8192): [(np.float64(0.0172), np.float64(0.0004)), (np.float64(0.0102), np.float64(0.0003)), (np.float64(0.0146), np.float64(0.0001)), (np.float64(0.0114), np.float64(0.0003)), (np.float64(0.0312), np.float64(0.0009))]
+
+TOTAL: PASS=6 FAIL=0  (207.3 s)

@@ -30,6 +30,10 @@ def jobs(tag):
         i0, i1 = map(int, p[2].split('-'))
         for sk in ONE[i0:i1]:
             for n in PAL[p[1]]: yield sk, (n,)
+    elif p[0] == 'onesample':         # seeded random sample of N fills per one-slot class
+        i0, i1 = map(int, p[2].split('-')); N = int(p[3]); rg = np.random.default_rng(4052 + i0); names = list(PAL[p[1]])
+        for sk in ONE[i0:i1]:
+            for t in rg.choice(len(names), size=N, replace=False): yield sk, (names[t],)
     elif p[0] == 'two':
         i0, i1 = map(int, p[1].split('-'))
         for sk in TWO[i0:i1]:

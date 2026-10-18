@@ -1,0 +1,41 @@
+(a) letter-level tastes (e: [(w = e^{i pi j/4}, dim V)])
+   A_1 e=(0, 0, 1): [(0, 6), (4, 6)]    A_2 e=(0, 0, 1): [(0, 6), (4, 6)]
+   A_1 e=(0, 1, 0): [(0, 6), (4, 6)]    A_2 e=(0, 1, 0): [(0, 6), (4, 6)]
+   A_1 e=(0, 1, 1): [(0, 6), (4, 6)]    A_2 e=(0, 1, 1): [(0, 6), (4, 6)]
+   A_1 e=(1, 0, 0): [(0, 6), (4, 6)]    A_2 e=(1, 0, 0): [(0, 6), (4, 6)]
+   A_1 e=(1, 0, 1): [(0, 6), (4, 6)]    A_2 e=(1, 0, 1): [(0, 6), (4, 6)]
+   A_1 e=(1, 1, 0): [(0, 6), (4, 6)]    A_2 e=(1, 1, 0): [(0, 6), (4, 6)]
+   A_1 e=(1, 1, 1): [(0, 6), (4, 6)]    A_2 e=(1, 1, 1): [(0, 6), (4, 6)]
+[PASS] A_1 has a nonzero intertwiner for every e (constant-spectrum letter: tastes exist; as B18 found for H_link, R_L)  
+   S e=(0, 0, 1): [(0, 4), (4, 8)]
+   S e=(0, 1, 0): [(0, 4), (4, 8)]
+   S e=(0, 1, 1): [(0, 4), (4, 8)]
+   S e=(1, 0, 0): [(0, 4), (4, 8)]
+   S e=(1, 0, 1): [(0, 4), (4, 8)]
+   S e=(1, 1, 0): [(0, 4), (4, 8)]
+   S e=(1, 1, 1): [(0, 12)]
+[FAIL] S has a constant-V taste only for e = (1,1,1) (k* -> -k*, trivial V = 1, w = 1); none maps k* to a doubler (B18 S-theorem)  
+(b) joint tastes
+   e=(0, 0, 1):  (A_1,H_on): []   (A_1,R_L): [(0, 3)]
+   e=(0, 1, 0):  (A_1,H_on): []   (A_1,R_L): [(0, 3)]
+   e=(0, 1, 1):  (A_1,H_on): []   (A_1,R_L): [(0, 3)]
+   e=(1, 0, 0):  (A_1,H_on): []   (A_1,R_L): [(0, 3)]
+   e=(1, 0, 1):  (A_1,H_on): []   (A_1,R_L): [(0, 3)]
+   e=(1, 1, 0):  (A_1,H_on): []   (A_1,R_L): [(0, 3)]
+   e=(1, 1, 1):  (A_1,H_on): [(0, 1)]   (A_1,R_L): [(0, 3)]
+   (S,A_1) e=(0, 0, 1): [(0, 2), (4, 4)]
+   (S,A_1) e=(0, 1, 0): [(0, 2), (4, 4)]
+   (S,A_1) e=(0, 1, 1): [(0, 2), (4, 4)]
+   (S,A_1) e=(1, 0, 0): [(0, 2), (4, 4)]
+   (S,A_1) e=(1, 0, 1): [(0, 2), (4, 4)]
+   (S,A_1) e=(1, 1, 0): [(0, 2), (4, 4)]
+   (S,A_1) e=(1, 1, 1): [(0, 6)]
+[FAIL] joint (S, A_1) tastes exist only for e = (1,1,1) (k* -> -k*) -- any word containing S letter-wise inherits the S-theorem  
+   note: A_a appear in symmetric words only in pairs, and every even-A word is +-(old-palette word); its tastes are those of that word.
+(c) spectral taste lattice census (one-slot new classes x 3 seeded fills each): {'bcc(2pi)': 220, 'sc(pi/2)': 1, 'bcc(pi)': 1}
+   bcc(2pi): e.g. ('Rt', 'S2i', 'o') L230 [(0, 0, 0), (4, 4, 4)]
+   sc(pi/2): e.g. ('R', 'Rt', 'S2i', 'Rt', 'o') H00 [(0, 0, 0), (0, 0, 2), (0, 0, 4), (0, 0, 6), (0, 2, 0), (0, 2, 2), (0, 2, 4), (0, 2, 6)]
+   bcc(pi): e.g. ('S2', 'Rt', 'R', 'S2', 'o') H00 [(0, 0, 0), (0, 0, 4), (0, 4, 0), (0, 4, 4), (2, 2, 2), (2, 2, 6), (2, 6, 2), (2, 6, 6)]
+   (census only; B24's lattice theorem is exact for every rotation-invariant lattice, so it covers any outcome here)
+
+TOTAL: PASS=1 FAIL=2   [78s]

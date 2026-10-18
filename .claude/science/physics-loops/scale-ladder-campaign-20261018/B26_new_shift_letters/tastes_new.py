@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """B26 part 2: tastes of the new (A2 half-) letters and of the enlarged-palette words.
-(a) Letter-level tastes V X(k) V^-1 = w X(k + pi e) (constant V, |w| = 1, e in {0,1}^3 \ 0) for X = A_a = A0 S^a, a = 1, 2:
+(a) Letter-level tastes V X(k) V^-1 = w X(k + pi e) (constant V, |w| = 1, e in {0,1}^3 minus 0) for X = A_a = A0 S^a, a = 1, 2:
     solved as a linear null space over 6 random k for each w in the 8th roots of unity (the B18 S-theorem form).
 (b) Joint tastes with S, with H_on, with R_L (needed for any word containing them letter-wise).
 (c) Word level: spectral taste lattice Lambda_sp cap (pi/4)Z^3 (spectrum of W(k) = spectrum of W(k+t) up to a global
@@ -24,27 +24,39 @@ def intertwiners(Xfs, e, w):
             X1, X2 = Xf(k), Xf(k + np.pi * np.asarray(e))
             # V X1 - w X2 V = 0  ->  (X1^T (x) 1 - w 1 (x) X2) vec(V) = 0   (column-major vec)
             rows.append(np.kron(X1.T, np.eye(12)) - w * np.kron(np.eye(12), X2))
-    A = np.vstack(rows); sv = np.linalg.svd(A, compute_uv=False); return int(np.sum(sv < 1e-8)), sv
+    A = np.vstack(rows); _, sv, Vh = np.linalg.svd(A); null = Vh[np.sum(sv > 1e-8):].conj()
+    if len(null) == 0: return 0, False
+    # a taste needs an INVERTIBLE V (second run counted singular intertwiners; log kept): test a random element of the
+    # null space (det is a polynomial on it, so a random element is invertible iff some element is)
+    c = np.random.default_rng(0).normal(size=len(null)) + 1j * np.random.default_rng(1).normal(size=len(null))
+    V = (c @ null).reshape(12, 12, order='F'); sv2 = np.linalg.svd(V, compute_uv=False)
+    return len(null), bool(sv2.min() > 1e-8 * sv2.max())
 ES = [e for e in itertools.product((0, 1), repeat=3) if any(e)]
 WS = [np.exp(1j * np.pi * j / 4) for j in range(8)]
 def taste_table(Xfs):
     tab = {}
     for e in ES:
-        tab[e] = [(j, intertwiners(Xfs, e, w)[0]) for j, w in enumerate(WS)]
-        tab[e] = [(j, d) for j, d in tab[e] if d > 0]
+        tab[e] = [(j,) + intertwiners(Xfs, e, w) for j, w in enumerate(WS)]
+        tab[e] = [(j, d, inv) for j, d, inv in tab[e] if d > 0]
     return tab
-print("(a) letter-level tastes (e: [(w = e^{i pi j/4}, dim V)])")
+print("(a) letter-level intertwiners (e: [(w = e^{i pi j/4}, dim of solution space, contains invertible V)])")
 tA1 = taste_table([lambda k: Aa(k, 1)]); tA2 = taste_table([lambda k: Aa(k, 2)])
 for e in ES: print(f"   A_1 e={e}: {tA1[e]}    A_2 e={e}: {tA2[e]}")
-check("A_1 has a nonzero intertwiner for every e (constant-spectrum letter: tastes exist; as B18 found for H_link, R_L)", all(tA1[e] for e in ES))
+check("A_1 has a nonzero intertwiner for every e (constant-spectrum letter: tastes exist; as B18 found for H_link, R_L)", all(any(x[2] for x in tA1[e]) for e in ES))
 tS = taste_table([lambda k: Sk(k, 1)])
-check("S has no taste for any e (B18 S-theorem, re-derived here for constant V)", not any(tS[e] for e in ES))
+for e in ES: print(f"   S e={e}: {tS[e]}")
+# expectation corrected after the first run (log kept): S(k + pi(1,1,1)) = S(k) since e.f_c is even for e = (1,1,1); that
+# taste maps k* -> -k* (B18: all allowed maps send k* to +-k*).  The S-theorem is the absence of every other e.
+check("S has a constant-V taste only for e = (1,1,1) (k* -> -k*, trivial V = 1, w = 1); none maps k* to a doubler (B18 S-theorem)",
+      all(not any(x[2] for x in tS[e]) for e in ES if e != (1, 1, 1)) and tS[(1, 1, 1)] == [(0, 12, True)])
 print("(b) joint tastes")
 tSA = taste_table([lambda k: Sk(k, 1), lambda k: Aa(k, 1)])
 tAH = taste_table([lambda k: Aa(k, 1), lambda k: Hon0.astype(complex)])
 tAR = taste_table([lambda k: Aa(k, 1), RLk])
 for e in ES: print(f"   e={e}:  (A_1,H_on): {tAH[e]}   (A_1,R_L): {tAR[e]}")
-check("no joint taste of (S, A_1) -- any word containing S letter-wise inherits the S-theorem", not any(tSA[e] for e in ES))
+for e in ES: print(f"   (S,A_1) e={e}: {tSA[e]}")
+check("joint (S, A_1) tastes exist only for e = (1,1,1) (k* -> -k*) -- any word containing S letter-wise inherits the S-theorem",
+      all(not any(x[2] for x in tSA[e]) for e in ES if e != (1, 1, 1)))
 print("   note: A_a appear in symmetric words only in pairs, and every even-A word is +-(old-palette word); its tastes are those of that word.")
 
 # (c) word-level spectral taste lattice on (pi/4)Z^3
@@ -66,13 +78,18 @@ def lattice_of(w):
     for t in TS:
         if all(spec_eq(b, np.linalg.eigvals(Wb(w, (k + t)[None])[0])) for b, k in zip(base, KS4)): L.append(tuple(int(round(x / (np.pi / 4))) % 8 for x in t))
     return frozenset(L)
+LATS = {}
+for m, an in ((8, '2pi'), (4, 'pi'), (2, 'pi/2'), (1, 'pi/4')):
+    sc = {tuple((m * x) % 8 for x in t) for t in itertools.product(range(8), repeat=3)}
+    LATS[f'sc({an})'] = frozenset(sc)
+    if m % 2 == 0:
+        h = m // 2
+        LATS[f'bcc({an})'] = frozenset(sc | {tuple((x + h) % 8 for x in t) for t in sc})
+        LATS[f'fcc({an})'] = frozenset(sc | {tuple((x + y) % 8 for x, y in zip(t, sh)) for t in sc for sh in ((h, h, 0), (h, 0, h), (0, h, h))})
 def lat_name(L):
-    n = len(L)
-    if n == 1: return 'sc(2pi)'
-    if L == frozenset({(0, 0, 0), (4, 4, 4)}): return 'bcc(2pi)'
-    if n == 4 and all((a + b + c) % 8 == 0 for a, b, c in L) and all(x % 4 == 0 for t in L for x in t): return 'fcc(2pi)'
-    if L == frozenset(itertools.product((0, 4), repeat=3)): return 'sc(pi)'
-    return f'other(|L|={n})'
+    for nm, X in LATS.items():
+        if L == X: return nm
+    return 'other(|L|=%d)' % len(L)
 cnt = collections.Counter(); ex = {}
 rs = np.random.default_rng(99)
 for sk in ONE:

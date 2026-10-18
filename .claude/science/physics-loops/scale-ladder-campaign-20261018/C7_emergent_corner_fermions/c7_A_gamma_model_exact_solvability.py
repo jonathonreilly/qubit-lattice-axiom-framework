@@ -338,7 +338,7 @@ def cluster_test(name, verts_edges, model):
     which = np.argmin(np.abs(lam[:, None] - offs[None, :]), axis=1)
     Hv = lam - offs[which]
     ok &= bool(np.max(np.abs(Hv)) < 40)
-    Ws_val = np.array([[combos[w][i] for w in which] for i in range(len(cyc))]).reshape(len(cyc), -1)
+    Ws_val = np.array([[combos[w][i] for w in which] for i in range(len(cyc))], float).reshape(len(cyc), len(lam))
     worst = 0.0; nsec = 0
     for signs in itertools.product((1, -1), repeat=len(cyc)):
         sel = np.all(np.round(Ws_val).T == np.array(signs), axis=1) if len(cyc) else np.ones(len(Hv), bool)

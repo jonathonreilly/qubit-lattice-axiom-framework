@@ -9,7 +9,20 @@ A1: L = 2 torus, 96 corners = 288 qubits, 288 edges, 232 faces; exact Pauli alge
    (control) anticommuting pairs among the 288 H_M bond terms: 1440 (= pairs of edges sharing one corner: 1440)
 [PASS] control: H_M bond terms anticommute exactly for edges sharing a corner (Kitaev structure)
 [PASS] closed-surface relation: product over the 14 faces of a cuboctahedron of W (outward) = +1 exactly  14 faces, product = i^0 x (identity: True)
-   t = 2.8s
+   t = 1.7s
 
 A2: exact diagonalisation of the qubit model on clusters vs free fermions in the dictionary's flux sector
 [PASS] H_M on triangle (3 corners): qubit spectrum = free-fermion spectrum (levels and relative multiplicities) in each of the 2 W sectors  N=3, E=3, cycles=1, max level dev 0.0e+00
+[PASS] H_M on square (4): qubit spectrum = free-fermion spectrum (levels and relative multiplicities) in each of the 2 W sectors  N=4, E=4, cycles=1, max level dev 0.0e+00
+[PASS] H_M on plaquette (4, links): qubit spectrum = free-fermion spectrum (levels and relative multiplicities) in each of the 2 W sectors  N=4, E=4, cycles=1, max level dev 0.0e+00
+[PASS] H_M on tube (4, mixed): qubit spectrum = free-fermion spectrum (levels and relative multiplicities) in each of the 2 W sectors  N=4, E=4, cycles=1, max level dev 0.0e+00
+[PASS] H_M on open chain (4): qubit spectrum = free-fermion spectrum (levels and relative multiplicities) in each of the 1 W sectors  N=4, E=3, cycles=0, max level dev 0.0e+00
+[PASS] H_M2 on triangle (3 corners): qubit spectrum = free-fermion spectrum (levels and relative multiplicities) in each of the 2 W sectors  N=3, E=3, cycles=1, max level dev 0.0e+00
+[PASS] H_M2 on square (4): qubit spectrum = free-fermion spectrum (levels and relative multiplicities) in each of the 2 W sectors  N=4, E=4, cycles=1, max level dev 0.0e+00
+[PASS] H_M2 on tube (4, mixed): qubit spectrum = free-fermion spectrum (levels and relative multiplicities) in each of the 2 W sectors  N=4, E=4, cycles=1, max level dev 0.0e+00
+[PASS] H_R on triangle (3 corners): qubit spectrum = free-fermion spectrum (levels and relative multiplicities) in each of the 2 W sectors  N=3, E=3, cycles=1, max level dev 0.0e+00
+[PASS] H_R on square (4): qubit spectrum = free-fermion spectrum (levels and relative multiplicities) in each of the 2 W sectors  N=4, E=4, cycles=1, max level dev 0.0e+00
+[PASS] H_R on tube (4, mixed): qubit spectrum = free-fermion spectrum (levels and relative multiplicities) in each of the 2 W sectors  N=4, E=4, cycles=1, max level dev 0.0e+00
+   t = 503.3s
+
+TOTAL: PASS=18 FAIL=0

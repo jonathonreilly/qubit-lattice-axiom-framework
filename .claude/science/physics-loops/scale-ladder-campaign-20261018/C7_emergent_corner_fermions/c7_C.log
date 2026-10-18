@@ -41,3 +41,25 @@ FINDING C2: O-fixed momenta of 1c+11 (units pi/2): []  (corner model 1011: [(1, 
    t = 14.2s
 
 C3: cost of flipping one gauge link u_e (flux change on its 3 faces), L = 4 torus, 2^3 boundary twists
+   t2=0.2: onsite flips (24 edges): dE in [0.38216, 0.38216]
+   t2=0.2: link   flips (24 edges): dE in [0.01211, 0.01211]
+[PASS] every single-link flip costs energy > 0 at t2 = 0.2 and 1 (1c+11 stable against one-edge flux pairs on L = 4)  min 0.01211
+   t2=1.0: onsite flips (24 edges): dE in [0.28297, 0.28297]
+   t2=1.0: link   flips (24 edges): dE in [0.33438, 0.33438]
+[PASS]   ... and at t2 = 1  min 0.28297
+   t = 491.9s
+
+C4: gauge-invariant fluxes of the corner-model family (t1 = -1, u-pattern 1011, chiral lambda on oriented triangles)
+   lambda = +0.0000: flux/pi (triangles outward): {'square': [1.0], 'triangle': [1.0], 'plaquette': [1.0], 'tube': [1.0]}
+   lambda = -0.5000: flux/pi (triangles outward): {'square': [0.4097, 1.5903], 'triangle': [0.5572], 'plaquette': [1.0], 'tube': [0.7048, 1.2952]}
+   lambda = -0.5774: flux/pi (triangles outward): {'square': [0.3333, 1.6667], 'triangle': [0.5], 'plaquette': [1.0], 'tube': [0.6667, 1.3333]}
+   lambda = +0.3000: flux/pi (triangles outward): {'square': [0.6289, 1.3711], 'triangle': [1.2783], 'plaquette': [1.0], 'tube': [0.8145, 1.1855]}
+[PASS] corner-model family: square flux pi -+ 4 arctan(lambda), tube pi -+ 2 arctan(lambda) (sign = orientation), triangle (outward) pi + 3 arctan(lambda), plaquette pi; so square = pi forces lambda = 0 and triangle = pi: no member is gauge-equivalent to 1c+11
+
+C5: complex parton with imaginary hopping (H_M2 + mu N, exactly solvable) at filling nu: uniform winners; t = 491.9s
+   t2=0.2: nu=1: 0s+10 (1c+11 rank 13); nu=2: 0c+10 (1c+11 rank 8); nu=3: 0c+01 (1c+11 rank 16); nu=4: 1s+01 (1c+11 rank 15); nu=5: 1s+10 (1c+11 rank 7); nu=6: 1c+11 (1c+11 rank 1); nu=7: 1s+10 (1c+11 rank 7); nu=8: 1s+01 (1c+11 rank 15); nu=9: 0c+01 (1c+11 rank 16); nu=10: 0c+10 (1c+11 rank 8); nu=11: 0s+10 (1c+11 rank 13)
+   t2=0.2, nu=1: winner 0s+10 E = -3.4934; 1c+11 E = -2.8560 (rank 13/16)
+   t2=1.0: nu=1: 0c+00 (1c+11 rank 14); nu=2: 0c+10 (1c+11 rank 14); nu=3: 0c+01 (1c+11 rank 16); nu=4: 1s+01 (1c+11 rank 12); nu=5: 1s+11 (1c+11 rank 2); nu=6: 1c+11 (1c+11 rank 1); nu=7: 1s+11 (1c+11 rank 2); nu=8: 1s+01 (1c+11 rank 12); nu=9: 0c+01 (1c+11 rank 16); nu=10: 0c+10 (1c+11 rank 14); nu=11: 0c+00 (1c+11 rank 14)
+
+elapsed 501.4s
+TOTAL: PASS=10 FAIL=0

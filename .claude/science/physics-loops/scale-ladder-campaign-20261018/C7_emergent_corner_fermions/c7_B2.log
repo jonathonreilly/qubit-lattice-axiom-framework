@@ -1,0 +1,24 @@
+
+t2 = 0.2: 1c+11 E = -11.41729 (4^3 grid)
+  uniform 1s+11 : E -11.02299 -> -11.02299  (above 1c+11 by +0.39430); fluxes {'square': 'frac(pi) 1.000', 'triangle': 'outward mean +0.000pi, frac(+pi/2) 0.50, frac(|phi|=pi/2) 1.00', 'plaquette': 'frac(pi) 1.000', 'tube': 'frac(pi) 1.000'}; t = 87s
+  uniform 0c+11 : E -9.22213 -> -11.29027  (above 1c+11 by +0.12702); fluxes {'square': 'frac(pi) 0.917', 'triangle': 'outward mean +0.125pi, frac(+pi/2) 0.62, frac(|phi|=pi/2) 1.00', 'plaquette': 'frac(pi) 0.583', 'tube': 'frac(pi) 0.938'}; t = 365s
+  uniform 1c+01 : E -11.41646 -> -11.41646  (above 1c+11 by +0.00084); fluxes {'square': 'frac(pi) 1.000', 'triangle': 'outward mean +0.500pi, frac(+pi/2) 1.00, frac(|phi|=pi/2) 1.00', 'plaquette': 'frac(pi) 0.000', 'tube': 'frac(pi) 1.000'}; t = 408s
+  random 0      : E -10.36560 -> -11.29072  (above 1c+11 by +0.12658); fluxes {'square': 'frac(pi) 0.917', 'triangle': 'outward mean -0.250pi, frac(+pi/2) 0.25, frac(|phi|=pi/2) 1.00', 'plaquette': 'frac(pi) 0.708', 'tube': 'frac(pi) 0.958'}; t = 571s
+  random 1      : E -10.26099 -> -11.34428  (above 1c+11 by +0.07301); fluxes {'square': 'frac(pi) 0.958', 'triangle': 'outward mean +0.062pi, frac(+pi/2) 0.56, frac(|phi|=pi/2) 1.00', 'plaquette': 'frac(pi) 0.542', 'tube': 'frac(pi) 0.875'}; t = 662s
+  kick 0: -11.41646 (best -11.41646); t = 718s
+  kick 1: -11.41673 (best -11.41673); t = 775s
+  kick 2: -11.36685 (best -11.41673); t = 833s
+
+t2 = 1.0: 1c+11 E = -13.81808 (4^3 grid)
+  uniform 1s+11 : E -13.39687 -> -13.39687  (above 1c+11 by +0.42121); fluxes {'square': 'frac(pi) 1.000', 'triangle': 'outward mean +0.000pi, frac(+pi/2) 0.50, frac(|phi|=pi/2) 1.00', 'plaquette': 'frac(pi) 1.000', 'tube': 'frac(pi) 1.000'}; t = 852s
+  uniform 0c+11 : E -13.19203 -> -13.19203  (above 1c+11 by +0.62604); fluxes {'square': 'frac(pi) 0.000', 'triangle': 'outward mean +0.500pi, frac(+pi/2) 1.00, frac(|phi|=pi/2) 1.00', 'plaquette': 'frac(pi) 1.000', 'tube': 'frac(pi) 1.000'}; t = 871s
+  uniform 1c+01 : E -13.50049 -> -13.50049  (above 1c+11 by +0.31758); fluxes {'square': 'frac(pi) 1.000', 'triangle': 'outward mean +0.500pi, frac(+pi/2) 1.00, frac(|phi|=pi/2) 1.00', 'plaquette': 'frac(pi) 0.000', 'tube': 'frac(pi) 1.000'}; t = 889s
+  random 0      : E -12.73191 -> -13.44704  (above 1c+11 by +0.37104); fluxes {'square': 'frac(pi) 0.875', 'triangle': 'outward mean +0.062pi, frac(+pi/2) 0.56, frac(|phi|=pi/2) 1.00', 'plaquette': 'frac(pi) 1.000', 'tube': 'frac(pi) 1.000'}; t = 947s
+  random 1      : E -12.67518 -> -13.37955  (above 1c+11 by +0.43852); fluxes {'square': 'frac(pi) 0.583', 'triangle': 'outward mean -0.031pi, frac(+pi/2) 0.47, frac(|phi|=pi/2) 1.00', 'plaquette': 'frac(pi) 1.000', 'tube': 'frac(pi) 1.000'}; t = 1002s
+  kick 0: -13.56427 (best -13.56427); t = 1039s
+  kick 1: -13.61005 (best -13.61005); t = 1095s
+  kick 2: -13.63136 (best -13.63136); t = 1148s
+[PASS] no start (3 uniform runners-up, 4 random, 6 kicks) reaches a period-2 sector below 1c+11 at t2 = 0.2, 1
+
+elapsed 1147.7s
+TOTAL: PASS=1 FAIL=0

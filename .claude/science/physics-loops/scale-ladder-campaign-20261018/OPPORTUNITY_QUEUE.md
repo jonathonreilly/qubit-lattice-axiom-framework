@@ -1,10 +1,9 @@
-# Opportunity queue (ranked)
+# Opportunity queue (ranked; updated 06:52Z)
 
-1. **B1, parameter-free corner fermion** (main agent). Status: obstruction found for walks whose only momentum dependence is the standard link hopping; enumerating canonical orbit hoppings.
-2. **B3, formation coding-radius theorem** (worker). High value: it is a proof.
-3. **B4, gravity g3 extraction** (worker). Decides whether the gravity lane needs protection.
-4. **B2, common origin** (main agent, after B1).
-5. **B7, LSM constraint for the corner model** (worker).
-6. **B5, Record clock hypothesis** (worker).
-7. **B6, Maxwell winding sectors** (worker; compute-heavy).
-8. **B8, ergodicity and frequency** (worker).
+1. **B15/B16: closure with fermion and Maxwell matter.** Is there one cone for every species? This is the cross-rung "one speed" question.
+2. **B14 note** into PR #9718.
+3. **B13 bias control.** Decides whether the ring-model Coulomb phase is real at J=1, V=0.
+4. **Doubler-free step.** The corollary says it needs gaplessness or broken axis C2s. Open; low priority, since the searches are consistent with the corollary.
+5. **Exact lattice closure beyond O(a²).** Open; possibly needs a modified bracket (cf. the E5 obstruction).
+
+Done: B1, B3, B4, B4b, B5, B6, B7, B8, B11, B12, B14, C20.

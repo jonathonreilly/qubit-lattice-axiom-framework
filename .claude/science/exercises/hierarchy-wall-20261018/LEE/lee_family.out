@@ -1,0 +1,69 @@
+v_cand = 246.282818 GeV, delta0 = +2.551307e-04
+prefactors: 45 distinct from 17 rationals x 3 roots
+column check F0: min |ln c| = 0.1305 > 1% window width 0.0199: True
+column check F_core: min |ln c| = 0.1305 > 1% window width 0.0199: True
+column check F_uniform: min |ln c| = 0.1305 > 1% window width 0.0199: True
+
+=== F0 (decision family): N = 14400 members (12601 distinct values)
+  window 0.03%    : N_hit =    2  p_hit = 1.389e-04  p_global(exact) = 0.0484  p_global(MC) = 0.0481  E[#hits] = 0.0614
+      MPl (7/8)^(1/4) a_LM^16                    246.2828 GeV  dev +0.0255%
+      MPl (7/8)^(1/4) a_s(v)/4pi^8               246.2828 GeV  dev +0.0255%
+  window 1%       : N_hit =    7  p_hit = 4.861e-04  p_global(exact) = 0.7721  p_global(MC) = 0.7717  E[#hits] = 2.0354
+      MPl (7/8)^(1/4) a_LM^16                    246.2828 GeV  dev +0.0255%
+      MPl (7/8)^(1/4) a_s(v)/4pi^8               246.2828 GeV  dev +0.0255%
+      MPl (15/16)^(1/2) a_LM^16                  246.5572 GeV  dev +0.1370%
+      MPl (15/16)^(1/2) a_s(v)/4pi^8             246.5572 GeV  dev +0.1370%
+      MPl (31/32)^(1/1) a_LM^16                  246.6856 GeV  dev +0.1891%
+      MPl (31/32)^(1/1) a_s(v)/4pi^8             246.6856 GeV  dev +0.1891%
+      MPl (4/3)^(1/2) a_s(v)^17                  244.9783 GeV  dev -0.5043%
+  window |delta0| : N_hit =    1  p_hit = 6.944e-05  p_global(exact) = 0.0416  p_global(MC) = 0.0410  E[#hits] = 0.0522
+      MPl (7/8)^(1/4) a_LM^16                    246.2828 GeV  dev +0.0255%
+
+=== F_core: N = 7200 members (6841 distinct values)
+  window 0.03%    : N_hit =    1  p_hit = 1.389e-04  p_global(exact) = 0.0314  p_global(MC) = 0.0316  E[#hits] = 0.0326
+      MPl (7/8)^(1/4) a_LM^16                    246.2828 GeV  dev +0.0255%
+  window 1%       : N_hit =    4  p_hit = 5.556e-04  p_global(exact) = 0.5820  p_global(MC) = 0.5827  E[#hits] = 1.0803
+      MPl (7/8)^(1/4) a_LM^16                    246.2828 GeV  dev +0.0255%
+      MPl (15/16)^(1/2) a_LM^16                  246.5572 GeV  dev +0.1370%
+      MPl (31/32)^(1/1) a_LM^16                  246.6856 GeV  dev +0.1891%
+      MPl (4/3)^(1/2) a_s(v)^17                  244.9783 GeV  dev -0.5043%
+  window |delta0| : N_hit =    1  p_hit = 1.389e-04  p_global(exact) = 0.0269  p_global(MC) = 0.0277  E[#hits] = 0.0277
+      MPl (7/8)^(1/4) a_LM^16                    246.2828 GeV  dev +0.0255%
+
+=== F_uniform: N = 21600 members (19771 distinct values)
+  window 0.03%    : N_hit =    2  p_hit = 9.259e-05  p_global(exact) = 0.1115  p_global(MC) = 0.1105  E[#hits] = 0.1322
+      MPl (7/8)^(1/4) a_LM^16                    246.2828 GeV  dev +0.0255%
+      MPl (7/8)^(1/4) a_s(v)/4pi^8               246.2828 GeV  dev +0.0255%
+  window 1%       : N_hit =   10  p_hit = 4.630e-04  p_global(exact) = 0.9767  p_global(MC) = 0.9774  E[#hits] = 4.3862
+      MPl (7/8)^(1/4) a_LM^16                    246.2828 GeV  dev +0.0255%
+      MPl (7/8)^(1/4) a_s(v)/4pi^8               246.2828 GeV  dev +0.0255%
+      MPl (15/16)^(1/2) a_LM^16                  246.5572 GeV  dev +0.1370%
+      MPl (15/16)^(1/2) a_s(v)/4pi^8             246.5572 GeV  dev +0.1370%
+      MPl (31/32)^(1/1) a_LM^16                  246.6856 GeV  dev +0.1891%
+      MPl (31/32)^(1/1) a_s(v)/4pi^8             246.6856 GeV  dev +0.1891%
+      MPl (4/3)^(1/2) a_s(v)^17                  244.9783 GeV  dev -0.5043%
+      MPl (3)^(1/2) a_LM/pi^11                   244.6684 GeV  dev -0.6302%
+      MPl (2/3)^(1/4) <P>/pi^23                  248.4298 GeV  dev +0.8975%
+      MPl (3)^(1/1) u0/pi^31                     248.6559 GeV  dev +0.9893%
+  window |delta0| : N_hit =    1  p_hit = 4.630e-05  p_global(exact) = 0.0963  p_global(MC) = 0.0963  E[#hits] = 0.1124
+      MPl (7/8)^(1/4) a_LM^16                    246.2828 GeV  dev +0.0255%
+
+=== F0x2 (both M_Pl conventions): N = 28800 members (25201 distinct values)
+  window 0.03%    : N_hit =    2  p_hit = 6.944e-05  p_global(exact) = 0.0951  p_global(MC) = 0.0949  E[#hits] = 0.1235
+      MPl (7/8)^(1/4) a_LM^16                    246.2828 GeV  dev +0.0255%
+      MPl (7/8)^(1/4) a_s(v)/4pi^8               246.2828 GeV  dev +0.0255%
+  window 1%       : N_hit =    9  p_hit = 3.125e-04  p_global(exact) = 0.9574  p_global(MC) = 0.9581  E[#hits] = 4.0967
+      MPl (7/8)^(1/4) a_LM^16                    246.2828 GeV  dev +0.0255%
+      MPl (7/8)^(1/4) a_s(v)/4pi^8               246.2828 GeV  dev +0.0255%
+      MPl (15/16)^(1/2) a_LM^16                  246.5572 GeV  dev +0.1370%
+      MPl (15/16)^(1/2) a_s(v)/4pi^8             246.5572 GeV  dev +0.1370%
+      MPl (31/32)^(1/1) a_LM^16                  246.6856 GeV  dev +0.1891%
+      MPl (31/32)^(1/1) a_s(v)/4pi^8             246.6856 GeV  dev +0.1891%
+      MPl (4/3)^(1/2) a_s(v)^17                  244.9783 GeV  dev -0.5043%
+      MPl_red (1/4)^(1/1) a_bare/4pi^7           248.6349 GeV  dev +0.9808%
+      MPl_red (1/4)^(1/1) a_bare^14              248.6349 GeV  dev +0.9808%
+  window |delta0| : N_hit =    1  p_hit = 3.472e-05  p_global(exact) = 0.0820  p_global(MC) = 0.0819  E[#hits] = 0.1050
+      MPl (7/8)^(1/4) a_LM^16                    246.2828 GeV  dev +0.0255%
+
+max hits in one column (1% window, F0): 1
+watchdog peak RSS 29312 KB

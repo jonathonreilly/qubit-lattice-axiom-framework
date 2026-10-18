@@ -1,0 +1,5 @@
+targets in [v/10^0.5, v*10^0.5]: p_global(0.03%) = 0.0538
+targets in [v/10^1, v*10^1]: p_global(0.03%) = 0.0484
+targets in [v/10^2, v*10^2]: p_global(0.03%) = 0.0485
+targets in [v/10^3, v*10^3]: p_global(0.03%) = 0.0487
+watchdog peak RSS 0 KB

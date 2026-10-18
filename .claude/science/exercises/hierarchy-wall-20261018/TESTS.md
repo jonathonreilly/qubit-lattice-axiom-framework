@@ -48,3 +48,33 @@
 - **Why OPEN.** The slowest irrelevant exponent ω is not resolved away from 0.2. An irrelevant direction cannot generate a scale (suggested).
 - **Level time is diffusive at criticality** (z ≈ 2), not light-like.
 - **Raw data** (132 MB) was not archived; the scripts and outputs were.
+
+**LEE-1. Is the 0.03% match of v_cand = M_Pl(7/8)^{1/4}α_LM^16 to 246.22 GeV more than a coincidence?** (pre-registered 2026-10-18T21:10Z; Jon asked to probe it.)
+- **(i) Look-elsewhere count.** Define the formula family before computing any number. Take the class
+  M_Pl × r^{1/n} × c^k
+  where:
+  - r is drawn from main's own small rationals and zeta/eta ratios of the same kind as 7/8;
+  - c is drawn from {α_bare = 1/4π, u₀, α_LM, ⟨P⟩, and their reduced variants};
+  - n ranges over {1, 2, 4};
+  - k ranges over 1..32.
+
+  Fix the family in PREREG before evaluating anything. Count the members within 0.03% (and within 1%) of v. Report p_hit, the fraction of the family that hits.
+- **(ii) Input robustness.** Recompute v_cand with:
+  - the pure-gauge ⟨P⟩ (0.5934);
+  - main's matter-inclusive or dynamical plaquette values, where they exist;
+  - the stated uncertainty of each.
+
+  Use dln v/dln⟨P⟩ = −4. Also use both M_Pl conventions (full and reduced).
+- **Readings.**
+  - **LEE-COINCIDENCE:** p_hit at 0.03% is at least 0.05; or the match moves by more than 10× its own size under any equally justified input or convention.
+  - **LEE-SIGNIFICANT:** p_hit is at most 1e-3, and the match survives every equally justified input within 1%.
+  - **OPEN:** otherwise.
+
+**LEE-1 result (recorded 21:18Z; same family; unrefereed): LEE-COINCIDENCE.**
+- **Look-elsewhere chance.** The chance that a random target gets a match this close within the 14,400-member registered family is p_global ≈ 0.05, with a range of 0.03–0.11 across family variants.
+- **Defect in the registered p_hit.** It cannot work as a significance measure: column spacing allows at most one hit per column (proved).
+- **Instability under justified inputs.**
+  - Equally justified plaquette inputs (1-, 2- and 4-taste matter-inclusive values) move v_cand by 160–620× the size of the match.
+  - The edge of main's own ±0.0006 band moves it by 16×.
+- **A match is always available.** At each equally justified input, a different family member matches v just as well (post-hoc).
+- **Reading:** the closeness of the match is generic to the family; the 0.03% is a coincidence at the registered scope.

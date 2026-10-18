@@ -464,3 +464,8 @@ Status: conditional-support; trace: upstream_support; proposal_allowed: false.
 ## Native primitive-loop interaction
 Native primitive-loop law complete: exact correlation integral gives perimeter/turn Gamma coefficient. Complete order8 directional interactions include overlapping-square folds: diagonal(2,2) repels545JLlambda8/5308416; axis(3,0) attracts-9JLlambda8/32768. EvenR>=8 avoidsaxialwrapalias. Independent methods andfinalreviewPASS; source-boundreplay2.032821sPASS. Noallorderpotential/scattering/bandclaim. Root next fullQ8perimeter16 manifold: finiteenumeration alreadyfinds four-column configurations alongside two-column states, so simpletwo-body truncationisnotassumed.
 Status: bounded-support; trace: upstream_support; proposal_allowed: false.
+
+
+## Secondary neutral molecule
+Secondary neutral molecule complete: exhaustiveQ8/per16classification includesinfiniteoddrod+singletonfamily; fullD8selectsaxisdistance3minimum. Native2hoptranslations tparallel=gamma²/v,tperp=4gamma²/v lambda12 and6hoporientationmixlambda20 derived, transverseisotropiclowerbranchq<<lambda4. Centeredphysicalsourceq0weight1-5lambda²/2+Olambda4; genericqerrorq4/lambda16explicit. Independentgeometry,energy,motion,transferandfinalPASS; sourceboundreplay.617992sPASS. ActualHfixedp>4energytailM>12+4p,sourceM>24+3p; p5M70works. Noobservational/commonmetric/fermionclaim. Mainrefreshunchanged584755767deb8dfb670f07211d8446873fd0999b.
+Status: conditional-support; trace: upstream_support; proposal_allowed: false.

@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/native_secondary_neutral_molecule.py
+runner_sha256: 4447b9163cab37aa75927a7a2876e8cf2b29f6e2fc3b3eb4b1a44db950c33c92
+input_fingerprint_sha256: 6854cf08108d33b3e7c508aced649c9d4b9edd27e2b2ed2ea856260c417773da
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+{"status": "conditional-support", "scope": "Native secondary neutral molecule: exact D8/path controls, analytic actual-H/source transfer, no observation test", "control": {"two_hop": [{"columns": [[0, 0], [3, 0]], "weight": "327680/9"}, {"columns": [[1, 0], [4, 0]], "weight": "32768/9"}, {"columns": [[0, -1], [3, -1]], "weight": "131072/9"}, {"columns": [[0, 1], [3, 1]], "weight": "131072/9"}, {"columns": [[-1, 0], [2, 0]], "weight": "32768/9"}], "orientation": [{"columns": [[1, -3], [1, 0]], "weight": "1046023065421557893414518784/39425049"}, {"columns": [[0, -3], [0, 0]], "weight": "1046023065421557893414518784/118275147"}, {"columns": [[2, -3], [2, 0]], "weight": "1046023065421557893414518784/39425049"}, {"columns": [[1, -2], [1, 1]], "weight": "1046023065421557893414518784/13141683"}, {"columns": [[0, -2], [0, 1]], "weight": "1046023065421557893414518784/39425049"}, {"columns": [[2, -2], [2, 1]], "weight": "1046023065421557893414518784/13141683"}, {"columns": [[3, -3], [3, 0]], "weight": "1046023065421557893414518784/118275147"}, {"columns": [[3, -2], [3, 1]], "weight": "1046023065421557893414518784/39425049"}, {"columns": [[1, -1], [1, 2]], "weight": "1046023065421557893414518784/13141683"}, {"columns": [[0, -1], [0, 2]], "weight": "1046023065421557893414518784/39425049"}, {"columns": [[2, -1], [2, 2]], "weight": "1046023065421557893414518784/13141683"}, {"columns": [[3, -1], [3, 2]], "weight": "1046023065421557893414518784/39425049"}, {"columns": [[2, 0], [2, 3]], "weight": "1046023065421557893414518784/39425049"}, {"columns": [[1, 0], [1, 3]], "weight": "1046023065421557893414518784/39425049"}, {"columns": [[0, 0], [0, 3]], "weight": "1046023065421557893414518784/118275147"}, {"columns": [[3, 0], [3, 3]], "weight": "1046023065421557893414518784/118275147"}], "orientation_sum": "66945476186979705178529202176/118275147", "rod_lengths_checked": [3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77, 79, 81, 83, 85, 87, 89, 91, 93, 95, 97, 99, 101]}, "independent_check": "PASS independent full-edge neighbor enumeration, denominators, 2-hop and 6-hop coefficients"}
+
+----- stderr -----
+

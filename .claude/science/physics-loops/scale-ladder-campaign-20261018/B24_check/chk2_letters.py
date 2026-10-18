@@ -104,15 +104,16 @@ Pc_m = Pc[np.ix_(perm, perm)]; Qc_m = np.eye(12) - Pc_m
 match = [np.allclose(np.abs(X_), np.abs(PPm), atol=1e-9) for X_ in (Pc_m, Qc_m)]
 # sign gauge: diagonal +-1 G with G X G = PPm
 def find_gauge(X_, Y_):
-    g = [0] * 12; g[0] = 1; changed = True
-    while changed:
-        changed = False
-        for a in range(12):
-            for b in range(12):
-                if g[a] and not g[b] and abs(Y_[a, b]) > 1e-9:
-                    r = Y_[a, b] / X_[a, b]; g[b] = int(np.sign(r.real)) * g[a]; changed = True
-    for a in range(12):
-        if not g[a]: g[a] = 1
+    g = [0] * 12
+    for start in range(12):                      # every connected component (the 3 planes are disconnected)
+        if g[start]: continue
+        g[start] = 1; changed = True
+        while changed:
+            changed = False
+            for a in range(12):
+                for b in range(12):
+                    if g[a] and not g[b] and abs(Y_[a, b]) > 1e-9:
+                        r = Y_[a, b] / X_[a, b]; g[b] = int(np.sign(r.real)) * g[a]; changed = True
     G = np.diag(g); return np.allclose(G @ X_ @ G, Y_)
 gauge_ok = any(m and find_gauge(X_, PPm) for m, X_ in zip(match, (Pc_m, Qc_m)))
 check("the chk_core commutant projector equals B24's PP = PLm[0]+PLm[2] (or 1-PP) up to a diagonal sign gauge (independent identification)",

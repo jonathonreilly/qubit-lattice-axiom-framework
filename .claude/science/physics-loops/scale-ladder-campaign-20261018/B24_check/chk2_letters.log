@@ -8,8 +8,8 @@
 [PASS] commutant of {Z_x,Z_y,Z_z} in the symmetric algebra: dim 2; commutant of {Z_i, Y}: dim 1 (scalars)  2 1
 [PASS] non-scalar part of the Z-commutant is a projector pair: two eigenvalues, ranks 6 + 6; so commutant = span{1, P} with rank-6 P  levels [np.float64(-1.0), np.float64(1.0)]
 [PASS] P is block diagonal over the 3 corner planes with rank 2 in each  [2, 2, 2]
-[FAIL] the chk_core commutant projector equals B24's PP = PLm[0]+PLm[2] (or 1-PP) up to a diagonal sign gauge (independent identification)  |.| match (P, 1-P): [True, True]
+[PASS] the chk_core commutant projector equals B24's PP = PLm[0]+PLm[2] (or 1-PP) up to a diagonal sign gauge (independent identification)  |.| match (P, 1-P): [True, True]
 [PASS] chk_model blS: 12 diagonal entries at displacement +f_c (so S^n(k+t) = S^n(k) diag(e^{+i n t.f_c}) exactly)  12
 [PASS] chk_model blL: all hops position-preserving, displacement (f_c - f_c')/2 (so R_L(k+t) = D_t R_L D_t^-1, D_t = diag(e^{-i t.f/2}) exactly)  
 
-TOTAL: PASS=12 FAIL=1
+TOTAL: PASS=13 FAIL=0

@@ -35,3 +35,7 @@
 == (c) no-go lemma
  constant-spectrum symmetric factors: 24 isolated doublets, max half-splitting/q = 8.9e-09
  i[H_link, H_on] commutes with PSG rotations (real space): True 0.6
+  spectrum of exp(-i th H(k)) k-dependent: True
+  spectrum of exp(-i th H(k)) k-dependent: True
+ k-dependent-spectrum factor exp(-i th H(k)): isolated doublet speeds [0. 0. 0. 0.]
+EXIT 0

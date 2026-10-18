@@ -8,3 +8,4 @@ one-particle O_h site irreps: [4, 4, 4]
    char (1, 0): min numerical rank over a CP^1 grid of the first two basis vectors = 8
    char (1, 1): min numerical rank over a CP^1 grid of the first two basis vectors = 12
 O_h preserves parity of x+y+z: True
+pair operators: G_g P_v^dag G_g^-1 = chi_g P_(Rv)^dag for all 48 g on sample even sites (char (0, 1)): True

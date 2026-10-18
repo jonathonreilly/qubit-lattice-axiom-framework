@@ -1,0 +1,22 @@
+PASS: N_L5_count L=5: 400/400 random starts converged to exact graded Lie algebras with (S)
+PASS: N_L5_T1 2 Lam_n / Lam_1 integer on every solution (Theorem B (i))
+PASS: N_L5_T2 Lam_n/Lam_1 not in n + LZ for n not in {0,+-1} on every solution (Theorem B (ii))
+PASS: N_L5_T3 arc formula Lam_n = n - centre(arc) holds on every solution; Lam_2/Lam_1 values reached: [-0.5, 0.0]
+PASS: N_L5_pin2 Lam_2 = 2 pinned: smallest max|Jacobi| over 100 starts = 2.000e+00 (no solution found)
+PASS: N_L6_count L=6: 400/400 random starts converged to exact graded Lie algebras with (S)
+PASS: N_L6_T1 2 Lam_n / Lam_1 integer on every solution (Theorem B (i))
+PASS: N_L6_T2 Lam_n/Lam_1 not in n + LZ for n not in {0,+-1} on every solution (Theorem B (ii))
+PASS: N_L6_T3 arc formula Lam_n = n - centre(arc) holds on every solution; Lam_2/Lam_1 values reached: [-1.0, -0.5, 0.0]
+PASS: N_L6_pin2 Lam_2 = 2 pinned: smallest max|Jacobi| over 100 starts = 2.000e+00 (no solution found)
+PASS: N_L7_count L=7: 400/400 random starts converged to exact graded Lie algebras with (S)
+PASS: N_L7_T1 2 Lam_n / Lam_1 integer on every solution (Theorem B (i))
+PASS: N_L7_T2 Lam_n/Lam_1 not in n + LZ for n not in {0,+-1} on every solution (Theorem B (ii))
+PASS: N_L7_T3 arc formula Lam_n = n - centre(arc) holds on every solution; Lam_2/Lam_1 values reached: [-1.5, -1.0, -0.5, 0.0]
+PASS: N_L7_pin2 Lam_2 = 2 pinned: smallest max|Jacobi| over 100 starts = 2.000e+00 (no solution found)
+PASS: N_L8_count L=8: 400/400 random starts converged to exact graded Lie algebras with (S)
+PASS: N_L8_T1 2 Lam_n / Lam_1 integer on every solution (Theorem B (i))
+PASS: N_L8_T2 Lam_n/Lam_1 not in n + LZ for n not in {0,+-1} on every solution (Theorem B (ii))
+PASS: N_L8_T3 arc formula Lam_n = n - centre(arc) holds on every solution; Lam_2/Lam_1 values reached: [-1.0, -0.5, 0.0]
+PASS: N_L8_pin2 Lam_2 = 2 pinned: smallest max|Jacobi| over 100 starts = 2.000e+00 (no solution found)
+TOTAL: PASS=20 FAIL=0
+EXIT 0

@@ -1,0 +1,2 @@
+d(z) = (z - 1)*(4*z**5 + 3*z**4 - 9*z**3 - 4*z**2 + z - 4)/(7*z**3)
+gcd of non-constant z-coefficients: y - 1 roots: [1]

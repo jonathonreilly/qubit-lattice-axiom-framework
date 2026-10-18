@@ -1,0 +1,12 @@
+   m = 0.5, N = 24
+PASS: L1 [55s] S, M1, M2 all give D0 = sum phat^2 (+ m^2) at h = 0; positive control: FP kernel is Ward-transverse
+FAIL: L2 [243s] quadrature convergence N=24 vs 32: rel diff of the M1 k^2 symbol = 7.0e-06
+   <phi^2>_lat = 0.145388;  covariant (proper-time) reference matched on <phi^2>: c_EH = (1/6)<phi^2>/2 = 0.012116
+   S : Ward ratio over 6 directions 0.643 .. 1.063;  c_EH(LSQ) = -0.002557 (-0.211 x covariant ref);  non-EH fraction 0.966
+   M1: Ward ratio over 6 directions 0.416 .. 1.793;  c_EH(LSQ) = 0.004371 (0.361 x covariant ref);  non-EH fraction 0.984
+   M2: Ward ratio over 6 directions 0.416 .. 1.063;  c_EH(LSQ) = -0.004345 (-0.359 x covariant ref);  non-EH fraction 0.922
+PASS: L3 [942s] the closure-forced coupling, transcribed to the lattice, does not give a Ward-transverse k^2 symbol (max ratios S 1.063, M1 1.793, M2 1.063)
+PASS: L4 [942s] M1 vs M2 (identical continuum seagull, O(a^2)-different leg placement): k^2 symbols differ by 3.357 (relative max); c_EH 0.004371 vs -0.004345
+PASS: L5 [948s] the M1 - M2 k^2 difference is exactly the seagull-leg placement tadpole (-1/4 per lattice difference x <G f0>), relative residual 6.9e-08: an O(a^2) contact x Lambda^4 = O(Lambda^2) term
+PASS: L6 [948s] placement freedom alone does not restore Ward: best lam = -0.046 leaves max Ward ratio 0.850 (c_EH there -0.004746); restoring Ward needs further tuned non-covariant K^2 contact terms (B4b: 8 of 9 B4 coefficients), which no examined lattice symmetry or closure condition supplies
+TOTAL: PASS=5 FAIL=1  (948s)

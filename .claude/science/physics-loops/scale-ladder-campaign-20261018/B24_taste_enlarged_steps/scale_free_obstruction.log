@@ -1,0 +1,5 @@
+[PASS] k* is fixed by all 24 rotations mod 2piZ^3 under the operator-derived affine action  
+[PASS] witness q_w is fixed by a commuting C2 pair and not by T, for sc, fcc and bcc (scale-free: units of a)  (little-group order, T?, #C2 pairs) = {'sc': (8, False, 6), 'fcc': (4, False, 3), 'bcc': (8, False, 6)}
+[PASS] same verdict from the full affine action at k* + q_w on (pi/16)Z^3, a = 2pi, pi, pi/2, pi/4 (fcc: a = pi, pi/2, pi/4, the ones containing 2piZ^3)  
+
+TOTAL: PASS=3 FAIL=0

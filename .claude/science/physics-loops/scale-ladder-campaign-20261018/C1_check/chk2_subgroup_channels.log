@@ -1,0 +1,27 @@
+subgroups of O found: 30 (orders [1, 2, 3, 4, 6, 8, 12, 24])
+(H, chi) pairs with a non-empty on-site channel: 84
+   SELECTIVE (+-k* forbidden, 4 doublers allowed): |H|=2 classes={"C2'": 1, 'E': 1}  x6
+   SELECTIVE (+-k* forbidden, 6 doublers allowed): |H|=3 classes={'C3': 2, 'E': 1}  x8
+   SELECTIVE (+-k* forbidden, 4 doublers allowed): |H|=4 classes={'C2': 1, "C2'": 2, 'E': 1}  x3
+   SELECTIVE (+-k* forbidden, 4 doublers allowed): |H|=4 classes={'C2': 1, 'C4': 2, 'E': 1}  x3
+   SELECTIVE (+-k* forbidden, 4 doublers allowed): |H|=8 classes={'C2': 3, "C2'": 2, 'C4': 2, 'E': 1}  x3
+   SELECTIVE (+-k* forbidden, 6 doublers allowed): |H|=12 classes={'C2': 3, 'C3': 8, 'E': 1}  x2
+[PASS] X1 (adversarial) selective symmetric-subgroup channels EXIST: with O broken to T (C4, C2' broken; C3 U(1)-dressed, chi(C3) = omega), the Q = R on-site singlet is forbidden at +-k* and allowed at all six doublers  2 (T, chi) channels; complex chi: [[(-0.5+0.866j)], [(-0.5-0.866j)]]
+[PASS] X1b no selective channel with H = O (C1's PSG-symmetric statement confirmed); selective channels need |H| <= 12  
+   T-omega on-site channel dim 7
+   broken check: max over C4/C2' of min_c ||U A U^T - c A|| / ||A|| : 1.414
+   first-order node singlets |m_K|: k*+pi(0, 1, 0):2.306e-01, k*+pi(0, 1, 1):1.351e-01, k*:3.920e-16, k*+pi(0, 0, 1):2.306e-01, k*+pi(1, 1, 0):1.351e-01, -k*:9.295e-17, k*+pi(1, 0, 0):2.306e-01, k*+pi(1, 0, 1):1.351e-01
+   BdG |eps|_min at the nodes: k*+pi(0, 1, 0):1.539e-01, k*+pi(0, 1, 1):6.146e-02, k*:6.593e-02, k*+pi(0, 0, 1):1.539e-01, k*+pi(1, 1, 0):6.146e-02, -k*:9.771e-03, k*+pi(1, 0, 0):1.539e-01, k*+pi(1, 0, 1):6.146e-02
+   k*: per-direction minimum of |eps| over r<=0.3: max 1.48e-02, at r in [0.150, 0.165]
+   -k*: per-direction minimum of |eps| over r<=0.3: max 8.60e-04, at r in [0.020, 0.020]
+[PASS] X2 T-omega on-site pairing (tau=0.5): first-order singlet exactly zero at +-k*, nonzero at the six doublers; the six doublers are gapped  min doubler gap 0.0615
+   node doublet <-> other levels at +-k*: {'k*,dim4,E=-3.142': '5.75e-01', 'k*,dim2,E=-1.571': '4.21e-16', 'k*,dim4,E=-0.0': '2.14e-01', '-k*,dim4,E=-3.142': '1.90e-01', '-k*,dim2,E=-1.571': '3.98e-16', '-k*,dim4,E=-0.0': '7.14e-02'}
+   lowest |eps| at +-k* vs tau: {'k*': ['6.95e-04', '2.77e-03', '1.10e-02', '4.30e-02'], '-k*': ['9.84e-05', '3.94e-04', '1.57e-03', '6.27e-03']}  log-log slopes: {'k*': np.float64(1.984), '-k*': np.float64(1.998)}
+[PASS] X3 T-omega on-site: the residual T does NOT protect a +-k* point node -- the node doublet couples to the G3/2 levels (D x G3/2 contains E, which contains omega under T), so the 4-fold BdG level at +-k* is shifted off zero by delta ~ tau^2 (still 4-fold), i.e. a quasi-energy (chemical-potential-like) offset: a small Bogoliubov shell of radius ~delta/v replaces the point (probe_tomega.log)  
+   global scan outside 0.35-balls of +-k* (N=20): min 0-gap 0.0614, min pi-gap 0.0614
+[PASS] X4 T-omega on-site: the six doublers are gapped and nothing else crosses quasi-energy 0/pi outside the +-k* balls (grid N=20; numerical, uncertified)  
+   range-1 T-omega: first-order singlets: k*+pi(0, 1, 0):2.2e+00, k*+pi(0, 1, 1):9.8e+00, k*:1.2e-15, k*+pi(0, 0, 1):2.2e+00, k*+pi(1, 1, 0):9.8e+00, -k*:3.6e-15, k*+pi(1, 0, 0):2.2e+00, k*+pi(1, 0, 1):9.8e+00
+   range-1 T-omega: BdG |eps| at nodes: k*+pi(0, 1, 0):4.79e-02, k*+pi(0, 1, 1):2.15e-01, k*:1.61e-02, k*+pi(0, 0, 1):4.79e-02, k*+pi(1, 1, 0):2.15e-01, -k*:5.35e-02, k*+pi(1, 0, 0):4.79e-02, k*+pi(1, 0, 1):2.15e-01
+[PASS] X5 range-1 T-omega pairing: singlet forbidden at +-k* (exact), doublers gapped, but +-k* again shifted off zero (not protected)  
+
+TOTAL: PASS=6 FAIL=0   [51s]

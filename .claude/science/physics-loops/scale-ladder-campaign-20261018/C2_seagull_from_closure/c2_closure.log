@@ -1,0 +1,22 @@
+PASS: S0 [2s] negative control (seagull + trh^2 pi^2/5 fails) and covariant scalar density closes {C(N),G[xi]} = C(-xi.dN) at orders matter^2 and h.matter^2 (positive control of engine + expansions)
+   V1 ansatz: 20 candidates -> 10 independent (with lapse weight N);  V2 ansatz: 156 candidates -> 28 independent
+PASS: S2 [21s] homogeneous lemma: {int N V2, int Pt 2 d xi} = 0 for all N, xi forces V2 = 0 (28-dim independent ansatz, residual free directions 0 all null) -- there is no linearly gauge-invariant h^2 matter^2 density with <= 2 derivatives, so V2 is fixed by V1
+   [c=1, mu=3/7] order matter^2: consistent=True, free = [u3, s2], s1 = -1, s2 = s2
+   [c=1, mu=3/7] order h.matter^2: consistent=True, free V2 directions = []
+   [c=1, mu=3/7] V1 = covariant stress + (t/2) trh H0 + zeta R1 phi^2 with [{t: s2, zeta: u3}]
+   t = s2, zeta = u3; s1 = -1, s2 = s2; V1 = family: True; V2 = family: True
+PASS: S1.0 [79s] [c=1, mu=3/7] {C,G} at matter^2 + h.matter^2 over the general ansatz: solution space is exactly the 2-parameter covariant family (density weight t <-> s2 = t, non-minimal zeta R phi^2), s1 = -1, and V2 is uniquely the second-order expansion of (sqrt g)^t H_m(g) + zeta sqrt g R phi^2 (no free V2 direction)
+   [c=5/3, mu=2/11] order matter^2: consistent=True, free = [u3, s2], s1 = -1, s2 = s2
+   [c=5/3, mu=2/11] order h.matter^2: consistent=True, free V2 directions = []
+   [c=5/3, mu=2/11] V1 = covariant stress + (t/2) trh H0 + zeta R1 phi^2 with [{t: s2, zeta: u3}]
+   t = s2, zeta = u3; s1 = -1, s2 = s2; V1 = family: True; V2 = family: True
+PASS: S1.1 [142s] [c=5/3, mu=2/11] {C,G} at matter^2 + h.matter^2 over the general ansatz: solution space is exactly the 2-parameter covariant family (density weight t <-> s2 = t, non-minimal zeta R phi^2), s1 = -1, and V2 is uniquely the second-order expansion of (sqrt g)^t H_m(g) + zeta sqrt g R phi^2 (no free V2 direction)
+   minimal point: V1 = cov True, V2 = cov True
+   {C,C} P-free: matter^2 -> [{c0: 1}];  h.matter^2 (with c0 from matter^2) -> [{beta: -1, c0: 1}]
+PASS: S3a [148s] {C,C} P-free with the S1 (minimal) coupling: matter^2 gives c0 = K/(4 alpha) = 1, h.matter^2 gives structure function delta - h (beta = -1); V2 does not enter this sector
+PASS: S3b [149s] {C,C} at P.h.matter^2 closes identically for the minimal S1 solution with the DeWitt h-linear kinetic term: no new condition on the seagull (ultralocal-in-h couplings give lapse-symmetric terms)
+   B14-style (no P-matter coupling, H0 supplied): consistent=True, free O(eps) directions = []
+   with w trP phi pi + cp N lap(phi^2) + phi^2 (y1 trPP + y2 trP^2): consistent=True, free = [y2]
+   free direction normalised: cp = 4, w = -4, y1 = -2, y2 = 1; V1' = zeta R1 phi^2 + cp [d(sqrt g g dphi^2)]^(1) with [{zt: -2}]
+PASS: S4 [156s] non-minimal direction (linearised): with B14's supplied H0 and no P-matter coupling the brackets {C,G} matter^2 + {C,C} matter^2, P.matter^2 force it to zero; admitting trP phi pi, N lap(phi^2), phi^2 P^2 leaves exactly one free direction = the Jordan-frame map of the minimal theory (g~ = (1-2s phi^2) g, N~ = (1-s phi^2) N): zeta = 2s, cp = -4s, w = 4s, y1 = 2s, y2 = -s
+TOTAL: PASS=7 FAIL=0  (156s)

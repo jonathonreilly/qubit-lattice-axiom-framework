@@ -1,0 +1,19 @@
+PASS: R0_L4 (S) alone => Lam_(-1) = -Lam_1 lies in the Jacobi ideal (Groebner membership; 4 vars)
+PASS: R0_L5 (S) alone => Lam_(-1) = -Lam_1 lies in the Jacobi ideal (Groebner membership; 8 vars)
+PASS: R0_L6 (S) alone => Lam_(-1) = -Lam_1 lies in the Jacobi ideal (Groebner membership; 13 vars)
+PASS: R0_L7 (S) alone => Lam_(-1) = -Lam_1 lies in the Jacobi ideal (Groebner membership; 19 vars)
+PASS: R1_L4 Lam_2/Lam_1 values consistent with (S)+Jacobi on grid: ['0']; arc prediction ['0']
+PASS: R1b_L4 Lam_2 = 2 Lam_1 (continuum) inconsistent; every consistent Lam_2/Lam_1 <= 0 (Theorem B's |ratio-2|>=1/2 holds and is not sharp)
+PASS: R1_L5 Lam_2/Lam_1 values consistent with (S)+Jacobi on grid: ['-1/2', '0']; arc prediction ['-1/2', '0']
+PASS: R1b_L5 Lam_2 = 2 Lam_1 (continuum) inconsistent; every consistent Lam_2/Lam_1 <= 0 (Theorem B's |ratio-2|>=1/2 holds and is not sharp)
+PASS: R1_L6 Lam_2/Lam_1 values consistent with (S)+Jacobi on grid: ['-1', '-1/2', '0']; arc prediction ['-1', '-1/2', '0']
+PASS: R1b_L6 Lam_2 = 2 Lam_1 (continuum) inconsistent; every consistent Lam_2/Lam_1 <= 0 (Theorem B's |ratio-2|>=1/2 holds and is not sharp)
+PASS: R1_L7 Lam_2/Lam_1 values consistent with (S)+Jacobi on grid: ['-1', '-1/2', '-3/2', '0']; arc prediction ['-1', '-1/2', '-3/2', '0']
+PASS: R1b_L7 Lam_2 = 2 Lam_1 (continuum) inconsistent; every consistent Lam_2/Lam_1 <= 0 (Theorem B's |ratio-2|>=1/2 holds and is not sharp)
+PASS: R2_L4 exact projection of the (S)+Jacobi variety to (Lam_2..Lam_2) = [(Fraction(0, 1),)]; arc-partition prediction = [(Fraction(0, 1),)]
+PASS: R2_L5 exact projection of the (S)+Jacobi variety to (Lam_2..Lam_3) = [(Fraction(-1, 2), Fraction(1, 2)), (Fraction(0, 1), Fraction(0, 1))]; arc-partition prediction = [(Fraction(-1, 2), Fraction(1, 2)), (Fraction(0, 1), Fraction(0, 1))]
+PASS: R2_L6 exact projection of the (S)+Jacobi variety to (Lam_2..Lam_4) = [(Fraction(-1, 1), Fraction(0, 1), Fraction(1, 1)), (Fraction(-1, 2), Fraction(1, 2), Fraction(0, 1)), (Fraction(0, 1), Fraction(-1, 2), Fraction(1, 2)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))]; arc-partition prediction = [(Fraction(-1, 1), Fraction(0, 1), Fraction(1, 1)), (Fraction(-1, 2), Fraction(1, 2), Fraction(0, 1)), (Fraction(0, 1), Fraction(-1, 2), Fraction(1, 2)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))]
+PASS: R2_L7 exact projection of the (S)+Jacobi variety to (Lam_2..Lam_5) = [(Fraction(-3, 2), Fraction(-1, 2), Fraction(1, 2), Fraction(3, 2)), (Fraction(-1, 1), Fraction(0, 1), Fraction(1, 1), Fraction(0, 1)), (Fraction(-1, 2), Fraction(1, 2), Fraction(-1, 2), Fraction(1, 2)), (Fraction(-1, 2), Fraction(1, 2), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-1, 1), Fraction(0, 1), Fraction(1, 1)), (Fraction(0, 1), Fraction(-1, 2), Fraction(1, 2), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 2), Fraction(1, 2)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))]; arc-partition prediction = [(Fraction(-3, 2), Fraction(-1, 2), Fraction(1, 2), Fraction(3, 2)), (Fraction(-1, 1), Fraction(0, 1), Fraction(1, 1), Fraction(0, 1)), (Fraction(-1, 2), Fraction(1, 2), Fraction(-1, 2), Fraction(1, 2)), (Fraction(-1, 2), Fraction(1, 2), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-1, 1), Fraction(0, 1), Fraction(1, 1)), (Fraction(0, 1), Fraction(-1, 2), Fraction(1, 2), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 2), Fraction(1, 2)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))]
+[exact part done in 21.9s]
+TOTAL: PASS=16 FAIL=0
+EXIT 0

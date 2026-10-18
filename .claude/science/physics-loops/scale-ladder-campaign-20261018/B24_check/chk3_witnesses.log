@@ -1,0 +1,37 @@
+
+  case A: ('S', 'o', 'S2', 'o') ('H20', 'L020') E=+0.0000  recorded kind D+D- L0=bcc(a=32pi/16)|2| nbad=26;  own: m(k*)=4, Lambda_0=bcc(8pi/4) |2|, v_s=1.4142
+[PASS] A: k* level at E has the recorded multiplicity and is an isotropic untilted cone at v_s = |n_S|sqrt2/3 (FD slopes)  {'smin': 1.4142106766613676, 'smax': 1.414216447896448, 'tilt': 3.531841485937548e-11}
+    witness (np.float64(-0.5), np.float64(-0.5), np.float64(-0.5)) rec (C2, m=4, aniso, smin=0.1789, smax=1.2121) -> own: node residual 2.6e-15, type C2, FD smin=0.1789 smax=1.2121 tilt=5.8e-11, level mults at k [4, 4, 4]
+    witness (np.float64(-0.5), np.float64(-0.5), np.float64(0.5)) rec (C2, m=4, aniso, smin=0.1789, smax=1.2121) -> own: node residual 2.5e-15, type C2, FD smin=0.1789 smax=1.2121 tilt=5.3e-11, level mults at k [4, 4, 4]
+    witness (np.float64(-0.5), np.float64(0.5), np.float64(0.5)) rec (C2, m=4, aniso, smin=0.1789, smax=1.2121) -> own: node residual 2.4e-15, type C2, FD smin=0.1789 smax=1.2121 tilt=5.5e-11, level mults at k [4, 4, 4]
+[PASS] A: recorded failure witnesses reproduced (node at E, same point type mod own Lambda_0, anisotropic speeds)  3 witnesses
+[PASS] A: own Lambda_0 equals the recorded one  bcc(8pi/4) vs bcc(a=32pi/16)|2|
+
+  case B: ('S4', 'p', 'S4', 'o') ('L101', 'H13') E=-1.5708  recorded kind D2 L0=sc(a=4pi/16)|512| nbad=3092;  own: m(k*)=2, Lambda_0=sc(1pi/4) |512|, v_s=3.7712
+[PASS] B: k* level at E has the recorded multiplicity and is an isotropic untilted cone at v_s = |n_S|sqrt2/3 (FD slopes)  {'smin': 3.7712361654174127, 'smax': 3.7712361658503997, 'tilt': 6.351486003808304e-06}
+    witness (np.float64(-1.0), np.float64(-1.0), np.float64(-0.875)) rec (C2, m=2, aniso, smin=0.6607, smax=5.4150) -> own: node residual 3.8e-15, type C2, FD smin=0.6607 smax=5.4150 tilt=6.6e-05, level mults at k [2, 2, 2, 2, 2, 2]
+    witness (np.float64(-1.0), np.float64(-1.0), np.float64(-0.625)) rec (C2, m=2, aniso, smin=0.6607, smax=5.4150) -> own: node residual 1.6e-15, type C2, FD smin=0.6607 smax=5.4150 tilt=6.6e-05, level mults at k [2, 2, 2, 2, 2, 2]
+    witness (np.float64(-1.0), np.float64(-1.0), np.float64(-0.375)) rec (C2, m=2, aniso, smin=0.6607, smax=5.4150) -> own: node residual 2.2e-15, type C2, FD smin=0.6607 smax=5.4150 tilt=6.6e-05, level mults at k [2, 2, 2, 2, 2, 2]
+[PASS] B: recorded failure witnesses reproduced (node at E, same point type mod own Lambda_0, anisotropic speeds)  3 witnesses
+[PASS] B: own Lambda_0 equals the recorded one  sc(1pi/4) vs sc(a=4pi/16)|512|
+
+  case C: ('S4', 'p', 'S4', 'o') ('L101', 'L123') E=+0.0000  recorded kind D+D- L0=sc(a=4pi/16)|512| nbad=20;  own: m(k*)=4, Lambda_0=sc(1pi/4) |512|, v_s=3.7712
+[PASS] C: k* level at E has the recorded multiplicity and is an isotropic untilted cone at v_s = |n_S|sqrt2/3 (FD slopes)  {'smin': 3.77118283132487, 'smax': 3.771289499261239, 'tilt': 2.5673352332944432e-11}
+    witness (np.float64(-0.90038), np.float64(0.76405), np.float64(-0.23595)) rec (gen, m=2, aniso, smin=0.1855, smax=4.9558) -> own: node residual 1.7e-14, type gen, FD smin=0.0080 smax=4.9871 tilt=5.0e-11, level mults at k [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    witness (np.float64(-0.90198), np.float64(-0.49753), np.float64(-0.49753)) rec (gen, m=2, aniso, smin=0.0363, smax=4.8526) -> own: node residual 8.6e-16, type gen, FD smin=0.0406 smax=4.8529 tilt=8.0e-11, level mults at k [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    witness (np.float64(-0.90009), np.float64(0.01545), np.float64(-0.48455)) rec (gen, m=2, aniso, smin=0.2010, smax=4.9742) -> own: node residual 5.3e-16, type gen, FD smin=0.0210 smax=5.0096 tilt=6.3e-11, level mults at k [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+[PASS] C: recorded failure witnesses reproduced (node at E, same point type mod own Lambda_0, anisotropic speeds)  3 witnesses
+[PASS] C: own Lambda_0 equals the recorded one  sc(1pi/4) vs sc(a=4pi/16)|512|
+
+  (5) level multiplicities at C2-pair-not-T classes mod each survivor's own Lambda_0
+   (family, Lambda_0, all levels even) -> #bad classes: {('small', 'sc(1pi/4)', True): 114, ('small', 'bcc(2pi/4)', True): 12, ('small', 'bcc(2pi/4)', False): 24, ('small', 'sc(2pi/4)', True): 240, ('small', 'sc(4pi/4)', True): 36, ('mix2', 'bcc(8pi/4)', True): 3114}
+   odd-level bad class: ((('S2', 'p', 'S2', 'o'), ('L101', 'H13')), 'bcc(2pi/4)', (0, 2, 4), [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+   odd-level bad class: ((('S2', 'p', 'S2', 'o'), ('L101', 'H13')), 'bcc(2pi/4)', (0, 4, 2), [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+   odd-level bad class: ((('S2', 'p', 'S2', 'o'), ('L101', 'H13')), 'bcc(2pi/4)', (0, 4, 6), [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+   odd-level bad class: ((('S2', 'p', 'S2', 'o'), ('L101', 'H13')), 'bcc(2pi/4)', (0, 6, 4), [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+   odd-level bad class: ((('S2', 'p', 'S2', 'o'), ('L101', 'H13')), 'bcc(2pi/4)', (2, 0, 4), [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+   odd-level bad class: ((('S2', 'p', 'S2', 'o'), ('L101', 'H13')), 'bcc(2pi/4)', (2, 4, 0), [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+[PASS] (5) audit ran over every distinct recorded survivor word  3540 bad classes examined
+   all-even at every bad class: False
+
+TOTAL: PASS=10 FAIL=0   [75s]

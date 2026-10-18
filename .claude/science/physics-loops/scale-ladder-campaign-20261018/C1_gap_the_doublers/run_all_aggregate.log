@@ -1,0 +1,4 @@
+c1_reps.log: TOTAL: PASS=13 FAIL=0   [53s]
+c1_bdg_step.log: TOTAL: PASS=9 FAIL=0   [116s]
+c1_anomaly.log: TOTAL: PASS=7 FAIL=0
+TOTAL: PASS=29 FAIL=0

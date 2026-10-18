@@ -1,0 +1,2 @@
+improper lifts that map W to W / W^dag / -W / -W^dag at some affine image: 24 of 24; [[('W', [0, 0, 0]), ('-W', [1, 1, 1])], [('W', [0, 1, 1]), ('-W', [1, 0, 0])], [('-W', [0, 1, 0]), ('W', [1, 0, 1])], [('-W', [0, 0, 1]), ('W', [1, 1, 0])]]
+antiunitary (lift x complex conjugation) candidates found: 0

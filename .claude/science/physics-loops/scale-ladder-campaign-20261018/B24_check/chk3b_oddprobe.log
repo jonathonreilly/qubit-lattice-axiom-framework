@@ -1,0 +1,18 @@
+Lambda_0: bcc(2pi/4) 128
+q=(0, 2, 4) (pi/16): type C2; fixers: ['E[[1, 0, 0], [0, 1, 0], [0, 0, 1]]', 'C2[[-1, 0, 0], [0, 1, 0], [0, 0, -1]]', 'C2[[0, 0, 1], [0, -1, 0], [1, 0, 0]]', 'C2[[0, 0, -1], [0, -1, 0], [-1, 0, 0]]']; level mults [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+   same spectrum along class: True
+q=(0, 4, 2) (pi/16): type C2; fixers: ['E[[1, 0, 0], [0, 1, 0], [0, 0, 1]]', 'C2[[-1, 0, 0], [0, -1, 0], [0, 0, 1]]', 'C2[[0, 1, 0], [1, 0, 0], [0, 0, -1]]', 'C2[[0, -1, 0], [-1, 0, 0], [0, 0, -1]]']; level mults [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+   same spectrum along class: True
+q=(2, 0, 4) (pi/16): type C2; fixers: ['E[[1, 0, 0], [0, 1, 0], [0, 0, 1]]', 'C2[[1, 0, 0], [0, -1, 0], [0, 0, -1]]', 'C2[[-1, 0, 0], [0, 0, 1], [0, 1, 0]]', 'C2[[-1, 0, 0], [0, 0, -1], [0, -1, 0]]']; level mults [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+   same spectrum along class: True
+q=(0, 0, 4) (pi/16): type C2; fixers: ['E[[1, 0, 0], [0, 1, 0], [0, 0, 1]]', 'C2[[1, 0, 0], [0, -1, 0], [0, 0, -1]]', 'C2[[-1, 0, 0], [0, 1, 0], [0, 0, -1]]', 'C2[[-1, 0, 0], [0, -1, 0], [0, 0, 1]]', 'C2[[0, 1, 0], [1, 0, 0], [0, 0, -1]]', 'C4[[0, 1, 0], [-1, 0, 0], [0, 0, 1]]', 'C4[[0, -1, 0], [1, 0, 0], [0, 0, 1]]', 'C2[[0, -1, 0], [-1, 0, 0], [0, 0, -1]]']; level mults [2, 2, 2, 2, 2, 2]
+   same spectrum along class: True
+q=(0, 4, 4) (pi/16): type C2; fixers: ['E[[1, 0, 0], [0, 1, 0], [0, 0, 1]]', 'C2[[1, 0, 0], [0, -1, 0], [0, 0, -1]]', 'C2[[-1, 0, 0], [0, 1, 0], [0, 0, -1]]', 'C2[[-1, 0, 0], [0, -1, 0], [0, 0, 1]]', 'C4[[1, 0, 0], [0, 0, 1], [0, -1, 0]]', 'C4[[1, 0, 0], [0, 0, -1], [0, 1, 0]]', 'C2[[-1, 0, 0], [0, 0, 1], [0, 1, 0]]', 'C2[[-1, 0, 0], [0, 0, -1], [0, -1, 0]]']; level mults [2, 2, 2, 2, 2, 2]
+   same spectrum along class: True
+operator-level intertwiner dimension for Lambda_0 generators (k-independent V would need >0 here): {(2, 0, 0): 1, (0, 2, 0): 1, (0, 0, 2): 1, (1, 1, 1): 0}
+t=(1,1,1)pi/4: intertwiner dim omega=1: 0;  with W(k)^T: 1
+t=(1,1,1)pi/4: intertwiner dim omega=-1: 0;  with W(k)^T: 0
+t=(1,1,1)pi/4: intertwiner dim omega=1j: 0;  with W(k)^T: 0
+t=(1,1,1)pi/4: intertwiner dim omega=(-0-1j): 0;  with W(k)^T: 0
+spectrum E -> E+pi invariant at random k: [np.False_, np.False_, np.False_]
+spectrum E -> -E invariant at random k: [np.False_, np.False_, np.False_]

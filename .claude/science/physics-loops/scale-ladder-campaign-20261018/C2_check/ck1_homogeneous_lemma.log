@@ -1,0 +1,6 @@
+   general (non-isotropic) h^2 densities with <= 2 derivatives: 516 monomials, 1152 equations
+PASS: H1 [5.5s] no non-zero h^2 density with <= 2 derivatives is pointwise invariant under the linear gauge shift (null dim float 0, mod-p 0); with matter jets as pointwise coefficients this is C2's lemma without the isotropy restriction
+PASS: H2 [18.0s] control: d^2h x d^2h block (666 monomials) has invariant subspace of dim 21 (float) / 21 (mod p); expected 21 = Sym^2 of the 6 linearised-Ricci components (d = 3)
+PASS: H3 [18.0s] control: the explicit 4-derivative invariant R1_ij R1_ij is annihilated by the engine -- so the lemma is sharp in derivative order: with 4 derivatives V2 is NOT fixed by V1 (e.g. sqrt g Ric^2 phi^2 is a free homogeneous seagull)
+PASS: H4 [18.0s] scope: the Fierz-Pauli density (gauge invariant only up to a total derivative) is NOT pointwise invariant -- the 'arbitrary N' quantifier is load-bearing: with constant N, phi^2 x FP would be a homogeneous solution
+TOTAL: PASS=4 FAIL=0  (18.0s)

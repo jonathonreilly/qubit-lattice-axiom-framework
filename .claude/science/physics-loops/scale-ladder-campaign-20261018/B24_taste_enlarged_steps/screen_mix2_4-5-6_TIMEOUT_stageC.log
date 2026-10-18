@@ -1,0 +1,5 @@
+[PASS] S^4 letter = S(k)^4; analytic word gradient = finite difference  
+[PASS] plane letters commute with Z_x, Z_y, Z_z and are PSG-symmetric on-site unitaries  
+mix2:4,5,6: 19200 words
+  k* level stats: {'m12': 264, 'm8': 3864, 'D+D-': 3336, 'm4': 20400, 'm10': 1296, 'D2': 17424, 'm6': 8928}; screened (kind, fermi): {('D+D-', True): 3100, ('D+D-', False): 236, ('D2', True): 17307, ('D2', False): 117}  [568s]
+[PASS] r(k) real on every grid (det W k-independent)  max 1.6e-14

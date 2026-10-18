@@ -1,0 +1,12 @@
+   zeta = +0.0000: fitted a1 = 2.00000000, expected (1/6 - zeta) R = 2.00000000, const residual -1.7e-16
+   zeta = +0.1667: fitted a1 = -0.00000000, expected (1/6 - zeta) R = 0.00000000, const residual -9.6e-17
+   zeta = +0.3000: fitted a1 = -1.60000000, expected (1/6 - zeta) R = -1.60000000, const residual 2.4e-16
+   zeta = -0.2500: fitted a1 = 5.00000000, expected (1/6 - zeta) R = 5.00000000, const residual 1.2e-14
+PASS: K1 [0.0s] a1 = (1/6 - zeta) R from the exact S^4 spectrum (independent of C2's plane-wave Duhamel route)
+   W contains -Lambda**4/(64*pi**2) int sqrt g  +  Lambda**2*(6*zeta - 1)/(192*pi**2) int sqrt g R;  1/(16 pi G) = -Lambda**2*(6*zeta - 1)/(192*pi**2)
+PASS: K2 [0.4s] proper time with Lambda^2 := 1/s_min: W = -L^4/(64 pi^2) int sqrt g - (1/6 - zeta) L^2/(32 pi^2) int sqrt g R; 1/(16 pi G) = (1 - 6 zeta) L^2/(192 pi^2), 1/G = L^2/(12 pi) at zeta = 0 (C2's P2 coefficient and convention confirmed)
+   <(d phi)^2> = Lambda**4/(16*pi**2);  delta 1/(16 pi G) = -Lambda**4*a**2*c6/(32*pi**2);  ratio to the zeta = 0 Sakharov term = -6*Lambda**2*a**2*c6
+PASS: K3 [0.4s] a covariant dim-6 coupling (c6 a^2/2) sqrt g R (d phi)^2 -- allowed by closure and by Ward, outside C2's <= 2-derivative ansatz -- shifts 1/(16 pi G) by -6 c6 (a Lambda)^2 x the Sakharov value: O(1) when a Lambda = O(1)
+   low O eigenvalues vs n^2: max dev 5.0e-12;  heat-trace shift at s = 0.05: O 3.51e-13, D -4.131e-02 (leading-symbol estimate int (g^(1/4) - sqrt g)/sqrt(4 pi s) = -3.969e-02)
+PASS: K4 [39.4s] proper time on the covariant O is diffeo invariant, on the flat-measure Hessian D it is not -- already at the leading (cosmological, k^0) order int g^(1/4) != int sqrt g; Ward at any order is a regulator/measure property
+TOTAL: PASS=4 FAIL=0  (39.4s)

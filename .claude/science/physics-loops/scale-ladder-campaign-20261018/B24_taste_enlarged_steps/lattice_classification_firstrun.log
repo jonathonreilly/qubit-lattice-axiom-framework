@@ -1,0 +1,31 @@
+[PASS] PSG rotations act affinely, k -> R k + c_R, c_R in pi Z^3  
+[PASS] T has 12 elements  
+[FAIL] 9 C2 rotations and 9 commuting C2 pairs (3 coordinate-axis D2 + 6 D2 = {C2z, C2(1,+-1,0)}-type)  9 12
+[PASS] invariant lattices enumerated by orbit-closure BFS; each is a subgroup closed under all 24 rotations  10 lattices, 35 orbits
+
+  10 invariant lattices (index = [(pi/4)Z^3 : Lam]); classes mod Lam on the (pi/16)Z^3 grid:
+  |Lam/2piZ^3|=  1  2piZ^3                                                        C2-pair classes    8  T-fixed classes   2  C2-pair-not-T    6  e.g. [(8, 8, 8), (8, 8, 24), (8, 24, 24)] (pi/16 units)
+        named points: {'k*': 'T', 'k*+pi e_x': 'C2pair', 'Gamma': '-', 'X_pi': '-', 'X_r=(pi/2)e_x': '-', 'M_r=(pi/2)(1,1,0)': '-', '(pi/4)e_x': '-', '(pi/4)(1,1,0)': '-', '(pi/4)(1,1,1)': '-'}
+  |Lam/2piZ^3|=  2  (pi/4)(4, 4, 4)                                               C2-pair classes   10  T-fixed classes   1  C2-pair-not-T    9  e.g. [(0, 8, 8), (0, 24, 24), (8, 0, 24)] (pi/16 units)
+        named points: {'k*': 'T', 'k*+pi e_x': 'C2pair', 'Gamma': '-', 'X_pi': '-', 'X_r=(pi/2)e_x': '-', 'M_r=(pi/2)(1,1,0)': 'C2pair', '(pi/4)e_x': '-', '(pi/4)(1,1,0)': '-', '(pi/4)(1,1,1)': '-'}
+  |Lam/2piZ^3|=  4  (pi/4)(0, 4, 4) + (pi/4)(4, 0, 4)                             C2-pair classes   10  T-fixed classes   4  C2-pair-not-T    6  e.g. [(0, 0, 8), (0, 0, 24), (0, 8, 0)] (pi/16 units)
+        named points: {'k*': 'T', 'k*+pi e_x': 'T', 'Gamma': 'T', 'X_pi': 'T', 'X_r=(pi/2)e_x': 'C2pair', 'M_r=(pi/2)(1,1,0)': '-', '(pi/4)e_x': '-', '(pi/4)(1,1,0)': '-', '(pi/4)(1,1,1)': '-'}
+  |Lam/2piZ^3|=  8  (pi/4)(0, 0, 4) + (pi/4)(0, 4, 0) + (pi/4)(4, 0, 0)           C2-pair classes    8  T-fixed classes   2  C2-pair-not-T    6  e.g. [(0, 0, 8), (0, 8, 0), (0, 8, 8)] (pi/16 units)
+        named points: {'k*': 'T', 'k*+pi e_x': 'T', 'Gamma': 'T', 'X_pi': 'T', 'X_r=(pi/2)e_x': 'C2pair', 'M_r=(pi/2)(1,1,0)': 'C2pair', '(pi/4)e_x': '-', '(pi/4)(1,1,0)': '-', '(pi/4)(1,1,1)': '-'}
+  |Lam/2piZ^3|= 16  (pi/4)(0, 0, 4) + (pi/4)(0, 4, 0) + (pi/4)(4, 0, 0) + (pi/4)(2, 2, 2)  C2-pair classes   10  T-fixed classes   1  C2-pair-not-T    9  e.g. [(0, 0, 8), (0, 4, 8), (0, 8, 0)] (pi/16 units)
+        named points: {'k*': 'T', 'k*+pi e_x': 'T', 'Gamma': 'T', 'X_pi': 'T', 'X_r=(pi/2)e_x': 'C2pair', 'M_r=(pi/2)(1,1,0)': 'C2pair', '(pi/4)e_x': '-', '(pi/4)(1,1,0)': '-', '(pi/4)(1,1,1)': '-'}
+  |Lam/2piZ^3|= 32  (pi/4)(0, 0, 4) + (pi/4)(0, 2, 2) + (pi/4)(2, 0, 2)           C2-pair classes   10  T-fixed classes   4  C2-pair-not-T    6  e.g. [(0, 4, 4), (0, 4, 12), (4, 0, 4)] (pi/16 units)
+        named points: {'k*': 'T', 'k*+pi e_x': 'T', 'Gamma': 'T', 'X_pi': 'T', 'X_r=(pi/2)e_x': 'T', 'M_r=(pi/2)(1,1,0)': 'T', '(pi/4)e_x': '-', '(pi/4)(1,1,0)': 'C2pair', '(pi/4)(1,1,1)': 'T'}
+  |Lam/2piZ^3|= 64  (pi/4)(0, 0, 2) + (pi/4)(0, 2, 0) + (pi/4)(2, 0, 0)           C2-pair classes    8  T-fixed classes   2  C2-pair-not-T    6  e.g. [(0, 0, 4), (0, 4, 0), (0, 4, 4)] (pi/16 units)
+        named points: {'k*': 'T', 'k*+pi e_x': 'T', 'Gamma': 'T', 'X_pi': 'T', 'X_r=(pi/2)e_x': 'T', 'M_r=(pi/2)(1,1,0)': 'T', '(pi/4)e_x': 'C2pair', '(pi/4)(1,1,0)': 'C2pair', '(pi/4)(1,1,1)': 'T'}
+  |Lam/2piZ^3|=128  (pi/4)(0, 0, 2) + (pi/4)(0, 2, 0) + (pi/4)(2, 0, 0) + (pi/4)(1, 1, 1)  C2-pair classes   10  T-fixed classes   1  C2-pair-not-T    9  e.g. [(0, 0, 4), (0, 2, 4), (0, 4, 0)] (pi/16 units)
+        named points: {'k*': 'T', 'k*+pi e_x': 'T', 'Gamma': 'T', 'X_pi': 'T', 'X_r=(pi/2)e_x': 'T', 'M_r=(pi/2)(1,1,0)': 'T', '(pi/4)e_x': 'C2pair', '(pi/4)(1,1,0)': 'C2pair', '(pi/4)(1,1,1)': 'T'}
+  |Lam/2piZ^3|=256  (pi/4)(0, 0, 2) + (pi/4)(0, 1, 1) + (pi/4)(1, 0, 1)           C2-pair classes   10  T-fixed classes   4  C2-pair-not-T    6  e.g. [(0, 2, 2), (0, 2, 6), (2, 0, 2)] (pi/16 units)
+        named points: {'k*': 'T', 'k*+pi e_x': 'T', 'Gamma': 'T', 'X_pi': 'T', 'X_r=(pi/2)e_x': 'T', 'M_r=(pi/2)(1,1,0)': 'T', '(pi/4)e_x': 'T', '(pi/4)(1,1,0)': 'T', '(pi/4)(1,1,1)': 'T'}
+  |Lam/2piZ^3|=512  (pi/4)(0, 0, 1) + (pi/4)(0, 1, 0) + (pi/4)(1, 0, 0)           C2-pair classes    8  T-fixed classes   2  C2-pair-not-T    6  e.g. [(0, 0, 2), (0, 2, 0), (0, 2, 2)] (pi/16 units)
+        named points: {'k*': 'T', 'k*+pi e_x': 'T', 'Gamma': 'T', 'X_pi': 'T', 'X_r=(pi/2)e_x': 'T', 'M_r=(pi/2)(1,1,0)': 'T', '(pi/4)e_x': 'T', '(pi/4)(1,1,0)': 'T', '(pi/4)(1,1,1)': 'T'}
+[PASS] no C2-pair-fixed point off (pi/16)Z^3 (tested on (pi/32)Z^3 for three lattices: 2piZ^3, (pi/4)Z^3 and a middle one)  0 off-grid
+[PASS] STRUCTURAL: no invariant lattice 2piZ^3 <= Lam <= (pi/4)Z^3 makes every C2-pair-fixed point T-fixed mod Lam  0 lattices with all C2-pair points T-fixed
+  smallest fraction of non-T C2-pair classes: (pi/4)(0, 4, 4) + (pi/4)(4, 0, 4)  6/10
+
+TOTAL: PASS=5 FAIL=1   [155s]

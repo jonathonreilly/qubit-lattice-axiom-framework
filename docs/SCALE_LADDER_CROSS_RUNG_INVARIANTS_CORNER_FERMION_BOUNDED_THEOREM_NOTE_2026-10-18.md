@@ -225,11 +225,27 @@ Labels: "checked" means a fresh-context agent of the same model family re-derive
    - **Λ ratio.** Λ_HK/Λ_W = 1.819 for SU(3) at one loop.
    - **Record clock.** The hidden-clock hypothesis is refuted.
    - **Ring model.** χ ≈ 0.23–0.25 for 0.5 ≤ V ≤ 1; nothing is claimed for V ≤ 0.
-7. **Net reading.**
+7. **Phase 2 (campaign blocks C1–C4 and B24; same-family checks where marked).**
+   - **Exact lattice closure cannot reproduce the continuum relabellings (C3, checked; companion lane note).** A translation-covariant lattice relabelling algebra of any range can close exactly, and such algebras exist. But if it matches the continuum at the longest wavelength, the closure conditions force Λ_n/Λ_1 = n − (arc centre) on arcs of momenta. So Λ_2/Λ_1 ≤ 0, against the continuum value 2. The uniform-lapse bracket needs a non-local Leibniz rule (SLAC-type). Exact closure is therefore available only with a spectrum that is wrong beyond the longest wavelength, so the leading-order closure results are the physically meaningful ones.
+   - **The doublers cannot be selectively removed under full O (C1, checked).**
+     - A symmetric pairing mass is all-or-nothing at the eight cube points.
+     - The doublers alone, and ±k* alone, each carry a Weyl dipole π(1,1,1), half a Hall quantum per layer. That is a Z2 obstruction to gapping either set alone into a short-range-entangled state. It is conditional on anomaly matching and on a Hamiltonian reading of the step. A compensating sector is required; the doublers are one realisation of it.
+     - With O broken to a subgroup, selective pairing exists, but ±k* is then not protected.
+   - **Closure fixes the seagull but not the induced 1/G (C2, checked).** In the continuum, within ≤ 2 derivatives, the seagull is the minimal covariant one, but it is not what cures the 06-08 Ward break. Covariant dimension-6 couplings shift the induced 1/G by an O(1) amount on a lattice while respecting closure and Ward. So 1/G needs the complete microscopic action, spectral sum rules or a perfect-action principle.
+   - **The walker's coupling fixes the normalisation of h (C4, checked).** The repo's frame identification g⁻¹ = EᵀE and the normalisation ΛR(0) = 1 set unit matter coupling a_s = 1 by definition. The lapse identity then gives K1 = 4α. The TT coefficient K2 needs one further clause. The repo's statements that α = K/4 gives the walker's top speed for the member's disturbances (block 62 T4, block 134 T4, the 09-25 exact-lattice note) rely on the declared single K; with K1 ≠ K2 the TT speed² would be K2/K1. Block C4b tests whether closure with the walker as matter forces K1 = K2.
+   - **Taste enlargement (B24, checked).** No single rotation-invariant translation lattice, at any scale, makes every commuting-C2-pair point T-fixed (exact). Enlarging the taste group moves the bad points to finer momenta, and 0 of 449 classified searched steps pass. The check found one opening: pinning follows the unitary taste lattice and isotropy the spectral one. Where the spectral lattice strictly exceeds the unitary one (transpose or antiunitary-type tastes), the geometric obstruction lifts, in 29 of 42 nested lattice pairs. Block B25 searches there.
+8. **Net reading.**
    - **What the ladder carries.** It carries classes, valley positions and multiplicity structure exactly.
    - **The common cone.** The only common-cone mechanism found with a derivation is constraint closure. It is conditional and leading-order, and it ties every matter cone to the graviton's.
    - **The information-minimal target.** One parameter-free step is currently blocked by that rule: no step found passes.
-   - **Open:** exact lattice closure; the normalisation of h; a doubler-free or taste-isotropic step; a derived seagull; and the dynamics of the rung 0 → 1 map.
+   - **Open:**
+     - the normalisation of K2 (C4b);
+     - a step whose node quasi-energy avoids the unavoidable D4/D2 points;
+     - a topologically ordered doubler sector;
+     - the induced 1/G from a complete microscopic action;
+     - the dynamics of the rung 0 → 1 map.
+
+     Exact lattice closure with continuum-like relabellings is now known to be impossible (C3).
 
 ### Detail
 

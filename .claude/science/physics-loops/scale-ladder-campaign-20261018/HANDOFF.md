@@ -34,3 +34,11 @@
     - around 12:00Z, a fresh-context coherence review of the scale-ladder note;
     - final summary before 14:14Z.
 - **09:55Z.** B20 (search) and B22 (QCA local lapse) are done, with checks running. B21's check is integrated into both PRs. Next: integrate the B20 and B22 checks into the scale-ladder note, then a fresh-context coherence review of the note, then the final summary.
+- **11:00Z.** Done:
+  - the coherence pass on the scale-ladder note;
+  - the doubling-corollary check;
+  - B23 (Dirac levels);
+  - the B1 check report recovered.
+
+  Both PRs are synced. Running: B24 (taste-enlarged steps; due back by about 12:50Z). Then: integrate B24, give the final summary, release the lock.
+- **11:30Z. Phase 2 started (12 h more, to 23:26Z).** The lock was refreshed to 00:26Z. The phase-2 blocks C1–C6 are in GOAL.md. Launching C1, C2 and C3. B24 is still running.

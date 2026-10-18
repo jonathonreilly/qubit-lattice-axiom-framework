@@ -1,0 +1,6 @@
+   O(s) gravity-potential term at flat g: 4*K*(-Derivative(f(x0, x1, x2), (x0, 2)) - Derivative(f(x0, x1, x2), (x1, 2)) - Derivative(f(x0, x1, x2), (x2, 2)))  -> cp/s = -4*K
+   zeta/s = -2*K (coefficient of +phi^2 sqrt g R in C, K units)
+   phi^2 (trPP - trP^2/2) coefficient / s = 2  -> y1 = 2 , y2 = -1
+   w (coefficient of trP phi pi) = 4*s
+FAIL: J1 canonical Jordan-frame map reproduces C2 S4's free direction (zeta, cp, w, y1, y2) = (2sK, -4sK, 4s, 2s, -s) independently of the bracket engine; so the {C,C} freedom is a field redefinition and zeta (at O(phi^2), linear order) is a frame label
+TOTAL: PASS=0 FAIL=1

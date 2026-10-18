@@ -1,0 +1,48 @@
+[PASS] R1a fibre maps U_g W(k) U_g^T = W(M_g k + pi s_g) for all 24 rotations (6 random k); 21 have s_g != 0  
+[PASS] R1b projective closure U_g U_h = +-U_gh and affine shifts compose (theta_gh = M_g theta_h + theta_g mod 2pi)  
+[PASS] R1c the three axis-C2 lifts pairwise anticommute on C^12  
+node table (eight-node step, chk convention):
+   E=+1.5708 k*         n=(0, 0, 0) dim=2 speeds=[0.4714045 0.4714045 0.4714045] chirality=+1 tilt=4.2e-16
+   E=+1.5708 -k*        n=(1, 1, 1) dim=2 speeds=[0.4714045 0.4714045 0.4714045] chirality=-1 tilt=8.1e-16
+   E=+1.5708 k*+pi ex   n=(1, 0, 0) dim=2 speeds=[0.2467203 0.5837466 0.5837466] chirality=-1 tilt=3.9e-16
+   E=+1.5708 -k*+pi ex  n=(0, 1, 1) dim=2 speeds=[0.2467203 0.5837466 0.5837466] chirality=+1 tilt=3.3e-16
+   E=+1.5708 k*+pi ey   n=(0, 1, 0) dim=2 speeds=[0.2467203 0.5837466 0.5837466] chirality=-1 tilt=4.3e-16
+   E=+1.5708 -k*+pi ey  n=(1, 0, 1) dim=2 speeds=[0.2467203 0.5837466 0.5837466] chirality=+1 tilt=6.8e-16
+   E=+1.5708 k*+pi ez   n=(0, 0, 1) dim=2 speeds=[0.2467203 0.5837466 0.5837466] chirality=-1 tilt=2.7e-16
+   E=+1.5708 -k*+pi ez  n=(1, 1, 0) dim=2 speeds=[0.2467203 0.5837466 0.5837466] chirality=+1 tilt=1.0e-15
+   E=-1.5708 k*         n=(0, 0, 0) dim=2 speeds=[0.4714045 0.4714045 0.4714045] chirality=-1 tilt=2.8e-16
+   E=-1.5708 -k*        n=(1, 1, 1) dim=2 speeds=[0.4714045 0.4714045 0.4714045] chirality=+1 tilt=5.1e-16
+   E=-1.5708 k*+pi ex   n=(1, 0, 0) dim=2 speeds=[0.2467203 0.5837466 0.5837466] chirality=+1 tilt=2.5e-16
+   E=-1.5708 -k*+pi ex  n=(0, 1, 1) dim=2 speeds=[0.2467203 0.5837466 0.5837466] chirality=-1 tilt=4.3e-16
+   E=-1.5708 k*+pi ey   n=(0, 1, 0) dim=2 speeds=[0.2467203 0.5837466 0.5837466] chirality=+1 tilt=5.0e-16
+   E=-1.5708 -k*+pi ey  n=(1, 0, 1) dim=2 speeds=[0.2467203 0.5837466 0.5837466] chirality=-1 tilt=3.5e-16
+   E=-1.5708 k*+pi ez   n=(0, 0, 1) dim=2 speeds=[0.2467203 0.5837466 0.5837466] chirality=+1 tilt=8.6e-16
+   E=-1.5708 -k*+pi ez  n=(1, 1, 0) dim=2 speeds=[0.2467203 0.5837466 0.5837466] chirality=-1 tilt=5.9e-16
+[PASS] R3 at E = +pi/2 all eight nodes are 2-fold Weyl doublets: +-k* isotropic sqrt2/3, doublers uniaxial (0.2467, 0.5837); chirality(k* + pi n) = (-1)^{|n|} chirality(k*) (naive-doubler pattern)  chiralities {'k*': 1, '-k*': -1, 'k*+pi ex': -1, '-k*+pi ex': 1, 'k*+pi ey': -1, '-k*+pi ey': 1, 'k*+pi ez': -1, '-k*+pi ez': 1}
+[PASS] R4a det(U_g|D) is a genuine 1-dim character of O, the SAME for every 2-fold level at k* and -k* (all quasi-energies)  4 doublets; det character = A2
+[PASS] R4b at each doubler (little group D4) every 2-fold level has det character = restriction of the k* det character; the other O-character restricts to a DIFFERENT D4 character (A2|D4 = B1)  36 doubler doublets tested
+on-site antisymmetric pairing channels: dim V_A2(det) = 5, dim V_A1 = 2 (of 66)
+[PASS] R2 real-space L=4 cross-check: D = sum_v e^{iR.v} A_v satisfies R_g D R_g^T = chi(g) D for all 24 lifts; odd translations give -D, even ones +D (so T_e e^{i pi |e| N/2} is preserved); negative control fails  
+   E=+1.571  |m_K| for random on-site A in V_det: k*:0.252, -k*:0.252, k*+pi ex:0.311, -k*+pi ex:0.311, k*+pi ey:0.311, -k*+pi ey:0.311, k*+pi ez:0.311, -k*+pi ez:0.311
+   E=+1.571  |m_K| for random on-site A in V_oth: k*:5.6e-17, -k*:6.4e-17, k*+pi ex:5.0e-16, -k*+pi ex:3.2e-16, k*+pi ey:2.2e-16, -k*+pi ey:4.8e-16, k*+pi ez:2.0e-16, -k*+pi ez:1.1e-16
+[PASS] R5 (E=+1.571) on-site pairing at R: channel det gives a nonzero singlet (Majorana) mass at ALL eight nodes; channel A1 gives exactly zero at ALL eight  
+   E=-1.571  |m_K| for random on-site A in V_det: k*:0.252, -k*:0.252, k*+pi ex:0.311, -k*+pi ex:0.311, k*+pi ey:0.311, -k*+pi ey:0.311, k*+pi ez:0.311, -k*+pi ez:0.311
+   E=-1.571  |m_K| for random on-site A in V_oth: k*:5.1e-17, -k*:5.9e-17, k*+pi ex:4.8e-16, -k*+pi ex:3.4e-16, k*+pi ey:3.2e-16, -k*+pi ey:1.2e-16, k*+pi ez:8.8e-17, -k*+pi ez:1.7e-16
+[PASS] R5 (E=-1.571) on-site pairing at R: channel det gives a nonzero singlet (Majorana) mass at ALL eight nodes; channel A1 gives exactly zero at ALL eight  
+   rank of the 8 node-singlet functionals on V_det (dim 5): 3
+   tuned on-site A (m_{+-k*} set to 0 by hand): k*:1.39e-16, -k*:9.92e-17, k*+pi ex:1.80e-01, -k*+pi ex:1.80e-01, k*+pi ey:1.80e-01, -k*+pi ey:1.80e-01, k*+pi ez:1.80e-01, -k*+pi ez:1.80e-01
+[PASS] R5c the node singlets are independent linear functionals on V_det, so killing m_{+-k*} is a codimension-4 (real) tuning, not a symmetry consequence (on-site tuned example exists)  rank 3, tuned example: True
+   Q=R     chi=A2(det)  sym=True fermi=True node amplitudes: k*:5.96e+00, -k*:7.35e+00, k*+pi ex:5.05e+00, -k*+pi ex:2.80e+00, k*+pi ey:5.05e+00, -k*+pi ey:2.80e+00, k*+pi ez:5.05e+00, -k*+pi ez:2.80e+00
+   Q=R     chi=A1       sym=True fermi=True node amplitudes: k*:8.79e-17, -k*:1.90e-16, k*+pi ex:6.51e-15, -k*+pi ex:5.20e-15, k*+pi ey:1.46e-15, -k*+pi ey:4.34e-15, k*+pi ez:2.90e-15, -k*+pi ez:2.16e-15
+   Q=Gamma chi=A2(det)  sym=True fermi=True node amplitudes: k*:1.21e-15, -k*:8.66e-16, k*+pi ex:6.85e-15, -k*+pi ex:4.18e-15, k*+pi ey:5.17e-15, -k*+pi ey:1.05e-14, k*+pi ez:8.40e-15, -k*+pi ez:7.31e-15
+   Q=Gamma chi=A1       sym=True fermi=True node amplitudes: k*:2.51e+00, -k*:2.51e+00, k*+pi ex:2.49e+00, -k*+pi ex:2.55e+00, k*+pi ey:2.53e+00, -k*+pi ey:2.43e+00, k*+pi ez:2.45e+00, -k*+pi ez:2.13e+00
+[PASS] R6 random range-1 k-dependent symmetric Delta(k): at Q = R the singlet node mass is nonzero at all eight (chi = det) or zero at all eight (chi != det) -- never selective; at Q = 0 the inter-node blocks are generic but cannot gap (chirality, see c1_anomaly.py)  
+   4-fold level at k*, E=-3.1416: chi-invariant antisymmetric pairs: A2(det): 1, A1: 0
+   4-fold level at k*, E=-0.0000: chi-invariant antisymmetric pairs: A2(det): 1, A1: 0
+   [aside, breaks odd translations] staggered on-site CDW mass e^(iR.x) c^dag M c, M in channel A2 (dim 6): max |<node K|M|node K+R>|: k*:7.19e-01, -k*:7.18e-01, k*+pi ex:5.09e-01, -k*+pi ex:5.11e-01, k*+pi ey:5.17e-01, -k*+pi ey:5.17e-01, k*+pi ez:4.75e-01, -k*+pi ez:5.26e-01
+   [aside, breaks odd translations] staggered on-site CDW mass e^(iR.x) c^dag M c, M in channel A1 (dim 6): max |<node K|M|node K+R>|: k*:4.04e-16, -k*:4.36e-16, k*+pi ex:1.38e-15, -k*+pi ex:7.80e-16, k*+pi ey:1.54e-15, -k*+pi ey:2.17e-15, k*+pi ez:1.51e-15, -k*+pi ez:2.58e-15
+[PASS] R9a all 24 improper dressed lifts are unitary symmetries of the step (U W(k) U^T = W(M k + theta)); the pure inversion has theta = 0, so it maps every node K to -K (k* <-> -k*, triple A <-> triple B) and fixes no node  
+   O_h channels: A1g:dim0; A1u:dim2 min|m|=7.9e-17 max|m|=1.2e-15 |m_K|=|m_-K|:True rank(+-k* functionals)=0; A2g:dim3 min|m|=8.3e-01 max|m|=1.6e+00 |m_K|=|m_-K|:True rank(+-k* functionals)=1; A2u:dim2 min|m|=8.4e-01 max|m|=1.3e+00 |m_K|=|m_-K|:True rank(+-k* functionals)=1
+[PASS] R9b with O_h (inversion included) the rule is unchanged: channels with rotational part = det (A2g, A2u) allow the singlet at all eight with |m_K| = |m_-K|, the others forbid it at all eight; inversion fixes no node, so it can relate but never force m_{+-k*} = 0 (tuning becomes one complex condition)  
+
+TOTAL: PASS=13 FAIL=0   [53s]

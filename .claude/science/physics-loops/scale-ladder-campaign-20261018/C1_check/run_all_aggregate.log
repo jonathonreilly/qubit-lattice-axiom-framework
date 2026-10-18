@@ -1,0 +1,4 @@
+chk1_det_selection.log:TOTAL: PASS=10 FAIL=0   [11s]
+chk2_subgroup_channels.log:TOTAL: PASS=6 FAIL=0   [51s]
+chk3_anomaly_bdg.log:TOTAL: PASS=10 FAIL=0   [65s]
+chk4_slice_inversion.log:TOTAL: PASS=3 FAIL=0

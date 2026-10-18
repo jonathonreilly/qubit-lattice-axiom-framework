@@ -161,3 +161,9 @@
    own isotropic h-linear relabelling candidates: 33
    per-candidate brackets done
    F1'' bare r=1: 3582 equations, rank 17, augmented rank 18
+   F1'' cov r=1: 3582 equations, rank 17, augmented rank 17
+[PASS] F.c4bchk.F1'' [1225s]: bare walker: NO correction dG in the full own isotropic h-linear basis (33 terms, not constrained by {G,G}) closes {C,G} at h chi chi (inconsistent system); covariant: consistent: {'bare r=1': (17, 18), 'cov r=1': (17, 17)}
+== Part Z: solve audit
+[PASS] Z.audit [1225s]: 79 sympy.solve calls, 75 solutions back-substituted into all their equations, 0 rejected
+TOTAL: PASS=96 FAIL=0  (1225 s, --full)
+EXIT 0

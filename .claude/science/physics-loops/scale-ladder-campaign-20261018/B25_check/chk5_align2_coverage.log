@@ -21,3 +21,14 @@
    Si.p.Si.o.Si.q.Si.o ('P10', 'H11', 'P8', 'H11'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
    S2.p.S2.o.S2.q.S2.o ('P2', 'H20', 'P7', 'H20'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
    S4.p.S4.o.S4.q.S4.o ('P10', 'L330', 'L303', 'L330'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   Si.p.Si.o.Si.q.Si.o ('P10', 'H33', 'P11', 'H33'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   S4i.p.S4i.o.S4i.q.S4i.o ('L202', 'L312', 'L303', 'L312'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   S4.p.S4.o.S4.q.S4.o ('P8', 'H23', 'P2', 'H23'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   Si.p.Si.o.Si.q.Si.o ('P3', 'L301', 'P9', 'L301'): phi+phi' = 0 mod 2pi True; G^T=+-G False; mechanism A; spec W' = spec W True
+   S4.p.S4.o.S4.q.S4.o ('P4', 'L133', 'P8', 'L133'): phi+phi' = 0 mod 2pi True; G^T=+-G False; mechanism A; spec W' = spec W True
+   S2i.p.S2i.o.S2i.q.S2i.o ('P2', 'H33', 'L202', 'H33'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   (phi'=-phi, G symmetric, mechanisms) -> {(True, True, 'AB'): 2, (True, False, 'A'): 6, (False, True, 'B'): 20}
+[PASS] every census k-dependent ALIGN2 word is explained by mechanism A or B (constant V, verified out-of-sample)  28 words
+[PASS] B25's explicit mechanism (A: P' = PL(-phi)) covers only part of them; the rest need the transpose-cyclic mechanism B (G^T = +-G)  A covers 8/28
+
+TOTAL: PASS=2 FAIL=0

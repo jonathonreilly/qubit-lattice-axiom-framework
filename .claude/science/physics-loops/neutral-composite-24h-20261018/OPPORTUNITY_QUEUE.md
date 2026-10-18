@@ -20,3 +20,10 @@ Ground-window and neutral static response blocks published; native charged hiera
 2. Remove imposed slab wrapping/derive three-dimensional propagation. Existing compact-feature and growing-height dark-source no-gos constrain the route; high premise-retirement value, harder controls.
 3. Full relaxed heavy-plus-neutral coupling: physical-plane gauge, recoil and all native channels. Local vertex and pinned coefficient controls now available; no free Yukawa input.
 4. Residual-controlled L4 periodic response remains available but lower priority than an analytic native pole/dispersion theorem.
+
+
+## After Q8 native bound cluster
+1. Derive internal orientation mixing from native four-edge paths; coefficient controls available, low import count, narrow branch scope.
+2. Uniform globalgroundcharacter selection: relative winding-history bounds rather than absolute remainders; high premise-retirement value, hard analytic gate.
+3. Remove finite slab geometry and recover longitudinal propagation; existing growing-height darkness and compact-feature bounds must be respected.
+4. Full mobile heavy-plus-neutral scattering with recoil; pinned source results alone do not establish a native rate.

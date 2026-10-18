@@ -172,3 +172,6 @@ Native mixing vertex complete: local matched vacuum rotation gives J(gamma/Delta
 
 
 Polynomial-grid neutral pole derived: secondlocalbad-plaquette normalform givesuniformQ4 coefficientnorms andconnectedcancellation; weightedendpointreduction resolvesq<<lambda onR~lambda^-p,1<p<2. Actualselectedfibrepositive dispersion Jkappa/2 lambda12 q² andoriginalsourceatom~lambda20 transferwithM40tail. p3/2controlpowers15/16/37,source21.5; independentembedding/source/dispersionchecksPASS. No globalgroundselection,3Dgeometryorcosmologicalmapping. Nextroot challenges fixedslab/longitudinalpropagation premise.
+
+
+Q8 block: trace_class upstream_support; source_of_blocker_text user_goal; target_blocker_text "large feature scalar mode and coupling without adding interaction"; reachability_to_target partially_closes; artifact_role theorem; next_trace_action derive orientation mixing and remove state/geometry premises.

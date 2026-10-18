@@ -183,3 +183,6 @@ Native mixing vertex complete: local matched vacuum rotation gives J(gamma/Delta
 
 
 Polynomial-grid neutral pole derived: secondlocalbad-plaquette normalform givesuniformQ4 coefficientnorms andconnectedcancellation; weightedendpointreduction resolvesq<<lambda onR~lambda^-p,1<p<2. Actualselectedfibrepositive dispersion Jkappa/2 lambda12 q² andoriginalsourceatom~lambda20 transferwithM40tail. p3/2controlpowers15/16/37,source21.5; independentembedding/source/dispersionchecksPASS. No globalgroundselection,3Dgeometryorcosmologicalmapping. Nextroot challenges fixedslab/longitudinalpropagation premise.
+
+
+Native Q8 bound cluster complete: perimeter-selected twenty-spin pair, anisotropic native hopping lambda14, originalsource amplitude m lambda18 with m=1.439812693425366e-6. Binding alone misses the leading plaquette-dependent winding detour. Actual selected-fibre rank-two cluster and positive ordered-band dispersion transfer on polynomial grids; q0C4even atom weight4.1461211843e-13lambda36. Independent geometry, detour, source, transfer and final science checks PASS; source-binding review fix applied. No empirical scalar or globalgroundselection. Next root derives internal orientation mixing, then challenges uniform groundselection and supplied slab geometry.

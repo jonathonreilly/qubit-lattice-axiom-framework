@@ -124,3 +124,6 @@ Mixing block: local physical-plane anchor gauge and matched vacuum channels expl
 
 
 Polynomial-grid block retires the logarithmic transverse-grid restriction by finite-order local normal forms, not an imported quasiparticle theorem. Fixed L10, weak anisotropy, selected plane fibre and operator/physical scale identification remain. Exact finite-pattern/relative bounds replace extensive operator estimates; no full-grid numerical simulation is claimed.
+
+
+Q8 block: no binding potential or scalar coupling supplied; both computed from native processes. FixedL10, weak anisotropy, positive plane fibre, periodic geometry, original measurement choice and physical units remain premises. No empirical test.

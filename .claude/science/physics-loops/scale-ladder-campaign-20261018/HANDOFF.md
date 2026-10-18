@@ -59,3 +59,8 @@
   - The scale-ladder note's phase-2 summary and Open list now include C7 and B26 (unchecked). Synced to PR #9702, and both PR bodies are updated.
   - New follow-ups in GOAL.md: C8 (letters beyond phased permutations) and C9 (structure functions versus the arc lemma), both running.
   - The C7 checker left a stray empty file `/q.py` that it could not delete. It was not deleted here; this is reported to the owner.
+- **17:55Z.** C9 is done and checked: 66 PASS, 0 FAIL, all exact.
+  - Structure functions evade the arc lemma at a background the relabellings move, where closure is automatic. At a common zero with continuous structure functions the lemma holds in gap form.
+  - A scope section is added to the arc-lemma lane note (PR #9718), and the scale-ladder note and both PR bodies are updated.
+  - Running: the B26 check, C8, and C10 (lattice H constraint with structure functions).
+  - Plan: integrate those results, run a coherence pass on the scale-ladder note around 21:00Z, give the final summary before 23:26Z, then release the lock.

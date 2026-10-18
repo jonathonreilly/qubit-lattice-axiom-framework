@@ -121,3 +121,6 @@ Six-end final review_loop_disposition: pass; prior pending entry superseded.
 Finite collision: actual_current_surface_status bounded-support; proposal_allowed false; bare_retained_allowed false; review_loop_disposition pass. K1 continuum and original source identity, no physical particle/scalar or empirical claim.
 
 Transverse bound: actual_current_surface_status bounded-support; proposal_allowed false; bare_retained_allowed false; review_loop_disposition pass. CompleteK1compactsector plusleadingoriginalsource, suppliedH/reference/momentum; no fullH or empiricalclaim.
+
+
+Two-feature ladder: actual_current_surface_status bounded-support; proposal_allowed false; bare_retained_allowed false; review_loop_disposition pass. Derived first two actual microscopic energy-window vertices conditional on supplied H/regime/state/momentum; no stable-particle, full-Fock-space or empirical identification. Independent audit remains separate.

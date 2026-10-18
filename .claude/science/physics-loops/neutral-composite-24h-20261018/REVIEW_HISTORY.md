@@ -111,3 +111,6 @@ Six-end final scoped review PASS (REVIEW_SIX_ENDPOINT_BINDING.md); all interval/
 Finite-feature collision block: exact separated-end identity and conditional scales; full N8 escape continuum invalidates threshold argument, source identity C=-4N+4A derives native contact coupling. Independent checks and final scoped review PASS; source-bound replay.132507s. No resonance width or finite particle claim. Next root tests full N4 transverse-band-edge bound mode and original source visibility.
 
 Transverse bound block: exactcompleteK1 N4 Tjunction mode E=-3sqrt2, nearbyoriginalsource -3lambda b/2, E2=-25/sqrt2, saddlecurvature. Independentgeometry/source/math andfinalreviewPASS after narrowing anchor darkness to leading sourceonly. Physical640bitBlochchecks andsource-boundreplay.486638sPASS. No fullH band/empiricalscalar. Nextroot 2x2cavity threshold andlarge-feature scaling; highprecisionprobe active.
+
+
+Two-feature ladder: independent algebra, source, contact/residual and low-energy source checks PASS. Final scoped review PASS after qualifying momentum transfers relative to arbitrary ground vectors. Source-bound replay .321817s PASS. Controls are exact local physical-bit actions, not full-H ED. NumPy int64 JSON serialization failed after assertions; explicit int conversion repaired the output, with no scientific inference from the operational error.

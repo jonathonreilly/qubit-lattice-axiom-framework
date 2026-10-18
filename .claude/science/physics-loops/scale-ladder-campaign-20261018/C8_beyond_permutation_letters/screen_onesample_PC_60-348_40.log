@@ -1,3 +1,6 @@
 [PASS] batched word (with E+-, Rt) == chklib-letter product, analytic gradient == finite difference  
 [PASS] conjugation reduction: conj W(-k) = W' with E+ <-> E- and conjugated slots (so conjugate classes are equivalent)  
 onesample:PC:60-348:40: 11520 words  (348 one-slot / 84 two-slot classes in total)
+  k* level statistics: {'D-': 5486, '10-fold': 862, 'G': 11412, '6-fold': 5874, '12-fold': 164, '8-fold': 2353, 'D+D-': 1500, 'D+': 5482}
+  screened levels 12468 (D+/D-: 10968, D+D-: 1500); Fermi (8^3): 12121, Fermi (16^3 only): 140, survivors: 207  [255s]
+[PASS] r(k) real on every grid (det W k-independent)  max 4.6e-14

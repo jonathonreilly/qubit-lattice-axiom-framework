@@ -98,3 +98,6 @@ Original readout actual_current_surface_status: bounded-support; proposal_allowe
 
 
 Microscopic ground-window actual_current_surface_status: bounded-support; proposal_allowed: false; bare_retained_allowed: false; review_loop_disposition: pass. Actual finite-time response comparison in joint weak-coupling/volume scaling, no cosmological preparation or empirical identification.
+
+
+Static block actual_current_surface_status: bounded-support; proposal_allowed: false; bare_retained_allowed: false. Exact finite-family retarded bound conditional on supplied H/regime; no all-force or empirical claim. Scoped review pass; independent audit separate.

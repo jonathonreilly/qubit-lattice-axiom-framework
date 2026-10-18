@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/native_static_response.py
+runner_sha256: a8ac09bdc5a45ac7eea4324c05aa6527183950b809a49497a1aff6bb6df53dc3
+input_fingerprint_sha256: 5d9ddfd8946a4bea6f33904f4d227cc01e5e9a3f7972bb726770ccbeb623b3e8
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+{"status": "bounded-support", "representation": [{"L": 2, "characters": 8, "each_rank": 1}, {"L": 4, "characters": 128, "each_rank": 1}, {"L": 6, "characters": 2048, "each_rank": 1}], "max_fourier_error": 3.6126657221302594e-13, "cross_spectral_bound_max_ratio": 0.08593517344359715, "scope": "Finite representation and filter controls only; no numerical microscopic gap or observed-force test"}
+
+----- stderr -----
+

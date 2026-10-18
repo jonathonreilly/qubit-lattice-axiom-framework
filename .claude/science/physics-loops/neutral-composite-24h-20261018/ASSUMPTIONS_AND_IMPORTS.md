@@ -62,3 +62,6 @@ Original readout block derives induced coupling from existing H and C, retiring 
 
 
 Ground-window block retires arbitrary choice of polarized reference within the stated finite-box microscopic ground-state response problem. Supplied H, small lambda, growing even cubes, ground-state restriction, diagnostic and unit/empirical identification remain. All ground densities allowed; actual band splitting not assumed absent. Order40 error is asymptotic without numerical threshold.
+
+
+Static retarded response locality uses the previously derived restricted neutral gap, finite-range LR, fixed local probes and the same ground-box family. No isothermal covariance or charged-channel extension; no observations imported.

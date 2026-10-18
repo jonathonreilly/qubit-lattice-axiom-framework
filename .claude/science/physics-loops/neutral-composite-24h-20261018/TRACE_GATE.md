@@ -89,3 +89,6 @@ Original readout: trace_class: upstream_support; target_blocker_text: original-s
 
 
 Ground window: trace_class: upstream_support; target_blocker_text: actual microscopic response and reference-state dependence; source_of_blocker_text: handoff; reachability_to_target: partially_closes; artifact_role: theorem; next_trace_action: derive static neutral interaction range and test long-range mediator interpretation. Finite-time response is controlled; outgoing pole transfer remains separate.
+
+
+Static block: trace_class negative_route_pruning; source_of_blocker_text user_goal; target_blocker_text "large feature can produce a useful scalar coupling"; reachability_to_target prunes; artifact_role theorem. Prunes long-range neutral ground response only in supplied weak-coupling family. Next test charged feature channels.

@@ -276,7 +276,14 @@ The ladder does unify the lanes, but not by deriving everything from the finest 
   - The repo's 2026-09-25 walk passes. It is naive-type, and the invariance of Σ sin² k_j under k_j → k_j + π makes all eight species isotropic at one speed. So the closure route reproduces its α = K/4.
   - The parameter-free corner step fails. Its ±k* cones are isotropic, but the doublers at the same quasi-energy are uniaxial. They sit at D4 points that no species-exchanging symmetry relates to ±k*: k → k + π(1,1,1) exchanges only orbits of the same type.
   - This is conditional on the step's long-wavelength, band-projected theory coupling to a lapse as a scalar-weighted energy density. A global local Floquet Hamiltonian is not asserted, since the step is gapless away from ±π/2.
-- **Consequence for the target below.** A parameter-free step can feed a closing gravity sector only if its doublers are isotropic at the ±k* speed. That takes a taste-type symmetry relating the 3-orbits to ±k*, or no doublers, which by the doubling corollary needs gaplessness or broken axis C2s. Campaign block B18 is searching for the former.
+- **Consequence for the target below.** A parameter-free step can feed a closing gravity sector only if its doublers are isotropic at the ±k* speed. That takes a taste-type symmetry relating the 3-orbits to ±k*, or no doublers, which by the doubling corollary needs gaplessness or broken axis C2s.
+- **The taste route, in the corner model (B18, independently checked).**
+  - The diagonal shift S has no translation-covariant taste moving k* off ±k*. Its allowed affine momentum maps are exactly the PSG lifts times k → k + π(1,1,1).
+  - Stabiliser orders, 24 at k* against 8 at k* + πe_i, mean any taste must enlarge the symmetry group.
+  - Adding the link hopping's plane tastes leaves no spin-½ doublet at k*.
+  - For the eight-node step, an exhaustive spectral test and the velocity-determinant invariant exclude every such map: v*³ = 0.1048 against v_ax v_tr² = 0.0841.
+  - Words in S² do have exact tastes, which make their Weyl copies isotropic at √2/3 per S. But they carry uniaxial nodes at the same quasi-energy, at (π/4)-type points, or nodal lines.
+  - So no step found so far passes the closure selection rule. Block B20 is searching further.
 
 **The information-minimal target.** One local step rule on the base grid with no continuous parameters, from which every field is built. Then:
 - each speed is a pure number fixed by the grid geometry (item 6);

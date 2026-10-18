@@ -1,13 +1,13 @@
 # C5 REVIEW — independent mathematical review of NOTE.md
 
-**Reviewer:** Claude Opus 5.5 (model id claude-opus-5-5), run as a subagent spawned by the loop's
+**Reviewer:** the same Claude model (model id the same Claude model), run as a subagent spawned by the loop's
 orchestrating session. Same model family as the worker, so it is **not** an independent human or
 cross-model audit. Date 2026-10-18. I read the whole NOTE.md, WORKLOG.md, the scripts and the logs.
 All reviewer code is in `review_scripts/`. It uses its own helpers (`rlib.py`) and imports nothing from
 the worker's `w3lib.py`. The only shared input is the worker's saved parameter file `logs/s4d_params_final.npy`.
 Runs used nice 10 on one core.
 The first reviewer's process was killed by a container restart at §4. A second reviewer instance (same model,
-Claude Opus 5.5) finished the review: it re-read NOTE.md and this file, re-checked the K-theory step and the
+the same Claude model) finished the review: it re-read NOTE.md and this file, re-checked the K-theory step and the
 second proof (and tightened step 4 of the latter), ran r4, and wrote §7. It takes responsibility for the final
 verdicts in §7. It is the same model again, so this is still not an independent cross-model audit.
 
@@ -242,7 +242,7 @@ larger finite-range walk with unbalanced chirality is not excluded by this note.
 **Overall verdict: ACCEPT WITH MINOR FIXES.** Theorem K is correct, and its load-bearing step now has two independent
 proofs: the K_1 route and the Toeplitz/Pic route. No claim is incorrect. The one substantive edit is the medium scope
 qualification: what the note establishes is "no finite-range translation-invariant single-particle walk has W3 ≠ 0",
-not a statement about chirality inside band subspaces. Provenance: both reviewer passes were Claude Opus 5.5 instances
+not a statement about chirality inside band subspaces. Provenance: both reviewer passes were the same Claude model instances
 of the same family as the worker, not cross-model or human review.
 
 ## Correction confirmation (finishing reviewer, after the author's "Review dispositions")

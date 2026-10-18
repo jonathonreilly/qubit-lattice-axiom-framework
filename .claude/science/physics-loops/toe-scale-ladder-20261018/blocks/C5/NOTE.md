@@ -1,7 +1,7 @@
 # C5 — Finite-range walks on Z^3 carry no net Weyl chirality: W3 = 0 for every strictly local tick
 
 **Block:** C5 of `toe-scale-ladder-20261018` (target: SCALE_LADDER_MAP.md, "C5").
-**Date:** 2026-10-18. **Status:** Reviewed in a separate agent context (REVIEW.md; same model family as the author, so not a fully independent audit); unaudited. Both review passes were Claude Opus 5.5 instances, the same model family as the author, so this was not cross-model or human review. Adds no axiom, primitive or dynamics clause.
+**Date:** 2026-10-18. **Status:** Reviewed in a separate agent context (REVIEW.md; same model family as the author, so not a fully independent audit); unaudited. Adds no axiom, primitive or dynamics clause.
 **Outcome class:** obstruction theorem (proved conditional on one standard algebraic K-theory
 input, flagged as the load-bearing step), plus a sharp-boundary witness. No covariant walk with W3 = ±1
 exists in the target class. The reason is strict finite range. Covariance, coin size and the soldering

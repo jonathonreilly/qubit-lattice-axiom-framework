@@ -1,6 +1,6 @@
 # C3 independent review
 
-**Reviewer:** independent mathematical review (Claude, model `claude-opus-5-5`, run as a reviewer subagent; not the author session). Date: 2026-10-18.
+**Reviewer:** independent mathematical review (a Claude reviewer subagent, same model as the author; not the author session). Date: 2026-10-18.
 **Object:** `blocks/C3/NOTE.md` (author draft, commit 649091ce3) and its scripts and logs.
 **Method:** each load-bearing step was re-derived by hand (below). Separate code was written in `review_scripts/`. It uses different methods from the author's runner, and none of the author's code is imported.
 **Evidence:** `review_scripts/run_review.sh` → `review_scripts/logs/review_all.log`, ending `TOTAL: PASS=75 FAIL=0`. The per-script logs are `logs/r1.log` … `logs/r4.log`. The full run takes about 70 s on one core, niced.

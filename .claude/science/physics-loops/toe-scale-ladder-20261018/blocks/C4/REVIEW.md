@@ -1,6 +1,6 @@
 # C4 independent review
 
-Reviewer: Claude (Opus 5.5, model id claude-opus-5-5), spawned as an independent-review subagent.
+Reviewer: a Claude subagent (same model as the author), spawned as an independent-review subagent.
 Provenance: same model family as the author; independence is of *code and route*, not of model.
 
 ## Phase A — blind counts (recorded 2026-10-18 21:43:33 UTC, before opening any author log/results table)

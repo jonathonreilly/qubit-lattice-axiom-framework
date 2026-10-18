@@ -1,6 +1,6 @@
 # C7 review: massive continuum limit of the 3D two-qubit Dirac walk
 
-**Reviewer provenance.** Claude Code subagent, model `claude-opus-5-5` (Opus 5.5). This
+**Reviewer provenance.** Claude Code subagent, same model as the author. This
 context did not write C7. It may share a model family with the author, so treat the
 review as *independent-code, not independent-lineage*. The reasoning-effort setting
 was not visible to the reviewer.

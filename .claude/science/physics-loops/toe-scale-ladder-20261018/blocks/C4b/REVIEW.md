@@ -1,6 +1,6 @@
 # C4b — Independent review
 
-**Reviewer:** Claude Opus 5.5 (model id `claude-opus-5-5`). This was a fresh-context subagent
+**Reviewer:** the same Claude model (model id `the same Claude model`). This was a fresh-context subagent
 launched by the orchestrating session. It is the same model family as the author, so it is not
 independent in the human sense. It read the NOTE, the WORKLOG, the author's logs and the C4 NOTE.
 It wrote all code itself and did not import or copy the author's scripts. It looked at the

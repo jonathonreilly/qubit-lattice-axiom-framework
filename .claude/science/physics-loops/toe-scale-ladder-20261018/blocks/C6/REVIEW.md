@@ -1,6 +1,6 @@
 # C6 independent review
 
-**Reviewer:** Claude Opus 5.5 (claude-opus-5-5), a subagent. I re-derived the proofs by hand and wrote my own code (`review_scripts/`), which imports neither `c6_lib.py` nor the author's runners. I did not commit anything. Everything ran on one core.
+**Reviewer:** the same Claude model (the same Claude model), a subagent. I re-derived the proofs by hand and wrote my own code (`review_scripts/`), which imports neither `c6_lib.py` nor the author's runners. I did not commit anything. Everything ran on one core.
 **Provenance caveat:** the same model family as the author. This is not an independent human check.
 **Network:** I could not fetch arXiv or ar5iv (DNS blocked). Web search gave only abstract-level text and secondary paraphrases of BHM. Every BHM detail below is marked as recalled or as confirmed by snippet.
 

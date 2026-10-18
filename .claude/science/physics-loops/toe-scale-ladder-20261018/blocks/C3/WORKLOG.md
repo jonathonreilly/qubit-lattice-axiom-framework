@@ -1,0 +1,22 @@
+# C3 WORKLOG
+
+- 18:55Z: read SCIENCE_WORKFLOW section 2 and the no-go-discipline skill. Then read the closest notes:
+  - 09-07 native priority formation: decreasing-path ancestry, `6·5^(n-1)/(n+1)!`, with the mixing corollary not stated;
+  - 09-16 level-order ordered phase: imported as I-16, theorem T7;
+  - 09-22 covariant exponential races: the rate laws `1+k`, `(1+k)^2`, `1/(1+k)`;
+  - 10-16 order-blind 1-dependence;
+  - 10-08, found by grep: it states the same path bound, and the formed-site set at time t is Bernoulli percolation. Used to limit the scope of the no-go.
+- Base case: the FFIID statement is a corollary of main. Checked the map's constant. It bounds the tail of `L` (longest decreasing path); the coding radius satisfies only `R ≤ L+1`. The XOR rule on Z shows the map's `R`-statement is false: exactly `P(R≥2)=2/3`, `P(R≥3)=17/60`.
+- Covariance: a ball-truncation bound (r/2 exponent, as in the map), and a stopping-set resampling coupling that gives the full r exponent.
+- Rate modulation:
+  - first attempt was a site-level reduction (`a_w < horizon`). It drops the time ordering and gives only exponential bounds; heuristic `(δ/e)^n`, abandoned;
+  - second attempt used space-time chains of relevant points (cutoff at the first sure point σ_x ~ Exp(λmin)). For distinct sites the expected count is exactly `κ^(n+1)/(n+1)!`. Loop erasure handles revisits. Result: superexponential for every κ, with no threshold.
+- Counterexample search inside bounded-κ and finite-range-correlated classes: impossible by Theorems C and D. Exchangeable clocks: same record law as iid. Ordered witness needs an infinite-range clock: an O_h mixture of the level clock, conditional on I-16, gives Cov ≥ 0.1388.
+- Literature: one web search. Penrose (2002, SPA 98) on monotonic particle systems is likely to contain Theorem C in substance; not read in full. No novelty claimed for the method.
+- Runs: `scripts/run_all.sh` takes about 25 s on a single core, niced. `logs/run_all.log` ends with `TOTAL: PASS=58 FAIL=0`.
+- Not done:
+  - no independent check;
+  - no Lean;
+  - the ergodic covariant long-range-clock question and the λmin=0 classes are OPEN;
+  - the B2 asymptotic constant is not optimised;
+  - Theorem C has no exact infinite-volume check, only a finite-window exact law and Monte Carlo.

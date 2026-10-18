@@ -1,0 +1,48 @@
+[PASS] Z1 n=1: enumerated P(L>=n)=2/3 equals closed form :: closed=2/3
+[PASS] Z1 n=1: P(L>=n) <= 2/(n+1)! = 1
+[PASS] Z1 n=2: enumerated P(L>=n)=17/60 equals closed form :: closed=17/60
+[PASS] Z1 n=2: P(L>=n) <= 2/(n+1)! = 1/3
+[PASS] Z1 n=3: enumerated P(L>=n)=5/63 equals closed form :: closed=5/63
+[PASS] Z1 n=3: P(L>=n) <= 2/(n+1)! = 1/12
+[PASS] Z1 n=4: enumerated P(L>=n)=427/25920 equals closed form :: closed=427/25920
+[PASS] Z1 n=4: P(L>=n) <= 2/(n+1)! = 1/60
+[PASS] Z2: SAW counts c_0..c_10 match OEIS (A001411/A001412) :: [1, 4, 12, 36, 100, 284, 780, 2172, 5916, 16268, 44100]
+[PASS] Z2: c_n <= D(D-1)^(n-1) for n<=nmax
+  Z2 exact expected decreasing SAW counts c_n/(n+1)!:
+   n=1: E#dec=2.000e+00 bound=2.000e+00
+   n=2: E#dec=2.000e+00 bound=2.000e+00
+   n=3: E#dec=1.500e+00 bound=1.500e+00
+   n=4: E#dec=8.333e-01 bound=9.000e-01
+   n=5: E#dec=3.944e-01 bound=4.500e-01
+   n=6: E#dec=1.548e-01 bound=1.929e-01
+   n=7: E#dec=5.387e-02 bound=7.232e-02
+   n=8: E#dec=1.630e-02 bound=2.411e-02
+   n=9: E#dec=4.483e-03 bound=7.232e-03
+   n=10: E#dec=1.105e-03 bound=1.972e-03
+[PASS] Z3: SAW counts c_0..c_7 match OEIS (A001411/A001412) :: [1, 6, 30, 150, 726, 3534, 16926, 81390]
+[PASS] Z3: c_n <= D(D-1)^(n-1) for n<=nmax
+  Z3 exact expected decreasing SAW counts c_n/(n+1)!:
+   n=1: E#dec=3.000e+00 bound=3.000e+00
+   n=2: E#dec=5.000e+00 bound=5.000e+00
+   n=3: E#dec=6.250e+00 bound=6.250e+00
+   n=4: E#dec=6.050e+00 bound=6.250e+00
+   n=5: E#dec=4.908e+00 bound=5.208e+00
+   n=6: E#dec=3.358e+00 bound=3.720e+00
+   n=7: E#dec=2.019e+00 bound=2.325e+00
+[PASS] MC Z2 n=1: P(L>=n)=0.8018+-0.0028 <= min(1,bound=2.0000) (+4SE)
+[PASS] MC Z2 n=1 agrees with exact 1-1/(D+1)=0.8000 within 4SE
+[PASS] MC Z2 n=2: P(L>=n)=0.5996+-0.0035 <= min(1,bound=2.0000) (+4SE)
+[PASS] MC Z2 n=3: P(L>=n)=0.4222+-0.0035 <= min(1,bound=1.5000) (+4SE)
+[PASS] MC Z2 n=4: P(L>=n)=0.2604+-0.0031 <= min(1,bound=0.9000) (+4SE)
+[PASS] MC Z2 n=5: P(L>=n)=0.1389+-0.0024 <= min(1,bound=0.4500) (+4SE)
+[PASS] MC Z3 n=1: P(L>=n)=0.8541+-0.0025 <= min(1,bound=3.0000) (+4SE)
+[PASS] MC Z3 n=1 agrees with exact 1-1/(D+1)=0.8571 within 4SE
+[PASS] MC Z3 n=2: P(L>=n)=0.7210+-0.0032 <= min(1,bound=5.0000) (+4SE)
+[PASS] MC Z3 n=3: P(L>=n)=0.6100+-0.0034 <= min(1,bound=6.2500) (+4SE)
+[PASS] MC Z3 n=4: P(L>=n)=0.5010+-0.0035 <= min(1,bound=6.2500) (+4SE)
+[PASS] MC Z3 n=5: P(L>=n)=0.3975+-0.0035 <= min(1,bound=5.2083) (+4SE)
+[PASS] XOR rule: exact lower bound P(R>=2) >= 2/3 equals corrected upper bound P(L>=1)=2/3 (so P(R>=2)=2/3 exactly)
+[PASS] XOR rule: P(R>=2)=2/3 EXCEEDS the map's proposed P(R>=2)<=2/3!=1/3 (map constant is the L-tail, off by one for R)
+[PASS] XOR rule: lower bound P(R>=3) >= 17/60 (window [-3,3]) is <= corrected bound P(L>=2)=17/60
+[PASS] XOR rule: P(R>=3) >= 17/60 EXCEEDS map's proposed 2/4!=1/12
+s1: PASS=28 FAIL=0

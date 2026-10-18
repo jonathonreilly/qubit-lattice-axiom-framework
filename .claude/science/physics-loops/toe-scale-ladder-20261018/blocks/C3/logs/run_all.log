@@ -1,0 +1,122 @@
+Sun Oct 18 18:59:05 UTC 2026
+=== s1_iid_paths_and_coding_radius ===
+[PASS] Z1 n=1: enumerated P(L>=n)=2/3 equals closed form :: closed=2/3
+[PASS] Z1 n=1: P(L>=n) <= 2/(n+1)! = 1
+[PASS] Z1 n=2: enumerated P(L>=n)=17/60 equals closed form :: closed=17/60
+[PASS] Z1 n=2: P(L>=n) <= 2/(n+1)! = 1/3
+[PASS] Z1 n=3: enumerated P(L>=n)=5/63 equals closed form :: closed=5/63
+[PASS] Z1 n=3: P(L>=n) <= 2/(n+1)! = 1/12
+[PASS] Z1 n=4: enumerated P(L>=n)=427/25920 equals closed form :: closed=427/25920
+[PASS] Z1 n=4: P(L>=n) <= 2/(n+1)! = 1/60
+[PASS] Z2: SAW counts c_0..c_10 match OEIS (A001411/A001412) :: [1, 4, 12, 36, 100, 284, 780, 2172, 5916, 16268, 44100]
+[PASS] Z2: c_n <= D(D-1)^(n-1) for n<=nmax
+  Z2 exact expected decreasing SAW counts c_n/(n+1)!:
+   n=1: E#dec=2.000e+00 bound=2.000e+00
+   n=2: E#dec=2.000e+00 bound=2.000e+00
+   n=3: E#dec=1.500e+00 bound=1.500e+00
+   n=4: E#dec=8.333e-01 bound=9.000e-01
+   n=5: E#dec=3.944e-01 bound=4.500e-01
+   n=6: E#dec=1.548e-01 bound=1.929e-01
+   n=7: E#dec=5.387e-02 bound=7.232e-02
+   n=8: E#dec=1.630e-02 bound=2.411e-02
+   n=9: E#dec=4.483e-03 bound=7.232e-03
+   n=10: E#dec=1.105e-03 bound=1.972e-03
+[PASS] Z3: SAW counts c_0..c_7 match OEIS (A001411/A001412) :: [1, 6, 30, 150, 726, 3534, 16926, 81390]
+[PASS] Z3: c_n <= D(D-1)^(n-1) for n<=nmax
+  Z3 exact expected decreasing SAW counts c_n/(n+1)!:
+   n=1: E#dec=3.000e+00 bound=3.000e+00
+   n=2: E#dec=5.000e+00 bound=5.000e+00
+   n=3: E#dec=6.250e+00 bound=6.250e+00
+   n=4: E#dec=6.050e+00 bound=6.250e+00
+   n=5: E#dec=4.908e+00 bound=5.208e+00
+   n=6: E#dec=3.358e+00 bound=3.720e+00
+   n=7: E#dec=2.019e+00 bound=2.325e+00
+[PASS] MC Z2 n=1: P(L>=n)=0.8018+-0.0028 <= min(1,bound=2.0000) (+4SE)
+[PASS] MC Z2 n=1 agrees with exact 1-1/(D+1)=0.8000 within 4SE
+[PASS] MC Z2 n=2: P(L>=n)=0.5996+-0.0035 <= min(1,bound=2.0000) (+4SE)
+[PASS] MC Z2 n=3: P(L>=n)=0.4222+-0.0035 <= min(1,bound=1.5000) (+4SE)
+[PASS] MC Z2 n=4: P(L>=n)=0.2604+-0.0031 <= min(1,bound=0.9000) (+4SE)
+[PASS] MC Z2 n=5: P(L>=n)=0.1389+-0.0024 <= min(1,bound=0.4500) (+4SE)
+[PASS] MC Z3 n=1: P(L>=n)=0.8541+-0.0025 <= min(1,bound=3.0000) (+4SE)
+[PASS] MC Z3 n=1 agrees with exact 1-1/(D+1)=0.8571 within 4SE
+[PASS] MC Z3 n=2: P(L>=n)=0.7210+-0.0032 <= min(1,bound=5.0000) (+4SE)
+[PASS] MC Z3 n=3: P(L>=n)=0.6100+-0.0034 <= min(1,bound=6.2500) (+4SE)
+[PASS] MC Z3 n=4: P(L>=n)=0.5010+-0.0035 <= min(1,bound=6.2500) (+4SE)
+[PASS] MC Z3 n=5: P(L>=n)=0.3975+-0.0035 <= min(1,bound=5.2083) (+4SE)
+[PASS] XOR rule: exact lower bound P(R>=2) >= 2/3 equals corrected upper bound P(L>=1)=2/3 (so P(R>=2)=2/3 exactly)
+[PASS] XOR rule: P(R>=2)=2/3 EXCEEDS the map's proposed P(R>=2)<=2/3!=1/3 (map constant is the L-tail, off by one for R)
+[PASS] XOR rule: lower bound P(R>=3) >= 17/60 (window [-3,3]) is <= corrected bound P(L>=2)=17/60
+[PASS] XOR rule: P(R>=3) >= 17/60 EXCEEDS map's proposed 2/4!=1/12
+s1: PASS=28 FAIL=0
+=== s2_rate_modulated ===
+[PASS] (a) n=0: ordered integral = kappa^(n+1)/(n+1)! :: lambda/mu
+[PASS] (a) n=1: ordered integral = kappa^(n+1)/(n+1)! :: lambda**2/(2*mu**2)
+[PASS] (a) n=2: ordered integral = kappa^(n+1)/(n+1)! :: lambda**3/(6*mu**3)
+[PASS] (a) n=3: ordered integral = kappa^(n+1)/(n+1)! :: lambda**4/(24*mu**4)
+[PASS] (a) n=4: ordered integral = kappa^(n+1)/(n+1)! :: lambda**5/(120*mu**5)
+[PASS] (b) n=0: E#chains=3.0005+-0.0100 vs kappa^(n+1)/(n+1)!=3.0000
+[PASS] (b) n=1: E#chains=4.4826+-0.0303 vs kappa^(n+1)/(n+1)!=4.5000
+[PASS] (b) n=2: E#chains=4.5353+-0.0573 vs kappa^(n+1)/(n+1)!=4.5000
+[PASS] (b) n=3: E#chains=3.3690+-0.0684 vs kappa^(n+1)/(n+1)!=3.3750
+[PASS] (b) n=4: E#chains=2.0350+-0.0774 vs kappa^(n+1)/(n+1)!=2.0250
+[PASS] (c) exact 4-cycle law normalised
+[PASS] (c) graphical MC matches exact jump-chain law on all 16 atoms (max |z|=2.66 <= 4)
+[PASS] (d) backward coding map == forward ring simulation at the origin (400/400 trials with reach inside ring)
+  (d) reach tail, kappa=5, Z^1:
+   n=1: P(reach>=n)=0.9082 bound=1.000e+00
+   n=2: P(reach>=n)=0.7289 bound=1.000e+00
+   n=3: P(reach>=n)=0.5050 bound=1.000e+00
+   n=4: P(reach>=n)=0.2895 bound=1.000e+00
+   n=5: P(reach>=n)=0.1514 bound=1.000e+00
+   n=6: P(reach>=n)=0.0686 bound=1.000e+00
+   n=7: P(reach>=n)=0.0300 bound=1.000e+00
+   n=8: P(reach>=n)=0.0114 bound=1.000e+00
+   n=9: P(reach>=n)=0.0045 bound=1.000e+00
+   n=10: P(reach>=n)=0.0020 bound=1.000e+00
+   n=11: P(reach>=n)=0.0005 bound=1.000e+00
+   n=12: P(reach>=n)=0.0002 bound=3.921e-01
+   n=13: P(reach>=n)=0.0002 bound=1.400e-01
+   n=14: P(reach>=n)=0.0000 bound=4.667e-02
+   n=15: P(reach>=n)=0.0000 bound=1.459e-02
+[PASS] (d) reach tail below Lemma C1 bound 2 kappa^(n+1)/(n+1)! (+4SE) for n=1..15
+  (e) observation (not a check), eager copy rule kappa=5, MC SE ~ 0.006:
+   r=0: Cov=+0.2499
+   r=1: Cov=+0.1936
+   r=2: Cov=+0.1349
+   r=3: Cov=+0.0861
+   r=4: Cov=+0.0488
+   r=5: Cov=+0.0265
+   r=6: Cov=+0.0088
+   r=7: Cov=+0.0039
+   r=8: Cov=-0.0009
+   r=9: Cov=-0.0049
+   r=10: Cov=-0.0014
+s2: PASS=14 FAIL=0
+=== s3_correlated_clocks_and_witness ===
+[PASS] (a) n=1: P(strict decrease)=1/3 <= 1/1! = 1 :: iid value 1/(n+1)!=1/2
+[PASS] (a) n=2: P(strict decrease)=1/12 <= 1/1! = 1 :: iid value 1/(n+1)!=1/6
+[PASS] (a) n=3: P(strict decrease)=1/60 <= 1/2! = 1/2 :: iid value 1/(n+1)!=1/24
+[PASS] (a) n=4: P(strict decrease)=1/360 <= 1/2! = 1/2 :: iid value 1/(n+1)!=1/120
+[PASS] (a) n=5: P(strict decrease)=1/2520 <= 1/2! = 1/2 :: iid value 1/(n+1)!=1/720
+[PASS] (a) n=6: P(strict decrease)=1/20160 <= 1/3! = 1/6 :: iid value 1/(n+1)!=1/5040
+[PASS] (a) n=7: P(strict decrease)=1/181440 <= 1/3! = 1/6 :: iid value 1/(n+1)!=1/40320
+[PASS] (b) straight_e1 n=6: P=0.00178+-0.00013 <= 1/3!=0.16667
+[PASS] (b) straight_e2 n=6: P=0.00021+-0.00005 <= 1/3!=0.16667
+[PASS] (b) staircase n=6: P=0.00046+-0.00007 <= 1/3!=0.16667
+[PASS] (b) U_turn n=6: P=0.00138+-0.00012 <= 1/3!=0.16667
+  (c) iid-clock copy rule on Z^1:
+   r=1: Cov=+0.1676 bound=9.450e+00
+   r=2: Cov=+0.0911 bound=7.690e+00
+   r=3: Cov=+0.0392 bound=5.737e+00
+   r=4: Cov=+0.0142 bound=3.745e+00
+   r=5: Cov=+0.0036 bound=1.746e+00
+   r=6: Cov=+0.0006 bound=6.351e-01
+   r=7: Cov=+0.0008 bound=1.907e-01
+   r=8: Cov=+0.0013 bound=4.903e-02
+[PASS] (c) |Cov(xi_0,xi_r)| <= Theorem B bound (+4SE) for r=1..8
+[PASS] (c) Theorem B bound is superexponentially small: bound(40) < 1e-30 :: bound(40)=1.078e-35
+[PASS] (d) mixture witness: Cov(1{v_0=b},1{v_x=b}) >= 124991/900000 = 0.138879 > 0 uniformly in x
+[PASS] (d) |O_h|=48 acts transitively on the 6 axes with stabiliser of order 8
+[PASS] (e) level clock: the 30-step backward staircase is strictly decreasing deterministically (tail = 1, no factorial decay)
+s3: PASS=16 FAIL=0
+TOTAL: PASS=58 FAIL=0

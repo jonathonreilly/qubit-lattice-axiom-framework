@@ -154,3 +154,6 @@ All-height assisted hop: trace_class upstream_support; source_of_blocker_text us
 
 
 Environment cost/balance: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Native Hamiltonian supplies energy balance and transport scale, replacing a chosen environmental energy functional. Actual radius/profile and scalar dynamical pole remain open.
+
+
+Six-layer pole: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Native interaction and original source yield actual selected-sector collective mode with checked normalization; no added scalar interaction. Global state, 3D propagation, physical scales and empirical mapping remain open.

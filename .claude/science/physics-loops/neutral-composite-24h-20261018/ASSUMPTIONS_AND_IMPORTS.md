@@ -106,3 +106,6 @@ All-height block: no new interaction. Open Ising matrix is an exact path encodin
 
 
 Environment balance: removed chosen environmental potential/stiffness in this conditional model. Geometry, weakanisotropy, J and state/measurement identification remain supplied. White-Affleck2000 Nagaoka-polaron paper is context for known kinetic/environment mechanism, no imported radius or t-J interaction. Native inequalities derive the bounds independently.
+
+
+Six-layer pole: native rectangleinteraction, plaquetterenormalization, hopping, normalization andoriginalreadoutallcomputed. Positiveplane-sectorvacuumstillselected; no globalgroundselectionimportallowed. GeometryL6 andweaklambda/J remain. No empiricaltest. Negativeqcurvature explicitly limits scalarinterpretation.

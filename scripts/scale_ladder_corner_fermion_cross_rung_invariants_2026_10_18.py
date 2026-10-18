@@ -480,6 +480,23 @@ def main():
           and all(m == 2 for m in at_E) and all(abs(f) == 1 for f in fluxes) and sum(fluxes) == 0 and gapE > 0.05,
           f"E = {E:.4f}, speed {nk[0.001].mean():.8f}, anisotropy {np.array(ank)}, fluxes {fluxes}, min distance to E elsewhere {gapE:.3f}")
 
+    def mults(M):
+        e = np.sort(np.angle(np.linalg.eigvals(M))); out = []; i = 0
+        while i < len(e):
+            j = i
+            while j + 1 < len(e) and abs(wrap(e[j + 1] - e[i])) < 1e-7: j += 1
+            out.append(j - i + 1); i = j + 1
+        if len(out) > 1 and abs(wrap(e[0] - e[-1])) < 1e-7: out[0] += out.pop()
+        return out
+    even_all = all(all(m % 2 == 0 for m in mults(Ws(c))) for c in cube)
+    phs = np.concatenate([np.angle(np.linalg.eigvals(Ws(g))) for g in grid])
+    hist, edges = np.histogram(phs, bins=720, range=(-np.pi, np.pi))
+    gap_arcs = edges[:-1][hist == 0]
+    gap_away = [x for x in gap_arcs if abs(wrap(x - E)) > 0.1]
+    check("doubling-corollary ingredient: every level of this step at all eight cube points is even (anticommuting axis-C2 lifts); "
+          "the gap hypothesis is NOT asserted for this step (coarse-grid empty arcs are reported only)",
+          even_all and all(m == 2 for m in at_E), f"coarse-grid empty arcs away from E: {len(gap_away)} of 720 bins (not a gap certificate)")
+
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     return 1 if FAIL else 0
 

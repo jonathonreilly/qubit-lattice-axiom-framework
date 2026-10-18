@@ -1,1 +1,33 @@
 subgroups of O found: 30 (orders [1, 2, 3, 4, 6, 8, 12, 24])
+(H, chi) pairs with a non-empty on-site channel: 84
+   SELECTIVE (+-k* forbidden, 4 doublers allowed): |H|=2 classes={"C2'": 1, 'E': 1}  x6
+   SELECTIVE (+-k* forbidden, 6 doublers allowed): |H|=3 classes={'C3': 2, 'E': 1}  x8
+   SELECTIVE (+-k* forbidden, 4 doublers allowed): |H|=4 classes={'C2': 1, "C2'": 2, 'E': 1}  x3
+   SELECTIVE (+-k* forbidden, 4 doublers allowed): |H|=4 classes={'C2': 1, 'C4': 2, 'E': 1}  x3
+   SELECTIVE (+-k* forbidden, 4 doublers allowed): |H|=8 classes={'C2': 3, "C2'": 2, 'C4': 2, 'E': 1}  x3
+   SELECTIVE (+-k* forbidden, 6 doublers allowed): |H|=12 classes={'C2': 3, 'C3': 8, 'E': 1}  x2
+[PASS] X1 (adversarial) selective symmetric-subgroup channels EXIST: with O broken to T (C4, C2' broken; C3 U(1)-dressed, chi(C3) = omega), the Q = R on-site singlet is forbidden at +-k* and allowed at all six doublers  2 (T, chi) channels; complex chi: [[(-0.5+0.866j)], [(-0.5-0.866j)]]
+[PASS] X1b no selective channel with H = O (C1's PSG-symmetric statement confirmed); selective channels need |H| <= 12  
+   T-omega on-site channel dim 7
+   broken check: max over C4/C2' of min_c ||U A U^T - c A|| / ||A|| : 1.414
+   first-order node singlets |m_K|: k*+pi(0, 1, 0):2.306e-01, k*+pi(0, 1, 1):1.351e-01, k*:3.920e-16, k*+pi(0, 0, 1):2.306e-01, k*+pi(1, 1, 0):1.351e-01, -k*:9.295e-17, k*+pi(1, 0, 0):2.306e-01, k*+pi(1, 0, 1):1.351e-01
+   BdG |eps|_min at the nodes: k*+pi(0, 1, 0):1.539e-01, k*+pi(0, 1, 1):6.146e-02, k*:6.593e-02, k*+pi(0, 0, 1):1.539e-01, k*+pi(1, 1, 0):6.146e-02, -k*:9.771e-03, k*+pi(1, 0, 0):1.539e-01, k*+pi(1, 0, 1):6.146e-02
+   k*: per-direction minimum of |eps| over r<=0.3: max 1.48e-02, at r in [0.150, 0.165]
+   -k*: per-direction minimum of |eps| over r<=0.3: max 8.60e-04, at r in [0.020, 0.020]
+[PASS] X2 T-omega on-site pairing (tau=0.5): first-order singlet exactly zero at +-k*, nonzero at the six doublers; the six doublers are gapped  min doubler gap 0.0615
+   exact BdG zero at +-k*: False
+   +-k* small-q |eps|/q (4 lowest BdG bands): range [97.242830, 659.680879]   (sqrt2/3 = 0.471405)
+   tau=0.1: |eps|(+-k*) = 2.77e-03, 3.94e-04; doubler gap 0.0134
+   tau=0.3: |eps|(+-k*) = 2.45e-02, 3.53e-03; doubler gap 0.0389
+   tau=0.5: |eps|(+-k*) = 6.59e-02, 9.77e-03; doubler gap 0.0615
+   tau=1.0: |eps|(+-k*) = 2.31e-01, 3.82e-02; doubler gap 0.1156
+[FAIL] X3 T-omega on-site: +-k* remain EXACT BdG zeros for all tau tested (protected by the residual T, no tuning)  
+   isotropic cone at sqrt2/3: False
+   global scan outside 0.35-balls of +-k* (N=20): min 0-gap 0.0614, min pi-gap 0.0614
+[FAIL] X4 T-omega on-site: small-q BdG spectrum at +-k* is an isotropic 4-band cone at sqrt2/3 (pairing enters only at O(q^2)) and no other quasi-energy-0/pi zero outside the balls (grid N=20; numerical, uncertified)  
+   range-1 T-omega: BdG |eps| at nodes: k*+pi(0, 1, 0):1.01e-01, k*+pi(0, 1, 1):6.89e-02, k*:2.39e-03, k*+pi(0, 0, 1):1.01e-01, k*+pi(1, 1, 0):6.89e-02, -k*:5.56e-03, k*+pi(1, 0, 0):1.01e-01, k*+pi(1, 0, 1):6.89e-02
+   range-1 k*: min over directions of max_r... per-direction min |eps| (r<=0.2): 4.90e-04
+   range-1 -k*: min over directions of max_r... per-direction min |eps| (r<=0.2): 1.60e-03
+[FAIL] X5 range-1 T-omega pairing: +-k* exact BdG zeros, six doublers gapped  
+
+TOTAL: PASS=3 FAIL=3   [76s]

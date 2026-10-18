@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/scale_ladder_gravity_orthoscheme_zero_action_curvature_2026_10_18.py
-runner_sha256: 289cde6862142db05e1f3c952106d708776a7d3b3be71e6c69c2f31a933d2110
+runner_sha256: 820c0820d14f59754a82ec2dc3b57188cbe817480270649de45ca0d6e3bd3412
 input_fingerprint_sha256: cec3f5a6b9ad7fd7a67b1078117b3bb09d3c98db51239d7d7f20e2357d41c034
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 46.83
+elapsed_sec: 45.34
 status: ok
 ----- stdout -----
 [PASS] G0 generic Bloch Regge builder reproduces the landed Kuhn-complex edge form (singular values)  max deviation 1.3e-08; 15 edges, 50 hinge classes
@@ -23,8 +23,10 @@ status: ok
 [PASS] G13 D4 cone, P1 matter on all vertices: on-shell stress has an O(1) component along vertex displacements (relative motions of the vertex types), the uniform part only O(k)  all 1.82, uniform 5.7e-02; all 1.82, uniform 2.8e-02
 [PASS] G14 site-cell metric (axis edges and both face diagonals through the holes): blind to every non-site vertex displacement, exact on constant metrics  |L G_nonsite| 2e-16; |L M(0) - 1| 3e-18
 [PASS] G15 static T_tt through the site metric: no overlap with null directions; graviton h_tt k^2 = -2 with h_xx = -h_tt; partner adds -2/3 with conformal pattern 1; total h_xx/h_tt = -1/2  overlap 0e+00, graviton -2.0003 (h_xx/h_tt -0.9999), partner -0.6667 (pattern dev 2e-05), total h_xx/h_tt -0.5000; overlap 0e+00, graviton -2.0002 (h_xx/h_tt -1.0000), partner -0.6667 (pattern dev 6e-06), total h_xx/h_tt -0.5000
+[PASS] G16 relative-strain least-squares metric over the 24 site-site segments: blind to non-site vertex displacements, exact on constant metrics  |L G_nonsite| 8e-17; |L M(0) - 1| 9e-16
+[PASS] G17 static T_tt through the strain metric: partner reading falls linearly in k (0.04 -> 0.02); h_tt k^2 = -2 and h_xx/h_tt = -1 (linearised GR pattern)  |L partner| 5.8e-03, h_tt k^2 -2.00026, h_xx/h_tt -0.99989; |L partner| 2.9e-03, h_tt k^2 -2.00008, h_xx/h_tt -0.99997; |L partner| 2.2e-03, h_tt k^2 -2.00005, h_xx/h_tt -0.99998
 
-TOTAL: PASS=16 FAIL=0
+TOTAL: PASS=18 FAIL=0
 
 ----- stderr -----
 

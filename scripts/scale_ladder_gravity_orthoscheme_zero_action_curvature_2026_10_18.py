@@ -20,7 +20,9 @@ of Z^3 x Z_tau (index 3 = tick):
      massless modes overlap the all-vertex P1 stress only at relative order k;
   G13-G15 that all-vertex P1 stress sources the relative vertex-type displacements at O(1); matter read
      through a site-cell metric is consistent, and its static source then excites the graviton (h_tt k^2 = -2)
-     plus one partner with conformal pattern 1 (-2/3), so the total h_xx/h_tt is -1/2.
+     plus one partner with conformal pattern 1 (-2/3), so the total h_xx/h_tt is -1/2;
+  G16-G17 a least-squares metric fitted to the relative strains of all 24 site-site segments is also
+     consistent, and through it the partners decouple at leading order: h_tt k^2 = -2 and h_xx/h_tt = -1.
 Supplied models only; no physical identification.
 Companion: docs/SCALE_LADDER_GRAVITY_ORTHOSCHEME_ZERO_ACTION_CURVATURE_BOUNDED_THEOREM_NOTE_2026-10-18.md
 """
@@ -446,6 +448,36 @@ def site_metric(C, k):
     return Lm
 
 
+def segment_readings(C, k):
+    """D4 cone: delta(l^2) of the 24 site-site segments through one cell (4 axes, 12 face diagonals through
+    the deep holes, 8 body diagonals through the centre) as rows over edge variables, the matching design
+    matrix in the 10 metric components, and the segment lengths."""
+    pairs = list(itertools.combinations(range(4), 2)); E = np.eye(4, dtype=int); Z = (0, 0, 0, 0)
+    k = np.asarray(k, complex); R, D, ls = [], [], []
+    def seg(parts, l):
+        r = np.zeros(C.E, complex)
+        for (p, q) in parts:
+            key, anc = _key_pair(p, q); r[C.ekey[key]] += 2 * l * np.exp(1j * k @ np.array(anc, float))
+        return r
+    def drow(v): return [v[a] * v[b] * (2 if a != b else 1) for a, b in HC]
+    for mu in range(4):
+        R.append(seg([((Z, 0), (tuple(E[mu]), 0))], 1.0)); D.append(drow(E[mu].astype(float))); ls.append(1.0)
+    for h, (m, n) in enumerate(pairs):
+        hv = (Z, 2 + h)
+        R.append(seg([((Z, 0), hv), (hv, (tuple(E[m] + E[n]), 0))], np.sqrt(2))); D.append(drow((E[m] + E[n]).astype(float))); ls.append(np.sqrt(2))
+        R.append(seg([((tuple(E[n]), 0), hv), (hv, (tuple(E[m]), 0))], np.sqrt(2))); D.append(drow((E[m] - E[n]).astype(float))); ls.append(np.sqrt(2))
+    for sg in itertools.product([1, -1], repeat=3):
+        sv_ = np.array([1, *sg]); v0 = tuple(int(x) for x in (1 - sv_) // 2); v1 = tuple(int(x) for x in (1 - sv_) // 2 + sv_)
+        R.append(seg([((v0, 0), (Z, 1)), ((Z, 1), (v1, 0))], 2.0)); D.append(drow(sv_.astype(float))); ls.append(2.0)
+    return np.array(R), np.array(D, float), np.array(ls)
+
+
+def strain_metric(C, k):
+    """least-squares metric fitted to the relative strains delta(l^2)/l^2 of the 24 segments."""
+    R, D, ls = segment_readings(C, k); W = np.diag(1 / ls ** 2)
+    return np.linalg.pinv(W @ D) @ (W @ R)
+
+
 def drows(C, k, which):
     out = []
     for a, d in C.terms:
@@ -670,6 +702,27 @@ def main():
     check("G15 static T_tt through the site metric: no overlap with null directions; graviton h_tt k^2 = -2 with h_xx = -h_tt; partner adds -2/3 with conformal pattern 1; total h_xx/h_tt = -1/2",
           all(o[0] < 1e-12 and abs(o[1] + 2) < 2e-3 and abs(o[2] + 1) < 2e-3 and abs(o[3] + 2 / 3) < 2e-3 and o[4] < 1e-3 and abs(o[5] + 0.5) < 2e-3 for o in out15),
           "; ".join(f"overlap {o[0]:.0e}, graviton {o[1]:+.4f} (h_xx/h_tt {o[2]:+.4f}), partner {o[3]:+.4f} (pattern dev {o[4]:.0e}), total h_xx/h_tt {o[5]:+.4f}" for o in out15))
+
+
+    # ---------------- G16 the relative-strain least-squares site metric
+    kq = np.array([0.3, -0.2, 0.1, 0.25]); Lq = strain_metric(Dc, kq); Gq = Dc.gauge(kq)
+    blind = np.abs(Lq @ np.hstack([Gq[:, 4 * t:4 * t + 4] for t in range(1, 8)])).max()
+    exact = np.abs(strain_metric(Dc, np.zeros(4)) @ Dc.line_map(np.zeros(4)) - np.eye(10)).max()
+    check("G16 relative-strain least-squares metric over the 24 site-site segments: blind to non-site vertex displacements, exact on constant metrics",
+          blind < 1e-12 and exact < 1e-12, f"|L G_nonsite| {blind:.0e}; |L M(0) - 1| {exact:.0e}")
+
+    # ---------------- G17 through it the partners decouple at leading order and the static response is linearised GR
+    out17 = []
+    for kk in [np.array([0, 0.04, 0, 0.0]), np.array([0, 0.02, 0, 0.0]), np.array([0, 0.012, 0.009, 0.0])]:
+        Q = Dc.Q(kk); w, V = np.linalg.eigh(0.5 * (Q + Q.conj().T)); V = V[:, np.argsort(np.abs(w))]
+        A = np.hstack([Dc.line_map(kk), Dc.gauge(kk)]); P = np.eye(Dc.E) - A @ np.linalg.pinv(A, rcond=1e-10)
+        partners = np.linalg.svd(P @ V[:, 32:40])[0][:, :2]
+        Lk = strain_metric(Dc, kk); T = np.zeros(10); T[itt] = 1.0; J = Lk.conj().T @ T
+        x = np.linalg.pinv(Q, rcond=1e-11) @ J; h = Lk @ x; k2 = kk @ kk
+        out17.append((np.linalg.norm(Lk @ partners, axis=0).max(), h[itt].real * k2, (h[ixx] / h[itt]).real))
+    check("G17 static T_tt through the strain metric: partner reading falls linearly in k (0.04 -> 0.02); h_tt k^2 = -2 and h_xx/h_tt = -1 (linearised GR pattern)",
+          abs(out17[0][0] / out17[1][0] - 2) < 0.1 and all(abs(o[1] + 2) < 1e-3 and abs(o[2] + 1) < 1e-3 for o in out17),
+          "; ".join(f"|L partner| {o[0]:.1e}, h_tt k^2 {o[1]:+.5f}, h_xx/h_tt {o[2]:+.5f}" for o in out17))
 
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

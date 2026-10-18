@@ -58,3 +58,7 @@ PASS [numerical] bstar chi=0 (Wilson-aligned mass): convergence is O(a) (slope 1
 PASS [numerical] bstar chi=1.57: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.041)
 PASS [numerical] bstar chi=1.57: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
 PASS [numerical] bstar chi=pi/2 (maximal twist): constant identification O(a) (slope 1.00); p-dependent chiral rotation V_a(p) gives O(a^2) (slope 2.00)
+   iso chi=0.000: max_p ||U^n - e^(-itH_D)|| = [0.02622255 0.01286787 0.00637377 0.00317193] slope 1.016; with p-dependent chiral rotation: [0.03199147 0.01582993 0.00787376 0.00392661] slope 1.009; C3 estimates [0.0333 0.0332 0.0332 0.0331]
+PASS [numerical] iso chi=0.00: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.033)
+PASS [numerical] iso chi=0.00: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
+PASS [numerical] iso chi=0 (Wilson-aligned mass): convergence is O(a) (slope 1.02) and the chiral rotation does not help (slope 1.01)

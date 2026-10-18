@@ -29,7 +29,8 @@ is adopted.
    form C1 · E(g) · C2. Here C1 and C2 are on-site Cliffords and E(g) is one O-symmetric layer
    of commuting CZ gates (plus an optional S gate), placed along an O-orbit polynomial g. So every
    one is a finite-depth circuit with no shift. 84 of the 132 unsigned matrices have a
-   nonconstant trace. They spread ballistically with a sharp linear light cone, and they have no
+   nonconstant trace. For the trivial action all 84 admit valid phases (336 signed QCAs). For the
+   sign action only 14 do (56 signed). These spread ballistically with a sharp linear light cone, and they have no
    glider. The fifth Clifford realisation of the sign character, **sign-f**, gives only
    involutions (16 unsigned, 32 signed).
 3. **There are no gliders at any range under O or T (proved theorem).** This holds for every
@@ -289,9 +290,11 @@ is consistent with Theorem 2(d).
 
 (b) **Gliders and propagation.**
     - None under O or T, at any range, for any action (Theorem 2).
-    - Ballistic, unbounded spreading occurs exactly for the 84 nonconstant-τ matrices of the
-      trivial and sign actions. The front reaches n·vert(Newt τ). Numerically the front radius
-      saturates the cell light cone in most cases. The support is sparse and fractal-like
+    - Ballistic, unbounded spreading occurs exactly for the nonconstant-τ matrices. With valid
+      phases there are 84 matrices (336 signed QCAs) for the trivial action and only 14 matrices
+      (56 signed) for the sign action, out of the same 84 unsigned matrices. The front reaches
+      n·vert(Newt τ). Numerically the front radius equals n at every step for all 28
+      representatives. The support is sparse and fractal-like
       (characteristic 2). See the numerics under Theorem 2.
     - Under the soldered actions nothing propagates at all on the cell (O, T, D4, D3).
 
@@ -384,3 +387,8 @@ context, with its own code that does not import or copy `c4lib.py`.
   - the C1 E(g) C2 structure claim;
   - the sign-f radius-2 count;
   - the c4_04 dynamics numerics.
+- **Correction confirmation (end of REVIEW.md, rv_sign_spread.log): accepted.** Under the sign
+  action only 14 of the 84 spreading matrices admit valid phases. My own recount agrees: 14
+  matrices and 56 signed QCAs, against 84 matrices and 336 signed for the trivial action.
+  Result item 2 and Answer (b) are corrected. The c4_04 instance checks ran on all 168 unsigned
+  matrices (84 trivial + 84 sign), a superset, so they still apply.

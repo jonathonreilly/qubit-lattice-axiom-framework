@@ -59,3 +59,4 @@
 
 ## review dispositions applied
 - REVIEW.md read. Applied C-1 (Thm 2(d) excludes glider form for general H), recorded cuboctahedral/Chamon phase confirmation, kept [3] open, listed the parts not re-checked, disclosed that Phase A was not blind to the counts, status line updated, appended 'Review dispositions'.
+- sign-action phase-valid spreading = 14 (56 signed) confirmed by own recount; NOTE corrected.

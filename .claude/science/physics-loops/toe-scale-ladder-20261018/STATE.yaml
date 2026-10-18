@@ -16,5 +16,5 @@ token_policy: >
   Orchestrator stays lean: workers return <=600-word summaries + artifact paths;
   full derivations/logs live in pack files; one independent checker per load-bearing result.
 cycle: 1
-active_route: wave1 = C4 (QCA classification), C1 (photon QMC), C5 (W3 chirality) running
-next_action: on each wave-1 return, dispatch an independent checker for its load-bearing step; launch wave 2 (C3, C2, C6) as CPU frees
+active_route: C1/C4/C5 authors running; C6 under independent review; C2 and C3 reviewed ready
+next_action: dispatch independent checkers for C1/C4/C5 on return; apply C6 review; then wave 3 (C7 or follow-ups chosen from C4/C5 outcomes); refresh lock before 00:36Z

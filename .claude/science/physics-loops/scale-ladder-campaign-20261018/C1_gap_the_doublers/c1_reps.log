@@ -40,3 +40,6 @@ on-site antisymmetric pairing channels: dim V_A2(det) = 5, dim V_A1 = 2 (of 66)
    4-fold level at k*, E=-3.1416: chi-invariant antisymmetric pairs: A2(det): 1, A1: 0
    4-fold level at k*, E=-0.0000: chi-invariant antisymmetric pairs: A2(det): 1, A1: 0
    [aside, breaks odd translations] staggered on-site CDW mass e^(iR.x) c^dag M c, M in channel A2 (dim 6): max |<node K|M|node K+R>|: k*:7.19e-01, -k*:7.18e-01, k*+pi ex:5.09e-01, -k*+pi ex:5.11e-01, k*+pi ey:5.17e-01, -k*+pi ey:5.17e-01, k*+pi ez:4.75e-01, -k*+pi ez:5.26e-01
+   [aside, breaks odd translations] staggered on-site CDW mass e^(iR.x) c^dag M c, M in channel A1 (dim 6): max |<node K|M|node K+R>|: k*:4.04e-16, -k*:4.36e-16, k*+pi ex:1.38e-15, -k*+pi ex:7.80e-16, k*+pi ey:1.54e-15, -k*+pi ey:2.17e-15, k*+pi ez:1.51e-15, -k*+pi ez:2.58e-15
+
+TOTAL: PASS=11 FAIL=0   [38s]

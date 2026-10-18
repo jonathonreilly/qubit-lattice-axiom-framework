@@ -515,3 +515,146 @@ def delta_toggle_fast(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, ta, tb, bu
                 st[kk] = -st[kk]
             prev = nxt if nxt > prev else prev
     return tot
+
+
+@njit(cache=True)
+def _sample_parity_poisson(x, r):
+    """n >= 0 with n = r mod 2, P(n) ~ x^n/n!."""
+    norm = np.cosh(x) if r == 0 else np.sinh(x)
+    u = np.random.random() * norm
+    n = r
+    term = 1.0
+    for k in range(1, r + 1):
+        term *= x / k
+    acc = term
+    while acc < u and n < 100000:
+        term *= x * x / ((n + 1) * (n + 2))
+        n += 2
+        acc += term
+    return n
+
+
+@njit(cache=True)
+def hist_update_V0(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, T, p, et, eq, seg_f, seg_al, tmp):
+    """Exact heat-bath resampling of the whole kink history of plaquette p on the open path [0,T], V = 0,
+    conditional on all other plaquettes' histories (forward filtering, backward sampling).
+    Returns False on capacity overflow (state then unchanged)."""
+    # ---- collect neighbour events
+    m = 0
+    for j in range(1, nnb[p]):
+        q = nbh[p, j]
+        for i in range(kc[q]):
+            et[m] = kt[q, i]
+            eq[m] = q
+            m += 1
+    order = np.argsort(et[:m])
+    ets = et[:m][order].copy()
+    eqs = eq[:m][order].copy()
+    oldn = kc[p]
+    kc[p] = 0  # remove p's kinks: link states below are the reference (parity-0) states
+    # reference p-link states at tau = 0+
+    st = np.empty(4, dtype=np.int64)
+    for k in range(4):
+        st[k] = s0[plinks[p, k]]
+    # forward pass; seg k = (t_k, t_{k+1}) with t_0 = 0, t_{m+1} = T; constraint at event k (k=0..m-1) after seg k
+    a0 = 1.0
+    a1 = 1.0
+    for k in range(m + 1):
+        c = 0
+        for kk in range(4):
+            c += psign[kk] * st[kk]
+        f = 1 if (c == 4 or c == -4) else 0
+        seg_f[k] = f
+        seg_al[2 * k] = a0
+        seg_al[2 * k + 1] = a1
+        tl = 0.0 if k == 0 else ets[k - 1]
+        tr = T if k == m else ets[k]
+        if f == 1:
+            x = g * (tr - tl)
+            ch = np.cosh(x)
+            sh = np.sinh(x)
+            b0 = a0 * ch + a1 * sh
+            b1 = a0 * sh + a1 * ch
+            a0, a1 = b0, b1
+        if k < m:
+            q = eqs[k]
+            t = ets[k]
+            # circulation of q just before t, with p's links at parity 0 (st) and parity 1 (negated)
+            c0 = 0
+            c1 = 0
+            for kq in range(4):
+                l = plinks[q, kq]
+                shared = -1
+                for kk in range(4):
+                    if plinks[p, kk] == l:
+                        shared = kk
+                if shared >= 0:
+                    v = psign[kq] * st[shared]
+                    c0 += v
+                    c1 -= v
+                else:
+                    v = psign[kq] * link_state(s0, kt, kc, lplaqs, l, t)
+                    c0 += v
+                    c1 += v
+            if not (c0 == 4 or c0 == -4):
+                a0 = 0.0
+            if not (c1 == 4 or c1 == -4):
+                a1 = 0.0
+            # q's kink toggles the shared links of p (reference state after t)
+            for kq in range(4):
+                l = plinks[q, kq]
+                for kk in range(4):
+                    if plinks[p, kk] == l:
+                        st[kk] = -st[kk]
+        s = a0 + a1
+        if s <= 0.0:
+            # cannot happen for a valid configuration (current history has positive weight)
+            kc[p] = oldn
+            return False
+        a0 /= s
+        a1 /= s
+    # ---- backward sampling
+    b = 0 if np.random.random() * (a0 + a1) < a0 else 1
+    nk = 0
+    for k in range(m, -1, -1):
+        tl = 0.0 if k == 0 else ets[k - 1]
+        tr = T if k == m else ets[k]
+        al0 = seg_al[2 * k]
+        al1 = seg_al[2 * k + 1]
+        if seg_f[k] == 1:
+            x = g * (tr - tl)
+            ch = np.cosh(x)
+            sh = np.sinh(x)
+            w0 = al0 * (ch if b == 0 else sh)
+            w1 = al1 * (sh if b == 0 else ch)
+            a = 0 if np.random.random() * (w0 + w1) < w0 else 1
+            n = _sample_parity_poisson(x, (a + b) % 2)
+            if nk + n > kt.shape[1]:
+                kc[p] = 0
+                return False
+            for i in range(n):
+                tmp[nk] = tl + np.random.random() * (tr - tl)
+                nk += 1
+        else:
+            a = b
+        b = a
+    # b is now the parity at tau = 0
+    if nk > kt.shape[1]:
+        return False
+    tt = np.sort(tmp[:nk])
+    for i in range(nk):
+        kt[p, i] = tt[i]
+    kc[p] = nk
+    if b == 1:
+        flip_s0(s0, plinks, p)
+    return True
+
+
+@njit(cache=True)
+def hist_sweep_V0(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, T, nup, et, eq, seg_f, seg_al, tmp):
+    npl = plinks.shape[0]
+    for _ in range(nup):
+        p = np.random.randint(npl)
+        if not hist_update_V0(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, T, p, et, eq, seg_f, seg_al, tmp):
+            return False
+    return True

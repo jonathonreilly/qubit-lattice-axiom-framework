@@ -16,5 +16,5 @@ token_policy: >
   Orchestrator stays lean: workers return <=600-word summaries + artifact paths;
   full derivations/logs live in pack files; one independent checker per load-bearing result.
 cycle: 1
-active_route: C1/C4/C5 authors running; C6 under independent review; C2 and C3 reviewed ready
-next_action: dispatch independent checkers for C1/C4/C5 on return; apply C6 review; then wave 3 (C7 or follow-ups chosen from C4/C5 outcomes); refresh lock before 00:36Z
+active_route: 22:53Z container restart recovered; C1 finisher (new agent), C5 review finisher (new agent), C4c resumed. Ready: C2 C3 C4 C4b C6(F1-F4) C7
+next_action: on C1/C5/C4c returns -> review/confirm; then C5b (many-body chirality) or synthesis; keep background jobs <25 min (restart risk)

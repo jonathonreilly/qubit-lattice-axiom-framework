@@ -20,3 +20,18 @@
  W(k*) commutes with all 24 rho: True
  real-space W unitary, commutes with 24 PSG rotations and 3 translations: True True
  exact node dimension: 6
+ exact: M(q)^3 - (|q|^2/3) M(q) == 0: True ; tr M(q)^2 = 4*(q_x**2 + q_y**2 + q_z**2)/3 ; tr M(q) = 0
+ eigenvalue-1 multiplicity at random k: [2, 2, 2, 2, 2] ; +1 dims of R1,R2: 6 8
+ commutant restricted to node, eigenvalues: [-20.5457 -20.5457   8.9436   8.9436   8.9436   8.9436]
+  dir [1. 0. 0.]: ||P_D T P_D|| = 4.4e-16, ||P_D T P_G|| = 0.456
+  dir [0. 1. 0.]: ||P_D T P_D|| = 4.7e-16, ||P_D T P_G|| = 0.456
+  dir [0. 0. 1.]: ||P_D T P_D|| = 2.3e-16, ||P_D T P_G|| = 0.406
+  d=[1 0 0] q=0.01: |phase|/q [0.         0.         0.57734867 0.57734867 0.57734867 0.57734867]
+  d=[1 0 0] q=0.001: |phase|/q [0.         0.         0.57735025 0.57735025 0.57735025 0.57735025]
+  d=[0.577 0.577 0.577] q=0.01: |phase|/q [0.         0.         0.57735027 0.57735027 0.57735027 0.57735027]
+  d=[0.577 0.577 0.577] q=0.001: |phase|/q [0.         0.         0.57735027 0.57735027 0.57735027 0.57735027]
+  d=[0.447 0.894 0.   ] q=0.01: |phase|/q [0.         0.         0.57734944 0.57734944 0.57734944 0.57734944]
+  d=[0.447 0.894 0.   ] q=0.001: |phase|/q [0.         0.         0.57735026 0.57735026 0.57735026 0.57735026]
+== (c) no-go lemma
+ constant-spectrum symmetric factors: 24 isolated doublets, max half-splitting/q = 8.9e-09
+ i[H_link, H_on] commutes with PSG rotations (real space): True 0.6

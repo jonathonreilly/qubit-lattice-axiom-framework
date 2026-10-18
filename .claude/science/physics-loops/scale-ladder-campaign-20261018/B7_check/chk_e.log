@@ -1,3 +1,10 @@
 trial 0: odd translation broken True; span(k*,-k*) invariant (leak 1.3e-15); folded k* multiplicities [4, 4, 4, 4, 4, 4]
 trial 1: odd translation broken True; span(k*,-k*) invariant (leak 1.3e-15); folded k* multiplicities [4, 4, 4, 4, 4, 4]
 trial 2: odd translation broken True; span(k*,-k*) invariant (leak 1.3e-15); folded k* multiplicities [4, 4, 4, 4, 4, 4]
+U(x)U on pairs is a LINEAR rep of O_h: True
+1-dim reps on site pair space (w1 sign, improper sign): (dim, ranks of basis vectors, generic rank) {(0, 1): (2, [12, 12], 12), (1, 0): (3, [12, 12, 12], 12), (1, 1): (2, [12, 12], 12)}
+one-particle O_h site irreps: [4, 4, 4]
+   char (0, 1): min numerical rank over a CP^1 grid of the first two basis vectors = 12
+   char (1, 0): min numerical rank over a CP^1 grid of the first two basis vectors = 8
+   char (1, 1): min numerical rank over a CP^1 grid of the first two basis vectors = 12
+O_h preserves parity of x+y+z: True

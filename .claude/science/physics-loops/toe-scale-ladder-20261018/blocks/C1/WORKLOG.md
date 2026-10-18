@@ -124,3 +124,16 @@ checked observable; additionally all relative errors < 1% for E.
   random-walk starts s>=11) and B2 (V=0.5/0.9 controls, both start types). Hysteresis between start
   types at fixed (L,T) is a pre-declared mixing diagnostic; for chains stuck in different macrostates the
   lower-energy one is the better ground-state estimate (energy comparison declared now, before data).
+
+## 20:27 UTC — first multi-start results (L=4,6) and the electric-winding energy test
+(Clock note: the entry headed "20:05" was actually written ~19:57.)
+- Added a robust, guide-free observable: E0(W=1) - E0(W=0) from the mixed estimator (a Rayleigh
+  quotient, exact in expectation, and the one estimator on which chains from different starts agree).
+  Pre-declared reading (stated now, before L>=8): Coulomb ⇒ dE ∝ 1/L (dE*L → const);
+  confined ⇒ dE ∝ L (string tension, dE/L → const).
+  L=4 (T=8): dE = 0.676(63), dE*L = 2.71(25); L=6 (T=12): dE = 0.440(102), dE*L = 2.64(61).
+- Middle observables keep a memory of the start: L=6 T=12, S_T(k1) = 0.185 / 0.248 / 0.369 for the
+  canonical / rotated / RK-walk starts, X-star flippability Bragg 0.031 / 0.011 / 0.013, while E_mid agree
+  (-0.2880(4), -0.2893(4), -0.2894(5)) and E_mix agree (-0.28938, -0.28905, -0.28942). The middle-state
+  structure factors are NOT equilibrated at L>=6 within 1e5 sweeps; they will be reported as per-start
+  ranges, not as converged values.

@@ -120,3 +120,15 @@ Write omega^2 = k^2 (1 + alpha k^2).
 
   PR #9714 is now at PASS=18. Open: whether that reading follows from a principle; a site-matter
   Ward identity; light bending and the dynamical partner coupling.
+
+## Phase 4 (PR #9772)
+- F20. Kuhn control: the relative-strain least-squares metric reads the fifth zero-action direction at
+  O(1) (|L f| 0.69-0.75), so the strain reading does not rescue Kuhn (kuhn_strain.py).
+- F21. Whitney Maxwell on the D4 cone (d4_maxwell*.py, d4_k6.py):
+  - nullity = 8 vertex gauge; leading = continuum;
+  - 3 massless non-gauge directions (no partners);
+  - both polarisations on one shell with NO O(k^4) term;
+  - O(k^6) beta_photon = -beta_scalar/4, both zero on the axis, scalar beta ~5e-4.
+
+  Cone hierarchy on the D4 cone: spins 0, 1, 2 share the leading cone; spins 0 and 1 also share
+  it through k^4; the graviton splits at k^4 via its partners.

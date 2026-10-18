@@ -419,3 +419,6 @@ Native attractive neutral block complete: eighth-order straight-rectangle term g
 
 
 Bound-mode environment block complete: matchedheavyreturn amplitude -(8sqrt2/3)gamma/(Delta4R)lambda^(L-4)tau4 derived withrefinedflat-orbit cancellation, not genericO(lambda)error. Exactrotationgauge removesfree-preparationzero. Native fixedflux6siteGreen reduction yieldsDirichletsource logR limit-.9463812213 andoutgoingcoefficient log1/eps limit-1.8927624427. Bothresponses vanishunscaledatthreshold. IndependentchecksandfinalreviewPASS; nofullnativeemissionrate. Rootnext challenges connectedvertex inducedbyvacuum/pair rotation, potentiallyorderlambda^(L-3), ratherthanisolatedcomplementaryhop.
+
+
+Native mixing vertex complete: local matched vacuum rotation gives J(gamma/Delta)lambda^(L-3)(Te-T0), earlier than complementaryhop. Exactfinite-time identity androtatedtwochannel controlsPASS; pinnedcoefficient energyconserving formfactor haslog(1/Ef)M/c→4pi. Nativefullrate/globalpolecharge unproved. IndependentfinalreviewPASS. Nextroot hardroute: secondlocalSW inbadplaquettecount to control actualpositivecurvature atpolynomialR, resolvingq<<lambda withoutglobalvolumenormloss.

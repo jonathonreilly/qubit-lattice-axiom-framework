@@ -166,3 +166,6 @@ Ten-layer block actual_current_surface_status: conditional-support; proposal_all
 
 
 Bound-mode environment actual_current_surface_status: conditional-support; proposal_allowed: false; bare_retained_allowed: false. Final scoped review pass; no audit verdict. Prepared protocol and separate static coefficient scattering are not a relaxed universal coupling.
+
+
+Native mixing vertex complete: local matched vacuum rotation gives J(gamma/Delta)lambda^(L-3)(Te-T0), earlier than complementaryhop. Exactfinite-time identity androtatedtwochannel controlsPASS; pinnedcoefficient energyconserving formfactor haslog(1/Ef)M/c→4pi. Nativefullrate/globalpolecharge unproved. IndependentfinalreviewPASS. Nextroot hardroute: secondlocalSW inbadplaquettecount to control actualpositivecurvature atpolynomialR, resolvingq<<lambda withoutglobalvolumenormloss.

@@ -118,3 +118,6 @@ Ten-layer native attraction and coupling derived without a new term. Positive co
 
 
 Matched dressed injection/return is a protocol premise; bare pulse not derived. Static fixed-flux scattering omits neutral recoil and other vertices. Lawler-Limic potential-kernel/killed-Green theorem is a declared mathematical input, with L0 normalization divided by4; no observational values imported.
+
+
+Mixing block: local physical-plane anchor gauge and matched vacuum channels explicit. Pinned two-channel scattering is a separate coefficient diagnostic, not the complete native Hamiltonian. Threshold kernel reuses declared lattice Green mathematics. No independent coupling inserted; scales, slab and state/measurement map remain premises.

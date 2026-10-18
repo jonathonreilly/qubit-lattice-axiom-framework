@@ -166,3 +166,6 @@ Ten-layer block: upstream_support; derives native attraction, positive coefficie
 
 
 Bound-mode environment: upstream_support, partially closes prepared source/detector coupling to derived pole and corrects free-environment substitution. Full energy-conserving native heavy-plus-neutral channel remains open.
+
+
+Native mixing vertex complete: local matched vacuum rotation gives J(gamma/Delta)lambda^(L-3)(Te-T0), earlier than complementaryhop. Exactfinite-time identity androtatedtwochannel controlsPASS; pinnedcoefficient energyconserving formfactor haslog(1/Ef)M/c→4pi. Nativefullrate/globalpolecharge unproved. IndependentfinalreviewPASS. Nextroot hardroute: secondlocalSW inbadplaquettecount to control actualpositivecurvature atpolynomialR, resolvingq<<lambda withoutglobalvolumenormloss.

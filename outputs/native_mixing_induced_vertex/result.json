@@ -1,0 +1,112 @@
+{
+  "status": "conditional-support",
+  "controls": {
+    "neutral_mixing_vertex.py": {
+      "rotation": [
+        {
+          "c": 0.1,
+          "rotation_error": 3.861494713777849e-18,
+          "leading_relative_error": 0.019419324309079666
+        },
+        {
+          "c": 0.03,
+          "rotation_error": 1.0836162993158948e-18,
+          "leading_relative_error": 0.0017951545342211883
+        },
+        {
+          "c": 0.01,
+          "rotation_error": 4.1206863152426835e-19,
+          "leading_relative_error": 0.00019994001999290578
+        }
+      ],
+      "duhamel_error": 2.67147470653964e-16,
+      "quadrature_error": 4.300245332973175e-14,
+      "flux_return_trace4": -64.0
+    },
+    "neutral_mixing_scattering.py": {
+      "gc": 0.10442215919000226,
+      "scaled_limit": 12.566370614359172,
+      "threshold_rows": [
+        {
+          "ef": 0.001,
+          "incoming_energy": 0.002,
+          "formfactor": [
+            1.2397705476698164,
+            -0.4289117745515674
+          ],
+          "asymptotic": [
+            1.2378474090408211,
+            -0.4291660806486928
+          ],
+          "relative_error": 0.0014806734328001218,
+          "scaled": [
+            8.56403154539275,
+            -2.962817574876186
+          ]
+        },
+        {
+          "ef": 1e-05,
+          "incoming_energy": 2e-05,
+          "formfactor": [
+            0.8733744035400081,
+            -0.200761913404669
+          ],
+          "asymptotic": [
+            0.8733530226371884,
+            -0.20076308007115745
+          ],
+          "relative_error": 2.3894611303275935e-05,
+          "scaled": [
+            10.055094410968945,
+            -2.311356945232762
+          ]
+        },
+        {
+          "ef": 1e-07,
+          "incoming_energy": 2e-07,
+          "formfactor": [
+            0.6680054668393115,
+            -0.11485570397566368
+          ],
+          "asymptotic": [
+            0.6680052412111575,
+            -0.11485571056966995
+          ],
+          "relative_error": 3.3302158878249787e-07,
+          "scaled": [
+            10.766976009879087,
+            -1.8512552227379009
+          ]
+        }
+      ],
+      "exact_twochannel_control": [
+        {
+          "c": 0.03,
+          "relative_born_error": 0.0017644509850402387,
+          "amplitude": [
+            0.05671562102946135,
+            -0.03410743254585793
+          ]
+        },
+        {
+          "c": 0.01,
+          "relative_born_error": 0.00019651486720871877,
+          "amplitude": [
+            0.01893521075487038,
+            -0.01138647724044073
+          ]
+        },
+        {
+          "c": 0.003,
+          "relative_born_error": 1.7691110001830413e-05,
+          "amplitude": [
+            0.005681589826389765,
+            -0.003416536193527049
+          ]
+        }
+      ],
+      "scope": "Pinned coefficient model, first order in c then threshold; no native emission rate"
+    }
+  },
+  "scope": "Native local matched vertex; separate pinned coefficient scattering, not full microscopic rate"
+}

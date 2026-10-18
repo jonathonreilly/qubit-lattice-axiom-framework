@@ -154,3 +154,10 @@
 [PASS] F.c4bchk.C2' [649s]: without G_f^(1): {K[xi],K[eta]} - K[[xi,eta]] = cc int eps_kij (S_xi S_eta)_ij s_k, cc = [{cc: 1/2}] (spin-1/2 note Result 4 / N2 form); and {G1, G_f^(1)} terms cancel it exactly (C1')
    F cov r=1: residual equations 0
    F cov r=2: residual equations 0
+   F bare r=1: residual equations 96
+   F bare r=2: residual equations 96
+[PASS] F.c4bchk.F2' [885s]: {C,G} at order h chi chi: walker + 1/4 N T n with the constructed symmetric-gauge G_f^(1) closes at r = 1 and r = 2 (a = 1/r) with NO free parameter: {'cov r=1': True, 'cov r=2': True, 'bare r=1': False, 'bare r=2': False}
+[PASS] F.c4bchk.F1' [885s]: bare walker with the same G_f^(1): fails at r = 1, 2: {'cov r=1': True, 'cov r=2': True, 'bare r=1': False, 'bare r=2': False}
+   own isotropic h-linear relabelling candidates: 33
+   per-candidate brackets done
+   F1'' bare r=1: 3582 equations, rank 17, augmented rank 18

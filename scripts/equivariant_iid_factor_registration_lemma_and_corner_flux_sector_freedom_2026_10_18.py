@@ -20,9 +20,12 @@ consolidates the campaign's exact finite certificates and illustrations:
      enumeration (smallest index >= 12 is 16); block arithmetic.
   A. Flux sector freedom (exact, GF(2) and Pauli algebra):
      A1 corner-graph cycle space, face relations and the 16 uniform patterns on L = 3, 4 (6 with --full);
-     A2 BKSF Pauli algebra on L = 3: the bare-sector flux depends on conventions, and dictionary sign
-        flips act transitively on consistent flux configurations (any target is the bare sector of
-        some convention); A3 one sign flip flips exactly the faces through that edge;
+     A2 BKSF Pauli algebra on L = 3: the formal bare-sector flux kappa depends on conventions; the identity
+        prod_r kappa = sigma_r, so in any fixed convention the sectors are exactly the consistent F; in the
+        three generic conventions tested the all-bare-+1 assignment is inconsistent, but a translation-
+        invariant vertex ordering found by local search makes it consistent, and hop-sign flips of that
+        convention make uniform 1011, 1111 and 0000 each the bare sector (which consistent F is 'bare'
+        is set by the dictionary); A3 one sign flip flips kappa exactly on the faces through that edge;
      A4 fermion-level PSG (BFS sign propagation) on L = 4 for all 16 uniform patterns; design targets
         select {1011, 1111}; the gauge-invariant standard-convention statement (pi through every face
         at t1 = -1, lambda = 0) and the chiral triangle phase pi + 3 arctan(lambda).
@@ -602,9 +605,80 @@ def part_A2A3(rng):
     check("A2 identity: for every basis face relation r, prod_{C in r} kappa_C = sigma_r (the operator sign of the product of bare strings),"
           " in all three conventions; so the flux-free sector F = +1 exists in every convention", ok,
           f"relations with sigma_r = -1 (all-bare-+1 assignment inconsistent): {empt} of {len(rels)}")
-    check("A2 correction to the 'natural vacuum' reading: the all-bare-strings-+1 assignment is not a consistent sector in any of the"
-          " three tested conventions (some relation has bare product -I); hop-sign flips cannot repair it (they leave B_C and sigma unchanged)",
+    check("A2 observation: in these three generic conventions the all-bare-strings-+1 assignment is not a consistent sector (some basis"
+          " relation has bare product -I); hop-sign flips alone cannot change this (they leave B_C and sigma unchanged)",
           all(v > 0 for v in empt.values()))
+    # the vertex orderings are part of the convention: search translation-invariant orderings (the same order of the six
+    # incident edge slots (corner, neighbour corner, displacement) at every vertex of a given corner type) for one in which
+    # every sigma_r = +1, so that the all-bare-+1 assignment IS a consistent sector.  Fast bitmask Paulis for the search;
+    # the result is re-verified from scratch with the array implementation above.
+    def slot(v, k):
+        i, j, _, _ = G.edges[k]; (vs, c, disp, c2) = G.edesc[k]
+        return (c, c2, disp) if v == i else (c2, c, tuple(-x for x in disp))
+    ctype = [G.verts[v][1] for v in range(G.nV)]
+    slots_of = {}
+    for v in range(G.nV):
+        slots_of.setdefault(ctype[v], sorted((slot(v, k) for k in INC[v]), key=repr))
+    slotmap = [{slot(v, k): k for k in INC[v]} for v in range(G.nV)]
+    def make_order(perm):
+        return [[slotmap[v][s] for s in perm[ctype[v]]] for v in range(G.nV)]
+    def nviol(order):
+        Sb = []
+        for k, (i, j, _, _) in enumerate(G.edges):
+            z = 0
+            for v in (i, j):
+                for l in order[v]:
+                    if l == k: break
+                    z ^= 1 << l
+            Sb.append((0, 1 << k, z))
+        bare_b = []
+        for f in fl:
+            p, x, z = 0, 0, 0
+            for e in f:
+                p2, x2, z2 = Sb[e]
+                p, x, z = p + p2 + 2 * (z & x2).bit_count(), x ^ x2, z ^ z2
+            q = (p - (x & z).bit_count()) % 4
+            bare_b.append(((p - q) % 4, x, z))
+        n = 0
+        for mem in members:
+            p, x, z = 0, 0, 0
+            for i in mem:
+                p2, x2, z2 = bare_b[i]
+                p, x, z = p + p2 + 2 * (z & x2).bit_count(), x ^ x2, z ^ z2
+            n += ((p - (x & z).bit_count()) % 4) != 0
+        return n
+    srng = np.random.default_rng(5)
+    types = sorted(slots_of, key=repr)
+    perm = {t: [slots_of[t][i] for i in srng.permutation(6)] for t in types}
+    cur = nviol(make_order(perm)); start = cur; Ttemp = 2.0; step = 0
+    for step in range(3000):
+        if cur == 0: break
+        t = types[srng.integers(len(types))]; a, b = srng.choice(6, 2, replace=False)
+        perm[t][a], perm[t][b] = perm[t][b], perm[t][a]
+        nv = nviol(make_order(perm))
+        if nv <= cur or srng.random() < math.exp(-(nv - cur) / Ttemp):
+            cur = nv
+        else:
+            perm[t][a], perm[t][b] = perm[t][b], perm[t][a]
+        Ttemp = max(0.05, Ttemp * 0.997)
+    print(f"  translation-invariant ordering search: {start} -> {cur} relations with sigma_r = -1 after {step} steps; {el()}")
+    ok = cur == 0
+    if ok:
+        order = make_order(perm); label = np.arange(G.nV)
+        S = build_S(order); kap, bare = loops(S, label); sig = relation_signs(bare)
+        ok &= algebra_ok(S) and (sig == 1).all() and all(np.prod(kap[mem]) == s for mem, s in zip(members, sig))
+        b0 = (kap == -1).astype(int)
+        for tname in ('uniform 1011', 'uniform 1111', 'uniform 0000'):
+            T = np.array([tuple(int(ch) for ch in tname.split()[1])[TYPES.index(k)] for k in kinds])
+            w = gf2_solve(fl, (T ^ b0).tolist(), nE)
+            if w is None:
+                ok = False; continue
+            S2 = [Pauli(s.p + 2, s.x, s.z) if w[e] else s for e, s in enumerate(S)]
+            kap2, bare2 = loops(S2, label)
+            ok &= ((kap2 == -1).astype(int) == T).all() and (relation_signs(bare2) == 1).all()
+    check("A2 a translation-invariant vertex ordering exists on L = 3 for which every sigma_r = +1 (re-verified from scratch, hop"
+          " algebra re-checked), and hop-sign flips of it make uniform 1011, 1111 and 0000 each the consistent bare sector:"
+          " which consistent F is 'bare' is set by the dictionary", ok)
     # a fixed convention realizes every consistent flux configuration, and only those
     u = rng.integers(0, 2, nE)
     targets = {'uniform 1011': np.array([(1, 0, 1, 1)[TYPES.index(k)] for k in kinds]),

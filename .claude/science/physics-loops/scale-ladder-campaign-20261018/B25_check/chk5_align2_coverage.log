@@ -11,3 +11,13 @@
    S2.p.S2.o.S2.q.S2.o ('P11', 'H13', 'P9', 'H13'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
    S2.p.S2.o.S2.q.S2.o ('P8', 'H30', 'P3', 'H30'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
    S4.p.S4.o.S4.q.S4.o ('P9', 'L211', 'L101', 'L211'): phi+phi' = 0 mod 2pi True; G^T=+-G False; mechanism A; spec W' = spec W True
+   S2i.p.S2i.o.S2i.q.S2i.o ('P5', 'L113', 'P7', 'L113'): phi+phi' = 0 mod 2pi True; G^T=+-G False; mechanism A; spec W' = spec W True
+   S4.p.S4.o.S4.q.S4.o ('P3', 'L112', 'P9', 'L112'): phi+phi' = 0 mod 2pi True; G^T=+-G False; mechanism A; spec W' = spec W True
+   S4.p.S4.o.S4.q.S4.o ('P7', 'L132', 'P8', 'L132'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   S4i.p.S4i.o.S4i.q.S4i.o ('P4', 'L312', 'P2', 'L312'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   S4.p.S4.o.S4.q.S4.o ('P4', 'L132', 'L101', 'L132'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   S2i.p.S2i.o.S2i.q.S2i.o ('P5', 'L330', 'P3', 'L330'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   S4i.p.S4i.o.S4i.q.S4i.o ('L101', 'L330', 'P9', 'L330'): phi+phi' = 0 mod 2pi True; G^T=+-G True; mechanism AB; spec W' = spec W True
+   Si.p.Si.o.Si.q.Si.o ('P10', 'H11', 'P8', 'H11'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   S2.p.S2.o.S2.q.S2.o ('P2', 'H20', 'P7', 'H20'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   S4.p.S4.o.S4.q.S4.o ('P10', 'L330', 'L303', 'L330'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True

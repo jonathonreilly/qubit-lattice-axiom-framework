@@ -1,7 +1,7 @@
 ---
 claim_id: no_equivariant_factor_of_iid_noise_registers_a_coarse_block_lattice_and_the_corner_flux_is_a_free_sector_label_of_its_local_fermionization_bounded_theorem_note_2026-10-18
 claim_type: bounded_theorem
-claim_scope: "(1) Registration lemma (exact). Let omega be iid noise on Z^3 (any standard Borel base law), or more generally any stationary Z^3 system whose translation action is mixing, and let X = Phi(omega) be any measurable translation-equivariant factor (finitarity not needed). There is no a.s. defined measurable o: Omega -> Z^3/Lambda with o(T^v omega) = o(omega) - v for a sublattice Lambda of index m >= 2; and for weakly mixing systems there is none into R^3/Lambda' for any lattice Lambda' not containing Z^3, so no local observable of X has a Bragg (pure-point) component off 2 pi Z^3. Consequences: iid-priority formation from an empty start with a translation-covariant rule (the B3 class) never registers a coarse block lattice; the hypotheses are load-bearing (a deterministic periodic start slice and a position-dependent rule each register trivially, and both are allowed by B3 Definition 1); a translation-invariant finite-depth circuit applied to a translation-invariant product state likewise produces no registration. Not excluded: polycrystals, defective or amorphous packings without a global coset, fractional-translation encodings, emergent quasiparticles of a translation-invariant fine Hamiltonian, and every route outside covariant empty-start formation. (2) Density bound (exact): a faithful local encoding of a corner site's 12 modes needs 12 qubits per coarse site; a registered embedding therefore has index m >= 12, the smallest O-invariant index >= 12 is 16, and an O-equivariant linear placement of the cubic coarse lattice has index k^3 >= 27. Whether a fine-translation-covariant (fractional-translation) encoding exists is open. (3) For the supplied corner model (BKSF on the corner graph), the flux is a free sector label (exact, GF(2) and Pauli algebra on L = 3, 4, 6 tori): the faces span the cycle space up to the three noncontractible classes; on even L all 16 uniform patterns and generic non-uniform patterns are consistent sectors (each uniform pattern lifts to a 4-periodic gauge field on Z^3); in every tested BKSF convention the signed loop stabilizers of flux F generate a group without -I exactly when F is consistent; dictionary sign flips relabel sectors; the projective symmetry group exists for all 16 uniform patterns on L = 4; the corner-model design targets (C4^4 = -1, commuting translations, an O-fixed momentum) select exactly the u-patterns {1011, 1111}, leaving the triangle free; gauge-invariantly the repo corner model (t1 = -1, lambda = 0) has standard flux pi through every face, and the chiral term gives triangle phase pi + 3 arctan(lambda). (4) Numerical, free fermions, uniform sectors: at the node filling nu = 1 the corner pattern ranks 15th or 16th of 16 (1.85 and 1.51 per site above flux-free at t2 = 0.2 and 1), 6th of 16 with the chiral term. Nothing here selects a flux, a dictionary, a block lattice or a formation rule, and nothing is physically identified."
+claim_scope: "(1) Registration lemma (exact). Let omega be iid noise on Z^3 (any standard Borel base law), or more generally any stationary Z^3 system whose translation action is mixing, and let X = Phi(omega) be any measurable translation-equivariant factor (finitarity not needed). There is no a.s. defined measurable o: Omega -> Z^3/Lambda with o(T^v omega) = o(omega) - v for a sublattice Lambda of index m >= 2; and for weakly mixing systems there is none into R^3/Lambda' for any lattice Lambda' not containing Z^3, so no local observable of X has a Bragg (pure-point) component off 2 pi Z^3. Consequences: iid-priority formation from an empty start with a translation-covariant rule (the B3 class) never registers a coarse block lattice; the hypotheses are load-bearing (a deterministic periodic start slice and a position-dependent rule each register trivially, and both are allowed by B3 Definition 1); a translation-invariant finite-depth circuit applied to a translation-invariant product state likewise produces no registration. Not excluded: polycrystals, defective or amorphous packings without a global coset, fractional-translation encodings, emergent quasiparticles of a translation-invariant fine Hamiltonian, and every route outside covariant empty-start formation. (2) Density bound (exact): a faithful local encoding of a corner site's 12 modes needs 12 qubits per coarse site; a registered embedding therefore has index m >= 12, the smallest O-invariant index >= 12 is 16, and an O-equivariant linear placement of the cubic coarse lattice has index k^3 >= 27. Whether a fine-translation-covariant (fractional-translation) encoding exists is open. (3) For the supplied corner model (BKSF on the corner graph), the flux is a free sector label (exact, GF(2) and Pauli algebra on L = 3, 4, 6 tori): the faces span the cycle space up to the three noncontractible classes; on even L all 16 uniform patterns and generic non-uniform patterns are consistent sectors (each uniform pattern lifts to a 4-periodic gauge field on Z^3); in every tested BKSF convention the signed loop stabilizers of flux F generate a group without -I exactly when F is consistent; dictionary sign flips relabel sectors, and which consistent F is the all-bare-+1 sector is set by the dictionary (on L = 3 a translation-invariant vertex ordering makes it consistent, and sign flips of it make uniform 1011, 1111 and 0000 each bare); the projective symmetry group exists for all 16 uniform patterns on L = 4; the corner-model design targets (C4^4 = -1, commuting translations, an O-fixed momentum) select exactly the u-patterns {1011, 1111}, leaving the triangle free; gauge-invariantly the repo corner model (t1 = -1, lambda = 0) has standard flux pi through every face, and the chiral term gives triangle phase pi + 3 arctan(lambda). (4) Numerical, free fermions, uniform sectors: at the node filling nu = 1 the corner pattern ranks 15th or 16th of 16 (1.85 and 1.51 per site above flux-free at t2 = 0.2 and 1), 6th of 16 with the chiral term. Nothing here selects a flux, a dictionary, a block lattice or a formation rule, and nothing is physically identified."
 upstream_dependencies:
   - iid_priority_formation_is_a_finitary_factor_of_iid_noise_with_factorial_coding_radius_tail_bounded_theorem_note_2026-10-18
 runner: scripts/equivariant_iid_factor_registration_lemma_and_corner_flux_sector_freedom_2026_10_18.py
@@ -12,7 +12,7 @@ runner: scripts/equivariant_iid_factor_registration_lemma_and_corner_flux_sector
 **Date:** 2026-10-18
 **Type:** bounded_theorem
 **Status:** bounded support, unaudited. Sections 2–5 are exact (proofs, or exhaustive finite certificates on stated tori). Section 6 is numerical. The registration lemma was restated and confirmed by a fresh-context checker of the same model family; nothing has been independently reviewed outside that family. Nothing is adopted.
-**Provenance:** campaign block C6 of the 2026-10-18 scale-ladder campaign ("what takes rung 0, one qubit per site plus formation, to rung 1, the corner model?"). Worker and checker were agents of the same model family as the note writer. The note writer consolidated their scripts into one runner and found one further correction (§5.2).
+**Provenance:** campaign block C6 of the 2026-10-18 scale-ladder campaign ("what takes rung 0, one qubit per site plus formation, to rung 1, the corner model?"). Worker and checker were agents of the same model family as the note writer. The note writer consolidated their scripts into one runner. A fresh-context review (same model family) corrected the note writer's first draft of §5.2.
 
 ## Result up front
 
@@ -20,7 +20,7 @@ runner: scripts/equivariant_iid_factor_registration_lemma_and_corner_flux_sector
 
 1. **Registration lemma (exact, §2).** A measurable, translation-equivariant function of iid noise on Z³ cannot pick out one coset of a coarse sublattice Λ of index m ≥ 2. Nor can it pick a position in R³/Λ′ for any lattice Λ′ that does not contain Z³. So no local observable has a Bragg peak off 2πZ³. Finitarity is not needed: the lemma is the standard fact that Bernoulli shifts are mixing, and have no nontrivial rotation factor.
 2. **Formation consequence (§3).** iid-priority formation with an empty start and a translation-covariant rule (the class of the B3 note) cannot register the coarse block lattice of the corner model. Both hypotheses are load-bearing, and two trivial controls show it. A translation-invariant finite-depth circuit applied to a translation-invariant product state cannot register one either.
-3. **Density bound (exact, §4).** A corner site needs 12 qubits. A registered embedding has index m ≥ 12. The smallest O-invariant index is 16, and an O-equivariant linear placement has index k³ ≥ 27. The corollary "no fine-translation-covariant encoding exists" is **not** proved.
+3. **Density bound (exact, §4).** A corner site needs 12 qubits. A registered embedding has index m ≥ 12. The smallest O-invariant index ≥ 12 is 16, and an O-equivariant linear placement has index k³ ≥ 27. The corollary "no fine-translation-covariant encoding exists" is **not** proved.
 4. **The flux is a free sector label (exact, §5).** Local fermionization (BKSF on the corner graph) admits every consistent flux configuration as a sector, in any fixed dictionary convention. That includes all 16 uniform patterns on even tori. The corner pattern is selected only by design targets: the targets select {1011, 1111} and leave the triangle free.
 5. **Energetics does not select it (numerical, §6).** At the node filling ν = 1 the corner pattern ranks 15th–16th of 16 uniform sectors.
 
@@ -59,9 +59,11 @@ The iid shift is mixing by the standard cylinder-set approximation. Only ergodic
 
 (a) Let k ∈ Λ′* := {k : k·λ ∈ 2πZ for all λ ∈ Λ′}. Then f_k := e^{ik·o} is a well-defined unimodular L² function with f_k∘T^v = e^{−ik·v} f_k, so it is an eigenfunction. Weak mixing means the only eigenfunctions are constants, with eigenvalue 1 (Koopman–von Neumann). Hence e^{ik·v} = 1 for all v ∈ Z³, that is k ∈ 2πZ³, for every k ∈ Λ′*. So Λ′* ⊂ 2πZ³, which by duality says Z³ ⊂ Λ′. If Z³ ⊂ Λ′, then o∘T^v = o for every v, and ergodicity makes o constant.
 
-(b) By the mean ergodic theorem for the Z³ unitary action, the averages converge to the projection of g onto the eigenspace with eigenvalue e^{ik}. For k ∉ 2πZ³ that eigenspace is {0}. Atoms of the spectral measure are exactly the eigenvalues, and these are absent on L²₀. ∎
+(b) By the mean ergodic theorem for the Z³ unitary action, the averages converge to the projection of g onto the eigenspace E_k := {f ∈ L² : f∘T^x = e^{ik·x} f for all x ∈ Z³}. For k ∉ 2πZ³, weak mixing gives E_k = {0}. Atoms of the spectral measure are exactly the eigenvalues, and these are absent on L²₀. ∎
 
 Theorem 1 is the special case Λ′ = Λ ⊂ Z³ of Theorem 2(a), but needs only mixing along Λ. Bernoulli shifts in fact have countable Lebesgue spectrum, which is stronger than (b); this is not needed. For the B3 class, Theorem 2(b) is weaker than the B3 note's entire structure factor (C2). Its point is that it holds for **every** measurable equivariant factor, with no coding-radius tail.
+
+**Converse and inheritance.** Suppose an ergodic system is not weakly mixing. Then it has a nonconstant eigenfunction f with |f| = 1 and f∘T^v = e^{−ik·v} f for some k ∉ 2πZ³. This is an equivariant map to the circle on which v acts by rotation through k·v: a registration of the phase k·x. So the absence of all such phase registrations is equivalent to weak mixing. Factors of a mixing (weakly mixing) system are mixing (weakly mixing), so Theorems 1–2 hold verbatim for the law of X itself.
 
 **What "registering" therefore cannot mean here.** Long-range positional order of a coarse lattice is excluded, including order with a sparse set of defects from which the coset is recoverable (§1). Local registration with a finite correlation length is allowed. Such configurations have no global coset and no Bragg peak.
 
@@ -76,15 +78,15 @@ Theorem 1 is the special case Λ′ = Λ ⊂ Z³ of Theorem 2(a), but needs only
 
 In both cases the registration is supplied, not formed. A planted *finite* slice is forgotten away from it at the factorial rate (B3 Theorem 3), so it registers only a factorially thin layer.
 
-**The flux background.** The corner model's flux background is deterministic Z2 data, and a noise-blind rule can write it with coding radius 0. So B3 neither excludes it nor supplies it. On the fine lattice, though, writing per-face signs presupposes that the faces, and hence the coarse sites, are already placed relative to the fine sites. That needs a y-dependent, hence registering, rule, which lies outside Corollary 3's hypotheses. What B3 does exclude is spontaneously selected background data from an empty start, such as the sign of the chiral term, which is a symmetry-broken choice.
+**The flux background (interpretive remark, not a theorem).** The corner model's flux background is deterministic Z2 data, and a noise-blind rule can write it with coding radius 0. So B3 neither excludes it nor supplies it. On the fine lattice, though, writing per-face signs presupposes that the faces, and hence the coarse sites, are already placed relative to the fine sites. That needs a y-dependent, hence registering, rule, which lies outside Corollary 3's hypotheses. What B3 does exclude, from an empty start, is spontaneously selected background data, such as the sign of the chiral term. This holds under the symmetry condition of B3 §5 (C1): the label symmetry must commute with the rule and leave the mark law invariant.
 
-**Corollary 4 (quantum analogue).** Let ψ = U φ^{⊗Z³}, where φ is a fixed one-site state and U is a finite product of D translation-invariant layers, each a product of commuting gates of range r.
+**Corollary 4 (quantum analogue).** Let ψ = U φ^{⊗Z³}, where φ is a fixed one-site state. Let U be a finite product of D layers, each a product of commuting gates of range r, and each layer invariant under all Z³ translations.
 
 - (i) ψ is translation invariant, so ⟨τ_x A⟩ does not depend on x: there is no Λ-periodic expectation pattern.
-- (ii) By the strict light cone, ⟨AB⟩ = ⟨A⟩⟨B⟩ exactly when the supports are more than 2Dr apart. So ψ is mixing for every sublattice action, and it is not a nontrivial mixture of Λ-translates of one state.
-- (iii) The outcome field of any translation-invariant local measurement is a stationary 2Dr-dependent random field, hence mixing. Theorems 1–2 then apply to it.
+- (ii) By the strict light cone, ⟨AB⟩ = ⟨A⟩⟨B⟩ exactly whenever the supports of A and B are more than 2Dr apart. So ψ is mixing for every sublattice action, and it is not a nontrivial mixture of Λ-translates of one state.
+- (iii) Consider a translation-invariant local measurement whose outcome projectors commute with each other and have range s. Its outcome field is a stationary (2Dr + s)-dependent random field, hence mixing, so Theorems 1–2 apply to it.
 
-*Proof.* (i) and (ii) are the light-cone argument. In (iii), the outcome events in regions more than 2Dr apart are products of projectors with disjoint Heisenberg supports, so they are independent. ∎ The runner checks (i) and (ii) exactly on a 12-qubit ring (R4); that is an illustration, not a proof.
+*Proof.* (i) and (ii) are the light-cone argument. In (iii), the outcome events in regions more than 2Dr + s apart are products of commuting projectors whose Heisenberg supports are disjoint, so they are independent. ∎ The runner checks (i) and (ii) exactly on a 12-qubit ring (R4); that is an illustration, not a proof.
 
 **Not excluded.**
 
@@ -107,6 +109,7 @@ Suppose a coarse model with 12 modes per coarse site is encoded in the one-qubit
 - (a) A *registered* embedding has coarse sites c + Λ with index m ≥ 12.
 - (b) If Λ is O-invariant, then m ∈ {k³, 2k³, 4k³}, coming from the scaled P, F (D3) and I (BCC) lattices. The smallest such m ≥ 12 is 16, the lattice 2·D3. The runner certifies this by an exhaustive Hermite-normal-form enumeration of all 22 528 sublattices of index ≤ 32 (D2, D3).
 - (c) If the placement x ↦ c + Mx of the cubic coarse lattice is O-equivariant, M R = R M for all R ∈ O, then M = k·I by Schur (D4), and m = k³ ≥ 27.
+- **(b) versus (c).** In (b) only the *set* Λ is O-invariant. The 2·D3 lattice is O-invariant, but its basis matrix M does not commute with O: M⁻¹RM is integral but differs from R. A placement through it therefore carries the coarse rotation R to a different fine rotation, not to R itself. If coarse rotations about a coarse site are to be the same fine rotations about the corresponding fine site, as in the long-wavelength embedding, (c) applies and the bound is 27.
 
 The long-wavelength note's embedding uses 5³ = 125 = 48 + 77 sites (48 BKSF qubits plus 77 spectators).
 
@@ -138,7 +141,7 @@ The results (exact):
 - **Identity.** In all three conventions, for every basis face relation r, ∏_{C∈r} κ_C = σ_r, where ∏_{C∈r} B_C = σ_r I. Hence the group generated by the g_C contains no −I exactly when F satisfies every face relation, that is exactly when F is a consistent flux configuration. The runner tests uniform 1011, 1111 and 0000 and a random consistent F; all of them exist in every convention, and a single flipped face does not.
 - **One dictionary sign flip (A3).** S_e → −S_e preserves every algebraic relation and leaves every B_C unchanged. It flips κ on exactly the faces through e, so it relabels sectors by F → F·(−1)^{[e∈C]}. Sign flips act transitively on the consistent sectors *as relabellings*.
 
-**Correction (note writer).** The worker read κ as the flux of a "natural vacuum", and the check said that every consistent configuration is "the bare sector of some convention". Neither holds as stated. In all three tested conventions, some basis relation has σ_r = −1 (12, 84 and 66 of 137). So the all-bare-+1 assignment is not a consistent sector at all, and hop-sign flips cannot repair it, because they change neither B_C nor σ_r. The conclusion is not weakened; it is sharpened. In any one fixed dictionary, every consistent flux configuration, and only those, is a sector. The flux is a free sector label, and no "natural" sector exists to select it.
+**On the "natural vacuum" reading.** The worker read κ as the flux of a "natural vacuum". That reading is convention-bound. In the three generic conventions tested, some basis relation has σ_r = −1 (12, 84 and 66 of 137). So the all-bare-+1 assignment is not a consistent sector there. Hop-sign flips alone cannot repair this, because they change neither B_C nor σ_r. The vertex orderings, however, are part of the convention, and they do change σ_r. On L = 3 the runner finds, by local search, a translation-invariant ordering in which every σ_r = +1. The review found such orderings, translation-invariant ones included, on L = 3 and L = 4. In that convention the all-bare-+1 assignment is a consistent sector, and hop-sign flips of it make uniform 1011, 1111 and 0000 each the bare sector. So the check's statement that every consistent configuration is "the bare sector of some convention" holds on the tested tori, once the convention includes the vertex orderings. An earlier draft of this note said the opposite; that was wrong, and the review corrected it. The headline is unchanged. In any one fixed dictionary, the consistent flux configurations, and only those, are exactly the sectors. Which one is "bare" is set by the dictionary. The flux is a free sector label.
 
 **Scope.** The reading "F is the encoded fermion's flux" uses the standard BKSF loop relation with this κ normalization. The identity above is what that reading requires; it is not re-derived here at the level of fermionic states. The A4 statements below are made directly at the fermion level and do not depend on it.
 
@@ -150,7 +153,7 @@ The runner builds the fermion-level projective symmetry group on L = 4 by BFS si
 - **C4.** C4⁴ = −1, and likewise axis-C2² = −1, exactly when square = π.
 - **Translations.** Tx and Ty commute exactly when square = plaquette; otherwise they anticommute.
 - **Fixed momenta.** An O-fixed momentum exists, among patterns with commuting translations and C4⁴ = −1, exactly for tube = π.
-- **Selection.** The three design targets of the corner-code and long-wavelength notes are C4⁴ = −1 (the spin-1/2-class target), commuting translations, and an O-fixed momentum. They select exactly **{1011, 1111}**, and the triangle is free.
+- **Selection.** Three properties of the corner-code and long-wavelength notes are read here as design targets: C4⁴ = −1 (the spin-1/2-class target), commuting translations, and an O-fixed momentum (in the long-wavelength note's pattern). They select exactly **{1011, 1111}**, and the triangle is free.
 - **1011.** It has exactly two O-fixed momenta, differing by (π, π, π): (π/2)(1, −1, 1) and its negative in this gauge. The form of these momenta is gauge dependent.
 - **With square = 0.** An O-fixed momentum exists iff tube = 0.
 
@@ -164,7 +167,7 @@ With the chiral term (t1 = −1, λ = −0.5), every oriented triangle carries t
 
 ## 6. Energetics does not select it (numerical)
 
-Hop-only Hamiltonians commute with every loop stabilizer, so they are block diagonal over flux sectors (the Kitaev–Lieb mechanism). Each sector is a free-fermion problem. The runner's `--energetics` part uses the following:
+Hop-only Hamiltonians commute with every loop stabilizer, so they are block diagonal over flux sectors (as for the static fluxes of Kitaev's honeycomb model). Each sector is a free-fermion problem. The runner's `--energetics` part uses the following:
 
 - a Bloch 2³ supercell on a 6³ K-grid, which is effective L = 12;
 - an exact cross-check against direct L = 4 real-space diagonalisation (E0);
@@ -210,8 +213,8 @@ Hop dynamics conserves flux, so a sector chosen at random at formation would sta
 
 `python3 scripts/equivariant_iid_factor_registration_lemma_and_corner_flux_sector_freedom_2026_10_18.py`
 
-- **Default:** `TOTAL: PASS=35 FAIL=0`, 16–19 s.
-- **`--energetics --full`:** `TOTAL: PASS=45 FAIL=0`. This adds the L = 6 A1 certificate and the E0–E5 energetics. It took about 50 s on an otherwise idle 4-core machine and 435 s under heavy CPU contention.
+- **Default:** `TOTAL: PASS=36 FAIL=0`, about 25–30 s.
+- **`--energetics --full`:** `TOTAL: PASS=46 FAIL=0`. This adds the L = 6 A1 certificate and the E0–E5 energetics. It took about 50 s on an otherwise idle 4-core machine (earlier 45-check version) and 435–574 s under heavy CPU contention.
 - Seed 20261018 in both cases.
 
 The checks fall into four groups.
@@ -224,7 +227,7 @@ The checks fall into four groups.
 
   These illustrate Theorems 1–2 and Corollary 4. They do not prove them.
 - **D (exact).** The even-algebra structure for n ≤ 4; the HNF enumeration of O-invariant sublattices (indices {1, 2, 4, 8, 16, 27, 32}, one each); the smallest index ≥ 12 being 16; and the commutant of O being the scalars.
-- **A (exact).** A1 on L = 3, 4 (and 6); the A2 algebra, convention dependence, the identity ∏κ = σ, sector existence and the correction; A3; the A4 PSG, target selection, fixed momenta and the standard-convention statements.
+- **A (exact).** A1 on L = 3, 4 (and 6); the A2 algebra, convention dependence, the identity ∏κ = σ, sector existence, and the translation-invariant ordering with a consistent bare sector; A3; the A4 PSG, target selection, fixed momenta and the standard-convention statements.
 - **E (numerical, `--energetics`).** E0–E5 as in §6. The rank checks are structural (rank ≥ 15 and excess > 1.5; with the chiral term, not lowest). The printed campaign values come from two earlier implementations, the worker's and the check's, and are reproduced to the printed digits.
 
 The runner also prints an N5 execution certificate.
@@ -247,12 +250,12 @@ A fresh-context agent of the **same model family** checked the C6 findings. It i
   - The registration lemma restated (§2).
   - "Formation cannot produce the coarse rung" restricted to covariant rules from an empty start (§3).
   - "No fine-translation-covariant encoding exists" withdrawn (§4).
-  - The index bound m ≥ 12 limited to registered embeddings, with smallest O-invariant index 16.
+  - The index bound m ≥ 12 limited to registered embeddings, with smallest O-invariant index ≥ 12 equal to 16.
   - The descent wording corrected (§6).
   - "Convention-free" replaced by "gauge-invariant in the standard convention" (§5.4).
   - The canonical-BK observation marked weak (L = 3, non-covariant labelling).
   - "Most block-favouring" dropped from the packing illustration.
-- **Further correction by the note writer** (same model family, not independent). The check's strengthening of A2, "every consistent configuration is the bare sector of some convention", fails as stated, because the all-bare-+1 assignment is inconsistent in every tested convention (§5.2). The corrected statement, sector existence for exactly the consistent F in any fixed convention, is exact and carries the same conclusion.
+- **Review of this note** (fresh-context, same model family; `.claude/science/physics-loops/scale-ladder-campaign-20261018/NOTE_C6_review/`). Its verdict was "needs changes". It used new code, `rev_A2*.py` and `rev_D.py`, importing nothing from the runner. It confirmed Theorems 1–2, Corollaries 3, 4 and 6, the κ = σ identity and the sector statement, and the D enumeration. It found the note writer's first-draft §5.2 "correction" false as stated: vertex orderings exist, translation-invariant ones included, on L = 3 and L = 4, in which the all-bare-+1 assignment is consistent. So the check's "bare sector of some convention" statement stands on the tested tori. §5.2 and the runner now say this. The other changes in this revision are precision edits from that review.
 - **Provenance of this runner.** The note writer consolidated it: the worker's geometry and GF(2) solver, the checker's BFS PSG idea, and new A2 identity/sector checks, D2–D4 and R4. It is not an independent implementation of the worker's A1, A3 or E code. The independent implementations are the checker's files above.
 
 ## Prior art and actual contribution
@@ -270,7 +273,7 @@ A fresh-context agent of the **same model family** checked the C6 findings. It i
 - **New here (application and certificates, not new mathematics of ergodic theory).**
   - The registration question for the scale ladder is put in exact form, with the load-bearing hypotheses and controls.
   - The density bound is specialised to the corner model: index ≥ 12, O-invariant ≥ 16, O-equivariant linear ≥ 27.
-  - Exact finite certificates show that the corner model's flux is a free BKSF sector label in any fixed convention, including the κ = σ identity and the correction to the "natural vacuum" reading.
+  - Exact finite certificates show that the corner model's flux is a free BKSF sector label in any fixed convention, including the κ = σ identity, sector existence for exactly the consistent F in any fixed dictionary, and a translation-invariant ordering whose bare sector is consistent, so that which F is "bare" is a dictionary choice.
   - The design-target selection {1011, 1111}.
   - The ν = 1 ranking.
 
@@ -303,7 +306,7 @@ python3 scripts/equivariant_iid_factor_registration_lemma_and_corner_flux_sector
 python3 scripts/equivariant_iid_factor_registration_lemma_and_corner_flux_sector_freedom_2026_10_18.py --energetics --full
 ```
 
-Expected: `TOTAL: PASS=35 FAIL=0` (under 20 s), and `TOTAL: PASS=45 FAIL=0` (about 50 s idle; several minutes under CPU contention). Requires numpy and scipy.
+Expected: `TOTAL: PASS=36 FAIL=0` (under 30 s), and `TOTAL: PASS=46 FAIL=0` (about 1 min idle; 435–574 s under CPU contention). Requires numpy and scipy.
 
 ## Load-bearing sources and context
 

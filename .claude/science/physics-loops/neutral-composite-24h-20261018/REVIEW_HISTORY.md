@@ -239,3 +239,8 @@ Root derives native dilute Q4 bosonic field: complete syndrome motif projectors 
 Status: conditional-support; trace: upstream_support; reachability: supports; proposal_allowed: false.
 
 Final native dilute-field disposition: PASS; source-bound replay passed, exact uniform-mode deficit99/R² independently reproduced; finite-size deviations preserved. Dynamics/source/cluster/final checks linked in native/FINAL_DILUTE_FIELD_REVIEW.md. No formal audit.
+
+
+## Native scalar tetramer
+Native scalar tetramer complete: exhaustive 4912 syndrome/gap types select four minima binding J(9L/32768)lambda8 below two neutral endpoint features. Full order10 connected graphs select collinear A over parallel B by JL(949685/12230590464)lambda10. Covariant physical X/Y source creates unique A1 pole in selected family with weight1-(L/2)lambda²+Olambda4. No mobility or lower-than-B1 claim. Independent geometry, native graphs, source and final reviews PASS; source-bound replay PASS. Model/geometry/preparation/empirical identification remain premises. Root next derives native tetramer propagation from winding paths.
+Status: conditional-support; trace: upstream_support; reachability: supports; proposal_allowed: false. Proof native/NATIVE_SCALAR_TETRAMER_PROOF.md; final review native/FINAL_TETRAMER_REVIEW.md. No formal audit.

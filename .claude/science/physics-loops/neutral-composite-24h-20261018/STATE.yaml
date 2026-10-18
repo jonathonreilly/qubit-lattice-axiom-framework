@@ -5,8 +5,8 @@ deadline: 2026-10-19T00:47:35Z
 final_packaging_at: 2026-10-19T00:32:35Z
 checkpoint_interval_minutes: 30
 actual_current_surface_status: bounded-support
-active_route: exact primitive rectangular interaction law
-next_action: package energy source and derive rectangular loop coefficient
+active_route: native tetramer propagation
+next_action: derive tetramer propagation from native winding paths
 main_at_launch: fa841753c1a6296e5ad45518375660b0f1004769
 prior_campaigns: stopped
 proposal_allowed: false
@@ -93,3 +93,5 @@ checkpoint_history: |
   Native far charged-pair collision derived through order10: exact shortest-graph and independentFeshbach checks give U40/t=-8/17,U41/t=-4/17,U32/t=30305/161109; 37-siteexcludedcore,20boundarypotentials. Coercivity9/17 excludesfar-channelthresholdresonance. DerivedfiniteintegralB=-.1508561092379226 andscale.150211079390 independentlychecked45digits. Matchedfinitecollisionk=lambda1/4,T=k^-3,R~lambda^-1 yieldsnormsignal4pi/log(1/lambda), errorsalgebraicallysmaller; differentiatedGreen/regularcomplementargumentindependentlyPASS. Finitekpacketcontrolsnotasymptotic(.5-1.1phaseerrors), preservedhonestly. NofixedlambdaS-matrix, empiricalforceorrelativisticclaim.
   2026-10-18T19:13:07.310816+00:00 Character-independent neutral collision: exact flat flip code distance R makes fixed-support invariant coefficients identical in every compatible X/Y character. Same native finite-time collision follows for matched packets; no exact physical momentum assigned to generic characters. Full Gibbs extension at beta g=10log(1/lambda), R~lambda^-1, M20 has trace error O(lambda^8)+O(lambda^7 sqrt(log)), conditional on global normal-form bounds and the same CPTP protocol. Independent algebra, final proof and thermal checks PASS. Chosen X/Y character retired only for invariant collision; temperature, preparation, H, geometry and empirical identification remain.
   2026-10-18T19:24:34.275937+00:00 Root derives native dilute Q4 bosonic field: complete syndrome motif projectors give full-vector lowering and CCR, not just selected matrix elements. Local internal-mode realization and actual-ground rotation give contact residual Jlambda4/R. At q~lambda2,R~lambda^-14,M80, time J^-1lambda^-16 yields nonrelativistic dGamma(kappa k²/2) with O(lambda²) error. Original C spectral raising blocks yield amplitude g lambda10,g=.00157237124, uniform finite-Q norms and CCR composition. Fixed occupations, two-level buffer, slab,H,weak coupling and nonlocal readout selection remain assumptions. No empirical or relativistic claim. Independent algebra/source/dynamics checks supported after explicit repairs; final check pending.
+
+  2026-10-18T19:41:26.524923+00:00 Native scalar tetramer complete: exhaustive 4912 syndrome/gap types select four minima binding J(9L/32768)lambda8 below two neutral endpoint features. Full order10 connected graphs select collinear A over parallel B by JL(949685/12230590464)lambda10. Covariant physical X/Y source creates unique A1 pole in selected family with weight1-(L/2)lambda²+Olambda4. No mobility or lower-than-B1 claim. Independent geometry, native graphs, source and final reviews PASS; source-bound replay PASS. Model/geometry/preparation/empirical identification remain premises. Root next derives native tetramer propagation from winding paths.

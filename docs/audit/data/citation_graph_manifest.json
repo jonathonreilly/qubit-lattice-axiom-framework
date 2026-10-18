@@ -1,6 +1,6 @@
 {
- "edge_count": 16280,
- "node_count": 7254,
+ "edge_count": 16291,
+ "node_count": 7255,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4557,6 +4557,10 @@
   "curvature_member_closure_with_matter_forces_one_common_cone_and_the_lorentzian_sign_and_has_an_order_a_squared_obstruction_bounded_theorem_note_2026-10-18": {
    "deps_hash": "76153c805801",
    "out_degree": 3
+  },
+  "curvature_member_closure_with_the_walker_as_matter_forces_alpha_equals_k2_over_four_and_one_curvature_coefficient_in_the_walkers_frame_normalisation_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "70ffc5f18acd",
+   "out_degree": 11
   },
   "cycle332_receiver_success_cycle610_gate_adapter_bounded_theorem_note_2026-07-30": {
    "deps_hash": "c8eee4235fc9",

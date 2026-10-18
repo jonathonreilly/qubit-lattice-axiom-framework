@@ -88,6 +88,12 @@ A ladder is useful only if some data provably survives the climb, so that a stat
        - The other six are anisotropic Weyl nodes (speed spread about 0.3), chiralities three +1 and three −1. The net is zero.
        - These eight points are exactly the momenta at which commuting C2 lifts force even levels (campaign block B7, independently checked). The six extra nodes are the analogue of the 2³ doublers of naive lattice fermions.
        - **Structure of the doublers (numerical observation).** The six are k* + πe_i (chirality −1) and −k* + πe_i (chirality +1), for i = x, y, z. So they form three opposite-chirality pairs, one per lattice axis. Each is a uniaxial Weyl cone: speed 0.2467 along its own axis and 0.5838 transverse. The C3 rotations permute the three.
+       - **This pattern is symmetry-forced (exact).** Under the affine rotation action, the eight points split into the orbits {k*} and {−k*}, with little group O, and two 3-point orbits k* + πe_i and −k* + πe_i. The little group of each point in the 3-point orbits is D4 about the axis e_i, which contains all three axis C2s (runner Part 1). So in every symmetric corner Hamiltonian or step:
+         - levels there are even;
+         - a band touching at k* is isotropic at linear order;
+         - a touching at k* + πe_i is uniaxial about e_i.
+
+         At odd filling all eight touch (B7, C20), so the forced low-energy content always has this 1 + 3 form.
        - So the step's Weyl content is one isotropic spin-½ pair at the octahedrally fixed momenta plus three axis-labelled uniaxial pairs. This mirrors the taste structure of staggered fermions. Any reading as species or generations is interpretation only and is not claimed.
      - **Corollary (doubling, exact).** Suppose a step W commutes with the translations and with the gauge-dressed lifts of two commuting axis C2s. Suppose also that W has a quasi-energy gap: some E′ that no eigenphase reaches at any k. If W has a spin-½ Weyl doublet at k* at quasi-energy E, then E is also reached somewhere other than ±k*.
        - *Proof.* The two C2 lifts anticommute on the whole one-particle space (campaign block B7, independently checked). So at each of the eight points (π/2)(±1,±1,±1), which both C2s fix, every level is even.
@@ -358,7 +364,7 @@ A fresh-context agent of the same model family checked the note; it is not an in
 python3 scripts/scale_ladder_corner_fermion_cross_rung_invariants_2026_10_18.py
 ```
 
-Expected: `TOTAL: PASS=19 FAIL=0` (about three minutes).
+Expected: `TOTAL: PASS=20 FAIL=0` (about three minutes).
 
 ## Load-bearing sources
 

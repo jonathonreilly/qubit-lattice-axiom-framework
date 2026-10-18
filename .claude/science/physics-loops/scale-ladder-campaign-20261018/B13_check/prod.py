@@ -23,7 +23,7 @@ else:
 assert lat.winding(s0) == (0, 0, 0)
 Cm = np.array([lat.harm(o) for o in range(3)]) if eta == 0 else np.zeros((0, lat.np_))
 t0 = time.time()
-r = chk.run(lat, s0, V, N=N, dt=dt, ttherm=max(20.0, bt), nblocks=nb_, block_t=bt, ctw=lat.harm(0), eta=eta, Cm=Cm, seed=sd)
+r = chk.run(lat, s0, V, N=N, dt=dt, ttherm=max(20.0, bt), nblocks=nb_, block_t=bt, ctw=lat.harm(0), eta=eta, Cm=Cm, seed=sd, nsnap=min(N, 40))
 os.makedirs("results", exist_ok=True)
 fn = f"results/L{L}_V{V:+.2f}_N{N}_e{eta:.2f}_{init}_dt{dt}_s{sd}.npz"
 np.savez_compressed(fn, **{k: v for k, v in r.items()}, L=L, V=V, eta=eta, nf0=int((lat.circ(s0) != 0).sum()), secs=time.time() - t0)

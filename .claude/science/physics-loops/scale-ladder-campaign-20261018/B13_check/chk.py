@@ -180,7 +180,7 @@ def comb(logw, idx):
     return mx + np.log(tot / N), (w * w).sum() / tot ** 2 * N  # log mean weight, N/ESS
 
 
-def run(lat, s0, V, N, dt, ttherm, nblocks, block_t, ctw, eta, Cm, seed, J=1.0, ET=None):
+def run(lat, s0, V, N, dt, ttherm, nblocks, block_t, ctw, eta, Cm, seed, J=1.0, ET=None, nsnap=0):
     nbseed(seed)
     S, ci, fl, pos, nf = init(N, s0.astype(np.int8), lat.plaq)
     M = np.zeros((N, Cm.shape[0])); logw = np.zeros(N); idx = np.zeros(N, np.int64)
@@ -198,6 +198,7 @@ def run(lat, s0, V, N, dt, ttherm, nblocks, block_t, ctw, eta, Cm, seed, J=1.0, 
     nst = int(round(block_t / dt))
     LM = np.zeros((nblocks, nst)); EM = np.zeros((nblocks, nst)); NF = np.zeros((nblocks, nst)); IESS = np.zeros((nblocks, nst))
     M2 = np.zeros((nblocks, nst, Cm.shape[0]))
+    SNAP = np.zeros((nblocks, nsnap, lat.np_), np.int8)
     for b in range(nblocks):
         M[:] = 0.0
         for k in range(nst):
@@ -211,7 +212,8 @@ def run(lat, s0, V, N, dt, ttherm, nblocks, block_t, ctw, eta, Cm, seed, J=1.0, 
                 EM[b, k] = np.nan
             NF[b, k] = nf.mean()
             M2[b, k] = (M * M).mean(0)
-    return dict(LM=LM, EM=EM, NF=NF, IESS=IESS, M2=M2, ET=et, dt=dt, N=N, tau=dt * np.arange(1, nst + 1))
+        SNAP[b] = ci[:nsnap]
+    return dict(SNAP=SNAP, LM=LM, EM=EM, NF=NF, IESS=IESS, M2=M2, ET=et, dt=dt, N=N, tau=dt * np.arange(1, nst + 1))
 
 
 def simple_ice(lat):

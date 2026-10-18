@@ -294,6 +294,8 @@ if __name__ == "__main__":
     unknowns3 = list(A) + list(B) + [r1, r2]
     sol3 = sp.solve(eqs3, unknowns3, dict=True)
     print("L3 solutions:", sol3)
+    zero = {v: 0 for v in list(A) + list(B) + [r1, r2]}
+    check("L3b", all(sp.simplify(e.subs(zero)) == 0 for e in eqs3), "{C,C} alone does NOT force a coupling: T = 0 with structure function xi' = 0 solves the h phi pi order (so the Noether source is fixed by {G,C}, not by {C,C})")
     # combined: L2 equations + L3 equations
     # recompute L2 equation list
     xi = [J(n) for n in XI]

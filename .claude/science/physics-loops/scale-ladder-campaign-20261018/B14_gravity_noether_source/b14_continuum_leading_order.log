@@ -4,6 +4,7 @@ L2 solutions: [{A1: -s2/4 - 1/4, A2: -c*s2/4 + c/4, A3: -c/2, A4: -mu*s2/4 + mu/
    free parameters: [s2]
 PASS: L2 continuum {G[xi], C(N)} at order phi^2 = H_m(s1 xi.grad N + s2 N div xi) has a ONE-parameter solution family: T = metric-variational stress of H_m(g) [A1=-1/4, A2=c/4, A3=-c/2, A4=mu/4, B1=-c (U_ij = 2T_ij), A5=A6=A7=B2=0] plus lam*delta_ij*(H_m density) with s2 = -2 lam, s1 = +1 (RHS = H_m(xi.grad N - 2 lam N div xi))
 L3 solutions: [{A1: -4*A2*alpha/K + r2/2, A3: K*r1/(8*alpha), A5: 0, A6: 0, A7: 0, B1: K*r1/(4*alpha), B2: 0}]
+PASS: L3b {C,C} alone does NOT force a coupling: T = 0 with structure function xi' = 0 solves the h phi pi order (so the Noether source is fixed by {G,C}, not by {C,C})
 L2+L3 solutions: [{A1: r2/4 - 1/4, A2: K*r2/(16*alpha) + K/(16*alpha), A3: -K/(8*alpha), A4: mu*r2/4 + mu/4, A5: 0, A6: 0, A7: 0, B1: -K/(4*alpha), B2: 0, r1: -1, s1: 1, s2: -r2}]
 PASS: L3 continuum {C,C} at order h phi pi (and h phi^2, h pi^2) closes into G_m[xi'] with xi' = kappa (r1 h + r2 tr h) xi0 on the solution set printed above
 L4 (s2=0) solutions: [{A1: -1/4, A2: K/(16*alpha), A3: -K/(8*alpha), A4: mu/4, A5: 0, A6: 0, A7: 0, B1: -K/(4*alpha), B2: 0, r1: -1, r2: 0, s1: 1}]
@@ -11,4 +12,4 @@ PASS: L4 with the scalar-lapse rule (s2 = 0) the coupling is UNIQUE and equals t
 L5 (s2 = 2 lam) solutions: [{A1: -lam/2 - 1/4, A2: (-2*K*lam + K)/(16*alpha), A3: -K/(8*alpha), A4: -lam*mu/2 + mu/4, A5: 0, A6: 0, A7: 0, B1: -K/(4*alpha), B2: 0, r1: -1, r2: -2*lam, s1: 1}]
    r2(lam) = -2*lam
 PASS: L5 the trace-coupling ambiguity lam shifts the {C,C} structure function by r2 = r2(lam) != 0: species with different lam cannot share one total relabelling with a common xi' -> lam is universal (all species share one lapse density weight)
-TOTAL: PASS=6 FAIL=0
+TOTAL: PASS=7 FAIL=0

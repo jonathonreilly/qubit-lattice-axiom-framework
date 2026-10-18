@@ -51,5 +51,6 @@ Provenance: a worker of the same model family. Exploratory; no claim. Saved by t
 
 ## What the lane can claim
 
-- **Can:** the model identity; that it is sign-free; and that on 4³–8³ the magnetic-source curvature stays near 0.23 for V = 0.5–1, with no decay at V ≤ 0 for L = 6–8. This is consistent with a nonzero Coulomb-type stiffness.
+- **Can:** the model identity; that it is sign-free; and that on 4³–8³ the magnetic-source curvature stays near 0.23–0.25 for V = 0.5–1, with no size dependence. The V = 0.5 values were confirmed bias-controlled by the check, using a second (twisted-energy) estimator.
+- **Withdrawn after the check (`../B13_check/REPORT.md`):** "no decay at V ≤ 0 for L = 6–8". Population bias is uncontrolled there, and the two estimators disagree at L=6, V=−0.5. The L=4 suppression at V ≤ 0 is real and deepens with N, so it may be confinement-like.
 - **Cannot:** an infinite-volume Coulomb phase, its window in V, or confinement.

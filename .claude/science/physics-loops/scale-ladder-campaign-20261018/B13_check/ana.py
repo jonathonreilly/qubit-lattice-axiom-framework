@@ -76,13 +76,13 @@ for d in sorted([r for r in runs if r["eta"] == 0], key=lambda r: (r["L"], r["V"
     tm = [fw_chi(d, tmin=t)[0] for t in (4.0, 12.0, 16.0)]
     print(f"  L={d['L']} V={d['V']:+.2f} N={d['N']:5d} {d['init']:6s} dt={d['dt']} tmin4/12/16={tm[0]:.3f}/{tm[1]:.3f}/{tm[2]:.3f}: {e0[0]/npl:.6f}({e0[1]/npl*1e6:.0f}e-6) | {e1[0]/npl:.6f}({e1[1]/npl*1e6:.0f}e-6) | "
           f"{c0[0]:.4f}({c0[1]:.4f}) | {c1[0]:.4f}({c1[1]:.4f}) | {d['IESS'].mean():.2f}  [{float(d['secs']):.0f}s]")
-    out["fw"].append(dict(L=d["L"], V=d["V"], N=d["N"], init=d["init"], E=e0, E_unr=e1, chi=c0, chi_unr=c1, iess=float(d["IESS"].mean()), np=npl))
+    out["fw"].append(dict(L=d["L"], V=d["V"], N=d["N"], init=d["init"], E=e0, E_unr=e1, dt=float(d["dt"]), chi=c0, chi_unr=c1, iess=float(d["IESS"].mean()), np=npl))
 print("Twisted runs: L V N eta : E_mix total, growth")
 for d in sorted([r for r in runs if r["eta"] > 0], key=lambda r: (r["L"], r["V"], r["eta"])):
     e0 = energy(d)
     g = d["ET"] - d["LM"].mean() / d["dt"]
     print(f"  L={d['L']} V={d['V']:+.2f} N={d['N']} eta={d['eta']}: Emix={e0[0]:.4f}({e0[1]:.4f}) growth={g:.4f}")
-    out["tw"].append(dict(L=d["L"], V=d["V"], N=d["N"], eta=d["eta"], E=e0, growth=float(g)))
+    out["tw"].append(dict(L=d["L"], V=d["V"], N=d["N"], dt=float(d["dt"]), eta=d["eta"], E=e0, growth=float(g)))
 json.dump(out, open("ana_out.json", "w"), indent=1, default=float)
 
 print("Twisted curvature fits (same N; E(eta)-E(0) = -chi eta^2/2 + d eta^4 ; single-eta estimates -2dE/eta^2):")

@@ -1,0 +1,10 @@
+L=2: plaquette sign product -1 everywhere; D(flip)/D = -1 on 2474/2474 sampled moves
+L=4: plaquette sign product -1 everywhere; D(flip)/D = -1 on 15000/15000 sampled moves
+L=6: plaquette sign product -1 everywhere; D(flip)/D = -1 on 15000/15000 sampled moves
+V=0.0 exact(gauge): chi = 0.000000
+V=0.0 harmonic: chi = 0.267019
+V=0.5 exact(gauge): chi = 0.000000
+V=0.5 harmonic: chi = 0.287992
+Hermitian(real b): True
+
+[exited with code 0]

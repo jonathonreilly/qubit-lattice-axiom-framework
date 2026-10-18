@@ -1,0 +1,2 @@
+PASS: T7 L=6: staggering (-1)^x1 maps B[sigma] to B[-sigma^1, sigma^2, sigma^3] exactly (random lapses): the (pi,0,0) doubler obeys the same bracket with its own flipped-orientation Pauli set; sigma^j sigma^j (v^2) terms invariant
+TOTAL: PASS=1 FAIL=0

@@ -51,10 +51,14 @@ for g in PROPER:
         ok &= len(s) == 1; signs |= set(s)
 report(ok and signs == {1, -1}, "rho(g)=U_R (12x12, real orthogonal) composes up to a sign, with both signs occurring: "
        "a genuinely projective rep; {+-U_R} is a 48-element group")
-# is the 48-element group 2O (unique element of order 2) rather than O x Z2?
-els = [s * g['U'] for g in PROPER for s in (1, -1)]
-inv2 = sum(1 for X in els if np.allclose(X @ X, np.eye(12)) and not np.allclose(X, np.eye(12)))
-report(inv2 == 1, f"{{+-U_R}} has exactly one involution (-1): it is 2O, not O x Z2 (involutions found: {inv2})")
+# which double cover?  O x Z2 has 19 involutions, GL(2,3) has 13, 2O has 1.
+def ninv(els): return sum(1 for X in els if np.allclose(X @ X, np.eye(12)) and not np.allclose(X, np.eye(12)))
+inv_a = ninv([s * g['U'] for g in PROPER for s in (1, -1)])
+inv_b = ninv([s * (1 if g['chi'] == 1 else 1j) * g['U'] for g in PROPER for s in (1, -1)])
+report(inv_a == 13 and inv_b == 1,
+       f"{{+-U_R}} has {inv_a} involutions: it is GL(2,3), the non-split double cover of O isoclinic to 2O (O x Z2 would have 19); "
+       f"relifting odd elements g -> i g gives a group with {inv_b} involution, i.e. 2O. Relifting rescales odd-element "
+       f"operators by i, which changes no conjugation, no Schur statement and no chi_A2 relation, so the 2O irrep names apply")
 
 ok = all(np.allclose(g['U'] @ D, D @ (D.conj().T @ g['U'] @ D), atol=1e-12) for g in PROPER for D in (DP, DM))
 report(ok, "D+ and D- (the B26-build doublets {H_on=2, Lambda=-+2sqrt2}) are rho-invariant")
@@ -97,7 +101,7 @@ TAU = {}
 for b, D in DOUB.items():
     sols = t1_triples(D, D)
     Y = sols[0]
-    ph = np.trace(Y[0] @ Y[0]); Y = Y / np.sqrt(ph)           # Y_x^2 = 1 (Y_x^2 is a multiple of 1)
+    ph = np.trace(Y[0] @ Y[0]) / 2; Y = Y / np.sqrt(ph)       # Y_x^2 = 1 (Y_x^2 is a multiple of 1)
     if not np.allclose(Y[0], Y[0].conj().T): Y = Y * 1j
     if not np.allclose(Y[0] @ Y[1], 1j * Y[2]): Y = -Y
     herm = all(np.allclose(Y[i], Y[i].conj().T) for i in range(3))
@@ -247,11 +251,16 @@ def actual(w, k0, D, ndir=24):
         e = np.linalg.eigvalsh(h); sp.append((e[1] - e[0]) / 2); tilt = max(tilt, abs(e[0] + e[1]) / 2)
     return M, np.array(sp), tilt
 def direct_slope(w, k0, D, w0, delta=1e-4, ndir=3):
+    """Half the eigenphase splitting of the two eigenvectors of W(k*+delta q) with the largest weight on D, over delta.
+    (The O-symmetric second-order term on D is a scalar, so the half-splitting is accurate to O(delta^2).)"""
     f = word_f(w); out = []
     for _ in range(ndir):
         q = rng.normal(size=3); q /= np.linalg.norm(q)
-        ev = np.linalg.eigvals(f(k0 + delta * q)); ph = np.angle(ev / w0); idx = np.argsort(np.abs(ph))[:2]
-        out.append(np.abs(ph[idx]) / delta)
+        sl = []
+        for dl in (delta, delta / 2):
+            ev, V = np.linalg.eig(f(k0 + dl * q)); wt = np.linalg.norm(D.conj().T @ V, axis=0) / np.linalg.norm(V, axis=0)
+            idx = np.argsort(-wt)[:2]; ph = np.angle(ev[idx] / w0); sl.append(abs(ph[0] - ph[1]) / 2 / dl)
+        out.append((4 * sl[1] - sl[0]) / 3)                     # Richardson: removes the O(delta^2) term
     return np.array(out)
 def isolated_doublet(W, D, gap=1e-6):
     X = D.conj().T @ W @ D
@@ -277,7 +286,7 @@ for t in range(NW):
             worst_iso = max(worst_iso, sp.max() - sp.min()); worst_tilt = max(worst_tilt, tilt)
             worst_sign = max(worst_sign, max(np.abs(M[i] - 1j * pv * TAU[a][i]).max() for i in range(3)))
             if abs(pv) < 1e-6: zero_speed += 1
-            if n_dir < 120:
+            if n_dir < 300:
                 ds = direct_slope(w, k0, D, w0); worst_dir = max(worst_dir, np.abs(ds - abs(pv)).max()); n_dir += 1
             n_lev += 1; n_gen += any("exp(iH)" in L.name for L in w)
 print(f"   {NW} words, {n_lev} isolated 2-fold D+- levels at +-k* ({n_gen} from words with a generic exp(iH) letter); "
@@ -289,21 +298,24 @@ report(worst_iso < 1e-6 and worst_tilt < 1e-6,
        f"cones isotropic (spread of speed over 24 directions {worst_iso:.1e}) and untilted (tilt {worst_tilt:.1e})")
 report(worst_sign < 1e-6, f"signed statement: P W^dag dW P = i (sum v) tau^(a) entrywise (worst {worst_sign:.1e}); chirality = sign(sum v) "
        f"in the fixed tau orientation")
-report(worst_dir < 1e-3, f"direct diagonalisation of W(k*+1e-4 q) on {n_dir} levels x 3 directions: eigenphase slopes = |sum v| "
-       f"(worst {worst_dir:.1e}, O(delta) expected)")
+report(worst_dir < 1e-6, f"direct diagonalisation of W(k*+delta q), delta = 1e-4 and 5e-5, Richardson-extrapolated, on {n_dir} levels "
+       f"x 3 directions: half eigenphase splitting / delta = |sum v| (worst {worst_dir:.1e})")
 
 # ---------------------------------------------------------------- B26 sign-flipped n_eff
-print("== 5. B26 reproduction: words in S^p and A_a = A0 S^a")
+print("== 5. B26 reproduction: words in S^p, A_a = A0 S^a, R_L, Rt and symmetric on-site letters")
 ok = True; nflip = 0; nb = 0
-for t in range(120):
+for t in range(160):
     while True:
-        m = int(rng.integers(2, 7)); w = []
+        m = int(rng.integers(3, 8)); w = []
         for _ in range(m):
-            w.append(L_A(int(rng.integers(-2, 3))) if rng.random() < 0.45 else L_S(int(rng.choice([1, 2, -1, -2]))))
+            r = rng.random()
+            w.append(L_A(int(rng.integers(-2, 3))) if r < 0.35 else L_S(int(rng.choice([1, 2, -1, -2]))) if r < 0.6
+                     else L_RL if r < 0.7 else L_RT if r < 0.8 else L_onsite())
         if sum(L.chi == -1 for L in w) % 2 == 0: break
     # B26's formula: n_eff = sum over S-powers p of (-1)^{# A0 to the left}, the A0 inside A_a counted as left of its S^a
     n_eff = 0; nA = 0; n_raw = 0
     for L in w:
+        if '^' not in L.name: continue
         p = int(L.name.split('^')[1])
         if L.chi == -1: nA += 1
         n_eff += (-1) ** nA * p; n_raw += p

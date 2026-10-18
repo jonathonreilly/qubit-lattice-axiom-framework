@@ -1,0 +1,7 @@
+BOX=4 actions=['trivial'] bases=1
+== action trivial: 20 star orbits
+p2:00000000      |Bc|= 1 rounds=   4 maxfinite_minflip=  8 t=   0.0s
+    rule needs: c=0 f={}; c=0 f={+x}; c=1 f={+x,+y,+z}; c=1 f={+x,-x,+y,+z}; c=1 f={+x,-x,+y,-y,+z}; c=1 f={+x,-x,+y,-y,+z,-z}
+    flip: [(1, 0, 1), (1, 0, 2), (1, 1, 1), (1, 1, 2), (2, 0, 1), (2, 0, 2), (2, 1, 1), (2, 1, 2)]
+== action trivial: OVERALL max finite minimal flip (box 4) = 8
+watchdog peak RSS 20992 KB

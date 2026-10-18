@@ -1,0 +1,22 @@
+== a1: exponential-sum zeros vs the bound ==
+bound violations: 0  (instances with a zero: 2084)
+largest k_max*N* found (k_max N*, Delta/k_max, R, J, p_max, N*):
+  1.18e+03, 0.000863, 2, 4, 0, 399
+  1.01e+03, 0.00704, 3, 5, 2, 368
+  870, 0.00145, 3, 5, 2, 352
+  850, 0.00808, 10, 3, 2, 363
+  837, 0.0131, 2, 2, 2, 312
+O(1) class (Delta/k_max >= 0.2, R <= 10): max k_max*N* = 30.16  vs L* = 38.4
+required Delta/kappa for L* (J=2, p=0): R=3 -> 0.057  R=10 -> 0.120
+required multiplicity n = kappa/Delta: R=3 -> 17.5  R=10 -> 8.3  R^2 = 1/alpha_LM (=11.0) -> 16.0
+
+== a2: Wilson-Dirac kink/antikink ring ==
+   linear pressure dE/dN (bulk energy difference of -M0 vs +M0) = 3.7400e-01
+M0=0.3: rate of m(N) = 0.3567, rate of E''(N) = 0.3543, ratio = 0.993, analytic -ln|1-M0| = 0.3567
+   sign of dE/dN over N=4..40: [np.int64(1)]; stationary point in fermion sector alone: False
+   m(N=40)/M0 = 6.224e-07
+   linear pressure dE/dN (bulk energy difference of -M0 vs +M0) = 7.2009e-01
+M0=0.6: rate of m(N) = 0.8808, rate of E''(N) = 0.9158, ratio = 1.040, analytic -ln|1-M0| = 0.9163
+   sign of dE/dN over N=4..40: [np.int64(1)]; stationary point in fermion sector alone: False
+   m(N=40)/M0 = 3.702e-15
+watchdog peak RSS 124640 KB

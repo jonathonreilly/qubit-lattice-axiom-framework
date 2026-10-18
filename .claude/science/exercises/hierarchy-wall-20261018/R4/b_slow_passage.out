@@ -1,0 +1,43 @@
+== b1: normal forms ==
+transcritical y=0.0    b=1 u0=1.0: T_num=1.0000 T_exact=1.0000 bound 1/(b u0)=1.0000 ok=True
+transcritical y=0.0    b=1 u0=0.1: T_num=10.0000 T_exact=10.0000 bound 1/(b u0)=10.0000 ok=True
+transcritical y=0.0    b=0.01267 u0=1.0: T_num=78.9568 T_exact=78.9568 bound 1/(b u0)=78.9568 ok=True
+transcritical y=0.013  b=1 u0=1.0: T_num=0.9936 T_exact=0.9936 bound 1/(b u0)=1.0000 ok=True
+transcritical y=0.013  b=1 u0=0.1: T_num=9.4014 T_exact=9.4014 bound 1/(b u0)=10.0000 ok=True
+transcritical y=0.013  b=0.01267 u0=1.0: T_num=54.3292 T_exact=54.3292 bound 1/(b u0)=78.9568 ok=True
+transcritical y=0.1    b=1 u0=1.0: T_num=0.9531 T_exact=0.9531 bound 1/(b u0)=1.0000 ok=True
+transcritical y=0.1    b=1 u0=0.1: T_num=6.9315 T_exact=6.9315 bound 1/(b u0)=10.0000 ok=True
+transcritical y=0.1    b=0.01267 u0=1.0: T_num=21.8557 T_exact=21.8557 bound 1/(b u0)=78.9568 ok=True
+transcritical y=1.0    b=1 u0=1.0: T_num=0.6931 T_exact=0.6931 bound 1/(b u0)=1.0000 ok=True
+transcritical y=1.0    b=1 u0=0.1: T_num=2.3979 T_exact=2.3979 bound 1/(b u0)=10.0000 ok=True
+transcritical y=1.0    b=0.01267 u0=1.0: T_num=4.3815 T_exact=4.3815 bound 1/(b u0)=78.9568 ok=True
+weak focus / pitchfork eps=0.001: T_num=0.4998  bound 1/(2 c r0^2)=0.5000
+weak focus / pitchfork eps=0.026: T_num=0.4936  bound 1/(2 c r0^2)=0.5000
+weak focus / pitchfork eps=0.3: T_num=0.4373  bound 1/(2 c r0^2)=0.5000
+ghost mu=0.1: T_num(-3->3)=9.270  pi/sqrt(b mu)=9.935
+ghost mu=0.01: T_num(-3->3)=30.750  pi/sqrt(b mu)=31.416
+ghost mu=0.0067: T_num(-3->3)=37.714  pi/sqrt(b mu)=38.381
+ghost mu=0.001: T_num(-3->3)=98.679  pi/sqrt(b mu)=99.346
+needed ghost mu for L*: pi^2/L*^2 = 6.6933e-03 (times 1/b)
+
+== b2a: random 1D flows beta(u) = sum_{n<=4} a_n u^n, |a_n| <= 1 ==
+gapped trajectories: 18041; with T >= L*: 226 (1.25e-02)
+  min|beta| on path for T>=L*: max = 1.930e-02, median = 5.844e-05
+  closest complex/real zero of beta to the slowest point: max distance = 3.023e-01
+
+== b2b: random 2D quadratic flows, |coeff| <= 1 ==
+gapped trajectories: 2308; with T >= L*: 4
+  T=77.9  min|beta| on path=1.12e+00  windings~25.3
+  T=77.0  min|beta| on path=1.30e-03  windings~0.5
+  T=58.6  min|beta| on path=5.53e-03  windings~0.4
+  T=48.6  min|beta| on path=1.19e-02  windings~0.5
+  max min|beta| among T>=L*: 1.119e+00
+
+== b3: comparator, 2D Potts merger family (q_c = 4) ==
+q=5: T ~ 7.44  xi ~ 1.71e+03
+q=6: T ~ 4.55  xi ~ 94.9
+q=7: T ~ 3.27  xi ~ 26.4
+q=8: T ~ 2.51  xi ~ 12.3
+exact comparator: xi(q=5) = 2512 (ln = 7.83)
+needed q for T = L*: q = 4.0584  (distance to nearest integer above 4: 0.942)
+watchdog peak RSS 76848 KB

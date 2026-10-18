@@ -1,0 +1,5 @@
+L=4: copy has n=32 qubits, 32 generators, rank 24, logical qubits k=8 (both copies: 16)
+enumerated weight<= 3: 138480 Paulis
+L=4: minimum-weight nontrivial logical found: weight 4 (search complete up to 6) -> d = 4
+   witness: (((0,), ('X',)), ((1, 2, 6), ('X', 'X', 'X')))
+watchdog peak RSS 68064 KB

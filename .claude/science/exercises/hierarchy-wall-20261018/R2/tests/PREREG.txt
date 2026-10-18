@@ -1,0 +1,28 @@
+R2 pre-registration (written before any run), 2026-10-18.
+
+Declared model (not axiom content): hard-support reading of Admissibility.
+A rule is a set A of allowed 7-site star configurations (centre bit + six
+face bits), closed under the 24 proper cubic rotations acting on positions,
+with Pauli labels acted on trivially or by the sign twist (bit flip for
+rotations whose axis permutation is odd). Quantum fluctuations: a local
+perturbation of strength eps; the tunnelling order between two valid
+configurations differing on a finite set S is |S| for one-site terms and at
+least ceil(|S|/2) for two-site terms.
+
+T1 (main). For every rule and every valid base configuration of period 2 in
+each axis, and layered bases of period 3 and 4, compute the largest finite
+minimal flip M = max_A min{|S| : S finite, nonempty, base xor S valid},
+restricted to flips inside a 6^3 box (stability checked at 7^3 for a
+subset). Exact SAT/CEGAR.
+  Route 1 survives as an O(1)-spurion mechanism only if M >= 15
+  (eps ~ 0.1 then gives eps^M <= 1e-15). If M <= 8 it is killed in this class.
+T2. For the extremal rule found, compute the exact order-M tunnelling
+coefficient C_M (sum over orderings of products of inverse intermediate
+penalties, penalty J per violated star) and the second-order diagonal
+detuning between the two configurations. If the detuning is O(eps^2/J) and
+nonzero, the order-M process sets a bandwidth, not a gap.
+T3. For the soldered branch (Chamon rule, the unique soldered Pauli rule on
+main), compute the minimum weight of a nontrivial logical operator d(L) on
+L^3 tori, L = 4 exactly (search to weight 6), L = 6 bounds. This is the
+order at which a one-site perturbation first splits the code space.
+Memory cap 0.4 GB via capped.sh, one process at a time.

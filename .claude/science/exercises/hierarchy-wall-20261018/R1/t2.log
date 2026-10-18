@@ -1,0 +1,36 @@
+lattice 48^3 periodic; target (v/M)^2 ~ 4e-34
+R=1 V=   27 p= 1.000: floor <|mu^2|>=1.000e+00 <v^2>=1.000e+00 ticks=     1 record fraction=1.0000
+R=1 V=   27 p= 0.300: floor <|mu^2|>=2.368e-01 <v^2>=2.350e-01 ticks=    21 record fraction=0.6167
+R=1 V=   27 p= 0.100: floor <|mu^2|>=1.996e-01 <v^2>=1.959e-01 ticks=    81 record fraction=0.5961
+R=1 V=   27 p= 0.030: floor <|mu^2|>=1.923e-01 <v^2>=1.877e-01 ticks=   333 record fraction=0.5915
+R=1 V=   27 p= 0.010: floor <|mu^2|>=1.911e-01 <v^2>=1.862e-01 ticks=   949 record fraction=0.5906
+R=1 V=   27 p= 0.003: floor <|mu^2|>=1.896e-01 <v^2>=1.847e-01 ticks=  2887 record fraction=0.5899
+R=1 V=   27 p= 0.001: floor <|mu^2|>=1.906e-01 <v^2>=1.857e-01 ticks=  8865 record fraction=0.5904
+R=2 V=  125 p= 1.000: floor <|mu^2|>=1.000e+00 <v^2>=1.000e+00 ticks=     1 record fraction=1.0000
+R=2 V=  125 p= 0.300: floor <|mu^2|>=1.563e-01 <v^2>=1.562e-01 ticks=    21 record fraction=0.5781
+R=2 V=  125 p= 0.100: floor <|mu^2|>=1.127e-01 <v^2>=1.123e-01 ticks=    86 record fraction=0.5559
+R=2 V=  125 p= 0.030: floor <|mu^2|>=1.108e-01 <v^2>=1.100e-01 ticks=   303 record fraction=0.5547
+R=2 V=  125 p= 0.010: floor <|mu^2|>=1.087e-01 <v^2>=1.078e-01 ticks=   832 record fraction=0.5535
+R=2 V=  125 p= 0.003: floor <|mu^2|>=1.108e-01 <v^2>=1.099e-01 ticks=  3096 record fraction=0.5545
+R=2 V=  125 p= 0.001: floor <|mu^2|>=1.094e-01 <v^2>=1.086e-01 ticks=  7899 record fraction=0.5539
+R=4 V=  729 p= 1.000: floor <|mu^2|>=1.000e+00 <v^2>=1.000e+00 ticks=     1 record fraction=1.0000
+R=4 V=  729 p= 0.300: floor <|mu^2|>=1.101e-01 <v^2>=1.101e-01 ticks=    20 record fraction=0.5551
+R=4 V=  729 p= 0.100: floor <|mu^2|>=6.203e-02 <v^2>=6.199e-02 ticks=    53 record fraction=0.5310
+R=4 V=  729 p= 0.030: floor <|mu^2|>=5.497e-02 <v^2>=5.489e-02 ticks=   319 record fraction=0.5274
+R=4 V=  729 p= 0.010: floor <|mu^2|>=5.640e-02 <v^2>=5.629e-02 ticks=   652 record fraction=0.5281
+R=4 V=  729 p= 0.003: floor <|mu^2|>=5.556e-02 <v^2>=5.547e-02 ticks=  2154 record fraction=0.5277
+R=4 V=  729 p= 0.001: floor <|mu^2|>=5.578e-02 <v^2>=5.567e-02 ticks=  7336 record fraction=0.5278
+R=8 V= 4913 p= 1.000: floor <|mu^2|>=1.000e+00 <v^2>=1.000e+00 ticks=     1 record fraction=1.0000
+R=8 V= 4913 p= 0.300: floor <|mu^2|>=4.302e-02 <v^2>=4.302e-02 ticks=    11 record fraction=0.5215
+R=8 V= 4913 p= 0.100: floor <|mu^2|>=4.310e-02 <v^2>=4.310e-02 ticks=    17 record fraction=0.5215
+R=8 V= 4913 p= 0.030: floor <|mu^2|>=2.477e-02 <v^2>=2.476e-02 ticks=   190 record fraction=0.5124
+R=8 V= 4913 p= 0.010: floor <|mu^2|>=2.528e-02 <v^2>=2.527e-02 ticks=   568 record fraction=0.5126
+R=8 V= 4913 p= 0.003: floor <|mu^2|>=2.684e-02 <v^2>=2.683e-02 ticks=  2105 record fraction=0.5134
+R=8 V= 4913 p= 0.001: floor <|mu^2|>=2.735e-02 <v^2>=2.734e-02 ticks=  5978 record fraction=0.5137
+R=1: d ln F / d ln p over p in [1e-3, 3e-2] = 0.003
+R=2: d ln F / d ln p over p in [1e-3, 3e-2] = 0.001
+R=4: d ln F / d ln p over p in [1e-3, 3e-2] = -0.002
+R=8: d ln F / d ln p over p in [1e-3, 3e-2] = -0.031
+p=1e-3: d ln F / d ln V = -0.374
+NATIVE-RELAX-FAIL
+watchdog peak RSS 80176 KB

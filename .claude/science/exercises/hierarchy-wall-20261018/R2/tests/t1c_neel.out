@@ -1,0 +1,3 @@
+neel box=7 minflip=62 extent=[4, 5, 4] t=243.2s
+neel box=8 minflip=62 extent=[5, 4, 4] t=614.6s
+watchdog peak RSS 159392 KB

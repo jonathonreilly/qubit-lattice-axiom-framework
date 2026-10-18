@@ -1,0 +1,24 @@
+[A] ring L=24, translations only, random complex hop: dim=48 multiplets=48 non-degenerate=48 max rel dev (non-deg)=1.11e-13 max rel dev (all multiplets, summed)=1.11e-13
+[A] 4^3 torus, translations x proper cubic O, spin-1/2 internal: dim=128 multiplets=16 non-degenerate=0 max rel dev (non-deg)=0.00e+00 max rel dev (all multiplets, summed)=6.26e-14
+[A] 2^4 block, APBC time, block translations, qubit per site: dim=32 multiplets=32 non-degenerate=32 max rel dev (non-deg)=7.52e-13 max rel dev (all multiplets, summed)=7.52e-13
+[B] clockwork chain N=20, q=2.0: q^-N = 9.537e-07
+[B]   reversed-partner weight w=0.0e+00: lambda_min=-1.213e-16 |phi_N/phi_0|=9.537e-07
+[B]   reversed-partner weight w=1.0e-06: lambda_min=2.250e-06 |phi_N/phi_0|=9.537e-07
+[B]   reversed-partner weight w=1.0e-03: lambda_min=2.249e-03 |phi_N/phi_0|=9.688e-07
+[B]   reversed-partner weight w=1.0e-01: lambda_min=2.195e-01 |phi_N/phi_0|=4.234e-06
+[B]   reversed-partner weight w=1.0e+00: lambda_min=1.793e+00 |phi_N/phi_0|=1.000e+00
+[B] Hatano-Nelson g=0.3: mean log end-ratio per site = +0.2996 (expected +0.3000)
+[B] Hatano-Nelson g=0.0: mean log end-ratio per site = +0.0000 (expected +0.0000)
+[C] Wilson-Dirac m0=0.25, r=1: xi=3.471 sites; splitting(L=10)=2.78e-02; L* for 2e-17 = 131.1 sites
+[C] Wilson-Dirac m0=0.5, r=1: xi=1.443 sites; splitting(L=10)=9.16e-04; L* for 2e-17 = 55.4 sites
+[C] Wilson-Dirac m0=0.75, r=1: xi=0.721 sites; splitting(L=10)=1.23e-06; L* for 2e-17 = 27.9 sites
+[D] ln(M_Pl/v) = 38.45
+[D] taste clockwork over  4 links (taste geodesic (Hamming diameter)): needs gear ratio q >= 1.5e+04
+[D] taste clockwork over 15 links (taste Hamiltonian path): needs gear ratio q >= 13
+[D] taste clockwork over 16 links (16 links): needs gear ratio q >= 11.1
+[D] alpha_LM = 0.0907; alpha_LM^16 = 2.086e-17 (clockwork form q^-16 with q = 11.03)
+[D] time clockwork, q=2.000: freeze at N_t* = 55.5 ticks; if not frozen, d ln v / d ln t = -N_t ln q (BBN needs |.| < ~1e-3)
+[D] time clockwork, q=2.718: freeze at N_t* = 38.5 ticks; if not frozen, d ln v / d ln t = -N_t ln q (BBN needs |.| < ~1e-3)
+[D] time clockwork, q=11.029: freeze at N_t* = 16.0 ticks; if not frozen, d ln v / d ln t = -N_t ln q (BBN needs |.| < ~1e-3)
+PASS-A
+watchdog peak RSS 47408 KB

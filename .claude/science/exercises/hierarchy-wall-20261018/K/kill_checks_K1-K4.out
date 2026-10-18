@@ -1,0 +1,20 @@
+[K1] clockwork K=M^T M: bulk diag [5.] offdiag [-2.]  bulk reversal-symmetric: True
+[K1] end diagonals: K00=1.000, KNN=4.000 (bulk 5.000)
+[K1] symmetric bulk + clockwork ends (1, q^2) : lambda_min=-1.213e-16, |phi_N/phi_0|=9.537e-07
+[K1] symmetric bulk + symmetric ends          : lambda_min=+1.041e+00, |phi_N/phi_0|=1.000e+00
+[K1] symmetric bulk + symmetric ends (1, 1)   : lambda_min=-2.146e-06, |phi_N/phi_0|=1.000e+00
+[K1] R1 w=1 matrix: bulk equals 2x clockwork bulk: True ; ends 5.0,5.0 (symmetric)
+[K2] reversal covariance  sx T sx == T^dag: True
+[K2] spectrum values: [-2.  2.]
+[K2] projected state weight by site (nonzero): {4: np.float64(0.25), 5: np.float64(0.5), 6: np.float64(0.25)}  eigen-residual: 6.7e-17
+[K3] XOR rule, finite flips inside 5^3: GF(2) nullity = 0
+[K3] exactly-k totalistic rule, balanced signed flips inside 5^3: real nullity = 0
+[K4] F=(10.0-0.1N)e^-N + e^-1.5N: N*=100.00, kappa N*=100.0 (R=10; stated bound ln((J-1)R^2)/Delta = 10.6 assumes distinct leading rate)
+[K4] F=(5.0-0.125N)e^-N + e^-1.5N: N*=40.00, kappa N*=40.0 (R=8; stated bound ln((J-1)R^2)/Delta = 9.7 assumes distinct leading rate)
+[K4] F=(3.0-0.1N)e^-N + e^-1.5N: N*=30.00, kappa N*=30.0 (R=10; stated bound ln((J-1)R^2)/Delta = 10.6 assumes distinct leading rate)
+[K5] passage time r: 0.3 -> 3 (L* = 38.4); quadratic strength bq = 1
+[K5]   Re y=0.03  Im y=0.0    Re/|Im|=inf      T=     inf   ln(10)/Re =    76.8
+[K5]   Re y=0.03  Im y=0.3    Re/|Im|=0.1      T=     inf   ln(10)/Re =    76.8
+[K5]   Re y=0.03  Im y=3.0    Re/|Im|=0.01     T=     inf   ln(10)/Re =    76.8
+CAPPED: killed at RSS 494976 KB
+watchdog peak RSS 494976 KB

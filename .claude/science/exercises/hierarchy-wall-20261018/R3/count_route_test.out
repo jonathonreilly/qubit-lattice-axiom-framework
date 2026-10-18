@@ -1,0 +1,51 @@
+=== constants ===
+t0 = 13.7907 Gyr ; ln(M_Pl/v) = 38.4425 ; v/M_Pl = 2.0167e-17
+
+=== Route 1: running counts, power law fitted to today ===
+count                                           log10 N0  dlnN/dt [1/yr]  e=ln(v/M)/lnN0  dln v/dt [1/yr]  clock excess  LLR excess   v_rec/v0   v_BBN/v0  e_max(clock)
+N_age  (ticks t/t_P)                               60.91       7.251e-11         -0.2741       -1.988e-11      1.55e+05    5.89e+01  1.789e+01  6.839e+04      1.77e-06
+N_vol  (sites in particle horizon)                184.92       2.718e-10         -0.0903       -2.454e-11      1.91e+05    7.27e+01  1.923e+01  6.888e+04      4.73e-07
+N_area (Hubble-horizon area/4, Planck units)      122.36       6.516e-11         -0.1364       -8.892e-12      6.92e+04    2.63e+01  1.554e+01  5.463e+04      1.97e-06
+N_V4   (events in causal past)                    242.81       2.721e-10         -0.0688       -1.871e-11      1.46e+05    5.54e+01  1.768e+01  6.879e+04      4.73e-07
+
+Comparator bounds used: |dln mu/dt| < 1e-16/yr (clocks), |dln G/dt| < 1.5e-13/yr (LLR),
+|dv/v| < 0.1 at BBN and < 0.03 at recombination (conservative).
+
+Identity check (N ∝ t^k, N(t_P)=1, any k, any p): |dln v/dt| = ln(M/v)/(t0 ln(t0/t_P)) = 1.988e-11 /yr
+
+Max share of ln(M_Pl/v) a count may carry with present elasticity <= e_max (if e were constant):
+  N_age  (ticks t/t_P)                           share <= 6.47e-06
+  N_vol  (sites in particle horizon)             share <= 5.24e-06
+  N_area (Hubble-horizon area/4, Planck units)   share <= 1.45e-05
+  N_V4   (events in causal past)                 share <= 6.87e-06
+
+=== Frozen count set at the epoch fixed by v itself (radiation era) ===
+N(T*) = c (M_Pl/T*)^k, T* = c' v, v/M_Pl = N^-p  ->  (v/M_Pl)^(1-kp) = c^-p c'^(kp)
+  k=2 p=0.20 c=1.0 c'=1.0: v/M_Pl = 1.000e+00   (needs 1-kp ~ O(1)/38 for 1e-17)
+  k=3 p=0.20 c=10.0 c'=0.1: v/M_Pl = 1.000e-02   (needs 1-kp ~ O(1)/38 for 1e-17)
+  k=6 p=0.10 c=100.0 c'=0.3: v/M_Pl = 5.196e-02   (needs 1-kp ~ O(1)/38 for 1e-17)
+  k=2 p=0.49 c=3.0 c'=1.0: v/M_Pl = 2.044e-12   (needs 1-kp ~ O(1)/38 for 1e-17)
+  k=3 p=0.33 c=2.0 c'=1.0: v/M_Pl = 1.164e-10   (needs 1-kp ~ O(1)/38 for 1e-17)
+
+=== Route 2: asymptotic de Sitter capacity (time independent) ===
+R_L/a = 1.0261e+61 (log10 61.011);  N_L = S_dS = 3.308e+122;  sites on S^3_R: 2.132e+184
+  [M_Pl, v           ] s* = ln(M/v)/ln(R/a) = 0.2736 ; p* vs S_dS = 0.1363 (1/8 = 0.125) ; kappa for s=1/4: 0.036
+  [M_Pl, m_h         ] s* = ln(M/v)/ln(R/a) = 0.2785 ; p* vs S_dS = 0.1387 (1/8 = 0.125) ; kappa for s=1/4: 0.018
+  [reduced M_Pl, v   ] s* = ln(M/v)/ln(R/a) = 0.2652 ; p* vs S_dS = 0.1321 (1/8 = 0.125) ; kappa for s=1/4: 0.121
+  [reduced M_Pl, m_h ] s* = ln(M/v)/ln(R/a) = 0.2701 ; p* vs S_dS = 0.1345 (1/8 = 0.125) ; kappa for s=1/4: 0.062
+
+Local finite-size mechanism: <O>_L ~ a^-dO (a/L)^Delta  =>  v ~ a^-1 (a/L)^(Delta/dO); need Delta = dO * s*
+  dO=1: Delta needed = 0.274  -> VIOLATES 4D scalar unitarity bound Delta>=1
+  dO=2: Delta needed = 0.547  -> VIOLATES 4D scalar unitarity bound Delta>=1
+  dO=3: Delta needed = 0.821  -> VIOLATES 4D scalar unitarity bound Delta>=1
+  dO=4: Delta needed = 1.095  -> allowed (4D, Delta>=1)
+  dO=6: Delta needed = 1.642  -> allowed (4D, Delta>=1)
+
+kappa=1, s=1/4 would give H_L = v^4/M_Pl^3 = 2.020e-48 GeV vs observed 1.190e-42 GeV (ratio 1.697e-06)
+rho_L^(1/4) observed = 2.240 meV ; v^2/M_Pl = 0.005 meV ; v^2/M_Pl_red = 0.025 meV
+
+=== Species bound (Dvali form M_Pl^2 >= N Lambda^2) ===
+N needed for gravity cutoff at v: (M_Pl/v)^2 = 2.459e+33;  (M_Pl_red/v)^2 = 9.780e+31
+Free nearest-neighbour rule, one 2-dim site per cell on Z^3 x Z_tau: zero-mode doublers <= 2^4 per band, <= 2 bands -> <= 32
+Enlarged cell needed to host N light species from one band each: >= 1.23e+33 sites, linear size >= 1.07e+11 a
+watchdog peak RSS 115168 KB

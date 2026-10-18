@@ -1,0 +1,17 @@
+d=2 L=64: compile+8 1.0s, 64 runs 0.007s (27 ns/site wall)
+  K=0: nn=+0.0013+-0.0014 plaq=+0.0031
+  mu=0 nucleation fraction 0.2010 vs 1/(1+2d) = 0.2000 (+- 0.0005)
+  mu=2.0: nucleation fraction 0.07510
+  mu=4.0: nucleation fraction 0.01858
+  mu=6.0: nucleation fraction 0.00365
+d=3 L=16: compile+8 0.0s, 64 runs 0.006s (23 ns/site wall)
+  K=0: nn=+0.0008+-0.0012 plaq=+0.0007
+  mu=0 nucleation fraction 0.1422 vs 1/(1+2d) = 0.1429 (+- 0.0005)
+  mu=2.0: nucleation fraction 0.03882
+  mu=4.0: nucleation fraction 0.00620
+  mu=6.0: nucleation fraction 0.00142
+score dA/dK  [0.4183 0.5586 0.4206 0.3159 0.3117]
+fd    dA/dK  [0.4209 0.5734 0.4194 0.3068 0.3143]
+score dA/dmu [0.0349 0.0513 0.0437 0.0427 0.0195]
+fd    dA/dmu [0.0274 0.0292 0.0364 0.0357 0.0221]
+watchdog peak RSS 314384 KB

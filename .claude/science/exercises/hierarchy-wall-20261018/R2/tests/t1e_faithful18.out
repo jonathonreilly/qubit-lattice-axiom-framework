@@ -1,0 +1,4 @@
+faithful (a centre value allowed for every neighbour condition): True  |A|= 11
+faithful-18 rule box=6 minflip=18 t=0.0s
+faithful-18 rule box=7 minflip=18 t=0.0s
+watchdog peak RSS 21264 KB

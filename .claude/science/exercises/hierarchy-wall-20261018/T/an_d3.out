@@ -1,0 +1,96 @@
+
+######## d3_b2.npz: d=3 b=2 L=32 S=192 levels=2
+fine-lattice axis correlation C(r): r_max with C>0.02 [rows t, cols mu]
+      mu:   -3   -2   -1    0    1    2    3    4    5    6    7    8    9
+t=0.00:    1    1    1    1    1    1    1    1    1    1    1    1    1
+t=0.10:    2    2    2    2    2    2    2    2    2    2    2    2    2
+t=0.20:    2    2    3    3    3    3    3    3    3    3    3    3    3
+t=0.30:    3    3    3    3    3    3    4    4    4    4    4    4    4
+t=0.40:    3    3    3    3    4    4    5    5    5    6    6    6    6
+t=0.50:    3    3    3    3    4    5    6    8   10   10   11   11   11
+t=0.60:    3    3    3    4    4    5    8   12   17   17   17   17   17
+t=0.70:    3    3    3    4    5    6    9   17   17   17   17   17   17
+t=0.80:    3    3    4    4    5    6   11   17   17   17   17   17   17
+t=0.90:    3    3    4    4    5    7   11   17   17   17   17   17   17
+t=0.95:    3    3    4    4    5    7   12   17   17   17   17   17   17
+
+-- n=0 S2: flow R(theta) on coarse grid  (t, mu) -> (t', mu')   [boundary hits marked *]
+   (0.20,-2)->(0.060,-2.96)   (0.20,+1)->(0.077,-0.80)   (0.20,+4)->(0.088,+7.83)   (0.20,+7)->(0.093,+1.42) 
+   (0.50,-2)->(0.130,-2.84)   (0.50,+1)->(0.207,+3.45)   (0.50,+4)->(0.359,+3.80)   (0.50,+7)->(0.407,+8.53) 
+   (0.80,-2)->(0.167,+0.30)   (0.80,+1)->(0.292,+3.58)   (0.80,+4)->(0.599,+5.08)   (0.80,+7)->(0.767,+7.02) 
+   (0.95,-2)->(0.183,+0.23)   (0.95,+1)->(0.322,+3.64)   (0.95,+4)->(0.651,+5.04)   (0.95,+7)->(0.897,+6.10) 
+-- n=0 raw D_nn/sigma over 130 grid points with t>0: max +3.4, min -257.5, points with D>-2sigma: 6 at (t,mu)=[(0.7, 7.0), (0.7, 8.0), (0.7, 9.0), (0.8, 8.0), (0.8, 9.0), (0.9, 9.0)]
+-- n=0 raw D_plaq/sigma over 130 grid points with t>0: max +1.6, min -248.9, points with D>-2sigma: 5 at (t,mu)=[(0.7, 8.0), (0.7, 9.0), (0.8, 8.0), (0.8, 9.0), (0.9, 9.0)]
+-- n=0 S2: DR(theta) census (interior points whose image is interior): 5/98 complex; min Re/|Im| of ln(lam)/ln b among complex: 0.0488
+-- n=0 S2: K=0 line (fixed line, mu redundant there): t-eigenvalue 0.331 (real by construction)
+-- n=0 S2: NO interior fixed point (chi<=2, inside grid, t>=0.03)
+
+-- n=0 S5: flow R(theta) on coarse grid  (t, mu) -> (t', mu')   [boundary hits marked *]
+   (0.20,-2)->(0.061,+1.49)   (0.20,+1)->(0.078,-1.66)   (0.20,+4)->(0.093,-1.59)   (0.20,+7)->(0.095,-1.23) 
+   (0.50,-2)->(0.130,-1.93)   (0.50,+1)->(0.217,+1.44)   (0.50,+4)->(0.370,+5.27)   (0.50,+7)->(0.425,+8.50) 
+   (0.80,-2)->(0.171,-0.53)   (0.80,+1)->(0.331,+0.74)   (0.80,+4)->(0.608,+5.06)   (0.80,+7)->(0.779,+6.96) 
+   (0.95,-2)->(0.188,-0.53)   (0.95,+1)->(0.377,+0.63)   (0.95,+4)->(0.659,+4.96)   (0.95,+7)->(0.861,+7.19) 
+-- n=0 S5: DR(theta) census (interior points whose image is interior): 11/99 complex; min Re/|Im| of ln(lam)/ln b among complex: 0.0352
+-- n=0 S5: K=0 line (fixed line, mu redundant there): t-eigenvalue 0.330 (real by construction)
+-- n=0 S5: NO interior fixed point (chi<=2, inside grid, t>=0.03)
+
+-- n=1 S2: flow R(theta) on coarse grid  (t, mu) -> (t', mu')   [boundary hits marked *]
+   (0.20,-2)->(0.061,-0.66)   (0.20,+1)->(0.080,-3.00)*  (0.20,+4)->(0.099,+4.48)   (0.20,+7)->(0.095,+6.30) 
+   (0.50,-2)->(0.116,+0.30)   (0.50,+1)->(0.298,-3.00)*  (0.50,+4)->(0.466,+1.84)   (0.50,+7)->(0.524,+2.64) 
+   (0.80,-2)->(0.172,-1.41)   (0.80,+1)->(0.419,-1.12)   (0.80,+4)->(0.824,+2.84)   (0.80,+7)->(0.842,+5.78) 
+   (0.95,-2)->(0.193,-1.27)   (0.95,+1)->(0.467,-0.91)   (0.95,+4)->(0.884,+3.14)   (0.95,+7)->(0.849,+8.35) 
+-- n=1 raw D_nn/sigma over 130 grid points with t>0: max +2.4, min -57.1, points with D>-2sigma: 9 at (t,mu)=[(0.6, 8.0), (0.6, 9.0), (0.7, 7.0), (0.7, 8.0), (0.7, 9.0), (0.8, 8.0), (0.8, 9.0), (0.9, 8.0)]
+-- n=1 raw D_plaq/sigma over 130 grid points with t>0: max +3.1, min -47.1, points with D>-2sigma: 24 at (t,mu)=[(0.1, -3.0), (0.1, -2.0), (0.1, -1.0), (0.1, 0.0), (0.1, 1.0), (0.1, 2.0), (0.1, 3.0), (0.1, 4.0)]
+-- n=1 S2: DR(theta) census (interior points whose image is interior): 7/87 complex; min Re/|Im| of ln(lam)/ln b among complex: 0.25
+-- n=1 S2: K=0 line (fixed line, mu redundant there): t-eigenvalue 0.353 (real by construction)
+-- n=1 S2: interior fixed point t=0.656 (K=0.786) mu=+7.78 chi=0.00; eigenvalues [1.42+0.6356j 1.42-0.6356j]; y=ln(lam)/ln b [0.6376+0.6071j 0.6376-0.6071j]; Re/|Im| of y = 1.05
+-- n=1 S2: interior fixed point t=0.620 (K=0.725) mu=+8.65 chi=0.04; eigenvalues [1.     0.0178]; y=ln(lam)/ln b [-0.    +0.j -5.8097+0.j]; Re/|Im| of y = inf
+-- n=1 S2: interior fixed point t=0.839 (K=1.219) mu=+8.49 chi=0.00; eigenvalues [-1.5803  1.3356]; y=ln(lam)/ln b [0.6602+4.5324j 0.4175+0.j    ]; Re/|Im| of y = 0.146
+
+-- n=1 S5: flow R(theta) on coarse grid  (t, mu) -> (t', mu')   [boundary hits marked *]
+   (0.20,-2)->(0.067,-2.28)   (0.20,+1)->(0.079,-0.10)   (0.20,+4)->(0.098,+0.31)   (0.20,+7)->(0.096,+6.47) 
+   (0.50,-2)->(0.129,-2.26)   (0.50,+1)->(0.194,+2.44)   (0.50,+4)->(0.392,+3.46)   (0.50,+7)->(0.450,+4.99) 
+   (0.80,-2)->(0.162,+0.05)   (0.80,+1)->(0.458,-1.68)   (0.80,+4)->(0.683,+3.53)   (0.80,+7)->(0.900,+5.27) 
+   (0.95,-2)->(0.174,+0.33)   (0.95,+1)->(0.519,-1.37)   (0.95,+4)->(0.885,+3.12)   (0.95,+7)->(0.944,+6.23) 
+-- n=1 S5: DR(theta) census (interior points whose image is interior): 13/87 complex; min Re/|Im| of ln(lam)/ln b among complex: 0.01
+-- n=1 S5: K=0 line (fixed line, mu redundant there): t-eigenvalue 0.369 (real by construction)
+-- n=1 S5: interior fixed point t=0.654 (K=0.782) mu=+7.84 chi=0.37; eigenvalues [ 1.3251 11.1028]; y=ln(lam)/ln b [0.4061+0.j 3.4728+0.j]; Re/|Im| of y = inf
+-- n=1 S5: interior fixed point t=0.817 (K=1.147) mu=+8.93 chi=1.85; eigenvalues [  0.5668 -37.9203]; y=ln(lam)/ln b [-0.819 +0.j      5.2449+4.5324j]; Re/|Im| of y = inf
+
+######## d3_b3.npz: d=3 b=3 L=36 S=192 levels=1
+fine-lattice axis correlation C(r): r_max with C>0.02 [rows t, cols mu]
+      mu:   -3   -2   -1    0    1    2    3    4    5    6    7    8    9
+t=0.00:    1    1    1    1    1    1    1    1    1    1    1    1    1
+t=0.10:    2    2    2    2    2    2    2    2    2    2    2    2    2
+t=0.20:    2    2    3    3    3    3    3    3    3    3    3    3    3
+t=0.30:    3    3    3    3    3    3    4    4    4    4    4    4    4
+t=0.40:    3    3    3    3    4    4    5    5    5    5    5    6    6
+t=0.50:    3    3    3    3    4    5    6    8    9   10   11   11   12
+t=0.60:    3    3    3    4    4    6    8   13   17   17   17   17   17
+t=0.70:    3    3    3    4    5    6    9   17   17   17   17   17   17
+t=0.80:    3    3    4    4    5    7   11   17   17   17   17   17   17
+t=0.90:    3    3    4    4    5    7   12   17   17   17   17   17   17
+t=0.95:    3    3    4    4    5    7   12   17   17   17   17   17   17
+
+-- n=0 S2: flow R(theta) on coarse grid  (t, mu) -> (t', mu')   [boundary hits marked *]
+   (0.20,-2)->(0.039,+1.48)   (0.20,+1)->(0.052,+1.84)   (0.20,+4)->(0.065,+3.94)   (0.20,+7)->(0.068,+1.36) 
+   (0.50,-2)->(0.073,+2.85)   (0.50,+1)->(0.145,-3.00)*  (0.50,+4)->(0.306,+6.12)   (0.50,+7)->(0.369,+5.90) 
+   (0.80,-2)->(0.091,+4.34)   (0.80,+1)->(0.217,-1.46)   (0.80,+4)->(0.544,+5.34)   (0.80,+7)->(0.771,+8.32) 
+   (0.95,-2)->(0.098,+2.83)   (0.95,+1)->(0.248,-3.00)*  (0.95,+4)->(0.617,+4.46)   (0.95,+7)->(0.843,+9.00)*
+-- n=0 raw D_nn/sigma over 130 grid points with t>0: max +3.6, min -219.1, points with D>-2sigma: 8 at (t,mu)=[(0.7, 7.0), (0.7, 8.0), (0.7, 9.0), (0.8, 7.0), (0.8, 8.0), (0.8, 9.0), (0.9, 8.0), (0.9, 9.0)]
+-- n=0 raw D_plaq/sigma over 130 grid points with t>0: max +3.5, min -196.6, points with D>-2sigma: 6 at (t,mu)=[(0.7, 7.0), (0.7, 8.0), (0.7, 9.0), (0.8, 8.0), (0.8, 9.0), (0.9, 9.0)]
+-- n=0 S2: DR(theta) census (interior points whose image is interior): 8/80 complex; min Re/|Im| of ln(lam)/ln b among complex: 0.0532
+-- n=0 S2: K=0 line (fixed line, mu redundant there): t-eigenvalue 0.199 (real by construction)
+-- n=0 S2: interior fixed point t=0.801 (K=1.101) mu=+7.70 chi=0.79; eigenvalues [0.9999 1.3054]; y=ln(lam)/ln b [-1.000e-04+0.j  2.426e-01+0.j]; Re/|Im| of y = inf
+-- n=0 S2: interior fixed point t=0.866 (K=1.316) mu=+9.00 chi=0.00; eigenvalues [ 0.7664 -1.5987]; y=ln(lam)/ln b [-0.2422+0.j      0.4271+2.8596j]; Re/|Im| of y = inf
+
+-- n=0 S5: flow R(theta) on coarse grid  (t, mu) -> (t', mu')   [boundary hits marked *]
+   (0.20,-2)->(0.038,-3.00)*  (0.20,+1)->(0.052,+0.58)   (0.20,+4)->(0.065,+4.20)   (0.20,+7)->(0.068,+4.79) 
+   (0.50,-2)->(0.071,-3.00)*  (0.50,+1)->(0.142,+0.75)   (0.50,+4)->(0.315,+3.83)   (0.50,+7)->(0.387,+5.29) 
+   (0.80,-2)->(0.091,+1.46)   (0.80,+1)->(0.207,+0.19)   (0.80,+4)->(0.556,+4.54)   (0.80,+7)->(0.770,+8.43) 
+   (0.95,-2)->(0.097,+2.97)   (0.95,+1)->(0.233,+0.07)   (0.95,+4)->(0.651,+3.66)   (0.95,+7)->(0.854,+8.55) 
+-- n=0 S5: DR(theta) census (interior points whose image is interior): 18/75 complex; min Re/|Im| of ln(lam)/ln b among complex: 0.0738
+-- n=0 S5: K=0 line (fixed line, mu redundant there): t-eigenvalue 0.200 (real by construction)
+-- n=0 S5: interior fixed point t=0.853 (K=1.269) mu=+8.95 chi=0.96; eigenvalues [0.7636 4.3697]; y=ln(lam)/ln b [-0.2455+0.j  1.3423+0.j]; Re/|Im| of y = inf
+-- n=0 S5: interior fixed point t=0.823 (K=1.165) mu=+8.17 chi=1.75; eigenvalues [ 0.7095 -4.3268]; y=ln(lam)/ln b [-0.3124+0.j      1.3333+2.8596j]; Re/|Im| of y = inf
+watchdog peak RSS 77440 KB

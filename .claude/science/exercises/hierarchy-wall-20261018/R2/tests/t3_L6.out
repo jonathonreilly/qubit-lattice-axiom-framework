@@ -1,0 +1,4 @@
+L=6: copy has n=108 qubits, 108 generators, rank 96, logical qubits k=12 (both copies: 24)
+enumerated weight<= 2: 52326 Paulis
+L=6: no nontrivial logical of weight <= 4; d >= 5
+watchdog peak RSS 22256 KB

@@ -1,1 +1,4 @@
 PASS radius 2 geometry: 125 sites, 729 shifts
+PASS r2/full: all 4 solutions symplectic with det 1
+  r2/full: dim W = 25, unsigned 4, signed 4, on-site 1, nonconstant trace 0  (759s)
+FAIL r2/full: the only O-covariant radius-2 one-qubit Clifford QCA is the identity

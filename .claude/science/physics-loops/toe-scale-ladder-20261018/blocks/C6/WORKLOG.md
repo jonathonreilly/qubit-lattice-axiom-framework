@@ -8,3 +8,4 @@
 - No network, so the BHM constants and theorem wording are cited from memory (flagged in the NOTE).
 - Not done: a general-L proof of frustration-freeness; corner-code distance bound; an explicit J0; independent re-implementation.
 - Single core; no git operations.
+- Review pass (REVIEW.md): applied every finding to NOTE.md and appended "Review dispositions". Added c6_ff_general_L.py, which proves frustration-freeness for F1–F4 at every L (FF iff L even or f = 0) using the reviewer's relation basis, an eventual-periodicity argument and a full-period exact check (6/6). Added lazy builders to c6_lib.py. Re-ran all runners; the combined total is in logs/C6_SUMMARY.log.

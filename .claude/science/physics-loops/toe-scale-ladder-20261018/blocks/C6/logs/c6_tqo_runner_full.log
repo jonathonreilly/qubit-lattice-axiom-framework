@@ -2,13 +2,13 @@
 A. Consistency, frustration-freeness (-I not in S), log2 GSD k(L)
 ==============================================================================
 [PASS] F1 edge BKSF: every ordering (720), uniform flux sectors 0 and pi, L=4: Hermitian commuting, no -I, k=3  (failures=0)
-   corner L=2 done (30s)
-   corner L=3 done (33s)
-   corner L=4 done (41s)
-   corner L=5 done (44s)
-   corner L=6 done (53s)
-   extra L=7 done (56s)
-   extra L=8 done (62s)
+   corner L=2 done (37s)
+   corner L=3 done (40s)
+   corner L=4 done (49s)
+   corner L=5 done (53s)
+   corner L=6 done (64s)
+   extra L=7 done (69s)
+   extra L=8 done (76s)
 [PASS] all tabulated codes (F1-F5, every L in the table) have Hermitian, pairwise commuting generators  (422 (code, L) cases)
    k(L) and frustration (negI) summary:
    F1 L=2: 48 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(0, 0, 1)', '(0, 1, 0)', '(0, 1, 1)', '(1, 0, 0)', '(1, 0, 1)', '(1, 1, 0)', '(1, 1, 1)']
@@ -147,5 +147,5 @@ per_site: generators and hops are built site by site; TQO counts resolve individ
 per_mode: checked and not executed - no momentum-resolved or spectral quantity is computed in this runner
 per_block: cubes of side r (TQO-1 up to r=L, TQO-2 up to r=4) are the block-level objects actually tested
 lattice_wide: k(L) on tori L=2..6 (corner up to 6), string/membrane logical algebra on L=4,6
-elapsed 79s
+elapsed 97s
 TOTAL: PASS=18 FAIL=0

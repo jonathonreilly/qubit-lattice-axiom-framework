@@ -1,0 +1,23 @@
+[
+  {
+    "mutation": "flux_changing_hop",
+    "exit_code": 1,
+    "failed_checks": [
+      "loop_hop"
+    ]
+  },
+  {
+    "mutation": "wrong_schur_sign",
+    "exit_code": 1,
+    "failed_checks": [
+      "exact_high_band_elimination"
+    ]
+  },
+  {
+    "mutation": "wrong_fermion_commutator",
+    "exit_code": 1,
+    "failed_checks": [
+      "bilinear_commutator_closure"
+    ]
+  }
+]

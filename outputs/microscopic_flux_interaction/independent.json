@@ -1,0 +1,13 @@
+{
+  "qubits": 3072,
+  "loops": 2624,
+  "classes": 2304,
+  "class_size_histogram": {
+    "1": 1536,
+    "2": 768
+  },
+  "max_diameter": 1,
+  "empty_syndromes": 0,
+  "independent_geometry_matches_original_pauli_X": true,
+  "classes_are_exactly_onsite_edges_and_repetition_pairs": true
+}

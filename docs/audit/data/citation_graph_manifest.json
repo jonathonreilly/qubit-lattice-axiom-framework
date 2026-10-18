@@ -1,6 +1,6 @@
 {
  "edge_count": 16238,
- "node_count": 7244,
+ "node_count": 7245,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14955,6 +14955,10 @@
    "out_degree": 1
   },
   "microscopic_current_implementation_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "microscopic_flux_interaction_note_2026-10-17": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

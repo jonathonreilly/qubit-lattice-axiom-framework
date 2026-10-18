@@ -1,0 +1,91 @@
+===== runner cache v1 =====
+runner: scripts/native_ground_window.py
+runner_sha256: bee8812b378565642ec59f7bf4febf6308b9ed65053051e057237787182628f8
+input_fingerprint_sha256: 60ef65c795675c2cc4417c013845b336e05317943edfdf3c89f24ba77480709d
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+{
+  "status": "PASS",
+  "plaquette_manifold": {
+    "transverse_shape": [
+      4,
+      4
+    ],
+    "configurations": 65536,
+    "ground_patterns": 128,
+    "predicted_ground_patterns": 128,
+    "minimum_nonzero_bad_plaquettes": 4,
+    "rectangle_checks": 589824
+  },
+  "native_local_response": {
+    "physical_shape": [
+      3,
+      3,
+      9
+    ],
+    "physical_qubits": 81,
+    "ground_pattern_count": 32,
+    "rows": [
+      {
+        "commutator_order": 0,
+        "pauli_terms": 1,
+        "ground_restriction_scalar_error": 0.0,
+        "scalar": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "commutator_order": 1,
+        "pauli_terms": 8,
+        "ground_restriction_scalar_error": 0.0,
+        "scalar": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "commutator_order": 2,
+        "pauli_terms": 69,
+        "ground_restriction_scalar_error": 0.0,
+        "scalar": [
+          32.0,
+          0.0
+        ]
+      },
+      {
+        "commutator_order": 3,
+        "pauli_terms": 568,
+        "ground_restriction_scalar_error": 0.0,
+        "scalar": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "commutator_order": 4,
+        "pauli_terms": 4825,
+        "ground_restriction_scalar_error": 0.0,
+        "scalar": [
+          3328.0,
+          0.0
+        ]
+      }
+    ],
+    "scope": "Exact low-order Pauli controls of symmetry/local support, not an order40 computation or a finite-time theorem by enumeration."
+  },
+  "error_exponents": {
+    "remainder_global": 29,
+    "dynamics": 13,
+    "ground_state_replacement": 17,
+    "source_tail": 29,
+    "high_sector_filter": 8
+  },
+  "scope": "Finite combinatorial and native Pauli controls supplement the analytical ground-window theorem; no empirical test or numerical weak-coupling threshold."
+}
+
+----- stderr -----
+

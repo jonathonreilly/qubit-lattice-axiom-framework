@@ -86,3 +86,6 @@ Complete fixed-order pole: trace_class: upstream_support; target_blocker_text: f
 
 
 Original readout: trace_class: upstream_support; target_blocker_text: original-source residue accuracy; source_of_blocker_text: handoff; reachability_to_target: partially_closes; artifact_role: theorem; next_trace_action: microscopic finite-time comparison and static exchange range. Fixed-order residue only.
+
+
+Ground window: trace_class: upstream_support; target_blocker_text: actual microscopic response and reference-state dependence; source_of_blocker_text: handoff; reachability_to_target: partially_closes; artifact_role: theorem; next_trace_action: derive static neutral interaction range and test long-range mediator interpretation. Finite-time response is controlled; outgoing pole transfer remains separate.

@@ -77,3 +77,6 @@ Complete fixed-order composite: component checks, synthesis and final scoped rev
 
 
 Original composite readout block: independent source and endpoint residue checks PASS; final scoped review PASS, native/REVIEW_COMPOSITE_READOUT.md. No formal audit.
+
+
+Actual microscopic ground-window block: three focused checks and final scoped review PASS, native/REVIEW_MICROSCOPIC_GROUND_WINDOW.md. Explicit charge+4 local filter avoids nonlocal projection in locality argument. No formal audit.

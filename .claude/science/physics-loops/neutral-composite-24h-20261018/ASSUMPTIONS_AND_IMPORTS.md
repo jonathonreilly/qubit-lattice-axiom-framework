@@ -59,3 +59,6 @@ Complete fixed-order block derives rather than selects higher-coefficient stabil
 
 
 Original readout block derives induced coupling from existing H and C, retiring a free source coefficient within fixed-order construction. C normalization, ordered reference and physical measurement identification remain premises. Complex continued residue is not a probability or pointwise real-axis line shape.
+
+
+Ground-window block retires arbitrary choice of polarized reference within the stated finite-box microscopic ground-state response problem. Supplied H, small lambda, growing even cubes, ground-state restriction, diagnostic and unit/empirical identification remain. All ground densities allowed; actual band splitting not assumed absent. Order40 error is asymptotic without numerical threshold.

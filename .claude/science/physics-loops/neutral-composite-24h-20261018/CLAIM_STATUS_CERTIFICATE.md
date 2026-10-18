@@ -95,3 +95,6 @@ Complete fixed-order pole actual_current_surface_status: bounded-support; propos
 
 
 Original readout actual_current_surface_status: bounded-support; proposal_allowed: false; bare_retained_allowed: false; review_loop_disposition: pass. Derived fixed-order original diagnostic coupling, no physical detector or microscopic pole identification.
+
+
+Microscopic ground-window actual_current_surface_status: bounded-support; proposal_allowed: false; bare_retained_allowed: false; review_loop_disposition: pass. Actual finite-time response comparison in joint weak-coupling/volume scaling, no cosmological preparation or empirical identification.

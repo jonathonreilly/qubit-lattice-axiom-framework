@@ -1,6 +1,6 @@
 {
- "edge_count": 16254,
- "node_count": 7248,
+ "edge_count": 16263,
+ "node_count": 7249,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -8929,6 +8929,10 @@
   "harmonic_repair_viable_cycle900_bounded_theorem_note_2026-07-28": {
    "deps_hash": "46318bf34c90",
    "out_degree": 2
+  },
+  "heat_kernel_saddle_versus_wilson_one_loop_lambda_ratio_and_the_two_dimensional_seven_quarters_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "e335524ec750",
+   "out_degree": 9
   },
   "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08": {
    "deps_hash": "7b79e2bc121e",

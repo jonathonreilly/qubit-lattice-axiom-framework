@@ -1,0 +1,10 @@
+PASS: SU(2) Lambda_MS/Lambda_W = 19.823 (textbook 19.82)
+      SU(2) Lambda_MS/Lambda_HK = 15.8400;  ln(Lambda_HK/Lambda_MS)*2b0/N = -0.12828932
+PASS: SU(3) Lambda_MS/Lambda_W = 28.809 (textbook 28.81)
+      SU(3) Lambda_MS/Lambda_HK = 15.8400;  ln(Lambda_HK/Lambda_MS)*2b0/N = -0.12828932
+PASS: 1/(8N) - c(4) = 1/(8N) - (3-N^2)/(24N) = N/24 for N=2..49 (non-planar Wilson term cancels); slope = -0.12828932
+      N=2: Lambda_MS/Lambda_HK = 15.8400 (N-independent)
+      N=3: Lambda_MS/Lambda_HK = 15.8400 (N-independent)
+      N=4: Lambda_MS/Lambda_HK = 15.8400 (N-independent)
+      N=10: Lambda_MS/Lambda_HK = 15.8400 (N-independent)
+SUMMARY: ALL PASS

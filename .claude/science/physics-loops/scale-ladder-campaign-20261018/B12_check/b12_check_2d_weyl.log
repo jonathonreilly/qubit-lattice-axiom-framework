@@ -1,0 +1,20 @@
+   SU(2) raw k(beta)=['0.50062', '0.50031', '0.50016', '0.50008']  M-stability=-
+PASS: SU(2) d=2 k -> (N^2-2)/4 = 0.5 Richardson 0.500000
+   SU(3) raw k(beta)=['1.76633', '1.75814', '1.75407', '1.75203']  M-stability=['3.42e-12', '1.79e-11', '4.82e-10', '6.98e-09']
+PASS: SU(3) d=2 k -> (N^2-2)/4 = 1.75 Richardson 1.750000
+   SU(4) raw k(beta)=['3.65163', '3.57447', '3.53690']  M-stability=['7.99e-13', '2.77e-11']
+PASS: SU(4) d=2 k -> (N^2-2)/4 = 3.5 Richardson 3.499999
+   rep 8: beta^3 r = ['11.763', '11.503', '11.376', '11.313'], Richardson 11.2500, pred (9/4)(C2^2-C2 CF)=11.250
+PASS: SU(3) 2D residue rep 8 -> 11.25 
+   rep 6: beta^3 r = ['15.684', '15.337', '15.168', '15.084'], Richardson 15.0001, pred (9/4)(C2^2-C2 CF)=15.000
+PASS: SU(3) 2D residue rep 6 -> 15.000000000000004 
+   rep 10: beta^3 r = ['65.862', '64.414', '63.703', '63.351'], Richardson 63.0001, pred (9/4)(C2^2-C2 CF)=63.000
+PASS: SU(3) 2D residue rep 10 -> 63.0 
+   rep 27: beta^3 r = ['125.431', '122.689', '121.338', '120.667'], Richardson 120.0001, pred (9/4)(C2^2-C2 CF)=120.000
+PASS: SU(3) 2D residue rep 27 -> 120.0 
+   beta=200: max_lam |beta(v-W)/W - W2/W| = 0.0477;  max beta^2|v-W-W2/beta|/W = 9.540
+   beta=400: max_lam |beta(v-W)/W - W2/W| = 0.0241;  max beta^2|v-W-W2/beta|/W = 9.645
+   beta=800: max_lam |beta(v-W)/W - W2/W| = 0.0121;  max beta^2|v-W-W2/beta|/W = 9.698
+   beta=1600: max_lam |beta(v-W)/W - W2/W| = 0.0061;  max beta^2|v-W-W2/beta|/W = 9.724
+PASS: repo W2 = (3-7Q/4+Q^2/4)W reproduced to O(1/beta) by Weyl integration 
+SUMMARY: ALL PASS

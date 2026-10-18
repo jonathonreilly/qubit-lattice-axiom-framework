@@ -32,3 +32,14 @@
 - **Coarse result.** 5,349 Weyl-at-k* steps have no cube-point doublers. The best far-grid distance on an 8³ grid is 0.08, for S·R_L·(P₀ + iP₁ − iP₂).
 - **Refined result.** Refined minimization (`refine_H39.py`) finds about 60 crossings at the node quasi-energy, so it is not clean. The coarse-grid rankings are not reliable for cleanliness.
 - **Conclusion.** No doubler-free clean Weyl step was found in the searched families. The only clean structure seen is the eight-node one.
+
+## Random word search (05:10Z)
+
+`word_search.py` tried 120,730 random words of length 2–4 in S, S⁻¹, R_L and Clifford-phase on-site factors. There were 158 hits passing the coarse filter: Weyl at k*, no level at the node quasi-energy at the other cube points, and an 8³-grid gap of at least 0.05. All 158 have the same coarse value, 0.0813. They are cyclic or conjugate forms of the S·R_L·(P₀ + iP₁ − iP₂) family, which the refined search (`refine_H39.py`) shows is not clean.
+
+## Non-Clifford canonical on-site steps (05:20Z)
+
+- **Search** (`expH_search.py`). On-site steps exp(±iπH_on/n), exp(±iπΛ/(n√2)) and exp(±iπ(H_on+Λ)/n) for n = 1…8, with S and S·R_L links, give 264 Weyl-at-k* steps.
+- **Best candidate.** S·R_L·exp(iπH_on/6), with node at π/3, no level at the other cube points (distance 0.23), and a refined distance of 0.009 after the first pass.
+- **Dense check** (`dense_check.py`, 32³ grid plus 80 refinements). It finds exact crossings elsewhere, so this candidate is not clean either.
+- **B1 conclusion.** No doubler-free clean parameter-free Weyl step exists in any searched family: Clifford phases, π/6 phases, random words, or exp(iπH/n) coins. The six cube-point doublers are the only clean structure found. Not a no-go.

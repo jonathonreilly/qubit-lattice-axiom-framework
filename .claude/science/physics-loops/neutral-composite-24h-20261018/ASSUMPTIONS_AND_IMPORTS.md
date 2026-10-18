@@ -121,3 +121,6 @@ Matched dressed injection/return is a protocol premise; bare pulse not derived. 
 
 
 Mixing block: local physical-plane anchor gauge and matched vacuum channels explicit. Pinned two-channel scattering is a separate coefficient diagnostic, not the complete native Hamiltonian. Threshold kernel reuses declared lattice Green mathematics. No independent coupling inserted; scales, slab and state/measurement map remain premises.
+
+
+Polynomial-grid block retires the logarithmic transverse-grid restriction by finite-order local normal forms, not an imported quasiparticle theorem. Fixed L10, weak anisotropy, selected plane fibre and operator/physical scale identification remain. Exact finite-pattern/relative bounds replace extensive operator estimates; no full-grid numerical simulation is claimed.

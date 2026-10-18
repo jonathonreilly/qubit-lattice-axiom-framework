@@ -180,3 +180,6 @@ Bound-mode environment block complete: matchedheavyreturn amplitude -(8sqrt2/3)g
 
 
 Native mixing vertex complete: local matched vacuum rotation gives J(gamma/Delta)lambda^(L-3)(Te-T0), earlier than complementaryhop. Exactfinite-time identity androtatedtwochannel controlsPASS; pinnedcoefficient energyconserving formfactor haslog(1/Ef)M/c→4pi. Nativefullrate/globalpolecharge unproved. IndependentfinalreviewPASS. Nextroot hardroute: secondlocalSW inbadplaquettecount to control actualpositivecurvature atpolynomialR, resolvingq<<lambda withoutglobalvolumenormloss.
+
+
+Polynomial-grid neutral pole derived: secondlocalbad-plaquette normalform givesuniformQ4 coefficientnorms andconnectedcancellation; weightedendpointreduction resolvesq<<lambda onR~lambda^-p,1<p<2. Actualselectedfibrepositive dispersion Jkappa/2 lambda12 q² andoriginalsourceatom~lambda20 transferwithM40tail. p3/2controlpowers15/16/37,source21.5; independentembedding/source/dispersionchecksPASS. No globalgroundselection,3Dgeometryorcosmologicalmapping. Nextroot challenges fixedslab/longitudinalpropagation premise.

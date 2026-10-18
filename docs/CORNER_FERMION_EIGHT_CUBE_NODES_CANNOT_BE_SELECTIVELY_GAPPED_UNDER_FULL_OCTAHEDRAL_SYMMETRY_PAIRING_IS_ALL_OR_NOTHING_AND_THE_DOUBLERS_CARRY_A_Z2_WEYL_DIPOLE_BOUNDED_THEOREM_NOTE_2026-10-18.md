@@ -1,7 +1,7 @@
 ---
 claim_id: corner_fermion_eight_cube_nodes_cannot_be_selectively_gapped_under_full_octahedral_symmetry_pairing_is_all_or_nothing_and_the_doublers_carry_a_z2_weyl_dipole_bounded_theorem_note_2026-10-18
 claim_type: bounded_theorem
-claim_scope: "Supplied model only: the corner fermion of the companion notes (12 corner modes per site of Z^3; flux square = plaquette = tube = pi, triangle = 0; translation-invariant gauge) with the gauge-dressed (PSG) lifts U_g of the 24 site rotations (real signed permutations, cocycle +-1) and the eight-node step W = S R_L U_H U_Lambda of the cross-rung note (item 6), whose node quasi-energy pi/2 carries 2-fold Weyl doublets at the eight cube points (pi/2)(+-1)^3: +-k* (little group O, isotropic) and the six doublers k* + pi e_i, -k* + pi e_i (little group D4, uniaxial). (T1, exact) For every PSG-symmetric translation-invariant Hamiltonian or step, det(U_g restricted to a 2-fold level) is a genuine 1-dim character, the same for every 2-fold level at +-k* and equal to its D4 restriction at every 2-fold level at a doubler; for the real signed-permutation lift it is A2 (B1 on D4), and rephasing the lifts by c(g) with c^2 = A2 relabels it A1 (lift label; the rule below is lift-independent). (T2, exact) A single pair condensate keeping all 24 rotations (U(1)-dressed allowed) has pair momentum Q in {0, R = pi(1,1,1)} and a character chi in {A1, A2}. (T3, exact) At Q = R every cube-point node pairs with itself, the singlet mass at K is allowed only if chi restricted to G_K equals det_K, and A1|D4 != A2|D4; hence chi = det allows it at all eight (generically nonzero) and chi != det forbids it at all eight: no full-O-symmetric pairing channel is selective; the O_h version (A2g, A2u allow all eight with |m_K| = |m_-K|; A1g, A1u forbid all eight) holds as well. (T4, exact enumeration plus numerical illustration) Breaking O, selective on-site Q = R channels exist only for subgroups of order <= 12 (25 subgroup-character pairs; for T exactly the two with chi(C3) = omega, omega-bar, which forbid the singlet at +-k* and allow it at all six doublers); numerically the T-omega channel shifts the +-k* BdG level off zero by delta ~ tau^2, so +-k* is not a protected point node. (T5, exact, using that E1/2 and E5/2 each occur once at k*) a chi = det pairing has zero matrix elements between the +-k* node doublet and every other level, and the particle-hole node 4-space is invariant under the full Floquet-BdG step: +-k* is gapless iff one complex number m_K vanishes, a tuning. (T6, exact given the integer chiralities) Q = 0 pairs K with -K of opposite chirality, so every BdG point carries charge +-2 and no small Q = 0 pairing gaps any node. (T7, exact bookkeeping given the numerically certified integer chiralities chi(k* + pi n) = (-1)^|n| chi(k*)) Weyl dipole b mod 2pi: six doublers pi(1,1,1), {+-k*} pi(1,1,1), all eight 0; only the empty set and all eight are anomaly-free among rotation-invariant subsets; the U(1)^2-Z2 counts equal b/pi mod 2. (T8, conditional on a Hamiltonian reading of the node sector, e.g. a C2-symmetric driving loop, and on Hall-vector quantisation of short-range-entangled states) O forces the total Hall vector to 0, {+-k*} contribute half a quantum per layer, so gapping the doublers alone into a symmetric short-range-entangled state with +-k* gapless is excluded and a compensating sector with b = R (mod 2pi) is required (gapless, topologically ordered or symmetry breaking); the obstruction is Z2-valued since O-invariant b mod 2pi lies in {0, R}. (T9, exact for number-conserving band Hamiltonians with linear 2-fold Weyl doublets; for steps conditional on a C2x-symmetric slice invariant) given translations and the dressed C2x lift (and the O-orbits for the doubler case), an integer slice invariant is incompatible with the level being crossed only at {+-k*} or only at the six doublers. (T10, numerical, uncertified) Floquet-BdG spectra illustrate T3-T6. Not covered: multi-condensate or translation-breaking pairings beyond the stated aside, antiunitary symmetries, a construction of the topologically ordered route, a local Floquet Hamiltonian for the step, other flux patterns or steps, the qubit-code realisation, any physical identification."
+claim_scope: "Supplied model only: the corner fermion of the companion notes (12 corner modes per site of Z^3; flux square = plaquette = tube = pi, triangle = 0; translation-invariant gauge) with the gauge-dressed (PSG) lifts U_g of the 24 site rotations (real signed permutations, cocycle +-1) and the eight-node step W = S R_L U_H U_Lambda (defined in this note; first defined in the cross-rung note, item 6), whose node quasi-energy pi/2 carries 2-fold Weyl doublets at the eight cube points (pi/2)(+-1)^3: +-k* (little group O, isotropic) and the six doublers k* + pi e_i, -k* + pi e_i (little group D4, uniaxial). (T1, exact) For every PSG-symmetric translation-invariant Hamiltonian or step, det(U_g restricted to a 2-fold level) is a genuine 1-dim character, the same for every 2-fold level at +-k* and equal to its D4 restriction at every 2-fold level at a doubler; for the real signed-permutation lift it is A2 (B1 on D4), and rephasing the lifts by c(g) with c^2 = A2 relabels it A1 (lift label; the rule below is lift-independent). (T2, exact) A single pair condensate keeping all 24 rotations (U(1)-dressed allowed) has pair momentum Q in {0, R = pi(1,1,1)} and a character chi in {A1, A2}. (T3, exact) At Q = R every cube-point node pairs with itself, the singlet mass at K is allowed only if chi restricted to G_K equals det_K, and A1|D4 != A2|D4; hence chi = det allows it at all eight (generically nonzero) and chi != det forbids it at all eight: no full-O-symmetric pairing channel is selective; the O_h version (A2g, A2u allow all eight with |m_K| = |m_-K|; A1g, A1u forbid all eight) holds as well. (T4, exact enumeration plus numerical illustration) Breaking O, selective on-site Q = R channels exist for 25 subgroup-character pairs, 6 up to conjugacy, with |H| in {2, 3, 4, 8, 12} and none for H = O; each restricts from a T-omega/omega-bar channel (chi(C3) = omega or omega-bar: singlet forbidden at +-k*, allowed at all six doublers) or a D4-A1 channel, and numerically both shift the +-k* BdG level off zero by delta ~ tau^2, so no selective channel protects +-k* as a point node. (T5, exact, using that E1/2 and E5/2 each occur once at k*) a chi = det pairing has zero matrix elements between the +-k* node doublet and every other level, and the particle-hole node 4-space is invariant under the full Floquet-BdG step: +-k* is gapless iff one complex number m_K vanishes, a tuning. (T6, exact given the integer chiralities) Q = 0 pairs K with -K of opposite chirality, so every BdG point carries charge +-2 and no small Q = 0 pairing gaps any node. (T7, exact bookkeeping given the integer chiralities chi(k* + pi n) = (-1)^|n| chi(k*), numerical, two methods, rounded) Weyl dipole b mod 2pi: six doublers pi(1,1,1), {+-k*} pi(1,1,1), all eight 0; only the empty set and all eight are anomaly-free among rotation-invariant subsets; the U(1)^2-Z2 counts equal b/pi mod 2. (T8, conditional on a Hamiltonian reading of the node sector, e.g. a C2-symmetric driving loop, and on Hall-vector quantisation of short-range-entangled states) O forces the total Hall vector to 0, {+-k*} contribute half a quantum per layer, so gapping the doublers alone into a symmetric short-range-entangled state with +-k* gapless is excluded and a compensating sector with b = R (mod 2pi) is required (gapless, topologically ordered or symmetry breaking); the obstruction is Z2-valued since O-invariant b mod 2pi lies in {0, R}. (T9, exact for number-conserving band Hamiltonians with linear 2-fold Weyl doublets; for steps conditional on a C2x-symmetric slice invariant) given translations and the dressed C2x lift (and the O-orbits for the doubler case), an integer slice invariant is incompatible with the level being crossed only at {+-k*} or only at the six doublers. (T10, numerical, uncertified) Floquet-BdG spectra illustrate T3-T6. Not covered: multi-condensate pairings, translation-breaking masses beyond the CDW aside, antiunitary symmetries, a construction of the topologically ordered route, a local Floquet Hamiltonian for the step, other flux patterns or steps, the qubit-code realisation, any physical identification."
 upstream_dependencies:
   - corner_fermion_odd_filling_is_forced_gapless_by_anticommuting_gauge_dressed_c2_lifts_bounded_theorem_note_2026-10-18
   - corner_fermion_long_wavelength_theory_is_one_isotropic_spin_half_doublet_and_one_qubit_block_embedding_bounded_theorem_note_2026-10-17
@@ -13,9 +13,9 @@ runner: scripts/corner_fermion_doubler_gapping_selection_rule_and_weyl_dipole_20
 **Date:** 2026-10-18
 **Type:** bounded_theorem
 **Status:** bounded support, unaudited.
-- **Exact:** T1–T3, T5, T6 and the bookkeeping of T7, with proofs and finite certificates. The subgroup enumeration in T4 is exact. T9 is exact for band Hamiltonians.
+- **Exact:** T1–T3 and T5, with proofs and finite certificates; T6 and the bookkeeping of T7, given the integer chiralities. The subgroup enumeration in T4 is exact. T9 is exact for number-conserving band Hamiltonians with linear 2-fold Weyl doublets.
 - **Conditional:** T8 on two named premises; T9 for steps.
-- **Numerical:** the chiralities (two methods, rounded to integers), the T-ω level shift in T4, and the BdG spectra of T10.
+- **Numerical:** the chiralities (two methods, rounded to integers), the T-ω and D4–A1 level shifts in T4, and the BdG spectra of T10.
 
 Nothing is adopted.
 
@@ -28,7 +28,7 @@ None of these is an independent human reviewer.
 
 ## Question
 
-The eight-node step has isotropic spin-½ Weyl doublets at ±k* and six uniaxial doublers. Constraint closure rejects the doublers (cross-rung note, item 5). Can they be removed by a gap while ±k* stay gapless, with every dressed rotation kept?
+The eight-node step has isotropic spin-½ Weyl doublets at ±k* and six uniaxial doublers. Constraint closure rejects the doublers (campaign blocks B17, B18; cross-rung note, 'What the campaign established', item 5). Can they be removed by a gap while ±k* stay gapless, with every dressed rotation kept?
 
 Two routes are examined:
 - a superconducting (pairing) mass;
@@ -37,7 +37,13 @@ Two routes are examined:
 ## Setting
 
 - **Model.** The corner fermion with the PSG lifts U_g of the 24 site rotations. These are real 12 × 12 signed permutations with U_g U_h = ±U_gh. They act on Bloch fibres by k ↦ M_g k + π s_g, and 21 of the 24 rotations have s_g ≠ 0.
-- **Step.** W = S · R_L · U_H · U_Λ, as in the cross-rung note, item 6. At quasi-energy π/2 (the runner's convention) it has 2-fold Weyl doublets at the eight cube points K = (π/2)(±1)³:
+- **Step.** W = S · R_L · U_H · U_Λ, a product of four exactly unitary, translation-invariant layers, each commuting with the dressed rotations:
+  - **S, the diagonal shift:** {d,e} at v → {d,e} at v + d + e, a signed permutation whose gauge signs are fixed by symmetrising one hop over the dressed lifts (and translations), normalised to ±1.
+  - **R_L = H_link/√2, the link reflection:** H_link is the link hopping (v,{a,b}) ↔ (v + a,{−a,b}) with amplitude −(−1)^u, and H_link(k)² = 2 for all k.
+  - **U_H = P₀ − P₁ − iP₂:** P_i are the spectral projectors of the on-site corner hopping H_on (amplitude −(−1)^u), in ascending order of its eigenvalues −1 − √3, √3 − 1, 2.
+  - **U_Λ = P₀ + iP₁ + iP₂ + P₃:** P_i are the spectral projectors of the chiral triangle operator Λ, in ascending order of its eigenvalues −2√2, −√2, √2, 2√2. Λ = Σ over the eight octant triangles of hops i(−1)^u, oriented by the sign of the octant's determinant.
+
+  The step was first defined in the cross-rung note (item 6; scan labels H23, L110). Both runner paths rebuild it from scratch: section A from the repo model, section B from an independent gauge and PSG. At quasi-energy π/2 (the runner's convention) it has 2-fold Weyl doublets at the eight cube points K = (π/2)(±1)³:
 
   | Orbit | Points | Little group | Cone | Chirality |
   |---|---|---|---|---|
@@ -57,6 +63,8 @@ Two routes are examined:
 
 ## Result
 
+**Labels.** A1–A20, B0–B19, C1–C2, D1–D8 and E1–E5 are checks of this note's runner (sections A–E). B1–B5c in T10 are the C1 worker's BdG case labels, written "case B1" and so on; runner check B1 and case B1 are different things. Campaign blocks are written "campaign block B7" and so on.
+
 1. **T1: determinant lemma (exact; certified on 4 + 36 doublets in two implementations).** Let V be any 2-fold level of a PSG-symmetric Hamiltonian or step at a cube point K, with little group G_K.
    - **Character.** det(U_g|_V) is a genuine 1-dim character of G_K.
      *Proof.* U_g commutes with the Bloch operator at K and preserves V. With U_gU_h = ω U_gh and ω = ±1, det(U_g|_V)det(U_h|_V) = ω² det(U_gh|_V) = det(U_gh|_V). ∎
@@ -67,7 +75,7 @@ Two routes are examined:
      - The projective irreps of D4 in this class are two 2-dimensional ones, related by a real linear character, so they have equal det.
      - E1/2 restricted to D4 is one of them, so det_K = det_{k*}|_{G_K}. The cocycle is k-independent, so the same one acts at every K.
    - **Which character.** For the real signed-permutation lift it is A2 (B1 on D4).
-   - **Lift-label caveat.** "A2" labels this lift. Rephasing U′_g = c(g)U_g with c(g)² = A2(g) gives equally valid symmetries, and for them det = A1 everywhere. The rule in T3 is lift-independent (runner B16). It follows that "only Q = 0, A1 under strictly undressed PSG" is a lift convention, not a physical restriction.
+   - **Lift-label caveat.** "A2" labels this lift. Rephasing U′_g = c(g)U_g with c(g)² = A2(g) gives equally valid symmetries, and for them det = A1 everywhere. The rule in T3 is lift-independent (runner B16 checks the algebra). It follows that "only Q = 0, A1 under strictly undressed PSG" is a lift convention, not a physical restriction.
    - **Data.** The runner finds det = A2 at all 4 doublets at ±k* and det = A2|D4 at all 36 doubler doublets, for the eight-node step and four other PSG-symmetric steps and Hamiltonians, three of them random (B2).
 
 2. **T2: pair channels (exact).**
@@ -94,6 +102,7 @@ Two routes are examined:
    - **O_h.** Including the 24 improper lifts (inversion maps K → −K and fixes no node), the channel dimensions are A1g 0, A1u 2, A2g 3, A2u 2.
      - A2g and A2u allow the singlet at all eight, with |m_K| = |m_−K|.
      - A1g and A1u forbid it at all eight (A12, B17).
+   - **CDW aside (translation-breaking; C1 worker, `c1_reps.log` R8; not re-checked).** A staggered on-site CDW mass e^{iR·x} c†Mc, which breaks odd translations, is also all-or-nothing. With M in the A2 channel the node-to-(K + R) couplings are ≥ 0.47 at all eight nodes; with M in A1 they are ≤ 3e−15 at all eight, so it gaps none.
 
 4. **T4: scope, subgroup channels (exact enumeration; numerical consequence).** Once O is broken, selective channels exist. The runner enumerates all 30 subgroups H of O and all 1-dim characters of each (B18).
    - **Where they occur.** Selective on-site Q = R channels, with the singlet forbidden at ±k* and allowed at some doubler, occur for 25 (H, χ) pairs. All have |H| ≤ 12 (orders 2, 3, 4, 8, 12). None has H = O.
@@ -101,8 +110,11 @@ Two routes are examined:
    - **±k* is still not protected (numerical).**
      - In the T-ω channel the node doublet couples to the G3/2 levels: E1/2 ⊗ G3/2 contains E, which contains ω under T.
      - At second order the 4-fold BdG level at ±k* is shifted off zero by δ ∝ τ² (log-log slopes 1.99 and 2.00) and stays 4-fold.
-     - The point node therefore becomes a small near-zero region. The check reads it as a Bogoliubov shell. Its probe found exact zeros along only a fraction of directions, so whether it is a closed Bogoliubov Fermi surface or a tiny gap is not resolved.
-   - **Hence.** "No selective symmetric channel" needs the scope "full O". The conclusion that ±k* masslessness is a tuning survives.
+     - The point node therefore becomes a small near-zero region. The check reads it as a Bogoliubov shell. Its probe found exact zeros along only a fraction of directions, so whether it is a closed Bogoliubov Fermi surface, a shell with isolated BdG point nodes, or a tiny gap is not resolved.
+   - **Coverage (exact enumeration, B19).** Every selective (H, χ) is the restriction of a selective T-ω, T-ω̄ or D4–A1 channel; the three D4s are conjugate under O. So every selective channel space contains one of those channels.
+     - In the D4–A1 channel the singlet is zero at ±k* and nonzero at the four doublers off the D4 axis. The ±k* level is again shifted off zero by δ ∝ τ² (slopes 2.00 and 1.98; D8, numerical).
+     - Up to conjugacy, the 25 pairs fall into 6 classes, with H = C2′, C3, C4, a non-normal D2, D4 and T.
+   - **Hence.** "No selective symmetric channel" needs the scope "full O". No selective channel protects ±k*, since each contains a channel in which the ±k* level moves off zero (numerical). So the conclusion that ±k* masslessness is a tuning survives.
 
 5. **T5: exact decoupling at ±k*.**
    - **Representation input (runner E5, exact character arithmetic in 2O):**
@@ -111,7 +123,7 @@ Two routes are examined:
      - E1/2 ⊗ G3/2 = E + T1 + T2.
      So a 1-dim pair channel couples a 2-dim node irrep to exactly one 2-dim irrep type, itself or the other, and never to G3/2.
    - **Multiplicity caveat.** E1/2 and E5/2 each occur once at ±k*. So a χ = det pairing couples the node doublet only to itself. A χ ≠ det pairing couples it only to the other 2-dim level (B9).
-   - **All orders.** The particle–hole node 4-space is invariant under the full Floquet-BdG step. This holds for range-1 A2 pairing at τ = 1.3 (B10), and the cross blocks are ≤ 1e−14 (A13, B9).
+   - **All orders.** The particle–hole node 4-space is invariant under the full Floquet-BdG step. This holds for range-1 A2 pairing at τ = 1.3 (B10), and the cross blocks are ≤ 2e−14 (A13, B9).
    - **Hence.** ±k* is gapless iff the single complex number m_K vanishes. This is exact for every pairing strength, but it is a tuning.
 
 6. **T6: Q = 0 (exact given the chiralities).**
@@ -120,7 +132,7 @@ Two routes are examined:
    - So no small Q = 0 pairing gaps any node, doubler or not.
    - Of the eight Q = πp, partner chiralities are equal (gappable) iff |p| is odd. Only Q = 0 and Q = R are rotation invariant (A19).
 
-7. **T7: anomaly table (exact bookkeeping; chiralities numerically certified).**
+7. **T7: anomaly table (exact bookkeeping; chiralities numerical, two methods, rounded).**
    - **Chiralities.** These are integers obtained two ways:
      - degenerate perturbation theory, sign det B (path A);
      - Berry flux of the upper band, rounded with residual ≤ 3e−8 (path B).
@@ -138,7 +150,7 @@ Two routes are examined:
    - **Not independent.** For net-zero sets the U(1)²–Z2 counts equal b/π mod 2 (B13, E3); they are one invariant, not two.
 
 8. **T8: the Z2 Hall form (conditional).**
-   - **Premise P1, Hamiltonian reading.** The node sector of the step has a local Hamiltonian description, or a C2-symmetric driving loop, in which a Hall-conductivity vector σ is defined and transforms as a vector under the dressed rotations. The B17 check found no local Floquet Hamiltonian for this step, which is gapless away from ±π/2. So P1 is a genuine premise.
+   - **Premise P1, Hamiltonian reading.** The node sector of the step has a local Hamiltonian description, or a C2-symmetric driving loop, in which a Hall-conductivity vector σ is defined and transforms as a vector under the dressed rotations. The check of campaign block B17 notes that no local Floquet Hamiltonian is available: the step is gapless away from ±π/2, so every branch cut crosses the other node set. So P1 is a genuine premise.
    - **Premise P2, quantisation.** A symmetric short-range-entangled (SRE) gapped state has σ in the reciprocal lattice: an integer number of Hall quanta per layer.
    - **(a) Exact.** O has no invariant vector, so the total Hall vector of an O-symmetric state is 0.
    - **(b) Standard.** A gapless Weyl sector with dipole b contributes σ = b/2π modulo the reciprocal lattice. For {±k*} that is (½, ½, ½) mod Z³: half a quantum per layer along each axis.
@@ -154,7 +166,7 @@ Two routes are examined:
    - **Jumps.** Across the plane k_z = π/2, ν jumps by the net chirality J on that plane. The interval (−π/2, π/2) maps to (π/2, 3π/2), so J = 2ν(0) must be even.
    - **Parities (E4).** For a level crossed only at {±k*}, J = ±1. For one crossed only at the six doublers, J = ±1. Both are odd and so impossible. For all eight, J = 0.
      - For general Hamiltonians with linear 2-fold Weyl doublets (|χ| = 1), the chirality pattern follows from net-zero chirality (Nielsen–Ninomiya) and, for the doublers, constancy on O-orbits. Only the parity step uses C2x alone.
-   - **Exact for band Hamiltonians.** There ν is the slice Chern number of the bands below the level. A number-conserving, translation- and C2x-symmetric band structure cannot have its Fermi level crossed only at ±k* or only at the six doublers. This is consistent with, and overlaps, the campaign's pointwise result that a pocket-free odd-filling state touches μ at all eight cube points (cross-rung note, items 7–8).
+   - **Exact for band Hamiltonians.** There ν is the slice Chern number of the bands below the level. A number-conserving, translation- and C2x-symmetric band structure cannot have its Fermi level crossed only at ±k* or only at the six doublers. This is consistent with, and overlaps, the campaign's pointwise result that a pocket-free odd-filling state touches μ at all eight cube points (campaign block C20; summarised in the cross-rung note's 'What the campaign established', item 2).
    - **For steps it is conditional.** A single-gap invariant needs a driving loop (a Rudner-type winding number), and the sign relation needs that loop to be C2x-symmetric. A non-symmetric loop shifts ν by a uniform integer and removes the constraint.
 
 10. **T10: BdG illustrations (numerical, uncertified).** Gaps are min |ε| at quasi-energy 0, searched on a grid plus Nelder–Mead refinement.
@@ -164,30 +176,29 @@ Two routes are examined:
     | B1 | Q = R, A2, on-site, τ = 0.5 | all eight gapped, gap 0.098 | 0.055 | 0.0073, 0.045, 0.159 (three draws) |
     | B2 | Q = R, A1, on-site | nothing gapped; ±k* exact 4-fold zero | ±k* exact zero (τ = 0.3, 1.1) | same |
     | B3 | Q = 0, A1, on-site | zeros persist within 0.3 of every node | same at τ = 0.1 | same |
-    | B4 | Δ(k) = w(k)·A, w O-invariant, w(±k*) = 0, w = 4 at doublers | ±k* gapless, isotropic BdG cones at √2/3; doublers gapped; outside min 0.11 | doubler gap ≥ 0.366 | doubler gap ≥ 0.109 |
+    | B4 | Δ(k) = w(k)·A, w O-invariant, w(±k*) = 0, w = 4 at doublers | ±k* gapless, isotropic BdG cones at √2/3; doublers gapped; outside min 0.11 | doubler gap ≥ 0.366 | doubler gap ≥ 0.109; outside 0.35-balls min 0.073 |
     | B5b | on-site A2 with m_{±k*} tuned to 0 | ±k* gapless for all τ; doublers gapped 0.039 | 0.109 | 0.127 |
     | B5c | B5b + η × generic A2 | k* gap ∝ η (slope 0.99) | slope 1.007 | slope 1.011 |
     | T-ω | T, χ(C3) = ω, on-site | — | doublers gapped 0.061; ±k* shifted δ ∝ τ² | slopes 1.99, 2.00 |
+    | D4–A1 | D4, χ = A1, on-site | — | — (review probe) | singlet zero at ±k*, nonzero at four doublers; ±k* shifted δ ∝ τ², slopes 2.00, 1.98 |
 
     - Gap sizes depend on the random channel vector. The runner's B1 draw with gap 0.0073 is still clearly gapped, since numerical zeros here are about 1e−12.
-    - B4's Δ(k) has strictly finite range; only the exponentiated pairing layer is quasi-local.
+    - Case B4's Δ(k) has strictly finite range; only the exponentiated pairing layer is quasi-local.
     - "No other zero" means none was found on the grid outside 0.35-balls around ±k*.
 
 ## What is not excluded
 
 - A topologically ordered gapped doubler sector with half-quantised Hall response per layer. No construction is given. Fractional quantum Hall states in Weyl semimetals (Wang–Gioia–Burkov 2020) make this route plausible in principle.
-- Gapping all eight nodes, b = 0. Pairing does it (B1). B7's twisted-torus LSM obstructs only a symmetric SRE state at odd ν, and it is conditional.
+- Gapping all eight nodes, b = 0. Pairing does it (case B1). Campaign block B7's twisted-torus LSM obstructs only a symmetric SRE state at odd ν, and it is conditional.
 - Breaking translations or U(1) beyond the pairing considered here, or breaking O to a subgroup (T4).
-- Tuned or form-factor pairings, as in B4 and B5b: ±k* gapless and doublers gapped, at the price of a tuning.
+- Tuned or form-factor pairings, as in cases B4 and B5b: ±k* gapless and doublers gapped, at the price of a tuning.
 
 ## How this bears on the lane (interpretation, not a claim)
 
-- **Pairing route.** A symmetric pairing mass treats all eight cube points alike. Keeping ±k* massless while the doublers are gapped is a tuning, the Majorana analogue of the Wilson-fermion additive-mass problem. It also costs:
-  - U(1): the species become Majorana;
-  - undressed translations.
-  The cones that survive in B4 and B5b are isotropic at √2/3, so they would pass the cone test numerically. The lapse-coupling premise of the closure route (B22) is still unmet.
+- **Pairing route.** A symmetric pairing mass treats all eight cube points alike. Keeping ±k* massless while the doublers are gapped is a tuning, the Majorana analogue of the Wilson-fermion additive-mass problem. It also costs U(1): the species become Majorana. The residual translations and rotations are U(1)-combined. Relative to the plain lifts this is a change of residual PSG class, like the A2 label in T1, not a lost translation.
+  The cones that survive in cases B4 and B5b are isotropic at √2/3, so they would pass the cone test numerically. The lapse-coupling premise of the closure route (campaign block B22) is still unmet.
 - **Number-conserving route.** Under P1 and P2, the six doublers are one realisation of a b ≡ R compensating sector that ±k* require. A symmetric SRE gap for the doublers alone is excluded. A topologically ordered doubler sector is the remaining symmetric gapped option.
-- **B7.** The odd-filling note's twisted odd tori (θ = ±k*, L = 1–11) see only ±k* and never the doublers (A20). So B7 forbids a symmetric SRE gapped state of all eight at odd ν (conditionally). It does not forbid "doublers gapped, ±k* gapless", which is gapless.
+- **Campaign block B7.** The odd-filling note's twisted odd tori (θ = ±k*, L = 1–11) see only ±k* and never the doublers (A20). So campaign block B7 forbids a symmetric SRE gapped state of all eight at odd ν (conditionally). It does not forbid "doublers gapped, ±k* gapless", which is gapless.
 
 ## Premises
 
@@ -233,7 +244,7 @@ Bibliographic details are recalled from memory unless stated; only the two Burko
   - exact decoupling at ±k*;
   - the eight-node dipole table, giving a Z2 obstruction;
   - the C2x-only slice parity;
-  - the observation that B7's twisted tori see only ±k*.
+  - the observation that campaign block B7's twisted tori see only ±k*.
   The anomaly argument itself is the known one.
 
 ## No-Go Discipline Gate
@@ -241,7 +252,7 @@ Bibliographic details are recalled from memory unless stated; only the two Burko
 - **N1 — routes not covered.**
   - Multi-condensate pairings with O restored on average.
   - Pair-density waves at Q ∉ {0, R}, which break O.
-  - Translation-breaking masses beyond the printed CDW aside.
+  - Translation-breaking masses beyond the CDW aside (T3).
   - Antiunitary symmetries.
   - Explicit construction or exclusion of a topologically ordered doubler sector.
   - Non-free number-conserving deformations other than symmetric SRE gapping.
@@ -252,7 +263,7 @@ Bibliographic details are recalled from memory unless stated; only the two Burko
   - **T8** is conditional on P1 and P2.
   - **T9** is exact for band Hamiltonians and conditional for steps.
 - **N4 — inputs.**
-  - The character and null-space statements are floating-point linear algebra whose outputs are constrained to ±1 or to exact zeros (≤ 1e−14), plus integer arithmetic (E1–E4).
+  - The character and null-space statements are floating-point linear algebra whose outputs are constrained to ±1 or to exact zeros (≤ 2e−14), plus integer and exact character arithmetic (E1–E5).
   - The chiralities are rounded integers from two methods.
   - The BdG gaps are uncertified grid searches.
 - **N5 — wording.**
@@ -284,7 +295,7 @@ Two of its first-run failures were its own wrong expectations, and it fixed a co
   - The determinant lemma for five PSG-symmetric models.
   - The selection rule for full O and O_h.
   - The completeness of Q ∈ {0, R} for one condensate.
-  - Decoupling (≤ 1e−14; node 4-space BdG-invariant).
+  - Decoupling (≤ 2e−14; node 4-space BdG-invariant).
   - The numbers in the anomaly table.
   - BdG cases B1, B2, B4, B5b and B5c, qualitatively.
 - **Corrections applied here.**
@@ -302,6 +313,7 @@ Two of its first-run failures were its own wrong expectations, and it fixed a co
   - The runner's section A follows the C1 worker's code path: the repo model, as in the cross-rung runner, with degenerate perturbation theory.
   - Section B follows the checker's code path: own gauge and PSG, Berry flux.
   - Agreement between A and B (section C) is implementation-level independence of the load-bearing linear algebra. It is not independence of reasoning: all three agents are of one model family.
+  - B19 (default) and D8 (`--bdg`) were added after a fresh-context same-family review of this note (scratch in `.claude/science/physics-loops/scale-ladder-campaign-20261018/NOTE_C1_review/`). The reviewer's tested patch of the runner was adopted unchanged apart from comment labels and the docstring. The review found no mathematical errors.
   - Under `--bdg`, the first runner version required node gaps > 1e−2 in case B1 and failed on its random draw (0.0073). The criterion was changed to 1e−3 with three draws, and all values are reported (T10).
 - **Not re-checked in the runner.**
   - C1's N = 32 BdG grids.
@@ -315,8 +327,8 @@ python3 scripts/corner_fermion_doubler_gapping_selection_rule_and_weyl_dipole_20
 python3 scripts/corner_fermion_doubler_gapping_selection_rule_and_weyl_dipole_2026_10_18.py --bdg
 ```
 
-- Default: `TOTAL: PASS=46 FAIL=0`, about 30 s on 4 cores. It covers sections A, B, E and C.
-- With `--bdg`: `TOTAL: PASS=53 FAIL=0`, about 1 min. It adds the seven numerical BdG spot checks of section D.
+- Default: `TOTAL: PASS=47 FAIL=0`, about 1–2 min. It covers sections A, B, E and C.
+- With `--bdg`: `TOTAL: PASS=55 FAIL=0`, about 2–3 min. It adds the eight numerical BdG spot checks of section D.
 
 Campaign scripts, all ending with FAIL = 0:
 - `.claude/science/physics-loops/scale-ladder-campaign-20261018/C1_gap_the_doublers/` (PASS = 29);
@@ -326,5 +338,5 @@ Campaign scripts, all ending with FAIL = 0:
 
 - [Odd-filling note (anticommuting C2 lifts, twisted tori)](CORNER_FERMION_ODD_FILLING_IS_FORCED_GAPLESS_BY_ANTICOMMUTING_GAUGE_DRESSED_C2_LIFTS_BOUNDED_THEOREM_NOTE_2026-10-18.md)
 - [Long-wavelength note (affine action, k*)](CORNER_FERMION_LONG_WAVELENGTH_THEORY_IS_ONE_ISOTROPIC_SPIN_HALF_DOUBLET_AND_ONE_QUBIT_BLOCK_EMBEDDING_BOUNDED_THEOREM_NOTE_2026-10-17.md)
-- Context, not a dependency: the scale-ladder cross-rung note (companion PR #9702; `SCALE_LADDER_CROSS_RUNG_INVARIANTS_CORNER_FERMION_BOUNDED_THEOREM_NOTE_2026-10-18.md`) defines the eight-node step and the k* decomposition used for illustration.
+- Context, not a dependency: the scale-ladder cross-rung note (companion PR #9702; `SCALE_LADDER_CROSS_RUNG_INVARIANTS_CORNER_FERMION_BOUNDED_THEOREM_NOTE_2026-10-18.md`) first defined the eight-node step and the k* decomposition; both are reproduced in this note's runner (Sections A, B and B4).
 - [Axioms](MINIMAL_AXIOMS_2026-06-29.md)

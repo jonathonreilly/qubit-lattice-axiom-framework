@@ -21,10 +21,11 @@ Checks (exact unless marked numerical):
     signed-permutation lift) and its D4 restriction (B1) at every doubler level; rephasing the lifts relabels it A1;
   selection rule: on-site and range-1 pairing channels at Q = R: chi = det gives the singlet at all eight nodes,
     chi != det at none (null-space certificates; exact zeros to ~1e-14); Q in {0, R}; O_h version;
-  subgroup scope: selective channels exist only for |H| <= 12 (T with chi(C3) = omega), none for H = O;
+  subgroup scope: selective channels exist only for |H| <= 12 (T with chi(C3) = omega), none for H = O; every selective channel
+    restricts from a T-omega/omega-bar or D4-A1 channel (B19, added after review); with --bdg both shift the +-k* level (D7, D8);
   decoupling at +-k*: an A2-channel pairing has zero blocks between the node doublet and every other level;
   anomaly: chiralities (two methods), Weyl-dipole table, Q = 0 BdG charge +-2, slice obstruction with C2x only.
-Usage:  python3 <this file> [--bdg]     default ~2-3 min; --bdg adds ~3-5 min.
+Usage:  python3 <this file> [--bdg]     default ~1-2 min (PASS=47); --bdg adds ~1-2 min (PASS=55).
 Companion: docs/CORNER_FERMION_EIGHT_CUBE_NODES_CANNOT_BE_SELECTIVELY_GAPPED_UNDER_FULL_OCTAHEDRAL_SYMMETRY_PAIRING_IS_ALL_OR_NOTHING_AND_THE_DOUBLERS_CARRY_A_Z2_WEYL_DIPOLE_BOUNDED_THEOREM_NOTE_2026-10-18.md
 """
 import os
@@ -658,7 +659,7 @@ def section_B():
     rng = np.random.default_rng(20261018)
     out = {}
 
-    # ---- D1-D3 lifts and det characters ----
+    # ---- B1-B4 lifts and det characters ----
     ax = [find_el(np.diag(d)) for d in ([1, -1, -1], [-1, 1, -1], [-1, -1, 1])]
     ords = {}
     for g in PROPER:
@@ -702,7 +703,7 @@ def section_B():
           "have equal det (A2^2 = 1)", len(tr) == 2 and all(abs(tr[1][1][g] - A2[g] * tr[0][1][g]) < 1e-7 for g in PROPER)
           and any(abs(tr[1][1][g] - tr[0][1][g]) > 1e-3 for g in PROPER))
 
-    # ---- S1-S3 selection rule and decoupling ----
+    # ---- B5-B10 selection rule and decoupling ----
     DQ = {n: node_doublet(n) for n in NODES}
     VA2, VA1 = onsite_channel(A2), onsite_channel(A1)
     out['dims'] = (len(VA2), len(VA1))
@@ -759,7 +760,7 @@ def section_B():
     check("B10 the particle+hole node 4-space at +-k* is invariant under the full Floquet-BdG step (tau = 1.3, range-1 A2 pairing): exact "
           "decoupling at all orders, so +-k* is gapless iff its single complex singlet m_K vanishes", inv_ok)
 
-    # ---- Berry-flux chiralities, dipole, BdG charges ----
+    # ---- B11-B14 Berry-flux chiralities, dipole, BdG charges ----
     def upper_vec(Uk, E0):
         e, V = np.linalg.eig(Uk); d = wrap(np.angle(e) - E0); cnd = np.where(np.abs(d) < 0.3)[0]; j = cnd[np.argmax(d[cnd])]
         return V[:, j] / np.linalg.norm(V[:, j])
@@ -804,7 +805,7 @@ def section_B():
     check("B14 BdG charges by Berry flux (particle + hole sector at each node): Q = R gives 0 (intra-node, gappable); Q = 0 gives +-2 (not "
           "gappable by small pairing)", all(sum(chg[('R', n)]) == 0 for n in NODES) and all(abs(sum(chg[('0', n)])) == 2 for n in NODES))
 
-    # ---- L1 slice obstruction, L2 lift independence, I1 O_h ----
+    # ---- B15-B17 slice obstruction, lift independence, O_h ----
     c2x = find_el(np.diag([1, -1, -1]))
     th_z = round(float(wrap(gk(c2x, np.zeros(3))[2])) / np.pi) % 2
     def slice_ok(S):
@@ -847,7 +848,7 @@ def section_B():
           str(dims_oh))
     out['dims_oh'] = dims_oh
 
-    # ---- X1 subgroup channels ----
+    # ---- B18-B19 subgroup channels and coverage ----
     MUL = {(a, b): find_el(OH[a] @ OH[b]) for a in PROPER for b in PROPER}; E0 = find_el(np.eye(3, dtype=int))
     def closure(gens):
         S = {E0} | set(gens); ch = True
@@ -891,6 +892,13 @@ def section_B():
           "forbidden at +-k*, allowed at some doubler) exist only for |H| <= 12; none for H = O; T with chi(C3) = omega or omega-bar forbids it at "
           "+-k* and allows it at all six doublers", len(subs) == 30 and all(s[0] <= 12 for s in selective) and len(fullT) == 2,
           f"{len(selective)} selective (H, chi); orders {sorted(set(s[0] for s in selective))}")
+
+    sel8 = [s for s in selective if s[0] == 8]
+    def restricts_from(s_):
+        return any(set(s_[2]) <= set(b[2]) and all(abs(b[3][g] - s_[3][g]) < 1e-9 for g in s_[2]) for b in fullT + sel8)
+    check("B19 subgroup coverage (exact enumeration): every selective (H, chi) is the restriction of a selective T-omega/omega-bar or "
+          "D4 channel (three D4s, each chi = A1, conjugate under O), so its channel space contains one of those",
+          len(sel8) == 3 and all(all(abs(v - 1) < 1e-9 for v in s[3].values()) for s in sel8) and all(restricts_from(s_) for s_ in selective))
 
     # ---- Section D: BdG spot checks (optional) ----
     if BDG:
@@ -964,6 +972,15 @@ def section_B():
               "but the 4-fold BdG level at +-k* is shifted off zero by delta ~ tau^2 (still 4-fold): the residual T does not protect a point node",
               max(mK[(0, 0, 0)], mK[(1, 1, 1)]) < 1e-12 and min(mK[n] for n in DOUB) > 1e-3 and min(gK[n] for n in DOUB) > 1e-2
               and all(1.9 < v < 2.1 for v in slT) and g4, f"log-log slopes {[round(float(v), 3) for v in slT]}")
+        H8, ch8 = sel8[0][2], sel8[0][3]; V8 = onsite_channel(ch8, idx=H8)
+        A8 = sum((rngt.normal() + 1j * rngt.normal()) * X for X in V8); A8 /= np.linalg.norm(A8)
+        m8 = {n: abs(singlet(DQ[n], 2 * A8)) for n in NODES}
+        sh8 = {n: [np.sort(np.abs(bdg_eps(NODES[n], const(A8), tt, QR)[0]))[0] for tt in taus] for n in ((0, 0, 0), (1, 1, 1))}
+        sl8 = [np.polyfit(np.log(taus), np.log(v), 1)[0] for v in sh8.values()]
+        check("D8 (numerical) D4-A1 on-site pairing (with B19 and D7 this covers every selective subgroup channel): singlet exactly zero at "
+              "+-k*, nonzero at the four doublers off the D4 axis; the +-k* BdG level is shifted off zero by delta ~ tau^2: not protected",
+              max(m8[(0, 0, 0)], m8[(1, 1, 1)]) < 1e-12 and sum(m8[n] > 1e-3 for n in DOUB) == 4 and all(1.9 < v < 2.1 for v in sl8),
+              f"log-log slopes {[round(float(v), 3) for v in sl8]}")
         print(f"   Section D done in {time.time() - td:.0f}s", flush=True)
     print(f"   Section B done in {time.time() - t0:.0f}s", flush=True)
     return out

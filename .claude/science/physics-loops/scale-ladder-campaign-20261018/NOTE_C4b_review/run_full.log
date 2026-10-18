@@ -145,3 +145,12 @@
 [PASS] F.c4bchk.G2a [554s]: general first-order frame 1 + t eps (9 free functions): covariant Weyl functional (LC spin connection, the sign that makes it Hermitian/covariant) = walker + c_ax int N T n with c_ax = 1/4 uniquely; other sign: no c_ax. {1: (True, [{c_ax: 1/4}]), -1: (True, [])}
 [PASS] F.c4bchk.G2b [554s]: eps_abc omega_abc = 1 x T at first order: T is (proportional to) the totally antisymmetric part of the LC spin connection, so the 1/4 N T n term is the Hehl-Datta-type 'axial' coupling eps^abc omega_abc to chi^dag chi (= the Weyl field's axial density)
 [PASS] F.c4bchk.G1 [555s]: walker on E = 1 + A (A_aj = eps_ajk th_k): = {C[1], kap int th.s} + cc int N div(th) n with kap = cc = 1/2 ([{cc: 1/2, kap: 1/2}]); no pure spin rotation ([])
+[PASS] F.c4bchk.G3a [632s]: symmetric section: T^(1) = 0 identically
+[PASS] F.c4bchk.G3b [632s]: symmetric section, O(h): covariant functional = bare walker
+[PASS] F.c4bchk.G3c [632s]: symmetric section, O(h^2): covariant functional != bare walker (True) and == walker + 1/4 int N T^(2) n (True): c4b's walker_cov IS the covariant Weyl operator to second order
+== Part F [part_F2]: Result 4 (--full): constructed G_f^(1) and the next order (C4b check)
+[PASS] F.c4bchk.C1' [641s]: {G[xi], G[eta]} at order chi chi with lam1 = nu = lam_f = 1 and the CONSTRUCTED symmetric-gauge G_f^(1): = Kosmann[[xi, eta]] exactly (mod divergence): the metric route closes {G,G} with no triad
+[PASS] F.c4bchk.C1'' [646s]: lam_f free, G_f^(1) = beta x BG: closure iff (lam_f, beta) in {(0, 0), (nu, nu^2)}  (nu = 1): [{beta: 0, lam_f: 0}, {beta: 1, lam_f: 1}]
+[PASS] F.c4bchk.C2' [649s]: without G_f^(1): {K[xi],K[eta]} - K[[xi,eta]] = cc int eps_kij (S_xi S_eta)_ij s_k, cc = [{cc: 1/2}] (spin-1/2 note Result 4 / N2 form); and {G1, G_f^(1)} terms cancel it exactly (C1')
+   F cov r=1: residual equations 0
+   F cov r=2: residual equations 0

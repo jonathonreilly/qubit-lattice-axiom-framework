@@ -13,3 +13,5 @@
    RAND   S4i.o.S4i.o.S.o ('L301', 'L310', 'H02'): mine Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False  OK
    RAND   Si.o.S.o.S4.o ('L023', 'L313', 'H31'): mine Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False  OK
    B20R   S.R.o ('L330',): mine Lsp=bcc(32) Lu=sc(32) idx=2 T=1 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(32) Lu=sc(32) idx=2 T=1 kdep=0 good=False  OK
+   B24    S2.p.S2.o ('P3', 'H33'): mine Lsp=bcc(8) Lu=sc(8) idx=2 T=1 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(8) Lu=sc(8) idx=2 T=1 kdep=0 good=False  OK
+   B24    S2.p.S2.o ('P10', 'H03'): mine Lsp=bcc(8) Lu=sc(8) idx=2 T=1 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(8) Lu=sc(8) idx=2 T=1 kdep=0 good=False  OK

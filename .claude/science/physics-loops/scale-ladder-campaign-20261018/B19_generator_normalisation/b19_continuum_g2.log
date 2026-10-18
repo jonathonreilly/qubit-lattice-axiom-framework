@@ -1,0 +1,6 @@
+PASS: C11 [sqrt g R]^(2) of g = delta + h has exactly block 62's Fierz-Pauli symbol R_2: the 09-24/block-101 member carries the SAME K on R1 and R2 (K1 = K2) -- the GR relation, supplied by block 62, not by closure
+   C12 solution: [{mu1: lam1 - 2*mu12, mu10: -mu12, mu2: lam1 + mu9, mu3: mu12, mu4: -mu12, mu5: mu12, mu6: -2*mu12, mu7: mu11, mu8: mu12, s1: -lam1, s2: 0}]
+PASS: C12 with block 62's R2 (K2 = K1): degree-1 {C_g, lam1 G1 + G2(mu)} closes iff the lapse rule is s1 = -lam1, s2 = 0 (UNIQUE) and G2 = lam1 * int P L_xi h (Lie completion T1+T2) + a 3-parameter family ['mu11', 'mu12', 'mu9'] of pieces W with R1(W) == 0 identically ([True, True, True]; two are the reparametrisations G1[v], v = h.xi, tr h xi) that this bracket cannot see: the lapse rule, hence the matter normalisation via C6, is FORCED at order eps relative to the linear gauge shift
+   C13 solution: [{mu1: -2*mu12 + K2*lam1/K1, mu10: -mu12, mu2: mu9 + K2*lam1/K1, mu3: mu12, mu4: -mu12, mu5: mu12, mu6: -2*mu12, mu7: mu11, mu8: mu12, s1: -K2*lam1/K1, s2: 0}]
+PASS: C13 K2 != K1: closure forces s1 = -lam1 K2/K1 (and G2 scaled by K2/K1): the lapse rule tracks the graviton potential, so (C6) lam_s = lam1 K2/K1 and (C5) v_s^2 = K2/(4 alpha) = graviton speed^2 (C8)
+TOTAL: PASS=3 FAIL=0

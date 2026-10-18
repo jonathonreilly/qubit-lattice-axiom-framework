@@ -170,6 +170,51 @@ for nm in links:
                 if min(quick(a,b))>1e-6: ok=False; break
             alive|=ok
         if alive: survivors.append((nm,un))
-check("(e) family-wide: among all S.U, S.R_L.U, R_L.S.U Clifford-phase steps (B1 family), none passes the necessary spectral "
-      "test for a taste k -> +-k + pi e_x (with E -> +-E + phi)", not survivors, f"{ntest} steps tested; survivors {survivors[:5]}")
+# survivors: confirm a genuine on-site taste intertwiner, and record the k* level structure
+gen=0; kmult=[]; weyl_surv=[]
+for nm,un in survivors:
+    U=dict(cands)[un]; Wf=(lambda f,U: (lambda k: f(k)@U))(links[nm],U)
+    blW=blocks_of(Wf,[s for s in itertools.product((-1,0,1,2,-2),repeat=3) if max(map(abs,s))<=2])
+    if any(generic_invertible(intertwiners(blW,shifted(blW,EX[0],w),r=0)[0])>1e-6 for w in OM): gen+=1
+    lv=levels(Wf,kst); kmult.append(tuple(sorted(m for _,m in lv)))
+    if any(m==2 for _,m in lv): weyl_surv.append((nm,un))
+check("(e) family-wide (all S.U, S.R_L.U, R_L.S.U Clifford-phase steps of B1): the steps passing the necessary spectral test for "
+      "a taste k -> +-k + pi e_x all carry a genuine on-site taste intertwiner, and NONE of them has a 2-fold level at k* "
+      "(all are 6+6 there); so no B1 step with a spin-1/2 Weyl doublet at k* has a taste",
+      len(survivors)>0 and gen==len(survivors) and not weyl_surv,
+      f"{ntest} steps tested; {len(survivors)} taste-symmetric ({gen} with an on-site V); k* multiplicities {sorted(set(kmult))}; examples {survivors[:4]}")
+# (c3) step-level: any operator commuting with the rotations and ONE H_link-type taste T_x has only 6-fold levels at k*
+def Bloch_(k):
+    B=np.zeros((nV,12),complex)
+    for a,(v,c) in enumerate(C.VERTS): B[a,CI[c]]=np.exp(1j*np.dot(k,v))/np.sqrt(L**3)
+    return B
+Bst=Bloch_(kst); rho=[Bst.conj().T@M@Bst for M in Rm]
+sites=np.array([v for v,c in C.VERTS]); cid=np.array([CI[c] for v,c in C.VERTS])
+def kstar_mults(vx):
+    t=np.array([(-1.0)**v[0] for v,c in C.VERTS])*vx[cid]; byshift={}
+    for M in Rm:
+        d=np.diag(M@np.diag(t)@M.T); tau=d[[C.VID[((0,0,0),c)] for c in C.CORNERS]]
+        e=[ee for ee in itertools.product((0,1),repeat=3) if np.allclose(d,(-1.0)**(sites@np.array(ee))*tau[cid])]
+        assert len(e)==1; byshift.setdefault(e[0],[]).append(tau)
+    taus={tuple(np.round(a*np.conj(b),8)):a*np.conj(b) for ts in byshift.values() for a in ts for b in ts}
+    gens=rho+[np.diag(x) for x in taus.values()]
+    I=np.eye(12); A=np.vstack([np.kron(g.T,I)-np.kron(I,g) for g in gens]); w_,U_=np.linalg.eigh(A.conj().T@A)
+    cb=[U_[:,j].reshape(12,12,order='F') for j in range(144) if w_[j]<1e-9]
+    r_=np.random.default_rng(0); X=sum((r_.normal()+1j*r_.normal())*b for b in cb); X=X+X.conj().T
+    ev=np.linalg.eigvalsh(X); out=[]
+    for x in ev:
+        if out and abs(x-out[-1][0])<1e-8: out[-1][1]+=1
+        else: out.append([x,1])
+    return len(cb),[m for _,m in out]
+Bp,_=intertwiners(blli,shifted(blli,EX[0],1),r=0); Bm,_=intertwiners(blli,shifted(blli,EX[0],-1),r=0)
+Dp=[np.diag(b[(0,0,0)])/np.diag(b[(0,0,0)])[np.argmax(np.abs(np.diag(b[(0,0,0)])))] for b in Bp]
+Dm=[np.diag(b[(0,0,0)])/np.diag(b[(0,0,0)])[np.argmax(np.abs(np.diag(b[(0,0,0)])))] for b in Bm]
+r7=np.random.default_rng(5); trials=[]
+for DD in (Dp,Dm):
+    for al in [(1,1,1),(1,1,-1),(1,-1,1),(1,1j,1)]+[tuple(np.exp(2j*np.pi*r7.uniform(size=3))) for _ in range(3)]:
+        trials.append(kstar_mults(sum(a*d for a,d in zip(al,DD))))
+check("(c3) step-level: ANY operator (any range, any word) commuting with the gauge-dressed rotations and one H_link-type "
+      "taste T_x = (-1)^x diag(alpha_p s_p(c)) has at k* only two 6-fold blocks (conjugates R T_x R^-1 T_x^-1 give on-site "
+      "symmetries beyond 2O): no spin-1/2 doublet at k* (14 alpha choices incl. random phases, w = +-1)",
+      all(t==(2,[6,6]) for t in trials), f"{sorted(set((t[0],tuple(t[1])) for t in trials))}")
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}   [{time.time()-t0:.0f}s]")

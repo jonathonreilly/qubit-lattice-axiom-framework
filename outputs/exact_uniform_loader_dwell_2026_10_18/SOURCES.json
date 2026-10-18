@@ -1,0 +1,150 @@
+{
+  "schema_version": 2,
+  "base_revision": "d27a365724c544edeb1374f7c32ac9667168db55",
+  "base_pr": 9741,
+  "mathematical_parent_pr": 9741,
+  "mathematical_parent_revision": "d27a365724c544edeb1374f7c32ac9667168db55",
+  "main_revision": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "packet_destination": "outputs/exact_uniform_loader_dwell_2026_10_18",
+  "source_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934",
+  "status": "Selectively checked asymmetric uniform-loader finite dwell with linear output-length cost",
+  "files": [
+    {
+      "path": "exact_uniform_loader_dwell/PROPOSAL.md",
+      "destination": "source_checks/exact_uniform_loader_dwell/PROPOSAL.md",
+      "sha256": "96660b9eaf719aac01d4b8e29cdde3661ed6d2b710745ceacccce286e5b4d031",
+      "bytes": 34564,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_uniform_loader_dwell/PROPOSAL.md"
+    },
+    {
+      "path": "exact_uniform_loader_dwell_check/REVIEW.md",
+      "destination": "source_checks/exact_uniform_loader_dwell_check/REVIEW.md",
+      "sha256": "af641f89b7759889d2e76b0a57564b56f381d155a0fb014ef86fd4bfadb4be41",
+      "bytes": 17747,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_uniform_loader_dwell_check/REVIEW.md"
+    }
+  ],
+  "inherited": [
+    {
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_uniform_physical_loader/PROPOSAL.md",
+      "sha256": "809d39e07806cc05af1c715f58ebde90209a07b2dfc2e86bce481fe629c0629f",
+      "bytes": 9952
+    },
+    {
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_uniform_physical_loader_check/REVIEW.md",
+      "sha256": "b9b897fc8dbce257a2bbe7895d5413d30d6f8cc289efb83b14ff7d465f5277c0",
+      "bytes": 11913
+    },
+    {
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_uniform_chain_finite_launch/PROPOSAL.md",
+      "sha256": "bda916e331d0bf3863feac8e0b7dce279df6f2eaa94f0dd17daf651cad51545a",
+      "bytes": 28149
+    },
+    {
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_uniform_chain_finite_launch_check/REVIEW.md",
+      "sha256": "0ef35c231f3550f196bd1f8df8b5b3773ebfa6314232931ea9470ca1f00a5bac",
+      "bytes": 12769
+    },
+    {
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_resonant_halfline_tails/PROPOSAL.md",
+      "sha256": "43c0cc0560ccd6b9ce33345796f511fba63c5fa7360f9225e8d9b30ec1bf33b1",
+      "bytes": 15197
+    },
+    {
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_resonant_halfline_tails_check/REVIEW.md",
+      "sha256": "1fa285544e38728389fb6bb9928b8bbd1e6a9612beb12cfde7532439b0935f9b",
+      "bytes": 9812
+    },
+    {
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_resonant_late_tails/PROPOSAL.md",
+      "sha256": "a03139261c649546c00b7a15bef01c4a7387dfa6cc267f5c20e82f88b65f02d9",
+      "bytes": 13034
+    },
+    {
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_resonant_late_tails_check/REVIEW.md",
+      "sha256": "ef27352b742abe064e5b8d71d09d7904182cea49c9dce2c77187aab8494b34cd",
+      "bytes": 7992
+    },
+    {
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_two_body_direct_loader_composition/PROPOSAL.md",
+      "sha256": "f874302baf42f962939fb0c9497b2c4f55283ed9189671048faadeeb04eca946",
+      "bytes": 23893
+    },
+    {
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_two_body_direct_loader_composition_check/REVIEW.md",
+      "sha256": "41a080068c63261491aeaa04b9c4b397fb31de03f160724be0024b81020e73f6",
+      "bytes": 14485
+    },
+    {
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_endpoint_launch/PROPOSAL.md",
+      "sha256": "fb72f4ed4af9d6f00d6430ec4997fab3f8fbb978b140692b083ddda5e324e9e4",
+      "bytes": 14099
+    },
+    {
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_endpoint_launch_check/REVIEW.md",
+      "sha256": "51247de9ba58bbfeb7f731c478d939e05e2e9d90956192d2e9e6f612401662c1",
+      "bytes": 12312
+    },
+    {
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/bandcenter_reference_measure_check/REVIEW.md",
+      "sha256": "1953d153c9ac8583202e7ca18bff62829bfbff2373691cc43a5ae152a2a6b0ae",
+      "bytes": 8876
+    },
+    {
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_outgoing_pole_tail/PROPOSAL.md",
+      "sha256": "b2622fbb513ef30840ba719fb6f7725e9dba24cf74ebe48be5e790c0fa3e4b80",
+      "bytes": 17300
+    },
+    {
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_outgoing_pole_tail_check/REVIEW.md",
+      "sha256": "0071e81532263d56c37690be97aa25e30ed56a7fa6c394dbfc9243a646e62d00",
+      "bytes": 12246
+    },
+    {
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_engineered_clock_dwell_tradeoff/PROPOSAL.md",
+      "sha256": "d739d552cc04424cb659f4107174d1dbe04756c0409704437176364aba0e0c25",
+      "bytes": 13645
+    },
+    {
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_engineered_clock_dwell_tradeoff_check/REVIEW.md",
+      "sha256": "7db9b3a4aaa62a0ae9e7c665a9767cc2ee5d65ee6f75960e97a8834648d48f46",
+      "bytes": 5655
+    },
+    {
+      "path": "docs/EXACT_LOADER_CLOCK_TRADEOFFS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "e89aadfcfb49096cdf7cd9831d1317d7063a5cc9d229b16f200761dadb39e23c",
+      "bytes": 50515
+    }
+  ],
+  "note_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_uniform_dwell_publication/NOTE.md",
+      "destination": "docs/EXACT_UNIFORM_LOADER_DWELL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "932694107ccc9989a24d811721ef56691698c02ada691355a4c03d58542f373c"
+    }
+  ],
+  "provenance": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_uniform_dwell_publication/INTEGRATION_RECORD.md",
+      "destination": "INTEGRATION_RECORD.md",
+      "sha256": "17bffef91ef982a54bcaa6622565c1df853a6968304279a5bc9fc7f40ba98b2c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_uniform_dwell_publication/AUTHOR_NOTE.md",
+      "destination": "AUTHOR_NOTE.md",
+      "sha256": "508d10710bbf88403358618e2efde3bdd2c68636fcc80ee988674126e3be6731"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_uniform_dwell_publication/PUBLICATION_CHECK.md",
+      "destination": "PUBLICATION_CHECK.md",
+      "sha256": "ee212887d94fac62db28104d7df7a373f20e0becc05bca8fe183c1045d00abcf"
+    }
+  ],
+  "limits": [
+    "Supplied positive blocks, selected supports, coefficients, endpoint coherence, blank record and passive references.",
+    "Freely degenerate data; no active old Hamiltonian or active-energy SWAP theorem transfer.",
+    "Exact uniform matching is required; no independent supported-error allowance is transferred.",
+    "Finite output window and exact current-record identity are distinct; no permanent halt, capture or reset/reuse.",
+    "Source-exposed same-model selective checks with shared ancestry; no physical test or retained audit."
+  ]
+}

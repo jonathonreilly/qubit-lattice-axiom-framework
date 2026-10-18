@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "manifest_sha256": "0c73aeb81b952a19b3ecc86880ced86c0b4b5d71d2bfbf2dee6a8e34c036c0de",
+  "files": 2,
+  "provenance": 3,
+  "links": 20,
+  "nodes": 7268,
+  "edges": 16261,
+  "new_nodes": {
+    "exact_uniform_loader_dwell_bounded_theorem_note_2026-10-18": {
+      "path": "docs/EXACT_UNIFORM_LOADER_DWELL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "deps": [
+        "exact_loader_clock_tradeoffs_bounded_theorem_note_2026-10-18"
+      ]
+    }
+  },
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical source identity, provenance, links and topology only; no scientific execution or retained audit. New note dependencies require ROOT inspection."
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 16260,
- "node_count": 7267,
+ "edge_count": 16261,
+ "node_count": 7268,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6565,6 +6565,10 @@
   "exact_two_body_engineered_loader_bounded_theorem_note_2026-10-18": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "exact_uniform_loader_dwell_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "d24b38d7e10d",
+   "out_degree": 1
   },
   "exactness_residual_priced_arrow_is_lane_data_cycle923_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7734e49ea328",

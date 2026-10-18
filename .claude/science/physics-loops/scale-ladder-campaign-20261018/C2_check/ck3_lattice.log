@@ -1,13 +1,5 @@
-   K = [1, 0, 0, 0] S  trial 0: position-space eps^2 coeff -721.13139841  vs C2 formula -0.55642853  rel 1.3e+03
-   K = [1, 0, 0, 0] S  trial 1: position-space eps^2 coeff -409.50247708  vs C2 formula -0.31597413  rel 1.3e+03
-   K = [1, 0, 0, 0] M1 trial 0: position-space eps^2 coeff -1181.24750779  vs C2 formula -0.91145638  rel 1.3e+03
-   K = [1, 0, 0, 0] M1 trial 1: position-space eps^2 coeff -366.22398136  vs C2 formula -0.28258023  rel 1.3e+03
-   K = [1, 0, 0, 0] M2 trial 0: position-space eps^2 coeff -709.71469717  vs C2 formula -0.54761936  rel 1.3e+03
-   K = [1, 0, 0, 0] M2 trial 1: position-space eps^2 coeff -1061.51073127  vs C2 formula -0.81906690  rel 1.3e+03
-   K = [1, 1, 0, -1] S  trial 0: position-space eps^2 coeff -225.21588235  vs C2 formula -0.17377769  rel 1.3e+03
-   K = [1, 1, 0, -1] S  trial 1: position-space eps^2 coeff -915.23018042  vs C2 formula -0.70619610  rel 1.3e+03
-   K = [1, 1, 0, -1] M1 trial 0: position-space eps^2 coeff -866.75033968  vs C2 formula -0.66878883  rel 1.3e+03
-   K = [1, 1, 0, -1] M1 trial 1: position-space eps^2 coeff -1077.72840215  vs C2 formula -0.83158054  rel 1.3e+03
-   K = [1, 1, 0, -1] M2 trial 0: position-space eps^2 coeff -467.86883228  vs C2 formula -0.36100990  rel 1.3e+03
-   K = [1, 1, 0, -1] M2 trial 1: position-space eps^2 coeff -1338.31370029  vs C2 formula -1.03264927  rel 1.3e+03
-FAIL: X1 [217.5s] C2's momentum-space second variation (seagull + bubble, D1A/D1B placements, symmetrisation) equals the exact position-space 1/2 log det for S, M1, M2 on a periodic 6^4 lattice (max rel dev 1.3e+03)
+   K = [1, 0, 0, 0] S  trial 0: position-space eps^2 coeff -0.55642855  vs C2 formula -0.55642853  rel 4.0e-08
+   K = [1, 0, 0, 0] S  trial 1: position-space eps^2 coeff -0.31597413  vs C2 formula -0.31597413  rel 1.8e-09
+   K = [1, 0, 0, 0] M1 trial 0: position-space eps^2 coeff -0.91145641  vs C2 formula -0.91145638  rel 3.2e-08
+   K = [1, 0, 0, 0] M1 trial 1: position-space eps^2 coeff -0.28258023  vs C2 formula -0.28258023  rel 1.1e-09
+   K = [1, 0, 0, 0] M2 trial 0: position-space eps^2 coeff -0.54761937  vs C2 formula -0.54761936  rel 1.1e-08

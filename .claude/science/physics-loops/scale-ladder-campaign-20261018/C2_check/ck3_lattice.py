@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """C2_check ck3: lattice spot checks (claim 3), m = 1.0.
+(run 1 log kept: two normalisation bugs of THIS checker -- missing 1/volume in X1 (ratio was exactly 6^4 = 1296),
+ and the mixed derivative of Q(sA+tB) being 2 bil(A,B) in X4 (ratio exactly 2); both fixed, no criterion changed)
 
 X1  Independent route for C2's one-loop kernel Pi(disc, K): build the lattice operator D[h] in POSITION space on a small
     periodic L^4 lattice directly from the transcription definitions (exact sqrt g g^{-1}, no h-expansion, no alpha/beta
@@ -110,7 +112,7 @@ for Kn in ([1, 0, 0, 0], [1, 1, 0, -1]):
             A = sum(c * Ea for c, Ea in zip(a, E))
             dl = 2e-3
             f = {k_: Wlog(disc, A, Kv, k_ * dl) for k_ in (-2, -1, 0, 1, 2)}
-            c2 = (-f[2] + 16 * f[1] - 30 * f[0] + 16 * f[-1] - f[-2]) / (12 * dl * dl) / 2
+            c2 = (-f[2] + 16 * f[1] - 30 * f[0] + 16 * f[-1] - f[-2]) / (12 * dl * dl) / 2 / Ns   # C2's Pi is per site (BZ mean)
             pred = (a @ Pi_mat @ a).real
             rel = abs(c2 - pred) / abs(pred)
             worst = max(worst, rel)
@@ -191,7 +193,7 @@ def W2bil(A, B):
     """symmetric bilinear second-order part of sqrt g g^{-1} (from exact numerical differentiation, not C2's W2)."""
     e = 1e-3
     f = lambda s, t: Wfull(s * A + t * B)
-    return (f(e, e) - f(e, -e) - f(-e, e) + f(-e, -e)) / (4 * e * e)
+    return (f(e, e) - f(e, -e) - f(-e, e) + f(-e, -e)) / (8 * e * e)   # d^2/ds dt of Q(sA+tB) = 2 bil(A,B)
 Gp = 1 / (phat2 + m * m)
 t_bond = [np.mean(Gp * (2 * np.sin(Pm[:, mu] / 2)) ** 2) for mu in range(4)]          # <(D+_mu phi)^2>
 t_plaq = {}

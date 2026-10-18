@@ -1,0 +1,21 @@
+   K = [1, 0, 0, 0] S  trial 0: position-space eps^2 coeff -721.13139841  vs C2 formula -0.55642853  rel 1.3e+03
+   K = [1, 0, 0, 0] S  trial 1: position-space eps^2 coeff -409.50247708  vs C2 formula -0.31597413  rel 1.3e+03
+   K = [1, 0, 0, 0] M1 trial 0: position-space eps^2 coeff -1181.24750779  vs C2 formula -0.91145638  rel 1.3e+03
+   K = [1, 0, 0, 0] M1 trial 1: position-space eps^2 coeff -366.22398136  vs C2 formula -0.28258023  rel 1.3e+03
+   K = [1, 0, 0, 0] M2 trial 0: position-space eps^2 coeff -709.71469717  vs C2 formula -0.54761936  rel 1.3e+03
+   K = [1, 0, 0, 0] M2 trial 1: position-space eps^2 coeff -1061.51073127  vs C2 formula -0.81906690  rel 1.3e+03
+   K = [1, 1, 0, -1] S  trial 0: position-space eps^2 coeff -225.21588235  vs C2 formula -0.17377769  rel 1.3e+03
+   K = [1, 1, 0, -1] S  trial 1: position-space eps^2 coeff -915.23018042  vs C2 formula -0.70619610  rel 1.3e+03
+   K = [1, 1, 0, -1] M1 trial 0: position-space eps^2 coeff -866.75033968  vs C2 formula -0.66878883  rel 1.3e+03
+   K = [1, 1, 0, -1] M1 trial 1: position-space eps^2 coeff -1077.72840215  vs C2 formula -0.83158054  rel 1.3e+03
+   K = [1, 1, 0, -1] M2 trial 0: position-space eps^2 coeff -467.86883228  vs C2 formula -0.36100990  rel 1.3e+03
+   K = [1, 1, 0, -1] M2 trial 1: position-space eps^2 coeff -1338.31370029  vs C2 formula -1.03264927  rel 1.3e+03
+FAIL: X1 [217.5s] C2's momentum-space second variation (seagull + bubble, D1A/D1B placements, symmetrisation) equals the exact position-space 1/2 log det for S, M1, M2 on a periodic 6^4 lattice (max rel dev 1.3e+03)
+PASS: X2 [298.2s] C2's hand-coded Fierz-Pauli kernel equals the sympy [sqrt g R]^(2) cross kernel (rel dev 2.5e-16); so c_EH in 'W contains -c_EH FP' is 1/(16 pi G) in the Euclidean convention
+   S : Ward ratio 0.650..1.191  c_EH -0.002855 (-0.270 x cov ref)   log: (0.65, 1.191, -0.002855)
+   M1: Ward ratio 0.431..1.863  c_EH 0.003332 (+0.315 x cov ref)   log: (0.431, 1.863, 0.003332)
+   M2: Ward ratio 0.431..1.191  c_EH -0.004564 (-0.431 x cov ref)   log: (0.431, 1.191, -0.004564)
+PASS: X3 [298.6s] saved m = 1.0 symbols reproduce the logged Ward ranges and c_EH with my FP and gauge vectors; <phi^2> = 0.127112
+   bond tadpole <(D_mu phi)^2> = 0.218222;  plaquette tadpoles max |.| = 4.0e-19
+FAIL: X4 [298.7s] M1 - M2 = bond-tadpole x (cos^2(K/2) - 1) on the seagull only (my W2 by numerical differentiation; rel residual 1.0e+00); its EH projection 0.015791 = +1.491 x covariant ref -- an O(1) shift of 1/G from O(a^2) leg placement
+TOTAL: PASS=2 FAIL=2  (298.7s)

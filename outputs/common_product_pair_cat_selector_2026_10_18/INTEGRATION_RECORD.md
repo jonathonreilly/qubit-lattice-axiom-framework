@@ -1,0 +1,15 @@
+# ROOT integration record: pair-selector certificate
+
+Source science is conditional and unaudited. ROOT authored the new pair-selector proposal, read the complete distinct check0f7cd6, corrected its one branch-comparison terminology ambiguity with original version retained, and read the exact-diff confirmation819b. Complete onsite source/review and exact-reference supplement/check were read previously and remain historical comparison only. No onsite spectrum is imported into the pair theorem.
+
+ROOT read the entire author manuscript7c081d77d856d1e58ef57ac60c5b1c3bbe3021dbdcf432e0f1d85b488937370a and complete author exposurec09415bfabcc44ea5af2859a53d5e244e1dccd071d05c1b853d5768250f5ad2d. Only publication-status sentences were updated; the complete two-hunk diff was read. No scientific formula, assumption or budget changed. AUTHOR_NOTE.md and AUTHOR_EXPOSURE.json preserve that original authoring state. A distinct manuscript drift check is separately supplied in PUBLICATION_CHECK.md; it is not counted as independent source ancestry.
+
+Canonical note SHA256: ca6da55f212cf85e802e2883f3406f96d4c8c1d6c97c32b702ad60b50f3aa30b
+
+Immediate base is regular PR9725 head24daf0bc43bf9eb2844abd55b93d01f91670f4f6, verified OPEN/non-draft and unchanged before branching. Mainfa841753c1a6296e5ad45518375660b0f1004769 was fetched unchanged; current instructions at that revision remain applicable. The scope refresh read full PR9724/9726/9727 bodies and current9718 body; neutral-domain composites and scale-ladder/gravity remain separate actively owned research. No proof import from those PRs.
+
+This packet establishes an exact two-body pair-selector gap/reference and a sufficient joint rest-quality criterion, with all24 selector terms left installed during operation, scalar24h and full24hT disturbance. It preserves complete outputs and the actual absolute unnormalized branch-COMPARISON bound, not a small branch amplitude. It changes the sufficient energy tolerance and block count but no runtime or size exponent. It supplies no cooling, preparation, native block law, full-device nearest-neighbor compilation, original literal processor identification, reset or permanent halt. Source independent-check exposure and unchanged supplied premises remain explicit.
+
+The published manifest preserves exact eight new source/check/history files and the parent source identities/scopes; four onsite sources are comparison-only. The pair source/review re-establish their own projector and budget argument. Ancestor manifests preserve all previous exclusions. The original reviewed author pair file is historical lineage, with the corrected operative file controlling.
+
+Mechanical installed-file/hash/link/graph validation will be recorded separately in VALIDATION.json. No existing scientific executable or historical checker is rerun for this purely analytical milestone; no blanket Lean entry gate is used. Graph/manifest generation is repository integration only. No science merge, main push, audit verdict, physical axiom, editable prompt, model setting or schedule change is authorized or performed here.

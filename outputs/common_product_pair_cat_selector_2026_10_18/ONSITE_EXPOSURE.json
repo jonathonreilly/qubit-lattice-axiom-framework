@@ -1,0 +1,141 @@
+{
+  "schema": "bounded-publication-source-exposure-v1",
+  "date": "2026-10-18",
+  "status": "preserved onsite-selector authoring draft; operative pair-selector manuscript is being drafted separately and requires its actual distinct check",
+  "source_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934",
+  "intended_stack_parent_pr": 9725,
+  "git_state_observed_by_drafter": false,
+  "historical_note": {
+    "source": "ONSITE_NOTE.md",
+    "bytes": 14508,
+    "sha256": "b3c55f0a2221ea3723b366400b408a20b1aaea368716e402b0ca4ac83a19503f"
+  },
+  "canonical_parent": {
+    "repository_path": "docs/COMMON_PRODUCT_TWO_BODY_OPERATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+    "bytes": 21905,
+    "sha256": "299339801b7f6714df652ab874a1a65ad504ceaf8ba934c08249dde458986899",
+    "read_coverage": "complete preceding note/diff reads reused; exact canonical/source equality refreshed"
+  },
+  "new_arguments_and_checks": [
+    {
+      "source": "common_product_static_cat_selector/PROPOSAL.md",
+      "bytes": 15586,
+      "sha256": "ab894394a2b2bd76dcc59b591f5d39d2aa070d7c1c3aa62528b76c99c6cd8c18",
+      "read_coverage": "complete text in this task",
+      "prospective_repository_path": "outputs/common_product_static_cat_selector_2026_10_18/common_product_static_cat_selector/PROPOSAL.md"
+    },
+    {
+      "source": "common_product_static_cat_selector_check/REVIEW.md",
+      "bytes": 11652,
+      "sha256": "c34ef97e7ae4a3b96932e9904b79aacc18cae6b6ac0f8c999006395a2b1aa32a",
+      "read_coverage": "complete text in this task",
+      "prospective_repository_path": "outputs/common_product_static_cat_selector_2026_10_18/common_product_static_cat_selector_check/REVIEW.md"
+    },
+    {
+      "source": "common_product_selector_exact_energy/PROPOSAL.md",
+      "bytes": 5051,
+      "sha256": "0ef4a6cdf6b2f228bb93e39f244720db533c47c6df3f8cb531b48ce8c424714c",
+      "read_coverage": "complete text in this task",
+      "prospective_repository_path": "outputs/common_product_static_cat_selector_2026_10_18/common_product_selector_exact_energy/PROPOSAL.md"
+    },
+    {
+      "source": "common_product_selector_exact_energy_check/REVIEW.md",
+      "bytes": 5926,
+      "sha256": "a0f095998b28ff7ede8f637713eaaf2f5a5de7a907f83afdbf72063547e04d56",
+      "read_coverage": "complete text in this task",
+      "prospective_repository_path": "outputs/common_product_static_cat_selector_2026_10_18/common_product_selector_exact_energy_check/REVIEW.md"
+    }
+  ],
+  "inherited_interfaces_without_duplicate_copy": [
+    {
+      "source": "common_product_loader_bond_realization/PROPOSAL.md",
+      "bytes": 16896,
+      "sha256": "7e6769927d3138b2812e0b4a0db62df1ef4d1d7096b10acfa2269a5ca8a98d39",
+      "existing_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization/PROPOSAL.md",
+      "read_coverage": "complete earlier read reused; identity and canonical-byte equality refreshed here",
+      "new_execution": false,
+      "duplicate_copy_required": false
+    },
+    {
+      "source": "common_product_loader_bond_realization_check/REVIEW.md",
+      "bytes": 11887,
+      "sha256": "f71cdc4e4039f923f99c8ed1f2abab9baedee9f8f9456c1d77ed6a9978b9fd58",
+      "existing_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization_check/REVIEW.md",
+      "read_coverage": "complete earlier read reused; identity and canonical-byte equality refreshed here",
+      "new_execution": false,
+      "duplicate_copy_required": false
+    },
+    {
+      "source": "common_product_loader_bond_realization_check/exact_square.py",
+      "bytes": 1406,
+      "sha256": "109b3f33919446f0c7cb7fa5cbcec5209df4f381bdbd145f5ab3661fb46f9ee3",
+      "existing_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization_check/exact_square.py",
+      "read_coverage": "complete earlier read reused; identity and canonical-byte equality refreshed here",
+      "new_execution": false,
+      "duplicate_copy_required": false
+    },
+    {
+      "source": "common_product_loader_bond_realization_check/exact_square.txt",
+      "bytes": 504,
+      "sha256": "4023c5f3fbd8eeabfe7feaa2d3cea77f694da7e1cece3ea5897dbf28e8247758",
+      "existing_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization_check/exact_square.txt",
+      "read_coverage": "complete earlier read reused; identity and canonical-byte equality refreshed here; complete saved output also reread here",
+      "new_execution": false,
+      "duplicate_copy_required": false
+    },
+    {
+      "source": "common_product_real_two_body_gauge/PROPOSAL.md",
+      "bytes": 16029,
+      "sha256": "1cc8b14dabd52a73f90bedf0186d7c3c92d02a9608aa72ce01ff0303fa3fe1f3",
+      "existing_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_real_two_body_gauge/PROPOSAL.md",
+      "read_coverage": "complete earlier read reused; identity and canonical-byte equality refreshed here",
+      "new_execution": false,
+      "duplicate_copy_required": false
+    },
+    {
+      "source": "common_product_real_two_body_gauge_check/REVIEW.md",
+      "bytes": 7926,
+      "sha256": "603671b279be1867d9aabca527ac0142bee3e9d915eccf4ed050a2d9ae29db4a",
+      "existing_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_real_two_body_gauge_check/REVIEW.md",
+      "read_coverage": "complete earlier read reused; identity and canonical-byte equality refreshed here",
+      "new_execution": false,
+      "duplicate_copy_required": false
+    },
+    {
+      "source": "common_product_two_body_runtime_penalty_removal/PROPOSAL.md",
+      "bytes": 15779,
+      "sha256": "b74d8f05658f6718dfcb4d9a050c6ddca90a357eabeb9dfed9c042567b36d9bb",
+      "existing_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_runtime_penalty_removal/PROPOSAL.md",
+      "read_coverage": "complete earlier read reused; identity and canonical-byte equality refreshed here",
+      "new_execution": false,
+      "duplicate_copy_required": false
+    },
+    {
+      "source": "common_product_two_body_runtime_penalty_removal_check/REVIEW.md",
+      "bytes": 11085,
+      "sha256": "64174ac689b6894ebfdf69369bdeb6816501ce15388cce6db5dd232d651b4337",
+      "existing_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_runtime_penalty_removal_check/REVIEW.md",
+      "read_coverage": "complete earlier read reused; identity and canonical-byte equality refreshed here",
+      "new_execution": false,
+      "duplicate_copy_required": false
+    }
+  ],
+  "exposure": [
+    "All four new arguments/checks read completely without truncation.",
+    "The selector and exact-energy checks are exposed same-model work with shared scalar-square/gauge ancestry; no blind replication is claimed.",
+    "Exact-energy supplement was ROOT-authored. This drafter authored the operation manuscript and performed its bounded drift check.",
+    "The historical exact-square polynomial output was reread and the script hash refreshed; no scientific program was rerun.",
+    "AGENTS.md and SCIENCE_WORKFLOW.md identities unchanged from the applicable prior complete reads.",
+    "The source energy reference is exact 12e_sel, distinct from the actual installed-field runtime scalar 48h; its epsilon^74 allowance remains a supplied quality condition.",
+    "Any pair-selector continuation is excluded from this preserved onsite note until its actual source and check are supplied."
+  ],
+  "verification": {
+    "metadata_only": true,
+    "new_scientific_execution": false,
+    "source_and_canonical_bytes_equal": true,
+    "tools": "read-only Python 3 hashing/byte comparison and complete text reads; filename discovery with rg; authoring via apply_patch",
+    "local_correction_before_preservation": "Restored one missing LaTeX backslash in operatorname{Tr} during draft readback; no mathematical content changed."
+  },
+  "no_publication_claim": true,
+  "editable_prompt_files_changed": []
+}

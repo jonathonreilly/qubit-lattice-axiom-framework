@@ -43,6 +43,12 @@ def jobs(tag):
     elif tag=='pi6':
         for sk in [('S','o'),('S','R','o'),('S','o','R'),('S2','o')]:
             for n in pal_pi6(): yield sk,(n,)
+    elif tag=='taste':
+        # taste-structured family: the last factor is the corner-plane reflection L202 = 1 - 2P_pl (commutes with Z_i,
+        # anticommutes with Y), giving the Z-tastes (shift pi e_i for S-words, (pi/2)e_i for S^2-words) and the Y-taste
+        pal=list(pal_pi6())+[n for n in PHL if '*' in n]
+        for sk in [('S','o','S','o'),('S2','o','S2','o')]:
+            for n in pal: yield sk,(n,'L202')
     elif tag=='test':
         yield ('S2','o','S2','o'),('H20','L202')
         yield ('S','R','o','o'),('H23','L110')
@@ -52,6 +58,7 @@ def mat(n):
     if n in PHL: return PHL[n]
     if PALL is None: PALL=pal_pi6()
     return PALL[n]
+PALL=pal_pi6()
 def build(sk,names):
     it=iter(names); return [mat(next(it)) if L=='o' else L for L in sk]
 g=np.linspace(-np.pi,np.pi,16,endpoint=False)+0.0731

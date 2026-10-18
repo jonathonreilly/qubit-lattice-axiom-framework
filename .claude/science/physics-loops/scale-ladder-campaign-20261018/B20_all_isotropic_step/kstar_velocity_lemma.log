@@ -3,5 +3,8 @@ L=4: 768 vertices, 2304 edges (1536 on-site)
 [PASS] at k*: a generic symmetric operator has isotypic blocks 2+2+4+4; <f>_D is isotropic sqrt2/3 with zero tilt on both doublets and opposite det signs  det signs [1, -1]
 [PASS] at -k*: a generic symmetric operator has isotypic blocks 2+2+4+4; <f>_D is isotropic sqrt2/3 with zero tilt on both doublets and opposite det signs  det signs [1, -1]
 [PASS] random words: every exactly 2-fold level at +-k* has speed |n_S| sqrt2/3 (isotropic, untilted) and chirality sign(n_S) eps_D  1200 doublets checked (144 with n_S = 0), max speed error 7.4e-13
+[PASS] doublets: D+ (eps=+1) = {H_on=2} cap {Lambda=-2sqrt2}, D- (eps=-1) = {H_on=2} cap {Lambda=+2sqrt2} at both +-k*; R_L = (-1,+1) on (D+,D-) at k* and (+1,-1) at -k*  R_L scalars [-1, 1, 1, -1]
+[PASS] random words: W(+-k*) acts on D+- as the product of the letter scalars (S -> 1, R_L -> the signs above, on-site -> its scalar)  
+[PASS] (for an exactly 2-fold k* level at E) net +-k* chirality at E vanishes exactly when n_R is odd and lambda_+ = lambda_- (product of on-site scalars equal on D+ and D-); otherwise it is +-1 or +-2  {(1, np.True_, 0): 62, (1, np.False_, -1): 35, (0, np.False_, 2): 59, (0, np.False_, -2): 54, '4fold': 102, (1, np.False_, 1): 28}
 
-TOTAL: PASS=4 FAIL=0   [4s]
+TOTAL: PASS=7 FAIL=0   [2s]

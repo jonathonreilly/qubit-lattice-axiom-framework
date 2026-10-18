@@ -254,15 +254,17 @@ if __name__ == "__main__":
     # A7d: impose A1's {G,G} solution and beta = -1 explicitly; solve for everything else including K2 and lam1
     gg1 = {m[0]: nu, m[1]: m[2] + nu, m[5]: 2 * m[6], m[7]: 0, m[8]: 0, m[9]: 0, m[10]: 0, m[11]: 0}
     e7d = [sp.expand(e.subs(gg1).subs(beta, -1)) for e in eqs7]
-    s7d = solve(e7d, [m[2], m[3], m[4], m[6]] + list(k) + [betap, K2])
-    print("   A7d {G,G}deg1 + {C,C}deg2 with beta = -1:", s7d)
-    okd = len(s7d) == 1 and sp.simplify(s7d[0][K2] - K1) == 0
+    # (run-3 bug, kept as b21_brackets_run3_A7d_BUG.log: lam1 was held as a fixed generic symbol, so beta = -1 made the
+    #  system inconsistent instead of solving for lam1 = nu; lam1 is now an unknown)
+    s7d = solve(e7d, [m[2], m[3], m[4], m[6]] + list(k) + [betap, K2, lam1])
+    print("   A7d {G,G}deg1 + {C,C}deg2 with beta = -1 (lam1, K2 unknown):", s7d)
+    okd = len(s7d) == 1 and sp.simplify(s7d[0][K2] - K1) == 0 and sp.simplify(s7d[0][lam1] - nu) == 0
     e7e = [sp.expand(e.subs(gg1)) for e in eqs7]
     s7e = solve(e7e, [m[2], m[3], m[4], m[6]] + list(k) + [betap, beta, K2])
     print("   A7e {G,G}deg1 + {C,C}deg2, beta and K2 free:", s7e)
     oke = len(s7e) == 1 and sp.simplify(s7e[0][K2] - nu * K1 / lam1) == 0 and sp.simplify(s7e[0][beta] + nu / lam1) == 0
     check("A7d", okd and oke, "{G,G} degree 1 + {C,C} degree 2 with the structure function fixed to delta - h (beta = -1) "
-          "force K2 = K1; with beta free they force K2 = nu K1/lam1 and beta = -nu/lam1 = -K2/K1 (lam1/nu free)")
+          "force K2 = K1 and lam1 = nu; with beta free they force K2 = nu K1/lam1 and beta = -nu/lam1 = -K2/K1 (lam1/nu free)")
     # ------------------------------------------------ A8 one-parameter family and the rescaling orbit
     rho = sp.Symbol("rho", positive=True)
     fam = {"K2": nu * K1 / lam1, "s1": -nu, "s2": 0, "c0": K1 / (4 * al * lam1), "beta": -nu / lam1,

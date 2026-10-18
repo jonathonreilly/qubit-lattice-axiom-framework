@@ -39,3 +39,9 @@ It would not relax the source tolerances. The onsite ∝ λ requirement needs a 
 - Reduced models only, with λ/g ≥ 5e−3 (the repo is at about 6e−11).
 - Budget 1e−2.
 - Single-excitation pure states.
+
+## Corrections after the independent check (B5_check/REPORT.md)
+
+- **Margins.** They are larger than stated: ε ≈ 1e−9 and ξ ≈ 2e−24 still meet the notes' own 0.0005 target.
+- **Receiver errors.** A common receiver error scales exactly as 1/T (a time rescaling).
+- **Nominal clock.** Its term C(w)·I is an undetectable global phase. A co-transported reference adds nothing for it. The physically real 1/T effects are clock-rate errors (receiver and global onsite errors).

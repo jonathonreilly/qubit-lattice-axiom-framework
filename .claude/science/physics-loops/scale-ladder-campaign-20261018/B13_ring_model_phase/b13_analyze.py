@@ -19,7 +19,7 @@ def check(name, ok, detail=""):
 
 
 runs = [json.load(open(f)) for f in sorted(glob.glob(os.path.join(HERE, "results", "*.json")))]
-main = {(r["L"], r["V"]): r for r in runs if r["N"] == 4000}
+main = {(r["L"], r["V"]): r for r in runs if r["N"] == 4000 and r["block_t"] == 20}
 Vs = sorted({k[1] for k in main})
 Ls = sorted({k[0] for k in main})
 
@@ -62,6 +62,7 @@ for L, (e, de) in repo.items():
         check(f"L={L} V=0: energy/plaquette within 0.002 of the repo projector value {e} (repo notes a guide dependence)", d < 0.002,
               f"{r['E_per_plaq'][0]:.5f} diff {d:.5f}")
 small = [r for r in runs if r["N"] == 1000 and r["L"] == 6 and r["V"] == 0.0]
+long_ = [r for r in runs if r["block_t"] > 20]
 if small and (6, 0.0) in main:
     a, b = small[0], main[(6, 0.0)]
     for key in ("chi_harm", "KT_qmin"):
@@ -70,5 +71,12 @@ if small and (6, 0.0) in main:
               f"{a[key][0]:.4f}+-{a[key][1]:.4f} vs {b[key][0]:.4f}+-{b[key][1]:.4f}")
     d = abs(a["E_per_plaq"][0] - b["E_per_plaq"][0]); s = np.hypot(a["E_per_plaq"][1], b["E_per_plaq"][1])
     check("population 1000 vs 4000 at L=6 V=0: energy agrees within 3 sigma + 2e-4", d < 3 * s + 2e-4, f"diff {d:.5f}")
+for r in long_:
+    print(f"long-block run L={r['L']} V={r['V']} block_t={r['block_t']}: chi_harm={r['chi_harm'][0]:.4f}+-{r['chi_harm'][1]:.4f} K_T={r['KT_qmin'][0]:.4f}+-{r['KT_qmin'][1]:.4f}")
+    tau = np.array(r["tau"]); h = np.mean([r["M2_curve"][f"harm_o{o}"] for o in range(3)], 0)
+    for a, b in ((5, 15), (15, 30), (30, 45), (45, 60)):
+        sel = (tau >= a) & (tau <= b)
+        if sel.sum() > 2:
+            print(f"   harmonic local slope tau in [{a},{b}]: {np.polyfit(tau[sel], h[sel], 1)[0]:.4f}")
 json.dump(dict(exact2=ex, table=table), open(os.path.join(HERE, "b13_analyze_results.json"), "w"), indent=1, default=float)
 print(f"PASS={NPASS} FAIL={NFAIL}")

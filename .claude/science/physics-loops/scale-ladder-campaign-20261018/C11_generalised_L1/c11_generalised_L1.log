@@ -50,18 +50,3 @@
 [PASS] A2 letters A0 S^a: v^(b) (input doublet b) = a * v_S^(b), i.e. A0 contributes nothing but the label swap
    generic exp(iH): v(D+,+k*) + v(D-,+k*) = [np.float64(0.6327), np.float64(-0.2584), np.float64(0.5548), np.float64(-0.027), np.float64(0.1723), np.float64(0.7362), np.float64(0.2853), np.float64(-0.0584)] (nonzero: no +- antisymmetry in general)
 == 4. random words: predicted |sum v| vs actual degenerate perturbation theory
-   260 words, 956 isolated 2-fold D+- levels at +-k* (892 from words with a generic exp(iH) letter); 84 D levels degenerate with another level (not 2-fold, excluded here); 28 with sum v = 0; 14s
-[PASS] every even-A2 word preserves D+ and D- at +-k* and is a scalar there (Schur, all words)
-[PASS] speed from DPT of the whole word = |sum_j v_j^(b_j)| on all 956 levels (worst |dev| 1.3e-09)
-[PASS] cones isotropic (spread of speed over 24 directions 3.2e-11) and untilted (tilt 2.8e-11)
-[PASS] signed statement: P W^dag dW P = i (sum v) tau^(a) entrywise (worst 1.3e-09); chirality = sign(sum v) in the fixed tau orientation
-[PASS] direct diagonalisation of W(k*+delta q), delta = 1e-4 and 5e-5, Richardson-extrapolated, on 300 levels x 3 directions: half eigenphase splitting / delta = |sum v| (worst 3.4e-08)
-== 5. B26 reproduction: words in S^p, A_a = A0 S^a, R_L, Rt and symmetric on-site letters
-[PASS] path-sum |sum v| = |n_eff| sqrt2/3 = DPT speed on 404 doublets (B26's sign-flipped n_eff; 192 with |n_eff| != |n_raw|)
-== 6. scope: 4-fold D+ (+) D- levels (tuned with the symmetric on-site letter Z = exp(i alpha P_D+))
-[PASS] P_D+ is an O-symmetric on-site operator, so Z is a legal A1 letter with v = 0
-[PASS] 192 tuned 4-fold D+(+)D- levels: first-order D+<->D- block vanishes (worst 4.4e-11) - no mixing
-[PASS] the two cones are untilted, isotropic, at |sum v^(+)| and |sum v^(-)| (worst dev 1.8e-09)
-[PASS] old-palette words (S, R_L, Rt, on-site, A0S^a): equal speeds |n_eff| sqrt2/3, opposite chirality (72 levels; B20 L1 4-fold)
-[PASS] with generic exp(iH) letters the two speeds differ: 120 of 120 generic 4-fold levels have | |v+| - |v-| | > 1e-3 (L1's equal-speed 4-fold statement does NOT generalise)
-TOTAL PASS=28 FAIL=0

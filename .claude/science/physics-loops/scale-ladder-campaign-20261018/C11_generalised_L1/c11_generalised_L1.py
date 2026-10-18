@@ -337,7 +337,7 @@ report(ok and nb > 100, f"path-sum |sum v| = |n_eff| sqrt2/3 = DPT speed on {nb}
 print("== 6. scope: 4-fold D+ (+) D- levels (tuned with the symmetric on-site letter Z = exp(i alpha P_D+))")
 PDP = DP @ DP.conj().T
 report(all(np.allclose(g['U'] @ PDP @ g['U'].T, PDP) for g in PROPER), "P_D+ is an O-symmetric on-site operator, so Z is a legal A1 letter with v = 0")
-n4 = 0; nmix = 0; ndiff = 0; worst4 = 0; worst_off = 0; gen4 = 0; ndiff_gen = 0; nL1 = 0; L1_equal = True
+n4 = 0; nsame = 0; nboth = 0; nmix = 0; ndiff = 0; worst4 = 0; worst_off = 0; gen4 = 0; ndiff_gen = 0; nL1 = 0; L1_equal = True
 for t in range(120):
     generic = t % 2 == 0
     if generic: w = rand_word(min_generic=1)
@@ -365,6 +365,7 @@ for t in range(120):
             h = -1j * sum(q[i] * M[i] for i in range(3)); h = (h + h.conj().T) / 2
             dev = max(dev, np.abs(np.sort(np.linalg.eigvalsh(h)) - np.sort([pp, -pp, pm, -pm])).max())
         worst4 = max(worst4, dev); n4 += 1
+        if generic and abs(pp) > 1e-3 and abs(pm) > 1e-3: nsame += np.sign(pp) == np.sign(pm); nboth += 1
         if abs(abs(pp) - abs(pm)) > 1e-3:
             ndiff += 1; ndiff_gen += generic
         if not generic:
@@ -376,4 +377,6 @@ report(L1_equal and nL1 > 0, f"old-palette words (S, R_L, Rt, on-site, A0S^a): e
 report(ndiff_gen > 0, f"with generic exp(iH) letters the two speeds differ: {ndiff_gen} of {gen4} generic 4-fold levels have "
        f"| |v+| - |v-| | > 1e-3 (L1's equal-speed 4-fold statement does NOT generalise)")
 
+print(f"   info: generic 4-fold levels with both speeds nonzero: {nboth}; same sign(v+) = sign(v-) (equal chirality in the fixed "
+      f"right-handed tau frames, net node charge +-2): {nsame}")
 print(f"TOTAL PASS={NPASS} FAIL={NFAIL}")

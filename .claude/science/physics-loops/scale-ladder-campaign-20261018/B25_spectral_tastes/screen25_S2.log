@@ -1,1 +1,3 @@
 ALIGN2 [S2]: 780 words
+  k* level stats: {'m8': 260, 'D+D-': 220, 'm12': 80, 'm4': 400, 'm10': 160, 'D2': 160, 'm6': 320}; screened (kind, fermi): {('D+D-', True): 128, ('D+D-', False): 92, ('D2', True): 160}  [12s]
+[PASS] r(k) real on every grid (det W k-independent)  max 2.4e-14

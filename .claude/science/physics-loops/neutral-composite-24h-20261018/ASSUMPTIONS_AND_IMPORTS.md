@@ -26,3 +26,7 @@ Uniform Z background and supplied directional H/anisotropy retained. Compact eve
 Slow bulk block: no new interaction; native K2 cross vertices fix leading original-readout amplitudes. Projected graph and leading tensions define an explicit coefficient model. Full native remainder and prepared state remain imports; logarithmic source convergence is complex-strip only. Real-axis confined-channel response not assumed universal.
 
 Slow native-control: additionalmicroscopictermsderivedwithoutnewinteraction. TermwiseH0filter andnonwrappinglocalsupportneededforrestrictednormbound; finiteorderonly. PlaneparitycompactE8classificationusedexplicitly. NativeK4realshift109/96lambda4 isnotnegligibleatwidthscale.
+
+
+### Cubic response imports
+Supplied compass Hamiltonian, periodic finite geometry, plane/spatial sector and numerical lowest state remain premises. Q is an algebraically derived scalar diagnostic; its selection as a physical source/detector is not derived. S and Cz are chosen probes. All inputs are exposed model development, no independent observational test. Finite shape comparisons do not prove a bulk scalar or a light cosmological mode.

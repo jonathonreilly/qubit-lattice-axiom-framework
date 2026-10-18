@@ -1,0 +1,102 @@
+{
+  "rows": [
+    {
+      "source": "plaquette",
+      "variance": 182.89976666378368,
+      "peaks": [
+        {
+          "gap": 3.5819610260815153,
+          "residual": 0.003102411781085855,
+          "source_weight": 33.66978875544587,
+          "Q_weight": 4428.99819657181,
+          "accepted": false
+        },
+        {
+          "gap": 2.0022977581021166,
+          "residual": 1.336660085265333e-07,
+          "source_weight": 16.99204699516052,
+          "Q_weight": 3194.6771317620464,
+          "accepted": false
+        },
+        {
+          "gap": 3.109813042507241,
+          "residual": 0.0002797000752975781,
+          "source_weight": 15.053252826486904,
+          "Q_weight": 2368.3790049319705,
+          "accepted": false
+        },
+        {
+          "gap": 2.4731257056735814,
+          "residual": 7.512292178182727e-06,
+          "source_weight": 10.780393209585206,
+          "Q_weight": 1767.1521090435556,
+          "accepted": false
+        },
+        {
+          "gap": 13.3129873640587,
+          "residual": 2.047833455850512,
+          "source_weight": 8.110757964626243,
+          "Q_weight": 358.665652254185,
+          "accepted": false
+        },
+        {
+          "gap": 10.345716288554407,
+          "residual": 1.5588172124825108,
+          "source_weight": 7.8781854620451295,
+          "Q_weight": 118.67432432504566,
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "source": "directional",
+      "variance": 172.62434335247713,
+      "peaks": [
+        {
+          "gap": 4.429343754004918,
+          "residual": 0.031128605876587598,
+          "source_weight": 36.694017279613796,
+          "Q_weight": 523.2367400071818,
+          "accepted": false
+        },
+        {
+          "gap": 3.8614094341052905,
+          "residual": 0.008656547178280521,
+          "source_weight": 24.35096438235474,
+          "Q_weight": 112.96349100946478,
+          "accepted": false
+        },
+        {
+          "gap": 4.122277395736766,
+          "residual": 0.026461480505104037,
+          "source_weight": 16.58678572891146,
+          "Q_weight": 680.0425765867463,
+          "accepted": false
+        },
+        {
+          "gap": 5.929180600586825,
+          "residual": 1.2823035829218454,
+          "source_weight": 9.847249868485392,
+          "Q_weight": 169.33411461020336,
+          "accepted": false
+        },
+        {
+          "gap": 8.829447518461777,
+          "residual": 0.950083879161188,
+          "source_weight": 9.406692046237236,
+          "Q_weight": 2107.6845999219317,
+          "accepted": false
+        },
+        {
+          "gap": 0.8807681574295572,
+          "residual": 3.356737287166409e-12,
+          "source_weight": 9.033324769309205,
+          "Q_weight": 71.44539336696515,
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "scope": "Finite rectangular36site plane+/q0 sector; geometry breaks cubic symmetry, no scalar-irrep or infinitevolume claim",
+  "seconds": 757.3083441257477
+}

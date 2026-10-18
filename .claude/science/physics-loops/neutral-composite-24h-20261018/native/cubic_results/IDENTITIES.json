@@ -1,0 +1,37 @@
+{
+  "source_sha256": {
+    "neutral_cube_model.py": "81257417f88a5b8cd56ca69e58889b8e5ff8fd0bd894a5291ee9ba0060c894c6",
+    "neutral_cube_probe.py": "7fcc6e5f2a2b5b007aa2676a8c4f50ec90c448dcc440d8cfadd415bae08a8c53",
+    "neutral_cube_sectors.py": "8a2a58b8cc5a719ecf7a092a99899f4697e17306ab84ddd0043c75db605d19c3",
+    "neutral_cube_response_check.py": "9280dd253c02839eb410762abe2f1338fcd4b347fa266f50e1f73e4494c2efcd",
+    "neutral_cube_native_scalar.py": "0b2e12f60c81b61439572c3ce549a8cde5c882f26dfc59f0b27ff9a418dfc40e",
+    "neutral_cube_low_spectrum.py": "e1e084f2ade8e537d5802852bf1a519da02d51aae920e3609ab20572d492fd56",
+    "neutral_rect_model.py": "05fcbb0b421085bd592325b4718d8a3b8d519116916082c7c3b0a532fd5cfbcd",
+    "neutral_translation_model.py": "e734bb5c91accab688da8edcca3c16ecc60332e183991a184545af70b97c9c08",
+    "neutral_spacegroup_model.py": "6f4443c036f38b9fe5b3814d3d2e3e636cbd5033718b050ff624f52873876fda",
+    "neutral_spacegroup_check.py": "1aa15896d24119bd75279099dc024e89c686c7f7e5c0c2c822a01abbf62f070a",
+    "neutral_rect_ground.py": "e17670bbdca8e3c7c54788507fa4f0def23348ddd008d8f649cc3b32d69a22b6",
+    "neutral_rect_spacegroup.py": "b0ec444892a9bb3d5a8afbe9e0461ad9ffdeccfa10aad73fecb40d8a09f555b2",
+    "neutral_rect_spacegroup_response.py": "1f0e77779a09877d67ef77c097e69b401eeb36acbcfd4f3e79011d381fb1cd83",
+    "neutral_cube_map_independent.py": "70ef0537804ad07ffa639f37d148f778acaa49f75a85f101b0be1686754c86a2",
+    "neutral_rect_independent_check.py": "883d9dcc0af03392c5c0113237cdc90304785eabe6ec668062f7638b08634426",
+    "neutral_rect_response.py": "45fad45fb61d89f87a82f6ff73dcde8b24f4c04fd60bc9f6c8c329ccd41706b1",
+    "neutral_rect_original_source.py": "4d1322b4eeb66a6e409c3655a2f4097e203a586c4a3c9375a6b35fa48be61ac0"
+  },
+  "result_sha256": {
+    "neutral_cube_response_check.json": "8ba21d72b2a881edaab78f563c7034114dfd3f23dd0cc8cbf6a3d2bebdad57e0",
+    "neutral_cube_low_spectrum.json": "b32abc53aa12b206284e451cdceb50f7d2b75124f192aceb7cb6c857bb1eee82",
+    "neutral_rect_spacegroup_data_response_before_Q_projection_fix.json": "d6f59c5ff4d2a158edc5562f3dd3c06a660d1a9feee69526446062d37f9a2e4c",
+    "neutral_rect_data_ground.json": "1bae0cee27f421ca7bcb91b30141e45b42701c25d3dfabe5d2a2208ac3942872",
+    "neutral_rect_data_observables.json": "01f081e2e48cb330738de5c07f4c290424901f5a9b7eb11265bfcb8d0dbc2706",
+    "neutral_rect_spacegroup_data_response.json": "8b787d83681d813f776f2c9efdbec1612c192bf472c327461a67e8b0893a0d8c",
+    "neutral_cube_sectors.json": "ff04b51b49a65956ff3f0352b2b0f0f4a45683a049ed7cd204a03833ff726cf3",
+    "neutral_cube_probe.json": "106f6aafc1ea7a97f984c07766a2b08d09085aacfd3279bf58167b5f29a207cf",
+    "neutral_cube_native_scalar.json": "d97693693757d73325a1c3c1386e39da2d00471bb94c458c0b77ee6e7957c2d9",
+    "neutral_rect_spacegroup_data_low.json": "87658c7fe3330a415e59f1133d677ffc707d385d92cd1a64428bd7c63c01ba14",
+    "neutral_rect_data_response_rejected_nodes.json": "c296e01607a038491343108c77d4e0569c3e27afb72b14af7aa20e6a9d5255ce",
+    "neutral_rect_data_original_source_rejected_nodes.json": "989cfc10343e37dfaf16d7ed78b4c820bac533c67f147bd6739e036fdabd5069"
+  },
+  "scope": "Frozen personally executed model-development calculations, no empirical independent test",
+  "large_recipe": "See REPRODUCTION.md: repository-root cwd, export thread limits, cd native, run neutral_rect_ground.py then neutral_rect_spacegroup.py then neutral_rect_spacegroup_response.py. Exact scratch-to-frozen mapping included."
+}

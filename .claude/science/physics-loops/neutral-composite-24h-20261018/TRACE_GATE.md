@@ -55,3 +55,7 @@ source_of_blocker_text: user_goal
 artifact_role: theorem
 next_trace_action: corrected fast resolvent and true normal-form remainder
 Native grading/support -> K3boundary -> full long-rowK4 -> volume-independent restricted fixed-coefficient bound. No native pole or physical scalar closure.
+
+
+## Native cubic response checkpoint, 2026-10-18 08:09 UTC
+Root derived Q=sum_a[Ha,[H,Ha]] directly from the supplied one-qubit Hamiltonian, with no added interaction. Exact Pauli expansion and ground spectral sum rule checked independently. Finite 27-site cubic response has scalar Q/S line gap3.763565915973; lower B line1.423237955386 is directional. The original Cz aliases -Hz only on length3. Exact 36-site 3x3x4 signed spacegroup sector dimension475194; 20 low eigenpairs checked with residuals<=9.09e-12. Original Cz response survives without the length3 alias, but rectangular geometry is not cubic and neither calculation establishes thermodynamic mass or physical detector coupling. Wrong projected-Ha Q and unresolved Lanczos quadrature nodes are preserved and rejected. Short source-bound replay2.4094999s PASS; frozen large outputs bound to17 sources and12 results, ordered reproduction recipe supplied. Final scoped review PASS, no audit verdict. All owned numerical jobs complete. Next: package this block and finish corrected fast-channel strip proof and slow native K4 pole model. Fixed deadline unchanged.

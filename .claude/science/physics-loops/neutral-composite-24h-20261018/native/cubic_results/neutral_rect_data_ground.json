@@ -1,0 +1,23 @@
+{
+  "dims": [
+    3,
+    3,
+    4
+  ],
+  "physical_qubits": 36,
+  "plane_sector_dimension": 268435456,
+  "zero_momentum_dimension": 7458416,
+  "excluded": 0,
+  "energies": [
+    -49.970264103705446,
+    -49.089495946276855
+  ],
+  "residuals": [
+    7.165557747133294e-13,
+    3.91215475340174e-09
+  ],
+  "hermiticity_error": 1.0408340855860843e-17,
+  "seconds": 353.97854590415955,
+  "matvecs": 159,
+  "scope": "All-positive commuting-plane sector, momentumzero only; numerical eigenpairs, no global ground proof"
+}

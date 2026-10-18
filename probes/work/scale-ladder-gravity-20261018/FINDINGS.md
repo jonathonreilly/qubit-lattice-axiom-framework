@@ -176,3 +176,26 @@ Write omega^2 = k^2 (1 + alpha k^2).
   coefficient, nu = 1) but not an exact lattice Poisson equation (O(k^2) corrections, about
   8-16% at |k| = 1). The record side (which record observable sources T_tt, how lengths are
   registered) needs owner decisions on the vacuum and formation; it is not derived here.
+
+## Phase 6 (PR #9822): carrier census and the zoom-out reading
+- F29. canon_tri.py builds choice-free carriers: Z^4 plus half-integer orbits, Delaunay cells, and
+  every non-simplicial face coned from its circumcentre. Hidden/partner profiles of all 16
+  (census_tri.log):
+  - hidden curvature only for {} (1) and {1,2,3,4} (16, i.e. Z^4 at half spacing);
+  - 2 partners on {2}, {4}, {1,3}, {2,3}, {2,4}, {1,3,4};
+  - clean (neither): {1}, {3}, {1,2}, {1,4}, {3,4}, {1,2,3}, {1,2,4}, {2,3,4}.
+- F30. The O(k^4) Hodge (Dirac-Kahler) cone is exact ONLY on the even sets {2}, {4}, {2,4}, all of
+  which carry partners. Every other set tested splits, including all partner-free ones
+  ({1,2,3} not computed).
+- F31. Carrier {1} (link midpoints):
+  - leading form -(1/4) EH;
+  - Hodge counts 1, 4, 6, 4, 1, with O(k^4) splitting |alpha| 0.007-0.031 by component;
+  - graviton alpha about -0.03 to -0.04, weakly split;
+  - P1 RP holds;
+  - linearised GR statics for ANY consistent block reading, with no R^2 term.
+- F32. OWNER 2026-10-18: "you can test points between the sites, but not use them ... zoom out".
+  - Zoom x2: {1}'s vertices are exactly all 16 sites of each 2^4 block, and the D4 cone's are the
+    8 even sites; other sets need zoom 4 or 8.
+  - So gravity is a 2-rung triangulation of the sites.
+  - A P1 field on every site sources the relative sublattice displacements at O(1), so gravity
+    reads matter per block.

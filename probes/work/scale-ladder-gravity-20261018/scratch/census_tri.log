@@ -1,0 +1,16 @@
+orbits ()            :  192 simp, 12 types,  132 edges, vol 1.000, cells [16], B4 True, orthoschemes 0; nullity 49 vs gauge 48 -> hidden 1; massless non-gauge 6 -> partners 0  [2s]
+orbits (1,)          :  288 simp, 16 types,  192 edges, vol 1.000, cells [5, 32], B4 True, orthoschemes 0; nullity 64 vs gauge 64 -> hidden 0; massless non-gauge 6 -> partners 0  [4s]
+orbits (2,): FAILED LinAlgError: Matrix is not positive definite
+orbits (3,)          :  544 simp, 60 types,  452 edges, vol 1.000, cells [5, 6, 8], B4 True, orthoschemes 0; nullity 240 vs gauge 240 -> hidden 0; massless non-gauge 6 -> partners 0  [10s]
+orbits (4,)          :   96 simp,  8 types,   72 edges, vol 1.000, cells [8], B4 True, orthoschemes 0; nullity 32 vs gauge 32 -> hidden 0; massless non-gauge 8 -> partners 2  [2s]
+orbits (1, 2): FAILED LinAlgError: Matrix is not positive definite
+orbits (1, 3)        :  672 simp, 64 types,  528 edges, vol 1.000, cells [8, 9], B4 True, orthoschemes 0; nullity 256 vs gauge 256 -> hidden 0; massless non-gauge 8 -> partners 2  [15s]
+orbits (1, 4)        :  640 simp, 76 types,  548 edges, vol 1.000, cells [5, 6], B4 True, orthoschemes 0; nullity 304 vs gauge 304 -> hidden 0; massless non-gauge 6 -> partners 0  [13s]
+orbits (2, 3)        : 1056 simp, 96 types,  816 edges, vol 1.000, cells [8, 11], B4 True, orthoschemes 0; nullity 384 vs gauge 384 -> hidden 0; massless non-gauge 8 -> partners 2  [34s]
+orbits (2, 4)        :  384 simp, 32 types,  288 edges, vol 1.000, cells [8], B4 True, orthoschemes 0; nullity 128 vs gauge 128 -> hidden 0; massless non-gauge 8 -> partners 2  [8s]
+orbits (3, 4)        :  640 simp, 76 types,  548 edges, vol 1.000, cells [5, 6], B4 True, orthoschemes 0; nullity 304 vs gauge 304 -> hidden 0; massless non-gauge 6 -> partners 0  [13s]
+orbits (1, 2, 3)     : 2592 simp, 168 types, 1800 edges, vol 1.000, cells [8, 15], B4 True, orthoschemes 0; nullity 672 vs gauge 672 -> hidden 0; massless non-gauge 6 -> partners 0  [255s]
+orbits (1, 2, 4)     : 1536 simp, 120 types, 1128 edges, vol 1.000, cells [8, 12], B4 True, orthoschemes 0; nullity 480 vs gauge 480 -> hidden 0; massless non-gauge 6 -> partners 0  [70s]
+orbits (1, 3, 4)     :  960 simp, 96 types,  768 edges, vol 1.000, cells [8, 10], B4 True, orthoschemes 0; nullity 384 vs gauge 384 -> hidden 0; massless non-gauge 8 -> partners 2  [26s]
+orbits (2, 3, 4)     : 1536 simp, 120 types, 1128 edges, vol 1.000, cells [8, 12], B4 True, orthoschemes 0; nullity 480 vs gauge 480 -> hidden 0; massless non-gauge 6 -> partners 0  [70s]
+orbits (1, 2, 3, 4)  : 3072 simp, 192 types, 2112 edges, vol 1.000, cells [16], B4 True, orthoschemes 0; nullity 784 vs gauge 768 -> hidden 16; massless non-gauge 6 -> partners 0  [426s]

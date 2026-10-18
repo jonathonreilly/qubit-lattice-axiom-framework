@@ -71,3 +71,21 @@
   - **G-OUTSIDE:** every candidate lands outside it.
   - **G-UNFIXED:** no candidate is derivable; the coupling is a free supplied number. State it as the single primitive the hierarchy reduces to.
   - **OPEN:** otherwise.
+
+**HIER-3 result (12:26Z; same family; unrefereed): G-OUTSIDE. Under the derived-values-only reading, G-UNFIXED.**
+- **The window.** For v ≈ 2e-17 M_Pl from colour, g²(M_cut) must be:
+  - 0.27–0.30 for SM-like content;
+  - 0.17–0.19 for pure SU(3);
+  - 0.28–0.31 for X2′;
+  - at most 0.36 anywhere, including colour on 35-site cells.
+
+  On the lattice this is β ≈ 35–38. One decade in scale is about ±6% in g².
+- **Every framework candidate has g² ≥ 1.** The candidates are β = 6 and its tadpole forms, all one theory.
+  - The repo's own β = 6 data put the colour scale at about 0.23 M_Pl, which is about 1 decade of hierarchy, not 16.7.
+  - COL-1 cells fix no coupling, and their link register caps the plaquette at 1/18.
+  - Rung matching makes the coupling stronger, not weaker.
+  - The α_s(v) placement is circular.
+- **The supplied-number version.** Without the g_bare = 1 convention, the hierarchy reduces to g²(M_cut) ≈ 0.285 ± 0.017, plus a mechanism linking the colour scale to v. With observed QCD the colour scale sits 3.4 decades below v.
+- **Problems found on main (not edited).**
+  - One β = 6 coupling is placed at four incompatible scales: the Planck grid, μ = v, a = 0.1 fm, and α_LM at M_Pl.
+  - GAMMA_FULL_VS_GAMMA_CRIT…:73-76 has the scheme conversion going the wrong way.

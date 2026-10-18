@@ -1,0 +1,51 @@
+[PASS] alpha_LM regression 0.090668 (HONEST_STATUS:395) 
+[PASS] alpha_s(v) regression 0.10330382 (ALPHA_S_DERIVED:237) 
+W_v needs log10(M_Pl/Lambda*) in [15.70, 17.70] (centre 16.70)
+
+candidate                                  g^2     alpha    best-case decades (reading)        short of W_v   g2/g2_max_inside
+C1 g_bare^2=1                              1.0000  0.0796     5.47 (C,1-loop,MSbar          )    10.23      2.77
+C2a 4pi alpha_LM = 1/u0 [B1 0.5934]        1.1394  0.0907     4.87 (C,1-loop,MSbar          )    10.83      3.16
+C2b 4pi alpha_s(v) = 1/u0^2 [B1 0.5934]    1.2982  0.1033     4.34 (C,1-loop,MSbar          )    11.35      3.60
+C2c g_MF^2 = 1/<P> [B1 0.5934]             1.6852  0.1341     3.48 (C,1-loop,MSbar          )    12.22      4.67
+C2d g_P^2 = -3 ln<P> [B1 0.5934]           1.5657  0.1246     3.70 (C,1-loop,MSbar          )    12.00      4.34
+C2a 4pi alpha_LM = 1/u0 [point 0.59369]    1.1392  0.0907     4.87 (C,1-loop,MSbar          )    10.83      3.16
+C2b 4pi alpha_s(v) = 1/u0^2 [point 0.59369] 1.2978  0.1033     4.35 (C,1-loop,MSbar          )    11.35      3.60
+C2c g_MF^2 = 1/<P> [point 0.59369]         1.6844  0.1340     3.48 (C,1-loop,MSbar          )    12.22      4.67
+C2d g_P^2 = -3 ln<P> [point 0.59369]       1.5642  0.1245     3.70 (C,1-loop,MSbar          )    12.00      4.34
+[PASS] every C1-C3 candidate is outside W_v in its most favourable perturbative reading (smallest shortfall 10.23 decades)
+[PASS] every C1-C3 candidate exceeds the largest in-window g^2 by >= 2.7x 
+
+== beta = 6 non-perturbative (pure SU(3)), repo certificate on origin/main ==
+  metadata keys: ['action', 'authority', 'created_at_utc', 'error_analysis', 'g_bare', 'running_bridge', 'scale_anchor', 'uses_alpha_bare_over_u0_squared', 'uses_alpha_lm_chain', 'uses_plaquette_as_running_coupling_input']
+  metadata.g_bare = 1.0
+  metadata.action = Cl3Z3_SU3_Wilson
+[PASS] certificate r0/a = sqrt((1.65-e)/sigma) 5.0057
+  b= 1 r0/a=repo 5.006: Lambda_MS/M_Pl = 1.203e-01 (0.92 decades), sqrt(sigma)/M_Pl = 2.334e-01; short of W_v by 14.78 decades
+  b= 1 r0/a=lit 5.368: Lambda_MS/M_Pl = 1.121e-01 (0.95 decades), sqrt(sigma)/M_Pl = 2.334e-01; short of W_v by 14.75 decades
+  b= 2 r0/a=repo 5.006: Lambda_MS/M_Pl = 6.013e-02 (1.22 decades), sqrt(sigma)/M_Pl = 1.167e-01; short of W_v by 14.48 decades
+  b= 2 r0/a=lit 5.368: Lambda_MS/M_Pl = 5.607e-02 (1.25 decades), sqrt(sigma)/M_Pl = 1.167e-01; short of W_v by 14.45 decades
+  b= 5 r0/a=repo 5.006: Lambda_MS/M_Pl = 2.405e-02 (1.62 decades), sqrt(sigma)/M_Pl = 4.668e-02; short of W_v by 14.08 decades
+  b= 5 r0/a=lit 5.368: Lambda_MS/M_Pl = 2.243e-02 (1.65 decades), sqrt(sigma)/M_Pl = 4.668e-02; short of W_v by 14.05 decades
+  b=19 r0/a=repo 5.006: Lambda_MS/M_Pl = 6.330e-03 (2.20 decades), sqrt(sigma)/M_Pl = 1.229e-02; short of W_v by 13.50 decades
+  b=19 r0/a=lit 5.368: Lambda_MS/M_Pl = 5.902e-03 (2.23 decades), sqrt(sigma)/M_Pl = 1.229e-02; short of W_v by 13.47 decades
+  b=35 r0/a=repo 5.006: Lambda_MS/M_Pl = 3.436e-03 (2.46 decades), sqrt(sigma)/M_Pl = 6.669e-03; short of W_v by 13.24 decades
+  b=35 r0/a=lit 5.368: Lambda_MS/M_Pl = 3.204e-03 (2.49 decades), sqrt(sigma)/M_Pl = 6.669e-03; short of W_v by 13.20 decades
+[PASS] beta = 6 on the grid: Lambda_MS within 2.5 decades of M_Pl for every b <= 35 
+
+== C5 rung matching (one loop): g^2 at the coarse rung from g^2 = 1 at the fine rung ==
+  pure: b=2: 1.107, b=5: 1.289, b=19: 1.696, b=35: 1.981; moving g^2 = 1 to <= 0.3606 needs a Lambda ratio exp(12.73) = 3.37e+05
+  nf=6: b=2: 1.065, b=5: 1.166, b=19: 1.353, b=35: 1.460; moving g^2 = 1 to <= 0.3606 needs a Lambda ratio exp(20.00) = 4.85e+08
+  heat-kernel vs Wilson (PR #9702 :206): Lambda ratio 1.819 -> shift log10(1.819) = 0.260 decades
+
+== C6: alpha_s(v) = 0.10330382 at mu = v (B4), two-loop, nf = 6 above 172.69 GeV ==
+  g^2(M_Pl) = 0.2371 (alpha = 0.01887); inside the W_v g^2 band? True
+  its strong scale: Lambda^(6)/M_Pl = 7.306e-21, Lambda^(5) = 0.2147 GeV (20.14 decades; W_v needs 15.70-17.70)
+[PASS] C6 is outside W_v (it reproduces QCD, not v) 
+[PASS] C6 is inside the secondary W_QCD band (0.021-2.1 GeV) 0.215 GeV
+  C6 consumes mu = v (the hierarchy readout) as its matching scale: CIRCULAR.
+
+== C7: certificate a = 0.0999 fm -> a^-1 = 1.976 GeV; M_Pl/a^-1 = 6.180e+18 (18.79 decades) -- the ruler r0 = 0.5 fm supplies them: CIRCULAR.
+  equivalently: the beta = 6 colour lattice of the alpha_s lanes is b = 6.18e+18 grid spacings
+
+TOTAL: PASS=8 FAIL=0
+watchdog peak RSS 73824 KB

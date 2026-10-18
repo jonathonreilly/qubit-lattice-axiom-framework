@@ -1,0 +1,27 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/hier/H3/rgcommon.py:46: IntegrationWarning: The maximum number of subdivisions (200) has been achieved.
+  If increasing the limit yields no improvement it is advised to analyze 
+  the integrand in order to determine the difficulties.  If the position of a 
+  local difficulty can be determined (singularity, discontinuity) one will 
+  probably gain from splitting up the interval and calling the integrator 
+  on the subranges.  Perhaps a special-purpose integrator should be used.
+  val, _ = quad(integrand, 0.0, a, epsabs=1e-14, epsrel=1e-12, limit=200)
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/hier/H3/rgcommon.py:46: IntegrationWarning: The algorithm does not converge.  Roundoff error is detected
+  in the extrapolation table.  It is assumed that the requested tolerance
+  cannot be achieved, and that the returned result (if full_output = 1) is 
+  the best which can be obtained.
+  val, _ = quad(integrand, 0.0, a, epsabs=1e-14, epsrel=1e-12, limit=200)
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/hier/H3/rgcommon.py:46: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  val, _ = quad(integrand, 0.0, a, epsabs=1e-14, epsrel=1e-12, limit=200)
+(i) one-loop: 1/g_MS^2(1/a) = 1 - 0.4682 = 0.5318 -> alpha_MS(1/a) = 0.1496
+[PASS] (i) Wilson-bare 0.0796 converts to a LARGER MSbar alpha 0.1496 > 0.0796
+(ii) repo r0/a = 5.006: Lambda_MS a = 0.1203; alpha_MS(mu=1/a) = 0.1957 (2-loop), 0.2033 (4-loop); at mu = pi/a: 0.1360 (2-loop)
+[PASS] (ii) beta = 6 theory has alpha_MS(1/a) > 0.0796 [repo r0/a] 
+(ii) lit r0/a = 5.368: Lambda_MS a = 0.1121; alpha_MS(mu=1/a) = 0.1905 (2-loop), 0.1975 (4-loop); at mu = pi/a: 0.1336 (2-loop)
+[PASS] (ii) beta = 6 theory has alpha_MS(1/a) > 0.0796 [lit r0/a] 
+(iii) g_MS^2(M_Pl) = 0.2372 -> Wilson-bare g0^2 = 0.2135, beta = 6/g0^2 = 28.1 (pure-gauge one-loop conversion; content-dependent at O(1))
+[PASS] (iii) the observed colour coupling at M_Pl is far from beta = 6 
+
+TOTAL: PASS=4 FAIL=0
+watchdog peak RSS 75120 KB

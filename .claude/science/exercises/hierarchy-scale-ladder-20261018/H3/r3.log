@@ -1,0 +1,41 @@
+[PASS] Haar int |TrU|^2 = 1 MC +0.9981+0.0000i +- 0.0022, exact 1.0
+[PASS] Haar int (TrU)^2 = 0 MC +0.0002+0.0021i +- 0.0032, exact 0.0
+[PASS] Haar int (TrU)^3 = 1 MC +0.9955-0.0023i +- 0.0050, exact 1.0
+[PASS] Haar int |TrU|^2 TrU = 0 MC -0.0001-0.0010i +- 0.0055, exact 0.0
+[PASS] Haar int U11 U22 U33 = 1/6 (eps.eps/6) MC +0.1665-0.0001i +- 0.0004, exact 0.16666666666666666
+[PASS] Haar int |U12|^2 = 1/3 MC +0.3342+0.0000i +- 0.0005, exact 0.3333333333333333
+[PASS] Haar <f_11|U_22|e_33> = eps eps/2 = 1/2 MC 0.4995
+[PASS] T10 (COL-1 link {1,(3bar,3)}): max <Re Tr U_p>/3 = 1/18 0.055555555556 (dim 10000, nnz 162)
+T19 ({1,(3bar,3),(3,3bar)}): max <Re Tr U_p>/3 over ALL four-link states = 0.333333 (dim 130321, nnz 209952)
+[PASS] isolated ceiling with {1,F} = 1/6 0.166667
+[PASS] isolated ceiling with {1,F,Fbar} = 1/3 0.333333
+
+ n   ceiling c(n)   1-c      states/link D(n)   qubits/link
+  0   0.000000   1.00e+00                1      0
+  1   0.333333   6.67e-01               19      5
+  2   0.539345   4.61e-01              155      8
+  3   0.666667   3.33e-01              805     10
+  4   0.748993   2.51e-01             3136     12
+  5   0.804738   1.95e-01             9996     14
+  6   0.844030   1.56e-01            27468     15
+  7   0.872678   1.27e-01            67320     17
+  8   0.894169   1.06e-01           150645     18
+  9   0.910684   8.93e-02           313027     19
+ 10   0.923637   7.64e-02           611611     20
+ 11   0.933979   6.60e-02          1134497     21
+ 12   0.942364   5.76e-02          2012920     21
+ 15   0.959795   4.02e-02          9093096     24
+ 20   0.975278   2.47e-02         68105576     27
+ 25   0.983285   1.67e-02        339663051     29
+ 30   0.987952   1.20e-02       1293704896     31
+ 35   0.990908   9.09e-03       4066845861     32
+ 40   0.992896   7.10e-03      11073344821     34
+[PASS] c(n) non-decreasing in n 
+  smallest n with ceiling >= Wilson beta=6 plaquette 0.5934: n = 3, D = 805, qubits/link >= 10
+  smallest n with ceiling >= W_v centre (Wilson bare) beta=36.5: P=0.9443: n = 13, D = 3436720, qubits/link >= 22
+  smallest n with ceiling >= W_v strong edge beta=34.6: P=0.9411: n = 12, D = 2012920, qubits/link >= 21
+  smallest n with ceiling >= W_v weak edge beta=38.5: P=0.9472: n = 13, D = 3436720, qubits/link >= 22
+  tail: 1 - c(n) ~ 13.10/(n+3)^2 (median over n = 10..40)
+
+TOTAL: PASS=11 FAIL=0
+watchdog peak RSS 233168 KB

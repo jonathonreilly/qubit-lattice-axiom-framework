@@ -1,0 +1,29 @@
+[
+  {
+    "n": 0,
+    "entries": 7,
+    "physical_e_kernel_q2_coefficients": [
+      "-1/4",
+      "-1/4",
+      "-1/4"
+    ]
+  },
+  {
+    "n": 1,
+    "entries": 13,
+    "physical_e_kernel_q2_coefficients": [
+      "8",
+      "8",
+      "8"
+    ]
+  },
+  {
+    "n": 2,
+    "entries": 57,
+    "physical_e_kernel_q2_coefficients": [
+      "192",
+      "192",
+      "192"
+    ]
+  }
+]

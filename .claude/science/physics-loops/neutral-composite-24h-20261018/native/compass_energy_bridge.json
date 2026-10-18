@@ -1,0 +1,40 @@
+{
+  "scope": "Mixed HS correlations; not an inferred physical source coupling",
+  "rows": [
+    {
+      "order": 0,
+      "composite_terms": 3,
+      "energy_terms": 6,
+      "overlaps": [],
+      "sum_over_displacements": 0
+    },
+    {
+      "order": 1,
+      "composite_terms": 24,
+      "energy_terms": 24,
+      "overlaps": [],
+      "sum_over_displacements": 0
+    },
+    {
+      "order": 2,
+      "composite_terms": 207,
+      "energy_terms": 258,
+      "overlaps": [],
+      "sum_over_displacements": 0
+    },
+    {
+      "order": 3,
+      "composite_terms": 1704,
+      "energy_terms": 1584,
+      "overlaps": [],
+      "sum_over_displacements": 0
+    },
+    {
+      "order": 4,
+      "composite_terms": 14427,
+      "energy_terms": 13530,
+      "overlaps": [],
+      "sum_over_displacements": 0
+    }
+  ]
+}

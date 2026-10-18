@@ -1,0 +1,1398 @@
+{
+  "scope": "Exact local coefficients in high-temperature expansion; no temperature selection or physical scalar coupling",
+  "K": 1,
+  "rows": [
+    {
+      "derivative_order": 0,
+      "twice_F": [
+        {
+          "displacement": [
+            -1,
+            0,
+            0
+          ],
+          "value": 1
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            0
+          ],
+          "value": 1
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            -1
+          ],
+          "value": 1
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            0
+          ],
+          "value": 6
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            1
+          ],
+          "value": 1
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            0
+          ],
+          "value": 1
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            0
+          ],
+          "value": 1
+        }
+      ]
+    },
+    {
+      "derivative_order": 1,
+      "twice_F": []
+    },
+    {
+      "derivative_order": 2,
+      "twice_F": [
+        {
+          "displacement": [
+            -1,
+            -1,
+            0
+          ],
+          "value": 8
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            -1
+          ],
+          "value": 8
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            1
+          ],
+          "value": 8
+        },
+        {
+          "displacement": [
+            -1,
+            1,
+            0
+          ],
+          "value": 8
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            -1
+          ],
+          "value": 8
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            1
+          ],
+          "value": 8
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            0
+          ],
+          "value": -96
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            -1
+          ],
+          "value": 8
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            1
+          ],
+          "value": 8
+        },
+        {
+          "displacement": [
+            1,
+            -1,
+            0
+          ],
+          "value": 8
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            -1
+          ],
+          "value": 8
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            1
+          ],
+          "value": 8
+        },
+        {
+          "displacement": [
+            1,
+            1,
+            0
+          ],
+          "value": 8
+        }
+      ]
+    },
+    {
+      "derivative_order": 3,
+      "twice_F": []
+    },
+    {
+      "derivative_order": 4,
+      "twice_F": [
+        {
+          "displacement": [
+            -2,
+            -1,
+            0
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            -2,
+            0,
+            -1
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            -2,
+            0,
+            0
+          ],
+          "value": 128
+        },
+        {
+          "displacement": [
+            -2,
+            0,
+            1
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            -2,
+            1,
+            0
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            -1,
+            -2,
+            0
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            -1,
+            -1,
+            -1
+          ],
+          "value": 192
+        },
+        {
+          "displacement": [
+            -1,
+            -1,
+            0
+          ],
+          "value": -448
+        },
+        {
+          "displacement": [
+            -1,
+            -1,
+            1
+          ],
+          "value": 192
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            -2
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            -1
+          ],
+          "value": -448
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            0
+          ],
+          "value": -384
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            1
+          ],
+          "value": -448
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            2
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            -1,
+            1,
+            -1
+          ],
+          "value": 192
+        },
+        {
+          "displacement": [
+            -1,
+            1,
+            0
+          ],
+          "value": -448
+        },
+        {
+          "displacement": [
+            -1,
+            1,
+            1
+          ],
+          "value": 192
+        },
+        {
+          "displacement": [
+            -1,
+            2,
+            0
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            0,
+            -2,
+            -1
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            0,
+            -2,
+            0
+          ],
+          "value": 128
+        },
+        {
+          "displacement": [
+            0,
+            -2,
+            1
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            -2
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            -1
+          ],
+          "value": -448
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            0
+          ],
+          "value": -384
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            1
+          ],
+          "value": -448
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            2
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            -2
+          ],
+          "value": 128
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            -1
+          ],
+          "value": -384
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            0
+          ],
+          "value": 4608
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            1
+          ],
+          "value": -384
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            2
+          ],
+          "value": 128
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            -2
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            -1
+          ],
+          "value": -448
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            0
+          ],
+          "value": -384
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            1
+          ],
+          "value": -448
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            2
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            0,
+            2,
+            -1
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            0,
+            2,
+            0
+          ],
+          "value": 128
+        },
+        {
+          "displacement": [
+            0,
+            2,
+            1
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            1,
+            -2,
+            0
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            1,
+            -1,
+            -1
+          ],
+          "value": 192
+        },
+        {
+          "displacement": [
+            1,
+            -1,
+            0
+          ],
+          "value": -448
+        },
+        {
+          "displacement": [
+            1,
+            -1,
+            1
+          ],
+          "value": 192
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            -2
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            -1
+          ],
+          "value": -448
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            0
+          ],
+          "value": -384
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            1
+          ],
+          "value": -448
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            2
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            1,
+            1,
+            -1
+          ],
+          "value": 192
+        },
+        {
+          "displacement": [
+            1,
+            1,
+            0
+          ],
+          "value": -448
+        },
+        {
+          "displacement": [
+            1,
+            1,
+            1
+          ],
+          "value": 192
+        },
+        {
+          "displacement": [
+            1,
+            2,
+            0
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            2,
+            -1,
+            0
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            2,
+            0,
+            -1
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            2,
+            0,
+            0
+          ],
+          "value": 128
+        },
+        {
+          "displacement": [
+            2,
+            0,
+            1
+          ],
+          "value": 32
+        },
+        {
+          "displacement": [
+            2,
+            1,
+            0
+          ],
+          "value": 32
+        }
+      ]
+    },
+    {
+      "derivative_order": 5,
+      "twice_F": []
+    },
+    {
+      "derivative_order": 6,
+      "twice_F": [
+        {
+          "displacement": [
+            -2,
+            -2,
+            0
+          ],
+          "value": 640
+        },
+        {
+          "displacement": [
+            -2,
+            -1,
+            -1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            -2,
+            -1,
+            0
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            -2,
+            -1,
+            1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            -2,
+            0,
+            -2
+          ],
+          "value": 640
+        },
+        {
+          "displacement": [
+            -2,
+            0,
+            -1
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            -2,
+            0,
+            0
+          ],
+          "value": -22016
+        },
+        {
+          "displacement": [
+            -2,
+            0,
+            1
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            -2,
+            0,
+            2
+          ],
+          "value": 640
+        },
+        {
+          "displacement": [
+            -2,
+            1,
+            -1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            -2,
+            1,
+            0
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            -2,
+            1,
+            1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            -2,
+            2,
+            0
+          ],
+          "value": 640
+        },
+        {
+          "displacement": [
+            -1,
+            -2,
+            -1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            -1,
+            -2,
+            0
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            -1,
+            -2,
+            1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            -1,
+            -1,
+            -2
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            -1,
+            -1,
+            -1
+          ],
+          "value": -33024
+        },
+        {
+          "displacement": [
+            -1,
+            -1,
+            0
+          ],
+          "value": 32896
+        },
+        {
+          "displacement": [
+            -1,
+            -1,
+            1
+          ],
+          "value": -33024
+        },
+        {
+          "displacement": [
+            -1,
+            -1,
+            2
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            -2
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            -1
+          ],
+          "value": 32896
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            0
+          ],
+          "value": 55808
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            1
+          ],
+          "value": 32896
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            2
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            -1,
+            1,
+            -2
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            -1,
+            1,
+            -1
+          ],
+          "value": -33024
+        },
+        {
+          "displacement": [
+            -1,
+            1,
+            0
+          ],
+          "value": 32896
+        },
+        {
+          "displacement": [
+            -1,
+            1,
+            1
+          ],
+          "value": -33024
+        },
+        {
+          "displacement": [
+            -1,
+            1,
+            2
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            -1,
+            2,
+            -1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            -1,
+            2,
+            0
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            -1,
+            2,
+            1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            0,
+            -2,
+            -2
+          ],
+          "value": 640
+        },
+        {
+          "displacement": [
+            0,
+            -2,
+            -1
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            0,
+            -2,
+            0
+          ],
+          "value": -22016
+        },
+        {
+          "displacement": [
+            0,
+            -2,
+            1
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            0,
+            -2,
+            2
+          ],
+          "value": 640
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            -2
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            -1
+          ],
+          "value": 32896
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            0
+          ],
+          "value": 55808
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            1
+          ],
+          "value": 32896
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            2
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            -2
+          ],
+          "value": -22016
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            -1
+          ],
+          "value": 55808
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            0
+          ],
+          "value": -316416
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            1
+          ],
+          "value": 55808
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            2
+          ],
+          "value": -22016
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            -2
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            -1
+          ],
+          "value": 32896
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            0
+          ],
+          "value": 55808
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            1
+          ],
+          "value": 32896
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            2
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            0,
+            2,
+            -2
+          ],
+          "value": 640
+        },
+        {
+          "displacement": [
+            0,
+            2,
+            -1
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            0,
+            2,
+            0
+          ],
+          "value": -22016
+        },
+        {
+          "displacement": [
+            0,
+            2,
+            1
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            0,
+            2,
+            2
+          ],
+          "value": 640
+        },
+        {
+          "displacement": [
+            1,
+            -2,
+            -1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            1,
+            -2,
+            0
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            1,
+            -2,
+            1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            1,
+            -1,
+            -2
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            1,
+            -1,
+            -1
+          ],
+          "value": -33024
+        },
+        {
+          "displacement": [
+            1,
+            -1,
+            0
+          ],
+          "value": 32896
+        },
+        {
+          "displacement": [
+            1,
+            -1,
+            1
+          ],
+          "value": -33024
+        },
+        {
+          "displacement": [
+            1,
+            -1,
+            2
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            -2
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            -1
+          ],
+          "value": 32896
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            0
+          ],
+          "value": 55808
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            1
+          ],
+          "value": 32896
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            2
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            1,
+            1,
+            -2
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            1,
+            1,
+            -1
+          ],
+          "value": -33024
+        },
+        {
+          "displacement": [
+            1,
+            1,
+            0
+          ],
+          "value": 32896
+        },
+        {
+          "displacement": [
+            1,
+            1,
+            1
+          ],
+          "value": -33024
+        },
+        {
+          "displacement": [
+            1,
+            1,
+            2
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            1,
+            2,
+            -1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            1,
+            2,
+            0
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            1,
+            2,
+            1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            2,
+            -2,
+            0
+          ],
+          "value": 640
+        },
+        {
+          "displacement": [
+            2,
+            -1,
+            -1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            2,
+            -1,
+            0
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            2,
+            -1,
+            1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            2,
+            0,
+            -2
+          ],
+          "value": 640
+        },
+        {
+          "displacement": [
+            2,
+            0,
+            -1
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            2,
+            0,
+            0
+          ],
+          "value": -22016
+        },
+        {
+          "displacement": [
+            2,
+            0,
+            1
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            2,
+            0,
+            2
+          ],
+          "value": 640
+        },
+        {
+          "displacement": [
+            2,
+            1,
+            -1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            2,
+            1,
+            0
+          ],
+          "value": -2944
+        },
+        {
+          "displacement": [
+            2,
+            1,
+            1
+          ],
+          "value": 1920
+        },
+        {
+          "displacement": [
+            2,
+            2,
+            0
+          ],
+          "value": 640
+        }
+      ]
+    }
+  ]
+}

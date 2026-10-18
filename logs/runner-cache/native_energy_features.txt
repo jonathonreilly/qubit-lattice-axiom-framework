@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/native_energy_features.py
+runner_sha256: 59e96574b39efff09555034aa79385facd257dcfd8b9efb923640b39b4287078
+input_fingerprint_sha256: 54c4e6080e4bfaea96959d2d5371e625492fc34473550c6ed502e9f6c9ac8d72
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 16.13
+status: ok
+----- stdout -----
+reproduced compass_energy_bridge
+reproduced compass_thermal_bridge
+reproduced compass_energy_modes
+reproduced energy_large_feature
+reproduced thermal_dense_control
+reproduced energy_current_identity
+reproduced independent_thermal_extension
+reproduced independent_energy_modes
+per_element: exact native current and independent Pauli coefficients checked
+per_site: actual one-qubit local algebra; no new interaction
+per_mode: mixed response and slow-feature residual checked; particle pole not established
+per_block: Gaussian source profiles are supplied diagnostic preparations
+lattice_wide: uniform finite-temperature conclusion uses cited clustering theorem and explicit source proof, not numerical extrapolation
+
+----- stderr -----
+

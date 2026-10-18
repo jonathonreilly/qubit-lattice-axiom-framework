@@ -31,3 +31,6 @@ reachability_to_target: partially_closes
 artifact_role: theorem
 next_trace_action: control native higher orders and find physically suitable propagation before identifying a scalar
 The order-six mode/readout are derived within the supplied model and selected sector. Negative curvature prevents relativistic-scalar identification.
+
+## Four-column competition block
+Original one-qubit H -> canonical competing order-four terms -> fixed ratio -> projected original observable -> full finite coefficient spectra and charge-sector readout differences. trace_class: upstream_support; target is user large-feature mode/coupling; reachability_to_target: partially_closes. Next action: remove supplied open ends by deriving dynamics of finite segments in the uncut bulk.

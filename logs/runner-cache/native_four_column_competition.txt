@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/native_four_column_competition.py
+runner_sha256: becd7d23818e38b6cc04434bf0aad8c8a266f6aed385fd6ba3685f95ed83b68b
+input_fingerprint_sha256: 280d1fee4e83539d1c226caf54428d188d97d44b9acdc925e6601d189a037763
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 5.11
+status: ok
+----- stdout -----
+per_site: one physical qubit, supplied directional Hamiltonian
+per_mode: neutral peak and microscopic readout derived in finite leading model
+per_block: short replays pass; large-grid results explicitly frozen
+lattice_wide: open ends and state are premises; no bulk TOE closure
+
+----- stderr -----
+

@@ -1,0 +1,66 @@
+{
+  "nx": 5,
+  "ny": 5,
+  "t_over_K": 0.8888888888888888,
+  "ground_energy": -46.242780098245724,
+  "ground_residual": 2.50345714505697e-12,
+  "rows": [
+    {
+      "mx": 0,
+      "my": 0,
+      "qx": 0.0,
+      "qy": 0.0,
+      "gap": 11.972630935245876,
+      "weight": 0.9065084432178258,
+      "source_norm2": 1.0642325046463748,
+      "residual": 6.517732666608723e-13,
+      "auxiliary_second_order_prediction": 12.862847222222221
+    },
+    {
+      "mx": 1,
+      "my": 0,
+      "qx": 1.2566370614359172,
+      "qy": 0.0,
+      "gap": 13.09992572791758,
+      "weight": 0.9093285694920731,
+      "source_norm2": 0.9993723836113793,
+      "residual": 5.519394360482261e-13,
+      "auxiliary_second_order_prediction": 13.448784722222221
+    },
+    {
+      "mx": 0,
+      "my": 1,
+      "qx": 0.0,
+      "qy": 1.2566370614359172,
+      "gap": 13.099925727917578,
+      "weight": 0.9093285694920729,
+      "source_norm2": 0.9993723836113795,
+      "residual": 2.730312276391544e-13,
+      "auxiliary_second_order_prediction": 13.448784722222221
+    },
+    {
+      "mx": 1,
+      "my": 1,
+      "qx": 1.2566370614359172,
+      "qy": 1.2566370614359172,
+      "gap": 13.983403469979404,
+      "weight": 0.9427753775527706,
+      "source_norm2": 0.9584248832229251,
+      "residual": 3.169843143778177e-14,
+      "auxiliary_second_order_prediction": 13.800347222222221
+    },
+    {
+      "mx": 2,
+      "my": 0,
+      "qx": 2.5132741228718345,
+      "qy": 0.0,
+      "gap": 13.099925727917581,
+      "weight": 0.9093285694920726,
+      "source_norm2": 0.9993723836113797,
+      "residual": 1.5371370044686352e-13,
+      "auxiliary_second_order_prediction": 13.448784722222221
+    }
+  ],
+  "elapsed": 1.7443132400512695,
+  "scope": "finite full leading coefficient model; strong-X prediction is auxiliary, uncontrolled at native ratio"
+}

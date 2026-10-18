@@ -16,3 +16,6 @@ Positive four-column parity is now energetically favored for fixedfiniteL>=5 at 
 
 ## Order-six column collective mode
 Supplied directional Hamiltonian, anisotropy, open L6 columns, even transverse periods >6, + logical row/column-X symmetry sector and P+ prepared vacuum remain explicit. Derived six-edge coefficient, complete leading source component, direct/mixing originalC coupling. Common sixth-order singleP shift uncomputed. No measured detector or cosmological mapping. All numerical cases exposed model development, no empirical test.
+
+## Four-column competition block
+Open length-four ends, supplied anisotropy and H, explicit subsystem sector and finite torus remain premises. Ratio and readout coefficients computed rather than fitted. Nonzero-q tests concern plaquette source, not full original Cq. Small K/t droplet expansion auxiliary; native9/8 not controlled. Frozen large-grid source/result hashes are development evidence, not independent observational tests.

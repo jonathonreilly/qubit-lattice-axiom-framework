@@ -1,0 +1,217 @@
+{
+  "input_sha256": {
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_four_column_droplet.py": "598850503bcd75ac95af6bed08ea2fbf2c5cdec0eed5f0c94ca24eb2a1fb3954",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_four_column_model_v2.py": "4b0cba139a151786bb09337c078d8ff6bd27949defcef0b71f2b7f140f20fc4c",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_four_column_charges.py": "f21c9b1688fe606f7052b55efd8d7a649c9610664b80a2df2b6d5a59416ae9a5",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_four_column_momentum.py": "7f29270d1400dc3ffac919be826dc554c9920a5792194d0eb4c7e76e1a4085ff",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_four_column_model.py": "295efcbe31214e8d26a40a04c7c7fcf3d70622a11417734569e728cadf8f51a0",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_four_column_momentum_six.py": "61525efd7e2944d2c6c4186ff473fae8406b197c5cf25f0126c41a1dd274f527",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_four_column_native.py": "213703a79f0645b23c54e5d27224c398fe4d8ccc1c92568bbcf2189782f88d07",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/column_four_results/neutral_four_column_momentum_5x5_t0.8889.json": "f4ad77035c426e3a2ca43f539c5876cbd1726b4d787e0011d475e3f04f98665c",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/column_four_results/neutral_four_column_charges_5x6.json": "7262149d56ead2210249b99b9dc5134865efbb771a8765a5bfbc32b6d4066aee",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/column_four_results/neutral_four_column_5x6.json": "1fb5fd6fe10c54b2c10d50dc23859e7f85d0ddeebb633e19a482893af6dcc8fa",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/column_four_results/neutral_four_column_droplet.json": "c55b488bb61e9af0bf0ccfa8f6e990f7d05920e0dd6dffc6e76120ea5bcf849e",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/column_four_results/neutral_four_column_6x6.json": "93dac5123f0124704b4698610cb9063b7e9298125f4b938bc7d6e14af4c350e8",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/column_four_results/neutral_four_column_momentum_6x6_t0.8889.json": "7d837654948d9f6b9f68f3babfd0f2bad2c9a8c6f871d7de3c303b46329fc5ac",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/column_four_results/neutral_four_column_momentum_5x5_t4.0000.json": "f693745f33dd61c489429b45f6b60ecafe943725a15f124676fb66dafe3c8b7b",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/column_four_results/neutral_four_column_native.json": "ff3a670e4c6ba79681d1eced452516210bf4a64583a25767bf80ceaae24bf48d",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/column_four_results/neutral_four_column_charges_5x5.json": "63cd43b0f10bf45c0f8d199bae7a1bbd7cf8dd2994721084321c1a8417deb1dd",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/column_four_results/neutral_four_column_5x5.json": "092fb78e1a3d4d08f38968ddb217cc30de65c3329ce7ad53e18d5dfb15548c33",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/column_four_results/PROVENANCE.json": "db617f5c9a188723cfc26b2647564e84abe173673fab1d57168ec5272a4349b5"
+  },
+  "short_replays": {
+    "momentum": {
+      "nx": 5,
+      "ny": 5,
+      "t_over_K": 0.8888888888888888,
+      "ground_energy": -46.242780098245724,
+      "ground_residual": 2.50345714505697e-12,
+      "rows": [
+        {
+          "mx": 0,
+          "my": 0,
+          "qx": 0.0,
+          "qy": 0.0,
+          "gap": 11.972630935245876,
+          "weight": 0.9065084432178258,
+          "source_norm2": 1.0642325046463748,
+          "residual": 6.517732666608723e-13,
+          "auxiliary_second_order_prediction": 12.862847222222221
+        },
+        {
+          "mx": 1,
+          "my": 0,
+          "qx": 1.2566370614359172,
+          "qy": 0.0,
+          "gap": 13.09992572791758,
+          "weight": 0.9093285694920731,
+          "source_norm2": 0.9993723836113793,
+          "residual": 5.519394360482261e-13,
+          "auxiliary_second_order_prediction": 13.448784722222221
+        },
+        {
+          "mx": 0,
+          "my": 1,
+          "qx": 0.0,
+          "qy": 1.2566370614359172,
+          "gap": 13.099925727917578,
+          "weight": 0.9093285694920729,
+          "source_norm2": 0.9993723836113795,
+          "residual": 2.730312276391544e-13,
+          "auxiliary_second_order_prediction": 13.448784722222221
+        },
+        {
+          "mx": 1,
+          "my": 1,
+          "qx": 1.2566370614359172,
+          "qy": 1.2566370614359172,
+          "gap": 13.983403469979404,
+          "weight": 0.9427753775527706,
+          "source_norm2": 0.9584248832229251,
+          "residual": 3.169843143778177e-14,
+          "auxiliary_second_order_prediction": 13.800347222222221
+        },
+        {
+          "mx": 2,
+          "my": 0,
+          "qx": 2.5132741228718345,
+          "qy": 0.0,
+          "gap": 13.099925727917581,
+          "weight": 0.9093285694920726,
+          "source_norm2": 0.9993723836113797,
+          "residual": 1.5371370044686352e-13,
+          "auxiliary_second_order_prediction": 13.448784722222221
+        }
+      ],
+      "elapsed": 1.2984049320220947,
+      "scope": "finite full leading coefficient model; strong-X prediction is auxiliary, uncontrolled at native ratio"
+    },
+    "charges": {
+      "nx": 5,
+      "ny": 5,
+      "dimension": 65536,
+      "rows": [
+        {
+          "sector": "vacuum",
+          "sites": [],
+          "energy": -46.24278009824589,
+          "gap": 0.0,
+          "residual": 5.240085810473925e-13,
+          "source_overlap2": 1.0000000000000164,
+          "plaquette_mean": 3.699796253952684,
+          "plaquette_difference": 0.0,
+          "native_readout_charge_over_lambda4": 0.0,
+          "native_readout_charge_over_mass_Jz": null
+        },
+        {
+          "sector": "single",
+          "sites": [
+            [
+              4,
+              4
+            ]
+          ],
+          "energy": -39.653872143691586,
+          "gap": 6.588907954554301,
+          "residual": 2.3033112971528635e-11,
+          "source_overlap2": 0.9686295148977431,
+          "plaquette_mean": 4.904493748699132,
+          "plaquette_difference": 1.2046974947464477,
+          "native_readout_charge_over_lambda4": 2.8079306408607154,
+          "native_readout_charge_over_mass_Jz": 3.0304728670025343
+        },
+        {
+          "sector": "vertical_dipole",
+          "sites": [
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "energy": -38.16355204543973,
+          "gap": 8.079228052806158,
+          "residual": 2.551989697100192e-12,
+          "source_overlap2": 0.26547139094308114,
+          "plaquette_mean": 7.045401244320182,
+          "plaquette_difference": 3.345604990367498,
+          "native_readout_charge_over_lambda4": 3.486836951739336,
+          "native_readout_charge_over_mass_Jz": 3.0690165976357413
+        },
+        {
+          "sector": "separated_vertical",
+          "sites": [
+            [
+              2,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "energy": -34.626103826795394,
+          "gap": 11.616676271450494,
+          "residual": 5.336532041089322e-13,
+          "source_overlap2": 0.16367320955956605,
+          "plaquette_mean": 9.291061220372924,
+          "plaquette_difference": 5.5912649664202405,
+          "native_readout_charge_over_lambda4": 5.031830574668652,
+          "native_readout_charge_over_mass_Jz": 3.080218943235389
+        },
+        {
+          "sector": "horizontal_dipole",
+          "sites": [
+            [
+              4,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "energy": -38.16355204543967,
+          "gap": 8.079228052806215,
+          "residual": 2.5470300114731873e-12,
+          "source_overlap2": 0.26547139094308086,
+          "plaquette_mean": 7.045401244320157,
+          "plaquette_difference": 3.345604990367473,
+          "native_readout_charge_over_lambda4": 3.4868369517393596,
+          "native_readout_charge_over_mass_Jz": 3.0690165976357404
+        }
+      ],
+      "elapsed": 0.3890259265899658,
+      "scope": "Selected subsystem-charge sectors of leading coefficient model; no full native pole or particle statistics identification"
+    },
+    "native": [
+      {
+        "lam": 0.1,
+        "max_residual": 6.691900465254011e-12,
+        "minimum_aligned_overlap": 0.9968629685756631,
+        "H_coefficient_error": 0.005719775260086768,
+        "C_coefficient_error": 0.027132087415088213,
+        "H_plaquette": -0.14047757115442924,
+        "H_pair": -0.12398109110753516,
+        "C_plaquette": -0.39819020301312674,
+        "C_pair": -0.37008257997289384
+      },
+      {
+        "lam": 0.2,
+        "max_residual": 9.4450673659583e-12,
+        "minimum_aligned_overlap": 0.9873139053343497,
+        "H_coefficient_error": 0.022265831652577426,
+        "C_coefficient_error": 0.10463921524111576,
+        "H_plaquette": -0.14004101889848738,
+        "H_pair": -0.12100028872965536,
+        "C_plaquette": -0.3973731814395711,
+        "C_pair": -0.355843539573082
+      }
+    ]
+  },
+  "large_grid_status": "Frozen source-bound development results verified by hash; 5x6 and 6x6 not replayed by this runner",
+  "scope": "Conditional leading coefficient model and finite native checks; no empirical test or infinite-volume scalar identification"
+}

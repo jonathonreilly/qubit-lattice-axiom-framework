@@ -1,0 +1,104 @@
+{
+  "diagonal": "-13/24",
+  "q0": "-29/24",
+  "curvature": "25/48",
+  "hops": [
+    {
+      "dx": -2,
+      "dy": -1,
+      "intermediate_energy": 28,
+      "hopping": "-1/48"
+    },
+    {
+      "dx": -2,
+      "dy": 0,
+      "intermediate_energy": 24,
+      "hopping": "-1/16"
+    },
+    {
+      "dx": -2,
+      "dy": 1,
+      "intermediate_energy": 28,
+      "hopping": "-1/48"
+    },
+    {
+      "dx": -1,
+      "dy": -2,
+      "intermediate_energy": 28,
+      "hopping": "-1/48"
+    },
+    {
+      "dx": -1,
+      "dy": 0,
+      "intermediate_energy": 24,
+      "hopping": "-1/16"
+    },
+    {
+      "dx": -1,
+      "dy": 2,
+      "intermediate_energy": 28,
+      "hopping": "-1/48"
+    },
+    {
+      "dx": 0,
+      "dy": -2,
+      "intermediate_energy": 24,
+      "hopping": "-1/16"
+    },
+    {
+      "dx": 0,
+      "dy": -1,
+      "intermediate_energy": 24,
+      "hopping": "-1/16"
+    },
+    {
+      "dx": 0,
+      "dy": 1,
+      "intermediate_energy": 24,
+      "hopping": "-1/16"
+    },
+    {
+      "dx": 0,
+      "dy": 2,
+      "intermediate_energy": 24,
+      "hopping": "-1/16"
+    },
+    {
+      "dx": 1,
+      "dy": -2,
+      "intermediate_energy": 28,
+      "hopping": "-1/48"
+    },
+    {
+      "dx": 1,
+      "dy": 0,
+      "intermediate_energy": 24,
+      "hopping": "-1/16"
+    },
+    {
+      "dx": 1,
+      "dy": 2,
+      "intermediate_energy": 28,
+      "hopping": "-1/48"
+    },
+    {
+      "dx": 2,
+      "dy": -1,
+      "intermediate_energy": 28,
+      "hopping": "-1/48"
+    },
+    {
+      "dx": 2,
+      "dy": 0,
+      "intermediate_energy": 24,
+      "hopping": "-1/16"
+    },
+    {
+      "dx": 2,
+      "dy": 1,
+      "intermediate_energy": 28,
+      "hopping": "-1/48"
+    }
+  ],
+  "scope": "Auxiliary K/t expansion of native-derived coefficient model; fixednative K/t=9/8 not assumed perturbatively controlled"
+}

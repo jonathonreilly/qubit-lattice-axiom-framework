@@ -34,3 +34,6 @@ Column plaquette/readout source-bound replay passed53.213425 seconds. Exact24-lo
 
 ## Column collective-mode block
 Focused independent six-loop, star/dispersion and source checks PASS. Astra-low final review PASS after narrowing finite matrices to + row/column-X symmetry quotient and periods >6. Original full-space wording was overbroad and corrected. No audit verdict. Replay separately source-bound.
+
+## Four-column competition
+Independent coefficient classification, all-length readout derivative, quotient/charge representations and auxiliary droplet checks PASS. Final review PASS after documenting the uncommitted 6x6 ground checkpoint dependency and ordered regeneration recipe. Short aggregate replays native16-qubit, exact droplet and5x5 spectra; larger grids remain explicitly frozen/hash-bound. No formal audit verdict applied.

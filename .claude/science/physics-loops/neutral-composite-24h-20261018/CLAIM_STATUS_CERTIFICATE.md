@@ -38,3 +38,6 @@ proposal_allowed_reason: supplied Hamiltonian/state/anisotropy; missing native p
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 review_loop_disposition: pass
+
+## Four-column competition block
+Status: conditional-support. Derived complete leading L4 column operator and original readout at fixed native ratio8/9; checked full physical16-qubit matrices and complete finite coefficient spectra through6x6. Auxiliary droplet expansion has positive curvature25/48 but is uncontrolled at native ratio. Static charged-feature readouts are nonuniversal within this model; no physical equivalence-principle conclusion. No exact infinite-volume pole, empirical scalar or TOE claim.

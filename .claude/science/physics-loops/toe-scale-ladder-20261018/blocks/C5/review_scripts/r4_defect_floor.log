@@ -4,3 +4,8 @@ PASS: worker defect figure reproduced to within a factor 2 (own sup 1.99e-06 vs 
 PASS: W3 = -1 converged on three independent grids (|W3+1| < 1e-6)
 PASS: own analytic Jacobian matches finite difference
 own LM stage 0: cost 1.452e-10  sup defect 1.864e-06  W3(N=40) -1.000000  min|det| 1.00000  t=407s
+own LM stage 1: cost 1.268e-10  sup defect 1.625e-06  W3(N=40) -1.000000  min|det| 1.00000  t=828s
+final sup defect 1.6250e-06 (start 1.9892e-06); cost 1.2676e-10 (start 1.6862e-10)
+PASS: all continuation iterates keep integer W3 (no silent crossing of det = 0)
+PASS: no exact (defect < 1e-10) range-2 unitary with W3 = -1 reached (Theorem K consistency)
+TOTAL: PASS=5 FAIL=0

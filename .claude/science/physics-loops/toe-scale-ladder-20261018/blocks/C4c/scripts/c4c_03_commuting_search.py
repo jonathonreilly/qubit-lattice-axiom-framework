@@ -62,8 +62,8 @@ for mi, m0 in enumerate(maps[:1]):          # member 0 against every overlapping
         img = [tuple(int(v) for v in m1(np.array(s))) for s in S]
         for t in itertools.product(range(-4, 5), repeat=3):
             other = [tuple(np.add(s, t)) for s in img]
-            if mj == 0 and t == (0, 0, 0):
-                continue
+            if mj == 0 and (t <= (0, 0, 0)):
+                continue   # t and -t give equivalent conditions for translates
             if not set(base) & set(other):
                 continue
             if set(base) == set(other) and mj != 0:
@@ -90,8 +90,7 @@ def jac(x):
     blocks = []
     for A, Bt in jobs:
         h = np.tensordot(x, A, 1); g = np.tensordot(x, Bt, 1)
-        d = np.einsum('kij,jl->kil', A, g) - np.einsum('ij,kjl->kil', g, A) \
-            + np.einsum('ij,kjl->kil', h, Bt) - np.einsum('kij,jl->kil', Bt, h)
+        d = np.matmul(A, g) - np.matmul(g, A) + np.matmul(h, Bt) - np.matmul(Bt, h)
         d = d.reshape(P, -1)
         blocks += [d.real.T, d.imag.T]
     row = np.zeros((1, P)); row[0, ~isd] = 20 * x[~isd]

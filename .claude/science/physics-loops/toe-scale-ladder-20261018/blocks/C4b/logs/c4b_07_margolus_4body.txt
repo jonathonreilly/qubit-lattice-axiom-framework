@@ -1,0 +1,17 @@
+init=[(1, 1, 0), (1, 0, 2), (0, 2, 2), (0, 1, 1)] n=1 |supp|=1135 norm=1.000000 discarded=0.00e+00 <dCOM^2>=0.1096 P(|dCOM|>2)=0.0000
+init=[(1, 1, 0), (1, 0, 2), (0, 2, 2), (0, 1, 1)] n=2 |supp|=16728 norm=1.000000 discarded=5.62e-10 <dCOM^2>=0.2138 P(|dCOM|>2)=0.0000
+init=[(1, 1, 0), (1, 0, 2), (0, 2, 2), (0, 1, 1)] n=3 |supp|=37081 norm=1.000000 discarded=7.31e-09 <dCOM^2>=0.2332 P(|dCOM|>2)=0.0000
+init=[(1, 1, 0), (1, 0, 2), (0, 2, 2), (0, 1, 1)] n=4 |supp|=62351 norm=1.000000 discarded=1.69e-08 <dCOM^2>=0.2906 P(|dCOM|>2)=0.0000
+init=[(1, 1, 0), (1, 0, 2), (0, 2, 2), (0, 1, 1)] n=5 |supp|=87440 norm=1.000000 discarded=3.20e-08 <dCOM^2>=0.3221 P(|dCOM|>2)=0.0000
+init=[(1, 1, 0), (1, 0, 2), (0, 2, 2), (0, 1, 1)] n=6 |supp|=116960 norm=1.000000 discarded=5.34e-08 <dCOM^2>=0.3157 P(|dCOM|>2)=0.0000
+  -> P_far: [0.0, np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)]; <dCOM^2>: [np.float64(0.11), np.float64(0.214), np.float64(0.233), np.float64(0.291), np.float64(0.322), np.float64(0.316)]
+FAIL 4-cluster [(1, 1, 0), (1, 0, 2), (0, 2, 2), (0, 1, 1)]: weight transported beyond |dCOM|>2 grows with n (mobile cluster), pruning loss 5.3e-08
+init=[(3, 1, 2), (2, 3, 3), (3, 2, 1), (1, 2, 3)] n=1 |supp|=28 norm=1.000000 discarded=0.00e+00 <dCOM^2>=0.0527 P(|dCOM|>2)=0.0000
+init=[(3, 1, 2), (2, 3, 3), (3, 2, 1), (1, 2, 3)] n=2 |supp|=2233 norm=1.000000 discarded=0.00e+00 <dCOM^2>=0.1073 P(|dCOM|>2)=0.0000
+init=[(3, 1, 2), (2, 3, 3), (3, 2, 1), (1, 2, 3)] n=3 |supp|=9659 norm=1.000000 discarded=1.37e-09 <dCOM^2>=0.1105 P(|dCOM|>2)=0.0000
+init=[(3, 1, 2), (2, 3, 3), (3, 2, 1), (1, 2, 3)] n=4 |supp|=16287 norm=1.000000 discarded=3.68e-09 <dCOM^2>=0.1396 P(|dCOM|>2)=0.0000
+init=[(3, 1, 2), (2, 3, 3), (3, 2, 1), (1, 2, 3)] n=5 |supp|=22745 norm=1.000000 discarded=7.29e-09 <dCOM^2>=0.1584 P(|dCOM|>2)=0.0000
+init=[(3, 1, 2), (2, 3, 3), (3, 2, 1), (1, 2, 3)] n=6 |supp|=29278 norm=1.000000 discarded=1.28e-08 <dCOM^2>=0.1243 P(|dCOM|>2)=0.0000
+  -> P_far: [0.0, 0.0, np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)]; <dCOM^2>: [np.float64(0.053), np.float64(0.107), np.float64(0.111), np.float64(0.14), np.float64(0.158), np.float64(0.124)]
+FAIL 4-cluster [(3, 1, 2), (2, 3, 3), (3, 2, 1), (1, 2, 3)]: weight transported beyond |dCOM|>2 grows with n (mobile cluster), pruning loss 1.3e-08
+TOTAL: PASS=0 FAIL=2

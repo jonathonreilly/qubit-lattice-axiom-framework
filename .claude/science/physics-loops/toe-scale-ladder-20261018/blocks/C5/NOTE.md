@@ -221,9 +221,9 @@ paper.*
    - s3: 21 walks, shift–coin products for n = 2, 3, 4 up to range 5, Clifford maps and the covariant
      D2/D3/D4 walks. All have exact-grid W3 = 0 and unit-monomial determinant, and preimage-count
      degree 0 for 3 random regular values each.
-   - s5: unitaries solved for directly, with no structure imposed.
-   - s4: adversarial unconstrained fits to V_2 at ranges 1–2. They keep W3 = -1 only while the unitarity
-     defect stays positive.
+   - s5: generic moving unitaries solved for directly, with no structure imposed (4 with n = 2 and 2 with n = 4, range 1, all 27 hops nonzero). All have W3 = 0.
+   - s4/s4c/s4d: adversarial unconstrained fits to V_2 at ranges 1–2. They keep W3 = -1 only at a
+     positive unitarity defect, about 6e-3 at r = 1 and down to 1.8e-6 at r = 2 (see Corollary D).
 
 ## 7. Evidence and logs
 
@@ -234,7 +234,7 @@ paper.*
 | `scripts/s3_finite_range_battery.py` | 21 finite-range walks, exact grid; Lemma Q support; independent preimage degree | PASS=27 FAIL=0 |
 | `scripts/s4_adversarial_fit.py` | Fourier-truncation controls (W3 = -1, invertible, not unitary) at r = 1, 2; penalty continuation | PASS=17 FAIL=0. Run 1 was killed by the 30-min limit (log kept). Its content **falsified my stated prediction** that the penalty endpoints would become W3 = 0. That prediction was about the optimiser, not about K. The empirical assertions were replaced by integer-W3 checks; this is disclosed in the script |
 | `scripts/s4b_defect_floor.py`, `s4c_defect_floor_r1.py`, `s4d_pure_unitarity_from_s4b.py` | defect floors within W3 = -1 at r = 2 and r = 1 | s4c PASS=2, s4d PASS=2. The s4b penalty-stage log was stopped by me in its slow LM stage, and s4d continues it from the saved parameters |
-| `scripts/s5_generic_unitary_solutions.py` | generic moving unitaries solved for directly, no structure imposed | see log |
+| `scripts/s5_generic_unitary_solutions.py` | generic moving unitaries solved for directly, no structure imposed: 4 one-qubit and 2 two-qubit walks, range 1, all 27 hops nonzero, unitary to 1e-15 | PASS=6 FAIL=0, all exact-grid W3 = 0. Run 1 stalled in a range-2 finite-difference solve; its log is kept and r = 2 was dropped |
 
 Every number quoted above comes from these logs.
 

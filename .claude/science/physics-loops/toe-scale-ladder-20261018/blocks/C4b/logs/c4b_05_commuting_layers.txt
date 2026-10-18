@@ -11,3 +11,6 @@ composite: |supp alpha(X_0)| = 145, |supp alpha(Z_0)| = 145, Chebyshev range = 4
 tau = tr M has 24 monomials; nonconstant = True
 tau monomials (sorted): [(-4, -2, 0), (-4, 0, -2), (-4, 0, 2), (-4, 2, 0), (-2, -4, 0), (-2, 0, -4), (-2, 0, 4), (-2, 4, 0), (0, -4, -2), (0, -4, 2), (0, -2, -4), (0, -2, 4), (0, 2, -4), (0, 2, 4), (0, 4, -2), (0, 4, 2), (2, -4, 0), (2, 0, -4), (2, 0, 4), (2, 4, 0), (4, -2, 0), (4, 0, -2), (4, 0, 2), (4, 2, 0)]
 PASS composite: tau is nonconstant => ballistic spreading by C4 Theorem 2(c) (any range)
+iterate alpha^n(X_0): |supp| = [145, 633, 2449, 4369, 5921, 12841, 25089, 33697]  Chebyshev radius = [4, 8, 12, 16, 20, 24, 28, 32]
+PASS alpha^n(X_0) Chebyshev radius grows linearly (radius(8) >= 2*radius(1)*... i.e. >= 8)
+TOTAL: PASS=10 FAIL=0

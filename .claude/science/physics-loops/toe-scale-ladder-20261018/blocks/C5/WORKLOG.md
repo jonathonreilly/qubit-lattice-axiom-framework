@@ -54,3 +54,10 @@
 - s5: four generic exact range-1 one-qubit unitaries (27 nonzero hops, unitary 1e-15, moving) all W3 = 0.
   r = 2 and n = 4 trials running.
 - NOTE.md updated (Corollary D numbers, evidence table, disclosure of falsified optimizer prediction).
+
+## 22:35 UTC — wrap-up
+- s5 run 1 stalled in the r=2 finite-difference solve (log kept: s5_run1_stopped_in_r2_trial.log); rerun
+  without r=2: PASS=6 FAIL=0 (4 n=2 and 2 n=4 generic moving range-1 unitaries, W3 = 0).
+- Final logs: s1 19/0, s2 10/0, s3 27/0, s4 17/0, s4c 2/0, s4d 2/0, s5 6/0 (superseded/stopped logs kept).
+- Outcome: obstruction theorem (Theorem K, conditional on SK_1(C[Z^3]) = 0), sharp witness V_M
+  (O-covariant analytic, infinite range, W3 = -1/+2). Load-bearing: K step 2.

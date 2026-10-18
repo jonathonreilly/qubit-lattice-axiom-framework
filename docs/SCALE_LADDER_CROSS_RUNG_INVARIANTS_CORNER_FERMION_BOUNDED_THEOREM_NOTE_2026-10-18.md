@@ -210,6 +210,12 @@ A 12-hour campaign converted the strongest probe leads into proofs or decisive c
 
 The ladder does unify the lanes, but not by deriving everything from the finest rung. It gives three exact tools that every lane can use. It also collects what is left open onto a short list of shared primitives.
 
+**What the campaign added (2026-10-18).** A fourth tool appeared, and three of the probe reframings became proved or decisive statements.
+
+- **Fourth tool: the lattice fixes the species content at the top rung.** The gauge-dressed symmetry action forces even levels at the momenta fixed by commuting C2s, and odd filling then forces touchings at all of them. So the long-wavelength content is not free: in the corner model it is always one isotropic spin-½ pair plus three axis-labelled uniaxial pairs. This is a lattice LSM and doubling statement carried up the ladder: the top rung inherits a multiplicity structure, not just a class.
+- **Formation.** Rung-0 formation with random priorities is provably at the trivial fixed point. Any long-range structure in Records must therefore come from the Hamiltonian rung or from the start, and spatial Record frequencies are then consistent.
+- **Gravity.** Every gauge-invariant kernel gives a single cone, and lattice constraint closure selects DeWitt. The open gravity item is now precisely an underived seagull, which fixes the induced 1/G.
+
 **The three tools.**
 
 1. **Transport of invariants.** Data that no admissible coarse-graining can change can be computed at whichever rung is easiest, then used at any other:

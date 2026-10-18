@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_d4_cone_common_cone_spins_zero_one_two_2026_10_18.py
+runner_sha256: 230132e7b7c4b9ff2799ee5578d19e67e0a3e00d7e32f3820b8e1fd4f455775b
+input_fingerprint_sha256: cec3f5a6b9ad7fd7a67b1078117b3bb09d3c98db51239d7d7f20e2357d41c034
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 84.97
+status: ok
+----- stdout -----
+[PASS] H1 Kuhn, hypercubic lengths: the relative-strain least-squares metric (exact on constant metrics) reads the fifth zero-action direction at O(1)  exactness 1e-15; |L f| = 0.75, 0.69, 0.69
+[PASS] H2 Whitney Maxwell on the D4 cone: null directions = the 8 vertex gauge directions; leading symbol = continuum F^2/2  nullity 8, gauge rank 8, |QG| 2e-15; leading deviation 3.1e-08
+[PASS] H3 Whitney Maxwell on the D4 cone: 3 massless non-gauge directions (the continuum count; no partner modes); next eigenvalue O(1)  massless count 3; first massive 1.691
+[PASS] H4 photon on the D4 cone: both polarisations on one shell (nullity 8 -> 10) with no on-shell O(k^4) term (4 directions)  nullities [10, 10, 10, 10]; alpha -2.6e-09, -3.3e-07, -3.9e-07, -3.1e-07
+[PASS] H5 first on-shell correction at O(k^6): photon coefficient = -1/4 of the P1 scalar's (face, body, generic); both zero on the axis  scalar -0.00001 photon -0.00000; scalar +0.00052 photon -0.00013; scalar +0.00062 photon -0.00015; scalar +0.00049 photon -0.00012
+
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,263 @@
+{
+  "rows": [
+    {
+      "zsign": [
+        0,
+        0,
+        0
+      ],
+      "xsign": [
+        0,
+        0
+      ],
+      "energy": -27.164894425063462,
+      "residual": 1.7231510695261417e-09,
+      "calls": 138,
+      "seed": 7100,
+      "elapsed_total": 18.16701512504369
+    },
+    {
+      "zsign": [
+        0,
+        0,
+        0
+      ],
+      "xsign": [
+        0,
+        1
+      ],
+      "energy": -26.894236099823882,
+      "residual": 1.431524784168189e-09,
+      "calls": 154,
+      "seed": 7101,
+      "elapsed_total": 34.403731000144035
+    },
+    {
+      "zsign": [
+        0,
+        0,
+        0
+      ],
+      "xsign": [
+        1,
+        0
+      ],
+      "energy": -26.894236099823964,
+      "residual": 1.5864010706442474e-09,
+      "calls": 154,
+      "seed": 7102,
+      "elapsed_total": 50.058734042104334
+    },
+    {
+      "zsign": [
+        0,
+        0,
+        0
+      ],
+      "xsign": [
+        1,
+        1
+      ],
+      "energy": -26.577963797186275,
+      "residual": 1.8899065779889637e-09,
+      "calls": 162,
+      "seed": 7103,
+      "elapsed_total": 66.12682808330283
+    },
+    {
+      "zsign": [
+        0,
+        0,
+        1
+      ],
+      "xsign": [
+        0,
+        0
+      ],
+      "energy": -26.894236099823907,
+      "residual": 2.367371853282953e-09,
+      "calls": 138,
+      "seed": 7104,
+      "elapsed_total": 80.12299766717479
+    },
+    {
+      "zsign": [
+        0,
+        0,
+        1
+      ],
+      "xsign": [
+        0,
+        1
+      ],
+      "energy": -26.558746869575128,
+      "residual": 1.5634201361459711e-09,
+      "calls": 162,
+      "seed": 7105,
+      "elapsed_total": 95.91560854203999
+    },
+    {
+      "zsign": [
+        0,
+        0,
+        1
+      ],
+      "xsign": [
+        1,
+        0
+      ],
+      "energy": -26.558746869575113,
+      "residual": 1.5377861509053328e-09,
+      "calls": 170,
+      "seed": 7106,
+      "elapsed_total": 113.10112195834517
+    },
+    {
+      "zsign": [
+        0,
+        0,
+        1
+      ],
+      "xsign": [
+        1,
+        1
+      ],
+      "energy": -26.268317377753377,
+      "residual": 1.7299640200807206e-09,
+      "calls": 202,
+      "seed": 7107,
+      "elapsed_total": 133.85426933318377
+    },
+    {
+      "zsign": [
+        0,
+        1,
+        0
+      ],
+      "xsign": [
+        0,
+        0
+      ],
+      "energy": -26.577963797186243,
+      "residual": 1.1902095518971454e-09,
+      "calls": 162,
+      "seed": 7108,
+      "elapsed_total": 149.58702675020322
+    },
+    {
+      "zsign": [
+        0,
+        1,
+        0
+      ],
+      "xsign": [
+        0,
+        1
+      ],
+      "energy": -26.268317377753302,
+      "residual": 1.8306191148160947e-09,
+      "calls": 210,
+      "seed": 7109,
+      "elapsed_total": 171.04828125005588
+    },
+    {
+      "zsign": [
+        0,
+        1,
+        0
+      ],
+      "xsign": [
+        1,
+        0
+      ],
+      "energy": -26.268317377753277,
+      "residual": 1.3924217632011803e-09,
+      "calls": 202,
+      "seed": 7110,
+      "elapsed_total": 190.88622179208323
+    },
+    {
+      "zsign": [
+        0,
+        1,
+        0
+      ],
+      "xsign": [
+        1,
+        1
+      ],
+      "energy": -25.889050663849076,
+      "residual": 2.314122105390759e-09,
+      "calls": 322,
+      "seed": 7111,
+      "elapsed_total": 222.9704498751089
+    },
+    {
+      "zsign": [
+        0,
+        1,
+        1
+      ],
+      "xsign": [
+        0,
+        0
+      ],
+      "energy": -26.894236099823875,
+      "residual": 7.225179527448866e-10,
+      "calls": 146,
+      "seed": 7112,
+      "elapsed_total": 238.4290551673621
+    },
+    {
+      "zsign": [
+        0,
+        1,
+        1
+      ],
+      "xsign": [
+        0,
+        1
+      ],
+      "energy": -26.5587468695751,
+      "residual": 1.5347334951373212e-09,
+      "calls": 170,
+      "seed": 7113,
+      "elapsed_total": 255.2247155001387
+    },
+    {
+      "zsign": [
+        0,
+        1,
+        1
+      ],
+      "xsign": [
+        1,
+        0
+      ],
+      "energy": -26.558746869575202,
+      "residual": 9.682390224952279e-10,
+      "calls": 170,
+      "seed": 7114,
+      "elapsed_total": 272.10242479201406
+    },
+    {
+      "zsign": [
+        0,
+        1,
+        1
+      ],
+      "xsign": [
+        1,
+        1
+      ],
+      "energy": -26.26831737775322,
+      "residual": 1.7719024985971666e-09,
+      "calls": 210,
+      "seed": 7115,
+      "elapsed_total": 293.66713399998844
+    }
+  ],
+  "complete": true,
+  "equivalence": "one X-plane flips all3 Z-plane signs while preserving X-pair signs and H; first Zsign fixed0",
+  "scope": "Numerically lowest Ritz values; no interval certification of global lower spectral edge, no state-selection or bulk inference"
+}

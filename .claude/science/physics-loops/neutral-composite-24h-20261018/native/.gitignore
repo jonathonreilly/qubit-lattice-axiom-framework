@@ -4,3 +4,6 @@ __pycache__/
 
 # Reproducible correlated trial vectors, regenerate with cluster runner.
 cluster_*.npz
+
+# Reproducible selected-sector eigenvectors.
+stationary_*.npz

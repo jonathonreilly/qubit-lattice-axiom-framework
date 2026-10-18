@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "lanczos_gap": 1.7389723182719081,
+      "actual_rayleigh_gap": 1.738972318271916,
+      "full_residual": 3.9858660977621645e-07,
+      "source_weight": 0.003524947756929154,
+      "initial_overlap": 8.481171494267858e-17,
+      "norm": 1.0
+    },
+    {
+      "lanczos_gap": 2.132564259485475,
+      "actual_rayleigh_gap": 2.132564259485452,
+      "full_residual": 2.2455125756163652e-05,
+      "source_weight": 0.0007914891276445802,
+      "initial_overlap": -8.99548989984067e-17,
+      "norm": 1.0
+    },
+    {
+      "lanczos_gap": 2.642079811342992,
+      "actual_rayleigh_gap": 2.6420798113429846,
+      "full_residual": 0.0038621608918341507,
+      "source_weight": 3.066699125012874e-05,
+      "initial_overlap": 7.730361489821647e-17,
+      "norm": 1.0
+    }
+  ],
+  "scope": "Actual finite selected-sector full-H residual checks; residual implies nearby finite eigenvalue, not thermodynamic particle/pole or unique mode"
+}

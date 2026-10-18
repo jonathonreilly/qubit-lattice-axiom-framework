@@ -89,3 +89,31 @@ Previous turn was progress. Session87332 completed3x3x2 seed0: energy-1.17278874
 ## Correlated-state milestone packaging
 
 Canonical docs/NATIVE_CORRELATED_STATES_NOTE_2026-10-18.md and scripts/native_correlated_states.py created. Exact elementary lower E0/N>=-sqrt3 J plus explicit analytic upper -1153J/1056; wide bracket not a ground-error certificate. New aggregate reproduces14 calls including all cluster seeds/18site and neutral acceleration. LIVE session99513 aggregate; LIVE41534 citationbuild. Poll same handles. Independent source review requested large_feature_source_review, report /private/tmp/native-correlated-states-review.md pending. Vocab lint0violations, pycompile anddiffcheck pass. Need cache after any sourcefixes, citationmanifest, commit/push PR stacked9704 and attach. No scientific pole/measurement/state-selection conclusion.
+
+## Exact stationary-sector benchmark started
+
+Previous turn progress: published9706 at74513a2e5a34a068f5d4c1997d34e81fcddd40ca, attached. New branch codex/neutral-stationary-sectors-20261018. Exact CSS reduction: open3³,3Zplanes+2Xplanepairs, rank5,dimension2^22. All8smallcube sectors intertwine exactly; independent9,120checks acrossall32odd3³ sectors and centralC pass. Root matrixfree numba4thread solver LIVE session20107, max1800s,4eigenpairs allplussector. Poll same handle; no restart. No globalgroundselection. Native files compass_sector_basis/control/solve andSTATIONARY_SECTOR_DERIVATION.md. Next centralC spectral/response diagnostic in actual stationary vector, keeping finitevolume/sector limitations.
+
+## Stationary27-site response completed
+
+Root sessions20107 and79710 complete. Eigenpairs andC/e spectral diagnostics in stationary_3x3x3_plus.json andstationary_response.json. Cacceleration1.36e-12 vs trialorder6-9, weight2.61699134,centroid8.68135746,var7.76905182. First3excitedoverlaps negligible, not certifying lowfrequencygap.16/32/64smearedinverse moments converge. Selectedallplus openfinitegrid only, no globalground/bulkpole. Independent response check pending environment_equations, /private/tmp/native-stationary-response-check.md. Next mixedC/e response and othersectorcomparisons usingexactsector machinery. Allrootjobscomplete.
+
+## Mixed response and full-sector survey
+
+Root mixedC/e polarization completed session30326: covariance-.614711987245,normalizedoverlap-.719373624377;eta.1inversecross-.08798182520969 stable32to64. LocalC=2e²-3 identityerror4.94e-16. Native couplingchannel not universal/physicalidentification. Response checker report copied; changed inelastic label toconnected sourceweight (unknownzeroenergydegeneracy notexcluded). Full16sectorrepresentatives survey LIVE48080, exactglobalZsignflip equivalencecovers32. Firstallplusreplay E-27.16489442506346;nextXp01 E-26.89423609982388. Keep polling48080, partialJSON preserved; no restart. Allotherjobscomplete. Next finishsurvey andspatial/dynamical response limits before milestone.
+
+## Spatial stationary response
+
+Spatial script session47534 completed: all27C/e crosssources; uniformsource norm2.61e-13, responses sumzero. eta.1 center-.08798182521,faces+.002629433647,edges+.007331818767,corners-.001972075235. Independent smallgraph/spectral normalization andsectorpairing check copied;27cornernotindependentlyreplayed. LIVEsurvey48080 haspartialrows, andLIVE59428 reconstructsactualfullHvisibleRitzvectors tocheckindividualspectralnodes. Pollsamehandles. No force-law/globalground certificate.
+
+## Stationary milestone packaging and spatial-density limit
+
+Survey48080complete16representativescovers32sectors, allpluslowestfound. Formfactor39609complete, lowestC-visible approximatevector energytransitionparticipation3.88768,C5.83628;center49%energy,34%C weight, no uniformlargefeature demonstration. Canonical NATIVE_STATIONARY_RESPONSE_NOTE_2026-10-18.md andrunner native_stationary_response.py prepared. LIVE97682 fullaggregate+cache1200s includesfreshsolve/survey/responses; pollsame. Citationbuild launchedthisturn, session in tooloutput. Reviewlarge_feature_source_review finalbindingpending report /private/tmp/native-stationary-review.md; independently rechecked8siteCSS andboundaryCidentity. Corrected staleinprogresslanguage andqualifiednumericallylowestvector. Needaftercache/review:manifest,sourcehashes,stageexactfiles,PRstacked9706,attach. No physicalscalarclaim.
+
+## Stationary review completion
+
+Independent source review PASS copied to native/INDEPENDENT_STATIONARY_REVIEW.md. Citation graph finished7249nodes; manifest regenerated. Aggregate session97682 still running; poll same handle. Separate overall-scale boundary check passed with pole sign/regulator refinements applied; keep scale files for next block. Current sourcehashes refreshed, trace and claim certificate explicit. Root continues directly; no scheduler.
+
+Aggregate completed all calculations but cache identity guard rejected publication because root added unrelated files in parent input directories during execution. Source hashes unchanged; no scientific failure. Rerun with directory membership frozen. Smooth-source constraint and probe completed separately; exclude from stationary milestone.
+
+Stationary aggregate replay completed all8probes successfully in379.19s, cached at logs/runner-cache/native_stationary_response.txt. No input-directory changes during rerun. Independent source review PASS. Readiness checker reports checked:[] and no controlfailures; this is not scientific verification. Publish bounded-support stationary block; next block has exact neutral bond algebra, extra Y-pair symmetry reduction and smooth-source constraints in /private/tmp, not yet in this PR.

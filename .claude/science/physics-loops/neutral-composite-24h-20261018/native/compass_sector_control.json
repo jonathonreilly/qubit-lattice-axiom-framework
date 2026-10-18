@@ -1,0 +1,13 @@
+{
+  "shape": [
+    2,
+    2,
+    2
+  ],
+  "sectors": 8,
+  "dimension_each": 32,
+  "max_intertwiner_error": 0.0,
+  "spectrum_error": 1.5987211554602254e-14,
+  "larger_sector_dimension": 4194304,
+  "scope": "Exact symmetry coordinates checked against full open8-site Hamiltonian; no sector identified as global ground"
+}

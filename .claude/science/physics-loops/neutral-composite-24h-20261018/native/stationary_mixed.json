@@ -1,0 +1,23 @@
+{
+  "equal_time_covariance": -0.6147119872450361,
+  "normalized_equal_time_overlap": -0.7193736243766097,
+  "interior_identity_error": 4.942299894663696e-16,
+  "mixed_regularized_inverse_moments": {
+    "16": {
+      "0.1": -0.08798181667142918,
+      "0.5": -0.08746082638260072,
+      "1.0": -0.08590421741762913
+    },
+    "32": {
+      "0.1": -0.08798182520968262,
+      "0.5": -0.08746082318241644,
+      "1.0": -0.08590421328701825
+    },
+    "64": {
+      "0.1": -0.08798182520969008,
+      "0.5": -0.08746082318240886,
+      "1.0": -0.08590421328702198
+    }
+  },
+  "scope": "Finite selected-sector mixed spectral functional, not universal scalar coupling or independent empirical prediction; probe response does not add term to autonomous H"
+}

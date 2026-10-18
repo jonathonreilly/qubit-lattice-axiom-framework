@@ -1,6 +1,6 @@
 {
  "edge_count": 16244,
- "node_count": 7248,
+ "node_count": 7249,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15625,6 +15625,10 @@
   "native_star_thermodynamic_limit_note_2026-09-09": {
    "deps_hash": "a5940e8607f3",
    "out_degree": 5
+  },
+  "native_stationary_response_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "native_stronger_ward_estimators_note_2026-09-10": {
    "deps_hash": "17bc5a3da2a5",

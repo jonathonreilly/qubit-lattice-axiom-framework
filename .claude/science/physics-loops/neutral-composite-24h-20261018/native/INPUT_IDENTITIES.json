@@ -24,5 +24,14 @@
   ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_four_site_trial.py": "13e5cb62e26f18dede1c4aad37922d8e9c8f4c8fb128caefd2c58a1b31bf8fca",
   ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_full_dimer_map.py": "47a1db76749fb08e31b010740e771db74927576b831f9b019e5ca67c21a52e80",
   ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_cluster_neutral_acceleration.py": "bf4d86aa7d64eea468f71d545963638f91c8aae6b50a10ca21a525af6b79e9ca",
-  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_four_site_residual.py": "003eec88e86810079755b6b9fd3f90d2225b54ddf89d6d99c07996e51321bfc6"
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_four_site_residual.py": "003eec88e86810079755b6b9fd3f90d2225b54ddf89d6d99c07996e51321bfc6",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_visible_ritz.py": "9c69faa5388ffc94af863f4481ef077915ed9430533826d36ccac06a7a8d82ee",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_stationary_spatial.py": "a6e5b92d87b76a9bf04437799abfb5cbc57db7e2c718da138ba359846f444875",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_stationary_response.py": "e77de6959edc08de458e4c27f6a6a27367f6ab7cd1902ab54f35d04dcc08273e",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_control.py": "b72e613134547ae85f404a7af941c2daf9c92ec75841056e03b415a8e7bd892f",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_mode_form_factors.py": "47ed54116f08448cc1d51b48405ec7e83367ae0055cfd0230f78bc199ba78849",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_survey.py": "b7ce8302a6f3d85774c14277e2f35dca03910de83cf783625570d102a95d54d8",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_stationary_mixed.py": "790bc67c9db9e9515c7623b6f3d8c6dbe4b83435bf6caf08a09d4f296b0ff9d0"
 }

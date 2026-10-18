@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/native_stationary_response.py
+runner_sha256: 33e1dc26932b69c708006191a9b2233acaccf08f6e1db02340c3022d38323ba2
+input_fingerprint_sha256: 88c3d4e980447c07e0ccdc2c761bf58b6eb47103c35eb8b860bf2d37ff89c2bd
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 379.19
+status: ok
+----- stdout -----
+reproduced compass_sector_control
+reproduced compass_sector_solve
+reproduced compass_sector_survey
+reproduced compass_stationary_response
+reproduced compass_stationary_mixed
+reproduced compass_stationary_spatial
+reproduced compass_visible_ritz
+reproduced compass_mode_form_factors
+per_site: one physical qubit; no interaction added
+per_mode: actual finite full-H residuals retained; no bulk pole
+per_block: all32 sectors represented modulo checked unitary equivalence
+lattice_wide: scope is finite open27-site grid, not infinite-volume extrapolation
+
+----- stderr -----
+

@@ -1,0 +1,6 @@
+[PASS] G0 perm parts rebuilt: 2 x 64  
+[FAIL] the identity and the A0 permutation are G0 perm parts (chi = 1 and chi = A2)  
+[PASS] lemma: a R_L b (a, b in G0) has an s-independent support pattern only if both perm parts are 1 or the A0 permutation (all 128^2 pairs)  4 pattern-admissible pairs
+  distinct translation-invariant a R_L b: 16  [30s]
+  identified: Counter({'1+0j*R_L': 1, '0+1j*R_L': 1, '-1+0j*R_L': 1, '-0-1j*R_L': 1, '1+0j*R_L A0': 1, '0+1j*R_L A0': 1, '-1+0j*R_L A0': 1, '-0-1j*R_L A0': 1, '1+0j*A0 R_L': 1, '0+1j*A0 R_L': 1, '-1+0j*A0 R_L': 1, '-0-1j*A0 R_L': 1, '-1+0j*Rt': 1, '-0-1j*Rt': 1, '1+0j*Rt': 1, '0+1j*Rt': 1})
+[PASS] every translation-invariant a R_L b (a, b in G0, all phases) is z*{R_L, Rt, A0 R_L, R_L A0}: an old word up to a phase  

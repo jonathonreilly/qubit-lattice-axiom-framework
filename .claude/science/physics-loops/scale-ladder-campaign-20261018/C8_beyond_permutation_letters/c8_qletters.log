@@ -1,0 +1,39 @@
+[PASS] G_g D_Q G_g^-1 = D_{R_g Q} for all 24 dressed rotations and 8 Q (gauge signs cancel)  
+[PASS] O-orbits of Q in pi{0,1}^3 are {0}, {Pi}, {pi e_i}, {pi(e_i+e_j)}; O-fixed Q are exactly 0 and Pi  sizes [1, 1, 3, 3]
+[PASS] D_Pi commutes with S, A0 and on-site letters; anticommutes with R_L and Rt = A0 R_L A0^-1  
+[PASS] k* + Pi = -k* (mod 2 pi)  
+[PASS] every old word obeys W(k+Pi) = (-1)^{n_R} W(k) (the D_Pi 'letter' is the known Pi-taste, B18/B20)  
+[PASS] |O x 2Z^3| on L=4 = 192 and every element is a signed mode permutation  
+  orbit: sublattice class |s|=0, corner contains special axis=None: 12 modes per doubled cell, stabiliser order 2
+  orbit: sublattice class |s|=1, corner contains special axis=False: 12 modes per doubled cell, stabiliser order 2
+  orbit: sublattice class |s|=1, corner contains special axis=True: 24 modes per doubled cell, stabiliser order 1
+  orbit: sublattice class |s|=2, corner contains special axis=True: 24 modes per doubled cell, stabiliser order 1
+  orbit: sublattice class |s|=2, corner contains special axis=False: 12 modes per doubled cell, stabiliser order 2
+  orbit: sublattice class |s|=3, corner contains special axis=None: 12 modes per doubled cell, stabiliser order 2
+[PASS] 6 mode orbits per doubled cell: 000, 111, 100-perp, 110-perp (12 modes, stabiliser C2') and 100-par, 110-par (24 modes, free)  
+  orbit 0 (0, None, 12, 2): range<=1 targets x 2 characters = 648, valid pieces 6
+  orbit 1 (1, False, 12, 2): range<=1 targets x 2 characters = 648, valid pieces 6
+  orbit 2 (1, True, 24, 1): range<=1 targets x 2 characters = 648, valid pieces 336
+  orbit 3 (2, True, 24, 1): range<=1 targets x 2 characters = 648, valid pieces 336
+  orbit 4 (2, False, 12, 2): range<=1 targets x 2 characters = 648, valid pieces 6
+  orbit 5 (3, None, 12, 2): range<=1 targets x 2 characters = 648, valid pieces 6
+[PASS] free-orbit sources: a range<=1 target gives a (bijective) piece iff the target lies in a free orbit, for both characters (stabiliser argument)  mismatches 0
+  range-0 pieces per orbit (twist, target corner): {0: [(False, ((0, 1, 0), (1, 0, 0))), (True, ((-1, 0, 0), (0, -1, 0)))], 1: [(False, ((0, 1, 0), (1, 0, 0))), (True, ((-1, 0, 0), (0, -1, 0)))], 4: [(False, ((0, 0, 1), (0, 1, 0))), (True, ((0, -1, 0), (0, 0, -1)))], 5: [(False, ((0, 1, 0), (1, 0, 0))), (True, ((-1, 0, 0), (0, -1, 0)))]}
+[PASS] C2'-stabiliser orbits: no target admits both characters (the stabiliser sign fixes chi)  
+[PASS] range 0: each C2'-orbit has exactly one piece per character (identity for chi=1, antipodal for chi=A2); each free orbit 8 per character  {0: {False: 1, True: 1}, 1: {False: 1, True: 1}, 2: {False: 8, True: 8}, 3: {False: 8, True: 8}, 4: {False: 1, True: 1}, 5: {False: 1, True: 1}}
+  G0: 524288 letters (2 characters x 64 perm choices x 4^6 phases); translation-invariant: 8
+[PASS] translation-invariant members of G0 are exactly z*1 (chi=1) and z*A0 (chi=A2): 4+4 (pure-permutation reduction, range 0)  
+  conjugate scan done in 0s; distinct translation-invariant conjugates: 8
+   conjugate of R by G0 letter chi=1 perm-choice=(0, 0, 0, 0, 0, 0): reduces to u R u^-1 (solution-space dim 1); X in {+-R_L, +-Rt}: +R_L
+   conjugate of R by G0 letter chi=1 perm-choice=(0, 0, 0, 0, 0, 0): reduces to u None u^-1 (solution-space dim 0); X in {+-R_L, +-Rt}: -R_L
+   conjugate of R by G0 letter chi=A2 perm-choice=(0, 0, 3, 5, 0, 0): reduces to u R u^-1 (solution-space dim 1); X in {+-R_L, +-Rt}: +Rt
+   conjugate of R by G0 letter chi=A2 perm-choice=(0, 0, 3, 5, 0, 0): reduces to u None u^-1 (solution-space dim 0); X in {+-R_L, +-Rt}: -Rt
+   conjugate of Rt by G0 letter chi=1 perm-choice=(0, 0, 0, 0, 0, 0): reduces to u R u^-1 (solution-space dim 1); X in {+-R_L, +-Rt}: +Rt
+   conjugate of Rt by G0 letter chi=1 perm-choice=(0, 0, 0, 0, 0, 0): reduces to u None u^-1 (solution-space dim 0); X in {+-R_L, +-Rt}: -Rt
+   conjugate of Rt by G0 letter chi=A2 perm-choice=(0, 0, 3, 5, 0, 0): reduces to u R u^-1 (solution-space dim 1); X in {+-R_L, +-Rt}: +R_L
+   conjugate of Rt by G0 letter chi=A2 perm-choice=(0, 0, 3, 5, 0, 0): reduces to u None u^-1 (solution-space dim 0); X in {+-R_L, +-Rt}: -R_L
+[PASS] every translation-invariant conjugate P M P^-1 is O-symmetric and translation invariant in real space (L=4)  8 distinct
+[PASS] every translation-invariant conjugate P R_L P^-1 / P Rt P^-1 (range-0 P in G0, all 524288) is one of +-R_L, +-Rt (old letters)  non-reducible: 0
+[PASS] every such conjugate is scalar on D+ and D- at +-k* with zero compressed derivative (no new velocity source)  max speed 2.0e-16
+
+TOTAL: PASS=14 FAIL=0   [39s]

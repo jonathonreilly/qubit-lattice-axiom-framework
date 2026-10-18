@@ -1,0 +1,35 @@
+  screen_one_PC_0-60.pkl: 5368 levels
+  screen_one_PHL_0-8.pkl: 11704 levels
+  screen_onesample_PC_60-348_40.pkl: 12468 levels
+  screen_two_0-4.pkl: 28896 levels
+  screen_twosample_0-84_120.pkl: 11224 levels
+totals: {'levels': 69660, 'D-': 30251, 'fermi': 69021, 'D+': 30273, 'D+D-': 9136, 'survivors': 639, 'early': 278}
+defective-node (point class, defect) counts among survivors: {('generic', 'tilt'): 10543, ('generic', 'aniso'): 3221, ('generic', 'band'): 526, ('cube', 'aniso'): 474, ('M_pi', 'aniso'): 282, ('X_pi', 'aniso'): 282, ('pi/4:1,3,3', 'aniso'): 222, ('pi/4:1,1,3', 'aniso'): 222, ('pi/4:1,3,3', 'tilt'): 198, ('pi/4:1,1,3', 'tilt'): 198, ('cube', 'flat'): 192, ('pi/4:2,2,3', 'flat'): 156, ('pi/4:1,2,2', 'flat'): 156, ('(1,1/2,1/2)pi', 'aniso'): 135, ('M_r', 'aniso'): 135, ('(0,1/2,1)pi', 'aniso'): 108, ('R_pi', 'aniso'): 94, ('Gamma', 'aniso'): 94, ('(0,1/2,1)pi', 'flat'): 84, ('(1,1/2,1/2)pi', 'flat'): 81}
+-k* status among survivors (multiplicity, verdict): {(8, 'aniso'): 180, 'not at E': 371, (10, 'flat'): 9, (4, 'ok'): 67, (2, 'ok'): 12}
+most common obstruction sets:
+    130  [('cube', 8, 'aniso')]
+    126  [('generic', 2, 'tilt')]
+    100  [('generic', 2, 'aniso'), ('generic', 2, 'tilt')]
+     75  [('generic', 2, 'aniso')]
+     38  [('generic', 1, 'band'), ('generic', 2, 'tilt')]
+     24  [('cube', 4, 'aniso'), ('cube', 8, 'aniso')]
+     22  [('generic', 1, 'band'), ('generic', 2, 'aniso'), ('generic', 2, 'tilt')]
+     13  [('Gamma', 2, 'aniso'), ('M_pi', 2, 'aniso'), ('R_pi', 2, 'aniso'), ('X_pi', 2, 'aniso')]
+      9  [('Gamma', 2, 'flat'), ('M_pi', 2, 'flat'), ('R_pi', 2, 'flat'), ('X_pi', 2, 'flat'), ('cube', 4, 'aniso')]
+      7  [('(1,1/2,1/2)pi', 2, 'flat'), ('Gamma', 4, 'aniso'), ('M_pi', 4, 'aniso'), ('M_r', 2, 'flat'), ('R_pi', 4, 'aniso'), ('X_pi', 4, 'aniso')]
+      7  [('Gamma', 4, 'aniso'), ('M_pi', 4, 'aniso'), ('R_pi', 4, 'aniso'), ('X_pi', 4, 'aniso'), ('cube', 4, 'flat'), ('cube', 8, 'aniso')]
+      6  [('Gamma', 2, 'aniso'), ('M_pi', 2, 'aniso'), ('R_pi', 2, 'aniso'), ('X_pi', 2, 'aniso'), ('cube', 4, 'flat')]
+fewest defective nodes (early = rejected at the first defective (pi/4)Z^3 node, so counts are lower bounds):
+   (1, ('E+', 'S', 'o'), ('L033',), -0.7854, 'D+D-', [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso')], True)
+   (1, ('E+', 'Si', 'o'), ('L033',), -0.7854, 'D+D-', [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso')], True)
+   (1, ('S', 'E+', 'o'), ('L033',), -0.7854, 'D+D-', [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso')], True)
+   (1, ('Si', 'E+', 'o'), ('L033',), -0.7854, 'D+D-', [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso')], True)
+   (1, ('E+', 'Rt', 'S', 'o'), ('L011',), -0.7854, 'D+D-', [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso')], True)
+   (1, ('E+', 'Rt', 'Si', 'o'), ('L011',), -0.7854, 'D+D-', [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso')], True)
+   (1, ('E+', 'S', 'R', 'o'), ('L011',), 2.3562, 'D+D-', [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso')], True)
+   (1, ('E+', 'S', 'Rt', 'o'), ('L011',), -0.7854, 'D+D-', [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso')], True)
+   (1, ('E+', 'Si', 'R', 'o'), ('L011',), 2.3562, 'D+D-', [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso')], True)
+   (1, ('E+', 'Si', 'Rt', 'o'), ('L011',), -0.7854, 'D+D-', [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso')], True)
+[PASS] aggregate: screen pickles found and no level passes the closure criterion  clean = 0
+
+TOTAL: PASS=1 FAIL=0

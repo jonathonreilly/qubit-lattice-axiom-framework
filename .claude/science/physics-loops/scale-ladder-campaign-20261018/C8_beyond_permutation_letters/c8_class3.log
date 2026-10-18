@@ -14,4 +14,4 @@
   spectral (U/T-kind) taste lattices of 120 random E-words (within (pi/4)Z^3): {'bcc(pi/2)': 1, 'sc(2pi)': 83, 'bcc(2pi)': 17, 'sc(pi/4)': 8, 'bcc(pi)': 7, 'sc(pi/2)': 3, 'sc(pi)': 1}
 [PASS] every sampled E-word's spectral taste set is one of the rotation-invariant dyadic lattices of B24 (no new lattice)  {'bcc(pi/2)': 1, 'sc(2pi)': 83, 'bcc(2pi)': 17, 'sc(pi/4)': 8, 'bcc(pi)': 7, 'sc(pi/2)': 3, 'sc(pi)': 1}
 
-TOTAL: PASS=14 FAIL=0   [74s]
+TOTAL: PASS=14 FAIL=0   [73s]

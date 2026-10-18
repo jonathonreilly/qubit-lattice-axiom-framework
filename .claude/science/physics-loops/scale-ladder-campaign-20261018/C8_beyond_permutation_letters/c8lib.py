@@ -8,6 +8,7 @@ import os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..', 'B26_new_shift_letters'))
 from b26lib import *            # noqa  (b26lib sets OMP/BLAS threads = 1)
+HERE = os.path.dirname(os.path.abspath(__file__))   # b26lib's HERE is overridden (outputs go to the C8 directory)
 import itertools, collections, numpy as np
 import scipy.linalg as sla
 

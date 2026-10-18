@@ -1,0 +1,7 @@
+  ('E+', 'S', 'o') ('L033',) E=-0.7854: 42 nodes, 41 defective; defect classes [(('generic', 2, 'tilt'), 40), (('cube', 8, 'aniso'), 1)]
+  ('E+', 'Rt', 'S', 'o') ('L011',) E=-0.7854: 41 nodes, 40 defective; defect classes [(('generic', 2, 'tilt'), 37), (('generic', 2, 'aniso'), 2), (('cube', 8, 'aniso'), 1)]
+  ('E+', 'S', 'R', 'o') ('L011',) E=+2.3562: 41 nodes, 40 defective; defect classes [(('generic', 2, 'tilt'), 37), (('generic', 2, 'aniso'), 2), (('cube', 8, 'aniso'), 1)]
+  ('E+', 'S', 'Rt', 'o') ('L011',) E=-0.7854: 42 nodes, 41 defective; defect classes [(('generic', 2, 'tilt'), 38), (('generic', 2, 'aniso'), 2), (('cube', 8, 'aniso'), 1)]
+[PASS] each of the closest cases has defective nodes in a full census (none passes)  
+
+TOTAL: PASS=1 FAIL=0   [14s]

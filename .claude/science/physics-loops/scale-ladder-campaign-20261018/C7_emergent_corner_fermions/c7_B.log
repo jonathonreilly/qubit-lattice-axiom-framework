@@ -1,0 +1,94 @@
+B0: Bloch supercell (2^3 cell) vs real-space L = 4 torus, purely imaginary amplitudes
+[PASS] Bloch supercell spectrum equals real-space L = 4 spectrum (random u, imaginary hopping)  max dev 8.0e-15
+[PASS] all 32 uniform Majorana patterns (16 x conjugate pairs) exist on the 2^3 supercell; fluxes re-measured
+
+B1: exact identities
+[PASS] Majorana particle-hole symmetry: the full spectrum is symmetric under E -> -E (h* = -h)
+[PASS] conjugate patterns (tri c+ vs c-, s+ vs s-) have identical spectra  max dev 1.1e-14
+
+B2: Majorana half filling, |t1| = 1, |t2| = 0.2, 6^3 K-grid on the 2^3 cell (energy per site; one Majorana per corner, E0 = sum of negative eigenvalues of the imaginary hopping matrix)
+    1.   1c+11  E =  -11.41729   (+0.00000)
+    2.   1c+01  E =  -11.41646   (+0.00084)
+    3.   1c+00  E =  -11.36248   (+0.05481)
+    4.   1c+10  E =  -11.36242   (+0.05487)
+    5.   1s+11  E =  -11.02299   (+0.39430)
+    6.   1s+01  E =  -11.02222   (+0.39508)
+    7.   1s+10  E =  -10.98642   (+0.43087)
+    8.   1s+00  E =  -10.98507   (+0.43222)
+    9.   0s+10  E =   -9.87775   (+1.53955)
+   10.   0s+11  E =   -9.84385   (+1.57344)
+   11.   0s+00  E =   -9.82277   (+1.59453)
+   12.   0s+01  E =   -9.78687   (+1.63042)
+   13.   0c+11  E =   -9.22224   (+2.19505)
+   14.   0c+01  E =   -9.11851   (+2.29879)
+   15.   0c+10  E =   -9.09109   (+2.32620)
+   16.   0c+00  E =   -9.01351   (+2.40378)
+   corner analogue 1c11 (square = plaquette = tube = pi, chiral triangles) rank 1/16; winner 1c+11, margin to second 0.00084
+
+B2: Majorana half filling, |t1| = 1, |t2| = 0.5, 6^3 K-grid on the 2^3 cell (energy per site; one Majorana per corner, E0 = sum of negative eigenvalues of the imaginary hopping matrix)
+    1.   1c+11  E =  -11.95701   (+0.00000)
+    2.   1c+01  E =  -11.92825   (+0.02876)
+    3.   1c+00  E =  -11.62063   (+0.33638)
+    4.   1c+10  E =  -11.61854   (+0.33847)
+    5.   1s+11  E =  -11.52553   (+0.43148)
+    6.   1s+01  E =  -11.49689   (+0.46012)
+    7.   1s+10  E =  -11.31758   (+0.63943)
+    8.   1s+00  E =  -11.28274   (+0.67427)
+    9.   0s+11  E =  -10.77051   (+1.18650)
+   10.   0s+10  E =  -10.65461   (+1.30240)
+   11.   0s+00  E =  -10.55021   (+1.40680)
+   12.   0s+01  E =  -10.54744   (+1.40957)
+   13.   0c+11  E =  -10.52506   (+1.43195)
+   14.   0c+01  E =  -10.22829   (+1.72872)
+   15.   0c+10  E =  -10.13357   (+1.82344)
+   16.   0c+00  E =   -9.94587   (+2.01114)
+   corner analogue 1c11 (square = plaquette = tube = pi, chiral triangles) rank 1/16; winner 1c+11, margin to second 0.02876
+
+B2: Majorana half filling, |t1| = 1, |t2| = 1.0, 6^3 K-grid on the 2^3 cell (energy per site; one Majorana per corner, E0 = sum of negative eigenvalues of the imaginary hopping matrix)
+    1.   1c+11  E =  -13.81808   (+0.00000)
+    2.   1c+01  E =  -13.50049   (+0.31758)
+    3.   1s+11  E =  -13.39790   (+0.42018)
+    4.   0c+11  E =  -13.19208   (+0.62600)
+    5.   0s+11  E =  -13.16541   (+0.65266)
+    6.   1s+01  E =  -12.99698   (+0.82109)
+    7.   1s+10  E =  -12.61149   (+1.20659)
+    8.   1c+10  E =  -12.57145   (+1.24662)
+    9.   1c+00  E =  -12.57093   (+1.24714)
+   10.   0s+10  E =  -12.43331   (+1.38477)
+   11.   0c+01  E =  -12.39697   (+1.42110)
+   12.   1s+00  E =  -12.39105   (+1.42703)
+   13.   0s+01  E =  -12.36769   (+1.45039)
+   14.   0c+10  E =  -12.24731   (+1.57077)
+   15.   0s+00  E =  -12.23439   (+1.58369)
+   16.   0c+00  E =  -11.85509   (+1.96299)
+   corner analogue 1c11 (square = plaquette = tube = pi, chiral triangles) rank 1/16; winner 1c+11, margin to second 0.31758
+
+B2: Majorana half filling, |t1| = 1, |t2| = 2.0, 6^3 K-grid on the 2^3 cell (energy per site; one Majorana per corner, E0 = sum of negative eigenvalues of the imaginary hopping matrix)
+    1.   1c+11  E =  -19.99959   (+0.00000)
+    2.   0c+11  E =  -19.87764   (+0.12195)
+    3.   1s+11  E =  -19.86550   (+0.13409)
+    4.   0s+11  E =  -19.81145   (+0.18814)
+    5.   0s+10  E =  -18.37944   (+1.62015)
+    6.   1s+10  E =  -18.29234   (+1.70725)
+    7.   0c+10  E =  -18.09535   (+1.90424)
+    8.   1c+10  E =  -18.08293   (+1.91666)
+    9.   1c+01  E =  -18.06291   (+1.93668)
+   10.   1s+01  E =  -17.47779   (+2.52180)
+   11.   0c+01  E =  -17.43921   (+2.56038)
+   12.   1s+00  E =  -17.23420   (+2.76539)
+   13.   0s+01  E =  -17.13880   (+2.86079)
+   14.   0s+00  E =  -17.09505   (+2.90454)
+   15.   1c+00  E =  -16.74809   (+3.25150)
+   16.   0c+00  E =  -16.67890   (+3.32069)
+   corner analogue 1c11 (square = plaquette = tube = pi, chiral triangles) rank 1/16; winner 1c+11, margin to second 0.12195
+  t = 14.4s
+
+  K-grid convergence of the ranking (N_K = 6, 8, 10) for the top three at each t2:
+   t2=0.2: ['1c+11', '1c+01', '1c+00']  E(nk=10) = [-11.41729, -11.41646, -11.36248]; order stable: True; max change of differences 3.6e-15
+   t2=0.5: ['1c+11', '1c+01', '1c+00']  E(nk=10) = [-11.95701, -11.92825, -11.62063]; order stable: True; max change of differences 6.8e-12
+   t2=1.0: ['1c+11', '1c+01', '1s+11']  E(nk=10) = [-13.81808, -13.50049, -13.39816]; order stable: True; max change of differences 2.0e-04
+   t2=2.0: ['1c+11', '0c+11', '1s+11']  E(nk=10) = [-19.99959, -19.87764, -19.8655]; order stable: True; max change of differences 7.1e-10
+[PASS] top-3 ordering of uniform patterns stable under N_K = 6, 8, 10 for all four t2
+
+B3: single-edge flips over period-2 sectors (2^3 cell, 288 edges, 4^3 K-grid); t = 36.5s
+  t2=0.2: best uniform 1c+11 E = -11.41729; single flips: min dE = +0.00151 (link), #dE<0: 0/288; min dE onsite +0.04777, link +0.00151; t = 54.6s

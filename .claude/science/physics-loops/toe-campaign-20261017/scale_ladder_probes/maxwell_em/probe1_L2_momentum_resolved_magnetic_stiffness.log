@@ -1,0 +1,76 @@
+component states=864, directed moves=6912
+
+V=+1.00 E0=-0.000000 gap=0.969624 |R d1|max=2.23e-15 zero-modes=14
+  chi uniform-xy (per vol) = 0.285050028242   occupation-sign(xy staggered) = 0.105121402155  ratio=0.3688
+  q=(np.float64(0.0), np.float64(0.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.28505 0.28505 0.28505]
+  q=(np.float64(0.0), np.float64(0.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.303614]
+  q=(np.float64(0.0), np.float64(1.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.303614]
+  q=(np.float64(0.0), np.float64(1.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.299429]
+  q=(np.float64(1.0), np.float64(0.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [-0.        0.        0.303614]
+  q=(np.float64(1.0), np.float64(0.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.299429]
+  q=(np.float64(1.0), np.float64(1.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.299429]
+  q=(np.float64(1.0), np.float64(1.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.315364]
+
+V=+0.95 E0=-0.402737 gap=1.030540 |R d1|max=8.05e-16 zero-modes=14
+  chi uniform-xy (per vol) = 0.286566088925   occupation-sign(xy staggered) = 0.107539111729  ratio=0.3753
+  q=(np.float64(0.0), np.float64(0.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.286566 0.286566 0.286566]
+  q=(np.float64(0.0), np.float64(0.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.307669]
+  q=(np.float64(0.0), np.float64(1.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.307669]
+  q=(np.float64(0.0), np.float64(1.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [-0.        0.        0.305377]
+  q=(np.float64(1.0), np.float64(0.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [-0.        0.        0.307669]
+  q=(np.float64(1.0), np.float64(0.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.305377]
+  q=(np.float64(1.0), np.float64(1.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [-0.        0.        0.305377]
+  q=(np.float64(1.0), np.float64(1.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.322617]
+
+V=+0.90 E0=-0.810822 gap=1.091590 |R d1|max=1.10e-15 zero-modes=14
+  chi uniform-xy (per vol) = 0.287751063895   occupation-sign(xy staggered) = 0.109734422219  ratio=0.3814
+  q=(np.float64(0.0), np.float64(0.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.287751 0.287751 0.287751]
+  q=(np.float64(0.0), np.float64(0.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.311468]
+  q=(np.float64(0.0), np.float64(1.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.311468]
+  q=(np.float64(0.0), np.float64(1.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.      0.      0.31087]
+  q=(np.float64(1.0), np.float64(0.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.311468]
+  q=(np.float64(1.0), np.float64(0.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.      0.      0.31087]
+  q=(np.float64(1.0), np.float64(1.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.      0.      0.31087]
+  q=(np.float64(1.0), np.float64(1.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.329203]
+
+V=+0.50 E0=-4.255811 gap=1.593355 |R d1|max=8.88e-16 zero-modes=14
+  chi uniform-xy (per vol) = 0.287991905386   occupation-sign(xy staggered) = 0.120958514036  ratio=0.4200
+  q=(np.float64(0.0), np.float64(0.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.287992 0.287992 0.287992]
+  q=(np.float64(0.0), np.float64(0.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.      0.      0.33519]
+  q=(np.float64(0.0), np.float64(1.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.      0.      0.33519]
+  q=(np.float64(0.0), np.float64(1.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.343144]
+  q=(np.float64(1.0), np.float64(0.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.      0.      0.33519]
+  q=(np.float64(1.0), np.float64(0.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.343144]
+  q=(np.float64(1.0), np.float64(1.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.343144]
+  q=(np.float64(1.0), np.float64(1.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.362876]
+
+V=+0.00 E0=-9.026721 gap=2.225785 |R d1|max=8.88e-16 zero-modes=14
+  chi uniform-xy (per vol) = 0.267018775018   occupation-sign(xy staggered) = 0.120684586841  ratio=0.4520
+  q=(np.float64(0.0), np.float64(0.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.267019 0.267019 0.267019]
+  q=(np.float64(0.0), np.float64(0.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.349315]
+  q=(np.float64(0.0), np.float64(1.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.349315]
+  q=(np.float64(0.0), np.float64(1.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.361313]
+  q=(np.float64(1.0), np.float64(0.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.349315]
+  q=(np.float64(1.0), np.float64(0.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.361313]
+  q=(np.float64(1.0), np.float64(1.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.361313]
+  q=(np.float64(1.0), np.float64(1.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.362054]
+
+V=-1.00 E0=-20.579848 gap=1.134039 |R d1|max=1.23e-15 zero-modes=14
+  chi uniform-xy (per vol) = 0.153426799242   occupation-sign(xy staggered) = 0.068030066067  ratio=0.4434
+  q=(np.float64(0.0), np.float64(0.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.153427 0.153427 0.153427]
+  q=(np.float64(0.0), np.float64(0.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [-0.        0.        0.285413]
+  q=(np.float64(0.0), np.float64(1.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [-0.        0.        0.285413]
+  q=(np.float64(0.0), np.float64(1.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [-0.       -0.        0.293148]
+  q=(np.float64(1.0), np.float64(0.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [-0.       -0.        0.285413]
+  q=(np.float64(1.0), np.float64(0.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [-0.        0.        0.293148]
+  q=(np.float64(1.0), np.float64(1.0), np.float64(0.0)) (units of pi): 3x3 eigenvalues [0.       0.       0.293148]
+  q=(np.float64(1.0), np.float64(1.0), np.float64(1.0)) (units of pi): 3x3 eigenvalues [-0.      -0.       0.20409]
+
+Summary  (K in units: d2E0/dtheta^2 per plaquette of one orientation, i.e. per volume)
+ V      K(0)harm   K(pi,0,0)  K(pi,pi,0) K(pi,pi,pi)  chi_s/K(Q)  K(Q)/K(0)
++1.00  0.285050  0.303614  0.299429  0.315364   0.3333     1.1063
++0.95  0.286566  0.307669  0.305377  0.322617   0.3333     1.1258
++0.90  0.287751  0.311468  0.310870  0.329203   0.3333     1.1441
++0.50  0.287992  0.335190  0.343144  0.362876   0.3333     1.2600
++0.00  0.267019  0.349315  0.361313  0.362054   0.3333     1.3559
+-1.00  0.153427  0.285413  0.293148  0.204090   0.3333     1.3302

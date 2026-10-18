@@ -1,0 +1,6 @@
+node chiralities (lower band Berry flux) at kz=+k0,-k0: {1: np.float64(1.0), -1: np.float64(-1.0)}  sum = 0.0
+node energies: {1: np.float64(0.3), -1: np.float64(-0.3)}
+ratio near/CME=-0.435  q= 8 B=0.7854: lattice j_total=-4.839e-05  near-node window=+5.195e-03  rest=-5.243e-03  continuum CME (sign conv. Berry flux)=-1.194e-02
+ratio near/CME=-0.637  q=12 B=0.5236: lattice j_total=-4.737e-05  near-node window=+5.065e-03  rest=-5.113e-03  continuum CME (sign conv. Berry flux)=-7.958e-03
+ratio near/CME=-0.744  q=16 B=0.3927: lattice j_total=+1.349e-04  near-node window=+4.443e-03  rest=-4.308e-03  continuum CME (sign conv. Berry flux)=-5.968e-03
+ratio near/CME=-0.826  q=24 B=0.2618: lattice j_total=-1.339e-05  near-node window=+3.287e-03  rest=-3.300e-03  continuum CME (sign conv. Berry flux)=-3.979e-03

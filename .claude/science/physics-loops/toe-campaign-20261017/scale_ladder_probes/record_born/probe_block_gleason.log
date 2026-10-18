@@ -1,0 +1,10 @@
+[P product-only] states=676 bases=4225 uniqueRows=4225 rank=481 solution_dim(homog)=195 born_dim=15 excess=180 site_marginal_free_dim=13 (Born site marginal dim = 3)
+[P+CZ] states=1252 bases=8113 uniqueRows=8113 rank=913 solution_dim(homog)=339 born_dim=15 excess=324 site_marginal_free_dim=13 (Born site marginal dim = 3)
+[P+CZ+CNOT] states=1780 bases=11833 uniqueRows=11833 rank=1319 solution_dim(homog)=461 born_dim=15 excess=446 site_marginal_free_dim=11 (Born site marginal dim = 3)
+[P+ZZ(pi/8)] states=1316 bases=8401 uniqueRows=8401 rank=945 solution_dim(homog)=371 born_dim=15 excess=356 site_marginal_free_dim=13 (Born site marginal dim = 3)
+[P+exchange(pi/4)] states=1334 bases=8446 uniqueRows=8446 rank=958 solution_dim(homog)=376 born_dim=15 excess=361 site_marginal_free_dim=13 (Born site marginal dim = 3)
+[P+CZ+ZZ(pi/8)+exchange(pi/4)+exchange(0.3)] states=3184 bases=20731 uniqueRows=20731 rank=2331 solution_dim(homog)=853 born_dim=15 excess=838 site_marginal_free_dim=13 (Born site marginal dim = 3)
+
+real	2m39.780s
+user	3m23.335s
+sys	0m0.847s

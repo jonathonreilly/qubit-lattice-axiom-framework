@@ -1,6 +1,6 @@
 {
- "edge_count": 16245,
- "node_count": 7250,
+ "edge_count": 16246,
+ "node_count": 7251,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3920,6 +3920,10 @@
   },
   "common_product_program_tolerance_bounded_theorem_note_2026-10-18": {
    "deps_hash": "d6cab692b93e",
+   "out_degree": 1
+  },
+  "common_product_refined_resources_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "3257a784e639",
    "out_degree": 1
   },
   "common_source_offset_complete_output_bounded_theorem_note_2026-10-17": {

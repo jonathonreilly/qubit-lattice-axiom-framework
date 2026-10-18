@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "operator": "central_C",
+      "initial_mean": 0.7271448358250071,
+      "modes": [
+        {
+          "gap": 1.738972318271891,
+          "C_mean": 0.8686917716773526,
+          "delta_C": 0.14154693585234546,
+          "conditional_branch_gap_derivative_for_H_minus_lambda_C": -0.14154693585234546,
+          "conditional_fractional_gap_derivative": -0.08139688847549233,
+          "uniform_H_rescale_derivative": 1.738972318271891
+        },
+        {
+          "gap": 2.132564259426553,
+          "C_mean": 0.60885197588026,
+          "delta_C": -0.11829285994474714,
+          "conditional_branch_gap_derivative_for_H_minus_lambda_C": 0.11829285994474714,
+          "conditional_fractional_gap_derivative": 0.055469775141292164,
+          "uniform_H_rescale_derivative": 2.132564259426553
+        },
+        {
+          "gap": 2.642077610055747,
+          "C_mean": 0.9717072203156562,
+          "delta_C": 0.24456238449064904,
+          "conditional_branch_gap_derivative_for_H_minus_lambda_C": -0.24456238449064904,
+          "conditional_fractional_gap_derivative": -0.09256442110551358,
+          "uniform_H_rescale_derivative": 2.642077610055747
+        }
+      ]
+    },
+    {
+      "operator": "sum_existing_C",
+      "initial_mean": 8.943383985558574,
+      "modes": [
+        {
+          "gap": 1.738972318271891,
+          "C_mean": 8.831261296870457,
+          "delta_C": -0.11212268868811748,
+          "conditional_branch_gap_derivative_for_H_minus_lambda_C": 0.11212268868811748,
+          "conditional_fractional_gap_derivative": 0.06447640799684479,
+          "uniform_H_rescale_derivative": 1.738972318271891
+        },
+        {
+          "gap": 2.132564259426553,
+          "C_mean": 7.700701399011027,
+          "delta_C": -1.2426825865475468,
+          "conditional_branch_gap_derivative_for_H_minus_lambda_C": 1.2426825865475468,
+          "conditional_fractional_gap_derivative": 0.5827175340928317,
+          "uniform_H_rescale_derivative": 2.132564259426553
+        },
+        {
+          "gap": 2.642077610055747,
+          "C_mean": 7.80145976388479,
+          "delta_C": -1.1419242216737846,
+          "conditional_branch_gap_derivative_for_H_minus_lambda_C": 1.1419242216737846,
+          "conditional_fractional_gap_derivative": 0.4322069182705388,
+          "uniform_H_rescale_derivative": 2.642077610055747
+        }
+      ]
+    }
+  ],
+  "scope": "Expectation diagnostic; Feynman-Hellmann interpretation requires a resolved branch or perturbation diagonalized within degeneracy. Lambda is only a differentiation probe, not an adopted interaction. Neither operator is identified as a physical scalar background and these are not physical matter species."
+}

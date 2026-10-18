@@ -1,6 +1,6 @@
 {
  "edge_count": 16245,
- "node_count": 7250,
+ "node_count": 7251,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15565,6 +15565,10 @@
   "native_neutral_bond_algebra_note_2026-10-18": {
    "deps_hash": "7c4bf148687d",
    "out_degree": 1
+  },
+  "native_neutral_source_identification_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "native_pair_vacuum_chart_note_2026-09-09": {
    "deps_hash": "99abfde38abe",

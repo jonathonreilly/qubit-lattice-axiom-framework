@@ -1,9 +1,9 @@
-# Ranked work
+# Ranked work after source-identification block
 
-1. Neutral density and mass-channel spectral response: distinguish a mode from a finite-grid continuum using increasing grids and momenta. Existing matrices and independent normalization checks make this decisive without adding a Hamiltonian term.
-2. Large-feature stability: derive spreading, possible flat-band or protected subspace exceptions, and coupling of genuinely long-lived features. Do not treat broad support as bound size.
-3. Neutral composite algebra and coarse dynamics: test whether closed operator subspaces yield a wave equation and fix normalization, exposing state/projection dependence.
-4. Refresh new corner proposals and native interacting one-qubit candidates; identify any already supplied microscopic interaction with a demonstrable scalar route, without asserting it is derived from axioms.
-5. Connect surviving candidate to empirical source/detector and cosmological requirements, with calibration/development/independent comparisons separated.
+1. Sustained constructive test: native neutral feature propagation on increasing 2x2xL open grids, holding the microscopic Hamiltonian fixed. Track actual residuals, quadrature convergence and source overlap; thin-grid scaling is not a 3D continuum limit.
+2. Derive feature/environment coupling from the exact boundary terms of native H through an influence or projected-memory construction. Do not introduce scalar or exchange modulation as a new term; expose state dependence and lack of a small truncation parameter.
+3. Expand neutral local-source Krylov spaces and compute exact memory coupling to the complement; determine whether a weak-memory collective approximation is justified rather than imposed.
+4. Larger cross sections / alternative existing native candidate comparisons after the thin-grid structural result; preserve supplied Hamiltonian and state labels.
+5. Observational source/detector mapping only after a candidate supplies propagation and a coupling rule; separate model development from empirical tests.
 
-After a local failure, preserve and pivot; do not finish campaign early or package repeated minor no-go variants. Prefer a sustained constructive attempt on a concrete residual.
+The exact source nullspace shows matching energy shifts cannot identify dynamical coupling. The next block must be constructive native dynamics, not another cosmetic source-selection no-go. Fixed campaign deadline remains 2026-10-19T00:47:35Z.

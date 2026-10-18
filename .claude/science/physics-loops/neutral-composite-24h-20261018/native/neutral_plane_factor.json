@@ -1,0 +1,96 @@
+{
+  "rows": [
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "sites": 8,
+      "plane_rank": 5,
+      "symplectic_rank": 0,
+      "central_bits": 5,
+      "protected_qubits": 0,
+      "neutral_multiplicity_qubits": 3
+    },
+    {
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "sites": 12,
+      "plane_rank": 6,
+      "symplectic_rank": 2,
+      "central_bits": 4,
+      "protected_qubits": 1,
+      "neutral_multiplicity_qubits": 7
+    },
+    {
+      "shape": [
+        3,
+        3,
+        2
+      ],
+      "sites": 18,
+      "plane_rank": 7,
+      "symplectic_rank": 2,
+      "central_bits": 5,
+      "protected_qubits": 1,
+      "neutral_multiplicity_qubits": 12
+    },
+    {
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "sites": 27,
+      "plane_rank": 8,
+      "symplectic_rank": 2,
+      "central_bits": 6,
+      "protected_qubits": 1,
+      "neutral_multiplicity_qubits": 20
+    },
+    {
+      "shape": [
+        4,
+        4,
+        4
+      ],
+      "sites": 64,
+      "plane_rank": 11,
+      "symplectic_rank": 0,
+      "central_bits": 11,
+      "protected_qubits": 0,
+      "neutral_multiplicity_qubits": 53
+    },
+    {
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "sites": 125,
+      "plane_rank": 14,
+      "symplectic_rank": 2,
+      "central_bits": 12,
+      "protected_qubits": 1,
+      "neutral_multiplicity_qubits": 112
+    },
+    {
+      "shape": [
+        10,
+        10,
+        10
+      ],
+      "sites": 1000,
+      "plane_rank": 29,
+      "symplectic_rank": 0,
+      "central_bits": 29,
+      "protected_qubits": 0,
+      "neutral_multiplicity_qubits": 971
+    }
+  ],
+  "scope": "Exact algebra dimensions; protected factor is invisible to all plane-neutral operators, not a classification of every dynamical zero mode."
+}

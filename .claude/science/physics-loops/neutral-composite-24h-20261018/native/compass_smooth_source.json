@@ -1,0 +1,73 @@
+{
+  "source_sha256": "aeacdea6dbbc76e6ad1233cc2db99fd7c819f3b96ea16256e9cf65f66317e3f4",
+  "uniform_sum": 4.206704429243757e-17,
+  "inversion_error": 4.683753385137379e-17,
+  "second_moment": [
+    [
+      0.048136815551952136,
+      -3.3393426912553537e-17,
+      4.2500725161431774e-17
+    ],
+    [
+      -3.3393426912553537e-17,
+      0.04813681555195207,
+      -1.9081958235744878e-17
+    ],
+    [
+      4.2500725161431774e-17,
+      -1.9081958235744878e-17,
+      0.04813681555195218
+    ]
+  ],
+  "rows": [
+    {
+      "R": 2,
+      "response": -0.016381797875455177,
+      "quadratic_term": -0.01805130583198205,
+      "remainder": 0.0016695079565268722,
+      "absolute_remainder_bound": 0.0039819790598155155,
+      "scaled_response": -0.06552719150182071
+    },
+    {
+      "R": 4,
+      "response": -0.004404101927341491,
+      "quadratic_term": -0.004512826457995512,
+      "remainder": 0.00010872453065402174,
+      "absolute_remainder_bound": 0.0002488736912385092,
+      "scaled_response": -0.07046563083746385
+    },
+    {
+      "R": 8,
+      "response": -0.001121341670441129,
+      "quadratic_term": -0.001128206614498878,
+      "remainder": 6.864944057749164e-06,
+      "absolute_remainder_bound": 1.555460570244626e-05,
+      "scaled_response": -0.07176586690823225
+    },
+    {
+      "R": 16,
+      "response": -0.0002816215019802275,
+      "quadratic_term": -0.0002820516536247195,
+      "remainder": 4.3015164449204234e-07,
+      "absolute_remainder_bound": 9.721628564423292e-07,
+      "scaled_response": -0.07209510450693823
+    },
+    {
+      "R": 32,
+      "response": -7.048601184012114e-05,
+      "quadratic_term": -7.051291340617988e-05,
+      "remainder": 2.6901566058736308e-08,
+      "absolute_remainder_bound": 6.076017856708343e-08,
+      "scaled_response": -0.07217767612428405
+    },
+    {
+      "R": 64,
+      "response": -1.7626546736571568e-05,
+      "quadratic_term": -1.762822835154497e-05,
+      "remainder": 1.6816149734025644e-09,
+      "absolute_remainder_bound": 3.797511199880568e-09,
+      "scaled_response": -0.07219833543299714
+    }
+  ],
+  "scope": "Fixed finite27site cube and regularized response eta=.1. Larger R only smooths an externally specified diagnostic profile; no volume extrapolation or matter source derivation."
+}

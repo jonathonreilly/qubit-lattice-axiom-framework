@@ -19,6 +19,6 @@
     2.447262030565423e-13
   ],
   "calls": 365,
-  "elapsed_seconds": 40.344290792010725,
+  "elapsed_seconds": 39.0212513753213,
   "scope": "Numerical low eigenpairs of one exact invariant sector; no global ground, thermodynamic pole or physical preparation identification"
 }

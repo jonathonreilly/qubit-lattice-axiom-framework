@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/native_neutral_source_identification.py
+runner_sha256: 4cbae368453a33912b4a688c106f2a731abb445f8811f26efc4fecf378e3ac44
+input_fingerprint_sha256: 6a4642f8b546da6fefb3b8aeee6d4f5e9b07886f958d3918c13e3fbeee79b5bd
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 66.67
+status: ok
+----- stdout -----
+reproduced compass_sector_solve
+reproduced neutral_extra_sector_response
+reproduced compass_scale_control
+reproduced compass_smooth_source
+reproduced neutral_thermal_protocol_control
+reproduced neutral_plane_factor
+reproduced neutral_ladder_control
+reproduced neutral_ladder_probe
+reproduced neutral_mode_charges
+reproduced neutral_source_ambiguity
+per_site: one physical qubit, unchanged native interaction
+per_mode: finite ladder and conditional diagonal expectations
+per_block: neutral protected-factor removal and source nonuniqueness
+lattice_wide: bulk identification and observations remain open
+
+----- stderr -----
+

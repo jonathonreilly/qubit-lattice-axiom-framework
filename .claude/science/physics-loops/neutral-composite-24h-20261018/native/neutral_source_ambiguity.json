@@ -1,0 +1,31 @@
+{
+  "shape": [
+    3,
+    2,
+    1
+  ],
+  "beta": 0.7,
+  "native_J": 1,
+  "commutator_identity_error": 8.439034118033912e-14,
+  "rows": [
+    {
+      "alpha": 0,
+      "diagonal_energy_error": 9.769962616701378e-15,
+      "degenerate_block_error": 9.769962616701378e-15,
+      "thermal_inelastic_weight": 1.4486851487870693e-29
+    },
+    {
+      "alpha": 0.25,
+      "diagonal_energy_error": 9.769962616701378e-15,
+      "degenerate_block_error": 9.769962616701378e-15,
+      "thermal_inelastic_weight": 43.96476507436913
+    },
+    {
+      "alpha": 1,
+      "diagonal_energy_error": 1.354472090042691e-14,
+      "degenerate_block_error": 1.354472090042691e-14,
+      "thermal_inelastic_weight": 703.4362411899061
+    }
+  ],
+  "scope": "Constructed observable family, not added interactions, derived scalar or observed coupling. Alpha is an explicit arbitrary probe coefficient."
+}

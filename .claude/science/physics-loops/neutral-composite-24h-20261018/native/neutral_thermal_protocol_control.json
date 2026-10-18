@@ -1,0 +1,26 @@
+[
+  {
+    "beta": 0.1,
+    "isothermal_derivative": -0.019350525646311643,
+    "finite_difference": -0.019350525645549232,
+    "retarded_absolute": 9.382000835745338e-18
+  },
+  {
+    "beta": 0.5,
+    "isothermal_derivative": -0.2543182976058317,
+    "finite_difference": -0.2543182975975333,
+    "retarded_absolute": 2.6014958963477798e-17
+  },
+  {
+    "beta": 1,
+    "isothermal_derivative": -0.3315136417672868,
+    "finite_difference": -0.3315136417769704,
+    "retarded_absolute": 2.3730135166225078e-17
+  },
+  {
+    "beta": 2,
+    "isothermal_derivative": -0.23930444237538495,
+    "finite_difference": -0.23930444238429158,
+    "retarded_absolute": 2.3596339615770645e-18
+  }
+]

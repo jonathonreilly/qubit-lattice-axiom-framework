@@ -1,0 +1,53 @@
+{
+  "rows": [
+    {
+      "kappa": 0,
+      "width": 0.02,
+      "upper_over_2Z": 1.0,
+      "lower_over_Z": 1.0
+    },
+    {
+      "kappa": 0,
+      "width": 0.05,
+      "upper_over_2Z": 1.0,
+      "lower_over_Z": 1.0
+    },
+    {
+      "kappa": 0,
+      "width": 0.1,
+      "upper_over_2Z": 1.0,
+      "lower_over_Z": 1.0
+    },
+    {
+      "kappa": 0,
+      "width": 0.2,
+      "upper_over_2Z": 1.0,
+      "lower_over_Z": 1.0
+    },
+    {
+      "kappa": 0.08,
+      "width": 0.02,
+      "upper_over_2Z": 1.1253517471925591e-07,
+      "lower_over_Z": 1.0
+    },
+    {
+      "kappa": 0.08,
+      "width": 0.05,
+      "upper_over_2Z": 0.0773047404432994,
+      "lower_over_Z": 1.0
+    },
+    {
+      "kappa": 0.08,
+      "width": 0.1,
+      "upper_over_2Z": 0.527292424043048,
+      "lower_over_Z": 1.0
+    },
+    {
+      "kappa": 0.08,
+      "width": 0.2,
+      "upper_over_2Z": 0.8521437889662111,
+      "lower_over_Z": 1.0
+    }
+  ],
+  "scope": "Synthetic controls. Ratios target1 for harmonic oscillator; shifted ladder can fail narrow windows without excluding an interacting scalar."
+}

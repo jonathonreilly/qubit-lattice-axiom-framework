@@ -106,3 +106,17 @@ Write omega^2 = k^2 (1 + alpha k^2).
 - NEXT: a carrier with no non-metric soft modes, or a local term giving them mass without
   breaking the lattice diffeos; a site-matter Ward identity on D4; the mechanism of the Kuhn
   shell at b = 0.
+- F19. The D4 partners are NON-METRIC STRAINS (d4s.py):
+  - partner 0 appears only in the body diagonals, in the alternating pattern s0 s1 s2 s3, which
+    is invisible to any quadratic reading;
+  - partner 1 shrinks the axes and face diagonals while stretching the body diagonals.
+
+  The partner coupling therefore depends on the matter's metric reading (d4t/d4u/d4v):
+  - face reading (Lsym): -2/3 conformal;
+  - uniform least squares on delta(l^2): -0.074;
+  - RELATIVE-STRAIN least squares (weights 1/l^4) over all 24 segments: the partner reading is
+    O(k) and the static response is EXACTLY linearised GR (h_tt k^2 = -2, h_xx = -h_tt), with
+    partner exchange (a/w)^2.
+
+  PR #9714 is now at PASS=18. Open: whether that reading follows from a principle; a site-matter
+  Ward identity; light bending and the dynamical partner coupling.

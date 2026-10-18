@@ -75,3 +75,6 @@
   - The third coherence pass is committed in PR #9702.
   - The C11 lane note and its self-contained runner (PASS=42) are drafted in wt-lanes and staged, not committed. A fresh-context review is running.
   - Then: commit the lane note into PR #9718, give the final summary, and release the lock.
+- **20:00Z.** The C11 lane note is committed to PR #9718 (12e1f2a452) after review (approve with changes; runner PASS=42), and the PR body is updated.
+  - Drafting in wt-lanes: lane notes for C10 (lattice H constraint) and B26+C8 (shift-letter classification). Neither writer regenerates the manifest; the supervisor does that, then runs one combined review pass.
+  - Final summary by about 23:00Z, then release the lock.

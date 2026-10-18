@@ -38,3 +38,10 @@
 - s4 rerun with fewer duplicate starts and the empirical assertions replaced by integer-W3 checks
   (disclosed in the script comment). Chain s4 -> s4b -> s5 running on one core.
 - Draft NOTE.md written.
+
+## 21:12 UTC — defect floors
+- s4 rerun: PASS=17 FAIL=0 (integer W3 along the continuation; truncation controls W3=-1, not unitary).
+- s4c (r=1): penalty continuation to w=3e7 and pure-unitarity LM: defect plateaus at ~6e-3 with W3=-1,
+  min|det| 0.993; PASS=2. Consistent with K + compactness (eps_1 <~ 6e-3, upper bound only).
+- s4b (r=2): defect 6.8e-5 (w=3e3), 1.3e-5 (3e4), 3.9e-6 (3e5), 3.5e-6 (3e6): flattening; sup||U-V_2||
+  rising 0.34 -> 0.55. Pure LM stage pending. eps_2 is small but the run so far shows no approach to 0.

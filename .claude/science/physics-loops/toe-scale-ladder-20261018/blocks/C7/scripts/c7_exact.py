@@ -140,6 +140,10 @@ check('phi(eps n) = phi0 - eps^2 |n|^2 w/2 + O(eps^4) (no linear term: grad phi 
 gser = [ser(e.subs(dict(zip(k, [eps*x for x in n]))), 3) for e in gk]
 check('g(eps n) = s eps n + O(eps^3)', all(sp.expand(gser[i] - s*eps*n[i]).coeff(eps, 1) == 0 and
                                            sp.expand(gser[i]).coeff(eps, 2) == 0 for i in range(3)))
+g3 = [sp.expand(gser[i]).coeff(eps, 3) for i in range(3)]
+aniso = sp.expand(g3[0] - (-(b1 + b2)/2*n[0]*nsq))
+check('g at O(k^3): g_a = s k_a - ((b1+b2)/2) k_a |k|^2 + ((b1 + 2 b2 - b0)/6) k_a^3: the only O(a^2) rotation breaking of H_a; it vanishes iff b0 = b1 + 2 b2 (k^4-isotropy plane)',
+      sp.expand(aniso - (b1 + 2*b2 - b0)/6*n[0]**3) == 0)
 # generic flavour row xi (h_par direction): xi.phi0 = 0, xi.w = Wc ; its quartic part does not enter through eps^4
 Wc = sp.Symbol('Wc', real=True)
 f0 = (aV.T*phin_ser)[0]

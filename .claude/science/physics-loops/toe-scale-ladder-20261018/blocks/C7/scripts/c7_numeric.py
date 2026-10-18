@@ -12,6 +12,8 @@ from __future__ import annotations
 
 import itertools
 import sys
+import functools
+print = functools.partial(print, flush=True)
 
 import numpy as np
 from scipy.linalg import expm, schur
@@ -299,8 +301,12 @@ for Wk in walks:
               f"(1/4)||[d1H,d2H] - continuum|| {np.array(d0s)} (slope {sl(d0s):.2f}); rotation defect {np.array(drs)} (slope {sl(drs):.2f})")
         if Wk.name != 'gold':
             exp1 = 2.0 if chi == np.pi/2 else 1.0
-            check(f'{Wk.name} chi={chi:.2f}: [K,H] defect scales as a^{exp1:.0f} (slope {sl(d1s):.2f}); [K1,K2] spin-part defect O(a) (slope {sl(d0s):.2f}); continuous-rotation defect O(a^2) (slope {sl(drs):.2f})',
-                  abs(sl(d1s) - exp1) < 0.25 and abs(sl(d0s) - 1) < 0.25 and abs(sl(drs) - 2) < 0.25)
+            # rotation defect: O(a^2) generically; O(a^3) on the k^4-isotropy plane b0 = b1 + 2 b2,
+            # where the k^3 anisotropy (b1 + 2 b2 - b0)/6 of g vanishes (exact, c7_exact.py). Expectation
+            # revised after run 1, which found slope 3.00 at b_iso (logs/c7_numeric_run1.log).
+            expr = 3.0 if abs(Wk.b[0] - Wk.b[1] - 2*Wk.b[2]) < 1e-12 else 2.0
+            check(f'{Wk.name} chi={chi:.2f}: [K,H] defect scales as a^{exp1:.0f} (slope {sl(d1s):.2f}); [K1,K2] spin-part defect O(a) (slope {sl(d0s):.2f}); continuous-rotation defect O(a^{expr:.0f}) (slope {sl(drs):.2f})',
+                  abs(sl(d1s) - exp1) < 0.25 and abs(sl(d0s) - 1) < 0.25 and abs(sl(drs) - expr) < 0.25)
         else:
             check(f'gold chi={chi:.2f}: all three defects O(a^2) (slopes {sl(d1s):.2f}, {sl(d0s):.2f}, {sl(drs):.2f})',
                   min(sl(d1s), sl(d0s), sl(drs)) > 1.75)

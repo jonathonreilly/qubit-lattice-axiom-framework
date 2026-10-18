@@ -23,3 +23,10 @@
   s^2(8s^4-5s^2+2)/360 to s^2(4s^4-5s^2+2)/360, and at b_iso from 1/243 to 1/1215.
   The anisotropic y = -s^2/360 and z are unaffected because u^3 is isotropic at
   leading order. c7_numeric checks this at 60 digits (independent path: direct arccos).
+- c7_numeric run 1 (logs/c7_numeric_run1.log): 68/2. Both failures were my wrong
+  expectation for the rotation defect at b_iso: the measured slope was 3.00, and I had
+  expected 2. Explanation, proved and added to c7_exact: the O(k^3) anisotropy of g is
+  ((b1 + 2 b2 - b0)/6) k_a^3, which vanishes on the k^4-isotropy plane. It is the only
+  O(a^2) rotation breaking in H_a. I changed the expectation to 3 on the plane and kept
+  2 elsewhere, and I record the revision in the script. c7_exact: 37/0.
+- Wrote NOTE.md. Re-running c7_numeric (about 25 min at nice 10 on one core).

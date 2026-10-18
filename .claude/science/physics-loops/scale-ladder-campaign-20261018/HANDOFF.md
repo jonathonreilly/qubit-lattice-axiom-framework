@@ -64,3 +64,6 @@
   - A scope section is added to the arc-lemma lane note (PR #9718), and the scale-ladder note and both PR bodies are updated.
   - Running: the B26 check, C8, and C10 (lattice H constraint with structure functions).
   - Plan: integrate those results, run a coherence pass on the scale-ladder note around 21:00Z, give the final summary before 23:26Z, then release the lock.
+- **18:45Z.** The B26 and C8 checks are done (47 and 49 PASS, no claim refuted). Their corrections are applied, the scale-ladder note includes them, and PR #9702 is updated.
+  - Running: C10 (lattice H constraint with structure functions) and C11 (generalised L1 lemma).
+  - Then: a coherence pass on the scale-ladder note, the final summary before 23:26Z, and releasing the lock.

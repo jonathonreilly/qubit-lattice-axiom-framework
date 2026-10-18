@@ -62,3 +62,11 @@ PASS [numerical] bstar chi=pi/2 (maximal twist): constant identification O(a) (s
 PASS [numerical] iso chi=0.00: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.033)
 PASS [numerical] iso chi=0.00: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
 PASS [numerical] iso chi=0 (Wilson-aligned mass): convergence is O(a) (slope 1.02) and the chiral rotation does not help (slope 1.01)
+   iso chi=1.571: max_p ||U^n - e^(-itH_D)|| = [0.01857098 0.00927403 0.00463558 0.00231761] slope 1.001; with p-dependent chiral rotation: [5.60658732e-04 1.39979697e-04 3.49833510e-05 8.74511428e-06] slope 2.001; C3 estimates [0.0331 0.0331 0.0331 0.0331]
+PASS [numerical] iso chi=1.57: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.033)
+PASS [numerical] iso chi=1.57: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
+PASS [numerical] iso chi=pi/2 (maximal twist): constant identification O(a) (slope 1.00); p-dependent chiral rotation V_a(p) gives O(a^2) (slope 2.00)
+   gold chi=0.000: max_p ||U^n - e^(-itH_D)|| = [9.80774324e-04 2.45062280e-04 6.12561567e-05 1.53133000e-05] slope 2.000; with p-dependent chiral rotation: [9.80774324e-04 2.45062280e-04 6.12561567e-05 1.53133000e-05] slope 2.000; C3 estimates [0.0509 0.0509 0.0509 0.0509]
+PASS [numerical] gold chi=0.00: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.051)
+PASS [numerical] gold chi=0.00: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
+PASS [numerical] gold chi=0.00: |W| = 0, convergence is O(a^2) (slope 2.00)

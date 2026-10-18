@@ -37,3 +37,6 @@ Focused independent six-loop, star/dispersion and source checks PASS. Astra-low 
 
 ## Four-column competition
 Independent coefficient classification, all-length readout derivative, quotient/charge representations and auxiliary droplet checks PASS. Final review PASS after documenting the uncommitted 6x6 ground checkpoint dependency and ordered regeneration recipe. Short aggregate replays native16-qubit, exact droplet and5x5 spectra; larger grids remain explicitly frozen/hash-bound. No formal audit verdict applied.
+
+## Bulk segment block
+Independentchannel,tension,source,K2,AiryanddispersionchecksPASS. FinalscopedreviewPASSafteraddingloadbearingplaquettenote/runnerlinks. Sourceboundreplay2.014512sPASS. Noformalauditverdict.

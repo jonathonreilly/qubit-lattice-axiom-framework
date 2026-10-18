@@ -34,3 +34,6 @@ The order-six mode/readout are derived within the supplied model and selected se
 
 ## Four-column competition block
 Original one-qubit H -> canonical competing order-four terms -> fixed ratio -> projected original observable -> full finite coefficient spectra and charge-sector readout differences. trace_class: upstream_support; target is user large-feature mode/coupling; reachability_to_target: partially_closes. Next action: remove supplied open ends by deriving dynamics of finite segments in the uncut bulk.
+
+## Bulk segment block
+Native Pauli paths -> completecompactfour-wallclassification -> K1sourcecomponent and originalC -> localbulkplaquettetension -> conditionalconfinedmodel. trace_class: upstream_support; reachability_to_target: partially_closes. Next: fullslowchannel/higherordercontrol atgrowinglength.

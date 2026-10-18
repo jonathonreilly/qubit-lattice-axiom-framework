@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/native_bulk_segment_resonance.py
+runner_sha256: 0d214ddac56693d545245a4ae816e35d039df3ef1576b67060e04009dccc6cde
+input_fingerprint_sha256: da0ef93a447be6472291e0c14961f9d65d8b73708f1f4d750af618861f02cb37
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 2.01
+status: ok
+----- stdout -----
+per_site: one physical qubit; bulk segments do not cut column ends
+per_mode: native source and tension motivate conditional outgoing resonance
+per_block: growing length, width and residue remain partial-model results
+lattice_wide: higher-order/uniform native control and scalar identification open
+
+----- stderr -----
+

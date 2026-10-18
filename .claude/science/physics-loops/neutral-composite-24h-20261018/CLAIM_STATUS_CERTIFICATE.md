@@ -41,3 +41,6 @@ review_loop_disposition: pass
 
 ## Four-column competition block
 Status: conditional-support. Derived complete leading L4 column operator and original readout at fixed native ratio8/9; checked full physical16-qubit matrices and complete finite coefficient spectra through6x6. Auxiliary droplet expansion has positive curvature25/48 but is uncontrolled at native ratio. Static charged-feature readouts are nonuniversal within this model; no physical equivalence-principle conclusion. No exact infinite-volume pole, empirical scalar or TOE claim.
+
+## Bulk segment block
+Native local bulk tension/source/K2 support; outgoing Airy resonance andnegative transverse curvature are partial-model calculations only. Uniform large-feature/native pole, state selection and physical scalar identification open.

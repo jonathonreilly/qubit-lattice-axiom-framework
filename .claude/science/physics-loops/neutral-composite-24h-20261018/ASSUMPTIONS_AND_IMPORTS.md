@@ -19,3 +19,6 @@ Supplied directional Hamiltonian, anisotropy, open L6 columns, even transverse p
 
 ## Four-column competition block
 Open length-four ends, supplied anisotropy and H, explicit subsystem sector and finite torus remain premises. Ratio and readout coefficients computed rather than fitted. Nonzero-q tests concern plaquette source, not full original Cq. Small K/t droplet expansion auxiliary; native9/8 not controlled. Frozen large-grid source/result hashes are development evidence, not independent observational tests.
+
+## Bulk segment block
+Uniform Z background and supplied directional H/anisotropy retained. Compact even-plane excitations. No open column ends added. Source-connected K1 block notcompletefour-wallband. PartialK1+tension model excludeslarger K2/K3 terms; long-arm K2 calculatedseparately. Complexresidue notpositiveweight. Noempiricalinput.

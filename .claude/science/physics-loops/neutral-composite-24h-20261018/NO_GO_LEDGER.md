@@ -4,3 +4,6 @@ For L>6, the native order-six adjacent-plaquette interaction precedes order-L tu
 
 ## Open-end limitation
 A finite aligned column with cut end bonds is not an intrinsic finite feature in an uncut lattice. The L4 results retain that geometry premise. Nonzero-q plaquette response cannot be relabeled original-C response by dropping local energy-density dynamics.
+
+## Bulk segment block
+Unconfinedbulk sourcechannel has nooutsidehostbandstate fromrankonecondition; confinedpartialmodel lowlevelsareoutgoingresonances. Longitudinalpositiveandtransversenegativequadraticcoefficients preventisotropicscalarinterpretation.

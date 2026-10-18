@@ -1,0 +1,960 @@
+{
+  "inputs": {
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_bulk_source_check.py": "68e509730d4411cbbf44a9c299fa26f2b68c15aecb0dbb4a0128b900ddfc105d",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_bulk_second.py": "cd61062f2758fdc0cb6538e9b2b9a27787c9ef9579e475cdda546dccb07cec6d",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_bulk_resonance.py": "e2a062da120d05f06ed60ac40a99dc75ccedf05a8b661a54b4c02440d3fb786a",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_bulk_resonance_dynamic.py": "4eb1c6323a51b4cd4d6e45057f44b3e95e83e85a7cfc54198d8b286cb427b4f0",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_bulk_dispersion_check.py": "26b577d2490cb3848ea18fc6d994cbf4c92dde56b0a04404d09d589dec6cd09c"
+  },
+  "native_local": {
+    "source": {
+      "shape": [
+        5,
+        5,
+        9
+      ],
+      "physical_spins": 225,
+      "orbit_norm2": 0.9999999999999996,
+      "source_norm2": 2.0,
+      "errors": {
+        "host_plus_interval": 0.0,
+        "interval_2": 0.0,
+        "interval_3": 0.0,
+        "frozen_separated": 0.0,
+        "physical_source": 0.0
+      },
+      "source_coefficient": "-sqrt(2) lambda",
+      "K1_hopping": -2
+    },
+    "second_order": [
+      {
+        "ell": 3,
+        "edges": 441,
+        "rows": [
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "coefficient": "-5/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  -2,
+                  -1,
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  -2,
+                  -1,
+                  0,
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  2
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  2
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          }
+        ],
+        "elapsed": 0.10688400268554688,
+        "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+      },
+      {
+        "ell": 4,
+        "edges": 490,
+        "rows": [
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "coefficient": "-5/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  -2,
+                  -1,
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  -2,
+                  -1,
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  2,
+                  3
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          }
+        ],
+        "elapsed": 0.13133907318115234,
+        "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+      },
+      {
+        "ell": 5,
+        "edges": 539,
+        "rows": [
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "coefficient": "-5/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  -2,
+                  -1,
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  -2,
+                  -1,
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  2,
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          }
+        ],
+        "elapsed": 0.16238975524902344,
+        "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+      },
+      {
+        "ell": 6,
+        "edges": 588,
+        "rows": [
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ]
+            ],
+            "coefficient": "-5/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  -2,
+                  -1,
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  -2,
+                  -1,
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          }
+        ],
+        "elapsed": 0.2649219036102295,
+        "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+      }
+    ]
+  },
+  "conditional_model": {
+    "frozen_boundary": {
+      "G": [
+        -0.2817722049865238,
+        -0.08706810029134317
+      ],
+      "self_energy": [
+        -1.127088819946095,
+        -0.34827240116537267
+      ],
+      "scattering_length": [
+        -0.9765497711071192,
+        -0.7885999750442362
+      ],
+      "endpoint_length": [
+        1.9765497711071192,
+        0.7885999750442362
+      ],
+      "rows": [
+        {
+          "lam": 0.2,
+          "length": 15.874010519681992,
+          "spacing_scale": 0.0015874010519682004,
+          "width": 0.00015771999500884727
+        },
+        {
+          "lam": 0.1,
+          "length": 31.74802103936398,
+          "spacing_scale": 0.00019842513149602505,
+          "width": 9.857499688052955e-06
+        },
+        {
+          "lam": 0.05,
+          "length": 63.49604207872796,
+          "spacing_scale": 2.4803141437003134e-05,
+          "width": 6.160937305033097e-07
+        },
+        {
+          "lam": 0.025,
+          "length": 126.99208415745592,
+          "spacing_scale": 3.1003926796253918e-06,
+          "width": 3.8505858156456854e-08
+        }
+      ],
+      "scope": "Host-plus-string coefficient model only; not native resonance proof",
+      "frozen_boundary_controls": [
+        {
+          "lam": 0.3,
+          "N": 148,
+          "energy": [
+            -3.958216739645841,
+            -0.0012813312043238648
+          ],
+          "prediction": [
+            -3.9582058934052355,
+            -0.0013307624578871484
+          ],
+          "width_over_lambda4": 0.09491342254250851,
+          "complex_readout_residue_over_lambda5": [
+            0.02414882843593244,
+            0.09233640735815327
+          ],
+          "asymptotic_residue_over_lambda5": [
+            0.02073497092559981,
+            0.0962633906405661
+          ],
+          "residual": 1.1493706991517783e-15
+        },
+        {
+          "lam": 0.2,
+          "N": 222,
+          "energy": [
+            -3.9814332321971246,
+            -0.0003876291614656331
+          ],
+          "prediction": [
+            -3.981430704070661,
+            -0.0003942999875221182
+          ],
+          "width_over_lambda4": 0.09690729036640826,
+          "complex_readout_residue_over_lambda5": [
+            0.0223687713375462,
+            0.09451195188063888
+          ],
+          "asymptotic_residue_over_lambda5": [
+            0.02073497092559981,
+            0.0962633906405661
+          ],
+          "residual": 1.2995508551444272e-15
+        },
+        {
+          "lam": 0.1,
+          "N": 444,
+          "energy": [
+            -3.9953593139546206,
+            -4.907483768621829e-05
+          ],
+          "prediction": [
+            -3.995359141656971,
+            -4.9287498440264775e-05
+          ],
+          "width_over_lambda4": 0.09814967537243657,
+          "complex_readout_residue_over_lambda5": [
+            0.02116704601718116,
+            0.09582428861093067
+          ],
+          "asymptotic_residue_over_lambda5": [
+            0.02073497092559981,
+            0.0962633906405661
+          ],
+          "residual": 1.2055304421161715e-15
+        },
+        {
+          "lam": 0.05,
+          "N": 888,
+          "energy": [
+            -3.9988399796521326,
+            -6.154235729871651e-06
+          ],
+          "prediction": [
+            -3.9988399686191562,
+            -6.160937305033097e-06
+          ],
+          "width_over_lambda4": 0.0984677716779464,
+          "complex_readout_residue_over_lambda5": [
+            0.020845337658591964,
+            0.09615338187940584
+          ],
+          "asymptotic_residue_over_lambda5": [
+            0.02073497092559981,
+            0.0962633906405661
+          ],
+          "residual": 9.416477090730236e-16
+        },
+        {
+          "lam": 0.025,
+          "N": 1777,
+          "energy": [
+            -3.999710015751073,
+            -7.699069390833286e-07
+          ],
+          "prediction": [
+            -3.999710015055403,
+            -7.701171631291371e-07
+          ],
+          "width_over_lambda4": 0.09854808820266604,
+          "complex_readout_residue_over_lambda5": [
+            0.020762814936179937,
+            0.09623585020680689
+          ],
+          "asymptotic_residue_over_lambda5": [
+            0.02073497092559981,
+            0.0962633906405661
+          ],
+          "residual": 1.135399235500088e-15
+        }
+      ],
+      "edge_product": 0.07321431535203451
+    },
+    "dynamic_boundary": {
+      "G0": [
+        -0.281772204986684,
+        -0.08706810029145133
+      ],
+      "rows": [
+        {
+          "lam": 0.3,
+          "N": 148,
+          "converged": true,
+          "residual": 5.282716045548288e-13,
+          "energy": [
+            -3.95821742630802,
+            -0.0013256319320755121
+          ],
+          "width_over_lambda4": 0.09819495793151943,
+          "residue_over_lambda5": [
+            0.021829795501856944,
+            0.09559133108709386
+          ]
+        },
+        {
+          "lam": 0.2,
+          "N": 222,
+          "converged": true,
+          "residual": 7.014552863346107e-11,
+          "energy": [
+            -3.981433170294649,
+            -0.00039352603952831064
+          ],
+          "width_over_lambda4": 0.09838150988207764,
+          "residue_over_lambda5": [
+            0.021245961154532967,
+            0.09594164363388191
+          ]
+        },
+        {
+          "lam": 0.1,
+          "N": 444,
+          "converged": true,
+          "residual": 5.668674046278199e-12,
+          "energy": [
+            -3.9953593081909156,
+            -4.9260206456117596e-05
+          ],
+          "width_over_lambda4": 0.09852041291223518,
+          "residue_over_lambda5": [
+            0.020868863924969623,
+            0.09617716697572921
+          ]
+        },
+        {
+          "lam": 0.05,
+          "N": 888,
+          "converged": true,
+          "residual": 1.86581092456576e-09,
+          "energy": [
+            -3.9988399794256746,
+            -6.160035706717122e-06
+          ],
+          "width_over_lambda4": 0.09856057130747393,
+          "residue_over_lambda5": [
+            0.020769202514271636,
+            0.09624110521070825
+          ]
+        },
+        {
+          "lam": 0.025,
+          "N": 1777,
+          "converged": true,
+          "residual": 5.5692109822162856e-09,
+          "energy": [
+            -3.9997100157433794,
+            -7.700882292692551e-07
+          ],
+          "width_over_lambda4": 0.09857129334646463,
+          "residue_over_lambda5": [
+            0.020743621570776808,
+            0.09625772681443145
+          ]
+        }
+      ],
+      "scope": "Frequency-dependent analytically continued host-plus-linear-string coefficient model; higher native orders not included"
+    },
+    "dispersion": [
+      {
+        "eta": 0.001,
+        "G": [
+          -0.2817187325561466,
+          -0.08711442212585749
+        ],
+        "Gprime": [
+          -0.04630978789943452,
+          -0.05347459841098523
+        ],
+        "GQ_numeric": [
+          -0.0060266378554274525,
+          0.007921097108093411
+        ],
+        "GQ_formula": [
+          -0.0060266316474998465,
+          0.0079211038581365
+        ],
+        "a": [
+          -0.9759098485180235,
+          -0.7885708500877833
+        ],
+        "aQ": [
+          -0.08893224967293983,
+          0.01443861665862454
+        ],
+        "Gd0": [
+          9.076452704263292e-18,
+          5.093857107031414e-17
+        ],
+        "Gs_hardcore": [
+          -0.07328631862000322,
+          -0.22602346046353533
+        ],
+        "channel_den_d": [
+          0.8731250697754136,
+          -0.34845768850342995
+        ],
+        "channel_den_s": [
+          1.706854725519987,
+          -0.9040938418541413
+        ]
+      },
+      {
+        "eta": 0.0001,
+        "G": [
+          -0.2817668579388783,
+          -0.08707273355907966
+        ],
+        "Gprime": [
+          -0.046331471642291344,
+          -0.053470695165341864
+        ],
+        "GQ_numeric": [
+          -0.006027232643535108,
+          0.007925331634017763
+        ],
+        "GQ_formula": [
+          -0.006027226518762273,
+          0.007925338372195223
+        ],
+        "a": [
+          -0.9764857567314006,
+          -0.7885970758327292
+        ],
+        "aQ": [
+          -0.08900552697868333,
+          0.014485932961811549
+        ],
+        "Gd0": [
+          5.14942018252139e-16,
+          5.772347830095354e-16
+        ],
+        "Gs_hardcore": [
+          -0.07328741859838231,
+          -0.22605765824046303
+        ],
+        "channel_den_d": [
+          0.8729325682444868,
+          -0.34829093423631863
+        ],
+        "channel_den_s": [
+          1.7068503256064709,
+          -0.9042306329618521
+        ]
+      },
+      {
+        "eta": 1e-05,
+        "G": [
+          -0.28177167028385747,
+          -0.08706856362905505
+        ],
+        "Gprime": [
+          -0.04633364001832563,
+          -0.053470304384600764
+        ],
+        "GQ_numeric": [
+          -0.006027292373533832,
+          0.007925754916954242
+        ],
+        "GQ_formula": [
+          -0.006027285969219445,
+          0.007925761910809239
+        ],
+        "a": [
+          -0.976543369448676,
+          -0.7885996852575411
+        ],
+        "aQ": [
+          -0.08901285775568696,
+          0.014490669791421914
+        ],
+        "Gd0": [
+          1.4157540657300113e-15,
+          1.2660529907569388e-15
+        ],
+        "Gs_hardcore": [
+          -0.0732875284411313,
+          -0.22606107838133987
+        ],
+        "channel_den_d": [
+          0.8729133188645701,
+          -0.3482742545162202
+        ],
+        "channel_den_s": [
+          1.7068498862354748,
+          -0.9042443135253595
+        ]
+      }
+    ]
+  },
+  "scope": "Native finite-order source/channel and K2 checks; resonances and dispersion belong only to partial coefficient model, not a native pole or empirical test"
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 16257,
- "node_count": 7261,
+ "edge_count": 16258,
+ "node_count": 7262,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15185,6 +15185,10 @@
   "native_birth_charge_and_separated_threshold_bounded_theorem_note_2026-09-25": {
    "deps_hash": "d6845a57b2e3",
    "out_degree": 5
+  },
+  "native_bulk_segment_resonance_note_2026-10-18": {
+   "deps_hash": "be1508c7efa7",
+   "out_degree": 1
   },
   "native_certified_imaginary_time_note_2026-09-09": {
    "deps_hash": "77b25aca8756",

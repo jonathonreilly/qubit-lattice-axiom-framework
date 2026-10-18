@@ -1,0 +1,11 @@
+0 J=0.000e+00
+EN -2.0542 v 0.3417 max e0-EN -0.0103 min e1-EN 0.0132 min e2-EN 0.0651
+L=4: 768 vertices, 2304 edges (1536 on-site)
+node doublets: k* [-2.0542 -2.0542 -1.9458], -k* [-2.0542 -2.0542 -1.9458]
+Weyl velocity per direction [0.3417 0.3417 0.3417 0.3417 0.3417 0.3417]
+refined: max band0 - EN = 3.514e-02 ; min band1 - EN = 2.591e-03 ; min band2 - EN (grid) = 0.0552
+m=0.005: direct Dirac gap 2 m_D = 0.01061 ; global gap (refined) = -0.02663
+m=0.010: direct Dirac gap 2 m_D = 0.02122 ; global gap (refined) = -0.01975
+m=0.020: direct Dirac gap 2 m_D = 0.04243 ; global gap (refined) = -0.00504
+
+[exited with code 0]

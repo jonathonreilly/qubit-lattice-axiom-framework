@@ -1,0 +1,11 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+Wilson loop (1, 0, 0) added as independent generator
+Wilson loop (0, 1, 0) added as independent generator
+Wilson loop (0, 0, 1) added as independent generator
+[PASS] images of c^dag_q c_r commute with all sampled stabilizers (loops and repetition terms)
+[PASS] fermionic algebra: [Q(c+_a c_b), Q(c+_b c_c)] = Q(c+_a c_c) on the code space (random triples, mod stabilizers)  25/25
+[PASS] disjoint bilinears commute on the code space
+[PASS] [Q(n_a), Q(c+_a c_b)] = Q(c+_a c_b) on the code space
+[PASS] covariance: U_R Q(c+_q c_r) U_R^dag = sigma_R(q) sigma_R(r) Q(c+_Rq c_Rr) with the fermion-level PSG signs (6 rotations x 6 terms)  36/36
+
+TOTAL: PASS=5 FAIL=0

@@ -1,0 +1,12 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+C19 base parameters (metallic at the node)
+    ('0', 'all') 1.1969989418457714
+    ('0', 'A1', 'real') (np.float64(1.1977), 4)
+    ('0', 'A1', 'imag') (np.float64(1.197), 2)
+    ('0', 'A2', 'real') (np.float64(0.0002), 1)
+    ('0', 'A2', 'imag') (np.float64(0.1331), 5)
+    ('Q', 'all') 1.0054401096057535
+    ('Q', 'A1', 'real') (np.float64(0.129), 4)
+    ('Q', 'A1', 'imag') (np.float64(0.1179), 2)
+    ('Q', 'A2', 'real') (np.float64(0.0002), 1)
+    ('Q', 'A2', 'imag') (np.float64(0.5881), 5)

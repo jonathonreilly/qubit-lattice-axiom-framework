@@ -1,0 +1,15 @@
+central element acts as -I on full space: True
+k*: restricted ops unitary True; twisted (lift)^order scalars by class: {'E': {(1+0j)}, 'C2axis': {(-1-0j)}, 'C4': {(-1-0j)}, 'C2edge': {(-1+0j)}, 'C3': {(1-0j), (-1+0j)}}
+-k*: restricted ops unitary True; twisted (lift)^order scalars by class: {'E': {(1+0j)}, 'C2axis': {(-1+0j)}, 'C4': {(-1+0j)}, 'C2edge': {(-1-0j)}, 'C3': {(1+0j), (-1-0j)}}
+decomposition at k* (global lift): {'E1/2': 1, 'E5/2': 1, 'G3/2': 2}
+decomposition at -k* (global lift): {'E1/2': 1, 'E5/2': 1, 'G3/2': 2}
+I R I^-1 R^-1 constant signs: [1, 1, 1, 1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, 1, -1, -1, -1, -1]
+equals A2(R)=(-1)^w1: True ; I^2 = -1
+inversion maps k* Bloch space onto -k* (unitary block): True
+  inversion image of E1/2(k*) lies in -k* sectors (weight): {'E1/2': 0.0, 'E5/2': 1.0, 'G3/2': 0.0}
+  inversion image of E5/2(k*) lies in -k* sectors (weight): {'E1/2': 1.0, 'E5/2': 0.0, 'G3/2': 0.0}
+  inversion image of G3/2(k*) lies in -k* sectors (weight): {'E1/2': 0.0, 'E5/2': 0.0, 'G3/2': 1.0}
+commutant random elements on folded 24-space, level multiplicities: [[4, 4, 4, 4, 4, 4], [4, 4, 4, 4, 4, 4], [4, 4, 4, 4, 4, 4], [4, 4, 4, 4, 4, 4], [4, 4, 4, 4, 4, 4]]
+commutant dimension (sum m_i^2): 12
+rotations only (folded, no inversion): [[2, 4, 2, 4, 2, 2, 4, 4], [2, 4, 2, 2, 4, 4, 2, 4], [4, 4, 2, 2, 4, 2, 2, 4]]
+time 75.7s

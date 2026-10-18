@@ -1,0 +1,29 @@
+A2 term: T-rotations commute: True | w1-odd rotations give -M: True | inversion: +M False  -M False
+bg strength 0.3 trial 0: folded multiplicities [4, 4, 4, 4, 4, 4]
+   gap/eps per quartet (eps=2.5e-4): [2.0867 1.8381 4.7997 4.7997 1.9595 2.2081]
+   max relative change of gap/eps between successive halvings: ['2.77e-07', '6.92e-08', '1.73e-08', '4.33e-09']
+bg strength 0.3 trial 1: folded multiplicities [4, 4, 4, 4, 4, 4]
+   gap/eps per quartet (eps=2.5e-4): [4.7997 4.7997 1.9775 0.7847 2.0989 0.9061]
+   max relative change of gap/eps between successive halvings: ['1.94e-06', '4.85e-07', '1.21e-07', '3.03e-08']
+bg strength 1.0 trial 0: folded multiplicities [4, 4, 4, 4, 4, 4]
+   gap/eps per quartet (eps=2.5e-4): [1.1313 1.2698 4.7997 1.2527 1.1483 4.7997]
+   max relative change of gap/eps between successive halvings: ['1.23e-07', '3.09e-08', '7.72e-09', '1.90e-09']
+bg strength 1.0 trial 1: folded multiplicities [4, 4, 4, 4, 4, 4]
+   gap/eps per quartet (eps=2.5e-4): [1.1331 0.3814 4.7997 0.5028 1.2545 4.7997]
+   max relative change of gap/eps between successive halvings: ['3.76e-07', '9.40e-08', '2.35e-08', '5.87e-09']
+control (staggered, no inv): multiplicities [4, 2, 2, 2, 2, 4, 4, 4]
+control (uniform, no inv): multiplicities [2, 2, 2, 4, 4, 2, 4, 4]
+|inv-even part| / |inv-odd part| of A2 term: 2.008407063161277
+  inversion-even A2: gap/eps per quartet [6.1826 1.3438 0.5577 1.5264 6.1826 0.3751] multiplicities [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+  inversion-odd A2: gap/eps per quartet [7.2551 0.     0.     0.     7.2551 0.    ] multiplicities [2, 2, 4, 4, 4, 2, 2, 4]
+control (staggered, no inv): levels and k*-weight of each level's eigenvectors
+   E=-4.2026 mult 4 k*-weight 0.350
+   E=-4.1021 mult 2 k*-weight 0.567
+   E=-2.3558 mult 2 k*-weight 0.103
+   E=-1.6442 mult 2 k*-weight 0.897
+   E=-0.8696 mult 4 k*-weight 0.933
+   E=+0.1021 mult 2 k*-weight 0.433
+   E=+2.4750 mult 4 k*-weight 0.108
+   E=+6.5972 mult 4 k*-weight 0.609
+item 5: hyperoctahedral B4 (384 elements): invariant sym rank-2 dim = 1
+item 5: O_h x time reversal (96 elements): invariant sym rank-2 dim = 2

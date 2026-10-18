@@ -1,6 +1,6 @@
 {
- "edge_count": 16238,
- "node_count": 7244,
+ "edge_count": 16242,
+ "node_count": 7245,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19709,6 +19709,10 @@
   "scalar_vacuum_metric_inverse_bounded_theorem_note_2026-10-15": {
    "deps_hash": "f8150ff62aac",
    "out_degree": 2
+  },
+  "scale_ladder_cross_rung_invariants_corner_fermion_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "7eba5c37a5c2",
+   "out_degree": 4
   },
   "scale_reference_primitive": {
    "deps_hash": "c8eee4235fc9",

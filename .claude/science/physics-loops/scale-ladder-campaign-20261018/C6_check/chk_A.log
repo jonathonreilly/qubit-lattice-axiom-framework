@@ -15,3 +15,7 @@ Convention: repo H = -t1 sum_onsite u c^dag c - t2 sum_links u c^dag c, t1 = -1,
 [PASS] control: with t1 = +1 the same u gives standard triangle flux 0 (sign is load-bearing)
 
 A4 (independent PSG by BFS sign propagation, L = 4); t=12s
+   0000 {'TxTy': '+1', 'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'T^4': [1, 1, 1], 'fixed': [(0, 0, 0), (2, 2, 2)]} t=470s
+   0001 {'TxTy': '+1', 'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1, 1], 'T^4': [1, 1, 1], 'fixed': []} t=540s
+   0010 {'TxTy': '-1', 'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1, 1], 'fixed': None} t=542s
+   0011 {'TxTy': '-1', 'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'fixed': None} t=543s

@@ -1,0 +1,27 @@
+[PASS] C1 [exact, trivial] path independence: 6 random cuts x 6 random move orders, generic random 2-qubit gates on an 8-qubit ring; and legal moves from one cut commute
+        max |U_order1 psi - U_order2 psi| = 5.70e-16; max commutator of co-legal moves = 1.92e-16 (18 pairs)
+[PASS] C2 [exact] row j of the cut evolution W_F equals row j of the uniform evolution by lambda_j layers (theta = 0.3, Lc = 64, wire counts 1..11)
+        max entry deviation 0.00e+00; W_F unitary
+[PASS] C3 [exact] the fixed-operator group commutator W_N W_M W_N^-1 W_M^-1 is not the identity (operator norm of C - 1)
+        ||C - 1|| = 2.000 (N = 3 cos, M = 3 sin periods, Lc = 64)
+[PASS] C4 [exact, massless] cut map is a permutation; adjacent wire counts differ by <= 1; #odd-count wires >= total variation of the period count; chirality flips occur exactly on the odd-count wires
+        A=3: TV=12, odd wires=30, chirality flips=30, max adjacent count difference=1; A=5: TV=20, odd wires=54, chirality flips=54, max adjacent count difference=1; A=9: TV=36, odd wires=104, chirality flips=104, max adjacent count difference=1
+
+  theta    A    k0      w      dx(measured)  -w*g(k0)  same-band weight
+  0.0    16  +0.1    0.393     -0.7749    -0.3927   0.9450
+  0.0    16  -0.1    0.393      0.9001    -0.3927   0.9421
+  0.0    32  +0.1    1.571     -2.4577    -1.5708   0.9392
+  0.0    32  -0.1    1.571      2.1784    -1.5708   0.9417
+  0.0    64  +0.1    6.283     -8.8398    -6.2832   0.8442
+  0.0    64  -0.1    6.283      8.5587    -6.2832   0.8458
+  0.2    16  +0.1    0.393     -0.3824    -0.3874   0.9909
+  0.2    16  -0.1    0.393     -0.2375    -0.3874   0.9903
+  0.2    32  +0.1    1.571     -1.4107    -1.5497   0.9921
+  0.2    32  -0.1    1.571     -1.2606    -1.5497   0.9897
+  0.2    64  +0.1    6.283     -5.7322    -6.1989   0.9732
+  0.2    64  -0.1    6.283     -5.4410    -6.1989   0.9671
+[PASS] C5 [numerical] massless walk, staircase integer-period lapses N = A cos, M = A sin (uniform w): R (k0=+0.1) and L (k0=-0.1) packets are displaced in opposite directions and lose weight to the other band, the loss growing with A; the continuum Dirac-algebra value is -v^2 w for both
+[PASS] C5b [numerical] massless walk, smooth real lapse (half-period regions): gross failure of the leading-order form
+        A = 32: displacement -31.48 cells vs -v^2 w = -1.571
+
+TOTAL: PASS=6 FAIL=0  (6.3 s)

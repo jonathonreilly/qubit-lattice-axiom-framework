@@ -50,8 +50,15 @@ massless member carries a flavour Wilson vector W = C w, with
 (exact check), and the bands are cos ω = f. A multilinear function on [−1,1]³ attains
 its extrema at vertices, and the vertices are the TRIMs k_a ∈ {0,π}. Hence:
 
-1. min ω and min (π − ω) over the whole Brillouin zone are attained at TRIMs. So
-   every node (ω = 0 or ω = π) of every member lies at a TRIM.
+1. min ω and min (π − ω) over the whole Brillouin zone are attained at TRIMs. So a
+   member has a node (ω = 0 or ω = π) iff some TRIM is a node of that type.
+   *Node locations (review fix 2b).* Multilinearity fixes where the extremal values
+   occur, not that they occur only at vertices. **Provided no two TRIMs adjacent on the
+   cube (differing in one k_a) are nodes of the same type**, every node lies at a TRIM.
+   If two such TRIMs are, f is constant along that edge, and the nodal set contains the
+   whole edge. All three named points satisfy the hypothesis. At b*, b_iso and b_gold
+   only Γ has f = 1. At b_gold the f = −1 set is the three X points, which pairwise
+   differ in two coordinates. Every concrete statement in §2 and §5 therefore stands.
 2. **Global dispersion bound:**
    1 − cos ω(k) ≥ (1 − cos θ) + c_θ Σ_a (1 − cos k_a), with
    c_θ = min_{K≠0} [cos θ − cos ω_K(θ)] / (2|K|), where |K| is the number of π
@@ -107,7 +114,7 @@ H_a is real-analytic near the physical node.
 
 for a(|p|+m) ≤ κ₀. The coefficients are exact (c7_exact). In particular g = s k + O(k³),
 ∇φ(0) = 0, and h_θ = θĥ − (k²/2)W + O(3). C₃ and κ₀ exist by analyticity, which is
-proved. Their values are **numerical**: the measured sup ratios are C₃ ≈ 0.042 (b*),
+proved. Their values are **numerical**: the sample-maximum ratios (lower estimates of the sup; see §4 item 2) are C₃ ≈ 0.042 (b*),
 0.033 (b_iso) and 0.051 (b_gold) on |p| ≤ 2, m = 1.
 
 **Dirac identification (exact).** V = ((τ₁ − τ₃)/√2) ⊗ 1 is a constant unitary.
@@ -132,9 +139,14 @@ T_a(t) = (V J_a)* U_θ^{⌊t/a⌋} (V J_a) P_a.
    (t − a⌊t/a⌋)‖H_a‖. The second comes from Duhamel, ‖e^{−itA} − e^{−itB}‖ ≤ t‖A−B‖.
    Since |W| = |s|√(1−s²), **the O(a·t) coefficient is s√(1−s²)P²/2, pinned to the
    axis-doubler gap.** It is 0.185 P² at b* and 0.236 P² at b_iso.
+   *Quantifiers (review fix 3(i)).* Proved: there exist C₃, κ₀ > 0 such that this
+   holds. The quoted C₃ ≈ 0.042, 0.033 and 0.051 (§3) are maxima over 120 sampled
+   momenta with |p| ≤ 2, m = 1, a ≤ 0.04, that is, a(P+m) ≤ 0.12. They are lower
+   estimates of the supremum on that sample, not certified bounds. **κ₀ has no computed
+   value.** Items 3 and 4 inherit the same existential constants.
 3. *(Light speed: O(a²).)* At b_gold, W = 0, so the error is a E_P + C₃ t a²(P+m)³
    for every twist.
-4. *(Maximal twist removes the O(a) error.)* At χ = π/2, W·τ = |W| Γ⊥, which
+4. *(Maximal twist: the O(a) error is removable by a p-dependent identification.)* At χ = π/2, W·τ = |W| Γ⊥, which
    anticommutes with α and β. The momentum-dependent chiral rotation
    V_a(p) = exp((φ/2) βΓ⊥) with tan φ = a|W|p²/(2m) commutes with α. It maps
    H_D + (a/2)|W|p² Γ⊥ to s α·p + √(m² + a²|W|²p⁴/4) β, which is exact. Hence
@@ -142,14 +154,19 @@ T_a(t) = (V J_a)* U_θ^{⌊t/a⌋} (V J_a) P_a.
    ‖V_a − 1‖ = O(a p²/m). The rate is not uniform as m → 0. This is the walk
    analogue of twisted-mass automatic O(a) improvement.
 5. *(Wilson-aligned mass: the O(a) error is spectral.)* For cos χ ≠ 0 the spectrum
-   itself shifts: E_a² = E² − a m|W| cos χ p² + O(a²). Eigenvalues are unitary
-   invariants, so for normal matrices (Bauer–Fike) no identification, constant or
-   p-dependent, removes the accumulated phase t·a m|W|cos χ p²/(2E).
+   itself shifts: E_a² = E² − a m|W| cos χ p² + O(a²). For unitary matrices the
+   matching distance between spectra is bounded by the operator-norm distance
+   (Bhatia–Davis): d(σ(A), σ(B)) ≤ ‖A − B‖. With A = V U^n V* for any unitary V,
+   constant or p-dependent, the spectrum of A is {e^{∓inω}}, unchanged. Hence
+   ‖A − e^{−itH_D}‖ ≥ |e^{−itE_a} − e^{−itE}| ≈ t·a m|W||cos χ| p²/(2E).
+   *Non-aliasing qualifier (review fix 3(ii)):* this holds for t with |sin tE| bounded
+   away from 0, so that e^{−itE_a} is not matched to e^{+itE}. In particular it holds
+   in sup over t ∈ [0,T].
 
 **Numerical confirmation** (t = 1, m = 1, |p| ≤ 2, 120 momenta, a = 0.04 → 0.005).
 max‖U^n − e^{−itH_D}‖ has slope 1.00–1.02 for b* and b_iso at both twists. With
 V_a(p), the slope is 2.00 at χ = π/2 and stays 1.01 at χ = 0. At b_gold the slope is
-2.00. The bound in item 2 holds at every a.
+2.00. The bound in item 2 holds at every a, using the sampled C₃.
 
 ## 5. Doubler decoupling (proved)
 
@@ -248,7 +265,7 @@ I read only abstracts, via web search.
 The arXiv:1307.3524 O(ε²) rate is not contradicted: different walks have different
 W. Our b_gold is the analogue of their O(a²) case.
 
-## 9. Finding in the parent runner (outside this block; report only)
+## 9. Finding in the parent runner (repaired 2026-10-18 under coordinator authorization)
 
 `scripts/two_qubit_cubic_dirac_tick_2026_10_16.py`, function `omega2_series`, uses
 arccos(1−u)² = 2u + u²/3 + **8**u³/45. The correct coefficient is **4/45** (sympy series,
@@ -260,7 +277,9 @@ parent Theorem 7:
 The 60-digit direct evaluation of arccos²(f) agrees with 1/1215 along the axis and the
 diagonal (c7_numeric). The anisotropic y = −s²/360, z, the "k⁶ anisotropy never
 vanishes" claim and all orders ≤ k⁴ are unaffected. The parent's runner check passes
-because both sides use the same series. I made no edit outside blocks/C7.
+because both sides use the same series. The reviewer traced the origin of 8/45: it is the
+y⁶ coefficient of arcsin(y)², quoted without the rescaling
+arccos(1−u)² = 4 arcsin²(√(u/2)). The parent repair is recorded in §12.
 
 ## 10. Claim types
 
@@ -289,3 +308,17 @@ U = M U₀ M by a different route, for example a BCH expansion of the product
 e^{iθΓ/2}U₀e^{iθΓ/2} rather than the O(3)-rotation identity. A second, cheaper item:
 the multilinearity argument of Lemma V, and in particular that the vertex set is all 8
 TRIMs including Γ.
+
+## 12. Review dispositions (REVIEW.md, independent-code subagent review)
+
+| review item | verdict | disposition |
+|---|---|---|
+| 1. O(a) term, signs, \|W\|, twist dichotomy | correct | none needed. The reviewer's independent routes are a direct log series of M U₀ M, \|W\| from the axis doubler with unitarity, and an eigenphase matching distance. |
+| 2a. Lemma V extrema, dispersion bound, doubler bounds | correct | none needed |
+| 2b. "every node of every member at a TRIM" | correct with fix | **applied**: adjacency hypothesis added in §2 item 1; the three named points are verified to satisfy it |
+| 3(i). C₃ and κ₀ quantifiers | fix | **applied** in §4 item 2: existence is proved; the C₃ values are sample maxima (lower estimates); κ₀ is unquantified |
+| 3(ii). Bauer–Fike → unitary matching distance, non-aliasing | fix | **applied** in §4 item 5 |
+| 3(iii). item 4 is p-dependent | already stated | item 4 heading now says "removable by a p-dependent identification" |
+| 4. parent 8/45 defect | correct (parent wrong) | **parent repaired** under coordinator authorization (§9; the runner and the Theorem 7 text are corrected, with a dated remark in the parent note) |
+| 5. Lorentz coefficients | correct | none needed |
+| not independently checked: Weyl indices, Lemma P and Poincaré slopes, literature | open | these remain single-author checks (exact symbolic and numeric in c7_exact and c7_numeric) |

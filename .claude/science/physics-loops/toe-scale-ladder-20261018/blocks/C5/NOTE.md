@@ -177,8 +177,15 @@ for all t, which would give W3[U] = W3[V]. (ii) For fixed r, let `X_r` be the ra
 If range-r matrices `M_j` with `W3[M_j] ≠ 0` had unitarity defect `sup||M_j M_j^dag - 1|| -> 0`, their
 coefficients would be bounded. A subsequence would converge uniformly to a unitary range-r U, and the
 `M_j` would be invertible and uniformly close to U, so W3[U] ≠ 0, contradicting K. So
-`eps_r := inf{defect : W3 ≠ 0} > 0`. Fourier truncations of V_2 show `eps_r -> 0` as `r -> ∞`. (s4 finds
-range-1 matrices with W3 = -1 and defect 6.5e-3, an upper bound on eps_1. This is numerical.)
+`eps_r := inf{defect : W3 ≠ 0} > 0`. Fourier truncations of V_2 show `eps_r -> 0` as `r -> ∞`.
+*Numerical (upper bounds only):* penalty continuation followed by pure unitarity minimisation gives
+W3 = -1 matrices with defect `sup|UU^dag - 1|` ≈ 6e-3 at r = 1. This plateaued, and the r = 1 log is s4c.
+At r = 2 the defect reached 1.8e-6 (logs s4b and s4d). The final decrease was still slow,
+1.85e-6 → 1.82e-6, with `min|det| = 1.000` and sup distance 0.57 to V_2. So **eps_2 ≲ 2e-6**. The
+numerics cannot tell a positive floor of that size from zero. That the floor is positive rests on
+Theorem K and compactness alone. This is the place a counterexample to K would show up. A
+reviewer could push it further with extended precision. Physically, a range-2 one-qubit step can sit
+within ~1e-6 of unitarity and still carry W3 = -1. **Exact** unitarity is what forbids it.
 
 **Corollary N (per-sheet Nielsen–Ninomiya for one-qubit ticks).** Let U be a finite-range one-qubit walk
 with `det U` constant (automatic under any G without fixed vectors, cubic-freeze note Thm 0). Write
@@ -225,8 +232,9 @@ paper.*
 | `scripts/s1_positive_control_and_conventions.py` | O-covariance of V_M; W3[V_M] five regimes; transformation rules; additivity; V_2 node table | PASS=19 FAIL=0 (run 1, with a too-strict convergence threshold, kept: `logs/s1_run1_superseded_convergence_threshold.log`, 3 FAIL) |
 | `scripts/s2_clifford_lemma.py` | exact pointwise vanishing on S⁵; S³ control; random S⁵ maps; b* member | PASS=10 FAIL=0 |
 | `scripts/s3_finite_range_battery.py` | 21 finite-range walks, exact grid; Lemma Q support; independent preimage degree | PASS=27 FAIL=0 |
-| `scripts/s4_adversarial_fit.py` | Fourier-truncation control (W3 = -1, not unitary); penalty continuation | see log; empirical checks labelled |
-| `scripts/s5_generic_unitary_solutions.py` | generic moving unitaries solved for directly | see log |
+| `scripts/s4_adversarial_fit.py` | Fourier-truncation controls (W3 = -1, invertible, not unitary) at r = 1, 2; penalty continuation | PASS=17 FAIL=0. Run 1 was killed by the 30-min limit (log kept). Its content **falsified my stated prediction** that the penalty endpoints would become W3 = 0. That prediction was about the optimiser, not about K. The empirical assertions were replaced by integer-W3 checks; this is disclosed in the script |
+| `scripts/s4b_defect_floor.py`, `s4c_defect_floor_r1.py`, `s4d_pure_unitarity_from_s4b.py` | defect floors within W3 = -1 at r = 2 and r = 1 | s4c PASS=2, s4d PASS=2. The s4b penalty-stage log was stopped by me in its slow LM stage, and s4d continues it from the saved parameters |
+| `scripts/s5_generic_unitary_solutions.py` | generic moving unitaries solved for directly, no structure imposed | see log |
 
 Every number quoted above comes from these logs.
 

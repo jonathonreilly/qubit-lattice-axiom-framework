@@ -36,3 +36,17 @@
   b* TRIM values are floating-point.
 - Load-bearing for independent review: Theorem B's O(a) term (a/2)|p|^2 W.tau and the
   twist dichotomy. Separately, the parent runner's 8/45 series coefficient (NOTE §9).
+- Review corrections (REVIEW.md) applied to NOTE.md:
+  - Lemma V adjacency hypothesis.
+  - Theorem C: C3 is reported as sample maxima, kappa0 as unquantified, and item 5 now
+    uses the unitary matching distance (Bhatia-Davis) with a non-aliasing qualifier.
+  - New §12 "Review dispositions".
+- Parent repair (coordinator-authorized):
+  - scripts/two_qubit_cubic_dirac_tick_2026_10_16.py: 8/45 -> 4/45; b_iso target
+    1/243 -> 1/1215; plane x -> s^2(4s^4-5s^2+2)/360. The b_iso check now also checks
+    the series against sympy and the sextic against a direct 50-digit arccos evaluation.
+    Result: 41/0.
+  - Theorem 7 line of the parent note fixed, with a dated correction remark.
+  - logs/runner-cache entry regenerated via runner_cache.execute_and_write_cache
+    (status fresh).
+- Full run_all re-run follows.

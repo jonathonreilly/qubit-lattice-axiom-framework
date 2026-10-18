@@ -188,52 +188,34 @@ PTS = [([rq() for _ in range(3)], [rq() for _ in range(3)]) for _ in range(2)]
 def weyl_orders():
     Bh = bracket(mats=SIG, v=V, wa=HALF, wb=HALF)
     B1 = bracket(mats=SIG, v=V, wa=sp.Integer(1), wb=sp.Integer(0))
-    ok_lead = ok_h1 = ok_h2dev = ok_h2obs = ok_t1dev = ok_t1lin = ok_t1obs = True
-    ok_t1obs2 = True
+    ok_lead = ok_h1 = ok_h2dev = ok_h2obs = True
+    # PRE-RUN expectation (chk_b15_orders_firstrun.log, tests O3/O3b/O4) was that the t != 1/2 O(a) term is linear in
+    # kappa (absorbable by a shifted-placement G_f). WRONG: it has a kappa-CUBIC part (from the mixed diagonal lapse
+    # pairs e_j - e_k, coefficient ~ wa^2 - wb^2), which no translation-covariant G_f can produce at O(a).
+    tl = {}
+    for tv in (sp.Integer(1), sp.Rational(1, 4)):
+        tl[tv] = bracket(mats=SIG, v=V, wa=tv, wb=1 - tv)
+    ok_t1dev = ok_t1cub = True
     for (K, p) in PTS:
         eh = expand_a(Bh, K, p, 2)
-        e1 = expand_a(B1, K, p, 2)
         kos = kosmann(K, p, V, SIG)
-        ok_lead &= is_zero(eh[-2]) and is_zero(eh[-1]) and is_zero(eh[0] - kos) and is_zero(e1[0] - kos)
+        ok_lead &= is_zero(eh[-2]) and is_zero(eh[-1]) and is_zero(eh[0] - kos)
+        for tv, Bt in tl.items():
+            e1 = expand_a(Bt, K, p, 1)
+            ok_lead &= is_zero(e1[-2]) and is_zero(e1[-1]) and is_zero(e1[0] - kos)
+            ok_t1dev &= not is_zero(e1[1])
+            ok_t1cub &= 3 in kdeg_parts(e1[1]) and not is_zero(kdeg_parts(e1[1])[3])
         ok_h1 &= is_zero(eh[1])
         ok_h2dev &= not is_zero(eh[2])
         ok_h2obs &= not is_zero(nonlinear_part(eh[2] + g0_cubic(eh[0])))
-        ok_t1dev &= not is_zero(e1[1])
-        ok_t1lin &= is_zero(nonlinear_part(e1[1]))
-        ok_t1obs &= not is_zero(nonlinear_part(e1[2] + g0_cubic(e1[0])))
-    check("O1", ok_lead, "Weyl, timings (1/2,1/2) and (1,0): O(a^-2), O(a^-1) vanish and O(a^0) = -v^2 L_w (Kosmann, sigma) exactly")
+    check("O1", ok_lead, "Weyl, timings (1/2,1/2), (1,0), (1/4,3/4): O(a^-2), O(a^-1) vanish and O(a^0) = -v^2 L_w (Kosmann, sigma) exactly")
     check("O2", ok_h1 and ok_h2dev and ok_h2obs,
           "endpoint mean: O(a) part = 0; O(a^2) part nonzero and NOT absorbable by any translation-covariant G_f "
           "(any range, any 2x2 structure): kappa-cubic part != -sum kappa_j^3 g_j0/6 -> genuine O(a^2) obstruction")
-    check("O3", ok_t1dev and ok_t1lin,
-          "one-endpoint timing (1,0): O(a) deviation from the symmetric Kosmann relabelling is nonzero BUT LINEAR in kappa, "
-          "i.e. of the form sum_j kappa_j g_j1(K,p): it IS absorbable by an O(a)-corrected translation-covariant G_f "
-          "(B15's 'O(a) obstruction' for t != 1/2 is only an O(a) deviation from the symmetric G_f)")
-    check("O4", ok_t1obs, "one-endpoint timing: after O(a) absorption the O(a^2) part is still non-absorbable (obstruction O(a^2))")
+    check("O3", ok_t1dev and ok_t1cub,
+          "timings (1,0) and (1/4,3/4): the O(a) part has a kappa-cubic component, so it is NOT absorbable by any "
+          "O(a)-corrected translation-covariant G_f of any range: a genuine O(a) obstruction (closes B15's untested caveat)")
     return Bh
-
-
-def weyl_O1_structure():
-    """identify the absorbable O(a) term at t = 1: is it -v^2 L_{delta u} with delta u_j = c d_j u_j (bond placement)?"""
-    B1 = bracket(mats=SIG, v=V, wa=sp.Integer(1), wb=sp.Integer(0))
-    cs = sp.Symbol("cc")
-    ok = True
-    for (K, p) in PTS:
-        e1 = expand_a(B1, K, p, 1)
-        # delta u_j = cc * d_j u_j with u = w = -2i kappa e^{iKx}: d_j -> i K_j ; Kosmann L of a general u-symbol:
-        Kv, pv = sp.Matrix(K), sp.Matrix(p)
-        w = -2 * I * sp.Matrix(kap)
-        du = sp.Matrix([cs * I * K[j] * w[j] for j in range(3)])
-        div = (I * Kv).dot(du); curl = (I * Kv).cross(du)
-        Ld = (du.dot(I * pv) + div / 2) * E2
-        for j in range(3):
-            Ld += I / 4 * curl[j] * SIG[j]
-        res = (e1[1] + V**2 * Ld).applyfunc(sp.expand)
-        sol = sp.solve([x for x in res if x != 0], cs, dict=True)
-        ok &= len(sol) == 1
-        csol = sol[0][cs] if sol else None
-    check("O3b", ok, f"the t=1 O(a) term equals -v^2 L_(delta u), delta u_j = c d_j u_j with c = {csol}: a half-bond shift of where "
-          "the bond field is placed (one-sided relabelling), the fermionic analogue of B14-check caveat 2")
 
 
 def doublers():
@@ -253,10 +235,11 @@ def doublers():
             ep = expand_a(Bp, K, p, 2)
             ok &= all(is_zero(ed[n] - ep[n]) for n in ed)
             ok &= is_zero(ed[0] - kosmann(K, p, V, tau)) and is_zero(ed[1])
-            ok2 &= not is_zero(ed[0] - kosmann(K, p, V, SIG))
+            # PRE-RUN expectation 'tau != sigma at every doubler' was wrong for (pi,pi,pi): sigma' = -sigma, tau = sigma
+            ok2 &= (not is_zero(ed[0] - kosmann(K, p, V, SIG))) if nflip < 3 else is_zero(ed[0] - kosmann(K, p, V, SIG))
     check("O5", ok, "all 7 doublers (P_j -> -P_j): bracket = bracket with sigma' = (+-sigma^j) exactly; leading order -v^2 L_w "
           "with the doubler's own proper spin set tau (sigma' or -sigma'), O(a) = 0: same v^2 for every doubler")
-    check("O5b", ok2, "but tau != sigma: at every doubler the O(a^0) spin term differs from an on-site (i/4)(curl xi).sigma "
+    check("O5b", ok2, "but tau != sigma at the 6 doublers with one or two pi components (tau = sigma only at (pi,pi,pi)): there the O(a^0) spin term differs from an on-site (i/4)(curl xi).sigma "
           "relabelling; a lattice G_f must carry momentum-dependent spin structure (e.g. via cos(a p_j)) to close on doublers")
 
 
@@ -312,6 +295,11 @@ def dirac():
     check("O8", okw and okodd and oklin,
           "Dirac + Wilson (r=1, endpoint mean): O(a^0) = Kosmann; O(a) term nonzero and Clifford-odd (obstruction for a "
           "Kosmann-class G_f) BUT linear in kappa: absorbable at O(a) by a G_f with a Clifford-odd (beta-type) O(a) correction")
+    Ks = list(sp.symbols("K1:4")); ps = list(sp.symbols("p1:4"))
+    es = expand_a(Bwil, Ks, ps, 1)
+    degs = sorted(d for d, Q in kdeg_parts(es[1]).items() if not is_zero(Q))
+    check("O8c", degs == [1], f"Dirac + Wilson O(a) term with SYMBOLIC K, p: kappa-degrees {degs} -> linear in kappa for all (K,p), "
+          "so the O(a) Wilson term is exactly of relabelling-parameter form (absorbable by a Clifford-odd O(a) G_f)")
     check("O8b", okobs, "Dirac + Wilson: O(a^2) part non-absorbable by any translation-covariant G_f")
 
 
@@ -364,7 +352,6 @@ def general_linear_nogo(L, wa, wb):
 
 if __name__ == "__main__":
     weyl_orders()
-    weyl_O1_structure()
     doublers()
     dirac()
     ks = {L: gravity_kernel(L) for L in (3, 4, 5)}

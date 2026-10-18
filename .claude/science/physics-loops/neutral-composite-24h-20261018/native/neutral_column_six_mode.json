@@ -1,0 +1,76 @@
+{
+  "upper_q_squared_curvature": -0.26355763230115514,
+  "physical_readout_weight_over_t_squared": 0.3014422113819855,
+  "gamma": 0.796875,
+  "delta": 6.375,
+  "upper": 10.453351015278818,
+  "upper_binding": 0.07835101527881783,
+  "source_weight": 0.0303796635305604,
+  "lower_threshold": 1.6568542494923806,
+  "rows": [
+    {
+      "n": 12,
+      "complete_q0_shapes": 36,
+      "source_component": 15,
+      "upper": 10.505474709790045,
+      "upper_weight": 0.03271161586011488,
+      "lower": -3.6411633202921188,
+      "source_norm2": 2.0,
+      "symmetry_error": 0.0
+    },
+    {
+      "n": 20,
+      "complete_q0_shapes": 100,
+      "source_component": 27,
+      "upper": 10.4644815508499,
+      "upper_weight": 0.0282294770463071,
+      "lower": -3.849150055262797,
+      "source_norm2": 2.0,
+      "symmetry_error": 0.0
+    },
+    {
+      "n": 40,
+      "complete_q0_shapes": 400,
+      "source_component": 57,
+      "upper": 10.453597234589848,
+      "upper_weight": 0.030136215365529934,
+      "lower": -3.9570793957824915,
+      "source_norm2": 2.0,
+      "symmetry_error": 0.0
+    },
+    {
+      "n": 60,
+      "complete_q0_shapes": 900,
+      "source_component": 87,
+      "upper": 10.453355790266173,
+      "upper_weight": 0.030371245638336222,
+      "lower": -3.980035950312652,
+      "source_norm2": 2.0,
+      "symmetry_error": 0.0
+    }
+  ],
+  "scope": "Order-six column operator/source component; unknown common single-plaquette mass correction excluded; no exact native pole",
+  "momentum_checks": [
+    {
+      "mx": 1,
+      "my": 0,
+      "n": 60,
+      "native_coefficient_finite": 10.450486415879238,
+      "halfline_prediction": 10.450485549782604
+    },
+    {
+      "mx": 1,
+      "my": 1,
+      "n": 60,
+      "native_coefficient_finite": 10.447567609675646,
+      "halfline_prediction": 10.44757243392436
+    },
+    {
+      "mx": 2,
+      "my": 0,
+      "n": 60,
+      "native_coefficient_finite": 10.442194152765396,
+      "halfline_prediction": 10.442188017096466
+    }
+  ]
+}

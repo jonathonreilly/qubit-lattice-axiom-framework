@@ -25,3 +25,16 @@ Conditional bounded bridge: volume-independent local BCH remainder and two-wall 
 
 ## Native column plaquette block
 Conditionalfixed-order: generated -K_LΣP, Kopen=(L+14)Jx²Jy²/(128Jz³), and originalC coupling -3(L+13)Jx²Jy²/(128Jz4)ΣP. Fullnativefinitechecks supportboth. No newinteraction, 3Dphase or scalarpoleclaimed.
+
+## Column collective-mode block
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: partially_closes
+conditional_surface_status: derived order-six upper mode and original-observable matrix element
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: supplied Hamiltonian/state/anisotropy; missing native pole and physical bridge
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+review_loop_disposition: pass

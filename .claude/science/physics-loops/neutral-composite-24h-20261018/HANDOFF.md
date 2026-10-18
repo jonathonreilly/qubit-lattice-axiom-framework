@@ -207,3 +207,7 @@ Published and attached PR9727 a88e338935dbe8778d317e57667bd995604aed42. New bran
 
 ## 2026-10-18T05:51:20.495973+00:00 root checkpoint
 PR9728 published/attached, head53bde7d0de730cc055fdc612a110eae79bf573e2. Column plaquette selection and originalC coupling now checked; replay53.213425s, scopedreviewPASS. Currentbranch codex/neutral-column-plaquette-20261018 awaitingcitationgraph6749 thenmanifest/publication. Nextrootroute: native sixth-order rectangle interactions compete with pair-column tunneling forL>6. Scratch /private/tmp/neutral_rectangle_six.py/json has exact720paths all64colors; conditional fourdefectstar scratch /private/tmp/neutral_column_four_defect*.py/json must not be promoted as native mode withoutK6. No active scientific subprocess; graphonly.
+
+
+## 2026-10-18T06:05:25.938215+00:00 root checkpoint
+PR9730 published and attached at01d3268680aa9e7cc053b5c126ef03fc2bca4249. Currentbranch codex/neutral-column-collective-20261018. Exact sixth-order native rectangle interaction removes naive lower four-defect bound state forL6; surviving upper source mode has derived originalC amplitude -63t/(20Jz), weight .30144221138(t/Jz)^2, negative small-q curvature -.2635576323. Exact source derivative includes direct term, not just ground mixing. Complete finite-orbit matrices n12..60 and three finite momenta pass. Unknown common sixth-order mass correction excluded; no native infinite-array pole or empirical identification. All scientific subprocesses complete. Packaging coherent unit with independent checks next; campaign remains active.

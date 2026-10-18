@@ -21,3 +21,13 @@ Native integer-wall local filter -> canonical K2 -> symmetry-selected zone mode 
 
 ## Native column plaquette block
 OriginaldirectionalPaulis ->24signedloops ->fullcanonicalK4 ->positiveparitypreference ->source-derivativeCcoefficient ->directnativeCmatrixelements. Exposeddevelopmentonly; noempiricaldataset.
+
+## Column collective-mode block
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "derive the scalar mode and its coupling without adding a new interaction"
+source_of_blocker_text: user_goal
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: control native higher orders and find physically suitable propagation before identifying a scalar
+The order-six mode/readout are derived within the supplied model and selected sector. Negative curvature prevents relativistic-scalar identification.

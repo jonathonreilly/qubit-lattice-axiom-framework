@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/native_column_collective_mode.py
+runner_sha256: 513715a2c29991a4b1f87959676b337a59e405d87b223b5cfdfeb5ea75a8d7c3
+input_fingerprint_sha256: fc6e13360dcd47d89d3c48c368a78ad84ecfeddee85f619a60fa0b6bb4505e94
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 2.48
+status: ok
+----- stdout -----
+per_site: one physical qubit; no additional microscopic interaction
+per_mode: upper neutral composite and original-readout weight derived at order six
+per_block: competing native interaction removes naive lower bound mode
+lattice_wide: negative curvature at zero momentum; no relativistic scalar or TOE closure
+
+----- stderr -----
+

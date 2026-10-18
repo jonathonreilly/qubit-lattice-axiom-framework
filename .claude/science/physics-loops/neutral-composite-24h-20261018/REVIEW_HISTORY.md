@@ -31,3 +31,6 @@ Local normal-form replay passed 0.580898 seconds, exact cancellation/K2/vacuum-a
 
 ## Native column plaquette block
 Column plaquette/readout source-bound replay passed53.213425 seconds. Exact24-loop signs all16colors and fullcanonicalK4 L5..8 checked; nativeL5/6 λ.1/.2 eigenstate and readout comparisons passed. Independent equations and scoped Astra-low review PASS after fixednonzero transverse-ratio and provenance clarification.
+
+## Column collective-mode block
+Focused independent six-loop, star/dispersion and source checks PASS. Astra-low final review PASS after narrowing finite matrices to + row/column-X symmetry quotient and periods >6. Original full-space wording was overbroad and corrected. No audit verdict. Replay separately source-bound.

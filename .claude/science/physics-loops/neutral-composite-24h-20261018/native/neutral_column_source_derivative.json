@@ -1,0 +1,50 @@
+[
+  {
+    "L": 5,
+    "t_coefficient": "1/16",
+    "t_log_source_derivative": "9/2",
+    "total_source_over_t": "-63/38"
+  },
+  {
+    "L": 6,
+    "t_coefficient": "1/32",
+    "t_log_source_derivative": "6",
+    "total_source_over_t": "-63/20"
+  },
+  {
+    "L": 7,
+    "t_coefficient": "1/64",
+    "t_log_source_derivative": "15/2",
+    "total_source_over_t": "-65/14"
+  },
+  {
+    "L": 8,
+    "t_coefficient": "1/128",
+    "t_log_source_derivative": "9",
+    "total_source_over_t": "-135/22"
+  },
+  {
+    "L": 9,
+    "t_coefficient": "1/256",
+    "t_log_source_derivative": "21/2",
+    "total_source_over_t": "-351/46"
+  },
+  {
+    "L": 10,
+    "t_coefficient": "1/512",
+    "t_log_source_derivative": "12",
+    "total_source_over_t": "-73/8"
+  },
+  {
+    "L": 11,
+    "t_coefficient": "1/1024",
+    "t_log_source_derivative": "27/2",
+    "total_source_over_t": "-531/50"
+  },
+  {
+    "L": 12,
+    "t_coefficient": "1/2048",
+    "t_log_source_derivative": "15",
+    "total_source_over_t": "-315/26"
+  }
+]

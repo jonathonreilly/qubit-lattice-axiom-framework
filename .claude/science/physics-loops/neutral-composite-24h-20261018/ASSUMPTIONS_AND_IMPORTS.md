@@ -13,3 +13,6 @@ Finite-order local normal form derives interaction and packet readout from suppl
 
 ## Native column plaquette block
 Positive four-column parity is now energetically favored for fixedfiniteL>=5 at sufficiently small common transverse scale with fixednonzero Jx/Jy. This does not supply a uniformsize interval, exactkinematicconstraint or selectedcosmologicalstate. GeneratedplaquettereadoutcommutesleadingplaquetteHamiltonian.
+
+## Order-six column collective mode
+Supplied directional Hamiltonian, anisotropy, open L6 columns, even transverse periods >6, + logical row/column-X symmetry sector and P+ prepared vacuum remain explicit. Derived six-edge coefficient, complete leading source component, direct/mixing originalC coupling. Common sixth-order singleP shift uncomputed. No measured detector or cosmological mapping. All numerical cases exposed model development, no empirical test.

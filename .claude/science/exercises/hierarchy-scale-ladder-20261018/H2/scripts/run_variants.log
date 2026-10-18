@@ -1,0 +1,17 @@
+start A1-A1 12:12Z
+done A1-A1 12:17Z
+start A2-A1 12:17Z
+done A2-A1 12:23Z
+start A1-A2 12:23Z
+done A1-A2 12:32Z
+start A2-A2 12:32Z
+done A2-A2 12:39Z
+start A1-B1 12:39Z
+done A1-B1 12:44Z
+start A2-B1 12:44Z
+done A2-B1 12:49Z
+start A1-B2 12:49Z
+done A1-B2 12:55Z
+start A2-B2 12:55Z
+done A2-B2 13:00Z
+ALLDONE

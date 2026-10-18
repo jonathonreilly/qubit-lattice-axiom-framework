@@ -1,0 +1,60 @@
+
+=== set MZ: free integers, all 9 masses
+  x3: fits exist for 693/1500 eps grid points; eps range [0.0229, 0.9000]; fraction of eps in [1/9, 0.9] that fit: 0.665 of fits
+     smallest max exponent N* = 3; example eps=0.0257, n(u,c,t,d,s,b,e,mu,tau)=[3, 1, 0, 3, 2, 1, 3, 2, 1], max dev factor 2.67
+     eps >= 1/F^2 = 0.1111: 461/461 grid points fit (expected all: step <= 2 ln F)
+  x10: fits exist for 1500/1500 eps grid points; eps range [0.0010, 0.9000]; fraction of eps in [1/9, 0.9] that fit: 0.307 of fits
+     smallest max exponent N* = 2; example eps=0.0021, n(u,c,t,d,s,b,e,mu,tau)=[2, 1, 0, 2, 1, 1, 2, 1, 1], max dev factor 7.25
+     eps >= 1/F^2 = 0.0100: 992/992 grid points fit (expected all: step <= 2 ln F)
+  sector up alone x3: N*=2, example eps=0.0027 n=[2, 1, 0] dev x1.15
+  sector down alone x3: N*=2, example eps=0.0316 n=[2, 1, 0] dev x1.29
+  sector lep alone x3: N*=2, example eps=0.0167 n=[2, 1, 0] dev x1.88
+
+=== set GUT: free integers, all 9 masses
+  x3: fits exist for 636/1500 eps grid points; eps range [0.0504, 0.9000]; fraction of eps in [1/9, 0.9] that fit: 0.725 of fits
+     smallest max exponent N* = 4; example eps=0.0668, n(u,c,t,d,s,b,e,mu,tau)=[4, 2, 0, 4, 3, 1, 4, 2, 1], max dev factor 2.22
+     eps >= 1/F^2 = 0.1111: 461/461 grid points fit (expected all: step <= 2 ln F)
+  x10: fits exist for 1500/1500 eps grid points; eps range [0.0010, 0.9000]; fraction of eps in [1/9, 0.9] that fit: 0.307 of fits
+     smallest max exponent N* = 2; example eps=0.0080, n(u,c,t,d,s,b,e,mu,tau)=[2, 1, 0, 2, 2, 1, 2, 1, 1], max dev factor 6.84
+     eps >= 1/F^2 = 0.0100: 992/992 grid points fit (expected all: step <= 2 ln F)
+  sector up alone x3: N*=2, example eps=0.0025 n=[2, 1, 0] dev x1.12
+  sector down alone x3: N*=2, example eps=0.0338 n=[2, 1, 0] dev x1.24
+  sector lep alone x3: N*=2, example eps=0.0167 n=[2, 1, 0] dev x1.88
+
+=== set MIX: free integers, all 9 masses
+  x3: fits exist for 697/1500 eps grid points; eps range [0.0356, 0.9000]; fraction of eps in [1/9, 0.9] that fit: 0.661 of fits
+     smallest max exponent N* = 4; example eps=0.0415, n(u,c,t,d,s,b,e,mu,tau)=[3, 1, 0, 3, 2, 1, 4, 2, 1], max dev factor 2.39
+     eps >= 1/F^2 = 0.1111: 461/461 grid points fit (expected all: step <= 2 ln F)
+  x10: fits exist for 1500/1500 eps grid points; eps range [0.0010, 0.9000]; fraction of eps in [1/9, 0.9] that fit: 0.307 of fits
+     smallest max exponent N* = 2; example eps=0.0050, n(u,c,t,d,s,b,e,mu,tau)=[2, 1, 0, 2, 1, 1, 2, 1, 1], max dev factor 6.69
+     eps >= 1/F^2 = 0.0100: 992/992 grid points fit (expected all: step <= 2 ln F)
+  sector up alone x3: N*=2, example eps=0.0035 n=[2, 1, 0] dev x1.44
+  sector down alone x3: N*=2, example eps=0.0334 n=[2, 1, 0] dev x1.22
+  sector lep alone x3: N*=2, example eps=0.0170 n=[2, 1, 0] dev x1.88
+
+=== set MZ: sector-blind (n_g and Lam common to up, down, lepton)
+  generation 1 ('u', 'd', 'e'): spread max/min = 6.0  (x3 needs <= 9; x10 needs <= 100)
+  generation 2 ('c', 's', 'mu'): spread max/min = 11.3  (x3 needs <= 9; x10 needs <= 100)
+  generation 3 ('t', 'b', 'tau'): spread max/min = 98.3  (x3 needs <= 9; x10 needs <= 100)
+  best sector-blind fit: max deviation factor x9.9 at eps=0.2165, n(gen1,gen2,gen3)=[7, 4, 1]
+  CKM: sector-common coefficients give M_u = c M_d, so U_u = U_d and V_CKM = 1 (no mixing) -- see check below
+
+=== set GUT: sector-blind (n_g and Lam common to up, down, lepton)
+  generation 1 ('u', 'd', 'e'): spread max/min = 2.4  (x3 needs <= 9; x10 needs <= 100)
+  generation 2 ('c', 's', 'mu'): spread max/min = 10.7  (x3 needs <= 9; x10 needs <= 100)
+  generation 3 ('t', 'b', 'tau'): spread max/min = 74.0  (x3 needs <= 9; x10 needs <= 100)
+  best sector-blind fit: max deviation factor x8.6 at eps=0.7304, n(gen1,gen2,gen3)=[36, 21, 6]
+  CKM: sector-common coefficients give M_u = c M_d, so U_u = U_d and V_CKM = 1 (no mixing) -- see check below
+
+=== set MIX: sector-blind (n_g and Lam common to up, down, lepton)
+  generation 1 ('u', 'd', 'e'): spread max/min = 9.1  (x3 needs <= 9; x10 needs <= 100)
+  generation 2 ('c', 's', 'mu'): spread max/min = 13.6  (x3 needs <= 9; x10 needs <= 100)
+  generation 3 ('t', 'b', 'tau'): spread max/min = 97.2  (x3 needs <= 9; x10 needs <= 100)
+  best sector-blind fit: max deviation factor x9.9 at eps=0.7472, n(gen1,gen2,gen3)=[40, 21, 8]
+  CKM: sector-common coefficients give M_u = c M_d, so U_u = U_d and V_CKM = 1 (no mixing) -- see check below
+
+=== CKM with sector-common texture (M_u = 2.7 A, M_d = 0.4 A, random A): max |offdiag V| = 2.00e-16
+
+=== random-spectrum control (9 log-uniform masses over the observed range, 400 draws):
+  fraction with a free-integer x3 fit for some eps in [0.02, 0.6]: 1.000; with eps >= 1/9: 1.000
+watchdog peak RSS 41664 KB

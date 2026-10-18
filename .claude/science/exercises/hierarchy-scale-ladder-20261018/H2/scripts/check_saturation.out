@@ -1,0 +1,8 @@
+odd Hermitian coordinates: 128
+111 Eg  phi=[-0.  1.] |Stab|=64  dimV<=1,3(,5) = [np.int64(1), np.int64(3), np.int64(3)]  dimFix = 3  (equivariant maps per degree: [1, 3, 4])
+111 T1g phi=[0. 0. 1.] |Stab|=64  dimV<=1,3(,5) = [np.int64(3), np.int64(3)]  dimFix = 3  (equivariant maps per degree: [3, 7])
+111 T1g phi=[0.577 0.577 0.577] |Stab|=48  dimV<=1,3(,5) = [np.int64(3), np.int64(3)]  dimFix = 3  (equivariant maps per degree: [3, 7])
+111 T1g phi=[0.707 0.707 0.   ] |Stab|=32  dimV<=1,3(,5) = [np.int64(3), np.int64(4)]  dimFix = 4  (equivariant maps per degree: [3, 7])
+111 T2g phi=[0.577 0.577 0.577] |Stab|=48  dimV<=1,3(,5) = [np.int64(1), np.int64(3)]  dimFix = 3  (equivariant maps per degree: [1, 7])
+111 T2g phi=[0. 0. 1.] |Stab|=64  dimV<=1,3(,5) = [np.int64(1), np.int64(1)]  dimFix = 1  (equivariant maps per degree: [1, 7])
+watchdog peak RSS 321888 KB

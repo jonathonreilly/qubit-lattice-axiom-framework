@@ -1,0 +1,113 @@
+
+orders_A1-A1.out: entries 111, with masses 56; orders seen ['1', '3']; max distinct finite orders per spurion 2
+    distinct finite orders per (spurion, direction): {0: 55, 1: 44, 2: 12}
+    all finite orders seen: [1, 3]
+    multi-charge directions: 26; odd-part saturated at order 3: 22 (note: V counts all charges, Fix counts odd part only; see per-line dims)
+    odd single-charge directions: 32; span saturated at order 3 (dim V1+V3 = dim Fix): 32; at order 1: 24
+    multi-charge directions with masses: 26; their distinct orders: [(1,), (1, 3)]
+    max number of distinct Dirac-mass values (sv groups) for any single spurion: 5
+    Dirac-unit order patterns (order: count of Dirac pairs) and how often:
+      {'inf': 4}  x55
+      {'1': 4}  x28
+      {'1': 2, 'inf': 2}  x16
+      {'1': 3, '3': 1}  x10
+      {'1': 2, '3': 2}  x2
+
+orders_A1-A2.out: entries 111, with masses 56; orders seen ['1', '3']; max distinct finite orders per spurion 2
+    distinct finite orders per (spurion, direction): {0: 55, 1: 44, 2: 12}
+    all finite orders seen: [1, 3]
+    multi-charge directions: 26; odd-part saturated at order 3: 22 (note: V counts all charges, Fix counts odd part only; see per-line dims)
+    odd single-charge directions: 32; span saturated at order 3 (dim V1+V3 = dim Fix): 32; at order 1: 24
+    multi-charge directions with masses: 26; their distinct orders: [(1,), (1, 3)]
+    max number of distinct Dirac-mass values (sv groups) for any single spurion: 5
+    Dirac-unit order patterns (order: count of Dirac pairs) and how often:
+      {'inf': 4}  x55
+      {'1': 4}  x28
+      {'1': 2, 'inf': 2}  x16
+      {'1': 3, '3': 1}  x10
+      {'1': 2, '3': 2}  x2
+
+orders_A1-B1.out: entries 111, with masses 56; orders seen ['1', '3']; max distinct finite orders per spurion 2
+    distinct finite orders per (spurion, direction): {0: 55, 1: 44, 2: 12}
+    all finite orders seen: [1, 3]
+    multi-charge directions: 26; odd-part saturated at order 3: 22 (note: V counts all charges, Fix counts odd part only; see per-line dims)
+    odd single-charge directions: 32; span saturated at order 3 (dim V1+V3 = dim Fix): 32; at order 1: 24
+    multi-charge directions with masses: 26; their distinct orders: [(1,), (1, 3)]
+    max number of distinct Dirac-mass values (sv groups) for any single spurion: 5
+    Dirac-unit order patterns (order: count of Dirac pairs) and how often:
+      {'inf': 4}  x55
+      {'1': 4}  x28
+      {'1': 2, 'inf': 2}  x16
+      {'1': 3, '3': 1}  x10
+      {'1': 2, '3': 2}  x2
+
+orders_A1-B2.out: entries 111, with masses 56; orders seen ['1', '3']; max distinct finite orders per spurion 2
+    distinct finite orders per (spurion, direction): {0: 55, 1: 44, 2: 12}
+    all finite orders seen: [1, 3]
+    multi-charge directions: 26; odd-part saturated at order 3: 22 (note: V counts all charges, Fix counts odd part only; see per-line dims)
+    odd single-charge directions: 32; span saturated at order 3 (dim V1+V3 = dim Fix): 32; at order 1: 24
+    multi-charge directions with masses: 26; their distinct orders: [(1,), (1, 3)]
+    max number of distinct Dirac-mass values (sv groups) for any single spurion: 5
+    Dirac-unit order patterns (order: count of Dirac pairs) and how often:
+      {'inf': 4}  x55
+      {'1': 4}  x28
+      {'1': 2, 'inf': 2}  x16
+      {'1': 3, '3': 1}  x10
+      {'1': 2, '3': 2}  x2
+
+orders_A2-A1.out: entries 111, with masses 56; orders seen ['1', '3']; max distinct finite orders per spurion 2
+    distinct finite orders per (spurion, direction): {0: 55, 1: 44, 2: 12}
+    all finite orders seen: [1, 3]
+    multi-charge directions: 26; odd-part saturated at order 3: 22 (note: V counts all charges, Fix counts odd part only; see per-line dims)
+    odd single-charge directions: 32; span saturated at order 3 (dim V1+V3 = dim Fix): 32; at order 1: 24
+    multi-charge directions with masses: 26; their distinct orders: [(1,), (1, 3)]
+    max number of distinct Dirac-mass values (sv groups) for any single spurion: 5
+    Dirac-unit order patterns (order: count of Dirac pairs) and how often:
+      {'inf': 4}  x55
+      {'1': 4}  x28
+      {'1': 2, 'inf': 2}  x16
+      {'1': 3, '3': 1}  x10
+      {'1': 2, '3': 2}  x2
+
+orders_A2-A2.out: entries 111, with masses 56; orders seen ['1', '3']; max distinct finite orders per spurion 2
+    distinct finite orders per (spurion, direction): {0: 55, 1: 44, 2: 12}
+    all finite orders seen: [1, 3]
+    multi-charge directions: 26; odd-part saturated at order 3: 22 (note: V counts all charges, Fix counts odd part only; see per-line dims)
+    odd single-charge directions: 32; span saturated at order 3 (dim V1+V3 = dim Fix): 32; at order 1: 24
+    multi-charge directions with masses: 26; their distinct orders: [(1,), (1, 3)]
+    max number of distinct Dirac-mass values (sv groups) for any single spurion: 5
+    Dirac-unit order patterns (order: count of Dirac pairs) and how often:
+      {'inf': 4}  x55
+      {'1': 4}  x28
+      {'1': 2, 'inf': 2}  x16
+      {'1': 3, '3': 1}  x10
+      {'1': 2, '3': 2}  x2
+
+orders_A2-B1.out: entries 111, with masses 56; orders seen ['1', '3']; max distinct finite orders per spurion 2
+    distinct finite orders per (spurion, direction): {0: 55, 1: 44, 2: 12}
+    all finite orders seen: [1, 3]
+    multi-charge directions: 26; odd-part saturated at order 3: 22 (note: V counts all charges, Fix counts odd part only; see per-line dims)
+    odd single-charge directions: 32; span saturated at order 3 (dim V1+V3 = dim Fix): 32; at order 1: 24
+    multi-charge directions with masses: 26; their distinct orders: [(1,), (1, 3)]
+    max number of distinct Dirac-mass values (sv groups) for any single spurion: 5
+    Dirac-unit order patterns (order: count of Dirac pairs) and how often:
+      {'inf': 4}  x55
+      {'1': 4}  x28
+      {'1': 2, 'inf': 2}  x16
+      {'1': 3, '3': 1}  x10
+      {'1': 2, '3': 2}  x2
+
+orders_A2-B2.out: entries 111, with masses 56; orders seen ['1', '3']; max distinct finite orders per spurion 2
+    distinct finite orders per (spurion, direction): {0: 55, 1: 44, 2: 12}
+    all finite orders seen: [1, 3]
+    multi-charge directions: 26; odd-part saturated at order 3: 22 (note: V counts all charges, Fix counts odd part only; see per-line dims)
+    odd single-charge directions: 32; span saturated at order 3 (dim V1+V3 = dim Fix): 32; at order 1: 24
+    multi-charge directions with masses: 26; their distinct orders: [(1,), (1, 3)]
+    max number of distinct Dirac-mass values (sv groups) for any single spurion: 5
+    Dirac-unit order patterns (order: count of Dirac pairs) and how often:
+      {'inf': 4}  x55
+      {'1': 4}  x28
+      {'1': 2, 'inf': 2}  x16
+      {'1': 3, '3': 1}  x10
+      {'1': 2, '3': 2}  x2
+watchdog peak RSS 15232 KB

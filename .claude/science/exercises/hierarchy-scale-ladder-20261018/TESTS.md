@@ -101,3 +101,12 @@
   - Defect 2 is better described as a misidentification: 0.019 is observed α_s at M_Pl, not a conversion of the β = 6 value.
   - Defect 1 is real but overcounted. The true incompatibility is between the Planck and QCD placements: 18.8 decades.
   - Main carries two β = 6 values of r0/a: 5.006 and 5.37.
+
+**HIER-2 result (13:03Z; same family; referee launched): MASS-NO within class L1 (one lattice breaking with a symmetry-fixed form); OPEN outside it.**
+- **ε is not a ladder ratio (proved).** Rung corrections (a/w)^p are O(|q|^p) and vanish at the node. So ε is a breaking amplitude, which the ladder transports but does not fix.
+- **Sector blindness (proved).** The ladder cannot distinguish the u, d and e sectors: M_u ∝ M_d ∝ M_e and V_CKM = 1. The t:b:τ spread is 74–98, while ×3 allows at most 9.
+- **X2′'s internal label fixes no exponent (proved).** Free-integer fits reach ×3 for 400 of 400 random spectra, so such a fit carries no evidence.
+- **Class L1.** Structure lemmas are proved: Klein-square mass patterns, and Z2³ charges, so a single harmonic reaches one odd charge. A check over Z2³ ⋊ O_h (40 irreps, 111 fixed directions, 8 node-rep variants, plus an independent saturation check) finds only orders {1, 3}, with at most 2 distinct orders per spurion. Two levels fit no sector within ×3.
+- **PR #9702's staggered mass** gives an order-ε 1 + 3 split, with the three doublers degenerate.
+- **Open:** two-amplitude classes; multi-harmonic and longer-period patterns; interaction-driven masses (B7). The corner model's own node representation was not extracted.
+- **Supervisor's prediction (PARTIAL or OPEN):** the result is the stronger MASS-NO within L1.

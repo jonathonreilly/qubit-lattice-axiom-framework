@@ -1,0 +1,2 @@
+[21:39:21] radius 1 action trivial: dim W=16 unsigned=132 explicit-symplectic-ok=132 signed=528 (3.6s)
+[21:39:24] radius 1 action sign: dim W=16 unsigned=132 explicit-symplectic-ok=132 signed=176 (2.5s)

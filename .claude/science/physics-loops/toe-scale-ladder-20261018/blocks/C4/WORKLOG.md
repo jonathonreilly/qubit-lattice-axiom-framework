@@ -27,3 +27,9 @@
 - c4_03 running (T done: no gliders; D4/trivial: 6 gliders along z). c4_04 dynamics, c4_05 independent
   recount, c4_06 radius-2 (axis/full/sign-f) written, to run sequentially (1 core).
 - lib: selforth_mask early-elimination filter added (used by split enumerator; brute force keeps forms_batch).
+
+## progress 3 (~2h30)
+- c4_03 T/D4/D3 done PASS=63 FAIL=0. Soldered (axis/full): no glider/spreading for T, D4, D3; D4 full 64 periodic
+  entangling (32 phase-valid); D3 full: identity + one entangling involution. Unsoldered D4/D3: gliders along axis.
+- NOTE.md drafted with placeholders RADIUS2_RESULT, INDEPENDENT_RESULT, DYNAMICS_NUMERICS, D2_ROWS.
+- Queue running (1 core): c4_04 -> c4_05 -> c4_06 -> c4_03 D2.

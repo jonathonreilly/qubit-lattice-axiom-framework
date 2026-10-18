@@ -20,3 +20,7 @@
   - The B15 check confirmed the core claims, and its corrections were applied. Its no-go is stronger: no linear relabelling of any range closes.
   - Observation: the repo's 09-25 walk is naive-type, with eight isotropic species at one speed. So the closure route reproduces α = K/4, and the corner step fails only through its uniaxial doublers (B17, check running).
   - Running: the B16 check, B17 check and B18.
+- **08:00Z.** The B16 check and B17 check are done and integrated into the note and PR #9702. Running:
+  - B18 (taste symmetry);
+  - B19 ({G,G} normalisation);
+  - the spin-½/spin-1 lane-note writer.

@@ -1,0 +1,5 @@
+E6 L=6: |{G_m,H_m}|=3.682877e+00  residual(GR stress)=8.957541e+00  ratio=2.432213e+00  residual(no coupling)=2.008306e+01 ratio=5.453090e+00
+E6 L=8: |{G_m,H_m}|=1.721814e+00  residual(GR stress)=7.511631e+00  ratio=4.362626e+00  residual(no coupling)=2.619282e+01 ratio=1.521234e+01
+E6 L=12: |{G_m,H_m}|=1.741595e+01  residual(GR stress)=6.017040e+00  ratio=3.454902e-01  residual(no coupling)=4.069289e+01 ratio=2.336530e+00
+E6 L=16: |{G_m,H_m}|=3.952409e+01  residual(GR stress)=5.422780e+00  ratio=1.372019e-01  residual(no coupling)=5.968964e+01 ratio=1.510209e+00
+E6 L=24: |{G_m,H_m}|=1.029704e+02  residual(GR stress)=4.991171e+00  ratio=4.847192e-02  residual(no coupling)=1.127483e+02 ratio=1.094958e+00

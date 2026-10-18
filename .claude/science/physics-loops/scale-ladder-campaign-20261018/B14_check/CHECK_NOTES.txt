@@ -1,0 +1,28 @@
+B14 independent check (fresh-context agent, same model family as the B14 worker; not independent in model lineage).
+
+(1) Analytic E2.
+ Lattice, bond b = (x -> y = x+e), W_N = mu diag N + c sum_b Nbar_b d_b d_b^T, Lam_N = diag N:
+   {H_m(N),H_m(M)} = phi^T (W_N Lam_M - W_M Lam_N) pi       (mass term: diag N diag M - diag M diag N = 0)
+   per bond: Nbar(M_y pi_y - M_x pi_x) - Mbar(N_y pi_y - N_x pi_x) = (1/2)(N_x M_y - N_y M_x)(pi_x + pi_y)
+   => {H_m(N),H_m(M)} = G_m[ c (N_x M_y - N_y M_x) ] = G_m[-c xi~],  xi~_b = N_y M_x - N_x M_y.  Exact, any L.
+   Continuum: c int pi grad(phi).(N grad M - M grad N).
+ Gravity (09-24 T1): {kin+sK R1 (N), same (M)} = G_g[(sK/4a) xi~].
+ G_g and G_m are both Lie derivatives (delta h = d_i xi_j + d_j xi_i, delta phi = xi.grad phi), so a common
+ total relabelling needs (sK/4a + c) xi~ in ker(G_g)+ker(G_m) = {0} for non-constant xi~  =>  c = -sK/(4a).
+ Invariant: sign(c) = -sign(s K / a). Independent of bracket sign convention (both sides flip together).
+ With supplied c>0, a>0, K>0: s = -1 (GR / Lorentzian HKT algebra). s=+1 closes only with c<0 (elliptic,
+ Euclidean-signature matter) - the claim "forces GR sign" needs c>0 stated as a supplied premise.
+ Block 101's own Lagrangian K wbar (u R1 + R2) - e u is the linearised N sqrt(g) R - N rho with N = 1+u, whose
+ Legendre transform carries -K R1: the 09-24 runner's +K R1 is opposite to its own action's Hamiltonian
+ (Euclidean deformation algebra); harmless for gravity alone (T1 closes for both s), inconsistent with matter.
+ Correction to E2b: one-endpoint timing N_x gives exactly (N_x M_y - M_x N_y)(Delta phi) pi_y, i.e. closure into
+ the one-sided relabelling sum xi_b Delta phi pi_y. "Endpoint mean required" is relative to the supplied
+ symmetric G_m, not absolute.
+
+(2) chk_e2_cone.py (matrix brackets, position-space R1, alpha=2/5, K=7/3, mu=5/2, L=3 and 4): reproduces
+ closure iff c = -sK/(4 alpha); two species close iff c1 = c2 (= K/(4alpha) at s=-1). Logs chk_e2_cone_L*.log.
+
+(3) chk_e5_obstruction.py, pi-pi sector only, no symmetry imposed, N' free:
+ A (114 ops, matched timing): no closure L=3, L=4; positive control (obstruction monomial removed) closes.
+ C (708 ops, free lapse placement within star/corners): no closure L=3.
+ B (804 ops, 19-point diag / 12-point face pair range): no closure L=3. Logs chk_e5_obstruction_L3.log, _L4_A.log.

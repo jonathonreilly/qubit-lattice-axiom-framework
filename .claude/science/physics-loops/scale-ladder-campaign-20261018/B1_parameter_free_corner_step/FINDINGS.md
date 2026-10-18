@@ -43,3 +43,9 @@
 - **Best candidate.** S·R_L·exp(iπH_on/6), with node at π/3, no level at the other cube points (distance 0.23), and a refined distance of 0.009 after the first pass.
 - **Dense check** (`dense_check.py`, 32³ grid plus 80 refinements). It finds exact crossings elsewhere, so this candidate is not clean either.
 - **B1 conclusion.** No doubler-free clean parameter-free Weyl step exists in any searched family: Clifford phases, π/6 phases, random words, or exp(iπH/n) coins. The six cube-point doublers are the only clean structure found. Not a no-go.
+
+## Wilson-like doubler removal? (05:55Z, `wilson_like.py`)
+
+- **The idea.** Partner doublers k* + πe_i and −k* + πe_i differ by Q, so a staggered term could pair them, as it pairs ±k*.
+- **With O × I** (site rotations, inversion, even translations), staggered terms keep both the folded k* quartet and the folded doubler quartets 4-fold (3 random terms, strength up to 0.1). Inversion protects the doublers too.
+- **With O only** (no inversion), staggered terms split both quartets into 2 + 2 by an energy offset. The doublets stay exactly 2-fold at all eight points, as the anticommuting axis-C2 lifts force. So no symmetric staggered term removes the doublers selectively. This is consistent with the 1 + 3 theorem.

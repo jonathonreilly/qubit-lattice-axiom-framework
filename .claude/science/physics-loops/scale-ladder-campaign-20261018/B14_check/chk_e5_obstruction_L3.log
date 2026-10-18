@@ -1,0 +1,5 @@
+L=3
+ansatz A [positive control (obstruction removed)]: 114 coupling ops, 809 eqs, rank A=162, rank [A|b]=162 -> CLOSES
+ansatz A [B14 matter bracket]: 114 coupling ops, 809 eqs, rank A=162, rank [A|b]=163 -> NO CLOSURE
+ansatz C [B14 matter bracket]: 708 coupling ops, 810 eqs, rank A=585, rank [A|b]=586 -> NO CLOSURE
+ansatz B [B14 matter bracket]: 804 coupling ops, 1134 eqs, rank A=678, rank [A|b]=679 -> NO CLOSURE

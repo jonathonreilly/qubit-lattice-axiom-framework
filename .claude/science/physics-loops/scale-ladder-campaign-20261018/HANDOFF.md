@@ -15,3 +15,8 @@
   - B17: anisotropic cones fail closure, so the eight-node step's doublers are rejected.
 
   Running: the B15 check, the B16 check, the B14 note writer, and B18 (taste symmetry, isotropic doublers).
+- **07:55Z.**
+  - The B14 lane note was added to PR #9718 (PASS=26, invariants pass).
+  - The B15 check confirmed the core claims, and its corrections were applied. Its no-go is stronger: no linear relabelling of any range closes.
+  - Observation: the repo's 09-25 walk is naive-type, with eight isotropic species at one speed. So the closure route reproduces α = K/4, and the corner step fails only through its uniaxial doublers (B17, check running).
+  - Running: the B16 check, B17 check and B18.

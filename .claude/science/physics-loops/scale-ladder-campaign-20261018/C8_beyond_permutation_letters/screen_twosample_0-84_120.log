@@ -1,0 +1,3 @@
+[PASS] batched word (with E+-, Rt) == chklib-letter product, analytic gradient == finite difference  
+[PASS] conjugation reduction: conj W(-k) = W' with E+ <-> E- and conjugated slots (so conjugate classes are equivalent)  
+twosample:0-84:120: 10080 words  (348 one-slot / 84 two-slot classes in total)

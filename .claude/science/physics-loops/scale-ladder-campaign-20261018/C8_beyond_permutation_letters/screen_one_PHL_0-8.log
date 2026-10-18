@@ -4,3 +4,33 @@ one:PHL:0-8: 8832 words  (348 one-slot / 84 two-slot classes in total)
   k* level statistics: {'6-fold': 3008, 'D-': 5032, 'G': 12880, 'D+': 5032, '8-fold': 856, '10-fold': 240, 'D+D-': 1640, '12-fold': 40}
   screened levels 11704 (D+/D-: 10064, D+D-: 1640); Fermi (8^3): 11592, Fermi (16^3 only): 0, survivors: 112  [87s]
 [PASS] r(k) real on every grid (det W k-independent)  max 3.6e-14
+  stage C: 112 survivors, early-rejected at (pi/4)Z^3 nodes: 20
+[PASS] every survivor's k* node is classified an isotropic untilted cone at |n_S| sqrt2/3 (L1 / Dirac lemma sanity of DPT)  112/112
+  0 survivors with every found node an isotropic untilted cone at v (screen level)  [160s]
+  obstruction pattern among survivors (skeleton, {(point class, multiplicity, defect)}):
+      26 x ('E+', 'Si', 'o') [('generic', 2, 'aniso')]  e.g. ('L123',) E=-0.7854 D+D-  first bad: k/pi=(np.float64(0.64716), np.float64(0.51238), np.float64(-0.48762)) m=2 aniso {'tilt': np.float64(0.0), 'smin': 0.013087, 'smax': 0.497408, 'next': 0.315557}
+      26 x ('S', 'E+', 'o') [('generic', 2, 'aniso')]  e.g. ('L123',) E=-0.7854 D+D-  first bad: k/pi=(np.float64(0.64716), np.float64(0.51238), np.float64(-0.48762)) m=2 aniso {'tilt': np.float64(0.0), 'smin': 0.013087, 'smax': 0.497408, 'next': 0.315557}
+      10 x ('E+', 'S', 'o') [('generic', 2, 'tilt')]  e.g. ('L123',) E=-0.7854 D+D-  first bad: k/pi=(np.float64(0.03844), np.float64(-0.16873), np.float64(0.03844)) m=2 tilt {'tilt': np.float64(0.037046), 'smin': 0.00282, 'smax': 0.943689, 'next': 0.389687}
+      10 x ('Si', 'E+', 'o') [('generic', 2, 'tilt')]  e.g. ('L123',) E=-0.7854 D+D-  first bad: k/pi=(np.float64(-0.09488), np.float64(0.90512), np.float64(0.76076)) m=2 tilt {'tilt': np.float64(0.096221), 'smin': 0.027391, 'smax': 0.579736, 'next': 0.871957}
+       5 x ('E+', 'S', 'o') [('cube', 8, 'aniso')]  e.g. ('L033',) E=-0.7854 D+D-  first bad: k/pi=(np.float64(-0.5), np.float64(0.5), np.float64(-0.5)) m=8 aniso {'tilt': np.float64(0.0), 'smin': 0.001962, 'smax': 1.480238, 'next': 1.570796}
+       5 x ('E+', 'S2', 'o') [('generic', 1, 'band'), ('generic', 2, 'tilt')]  e.g. ('L213',) E=-0.7854 D+D-  first bad: k/pi=(np.float64(-0.9763), np.float64(0.0237), np.float64(0.27256)) m=2 tilt {'tilt': np.float64(0.02749), 'smin': 0.261344, 'smax': 1.080491, 'next': 0.963888}
+       5 x ('E+', 'S2i', 'o') [('generic', 2, 'aniso'), ('generic', 2, 'tilt')]  e.g. ('L213',) E=-0.7854 D+D-  first bad: k/pi=(np.float64(-0.1025), np.float64(0.89945), np.float64(-0.10249)) m=2 aniso {'tilt': np.float64(0.0), 'smin': 0.002449, 'smax': 1.428252, 'next': 0.923746}
+       5 x ('E+', 'Si', 'o') [('cube', 8, 'aniso')]  e.g. ('L033',) E=-0.7854 D+D-  first bad: k/pi=(np.float64(-0.5), np.float64(0.5), np.float64(-0.5)) m=8 aniso {'tilt': np.float64(0.0), 'smin': 0.174056, 'smax': 0.981747, 'next': 1.570796}
+       5 x ('S', 'E+', 'o') [('cube', 8, 'aniso')]  e.g. ('L033',) E=-0.7854 D+D-  first bad: k/pi=(np.float64(-0.5), np.float64(0.5), np.float64(-0.5)) m=8 aniso {'tilt': np.float64(0.0), 'smin': 0.174056, 'smax': 0.981747, 'next': 1.570796}
+       5 x ('S2', 'E+', 'o') [('generic', 2, 'aniso'), ('generic', 2, 'tilt')]  e.g. ('L213',) E=-0.7854 D+D-  first bad: k/pi=(np.float64(-0.1025), np.float64(0.89945), np.float64(-0.10249)) m=2 aniso {'tilt': np.float64(0.0), 'smin': 0.002449, 'smax': 1.428252, 'next': 0.923746}
+       5 x ('S2i', 'E+', 'o') [('generic', 1, 'band'), ('generic', 2, 'tilt')]  e.g. ('L213',) E=-0.7854 D+D-  first bad: k/pi=(np.float64(-0.98474), np.float64(-0.7296), np.float64(-0.98474)) m=2 tilt {'tilt': np.float64(0.038421), 'smin': 0.183464, 'smax': 1.17205, 'next': 0.975626}
+       5 x ('Si', 'E+', 'o') [('cube', 8, 'aniso')]  e.g. ('L033',) E=-0.7854 D+D-  first bad: k/pi=(np.float64(-0.5), np.float64(0.5), np.float64(-0.5)) m=8 aniso {'tilt': np.float64(0.0), 'smin': 0.001962, 'smax': 1.480238, 'next': 1.570796}
+  best (fewest defective nodes):
+    ('E+', 'Si', 'o') ('L033',) E=-0.7854 D+D- nS=-1 nodes=2 bad=1 [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso', 0.174056, 0.981747, np.float64(0.0))]
+    ('E+', 'Si', 'o') ('H00*L033',) E=-0.7854 D+D- nS=-1 nodes=2 bad=1 [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso', 0.174056, 0.981747, np.float64(0.0))]
+    ('E+', 'Si', 'o') ('H01*L103',) E=+0.7854 D+D- nS=-1 nodes=2 bad=1 [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso', 0.174056, 0.981747, np.float64(0.0))]
+    ('E+', 'Si', 'o') ('H02*L213',) E=+2.3562 D+D- nS=-1 nodes=2 bad=1 [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso', 0.174056, 0.981747, np.float64(0.0))]
+    ('E+', 'Si', 'o') ('H03*L323',) E=-2.3562 D+D- nS=-1 nodes=2 bad=1 [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso', 0.174056, 0.981747, np.float64(0.0))]
+    ('S', 'E+', 'o') ('L033',) E=-0.7854 D+D- nS=1 nodes=2 bad=1 [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso', 0.174056, 0.981747, np.float64(0.0))]
+    ('S', 'E+', 'o') ('H00*L033',) E=-0.7854 D+D- nS=1 nodes=2 bad=1 [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso', 0.174056, 0.981747, np.float64(0.0))]
+    ('S', 'E+', 'o') ('H01*L103',) E=+0.7854 D+D- nS=1 nodes=2 bad=1 [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso', 0.174056, 0.981747, np.float64(0.0))]
+    ('S', 'E+', 'o') ('H02*L213',) E=+2.3562 D+D- nS=1 nodes=2 bad=1 [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso', 0.174056, 0.981747, np.float64(0.0))]
+    ('S', 'E+', 'o') ('H03*L323',) E=-2.3562 D+D- nS=1 nodes=2 bad=1 [((np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), 'cube', 8, 'aniso', 0.174056, 0.981747, np.float64(0.0))]
+RESULT one:PHL:0-8: words=8832 levels=11704 fermi=11592 survivors=112 clean_at_screen=0
+
+TOTAL: PASS=4 FAIL=0   [160s]

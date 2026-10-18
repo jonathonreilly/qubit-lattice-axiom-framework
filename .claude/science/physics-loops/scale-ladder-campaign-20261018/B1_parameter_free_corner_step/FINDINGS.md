@@ -32,3 +32,7 @@
 - **Coarse result.** 5,349 Weyl-at-k* steps have no cube-point doublers. The best far-grid distance on an 8³ grid is 0.08, for S·R_L·(P₀ + iP₁ − iP₂).
 - **Refined result.** Refined minimization (`refine_H39.py`) finds about 60 crossings at the node quasi-energy, so it is not clean. The coarse-grid rankings are not reliable for cleanliness.
 - **Conclusion.** No doubler-free clean Weyl step was found in the searched families. The only clean structure seen is the eight-node one.
+
+## Random word search (05:10Z)
+
+`word_search.py` tried 120,730 random words of length 2–4 in S, S⁻¹, R_L and Clifford-phase on-site factors. There were 158 hits passing the coarse filter: Weyl at k*, no level at the node quasi-energy at the other cube points, and an 8³-grid gap of at least 0.05. All 158 have the same coarse value, 0.0813. They are cyclic or conjugate forms of the S·R_L·(P₀ + iP₁ − iP₂) family, which the refined search (`refine_H39.py`) shows is not clean.

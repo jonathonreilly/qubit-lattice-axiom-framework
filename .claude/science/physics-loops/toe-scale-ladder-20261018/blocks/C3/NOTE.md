@@ -1,7 +1,7 @@
 # C3: Clocks with finite ancestry tails force finitary, superexponentially mixing record laws; within bounded-rate Markov clocks, an ordered record phase needs infinite-range clock dependence
 
 **Block:** C3 of `toe-scale-ladder-20261018` (target: `SCALE_LADDER_MAP.md`, section C3; OBL-R2.2).
-**Date:** 2026-10-18. **Status:** block-local, unaudited. An independent review (`REVIEW.md`, separate code in `review_scripts/`, `TOTAL: PASS=75 FAIL=0`) found the proofs of A, A′, B, C and D correct and raised non-blocking findings F1–F8. These are applied here; see §12.
+**Date:** 2026-10-18. **Status:** Independently reviewed (REVIEW.md, verdict ready); unaudited. The independent review (`REVIEW.md`, separate code in `review_scripts/`, `TOTAL: PASS=75 FAIL=0`) found the proofs of A, A′, B, C and D correct and raised non-blocking findings F1–F8. These are applied here; see §12.
 **Claim types used:** `PROVED` (proof given here, from the stated premises), `ON-MAIN` (already proved in a cited main note), `COROLLARY` (immediate from ON-MAIN items plus routine steps), `CONDITIONAL` (proved implication from an imported premise), `EXACT-CHECK` (exhaustive finite certificate), `NUMERICAL` (Monte Carlo, declared 4-SE tolerance), `OPEN`.
 **Runner:** `scripts/run_all.sh` → `logs/run_all.log`, which ends with `TOTAL: PASS=59 FAIL=0`.
 
@@ -32,7 +32,11 @@
 - **iid-clock model (main-note model).** The data are `ω_x = (T_x, U_x)`, iid over `x`, with `T_x` of arbitrary law and `U_x` uniform and independent of `T_x`. At its formation, `x` sees exactly the neighbours `y` with `T_y < T_x` (strict). Simultaneous formations do not see each other; this matters only if the law of `T` has atoms. The record is `ξ_x = Φ_x(ξ|_{\{y∈N(x): T_y<T_x\}}, U_x)`.
 - **Ancestors.** `Anc(x)` is the set of `y` reachable from `x` by a path `x = y_0, y_1, …, y_n = y` with `y_k ∈ N(y_{k-1})` and `T_{y_0} > T_{y_1} > … > T_{y_n}`. Such paths are self-avoiding. `L(x) ∈ [0, ∞]` is the supremum of their lengths, and `S_x := Anc(x) ∪ ∂Anc(x)` is the *explored set*.
 - **Coding radius.** `R(x)` is the least `m` such that `ω|_{B(x,m)}` determines `ξ_x`, meaning `ξ_x` is a.s. constant over all modifications of `ω` outside `B(x,m)`. A factor is *finitary* if `R(x) < ∞` a.s.
-- **Order notions (local).** The record law has *long-range order* if `limsup_{|x|→∞} |Cov(f(ξ_0), f(ξ_x))| > 0` for some single-site `f`. It is *critical/power-law* if some local truncated two-point function decays no faster than a power. These are the notions excluded below.
+- **Order notions (local).** A record law has *covariance-LRO* if `limsup_{|x|→∞} |Cov(f(ξ_0), f(ξ_x))| > 0` for some single-site `f`; this is defined for any law. It is *critical/power-law* if some local truncated two-point function decays no faster than a power.
+  - For an **ergodic** (extremal) law, covariance-LRO is genuine long-range order, and "long-range order" without qualification means this.
+  - For a **non-ergodic** law, covariance-LRO is automatic once the ergodic components have different one-site marginals, and it only signals a mixture. Genuine order is then a property of the ergodic components, e.g. non-unique coexisting phases.
+  - G-I (§7) excludes covariance-LRO outright, because its laws are mixing.
+  - The §6 witnesses both have covariance-LRO. In `W` it comes from coexisting ergodic phases (I-16). In W-tie it comes only from mixing two clock laws.
 
 ## 2. Theorem A: iid clocks (base case)
 
@@ -179,14 +183,6 @@ A stationary invariant law of the probabilistic cellular automaton extends, by K
 - for `b = e_1` and every `x`,
   `Cov_W(1{v_0=b}, 1{v_x=b}) ≥ (1/6)(1 − 6·10^{−5}) − 1/36 = 124991/900000 > 0.1388`.
 
-**What F does and does not show.** Covariance-LRO of a non-ergodic mixture is automatic once the components have different one-site marginals; the tie witness below has it with FFIID components. So the inequality above is not itself the content. The content is that `W` is a covariant-in-law (modulo time shift) record field whose ergodic components are the **non-unique** coexisting level-order phases of I-16. Uniqueness given the data fails there, which never happens in the classes of G-I.
-
-**Recorded witness W-tie (reviewer F1; EXACT-CHECK s3(f), and the reviewer's r4).**
-- *Clock:* with probability ½ every `T_x = ½`; with probability ½ the `T_x` are iid U[0,1].
-- *Rule on Z:* content 0 if no neighbour is strictly earlier, content 1 otherwise. The zero `r(·|∅) = δ_0` is allowed.
-
-The clock field is exchangeable, translation- and `O_h`-covariant in law, and pairwise uncorrelated. Yet `E ξ = 1/3`, `E ξ_0 ξ_r = 2/9` and `Cov(ξ_0, ξ_r) = 1/9` for every `r ≥ 3`. This is covariance-LRO, again of the non-ergodic-mixture kind. It shows that the hypothesis "tie-free" in A′ cannot be dropped.
-
 *Proof.* The rule depends only on whether `v' = v`, `v' = −v` or `v' ⊥ v`, so it is `O_h`-invariant. Hence `g_*N_a` is the level-order field for the diagonal `g(1,1,1)`.
 - By symmetry, `E_W 1{v=b} = 1/6`.
 - The components with `g e_1 = e_1` are 8 of 48. In each of them both sites equal `b` with probability `≥ 1 − 2·3·10^{−5}`.
@@ -195,8 +191,16 @@ The clock field is exchangeable, translation- and `O_h`-covariant in law, and pa
 **Remarks.**
 - `W` is non-ergodic: it is a mixture.
 - Its clock has perfect infinite-range correlation, and `P(L ≥ n) = 1` for every `n`; see s3(e).
-- No ergodic covariant witness is claimed (OPEN). The §1 LRO notion is meant for ergodic (extremal) laws or ergodic components. For non-ergodic laws, covariance-LRO only signals a non-trivial mixture.
+- No ergodic covariant witness is claimed (OPEN). See §1: for non-ergodic laws, covariance-LRO only signals a non-trivial mixture.
 - No covariant counterexample exists inside the classes of Theorems A, A′, C and D. That is a theorem, not a failed search.
+
+**What F does and does not show.** Covariance-LRO of a non-ergodic mixture is automatic once the components have different one-site marginals; witness W-tie below has it with FFIID components. So the inequality above is not itself the content. The content is that `W` is a covariant-in-law (modulo time shift) record field whose ergodic components are the **non-unique** coexisting level-order phases of I-16. Uniqueness given the data fails there, which never happens in the classes of G-I.
+
+**Recorded witness W-tie (reviewer F1; EXACT-CHECK s3(f), and the reviewer's r4).**
+- *Clock:* with probability ½ every `T_x = ½`; with probability ½ the `T_x` are iid U[0,1].
+- *Rule on Z:* content 0 if no neighbour is strictly earlier, content 1 otherwise. The zero `r(·|∅) = δ_0` is allowed.
+
+The clock field is exchangeable and pairwise uncorrelated, and it is translation- and reflection-covariant in law on Z. (The same construction on Z^d with the nearest-neighbour rule is exchangeable and hence covariant under every lattice automorphism, O_h included. Only the Z version is checked.) Yet `E ξ = 1/3`, `E ξ_0 ξ_r = 2/9` and `Cov(ξ_0, ξ_r) = 1/9` for every `r ≥ 3`. This is covariance-LRO, again of the non-ergodic-mixture kind. It shows that the hypothesis "tie-free" in A′ cannot be dropped.
 
 ## 7. Theorem G: a three-regime classification (not exhaustive) and a necessary clock property (part (b))
 
@@ -214,7 +218,7 @@ In each case the record law is unique given the data. It is FFIID, with coding-r
 
 **(G-III) Covariant-in-law infinite-range clock: ordered, non-ergodic phase. CONDITIONAL on I-16 (Theorem F).**
 
-**Necessity corollary (PROVED from G-I).** Suppose a record law under the stated rule class has long-range order, SSB, or local correlations that are not `O(exp(−c r ln r))`. Then its clock data lie outside every class in G-I. Concretely, it needs **one** of:
+**Necessity corollary (PROVED from G-I).** Suppose a record law under the stated rule class has covariance-LRO (§1), SSB, or local correlations that are not `O(exp(−c r ln r))`. Then its clock data lie outside every class in G-I. Concretely, it needs **one** of:
 - (i) clock **dependence** of infinite range, not reducible to a finite-range factor of iid or to a **tie-free** exchangeable family. Examples: the level clock, and the exchangeable clocks with ties of W-tie;
 - (ii) a non-trivial mixture of clock laws that induce different record laws. This is a special case of (i), listed for clarity; W-tie and `W` are examples;
 - (iii) a degenerate rate ratio, `λmin = 0` or `λmax = ∞`;
@@ -259,13 +263,13 @@ The negative claim is G-I: no long-range order, SSB or power-law local correlati
 **N1, routes that might evade the no-go, five distinct ones.**
 1. Neighbour-dependent rates, attempting order by rate modulation. ATTEMPTED, closed by Theorem C for every κ.
 2. Correlated covariant clocks of finite range. ATTEMPTED, closed by Theorem D.
-3. Exchangeable or "random global speed" clocks. ATTEMPTED, closed by A′.
+3. Tie-free exchangeable or "random global speed" clocks. ATTEMPTED, closed by A′. With ties allowed, the route is not closed (W-tie).
 4. Clocks with atoms, i.e. synchronous partial updates. ATTEMPTED, closed by the strict-decrease bound in A2.
 5. Infinite-range clocks, and exchangeable clocks with ties. ATTEMPTED and **not closed**: they do give order (F, W-tie). This is outside the claimed domain, and the claim is narrowed to exclude it.
 6. Rules with zeros or site dependence. Closed: A–D never use positivity or covariance for the bounds.
 7. `λmin = 0`. Not closed; listed as OPEN.
 
-**N2, wall independence.** There are two escape conditions: infinite-range clock correlation, and degenerate rate ratio. They are not shown independent. An RSA-type `λ=0` rule reduces to an iid clock, so degeneracy does not imply escape. Their relation is recorded as unresolved.
+**N2, wall independence.** There are two escape conditions: infinite-range clock dependence, and degenerate rate ratio. They are not shown independent. An RSA-type `λ=0` rule reduces to an iid clock, so degeneracy does not imply escape. Their relation is recorded as unresolved.
 
 **N3, hidden walls.** These are explicit premises:
 - the selector marks are iid and independent of the clocks;
@@ -322,3 +326,4 @@ The negative claim is G-I: no long-range order, SSB or power-law local correlati
 | F7: B2 count for general N_0; mixing of all orders | The `(2hs+1)^d` count is added. Mixing of all orders now cites the factor-of-iid property, or the k-set coupling. |
 | F8: C4 "A4 verbatim" | Changed to "the stationarity and symmetry parts of A4"; the clock-law-independence of A4 is explicitly excluded. |
 | B1 remark (the Stirling form holds for all r) | Noted in B1. |
+| Confirmation nits (end of REVIEW.md) | §1 now defines covariance-LRO for any law, with genuine LRO reserved for ergodic laws. This is consistent with the §6 remark and the non-ergodic examples in G. W-tie is moved after Theorem F's proof and remarks. N1 route 3 now says "tie-free", and N2 says "dependence". W-tie is called translation/reflection-covariant on Z, with the Z^d version noted. The status line is updated. |

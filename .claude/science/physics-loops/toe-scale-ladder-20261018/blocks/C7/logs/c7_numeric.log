@@ -29,3 +29,4 @@ PASS [numerical] iso: theta=0.0, chi=0.00: sampled min of 1 + cos omega >= its T
 PASS [numerical] iso: theta=0.1, chi=0.00: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.3103 (4000 random k)
    min over samples of 1 + cos omega = 1.3731e-01; min over TRIMs = 1.3349e-01
 PASS [numerical] iso: theta=0.1, chi=0.00: sampled min of 1 + cos omega >= its TRIM minimum
+PASS [numerical] iso: theta=0.1, chi=1.57: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.3147 (4000 random k)

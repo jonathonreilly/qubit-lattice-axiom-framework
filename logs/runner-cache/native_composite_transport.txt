@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/native_composite_transport.py
+runner_sha256: a6d9d965a655676041109bdf03f6377f109ce7c77f666c86a66fd135457de25c
+input_fingerprint_sha256: cc86ff37408a8fd234e074a330334ba70007f3e8b97f9c7931d54d1c611cc407
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+per_element: independent exact integer Pauli products agree
+per_site: one physical qubit, infinite integer coordinates, local support enumerated
+per_mode: Fourier moment coefficients follow exact translation overlaps; pole not derived
+per_block: local composite and derivative hierarchy through order4 checked
+lattice_wide: coefficients hold on infinite cubic lattice by locality, not a finite torus extrapolation
+physical scalar derived: false; matter coupling derived: false
+
+----- stderr -----
+

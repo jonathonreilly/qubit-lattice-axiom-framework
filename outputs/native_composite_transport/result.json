@@ -1,0 +1,235 @@
+{
+  "scope": "Exact local Pauli coefficients for supplied compass Hamiltonian; no scalar pole or matter coupling established",
+  "empirical_data_used": false,
+  "source_hashes": {
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_local_transport.py": "3f025982118f00fab1e96412d77eb9f2080fe1a086f4a5f3b5c9583d77f0c53e",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/independent_transport.py": "90cb33c8e1e12b3a91e44b368ae6fd6b3cf16730625d4de2f01a9d5491e87c8f"
+  },
+  "independent_implementation_agreement": true,
+  "rows": [
+    {
+      "derivative_order": 0,
+      "pauli_terms": 3,
+      "local_norm_squared": 3,
+      "translation_overlaps": [
+        {
+          "displacement": [
+            0,
+            0,
+            0
+          ],
+          "value": 3
+        }
+      ],
+      "uniform_moment": 1.0
+    },
+    {
+      "derivative_order": 1,
+      "pauli_terms": 24,
+      "local_norm_squared": 96,
+      "translation_overlaps": [
+        {
+          "displacement": [
+            0,
+            0,
+            0
+          ],
+          "value": 96
+        }
+      ],
+      "uniform_moment": 32.0
+    },
+    {
+      "derivative_order": 2,
+      "pauli_terms": 207,
+      "local_norm_squared": 9216,
+      "translation_overlaps": [
+        {
+          "displacement": [
+            0,
+            0,
+            0
+          ],
+          "value": 9216
+        }
+      ],
+      "uniform_moment": 3072.0
+    },
+    {
+      "derivative_order": 3,
+      "pauli_terms": 1704,
+      "local_norm_squared": 1499136,
+      "translation_overlaps": [
+        {
+          "displacement": [
+            0,
+            0,
+            0
+          ],
+          "value": 1499136
+        }
+      ],
+      "uniform_moment": 499712.0
+    },
+    {
+      "derivative_order": 4,
+      "pauli_terms": 14427,
+      "local_norm_squared": 352124928,
+      "translation_overlaps": [
+        {
+          "displacement": [
+            -1,
+            -1,
+            0
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            -1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            0
+          ],
+          "value": 247808
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            -1,
+            1,
+            0
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            -1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            0
+          ],
+          "value": 247808
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            -1
+          ],
+          "value": 247808
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            0
+          ],
+          "value": 352124928
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            1
+          ],
+          "value": 247808
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            -1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            0
+          ],
+          "value": 247808
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            1,
+            -1,
+            0
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            -1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            0
+          ],
+          "value": 247808
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            1,
+            1,
+            0
+          ],
+          "value": 16896
+        }
+      ],
+      "uniform_moment": 117938176.0
+    }
+  ]
+}

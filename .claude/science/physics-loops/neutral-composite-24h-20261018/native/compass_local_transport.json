@@ -1,0 +1,229 @@
+{
+  "scope": "Exact infinite cubic lattice; positive Hilbert-Schmidt structure moments at K=1, not a retarded response or ground-state pole",
+  "rows": [
+    {
+      "derivative_order": 0,
+      "pauli_terms": 3,
+      "local_norm_squared": 3,
+      "translation_overlaps": [
+        {
+          "displacement": [
+            0,
+            0,
+            0
+          ],
+          "value": 3
+        }
+      ],
+      "uniform_moment": 1.0
+    },
+    {
+      "derivative_order": 1,
+      "pauli_terms": 24,
+      "local_norm_squared": 96,
+      "translation_overlaps": [
+        {
+          "displacement": [
+            0,
+            0,
+            0
+          ],
+          "value": 96
+        }
+      ],
+      "uniform_moment": 32.0
+    },
+    {
+      "derivative_order": 2,
+      "pauli_terms": 207,
+      "local_norm_squared": 9216,
+      "translation_overlaps": [
+        {
+          "displacement": [
+            0,
+            0,
+            0
+          ],
+          "value": 9216
+        }
+      ],
+      "uniform_moment": 3072.0
+    },
+    {
+      "derivative_order": 3,
+      "pauli_terms": 1704,
+      "local_norm_squared": 1499136,
+      "translation_overlaps": [
+        {
+          "displacement": [
+            0,
+            0,
+            0
+          ],
+          "value": 1499136
+        }
+      ],
+      "uniform_moment": 499712.0
+    },
+    {
+      "derivative_order": 4,
+      "pauli_terms": 14427,
+      "local_norm_squared": 352124928,
+      "translation_overlaps": [
+        {
+          "displacement": [
+            -1,
+            -1,
+            0
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            -1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            0
+          ],
+          "value": 247808
+        },
+        {
+          "displacement": [
+            -1,
+            0,
+            1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            -1,
+            1,
+            0
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            -1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            0
+          ],
+          "value": 247808
+        },
+        {
+          "displacement": [
+            0,
+            -1,
+            1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            -1
+          ],
+          "value": 247808
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            0
+          ],
+          "value": 352124928
+        },
+        {
+          "displacement": [
+            0,
+            0,
+            1
+          ],
+          "value": 247808
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            -1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            0
+          ],
+          "value": 247808
+        },
+        {
+          "displacement": [
+            0,
+            1,
+            1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            1,
+            -1,
+            0
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            -1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            0
+          ],
+          "value": 247808
+        },
+        {
+          "displacement": [
+            1,
+            0,
+            1
+          ],
+          "value": 16896
+        },
+        {
+          "displacement": [
+            1,
+            1,
+            0
+          ],
+          "value": 16896
+        }
+      ],
+      "uniform_moment": 117938176.0
+    }
+  ]
+}

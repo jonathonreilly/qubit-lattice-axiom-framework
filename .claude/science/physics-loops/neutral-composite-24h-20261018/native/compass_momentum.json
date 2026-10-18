@@ -1,0 +1,117 @@
+{
+  "scope": "Cubic L8 periodic algebra; HS positive structure moments, not a dispersion or retarded scalar propagator",
+  "rows": [
+    {
+      "L": 8,
+      "q": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "HS_norm_per_site": 3.0,
+      "second_moment": 32.0,
+      "fourth_moment": 3072.0,
+      "squared_frequency_variance": 2048.0,
+      "current_terms": 12288,
+      "second_commutator_terms": 105984
+    },
+    {
+      "L": 8,
+      "q": [
+        0.7853981633974483,
+        0.0,
+        0.0
+      ],
+      "HS_norm_per_site": 3.0,
+      "second_moment": 32.0,
+      "fourth_moment": 3072.0,
+      "squared_frequency_variance": 2048.0,
+      "current_terms": 12288,
+      "second_commutator_terms": 105984
+    },
+    {
+      "L": 8,
+      "q": [
+        1.5707963267948966,
+        0.0,
+        0.0
+      ],
+      "HS_norm_per_site": 3.0,
+      "second_moment": 32.0,
+      "fourth_moment": 3072.0,
+      "squared_frequency_variance": 2048.0,
+      "current_terms": 12288,
+      "second_commutator_terms": 105984
+    },
+    {
+      "L": 8,
+      "q": [
+        3.141592653589793,
+        0.0,
+        0.0
+      ],
+      "HS_norm_per_site": 3.0,
+      "second_moment": 32.0,
+      "fourth_moment": 3072.0,
+      "squared_frequency_variance": 2048.0,
+      "current_terms": 12288,
+      "second_commutator_terms": 105984
+    },
+    {
+      "L": 8,
+      "q": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "HS_norm_per_site": 3.0,
+      "second_moment": 32.0,
+      "fourth_moment": 3072.0,
+      "squared_frequency_variance": 2048.0,
+      "current_terms": 12288,
+      "second_commutator_terms": 105984
+    },
+    {
+      "L": 8,
+      "q": [
+        0.7853981633974483,
+        0.7853981633974483,
+        0.7853981633974483
+      ],
+      "HS_norm_per_site": 3.0,
+      "second_moment": 32.0,
+      "fourth_moment": 3072.0,
+      "squared_frequency_variance": 2048.0,
+      "current_terms": 12288,
+      "second_commutator_terms": 105984
+    },
+    {
+      "L": 8,
+      "q": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "HS_norm_per_site": 3.0,
+      "second_moment": 32.0,
+      "fourth_moment": 3072.0,
+      "squared_frequency_variance": 2048.0,
+      "current_terms": 12288,
+      "second_commutator_terms": 105984
+    },
+    {
+      "L": 8,
+      "q": [
+        3.141592653589793,
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "HS_norm_per_site": 3.0,
+      "second_moment": 32.0,
+      "fourth_moment": 3072.0,
+      "squared_frequency_variance": 2048.0,
+      "current_terms": 12288,
+      "second_commutator_terms": 105984
+    }
+  ]
+}

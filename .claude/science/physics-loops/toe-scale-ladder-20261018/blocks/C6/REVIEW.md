@@ -113,3 +113,60 @@ python3 rv_ff_relations.py   # ~1 min, TOTAL: PASS=4 FAIL=0
 ```
 
 Combined: **TOTAL: PASS=16 FAIL=0**.
+
+---
+
+## Correction confirmation (2026-10-18, same reviewer)
+
+I read the whole revised NOTE.md and `scripts/c6_ff_general_L.py`, and its log (`TOTAL: PASS=6 FAIL=0`).
+
+### (1) Earlier findings
+
+| finding | status |
+|---|---|
+| R1 (duplicate tubes, W in sites, "implies") | resolved |
+| R3 (k ≤ 2 proved at odd L; weak-enrichment remark) | resolved |
+| R5 marked UNVERIFIED | resolved |
+| R7 (a) "implies" | resolved |
+| R7 (c) "along FF sequences" | resolved in the R7 row; see N-2 for F5 |
+| R8 statistics invariance marked "not proved here" | resolved |
+| R9 / N1 scope (tori, bulk, qubit-local, J0, route 5) | resolved |
+| R7 (b) bound for exponentially decaying V | **partly**; see N-1 |
+
+### (2) The new FF theorem for F1–F4 (FF ⇔ L even or f = 0): checked and correct
+
+**Relation basis, all L.** I re-derived it.
+- F1/F2: vec(∏_c S) = Σ_e (∂c)_e vec(A_e) by (H4). Hence ∂c = 0 forces the S-product to the zero vector, which in turn forces φ = const (star map kernel = constants).
+- F3/F4: φ_v = (∂c)_e at both ends of every edge.
+
+Both arguments hold for all L, so the dimension checks are only confirmations.
+
+**Periodicity step.** I re-derived it.
+- The product over Z_m^D of translates of a fixed motif, in lex order, has phase m^D·p + 2 Σ_δ w(δ) · m^{D−1} · cnt(δ_first, m), where cnt = m − d for d > 0 and |d| for d < 0.
+- The overlap offsets satisfy |δ_i| ≤ s − 1. They do not alias once m ≥ 2s − 1, and the motif does not self-wrap.
+- The phase is an integer polynomial in m mod 4, so it is periodic with a period dividing 4.
+- The author's ranges cover everything below the threshold plus one full period: F1/F2 planes L = 2..12 against threshold 9 (true s = 3, so the threshold is conservative); all-B over m = 1..8.
+
+**Sector factors.** I checked the sector factors (−1)^{f_c L²} for planes, + for the cube, and (−1)^{Σ f_c L³/2} = + for all-B at even L.
+
+**My own code.** `review_scripts/rv_periodicity.py` uses my builders and my conventions, including 3 orderings. It builds the closed form Q(m) from the motif-overlap table, matches it to the direct product at m = 5..10, and gives sign + for every m up to 60 (log `TOTAL: PASS=3 FAIL=0`). Earlier, `rv_ff_relations.log` gave the full pattern directly for L = 3..12 in all 8 sectors.
+
+**Verdict: correct.**
+
+### (3) New or remaining defects
+
+- **N-2 (moderate): F5 has no infinite FF sequence.** BHM needs FF for infinitely many L, and the corner code is certified only for L ≤ 6. Yet §4's Conclusion says "Every listed code has a uniform-in-L gap", and the R7 row says "F5: the certified L". Fix: state that F5 stability is CONDITIONAL on FF(L) along an infinite sequence, which is open. Otherwise prove it with the same relation-basis-plus-periodicity method on the corner complex.
+- **N-1 (minor): leftover wording in §4.**
+  - The Conclusion paragraph still says "splitting of at most poly(L)·e^{−cL}".
+  - The cited-theorem block is still phrased for ‖V‖ ≤ J e^{−μr}.
+  - N1 route 3 still says "Excluded by the cited theorem's decay class".
+
+  Make all three conditional on checking the paper, to match the R7 row.
+
+No other new defects.
+
+### Final verdict
+
+**READY for the F1–F4 scope**, once the two wording fixes above (N-1 and N-2) are applied. They are edits to the text and need no new computation. The F5 stability claim stays CONDITIONAL until FF is shown at general L.
+
+Reviewer logs: `rv_main.log` 9/0, `rv_local.log` 3/0, `rv_ff_relations.log` 4/0, `rv_periodicity.log` 3/0. Total **TOTAL: PASS=19 FAIL=0**.

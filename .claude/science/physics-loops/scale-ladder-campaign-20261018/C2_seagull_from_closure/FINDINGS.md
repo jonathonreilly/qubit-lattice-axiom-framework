@@ -33,7 +33,7 @@ The lattice FAIL is a preset convergence threshold of 1e−6 against measured va
 
 ## 2. Ward and the induced 1/G
 
-- **P1 (exact).** The closure-forced minimal seagull is independent of K. Its tadpole is a pure Π(0) contact, which B4b showed cannot remove the K² break. The same holds for the covariant fermion seagull (argued, not computed).
+- **P1 (exact).** The closure-forced minimal seagull is independent of K. Its tadpole is a pure Π(0) contact, which B4b showed cannot remove the K² break. For the fermion, the covariant seagull has a k-dependent axial part, ω^(2) ~ h∂h, but its vacuum tadpole vanishes by parity, so its tadpole is also a pure contact (argued, not computed; check).
 - **P2 (exact).** A covariant proper-time regulator on Δ_g + ζR gives
   W⁽²⁾ = −Λ⁴/(64π²)[√g]⁽²⁾ − (1/6 − ζ)Λ²/(32π²)[√gR]⁽²⁾ + O(k⁴),
   and Ward holds. Here the K² contacts come from the measure factor in the regulator.

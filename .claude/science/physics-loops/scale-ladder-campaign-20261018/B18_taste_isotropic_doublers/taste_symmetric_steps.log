@@ -1,0 +1,19 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+[PASS] (B) words in S^{+-2} and R_L split into three corner-plane sectors, each independent of its normal momentum (so no point nodes); at k* every level is a multiple of 6 here  k* multiplicities [[6, 6], [12], [12]]
+[PASS] (A) T_i = (-1)^{x_i} is an exact symmetry of every word in S^{+-2} and on-site factors: W(k+pi e_i) = W(k)  
+17056 taste-symmetric words in family (A)
+10620 (word, level) pairs with a spin-1/2 Weyl doublet at k*  [71s]
+multiplicity at k=0 at the node quasi-energy: {2: 10620}
+distinct k* speeds: [0.942809, 1.885618]
+[PASS] every k* Weyl doublet in family (A) is isotropic (O-forced)  max spread 4.5e-07
+10620 hits also have a doublet at k=0 at E; 10620 of those are linear Weyl nodes; speeds at k=0: [np.float64(0.942809), np.float64(1.885618)]
+best by 5^3 far-grid distance to E: [(np.float64(0.268), 'S2.H20.S2.L202', -0.0, 2), (np.float64(0.268), 'S2.L202.S2.H20', -0.0, 2), (np.float64(0.268), 'S2.H20.S2.L202', -3.1416, 2), (np.float64(0.268), 'S2.L202.S2.H20', 3.1416, 2), (np.float64(0.265), 'S2.L202.S2.L020', -0.0, 2), (np.float64(0.265), 'S2.L020.S2.L202', 0.0, 2), (np.float64(0.265), 'S2.L202.S2.L200', 3.1416, 2), (np.float64(0.265), 'S2.L200.S2.L202', -3.1416, 2)]
+best by 10^3 far-grid distance: [(np.float64(0.121), 'S2.L202.S2.L020', -0.0, 2), (np.float64(0.121), 'S2.L020.S2.L202', 0.0, 2), (np.float64(0.121), 'S2.H22.S2.L202', 0.0, 2), (np.float64(0.121), 'S2.L202.S2.L200', 3.1416, 2), (np.float64(0.121), 'S2.L202.S2.H22', -3.1416, 2), (np.float64(0.121), 'S2.L202.S2.H20', 3.1416, 2), (np.float64(0.121), 'S2.L200.S2.L202', -3.1416, 2), (np.float64(0.121), 'S2.H22.S2.L202', -3.1416, 2)]
+  refined: S2.L202.S2.L020        E=-0.0000 v*=1.885618 mult(k=0)=2  min |eps-E| away from k*,0: 7.70e-13 at [-1.5708 -1.5708  0.    ]
+  refined: S2.L020.S2.L202        E=+0.0000 v*=1.885618 mult(k=0)=2  min |eps-E| away from k*,0: 7.70e-13 at [ 0.     -1.5708 -1.5708]
+  refined: S2.H22.S2.L202         E=+0.0000 v*=1.885618 mult(k=0)=2  min |eps-E| away from k*,0: 7.69e-13 at [-1.5708 -1.5708  0.    ]
+  refined: S2.L202.S2.L200        E=+3.1416 v*=1.885618 mult(k=0)=2  min |eps-E| away from k*,0: 7.69e-13 at [-1.5708  0.     -1.5708]
+  refined: S2.L202.S2.H22         E=-3.1416 v*=1.885618 mult(k=0)=2  min |eps-E| away from k*,0: 7.69e-13 at [-1.5708 -1.5708  0.    ]
+[PASS] no word in family (A) found with E reached only at k* and k=0 (refined; a negative search result, not a no-go)  best refined distance 7.70e-13
+
+TOTAL: PASS=4 FAIL=0   [608s]

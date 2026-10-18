@@ -1,0 +1,8 @@
+   L=  8 scalar  : optimal-zeta defect 1.602e-01 | best multiple of continuum-sampled zeta: defect 2.735e-01 (multiple +0.1008) (2s)
+   L=  8 maxwellL: optimal-zeta defect 4.054e-01 | best multiple of continuum-sampled zeta: defect 6.500e-01 (multiple +0.0939) (9s)
+   L= 12 scalar  : optimal-zeta defect 6.132e-02 | best multiple of continuum-sampled zeta: defect 1.192e-01 (multiple +0.0767) (26s)
+   L= 12 maxwellL: optimal-zeta defect 2.862e-01 | best multiple of continuum-sampled zeta: defect 4.662e-01 (multiple +0.0734) (118s)
+   L= 16 scalar  : optimal-zeta defect 3.261e-02 | best multiple of continuum-sampled zeta: defect 6.624e-02 (multiple +0.0598) (147s)
+   L= 16 maxwellL: optimal-zeta defect 2.191e-01 | best multiple of continuum-sampled zeta: defect 3.591e-01 (multiple +0.0582) (493s)
+   scalar: slope (last 3 L) optimal-zeta -2.30, sampled-zeta -2.05   [diagnostic, not gated]
+   maxwellL: slope (last 3 L) optimal-zeta -0.89, sampled-zeta -0.85   [diagnostic, not gated]

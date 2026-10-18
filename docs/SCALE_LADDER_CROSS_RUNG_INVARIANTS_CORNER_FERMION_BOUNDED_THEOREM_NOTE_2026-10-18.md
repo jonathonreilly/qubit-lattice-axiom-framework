@@ -264,7 +264,11 @@ The ladder does unify the lanes, but not by deriving everything from the finest 
 - **Spin 1 (B16, independently checked).**
   - A lattice Maxwell field closes on the same cone, independently of g.
   - Among translation-invariant timings this needs one of eight one-sided timings. Reflection-symmetric alternatives break unit translations and appear to fail elsewhere.
-  - The relabelling normalisation that sets the cone is not free: {G, G} closure forces every sector's generator to act as the same unit Lie derivative. So the common cone is derived, given that premise. This also holds for the scalar and the fermion.
+  - **Normalisation.** The relabelling normalisation that sets the cone is partly derived (B19, independently checked).
+    - In the continuum at leading order, {G, G} and the single lapse rule force the scalar and Maxwell generators onto one structure constant. So those matter cones equal each other with no premise.
+    - For spin ½ this is open. The Kosmann relabellings do not form a Lie algebra unless a triad or rotation constraint is added (companion lane note, Result 4).
+    - Their value relative to the gravity coefficients additionally needs gravity's own {G, C} at order h, with a quadratic relabelling term. That bracket gives every matter cone = the graviton's TT cone, K₂/(4α). This is K/(4α) because block 62 carries one K on both curvature terms, reading block 101's quadratic Hamiltonian as the unit-lapse value of one lapse-smeared constraint. Further premises: one total constraint and relabelling, a local first-order lapse rule, and a one-derivative quadratic relabelling term.
+    - On the lattice the relabellings do not close: the scalar at O(a²), Maxwell at O(a). There the normalisation is selected only in the continuum limit.
   - The one-sided timing forces an O(a) lattice obstruction.
 - **Prior art.** In the continuum this is the known Teitelboim / Hojman–Kuchař–Teitelboim / Schwinger universality. What is new is its exact lattice realisation and the explicit obstructions.
 - **Selection rule (B17, independently checked).**
@@ -272,7 +276,14 @@ The ladder does unify the lanes, but not by deriving everything from the finest 
   - The repo's 2026-09-25 walk passes. It is naive-type, and the invariance of Σ sin² k_j under k_j → k_j + π makes all eight species isotropic at one speed. So the closure route reproduces its α = K/4.
   - The parameter-free corner step fails. Its ±k* cones are isotropic, but the doublers at the same quasi-energy are uniaxial. They sit at D4 points that no species-exchanging symmetry relates to ±k*: k → k + π(1,1,1) exchanges only orbits of the same type.
   - This is conditional on the step's long-wavelength, band-projected theory coupling to a lapse as a scalar-weighted energy density. A global local Floquet Hamiltonian is not asserted, since the step is gapless away from ±π/2.
-- **Consequence for the target below.** A parameter-free step can feed a closing gravity sector only if its doublers are isotropic at the ±k* speed. That takes a taste-type symmetry relating the 3-orbits to ±k*, or no doublers, which by the doubling corollary needs gaplessness or broken axis C2s. Campaign block B18 is searching for the former.
+- **Consequence for the target below.** A parameter-free step can feed a closing gravity sector only if its doublers are isotropic at the ±k* speed. That takes a taste-type symmetry relating the 3-orbits to ±k*, or no doublers, which by the doubling corollary needs gaplessness or broken axis C2s.
+- **The taste route, in the corner model (B18, independently checked).**
+  - The diagonal shift S has no translation-covariant taste moving k* off ±k*. Its allowed affine momentum maps are exactly the PSG lifts times k → k + π(1,1,1).
+  - Stabiliser orders, 24 at k* against 8 at k* + πe_i, mean any taste must enlarge the symmetry group.
+  - Adding the link hopping's plane tastes leaves no spin-½ doublet at k*.
+  - For the eight-node step, an exhaustive spectral test and the velocity-determinant invariant exclude every such map: v*³ = 0.1048 against v_ax v_tr² = 0.0841.
+  - Words in S² do have exact tastes, which make their Weyl copies isotropic at √2/3 per S. But they carry uniaxial nodes at the same quasi-energy, at (π/4)-type points, or nodal lines.
+  - So no step found so far passes the closure selection rule. Block B20 is searching further.
 
 **The information-minimal target.** One local step rule on the base grid with no continuous parameters, from which every field is built. Then:
 - each speed is a pure number fixed by the grid geometry (item 6);

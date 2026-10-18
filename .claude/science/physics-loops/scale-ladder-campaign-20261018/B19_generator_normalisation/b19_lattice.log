@@ -1,0 +1,22 @@
+PASS: E0[L=3] control: uniform unit translations along 0 and 1 commute exactly for G_m; for G_A their bracket vanishes on the Gauss surface (lattice translations form an abelian group)
+PASS: E3[L=3] positive controls of the exact span test: D_zeta, M_zeta + (random Gauss piece) mod Gauss, and M^L_zeta are found in span; the Gauss piece alone is not in span without the transverse projection
+   L=3: per configuration (scalar in span, #range>=2 entries of [D,D], Maxwell G_A in span mod Gauss, G_L in span) = [(False, 308, False, False), (False, 302, False, False)]
+PASS: E1[L=3] scalar: {G_m[xi],G_m[eta]} is NOT G_m[zeta] for ANY bond field zeta (exact rational elimination, random integer xi, eta): [D_xi,D_eta] has range-2 entries (xi_b eta_{b+e} - eta_b xi_{b+e})/4 that no nearest-neighbour D_zeta has
+PASS: E2[L=3] Maxwell: {G_A[xi],G_A[eta]} is not G_A[zeta] for any zeta even modulo Gauss (any multiplier), and {G_L,G_L} is not G_L[zeta]: the lattice relabellings do not close among themselves
+PASS: E0[L=4] control: uniform unit translations along 0 and 1 commute exactly for G_m; for G_A their bracket vanishes on the Gauss surface (lattice translations form an abelian group)
+PASS: E3[L=4] positive controls of the exact span test: D_zeta, M_zeta + (random Gauss piece) mod Gauss, and M^L_zeta are found in span; the Gauss piece alone is not in span without the transverse projection
+   L=4: per configuration (scalar in span, #range>=2 entries of [D,D], Maxwell G_A in span mod Gauss, G_L in span) = [(False, 912, False, False), (False, 900, False, False)]
+PASS: E1[L=4] scalar: {G_m[xi],G_m[eta]} is NOT G_m[zeta] for ANY bond field zeta (exact rational elimination, random integer xi, eta): [D_xi,D_eta] has range-2 entries (xi_b eta_{b+e} - eta_b xi_{b+e})/4 that no nearest-neighbour D_zeta has
+PASS: E2[L=4] Maxwell: {G_A[xi],G_A[eta]} is not G_A[zeta] for any zeta even modulo Gauss (any multiplier), and {G_L,G_L} is not G_L[zeta]: the lattice relabellings do not close among themselves
+   L=  8  scalar: res=1.137e+00 beta_m-1=-5.628e-01 | G_A mod Gauss: res=1.105e+00 beta_A-1=-6.529e-01 | G_L: res=1.096e+00 beta_L-1=-6.447e-01 | scalar on rough phi: res=1.531
+   L= 12  scalar: res=4.756e-01 beta_m-1=-2.720e-01 | G_A mod Gauss: res=8.369e-01 beta_A-1=-3.294e-01 | G_L: res=8.333e-01 beta_L-1=-3.239e-01 | scalar on rough phi: res=1.740
+   L= 16  scalar: res=2.467e-01 beta_m-1=-1.557e-01 | G_A mod Gauss: res=6.590e-01 beta_A-1=-1.993e-01 | G_L: res=6.509e-01 beta_L-1=-1.928e-01 | scalar on rough phi: res=1.776
+   L= 24  scalar: res=1.025e-01 beta_m-1=-6.980e-02 | G_A mod Gauss: res=4.557e-01 beta_A-1=-9.803e-02 | G_L: res=4.445e-01 beta_L-1=-9.260e-02 | scalar on rough phi: res=1.804
+   L= 32  scalar: res=5.627e-02 beta_m-1=-3.935e-02 | G_A mod Gauss: res=3.463e-01 beta_A-1=-5.967e-02 | G_L: res=3.355e-01 beta_L-1=-5.549e-02 | scalar on rough phi: res=1.799
+   L= 48  scalar: res=2.457e-02 beta_m-1=-1.751e-02 | G_A mod Gauss: res=2.330e-01 beta_A-1=-3.022e-02 | G_L: res=2.242e-01 beta_L-1=-2.753e-02 | scalar on rough phi: res=1.802
+   fitted slopes (L=16..48): scalar res -2.10, beta_m-1 -1.99; G_A res -0.95, beta_A-1 -1.72; G_L res -0.97
+PASS: S1 scalar {G_m,G_m} - G_m[zeta_lat] on smooth fields is O(a^2) relative (slope -2.10; criterion -2 +- 0.3 declared from the second-order stencils)
+PASS: S2 Maxwell (B16 one-sided G_A) {G_A,G_A} - G_A[zeta_lat] mod Gauss on smooth fields is O(a) relative (slope -0.95; criterion -1 +- 0.3, expected from the one-sided stencil); G_L slope -0.97
+PASS: S3 on rough (random) phi the scalar residual stays O(1) (min 1.531): no exact closure at the operator level, only on smooth fields
+PASS: S4 effective lattice structure constants beta_s -> 1 as a power of a (slopes -1.99, -1.72; at L=48 beta_m = 0.9825, beta_A = 0.9698): the lattice {G,G} pins lam_A/lam_m = beta_m/beta_A = 1.0131 -> 1 only asymptotically; lam_A = 2 is excluded once beta's are near 1, but no exact value is selected at finite L
+TOTAL: PASS=12 FAIL=0

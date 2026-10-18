@@ -1,0 +1,9 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+[PASS] control: the degree map U=(n0+i n.sigma)/|n|, n=(m-sum cos k, sin k) has W3 = +-1 at m=2 and 0 at m=4; its square has W3 = 2 W3 (tolerance 1e-4: the normalised map is smooth but not a trigonometric polynomial)  W3(m=2)=-0.99999946, W3(m=4)=9.4e-08, W3(U^2)=-1.99999099
+[PASS] control (anomalous unitary, W3=+-1): E=pi only at Gamma (1 node), E=0 at the 7 other points of {0,pi}^3; both nets equal W3 (Sum chi = +W3 in the det-M convention used here; the net is the same at both quasi-energies)  chi at E=pi [-1], at E=0 [-1, -1, 1, -1, 1, 1, -1], W3 -1.0000; 24^3 grid min distance to E away from the corners 0.017
+   W3[eight-node step S.R_L.U_H.U_L] on 20^3 grid = -2.10e-19 +2.9e-19i
+   W3[eight-node step S.R_L.U_H.U_L] on 24^3 grid = +9.14e-19 +6.9e-19i
+[PASS] W3 = 0 for the eight-node step S.R_L.U_H.U_L (numerical, two grid sizes; the integrand is a trigonometric polynomial, so the grid sum is exact once N exceeds its degree)  
+   W3[S2.H20.S2.L202] on 20^3 grid = +1.04e-15 +4.5e-17i
+   W3[S2.H20.S2.L202] on 24^3 grid = -2.72e-16 -3.4e-16i
+[PASS] W3 = 0 for the S2.H20.S2.L202 (numerical, two grid sizes; the integrand is a trigonometric polynomial, so the grid sum is exact once N exceeds its degree)  

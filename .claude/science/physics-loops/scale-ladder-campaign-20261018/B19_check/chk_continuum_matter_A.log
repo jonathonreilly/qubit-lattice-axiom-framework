@@ -1,0 +1,6 @@
+PASS: M1 lam G_m: lam in [{lam: 0}, {lam: nu}]; gravity lam1 G1 + lam2 G2: [{lam2: nu}, {lam1: 0, lam2: 0}] (lam1 free); G_L closes exactly; G_c closes mod Gauss[b xi^i eta^j F_ij], b = [{bb: -1}]
+   M5 (8.1s): [{c: K1*lam_m/(4*a_k*alpha*lam1), c_B: K1*lam_A/(4*alpha*lam1), chi00: K1/(4*alpha*lam1), chi01: 0, chi02: 0, chi10: 0, chi11: K1/(4*alpha*lam1), chi12: 0, chi20: 0, chi21: 0, chi22: K1/(4*alpha*lam1), dg0: 0, dg1: 0, dg2: 0}]
+PASS: M5 {C,C} at O(eps) with a general 3x3 structure matrix chi: chi = K1/(4 alpha lam1) * delta, v_m^2 = a_k c = lam_m K1/(4 alpha lam1), v_A^2 = c_B = lam_A K1/(4 alpha lam1)
+   K12d: S1 = [-40/21, 0, 0, 0, -40/21, 0, 0, 0, -40/21]  S2 = [4/5, 0, 0, 0, 4/5, 0, 0, 0, 4/5]
+PASS: K12d C_g -> C_g - t K1 trh R1 (lapse redefinition N -> N(1 + t trh) at this order): S1 unchanged, S2 = 2 lam1 t: the s2 = 0 output is a density-weight/basis convention; s1 (the transport coefficient) is basis-independent
+TOTAL: PASS=3 FAIL=0

@@ -1,0 +1,4 @@
+[PASS] (a) G = diag((-1)^{n_c . x}) (n_c = normal of the corner's plane) commutes with S: a corner-dependent momentum shift k -> k + pi n_c, outside the uniform-taste class; it is NOT a symmetry of the eight-node step (any w)  
+[PASS] (b) one on-site V (diagonal? see detail) gives R_L(k+Q) = -V R_L(k) V^-1 and commutes with H_on, Lambda and S, so every B1 Clifford-phase step has the Q-taste W(k+Q) = +-V W(k) V^-1 (the family screen's e_x-only test then also covers weight-2 shifts)  null dim 1; V diagonal: True; sampled steps OK 27/27
+
+TOTAL: PASS=2 FAIL=0

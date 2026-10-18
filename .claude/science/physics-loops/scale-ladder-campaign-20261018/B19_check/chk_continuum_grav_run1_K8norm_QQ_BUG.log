@@ -1,0 +1,24 @@
+PASS: K11 [sqrt g R]^(2) of g = delta + h has exactly the 09-23/block-62 R2 symbol AND [sqrt g R]^(1) has the note's R1 symbol with the same sign/normalisation: one K on both in K wbar(u R1 + R2) <=> K1 = K2 in C = kin - K1 R1 - K2 R2
+FAIL: K8 TT h01(z): omega^2/k^2 = K2*b**2/(4*alpha) (positive for K2 > 0: -K2 R2 is the GR-sign potential); cf. 09-23 T2 K wbar^2 p^2/(4 alpha)
+   pieces built in 3.9s
+Traceback (most recent call last):
+  File "/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B19_check/chk_continuum_grav.py", line 220, in <module>
+    V, Q, R1h = k12()
+                ~~~^^
+  File "/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B19_check/chk_continuum_grav.py", line 184, in k12
+    ok, sol, nul = solve_unique(eqs, coeffs + Svars, Svars)
+                   ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B19_check/chk_continuum_grav.py", line 147, in solve_unique
+    M = DomainMatrix.from_Matrix(A.row_join(b)).convert_to(sp.QQ)
+  File "/usr/local/lib/python3.13/dist-packages/sympy/polys/matrices/domainmatrix.py", line 548, in convert_to
+    rep_K = rep.convert_to(K)
+  File "/usr/local/lib/python3.13/dist-packages/sympy/polys/matrices/sdm.py", line 927, in convert_to
+    Ak = unop_dict(A, lambda e: K.convert_from(e, Kold))
+  File "/usr/local/lib/python3.13/dist-packages/sympy/polys/matrices/sdm.py", line 1452, in unop_dict
+    Bij = f(Aij)
+  File "/usr/local/lib/python3.13/dist-packages/sympy/polys/matrices/sdm.py", line 927, in <lambda>
+    Ak = unop_dict(A, lambda e: K.convert_from(e, Kold))
+                                ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/sympy/polys/domains/domain.py", line 401, in convert_from
+    raise CoercionFailed("Cannot convert %s of type %s from %s to %s" % (element, type(element), base, self))
+sympy.polys.polyerrors.CoercionFailed: Cannot convert I/4 of type <class 'sympy.polys.domains.gaussiandomains.GaussianRational'> from QQ_I to QQ

@@ -1,0 +1,11 @@
+PASS: K11 [sqrt g R]^(2) of g = delta + h has exactly the 09-23/block-62 R2 symbol AND [sqrt g R]^(1) has the note's R1 symbol with the same sign/normalisation: one K on both in K wbar(u R1 + R2) <=> K1 = K2 in C = kin - K1 R1 - K2 R2
+PASS: K8 TT h01(z): omega^2/k^2 = K2/(4*alpha) (positive for K2 > 0: -K2 R2 is the GR-sign potential); cf. 09-23 T2 K wbar^2 p^2/(4 alpha)
+   pieces built in 3.4s
+   trial 0: lam1=2/3 K1=1/4 K2=1: consistent=True, #eqs=738, nullity(G2 space)=144, S1 diag=[-8/3, -8/3, -8/3] (expect -8/3), S1 offdiag unique-zero=True, S2 all 0=True
+PASS: K12b with G2 = 0 (only the linear shift lam1 G1) the degree-1 bracket has NO lapse rule N' (general 18-coefficient N'), K2 != 0
+   trial 1: lam1=1/2 K1=1/5 K2=5/3: consistent=True, #eqs=738, nullity(G2 space)=144, S1 diag=[-25/6, -25/6, -25/6] (expect -25/6), S1 offdiag unique-zero=True, S2 all 0=True
+   trial 2: lam1=1 K1=1/4 K2=3/2: consistent=True, #eqs=738, nullity(G2 space)=144, S1 diag=[-6, -6, -6] (expect -6), S1 offdiag unique-zero=True, S2 all 0=True
+PASS: K12 fully general local G2 (648 coeffs, no isotropy/parity assumed) + fully general N' (18 coeffs): the h-linear {C_g(N), lam1 G1 + G2} = C^(1)(N') is solvable and FORCES N' = -(lam1 K2/K1) xi.dN exactly (S1 = -lam1 K2/K1 * delta, S2 = 0), at three random rational points; G2 itself has a nonzero null space
+   isotropic solution: [{m1: -2*m12 + K2*lam1/K1, m10: -m12, m2: m9 + K2*lam1/K1, m3: m12, m4: -m12, m5: m12, m6: -2*m12, m7: m11, m8: m12, s1: -K2*lam1/K1, s2: 0}]
+PASS: K12c isotropic 12-term ansatz (independent transcription), symbolic: s1 = -lam1 K2/K1, s2 = 0 unique; G2 = (lam1 K2/K1) * Lie completion + 3-dim null family [m9, m11, m12]
+TOTAL: PASS=5 FAIL=0

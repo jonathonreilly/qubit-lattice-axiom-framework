@@ -1,0 +1,7 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+[PASS] S(k*) = S(-k*) = 1 exactly (k*.f_c in {0, +-pi} and the gauge signs compensate)  
+[PASS] at k*: a generic symmetric operator has isotypic blocks 2+2+4+4; <f>_D is isotropic sqrt2/3 with zero tilt on both doublets and opposite det signs  det signs [1, -1]
+[PASS] at -k*: a generic symmetric operator has isotypic blocks 2+2+4+4; <f>_D is isotropic sqrt2/3 with zero tilt on both doublets and opposite det signs  det signs [1, -1]
+[PASS] random words: every exactly 2-fold level at +-k* has speed |n_S| sqrt2/3 (isotropic, untilted) and chirality sign(n_S) eps_D  1200 doublets checked (144 with n_S = 0), max speed error 7.4e-13
+
+TOTAL: PASS=4 FAIL=0   [4s]

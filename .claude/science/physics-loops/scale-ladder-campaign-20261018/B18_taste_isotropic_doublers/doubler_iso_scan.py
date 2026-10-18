@@ -114,4 +114,21 @@ check("every k* Weyl doublet in the scanned families has the speed sqrt2/3 (O-fo
       all(abs(x["v*"]-np.sqrt(2)/3)<1e-5 and x["aniso*"]<1e-5 for x in res), f"{len(res)} nodes")
 sc=score(doub[0]) if doub else np.inf
 check("no scanned step has isotropic doublers at the k* speed (best score > 0.01; a negative search result, not a no-go)", sc>0.01, f"best score {sc:.4f}")
+# the accidentally isotropic doublers: refine (40 random directions, q halving)
+isos=[r for r in doub if score(r,'iso')<1e-4]
+print(f"{len(isos)} (step,node) records have a linearly isotropic doubler; links {sorted(set(r['link'] for r in isos))}; "
+      f"speeds {sorted(set(round(r[l][1][0],6) for r in isos for l in ('D+x','D-x') if weyl_ok(*r[l]) and abs(r[l][1][0]-r[l][1][1])<1e-4))}")
+r=isos[0]; U=parse(r["U"]); W=lambda k,f=links[r["link"]],U=U: f(k)@U
+dd=np.random.default_rng(1).normal(size=(40,3)); dd/=np.linalg.norm(dd,axis=1)[:,None]
+lab=[l for l in ("D+x","D-x") if weyl_ok(*r[l]) and abs(r[l][1][0]-r[l][1][1])<1e-4][0]
+spr=[]; mn=[]
+for qq in (4e-3,2e-3,1e-3):
+    s_=[]
+    for d in dd:
+        ee=wrap(np.angle(np.linalg.eigvals(W(pts[lab]+qq*d)))-r["E"]); ee=np.sort(ee[np.abs(ee)<0.05]); s_.append((ee[-1]-ee[0])/(2*qq))
+    spr.append(np.ptp(s_)); mn.append(np.mean(s_))
+print(f"  {r['link']}.{r['U']} E={r['E']:+.4f} at {lab}: mean speed {mn}, angular spread {spr} (ratio per halving {spr[0]/spr[1]:.2f}, {spr[1]/spr[2]:.2f})")
+check("the linearly isotropic doublers found (S.U steps only) have speed sqrt2/5 = (3/5) v*, not v*: isotropic but at the wrong speed "
+      "(angular spread falls as q^2)", abs(mn[-1]-np.sqrt(2)/5)<1e-6 and all(abs(spr[i]/spr[i+1]-4)<0.2 for i in range(2)),
+      f"v = {mn[-1]:.7f} vs sqrt2/5 = {np.sqrt(2)/5:.7f}, v* = {np.sqrt(2)/3:.7f}")
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}   [{time.time()-t0:.0f}s]")

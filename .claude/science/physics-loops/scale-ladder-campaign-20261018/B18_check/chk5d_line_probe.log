@@ -1,0 +1,3 @@
+node [0.356668 0.75     0.25    ] pi; speeds [2.828427 2.828427 0.      ] zero-velocity direction [ 1. -0. -0.]
+followed 40 steps of 0.02 with gap < 1e-8 along the line; end point [0.6113 0.75   0.25  ] pi; max gap on path 3.7e-15
+[PASS] S2.L202.S2.L020 has a nodal line at its k* node quasi-energy E = 0 (point census not applicable)

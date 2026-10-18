@@ -1,0 +1,13 @@
+   L=3 seed=1 (3s): scalar diagonal-NNN nonzeros=154, rank(B)=81 rank(B|t)=82; Maxwell mod Gauss rank(B)=81 rank(B|t)=82; control in span=True
+PASS: L1[L=3,s=1] scalar {G_m,G_m} not in span{G_m[zeta]} (exact: NNN-diagonal entries + QQ rank)
+PASS: L2[L=3,s=1] Maxwell {G_A,G_A} not in span{G_A[zeta]} mod Gauss (exact QQ rank); control G_A[zeta']+Gauss accepted
+   L=3 seed=2 (2s): scalar diagonal-NNN nonzeros=155, rank(B)=81 rank(B|t)=82; Maxwell mod Gauss rank(B)=81 rank(B|t)=82; control in span=True
+PASS: L1[L=3,s=2] scalar {G_m,G_m} not in span{G_m[zeta]} (exact: NNN-diagonal entries + QQ rank)
+PASS: L2[L=3,s=2] Maxwell {G_A,G_A} not in span{G_A[zeta]} mod Gauss (exact QQ rank); control G_A[zeta']+Gauss accepted
+   L=4 seed=1 (19s): scalar diagonal-NNN nonzeros=357, rank(B)=192 rank(B|t)=193; Maxwell mod Gauss rank(B)=192 rank(B|t)=193; control in span=True
+PASS: L1[L=4,s=1] scalar {G_m,G_m} not in span{G_m[zeta]} (exact: NNN-diagonal entries + QQ rank)
+PASS: L2[L=4,s=1] Maxwell {G_A,G_A} not in span{G_A[zeta]} mod Gauss (exact QQ rank); control G_A[zeta']+Gauss accepted
+   L=4 seed=2 (17s): scalar diagonal-NNN nonzeros=363, rank(B)=192 rank(B|t)=193; Maxwell mod Gauss rank(B)=192 rank(B|t)=193; control in span=True
+PASS: L1[L=4,s=2] scalar {G_m,G_m} not in span{G_m[zeta]} (exact: NNN-diagonal entries + QQ rank)
+PASS: L2[L=4,s=2] Maxwell {G_A,G_A} not in span{G_A[zeta]} mod Gauss (exact QQ rank); control G_A[zeta']+Gauss accepted
+TOTAL: PASS=8 FAIL=0

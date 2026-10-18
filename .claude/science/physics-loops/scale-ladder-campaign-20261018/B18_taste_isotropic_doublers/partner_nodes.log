@@ -1,0 +1,53 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+
+== S2.H20.S2.L202: node quasi-energy E = -3.141593
+[PASS] S2.H20.S2.L202: periodic under pi e_i and (pi/2)(1,1,1) (16 equivalent O-fixed points: 8 cube points + pi{0,1}^3)  
+  60 converged crossings, 34 distinct (mod periods)
+  crossing at k = [-0.5 -0.  -0. ] pi : point; min gap at |dq|=1e-3: 1.89e-03; speeds [1.88562 1.88562 1.88562 1.88562 1.88562 1.88562]
+  crossing at k = [0. 0. 0.] pi : point; min gap at |dq|=1e-3: 1.89e-03; speeds [1.88562 1.88562 1.88562 1.88562 1.88562 1.88562]
+  crossing at k = [-0.   0.  -0.5] pi : point; min gap at |dq|=1e-3: 1.89e-03; speeds [1.88562 1.88562 1.88562 1.88562 1.88562 1.88562]
+  crossing at k = [-0.  -0.5  0. ] pi : point; min gap at |dq|=1e-3: 1.89e-03; speeds [1.88562 1.88562 1.88562 1.88562 1.88562 1.88562]
+  crossing at k = [-0.    0.25  0.25] pi : point; min gap at |dq|=1e-3: 1.61e-03; speeds [1.72942 1.73701 1.72716 1.60757 1.6262  2.09681]
+  crossing at k = [0.25 0.25 0.  ] pi : point; min gap at |dq|=1e-3: 1.58e-03; speeds [2.38657 1.58131 2.38984 2.46133 2.38807 1.71874]
+  crossing at k = [-0.   -0.25 -0.25] pi : point; min gap at |dq|=1e-3: 1.61e-03; speeds [1.72942 1.73701 1.72716 1.60757 1.6262  2.09681]
+  crossing at k = [-0.25 -0.25 -0.  ] pi : point; min gap at |dq|=1e-3: 1.58e-03; speeds [2.38657 1.58131 2.38984 2.46133 2.38807 1.71874]
+  crossing at k = [ 0.25 -0.25 -0.  ] pi : point; min gap at |dq|=1e-3: 1.58e-03; speeds [2.38657 1.58131 2.38984 2.46133 2.38807 1.71874]
+  crossing at k = [ 0.25  0.   -0.25] pi : point; min gap at |dq|=1e-3: 1.59e-03; speeds [1.5924  2.38843 1.58995 1.60621 1.69556 1.96765]
+  crossing at k = [ 0.25 -0.    0.25] pi : point; min gap at |dq|=1e-3: 1.59e-03; speeds [1.5924  2.38843 1.58995 1.60621 1.69556 1.96765]
+  crossing at k = [ 0.   -0.25  0.25] pi : point; min gap at |dq|=1e-3: 1.61e-03; speeds [1.72942 1.73701 1.72716 1.60757 1.6262  2.09681]
+  crossing at k = [-0.25  0.    0.25] pi : point; min gap at |dq|=1e-3: 1.59e-03; speeds [1.5924  2.38843 1.58995 1.60621 1.69556 1.96765]
+  crossing at k = [-0.25  0.25  0.  ] pi : point; min gap at |dq|=1e-3: 1.58e-03; speeds [2.38657 1.58131 2.38984 2.46133 2.38807 1.71874]
+  crossing at k = [ 0.    0.25 -0.25] pi : point; min gap at |dq|=1e-3: 1.61e-03; speeds [1.72942 1.73701 1.72716 1.60757 1.6262  2.09681]
+  crossing at k = [-0.25 -0.   -0.25] pi : point; min gap at |dq|=1e-3: 1.59e-03; speeds [1.5924  2.38843 1.58995 1.60621 1.69556 1.96765]
+  crossing at k = [0.25 0.   0.5 ] pi : point; min gap at |dq|=1e-3: 1.61e-03; speeds [1.72942 1.73701 1.72716 1.60757 1.6262  2.09681]
+  crossing at k = [-0.5  -0.25 -0.  ] pi : point; min gap at |dq|=1e-3: 1.59e-03; speeds [1.5924  2.38843 1.58995 1.60621 1.69556 1.96765]
+  crossing at k = [0.   0.5  0.25] pi : point; min gap at |dq|=1e-3: 1.58e-03; speeds [2.38657 1.58131 2.38984 2.46133 2.38807 1.71874]
+  crossing at k = [-0.25  0.   -0.  ] pi : point; min gap at |dq|=1e-3: 1.61e-03; speeds [1.72942 1.73701 1.72716 1.60757 1.6262  2.09681]
+  crossing at k = [0.5  0.   0.25] pi : point; min gap at |dq|=1e-3: 1.58e-03; speeds [2.38657 1.58131 2.38984 2.46133 2.38807 1.71874]
+  crossing at k = [ 0.   -0.25 -0.  ] pi : point; min gap at |dq|=1e-3: 1.59e-03; speeds [1.5924  2.38843 1.58995 1.60621 1.69556 1.96765]
+  crossing at k = [ 0.   -0.    0.25] pi : point; min gap at |dq|=1e-3: 1.58e-03; speeds [2.38657 1.58131 2.38984 2.46133 2.38807 1.71874]
+  crossing at k = [0.   0.25 0.5 ] pi : point; min gap at |dq|=1e-3: 1.59e-03; speeds [1.5924  2.38843 1.58995 1.60621 1.69556 1.96765]
+  crossing at k = [ 0.25  0.   -0.  ] pi : point; min gap at |dq|=1e-3: 1.61e-03; speeds [1.72942 1.73701 1.72716 1.60757 1.6262  2.09681]
+  crossing at k = [-0.5  -0.   -0.25] pi : point; min gap at |dq|=1e-3: 1.58e-03; speeds [2.38657 1.58131 2.38984 2.46133 2.38807 1.71874]
+  crossing at k = [0.5  0.25 0.  ] pi : point; min gap at |dq|=1e-3: 1.59e-03; speeds [1.5924  2.38843 1.58995 1.60621 1.69556 1.96765]
+  crossing at k = [-0.    0.   -0.25] pi : point; min gap at |dq|=1e-3: 1.58e-03; speeds [2.38657 1.58131 2.38984 2.46133 2.38807 1.71874]
+  crossing at k = [-0.25 -0.   -0.5 ] pi : point; min gap at |dq|=1e-3: 1.61e-03; speeds [1.72942 1.73701 1.72716 1.60757 1.6262  2.09681]
+  crossing at k = [ 0.    0.25 -0.  ] pi : point; min gap at |dq|=1e-3: 1.59e-03; speeds [1.5924  2.38843 1.58995 1.60621 1.69556 1.96765]
+  crossing at k = [-0.   -0.25 -0.5 ] pi : point; min gap at |dq|=1e-3: 1.59e-03; speeds [1.5924  2.38843 1.58995 1.60621 1.69556 1.96765]
+  crossing at k = [-0.   -0.5  -0.25] pi : point; min gap at |dq|=1e-3: 1.58e-03; speeds [2.38657 1.58131 2.38984 2.46133 2.38807 1.71874]
+  crossing at k = [0.25 0.5  0.  ] pi : point; min gap at |dq|=1e-3: 1.61e-03; speeds [1.72942 1.73701 1.72716 1.60757 1.6262  2.09681]
+  crossing at k = [-0.25 -0.5  -0.  ] pi : point; min gap at |dq|=1e-3: 1.61e-03; speeds [1.72942 1.73701 1.72716 1.60757 1.6262  2.09681]
+  k* speed 1.885618; 33 crossings away from the 16 O-fixed points
+[PASS] S2.H20.S2.L202: E is also reached away from the 16 O-fixed points (the same-chirality copies need partners)  kinds ['point']
+
+TOTAL: PASS=2 FAIL=0   [8s]
+
+== census for S2.H20.S2.L202, E = -3.141593
+  k* (= all 16 O-fixed copies)   mult 2; speed mean 1.885618 range [1.885618, 1.885618]; Berry flux +1.000
+  X: (pi/2) e_x                  mult 2; speed mean 1.885618 range [1.885618, 1.885618]; Berry flux +1.000
+  (pi/4)(1,1,0)                  mult 2; speed mean 2.001009 range [1.582667, 2.419093]; Berry flux +1.000
+  (pi/4)(0,1,1)                  mult 2; speed mean 1.842430 range [1.581674, 2.457220]; Berry flux +1.000
+  (pi/4)(1,0,1)                  mult 2; speed mean 1.893823 range [1.581360, 2.469661]; Berry flux +1.000
+[PASS] S2.H20.S2.L202: the k* node and its 15 taste copies are isotropic at v (2 S^2 per step: 4 sqrt2/3); the X-point partners (pi/2)e_i are isotropic at the same speed; the (pi/4)(1,1,0)-type partners are anisotropic, so not every species shares one isotropic cone  k* (= all 16 O-fixed copies): flux +1.00; X: (pi/2) e_x: flux +1.00; (pi/4)(1,1,0): flux +1.00; (pi/4)(0,1,1): flux +1.00; (pi/4)(1,0,1): flux +1.00
+
+TOTAL: PASS=3 FAIL=0   [10s]

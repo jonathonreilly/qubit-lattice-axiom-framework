@@ -1,0 +1,73 @@
+[PASS] (A) S2.H20.S2.L202 is periodic under pi e_i and (pi/2)(1,1,1); S(k)^2 = diag(e^{2ik.f_c}) carries no gauge sign  
+S2.H20.S2.L202 levels at k*: [(np.float64(-1.5708), 4), (np.float64(-0.0), 2), (np.float64(1.5708), 4), (np.float64(3.14159), 2)]
+k* : (array([1.88561808, 1.88561808, 1.88561808]), np.float64(6.70441985125022), np.float64(1.464484751053976e-15)) 
+X  : (array([1.88561808, 1.88561808, 1.88561808]), np.float64(6.704419851250194), np.float64(1.7713760791103323e-15)) 
+0  : (array([1.88561808, 1.88561808, 1.88561808]), np.float64(6.704419851250226), np.float64(2.1500379006505567e-15))
+[PASS] (A) k* node of S2.H20.S2.L202 is isotropic at 4 sqrt2/3 (= sqrt2/3 per S application), and k = 0 is an identical copy  E = -0.000000
+[PASS] (A) the X-type point (pi/2)e_x carries a 2-fold level at the same E, isotropic at the same speed (B18: 'unexplained')  chirality signs k*: +1, X: +1
+(A) distinct E-touchings in one cell (mod pi Z^3 and (pi/2)(1,1,1)): 48
+   node k/pi [0.25 0.75 0.75] speeds [1.8856 1.8856 1.8856] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.25 0.25 0.75] speeds [1.8856 1.8856 1.8856] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.25 0.75 0.25] speeds [1.8856 1.8856 1.8856] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.25 0.25 0.25] speeds [1.8856 1.8856 1.8856] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0. 0. 0.] speeds [1.8856 1.8856 1.8856] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.5 1.  0.5] speeds [1.8856 1.8856 1.8856] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.5 0.  1. ] speeds [1.8856 1.8856 1.8856] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.  0.5 0. ] speeds [1.8856 1.8856 1.8856] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.  1.  0.5] speeds [1.8856 1.8856 1.8856] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.  0.5 0.5] speeds [1.8856 1.8856 1.8856] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.5 0.5 0.5] speeds [1.8856 1.8856 1.8856] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.5 0.5 0. ] speeds [1.8856 1.8856 1.8856] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.25 0.25 0.  ] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.25 0.   0.5 ] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.5  0.25 0.  ] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.   0.75 0.5 ] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.25 1.   1.  ] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.   0.75 1.  ] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.   1.   0.25] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.25 0.5  0.5 ] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.   0.25 0.25] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.25 0.75 0.  ] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.   0.25 0.5 ] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.25 0.   0.75] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.5  0.25 0.5 ] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.25 0.25 0.5 ] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.25 0.75 0.5 ] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.   0.   0.75] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.   0.75 0.25] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.25 0.5  0.25] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.25 0.5  0.75] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.25 0.5  0.  ] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.5  1.   0.25] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.   0.5  0.25] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.   0.25 0.  ] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.5  0.75 0.25] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.25 0.   0.25] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.   0.25 0.75] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.5  0.25 0.75] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.   0.75 0.75] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.5  0.5  0.75] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.5  0.5  0.25] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.   0.5  0.75] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.5  0.75 0.75] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.5  0.75 0.5 ] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.5  0.25 0.25] speeds [2.4943 1.5813 1.5813] sign det B 1 Fukui flux (band just below E) -1.0
+   node k/pi [0.5  0.75 0.  ] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   node k/pi [0.5  1.   0.75] speeds [2.4943 1.5813 1.5813] sign det B -1 Fukui flux (band just below E) 1.0
+   net chirality per cell: sign-det sum +0, Fukui sum +0.000
+[PASS] (A) own node census at E for S2.H20.S2.L202: the chiralities of all E-touchings in one cell sum to zero (3-winding of a product of a diagonal shift and constant unitaries is 0), so the B18 census line 'every sampled node class has Berry flux +1' is incomplete or mis-signed  48 touchings; sign-det sum +0; Fukui sum +0.000
+[PASS] (A) the census has anisotropic nodes (B18: (pi/4)(1,1,0)-type, speeds ~1.58-2.47), so not every species shares one cone  36 anisotropic node classes; speed ranges [(np.float64(2.4943), np.float64(1.5813), np.float64(1.5813)), (np.float64(2.4943), np.float64(1.5813), np.float64(1.5813)), (np.float64(2.4943), np.float64(1.5813), np.float64(1.5813)), (np.float64(2.4943), np.float64(1.5813), np.float64(1.5813))]
+S2.L202.S2.L020 2-fold levels at k*: [-0.] distance to E at (pi/2)(-1,-1,0): [0.]
+[PASS] (A) S2.L202.S2.L020 reaches its k* node quasi-energy exactly at (pi/2)(-1,-1,0) (an X-type point): not clean  1.2e-16
+S.RL.L020*H02 levels at k*: [(np.float64(-3.14159), 2), (np.float64(-0.0), 10)]
+   E -3.14159 k* (array([0.47140452, 0.47140452, 0.47140452]), np.float64(-0.10475656017578436), np.float64(3.049871627192957e-16)) 
+      D+x (array([0.56568542, 0.42426407, 0.42426407]), np.float64(0.10182337649086233), np.float64(2.8913214392135384e-16)) 
+      D-x (array([7.07106781e-01, 7.07106781e-01, 1.91449648e-17]), np.float64(1.0538417885221136e-31), np.float64(1.6711069443220838e-16))
+[PASS] (B) S.RL.L020*H02 at E = pi: k* isotropic sqrt2/3; doubler at k*+pi e_x uniaxial (2sqrt2/5 axial, 3sqrt2/10 transverse) exactly (PT)  
+   score max(|va-vt|, |v-v*|): [0.141421]  vs B18 0.1414 (= 2sqrt2/5 - 3sqrt2/10 = 0.141421 )
+S.L131*H33 levels at k*: [(np.float64(-2.35619), 4), (np.float64(-1.5708), 2), (np.float64(-0.0), 2), (np.float64(0.7854), 4)] [((array([0.47140452, 0.47140452, 0.47140452]), np.float64(-0.10475656017578436), np.float64(4.772778900979049e-16)), (array([0.28284271, 0.28284271, 0.28284271]), np.float64(0.022627416997969475), np.float64(5.367672863358296e-16)))]
+[PASS] (B) S.L131*H33 at E = 0: the doubler at k*+pi e_x is isotropic at sqrt2/5 = (3/5) v* exactly at linear order (PT)  
+   S.L131*H33: min distance to E on a 12^3 grid away from the cube points: 0.00025675449320070916
+[PASS] (B) S.L131*H33 is not clean at E (bands reach within 0.05 of E away from the cube points on a coarse grid)  2.568e-04
+
+TOTAL: PASS=9 FAIL=0   [332s]

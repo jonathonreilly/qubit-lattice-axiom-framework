@@ -1,0 +1,4 @@
+   trial 0: scalar h01 d0phi d1phi coeff = -5/8 (expect -5/8); Maxwell h01 E0E1 coeff = 8 (expect 8)
+   trial 1: scalar h01 d0phi d1phi coeff = -12/7 (expect -12/7); Maxwell h01 E0E1 coeff = 135/392 (expect 135/392)
+PASS: M6b shear coupling uniquely forced to (lam_s/lam1) x metric stress for scalar and Maxwell (general ansatz)
+TOTAL: PASS=1 FAIL=0

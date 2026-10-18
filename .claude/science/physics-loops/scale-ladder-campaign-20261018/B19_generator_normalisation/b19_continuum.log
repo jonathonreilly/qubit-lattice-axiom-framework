@@ -1,0 +1,28 @@
+PASS: C1a {G_m[xi],G_m[eta]} = +G_m[[xi,eta]] exactly (pi weight-1 density, delta_xi F = {F,G[xi]} = L_xi F); the opposite sign fails
+PASS: C1b lam G_m closes with structure constant nu iff lam in {0, nu}: [{lam: 0}, {lam: nu}] -- already at the matter field's LEADING (quadratic) order
+PASS: C2a {G1,G1} = 0 (linear generator abelian); full G_g = int P L_xi(delta+h) closes: {G_g[xi],G_g[eta]} = G_g[[xi,eta]] to all orders (G_g is degree 1+2)
+   degree-1 condition -> [{lam2: nu}] ; degree-2 condition -> [{lam2: 0}, {lam2: nu}] ; joint -> [{lam2: nu}, {lam1: 0, lam2: 0}]
+PASS: C2b with G = lam1 G1 + lam2 G2: closure (structure constant nu) forces lam2 = nu but leaves lam1 FREE -- the normalisation of the linear (abelian) gauge shift delta h = 2 lam1 d xi is not fixed by {G,G}; lam1/lam2 is the scale r of the background in g = r delta + h
+PASS: C3a Lie generator G_L[xi] = int E^i L_xi A_i (E weight-1 vector density): {G_L[xi],G_L[eta]} = G_L[[xi,eta]] exactly
+PASS: C3b covariant G_c = G_L + Gauss[xi.A]; {G_c[xi],G_c[eta]} = G_c[[xi,eta]] + Gauss[b xi^i eta^j F_ij] with b = [{b: -1}] (closes only mod Gauss, field-dependent multiplier)
+PASS: C3c lam G_c closes mod Gauss with structure constant nu iff lam in {0, nu} (any Gauss multiplier allowed): [{bb: 0, lam: 0}, {bb: -nu**2, lam: nu}]
+PASS: C4a cross brackets {G_g,G_m}, {G_g,G_c}, {G_m,G_c} vanish identically (neither matter generator contains the metric when momenta are densities)
+   all solutions: [{bb: 0, lam2: nu, lam_A: 0, lam_m: 0}, {bb: 0, lam2: nu, lam_A: 0, lam_m: nu}, {bb: -nu**2, lam2: nu, lam_A: nu, lam_m: 0}, {bb: -nu**2, lam2: nu, lam_A: nu, lam_m: nu}]
+PASS: C4b total G = lam1 G1 + lam2 G2 + lam_m G_m + lam_A G_c closes (mod Gauss) with all sectors nonzero iff lam2 = lam_m = lam_A = nu; lam1 free: [{bb: -nu**2, lam2: nu, lam_A: nu, lam_m: nu}]
+PASS: C5r [sqrt g R]^(1) = d_i d_j h_ij - lap tr h (the B14/09-24 R1)
+   {C,C} O(eps) solution: [{c: K1*lam_m/(4*a_k*alpha*lam1), c_B: K1*lam_A/(4*alpha*lam1), chi: K1/(4*alpha*lam1), d: 0}]
+PASS: C5 {C(N),C(M)} at O(eps) [C = kin - K1 R1 + H_m + H_A, GR sign] closes into ONE lam1 G1 + lam_m G_m + lam_A G_c [chi xi0], xi0 = N dM - M dN, iff chi = K1/(4 alpha lam1) and each species' speed^2 v_s^2 (= ak c, cB) = lam_s K1/(4 alpha lam1) [analytic expectation: {H_s(N),H_s(M)} = v_s^2 G_s[xi0], {C_g(N),C_g(M)} = (K1/4alpha) G1[xi0]]: v_s^2 is proportional to lam_s/lam1, so doubling one generator doubles that species' cone (B16 T3c)
+   scalar {G,C} phi^2: [{a_m: lam_m/lam1, beta_m: 0, s1: -lam_m, t_m: s2/(2*lam1)}]
+PASS: C6a scalar {C_s(N), lam1 G1 + lam_m G_m} at O(phi^2) = H_m(s1 xi.dN + s2 N div xi) iff s1 = -lam_m and coupling strength a_m = lam_m/lam1 (times the metric stress), trace t_m tied to s2: the lapse transforms with the matter normalisation
+   Maxwell {G,C} A^2: [{a_A: lam_A/lam1, b1: -g2*lam_A, b2: 0, beta_A: 0, s1: -lam_A, t_A: s2/(2*lam1)}]
+PASS: C6b Maxwell {C_A(N), lam1 G1 + lam_A G_c} at O(A^2) = H_A(s1 xi.dN + s2 N div xi) + Gauss[b1 N xi.E + b2 N xi.A] iff s1 = -lam_A, a_A = lam_A/lam1 (Maxwell metric stress)
+   joint scalar+Maxwell: [{a_A: lam_m/lam1, a_m: lam_m/lam1, b1: -g2*lam_m, b2: 0, beta_A: 0, beta_m: 0, lam_A: lam_m, s1: -lam_m, t_A: s2/(2*lam1), t_m: s2/(2*lam1)}]
+PASS: C6c scalar + Maxwell with ONE constraint and ONE lapse rule: closure at O(matter^2) forces lam_A = lam_m (no {G,G} input, no nonlinear gravity): doubling G_A alone is excluded at the leading order of the {G,C} bracket
+   gravity {C,G} degree 1: [{K2: K1*lam2/lam1, s1: -lam2, s2: 0}]
+PASS: C7 gravity {C_g(N), lam1 G1 + lam2 G2} at degree 1 (h-linear; needs the nonlinear G2 and the h^2 potential) = C^(1)(s1 xi.dN + s2 N div xi) iff s1 = -lam2, s2 = 0 and K2 = K1 lam2/lam1 (GR: lam1 = lam2 <=> K1 = K2)
+PASS: C8 TT graviton h_01(z): potential -K2[sqrt g R]^(2) = B (d_z h01)^2 + t.d. with B = K2/2; kinetic P01^2/(8 alpha); omega^2/k^2 = K2/(4*alpha)
+   chain: v_m^2 = K2/(4*alpha), v_A^2 = K2/(4*alpha), graviton v^2 = K2/(4*alpha)
+PASS: C9 chain C5+C6+C7: one lapse rule s1 for the whole C => lam_m = lam_A = lam2; with K2 lam1 = K1 lam2 (C7) every species' cone v_s^2 = lam2 K1/(4 alpha lam1) = K2/(4 alpha) = TT graviton speed^2 (C8): all generator normalisations cancel -- but only once the gravity sector is taken to degree 1 (G2 and the h^2 potential)
+PASS: C10a canonical point rescaling phi->phi/sqrt r, pi->sqrt r pi: G_m is INVARIANT (so lam_m cannot be moved by it), H_m maps to (ak, c, mu) -> (r ak, c/r, mu/r), and the cone v^2 = ak c is invariant
+PASS: C10b canonical rescaling h->rho h, P->P/rho maps the family to itself with lam1->lam1/rho, lam2 invariant, alpha->rho^2 alpha, K1->rho K1, K2->rho^2 K2, a_s->rho a_s; the relations of C5 (v_s^2 ~ lam_s K1/(alpha lam1)), C6 (a_s lam1 = lam_s), C7 (K2 lam1 = K1 lam2) and the graviton cone K2/(4 alpha) are all invariant: 'c = kappa' in B14's units is the invariant statement v_s^2 = a_s K1/(4 alpha)
+TOTAL: PASS=19 FAIL=0

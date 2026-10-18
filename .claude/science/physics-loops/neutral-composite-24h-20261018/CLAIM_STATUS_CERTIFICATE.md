@@ -148,3 +148,6 @@ Native column readout block: root derives leading static cornerformfactor and co
 
 
 Actualfixedbox lightwindow complete: noaddedinteraction orsourcecoupling; everyactualground has derivedpositiveoriginalreadoutweight atDelta4=JLlambda4/16, coefficient includes(b-a) groundmixsubtraction. Momentumkernel andexactnonzeroQz lowdarkness checked. Independent/finalPASS; replay.838859sPASS. Traceupstreamsupport, noempiricalscalar/pole. Rootnext four-layer nativeinteracting coefficient K=-4sumP-5sumXX withoriginalO=3K-3sumXX; PFglobalgroundsector checked, R3-R5numericalresponse probes showpositivecoupling butboundaryvsbulk unresolved.
+
+
+All-height assisted hop: actual_current_surface_status conditional-support; proposal_allowed false; bare_retained_allowed false; review_loop_disposition pass. Fixed supplied Hamiltonian/height/regime and matched canonical preparation. No independent observation test; audit authority unchanged.

@@ -7,3 +7,9 @@
 5. Observational mapping only after deriving physical scale and measurement identification.
 
 Ground-window and neutral static response blocks published; native charged hierarchy checked. Goal continues until fixed deadline. No empirical calibration/test or TOE closure.
+
+
+## Current ranking after all-height coupling
+1. Residual-controlled periodic coefficient collective response beyond R6; numerical checks must not substitute for a pole theorem.
+2. Native energy cost of the particle-relative environment and relaxed channel coupling; no assumed profile or stiffness.
+3. Remove supplied finite-height geometry before any 3D scalar claim; retain known compact-feature energy and dark-source boundaries.

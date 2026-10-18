@@ -1,0 +1,118 @@
+{
+  "status": "conditional-support",
+  "controls": {
+    "neutral_complementary_all_length.py": [
+      {
+        "L": 2,
+        "amplitude": "1",
+        "scaled": "1"
+      },
+      {
+        "L": 3,
+        "amplitude": "1/2",
+        "scaled": "1"
+      },
+      {
+        "L": 4,
+        "amplitude": "1/4",
+        "scaled": "1"
+      },
+      {
+        "L": 5,
+        "amplitude": "1/8",
+        "scaled": "1"
+      },
+      {
+        "L": 6,
+        "amplitude": "1/16",
+        "scaled": "1"
+      },
+      {
+        "L": 7,
+        "amplitude": "1/32",
+        "scaled": "1"
+      },
+      {
+        "L": 8,
+        "amplitude": "1/64",
+        "scaled": "1"
+      },
+      {
+        "L": 9,
+        "amplitude": "1/128",
+        "scaled": "1"
+      },
+      {
+        "L": 10,
+        "amplitude": "1/256",
+        "scaled": "1"
+      },
+      {
+        "L": 11,
+        "amplitude": "1/512",
+        "scaled": "1"
+      },
+      {
+        "L": 12,
+        "amplitude": "1/1024",
+        "scaled": "1"
+      },
+      {
+        "L": 13,
+        "amplitude": "1/2048",
+        "scaled": "1"
+      },
+      {
+        "L": 14,
+        "amplitude": "1/4096",
+        "scaled": "1"
+      },
+      {
+        "L": 15,
+        "amplitude": "1/8192",
+        "scaled": "1"
+      }
+    ],
+    "neutral_third_height_symbolic.py": {
+      "status": "pass",
+      "all_background_symbolic": true,
+      "rows": [
+        {
+          "axis": "x",
+          "background_changed": false,
+          "result": {
+            "0": "1/8"
+          },
+          "raw": {
+            "0": "-443/64",
+            "195": "1/64",
+            "2145": "1/64"
+          },
+          "fold": {
+            "0": "-451/64",
+            "195": "1/64",
+            "2145": "1/64"
+          }
+        },
+        {
+          "axis": "y",
+          "background_changed": false,
+          "result": {
+            "3": "1/8"
+          },
+          "raw": {
+            "3": "-443/64",
+            "192": "1/64",
+            "3221225472": "1/64"
+          },
+          "fold": {
+            "3": "-451/64",
+            "192": "1/64",
+            "3221225472": "1/64"
+          }
+        }
+      ]
+    }
+  },
+  "scope": "Fixed-height canonical prepared background vertex; no empirical scalar or hierarchy selection"
+}

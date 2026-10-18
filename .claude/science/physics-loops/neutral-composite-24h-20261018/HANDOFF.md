@@ -398,3 +398,6 @@ Actual extended environment theorem complete: particle-relative S_d≤2F+2|d|1²
 
 
 Softsector block complete: exact commuting plane subgroup generates2^(2m-1) orthogonal patchstates, B4compression scalar by4m-2versus8 physicalflipcount. Oddparityminmax givesactualheavy levelswithmultiplicity withinO(Jlambda^2.5); neutralreadoutdarkbetweencharacters. IndependentfinalcheckPASS aftercorrectingplaneaxislabels. Replay.086065sPASS. RootR7periodicdualMPSchi256 ownedPID5581 session71350active; chi128residual.2797 failedstationarity target. Nextrootallheightcomplementaryhop recurrenceA_L=2^-(L-2), openIsingpathmapping underindependentcheck; Lremainsinputnotderivedhierarchy.
+
+
+All-height native assisted hop complete: exact path coefficient 2^-(L-2) proven through auxiliary open-Ising determinant, not fitted. Fixed even L>=6 prepared neutral-window squared vertex J²2^-2(L-2)lambda^(2L-2), with diagonal contamination controlled by exact plane symmetries and order-three cancellation. Independent coefficient/window/final reviews PASS; source-bound replay0.314159sPASS. No outgoing heavy eigenchannel, growing-height uniformity, hierarchy selection or empirical scalar. R7 chi256 residual.197292 remains insufficient; root chi512 refinement PID9981 session16927 active. Next: residual-controlled collective response and native environment energy cost.

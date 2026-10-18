@@ -100,3 +100,6 @@ Native column readout block: root derives leading static cornerformfactor and co
 
 
 Actualfixedbox lightwindow complete: noaddedinteraction orsourcecoupling; everyactualground has derivedpositiveoriginalreadoutweight atDelta4=JLlambda4/16, coefficient includes(b-a) groundmixsubtraction. Momentumkernel andexactnonzeroQz lowdarkness checked. Independent/finalPASS; replay.838859sPASS. Traceupstreamsupport, noempiricalscalar/pole. Rootnext four-layer nativeinteracting coefficient K=-4sumP-5sumXX withoriginalO=3K-3sumXX; PFglobalgroundsector checked, R3-R5numericalresponse probes showpositivecoupling butboundaryvsbulk unresolved.
+
+
+All-height block: no new interaction. Open Ising matrix is an exact path encoding, not added physical bits. Supplied even fixed L, R>2L, J, weak lambda and canonical preparation remain. Fendley2016 is prior-art context only. No physical species hierarchy follows from chosen height.

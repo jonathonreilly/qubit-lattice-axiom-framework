@@ -121,3 +121,5 @@ B6 exact ED of the supplied ring model; J = 1; V list [1.0, 0.9, 0.5, 0.0, -1.0]
 [PASS] 2x2x3: Hessian is block diagonal in lattice momentum (translation invariance) at every V :: max 1.4e-15
 [PASS] 2x2x3: at RK (V=J) every computed winding sector has ground energy 0 (graph Laplacian)
 [PASS] 2x2x3: at every q != 0 the 3-orientation block has exactly one nonzero (co-exact) value per real Fourier pair
+--- 2x2x4: zero-winding sector 1552024 states, 49 components, vacuum component 1551976
+[PASS] 2x2x4: vacuum component is mapped onto itself by the three unit translations

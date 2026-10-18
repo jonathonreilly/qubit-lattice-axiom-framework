@@ -1,0 +1,150 @@
+{
+  "schema_version": 2,
+  "base_revision": "505b96162c4ca7742515572b79d0f71f8b0a85f4",
+  "base_pr": 9734,
+  "main_revision": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "packet_destination": "outputs/exact_two_body_engineered_loader_2026_10_18",
+  "source_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934",
+  "status": "Selectively checked conditional exact positive two-body loader with engineered finite output window and size-arrival-dwell tradeoff",
+  "files": [
+    {
+      "path": "exact_two_body_gate_diamond/PROPOSAL.md",
+      "destination": "source_checks/exact_two_body_gate_diamond/PROPOSAL.md",
+      "sha256": "7fa888681833216ded21fab0028f18ad079fde94b7f884a391c83196fb5a3e33",
+      "proof_dependency": true,
+      "status": "Full ROOT read and scoped selective check accepted; historical pending flags preserved",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_two_body_gate_diamond/PROPOSAL.md",
+      "bytes": 5208
+    },
+    {
+      "path": "exact_two_body_gate_diamond_check/REVIEW.md",
+      "destination": "source_checks/exact_two_body_gate_diamond_check/REVIEW.md",
+      "sha256": "da5cbc9bcb0f66442da600191c4b863ed7c22a5a4bba0d024a0c683cf71b1945",
+      "proof_dependency": true,
+      "status": "Full ROOT read and scoped selective check accepted; historical pending flags preserved",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_two_body_gate_diamond_check/REVIEW.md",
+      "bytes": 12143
+    },
+    {
+      "path": "exact_two_body_gate_matched_extension/PROPOSAL.md",
+      "destination": "source_checks/exact_two_body_gate_matched_extension/PROPOSAL.md",
+      "sha256": "a1157d95d06e7eeced6217ec2fb7b43247619a74cd9aded3eeb811a68ba6075e",
+      "proof_dependency": true,
+      "status": "Full ROOT read and scoped selective check accepted; historical pending flags preserved",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_two_body_gate_matched_extension/PROPOSAL.md",
+      "bytes": 5733
+    },
+    {
+      "path": "exact_two_body_gate_matched_extension_check/REVIEW.md",
+      "destination": "source_checks/exact_two_body_gate_matched_extension_check/REVIEW.md",
+      "sha256": "36a1f3585c9ddde455078c72e7f48dc2b2cd8bfd1165026f4d3f60c6dbc6c77f",
+      "proof_dependency": true,
+      "status": "Full ROOT read and scoped selective check accepted; historical pending flags preserved",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_two_body_gate_matched_extension_check/REVIEW.md",
+      "bytes": 10895
+    },
+    {
+      "path": "exact_two_body_direct_loader_composition/PROPOSAL.md",
+      "destination": "source_checks/exact_two_body_direct_loader_composition/PROPOSAL.md",
+      "sha256": "f874302baf42f962939fb0c9497b2c4f55283ed9189671048faadeeb04eca946",
+      "proof_dependency": true,
+      "status": "Full ROOT read and scoped selective check accepted; historical pending flags preserved",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_two_body_direct_loader_composition/PROPOSAL.md",
+      "bytes": 23893
+    },
+    {
+      "path": "exact_two_body_direct_loader_composition_check/REVIEW.md",
+      "destination": "source_checks/exact_two_body_direct_loader_composition_check/REVIEW.md",
+      "sha256": "41a080068c63261491aeaa04b9c4b397fb31de03f160724be0024b81020e73f6",
+      "proof_dependency": true,
+      "status": "Full ROOT read and scoped selective check accepted; historical pending flags preserved",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_two_body_direct_loader_composition_check/REVIEW.md",
+      "bytes": 14485
+    },
+    {
+      "path": "exact_loader_structured_coefficients/PROPOSAL.md",
+      "destination": "source_checks/exact_loader_structured_coefficients/PROPOSAL.md",
+      "sha256": "515c9e17df0a0c12e7df0dab6431015348af4140cef69189d334cd3574ea3de2",
+      "proof_dependency": true,
+      "status": "Full ROOT read and scoped selective check accepted; historical pending flags preserved",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_loader_structured_coefficients/PROPOSAL.md",
+      "bytes": 23193
+    },
+    {
+      "path": "exact_loader_structured_coefficients_check/REVIEW.md",
+      "destination": "source_checks/exact_loader_structured_coefficients_check/REVIEW.md",
+      "sha256": "273da0a0d28269e6e40aff0695f5465456acd35abe4c0b4eddc1acf0578334c8",
+      "proof_dependency": true,
+      "status": "Full ROOT read and scoped selective check accepted; historical pending flags preserved",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_loader_structured_coefficients_check/REVIEW.md",
+      "bytes": 13688
+    },
+    {
+      "path": "exact_engineered_clock_operation/PROPOSAL.md",
+      "destination": "source_checks/exact_engineered_clock_operation/PROPOSAL.md",
+      "sha256": "b8bbfb7d40c491aff6b893df6423b98e68edad91ef6596124dac10f3620c53f8",
+      "proof_dependency": true,
+      "status": "Full ROOT read and scoped selective check accepted; historical pending flags preserved",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_engineered_clock_operation/PROPOSAL.md",
+      "bytes": 11631
+    },
+    {
+      "path": "exact_engineered_clock_operation_check/REVIEW.md",
+      "destination": "source_checks/exact_engineered_clock_operation_check/REVIEW.md",
+      "sha256": "8351f91d29bbb570f8e9970962c2e0e24ea0db8dd06744d2180df761eae9272a",
+      "proof_dependency": true,
+      "status": "Full ROOT read and scoped selective check accepted; historical pending flags preserved",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_engineered_clock_operation_check/REVIEW.md",
+      "bytes": 15460
+    },
+    {
+      "path": "exact_engineered_clock_dwell_tradeoff/PROPOSAL.md",
+      "destination": "source_checks/exact_engineered_clock_dwell_tradeoff/PROPOSAL.md",
+      "sha256": "d739d552cc04424cb659f4107174d1dbe04756c0409704437176364aba0e0c25",
+      "proof_dependency": true,
+      "status": "Full ROOT read and scoped selective check accepted; historical pending flags preserved",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_engineered_clock_dwell_tradeoff/PROPOSAL.md",
+      "bytes": 13645
+    },
+    {
+      "path": "exact_engineered_clock_dwell_tradeoff_check/REVIEW.md",
+      "destination": "source_checks/exact_engineered_clock_dwell_tradeoff_check/REVIEW.md",
+      "sha256": "7db9b3a4aaa62a0ae9e7c665a9767cc2ee5d65ee6f75960e97a8834648d48f46",
+      "proof_dependency": true,
+      "status": "Full ROOT read and scoped selective check accepted; historical pending flags preserved",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_engineered_clock_dwell_tradeoff_check/REVIEW.md",
+      "bytes": 5655
+    }
+  ],
+  "note_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_loader_publication/NOTE.md",
+      "destination": "docs/EXACT_TWO_BODY_ENGINEERED_LOADER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "43558ea59ebee23bf539d27ba1818a06b914fff52bb87d251b959b4889f3b868"
+    }
+  ],
+  "provenance": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_loader_publication/INTEGRATION_RECORD.md",
+      "destination": "INTEGRATION_RECORD.md",
+      "sha256": "135913fd30a03f6d6bb811d12152d5a38cb057a87b9e6eaf09deb3caa4548627"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_loader_publication/AUTHOR_NOTE.md",
+      "destination": "AUTHOR_NOTE.md",
+      "sha256": "0c01822cd7168a7cfd1987d79549ebdad6ef1796f58a5e353360b65b45fb0b92"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/exact_loader_publication/PUBLICATION_CHECK.md",
+      "destination": "PUBLICATION_CHECK.md",
+      "sha256": "936473983a67998f0b6ef3ae4d3d9af152ce06fde37322cb8bcc307f0756b2fe"
+    }
+  ],
+  "path_resolution": "Source-relative argument/check paths resolve through the exact files destination mappings in this packet. The six complete pairs carry the new proof chain. Git ancestry on PR9734 is genealogical; no earlier approximate scattering or finite-runtime theorem is imported.",
+  "limits": [
+    "Supplied exact coefficients, correlated arms and rails, endpoint coherence and blank apparatus; no native coefficient or preparation derivation.",
+    "Ordinary freely degenerate Q/P, blank R, passive references. No active historical processor or environmental capture theorem.",
+    "Complete finite-window operation with common phase and all outputs; exact current-record branch differs from external arrival and irreversible halt. Finite recurrence remains.",
+    "Known engineered spin-transfer mechanism attributed to Christandl et al. 2004. New loader adaptation and estimates selectively checked with shared same-model source exposure, not blind replication or retained audit."
+  ]
+}

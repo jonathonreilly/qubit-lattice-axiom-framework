@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "manifest_sha256": "cbf98858ecf01dcc626eb245d6d8a65e0c91e7adaf9ac8fca108c59d72a4112f",
+  "files": 12,
+  "provenance": 3,
+  "links": 13,
+  "nodes": 7265,
+  "edges": 16259,
+  "new_nodes": {
+    "exact_two_body_engineered_loader_bounded_theorem_note_2026-10-18": {
+      "path": "docs/EXACT_TWO_BODY_ENGINEERED_LOADER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "deps": []
+    }
+  },
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical source identity, provenance, links and topology only; no scientific execution or retained audit. New note dependencies require ROOT inspection."
+}

@@ -1,0 +1,87 @@
+
+=== Part R: ruler-background scalar relabelling (position space, central difference, exact) ===
+[PASS] R1_closure_L3  [V_i, V_j] = C_ij^e V_e exactly, C_ij^j = Delta_ji g_i/g_j, C_ij^i = -Delta_ij g_j/g_i, g = 1 + Delta u (rational structure functions on the T-invariant open set g_x != 0)
+[PASS] R2_fielddep_L3  some C_ij^e has a non-zero u-derivative: (P2) fails, structure functions
+[PASS] R3_cbar_naive_L3  C(0) = naive bracket eta Delta xi - xi Delta eta (field-independent)
+[FAIL] R4_jacobiator_L3  Jac(cbar)_abc^e = sum_cyc d_c C_ab^e(0) for all triples (background velocity V_c(0) = d_c), and Jac(cbar) != 0: the zeroth-order bracket is not a Lie algebra
+[PASS] R5_adD_L3  [D, V_eta](0) = V_(-Delta eta)(0): ad_D at the background is -Delta (0.2s)
+[PASS] R1_closure_L4  [V_i, V_j] = C_ij^e V_e exactly, C_ij^j = Delta_ji g_i/g_j, C_ij^i = -Delta_ij g_j/g_i, g = 1 + Delta u (rational structure functions on the T-invariant open set g_x != 0)
+[PASS] R2_fielddep_L4  some C_ij^e has a non-zero u-derivative: (P2) fails, structure functions
+[PASS] R3_cbar_naive_L4  C(0) = naive bracket eta Delta xi - xi Delta eta (field-independent)
+[PASS] R4_jacobiator_L4  Jac(cbar)_abc^e = sum_cyc d_c C_ab^e(0) for all triples (background velocity V_c(0) = d_c), and Jac(cbar) != 0: the zeroth-order bracket is not a Lie algebra
+[PASS] R5_adD_L4  [D, V_eta](0) = V_(-Delta eta)(0): ad_D at the background is -Delta (0.2s)
+[PASS] R1_closure_L5  [V_i, V_j] = C_ij^e V_e exactly, C_ij^j = Delta_ji g_i/g_j, C_ij^i = -Delta_ij g_j/g_i, g = 1 + Delta u (rational structure functions on the T-invariant open set g_x != 0)
+[PASS] R2_fielddep_L5  some C_ij^e has a non-zero u-derivative: (P2) fails, structure functions
+[PASS] R3_cbar_naive_L5  C(0) = naive bracket eta Delta xi - xi Delta eta (field-independent)
+[PASS] R4_jacobiator_L5  Jac(cbar)_abc^e = sum_cyc d_c C_ab^e(0) for all triples (background velocity V_c(0) = d_c), and Jac(cbar) != 0: the zeroth-order bracket is not a Lie algebra
+[PASS] R5_adD_L5  [D, V_eta](0) = V_(-Delta eta)(0): ad_D at the background is -Delta (0.3s)
+[PASS] R1_closure_L6  [V_i, V_j] = C_ij^e V_e exactly, C_ij^j = Delta_ji g_i/g_j, C_ij^i = -Delta_ij g_j/g_i, g = 1 + Delta u (rational structure functions on the T-invariant open set g_x != 0)
+[PASS] R2_fielddep_L6  some C_ij^e has a non-zero u-derivative: (P2) fails, structure functions
+[PASS] R3_cbar_naive_L6  C(0) = naive bracket eta Delta xi - xi Delta eta (field-independent)
+[PASS] R4_jacobiator_L6  Jac(cbar)_abc^e = sum_cyc d_c C_ab^e(0) for all triples (background velocity V_c(0) = d_c), and Jac(cbar) != 0: the zeroth-order bracket is not a Lie algebra
+[PASS] R5_adD_L6  [D, V_eta](0) = V_(-Delta eta)(0): ad_D at the background is -Delta (0.5s)
+[PASS] R1_closure_L7  [V_i, V_j] = C_ij^e V_e exactly, C_ij^j = Delta_ji g_i/g_j, C_ij^i = -Delta_ij g_j/g_i, g = 1 + Delta u (rational structure functions on the T-invariant open set g_x != 0)
+[PASS] R2_fielddep_L7  some C_ij^e has a non-zero u-derivative: (P2) fails, structure functions
+[PASS] R3_cbar_naive_L7  C(0) = naive bracket eta Delta xi - xi Delta eta (field-independent)
+[PASS] R4_jacobiator_L7  Jac(cbar)_abc^e = sum_cyc d_c C_ab^e(0) for all triples (background velocity V_c(0) = d_c), and Jac(cbar) != 0: the zeroth-order bracket is not a Lie algebra
+[PASS] R5_adD_L7  [D, V_eta](0) = V_(-Delta eta)(0): ad_D at the background is -Delta (0.8s)
+[PASS] R6_spectrum_L3  Delta e_n = lambda_n e_n, Lam_n = -lambda_n; (S): Lam_1 != 0 and cbar(1,-1) = lambda_1 - lambda_-1 != 0; Lam_2 = (w + 1/w) Lam_1 in QQ[w]/Phi_L
+[PASS] R6_spectrum_L4  Delta e_n = lambda_n e_n, Lam_n = -lambda_n; (S): Lam_1 != 0 and cbar(1,-1) = lambda_1 - lambda_-1 != 0; Lam_2 = (w + 1/w) Lam_1 in QQ[w]/Phi_L
+[PASS] R6_spectrum_L5  Delta e_n = lambda_n e_n, Lam_n = -lambda_n; (S): Lam_1 != 0 and cbar(1,-1) = lambda_1 - lambda_-1 != 0; Lam_2 = (w + 1/w) Lam_1 in QQ[w]/Phi_L
+[PASS] R6_spectrum_L6  Delta e_n = lambda_n e_n, Lam_n = -lambda_n; (S): Lam_1 != 0 and cbar(1,-1) = lambda_1 - lambda_-1 != 0; Lam_2 = (w + 1/w) Lam_1 in QQ[w]/Phi_L
+[PASS] R6_spectrum_L7  Delta e_n = lambda_n e_n, Lam_n = -lambda_n; (S): Lam_1 != 0 and cbar(1,-1) = lambda_1 - lambda_-1 != 0; Lam_2 = (w + 1/w) Lam_1 in QQ[w]/Phi_L
+[PASS] R6_spectrum_L8  Delta e_n = lambda_n e_n, Lam_n = -lambda_n; (S): Lam_1 != 0 and cbar(1,-1) = lambda_1 - lambda_-1 != 0; Lam_2 = (w + 1/w) Lam_1 in QQ[w]/Phi_L
+[PASS] R6_spectrum_L9  Delta e_n = lambda_n e_n, Lam_n = -lambda_n; (S): Lam_1 != 0 and cbar(1,-1) = lambda_1 - lambda_-1 != 0; Lam_2 = (w + 1/w) Lam_1 in QQ[w]/Phi_L
+[PASS] R6_spectrum_L10  Delta e_n = lambda_n e_n, Lam_n = -lambda_n; (S): Lam_1 != 0 and cbar(1,-1) = lambda_1 - lambda_-1 != 0; Lam_2 = (w + 1/w) Lam_1 in QQ[w]/Phi_L
+[PASS] R6_spectrum_L11  Delta e_n = lambda_n e_n, Lam_n = -lambda_n; (S): Lam_1 != 0 and cbar(1,-1) = lambda_1 - lambda_-1 != 0; Lam_2 = (w + 1/w) Lam_1 in QQ[w]/Phi_L
+[PASS] R6_spectrum_L12  Delta e_n = lambda_n e_n, Lam_n = -lambda_n; (S): Lam_1 != 0 and cbar(1,-1) = lambda_1 - lambda_-1 != 0; Lam_2 = (w + 1/w) Lam_1 in QQ[w]/Phi_L
+[PASS] F_R7_ratio_positive  Lam_2/Lam_1 = 2cos(2pi/L) > 0 for L = 5..40 (arc lemma would force <= 0), L=6: 1.0, L=40: 1.9753767; L = 4 gives 0 (inside the arc set)
+
+=== Part M: momentum coordinates, symbolic symbol lambda_k, and SLAC (exact) ===
+[PASS] M1_cbar_L3  generic symbol lambda (lambda_0 = 0): C(0) graded, cbar(a,b) = lambda_a - lambda_b, so Lam_n = cbar(0,n) = -lambda_n for EVERY symbol
+[PASS] M2_jacobiator_L3  Jac(cbar) = sum_cyc d_c C_ab^(a+b+c)(0) as polynomials in lambda, Jac(cbar) not identically 0 (0.1s)
+[PASS] M1_cbar_L4  generic symbol lambda (lambda_0 = 0): C(0) graded, cbar(a,b) = lambda_a - lambda_b, so Lam_n = cbar(0,n) = -lambda_n for EVERY symbol
+[PASS] M2_jacobiator_L4  Jac(cbar) = sum_cyc d_c C_ab^(a+b+c)(0) as polynomials in lambda, Jac(cbar) not identically 0 (0.2s)
+[PASS] M1_cbar_L5  generic symbol lambda (lambda_0 = 0): C(0) graded, cbar(a,b) = lambda_a - lambda_b, so Lam_n = cbar(0,n) = -lambda_n for EVERY symbol
+[PASS] M2_jacobiator_L5  Jac(cbar) = sum_cyc d_c C_ab^(a+b+c)(0) as polynomials in lambda, Jac(cbar) not identically 0 (0.6s)
+[PASS] M1_cbar_L6  generic symbol lambda (lambda_0 = 0): C(0) graded, cbar(a,b) = lambda_a - lambda_b, so Lam_n = cbar(0,n) = -lambda_n for EVERY symbol
+[PASS] M2_jacobiator_L6  Jac(cbar) = sum_cyc d_c C_ab^(a+b+c)(0) as polynomials in lambda, Jac(cbar) not identically 0 (1.6s)
+[PASS] M3_SLAC_L5  SLAC ruler model: Lam_n = nbar Lam_1 for all n (Lam_1 = -1), cbar(1,-1) = 2 != 0, exact closure with structure functions, Jac(cbar) != 0 compensated by first-order terms (0.5s)
+[PASS] M3_SLAC_L7  SLAC ruler model: Lam_n = nbar Lam_1 for all n (Lam_1 = -1), cbar(1,-1) = 2 != 0, exact closure with structure functions, Jac(cbar) != 0 compensated by first-order terms (3.1s)
+[PASS] M4_fullJacobi_L4  sum_cyc (C_ab^d C_dc^e - V_c(C_ab^e)) = 0 exactly at 2 random rational points (the sign convention of the derivative term) (0.7s)
+[PASS] M4_fullJacobi_L5  sum_cyc (C_ab^d C_dc^e - V_c(C_ab^e)) = 0 exactly at 2 random rational points (the sign convention of the derivative term) (2.0s)
+[PASS] M5_forward_breaks_step1  forward difference (lambda_k = w^k - 1): Lam_1 + Lam_-1 = 2 - w - 1/w != 0 in QQ[w]/Phi_L, L = 3..9: with structure functions even the first step of the arc lemma is not forced
+
+=== Part X: every graded antisymmetric cbar is C(0) of a T-covariant frame (exact) ===
+[PASS] X1_L4  random rational cbar with Lam_1 = 1, Lam_2 = 2 realised: V_a = d_a - (1/2) sum_k cbar(a,k) u_k d_(a+k) has C(0) = cbar exactly; Jacobiator identity holds (Jac(cbar) != 0: True) (0.2s)
+[PASS] X1_L5  random rational cbar with Lam_1 = 1, Lam_2 = 2 realised: V_a = d_a - (1/2) sum_k cbar(a,k) u_k d_(a+k) has C(0) = cbar exactly; Jacobiator identity holds (Jac(cbar) != 0: True) (0.6s)
+[PASS] X1_L6  random rational cbar with Lam_1 = 1, Lam_2 = 2 realised: V_a = d_a - (1/2) sum_k cbar(a,k) u_k d_(a+k) has C(0) = cbar exactly; Jacobiator identity holds (Jac(cbar) != 0: True) (1.4s)
+
+=== Part P: Poisson form X_a = <p, V_a>: lowest order abelian, cbar one order up (exact) ===
+[PASS] P1_L5  lowest-order generators X^(1)_a = p_a Poisson-commute (abelian: (S) fails at that order); degree-1 part of {X_a, X_b} = -cbar(a,b) p_(a+b); {X_a, X_b} = -C_ab^e(u) X_e at a rational point
+[PASS] P1_L7  lowest-order generators X^(1)_a = p_a Poisson-commute (abelian: (S) fails at that order); degree-1 part of {X_a, X_b} = -cbar(a,b) p_(a+b); {X_a, X_b} = -C_ab^e(u) X_e at a rational point
+
+=== Part H: fixed point / homogeneity, and the gap version of the arc lemma (exact) ===
+[PASS] H1_L3  linear scalar relabelling at the common zero phi = const: brackets leave the constant span (rank 3 -> 5); C_10^0 = Delta_01 (Delta phi)_1/(Delta phi)_0 takes values -2/3 and 3/2 on two rays: degree-0 homogeneous, no continuous value at phi = 0
+[PASS] H1_L4  linear scalar relabelling at the common zero phi = const: brackets leave the constant span (rank 4 -> 7); C_10^0 = Delta_01 (Delta phi)_1/(Delta phi)_0 takes values -1/4 and -1/2 on two rays: degree-0 homogeneous, no continuous value at phi = 0
+[PASS] H1_L5  linear scalar relabelling at the common zero phi = const: brackets leave the constant span (rank 5 -> 10); C_10^0 = Delta_01 (Delta phi)_1/(Delta phi)_0 takes values -2/15 and -3/4 on two rays: degree-0 homogeneous, no continuous value at phi = 0
+[PASS] H1_L6  linear scalar relabelling at the common zero phi = const: brackets leave the constant span (rank 6 -> 12); C_10^0 = Delta_01 (Delta phi)_1/(Delta phi)_0 takes values -1/12 and -1/4 on two rays: degree-0 homogeneous, no continuous value at phi = 0
+[PASS] H2_gap_L6_S01245  support [0, 1, 2, 4, 5]: consistent Lam_2/Lam_1 on an 8-point grid = ['0'] = gap-arc prediction ['0'] (0.0s)
+[PASS] H2_gap_L7_S012456  support [0, 1, 2, 4, 5, 6]: consistent Lam_2/Lam_1 on an 8-point grid = ['0'] = gap-arc prediction ['0'] (0.0s)
+[PASS] H2_gap_L7_S012356  support [0, 1, 2, 3, 5, 6]: consistent Lam_2/Lam_1 on an 8-point grid = ['-1/2', '0'] = gap-arc prediction ['-1/2', '0'] (0.1s)
+[PASS] H2_gap_L8_S0123567  support [0, 1, 2, 3, 5, 6, 7]: consistent Lam_2/Lam_1 on an 8-point grid = ['-1/2', '0'] = gap-arc prediction ['-1/2', '0'] (0.4s)
+
+=== Part E: enlarged generator sets (exact) ===
+[PASS] E1_L5  sl2 |x V_4: exact Jacobi over all triples, momentum-graded, dims g_0 = g_+-1 = 2, others 1; (S'): [E, F] = 2D; Lam_n = nbar Lam_1 for EVERY n; span G is not closed ([F, X_2] in the extra generator at momentum 1)
+[PASS] E1_L7  sl2 |x V_6: exact Jacobi over all triples, momentum-graded, dims g_0 = g_+-1 = 2, others 1; (S'): [E, F] = 2D; Lam_n = nbar Lam_1 for EVERY n; span G is not closed ([F, X_2] in the extra generator at momentum 1)
+[PASS] E1_L9  sl2 |x V_8: exact Jacobi over all triples, momentum-graded, dims g_0 = g_+-1 = 2, others 1; (S'): [E, F] = 2D; Lam_n = nbar Lam_1 for EVERY n; span G is not closed ([F, X_2] in the extra generator at momentum 1)
+[PASS] E2_L5  D |x Heisenberg (one extra central generator Z): exact Jacobi; Lam_n = nbar for all n; [X_1, X_-1] = Z != 0 (literal (S)) but not proportional to D (fails (S'))
+[PASS] E2_L7  D |x Heisenberg (one extra central generator Z): exact Jacobi; Lam_n = nbar for all n; [X_1, X_-1] = Z != 0 (literal (S)) but not proportional to D (fails (S'))
+[PASS] E2_L9  D |x Heisenberg (one extra central generator Z): exact Jacobi; Lam_n = nbar for all n; [X_1, X_-1] = Z != 0 (literal (S)) but not proportional to D (fails (S'))
+[PASS] E3_L5_0_lam2_2  extra at 0 only: (S') + Lam_2 = 2 + Jacobi -> Groebner basis [1] (14 vars, 0.0s)
+[PASS] E3_L5_0_1_lam2_2  extras at 0, 1: (S') + Lam_2 = 2 + Jacobi -> Groebner basis [1] (25 vars, 27.1s)
+[PASS] E3_L5_1_4_lam2_2  extras at +-1: (S') + Lam_2 = 2 + Jacobi -> Groebner basis [1] (24 vars, 23.5s)
+[PASS] E3_L5_0_lam2_1/3  extra at 0, Lam_2 = 1/3 (cor. (i)): (S') + Lam_2 = 1/3 + Jacobi -> Groebner basis [1] (14 vars, 0.0s)
+[PASS] E3_control_L5  the same equation generator is satisfied exactly by sl2 |x V_4 with extras at 0, +-1 and Lam_2 = 2 (so the [1] results are not generator artefacts)
+
+TOTAL: PASS=72 FAIL=1  (69.3s)

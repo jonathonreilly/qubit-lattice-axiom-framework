@@ -1,6 +1,6 @@
 # C2 findings: does constraint closure fix the seagull, and so the induced 1/G?
 
-Provenance: a worker of the same model family; not yet checked. Saved by the supervisor from the hand-back.
+Provenance: a worker of the same model family. Checked by a fresh-context same-family agent (`../C2_check/REPORT.md`, PASS=13): confirmed, and its corrections are applied below. Saved by the supervisor from the hand-back.
 
 | Runner | Method | Result |
 |---|---|---|
@@ -11,9 +11,10 @@ Provenance: a worker of the same model family; not yet checked. Saved by the sup
 The lattice FAIL is a preset convergence threshold of 1e−6 against measured values of 7e−6 and 1.4e−6. The effects reported are O(0.1–1), so it does not matter. Bug logs are kept for the first S4 ansatz. The L5 normalisation fix is explained in a code comment.
 
 **Answer.**
-- In the continuum, closure fixes the seagull given the h-linear coupling. With B14's no-P-mixing form, it is the minimal covariant seagull.
+- In the continuum, within the ≤ 2-derivative ansatz, closure fixes the seagull given the h-linear coupling. With B14's no-P-mixing form, it is the minimal covariant seagull.
 - That seagull is **not** what restores the 06-08 bubble's Ward identity. Ward at K² is a property of the regulator and measure.
-- On the lattice, closure fixes the coupling only up to O(a²), and the O(a²) placement freedom controls exactly the K² contact. So **closure cannot fix the induced 1/G on the lattice.**
+- **Closure cannot fix the induced 1/G, at any order (check).** The robust reason: covariant dim-6 couplings such as (c6 a²/2)√g R(∂φ)² are closure- and Ward-compatible, and shift 1/(16πG) by −6c6(aΛ)² × the Sakharov value, which is O(1) on a lattice.
+- On the lattice, in addition, the O(a²) placement freedom (equivalently, re-identifying h → h + O(a²∂h∂h)) controls the K² contact.
 
 ## 1. Continuum closure
 
@@ -36,10 +37,10 @@ The lattice FAIL is a preset convergence threshold of 1e−6 against measured va
 - **P2 (exact).** A covariant proper-time regulator on Δ_g + ζR gives
   W⁽²⁾ = −Λ⁴/(64π²)[√g]⁽²⁾ − (1/6 − ζ)Λ²/(32π²)[√gR]⁽²⁾ + O(k⁴),
   and Ward holds. Here the K² contacts come from the measure factor in the regulator.
-- **P4.** Proper time on the flat-measure Hessian gives a Ward ratio of 0.76. So Ward depends on the regulator and measure.
+- **P4.** Proper time on the flat-measure Hessian gives a Ward ratio of 0.76; the check finds it breaks Ward already at k⁰. So Ward depends on the regulator and measure.
 - **Induced 1/G (continuum, covariant regulator).** 1/(16πG) = (1 − 6ζ)Λ²/(192π²) per real scalar, the textbook heat-kernel value. ζ = 0 gives 1/G = Λ²/(12π), and conformal coupling gives zero.
-- **Lattice ⟨φ²⟩ estimate only:** G ≈ 1.5–1.6 a² per minimally coupled scalar.
-- **Remaining premises:** the regulator, ζ/frame, and the fermion covariant operators a·√gRψ̄ψ, whose 1/a³ tadpole enters at O(Λ²) when ma = O(1) (argued).
+- **Lattice ⟨φ²⟩ estimate only, a heuristic:** G ≈ 1.54 a² (m → 0), 1.64 a² (m = 0.5), 1.88 a² (m = 1) per minimally coupled scalar. The convention-free form is 1/(16πG) = (1/6 − ζ)⟨φ²⟩/2.
+- **Remaining premises:** the regulator; ζ/frame; and the absence of covariant dim-6 couplings, scalar (check) and fermion a·√gRψ̄ψ (argued).
 
 ## 3. Lattice
 
@@ -54,7 +55,8 @@ There are three transcriptions of the closure-forced coupling: S (site-local), M
 - M1 and M2 differ only by O(a²) leg placement, yet their K² symbols differ by 3.36 and the EH projection changes sign.
 - That difference is exactly the a²Λ⁴ placement tadpole (residual 7e−8).
 - No placement interpolation restores Ward; the best ratio is 0.85.
-- **Reading:** 1/G_ind is power-divergent, so it depends on vertex functions at p ~ π/a. Closure, which holds only up to O(a²), cannot fix it.
+- **Reading:** the Ward ratio and c_EH depend on identifying site-h as the metric (check reframing). M1 = M2 after h → h + Q(h,h), and with a nonzero tadpole such a re-identification adds any hypercubic form. 1/G_ind is power-divergent and is not fixed by closure, which in any case holds only up to O(a²) (B14 E5).
+- **What could fix it:** the complete microscopic lattice action; spectral sum rules (boson–fermion cancellation of the tadpoles); or a perfect-action principle, which depends on the blocking kernel.
 - **B4b's 9-dimensional seagull space (interpretation):** 8 non-covariant placement directions that closure does not see, plus 1 covariant EH direction.
 
 ## Derived vs supplied
@@ -73,5 +75,6 @@ There are three transcriptions of the closure-forced coupling: S (site-local), M
 - Sakharov 1967; Visser 2002; Adler 1982; Zee 1981; Frolov–Fursaev–Zelnikov.
 - DeWitt and Gilkey heat-kernel coefficients.
 - Deser 1970; Gupta; Kraichnan; Feynman; Weinberg 1964–65.
-- HKT; Flanagan 2004 (frames).
+- HKT; Flanagan 2004 (frames); Teitelboim 1973; Kuchař.
+- Dittrich 2008; Bahr–Dittrich 2009; Gambini–Pullin; Jacobson (UV sensitivity of induced G); EFT field-redefinition shifts.
 - Pauli–Villars Ward cures; lattice power-divergent mixing.

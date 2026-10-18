@@ -244,3 +244,24 @@ proofs: the K_1 route and the Toeplitz/Pic route. No claim is incorrect. The one
 qualification: what the note establishes is "no finite-range translation-invariant single-particle walk has W3 ≠ 0",
 not a statement about chirality inside band subspaces. Provenance: both reviewer passes were Claude Opus 5.5 instances
 of the same family as the worker, not cross-model or human review.
+
+## Correction confirmation (finishing reviewer, after the author's "Review dispositions")
+
+I read the complete corrected NOTE.md (309 lines) and checked each §7 finding against it.
+
+| Finding | Status in NOTE.md |
+|---|---|
+| Medium scope ("net chirality needs infinite range") | **Resolved.** The Answer paragraph now restricts the claim to the total W3 of the step and states that band-subspace chirality in multiband walks is not covered (cf. Sun et al. 2018). |
+| Scalar-phase coefficient 3 → 1 | **Resolved** (§2: `tr(B^3) + α∧tr(B∧B)`). |
+| Claim N hypotheses | **Resolved.** The headline row states det U constant and ±1 regular values. |
+| Dubail–Read wording | **Resolved** ("cf." in §5 Remark (c) and §9). |
+| Range-2 defect numbers | **Resolved.** 1.82e-6 is labelled a grid estimate, with 1.99e-6 sup and 1.63e-6 continuation, eps_2 ≲ 1.6e-6; these match `r4_defect_floor.log`. |
+| Second proof of K | **Resolved.** Cited in §10 N7 and §11, described correctly, including the c_1∘ind = −W3 normalisation on K^1(T^3) ≅ Z^4. |
+| HNU comparison (H) | Left open, as agreed (low). |
+
+**No new defects found.** Theorem K, its proof, and claims A, C, D, E, H and Q are unchanged and remain correct.
+Two optional nits, neither blocking:
+- The status line says "Independently reviewed". It discloses the same-model provenance right after, but "Reviewed (same model family)" would be more exact.
+- The §11 sketch still says "free by Swan–Quillen–Suslin". The update correctly notes that only Pic = 0 is needed.
+
+**Final verdict: READY.**

@@ -366,3 +366,10 @@ Whole-column block final scoped review PASS. Native many-spin light quasimodes a
 
 
 Native column readout block: root derives leading static cornerformfactor and contrast3Delta4/(JsqrtV), plus exactmarkedCatalan winding source coefficientA_L=6(L-1)(L-2)/(2L-3). Realnativeconnection checked. A regularenergyproportionaloperator ansatz fails because static andwinding ratiosdiffer. Independentchecks/finalreviewPASS after correcting finiteordererrorcondition; replay1.361371sPASS. Noempiricalidentification. Nextrootconstructive fixedbox lightwindow: groundmixchangesvertex to(b-a)K; originalsourceweightpositive atgap~lambda4, orderlambda2L. Independentmath/physicalchecksPASS, canonicalproofnext. NoisolatedpoleorgrowingLuniformity.
+
+
+## 2026-10-18T14:15:22.602822+00:00 light-window checkpoint
+PR9786 wholecolumn modes OPEN51716d735411c9e9f7bd77c2b40abf0442d94ecf andPR9787 native columnreadout OPEN18784f7d4d3d77dc2785beaecbbf1fb3b964a8c1 verified; attachmentcap100persists. Source staticcornerformfactor andmarkedCatalan windingcoupling checked, replay1.361371sPASS. Root actualfixedboxlightwindow derivespositive originalsourceweight 2gamma²/(J²L)(A/2-3)² atgapJLlambda4/16 foranyactualground; momentumformfactorandnonzeroQzexactdarkness checked. Independent/finalreviewPASS; replay.838859sPASS. Graphbuild71456active, packagingnext. Root next four-layer nativeeffectiveinteracting model K=-4sumP-5sumXX, sourceO=3K-3sumXX, nofreecoupling; independentcoefficientcheckPASS. RootderivingPFglobalgroundsector andcollectiveresponseonmanycolumnlattices. Allmodeldevelopment, noempiricaltest; deadlineunchanged.
+
+
+Actualfixedbox lightwindow complete: noaddedinteraction orsourcecoupling; everyactualground has derivedpositiveoriginalreadoutweight atDelta4=JLlambda4/16, coefficient includes(b-a) groundmixsubtraction. Momentumkernel andexactnonzeroQz lowdarkness checked. Independent/finalPASS; replay.838859sPASS. Traceupstreamsupport, noempiricalscalar/pole. Rootnext four-layer nativeinteracting coefficient K=-4sumP-5sumXX withoriginalO=3K-3sumXX; PFglobalgroundsector checked, R3-R5numericalresponse probes showpositivecoupling butboundaryvsbulk unresolved.

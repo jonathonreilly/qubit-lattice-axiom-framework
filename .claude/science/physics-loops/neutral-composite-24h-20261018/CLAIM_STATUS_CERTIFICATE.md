@@ -175,3 +175,6 @@ Polynomial-grid neutral pole derived: secondlocalbad-plaquette normalform givesu
 
 
 Q8 block: actual_current_surface_status conditional-support; trace_class upstream_support; proposal_allowed false; bare_retained_allowed false; audit_required_before_effective_retained true. Local review pass with source binding corrected; no universal scalar or TOE closure.
+
+
+Isotropic boundfeature: actual_current_surface_status conditional-support; proposal_allowed false; bare_retained_allowed false; audit_required_before_effective_retained true; local review pass. No3D or empiricalscalar claim.

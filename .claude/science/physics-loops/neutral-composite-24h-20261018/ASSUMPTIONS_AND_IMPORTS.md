@@ -127,3 +127,6 @@ Polynomial-grid block retires the logarithmic transverse-grid restriction by fin
 
 
 Q8 block: no binding potential or scalar coupling supplied; both computed from native processes. FixedL10, weak anisotropy, positive plane fibre, periodic geometry, original measurement choice and physical units remain premises. No empirical test.
+
+
+Isotropic boundfeature removes the p<2 restriction from lowenergywall embedding and derives orientationselection; fixedheight and globalgroundcharacter were not thereby derived. Finiteorderconstants depend on fixedp; no fixedlambda infinitevolume claim.

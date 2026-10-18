@@ -175,3 +175,6 @@ Polynomial-grid neutral pole derived: secondlocalbad-plaquette normalform givesu
 
 
 Q8 block: trace_class upstream_support; source_of_blocker_text user_goal; target_blocker_text "large feature scalar mode and coupling without adding interaction"; reachability_to_target partially_closes; artifact_role theorem; next_trace_action derive orientation mixing and remove state/geometry premises.
+
+
+Isotropic boundfeature: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem; next_trace_action remove globalgroundsector premise using exactreflection method.

@@ -71,3 +71,7 @@
   - C10 is in the note, marked unchecked; its check is running.
   - Also running: a third coherence pass on the scale-ladder note (writes into wt-9702), and an agent drafting the C11 lane note in wt-lanes.
   - Then: commit and review the lane note, integrate the C10 check, give the final summary before 23:26Z, and release the lock.
+- **19:55Z.** The C10 check is done: 62 PASS, with 1 FAIL on the checker's own degenerate test point. Scope corrections are applied, and the scale-ladder note marks C10 as checked.
+  - The third coherence pass is committed in PR #9702.
+  - The C11 lane note and its self-contained runner (PASS=42) are drafted in wt-lanes and staged, not committed. A fresh-context review is running.
+  - Then: commit the lane note into PR #9718, give the final summary, and release the lock.

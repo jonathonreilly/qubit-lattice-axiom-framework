@@ -123,3 +123,16 @@ B6 exact ED of the supplied ring model; J = 1; V list [1.0, 0.9, 0.5, 0.0, -1.0]
 [PASS] 2x2x3: at every q != 0 the 3-orientation block has exactly one nonzero (co-exact) value per real Fourier pair
 --- 2x2x4: zero-winding sector 1552024 states, 49 components, vacuum component 1551976
 [PASS] 2x2x4: vacuum component is mapped onto itself by the three unit translations
+  V=+1.00 E0=-0.000000000 gap=0.610074 cg_its=82 res=1.5e-12 |R.exact|=1.7e-12 |R(q,q')|=4.3e-16 chi(o=0,1,2)=[0.21040421, 0.260720049, 0.260720049] (906s)
+     q/pi=[0.0, 0.0, 0.0] eig=[0.21040421, 0.260720049, 0.260720049]
+     q/pi=[0.0, 0.0, 0.5] eig=[0.0, 0.0, 0.0, 0.0, 0.210913523, 0.210913523]
+     q/pi=[0.0, 0.0, 1.0] eig=[0.0, 0.0, 0.21113292]
+     q/pi=[0.0, 1.0, 0.0] eig=[0.0, 0.0, 0.275737149]
+     q/pi=[0.0, 1.0, 0.5] eig=[0.0, 0.0, 0.0, 0.0, 0.24440117, 0.24440117]
+     q/pi=[0.0, 1.0, 1.0] eig=[0.0, 0.0, 0.232999921]
+     q/pi=[1.0, 0.0, 0.0] eig=[0.0, 0.0, 0.275737149]
+     q/pi=[1.0, 0.0, 0.5] eig=[0.0, 0.0, 0.0, 0.0, 0.24440117, 0.24440117]
+     q/pi=[1.0, 0.0, 1.0] eig=[0.0, 0.0, 0.232999921]
+     q/pi=[1.0, 1.0, 0.0] eig=[0.0, 0.0, 0.289121316]
+     q/pi=[1.0, 1.0, 0.5] eig=[0.0, 0.0, 0.0, 0.0, 0.273614239, 0.273614239]
+     q/pi=[1.0, 1.0, 1.0] eig=[0.0, 0.0, 0.265744456]

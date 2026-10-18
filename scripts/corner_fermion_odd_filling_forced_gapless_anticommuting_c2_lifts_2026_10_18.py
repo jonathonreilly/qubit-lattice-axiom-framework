@@ -274,7 +274,7 @@ def main():
           nshift == 21 and fo_ok, f"shifted {nshift}; fixed {sorted(tuple(np.round(wrap(k)/np.pi, 3)) for k in FO)}")
 
     # ------------------------------------------------------------ B
-    print("\nB. global anticommutation of commuting-C2 lifts")
+    print("\nB. global anticommutation of commuting-C2 lifts" + f"   [{time.time() - t0:.0f} s elapsed]")
     c2s = [g for g in PROPER if round(np.trace(OH[g])) == -1]
     pairs = [(a, b) for a, b in itertools.combinations(c2s, 2) if (OH[a] @ OH[b] == OH[b] @ OH[a]).all()]
     vpart_ok = all((((lam[b] + OH[b].T @ lam[a]) - (lam[a] + OH[a].T @ lam[b])) % 2 == 0).all() for a, b in pairs)
@@ -297,7 +297,7 @@ def main():
     check("on the L = 4 torus the 768 x 768 operators satisfy G_a G_b = -G_b G_a for all 12 pairs", okB)
 
     # ------------------------------------------------------------ C
-    print("\nC. even levels at momenta fixed by both C2s; odd-filling logic")
+    print("\nC. even levels at momenta fixed by both C2s; odd-filling logic" + f"   [{time.time() - t0:.0f} s elapsed]")
     FD2 = fixed(D2)
     pts8 = {tuple(s) for s in itertools.product((0.5, -0.5), repeat=3)}
     check("the momenta fixed by the D2 affine maps (C2x, C2y, C2z) on the N = 24 grid are exactly the 8 points "
@@ -327,7 +327,7 @@ def main():
           "min_k E_{nu+1} - max_k E_nu <= 0: no band gap, no gapped Slater ground state at odd nu", okLogic)
 
     # ------------------------------------------------------------ D
-    print("\nD. insulators at allowed fillings; site irreps")
+    print("\nD. insulators at allowed fillings; site irreps" + f"   [{time.time() - t0:.0f} s elapsed]")
     def site_irreps(idx, seed):
         rr = np.random.default_rng(seed)
         X = rr.normal(size=(12, 12)) + 1j * rr.normal(size=(12, 12)); X = X + X.conj().T
@@ -368,7 +368,7 @@ def main():
           mOh == [4, 4, 4], f"O {mO} (commutant dim {comm_dim(PROPER)}); O_h {mOh} (commutant dim {comm_dim(ALL)})")
 
     # ------------------------------------------------------------ E
-    print("\nE. twisted odd-L tori and the Fock-space (-1)^N relation")
+    print("\nE. twisted odd-L tori and the Fock-space (-1)^N relation" + f"   [{time.time() - t0:.0f} s elapsed]")
     def qp_ops(L, theta):
         """Quasi-periodic states psi(w + L n) = e^{i theta.n} psi(w); operators restricted from the infinite lattice."""
         sites = list(itertools.product(range(L), repeat=3)); si = {v: i for i, v in enumerate(sites)}
@@ -446,7 +446,7 @@ def main():
           odd_ok and even_ctrl, f"ground multiplicities {{N: m}} = { {Nf: res[Nf][1][0] for Nf in res} }")
 
     # ------------------------------------------------------------ F
-    print("\nF. doubled-cell class: dressed O_h about site 0 + even translations")
+    print("\nF. doubled-cell class: dressed O_h about site 0 + even translations" + f"   [{time.time() - t0:.0f} s elapsed]")
     box = np.array(list(itertools.product(range(-2, 3), repeat=3)))
     par = all(np.all(((OH[g] @ box.T).T.sum(1) - box.sum(1)) % 2 == 0) for g in ALL)
     check("every O_h element preserves the parity of x + y + z, so the class maps the even sublattice to itself", par)
@@ -516,10 +516,10 @@ def main():
             w = tuple((x + y) % 4 for x, y in zip(v, tv))
             okP &= np.allclose(conj_mono(pair_big(v), img, np.ones(n4)), pair_big(w))
     check("pair operators P_v^dag = (1/2) sum_ab psi_ab c^dag_{v,a} c^dag_{v,b} on even sites satisfy "
-          "G_g P_v^dag G_g^-1 = chi_g P_{g v}^dag (all 48 g) and T_t P_v^dag T_t^-1 = P_{v+t}^dag (even t) on the "
-          "L = 4 torus: the product state prod_{v even} P_v^dag |0> is symmetric (as a ray) and is a product of "
-          "on-site states, the unique ground state of sum_even (1 - |psi><psi|_v) + sum_odd N_v (gap 1), filling 1 "
-          "per site", okP)
+          "G_g P_v^dag G_g^-1 = chi_g P_{g v}^dag (all 48 g, all 32 even sites) and T_t P_v^dag T_t^-1 = P_{v+t}^dag "
+          "(sampled even t) on the L = 4 torus; hence prod_{v even} P_v^dag |0> is symmetric as a ray (analytic: a "
+          "product of on-site states, unique ground state of sum_even (1 - |psi><psi|_v) + sum_odd N_v, gap 1, "
+          "filling 1 per site)", okP)
     # scoping control: the cube-centre rotations (A2-staggered-mass group) are not in this class
     cc = np.array([0.5, 0.5, 0.5])
     tpar = [int(round(sum(cc - OH[g] @ cc))) % 2 for g in PROPER]

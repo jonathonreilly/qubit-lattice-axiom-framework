@@ -1,0 +1,15 @@
+  t2=0.2 nu=6 nk=4: one-sweep sector E = -11.08371; best uniform -10.30568; corner 1111 -9.84781; t=203s
+  t2=0.2 nu=6 nk=6: one-sweep sector E = -11.08371; best uniform -10.30542; corner 1111 -9.84806; t=218s
+  t2=0.2 nu=6 nk=8: one-sweep sector E = -11.08371; best uniform -10.30565; corner 1111 -9.84810; t=262s
+  fluxes of the found sector: {'square': 0.8333333333333334, 'triangle': 0.4375, 'plaquette': 0.7916666666666666, 'tube': 0.8958333333333334}
+FINDING t2=0.2 nu=6: found period-2 sector lies +0.7781 per site below the best uniform pattern and +1.2356 below the corner pattern (8^3 grid)
+[PASS] t2=0.2 nu=6: energy differences stable between 6^3 and 8^3 grids to 5e-3
+  t2=1.0 nu=7 nk=4: one-sweep sector E = -13.23132; best uniform -13.11098; corner 1111 -13.11098; t=342s
+  t2=1.0 nu=7 nk=6: one-sweep sector E = -13.23137; best uniform -13.10427; corner 1111 -13.10427; t=356s
+  t2=1.0 nu=7 nk=8: one-sweep sector E = -13.23141; best uniform -13.10620; corner 1111 -13.10620; t=387s
+  fluxes of the found sector: {'square': 1.0, 'triangle': 0.78125, 'plaquette': 0.7916666666666666, 'tube': 0.9583333333333334}
+FINDING t2=1.0 nu=7: found period-2 sector lies +0.1252 per site below the best uniform pattern and +0.1252 below the corner pattern (8^3 grid)
+[PASS] t2=1.0 nu=7: energy differences stable between 6^3 and 8^3 grids to 5e-3
+[PASS] found sector: real-space L = 4 energy equals Bloch {0,pi}^3 energy (independent assembly path)  -11.083700 vs -11.083700
+
+TOTAL: PASS=3 FAIL=0

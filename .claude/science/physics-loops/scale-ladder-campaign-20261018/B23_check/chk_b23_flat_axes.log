@@ -1,0 +1,4 @@
+[PASS] ('S', 'o', 'S', 'o') ('L002', 'L222') k/pi=(0.0, 0.0, 0.5) m=4: mult 4; slowest direction (np.float64(0.0), np.float64(0.0), np.float64(1.0)): min |e|/q = 2.00e-04 (q=1e-4), 2.00e-03 (q=1e-3) -> flat, quadratic along it
+[PASS] ('S2', 'o', 'S2', 'o') ('L220', 'L310') k/pi=(-0.5, -0.25, -0.25) m=2: mult 2; slowest direction (np.float64(0.577), np.float64(-0.577), np.float64(-0.577)): min |e|/q = 1.90e-05 (q=1e-4), 1.90e-04 (q=1e-3) -> flat, quadratic along it
+[PASS] ('S', 'o', 'S', 'o') ('L100', 'L030') k/pi=(-1.0, -1.0, 0.25) m=2: mult 2; slowest direction (np.float64(0.0), np.float64(0.0), np.float64(1.0)): min |e|/q = 3.33e-12 (q=1e-4), 5.55e-13 (q=1e-3) -> flat, exactly zero along it (branch stays at E: nodal line)
+TOTAL: PASS=3 FAIL=0

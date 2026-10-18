@@ -1,0 +1,10 @@
+[PASS] smallest integer cubic block holding 12 logical modes is 3 (27 >= 12 > 8)
+[PASS] smallest integer cubic block holding the 48 BKSF qubits is 4 (64 >= 48 > 27)
+  trial 0: centres 249 (density 0.00389 vs perfect block lattice 1/125 = 0.008), max_Q |S(Q)| over the 124 superlattice momenta = 0.1575; 1/sqrt(N_c) = 0.0634
+  trial 1: centres 256 (density 0.00400 vs perfect block lattice 1/125 = 0.008), max_Q |S(Q)| over the 124 superlattice momenta = 0.1486; 1/sqrt(N_c) = 0.0625
+  trial 2: centres 245 (density 0.00383 vs perfect block lattice 1/125 = 0.008), max_Q |S(Q)| over the 124 superlattice momenta = 0.1453; 1/sqrt(N_c) = 0.0639
+  trial 3: centres 257 (density 0.00402 vs perfect block lattice 1/125 = 0.008), max_Q |S(Q)| over the 124 superlattice momenta = 0.1476; 1/sqrt(N_c) = 0.0624
+FINDING: max registration amplitude 0.1575 (perfect registration = 1)
+[PASS] the formed packing has no block registration: max |S(Q)| < 10/sqrt(N_c) in every trial (perfect lattice gives 1)
+
+TOTAL: PASS=3 FAIL=0

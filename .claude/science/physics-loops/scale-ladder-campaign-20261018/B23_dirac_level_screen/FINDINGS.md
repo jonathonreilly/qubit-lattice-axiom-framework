@@ -1,6 +1,6 @@
 # B23 findings: Dirac-level screen of the remaining B20 families
 
-Provenance: a worker of the same model family; not independently checked. Saved by the supervisor from the hand-back. The model is B20_check's `chklib.py` / `B18_check/chk_model.py`; b20lib, b18lib and walklib were not used. `run_all.sh` gives TOTAL: PASS=28 FAIL=0 (about 15 min on 4 cores).
+Provenance: a worker of the same model family. Checked by a fresh-context same-family agent (`../B23_check/REPORT.md`, PASS=14) using an independent build from `B7_check/chk_core.py`: confirmed. Saved by the supervisor from the hand-back. The model is B20_check's `chklib.py` / `B18_check/chk_model.py`; b20lib, b18lib and walklib were not used. `run_all.sh` gives TOTAL: PASS=28 FAIL=0 (about 15 min on 4 cores).
 
 **Result.** 0 of 8,302 D₊⊕D₋ 4-fold k* levels pass in the cliff2, π/6 and π/6-taste families.
 - 7,554 fail the sign test.
@@ -28,7 +28,8 @@ Together with B20_check's 1,872, **all 10,174 D₊⊕D₋ levels in the paramete
 
 ## Still unscreened
 
-- Higher-multiplicity k* levels mixing D and G3/2: 6-fold (24,128), 8-fold (4,020 + 5,458), 10-fold (3,144) and 12-fold (574).
-- 65,244 G3/2 4-fold levels.
+- Levels mixing D and G3/2: 6-fold (24,128), 8-fold (4,020), 10-fold (3,144), 12-fold (574).
+- Pure G3/2 levels: 4-fold (65,244) and 8-fold (5,458).
+- Some "flat" defects are exact nodal lines (check).
 
 Both are outside L1. This is a numerical negative search, not a no-go.

@@ -1,0 +1,8 @@
+# First run of section A (tail of the output, verbatim). A1's expectation ("unique up to one scale lam_f" in the FULLY
+# GENERAL ansatz) was wrong: the general ansatz also contains 24 canonical field redefinitions, the s2 density convention
+# and 3 non-isotropic phase directions.  A1 was replaced by A1a (constructive decomposition of the 29-dim null space) and
+# A1b (SO(3)-isotropic ansatz: 3-dim null space with the stated spanning set).  A2 unchanged.
+   A: 1212 real equations, 254 unknowns (G_f^(0): 84, lam1 x coupling: 168, s1, s2)
+   free parameters: [e_0002, e_0003, e_0013, f_0023, e_1102, e_1103, e_1113, f_1123, e_2202, e_2203, e_2213, f_2223, e_0102, e_0103, e_0113, f_0123, e_0202, e_0203, e_0213, f_0223, e_1202, f_1202, f_1212, e_1203, f_1203, e_1213, f_1223, s1, s2]
+FAIL: A1 [28s] {C[N],G[xi]} at order chi chi with a FULLY GENERAL constant-coefficient G_f^(0) (84 real coefficients: xi J, dxi S, xi S for all 4 sigma's) and a fully general h-linear coupling (168: h J, dh S, h S): unique up to one scale lam_f: G_f^(0) = lam_f x Kosmann, s1 = -lam_f, s2 = 0, and lam1 x coupling = lam_f x [walker on E = (delta + h)^(-1/2)]^(1) = lam_f x [-1/2 h] frame coupling.  So the walker's coupling strength satisfies a_s = lam_f / lam1
+PASS: A2 [29s] walker coupling with free strength a_s (E = (delta + a_s h)^(-1/2)): closure at order chi chi iff a_s = lam_f/lam1: [{a_s: lam_f/lam1}]

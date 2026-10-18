@@ -1,0 +1,17 @@
+A1 (independent): GF(2) ranks via galois, own geometry
+  L=3: V=324 E=972 faces=783 cyc=649 rank(faces)=646 rank(+3 loops)=649; t=0s
+[PASS] L=3: rank(faces) = E - V + 1 - 3 and the 3 straight loops complete the cycle space
+  L=3: 137 independent relations; span of their type-parity vectors = [(np.uint8(0), np.uint8(0), np.uint8(0), np.uint8(0)), (np.uint8(1), np.uint8(0), np.uint8(1), np.uint8(0))]
+[PASS] L=3: relation type-parity span is {0000, 1010} (square,plaquette) wrapped relation
+[PASS] L=3: uniform patterns solvable exactly as predicted by the relation parities (8/16 solvable)
+  L=4: V=768 E=2304 faces=1856 cyc=1537 rank(faces)=1534 rank(+3 loops)=1537; t=3s
+[PASS] L=4: rank(faces) = E - V + 1 - 3 and the 3 straight loops complete the cycle space
+  L=4: 322 independent relations; span of their type-parity vectors = [(np.uint8(0), np.uint8(0), np.uint8(0), np.uint8(0))]
+[PASS] L=4: all relations have even type parity (so all 16 uniform patterns are consistent)
+[PASS] L=4: uniform patterns solvable exactly as predicted by the relation parities (16/16 solvable)
+
+Convention: repo H = -t1 sum_onsite u c^dag c - t2 sum_links u c^dag c, t1 = -1, t2 > 0 (or < 0)
+[PASS] u-pattern 1011 with t1 = -1 (either sign of t2) has standard-convention flux pi through every face of all four types
+[PASS] control: with t1 = +1 the same u gives standard triangle flux 0 (sign is load-bearing)
+
+A4 (independent PSG by BFS sign propagation, L = 4); t=12s

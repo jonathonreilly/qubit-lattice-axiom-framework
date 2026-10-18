@@ -1,0 +1,39 @@
+PASS: T0a [2s] spinor bracket controls: {int s_1, int s_2} = 2 int s_3 (= -i chibar[sigma1,sigma2]chi); {int N n, int M J_(0,0)} = -int M d_0N n (hand value: J_(0,0) generates -translation of density weight 1/2)
+PASS: T0b [2s] flat walker: {C_f[N],C_f[M]} = v^2 G_K[N dM - M dN] with G_K[xi] = int chibar i(xi.d + div xi/2 + (i/4) curl xi.sigma) chi (spin term -1/4 curl xi.s; +1/4 fails): {1: False, -1: True}  (B15 C2 analogue)
+PASS: T0c [3s] gravity control: {G_GR[xi], G_GR[eta]} = G_GR[[xi,eta]], G_GR = int Pt L_xi(delta + h)
+   A: 1212 real equations, 254 unknowns (G_f^(0): 84, lam1 x coupling: 168, s1, s2)
+PASS: A2 [19s] walker coupling with free strength a_s (E = (delta + a_s h)^(-1/2)): closure at order chi chi iff a_s = lam_f/lam1: [{a_s: lam_f/lam1}]
+   general null space 29 = 24 canonical W-directions (in null space: True) + ['phase', 'phase', 'phase', 's1', 's2']
+PASS: A1a [78s] FULLY GENERAL ansatz (84 + 168 coefficients): null space 29 = 24 canonical field redefinitions chi -> exp(i k h_ab sigma_mu) chi (W = int h_ab S_mu, constructed and verified) + lam_f (s1 direction) + s2 (trh x walker density convention) + 3 phase rotations by c.curl(xi) with a constant vector c (not rotation invariant)
+   isotropic ansatz: G_f^(0) 5 terms, coupling 5 terms; null space 3; spanned by (lam_f: Kosmann + walker), (s2: trh walker), (W_trh): True
+PASS: A1b [81s] SO(3)-isotropic ansatz (all invariant contractions incl. epsilon): the solution space is exactly 3-dim, spanned by lam_f x [Kosmann, walker coupling on E = (delta+h)^(-1/2), s1 = -1], the density convention s2 (coupling + (s2/2) trh x walker) and the canonical phase redefinition chi -> exp(i k trh) chi.  No other coupling closes
+   G_f^(1) isotropic basis: 20 terms
+   {G,G} chi chi solutions: [{gp10: -gp9, gp11: gp9, gp12: 0, gp13: 0, gp14: -gp17, gp15: gp17, gp16: -gp17, gp18: 0, gp19: 0, gp2: -gp5, gp3: gp5, gp4: -gp5, gp6: 0, gp7: 0, gp8: -gp9, lfu: 0}, {gp10: -gp9, gp11: gp9, gp12: 0, gp13: 0, gp14: -gp17, gp15: gp17, gp16: -gp17, gp18: 0, gp19: 0, gp2: -gp5, gp3: gp5 + nu**2/16, gp4: -gp5 + nu**2/16, gp6: 0, gp7: 0, gp8: -gp9, lfu: nu}]
+PASS: C1 [93s] {G,G} at order chi chi with the h-linear fermion relabelling part G_f^(1) free (isotropic, 20 terms): lam_f in {0, nu} only -> lam_f = nu (the fermion's structure constant is the common one, as for the scalar, B19 C1b); free G_f^(1) directions at lam_f = nu: 5
+PASS: C2 [95s] product bracket without G_f^(1): {nu K[xi], nu K[eta]} - nu^2 K[[xi,eta]] != 0 and equals c nu^2 int eps_kij (S_xi S_eta)_ij s_k (S = symmetric strain) for exactly one c: {1/2: True, -1/2: False, 1: False, -1: False} (on-site rotation remainder, spin-1/2 note Result 4 / N2; G_f^(1) is what absorbs it)
+   walker a_s = 1, lam_f = nu: [{K2: K1, lam1: nu, s1: -nu, s2: 0}]
+PASS: B1 [97s] gravity's h-linear {C,G} + the walker's order-chi-chi {C,G}, with the walker's coupling FIXED at a_s = 1 (C4) and lam_f = nu (C1): unique solution lam1 = nu, K2 = K1, s1 = -nu, s2 = 0  (fermion analogue of B21-check T6c)
+   walker a_s free: [{K2: K1*a_s, lam1: nu/a_s, s1: -nu, s2: 0}]
+PASS: B2 [98s] with the coupling strength a_s left free the same brackets give lam1 = nu/a_s and K2 = a_s K1: closure ties a_s = K2/K1 (C4 route II), so a_s = 1 <=> K1 = K2; with a_s free nothing fixes K2/K1 (B21 no-go, Phi_rho)
+   {C,C} P + chi chi: [{b: -1/2, c0: K1/(4*alpha*lam1), vv: K1*lam_f/(4*alpha*lam1)}]
+PASS: D1 [99s] {C,C} at order P (member) and chi chi (walker): b = -1/2, c0 = K1/(4 alpha lam1), walker speed^2 v^2 = lam_f K1/(4 alpha lam1) = a_s K1/(4 alpha) (A2).  With a_s = 1: v^2 = K1/(4 alpha) (C4 B2's lapse identity); with B1 (lam_f = lam1 = nu, K2 = K1): v^2 = K2/(4 alpha) = TT graviton cone (B21 check T2)
+PASS: D3 [99s] {C,C} at order P chi chi: zero identically (the walker's h-coupling has no lapse gradient), so it imposes nothing; rhs c0 G[zeta] has no P chi chi term
+   {C,G} P chi chi: kin_X basis 3; solution [{kx0: -gp0/(8*alpha*lam1) - gp1/(8*alpha*lam1), kx1: gp1/(4*alpha*lam1), kx2: nu**2/(32*alpha*lam1)}]
+PASS: E1 [101s] {C,G} at order P chi chi: solvable for the P h s / P h n cross term kin_X of the kinetic term, and kin_X is forced nonzero (its P h s part is nu^2/(32 alpha lam1^2) x [one epsilon structure], independent of the free G_f^(1) directions): the Darboux form of the symmetric-section connection term pi = P - a(h, s) (2026-09-13 note P1); a product-bracket kinetic term (kin_X = 0) does not close
+   {C,C} h chi chi (full C_tot): [{a_s: nu/lam1, beta: -nu/lam1, betap: 0}]
+PASS: E2 [106s] {C,C} at order h chi chi (full C_tot incl. kin_X from E1, G_f^(1) from C1, v^2 = c0 nu): forces a_s = nu/lam1 and the structure function zeta = c0 (delta + beta h) w with beta = -nu/lam1 = -a_s, beta' = 0, i.e. B21 A7's beta = -1/r with r = lam1/nu.  A second, independent route to a_s lam1 = nu (A2 + C1 is the first); with the walker's a_s = 1: r = 1, beta = -1 (structure function delta - h)
+PASS: G1 [106s] walker on E = 1 + A, A_aj = eps_ajk theta_k: C_f[E] - C_f[1] = {C_f[1], 1/2 int theta.s} + 1/2 int N div(theta) n (unique: [{cc: 1/2, kap: 1/2}]); no spin rotation alone reproduces it ([]).  So the walker is NOT locally rotation covariant: its antisymmetric frame part is a rotation of chi plus the scalar potential V = div(theta)/2
+PASS: G2 [106s] axial scalar T(E) = eps_abc E_a^j E_b^k d_j e_ck has T^(1)(1 + A) = -2 div(theta); walker + c_ax N T n is locally rotation covariant at first order iff c_ax = 1/4 ([{c_ax: 1/4}]): this is the totally antisymmetric spin-connection term (1/4) eps^abc omega_abc of the half-density Weyl operator, absent from the walker
+PASS: G3 [122s] symmetric section E = (delta + h)^(-1/2): T^(1) = 0 identically, so the walker EQUALS the covariant operator at O(h) (all order-chi-chi results above and the a_s = 1 of C4 hold for both); T^(2) != 0, so they differ at O(h^2) by 1/4 int N T^(2)(h) n
+   G4 (walker): [{kappa_s: 0, lam_E: lam_f, s1: -lam_f, s2: 0}]
+PASS: G4w [123s] triad route (walker), order chi chi: {C_f[N], lam_E G_E + lam_f G_Lie + kappa_s int curl xi.s} = C_f[N'] iff lam_E = lam_f, kappa_s = 0 (plain Lie: the frame's antisymmetric shift carries the Kosmann rotation; V = div curl xi /2 = 0), s1 = -lam_f, s2 = 0.  Since h = (E^T E)^-1 - delta shifts by lam_E (d_a xi_j + d_j xi_a), lam1 = lam_E: the triad route gives lam1 = lam_f with a_s = 1 directly
+   G4 (covariant): [{kappa_s: 0, lam_E: lam_f, s1: -lam_f, s2: 0}]
+PASS: G4c [123s] triad route (covariant), order chi chi: {C_f[N], lam_E G_E + lam_f G_Lie + kappa_s int curl xi.s} = C_f[N'] iff lam_E = lam_f, kappa_s = 0 (plain Lie: the frame's antisymmetric shift carries the Kosmann rotation; V = div curl xi /2 = 0), s1 = -lam_f, s2 = 0.  Since h = (E^T E)^-1 - delta shifts by lam_E (d_a xi_j + d_j xi_a), lam1 = lam_E: the triad route gives lam1 = lam_f with a_s = 1 directly
+   F: bare walker r=1: [], r=2: [];  covariant r=1: [{gp0: 0, gp1: 0}], r=2: [{gp0: 0, gp1: 0}], control (lam1 = nu, a_s = 1/2): []
+PASS: F1 [182s] {C,G} at order h chi chi with the BARE walker's second-order symmetric-section coupling: NO solution for the remaining G_f^(1) directions, at r = 1 (a_s = 1) or r = 2 (a_s = 1/2).  The walker as supplied does not close beyond leading order (its missing axial term T^(2), G3)
+PASS: F2 [182s] with the covariant operator (walker + 1/4 N T n): closes at r = 1 ([{gp0: 0, gp1: 0}]) and r = 2 ([{gp0: 0, gp1: 0}]); the mismatched control lam1 = nu, a_s = 1/2 fails ([])
+TOTAL: PASS=21 FAIL=0  (182s)
+
+real	3m3.289s
+user	2m59.739s
+sys	0m0.222s

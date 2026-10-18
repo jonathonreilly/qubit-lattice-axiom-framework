@@ -1,0 +1,11 @@
+   F cov r=1: residual equations 0
+   F cov r=2: residual equations 0
+   F bare r=1: residual equations 96
+   F bare r=2: residual equations 96
+PASS: F2' [260s] {C,G} at order h chi chi: walker + 1/4 N T n with the constructed symmetric-gauge G_f^(1) closes at r = 1 and r = 2 (a = 1/r) with NO free parameter: {'cov r=1': True, 'cov r=2': True, 'bare r=1': False, 'bare r=2': False}
+PASS: F1' [260s] bare walker with the same G_f^(1): fails at r = 1, 2: {'cov r=1': True, 'cov r=2': True, 'bare r=1': False, 'bare r=2': False}
+TOTAL: PASS=2 FAIL=0  (260s)
+
+real	4m24.003s
+user	3m27.979s
+sys	0m0.266s

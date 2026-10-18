@@ -1,0 +1,21 @@
+ALIGN2 [S4]: 780 words
+  k* level stats: {'m8': 260, 'D+D-': 220, 'm12': 80, 'm4': 400, 'm10': 160, 'D2': 160, 'm6': 320}; screened (kind, fermi): {('D+D-', True): 124, ('D+D-', False): 96, ('D2', True): 144, ('D2', False): 16}  [27s]
+[PASS] r(k) real on every grid (det W k-independent)  max 2.5e-14
+  stage C stages: {'early': 80, 'full': 32}
+[PASS] DPT sanity: every survivor's k* node is an isotropic untilted cone set at |n_S| sqrt2/3  112/112
+  survivors 112; CLEAN: 0  [285s]
+  survivors by (Lambda_u, Lambda_sp, Lambda_sp(E), kdep): {('sc(4)', 'bcc(4)', 'bcc(4)', True): 112}
+  defective nodes by (type mod Lambda_u, type mod Lambda_sp(E), verdict, multiplicity): {('C2', 'C2', 'aniso', 4): 648, ('gen', 'gen', 'aniso', 2): 400, ('gen', 'gen', 'band', 1): 240, ('low', 'low', 'aniso', 4): 48, ('low', 'low', 'aniso', 8): 8}
+   best: ('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o') ('P1', 'L130', 'P11', 'L130') E=+0.0000 D+D- Lu=sc(4) LspE=bcc(4) nbad=1 bad=[((np.float64(-0.9375), np.float64(-0.9375), np.float64(-0.9375)), ('low', 'low'), 4, 'aniso', 0.040185, 9.115574)]
+   best: ('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o') ('P1', 'L132', 'P11', 'L132') E=+0.0000 D+D- Lu=sc(4) LspE=bcc(4) nbad=1 bad=[((np.float64(-0.9375), np.float64(-0.9375), np.float64(-0.9375)), ('low', 'low'), 4, 'aniso', 0.040185, 9.115574)]
+   best: ('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o') ('P1', 'L312', 'P11', 'L312') E=+0.0000 D+D- Lu=sc(4) LspE=bcc(4) nbad=1 bad=[((np.float64(-0.9375), np.float64(-0.9375), np.float64(-0.9375)), ('low', 'low'), 4, 'aniso', 0.040185, 9.115574)]
+   best: ('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o') ('P1', 'L310', 'P11', 'L310') E=+0.0000 D+D- Lu=sc(4) LspE=bcc(4) nbad=1 bad=[((np.float64(-0.9375), np.float64(-0.9375), np.float64(-0.9375)), ('low', 'low'), 4, 'aniso', 0.040185, 9.115574)]
+   best: ('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o') ('P2', 'L130', 'P10', 'L130') E=+0.0000 D+D- Lu=sc(4) LspE=bcc(4) nbad=1 bad=[((np.float64(-0.9375), np.float64(-0.9375), np.float64(-0.9375)), ('low', 'low'), 4, 'aniso', 0.040185, 9.115574)]
+   best: ('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o') ('P2', 'L132', 'P10', 'L132') E=+0.0000 D+D- Lu=sc(4) LspE=bcc(4) nbad=1 bad=[((np.float64(-0.9375), np.float64(-0.9375), np.float64(-0.9375)), ('low', 'low'), 4, 'aniso', 0.040185, 9.115574)]
+   best: ('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o') ('P2', 'L312', 'P10', 'L312') E=+0.0000 D+D- Lu=sc(4) LspE=bcc(4) nbad=1 bad=[((np.float64(-0.9375), np.float64(-0.9375), np.float64(-0.9375)), ('low', 'low'), 4, 'aniso', 0.040185, 9.115574)]
+   best: ('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o') ('P2', 'L310', 'P10', 'L310') E=+0.0000 D+D- Lu=sc(4) LspE=bcc(4) nbad=1 bad=[((np.float64(-0.9375), np.float64(-0.9375), np.float64(-0.9375)), ('low', 'low'), 4, 'aniso', 0.040185, 9.115574)]
+   best: ('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o') ('P3', 'L021', 'P9', 'L021') E=+3.1416 D2 Lu=sc(4) LspE=bcc(4) nbad=1 bad=[((np.float64(-0.9375), np.float64(-0.9375), np.float64(-0.9375)), ('low', 'low'), 4, 'aniso', 0.040185, 9.115574)]
+   best: ('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o') ('P3', 'L023', 'P9', 'L023') E=+3.1416 D2 Lu=sc(4) LspE=bcc(4) nbad=1 bad=[((np.float64(-0.9375), np.float64(-0.9375), np.float64(-0.9375)), ('low', 'low'), 4, 'aniso', 0.040185, 9.115574)]
+[PASS] screen ran on every word (A/B) and every survivor (C)  
+
+TOTAL: PASS=3 FAIL=0   [285s]

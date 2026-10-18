@@ -1,0 +1,5 @@
+[PASS] W(k + t_Y) has a k-independent intertwiner to the rotated word W_rot(k) (all 36 cases)  [1, 1, 1, 1, 1, 1]
+[PASS] W_rot(k) = X(k)^-1 W(k) X(k) with X = S^a P S^a G (exact; k-dependent)  
+[PASS] no k-independent U or T intertwiner between W(k + t_Y) and W(k) (so t_Y is a k-dependent taste)  [(0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0)]
+
+TOTAL: PASS=3 FAIL=0   [1s]

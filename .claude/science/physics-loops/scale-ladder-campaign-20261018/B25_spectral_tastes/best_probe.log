@@ -1,0 +1,27 @@
+n_S 16 v_D 7.542472332656508
+lattices: sc(4) bcc(4) k-dependent cosets: 1
+(pi/16)Z^3 nodes at E: 5120, types mod Lambda_sp: {'T': 1024, 'low': 4096}
+   class rep (np.float64(-1.0), np.float64(-1.0), np.float64(-1.0)) T 4 ok {'tilt': np.float64(0.0), 'smin': 7.5425, 'smax': 7.5425, 'anti': np.float64(0.0), 'next': 3.1416}
+   class rep (np.float64(-0.9375), np.float64(-0.9375), np.float64(-0.9375)) low 4 aniso {'tilt': np.float64(0.0), 'smin': 0.0402, 'smax': 9.1156, 'anti': np.float64(113.7778), 'next': 0.8629}
+   class rep (np.float64(-0.9375), np.float64(-0.9375), np.float64(-0.8125)) low 4 aniso {'tilt': np.float64(0.0), 'smin': 0.2631, 'smax': 9.1284, 'anti': np.float64(113.7778), 'next': 0.8629}
+   class rep (np.float64(-0.9375), np.float64(-0.8125), np.float64(-0.9375)) low 4 aniso {'tilt': np.float64(0.0), 'smin': 0.1678, 'smax': 9.1564, 'anti': np.float64(113.7778), 'next': 0.8629}
+   class rep (np.float64(-0.9375), np.float64(-0.8125), np.float64(-0.8125)) low 4 aniso {'tilt': np.float64(0.0), 'smin': 0.1254, 'smax': 9.0218, 'anti': np.float64(113.7778), 'next': 0.8629}
+[PASS] grid nodes fall into classes mod Lambda_sp; the T-fixed classes are all isotropic untilted cones at v_D  
+   defect (np.float64(-0.9375), np.float64(-0.9375), np.float64(-0.9375)) type low: FD speeds min 0.0762 max 9.2346, tilt 9.8e-11
+[PASS] defect class confirmed anisotropic by finite differences (independent of DPT)  
+   defect (np.float64(-0.9375), np.float64(-0.9375), np.float64(-0.8125)) type low: FD speeds min 0.0090 max 9.2030, tilt 8.4e-11
+[PASS] defect class confirmed anisotropic by finite differences (independent of DPT)  
+   defect (np.float64(-0.9375), np.float64(-0.8125), np.float64(-0.9375)) type low: FD speeds min 0.0083 max 9.2180, tilt 8.8e-11
+[PASS] defect class confirmed anisotropic by finite differences (independent of DPT)  
+   defect (np.float64(-0.9375), np.float64(-0.8125), np.float64(-0.8125)) type low: FD speeds min 0.0377 max 9.2262, tilt 9.4e-11
+[PASS] defect class confirmed anisotropic by finite differences (independent of DPT)  
+   full stage C: 1064 nodes, 40 defective, of which generic 40; gridmin 6.26e-02
+      (np.float64(0.9321), np.float64(0.9321), np.float64(-0.9463)) gen 2 aniso 0.348508 7.509058
+      (np.float64(-0.9463), np.float64(0.9321), np.float64(0.9321)) gen 2 aniso 0.398895 7.608903
+      (np.float64(0.43212), np.float64(0.93212), np.float64(-0.94628)) gen 2 aniso 0.34455 7.518129
+      (np.float64(-0.94669), np.float64(0.93175), np.float64(0.68175)) gen 2 aniso 0.58911 7.490129
+      (np.float64(0.9321), np.float64(-0.9463), np.float64(0.9321)) gen 2 aniso 1.528498 7.543508
+      (np.float64(0.93175), np.float64(-0.94669), np.float64(0.68175)) gen 2 aniso 1.426317 7.378164
+[PASS] full stage C ran (Nelder-Mead from 40 starts)  
+
+TOTAL: PASS=6 FAIL=0   [18s]

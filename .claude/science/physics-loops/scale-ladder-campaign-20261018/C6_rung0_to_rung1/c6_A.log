@@ -1,0 +1,59 @@
+A1: cycle space, face relations and the 16 uniform flux patterns
+  L=3: V=324 E=972 faces/site={'square': 6, 'triangle': 8, 'plaquette': 3, 'tube': 12}
+  cycle-space dim E-V+1 = 649; rank(faces) = 646; rank(faces + 3 noncontractible) = 649
+[PASS] L=3: faces generate the cycle space up to the 3 noncontractible classes (rank = E-V+1-3)
+  independent face relations: 137 (= 5.074 per site); faces - relations = 646
+[PASS] L=3 (odd): the only odd type-parity of a relation is (square, plaquette) = (odd, odd), a wrapped torus relation; uniform patterns with square != plaquette are then inconsistent (torus-size effect, absent for even L)  type-parity vectors: [(0, 0, 0, 0), (1, 0, 1, 0)]
+[PASS] L=3: uniform patterns realized by a gauge field u exactly as the relation parities predict (the 8 with square = plaquette; fluxes re-measured)
+[PASS] L=3: a random gauge field gives a random (non-uniform) consistent flux configuration: sectors are not unique  mean flux 0.508
+  L=4: V=768 E=2304 faces/site={'square': 6, 'triangle': 8, 'plaquette': 3, 'tube': 12}
+  cycle-space dim E-V+1 = 1537; rank(faces) = 1534; rank(faces + 3 noncontractible) = 1537
+[PASS] L=4: faces generate the cycle space up to the 3 noncontractible classes (rank = E-V+1-3)
+  independent face relations: 322 (= 5.031 per site); faces - relations = 1534
+[PASS] L=4: every face relation contains an even number of faces of each type (all 16 uniform patterns consistent)  type-parity vectors of relations: [(0, 0, 0, 0)]
+[PASS] L=4: uniform patterns realized by a gauge field u exactly as the relation parities predict (all 16; fluxes re-measured)
+[PASS] L=4: a random gauge field gives a random (non-uniform) consistent flux configuration: sectors are not unique  mean flux 0.517
+  L=6: V=2592 E=7776 faces/site={'square': 6, 'triangle': 8, 'plaquette': 3, 'tube': 12}
+  cycle-space dim E-V+1 = 5185; rank(faces) = 5182; rank(faces + 3 noncontractible) = 5185
+[PASS] L=6: faces generate the cycle space up to the 3 noncontractible classes (rank = E-V+1-3)
+  independent face relations: 1082 (= 5.009 per site); faces - relations = 5182
+[PASS] L=6: every face relation contains an even number of faces of each type (all 16 uniform patterns consistent)  type-parity vectors of relations: [(0, 0, 0, 0)]
+[PASS] L=6: uniform patterns realized by a gauge field u exactly as the relation parities predict (all 16; fluxes re-measured)
+[PASS] L=6: a random gauge field gives a random (non-uniform) consistent flux configuration: sectors are not unique  mean flux 0.499
+
+A2: Bravyi-Kitaev superfast encoding on the corner graph (L = 3): flux of the 'all bare checks +1' sector
+  convention canonical: hop algebra ok=True; (# faces with F = -1, # faces) per type: {'square': (0, 162), 'triangle': (216, 216), 'plaquette': (57, 81), 'tube': (0, 324)}
+[PASS] BKSF hop operators under convention 'canonical' anticommute exactly when edges share one vertex (400 sampled pairs)
+  convention random-1: hop algebra ok=True; (# faces with F = -1, # faces) per type: {'square': (96, 162), 'triangle': (112, 216), 'plaquette': (61, 81), 'tube': (169, 324)}
+[PASS] BKSF hop operators under convention 'random-1' anticommute exactly when edges share one vertex (400 sampled pairs)
+  convention random-2: hop algebra ok=True; (# faces with F = -1, # faces) per type: {'square': (98, 162), 'triangle': (110, 216), 'plaquette': (45, 81), 'tube': (175, 324)}
+[PASS] BKSF hop operators under convention 'random-2' anticommute exactly when edges share one vertex (400 sampled pairs)
+[PASS] the flux seen in the 'all bare loop checks = +1' sector depends on the arbitrary labelling/ordering convention  faces whose F differs between two random conventions: {'square': 86, 'triangle': 112, 'plaquette': 38, 'tube': 164}
+  values of F per type under each convention: {'canonical': {'square': [1], 'triangle': [-1], 'plaquette': [-1, 1], 'tube': [1]}, 'random-1': {'square': [-1, 1], 'triangle': [-1, 1], 'plaquette': [-1, 1], 'tube': [-1, 1]}, 'random-2': {'square': [-1, 1], 'triangle': [-1, 1], 'plaquette': [-1, 1], 'tube': [-1, 1]}}
+[PASS] under the canonical BK convention (eps_jk = sign(k-j), index-ordered Z strings) the bare sector is not uniform per face type (so it is not the corner pattern in any sign convention)
+
+A3: one dictionary sign flip A_e -> -A_e flips F on exactly the faces through e
+[PASS] sign flip of one hop flips exactly the fluxes of the faces containing that edge (5 random edges, all faces)
+
+A4: which uniform patterns meet the corner-model design targets (fermion-level PSG, L = 4)
+   0000 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': [0], 'fixed': [(0, 0, 0), (2, 2, 2)]}
+   0001 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': [0], 'fixed': []}
+   0010 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': [1], 'fixed': 'n/a (translations anticommute)'}
+   0011 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': [1], 'fixed': 'n/a (translations anticommute)'}
+   0100 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': [0], 'fixed': [(0, 0, 0), (2, 2, 2)]}
+   0101 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': [0], 'fixed': []}
+   0110 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': [1], 'fixed': 'n/a (translations anticommute)'}
+   0111 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': [1], 'fixed': 'n/a (translations anticommute)'}
+   1000 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1], 'fixed': 'n/a (translations anticommute)'}
+   1001 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1], 'fixed': 'n/a (translations anticommute)'}
+   1010 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [0], 'fixed': []}
+   1011 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [0], 'fixed': [(1, 3, 1), (3, 1, 3)]}
+   1100 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1], 'fixed': 'n/a (translations anticommute)'}
+   1101 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1], 'fixed': 'n/a (translations anticommute)'}
+   1110 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [0], 'fixed': []}
+   1111 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [0], 'fixed': [(1, 3, 1), (3, 1, 3)]}
+  patterns meeting all three targets (square C4^4 = -1, commuting translations, O-fixed momenta): [(1, 0, 1, 1), (1, 1, 1, 1)]
+[PASS] design targets select square = plaquette = tube = pi and leave the triangle free: exactly {1011, 1111}
+[PASS] the O-fixed momenta of 1011 are k* = (pi/2)(1,-1,1) and -k* in this gauge family (units pi/2: (1,3,1),(3,1,3))
+
+TOTAL: PASS=20 FAIL=0

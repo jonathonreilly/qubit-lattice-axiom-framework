@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "manifest_sha256": "a14f139b2b7190a4bfb13c8e61f8997bb3d4d781b5ef919d3894355c8f328eb7",
+  "files": 4,
+  "provenance": 3,
+  "links": 13,
+  "nodes": 7270,
+  "edges": 16264,
+  "new_nodes": {
+    "active_reference_tolerance_bounded_theorem_note_2026-10-18": {
+      "path": "docs/ACTIVE_REFERENCE_TOLERANCE_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "deps": [
+        "active_energy_cubic_loader_bounded_theorem_note_2026-10-18"
+      ]
+    }
+  },
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical source identity, provenance, links and topology only; no scientific execution or retained audit. New note dependencies require ROOT inspection."
+}

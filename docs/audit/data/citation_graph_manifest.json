@@ -1,6 +1,6 @@
 {
- "edge_count": 16263,
- "node_count": 7269,
+ "edge_count": 16264,
+ "node_count": 7270,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -293,6 +293,10 @@
   "active_energy_cubic_loader_bounded_theorem_note_2026-10-18": {
    "deps_hash": "5c4ae624aadd",
    "out_degree": 2
+  },
+  "active_reference_tolerance_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "28ac89d821fe",
+   "out_degree": 1
   },
   "active_sector_grounded_by_mass_vs_k_dominant_operator_sieve_narrow_theorem_note_2026-06-06": {
    "deps_hash": "709c3097cb26",

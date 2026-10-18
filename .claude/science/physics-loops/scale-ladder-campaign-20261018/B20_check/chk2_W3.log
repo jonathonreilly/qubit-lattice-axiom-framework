@@ -1,0 +1,13 @@
+[PASS] W3[S] = 0  +0.0e+00
+[PASS] W3[S^2] = 0  +0.0e+00
+[PASS] W3[R_L] = 0  +0.0e+00
+[PASS] W3[on-site] = 0  +0.0e+00
+[PASS] R_L(k) = 1 - 2P(k) (Hermitian unitary, constant trace); U_s = 1 + (e^{i pi s}-1)P(k) is unitary for all s: an explicit null-homotopy  tr R_L = {np.float64(0.0)}
+[PASS] Hopf control: the map z/|z| has degree +-1 (so P = zz^dag/|z|^2 has Hopf invariant +-1, P not null-homotopic in CP^1), yet W3[1-2P] = 0  deg = -1.00000, W3[1-2P] = -6.1e-14
+[PASS] additivity: W3[eight-node step] = 0 and W3[(su2 (x) 1_6) . step] = 6 W3[su2] + 0 = 6 deg  +5.2e-20, -6.00000
+[PASS] W3 = 0 for a random long word (two grids)  +7.7e-15 +2.2e-15
+[PASS] W3 = 0 for a random long word (two grids)  +1.6e-15 -1.6e-16
+[PASS] anomalous control su2 (W3 = -1): at E = +0.000 the det-M chiralities of all nodes sum to W3  1 nodes, chi [-1]
+[PASS] anomalous control su2 (W3 = -1): at E = +3.142 the det-M chiralities of all nodes sum to W3  1 nodes, chi [-1]
+
+TOTAL: PASS=11 FAIL=0   [68s]

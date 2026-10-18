@@ -1,0 +1,36 @@
+[PASS] D1 [exact identity, numerical] the dense step's eigenphases are +-arccos(cos theta cos k) (tr W(k) = 2 cos theta cos k, det W(k) = 1)
+        max deviation 3.1e-15
+[PASS] D2 [analytic] (1/2) d^2 omega^2/dk^2 at k = 0 equals theta cot theta (omega'' = cot theta at the gap minimum)
+        [0.98663098 0.91524386 0.64209262] vs [0.98663098 0.91524386 0.64209262]
+
+  bracket, dense, Lc = 256; relative error of P(K - pred)P, P = |k| < 0.15 (both bands)
+  theta  lapses            err(first-order symbol)   err(-i v^2 G[w], v^2 = th cot th)   err(v = 1)
+/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B22_check/chk2_generator_1d.py:40: RuntimeWarning: invalid value encountered in divide
+  o = omega(k, th); return np.cos(th) * np.sin(k) / np.sin(o)
+  0.0   cos,sin (uniform w)              4.17e-14                  4.17e-14                       4.17e-14
+  0.0   cos q1, cos q2 (non-uniform w)   4.66e-14                  4.66e-14                       4.66e-14
+  0.5   cos,sin (uniform w)              5.70e-05                  2.43e-04                       8.50e-02
+  0.5   cos q1, cos q2 (non-uniform w)   8.35e-05                  2.42e-04                       8.50e-02
+  1.0   cos,sin (uniform w)              2.71e-04                  1.10e-03                       3.59e-01
+  1.0   cos q1, cos q2 (non-uniform w)   3.98e-04                  1.11e-03                       3.59e-01
+[PASS] B1 [numerical, own dense implementation] generator bracket = -i(1/2){w, Op(omega omega')} on |k| < 0.15, for uniform AND non-uniform w; residual scales ~ q^2 (x>3 on doubling q) for the massive walk
+        th=0.0: 4.2e-14/4.7e-14 -> 2q 3.6e-14/3.9e-14; th=0.5: 5.7e-05/8.4e-05 -> 2q 2.3e-04/3.3e-04; th=1.0: 2.7e-04/4.0e-04 -> 2q 1.1e-03/1.6e-03
+[PASS] B2 [numerical] low-energy bracket is -i v^2 G[w] with v^2 = theta cot theta (node cone), not v = 1 (causal cone)
+[PASS] B3 [numerical + analytic] species at k ~ pi: principal-branch generator misses -i v^2 G[w] by ~ pi/theta (it is the E0 = pi offset term of M5a: (1/2)d(omega^2) with omega = pi - omega~ gives -(pi - theta)/theta x); the W^2 generator gives 4 v^2 G[w] when G uses the momentum RELATIVE to the node, and fails grossly with the lattice momentum (the M5b k* term)
+        principal: rel. dev 5.971 vs pi/theta = 6.283; W^2: relative-momentum G 2.4e-04, lattice-momentum G 34.2
+[PASS] B4 [numerical] massless (gapless) walk: Definition B's W_N for constant N = 1/2 has power-law ~1/r tails (not quasi-local in the usual exponentially/rapidly-decaying sense)
+        power-law exponent of |W^(1/2)(r)| = -0.987
+
+  exponentiated (expm, dense), Lc = 512, N = A cos, M = A sin, q = 2pi/Lc, packets sigma = 12
+  theta  A   k0     dx         -w g(k0)    ratio
+  0.0    6  +0.15    -0.4261    -0.4418   0.9645  +band
+  0.0    6  -0.15    -0.4589    -0.4418   1.0388  +band
+  0.0   12  +0.15    -1.6486    -1.7671   0.9329  +band
+  0.0   12  -0.15    -1.9105    -1.7671   1.0811  +band
+  0.5    6  +0.15    -0.4008    -0.4040   0.9920  +band
+  0.5    6  -0.15    -0.4085    -0.4040   1.0111  +band
+  0.5   12  +0.15    -1.5958    -1.6161   0.9874  +band
+  0.5   12  -0.15    -1.6572    -1.6161   1.0254  +band
+[FAIL] B5 [numerical, dense expm] exponentiated generator-lapse group commutator displaces +band packets of both chiralities by -w g(k0) within 5%
+
+TOTAL: PASS=6 FAIL=1  (725.0 s)

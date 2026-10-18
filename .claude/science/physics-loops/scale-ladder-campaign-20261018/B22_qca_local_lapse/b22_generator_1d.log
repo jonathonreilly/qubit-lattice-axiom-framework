@@ -1,0 +1,55 @@
+[PASS] P4 [numerical] theta=0.5 (gapped): H_F = i log W is exponentially local
+        log|H_r| slope -0.539 per cell; |H_60| = 4.7e-15
+[PASS] P4 [numerical] theta=0 (gapless): branch cut crosses the bands, |H_r| ~ 1/r (non-local generator)
+        power-law exponent -0.991
+
+  P1: relative error || [H(N),H(M)] psi - pred psi || / || pred psi ||, low-energy psi (|k| < 0.15, both bands)
+  theta  n   v^2(node)   err(symbol pred)   err(Dirac -i v^2 w p)   err(light-cone v=1)
+  0.0   1   1.0000     2.28e-12           2.23e-12              2.23e-12
+  0.0   2   1.0000     1.87e-12           1.81e-12              1.81e-12
+  0.0   4   1.0000     1.77e-12           1.71e-12              1.71e-12
+  0.0   8   1.0000     1.74e-12           1.68e-12              1.68e-12
+  0.5   1   0.9152     8.86e-07           6.21e-05              8.48e-02
+  0.5   2   0.9152     3.54e-06           6.42e-05              8.48e-02
+  0.5   4   0.9152     1.42e-05           7.30e-05              8.48e-02
+  0.5   8   0.9152     5.67e-05           1.12e-04              8.49e-02
+  1.0   1   0.6421     4.22e-06           2.74e-04              3.58e-01
+  1.0   2   0.6421     1.69e-05           2.83e-04              3.58e-01
+  1.0   4   0.6421     6.75e-05           3.22e-04              3.58e-01
+  1.0   8   0.6421     2.70e-04           5.01e-04              3.58e-01
+[PASS] P1 [numerical] smooth-lapse generator bracket equals the symbol prediction -i(1/2){w, omega omega'} on low-energy states (error < 1e-3, falling ~ q^2 with the lapse wavenumber)
+[PASS] P1b [numerical] at low energy this is the hypersurface-deformation form -i v^2 G[w] with v^2 = theta cot theta (the node's cone, not the light-cone speed 1): within 2%, and the light-cone value is excluded for theta = 0.5, 1
+[PASS] P2 [numerical] offsetting the generator by E (step e^{iE} W) adds exactly the lapse-weighted current +iE(1/2){w, d_k h}, not a translation
+        relative residual 1.75e-06 (E = 0.3)
+[PASS] P2b [numerical] species at k ~ pi (quasi-energy ~ pi): principal-branch generator fails the Dirac form; the generator of -W fixes it but breaks the k ~ 0 species; the generator of W^2 (lapse unit two steps) gives the Dirac form for both
+        rel. deviation from -i v^2 G[w]: principal 6.23; -W: k~pi 6.3e-05, k~0 6.23; W^2: k~0 6.5e-05, k~pi 6.3e-05
+
+  P3: smooth-lapse group commutator, packets (sigma = 20 cells), N = A cos, M = A sin, w = A^2 q
+  theta  A   k0   band     dx        -w g(k0)   ratio
+  0.0  16  +0.1  +1     -0.3881    -0.3927   0.9884
+  0.0  16  -0.1  +1     -0.3974    -0.3927   1.0120
+  0.0  16  +0.1  -1     -0.3974    -0.3927   1.0120
+  0.0  16  +0.3  +1     -0.3881    -0.3927   0.9884
+  0.0  32  +0.1  +1     -1.5350    -1.5708   0.9772
+  0.0  32  -0.1  +1     -1.6091    -1.5708   1.0244
+  0.0  32  +0.1  -1     -1.6091    -1.5708   1.0244
+  0.0  32  +0.3  +1     -1.5350    -1.5708   0.9772
+  0.2  16  +0.1  +1     -0.3855    -0.3874   0.9951
+  0.2  16  -0.1  +1     -0.3895    -0.3874   1.0053
+  0.2  16  +0.1  -1     -0.3895    -0.3874   1.0053
+  0.2  16  +0.3  +1     -0.3836    -0.3873   0.9905
+  0.2  32  +0.1  +1     -1.5350    -1.5497   0.9905
+  0.2  32  -0.1  +1     -1.5668    -1.5497   1.0111
+  0.2  32  +0.1  -1     -1.5668    -1.5497   1.0111
+  0.2  32  +0.3  +1     -1.5202    -1.5490   0.9814
+  0.5  16  +0.1  +1     -0.3586    -0.3593   0.9981
+  0.5  16  -0.1  +1     -0.3601    -0.3593   1.0022
+  0.5  16  +0.1  -1     -0.3601    -0.3593   1.0022
+  0.5  16  +0.3  +1     -0.3564    -0.3583   0.9947
+  0.5  32  +0.1  +1     -1.4322    -1.4372   0.9966
+  0.5  32  -0.1  +1     -1.4441    -1.4372   1.0048
+  0.5  32  +0.1  -1     -1.4441    -1.4372   1.0048
+  0.5  32  +0.3  +1     -1.4185    -1.4331   0.9898
+[PASS] P3 [numerical] smooth-lapse group commutator displaces every packet (both chiralities and bands) by -w g(k0) within 3%; at small k0 this is -v^2 w
+
+TOTAL: PASS=7 FAIL=0  (131.9 s)

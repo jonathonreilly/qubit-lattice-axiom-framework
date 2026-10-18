@@ -33,3 +33,4 @@
     - integrate these results;
     - around 12:00Z, a fresh-context coherence review of the scale-ladder note;
     - final summary before 14:14Z.
+- **09:55Z.** B20 (search) and B22 (QCA local lapse) are done, with checks running. B21's check is integrated into both PRs. Next: integrate the B20 and B22 checks into the scale-ladder note, then a fresh-context coherence review of the note, then the final summary.

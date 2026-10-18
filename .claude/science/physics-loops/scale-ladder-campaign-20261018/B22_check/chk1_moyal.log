@@ -1,0 +1,17 @@
+[PASS] M1 [exact] 1D, arbitrary matrix h: zeroth order vanishes; first-order element = (b-a)(1/2){h,h'} = (b-a)(1/2)d(h^2)  [symbol -i w (1/2) d_k h^2]
+        O(1) = -a*h0*h1/2 - a*h1*h0/2 + b*h0*h1/2 + b*h1*h0/2
+        O(3) term: -a**3*h0*h3/48 - a**3*h1*h2/16 - a**3*h2*h1/16 - a**3*h3*h0/48 + a**2*b*h0*h3/16 + a**2*b*h1*h2/16 + a**2*b*h2*h1/16 + a**2*b*h3*h0/16 - a*b**2*h0*h3/16 - a*b**2*h1*h2/16 - a*b**2*h2*h1/16 - a*b**2*h3*h0/16 + b**3*h0*h3/48 + b**3*h1*h2/16 + b**3*h2*h1/16 + b**3*h3*h0/48
+[PASS] M2 [exact; corrects the checker's own prior guess of a w'[h,h''] term] 1D, arbitrary matrix h: the O(2) element vanishes identically; the first correction is O(3) (relative O(q^2), the q^2 scaling seen in B22 P1)
+        O(2) = 0
+[PASS] M3 [exact] 3D Weyl h = sigma.k: E = (b-a).m + (i/2)(a x b).sigma exactly: orbital -i(1/2){w,p} and spin -(i/4)(curl w).sigma (the Kosmann term) -- second order in lapse gradients, absent when grad N || grad M
+[PASS] M4 [exact] constant triad h = sigma_a e_aj k_j (non-diagonal e): orbital element (b-a).g.m with g = e^T e, spin (i/2) sigma.(cof(e)(a x b))
+[PASS] M5a [exact] energy offset h -> h - E0: first-order element gains -(b-a) E0 h'  [symbol +i E0 w d_k h: lapse-weighted current; dominates (1/2)d(h^2) ~ g k as k -> 0]
+        E0*a*h1 - E0*b*h1
+[PASS] M5b [exact] node at k* != 0: (1/2) d(omega^2) = g (p - k*): relative to G built from the lattice momentum p the bracket carries an extra +i g k* w * (density) term; it is geometric only for G built from p - k*
+[PASS] M6 [exact] N = cos qx, M = sin qx: k -> k +- 2q elements vanish; diagonal element K(k) = -(i/8)[(h_k+h_{k+q})^2 - (h_k+h_{k-q})^2]
+
+TOTAL: PASS=7 FAIL=0
+[PASS] M7 [exact] multi-D, arbitrary matrix h: the O(2) element is (1/4)(a x b)_z [d_x h, d_y h] -- only the commutator of the velocity matrices (the spin term; no [h, d d h] piece)
+        O(2) = ax*by*Hx*Hy/4 - ax*by*Hy*Hx/4 - ay*bx*Hx*Hy/4 + ay*bx*Hy*Hx/4
+
+TOTAL (incl. M7): PASS=8 FAIL=0

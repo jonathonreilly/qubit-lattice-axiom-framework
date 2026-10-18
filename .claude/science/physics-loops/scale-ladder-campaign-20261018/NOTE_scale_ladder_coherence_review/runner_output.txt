@@ -1,0 +1,33 @@
+[PASS] translation-invariant gauge on the L = 4 lattice reproduces the flux pattern
+[PASS] rotations, inversion and translations all have PSG lifts; translations act without gauge signs
+Part 1: rotations act on crystal momentum affinely, k -> R k + pi s_R
+[PASS] every twisted rotation maps each Bloch space onto exactly one Bloch space, with a single shift s_R per rotation (k -> R k + pi s_R)  distinct shift vectors [(np.int64(0), np.int64(0), np.int64(0)), (np.int64(0), np.int64(0), np.int64(1)), (np.int64(0), np.int64(1), np.int64(0)), (np.int64(0), np.int64(1), np.int64(1)), (np.int64(1), np.int64(0), np.int64(0)), (np.int64(1), np.int64(0), np.int64(1)), (np.int64(1), np.int64(1), np.int64(0)), (np.int64(1), np.int64(1), np.int64(1))]
+[PASS] the eight momenta (pi/2)(+-1,+-1,+-1) split into orbits {k*}, {-k*} (little group O) and two 3-point orbits k*+pi e_i, -k*+pi e_i whose little group is D4 about the axis e_i and contains all three axis C2s (forcing even levels and uniaxial cones there)  orbit sizes [1, 1, 3, 3, 3, 3, 3, 3]
+[PASS] exactly two momenta are fixed by all 24 rotations: k* = (pi/2)(1,-1,1) and -k* (UV PSG data -> IR valley position)  fixed momenta in units of pi/2: [(np.int64(-1), np.int64(1), np.int64(-1)), (np.int64(1), np.int64(-1), np.int64(1))]
+
+Part 2: the fixed-momentum space carries only the spin-1/2 class, for every symmetric Hamiltonian
+[PASS] the twelve Bloch states at k* and at -k* each form a linear representation of the binary octahedral group in which the central element acts as -1 (all spinorial)  k*: {'E1/2': 1, 'E5/2': 1, 'G3/2': 2}; -k*: {'E1/2': 1, 'E5/2': 1, 'G3/2': 2}
+[PASS] six random Hamiltonians commuting with the rotations and translations (strength 1, every range on the torus, real and complex) have only even, spinorial levels at k*  multiplicities [[4, 2, 2, 4], [2, 4, 2, 4]] ...
+[PASS] control: at Gamma, which is not rotation-fixed, the same Hamiltonians have odd multiplicities  Gamma multiplicities [2, 1, 2, 1, 2, 2, 1, 1]
+
+Part 3: emergent isotropy of the Weyl cone (t1 = -1, t2 = 0.2, X strength 0.05)
+[PASS] the cone speed is isotropic at linear order and its relative anisotropy falls as |q|^2 (ratios ~4 per halving): a packet of width w sees anisotropy ~ (a/w)^2  anisotropy [2.59557280e-04 6.48892647e-05 1.62223132e-05], ratios [4. 4.], v -> 0.109594
+
+Part 4: the Dirac mass is protected by site rotations x site inversion at every strength
+[PASS] with strong (0.3) random uniform and staggered terms invariant under site rotations, site inversion and the translations (up to the staggered sign), every level of the folded Hamiltonian at k* has multiplicity divisible by 4: no quartet splitting at any order  multiplicities [4, 4, 4, 4, 4, 4]
+[PASS] an A2 (site-rotation-to-T) breaking of strength eps splits the quartets into doublets with a gap linear in eps ('t Hooft-natural small mass)  gap/eps per quartet [1.8606 2.3996 4.375  2.3996 4.3038 1.9319]
+[PASS] control: keeping the rotations but breaking the inversion leaves every level even (pinned Weyl doublets) but separates the two valleys in energy (some levels 2-fold)  multiplicities [4, 2, 2, 2, 2, 4, 4, 4]
+
+Part 5: invariant kinetic tensors with and without time on the same footing as space
+[PASS] symmetric rank-2 tensors on (t,x,y,z): the 4D hyperoctahedral group (384 elements) leaves one invariant (a common speed for every field), spatial O_h x time reversal (96) leaves two (each field's speed is a free parameter)  1 vs 2
+
+Part 6: parameter-free local step rules fix the speed from the grid alone
+[PASS] minimal Weyl automaton: speed 1/sqrt3 with no parameter; fastest group speed 1/sqrt2 and every component within the one-step cone 1/sqrt3; anisotropy linear in |k| because its dispersion is invariant under C3 but not under the w1-odd edge C2  v = 0.5773622, group speed at the maximiser 0.707107, sampled max component 0.5773, anisotropy [0.00443 0.00221 0.00111]
+[PASS] the corner step W = (link hopping / sqrt2) x (reflection about the eigenvalue-2 space of the on-site corner hopping) is an exact local unitary with no parameter, built from two reflections, commuting with the gauge-dressed rotations and translations  on-site eigenvalues [-2.7321  0.7321  2.    ]
+[PASS] the Bloch step reproduces the real-space step on the torus and stays unitary at off-grid momenta (infinite volume: the link hopping squares to 2 at every k)
+[PASS] at k* the step has a 6-fold node, G3/2 + one spin-1/2 doublet: four bands leave at +-|q|/sqrt3 (each 2-fold; spin-1 x spin-1/2 form) with anisotropy falling as |q|^2, and two bands are exactly flat (forced: +1 spaces of dimension 6 and 8 in 12 meet in >= 2)  node content {'E1/2': 1, 'G3/2': 1}, speed 0.57735026, anisotropy [2.25693831e-07 5.64238268e-08 1.41061515e-08], flat bands at generic k [2, 2, 2, 2, 2]
+[PASS] no-go illustration: with random symmetric on-site unitaries between link reflections, every isolated spin-1/2 doublet at k* has zero velocity (its states are fixed by symmetry; a reflection's projected derivative vanishes since {R, dR} = 0)  largest doublet half-splitting/q 4.85e-09
+[PASS] the diagonal shift S ({d,e} at v -> {d,e} at v+d+e) is a symmetric signed permutation; the step S x link reflection x two Clifford-phase on-site factors has an isolated spin-1/2 Weyl doublet at k* with speed sqrt2/3, anisotropy ~ |q|^2, and Weyl nodes (flux +-1, net 0) at all eight points (pi/2)(+-1,+-1,+-1) at the node quasi-energy, which no other sampled momentum reaches  E = 1.5708, speed 0.47140446, anisotropy [3.94400759e-06 9.86001201e-07 2.46499915e-07], fluxes [1, -1, -1, 1, -1, 1, 1, -1], min distance to E elsewhere 0.198
+[PASS] doubling-corollary ingredient: every level of this step at all eight cube points is even (anticommuting axis-C2 lifts); the gap hypothesis is NOT asserted for this step (coarse-grid empty arcs are reported only)  coarse-grid empty arcs away from E: 193 of 720 bins (not a gap certificate)
+
+TOTAL: PASS=20 FAIL=0

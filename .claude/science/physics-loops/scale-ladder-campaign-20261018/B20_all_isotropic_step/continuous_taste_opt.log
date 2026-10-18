@@ -1,21 +1,25 @@
 L=4: 768 vertices, 2304 edges (1536 on-site)
-  start 0: max-min distance 0.0083  [58s]
-  start 1: max-min distance 0.0064  [159s]
-  start 2: max-min distance 0.0040  [260s]
-  start 3: max-min distance 0.0038  [310s]
-  start 4: max-min distance 0.0039  [395s]
-  start 5: max-min distance 0.0610  [511s]
-  start 6: max-min distance 0.0613  [565s]
-  start 7: max-min distance 0.0607  [623s]
-  start 8: max-min distance 0.0024  [688s]
-  start 9: max-min distance 0.0015  [747s]
-  start 10: max-min distance 0.0081  [812s]
-  start 11: max-min distance 0.0222  [878s]
+  start 0: max-min distance 0.0083  [56s]
+  start 1: max-min distance 0.0064  [153s]
+  start 2: max-min distance 0.0040  [255s]
+  start 3: max-min distance 0.0038  [303s]
+  start 4: max-min distance 0.0039  [388s]
+  start 5: max-min distance 0.0610  [501s]
+  start 6: max-min distance 0.0613  [553s]
+  start 7: max-min distance 0.0607  [609s]
+  start 8: max-min distance 0.0024  [673s]
+  start 9: max-min distance 0.0015  [729s]
+  start 10: max-min distance 0.0081  [792s]
+  start 11: max-min distance 0.0222  [859s]
 [PASS] the k* doublets of the family are at E and E+pi with opposite chiralities and speed 2 sqrt2/3 (bookkeeping lemma)  
+     dist(spec W, E) at X_r, M_r: 4.75e-04, 7.61e-04; Lipschitz certificate outside 0.03-balls at Gamma_r, R_r: False (3456 uncertified cells, 215872 evaluations)
   best m=0.0613 order=0 x=[3.7344 2.6932 5.6394 2.0108 4.3859 1.9652] E=-1.7745: 40^3 det sign change False; 0 crossings away from Gamma_r,R_r, e.g. []
+     dist(spec W, E) at X_r, M_r: 3.65e-04, 5.05e-04; Lipschitz certificate outside 0.03-balls at Gamma_r, R_r: False (1296 uncertified cells, 59392 evaluations)
   best m=0.0610 order=1 x=[1.3897 5.7764 5.8261 2.9808 1.8982 5.8954] E=-0.6178: 40^3 det sign change False; 64 crossings away from Gamma_r,R_r, e.g. [([0.5, 0.0, -0.0], 'band', 0.0007), ([-0.0, 0.5, 0.0], 'band', 0.0007), ([0.0, -0.0, 0.5], 'band', 0.0007)]
+     dist(spec W, E) at X_r, M_r: 6.19e-05, 6.62e-05; Lipschitz certificate outside 0.03-balls at Gamma_r, R_r: False (528 uncertified cells, 46720 evaluations)
   best m=0.0607 order=1 x=[1.6564 4.5495 1.4119 2.6676 3.8042 1.2221] E=-2.2038: 40^3 det sign change False; 36 crossings away from Gamma_r,R_r, e.g. [([0.0, 0.5, -0.0], 'band', 0.0001), ([0.5, -0.0, 0.0], 'band', 0.0001), ([-0.0, 0.0, 0.5], 'band', 0.0001)]
+     dist(spec W, E) at X_r, M_r: 1.51e-01, 1.38e-01; Lipschitz certificate outside 0.03-balls at Gamma_r, R_r: False (639072 uncertified cells, 1768000 evaluations)
   best m=0.0222 order=1 x=[0.3672 2.5315 4.0256 1.9786 3.5135 2.5121] E=-0.2790: 40^3 det sign change True; 80 crossings away from Gamma_r,R_r, e.g. [([0.019, 0.42, 0.018], 'band', 0.2595), ([0.42, 0.018, 0.019], 'band', 0.2595), ([0.018, 0.019, 0.42], 'band', 0.2595)]
-[FAIL] no continuous-phase point found at which E is reached only at Gamma_r and R_r (negative search; best points listed)  best max-min grid distance 0.0613
+[PASS] no optimised continuous-phase point is certified clean (E reached only at Gamma_r, R_r); the best points drive the X_r/M_r doublets towards E (negative search)  best max-min grid distance 0.0613
 
-TOTAL: PASS=1 FAIL=1   [900s]
+TOTAL: PASS=2 FAIL=0   [1002s]

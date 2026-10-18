@@ -1,0 +1,53 @@
+[PASS] L1 [exhaustive over random past-closed cuts] adjacent wire counts differ by <= 1 and #odd-count wires >= T (T over consecutive even runs)
+        295 past-closed cuts tested; adjacency violations 0; lemma violations 0; examples (odd, T) [(100, 16), (90, 46), (90, 4)]
+[PASS] L2 [exact, theta = 0] R content sits exactly on even-count a-wires and odd-count b-wires; window imbalance #R - #a-slots = #odd b - #odd a; the cumulative imbalance grows ~ A (lapse amplitude in periods)
+        A=4: bookkeeping ok, max cumulative R-imbalance 4.3 slots; A=8: bookkeeping ok, max cumulative R-imbalance 8.4 slots; A=16: bookkeeping ok, max cumulative R-imbalance 16.6 slots
+
+  L3: staircase integer-period lapses N = A cos, M = A sin, Lc = 4096, sigma = 20, X0 = 1000
+  theta  A   k0     dx         -w g(k0)   ratio    +band weight
+  0.0   16  +0.1    -0.7749    -0.3927    1.973   0.9450
+  0.0   16  -0.1     0.9001    -0.3927   -2.292   0.9421
+  0.0   32  +0.1    -2.4577    -1.5708    1.565   0.9392
+  0.0   32  -0.1     2.1784    -1.5708   -1.387   0.9417
+  0.2   16  +0.1    -0.3824    -0.3874    0.987   0.9909
+  0.2   16  -0.1    -0.2375    -0.3874    0.613   0.9903
+  0.2   32  +0.1    -1.4107    -1.5497    0.910   0.9921
+  0.2   32  -0.1    -1.2606    -1.5497    0.813   0.9897
+[PASS] L3 [reproduction, independent code] B22 C5 table values (theta = 0, 0.2; A = 16, 32) reproduced
+        max |difference| from B22's log: 4.9e-05
+
+  L4: fixed tilt A*kk = 2pi/128 (Lc = 128 A), staircase lapses, X0 = 0.244 Lc, sigma = 20
+  theta  A    Lc      k0     dx         -w g(k0)   ratio   +band weight
+  0.0   16    2048  +0.1    -0.7659    -0.7854    0.975   0.9523
+  0.0   16    2048  -0.1     1.0210    -0.7854   -1.300   0.9438
+  0.0   32    4096  +0.1    -2.4783    -1.5708    1.578   0.9388
+  0.0   32    4096  -0.1     2.1567    -1.5708   -1.373   0.9420
+  0.0   64    8192  +0.1    -3.2723    -3.1416    1.042   0.9847
+  0.0   64    8192  -0.1     4.8802    -3.1416   -1.553   0.9285
+  0.0  128   16384  +0.1    -6.1265    -6.2832    0.975   0.9671
+  0.0  128   16384  -0.1    11.0965    -6.2832   -1.766   0.9215
+  0.2   16    2048  +0.1    -0.6859    -0.7749    0.885   0.9920
+  0.2   16    2048  -0.1    -0.5546    -0.7749    0.716   0.9907
+  0.2   32    4096  +0.1    -1.4117    -1.5497    0.911   0.9920
+  0.2   32    4096  -0.1    -1.2611    -1.5497    0.814   0.9897
+  0.2   64    8192  +0.1    -2.9361    -3.0994    0.947   0.9895
+  0.2   64    8192  -0.1    -2.7229    -3.0994    0.879   0.9890
+  0.2  128   16384  +0.1    -5.9208    -6.1989    0.955   0.9871
+  0.2  128   16384  -0.1    -5.4083    -6.1989    0.872   0.9882
+  0.5   16    2048  +0.1    -0.7148    -0.7186    0.995   0.9895
+  0.5   16    2048  -0.1    -0.7292    -0.7186    1.015   0.9901
+  0.5   32    4096  +0.1    -1.3679    -1.4372    0.952   0.9894
+  0.5   32    4096  -0.1    -1.2972    -1.4372    0.903   0.9898
+  0.5   64    8192  +0.1    -2.7270    -2.8743    0.949   0.9905
+  0.5   64    8192  -0.1    -2.7307    -2.8743    0.950   0.9897
+  0.5  128   16384  +0.1    -5.4925    -5.7487    0.955   0.9887
+  0.5  128   16384  -0.1    -5.4955    -5.7487    0.956   0.9880
+  theta = 0.2: max |ratio - 1| vs A = 16..128: [0.2843 0.1862 0.1215 0.1275]
+  theta = 0.5: max |ratio - 1| vs A = 16..128: [0.0148 0.0974 0.0513 0.0446]
+  theta = 0: max |ratio - 1| vs A: [2.3   2.373 2.553 2.766]
+[PASS] L4a [numerical] massless walk at fixed tilt: Definition A's commutator does NOT approach -w (deviation stays O(1))
+        [2.3   2.373 2.553 2.766]
+[FAIL] L4b [numerical, informational: PASS = the deviation shrinks monotonically with A at fixed tilt for both massive theta] massive walk: Definition A approaches -w g(k0) as the lapse amplitude grows
+        theta=0.2: [0.2843 0.1862 0.1215 0.1275]; theta=0.5: [0.0148 0.0974 0.0513 0.0446]
+
+TOTAL: PASS=4 FAIL=1  (16.5 s)

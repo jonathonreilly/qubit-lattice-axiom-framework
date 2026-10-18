@@ -248,7 +248,7 @@ The negative claim is G-I: no long-range order, SSB or power-law local correlati
 2. Correlated covariant clocks of finite range. ATTEMPTED, closed by Theorem D.
 3. Exchangeable or "random global speed" clocks. ATTEMPTED, closed by A′.
 4. Clocks with atoms, i.e. synchronous partial updates. ATTEMPTED, closed by the strict-decrease bound in A2.
-5. Infinite-range clocks. ATTEMPTED and **not closed**: they do give order (F). This is outside the claimed domain, and the claim is narrowed to exclude it.
+5. Infinite-range clocks, and exchangeable clocks with ties. ATTEMPTED and **not closed**: they do give order (F, W-tie). This is outside the claimed domain, and the claim is narrowed to exclude it.
 6. Rules with zeros or site dependence. Closed: A–D never use positivity or covariance for the bounds.
 7. `λmin = 0`. Not closed; listed as OPEN.
 

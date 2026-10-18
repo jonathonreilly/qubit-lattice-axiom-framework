@@ -144,7 +144,8 @@ for V, T in cases:
         z = (m - ex[k]) / se
         ok_all &= abs(z) <= 3
         det.append(f"{k} {m:.4f}+-{se:.4f} vs {ex[k]:.4f} (z={z:+.1f})")
-    for j in (1, J):
+    jmax = min(J, int(round(T / 2 / dtau)))  # correlator defined only for tau <= T/2 (both times inside the path)
+    for j in sorted({1, jmax}):
         m, se = r["C"][j]
         z = (m - ex["C"][j]) / se
         ok_all &= abs(z) <= 3

@@ -1,0 +1,5 @@
+rv1_e1_pauli.log: TOTAL: PASS=28 FAIL=0
+rv2_gnvw_reflection.log: TOTAL: PASS=21 FAIL=0
+rv3_group_lemmas.log: TOTAL: PASS=30 FAIL=0
+rv4_diag_exhibit.log: TOTAL: PASS=4 FAIL=0
+TOTAL: PASS=83 FAIL=0

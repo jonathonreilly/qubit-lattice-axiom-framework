@@ -1,0 +1,7 @@
+# Zone-boundary provenance
+
+Root authored calculations in /private/tmp; independent focused checks preserve original source identities. Packaged imports/output paths are made portable and replayed. The first exact local-kernel test omitted ell8 output for an ell6 source and failed its full reconstruction assertion atL16; preserved diagnostic is not an accepted result. Corrected L18/20 with targetell1..8 avoids folding.
+
+Native periodic qpi full-H data are frozen auxiliary inputs, with replay code supplied; aggregate does not rerun the large eigensolve. Accepted indices0,2 at bothratios; allothers rejected, especially lambda.2 near-duplicateindex1. No empirical dataset used. The exact native scalar basis and local kernels are distinguished from the conditional infinite crossover operator. Abstract-level primary prior art was checked via arxiv0906.4462 and DOI10.1103/PhysRevB.103.144419; context only, no proof imports or general novelty claim.
+
+Repository refresh: origin/main remainsfa841753c1a6296e5ad45518375660b0f1004769. PR9718 headad5913ffa685db47858bc11ee2597983768eff19 offers conditional formation/fermion/graviton results in supplied classes; PR9725 head24daf0bc43bf9eb2844abd55b93d01f91670f4f6 offers supplied finite-range two-body apparatus with cat-register/preparation assumptions. Their PR descriptions were inspected as context, not independently validated or adopted as native-H derivations. No other work was modified.

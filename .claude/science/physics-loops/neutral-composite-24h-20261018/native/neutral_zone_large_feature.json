@@ -1,0 +1,56 @@
+{
+  "kappa_critical": "1.04521435825597128836989710291531597484665393177017281880879",
+  "short_root": "-0.166262228118770949586722095809996054074333881936574267847897",
+  "beta_slope": "0.481280830410805705421572285439635948728995949535393118636099",
+  "threshold_B_over_A": "-0.167993376787152010593199678680083394997258902229306168297529",
+  "residue_times_mean_limit": "0.692235021070046002802687683747914816140393704470084567178733",
+  "binding_quadratic": "0.473735533207416932503995931160720046905829558079947817951569",
+  "rows": [
+    {
+      "delta": 0.01,
+      "beta": 0.004823241163476465,
+      "beta_over_delta": 0.4823241163476465,
+      "binding_over_delta2": 0.4734675242270763,
+      "residue": 0.006645968179693401,
+      "mean_host_index": 103.29806649855033,
+      "residue_times_mean": 0.6865156629732184
+    },
+    {
+      "delta": 0.003,
+      "beta": 0.0014447795810771634,
+      "beta_over_delta": 0.4815931936923878,
+      "binding_over_delta2": 0.473655072563312,
+      "residue": 0.001997402879869357,
+      "mean_host_index": 345.70648362375624,
+      "residue_times_mean": 0.6905151259795995
+    },
+    {
+      "delta": 0.001,
+      "beta": 0.0004813848923667051,
+      "beta_over_delta": 0.4813848923667051,
+      "binding_over_delta2": 0.4737087075546755,
+      "residue": 0.0006661461236550347,
+      "mean_host_index": 1038.3027213931612,
+      "residue_times_mean": 0.6916613330365278
+    },
+    {
+      "delta": 0.0003,
+      "beta": 0.00014439361283781973,
+      "beta_over_delta": 0.4813120427927324,
+      "binding_over_delta2": 0.4737274849431335,
+      "residue": 0.0001998801144557696,
+      "mean_host_index": 3462.389821105353,
+      "residue_times_mean": 0.6920628737330295
+    },
+    {
+      "delta": 0.0001,
+      "beta": 4.812912339473245e-05,
+      "beta_over_delta": 0.4812912339473245,
+      "binding_over_delta2": 0.4737328503985969,
+      "residue": 6.663016091976684e-05,
+      "mean_host_index": 10388.353039694593,
+      "residue_times_mean": 0.6921776347261998
+    }
+  ],
+  "scope": "Conditional effective operator only; feature size diverges by momentum approach to threshold, no parameter-free physical large feature"
+}

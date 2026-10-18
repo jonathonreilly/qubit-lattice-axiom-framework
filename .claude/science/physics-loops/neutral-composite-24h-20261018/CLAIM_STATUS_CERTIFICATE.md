@@ -17,3 +17,5 @@ Independent exact internal factor, all-L minimum-order proof, readout representa
 Neutral-domain block actual_current_surface_status: conditional-support. Finite rational entries exact-support; numerical closure bounded-support; infinite expanded-chain pole conditional-support. proposal_allowed:false; bare_retained_allowed:false. No physical scalar, gravity, matter coupling or observational identification.
 
 Local-proof block current-surface: exact-support for finite-band symmetry completeness and formal local coefficients; bounded-support for frozen finite native eigenpair tests. Supplied H, anisotropy, tube, parity and invariant state/source remain. Proposed-retained/promoted wording not allowed. Independent pre-PR review PASS, independent post-landing audit remains separate. No infinite native pole or physical scalar certification.
+
+Zone-boundary block: conditional-support forinfiniteMboundmodes/crossover/size-law, exact-support forspecifiedlocalsymmetry/coefficientstatements, bounded-support forfinitefullHresponse. No proposed-retained/promoted, no nativeuniformpole/physicalscalar claim. Independent pre-PR reviewPASS; post-landing audit separate.

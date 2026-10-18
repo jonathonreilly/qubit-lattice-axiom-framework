@@ -1,0 +1,656 @@
+[
+  {
+    "L": 18,
+    "kind": "edge",
+    "ell": 1,
+    "kernels": [
+      {
+        "kind": "edge",
+        "ell": 1,
+        "start": 0,
+        "unnormalized_coefficient": "1/4",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 1,
+        "start": 1,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 1,
+        "start": 17,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 3,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 3,
+        "start": 16,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      }
+    ]
+  },
+  {
+    "L": 18,
+    "kind": "edge",
+    "ell": 2,
+    "kernels": [
+      {
+        "kind": "edge",
+        "ell": 2,
+        "start": 0,
+        "unnormalized_coefficient": "-1/2",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 4,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 4,
+        "start": 16,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "diagonal",
+        "ell": 2,
+        "start": 0,
+        "unnormalized_coefficient": "-2",
+        "source_norm": 32,
+        "target_norm": 16
+      }
+    ]
+  },
+  {
+    "L": 18,
+    "kind": "edge",
+    "ell": 3,
+    "kernels": [
+      {
+        "kind": "edge",
+        "ell": 1,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 1,
+        "start": 2,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 3,
+        "start": 0,
+        "unnormalized_coefficient": "-1/2",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 5,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 5,
+        "start": 16,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      }
+    ]
+  },
+  {
+    "L": 18,
+    "kind": "edge",
+    "ell": 4,
+    "kernels": [
+      {
+        "kind": "edge",
+        "ell": 2,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 2,
+        "start": 2,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 4,
+        "start": 0,
+        "unnormalized_coefficient": "-1/2",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 6,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 6,
+        "start": 16,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      }
+    ]
+  },
+  {
+    "L": 18,
+    "kind": "edge",
+    "ell": 5,
+    "kernels": [
+      {
+        "kind": "edge",
+        "ell": 3,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 3,
+        "start": 2,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 5,
+        "start": 0,
+        "unnormalized_coefficient": "-1/2",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 7,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 7,
+        "start": 16,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      }
+    ]
+  },
+  {
+    "L": 18,
+    "kind": "edge",
+    "ell": 6,
+    "kernels": [
+      {
+        "kind": "edge",
+        "ell": 4,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 4,
+        "start": 2,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 6,
+        "start": 0,
+        "unnormalized_coefficient": "-1/2",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 8,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 8,
+        "start": 16,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      }
+    ]
+  },
+  {
+    "L": 18,
+    "kind": "diagonal",
+    "ell": 2,
+    "kernels": [
+      {
+        "kind": "edge",
+        "ell": 2,
+        "start": 0,
+        "unnormalized_coefficient": "-1",
+        "source_norm": 16,
+        "target_norm": 32
+      },
+      {
+        "kind": "diagonal",
+        "ell": 2,
+        "start": 0,
+        "unnormalized_coefficient": "-2",
+        "source_norm": 16,
+        "target_norm": 16
+      }
+    ]
+  },
+  {
+    "L": 18,
+    "kind": "diagonal",
+    "ell": 4,
+    "kernels": [
+      {
+        "kind": "diagonal",
+        "ell": 4,
+        "start": 0,
+        "unnormalized_coefficient": "-2",
+        "source_norm": 16,
+        "target_norm": 16
+      }
+    ]
+  },
+  {
+    "L": 18,
+    "kind": "diagonal",
+    "ell": 6,
+    "kernels": [
+      {
+        "kind": "diagonal",
+        "ell": 6,
+        "start": 0,
+        "unnormalized_coefficient": "-2",
+        "source_norm": 16,
+        "target_norm": 16
+      }
+    ]
+  },
+  {
+    "L": 20,
+    "kind": "edge",
+    "ell": 1,
+    "kernels": [
+      {
+        "kind": "edge",
+        "ell": 1,
+        "start": 0,
+        "unnormalized_coefficient": "1/4",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 1,
+        "start": 1,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 1,
+        "start": 19,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 3,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 3,
+        "start": 18,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      }
+    ]
+  },
+  {
+    "L": 20,
+    "kind": "edge",
+    "ell": 2,
+    "kernels": [
+      {
+        "kind": "edge",
+        "ell": 2,
+        "start": 0,
+        "unnormalized_coefficient": "-1/2",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 4,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 4,
+        "start": 18,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "diagonal",
+        "ell": 2,
+        "start": 0,
+        "unnormalized_coefficient": "-2",
+        "source_norm": 32,
+        "target_norm": 16
+      }
+    ]
+  },
+  {
+    "L": 20,
+    "kind": "edge",
+    "ell": 3,
+    "kernels": [
+      {
+        "kind": "edge",
+        "ell": 1,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 1,
+        "start": 2,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 3,
+        "start": 0,
+        "unnormalized_coefficient": "-1/2",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 5,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 5,
+        "start": 18,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      }
+    ]
+  },
+  {
+    "L": 20,
+    "kind": "edge",
+    "ell": 4,
+    "kernels": [
+      {
+        "kind": "edge",
+        "ell": 2,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 2,
+        "start": 2,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 4,
+        "start": 0,
+        "unnormalized_coefficient": "-1/2",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 6,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 6,
+        "start": 18,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      }
+    ]
+  },
+  {
+    "L": 20,
+    "kind": "edge",
+    "ell": 5,
+    "kernels": [
+      {
+        "kind": "edge",
+        "ell": 3,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 3,
+        "start": 2,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 5,
+        "start": 0,
+        "unnormalized_coefficient": "-1/2",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 7,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 7,
+        "start": 18,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      }
+    ]
+  },
+  {
+    "L": 20,
+    "kind": "edge",
+    "ell": 6,
+    "kernels": [
+      {
+        "kind": "edge",
+        "ell": 4,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 4,
+        "start": 2,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 6,
+        "start": 0,
+        "unnormalized_coefficient": "-1/2",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 8,
+        "start": 0,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      },
+      {
+        "kind": "edge",
+        "ell": 8,
+        "start": 18,
+        "unnormalized_coefficient": "-1/8",
+        "source_norm": 32,
+        "target_norm": 32
+      }
+    ]
+  },
+  {
+    "L": 20,
+    "kind": "diagonal",
+    "ell": 2,
+    "kernels": [
+      {
+        "kind": "edge",
+        "ell": 2,
+        "start": 0,
+        "unnormalized_coefficient": "-1",
+        "source_norm": 16,
+        "target_norm": 32
+      },
+      {
+        "kind": "diagonal",
+        "ell": 2,
+        "start": 0,
+        "unnormalized_coefficient": "-2",
+        "source_norm": 16,
+        "target_norm": 16
+      }
+    ]
+  },
+  {
+    "L": 20,
+    "kind": "diagonal",
+    "ell": 4,
+    "kernels": [
+      {
+        "kind": "diagonal",
+        "ell": 4,
+        "start": 0,
+        "unnormalized_coefficient": "-2",
+        "source_norm": 16,
+        "target_norm": 16
+      }
+    ]
+  },
+  {
+    "L": 20,
+    "kind": "diagonal",
+    "ell": 6,
+    "kernels": [
+      {
+        "kind": "diagonal",
+        "ell": 6,
+        "start": 0,
+        "unnormalized_coefficient": "-2",
+        "source_norm": 16,
+        "target_norm": 16
+      }
+    ]
+  }
+]

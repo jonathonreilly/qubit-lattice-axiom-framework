@@ -21,3 +21,7 @@ Neutral-domain block: independent second/third/fourth canonical checks, exact ra
 Final affected replay: all10probes passed44.324s with stable input identities; cache logs/runner-cache/native_neutral_domain_resonance.txt. Outputfile parent membership guard failure resolved by completed initial creation and unchanged-byte rerun, not bypassed. Focused review disposition pass for finite/conditional scope.
 
 Local-proof block: independent local wall, full canonical boundary, scalar-band symmetry and physical reduced-H checks PASS. Astra low focused final review PASS after correcting numerical ground residual bound to1e-12. Source-bound aggregate5probes passed16.681s. No audit verdict applied.
+
+Zone-boundary block: focused independent localK2, reflection/checkerboard, halfline threshold/count, large-feature normalization/size, and physicalqpi finite-H checksPASS. Astra-low finalreviewPASS. No formal audit applied. Initial localtest rangefailure preserved and corrected.
+
+Source-bound replay: four probes passed in 42.737096 seconds; final focused review PASS; citation graph and manifest regenerated after source freeze.

@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/native_zone_boundary_composite.py
+runner_sha256: f632acee8c8a90fd48b620e5f4879d93705249726da7332b1d7061f22d0d429f
+input_fingerprint_sha256: 6884161956cb0e7f4314e7e1627e5ccb1570af50550be814732db060c1406e4c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 42.74
+status: ok
+----- stdout -----
+reproduced neutral_zone_boundary
+reproduced neutral_zone_local_second
+reproduced neutral_zone_exact_math
+reproduced neutral_zone_large_feature
+per_site: one physical qubit; original directional Hamiltonian
+per_mode: zone-boundary composite and readout derived
+per_block: conditional crossover and large-feature size/residue law
+lattice_wide: native uniform control and physical observation bridge open
+
+----- stderr -----
+

@@ -1,0 +1,2145 @@
+{
+  "inputs": {
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_zone_boundary.py": "6cb5c73f7b785b581c2c0bb7f8fdefa3b579e54820ad4bebfa55f5dd39153f69",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_zone_local_second.py": "971a7b17e341a7324fd1a9fb524957ee7a173075f20d0af13a6014012c3feb75",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_zone_exact_math.py": "47b6ba85b485650c6603f5b2febe447feaba6a43ba569220283b11a5de527632",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_zone_large_feature.py": "2e24443e2125f13a664f03c87a96f951a14829b5ac98d3d4ca9cd69f720f6f65",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_native_periodic_pi_pole.py": "7f8fceaca39d26fbabda3342c1eb7a41d4f8c96c5feeefbd8cbf4a04e5c359a5",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_scalar_explicit_basis.py": "638b21aba1240d49871bbd6574f16e2ddda099b230dc0b8321d99f819d20e5d9",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_native_periodic_pi_pole.json": "57c6f13b35ac717897c75581c4066602bbd1baa1757b31a7e3bb608763ec47b9"
+  },
+  "results": {
+    "neutral_zone_boundary": [
+      {
+        "L": 6,
+        "labels": [
+          [
+            "edge",
+            1
+          ],
+          [
+            "edge",
+            2
+          ],
+          [
+            "diagonal",
+            2
+          ]
+        ],
+        "H1norm": 1.7926947684481243e-15,
+        "H3norm": 1.3067192981873881e-15,
+        "H2": [
+          [
+            0.5,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.75,
+            -1.414213562373
+          ],
+          [
+            0.0,
+            -1.414213562373,
+            -2.0
+          ]
+        ],
+        "imaginary_error": 1.1832913578315177e-30,
+        "reflection_checkerboard_error": 2.000957310988403e-15,
+        "energies": [
+          -2.921164609606623,
+          0.17116460960662602,
+          0.5000000000000013
+        ],
+        "source_weights": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "L": 8,
+        "labels": [
+          [
+            "edge",
+            1
+          ],
+          [
+            "edge",
+            2
+          ],
+          [
+            "edge",
+            3
+          ],
+          [
+            "edge",
+            4
+          ],
+          [
+            "diagonal",
+            2
+          ],
+          [
+            "diagonal",
+            4
+          ]
+        ],
+        "H1norm": 3.846998857166836e-15,
+        "H3norm": 2.2732865041637248e-15,
+        "H2": [
+          [
+            0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.353553390593,
+            -1.414213562373,
+            0.0
+          ],
+          [
+            0.25,
+            0.0,
+            -0.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.353553390593,
+            0.0,
+            -0.5,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            -2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0
+          ]
+        ],
+        "imaginary_error": 6.598287728336319e-17,
+        "reflection_checkerboard_error": 3.513035822242951e-15,
+        "energies": [
+          -2.8649980653902545,
+          -2.0,
+          -0.5835791223046375,
+          -0.32569390943299864,
+          0.4485771876948924,
+          0.5756939094329987
+        ],
+        "source_weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.08397485283107814,
+          0.0,
+          0.9160251471689219
+        ]
+      },
+      {
+        "L": 10,
+        "labels": [
+          [
+            "edge",
+            1
+          ],
+          [
+            "edge",
+            2
+          ],
+          [
+            "edge",
+            3
+          ],
+          [
+            "edge",
+            4
+          ],
+          [
+            "diagonal",
+            2
+          ],
+          [
+            "diagonal",
+            4
+          ]
+        ],
+        "H1norm": 5.278028631759884e-15,
+        "H3norm": 2.8005388700726373e-15,
+        "H2": [
+          [
+            0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            -1.414213562373,
+            0.0
+          ],
+          [
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.0,
+            -0.75,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            -2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0
+          ]
+        ],
+        "imaginary_error": 4.7488732231679196e-17,
+        "reflection_checkerboard_error": 4.295802431389899e-15,
+        "energies": [
+          -2.8587110684594768,
+          -1.999999999999995,
+          -0.782465355435148,
+          -0.5590169943749507,
+          0.39117642389463103,
+          0.5590169943749507
+        ],
+        "source_weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.05278640450004204,
+          0.0,
+          0.9472135954999578
+        ]
+      },
+      {
+        "L": 12,
+        "labels": [
+          [
+            "edge",
+            1
+          ],
+          [
+            "edge",
+            2
+          ],
+          [
+            "edge",
+            3
+          ],
+          [
+            "edge",
+            4
+          ],
+          [
+            "edge",
+            5
+          ],
+          [
+            "edge",
+            6
+          ],
+          [
+            "diagonal",
+            2
+          ],
+          [
+            "diagonal",
+            4
+          ],
+          [
+            "diagonal",
+            6
+          ]
+        ],
+        "H1norm": 7.841067786687415e-15,
+        "H3norm": 3.809389859204085e-15,
+        "H2": [
+          [
+            0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.353553390593,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.353553390593,
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0
+          ]
+        ],
+        "imaginary_error": 1.5496805354954713e-16,
+        "reflection_checkerboard_error": 7.526030268762237e-15,
+        "energies": [
+          -2.8580314929404853,
+          -2.0000000000000053,
+          -1.9999999999999971,
+          -0.8684859037360679,
+          -0.6933468529126565,
+          -0.18400646517198552,
+          -0.12000765698430176,
+          0.4105238618485373,
+          0.5633545098969598
+        ],
+        "source_weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.03222650706113798,
+          0.0,
+          0.03344553687972609,
+          0.0,
+          0.9343279560591359
+        ]
+      },
+      {
+        "L": 14,
+        "labels": [
+          [
+            "edge",
+            1
+          ],
+          [
+            "edge",
+            2
+          ],
+          [
+            "edge",
+            3
+          ],
+          [
+            "edge",
+            4
+          ],
+          [
+            "edge",
+            5
+          ],
+          [
+            "edge",
+            6
+          ],
+          [
+            "diagonal",
+            2
+          ],
+          [
+            "diagonal",
+            4
+          ],
+          [
+            "diagonal",
+            6
+          ]
+        ],
+        "H1norm": 9.22000917844071e-15,
+        "H3norm": 4.189163697472178e-15,
+        "H2": [
+          [
+            0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.75,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0
+          ]
+        ],
+        "imaginary_error": 1.6535574058233206e-16,
+        "reflection_checkerboard_error": 8.137416655914546e-15,
+        "energies": [
+          -2.8579585267059198,
+          -1.9999999999999953,
+          -1.9999999999999953,
+          -0.9124628487922285,
+          -0.7756937622741676,
+          -0.38461591527702294,
+          -0.2865913722582297,
+          0.4050372907751718,
+          0.5622851345323925
+        ],
+        "source_weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.020640084778401874,
+          0.0,
+          0.040841201745189945,
+          0.0,
+          0.9385187134764083
+        ]
+      },
+      {
+        "L": 16,
+        "labels": [
+          [
+            "edge",
+            1
+          ],
+          [
+            "edge",
+            2
+          ],
+          [
+            "edge",
+            3
+          ],
+          [
+            "edge",
+            4
+          ],
+          [
+            "edge",
+            5
+          ],
+          [
+            "edge",
+            6
+          ],
+          [
+            "edge",
+            7
+          ],
+          [
+            "edge",
+            8
+          ],
+          [
+            "diagonal",
+            2
+          ],
+          [
+            "diagonal",
+            4
+          ],
+          [
+            "diagonal",
+            6
+          ],
+          [
+            "diagonal",
+            8
+          ]
+        ],
+        "H1norm": 1.0720750507070669e-14,
+        "H3norm": 4.8306156638778355e-15,
+        "H2": [
+          [
+            0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.353553390593,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.353553390593,
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0
+          ]
+        ],
+        "imaginary_error": 1.0886936671029491e-16,
+        "reflection_checkerboard_error": 1.0199603104609712e-14,
+        "energies": [
+          -2.8579507002697087,
+          -2.0,
+          -2.0,
+          -1.9999999999999998,
+          -0.9377190838368802,
+          -0.8292990096810617,
+          -0.5298967973765497,
+          -0.42401297358604806,
+          -0.08115655766046061,
+          -0.05924163984873191,
+          0.40672313914359937,
+          0.5625536231158417
+        ],
+        "source_weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.013882873442992634,
+          0.0,
+          0.035117165439963294,
+          0.0,
+          0.013807256633914895,
+          0.0,
+          0.9371927044831289
+        ]
+      },
+      {
+        "L": 20,
+        "labels": [
+          [
+            "edge",
+            1
+          ],
+          [
+            "edge",
+            2
+          ],
+          [
+            "edge",
+            3
+          ],
+          [
+            "edge",
+            4
+          ],
+          [
+            "edge",
+            5
+          ],
+          [
+            "edge",
+            6
+          ],
+          [
+            "edge",
+            7
+          ],
+          [
+            "edge",
+            8
+          ],
+          [
+            "edge",
+            9
+          ],
+          [
+            "edge",
+            10
+          ],
+          [
+            "diagonal",
+            2
+          ],
+          [
+            "diagonal",
+            4
+          ],
+          [
+            "diagonal",
+            6
+          ],
+          [
+            "diagonal",
+            8
+          ],
+          [
+            "diagonal",
+            10
+          ]
+        ],
+        "H1norm": 1.4007814398945764e-14,
+        "H3norm": 5.789947708075736e-15,
+        "H2": [
+          [
+            0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.353553390593,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.353553390593,
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0
+          ]
+        ],
+        "imaginary_error": 2.680552082551884e-16,
+        "reflection_checkerboard_error": 1.2738061676426779e-14,
+        "energies": [
+          -2.8579497709001864,
+          -2.0000000000000115,
+          -2.0000000000000115,
+          -2.0000000000000115,
+          -1.999999999999995,
+          -0.9639728968226614,
+          -0.8920763951297552,
+          -0.7070499537967856,
+          -0.611526586719541,
+          -0.33293294588117717,
+          -0.27406456099679033,
+          -0.04446633453047517,
+          -0.03483580980889074,
+          0.4063719019312518,
+          0.5625033526549645
+        ],
+        "source_weights": [
+          1.038613022560378e-42,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          6.887621731473081e-38,
+          0.007074826056183605,
+          9.972187959442334e-36,
+          0.021990833030649286,
+          1.6606172906643232e-34,
+          0.026783693784280305,
+          9.956243963946429e-34,
+          0.006676573388080362,
+          8.476566205846225e-36,
+          0.9374740737408065
+        ]
+      }
+    ],
+    "neutral_zone_local_second": [
+      {
+        "L": 18,
+        "kind": "edge",
+        "ell": 1,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 0,
+            "unnormalized_coefficient": "1/4",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 1,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 17,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 16,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "edge",
+        "ell": 2,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 16,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "diagonal",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 32,
+            "target_norm": 16
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "edge",
+        "ell": 3,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 5,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 5,
+            "start": 16,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "edge",
+        "ell": 4,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 6,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 6,
+            "start": 16,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "edge",
+        "ell": 5,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 5,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 7,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 7,
+            "start": 16,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "edge",
+        "ell": 6,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 6,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 8,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 8,
+            "start": 16,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "diagonal",
+        "ell": 2,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-1",
+            "source_norm": 16,
+            "target_norm": 32
+          },
+          {
+            "kind": "diagonal",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 16,
+            "target_norm": 16
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "diagonal",
+        "ell": 4,
+        "kernels": [
+          {
+            "kind": "diagonal",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 16,
+            "target_norm": 16
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "diagonal",
+        "ell": 6,
+        "kernels": [
+          {
+            "kind": "diagonal",
+            "ell": 6,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 16,
+            "target_norm": 16
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "edge",
+        "ell": 1,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 0,
+            "unnormalized_coefficient": "1/4",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 1,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 19,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 18,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "edge",
+        "ell": 2,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 18,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "diagonal",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 32,
+            "target_norm": 16
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "edge",
+        "ell": 3,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 5,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 5,
+            "start": 18,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "edge",
+        "ell": 4,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 6,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 6,
+            "start": 18,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "edge",
+        "ell": 5,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 5,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 7,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 7,
+            "start": 18,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "edge",
+        "ell": 6,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 6,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 8,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 8,
+            "start": 18,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "diagonal",
+        "ell": 2,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-1",
+            "source_norm": 16,
+            "target_norm": 32
+          },
+          {
+            "kind": "diagonal",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 16,
+            "target_norm": 16
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "diagonal",
+        "ell": 4,
+        "kernels": [
+          {
+            "kind": "diagonal",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 16,
+            "target_norm": 16
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "diagonal",
+        "ell": 6,
+        "kernels": [
+          {
+            "kind": "diagonal",
+            "ell": 6,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 16,
+            "target_norm": 16
+          }
+        ]
+      }
+    ],
+    "neutral_zone_exact_math": {
+      "threshold_polynomial": "16*r**4 + 92*r**3 + 39*r**2 - 2*r - 1",
+      "admissible_r": [
+        -0.45526822471623574,
+        -0.16626222811877095
+      ],
+      "thresholds": [
+        0.16294389268477505,
+        1.0452143582559714
+      ],
+      "odd_energy": "9/16",
+      "odd_boundary_weight": "15/16",
+      "odd_source_weight_coefficient": "15/4",
+      "upper_curvature": "208/27",
+      "side_bound_energies": [
+        "-38/31 + 16*sqrt(10)/31",
+        "-16*sqrt(10)/31 - 38/31"
+      ],
+      "finite_controls": [
+        {
+          "kappa": 0,
+          "top_values": [
+            -9.678250273998955e-05,
+            0.4063368568610991,
+            0.5624999999999999
+          ],
+          "finite_count": 2,
+          "continuum_upper": 0
+        },
+        {
+          "kappa": 0.1,
+          "top_values": [
+            0.19989307810860882,
+            0.3602511101989204,
+            0.6211496421674416
+          ],
+          "finite_count": 2,
+          "continuum_upper": 0.2
+        },
+        {
+          "kappa": 0.3,
+          "top_values": [
+            0.5994938962509749,
+            0.5998734627688854,
+            0.8554246826239743
+          ],
+          "finite_count": 1,
+          "continuum_upper": 0.6
+        },
+        {
+          "kappa": 0.7,
+          "top_values": [
+            1.3993237180122668,
+            1.3998308996852593,
+            1.4554208063978322
+          ],
+          "finite_count": 1,
+          "continuum_upper": 1.4
+        },
+        {
+          "kappa": 1.2,
+          "top_values": [
+            2.398245603986269,
+            2.3992218239230465,
+            2.3998057070598473
+          ],
+          "finite_count": 0,
+          "continuum_upper": 2.4
+        },
+        {
+          "kappa": 2,
+          "top_values": [
+            3.997447694848872,
+            3.9988655721347177,
+            3.999716382539079
+          ],
+          "finite_count": 0,
+          "continuum_upper": 4
+        }
+      ],
+      "scope": "Exact algebra and conditional halfline proof controls, not native uniform-limit theorem"
+    },
+    "neutral_zone_large_feature": {
+      "kappa_critical": "1.04521435825597128836989710291531597484665393177017281880879",
+      "short_root": "-0.166262228118770949586722095809996054074333881936574267847897",
+      "beta_slope": "0.481280830410805705421572285439635948728995949535393118636099",
+      "threshold_B_over_A": "-0.167993376787152010593199678680083394997258902229306168297529",
+      "residue_times_mean_limit": "0.692235021070046002802687683747914816140393704470084567178733",
+      "binding_quadratic": "0.473735533207416932503995931160720046905829558079947817951569",
+      "rows": [
+        {
+          "delta": 0.01,
+          "beta": 0.004823241163476465,
+          "beta_over_delta": 0.4823241163476465,
+          "binding_over_delta2": 0.4734675242270763,
+          "residue": 0.006645968179693401,
+          "mean_host_index": 103.29806649855033,
+          "residue_times_mean": 0.6865156629732184
+        },
+        {
+          "delta": 0.003,
+          "beta": 0.0014447795810771634,
+          "beta_over_delta": 0.4815931936923878,
+          "binding_over_delta2": 0.473655072563312,
+          "residue": 0.001997402879869357,
+          "mean_host_index": 345.70648362375624,
+          "residue_times_mean": 0.6905151259795995
+        },
+        {
+          "delta": 0.001,
+          "beta": 0.0004813848923667051,
+          "beta_over_delta": 0.4813848923667051,
+          "binding_over_delta2": 0.4737087075546755,
+          "residue": 0.0006661461236550347,
+          "mean_host_index": 1038.3027213931612,
+          "residue_times_mean": 0.6916613330365278
+        },
+        {
+          "delta": 0.0003,
+          "beta": 0.00014439361283781973,
+          "beta_over_delta": 0.4813120427927324,
+          "binding_over_delta2": 0.4737274849431335,
+          "residue": 0.0001998801144557696,
+          "mean_host_index": 3462.389821105353,
+          "residue_times_mean": 0.6920628737330295
+        },
+        {
+          "delta": 0.0001,
+          "beta": 4.812912339473245e-05,
+          "beta_over_delta": 0.4812912339473245,
+          "binding_over_delta2": 0.4737328503985969,
+          "residue": 6.663016091976684e-05,
+          "mean_host_index": 10388.353039694593,
+          "residue_times_mean": 0.6921776347261998
+        }
+      ],
+      "scope": "Conditional effective operator only; feature size diverges by momentum approach to threshold, no parameter-free physical large feature"
+    },
+    "neutral_native_periodic_pi_pole": [
+      {
+        "L": 8,
+        "lambda_perp": 0.1,
+        "dimension": 2097152,
+        "ground_energy": -32.04000833864916,
+        "ground_residual": 2.1521151833356822e-13,
+        "source_weight": 0.039951018763217896,
+        "prediction_energy": 8.00575693909433,
+        "prediction_shift": 0.5756939094329987,
+        "prediction_weight_coefficient": 3.6641005886756877,
+        "candidates": [
+          {
+            "quadrature_node": 8.005737479158139,
+            "energy": 8.005737479158025,
+            "residual": 6.264239838198427e-13,
+            "source_weight": 0.03668523573910296,
+            "ritz_norm": 0.9999999999998707,
+            "weight_over_lambda2": 3.6685235739102957
+          },
+          {
+            "quadrature_node": 7.998587868073282,
+            "energy": 7.998587868073251,
+            "residual": 0.11326960841866704,
+            "source_weight": 0.0015518865976983007,
+            "ritz_norm": 1.0000000000112885,
+            "weight_over_lambda2": 0.15518865976983004
+          },
+          {
+            "quadrature_node": 7.9966831907370635,
+            "energy": 7.996683190737173,
+            "residual": 2.0498515530701498e-12,
+            "source_weight": 0.003256374126066383,
+            "ritz_norm": 1.0000000000014981,
+            "weight_over_lambda2": 0.3256374126066382
+          },
+          {
+            "quadrature_node": 7.995128946751279,
+            "energy": 7.995128946751159,
+            "residual": 0.11297798959879983,
+            "source_weight": 0.0015613556167457826,
+            "ritz_norm": 0.9999999999874102,
+            "weight_over_lambda2": 0.15613556167457823
+          },
+          {
+            "quadrature_node": 8.07519112932455,
+            "energy": 8.075191129324473,
+            "residual": 0.08387986772937009,
+            "source_weight": 7.743720274276952e-08,
+            "ritz_norm": 1.0000000000005331,
+            "weight_over_lambda2": 7.74372027427695e-06
+          },
+          {
+            "quadrature_node": 7.9196519623458155,
+            "energy": 7.919651962345785,
+            "residual": 0.045381176952444376,
+            "source_weight": 3.739416375316798e-08,
+            "ritz_norm": 0.999999999999663,
+            "weight_over_lambda2": 3.739416375316797e-06
+          }
+        ],
+        "seconds": 105.57673354074359,
+        "calls": 318,
+        "scope": "Selected symmetry sector, finite periodic32site full-H eigenvector tests; no continuum decay or physical scalar claim"
+      },
+      {
+        "L": 8,
+        "lambda_perp": 0.2,
+        "dimension": 2097152,
+        "ground_energy": -32.160133687120236,
+        "ground_residual": 9.798540293388804e-13,
+        "source_weight": 0.1592152235592351,
+        "prediction_energy": 8.02302775637732,
+        "prediction_shift": 0.5756939094329987,
+        "prediction_weight_coefficient": 3.6641005886756877,
+        "candidates": [
+          {
+            "quadrature_node": 8.02271976413525,
+            "energy": 8.022719764135115,
+            "residual": 1.1676685198656539e-13,
+            "source_weight": 0.14722292667036643,
+            "ritz_norm": 1.0000000000011786,
+            "weight_over_lambda2": 3.68057316675916
+          },
+          {
+            "quadrature_node": 8.022661060035228,
+            "energy": 8.022661060035158,
+            "residual": 0.00796566068912193,
+            "source_weight": 0.14724790325337417,
+            "ritz_norm": 0.9999999999981426,
+            "weight_over_lambda2": 3.6811975813343536
+          },
+          {
+            "quadrature_node": 7.985996763070128,
+            "energy": 7.985996763070133,
+            "residual": 3.1412984683235934e-14,
+            "source_weight": 0.011839926136385175,
+            "ritz_norm": 1.0000000000007896,
+            "weight_over_lambda2": 0.2959981534096293
+          },
+          {
+            "quadrature_node": 7.9267302132025925,
+            "energy": 7.926730213202603,
+            "residual": 0.1305605679936895,
+            "source_weight": 8.812297921341452e-06,
+            "ritz_norm": 1.0000000000002687,
+            "weight_over_lambda2": 0.00022030744803353626
+          },
+          {
+            "quadrature_node": 8.129151584790204,
+            "energy": 8.12915158479014,
+            "residual": 0.18876607192062342,
+            "source_weight": 8.674088267496877e-07,
+            "ritz_norm": 0.9999999999997833,
+            "weight_over_lambda2": 2.1685220668742187e-05
+          },
+          {
+            "quadrature_node": 8.20501711540511,
+            "energy": 8.205017115405145,
+            "residual": 0.025319992102100324,
+            "source_weight": 1.209792057861575e-09,
+            "ritz_norm": 0.9999999999999187,
+            "weight_over_lambda2": 3.024480144653937e-08
+          }
+        ],
+        "seconds": 113.30411537503824,
+        "calls": 318,
+        "scope": "Selected symmetry sector, finite periodic32site full-H eigenvector tests; no continuum decay or physical scalar claim"
+      }
+    ]
+  },
+  "frozen_auxiliary": [
+    "neutral_native_periodic_pi_pole"
+  ],
+  "scope": "Native formal local coefficients; conditional halfline bound-mode, crossover and size/readout relation; finite full-H evidence; no uniform native or physical scalar theorem"
+}

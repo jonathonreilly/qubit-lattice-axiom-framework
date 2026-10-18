@@ -1,0 +1,130 @@
+[
+  {
+    "L": 8,
+    "lambda_perp": 0.1,
+    "dimension": 2097152,
+    "ground_energy": -32.04000833864916,
+    "ground_residual": 2.1521151833356822e-13,
+    "source_weight": 0.039951018763217896,
+    "prediction_energy": 8.00575693909433,
+    "prediction_shift": 0.5756939094329987,
+    "prediction_weight_coefficient": 3.6641005886756877,
+    "candidates": [
+      {
+        "quadrature_node": 8.005737479158139,
+        "energy": 8.005737479158025,
+        "residual": 6.264239838198427e-13,
+        "source_weight": 0.03668523573910296,
+        "ritz_norm": 0.9999999999998707,
+        "weight_over_lambda2": 3.6685235739102957
+      },
+      {
+        "quadrature_node": 7.998587868073282,
+        "energy": 7.998587868073251,
+        "residual": 0.11326960841866704,
+        "source_weight": 0.0015518865976983007,
+        "ritz_norm": 1.0000000000112885,
+        "weight_over_lambda2": 0.15518865976983004
+      },
+      {
+        "quadrature_node": 7.9966831907370635,
+        "energy": 7.996683190737173,
+        "residual": 2.0498515530701498e-12,
+        "source_weight": 0.003256374126066383,
+        "ritz_norm": 1.0000000000014981,
+        "weight_over_lambda2": 0.3256374126066382
+      },
+      {
+        "quadrature_node": 7.995128946751279,
+        "energy": 7.995128946751159,
+        "residual": 0.11297798959879983,
+        "source_weight": 0.0015613556167457826,
+        "ritz_norm": 0.9999999999874102,
+        "weight_over_lambda2": 0.15613556167457823
+      },
+      {
+        "quadrature_node": 8.07519112932455,
+        "energy": 8.075191129324473,
+        "residual": 0.08387986772937009,
+        "source_weight": 7.743720274276952e-08,
+        "ritz_norm": 1.0000000000005331,
+        "weight_over_lambda2": 7.74372027427695e-06
+      },
+      {
+        "quadrature_node": 7.9196519623458155,
+        "energy": 7.919651962345785,
+        "residual": 0.045381176952444376,
+        "source_weight": 3.739416375316798e-08,
+        "ritz_norm": 0.999999999999663,
+        "weight_over_lambda2": 3.739416375316797e-06
+      }
+    ],
+    "seconds": 105.57673354074359,
+    "calls": 318,
+    "scope": "Selected symmetry sector, finite periodic32site full-H eigenvector tests; no continuum decay or physical scalar claim"
+  },
+  {
+    "L": 8,
+    "lambda_perp": 0.2,
+    "dimension": 2097152,
+    "ground_energy": -32.160133687120236,
+    "ground_residual": 9.798540293388804e-13,
+    "source_weight": 0.1592152235592351,
+    "prediction_energy": 8.02302775637732,
+    "prediction_shift": 0.5756939094329987,
+    "prediction_weight_coefficient": 3.6641005886756877,
+    "candidates": [
+      {
+        "quadrature_node": 8.02271976413525,
+        "energy": 8.022719764135115,
+        "residual": 1.1676685198656539e-13,
+        "source_weight": 0.14722292667036643,
+        "ritz_norm": 1.0000000000011786,
+        "weight_over_lambda2": 3.68057316675916
+      },
+      {
+        "quadrature_node": 8.022661060035228,
+        "energy": 8.022661060035158,
+        "residual": 0.00796566068912193,
+        "source_weight": 0.14724790325337417,
+        "ritz_norm": 0.9999999999981426,
+        "weight_over_lambda2": 3.6811975813343536
+      },
+      {
+        "quadrature_node": 7.985996763070128,
+        "energy": 7.985996763070133,
+        "residual": 3.1412984683235934e-14,
+        "source_weight": 0.011839926136385175,
+        "ritz_norm": 1.0000000000007896,
+        "weight_over_lambda2": 0.2959981534096293
+      },
+      {
+        "quadrature_node": 7.9267302132025925,
+        "energy": 7.926730213202603,
+        "residual": 0.1305605679936895,
+        "source_weight": 8.812297921341452e-06,
+        "ritz_norm": 1.0000000000002687,
+        "weight_over_lambda2": 0.00022030744803353626
+      },
+      {
+        "quadrature_node": 8.129151584790204,
+        "energy": 8.12915158479014,
+        "residual": 0.18876607192062342,
+        "source_weight": 8.674088267496877e-07,
+        "ritz_norm": 0.9999999999997833,
+        "weight_over_lambda2": 2.1685220668742187e-05
+      },
+      {
+        "quadrature_node": 8.20501711540511,
+        "energy": 8.205017115405145,
+        "residual": 0.025319992102100324,
+        "source_weight": 1.209792057861575e-09,
+        "ritz_norm": 0.9999999999999187,
+        "weight_over_lambda2": 3.024480144653937e-08
+      }
+    ],
+    "seconds": 113.30411537503824,
+    "calls": 318,
+    "scope": "Selected symmetry sector, finite periodic32site full-H eigenvector tests; no continuum decay or physical scalar claim"
+  }
+]

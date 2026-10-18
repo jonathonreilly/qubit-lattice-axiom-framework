@@ -69,6 +69,17 @@ for n, O in LET.items():
         else: transp['none'] += 1
 check("(ii) generic palette letters (PC minus identities/plane/L202) have only scalar gauges; transposable ones satisfy O^T = +-O exactly (trivial transpose gauge)",
       gen_scalar, f"{dict(transp)}")
+okP6 = True; c6 = collections.Counter()
+for n, O in P6.items():
+    if n in ('H0.0', 'L0.0.0'): continue
+    gU, gT = gauge(O, O), gauge(O, O.T)
+    if invertible(gT) and len(gU) == 1: okP6 &= np.allclose(O.T, O) or np.allclose(O.T, -O)
+    c6[(len(gU), bool(invertible(gT)))] += 1
+check("(ii) same for the 1872 pi/6 letters: gauge dims in {1 (generic), 3 (plane), 6}; every transposable generic one has O^T = +-O",
+      okP6 and set(d for d, _ in c6) <= {1, 3, 6}, f"{dict(c6)}")
+R0g = gauge(R0, R0)
+check("(ii) R0 (R_L at k=0) is block-diagonal over the three coordinate planes (4-cycles), gauge dim 6",
+      len(R0g) == 6 and all(abs(R0[a, b]) < 1e-12 for a in range(12) for b in range(12) if not any(fcI[a, i] == 0 and fcI[b, i] == 0 for i in range(3))))
 # cross relations between distinct letters (and transposes) of PC + plane
 names = list(PC) + list(PLANE)
 for a in names:
@@ -133,6 +144,9 @@ sub = [r for r in rows if all(x not in ('sc(2)', 'fcc(2)', 'bcc(4)') for x in r[
 check("(iii) reproduces B24_check chk4 on the 10 lattices down to pi/4: 42 strictly nested pairs, 29 good", len(sub) == 42 and sum(r[4] for r in sub) == 29, f"{len(sub)} {sum(r[4] for r in sub)}")
 check("(iii) INDEX LEMMA consequence: no admissible pair (index <= 4 with O acting trivially on Lambda_sp/Lambda_u) is good",
       all(not r[4] for r in adm) and len(adm) > 0, f"{len(adm)} admissible, all bad")
+exp_adm = {(f"sc({a})", f"bcc({a})") for a in (32, 16, 8, 4)} | {(f"fcc({b})", f"sc({b})") for b in (16, 8, 4, 2)}
+check("(iii) the admissible pairs are exactly (sc(a), bcc(a)) and (fcc(b), sc(b)) (the maximal O-trivial extensions; scale-covariant)",
+      {(r[0], r[1]) for r in adm} == exp_adm)
 check("(iii) every good pair has index >= 4 and a NON-trivial O action on the quotient", all(r[2] >= 4 and not r[3] for r in rows if r[4]))
 # numerical illustration of the lemma's key step on the B24_check example: the (pi/4)(1,1,1) taste is T-type, its double is U-type
 w = build24(('S2', 'p', 'S2', 'o'), ('L101', 'H13'))

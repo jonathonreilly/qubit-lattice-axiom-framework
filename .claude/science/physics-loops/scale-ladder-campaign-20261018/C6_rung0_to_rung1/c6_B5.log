@@ -1,0 +1,8 @@
+[PASS] particle-hole identity E(F, nu) = E(F with triangle flipped, 12 - nu) for all 16 patterns, t2 = 0.2 and 1  max dev 3.6e-15
+FINDING t2=1.0 nu=7: corner sector E = -13.1110; single period-2 edge flips: min dE = -0.0035 (edge 0, onsite; recheck on 6^3 grid -0.0043), #flips with dE<0: 192/288; t=61s
+    greedy descent from the corner sector: E = -13.2395, fluxes {'square': 1.0, 'triangle': 0.78125, 'plaquette': 1.0, 'tube': 0.9583333333333334}; t=137s
+FINDING t2=0.2 nu=7: corner sector E = -10.4806; single period-2 edge flips: min dE = -0.0557 (edge 0, onsite; recheck on 6^3 grid -0.0562), #flips with dE<0: 192/288; t=174s
+    greedy descent from the corner sector: E = -11.1656, fluxes {'square': 1.0, 'triangle': 0.75, 'plaquette': 0.75, 'tube': 0.875}; t=305s
+FINDING t2=0.2 nu=8: corner sector E = -11.0043; single period-2 edge flips: min dE = +0.0009 (edge 2, link; recheck on 6^3 grid +0.0009), #flips with dE<0: 0/288; t=369s
+
+TOTAL: PASS=1 FAIL=0

@@ -1,0 +1,11 @@
+   sign 1: flat part = walker: True; c_ax solutions [{c_ax: 1/4}]
+   eps_abc omega_abc (first order) = rr * T^(1): [{rr: 1, re(rr): 1, im(rr): 0}]
+   sign -1: flat part = walker: True; c_ax solutions []
+PASS: G2a [7s] general first-order frame 1 + t eps (9 free functions): covariant Weyl functional (LC spin connection, the sign that makes it Hermitian/covariant) = walker + c_ax int N T n with c_ax = 1/4 uniquely; other sign: no c_ax. {1: (True, [{c_ax: 1/4}]), -1: (True, [])}
+PASS: G2b [7s] eps_abc omega_abc = 1 x T at first order: T is (proportional to) the totally antisymmetric part of the LC spin connection, so the 1/4 N T n term is the Hehl-Datta-type 'axial' coupling eps^abc omega_abc to chi^dag chi (= the Weyl field's axial density)
+PASS: G1 [8s] walker on E = 1 + A (A_aj = eps_ajk th_k): = {C[1], kap int th.s} + cc int N div(th) n with kap = cc = 1/2 ([{cc: 1/2, kap: 1/2}]); no pure spin rotation ([])
+TOTAL: PASS=3 FAIL=0  (8s)
+
+real	0m8.870s
+user	0m8.061s
+sys	0m0.084s

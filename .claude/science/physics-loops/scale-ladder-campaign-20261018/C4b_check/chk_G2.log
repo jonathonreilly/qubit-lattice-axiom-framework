@@ -1,0 +1,8 @@
+PASS: G3a [74s] symmetric section: T^(1) = 0 identically
+PASS: G3b [74s] symmetric section, O(h): covariant functional = bare walker
+PASS: G3c [75s] symmetric section, O(h^2): covariant functional != bare walker (True) and == walker + 1/4 int N T^(2) n (True): c4b's walker_cov IS the covariant Weyl operator to second order
+TOTAL: PASS=3 FAIL=0  (75s)
+
+real	1m16.006s
+user	1m12.731s
+sys	0m0.192s

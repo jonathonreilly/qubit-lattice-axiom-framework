@@ -1,0 +1,8 @@
+PASS: C1' [21s] {G[xi], G[eta]} at order chi chi with lam1 = nu = lam_f = 1 and the CONSTRUCTED symmetric-gauge G_f^(1): = Kosmann[[xi, eta]] exactly (mod divergence): the metric route closes {G,G} with no triad
+PASS: C1'' [34s] lam_f free, G_f^(1) = beta x BG: closure iff (lam_f, beta) in {(0, 0), (nu, nu^2)}  (nu = 1): [{beta: 0, lam_f: 0}, {beta: 1, lam_f: 1}]
+PASS: C2' [42s] without G_f^(1): {K[xi],K[eta]} - K[[xi,eta]] = cc int eps_kij (S_xi S_eta)_ij s_k, cc = [{cc: 1/2}] (spin-1/2 note Result 4 / N2 form); and {G1, G_f^(1)} terms cancel it exactly (C1')
+TOTAL: PASS=3 FAIL=0  (42s)
+
+real	0m44.040s
+user	0m16.964s
+sys	0m0.099s

@@ -1,0 +1,18 @@
+PASS: T1 [8s] own [sqrt g R]^(1) of delta + h = d_i d_j h_ij - lap tr h
+PASS: T2 [19s] {int N sqrt(g)R, int P L_xi(delta+h)} at O(h) = -int (xi.dN) R1 (density of weight 1): own R2 consistent with own R1
+PASS: T3 [19s] spinor bracket {int s1, int s2} = 2 int s3
+PASS: T4 [23s] flat walker {C[N],C[M]} = G_K[N dM - M dN] with G_K = int chibar i(xi.d + w div xi + i kap curl xi.sigma) chi: forces w = 1/2 (half-density) and kap = 1/4: [{cv: 1, kk: 1/4, ww: 1/2}]
+PASS: G1 [41s] gravity's h-linear {C,G} (G = lam1 G1 + mu int P L_xi h): lam1 K2 = mu K1, s1 = -mu, s2 = 0: [{K2: K1*mu/lam1, s1: -mu, s2: 0}]
+PASS: G2 [49s] {G[xi],G[eta]} at order P = (+-)mu lam1 G1[[xi,eta]] (sign = bracket orientation): [{nus: mu}]; so the structure constant nu of {G,G} = nu G[[xi,eta]] equals mu: G2 = nu int P L_xi h is forced, not a choice
+PASS: M1 [66s] walker {C,G} at order chi chi, frame delta - a h/2: a lam1 = lam_f, s1 = -lam_f, s2 = 0, Kosmann kap = 1/4: [{a: lam_f/lam1, kappa: 1/4, s1: -lam_f, s2: 0}]  (C4b A2)
+PASS: B1 [79s] a = 1, lam_f = nu, mu = nu: unique lam1 = nu, K2 = K1: [{K2: K1, lam1: nu, s1: -nu, s2: 0}]
+PASS: B2 [89s] a free: lam1 = nu/a, K2 = a K1: [{K2: K1*a, lam1: nu/a, s1: -nu, s2: 0}].  Invariant content: gamma = a K1/K2 = 1 for every a
+   H1 solutions: [{a: lam_f/lam1, kappa: 1/4, s1: -lam_f, s2: 2*lam1*q, w: 1/2}]
+PASS: H1 [104s] density weight w of chi left free and a trace coupling q tr h delta added: a lam1 = lam_f survives; w = 1/2 is FORCED (with w free sympy.solve silently drops the w-equations; vsolve back-substitutes), q only moves s2 = 2 lam1 q (density convention): [{a: lam_f/lam1, kappa: 1/4, s1: -lam_f, s2: 2*lam1*q, w: 1/2}]
+   H2 solutions: [{K2: K1*lam_f/lam1, a: lam_f/lam1, mu: lam_f, s1: -lam_f, s2: 0}]
+PASS: H2 [113s] mu, lam_f free: common lapse rule s1 = -mu = -lam_f forces mu = lam_f; K2/K1 = mu/lam1 = a.  So K2 = a K1 needs only one common lapse rule (mu = lam_f), and {G,G} (G2) plus the fermion {G,G} (C1) both give it as nu: [{K2: K1*lam_f/lam1, a: lam_f/lam1, mu: lam_f, s1: -lam_f, s2: 0}]
+TOTAL: PASS=11 FAIL=0  (113s)
+
+real	1m55.503s
+user	1m1.930s
+sys	0m0.221s

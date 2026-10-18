@@ -29,3 +29,23 @@ PASS T/full: every trace is T-invariant
   T   full     dimW= 14 unsigned=     3 signed=     1 on-site=  3 periodic=    3 glider=    0 spreading=     0 | with valid phases: {'periodic': 1, 'glider': 0, 'spreading': 0} glider dirs=[] (6.5s)
 PASS T/full: no glider (T-orbits of nonzero vectors have >2 elements)
 PASS D4/trivial: restriction is a homomorphism on D4
+PASS D4/trivial: brute-force and split enumerators agree (780)
+PASS D4/trivial: all 780 solutions symplectic (Laurent check) with det 1
+PASS D4/trivial: every trace is D4-invariant
+  D4  trivial  dimW= 24 unsigned=   780 signed=  3120 on-site=  6 periodic=  192 glider=    6 spreading=   582 | with valid phases: {'periodic': 192, 'glider': 6, 'spreading': 582} glider dirs=[(0, 0, 1)] (14.3s)
+PASS D4/sign: restriction is a homomorphism on D4
+PASS D4/sign: brute-force and split enumerators agree (780)
+PASS D4/sign: all 780 solutions symplectic (Laurent check) with det 1
+PASS D4/sign: every trace is D4-invariant
+  D4  sign     dimW= 24 unsigned=   780 signed=  1040 on-site=  6 periodic=  192 glider=    6 spreading=   582 | with valid phases: {'periodic': 126, 'glider': 2, 'spreading': 132} glider dirs=[(0, 0, 1)] (15.0s)
+PASS D4/sign-f: restriction is a homomorphism on D4
+PASS D4/sign-f: brute-force and split enumerators agree (64)
+PASS D4/sign-f: all 64 solutions symplectic (Laurent check) with det 1
+PASS D4/sign-f: every trace is D4-invariant
+  D4  sign-f   dimW= 18 unsigned=    64 signed=   128 on-site=  2 periodic=   64 glider=    0 spreading=     0 | with valid phases: {'periodic': 64, 'glider': 0, 'spreading': 0} glider dirs=[] (1.2s)
+PASS D4/axis: restriction is a homomorphism on D4
+PASS D4/axis: brute-force and split enumerators agree (64)
+PASS D4/axis: all 64 solutions symplectic (Laurent check) with det 1
+PASS D4/axis: every trace is D4-invariant
+  D4  axis     dimW= 18 unsigned=    64 signed=   128 on-site=  2 periodic=   64 glider=    0 spreading=     0 | with valid phases: {'periodic': 64, 'glider': 0, 'spreading': 0} glider dirs=[] (105.8s)
+PASS D4/full: restriction is a homomorphism on D4

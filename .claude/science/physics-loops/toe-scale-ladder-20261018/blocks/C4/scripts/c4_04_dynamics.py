@@ -158,16 +158,17 @@ for nm, s in spread:
         ok_dick &= (tn == dickson(tau, n))
         ok_vert &= all((n * v[0], n * v[1], n * v[2]) in tn for v in verts)
         ok_cone &= all(max(map(abs, e)) <= n for i in range(2) for j in range(2) for e in Mn[i][j])
-        # glider / recurrence test: x^{2t} + tn x^t + 1 == 0 ?
-        for t in itertools.product(range(-n - 1, n + 2), repeat=3):
-            xt = frozenset({t})
-            val = L.padd(frozenset({(2 * t[0], 2 * t[1], 2 * t[2])}), L.pmulL(tn, xt), L.ONE)
-            if val == L.ZERO:
+        # glider / recurrence test: x^{2t} + tn x^t + 1 == 0  <=>  tn == x^t + x^{-t} (t = 0: tn == 0)
+        if tn == L.ZERO:
+            ok_glide = False
+        if len(tn) == 2:
+            a_, b_ = sorted(tn)
+            if a_ == tuple(-v for v in b_):
                 ok_glide = False
 check(f'tr(M^n) equals the char-2 Dickson polynomial D_n(tau), all {len(spread)} spreading solutions, n<={NSYM}', ok_dick)
 check(f'x^(n v) occurs in tr(M^n) for every vertex v of Newt(tau), n<={NSYM}', ok_vert)
 check(f'supp M^n lies in the n-cell (range n), n<={NSYM}', ok_cone)
-check(f'det(M^n - x^t) != 0 for all |t|_inf <= n+1, n<={NSYM} (no glider, no recurrent operator)', ok_glide)
+check(f'det(M^n - x^t) = x^(2t) + tr(M^n) x^t + 1 != 0 for every t in Z^3 (tr(M^n) not 0 and not x^t + x^-t), n<={NSYM}', ok_glide)
 
 # ---------------------------------------------------------------- numerical support growth (evidence)
 print(f'\nsupport growth of alpha^n(X_0), n <= {NMAX} (numerical evidence; exact F2 convolution)')

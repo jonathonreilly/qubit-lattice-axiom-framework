@@ -498,8 +498,7 @@ def enumerate_solutions_split(basis, ubatch_bits=16):
         C = ((cs[:, None] >> np.arange(dU)[None, :]) & 1).astype(np.uint8)
         V0 = (C @ Ub) & 1
         Uu = V0[:, :D]
-        fuu = forms_batch(Uu, Uu)
-        good = np.nonzero(~fuu.any(1))[0]
+        good = np.nonzero(selforth_mask(Uu))[0]
         for i in good:
             u = Uu[i]
             w0 = V0[i, D:]
@@ -527,3 +526,21 @@ def enumerate_solutions_split(basis, ubatch_bits=16):
 
 def sol_key(s):
     return np.asarray(s, np.uint8).tobytes()
+
+
+def selforth_mask(U, order=None):
+    """Boolean mask of rows u with <u, T_t u> = 0 for every shift t, with early elimination
+    (shifts processed one by one on the surviving rows only).  Exact; same predicate as
+    ~forms_batch(U, U).any(1)."""
+    alive = np.arange(U.shape[0])
+    Ux, Uz = U[:, :NC], U[:, NC:]
+    ks = order if order is not None else sorted(range(len(SHIFTS)), key=lambda k: len(SHIFT_PAIRS[k][0]))
+    for k in ks:
+        I, J = SHIFT_PAIRS[k]
+        if len(I) == 0 or len(alive) == 0:
+            continue
+        v = ((Ux[np.ix_(alive, I)] & Uz[np.ix_(alive, J)]).sum(1) + (Uz[np.ix_(alive, I)] & Ux[np.ix_(alive, J)]).sum(1)) & 1
+        alive = alive[v == 0]
+    m = np.zeros(U.shape[0], bool)
+    m[alive] = True
+    return m

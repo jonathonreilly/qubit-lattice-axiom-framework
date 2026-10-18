@@ -1,0 +1,29 @@
+[PASS] d=1 kappa=4.0 N=3000: resampled/adversarial exterior outside B(0,rho+1) never changes xi_0 (forward sim): violations=0
+[PASS] d=1 kappa=4.0 N=3000: adding post-sigma points (inert) never changes xi_0: violations=0
+[PASS] d=1 kappa=4.0 N=3000: control has power: resampling outside B(0,rho-1) changed xi_0 in 518/2651 samples
+[PASS] d=1 kappa=4.0 N=3000: edge-discarded samples 0 <= 1%
+[PASS] d=1 kappa=4.0 N=3000: P(rho>=9) = 0.0020 (SE 0.0008) <= bound 0.5779
+[PASS] d=1 kappa=4.0 N=3000: P(rho>=10) = 0.0010 (SE 0.0006) <= bound 0.2102
+[PASS] d=1 kappa=4.0 N=3000: P(rho>=11) = 0.0003 (SE 0.0003) <= bound 0.0701
+[PASS] d=1 kappa=4.0 N=3000: all-chain point reach == straight-chain point reach in every sample (loop erasure, Z): failures=0
+[PASS] d=1 kappa=4.0 N=3000: E[#rightward chains of length 1] = 8.3463 +- 0.2647 vs kappa^(n+1)/(n+1)! = 8.0000
+[PASS] d=1 kappa=4.0 N=3000: E[#rightward chains of length 2] = 11.2630 +- 0.5886 vs kappa^(n+1)/(n+1)! = 10.6667
+[PASS] d=1 kappa=4.0 N=3000: E[#rightward chains of length 3] = 11.1347 +- 0.9566 vs kappa^(n+1)/(n+1)! = 10.6667
+[PASS] d=1 kappa=4.0 N=3000: E[#rightward chains of length 4] = 11.1223 +- 2.0218 vs kappa^(n+1)/(n+1)! = 8.5333
+[PASS] d=1 kappa=4.0 N=3000: E[#rightward chains of length 5] = 7.5177 +- 1.8931 vs kappa^(n+1)/(n+1)! = 5.6889
+[PASS] d=1 kappa=7.0 N=1500: resampled/adversarial exterior outside B(0,rho+1) never changes xi_0 (forward sim): violations=0
+[PASS] d=1 kappa=7.0 N=1500: adding post-sigma points (inert) never changes xi_0: violations=0
+[PASS] d=1 kappa=7.0 N=1500: control has power: resampling outside B(0,rho-1) changed xi_0 in 157/1393 samples
+[PASS] d=1 kappa=7.0 N=1500: edge-discarded samples 0 <= 1%
+[PASS] d=1 kappa=7.0 N=1500: all-chain point reach == straight-chain point reach in every sample (loop erasure, Z): failures=0
+[PASS] d=1 kappa=7.0 N=1500: E[#rightward chains of length 1] = 24.9700 +- 1.2094 vs kappa^(n+1)/(n+1)! = 24.5000
+[PASS] d=1 kappa=7.0 N=1500: E[#rightward chains of length 2] = 56.5027 +- 4.4506 vs kappa^(n+1)/(n+1)! = 57.1667
+[PASS] d=1 kappa=7.0 N=1500: E[#rightward chains of length 3] = 93.2393 +- 11.2336 vs kappa^(n+1)/(n+1)! = 100.0417
+[PASS] d=1 kappa=7.0 N=1500: E[#rightward chains of length 4] = 127.5127 +- 22.6507 vs kappa^(n+1)/(n+1)! = 140.0583
+[PASS] d=1 kappa=7.0 N=1500: E[#rightward chains of length 5] = 166.1433 +- 53.6334 vs kappa^(n+1)/(n+1)! = 163.4014
+[PASS] d=2 kappa=3.0 N=299: resampled/adversarial exterior outside B(0,rho+1) never changes xi_0 (forward sim): violations=0
+[PASS] d=2 kappa=3.0 N=299: adding post-sigma points (inert) never changes xi_0: violations=0
+[PASS] d=2 kappa=3.0 N=299: control has power: resampling outside B(0,rho-1) changed xi_0 in 30/277 samples
+[PASS] d=2 kappa=3.0 N=299: edge-discarded samples 1 <= 1%
+r2: PASS=27 FAIL=0
+TOTAL: PASS=27 FAIL=0

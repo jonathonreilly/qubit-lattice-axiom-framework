@@ -173,7 +173,7 @@ def flip_s0(s0, plinks, p):
 
 
 @njit(cache=True)
-def sweep(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, V, T, per, nmoves, buf, stats):
+def sweep(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, V, T, per, nmoves, buf, stats, pr):
     """stats[0..9]: tried/accepted for insert, remove, shift, end-insert, end-remove (pairs)."""
     npl = plinks.shape[0]
     useV = V != 0.0
@@ -181,7 +181,7 @@ def sweep(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, V, T, per, nmoves, buf
     for _ in range(nmoves):
         r = np.random.random()
         p = np.random.randint(npl)
-        if r < 0.3:  # ---------------- pair insertion
+        if r < pr[0]:  # ---------------- pair insertion
             stats[0] += 1
             t1 = np.random.random() * T
             c = circ_at(s0, kt, kc, lplaqs, plinks, psign, p, t1)
@@ -210,7 +210,7 @@ def sweep(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, V, T, per, nmoves, buf
                     ok = False
                     break
                 stats[1] += 1
-        elif r < 0.6:  # ---------------- pair removal
+        elif r < pr[1]:  # ---------------- pair removal
             stats[2] += 1
             n = kc[p]
             if n < 2:
@@ -285,7 +285,7 @@ def sweep(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, V, T, per, nmoves, buf
                     del_kink(kt, kc, p, 0)
                     flip_s0(s0, plinks, p)
                 stats[3] += 1
-        elif r < 0.9:  # ---------------- shift one kink
+        elif r < pr[2]:  # ---------------- shift one kink
             stats[4] += 1
             n = kc[p]
             if n == 0:
@@ -328,7 +328,7 @@ def sweep(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, V, T, per, nmoves, buf
         else:  # ---------------- end moves (open only)
             if per:
                 continue
-            atstart = np.random.random() < 0.5
+            atstart = np.random.random() < pr[3]
             ins = np.random.random() < 0.5
             if atstart:
                 tf = next_evt(kt, kc, nbh, nnb, p, -1.0, 0, T)

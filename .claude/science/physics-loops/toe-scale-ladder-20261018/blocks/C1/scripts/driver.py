@@ -67,6 +67,7 @@ class Sim:
         self.kc = np.zeros(lat.np, dtype=np.int64)
         self.buf = np.zeros(4096)
         self.stats = np.zeros(10, dtype=np.int64)
+        self.pr = np.array([0.3, 0.6, 0.9, 0.5])
         self.args = (lat.lplaqs, lat.plinks, lat.psign, lat.nbh, lat.nnb)
 
     def nkinks(self):
@@ -76,7 +77,7 @@ class Sim:
         nm = int(factor * (self.lat.np + self.nkinks()))
         while True:
             ok = qmc.sweep(self.s0, self.kt, self.kc, *self.args, self.g, self.V, self.T, self.mode, nm,
-                           self.buf, self.stats)
+                           self.buf, self.stats, self.pr)
             if ok:
                 return
             # capacity overflow (state is consistent: overflowing insert was not performed? -> grow and continue)

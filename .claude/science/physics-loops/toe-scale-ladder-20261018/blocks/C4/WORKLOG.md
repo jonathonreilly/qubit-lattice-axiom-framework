@@ -18,3 +18,12 @@
   inequivalent actions. TR-twist: axis/full still on-site only; sign-f TR-twist gives 28 spreading ones.
 - Next: subgroups (T, D4, D3, D2) via split enumerator; dynamics script (trace trichotomy, Newton cone,
   glider no-go); radius 2 for axis/full (dim 25).
+
+## progress 2 (~1h45)
+- Proved (pen): trace trichotomy for any 1-qubit TI Clifford QCA with det 1 in any dimension:
+  tau const -> periodic; tau = x^r + x^-r -> glider; else no finite Pauli ever maps to a translate of itself
+  (Galois/Dickson argument on eigenvalue lambda), and tr(M^n) = D_n(tau) gives ballistic front n*vert(Newt tau).
+  Covariance makes tau H-invariant, so O/T forbid gliders at ANY range and any action.
+- c4_03 running (T done: no gliders; D4/trivial: 6 gliders along z). c4_04 dynamics, c4_05 independent
+  recount, c4_06 radius-2 (axis/full/sign-f) written, to run sequentially (1 core).
+- lib: selforth_mask early-elimination filter added (used by split enumerator; brute force keeps forms_batch).

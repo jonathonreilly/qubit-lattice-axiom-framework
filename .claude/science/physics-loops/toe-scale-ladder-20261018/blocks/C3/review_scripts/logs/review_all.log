@@ -1,0 +1,80 @@
+[PASS] m=1: P(L>=m) by enumeration = 2/3 equals closed form 2/3
+[PASS] m=1: non-determined fraction on B(0,1) = 2/3 equals P(L>=m), so P(R>=2) = 2/3 exactly
+[PASS] m=1: P(R>=2) = 2/3 > map bound 2/3! = 1/3  (map's R-statement false)
+[PASS] m=1: corrected bound P(R>=2) <= 2/2! = 1 holds
+[PASS] m=2: P(L>=m) by enumeration = 17/60 equals closed form 17/60
+[PASS] m=2: non-determined fraction on B(0,2) = 17/60 equals P(L>=m), so P(R>=3) = 17/60 exactly
+[PASS] m=2: P(R>=3) = 17/60 > map bound 2/4! = 1/12  (map's R-statement false)
+[PASS] m=2: corrected bound P(R>=3) <= 2/3! = 1/3 holds
+[PASS] m=3: P(L>=m) by enumeration = 5/63 equals closed form 5/63
+[PASS] m=3: non-determined fraction on B(0,3) = 5/63 equals P(L>=m), so P(R>=4) = 5/63 exactly
+[PASS] m=3: P(R>=4) = 5/63 > map bound 2/5! = 1/60  (map's R-statement false)
+[PASS] m=3: corrected bound P(R>=4) <= 2/4! = 1/12 holds
+r1: PASS=12 FAIL=0
+[PASS] d=1 kappa=4.0 N=3000: resampled/adversarial exterior outside B(0,rho+1) never changes xi_0 (forward sim): violations=0
+[PASS] d=1 kappa=4.0 N=3000: adding post-sigma points (inert) never changes xi_0: violations=0
+[PASS] d=1 kappa=4.0 N=3000: control has power: resampling outside B(0,rho-1) changed xi_0 in 518/2651 samples
+[PASS] d=1 kappa=4.0 N=3000: edge-discarded samples 0 <= 1%
+[PASS] d=1 kappa=4.0 N=3000: P(rho>=9) = 0.0020 (SE 0.0008) <= bound 0.5779
+[PASS] d=1 kappa=4.0 N=3000: P(rho>=10) = 0.0010 (SE 0.0006) <= bound 0.2102
+[PASS] d=1 kappa=4.0 N=3000: P(rho>=11) = 0.0003 (SE 0.0003) <= bound 0.0701
+[PASS] d=1 kappa=4.0 N=3000: all-chain point reach == straight-chain point reach in every sample (loop erasure, Z): failures=0
+[PASS] d=1 kappa=4.0 N=3000: E[#rightward chains of length 1] = 8.3463 +- 0.2647 vs kappa^(n+1)/(n+1)! = 8.0000
+[PASS] d=1 kappa=4.0 N=3000: E[#rightward chains of length 2] = 11.2630 +- 0.5886 vs kappa^(n+1)/(n+1)! = 10.6667
+[PASS] d=1 kappa=4.0 N=3000: E[#rightward chains of length 3] = 11.1347 +- 0.9566 vs kappa^(n+1)/(n+1)! = 10.6667
+[PASS] d=1 kappa=4.0 N=3000: E[#rightward chains of length 4] = 11.1223 +- 2.0218 vs kappa^(n+1)/(n+1)! = 8.5333
+[PASS] d=1 kappa=4.0 N=3000: E[#rightward chains of length 5] = 7.5177 +- 1.8931 vs kappa^(n+1)/(n+1)! = 5.6889
+[PASS] d=1 kappa=7.0 N=1500: resampled/adversarial exterior outside B(0,rho+1) never changes xi_0 (forward sim): violations=0
+[PASS] d=1 kappa=7.0 N=1500: adding post-sigma points (inert) never changes xi_0: violations=0
+[PASS] d=1 kappa=7.0 N=1500: control has power: resampling outside B(0,rho-1) changed xi_0 in 157/1393 samples
+[PASS] d=1 kappa=7.0 N=1500: edge-discarded samples 0 <= 1%
+[PASS] d=1 kappa=7.0 N=1500: all-chain point reach == straight-chain point reach in every sample (loop erasure, Z): failures=0
+[PASS] d=1 kappa=7.0 N=1500: E[#rightward chains of length 1] = 24.9700 +- 1.2094 vs kappa^(n+1)/(n+1)! = 24.5000
+[PASS] d=1 kappa=7.0 N=1500: E[#rightward chains of length 2] = 56.5027 +- 4.4506 vs kappa^(n+1)/(n+1)! = 57.1667
+[PASS] d=1 kappa=7.0 N=1500: E[#rightward chains of length 3] = 93.2393 +- 11.2336 vs kappa^(n+1)/(n+1)! = 100.0417
+[PASS] d=1 kappa=7.0 N=1500: E[#rightward chains of length 4] = 127.5127 +- 22.6507 vs kappa^(n+1)/(n+1)! = 140.0583
+[PASS] d=1 kappa=7.0 N=1500: E[#rightward chains of length 5] = 166.1433 +- 53.6334 vs kappa^(n+1)/(n+1)! = 163.4014
+[PASS] d=2 kappa=3.0 N=299: resampled/adversarial exterior outside B(0,rho+1) never changes xi_0 (forward sim): violations=0
+[PASS] d=2 kappa=3.0 N=299: adding post-sigma points (inert) never changes xi_0: violations=0
+[PASS] d=2 kappa=3.0 N=299: control has power: resampling outside B(0,rho-1) changed xi_0 in 30/277 samples
+[PASS] d=2 kappa=3.0 N=299: edge-discarded samples 1 <= 1%
+r2: PASS=27 FAIL=0
+[PASS] S_A = Anc U boundary: {S_A=S} determined by omega|_S (sampled exhaustively on every 37th omega)
+[PASS] omega* (omega on S_A, omega' elsewhere) has exactly the law of omega
+[PASS] S_A(omega*) = S_A(omega) and xi_A(omega*) = xi_A(omega) for every pair
+[PASS] if S_A(omega) and S_B(omega') are disjoint then xi_B(omega*) = xi_B(omega')
+[PASS] E f(xi_A(w)) g(xi_B(w*)) = E fg exactly
+[PASS] E f(xi_A(w)) g(xi_B(w')) = Ef Eg exactly
+[PASS] |Cov| = 1/81 <= P(S_A(w) meets S_B(w')) = 5/9 (||f||=||g||=1, f,g in {0,1} so factor 1 suffices; 2x stated)
+[PASS] negative control: resampling outside Anc(x) only (no boundary) gives a WRONG law (768 atoms differ)
+[PASS] exact jump-chain final law normalised
+[PASS] graphical construction final law matches exact Markov jump chain on P3, kappa=3 (worst |z| = 2.59 <= 4)
+r3: PASS=10 FAIL=0
+[PASS] D, Z, T=max(z_x,z_x+1), right path n=1: P(decr)=1/3 == 2/(n+2)! and <= 1/ceil((n+1)/3)!
+[PASS] D, Z, left path n=1: P(decr) == 2/(n+2)!
+[PASS] D, Z, T=max(z_x,z_x+1), right path n=2: P(decr)=1/12 == 2/(n+2)! and <= 1/ceil((n+1)/3)!
+[PASS] D, Z, left path n=2: P(decr) == 2/(n+2)!
+[PASS] D, Z, T=max(z_x,z_x+1), right path n=3: P(decr)=1/60 == 2/(n+2)! and <= 1/ceil((n+1)/3)!
+[PASS] D, Z, left path n=3: P(decr) == 2/(n+2)!
+[PASS] D, Z, T=max(z_x,z_x+1), right path n=4: P(decr)=1/360 == 2/(n+2)! and <= 1/ceil((n+1)/3)!
+[PASS] D, Z, left path n=4: P(decr) == 2/(n+2)!
+[PASS] D, Z, T=max(z_x,z_x+1), right path n=5: P(decr)=1/2520 == 2/(n+2)! and <= 1/ceil((n+1)/3)!
+[PASS] D, Z, left path n=5: P(decr) == 2/(n+2)!
+[PASS] D, Z^2 K={0,e1,e2} (b=7) shape L n=2: P(decr)=4/35 <= 1/ceil((n+1)/b)! = 1
+[PASS] D, Z^2 K={0,e1,e2} (b=7) shape zig n=3: P(decr)=8/315 <= 1/ceil((n+1)/b)! = 1
+[PASS] D, Z^2 K={0,e1,e2} (b=7) shape vert n=2: P(decr)=4/35 <= 1/ceil((n+1)/b)! = 1
+[PASS] B1 Stirling form holds for D in {2,4,6,8}, 2e(D-1) <= r < 160
+[PASS] B2 product inequality a(k1-1)a(k2-1) <= D^2(2(D-1))^s s/s! incl. boundary cases
+[PASS] |O_h| = 48, stabiliser of e1 has 8 elements (8/48 = 1/6)
+[PASS] g(1,1,1) uniform on the 8 body diagonals
+[PASS] in W the phase g e1 always has <g e1, w> = +1 (phase coupled to clock direction)
+[PASS] F bound (1/6)(1-6e-5)-1/36 = 124991/900000 = 124991/900000 > 0.1388
+[PASS] kappa(1+k) on Z^3 = 7
+[PASS] kappa((1+k)^2) on Z^3 = 49
+[PASS] kappa(1/(1+k)) on Z^3 = 7
+[PASS] exchangeable-with-ties clock: Cov(xi_0, xi_3) = 1/9 > 0 (covariance-LRO, constant 1/9 for r>=3)
+[PASS] exchangeable-with-ties clock: Cov(xi_0, xi_4) = 1/9 > 0 (covariance-LRO, constant 1/9 for r>=3)
+[PASS] exchangeable-with-ties clock: Cov(xi_0, xi_5) = 1/9 > 0 (covariance-LRO, constant 1/9 for r>=3)
+[PASS] ... while its clocks are pairwise UNcorrelated: Cov(T_x,T_y) = 0
+r4: PASS=26 FAIL=0
+TOTAL: PASS=75 FAIL=0

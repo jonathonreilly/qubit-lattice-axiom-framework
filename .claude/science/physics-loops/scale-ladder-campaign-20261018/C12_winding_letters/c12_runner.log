@@ -1,0 +1,96 @@
+=== 0. model build ===
+[PASS] 0.1 12 corners, 36 edge types (24 on-site, 12 link); flux system (square = plaquette = tube = pi, triangle = 0) has a translation-invariant Z2 gauge solution
+[PASS] 0.2 every one of the 48 O_h elements has a gauge-dressed lift (lam_R, tau_R) solving the PSG equations over GF(2)
+[PASS] 0.3 H_on has spectrum {-1-sqrt3, sqrt3-1, 2}, Lambda has {+-sqrt2, +-2sqrt2}, H_link(k)^2 = 2 (random k)
+[PASS] 0.4 S is a unitary diagonal shift with signs fixed by covariance; A0^2 = -1; D+ = {H_on = 2, Lambda = -2sqrt2} and D- = {H_on = 2, Lambda = +2sqrt2} are 2-dimensional
+
+=== 1. F1-F3: little group, double cover, decomposition of the 12 ===
+[PASS] F1 all 24 proper rotations fix +k* and -k* (R^T k + pi lam = k mod 2pi): little group O, rho(g) = U_R
+[PASS] F2a U_R U_S = +-U_RS with both signs occurring: a projective representation; {+-U_R} has 48 elements
+[PASS] F2b element orders of {+-U_R} equal those of an explicit GL(2,3) over F3 (13 involutions): the non-split double cover isoclinic to 2O; relifting odd elements by i gives 2O (1 involution)  {+-U_R}: {1: 1, 2: 13, 3: 8, 4: 6, 6: 8, 8: 12}; GL(2,3): {1: 1, 2: 13, 3: 8, 4: 6, 6: 8, 8: 12}; relift: {1: 1, 2: 1, 3: 8, 4: 18, 6: 8, 8: 12}
+[PASS] F3a D+ and D- are invariant, irreducible and inequivalent  <chi,chi> = 1.000, 1.000; |<chi+,chi->| = 2.4e-17
+[PASS] F3b chi_{D-}(g) = chi_A2(g) chi_{D+}(g) for all 24 lifts: D- = A2 (x) D+
+[PASS] F3c 8-dim complement has <chi,chi> = 4 and no D+- content; commutant dimension 6 = 1 + 1 + 4: 12 = D+ + D- + 2 G3/2, D+- of multiplicity 1  <chi_G,chi_G> = 4.000, commutant 6
+
+=== 2. F4-F5: T1 frames; step-3 sign ===
+[PASS] F4 D+: T1 triples in End(D) form a 1-dim space; normalised: Hermitian, traceless, tau_i tau_j = delta_ij + i eps_ijk tau_k, and -tau violates it
+[PASS] F4 D-: T1 triples in End(D) form a 1-dim space; normalised: Hermitian, traceless, tau_i tau_j = delta_ij + i eps_ijk tau_k, and -tau violates it
+[PASS] F5 Hom(D+,D-) contains no T1 and one T2 = T1 (x) A2; End(D+-) contains no T2  dims 0, 1, 0, 0
+
+=== A. symmetry rules for W3 ===
+[PASS] A1 every covariance map k -> R^T k + pi lam_R has det R = +1 and equals the rotation q -> R^T q about k* (q = k - k*): orientation-preserving, so the covariance relation reads W3(U) = W3(U) (no constraint)
+   control 2x2 Dirac map (m=2, centre 0): W3 = +0.999859; U^T -0.999859, U* +0.999859, U^-1 -0.999859, U(-k) -0.999859, U(R^T k) +0.999859
+[PASS] A2 control |W3| = 1 (N = 16 midpoint, tol 1e-3; refinement in B3) and the sign rules W3(U^T) = W3(U^-1) = W3(U(-k)) = -W3(U), W3(U*) = W3(U(R^T k)) = +W3(U)
+[PASS] A3 I.K exists for the hopping family {H_on, H_link, Lambda}: real signed inversion W with W conj(X[-a]) W^T = X[a]; solutions with W^2 = -1 exist  2 sign solutions, tr W^2 in [-12], 2 with W^2 = -1
+   I.K type of S^1             : |W U* W^T - U| = 0.0e+00, |W U* W^T - U^-1| = 2.0e+00
+   I.K type of S^2             : |W U* W^T - U| = 0.0e+00, |W U* W^T - U^-1| = 2.0e+00
+   I.K type of R_L             : |W U* W^T - U| = 0.0e+00, |W U* W^T - U^-1| = 0.0e+00
+   I.K type of Rt              : |W U* W^T - U| = 0.0e+00, |W U* W^T - U^-1| = 0.0e+00
+   I.K type of A0              : |W U* W^T - U| = 0.0e+00, |W U* W^T - U^-1| = 2.0e+00
+   I.K type of exp(0.70 i R_L) : |W U* W^T - U| = 9.1e-01, |W U* W^T - U^-1| = 1.1e-16
+   I.K type of exp(0.90 i H_on): |W U* W^T - U| = 6.9e-01, |W U* W^T - U^-1| = 4.6e-16
+   I.K type of D+              : |W U* W^T - U| = 4.3e-16, |W U* W^T - U^-1| = 3.3e-01
+   I.K type of D-              : |W U* W^T - U| = 5.7e-16, |W U* W^T - U^-1| = 3.2e-01
+[PASS] A4 the palette has no uniform I.K type: S, S^2 and D+- satisfy W U* W^T = U only; exp(i theta H) (I.K-symmetric H) satisfies W U* W^T = U^-1 only; R_L, Rt both (involutions)  {'S^1': 'U', 'S^2': 'U', 'R_L': 'UU^-1', 'Rt': 'UU^-1', 'A0': 'U', 'exp(0.70 i R_L)': 'U^-1', 'exp(0.90 i H_on)': 'U^-1', 'D+': 'U', 'D-': 'U'}
+[PASS] A5 S is covariant (up to a constant phase) under all 24 improper O_h lifts as well; D+ is not covariant under any improper lift (an O_h-covariant class, improper elements acting unitarily, would force W3 = -W3 = 0)  some improper lift maps D+ to a multiple of D+^-1: False
+
+=== B. construction: the Dirac-twist letters D+ and D- ===
+[PASS] B1 D+- are unitary, 2pi-periodic (translation-invariant Bloch matrices), analytic, and A1-covariant: U_R D(R^T k + pi lam) U_R^T = D(k) for all 24 lifts; analytic derivative = finite difference  unitarity 4.4e-16, period 1.3e-16, covariance 6.3e-16, inverse 4.4e-16, derivative 6.6e-11
+   max |Fourier coefficient| of D+[0,0] at l1-range 0,3,6,9,12: 9.5e-01, 6.0e-03, 5.8e-04, 3.6e-05, 4.2e-06
+[PASS] B2 D+ has infinite range with exponentially decaying hoppings (not finite range)
+[PASS] B3a tau^(b) is unitarily equivalent to the Pauli triple (orientation fixed by tau_x tau_y = i tau_z)
+   N= 8: W3(D+) = +0.96571416, W3(D-) = +0.96571416, W3(2x2 Pauli map at k*) = +0.96571416  (imag 4e-18; 0s)
+   N=16: W3(D+) = +0.99985871, W3(D-) = +0.99985871, W3(2x2 Pauli map at k*) = +0.99985871  (imag 8e-18; 3s)
+   N=24: W3(D+) = +0.99999945, W3(D-) = +0.99999945, W3(2x2 Pauli map at k*) = +0.99999945  (imag 5e-18; 8s)
+[PASS] B3b W3(D+) = W3(D-) = W3(Pauli Dirac map) = w with |w| = 1: midpoint grids N = 8, 16, 24 converge to the integer (12x12 letters, analytic derivatives)  w = +1, |error| at N=24: 5.5e-07
+[PASS] B3c exact: n-hat(q) = -e4 only at q = (pi,pi,pi) (sin q = 0 forces q in {0,pi}^3; m + sum cos q < 0 there iff all three are pi, for 1 < m < 3), a regular preimage, so |deg| = 1 and |W3(D_b)| = 1 for every m in (1,3)
+[PASS] B3d W3 is constant (= w) on 1 < m < 3 and 0 for m = 4 (outside: preimage set empty)  W3(m=4) = +2.3e-05
+   W3(D+ D-) = +1.999717, W3(D+ D+^-1) = +3.0e-49, W3(A0 D+ A0) = +0.999859, W3(D+ S) = +0.999851
+[PASS] B3e additivity: W3(D+ D-) = 2w; W3(D+ D+^-1) = 0; W3(A0 D+ A0) = w (A2 sandwich); W3(D+ S) = w
+
+=== C. finite-range letters cannot approach D ===
+   min over N=20 grid of dist(-1, spec(V D+^-1)) for V = 1, S, R_L, S R_L, S^2 Rt S^-1, A0 S A0 R_L: 2.73e-01, 0.00e+00, 0.00e+00, 8.39e-02, 1.29e-01, 3.08e-02
+[PASS] C1 (illustration; threshold 0.35 ~ grid half-diagonal) for each sampled finite-range V, V D+^-1 comes within grid resolution of eigenvalue -1 (consistent with sup_k ||V - D+|| = 2, which the K1 argument forces for every finite-range V)
+
+=== D. consequences: nodes of steps containing D ===
+   step D+: E = pi reached outside the 0.3-ball about -k* at distance >= 0.435 (N=24); cone speeds -1.0..1.0; lemma v on D_b = +1.000000 (res 1e-15), on D_-b = 9e-18; FHS Berry flux (lower, upper band) = -1.000, +1.000
+[PASS] D1 step D+ at E = pi: exactly one node, at -k* (exact: the complement of D_b is frozen at eigenvalue 1, and e^(+-i theta) = -1 only at q = (pi,pi,pi)); it is an isolated 2-fold D_b level, an untilted isotropic one-speed cone with speed 1/(3-m) = 1.000, |v| = 1/(3-m) by the C11 lemma, and Berry charge +-1
+   step D-: E = pi reached outside the 0.3-ball about -k* at distance >= 0.435 (N=24); cone speeds -1.0..1.0; lemma v on D_b = +1.000000 (res 9e-16), on D_-b = 3e-18; FHS Berry flux (lower, upper band) = -1.000, +1.000
+[PASS] D1 step D- at E = pi: exactly one node, at -k* (exact: the complement of D_b is frozen at eigenvalue 1, and e^(+-i theta) = -1 only at q = (pi,pi,pi)); it is an isolated 2-fold D_b level, an untilted isotropic one-speed cone with speed 1/(3-m) = 1.000, |v| = 1/(3-m) by the C11 lemma, and Berry charge +-1
+   step D+ Cbar at E = 0: 7 nodes at k* + {0,pi}^3 minus (pi,pi,pi); lower-band charges [-1, 1, 1, -1, 1, -1, -1] (net -1); speeds [np.float64(0.2), np.float64(0.33333), np.float64(0.33333), np.float64(1.0), np.float64(0.33333), np.float64(1.0), np.float64(1.0)]
+[PASS] D2 same block, E = 0 gap: 7 nodes with net lower-band charge equal to that of the single E = pi node (gap orientation: the lower band at 0 is the upper band at pi), i.e. net chirality is the same in both gaps and equals +-W3 (Bessho-Sato-type relation, verified here directly); speeds 1/(m+3), 1/(m+1), 1/(m-1) are unequal, so E = 0 fails the one-speed criterion  net(0) = -1, lower(pi) = -1; E=0 outside balls >= 0.086
+   screening 342 cyclic classes of words (length <= 3, prod chi = +1, W3 = w * (#D - #D^-1) != 0)
+   758 (word, E) pairs: 0 with a Fermi surface (sign change of the real det function), 218 flat, 425 reached (< 0.15) away from +-k*, 115 clean on the 12^3 grid  (127s)
+[PASS] D3 screen ran: every (word, E) pair is classified; E in {0, pi} only (Theta-even words: D+- scalars real). NOTE: the det-sign test is blind at E in {0, pi} for Theta-even words (Kramers pairs cross together), so 0 sign changes is NOT evidence of no Fermi surface
+     D+                     E=-3.1416 W3=+1: -k* mult 2 speeds [np.float64(0.99999)] charge -1.00; elsewhere >= 0.522  -> ONE-SPEED, CLEAN
+     D-                     E=-3.1416 W3=+1: -k* mult 2 speeds [np.float64(0.99999)] charge -1.00; elsewhere >= 0.522  -> ONE-SPEED, CLEAN
+     D+^-1                  E=+3.1416 W3=-1: -k* mult 2 speeds [np.float64(0.99999)] charge +1.00; elsewhere >= 0.522  -> ONE-SPEED, CLEAN
+     D-^-1                  E=+3.1416 W3=-1: -k* mult 2 speeds [np.float64(0.99999)] charge +1.00; elsewhere >= 0.522  -> ONE-SPEED, CLEAN
+     D+.D-                  E=-3.1416 W3=+2: -k* mult 4 speeds [np.float64(0.99999)] charge -2.00; elsewhere >= 0.522  -> ONE-SPEED, CLEAN
+     D+^-1.D-^-1            E=+3.1416 W3=-2: -k* mult 4 speeds [np.float64(0.99999)] charge +2.00; elsewhere >= 0.522  -> ONE-SPEED, CLEAN
+     C+.D+.D+               E=-3.1416 W3=+2: +k* mult 2 speeds [np.float64(0.39999)] charge -1.00; -k* mult 2 speeds [np.float64(1.99999)] charge -1.00; elsewhere >= 0.181  -> isotropic, several speeds
+     D+.S^2.S^2             E=-3.1416 W3=+1: -k* mult 2 speeds [np.float64(2.88561)] charge -1.00; elsewhere >= 0.203  -> ONE-SPEED, CLEAN
+     C-.D-.D-               E=-3.1416 W3=+2: +k* mult 2 speeds [np.float64(0.39999)] charge -1.00; -k* mult 2 speeds [np.float64(1.99999)] charge -1.00; elsewhere >= 0.181  -> isotropic, several speeds
+     C-.D-.D-               E=+3.1416 W3=+2: +k* mult 2 speeds [np.float64(0.39999)] charge -1.00; -k* mult 2 speeds [np.float64(1.99999)] charge -1.00; elsewhere >= 0.181  -> isotropic, several speeds
+     D-.S^-2.S^-2           E=-3.1416 W3=+1: -k* mult 2 speeds [np.float64(2.88561)] charge -1.00; elsewhere >= 0.203  -> ONE-SPEED, CLEAN
+     C+.D+^-1.D+^-1         E=-3.1416 W3=-2: +k* mult 2 speeds [np.float64(0.39999)] charge +1.00; -k* mult 2 speeds [np.float64(1.99999)] charge +1.00; elsewhere >= 0.181  -> isotropic, several speeds
+     C+.D+^-1.D+^-1         E=+3.1416 W3=-2: +k* mult 2 speeds [np.float64(0.39999)] charge +1.00; -k* mult 2 speeds [np.float64(1.99999)] charge +1.00; elsewhere >= 0.181  -> isotropic, several speeds
+     D+^-1.S^-2.S^-2        E=+3.1416 W3=-1: -k* mult 2 speeds [np.float64(2.88561)] charge +1.00; elsewhere >= 0.203  -> ONE-SPEED, CLEAN
+     C-.D-^-1.D-^-1         E=+3.1416 W3=-2: +k* mult 2 speeds [np.float64(0.39999)] charge +1.00; -k* mult 2 speeds [np.float64(1.99999)] charge +1.00; elsewhere >= 0.181  -> isotropic, several speeds
+     D-^-1.S^2.S^2          E=+3.1416 W3=-1: -k* mult 2 speeds [np.float64(2.88561)] charge +1.00; elsewhere >= 0.203  -> ONE-SPEED, CLEAN
+[PASS] D5 refined classification ran (N = 20 grid outside 0.3-balls; cone slopes at +-k*). CAUTION: grid-clean at N = 20 is not evidence of absence (see D6)  10 grid-clean one-speed (word, E) pairs at N=20; 99 of 115 fail
+
+=== D6. grid evidence for the steps D_b S^p at E = pi ===
+[PASS] D6a batched D+ S^4 equals the letter product
+   D+ S^4 at E = pi: on the 40^3 grid outside the 0.3-ball, min dist 1.2e-18 at k/pi = [-0.125 -0.125 -0.125] (multiplicity 4); fraction of grid points within 0.05: 0.154 (6s)
+[PASS] D6 D+ S^4, grid-clean at N = 20 (D5), reaches E = pi exactly at generic grid points away from +-k* with even multiplicity (Kramers pairs, invisible to the det-sign test): it FAILS the criterion
+   D- S^-4 at E = pi: on the 40^3 grid outside the 0.3-ball, min dist 2.4e-18 at k/pi = [-0.825  0.075 -0.675] (multiplicity 2); fraction of grid points within 0.05: 0.154 (5s)
+[PASS] D6 D- S^-4, grid-clean at N = 20 (D5), reaches E = pi exactly at generic grid points away from +-k* with even multiplicity (Kramers pairs, invisible to the det-sign test): it FAILS the criterion
+   perturbed steps exp(i eps H1) D+ exp(i eps H2), eps = 0.15: (E', other-level gap at -k*, grid distance from e^{iE'} outside the 0.3-ball (N=20), cone speed, lower-band charge):
+      (-3.042, np.float64(1.996), np.float64(0.512), 1.00699, np.float64(-1.0))
+      (3.0824, np.float64(1.988), np.float64(0.47), 0.89445, np.float64(-1.0))
+      (3.115, np.float64(1.995), np.float64(0.505), 0.97087, np.float64(-1.0))
+      (3.1134, np.float64(1.987), np.float64(0.505), 0.97731, np.float64(-1.0))
+[PASS] D4 the single-node property is open: for small generic O-symmetric perturbations the node quasi-energy moves to the D+ scalar E' at -k*, which stays an isolated 2-fold isotropic one-speed cone of charge +-1, and E' is reached nowhere else on the grid (grid evidence, not a certificate)  4/4
+
+TOTAL: PASS=35 FAIL=0  (462s)

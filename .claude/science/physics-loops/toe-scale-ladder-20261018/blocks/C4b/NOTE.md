@@ -2,8 +2,8 @@
 
 **Block:** C4b of `toe-scale-ladder-20261018`, a follow-up to `blocks/C4/` (OBL-R1.2: a
 one-qubit-per-site dynamics compatible with the soldering (S) that propagates in 3D).
-**Date:** 2026-10-18. **Status:** author note. It has not been independently reviewed or
-audited. No axiom, primitive or dynamics clause is adopted.
+**Date:** 2026-10-18. **Status:** Independently reviewed (REVIEW.md); unaudited. No axiom,
+primitive or dynamics clause is adopted.
 
 ## Result up front
 
@@ -20,9 +20,12 @@ they cut the open part down to one precise sub-question.
    The composite α_C α_K is a TI, one-qubit, O-covariant Clifford QCA of range 4, for both the
    axis and the full action. Its trace polynomial τ is nonconstant (24 monomials, the orbit of
    (4,2,0)), so operators spread ballistically. Exact iteration confirms this: the Chebyshev
-   radius of α^n(X_0) is 4n for n = 1..8. C4's finding "nothing propagates under soldering" is
-   therefore a statement about range ≤ 2 only. What spreads is operators. No localized excitation
-   moves: by C4 Theorem 2(d), no glider exists under O at any range.
+   radius of α^n(X_0) is 4n for n = 1..8, and in fact for every n: range 4 gives the upper bound,
+   and C4 Theorem 2(c) at the vertex (4,2,0) gives the lower bound. The result holds in both
+   layer orders, as the reviewer checked. C4's finding "nothing propagates under soldering" is
+   therefore a statement about range ≤ 2 only. What spreads is operators. No local-operator
+   glider exists (C4 Theorem 2(d), O, any range). Motion of excitations relative to an invariant
+   state is **not** addressed, and no invariant state of E1 has been identified.
    `logs/c4b_05_commuting_layers.txt`.
 2. **Non-Clifford covariant QCAs exist inside the premise (proved).** The family
    α(θ1,θ2) = Ad(∏_r e^{iθ1 C_r} ∏_r e^{iθ2 K_r}) is TI and O-covariant (axis and full) for every
@@ -39,14 +42,16 @@ they cut the open part down to one precise sub-question.
 4. **Charge sectors (proved, any range, non-Clifford).**
    - *Single particles.* Suppose a TI one-qubit QCA conserves an on-site U(1) charge
      Q = Σ_r m·σ_r. Under full soldering this forces global SU(2) symmetry. Under axis soldering
-     it forces m = ±n with n = (1,1,1)/√3. If the QCA is also O-covariant (or only T-covariant)
+     it forces m = ±n, with n = (1,1,1)/√3, or else global SU(2). If the QCA is also O-covariant (or only T-covariant)
      under any menu action, its one-particle sector is a constant phase.
    - *Pairs.* Two particles then move only as a **bound pair within the range r**. The pair
-     sector splits as (frozen far-apart states) ⊕ (an O-covariant finite-coin quantum walk of the
-     pair centre). The coin space is the set of near-pair relative positions.
+     sector splits as (frozen far-apart states) ⊕ (a finite-coin quantum walk of the pair
+     centre). The walk is covariant under the vacuum stabiliser H_m, which is T for the axis
+     action and O for full/SU(2). The coin space is the set of near-pair relative positions.
 
-   So in-premise transport of a U(1) charge reduces exactly to one question: is that pair walk's
-   band nonflat?
+   A nonflat pair band is **sufficient** for in-premise U(1) transport, but **not necessary**.
+   Bound clusters of k ≥ 3 particles and transport at finite density or above other vacua remain
+   open.
 5. **Diagonal and on-site route (proved).**
    - Full action: the only covariant on-site automorphism is the identity, and every covariant
      QCA that fixes σ_m at every site, for any axis m, is the identity.
@@ -67,13 +72,14 @@ they cut the open part down to one precise sub-question.
    - one magnon is frozen (exact);
    - two magnons are confined to one cube (proved, and checked exactly);
    - all 120 sampled 3-magnon clusters are confined (exact closed reachable sets);
-   - 9 of 40 sampled 4-magnon clusters have reachable sets that are not closed, but no
-     probability-weighted transport was established in the steps run.
+   - 9 of 40 sampled 4-magnon clusters have reachable sets that are not closed. The weight that
+     leaves stays below 5e−8 within 6 two-steps, so no probability-weighted transport was found.
 
 **Bottom line.** Inside the premise (Z^3-TI, one qubit, axis/full O-covariance) there is now an
 exhibit that propagates: ballistic operator spreading at range 4. There is still **no exhibit that
-transports a localized excitation or a conserved charge**. For conserved charges the open part is
-pinned to Lemma 3's pair walk. No moving-particle framework-compatible dynamics is claimed.
+transports a localized excitation or a conserved charge**. For conserved charges, a nonflat
+pair walk (Lemma 3) would suffice. The k ≥ 3 cluster sectors and finite-density transport are also
+open. No moving-particle framework-compatible dynamics is claimed.
 
 ## Premises (all supplied; named)
 
@@ -189,15 +195,28 @@ to the vacuum phase.
 - Far pairs are therefore fixed. By unitarity, the span of the near pairs,
   S_near = span{|x, x+ρ⟩ : 0 < |ρ|_∞ ≤ r}, is invariant.
 - By TI, U restricted to S_near is a matrix-valued Laurent polynomial W(K) in the pair-centre
-  momentum K. Its size is d_r = ((2r+1)^3 − 1)/2. Covariance makes it O-covariant through the
-  permutation action on ρ.
+  momentum K. Its size is d_r = ((2r+1)^3 − 1)/2: d_1 = 13 = 3 + 4 + 6 and d_2 = 62. Covariance
+  makes it covariant, through the permutation action on ρ, under the vacuum stabiliser H_m.
+  - H_m = O for the full action, or for any SU(2)-symmetric α.
+  - H_m = T for the axis action with only Q_n conserved, because odd R map the two-particle
+    sector over Ω to the (N−2)-particle sector over the anti-vacuum.
 
-So the two-particle sector is (frozen continuum) ⊕ (an O-covariant d_r-coin quantum walk).
+  The orbit structure 3 + 4 + 6 is the same under T.
+
+So the two-particle sector is (frozen continuum) ⊕ (an H_m-covariant d_r-coin quantum walk).
 Transport of pairs is equivalent to W(K) having a nonflat eigenphase.
+
+**Scope of the reduction.** This reduces only the **two-particle** sector.
+- A flat W does not exclude mobile bound clusters of k ≥ 3 particles. The same argument gives
+  (frozen) ⊕ (finite-coin cluster walks) in each k-sector, and these are not analysed here.
+- Transport at finite density or above other vacua is not reduced either.
+
+So a nonflat W is sufficient for T3, but not necessary.
 
 The single-particle walk freeze does not apply here. The coin is a permutation representation of
 dimension d_r (13 for r = 1), not the spin-1/2 coin. The 10-16 two-qubit-site note shows that
-larger coins can move. **Open:** whether some U(1) one-qubit O-covariant QCA realises a nonflat W.
+larger coins can move. **Open:** whether some U(1) one-qubit O-covariant QCA realises a nonflat W,
+or a nonflat k-cluster walk for some k ≥ 3.
 The only in-premise U(1) examples constructed here are diagonal ones (Lemma 4), for which W is
 diagonal and constant.
 
@@ -217,7 +236,9 @@ diagonal and constant.
     - The only axis that can be fixed non-trivially is ±n.
     - **Exhibit:** Ad(∏ exp(iφ σ_n(r) σ_n(r+e))) over face bonds, with φ = 0.3. It is checked
       O-covariant on explicit matrices for all 24 R, max error 2e−15. It is entangling and
-      non-Clifford: α(X_0) has 9 Pauli components on {0, e_x}.
+      non-Clifford. Restricted to {0, e_x}, α(X_0) has 9 Pauli components. The full α(X_0) is
+      supported on the whole 7-site star and has 10272 Pauli components, according to the
+      reviewer's count.
     - **Freeze:** if α fixes every σ_n, then α(σ^+_0) = σ^+_0 f with f diagonal on a finite set.
       So α^k(σ^+_0) = σ^+_0 f^k, which has the same support for every k. Composing with
       Ad(σ_n)^{⊗} keeps this form.
@@ -311,9 +332,10 @@ never moves. This is checked exactly on Z^3 for four initial pairs over 8 two-st
 3. **Conclusion.** Inside the premise there is a soldered dynamics that propagates in the T2 sense
    (E1). There is a scoped no-go for T3 in the families tried: diagonal/on-site at any range;
    U(1) single particles at any range; Clifford gliders at any range (C4); and T1 for everything
-   (Lemma 1). There is **no** explicit in-premise T3 exhibit. The next target is Lemma 3's pair
-   walk: construct a U(1) (axis: Q_n) one-qubit O-covariant QCA with a nonflat near-pair band, or
-   prove that none exists.
+   (Lemma 1). There is **no** explicit in-premise T3 exhibit. One natural next target is Lemma 3's
+   pair walk: construct a U(1) (axis: Q_n) one-qubit O-covariant QCA with a nonflat near-pair band.
+   That would be sufficient for T3. Proving that no such pair band exists would **not** close U(1)
+   transport, because the k ≥ 3 cluster sectors and the finite-density case would remain open.
 
 ## No-Go Discipline Gate (N1–N8) for the scoped negative parts
 
@@ -325,15 +347,18 @@ never moves. This is checked exactly on Z^3 for four initial pairs over 8 two-st
   | (ii) | diagonal + on-site | ATTEMPTED; frozen (Lemma 4) |
   | (iii) | conserved-charge single particle | ATTEMPTED; frozen (Lemma 2) |
   | (iv) | conserved-charge pairs | ATTEMPTED; reduced, **not closed** (Lemma 3) |
-  | (v) | commuting covariant Pauli layers | ATTEMPTED; T2 positive (E1); T3 at the Clifford point excluded by C4 Thm 2 (RULED OUT BY PRIOR); generic θ not closed |
+  | (v) | commuting covariant Pauli layers | ATTEMPTED; T2 positive (E1); local-operator gliders at the Clifford point excluded by C4 Thm 2(d) (RULED OUT BY PRIOR); excitations above an invariant state not addressed; generic θ not closed |
   | (vi) | partitioned Margolus | ATTEMPTED; leaves the premise |
   | (vii) | Clifford at any range | RULED OUT BY PRIOR, C4 Theorem 2(d), gliders only |
 
   Five or more distinct families are tried. Two of them, (iv) and (v) at generic θ, are not
   closed. So **no universal T3 no-go is claimed**.
 - **N2, walls.** The collapsed open set is
-  {W1: a nonflat pair walk in a U(1) QCA; W2: T3 for non-conserving non-Clifford QCAs}.
-  - W1 does not imply W2, and W2 does not imply W1.
+  {W1: a nonflat k-cluster walk, for some k ≥ 2, in a U(1) QCA; W1': U(1) transport at finite
+  density or above other vacua; W2: T3 for non-conserving non-Clifford QCAs, including
+  excitations above invariant states}.
+  - Closing W1 positively implies T3. Proving that no W1 walk exists does not settle W1' or W2.
+  - Pairwise independence is otherwise unresolved.
   - Their independence is *not asserted*: whether a non-conserving moving excitation would induce
     a conserved one is unknown.
 - **N3, hidden walls.** Three were found and promoted to explicit premises:
@@ -404,3 +429,36 @@ python3 c4b_08_tau_laurent.py         # PASS=7 FAIL=0, < 1 s (second route for E
 2. **Lemma 1, step (I7).** Confirm from GNVW's definition that the reflection inverts the index.
 3. **Lemma 2(b), step 5.** Check that the vacuum-fixing subgroup acts on one-particle states with
    an x-independent phase. This holds for the axis action under T.
+
+## Review dispositions
+
+The independent review is in `REVIEW.md`. The reviewer is the same model family as the author,
+working in a fresh context with its own code. Its log is `review_scripts/rv_SUMMARY.log`,
+PASS=83 FAIL=0.
+
+**Confirmed by independent code:**
+- E1, including covariance with phases for both actions and both layer orders C·K and K·C;
+- τ = the O-orbit sum of (4,2,0);
+- Chebyshev radius 4n, which the reviewer argues holds for all n;
+- Lemma 1, with (I7) proved from the GNVW support-algebra definition and checked by a second
+  index route;
+- Lemmas 2 and 4, and the exact group steps of Lemma 3;
+- the Margolus stabiliser and Lemma 5's combinatorial step.
+
+The magnon bands for the generic block and the k = 3 and k = 4 survey results remain author
+evidence only.
+
+- **3c (moderate): accepted and applied.** The reduction covers the two-particle sector only. A
+  nonflat pair walk is sufficient for U(1) transport, not necessary. The k ≥ 3 cluster sectors and
+  finite-density transport stay open. Edited: Result 4, Bottom line, Lemma 3 scope, Answer 3,
+  N2.
+- **1' (minor): accepted and applied.** "No localized excitation moves" is narrowed to "no
+  local-operator glider" (C4 Theorem 2(d)). Excitations above an invariant state are not
+  addressed. Edited: Result 1, N1 row (v).
+- **3b (minor): accepted and applied.** The pair walk is H_m-covariant: T under the axis action,
+  O under full/SU(2). Edited: Result 4, Lemma 3.
+- **Cosmetic: applied.**
+  - Lemma 2(a) now reads "m = ±n or global SU(2)".
+  - The component count in Lemma 4(c) is now marked as restricted to {0, e_x}; the full image
+    has 10272 components.
+  - Radius 4n for all n, and validity in both layer orders, are added to Result 1.

@@ -1,6 +1,6 @@
 # C4 findings: does the repo's microscopic realisation fix the scale of h?
 
-Provenance: a worker of the same model family; not yet checked. Saved by the supervisor from the hand-back. Runner: `c4_h_normalisation.py`, exact sympy, PASS=18 FAIL=0 (about 93 s). A 0/0 harness bug log is kept, and block 120's runner was re-run at 11/11.
+Provenance: a worker of the same model family. Checked by a fresh-context same-family agent (`../C4_check/REPORT.md`, PASS=12): the main answer holds, and its corrections are applied below. Saved by the supervisor from the hand-back. Runner: `c4_h_normalisation.py`, exact sympy, PASS=18 FAIL=0 (about 93 s). A 0/0 harness bug log is kept. The file `block120_runner_rerun_tail.log` is actually the 09-25 exact-lattice runner (11/11), not block 120's; the check re-ran block 120's runner at 13/13.
 
 **Answer.** The repo fixes h's scale through the walker's hop, not through a bounded spectrum. That gives a_s = 1 in block-62 variables, but not r = 1.
 - The walker fixes K1 (the u·R1 coefficient) relative to α.
@@ -17,7 +17,7 @@ So r = 1, equivalently K1 = K2, is derived only conditionally.
   - E is an unbounded GL(3) c-number field. P has no microscopic assignment.
 - **Block 64:** bond strains; to first order the frame strain is minus the walk's B.
 - **Block 120** (lines 65–66, 116–117): "Each is normalised so that the walker sees the member's uniform field: sym P(0) = −½, ΛR(0) = 1", with B = −½φ_j h_ij. This holds only at q = 0.
-- **The only bounded-spectrum tensor field** is the separate Z_N clock and slot model. It is not coupled to the walker and has no lapse or R1, so it cannot fix r.
+- **The only bounded-spectrum tensor field** is the separate Z_N clock and slot model (`docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md`). It is not coupled to the walker: its source is supplied, and the matter map is listed as open. It has an R1-shaped constraint with no coefficient and no lapse. So it cannot fix r.
 
 ## 2. Computation
 
@@ -29,7 +29,7 @@ So r = 1, equivalently K1 = K2, is derived only conditionally.
   - site frame: ηhη, with 2 of 8 species seeing δ + h;
   - one-step bond: 1 of 8;
   - only the two-step coupling serves all eight.
-- **B2.** At β = −α the lapse identity is ë_u = −(K1 a_s/(4α)) p·Θ·p, with no K2. So "α = K/4" in blocks 134 and 120 T4 means K1 = 4α (with a_s = 1).
+- **B2.** At β = −α the lapse identity is ë_u = −(K1 a_s/(4α)) p·Θ·p, with no K2. So "α = K/4" in block 134 T4 and the 09-25 exact-lattice note T4 means K1 = 4α (with a_s = 1).
 - **B4.** The TT cone is K2/(4α).
 - **B5.** The invariants under Φ_ρ are K1a_s/α, K2/α and K1a_s/K2.
 - **B6.** In a static pull, the space-to-time curvature ratio γ = a_s K1/K2 is invariant.
@@ -37,13 +37,13 @@ So r = 1, equivalently K1 = K2, is derived only conditionally.
 
 ## 3. Verdict
 
-- **Fixed:** a_s = 1 in block-62 variables (h = (EᵀE)⁻¹ − δ operationally). This breaks the Φ_ρ freedom. The invariant statement is K1/K2 = γ_walker.
+- **Fixed by definition:** a_s = 1 in block-62 variables. It comes from the identification clause g⁻¹ = EᵀE and block 120's stipulated ΛR(0) = 1, so it is not derived (check). It picks the Φ_ρ representative. The invariant statement is K1/K2 = γ_walker.
 - **Not fixed:** K2. r = 1 follows from the frame clause plus one of:
   - **(II) Closure with the walker as matter** (continuum, degree ≤ 2, B19/B21 premises): this gives a_s = K2/K1. The walker's own {G, C} with frame coupling has not been computed.
   - **(I) Block 64's background-free ansatz,** which gives −√gR[eᵀe] with a single K. Blindness alone does not suffice: GR on δ + h/r is also blind. The ratio comes from the background-free form, which is supplied.
 
 ## Caveats
 
-- Block 120 T4's "at α = K/4 the disturbances move at the walker's top speed" silently assumes K1 = K2. With K1 ≠ K2 the TT speed² is K2/K1.
+- The sentence "at α = K/4 the disturbances move at the walker's top speed" (block 62 T4, block 134 T4(a), the 09-25 exact-lattice note T4(b)) relies on those notes' declared single K. With K1 ≠ K2 the TT speed² after lapse matching is K2/(K1 a_s), so "top speed" is equivalent to γ = 1, i.e. r = 1.
 - a_s = 1 holds for all species only with the two-step placement at q = 0.
 - First order in the fields, plus a second-order check for uniform frames.

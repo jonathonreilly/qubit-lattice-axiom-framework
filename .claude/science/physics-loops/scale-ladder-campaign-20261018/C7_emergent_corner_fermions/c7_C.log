@@ -1,0 +1,43 @@
+[PASS] C0: 1c+11 has a period-1 gauge (u translation invariant, 12 Majorana bands); E/site equals the 2^3-cell value  E = -11.41729234 vs -11.41729234
+   period-1 gauge for (1, 'c+', 0, 1): no
+   period-1 gauge for (1, 'c+', 1, 0): yes
+   period-1 gauge for (1, 's+', 1, 1): yes
+
+C1: Majorana spectrum of 1c+11 (period-1 gauge, 12 bands; t1 = 1); t = 2.1s
+[PASS] every Majorana band of 1c+11 is 2-fold at 50 random k (t2 = 0.2, 1)
+   t2     gap Delta   minimum at k/pi (this gauge)   #grid minima   bandwidth
+   0.05     1.37380   [1. 1. 0.]     6: [(np.float64(0.0), np.float64(0.0), np.float64(1.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(1.0)), (np.float64(1.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(0.0), np.float64(1.0)), (np.float64(1.0), np.float64(1.0), np.float64(0.0))]   2.830
+   0.10     1.33430   [ 1.  1. -0.]     6: [(np.float64(0.0), np.float64(0.0), np.float64(1.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(1.0)), (np.float64(1.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(0.0), np.float64(1.0)), (np.float64(1.0), np.float64(1.0), np.float64(0.0))]   2.835
+   0.20     1.25862   [-0.  1.  1.]     6: [(np.float64(0.0), np.float64(0.0), np.float64(1.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(1.0)), (np.float64(1.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(0.0), np.float64(1.0)), (np.float64(1.0), np.float64(1.0), np.float64(0.0))]   2.856
+   0.30     1.18854   [1. 1. 0.]     6: [(np.float64(0.0), np.float64(0.0), np.float64(1.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(1.0)), (np.float64(1.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(0.0), np.float64(1.0)), (np.float64(1.0), np.float64(1.0), np.float64(0.0))]   2.891
+   0.50     1.07226   [1. 0. 1.]     6: [(np.float64(0.0), np.float64(0.0), np.float64(1.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(1.0)), (np.float64(1.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(0.0), np.float64(1.0)), (np.float64(1.0), np.float64(1.0), np.float64(0.0))]   2.996
+   0.70     1.00147   [0. 1. 0.]     6: [(np.float64(0.0), np.float64(0.0), np.float64(1.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(1.0)), (np.float64(1.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(0.0), np.float64(1.0)), (np.float64(1.0), np.float64(1.0), np.float64(0.0))]   3.142
+   1.00     1.01065   [ 1. -0.  1.]     6: [(np.float64(0.0), np.float64(0.0), np.float64(1.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(1.0)), (np.float64(1.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(0.0), np.float64(1.0)), (np.float64(1.0), np.float64(1.0), np.float64(0.0))]   3.417
+   1.30     1.16094   [-0. -0.  1.]     6: [(np.float64(0.0), np.float64(0.0), np.float64(1.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(1.0)), (np.float64(1.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(0.0), np.float64(1.0)), (np.float64(1.0), np.float64(1.0), np.float64(0.0))]   3.739
+   1.60     1.41375   [ 0. -0.  1.]     6: [(np.float64(0.0), np.float64(0.0), np.float64(1.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(1.0)), (np.float64(1.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(0.0), np.float64(1.0)), (np.float64(1.0), np.float64(1.0), np.float64(0.0))]   4.089
+   2.00     1.84104   [-0.  1.  1.]     6: [(np.float64(0.0), np.float64(0.0), np.float64(1.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(1.0)), (np.float64(1.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(0.0), np.float64(1.0)), (np.float64(1.0), np.float64(1.0), np.float64(0.0))]   4.585
+   2.50     2.44728   [0. 1. 1.]     6: [(np.float64(0.0), np.float64(0.0), np.float64(1.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(1.0)), (np.float64(1.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(0.0), np.float64(1.0)), (np.float64(1.0), np.float64(1.0), np.float64(0.0))]   5.231
+   3.00     3.09218   [ 1. -0. -0.]     6: [(np.float64(0.0), np.float64(0.0), np.float64(1.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(1.0)), (np.float64(1.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(0.0), np.float64(1.0)), (np.float64(1.0), np.float64(1.0), np.float64(0.0))]   5.896
+[PASS] 1c+11 is fully gapped (Delta > 0.5 |t1|) for every t2 scanned in [0.05, 3]: no Majorana nodes, no Weyl points at the Majorana Fermi level  min Delta = 1.0015
+   t = 5.9s
+
+C2: projective symmetry group on L = 4 (24 proper rotations about a site, translations)
+[PASS] period-1 gauge of 1c+11 lifted to L = 4 reproduces the 1c+11 fluxes on every face
+   1c+11 (Majorana): {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [0], 'fixed': []}
+   corner model u-pattern 1011 (real, control): {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [0], 'fixed': [(1, 3, 1), (3, 1, 3)]}
+[PASS] control: corner model 1011 reproduces C6 A4 (C4^4 = -1, commuting translations, fixed momenta (1,3,1),(3,1,3))
+[PASS] 1c+11 PSG: C4^4 = -1 and the translations commute (two of the three corner-model design targets)
+FINDING C2: O-fixed momenta of 1c+11 (units pi/2): []  (corner model 1011: [(1, 3, 1), (3, 1, 3)]); the third design target (an O-fixed momentum) FAILS for the Majorana-selected sector
+[PASS] PSG shifts of 1c+11 verified spectrally: E(R k + pi s_R) = E(k) for all 24 rotations, 40 random k (so the empty fixed set is not a bookkeeping artefact)  max dev 6.7e-15
+   PSG of the other O-invariant Majorana patterns (chiral triangles c+):
+     0c+00: {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [0], 'fixed': []}
+     0c+01: {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [0], 'fixed': [(1, 1, 1), (3, 3, 3)]}
+     0c+10: {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1], 'fixed': 'n/a'}
+     0c+11: {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1], 'fixed': 'n/a'}
+     1c+00: {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1], 'fixed': 'n/a'}
+     1c+01: {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1], 'fixed': 'n/a'}
+     1c+10: {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [0], 'fixed': [(0, 2, 0), (2, 0, 2)]}
+     1c+11: {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [0], 'fixed': []}
+   t = 14.2s
+
+C3: cost of flipping one gauge link u_e (flux change on its 3 faces), L = 4 torus, 2^3 boundary twists

@@ -1,0 +1,15 @@
+A0: Gamma matrices and the Majorana dictionary
+[PASS] G1..G7 Hermitian Pauli strings, mutually anticommuting, square to 1; G1 G2 ... G7 = -i  product phase i^3
+[PASS] JW realisation: D_q^2 = 1, physical dim 8 per corner; dictionary identities (A), the parton hopping identities and [G^a, D_q] = 0 hold
+[PASS] bond labels 1..6 at every corner, a function of (corner type, relative edge descriptor) only (translation invariant)  72 oriented descriptors
+
+A1: L = 2 torus, 96 corners = 288 qubits, 288 edges, 232 faces; exact Pauli algebra
+[PASS] every W_C is a Hermitian Pauli string squaring to 1, and all 232 W_C mutually commute
+[PASS] every bond term of H_M, H_M2 and H_R commutes with every W_C (fluxes conserved)  {'M': True, 'M2': True, 'R': True}
+   (control) anticommuting pairs among the 288 H_M bond terms: 1440 (= pairs of edges sharing one corner: 1440)
+[PASS] control: H_M bond terms anticommute exactly for edges sharing a corner (Kitaev structure)
+[PASS] closed-surface relation: product over the 14 faces of a cuboctahedron of W (outward) = +1 exactly  14 faces, product = i^0 x (identity: True)
+   t = 2.8s
+
+A2: exact diagonalisation of the qubit model on clusters vs free fermions in the dictionary's flux sector
+[PASS] H_M on triangle (3 corners): qubit spectrum = free-fermion spectrum (levels and relative multiplicities) in each of the 2 W sectors  N=3, E=3, cycles=1, max level dev 0.0e+00

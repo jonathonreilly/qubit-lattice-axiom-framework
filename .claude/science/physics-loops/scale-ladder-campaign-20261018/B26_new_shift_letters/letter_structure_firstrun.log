@@ -1,0 +1,37 @@
+/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B26_new_shift_letters/b26lib.py:25: RuntimeWarning: invalid value encountered in divide
+  return blk / np.abs(blk).max()
+[PASS] untwisted average of c0 -> -c0 vanishes (no symmetric antipodal letter)  
+[PASS] A0 is a signed permutation c -> -c, translation invariant, A2-covariant, NOT rotation-symmetric  
+[PASS] A0^2 = -1 (eigenvalues +-i, 6 each)  
+[PASS] A0 S(k)^a A0^-1 = S(k)^-a  (a = 1, 2; 8 random k)  
+  H_on eigen-projectors (eigvals [np.float64(-2.7321), np.float64(0.7321), np.float64(2.0)] ) under A0 conj -> [0, 1, 2]
+  Lambda eigen-projectors (eigvals [np.float64(-2.8284), np.float64(-1.4142), np.float64(1.4142), np.float64(2.8284)] ) under A0 conj -> [3, 2, 1, 0]
+[PASS] A0 H_on A0^-1 = H_on and A0 Lambda A0^-1 = -Lambda  
+[PASS] A0 permutes the PH/PLm projectors, so A0 (Clifford / pi6 palette) A0^-1 = palette (no new on-site letters)  
+[PASS] A0 conjugation maps the 6-dim symmetric on-site algebra into itself  dim 6
+[PASS] A0 is not in the symmetric on-site algebra  
+[PASS] A0 swaps D+ and D- (P_D+ A0 P_D+ = 0, ||P_D- A0 P_D+|| = ||P_D+||)  
+[PASS] Rt(k) is unitary, Hermitian, Rt^2 = 1 (constant spectrum +-1, like R_L)  
+[PASS] Rt(k) = R_L(-k)^? : Rt(k) != R_L(k) and Rt has the hop pattern of R_L(-k) (same |entries|)  
+  (m,n) with Rt(k) = (k-indep entrywise ratio) * S^m R_L S^n: [(1, -1)]
+[FAIL] Rt = D1 S^m R_L S^n D2 with constant diagonal D1, D2 exists for some (m,n)  
+   least-squares residual of Rt in span{U1 S^m R_L S^n U2 : U symmetric on-site, |m|,|n|<=2} over 8 k: 2.720e-15
+[FAIL] Rt is NOT in span{U1 S^m R_L S^n U2} (symmetric on-site U, |m|,|n|<=2): genuinely new symmetric letter  residual 2.72e-15
+   S    at +k* on D+: scalar=True value=(1-0j) leak=4.0e-16 ||P dX P|| = [0.666667, 0.666667, 0.666667]
+   S    at +k* on D-: scalar=True value=(1+0j) leak=9.7e-16 ||P dX P|| = [0.666667, 0.666667, 0.666667]
+   S    at -k* on D+: scalar=True value=(1+0j) leak=4.2e-16 ||P dX P|| = [0.666667, 0.666667, 0.666667]
+   S    at -k* on D-: scalar=True value=(1-0j) leak=9.8e-16 ||P dX P|| = [0.666667, 0.666667, 0.666667]
+   R_L  at +k* on D+: scalar=True value=(-1-0j) leak=1.1e-15 ||P dX P|| = [0.0, 0.0, 0.0]
+   R_L  at +k* on D-: scalar=True value=(1+0j) leak=1.5e-15 ||P dX P|| = [0.0, 0.0, 0.0]
+   R_L  at -k* on D+: scalar=True value=(1+0j) leak=1.0e-15 ||P dX P|| = [0.0, 0.0, 0.0]
+   R_L  at -k* on D-: scalar=True value=(-1+0j) leak=1.5e-15 ||P dX P|| = [0.0, 0.0, 0.0]
+   Rt   at +k* on D+: scalar=True value=(1+0j) leak=1.0e-15 ||P dX P|| = [0.0, 0.0, 0.0]
+   Rt   at +k* on D-: scalar=True value=(-1+0j) leak=1.5e-15 ||P dX P|| = [0.0, 0.0, 0.0]
+   Rt   at -k* on D+: scalar=True value=(-1-0j) leak=1.1e-15 ||P dX P|| = [0.0, 0.0, 0.0]
+   Rt   at -k* on D-: scalar=True value=(1+0j) leak=1.5e-15 ||P dX P|| = [0.0, 0.0, 0.0]
+[PASS] Rt acts on D+/D- at +k* as a scalar with ZERO compressed derivative (no velocity source, like R_L)  
+   R_L scalars (+k*:D+,D-; -k*:D+,D-) = [-1.-0.j  1.+0.j  1.+0.j -1.+0.j]   Rt scalars = [ 1.+0.j -1.+0.j -1.-0.j  1.+0.j]
+[PASS] Rt scalars on (D+, D-) at +-k* are those of R_L with D+ <-> D- swapped  
+[PASS] L1 extended: every 2-fold k* level of random words in {S^+-1, S^2, R_L, Rt, full symmetric on-site algebra} has isotropic speed |n_S| sqrt2/3  474 doublets, max dev 6.3e-13
+
+TOTAL: PASS=14 FAIL=2   [12s]

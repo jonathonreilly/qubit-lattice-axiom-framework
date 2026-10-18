@@ -1,0 +1,30 @@
+[PASS] model H (all 36 edge types, own gauge) is invariant under all 48 dressed O_h elements (validates action formula)  
+[PASS] PSG gauge solve consistent with all flux constraints  
+source corner c0 = [(0, 1, 0), (1, 0, 0)]
+enumerated 3000 (twist, target) pairs; phased-permutation letters found: 10
+  sym target [(0, 1, 0), (1, 0, 0)]@(-2, -2, 0): same corner, d = -2.0 f_c; covariant=True; O_h-inv: comm=True anti=False A2xinv=False; unitary=True; spectrum k-dependent ; X(k)^2 ~ non-scalar
+  sym target [(0, 1, 0), (1, 0, 0)]@(-1, -1, 0): same corner, d = -1.0 f_c; covariant=True; O_h-inv: comm=True anti=False A2xinv=False; unitary=True; spectrum k-dependent ; X(k)^2 ~ non-scalar
+  sym target [(0, 1, 0), (1, 0, 0)]@(0, 0, 0): same corner, d = 0.0 f_c; covariant=True; O_h-inv: comm=True anti=False A2xinv=False; unitary=True; spectrum CONSTANT [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]; X(k)^2 ~ scalar
+  sym target [(0, 1, 0), (1, 0, 0)]@(1, 1, 0): same corner, d = 1.0 f_c; covariant=True; O_h-inv: comm=True anti=False A2xinv=False; unitary=True; spectrum k-dependent ; X(k)^2 ~ non-scalar
+  sym target [(0, 1, 0), (1, 0, 0)]@(2, 2, 0): same corner, d = 2.0 f_c; covariant=True; O_h-inv: comm=True anti=False A2xinv=False; unitary=True; spectrum k-dependent ; X(k)^2 ~ non-scalar
+  A2  target [(-1, 0, 0), (0, -1, 0)]@(-2, -2, 0): antipodal corner, d = -2.0 f_c; covariant=True; O_h-inv: comm=False anti=False A2xinv=True; unitary=True; spectrum CONSTANT [-0.5 -0.5 -0.5 -0.5 -0.5 -0.5  0.5  0.5  0.5  0.5  0.5  0.5]; X(k)^2 ~ scalar
+  A2  target [(-1, 0, 0), (0, -1, 0)]@(-1, -1, 0): antipodal corner, d = -1.0 f_c; covariant=True; O_h-inv: comm=False anti=False A2xinv=True; unitary=True; spectrum CONSTANT [-0.5 -0.5 -0.5 -0.5 -0.5 -0.5  0.5  0.5  0.5  0.5  0.5  0.5]; X(k)^2 ~ scalar
+  A2  target [(-1, 0, 0), (0, -1, 0)]@(0, 0, 0): antipodal corner, d = 0.0 f_c; covariant=True; O_h-inv: comm=False anti=False A2xinv=True; unitary=True; spectrum CONSTANT [-0.5 -0.5 -0.5 -0.5 -0.5 -0.5  0.5  0.5  0.5  0.5  0.5  0.5]; X(k)^2 ~ scalar
+  A2  target [(-1, 0, 0), (0, -1, 0)]@(1, 1, 0): antipodal corner, d = 1.0 f_c; covariant=True; O_h-inv: comm=False anti=False A2xinv=True; unitary=True; spectrum CONSTANT [-0.5 -0.5 -0.5 -0.5 -0.5 -0.5  0.5  0.5  0.5  0.5  0.5  0.5]; X(k)^2 ~ scalar
+  A2  target [(-1, 0, 0), (0, -1, 0)]@(2, 2, 0): antipodal corner, d = 2.0 f_c; covariant=True; O_h-inv: comm=False anti=False A2xinv=True; unitary=True; spectrum CONSTANT [-0.5 -0.5 -0.5 -0.5 -0.5 -0.5  0.5  0.5  0.5  0.5  0.5  0.5]; X(k)^2 ~ scalar
+[PASS] every found letter is unitary and covariant under all 24 dressed rotations  
+[PASS] every letter's displacement is a multiple a*f_c of the corner's face diagonal, target corner = c or -c (C2' stabiliser argument)  
+geometric types found: [('antipodal corner', -2.0), ('antipodal corner', -1.0), ('antipodal corner', 0.0), ('antipodal corner', 1.0), ('antipodal corner', 2.0), ('same corner', -2.0), ('same corner', -1.0), ('same corner', 0.0), ('same corner', 1.0), ('same corner', 2.0)]
+symmetric letters (chi trivial): [('same corner', -2.0), ('same corner', -1.0), ('same corner', 0.0), ('same corner', 1.0), ('same corner', 2.0)]
+pseudoscalar A2 letters: [('antipodal corner', -2.0), ('antipodal corner', -1.0), ('antipodal corner', 0.0), ('antipodal corner', 1.0), ('antipodal corner', 2.0)]
+[PASS] each of the 10 C2'-fixed targets {c,-c} x a in {-2..2} gives exactly one letter (either chi=1 or chi=A2, never both, never neither)  
+[PASS] same-corner letters are exactly the symmetric S^a, a=-2..2 (a=0 identity); k-dependent iff a != 0  
+[PASS] antipodal letters A_a (c@v -> -c@v + a f_c) all have a CONSTANT Bloch spectrum (2x2 blocks c<->-c)  
+[PASS] independent R_L := H_link/sqrt2 is an involution (R_L^2 = 1)  
+[PASS] A0^2 = -1  
+[PASS] A_a = z_a A0 S^a (|z_a| = 1) for a = -2..2  
+[PASS] S^2 letter = S1*S1 and S^-1 letter = S1^-1 (up to sign)  
+[PASS] A0 S A0^-1 = S^-1  
+[PASS] A0 R_L A0^-1 = -S R_L S^-1  (so the A2 half-letters generate no new symmetric letter)  
+
+TOTAL: PASS=13 FAIL=0   [9s]

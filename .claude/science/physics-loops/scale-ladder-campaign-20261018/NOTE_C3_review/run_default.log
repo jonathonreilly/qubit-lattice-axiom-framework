@@ -1,0 +1,5 @@
+
+=== Part B: Theorem B and the arc lemma (exact) ===
+[PASS] B0_L4  (S) + Jacobi => Lam_(-1) + Lam_1 in the ideal (Groebner membership, checker generator, 4 vars)
+[PASS] B0_L5  (S) + Jacobi => Lam_(-1) + Lam_1 in the ideal (Groebner membership, checker generator, 8 vars)
+[PASS] B0_L6  (S) + Jacobi => Lam_(-1) + Lam_1 in the ideal (Groebner membership, checker generator, 13 vars)

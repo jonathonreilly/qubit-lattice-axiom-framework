@@ -5,3 +5,9 @@
 [PASS] A2c: second order: (delta + h)(E^T E) = 1 + O(t^3) with h = -tX + t^2(X^2 - eps^T eps); unit coupling persists beyond first order
 [PASS] A3: block 62's source -(1/2) sum Theta_(ij) h_ij is the metric-variational stress at unit strength: a_s = 1
 [PASS] A5a: two-step coupling: H^2 = |s|^2 - a_R P^T h P + O(h^2) at every wave vector (s_a c_a = P_a)
+[PASS] A5b: two-step coupling at all eight species corners: H^2 = dk^T (1 - a_R h) dk + O(dk^3, h^2) -> a_s = a_R for every species
+[PASS] A4: species corners: site frame (block 62) sees eta h eta (diagonals unit, mixed off-diagonals flipped); one-step bond (block 64) sees sym(h eta); species seeing exactly delta + a_R h: {'site': 2, 'one-step': 1, 'two-step': 8}
+[PASS] A5c: long wavelength: the realisation's normalisation clause 'Lambda R(0) = 1' (block 120 note) is a_R = 1, i.e. a_s = 1
+== Part B: the member's lapse identity with K1 != K2 and source strength a_s
+[PASS] B1: R1, R2 invariant under h -> h + p xi + xi p; p_i dR2/dh_ij = 0 (block 62 T3(b))
+[PASS] B2: at beta = -alpha: e_u'' = -(K1 a_s/(4 alpha)) p.Theta.p identically; no K2, no h, no u dependence

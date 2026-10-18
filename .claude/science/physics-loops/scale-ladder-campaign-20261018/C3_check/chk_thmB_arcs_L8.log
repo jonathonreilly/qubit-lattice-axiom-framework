@@ -1,0 +1,10 @@
+PASS: R0_L8 (S) alone => Lam_(-1) = -Lam_1 lies in the Jacobi ideal (Groebner membership; 26 vars)
+PASS: R1_L8 Lam_2/Lam_1 values consistent with (S)+Jacobi on grid: ['-1', '-1/2', '-2', '-3/2', '0']; arc prediction ['-1', '-1/2', '-2', '-3/2', '0']
+PASS: R1b_L8 Lam_2 = 2 Lam_1 (continuum) inconsistent; every consistent Lam_2/Lam_1 <= 0 (Theorem B's |ratio-2|>=1/2 holds and is not sharp)
+[exact part done in 193.9s]
+TOTAL: PASS=3 FAIL=0
+
+real	3m14.815s
+user	3m7.563s
+sys	0m0.140s
+EXIT 0

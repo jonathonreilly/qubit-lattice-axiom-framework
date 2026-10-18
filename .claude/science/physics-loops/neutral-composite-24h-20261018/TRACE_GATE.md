@@ -80,3 +80,6 @@ Conserved scalar fluctuation: upstream_support; derives collective neutral energ
 
 
 Range-two and frozen-arm block: trace_class: upstream_support; target_blocker_text: uniform range-two Airy expansion and excluded long-arm control; source_of_blocker_text: handoff; reachability_to_target: partially_closes; artifact_role: theorem; next_trace_action: derive complete fixed-order retained-host stability. Full microscopic resonance remains open.
+
+
+Complete fixed-order pole: trace_class: upstream_support; target_blocker_text: full retained-channel outgoing resolvent and gauge-consistent native higher coefficients; source_of_blocker_text: handoff; reachability_to_target: partially_closes; artifact_role: theorem; next_trace_action: derive original source residue and finite-time microscopic response.

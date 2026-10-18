@@ -71,3 +71,6 @@ Conservedscalar independentmoment/source/exactFourierchecks andfinalreviewPASS a
 
 
 Range-two Airy / frozen arms: final scoped review PASS, native/REVIEW_RANGE_TWO_AIRY.md. Independent Bessel, perturbation and frozen-arm checks PASS. No audit verdict.
+
+
+Complete fixed-order composite: component checks, synthesis and final scoped review PASS; see native/REVIEW_FIXED_ORDER_COMPOSITE.md. Contour separation clarified before final confirmation. No formal audit.

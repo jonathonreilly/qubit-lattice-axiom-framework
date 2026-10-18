@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "physical_grid_sites": 8,
+  "gauge_controls": [
+    {
+      "energy": -4.0,
+      "block_dimension": 16,
+      "kernel_dimension": 16,
+      "local_vs_canonical_k4_error": 1.796378588936215e-16
+    },
+    {
+      "energy": -2.0,
+      "block_dimension": 64,
+      "kernel_dimension": 16,
+      "local_vs_canonical_k4_error": 4.0356644684612214e-16
+    },
+    {
+      "energy": 0.0,
+      "block_dimension": 96,
+      "kernel_dimension": 50,
+      "local_vs_canonical_k4_error": 1.2930103484442153e-16
+    },
+    {
+      "energy": 2.0,
+      "block_dimension": 64,
+      "kernel_dimension": 16,
+      "local_vs_canonical_k4_error": 3.826320312782259e-16
+    },
+    {
+      "energy": 4.0,
+      "block_dimension": 16,
+      "kernel_dimension": 16,
+      "local_vs_canonical_k4_error": 7.109737278934242e-17
+    }
+  ],
+  "slow_host": {
+    "sigma": [
+      -0.30605214390853375,
+      -0.2464356212671141
+    ],
+    "hole_determinant": [
+      -0.1158522491063279,
+      0.17161006257729627
+    ],
+    "strict_density_witness": [
+      {
+        "u": 1.0,
+        "v": 0.0,
+        "source": 0.0
+      },
+      {
+        "u": 0.5,
+        "v": 0.5,
+        "source": -1.0
+      }
+    ],
+    "spectral_schur_density": 0.2464356212671141,
+    "width_coefficient": 0.11360791220010272
+  },
+  "scope": "Finite physical gauge controls and leading host checks supplement analytical fixed-order proof. No all-order microscopic pole or empirical test."
+}

@@ -53,3 +53,6 @@ Suppliedbeta0 orfiniteGibbsstate isessential. Q isderiveddiagnostic, notaddedHin
 
 
 Range-two block retires the asymptotic-prediction status for the specified slow coefficient model, and proves fixed-order closed-arm gap. Supplied H, ordered reference, zero-block convention, COM fiber and analytic outgoing slow-host boundary remain explicit. Full retained host stability, microscopic pole transfer, original readout residue and cosmological identification remain open. No empirical input used.
+
+
+Complete fixed-order block derives rather than selects higher-coefficient stability and strict radiation. Canonical/local K4 transfer proved only on both K1-null external states. Supplied Hamiltonian/reference/sector persist. Fixed-order constants are not uniform in m; microscopic resonance, original-source residue and physical bridge remain open. No observations used as fitting or test data.

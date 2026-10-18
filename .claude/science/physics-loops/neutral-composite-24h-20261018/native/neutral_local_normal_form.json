@@ -1,0 +1,8 @@
+{
+  "cancellation_error": 0.0,
+  "K2_match_error": 0.0,
+  "central_generator_norm": 0.7071067811865477,
+  "central_vacuum_constant": -0.5,
+  "uniform_annihilation_error": 0.0,
+  "scope": "Finite algebra checks; no native pole, state selection or uniform remainder inferred from finite matrices"
+}

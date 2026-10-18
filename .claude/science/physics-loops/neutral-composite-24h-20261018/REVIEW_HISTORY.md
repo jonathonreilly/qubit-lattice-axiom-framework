@@ -25,3 +25,6 @@ Local-proof block: independent local wall, full canonical boundary, scalar-band 
 Zone-boundary block: focused independent localK2, reflection/checkerboard, halfline threshold/count, large-feature normalization/size, and physicalqpi finite-H checksPASS. Astra-low finalreviewPASS. No formal audit applied. Initial localtest rangefailure preserved and corrected.
 
 Source-bound replay: four probes passed in 42.737096 seconds; final focused review PASS; citation graph and manifest regenerated after source freeze.
+
+## Local normal-form block
+Local normal-form replay passed 0.580898 seconds, exact cancellation/K2/vacuum-annihilation errors zero. Focused checks confirmed BCH, 8a_k bound, packet filter, source Gram and fiber after difference-source/cat-wrap/K2 refinements. Astra-low final scoped review PASS; dependency links fixed. Runner first rejected nonliteral input declaration; replaced by literal list and replayed, no science conclusion from tooling failure.

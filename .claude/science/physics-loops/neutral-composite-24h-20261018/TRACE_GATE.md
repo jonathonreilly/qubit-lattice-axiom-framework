@@ -15,3 +15,6 @@ Neutral-domain block: trace_class=frontier_discovery; target_claim_id=null; sour
 Local-proof block: upstream_support; target is native collective mode/coupling from large features; partially closes missing-channel assumption within the unperturbed scalar E8 sector and derives named local coefficients. Finite full-H residual tests support the candidate; physical/cosmological connection remains open. Next trace action: zone-boundary degenerate branch and uniform native limit.
 
 Zone-boundary block: frontier_discovery; targetuserlargefeaturemode/coupling; supports throughnative-derivedcoefficients andconditional size/readoutlaw. Physicalscalaridentificationnotclosed. Nexttraceaction: controlfullnativehigherordersasfeaturesizegrows.
+
+## Local normal-form block
+Native integer-wall local filter -> canonical K2 -> symmetry-selected zone mode -> explicit source Gram 4cos^2q -> normalized sine packet -> local dynamical comparison. All numerical inputs are exposed development controls; empirical tests absent.

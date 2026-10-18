@@ -19,3 +19,6 @@ Neutral-domain block actual_current_surface_status: conditional-support. Finite 
 Local-proof block current-surface: exact-support for finite-band symmetry completeness and formal local coefficients; bounded-support for frozen finite native eigenpair tests. Supplied H, anisotropy, tube, parity and invariant state/source remain. Proposed-retained/promoted wording not allowed. Independent pre-PR review PASS, independent post-landing audit remains separate. No infinite native pole or physical scalar certification.
 
 Zone-boundary block: conditional-support forinfiniteMboundmodes/crossover/size-law, exact-support forspecifiedlocalsymmetry/coefficientstatements, bounded-support forfinitefullHresponse. No proposed-retained/promoted, no nativeuniformpole/physicalscalar claim. Independent pre-PR reviewPASS; post-landing audit separate.
+
+## Local normal-form block
+Conditional bounded bridge: volume-independent local BCH remainder and two-wall coefficient bound; original-source packet filtered correlator has asymptotically visible leading weight 15 lambda^2/4 in the declared dressed state. Not an equilibrium pole or observed scalar.

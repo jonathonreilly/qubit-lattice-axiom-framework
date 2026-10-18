@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/native_local_normal_form.py
+runner_sha256: 6cd4dac0b8758720ae5dec9b69546174fe7d12c8a9dffbf1144b5b3b3425d536
+input_fingerprint_sha256: d23e3a78582d18a6e09388e51c0ac14a6525cdae57a4522a2ef183f9d2a89dd6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.58
+status: ok
+----- stdout -----
+per_site: one physical qubit; supplied directional interaction
+per_mode: native local inversion matches canonical second order
+per_block: explicit packet and conditional leading readout checks
+lattice_wide: finite checks do not establish the separate uniform proof
+
+----- stderr -----
+

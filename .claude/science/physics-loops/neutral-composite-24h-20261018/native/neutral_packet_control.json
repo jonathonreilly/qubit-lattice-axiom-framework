@@ -1,0 +1,89 @@
+{
+  "packet": [
+    {
+      "lam": 0.1,
+      "M": 32,
+      "eta": 0.7498942093324559,
+      "moment": 0.0090561548538306,
+      "exact_moment": 0.00905615485383079,
+      "tail_bound": 1.6111922628814017,
+      "correlation_error_power_factor": 0.0032000000000000006,
+      "relative_error_power_factor": 0.32000000000000006
+    },
+    {
+      "lam": 0.03,
+      "M": 193,
+      "eta": 0.6451194812038943,
+      "moment": 0.0002622326687355958,
+      "exact_moment": 0.00026223266873568547,
+      "tail_bound": 0.7001281304617967,
+      "correlation_error_power_factor": 0.00015632999999999996,
+      "relative_error_power_factor": 0.1737
+    },
+    {
+      "lam": 0.01,
+      "M": 1000,
+      "eta": 0.5623413251903491,
+      "moment": 9.849886676738251e-06,
+      "exact_moment": 9.84988667663834e-06,
+      "tail_bound": 0.31148158675242343,
+      "correlation_error_power_factor": 1e-05,
+      "relative_error_power_factor": 0.1
+    },
+    {
+      "lam": 0.003,
+      "M": 6086,
+      "eta": 0.4837713632823584,
+      "moment": 2.6637479733082614e-07,
+      "exact_moment": 2.6637479729953854e-07,
+      "tail_bound": 0.12646501077292818,
+      "correlation_error_power_factor": 4.92966e-07,
+      "relative_error_power_factor": 0.054774
+    }
+  ],
+  "modes": [
+    {
+      "kappa": 0,
+      "energy": 0.5624999999999999,
+      "residue": 0.9374999999999999,
+      "source_coefficient": 3.7499999999999996,
+      "other_upper": 0.40633685686109927
+    },
+    {
+      "kappa": 0.001,
+      "energy": 0.5625077033732737,
+      "residue": 0.9374510846590695,
+      "source_coefficient": 3.749804338636278,
+      "other_upper": 0.40633034635058785
+    },
+    {
+      "kappa": 0.003,
+      "energy": 0.5625693065880599,
+      "residue": 0.9370602271209073,
+      "source_coefficient": 3.7482409084836292,
+      "other_upper": 0.4062782864059228
+    },
+    {
+      "kappa": 0.01,
+      "energy": 0.5632670956394077,
+      "residue": 0.9326715617181145,
+      "source_coefficient": 3.730686246872458,
+      "other_upper": 0.40568909818621324
+    },
+    {
+      "kappa": 0.03,
+      "energy": 0.5691856498359062,
+      "residue": 0.8980866966139307,
+      "source_coefficient": 3.592346786455723,
+      "other_upper": 0.40072898855226385
+    },
+    {
+      "kappa": 0.1,
+      "energy": 0.6211496421674416,
+      "residue": 0.7125309152538895,
+      "source_coefficient": 2.850123661015558,
+      "other_upper": 0.36025111019892087
+    }
+  ],
+  "scope": "Leading crossover and envelope controls only; constants of native remainder not numerically estimated"
+}

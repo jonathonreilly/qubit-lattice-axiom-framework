@@ -7,3 +7,6 @@ Neutral-domain resonance: supplied directional Hamiltonian, Jperp/Jz<<1, periodi
 Local-proof block retires omitted same-symmetry channels inside E8: explicit edge/even-diagonal basis is complete. Local coefficient length-independence follows connected support under separation, not a fitted extrapolation. Uniform perturbative control, state selection,3D/physical mapping remain. All numerical ratios/momenta are development data; no empirical independent test.
 
 Zone-boundary block derives existing-readoutcoupling2lambda cosq andlocalK2coefficients; conditionalM requireslargeL/smalllambda compatiblemomenta. Largefeature size requiresmomentumapproachtothreshold; no naturalstatepreparation or scalegeneration established. Noempiricaldata. Literaturecompassladdercontextdoesnotcertifythismodel.
+
+## Local normal-form block
+Finite-order local normal form derives interaction and packet readout from supplied H, but uses small anisotropy, positive rung parity, periodic thin tube and explicitly dressed uniform initial state. No selected ground, useful numerical lambda range, physical detector mapping or exact native pole is supplied.

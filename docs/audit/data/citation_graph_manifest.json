@@ -1,6 +1,6 @@
 {
- "edge_count": 16248,
- "node_count": 7257,
+ "edge_count": 16251,
+ "node_count": 7258,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15561,6 +15561,10 @@
   "native_local_natural_ring_dynamics_note_2026-09-08": {
    "deps_hash": "4578d7bc3a88",
    "out_degree": 4
+  },
+  "native_local_normal_form_note_2026-10-18": {
+   "deps_hash": "55cc44f7f58e",
+   "out_degree": 3
   },
   "native_low_charge_u1_dictionary_note_2026-09-08": {
    "deps_hash": "7165261fd0dd",

@@ -1,0 +1,9 @@
+k*         = [0.5, -0.5, 0.5] pi: |little group| = 24, C4 axes [(0, 0, 1), (0, 1, 0), (1, 0, 0)], contains all axis C2: True
+-k*        = [-0.5, 0.5, -0.5] pi: |little group| = 24, C4 axes [(0, 0, 1), (0, 1, 0), (1, 0, 0)], contains all axis C2: True
+k*+pi e0   = [-0.5, -0.5, 0.5] pi: |little group| = 8, C4 axes [(1, 0, 0)], contains all axis C2: True
+k*+pi e1   = [0.5, 0.5, 0.5] pi: |little group| = 8, C4 axes [(0, 1, 0)], contains all axis C2: True
+k*+pi e2   = [0.5, -0.5, -0.5] pi: |little group| = 8, C4 axes [(0, 0, 1)], contains all axis C2: True
+-k*+pi e0  = [0.5, 0.5, -0.5] pi: |little group| = 8, C4 axes [(1, 0, 0)], contains all axis C2: True
+-k*+pi e1  = [-0.5, -0.5, -0.5] pi: |little group| = 8, C4 axes [(0, 1, 0)], contains all axis C2: True
+-k*+pi e2  = [-0.5, 0.5, 0.5] pi: |little group| = 8, C4 axes [(0, 0, 1)], contains all axis C2: True
+[PASS] each point k* + pi e_i and -k* + pi e_i has little group D4 with C4 axis e_i, containing the three axis C2s

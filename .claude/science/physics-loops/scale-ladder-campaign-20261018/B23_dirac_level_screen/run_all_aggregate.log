@@ -1,0 +1,7 @@
+RESULT cliff2:0,1,2,3: words=25600 Dirac_levels=3192 fermi=2956 survivors=236 clean_at_screen=0
+RESULT cliff2:4,5,6,7: words=25600 Dirac_levels=2224 fermi=1958 survivors=266 clean_at_screen=0
+RESULT cliff2:8,9,10: words=19200 Dirac_levels=1936 fermi=1776 survivors=160 clean_at_screen=0
+RESULT pi6: words=7488 Dirac_levels=726 fermi=672 survivors=54 clean_at_screen=0
+RESULT taste_pi6: words=3584 Dirac_levels=224 fermi=192 survivors=32 clean_at_screen=0
+RESULT: Dirac levels=8302 survivors=748 clean_at_screen=0
+TOTAL: PASS=28 FAIL=0

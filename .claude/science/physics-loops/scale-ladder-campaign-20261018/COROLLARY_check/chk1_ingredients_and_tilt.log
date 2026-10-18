@@ -1,0 +1,11 @@
+[PASS] (a) each axis-C2 pair: lifts anticommute, doubly fixed set (N=24 grid, exhaustive since fixed points lie in (pi/2)Z^3) = the 8 cube points, and at every cube point k_c the affine map acts linearly: R(k_c+q)+pi s_R = k_c + R q (mod 2pi)  [(True, 8, True), (True, 8, True), (True, 8, True)]
+[PASS] (a') D2' pair (C2z, C2(xy)) anticommutes; its doubly fixed set is nonempty and contains k*  4 doubly fixed points: [(np.float64(0.5), np.float64(-0.5), np.float64(0.5)), (np.float64(0.5), np.float64(-0.5), np.float64(-0.5)), (np.float64(-0.5), np.float64(0.5), np.float64(0.5)), (np.float64(-0.5), np.float64(0.5), np.float64(-0.5))]
+[PASS] (b) convention: U_g H(k) U_g^T = H(R_g k + pi s_g) at 10 random off-grid k, all 24 proper g
+[PASS] (c) D2-only symmetric H (6 random, range 1): every level at all 8 cube points is even, and the tilt tr(P dH P)/dim vanishes  288 levels, max |tilt| 1.6e-14, max |linear term| 13.34
+[PASS] (c') D2'-only symmetric H: levels even and tilt zero at its doubly fixed points (no vector is fixed by two perpendicular C2s)  96 levels, max |tilt| 2.4e-14
+[PASS] (c'') control: with C2x alone the cube-point levels are generically simple  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+[PASS] (d1) O-symmetric H: every 2-fold level at k* has an isotropic linear splitting (v sigma.q)  12 doublets, max relative spread 1.1e-14
+[PASS] (d2) O-symmetric H: 4-fold (G3/2) levels at k* are generically ANISOTROPIC at linear order (two invariant couplings J.q and J^3.q), so 'a band touching at k* is isotropic at linear order' holds for 2-fold touchings only  12 quartets, relative spread of top branch speed in [0.026, 0.260]
+[PASS] (d3) O-symmetric H: 2-fold levels at k*+pi e_x are uniaxial about x: speed^2 = v_par^2 q_x^2 + v_perp^2 q_perp^2  36 doublets, max fit residual 1.6e-14, relative v_par/v_perp difference up to 0.98
+
+TOTAL: PASS=9 FAIL=0

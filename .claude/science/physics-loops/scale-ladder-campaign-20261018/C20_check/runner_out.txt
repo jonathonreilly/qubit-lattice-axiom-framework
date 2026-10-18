@@ -1,0 +1,20 @@
+model: L = 4, X = normalized combination of six sampled invariant conjugation-odd terms (seed 11); node space dimension 4
+
+Part A: Pauli images of the one-fermion terms in the 48-qubit-per-site corner code (flux 1011, L = 4)
+[PASS] Wilson loop along (1, 0, 0) (holonomy of the fermion gauge) is Hermitian and an independent, consistent generator
+[PASS] Wilson loop along (0, 1, 0) (holonomy of the fermion gauge) is Hermitian and an independent, consistent generator
+[PASS] Wilson loop along (0, 0, 1) (holonomy of the fermion gauge) is Hermitian and an independent, consistent generator
+[PASS] images of c^dag_q c_r commute with all sampled stabilizers (loops and repetition terms)
+[PASS] fermionic algebra [Q(c+_a c_b), Q(c+_b c_c)] = Q(c+_a c_c) on the code space (random triples, mod stabilizers)  25/25
+[PASS] disjoint bilinears commute on the code space (15 random pairs)
+[PASS] [Q(n_a), Q(c+_a c_b)] = Q(c+_a c_b) on the code space (15 random pairs)
+[PASS] the image of c^dag_q c_r is path independent on the code space (two different paths, random pairs)  7/7
+[PASS] images of sampled entries of the C19 terms X and M (h c^dag_q c_r + h.c., complex h) are nonzero, Hermitian and commute with the sampled stabilizers  12 entries
+[PASS] covariance U_R Q(c+_q c_r) U_R^dag = sigma_R(q) sigma_R(r) Q(c+_Rq c_Rr) with the fermion-level PSG signs (6 random rotations x 6 random bilinears)  36/36
+
+Part B: site-charge interaction (U/2) sum_v N_v^2 and the on-site particle-hole channels
+[PASS] exact: N_v commutes with every on-site bilinear c^dag_a c_b (Fock space of one site); hence (U/2) N_v^2 is invariant under the on-site U(12) and its Fock energy (U/2)[(tr rho)^2 + tr rho - tr rho^2] has second variation -U ||delta rho||^2 in every traceless direction: equal exchange attraction in all 143 channels  second variations in [-1.000000, -1.000000] (U = 1)
+[PASS] supplied metallic model (t1 = -1, t2 = 0.2, 0.05 X): degenerate node doublets at k* and -k*; chemical potential at the node  E_N = -2.282843
+[PASS] the 144 on-site operators decompose under O_h (projectors from the O character table and the site inversion) with multiplicities summing to 144  {'A1g': 3, 'A1u': 3, 'A2g': 3, 'A2u': 3, 'Eg': 6, 'Eu': 6, 'T1g': 9, 'T1u': 9, 'T2g': 9, 'T2u': 9}
+   q=0: leading susceptibility per O_h irrep (trace removed; N = 12, T = 0.01, symmetrized; raw quadrature asymmetry 4.0e-04):
+      A1u 1.1970, T1u 0.8033, T1g 0.8005, A1g 0.7812, A2g 0.1331, A2u 0.1324, T2g 0.1276, T2u 0.1271, Eu 0.0574, Eg 0.0546

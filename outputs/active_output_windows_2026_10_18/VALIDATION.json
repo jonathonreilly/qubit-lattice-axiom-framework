@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "manifest_sha256": "958a6978982133b0c9104fd5cfdab306ae7b31f03c53f38f580b9f002b60c039",
+  "files": 4,
+  "provenance": 3,
+  "links": 5,
+  "nodes": 7271,
+  "edges": 16265,
+  "new_nodes": {
+    "active_output_windows_bounded_theorem_note_2026-10-18": {
+      "path": "docs/ACTIVE_OUTPUT_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "deps": [
+        "active_energy_cubic_loader_bounded_theorem_note_2026-10-18"
+      ]
+    }
+  },
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical source identity, provenance, links and topology only; no scientific execution or retained audit. New note dependencies require ROOT inspection."
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 16294,
- "node_count": 7256,
+ "edge_count": 16297,
+ "node_count": 7257,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4281,6 +4281,10 @@
   "corner_fermion_qubit_code_genuine_cube_rotation_action_emergent_fermion_carries_spin_half_class_bounded_theorem_note_2026-10-17": {
    "deps_hash": "b104afee3eda",
    "out_degree": 4
+  },
+  "corner_fermion_step_speed_at_the_full_octahedral_node_is_a_sum_of_per_letter_coefficients_and_generic_letters_split_the_four_fold_dirac_level_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "8d9b22e0debe",
+   "out_degree": 3
   },
   "corner_kernel_cubic_carriers_c3_split_and_registered_block_weights_bounded_theorem_note_2026-09-02": {
    "deps_hash": "c8eee4235fc9",

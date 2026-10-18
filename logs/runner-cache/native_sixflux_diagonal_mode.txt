@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/native_sixflux_diagonal_mode.py
+runner_sha256: 0b79e472ba451bfc0cd5abd44866d7260a07baf8eb0c51f8755c351cf9c72b5a
+input_fingerprint_sha256: d522fca66f068a283e4f78b71eb767593aec273c9d22a1ff6283df5209dce037
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+{"status": "conditional-support", "scope": "Exact finite-pattern paths and physical symmetry/source controls; actual-H transfer analytic, no empirical tests", "control": {"minimum_counts": {"2": 32, "3": 64}, "q6_return": "2", "paths": [{"destination": [[-1, 0], [0, 1]], "order16": "0", "order18_energy": "-265939245/4503599627370496", "order18_detour": "2616996138185/5540271966595842048"}, {"destination": [[-1, 1], [0, 0]], "order16": "0", "order18_energy": "-88646415/2251799813685248", "order18_detour": "0"}, {"destination": [[0, -1], [1, 0]], "order16": "0", "order18_energy": "-265939245/4503599627370496", "order18_detour": "2616996138185/5540271966595842048"}, {"destination": [[0, 1], [1, 0]], "order16": "29548805/17592186044416", "order18_energy": "-2275257985/5066549580791808", "order18_detour": "0"}, {"destination": [[1, 1], [2, 0]], "order16": "0", "order18_energy": "-88646415/2251799813685248", "order18_detour": "0"}, {"destination": [[1, 0], [2, 1]], "order16": "0", "order18_energy": "-265939245/4503599627370496", "order18_detour": "2616996138185/5540271966595842048"}, {"destination": [[0, 2], [1, 1]], "order16": "0", "order18_energy": "-88646415/2251799813685248", "order18_detour": "0"}, {"destination": [[0, 1], [1, 2]], "order16": "0", "order18_energy": "-265939245/4503599627370496", "order18_detour": "2616996138185/5540271966595842048"}, {"destination": [[0, 0], [1, -1]], "order16": "0", "order18_energy": "-88646415/2251799813685248", "order18_detour": "0"}], "A": "36637456051625/88644351465533472768", "B": "-88646415/2251799813685248", "K": "40127110824515/88644351465533472768", "K_float": 4.526753274303907e-07, "source": [{"R": 6, "norm": "1", "reversed_bonds": [40, 40], "exact_C4": true, "exact_axial_reflection": true, "weight_coefficient": "-5/2"}, {"R": 8, "norm": "1", "reversed_bonds": [40, 40], "exact_C4": true, "exact_axial_reflection": true, "weight_coefficient": "-5/2"}, {"R": 12, "norm": "1", "reversed_bonds": [40, 40], "exact_C4": true, "exact_axial_reflection": true, "weight_coefficient": "-5/2"}]}}
+
+----- stderr -----
+

@@ -202,3 +202,8 @@ Status: conditional-support; trace: upstream_support; proposal_allowed: false.
 ## Physical pair-source block
 Physical pair-source block complete: native two-column X readout has neutral Q4 form factor sqrt2/(R sqrt(1-2/R²))[(1-5lambda²/4)coskx+(1-5lambda²/8)cosky]+O(lambda4/R). Exact finite normalization restricted to evenR>=6 after final review. Fixed-pattern charge locality preserves1/R, finaltail M>18+5p. Independent/final reviewPASS with qualification applied; source-bound controlsPASS. This is spectral residue, not scattering or universal force. Nextroot Q6 diagonal-pair neutral branch: orderlambda16 orientation mixing positive, leadingtranslationscancel; orderlambda18 native detour may selectstaggered momentum. Under independentcheck, notyetclaim.
 Status: conditional-support; trace: upstream_support; proposal_allowed: false.
+
+
+## Six-flux diagonal mode
+Native Q6 diagonal-pair block complete: six-cycle/perimeter minimum, positive lambda16 orientation flip, lambda16 translation cancellation, lambda18 detour-controlled staggered minimum(pi,pi). Curvature K6=8gamma*d/Delta-16gamma²b/Delta²>0. Symmetrized microscopic X/Y-column probe exactly transverse-A1 atstaggeredmomentum, poleweight1-5lambda²/2. Actual-H fixed-p transfer and matched-source bounds checked. Independent motion/source/finalPASS; source-bound replay.150187sPASS. Scalar u12 excluded fromabsolute orientationenergy, cancelsmotion. No3DLorentz/cosmologicalidentification. Nextroot tests common-metric compatibility across derived feature branches, informedbyupdatedPR9718head965c6f3dbd6d2023d4227886143e78a80861a1e6; nootherPRresults imported.
+Status: conditional-support; trace: upstream_support; proposal_allowed: false.

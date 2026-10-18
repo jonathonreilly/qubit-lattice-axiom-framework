@@ -1,6 +1,6 @@
 {
- "edge_count": 16271,
- "node_count": 7276,
+ "edge_count": 16272,
+ "node_count": 7277,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18661,6 +18661,10 @@
   "real_endpoint_autonomous_output_bounded_theorem_note_2026-10-17": {
    "deps_hash": "d8ff3cbf3e4c",
    "out_degree": 2
+  },
+  "real_mediated_vacancy_network_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "5a4e1ffd75ec",
+   "out_degree": 1
   },
   "real_overlap_local_source_threshold_bounded_theorem_note_2026-09-15": {
    "deps_hash": "d80ec1818362",

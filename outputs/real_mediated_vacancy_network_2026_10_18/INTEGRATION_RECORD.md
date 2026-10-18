@@ -1,0 +1,3 @@
+# Integration record
+
+All included new source/check arguments and the base manuscript were fully read by ROOT. Canonical changes install provenance and append accepted positive extensions; original sources and historical task-only status text remain frozen. Distinct checks are same-model and source-exposed with shared campaign/design ancestry; no blind check, retained audit or experimental validation is claimed. Source bookkeeping and graph checks do not establish mathematical correctness. No completed released gate or permanent halt is asserted. No physical axiom or editable prompt was changed.

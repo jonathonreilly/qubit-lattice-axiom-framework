@@ -5,7 +5,7 @@ field (spin 1): both land on the scalar's cone K/(4 alpha); exact lattice obstru
 Companion runner of
 docs/CURVATURE_MEMBER_CLOSURE_PUTS_A_LATTICE_WEYL_FIELD_AND_A_LATTICE_MAXWELL_FIELD_ON_THE_SCALARS_CONE_AND_REJECTS_ANISOTROPIC_CONES_BOUNDED_THEOREM_NOTE_2026-10-18.md
 
-Upstream runner (imported for its exact polynomial Poisson engine, the 09-24 gravity clauses and the supplied
+Companion runner of the scalar note, same PR (imported for its exact polynomial Poisson engine, the 09-24 gravity clauses and the supplied
 site scalar): scripts/curvature_member_closure_with_matter_common_cone_2026_10_18.py.
 
 Consolidated from the scale-ladder campaign blocks B15 (fermion), B16 (Maxwell), B17 (anisotropic cones) and
@@ -27,7 +27,7 @@ Parts
 Flags
   --full  also run the slower exact parts (3D Taylor-expanded lattice fermion path; continuum Maxwell
           structure function / shared lambda (M3b-M6); independent Function-based stress check (C4a/C4b);
-          Maxwell incidence-path uniform-shift identity at L = 4).  About 10 more minutes.
+          Maxwell incidence-path uniform-shift identity at L = 4).  About 6 more minutes.
   --diag  print the floating-point, non-gating smooth-field diagnostics (Maxwell uniform-shift defect order,
           staggered-generator ratio).  About 2 minutes.
 """
@@ -600,10 +600,11 @@ def part_W_cone():
     xit = sp.series(sp.exp(I * a * kk) - sp.exp(I * a * qq), a, 0, 2).removeO()
     lead_ok = sp.simplify(xit / a + I * (qq - kk)) == 0
     pos = [sv for sv in (-1, 1) if (-sv * sp.Rational(5, 11) / (4 * sp.Rational(3, 7))) > 0]
-    check("W5 one cone for spin 1/2: v^2 = -sK/(4 alpha)", okg and lead_ok and sol == [-s * K / (4 * al)] and pos == [-1],
-          "gravity (continuum, exact jet calculus, both signs s): {kin(N)+sK R1(N), kin(M)+sK R1(M)} = G_g[-(sK/(4alpha)) w]; lattice "
+    check("W5 one cone for spin 1/2: v^2 = -sK/(4 alpha) (assembled; the final solve is arithmetic)", okg and lead_ok and sol == [-s * K / (4 * al)] and pos == [-1],
+          "the iff is assembled from W2/W6 (fermion bracket) and the computed gravity bracket (continuum, exact jet calculus, both signs s): "
+          "{kin(N)+sK R1(N), kin(M)+sK R1(M)} = G_g[-(sK/(4alpha)) w]; lattice "
           "xi~/a -> -w (symbol); W2 gives {H_f,H_f} = G_f[v^2 w] at leading order (lattice: W6). One total relabelling with one common "
-          f"orientation needs v^2 = {sol[0]} = the scalar's c (upstream note). Hermitian h_N (W3) gives v^2 > 0, so with K, alpha > 0 only s = {pos[0]} closes")
+          f"orientation needs v^2 = {sol[0]} = the scalar's c (companion note). Hermitian h_N (W3) gives v^2 > 0, so with K, alpha > 0 only s = {pos[0]} closes")
 
 
 def part_W_lattice_symbols():
@@ -1823,7 +1824,7 @@ def part_X_bracket_cone(il, stag):
     expect = {k: (F(k[2]) == -k[0]) for k in res}
     check("X11 one cone for spin 1: cB = -sK/(4 alpha), g-independent", res == expect,
           f"gravity + Maxwell (forward timing): the order-eps bracket closes into ONE G_g[xi] + G_A[xi] iff cB = -sK/(4alpha) for both g^2 = 1, 9/4; "
-          f"photon speed^2 = g^2 (cB/g^2) = cB; table {{(s, g^2, cB/kappa): closes}} = {res}")
+          f"the Maxwell mode's speed^2 = g^2 (cB/g^2) = cB; table {{(s, g^2, cB/kappa): closes}} = {res}")
     cols2 = [padd(cm.g_grav(lat, xi), pscale(g_A(lat, xi), F(2))) for xi in UB]
     cg, cmm = padd(cm.kin(lat, n), pscale(cm.r1(lat, n), -KK)), padd(cm.kin(lat, m), pscale(cm.r1(lat, m), -KK))
     r2 = {str(cbv / kappa): in_span(pbracket(lat, padd(cg, h_em(lat, n, cbv, F(1))), padd(cmm, h_em(lat, m, cbv, F(1)))), cols2) for cbv in (kappa, 2 * kappa)}
@@ -1878,8 +1879,9 @@ def part_X_bracket_cone(il, stag):
     for r in (F(1), F(2)):
         emb = pbracket(lat4, h_em_general(lat4, n4, us, ws, r * k4, F(1), il), h_em_general(lat4, m4, us, ws, r * k4, F(1), il))
         rs[str(r)] = in_span(padd(gb, emb), cols4)
-    check("X13 staggered timing: same cone relative to its induced generator (L=4)", rs == {"1": True, "2": False},
-          f"s = -1: gravity + staggered Maxwell closes into one G_g[xi] + G'[xi] iff cB = kappa ({rs}); G' is the induced generator, whose "
+    check("X13 staggered timing: same cone relative to its induced generator (L=4; consistency check)", rs == {"1": True, "2": False},
+          f"s = -1: gravity + staggered Maxwell closes into one G_g[xi] + G'[xi] iff cB = kappa ({rs}); automatic once the bracket is bond-supported, "
+          "since G' is the generator the bracket induces; the cone value has content only through G''s normalisation, whose "
           "smooth-field normalisation carries an O(1) doubler component (campaign check, floating point; --diag)")
 
 
@@ -2375,11 +2377,13 @@ def part_Y():
     check("Y2 uniaxial component extraction (path 2)", all(sp.simplify(coef[j] + [vt, vt, va][j] ** 2 * w[j]) == 0 for j in range(3)) and sol == [{kap: vt ** 2, va: vt}],
           f"coefficient of d_j f1 in component 1 = -v_j^2 w_j (direction-weighted shift); matching -kappa w_j for all lapses gives {sol}")
     gsym = sp.Matrix(3, 3, lambda i, j: sp.Symbol(f"g{min(i, j)}{max(i, j)}"))
-    eqs = [gsym[k, j] - (kap if j == k else 0) for k in range(3) for j in range(3)]
+    # derivative part -g^kj w_j d_k must equal -kappa w^k d_k for all lapses: extract the coefficients of d_j M from the lapse expression
+    exprs = [sp.expand(sum((gsym[k, j] - (kap if j == k else 0)) * w[j] for j in range(3))) for k in range(3)]
+    eqs = [e.coeff(sp.Derivative(M, X[j])).subs(N, 1) for e in exprs for j in range(3)]
     solg = sp.solve(eqs, list(gsym.free_symbols), dict=True)
     check("Y3 closure against the isotropic structure function forces g = kappa I", len(solg) == 1 and all(sp.simplify(gsym.subs(solg[0])[i, j] - (kap if i == j else 0)) == 0 for i in range(3) for j in range(3)),
-          "w = N grad M - M grad N takes any value at a point, so -g^kj w_j d_k = -kappa w^k d_k for all lapses iff g^kj = kappa delta^kj "
-          "(any symmetric cone metric)")
+          "coefficients of d_j M in sum_j (g^kj - kappa delta^kj) w_j, w = N grad M - M grad N (w takes any value at a point): "
+          f"-g^kj w_j d_k = -kappa w^k d_k for all lapses iff g = kappa I (any symmetric cone metric); solve -> {solg}")
     E = sp.diag(vt, vt, va)
     zeroth = sp.Matrix(2, 2, lambda r, c_: sp.expand(Cu[r].subs({sp.Derivative(f1, X[k]): 0 for k in range(3)}).subs({sp.Derivative(f2, X[k]): 0 for k in range(3)})).coeff([f1, f2][c_]))
     curl = [Dd(w[2], 1) - Dd(w[1], 2), Dd(w[0], 2) - Dd(w[2], 0), Dd(w[1], 0) - Dd(w[0], 1)]

@@ -135,7 +135,8 @@ def a2():
 def a3(eqs_gg, eqs_cg):
     sol = solve(list(eqs_gg) + list(eqs_cg), list(m) + [nu, s1, s2])
     print("   joint {G,G}deg1 + {C,G}deg1:", sol)
-    ok = len(sol) == 1 and all(sp.simplify(sol[0][x] - nu * LIE[x]) == 0 for x in m) \
+    # (run-1 bug, kept in b21_brackets_run2_A3check_BUG.log: compared to the SYMBOL nu although nu is itself solved for)
+    ok = len(sol) == 1 and all(sp.simplify(sol[0][x] - sol[0][nu] * LIE[x]) == 0 for x in m) \
         and sp.simplify(sol[0][nu] - lam1 * K2 / K1) == 0 and sp.simplify(sol[0][s1] + lam1 * K2 / K1) == 0
     check("A3", ok, "jointly: G2 = nu int P L_xi h UNIQUELY (all 3 {C,G}-null and all 4 {G,G}-null directions removed), "
           "nu = lam1 K2/K1 (i.e. lam1 K2 = nu K1) and s1 = -nu: the B19_check caveat '{G,G} with G2's R1-null directions' "
@@ -197,8 +198,9 @@ def a9_control():
     gP = g * Pm
     kin = sp.expand(isq * ((gP * gP).trace() - (gP.trace()) ** 2 / 2))
     k0 = sp.expand(kin.coeff(eps, 0)); k1_ = sp.expand(kin.coeff(eps, 1))
-    norm = sp.expand(k0 / ((trPP - trP ** 2 / 2)))        # = r^(1/2)
-    kin1_pred = sp.expand(k1_ / norm / (4 * al))
+    norm = sp.simplify(sp.cancel(k0 / sp.expand(trPP - trP ** 2 / 2)))        # = r^(1/2)
+    # (run-2 bug: norm was left as an uncancelled ratio, so the comparison below could not reduce to 0)
+    kin1_pred = sp.expand(sp.simplify(k1_ / norm) / (4 * al))
     return sp.simplify(norm), kin1_pred
 
 
@@ -212,14 +214,17 @@ if __name__ == "__main__":
     sol_cc1 = a5()
     eqs6, sol6 = a6()
     # A6 verdict, given A3's G2 = nu Lie, s1 = -nu
-    sub3 = {**{x: nu * LIE[x] for x in m}, s1: -nu}
+    # s1 = -nu AND s2 = 0 are A2/A3's lapse rule (one lapse rule for the whole C).  Run 2 imposed only s1 and the P^2
+    # sector alone leaves s2 free (k1, k2 shift with s2: the N -> N(1 + t trh) density-weight convention of B19_check 3a);
+    # kept as b21_brackets_run2_A3check_BUG.log.
+    sub3 = {**{x: nu * LIE[x] for x in m}, s1: -nu, s2: 0}
     # A6 joint with A3
     e6 = [sp.expand(e.subs(sub3)) for e in eqs6]
-    s6s = solve(e6, list(k) + [s2])
+    s6s = solve(e6, list(k))
     print("   A6 with A3 imposed:", s6s)
     dw = dewitt(lam1 / nu)
-    ok6 = len(s6s) == 1 and all(sp.simplify(s6s[0][x] - dw[x]) == 0 for x in k) and s6s[0][s2] == 0
-    check("A6", ok6, "{C(N),G[xi]} degree 2, P^2 sector, with A3's G2 = nu L_xi h and s1 = -nu: consistent, s2 = 0, and the "
+    ok6 = len(s6s) == 1 and all(sp.simplify(s6s[0][x] - dw[x]) == 0 for x in k)
+    check("A6", ok6, "{C(N),G[xi]} degree 2, P^2 sector, with A3's G2 = nu L_xi h and lapse rule s1 = -nu, s2 = 0: consistent, and the "
           "h-linear kinetic metric is FORCED to the DeWitt expansion about r delta with r = lam1/nu: "
           "kin1 = (nu/lam1)[2tr(hPP) - trP tr(hP) - trh(trPP - trP^2/2)/2]/(4 alpha)")
     eqs7, sol7 = a7()
@@ -236,6 +241,28 @@ if __name__ == "__main__":
     print("   A7' {C,C}deg2 with A3's G2 only (k, beta, beta', K2 unknown):", s7K)
     s7free = solve([sp.expand(e) for e in eqs7], list(m) + list(k) + [beta, betap])
     print("   A7'' {C,C}deg2 alone, general m, k, beta (K2 symbolic):", s7free)
+    okb = len(s7K) == 1 and sp.simplify(s7K[0][K2] - nu * K1 / lam1) == 0 and sp.simplify(s7K[0][beta] + nu / lam1) == 0 \
+        and s7K[0][betap] == 0 and all(sp.simplify(s7K[0][x] - dw[x]) == 0 for x in k)
+    check("A7b", okb, "second route: {C,C} at degree 2 with G2 = nu L_xi h, kin1 / beta / beta' / K2 all unknown, forces "
+          "lam1 K2 = nu K1, kin1 = DeWitt/r and beta = -1/r by itself (no {C,G} input beyond G2)")
+    okf = len(s7free) == 1 and sp.simplify(s7free[0][m[0]] - lam1 * K2 / K1) == 0 \
+        and sp.simplify(s7free[0][m[8]] + lam1 * (beta + K2 / K1)) == 0
+    check("A7c", okf, "{C,C} degree 2 ALONE (general G2, kin1, beta): m1 (the xi.dh coefficient of G2) = lam1 K2/K1 and "
+          "m9 = -lam1 (beta + K2/K1).  With {G,G} degree 1 (A1: m1 = nu, m9 = 0): lam1 K2 = nu K1 and beta = -K2/K1. "
+          "Hence the structure-function premise beta = -1 (zeta = (delta - h)(N dM - M dN)) is EQUIVALENT to K2 = K1 "
+          "(and then lam1 = nu)")
+    # A7d: impose A1's {G,G} solution and beta = -1 explicitly; solve for everything else including K2 and lam1
+    gg1 = {m[0]: nu, m[1]: m[2] + nu, m[5]: 2 * m[6], m[7]: 0, m[8]: 0, m[9]: 0, m[10]: 0, m[11]: 0}
+    e7d = [sp.expand(e.subs(gg1).subs(beta, -1)) for e in eqs7]
+    s7d = solve(e7d, [m[2], m[3], m[4], m[6]] + list(k) + [betap, K2])
+    print("   A7d {G,G}deg1 + {C,C}deg2 with beta = -1:", s7d)
+    okd = len(s7d) == 1 and sp.simplify(s7d[0][K2] - K1) == 0
+    e7e = [sp.expand(e.subs(gg1)) for e in eqs7]
+    s7e = solve(e7e, [m[2], m[3], m[4], m[6]] + list(k) + [betap, beta, K2])
+    print("   A7e {G,G}deg1 + {C,C}deg2, beta and K2 free:", s7e)
+    oke = len(s7e) == 1 and sp.simplify(s7e[0][K2] - nu * K1 / lam1) == 0 and sp.simplify(s7e[0][beta] + nu / lam1) == 0
+    check("A7d", okd and oke, "{G,G} degree 1 + {C,C} degree 2 with the structure function fixed to delta - h (beta = -1) "
+          "force K2 = K1; with beta free they force K2 = nu K1/lam1 and beta = -nu/lam1 = -K2/K1 (lam1/nu free)")
     # ------------------------------------------------ A8 one-parameter family and the rescaling orbit
     rho = sp.Symbol("rho", positive=True)
     fam = {"K2": nu * K1 / lam1, "s1": -nu, "s2": 0, "c0": K1 / (4 * al * lam1), "beta": -nu / lam1,

@@ -1,6 +1,6 @@
 {
- "edge_count": 16258,
- "node_count": 7263,
+ "edge_count": 16259,
+ "node_count": 7264,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4965,6 +4965,10 @@
   "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28": {
    "deps_hash": "42db6a056a96",
    "out_degree": 2
+  },
+  "direct_loader_resonant_operation_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "1dbc32c84d07",
+   "out_degree": 1
   },
   "directed_bond_quadratic_action_channels_bounded_theorem_note_2026-10-09": {
    "deps_hash": "a66d4817d8d7",

@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "base_revision": "23b64908b51b6ea563127b351336d85b29079919",
+  "manifest_sha256": "aff5bfd0718c72a64dba96303c01234189f9e0aceea92b01c13d4760badceaec",
+  "notes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_direct_loader_resonant_operation_publication/NOTE.md",
+      "destination": "docs/DIRECT_LOADER_RESONANT_OPERATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "25b2345d566e1597d34bd2158bce053a011cc4c57da7a65468f69bfd2a6b77f7"
+    }
+  ],
+  "files": 4,
+  "provenance": 3,
+  "links": 6,
+  "nodes": 7264,
+  "edges": 16259,
+  "added_nodes": [
+    "direct_loader_resonant_operation_bounded_theorem_note_2026-10-18"
+  ],
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical installed source/provenance/link/topology checks only. Scoped analytical checks separately pinned; no new scientific executable or retained audit."
+}

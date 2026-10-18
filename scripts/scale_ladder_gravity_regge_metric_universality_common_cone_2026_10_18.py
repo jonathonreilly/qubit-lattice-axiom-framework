@@ -7,13 +7,17 @@ l_v^2 = v^T g0 v and g0 = 1 + b u u^T, u = (1,1,1,1):
   C1 census: gauge-invariant two-derivative quadratic forms under B4, K48 = S4 x {+-1}
      (the complex's isometries) and spatial O_h x tick reversal; K48 + tick reflection = B4.
   C2 the two K48 gauge-invariant spin-2 forms are the linearised EH forms of K48-invariant flat metrics.
-  C3 the Regge O(k^2) symbol is -(1/4) sqrt(det g0) EH_g0 (metric universality).
+  C3 the line-map pullback of the Regge form has O(k^2) symbol -(1/4) sqrt(det g0) EH_g0; C3b the same holds
+     for the full edge form with non-metric edges eliminated at b != 0, while at b = 0 that elimination goes soft.
   C4 P1 scalar and Whitney-1-form Maxwell on the same complex: leading symbols are sqrt(g) x continuum in g0.
   C5 b != 0 gives complex on-shell tick momenta for real spatial momenta; b = 0 gives real energies.
   C6 O(k^4) on-shell fingerprints at b = 0: Regge TT = P1 scalar = -(1 + sum n^4)/12; Whitney Maxwell differs.
   C7 at b = 0 the Regge TT pair lies exactly on the P1 scalar's lattice shell sum 4 sin^2(p/2) = 0.
   C8 the fifth exact zero mode of the Regge form occurs at b = 0 and not at b != 0.
+  C8b the fifth null direction exists on diagonal backgrounds, lifts linearly in b, and has metric part u u^T - 2*1.
   C9 the P1 scalar's stress obeys the vertex-displacement Ward identity to leading order only.
+  C10 the on-shell P1 stress sources the fifth null direction at leading order.
+  C11 the pullback's static response to T_tt is -2/k^2 isotropically, and exactly -2/(4 sin^2(k/2)) on the axis.
 Supplied models only; no physical identification.
 Companion: docs/SCALE_LADDER_GRAVITY_REGGE_METRIC_UNIVERSALITY_COMMON_CONE_BOUNDED_THEOREM_NOTE_2026-10-18.md
 """
@@ -271,12 +275,30 @@ def main():
         def FR(x, h, k):
             a = [Qh(e * k) / e ** 2 for e in (2e-3, 1e-3)]; Q2 = (4 * a[1] - a[0]) / 3
             return float(np.real(x @ (0.5 * (Q2 + Q2.T)) @ x))
-        cR, _ = fit(FR, B, nsamp=500); cE, _ = fit(lambda x, h, k: EH(h, k, g0), B, nsamp=500)
+        cR, _ = fit(FR, B, nsamp=700); cE, _ = fit(lambda x, h, k: EH(h, k, g0), B, nsamp=700)
         lam = (cR @ cE) / (cE @ cE); mis = np.linalg.norm(cR - lam * cE) / np.linalg.norm(cR)
         target = -0.25 * np.sqrt(np.linalg.det(g0)); worst = max(worst, mis, abs(lam - target))
         coefs.append(f"{lam:+.6f}")
-    check("C3 Regge O(k^2) symbol = -(1/4) sqrt(det g0) EH_g0 at b = 0, 0.3, -0.15",
+    check("C3 line-map pullback Q_h = M^T Q M: O(k^2) symbol = -(1/4) sqrt(det g0) EH_g0 at b = 0, 0.3, -0.15",
           worst < 1e-5, f"coefficients {', '.join(coefs)} vs {-0.25:+.6f}, {-0.25*np.sqrt(2.2):+.6f}, {-0.25*np.sqrt(0.4):+.6f}; worst {worst:.1e}")
+
+    # ---------------- C3b full edge form with the five non-metric edge directions eliminated
+    worst, soft = 0.0, {}
+    for b in (0.3, 0.05):
+        g0 = I4 + b * np.outer(U, U); Qe, Mh = regge(g0); Cb = compl(Mh(np.zeros(4)))
+        def FS(x, h, k):
+            a = [schur(Qe(e * k), Mh(e * k), Mh(-e * k), Cb) / e ** 2 for e in (2e-3, 1e-3)]; S2 = (4 * a[1] - a[0]) / 3
+            return float(np.real(x @ (0.5 * (S2 + S2.T)) @ x))
+        cS, _ = fit(FS, B, nsamp=700); cE, _ = fit(lambda x, h, k: EH(h, k, g0), B, nsamp=700)
+        lam = (cS @ cE) / (cE @ cE)
+        worst = max(worst, np.linalg.norm(cS - lam * cE) / np.linalg.norm(cS), abs(lam + 0.25 * np.sqrt(np.linalg.det(g0))))
+    kd = np.array([0.3, -0.5, 0.6, 0.55]); kd /= np.linalg.norm(kd)
+    for b in (0.3, 0.0):
+        Qe, Mh = regge(I4 + b * np.outer(U, U)); Cb = compl(Mh(np.zeros(4)))
+        soft[b] = [np.min(np.abs(np.linalg.eigvals(Cb.T @ Qe(s * kd) @ Cb))) for s in (0.02, 0.01)]
+    check("C3b eliminating the non-metric edges: symbol = -(1/4) sqrt(det g0) EH_g0 at b = 0.3, 0.05; at b = 0 the eliminated block goes soft as k^2",
+          worst < 1e-5 and soft[0.3][1] > 1 and abs(soft[0.0][0] / soft[0.0][1] - 4) < 0.05,
+          f"worst {worst:.1e}; smallest eliminated eigenvalue b=0.3: {soft[0.3][1]:.1f}; b=0: {soft[0.0][0]:.2e} -> {soft[0.0][1]:.2e} on halving k")
 
     # ---------------- C4 P1 scalar and Whitney Maxwell leading symbols
     rng = np.random.default_rng(7); dev = 0.0
@@ -349,6 +371,30 @@ def main():
     check("C8 null directions at real momenta: 5 at b = 0, 4 (the vertex displacements) at b = 0.3, -0.15",
           counts[0.0] == [5] * 3 and counts[0.3] == [4] * 3 and counts[-0.15] == [4] * 3, f"{counts}")
 
+    # ---------------- C8b the fifth null direction: diagonal backgrounds, linear lift, metric content
+    def gauge_e(k):
+        G = np.zeros((15, 4), complex)
+        for c, v in enumerate(R4.DIRS15):
+            vv = np.array(v, float); G[c] = (np.exp(1j * k @ vv) - 1) * vv / np.linalg.norm(vv)
+        return G
+    def fifth(Qe, k):
+        _, _, vh = np.linalg.svd(Qe(k)); N = vh[-5:].conj().T; G = gauge_e(k)
+        r = N - G @ np.linalg.pinv(G) @ N; return np.linalg.svd(r)[0][:, 0]
+    q = np.array([0.3, -0.2, 0.25, 0.0])
+    gst = I4.copy(); gst[3, 3] = 1.3
+    n_diag = int((sv(regge(gst)[0](q)) < 1e-12).sum())
+    lift = [np.sort(np.linalg.svd(regge(I4 + b * np.outer(U, U))[0](q), compute_uv=False))[4] / b for b in (1e-6, 1e-4)]
+    vecc = lambda H: np.array([H[x, y] for (x, y) in HC], complex)
+    Wt = np.diag([1, 1, 1, 1, 2, 2, 2, 2, 2, 2.0]); cosmin = 1.0; rr = np.random.default_rng(1)
+    for _ in range(3):
+        qq = 0.02 * rr.standard_normal(4); f = fifth(Qe0, qq); a, *_ = np.linalg.lstsq(Mh0(qq), f, rcond=None)
+        Gm = np.array([vecc(np.outer(qq, e) + np.outer(e, qq)) for e in I4]).T; P = np.eye(10) - Gm @ np.linalg.pinv(Gm)
+        x, y = P @ a, P @ vecc(np.outer(U, U) - 2 * I4)
+        cosmin = min(cosmin, abs(np.conj(x) @ Wt @ y) / np.sqrt(abs(np.conj(x) @ Wt @ x) * abs(np.conj(y) @ Wt @ y)))
+    check("C8b fifth null direction: present on the diagonal background diag(1,1,1,1.3), lifted linearly in b, metric part = u u^T - 2*1 mod gauge",
+          n_diag == 5 and abs(lift[0] / lift[1] - 1) < 0.05 and cosmin > 1 - 1e-6,
+          f"nullity {n_diag}; sv5/b = {lift[0]:.2f}, {lift[1]:.2f}; min cosine {cosmin:.8f}")
+
     # ---------------- C9 Ward identity of the P1 scalar's stress
     def W(k1, k2, xi):
         q = k1 - k2; tot = 0j
@@ -373,6 +419,49 @@ def main():
     check("C9 P1 scalar stress: on-shell Ward violation falls as s^5 (relative (a/w)^2), off-shell response as s^3",
           all(abs(r - 32) < 1.0 for r in ron) and all(abs(r - 8) < 0.5 for r in roff),
           f"halving ratios on shell {', '.join(f'{r:.2f}' for r in ron)}; off shell {', '.join(f'{r:.2f}' for r in roff)}")
+
+    # ---------------- C10 the P1 stress sources the fifth direction at leading order
+    def J_edge(k1, k2):
+        qv = k1 - k2; J = np.zeros(15, complex)
+        for vs in SIMP:
+            E = np.array([vs[i] - vs[0] for i in range(1, 5)], float); G = E @ E.T; Gi = np.linalg.inv(G)
+            d2 = np.array([np.exp(1j * k2 @ v) for v in vs])[1:] - 1; d1 = np.array([np.exp(-1j * k1 @ v) for v in vs])[1:] - 1
+            X = d1 @ Gi @ d2; P = np.outer(Gi @ d2, Gi @ d1); P = 0.5 * (P + P.T)
+            Psi = np.sqrt(np.linalg.det(G)) / 24 * (0.5 * Gi * X - P)
+            for i in range(5):
+                for j in range(i + 1, 5):
+                    c, anc, _ = edge(vs[i], vs[j]); dl2 = 2 * np.linalg.norm(vs[j] - vs[i]) * np.exp(1j * qv @ anc)
+                    dG = np.zeros((4, 4), complex)
+                    if i == 0:
+                        dG[j - 1, j - 1] += dl2
+                        for bb in range(4):
+                            if bb != j - 1: dG[j - 1, bb] += dl2 / 2; dG[bb, j - 1] += dl2 / 2
+                    else:
+                        dG[i - 1, j - 1] -= dl2 / 2; dG[j - 1, i - 1] -= dl2 / 2
+                    J[c] += np.sum(Psi * dG)
+        return J
+    rr = np.random.default_rng(9); fr = []
+    for _ in range(2):
+        n1, n2 = rr.standard_normal(3), rr.standard_normal(3); row = []
+        for s in (0.1, 0.05):
+            k1s, k2s = s * n1 / np.linalg.norm(n1), 0.7 * s * n2 / np.linalg.norm(n2)
+            k1, k2 = np.array([*k1s, lattice_kt(k1s)]), np.array([*k2s, lattice_kt(k2s)])
+            J = J_edge(k1, k2); row.append(abs(np.vdot(fifth(Qe0, k1 - k2), J)) / np.linalg.norm(J))
+        fr.append(row)
+    check("C10 on-shell P1 stress has a scale-independent component along the fifth null direction (sourced at leading order)",
+          all(r[1] > 0.05 and abs(r[0] / r[1] - 1) < 0.1 for r in fr), "fractions " + "; ".join(f"{r[0]:.3f} -> {r[1]:.3f}" for r in fr))
+
+    # ---------------- C11 Newtonian rung of the pullback: static T_tt response
+    itt = HC.index((3, 3)); hk2, hax = [], []
+    for n in [(1, 0, 0), (1, 1, 0), (1, 1, 1), (3, 1, 2)]:
+        n = np.array(n, float); n /= np.linalg.norm(n); k = np.array([*(0.01 * n), 0.0])
+        T = np.zeros(10); T[itt] = 1.0; h = np.linalg.pinv(Mh0(-k).T @ Qe0(k) @ Mh0(k), rcond=1e-9) @ T; hk2.append(h[itt].real * 1e-4)
+    for km in (0.5, 1.5):
+        k = np.array([km, 0, 0, 0.0]); T = np.zeros(10); T[itt] = 1.0
+        h = np.linalg.pinv(Mh0(-k).T @ Qe0(k) @ Mh0(k), rcond=1e-9) @ T; hax.append(h[itt].real * 4 * np.sin(km / 2) ** 2)
+    check("C11 pullback static response to T_tt: h_tt k^2 -> -2 in 4 directions (continuum -EH/4); on the axis h_tt = -2 / (4 sin^2(k/2)) exactly",
+          max(abs(x + 2) for x in hk2) < 1e-3 and max(abs(x + 2) for x in hax) < 1e-9,
+          f"k = 0.01: {', '.join(f'{x:+.5f}' for x in hk2)}; axis k = 0.5, 1.5: {', '.join(f'{x:+.9f}' for x in hax)}")
 
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

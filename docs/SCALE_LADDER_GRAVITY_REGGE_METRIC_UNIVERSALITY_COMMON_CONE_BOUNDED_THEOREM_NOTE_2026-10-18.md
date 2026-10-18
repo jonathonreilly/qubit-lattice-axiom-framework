@@ -1,7 +1,7 @@
 ---
 claim_id: scale_ladder_gravity_regge_metric_universality_common_cone_bounded_theorem_note_2026-10-18
 claim_type: bounded_theorem
-claim_scope: "Supplied models on the 4D path (Kuhn) complex on Z^3 x Z_tau (24 path 4-simplices per cell, 15 edge classes), with flat edge lengths l_v^2 = v^T g0 v and g0 = 1 + b u u^T, u = (1,1,1,1): the Regge second variation of the companion notes, a P1 (Whitney 0-form) scalar and a Whitney 1-form Maxwell field. Floating-point checks, with exact group-closure and polynomial-rank computations where stated: (1) Census by numerical rank of polynomial forms. Two-derivative quadratic forms that are invariant and gauge-invariant under linearised diffeomorphisms (spin 2) or U(1) (spin 1) number 1/1/1 for scalar/spin-1/spin-2 under the hyperoctahedral group B4, 2/2/2 under K48 = S4 x {+-1} (the complex's isometries), and 2/2/2 under spatial O_h x tick reversal; no spin-2 mass form is gauge-invariant; K48 together with the tick reflection generates B4 (exact group closure, order 384). (2) The two K48 gauge-invariant spin-2 forms are spanned by linearised Einstein-Hilbert forms of K48-invariant flat metrics (residual 1.6e-14). (3) The Regge O(k^2) symbol equals -(1/4) sqrt(det g0) EH_g0 at b = 0, 0.3, -0.15 to within 1e-5 (Richardson-extrapolated finite differences). (4) The P1 scalar's and Whitney Maxwell's leading symbols equal sqrt(g) times their continuum forms in g0 (b = 0, 0.3; 5e-8). (5) At b = 0.3 the scalar's on-shell tick momentum for a real spatial momentum is complex; at b = 0 it is pure imaginary. (6) At b = 0 the on-shell O(k^4) law omega^2 = k^2 [1 - k^2 (1 + sum n^4)/12] holds for both Regge TT modes and for the P1 scalar in five directions (3.5e-7); Whitney Maxwell is birefringent at this order and distinguishes face+ from face-. (7) At b = 0, on the P1 scalar's exact lattice shell sum_mu 4 sin^2(p_mu/2) = 0, the Regge 15 x 15 edge form has seven null directions at every sampled point (6 directions, |k| up to 2.5; 7th singular value <= 4e-16 relative), against five off shell; Whitney Maxwell is off that shell. (8) At real momenta the Regge form has five null directions at b = 0 and four at b = 0.3, -0.15. (9) The P1 scalar's vertex-displacement Ward response on the lattice shell falls as s^5 under momentum scaling, against s^3 off shell, so conservation holds at leading order and fails at relative order s^2. Not claimed: any all-momentum proof of (7), a mechanism for (7) or (8), interacting or radiative statements, reflection positivity or OS reconstruction of any of these models, a Record-to-geometry map, a common cone for fermions or for the framework's own matter models, or any physical identification."
+claim_scope: "Supplied models on the 4D path (Kuhn) complex on Z^3 x Z_tau (24 path 4-simplices per cell, 15 edge classes), with flat edge lengths l_v^2 = v^T g0 v and g0 = 1 + b u u^T, u = (1,1,1,1): the Regge second variation of the companion notes, a P1 (Whitney 0-form) scalar and a Whitney 1-form Maxwell field. Floating-point checks, with exact group-closure and polynomial-rank computations where stated: (1) Census by numerical rank of polynomial forms. Two-derivative quadratic forms that are invariant and gauge-invariant under linearised diffeomorphisms (spin 2) or U(1) (spin 1) number 1/1/1 for scalar/spin-1/spin-2 under the hyperoctahedral group B4, 2/2/2 under K48 = S4 x {+-1} (the complex's isometries), and 2/2/2 under spatial O_h x tick reversal; no spin-2 mass form is gauge-invariant; K48 together with the tick reflection generates B4 (exact group closure, order 384). (2) The two K48 gauge-invariant spin-2 forms are spanned by linearised Einstein-Hilbert forms of K48-invariant flat metrics (residual 1.6e-14). (3) The line-map pullback Q_h = M^T Q M of the Regge edge form has O(k^2) symbol -(1/4) sqrt(det g0) EH_g0 at b = 0, 0.3, -0.15 (misfit <= 1.2e-7, Richardson-extrapolated finite differences); with the five non-metric edge directions eliminated (Schur complement) the same holds at b = 0.3 and 0.05, while at b = 0 the eliminated block has an eigenvalue falling as k^2. (4) The P1 scalar's and Whitney Maxwell's leading symbols equal sqrt(g) times their continuum forms in g0 (b = 0, 0.3; 5e-8). (5) At b = 0.3 the scalar's on-shell tick momentum for a real spatial momentum is complex; at b = 0 it is pure imaginary. (6) At b = 0 the on-shell O(k^4) law omega^2 = k^2 [1 - k^2 (1 + sum n^4)/12] holds for both Regge TT modes and for the P1 scalar in five directions (3.5e-7); Whitney Maxwell is birefringent at this order and distinguishes face+ from face-. (7) At b = 0, on the P1 scalar's exact lattice shell sum_mu 4 sin^2(p_mu/2) = 0, the Regge 15 x 15 edge form has seven null directions at every sampled point (6 directions, |k| up to 2.5; 7th singular value <= 4e-16 relative), against five off shell; Whitney Maxwell is off that shell. (8) At real momenta the Regge form has five null directions at b = 0 and on the diagonal background diag(1,1,1,1.3), and four at b = 0.3, -0.15; the fifth singular value grows linearly in b (about 66 b); modulo the continuum gauge directions, the metric part of the fifth null vector is u u^T - 2*1 (cosine 1 - 1e-8 at three small momenta). (9) The P1 scalar's vertex-displacement Ward response on the lattice shell falls as s^5 under momentum scaling, against s^3 off shell, so conservation holds at leading order and fails at relative order s^2. (10) The same on-shell stress has a component along the fifth null direction that is a fixed fraction of its norm under momentum scaling (0.13 and 0.09 in two samples), so it sources that direction at leading order. (11) The pullback's static response to a T_tt source is h_tt k^2 -> -2 in four directions (the continuum -EH/4 value) and exactly -2/(4 sin^2(k/2)) on the axis. Not claimed: any all-momentum proof of (7), a mechanism for (7) or (8), whether the fifth direction is a symmetry of the nonlinear Regge action, the physical status of the pullback, interacting or radiative statements, reflection positivity or OS reconstruction of any of these models, a Record-to-geometry map, a common cone for fermions or for the framework's own matter models, or any physical identification."
 upstream_dependencies:
   - the_regge_second_variation_on_the_4d_cubic_coxeter_complex_carries_a_native_linearised_graviton_bounded_theorem_note_2026-09-03
   - cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10
@@ -48,9 +48,14 @@ question is whether the complex's own symmetry forces the graviton's leading for
    - The second direction is a body-diagonal deformation of the background. It mixes tick
      and space.
 3. **Metric universality.**
-   - Give the complex edge lengths l_v² = vᵀg0v. Its Regge O(k²) symbol is then
+   - Give the complex edge lengths l_v² = vᵀg0v. The line-map pullback Q_h = MᵀQM, the
+     metric-variable form of the companion notes, then has O(k²) symbol
      −(1/4)·√(det g0)·EH_g0: coefficients −0.250000, −0.370810 and −0.158114 at b = 0, 0.3
      and −0.15.
+   - The full edge form, with its five non-metric edge directions per cell eliminated, gives
+     the same symbol at b = 0.3 and 0.05.
+   - At b = 0 that elimination is singular. The eliminated block has an eigenvalue falling as
+     k², so there the pullback and the full form differ. See items 10–12.
    - So the graviton's leading form and cone are those of the metric its edge lengths encode,
      whatever K48-invariant metric that is. Lattice symmetry selects the family; the
      geometry selects the member.
@@ -72,8 +77,10 @@ question is whether the complex's own symmetry forces the graviton's leading for
    - The Regge TT pair and the P1 scalar both obey ω² = k²[1 − k²(1 + Σn̂⁴)/12]. The axis,
      face and body values are −1/6, −1/8 and −1/9.
    - The two TT polarisations stay degenerate.
-   - This reproduces the OK4 note's Regge numbers by a method independent of its projection
-     convention.
+   - This reproduces the OK4 note's full-form Regge numbers by a method independent of its
+     projection convention.
+   - At b = 0 the elimination is ill-conditioned (item 3), so the agreement with the OK4 note's
+     rank-drop values is the corroboration.
    - Whitney Maxwell has a different law at this order. It is birefringent (axis −0.1027 and
      −0.0859) and S4-only: face+ gives −0.0707, face− gives −0.0820.
 7. **The exact lattice shell at b = 0.**
@@ -89,10 +96,11 @@ question is whether the complex's own symmetry forces the graviton's leading for
    - So, at the sampled momenta, the graviton propagates with exactly the scalar's lattice
      dispersion, not just at O(k⁴).
    - Whitney Maxwell is not on that shell.
-8. **The fifth null direction is special to the hypercubic edge metric.** At real momenta
-   there are five null directions at b = 0 and four (the vertex displacements) at b = 0.3 and
-   −0.15. Away from b = 0 the coincidence in item 7 also fails beyond leading order (finite
-   samples in the probe workspace).
+8. **The fifth null direction needs orthogonal axes.**
+   - At real momenta there are five null directions at b = 0 and four (the vertex
+     displacements) at b = 0.3 and −0.15.
+   - Away from b = 0 the coincidence in item 7 also fails beyond leading order (finite samples
+     in the probe workspace).
 9. **The source is conserved only at leading order.**
    - Hold vertex field values fixed and move the vertices; this gives the P1 scalar's stress
      response.
@@ -101,6 +109,26 @@ question is whether the complex's own symmetry forces the graviton's leading for
    - So stress conservation, the condition for coupling the source consistently to the
      exactly gauge-invariant Regge form, is a leading-order cross-rung invariant, broken at
      relative order (a/w)².
+10. **What the fifth null direction is.**
+    - It exists on every diagonal (orthogonal-axis) background tested: b = 0, and a stretched
+      tick diag(1,1,1,1.3).
+    - It lifts linearly in b, with singular value about 66b.
+    - Modulo the continuum gauge directions, its metric part is exactly uuᵀ − 2·1, the
+      body-diagonal background tilt combined with a conformal rescaling.
+    - So on the orthogonal background, the 15-edge carrier has a local cone tilt that costs no
+      action at quadratic order, at every momentum.
+11. **Geometric matter sources it.**
+    - The on-shell P1 stress has a component along that direction that does not shrink with
+      momentum (a fixed 9–13% of its norm).
+    - So for the 15-edge carrier with P1 matter at b = 0, the linearised field equations have
+      no solution in that channel: a linear source along an exact flat direction.
+    - The pullback has no such direction (nullity four), and its static response is well
+      posed.
+12. **The Newtonian rung of the pullback.**
+    - A static T_tt source gives h_tt·k² → −2 in four directions, the continuum −EH/4 value.
+    - On the axis it gives exactly h_tt = −2/(4 sin²(k/2)) at every k.
+    - So the 1/r coefficient is carried from the lattice rung at leading order, with lattice
+      Green-function corrections.
 
 ## Reading on the ladder (interpretation, not claims)
 
@@ -109,6 +137,7 @@ question is whether the complex's own symmetry forces the graviton's leading for
     complex it leaves two.
   - What removes the second form is that every field couples to one edge-length metric.
     That is a lattice form of universal coupling.
+  - This holds for the pullback at every b, and for the full edge form at b ≠ 0.
   - It makes the leading cone common across the graviton, a scalar and a Maxwell field even
     before any symmetry argument.
 - **What is still needed for a protected common cone.**
@@ -128,6 +157,19 @@ question is whether the complex's own symmetry forces the graviton's leading for
     Σ 4 sin²(p/2) shell by construction, and it lives on the axis edges of the same complex.
   - So a common shell beyond leading order depends on the discretisation, while a common
     leading cone does not.
+- **The gravity rung's tension on this complex.** Within the K48 background family, two
+  things cannot both hold:
+  - a real spectrum, which needs b = 0 (item 5);
+  - a 15-edge carrier with no exact flat direction that geometric matter sources, which
+    needs b ≠ 0 (items 10 and 11).
+
+  The pullback avoids the flat direction but is birefringent at O(k⁴): the companion OK4 note
+  finds split axis roots −2/9 and −1/9. Several routes are open:
+  - other triangulations of Z³ × Z_τ, in particular B4-symmetric ones, since this complex
+    lacks the tick reflection;
+  - a matter coupling with an exact Ward identity for the fifth direction;
+  - a nonlinear lift of the fifth direction;
+  - backgrounds outside the K48 family that are off-diagonal yet keep a real spectrum.
 - **The source obligation (scorecard G2) moves.**
   - Conservation of a geometrically coupled matter stress holds at the leading rung and
     fails at relative order (a/w)².
@@ -172,7 +214,8 @@ Citations are from memory and were not checked against the primaries.
   - The O(k⁴) comparison across spins.
   - The identification of the 2026-09-03 shell with the P1 scalar's exact shell, and its
     failure at b ≠ 0. The shell itself is the 2026-09-03 note's finding.
-  - The fifth-mode dependence on b.
+  - The fifth-mode dependence on b, its metric content, and its sourcing by geometric matter.
+  - The pullback's Newtonian response.
   - The Ward scaling.
 
 ## No-Go Discipline Gate
@@ -196,6 +239,8 @@ Citations are from memory and were not checked against the primaries.
   - Item 5 is stated for the free scalar only.
   - The protection argument relies on reflection positivity, which is not established for
     any of these models.
+  - Item 11 is a linear-order statement for one matter coupling. It is not a no-go for
+    gravity on this complex: the routes listed under the tension remain open.
 - **N8 — earlier claims.**
   - Extends the 2026-06-10 and 2026-09-03 Regge notes and the scale-ladder note.
   - Items 6 and 7 at b = 0 re-check those notes' O(k⁴) law and lattice shell by different
@@ -210,7 +255,7 @@ Citations are from memory and were not checked against the primaries.
 python3 scripts/scale_ladder_gravity_regge_metric_universality_common_cone_2026_10_18.py
 ```
 
-Expected: `TOTAL: PASS=12 FAIL=0` (about 30 seconds).
+Expected: `TOTAL: PASS=16 FAIL=0` (about 50 seconds).
 
 Probe scripts, the findings log and the goal are in
 `.claude/science/physics-loops/scale-ladder-gravity-20261018/`.

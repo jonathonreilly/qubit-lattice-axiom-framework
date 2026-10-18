@@ -292,17 +292,16 @@ class Component:
         """C: (k, NP) real source directions. w[:, m] = sum_moves C[m,p] c sign g_col (row index)."""
         k = C.shape[0]
         W = np.zeros((self.n, k))
-        coef = C[:, self.ps] * self.cs[None, :]         # (k, nmoves)
-        gc = g[self.cols]
+        gc = g[self.cols] * self.cs
         for m in range(k):
-            W[:, m] = np.bincount(self.rows, weights=coef[m] * gc, minlength=self.n)
+            W[:, m] = np.bincount(self.rows, weights=C[m][self.ps] * gc, minlength=self.n)
         return W
 
     def direct(self, g, C):
-        """J sum_moves C_p C'_p g_row g_col  (k x k)."""
+        """J sum_moves C_p C'_p g_row g_col  (k x k), via per-plaquette sums."""
         gg = g[self.rows] * g[self.cols]
-        Cm = C[:, self.ps]
-        return (Cm * gg[None, :]) @ Cm.T
+        perp = np.bincount(self.ps, weights=gg, minlength=self.T.np_)
+        return (C * perp[None, :]) @ C.T
 
     def block_cg(self, H, E0, g, Bm, tol=1e-11, maxit=20000):
         """Solve (H - E0) X = Bm on the complement of g; independent CG per column, frozen when converged."""
@@ -344,8 +343,15 @@ class Component:
         E0, g, gap = ground if ground is not None else self.ground(V, J)
         H = self.H(V, J)
         W = self.w_vecs(g, C)
-        X, its, res = self.block_cg(H, E0, g, W)
-        R = J * self.direct(g, C) - 2 * J * J * (W.T @ X)
+        k = C.shape[0]
+        R = J * self.direct(g, C)
+        its, res = 0, 0.0
+        ch = 16
+        for a in range(0, k, ch):
+            X, it_, re_ = self.block_cg(H, E0, g, W[:, a:a + ch])
+            R[:, a:a + ch] -= 2 * J * J * (W.T @ X)
+            its, res = max(its, it_), max(res, re_)
+            del X
         return 0.5 * (R + R.T), dict(E0=E0, gap=gap, cg_its=its, cg_res=res)
 
     def energy_with_source(self, V, b, J=1.0):

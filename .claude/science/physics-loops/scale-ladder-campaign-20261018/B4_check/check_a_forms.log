@@ -4,3 +4,17 @@
    d=4 group=B3xZ2   : ambient 550, invariant forms 26, gauge-invariant 2
    d=3 group=S       : ambient 126, invariant forms 26, gauge-invariant 1
    d=3 group=B       : ambient 126, invariant forms 9, gauge-invariant 1
+   d=4 group=trivial : ambient 550, invariant forms 550, gauge-invariant 10
+   d=3 group=trivial : ambient 126, invariant forms 126, gauge-invariant 1
+
+== (a2) eps-eps-M forms span the full gauge-invariant space (d=4) ==
+Traceback (most recent call last):
+  File "/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B4_check/check_a_forms.py", line 193, in <module>
+    basisM.append(LM_vec(M, 4, hc, idx))
+                  ~~~~~~^^^^^^^^^^^^^^^
+  File "/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B4_check/check_a_forms.py", line 138, in LM_vec
+    E = levi(d)
+  File "/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B4_check/check_a_forms.py", line 132, in levi
+    E[p] = sp.combinatorics.Permutation(list(p)).signature()
+           ^^^^^^^^^^^^^^^^
+AttributeError: module 'sympy' has no attribute 'combinatorics'

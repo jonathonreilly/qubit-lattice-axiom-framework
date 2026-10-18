@@ -347,14 +347,19 @@ def main():
     vmax = 0.0
     for k in rng2.uniform(-np.pi * s3, np.pi * s3, size=(3000, 3)):
         g = [(omega_dp(k + 1e-6 * e) - omega_dp(k - 1e-6 * e)) / 2e-6 for e in np.eye(3)]; vmax = max(vmax, np.linalg.norm(g))
-    pair = np.array([2 * omega_dp(0.005 * d) / 0.01 for d in dq])
+    kmax = s3 * np.array([3 * np.pi / 4, -np.pi / 4, 5 * np.pi / 4])
+    gmax = np.array([(omega_dp(kmax + 1e-6 * e) - omega_dp(kmax - 1e-6 * e)) / 2e-6 for e in np.eye(3)])
+    vcomp = 0.0
+    for k in rng2.uniform(-np.pi * s3, np.pi * s3, size=(3000, 3)):
+        g = [(omega_dp(k + 1e-6 * e) - omega_dp(k - 1e-6 * e)) / 2e-6 for e in np.eye(3)]; vcomp = max(vcomp, np.max(np.abs(g)))
     kk = np.array([0.3, 0.2, 0.1]); edge = np.array([kk[1], kk[0], -kk[2]]); cyc3 = np.array([kk[1], kk[2], kk[0]])
-    check("minimal Weyl automaton: speed 1/sqrt3 with no parameter, inside the one-step cone, inherited by collinear pairs; "
-          "anisotropy only linear in |k| because its dispersion is invariant under C3 but not under the w1-odd edge C2",
-          abs(sp[0.005].mean() - 1 / s3) < 1e-4 and abs(sp[0.005].mean() - 1 / s3) < abs(sp[0.02].mean() - 1 / s3) and vmax < 1 and np.max(np.abs(pair - sp[0.01])) < 1e-3
+    check("minimal Weyl automaton: speed 1/sqrt3 with no parameter; fastest group speed 1/sqrt2 and every component within the one-step "
+          "cone 1/sqrt3; anisotropy linear in |k| because its dispersion is invariant under C3 but not under the w1-odd edge C2",
+          abs(sp[0.005].mean() - 1 / s3) < 1e-4 and abs(sp[0.005].mean() - 1 / s3) < abs(sp[0.02].mean() - 1 / s3)
+          and abs(np.linalg.norm(gmax) - 1 / np.sqrt(2)) < 1e-6 and vmax <= 1 / np.sqrt(2) + 1e-9 and vcomp <= 1 / s3 + 1e-6
           and all(abs(an[i] / an[i + 1] - 2) < 0.05 for i in range(2))
           and abs(omega_dp(kk) - omega_dp(cyc3)) < 1e-12 and abs(omega_dp(kk) - omega_dp(edge)) > 1e-4,
-          f"v = {sp[0.005].mean():.7f}, max group speed {vmax:.3f}, anisotropy {np.round(an, 5)}, pair-vs-single speed gap {np.max(np.abs(pair - sp[0.01])):.1e}")
+          f"v = {sp[0.005].mean():.7f}, group speed at the maximiser {np.linalg.norm(gmax):.6f}, sampled max component {vcomp:.4f}, anisotropy {np.round(an, 5)}")
     RLr = H0(0.0, 1.0) / np.sqrt(2)
     won, Von = np.linalg.eigh(Bloch(np.zeros(3)).conj().T @ H0(1.0, 0.0) @ Bloch(np.zeros(3)))
     P2 = Von[:, np.abs(won - 2) < 1e-6]; Uc = np.eye(12) - 2 * P2 @ P2.conj().T
@@ -412,6 +417,68 @@ def main():
     check("no-go illustration: with random symmetric on-site unitaries between link reflections, every isolated spin-1/2 doublet at k* "
           "has zero velocity (its states are fixed by symmetry; a reflection's projected derivative vanishes since {R, dR} = 0)",
           vmax_d < 1e-3, f"largest doublet half-splitting/q {vmax_d:.2e}")
+
+    # diagonal shift: {d,e} at v -> {d,e} at v+d+e, signs fixed by symmetrising one hop
+    c_xy = [c for c in CORN if set(c) == {(1, 0, 0), (0, 1, 0)}][0]
+    i0 = C['VID'][((0, 0, 0), c_xy)]; j0 = C['VID'][((1, 1, 0), c_xy)]
+    Sr = np.zeros((nV, nV))
+    for Pr, sr in rots:
+        for Pt, st in trans:
+            P = Pt[Pr]; s_ = sr ^ st[Pr]; Sr[P[j0], P[i0]] += (-1.0) ** (int(s_[i0]) + int(s_[j0]))
+    Sr /= np.abs(Sr).max()
+    ok_shift = (np.allclose(Sr @ Sr.T, np.eye(nV)) and np.all(np.isin(np.round(np.abs(Sr), 9), [0, 1]))
+                and all(np.allclose(conj(Sr, P, s_), Sr) for P, s_ in rots + trans[:5]))
+    Lam = np.zeros((12, 12), complex)
+    for sg in itertools.product((1, -1), repeat=3):
+        x, y, z = (sg[0], 0, 0), (0, sg[1], 0), (0, 0, sg[2])
+        cy = [frozenset((x, y)), frozenset((y, z)), frozenset((z, x))]
+        if round(np.linalg.det(np.array([x, y, z]))) < 0: cy = cy[::-1]
+        for a_ in range(3):
+            q_, r_ = cy[a_], cy[(a_ + 1) % 3]; ii, jj = C['VID'][((0, 0, 0), q_)], C['VID'][((0, 0, 0), r_)]
+            amp = 1j * (-1.0) ** u[C['EID'][frozenset((ii, jj))]]; Lam[CI[r_], CI[q_]] += amp; Lam[CI[q_], CI[r_]] += np.conj(amp)
+    def eproj(M):
+        w_, V_ = np.linalg.eigh(M); ls = sorted(set(np.round(w_, 6)))
+        return [V_[:, np.abs(w_ - l) < 1e-6] @ V_[:, np.abs(w_ - l) < 1e-6].conj().T for l in ls]
+    PH, PLm = eproj(Bloch(np.zeros(3)).conj().T @ H0(1.0, 0.0) @ Bloch(np.zeros(3))), eproj(Lam)
+    UH = PH[0] - PH[1] - 1j * PH[2]; UL = PLm[0] + 1j * PLm[1] + 1j * PLm[2] + PLm[3]
+    blS = blocks_from(Sr); Ws = lambda k: Hk(blS, k) @ Hk(blL, k) @ UH @ UL / np.sqrt(2)
+    def wrap(x): return np.angle(np.exp(1j * x))
+    e0 = np.angle(np.linalg.eigvals(Ws(kst))); E = [x for x in e0 if np.sum(np.abs(wrap(e0 - x)) < 1e-7) == 2][0]
+    def node(k0):
+        out = {}
+        for q in (0.004, 0.002, 0.001):
+            sp_ = []
+            for d in dq[:40]:
+                e = wrap(np.angle(np.linalg.eigvals(Ws(k0 + q * d))) - E); e = np.sort(e[np.abs(e) < 0.1]); sp_.append((e[-1] - e[0]) / (2 * q))
+            out[q] = np.array(sp_)
+        return out
+    def berry(k0, r=0.02, n=14):
+        th = np.linspace(0, np.pi, n + 1); phs = np.linspace(0, 2 * np.pi, 2 * n, endpoint=False); Uv = []
+        for t in th:
+            row = []
+            for p_ in phs:
+                e, v = np.linalg.eig(Ws(k0 + r * np.array([np.sin(t) * np.cos(p_), np.sin(t) * np.sin(p_), np.cos(t)])))
+                a_ = wrap(np.angle(e) - E); idx = np.argsort(np.where(np.abs(a_) < 0.3, a_, 9))[0]; row.append(v[:, idx] / np.linalg.norm(v[:, idx]))
+            Uv.append(row)
+        tot = 0
+        for i_ in range(n):
+            for j_ in range(2 * n):
+                a_, b_, c_, d_ = Uv[i_][j_], Uv[i_ + 1][j_], Uv[i_ + 1][(j_ + 1) % (2 * n)], Uv[i_][(j_ + 1) % (2 * n)]
+                tot += np.angle(np.vdot(a_, b_) * np.vdot(b_, c_) * np.vdot(c_, d_) * np.vdot(d_, a_))
+        return tot / (2 * np.pi)
+    nk = node(kst); ank = [np.ptp(nk[q]) / nk[q].mean() for q in (0.004, 0.002, 0.001)]
+    cube = [np.array(sg_) * np.pi / 2 for sg_ in itertools.product((1, -1), repeat=3)]
+    fluxes = [round(berry(c)) for c in cube]
+    at_E = [int(np.sum(np.abs(wrap(np.angle(np.linalg.eigvals(Ws(c))) - E)) < 1e-7)) for c in cube]
+    grid = [np.array(t) * 2 * np.pi / 10 - np.pi + 0.11 for t in itertools.product(range(10), repeat=3)]
+    far = [g for g in grid if min(np.linalg.norm(wrap(g - c)) for c in cube) > 0.5]
+    gapE = min(np.min(np.abs(wrap(np.angle(np.linalg.eigvals(Ws(g))) - E))) for g in far)
+    check("the diagonal shift S ({d,e} at v -> {d,e} at v+d+e) is a symmetric signed permutation; the step S x link reflection x two "
+          "Clifford-phase on-site factors has an isolated spin-1/2 Weyl doublet at k* with speed sqrt2/3, anisotropy ~ |q|^2, and Weyl nodes "
+          "(flux +-1, net 0) at all eight points (pi/2)(+-1,+-1,+-1) at the node quasi-energy, which no other sampled momentum reaches",
+          ok_shift and np.allclose(nk[0.001], np.sqrt(2) / 3, atol=1e-6) and all(abs(ank[i] / ank[i + 1] - 4) < 0.2 for i in range(2))
+          and all(m == 2 for m in at_E) and all(abs(f) == 1 for f in fluxes) and sum(fluxes) == 0 and gapE > 0.05,
+          f"E = {E:.4f}, speed {nk[0.001].mean():.8f}, anisotropy {np.array(ank)}, fluxes {fluxes}, min distance to E elsewhere {gapE:.3f}")
 
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     return 1 if FAIL else 0

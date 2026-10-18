@@ -1,0 +1,19 @@
+R1 relabelling invariance on 3^3 (D^T r1[N] == 0): True
+
+== closure solution space for (a, b, f); expected 1-dim ray (2,-1,1) = DeWitt, eps3 = 0 ==
+   n=3 timing=mean4  lapses=delta(0), delta(e1)     : rank D = 78; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=3 timing=mean4  lapses=delta(0), delta(e1+e2)  : rank D = 78; closing (a,b,f) space dim 3: [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+   n=3 timing=mean4  lapses=random ints             : rank D = 78; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=3 timing=mean4  lapses=smooth-ish              : rank D = 78; closing (a,b,f) space dim 2: [(-2, 1, 0), (0, 0, 1)]
+   n=3 timing=opp_a  lapses=delta(0), delta(e1)     : rank D = 78; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=3 timing=opp_a  lapses=delta(0), delta(e1+e2)  : rank D = 78; closing (a,b,f) space dim 3: [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+   n=3 timing=opp_a  lapses=random ints             : rank D = 78; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=3 timing=opp_a  lapses=smooth-ish              : rank D = 78; closing (a,b,f) space dim 2: [(-2, 1, 0), (0, 0, 1)]
+   n=3 timing=opp_b  lapses=delta(0), delta(e1)     : rank D = 78; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=3 timing=opp_b  lapses=delta(0), delta(e1+e2)  : rank D = 78; closing (a,b,f) space dim 3: [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+   n=3 timing=opp_b  lapses=random ints             : rank D = 78; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=3 timing=opp_b  lapses=smooth-ish              : rank D = 78; closing (a,b,f) space dim 2: [(-2, 1, 0), (0, 0, 1)]
+   n=3 timing=corner lapses=delta(0), delta(e1)     : rank D = 78; closing (a,b,f) space dim 0: []
+   n=3 timing=corner lapses=delta(0), delta(e1+e2)  : rank D = 78; closing (a,b,f) space dim 2: [(1, 0, 0), (0, 1, 0)]
+   n=3 timing=corner lapses=random ints             : rank D = 78; closing (a,b,f) space dim 0: []
+   n=3 timing=corner lapses=smooth-ish              : rank D = 78; closing (a,b,f) space dim 2: [(-2, 1, 0), (0, 0, 1)]

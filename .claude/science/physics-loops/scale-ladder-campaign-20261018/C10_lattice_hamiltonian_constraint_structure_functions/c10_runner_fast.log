@@ -1,0 +1,59 @@
+=== Part F: framework lemmas
+[PASS] F1a non-involutive momentum-linear pair is NOT first class  {C1,C2}|_Sigma = -pz
+[PASS] F1b involutive pair is first class (bracket = structure fn * constraint)  {C1,C2} = -px
+[PASS] F2 frame (n momentum-linear constraints, n-dim base) is first class automatically  
+[PASS] F3 Kuchar-form brackets are independent of the clock momenta (first class <=> strongly abelian)  
+[PASS] F4a recombination identity C=gK, L=5 cen  
+[PASS] F4a recombination identity C=gK, L=5 fwd  
+[PASS] F4a recombination identity C=gK, L=6 cen  
+[PASS] F4b L=4: c(m,n)=lam_n-lam_m, (S) holds (cen, fwd), cen Lam2/Lam1 = w+1/w = 2cos(2pi/L)  
+[PASS] F4b L=5: c(m,n)=lam_n-lam_m, (S) holds (cen, fwd), cen Lam2/Lam1 = w+1/w = 2cos(2pi/L)  
+[PASS] F4b L=6: c(m,n)=lam_n-lam_m, (S) holds (cen, fwd), cen Lam2/Lam1 = w+1/w = 2cos(2pi/L)  
+[PASS] F4b L=7: c(m,n)=lam_n-lam_m, (S) holds (cen, fwd), cen Lam2/Lam1 = w+1/w = 2cos(2pi/L)  
+[PASS] F4b L=8: c(m,n)=lam_n-lam_m, (S) holds (cen, fwd), cen Lam2/Lam1 = w+1/w = 2cos(2pi/L)  
+[PASS] F4b L=9: c(m,n)=lam_n-lam_m, (S) holds (cen, fwd), cen Lam2/Lam1 = w+1/w = 2cos(2pi/L)  
+=== Part A: one clock pair (X,P): H = (pi^2+(Dphi)^2)/2 - (P^2+(DX)^2)/2, D = pi Dphi + P DX
+[PASS] A1 L=4: H = C+ + C-, D = C+ - C-, C+ = l m/4, C- = n k/4 (general circulant)  
+[PASS] A2 L=4: exact brackets {C+,C+}=A(lm'+ml')/8, {C-,C-}=-A(nk'+kn')/8, {C+,C-}=S(lk'+mn')/8, A=D-D^T, S=D+D^T  
+[PASS] A1 L=5: H = C+ + C-, D = C+ - C-, C+ = l m/4, C- = n k/4 (general circulant)  
+[PASS] A2 L=5: exact brackets {C+,C+}=A(lm'+ml')/8, {C-,C-}=-A(nk'+kn')/8, {C+,C-}=S(lk'+mn')/8, A=D-D^T, S=D+D^T  
+[PASS] A3 L=4 cen: on all 64 non-degenerate components of Sigma the kink rule decides first-classness  first-class non-degenerate: ['lk(rank 8)', 'ln(rank 6)', 'mk(rank 6)', 'mn(rank 8)']; degenerate first-class components: 48
+[PASS] A3c L=4 cen: non-degenerate first-class components = the 4 uniform branches; regular (rank 2L) ones are (l,k),(m,n)  ['lk(rank 8)', 'ln(rank 6)', 'mk(rank 6)', 'mn(rank 8)']
+[PASS] A3 L=4 fwd: on all 240 non-degenerate components of Sigma the kink rule decides first-classness  first-class non-degenerate: ['ln(rank 7)', 'mk(rank 7)']; degenerate first-class components: 16
+[PASS] A3f L=4 fwd: non-degenerate first-class components are only the reducible (l,n),(m,k); regular branches anomalous  ['ln(rank 7)', 'mk(rank 7)']
+[PASS] A3 L=5 cen: on all 1004 non-degenerate components of Sigma the kink rule decides first-classness  first-class non-degenerate: ['lk(rank 10)', 'ln(rank 9)', 'mk(rank 9)', 'mn(rank 10)']; degenerate first-class components: 20
+[PASS] A3c L=5 cen: non-degenerate first-class components = the 4 uniform branches; regular (rank 2L) ones are (l,k),(m,n)  ['lk(rank 10)', 'ln(rank 9)', 'mk(rank 9)', 'mn(rank 10)']
+[PASS] A3 L=5 fwd: on all 1004 non-degenerate components of Sigma the kink rule decides first-classness  first-class non-degenerate: ['ln(rank 9)', 'mk(rank 9)']; degenerate first-class components: 20
+[PASS] A3f L=5 fwd: non-degenerate first-class components are only the reducible (l,n),(m,k); regular branches anomalous  ['ln(rank 9)', 'mk(rank 9)']
+[PASS] A4 L=5 any antisymmetric range-2 Delta: {C+,C-}=0 and strong closure {C+x,C+y} = D_xy (m_y/m_x C+x + m_x/m_y C+y) on {m!=0}; {C-x,C-y} = -D_xy (n_y/n_x C-x + n_x/n_y C-y) on {n!=0}  
+[PASS] A5 uniform background: {H_x,H_y} = D_xy(D_x+D_y), {D_x,H_y} = D_xy(H_x+H_y) on shell (Dirac algebra, delta'->Delta)  
+=== Part P: lattice PFT  C+ = Pi+ g+ + a^2/4,  C- = Pi- g- - b^2/4,  g+- = 1 + Delta u+-,  H = C+ - C-, D = C+ + C-
+[PASS] P1 L=5 cen: exact {C+,C+} and {C+,C-} = -S a_x b_y/4  
+[PASS] P2 L=5 cen: on shell {C+x,C+y} = -D_xy (a_x g_y - a_y g_x)^2 / (4 g_x g_y)  (anomaly)  
+[PASS] P3 L=5 cen: naive lattice PFT is NOT first class: point on Sigma with {H_0,H_1} = 34583/570752  
+[PASS] P1 L=5 fwd: exact {C+,C+} and {C+,C-} = -S a_x b_y/4  
+[PASS] P3 L=5 fwd: naive lattice PFT is NOT first class: point on Sigma with {H_0,H_1} = 3/784  
+[PASS] P1 L=5 as2: exact {C+,C+} and {C+,C-} = -S a_x b_y/4  
+[PASS] P2 L=5 as2: on shell {C+x,C+y} = -D_xy (a_x g_y - a_y g_x)^2 / (4 g_x g_y)  (anomaly)  
+[PASS] P3 L=5 as2: naive lattice PFT is NOT first class: point on Sigma with {H_0,H_1} = 2591839/24618825  
+[PASS] P4a naive Kuchar density h=a^2/(4g): curvature F_xy = -D_xy (v_x - v_y)^2/4, v = a/g (cen, L=5)  
+[PASS] P4b class h = sum k a a / g_(x+t), Ra=1 Rg=0 (cen): the only flat member is h = 0  (L=15, 6 unknowns, 0s)
+[PASS] P4b class h = sum k a a / g_(x+t), Ra=1 Rg=1 (cen): the only flat member is h = 0  (L=17, 18 unknowns, 2s)
+--- P5 jet certificates (germs at the ruler background X+ = x)
+[PASS] P5a mode=g Ra=0 Rw=0 N=2: flat jets with nonzero uniform value do not exist  (L=15, 3 unknowns, 4 eqs, Groebner [1], 0s)
+[PASS] P5b mode=g Ra=1 Rw=0 N=2: flat jets with nonzero uniform value do not exist  (L=25, 18 unknowns, 81 eqs, Groebner [1], 1s)
+[PASS] P5c(order-0 only, control) mode=g Ra=1 Rw=1 N=1: flat jets with nonzero uniform value exist  (L=29, 24 unknowns, 34 eqs, Groebner nontrivial, 2s)
+[PASS] P5d mode=g Ra=1 Rw=1 N=2: flat jets with nonzero uniform value do not exist  (L=29, 60 unknowns, 183 eqs, Groebner [1], 17s)
+[PASS] P5e(order-0 only, control) mode=shift Ra=1 Rw=1 N=1: flat jets with nonzero uniform value exist  (L=29, 24 unknowns, 34 eqs, Groebner nontrivial, 2s)
+[PASS] P5f mode=shift Ra=1 Rw=1 N=2: flat jets with nonzero uniform value do not exist  (L=29, 60 unknowns, 186 eqs, Groebner [1], 13s)
+[PASS] P5g(no shift invariance, control) mode=u Ra=1 Rw=1 N=2: flat jets with nonzero uniform value exist  (L=29, 60 unknowns, 162 eqs, Groebner nontrivial, 17s)
+[PASS] P5h(one-sided u-window) mode=shift Ra=(0, 0) Rw=(-2, 0) N=3: flat jets with nonzero uniform value do not exist  (L=23, 20 unknowns, 43 eqs, Groebner [1], 1s)
+[PASS] P5i mode=shift Ra=(0, 0) Rw=(-2, 2) N=2: flat jets with nonzero uniform value do not exist  (L=27, 21 unknowns, 35 eqs, Groebner [1], 1s)
+[PASS] P5j mode=shift Ra=(0, 1) Rw=(-2, 0) N=2: flat jets with nonzero uniform value do not exist  (L=27, 30 unknowns, 70 eqs, Groebner [1], 2s)
+--- P6 X-independent (deparametrised) clocks
+[PASS] P6 L=7 R=1 cen: no range-R quadratic density with sum = H0 and {h_0,H0} = 0  
+[PASS] P6 L=7 R=1 fwd: no range-R quadratic density with sum = H0 and {h_0,H0} = 0  
+[PASS] P6 L=8 R=1 cen: no range-R quadratic density with sum = H0 and {h_0,H0} = 0  
+[PASS] P6 L=9 R=2 cen: no range-R quadratic density with sum = H0 and {h_0,H0} = 0  
+[PASS] P6 L=9 R=2 fwd: no range-R quadratic density with sum = H0 and {h_0,H0} = 0  
+TOTAL: PASS=53 FAIL=0  (377s, fast mode)

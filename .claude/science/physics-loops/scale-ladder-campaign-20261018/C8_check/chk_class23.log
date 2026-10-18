@@ -1,0 +1,51 @@
+[PASS] S, R_L, Rt, A0 and the dressed rotation matrices are real (K commutes with them)  
+[PASS] PC (80 letters) is closed under complex conjugation up to a global phase  e.g. L123* = ('L123', np.complex128(1j)), H12* = ('H32', np.complex128(1+0j))
+[PASS] (VK)^2 = V V*, with V* = the word with conjugated letters (100 random old words)  
+[PASS] spec (VK)^2(-k) = conj spec (VK)^2(k)  
+[PASS] note: (E+ K)^2 = E+ E+* = E+ E- = 1 (E+* = E-, R_L real)  
+[PASS] exp(pi/4 A0) = (1+A0)/sqrt2 unitary; G exp G^-1 = exp(chi pi/4 A0); covariant up to a phase only for the 12 chi=+1 (T) rotations  covariant: 12/24
+[PASS] R_L^2 = 1, Hermitian; E+- = (1 +- i R_L)/sqrt2 = exp(+-i pi/4 R_L) unitary; E+E- = 1; E+^2 = i R_L; E+ R_L = i E-  
+[PASS] Rt = -S R_L S^-1 and exp(+-i pi/4 Rt) = S E-+ S^-1  
+[PASS] E+ is O-symmetric (G E+ G^-1 = E+ for all 24 dressed rotations)  
+[PASS] E+ is not a phased permutation: 3 nonzeros per column, |entries| in {1/sqrt2, 1/2}  {3: 12} {np.float64(0.5), np.float64(0.707107)}
+    ('E+', '+k*', 'D+', True, np.complex128(0.7071-0.7071j), np.float64(0.0))
+    ('E+', '+k*', 'D-', True, np.complex128(0.7071+0.7071j), np.float64(0.0))
+    ('E+', '-k*', 'D+', True, np.complex128(0.7071+0.7071j), np.float64(0.0))
+    ('E+', '-k*', 'D-', True, np.complex128(0.7071-0.7071j), np.float64(0.0))
+    ('E-', '+k*', 'D+', True, np.complex128(0.7071+0.7071j), np.float64(0.0))
+    ('E-', '+k*', 'D-', True, np.complex128(0.7071-0.7071j), np.float64(0.0))
+    ('E-', '-k*', 'D+', True, np.complex128(0.7071-0.7071j), np.float64(0.0))
+    ('E-', '-k*', 'D-', True, np.complex128(0.7071+0.7071j), np.float64(0.0))
+    ('R_L', '+k*', 'D+', True, np.complex128(-1-0j), np.float64(0.0))
+    ('R_L', '+k*', 'D-', True, np.complex128(1-0j), np.float64(0.0))
+    ('R_L', '-k*', 'D+', True, np.complex128(1-0j), np.float64(0.0))
+    ('R_L', '-k*', 'D-', True, np.complex128(-1+0j), np.float64(0.0))
+    ('Rt', '+k*', 'D+', True, np.complex128(1-0j), np.float64(0.0))
+    ('Rt', '+k*', 'D-', True, np.complex128(-1+0j), np.float64(0.0))
+    ('Rt', '-k*', 'D+', True, np.complex128(-1-0j), np.float64(0.0))
+    ('Rt', '-k*', 'D-', True, np.complex128(1-0j), np.float64(0.0))
+    ('S', '+k*', 'D+', True, np.complex128(1-0j), np.float64(0.4389))
+    ('S', '+k*', 'D-', True, np.complex128(1+0j), np.float64(0.3996))
+    ('S', '-k*', 'D+', True, np.complex128(1+0j), np.float64(0.4389))
+    ('S', '-k*', 'D-', True, np.complex128(1-0j), np.float64(0.3996))
+[PASS] E+-, R_L, Rt: scalars on D+ and D- at +-k* with zero compressed derivative (S: scalar 1, nonzero derivative)  
+[PASS] L1 for E-words (250 random words incl. S, R_L, Rt, E+-, random symmetric on-site unitaries): 2-fold D+/D- levels are untilted isotropic cones at |n_S| sqrt2/3  220 levels, worst deviation 1.3e-09 (0 D+-coincident 4-fold levels skipped)
+[PASS] E(k+Pi) = E-+(k) (D_Pi conjugation flips R_L); E(k)^T = E(-k), R_L(k)^T = R_L(-k)  
+   random E-words, spectral Pi taste: {'no Pi taste': 52, 'Pi taste (omega=-1)': 7, 'Pi taste (omega=+1)': 71} example with Pi taste: ['E-', 'E-', 'o']
+   E+ o S E- o Si S2: spec distance W(k+Pi) vs W(k): [1.424 0.279 1.999]
+[PASS] Pi spectral taste is not universal for E-words but survives in a fraction of them (C8's 'no longer a copy' needs 'in general')  {'no Pi taste': 52, 'Pi taste (omega=-1)': 7, 'Pi taste (omega=+1)': 71}
+   R_L,Rt: neither (|[,]|=2.00, |{,}|=1.85)
+   R_L,S2 R_L S-2: neither (|[,]|=2.00, |{,}|=1.79)
+   R_L,H_on: neither (|[,]|=1.41, |{,}|=1.41)
+   R_L,Lambda: neither (|[,]|=1.40, |{,}|=1.41)
+   Rt,H_on: neither (|[,]|=1.41, |{,}|=1.41)
+   H_on,H_link: neither (|[,]|=2.00, |{,}|=2.00)
+[PASS] S^2 R_L S^-2 is not +-R_L or +-Rt (a further Hermitian involution, but an S-conjugate, so exp(i pi/4 .) = S^2 E S^-2 is generated)  
+[PASS] on-site symmetric algebra elements commuting with R_L(k) for all k: only the scalars (no R_L P + (1-P) involutions)  commutant dim 1
+[PASS] exp(i pi/6 R_L) is unitary, O-symmetric, and not z * E+^n for any n, z in 12th roots (outside the E-word letter set)  
+[PASS] exp(i pi/6 R_L): Pi-taste flip and scalar on D+ at k* with zero compressed derivative (no velocity source)  
+   spec(H_on + H_link) at a random k: [-3.3971 -3.3971 -2.8584 -2.8584 -0.5492 -0.5492  1.7138  1.7138  2.3306
+  2.3306  2.7602  2.7602]
+[PASS] the full nearest-neighbour hop H_on + H_link is not proportional to an involution (k-dependent spectrum), so exp(i pi/4 .) needs a parameter  
+
+TOTAL: PASS=19 FAIL=0   [2s]

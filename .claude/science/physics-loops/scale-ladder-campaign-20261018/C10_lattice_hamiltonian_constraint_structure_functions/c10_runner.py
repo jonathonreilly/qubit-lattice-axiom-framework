@@ -51,10 +51,10 @@ Q3, P3 = [x, y, z], [px, py, pz]
 C1, C2 = px, py + x * pz              # V1 = d_x, V2 = d_y + x d_z ; [V1,V2] = d_z not in span
 br = pb_canon(C1, C2, Q3, P3)
 on = br.subs({px: 0, py: -x * pz})
-check("F1a non-involutive momentum-linear pair is NOT first class", sp.simplify(on - pz) == 0 and on != 0, f"{{C1,C2}}|_Sigma = {on}")
+check("F1a non-involutive momentum-linear pair is NOT first class", sp.simplify(on + pz) == 0 and on != 0, f"{{C1,C2}}|_Sigma = {on}")
 C2b = py + x * px                     # V2 = d_y + x d_x, [V1,V2] = d_x in span
 br = pb_canon(C1, C2b, Q3, P3)
-check("F1b involutive pair is first class (bracket = structure fn * constraint)", sp.expand(br - C1) == 0, f"{{C1,C2}} = {br}")
+check("F1b involutive pair is first class (bracket = structure fn * constraint)", sp.expand(br + C1) == 0, f"{{C1,C2}} = {br}")
 # F2 frame: n momentum-linear constraints with V a frame on R^n => Sigma = zero section => automatically first class
 q = sp.symbols("q0:3"); p = sp.symbols("k0:3")
 V = [[1, q[2], q[0]**2], [0, 1, q[1]], [0, 0, 1]]           # unit upper-triangular: a frame everywhere
@@ -95,7 +95,7 @@ for L in range(4, 10):
         for m_ in range(L):
             for n_ in range(L):
                 # coefficient of C_x in sum_{x,y} w^{m x + n y} (Delta_xy C_x - Delta_yx C_y), at x = 0 (translation covariance)
-                c0 = sum(w**((n_ * yy) % L) * D[0, yy] for yy in range(L)) - sum(w**((m_ * xx) % L) * D[xx, 0] for xx in range(L))
+                c0 = sum(w**((n_ * yy) % L) * D[0, yy] for yy in range(L)) - sum(w**((m_ * xx) % L) * D[0, xx] for xx in range(L))
                 okS &= cyclo_eq(c0, lam(n_, d) - lam(m_, d), w, L)
         l1, lm1 = lam(1, d), lam(L - 1, d)
         okS &= not cyclo_eq(l1, 0, w, L) and not cyclo_eq(l1, lm1, w, L)
@@ -135,42 +135,49 @@ for L in [4, 5]:
     check(f"A2 L={L}: exact brackets {{C+,C+}}=A(lm'+ml')/8, {{C-,C-}}=-A(nk'+kn')/8, {{C+,C-}}=S(lk'+mn')/8, A=D-D^T, S=D+D^T", ok)
 
 def branch_scan(L, D, label):
-    """Sigma = union over per-site choices; each component is a linear subspace. Test first-classness on each."""
+    """Sigma = union over per-site choices (l_x=0 or m_x=0; n_x=0 or k_x=0); each component is a linear subspace.
+    Exact test of first-classness on each component.  A component is 'non-degenerate' if none of the
+    non-chosen factors vanishes identically on it; on those the kink rule is predicted."""
     M = modelA(L, D)
     pb = lambda F, G: pb_canon(F, G, M["Q"], M["Pm"])
     allC = M["Cp"] + M["Cm"]
     BR = [[pb(allC[i], allC[j]) for j in range(2 * L)] for i in range(2 * L)]
     A = D - D.T; S = D + D.T
     allv = M["Q"] + M["Pm"]
-    res = {}
+    out = []
     agree = True
     for sp_ in itertools.product([0, 1], repeat=L):          # 0: l_x = 0, 1: m_x = 0
         for sm in itertools.product([0, 1], repeat=L):       # 0: n_x = 0, 1: k_x = 0
             eqs = [(M["l"][i] if sp_[i] == 0 else M["m"][i]) for i in range(L)] + [(M["n"][i] if sm[i] == 0 else M["k"][i]) for i in range(L)]
+            others = [(M["m"][i] if sp_[i] == 0 else M["l"][i]) for i in range(L)] + [(M["k"][i] if sm[i] == 0 else M["n"][i]) for i in range(L)]
             Jrank = sp.Matrix([[sp.diff(e, v) for v in allv] for e in eqs]).rank()
             sol = sp.solve(eqs, allv, dict=True)[0]
+            nondeg = all(sp.expand(o.subs(sol)) != 0 for o in others)
             fc = all(sp.expand(BR[i][j].subs(sol)) == 0 for i in range(2 * L) for j in range(i + 1, 2 * L))
-            # predicted rule
             pred = True
             for i in range(L):
                 for j in range(L):
                     if A[i, j] != 0 and (sp_[i] != sp_[j] or sm[i] != sm[j]): pred = False
                     if S[i, j] != 0 and sp_[i] != sm[j]: pred = False
-            agree &= (pred == fc)
-            res[(sp_, sm)] = (fc, Jrank)
-    fcs = [(k_, v) for k_, v in res.items() if v[0]]
-    return fcs, agree, len(res)
+            if nondeg: agree &= (pred == fc)
+            tag = ("l" if all(v == 0 for v in sp_) else "m" if all(v == 1 for v in sp_) else "mix") + \
+                  ("n" if all(v == 0 for v in sm) else "k" if all(v == 1 for v in sm) else "mix")
+            out.append((tag, fc, nondeg, Jrank))
+    return out, agree
 
 for L, dn, d in [(4, "cen", CEN), (4, "fwd", FWD), (5, "cen", CEN), (5, "fwd", FWD)]:
-    fcs, agree, ntot = branch_scan(L, circ(L, d), dn)
-    desc = sorted({("l" if all(s == 0 for s in k_[0]) else "m" if all(s == 1 for s in k_[0]) else "mix") + ("n" if all(s == 0 for s in k_[1]) else "k" if all(s == 1 for s in k_[1]) else "mix") + f"(rank {v[1]})" for k_, v in fcs})
-    check(f"A3 L={L} {dn}: first-class components of Sigma (of {ntot}) match the kink rule", agree, f"first class: {desc}")
+    out, agree = branch_scan(L, circ(L, d), dn)
+    fc_nd = sorted({f"{t}(rank {r})" for t, fc, nd, r in out if fc and nd})
+    ndeg = sum(1 for o in out if o[2]); nfc_deg = sum(1 for o in out if o[1] and not o[2])
+    check(f"A3 L={L} {dn}: on all {ndeg} non-degenerate components of Sigma the kink rule decides first-classness", agree,
+          f"first-class non-degenerate: {fc_nd}; degenerate first-class components: {nfc_deg}")
+    rk = 2 * L - (2 if (dn == "cen" and L % 2 == 0) else 1)
     if dn == "cen":
-        check(f"A3c L={L} cen: exactly the 4 uniform branches; regular (rank 2L) ones are (l,k),(m,n)",
-              set(desc) == {f"ln(rank {L + L - (2 if L % 2 == 0 else 1)})", f"mk(rank {L + L - (2 if L % 2 == 0 else 1)})", f"lk(rank {2 * L})", f"mn(rank {2 * L})"}, str(desc))
+        check(f"A3c L={L} cen: non-degenerate first-class components = the 4 uniform branches; regular (rank 2L) ones are (l,k),(m,n)",
+              set(fc_nd) == {f"ln(rank {rk})", f"mk(rank {rk})", f"lk(rank {2 * L})", f"mn(rank {2 * L})"}, str(fc_nd))
     else:
-        check(f"A3f L={L} fwd: only the reducible branches (l,n),(m,k) are first class; regular branches anomalous",
-              set(desc) == {f"ln(rank {2 * L - 1})", f"mk(rank {2 * L - 1})"}, str(desc))
+        check(f"A3f L={L} fwd: non-degenerate first-class components are only the reducible (l,n),(m,k); regular branches anomalous",
+              set(fc_nd) == {f"ln(rank {rk})", f"mk(rank {rk})"}, str(fc_nd))
 # symbolic antisymmetric range-2 circulant (covers central, 4th-order central; SLAC is antisymmetric too)
 L = 5
 d1, d2 = sp.symbols("d1 d2")
@@ -265,22 +272,24 @@ def flat_naive(L, d):
 check("P4a naive Kuchar density h=a^2/(4g): curvature F_xy = -D_xy (v_x - v_y)^2/4, v = a/g (cen, L=5)", flat_naive(5, CEN))
 
 # ---------------------------------------------------------------- finite-range ansatz certificates
-def jet_cert(Ra, Rw, N, mode, d=CEN, normk=0, verbose=True):
+def jet_cert(Ra, Rw, N, mode, d=CEN, normk=0, cont1=False):
     """h_x = sum_{r<=s, |r|,|s|<=Ra} c_rs(w) a_{x+r} a_{x+s},  {a_x,a_y} = 2 Delta_xy (Delta antisymmetric here)
     mode 'g'    : c_rs Taylor polynomial (order N) in e_t = g_{x+t} - 1, |t|<=Rw, g = 1 + Delta u
     mode 'shift': c_rs Taylor polynomial in u_{x+t}, |t|<=Rw, with shift invariance sum_y d/du_y h_x = 0
     mode 'u'    : as 'shift' without shift invariance (control)
     Flatness imposed through order N-1 (complete for C^N germs at the ruler background), uniform value tt*sum c_rs(0) = 1."""
     rd = max(abs(k) for k in d)
-    span = 2 * Ra + (Rw + rd if mode == "g" else Rw) + 2 * rd + 2
+    A0, A1 = (-Ra, Ra) if isinstance(Ra, int) else Ra      # a-window (offsets), may be asymmetric
+    W0, W1 = (-Rw, Rw) if isinstance(Rw, int) else Rw      # w-window (offsets of e or u)
+    span = 2 * (A1 - A0) + (W1 - W0) + 2 * rd + 4 + max(abs(A0), abs(A1), abs(W0), abs(W1))
     L = 2 * span + 3
     def Dl(i, j):
         r = (j - i) % L
         if r > L // 2: r -= L
         return d.get(r, 0)
     a = sp.symbols(f"a0:{L}"); e = sp.symbols(f"e0:{L}")
-    pairs = [(r, s) for r in range(-Ra, Ra + 1) for s in range(r, Ra + 1)]
-    ts = list(range(-Rw, Rw + 1))
+    pairs = [(r, s) for r in range(A0, A1 + 1) for s in range(r, A1 + 1)]
+    ts = list(range(W0, W1 + 1))
     mons = [c for k in range(N + 1) for c in itertools.combinations_with_replacement(ts, k)]
     kap = {(r, s, c): sp.Symbol("k_%d_%d_" % (r, s) + "_".join(map(str, c)) + "_%d" % len(c)) for (r, s) in pairs for c in mons}
     unk = list(kap.values()); tt = sp.Symbol("tt")
@@ -310,6 +319,8 @@ def jet_cert(Ra, Rw, N, mode, d=CEN, normk=0, verbose=True):
     norms = [tt * sum(v for (r, s, c), v in kap.items() if len(c) == 0) - 1]
     for kk in range(1, normk + 1):   # continuum 1/g along uniform background (mode g only)
         norms.append(sum(v for (r, s, c), v in kap.items() if len(c) == kk) - (-1)**kk * sum(v for (r, s, c), v in kap.items() if len(c) == 0))
+    if cont1 and mode == "shift":   # continuum order-1 response h -> (a^2/4)(1 - u') : sum t*kappa_1 = -sum kappa_0
+        norms.append(sum(t * v for (r, s, c), v in kap.items() if len(c) == 1 for t in c) + sum(v for (r, s, c), v in kap.items() if len(c) == 0))
     G = sp.groebner(list(eqs) + norms, *(unk + [tt]), order="grevlex")
     return list(G) == [1], len(unk), len(eqs), L
 
@@ -354,10 +365,14 @@ run_jet(1, 1, 2, "g", True, "P5d")
 run_jet(1, 1, 1, "shift", False, "P5e(order-0 only, control)")
 run_jet(1, 1, 2, "shift", True, "P5f")
 run_jet(1, 1, 2, "u", False, "P5g(no shift invariance, control)")
+run_jet((0, 0), (-2, 0), 3, "shift", True, "P5h(one-sided u-window)")
+run_jet((0, 0), (-2, 2), 2, "shift", True, "P5i")
+run_jet((0, 1), (-2, 0), 2, "shift", True, "P5j")
 if SLOW:
-    run_jet(1, 2, 2, "g", True, "P5h")
-    run_jet(2, 0, 2, "g", True, "P5i")
-    run_jet(1, 2, 2, "shift", True, "P5j")
+    run_jet(1, 2, 2, "g", True, "P5k(full 1/g normalisation)", normk=2)
+    run_jet(2, 0, 2, "g", True, "P5l(full 1/g normalisation)", normk=2)
+    run_jet(1, 2, 2, "shift", False, "P5m(positive: flat 1-jets exist)")
+    run_jet(1, 2, 2, "shift", False, "P5n(positive, with continuum order-1 response)", cont1=True)
 
 # P6 X-independent clocks: K_x = P_x + h_x(phi,pi) abelian  => {h_x, sum_y h_y} = 0 (energy density frozen).
 #    No finite-range quadratic h with sum_x h_x = H0 = (1/2) sum (pi^2 + (Delta phi)^2) has {h_0, H0} = 0.

@@ -1,0 +1,5 @@
+hygienic E-words with random symmetric on-site unitaries (n_S != 0): {('broken', 'unbalanced', 'with on-site slot'): 123, ('keep', 'unbalanced', 'no slot'): 148, ('keep', 'E+/E- balanced', 'no slot'): 19, ('broken', 'E+/E- balanced', 'with on-site slot'): 10}
+   ('broken', 'unbalanced', 'with on-site slot') [('E-', 'Rt', 'o', 'S'), ('Rt', 'S', 'E+', 'o'), ('o', 'Si', 'E+')]
+   ('keep', 'unbalanced', 'no slot') [('S', 'S', 'E-'), ('R', 'S2', 'E+', 'Si'), ('S', 'E+', 'Rt')]
+   ('keep', 'E+/E- balanced', 'no slot') [('S', 'Si', 'E+', 'S2', 'E-'), ('E-', 'S2', 'Rt', 'E+', 'Rt', 'Rt'), ('Si', 'S2', 'E+', 'S2', 'E-')]
+   ('broken', 'E+/E- balanced', 'with on-site slot') [('E-', 'o', 'E+', 'Si', 'Si'), ('Rt', 'Si', 'E+', 'o', 'E-'), ('Si', 'E+', 'o', 'E-', 'Rt', 'Rt')]

@@ -1,0 +1,28 @@
+[PASS] X = D_Q Y has T_t X T_t^-1 = e^{iQ.t} X and D_Q X is translation-invariant (Y transl.-inv.)  
+[PASS] G_g D_Q G_g^-1 = D_{RQ} for 24 dressed rotations x 8 Q  
+[PASS] O-orbits of pi{0,1}^3: sizes [1,1,3,3]; fixed: 0 and Pi  [1, 1, 3, 3]
+[PASS] O-fixed momenta on (pi/8)Z^3 and (pi/12)Z^3 grids are exactly 0 and Pi (consistent with the 3-line proof for general Q)  [(np.float64(0.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(1.0), np.float64(1.0))]
+[PASS] D_Pi commutes with S, A0, H_on, Lambda, PC letter; anticommutes with R_L and Rt  {'S': 'comm', 'A0': 'comm', 'H_on': 'comm', 'Lambda': 'comm', 'L123': 'comm', 'R_L': 'anti', 'Rt': 'anti'}
+[PASS] k* + Pi = -k* mod 2pi  
+[PASS] old words (S^{+-1,2}, R_L, Rt, symmetric on-site unitaries): W(k+Pi) = (-1)^{n_R} W(k)  (200 random)  
+[PASS] O x (2Z/4Z)^3 on L=4: 192 signed permutations  
+  orbits (sublattice weight, corner type, modes per doubled cell, stabiliser order): [(0, 'none', 12, 2), (1, 'par', 24, 1), (1, 'perp', 12, 2), (2, 'par', 24, 1), (2, 'perp', 12, 2), (3, 'none', 12, 2)]
+[PASS] 6 orbits per doubled cell; sizes 12,12,12,12,24,24; stabiliser order 2 (C2') for the four 12-orbits, 1 (free) for 100-par and 110-par  [(0, 'none', 12, 2), (1, 'par', 24, 1), (1, 'perp', 12, 2), (2, 'par', 24, 1), (2, 'perp', 12, 2), (3, 'none', 12, 2)]
+[PASS] the non-trivial stabiliser rotation of each 12-orbit is a C2' (2-fold about a face diagonal: trace -1, not an axis C2)  
+  pieces per orbit (range<=1 valid pieces, range-0 per character): {(0, 'none', 12, 2): (6, {False: 1, True: 1}), (1, 'perp', 12, 2): (6, {False: 1, True: 1}), (1, 'par', 24, 1): (336, {False: 8, True: 8}), (2, 'par', 24, 1): (336, {False: 8, True: 8}), (2, 'perp', 12, 2): (6, {False: 1, True: 1}), (3, 'none', 12, 2): (6, {False: 1, True: 1})}
+[PASS] range<=1 pieces: 6 per C2' orbit, 336 per free orbit; range 0: C2' one per character, free 8 per character  
+[PASS] C2' range-0 pieces: identity for chi=1, antipodal corner for chi=A2  
+[PASS] G0 perm parts: 2 x 64 = 128  
+[PASS] exactly one perm part per character is sublattice-independent (|.| pattern)  [(False, (0, 0)), (True, (7, 7))]
+[PASS] translation-invariant G0 letters: exactly 8 = {z*1} (chi=1) + {z*A0} (chi=A2), z in {+-1,+-i}  (exhaustive over 524,288)  8, [('1', 1), ('1', 1j), ('1', -1), ('1', (-0-1j)), ('A0', 1), ('A0', 1j), ('A0', -1), ('A0', (-0-1j))]
+[PASS] a R_L b support pattern is translation-invariant only if both perm parts are the s-independent ones (all 128^2 pairs)  4 admissible
+  pair (twist_a, twist_b) = (False, False) rank 7 SNF invariants [1] enum mod 4 solutions 64 words ['(-0-1j)*R_L', '-1*R_L', '1*R_L', '1j*R_L']
+  pair (twist_a, twist_b) = (False, True) rank 7 SNF invariants [1] enum mod 4 solutions 64 words ['(-0-1j)*R_L A0', '-1*R_L A0', '1*R_L A0', '1j*R_L A0']
+  pair (twist_a, twist_b) = (True, False) rank 7 SNF invariants [1] enum mod 4 solutions 64 words ['(-0-1j)*A0 R_L', '-1*A0 R_L', '1*A0 R_L', '1j*A0 R_L']
+  pair (twist_a, twist_b) = (True, True) rank 7 SNF invariants [1] enum mod 4 solutions 64 words ['(-0-1j)*Rt', '-1*Rt', '1*Rt', '1j*Rt']
+[FAIL] continuous phase solutions of a R_L b are only the two global phases (image = overall scalar)  
+[PASS] all translation-invariant a R_L b (a, b in G0, Z_N phases with N >= SNF exponent, x Z4 global) are z*{R_L, Rt, A0 R_L, R_L A0}: 16 words  16
+[PASS] Hermitian members (possible conjugates P R_L P^-1) are only +-R_L, +-Rt: A0 R_L and R_L A0 are not Hermitian  
+[PASS] 300 random (a, b) with random U(1) orbit phases: translation invariance only for admissible perm pairs  0 invariant
+
+TOTAL: PASS=19 FAIL=1   [165s]

@@ -1,0 +1,7 @@
+[PASS] L=4 eps=-1: staggered h flat = True (expected True)
+[PASS] L=4 eps=1: staggered h flat = False (expected False)
+[PASS] L=6 eps=-1: staggered h flat = True (expected True)
+[PASS] L=6 eps=1: staggered h flat = False (expected False)
+[PASS] L=8 eps=-1: staggered h flat = True (expected True)
+[PASS] L=8 eps=1: staggered h flat = False (expected False)
+TOTAL: PASS=6 FAIL=0

@@ -1,0 +1,53 @@
+== G1: exact linearised-diffeo null directions of the edge Hessian Q(k) ==
+[PASS] G1a vertex-displacement fields are null vectors of Q(k) at 14 real momenta (incl. random, zone corner, tiny)
+       max relative residual 1.03e-16
+[PASS] G1b gauge null directions persist at complex (continued) momenta
+       max relative residual 5.36e-17
+
+== G2: non-metric modes and the leading O(k^2) metric symbol ==
+   non-metric block eigenvalues at k=0: [-48. -16. -16. -16.   0.]
+[PASS] G2a the 5 non-metric modes are 4 massive + 1 flat at k=0 (as the R4 inventory states)
+       eigenvalues [-48. -16. -16. -16.   0.]
+   |metric-massive coupling| along [1, 0, 0, 0]: 1.000e-04 at 0.01, 4.000e-04 at 0.02 (ratio 4.000; 2 => O(k), 4 => O(k^2))
+   |metric-massive coupling| along [1, 1, 1, 1]: 1.620e-04 at 0.01, 6.481e-04 at 0.02 (ratio 4.000; 2 => O(k), 4 => O(k^2))
+   restricted Q_h: max|Im|/max|Re| of O(k^2) tensor = 0.00e+00
+   Schur-complement: max|Im|/max|Re| of O(k^2) tensor = 0.00e+00
+[PASS] G2b extracted O(k^2) Schur symbol is reproduced by the polarisation tensor on 6 random directions
+       max relative deviation 1.72e-09
+
+== G3: symmetry-allowed forms and decomposition ==
+   S4 (perm-only) invariant forms: 38, gauge-invariant: 2
+   B4 (signed perms) invariant forms: 9, gauge-invariant: 1
+[PASS] G3a counts: B4 -> 9 forms, 1 gauge-invariant (reproduces probe P-G1); S4 -> 2 gauge-invariant
+[PASS] G3b the two S4 gauge-invariant forms are spanned by EH(delta) and d/dc EH(I + c(J-I)) (a 'tilted background metric' -- one common cone, no birefringence)
+       residual 2.1e-13
+   tilt/EH coefficient ratio of EH[I + c(J-I)]: [(-0.3, np.float64(-0.3)), (-0.2, np.float64(-0.2)), (-0.1, np.float64(-0.1)), (0.1, np.float64(0.1)), (0.3, np.float64(0.3)), (0.6, np.float64(0.6)), (0.9, np.float64(0.9))]
+[PASS] G3b' EH[I + c(J-I)] lies in the 2-dim S4 gauge-invariant space for finite c (so the whole space is the cone of 'EH of some S4-invariant background metric': every S4+gauge-invariant leading form in the covered ratio range has ONE cone for both TT polarisations)
+       max residual 1.1e-12; ratio monotone in c over c in [-0.3, 0.9]
+   gauge variation of extracted restricted O(k^2) tensor (relative): 1.31e-08
+   restricted: T = -0.5000000001 EH + -3.047e-12 tilt ; residual outside span 1.49e-09; pure-EH residual 1.49e-09
+   gauge variation of extracted Schur O(k^2) tensor (relative): 1.31e-08
+   Schur: T = -0.5000000001 EH + -3.096e-12 tilt ; residual outside span 1.49e-09; pure-EH residual 1.49e-09
+[PASS] G3c effective (Schur) O(k^2) symbol = c * linearised EH, with zero tilt and zero non-gauge B4/S4 admixture to numerical precision
+       c = -0.5000000001; relative residual 1.49e-09
+[PASS] G3d restricted Q_h O(k^2) symbol = c * linearised EH as well (note's T4 / R4 comparator)
+       c = -0.5000000001; relative residual 1.49e-09; Schur/restricted ratio 1.0000000000
+
+== G4: TT dispersion of the extracted Schur symbol (tau = axis 3, k_tau = i omega) ==
+   [100]: (omega^2/k^2, sign omega, multiplicity, rel sigma_min) = [(np.float64(0.999999999894), 1, 2, 2.1e-10), (np.float64(0.999999999894), -1, 2, 2.1e-10)]
+   [110]: (omega^2/k^2, sign omega, multiplicity, rel sigma_min) = [(np.float64(0.999999999531), 1, 2, 2.4e-10), (np.float64(0.999999999531), -1, 2, 2.4e-10)]
+   [111]: (omega^2/k^2, sign omega, multiplicity, rel sigma_min) = [(np.float64(0.999999999875), 1, 2, 1.7e-10), (np.float64(0.999999999875), -1, 2, 1.7e-10)]
+[PASS] G4a both TT polarisations have omega^2/k^2 = 1 (multiplicity 2, both signs of omega) along [100],[110],[111]: no leading-order birefringence
+[PASS] G4b same result with the tick placed on axis 0 (S4 relabelling)
+   control g0 = diag(1,1,1,1.1) [111]: [(np.float64(1.1), 1, 2), (np.float64(1.1), -1, 2)]
+[PASS] G4c positive control: solver returns omega^2/k^2 = 1.1 (multiplicity 2) for EH of a rescaled background
+
+== G5: O_h decomposition of the kinetic (k_tau^2) block on spatial metric components ==
+   kinetic block = g1*Id + g2*tr(x)tr + g3*sum_i E_ii^2 with (g1,g2,g3) = (-0.2500000000, +0.2500000002, -9.520e-11); residual 6.2e-10
+   g2/g1 = -1.0000000008 (DeWitt lambda=1 kinetic: -1),  g3/g1 = +3.81e-10
+[PASS] G5a kinetic block is O(3)-form (g3/g1 = 0 to numerical precision) with DeWitt ratio g2/g1 = -1
+[PASS] G5b lapse/shift rows of the kinetic block vanish (multiplier structure)
+       max 3.0e-10
+
+runtime 148.6s
+TOTAL: PASS=14 FAIL=0

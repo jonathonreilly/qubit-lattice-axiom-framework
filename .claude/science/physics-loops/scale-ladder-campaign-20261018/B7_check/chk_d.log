@@ -1,0 +1,6 @@
+L=3 theta=k*: H hermitian True, unitary True, symmetric rotations 24/24 (predicted 24, same set True), C2x/C2y anticommute True, all 1p levels even True
+L=3 theta=-k*: H hermitian True, unitary True, symmetric rotations 24/24 (predicted 24, same set True), C2x/C2y anticommute True, all 1p levels even True
+L=3 theta=0: H hermitian True, unitary True, symmetric rotations 3/24 (predicted 3, same set True)
+L=1 theta=k*: H hermitian True, unitary True, symmetric rotations 24/24 (predicted 24, same set True), C2x/C2y anticommute True, all 1p levels even True
+L=5 theta=k*: H hermitian True, unitary True, symmetric rotations 24/24 (predicted 24, same set True)
+L=1 Fock: Gamma(C2x)Gamma(C2y) = (-1)^N Gamma(C2y)Gamma(C2x): True

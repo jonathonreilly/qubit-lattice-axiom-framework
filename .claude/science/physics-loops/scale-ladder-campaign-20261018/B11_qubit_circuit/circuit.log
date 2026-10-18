@@ -1,0 +1,45 @@
+on-site hopping eigenvalues [np.float64(-2.732051), np.float64(0.732051), np.float64(2.0)], Lambda eigenvalues [np.float64(-2.828427), np.float64(-1.414214), np.float64(1.414214), np.float64(2.828427)]
+[PASS] reference W = S R_L (U_H U_L) is unitary on the L = 4 torus (768 modes)
+[PASS] on-site Givens decomposition reproduces the 12 x 12 on-site factor U_H U_L  60 rotations, 116 phase gates
+[PASS] the link graph is a disjoint union of 4-cycles (one per corner orbit {d,e},{-d,e},{-d,-e},{d,-e} around a plaquette): 3 L^3 plaquettes cover all 12 L^3 corners once, and H_link is block diagonal on them
+[PASS] each plaquette block of H_link has flux pi, splits into two anticommuting matchings A, B with A^2 = B^2 = 1, so R_L = (A+B)/sqrt2 = A exp((pi/4) AB) with AB supported on the two plaquette diagonals
+[PASS] S = D . S_B . S_A with S_A = swaps of the two diagonals of every link plaquette ({d,e}@v <-> {-d,-e}@v+d+e) and S_B = on-site antipodal swaps ({d,e} <-> {-d,-e}); the residual D is a diagonal +-1 sign layer
+[PASS] the explicit gate list (on-site Givens layer, plaquette layer for R_L, plaquette-diagonal + on-site antipode swaps for S) reproduces the one-particle step W entrywise on the L = 4 torus (no global phase used)  max |circuit - W| = 3.35e-15
+[PASS] factor-wise: plaquette sub-circuit == R_L and swap sub-circuit == S exactly
+[PASS] control: deleting a single pi/4 plaquette-diagonal rotation breaks the agreement  max diff 0.322
+[PASS] flow index: every factor has range 1 (sup norm) and zero net flow through each cut plane; within S each corner type {d,e} alone carries flow (d+e) per site and its opposite {-d,-e} carries -(d+e), cancelling pairwise  flows {'S': [np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'R_L': [np.float64(-0.0), np.float64(-0.0), np.float64(-0.0)], 'U_H U_L': [np.float64(-0.0), np.float64(-0.0), np.float64(-0.0)]}; S per-corner-type flows (units of L^2 modes) {'((0, 1, 0), (1, 0, 0))': [1, 1, 0], '((0, -1, 0), (1, 0, 0))': [1, -1, 0], '((0, 0, 1), (1, 0, 0))': [1, 0, 1], '((0, 0, -1), (1, 0, 0))': [1, 0, -1]}
+Majorana-monomial (Clifford-implementable) test: {'S': True, 'R_L': False, 'U_H': False, 'U_L': False, 'U_H U_L': False, 'W': False}
+[PASS] Majorana monomial test: S is a signed permutation (Clifford); R_L, U_H, U_L and W are not, so no Clifford circuit on the corner code implements them
+gate census over the torus (tag, kind, Pauli-angle class): count
+   ('RL-diag', 'hop', 'pi/8 (T-type)'): 384   (6 per site)
+   ('RL-link', 'hop', 'Clifford'): 384   (6 per site)
+   ('RL-link', 'num', 'Clifford'): 768   (12 per site)
+   ('S-diag', 'hop', 'Clifford'): 384   (6 per site)
+   ('S-diag', 'num', 'Clifford'): 768   (12 per site)
+   ('S-onsite', 'hop', 'Clifford'): 384   (6 per site)
+   ('S-onsite', 'num', 'Clifford'): 768   (12 per site)
+   ('onsite', 'hop', 'Clifford'): 1024   (16 per site)
+   ('onsite', 'hop', 'irrational/other'): 2688   (42 per site)
+   ('onsite', 'hop', 'pi/8 (T-type)'): 128   (2 per site)
+   ('onsite', 'num', 'Clifford'): 2048   (32 per site)
+on-site rotation angles theta/pi: [0.25     0.115298 0.478661 0.260669 0.419384 0.333333 0.442383 0.443304
+ 0.260669 0.5      0.443304 0.442383 0.5      0.260669 0.5      0.5
+ 0.348249 0.363057 0.5      0.5      0.363057 0.348249 0.314035 0.339561
+ 0.5      0.131168 0.348249 0.363057 0.260669 0.5      0.339561 0.314035
+ 0.131168 0.5      0.363057 0.348249 0.5      0.260669 0.333333 0.5
+ 0.391827 0.314035 0.339561 0.5      0.5      0.442383 0.443304 0.419384
+ 0.478661 0.391827 0.5      0.339561 0.314035 0.5      0.5      0.443304
+ 0.442383 0.260669 0.115298 0.25    ]
+on-site phase angles phi/pi: [-0.  -0.  -0.   0.  -0.  -0.   0.  -0.  -0.  -0.  -0.  -0.  -0.   1.
+ -0.   1.   0.   0.   0.   1.   0.   1.  -1.  -0.   0.   0.   0.  -1.
+  0.   0.  -0.  -0.  -0.   0.  -0.  -0.   0.   0.   0.   0.   0.   0.
+ -1.   1.   0.   0.   0.   1.   1.  -1.  -0.  -1.  -0.  -0.   0.  -0.
+ -0.   0.   0.  -0.   1.  -0.  -0.  -0.  -0.  -1.   0.  -0.   0.  -0.
+ -0.  -0.  -0.5 -0.   0.5 -0.   0.   0.   1.  -1.   0.  -0.  -0.5  0.
+ -1.  -0.   0.   0.  -0.  -0.   0.  -0.  -1.  -0.   1.  -1.   0.   0.
+  0.5  0.  -0.  -0.5  0.  -0.5 -0.   0.   0.   0.5  0.  -0.5  0.  -0.5
+ -0.  -0.5  0.5 -0.5]
+[PASS] angle census: S gates are all Clifford (Pauli angles in (pi/4)Z); R_L uses exactly 4 pi/8 Pauli rotations per plaquette (12 per site) plus Clifford swaps; the on-site factor needs Pauli angles outside (pi/8)Z
+ASAP depth (2-mode gates only / all gates): on-site 21/31, R_L 2/3, S 2/4, total 25/38
+
+Part A TOTAL: PASS=11 FAIL=0

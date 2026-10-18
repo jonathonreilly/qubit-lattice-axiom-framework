@@ -1,0 +1,15 @@
+structured: lam*T=20.0  M/(v*2T)=1.250  bond*M=50  onsite/lam=1e-06  onsite*M=5e-12
+mediated: lam*T=24.8  M/(v*2T)=1.200  bond*M=0.192  onsite/lam=3.23e-09  onsite*M=1.92e-14
+PASS  R1 both designs tie M to T and T to 1/lam: so 'scales like 1/M', 'like 1/T' and 'like lam' are confounded in the certified family
+PASS  R2 certified bond tolerances are NOT ~1/M across the two devices: (tol*M)_structured/(tol*M)_mediated = 260
+mediated bond: increment at eps=1e-13: 5.30e-07; eps allowed for total<1e-3: 9.54e-11
+PASS  R3 bond 1e-13 is a budget choice (eps up to ~1e-10 keeps complete error <1e-3): the certificate itself has no T or M factor (uniform for all t>=8e18)
+  B_travel coefficient ~ 4.46e+06 (note: <4.86e6); sqrt(lam)||F||_2 term from 50*1000*lam/R^2: 6.27e+04
+mediated onsite: coef*lam = 422  (B_d=O(xi/lam)); increment at 1e-26: 1.36e-06
+PASS  R4 onsite certificate is linear in xi/lam (coef*lam is O(10^2), lam-independent form): absolute onsite tolerance ~ lam ~ 1/T ~ 1/M by design coupling
+PASS  R5 mediated added-head count reproduces the note's 119: heads=119
+literal clock at eps=1e-13, t=1.6e19: worst dC*t = 1.38e+05 rad, rms (uniform errors) = 7.83e+03 rad
+PASS  R6 certified mediated bond box is useless under the nominal-clock literal metric: the notes avoid this by putting exp(-itC(w)) (ACTUAL scalar) into the target
+  literal-clock requirement (worst case, 1e-3): eps <= 7.2e-22  (~1/(W_sum*T))
+structured: C_src=2.9e-08, worst literal phase at e=1e-6, t=4e14: 5.8 rad; requirement e <= 1.7e-10
+PASS  R7 structured-source box also relies on the actual-scalar target: consistent with the note: 'One cannot omit exp(-itC_src(actual))'

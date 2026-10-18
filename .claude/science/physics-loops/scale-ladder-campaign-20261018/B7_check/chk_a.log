@@ -1,0 +1,17 @@
+flux pattern reproduced on all cycles (incl. all 24 face orientations): True
+proper rotations with nonzero affine shift: 21 / 24
+unshifted proper: [[[1, 0, 0], [0, 1, 0], [0, 0, 1]], [[0, -1, 0], [0, 0, -1], [1, 0, 0]], [[0, 0, 1], [-1, 0, 0], [0, -1, 0]]]
+momenta fixed by all 24 proper (units of pi): [(np.float64(0.5), np.float64(-0.5), np.float64(0.5)), (np.float64(-0.5), np.float64(0.5), np.float64(-0.5))]
+rotations fixing Gamma: [[[1, 0, 0], [0, 1, 0], [0, 0, 1]], [[0, -1, 0], [0, 0, -1], [1, 0, 0]], [[0, 0, 1], [-1, 0, 0], [0, -1, 0]]]
+commuting C2 pairs: 12, fibre-matrix commutator signs: [-1]
+L=4 real space: G(C2x)G(C2y) = -G(C2y)G(C2x): True
+   G T_x G^-1 = [1] T_(Rx) for g=[[1, 0, 0], [0, -1, 0], [0, 0, -1]]  lam=[0 1 1]
+   G T_x G^-1 = [-1] T_(Rx) for g=[[-1, 0, 0], [0, 1, 0], [0, 0, -1]]  lam=[1 0 1]
+momenta (N=24 grid) fixed by both C2x and C2y: 8: [(np.float64(0.5), np.float64(0.5), np.float64(0.5)), (np.float64(0.5), np.float64(0.5), np.float64(-0.5)), (np.float64(0.5), np.float64(-0.5), np.float64(0.5)), (np.float64(0.5), np.float64(-0.5), np.float64(-0.5)), (np.float64(-0.5), np.float64(0.5), np.float64(0.5)), (np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), (np.float64(-0.5), np.float64(-0.5), np.float64(0.5)), (np.float64(-0.5), np.float64(-0.5), np.float64(-0.5))]
+   Gamma fixed by C2x? False  image of Gamma under C2x (units pi): [ 0. -1. -1.]
+  trial 0: k* mults [4, 2, 4, 2]; all D2-fixed points even: True; generic k mults [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+     cumulative level counts at k* (possible n(k*) for a gap at k*): [4, 6, 10, 12]
+  trial 1: k* mults [2, 4, 2, 4]; all D2-fixed points even: True; generic k mults [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+     cumulative level counts at k* (possible n(k*) for a gap at k*): [2, 6, 8, 12]
+  trial 2: k* mults [4, 2, 4, 2]; all D2-fixed points even: True; generic k mults [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+     cumulative level counts at k* (possible n(k*) for a gap at k*): [4, 6, 10, 12]

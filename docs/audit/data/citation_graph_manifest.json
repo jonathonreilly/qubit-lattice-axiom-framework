@@ -1,6 +1,6 @@
 {
- "edge_count": 16238,
- "node_count": 7244,
+ "edge_count": 16245,
+ "node_count": 7247,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4265,6 +4265,10 @@
   "corner_fermion_massless_dirac_pair_protected_by_cube_rotations_and_pseudoscalar_dirac_mass_bounded_theorem_note_2026-10-17": {
    "deps_hash": "be9cff861701",
    "out_degree": 3
+  },
+  "corner_fermion_odd_filling_is_forced_gapless_by_anticommuting_gauge_dressed_c2_lifts_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "7eba5c37a5c2",
+   "out_degree": 4
   },
   "corner_fermion_qubit_code_genuine_cube_rotation_action_emergent_fermion_carries_spin_half_class_bounded_theorem_note_2026-10-17": {
    "deps_hash": "b104afee3eda",
@@ -12597,6 +12601,14 @@
   "ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_bounded_theorem_note_2026-09-23": {
    "deps_hash": "eb13053ecda9",
    "out_degree": 4
+  },
+  "iid_priority_formation_is_a_finitary_factor_of_iid_noise_with_factorial_coding_radius_tail_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "f3a38a995a7c",
+   "out_degree": 1
+  },
+  "iid_priority_formation_spatial_frequency_consistency_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "f9c1e726ee7a",
+   "out_degree": 2
   },
   "impact_parameter_lensing_note": {
    "deps_hash": "bbfa07daa875",

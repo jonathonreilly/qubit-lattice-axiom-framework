@@ -312,6 +312,29 @@ def main():
           "but separates the two valleys in energy (some levels 2-fold)", all(m % 2 == 0 for m in ms) and any(m % 4 for m in ms),
           f"multiplicities {ms}")
 
+    # ---------------- Part 5: what fixes a common speed across fields
+    print("\nPart 5: invariant kinetic tensors with and without time on the same footing as space")
+    def signed_perms(n, fixed_last=False):
+        out = []
+        for p in itertools.permutations(range(n - 1 if fixed_last else n)):
+            for sg in itertools.product((1, -1), repeat=n):
+                M = np.zeros((n, n))
+                for i, j in enumerate(p): M[i, j] = sg[i]
+                if fixed_last: M[n - 1, n - 1] = sg[n - 1]
+                out.append(M)
+        return out
+    def n_invariant_sym2(G, n):
+        rows = []
+        for _ in range(12):
+            A = rng2.normal(size=(n, n)); A = A + A.T
+            rows.append(sum(g @ A @ g.T for g in G).ravel())
+        sv = np.linalg.svd(np.array(rows), compute_uv=False); return int(np.sum(sv > 1e-9 * sv[0]))
+    B4 = signed_perms(4); OhT = signed_perms(4, fixed_last=True)
+    nB4, nOhT = n_invariant_sym2(B4, 4), n_invariant_sym2(OhT, 4)
+    check("symmetric rank-2 tensors on (t,x,y,z): the 4D hyperoctahedral group (384 elements) leaves one invariant (a common "
+          "speed for every field), spatial O_h x time reversal (96) leaves two (each field's speed is a free parameter)",
+          len(B4) == 384 and len(OhT) == 96 and nB4 == 1 and nOhT == 2, f"{nB4} vs {nOhT}")
+
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     return 1 if FAIL else 0
 

@@ -1,0 +1,23 @@
+[PASS] translation-invariant gauge on the L = 4 lattice reproduces the flux pattern
+[PASS] rotations, inversion and translations all have PSG lifts; translations act without gauge signs
+Part 1: rotations act on crystal momentum affinely, k -> R k + pi s_R
+[PASS] every twisted rotation maps each Bloch space onto exactly one Bloch space, with a single shift s_R per rotation (k -> R k + pi s_R)  distinct shift vectors [(np.int64(0), np.int64(0), np.int64(0)), (np.int64(0), np.int64(0), np.int64(1)), (np.int64(0), np.int64(1), np.int64(0)), (np.int64(0), np.int64(1), np.int64(1)), (np.int64(1), np.int64(0), np.int64(0)), (np.int64(1), np.int64(0), np.int64(1)), (np.int64(1), np.int64(1), np.int64(0)), (np.int64(1), np.int64(1), np.int64(1))]
+[PASS] exactly two momenta are fixed by all 24 rotations: k* = (pi/2)(1,-1,1) and -k* (UV PSG data -> IR valley position)  fixed momenta in units of pi/2: [(np.int64(-1), np.int64(1), np.int64(-1)), (np.int64(1), np.int64(-1), np.int64(1))]
+
+Part 2: the fixed-momentum space carries only the spin-1/2 class, for every symmetric Hamiltonian
+[PASS] the twelve Bloch states at k* and at -k* each form a linear representation of the binary octahedral group in which the central element acts as -1 (all spinorial)  k*: {'E1/2': 1, 'E5/2': 1, 'G3/2': 2}; -k*: {'E1/2': 1, 'E5/2': 1, 'G3/2': 2}
+[PASS] six random Hamiltonians commuting with the rotations and translations (strength 1, every range on the torus, real and complex) have only even, spinorial levels at k*  multiplicities [[4, 2, 2, 4], [2, 4, 2, 4]] ...
+[PASS] control: at Gamma, which is not rotation-fixed, the same Hamiltonians have odd multiplicities  Gamma multiplicities [2, 1, 2, 1, 2, 2, 1, 1]
+
+Part 3: emergent isotropy of the Weyl cone (t1 = -1, t2 = 0.2, X strength 0.05)
+[PASS] the cone speed is isotropic at linear order and its relative anisotropy falls as |q|^2 (ratios ~4 per halving): a packet of width w sees anisotropy ~ (a/w)^2  anisotropy [2.59557280e-04 6.48892647e-05 1.62223132e-05], ratios [4. 4.], v -> 0.109594
+
+Part 4: the Dirac mass is protected by site rotations x site inversion at every strength
+[PASS] with strong (0.3) random uniform and staggered terms invariant under site rotations, site inversion and the translations (up to the staggered sign), every level of the folded Hamiltonian at k* is 4-fold: no Dirac mass at any order  multiplicities [4, 4, 4, 4, 4, 4]
+[PASS] an A2 (site-rotation-to-T) breaking of strength eps splits the quartets into doublets with a gap linear in eps ('t Hooft-natural small mass)  gap/eps per quartet [1.8606 2.3996 4.375  2.3996 4.3038 1.9319]
+[PASS] control: keeping the rotations but breaking the inversion leaves every level even (pinned Weyl doublets) but separates the two valleys in energy (some levels 2-fold)  multiplicities [4, 2, 2, 2, 2, 4, 4, 4]
+
+Part 5: invariant kinetic tensors with and without time on the same footing as space
+[PASS] symmetric rank-2 tensors on (t,x,y,z): the 4D hyperoctahedral group (384 elements) leaves one invariant (a common speed for every field), spatial O_h x time reversal (96) leaves two (each field's speed is a free parameter)  1 vs 2
+
+TOTAL: PASS=12 FAIL=0

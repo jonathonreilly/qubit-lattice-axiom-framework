@@ -78,6 +78,8 @@ The 2026-09-24 note shows that the curvature member's lapse constraints close on
 
 ## How this bears on the gravity lane (interpretation, not a claim)
 
+- **Which K sets the cone (campaign block B21, independently checked; continuum).** In the supplied member one K multiplies both the first- and second-order curvature terms. Invariantly, the cone is fixed by the second-order (TT) coefficient: the canonical rescaling (h, P) → (ρh, P/ρ) preserves every bracket while moving the ratio of the two coefficients. So "c = K/(4α)" here reads as "every matter cone equals the graviton's TT cone", given the member's single K.
+
 - **The pattern.** Within these supplied models, requiring one lapse/relabelling algebra does three things:
   - it ties every matter field's cone to the gravity cone `K/(4α)`;
   - it fixes the curvature sign that the action already carries;

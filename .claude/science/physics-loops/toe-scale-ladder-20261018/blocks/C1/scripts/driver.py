@@ -68,13 +68,16 @@ class Sim:
         self.buf = np.zeros(4096)
         self.stats = np.zeros(10, dtype=np.int64)
         self.pr = np.array([0.3, 0.6, 0.9, 0.5])
+        self.nm_fixed = None
         self.args = (lat.lplaqs, lat.plinks, lat.psign, lat.nbh, lat.nnb)
 
     def nkinks(self):
         return int(self.kc.sum())
 
     def do_sweep(self, factor=1.0):
-        nm = int(factor * (self.lat.np + self.nkinks()))
+        # NOTE: the number of moves per sweep must not depend on the current state during measurement
+        # (a state-dependent count biases the sampled law); it is frozen by freeze_sweep().
+        nm = self.nm_fixed if self.nm_fixed is not None else int(factor * (self.lat.np + self.nkinks()))
         while True:
             ok = qmc.sweep(self.s0, self.kt, self.kc, *self.args, self.g, self.V, self.T, self.mode, nm,
                            self.buf, self.stats, self.pr)
@@ -102,6 +105,7 @@ def run(L, V, T, nsweep, ntherm, seed, mode=0, J=0, dtau=0.25, g=1.0, factor=1.0
     for i in range(ntherm):
         sim.do_sweep(factor)
     tth = time.time() - t0
+    sim.nm_fixed = int(factor * (lat.np + sim.nkinks())) + 1
     sc = {k: [] for k in ("Nf_mid", "Emix", "kin_mid", "nk", "ST1", "ST2", "Nf_end")}
     Ctau = []
     nmeas = nsweep

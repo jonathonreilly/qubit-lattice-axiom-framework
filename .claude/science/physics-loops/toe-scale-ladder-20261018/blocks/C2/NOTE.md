@@ -1,18 +1,22 @@
-# C2: the photon and fermion light cones are not tied by the stated premises, and the one-loop flow toward a common cone is too slow to help
+# C2: under the matter-only reading of kinetic isotropy, the photon and fermion light cones are not tied, and the one-loop flow toward a common cone is too slow to help
 
 **Block:** C2 of `toe-scale-ladder-20261018` (R3→R4, OBL-R3.1). **Base:** main @ 584755767.
 **Status:** worker output. Unreviewed and unaudited. No audit status is claimed.
-**Runners:** `scripts/run_all.py` runs all four runners. The output is in `logs/run_all.log`: `TOTAL: PASS=48 FAIL=0`.
+**Runners:** `scripts/run_all.py` runs all four runners. The output is in `logs/run_all.log`: `TOTAL: PASS=49 FAIL=0`.
+**Review:** `REVIEW.md` (independent reviewer). Every finding is applied; see §9.
 
 ## 0. Result up front
 
-1. **(Proved conditional, exact) T_tie: a premise that would tie the two cones.** Suppose the *whole* quadratic Euclidean action is invariant under the hypercubic group B4 of `Z^3 x Z_tau` with `a_tau = a`. "Whole" means the gauge kinetic form, the matter kinetic form and the interaction. Then the dimension-4 IR quadratic forms of the photon and the fermion are each proportional to `delta_{mu nu}`, so `c_gamma = c_psi = a/a_tau`. Group theory gives the counts. B4 has exactly one invariant rank-2 tensor and exactly one invariant quadratic form on `F_{mu nu}`. Under spatial cubic symmetry times time reflection there are two of each: `(c_t, c_s)` and `(E^2, B^2)`.
-2. **(Witness under matching premises) The registered primitive does not tie them.** The registered `kinetic_isotropy_primitive` says that *the matter kinetic normalization* has `c_t = c_s`. Its own support notes scope it to matter. `KINETIC_ISOTROPY_FROM_STRICT_LICENSE_...` says: "Matter sector only ... the gauge-sector plaquette-coefficient anisotropy ... separate rows". Witness pair W2: B4-isotropic matter (`zeta_0 = 1`) with Gaussian U(1) plaquette weights `beta_s/beta_t = xi^2`. It gives exactly `c_psi = 1` and `c_gamma = xi`. Model A (`xi = 1`) has ratio 1. Model B (`xi = 6/5`) has ratio 6/5. Both meet Lattice, cubic covariance, one tick with `a_tau = a`, the matter-only kinetic isotropy and the scale reference. The scale reference is dimensionless-free.
+1. **(Proved conditional, exact) T_tie: a premise that would tie the two cones.** Suppose the *whole* quadratic Euclidean action is invariant under the hypercubic group B4 of `Z^3 x Z_tau` with `a_tau = a`. "Whole" means the gauge kinetic form, the matter kinetic form and the interaction. Then the dimension-4 IR quadratic forms of the photon and the fermion are each proportional to `delta_{mu nu}`, so `c_gamma = c_psi = a/a_tau`. Group theory gives the counts. B4 has exactly one invariant rank-2 tensor and exactly one invariant quadratic form on `F_{mu nu}`.
+   - Under spatial cubic symmetry times time reflection there are two of each: `(c_t, c_s)` and `(E^2, B^2)`. Time reflection or inversion is an extra assumption beyond the Lattice axiom.
+   - Under the proper rotations alone, which is all the Lattice axiom gives, there are 2 rank-2 invariants and 3 gauge forms: `E^2`, `B^2` and `E.B`. `E.B` is the theta term and carries no velocity, so no conclusion changes.
+   - The exact hypotheses are listed in §2.
+2. **(Witness under matching premises) The registered primitive does not tie them.** The registered `kinetic_isotropy_primitive` says that *the matter kinetic normalization* has `c_t = c_s`. Its own support notes scope it to matter. `KINETIC_ISOTROPY_FROM_STRICT_LICENSE_...` says: "Matter sector only ... the gauge-sector plaquette-coefficient anisotropy ... separate rows". Witness pair W2: B4-isotropic matter (`zeta_0 = 1`) with Gaussian U(1) plaquette weights `beta_s/beta_t = xi^2`. It gives exactly `c_psi = 1` and `c_gamma = xi`. Model A (`xi = 1`) has ratio 1. Model B (`xi = 6/5`) has ratio 6/5. Both meet Lattice, cubic covariance, one tick with `a_tau = a`, the matter-only kinetic isotropy (for the bare matter action) and the scale reference. The scale reference carries no dimensionless content, so it cannot separate the two models.
 3. **(Witness with the supplied ingredients on main) W1.** The photon is the supplied Gaussian lattice-Maxwell comparator. It has `omega = sqrt(UK)|s(k)|` exactly, so `c_gamma = sqrt(UK)` per unit Hamiltonian time; the landed reading gives 1.025. The fermion is the supplied two-qubit O-covariant Dirac walk with cone speed `s(b) = b0 + 2b1 + b2` per tick. Comparing them needs a declared clock conversion `rho` (Hamiltonian time per tick). Then `c_gamma/c_psi = sqrt(UK) rho / s(b)`.
    - With `rho = 1` fixed, admissible walks give 1.025/0.9144 = 1.1209 (b*) and 1.025/1 = 1.025 (`b_gold`).
    - Along a sampled admissible curve (`b2 = 3/20`, `b0` in [0.33, 0.40]), `s` runs monotonically over [0.8642, 0.9667] (numerical).
    - Neither carrier is an OS0 Euclidean object, so the kinetic-isotropy primitive **cannot be evaluated** on them as worded.
-4. **(One-loop derivation plus an independent numerical check) The flow.** The theory is U(1) plus one Dirac fermion with independent speeds. Write `eta = c_gamma/c_psi`, `delta = ln eta`, `l = ln(Lambda/mu)` (increasing toward the IR) and `alpha = e^2/4pi`:
+4. **(One-loop derivation plus an independent numerical check) The flow.** The matter content is a toy: U(1) plus one unit-charge Dirac fermion (N_f = 1), with independent speeds, no mass thresholds, and `alpha(m_e) = 1/137.036` imposed at the IR end. Write `eta = c_gamma/c_psi`, `delta = ln eta`, `l = ln(Lambda/mu)` (increasing toward the IR) and `alpha = e^2/4pi`:
 
        d ln c_psi  /dl = (e^2/6pi^2) [eta - 4/(1+eta)^2]
        d ln c_gamma/dl = (e^2/12pi^2) (1/eta - eta)
@@ -24,9 +28,10 @@
    - The flow is attractive for all `eta > 0` (checked on (0.05, 20)). Because `alpha` itself runs to zero logarithmically, `delta(l)/delta(0) = (alpha(l)/alpha(0))^((N_f+2)/N_f)`. This is an inverse power of a logarithm.
    - Over `l = 51` with `alpha(m_e) = 1/137.036` and `N_f = 1`, the IR mismatch is **0.781** of the UV mismatch.
    - For the illustrative `N_f = 3` and `N_f = 8`, the factors are 0.637 and 0.287.
-5. **(Conclusion: obligation for R3.)** The IR flow removes at most an O(1) factor. An IR bound on `|c_gamma - c_e|/c` of order 1e-15 to 1e-20 therefore needs `|delta|` at the cutoff of the same order (1.28e-15 or 1.28e-20 for `N_f = 1`). R3 must supply that cutoff-scale equality itself. It can come from a T_tie-type symmetry that acts jointly on the gauge and matter kinetic forms, or from a derivation, which would amount to a fine-tuning statement. The natural mismatches in W1 and W2 (0.03 to 0.2) are excluded by about 13 to 19 orders of magnitude.
+   - These numbers belong to the toy content. The real charged spectrum, with thresholds and the hypercharge embedding, would give a different O(1) number.
+5. **(Conclusion: obligation for R3.)** For the declared running, the IR flow removes an O(1) factor. One loop has to stay valid up to the cutoff for this to hold. Even at the edge of perturbativity (`alpha_UV ~ 1`), the suppression is no more than about `alpha_IR^((N_f+2)/N_f)`. For `N_f = 1` that is about 4e-7, still about 8 orders short of 1e-15 (reviewer's estimate; not run in my scripts). An IR bound on `|c_gamma - c_e|/c` of order 1e-15 to 1e-20 therefore needs `|delta|` at the cutoff of the same order (1.28e-15 or 1.28e-20 for `N_f = 1`). R3 must supply that cutoff-scale equality itself. It can come from a T_tie-type symmetry that acts jointly on the gauge and matter kinetic forms, or from a derivation, which would amount to a fine-tuning statement. The natural mismatches in W1 and W2 (0.03 to 0.2) are excluded by about 13 to 19 orders of magnitude.
 
-So the target "kinetic isotropy ⇒ common light cone" is **retired as stated**. It holds only under the stronger T_tie premise, which is not registered.
+So the target "kinetic isotropy ⇒ common light cone" is **retired under reading K_m**. K_m is the matter-only reading, which is the scope the primitive's support notes give it. **Under reading K_full it holds, via T_tie.** The primitive's word "equivalently" means its author read "matter isotropy" and "regulator block hypercubic-symmetric" as the same statement. The phrase "the regulator block on which loops are computed" can fairly be read as covering the gauge propagator too. Deciding which reading the primitive carries is an owner or audit question; this block does not settle it.
 
 ## 1. Premises as stated on main
 
@@ -41,16 +46,20 @@ So the target "kinetic isotropy ⇒ common light cone" is **retired as stated**.
 
 ## 2. T_tie (proved conditional; exact group theory)
 
-**Statement.** Let the Euclidean lattice be `Z^4` with `a_tau = a`. Assume:
-- the quadratic action of the gauge field and of the fermion is B4-invariant;
-- the fermion transforms with `gamma_mu` as a B4 vector;
-- the IR is described by a local action with an analytic small-momentum expansion and no spontaneous B4 breaking.
+**Statement.** Let the Euclidean lattice be `Z^4` with `a_tau = a`. The hypotheses are:
+- (H0) the quadratic action of the gauge field and of the fermion, and their coupling, are B4-invariant;
+- (H1) B4 acts on the fermion through a Pin/spinor lift under which `gamma_mu` transforms as a vector;
+- (H2) no internal (taste or flavour) index transforms nontrivially under B4. Otherwise B4-invariant bilinears such as `sum_mu (gamma_mu ⊗ xi_mu) d_mu` exist, and their IR content needs a separate argument. This matters for staggered carriers;
+- (H3) a local Euclidean action exists on `Z^4`. Neither the Hamiltonian comparator nor the QCA walk provides one;
+- (H4) no spontaneous breaking of B4, and an analytic small-momentum expansion of the IR quadratic forms.
+
+`c = a/a_tau` is only the conversion of the lattice-unit value 1 into physical units.
 
 Then the dimension-4 bilinears are `Z_psi psibar gamma_mu d_mu psi` and `(1/4e^2) F_{mu nu}F_{mu nu}` (plus the topological `F Ftilde` if only proper B4 is imposed; it carries no velocity). Hence `c_psi = c_gamma = 1` in lattice units.
 
 **Proof.** The invariant rank-2 tensors under B4 are one-dimensional, from the character average `(1/384) sum tr(g)^2 = 1`. The invariant symmetric forms on `Lambda^2 R^4` are also one-dimensional, from the `Sym^2(Lambda^2)` character average, which is 1 for B4 and 2 for the proper subgroup. A B4-invariant regulator keeps radiative corrections B4-invariant, so the equality persists order by order. Lorentz violation then starts at dimension 6, at `O(a^2 p^2)`. Runner: `witness_os0_surface.py`.
 
-**Scope.** Exact for the group-theory counts. The all-orders persistence is the standard symmetry argument and is not re-proved here. Without the gauge-sector B4 (reading K_m), the gauge count is 2, and W2 realises the second invariant.
+**Scope.** Exact for the group-theory counts. The all-orders persistence is the standard symmetry argument and is not re-proved here. Without the gauge-sector B4 (reading K_m), the gauge count is 2 under `O_h x Z2(t)`, and W2 realises the second invariant. Under proper `O` alone (the Lattice axiom, with no time reflection) the count is 3: `E^2`, `B^2` and `E.B`. The extra invariant `E.B` carries no velocity, so the conclusion is unaffected. This is checked in `witness_os0_surface.py`.
 
 ## 3. Witness W2 (OS0 surface; claim type: underdetermination witness under matching premises)
 
@@ -64,7 +73,7 @@ The exact Euclidean poles, continued `k0 -> iE`, are:
 | gauge `beta_s/beta_t` | 1 (B4) | 36/25 (O_h × Z2(t) only) |
 | tree-level `c_gamma/c_psi` | 1 | 6/5 |
 
-Both models share every listed premise, under reading K_m. They differ only in a gauge coupling ratio that no premise constrains. The carriers (Grassmann fermion, noncompact link field) are supplied, as all fermion and photon carriers on main are. **Not claimed:** that either model satisfies Qubit as a qubit-per-site realisation. Once the interaction is on, model B also generates matter anisotropy at `O(alpha)` at the cutoff. This is the Collins mechanism. The coefficient is not computed here.
+Both models share every listed premise, under reading K_m, with K_m applied to the *bare* matter action. They differ only in a gauge coupling ratio that no premise constrains. The carriers (Grassmann fermion, noncompact link field) are supplied, as all fermion and photon carriers on main are. **Not claimed:** that either model satisfies Qubit as a qubit-per-site realisation. Once the interaction is on, model B also generates matter anisotropy at `O(alpha)` at the cutoff. This is the Collins mechanism. The coefficient is not computed here.
 
 ## 4. Witness W1 (supplied ingredients; claim type: exact dispersion plus numerical sample)
 
@@ -93,7 +102,7 @@ Both models share every listed premise, under reading K_m. They differ only in a
 - `eta = 1` is a fixed point.
 - At `eta = 1`, `d(1/alpha)/dl = 2/(3pi)`, the standard QED running.
 - In the `eta -> infinity` (instantaneous Coulomb) limit, `d ln c_psi/dl -> 2 alpha_C/(3pi)` with `alpha_C = e^2 c_gamma/(4 pi c_psi)`. This agrees with the one-loop Coulomb velocity enhancement for 3D Dirac fermions as I recall it from the Weyl-semimetal literature (e.g. Goswami–Chakravarty 2011). That citation is recalled, not re-checked here.
-- `c_gamma^2 c_psi` is stationary to second order in `eta - 1`. This matches the structure that a web-search abstract summary reports for Isobe–Nagaosa, PRB 86, 165127 (2012): "c and v approach the common value with c²v almost unrenormalized". Their explicit coefficients could not be fetched (network blocked), so the coefficients themselves are **not cross-checked against the literature**.
+- `c_gamma^2 c_psi` is invariant to first order in `eta - 1`: `d ln(c_gamma^2 c_psi)/dl = e^2 delta^2/(24 pi^2) + O(delta^3)`. This matches the structure that a web-search abstract summary reports for Isobe–Nagaosa, PRB 86, 165127 (2012): "c and v approach the common value with c²v almost unrenormalized". Their explicit coefficients could not be fetched (network blocked), so the coefficients themselves are **not cross-checked against the literature**.
 
 **Independent check (`rg_independent_numeric.py`).** This is a different implementation:
 - explicit 4×4 gamma matrices and a numerical inverse;
@@ -146,6 +155,21 @@ The small-mismatch ratio matches `(alpha_IR/alpha_UV)^3 = 0.78129` to 1e-4.
 ## 8. Reproduction
 
 ```
-python3 scripts/run_all.py          # ~1 min; TOTAL: PASS=48 FAIL=0
+python3 scripts/run_all.py          # ~1 min; TOTAL: PASS=49 FAIL=0
 ```
-Per-runner logs: `logs/witness_supplied_ingredients.log` (10/0), `logs/witness_os0_surface.log` (13/0), `logs/rg_one_loop_analytic.log` (14/0), `logs/rg_independent_numeric.log` (11/0).
+Per-runner logs: `logs/witness_supplied_ingredients.log` (10/0), `logs/witness_os0_surface.log` (14/0), `logs/rg_one_loop_analytic.log` (14/0), `logs/rg_independent_numeric.log` (11/0).
+
+## 9. Review dispositions (`REVIEW.md`)
+
+| Finding | Disposition |
+|---|---|
+| 1a–1c: flows, linearisation, closed form correct (re-derived in Coulomb gauge, fermion frame) | No change needed. The reviewer's Coulomb-gauge result, with its `Z_2` sign anchor, is an independent check of the convention I had flagged as load-bearing. |
+| 1d: name the toy matter content in §0.4 | §0.4 now states U(1) plus one unit-charge Dirac fermion, no thresholds, `alpha(m_e)` imposed at the IR end, and that the real spectrum gives a different O(1) number. |
+| 1e: "at most O(1)" holds only in the perturbative window | §0.5 now reads "O(1) for the declared running". It adds the `alpha_UV ~ 1` bound, about `alpha_IR^((N_f+2)/N_f)` ≈ 4e-7 for `N_f = 1`, which is still about 8 orders short. That number is the reviewer's estimate and was not run in my scripts. |
+| 1f: literature coefficients unverified | No change. The note already says they were not cross-checked. |
+| 1g: "stationary to second order" is ambiguous | Changed to "invariant to first order in `eta - 1`", with the O(δ²) drift stated explicitly. |
+| 2a: the Lattice axiom gives proper rotations only, so the gauge count is 3 (incl. `E.B`) | Stated in §0.1 and §2. Time reflection is marked as an extra assumption, and the conclusion is unaffected. A new runner check confirms the O-only counts (2, 3). |
+| 2b: list the T_tie hypotheses | §2 now lists H0–H4: spinor lift, no B4-charged taste index, Euclidean local action, no symmetry breaking or analyticity. It also notes that `c = a/a_tau` is a units conversion. |
+| 3a/3b: W2 and W1 correct as scoped | §3 now says K_m applies to the *bare* matter action. |
+| 3c: headline conditional on K_m | The title and the §0 closing line now say the result is retired under K_m and holds under K_full via T_tie. The "equivalently" ambiguity is spelled out, and the choice of reading is left to owner or audit. |
+| Typo in §0.2 | Rewritten: "the scale reference carries no dimensionless content". |

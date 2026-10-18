@@ -19,6 +19,8 @@ for n in range(12): w.append(T**n/math.factorial(n)*v[0]); v=A@v
 P=np.array(w)/sum(w); print('exact',np.round(P[:6],4))
 sim=Sim(2,0.0,T,seed=9,cap=64); sim.pr=np.array([0.,0.,0.,1.0])
 h=np.zeros(12)
+for i in range(3000): sim.do_sweep()
+sim.nm_fixed=40
 for i in range(N):
     sim.do_sweep(); n=sim.nkinks()
     if n<12: h[n]+=1

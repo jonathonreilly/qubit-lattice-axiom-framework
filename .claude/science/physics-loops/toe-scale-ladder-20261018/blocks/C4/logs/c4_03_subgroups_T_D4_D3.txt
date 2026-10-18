@@ -54,3 +54,11 @@ PASS D4/full: all 64 solutions symplectic (Laurent check) with det 1
 PASS D4/full: every trace is D4-invariant
   D4  full     dimW= 18 unsigned=    64 signed=    64 on-site=  2 periodic=   64 glider=    0 spreading=     0 | with valid phases: {'periodic': 32, 'glider': 0, 'spreading': 0} glider dirs=[] (102.1s)
 PASS D3/trivial: restriction is a homomorphism on D3
+PASS D3/trivial: all 600 solutions symplectic (Laurent check) with det 1
+PASS D3/trivial: every trace is D3-invariant
+  D3  trivial  dimW= 28 unsigned=   600 signed=  2400 on-site=  6 periodic=  198 glider=   12 spreading=   390 | with valid phases: {'periodic': 198, 'glider': 12, 'spreading': 390} glider dirs=[(1, 1, 1)] (16.4s)
+PASS D3/sign: restriction is a homomorphism on D3
+PASS D3/sign: all 600 solutions symplectic (Laurent check) with det 1
+PASS D3/sign: every trace is D3-invariant
+  D3  sign     dimW= 28 unsigned=   600 signed=   800 on-site=  6 periodic=  198 glider=   12 spreading=   390 | with valid phases: {'periodic': 132, 'glider': 4, 'spreading': 64} glider dirs=[(1, 1, 1)] (16.4s)
+PASS D3/sign-f: restriction is a homomorphism on D3

@@ -434,3 +434,8 @@ Native orientation mixing derived from four winding hops, coefficient607201/1440
 
 
 Exact two-cut reflectionpositivity proves all-positive-plane GLOBALground existence for everyfiniteevenR, positiveJ/lambda. No tiny splitting estimate, newselector or field required. Originalsource preservesplanes, so nativepole can be referencedtoone actualglobalground; uniqueness/preparation notproved. Independentmatrix/parity/finalreviewsPASS; sixEDsigncontrols maxdifference9.24e-14,residual3.36e-12. PrimaryLieb-Schupptraceinequality explicitlyattributed, compasscharacterapplicationderived. Nextroot investigates lightchargedwhole-column matter andnativecoupling, ratherthanassumedexternalheavyprobe.
+
+
+## Charged-column block
+Native charged-column pole complete: exact plane charge, single-column shape minimum, hopping -Jgamma lambda10 and original charged-source weight1-5lambda²/4+O(lambda4). Fixed-p polynomial-grid transfer and finite-pattern source Gram checked. Independent route/source/final review PASS; source-bound replay.089946sPASS. Charge is not electromagnetic and source is not neutral ZZ. Next root derives physical two-column readout residue of the neutral Q4 bound pole, without an added interaction.
+Status: conditional-support; trace: upstream_support; proposal_allowed: false.

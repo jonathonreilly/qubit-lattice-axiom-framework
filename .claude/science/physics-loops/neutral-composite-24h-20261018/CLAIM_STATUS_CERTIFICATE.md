@@ -181,3 +181,8 @@ Isotropic boundfeature: actual_current_surface_status conditional-support; propo
 
 
 Reflection block: actual_current_surface_status exact-support; conditional_surface_status globalgroundexistence for suppliedevencompassH; proposal_allowed false; bare_retained_allowed false; audit_required_before_effective_retained true; localreview pass. Does not establisheverygroundoruniquepreparation.
+
+
+## Charged-column block
+Native charged-column pole complete: exact plane charge, single-column shape minimum, hopping -Jgamma lambda10 and original charged-source weight1-5lambda²/4+O(lambda4). Fixed-p polynomial-grid transfer and finite-pattern source Gram checked. Independent route/source/final review PASS; source-bound replay.089946sPASS. Charge is not electromagnetic and source is not neutral ZZ. Next root derives physical two-column readout residue of the neutral Q4 bound pole, without an added interaction.
+Status: conditional-support; trace: upstream_support; proposal_allowed: false.

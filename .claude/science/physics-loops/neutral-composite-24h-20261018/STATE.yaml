@@ -5,8 +5,8 @@ deadline: 2026-10-19T00:47:35Z
 final_packaging_at: 2026-10-19T00:32:35Z
 checkpoint_interval_minutes: 30
 actual_current_surface_status: bounded-support
-active_route: native slab response density and heavy-probe coupling
-next_action: package response-density theorem and derive native heavy-probe loop coupling
+active_route: physical pair-source coupling to neutral bound mode
+next_action: package charged pole and derive matched physical pair-source residue
 main_at_launch: fa841753c1a6296e5ad45518375660b0f1004769
 prior_campaigns: stopped
 proposal_allowed: false
@@ -71,3 +71,5 @@ checkpoint_history: |
   Native orientation mixing derived from four winding hops, coefficient607201/144000 in unitsgamma4/(2b)^3, negativeoffdiagonal selectsC4evenlower. GlobalQ-relative positivity removesp<2 artificialwallbandwidth restriction for lowenergywindows, notwholeN0band. Actual lowerpole onR~lambda^-5 hasresolved isotropicquadraticincrement(5/2)Jgamma²/D lambda14q² andoriginalsourceweightlambda36. Independentembedding/orientation/finalPASS; replay.435640sPASS. Allstate/geometrylimits explicit. Nextroot exactreflectionpositivity route toglobalgroundsector existence, avoiding exponentiallysmalltunneling estimates.
 
   Exact two-cut reflectionpositivity proves all-positive-plane GLOBALground existence for everyfiniteevenR, positiveJ/lambda. No tiny splitting estimate, newselector or field required. Originalsource preservesplanes, so nativepole can be referencedtoone actualglobalground; uniqueness/preparation notproved. Independentmatrix/parity/finalreviewsPASS; sixEDsigncontrols maxdifference9.24e-14,residual3.36e-12. PrimaryLieb-Schupptraceinequality explicitlyattributed, compasscharacterapplicationderived. Nextroot investigates lightchargedwhole-column matter andnativecoupling, ratherthanassumedexternalheavyprobe.
+
+  Native charged-column pole complete: exact plane charge, single-column shape minimum, hopping -Jgamma lambda10 and original charged-source weight1-5lambda²/4+O(lambda4). Fixed-p polynomial-grid transfer and finite-pattern source Gram checked. Independent route/source/final review PASS; source-bound replay.089946sPASS. Charge is not electromagnetic and source is not neutral ZZ. Next root derives physical two-column readout residue of the neutral Q4 bound pole, without an added interaction.

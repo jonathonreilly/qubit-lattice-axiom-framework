@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/native_charged_column_pole.py
+runner_sha256: 849676546ae0865a30a5ecbb76b45da7aba307b46363f4c670a2a7a0e81d815e
+input_fingerprint_sha256: 88c269fcf09314fa7c1013a41f3bb2037e8d60964f7ca7b181d93ab4b8502874
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"status": "conditional-support", "scope": "Native bond-level source dressing and charged geometry controls; actual-grid transfer analytic; charged source is not neutral ZZ source", "control": {"rows": [{"R": 4, "L": 10, "virtual_states": 320, "amplitude_correction": "-5/8", "weight_correction": "-5/4", "minimum_shapes": [[1, 1, 8]], "next_perimeter": null}, {"R": 8, "L": 10, "virtual_states": 1280, "amplitude_correction": "-5/8", "weight_correction": "-5/4", "minimum_shapes": [[1, 1, 8]], "next_perimeter": 12}, {"R": 12, "L": 10, "virtual_states": 2880, "amplitude_correction": "-5/8", "weight_correction": "-5/4", "minimum_shapes": [[1, 1, 8]], "next_perimeter": 12}], "gamma": "12155/33554432"}}
+
+----- stderr -----
+

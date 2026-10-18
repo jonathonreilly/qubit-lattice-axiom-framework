@@ -181,3 +181,8 @@ Isotropic boundfeature: trace_class upstream_support; source_of_blocker_text use
 
 
 Reflection block: trace_class direct_blocker_closure; target_blocker_text "selected plane sector might be above global ground"; source_of_blocker_text handoff; reachability_to_target closes (existence only); artifact_role theorem; next_trace_action derive actualmatter/scalarcoupling and challenge geometry.
+
+
+## Charged-column block
+Native charged-column pole complete: exact plane charge, single-column shape minimum, hopping -Jgamma lambda10 and original charged-source weight1-5lambda²/4+O(lambda4). Fixed-p polynomial-grid transfer and finite-pattern source Gram checked. Independent route/source/final review PASS; source-bound replay.089946sPASS. Charge is not electromagnetic and source is not neutral ZZ. Next root derives physical two-column readout residue of the neutral Q4 bound pole, without an added interaction.
+Status: conditional-support; trace: upstream_support; proposal_allowed: false.

@@ -1,0 +1,54 @@
+{
+  "status": "conditional-support",
+  "scope": "Native bond-level source dressing and charged geometry controls; actual-grid transfer analytic; charged source is not neutral ZZ source",
+  "control": {
+    "rows": [
+      {
+        "R": 4,
+        "L": 10,
+        "virtual_states": 320,
+        "amplitude_correction": "-5/8",
+        "weight_correction": "-5/4",
+        "minimum_shapes": [
+          [
+            1,
+            1,
+            8
+          ]
+        ],
+        "next_perimeter": null
+      },
+      {
+        "R": 8,
+        "L": 10,
+        "virtual_states": 1280,
+        "amplitude_correction": "-5/8",
+        "weight_correction": "-5/4",
+        "minimum_shapes": [
+          [
+            1,
+            1,
+            8
+          ]
+        ],
+        "next_perimeter": 12
+      },
+      {
+        "R": 12,
+        "L": 10,
+        "virtual_states": 2880,
+        "amplitude_correction": "-5/8",
+        "weight_correction": "-5/4",
+        "minimum_shapes": [
+          [
+            1,
+            1,
+            8
+          ]
+        ],
+        "next_perimeter": 12
+      }
+    ],
+    "gamma": "12155/33554432"
+  }
+}

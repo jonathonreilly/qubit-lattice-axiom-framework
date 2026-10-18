@@ -1,6 +1,6 @@
 {
- "edge_count": 16238,
- "node_count": 7244,
+ "edge_count": 16240,
+ "node_count": 7247,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3897,6 +3897,18 @@
   "commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "common_product_program_attachment_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "d6cab692b93e",
+   "out_degree": 1
+  },
+  "common_product_program_cell_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "common_product_program_chain_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "d6cab692b93e",
+   "out_degree": 1
   },
   "common_source_offset_complete_output_bounded_theorem_note_2026-10-17": {
    "deps_hash": "c92bc1405103",

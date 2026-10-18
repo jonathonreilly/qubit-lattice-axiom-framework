@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "base_revision": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "packet_destination": "outputs/common_product_program_2026_10_18",
+  "source_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934",
+  "status": "Selectively checked conditional cell, attachment and disjoint-chain interfaces; unaudited",
+  "note_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_PROGRAM_CELL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "1a782eff76f8730d1fd4906b70ea0bd000dd58a630bbc3129c4a1e8ebd9389eb",
+      "bytes": 11834
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/ATTACHMENT_NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_PROGRAM_ATTACHMENT_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "2ae125673d13bc1480d33068e65aacf021dd6c12a504f63a07476baeef63a646",
+      "bytes": 11611
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/NETWORK_NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_PROGRAM_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "5efb9be381ed9247c87987751a492eda3ad8a6022989f5e90d3017c0101899d1",
+      "bytes": 15407
+    }
+  ],
+  "files": [
+    {
+      "path": "mediated_common_product_program/PROPOSAL.md",
+      "sha256": "739e99c44feb30f0bdc569d804f0e643ff993ab556056e1b6820f7012a9de088",
+      "destination": "proofs/mediated_common_product_program__PROPOSAL.md",
+      "role": "conditional mathematical source",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_program/PROPOSAL.md",
+      "bytes": 16265
+    },
+    {
+      "path": "mediated_common_product_program_check/REVIEW.md",
+      "sha256": "809a2083527cf942e6a6e879a6211600c9f144938915a43dbcf56d5680858fb6",
+      "destination": "proofs/mediated_common_product_program_check__REVIEW.md",
+      "role": "scoped analytical check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_program_check/REVIEW.md",
+      "bytes": 9716
+    },
+    {
+      "path": "mediated_program_attachment/PROPOSAL.md",
+      "sha256": "55af72a1a334730be95de5427646de29fa7d1d6ebac21d888dc1f231406d9b7a",
+      "destination": "proofs/mediated_program_attachment__PROPOSAL.md",
+      "role": "conditional mathematical source",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_program_attachment/PROPOSAL.md",
+      "bytes": 12985
+    },
+    {
+      "path": "mediated_program_attachment_check/REVIEW.md",
+      "sha256": "48940d210811f4599c16677edde54b6e3b1be8d6715b7a14aa29e5c4b3b440ce",
+      "destination": "proofs/mediated_program_attachment_check__REVIEW.md",
+      "role": "scoped analytical check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_program_attachment_check/REVIEW.md",
+      "bytes": 8354
+    },
+    {
+      "path": "mediated_program_network/PROPOSAL.md",
+      "sha256": "1d830ee1638794876d2a5062f436be9e32b484fef0c79de095aa54d16c0e5edc",
+      "destination": "proofs/mediated_program_network__PROPOSAL.md",
+      "role": "conditional mathematical source",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_program_network/PROPOSAL.md",
+      "bytes": 8955
+    },
+    {
+      "path": "mediated_program_network_check/REVIEW.md",
+      "sha256": "4e6e229f5cbc92321f72bf71289ed8f911c7663773e3731fa0ab54997f22db77",
+      "destination": "proofs/mediated_program_network_check__REVIEW.md",
+      "role": "scoped analytical check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_program_network_check/REVIEW.md",
+      "bytes": 8620
+    },
+    {
+      "path": "mediated_program_attachment/PROPOSAL_v1.md",
+      "sha256": "65355be5c834e18db22da52ae67e67b406cc81c40527071ae5b12920c9235cbb",
+      "destination": "history/attachment_PROPOSAL_v1.md",
+      "role": "historical strict-min correction; not a premise",
+      "proof_dependency": false,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_program_attachment/PROPOSAL_v1.md",
+      "bytes": 12985
+    },
+    {
+      "path": "mediated_program_cell/PROPOSAL.md",
+      "sha256": "0e665329d8034e1bf2dfbbd4cfd918fc7f95451060906562d56fe04e5ff5928d",
+      "destination": "context/mediated_program_cell__PROPOSAL.md",
+      "role": "earlier different program-dependent encoded cell; comparison/context only, its execution evidence not reused",
+      "proof_dependency": false,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_program_cell/PROPOSAL.md",
+      "bytes": 20899
+    },
+    {
+      "path": "mediated_program_cell_check/REVIEW.md",
+      "sha256": "160fcc32d0936a9f090c62a2fab9dfb649ae800353c956df1e101945fdf3a115",
+      "destination": "context/mediated_program_cell_check__REVIEW.md",
+      "role": "earlier different program-dependent encoded cell; comparison/context only, its execution evidence not reused",
+      "proof_dependency": false,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_program_cell_check/REVIEW.md",
+      "bytes": 4248
+    }
+  ],
+  "provenance": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/CELL_INTEGRATION_REVIEW.md",
+      "destination": "provenance/CELL_INTEGRATION_REVIEW.md",
+      "sha256": "79b57dfba6851d22e135b8ecb65b9e0b0bf962e990a6be6d6c047e8fd590cd64",
+      "role": "Source-exposed publication integration, not additional independent science check or retained audit"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/ATTACHMENT_INTEGRATION_REVIEW.md",
+      "destination": "provenance/ATTACHMENT_INTEGRATION_REVIEW.md",
+      "sha256": "acc9dac2da70d8dd63b2ba1d047231db899c4ee4b0eca084a80c9342b752132a",
+      "role": "Source-exposed publication integration, not additional independent science check or retained audit"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/NETWORK_INTEGRATION_REVIEW.md",
+      "destination": "provenance/NETWORK_INTEGRATION_REVIEW.md",
+      "sha256": "0c888198809b12a291c7e3e963524f695c822497abfbe4c51356d4647191562b",
+      "role": "Source-exposed publication integration, not additional independent science check or retained audit"
+    }
+  ],
+  "path_resolution": "Resolve new local source/check paths by their exact destination mapping here. Earlier different encoded cell and its check are context only; their upstream scientific execution and apparatus claims are not premises or reproduced evidence.",
+  "limits": [
+    "All positive block shapes, roles, omitted couplings, exact coefficients, occupation basis and legal replicated program contents remain supplied.",
+    "Common literal endpoint/vacancy injection is approximate, not invariant; full mediator outputs and double-occupation phase retained.",
+    "Attachment requires exact literal-code intertwining. Chain uses disjoint cells and endpoint-only external bonds.",
+    "The prescribed logical Hamiltonian is not identified with the original processor, algorithm or native law.",
+    "No scientific program, symbolic solver, dynamics, numerical point or sweep; no retained audit or science merge.",
+    "Historical strict-min attachment revision and older program-cell context are explicit nonpremises."
+  ]
+}

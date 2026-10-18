@@ -133,3 +133,6 @@ Isotropic collective: actual_current_surface_status bounded-support; proposal_al
 
 
 Large-feature collision: actual_current_surface_status bounded-support; proposal_allowed false; bare_retained_allowed false; review_loop_disposition pass. Conditional microscopicmodel coefficientresult, noexactS/lifetime/empiricalidentification.
+
+
+Fixed-occupation ladder: actual_current_surface_status bounded-support; proposal_allowed false; bare_retained_allowed false; review_loop_disposition pass. FixedM only, inheritedconditionalmicroscopicmodel, nofullCCR/measurementbridge.

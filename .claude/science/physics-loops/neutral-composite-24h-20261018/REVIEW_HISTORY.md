@@ -123,3 +123,6 @@ Isotropic collective: independent quartic leakage, variational ground-weight, ex
 
 
 Large-feature collision: independent arbitrary-complex native Pauli check400cases error6.40e-15 and fullpermanent factorization4.15e-14; independent interval/math checkPASS. FinalreviewPASS after binding both inherited proofs in AUDIT_INPUT_PATHS. Source-bound replay.486582sPASS; graph7293nodes16280edges4980runners andmanifest built. No formalaudit.
+
+
+Fixed-occupation ladder: independentalgebra andphysicalchecksPASS afterexplicitM-dependentcutoff; finalscopedreviewPASS. PreparedspanDuhamelcorollary checked. Source-bound replay.151015sPASS; graph7294nodes16280edges4981runners andmanifestbuilt; vocab0violations. Controlscomparefinitebosonpolynomial devicewithphysicalhardcoreprojection, notfullmicroscopicED.

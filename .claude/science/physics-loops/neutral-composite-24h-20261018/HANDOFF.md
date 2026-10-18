@@ -349,3 +349,7 @@ Native scattering PR9780 OPEN9cb018d746a8248841e70d072a58081296d20eaf; isotropic
 
 
 Large-feature collision complete: root exactnativecontactresidual andcriticalconvolutionlimit give K/u²>2.58914, numericalestimate51.0521. u²~delta log², soactualcoefficientweakenswithgrowth. Independentphysical/math/finalchecksPASS, replay.486582sPASS. NotexactSorlifetime. Nextrootextendsfirsttwoladdervertices toeveryfixedoccupationfromspinstrings, preservinglackofsinglemodeautonomy.
+
+
+## 2026-10-18T13:35:35.347162+00:00 fixed-occupation checkpoint
+PR9782 verified OPEN8805b755540b3889663d93f0162882460bd67c80; attachment cap100 persists. Native large-feature collision numerator/u² strictpositive interval lower2.5891438341 independently checked, replay.498837sPASS after whitespace-only cleanup. Root fixedM ladder extends sqrtm vertices to actualmicroscopic windows, corrected M-dependent raycutoff; preparedspan Duhamel errorlambda/delta. Independentmath/physical/finalreviewPASS, replay.151015s; graphbuildactive18937. Nextroot original-readout fullthresholdspectralmeasure: candidate universal boundatom plus logarithmic continuum, actualHtransfer alpha<1/3 underfocusedchecks. Main584755767d unchanged. Other refreshed nativecompassattachment9780daf andexactgapmediationcbeaccf supply addedoldblock/calibratedgadget; notimported. PR9783 hierarchy762f814 reportsnofixedscaleandopenmasssector; notimported. Noempiricaltests. Deadlineunchanged.

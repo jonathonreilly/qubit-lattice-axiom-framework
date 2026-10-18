@@ -85,3 +85,6 @@ Isotropic block changes only existing J ratios to equality; no added term. Maxsp
 
 
 Large-feature collision keeps suppliedH/regime/reference andmomentumfamily. Full24permanentandCOMnormalizationexplicit. Derivedcontactresidualandstrictpositive scaledlimit use noaddedinteraction. Free outgoingcomparisonisnotexactdistortedstate. Noobservational calibration/test; all exposeddevelopment.
+
+
+Fixed-occupation ladder: suppliedH/regime/state/momentum retainedaspremises. Formalcanonicalsitebosonsareanexactalgebradevice followedbyhardcoreprojection, notaddedphysicalqubits. Mfixedindependentoflambda; intervalcutoffL/(16M). Rootderives adjacentverticesandpreparedfinite-timeevolution; noexactinvariance orsourceclosure. Allmodeldevelopment.

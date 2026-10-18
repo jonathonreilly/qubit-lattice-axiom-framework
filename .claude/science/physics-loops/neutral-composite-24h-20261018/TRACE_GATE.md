@@ -133,3 +133,6 @@ Isotropic collective block: trace_class negative_route_pruning; source_of_blocke
 
 
 Large-feature collision: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Derives native nonzero contact coefficient for arbitrarilylarge neutralfeatures withoutaddinginteraction. ExactfourbodyS, lifetimes andphysicalscalar remainopen.
+
+
+Fixed-occupation ladder: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Derives everyfixedfiniteoccupation square-root sourcevertex andfinite-time harmonicpreparedspan fromonequbitspinstrings andnativeH. Doesnotclose sourceautonomy, stableparticles, finite-densityfield orcosmologicalidentification.

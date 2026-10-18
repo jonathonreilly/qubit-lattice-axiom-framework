@@ -1,0 +1,21 @@
+{
+  "scope": "20site thin torus; matrix-free supplied native compass Hamiltonian, finite-state diagnostic",
+  "row": {
+    "shape": [
+      5,
+      2,
+      2
+    ],
+    "sites": 20,
+    "bond_terms": 60,
+    "solver": "lowest24 Ritz",
+    "ground_energy": -31.218556192893434,
+    "ground_count_found": 2,
+    "ground_residual": 2.3895660386538323e-13,
+    "next_level": -30.856131200499632,
+    "composite_inelastic_weight": 15.28268256191278,
+    "composite_mean": 13.88550118852031,
+    "composite_std": 3.7261103937401736,
+    "ensemble": "equal mixture of computed ground eigenspace, supplied development preparation; degeneracy completeness for sparse solve only diagnostic"
+  }
+}

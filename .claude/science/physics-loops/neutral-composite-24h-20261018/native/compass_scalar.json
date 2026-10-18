@@ -1,0 +1,60 @@
+{
+  "scope": "Supplied native compass K=1,J=D=0; local-energy-square composite; finite anisotropic tori not 3D limit; no scalar or coupling identification",
+  "rows": [
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "sites": 8,
+      "bond_terms": 24,
+      "solver": "full diagonalization",
+      "ground_energy": -13.85640646055102,
+      "ground_count_found": 1,
+      "ground_residual": 8.696303222944518e-15,
+      "next_level": -12.944271909999165,
+      "composite_inelastic_weight": 2.482989002989711e-27,
+      "composite_mean": null,
+      "composite_std": null,
+      "ensemble": "equal mixture of computed ground eigenspace, supplied development preparation; degeneracy completeness for sparse solve only diagnostic",
+      "full_inelastic_lines": []
+    },
+    {
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "sites": 12,
+      "bond_terms": 36,
+      "solver": "lowest24 Ritz",
+      "ground_energy": -18.27964548462394,
+      "ground_count_found": 2,
+      "ground_residual": 3.245688773951257e-14,
+      "next_level": -17.885682419372582,
+      "composite_inelastic_weight": 10.208551629298622,
+      "composite_mean": 15.720712791026065,
+      "composite_std": 1.6810341544003184,
+      "ensemble": "equal mixture of computed ground eigenspace, supplied development preparation; degeneracy completeness for sparse solve only diagnostic"
+    },
+    {
+      "shape": [
+        4,
+        2,
+        2
+      ],
+      "sites": 16,
+      "bond_terms": 48,
+      "solver": "lowest24 Ritz",
+      "ground_energy": -25.524472468770796,
+      "ground_count_found": 1,
+      "ground_residual": 2.165776945423458e-13,
+      "next_level": -25.20180533699616,
+      "composite_inelastic_weight": 60.49001179412636,
+      "composite_mean": 8.322960802408865,
+      "composite_std": 3.84746374754127,
+      "ensemble": "equal mixture of computed ground eigenspace, supplied development preparation; degeneracy completeness for sparse solve only diagnostic"
+    }
+  ]
+}

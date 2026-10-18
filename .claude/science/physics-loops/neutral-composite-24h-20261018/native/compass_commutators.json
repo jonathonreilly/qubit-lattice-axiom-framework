@@ -1,0 +1,48 @@
+{
+  "scope": "Exact Pauli algebra; Hilbert-Schmidt moments are maximally-mixed structure moments, not finite-temperature retarded response or a pole proof",
+  "rows": [
+    {
+      "fourth_moment": 0.0,
+      "squared_frequency_variance": 0.0,
+      "L": 3,
+      "sites": 27,
+      "H_terms": 81,
+      "C_terms": 81,
+      "current_terms": 0,
+      "current_pauli_weights": {},
+      "HS_C_norm_squared": 81,
+      "HS_commutator_norm_squared": 0,
+      "HS_frequency_second_moment": 0.0
+    },
+    {
+      "fourth_moment": 3072.0,
+      "squared_frequency_variance": 2048.0,
+      "L": 4,
+      "sites": 64,
+      "H_terms": 192,
+      "C_terms": 96,
+      "current_terms": 768,
+      "current_pauli_weights": {
+        "3": 768
+      },
+      "HS_C_norm_squared": 384,
+      "HS_commutator_norm_squared": 12288.0,
+      "HS_frequency_second_moment": 32.0
+    },
+    {
+      "fourth_moment": 3072.0,
+      "squared_frequency_variance": 2048.0,
+      "L": 5,
+      "sites": 125,
+      "H_terms": 375,
+      "C_terms": 375,
+      "current_terms": 3000,
+      "current_pauli_weights": {
+        "3": 3000
+      },
+      "HS_C_norm_squared": 375,
+      "HS_commutator_norm_squared": 12000.0,
+      "HS_frequency_second_moment": 32.0
+    }
+  ]
+}

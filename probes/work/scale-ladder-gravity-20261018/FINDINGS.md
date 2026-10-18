@@ -239,3 +239,13 @@ Write omega^2 = k^2 (1 + alpha k^2).
     - content rule: binding energy gravitates and there is no secular drift.
     - Both give a frozen zero-pace region (owner's 'full region = black hole' instinct) once the
       deficit reaches 1: r_h ~ 0.5 q N in lattice units with the linear drain.
+- F36 (Decision 1 discussion, owner ideas 2026-10-18: "lean away from a neighbour's A", and
+  "atomic relations that scale, like Wolfram"; rule1.py, linear response to one record, 3D):
+  - average (weights sum +1): a smooth 1/r falloff, seen by a plain block reading at zoom x2.
+  - anti / lean-away (weights sum -1): the same 1/r envelope with a chessboard sign. A plain block
+    average sees ~0; a chessboard-read block sees the full 1/r. This agrees with the repo's
+    'a chessboard of clocks is invisible' note.
+  - leaky (0.97): exponential screening, so no long-range response.
+  - So Newton needs the rule to pass influence on WITHOUT LOSS, with either sign. "Lossless" is
+    also exactly the condition for a rule's effect to survive zooming out (the owner's 'scale'
+    intuition).

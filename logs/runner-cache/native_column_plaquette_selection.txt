@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/native_column_plaquette_selection.py
+runner_sha256: 04857b08d5e4c188849af5a6ab7c30ea31dddb965e3cf82e68cd5a963de0d7a4
+input_fingerprint_sha256: fc6121e063599009ae3e8280426633f516f0e0dcc1c54f001b7fcca722137c5b
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 53.21
+status: ok
+----- stdout -----
+per_site: one physical qubit; no additional microscopic interaction
+per_mode: generated four-column plaquette sign checked
+per_block: positive parity preferred at fixed finite size and small ratio
+lattice_wide: subsystem degeneracy remains; no continuum or physical scalar
+
+----- stderr -----
+

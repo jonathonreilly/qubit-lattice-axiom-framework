@@ -1,0 +1,615 @@
+{
+  "loops": [
+    {
+      "end": false,
+      "color": 0,
+      "coefficient": "-1/128"
+    },
+    {
+      "end": false,
+      "color": 1,
+      "coefficient": "1/128"
+    },
+    {
+      "end": false,
+      "color": 2,
+      "coefficient": "1/128"
+    },
+    {
+      "end": false,
+      "color": 3,
+      "coefficient": "-1/128"
+    },
+    {
+      "end": false,
+      "color": 4,
+      "coefficient": "1/128"
+    },
+    {
+      "end": false,
+      "color": 5,
+      "coefficient": "-1/128"
+    },
+    {
+      "end": false,
+      "color": 6,
+      "coefficient": "-1/128"
+    },
+    {
+      "end": false,
+      "color": 7,
+      "coefficient": "1/128"
+    },
+    {
+      "end": false,
+      "color": 8,
+      "coefficient": "1/128"
+    },
+    {
+      "end": false,
+      "color": 9,
+      "coefficient": "-1/128"
+    },
+    {
+      "end": false,
+      "color": 10,
+      "coefficient": "-1/128"
+    },
+    {
+      "end": false,
+      "color": 11,
+      "coefficient": "1/128"
+    },
+    {
+      "end": false,
+      "color": 12,
+      "coefficient": "-1/128"
+    },
+    {
+      "end": false,
+      "color": 13,
+      "coefficient": "1/128"
+    },
+    {
+      "end": false,
+      "color": 14,
+      "coefficient": "1/128"
+    },
+    {
+      "end": false,
+      "color": 15,
+      "coefficient": "-1/128"
+    },
+    {
+      "end": true,
+      "color": 0,
+      "coefficient": "-1/16"
+    },
+    {
+      "end": true,
+      "color": 1,
+      "coefficient": "1/16"
+    },
+    {
+      "end": true,
+      "color": 2,
+      "coefficient": "1/16"
+    },
+    {
+      "end": true,
+      "color": 3,
+      "coefficient": "-1/16"
+    },
+    {
+      "end": true,
+      "color": 4,
+      "coefficient": "1/16"
+    },
+    {
+      "end": true,
+      "color": 5,
+      "coefficient": "-1/16"
+    },
+    {
+      "end": true,
+      "color": 6,
+      "coefficient": "-1/16"
+    },
+    {
+      "end": true,
+      "color": 7,
+      "coefficient": "1/16"
+    },
+    {
+      "end": true,
+      "color": 8,
+      "coefficient": "1/16"
+    },
+    {
+      "end": true,
+      "color": 9,
+      "coefficient": "-1/16"
+    },
+    {
+      "end": true,
+      "color": 10,
+      "coefficient": "-1/16"
+    },
+    {
+      "end": true,
+      "color": 11,
+      "coefficient": "1/16"
+    },
+    {
+      "end": true,
+      "color": 12,
+      "coefficient": "-1/16"
+    },
+    {
+      "end": true,
+      "color": 13,
+      "coefficient": "1/16"
+    },
+    {
+      "end": true,
+      "color": 14,
+      "coefficient": "1/16"
+    },
+    {
+      "end": true,
+      "color": 15,
+      "coefficient": "-1/16"
+    }
+  ],
+  "full_fourth_order": [
+    {
+      "L": 5,
+      "color": 0,
+      "parity": 1,
+      "E2": "-7/2",
+      "E4": "-7/192"
+    },
+    {
+      "L": 5,
+      "color": 1,
+      "parity": -1,
+      "E2": "-7/2",
+      "E4": "25/96"
+    },
+    {
+      "L": 5,
+      "color": 2,
+      "parity": -1,
+      "E2": "-7/2",
+      "E4": "25/96"
+    },
+    {
+      "L": 5,
+      "color": 3,
+      "parity": 1,
+      "E2": "-7/2",
+      "E4": "-7/192"
+    },
+    {
+      "L": 5,
+      "color": 4,
+      "parity": -1,
+      "E2": "-7/2",
+      "E4": "25/96"
+    },
+    {
+      "L": 5,
+      "color": 5,
+      "parity": 1,
+      "E2": "-7/2",
+      "E4": "-7/192"
+    },
+    {
+      "L": 5,
+      "color": 6,
+      "parity": 1,
+      "E2": "-7/2",
+      "E4": "-7/192"
+    },
+    {
+      "L": 5,
+      "color": 7,
+      "parity": -1,
+      "E2": "-7/2",
+      "E4": "25/96"
+    },
+    {
+      "L": 5,
+      "color": 8,
+      "parity": -1,
+      "E2": "-7/2",
+      "E4": "25/96"
+    },
+    {
+      "L": 5,
+      "color": 9,
+      "parity": 1,
+      "E2": "-7/2",
+      "E4": "-7/192"
+    },
+    {
+      "L": 5,
+      "color": 10,
+      "parity": 1,
+      "E2": "-7/2",
+      "E4": "-7/192"
+    },
+    {
+      "L": 5,
+      "color": 11,
+      "parity": -1,
+      "E2": "-7/2",
+      "E4": "25/96"
+    },
+    {
+      "L": 5,
+      "color": 12,
+      "parity": 1,
+      "E2": "-7/2",
+      "E4": "-7/192"
+    },
+    {
+      "L": 5,
+      "color": 13,
+      "parity": -1,
+      "E2": "-7/2",
+      "E4": "25/96"
+    },
+    {
+      "L": 5,
+      "color": 14,
+      "parity": -1,
+      "E2": "-7/2",
+      "E4": "25/96"
+    },
+    {
+      "L": 5,
+      "color": 15,
+      "parity": 1,
+      "E2": "-7/2",
+      "E4": "-7/192"
+    },
+    {
+      "L": 6,
+      "color": 0,
+      "parity": 1,
+      "E2": "-4",
+      "E4": "-3/64"
+    },
+    {
+      "L": 6,
+      "color": 1,
+      "parity": -1,
+      "E2": "-4",
+      "E4": "17/64"
+    },
+    {
+      "L": 6,
+      "color": 2,
+      "parity": -1,
+      "E2": "-4",
+      "E4": "17/64"
+    },
+    {
+      "L": 6,
+      "color": 3,
+      "parity": 1,
+      "E2": "-4",
+      "E4": "-3/64"
+    },
+    {
+      "L": 6,
+      "color": 4,
+      "parity": -1,
+      "E2": "-4",
+      "E4": "17/64"
+    },
+    {
+      "L": 6,
+      "color": 5,
+      "parity": 1,
+      "E2": "-4",
+      "E4": "-3/64"
+    },
+    {
+      "L": 6,
+      "color": 6,
+      "parity": 1,
+      "E2": "-4",
+      "E4": "-3/64"
+    },
+    {
+      "L": 6,
+      "color": 7,
+      "parity": -1,
+      "E2": "-4",
+      "E4": "17/64"
+    },
+    {
+      "L": 6,
+      "color": 8,
+      "parity": -1,
+      "E2": "-4",
+      "E4": "17/64"
+    },
+    {
+      "L": 6,
+      "color": 9,
+      "parity": 1,
+      "E2": "-4",
+      "E4": "-3/64"
+    },
+    {
+      "L": 6,
+      "color": 10,
+      "parity": 1,
+      "E2": "-4",
+      "E4": "-3/64"
+    },
+    {
+      "L": 6,
+      "color": 11,
+      "parity": -1,
+      "E2": "-4",
+      "E4": "17/64"
+    },
+    {
+      "L": 6,
+      "color": 12,
+      "parity": 1,
+      "E2": "-4",
+      "E4": "-3/64"
+    },
+    {
+      "L": 6,
+      "color": 13,
+      "parity": -1,
+      "E2": "-4",
+      "E4": "17/64"
+    },
+    {
+      "L": 6,
+      "color": 14,
+      "parity": -1,
+      "E2": "-4",
+      "E4": "17/64"
+    },
+    {
+      "L": 6,
+      "color": 15,
+      "parity": 1,
+      "E2": "-4",
+      "E4": "-3/64"
+    },
+    {
+      "L": 7,
+      "color": 0,
+      "parity": 1,
+      "E2": "-9/2",
+      "E4": "-11/192"
+    },
+    {
+      "L": 7,
+      "color": 1,
+      "parity": -1,
+      "E2": "-9/2",
+      "E4": "13/48"
+    },
+    {
+      "L": 7,
+      "color": 2,
+      "parity": -1,
+      "E2": "-9/2",
+      "E4": "13/48"
+    },
+    {
+      "L": 7,
+      "color": 3,
+      "parity": 1,
+      "E2": "-9/2",
+      "E4": "-11/192"
+    },
+    {
+      "L": 7,
+      "color": 4,
+      "parity": -1,
+      "E2": "-9/2",
+      "E4": "13/48"
+    },
+    {
+      "L": 7,
+      "color": 5,
+      "parity": 1,
+      "E2": "-9/2",
+      "E4": "-11/192"
+    },
+    {
+      "L": 7,
+      "color": 6,
+      "parity": 1,
+      "E2": "-9/2",
+      "E4": "-11/192"
+    },
+    {
+      "L": 7,
+      "color": 7,
+      "parity": -1,
+      "E2": "-9/2",
+      "E4": "13/48"
+    },
+    {
+      "L": 7,
+      "color": 8,
+      "parity": -1,
+      "E2": "-9/2",
+      "E4": "13/48"
+    },
+    {
+      "L": 7,
+      "color": 9,
+      "parity": 1,
+      "E2": "-9/2",
+      "E4": "-11/192"
+    },
+    {
+      "L": 7,
+      "color": 10,
+      "parity": 1,
+      "E2": "-9/2",
+      "E4": "-11/192"
+    },
+    {
+      "L": 7,
+      "color": 11,
+      "parity": -1,
+      "E2": "-9/2",
+      "E4": "13/48"
+    },
+    {
+      "L": 7,
+      "color": 12,
+      "parity": 1,
+      "E2": "-9/2",
+      "E4": "-11/192"
+    },
+    {
+      "L": 7,
+      "color": 13,
+      "parity": -1,
+      "E2": "-9/2",
+      "E4": "13/48"
+    },
+    {
+      "L": 7,
+      "color": 14,
+      "parity": -1,
+      "E2": "-9/2",
+      "E4": "13/48"
+    },
+    {
+      "L": 7,
+      "color": 15,
+      "parity": 1,
+      "E2": "-9/2",
+      "E4": "-11/192"
+    },
+    {
+      "L": 8,
+      "color": 0,
+      "parity": 1,
+      "E2": "-5",
+      "E4": "-13/192"
+    },
+    {
+      "L": 8,
+      "color": 1,
+      "parity": -1,
+      "E2": "-5",
+      "E4": "53/192"
+    },
+    {
+      "L": 8,
+      "color": 2,
+      "parity": -1,
+      "E2": "-5",
+      "E4": "53/192"
+    },
+    {
+      "L": 8,
+      "color": 3,
+      "parity": 1,
+      "E2": "-5",
+      "E4": "-13/192"
+    },
+    {
+      "L": 8,
+      "color": 4,
+      "parity": -1,
+      "E2": "-5",
+      "E4": "53/192"
+    },
+    {
+      "L": 8,
+      "color": 5,
+      "parity": 1,
+      "E2": "-5",
+      "E4": "-13/192"
+    },
+    {
+      "L": 8,
+      "color": 6,
+      "parity": 1,
+      "E2": "-5",
+      "E4": "-13/192"
+    },
+    {
+      "L": 8,
+      "color": 7,
+      "parity": -1,
+      "E2": "-5",
+      "E4": "53/192"
+    },
+    {
+      "L": 8,
+      "color": 8,
+      "parity": -1,
+      "E2": "-5",
+      "E4": "53/192"
+    },
+    {
+      "L": 8,
+      "color": 9,
+      "parity": 1,
+      "E2": "-5",
+      "E4": "-13/192"
+    },
+    {
+      "L": 8,
+      "color": 10,
+      "parity": 1,
+      "E2": "-5",
+      "E4": "-13/192"
+    },
+    {
+      "L": 8,
+      "color": 11,
+      "parity": -1,
+      "E2": "-5",
+      "E4": "53/192"
+    },
+    {
+      "L": 8,
+      "color": 12,
+      "parity": 1,
+      "E2": "-5",
+      "E4": "-13/192"
+    },
+    {
+      "L": 8,
+      "color": 13,
+      "parity": -1,
+      "E2": "-5",
+      "E4": "53/192"
+    },
+    {
+      "L": 8,
+      "color": 14,
+      "parity": -1,
+      "E2": "-5",
+      "E4": "53/192"
+    },
+    {
+      "L": 8,
+      "color": 15,
+      "parity": 1,
+      "E2": "-5",
+      "E4": "-13/192"
+    }
+  ],
+  "scope": "Exact fixed-order coefficients; fixed finite-size small-anisotropy sector selection, not uniform 3D ground theorem"
+}

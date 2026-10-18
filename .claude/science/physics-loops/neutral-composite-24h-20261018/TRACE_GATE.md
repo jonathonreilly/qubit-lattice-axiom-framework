@@ -18,3 +18,6 @@ Zone-boundary block: frontier_discovery; targetuserlargefeaturemode/coupling; su
 
 ## Local normal-form block
 Native integer-wall local filter -> canonical K2 -> symmetry-selected zone mode -> explicit source Gram 4cos^2q -> normalized sine packet -> local dynamical comparison. All numerical inputs are exposed development controls; empirical tests absent.
+
+## Native column plaquette block
+OriginaldirectionalPaulis ->24signedloops ->fullcanonicalK4 ->positiveparitypreference ->source-derivativeCcoefficient ->directnativeCmatrixelements. Exposeddevelopmentonly; noempiricaldataset.

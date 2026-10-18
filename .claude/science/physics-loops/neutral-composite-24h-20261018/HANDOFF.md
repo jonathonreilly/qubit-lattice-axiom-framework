@@ -204,3 +204,6 @@ Root crossoverq=pi-lambda*kappa derivesM; exactthresholdquartic16r4+92r3+39rÂ²âˆ
 
 ## 2026-10-18T05:35:26.452293+00:00 root checkpoint
 Published and attached PR9727 a88e338935dbe8778d317e57667bd995604aed42. New branch codex/neutral-local-normal-form-20261018. Root exact local inversion and canonical K2 check passed with zero matrix discrepancy. Focused check validates few-wall projector bound and explicit decay-loss BCH remainder; finite-packet lower signal remains under derivation. No exact native pole, prepared-state selection or empirical claim. No detached author or active research subprocess.
+
+## 2026-10-18T05:51:20.495973+00:00 root checkpoint
+PR9728 published/attached, head53bde7d0de730cc055fdc612a110eae79bf573e2. Column plaquette selection and originalC coupling now checked; replay53.213425s, scopedreviewPASS. Currentbranch codex/neutral-column-plaquette-20261018 awaitingcitationgraph6749 thenmanifest/publication. Nextrootroute: native sixth-order rectangle interactions compete with pair-column tunneling forL>6. Scratch /private/tmp/neutral_rectangle_six.py/json has exact720paths all64colors; conditional fourdefectstar scratch /private/tmp/neutral_column_four_defect*.py/json must not be promoted as native mode withoutK6. No active scientific subprocess; graphonly.

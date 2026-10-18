@@ -28,3 +28,6 @@ Source-bound replay: four probes passed in 42.737096 seconds; final focused revi
 
 ## Local normal-form block
 Local normal-form replay passed 0.580898 seconds, exact cancellation/K2/vacuum-annihilation errors zero. Focused checks confirmed BCH, 8a_k bound, packet filter, source Gram and fiber after difference-source/cat-wrap/K2 refinements. Astra-low final scoped review PASS; dependency links fixed. Runner first rejected nonliteral input declaration; replaced by literal list and replayed, no science conclusion from tooling failure.
+
+## Native column plaquette block
+Column plaquette/readout source-bound replay passed53.213425 seconds. Exact24-loop signs all16colors and fullcanonicalK4 L5..8 checked; nativeL5/6 λ.1/.2 eigenstate and readout comparisons passed. Independent equations and scoped Astra-low review PASS after fixednonzero transverse-ratio and provenance clarification.

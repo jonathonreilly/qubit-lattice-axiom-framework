@@ -22,3 +22,6 @@ Zone-boundary block: conditional-support forinfiniteMboundmodes/crossover/size-l
 
 ## Local normal-form block
 Conditional bounded bridge: volume-independent local BCH remainder and two-wall coefficient bound; original-source packet filtered correlator has asymptotically visible leading weight 15 lambda^2/4 in the declared dressed state. Not an equilibrium pole or observed scalar.
+
+## Native column plaquette block
+Conditionalfixed-order: generated -K_LΣP, Kopen=(L+14)Jx²Jy²/(128Jz³), and originalC coupling -3(L+13)Jx²Jy²/(128Jz4)ΣP. Fullnativefinitechecks supportboth. No newinteraction, 3Dphase or scalarpoleclaimed.

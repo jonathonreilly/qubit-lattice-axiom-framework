@@ -10,3 +10,6 @@ Zone-boundary block derives existing-readoutcoupling2lambda cosq andlocalK2coeff
 
 ## Local normal-form block
 Finite-order local normal form derives interaction and packet readout from supplied H, but uses small anisotropy, positive rung parity, periodic thin tube and explicitly dressed uniform initial state. No selected ground, useful numerical lambda range, physical detector mapping or exact native pole is supplied.
+
+## Native column plaquette block
+Positive four-column parity is now energetically favored for fixedfiniteL>=5 at sufficiently small common transverse scale with fixednonzero Jx/Jy. This does not supply a uniformsize interval, exactkinematicconstraint or selectedcosmologicalstate. GeneratedplaquettereadoutcommutesleadingplaquetteHamiltonian.

@@ -34,3 +34,7 @@ Supplied compass Hamiltonian, periodic finite geometry, plane/spatial sector and
 
 ### Corrected projected channel
 The native K2/K4 coefficients are derived, but projecting to these channels and completing the long-row K4 formula at ell3 defines a conditional model. Actual full-H remainder, boundary channels, prepared state and physical source identification remain imports/gaps. The range-two Airy coefficient is a prediction, not a certified little-o theorem.
+
+
+### Native loop family
+Only squarefree simple-cycle monomials are summed. Exact coefficients and originalC derivatives retire no Hamiltonian, reference-state or detector premise. The convergentfamilyrangebound excludes repeatededges, selfintersections andmixedlayers; fullnativeforce remainsopen.

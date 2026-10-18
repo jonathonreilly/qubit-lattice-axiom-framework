@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "cycles": [
+    {
+      "n": 4,
+      "color_assignments": 16,
+      "coefficients": {
+        "0": "-5/2",
+        "2": "1/2",
+        "4": "-1/2"
+      }
+    },
+    {
+      "n": 6,
+      "color_assignments": 64,
+      "coefficients": {
+        "0": "-63/8",
+        "2": "7/8",
+        "4": "-3/8",
+        "6": "3/8"
+      }
+    },
+    {
+      "n": 8,
+      "color_assignments": 256,
+      "coefficients": {
+        "0": "-429/16",
+        "2": "33/16",
+        "4": "-9/16",
+        "6": "5/16",
+        "8": "-5/16"
+      }
+    }
+  ],
+  "rectangles": [
+    {
+      "width": 1,
+      "coefficient": "-1/2",
+      "bulk_K": "1/128"
+    },
+    {
+      "width": 2,
+      "coefficient": "-3/8",
+      "bulk_K": "3/8192"
+    },
+    {
+      "width": 3,
+      "coefficient": "-9/16",
+      "bulk_K": "9/262144"
+    },
+    {
+      "width": 4,
+      "coefficient": "-143/128",
+      "bulk_K": "143/33554432"
+    },
+    {
+      "width": 5,
+      "coefficient": "-663/256",
+      "bulk_K": "663/1073741824"
+    },
+    {
+      "width": 6,
+      "coefficient": "-6783/1024",
+      "bulk_K": "6783/68719476736"
+    },
+    {
+      "width": 7,
+      "coefficient": "-37145/2048",
+      "bulk_K": "37145/2199023255552"
+    }
+  ],
+  "reference_and_source_checks": 592,
+  "scope": "Distinct-edge formal coefficients and source derivatives only; full-H remainder and empirical identification open"
+}

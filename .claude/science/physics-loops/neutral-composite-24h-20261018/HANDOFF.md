@@ -342,3 +342,10 @@ Native scattering block complete: exact constituent T, native bound scale and lo
 
 
 Isotropic collective block: root exact leakageoperator and native entangled trial imply every ground has O(1/N) maximal-spin weight in growingeven-xfamily. First internalchannel exactlySmax-2 with cosky-coskx formfactor; IRdiagnostic kappa7, notscalar dispersion. Independent/finalchecksPASS; replay.550913s. Otherstructuredfeaturesopen. Rootnext native fourbodyon-shellcontactkernel atTjunctionanchor; directgeometricnumeratornonzero, focusedphysical/mathchecksactive. No exactS orlifetimeclaimed.
+
+
+## 2026-10-18T13:16:42.189541+00:00 collision checkpoint
+Native scattering PR9780 OPEN9cb018d746a8248841e70d072a58081296d20eaf; isotropic collective PR9781 OPEN85a0fcd9eae369981593d8b47b146df3063096f6. Attachments blocked by existing100 cap. Scattering and isotropic blocks independently checked/reviewPASS, replay9.139095s/.550913s. Uniform maximal-spin ground weight vanishes; structured features remain open. Root exact fourbody anchor contact kernel (309-513sqrt2)/7 independently checked by native physical bit action710 outputs max5.33e-15; not exactS/lifetime. Root nearthreshold large-feature extension derives candidate kernel/u² limit51.052 and analytic positive lowerbound2.589 via bounded convolution; focused checks next. No empirical fit/test, all exposed modeldevelopment. No owned numerical jobs or conflicting authors found. Fixed deadline unchanged.
+
+
+Large-feature collision complete: root exactnativecontactresidual andcriticalconvolutionlimit give K/u²>2.58914, numericalestimate51.0521. u²~delta log², soactualcoefficientweakenswithgrowth. Independentphysical/math/finalchecksPASS, replay.486582sPASS. NotexactSorlifetime. Nextrootextendsfirsttwoladdervertices toeveryfixedoccupationfromspinstrings, preservinglackofsinglemodeautonomy.

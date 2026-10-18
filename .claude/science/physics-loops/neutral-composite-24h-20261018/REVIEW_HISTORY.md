@@ -120,3 +120,6 @@ Native scattering: independent retarded finite-rank/threshold/optical check PASS
 
 
 Isotropic collective: independent quartic leakage, variational ground-weight, exact Smax-2 channel and infrared checks PASS. Final scoped review PASS after explicit even-x ground family and mesh/cutoff symmetry qualifications. Source-bound replay .550913s PASS; exact27-site low-Dicke actions, no full physical ED.
+
+
+Large-feature collision: independent arbitrary-complex native Pauli check400cases error6.40e-15 and fullpermanent factorization4.15e-14; independent interval/math checkPASS. FinalreviewPASS after binding both inherited proofs in AUDIT_INPUT_PATHS. Source-bound replay.486582sPASS; graph7293nodes16280edges4980runners andmanifest built. No formalaudit.

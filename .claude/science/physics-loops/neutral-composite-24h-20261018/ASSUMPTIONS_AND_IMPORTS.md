@@ -82,3 +82,6 @@ Native scattering preserves supplied H/regime/momentum and prepared packet premi
 
 
 Isotropic block changes only existing J ratios to equality; no added term. Maxspinprojection is tested and fails as protectedgrounddescription; dimerstate is variational not assertedphase. Oitmaa/Hamer arXiv1010.3804 abstract verified as prior quantumcompass thermodynamic context only; nofiniteTclaimimported as groundtheorem. Allcontrolsdevelopment, noobservations.
+
+
+Large-feature collision keeps suppliedH/regime/reference andmomentumfamily. Full24permanentandCOMnormalizationexplicit. Derivedcontactresidualandstrictpositive scaledlimit use noaddedinteraction. Free outgoingcomparisonisnotexactdistortedstate. Noobservational calibration/test; all exposeddevelopment.

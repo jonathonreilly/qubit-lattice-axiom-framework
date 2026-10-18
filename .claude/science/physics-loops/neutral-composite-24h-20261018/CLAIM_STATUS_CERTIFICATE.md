@@ -130,3 +130,6 @@ Native scattering: actual_current_surface_status bounded-support; proposal_allow
 
 
 Isotropic collective: actual_current_surface_status bounded-support; proposal_allowed false; bare_retained_allowed false; review_loop_disposition pass. Exact specified-sector boundary conditional on native isotropic H; no general large-feature or ground-phase no-go.
+
+
+Large-feature collision: actual_current_surface_status bounded-support; proposal_allowed false; bare_retained_allowed false; review_loop_disposition pass. Conditional microscopicmodel coefficientresult, noexactS/lifetime/empiricalidentification.

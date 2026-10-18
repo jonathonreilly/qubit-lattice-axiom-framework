@@ -38,3 +38,7 @@ The native K2/K4 coefficients are derived, but projecting to these channels and 
 
 ### Native loop family
 Only squarefree simple-cycle monomials are summed. Exact coefficients and originalC derivatives retire no Hamiltonian, reference-state or detector premise. The convergentfamilyrangebound excludes repeatededges, selfintersections andmixedlayers; fullnativeforce remainsopen.
+
+
+### Actual normal-form remainder
+Fixed-order actual local remainder existence is now proved, with nonexplicit order-dependent constants and sufficiently smalllambda. This does not replace unknown high-order effective dynamics with D4. Exact originalC source tails are controlled for finite packets, while physical initial state and detector mapping remain unselected.

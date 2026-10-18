@@ -58,7 +58,7 @@ Write the two coefficients separately, `K₁` on the `u R₁` term and `K₂` on
   - Site frame (block 62's own placement): the corners see `ηhη` (mixed off-diagonals flip sign); 2 of 8 species see `δ + a_R h`.
   - One-step bond coupling (block 64): `sym(hη)`; 1 of 8 species.
   - `ΛR(0) = 1` is `a_R = 1`, so `a_s = 1`. It holds at `q = 0` only, as block 120 states.
-- **Status of `a_s = 1`.** Block 120's compatibility condition is homogeneous of degree 1 in `R`, so `ΛR(0) = 1` is a normalisation clause, not a consequence. `a_s = 1` therefore defines what `h` means. It selects the `Φ_ρ` representative; it is not derived. The invariant content is the statement `K₁/K₂ = γ_walker`.
+- **Status of `a_s = 1`.** Block 120's compatibility condition is homogeneous of degree 1 in `R`, so `ΛR(0) = 1` is a normalisation clause, not a consequence. `a_s = 1` therefore defines what `h` means. It selects the `Φ_ρ` representative; it is not derived. The invariant content is that, in this representative, `K₁/K₂` equals the invariant `γ = a_sK₁/K₂` of the walker.
 - **The lapse identity.** With separate coefficients and a source `(a_s/2)ΣΘh`, the member at `β = −α` demands
   `ë_u = −(K₁a_s/(4α)) p·Θ·p`,
   with no `K₂`, no `h` and no `u` dependence; for generic `β` trace terms survive. The walker's exact identity (09-25 notes) is `ë = −w̄² p·Θ·p`. With `w̄ = 1` the match is `K₁a_s = 4α`. So "`α = K/4`" in the source-link note (block 134) and the exact-lattice note means `K₁ = 4α` at `a_s = 1`.

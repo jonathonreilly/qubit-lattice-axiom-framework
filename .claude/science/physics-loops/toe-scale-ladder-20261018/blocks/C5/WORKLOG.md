@@ -61,3 +61,5 @@
 - Final logs: s1 19/0, s2 10/0, s3 27/0, s4 17/0, s4c 2/0, s4d 2/0, s5 6/0 (superseded/stopped logs kept).
 - Outcome: obstruction theorem (Theorem K, conditional on SK_1(C[Z^3]) = 0), sharp witness V_M
   (O-covariant analytic, infinite range, W3 = -1/+2). Load-bearing: K step 2.
+
+## 23:12 UTC — review dispositions applied to NOTE.md (REVIEW.md §7): scope (total W3), coefficient 1, N hypotheses, cf. Dubail–Read, defect numbers 1.99e-6/1.63e-6, second proof cited, provenance + status line.

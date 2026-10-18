@@ -70,3 +70,44 @@ PASS [numerical] iso chi=pi/2 (maximal twist): constant identification O(a) (slo
 PASS [numerical] gold chi=0.00: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.051)
 PASS [numerical] gold chi=0.00: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
 PASS [numerical] gold chi=0.00: |W| = 0, convergence is O(a^2) (slope 2.00)
+   gold chi=1.571: max_p ||U^n - e^(-itH_D)|| = [9.85823108e-04 2.45693243e-04 6.13350333e-05 1.53231604e-05] slope 2.002; with p-dependent chiral rotation: [9.85823108e-04 2.45693243e-04 6.13350333e-05 1.53231604e-05] slope 2.002; C3 estimates [0.0509 0.0509 0.0509 0.0509]
+PASS [numerical] gold chi=1.57: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.051)
+PASS [numerical] gold chi=1.57: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
+PASS [numerical] gold chi=1.57: |W| = 0, convergence is O(a^2) (slope 2.00)
+   floor-term example: a=0.01, t=1.006: error 6.5889e-03 vs a*E = 1.0569e-02
+PASS [numerical] floor term: with t/a non-integer the error includes (t - na) E <= a E (example within bound)
+--- massive dispersion: E_a^2 a^2 = omega^2 fitted in eps for (k, theta) = eps (n, mu)
+PASS [numerical] bstar chi=0.00: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS [numerical] bstar chi=1.57: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS [numerical] bstar chi=1.00: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS [numerical] iso chi=0.00: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS [numerical] iso chi=1.57: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS [numerical] iso chi=1.00: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS [numerical] gold chi=0.00: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS [numerical] gold chi=1.57: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS [numerical] gold chi=1.00: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+   b_iso sextic coefficient along axis: measured -0.00102880658436, parent formula 0.0022633744856, with |k|^6 coefficient 1/1215 -0.00102880658436
+PASS [numerical] b_iso axis: the omega^2 sextic coefficient matches |k|^6 coefficient 1/1215 (not the parent 1/243)
+   b_iso sextic coefficient along diag: measured 5.05253504872e-5, parent formula 0.00334270642045, with |k|^6 coefficient 1/1215 5.05253504872e-5
+PASS [numerical] b_iso diag: the omega^2 sextic coefficient matches |k|^6 coefficient 1/1215 (not the parent 1/243)
+--- Poincare defects on |p| <= 2, m = 1
+   bstar chi=0.00: |1/2 grad E_a^2 - s^2 p| [0.01527327 0.00751941 0.00373045] (slope 1.02); (1/4)||[d1H,d2H] - continuum|| [0.00697109 0.00343412 0.00170426] (slope 1.02); rotation defect [1.98792992e-05 4.97018166e-06 1.24256755e-06] (slope 2.00)
+PASS [numerical] bstar chi=0.00: [K,H] defect scales as a^1 (slope 1.02); [K1,K2] spin-part defect O(a) (slope 1.02); continuous-rotation defect O(a^2) (slope 2.00)
+   bstar chi=1.57: |1/2 grad E_a^2 - s^2 p| [4.65111399e-04 1.16554212e-04 2.91734062e-05] (slope 2.00); (1/4)||[d1H,d2H] - continuum|| [0.00677079 0.00338361 0.00169158] (slope 1.00); rotation defect [1.98793451e-05 4.97018312e-06 1.24256768e-06] (slope 2.00)
+PASS [numerical] bstar chi=1.57: [K,H] defect scales as a^2 (slope 2.00); [K1,K2] spin-part defect O(a) (slope 1.00); continuous-rotation defect O(a^2) (slope 2.00)
+   iso chi=0.00: |1/2 grad E_a^2 - s^2 p| [0.01915411 0.00950237 0.00473259] (slope 1.01); (1/4)||[d1H,d2H] - continuum|| [0.00784058 0.0038837  0.00193274] (slope 1.01); rotation defect [5.71502333e-07 7.14322293e-08 8.92887173e-09] (slope 3.00)
+PASS [numerical] iso chi=0.00: [K,H] defect scales as a^1 (slope 1.01); [K1,K2] spin-part defect O(a) (slope 1.01); continuous-rotation defect O(a^3) (slope 3.00)
+   iso chi=1.57: |1/2 grad E_a^2 - s^2 p| [2.96326209e-04 7.40759613e-05 1.85187679e-05] (slope 2.00); (1/4)||[d1H,d2H] - continuum|| [0.00769739 0.00384767 0.00192371] (slope 1.00); rotation defect [5.71542162e-07 7.14334444e-08 8.92889894e-09] (slope 3.00)
+PASS [numerical] iso chi=1.57: [K,H] defect scales as a^2 (slope 2.00); [K1,K2] spin-part defect O(a) (slope 1.00); continuous-rotation defect O(a^3) (slope 3.00)
+   gold chi=0.00: |1/2 grad E_a^2 - s^2 p| [4.73514292e-04 1.18361224e-04 2.95886610e-05] (slope 2.00); (1/4)||[d1H,d2H] - continuum|| [2.70834284e-04 6.76875441e-05 1.69199519e-05] (slope 2.00); rotation defect [2.19380780e-05 5.48476006e-06 1.37120507e-06] (slope 2.00)
+PASS [numerical] gold chi=0.00: all three defects O(a^2) (slopes 2.00, 2.00, 2.00)
+   gold chi=1.57: |1/2 grad E_a^2 - s^2 p| [4.75879669e-04 1.18656782e-04 2.96255744e-05] (slope 2.00); (1/4)||[d1H,d2H] - continuum|| [2.70782799e-04 6.76801719e-05 1.69192757e-05] (slope 2.00); rotation defect [2.19380523e-05 5.48475926e-06 1.37120512e-06] (slope 2.00)
+PASS [numerical] gold chi=1.57: all three defects O(a^2) (slopes 2.00, 2.00, 2.00)
+--- Gaussian packet: lattice-momentum weight at |k_a| >= pi/2 (1D factor), FFT vs erfc
+   Sigma/a = 1.0: weight 1.689e-03, erfc(kappa sqrt2 Sigma/a) = 1.680e-03
+PASS [numerical] Sigma/a=1.0: doubler-region weight equals the Gaussian tail erfc(pi Sigma/(sqrt2 a)) to 5%
+   Sigma/a = 1.5: weight 2.476e-06, erfc(kappa sqrt2 Sigma/a) = 2.448e-06
+PASS [numerical] Sigma/a=1.5: doubler-region weight equals the Gaussian tail erfc(pi Sigma/(sqrt2 a)) to 5%
+   Sigma/a = 2.0: weight 3.383e-10, erfc(kappa sqrt2 Sigma/a) = 3.317e-10
+PASS [numerical] Sigma/a=2.0: doubler-region weight equals the Gaussian tail erfc(pi Sigma/(sqrt2 a)) to 5%
+TOTAL: PASS=70 FAIL=0

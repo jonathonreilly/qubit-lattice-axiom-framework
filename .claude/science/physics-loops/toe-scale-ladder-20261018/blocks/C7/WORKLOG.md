@@ -50,3 +50,4 @@
   - logs/runner-cache entry regenerated via runner_cache.execute_and_write_cache
     (status fresh).
 - Full run_all re-run follows.
+- run_all (full rerun after review fixes): TOTAL: PASS=107 FAIL=0

@@ -45,3 +45,12 @@
   min|det| 0.993; PASS=2. Consistent with K + compactness (eps_1 <~ 6e-3, upper bound only).
 - s4b (r=2): defect 6.8e-5 (w=3e3), 1.3e-5 (3e4), 3.9e-6 (3e5), 3.5e-6 (3e6): flattening; sup||U-V_2||
   rising 0.34 -> 0.55. Pure LM stage pending. eps_2 is small but the run so far shows no approach to 0.
+
+## 22:02 UTC
+- s4b stopped by me during its slow LM stage (background time limit); penalty-stage log renamed
+  logs/s4b_defect_floor_penalty_stage_stopped_in_pure_stage.log; params saved. s4d continues from them:
+  defect 3.3e-6 -> 1.82e-6 (last stage step 1.85e-6 -> 1.82e-6), W3 = -1, min|det| = 1.000. PASS=2.
+  eps_2 <~ 2e-6: numerics cannot distinguish a floor of this size from 0; positivity rests on K. Flagged.
+- s5: four generic exact range-1 one-qubit unitaries (27 nonzero hops, unitary 1e-15, moving) all W3 = 0.
+  r = 2 and n = 4 trials running.
+- NOTE.md updated (Corollary D numbers, evidence table, disclosure of falsified optimizer prediction).

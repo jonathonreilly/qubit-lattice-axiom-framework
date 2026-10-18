@@ -1,6 +1,6 @@
 # C4b findings: does closure with the walker as matter force K1 = K2?
 
-Provenance: a worker of the same model family; not yet checked. Saved by the supervisor from the hand-back.
+Provenance: a worker of the same model family. Proof-critically checked by a fresh-context same-family agent (`../C4b_check/REPORT.md`, 23/0 plus an audit of C4b's solves): confirmed, and its corrections are applied below. Saved by the supervisor from the hand-back.
 
 | Runner | Method | Result |
 |---|---|---|
@@ -11,9 +11,10 @@ Two earlier failing runs are kept:
 - run1: an expectation bug in A1;
 - run2: a harness bug in D2, plus an F1 expectation that turned out to be a physics result.
 
-**Answer: yes, within the stated premises.**
-- With the walker's a_s = 1 (from C4), closure forces λ1 = ν (r = 1) and hence **K2 = K1**.
-- **New:** the walker as written is not locally rotation covariant. It lacks the axial spin-connection term ¼·N·T(E)·n, and without it the walker fails closure at the next order. This does not affect the K1 = K2 result.
+**Answer (as corrected by the check).**
+- **Invariant result.** Closure with the walker forces γ = a_s K1/K2 = 1. In block-62 variables, where a_s = 1 by definition, this is **K1 = K2**. It is B21's equivalence (d), unit matter coupling ⇔ r = 1, realised for the spinor walker.
+- **Speed and α.** With the walker's speed 1 fixed, closure puts both the walker's cone and the TT cone at that speed and forces α = K2/4. With a_s = 1 this is block 62's α = K/4 with a single K. Block 62 T4 said "nothing here forces that value"; within these premises, closure does.
+- **Rotation covariance.** The walker as written is not locally rotation covariant. It lacks ¼·N·T(E)·n, the totally antisymmetric part of the Levi-Civita spin connection. Without it, closure fails at the next order. This is already in the repo: block 65, the blind-walk note, has the first-order lattice version, and the 09-13 native-Weyl note uses the full covariant operator. The missing piece is the second-order symmetric-section term.
 
 ## Setup
 
@@ -31,14 +32,14 @@ Two earlier failing runs are kept:
 - **A1b.** The isotropic solution space is exactly 3-dimensional: λ_f × (Kosmann + the walker's coupling), s2, and a trivial phase.
 - **A1a.** In a fully general ansatz the null space is 29-dimensional: 24 field redefinitions, λ_f, s2, and 3 stress-free phase directions.
 - **C1.** {G, G} at ψ̄ψ forces λ_f ∈ {0, ν}, and λ_f = 0 needs a_s = 0. G_f^(1) is forced, with 5 directions free.
-- **C2.** The Kosmann non-closure (the spin-½ note's Result 4) is absorbed by the connection terms. So the metric route closes {G, G} without a triad.
+- **C2.** The Kosmann non-closure (the spin-½ note's Result 4) is absorbed by the connection terms. So the metric route closes {G, G} without a triad. This agrees with the 09-13 native-Weyl note's P7/P13, and the spin-½ note's Result 4 has been corrected accordingly.
 - **B1 (main result).** Fix a_s = 1 and λ_f = ν. Combining gravity's h-linear {C, G} with the walker's {C, G} has the unique solution λ1 = ν, **K2 = K1**, s1 = −ν, s2 = 0.
 - **B2.** With a_s free, λ1 = ν/a_s and K2 = a_s K1. So a_s = K2/K1, and a_s = 1 ⇔ K1 = K2.
 - **D1.** {C, C} gives b = −½ and v² = a_s K1/(4α). With B1 this is v² = K1/(4α) = K2/(4α), the TT cone. **D3:** {C, C} at P·ψ̄ψ is identically zero.
 - **E1.** {G, C} at P·ψ̄ψ forces kin_X ≠ 0, a P·h·s term with coefficient ν²/(32αλ1²).
 - **E2** (second route, using C1's G_f^(1)). a_s = ν/λ1, and β = −a_s.
 - **G1** (operator route agrees). On E = 1 + A with A antisymmetric, the walker equals a spin rotation plus ½∫N(∂·θ)n. **The walker is not locally rotation covariant.**
-- **G2.** With T = ε_abc E_a^j E_b^k ∂_j e_ck, walker + c_ax N T n is rotation covariant iff c_ax = ¼. This is the totally antisymmetric spin-connection (axial torsion) piece.
+- **G2.** With T = ε_abc E_a^j E_b^k ∂_j e_ck, walker + c_ax N T n is rotation covariant iff c_ax = ¼. This is the totally antisymmetric part of the Levi-Civita spin connection. It is not torsion; in Hehl–Datta terms it is the same algebra.
 - **G3.** In the symmetric frame T = 0 at first order, so every result above holds; at second order T ≠ 0.
 - **G4** (triad route). Closure at ψ̄ψ iff λ_E = λ_f with a plain Lie derivative. Then λ1 = λ_E, so a_s = 1 directly.
 - **F1.** The bare walker's O(h²) coupling has no solution at h·ψ̄ψ, at r = 1 or r = 2.
@@ -77,7 +78,7 @@ The rotation constraint matters in the triad route (G1, G2), not in the metric r
 - The connection terms match the 09-13 note's only in size.
 - The F results are witnesses at r = 1 and 2.
 - The solves assume positive constants.
-- **Lattice (remark only):** exact closure is impossible (C3). The walker is a step, and its frame coupling matches only at q = 0. No lattice axial term was constructed.
+- **Lattice (remark only):** exact continuum-spectrum closure is impossible (C3). The walker is a step, and its frame coupling matches only at q = 0. Block 65 has the first-order lattice axial term about the identity frame; the second-order symmetric-section term has none.
 
 ## Prior art
 

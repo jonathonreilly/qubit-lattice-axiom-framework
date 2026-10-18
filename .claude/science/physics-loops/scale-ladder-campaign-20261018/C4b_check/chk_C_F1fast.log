@@ -1,0 +1,10 @@
+   own isotropic h-linear relabelling candidates: 33
+   per-candidate brackets done
+   F1'' bare r=1: 3582 equations, rank 17, augmented rank 18
+   F1'' cov r=1: 3582 equations, rank 17, augmented rank 17
+PASS: F1'' [296s] bare walker: NO correction dG in the full own isotropic h-linear basis (33 terms, not constrained by {G,G}) closes {C,G} at h chi chi (inconsistent system); covariant: consistent: {'bare r=1': (17, 18), 'cov r=1': (17, 17)}
+TOTAL: PASS=1 FAIL=0  (296s)
+
+real	4m59.425s
+user	4m51.737s
+sys	0m1.028s

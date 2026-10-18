@@ -1,0 +1,67 @@
+   B24 ('S2', 'p', 'S', 'o') ('P2', 'L200') bcc(32) pmax 3 N 32 |D| 2 index 2
+   RAND ('S2', 'o', 'S2', 'o', 'S', 'o', 'S2i', 'o') ('L132', 'L012', 'H30', 'L023') bcc(32) pmax 3 N 64 |D| 2 index 2
+   B20R ('S2', 'o', 'S2', 'o') ('H32', 'L233') bcc(16) pmax 3 N 32 |D| 16 index 16
+   B24 ('S4', 'p', 'S', 'o') ('P4', 'L022') bcc(32) pmax 3 N 32 |D| 2 index 2
+   ALIGN ('S4', 'p', 'S', 'o', 'S4', 'q', 'S', 'o') ('P9', 'H00', 'P2', 'L222') sc(16) pmax 3 N 64 |D| 8 index 8
+   B20R ('S2', 'o') ('L201',) bcc(16) pmax 3 N 32 |D| 16 index 16
+   B20R ('S', 'S', 'R', 'o') ('L131',) sc(32) pmax 3 N 32 |D| 1 index 1
+   RAND ('S4i', 'o', 'S4i', 'o', 'S', 'o') ('L000', 'P8', 'L222') bcc(32) pmax 3 N 64 |D| 2 index 2
+   B24 ('S4', 'p', 'S2', 'q', 'S2', 'o') ('P4', 'P9', 'L332') sc(8) pmax 3 N 64 |D| 64 index 64
+   B20R ('S', 'R', 'S', 'R', 'o') ('L130',) bcc(32) pmax 3 N 32 |D| 2 index 2
+   B24 ('S2', 'p', 'Si', 'o') ('P1', 'L032') bcc(32) pmax 3 N 32 |D| 2 index 2
+   PI6 ('S', 'o') ('L11.4.2',) bcc(32) pmax 3 N 32 |D| 2 index 2
+   B20R ('S2', 'o') ('L301',) bcc(16) pmax 3 N 32 |D| 16 index 16
+   RAND ('S4', 'o', 'S2i', 'o', 'S4i', 'o', 'S4i', 'o') ('L113', 'H10', 'L300', 'L123') bcc(16) pmax 2 N 64 |D| 16 index 16
+   B24 ('S2', 'p', 'S2', 'o') ('P3', 'L322') sc(8) pmax 3 N 32 |D| 64 index 64
+   B24 ('S', 'o', 'S2', 'o') ('L220', 'H23') bcc(32) pmax 3 N 32 |D| 2 index 2
+   B20R ('S', 'o', 'R') ('L103',) sc(32) pmax 3 N 32 |D| 1 index 1
+   B20R ('S', 'R', 'S', 'o') ('L002',) sc(32) pmax 3 N 32 |D| 1 index 1
+   B24 ('S2', 'p', 'S4i', 'o') ('P1', 'P2') bcc(16) pmax 3 N 64 |D| 16 index 16
+   B24 ('S4', 'p', 'S2', 'o') ('P4', 'H20') bcc(16) pmax 3 N 64 |D| 16 index 16
+   B20R ('S', 'S', 'R', 'o') ('L120',) sc(32) pmax 3 N 32 |D| 1 index 1
+   B24 ('S', 'o', 'S4', 'o') ('L330', 'L222') bcc(32) pmax 3 N 32 |D| 2 index 2
+   B20R ('S', 'R', 'S', 'R', 'o') ('L322',) bcc(32) pmax 3 N 32 |D| 2 index 2
+   B24 ('S2', 'p', 'S4', 'q', 'S2', 'o') ('P11', 'P5', 'L130') sc(8) pmax 3 N 64 |D| 64 index 64
+   B24 ('S4', 'p', 'S2', 'o') ('P7', 'L203') bcc(16) pmax 3 N 64 |D| 16 index 16
+   B20R ('S', 'S', 'R', 'o') ('L322',) sc(32) pmax 3 N 32 |D| 1 index 1
+   RAND ('Si', 'o', 'S', 'o', 'S2i', 'o', 'S2i', 'o') ('P10', 'H30', 'H01', 'L030') sc(16) pmax 3 N 64 |D| 8 index 8
+   B24 ('S4', 'p', 'S4', 'q', 'S4', 'o') ('P2', 'P3', 'L230') bcc(8) pmax 2 N 64 |D| 128 index 128
+   B20R ('S', 'o', 'R', 'o') ('H32', 'L322') sc(32) pmax 3 N 32 |D| 1 index 1
+   RAND ('S2', 'o', 'R', 'o', 'S4', 'o', 'S4', 'o') ('L111', 'L131', 'L320', 'L131') sc(32) pmax 2 N 64 |D| 1 index 1
+   B24 ('S', 'o', 'S2i', 'o') ('L122', 'H32') bcc(32) pmax 3 N 32 |D| 2 index 2
+   ALIGN ('S2i', 'p', 'S4i', 'o', 'S2i', 'q', 'S4i', 'o') ('P5', 'L220', 'P7', 'H33') bcc(16) pmax 2 N 64 |D| 16 index 16
+   PI6 ('S2', 'o') ('L0.8.7',) bcc(16) pmax 3 N 32 |D| 16 index 16
+   B20R ('S', 'S', 'R', 'o') ('L032',) sc(32) pmax 3 N 32 |D| 1 index 1
+   PI6 ('S', 'o') ('L9.7.11',) bcc(32) pmax 3 N 32 |D| 2 index 2
+   PI6 ('S', 'o') ('L2.2.11',) bcc(32) pmax 3 N 32 |D| 2 index 2
+   B24 ('S2', 'p', 'S4', 'o') ('P7', 'H00') bcc(16) pmax 3 N 64 |D| 16 index 432
+   B20R ('S2', 'o') ('L033',) bcc(16) pmax 3 N 32 |D| 16 index 16
+   RAND ('S', 'o', 'S', 'o', 'Si', 'o', 'S4', 'o') ('P10', 'P3', 'L313', 'L100') bcc(32) pmax 3 N 64 |D| 2 index 2
+   B24 ('S', 'o', 'S2i', 'o') ('P7', 'L032') bcc(32) pmax 3 N 32 |D| 2 index 2
+   B20R ('S2', 'o') ('L321',) bcc(16) pmax 3 N 32 |D| 16 index 16
+   B24 ('S4', 'p', 'S4', 'q', 'S4', 'o') ('P4', 'L303', 'P7') bcc(8) pmax 2 N 64 |D| 128 index 128
+   RAND ('S2', 'o', 'S4i', 'o', 'S2i', 'o', 'S2i', 'o') ('L220', 'L003', 'L123', 'L110') bcc(16) pmax 3 N 64 |D| 16 index 16
+   B20R ('S', 'R', 'o', 'R', 'o') ('L113', 'H30') bcc(32) pmax 3 N 32 |D| 2 index 2
+   B24 ('S2', 'o', 'S4i', 'o') ('L103', 'H22') bcc(16) pmax 3 N 64 |D| 16 index 16
+   B24 ('S4', 'p', 'S2', 'o') ('L202', 'L212') bcc(16) pmax 3 N 64 |D| 16 index 16
+   B20R ('S', 'R', 'o', 'R', 'o') ('L220', 'L110') bcc(32) pmax 3 N 32 |D| 2 index 2
+   B24 ('S4', 'p', 'S2', 'q', 'S2', 'o') ('L303', 'L101', 'P6') sc(8) pmax 3 N 64 |D| 64 index 64
+   B20R ('S', 'o', 'R', 'o') ('L012', 'L001') sc(32) pmax 3 N 32 |D| 1 index 1
+   B24 ('S4', 'p', 'S4', 'q', 'S4', 'o') ('P11', 'L101', 'L000') bcc(8) pmax 2 N 64 |D| 128 index 128
+   B24 ('S', 'p', 'S2', 'o') ('L202', 'L102') bcc(32) pmax 3 N 32 |D| 2 index 2
+   B24 ('S4', 'p', 'S4', 'q', 'S4', 'o') ('P4', 'L101', 'L322') bcc(8) pmax 2 N 64 |D| 128 index 128
+   RAND ('S4', 'o', 'S2', 'o', 'Si', 'o') ('L202', 'L033', 'H10') bcc(32) pmax 3 N 64 |D| 2 index 2
+   ALIGN ('S4', 'p', 'S', 'o', 'S4', 'q', 'S', 'o') ('L303', 'L311', 'P10', 'L031') bcc(32) pmax 3 N 64 |D| 2 index 2
+   B20R ('S', 'o', 'S', 'R', 'o') ('L013', 'L112') sc(32) pmax 3 N 32 |D| 1 index 1
+   B20R ('S', 'o', 'S', 'o') ('L311', 'L222') bcc(32) pmax 3 N 32 |D| 2 index 2
+   PI6 ('S', 'o') ('L8.6.9',) bcc(32) pmax 3 N 32 |D| 2 index 2
+   ALIGN ('S2i', 'p', 'S4', 'o', 'S2i', 'q', 'S4', 'o') ('P11', 'L003', 'P8', 'H30') bcc(16) pmax 2 N 64 |D| 16 index 16
+   B20R ('S', 'o', 'S', 'R', 'o') ('H00', 'H12') sc(32) pmax 3 N 32 |D| 1 index 1
+   B24 ('S', 'p', 'S4', 'o') ('P4', 'H33') bcc(32) pmax 3 N 32 |D| 2 index 2
+   (D on grid, D >= Lambda_sp, D == Lambda_sp) -> {(True, True, True): 59, (False, True, True): 1}
+   problem: (('B24', ('S2', 'p', 'S4', 'o'), ('P7', 'H00')), 'bcc(16)', 16, 432)
+[FAIL] D = 2pi M*(p <= pmax) lies on the (pi/16)Z^3 grid ([Z^3 : M_sub] = |D cap grid|, M_sub a sublattice of M) for every sampled word  59/60
+[PASS] D contains the detected Lambda_sp for every sampled word (the exact characterisation is consistent with the detector)  
+[PASS] D == Lambda_sp (detector complete, no taste finer than (pi/8)Z^3) in at least 90% of sampled words  60/60
+
+TOTAL: PASS=2 FAIL=1   [104s]

@@ -1,6 +1,6 @@
 {
- "edge_count": 16238,
- "node_count": 7244,
+ "edge_count": 16239,
+ "node_count": 7245,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15700,6 +15700,10 @@
   },
   "neighbour_dependence_record_content_cycle985_bounded_theorem_note_2026-08-11": {
    "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "neutral_composite_spectrum_note_2026-10-18": {
+   "deps_hash": "b4734403f3ea",
    "out_degree": 1
   },
   "neutrino_axiom3_reading_stuck_fanout_note_2026-04-28": {

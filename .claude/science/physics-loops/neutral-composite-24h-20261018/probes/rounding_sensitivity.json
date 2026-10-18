@@ -1,0 +1,5 @@
+{
+  "scope": "Floating-point diagnostic, not interval-certified; if exact cross-spectrum distance is d, Hermitian hopping entry perturbations bounded by epsilon preserve disjointness for 336 epsilon < d (7 blocks, dimension12, two energies, two momenta)",
+  "numerical_separation": 8.241210804893484e-07,
+  "nominal_entry_tolerance": 2.4527413109802034e-09
+}

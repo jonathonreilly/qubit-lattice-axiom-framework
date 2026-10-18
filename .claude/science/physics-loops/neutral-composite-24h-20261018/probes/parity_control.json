@@ -1,0 +1,71 @@
+{
+  "scope": "Even total fermion parity only, one fixed gauge/holonomy sector; thermal mu,T remain supplied. Excludes diagonal density operators. Tiny products may underflow; log values preserved.",
+  "rows": [
+    {
+      "N": 4,
+      "T": 0.03,
+      "log_abs_parity_expectation": -34.4640229805787,
+      "worst_log_abs_parity_excluding_two_modes": -33.13848998687332,
+      "uniform_relative_weight_error_bound": 5.1339799679159934e-15,
+      "log_relative_weight_error_bound": -32.90289521431664
+    },
+    {
+      "N": 4,
+      "T": 0.01,
+      "log_abs_parity_expectation": -3.151081828044393,
+      "worst_log_abs_parity_excluding_two_modes": -3.020254036619697,
+      "uniform_relative_weight_error_bound": 0.09569073370947082,
+      "log_relative_weight_error_bound": -2.3466338116535224
+    },
+    {
+      "N": 8,
+      "T": 0.03,
+      "log_abs_parity_expectation": -536.1764804163871,
+      "worst_log_abs_parity_excluding_two_modes": -530.689012544216,
+      "uniform_relative_weight_error_bound": 3.361118171679956e-231,
+      "log_relative_weight_error_bound": -530.6848827738211
+    },
+    {
+      "N": 8,
+      "T": 0.01,
+      "log_abs_parity_expectation": -253.15954977022707,
+      "worst_log_abs_parity_excluding_two_modes": -249.84738645605,
+      "uniform_relative_weight_error_bound": 3.222565572000202e-109,
+      "log_relative_weight_error_bound": -249.81159733254984
+    },
+    {
+      "N": 12,
+      "T": 0.03,
+      "log_abs_parity_expectation": -1550.781510233373,
+      "worst_log_abs_parity_excluding_two_modes": -1541.8521069807286,
+      "uniform_relative_weight_error_bound": null,
+      "log_relative_weight_error_bound": -1541.8519745524652
+    },
+    {
+      "N": 12,
+      "T": 0.01,
+      "log_abs_parity_expectation": -676.6434624678914,
+      "worst_log_abs_parity_excluding_two_modes": -669.9105776176089,
+      "uniform_relative_weight_error_bound": 1.1535853945912971e-291,
+      "log_relative_weight_error_bound": -669.9093872345208
+    },
+    {
+      "N": 24,
+      "T": 0.03,
+      "log_abs_parity_expectation": -10953.857718216406,
+      "worst_log_abs_parity_excluding_two_modes": -10942.902125728368,
+      "uniform_relative_weight_error_bound": null,
+      "log_relative_weight_error_bound": -10942.902108268423
+    },
+    {
+      "N": 24,
+      "T": 0.01,
+      "log_abs_parity_expectation": -4027.6932313306893,
+      "worst_log_abs_parity_excluding_two_modes": -4018.9347703021826,
+      "uniform_relative_weight_error_bound": null,
+      "log_relative_weight_error_bound": -4018.9346131882903
+    }
+  ],
+  "brute_force_pair_controls": 12,
+  "passed": 12
+}

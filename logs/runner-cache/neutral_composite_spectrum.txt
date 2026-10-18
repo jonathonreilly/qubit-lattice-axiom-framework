@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/neutral_composite_spectrum.py
+runner_sha256: 72ac90d2340e4718ceb4eaac744d0e42168ae912e09fec76c06405036e713e4f
+input_fingerprint_sha256: 196d2a35b389be727d7a8b36c227e00c178a1a3d4fbe1371c93c13d0a543ee57
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 12.43
+status: ok
+----- stdout -----
+reproduced exact_no_flat_transition; result_sha256=fc3551317dd9cf09e0530acabd06a0f033e26ec247c6f218ce1c3227d41dc6f6
+reproduced rational_spectral_enclosure; result_sha256=e883f704b8bfd43aa0a8244636771b8d2069e1304e3303837e3f8df050cffc13
+reproduced finite_range_mode; result_sha256=fb41791a92f5368e663ecb84654a4e990792a424a0aebec3af61bba7e5233294
+reproduced finite_range_verify; result_sha256=afff19880c7e9098d98de64421b3d429c3ffeafa5dbe83ef668215a6e01ee4d5
+reproduced filter_atom_control; result_sha256=a54fa285ea37515df9da4f7d72a89b9af2e76d6de6844a651f3abb2475013008
+reproduced resolvent_limit; result_sha256=b901480cf3d2764ee4390eeaf23239bdaea81fe18c1a66439fe607e92b767d7e
+reproduced parity_control; result_sha256=3094d4e868df3ffe0dee4432db87d4686fa8828a84b775ad5c0bab8b8b9baa5b
+per_element: exact decimal rational hopping entries and Hermitian pair identities checked
+per_site: checked and not executed — no independent native one-qubit-site dynamics reconstructed in this runner
+per_mode: exact fixed-Q characteristic polynomials and neutral spectral bounds checked
+per_block: finite-range coarse-block bilinear coefficients and independent momentum norms checked
+lattice_wide: analytic infinite-volume implication is proved in source under L2 domain assumptions; numerical grids remain finite
+physical scalar derived: false; canonical matter coupling derived: false
+
+----- stderr -----
+

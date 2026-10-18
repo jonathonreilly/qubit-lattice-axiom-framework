@@ -3,3 +3,13 @@
    ALIGN  S2.p.S4i.o.S2.q.S4i.o ('P4', 'L120', 'P4', 'L222'): mine Lsp=bcc(16) Lu=bcc(16) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(16) Lu=bcc(16) idx=1 T=0 kdep=0 good=False  OK
    ALIGN  S2i.p.S4.o.S2i.q.S4.o ('P6', 'L320', 'P4', 'H32'): mine Lsp=bcc(16) Lu=bcc(16) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(16) Lu=bcc(16) idx=1 T=0 kdep=0 good=False  OK
    ALIGN2 Si.p.Si.o.Si.q.Si.o ('P9', 'L131', 'P4', 'L131'): mine Lsp=sc(16) Lu=sc(16) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=sc(16) Lu=sc(16) idx=1 T=0 kdep=0 good=False  OK
+   ALIGN2 S4.p.S4.o.S4.q.S4.o ('L303', 'L301', 'P11', 'L301'): mine Lsp=sc(4) Lu=sc(4) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=sc(4) Lu=sc(4) idx=1 T=0 kdep=0 good=False  OK
+   B20R   S.R.o.R.o ('L011', 'L020'): mine Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False  OK
+   B20R   S.o.R ('L010',): mine Lsp=sc(32) Lu=sc(32) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=sc(32) Lu=sc(32) idx=1 T=0 kdep=0 good=False  OK
+   B24    S.o.S4i.o ('L221', 'L112'): mine Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False  OK
+   B24    S2.p.S.o ('P10', 'L023'): mine Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False  OK
+   PI6    S.o.R ('L6.2.4',): mine Lsp=sc(32) Lu=sc(32) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=sc(32) Lu=sc(32) idx=1 T=0 kdep=0 good=False  OK
+   PI6    S.o ('L0.8.3',): mine Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False  OK
+   RAND   S4i.o.S4i.o.S.o ('L301', 'L310', 'H02'): mine Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False  OK
+   RAND   Si.o.S.o.S4.o ('L023', 'L313', 'H31'): mine Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(32) Lu=bcc(32) idx=1 T=0 kdep=0 good=False  OK
+   B20R   S.R.o ('L330',): mine Lsp=bcc(32) Lu=sc(32) idx=2 T=1 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(32) Lu=sc(32) idx=2 T=1 kdep=0 good=False  OK

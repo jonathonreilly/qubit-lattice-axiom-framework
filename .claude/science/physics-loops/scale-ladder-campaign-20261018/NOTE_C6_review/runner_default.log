@@ -1,0 +1,90 @@
+
+R. registration lemma: illustrations and controls (the lemma itself is proved in the note)
+  R1 trial 0: 260 centres (perfect 5Z^3 lattice: 512); max_Q |S(Q)| = 0.1866; 1/sqrt(N_c) = 0.0620
+  R1 trial 1: 256 centres (perfect 5Z^3 lattice: 512); max_Q |S(Q)| = 0.1166; 1/sqrt(N_c) = 0.0625
+  R1 trial 2: 256 centres (perfect 5Z^3 lattice: 512); max_Q |S(Q)| = 0.1487; 1/sqrt(N_c) = 0.0625
+[PASS] R1 iid-priority block packing (range 4, empty start, covariant): no superlattice peak, max |S(Q)| < 4/sqrt(N_c) in each trial (a registered 5Z^3 lattice gives 1)  :: max amplitude 0.187
+  R2 L=20: N_c ~ 63; mean max_Q |S(Q)| = 0.2873; sqrt(N_c) * that = 2.27
+  R2 L=40: N_c ~ 518; mean max_Q |S(Q)| = 0.0910; sqrt(N_c) * that = 2.07
+  R2 L=60: N_c ~ 1731; mean max_Q |S(Q)| = 0.0556; sqrt(N_c) * that = 2.31
+  R2 L=80: N_c ~ 4088; mean max_Q |S(Q)| = 0.0318; sqrt(N_c) * that = 2.03
+[PASS] R2 radius-2 equivariant factor of iid: sqrt(N_c) max_Q |S(Q)| stays in [1, 4] from L = 20 to 80 while |S| falls (no Bragg peak)  :: [np.float64(2.27), np.float64(2.07), np.float64(2.31), np.float64(2.03)]
+[PASS] R2 coset frequencies of centres mod 5Z^3 are balanced (chi-square over 124 dof within 4 sigma)  :: chi2 = 115.2, z = -0.56, 5077 centres
+[PASS] R3 control (a): deterministic periodic start slice B = 5Z^3 (allowed by B3 Definition 1, not empty) registers: |S| = 1
+[PASS] R3 control (b): position-dependent rule F_y (reads y mod 5; coding radius 0, not covariant) registers: |S| = 1
+  R4 ring N=12, circuit X ZZ X ZZ X: <Z_x> = 0.647713 (spread 4.4e-16); connected <Z_0 Z_r>, r = 0..6: ['+5.80e-01', '+2.67e-01', '+1.52e-01', '+5.47e-02', '+5.93e-03', '-1.55e-15', '-1.44e-15']
+[PASS] R4 TI finite-depth circuit on |0...0>: <Z_x> is the same at every site and connected <Z_0 Z_r> vanishes exactly for r > 4 (light cone), while it is nonzero for some r <= 4
+
+D. dimension and density facts (exact)
+  n=1: even algebra dim 2 = 2*(2^0)^2, centre dim 2 (spanned by 1 and the parity)
+  n=2: even algebra dim 8 = 2*(2^1)^2, centre dim 2 (spanned by 1 and the parity)
+  n=3: even algebra dim 32 = 2*(2^2)^2, centre dim 2 (spanned by 1 and the parity)
+  n=4: even algebra dim 128 = 2*(2^3)^2, centre dim 2 (spanned by 1 and the parity)
+[PASS] D1 even algebra of n complex modes is M_{2^(n-1)} + M_{2^(n-1)} (n = 1..4), so a faithful representation has dimension >= 2^n, i.e. needs n qubits; n = 12 for a corner site
+  enumerated 22528 sublattices (HNF) of index <= 32; O-invariant indices: [1, 2, 4, 8, 16, 27, 32] (counts [1, 1, 1, 1, 1, 1, 1])
+  types (P = kZ^3, F = k*FCC/D3, I = k*BCC): {1: ['P1'], 2: ['F1'], 4: ['I1'], 8: ['P2'], 16: ['F2'], 27: ['P3'], 32: ['I2']}
+[PASS] D2 the O-invariant sublattices of Z^3 of index <= 32 are exactly kZ^3, k*D3, k*BCC (indices k^3, 2k^3, 4k^3): {1, 2, 4, 8, 16, 27, 32}, one each
+[PASS] D3 smallest O-invariant index >= 12 is 16 (the 2*D3 sublattice); the long-wavelength note's registered blocks have index 125 = 48 + 77
+[PASS] D4 the commutant of O in 3x3 matrices is the scalars (null space dim 1, spanned by I): an O-equivariant linear placement of the coarse cubic lattice has Lambda = kZ^3, so index k^3 >= 27 under the 12-qubit density bound
+
+A1. cycle space, face relations and the 16 uniform flux patterns (exact GF(2))
+  L=3: V=324 E=972 faces=783 ({'square': 6, 'triangle': 8, 'plaquette': 3, 'tube': 12} per site); E-V+1=649; rank(faces)=646; rank(+3 straight loops)=649; t=16s
+[PASS] A1 L=3: faces span the cycle space up to the 3 noncontractible classes (rank = E - V + 1 - 3)
+  L=3: 137 independent face relations; type-parity vectors [(0, 0, 0, 0), (1, 0, 1, 0)]
+[PASS] A1 L=3: the only odd type parity is (square, plaquette) from a wrapped relation (torus-size effect)
+[PASS] A1 L=3: uniform patterns realized by a gauge field exactly as the parities predict (8/16; fluxes re-measured)
+  L=4: V=768 E=2304 faces=1856 ({'square': 6, 'triangle': 8, 'plaquette': 3, 'tube': 12} per site); E-V+1=1537; rank(faces)=1534; rank(+3 straight loops)=1537; t=17s
+[PASS] A1 L=4: faces span the cycle space up to the 3 noncontractible classes (rank = E - V + 1 - 3)
+  L=4: 322 independent face relations; type-parity vectors [(0, 0, 0, 0)]
+[PASS] A1 L=4: every face relation has even type parity (all 16 uniform patterns consistent)
+[PASS] A1 L=4: uniform patterns realized by a gauge field exactly as the parities predict (16/16; fluxes re-measured)
+[PASS] A1 L=4: a random gauge field gives a consistent non-uniform flux configuration (sectors are not unique)  :: mean flux 0.516
+
+A2/A3. Bravyi-Kitaev superfast encoding on the corner graph, L = 3 (exact Pauli algebra with phases)
+[PASS] A2 BKSF hops under convention 'canonical' anticommute exactly when the edges share one vertex (400 sampled pairs)
+[PASS] A2 BKSF hops under convention 'random-1' anticommute exactly when the edges share one vertex (400 sampled pairs)
+[PASS] A2 BKSF hops under convention 'random-2' anticommute exactly when the edges share one vertex (400 sampled pairs)
+[PASS] A2 the formal 'natural' flux kappa_C (the flux of the 'all bare loop strings = +1' assignment) depends on the arbitrary labelling/ordering convention  :: faces differing between two random conventions: {'square': 85, 'triangle': 106, 'plaquette': 36, 'tube': 148} of 783
+  canonical convention, # faces with kappa = -1 per type: {'square': (0, 162), 'triangle': (216, 216), 'plaquette': (57, 81), 'tube': (0, 324)}
+[PASS] A2 observation (L = 3, index labelling only): the canonical kappa is not uniform on every face type
+[PASS] A2 identity: for every basis face relation r, prod_{C in r} kappa_C = sigma_r (the operator sign of the product of bare strings), in all three conventions; so the flux-free sector F = +1 exists in every convention  :: relations with sigma_r = -1 (all-bare-+1 assignment inconsistent): {'canonical': 12, 'random-1': 84, 'random-2': 66} of 137
+[PASS] A2 correction to the 'natural vacuum' reading: the all-bare-strings-+1 assignment is not a consistent sector in any of the three tested conventions (some relation has bare product -I); hop-sign flips cannot repair it (they leave B_C and sigma unchanged)
+[PASS] A2 in each fixed convention the signed loop stabilizers of flux F generate a group without -I exactly for consistent F: uniform 1011, 1111, 0000 and a random consistent F all exist; one flipped face does not
+[PASS] A3 flipping one hop sign A_e -> -A_e (all algebraic relations preserved) flips kappa on exactly the faces containing e and leaves every bare string unchanged (5 random edges, all faces); it relabels sectors F -> F * (-1)^[e in C]
+
+A4. fermion-level projective symmetry group on L = 4 (BFS sign propagation) and design-target selection
+    0000 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': 1, 'T^4': [1, 1, 1], 'fixed': [(0, 0, 0), (2, 2, 2)]}
+    0001 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': 1, 'T^4': [1, 1, 1], 'fixed': []}
+    0010 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': -1, 'T^4': [1, 1, 1], 'fixed': None}
+    0011 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': -1, 'T^4': [1, 1, 1], 'fixed': None}
+    0100 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': 1, 'T^4': [1, 1, 1], 'fixed': [(0, 0, 0), (2, 2, 2)]}
+    0101 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': 1, 'T^4': [1, 1, 1], 'fixed': []}
+    0110 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': -1, 'T^4': [1, 1, 1], 'fixed': None}
+    0111 {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': -1, 'T^4': [1, 1, 1], 'fixed': None}
+    1000 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': -1, 'T^4': [1, 1, 1], 'fixed': None}
+    1001 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': -1, 'T^4': [1, 1, 1], 'fixed': None}
+    1010 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': 1, 'T^4': [1, 1, 1], 'fixed': []}
+    1011 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': 1, 'T^4': [1, 1, 1], 'fixed': [(1, 3, 1), (3, 1, 3)]}
+    1100 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': -1, 'T^4': [1, 1, 1], 'fixed': None}
+    1101 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': -1, 'T^4': [1, 1, 1], 'fixed': None}
+    1110 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': 1, 'T^4': [1, 1, 1], 'fixed': []}
+    1111 {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': 1, 'T^4': [1, 1, 1], 'fixed': [(1, 3, 1), (3, 1, 3)]}
+[PASS] A4 the PSG exists for all 16 uniform patterns (consistent BFS sign propagation for the 24 rotations and 3 translations)
+[PASS] A4 C4^4 = -1 exactly when square = pi; axis C2^2 = -1 exactly when square = pi (u-convention)
+[PASS] A4 translations commute exactly when square = plaquette, and anticommute otherwise
+  patterns with C4^4 = -1, commuting translations and an O-fixed momentum: ['1011', '1111']
+[PASS] A4 the design targets (C4^4 = -1, commuting translations, an O-fixed momentum) select exactly {1011, 1111}: triangle free
+[PASS] A4 1011 has exactly two O-fixed momenta, differing by (pi, pi, pi) (their form is gauge dependent)  :: units pi/2: [(1, 3, 1), (3, 1, 3)]
+[PASS] A4 with square = 0 and commuting translations an O-fixed momentum exists iff tube = 0 (tube = pi needs square = pi)
+[PASS] A4 u-pattern 1011 with t1 = -1 (either sign of t2, lambda = 0) has standard-convention flux pi through every face
+[PASS] A4 control: with t1 = +1 the same gauge field gives standard triangle flux 0 (the sign of t1 is load-bearing)
+[PASS] A4 with the chiral term (t1 = -1, lambda = -0.5) every oriented triangle carries standard phase pi + 3 arctan(lambda)
+
+N5 execution certificate (resolution classes actually exercised)
+per_element: exact GF(2) face-flux values on every face of the L = 3, 4 corner tori; single-hop sign flips (A3) on 5 random edges.
+per_site: per-site face counts, PSG sign functions D on every corner vertex, 12-mode even-algebra dimension facts for n = 1..4.
+per_mode: checked and not executed — the one-particle energetics run only with --energetics.
+per_block: superlattice (5Z^3) amplitudes over all 124 nonzero block momenta; coset frequencies over the 125 cosets.
+lattice_wide: cycle-space ranks and face-relation parities of whole tori; O-invariant sublattice enumeration to index 32; the infinite-volume registration lemma is analytic and is not executed.
+
+TOTAL: PASS=35 FAIL=0  (24 s, seed 20261018, energetics=False, full=False)

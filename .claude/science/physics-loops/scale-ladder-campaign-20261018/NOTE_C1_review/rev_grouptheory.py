@@ -181,4 +181,15 @@ for p in itertools.product((0, 1), repeat=3):
         ok6 &= ((-1) ** sum(n) == (-1) ** sum(partner)) == (sum(p) % 2 == 1)
 check("T6/A19: partner chiralities under Q = pi p are equal iff |p| odd (Q = 0: opposite; Q = R: equal)", ok6)
 
+# ---- T4 scope: every selective (H, chi) extends to a selective (H', chi') with |H'| in {8, 12} ----
+# (so if the T-omega/omega-bar and the D4-A1 channels are unprotected at +-k*, every selective channel is: a channel
+#  space for (H, chi) contains the channel space of any (H', chi') with H' >= H and chi'|H = chi)
+def extends(s_small):
+    H, c = s_small[2], s_small[3]
+    return [s_big for s_big in selective if s_big[0] in (8, 12) and H <= s_big[2] and all(s_big[3][g] == c[g] for g in H)]
+ext_ok = all(extends(s_) for s_ in selective)
+big = sorted(set((s_[0], tuple(sorted(s_[3].values()))) for s_ in selective if s_[0] == 8))
+d4_is_A1 = all(all(v == 0 for v in s_[3].values()) for s_ in selective if s_[0] == 8)
+check("T4 scope: every selective (H, chi) is the restriction of a selective T-omega/omega-bar or D4 channel; the D4 ones are chi = A1 "
+      "(one per D4, conjugate under O)", ext_ok and d4_is_A1 and sum(1 for s_ in selective if s_[0] == 8) == 3)
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")

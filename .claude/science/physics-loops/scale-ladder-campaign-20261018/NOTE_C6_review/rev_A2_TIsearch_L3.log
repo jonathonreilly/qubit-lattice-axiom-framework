@@ -1,0 +1,3 @@
+L=3: V=324 E=972 F=783 rank=646 E-V+1-3=646 relations=137 (5L^3+2=137)
+L=3 TI-ordering search: steps 83, final 0, best 0
+  TI ordering with consistent bare assignment found; -I in bare group: False

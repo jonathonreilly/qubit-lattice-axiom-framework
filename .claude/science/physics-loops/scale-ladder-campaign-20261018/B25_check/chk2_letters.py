@@ -131,9 +131,15 @@ check("for all 24 rotations: R t is a T taste with transported intertwiner U_R V
 # (d) reflection-type (I) taste: two words with an I intertwiner at E = 0 (w = e^{2iE} = 1) from the B25 census
 for sk, nm in ((('S', 'R', 'o'), ('L310',)), (('S2', 'p', 'S4', 'q', 'S2', 'o'), ('P1', 'P11', 'L310'))):
     w = cl.build(sk, nm); found = None
-    for n in itertools.product(range(0, 16, 2), repeat=3):
-        tt = np.pi / 16 * np.array(n)
-        if not any(n): continue
+    # cheap spectral pre-screen for reflection-type tastes with w = 1:  spec W(k+t) = conj spec W(k)  at two random k
+    TT = np.array([n for n in itertools.product(range(0, 16, 2), repeat=3) if any(n)]) * np.pi / 16
+    cand = np.ones(len(TT), bool)
+    for k in np.random.default_rng(77).uniform(-np.pi, np.pi, (2, 3)):
+        e0 = np.sort(np.mod(-np.angle(np.linalg.eigvals(W1(w, k))), 2 * np.pi))
+        E2 = np.sort(np.mod(np.angle(np.linalg.eigvals(cl.Wc(w, k + TT))), 2 * np.pi), axis=1)
+        d = np.abs(np.exp(1j * E2) - np.exp(1j * e0)[None]).max(1); cand &= d < 1e-7
+    print(f"   {sk} {nm}: {cand.sum()} reflection-type (w=1) spectral tastes on (pi/8)Z^3 pass the pre-screen")
+    for tt in TT[cand]:
         V = solve_inter(w, tt, 'I', 1.0, nk=3)
         if V is not None and solve_inter(w, tt, 'U') is None and solve_inter(w, tt, 'T') is None: found = (tt, V); break
     if found is None: check(f"{sk} {nm}: found a pure-I reflection taste", False); continue

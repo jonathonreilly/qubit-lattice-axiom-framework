@@ -1,0 +1,10 @@
+[PASS] R1: flat unit-speed walker {C_f[N],C_f[M]} = +1 x K[z], z = N grad M - M grad N, K_xi = L_xi + (i/4) curl xi.sigma: [{V2: 1, kap: I/4}] (against -z the coefficient is -1: [{V2: -1, kap: I/4}]); a walker of speed v gives v^2 K[z]
+[PASS] R2: gravity {C[N],C[M]} at order P = c0 lam1 G1[z] (same z) iff [{b: -1/2, c0: K1/(4*alpha*lam1)}]: b = -1/2, c0 lam1 = K1/(4 alpha)
+[PASS] R3: {C,G} at order chi chibar with E = (delta + a h)^(-1/2), Kosmann kap = i/4 (from R1): [{a: lam_f/lam1, s1: -lam_f, s2: 0}]  => a lam1 = lam_f, s1 = -lam_f
+[PASS] R3c: control: Kosmann spin coefficient -i/4 does not close: []
+[PASS] R4a: walker speed^2 v^2 = c0 lam_f = K1*lam_f/(4*alpha*lam1) = a K1/(4 alpha) using lam_f = a lam1 (R3)
+[PASS] R4b: with B2's K2 = a K1: v^2 = K2/(4*alpha) (= TT cone K2/(4 alpha)); v = 1 => [{alpha: K2/4}]; at a = 1, alpha = K1/4 = K2/4
+[PASS] R4c: v^2 = a K1/(4 alpha) is Phi_rho invariant (a -> rho a, K1 -> rho K1, alpha -> rho^2 alpha), as an observable must be
+[PASS] R5a: own Christoffel sqrt(g)R: first-order part equals d_i d_j h_ij - lap trh (the R1 used in R2)
+[PASS] R5b: K1 R1 + K2 R2 = (K1^2/K2)[sqrt g R]^(1,2) on delta + (K2/K1) h: gravity sees delta + (K2/K1) h, the walker sees delta + a h, so one relabelling generator for both needs a = K2/K1 (gamma = 1) -- consistent with B2
+TOTAL: PASS=9 FAIL=0

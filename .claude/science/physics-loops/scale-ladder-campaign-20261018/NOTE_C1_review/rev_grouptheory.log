@@ -10,5 +10,6 @@
 [PASS] T9: jump at k_z = pi/2 is odd for {+-k*} only and for doublers only, 0 for all eight (C2x requires J = 2 nu(0) even)  {1: (1, -1, 0), -1: (-1, 1, 0)}
 [PASS] T9: C2x fixing k* has affine shift with theta_z = pi (mod 2pi), so it maps slice k_z -> pi - k_z  theta/pi = (Fraction(0, 1), Fraction(-1, 1), Fraction(1, 1))
 [PASS] T6/A19: partner chiralities under Q = pi p are equal iff |p| odd (Q = 0: opposite; Q = R: equal)
+[PASS] T4 scope: every selective (H, chi) is the restriction of a selective T-omega/omega-bar or D4 channel; the D4 ones are chi = A1 (one per D4, conjugate under O)
 
-TOTAL: PASS=11 FAIL=0
+TOTAL: PASS=12 FAIL=0

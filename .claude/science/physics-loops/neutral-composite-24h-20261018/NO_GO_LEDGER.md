@@ -10,3 +10,5 @@ Unconfinedbulk sourcechannel has nooutsidehostbandstate fromrankonecondition; co
 
 
 Native joining test: twoodd4x6x5 arrays joined by native longitudinalJz bonds have evenheight512character multiplicityone band, so original neutral C is intrabanddark. Excludes using this odd-half mode unchanged as embeddedlowband scalar. Otherbands/connectedfeatures remainopen; fixedgpositive limitnotuniformg0.
+
+Rejected full N8 threshold reduction to distinct-column interfaces: four transverse singleton packets give continuum at -16/sqrt3 and below. Does not exclude embedded modes/resonances; on-shell radiation unresolved.

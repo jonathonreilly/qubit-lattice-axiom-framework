@@ -117,3 +117,5 @@ BulkCOM actual_current_surface_status: bounded-support; proposal_allowed: false;
 Six-end block: actual_current_surface_status bounded-support; proposal_allowed false; bare_retained_allowed false; independent mathematical checks PASS, final scoped review pending. Supplied H/one-wall boundary sector; no empirical or microscopic-particle claim.
 
 Six-end final review_loop_disposition: pass; prior pending entry superseded.
+
+Finite collision: actual_current_surface_status bounded-support; proposal_allowed false; bare_retained_allowed false; review_loop_disposition pass. K1 continuum and original source identity, no physical particle/scalar or empirical claim.

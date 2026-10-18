@@ -1,0 +1,504 @@
+{
+  "inputs": {
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_exact_internal_factor.py": "e330a678e8a84a40acaf8cdf4e6dd5fcb45d342487bbedc1e66d7f1d1ff362c0",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_strong_tunnel.py": "f7e6f7865c6ba6e942db3311b5dc6b4287e7ed67e3cc2986aee002c94bfbfd5d",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_strong_symmetry.py": "768726d6736a5d9b2cb5b437c1daafb85715b9040d041c9a222a31f141d0d187",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_strong_spectrum.py": "4fb0a54b26c387eff517b35bf959e88042b741e4fbadcd27fcf061cb2d0f7636",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d"
+  },
+  "results": {
+    "neutral_exact_internal_factor": {
+      "exact_unitary": true,
+      "internal_hamiltonian": "-IZ-XI-YY-ZX",
+      "native_vertices": [
+        "1*YZZ",
+        "1*XIY",
+        "-1*ZYZ",
+        "-1*IXY"
+      ],
+      "internal_spectrum": [
+        "-2sqrt2",
+        "0",
+        "0",
+        "2sqrt2"
+      ],
+      "all_internal_ground_vertex_means_zero": true,
+      "all_ground_vertex_transitions_at_gap": "2sqrt2",
+      "second_order_protected_coefficients": {
+        "II": "-sqrt(2)/2",
+        "XX": "-sqrt(2)/4",
+        "ZZ": "-sqrt(2)/4"
+      },
+      "scope": "Exact coordinate change in specified positive physical rung parity; no new qubits or interactions. Low-band projection still requires weak coupling; full factorization is exact at any coupling."
+    },
+    "neutral_strong_tunnel": [
+      {
+        "L": 2,
+        "path_denominator_sum": "1/2",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      },
+      {
+        "L": 3,
+        "path_denominator_sum": "1/4",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      },
+      {
+        "L": 4,
+        "path_denominator_sum": "1/8",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      },
+      {
+        "L": 5,
+        "path_denominator_sum": "1/16",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      },
+      {
+        "L": 6,
+        "path_denominator_sum": "1/32",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      },
+      {
+        "L": 7,
+        "path_denominator_sum": "1/64",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      },
+      {
+        "L": 8,
+        "path_denominator_sum": "1/128",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      },
+      {
+        "L": 9,
+        "path_denominator_sum": "1/256",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      },
+      {
+        "L": 10,
+        "path_denominator_sum": "1/512",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      },
+      {
+        "L": 11,
+        "path_denominator_sum": "1/1024",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      },
+      {
+        "L": 12,
+        "path_denominator_sum": "1/2048",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      },
+      {
+        "L": 13,
+        "path_denominator_sum": "1/4096",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      },
+      {
+        "L": 14,
+        "path_denominator_sum": "1/8192",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      },
+      {
+        "L": 15,
+        "path_denominator_sum": "1/16384",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      },
+      {
+        "L": 16,
+        "path_denominator_sum": "1/32768",
+        "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+      }
+    ],
+    "neutral_strong_symmetry": {
+      "rows": [
+        {
+          "L": 3,
+          "plane_commutant_dimension": 8,
+          "plane_commutant_commutative": false,
+          "square_plane_commutant_dimension": 4,
+          "square_plane_commutant_commutative": true,
+          "T_spectrum": {
+            "-2*sqrt(2)": 2,
+            "2*sqrt(2)": 2,
+            "0": 4
+          }
+        },
+        {
+          "L": 4,
+          "plane_commutant_dimension": 8,
+          "plane_commutant_commutative": true,
+          "square_plane_commutant_dimension": 4,
+          "square_plane_commutant_commutative": true,
+          "T_spectrum": {
+            "-4": 1,
+            "4": 1,
+            "0": 6
+          }
+        }
+      ],
+      "scope": "Aligned8state positive-rung band. Representation multiplicities survive isolated equivariant continuation; square-invariant plane-neutral readouts have no intraband inelastic response. No claim band stays isolated at equal coupling."
+    },
+    "neutral_strong_spectrum": [
+      {
+        "L": 2,
+        "ratio": 0.5,
+        "scale": 0.125,
+        "scaled_centered_levels": [
+          -3.3419149827488184,
+          -0.7620088785497785,
+          -0.7620088785497714,
+          0.25400295951658336,
+          0.25400295951659047,
+          0.25400295951659047,
+          0.25400295951659757,
+          3.8499209017820277
+        ],
+        "target": [
+          -4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        "max_error": 0.7620088785497785,
+        "max_residual": 8.925937328332617e-15,
+        "band_inelastic_O_frobenius2": 0.0,
+        "source0_to_band_weight": 0.0,
+        "original_O_band_mean": 0.0
+      },
+      {
+        "L": 2,
+        "ratio": 0.35,
+        "scale": 0.06124999999999999,
+        "scaled_centered_levels": [
+          -3.641670857106456,
+          -0.41823773605071274,
+          -0.41823773605065473,
+          0.1394125786835419,
+          0.1394125786835419,
+          0.13941257868355642,
+          0.1394125786835854,
+          3.9204960144736125
+        ],
+        "target": [
+          -4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        "max_error": 0.41823773605071274,
+        "max_residual": 5.1064952936384534e-15,
+        "band_inelastic_O_frobenius2": 0.0,
+        "source0_to_band_weight": 0.0,
+        "original_O_band_mean": 0.0
+      },
+      {
+        "L": 2,
+        "ratio": 0.2,
+        "scale": 0.020000000000000004,
+        "scaled_centered_levels": [
+          -3.874469788086409,
+          -0.1457359981388073,
+          -0.1457359981387185,
+          0.04857866604615068,
+          0.04857866604615068,
+          0.0485786660462395,
+          0.048578666046328316,
+          3.9716271201788436
+        ],
+        "target": [
+          -4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        "max_error": 0.1457359981388073,
+        "max_residual": 6.251055361853849e-15,
+        "band_inelastic_O_frobenius2": 0.0,
+        "source0_to_band_weight": 0.0,
+        "original_O_band_mean": 0.0
+      },
+      {
+        "L": 3,
+        "ratio": 0.5,
+        "scale": 0.03125,
+        "scaled_centered_levels": [
+          -2.6424293871845634,
+          -2.6424293871845066,
+          0.16856315015161272,
+          0.1685631501517264,
+          0.16856315015178325,
+          0.1685631501518401,
+          2.30530308688094,
+          2.305303086880997
+        ],
+        "target": [
+          -2.8284271247461903,
+          -2.8284271247461903,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.8284271247461903,
+          2.8284271247461903
+        ],
+        "max_error": 0.5231240378652502,
+        "max_residual": 3.7211978844396426e-14,
+        "band_inelastic_O_frobenius2": 1.7588358412437613e-28,
+        "source0_to_band_weight": 4.986319141961162e-29,
+        "original_O_band_mean": 3.5193878675351824
+      },
+      {
+        "L": 3,
+        "ratio": 0.35,
+        "scale": 0.010718749999999997,
+        "scaled_centered_levels": [
+          -2.7203642505864454,
+          -2.7203642505862797,
+          0.06412006372617778,
+          0.06412006372634349,
+          0.06412006372650922,
+          0.06412006372733783,
+          2.592124123133427,
+          2.5921241231335928
+        ],
+        "target": [
+          -2.8284271247461903,
+          -2.8284271247461903,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.8284271247461903,
+          2.8284271247461903
+        ],
+        "max_error": 0.23630300161276319,
+        "max_residual": 2.527161139637707e-14,
+        "band_inelastic_O_frobenius2": 5.896363110705696e-28,
+        "source0_to_band_weight": 1.716485297450007e-29,
+        "original_O_band_mean": 3.759676948603854
+      },
+      {
+        "L": 3,
+        "ratio": 0.2,
+        "scale": 0.0020000000000000005,
+        "scaled_centered_levels": [
+          -2.7844037448119248,
+          -2.7844037448110366,
+          0.012798162878802085,
+          0.012798162878802085,
+          0.012798162878802085,
+          0.012798162880578442,
+          2.7588074190543206,
+          2.758807419056985
+        ],
+        "target": [
+          -2.8284271247461903,
+          -2.8284271247461903,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.8284271247461903,
+          2.8284271247461903
+        ],
+        "max_error": 0.0696197056918697,
+        "max_residual": 3.0325674586463435e-14,
+        "band_inelastic_O_frobenius2": 3.930222014664845e-28,
+        "source0_to_band_weight": 3.791242857421221e-29,
+        "original_O_band_mean": 3.920486190921737
+      },
+      {
+        "L": 4,
+        "ratio": 0.5,
+        "scale": 0.0078125,
+        "scaled_centered_levels": [
+          -3.5630941917163454,
+          -0.12449235782332835,
+          -0.12449235782150936,
+          0.08254623135917427,
+          0.08254623136008377,
+          0.08254623136031114,
+          0.0825462313623575,
+          3.481893981918347
+        ],
+        "target": [
+          -4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        "max_error": 0.518106018081653,
+        "max_residual": 4.674493606665346e-14,
+        "band_inelastic_O_frobenius2": 1.2965025960534217e-26,
+        "source0_to_band_weight": 1.1308042515854301e-27,
+        "original_O_band_mean": 7.360149125316277
+      },
+      {
+        "L": 4,
+        "ratio": 0.35,
+        "scale": 0.0018757812499999996,
+        "scaled_centered_levels": [
+          -3.7683501903522854,
+          -0.03329141060416823,
+          -0.03329141060132724,
+          0.022197927837521593,
+          0.02219792784793855,
+          0.022197927850779533,
+          0.022197927864984472,
+          3.7461413001575035
+        ],
+        "target": [
+          -4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        "max_error": 0.25385869984249654,
+        "max_residual": 3.5585303457336704e-14,
+        "band_inelastic_O_frobenius2": 3.760182347089437e-26,
+        "source0_to_band_weight": 2.545792670442205e-27,
+        "original_O_band_mean": 7.689969618444078
+      },
+      {
+        "L": 4,
+        "ratio": 0.2,
+        "scale": 0.00020000000000000004,
+        "scaled_centered_levels": [
+          -3.9198761500269788,
+          -0.0038023856596680608,
+          -0.0038023855974955714,
+          0.002542076638079038,
+          0.0025420769933504057,
+          0.00254207700223219,
+          0.0025420771176953845,
+          3.917312613541667
+        ],
+        "target": [
+          -4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        "max_error": 0.08268738645833285,
+        "max_residual": 6.803833716592883e-14,
+        "band_inelastic_O_frobenius2": 4.755644750466039e-26,
+        "source0_to_band_weight": 6.705547620517748e-27,
+        "original_O_band_mean": 7.899582704816835
+      },
+      {
+        "L": 5,
+        "ratio": 0.5,
+        "scale": 0.001953125,
+        "scaled_centered_levels": [
+          -2.5242522937514877,
+          -2.524252293726022,
+          0.03646874003425182,
+          0.036468740059717675,
+          0.036468740063355654,
+          0.03646874007063161,
+          2.4513148136211385,
+          2.4513148136284144
+        ],
+        "target": [
+          -2.8284271247461903,
+          -2.8284271247461903,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.8284271247461903,
+          2.8284271247461903
+        ],
+        "max_error": 0.37711231112505184,
+        "max_residual": 8.107370501434877e-14,
+        "band_inelastic_O_frobenius2": 1.4247280692577283e-25,
+        "source0_to_band_weight": 1.5001701497810067e-26,
+        "original_O_band_mean": 11.22878455940056
+      },
+      {
+        "L": 5,
+        "ratio": 0.35,
+        "scale": 0.0003282617187499999,
+        "scaled_centered_levels": [
+          -2.661319604323101,
+          -2.661319604268987,
+          0.006887834140446554,
+          0.006887834162092171,
+          0.006887834313611488,
+          0.006887834346079914,
+          2.6475439357932835,
+          2.6475439358257518
+        ],
+        "target": [
+          -2.8284271247461903,
+          -2.8284271247461903,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.8284271247461903,
+          2.8284271247461903
+        ],
+        "max_error": 0.18088318895290678,
+        "max_residual": 9.173657119384504e-14,
+        "band_inelastic_O_frobenius2": 7.264790229573917e-26,
+        "source0_to_band_weight": 9.542054559549312e-27,
+        "original_O_band_mean": 11.627501857484315
+      },
+      {
+        "L": 5,
+        "ratio": 0.2,
+        "scale": 2.0000000000000005e-05,
+        "scaled_centered_levels": [
+          -2.7704615071399976,
+          -2.770461504120191,
+          0.0004518225793503915,
+          0.0004518273755138579,
+          0.00045182808605659364,
+          0.0004518291518706973,
+          2.7695578502573417,
+          2.7695578530995126
+        ],
+        "target": [
+          -2.8284271247461903,
+          -2.8284271247461903,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.8284271247461903,
+          2.8284271247461903
+        ],
+        "max_error": 0.0588692744888486,
+        "max_residual": 9.962467994308939e-14,
+        "band_inelastic_O_frobenius2": 8.353804813332886e-26,
+        "source0_to_band_weight": 2.992541776914612e-26,
+        "original_O_band_mean": 11.879474978270675
+      }
+    ]
+  },
+  "scope": "Exact coordinate identities, finite strong-column tunneling and scalar-readout selection; no bulk or physical identification"
+}

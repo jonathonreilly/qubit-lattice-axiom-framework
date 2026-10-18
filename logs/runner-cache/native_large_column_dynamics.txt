@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/native_large_column_dynamics.py
+runner_sha256: 825434ff8f73c2cf3c9233368dc9779bcc250e6d7ad737234bda3da3dcf4b165
+input_fingerprint_sha256: b3ed0a2605b16668a983feac7067b6cf004e26055faaa9cf1360d1bfa09a64d0
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.47
+status: ok
+----- stdout -----
+reproduced neutral_exact_internal_factor
+reproduced neutral_strong_tunnel
+reproduced neutral_strong_symmetry
+reproduced neutral_strong_spectrum
+per_site: one physical qubit; exact parity coordinates add no degrees of freedom
+per_mode: existing internal vertices and large-column tunneling derived
+per_block: exact finite-band scalar-readout selection
+lattice_wide: equal coupling, bulk scalar and physical observations remain open
+
+----- stderr -----
+

@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "L": 3,
+      "plane_commutant_dimension": 8,
+      "plane_commutant_commutative": false,
+      "square_plane_commutant_dimension": 4,
+      "square_plane_commutant_commutative": true,
+      "T_spectrum": {
+        "-2*sqrt(2)": 2,
+        "2*sqrt(2)": 2,
+        "0": 4
+      }
+    },
+    {
+      "L": 4,
+      "plane_commutant_dimension": 8,
+      "plane_commutant_commutative": true,
+      "square_plane_commutant_dimension": 4,
+      "square_plane_commutant_commutative": true,
+      "T_spectrum": {
+        "-4": 1,
+        "4": 1,
+        "0": 6
+      }
+    }
+  ],
+  "scope": "Aligned8state positive-rung band. Representation multiplicities survive isolated equivariant continuation; square-invariant plane-neutral readouts have no intraband inelastic response. No claim band stays isolated at equal coupling."
+}

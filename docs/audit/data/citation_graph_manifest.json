@@ -1,6 +1,6 @@
 {
  "edge_count": 16245,
- "node_count": 7253,
+ "node_count": 7254,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15545,6 +15545,10 @@
   "native_lapse_source_contact_response_bounded_theorem_note_2026-09-13": {
    "deps_hash": "97e3c6b16435",
    "out_degree": 3
+  },
+  "native_large_column_dynamics_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "native_leading_ring_stoquastic_gauge_note_2026-09-08": {
    "deps_hash": "24394f690c47",

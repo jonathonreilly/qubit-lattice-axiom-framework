@@ -1,0 +1,77 @@
+[
+  {
+    "L": 2,
+    "path_denominator_sum": "1/2",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  },
+  {
+    "L": 3,
+    "path_denominator_sum": "1/4",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  },
+  {
+    "L": 4,
+    "path_denominator_sum": "1/8",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  },
+  {
+    "L": 5,
+    "path_denominator_sum": "1/16",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  },
+  {
+    "L": 6,
+    "path_denominator_sum": "1/32",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  },
+  {
+    "L": 7,
+    "path_denominator_sum": "1/64",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  },
+  {
+    "L": 8,
+    "path_denominator_sum": "1/128",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  },
+  {
+    "L": 9,
+    "path_denominator_sum": "1/256",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  },
+  {
+    "L": 10,
+    "path_denominator_sum": "1/512",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  },
+  {
+    "L": 11,
+    "path_denominator_sum": "1/1024",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  },
+  {
+    "L": 12,
+    "path_denominator_sum": "1/2048",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  },
+  {
+    "L": 13,
+    "path_denominator_sum": "1/4096",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  },
+  {
+    "L": 14,
+    "path_denominator_sum": "1/8192",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  },
+  {
+    "L": 15,
+    "path_denominator_sum": "1/16384",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  },
+  {
+    "L": 16,
+    "path_denominator_sum": "1/32768",
+    "coefficient": "-Jperp^L/(2Jz)^(L-1)"
+  }
+]

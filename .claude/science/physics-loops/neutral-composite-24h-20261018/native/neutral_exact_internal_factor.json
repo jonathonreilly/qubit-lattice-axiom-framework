@@ -1,0 +1,24 @@
+{
+  "exact_unitary": true,
+  "internal_hamiltonian": "-IZ-XI-YY-ZX",
+  "native_vertices": [
+    "1*YZZ",
+    "1*XIY",
+    "-1*ZYZ",
+    "-1*IXY"
+  ],
+  "internal_spectrum": [
+    "-2sqrt2",
+    "0",
+    "0",
+    "2sqrt2"
+  ],
+  "all_internal_ground_vertex_means_zero": true,
+  "all_ground_vertex_transitions_at_gap": "2sqrt2",
+  "second_order_protected_coefficients": {
+    "II": "-sqrt(2)/2",
+    "XX": "-sqrt(2)/4",
+    "ZZ": "-sqrt(2)/4"
+  },
+  "scope": "Exact coordinate change in specified positive physical rung parity; no new qubits or interactions. Low-band projection still requires weak coupling; full factorization is exact at any coupling."
+}

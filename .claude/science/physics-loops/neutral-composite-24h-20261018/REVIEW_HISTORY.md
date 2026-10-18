@@ -12,3 +12,6 @@ Disposition pass. Reused completed independent rung intertwining, boundary/sourc
 
 
 Infrared block: independent symmetry/LSM, fermionic form-factor and native/effective comparison checks PASS. Final synthesis and six-input provenance review PASS at /private/tmp/native-infrared-final-review.md, copied into native/. Four-probe source-bound replay passed3.608s. Two wording clarifications applied only; no computation changed. No formal audit.
+
+
+Large-column block: exact internal factor, all-L minimal tunneling and scalar square/plane commutant checks PASS. Root independently reproduced commutant dimension4 (corrected preliminary3conjecture). Final scoped scientific/provenance reviewPASS. Noformal audit.

@@ -1,0 +1,5 @@
+Ux Uy + Uy Ux = 0 : True | Ux^2 =  -I
+translations are pure permutations (trivial signs): True
+C2x fixes 16 momenta; C2y fixes 16 ; both fix 8 : [(-1, -1, -1), (-1, -1, 1), (-1, 1, -1), (-1, 1, 1), (1, -1, -1), (1, -1, 1), (1, 1, -1), (1, 1, 1)]
+C2x,C2y only (group order 4): max pair splitting at the eight points = 2.7e-15; other momenta: lowest-pair degenerate at 0/224, median smallest gap 0.082
+full O_h (group order 48): max pair splitting at the eight points = 6.1e-16; other momenta: lowest-pair degenerate at 0/224, median smallest gap 0.009

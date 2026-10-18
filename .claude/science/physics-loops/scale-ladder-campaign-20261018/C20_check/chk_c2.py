@@ -40,25 +40,27 @@ def rand_H(rangemax=1.5):
     d = pos[:, None, :] - pos[None, :, :]; d = (d + L // 2) % L - L // 2
     A *= (np.linalg.norm(d, axis=2) <= rangemax)
     return (A + A.conj().T) / 2
+def cj(H, g):                      # U H U^T for the signed permutation g = (P, s): c_q -> (-1)^s(q) c_P(q)
+    P, s = g; sg = (-1.0) ** s; Y = np.zeros_like(H); Y[np.ix_(P, P)] = H * np.outer(sg, sg); return Y
+def comp(a, b): return a[0][b[0]], b[1] ^ a[1][b[0]]
 def symmetrize(H, gens):
-    T = sum(t @ H @ t.T for t in Ts) / len(Ts)
-    grp = [np.eye(nV)]
+    T = sum(cj(H, g) for g in Mdl['trans']) / len(Mdl['trans'])
+    grp = [(np.arange(nV), np.zeros(nV, int))]; seen = {tuple(grp[0][0])}
     changed = True
     while changed:
         changed = False
         for g in list(grp):
             for h in gens:
-                p = h @ g
-                if not any(np.allclose(np.abs(p), np.abs(q)) and (np.allclose(p, q) or np.allclose(p, -q)) for q in grp):
-                    grp.append(p); changed = True
-    return sum(g @ T @ g.T for g in grp) / len(grp), len(grp)
+                p = comp(h, g)
+                if tuple(p[0]) not in seen: seen.add(tuple(p[0])); grp.append(p); changed = True
+    return sum(cj(T, g) for g in grp) / len(grp), len(grp)
 
 def levels(H, i):
     return np.linalg.eigvalsh(PW[i].conj().T @ H @ PW[i])
 eight = [i for i in range(64) if lab(i) in set(both)]
 others = [i for i in range(64) if i not in eight]
-Ofull = [mat(g) for g in Mdl['rots'] + Mdl['invs']]
-for case, gens in (('C2x,C2y only', [Ux, Uy]), ('full O_h', Ofull)):
+Ofull = Mdl['rots'] + Mdl['invs']
+for case, gens in (('C2x,C2y only', [Mdl['rots'][rid((1, -1, -1))], Mdl['rots'][rid((-1, 1, -1))]]), ('full O_h', Ofull)):
     worst_split8 = 0; min_gap_other = []; deg_other = 0
     for trial in range(4):
         H, ng = symmetrize(rand_H(), gens)

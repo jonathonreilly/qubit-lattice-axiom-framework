@@ -14,16 +14,19 @@ for s in shifts:
 n = len(idx)
 def vid(s, a): return VID[(tuple(x % L for x in s), CORN[a])]
 def action(g):
-    P, sg = g; M = np.zeros((n, n))
+    P, sg = g; img = np.zeros(n, int); sgn = np.zeros(n)
     for (s, a, b), k in idx.items():
         i, j = vid(s, a), vid((0, 0, 0), b); i2, j2 = P[i], P[j]
         sh = tuple(dm(x - y) for x, y in zip(VERTS[i2][0], VERTS[j2][0]))
-        M[idx[(sh, CI[VERTS[i2][1]], CI[VERTS[j2][1]])], k] = (-1.0) ** (int(sg[i]) + int(sg[j]))
-    return M
-tau = np.zeros((n, n))
-for (s, a, b), k in idx.items(): tau[idx[(tuple(-x for x in s), b, a)], k] = 1
+        img[k] = idx[(sh, CI[VERTS[i2][1]], CI[VERTS[j2][1]])]; sgn[k] = (-1.0) ** (int(sg[i]) + int(sg[j]))
+    return img, sgn
+tau = np.zeros(n, int)
+for (s, a, b), k in idx.items(): tau[k] = idx[(tuple(-x for x in s), b, a)]
 G = [action(g) for g in Mdl['rots'] + Mdl['invs']]
-for g in G: assert np.allclose(g @ tau, tau @ g)
-even = sum(np.trace(g @ (np.eye(n) + tau) / 2) for g in G) / len(G)
-odd = sum(np.trace(g @ (np.eye(n) - tau) / 2) for g in G) / len(G)
+for img, sgn in G: assert np.array_equal(img[tau], tau[img]) and np.allclose(sgn[tau], sgn)
+ar = np.arange(n)
+trg = [np.sum(sgn[img == ar]) for img, sgn in G]
+trgt = [np.sum(sgn[tau][img[tau] == ar]) for img, sgn in G]   # (g tau) e_k = sgn[tau k] e_{img[tau k]}
+even = (sum(trg) + sum(trgt)) / 2 / len(G)
+odd = (sum(trg) - sum(trgt)) / 2 / len(G)
 print(f'conjugation-even (real, B_-s = B_s^T): {even:.6f}; conjugation-odd (imaginary, B_-s = -B_s^T): {odd:.6f}; total {even+odd:.6f}')

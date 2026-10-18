@@ -18,3 +18,10 @@
     - At the other 6 they are anisotropic (spread about 0.3), chiralities ±1; the net is 0.
     - Nothing else reaches −π/2 (refined search).
 - **Running:** `cube_scan.py`, looking for candidates whose node quasi-energy is reached only at ±k*.
+
+## Final search result (03:45Z)
+
+- `cube_scan.py`: 4,476 node/step combinations have no level at the node quasi-energy at the other cube or high-symmetry points.
+- `clean_rank2.py`: all of those have other crossings. The best minimum distance on a 12³ grid away from ±k* is 0.007.
+- So in this family a clean node quasi-energy comes only with the six cube-point doublers (example: S·R_L·H23·L110).
+- The independent check (B1_check) confirmed (a)–(c) with corrections, which are applied in the note: the lemma needs isolated doublets, the strengthening to a derivation, H_link² = 2 proved, the speed exactly 1/√3 via M³ = (|q|²/3)M, and the minimal Weyl automaton's maximum group speed 1/√2.

@@ -1,0 +1,22 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+4476 Weyl candidates with no level at E at the other cube points or high-symmetry points
+('S', 'L001', np.float64(1.5708), np.float64(0.471404))
+L=4: 768 vertices, 2304 edges (1536 on-site)
+4476 candidates
+(np.float64(0.0069), 'S.RL', 'L330*H30', np.float64(3.1416), np.float64(0.471405))
+(np.float64(0.0069), 'S.RL', 'L330*H12', np.float64(-3.1416), np.float64(0.471405))
+(np.float64(0.0069), 'S.RL', 'L110*H32', np.float64(3.1416), np.float64(0.471405))
+(np.float64(0.0069), 'S.RL', 'L110*H10', np.float64(-3.1416), np.float64(0.471405))
+(np.float64(0.0069), 'S.RL', 'H32*L110', np.float64(3.1416), np.float64(0.471405))
+(np.float64(0.0068), 'S.RL', 'L330*H30', np.float64(0.0), np.float64(0.471405))
+(np.float64(0.0068), 'S.RL', 'L330*H12', np.float64(-0.0), np.float64(0.471405))
+(np.float64(0.0068), 'S.RL', 'L220*H33', np.float64(1.5708), np.float64(0.471405))
+(np.float64(0.0068), 'S.RL', 'L220*H33', np.float64(-1.5708), np.float64(0.471405))
+(np.float64(0.0068), 'S.RL', 'L220*H11', np.float64(1.5708), np.float64(0.471405))
+(np.float64(0.0068), 'S.RL', 'L220*H11', np.float64(-1.5708), np.float64(0.471405))
+(np.float64(0.0068), 'S.RL', 'L110*H32', np.float64(-0.0), np.float64(0.471405))
+(np.float64(0.0068), 'S.RL', 'L110*H10', np.float64(-0.0), np.float64(0.471405))
+(np.float64(0.0068), 'S.RL', 'L000*H31', np.float64(1.5708), np.float64(0.471405))
+(np.float64(0.0068), 'S.RL', 'L000*H31', np.float64(-1.5708), np.float64(0.471405))
+
+[exited with code 0]

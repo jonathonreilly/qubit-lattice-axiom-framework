@@ -1,6 +1,6 @@
 {
- "edge_count": 16267,
- "node_count": 7250,
+ "edge_count": 16270,
+ "node_count": 7251,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4545,6 +4545,10 @@
   "curvature_fluid_construction_bounded_theorem_note_2026-10-13": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "curvature_member_closure_with_matter_forces_one_common_cone_and_the_lorentzian_sign_and_has_an_order_a_squared_obstruction_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "76153c805801",
+   "out_degree": 3
   },
   "cycle332_receiver_success_cycle610_gate_adapter_bounded_theorem_note_2026-07-30": {
    "deps_hash": "c8eee4235fc9",

@@ -35,3 +35,4 @@ support growth of alpha^n(X_0), n <= 32 (numerical evidence; exact F2 convolutio
   28 representatives (action, orbit shapes in tau, orbit shapes in M)
   sign    tau-shapes [(0, 0, 0), (0, 0, 1)] M-shapes [(0, 0, 0), (0, 0, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 7, 37, 199, 1069, 5743]; front radius = n for all n: True; log-log slope 1.93
   sign    tau-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1)] M-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 19, 157, 1339, 10429, 82027]; front radius = n for all n: True; log-log slope 2.65
+  sign    tau-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 1, 1)] M-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 27, 125, 1331, 9261, 79507]; front radius = n for all n: True; log-log slope 2.70

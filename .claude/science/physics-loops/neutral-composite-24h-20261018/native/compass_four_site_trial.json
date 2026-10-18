@@ -1,0 +1,14 @@
+{
+  "energy_per_site_over_J": -1.0918560606060606,
+  "exact_formula": "-1153/1056",
+  "s": "8/33",
+  "t": "1/4",
+  "one_site_Z": [
+    0.9701703390049771,
+    0.93936339148767,
+    0.9701703390049771,
+    0.9393633914876699
+  ],
+  "norm": 0.9999999999999999,
+  "scope": "Variational upper bound from four-physical-site pure block product, no ground-state or scalar claim"
+}

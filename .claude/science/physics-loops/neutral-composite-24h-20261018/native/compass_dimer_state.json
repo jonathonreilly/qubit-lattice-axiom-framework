@@ -1,0 +1,26 @@
+{
+  "rows": [
+    {
+      "L": 4,
+      "sites": 64,
+      "energy_per_site_over_K": "17/16",
+      "variance_per_site_over_K_squared": "205/128",
+      "composite_per_site": "15/16"
+    },
+    {
+      "L": 6,
+      "sites": 216,
+      "energy_per_site_over_K": "17/16",
+      "variance_per_site_over_K_squared": "201/128",
+      "composite_per_site": "15/16"
+    },
+    {
+      "L": 8,
+      "sites": 512,
+      "energy_per_site_over_K": "17/16",
+      "variance_per_site_over_K_squared": "201/128",
+      "composite_per_site": "15/16"
+    }
+  ],
+  "scope": "Exact correlated trial state at sin2theta=1/4; residual retained, not a ground state"
+}

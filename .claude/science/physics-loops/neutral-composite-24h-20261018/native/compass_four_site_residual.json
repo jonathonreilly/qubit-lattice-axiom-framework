@@ -1,0 +1,23 @@
+{
+  "rows": [
+    {
+      "L": 4,
+      "sites": 64,
+      "energy_per_site_over_K": 1.0918560606060597,
+      "variance_per_site_over_K_squared": 1.3747886828306801
+    },
+    {
+      "L": 6,
+      "sites": 216,
+      "energy_per_site_over_K": 1.0918560606060677,
+      "variance_per_site_over_K_squared": 1.3297249596779632
+    },
+    {
+      "L": 8,
+      "sites": 512,
+      "energy_per_site_over_K": 1.0918560606060648,
+      "variance_per_site_over_K_squared": 1.3297249596779845
+    }
+  ],
+  "scope": "Full Hamiltonian variance in supplied four-site trial; numerical local matrix moments"
+}

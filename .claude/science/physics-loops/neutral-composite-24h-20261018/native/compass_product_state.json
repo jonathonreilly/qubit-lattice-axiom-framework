@@ -1,0 +1,23 @@
+{
+  "rows": [
+    {
+      "L": 3,
+      "sites": 27,
+      "variance_per_site_over_K_squared": "-3*nx**4 - 8*nx**2*ny**2 - 8*nx**2*nz**2 + 2*nx**2 - 3*ny**4 - 8*ny**2*nz**2 + 2*ny**2 - 3*nz**4 + 2*nz**2 + 3",
+      "pure_state_result": "1 + nx**4 + ny**4 + nz**4"
+    },
+    {
+      "L": 4,
+      "sites": 64,
+      "variance_per_site_over_K_squared": "-3*nx**4 - 8*nx**2*ny**2 - 8*nx**2*nz**2 + 2*nx**2 - 3*ny**4 - 8*ny**2*nz**2 + 2*ny**2 - 3*nz**4 + 2*nz**2 + 3",
+      "pure_state_result": "1 + nx**4 + ny**4 + nz**4"
+    },
+    {
+      "L": 5,
+      "sites": 125,
+      "variance_per_site_over_K_squared": "-3*nx**4 - 8*nx**2*ny**2 - 8*nx**2*nz**2 + 2*nx**2 - 3*ny**4 - 8*ny**2*nz**2 + 2*ny**2 - 3*nz**4 + 2*nz**2 + 3",
+      "pure_state_result": "1 + nx**4 + ny**4 + nz**4"
+    }
+  ],
+  "scope": "Exact diagnostic of supplied uniform pure product states; no ground-state or phase inference"
+}

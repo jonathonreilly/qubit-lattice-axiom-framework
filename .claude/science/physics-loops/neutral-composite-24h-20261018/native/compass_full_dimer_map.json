@@ -1,0 +1,19 @@
+{
+  "single_site_maps": [
+    "X1=tx rx",
+    "Y1=ty rx",
+    "Z1=tz",
+    "X2=rx",
+    "Y2=tz ry",
+    "Z2=tz rz"
+  ],
+  "bond_checks": [
+    "inter_x",
+    "y_first",
+    "y_second",
+    "z_first",
+    "z_second"
+  ],
+  "exact": true,
+  "scope": "Unitary regrouping of two original sites, not two qubits per physical site or a projection"
+}

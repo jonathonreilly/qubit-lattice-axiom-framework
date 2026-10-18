@@ -1,0 +1,50 @@
+{
+  "rows": [
+    {
+      "L": 4,
+      "sectors": {
+        "P": {
+          "bonds": 96,
+          "mean_per_site": "17/16",
+          "variance_per_site": "1/128"
+        },
+        "Q": {
+          "bonds": 96,
+          "mean_per_site": "0",
+          "variance_per_site": "51/32"
+        }
+      }
+    },
+    {
+      "L": 6,
+      "sectors": {
+        "P": {
+          "bonds": 324,
+          "mean_per_site": "17/16",
+          "variance_per_site": "1/128"
+        },
+        "Q": {
+          "bonds": 324,
+          "mean_per_site": "0",
+          "variance_per_site": "25/16"
+        }
+      }
+    },
+    {
+      "L": 8,
+      "sectors": {
+        "P": {
+          "bonds": 768,
+          "mean_per_site": "17/16",
+          "variance_per_site": "1/128"
+        },
+        "Q": {
+          "bonds": 768,
+          "mean_per_site": "0",
+          "variance_per_site": "25/16"
+        }
+      }
+    }
+  ],
+  "scope": "Exact projected-subspace leakage on a supplied trial state; no invariant low energy sector"
+}

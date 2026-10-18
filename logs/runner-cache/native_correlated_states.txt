@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/native_correlated_states.py
+runner_sha256: 3a7a3d43a0a4e367a61457eecf0cfd790a4b77d2a250d7d850a19fd03f405b0f
+input_fingerprint_sha256: 7659c686e57ce327e1ee3e3ff09aff298b3843c768d239e2f029b6945e799c9c
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 93.91
+status: ok
+----- stdout -----
+reproduced compass_product_state
+reproduced compass_dimer_state
+reproduced compass_dimer_projection
+reproduced compass_full_dimer_map
+reproduced compass_four_site_trial
+reproduced compass_four_site_residual
+reproduced compass_cluster_variational 2x2x2
+reproduced compass_cluster_variational 3x2x2
+reproduced compass_cluster_variational 4x2x2
+reproduced compass_cluster_variational 3x3x2 0
+reproduced compass_cluster_neutral_acceleration 2x2x2
+reproduced compass_cluster_neutral_acceleration 3x2x2
+reproduced compass_cluster_neutral_acceleration 4x2x2
+reproduced compass_cluster_neutral_acceleration 3x3x2
+per_site: one qubit per original site; exact coordinate regrouping
+per_mode: no equilibrium scalar pole claimed
+per_block: exact variational and leakage identities; numerical cluster trials retain failures
+lattice_wide: exact product-state full-H variance, no finite-torus extrapolation
+
+----- stderr -----
+

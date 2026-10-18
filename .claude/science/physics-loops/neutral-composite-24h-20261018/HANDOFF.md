@@ -459,3 +459,8 @@ Status: bounded-support; trace: negative_route_pruning; proposal_allowed: false.
 ## Native energy-density source
 Native energy-density source complete: bond-center readout gives F4=2cx+2cy-3cxcy and windingFx=L-(L-1)cx. Groundrotation cancelsq0exactly; actualQ4pole amplitude -Jgamma(L+2)lambdaL q²/(8sqrt2L), weightJ²gamma²(L+2)²lambda2Lq4/(128L). Includeslambda^(L-2)q4 orientationerrorandM>24+5p actualtail. Densityimprovementconvention explicit, notuniversalgravity. Independentcoefficient/transfer/finalPASS; source-boundreplay.084041sPASS. Nextroot exactprimitive rectangular virtual-loop law: subsetDP suggests perimeter-only Gammaformula, now derivingviafreefermionclosedloop ratherthanfitting; fullnativeallrangeclaim notassumed.
 Status: conditional-support; trace: upstream_support; proposal_allowed: false.
+
+
+## Native primitive-loop interaction
+Native primitive-loop law complete: exact correlation integral gives perimeter/turn Gamma coefficient. Complete order8 directional interactions include overlapping-square folds: diagonal(2,2) repels545JLlambda8/5308416; axis(3,0) attracts-9JLlambda8/32768. EvenR>=8 avoidsaxialwrapalias. Independent methods andfinalreviewPASS; source-boundreplay2.032821sPASS. Noallorderpotential/scattering/bandclaim. Root next fullQ8perimeter16 manifold: finiteenumeration alreadyfinds four-column configurations alongside two-column states, so simpletwo-body truncationisnotassumed.
+Status: bounded-support; trace: upstream_support; proposal_allowed: false.

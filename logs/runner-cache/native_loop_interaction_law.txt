@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/native_loop_interaction_law.py
+runner_sha256: d5f4b754c74a575c71abca0d8d30c9fbac1e40a66746e6f3b0903dd0894a8275
+input_fingerprint_sha256: e279d5bdc06c63caaff570ea645ed6120626f8af7f20d23ebea0587f5686fa6b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.10
+status: ok
+----- stdout -----
+{"status": "bounded-support", "scope": "Exact local primitive and connected interaction coefficients; no observation or isolated-band test", "subset": {"rectangles": [{"a": 1, "b": 1, "coefficient": "-1/128"}, {"a": 2, "b": 1, "coefficient": "-3/8192"}, {"a": 2, "b": 2, "coefficient": "-9/262144"}, {"a": 3, "b": 1, "coefficient": "-9/262144"}, {"a": 3, "b": 2, "coefficient": "-143/33554432"}, {"a": 3, "b": 3, "coefficient": "-663/1073741824"}, {"a": 4, "b": 1, "coefficient": "-143/33554432"}, {"a": 4, "b": 2, "coefficient": "-663/1073741824"}, {"a": 4, "b": 3, "coefficient": "-6783/68719476736"}, {"a": 5, "b": 1, "coefficient": "-663/1073741824"}, {"a": 5, "b": 2, "coefficient": "-6783/68719476736"}], "nonrectangles": [{"N": 8, "turns": 6, "coefficient": "5/262144"}, {"N": 10, "turns": 6, "coefficient": "55/33554432"}, {"N": 12, "turns": 8, "coefficient": "-91/1073741824"}], "linked": [{"dz": 0, "coefficient": "3/65536"}, {"dz": 1, "coefficient": "-127/10616832"}, {"dz": 2, "coefficient": "0"}, {"dz": 3, "coefficient": "0"}], "diagonal_interaction": "545/5308416", "axis_interaction": "-9/32768"}, "independent_feshbach": [{"dz": 0, "raw": "1/131072", "fold": "5/131072", "connected": "3/65536", "E4": "-1/128", "derivative4": "-5/2048"}, {"dz": 1, "raw": "-133/2654208", "fold": "5/131072", "connected": "-127/10616832", "E4": "-1/128", "derivative4": "-5/2048"}, {"dz": 2, "raw": "-5/131072", "fold": "5/131072", "connected": "0", "E4": "-1/128", "derivative4": "-5/2048"}]}
+
+----- stderr -----
+

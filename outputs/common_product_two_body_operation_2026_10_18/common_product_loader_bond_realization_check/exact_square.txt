@@ -1,0 +1,9 @@
+omega = 1
+exact characteristic polynomial = -(E - 2)**4*(-E**4 + 8*E**3 + 16*E**2*x**2 - 20*E**2 - 64*E*x**2 + 16*E + 32*x**2)
+low eigenvalue coefficients = {c2: -2, c4: -3, c6: 3}
+zero-field low-root derivative = -256
+omega = -1
+exact characteristic polynomial = (-E + 2*x + 2)**2*(E + 2*x - 2)**2*(-E**2 + 2*E + 4*x**2)*(-E**2 + 6*E + 4*x**2 - 8)
+low eigenvalue coefficients = {c2: -2, c4: 2, c6: -4}
+zero-field low-root derivative = -256
+Exact coefficient identities verified in both product sectors.

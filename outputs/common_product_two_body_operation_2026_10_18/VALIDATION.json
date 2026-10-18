@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "base_revision": "208b4411fedf4ee75b044eac4de5656c051c11aa",
+  "manifest_sha256": "cf1c24430ee5eb169e24d1bb7f1d86a8d568591d29bd17ae14a8e01a57a9b0c8",
+  "notes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_two_body_operation_publication/NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_TWO_BODY_OPERATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "299339801b7f6714df652ab874a1a65ad504ceaf8ba934c08249dde458986899"
+    }
+  ],
+  "files": 23,
+  "provenance": 4,
+  "links": 18,
+  "nodes": 7260,
+  "edges": 16255,
+  "added_nodes": [
+    "common_product_two_body_operation_bounded_theorem_note_2026-10-18"
+  ],
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical installed source/provenance/link/topology checks only. Scoped analytical checks separately pinned; no new scientific executable or retained audit."
+}

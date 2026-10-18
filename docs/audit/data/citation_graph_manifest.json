@@ -1,6 +1,6 @@
 {
- "edge_count": 16254,
- "node_count": 7259,
+ "edge_count": 16255,
+ "node_count": 7260,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3956,6 +3956,10 @@
   },
   "common_product_stage_seed_bounded_theorem_note_2026-10-18": {
    "deps_hash": "9f8fef059c1b",
+   "out_degree": 1
+  },
+  "common_product_two_body_operation_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "78ad6d993f4b",
    "out_degree": 1
   },
   "common_source_offset_complete_output_bounded_theorem_note_2026-10-17": {

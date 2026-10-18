@@ -1,0 +1,19 @@
+Terms: 48 cross-gadget anticommuting pairs: 132
+Allowed path counts by number of gadgets: {1: 576, 2: 4224}
+Second coefficient = -24 ; second inverse moment = 12
+Raw fourth scalar = 261 ; normalization correction = 288
+Normalized fourth operator:
+IIIIII 27
+IIXXXX -5/2
+IIXXYY -5/2
+IIXXZZ -5/2
+IIYYXX -5/2
+IIYYYY -5/2
+IIYYZZ -5/2
+XXIIXX -5/2
+XXIIYY -5/2
+XXIIZZ -5/2
+YYIIXX -5/2
+YYIIYY -5/2
+YYIIZZ -5/2
+Exact joint coefficient identities verified.

@@ -1,0 +1,289 @@
+{
+  "schema": "bounded-publication-source-exposure-v1",
+  "date": "2026-10-18",
+  "status": "frozen authoring proposal only; all eight argument/check pairs available and completely read; new manuscript integration review unbound",
+  "source_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934",
+  "repository_read_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "intended_stack_parent_pr": 9723,
+  "git_state_observed_by_this_drafter": false,
+  "prospective_packet_root": "outputs/common_product_two_body_operation_2026_10_18",
+  "draft_note": {
+    "source": "NOTE.md",
+    "bytes": 20029,
+    "sha256": "7db80cf49a53d6958278d9a15134f424cc05a60b630427ea6b756138a50ee749"
+  },
+  "sole_canonical_ancestry": {
+    "repository_path": "docs/COMMON_PRODUCT_RESONANT_ROUTER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+    "bytes": 9880,
+    "sha256": "0be4cbc1110a199e320627d8232a850c40ba916252604eceff7c593c6b6de08e",
+    "read_coverage": "complete text in this authoring task"
+  },
+  "new_source_and_exposure_files": [
+    {
+      "source": "common_product_autonomous_loader_interface/PROPOSAL.md",
+      "bytes": 19256,
+      "sha256": "c97bffbbd02d1703103b4f59131706cdd9be8a19a937ea17382b6621df1bd83e",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_autonomous_loader_interface/PROPOSAL.md",
+      "role": "author derivation",
+      "scope": "exact entrance gauge and old-program/environment relocation",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_autonomous_loader_interface_check/REVIEW.md",
+      "bytes": 10055,
+      "sha256": "7a98f648e21cf63b70d481b2cbaba8fac86376763cec0f50678f0ed49e9bd68f",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_autonomous_loader_interface_check/REVIEW.md",
+      "role": "distinct source-exposed same-model check: SUPPORT",
+      "scope": "exact entrance gauge and old-program/environment relocation",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_boundary_input_contract/PROPOSAL.md",
+      "bytes": 15301,
+      "sha256": "b58d047e8b7d6598951f84cb5c275d9709fe19b9b99e0383558536b581332ad9",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_boundary_input_contract/PROPOSAL.md",
+      "role": "author derivation",
+      "scope": "supplied physical boundary code and joint rest-state interface; energy certificate not transferred",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_boundary_input_contract_check/REVIEW.md",
+      "bytes": 10153,
+      "sha256": "dcb52ff26e482a9d175d9e5c357624a51e2c5e40c8cbad72512853698ec2c901",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_boundary_input_contract_check/REVIEW.md",
+      "role": "distinct source-exposed same-model check: SUPPORT",
+      "scope": "supplied physical boundary code and joint rest-state interface; energy certificate not transferred",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_loader_bond_realization/PROPOSAL.md",
+      "bytes": 16896,
+      "sha256": "7e6769927d3138b2812e0b4a0db62df1ef4d1d7096b10acfa2269a5ca8a98d39",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization/PROPOSAL.md",
+      "role": "author derivation",
+      "scope": "isolated positive square and full literal-output bound",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_loader_bond_realization_check/REVIEW.md",
+      "bytes": 11887,
+      "sha256": "f71cdc4e4039f923f99c8ed1f2abab9baedee9f8f9456c1d77ed6a9978b9fd58",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization_check/REVIEW.md",
+      "role": "distinct source-exposed same-model check: SUPPORT",
+      "scope": "isolated positive square and full literal-output bound",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_loader_component_background/PROPOSAL.md",
+      "bytes": 15933,
+      "sha256": "e7d3efb291b47ce6d6265b293ea448de917380ae5a36322664bee857ca7312aa",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_component_background/PROPOSAL.md",
+      "role": "author derivation",
+      "scope": "rectangular local-background interface and preserved fixed-scale certificate failure",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_loader_component_background_check/REVIEW.md",
+      "bytes": 9499,
+      "sha256": "9fc08fb322d2e323d9f8cbaf1669c1b6bcc5954c6857296e5e9adb8e1821738b",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_component_background_check/REVIEW.md",
+      "role": "distinct source-exposed same-model check: SUPPORT",
+      "scope": "rectangular local-background interface and preserved fixed-scale certificate failure",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_full_swap_gadget/PROPOSAL.md",
+      "bytes": 14104,
+      "sha256": "b54c6f29ea780efdcad7f33def048a0b5f9436fe8125ce3c2b2b416cabde4436",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_full_swap_gadget/PROPOSAL.md",
+      "role": "author derivation",
+      "scope": "twelve joint squares; normalized mixed fourth scalar +27; all-output remainder and geometry",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_full_swap_gadget_check/REVIEW.md",
+      "bytes": 12609,
+      "sha256": "6dfaeacb3a3b1b2f2dfdcdf4c2f862b41687dac7a9dc08b35adae1865e4e90e3",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_full_swap_gadget_check/REVIEW.md",
+      "role": "distinct source-exposed same-model check: SUPPORT",
+      "scope": "twelve joint squares; normalized mixed fourth scalar +27; all-output remainder and geometry",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_two_body_scaled_operation/PROPOSAL.md",
+      "bytes": 16901,
+      "sha256": "c1cbdb0eb1b7cc4b865c3ad8b8323b646eeff47e195c3239e297f007f0884bb7",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_scaled_operation/PROPOSAL.md",
+      "role": "author derivation",
+      "scope": "checked exponent-27 simultaneous scale; full operation, branch, phase, cap and count",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_two_body_scaled_operation_check/REVIEW.md",
+      "bytes": 11367,
+      "sha256": "4a1bc10174a72991ef77648188deedce151ad69f3e196ed572648064de6e2f4f",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_scaled_operation_check/REVIEW.md",
+      "role": "distinct source-exposed same-model check: SUPPORT",
+      "scope": "checked exponent-27 simultaneous scale; full operation, branch, phase, cap and count",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_real_two_body_gauge/PROPOSAL.md",
+      "bytes": 16029,
+      "sha256": "1cc8b14dabd52a73f90bedf0186d7c3c92d02a9608aa72ce01ff0303fa3fe1f3",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_real_two_body_gauge/PROPOSAL.md",
+      "role": "author derivation",
+      "scope": "exact real-block conjugacy; six-plus/six-minus supplied cats; actual background reality",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_real_two_body_gauge_check/REVIEW.md",
+      "bytes": 7926,
+      "sha256": "603671b279be1867d9aabca527ac0142bee3e9d915eccf4ed050a2d9ae29db4a",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_real_two_body_gauge_check/REVIEW.md",
+      "role": "distinct source-exposed same-model check: SUPPORT",
+      "scope": "exact real-block conjugacy; six-plus/six-minus supplied cats; actual background reality",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_two_body_background_refinement/PROPOSAL.md",
+      "bytes": 16814,
+      "sha256": "388ebae502c0687fbbf267294d36ad7c32ddfa3dc32c1cd5d8ffbf7cb7af15fa",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_background_refinement/PROPOSAL.md",
+      "role": "author derivation",
+      "scope": "checked bivariate normalized effective operator; explicit global volume; exponent-21 sufficient family",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_two_body_background_refinement_check/REVIEW.md",
+      "bytes": 14501,
+      "sha256": "39e5671ca6c4799ed011819a950af6743cb10eceb76c0e0465336bd8a1ba7f1e",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_background_refinement_check/REVIEW.md",
+      "role": "distinct source-exposed same-model check: SUPPORT",
+      "scope": "checked bivariate normalized effective operator; explicit global volume; exponent-21 sufficient family",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_loader_bond_realization_check/exact_square.py",
+      "bytes": 1406,
+      "sha256": "109b3f33919446f0c7cb7fa5cbcec5209df4f381bdbd145f5ab3661fb46f9ee3",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization_check/exact_square.py",
+      "role": "historical isolated-square checker code; read, not rerun",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_loader_bond_realization_check/exact_square.txt",
+      "bytes": 504,
+      "sha256": "4023c5f3fbd8eeabfe7feaa2d3cea77f694da7e1cece3ea5897dbf28e8247758",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization_check/exact_square.txt",
+      "role": "historical isolated-square checker output; read, not new execution",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_full_swap_gadget_check/exact_paths.py",
+      "bytes": 2893,
+      "sha256": "8edbbd017adad9e2c9061e4f64eb94f9bf795bf9e042092294c33781a6942f7e",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_full_swap_gadget_check/exact_paths.py",
+      "role": "historical joint ordered-path checker code; read, not rerun",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_full_swap_gadget_check/exact_paths.txt",
+      "bytes": 446,
+      "sha256": "e462e64e99d32afccf96e1f0ebf93708409c7369dd045d63fc546b0b5f67ce13",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_full_swap_gadget_check/exact_paths.txt",
+      "role": "historical exact path output; read, not new execution",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "common_product_full_swap_gadget/ROOT_CROSS_PATH_NOTE.md",
+      "bytes": 2166,
+      "sha256": "87619e0723def2d3d9b9e5ba489e18a3d00f11cdfbcefa4c265a09775d9afe20",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/common_product_full_swap_gadget/ROOT_CROSS_PATH_NOTE.md",
+      "role": "unreviewed root design exposure; not independent validation",
+      "read_coverage": "complete text in this authoring task"
+    },
+    {
+      "source": "loader_gadget_prior_art/NOTE.md",
+      "bytes": 1192,
+      "sha256": "eae61f1d6462a847157c09a0fb55fef0f8b63607c7941d24c29f994e807b1e85",
+      "prospective_repository_path": "outputs/common_product_two_body_operation_2026_10_18/loader_gadget_prior_art/NOTE.md",
+      "role": "local prior-art context fully read; underlying external paper not reread by this drafter; no imported theorem",
+      "read_coverage": "complete text in this authoring task"
+    }
+  ],
+  "inherited_interfaces_without_duplicate_copy": [
+    {
+      "source": "common_product_resonant_router_resources/PROPOSAL.md",
+      "bytes": 23097,
+      "sha256": "970a84e5e9157c6a9d5934f00df59491de19e6c88402efe0e14b44e68bc1479b",
+      "existing_repository_path": "outputs/common_product_resonant_router_2026_10_18/source_checks/composition/PROPOSAL.md",
+      "scope": "complete exact finite family, packet/branch target, parameter prescription and resource orders",
+      "read_coverage": "complete text in this authoring task",
+      "copy_into_new_packet": false
+    },
+    {
+      "source": "common_product_resonant_router_resources_check/REVIEW.md",
+      "bytes": 13764,
+      "sha256": "cb0e278a7311651ea9f8d258089cba00a10fb03bb37457d2f8db1d5864af5da7",
+      "existing_repository_path": "outputs/common_product_resonant_router_2026_10_18/source_checks/composition/REVIEW.md",
+      "scope": "distinct finite-resource composition check",
+      "read_coverage": "complete text in this authoring task",
+      "copy_into_new_packet": false
+    },
+    {
+      "source": "common_product_single_control_router/PROPOSAL.md",
+      "bytes": 22595,
+      "sha256": "76b5fd9bdf7a1609dfbc981211a508991a6a24c53686e26f28907210007e1b01",
+      "existing_repository_path": "outputs/common_product_single_control_2026_10_18/source_checks/common_product_single_control_router/PROPOSAL.md",
+      "scope": "full-support program inventory, geometry, real blocks and scalar; later finite family comes from immediate parent",
+      "read_coverage": "complete text in this authoring task",
+      "copy_into_new_packet": false
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/attached_record_2026_10_17/source_checks/autonomous_record_route/PROPOSAL.md",
+      "bytes": 15875,
+      "sha256": "93445d7d52e32859c980f0a0ebc6024238bedc7571d09e145ab1b128d8292f56",
+      "existing_repository_path": "outputs/attached_record_2026_10_17/source_checks/autonomous_record_route/PROPOSAL.md",
+      "scope": "actual real signed writer/phase-cell/terminal positive inventory only; historical provisional dynamics status not transferred",
+      "read_coverage": "complete text in this authoring task",
+      "copy_into_new_packet": false
+    }
+  ],
+  "dependency_summary": [
+    "The parent finite recipe supplies its checked dimensionless packet/whole-horizon branch contract, explicit length/time prescription and exact coefficient definitions.",
+    "Entrance gauge plus boundary contract supply coherent input quantifiers and lossless P/E-to-Q/E relocation; no old energy/ground/Gibbs initialization certificate is transferred.",
+    "Isolated component and joint normalized graph calculation supply the pure-V coefficient and full-output remainder; shared-data mixed scalar is +27, not isolated sum -6.",
+    "Scaled operation supplies the actual residual background, cap, count, phase and complete output composition, plus the separately checked exponent-27 sufficient alternative.",
+    "Bivariate refinement pays Bmax=Lambda(293+8ell), bounds every mixed even-V/background coefficient, and gives the exponent-21 sufficient scale at the same output contract.",
+    "Exact ancilla-only real conjugacy transfers the same fixed Hamiltonian family and error bounds to six-plus/six-minus cat input/output; it does not supply their preparation."
+  ],
+  "coverage_limits": [
+    "The eight source/check pairs and listed necessary interfaces were read completely. Truncated intermediate read output was completed by bounded direct reads before claiming full coverage.",
+    "Historical checker code and saved output were read and pinned, not rerun. This authoring task supplies no new scientific execution or receipt.",
+    "The earlier scattering ancestry is reused through the checked parent interface; it is not recursively duplicated or represented as newly fully audited here.",
+    "The local prior-art context was read; its external-paper reading claim belongs to its original author. No general novelty or imported perturbation theorem is asserted.",
+    "All checks are exposed same-model work with shared ancestry. No blind independence or retained audit is inferred.",
+    "No further runtime variant or unrelated continuation was read or incorporated."
+  ],
+  "metadata_verification": {
+    "operations": "read-only exact-byte SHA-256 and byte counts; equality of three inherited local/canonical source pairs; manuscript prospective-link coverage and sole canonical ancestry check",
+    "scientific_execution": false,
+    "historical_execution_replayed": false,
+    "observed_tool_failure": "An initial python command failed because python was not on PATH (exit 127); subsequent bookkeeping used python3.",
+    "external_receipts_created": false,
+    "publication_or_canonical_review_receipts": null,
+    "additional_observed_failure": "Final read-only validation reached and failed an exclusive-directory assertion because concurrent root integration files existed: EXPECTED_SOURCES.json, GRAPH_BEFORE.json, MANIFEST_BEFORE.json, PR_BODY.md, package.py and validate_installed.py. All preceding source/hash/link assertions succeeded. Those files were not read, modified or removed by this drafter; the corrected validation checks only the two authorized deliverables and source bindings."
+  },
+  "remaining_integration_actions": [
+    "Root must review the new manuscript and actual installation diff, preserve exact mapped source bytes, and bind any real base/check/publication evidence separately."
+  ],
+  "writes": [
+    "NOTE.md",
+    "SOURCES.json"
+  ],
+  "editable_prompt_files_changed": [],
+  "canonical_writes": false,
+  "git_mutations": false,
+  "publication_claimed": false
+}

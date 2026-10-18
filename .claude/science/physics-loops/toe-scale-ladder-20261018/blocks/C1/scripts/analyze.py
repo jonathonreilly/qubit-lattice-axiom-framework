@@ -99,6 +99,8 @@ for r in sorted(rows, key=lambda x: (x["V"], x["L"], x["T"], x["seed"])):
         continue
     nv = r["L"] ** 3
     st = "RK-walk" if r["seed"] >= 11 else f"canon-rot{(r['seed']-1)%3}"
+    if r["seed"] >= 100:
+        st = "W=1 " + ("RK-walk" if r["seed"] % 100 >= 11 else "line")
     if r["L"] == 6 and r["T"] in (12.0, 18.0) and r["seed"] == 1 or r["L"] == 4 and r["seed"] == 1:
         st = "canon"
     mX = sum(r["Sn_" + q][0] for q in ("100", "010", "001")) / nv
@@ -148,6 +150,8 @@ groups = {}
 for r in rows:
     if "ST_100" not in r:
         continue
+    if r["seed"] >= 100:
+        continue
     groups.setdefault((r["V"], r["L"], r["T"]), []).append(r)
 comb_rows = []
 for (V, L, T), rs in sorted(groups.items()):
@@ -196,3 +200,22 @@ for c in comb_rows:
 open(os.path.join(base, "data", "summary_combined.md"), "w").write("\n".join(L2) + "\n")
 print()
 print("\n".join(L2))
+
+# ---------------------------------------------------------------- winding-sector energy gap (mixed estimator, exact in expectation)
+W = ["| V | L | T | E0(W=0) total [chains] | E0(W=1) total [chains] | dE = E(W=1)-E(W=0) | dE*L | dE/L |", "|---|---|---|---|---|---|---|---|"]
+wrows = []
+for (V, L, T) in sorted({(r["V"], r["L"], r["T"]) for r in rows}):
+    npl = 3 * L ** 3
+    w0 = [(r["E_mix_per_plaq"][0] * npl, r["E_mix_per_plaq"][1] * npl) for r in rows if (r["V"], r["L"], r["T"]) == (V, L, T) and r["seed"] < 100]
+    w1 = [(r["E_mix_per_plaq"][0] * npl, r["E_mix_per_plaq"][1] * npl) for r in rows if (r["V"], r["L"], r["T"]) == (V, L, T) and r["seed"] >= 100]
+    if not w0 or not w1:
+        continue
+    a = comb(w0)
+    b = comb(w1)
+    dE = b[0] - a[0]
+    sd = float(np.hypot(a[1], b[1]))
+    wrows.append({"V": V, "L": L, "T": T, "E0": a, "E1": b, "dE": [dE, sd]})
+    W.append(f"| {V} | {L} | {T:g} | {a[0]:.3f}({a[1]:.3f}) [{a[2]}] | {b[0]:.3f}({b[1]:.3f}) [{b[2]}] | {dE:.3f}({sd:.3f}) | {dE*L:.3f}({sd*L:.3f}) | {dE/L:.4f}({sd/L:.4f}) |")
+json.dump(wrows, open(os.path.join(base, "data", "winding_gap.json"), "w"), indent=1)
+open(os.path.join(base, "data", "winding_gap.md"), "w").write("\n".join(W) + "\n")
+print("\n".join(W))

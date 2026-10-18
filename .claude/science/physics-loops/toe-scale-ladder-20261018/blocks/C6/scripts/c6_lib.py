@@ -208,7 +208,7 @@ def sid(v, L):
 
 
 # ---------------------------------------------------------------- F1: edge BKSF
-def edge_bksf(L, order, flux=(0, 0, 0), twisted=True):
+def edge_bksf(L, order, flux=(0, 0, 0), twisted=True, lazy=False):
     """Qubit 3*sid(v)+a on edge v -> v+e_a.  A_(v,a) = X_e Z(edges at v before +a) Z(edges at v+e_a before -a).
     B_v = Z on six edges at v.  S_p (plane normal c) = (-1)^flux[c] A(v,a) A(v+a,b) A(v+b,a) A(v,b)."""
     S = sites(L)
@@ -242,14 +242,14 @@ def edge_bksf(L, order, flux=(0, 0, 0), twisted=True):
         P = prod([A(v, a), A(tadd(v, E3[a], L), b), A(tadd(v, E3[b], L), a), A(v, b)])
         return (P[0], P[1], (P[2] + 2 * flux[c]) % 4)
 
-    gens = [B(v) for v in S] + [plaq(v, c) for v in S for c in range(3)]
+    gens = [] if lazy else [B(v) for v in S] + [plaq(v, c) for v in S for c in range(3)]
     qsite = [S[i // 3] for i in range(n)]
-    meta = dict(A=A, B=B, q=q, kind='edge')
+    meta = dict(A=A, B=B, q=q, kind='edge', plaq=plaq)
     return Code(f'F1 edge-BKSF order={order} flux={flux}', L, n, gens, qsite, meta)
 
 
 # ---------------------------------------------------------------- F2: six-direction site-local
-def sixdir_bksf(L, order, flux=(0, 0, 0)):
+def sixdir_bksf(L, order, flux=(0, 0, 0), lazy=False):
     S = sites(L)
     n = 6 * L ** 3
     pos = {d: i for i, d in enumerate(order)}
@@ -275,9 +275,9 @@ def sixdir_bksf(L, order, flux=(0, 0, 0)):
         P = prod([A(v, a), A(tadd(v, E3[a], L), b), A(tadd(v, E3[b], L), a), A(v, b)])
         return (P[0], P[1], (P[2] + 2 * flux[c]) % 4)
 
-    gens = [B(v) for v in S] + [R(v, a) for v in S for a in range(3)] + [plaq(v, c) for v in S for c in range(3)]
+    gens = [] if lazy else [B(v) for v in S] + [R(v, a) for v in S for a in range(3)] + [plaq(v, c) for v in S for c in range(3)]
     qsite = [S[i // 6] for i in range(n)]
-    return Code(f'F2 six-direction order={order} flux={flux}', L, n, gens, qsite, dict(A=A, B=B, q=q, kind='sixdir'))
+    return Code(f'F2 six-direction order={order} flux={flux}', L, n, gens, qsite, dict(A=A, B=B, q=q, kind='sixdir', plaq=plaq, R=R))
 
 
 # ---------------------------------------------------------------- Majorana helpers (on-site Jordan-Wigner)
@@ -296,7 +296,7 @@ def maj_word(ms):
 
 
 # ---------------------------------------------------------------- F3: Majorana per direction
-def mpd(L, flux=(0, 0, 0)):
+def mpd(L, flux=(0, 0, 0), lazy=False):
     """gamma_{v,d}, d in DIRS6 index order, Majorana index k = d.  B_v = (-i)^3 g0..g5 = Z Z Z,
     A_(v,a) = gamma_{v,+a} gamma_{v+e_a,-a},  S_p = (-1)^flux[c] A(v,a) A(v+a,b) A(v+b,a) A(v,b)."""
     S = sites(L)
@@ -317,13 +317,13 @@ def mpd(L, flux=(0, 0, 0)):
         P = prod([A(v, a), A(tadd(v, E3[a], L), b), A(tadd(v, E3[b], L), a), A(v, b)])
         return (P[0], P[1], (P[2] + 2 * flux[c]) % 4)
 
-    gens = [B(v) for v in S] + [plaq(v, c) for v in S for c in range(3)]
+    gens = [] if lazy else [B(v) for v in S] + [plaq(v, c) for v in S for c in range(3)]
     qsite = [S[i // 3] for i in range(n)]
-    return Code(f'F3 MPD flux={flux}', L, n, gens, qsite, dict(A=A, B=B, g=g, kind='mpd'))
+    return Code(f'F3 MPD flux={flux}', L, n, gens, qsite, dict(A=A, B=B, g=g, kind='mpd', plaq=plaq))
 
 
 # ---------------------------------------------------------------- F4: spinful MPD
-def spinful_mpd(L, flux=(0, 0, 0)):
+def spinful_mpd(L, flux=(0, 0, 0), lazy=False):
     """Ten Majoranas per site (5 qubits): link b_d = gamma_d (d=0..5), matter gamma_6..gamma_9.
     D_v = (-i)^5 gamma_0..gamma_9 (total parity), P_up = -i g6 g7, P_dn = -i g8 g9,
     W_p = (-1)^flux[c] prod of u_e = b_{v,+a} b_{v+e_a,-a} around p."""
@@ -349,9 +349,9 @@ def spinful_mpd(L, flux=(0, 0, 0)):
         P = prod([A(v, a), A(tadd(v, E3[a], L), b), A(tadd(v, E3[b], L), a), A(v, b)])
         return (P[0], P[1], (P[2] + 2 * flux[c]) % 4)
 
-    gens = [D(v) for v in S] + [Pm(v, 6) for v in S] + [Pm(v, 8) for v in S] + [plaq(v, c) for v in S for c in range(3)]
+    gens = [] if lazy else [D(v) for v in S] + [Pm(v, 6) for v in S] + [Pm(v, 8) for v in S] + [plaq(v, c) for v in S for c in range(3)]
     qsite = [S[i // 5] for i in range(n)]
-    return Code(f'F4 spinful-MPD flux={flux}', L, n, gens, qsite, dict(A=A, B=D, g=g, kind='spinful'))
+    return Code(f'F4 spinful-MPD flux={flux}', L, n, gens, qsite, dict(A=A, B=D, g=g, kind='spinful', plaq=plaq, Pm=Pm))
 
 
 # ---------------------------------------------------------------- F5: corner code (transcribed from the repo runner)

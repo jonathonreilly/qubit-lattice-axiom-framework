@@ -114,3 +114,5 @@ Bulk COM: trace_class: upstream_support; source_of_blocker_text: user_goal; reac
 Six-end block: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Native binding and original readout remove chosen collective potential/coupling within specified K1 boundary sector. Finite feature, higher orders and physical scalar remain open.
 
 Finite collision: trace_class upstream_support; reachability_to_target partially_closes; source_of_blocker_text user_goal; artifact_role theorem. Derives original contact readout while exposing native finite-feature escape; on-shell coupling/physical scalar remains open.
+
+Transverse bound: trace_class upstream_support; reachability_to_target partially_closes; source_of_blocker_text user_goal; artifact_role theorem. Nativeisolated neutralmode andoriginalsource arederivedwithoutnewinteraction. Large-featurelimit,higherorders andphysicalscalar remainopen.

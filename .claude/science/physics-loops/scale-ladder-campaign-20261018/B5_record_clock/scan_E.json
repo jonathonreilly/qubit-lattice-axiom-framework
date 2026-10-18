@@ -1,0 +1,660 @@
+[
+ {
+  "cfg": {
+   "dev": "D1",
+   "lam": 0.04,
+   "T": 625.0,
+   "M": 3050
+  },
+  "cls": "SB",
+  "res": {
+   "a_lit": {
+    "tol": 2.6797427043486494e-05,
+    "p": 0.5481440389290542,
+    "verify": 0.010000025240567695,
+    "ok": true,
+    "note": ""
+   },
+   "a_act": {
+    "tol": 0.0075967322539349435,
+    "p": 0.9988304783913196,
+    "verify": 0.010002001180573782,
+    "ok": true,
+    "note": ""
+   },
+   "b_pop": {
+    "tol": 0.012607309919826058,
+    "p": 0.9974002481239194,
+    "verify": 0.00999363324614591,
+    "ok": true,
+    "note": ""
+   },
+   "c_gp": {
+    "tol": 0.0075967322539349435,
+    "p": 0.9988304783913194,
+    "verify": 0.010002001180573778,
+    "ok": true,
+    "note": ""
+   },
+   "c_rel": {
+    "tol": 0.0075967322539349435,
+    "p": 0.9988304783913196,
+    "verify": 0.010002001180573782,
+    "ok": true,
+    "note": ""
+   }
+  },
+  "a_full_at_x0": 0.013159323712655465
+ },
+ {
+  "cfg": {
+   "dev": "D1",
+   "lam": 0.04,
+   "T": 625.0,
+   "M": 3050
+  },
+  "cls": "GC",
+  "res": {
+   "a_lit": {
+    "tol": 1.2233602057704746e-05,
+    "p": 0.9999951800606943,
+    "verify": 0.010000016669109135,
+    "ok": true,
+    "note": ""
+   },
+   "a_act": {
+    "tol": 1.2233602057704746e-05,
+    "p": 0.9999951800606943,
+    "verify": 0.010000016669109135,
+    "ok": true,
+    "note": ""
+   },
+   "b_pop": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   },
+   "c_gp": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   },
+   "c_rel": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   }
+  },
+  "a_full_at_x0": 0.013078714858975368
+ },
+ {
+  "cfg": {
+   "dev": "D1",
+   "lam": 0.02,
+   "T": 1250.0,
+   "M": 6050
+  },
+  "cls": "SB",
+  "res": {
+   "a_lit": {
+    "tol": 1.9829982946499497e-05,
+    "p": 0.34603139529238863,
+    "verify": 0.010000091395405253,
+    "ok": true,
+    "note": ""
+   },
+   "a_act": {
+    "tol": 0.007612712965898616,
+    "p": 0.9988255394647562,
+    "verify": 0.010001999145582934,
+    "ok": true,
+    "note": ""
+   },
+   "b_pop": {
+    "tol": 0.012566165050056826,
+    "p": 0.997413841748256,
+    "verify": 0.009993632519504449,
+    "ok": true,
+    "note": ""
+   },
+   "c_gp": {
+    "tol": 0.007612712965898616,
+    "p": 0.9988255394647562,
+    "verify": 0.010001999145582932,
+    "ok": true,
+    "note": ""
+   },
+   "c_rel": {
+    "tol": 0.007612712965898616,
+    "p": 0.9988255394647562,
+    "verify": 0.010001999145582934,
+    "ok": true,
+    "note": ""
+   }
+  },
+  "a_full_at_x0": 0.013131714061576382
+ },
+ {
+  "cfg": {
+   "dev": "D1",
+   "lam": 0.02,
+   "T": 1250.0,
+   "M": 6050
+  },
+  "cls": "GC",
+  "res": {
+   "a_lit": {
+    "tol": 6.116801028852454e-06,
+    "p": 0.9999951800606984,
+    "verify": 0.010000016669109157,
+    "ok": true,
+    "note": ""
+   },
+   "a_act": {
+    "tol": 6.116801028852454e-06,
+    "p": 0.9999951800606984,
+    "verify": 0.010000016669109157,
+    "ok": true,
+    "note": ""
+   },
+   "b_pop": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   },
+   "c_gp": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   },
+   "c_rel": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   }
+  },
+  "a_full_at_x0": 0.013078714858975209
+ },
+ {
+  "cfg": {
+   "dev": "D1",
+   "lam": 0.01,
+   "T": 2500.0,
+   "M": 12050
+  },
+  "cls": "SB",
+  "res": {
+   "a_lit": {
+    "tol": 1.4499793834272856e-05,
+    "p": 0.19698829985292257,
+    "verify": 0.01000085725425236,
+    "ok": true,
+    "note": ""
+   },
+   "a_act": {
+    "tol": 0.007620683290183323,
+    "p": 0.9988231067360848,
+    "verify": 0.010001998028135797,
+    "ok": true,
+    "note": ""
+   },
+   "b_pop": {
+    "tol": 0.012546175828251694,
+    "p": 0.9974140162803272,
+    "verify": 0.009993675253899359,
+    "ok": true,
+    "note": ""
+   },
+   "c_gp": {
+    "tol": 0.0076206832901833214,
+    "p": 0.9988231067360853,
+    "verify": 0.01000199802813579,
+    "ok": true,
+    "note": ""
+   },
+   "c_rel": {
+    "tol": 0.007620683290183323,
+    "p": 0.9988231067360848,
+    "verify": 0.010001998028135797,
+    "ok": true,
+    "note": ""
+   }
+  },
+  "a_full_at_x0": 0.013117987308117307
+ },
+ {
+  "cfg": {
+   "dev": "D1",
+   "lam": 0.01,
+   "T": 2500.0,
+   "M": 12050
+  },
+  "cls": "GC",
+  "res": {
+   "a_lit": {
+    "tol": 3.058400514426238e-06,
+    "p": 0.9999951800606975,
+    "verify": 0.010000016669109284,
+    "ok": true,
+    "note": ""
+   },
+   "a_act": {
+    "tol": 3.058400514426238e-06,
+    "p": 0.9999951800606975,
+    "verify": 0.010000016669109284,
+    "ok": true,
+    "note": ""
+   },
+   "b_pop": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   },
+   "c_gp": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   },
+   "c_rel": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   }
+  },
+  "a_full_at_x0": 0.013078714858975157
+ },
+ {
+  "cfg": {
+   "dev": "D1",
+   "lam": 0.005,
+   "T": 5000.0,
+   "M": 24050
+  },
+  "cls": "SB",
+  "res": {
+   "a_lit": {
+    "tol": 1.0504510198918408e-05,
+    "p": 0.05279897646042541,
+    "verify": 0.009999933844294599,
+    "ok": true,
+    "note": "first-crossing bisection (metric non-power-law)"
+   },
+   "a_act": {
+    "tol": 0.0076246635839132765,
+    "p": 0.9988218996029222,
+    "verify": 0.010001997444417866,
+    "ok": true,
+    "note": ""
+   },
+   "b_pop": {
+    "tol": 0.012536175352929666,
+    "p": 0.9974149081938855,
+    "verify": 0.009993715000980818,
+    "ok": true,
+    "note": ""
+   },
+   "c_gp": {
+    "tol": 0.007624663583913275,
+    "p": 0.9988218996029228,
+    "verify": 0.010001997444417866,
+    "ok": true,
+    "note": ""
+   },
+   "c_rel": {
+    "tol": 0.0076246635839132765,
+    "p": 0.9988218996029222,
+    "verify": 0.010001997444417866,
+    "ok": true,
+    "note": ""
+   }
+  },
+  "a_full_at_x0": 0.013111143106395384
+ },
+ {
+  "cfg": {
+   "dev": "D1",
+   "lam": 0.005,
+   "T": 5000.0,
+   "M": 24050
+  },
+  "cls": "GC",
+  "res": {
+   "a_lit": {
+    "tol": 1.5292002572131096e-06,
+    "p": 0.9999951800607656,
+    "verify": 0.01000001666910859,
+    "ok": true,
+    "note": ""
+   },
+   "a_act": {
+    "tol": 1.5292002572131096e-06,
+    "p": 0.9999951800607656,
+    "verify": 0.01000001666910859,
+    "ok": true,
+    "note": ""
+   },
+   "b_pop": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   },
+   "c_gp": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   },
+   "c_rel": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   }
+  },
+  "a_full_at_x0": 0.013078714858975478
+ },
+ {
+  "cfg": {
+   "dev": "D1",
+   "lam": 0.04,
+   "T": 1250.0,
+   "M": 6050
+  },
+  "cls": "SB",
+  "res": {
+   "a_lit": {
+    "tol": 1.3398607887726267e-05,
+    "p": 0.12964836529105322,
+    "verify": 0.009999899571808782,
+    "ok": true,
+    "note": "first-crossing bisection (metric non-power-law)"
+   },
+   "a_act": {
+    "tol": 0.007596732253935132,
+    "p": 0.9988304783913199,
+    "verify": 0.010002001180573641,
+    "ok": true,
+    "note": ""
+   },
+   "b_pop": {
+    "tol": 0.012603805933587993,
+    "p": 0.9974553037439167,
+    "verify": 0.00999351767576351,
+    "ok": true,
+    "note": ""
+   },
+   "c_gp": {
+    "tol": 0.00759673225393513,
+    "p": 0.9988304783913199,
+    "verify": 0.010002001180573643,
+    "ok": true,
+    "note": ""
+   },
+   "c_rel": {
+    "tol": 0.007596732253935132,
+    "p": 0.9988304783913199,
+    "verify": 0.010002001180573641,
+    "ok": true,
+    "note": ""
+   }
+  },
+  "a_full_at_x0": 0.013159323712655142
+ },
+ {
+  "cfg": {
+   "dev": "D1",
+   "lam": 0.04,
+   "T": 1250.0,
+   "M": 6050
+  },
+  "cls": "GC",
+  "res": {
+   "a_lit": {
+    "tol": 6.116801028852473e-06,
+    "p": 0.9999951800606921,
+    "verify": 0.010000016669109189,
+    "ok": true,
+    "note": ""
+   },
+   "a_act": {
+    "tol": 6.116801028852473e-06,
+    "p": 0.9999951800606921,
+    "verify": 0.010000016669109189,
+    "ok": true,
+    "note": ""
+   },
+   "b_pop": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   },
+   "c_gp": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   },
+   "c_rel": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   }
+  },
+  "a_full_at_x0": 0.013078714858975144
+ },
+ {
+  "cfg": {
+   "dev": "D1",
+   "lam": 0.04,
+   "T": 2500.0,
+   "M": 12050
+  },
+  "cls": "SB",
+  "res": {
+   "a_lit": {
+    "tol": 6.699303943863133e-06,
+    "p": -0.028216452186055566,
+    "verify": 0.009999887864233222,
+    "ok": true,
+    "note": "first-crossing bisection (metric non-power-law)"
+   },
+   "a_act": {
+    "tol": 0.007596732253935059,
+    "p": 0.9988304783913046,
+    "verify": 0.010002001180573766,
+    "ok": true,
+    "note": ""
+   },
+   "b_pop": {
+    "tol": 0.012603805933587788,
+    "p": 0.9974553037438436,
+    "verify": 0.009993674315804996,
+    "ok": true,
+    "note": ""
+   },
+   "c_gp": {
+    "tol": 0.0075967322539350615,
+    "p": 0.9988304783913055,
+    "verify": 0.010002001180573766,
+    "ok": true,
+    "note": ""
+   },
+   "c_rel": {
+    "tol": 0.007596732253935059,
+    "p": 0.9988304783913046,
+    "verify": 0.010002001180573766,
+    "ok": true,
+    "note": ""
+   }
+  },
+  "a_full_at_x0": 0.013159323712655211
+ },
+ {
+  "cfg": {
+   "dev": "D1",
+   "lam": 0.04,
+   "T": 2500.0,
+   "M": 12050
+  },
+  "cls": "GC",
+  "res": {
+   "a_lit": {
+    "tol": 3.0584005144262505e-06,
+    "p": 0.9999951800606998,
+    "verify": 0.010000016669109107,
+    "ok": true,
+    "note": ""
+   },
+   "a_act": {
+    "tol": 3.0584005144262505e-06,
+    "p": 0.9999951800606998,
+    "verify": 0.010000016669109107,
+    "ok": true,
+    "note": ""
+   },
+   "b_pop": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   },
+   "c_gp": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   },
+   "c_rel": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   }
+  },
+  "a_full_at_x0": 0.013078714858975111
+ },
+ {
+  "cfg": {
+   "dev": "D1",
+   "lam": 0.04,
+   "T": 5000.0,
+   "M": 24050
+  },
+  "cls": "SB",
+  "res": {
+   "a_lit": {
+    "tol": 3.3496519719315667e-06,
+    "p": 0.02236207372672828,
+    "verify": 0.009999884936791516,
+    "ok": true,
+    "note": "first-crossing bisection (metric non-power-law)"
+   },
+   "a_act": {
+    "tol": 0.007596732253935154,
+    "p": 0.9988304783912925,
+    "verify": 0.01000200118057356,
+    "ok": true,
+    "note": ""
+   },
+   "b_pop": {
+    "tol": 0.012603987969885272,
+    "p": 0.9974871527231581,
+    "verify": 0.009993817813542782,
+    "ok": true,
+    "note": ""
+   },
+   "c_gp": {
+    "tol": 0.007596732253935154,
+    "p": 0.9988304783912925,
+    "verify": 0.01000200118057356,
+    "ok": true,
+    "note": ""
+   },
+   "c_rel": {
+    "tol": 0.007596732253935154,
+    "p": 0.9988304783912925,
+    "verify": 0.01000200118057356,
+    "ok": true,
+    "note": ""
+   }
+  },
+  "a_full_at_x0": 0.013159323712655002
+ },
+ {
+  "cfg": {
+   "dev": "D1",
+   "lam": 0.04,
+   "T": 5000.0,
+   "M": 24050
+  },
+  "cls": "GC",
+  "res": {
+   "a_lit": {
+    "tol": 1.529200257213116e-06,
+    "p": 0.9999951800607026,
+    "verify": 0.010000016669108922,
+    "ok": true,
+    "note": ""
+   },
+   "a_act": {
+    "tol": 1.529200257213116e-06,
+    "p": 0.9999951800607026,
+    "verify": 0.010000016669108922,
+    "ok": true,
+    "note": ""
+   },
+   "b_pop": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   },
+   "c_gp": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   },
+   "c_rel": {
+    "tol": Infinity,
+    "p": null,
+    "verify": null,
+    "ok": true,
+    "note": "exact cancellation"
+   }
+  },
+  "a_full_at_x0": 0.013078714858975202
+ }
+]

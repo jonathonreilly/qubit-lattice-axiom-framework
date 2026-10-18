@@ -6,3 +6,18 @@
   if abs(np.log(ys / E)) < np.log(1.1) or xs >= 10.0:
 /home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_tolerance_scan.py:131: RuntimeWarning: divide by zero encountered in log
   s_ = np.log(y1 / y2) / np.log(x1 / x2)
+# scan E: 14 jobs, 2201s, budget e=0.01, K=4
+D1 lam=0.04 T=625 M=3050 SB: a_lit=2.680e-05(p=0.55,PASS) a_act=7.597e-03(p=1.0,PASS) b_pop=1.261e-02(p=1.0,PASS) c_gp=7.597e-03(p=1.0,PASS) c_rel=7.597e-03(p=1.0,PASS)
+D1 lam=0.04 T=625 M=3050 GC: a_lit=1.223e-05(p=1.0,PASS) a_act=1.223e-05(p=1.0,PASS) b_pop=inf(p=None,PASS) c_gp=inf(p=None,PASS) c_rel=inf(p=None,PASS)
+D1 lam=0.02 T=1250 M=6050 SB: a_lit=1.983e-05(p=0.35,PASS) a_act=7.613e-03(p=1.0,PASS) b_pop=1.257e-02(p=1.0,PASS) c_gp=7.613e-03(p=1.0,PASS) c_rel=7.613e-03(p=1.0,PASS)
+D1 lam=0.02 T=1250 M=6050 GC: a_lit=6.117e-06(p=1.0,PASS) a_act=6.117e-06(p=1.0,PASS) b_pop=inf(p=None,PASS) c_gp=inf(p=None,PASS) c_rel=inf(p=None,PASS)
+D1 lam=0.01 T=2500 M=12050 SB: a_lit=1.450e-05(p=0.2,PASS) a_act=7.621e-03(p=1.0,PASS) b_pop=1.255e-02(p=1.0,PASS) c_gp=7.621e-03(p=1.0,PASS) c_rel=7.621e-03(p=1.0,PASS)
+D1 lam=0.01 T=2500 M=12050 GC: a_lit=3.058e-06(p=1.0,PASS) a_act=3.058e-06(p=1.0,PASS) b_pop=inf(p=None,PASS) c_gp=inf(p=None,PASS) c_rel=inf(p=None,PASS)
+D1 lam=0.005 T=5000 M=24050 SB: a_lit=1.050e-05(p=0.05,PASS) a_act=7.625e-03(p=1.0,PASS) b_pop=1.254e-02(p=1.0,PASS) c_gp=7.625e-03(p=1.0,PASS) c_rel=7.625e-03(p=1.0,PASS)
+D1 lam=0.005 T=5000 M=24050 GC: a_lit=1.529e-06(p=1.0,PASS) a_act=1.529e-06(p=1.0,PASS) b_pop=inf(p=None,PASS) c_gp=inf(p=None,PASS) c_rel=inf(p=None,PASS)
+D1 lam=0.04 T=1250 M=6050 SB: a_lit=1.340e-05(p=0.13,PASS) a_act=7.597e-03(p=1.0,PASS) b_pop=1.260e-02(p=1.0,PASS) c_gp=7.597e-03(p=1.0,PASS) c_rel=7.597e-03(p=1.0,PASS)
+D1 lam=0.04 T=1250 M=6050 GC: a_lit=6.117e-06(p=1.0,PASS) a_act=6.117e-06(p=1.0,PASS) b_pop=inf(p=None,PASS) c_gp=inf(p=None,PASS) c_rel=inf(p=None,PASS)
+D1 lam=0.04 T=2500 M=12050 SB: a_lit=6.699e-06(p=-0.03,PASS) a_act=7.597e-03(p=1.0,PASS) b_pop=1.260e-02(p=1.0,PASS) c_gp=7.597e-03(p=1.0,PASS) c_rel=7.597e-03(p=1.0,PASS)
+D1 lam=0.04 T=2500 M=12050 GC: a_lit=3.058e-06(p=1.0,PASS) a_act=3.058e-06(p=1.0,PASS) b_pop=inf(p=None,PASS) c_gp=inf(p=None,PASS) c_rel=inf(p=None,PASS)
+D1 lam=0.04 T=5000 M=24050 SB: a_lit=3.350e-06(p=0.02,PASS) a_act=7.597e-03(p=1.0,PASS) b_pop=1.260e-02(p=1.0,PASS) c_gp=7.597e-03(p=1.0,PASS) c_rel=7.597e-03(p=1.0,PASS)
+D1 lam=0.04 T=5000 M=24050 GC: a_lit=1.529e-06(p=1.0,PASS) a_act=1.529e-06(p=1.0,PASS) b_pop=inf(p=None,PASS) c_gp=inf(p=None,PASS) c_rel=inf(p=None,PASS)

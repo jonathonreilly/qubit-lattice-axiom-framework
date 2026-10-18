@@ -306,9 +306,21 @@ if __name__ == "__main__":
             full = {k: sp.simplify(sp.sympify(s.get(k, k)).subs(sub)) for k in QALL + [s1, s2]}
             ok2 = all(sp.simplify(full[k] - exp_vals[k] - lam_vals[k]) == 0 for k in QALL) and full[s1] == 1
     check("M2", ok2, "{G[xi], C(N)} at O(E^2,F^2) = H_EM(s1 xi.grad N + s2 N div xi) mod Gauss, over the 126-parameter coupling: ONE-parameter family = Maxwell metric stress (M0) + lam tr h H_EM, with s1 = 1, s2 = -2 lam")
-    sol2x = sp.solve(eqs2x, QALL + [s1, s2], dict=True)
-    same = len(sol2x) == 1 and len(sol2) == 1 and all(sp.simplify(sp.sympify(sol2x[0].get(k, k)) - sp.sympify(sol2[0].get(k, k))) == 0 for k in QALL + [s1, s2])
-    check("M2b", same, "the same family solves M2 exactly (without restricting to div E = 0): the Gauss constraint does not enter {G,C} at this order with P_A")
+    # where Gauss enters {G,C}: with the metric stress (lam = 0, s1 = 1, s2 = 0)
+    xiv = [J(n) for n in XI]
+    coup_exp = lin.xreplace(TOFV)
+    rr = sp.Symbol("rr")
+    xE = sum(xiv[k] * J(EN[k]) for k in range(DIM))
+    npr = sum(xiv[k] * grad("N")[k] for k in range(DIM))
+    out = {}
+    for name, gen in (("P_A", poynting(xiv)), ("G_Lie", lie_gen(XI))):
+        brx = bracket(gen, N * hem_density()) + bracket(b.g_grav_density(XI), N * coup_exp)
+        exact = not eqs_of(zero_in_lapse(brx - npr * hem_density(), "N"))
+        rsol = sp.solve(eqs_of(zero_in_lapse(brx - npr * hem_density() - rr * g2 * N * xE * divE(), "N")), rr, dict=True)
+        out[name] = (exact, rsol)
+    print("M2b {generator: (closes exactly without Gauss, Gauss multiplier r in Gauss[r g^2 N xi.E])}:", out)
+    check("M2b", out["P_A"][0] is False and out["P_A"][1] == [{rr: 1}] and out["G_Lie"][0] is True and out["G_Lie"][1] == [{rr: 0}],
+          "where Gauss enters {G,C}: with the metric stress, {P_A[xi], C(N)} = H_EM(xi.grad N) + Gauss[g^2 N xi.E] exactly (an E-dependent Gauss multiplier), while {G_Lie[xi], C(N)} = H_EM(xi.grad N) with no Gauss term; for {C,C} it is the reverse (M1, M1b). Either way the algebra closes only with Gauss first class")
     eqs3 = l3_maxwell_eqs()
     zero = {v: 0 for v in QALL + [r1, r2]}
     check("M3b", all(sp.simplify(e.subs(zero)) == 0 for e in eqs3), "{C,C} alone does not force a coupling: T = 0, xi' = 0 solves the h E F order (as for the scalar: the source is fixed by {G,C})")
@@ -319,7 +331,7 @@ if __name__ == "__main__":
     check("M4", ok4, f"scalar-lapse rule s2 = 0: coupling UNIQUE = Maxwell metric stress at cB = kappa, structure function forced r1 = -1, r2 = 0 (g^ij = delta - h, as for the scalar); (r1, r2) = ({sol4[0].get(r1) if sol4 else None}, {sol4[0].get(r2) if sol4 else None})")
     sol5 = sp.solve([e.subs(s2, 2 * lam) for e in eqs2k] + eqs3, QALL + [s1, r1, r2], dict=True)
     r2l = sp.simplify(sol5[0].get(r2, r2)) if len(sol5) == 1 else None
-    check("M5", len(sol5) == 1 and r2l == -2 * lam and sol5[0].get(r1) == -1, f"s2 = 2 lam: r2 = {r2l}, r1 = -1 (B14 L5 gives r2 = -2 lam for the scalar: identical function, so a common structure function needs a common lam)")
+    check("M5", len(sol5) == 1 and r2l == -2 * lam and sol5[0].get(r1) == -1, f"s2 = 2 lam: r2 = {r2l} = -s2, r1 = -1 (B14 L5 gives r2 = -2 lam for the scalar at the same s2: identical function, so a common structure function needs a common lam)")
     # M6 combined scalar + Maxwell
     CN = N * (b.kin_density() - K * b.r1_density() + b.hm_density() + hem_density())
     CM = M * (b.kin_density() - K * b.r1_density() + b.hm_density() + hem_density())
@@ -343,7 +355,7 @@ if __name__ == "__main__":
         if ok6:
             sub = {free[0]: sp.solve(sp.Eq(sp.sympify(s.get(s2, s2)), -2 * lam), free[0])[0]}
             full = {k: sp.simplify(sp.sympify(s.get(k, k)).subs(sub)) for k in unk}
-            ok6 = all(sp.simplify(full[k] - expk[k] - lam_vals[k].subs(cB, kappa)) == 0 for k in QALL) and sp.simplify(full[b.A[0]] - (-sp.Rational(1, 4) + lam / 2)) == 0 and sp.simplify(full[r2] + 2 * lam) == 0
-    check("M6", ok6, f"scalar + Maxwell with shared N' and shared structure function: O(eps) {{C,C}} closes iff (c, cB) = (kappa, kappa) [{solc}]; the coupled solution space is ONE parameter: both species get their metric stress plus the SAME lam tr h H (r1 = -1, r2 = -2 lam)")
+            ok6 = all(sp.simplify(full[k] - expk[k] - lam_vals[k].subs(cB, kappa)) == 0 for k in QALL) and sp.simplify(full[b.A[0]] - (-sp.Rational(1, 4) + lam / 2)) == 0 and sp.simplify(full[r2] - 2 * lam) == 0
+    check("M6", ok6, f"scalar + Maxwell with shared N' and shared structure function: O(eps) {{C,C}} closes iff (c, cB) = (kappa, kappa) [{solc}]; the coupled solution space is ONE parameter: both species get their metric stress plus the SAME lam tr h H (s2 = -2 lam, r1 = -1, r2 = 2 lam = -s2, matching M5's r2 = -s2)")
     m7()
     print(f"TOTAL: PASS={RES['pass']} FAIL={RES['fail']}")

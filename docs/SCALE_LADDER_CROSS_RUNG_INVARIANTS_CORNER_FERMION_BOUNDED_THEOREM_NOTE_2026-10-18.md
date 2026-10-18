@@ -272,7 +272,7 @@ The ladder does unify the lanes, but not by deriving everything from the finest 
   - The one-sided timing forces an O(a) lattice obstruction.
 - **Prior art.** In the continuum this is the known Teitelboim / Hojman–Kuchař–Teitelboim / Schwinger universality. What is new is its exact lattice realisation and the explicit obstructions.
 - **Selection rule (B17, independently checked).**
-  - Closure needs every low-energy species to carry the gravity sector's isotropic cone metric. Lapse rescalings, density improvements, anisotropic relabellings and coordinate changes cannot evade this.
+  - Closure needs every low-energy species to carry the gravity sector's cone metric. That metric is isotropic when the gravity relabelling is cubic-covariant: {G, G} alone would also allow a constant anisotropic metric, but then all species would have to share it. Lapse rescalings, density improvements, anisotropic relabellings and coordinate changes cannot evade this.
   - The repo's 2026-09-25 walk passes. It is naive-type, and the invariance of Σ sin² k_j under k_j → k_j + π makes all eight species isotropic at one speed. So the closure route reproduces its α = K/4.
   - The parameter-free corner step fails. Its ±k* cones are isotropic, but the doublers at the same quasi-energy are uniaxial. They sit at D4 points that no species-exchanging symmetry relates to ±k*: k → k + π(1,1,1) exchanges only orbits of the same type.
   - This is conditional on the step's long-wavelength, band-projected theory coupling to a lapse as a scalar-weighted energy density. A global local Floquet Hamiltonian is not asserted, since the step is gapless away from ±π/2.

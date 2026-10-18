@@ -1,0 +1,9 @@
+== (a1) exact invariant / gauge-invariant counts (polynomial orbit sums, QQ) ==
+   d=4 group=S       : ambient 550, invariant forms 38, gauge-invariant 2
+   d=4 group=B       : ambient 550, invariant forms 9, gauge-invariant 1
+   d=4 group=B3xZ2   : ambient 550, invariant forms 26, gauge-invariant 2
+   d=3 group=S       : ambient 126, invariant forms 26, gauge-invariant 1
+   d=3 group=B       : ambient 126, invariant forms 9, gauge-invariant 1
+   d=4 group=trivial : ambient 550, invariant forms 550, gauge-invariant 10
+   d=3 group=trivial : ambient 126, invariant forms 126, gauge-invariant 1
+

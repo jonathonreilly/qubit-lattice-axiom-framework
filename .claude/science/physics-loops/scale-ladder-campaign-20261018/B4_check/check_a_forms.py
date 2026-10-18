@@ -129,7 +129,8 @@ def gauge_inv_dim(d, kind):
 def levi(n):
     E = {}
     for p in itertools.permutations(range(n)):
-        E[p] = sp.combinatorics.Permutation(list(p)).signature()
+        inv = sum(1 for i in range(n) for j in range(i + 1, n) if p[i] > p[j])
+        E[p] = -1 if inv % 2 else 1
     return E
 
 
@@ -176,14 +177,19 @@ def ray_equal(v1, v2):
 
 
 if __name__ == "__main__":
+  import sys
+  if "--skip-a1" not in sys.argv:
     print("== (a1) exact invariant / gauge-invariant counts (polynomial orbit sums, QQ) ==")
     for d, kind in ((4, "S"), (4, "B"), (4, "B3xZ2"), (3, "S"), (3, "B"), (4, "trivial"), (3, "trivial")):
         n, m, g, *_ = gauge_inv_dim(d, kind)
         print(f"   d={d} group={kind:8s}: ambient {n}, invariant forms {m}, gauge-invariant {g}")
+  if True:
 
     # (a2) eps-eps-M theorem in d = 4
     print("\n== (a2) eps-eps-M forms span the full gauge-invariant space (d=4) ==")
-    n, m, g, hc, mons, idx, nullB = gauge_inv_dim(4, "trivial")
+    hc, mons = monomials(4)
+    idx = {mm: i for i, mm in enumerate(mons)}
+    g = 10  # from (a1), exact
     rows, ent = gauge_variation_matrix(4, hc, mons)
     basisM = []
     for i in range(4):
@@ -195,11 +201,14 @@ if __name__ == "__main__":
     for j, v in enumerate(basisM):
         for i, c in v.items():
             Lmat[i, j] = c
-    Vm = sp.zeros(len(rows), len(mons))
+    Vd = DomainMatrix({r: {} for r in range(len(rows))}, (len(rows), len(mons)), QQ)
+    Vl = [[QQ(0)] * len(mons) for _ in range(len(rows))]
     for (r, c), v in ent.items():
-        Vm[r, c] = v
-    print(f"   rank of {{L_M}} over the 10 symmetric M: {Lmat.rank()};  gauge variation of all L_M zero: "
-          f"{(Vm * Lmat).is_zero_matrix};  dim gauge-invariant space (no symmetry): {g}")
+        Vl[r][c] = QQ(v)
+    Vd = DomainMatrix(Vl, (len(rows), len(mons)), QQ)
+    Ld = DomainMatrix([[QQ(int(Lmat[i, j])) for j in range(10)] for i in range(len(mons))], (len(mons), 10), QQ)
+    print(f"   rank of {{L_M}} over the 10 symmetric M: {Ld.rank()};  gauge variation of all L_M zero: "
+          f"{(Vd * Ld).to_Matrix().is_zero_matrix};  dim gauge-invariant space (no symmetry): {g}")
     FP = fierz_pauli_vec(4, hc, idx, mons)
     ok, r = ray_equal(LM_vec([[int(i == j) for j in range(4)] for i in range(4)], 4, hc, idx), FP)
     print(f"   L_I ray-equal to flat Fierz-Pauli/linearised EH: {ok} (ratio {r})")

@@ -101,3 +101,13 @@ PASS [numerical] iso chi=0.00: [K,H] defect scales as a^1 (slope 1.01); [K1,K2] 
 PASS [numerical] iso chi=1.57: [K,H] defect scales as a^2 (slope 2.00); [K1,K2] spin-part defect O(a) (slope 1.00); continuous-rotation defect O(a^3) (slope 3.00)
    gold chi=0.00: |1/2 grad E_a^2 - s^2 p| [4.73514292e-04 1.18361224e-04 2.95886610e-05] (slope 2.00); (1/4)||[d1H,d2H] - continuum|| [2.70834284e-04 6.76875441e-05 1.69199519e-05] (slope 2.00); rotation defect [2.19380780e-05 5.48476006e-06 1.37120507e-06] (slope 2.00)
 PASS [numerical] gold chi=0.00: all three defects O(a^2) (slopes 2.00, 2.00, 2.00)
+   gold chi=1.57: |1/2 grad E_a^2 - s^2 p| [4.75879669e-04 1.18656782e-04 2.96255744e-05] (slope 2.00); (1/4)||[d1H,d2H] - continuum|| [2.70782799e-04 6.76801719e-05 1.69192757e-05] (slope 2.00); rotation defect [2.19380523e-05 5.48475926e-06 1.37120512e-06] (slope 2.00)
+PASS [numerical] gold chi=1.57: all three defects O(a^2) (slopes 2.00, 2.00, 2.00)
+--- Gaussian packet: lattice-momentum weight at |k_a| >= pi/2 (1D factor), FFT vs erfc
+   Sigma/a = 1.0: weight 1.689e-03, erfc(kappa sqrt2 Sigma/a) = 1.680e-03
+PASS [numerical] Sigma/a=1.0: doubler-region weight equals the Gaussian tail erfc(pi Sigma/(sqrt2 a)) to 5%
+   Sigma/a = 1.5: weight 2.476e-06, erfc(kappa sqrt2 Sigma/a) = 2.448e-06
+PASS [numerical] Sigma/a=1.5: doubler-region weight equals the Gaussian tail erfc(pi Sigma/(sqrt2 a)) to 5%
+   Sigma/a = 2.0: weight 3.383e-10, erfc(kappa sqrt2 Sigma/a) = 3.317e-10
+PASS [numerical] Sigma/a=2.0: doubler-region weight equals the Gaussian tail erfc(pi Sigma/(sqrt2 a)) to 5%
+TOTAL: PASS=70 FAIL=0

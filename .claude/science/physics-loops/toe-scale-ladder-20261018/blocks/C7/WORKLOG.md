@@ -30,3 +30,9 @@
   O(a^2) rotation breaking in H_a. I changed the expectation to 3 on the plane and kept
   2 elsewhere, and I record the revision in the script. c7_exact: 37/0.
 - Wrote NOTE.md. Re-running c7_numeric (about 25 min at nice 10 on one core).
+- c7_numeric run 2: 70/0. run_all --sum-only: TOTAL: PASS=107 FAIL=0 (logs/run_all.log).
+  A full run_all reruns both scripts in about 25 min on one core.
+- Not done: group-level boost convergence (open). C3 is measured, not certified.
+  b* TRIM values are floating-point.
+- Load-bearing for independent review: Theorem B's O(a) term (a/2)|p|^2 W.tau and the
+  twist dichotomy. Separately, the parent runner's 8/45 series coefficient (NOTE §9).

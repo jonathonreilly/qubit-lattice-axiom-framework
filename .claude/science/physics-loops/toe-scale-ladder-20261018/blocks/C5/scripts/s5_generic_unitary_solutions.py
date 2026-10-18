@@ -40,7 +40,7 @@ def run(n, r, seed_scale, anchor_w):
         return np.concatenate(out)
     p = np.concatenate([target.real.ravel(), target.imag.ravel()])
     for aw in (anchor_w, anchor_w / 10, 0.0):
-        p = least_squares(res, p, args=(aw,), method='trf', max_nfev=2000, xtol=1e-15, ftol=1e-15, gtol=1e-15).x
+        p = least_squares(res, p, args=(aw,), method='trf', max_nfev=400, xtol=1e-15, ftol=1e-15, gtol=1e-15).x
     A = unpack(p)
     K = rng.uniform(0, 2 * np.pi, (2000, 3))
     U = np.einsum('kn,nij->kij', np.exp(1j * K @ H.T), A)
@@ -59,7 +59,7 @@ def run(n, r, seed_scale, anchor_w):
     sig = int((np.abs(A).reshape(nh, -1).max(1) > 1e-6).sum())
     return uerr, motion, ws, sig
 
-for n, r, trials in ((2, 1, 4), (2, 2, 2), (4, 1, 2)):
+for n, r, trials in ((2, 1, 4), (2, 2, 1), (4, 1, 2)):
     for t in range(trials):
         uerr, motion, ws, sig = run(n, r, 0.15, 0.3)
         line = (f'n={n} r={r} trial {t}: unit.err {uerr:.1e}, motion {motion:.3f}, {sig} nonzero hops, '

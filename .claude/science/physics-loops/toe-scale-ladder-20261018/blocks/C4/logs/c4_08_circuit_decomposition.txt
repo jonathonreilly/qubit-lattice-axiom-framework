@@ -1,0 +1,1 @@
+PASS solution 1: symplectic, det 1, O-covariant with phases (full)

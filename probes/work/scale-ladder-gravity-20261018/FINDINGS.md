@@ -158,3 +158,21 @@ Write omega^2 = k^2 (1 + alpha k^2).
   - a segment-wise matter coupling (stress at the segment midpoints) and its Ward order;
   - whether anything fixes the face weight;
   - O(k^4) through the reading.
+
+## Phase 5 (PR #9821) — owner asked for items 2-5
+- F25 (fermion): Whitney Hodge Laplacians on the D4 cone (whitney.py, dk*.py) have 1, 4, 6, 4, 1
+  massless modes at lambda = k^2 (16 Dirac-Kahler components, no doublers), with a gap >= 25 and
+  no O(k^4) on-shell term in any degree. So spins 0, 1/2 and 1 share the cone through k^4.
+- F26 (RP; rp*.py): the Gaussian OS test discriminates (NN passes; higher-derivative and
+  consistent-mass P1 fail). The D4 P1 scalar with lumped mass and the Whitney 1-form with diagonal
+  mass are RP at both tick planes. All 72 P1 couplings are ferromagnetic or zero.
+  Not done: fermion RP (Grassmann); graviton (conformal mode unbounded).
+- F27 (partners; r2*.py): lambda sum delta_h^2 with lambda = -0.1 lifts the Kuhn fifth direction
+  and gaps the D4 partners, with no tachyons (lambda = +0.1 gives tachyons on Kuhn). The static
+  response is then linearised GR for every reading tested on both complexes.
+  Caution: the line-map source with a least-squares readout is an inconsistent pair (gave -0.33);
+  use a consistent left-inverse reading.
+- F28 (bridge; poisson.py): the D4 static response is Poisson at leading order (Newton
+  coefficient, nu = 1) but not an exact lattice Poisson equation (O(k^2) corrections, about
+  8-16% at |k| = 1). The record side (which record observable sources T_tt, how lengths are
+  registered) needs owner decisions on the vacuum and formation; it is not derived here.

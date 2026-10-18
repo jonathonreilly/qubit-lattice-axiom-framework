@@ -105,7 +105,13 @@ def _fun2jet(expr):
 
 def load_R12_jets(path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "R12_jets.pkl")):
     if os.path.exists(path):
-        return pickle.load(open(path, "rb"))
+        out = pickle.load(open(path, "rb"))
+        # re-register the unpickled jet symbols with the jet calculus (KEY is per-process)
+        for ex in out:
+            for s in ex.free_symbols:
+                f, a = str(s).rsplit("_", 1)
+                assert J(f, tuple(int(c) for c in a)) == s
+        return out
     import grav_common
     here = os.path.dirname(os.path.abspath(__file__))
     R1f, R2f = grav_common.load_R12(os.path.join(here, "R12.pkl"))

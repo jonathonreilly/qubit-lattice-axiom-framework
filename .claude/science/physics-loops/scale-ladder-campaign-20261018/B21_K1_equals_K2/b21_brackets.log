@@ -1,1 +1,1 @@
-FAIL: A0 [0s] jets R2 = block-62 / 09-23 R2 symbol and R1 = p^2 tr h - p.h.p (same normalisation): the copied pickle is [sqrt g R]^(1),(2) of g = delta + h
+PASS: A0 [0s] jets R2 = block-62 / 09-23 R2 symbol and R1 = p^2 tr h - p.h.p (same normalisation): the copied pickle is [sqrt g R]^(1),(2) of g = delta + h

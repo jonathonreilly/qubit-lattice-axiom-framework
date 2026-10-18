@@ -1,0 +1,19 @@
+[PASS] each PSG rotation acts on the 64 L=4 momenta as k -> R k + c_R with ONE constant c_R in pi Z^3 (affine, shift class mod 2pi)  8 distinct shift classes
+[PASS] T = 12 rotations (identity, 3 axis C2, 8 C3)  
+  (a) T-fixed (k in pi/16 units): [(np.int64(8), np.int64(24), np.int64(8)), (np.int64(24), np.int64(8), np.int64(24))]  O-fixed: [(np.int64(8), np.int64(24), np.int64(8)), (np.int64(24), np.int64(8), np.int64(24))]
+  (b) T-fixed (k in pi/16 units): [(np.int64(8), np.int64(24), np.int64(8))]  O-fixed: [(np.int64(8), np.int64(24), np.int64(8))]
+  (c) T-fixed (k in pi/16 units): [(np.int64(0), np.int64(0), np.int64(0)), (np.int64(4), np.int64(4), np.int64(4))]  O-fixed: [(np.int64(0), np.int64(0), np.int64(0)), (np.int64(4), np.int64(4), np.int64(4))]
+  (d) T-fixed (k in pi/16 units): [(np.int64(0), np.int64(0), np.int64(0)), (np.int64(8), np.int64(8), np.int64(8))]  O-fixed: [(np.int64(0), np.int64(0), np.int64(0)), (np.int64(8), np.int64(8), np.int64(8))]
+[PASS] (a) mod 2pi Z^3: T-fixed = O-fixed = {+-k*}  
+[PASS] (b) mod 2pi Z^3 + pi(1,1,1): one class {k* ~ -k*}  
+[PASS] (c) mod (pi/2)Z^3: T-fixed = {0, (pi/4)(1,1,1)}  
+[PASS] (d) mod pi Z^3: T-fixed = {0, (pi/2)(1,1,1)}  
+  little groups (order, has C4, has C3, # invariant coordinate axes): {('a', 'k*+pi e_x'): (8, True, False, 1), ('a', 'k*+pi(1,1,0)'): (8, True, False, 1), ('d', 'X_r=(pi/2)e_x'): (8, True, False, 1), ('d', 'M_r=(pi/2)(1,1,0)'): (8, True, False, 1), ('c', 'X_r=(pi/4)e_x'): (8, True, False, 1), ('c', 'M_r=(pi/4)(1,1,0)'): (8, True, False, 1)}
+[PASS] cube doublers, X_r, M_r: rotation little groups of order 8 with a C4 and no C3 (D4), one invariant axis (uniaxial allowed)  
+[PASS] (b) words without R_L: W(k + pi(1,1,1)) = W(k)  
+[PASS] (b) control: with R_L, W(k + pi(1,1,1)) != W(k) in spectrum  
+[PASS] S^2(k + (pi/2) e_i) = S^2(k) Z_i, Z_i = diag(-1 on corners with a component along i)  
+[PASS] (c) Z_i W(k) Z_i = W(k + (pi/2)e_i) for S2.H20.S2.L202 (exact taste)  
+[PASS] (d) Z_i W(k) Z_i = W(k + pi e_i) for S.H13.S.L202  
+
+TOTAL: PASS=12 FAIL=0   [14s]

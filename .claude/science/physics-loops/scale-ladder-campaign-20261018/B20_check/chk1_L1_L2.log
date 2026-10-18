@@ -1,0 +1,13 @@
+[PASS] on-site symmetric algebra: dim 6, non-commutative, contains H_on and Lambda; a random unitary in it is symmetric on the full lattice  
+[PASS] k*: all 24 rotations and all translations fix k* (mod 2pi); little group (Bloch reps) of order 96; commutant dim 6, centre dim 3, isotypic ranks [2, 2, 8] (E1/2, E5/2 once each, G3/2 twice); S, S^2, R_L, on-site letters commute with it  
+[PASS] -k*: all 24 rotations and all translations fix -k* (mod 2pi); little group (Bloch reps) of order 96; commutant dim 6, centre dim 3, isotypic ranks [2, 2, 8] (E1/2, E5/2 once each, G3/2 twice); S, S^2, R_L, on-site letters commute with it  
+[PASS] D+ = {H_on=2} n {Lambda=-2sqrt2}, D- = {H_on=2} n {Lambda=+2sqrt2} are 2-dim, invariant under both little groups; <f>_D isotropic sqrt2/3, untilted, det signs (+,-)  
+[PASS] selection rule: <D+| d_j F |D-> = 0 at +-k* for F = S, S^2, R_L (E1/2 x T1 has no E5/2)  max 7.0e-11
+[FAIL] L1 (finite differences, 29 directions, general non-commuting on-site letters): every exactly 2-fold +-k* level has dispersion E +- |n_S| (sqrt2/3)|q|, untilted  512 doublets, worst deviation 1.0e-04 (FD step 1e-7; first run with 1e-5 failed by O(h) curvature near close neighbour levels)
+[PASS] flux convention control: lower band of +sigma.q has flux -1 (so flux = -sign det M), of a det<0 cone +1  
+[PASS] L1 chirality: own lattice Berry flux of every tested doublet = -sign(n_S) eps_D, i.e. det-M chirality sign(n_S) eps_D  40 fluxes
+[PASS] 4-fold D+ + D- levels at +-k* (n_S != 0): two isotropic, untilted cones of the SAME speed |n_S| sqrt2/3 (opposite chirality) - an isotropic Dirac point, not covered by L1/L2 or the screen  20 such levels tested (50 found in 160 words; 640 G3/2 4-fold levels seen)
+[PASS] L2: W(+-k*) acts on D+,D- as (lp(-1)^nR, lm) at k* and (lp, lm(-1)^nR) at -k*, with general on-site letters  
+[PASS] L2: doublet net chirality at E (k* D+ level exactly 2-fold) is 0 iff nR odd and lp = lm, else +-1 or +-2  {(1, True, 0): 17, (1, False, 1): 18, (1, False, -1): 35, (0, False, 2): 61, (0, False, -2): 70}; G3/2 4-fold level also at E in 0 words
+
+TOTAL: PASS=10 FAIL=1   [424s]

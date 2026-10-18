@@ -1,0 +1,40 @@
+[PASS] pickles: 69,894 pairs, 648 without a band crossing  69894, 648
+[PASS] (a) sampled rejected pairs: k* level at E is exactly 2-fold in the checker's model; an r sign change is found and bisects to an explicit k where ONE non-degenerate eigenphase equals E (a band crossing)  25/25 k* levels, 25/25 crossings
+[PASS] (a) r(k) is real (det W k-independent: det S = prod sig_c e^{ik.sum f_c}, sum f_c = 0)  max rel imag 1.9e-12
+    ('taste', ('S', 'o', 'S', 'o'), ('H6.0', 'L202'), 3.1416, 0.94281, (np.float64(0.7906), np.float64(1.2471), np.float64(0.0)))
+    ('taste', ('S', 'o', 'S', 'o'), ('H21*L330', 'L202'), 1.5708, 0.94281, (np.float64(0.4934), np.float64(1.1675), np.float64(0.0)))
+    ('taste', ('S2', 'o', 'S2', 'o'), ('H02*L020', 'L202'), -0.0, 1.88562, (np.float64(1.6971), np.float64(2.2627), np.float64(0.0)))
+    ('cliff1', ('S', 'R', 'o'), ('H21*L330',), 1.5708, 0.4714, (np.float64(0.2467), np.float64(0.5837), np.float64(0.0)))
+    ('cliff1', ('S', 'S', 'R', 'o'), ('H20*L000',), 0.0, 0.94281, (np.float64(0.4934), np.float64(0.6741), np.float64(0.0)))
+    ('cliff2_0-1-2-3', ('S', 'o', 'R', 'o'), ('L220', 'H22'), -0.0, 0.4714, (np.float64(0.1673), np.float64(0.6323), np.float64(0.0)))
+    ('cliff2_0-1-2-3', ('S', 'o', 'R', 'o'), ('H20', 'L000'), -3.1416, 0.4714, (np.float64(0.3953), np.float64(0.6236), np.float64(0.0)))
+    ('cliff2_0-1-2-3', ('S', 'o', 'R', 'o'), ('H02', 'L200'), -0.0, 0.4714, (np.float64(0.1414), np.float64(0.5657), np.float64(0.0)))
+    ('cliff2_8-9-10', ('S', 'R', 'o', 'S', 'o'), ('H02', 'L200'), -0.0, 0.94281, (np.float64(0.0), np.float64(0.2828), np.float64(0.0)))
+    ('cliff2_4-5-6-7', ('S2', 'o', 'S2', 'o'), ('H00', 'L222'), -0.0, 1.88562, (np.float64(0.4488), np.float64(4.2412), np.float64(0.0)))
+    ('cliff2_4-5-6-7', ('S', 'R', 'o', 'S', 'R', 'o'), ('L220', 'L222'), 3.1416, 0.94281, (np.float64(0.0), np.float64(0.4714), np.float64(0.0)))
+    ('cliff1', ('S', 'R', 'o'), ('H21*L110',), -1.5708, 0.4714, (np.float64(0.3953), np.float64(0.6236), np.float64(0.0)))
+    ('cliff2_8-9-10', ('S', 'R', 'o', 'S', 'o'), ('L202', 'L222'), 3.1416, 0.94281, (np.float64(0.0), np.float64(0.2828), np.float64(0.0)))
+    ('cliff1', ('S', 'S', 'R', 'o'), ('H22*L000',), -0.0, 0.94281, (np.float64(0.4565), np.float64(1.2471), np.float64(0.0)))
+    ('cliff2_0-1-2-3', ('S', 'R', 'o', 'R', 'o'), ('L202', 'L200'), 3.1416, 0.4714, ('4fold', 0.4714045203080275, 1.4142135625012795, 0.0))
+    ('pi6', ('S', 'o', 'R'), ('L0.6.0',), -3.1416, 0.4714, (np.float64(0.4243), np.float64(0.5657), np.float64(0.0)))
+    ('cliff1', ('S2', 'o'), ('H03*L332',), 1.5708, 0.94281, (np.float64(0.2925), np.float64(2.0875), np.float64(0.0)))
+    ('cliff1', ('S', 'R', 'S', 'o'), ('H02*L020',), 3.1416, 0.94281, (np.float64(0.2828), np.float64(1.1314), np.float64(0.0)))
+    ('cliff2_0-1-2-3', ('S', 'o', 'S', 'o'), ('L202', 'H22'), 3.1416, 0.94281, (np.float64(0.4934), np.float64(1.1675), np.float64(0.0)))
+    ('cliff2_0-1-2-3', ('S', 'o', 'R', 'o'), ('L002', 'L022'), -3.1416, 0.4714, (np.float64(0.4243), np.float64(0.5657), np.float64(0.0)))
+    ('cliff1', ('S', 'R', 'o'), ('H03*L310',), 1.5708, 0.4714, (np.float64(0.4243), np.float64(0.5657), np.float64(0.0)))
+    ('pi6', ('S', 'R', 'o'), ('H7.7',), -2.618, 0.4714, (np.float64(0.2467), np.float64(0.5837), np.float64(0.0)))
+    ('cliff2_8-9-10', ('S', 'R', 'o', 'S', 'o'), ('L000', 'L020'), -3.1416, 0.94281, (np.float64(0.2828), np.float64(1.1314), np.float64(0.0)))
+    ('cliff2_8-9-10', ('S', 'R', 'o', 'S', 'o'), ('L000', 'H20'), 0.0, 0.94281, (np.float64(0.4934), np.float64(0.6741), np.float64(0.0)))
+[FAIL] (b) 24 sampled survivors: at least one recorded witness is, in the checker's model, an exactly 2-fold node at E whose FD cone is anisotropic or of another speed  23/24
+   node k/pi ((np.float64(0.0), np.float64(0.0), np.float64(0.0)), '2fold', 1.88562, 1.88562, np.float64(1.0))
+   node k/pi ((np.float64(0.0), np.float64(0.0), np.float64(0.25)), '2fold', 1.5813, 2.49426, np.float64(-1.0))
+   node k/pi ((np.float64(0.0), np.float64(0.25), np.float64(0.0)), '2fold', 1.5813, 2.49426, np.float64(-1.0))
+   node k/pi ((np.float64(0.0), np.float64(0.25), np.float64(0.25)), '2fold', 1.5813, 2.49426, np.float64(1.0))
+   node k/pi ((np.float64(0.25), np.float64(0.0), np.float64(0.0)), '2fold', 1.5813, 2.49426, np.float64(-1.0))
+   node k/pi ((np.float64(0.25), np.float64(0.0), np.float64(0.25)), '2fold', 1.5813, 2.49426, np.float64(1.0))
+   node k/pi ((np.float64(0.25), np.float64(0.25), np.float64(0.0)), '2fold', 1.5813, 2.49426, np.float64(1.0))
+   node k/pi ((np.float64(0.25), np.float64(0.25), np.float64(0.25)), '2fold', 1.88562, 1.88562, np.float64(-1.0))
+[PASS] (c) census: 8 nodes per (pi/2)-cube, all exactly 2-fold; 2 isotropic at 4sqrt2/3 with opposite flux; 6 uniaxial (3 at (pi/4)e_i type, 3 at (pi/4)(1,1,0) type) with opposite flux between the types; total flux 0  uniaxial speed ranges [(1.5813, 2.49426)]
+[PASS] (c) chord-safe Lipschitz certificate (Bauer-Fike, 2 sin(d/2) > Lip * half-diagonal): E = -pi is not reached in the (pi/2)-cube outside 0.03-balls around the 8 nodes  25472 evaluations, 0 uncertified leaf cells
+
+TOTAL: PASS=5 FAIL=1   [23s]

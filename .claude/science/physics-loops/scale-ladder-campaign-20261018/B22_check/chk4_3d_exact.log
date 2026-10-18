@@ -1,0 +1,52 @@
+[PASS] X1 [numerical identity] W_iso eigenphase om = arccos(c_x c_y c_z - s_x s_y s_z); W unitary, det 1
+        max deviation 5.8e-16 over 3000 k
+
+  X2: relative error of the first-order symbol -i q.(1/2)grad(h^2) vs the exact element, shell |k| = kc
+  step  dir   |q|      kc=0.05     kc=0.1      kc=0.2      kc=0.4
+  iso   x    0.02    4.28e-08   1.65e-07   6.13e-07   3.11e-06
+  iso   x    0.04    1.91e-07   6.68e-07   3.07e-06   1.12e-05
+  iso   z    0.02    4.20e-08   1.82e-07   6.25e-07   3.09e-06
+  iso   z    0.04    1.59e-07   6.53e-07   2.82e-06   1.10e-05
+  iso   xz   0.02    6.67e-05   6.70e-05   6.80e-05   7.02e-05
+  iso   xz   0.04    2.67e-04   2.67e-04   2.72e-04   2.80e-04
+  iso   xyz  0.02    1.28e-03   7.14e-04   3.36e-04   2.01e-04
+  iso   xyz  0.04    5.18e-03   2.58e-03   1.50e-03   8.02e-04
+  ani   x    0.02    1.07e-07   5.11e-07   1.83e-06   8.19e-06
+  ani   x    0.04    4.24e-07   2.01e-06   8.73e-06   3.27e-05
+  ani   z    0.02    1.51e-07   6.35e-07   2.92e-06   1.24e-05
+  ani   z    0.04    6.96e-07   2.85e-06   9.88e-06   5.04e-05
+  ani   xz   0.02    8.54e-05   9.12e-05   8.63e-05   1.04e-04
+  ani   xz   0.04    3.66e-04   3.45e-04   3.94e-04   4.33e-04
+  ani   xyz  0.02    1.07e-03   5.93e-04   3.01e-04   1.87e-04
+  ani   xyz  0.04    4.21e-03   2.17e-03   1.39e-03   8.26e-04
+[FAIL] X2 [numerical, exact elements] both steps: first-order symbol residual scales ~ q^2 (ratio 3-5 on doubling q) and grows toward the node at fixed q for off-axis lapse gradients (the expansion parameter is q^2/(|k| a))
+        e.g. iso xyz |q|=0.02: [0.00128 0.00071 0.00034 0.0002 ]
+
+  X3: kappa fit K = kappa * (-i q.k) on the shell kc = 0.1, and residual vs -i q.g.k
+  iso  q || x   : kappa = 0.9981   rel. residual vs -i q.g.k = 0.036
+  iso  q || z   : kappa = 0.9946   rel. residual vs -i q.g.k = 0.053
+  iso  q || xz  : kappa = 0.9961   rel. residual vs -i q.g.k = 0.045
+  iso  q || xyz : kappa = 1.0049   rel. residual vs -i q.g.k = 0.042
+  ani  q || x   : kappa = 0.9933   rel. residual vs -i q.g.k = 0.106
+  ani  q || z   : kappa = 3.9829   rel. residual vs -i q.g.k = 0.024
+  ani  q || xz  : kappa = 2.4554   rel. residual vs -i q.g.k = 0.028
+  ani  q || xyz : kappa = 1.9725   rel. residual vs -i q.g.k = 0.040
+[PASS] X3 [numerical, exact elements] node-metric form: residual vs -i q.g.k < 15% at kc = 0.1 for both steps (the remainder is the steps' linear-in-k anisotropy); uniaxial kappa ~ 1 (q || x) and ~ 4 (q || z)
+        kappa_ani: x 0.9933, z 3.9829
+
+  X4: N = e^{ia.x}, M = e^{ib.x}, a = eps*(1,0,0), b = eps*(0,1,0.5) (a x b != 0); midpoint m on shell |m| = 0.15
+  step  eps     |E - S1|/|E|   |E - S1 - S2|/|E|   |S2 - S2_triad|/|S2_triad|
+  iso   0.01     4.084e-02        9.506e-05            0.127
+  iso   0.02     8.356e-02        3.975e-04            0.126
+  ani   0.01     3.129e-02        1.175e-04            0.172
+  ani   0.02     7.342e-02        5.475e-04            0.168
+[PASS] X4 [numerical, exact elements] with grad N x grad M != 0 both steps' brackets carry the second-order spin term (1/4)a_i b_j[d_i h, d_j h]: including it cuts the residual > 5x; at |m| = 0.15 it is the node-triad Kosmann form (i/2)s.(cof(e)(a x b)) up to the steps' O(|k|) anisotropy (uniaxial: cof(e) = diag(2,2,1), not g = diag(1,1,4))
+
+TOTAL: PASS=3 FAIL=1  (5.1 s)
+
+  X4b: |S2 - S2_triad|/|S2_triad| vs |m| (eps = 0.005)
+  iso: 0.1152  0.0583  0.0316
+  ani: 0.1464  0.0789  0.0438
+[PASS] X4b [numerical] the step spin term tends to the node-triad Kosmann form linearly in |m| (ratio ~2 per halving)
+
+TOTAL (incl. X4b): PASS=4 FAIL=1  (5.3 s)

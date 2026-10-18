@@ -142,3 +142,6 @@ Original-readout threshold response complete: exact root resolvent yields unit b
 
 
 Whole-column block final scoped review PASS. Native many-spin light quasimodes and low-readout bounds separate from fixedL first winding coefficient. Replay.884154sPASS, exact subsets throughL16. Trace upstream_support to original microscopic scalar/coupling request; no retained proposal, no observational identification. Root next derives original readout first winding coefficient from the same native virtual paths, with no added interaction.
+
+
+Native column readout block: root derives leading static cornerformfactor and contrast3Delta4/(JsqrtV), plus exactmarkedCatalan winding source coefficientA_L=6(L-1)(L-2)/(2L-3). Realnativeconnection checked. A regularenergyproportionaloperator ansatz fails because static andwinding ratiosdiffer. Independentchecks/finalreviewPASS after correcting finiteordererrorcondition; replay1.361371sPASS. Noempiricalidentification. Nextrootconstructive fixedbox lightwindow: groundmixchangesvertex to(b-a)K; originalsourceweightpositive atgap~lambda4, orderlambda2L. Independentmath/physicalchecksPASS, canonicalproofnext. NoisolatedpoleorgrowingLuniformity.

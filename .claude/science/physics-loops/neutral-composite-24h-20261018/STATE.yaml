@@ -5,8 +5,8 @@ deadline: 2026-10-19T00:47:35Z
 final_packaging_at: 2026-10-19T00:32:35Z
 checkpoint_interval_minutes: 30
 actual_current_surface_status: bounded-support
-active_route: native energy-density coupling to neutral mode
-next_action: package common-metric boundary and check energy-density marked paths
+active_route: exact primitive rectangular interaction law
+next_action: package energy source and derive rectangular loop coefficient
 main_at_launch: fa841753c1a6296e5ad45518375660b0f1004769
 prior_campaigns: stopped
 proposal_allowed: false
@@ -79,3 +79,5 @@ checkpoint_history: |
   Native Q6 diagonal-pair block complete: six-cycle/perimeter minimum, positive lambda16 orientation flip, lambda16 translation cancellation, lambda18 detour-controlled staggered minimum(pi,pi). Curvature K6=8gamma*d/Delta-16gamma²b/Delta²>0. Symmetrized microscopic X/Y-column probe exactly transverse-A1 atstaggeredmomentum, poleweight1-5lambda²/2. Actual-H fixed-p transfer and matched-source bounds checked. Independent motion/source/finalPASS; source-bound replay.150187sPASS. Scalar u12 excluded fromabsolute orientationenergy, cancelsmotion. No3DLorentz/cosmologicalidentification. Nextroot tests common-metric compatibility across derived feature branches, informedbyupdatedPR9718head965c6f3dbd6d2023d4227886143e78a80861a1e6; nootherPRresults imported.
 
   Common-metric compatibility check complete: actual squared-energy curvature ratios Q4/charged~lambda², Q8/charged~lambda4, Q6/charged~lambda8. Ratios invariant undercommonunits, source normalizationcannotrepair. Necessary commonrelativisticrest-dispersion condition fails inthisweakcouplingwindow; notfrontspeed, observationalexclusionorallregimeno-go. Independent/finalPASS, source-boundreplay.045903sPASS. Root next derives nativeHamiltonian energy-density readout coupling: preliminary cancellationatq0 and q² amplitude frominhomogeneousbondmarks, underfocusedchecks.
+
+  Native energy-density source complete: bond-center readout gives F4=2cx+2cy-3cxcy and windingFx=L-(L-1)cx. Groundrotation cancelsq0exactly; actualQ4pole amplitude -Jgamma(L+2)lambdaL q²/(8sqrt2L), weightJ²gamma²(L+2)²lambda2Lq4/(128L). Includeslambda^(L-2)q4 orientationerrorandM>24+5p actualtail. Densityimprovementconvention explicit, notuniversalgravity. Independentcoefficient/transfer/finalPASS; source-boundreplay.084041sPASS. Nextroot exactprimitive rectangular virtual-loop law: subsetDP suggests perimeter-only Gammaformula, now derivingviafreefermionclosedloop ratherthanfitting; fullnativeallrangeclaim notassumed.

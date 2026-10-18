@@ -212,3 +212,8 @@ Status: conditional-support; trace: upstream_support; proposal_allowed: false.
 ## Common-metric boundary
 Common-metric compatibility check complete: actual squared-energy curvature ratios Q4/charged~lambda², Q8/charged~lambda4, Q6/charged~lambda8. Ratios invariant undercommonunits, source normalizationcannotrepair. Necessary commonrelativisticrest-dispersion condition fails inthisweakcouplingwindow; notfrontspeed, observationalexclusionorallregimeno-go. Independent/finalPASS, source-boundreplay.045903sPASS. Root next derives nativeHamiltonian energy-density readout coupling: preliminary cancellationatq0 and q² amplitude frominhomogeneousbondmarks, underfocusedchecks.
 Status: bounded-support; trace: negative_route_pruning; proposal_allowed: false.
+
+
+## Native energy-density source
+Native energy-density source complete: bond-center readout gives F4=2cx+2cy-3cxcy and windingFx=L-(L-1)cx. Groundrotation cancelsq0exactly; actualQ4pole amplitude -Jgamma(L+2)lambdaL q²/(8sqrt2L), weightJ²gamma²(L+2)²lambda2Lq4/(128L). Includeslambda^(L-2)q4 orientationerrorandM>24+5p actualtail. Densityimprovementconvention explicit, notuniversalgravity. Independentcoefficient/transfer/finalPASS; source-boundreplay.084041sPASS. Nextroot exactprimitive rectangular virtual-loop law: subsetDP suggests perimeter-only Gammaformula, now derivingviafreefermionclosedloop ratherthanfitting; fullnativeallrangeclaim notassumed.
+Status: conditional-support; trace: upstream_support; proposal_allowed: false.

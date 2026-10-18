@@ -1,6 +1,6 @@
 {
- "edge_count": 16267,
- "node_count": 7273,
+ "edge_count": 16269,
+ "node_count": 7274,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16649,6 +16649,10 @@
   "original_record_thermodynamic_dynamics_and_energy_density_bounded_theorem_note_2026-09-30": {
    "deps_hash": "89fc0be4bfdf",
    "out_degree": 4
+  },
+  "original_seed_static_bias_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "8a3c1579a7ad",
+   "out_degree": 2
   },
   "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27": {
    "deps_hash": "37b34cf3d5e2",

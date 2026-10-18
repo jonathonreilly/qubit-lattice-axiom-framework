@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "manifest_sha256": "2b22fe72a2340358568e824855aea99174f4ca5518d84e2b2993e9eefd65a647",
+  "files": 2,
+  "provenance": 3,
+  "links": 5,
+  "nodes": 7274,
+  "edges": 16269,
+  "new_nodes": {
+    "original_seed_static_bias_bounded_theorem_note_2026-10-18": {
+      "path": "docs/ORIGINAL_SEED_STATIC_BIAS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "deps": [
+        "real_endpoint_autonomous_output_bounded_theorem_note_2026-10-17",
+        "hopping_controlled_finite_output_transfer_bounded_theorem_note_2026-10-17"
+      ]
+    }
+  },
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical source identity, provenance, links and topology only; no scientific execution or retained audit. New note dependencies require ROOT inspection."
+}

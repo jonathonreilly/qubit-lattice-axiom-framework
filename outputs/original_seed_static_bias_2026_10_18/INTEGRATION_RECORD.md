@@ -1,0 +1,7 @@
+# Integration record
+
+ROOT fully read source67bb3fc30e42ef5fb716376af518e381b3c3b527dc27e49d91eb4a0a4424cef9, distinct reviewf1e277b618e33653990b057dbdf11eeb35c77fea7268e03dc826175d7512838a and final manuscript57a9d7f167d3283a59d459aed133ccb37e9d42483eabf1369ddaae80e0852008. Scoped mathematical support accepted. Canonicalfc7d8466aad72a74f8566111ea22947b497890bc72c1e814a1c401a9fcef2561 changes only provenance links and removes a draft-path sentence; full diff read. Frozen source/review unchanged.
+
+The exact original full-sector positive inventory yields a relative-energy readiness certificate under uniform head bias4, a whole-old-band gap and unchanged cap28. One-head operation is exactly transferred with common phase exp(-i4t), retaining literal old aging and every output. This is not cooling, a prescribed-unknown-input preparation channel, excitation loading, autonomous release or native supplier identification. Source-exposed same-model selective checking with shared ancestry, no retained audit or physical validation. Original endpoint/hopping canonical identities are actual inherited dependencies. Calibration and spectral ancestors are not newly recertified.
+
+Base PR9754, branchphysics-loop/toe-literal-direct-generator-20261018, revision99dafd7ed463c529cca4f13b20a1456e869add23, for branch continuity only. Main fetched unchanged fa841753c1a6296e5ad45518375660b0f1004769 at09:15UTC. No editable prompt, axiom, science merge or main-push change.

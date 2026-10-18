@@ -1,0 +1,3 @@
+# Publication scope check
+
+ROOT fully read source1a9e/check69c077, local9e68/checkbc0e54, weights7bae/check7d8e, and full author manuscript6024. The final added corollary is exactly the checked weights extension; source manifests preserve actual exposure and common ancestry. The reference gap is a full-space lower bound, the leakage estimate retains every output, and the effective energy-nonconserving comparator is distinguished from the exact energy-conserving installed Hamiltonian. All scalar/free phases, caps/counts, selected window and shrinking relative width are explicit. No scientific execution, physical validation or retained audit is claimed. Final diff, hashes, links and graph changes are checked in separate receipts before publication.

@@ -1,6 +1,6 @@
 {
  "edge_count": 16259,
- "node_count": 7265,
+ "node_count": 7266,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14693,6 +14693,10 @@
   "local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_bounded_theorem_note_2026-09-14": {
    "deps_hash": "86fee23e1c7d",
    "out_degree": 1
+  },
+  "local_reference_static_swap_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "local_rotor_density_and_finite_template_bounds_bounded_theorem_note_2026-09-16": {
    "deps_hash": "adca3560d1b4",

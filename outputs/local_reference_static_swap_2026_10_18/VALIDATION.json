@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "manifest_sha256": "5feb138b2562ff8a90caa64934e1e756633d1e049ea76492f6c79af34a30512d",
+  "files": 6,
+  "provenance": 3,
+  "links": 8,
+  "nodes": 7266,
+  "edges": 16259,
+  "new_nodes": {
+    "local_reference_static_swap_bounded_theorem_note_2026-10-18": {
+      "path": "docs/LOCAL_REFERENCE_STATIC_SWAP_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "deps": []
+    }
+  },
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical source identity, provenance, links and topology only; no scientific execution or retained audit. New note dependencies require ROOT inspection."
+}

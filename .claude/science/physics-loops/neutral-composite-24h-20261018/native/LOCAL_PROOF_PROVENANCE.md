@@ -1,0 +1,3 @@
+# Local proof provenance
+
+Root calculations were developed in /private/tmp and independently checked there; review reports preserve those original paths/hashes. Packaged scripts change only import/output paths for portability, with a subsequent replay. The connected script domain2 row is a deliberately preserved failed scalar-RS shortcut, not an accepted boundary coefficient. Use neutral_domain_boundary_local for the full canonical result. Native periodic full-H data are frozen auxiliary calculations; the aggregate checks their residuals and predictions but does not repeat the expensive 32-site diagonalization. The exact script is supplied for replay. No observational data are used.

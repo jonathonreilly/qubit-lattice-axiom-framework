@@ -1,0 +1,1374 @@
+[
+  {
+    "L": 4,
+    "scalar_q0_dimension": 3,
+    "predicted_bright_plus_even_dark": 3,
+    "allowed": [
+      {
+        "size": 32,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 128,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          1
+        ]
+      },
+      {
+        "size": 64,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          2
+        ]
+      }
+    ],
+    "rejected_count": 1
+  },
+  {
+    "L": 6,
+    "scalar_q0_dimension": 4,
+    "predicted_bright_plus_even_dark": 4,
+    "allowed": [
+      {
+        "size": 192,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          1
+        ]
+      },
+      {
+        "size": 96,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 192,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 96,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          3
+        ]
+      }
+    ],
+    "rejected_count": 2
+  },
+  {
+    "L": 8,
+    "scalar_q0_dimension": 6,
+    "predicted_bright_plus_even_dark": 6,
+    "allowed": [
+      {
+        "size": 128,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 256,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "size": 256,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          1
+        ]
+      },
+      {
+        "size": 128,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 256,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 64,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          4
+        ]
+      }
+    ],
+    "rejected_count": 2
+  },
+  {
+    "L": 10,
+    "scalar_q0_dimension": 7,
+    "predicted_bright_plus_even_dark": 7,
+    "allowed": [
+      {
+        "size": 160,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "size": 320,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 320,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 320,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "size": 160,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 160,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 320,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          1
+        ]
+      }
+    ],
+    "rejected_count": 3
+  },
+  {
+    "L": 12,
+    "scalar_q0_dimension": 9,
+    "predicted_bright_plus_even_dark": 9,
+    "allowed": [
+      {
+        "size": 384,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "size": 384,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 384,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 384,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "size": 384,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          1
+        ]
+      },
+      {
+        "size": 96,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "size": 192,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 192,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 192,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          6
+        ]
+      }
+    ],
+    "rejected_count": 3
+  },
+  {
+    "L": 14,
+    "scalar_q0_dimension": 10,
+    "predicted_bright_plus_even_dark": 10,
+    "allowed": [
+      {
+        "size": 448,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 448,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "size": 448,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "size": 448,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          1
+        ]
+      },
+      {
+        "size": 448,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 224,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "size": 448,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "size": 224,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 224,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          7
+        ]
+      },
+      {
+        "size": 224,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          4
+        ]
+      }
+    ],
+    "rejected_count": 4
+  },
+  {
+    "L": 16,
+    "scalar_q0_dimension": 12,
+    "predicted_bright_plus_even_dark": 12,
+    "allowed": [
+      {
+        "size": 512,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          1
+        ]
+      },
+      {
+        "size": 512,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          7
+        ]
+      },
+      {
+        "size": 512,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "size": 256,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 256,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "size": 256,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          8
+        ]
+      },
+      {
+        "size": 256,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 512,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 512,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "size": 512,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 512,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "size": 128,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          8
+        ]
+      }
+    ],
+    "rejected_count": 4
+  },
+  {
+    "L": 18,
+    "scalar_q0_dimension": 13,
+    "predicted_bright_plus_even_dark": 13,
+    "allowed": [
+      {
+        "size": 576,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          8
+        ]
+      },
+      {
+        "size": 576,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "size": 576,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "size": 576,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          1
+        ]
+      },
+      {
+        "size": 288,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 288,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "size": 288,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          8
+        ]
+      },
+      {
+        "size": 576,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 576,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "size": 576,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          7
+        ]
+      },
+      {
+        "size": 576,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 288,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 288,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          9
+        ]
+      }
+    ],
+    "rejected_count": 5
+  },
+  {
+    "L": 20,
+    "scalar_q0_dimension": 15,
+    "predicted_bright_plus_even_dark": 15,
+    "allowed": [
+      {
+        "size": 320,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "size": 640,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          9
+        ]
+      },
+      {
+        "size": 640,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 640,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "size": 640,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "size": 320,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          8
+        ]
+      },
+      {
+        "size": 640,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 640,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          1
+        ]
+      },
+      {
+        "size": 640,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          8
+        ]
+      },
+      {
+        "size": 640,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          7
+        ]
+      },
+      {
+        "size": 320,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 640,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "size": 320,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          10
+        ]
+      },
+      {
+        "size": 320,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 160,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          10
+        ]
+      }
+    ],
+    "rejected_count": 5
+  },
+  {
+    "L": 22,
+    "scalar_q0_dimension": 16,
+    "predicted_bright_plus_even_dark": 16,
+    "allowed": [
+      {
+        "size": 704,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "size": 704,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "size": 704,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          8
+        ]
+      },
+      {
+        "size": 704,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 704,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 704,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          9
+        ]
+      },
+      {
+        "size": 352,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 352,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          11
+        ]
+      },
+      {
+        "size": 352,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "size": 352,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          8
+        ]
+      },
+      {
+        "size": 704,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          1
+        ]
+      },
+      {
+        "size": 704,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          10
+        ]
+      },
+      {
+        "size": 704,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          7
+        ]
+      },
+      {
+        "size": 352,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 704,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "size": 352,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          10
+        ]
+      }
+    ],
+    "rejected_count": 6
+  },
+  {
+    "L": 24,
+    "scalar_q0_dimension": 18,
+    "predicted_bright_plus_even_dark": 18,
+    "allowed": [
+      {
+        "size": 384,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          10
+        ]
+      },
+      {
+        "size": 384,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          8
+        ]
+      },
+      {
+        "size": 768,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "size": 768,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          9
+        ]
+      },
+      {
+        "size": 384,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 768,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          10
+        ]
+      },
+      {
+        "size": 768,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          11
+        ]
+      },
+      {
+        "size": 768,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "size": 768,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          1
+        ]
+      },
+      {
+        "size": 768,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "size": 384,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 768,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          7
+        ]
+      },
+      {
+        "size": 192,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          12
+        ]
+      },
+      {
+        "size": 768,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "size": 768,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "size": 768,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          8
+        ]
+      },
+      {
+        "size": 384,
+        "color_xors": [
+          3,
+          5,
+          10,
+          12
+        ],
+        "lengths": [
+          12
+        ]
+      },
+      {
+        "size": 384,
+        "color_xors": [
+          6,
+          9
+        ],
+        "lengths": [
+          6
+        ]
+      }
+    ],
+    "rejected_count": 6
+  }
+]

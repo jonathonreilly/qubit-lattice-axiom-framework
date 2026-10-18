@@ -1,0 +1,154 @@
+[
+  {
+    "background": 0,
+    "diagonal_colors": [
+      3,
+      4
+    ],
+    "ground_fourth": "-5/64",
+    "canonical_boundary_matrix": [
+      [
+        "47/192",
+        "-5/8"
+      ],
+      [
+        "-5/8",
+        "47/192"
+      ]
+    ],
+    "symmetric_coefficient": "-73/192"
+  },
+  {
+    "background": 1,
+    "diagonal_colors": [
+      2,
+      5
+    ],
+    "ground_fourth": "-5/64",
+    "canonical_boundary_matrix": [
+      [
+        "47/192",
+        "-5/8"
+      ],
+      [
+        "-5/8",
+        "47/192"
+      ]
+    ],
+    "symmetric_coefficient": "-73/192"
+  },
+  {
+    "background": 2,
+    "diagonal_colors": [
+      1,
+      6
+    ],
+    "ground_fourth": "-5/64",
+    "canonical_boundary_matrix": [
+      [
+        "47/192",
+        "-5/8"
+      ],
+      [
+        "-5/8",
+        "47/192"
+      ]
+    ],
+    "symmetric_coefficient": "-73/192"
+  },
+  {
+    "background": 3,
+    "diagonal_colors": [
+      0,
+      7
+    ],
+    "ground_fourth": "-5/64",
+    "canonical_boundary_matrix": [
+      [
+        "47/192",
+        "-5/8"
+      ],
+      [
+        "-5/8",
+        "47/192"
+      ]
+    ],
+    "symmetric_coefficient": "-73/192"
+  },
+  {
+    "background": 4,
+    "diagonal_colors": [
+      0,
+      7
+    ],
+    "ground_fourth": "-5/64",
+    "canonical_boundary_matrix": [
+      [
+        "47/192",
+        "-5/8"
+      ],
+      [
+        "-5/8",
+        "47/192"
+      ]
+    ],
+    "symmetric_coefficient": "-73/192"
+  },
+  {
+    "background": 5,
+    "diagonal_colors": [
+      1,
+      6
+    ],
+    "ground_fourth": "-5/64",
+    "canonical_boundary_matrix": [
+      [
+        "47/192",
+        "-5/8"
+      ],
+      [
+        "-5/8",
+        "47/192"
+      ]
+    ],
+    "symmetric_coefficient": "-73/192"
+  },
+  {
+    "background": 6,
+    "diagonal_colors": [
+      2,
+      5
+    ],
+    "ground_fourth": "-5/64",
+    "canonical_boundary_matrix": [
+      [
+        "47/192",
+        "-5/8"
+      ],
+      [
+        "-5/8",
+        "47/192"
+      ]
+    ],
+    "symmetric_coefficient": "-73/192"
+  },
+  {
+    "background": 7,
+    "diagonal_colors": [
+      3,
+      4
+    ],
+    "ground_fourth": "-5/64",
+    "canonical_boundary_matrix": [
+      [
+        "47/192",
+        "-5/8"
+      ],
+      [
+        "-5/8",
+        "47/192"
+      ]
+    ],
+    "symmetric_coefficient": "-73/192"
+  }
+]

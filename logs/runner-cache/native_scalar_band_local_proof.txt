@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/native_scalar_band_local_proof.py
+runner_sha256: d0ef3aeec8fea370ca0f50df9bd6863bffae3a4d55a4907ca38639ffd394ab91
+input_fingerprint_sha256: 7a68a83b34469bf2dd4343d3096a9cc259a0dba58a68c9abbf257e7906339f43
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 16.68
+status: ok
+----- stdout -----
+reproduced neutral_wall_connected
+reproduced neutral_wall_full_kernel
+reproduced neutral_domain_boundary_local
+reproduced neutral_band_scalar_reflection_sector
+reproduced neutral_scalar_explicit_basis
+per_site: one physical qubit; no added interaction
+per_mode: complete scalar E8 basis and local native coefficients
+per_block: exact-support formal math; frozen finite full-H bounded-support
+lattice_wide: uniform limit and observational identification remain open
+
+----- stderr -----
+

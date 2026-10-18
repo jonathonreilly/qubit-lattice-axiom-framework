@@ -19,3 +19,5 @@ Large-column block: exact internal factor, all-L minimal tunneling and scalar sq
 Neutral-domain block: independent second/third/fourth canonical checks, exact rational kernels and conditional pole/bound math pass. Astra low package reviewer found uniform-O versus Fourier-source conflation; root derived centered Oq and cosq form factor, reviewer affected-fix PASS. All-L closure, native infinite-volume lifetime and physical identification remain open; no formal audit verdict.
 
 Final affected replay: all10probes passed44.324s with stable input identities; cache logs/runner-cache/native_neutral_domain_resonance.txt. Outputfile parent membership guard failure resolved by completed initial creation and unchanged-byte rerun, not bypassed. Focused review disposition pass for finite/conditional scope.
+
+Local-proof block: independent local wall, full canonical boundary, scalar-band symmetry and physical reduced-H checks PASS. Astra low focused final review PASS after correcting numerical ground residual bound to1e-12. Source-bound aggregate5probes passed16.681s. No audit verdict applied.

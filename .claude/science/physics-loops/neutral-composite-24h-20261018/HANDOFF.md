@@ -332,3 +332,10 @@ PR9776 threshold6bb94b03975d9603acc5c6df8b3bbf0487b61d2d andPR9777 actualpositiv
 
 
 Two-feature ladder completed: native spin products plus N8 contact projection yield additive quasimodes; original source has sqrt(2) ladder ratio between actual energy-window vectors in delta=lambda^alpha, alpha<2/3 family. Independent checks and final scoped review PASS; source-bound replay .321817s PASS. No stable-particle/Fock-space/cosmological claim. Next root derives native constituent scattering and separately checks two-composite breakup kinematics.
+
+
+## 2026-10-18T12:44:02.723787+00:00 scattering checkpoint
+PR9779 verified OPEN705490d9e11189d64e7e46f4a8212a6242a5a287; attachment cap100 persists. Root two-feature actual energy-window ladder and original-source sqrt2 ratio independently checked; source-bound replay .321817s PASS. Native contact residual, exact spin algebra and whole-low-band source norm close projection estimates. No isolated particles/Fock space/empirical scalar. Root next constituent scattering derives exact finite-rank native T and logarithmic shallow-bound limit; independent check PASS, numerical complex-Green controls converge, packaging pending. Compatible four-singleton breakup channel at two-feature energy/momentum independently checked; no decay amplitude yet. JSON int serialization and unsupported gh --head flag repaired, no scientific inference. No numerical jobs active. Deadline unchanged.
+
+
+Native scattering block complete: exact constituent T, native bound scale and logarithmic near-threshold limit; prepared actual finite-time packets controlled by lambda/delta error using closed-ray Sylvester bound. Explicit four-singleton on-shell channel for two composites, no decay amplitude. Independent and final checks PASS, replay9.139095s. Next root tests genuinely many-constituent isotropic collective feature: exact maxspin leakage, entangled trial energy and ground-sector weight, keeping other structured features open.

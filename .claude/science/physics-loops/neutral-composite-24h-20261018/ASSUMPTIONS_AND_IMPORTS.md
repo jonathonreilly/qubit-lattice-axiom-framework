@@ -76,3 +76,6 @@ Odd rectangle: supplied H, weak anisotropy, finite 4x6x5 geometry and original l
 BulkCOM imports: suppliedH/weakregime, compactcoefficientsector, Fourierdiagnostic, outgoingcontinuation and jointfiniteboxfamily remain explicit. Native momentumkinetic/readout derived. No derivative of C0 remainder assumed. No empirical calibration/test or physicalunitsbridge.
 
 Two-feature block: supplied one-qubit compass H and weak ground family persist. Even momentum mesh and delta=lambda^alpha (0<alpha<2/3) are selected families, not derived preparation. Canonical lowering extension is defined off vacuum; its agreement with the actual source is separately bounded at contact. Generic composite-boson purity connection is prior art (Law quant-ph/0411040; Tichy et al1308.2896), not new or a proof input. No observation calibration or independent empirical test.
+
+
+Native scattering preserves supplied H/regime/momentum and prepared packet premises. Exact constituent amplitude has no independently fitted contact attraction. Oriented and physical even-shell measures distinguished. Actual finite-time comparison is not an infinite-time microscopic S matrix; breakup kinematics is not a lifetime. No observed input or independent empirical test.

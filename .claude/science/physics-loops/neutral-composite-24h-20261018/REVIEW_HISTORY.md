@@ -114,3 +114,6 @@ Transverse bound block: exactcompleteK1 N4 Tjunction mode E=-3sqrt2, nearbyorigi
 
 
 Two-feature ladder: independent algebra, source, contact/residual and low-energy source checks PASS. Final scoped review PASS after qualifying momentum transfers relative to arbitrary ground vectors. Source-bound replay .321817s PASS. Controls are exact local physical-bit actions, not full-H ED. NumPy int64 JSON serialization failed after assertions; explicit int conversion repaired the output, with no scientific inference from the operational error.
+
+
+Native scattering: independent retarded finite-rank/threshold/optical check PASS; independent closed-ray moment and finite-time transfer check PASS. Final scoped review PASS after binding breakup proof as runner input. Source-bound replay9.139095s PASS; finite coefficient resolvent9cases maxerror2.14e-14, broadened highprecision controls converge. No empirical fit/test or formal audit.

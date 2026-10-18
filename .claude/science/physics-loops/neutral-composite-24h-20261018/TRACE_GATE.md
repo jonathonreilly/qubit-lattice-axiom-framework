@@ -124,3 +124,6 @@ Microscopic large-feature window: trace_class upstream_support; source_of_blocke
 Large-feature mobility: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Relates derived K1 motion and original source without new interaction; exposes anisotropy and unselected momentum. Full microscopic dispersion and physical scalar remain open. Next: derive multi-feature algebra and test native interaction channels.
 
 Two-feature ladder: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Native spin strings, Hamiltonian contact bounds and original source give two actual microscopic energy-window rungs with asymptotic sqrt(2) coupling ratio. No added interaction or source coefficient. Full Fock space, stable scattering and scalar/cosmological identification remain open.
+
+
+Native constituent scattering: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Existing punctured host and attached rays derive logarithmic constituent amplitude without new contact attraction. Prepared finite-time microscopic evolution is controlled separately. Two-composite scattering and physical scalar remain open.

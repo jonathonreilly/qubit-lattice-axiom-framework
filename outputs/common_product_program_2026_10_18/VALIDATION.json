@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "base_revision": "fa841753c1a6296e5ad45518375660b0f1004769",
-  "manifest_sha256": "2fc1b79804cf94c677cd8791e2b5627fc87ec22d2a69291a14f8f7d77a6bdd41",
+  "manifest_sha256": "9edddc77975e55f2660e86c19eee88bc425ab56b75f9ce8323fcf0c407482e16",
   "notes": [
     {
       "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/NOTE.md",
@@ -20,17 +20,24 @@
       "destination": "docs/COMMON_PRODUCT_PROGRAM_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-18.md",
       "sha256": "5efb9be381ed9247c87987751a492eda3ad8a6022989f5e90d3017c0101899d1",
       "bytes": 15407
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/SECTOR_NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_PROGRAM_SECTOR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "26899d180b17ac4d288adefeaabaaeccd270ba10d66f8d4c60d0623cd1739a41",
+      "bytes": 11715
     }
   ],
-  "files": 9,
-  "provenance": 3,
-  "links": 11,
-  "nodes": 7247,
-  "edges": 16240,
+  "files": 11,
+  "provenance": 4,
+  "links": 15,
+  "nodes": 7248,
+  "edges": 16242,
   "added_nodes": [
     "common_product_program_attachment_bounded_theorem_note_2026-10-18",
     "common_product_program_cell_bounded_theorem_note_2026-10-18",
-    "common_product_program_chain_bounded_theorem_note_2026-10-18"
+    "common_product_program_chain_bounded_theorem_note_2026-10-18",
+    "common_product_program_sector_bounded_theorem_note_2026-10-18"
   ],
   "old_dependency_and_note_hashes_unchanged": true,
   "old_manifest_entries_unchanged": true,

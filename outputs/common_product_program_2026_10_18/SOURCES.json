@@ -22,6 +22,12 @@
       "destination": "docs/COMMON_PRODUCT_PROGRAM_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-18.md",
       "sha256": "5efb9be381ed9247c87987751a492eda3ad8a6022989f5e90d3017c0101899d1",
       "bytes": 15407
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/SECTOR_NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_PROGRAM_SECTOR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "26899d180b17ac4d288adefeaabaaeccd270ba10d66f8d4c60d0623cd1739a41",
+      "bytes": 11715
     }
   ],
   "files": [
@@ -105,6 +111,22 @@
       "proof_dependency": false,
       "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_program_cell_check/REVIEW.md",
       "bytes": 4248
+    },
+    {
+      "path": "common_product_sector_transport/PROPOSAL.md",
+      "destination": "proofs/common_product_sector_transport__PROPOSAL.md",
+      "sha256": "a94697cf9dd3c0b62a38b97a3cc64640b7d3eac41d48f625e1595ec7d857dd76",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_sector_transport/PROPOSAL.md",
+      "bytes": 13627
+    },
+    {
+      "path": "common_product_sector_transport_check/REVIEW.md",
+      "destination": "proofs/common_product_sector_transport_check__REVIEW.md",
+      "sha256": "feb55d2719b8eda3eff7c8547497b23be2fae7b89ff1e6c5a91f53833e3c8272",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_sector_transport_check/REVIEW.md",
+      "bytes": 8886
     }
   ],
   "provenance": [
@@ -124,6 +146,12 @@
       "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/NETWORK_INTEGRATION_REVIEW.md",
       "destination": "provenance/NETWORK_INTEGRATION_REVIEW.md",
       "sha256": "0c888198809b12a291c7e3e963524f695c822497abfbe4c51356d4647191562b",
+      "role": "Source-exposed publication integration, not additional independent science check or retained audit"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/SECTOR_INTEGRATION_REVIEW.md",
+      "destination": "provenance/SECTOR_INTEGRATION_REVIEW.md",
+      "sha256": "8e023501154fbc33cd7905701a688305e4e20f85f8be46462359cb976ac43f69",
       "role": "Source-exposed publication integration, not additional independent science check or retained audit"
     }
   ],

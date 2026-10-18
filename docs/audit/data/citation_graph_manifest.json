@@ -1,6 +1,6 @@
 {
- "edge_count": 16242,
- "node_count": 7248,
+ "edge_count": 16251,
+ "node_count": 7251,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14826,13 +14826,25 @@
    "deps_hash": "69844311c4ae",
    "out_degree": 1
   },
+  "mediated_finite_bond_precision_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "071d76e17df5",
+   "out_degree": 2
+  },
   "mediated_finite_point_and_decay_bounded_theorem_note_2026-10-17": {
    "deps_hash": "b7130df5f13f",
    "out_degree": 1
   },
+  "mediated_recovery_residual_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "003c83040f60",
+   "out_degree": 3
+  },
   "mediated_scalar_bond_tolerance_bounded_theorem_note_2026-10-17": {
    "deps_hash": "b7130df5f13f",
    "out_degree": 1
+  },
+  "mediated_shorter_chain_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "91437358c38f",
+   "out_degree": 4
   },
   "mediated_source_complete_output_bounded_theorem_note_2026-10-17": {
    "deps_hash": "4fdcdcf44672",

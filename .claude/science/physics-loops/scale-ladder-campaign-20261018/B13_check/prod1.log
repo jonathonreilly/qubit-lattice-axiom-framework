@@ -1,1 +1,4 @@
 results/L4_V+0.00_N1000_e0.00_tiled_dt0.1_s101.npz: Emix/plaq=-0.292511 nf0/plaq=0.667 mean N/ESS=1.17 (175s)
+results/L4_V+0.00_N4000_e0.00_tiled_dt0.1_s102.npz: Emix/plaq=-0.292846 nf0/plaq=0.667 mean N/ESS=1.18 (530s)
+results/L4_V-0.50_N4000_e0.00_simple_dt0.1_s103.npz: Emix/plaq=-0.467057 nf0/plaq=0.500 mean N/ESS=1.65 (543s)
+results/L4_V-0.50_N4000_e0.00_tiled_dt0.1_s104.npz: Emix/plaq=-0.467224 nf0/plaq=0.667 mean N/ESS=1.65 (423s)

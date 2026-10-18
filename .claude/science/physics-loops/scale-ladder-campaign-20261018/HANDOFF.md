@@ -67,3 +67,7 @@
 - **18:45Z.** The B26 and C8 checks are done (47 and 49 PASS, no claim refuted). Their corrections are applied, the scale-ladder note includes them, and PR #9702 is updated.
   - Running: C10 (lattice H constraint with structure functions) and C11 (generalised L1 lemma).
   - Then: a coherence pass on the scale-ladder note, the final summary before 23:26Z, and releasing the lock.
+- **19:25Z.** C11 is done and checked: 45 PASS, 0 FAIL, on an independent build with Berry-flux chirality. It is in the scale-ladder note and the PR #9702 body.
+  - C10 is in the note, marked unchecked; its check is running.
+  - Also running: a third coherence pass on the scale-ladder note (writes into wt-9702), and an agent drafting the C11 lane note in wt-lanes.
+  - Then: commit and review the lane note, integrate the C10 check, give the final summary before 23:26Z, and release the lock.

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/scale_ladder_gravity_orthoscheme_zero_action_curvature_2026_10_18.py
-runner_sha256: 4768fa61e567fdbc2cdc4fcb10d59a1606210b03932715d8f963bf6f500fa452
+runner_sha256: 289cde6862142db05e1f3c952106d708776a7d3b3be71e6c69c2f31a933d2110
 input_fingerprint_sha256: cec3f5a6b9ad7fd7a67b1078117b3bb09d3c98db51239d7d7f20e2357d41c034
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 46.40
+elapsed_sec: 46.83
 status: ok
 ----- stdout -----
 [PASS] G0 generic Bloch Regge builder reproduces the landed Kuhn-complex edge form (singular values)  max deviation 1.3e-08; 15 edges, 50 hinge classes
@@ -20,8 +20,11 @@ status: ok
 [PASS] G10 D4 cone: P1 scalar on-shell tick momentum pure imaginary (real energies) and no O(k^4) on-shell correction (4 directions)  max |Re k_t| 4e-16; max |alpha| 2.5e-05
 [PASS] G11 D4 cone graviton: two real shells omega^2 = k^2 (1 -+ c k^2), each with one metric and one non-metric null direction; c = 1/12 (axis), 1/16 (face), 0 (body, nullity 35)  axis: alpha -0.0831 nullity 34, alpha +0.0832 nullity 34; face: alpha -0.0623 nullity 34, alpha +0.0623 nullity 34; body: alpha +0.0004 nullity 35
 [PASS] G12 D4 cone: 8 massless non-gauge directions (6 metric + 2 non-metric); on-shell P1 stress overlap with the 2 non-metric ones falls linearly in k  massless count 8; overlap 1.35e-02 -> 6.51e-03 on halving
+[PASS] G13 D4 cone, P1 matter on all vertices: on-shell stress has an O(1) component along vertex displacements (relative motions of the vertex types), the uniform part only O(k)  all 1.82, uniform 5.7e-02; all 1.82, uniform 2.8e-02
+[PASS] G14 site-cell metric (axis edges and both face diagonals through the holes): blind to every non-site vertex displacement, exact on constant metrics  |L G_nonsite| 2e-16; |L M(0) - 1| 3e-18
+[PASS] G15 static T_tt through the site metric: no overlap with null directions; graviton h_tt k^2 = -2 with h_xx = -h_tt; partner adds -2/3 with conformal pattern 1; total h_xx/h_tt = -1/2  overlap 0e+00, graviton -2.0003 (h_xx/h_tt -0.9999), partner -0.6667 (pattern dev 2e-05), total h_xx/h_tt -0.5000; overlap 0e+00, graviton -2.0002 (h_xx/h_tt -1.0000), partner -0.6667 (pattern dev 6e-06), total h_xx/h_tt -0.5000
 
-TOTAL: PASS=13 FAIL=0
+TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----
 

@@ -1,7 +1,7 @@
 ---
 claim_id: scale_ladder_gravity_orthoscheme_zero_action_curvature_bounded_theorem_note_2026-10-18
 claim_type: bounded_theorem
-claim_scope: "Supplied Regge second variations of three translation-periodic triangulations of Z^3 x Z_tau, built by a generic Bloch Regge code that reproduces the landed Kuhn-complex module's edge form to 1.3e-8. Floating-point checks at sampled momenta: (1) Kuhn (path) complex with hypercubic edge lengths: the edge form has nullity five while the linearised deficit map has rank fifteen minus four, so the null direction beyond the vertex displacements has nonzero linearised curvature (|D x|/|D| >= 0.59) and zero quadratic Regge action. (2) The barycentric subdivision of the cubical complex (384 simplices, all orthoschemes; 240 edge classes; 16 vertex types per cell; symmetric under signed permutations of all four axes, including the tick reflection): nullity 80 = 64 vertex displacements + 16, with a singular-value gap of 6e6 or more; the 16 extra directions have nonzero linearised curvature, and four or five of them have metric share above 0.2. (3) Kuhn complex, hypercubic lengths: the P1 scalar stiffness equals sum_mu 4 sin^2(p_mu/2) (deviation 1.4e-15 at complex momenta), and the on-shell tick momentum is pure imaginary for real spatial momenta. (4) Lengths from g0 = 1 + 0.3 u u^T (u = (1,1,1,1)): Re k_t / |k| tends to a nonzero constant (0.27). (5) Lengths from g0 = 1 + c u_s u_s^T (u_s = (1,1,1,0), c = 0.2, 0.05): the fifth null direction is lifted, the eliminated non-metric edge block is stiff, and Re k_t / |k| falls as |k|^2. (6) At c = 0.2 the full edge form with non-metric edges eliminated has O(k^2) symbol -(1/4) sqrt(det g0) EH_g0 (misfit 3.2e-8). (7) The D4 cone: vertices D4 = Z^4 u (Z^4 + u/2) plus the deep holes (e_mu + e_nu)/2, each Delaunay 16-cell coned from its centre; 96 simplices tile the cell (volume 1 to 1e-12), the simplex set is invariant under all 384 signed axis permutations, and no simplex is an orthoscheme; 72 edge classes, 8 vertex types. (8) Its edge form has nullity 32, equal to the rank of the vertex displacements, at three momenta (gap 7e7 or more). (9) With non-metric, non-gauge edge directions eliminated, its O(k^2) symbol is -(1/4) EH (misfit 2.7e-5). (10) Its P1 scalar has pure imaginary on-shell tick momentum for real spatial momenta (|Re| <= 4e-16), and no on-shell O(k^4) correction (|alpha| <= 2.5e-5, 4 directions). (11) Near the light cone its edge form has two real shells omega^2 = k^2 (1 -+ c k^2), with c = 1/12 (axis) and 1/16 (face diagonal), each adding one metric and one non-metric null direction; on the body diagonal they coincide (nullity 35, c = 0 within 4e-4). (12) It has 8 massless non-gauge directions (linearised EH has 6); the on-shell P1 stress overlaps the 2 non-metric ones with a fraction that halves when momenta halve. Not claimed: that every orthoscheme triangulation has such directions, any mechanism, nonlinear statements, that these directions are or are not symmetries of the nonlinear action, reflection positivity, that the D4 cone is unique or preferred, the physical status of its two non-metric massless modes, or any physical identification."
+claim_scope: "Supplied Regge second variations of three translation-periodic triangulations of Z^3 x Z_tau, built by a generic Bloch Regge code that reproduces the landed Kuhn-complex module's edge form to 1.3e-8. Floating-point checks at sampled momenta: (1) Kuhn (path) complex with hypercubic edge lengths: the edge form has nullity five while the linearised deficit map has rank fifteen minus four, so the null direction beyond the vertex displacements has nonzero linearised curvature (|D x|/|D| >= 0.59) and zero quadratic Regge action. (2) The barycentric subdivision of the cubical complex (384 simplices, all orthoschemes; 240 edge classes; 16 vertex types per cell; symmetric under signed permutations of all four axes, including the tick reflection): nullity 80 = 64 vertex displacements + 16, with a singular-value gap of 6e6 or more; the 16 extra directions have nonzero linearised curvature, and four or five of them have metric share above 0.2. (3) Kuhn complex, hypercubic lengths: the P1 scalar stiffness equals sum_mu 4 sin^2(p_mu/2) (deviation 1.4e-15 at complex momenta), and the on-shell tick momentum is pure imaginary for real spatial momenta. (4) Lengths from g0 = 1 + 0.3 u u^T (u = (1,1,1,1)): Re k_t / |k| tends to a nonzero constant (0.27). (5) Lengths from g0 = 1 + c u_s u_s^T (u_s = (1,1,1,0), c = 0.2, 0.05): the fifth null direction is lifted, the eliminated non-metric edge block is stiff, and Re k_t / |k| falls as |k|^2. (6) At c = 0.2 the full edge form with non-metric edges eliminated has O(k^2) symbol -(1/4) sqrt(det g0) EH_g0 (misfit 3.2e-8). (7) The D4 cone: vertices D4 = Z^4 u (Z^4 + u/2) plus the deep holes (e_mu + e_nu)/2, each Delaunay 16-cell coned from its centre; 96 simplices tile the cell (volume 1 to 1e-12), the simplex set is invariant under all 384 signed axis permutations, and no simplex is an orthoscheme; 72 edge classes, 8 vertex types. (8) Its edge form has nullity 32, equal to the rank of the vertex displacements, at three momenta (gap 7e7 or more). (9) With non-metric, non-gauge edge directions eliminated, its O(k^2) symbol is -(1/4) EH (misfit 2.7e-5). (10) Its P1 scalar has pure imaginary on-shell tick momentum for real spatial momenta (|Re| <= 4e-16), and no on-shell O(k^4) correction (|alpha| <= 2.5e-5, 4 directions). (11) Near the light cone its edge form has two real shells omega^2 = k^2 (1 -+ c k^2), with c = 1/12 (axis) and 1/16 (face diagonal), each adding one metric and one non-metric null direction; on the body diagonal they coincide (nullity 35, c = 0 within 4e-4). (12) It has 8 massless non-gauge directions (linearised EH has 6); the on-shell P1 stress (field on every vertex) overlaps the 2 non-metric ones with a fraction that halves when momenta halve. (13) That all-vertex P1 stress has an O(1) component (1.8 of its norm) along the vertex displacements, which are null directions of the edge form; its uniform-displacement part is only O(k). (14) A site-cell metric read from axis edges and both face diagonals, each diagonal through the deep hole it crosses, is blind to every non-site vertex displacement (2e-16) and exact on constant metrics. (15) A static T_tt source coupled through it has zero overlap with the null directions; the response splits into a graviton part with h_tt k^2 = -2.000 and h_xx = -h_tt, and one partner part with h_tt k^2 = -2/3 whose site-metric pattern is the identity (conformal) to 2e-5, so that the total h_xx/h_tt = -1/2. Not claimed: that every orthoscheme triangulation has such directions, any mechanism, nonlinear statements, that these directions are or are not symmetries of the nonlinear action, reflection positivity, that the D4 cone is unique or preferred, the physical status of its two non-metric massless modes, a Lorentzian PPN value, or any physical identification."
 upstream_dependencies:
   - the_regge_second_variation_on_the_4d_cubic_coxeter_complex_carries_a_native_linearised_graviton_bounded_theorem_note_2026-09-03
   - kinetic_isotropy_primitive
@@ -9,7 +9,7 @@ upstream_dependencies:
 runner: scripts/scale_ladder_gravity_orthoscheme_zero_action_curvature_2026_10_18.py
 ---
 
-# Orthoscheme Regge carriers hide curvature from the quadratic action; a D4-cone carrier does not
+# Orthoscheme Regge carriers hide curvature from the quadratic action; a D4-cone carrier does not, but carries a conformal partner
 
 **Date:** 2026-10-18
 **Type:** bounded_theorem
@@ -90,12 +90,29 @@ This note asks three questions:
       and 0 on the body diagonal.
     - Each shell adds one metric (TT) null direction and one non-metric one, so the TT pair is
       birefringent at O(k⁴).
-12. **The price: two non-metric massless partner modes.**
+12. **Two non-metric massless partner modes.**
     - There are 8 massless non-gauge directions; linearised EH has 6. The extra two are
-      non-metric, sit on the same leading cone, and mix with the TT pair at O(k⁴).
-    - On-shell matter couples to them only at relative order k (the overlap halves per
-      halving). An exchange between matter sources through them is therefore suppressed by
-      (a/w)² relative to the graviton.
+      non-metric in the line-map reading, sit on the same leading cone, and mix with the TT pair
+      at O(k⁴).
+    - The P1 stress with the field on every vertex overlaps them only at relative order k.
+13. **That matter coupling is inconsistent.**
+    - The same stress has an O(1) component along the vertex displacements of the non-site
+      vertex types. These are exact null directions of the edge form, so the linear equations
+      have no solution.
+    - Its uniform-displacement (lattice-diffeo) part is O(k).
+14. **A consistent coupling.**
+    - Put matter on the sites, and read the metric from the axis edges and the face diagonals.
+      Each face diagonal passes straight through a deep hole, so its length is unchanged at
+      linear order when the hole moves.
+    - This site-cell metric is blind to every non-site vertex displacement and exact on
+      constant metrics.
+15. **Through that coupling, a conformal partner appears at full strength.**
+    - A static T_tt source has zero overlap with the null directions, and its response is well
+      posed.
+    - The graviton part is h_tt·k² = −2.000 with h_xx = −h_tt, the linearised EH value.
+    - One partner adds h_tt·k² = −2/3, and its site-metric pattern is exactly the identity:
+      it couples to the trace like a conformal scalar.
+    - The total is h_xx/h_tt = −1/2.
 
 ## Reading on the ladder (interpretation, not claims)
 
@@ -114,22 +131,28 @@ This note asks three questions:
   | tilt | no | no | yes |
 
   The symmetric barycentric subdivision does not help: it has more unseen-curvature directions.
-- **The D4 cone has all three.**
+- **The D4 cone has all three, and then meets a fourth condition it fails.**
   - It has the hypercubic geometry, cubic and tick-reflection symmetry, real energies, and no
     hidden curvature, and its leading graviton is Einstein–Hilbert.
-  - Its costs are visible and suppressed:
-    - two non-metric massless partner modes, coupled to matter at relative order a/w;
-    - O(k⁴) birefringence of the TT pair.
-  - Its vertices go beyond the sites: the hypercube centres and the deep holes. On the ladder,
-    the gravity carrier lives on a refined geometric rung, as the corner fermion lives on a
-    blocked one.
+  - Matter must be coupled so that it does not source the extra vertices' displacements. Coupled
+    that way, a massless conformal partner couples at full strength.
+  - Interpretation, not a claim: the static pattern (graviton h_xx = −h_tt, partner
+    h_xx = +h_tt, weight 1/3) is that of a Brans–Dicke scalar with ω = 0, which in Lorentzian
+    reading would give γ = 1/2.
+  - So the gravity rung needs a carrier whose non-metric soft modes are absent, massive, or
+    decoupled from consistently coupled matter.
+- **One direction recurs.** On the Kuhn complex the hidden-curvature direction has metric part
+  uuᵀ − 2·1. On the D4 cone, the site-metric reading through the orientation-biased diagonals
+  gives 2·1 − uuᵀ, and the symmetric reading gives the pure conformal part. In both carriers the
+  extra soft direction lives in the conformal and body-diagonal sector, the same sector as the
+  second K48 invariant form.
 - **The orthoscheme pattern.** Both complexes with hidden curvature are built from
   orthoschemes; the one without is not. This is a correlation across three complexes, not a
   theorem.
 - **Next targets.**
-  - Whether the D4 cone's partner modes can be removed by a different coning, or are forced.
-  - The D4 cone's Ward identity for P1 matter.
-  - Its Newtonian rung.
+  - Whether the D4 cone's partner modes can be removed by a different coning, given a mass by
+    a local term, or decoupled.
+  - A site-matter discretisation with its own Ward identity on the D4 cone.
   - A proof of the closed form for c(n̂). The candidate c² = [(1 − S₂)² − 12 T]/144, with
     S₂ = Σ_{i<j} n̂ᵢ²n̂ⱼ² and T = n̂ₓ²n̂ᵧ²n̂_z², was read off four directions. It predicts three
     further directions to within 0.4% at |k| = 0.05 (probe workspace, not in the runner).
@@ -164,6 +187,7 @@ Citations are from memory and were not checked against the primaries.
   - The barycentric count and its metric content.
   - The tilt/skew comparison of real spectrum against unseen curvature.
   - The D4-cone carrier and its graviton, scalar and partner-mode properties.
+  - The site-metric coupling and the conformal partner's weight.
 
 ## No-Go Discipline Gate
 
@@ -184,6 +208,8 @@ Citations are from memory and were not checked against the primaries.
 - **N6/N7 — strongest objections.**
   - Orthoscheme-ness is a correlation across three complexes, not a proof.
   - The D4 cone's partner modes are massless and could matter at nonlinear order.
+  - The partner statement uses one site-metric coupling; another consistent coupling could
+    weight the partner differently.
   - The skew's non-real (a/w)² term is small but nonzero.
   - The direction might be harmless nonlinearly.
 - **N8 — earlier claims.** Sharpens the companion note's fifth-direction items. It does not
@@ -195,7 +221,7 @@ Citations are from memory and were not checked against the primaries.
 python3 scripts/scale_ladder_gravity_orthoscheme_zero_action_curvature_2026_10_18.py
 ```
 
-Expected: `TOTAL: PASS=13 FAIL=0` (about 50 seconds).
+Expected: `TOTAL: PASS=16 FAIL=0` (about 60 seconds).
 
 ## Load-bearing sources
 

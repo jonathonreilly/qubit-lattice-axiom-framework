@@ -17,7 +17,10 @@ of Z^3 x Z_tau (index 3 = tick):
      hypercubic geometry): null directions are exactly the vertex displacements, the leading symbol is
      -(1/4) EH, the P1 scalar has real energies and no on-shell k^4 term, the graviton has two real
      shells split -+ c k^2 with one metric and one non-metric mode each, and the two non-metric
-     massless modes couple to on-shell matter only at relative order k.
+     massless modes overlap the all-vertex P1 stress only at relative order k;
+  G13-G15 that all-vertex P1 stress sources the relative vertex-type displacements at O(1); matter read
+     through a site-cell metric is consistent, and its static source then excites the graviton (h_tt k^2 = -2)
+     plus one partner with conformal pattern 1 (-2/3), so the total h_xx/h_tt is -1/2.
 Supplied models only; no physical identification.
 Companion: docs/SCALE_LADDER_GRAVITY_ORTHOSCHEME_ZERO_ACTION_CURVATURE_BOUNDED_THEOREM_NOTE_2026-10-18.md
 """
@@ -428,6 +431,21 @@ def golden(f, lo, hi):
     return (a + b) / 2
 
 
+def site_metric(C, k):
+    """D4 cone: 10 site-cell metric components from edge lengths, using axis edges and both face diagonals,
+    each face diagonal read through the deep hole it passes through (invariant under moving non-site vertices)."""
+    pairs = list(itertools.combinations(range(4), 2)); E = np.eye(4, dtype=int); Z = (0, 0, 0, 0)
+    k = np.asarray(k, complex); Lm = np.zeros((10, C.E), complex)
+    def add(row, v1, v2, coef):
+        key, anc = _key_pair(v1, v2); Lm[row, C.ekey[key]] += coef * np.exp(1j * k @ np.array(anc, float))
+    for mu in range(4): add(HC.index((mu, mu)), (Z, 0), (tuple(E[mu]), 0), 2.0)
+    for h, (m, n) in enumerate(pairs):
+        row = HC.index((m, n)); hv = (Z, 2 + h); r2 = np.sqrt(2) / 2
+        add(row, (Z, 0), hv, r2); add(row, hv, (tuple(E[m] + E[n]), 0), r2)
+        add(row, (tuple(E[n]), 0), hv, -r2); add(row, hv, (tuple(E[m]), 0), -r2)
+    return Lm
+
+
 def drows(C, k, which):
     out = []
     for a, d in C.terms:
@@ -617,6 +635,41 @@ def main():
         X = np.linalg.svd(P @ Vs)[0][:, :2]; fr.append(np.linalg.norm(X.conj().T @ J) / np.linalg.norm(J))
     check("G12 D4 cone: 8 massless non-gauge directions (6 metric + 2 non-metric); on-shell P1 stress overlap with the 2 non-metric ones falls linearly in k",
           n_soft == 8 and abs(fr[0] / fr[1] - 2) < 0.25, f"massless count {n_soft}; overlap {fr[0]:.2e} -> {fr[1]:.2e} on halving")
+
+
+    # ---------------- G13 P1 matter on every D4-cone vertex sources the non-site vertex displacements
+    n1, n2 = rr.standard_normal(3), rr.standard_normal(3); rows13 = []
+    for s in (0.1, 0.05):
+        k1, p1 = on_shell(s * n1 / np.linalg.norm(n1), 1j * s); k2, p2 = on_shell(0.7 * s * n2 / np.linalg.norm(n2), 0.7j * s)
+        J = p1_stress(Dc, k1, p1, k2, p2); G = Dc.gauge(k1 - k2)
+        Ga = sum(G[:, 4 * t:4 * t + 4] for t in range(len(Dc.types)))
+        rows13.append((np.linalg.norm(G.T @ J) / np.linalg.norm(J), np.linalg.norm(Ga.T @ J) / np.linalg.norm(J)))
+    check("G13 D4 cone, P1 matter on all vertices: on-shell stress has an O(1) component along vertex displacements (relative motions of the vertex types), the uniform part only O(k)",
+          all(r[0] > 0.5 for r in rows13) and abs(rows13[0][1] / rows13[1][1] - 2) < 0.3,
+          "; ".join(f"all {r[0]:.2f}, uniform {r[1]:.1e}" for r in rows13))
+
+    # ---------------- G14 site-cell metric coupling
+    kq = np.array([0.3, -0.2, 0.1, 0.25]); Lq = site_metric(Dc, kq); Gq = Dc.gauge(kq)
+    blind = np.abs(Lq @ np.hstack([Gq[:, 4 * t:4 * t + 4] for t in range(1, 8)])).max()
+    exact = np.abs(site_metric(Dc, np.zeros(4)) @ Dc.line_map(np.zeros(4)) - np.eye(10)).max()
+    check("G14 site-cell metric (axis edges and both face diagonals through the holes): blind to every non-site vertex displacement, exact on constant metrics",
+          blind < 1e-12 and exact < 1e-12, f"|L G_nonsite| {blind:.0e}; |L M(0) - 1| {exact:.0e}")
+
+    # ---------------- G15 static response through the site metric: graviton + a conformal partner
+    itt, ixx = HC.index((3, 3)), HC.index((0, 0)); out15 = []
+    for kk in [np.array([0, 0.02, 0, 0.0]), np.array([0, 0.012, 0.009, 0.0])]:
+        Q = Dc.Q(kk); w, V = np.linalg.eigh(0.5 * (Q + Q.conj().T)); V = V[:, np.argsort(np.abs(w))]
+        A = np.hstack([Dc.line_map(kk), Dc.gauge(kk)]); P = np.eye(Dc.E) - A @ np.linalg.pinv(A, rcond=1e-10)
+        partners = np.linalg.svd(P @ V[:, 32:40])[0][:, :2]
+        Lk = site_metric(Dc, kk); T = np.zeros(10); T[itt] = 1.0; J = Lk.conj().T @ T
+        gov = np.linalg.norm(Dc.gauge(kk).conj().T @ J) / np.linalg.norm(J)
+        x = np.linalg.pinv(Q, rcond=1e-11) @ J; xp = partners @ (partners.conj().T @ x)
+        hg, hp = Lk @ (x - xp), Lk @ xp; k2 = kk @ kk
+        pat = (hp / hp[itt]).real; conf = np.abs(pat - np.array([1, 1, 1, 1, 0, 0, 0, 0, 0, 0])).max()
+        out15.append((gov, hg[itt].real * k2, hg[ixx].real / hg[itt].real, hp[itt].real * k2, conf, ((hg + hp)[ixx] / (hg + hp)[itt]).real))
+    check("G15 static T_tt through the site metric: no overlap with null directions; graviton h_tt k^2 = -2 with h_xx = -h_tt; partner adds -2/3 with conformal pattern 1; total h_xx/h_tt = -1/2",
+          all(o[0] < 1e-12 and abs(o[1] + 2) < 2e-3 and abs(o[2] + 1) < 2e-3 and abs(o[3] + 2 / 3) < 2e-3 and o[4] < 1e-3 and abs(o[5] + 0.5) < 2e-3 for o in out15),
+          "; ".join(f"overlap {o[0]:.0e}, graviton {o[1]:+.4f} (h_xx/h_tt {o[2]:+.4f}), partner {o[3]:+.4f} (pattern dev {o[4]:.0e}), total h_xx/h_tt {o[5]:+.4f}" for o in out15))
 
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

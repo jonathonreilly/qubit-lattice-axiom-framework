@@ -499,6 +499,15 @@ def enumerate_solutions_split(basis, ubatch_bits=16):
         V0 = (C @ Ub) & 1
         Uu = V0[:, :D]
         good = np.nonzero(selforth_mask(Uu))[0]
+        if dK == 0 and len(good):
+            # vectorised fast path (w fully determined by u): exact same predicates
+            Ug, Wg = Uu[good], V0[good, D:]
+            m1 = form_eq_mask(Ug, Wg, DELTA0)
+            Ug, Wg = Ug[m1], Wg[m1]
+            m2 = selforth_mask(Wg)
+            for u_, w_ in zip(Ug[m2], Wg[m2]):
+                sols.append(np.concatenate([u_, w_]))
+            continue
         for i in good:
             u = Uu[i]
             w0 = V0[i, D:]
@@ -541,6 +550,25 @@ def selforth_mask(U, order=None):
             continue
         v = ((Ux[np.ix_(alive, I)] & Uz[np.ix_(alive, J)]).sum(1) + (Uz[np.ix_(alive, I)] & Ux[np.ix_(alive, J)]).sum(1)) & 1
         alive = alive[v == 0]
+    m = np.zeros(U.shape[0], bool)
+    m[alive] = True
+    return m
+
+
+def form_eq_mask(U, W, target):
+    """Boolean mask of rows with <U_i, T_t W_i> = target[t] for every shift t (early elimination)."""
+    alive = np.arange(U.shape[0])
+    Ux, Uz, Wx, Wz = U[:, :NC], U[:, NC:], W[:, :NC], W[:, NC:]
+    for k in sorted(range(len(SHIFTS)), key=lambda k: len(SHIFT_PAIRS[k][0])):
+        I, J = SHIFT_PAIRS[k]
+        if len(alive) == 0:
+            break
+        if len(I) == 0:
+            if target[k]:
+                alive = alive[:0]
+            continue
+        v = ((Ux[np.ix_(alive, I)] & Wz[np.ix_(alive, J)]).sum(1) + (Uz[np.ix_(alive, I)] & Wx[np.ix_(alive, J)]).sum(1)) & 1
+        alive = alive[v == target[k]]
     m = np.zeros(U.shape[0], bool)
     m[alive] = True
     return m

@@ -14,3 +14,22 @@ r=2 Fourier truncation of V_2: unitarity err 0.165, sup||U-V2|| 0.092, min|det| 
 PASS: control r=2: the truncated (invertible, NOT unitary) Laurent matrix carries W3 = -1 (GL formula)
   r=2 start=truncation w=    0.3: unit.err 1.53e-01  L2fit 0.051  sup||U-V2|| 0.088  min|det| 8.43e-01  W3(N=40,56) -1.0000 -1.0000
   r=2 start=truncation w=    3.0: unit.err 2.76e-02  L2fit 0.082  sup||U-V2|| 0.145  min|det| 9.72e-01  W3(N=40,56) -1.0000 -1.0000
+  r=2 start=truncation w=   30.0: unit.err 2.96e-03  L2fit 0.116  sup||U-V2|| 0.215  min|det| 9.98e-01  W3(N=40,56) -1.0000 -1.0000
+  r=2 start=truncation w=  300.0: unit.err 3.78e-04  L2fit 0.156  sup||U-V2|| 0.307  min|det| 1.00e+00  W3(N=40,56) -1.0000 -1.0000
+  r=2 start=truncation w= 3000.0: unit.err 6.53e-05  L2fit 0.192  sup||U-V2|| 0.338  min|det| 1.00e+00  W3(N=40,56) -1.0000 -1.0000
+PASS: r=1 truncation w=0.3: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 3.8e-01 > 0
+PASS: r=1 truncation w=3.0: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 1.5e-01 > 0
+PASS: r=1 truncation w=30.0: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 4.1e-02 > 0
+PASS: r=1 truncation w=300.0: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 3.8e-02 > 0
+PASS: r=1 truncation w=3000.0: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 6.5e-03 > 0
+PASS: r=1 random0 w=0.3: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 3.8e-01 > 0
+PASS: r=1 random0 w=3.0: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 1.5e-01 > 0
+PASS: r=1 random0 w=30.0: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 4.0e-02 > 0
+PASS: r=1 random0 w=300.0: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 3.9e-02 > 0
+PASS: r=1 random0 w=3000.0: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 5.9e-03 > 0
+PASS: r=2 truncation w=0.3: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 1.5e-01 > 0
+PASS: r=2 truncation w=3.0: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 2.8e-02 > 0
+PASS: r=2 truncation w=30.0: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 3.0e-03 > 0
+PASS: r=2 truncation w=300.0: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 3.8e-04 > 0
+PASS: r=2 truncation w=3000.0: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 (-1.000000); defect 6.5e-05 > 0
+TOTAL: PASS=17 FAIL=0

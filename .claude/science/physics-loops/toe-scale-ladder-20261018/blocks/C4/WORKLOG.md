@@ -33,3 +33,10 @@
   entangling (32 phase-valid); D3 full: identity + one entangling involution. Unsoldered D4/D3: gliders along axis.
 - NOTE.md drafted with placeholders RADIUS2_RESULT, INDEPENDENT_RESULT, DYNAMICS_NUMERICS, D2_ROWS.
 - Queue running (1 core): c4_04 -> c4_05 -> c4_06 -> c4_03 D2.
+
+## progress 4 (~3h15)
+- c4_04 PASS=21: Dickson, vertex front, cone, no-glider on all 168 spreading matrices (n<=8); numerics n<=32:
+  front radius = n at every step for all 28 reps; support log-log slope 1.9-2.7 (<3, sparse).
+- c4_05 independent recount (Pauli-matrix route) PASS=7: 528/176/32/1/1 matches c4_02.
+- r2 run was too slow (~1h/action); added vectorised dK=0 fast path (form_eq_mask), validated at r1 vs earlier
+  brute-force-checked counts (O 1, T 3, D4 64, D3 2 for axis/full). Queue2: r2 -> D2 -> rerun 02, 03 with final lib.

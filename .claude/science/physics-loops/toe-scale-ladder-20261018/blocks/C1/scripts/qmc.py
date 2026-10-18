@@ -565,6 +565,8 @@ def hist_update_V0(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, T, p, et, eq,
             c += psign[kk] * st[kk]
         f = 1 if (c == 4 or c == -4) else 0
         seg_f[k] = f
+        if k == 0 and f == 0:
+            a1 = 0.0  # the start state s0 xor p is a Gauss state only if p is flippable at tau = 0
         seg_al[2 * k] = a0
         seg_al[2 * k + 1] = a1
         tl = 0.0 if k == 0 else ets[k - 1]

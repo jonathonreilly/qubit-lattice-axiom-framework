@@ -103,6 +103,15 @@ class Sim:
         qmc.seed_rng(seed)
         if init is None:
             init = lat.canonical_rot((seed - 1) % 3)  # seed 1,4,..: canonical; 2,5,..: rotated once; 3,6,..: twice
+            if seed >= 11:
+                # 'RK-typical' start: symmetric random walk on the flip graph (uniform stationary law),
+                # 200 attempted flips per plaquette from the canonical state
+                rs = np.random.default_rng(1000 + seed)
+                init = init.copy()
+                for p in rs.integers(lat.np, size=200 * lat.np):
+                    c = (init[lat.plinks[p]] * lat.psign).sum()
+                    if c == 4 or c == -4:
+                        init[lat.plinks[p]] *= -1
         self.s0 = np.array(init).astype(np.int64)
         assert np.all(lat.div(self.s0) == 0)
         if cap is None:
@@ -113,6 +122,13 @@ class Sim:
         self.stats = np.zeros(10, dtype=np.int64)
         self.pr = np.array([0.3, 0.6, 0.9, 0.5])
         self.nm_fixed = None
+        self.hist = 0  # number of whole-history heat-bath updates per sweep (V = 0 only), in units of N_p
+        hc = self.kt.shape[1]
+        self.h_et = np.zeros(16 * hc + 64)
+        self.h_eq = np.zeros(16 * hc + 64, dtype=np.int64)
+        self.h_f = np.zeros(16 * hc + 65, dtype=np.int64)
+        self.h_al = np.zeros(2 * (16 * hc + 65))
+        self.h_tmp = np.zeros(hc + 8)
         self.args = (lat.lplaqs, lat.plinks, lat.psign, lat.nbh, lat.nnb)
 
     def nkinks(self):
@@ -122,6 +138,13 @@ class Sim:
         # NOTE: the number of moves per sweep must not depend on the current state during measurement
         # (a state-dependent count biases the sampled law); it is frozen by freeze_sweep().
         nm = self.nm_fixed if self.nm_fixed is not None else int(factor * (self.lat.np + self.nkinks()))
+        if self.hist > 0:
+            if self.V != 0.0 or self.mode != 0:
+                raise ValueError("history update implemented for V = 0, open mode only")
+            okh = qmc.hist_sweep_V0(self.s0, self.kt, self.kc, *self.args, self.g, self.T, int(self.hist * self.lat.np),
+                                    self.h_et, self.h_eq, self.h_f, self.h_al, self.h_tmp)
+            if not okh:
+                raise RuntimeError("history update overflow")
         while True:
             ok = qmc.sweep(self.s0, self.kt, self.kc, *self.args, self.g, self.V, self.T, self.mode, nm,
                            self.buf, self.stats, self.pr)
@@ -142,8 +165,9 @@ class Sim:
 
 
 def run(L, V, T, nsweep, ntherm, seed, mode=0, J=0, dtau=0.25, g=1.0, factor=1.0, cap=None, log=None,
-        nbins=64, checkevery=50, every=1):
+        nbins=64, checkevery=50, every=1, hist=0.0):
     sim = Sim(L, V, T, g=g, mode=mode, seed=seed, cap=cap)
+    sim.hist = hist
     lat = sim.lat
     t0 = time.time()
     for i in range(ntherm):
@@ -212,7 +236,7 @@ def run(L, V, T, nsweep, ntherm, seed, mode=0, J=0, dtau=0.25, g=1.0, factor=1.0
                     for b in range(nbins)])
     accPE /= cnt[:, None, None, None, None]
     accPn /= cnt[:, None, None, None, None]
-    res = {"L": L, "V": V, "T": T, "g": g, "mode": mode, "seed": seed, "nsweep": nsweep, "ntherm": ntherm, "every": every, "nm_fixed": sim.nm_fixed,
+    res = {"L": L, "V": V, "T": T, "g": g, "mode": mode, "seed": seed, "nsweep": nsweep, "ntherm": ntherm, "every": every, "nm_fixed": sim.nm_fixed, "hist": hist,
            "time_therm": tth, "time_total": time.time() - t0, "gauss_or_path_failures": nfail,
            "stats": sim.stats.tolist(), "valid_final": bool(sim.valid())}
     for k, v in sc.items():

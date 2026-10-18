@@ -35,6 +35,10 @@ def jack_gap(Cb, dtau, j1, j2):
     return float(full), float(se)
 
 
+def fm(v, d=4):
+    return f"{v[0]:.{d}f}({v[1]:.{d}f})" if isinstance(v, (list, tuple)) else str(v)
+
+
 rows = []
 for f in files:
     z = np.load(f)
@@ -78,10 +82,34 @@ for f in files:
         if jmax > j1 + 1:
             r["gap_fit"] = jack_gap(Cb, dtau, j1, jmax)
             r["gap_window"] = [j1 * dtau, jmax * dtau]
+        # fixed windows for cross-size comparison
+        for name, (ta, tb) in {"gap_05_20": (0.5, 2.0), "gap_15_30": (1.5, 3.0)}.items():
+            ja, jb = int(round(ta / dtau)), int(round(tb / dtau))
+            if jb <= J and tb <= T / 4 + 1e-9:
+                r[name] = jack_gap(Cb, dtau, ja, jb)
         r["C0"] = [float(Cb[:, 0].mean()), float(Cb[:, 0].std(ddof=1) / np.sqrt(len(Cb)))]
     rows.append(r)
 
 json.dump(rows, open(os.path.join(base, "data", "summary.json"), "w"), indent=1)
+# per-chain hysteresis table
+H = ["| V | L | T | seed (start) | E_mix/N_p | E_mid/N_p | n_flip/N_p | S_T(k1) | m2_n(X) | m2_n(M) | m2_n(R) | X-star max/mean | gap[0.5,2] | gap[1.5,3] |",
+     "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+for r in sorted(rows, key=lambda x: (x["V"], x["L"], x["T"], x["seed"])):
+    if "ST_100" not in r:
+        continue
+    nv = r["L"] ** 3
+    st = "RK-walk" if r["seed"] >= 11 else f"canon-rot{(r['seed']-1)%3}"
+    if r["L"] == 6 and r["T"] in (12.0, 18.0) and r["seed"] == 1 or r["L"] == 4 and r["seed"] == 1:
+        st = "canon"
+    mX = sum(r["Sn_" + q][0] for q in ("100", "010", "001")) / nv
+    mM = sum(r["Sn_" + q][0] for q in ("110", "011", "101")) / nv
+    mR = r["Sn_111"][0] / nv
+    an = max(r["Sn_" + q][0] for q in ("100", "010", "001")) / np.mean([r["Sn_" + q][0] for q in ("100", "010", "001")])
+    g1 = f"{r['gap_05_20'][0]:.3f}({r['gap_05_20'][1]:.3f})" if "gap_05_20" in r else "-"
+    g2 = f"{r['gap_15_30'][0]:.3f}({r['gap_15_30'][1]:.3f})" if "gap_15_30" in r else "-"
+    H.append(f"| {r['V']} | {r['L']} | {r['T']:g} | {r['seed']} ({st}) | {fm(r['E_mix_per_plaq'], 5)} | {fm(r['E_mid_per_plaq'], 4)} | {fm(r['nflip_mid_per_plaq'])} | "
+             f"{fm(r['ST_100'])} | {mX:.4f} | {mM:.4f} | {mR:.4f} | {an:.2f} | {g1} | {g2} |")
+open(os.path.join(base, "data", "per_chain.md"), "w").write("\n".join(H) + "\n")
 
 # table
 lines = ["| L | V | T | seed | sweeps | E_mix/N_p | E_mid/N_p | n_flip/N_p | S_T(k1) | S_T(k1)/K1 | S_T(110) | S_n(pi,pi,pi) | S_n max over {0,pi}^3 | S_n global max (q) | gap(k1) [window] |",

@@ -1,0 +1,18 @@
+   corner complex (own cells) cube side 1: cycles in B 13, not filled in B+1: 0; closed cochains on B 0, not coboundaries from B+1: 0  (0s)
+   corner complex (own cells) cube side 2: cycles in B 145, not filled in B+1: 0; closed cochains on B 24, not coboundaries from B+1: 0  (0s)
+   corner complex (own cells) cube side 3: cycles in B 541, not filled in B+1: 0; closed cochains on B 144, not coboundaries from B+1: 0  (1s)
+   corner complex (own cells) cube side 4: cycles in B 1345, not filled in B+1: 0; closed cochains on B 432, not coboundaries from B+1: 0  (5s)
+[PASS] (T1),(T2) for the corner complex on cubes up to side 3-4 (own construction, only one tube per edge)
+   F1 L=9 r=1 W=3: dim C_T|_B=0, defect (not in span of gens in B+W)=0, gens touching B not inside B+W=0  (13s)
+   F1 L=9 r=2 W=3: dim C_T|_B=2, defect (not in span of gens in B+W)=0, gens touching B not inside B+W=0  (13s)
+   F3 L=8 r=1 W=2: dim C_T|_B=1, defect (not in span of gens in B+W)=0, gens touching B not inside B+W=0  (13s)
+   F3 L=8 r=2 W=2: dim C_T|_B=13, defect (not in span of gens in B+W)=0, gens touching B not inside B+W=0  (13s)
+   F3 L=8 r=3 W=2: dim C_T|_B=55, defect (not in span of gens in B+W)=0, gens touching B not inside B+W=0  (14s)
+   F4 L=6 r=1 W=2: dim C_T|_B=3, defect (not in span of gens in B+W)=0, gens touching B not inside B+W=0  (14s)
+   F1 L=10 r=3 W=3: dim C_T|_B=29, defect (not in span of gens in B+W)=0, gens touching B not inside B+W=0  (14s)
+   F5 L=6 r=1 W=2: dim C_T|_B=25, defect (not in span of gens in B+W)=0, gens touching B not inside B+W=0  (19s)
+   F5 L=7 r=2 W=2: dim C_T|_B=289, defect (not in span of gens in B+W)=0, gens touching B not inside B+W=0  (37s)
+[PASS] local TQO (Lemma 1 stabilizer form): defect 0 and every generator touching B lies in B+W
+   control F3 L=8 with B_(2,2,2) removed: defect=1
+[PASS] negative control: the local-TQO test detects a missing on-site generator (defect 1)
+TOTAL: PASS=3 FAIL=0

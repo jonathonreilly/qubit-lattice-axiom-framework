@@ -103,3 +103,24 @@ checked observable; additionally all relative errors < 1% for E.
   error is max(seed scatter, binned); (iii) agreement between starts is itself reported as a mixing check.
 - The single-chain S_T(k_min) at L=4 depends on T (T=4: ~0.345, T=8: ~0.339, T=16: 0.268 seed 1); not
   yet known whether projection or mixing. To be resolved by the multi-start runs.
+
+## 20:05 UTC — validation result; two-macrostate slow mode at L=4; whole-history update tried
+
+- `logs/step2_validate_L2.log` (4 chains per case): TOTAL PASS=8 FAIL=1. The failure: V=0.9, T=3,
+  end observables N_f(end) 8.0650(139) vs exact 8.1082 (z=-3.1) (mid observables pass). Follow-up with
+  6 *fresh* chains (logs/dbg_vend.log): T=3: 8.1045(105) vs 8.1082 (z=-0.3); T=1: 8.1037(162) vs
+  8.1043. Read: statistical (long autocorrelation near RK), not a V-term bug; the delta-integral code was
+  also checked bit-identical to a reference implementation. Both results are reported, not replaced.
+- Periodic local-move control: E = -7.95 vs thermal -9.02 (beta=4, V=0) — class restriction confirmed.
+- Whole-history heat-bath update for one plaquette (V=0; forward-filter/backward-sample of the 2-state
+  parity process given all other histories) implemented (`qmc.hist_update_V0`), exact P(n) at L=2
+  reproduced (logs: printed in session; dbg_hist.py). It does NOT remove the slow mode at L=4 T=8
+  (autocorr ~0.1 at 2000 sweeps) and costs ~10x per sweep -> not used in production.
+- Diagnosis of the slow mode (dbg_modes.py, L=4 T=4): block means switch between two macrostates of
+  equal kink number (equal energy within noise): (A) higher N_flip (0.328/plaq) with enhanced
+  flippability Bragg weight at X = (pi,0,0)-type (orientations containing the Q axis) and enhanced
+  E-field weight at R/M; (B) lower N_flip (0.312) with larger S_T(k_min). Interpretation deferred.
+- Production restructured: queue A3 (V=0: L=6..12, rotated-canonical starts s=1,2 and "RK-typical"
+  random-walk starts s>=11) and B2 (V=0.5/0.9 controls, both start types). Hysteresis between start
+  types at fixed (L,T) is a pre-declared mixing diagnostic; for chains stuck in different macrostates the
+  lower-energy one is the better ground-state estimate (energy comparison declared now, before data).

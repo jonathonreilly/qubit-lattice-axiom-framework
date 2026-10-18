@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/native_ten_layer_neutral_bound.py
+runner_sha256: 92658f8b0fef81fe9012a5bf5a35e4a804218bf23adaa9e0ce4ea11add0fd39f
+input_fingerprint_sha256: fdb6e8cb94abbb532c0090fa69bcd6b97f86b7dc0bc8ca0e41849faeafd604d8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+{"status": "conditional-support", "controls": {"neutral_eighth_rectangle.py": {"loops": [{"w": 1, "h": 1, "coefficient": "-1/128"}, {"w": 2, "h": 1, "coefficient": "-3/8192"}, {"w": 3, "h": 1, "coefficient": "-9/262144"}, {"w": 2, "h": 2, "coefficient": "-9/262144"}], "heights": [{"L": 8, "c": "9/32768", "gamma": "429/262144", "v": "9/4096", "v_over_two_gamma": "96/143", "parallel_curvature": "20449/4194304"}, {"L": 10, "c": "45/131072", "gamma": "12155/33554432", "v": "45/16384", "v_over_two_gamma": "9216/2431", "parallel_curvature": "29548805/154618822656"}, {"L": 12, "c": "27/65536", "gamma": "88179/1073741824", "v": "27/8192", "v_over_two_gamma": "589824/29393", "parallel_curvature": "863948449/105553116266496"}]}, "neutral_ten_layer_star.py": {"rows": [{"lam": 0.2, "energy": -0.0027468900875955247, "source_weight": 1.9997773378686374, "splitting_scaled": 3.569478260677061e-05, "curvature_scaled": 9.573184986433309e-05}, {"lam": 0.1, "energy": -0.002746601177791296, "source_weight": 1.9999860839579675, "splitting_scaled": 3.579883116005269e-05, "curvature_scaled": 9.559820436701183e-05}, {"lam": 0.05, "energy": -0.002746583226231158, "source_weight": 1.9999991302487812, "splitting_scaled": 3.582423023127637e-05, "curvature_scaled": 9.556465245731068e-05}, {"lam": 0.02, "energy": -0.0027465820618294812, "source_weight": 1.999999977734371, "splitting_scaled": 3.5831298049018594e-05, "curvature_scaled": 9.55552490617449e-05}], "expected_splitting": 3.5832642121628545e-05, "expected_curvature": 9.555371232434279e-05, "scope": "Truncated native coefficient graph only; not full microscopic spectrum"}}, "source_weight_coefficient": "2783620125/1125899906842624", "scope": "Actual selected-fibre zero-momentum pole in logarithmic boxes; positive curvature separately at coefficient level with q much smaller than lambda; no empirical scalar"}
+
+----- stderr -----
+

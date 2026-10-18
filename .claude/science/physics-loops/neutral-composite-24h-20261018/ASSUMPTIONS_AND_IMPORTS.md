@@ -112,3 +112,6 @@ Six-layer pole: native rectangleinteraction, plaquetterenormalization, hopping, 
 
 
 Positive plane-character vacuum now derived at each fixed R sufficiently small lambda. Uniform R-dependent threshold remains open; do not apply this selection to the previous logarithmic-box family without further proof.
+
+
+Ten-layer native attraction and coupling derived without a new term. Positive coefficient curvature requires q<<lambda and is not uniform actual-H dispersion. Unknown common diagonal energy shifts explicitly retained; no fitted or independently tested observations.

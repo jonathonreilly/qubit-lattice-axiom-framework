@@ -160,3 +160,6 @@ Six-layer pole: actual_current_surface_status conditional-support; proposal_allo
 
 
 Ground-selection block actual_current_surface_status: conditional-support; proposal_allowed: false; bare_retained_allowed: false. Supplied Hamiltonian/geometry/weak-coupling premises survive. Independent audit required before any effective promotion.
+
+
+Ten-layer block actual_current_surface_status: conditional-support; proposal_allowed: false; bare_retained_allowed: false. Final focused review pass, independent audit still required. Hamiltonian/geometry/weak anisotropy and joint-family selected ground remain premises.

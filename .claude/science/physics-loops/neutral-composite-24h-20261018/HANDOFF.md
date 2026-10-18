@@ -413,3 +413,6 @@ Six-layer pole block complete: full nativeD6 includesa=-25/3072,b=18/8192,gamma6
 
 
 Fixed-R six-layer ground selection complete: native spin-count and flux-denominator counting force first nonconstant flat operator at order R+4; two perfect matchings give positive t_R and unique all-positive character ground. Finite-R analytic remainder, not D6 truncation, establishes actual ground selection. Independent analytic and final checks PASS. No uniform threshold; ordered-limit state premise retired only. Next root thicker L10 candidate: native eighth-order straight-rectangle attraction may bind thin neutral features with positive dispersion; D8 classification under check.
+
+
+Native attractive neutral block complete: eighth-order straight-rectangle term gives endpointtrapv=9L/32768; height8 failsbinding, fixedL>=10 binds. Leadingnative coefficient dispersion positive, isotropiconlyq<<lambda. Actual selected-fibre q0C4even pole andoriginalsourceweight2gamma²beta²/L lambda2L transferalonglogarithmicboxes; no actualresolveddispersionclaim. L10sourcecoefficient2.47235132367e-6. Independentclassification/coefficient/transfer/finalchecksPASS. Groundselection extendsfixedRonly. Rootnext outgoingheavyenvironment: exactrotationgauge removesnaivefree-wavecancellation; nativefluxDirichletsource decayslogarithmically, fullscatteringstillopen.

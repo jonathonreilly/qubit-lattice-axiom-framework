@@ -160,3 +160,6 @@ Six-layer pole: trace_class upstream_support; source_of_blocker_text user_goal; 
 
 
 Ground-selection block: upstream_support; partially closes prepared symmetry-sector premise in fixed-size ordered limit, not uniform growing-volume state selection.
+
+
+Ten-layer block: upstream_support; derives native attraction, positive coefficient curvature and original source coupling for selected-fibre neutral mode. Partially closes user scalar-mode/coupling request; unresolved finite-H resolved dispersion, full heavy channel and 3D/empirical identification.

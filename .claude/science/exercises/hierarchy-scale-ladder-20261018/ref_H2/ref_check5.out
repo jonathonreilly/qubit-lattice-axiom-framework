@@ -1,0 +1,65 @@
+subgroups found (<=2 generators of Gamma, <=3 of the point group): 2644
+I R I^-1 R^-1 = A2(R) * 1 for all proper R: True
+H0 covariant under D_PR: yes
+111 A1g  dir0  |Stab|=192 c=(1, 1, 1) sv-orders=[] n_massive_sv=0
+111 A1u  dir0  |Stab|=192 c=(1, 1, 1) sv-orders=[] n_massive_sv=0
+111 A2g  dir0  |Stab|=192 c=(1, 1, 1) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['1.0', '1.0', '1.0', '1.0']
+111 A2u  dir0  |Stab|=192 c=(1, 1, 1) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['1.0', '1.0', '1.0', '1.0']
+111 Eg   dir0  |Stab|=64  c=(1, 1, 1) sv-orders=[1] n_massive_sv=4  TRUE pair-gap orders ['gapless', '1.0', '1.0', 'gapless']
+111 Eg   dir1  |Stab|=64  c=(1, 1, 1) sv-orders=[1, 3] n_massive_sv=8  TRUE pair-gap orders ['1.0', '1.0', '1.0', '3.0']
+111 Eu   dir0  |Stab|=64  c=(1, 1, 1) sv-orders=[1, 3] n_massive_sv=8  TRUE pair-gap orders ['1.0', '1.0', '1.0', '3.0']
+111 Eu   dir1  |Stab|=64  c=(1, 1, 1) sv-orders=[1] n_massive_sv=4  TRUE pair-gap orders ['gapless', '1.0', '1.0', 'gapless']
+111 T1g  dir0  |Stab|=48  c=(1, 1, 1) sv-orders=[1, 3] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', '3.0']
+111 T1g  dir1  |Stab|=64  c=(1, 1, 1) sv-orders=[1] n_massive_sv=4  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+111 T1g  dir2  |Stab|=32  c=(1, 1, 1) sv-orders=[1, 3] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+111 T1u  dir0  |Stab|=48  c=(1, 1, 1) sv-orders=[1, 3] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', '3.0']
+111 T1u  dir1  |Stab|=64  c=(1, 1, 1) sv-orders=[1] n_massive_sv=4  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+111 T1u  dir2  |Stab|=32  c=(1, 1, 1) sv-orders=[1, 3] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+111 T2g  dir0  |Stab|=48  c=(1, 1, 1) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+111 T2g  dir1  |Stab|=64  c=(1, 1, 1) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+111 T2g  dir2  |Stab|=32  c=(1, 1, 1) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+111 T2u  dir0  |Stab|=48  c=(1, 1, 1) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+111 T2u  dir1  |Stab|=64  c=(1, 1, 1) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+111 T2u  dir2  |Stab|=32  c=(1, 1, 1) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+hw1 A1g  dir0  |Stab|=48  c=None sv-orders=[1] n_massive_sv=8
+hw1 A1g  dir1  |Stab|=64  c=(0, 0, 1) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+hw1 A1g  dir2  |Stab|=32  c=None sv-orders=[1] n_massive_sv=8
+hw1 A1u  dir0  |Stab|=48  c=None sv-orders=[1] n_massive_sv=8
+hw1 A1u  dir1  |Stab|=64  c=(0, 1, 0) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+hw1 A1u  dir2  |Stab|=32  c=None sv-orders=[1] n_massive_sv=8
+hw1 A2g  dir0  |Stab|=48  c=None sv-orders=[1] n_massive_sv=8
+hw1 A2g  dir1  |Stab|=64  c=(0, 0, 1) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['1.0', '1.0', '1.0', '1.0']
+hw1 A2g  dir2  |Stab|=32  c=None sv-orders=[1] n_massive_sv=4
+hw1 A2u  dir0  |Stab|=48  c=None sv-orders=[1] n_massive_sv=8
+hw1 A2u  dir1  |Stab|=64  c=(0, 0, 1) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['1.0', '1.0', '1.0', '1.0']
+hw1 A2u  dir2  |Stab|=32  c=None sv-orders=[1] n_massive_sv=4
+hw1 B1g  dir0  |Stab|=48  c=None sv-orders=[1, 3] n_massive_sv=8
+hw1 B1g  dir1  |Stab|=64  c=(1, 0, 0) sv-orders=[1] n_massive_sv=4  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+hw1 B1g  dir2  |Stab|=32  c=None sv-orders=[1, 3] n_massive_sv=8
+hw1 B1u  dir0  |Stab|=48  c=None sv-orders=[1, 3] n_massive_sv=8
+hw1 B1u  dir1  |Stab|=64  c=(1, 0, 0) sv-orders=[1] n_massive_sv=4  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+hw1 B1u  dir2  |Stab|=32  c=None sv-orders=[1, 3] n_massive_sv=8
+hw1 B2g  dir0  |Stab|=48  c=None sv-orders=[1] n_massive_sv=4
+hw1 B2g  dir1  |Stab|=64  c=(1, 0, 0) sv-orders=[1] n_massive_sv=4  TRUE pair-gap orders ['1.0', '1.0', 'gapless', 'gapless']
+hw1 B2g  dir2  |Stab|=32  c=None sv-orders=[1] n_massive_sv=4
+hw1 B2u  dir0  |Stab|=48  c=None sv-orders=[1] n_massive_sv=4
+hw1 B2u  dir1  |Stab|=64  c=(1, 0, 0) sv-orders=[1] n_massive_sv=4  TRUE pair-gap orders ['1.0', '1.0', 'gapless', 'gapless']
+hw1 B2u  dir2  |Stab|=32  c=None sv-orders=[1] n_massive_sv=4
+hw1 Eg   dir0  |Stab|=24  c=None sv-orders=[1] n_massive_sv=8
+hw1 Eg   dir1  |Stab|=12  c=None sv-orders=[1] n_massive_sv=8
+hw1 Eg   dir2  |Stab|=12  c=None sv-orders=[1, 3] n_massive_sv=8
+hw1 Eg   dir3  |Stab|=32  c=(0, 0, 1) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+hw1 Eg   dir4  |Stab|=32  c=None sv-orders=[1] n_massive_sv=4
+hw1 Eg   dir5  |Stab|=32  c=None sv-orders=[1] n_massive_sv=8
+hw1 Eg   dir6  |Stab|=32  c=(1, 0, 0) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+hw1 Eu   dir0  |Stab|=24  c=None sv-orders=[1] n_massive_sv=8
+hw1 Eu   dir1  |Stab|=12  c=None sv-orders=[1] n_massive_sv=8
+hw1 Eu   dir2  |Stab|=12  c=None sv-orders=[1, 3] n_massive_sv=8
+hw1 Eu   dir3  |Stab|=32  c=(0, 1, 0) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+hw1 Eu   dir4  |Stab|=32  c=None sv-orders=[1] n_massive_sv=4
+hw1 Eu   dir5  |Stab|=32  c=None sv-orders=[1] n_massive_sv=8
+hw1 Eu   dir6  |Stab|=32  c=(0, 1, 0) sv-orders=[1] n_massive_sv=8  TRUE pair-gap orders ['gapless', 'gapless', 'gapless', 'gapless']
+
+all sv orders seen: [1, 3]
+max distinct true-gap orders per single-charge direction: 2 ; true orders seen: ['1.0', '3.0']
+watchdog peak RSS 99808 KB

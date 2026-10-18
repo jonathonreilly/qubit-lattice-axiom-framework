@@ -1,0 +1,11 @@
+margin N=2,3,10,100,1e4: [2.02, 5.018, 25.357, 285.026, 28842.725]
+margin increasing on N>=2 (dm/dN>0 at 2..1e4 sample): True
+SU(3) Nf=0: g^2 for 15 one-loop decades = 0.208
+SU(3) Nf=8: g^2 for 15 one-loop decades = 0.403
+m=-1.0: (bracket(m)-bracket(-3r))/(m+3r) max 0.7733
+m=0.0: (bracket(m)-bracket(-3r))/(m+3r) max 0.7733
+m=0.9: (bracket(m)-bracket(-3r))/(m+3r) max 0.7733
+m=2.0: (bracket(m)-bracket(-3r))/(m+3r) max 0.7733
+mass dependence exactly linear in (m+3r): True
+bracket at m=-3r equals the on-site-free (hop-only) bracket by construction of dirac_h line 74
+watchdog peak RSS 14544 KB

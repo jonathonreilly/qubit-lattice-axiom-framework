@@ -110,3 +110,15 @@
 - **PR #9702's staggered mass** gives an order-ε 1 + 3 split, with the three doublers degenerate.
 - **Open:** two-amplitude classes; multi-harmonic and longer-period patterns; interaction-driven masses (B7). The corner model's own node representation was not extracted.
 - **Supervisor's prediction (PARTIAL or OPEN):** the result is the stronger MASS-NO within L1.
+
+**HIER-2 same-family referee (recorded 13:26Z): NOT CONFIRMED as MASS-NO. The correct fixed reading is OPEN.**
+- **R5 counted singular values as masses.** Most chirality-odd blocks are Lorentz-violating tensors that leave nodal rings gapless: 86 of 120 single-charge pairs are certified gapless. The true gap orders are still {1, 3}, at most 2 per direction.
+- **The span argument is false in general.** The {1, 3} result rests on numerics through order 7, plus a generic-rank check.
+- **The node representation lacked PR #9702's PSG cocycle.** The referee rebuilt it with A2(R). The orders are unchanged; R7's mapping is corrected.
+- **R1 counterexample, outside L1.** A dilute breaking, once per cell of size L, gives ε = ε₀(a/L)³, which is a ladder ratio, but the rung assignment is supplied.
+- **R2 holds for the exponents only.** It also needs identical coefficients.
+- **MASS-NO requires a proof, and R5 is numerical on a comparator. So the reading is OPEN.**
+- **Strongest statement.**
+  - Proved: R4 structure; sector-blind exponents; free-integer fits carry no evidence.
+  - Checked numerically: one symmetry-fixed period-2 spurion gives Dirac gaps only at orders {1, 3}.
+  - Not excluded: dilute or longer-period breaking, two amplitudes, interaction masses.

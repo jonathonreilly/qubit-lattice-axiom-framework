@@ -1,0 +1,21 @@
+[D,S_mu]=0: [True, True, True, True]
+[D,T_mu]=0 (plain translation): [False, False, False, True]
+basis onsite: nonzero=True commutes=True
+basis fwd0: nonzero=True commutes=True
+basis bwd0: nonzero=True commutes=True
+basis fwd1: nonzero=True commutes=True
+basis bwd1: nonzero=True commutes=True
+basis fwd2: nonzero=True commutes=True
+basis bwd2: nonzero=True commutes=True
+basis fwd3: nonzero=True commutes=True
+basis bwd3: nonzero=True commutes=True
+dim of S-invariant on-site+NN space: 9
+trial 0: zero singular values 0; multiplicities all divisible by 4: True; min mult 8
+trial 1: zero singular values 0; multiplicities all divisible by 4: True; min mult 8
+trial 2: zero singular values 0; multiplicities all divisible by 4: True; min mult 8
+trial 3: zero singular values 0; multiplicities all divisible by 4: True; min mult 8
+trial 4: zero singular values 0; multiplicities all divisible by 4: True; min mult 8
+trial 5: zero singular values 0; multiplicities all divisible by 4: True; min mult 8
+r1 orbit check is vacuous (zero vector under any linear map): True
+zeta_mu as momentum boost vectors: [(0, 1, 1, 1), (0, 0, 1, 1), (0, 0, 0, 1), (0, 0, 0, 0)]
+watchdog peak RSS 66656 KB

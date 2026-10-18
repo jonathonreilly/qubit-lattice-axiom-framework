@@ -16,7 +16,11 @@ def inter(A_of_k, B_of_k):
     rows = []
     for k in KS:
         A, B = A_of_k(k), B_of_k(k); rows.append(np.kron(A, np.eye(12)) - np.kron(np.eye(12), B.T))
-    s = np.linalg.svd(np.vstack(rows), compute_uv=False); return int(np.sum(s < 1e-8 * s[0]))
+    u, s, vh = np.linalg.svd(np.vstack(rows)); null = vh[np.sum(s > 1e-8 * s[0]):].conj()
+    if len(null) == 0: return 0
+    rg = np.random.default_rng(1); V = (rg.normal(size=len(null)) + 1j * rg.normal(size=len(null))) @ null
+    sv = np.linalg.svd(V.reshape(12, 12), compute_uv=False)
+    return len(null) if sv[-1] > 1e-6 * sv[0] else 0          # only an INVERTIBLE solution counts as an intertwiner
 res = []
 for a, pw in ((1, 'S'), (2, 'S2'), (4, 'S4')):
     for m in (1, 2, 4, 5):

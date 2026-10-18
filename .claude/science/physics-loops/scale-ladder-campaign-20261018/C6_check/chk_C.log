@@ -1,0 +1,14 @@
+  L=20: N_c ~ 61, mean max_Q |S(Q)| = 0.2610, sqrt(N_c) * that = 2.04
+  L=40: N_c ~ 510, mean max_Q |S(Q)| = 0.0930, sqrt(N_c) * that = 2.10
+  L=60: N_c ~ 1709, mean max_Q |S(Q)| = 0.0576, sqrt(N_c) * that = 2.38
+  L=80: N_c ~ 4102, mean max_Q |S(Q)| = 0.0353, sqrt(N_c) * that = 2.26
+[PASS] ffiid rule: sqrt(N_c) * max_Q|S(Q)| stays O(1) (within [1, 4]) from L = 20 to 80 while |S| falls (no Bragg peak)  [np.float64(2.04), np.float64(2.1), np.float64(2.38), np.float64(2.26)]
+[PASS] control (a): deterministic periodic start slice B = 5Z^3 registers perfectly (|S| = 1): Definition 1 allows it, the lemma needs B = empty
+[PASS] control (b): a position-dependent rule F_y (y mod 5) registers with coding radius 0: the lemma needs translation covariance
+  n=1 modes: even algebra dim 2 = 2*(2^0)^2, centre dim 2
+  n=2 modes: even algebra dim 8 = 2*(2^1)^2, centre dim 2
+  n=3 modes: even algebra dim 32 = 2*(2^2)^2, centre dim 2
+  n=4 modes: even algebra dim 128 = 2*(2^3)^2, centre dim 2
+[PASS] even algebra of n modes = M_{2^(n-1)} + M_{2^(n-1)} (dim and 2-dim centre), so a faithful rep needs n qubits (n = 12 for a corner site)
+
+TOTAL: PASS=4 FAIL=0

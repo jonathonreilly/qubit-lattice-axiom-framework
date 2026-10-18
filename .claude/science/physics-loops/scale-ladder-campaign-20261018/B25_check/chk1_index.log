@@ -1,0 +1,16 @@
+   O-invariant subgroups of (pi/8)Z^3/2piZ^3 (unit pi/8): ['sc(1)', 'fcc(1)', 'bcc(2)', 'sc(2)', 'fcc(2)', 'bcc(4)', 'sc(4)', 'fcc(4)', 'bcc(8)', 'sc(8)', 'fcc(8)', 'bcc(16)', 'sc(16)']
+[PASS] (a) exactly 13 O-invariant lattices 2piZ^3 <= L <= (pi/8)Z^3: sc(2pi..pi/8), fcc(pi..pi/8), bcc(2pi..pi/4)  13
+   strictly nested: 74 ; O-trivial strict: [('sc(16)', 'bcc(16)', 2), ('sc(2)', 'bcc(2)', 2), ('sc(4)', 'bcc(4)', 2), ('sc(8)', 'bcc(8)', 2), ('fcc(1)', 'sc(1)', 2), ('fcc(2)', 'sc(2)', 2), ('fcc(4)', 'sc(4)', 2), ('fcc(8)', 'sc(8)', 2)]
+[PASS] (b) 74 strictly nested pairs; the O-trivial ones are exactly (sc(a),bcc(a)) a=2pi..pi/4 and (fcc(b),sc(b)) b=pi..pi/8 (8 pairs, index 2)  
+[PASS] (b) every O-trivial pair has elementary-abelian quotient of order <= 4 (so the Klein-group bound is never the binding constraint)  
+   index <= 4 but NON-trivial O action: [('sc(16)', 'fcc(8)', 4, 'exp2'), ('sc(2)', 'fcc(1)', 4, 'exp2'), ('sc(4)', 'fcc(2)', 4, 'exp2'), ('sc(8)', 'fcc(4)', 4, 'exp2'), ('fcc(2)', 'bcc(2)', 4, 'Z4'), ('fcc(4)', 'bcc(4)', 4, 'Z4'), ('fcc(8)', 'bcc(8)', 4, 'Z4'), ('bcc(2)', 'sc(1)', 4, 'exp2'), ('bcc(4)', 'sc(2)', 4, 'exp2'), ('bcc(8)', 'sc(4)', 4, 'exp2'), ('bcc(16)', 'sc(8)', 4, 'exp2')]
+[PASS] (c) 12 commuting C2 pairs in O; T = {E, 8 C3, 3 coordinate C2}  
+[PASS] (c) good pairs on the (pi/64) grid: 56 of 74 strict pairs (29 of the 42 pairs of the 10 lattices down to pi/4); no (L, L) pair is good  56, 29/42
+[PASS] (c) all 8 O-trivial strict pairs (and all 13 (L,L)) are bad: the index lemma's pair list contains no good pair  
+[PASS] (c) every good pair has a non-trivial O action on L_sp/L_u (so it needs a taste outside Lambda_ind)  
+   scale-free O-trivial sublattices L <= L' (unit scale): {'sc': (2, ['fcc', 'sc'], 2), 'fcc': (1, ['fcc'], 1), 'bcc': (2, ['bcc', 'sc'], 2)}
+[PASS] (d) scale-free: [L' : M(L')] and the O-invariant L with trivial action on L'/L are sc' -> {fcc, sc}, bcc -> {sc, bcc}, fcc -> {fcc}  
+[PASS] (e) exact witnesses at every scale: q = (a/2)e_z is C2-pair-fixed mod sc(a) and not T-fixed mod bcc(a); q = (b/2)(0,1,1) is C2-pair-fixed mod fcc(b), not T-fixed mod sc(b)  
+[PASS] (f) chk_core build: some cube point (+-pi/2)^3 is fixed mod 2pi by all 24 affine rotations k -> Rk + pi R lam (linear action around k*)  2 of 8: [(np.float64(0.5), np.float64(-0.5), np.float64(0.5)), (np.float64(-0.5), np.float64(0.5), np.float64(-0.5))]
+
+TOTAL: PASS=10 FAIL=0   [79s]

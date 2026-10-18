@@ -1,0 +1,12 @@
+[PASS] own good table: 56 good of 74 strict nested pairs, none among (L,L), (sc,bcc)_a, (fcc,sc)_b  
+   19 census words sampled from 9 strata (+ B25's Fourier-FAIL word)
+   resuming: skipping the first 17 sampled words (done in an earlier, killed run)
+   ALIGN2 S4.p.S4.o.S4.q.S4.o ('P4', 'L133', 'P8', 'L133'): mine Lsp=bcc(4) Lu=sc(4) idx=2 T=0 kdep=1 good=False finer=False triadic=False | B25 Lsp=bcc(4) Lu=sc(4) idx=2 T=0 kdep=1 good=False  OK
+   B24    S4.p.S4.q.S4.o ('P9', 'L101', 'P6'): mine Lsp=sc(4) Lu=bcc(8) idx=4 T=0 kdep=3 good=False finer=False triadic=False | B25 Lsp=sc(4) Lu=bcc(8) idx=4 T=0 kdep=3 good=False  OK
+   FAIL-word ('S2', 'p', 'S4', 'o') ('P7', 'H00'): Lsp cap (pi/16) = bcc(32), |cap (pi/32)| = 16, |cap (pi/24)| = 432, triadic tastes True, Lu bcc(32), kinds {}
+[PASS] Fourier-route Lambda_sp, own Lambda_u and coset kinds agree with B25's census on every sampled word; none is a good pair  2/2
+[PASS] B25's FAIL word S2.P7.S4.H00 (= S^6 P up to conjugation) has tastes off the dyadic grid, all with U intertwiners (Lambda_sp cap (pi/16) = Lambda_u)  
+   ALIGN2 word S2.P7.S2.H11.S2.P5.S2.H11, t_Y = (pi/4)(1,1,1): cyclic True, constant V True (diagonal True), k-dependent intertwiner V X(k)^-1 works True, no constant U/T True, t_Y in Fourier Lambda_sp True
+[PASS] ALIGN2 mechanism: W_rot = X^-1 W X; W(k+t_Y) = V W_rot(k) V^-1 with constant (diagonal) V; so V X(k)^-1 is a k-dependent intertwiner; no k-independent U/T one; t_Y in Lambda_sp (Fourier)  
+
+TOTAL: PASS=4 FAIL=0   [303s]

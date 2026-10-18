@@ -1,0 +1,3 @@
+L=3: V=324 E=972 F=783 rank=646 E-V+1-3=646 relations=137 (5L^3+2=137)
+trial 0: final violated basis relations 0 (recomputed from scratch: 0); best seen 0; steps 13222
+  FOUND an ordering with the all-bare-+1 assignment consistent; contains -I: False

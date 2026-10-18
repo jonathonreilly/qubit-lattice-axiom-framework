@@ -1,0 +1,9 @@
+L=3: V=324 E=972 F=783 rank=646 E-V+1-3=646 relations=137 (5L^3+2=137)
+BKSF algebra: True
+all bare loop strings commute: True
+identity prod kappa = sigma on all basis relations: True
+#sigma=-1: 0 ; bare-+1 group contains -I: False
+kappa per type (#-1 / total): {'square': (123, 162), 'triangle': (117, 216), 'plaquette': (57, 81), 'tube': (255, 324)}
+target 1011: sign-flip set found: True; bare sector of flipped convention == target: True; bare group -I: False
+target 1111: sign-flip set found: True; bare sector of flipped convention == target: True; bare group -I: False
+target 0000: sign-flip set found: True; bare sector of flipped convention == target: True; bare group -I: False

@@ -29,10 +29,11 @@ errors: 0 []
    ('B24', 'bcc(16)', 'bcc(16)', 1, ()) 182 (('S2', 'o', 'S4', 'o'), ('L322', 'L230'))
    ('B24', 'bcc(32)', 'bcc(32)', 1, ()) 330 (('S', 'o', 'S2', 'o'), ('L000', 'L301'))
    ('B24', 'bcc(8)', 'bcc(8)', 1, ()) 49 (('S4', 'o', 'S4', 'o'), ('H22', 'H02'))
+   ('B24', 'bcc(8)', 'sc(4)', 4, (('', 3),)) 1 (('S4', 'p', 'S4', 'q', 'S4', 'o'), ('P9', 'L101', 'P6'))
    ('B24', 'sc(16)', 'bcc(16)', 2, (('T', 1),)) 4 (('S', 'p', 'S', 'o'), ('P7', 'H03'))
    ('B24', 'sc(16)', 'sc(16)', 1, ()) 24 (('S', 'p', 'S', 'o'), ('P2', 'L100'))
    ('B24', 'sc(4)', 'bcc(4)', 2, (('T', 1),)) 17 (('S4', 'o', 'S4', 'o'), ('P9', 'H32'))
-   ('B24', 'sc(4)', 'sc(4)', 1, ()) 55 (('S4', 'o', 'S4', 'o'), ('L023', 'P6'))
+   ('B24', 'sc(4)', 'sc(4)', 1, ()) 54 (('S4', 'o', 'S4', 'o'), ('L023', 'P6'))
    ('B24', 'sc(8)', 'bcc(8)', 2, (('T', 1),)) 10 (('S2', 'p', 'S2', 'o'), ('L202', 'L110'))
    ('B24', 'sc(8)', 'sc(8)', 1, ()) 79 (('S2', 'p', 'S2', 'o'), ('P5', 'L031'))
    ('PI6', 'bcc(16)', 'bcc(16)', 1, ()) 30 (('S2', 'o'), ('L8.8.8',))
@@ -45,8 +46,9 @@ errors: 0 []
    ('RAND', 'sc(16)', 'sc(16)', 1, ()) 19 (('S4', 'o', 'S2', 'o', 'S', 'o', 'Si', 'o'), ('L031', 'L232', 'L303', 'L231'))
    ('RAND', 'sc(32)', 'sc(32)', 1, ()) 107 (('S2', 'o', 'S2i', 'o', 'S4i', 'o', 'R', 'o'), ('L331', 'H32', 'P8', 'H23'))
    ('RAND', 'sc(8)', 'sc(8)', 1, ()) 4 (('S4', 'o', 'S4i', 'o', 'S2i', 'o', 'S2i', 'o'), ('L323', 'H22', 'P4', 'L133'))
-index [Lambda_sp : Lambda_u] distribution: {1: 1933, 2: 75}
-words with k-dependent (no k-independent U/T intertwiner) rotation tastes: 28
+index [Lambda_sp : Lambda_u] distribution: {1: 1932, 2: 75, 4: 1}
+words with k-dependent (no k-independent U/T intertwiner) rotation tastes: 29
+   kdep: ('B24', ('S4', 'p', 'S4', 'q', 'S4', 'o'), ('P9', 'L101', 'P6')) bcc(8) sc(4) {'': 3}
    kdep: ('ALIGN2', ('S', 'p', 'S', 'o', 'S', 'q', 'S', 'o'), ('P2', 'H20', 'P10', 'H20')) sc(16) bcc(16) {'': 1}
    kdep: ('ALIGN2', ('S', 'p', 'S', 'o', 'S', 'q', 'S', 'o'), ('P2', 'L030', 'P10', 'L030')) sc(16) bcc(16) {'': 1}
    kdep: ('ALIGN2', ('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o'), ('L303', 'L220', 'P5', 'L220')) sc(4) bcc(4) {'': 1}
@@ -61,10 +63,9 @@ words with k-dependent (no k-independent U/T intertwiner) rotation tastes: 28
    kdep: ('ALIGN2', ('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o'), ('P9', 'L211', 'L101', 'L211')) sc(4) bcc(4) {'': 1}
    kdep: ('ALIGN2', ('S2i', 'p', 'S2i', 'o', 'S2i', 'q', 'S2i', 'o'), ('P5', 'L113', 'P7', 'L113')) sc(8) bcc(8) {'': 1}
    kdep: ('ALIGN2', ('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o'), ('P3', 'L112', 'P9', 'L112')) sc(4) bcc(4) {'': 1}
-   kdep: ('ALIGN2', ('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o'), ('P7', 'L132', 'P8', 'L132')) sc(4) bcc(4) {'': 1}
 [PASS] index lemma, numerically: whenever every coset has a k-independent U/T intertwiner, [Lambda_sp : Lambda_u] <= 2  max index among such words 2
 GOOD (Lambda_u, Lambda_sp) pairs: 0; good with reflection tastes at their E: 0
 reflection tastes (family, I/K kind found, Lambda_sp(E) == Lambda_sp): {('B20R', 'IK', True): 11, ('B20R', '', True): 34, ('B20R', 'K', True): 21, ('B20R', '', False): 21, ('B20R', 'I', False): 1, ('B20R', 'I', True): 2, ('B24', '', True): 119, ('B24', 'K', True): 12, ('B24', 'IK', True): 4, ('B24', '', False): 28, ('B24', 'I', True): 3, ('B24', 'I', False): 1, ('PI6', '', True): 3, ('PI6', '', False): 1, ('ALIGN', '', True): 3, ('ALIGN', '', False): 1, ('ALIGN2', '', True): 20, ('ALIGN2', '', False): 2, ('ALIGN2', 'IK', True): 2, ('RAND', '', False): 2, ('RAND', 'K', True): 2, ('RAND', '', True): 2}
 [PASS] census ran on every word  
 
-TOTAL: PASS=3 FAIL=0   [176s]
+TOTAL: PASS=3 FAIL=0   [220s]

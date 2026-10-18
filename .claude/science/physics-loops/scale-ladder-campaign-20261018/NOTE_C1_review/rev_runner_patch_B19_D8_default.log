@@ -1,0 +1,63 @@
+Corner-fermion eight-node step: the doublers cannot be selectively gapped under full O; pairing is all-or-nothing,
+options: bdg=False
+
+=== Section A: repo-model construction path (campaign C1) ===
+   model built in 2.9s
+[PASS] A1 fibre maps U_g W(k) U_g^T = W(M_g k + pi s_g) for all 24 dressed rotations (6 random k); exactly 21 have s_g != 0
+[PASS] A2 projective closure U_g U_h = +-U_gh (cocycle +-1) and the affine shifts compose
+[PASS] A3 the three axis-C2 lifts pairwise anticommute on C^12
+[PASS] A4 (numerical, degenerate PT) at E = +pi/2 all eight cube points carry 2-fold Weyl doublets: +-k* isotropic sqrt2/3, doublers uniaxial (0.2467, 0.5837); chirality(k* + pi n) = (-1)^|n| chirality(k*); the -pi/2 set has the opposite chiralities  chiralities {'k*': 1, '-k*': -1, 'k*+pi ex': -1, '-k*+pi ex': 1, 'k*+pi ey': -1, '-k*+pi ey': 1, 'k*+pi ez': -1, '-k*+pi ez': 1}
+[PASS] A5 det(U_g|V) is a genuine 1-dim character of O, the same for every 2-fold level at k* and -k* (all quasi-energies); for the real signed-permutation lift it is A2  4 doublets; det character = A2
+[PASS] A6 at each doubler (little group D4) every 2-fold level has det = A2|D4 (= B1); A1|D4 differs  36 doubler doublets
+[PASS] A7 real-space L = 4 cross-check of the pairing convention: D = sum_v e^{iR.v} A_v obeys R_g D R_g^T = chi(g) D for all 24 lifts; odd translations give -D (absorbed by the U(1) dressing e^{i pi |e| N/2}); negative control fails  dim V_det = 5, dim V_A1 = 2 (of 66)
+[PASS] A8 on-site pairing at Q = R (both node sets): channel chi = det gives a nonzero singlet at all eight nodes, chi = A1 exactly zero at all eight  E=+1.57: det min 0.252, A1 max 5.0e-16; E=-1.57: det min 0.252, A1 max 4.8e-16
+[PASS] A9 the node-singlet functionals on V_det have rank 3 (k*, -k*, doublers): m_{+-k*} = 0 is a tuning; an on-site example with m_{+-k*} = 0 and all six doubler singlets nonzero exists  rank 3; tuned doubler |m| = 0.180
+[PASS] A10 random range-1 k-dependent symmetric Delta(k) (group-averaged, Fermi-antisymmetrised): at Q = R the singlet is nonzero at all eight (chi = det) or zero at all eight (chi = A1); at Q = 0 the K <-> -K blocks are generic for A1, zero for A2
+[PASS] A11 all 24 improper dressed lifts are unitary symmetries of the step; the pure inversion has zero shift, maps K -> -K and fixes no node
+[PASS] A12 O_h channels: A2g, A2u allow the singlet at all eight with |m_K| = |m_-K|; A1g, A1u forbid it at all eight (or are empty)  {'A1g': 0, 'A1u': 2, 'A2g': 3, 'A2u': 2}
+[PASS] A13 decoupling at +-k*: every on-site chi = det (A2) pairing matrix has zero blocks between the node doublet and all other levels  max cross block 6.8e-16
+[PASS] A14 four rotation orbits {k*}, {-k*}, A = {k*+pi e_i}, B = {-k*+pi e_i}, chirality constant on each, net chirality 0
+[PASS] A15 (L = 4 real space) unit translations act on each node doublet by a phase; after the common U(1) phase e^{ik*.e} the IR action is the taste sign (-1)^{n.e}, an IR Z2^3
+[PASS] A16 Weyl-dipole table: doublers A+B and {+-k*} each have net chirality 0 and b = pi(1,1,1) mod 2pi (U(1)^2-Z2 counts (1,1,1)); only 'empty' and 'all eight' are anomaly-free among rotation-invariant subsets  anomaly-free: ['empty', 'A+B+{-k*}+{k*}']
+[PASS] A17 for a zero-net-chirality set, b mod 2pi Z^3 does not depend on the momentum representatives
+[PASS] A18 Q = 0 pairing: every BdG point K carries Weyl charge chi_K - chi_{-K} = +-2, so no small Q = 0 pairing gaps any node
+[PASS] A19 Q = pi p maps the eight nodes to themselves; partners have equal chirality (gappable) iff |p| odd; rotation-invariant: only Q = 0 (protected) and Q = R (intra-node, gappable)
+[PASS] A20 on every odd-L twisted torus of the odd-filling note (theta = +-k*, L = 1..11) the allowed momenta contain exactly one of +-k* and none of the six doublers
+   Section A done in 24s
+
+=== Section B: independent-core path (campaign C1_check: own gauge, own brute-force PSG) ===
+[PASS] B0 own GF(2) gauge satisfies every flux constraint (all plaquette orientations); brute-force PSG over 2^15 (lam, tau) has a solution, unique up to the global sign, for each of the 48 O_h elements
+   model built in 2.1s
+[PASS] B1 the three axis-C2 lifts anticommute; U_g^{order(g)} = +-1 per element (the real signed-permutation lift is not the SU(2) lift: it has U^2 = -1 on axis C2 but +1 on face-diagonal C2')  {'E': [1], 'C2': [-1], 'C4': [-1], "C2'": [1], 'C3': [-1, 1]}
+[PASS] B2 det(U_g|V) = A2 at every 2-fold level at +-k* and = A2|D4 at every doubler level, for the eight-node step and four other PSG-symmetric steps/Hamiltonians  eight_node: 4+36; rand_step: 4+36; rand_ham: 4+36; rand_prod: 4+36; phase_variant: 4+36
+[PASS] B3 the doubler little group (affine) is D4: 2 C4, 3 axis C2, 2 diagonal C2'; A2|D4 = (C4 -1, C2 +1, C2' -1) = B1, which differs from A1|D4
+[PASS] B4 at k* the two 2-fold levels are different 2-dim irreps whose characters differ exactly by A2 (E1/2 vs E5/2 = E1/2 x A2), hence have equal det (A2^2 = 1)
+[PASS] B5 Q = R: chi = A2 gives a nonzero intra-node singlet at all eight nodes (range-1 random), chi = A1 exactly zero at all eight (range-1 random and the whole on-site basis): all-or-nothing  A1 max 8.7e-15
+[PASS] B6 node by node: singlet observed nonzero <=> chi|G_K = det_K (all eight nodes, both characters)
+[PASS] B7 Q = 0: symmetric pairings exist for both characters; K <-> -K blocks are generic for A1 and vanish for A2
+[PASS] B8 among Q in (pi/2)Z^3 only Q = 0 and Q = R are fixed mod 2pi by the 24 linear parts (the affine shifts cancel in the pair momentum)  [(0, 0, 0), (1, 1, 1)]
+[PASS] B9 decoupling at +-k*: an A2 pairing (on-site or range-1) couples the node doublet to no other level; an A1 pairing couples it to the other 2-dim irrep only, never to G3/2  A2 max 1.3e-14
+[PASS] B10 the particle+hole node 4-space at +-k* is invariant under the full Floquet-BdG step (tau = 1.3, range-1 A2 pairing): exact decoupling at all orders, so +-k* is gapless iff its single complex singlet m_K vanishes
+[PASS] B11 (numerical, rounded to integers) Berry-flux chiralities: |flux| = 1 at all eight, chi(k* + pi n) = (-1)^|n| chi(k*), net zero; they agree with the degenerate-PT sign det B  max |flux - integer| = 2.8e-08
+[PASS] B12 dipole table: A+B and {+-k*} each have net chirality 0 and b = pi(1,1,1) mod 2pi; all eight: b = 0; only 'empty' and 'all eight' anomaly-free  anomaly-free: ['empty', 'k*+-k*+A+B']
+[PASS] B13 for net-zero subsets the U(1)^2-Z2^3 counts equal b/pi mod 2 (one invariant, not independent anomalies)
+[PASS] B14 BdG charges by Berry flux (particle + hole sector at each node): Q = R gives 0 (intra-node, gappable); Q = 0 gives +-2 (not gappable by small pairing)
+[PASS] B15 slice bookkeeping with C2x only (odd affine shift theta_z = pi; orientation-reversing on k_z-slices, so nu(k_z) = -nu(pi - k_z)): '{+-k*} only' and 'doublers only' admit no integer slice invariant; 'all eight' and 'empty' do; no other rotation-invariant subset does
+[PASS] B16 lift-label caveat: the rephased lifts U'_g = c(g) U_g with c(g)^2 = A2(g) are equally symmetries; with them det = A1 at +-k* and at the doublers, and the old A2 channel is the new A1 channel: the rule 'allowed iff chi|G_K = det_K' is lift-independent, the label A2 is a convention
+[PASS] B17 O_h channels: A2g, A2u allow the singlet at all eight with |m_K| = |m_-K|; A1g, A1u forbid it at all eight (or are empty)  {'A1g': 0, 'A1u': 2, 'A2g': 3, 'A2u': 2}
+[PASS] B18 subgroup scope (adversarial): over all 30 subgroups H of O and their 1-dim characters, selective on-site Q = R channels (singlet forbidden at +-k*, allowed at some doubler) exist only for |H| <= 12; none for H = O; T with chi(C3) = omega or omega-bar forbids it at +-k* and allows it at all six doublers  25 selective (H, chi); orders [2, 3, 4, 8, 12]
+[PASS] B19 subgroup coverage (exact enumeration): every selective (H, chi) is the restriction of a selective T-omega/omega-bar or D4 channel (three D4s, each chi = A1, conjugate under O), so its channel space contains one of those
+   Section B done in 97s
+
+=== Section E: exact bookkeeping (integers, units of pi/2) and 2O character products ===
+[PASS] E1 (exact) the vectors in (pi/2)Z^3 mod 2pi fixed by all 24 rotations are exactly 0 and R = pi(1,1,1); every cube point K = (pi/2)(+-1)^3 has 2K = R mod 2pi, so a Q = R pair term pairs every node with itself  [(0, 0, 0), (2, 2, 2)]
+[PASS] E2 (exact) on the finer grid (pi/4)Z^3 the rotation-fixed vectors are again only 0 and R (C4z: Q_x = Q_y in {0, pi}; C4x: Q_y = Q_z)
+[PASS] E3 (exact, given the integer chirality pattern) dipole table in units of pi/2 mod 4: A+B -> (2,2,2) = R, {+-k*} -> R, all eight -> 0; only 'empty' and 'all eight' anomaly-free; for net-zero sets b/pi mod 2 equals the U(1)^2-Z2 counts; for either overall sign
+[PASS] E4 (exact integer arithmetic) jumps of a slice invariant at the plane k_z = pi/2: {+-k*} only -> odd, doublers only -> odd, all eight -> 0; with C2x (nu(k_z) = -nu(pi - k_z)) an odd jump is impossible  J = 1, -1, 0
+[PASS] E5 (exact character arithmetic, 2O) E1/2 x E1/2 = A1 + T1, E1/2 x E5/2 = A2 + T2, E1/2 x G3/2 = E + T1 + T2, E5/2 = E1/2 x A2: a 1-dim pair channel couples a 2-dim node irrep to exactly one 2-dim irrep type (itself or the other) and never to G3/2; with E1/2 and E5/2 each occurring once at k* this is the decoupling
+
+=== Section C: cross-path agreement (convention-independent data) ===
+[PASS] C1 both paths: det character label A2 / channel dimensions (dim V_A2, dim V_A1) = (5, 2) of 66 / O_h channel dimensions agree  {'A1g': 0, 'A1u': 2, 'A2g': 3, 'A2u': 2}
+[PASS] C2 both paths: relative chirality pattern chi(k* + pi n)/chi(k*) = (-1)^|n| (degenerate PT in A, Berry flux in B; the overall sign is a convention) and two anomaly-free rotation-invariant subsets
+
+TOTAL: PASS=47 FAIL=0   [121s]

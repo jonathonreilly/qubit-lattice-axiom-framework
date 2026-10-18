@@ -1,0 +1,21 @@
+[PASS] S^n(k)^T = S^n(k), n = +-1, +-2, +-4 (diagonal letters)  
+[PASS] R_L(k) unitary; R_L(0) real symmetric; R_L(k)^T = R_L(-k) = sigma S(k) R_L(k) S(k)^-1 sigma (sigma = sign part of S)  real-sym True unitary True T=-k True sigmaSRS^-1sigma True
+   sigma commutes with every PH, PLm: False; sigma diag = [1, -1, -1, 1, -1, 1, 1, -1, 1, -1, -1, 1]; f_c = [[1, 1, 0], [1, -1, 0], [1, 0, 1], [1, 0, -1], [-1, 1, 0], [-1, -1, 0], [-1, 0, 1], [-1, 0, -1], [0, 1, 1], [0, 1, -1], [0, -1, 1], [0, -1, -1]]
+   sigma: PSG-invariant False; in span(PH, PLm) False; sigma = +-Y ? False; sigma = scalar? False
+[PASS] PH_j^T = PH_j (real symmetric on-site hopping); PLm_i^T = PLm_{3-i} (Lam imaginary Hermitian, spectrum +-symmetric)  
+[PASS] L_abc^T = i^c L_{(b-c)(a-c)(-c)} for all 64 Clifford L letters  
+[PASS] H_ab^T = H_ab; PL(phi)^T = e^{i phi} PL(-phi) = Y PL(phi) Y (any phi; Y PP Y = 1 - PP)  
+[PASS] PP = PLm0 + PLm2 is PSG-invariant, rank 6 and commutes with the corner-plane signs Z_i  
+[PASS] W(k)^T = reversed word with transposed on-site letters at the SAME k, R_L -> sigma S R_L S^-1 sigma (12 random words)  
+[PASS] every word is PSG-covariant with k-INDEPENDENT unitaries: W(R k + pi R lam_R) = U_R W(k) U_R^T (24 rotations, 6 random words)  
+[PASS] Delta(m): scalar iff m in bcc(2pi); plane-constant iff m in pi Z^3; Y x plane-constant iff m in (pi/2)(1,1,1) + pi Z^3 (exact, 4096 m)  {(True, True, False): 2, (False, False, False): 4080, (False, True, False): 6, (False, False, True): 8}
+[PASS] S2.L101.S2.H13: t = (pi/4)(1,1,1) has a k-independent T intertwiner, no U one; composing T o T gives a U intertwiner at 2t with V = V_T V_T^{-T}  
+[PASS] inverse of the T taste is a T taste at -t (k-independent)  
+[PASS] for all 24 rotations: R t is a T taste with transported intertwiner U_R V_T U_R^T, and R t - t has a U intertwiner (O acts trivially on Lambda_ind/Lambda_u)  
+   ('S', 'R', 'o') ('L310',): 1 reflection-type (w=1) spectral tastes on (pi/8)Z^3 pass the pre-screen
+[PASS] ('S', 'R', 'o') ('L310',): I taste at t/pi = [1. 1. 1.]; I o I = U-kind with w = 1 at 2t (formula), and 2t has a U intertwiner  
+   ('S2', 'p', 'S4', 'q', 'S2', 'o') ('P1', 'P11', 'L310'): 64 reflection-type (w=1) spectral tastes on (pi/8)Z^3 pass the pre-screen
+[PASS] ('S2', 'p', 'S4', 'q', 'S2', 'o') ('P1', 'P11', 'L310'): I taste at t/pi = [0.25 0.25 0.25]; I o I = U-kind with w = 1 at 2t (formula), and 2t has a U intertwiner  
+[PASS] kind composition is the Klein group {U,T,I,K} and w stays = 1 (U,T) / e^{2iE} (I,K) under composition and inversion: level E preserved  
+
+TOTAL: PASS=15 FAIL=0

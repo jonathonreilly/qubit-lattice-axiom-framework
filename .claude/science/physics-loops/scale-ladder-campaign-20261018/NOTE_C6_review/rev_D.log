@@ -1,0 +1,6 @@
+sublattices of index <= 32: 22528
+O-invariant: [(1, ((1, 0, 0), (0, 1, 0), (0, 0, 1))), (2, ((1, 0, 1), (0, 1, 1), (0, 0, 2))), (4, ((1, 1, 1), (0, 2, 0), (0, 0, 2))), (8, ((2, 0, 0), (0, 2, 0), (0, 0, 2))), (16, ((2, 0, 2), (0, 2, 2), (0, 0, 4))), (27, ((3, 0, 0), (0, 3, 0), (0, 0, 3))), (32, ((2, 2, 2), (0, 4, 0), (0, 0, 4)))]
+|O| = 24
+dim commutant of O on R^3: 1
+det M = 16 ; M commutes with all of O: False
+M^-1 R M integral for all R (O acts on FCC labels by another integral rep): True ; equals R for all R: False

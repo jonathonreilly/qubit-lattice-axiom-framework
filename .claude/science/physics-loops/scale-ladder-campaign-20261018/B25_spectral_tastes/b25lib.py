@@ -61,7 +61,14 @@ def inter_dim(w, t16, kind, om=1.0, ks=None):
         A = Wb(w, (k + np.pi / 16 * np.asarray(t16))[None])[0]; B = Wb(w, k[None])[0]
         B = {'U': B, 'T': B.T, 'I': B.conj().T, 'K': B.conj()}[kind]
         rows.append(np.kron(A, np.eye(12)) - om * np.kron(np.eye(12), B.T))   # vec(A V - om V B) row-major
-    s = np.linalg.svd(np.vstack(rows), compute_uv=False); return int(np.sum(s < 1e-8 * max(1, s[0])))
+    u, s, vh = np.linalg.svd(np.vstack(rows)); null = vh[np.sum(s > 1e-8 * max(1, s[0])):].conj()
+    if len(null) == 0: return 0
+    # an intertwiner must be INVERTIBLE: test a generic element of the solution space (singular solutions only intertwine
+    # sub-blocks and do not make t a taste).  Returns the solution-space dimension if a generic element is invertible, else 0.
+    rg = np.random.default_rng(len(null))
+    V = (rg.normal(size=len(null)) + 1j * rg.normal(size=len(null))) @ null
+    sv = np.linalg.svd(V.reshape(12, 12), compute_uv=False)
+    return len(null) if sv[-1] > 1e-6 * sv[0] else 0
 def has_inter(w, t16, kinds=('U',), om=1.0): return {k: inter_dim(w, t16, k, om) for k in kinds}
 def _lat(kind, a):
     S = set()

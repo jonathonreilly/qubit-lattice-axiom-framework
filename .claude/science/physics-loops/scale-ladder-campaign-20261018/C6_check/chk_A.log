@@ -14,4 +14,29 @@ Convention: repo H = -t1 sum_onsite u c^dag c - t2 sum_links u c^dag c, t1 = -1,
 [PASS] u-pattern 1011 with t1 = -1 (either sign of t2) has standard-convention flux pi through every face of all four types
 [PASS] control: with t1 = +1 the same u gives standard triangle flux 0 (sign is load-bearing)
 
-A4 (independent PSG by BFS sign propagation, L = 4); t=12s
+A4 (independent PSG by BFS sign propagation, L = 4); t=11s
+   0000 {'TxTy': '+1', 'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'T^4': [1, 1, 1], 'fixed': [(0, 0, 0), (2, 2, 2)]} t=13s
+   0001 {'TxTy': '+1', 'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1, 1], 'T^4': [1, 1, 1], 'fixed': []} t=15s
+   0010 {'TxTy': '-1', 'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1, 1], 'fixed': None} t=16s
+   0011 {'TxTy': '-1', 'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'fixed': None} t=18s
+   0100 {'TxTy': '+1', 'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1, 1], 'T^4': [1, 1, 1], 'fixed': [(0, 0, 0), (2, 2, 2)]} t=19s
+   0101 {'TxTy': '+1', 'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'T^4': [1, 1, 1], 'fixed': []} t=21s
+   0110 {'TxTy': '-1', 'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'fixed': None} t=22s
+   0111 {'TxTy': '-1', 'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1, 1], 'fixed': None} t=24s
+   1000 {'TxTy': '-1', 'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [1], 'fixed': None} t=26s
+   1001 {'TxTy': '-1', 'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'fixed': None} t=27s
+   1010 {'TxTy': '+1', 'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'T^4': [1, 1, 1], 'fixed': []} t=29s
+   1011 {'TxTy': '+1', 'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [1], 'T^4': [1, 1, 1], 'fixed': [(1, 1, 1), (3, 3, 3)]} t=31s
+   1100 {'TxTy': '-1', 'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'fixed': None} t=33s
+   1101 {'TxTy': '-1', 'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1], 'fixed': None} t=34s
+   1110 {'TxTy': '+1', 'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1], 'T^4': [1, 1, 1], 'fixed': []} t=36s
+   1111 {'TxTy': '+1', 'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'T^4': [1, 1, 1], 'fixed': [(1, 1, 1), (3, 3, 3)]} t=37s
+[PASS] PSG exists for all 16 uniform patterns (BFS sign propagation consistent for all 24 rotations and 3 translations)
+[PASS] C4^4 = -1 exactly when square = pi (u-convention)
+[PASS] translations commute exactly when square = plaquette (otherwise anticommute)
+  patterns with C4^4 = -1, commuting translations and an O-fixed momentum: [(1, 0, 1, 1), (1, 1, 1, 1)]
+[PASS] design targets select exactly {1011, 1111}
+  fixed momenta (units of 2pi/4, plus pi/4 offsets if T^4 = -1): {'0000': ([(0, 0, 0), (2, 2, 2)], [1, 1, 1]), '0001': ([], [1, 1, 1]), '0100': ([(0, 0, 0), (2, 2, 2)], [1, 1, 1]), '0101': ([], [1, 1, 1]), '1010': ([], [1, 1, 1]), '1011': ([(1, 1, 1), (3, 3, 3)], [1, 1, 1]), '1110': ([], [1, 1, 1]), '1111': ([(1, 1, 1), (3, 3, 3)], [1, 1, 1])}
+[PASS] square = 0 patterns with commuting translations: an O-fixed momentum exists iff tube = 0 (Gamma-type), so tube = pi is needed only together with square = pi
+
+TOTAL: PASS=13 FAIL=0   (37s)

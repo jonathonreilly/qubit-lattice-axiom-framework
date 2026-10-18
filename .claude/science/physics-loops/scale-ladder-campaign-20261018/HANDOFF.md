@@ -46,3 +46,10 @@
   - The C3 lane note is in PR #9718 (PASS=103).
   - The phase-2 summary is in the scale-ladder note and synced to PR #9702.
   - Running: C4b (closure with the walker forcing K1 = K2?) and B25 (spectral-vs-unitary taste search).
+- **15:45Z.** PR #9718 now has 12 lane notes. Added since phase 2 began:
+  - C3: lattice relabelling arc lemma;
+  - C1: doubler selection rule and Z2 dipole;
+  - C6: registration lemma and flux freedom;
+  - C4/C4b: closure with the walker forces α = K2/4.
+
+  All were reviewed and pass the invariants check. Also done and checked: B25 (index lemma; 0 good pairs realised), B11 and B23. Running: the B25 check and C7 (emergent corner fermions via a Kitaev-type route). Next: a phase-2 coherence pass on the scale-ladder note, then the final summary before 23:26Z.

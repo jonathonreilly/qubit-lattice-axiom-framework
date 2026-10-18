@@ -24,3 +24,9 @@ for b in B:
     print(sorted(rel))
 print('Hon eig', np.round(np.linalg.eigvalsh(Hon0),4)); print('Lam eig', np.round(np.linalg.eigvalsh(Lam),4))
 L202=onL(2,0,2); print('L202 commutes Z', all(np.allclose(Zi@L202,L202@Zi) for Zi in Z))
+print('PC entries commuting with all Z:', [n for n,M in PC.items() if all(np.allclose(Zi@M,M@Zi) for Zi in Z)])
+print('PC entries anticommuting with Y up to phase / commuting:', [n for n,M in PC.items() if np.allclose(Y@M@Y,M)], [n for n,M in PC.items() if np.allclose(Y@M@Y,-M)])
+print('P6 plane-diag count', sum(1 for n,M in P6.items() if all(np.allclose(Zi@M,M@Zi) for Zi in Z)))
+# PLm projector structure
+for i,P in enumerate(PLm): print('PLm',i,'rank',round(np.trace(P).real), 'commZ', all(np.allclose(Zi@P,P@Zi) for Zi in Z))
+for i,P in enumerate(PH): print('PH',i,'rank',round(np.trace(P).real), 'commZ', all(np.allclose(Zi@P,P@Zi) for Zi in Z))

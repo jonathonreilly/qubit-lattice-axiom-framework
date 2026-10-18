@@ -1,0 +1,14 @@
+[PASS] (i) S^n(k+t) = S^n(k) diag(exp(i n t.f_c)) for n = +-1,+-2,+-4 and arbitrary t  
+[PASS] (ii) R_L(k+t) = D_t R_L(k) D_t^-1, D_t = diag(exp(-i t.f_c/2)), arbitrary real t (continuous 'position' symmetry of the link hopping)  
+[PASS] (iii) symmetric on-site algebra has dim 6; its Z-commutant has dim 2 (= span{1, PP}); its {Z, Y}-commutant has dim 1  6 2 1
+[PASS] (iii) no symmetric on-site element has an antipodal-corner (f_c -> -f_c) matrix element  
+[PASS] (iii) L202 anticommutes with Y and commutes with the Z_i; the plane letters are exactly PP + e^{i phi}(1-PP) up to phase  
+[PASS] (iii) diagonal gauge pairs (G, G') with G A G'^-1 = A: dimension 1 (scalars) for every Clifford H/L letter except the plane letters and identities  dims over PC: {12: 2, 1: 75, 3: 2, 6: 1}
+[PASS] (iii) plane letters with phi != pi admit exactly the plane-constant diagonal gauges (dim 3); L202 (zero diagonal) admits dim 6  3 6
+[PASS] (v) S^a P S^b G with Delta_a(t) in comm(P) and Delta_{a+b}(t) scalar: W(k+t) = Delta W(k) exactly, V = 1 (t = (pi/|a|) e_i)  9 cases [(2, 2, 0, True), (2, 2, 1, True), (2, 2, 2, True), (1, 1, 0, True), (1, 1, 1, True), (1, 1, 2, True), (4, 4, 0, True), (4, 4, 1, True), (4, 4, 2, True)]
+[PASS] (v) Z-type taste for every power: Z_i W(k) Z_i = W(k + (pi/a) e_i) for S^a A S^a L202 (A generic), a = 1, 2, 4  
+[PASS] (v) Y-type taste: Y W(k) Y = -W(k + (pi/2a)(1,1,1)) for S^a A S^a L202, a = 1, 2, 4  
+  random-word census of spectral Lambda_0 types: {'R': {'sc(a=32pi/16)|1|': 35}, 'noR': {'bcc(a=32pi/16)|2|': 40, 'bcc(a=16pi/16)|16|': 26, 'bcc(a=8pi/16)|128|': 2, 'sc(a=16pi/16)|8|': 1}}
+[PASS] (iv) every Lambda_0 met is sc or bcc (no fcc type) and every R_L word has Lambda_0 within 2piZ^3 + pi(1,1,1) (|Lambda_0/2piZ^3| <= 2)  
+
+TOTAL: PASS=11 FAIL=0   [20s]

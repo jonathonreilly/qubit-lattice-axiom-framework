@@ -14,6 +14,8 @@ Checks
      IMPORTED bound P(v_x != a) <= 3/10^5 of the 2026-09-16 note, T7).
  (e) level clock T_x = x_1 + x_2 + x_3: every backward-monotone path is
      decreasing with probability 1, so the decreasing-path tail is 1 for all n.
+ (f) reviewer F1 witness: exchangeable clocks with ties (all-tied w.p. 1/2,
+     iid w.p. 1/2) give Cov(xi_0, xi_r) = 1/9 for all r >= 3 (exact).
 """
 import itertools, math, random, sys, os
 from fractions import Fraction as F
@@ -117,5 +119,22 @@ for k in range(30):
 Tl = [sum(p) for p in path]
 C.check("(e) level clock: the 30-step backward staircase is strictly decreasing deterministically (tail = 1, no factorial decay)",
         all(Tl[i] > Tl[i + 1] for i in range(30)))
+
+# ---------- (f) reviewer F1 witness: exchangeable clocks WITH ties ----------
+# Clock: w.p. 1/2 all T_x equal (all tied), w.p. 1/2 iid continuous.
+# Rule on Z: content 0 if no strictly earlier neighbour, 1 otherwise.
+# iid part, r=3: xi_0 depends on T_{-1},T_0,T_1 and xi_3 on T_2,T_3,T_4 (disjoint),
+# enumerated exactly over all 6! orders of sites -1..4.
+sites = list(range(-1, 5))
+tot = 0; e0 = 0; e3 = 0; e03 = 0
+for perm in itertools.permutations(range(6)):
+    T = dict(zip(sites, perm))
+    x0 = 1 if (T[-1] < T[0] or T[1] < T[0]) else 0
+    x3 = 1 if (T[2] < T[3] or T[4] < T[3]) else 0
+    tot += 1; e0 += x0; e3 += x3; e03 += x0 * x3
+Ex = F(1, 2) * F(e0, tot)             # tied branch contributes 0
+Exy = F(1, 2) * F(e03, tot)
+cov = Exy - Ex * (F(1, 2) * F(e3, tot))
+C.check(f"(f) tied-exchangeable witness: Cov(xi_0,xi_3) = {cov} = 1/9 (for every r>=3 by disjointness): LRO outside A' (ties)", cov == F(1, 9))
 
 C.finish()

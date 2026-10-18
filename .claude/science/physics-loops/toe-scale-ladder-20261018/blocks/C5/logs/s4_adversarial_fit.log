@@ -1,0 +1,11 @@
+r=1 Fourier truncation of V_2: unitarity err 0.384, sup||U-V2|| 0.217, min|det| 0.615, W3(GL; N=40,56) = -1.000000, -1.000000
+PASS: control r=1: the truncated (invertible, NOT unitary) Laurent matrix carries W3 = -1 (GL formula)
+  r=1 start=truncation w=    0.3: unit.err 3.80e-01  L2fit 0.169  sup||U-V2|| 0.218  min|det| 6.19e-01  W3(N=40,56) -1.0000 -1.0000
+  r=1 start=truncation w=    3.0: unit.err 1.50e-01  L2fit 0.187  sup||U-V2|| 0.262  min|det| 8.49e-01  W3(N=40,56) -1.0000 -1.0000
+  r=1 start=truncation w=   30.0: unit.err 3.99e-02  L2fit 0.270  sup||U-V2|| 0.359  min|det| 9.58e-01  W3(N=40,56) -1.0000 -1.0000
+  r=1 start=truncation w=  300.0: unit.err 3.75e-02  L2fit 0.280  sup||U-V2|| 0.364  min|det| 9.61e-01  W3(N=40,56) -1.0000 -1.0000
+  r=1 start=truncation w= 3000.0: unit.err 6.45e-03  L2fit 0.575  sup||U-V2|| 0.798  min|det| 9.93e-01  W3(N=40,56) -1.0000 -1.0000
+  r=1 start=random0    w=    0.3: unit.err 3.80e-01  L2fit 0.169  sup||U-V2|| 0.218  min|det| 6.19e-01  W3(N=40,56) -1.0000 -1.0000
+  r=1 start=random0    w=    3.0: unit.err 1.50e-01  L2fit 0.187  sup||U-V2|| 0.262  min|det| 8.49e-01  W3(N=40,56) -1.0000 -1.0000
+  r=1 start=random0    w=   30.0: unit.err 4.04e-02  L2fit 0.270  sup||U-V2|| 0.359  min|det| 9.58e-01  W3(N=40,56) -1.0000 -1.0000
+  r=1 start=random0    w=  300.0: unit.err 3.87e-02  L2fit 0.280  sup||U-V2|| 0.364  min|det| 9.61e-01  W3(N=40,56) -1.0000 -1.0000

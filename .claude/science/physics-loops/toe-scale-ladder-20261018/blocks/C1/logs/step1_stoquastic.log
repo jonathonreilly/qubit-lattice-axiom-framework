@@ -1,0 +1,28 @@
+[PASS] A L=2: 24 plaquettes have pairwise distinct 4-link sets
+[PASS] B L=2: every plaquette contains an odd number of Lambda links :: counts present [1, 3], |Lambda|=8
+[PASS] A L=3: 81 plaquettes have pairwise distinct 4-link sets
+[PASS] A L=4: 192 plaquettes have pairwise distinct 4-link sets
+[PASS] B L=4: every plaquette contains an odd number of Lambda links :: counts present [1, 3], |Lambda|=64
+[PASS] A L=6: 648 plaquettes have pairwise distinct 4-link sets
+[PASS] B L=6: every plaquette contains an odd number of Lambda links :: counts present [1, 3], |Lambda|=216
+[PASS] A L=8: 1536 plaquettes have pairwise distinct 4-link sets
+[PASS] B L=8: every plaquette contains an odd number of Lambda links :: counts present [1, 3], |Lambda|=512
+[PASS] A L=10: 3000 plaquettes have pairwise distinct 4-link sets
+[PASS] B L=10: every plaquette contains an odd number of Lambda links :: counts present [1, 3], |Lambda|=1000
+[PASS] A L=12: 5184 plaquettes have pairwise distinct 4-link sets
+[PASS] B L=12: every plaquette contains an odd number of Lambda links :: counts present [1, 3], |Lambda|=1728
+[PASS] C L=2: GF(2) solution of delta(Lambda)=1 exists (uniform g -> -g is a diagonal gauge) :: rank 14, |Lambda_sol| = 8
+[PASS] C L=3 (odd): no GF(2) solution; obstruction = xy-plane cycle (boundary 0: True) meets all-ones cochain in L^2=9 (odd) plaquettes :: rank 52
+[PASS] C L=4: GF(2) solution of delta(Lambda)=1 exists (uniform g -> -g is a diagonal gauge) :: rank 126, |Lambda_sol| = 64
+[PASS] C L=5 (odd): no GF(2) solution; obstruction = xy-plane cycle (boundary 0: True) meets all-ones cochain in L^2=25 (odd) plaquettes :: rank 248
+[PASS] C L=6: GF(2) solution of delta(Lambda)=1 exists (uniform g -> -g is a diagonal gauge) :: rank 430, |Lambda_sol| = 216
+[PASS] D L=2: Gauss census 9600 states, 937 flip components, largest 864 (repo values) :: 9600, 937, 864
+[PASS] D L=2: all off-diagonal entries of H(g=1) are <= 0 and equal to -1 (no multiplicity) :: max multiplicity 1.0
+[PASS] D L=2 V=0.0: D H(+g) D == H(-g) exactly :: max |diff| 0.0
+[PASS] D L=2 V=0.0: spectra of H(+g) and H(-g) agree on all 937 components :: max |dE| 2.22e-14; global E0 = -9.0267209135; E0 = -9.0267209135 (repo -9.0267209135) in component of size 864
+[PASS] D L=2 V=0.5: D H(+g) D == H(-g) exactly :: max |diff| 0.0
+[PASS] D L=2 V=0.5: spectra of H(+g) and H(-g) agree on all 937 components :: max |dE| 6.93e-14; global E0 = -4.2558112626
+[PASS] D L=2 V=0.9: D H(+g) D == H(-g) exactly :: max |diff| 0.0
+[PASS] D L=2 V=0.9: spectra of H(+g) and H(-g) agree on all 937 components :: max |dE| 3.20e-14; global E0 = -0.8108224119
+elapsed 26.8s
+TOTAL: PASS=26 FAIL=0

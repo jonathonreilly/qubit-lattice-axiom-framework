@@ -1,0 +1,12 @@
+PASS Euclidean gammas: {g_mu, g_nu} = 2 delta, Hermitian
+PASS quadrature: int R(k)/k^4 = ln(L2/L1)/(8 pi^2) for the anisotropic regulator  [0.99999994]
+PASS fermion speed flow, c_psi=1.0, c_gamma=1.0: numeric 1.504791e-10 vs closed form 0.000000e+00
+PASS fermion speed flow, c_psi=1.0, c_gamma=1.5: numeric 1.452270e-02 vs closed form 1.452270e-02
+PASS fermion speed flow, c_psi=0.8, c_gamma=1.6: numeric 2.626845e-02 vs closed form 2.626846e-02
+PASS fermion speed flow, c_psi=1.0, c_gamma=0.6: numeric -1.625359e-02 vs closed form -1.625361e-02
+PASS fermion speed flow, c_psi=1.3, c_gamma=1.0: numeric -8.589537e-03 vs closed form -8.589538e-03
+PASS gauge independence: adding lambda k_mu k_nu/(k0^2+v^2k^2)^2 (lambda=0.7,-1.3) leaves d ln c_psi/dl unchanged  [1.45227022e-02,1.45227022e-02,1.45227022e-02]
+PASS vacuum polarisation c_psi=1.0: d eps/dl = 1.688686e-02 vs 1/(6pi^2 c) = 1.688686e-02; d(1/mu)/dl = 1.688686e-02 vs c/(6pi^2) = 1.688686e-02
+PASS vacuum polarisation c_psi=0.7: d eps/dl = 2.412412e-02 vs 1/(6pi^2 c) = 2.412409e-02; d(1/mu)/dl = 1.182080e-02 vs c/(6pi^2) = 1.182080e-02
+PASS vacuum polarisation c_psi=1.4: d eps/dl = 1.206204e-02 vs 1/(6pi^2 c) = 1.206205e-02; d(1/mu)/dl = 2.364161e-02 vs c/(6pi^2) = 2.364161e-02
+TOTAL: PASS=11 FAIL=0

@@ -1,6 +1,6 @@
 {
- "edge_count": 16297,
- "node_count": 7257,
+ "edge_count": 16303,
+ "node_count": 7259,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -101,6 +101,10 @@
   "a_non_abelian_gauss_law_has_no_record_pattern_solutions_bounded_theorem_note_2026-09-03": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "a_one_dimensional_lattice_hamiltonian_constraint_without_local_degrees_of_freedom_is_first_class_but_lattice_parametrised_field_theory_is_anomalous_and_first_classness_is_local_zero_curvature_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "7659bc5fee16",
+   "out_degree": 2
   },
   "a_readable_matter_law_exists_on_the_5x5x5_window_the_designed_laws_record_table_completed_by_a_covariant_parity_rule_has_every_menu_nonempty_is_read_from_partial_blocks_and_keeps_the_fermion_bounded_note_2026-09-04": {
    "deps_hash": "e2e03bf5b63f",
@@ -4253,6 +4257,10 @@
   "corner_axis_free_transfer_extension_per_channel_trace_correspondence_and_mode_set_fork_bounded_note_2026-06-12": {
    "deps_hash": "46111474d8b7",
    "out_degree": 3
+  },
+  "corner_fermion_covariant_monomial_shift_letters_are_only_the_diagonal_shift_powers_and_their_antipodal_twins_and_the_settled_momentum_shifting_and_antiunitary_subclasses_reduce_to_old_words_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "467b2b403e4d",
+   "out_degree": 4
   },
   "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04": {
    "deps_hash": "48ebef824880",

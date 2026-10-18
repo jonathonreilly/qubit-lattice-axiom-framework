@@ -1,0 +1,11 @@
+PASS: C1_L4 full support: solutions of lam(k1)+lam(k2)=lam'(k1+k2) = span{lam=1, lam'=2} (dim 1); lam(0)=0 => lam=0
+PASS: C1_L5 full support: solutions of lam(k1)+lam(k2)=lam'(k1+k2) = span{lam=1, lam'=2} (dim 1); lam(0)=0 => lam=0
+PASS: C1_L6 full support: solutions of lam(k1)+lam(k2)=lam'(k1+k2) = span{lam=1, lam'=2} (dim 1); lam(0)=0 => lam=0
+PASS: C1_L7 full support: solutions of lam(k1)+lam(k2)=lam'(k1+k2) = span{lam=1, lam'=2} (dim 1); lam(0)=0 => lam=0
+PASS: C1_L8 full support: solutions of lam(k1)+lam(k2)=lam'(k1+k2) = span{lam=1, lam'=2} (dim 1); lam(0)=0 => lam=0
+PASS: C1_L9 full support: solutions of lam(k1)+lam(k2)=lam'(k1+k2) = span{lam=1, lam'=2} (dim 1); lam(0)=0 => lam=0
+PASS: C2_L5 no-wrap support: solution space dim 2, contains SLAC lam = kbar: True
+PASS: C2_L7 no-wrap support: solution space dim 2, contains SLAC lam = kbar: True
+PASS: C2_L9 no-wrap support: solution space dim 2, contains SLAC lam = kbar: True
+PASS: F1 raw-basis deviation slope -0.97 (O(a)); Weyl-basis deviation slope -1.97 (O(a^2)); N=7 matrix check of 2i sin(pi s/N): True
+TOTAL: PASS=10 FAIL=0

@@ -1,0 +1,4 @@
+   m = 1.0, N = 16
+PASS: L1 [8s] S, M1, M2 all give D0 = sum phat^2 (+ m^2) at h = 0; positive control: FP kernel is Ward-transverse
+FAIL: L2 [60s] quadrature convergence N=16 vs 24: rel diff of the M1 k^2 symbol = 1.4e-06
+   <phi^2>_lat = 0.127112;  covariant (proper-time) reference matched on <phi^2>: c_EH = (1/6)<phi^2>/2 = 0.010593

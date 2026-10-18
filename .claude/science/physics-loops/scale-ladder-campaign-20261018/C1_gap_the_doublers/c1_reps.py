@@ -14,6 +14,7 @@ Checks
  R6  same for random k-dependent symmetric pairings Delta(k) (range 1, group-averaged), all four (Q, chi) channels.
  R7  4-fold G3/2-containing levels at k*: dimension of chi-invariant antisymmetric pairs (both chi) -- reported.
  R8  (aside, translation-breaking) staggered CDW masses at R: which nodes each channel gaps.
+ R9  improper lifts (inversion) are symmetries of the step; the O_h channels obey the same all-or-nothing rule.
 """
 import time
 from c1lib import *
@@ -228,4 +229,45 @@ for cn, chi in ((DETNAME, chi_det), (OTHNAME, chi_oth)):
     amp = {nm: np.abs(TAB[(nm, np.pi / 2)]['Q'].conj().T @ Mm @ level(NODES[nm] + Q_R, np.pi / 2)).max() for nm in NODES}
     print(f"   [aside, breaks odd translations] staggered on-site CDW mass e^(iR.x) c^dag M c, M in channel {cn} (dim {len(Hc)}): "
           "max |<node K|M|node K+R>|: " + ", ".join(f"{nm}:{v:.2e}" for nm, v in amp.items()))
+
+# ---------------- R9: including the improper lifts (the step is O_h-symmetric; inversion maps K -> -K) ----------------
+INVM_ = -np.eye(3)
+IMP = []
+for R, (P, s_) in zip(ROTS, invs):
+    U = fibre_matrix(P, s_); M = (R @ INVM_).astype(int)
+    th = find_kmap(U, M.astype(float), W, KR[:4]); IMP.append(dict(M=M, U=U, th=th, R=R))
+ok_imp = all(g['th'] is not None for g in IMP)
+inv_el = [g for g in IMP if (g['R'] == np.eye(3)).all()][0]
+ok_imp &= same_k(inv_el['th'], np.zeros(3))
+check("R9a all 24 improper dressed lifts are unitary symmetries of the step (U W(k) U^T = W(M k + theta)); the pure inversion has theta = 0, "
+      "so it maps every node K to -K (k* <-> -k*, triple A <-> triple B) and fixes no node", ok_imp)
+OH_ALL = ROT + IMP
+def chi_oh(base, parity):
+    out = {}
+    for j, g in enumerate(OH_ALL):
+        Rp = g['M'] if j < 24 else g['R']
+        out[j] = (1 if base == 'A1' else A2_O[cls(Rp)]) * (1 if (j < 24 or parity == 'g') else -1)
+    return out
+def channel_space_oh(chi):
+    rowsM = []
+    for j, g in enumerate(OH_ALL):
+        U = g['U']; rowsM.append(np.array([(U @ X @ U.T - chi[j] * X)[np.triu_indices(12, 1)] for X in AB]).T)
+    Mx = np.vstack(rowsM); _, s2, Vh = np.linalg.svd(Mx); s2 = np.concatenate([s2, np.zeros(Vh.shape[0] - len(s2))])
+    return [sum(c * X for c, X in zip(v, AB)) for v in Vh[s2 < 1e-10]]
+okc = True; info = []
+for base in ('A1', 'A2'):
+    for par in ('g', 'u'):
+        Vc = channel_space_oh(chi_oh(base, par))
+        if not Vc: info.append(f"{base}{par}:dim0"); continue
+        Ac = sum((rng.normal() + 1j * rng.normal()) * X for X in Vc)
+        m = {nm: abs(singlet(TAB[(nm, np.pi / 2)]['Q'], Ac)) for nm in NODES}
+        pair_eq = all(abs(m[nm] - m[[n2 for n2, kk in NODES.items() if same_k(kk, -NODES[nm])][0]]) < 1e-9 for nm in NODES)
+        if base == DETNAME: okc &= min(m.values()) > 1e-4 and pair_eq
+        else: okc &= max(m.values()) < 1e-11
+        Fk = np.array([[singlet(TAB[(nm, np.pi / 2)]['Q'], X) for X in Vc] for nm in ('k*', '-k*')])
+        info.append(f"{base}{par}:dim{len(Vc)} min|m|={min(m.values()):.1e} max|m|={max(m.values()):.1e} |m_K|=|m_-K|:{pair_eq} rank(+-k* functionals)={np.linalg.matrix_rank(Fk, tol=1e-9)}")
+print("   O_h channels: " + "; ".join(info))
+check("R9b with O_h (inversion included) the rule is unchanged: channels with rotational part = det (A2g, A2u) allow the singlet at all eight "
+      "with |m_K| = |m_-K|, the others forbid it at all eight; inversion fixes no node, so it can relate but never force m_{+-k*} = 0 "
+      "(tuning becomes one complex condition)", okc)
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}   [{time.time()-t0:.0f}s]")

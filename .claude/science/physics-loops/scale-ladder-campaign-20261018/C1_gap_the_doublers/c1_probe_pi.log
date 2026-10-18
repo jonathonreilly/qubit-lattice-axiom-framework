@@ -1,0 +1,2 @@
+Wilson w(k)A {'k*': np.float64(0.0), '-k*': np.float64(0.0), 'k*+pi ex': np.float64(0.43045), '-k*+pi ex': np.float64(0.30404), 'k*+pi ey': np.float64(0.43045), '-k*+pi ey': np.float64(0.30404), 'k*+pi ez': np.float64(0.43045), '-k*+pi ez': np.float64(0.30404)}
+tuned on-site {'k*': np.float64(0.0), '-k*': np.float64(0.0), 'k*+pi ex': np.float64(0.02928), '-k*+pi ex': np.float64(0.02928), 'k*+pi ey': np.float64(0.02928), '-k*+pi ey': np.float64(0.02928), 'k*+pi ez': np.float64(0.02928), '-k*+pi ez': np.float64(0.02928)}

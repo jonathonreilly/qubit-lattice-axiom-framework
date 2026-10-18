@@ -54,3 +54,20 @@
   - T4 inconsistent with (a): with a Wilson hop, closure forces m = −3r, a nonzero mass at the cutoff scale.
   - The PR's actual fourth tool (species content) only forces gaplessness.
 - **Strongest statement.** The ladder's tools cannot fix a nonzero, parametrically small value of a relevant coupling in the stated class. The hierarchy then hinges on the g_bare gate (transmutation with a supplied SU(N)) or on escapes E1–E4.
+
+**HIER-3. Does the framework fix the colour coupling at the rung where colour first exists?** (pre-registered 2026-10-18T12:00Z; follows the HIER-1 referee). Cap 0.4 GB.
+- **Why.** Dimensional transmutation gives 15 decades for pure SU(3) at g² ≤ 0.21, and for N_f = 8 at g² ≤ 0.40, at one loop. Main's convention is g_bare = 1 (axioms :188, an open gate). So the scale hierarchy reduces to g² at the rung where colour first lives, if the framework fixes it.
+- **Task.**
+  1. Make the window precise. Find the g² range that gives v/M_Pl ≈ 1e-17 for SM-like content, and for X2′ content with its mirrors at the cutoff. Use two-loop running and thresholds, with the content supplied.
+  2. Collect every framework-derived candidate for the effective colour coupling at the first coloured rung. Candidates include:
+     - g_bare = 1, the convention;
+     - its mean-field and tadpole-improved forms (u₀, α_LM);
+     - COL-1's class-M colour cells (19 or 35 qubits): does a coupling defined per cell rather than per site rescale?
+     - main's plaquette value;
+     - any matching across rung 0 → 1 that the ladder makes computable.
+  3. Decide whether any candidate lands in the window without tuning.
+- **Readings.**
+  - **G-WINDOW:** a framework-derived candidate, with a stated derivation and no input below 1e-2, lands inside the window.
+  - **G-OUTSIDE:** every candidate lands outside it.
+  - **G-UNFIXED:** no candidate is derivable; the coupling is a free supplied number. State it as the single primitive the hierarchy reduces to.
+  - **OPEN:** otherwise.

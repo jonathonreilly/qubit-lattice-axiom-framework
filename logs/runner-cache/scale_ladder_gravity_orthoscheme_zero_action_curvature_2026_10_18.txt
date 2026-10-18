@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_orthoscheme_zero_action_curvature_2026_10_18.py
+runner_sha256: 4768fa61e567fdbc2cdc4fcb10d59a1606210b03932715d8f963bf6f500fa452
+input_fingerprint_sha256: cec3f5a6b9ad7fd7a67b1078117b3bb09d3c98db51239d7d7f20e2357d41c034
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 46.40
+status: ok
+----- stdout -----
+[PASS] G0 generic Bloch Regge builder reproduces the landed Kuhn-complex edge form (singular values)  max deviation 1.3e-08; 15 edges, 50 hinge classes
+[PASS] G1 Kuhn, hypercubic lengths: edge-form nullity 5 but deficit-map rank 15 - 4; the fifth direction has |D x| = O(1)  (nullity, rank D) = [(5, np.int64(11)), (5, np.int64(11)), (5, np.int64(11))]; |D x|/|D| >= 0.59; vertex displacements flat to 2e-10
+[PASS] G2 barycentric subdivision (384 orthoschemes, 240 edges, 16 vertex types per cell; B4 incl. tick reflection): nullity 64 + 16, extras curved and metric-carrying  nullity 80, gap 6e+06, min |Dx|/|D| 0.34, extras with metric share > 0.2: 5; nullity 80, gap 1e+07, min |Dx|/|D| 0.33, extras with metric share > 0.2: 4
+[PASS] G3 Kuhn, hypercubic lengths: P1 scalar = sum 4 sin^2(p/2) (complex momenta); on-shell tick momentum pure imaginary for real spatial momenta  deviation 1.4e-15; max |Re k_t| 8.5e-17 (|k| = 0.2, 0.8, 1.5)
+[PASS] G4 tilt g0 = 1 + 0.3 u u^T: Re k_t / |k| tends to a nonzero constant (non-real energies at leading order)  Re k_t/|k| = 0.2695, 0.2711 at |k| = 0.1, 0.05
+[PASS] G5 skew g0 = 1 + c u_s u_s^T (c = 0.2, 0.05): fifth direction lifted, eliminated block stiff, Re k_t/|k| falls as |k|^2  c=0.2: 5th sv 1.1e-03, eliminated eigenvalue >= 11.9, halving ratio 3.99; c=0.05: 5th sv 1.6e-03, eliminated eigenvalue >= 2.6, halving ratio 3.99
+[PASS] G6 skew c = 0.2: full edge form with non-metric edges eliminated = -(1/4) sqrt(det g0) EH_g0  coefficient -0.316228 vs -0.316228; misfit 3.2e-08
+[PASS] G7 D4 cone (D4 = Z^4 u (Z^4 + u/2), Delaunay 16-cells coned from their centres): tiles the cell, invariant under all 384 signed axis permutations, no orthoschemes  96 simplices, volume 1.000000000000, 72 edges, 8 vertex types; orthoschemes 0
+[PASS] G8 D4 cone: edge-form nullity = 32 = rank of the vertex displacements at three momenta (no unseen curvature)  nullity 32, gauge rank 32, gap 2e+08; nullity 32, gauge rank 32, gap 7e+07; nullity 32, gauge rank 32, gap 4e+08
+[PASS] G9 D4 cone: full edge form (non-metric, non-gauge edges eliminated) has O(k^2) symbol -(1/4) EH  coefficient -0.250000; misfit 2.7e-05 (Richardson from |k| = 0.02, 0.01)
+[PASS] G10 D4 cone: P1 scalar on-shell tick momentum pure imaginary (real energies) and no O(k^4) on-shell correction (4 directions)  max |Re k_t| 4e-16; max |alpha| 2.5e-05
+[PASS] G11 D4 cone graviton: two real shells omega^2 = k^2 (1 -+ c k^2), each with one metric and one non-metric null direction; c = 1/12 (axis), 1/16 (face), 0 (body, nullity 35)  axis: alpha -0.0831 nullity 34, alpha +0.0832 nullity 34; face: alpha -0.0623 nullity 34, alpha +0.0623 nullity 34; body: alpha +0.0004 nullity 35
+[PASS] G12 D4 cone: 8 massless non-gauge directions (6 metric + 2 non-metric); on-shell P1 stress overlap with the 2 non-metric ones falls linearly in k  massless count 8; overlap 1.35e-02 -> 6.51e-03 on halving
+
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

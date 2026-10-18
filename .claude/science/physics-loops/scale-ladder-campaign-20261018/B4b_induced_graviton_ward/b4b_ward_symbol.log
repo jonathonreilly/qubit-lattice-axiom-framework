@@ -1,0 +1,68 @@
+== R: reproduction of runner-cache constants
+PASS R1 dispersion-runner C_time(N=6)=0.08961606 reproduced  [C_t=0.08961606 C_x=0.08961606]
+PASS R2 isotropy-runner Zener A(N=6, sin(Pbar/2) vertex)=0.975 reproduced  [A=0.97459]
+== S: leading symbol extraction (N=14)
+PASS S1 kernel even in K (Pi(K)=Pi(-K))  [max|Pi(K)-Pi(-K)|=2.2e-16]
+FAIL S2 symbol quadrature-converged (N=14 vs 12)  [rel diff 1.7e-04]
+== B: B4 covariance
+   B4 basis size 9 (Lorentz 4, B4-extra 5)
+PASS B1 symbol lies in the B4-invariant tensor space  [projection residual 1.4e-07]
+PASS B2 symbol has the index symmetries (mu nu)(rho sig)(al be) and pair exchange  [max dev 2.2e-14]
+== G: gauge-invariant B4 symbols
+PASS G1 linearised EH symbol is B4-invariant and exactly gauge invariant  [ward=0.0e+00]
+PASS G2 gauge-invariant B4 two-derivative symbols form a 1-dim space (EH unique under B4)  [dim=1; smallest sv 1.2e-15, 3.5e-01, 4.9e-01]
+== W: Ward identity of the extracted symbol
+FAIL W1 [hypothesis H_Ward, FAIL = falsified] leading-symbol Ward identity k_mu M2_{mu nu,rho sig}(k)=0 holds  [max|k.M2|/max|M2| = 2.290e-01 (min over k 1.538e-01); coefficient-level 2.283e-01]
+PASS W2 leading-symbol Ward identity is BROKEN at O(1) relative size (>1e-2)  [max|k.M2|/max|M2| = 0.229]
+PASS W3 10x10 symbol has NO 4-dim null space at any sampled k (no gauge redundancy in any linear field basis)  [4th-smallest |eig|/max over 20 k: min 0.400]
+PASS W4 control: linearised EH symbol has exactly 4 null eigenvalues
+== D: symbol decomposition into B4 invariants
+   Lorentz  [[0, 1], [2, 3], [4, 5]]                 -1.595843e-03
+   Lorentz  [[1, 2], [0, 3], [4, 5]]                 +5.005477e-02
+   Lorentz  [[0, 1], [3, 4], [2, 5]]                 +3.191682e-03
+   Lorentz  [[1, 2], [3, 4], [0, 5]]                 -6.001350e-02
+   B4xtra   [[0, 1, 2, 3, 4, 5]]                     +2.611937e-03
+   B4xtra   [[0, 1], [2, 3, 4, 5]]                   +7.491271e-08
+   B4xtra   [[1, 2], [0, 3, 4, 5]]                   +6.092979e-03
+   B4xtra   [[0, 1, 2, 3], [4, 5]]                   +2.119885e-03
+   B4xtra   [[1, 2, 3, 4], [0, 5]]                   -8.479558e-03
+   EH-projection coefficient a_EH=0.028815; non-EH Frobenius fraction 0.923; B4-extra fraction 0.054
+PASS D1 symbol is NOT linearised EH (non-EH Frobenius fraction > 0.1)  [frac=0.923]
+PASS D2 symbol carries non-Lorentz B4-extra invariants (fraction > 1e-3)  [frac=0.0542]
+== T: TT spectrum / speeds
+   4D-TT eigenvalues of M2 at unit k=[1000] time : 0.050055, 0.050055, 0.050055, 0.052175, 0.052175
+   4D-TT eigenvalues of M2 at unit k=[0100] x    : 0.050055, 0.050055, 0.050055, 0.052175, 0.052175
+   4D-TT eigenvalues of M2 at unit k=[1100] t-x  : 0.050055, 0.051578, 0.051578, 0.052175, 0.053934
+   4D-TT eigenvalues of M2 at unit k=[0110] x-y  : 0.050055, 0.051578, 0.051578, 0.052175, 0.053934
+   4D-TT eigenvalues of M2 at unit k=[0111]      : 0.051070, 0.051070, 0.052810, 0.053083, 0.053083
+   4D-TT eigenvalues of M2 at unit k=[1111]      : 0.051578, 0.051578, 0.052964, 0.052964, 0.052964
+   along x: C_T2(yz)=0.050055  C_E(yy-zz)=0.052175  E/T2=1.042351
+PASS T1 4D-TT spectrum is NOT degenerate at fixed k (E/T2 split along an axis)  [E/T2=1.04235]
+   TT-restricted Lorentzian c^2 along [100]: 1.000000, 1.000000  (t-x mixing 1.3e-08; A eig 0.05005, 0.05217)
+   TT-restricted Lorentzian c^2 along [110]: 1.030432, 1.035817  (t-x mixing 1.3e-08; A eig 0.05005, 0.05164)
+   TT-restricted Lorentzian c^2 along [111]: 1.045728, 1.045728  (t-x mixing 1.4e-08; A eig 0.05076, 0.05076)
+PASS T2 TT speeds along [100] equal 1 for both pols (forced by t<->x B4 swap)  [[1. 1.]]
+FAIL T3 [hypothesis H_noBiref, FAIL = falsified] raw kernel: no TT birefringence in TT-restricted pencil (split<1e-4)  [max split 5.38e-03, max |c^2-1| 4.57e-02]
+PASS T4 dispersion-runner channel (yz pol, t-x diagonal vs axis) is isotropic at O(k^2): runner 0.043 k0^2 excess is O(k^4)  [C_diag/C_axis-1 = -1.2e-07]
+== L: gauge/longitudinal modes
+   along x, unit-norm gauge modes k(x)xi, xi=e0..e3: 0.023095, -0.006018, 0.023095, 0.023095;  TT(yz)=0.050055
+PASS L1 pure-gauge modes carry O(1) k^2 stiffness relative to TT (|gauge|/TT > 0.1)  [ratio 0.461]
+   eig A10 (time-direction symbol, 10x10): -0.00602, 0.02309, 0.02309, 0.02309, 0.04739, 0.05005, 0.05005, 0.05005, 0.05217, 0.05217
+   full 10x10 Lorentzian c^2 along [100]: -8.40334+0.0e+00i, -0.11900+0.0e+00i, 0.46138+0.0e+00i, 0.46138+0.0e+00i, 1.00000+0.0e+00i, 1.00000+0.0e+00i, 1.00000+0.0e+00i, 1.00000+0.0e+00i, 2.16739+0.0e+00i, 2.16739+0.0e+00i
+   full 10x10 Lorentzian c^2 along [110] [TT overlap]: -8.40333(TT0.00), -0.15849(TT0.00), 0.42704(TT0.00), 0.43095(TT0.00), 0.93404(TT0.00), 0.99998(TT0.70), 1.03043(TT1.00), 1.07385(TT0.69), 2.16739(TT0.00), 2.23335(TT0.00)
+   full 10x10 Lorentzian c^2 along [111] [TT overlap]: -8.40333(TT0.00), -0.16622(TT0.00), 0.41280(TT0.00), 0.41280(TT0.00), 0.91206(TT0.00), 1.04597(TT1.00), 1.04597(TT1.00), 1.05243(TT0.00), 2.21136(TT0.00), 2.21136(TT0.00)
+PASS L2 time-direction symbol A10 is not positive semidefinite (non-TT ghost-sign directions present)  [1 negative eigenvalues]
+== WK: finite-K lattice Ward residual scaling
+   |p.(Pi(K)-Pi(0))| = 5.475e-04, 6.891e-05, 8.628e-06 ; |p.Pi(K)| = 2.113e-01, 1.060e-01, 5.306e-02
+PASS WK1 subtracted-kernel lattice Ward residual scales as k^3 (leading symbol violation)  [power 2.998]
+PASS WK2 unsubtracted kernel Ward residual scales as k^1 (Pi(0) contact/mass term)  [power 0.999]
+== M: zero-momentum kernel Pi(0)
+   Pi(0) = 0.101158 d_mn d_rs + -0.336159 (d_mr d_ns + d_ms d_nr) + -0.146856 d_mnrs   (resid 6.0e-16)
+   one-point <V_mn> diag = 0.874634, 0.874634, 0.874634, 0.874634 (offdiag max 3.5e-18)
+   Pi(0) on TT pols: T2(yz)=-0.672319, E(yy-zz)=-0.819175 ; ratio to symbol C_T2: m_T2^2=-13.4317, m_E^2=-15.7006 (lattice units, block spacing)
+PASS M1 Pi(0) is B4-invariant with a nonzero non-Lorentz d_mnrs piece  [c3/c2=0.437]
+TOTAL: PASS=20 FAIL=3
+
+real	7m27.864s
+user	3m38.329s
+sys	0m37.977s

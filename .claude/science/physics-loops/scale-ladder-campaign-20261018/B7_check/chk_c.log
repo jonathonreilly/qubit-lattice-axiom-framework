@@ -1,0 +1,8 @@
+site one-particle irreps under O (proper): dims [2, 2, 4, 4]
+site one-particle irreps under O_h: dims [4, 4, 4]
+site one-particle irreps under C2x only: dims [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Bloch symmetry U_g H(k) U_g^T = H(Rk + pi R lam) at random k, all 24: True
+nu=2 class G: grid N=24 indirect gap 0.8653, certified lower bound 0.6082
+nu=2 class G: grid N=48 indirect gap 0.8653, certified lower bound 0.7367
+k* levels of this nu=2 Hamiltonian: [-1.0157 -1.0157 -0.022  -0.022 ]
+E1,E2 at k*: -1.0157141375374685 -1.0157141375374683  E3,E4: -0.021967825381437198 -0.02196782538143712

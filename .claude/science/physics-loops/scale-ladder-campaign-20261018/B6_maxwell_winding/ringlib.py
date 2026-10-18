@@ -14,7 +14,7 @@ Exploratory worker code; no claim.
 """
 import os
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):
-    os.environ.setdefault(_v, "4")
+    os.environ.setdefault(_v, "1")
 import itertools
 import numpy as np
 import numba as nb
@@ -277,12 +277,12 @@ class Component:
     def ground(self, V, J=1.0, tol=1e-13):
         if self.n == 1:
             return float(V * self.nf[0]), np.ones(1), np.inf
-        if self.n <= 2500:
+        if self.n <= 800:
             w, U = np.linalg.eigh(self.H(V, J).toarray())
             g = U[:, 0]
             return float(w[0]), g * np.sign(g.sum()), float(w[1] - w[0])
         H = self.H(V, J)
-        w, U = sla.eigsh(H, k=2, which="SA", tol=tol, v0=np.ones(self.n), ncv=40, maxiter=20000)
+        w, U = sla.eigsh(H, k=2, which="SA", tol=tol, v0=np.random.default_rng(1).random(self.n) + 0.5, ncv=40, maxiter=20000)
         o = np.argsort(w)
         g = U[:, o[0]]
         return float(w[o[0]]), g * np.sign(g.sum()), float(w[o[1]] - w[o[0]])
@@ -304,29 +304,40 @@ class Component:
         Cm = C[:, self.ps]
         return (Cm * gg[None, :]) @ Cm.T
 
-    def block_cg(self, H, E0, g, Bm, tol=1e-12, maxit=5000):
-        """Solve (H - E0) X = Bm on the complement of g (Bm columns orthogonal to g)."""
+    def block_cg(self, H, E0, g, Bm, tol=1e-11, maxit=20000):
+        """Solve (H - E0) X = Bm on the complement of g; independent CG per column, frozen when converged."""
         Bm = Bm - np.outer(g, g @ Bm)
+        k = Bm.shape[1]
         X = np.zeros_like(Bm)
-        R = Bm.copy()
+        bn = np.sqrt((Bm * Bm).sum(0))
+        scale = max(bn.max(), 1e-300)
+        act = np.flatnonzero(bn > 1e-14 * scale)
+        R = Bm[:, act].copy()
         P = R.copy()
         rs = (R * R).sum(0)
-        bn = np.sqrt(rs) + 1e-300
-        for it in range(maxit):
+        it = 0
+        while len(act) and it < maxit:
+            it += 1
             AP = H @ P - E0 * P
             AP -= np.outer(g, g @ AP)
-            pAp = (P * AP).sum(0)
-            alpha = np.where(pAp > 0, rs / np.where(pAp > 0, pAp, 1), 0.0)
-            X += P * alpha
+            alpha = rs / (P * AP).sum(0)
+            X[:, act] += P * alpha
             R -= AP * alpha
             rs_new = (R * R).sum(0)
-            if np.all(np.sqrt(rs_new) / bn < tol):
-                break
-            P = R + P * (rs_new / np.where(rs > 0, rs, 1))
+            if it % 50 == 0:  # residual replacement against drift
+                R = Bm[:, act] - (H @ X[:, act] - E0 * X[:, act])
+                R -= np.outer(g, g @ R)
+                rs_new = (R * R).sum(0)
+            done = np.sqrt(rs_new) <= tol * bn[act]
+            beta = rs_new / rs
+            P = R + P * beta
             rs = rs_new
+            if done.any():
+                keep = ~done
+                act, R, P, rs = act[keep], R[:, keep], P[:, keep], rs[keep]
         X -= np.outer(g, g @ X)
-        res = np.abs(H @ X - E0 * X - Bm).max() / max(np.abs(Bm).max(), 1e-300)
-        return X, it + 1, res
+        res = np.abs(H @ X - E0 * X - Bm).max() / scale
+        return X, it, res
 
     def hessian(self, V, C, J=1.0, ground=None):
         """R(c,c') = d^2 E0 / db db' along source directions (rows of C), J = 1."""
@@ -343,7 +354,7 @@ class Component:
         Hb = sp.csr_matrix((-J * ph, (self.rows, self.cols)), shape=(self.n, self.n)) + sp.diags(V * self.nf.astype(float))
         if self.n <= 2500:
             return float(np.linalg.eigvalsh(Hb.toarray())[0])
-        w = sla.eigsh(Hb, k=1, which="SA", tol=1e-14, v0=np.ones(self.n, complex), ncv=40, maxiter=20000)[0]
+        w = sla.eigsh(Hb, k=1, which="SA", tol=1e-14, v0=(np.random.default_rng(2).random(self.n) + 0.5).astype(complex), ncv=40, maxiter=20000)[0]
         return float(w.min())
 
 

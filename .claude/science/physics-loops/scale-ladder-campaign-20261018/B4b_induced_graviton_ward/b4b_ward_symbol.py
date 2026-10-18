@@ -159,10 +159,38 @@ for _ in range(20):
     rat.append(np.abs(L).max() / np.abs(M2k).max())
 ward_rel = max(rat)
 ward_t = np.abs(ward_tensor(T6)).max() / np.abs(T6).max()
-check('W1 leading-symbol Ward identity k_mu M2_{mu nu,rho sig}(k)=0 HOLDS', ward_rel < 1e-4,
+check('W1 [hypothesis H_Ward, FAIL = falsified] leading-symbol Ward identity k_mu M2_{mu nu,rho sig}(k)=0 holds', ward_rel < 1e-4,
       'max|k.M2|/max|M2| = %.3e (min over k %.3e); coefficient-level %.3e' % (ward_rel, min(rat), ward_t))
 check('W2 leading-symbol Ward identity is BROKEN at O(1) relative size (>1e-2)', ward_rel > 1e-2,
       'max|k.M2|/max|M2| = %.3f' % ward_rel)
+
+# parametrisation-independent: an exact gauge redundancy (in ANY linear field basis h = R phi) needs a
+# 4-dim null space of the 10x10 symbol matrix at every k.
+def sym_basis0():
+    B = []
+    for a in range(4):
+        for b in range(a, 4):
+            h = np.zeros((4, 4))
+            if a == b:
+                h[a, a] = 1.0
+            else:
+                h[a, b] = h[b, a] = 1 / np.sqrt(2)
+            B.append(h)
+    return B
+
+
+_SB0 = sym_basis0()
+minrat = []
+for _ in range(20):
+    k = rng.normal(size=4)
+    k /= np.linalg.norm(k)
+    M2k = symbol_from_T6(T6, k)
+    ev = np.linalg.eigvalsh(np.array([[quad(M2k, x, y).real for y in _SB0] for x in _SB0]))
+    minrat.append(np.sort(np.abs(ev))[3] / np.abs(ev).max())
+check('W3 10x10 symbol has NO 4-dim null space at any sampled k (no gauge redundancy in any linear field basis)',
+      min(minrat) > 1e-2, '4th-smallest |eig|/max over 20 k: min %.3f' % min(minrat))
+EHm = np.array([[quad(symbol_from_T6(EH, np.array([0, 1, 0, 0.])), x, y) for y in _SB0] for x in _SB0])
+check('W4 control: linearised EH symbol has exactly 4 null eigenvalues', np.sum(np.abs(np.linalg.eigvalsh(EHm)) < 1e-12) == 4)
 
 # ---------------------------------------------------------------------------
 # D: decomposition
@@ -283,8 +311,13 @@ check('T2 TT speeds along [100] equal 1 for both pols (forced by t<->x B4 swap)'
       str(spd['[100]']))
 split = max(abs(spd[k][1] - spd[k][0]) for k in spd)
 dev = max(abs(spd[k] - 1).max() for k in spd)
-check('T3 no leading-order TT birefringence within the TT-restricted pencil (split<1e-4)', split < 1e-4,
+check('T3 [hypothesis H_noBiref, FAIL = falsified] raw kernel: no TT birefringence in TT-restricted pencil (split<1e-4)', split < 1e-4,
       'max split %.2e, max |c^2-1| %.2e' % (split, dev))
+
+kd = np.array([1, 1, 0, 0.]) / np.sqrt(2)
+cyz_d = quad(symbol_from_T6(T6, kd), hT).real
+check('T4 dispersion-runner channel (yz pol, t-x diagonal vs axis) is isotropic at O(k^2): runner 0.043 k0^2 excess is O(k^4)',
+      abs(cyz_d / cT - 1) < 1e-6, 'C_diag/C_axis-1 = %.1e' % (cyz_d / cT - 1))
 
 # ---------------------------------------------------------------------------
 # L: gauge / longitudinal modes
@@ -307,6 +340,25 @@ print('   eig A10 (time-direction symbol, 10x10):', ', '.join('%.5f' % x for x i
 import scipy.linalg as sla
 w = sla.eigvals(B10, A10)
 print('   full 10x10 Lorentzian c^2 along [100]:', ', '.join('%.5f%+.1ei' % (x.real, x.imag) for x in sorted(w, key=lambda z: z.real)))
+for name, n in [('[110]', [0, 1, 1, 0.]), ('[111]', [0, 1, 1, 1.])]:
+    n = np.array(n) / np.linalg.norm(n)
+    Bn = mat10(symbol_from_T6(T6, n))
+    ww, vv = sla.eig(Bn, A10)
+    # TT overlap of each mode with spatial TT pols for this n
+    nn = n[1:]
+    Pn = np.eye(3) - np.outer(nn, nn)
+    ttproj = []
+    for h in _SB0:
+        x = np.zeros((4, 4)); x[1:, 1:] = Pn @ h[1:, 1:] @ Pn; x[1:, 1:] -= np.trace(x[1:, 1:]) / 2 * Pn
+        ttproj.append([quad(np.einsum('ab,cd->abcd', np.eye(4), np.eye(4)) * 0 + np.einsum('ac,bd->abcd', np.eye(4), np.eye(4)), x, y) for y in _SB0])
+    Ptt = np.array(ttproj).real
+    rows = []
+    for j in np.argsort(ww.real):
+        v = vv[:, j].real
+        v /= np.linalg.norm(v)
+        ov = np.linalg.norm(Ptt @ v)
+        rows.append('%.5f(TT%.2f)' % (ww[j].real, ov))
+    print('   full 10x10 Lorentzian c^2 along %s [TT overlap]: %s' % (name, ', '.join(rows)))
 negA = int(np.sum(np.linalg.eigvalsh(A10) < -1e-9))
 check('L2 time-direction symbol A10 is not positive semidefinite (non-TT ghost-sign directions present)', negA > 0,
       '%d negative eigenvalues' % negA)

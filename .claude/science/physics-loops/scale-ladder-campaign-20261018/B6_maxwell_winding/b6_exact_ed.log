@@ -1,0 +1,2 @@
+B6 exact ED of the supplied ring model; J = 1; V list [1.0, 0.9, 0.5, 0.0, -1.0]
+[PASS] 2x2x2: Gauss states 9600, zero-winding 880 (landed note, independent enumerator) :: got 9600, 880

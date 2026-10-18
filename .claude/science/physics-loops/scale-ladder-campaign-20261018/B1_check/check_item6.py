@@ -35,7 +35,7 @@ print(" eigenphases of U equal +-arccos(ccc - sss) (sign -1 branch):",
       max(abs(np.sort(np.abs(np.angle(np.linalg.eigvals(U_dp(k)))))[0] - om(k)) for k in ks))
 # group velocity: max |v| and max per component (causal cone of BCC step is the cube |x_i| <= 1/sqrt3)
 def grad(k, h=1e-6): return np.array([(om(k + h*e) - om(k - h*e)) / (2*h) for e in np.eye(3)])
-G = np.array([grad(k) for k in rng.uniform(-np.pi*s3, np.pi*s3, (40000, 3))])
+G = np.array([grad(k) for k in rng.uniform(-np.pi*s3, np.pi*s3, (8000, 3))])
 G = G[np.all(np.isfinite(G), 1)]
 print(f" max |v| = {np.linalg.norm(G, axis=1).max():.4f}; max |v_i| = {np.abs(G).max():.4f} (cube bound 1/sqrt3 = {1/s3:.4f}); "
       f"max |v|_1 = {np.abs(G).sum(1).max():.4f}")
@@ -148,9 +148,12 @@ dH = [exact((HL(kst + 1e-7*e) - HL(kst - 1e-7*e)) / 2e-7) for e in np.eye(3)]  #
 Wst = HLs*Ucs/sp.sqrt(2); dW = (qx*dH[0] + qy*dH[1] + qz*dH[2])*Ucs/sp.sqrt(2)
 N = (Wst - sp.eye(12)).nullspace(); Nm = sp.Matrix.hstack(*N)
 print(" exact node dimension:", Nm.shape[1])
-Mq = sp.simplify((Nm.H*Nm).inv() * Nm.H * (-sp.I) * Wst.H * dW * Nm)
-lam = sp.symbols('lam'); cp = sp.factor(sp.simplify((Mq - lam*sp.eye(Nm.shape[1])).det()))
-print(" exact first-order characteristic polynomial:", cp)
+# W^H dW = Uc H^H dH Uc / 2 : rational Gaussian, no sqrt2
+Gi = (Nm.H*Nm).inv()
+Mi = [sp.expand(Gi*Nm.H*(-sp.I)*Ucs*HLs.H*dH[i]*Ucs*Nm/2) for i in range(3)]
+qv = (qx, qy, qz); Mq = sum((qv[i]*Mi[i] for i in range(3)), sp.zeros(6, 6))
+print(" exact: M(q)^3 - (|q|^2/3) M(q) == 0:", sp.expand(Mq**3 - (qx**2+qy**2+qz**2)/3*Mq).is_zero_matrix,
+      "; tr M(q)^2 =", sp.factor(sp.expand((Mq**2).trace())), "; tr M(q) =", sp.expand(Mq.trace()))
 # flat bands and Jordan count
 print(" eigenvalue-1 multiplicity at random k:", [int(np.sum(np.abs(np.linalg.eigvals(Wk(k)) - 1) < 1e-9)) for k in rng.uniform(-3, 3, (5, 3))],
       "; +1 dims of R1,R2:", int(round((12 + np.trace(HL(np.ones(3)) / np.sqrt(2)).real) / 2)), int(round((12 + np.trace(Uc)) / 2)))

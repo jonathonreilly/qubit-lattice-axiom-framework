@@ -56,3 +56,6 @@ Range-two block retires the asymptotic-prediction status for the specified slow 
 
 
 Complete fixed-order block derives rather than selects higher-coefficient stability and strict radiation. Canonical/local K4 transfer proved only on both K1-null external states. Supplied Hamiltonian/reference/sector persist. Fixed-order constants are not uniform in m; microscopic resonance, original-source residue and physical bridge remain open. No observations used as fitting or test data.
+
+
+Original readout block derives induced coupling from existing H and C, retiring a free source coefficient within fixed-order construction. C normalization, ordered reference and physical measurement identification remain premises. Complex continued residue is not a probability or pointwise real-axis line shape.

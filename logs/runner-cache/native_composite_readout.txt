@@ -1,0 +1,106 @@
+===== runner cache v1 =====
+runner: scripts/native_composite_readout.py
+runner_sha256: d09648208a15f619e556df1a3a4433e531441bc1fab671e9c8edb4a654667b90
+input_fingerprint_sha256: fdf9bf6b2fa2a7deb2e15da1358dcec969c192501ffeaeae2b50746bdb46adbe
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.04
+status: ok
+----- stdout -----
+{
+  "status": "PASS",
+  "predicted_coefficient": [
+    -0.030362088241446178,
+    -0.03638513790188856
+  ],
+  "predicted_endpoint": [
+    1.4310014583041744,
+    1.1630288574670204
+  ],
+  "rows": [
+    {
+      "lam": 0.1,
+      "N": 253,
+      "endpoint_residue_over_f": [
+        1.452655450288369,
+        1.1520826552466845
+      ],
+      "readout_coefficient": [
+        -0.02902761701423776,
+        -0.03745233514965381
+      ],
+      "schur_residual": 3.625264947627759e-15,
+      "cutoff_difference": 0.0,
+      "coefficient_error": 0.001708719819597371,
+      "endpoint_error": 0.024263443941453487
+    },
+    {
+      "lam": 0.05,
+      "N": 442,
+      "endpoint_residue_over_f": [
+        1.4386006276763619,
+        1.1561005608789114
+      ],
+      "readout_coefficient": [
+        -0.029920103997552027,
+        -0.036679498631214454
+      ],
+      "schur_residual": 1.505573050723803e-14,
+      "cutoff_difference": 0.0,
+      "coefficient_error": 0.0005310351314366642,
+      "endpoint_error": 0.010283417173293893
+    },
+    {
+      "lam": 0.02,
+      "N": 914,
+      "endpoint_residue_over_f": [
+        1.4330335102264877,
+        1.1604075166670587
+      ],
+      "readout_coefficient": [
+        -0.030250928931713234,
+        -0.036441988100859066
+      ],
+      "schur_residual": 1.2182642724234628e-14,
+      "cutoff_difference": 0.0,
+      "coefficient_error": 0.00012485326292608617,
+      "endpoint_error": 0.0033167246802413056
+    },
+    {
+      "lam": 0.01,
+      "N": 1570,
+      "endpoint_residue_over_f": [
+        1.431772579811487,
+        1.161887957455787
+      ],
+      "readout_coefficient": [
+        -0.03032125575076162,
+        -0.03640245702991614
+      ],
+      "schur_residual": 5.639091320735056e-12,
+      "cutoff_difference": 0.0,
+      "coefficient_error": 4.4353629965764694e-05,
+      "endpoint_error": 0.0013770552692876086
+    },
+    {
+      "lam": 0.005,
+      "N": 2681,
+      "endpoint_residue_over_f": [
+        1.431298663418346,
+        1.162550937628879
+      ],
+      "readout_coefficient": [
+        -0.03034670065497333,
+        -0.03639069778422996
+      ],
+      "schur_residual": 4.147798119661858e-12,
+      "cutoff_difference": 0.0,
+      "coefficient_error": 1.6361238006628703e-05,
+      "endpoint_error": 0.000562795035140653
+    }
+  ],
+  "scope": "Specified range-two/analytic host numerical controls; full fixed-order leading source and stability are proved separately. Complex residue is not a probability, and no microscopic detector or empirical test is asserted."
+}
+
+----- stderr -----
+

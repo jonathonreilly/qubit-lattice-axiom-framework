@@ -5,8 +5,8 @@ deadline: 2026-10-19T00:47:35Z
 final_packaging_at: 2026-10-19T00:32:35Z
 checkpoint_interval_minutes: 30
 actual_current_surface_status: bounded-support
-active_route: complete fixed-order compact-sector resonance
-next_action: publish complete fixed-order pole; derive original readout residue
+active_route: original readout and microscopic response
+next_action: publish original readout; derive actual finite-time response and static range
 main_at_launch: fa841753c1a6296e5ad45518375660b0f1004769
 prior_campaigns: stopped
 proposal_allowed: false

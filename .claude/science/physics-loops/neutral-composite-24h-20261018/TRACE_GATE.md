@@ -83,3 +83,6 @@ Range-two and frozen-arm block: trace_class: upstream_support; target_blocker_te
 
 
 Complete fixed-order pole: trace_class: upstream_support; target_blocker_text: full retained-channel outgoing resolvent and gauge-consistent native higher coefficients; source_of_blocker_text: handoff; reachability_to_target: partially_closes; artifact_role: theorem; next_trace_action: derive original source residue and finite-time microscopic response.
+
+
+Original readout: trace_class: upstream_support; target_blocker_text: original-source residue accuracy; source_of_blocker_text: handoff; reachability_to_target: partially_closes; artifact_role: theorem; next_trace_action: microscopic finite-time comparison and static exchange range. Fixed-order residue only.

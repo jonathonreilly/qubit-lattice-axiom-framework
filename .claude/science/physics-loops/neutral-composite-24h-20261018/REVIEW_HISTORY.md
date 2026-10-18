@@ -74,3 +74,6 @@ Range-two Airy / frozen arms: final scoped review PASS, native/REVIEW_RANGE_TWO_
 
 
 Complete fixed-order composite: component checks, synthesis and final scoped review PASS; see native/REVIEW_FIXED_ORDER_COMPOSITE.md. Contour separation clarified before final confirmation. No formal audit.
+
+
+Original composite readout block: independent source and endpoint residue checks PASS; final scoped review PASS, native/REVIEW_COMPOSITE_READOUT.md. No formal audit.

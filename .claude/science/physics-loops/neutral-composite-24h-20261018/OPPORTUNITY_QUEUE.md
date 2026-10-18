@@ -1,9 +1,9 @@
-# Ranked work after source-identification block
+# Ranked remaining constructive routes, 2026-10-18
 
-1. Sustained constructive test: native neutral feature propagation on increasing 2x2xL open grids, holding the microscopic Hamiltonian fixed. Track actual residuals, quadrature convergence and source overlap; thin-grid scaling is not a 3D continuum limit.
-2. Derive feature/environment coupling from the exact boundary terms of native H through an influence or projected-memory construction. Do not introduce scalar or exchange modulation as a new term; expose state dependence and lack of a small truncation parameter.
-3. Expand neutral local-source Krylov spaces and compute exact memory coupling to the complement; determine whether a weak-memory collective approximation is justified rather than imposed.
-4. Larger cross sections / alternative existing native candidate comparisons after the thin-grid structural result; preserve supplied Hamiltonian and state labels.
-5. Observational source/detector mapping only after a candidate supplies propagation and a coupling rule; separate model development from empirical tests.
+1. Connect the complete coefficient dynamics and original diagnostic to actual finite-time microscopic correlations. Keep prepared-state and momentum/volume limits explicit; a continued pole alone is not an observed oscillation.
+2. Derive static feature exchange range from the complete compact operator, testing whether large extent can evade its finite mass without adding interactions.
+3. Return to isotropic finite-grid scalar response and tensor calculations to challenge the anisotropic ordered-reference regime. Require residual checks; thin grids are not a 3D limit.
+4. Derive nonzero-momentum dispersion and test isotropy, universality of different feature couplings, and local environment response.
+5. Observational mapping only once a model supplies a physical scale and measurement identification; retain development/test separation.
 
-The exact source nullspace shows matching energy shifts cannot identify dynamical coupling. The next block must be constructive native dynamics, not another cosmetic source-selection no-go. Fixed campaign deadline remains 2026-10-19T00:47:35Z.
+No claim of TOE closure. Supplied Hamiltonian/reference and a cosmological bridge remain unresolved. The goal remains active until its fixed deadline.

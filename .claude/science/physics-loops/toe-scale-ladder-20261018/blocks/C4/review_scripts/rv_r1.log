@@ -1,2 +1,12 @@
 [21:39:21] radius 1 action trivial: dim W=16 unsigned=132 explicit-symplectic-ok=132 signed=528 (3.6s)
 [21:39:24] radius 1 action sign: dim W=16 unsigned=132 explicit-symplectic-ok=132 signed=176 (2.5s)
+[21:39:24] radius 1 action signf: dim W=10 unsigned=16 explicit-symplectic-ok=16 signed=32 (0.3s)
+[21:39:24] radius 1 action axis: dim W=7 unsigned=1 explicit-symplectic-ok=1 signed=1 (0.1s)
+   X -> [((0, 0, 0), 'X')] 
+   Z -> [((0, 0, 0), 'Z')] 
+   signs [(1, 1)]
+[21:39:24] radius 1 action full: dim W=7 unsigned=1 explicit-symplectic-ok=1 signed=1 (0.1s)
+   X -> [((0, 0, 0), 'X')] 
+   Z -> [((0, 0, 0), 'Z')] 
+   signs [(1, 1)]
+TOTAL: PASS=5 FAIL=0

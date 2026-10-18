@@ -1,12 +1,12 @@
 # B21 findings: do the degree-2 brackets force K1 = K2?
 
-Provenance: a worker of the same model family; not yet checked. Saved by the supervisor from the hand-back. Runners:
+Provenance: a worker of the same model family. Checked by a fresh-context same-family agent (`../B21_check/REPORT.md`, PASS=17): all claims hold, and its corrections are applied below. Saved by the supervisor from the hand-back. Runners:
 - `b21_brackets.py`: exact sympy jets, PASS=13 (about 2 min).
 - `b21_witness.py`: a second code path on the B19_check machinery, PASS=3 (about 3.5 min).
 
 Three harness bug logs are kept (run1, run2, run3).
 
-**Answer: no, and no bracket at any degree can.** The brackets force the invariant relation λ1·K2 = ν·K1. K1 = K2 follows only with the normalisation premise h = g − δ.
+**Answer: no. No bracket at any degree can, within an ansatz that leaves every Φ_ρ-non-invariant normalisation free (check scope qualifier).** Fixing any one of a_s = 1, β = −1, λ1 = ν, or a nonpolynomial single-K form breaks the freedom and forces K1 = K2. The brackets force the invariant relation λ1·K2 = ν·K1. K1 = K2 follows only with the normalisation premise h = g − δ.
 
 ## Setup
 
@@ -24,7 +24,7 @@ Three harness bug logs are kept (run1, run2, run3).
 | A1 | {G,G} at order P | Fixes part of G2; 4 directions stay free |
 | A4 | {G,G} at order P·h | λ1 free |
 | A2 | {C,G} h-linear | s1 = −λ1K2/K1, s2 = 0, with a 3-dimensional null family |
-| A3 | A1 + A2 together | G2 = ν∫P L_ξh uniquely, null directions removed; ν = λ1K2/K1 |
+| A3 | A1 + A2 together | G2 = ν∫P L_ξh uniquely, null directions removed; ν = λ1K2/K1. The check confirms this also for the fully general 648-coefficient G2 |
 | A5 | {C,C} at order P | DeWitt trace b = −½; c0 = K1/(4αλ1) |
 | A6 | {C,G} degree 2, P² | kin1 = DeWitt about rδ, with r = λ1/ν. s2 is a density-weight convention |
 | A7 | {C,C} at order P·h | β = −1/r, β′ = 0 |
@@ -45,12 +45,13 @@ Three harness bug logs are kept (run1, run2, run3).
   - (d) unit matter coupling;
   - (e) block 62's single K on R1 and R2.
 
-  The member supplies (e). This is HKT's "geometrodynamics regained" specialised; HKT's premise is (b).
+  The member supplies (e). This is HKT's "geometrodynamics regained" specialised; HKT presuppose (a) and (b).
+- **Extra matter freedom (check).** The covariant non-minimal coupling R1·φ² is free. It does not change a_s, s1 or the cone.
 
 ## Premises and open items
 
 - **Premises:** continuum, flat background, degree ≤ 2, isotropic parity-even ansätze; ultralocal kin1; Fierz–Pauli-form potential; one constraint with no ∂N terms; a field-independent lapse rule.
-- **Not computed:** the h² sector, which needs [√gR]^(3) (prediction K3 = K2²/K1); degree 3; the lattice; the non-isotropic G2 at degree 2. The no-go itself is general.
+- **Not computed:** the h² sector, which needs [√gR]^(3) (prediction K3 = K2²/K1); degree 3; the lattice; the non-isotropic G2 in the degree-2 sectors (the h-linear uniqueness is settled by the check). The no-go itself is general.
 
 ## Prior art (from memory)
 

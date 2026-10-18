@@ -1,0 +1,8 @@
+   matter {C,G} at order matter^2: [{a1: c*lam_s/(4*lam1) + c*s2/(4*lam1), a10: 0, a2: -c*lam_s/(2*lam1), a3: 0, a4: 0, a5: 0, a6: 0, a7: -a8, a9: -lam_s/(4*lam1) + s2/(4*lam1), s1: -lam_s}]
+   with s2 = 0: free coupling directions left = ['a8']
+FAIL: T6a [5s] matter {C,G} (scalar, 10-term isotropic h-linear coupling ansatz): s1 = -lam_s and, with gravity's s2 = 0, the coupling is uniquely (lam_s/lam1) x the unit metric stress of delta + h  =>  a_s = lam_s/lam1
+   {C,C} order P + order phi pi: [{b: -1/2, c: K1*lam_s/(4*alpha*lam1), c0: K1/(4*alpha*lam1)}]
+PASS: T6b [5s] {C,C}: b = -1/2, c0 = K1/(4 alpha lam1), matter cone c = lam_s K1/(4 alpha lam1); with lam_s = nu (matter {G,G}, T0b) and nu = lam1 K2/K1 (T3): c = K2/(4 alpha) = graviton TT cone (T2)
+   unit matter coupling fixed, lam_s = nu; solve gravity + matter {C,G} for lam1, K2, s1, s2: [{K2: K1, lam1: nu, s1: -nu, s2: 0}]
+PASS: T6c [6s] premise (d) computed: with the matter coupling FIXED to unit metric stress of delta + h (not Phi_rho-covariant: a_s -> rho a_s) the h-linear {C,G} brackets force lam1 = nu and K2 = K1.  So 'no bracket can force K1 = K2' holds only when every Phi_rho-non-invariant normalisation in the ansatz is left free
+TOTAL: PASS=2 FAIL=1  (6s)

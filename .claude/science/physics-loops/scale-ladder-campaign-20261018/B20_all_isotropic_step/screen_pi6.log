@@ -1,0 +1,15 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+pi6: 7488 words
+11176 (word, E) pairs with a linear spin-1/2 Weyl doublet at k*; 24 without a band crossing E (determinant sign test on 16^3, then Nelder-Mead)  [164s]
+[PASS] every k* Weyl doublet is isotropic (O-forced) to 1e-6  max 1.4e-14
+k* speeds (per unit sqrt2/3): {np.float64(1.0): 8514, np.float64(2.0): 2662}
+0 pairs: no Fermi-surface crossing found and every found node isotropic at the k* speed (screen level only)
+obstruction pattern among non-Fermi pairs: {('offsym-aniso', 'special-aniso'): 20, ('special-aniso',): 4}
+[PASS] the determinant test function r(k) is real on every grid (det W is k-independent)  max relative imag 7.1e-15
+[PASS] bookkeeping: every record has a k* doublet with nonzero speed  
+
+TOTAL: PASS=3 FAIL=0   [164s]
+
+real	2m46.471s
+user	7m1.902s
+sys	0m54.876s

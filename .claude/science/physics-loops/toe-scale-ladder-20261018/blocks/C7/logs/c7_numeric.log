@@ -9,3 +9,42 @@ PASS [numerical] bstar: |omega_K(theta) - theta_K| <= theta at all TRIMs (theta=
 PASS [numerical] bstar: theta=0.0, chi=0.00: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.2644 (4000 random k)
    min over samples of 1 + cos omega = 3.2938e-01; min over TRIMs = 3.2766e-01
 PASS [numerical] bstar: theta=0.0, chi=0.00: sampled min of 1 + cos omega >= its TRIM minimum
+PASS [numerical] bstar: theta=0.1, chi=0.00: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.2541 (4000 random k)
+   min over samples of 1 + cos omega = 4.0819e-01; min over TRIMs = 4.0492e-01
+PASS [numerical] bstar: theta=0.1, chi=0.00: sampled min of 1 + cos omega >= its TRIM minimum
+PASS [numerical] bstar: theta=0.1, chi=1.57: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.2731 (4000 random k)
+   min over samples of 1 + cos omega = 3.3143e-01; min over TRIMs = 3.3102e-01
+PASS [numerical] bstar: theta=0.1, chi=1.57: sampled min of 1 + cos omega >= its TRIM minimum
+--- iso: b = [0.3776095  0.16672156 0.10544397], s = 0.8164965809, |W| = 0.4714045208
+PASS [numerical] iso: |W| = s sqrt(1-s^2)
+PASS [numerical] iso: massive member M U0 M unitary (theta=0.2, chi=0.7), max err 2.5e-15
+PASS [numerical] iso: massive member is cubic covariant (C4z), err 2.4e-16
+   theta=0.0, chi=0.000: TRIM quasienergies |omega| = [0.       1.910633 1.910633 2.461919 1.910633 2.461919 2.461919 2.714854]
+   theta=0.1, chi=0.000: TRIM quasienergies |omega| = [0.1      1.810633 1.810633 2.361919 1.810633 2.361919 2.361919 2.61896 ]
+   theta=0.1, chi=1.571: TRIM quasienergies |omega| = [0.1      1.908867 1.908867 2.45576  1.908867 2.45576  2.45576  2.674539]
+PASS [numerical] iso: |omega_K(theta) - theta_K| <= theta at all TRIMs (theta=0.1, 7 twist angles)
+PASS [numerical] iso: theta=0.0, chi=0.00: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.3184 (4000 random k)
+   min over samples of 1 + cos omega = 9.2970e-02; min over TRIMs = 8.9679e-02
+PASS [numerical] iso: theta=0.0, chi=0.00: sampled min of 1 + cos omega >= its TRIM minimum
+PASS [numerical] iso: theta=0.1, chi=0.00: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.3103 (4000 random k)
+   min over samples of 1 + cos omega = 1.3731e-01; min over TRIMs = 1.3349e-01
+PASS [numerical] iso: theta=0.1, chi=0.00: sampled min of 1 + cos omega >= its TRIM minimum
+PASS [numerical] iso: theta=0.1, chi=1.57: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.3147 (4000 random k)
+   min over samples of 1 + cos omega = 1.0751e-01; min over TRIMs = 1.0710e-01
+PASS [numerical] iso: theta=0.1, chi=1.57: sampled min of 1 + cos omega >= its TRIM minimum
+--- gold: b = [0.3980161  0.22001789 0.16194812], s = 1.0000000000, |W| = 0.0000000000
+PASS [numerical] gold: |W| = s sqrt(1-s^2)
+PASS [numerical] gold: massive member M U0 M unitary (theta=0.2, chi=0.7), max err 1.5e-15
+PASS [numerical] gold: massive member is cubic covariant (C4z), err 2.6e-16
+   theta=0.0, chi=0.000: TRIM quasienergies |omega| = [0.       3.141593 3.141593 2.664958 3.141593 2.664958 2.664958 2.455157]
+   theta=0.1, chi=0.000: TRIM quasienergies |omega| = [0.1      3.041593 3.041593 2.65247  3.041593 2.65247  2.65247  2.467778]
+   theta=0.1, chi=1.571: TRIM quasienergies |omega| = [0.1      3.041593 3.041593 2.564995 3.041593 2.564995 2.564995 2.356727]
+PASS [numerical] gold: |omega_K(theta) - theta_K| <= theta at all TRIMs (theta=0.1, 7 twist angles)
+PASS [numerical] gold: massive axis doubler sits at quasienergy pi - theta exactly (U(X) = -U(0)), err 7.1e-15
+PASS [numerical] gold: theta=0.0, chi=0.00: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.2956 (4000 random k)
+   min over samples of 1 + cos omega = 2.0515e-03; min over TRIMs = 0.0000e+00
+PASS [numerical] gold: theta=0.0, chi=0.00: sampled min of 1 + cos omega >= its TRIM minimum
+PASS [numerical] gold: theta=0.1, chi=0.00: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.2961 (4000 random k)
+   min over samples of 1 + cos omega = 8.0390e-03; min over TRIMs = 4.9958e-03
+PASS [numerical] gold: theta=0.1, chi=0.00: sampled min of 1 + cos omega >= its TRIM minimum
+PASS [numerical] gold: theta=0.1, chi=1.57: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.2837 (4000 random k)

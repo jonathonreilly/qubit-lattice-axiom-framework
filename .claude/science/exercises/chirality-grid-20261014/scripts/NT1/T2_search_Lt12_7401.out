@@ -1,0 +1,17 @@
+# NT-1 T2 wsearch model=11112 open Lt=12 K=20 seed=7401 delta=0.6 margin 0.55 link sigma 0.250
+cphase +4.24396389
+start k=8: lam_min -2.452e-04 min/max -3.065e-05 min|H| 0.692 [6s]
+step 1: k=9 added rand     lam_min -4.638e-04 min/max -5.153e-05 min|H| 0.692 [21s]
+step 2: k=10 added rand     lam_min -9.224e-04 min/max -9.224e-05 min|H| 0.636 [36s]
+step 3: k=11 added rand     lam_min -2.033e-03 min/max -1.848e-04 min|H| 0.611 [52s]
+step 4: k=12 added rand     lam_min -3.174e-03 min/max -2.645e-04 min|H| 0.144 [68s]
+step 5: k=13 added pert0.1  lam_min -3.897e-03 min/max -2.997e-04 min|H| 0.144 [85s]
+step 6: k=14 added rand     lam_min -4.767e-03 min/max -3.404e-04 min|H| 0.144 [104s]
+step 7: k=15 added pert0.05 lam_min -5.610e-03 min/max -3.739e-04 min|H| 0.144 [122s]
+step 8: k=16 added pert0.02 lam_min -6.782e-03 min/max -4.237e-04 min|H| 0.144 [142s]
+step 9: k=17 added rand     lam_min -7.198e-03 min/max -4.233e-04 min|H| 0.144 [163s]
+step 10: k=18 added pert0.02 lam_min -8.640e-03 min/max -4.798e-04 min|H| 0.144 [185s]
+step 11: k=19 added pert0.02 lam_min -9.629e-03 min/max -5.066e-04 min|H| 0.132 [209s]
+step 12: k=20 added pert0.1  lam_min -1.063e-02 min/max -5.311e-04 min|H| 0.060 [233s]
+pool saved pool_NT1_wsearch_11112_open_Lt12_seed7401_d0.6.npz; W-match max|W1| 0.0e+00; max bulk plaquette 0.5408
+done [233s]

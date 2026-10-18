@@ -1,0 +1,20 @@
+B1  index preserved and vector-like kernel on vector-like content: 200/200 trials
+B2  S per mirror family (quark doublet N_c=3 + lepton doublet) = 0.2122
+B2  one mirror family                          S = 0.212  pull vs Gfitter U=0 fit = 1.8 sigma
+B2  two (KS split: 2 x 16bar)                  S = 0.424  pull vs Gfitter U=0 fit = 4.2 sigma
+B2  three (walker hw split: net 3 x 16bar)     S = 0.637  pull vs Gfitter U=0 fit = 6.5 sigma
+B2  three mirror families, scan over splittings 0.4-5 TeV: min Delta chi^2 = 41.0 at sgn=+1 mUq=752 mDq=677 mUl=400 mDl=400 (S=0.62, T=0.46)
+B2  A_1/2(top) = 1.3766, A_1/2(b) = -0.0837+0.1199j, A_SM = 1.2929+0.1199j
+B2  1 mirror family, m_Q =   400 GeV: mu_ggF = 9.38
+B2  3 mirror families, m_Q =   400 GeV: mu_ggF = 51.74
+B2  1 mirror family, m_Q =   700 GeV: mu_ggF = 9.33
+B2  3 mirror families, m_Q =   700 GeV: mu_ggF = 51.39
+B2  1 mirror family, m_Q =  1000 GeV: mu_ggF = 9.32
+B2  3 mirror families, m_Q =  1000 GeV: mu_ggF = 51.31
+B2  1 mirror family, m_Q =  1500 GeV: mu_ggF = 9.31
+B2  3 mirror families, m_Q =  1500 GeV: mu_ggF = 51.27
+B2  1 mirror family, m_Q =  2000 GeV: mu_ggF = 9.31
+B2  3 mirror families, m_Q =  2000 GeV: mu_ggF = 51.25
+B2  1 mirror family, m_Q =  3000 GeV: mu_ggF = 9.31
+B2  3 mirror families, m_Q =  3000 GeV: mu_ggF = 51.24
+B2  min mu_ggF over scan = 9.31  (measured ~1.0 +- 0.1)

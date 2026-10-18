@@ -1,0 +1,14 @@
+# TOR-1 measure current Lx=4 Lt=8 model=11112 eps=0.0001 dlt=0.001 Ns=16
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+field 0 Ward: sum_l (d omega)_l j_l = -3.3499000161e-03; sum_x omega q_tot = -3.3505756376e-03; ratio +0.99979836
+field 0 Ward: sum_l (d omega)_l j_l = +1.8830680600e-02; sum_x omega q_tot = +1.8831980457e-02; ratio +0.99993098
+field 0 Ward: sum_l (d omega)_l j_l = -2.8916015405e-02; sum_x omega q_tot = -2.8910738616e-02; ratio +1.00018252
+field 1 Ward: sum_l (d omega)_l j_l = -1.7503510808e-03; sum_x omega q_tot = -1.7480251675e-03; ratio +1.00133059
+field 1 Ward: sum_l (d omega)_l j_l = +9.5201078662e-04; sum_x omega q_tot = +9.4462844573e-04; ratio +1.00781507
+field 1 Ward: sum_l (d omega)_l j_l = -5.2127251980e-03; sum_x omega q_tot = -5.2210174289e-03; ratio +0.99841176
+watchdog peak RSS 336864 KB

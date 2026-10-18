@@ -1,0 +1,10 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+independent-numerics ln rho minus main ln rho: Re 7.82e-14 (after removing a constant), Im mod 2pi 5.28e-07; |kbb diff| 1.47e-07
+modulus factorization: Re ln rho - [2 ln|det D(1)| + 0.5 ln|det D(2)|] spread 5.68e-14
+phase of rho over the 6 nodes (main, relative to node 0): +0.0000 -0.0008 -0.0044 -0.0032 -0.0019 -0.0035
+watchdog peak RSS 158128 KB

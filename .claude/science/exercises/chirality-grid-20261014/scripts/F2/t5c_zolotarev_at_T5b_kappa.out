@@ -1,0 +1,5 @@
+k=0.1067 (T5b g=0.65 worst) n=28 max error = 1e-33.13
+k=0.1067 (T5b g=0.65 worst) n=30 max error = 1e-35.50
+k=0.1067 (T5b g=0.65 worst) n=32 max error = 1e-37.87
+k=0.1067 (T5b g=0.65 worst) n=74 max error = 1e-87.58
+k=0.1067 (T5b g=0.65 worst) n=76 max error = 1e-89.95

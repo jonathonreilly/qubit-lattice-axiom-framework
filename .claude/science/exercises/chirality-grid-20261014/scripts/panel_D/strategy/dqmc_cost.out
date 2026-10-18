@@ -1,0 +1,5 @@
+far surface only, L=12   N=  1152 Ltau= 420  core-h/point=     22.3  core-h/scan(15)=      334  mem~  0.892 GB
+far surface only, L=20   N=  3200 Ltau= 500  core-h/point=      569  core-h/scan(15)= 8.53e+03  mem~   8.19 GB
+slab, 6 layers, L=12     N=  6912 Ltau= 420  core-h/point= 4.82e+03  core-h/scan(15)= 7.22e+04  mem~   32.1 GB
+slab, 6 layers, L=20     N= 19200 Ltau= 500  core-h/point= 1.23e+05  core-h/scan(15)= 1.84e+06  mem~    295 GB
+cloud CPU at $0.01-0.05 per core-hour (spot/on-demand range, assumption)

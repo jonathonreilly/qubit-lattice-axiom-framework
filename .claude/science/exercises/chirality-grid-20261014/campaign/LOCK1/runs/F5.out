@@ -1,0 +1,5 @@
+F5_L16_r0.5_g1e-05_312_board U=0.667 SQ/V=0.2500 Smax/V=0.2500@[8, 8, 8] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.000 t=2.8s
+F5_L16_r0.5_g1e-05_312_rand U=0.650 SQ/V=0.0000 Smax/V=0.0399@[7, 8, 8] Smin/V=0.0000 cu=0.001 cs=0.000 acc=0.000 t=4.0s
+F5_L16_r0.5_g1e-05_1212_board U=0.667 SQ/V=0.2500 Smax/V=0.2500@[8, 8, 8] Smin/V=0.0000 cu=0.001 cs=0.001 acc=0.000 t=2.7s
+F5_L16_r0.5_g1e-05_1212_rand U=0.667 SQ/V=0.2500 Smax/V=0.2500@[8, 8, 8] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.000 t=3.0s
+watchdog peak RSS 125360 KB

@@ -1,0 +1,54 @@
+=== C1 control: eps = eta = kappa = 0 recovers X2-L2 exact decoupling at the odd point ===
+  Delta=0.5: zero modes 12 (psi-carrying 6), hw3 weight in zero modes 1.6e-31, max |H e_light| = 2.7e-16 (light psi states are exact zero modes, no chi/hw3 admixture); mirror hw3 pair at +-1.000
+  Delta=1.0: zero modes 12 (psi-carrying 6), hw3 weight in zero modes 2.7e-33, max |H e_light| = 2.7e-16 (light psi states are exact zero modes, no chi/hw3 admixture); mirror hw3 pair at +-2.000
+  Delta=2.0: zero modes 12 (psi-carrying 6), hw3 weight in zero modes 6.8e-34, max |H e_light| = 2.7e-16 (light psi states are exact zero modes, no chi/hw3 admixture); mirror hw3 pair at +-4.000
+
+=== S0 (no Theta): P-a on-site density eps*sum_K cos(K.x) psi^dag psi; light energies at P (a-type shifts) ===
+  model B, Delta=1, sig_th=1 (hw3 the only partnered odd channel); expectation 2*eps (A1) and -eps (E x2):
+  eps= 0.003: light (psi-weighted) energies at P = [-0.003 -0.003 -0.003 -0.003  0.006  0.006]  ratio to eps [-1. -1. -1. -1.  2.  2.]
+  eps= 0.010: light (psi-weighted) energies at P = [-0.01     -0.01     -0.01     -0.01      0.019998  0.019998]  ratio to eps [-1.     -1.     -1.     -1.      1.9998  1.9998]
+  eps= 0.030: light (psi-weighted) energies at P = [-0.03     -0.03     -0.03     -0.03      0.059959  0.059959]  ratio to eps [-1.     -1.     -1.     -1.      1.9986  1.9986]
+  eps= 0.100: light (psi-weighted) energies at P = [-0.1      -0.1      -0.1      -0.1       0.198496  0.198496]  ratio to eps [-1.    -1.    -1.    -1.     1.985  1.985]
+  eps= 0.330: light (psi-weighted) energies at P = [-0.33    -0.33    -0.33    -0.33     0.60555  0.60555]  ratio to eps [-1.    -1.    -1.    -1.     1.835  1.835]
+  eps= 1.000: light (psi-weighted) energies at P = [-2.372281 -2.372281 -1.       -1.       -1.       -1.      ]  ratio to eps [-2.3723 -2.3723 -1.     -1.     -1.     -1.    ]
+  Delta=0.5, eps=0.1: [-0.1      -0.1      -0.1      -0.1       0.193954  0.193954]
+  Delta=2.0, eps=0.1: [-0.1      -0.1      -0.1      -0.1       0.199625  0.199625]
+  model A (full static partner), eps=0.1: [-0.1      -0.1      -0.1      -0.1       0.198496  0.198496]
+  no partner (free walker + P-a), eps=0.1, odd sector at P: [-0.1 -0.1 -0.1 -0.1 -0.1 -0.1  0.3  0.3]  (expect 3eps x2, -eps x6)
+
+=== S1 (Theta imposed): P-d filter modulation kappa; light channel weights, theta, zero modes ===
+  phi(P) = diag(f) + kappa (J-1) on (hw1_x, hw3, hw1_z, hw1_y); f(hw1)=0, f(hw3)=2
+  kappa=0.003: sing.values [2.    0.006 0.003 0.003] | light w = [0.006 0.003 0.003], margin 1/w_max^4 =  7.79e+08 | theta^2(hw3 in light space): SVD 0.000007, direct-diag 0.000007, single-partner formula 0.000007; chi wt 2.8e-05; model B light zero modes 6; model A psi zero modes 0, model-A light gap 0.0030
+  kappa=0.010: sing.values [2.0002 0.0198 0.01   0.01  ] | light w = [0.0198 0.01   0.01  ], margin 1/w_max^4 =  6.44e+06 | theta^2(hw3 in light space): SVD 0.000077, direct-diag 0.000076, single-partner formula 0.000075; chi wt 5.5e-04; model B light zero modes 6; model A psi zero modes 0, model-A light gap 0.0100
+  kappa=0.030: sing.values [2.0014 0.0586 0.03   0.03  ] | light w = [0.0586 0.03   0.03  ], margin 1/w_max^4 =  8.47e+04 | theta^2(hw3 in light space): SVD 0.000716, direct-diag 0.000715, single-partner formula 0.000675; chi wt 6.2e-03; model B light zero modes 6; model A psi zero modes 0, model-A light gap 0.0300
+  kappa=0.100: sing.values [2.0165 0.1835 0.1    0.1   ] | light w = [0.1835 0.1    0.1   ], margin 1/w_max^4 =       882 | theta^2(hw3 in light space): SVD 0.009010, direct-diag 0.008455, single-partner formula 0.007444; chi wt 3.6e-01; model B light zero modes 6; model A psi zero modes 0, model-A light gap 0.1000
+  kappa=0.200: sing.values [2.0718 0.3282 0.2    0.2   ] | light w = [0.3282 0.2    0.2   ], margin 1/w_max^4 =      86.2 | theta^2(hw3 in light space): SVD 0.041169, direct-diag 0.036683, single-partner formula 0.029126; chi wt 8.4e-01; model B light zero modes 6; model A psi zero modes 0, model-A light gap 0.2000
+  kappa=0.330: sing.values [2.2107 0.4493 0.33   0.33  ] | light w = [0.4493 0.33   0.33  ], margin 1/w_max^4 =      24.5 | theta^2(hw3 in light space): SVD 0.119613, direct-diag 0.101189, single-partner formula 0.075508; chi wt 8.6e-01; model B light zero modes 6; model A psi zero modes 0, model-A light gap 0.3300
+  kappa=0.500: sing.values [2.5 0.5 0.5 0.5] | light w = [0.5 0.5 0.5], margin 1/w_max^4 =        16 | theta^2(hw3 in light space): SVD 0.250000, direct-diag 0.172671, single-partner formula 0.157895; chi wt 1.6e+00; model B light zero modes 6; model A psi zero modes 0, model-A light gap 0.5000
+  kappa=1.000: sing.values [3.7321 1.     1.     0.2679] | light w = [1.     1.     0.2679], margin 1/w_max^4 =         1 | theta^2(hw3 in light space): SVD 0.500000, direct-diag 0.446812, single-partner formula 0.428571; chi wt 2.2e+00; model B light zero modes 7; model A psi zero modes 0, model-A light gap 0.2679
+  columns archived: kappa, sv0..sv3, theta2_svd, theta2_directdiag, theta2_single, chi_wt, modelA_zero, modelA_lightgap, modelB_zero
+
+=== light eigen-speeds near P (c-type): 6 lightest psi-weighted branches, |q| = 1e-4, 26 lattice + 60 random directions ===
+  control                   0.000: speeds in [1.000000, 1.000000], flavour spread at fixed direction (max) 5.666e-12, direction-dependence of mean 1.116e-09; spread/e = 1119383696845943603200.0000, spread/e^2 = 1119383696845943603200.0000
+  P-c eta                   0.003: speeds in [0.997000, 1.003000], flavour spread at fixed direction (max) 6.000e-03, direction-dependence of mean 1.117e-09; spread/e = 2.0000, spread/e^2 = 666.6668
+  P-c eta                   0.010: speeds in [0.990000, 1.010000], flavour spread at fixed direction (max) 2.000e-02, direction-dependence of mean 1.116e-09; spread/e = 2.0000, spread/e^2 = 200.0000
+  P-c eta                   0.030: speeds in [0.970000, 1.030000], flavour spread at fixed direction (max) 6.000e-02, direction-dependence of mean 1.116e-09; spread/e = 2.0000, spread/e^2 = 66.6667
+  P-c eta                   0.100: speeds in [0.900000, 1.100000], flavour spread at fixed direction (max) 2.000e-01, direction-dependence of mean 1.117e-09; spread/e = 2.0000, spread/e^2 = 20.0000
+  P-c eta                   0.330: speeds in [0.670000, 1.330000], flavour spread at fixed direction (max) 6.600e-01, direction-dependence of mean 1.116e-09; spread/e = 2.0000, spread/e^2 = 6.0606
+  P-d kappa                 0.003: speeds in [0.999991, 1.000000], flavour spread at fixed direction (max) 9.054e-06, direction-dependence of mean 1.116e-09; spread/e = 0.0030, spread/e^2 = 1.0061
+  P-d kappa                 0.010: speeds in [0.999898, 1.000000], flavour spread at fixed direction (max) 1.020e-04, direction-dependence of mean 1.116e-09; spread/e = 0.0102, spread/e^2 = 1.0201
+  P-d kappa                 0.030: speeds in [0.999046, 1.000000], flavour spread at fixed direction (max) 9.545e-04, direction-dependence of mean 1.117e-09; spread/e = 0.0318, spread/e^2 = 1.0605
+  P-d kappa                 0.100: speeds in [0.987987, 1.000000], flavour spread at fixed direction (max) 1.201e-02, direction-dependence of mean 1.118e-09; spread/e = 0.1201, spread/e^2 = 1.2013
+  P-d kappa                 0.330: speeds in [0.840516, 1.000000], flavour spread at fixed direction (max) 1.595e-01, direction-dependence of mean 1.127e-09; spread/e = 0.4833, spread/e^2 = 1.4645
+  P-c eta, amps (1,.7,.4)   0.003: speeds in [0.997000, 1.003000], flavour spread at fixed direction (max) 6.000e-03, direction-dependence of mean 1.117e-09; spread/e = 2.0000, spread/e^2 = 666.6667
+  P-c eta, amps (1,.7,.4)   0.010: speeds in [0.990000, 1.010000], flavour spread at fixed direction (max) 2.000e-02, direction-dependence of mean 1.117e-09; spread/e = 2.0000, spread/e^2 = 200.0000
+  P-c eta, amps (1,.7,.4)   0.030: speeds in [0.970000, 1.030000], flavour spread at fixed direction (max) 6.000e-02, direction-dependence of mean 1.118e-09; spread/e = 2.0000, spread/e^2 = 66.6667
+  P-c eta, amps (1,.7,.4)   0.100: speeds in [0.900000, 1.100000], flavour spread at fixed direction (max) 2.000e-01, direction-dependence of mean 1.120e-09; spread/e = 2.0000, spread/e^2 = 20.0000
+  P-c eta, amps (1,.7,.4)   0.330: speeds in [0.670000, 1.330000], flavour spread at fixed direction (max) 6.600e-01, direction-dependence of mean 1.157e-09; spread/e = 2.0000, spread/e^2 = 6.0606
+
+=== gaplessness check near P (Theta-even case): min |E| of psi-weighted states on a k-shell grid around P ===
+  P-c eta=0.33    : |E| at P of the 6 light = 9.2e-16; min over shells of (lowest |E|)/r = 0.6689  (node stays at P, linear dispersion)
+  P-d kappa=0.33  : |E| at P of the 6 light = 5.4e-16; min over shells of (lowest |E|)/r = 0.8379  (node stays at P, linear dispersion)
+  both 0.33       : |E| at P of the 6 light = 4.1e-16; min over shells of (lowest |E|)/r = 0.6689  (node stays at P, linear dispersion)
+archived cls1_light_archive.npz: ['S0_density_light_energies', 'S1_kappa_table', 'speeds_table']
+watchdog peak RSS 33904 KB

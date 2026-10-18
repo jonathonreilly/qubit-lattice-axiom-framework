@@ -1,0 +1,8 @@
+hx=0.1 X0 in [-1.50,1.50] (31), R points 12: n=372 lam_min -1.2213e-01 lam_max 9.3613e+01 rel -1.305e-03 #neg 129
+hx=0.1 X0 in [-2.50,2.50] (51), R points 12: n=612 lam_min -1.5706e-01 lam_max 9.6970e+01 rel -1.620e-03 #neg 235
+hx=0.05 X0 in [-1.50,1.50] (61), R points 12: n=732 lam_min -2.4341e-01 lam_max 1.8649e+02 rel -1.305e-03 #neg 266
+hx=0.1 X0 in [-1.50,1.50] (31), R points 8: n=248 lam_min -8.9617e-02 lam_max 6.1406e+01 rel -1.459e-03 #neg 82
+hx=0.1 X0 in [-1.00,1.00] (21), R points 6: n=126 lam_min -5.3690e-02 lam_max 4.2806e+01 rel -1.254e-03 #neg 41
+hx=0.1 X0 in [-1.20,1.20] (25), R points 5: n=125 lam_min -5.5207e-02 lam_max 3.6171e+01 rel -1.526e-03 #neg 35
+hx=0.1 X0 in [-0.80,0.80] (17), R points 4: n=68 lam_min -2.9339e-02 lam_max 2.6181e+01 rel -1.121e-03 #neg 18
+watchdog peak RSS 122400 KB

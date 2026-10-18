@@ -1,0 +1,8 @@
+=== Z^3 parse lemma (exact constraint satisfaction)
+  support of G_p: 140 qubits; displacements with overlapping supports tested: 692
+  jointly satisfiable (compatible) overlapping displacements: [(-35, 0, 0), (-35, 0, 1), (-35, 1, 0), (0, -1, 0), (0, -1, 1), (0, 0, -1), (0, 0, 1), (0, 1, -1), (0, 1, 0), (35, -1, 0), (35, 0, -1), (35, 0, 0)]
+  P2 failures: [] | own-register failures: [] | quantum groups shared by compatible pairs: []
+=== register-level y-link algebra (dim 1960): su(3) err 4.4e-16 | [G_p, G_p+y] 0.0e+00 | [K+K^dag, G] 0.0e+00
+       55.68 real        78.79 user         3.77 sys
+          1287749632  maximum resident set size
+          1219004120  peak memory footprint

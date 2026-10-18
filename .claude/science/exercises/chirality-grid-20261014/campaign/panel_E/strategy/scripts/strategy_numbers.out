@@ -1,0 +1,11 @@
+[low-scale] kbar*(H_dd - H_uu) = 7.47e-07  -> vs c^d,u rows ~1e-22: x7.5e+15  (one universal Q counterterm can zero only one of u_L, d_L)
+   rows kbar*diag: u 2.7e-10 c 1.6e-07 t 1.0e-02 | d 7.5e-07 s 1.7e-05 b 1.0e-02
+   after one covariant counterterm ~Hu on Q (tuned to kbar): residual from Hd -2.6e-10; tuning needed ~ 1e-16 of kbar
+[~Planck (x0.45)] kbar*(H_dd - H_uu) = 1.51e-07  -> vs c^d,u rows ~1e-22: x1.5e+15  (one universal Q counterterm can zero only one of u_L, d_L)
+   rows kbar*diag: u 5.5e-11 c 3.3e-08 t 2.0e-03 | d 1.5e-07 s 3.5e-06 b 2.0e-03
+   after one covariant counterterm ~Hu on Q (tuned to kbar): residual from Hd -5.3e-11; tuning needed ~ 7e-16 of kbar
+2+1D scan L=8,10,12 x 6 W x 2000 sweeps, beta=4, as-is Python engine: 18,045 core-h  ~ $180-$902
+2+1D scan L=8,10,12 x 6 W x 2000 sweeps, beta=4, with singlet-sector factorisation (~8x): 2,256 core-h  ~ $23-$113
+  beta=L variant ~x3 on L=12 (REPORT:206): add ~25,344 core-h before factorisation
+QMC-1b per 200 sweeps (dtau 0.1): L4 0.14 h, L6 1.65 h
+QMC-1b per 200 sweeps (dtau 0.05): L4 0.29 h, L6 3.30 h

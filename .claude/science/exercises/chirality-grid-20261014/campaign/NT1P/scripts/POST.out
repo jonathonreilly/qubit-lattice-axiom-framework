@@ -1,0 +1,4 @@
+pool_NT1P_PA_wsearchO_Lx4_Lt12_seed1512_NT1P_Zchi.npy: k=8 lam_min chi -5.36790e-04 mod -5.36432e-04 diff -3.58e-07; first-order phase shift <v|Hc-Zm|v> +1.14e-08; ||Hc - Zm||_2 4.15e-03; |<v_chi|v_mod>| 0.999857; lowest-mode weights (|v|^2 > 0.05): 1:0.12 3:0.43 6:0.24 7:0.13
+pool_NT1P_PA_wsearchO_Lx4_Lt8_seed1504_NT1P_Zchi.npy: k=12 lam_min chi -2.44847e-03 mod -2.44299e-03 diff -5.48e-06; first-order phase shift <v|Hc-Zm|v> +1.18e-08; ||Hc - Zm||_2 3.84e-03; |<v_chi|v_mod>| 0.999384; lowest-mode weights (|v|^2 > 0.05): 0:0.06 1:0.18 2:0.06 4:0.10 5:0.14 7:0.07 8:0.05 9:0.14 10:0.12
+pool_NT1P_PB_random_Lx4_Lt8_seed2504_NT1P_Zchi.npy: k=10 lam_min chi -9.57871e-04 mod -9.46751e-04 diff -1.11e-05; first-order phase shift <v|Hc-Zm|v> -4.49e-08; ||Hc - Zm||_2 1.03e-02; |<v_chi|v_mod>| 0.996797; lowest-mode weights (|v|^2 > 0.05): 0:0.12 1:0.10 3:0.14 4:0.21 7:0.17 8:0.12 9:0.10
+watchdog peak RSS 12768 KB

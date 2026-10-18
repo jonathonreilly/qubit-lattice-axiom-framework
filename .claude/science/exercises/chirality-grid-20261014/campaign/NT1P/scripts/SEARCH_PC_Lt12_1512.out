@@ -1,0 +1,10 @@
+# NT-1' P-A wsearch op=O weight=hard Lx=4 Lt=12 K=8 seed=1512 delta=0.6 margin 0.55 n=3
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+start k=8: lam_min -1.152e-04 min/max -1.442e-05 min|H| 0.513 [6s]
+saved pool_NT1P_PA_wsearchO_Lx4_Lt12_seed1512.npz; max|W1| 5.6e-17; max bulk plaquette 0.5495 [6s]
+watchdog peak RSS 235632 KB

@@ -1,0 +1,20 @@
+Q     X =    1  X mod 4 = 1
+u^c   X =    1  X mod 4 = 1
+d^c   X =   -3  X mod 4 = 1
+L     X =   -3  X mod 4 = 1
+e^c   X =    1  X mod 4 = 1
+nu^c  X =    5  X mod 4 = 1
+H     X =   -2  X mod 4 = 2
+Hc    X =    2  X mod 4 = 2
+Weyl count: 16
+sum X^3 (U(1)_X cubic): 0
+sum X (grav-mixed): 0
+uniform-F cubic anomaly (all charge 1): 16
+Yukawa Q u^c H                   X =    0  mod 4 = 0  -> allowed
+Yukawa Q d^c Hc                  X =    0  mod 4 = 0  -> allowed
+Yukawa L nu^c H                  X =    0  mod 4 = 0  -> allowed
+Majorana nu^c nu^c               X =   10  mod 4 = 2  -> FORBIDDEN by Z4^X
+Weinberg L L H H                 X =  -10  mod 4 = 2  -> FORBIDDEN by Z4^X
+proton decay Q Q Q L             X =    0  mod 4 = 0  -> allowed
+proton decay u^c u^c d^c e^c     X =    0  mod 4 = 0  -> allowed
+n-nbar (u^c d^c d^c)^2           X =  -10  mod 4 = 2  -> FORBIDDEN by Z4^X

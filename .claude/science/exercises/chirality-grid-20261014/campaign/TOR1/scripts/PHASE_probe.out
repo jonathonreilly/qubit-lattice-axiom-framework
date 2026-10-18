@@ -1,0 +1,4 @@
+entry (0,0): phase spread over nodes 1.662e-02 rad (weighted rms 1.73e-03); S-phase range [-1.14e-26,+2.16e-25]; kbb-phase range [-1.55e-02,+1.55e-02]; w_x range [-0.000,+0.000], w_t range [-0.637,+6.502]; |sum w rho|/sum w|rho| = 0.9999985955; arg sum w rho -3.17e-14 [69s]
+entry (0,3): phase spread over nodes 1.064e-02 rad (weighted rms 1.03e-03); S-phase range [-8.12e-27,+1.55e-25]; kbb-phase range [-7.38e-03,+7.38e-03]; w_x range [-0.000,+0.000], w_t range [-0.563,+6.575]; |sum w rho|/sum w|rho| = 0.9999995206; arg sum w rho -3.17e-14 [133s]
+entry (2,5): phase spread over nodes 6.623e-03 rad (weighted rms 7.87e-04); S-phase range [-7.17e-29,+1.09e-22]; kbb-phase range [-6.45e-03,+6.45e-03]; w_x range [-0.000,+0.000], w_t range [-0.073,+7.066]; |sum w rho|/sum w|rho| = 0.9999996905; arg sum w rho -3.12e-14 [197s]
+watchdog peak RSS 299056 KB

@@ -1,0 +1,11 @@
+# K2b-T2 pool g1p_262_s2: Lx=2 Lt=12 torus=False k=8 quad lo=(16, None) hi=(32, None)
+min|eig H| over all points (Neuberger H_W and Shamir H_T): 0.387  [21s]
+W     : lam_min +9.6988e-06 min/max +1.4061e-06 q 1.8e-14 E 2.4e-13 certified-negative False PSD-within-error True | lowest eigs [9.699e-06 3.954e-05 1.499e-03]
+O     : lam_min -3.5466e-06 min/max -5.1388e-07 q 7.0e-15 E 1.6e-13 certified-negative True PSD-within-error False | lowest eigs [-3.547e-06  3.230e-05  1.310e-03]
+SH    : lam_min +3.9603e-06 min/max +5.7404e-07 q 4.4e-15 E 1.4e-13 certified-negative False PSD-within-error True | lowest eigs [3.960e-06 4.478e-05 1.551e-03]
+D5_4  : lam_min +2.3887e-05 min/max +3.4688e-06 q 6.4e-14 E 6.1e-13 certified-negative False PSD-within-error True | lowest eigs [2.389e-05 9.696e-05 2.466e-03]
+DWF_4 : lam_min +7.6035e-06 min/max +1.1023e-06 q 4.5e-14 E 4.6e-13 certified-negative False PSD-within-error True | lowest eigs [7.603e-06 5.757e-05 1.897e-03]
+D5_8  : lam_min +3.5575e-05 min/max +5.1758e-06 q 1.1e-13 E 9.7e-13 certified-negative False PSD-within-error True | lowest eigs [3.557e-05 1.415e-04 2.517e-03]
+DWF_8 : lam_min +4.1232e-06 min/max +5.9767e-07 q 9.5e-14 E 8.6e-13 certified-negative False PSD-within-error True | lowest eigs [4.123e-06 4.631e-05 1.593e-03]
+done [21s]
+           153911296  maximum resident set size

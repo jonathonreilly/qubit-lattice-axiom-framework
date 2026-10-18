@@ -1,0 +1,15 @@
+S1 A1g in P: 1.0  A1g in End(P): 2.0  A1g in End(P)xSym2(R3): 5.0  A1g in End(P)xSym2_traceless: 3.0  A1g in Sym2: 1.0
+S2 |P_E(circulant)|: 0.0
+S2 |M - P_E M - circulant fit|: 2.3714374201337736e-16
+S2 |[Yu,Yd]| circulants: 2.2887833992611187e-16  CKM |V| rows (perm-like): [[0.0, 0.0, 1.0], [1.0, 0.0, 0.0], [0.0, 1.0, 0.0]]
+S3 circulant: eigen [ 1.9003575   3.72570769 12.75873693]  first-order shifts [ 4.57619267e-15 -2.22044605e-15 -1.33226763e-15]
+S3 with E component: eigen [ 1.63412105  4.01476862 13.56502317]  first-order shifts [ 0.80485481 -2.65510417  2.25235914]
+S4 Z3: 16*Sum q mod3 = 0  16*Sum q^3 mod 9 = 0  Spin(10)^2-Z3: T(16)*Sum q mod 3 = 0 ; transposition: odd 16-plets =1 -> nu =16 mod 16 = 0
+S5 c=2: corners on Gamma label 8 ; folded Gamma index per component 0
+S5 c=3: corners on Gamma label 1 ; folded Gamma index per component 3
+S5 c=4: corners on Gamma label 8 ; folded Gamma index per component 0
+S5 c=5: corners on Gamma label 1 ; folded Gamma index per component 3
+S5 c=6: corners on Gamma label 8 ; folded Gamma index per component 0
+S5 c=7: corners on Gamma label 1 ; folded Gamma index per component 3
+S5 c=8: corners on Gamma label 8 ; folded Gamma index per component 0
+watchdog peak RSS 22976 KB

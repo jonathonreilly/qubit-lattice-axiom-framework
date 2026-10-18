@@ -1,0 +1,2 @@
+RESULT O12 mode=grid n=16 (256 pts) delta=0.6: lam_min -5.9890e-04 lam_max 1.9953e+02 rel -3.002e-06 | simpson lam_min -5.9890e-04 | E 1.1e-09 | neg-converged True | max|phi| 0.550 | 0.4s RSS 34MB
+watchdog peak RSS 34864 KB

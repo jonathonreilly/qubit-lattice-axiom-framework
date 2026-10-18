@@ -1,0 +1,5 @@
+L=18 dim= 262144 | su(3) rel err 1.1e-16 | Casimir-4/3*Pi err 2.2e-16 | max|[G_0^a,G_y^b]| over y,a,b = 0.0e+00 | cov err 0.0e+00
+      active states at x=0: 6144 (=3*2^(L-7)) | overlapping-cell states: 0 | max simultaneous cells 2 (P-CAP bound 11.36)
+      distinct gap patterns with >=2 cells: 3; non-uniform (floating) examples: [(7, 11), (8, 10)]
+        2.42 real         2.06 user         0.33 sys
+           257540096  maximum resident set size

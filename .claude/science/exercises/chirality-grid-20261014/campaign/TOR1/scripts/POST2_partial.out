@@ -1,0 +1,6 @@
+mod : A lam_min -6.46142e-07 | B lam_min -6.52873e-07 lam_2 +9.430e-06 max 5.9339 min/max -1.100e-07 | q_poly 1.34e-07 q_plane nan h 0.0e+00 | E 8.03e-07 | estimator complete False | conv-negative False | PSD-within-error True | max|Im ln diag A| 0.0e+00
+O   : A lam_min -2.23234e-07 | B lam_min -2.23234e-07 lam_2 +9.903e-07 max 5.9834 min/max -3.731e-08 | q_poly 5.02e-13 q_plane nan h 0.0e+00 | E 3.11e-12 | estimator complete False | conv-negative False | PSD-within-error False | max|Im ln diag A| 2.5e-18
+vec0: A lam_min -2.21886e-07 | B lam_min -2.21886e-07 lam_2 +9.943e-07 max 5.9833 min/max -3.708e-08 | q_poly 5.19e-13 q_plane nan h 0.0e+00 | E 3.22e-12 | estimator complete False | conv-negative False | PSD-within-error False | max|Im ln diag A| 1.6e-18
+W   : A lam_min -3.65434e-06 | B lam_min -3.65434e-06 lam_2 +4.543e-06 max 5.9859 min/max -6.105e-07 | q_poly 3.55e-15 q_plane nan h 0.0e+00 | E 1.21e-13 | estimator complete False | conv-negative False | PSD-within-error False | max|Im ln diag A| 1.8e-17
+PG  : A lam_min -1.13109e-15 | B lam_min -1.13109e-15 lam_2 +0.000e+00 max 6.0000 min/max -1.885e-16 | q_poly 0.00e+00 q_plane nan h 0.0e+00 | E 1.00e-13 | estimator complete False | conv-negative False | PSD-within-error True | max|Im ln diag A| 0.0e+00
+watchdog peak RSS 16272 KB

@@ -1,0 +1,6 @@
+g=0.0: exact bonds/rec=0.00000 MC=0.00000 | exact ms2=0.001295 MC=0.001285+-0.000009
+g=0.3: exact bonds/rec=0.04780 MC=0.04969 | exact ms2=0.001158 MC=0.001144+-0.000017
+g=3.0: exact bonds/rec=0.32635 MC=0.32588 | exact ms2=0.000618 MC=0.000632+-0.000008
+contents: E M = 1.0  exact P(bond) = 0.05
+MC P(bond) = 0.054125
+watchdog peak RSS 139200 KB

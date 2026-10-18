@@ -1,0 +1,71 @@
+=== Lt=8 W0=0.3  Lx = [4, 6, 8, 10, 12, 14, 16]
+11112 tau_kQ(s*) [decisive]   : 2.764e-04 5.260e-05 1.000e-05 1.974e-06 4.035e-07 8.490e-08 1.825e-08
+      local rates             : +0.830 +0.830 +0.811 +0.794 +0.779 +0.769
+      fits L>=8               : exp nu=0.788 resid 2.86e-03 | power p=9.06 resid 2.07e-01 | class E2-EXP
+11112 J_Q central row         : 5.473e-05 1.072e-05 2.089e-06 4.207e-07 8.761e-08 1.874e-08 4.092e-09
+      local rates             : +0.815 +0.818 +0.801 +0.785 +0.771 +0.761
+      fits L>=8               : exp nu=0.779 resid 2.55e-03 | power p=8.96 resid 2.04e-01 | class E2-EXP
+11112 kQ edge t-row           : 4.937e-05 8.640e-06 1.703e-06 4.066e-07 1.228e-07 4.707e-08 2.187e-08
+      local rates             : +0.871 +0.812 +0.716 +0.599 +0.480 +0.383
+      fits L>=8               : exp nu=0.543 resid 1.76e-01 | power p=6.32 resid 5.66e-03 | class E2-ALG
+11112 Abar edge row           : 4.937e-05 8.640e-06 1.703e-06 4.066e-07 1.228e-07 4.707e-08 2.187e-08
+      local rates             : +0.871 +0.812 +0.716 +0.599 +0.480 +0.383
+      fits L>=8               : exp nu=0.543 resid 1.76e-01 | power p=6.32 resid 5.66e-03 | class E2-ALG
+11112 |hbar| edge row         : 6.560e-04 1.145e-04 2.257e-05 5.389e-06 1.629e-06 6.244e-07 2.902e-07
+      local rates             : +0.873 +0.812 +0.716 +0.598 +0.479 +0.383
+      fits L>=8               : exp nu=0.543 resid 1.76e-01 | power p=6.32 resid 5.66e-03 | class E2-ALG
+11112 |mbar| central row      : 2.911e-03 8.526e-04 2.212e-04 5.568e-05 1.391e-05 3.472e-06 8.664e-07
+      local rates             : +0.614 +0.675 +0.690 +0.693 +0.694 +0.694
+      fits L>=8               : exp nu=0.693 resid 3.02e-05 | power p=7.96 resid 2.04e-01 | class E2-EXP
+11112 |mbar| edge row         : 2.624e-03 6.871e-04 1.806e-04 5.389e-05 1.954e-05 8.742e-06 4.643e-06
+      local rates             : +0.670 +0.668 +0.605 +0.507 +0.402 +0.316
+      fits L>=8               : exp nu=0.457 resid 1.33e-01 | power p=5.32 resid 5.66e-03 | class E2-ALG
+11112 Lx*tau_kQ(s*)           : 1.106e-03 3.156e-04 8.001e-05 1.974e-05 4.842e-06 1.189e-06 2.920e-07
+      local rates             : +0.627 +0.686 +0.700 +0.703 +0.702 +0.702
+      fits L>=8               : exp nu=0.702 resid 8.83e-06 | power p=8.06 resid 2.07e-01 | class E2-EXP
+L1    tau_kQ(s*) [decisive]   : 8.748e-03 6.425e-03 4.935e-03 3.971e-03 3.314e-03 2.842e-03 2.487e-03
+L1    J_Q central row         : 5.239e-03 3.853e-03 2.961e-03 2.383e-03 1.988e-03 1.705e-03 1.492e-03
+L1    kQ edge t-row           : 5.322e-03 3.875e-03 2.964e-03 2.382e-03 1.988e-03 1.705e-03 1.492e-03
+L1    Abar edge row           : 5.322e-03 3.875e-03 2.964e-03 2.382e-03 1.988e-03 1.705e-03 1.492e-03
+L1    |hbar| edge row         : 3.551e-02 2.584e-02 1.976e-02 1.588e-02 1.325e-02 1.136e-02 9.945e-03
+L1    |mbar| central row      : 1.398e-01 1.542e-01 1.579e-01 1.588e-01 1.591e-01 1.591e-01 1.592e-01
+L1    |mbar| edge row         : 1.420e-01 1.550e-01 1.581e-01 1.588e-01 1.590e-01 1.591e-01 1.591e-01
+L1    Lx*tau_kQ(s*)           : 3.499e-02 3.855e-02 3.948e-02 3.971e-02 3.977e-02 3.978e-02 3.979e-02
+      local rates             : -0.048 -0.012 -0.003 -0.001 -0.000 -0.000
+      fits L>=8               : exp nu=-0.001 resid 1.33e-05 | power p=-0.01 resid 9.54e-06 | class E2-ALG
+=== Lt=8 W0=0.6  Lx = [4, 6, 8, 10, 12, 14, 16]
+11112 tau_kQ(s*) [decisive]   : 1.070e-03 1.972e-04 3.719e-05 7.327e-06 1.498e-06 3.152e-07 6.776e-08
+      local rates             : +0.846 +0.834 +0.812 +0.794 +0.779 +0.769
+      fits L>=8               : exp nu=0.788 resid 3.00e-03 | power p=9.06 resid 2.06e-01 | class E2-EXP
+11112 J_Q central row         : 4.301e-04 8.261e-05 1.600e-05 3.218e-06 6.700e-07 1.433e-07 3.129e-08
+      local rates             : +0.825 +0.821 +0.802 +0.785 +0.771 +0.761
+      fits L>=8               : exp nu=0.779 resid 2.64e-03 | power p=8.96 resid 2.04e-01 | class E2-EXP
+11112 kQ edge t-row           : 3.864e-04 6.669e-05 1.312e-05 3.138e-06 9.505e-07 3.652e-07 1.699e-07
+      local rates             : +0.878 +0.813 +0.715 +0.597 +0.478 +0.383
+      fits L>=8               : exp nu=0.542 resid 1.76e-01 | power p=6.31 resid 5.68e-03 | class E2-ALG
+11112 Abar edge row           : 3.864e-04 6.669e-05 1.312e-05 3.138e-06 9.505e-07 3.652e-07 1.699e-07
+      local rates             : +0.878 +0.813 +0.715 +0.597 +0.478 +0.383
+      fits L>=8               : exp nu=0.542 resid 1.76e-01 | power p=6.31 resid 5.68e-03 | class E2-ALG
+11112 |hbar| edge row         : 2.537e-03 4.339e-04 8.528e-05 2.042e-05 6.195e-06 2.384e-06 1.110e-06
+      local rates             : +0.883 +0.813 +0.715 +0.596 +0.478 +0.382
+      fits L>=8               : exp nu=0.542 resid 1.76e-01 | power p=6.30 resid 5.69e-03 | class E2-ALG
+11112 |mbar| central row      : 1.133e-02 3.220e-03 8.287e-04 2.081e-04 5.199e-05 1.297e-05 3.237e-06
+      local rates             : +0.629 +0.679 +0.691 +0.694 +0.694 +0.694
+      fits L>=8               : exp nu=0.693 resid 1.77e-05 | power p=7.96 resid 2.03e-01 | class E2-EXP
+11112 |mbar| edge row         : 1.015e-02 2.603e-03 6.822e-04 2.042e-04 7.434e-05 3.338e-05 1.776e-05
+      local rates             : +0.680 +0.670 +0.603 +0.505 +0.400 +0.315
+      fits L>=8               : exp nu=0.455 resid 1.32e-01 | power p=5.30 resid 5.69e-03 | class E2-ALG
+11112 Lx*tau_kQ(s*)           : 4.279e-03 1.183e-03 2.975e-04 7.327e-05 1.797e-05 4.412e-06 1.084e-06
+      local rates             : +0.643 +0.690 +0.701 +0.703 +0.702 +0.702
+      fits L>=8               : exp nu=0.702 resid 3.36e-06 | power p=8.06 resid 2.06e-01 | class E2-EXP
+L1    tau_kQ(s*) [decisive]   : 8.817e-03 6.439e-03 4.937e-03 3.972e-03 3.314e-03 2.842e-03 2.487e-03
+L1    J_Q central row         : 1.051e-02 7.712e-03 5.922e-03 4.765e-03 3.977e-03 3.410e-03 2.984e-03
+L1    kQ edge t-row           : 1.067e-02 7.755e-03 5.929e-03 4.765e-03 3.976e-03 3.409e-03 2.984e-03
+L1    Abar edge row           : 1.067e-02 7.755e-03 5.929e-03 4.765e-03 3.976e-03 3.409e-03 2.984e-03
+L1    |hbar| edge row         : 3.567e-02 2.587e-02 1.977e-02 1.588e-02 1.325e-02 1.136e-02 9.945e-03
+L1    |mbar| central row      : 1.406e-01 1.544e-01 1.580e-01 1.589e-01 1.591e-01 1.591e-01 1.592e-01
+L1    |mbar| edge row         : 1.427e-01 1.552e-01 1.581e-01 1.588e-01 1.590e-01 1.591e-01 1.591e-01
+L1    Lx*tau_kQ(s*)           : 3.527e-02 3.863e-02 3.950e-02 3.972e-02 3.977e-02 3.978e-02 3.979e-02
+      local rates             : -0.046 -0.011 -0.003 -0.001 -0.000 -0.000
+      fits L>=8               : exp nu=-0.001 resid 1.16e-05 | power p=-0.01 resid 8.34e-06 | class E2-ALG
+watchdog peak RSS 14688 KB

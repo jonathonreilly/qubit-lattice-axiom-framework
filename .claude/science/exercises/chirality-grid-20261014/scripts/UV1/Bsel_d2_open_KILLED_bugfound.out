@@ -1,0 +1,16 @@
+# UV-1 Stage B open Lt=12 mode=sel ['12,16,17,19,9,10'] k=6; depth-2 = slices 1..5 of each witness placed on 2..6
+# W-match at depth-2 slice: max|W2| 0.0e+00; max bulk |plaq| depth1 0.5398
+# nodes level lo (n=2): 8064 per entry; sum base w 1.368360
+# nodes level hi (n=3): 61236 per entry; sum base w 1.368576
+# nodes level third (n=4): 258048 per entry; sum base w 1.368576
+# hi-level determinant evaluations per op: 1.29e+06 (cap 4e6)
+# V-B0 pair (0, 1) node 5409: |D_nodes - D_direct| 6.0e-02; buffer plaq (+) [np.float64(-0.0), np.float64(0.0)], (-) [np.float64(0.0), np.float64(-0.0)] [mirror gap (-1|0) plaquette = -q-, reflection orientation]; crossing 1.7e-16, 4.4e-16
+# V-B0 pair (1, 0) node 6491: |D_nodes - D_direct| 6.0e-02; buffer plaq (+) [np.float64(-0.0), np.float64(-0.0)], (-) [np.float64(-0.0), np.float64(0.0)] [mirror gap (-1|0) plaquette = -q-, reflection orientation]; crossing -1.1e-16, -4.4e-16
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+[depth-1 reference O done, min|H| 0.847, 2s]
+[depth-1 reference W done, min|H| inf, 2s]

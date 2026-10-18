@@ -1,0 +1,13 @@
+# NT-1' locality Lx=8 Lt=12 model=11112 seed=301 nconf=1 eps=0.0001 N=192 nl=184
+Traceback (most recent call last):
+  File "/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/NT1P/scripts/nt1p_locality.py", line 24, in <module>
+    base = MS.ray(A, 8); chi = np.zeros((3, S.nl, S.nl))        # [total, loc, Q]
+           ^^^^^^^^^^^^
+  File "/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/NT1P/scripts/nt1p_lib.py", line 247, in ray
+    if need_k: Rtot += self.coef[e] * e * dq_dA(S, th, w, Vv)
+                                          ^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/NT1P/scripts/nt1p_lib.py", line 206, in dq_dA
+    assert np.all((w > 0).sum(1) == n)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+watchdog peak RSS 216000 KB

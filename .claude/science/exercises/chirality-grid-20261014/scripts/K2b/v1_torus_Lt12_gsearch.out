@@ -1,0 +1,22 @@
+# K2b-T1 gsearch op=O torus Lx=2 Lt=12 K=20 seed=4212 start=random delta=0.6 quad lo=(4, 4) hi=(6, 6)
+start k=8: lam_min +7.396e-02 min/max +2.004e-02 min|H_W| 0.738 [5s]
+step 1: k=9 added pert0.1  objective +8.562e-01 lam_min +4.186e-02 min/max +9.584e-03 min|H_W| 0.738 [18s]
+step 2: k=10 added pert0.1  objective +8.141e-01 lam_min +5.453e-03 min/max +1.041e-03 min|H_W| 0.738 [30s]
+step 3: k=11 added pert0.1  objective +6.777e-01 lam_min +5.453e-03 min/max +8.888e-04 min|H_W| 0.738 [47s]
+step 4: k=12 added pert0.05 objective +6.613e-01 lam_min +4.926e-03 min/max +7.156e-04 min|H_W| 0.738 [63s]
+step 5: k=13 added rand     objective +6.272e-01 lam_min +4.819e-03 min/max +6.705e-04 min|H_W| 0.738 [82s]
+step 6: k=14 added pert0.02 objective +5.403e-01 lam_min +9.209e-04 min/max +1.167e-04 min|H_W| 0.738 [100s]
+step 7: k=15 added hol      objective +3.979e-01 lam_min +9.188e-04 min/max +1.081e-04 min|H_W| 0.738 [121s]
+step 8: k=16 added pert0.1  objective +3.512e-01 lam_min +8.062e-04 min/max +8.691e-05 min|H_W| 0.738 [145s]
+step 9: k=17 added pert0.05 objective +3.284e-01 lam_min +7.992e-04 min/max +8.262e-05 min|H_W| 0.738 [168s]
+step 10: k=18 added pert0.1  objective +3.074e-01 lam_min +7.726e-04 min/max +7.735e-05 min|H_W| 0.738 [194s]
+step 11: k=19 added pert0.05 objective +2.654e-01 lam_min +7.615e-04 min/max +7.136e-05 min|H_W| 0.738 [224s]
+step 12: k=20 added rand     objective +2.132e-01 lam_min +7.473e-04 min/max +6.728e-05 min|H_W| 0.738 [254s]
+FINAL k=20: OVERLAP lam_min +7.4726e-04 min/max +6.7282e-05 q 1.8e-10 E 3.6e-09 | WILSON lam_min +7.3342e-04 min/max +6.4802e-05 q 6.0e-10 E 1.2e-08 | min|H_W| 0.737 | clean True | certified-negative False | Wilson PSD True | K2-line(min/max<-1e-6) False
+   overlap eigenvalues: [0.001 0.001 0.002 0.004 0.005 0.007] ... max 11.106
+   Wilson  eigenvalues: [0.001 0.001 0.002 0.004 0.005 0.008] ... max 11.318
+   diagnostic gen-ratio min (overlap vs Wilson, Wilson range > 1e-8): +2.132e-01
+   most-negative-direction weights |v_a|: [0.14 0.07 0.02 0.01 0.61 0.02 0.   0.   0.08 0.01 0.03 0.02 0.02 0.74
+ 0.1  0.16 0.01 0.01 0.06 0.02]
+done [396s]
+           139116544  maximum resident set size

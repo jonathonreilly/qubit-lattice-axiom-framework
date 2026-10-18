@@ -1,0 +1,35 @@
+=== (S) staggered field, 3D Hamiltonian, K2a conventions; zero modes at K=0 (8-dim cell) ===
+chi Hermitian: True  chi^2=1: True  eigen: [-1. -1. -1. -1.  1.  1.  1.  1.]
+T1^2 = +1; [T1,chi]=0.0e+00; max|[T1,Gamma]|=0.0e+00; [T1,H(k)] at random k = 4.2e-17
+T2^2 = +1; [T2,chi]=0.0e+00; max|[T2,Gamma]|=0.0e+00; [T2,H(k)] at random k = 0.0e+00
+T3^2 = +1; [T3,chi]=0.0e+00; max|[T3,Gamma]|=0.0e+00; [T3,H(k)] at random k = 0.0e+00
+{T1,T2} = 0.0e+00 ; [T1,T2] = 2.0e+00
+{T1,T3} = 0.0e+00 ; [T1,T3] = 2.0e+00
+{T2,T3} = 0.0e+00 ; [T2,T3] = 2.0e+00
+
+Translation elements g = T^v (v in {0,1}^3, ordered product T1^v1 T2^v2 T3^v3):
+  g^2 | needs Z4^F? | nu_whole per field | nu_(chi=-1 sector) | nu_(chi=+1 sector) | Weyl dims (chi, eig)
+  v=(0, 0, 0): g^2=+1 | yes (uses i^F) | 0 | 2 | -2 | {(1, 1j): 2, (1, (-0-1j)): 0, (-1, 1j): 2, (-1, (-0-1j)): 0}
+  v=(0, 0, 1): g^2=+1 | yes (uses i^F) | 0 | 0 | 0 | {(1, 1j): 1, (1, (-0-1j)): 1, (-1, 1j): 1, (-1, (-0-1j)): 1}
+  v=(0, 1, 0): g^2=+1 | yes (uses i^F) | 0 | 0 | 0 | {(1, 1j): 1, (1, (-0-1j)): 1, (-1, 1j): 1, (-1, (-0-1j)): 1}
+  v=(0, 1, 1): g^2=-1 | no ((-1)^F suffices) | 0 | 0 | 0 | {(1, 1j): 1, (1, (-0-1j)): 1, (-1, 1j): 1, (-1, (-0-1j)): 1}
+  v=(1, 0, 0): g^2=+1 | yes (uses i^F) | 0 | 0 | 0 | {(1, 1j): 1, (1, (-0-1j)): 1, (-1, 1j): 1, (-1, (-0-1j)): 1}
+  v=(1, 0, 1): g^2=-1 | no ((-1)^F suffices) | 0 | 0 | 0 | {(1, 1j): 1, (1, (-0-1j)): 1, (-1, 1j): 1, (-1, (-0-1j)): 1}
+  v=(1, 1, 0): g^2=-1 | no ((-1)^F suffices) | 0 | 0 | 0 | {(1, 1j): 1, (1, (-0-1j)): 1, (-1, 1j): 1, (-1, (-0-1j)): 1}
+  v=(1, 1, 1): g^2=-1 | no ((-1)^F suffices) | -4 | -2 | -2 | {(1, 1j): 2, (1, (-0-1j)): 0, (-1, 1j): 0, (-1, (-0-1j)): 2}
+
+=== (W) walker H = sum_a sigma_a sin p_a; nodes n in {0,1}^3 (p = pi n) ===
+chirality (-1)^|n| (+1 = R): {(0, 0, 0): 1, (0, 0, 1): -1, (0, 1, 0): -1, (0, 1, 1): 1, (1, 0, 0): -1, (1, 0, 1): 1, (1, 1, 0): 1, (1, 1, 1): -1}
+  whole (8 nodes): nu_v per internal component = {(0, 0, 0): 0, (0, 0, 1): 0, (0, 1, 0): 0, (0, 1, 1): 0, (1, 0, 0): 0, (1, 0, 1): 0, (1, 1, 0): 0, (1, 1, 1): -8}
+  mirror S={hw0,hw2,hw3} (hw1=3 light gens): nu_v per internal component = {(0, 0, 0): -3, (0, 0, 1): -1, (0, 1, 0): -1, (0, 1, 1): 1, (1, 0, 0): -1, (1, 0, 1): 1, (1, 1, 0): 1, (1, 1, 1): -5}
+  light hw1: nu_v per internal component = {(0, 0, 0): 3, (0, 0, 1): 1, (0, 1, 0): 1, (0, 1, 1): -1, (1, 0, 0): 1, (1, 0, 1): -1, (1, 1, 0): -1, (1, 1, 1): -3}
+  mirror chirality split {hw0,hw2}: nu_v per internal component = {(0, 0, 0): -4, (0, 0, 1): 0, (0, 1, 0): 0, (0, 1, 1): 0, (1, 0, 0): 0, (1, 0, 1): 0, (1, 1, 0): 0, (1, 1, 1): -4}
+
+=== nu mod 16 by internal multiplicity d (necessary conditions for symmetric gapping) ===
+(S) whole carrier, per field: {1: 'OBSTRUCTED', 2: 'OBSTRUCTED', 4: 'ok', 8: 'ok', 15: 'OBSTRUCTED', 16: 'ok'}  | control |nu_Z|=4 per field: True
+(S) K2a mirror = chi=+1 sector: {1: 'OBSTRUCTED', 2: 'OBSTRUCTED', 4: 'OBSTRUCTED', 8: 'ok', 15: 'OBSTRUCTED', 16: 'ok'}
+(S) K2a mirror = chi=-1 sector: {1: 'OBSTRUCTED', 2: 'OBSTRUCTED', 4: 'OBSTRUCTED', 8: 'ok', 15: 'OBSTRUCTED', 16: 'ok'}
+(W) whole (8 nodes): {1: 'OBSTRUCTED', 2: 'ok', 4: 'ok', 8: 'ok', 15: 'OBSTRUCTED', 16: 'ok'}
+(W) mirror S={hw0,hw2,hw3} (hw1=3 light gens): {1: 'OBSTRUCTED', 2: 'OBSTRUCTED', 4: 'OBSTRUCTED', 8: 'OBSTRUCTED', 15: 'OBSTRUCTED', 16: 'ok'}
+(W) light hw1: {1: 'OBSTRUCTED', 2: 'OBSTRUCTED', 4: 'OBSTRUCTED', 8: 'OBSTRUCTED', 15: 'OBSTRUCTED', 16: 'ok'}
+(W) mirror chirality split {hw0,hw2}: {1: 'OBSTRUCTED', 2: 'OBSTRUCTED', 4: 'ok', 8: 'ok', 15: 'OBSTRUCTED', 16: 'ok'}

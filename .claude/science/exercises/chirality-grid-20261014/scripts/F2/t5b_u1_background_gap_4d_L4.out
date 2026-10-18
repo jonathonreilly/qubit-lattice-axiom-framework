@@ -1,0 +1,3 @@
+g=0.0: min=1.0000  lam_max~7.000  kappa_min=0.1429
+g=0.5: min=0.8018  lam_max~6.957  kappa_min=0.1153
+g=0.65: min=0.7393  lam_max~6.928  kappa_min=0.1067

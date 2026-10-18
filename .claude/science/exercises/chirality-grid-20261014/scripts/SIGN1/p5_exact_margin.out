@@ -1,0 +1,40 @@
+singular values of the sampled constraint map: largest 2.415e-01, 11th 4.573e-02, 12th 2.1e-17
+theta=190: margin before 1.557e-02; |dg|_inf 3.15e-09; after: residual (sample) 2.5e-16, (fresh 20000) 7.0e-12; margin after 1.557e-02
+theta=200: margin before 1.027e-01; |dg|_inf 2.18e-08; after: residual (sample) 2.1e-16, (fresh 20000) 1.9e-12; margin after 1.027e-01
+theta=230: margin before 3.179e-01; |dg|_inf 5.69e-10; after: residual (sample) 1.7e-16, (fresh 20000) 9.5e-12; margin after 3.179e-01
+  explicit coefficients at theta=230 (lam1=-0.6428, lam2=-0.7660); channel families normalised (sum over each orthonormal family of O^2):
+     dens:sing:35:s           -0.70967   (even)
+     dens:trip:35:s           +0.61277   (odd)
+     dens:sing:35:c           -0.70967   (even)
+     dens:trip:35:c           +0.61277   (odd)
+     pair:sing:8v:Re          -33.57925   (even)
+     pair:sing:8v:Im          +12.49675   (odd)
+     pair:trip:8v:Re          +0.37386   (odd)
+     pair:trip:8v:Im          -0.40397   (even)
+     pair:sing:56v:Re         -0.31786   (even)
+     pair:sing:56v:Im         +0.40959   (odd)
+     pair:trip:56v:Re         +2.22657   (odd)
+     pair:trip:56v:Im         -2.22957   (even)
+     dens:sing:1              [[-0.77554, +0.00613], [+0.00613, -0.77554]]   (even)  eig [-0.78166, -0.76941]
+     dens:sing:28             [[+0.71638, -0.08579], [-0.08579, +0.71638]]   (odd)  eig [0.63059, 0.80217]
+     dens:trip:1              [[+0.65261, +0.04498], [+0.04498, +0.65261]]   (odd)  eig [0.60763, 0.69758]
+     dens:trip:28             [[-0.62598, +0.07224], [+0.07224, -0.62598]]   (even)  eig [-0.69822, -0.55374]
+theta=250: margin before 2.239e-01; |dg|_inf 3.71e-09; after: residual (sample) 2.2e-16, (fresh 20000) 6.7e-12; margin after 2.239e-01
+theta=270: margin before 4.488e-09; |dg|_inf 4.32e-07; after: residual (sample) 3.0e-16, (fresh 20000) 1.8e-16; margin after -4.276e-07
+  explicit coefficients at theta=270 (lam1=-0.0000, lam2=-1.0000); channel families normalised (sum over each orthonormal family of O^2):
+     dens:sing:35:s           -0.00000   (even)
+     dens:trip:35:s           -0.00000   (odd)
+     dens:sing:35:c           -0.00000   (even)
+     dens:trip:35:c           -0.00000   (odd)
+     pair:sing:8v:Re          -29.75256   (even)
+     pair:sing:8v:Im          +29.75256   (odd)
+     pair:trip:8v:Re          +0.33130   (odd)
+     pair:trip:8v:Im          -0.33130   (even)
+     pair:sing:56v:Re         -0.39643   (even)
+     pair:sing:56v:Im         +0.39643   (odd)
+     pair:trip:56v:Re         +2.97517   (odd)
+     pair:trip:56v:Im         -2.97517   (even)
+     dens:sing:1              [[-0.00000, -0.00000], [-0.00000, -0.00000]]   (even)  eig [-1e-05, -0.0]
+     dens:sing:28             [[+0.00000, +0.00000], [+0.00000, +0.00000]]   (odd)  eig [0.0, 0.0]
+     dens:trip:1              [[+0.00000, -0.00000], [-0.00000, +0.00000]]   (odd)  eig [0.0, 0.0]
+     dens:trip:28             [[-0.00000, +0.00000], [+0.00000, -0.00000]]   (even)  eig [-0.0, -0.0]

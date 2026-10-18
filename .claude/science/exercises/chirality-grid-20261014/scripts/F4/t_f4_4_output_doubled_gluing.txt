@@ -1,0 +1,6 @@
+L=2: DeltaE per gluing bond = 2.064e-01
+L=3: DeltaE per gluing bond = 2.069e-01   ratio to previous = 1.002e+00
+L=4: DeltaE per gluing bond = 2.069e-01   ratio to previous = 1.000e+00
+L=5: DeltaE per gluing bond = 2.069e-01   ratio to previous = 1.000e+00
+L=6: DeltaE per gluing bond = 2.069e-01   ratio to previous = 1.000e+00
+L=8: DeltaE per gluing bond = 2.069e-01   ratio to previous = 1.000e+00

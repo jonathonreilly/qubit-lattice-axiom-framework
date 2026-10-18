@@ -1,0 +1,22 @@
+# K2c search op=O weight=hard torus Lx=2 Lt=16 K=20 seed=1216 delta=0.6 margin(bulk<= 0.55) quad lo=(6, 4) hi=(8, 6) third=(10, 8)
+start k=8: lam_min +1.621e-01 min/max +4.363e-02 min|H| 0.757 [3s]
+step 1: k=9 added pert0.05 objective +2.942e-02 lam_min +2.942e-02 min/max +6.471e-03 min|H| 0.757 [9s]
+step 2: k=10 added pert0.02 objective +2.456e-02 lam_min +2.456e-02 min/max +4.655e-03 min|H| 0.757 [17s]
+step 3: k=11 added rand     objective +2.389e-02 lam_min +2.389e-02 min/max +4.004e-03 min|H| 0.757 [24s]
+step 4: k=12 added hol      objective +2.375e-02 lam_min +2.375e-02 min/max +3.677e-03 min|H| 0.730 [33s]
+step 5: k=13 added pert0.05 objective +2.343e-02 lam_min +2.343e-02 min/max +3.313e-03 min|H| 0.730 [42s]
+step 6: k=14 added pert0.05 objective +2.333e-02 lam_min +2.333e-02 min/max +2.961e-03 min|H| 0.730 [53s]
+step 7: k=15 added pert0.05 objective +2.068e-02 lam_min +2.068e-02 min/max +2.370e-03 min|H| 0.730 [64s]
+step 8: k=16 added pert0.02 objective +2.012e-02 lam_min +2.012e-02 min/max +2.107e-03 min|H| 0.730 [75s]
+step 9: k=17 added rand     objective +1.989e-02 lam_min +1.989e-02 min/max +1.938e-03 min|H| 0.730 [86s]
+step 10: k=18 added pert0.02 objective +1.961e-02 lam_min +1.961e-02 min/max +1.762e-03 min|H| 0.730 [99s]
+step 11: k=19 added pert0.02 objective +1.716e-02 lam_min +1.716e-02 min/max +1.430e-03 min|H| 0.730 [113s]
+step 12: k=20 added pert0.05 objective +1.704e-02 lam_min +1.704e-02 min/max +1.349e-03 min|H| 0.730 [127s]
+pool saved: pool_K2c_search_hard_O_torus_Lt16_seed1216.npz; max bulk |plaquette| over pool 0.5475 (margin limit 0.55)
+FINAL O   k=20: lam_min +1.7042e-02 min/max +1.3487e-03 q 3.4e-14 q3 1.6e-15 E 7.7e-13 | certified-negative False | PSD-within-error True | min|H| 0.730 | lowest [0.017 0.02  0.021 0.037] max 12.636 [199s]
+FINAL W   k=20: lam_min +1.6181e-02 min/max +1.2552e-03 q 1.4e-14 q3 7.1e-15 E 3.8e-13 | certified-negative False | PSD-within-error True | min|H| inf | lowest [0.016 0.02  0.021 0.035] max 12.891 [217s]
+FINAL PG  k=20: lam_min +9.3635e-03 min/max +6.8663e-04 q 8.9e-16 q3 5.6e-16 E 1.2e-13 | certified-negative False | PSD-within-error True | min|H| inf | lowest [0.009 0.016 0.019 0.022] max 13.637 [229s]
+   gen-ratio min (O vs W, W range > 1e-8): +9.353e-01
+SUMMARY torus Lt=16 search weight=hard op=O seed=1216: clean True | O lam_min +1.704e-02 (E 7.7e-13) cert-neg False | W lam_min +1.618e-02 cert-neg False | PG lam_min +9.364e-03 cert-neg False
+done [229s]
+           197918720  maximum resident set size

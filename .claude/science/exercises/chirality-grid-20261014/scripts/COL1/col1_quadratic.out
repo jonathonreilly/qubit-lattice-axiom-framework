@@ -1,0 +1,16 @@
+=== class Q, ring N = 12 single-particle space
+(A) windows {x,x+1,x+2}: su(3) relations err 1.1e-16
+    max |[t_0^a, t_1^b]| = 0.5000
+    max |[t_0^a, t_2^b]| = 0.2887
+    max |[t_0^a, t_3^b]| = 0.0000
+(B) twisted s(x,i)=x+((i-x) mod 3): covariance err under shift (x) cyclic colour perm = 1.1e-16
+    colour components per site (needs 1 for one mode/site): [3]
+    max |[t_0^a, t_1^b]| = 0.5000
+    max |[t_0^a, t_2^b]| = 0.2887
+    max |[t_0^a, t_3^b]| = 0.0000
+(C) blocks at x = 0 mod 3: max cross commutator 0.0e+00; gauge points 4 = N/3
+    shifted block generator equals some block generator?  False
+(D) counting: |I| <= N/3 (complex); Majorana/BdG form: real dim 2N >= 6|I| (3 is 6-dim over R) -> same bound
+    translation orbits are free on a ring of N > range sites, so |I| = k N with k >= 1 -> 3kN <= N impossible
+(E) covariant assignments s(x,i) = x + c(sigma^{-x}(i)), c in {0..4}^3, sigma in S_3:
+    components per site over all covariant assignments: [3] (always 3)

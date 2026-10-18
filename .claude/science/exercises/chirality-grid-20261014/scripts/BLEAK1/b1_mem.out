@@ -1,0 +1,26 @@
+N = 24 (full BZ midpoint, N^4 = 331776 points)
+Sigma(0) (all four cases): [-0. -0. -0. -0.]
+delta = 0.100  (1 s)
+   K2-GR (C0)   Z_s = -4.622957  Z_4 = -4.622957  row (Z_s - Z_4)/2 = -0.000000
+   K2-fol (C1)  Z_s = -2.123127  Z_4 = -3.104200  row (Z_s - Z_4)/2 = +0.490536
+   D2-GR (M2)   Z_s = -4.622957  Z_4 = -4.637171  row (Z_s - Z_4)/2 = +0.007107
+   D2-fol (M1)  Z_s = -2.123127  Z_4 = -3.119496  row (Z_s - Z_4)/2 = +0.498185
+closed form: foliated row pi/6 = 0.523599 ; covariant row 0 ; Z_GR = -32 pi * 0.046216 = -4.6461 ; foliated Z_s = -32 pi * 0.0223451 = -2.2464, Z_4 = -32 pi * 0.0327617 = -3.2936
+        0.76 real         0.66 user         0.06 sys
+            94142464  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6811  page reclaims
+                  22  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 184  voluntary context switches
+                 178  involuntary context switches
+         10076188971  instructions retired
+          2488540217  cycles elapsed
+            28508880  peak memory footprint

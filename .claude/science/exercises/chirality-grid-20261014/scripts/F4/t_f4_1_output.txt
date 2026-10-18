@@ -1,0 +1,46 @@
+convention check: sigma.k sphere Chern = -1.0
+
+== (0) free slab, L=4 ==
+k=0 lowest |E| states (E, layer centroid, partner weight): [(np.float64(0.0), np.float64(4.0), np.float64(-0.0)), (np.float64(-0.0), np.float64(4.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(1.0), np.float64(2.48), np.float64(0.0)), (np.float64(-1.0), np.float64(2.5), np.float64(0.0))]
+  projected near 2x2 surface Hamiltonian: sphere Chern = -1.0
+  projected far 2x2 surface Hamiltonian: sphere Chern = 1.0
+[free] corner spheres rho=0.35: (0, 0, 0):0.0 (min|E| 0.3429); (0, 0, 1):0.0 (min|E| 1.2455); (0, 1, 0):-0.0 (min|E| 1.2454); (0, 1, 1):-0.0 (min|E| 3.1783); (1, 0, 0):-0.0 (min|E| 1.2454); (1, 0, 1):-0.0 (min|E| 3.1783); (1, 1, 0):0.0 (min|E| 3.1783); (1, 1, 1):0.0 (min|E| 5.1604)
+[free] total over corners = 0.000
+
+== (a) local on-site far-layer terms lambda*V ==
+  V=Gamma5  lam=    0.3: k=0 lowest states [(np.float64(-0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(3.92), np.float64(-0.0)), (np.float64(-0.0), np.float64(3.92), np.float64(0.0))]; k=0 sphere Chern=-0.0 (min|E| on sphere 0.343)
+  V=Gamma5  lam=    3.0: k=0 lowest states [(np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(-0.0), np.float64(3.1), np.float64(0.0)), (np.float64(-0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(3.1), np.float64(-0.0))]; k=0 sphere Chern=0.0 (min|E| on sphere 0.343)
+  V=Gamma5  lam=   30.0: k=0 lowest states [(np.float64(0.0), np.float64(1.0), np.float64(-0.0)), (np.float64(0.0), np.float64(3.0), np.float64(-0.0)), (np.float64(-0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(3.0), np.float64(-0.0))]; k=0 sphere Chern=0.0 (min|E| on sphere 0.343)
+  V=Gamma5  lam= 3000.0: k=0 lowest states [(np.float64(-0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(-0.0), np.float64(3.0), np.float64(0.0)), (np.float64(0.0), np.float64(3.0), np.float64(-0.0))]; k=0 sphere Chern=-0.0 (min|E| on sphere 0.343)
+  V=Gamma4  lam=    0.3: k=0 lowest states [(np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(3.92), np.float64(-0.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(-0.0), np.float64(3.92), np.float64(0.0))]; k=0 sphere Chern=0.0 (min|E| on sphere 0.343)
+  V=Gamma4  lam=    3.0: k=0 lowest states [(np.float64(-0.0), np.float64(1.0), np.float64(-0.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(3.1), np.float64(-0.0)), (np.float64(-0.0), np.float64(3.1), np.float64(0.0))]; k=0 sphere Chern=0.0 (min|E| on sphere 0.343)
+  V=Gamma4  lam=   30.0: k=0 lowest states [(np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(-0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(3.0), np.float64(-0.0)), (np.float64(-0.0), np.float64(3.0), np.float64(-0.0))]; k=0 sphere Chern=0.0 (min|E| on sphere 0.343)
+  V=Gamma4  lam= 3000.0: k=0 lowest states [(np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(-0.0), np.float64(3.0), np.float64(0.0)), (np.float64(0.0), np.float64(3.0), np.float64(0.0))]; k=0 sphere Chern=0.0 (min|E| on sphere 0.343)
+  V=random  lam=    0.3: k=0 lowest states [(np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(-0.1191), np.float64(3.98), np.float64(-0.0)), (np.float64(0.1575), np.float64(3.95), np.float64(-0.0))]; k=0 sphere Chern=0.0 (min|E| on sphere 0.175)
+  V=random  lam=    3.0: k=0 lowest states [(np.float64(-0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.231), np.float64(3.17), np.float64(-0.0)), (np.float64(-0.3806), np.float64(3.29), np.float64(-0.0))]; k=0 sphere Chern=-1.0 (min|E| on sphere 0.0179)
+  V=random  lam=   30.0: k=0 lowest states [(np.float64(-0.0), np.float64(1.0), np.float64(0.0)), (np.float64(-0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0282), np.float64(3.0), np.float64(0.0)), (np.float64(-0.0561), np.float64(3.01), np.float64(0.0))]; k=0 sphere Chern=0.0 (min|E| on sphere 0.286)
+  V=random  lam= 3000.0: k=0 lowest states [(np.float64(-0.0), np.float64(1.0), np.float64(0.0)), (np.float64(-0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0003), np.float64(3.0), np.float64(0.0)), (np.float64(-0.0006), np.float64(3.0), np.float64(-0.0))]; k=0 sphere Chern=0.0 (min|E| on sphere 0.342)
+
+== (b) dispersive partner chi (h=+sigma.sin k), coupled to the mirror spinor ==
+  g=0.3: k=0 lowest states [(np.float64(-0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(-0.0)), (np.float64(0.3), np.float64(4.0), np.float64(0.5)), (np.float64(-0.3), np.float64(4.0), np.float64(0.5)), (np.float64(-0.3), np.float64(4.0), np.float64(0.5)), (np.float64(0.3), np.float64(4.0), np.float64(0.5))]
+[disp g=0.3] corner spheres rho=0.35: (0, 0, 0):-1.0 (min|E| 0.3429); (0, 0, 1):1.0 (min|E| 0.3429); (0, 1, 0):1.0 (min|E| 0.3429); (0, 1, 1):-1.0 (min|E| 0.3429); (1, 0, 0):1.0 (min|E| 0.3429); (1, 0, 1):-1.0 (min|E| 0.3429); (1, 1, 0):-1.0 (min|E| 0.3429); (1, 1, 1):1.0 (min|E| 0.3429)
+[disp g=0.3] total over corners = 0.000
+  g=1.0: k=0 lowest states [(np.float64(-0.0), np.float64(1.0), np.float64(-0.0)), (np.float64(-0.0), np.float64(1.0), np.float64(-0.0)), (np.float64(1.0), np.float64(3.51), np.float64(0.03)), (np.float64(-1.0), np.float64(2.5), np.float64(-0.0)), (np.float64(-1.0), np.float64(4.0), np.float64(0.5)), (np.float64(1.0), np.float64(1.5), np.float64(0.0))]
+[disp g=1.0] corner spheres rho=0.35: (0, 0, 0):-1.0 (min|E| 0.3429); (0, 0, 1):1.0 (min|E| 0.3429); (0, 1, 0):1.0 (min|E| 0.3429); (0, 1, 1):-1.0 (min|E| 0.3429); (1, 0, 0):1.0 (min|E| 0.3429); (1, 0, 1):-1.0 (min|E| 0.3429); (1, 1, 0):-1.0 (min|E| 0.3429); (1, 1, 1):1.0 (min|E| 0.3429)
+[disp g=1.0] total over corners = 0.000
+
+== (c) flat on-site partner chi, coupled to the mirror spinor ==
+  g=0.3: k=0 lowest states [(np.float64(-0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(-0.0)), (np.float64(0.3), np.float64(4.0), np.float64(0.5)), (np.float64(-0.3), np.float64(4.0), np.float64(0.5)), (np.float64(-0.3), np.float64(4.0), np.float64(0.5)), (np.float64(0.3), np.float64(4.0), np.float64(0.5))]
+  g=0.3: small k=0 sphere (rho=0.15) Chern=-1.0 min|E|=0.149
+    dir [1 0 0]: occupied-count changes at |k| = []
+    dir [0.707 0.707 0.   ]: occupied-count changes at |k| = []
+    dir [0.577 0.577 0.577]: occupied-count changes at |k| = [np.float64(5.441)]
+[flat g=0.3] corner spheres rho=0.35: (0, 0, 0):-1.0 (min|E| 0.1725); (0, 0, 1):1.0 (min|E| 0.0088); (0, 1, 0):1.0 (min|E| 0.0088); (0, 1, 1):-1.0 (min|E| 0.002); (1, 0, 0):1.0 (min|E| 0.0088); (1, 0, 1):-1.0 (min|E| 0.002); (1, 1, 0):-1.0 (min|E| 0.002); (1, 1, 1):1.0 (min|E| 0.0009)
+[flat g=0.3] total over corners = 0.000
+  g=1.0: k=0 lowest states [(np.float64(-0.0), np.float64(1.0), np.float64(-0.0)), (np.float64(-0.0), np.float64(1.0), np.float64(-0.0)), (np.float64(1.0), np.float64(3.51), np.float64(0.03)), (np.float64(-1.0), np.float64(2.5), np.float64(-0.0)), (np.float64(-1.0), np.float64(4.0), np.float64(0.5)), (np.float64(1.0), np.float64(1.5), np.float64(0.0))]
+  g=1.0: small k=0 sphere (rho=0.15) Chern=-1.0 min|E|=0.149
+    dir [1 0 0]: occupied-count changes at |k| = []
+    dir [0.707 0.707 0.   ]: occupied-count changes at |k| = []
+    dir [0.577 0.577 0.577]: occupied-count changes at |k| = []
+[flat g=1.0] corner spheres rho=0.35: (0, 0, 0):-1.0 (min|E| 0.3429); (0, 0, 1):1.0 (min|E| 0.078); (0, 1, 0):1.0 (min|E| 0.078); (0, 1, 1):-1.0 (min|E| 0.0206); (1, 0, 0):1.0 (min|E| 0.078); (1, 0, 1):-1.0 (min|E| 0.0206); (1, 1, 0):-1.0 (min|E| 0.0206); (1, 1, 1):1.0 (min|E| 0.0097)
+[flat g=1.0] total over corners = 0.000

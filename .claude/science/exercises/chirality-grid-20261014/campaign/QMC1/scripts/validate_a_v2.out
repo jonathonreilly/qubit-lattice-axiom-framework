@@ -1,0 +1,19 @@
+A1 gate(i) Spin(10) f1 L=(4,): max |G_engine(tau,k) - G_free(tau,k)| over all k, tau = 3.55e-15 (PASS if <= 1e-10: True); wrap-vs-fresh 7.8e-16
+A1 gate(i) Spin(10) f2 L=(4, 4): max |G_engine(tau,k) - G_free(tau,k)| over all k, tau = 5.68e-14 (PASS if <= 1e-10: True); wrap-vs-fresh 2.6e-15
+A2 W=0 reduced 1D L=3: ED  N*S_X [0.2529083773, 0.2529083773, 0.2529083773]  N*S_Y [0.2529083773, 0.2529083773, 0.2529083773]  Ekin -2.4226163683
+A2 W=0 reduced 1D L=3: QMC N*S_X [0.2529083773, 0.2529083773, 0.2529083773]  N*S_Y [0.2529083773, 0.2529083773, 0.2529083773]  Ekin -2.4226163683
+A2 max deviation 8.88e-16 (PASS if <= 1e-10: True)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+A3 field scale 1.0: log|w| = 145.601, |phase| = 1.10e-15; slice spectrum conj-closed deviation 4.5e-15; ||T2 B T2^-1 - B||/||B|| = 3.9e-16
+A3 field scale 1.0: log|w| = 149.209, |phase| = 5.28e-14; slice spectrum conj-closed deviation 3.0e-15; ||T2 B T2^-1 - B||/||B|| = 5.8e-16
+A3 field scale 2.0: log|w| = 474.872, |phase| = 9.30e-14; slice spectrum conj-closed deviation 2.9e-15; ||T2 B T2^-1 - B||/||B|| = 9.8e-16
+A3 field scale 4.0: log|w| = 1927.544, |phase| = 4.65e-08; slice spectrum conj-closed deviation 1.9e-14; ||T2 B T2^-1 - B||/||B|| = 9.8e-16
+A3 gate(ii) on prior-scale random fields: max |phase| = 5.28e-14 (<= 1e-8: True); scale 2 and 4 are stress tests outside the sampled regime (roundoff of the stabilised log det at log|w| ~ 1e3)
+A3 Fierz in expectation (random-field Gaussian state): <sum Q> from Bh^a = -52.109795112379-8.9e-01j, from HS channels = -52.109795112379-8.9e-01j, |diff| = 1.11e-16
+total 4s, peak RSS 555 MB
+watchdog peak RSS 555984 KB

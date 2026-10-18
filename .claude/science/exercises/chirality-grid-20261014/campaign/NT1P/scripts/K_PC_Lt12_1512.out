@@ -1,0 +1,22 @@
+# NT-1' kernel pool=pool_NT1P_PA_wsearchO_Lx4_Lt12_seed1512.npz Lx=4 Lt=12 k=8 model=11112 delta=0.6 s_k=-1 quad lo/hi/third = 3/4/5 transport main R(4) (Ns 4+8), check R(8); kbb Simpson 8/16
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+LOW (n=3) done [653s]
+HIGH (n=4) done [2156s]
+third level (n=5) subset done [3027s]
+transport R(8) subset done [3796s]
+Theta constant from diagonals: 2 Im ln K(a,a) mod 2pi = +0.27120377 (spread 1.4e-07); gate (d) value -7.962629 mod 2pi = -1.67944369
+chi diagonal phases after cphase: min -2.776e-17 max +7.219e-08 (all |.| > pi/2: False; all < pi/2: True)
+FINAL chi  k=8: lam_min -5.3679e-04 min/max -6.7463e-05 | q 3.0e-06 q3 6.6e-08 qPT 3.2e-07 h 1.6e-07 max|Im ln diag| 7.2e-08 | E 2.4e-05 | conv-negative True | PSD-within-error False | lowest [-5.368e-04 -1.805e-06  7.024e-05] max 7.957
+FINAL mod  k=8: lam_min -5.3642e-04 min/max -6.7417e-05 | q 3.0e-06 q3 6.2e-08 qPT 2.1e-14 h 1.2e-07 max|Im ln diag| 0.0e+00 | E 2.4e-05 | conv-negative True | PSD-within-error False | lowest [-5.364e-04  5.628e-06  7.082e-05] max 7.957
+PHASE: max|Im Zn_chi| 1.665e-03; max|Zn_chi - Zn_mod| 1.665e-03; max phase spread over nodes within an entry 8.870e-03 rad; arg Zn_chi off-diagonal range [-1.671e-03, +1.671e-03]
+GATES on all kernel nodes: G5 min|eig H_W(U^e)| 0.290; G6 index 0 True; G7 max|sum Abar| 4.1e-14; max|W_t| (canonical) 1.204
+REF   O    k=8: lam_min -1.1519e-04 min/max -1.4418e-05 q 7.7e-08 E 6.1e-07 | conv-negative True | PSD-within-error False
+REF   W    k=8: lam_min +3.9601e-06 min/max +4.9567e-07 q 1.5e-07 E 1.2e-06 | conv-negative False | PSD-within-error True
+REF   PG   k=8: lam_min -1.2954e-15 min/max -1.6193e-16 q 0.0e+00 E 1.0e-13 | conv-negative False | PSD-within-error True
+CAPPED: killed at RSS 518432 KB
+watchdog peak RSS 518432 KB

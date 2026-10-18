@@ -1,0 +1,33 @@
+[run] kind=spin10 dims=(4, 4) filt=fG rho=0.3125 W=4.0 beta=4.0 dtau=0.05 Lt=80 ns=8 Nd=512 nch=64 eq_pts=[10]
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+[warm 0] acc 0.880 step 0.3750 maxphase 6.1e-13 maxdev 1.6e-12 t 5s rss 381MB
+[warm 10] acc 0.584 step 0.9155 maxphase 5.2e-11 maxdev 5.1e-11 t 36s rss 486MB
+[warm 19] acc 0.520 step 0.9155 maxphase 5.2e-11 maxdev 1.0e-10 t 66s rss 491MB
+[meas 0] acc 0.541 S10(Q0) 60.9633 WQ -262.4892 Gm(beta/2) -0.0483 maxphase 5.2e-11 maxdev 1.0e-10 lightdev 1.4e-14 t 70s rss 491MB
+[meas 10] acc 0.516 S10(Q0) 77.1377 WQ nan Gm(beta/2) -0.1225 maxphase 6.4e-11 maxdev 1.0e-10 lightdev 1.5e-14 t 103s rss 491MB
+[meas 20] acc 0.531 S10(Q0) 81.3135 WQ -322.1064 Gm(beta/2) -0.0055 maxphase 6.4e-11 maxdev 1.0e-10 lightdev 2.0e-14 t 137s rss 491MB
+[meas 30] acc 0.541 S10(Q0) 105.4552 WQ nan Gm(beta/2) -0.1319 maxphase 6.4e-11 maxdev 1.0e-10 lightdev 2.3e-14 t 170s rss 491MB
+[meas 40] acc 0.511 S10(Q0) 120.6387 WQ -420.3873 Gm(beta/2) 0.0585 maxphase 6.4e-11 maxdev 1.0e-10 lightdev 2.4e-14 t 201s rss 494MB
+[meas 50] acc 0.508 S10(Q0) 176.2305 WQ nan Gm(beta/2) -0.0608 maxphase 6.4e-11 maxdev 1.0e-10 lightdev 3.1e-14 t 233s rss 494MB
+[meas 60] acc 0.527 S10(Q0) 229.4837 WQ -777.4777 Gm(beta/2) 0.0657 maxphase 6.4e-11 maxdev 1.0e-10 lightdev 4.0e-14 t 265s rss 494MB
+[meas 70] acc 0.545 S10(Q0) 63.3886 WQ nan Gm(beta/2) 0.0264 maxphase 7.6e-11 maxdev 1.0e-10 lightdev 1.8e-14 t 298s rss 494MB
+[meas 80] acc 0.535 S10(Q0) 64.8894 WQ -254.3970 Gm(beta/2) -0.1016 maxphase 7.6e-11 maxdev 1.0e-10 lightdev 2.0e-14 t 330s rss 494MB
+[meas 90] acc 0.525 S10(Q0) 68.8352 WQ nan Gm(beta/2) 0.0064 maxphase 7.6e-11 maxdev 1.0e-10 lightdev 1.7e-14 t 362s rss 494MB
+[meas 100] acc 0.523 S10(Q0) 69.0950 WQ -279.2505 Gm(beta/2) 0.0316 maxphase 7.6e-11 maxdev 3.0e-10 lightdev 1.5e-14 t 393s rss 531MB
+[meas 110] acc 0.498 S10(Q0) 53.4535 WQ nan Gm(beta/2) -0.0208 maxphase 7.6e-11 maxdev 3.0e-10 lightdev 1.1e-14 t 424s rss 531MB
+[meas 120] acc 0.510 S10(Q0) 68.3863 WQ -271.9949 Gm(beta/2) 0.0018 maxphase 7.6e-11 maxdev 3.0e-10 lightdev 1.8e-14 t 455s rss 531MB
+[meas 130] acc 0.487 S10(Q0) 122.9726 WQ nan Gm(beta/2) -0.0614 maxphase 7.6e-11 maxdev 3.0e-10 lightdev 2.8e-14 t 487s rss 531MB
+[meas 140] acc 0.507 S10(Q0) 107.2584 WQ -386.5118 Gm(beta/2) -0.0734 maxphase 7.6e-11 maxdev 3.0e-10 lightdev 2.1e-14 t 519s rss 531MB
+[meas 150] acc 0.529 S10(Q0) 75.5613 WQ nan Gm(beta/2) 0.0077 maxphase 7.6e-11 maxdev 3.0e-10 lightdev 1.8e-14 t 553s rss 531MB
+[meas 160] acc 0.461 S10(Q0) 77.6158 WQ -267.3270 Gm(beta/2) 0.0554 maxphase 1.0e-10 maxdev 3.0e-10 lightdev 1.4e-14 t 584s rss 531MB
+[meas 170] acc 0.507 S10(Q0) 59.3912 WQ nan Gm(beta/2) -0.0510 maxphase 1.0e-10 maxdev 3.0e-10 lightdev 1.3e-14 t 616s rss 531MB
+[meas 180] acc 0.480 S10(Q0) 90.9455 WQ -330.0901 Gm(beta/2) 0.0288 maxphase 1.0e-10 maxdev 3.0e-10 lightdev 1.6e-14 t 648s rss 531MB
+[meas 190] acc 0.487 S10(Q0) 74.0318 WQ nan Gm(beta/2) -0.0072 maxphase 1.0e-10 maxdev 3.0e-10 lightdev 1.4e-14 t 680s rss 531MB
+[meas 199] acc 0.472 S10(Q0) 65.2792 WQ nan Gm(beta/2) 0.0367 maxphase 1.0e-10 maxdev 3.0e-10 lightdev 1.1e-14 t 708s rss 531MB
+[done] maxdev_down 3.03e-10; 200 sweeps, 3.21 s/sweep, maxphase 1.02e-10, maxdev 3.03e-10, peak RSS 531 MB, total 708s
+watchdog peak RSS 543536 KB

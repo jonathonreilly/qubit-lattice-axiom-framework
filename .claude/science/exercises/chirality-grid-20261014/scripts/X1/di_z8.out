@@ -1,0 +1,28 @@
+=== T1: Z8 gate, n T-odd Majoranas alone ===
+n= 2  T vs parity: SWAPS      T^2(even)=-1.0  T^2(odd)=-1.0  GS degeneracy over 20 draws: min=2 unique=0/20  -> ok
+n= 4  T vs parity: preserves  T^2(even)=-1.0  T^2(odd)=-1.0  GS degeneracy over 20 draws: min=2 unique=0/20  -> ok
+n= 6  T vs parity: SWAPS      T^2(even)=1.0  T^2(odd)=1.0  GS degeneracy over 20 draws: min=2 unique=0/20  -> ok
+n= 8  T vs parity: preserves  T^2(even)=1.0  T^2(odd)=1.0  GS degeneracy over 20 draws: min=1 unique=20/20  -> ok
+n=10  T vs parity: SWAPS      T^2(even)=-1.0  T^2(odd)=-1.0  GS degeneracy over 20 draws: min=2 unique=0/20  -> ok
+n=12  T vs parity: preserves  T^2(even)=-1.0  T^2(odd)=-1.0  GS degeneracy over 20 draws: min=2 unique=0/20  -> ok
+n=14  T vs parity: SWAPS      T^2(even)=1.0  T^2(odd)=1.0  GS degeneracy over 20 draws: min=2 unique=0/20  -> ok
+n=16  T vs parity: preserves  T^2(even)=1.0  T^2(odd)=1.0  GS degeneracy over 20 draws: min=1 unique=20/20  -> ok
+check: T-symmetrized i g'_1 g'_2 has norm 0.00e+00 (0 => bilinear T-forbidden)
+T1 PASS
+
+=== T2: explicit disentangler on one nu=8 Kitaev bond ===
+|B>: h_B gap 2.000, total parity +1
+draw 0: end gaps 2.635/0.477; parity B +1 P +1; overlap <B|P>=6.611e-02; unitary 2.7e-15; [U,T] 3.2e-15; [U,P] 2.6e-15; fidelity 1.000000000000; max|M'| 6.0e-16; max|<i g' g>| on |P> 4.2e-32 -> ok
+   T3: H_far herm 7.7e-16, T-sym 4.5e-15, parity 5.2e-15, gap 8.0000, <E'|GS> 1.000000000000, bilinear part 7.8e-16; max|G_far(iw)|: w=1e-02:3.12e-04, w=1e-04:3.12e-06, w=1e-06:3.12e-08; T-break control |G(i1e-6)| 2.38e-02; near pole |G(i1e-4)| 2.00e+04 -> ok
+draw 1: end gaps 3.436/5.442; parity B +1 P +1; overlap <B|P>=1.975e-02; unitary 2.2e-15; [U,T] 2.7e-15; [U,P] 2.4e-15; fidelity 1.000000000000; max|M'| 3.5e-16; max|<i g' g>| on |P> 1.6e-32 -> ok
+   T3: H_far herm 5.1e-16, T-sym 2.9e-15, parity 2.8e-15, gap 8.0000, <E'|GS> 1.000000000000, bilinear part 4.7e-16; max|G_far(iw)|: w=1e-02:3.12e-04, w=1e-04:3.12e-06, w=1e-06:3.12e-08; T-break control |G(i1e-6)| 2.57e-02; near pole |G(i1e-4)| 2.00e+04 -> ok
+draw 2: end gaps 3.565/1.006; parity B +1 P +1; overlap <B|P>=5.717e-02; unitary 2.4e-15; [U,T] 3.5e-15; [U,P] 3.8e-15; fidelity 1.000000000000; max|M'| 6.9e-16; max|<i g' g>| on |P> 8.6e-32 -> ok
+   T3: H_far herm 1.1e-15, T-sym 5.2e-15, parity 1.1e-14, gap 8.0000, <E'|GS> 1.000000000000, bilinear part 8.8e-16; max|G_far(iw)|: w=1e-02:3.12e-04, w=1e-04:3.12e-06, w=1e-06:3.12e-08; T-break control |G(i1e-6)| 2.22e-02; near pole |G(i1e-4)| 2.00e+04 -> ok
+draw 3: end gaps 2.394/3.334; parity B +1 P +1; overlap <B|P>=1.397e-01; unitary 2.4e-15; [U,T] 4.6e-15; [U,P] 2.7e-15; fidelity 1.000000000000; max|M'| 1.1e-15; max|<i g' g>| on |P> 3.5e-32 -> ok
+   T3: H_far herm 1.1e-15, T-sym 9.9e-15, parity 7.0e-15, gap 8.0000, <E'|GS> 1.000000000000, bilinear part 1.7e-15; max|G_far(iw)|: w=1e-02:3.12e-04, w=1e-04:3.12e-06, w=1e-06:3.12e-08; T-break control |G(i1e-6)| 2.13e-02; near pole |G(i1e-4)| 2.00e+04 -> ok
+draw 4: end gaps 6.878/0.508; parity B +1 P +1; overlap <B|P>=1.286e-01; unitary 2.4e-15; [U,T] 2.7e-15; [U,P] 2.8e-15; fidelity 1.000000000000; max|M'| 4.9e-16; max|<i g' g>| on |P> 3.0e-32 -> ok
+   T3: H_far herm 8.3e-16, T-sym 3.4e-15, parity 7.6e-15, gap 8.0000, <E'|GS> 1.000000000000, bilinear part 5.4e-16; max|G_far(iw)|: w=1e-02:3.12e-04, w=1e-04:3.12e-06, w=1e-06:3.12e-08; T-break control |G(i1e-6)| 2.20e-02; near pole |G(i1e-4)| 2.00e+04 -> ok
+T2 PASS
+T3 PASS
+
+READING: CHAIN-CONSISTENT (PASS)

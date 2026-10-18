@@ -1,0 +1,21 @@
+B_gen: max mass residual u=6.974e-10 GeV d=5.859e-14 GeV
+  max |V-V_PDG|=2.260e-11
+  |Y0_uc|=0.656951, |Y0_cu|=0.656955
+  |Y0_sd|=0.015058, |Y0_ds|=0.015059
+  Higgs-direction offdiag maxima u=1.557e-11 d=1.085e-15
+  pair sums K=+1.463837e-04+2.584714e-05i, D=+1.132785e-01-2.630705e-01i, Bd=+1.229037e-06-7.892055e-06i, Bs=+4.147049e-07+7.935170e-06i
+  M* rows (TeV) K_Re=217.780, K_Im=1626.883, D_Re=2086.726, D_Im=7693.560, Bd_Re=2.106, Bd_Im=10.113, Bs_abs=1.043
+  M* max=7693.560 TeV
+B_gen120: max mass residual u=1.786e-09 GeV d=3.203e-13 GeV
+  max |V-V_PDG|=1.130e-11
+  |Y0_uc|=0.656893, |Y0_cu|=0.656887
+  |Y0_sd|=0.014857, |Y0_ds|=0.014859
+  Higgs-direction offdiag maxima u=6.491e-12 d=1.734e-15
+  pair sums K=-3.501760e-05-1.409828e-04i, D=-2.803882e-01-5.910393e-02i, Bd=-5.691506e-06+7.195058e-07i, Bs=+5.042999e-08+5.744153e-06i
+  M* rows (TeV) K_Re=106.516, K_Im=3799.557, D_Re=3283.005, D_Im=3646.695, Bd_Re=4.533, Bd_Im=3.054, Bs_abs=0.887
+  M* max=3799.557 TeV
+residual translations mod 2: [(0, 0, 0), (1, 1, 1)]
+residual labels: hw0:(0, 0), hx:(0, 1), hy:(0, 1), hz:(0, 1), Kx:(0, 0), Ky:(0, 0), Kz:(0, 0), hw3:(0, 1)
+quartic Hermitian orbits=28, all-four-field source orbits=6
+single-source 4pi ceiling=0.881234 TeV; coherent 6-source scale=2.158573 TeV
+watchdog peak RSS 25936 KB

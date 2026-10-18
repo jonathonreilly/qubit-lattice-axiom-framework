@@ -1,0 +1,5 @@
+s=0.15 set 0 (max bulk plaquette 0.64): Wilson min/max n8 +1.731e-03 n12 +1.273e-03 dZ 3.6e-03 | overlap n8 +2.335e-03 n12 +2.081e-03 dZ 2.6e-03 herm 2.2e-15 min|H_W| 0.021 nonzero 25/25
+s=0.15 set 1 (max bulk plaquette 0.68): Wilson min/max n8 +2.411e-03 n12 +2.037e-03 dZ 5.6e-03 | overlap n8 +4.069e-03 n12 +2.519e-03 dZ 5.7e-03 herm 2.0e-15 min|H_W| 0.002 nonzero 25/25
+s=0.15 set 2 (max bulk plaquette 0.74): Wilson min/max n8 +1.755e-03 n12 +1.277e-03 dZ 5.6e-03 | overlap n8 +5.112e-03 n12 +3.522e-03 dZ 5.5e-03 herm 2.9e-15 min|H_W| 0.011 nonzero 25/25
+done
+exit 0

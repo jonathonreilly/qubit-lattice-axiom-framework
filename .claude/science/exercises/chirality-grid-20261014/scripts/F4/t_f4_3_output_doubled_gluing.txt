@@ -1,0 +1,18 @@
+=== N=16, L=4 ===
+  glued=False: zero modes at kx=kz=0: 4; lowest |E| (E, centroid): [(np.float64(0.0), np.float64(3.94)), (np.float64(0.0), np.float64(3.88)), (np.float64(-0.0), np.float64(1.0)), (np.float64(-0.0), np.float64(1.18)), (np.float64(0.38268), np.float64(3.9)), (np.float64(0.38268), np.float64(1.73))]
+  glued=True: zero modes at kx=kz=0: 2; lowest |E| (E, centroid): [(np.float64(-0.0), np.float64(4.0)), (np.float64(-0.0), np.float64(4.0)), (np.float64(0.38268), np.float64(3.99)), (np.float64(-0.38268), np.float64(3.99)), (np.float64(0.38268), np.float64(3.99)), (np.float64(-0.38268), np.float64(3.99))]
+  glued=False: states with |E|<0.595 over all kx,kz: 76; centroid range [1.00, 3.99]; on face t=L (centroid>L-1): 37; near t=1 (centroid<2): 37
+  glued=True: states with |E|<0.595 over all kx,kz: 38; centroid range [3.98, 4.00]; on face t=L (centroid>L-1): 38; near t=1 (centroid<2): 0
+  reference: continuum-like single Weyl (2 bands, nodes only at k=0) count with |E|<delta: ~38
+=== N=24, L=6 ===
+  glued=False: zero modes at kx=kz=0: 4; lowest |E| (E, centroid): [(np.float64(0.0), np.float64(5.83)), (np.float64(-0.0), np.float64(3.71)), (np.float64(-0.0), np.float64(3.46)), (np.float64(-0.0), np.float64(1.0)), (np.float64(0.25882), np.float64(5.68)), (np.float64(0.25882), np.float64(1.48))]
+  glued=True: zero modes at kx=kz=0: 2; lowest |E| (E, centroid): [(np.float64(0.0), np.float64(6.0)), (np.float64(-0.0), np.float64(6.0)), (np.float64(-0.25882), np.float64(6.0)), (np.float64(-0.25882), np.float64(6.0)), (np.float64(0.25882), np.float64(6.0)), (np.float64(0.25882), np.float64(6.0))]
+  glued=False: states with |E|<0.397 over all kx,kz: 76; centroid range [1.00, 6.00]; on face t=L (centroid>L-1): 33; near t=1 (centroid<2): 33
+  glued=True: states with |E|<0.397 over all kx,kz: 38; centroid range [6.00, 6.00]; on face t=L (centroid>L-1): 38; near t=1 (centroid<2): 0
+  reference: continuum-like single Weyl (2 bands, nodes only at k=0) count with |E|<delta: ~38
+=== nonlocal y<->-y splitting of the boundary branch vs L (N=16, kx=kz=0) ===
+  L=2: glued lowest positive [0.382683 0.382683 0.707115 0.707115 0.925287 0.925287]
+  L=3: glued lowest positive [0.382683 0.382683 0.707107 0.707107 0.924053 0.924053]
+  L=4: glued lowest positive [0.382683 0.382683 0.707107 0.707107 0.9071   0.921004]
+  L=6: glued lowest positive [0.382683 0.382683 0.707107 0.707107 0.891004 0.905426]
+  L=8: glued lowest positive [0.382683 0.382683 0.707107 0.707107 0.887292 0.901678]

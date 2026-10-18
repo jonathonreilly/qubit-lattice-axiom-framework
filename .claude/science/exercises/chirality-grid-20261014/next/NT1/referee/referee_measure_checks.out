@@ -1,0 +1,26 @@
+R4: base gap=8.734988726512e-01 index=True
+  random_0.2                       dRe=-1.066e-13 dphase=1.064e-08 gap=8.734988726512e-01 index=True
+  random_1.0                       dRe=-3.908e-14 dphase=2.020e-04 gap=8.734988726512e-01 index=True
+  random_3.0                       dRe=-6.395e-14 dphase=8.604e-03 gap=8.734988726512e-01 index=True
+  identity_winding_2pi_one_site    dRe=-1.066e-13 dphase=1.469e-02 gap=8.734988726512e-01 index=True
+  identity_winding_two_sites       dRe=-3.197e-14 dphase=9.389e-03 gap=8.734988726512e-01 index=True
+R8: base gap=8.734988726512e-01 index=True
+  random_0.2                       dRe=-6.040e-14 dphase=6.537e-10 gap=8.734988726512e-01 index=True
+  random_1.0                       dRe=-1.066e-14 dphase=1.233e-05 gap=8.734988726512e-01 index=True
+  random_3.0                       dRe=-6.750e-14 dphase=9.460e-03 gap=8.734988726512e-01 index=True
+  identity_winding_2pi_one_site    dRe=+3.908e-14 dphase=4.190e-04 gap=8.734988726512e-01 index=True
+  identity_winding_two_sites       dRe=-3.908e-14 dphase=1.883e-04 gap=8.734988726512e-01 index=True
+R16: base gap=8.734988726512e-01 index=True
+  random_0.2                       dRe=-4.974e-14 dphase=4.070e-11 gap=8.734988726512e-01 index=True
+  random_1.0                       dRe=+2.842e-14 dphase=7.658e-07 gap=8.734988726512e-01 index=True
+  random_3.0                       dRe=-3.553e-14 dphase=2.276e-04 gap=8.734988726512e-01 index=True
+  identity_winding_2pi_one_site    dRe=+1.066e-14 dphase=1.741e-05 gap=8.734988726512e-01 index=True
+  identity_winding_two_sites       dRe=+2.842e-14 dphase=7.483e-06 gap=8.734988726512e-01 index=True
+R32: base gap=8.734988726512e-01 index=True
+  random_0.2                       dRe=-5.684e-14 dphase=2.480e-12 gap=8.734988726512e-01 index=True
+  random_1.0                       dRe=-6.395e-14 dphase=4.779e-08 gap=8.734988726512e-01 index=True
+  random_3.0                       dRe=-8.882e-14 dphase=1.042e-05 gap=8.734988726512e-01 index=True
+  identity_winding_2pi_one_site    dRe=-2.132e-14 dphase=9.777e-07 gap=8.734988726512e-01 index=True
+  identity_winding_two_sites       dRe=-1.776e-14 dphase=4.137e-07 gap=8.734988726512e-01 index=True
+current_divergence_max_error=5.274e-16
+watchdog peak RSS 73936 KB

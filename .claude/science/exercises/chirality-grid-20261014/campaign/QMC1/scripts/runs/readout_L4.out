@@ -1,0 +1,42 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1/scripts/analysis.py:37: OptimizeWarning: Covariance of the parameters could not be estimated
+  p, _ = curve_fit(f, tau[sel], g[sel], p0=[max(g[sel].min(), 1e-6), 0.5], maxfev=20000)
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1/scripts/analysis.py:48: OptimizeWarning: Covariance of the parameters could not be estimated
+  p, _ = curve_fit(f, tau[sel], g[sel], p0=[max(g[sel].min(), 1e-4), 1.0], sigma=e, absolute_sigma=True,
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1/scripts/analysis.py:20: RuntimeWarning: Mean of empty slice
+  b = x[: nb * m].reshape((nb, m) + x.shape[1:]).mean(1)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/_core/_methods.py:134: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1/scripts/analysis.py:28: RuntimeWarning: Mean of empty slice
+  b = x[: nbins * m].reshape((nbins, m) + x.shape[1:]).mean(1)
+
+### 2+1D L = 4
+| filter | L | W | dtau | n_s | sweeps | acc | S10(Q0) | S10/N | S_{9,10}/S10 | S(Qpi) | W<Q>/N | gap E1 | gap E2 | w_1 E3 / E3w | G_m(beta/2) | max light dev | max phase | wrap dev | s/sweep |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| f2 | 4x4 | 0.25 | 0.1 | 4 | 60 | 0.92 | 10.08(0.15) | 0.630(0.009) | 0.20 | 5.82(0.09) | -0.065(0.002) | 0.124(0.068) | 0.116(0.025) | 3.642(0.037) / 3.656(0.027) | 0.4840(0.0049) | 4.1e-15 | 1.5e-15 | 7.7e-15 | 3.9 |
+| f2 | 4x4 | 0.5 | 0.1 | 4 | 60 | 0.84 | 15.91(0.51) | 0.995(0.032) | 0.19 | 8.05(0.18) | -0.336(0.014) | 0.336(0.037) | 0.343(0.014) | 2.938(0.046) / 2.998(0.039) | 0.3904(0.0062) | 7.6e-15 | 1.6e-14 | 8.7e-15 | 3.8 |
+| f2 | 4x4 | 1.0 | 0.1 | 4 | 60 | 0.67 | 35.10(0.90) | 2.194(0.056) | 0.22 | 10.81(0.40) | -1.694(0.041) | 1.047(0.074) | 1.054(0.030) | 0.830(0.039) / 1.001(0.040) | 0.1103(0.0052) | 1.0e-14 | 5.5e-13 | 2.0e-13 | 3.6 |
+| f2 | 4x4 | 2.0 | 0.1 | 4 | 60 | 0.51 | 51.73(1.95) | 3.233(0.122) | 0.60 | 9.24(0.27) | -5.395(0.172) | 3.117(1.101) | 2.612(0.130) | 0.023(0.062) / 0.095(0.016) | 0.0030(0.0082) | 2.2e-14 | 3.6e-12 | 1.9e-12 | 3.5 |
+| f2 | 4x4 | 4.0 | 0.1 | 2 | 60 | 0.37 | 75.11(3.26) | 4.695(0.204) | 0.65 | 12.33(0.60) | -18.087(0.606) | 49.642(13.496) | 7.685(2.447) | 0.069(0.037) / 0.010(0.010) | 0.0091(0.0049) | 3.1e-14 | 3.8e-12 | 8.5e-12 | 4.4 |
+| f2 | 4x4 | 8.0 | 0.05 | 2 | 60 | 0.48 | 84.44(4.14) | 5.278(0.259) | 0.71 | 20.25(0.89) | -44.415(1.490) | 0.931(2.408) | 0.000(0.001) | 0.022(0.033) / 0.012(0.011) | 0.0029(0.0044) | 5.4e-14 | 1.5e-11 | 2.1e-11 | 8.1 |
+
+### 2+1D L = 6
+| filter | L | W | dtau | n_s | sweeps | acc | S10(Q0) | S10/N | S_{9,10}/S10 | S(Qpi) | W<Q>/N | gap E1 | gap E2 | w_1 E3 / E3w | G_m(beta/2) | max light dev | max phase | wrap dev | s/sweep |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| f2 | 6x6 | 0.0 | 0.1 | 4 | 1 | 0.00 | nan(nan) | nan(nan) | nan | nan(nan) | nan(nan) | nan(nan) | nan(nan) | nan(nan) / nan(nan) | nan(nan) | 3.7e-15 | 0.0e+00 | 5.8e-15 | 26.9 |
+
+### 1+1D
+| filter | L | W | dtau | n_s | sweeps | acc | S10(Q0) | S10/N | S_{9,10}/S10 | S(Qpi) | W<Q>/N | gap E1 | gap E2 | w_1 E3 / E3w | G_m(beta/2) | max light dev | max phase | wrap dev | s/sweep |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+
+### Readings (f2, 2+1D, L = 4 vs 6), gap estimator E1
+READING (E1, mechanical): OPEN; SMG window []; gap open at some W: False; S10/L^2 flat-or-growing at every open W: True
+
+### Readings (f2, 2+1D, L = 4 vs 6), gap estimator E2
+READING (E2, mechanical): OPEN; SMG window []; gap open at some W: False; S10/L^2 flat-or-growing at every open W: True
+
+### Readings (f2, 2+1D, L = 4 vs 6), gap estimator E3
+READING (E3, mechanical): OPEN; SMG window []; gap open at some W: False; S10/L^2 flat-or-growing at every open W: True
+
+### Readings (f2, 2+1D, L = 4 vs 6), gap estimator E3w
+READING (E3w, mechanical): OPEN; SMG window []; gap open at some W: False; S10/L^2 flat-or-growing at every open W: True
+watchdog peak RSS 73552 KB

@@ -1,0 +1,2 @@
+tree vs loop max rel dev 1.9e-15; time per core: tree 0.620 ms, loop 0.676 ms
+watchdog peak RSS 99344 KB

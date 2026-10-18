@@ -1,0 +1,11 @@
+# V5 G3p: clustered sets, base s=0.25, perturbation 0.05, delta=0.6, n=(6,8) nw=(10,16)
+set 0: OVERLAP min/max +3.453e-05 q 5.0e-15 min|H_W| 0.776 | WILSON min/max +2.192e-05 q 4.9e-15 | clean True | 168s
+   overlap eigenvalues: [2.624e-04 1.027e-03 1.784e-03 3.003e-03 2.075e-02 4.861e-02 3.258e-01
+ 7.599e+00]
+set 1: OVERLAP min/max +2.058e-05 q 5.2e-15 min|H_W| 0.793 | WILSON min/max +1.914e-05 q 7.2e-15 | clean True | 171s
+   overlap eigenvalues: [1.548e-04 1.766e-03 3.882e-03 8.017e-03 3.310e-02 1.559e-01 2.732e-01
+ 7.524e+00]
+set 2: OVERLAP min/max +4.825e-05 q 6.8e-15 min|H_W| 0.818 | WILSON min/max +3.200e-05 q 5.1e-15 | clean True | 169s
+   overlap eigenvalues: [3.725e-04 6.499e-04 1.110e-03 3.111e-03 1.231e-02 8.740e-02 1.754e-01
+ 7.720e+00]
+done

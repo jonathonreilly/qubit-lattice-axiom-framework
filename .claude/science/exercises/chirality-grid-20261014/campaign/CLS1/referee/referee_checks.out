@@ -1,0 +1,14 @@
+residual residues: [(0, 0, 0), (1, 1, 1)]
+sector (1, 1) entries [((0, 0, 0), 1), ((0, 1, 1), 1), ((1, 0, 1), 1), ((1, 1, 0), 1)] index 4
+sector (1, -1) entries [((0, 0, 1), -1), ((0, 1, 0), -1), ((1, 0, 0), -1), ((1, 1, 1), -1)] index -4
+sum/difference charge identity: PASS for all 64 ordered corner pairs
+light adjacency eigenvalues: [-1. -1.  2.]
+kappa 0.0 rank 1 det 0.0 singular [2. 0. 0. 0.]
+kappa 0.33 rank 4 det 0.10817037000000002 singular [2.21068155 0.44931845 0.33       0.33      ]
+kappa 1.3333333333333333 rank 3 det 0.0 singular [4.66666667e+00 1.33333333e+00 1.33333333e+00 3.21621078e-33]
+analytic det Phi(P) = kappa^3 * (4 - 3*kappa)
+dimension-3 coefficient ratio epsilon/a_bound: 1.3882758620689656e+42
+dimension-3 three-flavour spread ratio 3epsilon/a_bound: 4.164827586206897e+42
+dimension-4 coefficient ratio eta/c_bound: 8.461538461538461e+26
+dimension-4 two-flavour spread ratio 2eta/c_bound: 1.6923076923076923e+27
+watchdog peak RSS 1264 KB

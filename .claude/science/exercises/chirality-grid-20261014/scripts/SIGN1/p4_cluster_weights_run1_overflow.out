@@ -1,0 +1,57 @@
+T1^2 = -1: True; T2^2 = -1: True; T1 T2 = -T2 T1: True
+  dens:sing:1:s              dim    1  parity ['T1even', 'even']  commutes with U: {True}
+  dens:sing:1:c              dim    1  parity ['T1even', 'even']  commutes with U: {True}
+  dens:trip:1:s              dim    3  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:trip:1:c              dim    3  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:sing:28:s             dim   28  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:sing:28:c             dim   28  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:trip:28:s             dim   84  parity ['T1even', 'even']  commutes with U: {True}
+  dens:trip:28:c             dim   84  parity ['T1even', 'even']  commutes with U: {True}
+  dens:sing:35:s             dim   35  parity ['T1even', 'even']  commutes with U: {True}
+  dens:trip:35:s             dim  105  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:sing:35:c             dim   35  parity ['T1even', 'even']  commutes with U: {True}
+  dens:trip:35:c             dim  105  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:sing:8v:Re            dim    8  parity ['T1even', 'even']  commutes with U: {True}
+  pair:sing:8v:Im            dim    8  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:trip:8v:Re            dim   24  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:trip:8v:Im            dim   24  parity ['T1even', 'even']  commutes with U: {True}
+  pair:sing:56v:Re           dim   56  parity ['T1even', 'even']  commutes with U: {True}
+  pair:sing:56v:Im           dim   56  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:trip:56v:Re           dim  168  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:trip:56v:Im           dim  168  parity ['T1even', 'even']  commutes with U: {True}
+total channel dimension 1024 (expected 1024)
+orthonormal across families: max |Gram - 1| = 7.8e-16
+filter on ring: f(k) = [-1.0, -0.5, 0.0, -0.5] (zero at k = pi: the hw1 corner (pi,0,0))
+walker: T2-invariant True, commutes with U(1)_c True
+filter commutes with T2 and U(1)_c: True
+
+=== (a) natural 10-channel decomposition ===
+  [natural 45] K0 Hermitian-type (a real): True; T2-invariant: True; U(1)_c-commuting: True
+  theta= 45 (l1=+0.707, l2=+0.707): c_X = +2.121, c_Y = -0.707; fraction of configs with det(1+M) not real-positive: 1.00; |arg det| median 3.22e-02, max 1.61e-01
+  [natural 135] K0 Hermitian-type (a real): True; T2-invariant: True; U(1)_c-commuting: True
+  theta=135 (l1=-0.707, l2=+0.707): c_X = +0.707, c_Y = -2.121; fraction of configs with det(1+M) not real-positive: 1.00; |arg det| median 7.85e-01, max 7.85e-01
+  [natural 200] K0 Hermitian-type (a real): True; T2-invariant: True; U(1)_c-commuting: True
+  theta=200 (l1=-0.940, l2=-0.342): c_X = -1.624, c_Y = -0.256; fraction of configs with det(1+M) not real-positive: 1.00; |arg det| median 7.85e-01, max 2.36e+00
+  [natural 230] K0 Hermitian-type (a real): True; T2-invariant: True; U(1)_c-commuting: True
+  theta=230 (l1=-0.643, l2=-0.766): c_X = -2.175, c_Y = +0.889; fraction of configs with det(1+M) not real-positive: 1.00; |arg det| median 7.85e-01, max 7.85e-01
+  [natural 250] K0 Hermitian-type (a real): True; T2-invariant: True; U(1)_c-commuting: True
+  theta=250 (l1=-0.342, l2=-0.940): c_X = -2.221, c_Y = +1.537; fraction of configs with det(1+M) not real-positive: 1.00; |arg det| median 2.82e-02, max 1.55e-01
+  [natural 315] K0 Hermitian-type (a real): True; T2-invariant: True; U(1)_c-commuting: True
+  theta=315 (l1=+0.707, l2=-0.707): c_X = -0.707, c_Y = +2.121; fraction of configs with det(1+M) not real-positive: 1.00; |arg det| median 3.95e-02, max 2.11e-01
+
+=== (b) Kramers-class decomposition (saved SDP solutions) ===
+  theta=200: 1024 channels; sign/parity mismatches: 0
+  [Kramers 200] K0 Hermitian-type (a real): True; T2-invariant: True; U(1)_c-commuting: True
+    Majorana det(1+M): max |arg| = 7.85e-01; d-frame: max leak 2.5e-15, max Kramers mismatch 2.0e+00, max |Im w_d|/|w_d| = 7.0e-06, min Re w_d/|w_d| = +1.000000, max |arg det M_d| = 3.1e+00, consistency w_d^2/detM_d vs det(1+M): nan
+    |w_d| range: 4.587e+197 .. 1.621e+215
+  theta=230: 1024 channels; sign/parity mismatches: 0
+  [Kramers 230] K0 Hermitian-type (a real): True; T2-invariant: True; U(1)_c-commuting: True
+    Majorana det(1+M): max |arg| = 7.85e-01; d-frame: max leak 5.3e-15, max Kramers mismatch 2.0e+00, max |Im w_d|/|w_d| = 6.4e-07, min Re w_d/|w_d| = +1.000000, max |arg det M_d| = 3.1e+00, consistency w_d^2/detM_d vs det(1+M): nan
+    |w_d| range: 5.331e+154 .. 2.353e+174
+  theta=270: 1024 channels; sign/parity mismatches: 0
+  [Kramers 270] K0 Hermitian-type (a real): True; T2-invariant: True; U(1)_c-commuting: True
+    Majorana det(1+M): max |arg| = 2.84e-10; d-frame: max leak 4.1e-15, max Kramers mismatch 2.0e+00, max |Im w_d|/|w_d| = 2.2e-10, min Re w_d/|w_d| = +1.000000, max |arg det M_d| = 2.7e-05, consistency w_d^2/detM_d vs det(1+M): 2.9e-05
+    |w_d| range: 5.309e+92 .. 1.515e+106
+
+SUMMARY {'natural45': np.float64(1.0), 'natural135': np.float64(1.0), 'natural200': np.float64(1.0), 'natural230': np.float64(1.0), 'natural250': np.float64(1.0), 'natural315': np.float64(1.0), 'th200': (np.float64(0.999999999975631), np.float64(0.7853981633974483)), 'th230': (np.float64(0.9999999999997925), np.float64(0.7853981633974483)), 'th270': (np.float64(1.0), np.float64(2.839073968259319e-10))}
+total 59s, peak RSS 394 MB

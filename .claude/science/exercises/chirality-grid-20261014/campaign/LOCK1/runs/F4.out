@@ -1,0 +1,13 @@
+F4_L12_r0.5_g0.4_cl_rand U=0.638 SQ/V=0.0723 Smax/V=0.0723@[6, 6, 6] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.248 t=0.7s
+F4_L12_r0.5_g0.41_cl_rand U=0.533 SQ/V=0.0357 Smax/V=0.0357@[6, 6, 6] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.313 t=0.7s
+F4_L12_r0.5_g0.42_cl_rand U=0.298 SQ/V=0.0138 Smax/V=0.0138@[6, 6, 6] Smin/V=0.0001 cu=0.000 cs=0.000 acc=0.365 t=0.7s
+F4_L12_r0.5_g0.43_cl_rand U=0.238 SQ/V=0.0068 Smax/V=0.0068@[6, 6, 6] Smin/V=0.0001 cu=0.000 cs=0.000 acc=0.395 t=0.7s
+F4_L16_r0.5_g0.4_cl_rand U=0.654 SQ/V=0.0712 Smax/V=0.0712@[8, 8, 8] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.248 t=1.4s
+F4_L16_r0.5_g0.41_cl_rand U=0.517 SQ/V=0.0262 Smax/V=0.0262@[8, 8, 8] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.321 t=1.6s
+F4_L16_r0.5_g0.42_cl_rand U=0.173 SQ/V=0.0077 Smax/V=0.0077@[8, 8, 8] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.368 t=1.8s
+F4_L16_r0.5_g0.43_cl_rand U=0.013 SQ/V=0.0026 Smax/V=0.0026@[8, 8, 8] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.396 t=2.8s
+F4_L24_r0.5_g0.4_cl_rand U=0.662 SQ/V=0.0696 Smax/V=0.0696@[12, 12, 12] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.248 t=8.6s
+F4_L24_r0.5_g0.41_cl_rand U=0.603 SQ/V=0.0251 Smax/V=0.0251@[12, 12, 12] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.319 t=9.8s
+F4_L24_r0.5_g0.42_cl_rand U=0.176 SQ/V=0.0019 Smax/V=0.0019@[12, 12, 12] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.372 t=7.8s
+F4_L24_r0.5_g0.43_cl_rand U=0.052 SQ/V=0.0008 Smax/V=0.0008@[12, 12, 12] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.397 t=7.3s
+watchdog peak RSS 126240 KB

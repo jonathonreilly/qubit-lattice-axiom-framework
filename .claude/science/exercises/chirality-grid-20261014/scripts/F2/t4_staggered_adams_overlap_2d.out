@@ -1,0 +1,10 @@
+eta5=1     hermitian=True [G55,eps]=0:True #zero modes=4 G55 on zero modes=[-1. -1.  1.  1.] ||[G55,Dst]||=4.000e+00  -> OK
+eta5=x1    hermitian=False [G55,eps]=0:True #zero modes=4 G55 on zero modes=[-0. -0.  0.  0.] ||[G55,Dst]||=0.000e+00  -> no
+eta5=x2    hermitian=False [G55,eps]=0:True #zero modes=4 G55 on zero modes=[-0. -0.  0.  0.] ||[G55,Dst]||=5.657e+00  -> no
+eta5=x1x2  hermitian=True [G55,eps]=0:True #zero modes=4 G55 on zero modes=[-1. -1.  1.  1.] ||[G55,Dst]||=4.000e+00  -> OK
+using eta5 = 1
+m=0.3: L8n1:-0(gap 1.56e-02)  L8n2:-0(gap 7.31e-02)  L8n3:-0(gap 1.36e-01)  L12n1:-0(gap 5.29e-04)  L12n2:-0(gap 1.10e-02)  L12n3:-0(gap 3.27e-02)
+m=0.6: L8n1:-0(gap 1.45e-04)  L8n2:-0(gap 7.69e-03)  L8n3:-0(gap 3.13e-02)  L12n1:-0(gap 1.13e-08)  L12n2:-0(gap 5.54e-05)  L12n3:-0(gap 1.03e-03)
+m=1.0: L8n1:-1(gap 1.74e-16)  L8n2:+1(gap 6.69e-17)  L8n3:-0(gap 5.44e-16)  L12n1:-0(gap 1.01e-15)  L12n2:-1(gap 3.39e-16)  L12n3:-0(gap 1.69e-16)
+m=1.4: L8n1:-0(gap 1.45e-04)  L8n2:-0(gap 7.69e-03)  L8n3:-0(gap 3.13e-02)  L12n1:-0(gap 1.13e-08)  L12n2:-0(gap 5.54e-05)  L12n3:-0(gap 1.03e-03)
+T4 verdict: FAIL

@@ -1,0 +1,16 @@
+# NT-1' T0 checks Lx=4 Lt=8 N=64 nl=60 np=28
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+builder vs lat2d.full_D: max diff 0.00e+00
+dq/dA analytic vs FD: max diff 6.77e-11 (max |R| 3.53e-02); gauge annihilation max|R dw| 8.6e-16
+canon: dF 1.1e-16 dW 2.8e-16 max|A_t| 0.0e+00 orbit-independence 1.1e-15 theta-covariance 1.1e-16
+[11112] ray Ns=8 on 3 configs: 0.09s (30 ms/config); identity check 1.3e-15; |div kbb - Abar| 1.6e-15; |sum Abar| 6.3e-15; gmin 0.653 idx_ok True
+   kbb gauge invariance (non-canonical rep, same ray in gauge-transformed A): 1.7e-15; |kQ|/|kloc| = 6.37e-04/3.20e-04; mean|mbar| bulk 3.923e-03
+[L1] ray Ns=8 on 3 configs: 0.04s (13 ms/config); identity check 3.6e-16; |div kbb - Abar| 1.7e-16; |sum Abar| 6.7e-16; gmin 0.683 idx_ok True
+   kbb gauge invariance (non-canonical rep, same ray in gauge-transformed A): 4.3e-16; |kQ|/|kloc| = 1.20e-02/1.36e-03; mean|mbar| bulk 1.405e-01
+done [0s]
+watchdog peak RSS 109232 KB

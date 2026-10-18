@@ -1,0 +1,4 @@
+Lx=2: exact circulant N=64: lam_min +3.229241e-03 at j=21 (|j| = 21), lam_max 2.337148e+00, min/max +1.382e-03 | N x tail bound 1.3e-05 | certified-negative False | PSD True | negative modes j: []
+Lx=3: exact circulant N=64: lam_min -3.989773e-03 at j=57 (|j| = 7), lam_max 4.458516e-01, min/max -8.949e-03 | N x tail bound 2.1e-12 | certified-negative True | PSD False | negative modes j: [np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(10), np.int64(16), np.int64(17), np.int64(18), np.int64(19), np.int64(20), np.int64(26), np.int64(27)]
+Lx=4: exact circulant N=64: lam_min +2.824004e-08 at j=32 (|j| = 32), lam_max 8.515018e-02, min/max +3.316e-07 | N x tail bound 4.4e-19 | certified-negative False | PSD True | negative modes j: []
+           102580224  maximum resident set size

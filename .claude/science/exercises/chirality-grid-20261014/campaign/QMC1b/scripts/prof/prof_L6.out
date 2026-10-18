@@ -1,0 +1,31 @@
+init+stack 12.2s
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+one sweep 55.0s acc 0.85
+         1094480 function calls in 54.961 seconds
+
+   Ordered by: internal time
+   List reduced from 155 to 14 due to restriction <14>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     2880   15.190    0.005   18.907    0.007 /private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1b/scripts/prof/../afqmc.py:266(update_vertex)
+     1280   11.531    0.009   11.532    0.009 /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/fft/_pocketfft.py:58(_raw_fft)
+       40    5.377    0.134    5.377    0.134 /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/linalg/_decomp_qr.py:13(safecall)
+     8640    4.359    0.001    4.964    0.001 /private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1b/scripts/prof/../afqmc.py:189(vert_left)
+     2880    4.288    0.001    4.494    0.002 /private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1b/scripts/prof/../afqmc.py:200(vert_right)
+       11    2.227    0.202    4.198    0.382 /private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1b/scripts/prof/../afqmc.py:251(green)
+       20    2.036    0.102    7.530    0.377 /private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1b/scripts/prof/../afqmc.py:227(udv_step)
+     5760    1.535    0.000    1.548    0.000 /private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1b/scripts/prof/../afqmc.py:153(channel_exps)
+      320    1.439    0.004   13.211    0.041 /private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1b/scripts/prof/../afqmc.py:177(kin_left)
+       21    1.369    0.065    1.369    0.065 /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/linalg/_decomp_lu.py:192(_lu_solve)
+    22184    1.201    0.000    1.387    0.000 /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/_core/numeric.py:1001(tensordot)
+     5760    1.031    0.000    1.036    0.000 /private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1b/scripts/prof/../afqmc.py:168(_chain)
+        1    0.649    0.649   54.961   54.961 /private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1b/scripts/prof/../afqmc.py:306(sweep)
+      160    0.477    0.003    0.477    0.003 {built-in method numpy.ascontiguousarray}
+
+
+watchdog peak RSS 692736 KB

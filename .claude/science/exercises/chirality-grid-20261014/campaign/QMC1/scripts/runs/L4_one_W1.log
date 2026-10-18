@@ -1,0 +1,19 @@
+[run] kind=spin10 dims=(4, 4) filt=one rho=1.0 W=1.0 beta=4.0 dtau=0.1 Lt=40 ns=2 Nd=512 nch=64 eq_pts=[20]
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+[warm 0] acc 0.702 step 0.3750 maxphase 8.6e-13 maxdev 2.4e-12 t 5s rss 444MB
+[warm 10] acc 0.484 step 0.4688 maxphase 1.6e-12 maxdev 4.1e-12 t 36s rss 655MB
+[warm 19] acc 0.389 step 0.4688 maxphase 1.6e-12 maxdev 4.1e-12 t 65s rss 677MB
+[meas 0] acc 0.433 S10(Q0) 187.8595 WQ -1211.3583 Gm(beta/2) 0.0005 maxphase 1.6e-12 maxdev 4.1e-12 lightdev 0.0e+00 t 68s rss 677MB
+[meas 10] acc 0.359 S10(Q0) 129.2428 WQ -1213.9308 Gm(beta/2) -0.0000 maxphase 1.6e-12 maxdev 4.1e-12 lightdev 0.0e+00 t 102s rss 677MB
+[meas 20] acc 0.305 S10(Q0) 133.6179 WQ -1114.3919 Gm(beta/2) -0.0000 maxphase 1.6e-12 maxdev 4.1e-12 lightdev 0.0e+00 t 136s rss 677MB
+[meas 30] acc 0.312 S10(Q0) 114.2420 WQ -1106.2621 Gm(beta/2) -0.0000 maxphase 1.6e-12 maxdev 4.1e-12 lightdev 0.0e+00 t 169s rss 677MB
+[meas 40] acc 0.272 S10(Q0) 97.6653 WQ -1236.1776 Gm(beta/2) -0.0000 maxphase 1.6e-12 maxdev 4.1e-12 lightdev 0.0e+00 t 203s rss 677MB
+[meas 50] acc 0.269 S10(Q0) 104.5142 WQ -1117.7314 Gm(beta/2) -0.0000 maxphase 1.6e-12 maxdev 4.1e-12 lightdev 0.0e+00 t 235s rss 677MB
+[meas 59] acc 0.258 S10(Q0) 123.5440 WQ -1119.1388 Gm(beta/2) -0.0000 maxphase 1.6e-12 maxdev 4.1e-12 lightdev 0.0e+00 t 264s rss 677MB
+[done] 60 sweeps, 3.33 s/sweep, maxphase 1.58e-12, maxdev 4.10e-12, peak RSS 677 MB, total 264s
+watchdog peak RSS 693616 KB

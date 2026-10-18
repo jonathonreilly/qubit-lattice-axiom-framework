@@ -1,0 +1,10 @@
+sample 3000: g_Re (= -g_Im) per family {'sing:8v': np.float64(-8.0), 'trip:8v': np.float64(-8.0), 'sing:56v': np.float64(8.0), 'trip:56v': np.float64(8.0)}; max relative residual 1.8e-15
+fresh 20000: g_Re (= -g_Im) per family {'sing:8v': np.float64(-8.0), 'trip:8v': np.float64(-8.0), 'sing:56v': np.float64(8.0), 'trip:56v': np.float64(8.0)}; max relative residual 7.4e-16
+  pair:sing:8v: Re parity even, Im parity odd
+  pair:trip:8v: Re parity odd, Im parity even
+  pair:sing:56v: Re parity even, Im parity odd
+  pair:trip:56v: Re parity odd, Im parity even
+sign-free iff each family has g_Re <= 0 when Re is even (and then g_Im = -g_Re >= 0 on the odd Im), or g_Re >= 0 when Re is odd.
+singular values of the ansatz map: [7.42414392e-01 2.81410669e-01 8.30372616e-17 1.51640879e-17]
+kernel dimension 2; kernel vector(s): [[-0.750694, -0.090364, -0.613665, -0.227393], [0.421708, -0.815014, -0.397363, 0.004057]]
+max-margin sign-correct Fierz point: g_Re = [-34.0, 2.0, -2.0, 2.0], margin 2.0000, residual 6.7e-16

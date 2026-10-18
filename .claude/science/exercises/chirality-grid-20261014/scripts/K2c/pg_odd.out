@@ -1,0 +1,5 @@
+Lx=1: Fourier coeffs of K_PG negative at n = [6, 7, 8, 9, 10, 16, 17, 18, 19, 20, 27, 28] ... | circulant N=64: lam_min -2.8794e+00 lam_max 1.3000e+01 min/max -2.215e-01 | grid change 8.9e-15 | certified-negative True PSD False
+Lx=2: Fourier coeffs of K_PG negative at n = [] | circulant N=64: lam_min +3.2279e-03 lam_max 2.3372e+00 min/max +1.381e-03 | grid change 1.9e-04 | certified-negative False PSD True
+Lx=3: Fourier coeffs of K_PG negative at n = [6, 7, 8, 9, 10, 16, 17, 18, 19, 20, 27, 28] ... | circulant N=64: lam_min -3.9899e-03 lam_max 4.4586e-01 min/max -8.949e-03 | grid change 5.3e-05 | certified-negative False PSD True
+Lx=4: Fourier coeffs of K_PG negative at n = [] | circulant N=64: lam_min +2.8257e-08 lam_max 8.5151e-02 min/max +3.318e-07 | grid change 1.4e-05 | certified-negative False PSD True
+            96239616  maximum resident set size

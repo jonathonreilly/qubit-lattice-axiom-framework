@@ -1,0 +1,8 @@
+Wilson fermion foliated row (dZ_s - dZ_4): 3-pt (16,24,32) 0.8497 ; 3-pt (12,16,24) 0.8497 ; 4-pt 0.8498
+scalar 4D brute force row: 3-pt (64,96,128) 0.523597 ; 4-pt (48..128) 0.523589 ; exact pi/6 = 0.523599
+bound 1e-06 scalar     a/l_P >= 724  1/a <= 1.69e+16 GeV
+bound 1e-06 Wilson cmp a/l_P >= 917  1/a <= 1.33e+16 GeV
+bound 1e-15 scalar     a/l_P >= 2.29e+07  1/a <= 5.34e+11 GeV
+bound 1e-15 Wilson cmp a/l_P >= 2.9e+07  1/a <= 4.21e+11 GeV
+bound 1e-21 scalar     a/l_P >= 2.29e+10  1/a <= 5.34e+08 GeV
+bound 1e-21 Wilson cmp a/l_P >= 2.9e+10  1/a <= 4.21e+08 GeV

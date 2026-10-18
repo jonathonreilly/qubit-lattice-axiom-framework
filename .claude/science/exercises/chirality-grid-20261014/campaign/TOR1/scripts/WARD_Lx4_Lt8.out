@@ -1,0 +1,20 @@
+# TOR-1 Ward Lx=4 Lt=8: Delta = log rho(A^T + d omega) - log rho(A^T) (phase mod 2pi, modulus); 3 fields
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+s_k=-1 Ns= 4 omega=small: max|dphase| 2.486e-06  max|dmod| 4.263e-14  [8s]
+s_k=-1 Ns= 4 omega=big  : max|dphase| 6.198e-01  max|dmod| 7.816e-14  [8s]
+s_k=-1 Ns= 8 omega=small: max|dphase| 1.519e-07  max|dmod| 1.350e-13  [17s]
+s_k=-1 Ns= 8 omega=big  : max|dphase| 6.626e-03  max|dmod| 1.421e-14  [17s]
+s_k=-1 Ns=16 omega=small: max|dphase| 9.444e-09  max|dmod| 6.395e-14  [26s]
+s_k=-1 Ns=16 omega=big  : max|dphase| 1.988e-04  max|dmod| 9.237e-14  [26s]
+s_k=+1 Ns= 4 omega=small: max|dphase| 3.359e-03  max|dmod| 4.263e-14  [34s]
+s_k=+1 Ns= 4 omega=big  : max|dphase| 6.215e-01  max|dmod| 7.816e-14  [35s]
+s_k=+1 Ns= 8 omega=small: max|dphase| 3.359e-03  max|dmod| 1.350e-13  [43s]
+s_k=+1 Ns= 8 omega=big  : max|dphase| 2.537e-02  max|dmod| 1.421e-14  [44s]
+s_k=+1 Ns=16 omega=small: max|dphase| 3.359e-03  max|dmod| 6.395e-14  [52s]
+s_k=+1 Ns=16 omega=big  : max|dphase| 1.876e-02  max|dmod| 9.237e-14  [52s]
+watchdog peak RSS 156976 KB

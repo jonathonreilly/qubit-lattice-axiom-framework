@@ -1,0 +1,36 @@
+walker corner frames verified: H_c = chi_c sigma.q in canonical frame for all 8 corners
+A1: all 24 rotation internal parts are scalar (+-1) on each corner Weyl doublet: True (asserted)
+A1: emanant internal group (rotations x corner translations) acting on 8 corners: order 48; all elements signed permutation matrices: True
+  corner (0, 0, 0) (hw0, R): stabiliser character values [1]
+  corner (0, 0, 1) (hw1, L): stabiliser character values [-1, 1]
+  corner (0, 1, 0) (hw1, L): stabiliser character values [-1, 1]
+  corner (0, 1, 1) (hw2, R): stabiliser character values [-1, 1]
+  corner (1, 0, 0) (hw1, L): stabiliser character values [-1, 1]
+  corner (1, 0, 1) (hw2, R): stabiliser character values [-1, 1]
+  corner (1, 1, 0) (hw2, R): stabiliser character values [-1, 1]
+  corner (1, 1, 1) (hw3, L): stabiliser character values [-1, 1]
+A1 verdict: stabiliser characters take values in [-1, 1] subset of {+-1, +-i}: True  -> absorption lemma hypothesis HOLDS
+A1: corner orbits under the emanant group: [((0, 0, 0),), ((0, 0, 1), (0, 1, 0), (1, 0, 0)), ((0, 1, 1), (1, 0, 1), (1, 1, 0)), ((1, 1, 1),)]
+
+A3: Spin-Z4 elements u = g z^j checked (element x invariant set pairs): 344
+  light hw1             : per-component nu values [-3, -1, 1, 3];  d=16 -> all 0 mod 16: True;  d=1 obstructed: True;  d=15 obstructed: True
+  mirror hw0+hw2+hw3    : per-component nu values [-5, -3, -1, 1, 3, 5];  d=16 -> all 0 mod 16: True;  d=1 obstructed: True;  d=15 obstructed: True
+  whole                 : per-component nu values [-8, 0, 8];  d=16 -> all 0 mod 16: True;  d=1 obstructed: True;  d=15 obstructed: True
+  single (0, 0, 0)      : per-component nu values [-1, 1];  d=16 -> all 0 mod 16: True;  d=1 obstructed: True;  d=15 obstructed: True
+  single (0, 0, 1)      : per-component nu values [-1, 1];  d=16 -> all 0 mod 16: True;  d=1 obstructed: True;  d=15 obstructed: True
+  single (0, 1, 0)      : per-component nu values [-1, 1];  d=16 -> all 0 mod 16: True;  d=1 obstructed: True;  d=15 obstructed: True
+  single (0, 1, 1)      : per-component nu values [-1, 1];  d=16 -> all 0 mod 16: True;  d=1 obstructed: True;  d=15 obstructed: True
+  single (1, 0, 0)      : per-component nu values [-1, 1];  d=16 -> all 0 mod 16: True;  d=1 obstructed: True;  d=15 obstructed: True
+  single (1, 0, 1)      : per-component nu values [-1, 1];  d=16 -> all 0 mod 16: True;  d=1 obstructed: True;  d=15 obstructed: True
+  single (1, 1, 0)      : per-component nu values [-1, 1];  d=16 -> all 0 mod 16: True;  d=1 obstructed: True;  d=15 obstructed: True
+  single (1, 1, 1)      : per-component nu values [-1, 1];  d=16 -> all 0 mod 16: True;  d=1 obstructed: True;  d=15 obstructed: True
+A3 verdict (d = 16): nonzero classes found: none
+A4 control: mirror, u = Z4^X only, per component nu = -3; x15 mod 16 = 3 (F6-tC reported 3)  -> control PASS
+A4 control: C1 mirror per-component nu over T^v i^F, v in {0,1}^3 = [-3, -1, -1, 1, -1, 1, 1, -5] (C1: [-3,-1,-1,1,-1,1,1,-5]) -> PASS
+
+A3': CP^2 torus-reducible Spin x_Z2 Spin(10) bundles tested: 8404; bundles with odd ind(16): 0
+     -> mixed class S^1(A,T_x) x CP^2 = (-1)^{(#corners with n_x=1) * ind(16)}: trivial for every corner set
+     control (one spin^c Weyl, c = 3): ind = 1 (odd) -> the same class detects a single charged Weyl
+     axis 0: corners with n_a = 1: light 1, mirror 3 (odd count would expose a d=1-type single-weight anomaly)
+     axis 1: corners with n_a = 1: light 1, mirror 3 (odd count would expose a d=1-type single-weight anomaly)
+     axis 2: corners with n_a = 1: light 1, mirror 3 (odd count would expose a d=1-type single-weight anomaly)

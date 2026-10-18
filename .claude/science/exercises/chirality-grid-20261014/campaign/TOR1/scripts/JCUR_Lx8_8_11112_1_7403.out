@@ -1,0 +1,13 @@
+# TOR-1 measure current Lx=8 Lt=8 model=11112 eps=0.0001 dlt=0.001 Ns=8
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+field 0 Ward: sum_l (d omega)_l j_l = -8.6184529124e-04; sum_x omega q_tot = -8.6794125111e-04; ratio +0.99297653
+field 0 Ward: sum_l (d omega)_l j_l = -7.2460648520e-04; sum_x omega q_tot = -7.3618735840e-04; ratio +0.98426912
+field 0 Ward: sum_l (d omega)_l j_l = +1.7750257745e-04; sum_x omega q_tot = +1.5983903064e-04; ratio +1.11050835
+field 0 source x(1, 2): |dj/dtheta| vs d: 0.0:1.07e-04 1.0:3.09e-04 2.0:4.23e-04 3.0:3.90e-04 4.0:3.83e-04 5.0:4.89e-05 6.0:4.22e-05 7.0:2.78e-05 8.0:1.36e-05 | fit rate 0.526 +- 0.094 [315s]
+field 0 source t(2, 1): |dj/dtheta| vs d: 0.0:1.26e-04 1.0:6.49e-04 2.0:9.76e-04 3.0:3.11e-04 4.0:3.23e-04 5.0:5.66e-05 6.0:2.49e-05 7.0:2.31e-05 8.0:1.71e-05 | fit rate 0.637 +- 0.081 [516s]
+watchdog peak RSS 393984 KB

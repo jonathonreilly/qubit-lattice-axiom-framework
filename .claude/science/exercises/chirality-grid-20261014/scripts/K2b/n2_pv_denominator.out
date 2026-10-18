@@ -1,0 +1,4 @@
+det D5(1) kernel L_s=4: lam_min +1.3359e-07 min/max +8.3221e-09 E 1.2e-12 PSD-within-error True [9s]
+det D5(1) kernel L_s=8: lam_min +1.5786e-07 min/max +9.8552e-09 E 3.5e-12 PSD-within-error True [51s]
+done
+           255475712  maximum resident set size

@@ -1,0 +1,13 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+Lx=12 Lt=8 W0=0.3 11112 gmin 0.210 idx True | J_Q(central row) 8.761e-08 max|kQ| 1.228e-07 | tau_kQ(s*) 4.035e-07 tau_kQ(Lx/2) 1.211e-12 tau_kbb(s*) 3.877e-07 | Abar rows: edge 1.228e-07 central 6.241e-11 (x-dev 1.2e-15) | |mbar| edge 1.954e-05 central 1.391e-05 | |hbar| edge 1.629e-06 central 8.255e-10 [4s]
+   Abar row profile (t=-3..4): -1.23e-07 +3.73e-08 -2.13e-09 +6.24e-11 -6.24e-11 +2.13e-09 -3.73e-08 +1.23e-07
+   Q t-link current per row        : -1.23e-07 -8.55e-08 -8.77e-08 -8.76e-08 -8.77e-08 -8.55e-08 -1.23e-07
+Lx=12 Lt=8 W0=0.3 L1    gmin 0.235 idx True | J_Q(central row) 1.988e-03 max|kQ| 1.988e-03 | tau_kQ(s*) 3.314e-03 tau_kQ(Lx/2) 3.491e-13 tau_kbb(s*) 3.315e-03 | Abar rows: edge 1.988e-03 central 6.905e-10 (x-dev 2.3e-16) | |mbar| edge 1.590e-01 central 1.591e-01 | |hbar| edge 1.325e-02 central 4.568e-09 [5s]
+   Abar row profile (t=-3..4): +1.99e-03 +5.56e-07 -2.37e-08 +6.91e-10 -6.91e-10 +2.37e-08 -5.56e-07 -1.99e-03
+   Q t-link current per row        : +1.99e-03 +1.99e-03 +1.99e-03 +1.99e-03 +1.99e-03 +1.99e-03 +1.99e-03
+watchdog peak RSS 227328 KB

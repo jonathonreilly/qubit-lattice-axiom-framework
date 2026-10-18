@@ -1,0 +1,8 @@
+eps=0 node K=0             r=1e-02: <sum_j |M_j|^2> = 1.999921   <|sin eps|> = 1.00e-02
+eps=0 node K=0             r=1e-03: <sum_j |M_j|^2> = 1.999999   <|sin eps|> = 1.00e-03
+eps=0 node K=0             r=1e-04: <sum_j |M_j|^2> = 2.000000   <|sin eps|> = 1.00e-04
+   ratio r=1e-3 / r=1e-4 = 1.0000 -> PASS (finite nonzero)
+eps=pi node K=(pi,0,0)     r=1e-02: <sum_j |M_j|^2> = 1.999923   <|sin eps|> = 1.00e-02
+eps=pi node K=(pi,0,0)     r=1e-03: <sum_j |M_j|^2> = 1.999999   <|sin eps|> = 1.00e-03
+eps=pi node K=(pi,0,0)     r=1e-04: <sum_j |M_j|^2> = 2.000000   <|sin eps|> = 1.00e-04
+   ratio r=1e-3 / r=1e-4 = 1.0000 -> PASS (finite nonzero)

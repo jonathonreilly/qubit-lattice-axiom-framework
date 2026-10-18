@@ -1,0 +1,7 @@
+sizes (4, 6, 8, 10): n per size [6, 6, 6, 6]; nu = 0.869 +- 0.064 (unscaled 0.061, chi2/dof 2.22/2) -> nu/sigma = 13.5
+   L1 Lx*plateau [0.0351 0.0386 0.0395 0.0397] max rel dev 0.082; ratio L1/11112 [  9.8  72.1 278.6 892.3]
+   fixed-wording items: sizes>=3 True; nu>0 at >=3 sigma True; L1 prop 1/Lx (+-20%) True; registered ratio>=10 at each size False
+sizes (6, 8, 10): n per size [6, 6, 6]; nu = 0.746 +- 0.104 (unscaled 0.104, chi2/dof 0.06/1) -> nu/sigma = 7.2
+   L1 Lx*plateau [0.0386 0.0395 0.0397] max rel dev 0.017; ratio L1/11112 [ 72.1 278.6 892.3]
+   fixed-wording items: sizes>=3 True; nu>0 at >=3 sigma True; L1 prop 1/Lx (+-20%) True; registered ratio>=10 at each size True
+watchdog peak RSS 13600 KB

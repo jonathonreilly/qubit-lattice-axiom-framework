@@ -1,0 +1,18 @@
+[run] kind=spin10 dims=(6, 6) filt=one rho=1.0 W=1.0 beta=4.0 dtau=0.1 Lt=40 ns=4 Nd=1152 nch=64 eq_pts=[10]
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+[warm 0] acc 0.713 step 0.3750 maxphase 1.3e-11 maxdev 3.9e-11 t 25s rss 855MB
+[warm 10] acc 0.490 step 0.4688 maxphase 4.2e-11 maxdev 2.9e-10 t 212s rss 874MB
+[warm 14] acc 0.472 step 0.4688 maxphase 4.2e-11 maxdev 2.9e-10 t 284s rss 874MB
+[meas 0] acc 0.458 S10(Q0) 222.3081 WQ -2787.8708 Gm(beta/2) 0.0019 maxphase 4.2e-11 maxdev 2.9e-10 lightdev 0.0e+00 t 303s rss 874MB
+[meas 10] acc 0.361 S10(Q0) 275.5141 WQ -2828.4710 Gm(beta/2) 0.0005 maxphase 4.2e-11 maxdev 2.9e-10 lightdev 0.0e+00 t 505s rss 876MB
+[meas 20] acc 0.349 S10(Q0) 230.8833 WQ -2411.2533 Gm(beta/2) -0.0000 maxphase 1.2e-10 maxdev 2.9e-10 lightdev 0.0e+00 t 692s rss 876MB
+[meas 30] acc 0.320 S10(Q0) 249.2530 WQ -2526.0077 Gm(beta/2) 0.0000 maxphase 1.4e-10 maxdev 3.6e-10 lightdev 0.0e+00 t 887s rss 876MB
+[meas 40] acc 0.276 S10(Q0) 169.5838 WQ -2315.3804 Gm(beta/2) -0.0000 maxphase 4.8e-10 maxdev 5.0e-10 lightdev 0.0e+00 t 1083s rss 878MB
+[meas 44] acc 0.266 S10(Q0) 138.2636 WQ -2344.4141 Gm(beta/2) 0.0000 maxphase 4.8e-10 maxdev 5.0e-10 lightdev 0.0e+00 t 1163s rss 878MB
+[done] 45 sweeps, 19.54 s/sweep, maxphase 4.85e-10, maxdev 4.96e-10, peak RSS 878 MB, total 1163s
+watchdog peak RSS 898944 KB

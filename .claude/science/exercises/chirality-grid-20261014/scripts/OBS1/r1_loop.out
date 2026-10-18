@@ -1,0 +1,99 @@
+N=32 m0=0.1 Delta=0.0 dt=0.02
+  h=0    dlnm=+2.38275959e-01 mass_part=+2.908615e-02 c=-5.258556e-02 additive_base=+0.0000e+00 other_comps=1.4e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=xx+  dlnm=+2.36920443e-01 mass_part=+2.890619e-02 c=-5.214151e-02 additive_base=+0.0000e+00 other_comps=1.3e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=xx-  dlnm=+2.39640899e-01 mass_part=+2.926745e-02 c=-5.303359e-02 additive_base=+0.0000e+00 other_comps=1.3e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=yy+  dlnm=+2.36920443e-01 mass_part=+2.890619e-02 c=-5.214151e-02 additive_base=+0.0000e+00 other_comps=1.4e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=yy-  dlnm=+2.39640899e-01 mass_part=+2.926745e-02 c=-5.303359e-02 additive_base=+0.0000e+00 other_comps=1.4e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=zz+  dlnm=+2.36920443e-01 mass_part=+2.890619e-02 c=-5.214151e-02 additive_base=+0.0000e+00 other_comps=1.4e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=zz-  dlnm=+2.39640899e-01 mass_part=+2.926745e-02 c=-5.303359e-02 additive_base=+0.0000e+00 other_comps=1.4e-14 wsum=1.000000 ward=1.1e-16  (0s)
+RESULT N=32 m0=0.1 Delta=0.0: dlnm0=+2.382760e-01  C_par=-6.801139e-02 C_perp(y)=-6.801139e-02 C_perp(z)=-6.801139e-02  K=C_par-C_perp=-4.510281e-15  trace-response=-2.040342e-01
+N=32 m0=0.05 Delta=0.0 dt=0.02
+  h=0    dlnm=+2.68411665e-01 mass_part=+1.657720e-02 c=-6.313232e-02 additive_base=+0.0000e+00 other_comps=1.4e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=xx+  dlnm=+2.66772709e-01 mass_part=+1.646822e-02 c=-6.259163e-02 additive_base=+0.0000e+00 other_comps=1.3e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=xx-  dlnm=+2.70062636e-01 mass_part=+1.668702e-02 c=-6.367783e-02 additive_base=+0.0000e+00 other_comps=1.3e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=yy+  dlnm=+2.66772709e-01 mass_part=+1.646822e-02 c=-6.259163e-02 additive_base=+0.0000e+00 other_comps=1.4e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=yy-  dlnm=+2.70062636e-01 mass_part=+1.668702e-02 c=-6.367783e-02 additive_base=+0.0000e+00 other_comps=1.4e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=zz+  dlnm=+2.66772709e-01 mass_part=+1.646822e-02 c=-6.259163e-02 additive_base=+0.0000e+00 other_comps=1.4e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=zz-  dlnm=+2.70062636e-01 mass_part=+1.668702e-02 c=-6.367783e-02 additive_base=+0.0000e+00 other_comps=1.4e-14 wsum=1.000000 ward=1.1e-16  (1s)
+RESULT N=32 m0=0.05 Delta=0.0: dlnm0=+2.684117e-01  C_par=-8.224817e-02 C_perp(y)=-8.224817e-02 C_perp(z)=-8.224817e-02  K=C_par-C_perp=-5.551115e-15  trace-response=-2.467445e-01
+N=32 m0=0.1 Delta=0.5 dt=0.02
+  h=0    dlnm=+1.99796238e-01 mass_part=+2.531435e-02 c=-5.334727e-02 additive_base=+4.7105e-02 other_comps=1.4e-14 wsum=1.000000 ward=2.2e-16  (0s)
+  h=xx+  dlnm=+1.98673208e-01 mass_part=+2.515767e-02 c=-5.290349e-02 additive_base=+4.7096e-02 other_comps=1.3e-14 wsum=1.000000 ward=2.2e-16  (0s)
+  h=xx-  dlnm=+2.00927173e-01 mass_part=+2.547222e-02 c=-5.379506e-02 additive_base=+4.7112e-02 other_comps=1.3e-14 wsum=1.000000 ward=3.3e-16  (0s)
+  h=yy+  dlnm=+1.98643411e-01 mass_part=+2.515457e-02 c=-5.290228e-02 additive_base=+4.6901e-02 other_comps=1.4e-14 wsum=1.000000 ward=2.2e-16  (1s)
+  h=yy-  dlnm=+2.00957114e-01 mass_part=+2.547534e-02 c=-5.379626e-02 additive_base=+4.7310e-02 other_comps=1.4e-14 wsum=1.000000 ward=3.3e-16  (1s)
+  h=zz+  dlnm=+1.98643411e-01 mass_part=+2.515457e-02 c=-5.290228e-02 additive_base=+4.6901e-02 other_comps=1.4e-14 wsum=1.000000 ward=1.1e-16  (1s)
+  h=zz-  dlnm=+2.00957114e-01 mass_part=+2.547534e-02 c=-5.379626e-02 additive_base=+4.7310e-02 other_comps=1.4e-14 wsum=1.000000 ward=2.2e-16  (1s)
+RESULT N=32 m0=0.1 Delta=0.5: dlnm0=+1.997962e-01  C_par=-5.634911e-02 C_perp(y)=-5.784258e-02 C_perp(z)=-5.784258e-02  K=C_par-C_perp=+1.493472e-03  trace-response=-1.720343e-01
+N=32 m0=0.05 Delta=0.5 dt=0.02
+  h=0    dlnm=+2.30559627e-01 mass_part=+1.472708e-02 c=-6.398193e-02 additive_base=+4.7105e-02 other_comps=1.4e-14 wsum=1.000000 ward=2.2e-16  (0s)
+  h=xx+  dlnm=+2.29151050e-01 mass_part=+1.462959e-02 c=-6.344070e-02 additive_base=+4.7096e-02 other_comps=1.3e-14 wsum=1.000000 ward=2.2e-16  (0s)
+  h=xx-  dlnm=+2.31978693e-01 mass_part=+1.482533e-02 c=-6.452800e-02 additive_base=+4.7112e-02 other_comps=1.3e-14 wsum=1.000000 ward=2.2e-16  (0s)
+  h=yy+  dlnm=+2.29124290e-01 mass_part=+1.462820e-02 c=-6.343965e-02 additive_base=+4.6901e-02 other_comps=1.4e-14 wsum=1.000000 ward=2.2e-16  (0s)
+  h=yy-  dlnm=+2.32005589e-01 mass_part=+1.482673e-02 c=-6.452904e-02 additive_base=+4.7310e-02 other_comps=1.4e-14 wsum=1.000000 ward=2.2e-16  (1s)
+  h=zz+  dlnm=+2.29124290e-01 mass_part=+1.462820e-02 c=-6.343965e-02 additive_base=+4.6901e-02 other_comps=1.4e-14 wsum=1.000000 ward=2.2e-16  (1s)
+  h=zz-  dlnm=+2.32005589e-01 mass_part=+1.482673e-02 c=-6.452904e-02 additive_base=+4.7310e-02 other_comps=1.4e-14 wsum=1.000000 ward=1.1e-16  (1s)
+RESULT N=32 m0=0.05 Delta=0.5: dlnm0=+2.305596e-01  C_par=-7.069107e-02 C_perp(y)=-7.203249e-02 C_perp(z)=-7.203249e-02  K=C_par-C_perp=+1.341419e-03  trace-response=-2.147561e-01
+N=48 m0=0.1 Delta=0.0 dt=0.02
+  h=0    dlnm=+2.37108669e-01 mass_part=+2.889296e-02 c=-5.182097e-02 additive_base=+0.0000e+00 other_comps=3.1e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=xx+  dlnm=+2.35761082e-01 mass_part=+2.871424e-02 c=-5.138129e-02 additive_base=+0.0000e+00 other_comps=3.5e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=xx-  dlnm=+2.38465680e-01 mass_part=+2.907303e-02 c=-5.226462e-02 additive_base=+0.0000e+00 other_comps=3.9e-14 wsum=1.000000 ward=1.1e-16  (1s)
+  h=yy+  dlnm=+2.35761082e-01 mass_part=+2.871424e-02 c=-5.138129e-02 additive_base=+0.0000e+00 other_comps=3.1e-14 wsum=1.000000 ward=1.1e-16  (1s)
+  h=yy-  dlnm=+2.38465680e-01 mass_part=+2.907303e-02 c=-5.226462e-02 additive_base=+0.0000e+00 other_comps=3.2e-14 wsum=1.000000 ward=1.1e-16  (1s)
+  h=zz+  dlnm=+2.35761082e-01 mass_part=+2.871424e-02 c=-5.138129e-02 additive_base=+0.0000e+00 other_comps=3.1e-14 wsum=1.000000 ward=1.1e-16  (1s)
+  h=zz-  dlnm=+2.38465680e-01 mass_part=+2.907303e-02 c=-5.226462e-02 additive_base=+0.0000e+00 other_comps=3.2e-14 wsum=1.000000 ward=1.1e-16  (1s)
+RESULT N=48 m0=0.1 Delta=0.0: dlnm0=+2.371087e-01  C_par=-6.761495e-02 C_perp(y)=-6.761495e-02 C_perp(z)=-6.761495e-02  K=C_par-C_perp=+2.428613e-15  trace-response=-2.028448e-01
+N=48 m0=0.05 Delta=0.0 dt=0.02
+  h=0    dlnm=+2.65599725e-01 mass_part=+1.634196e-02 c=-6.123952e-02 additive_base=+0.0000e+00 other_comps=3.1e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=xx+  dlnm=+2.63978084e-01 mass_part=+1.623435e-02 c=-6.070896e-02 additive_base=+0.0000e+00 other_comps=3.5e-14 wsum=1.000000 ward=1.1e-16  (0s)
+  h=xx-  dlnm=+2.67233430e-01 mass_part=+1.645042e-02 c=-6.177494e-02 additive_base=+0.0000e+00 other_comps=3.9e-14 wsum=1.000000 ward=1.1e-16  (1s)
+  h=yy+  dlnm=+2.63978084e-01 mass_part=+1.623435e-02 c=-6.070896e-02 additive_base=+0.0000e+00 other_comps=3.1e-14 wsum=1.000000 ward=1.1e-16  (1s)
+  h=yy-  dlnm=+2.67233430e-01 mass_part=+1.645042e-02 c=-6.177494e-02 additive_base=+0.0000e+00 other_comps=3.2e-14 wsum=1.000000 ward=1.1e-16  (1s)
+  h=zz+  dlnm=+2.63978084e-01 mass_part=+1.623435e-02 c=-6.070896e-02 additive_base=+0.0000e+00 other_comps=3.1e-14 wsum=1.000000 ward=1.1e-16  (1s)
+  h=zz-  dlnm=+2.67233430e-01 mass_part=+1.645042e-02 c=-6.177494e-02 additive_base=+0.0000e+00 other_comps=3.2e-14 wsum=1.000000 ward=1.1e-16  (1s)
+RESULT N=48 m0=0.05 Delta=0.0: dlnm0=+2.655997e-01  C_par=-8.138364e-02 C_perp(y)=-8.138364e-02 C_perp(z)=-8.138364e-02  K=C_par-C_perp=-1.387779e-14  trace-response=-2.441509e-01
+N=48 m0=0.1 Delta=0.5 dt=0.02
+  h=0    dlnm=+1.98486788e-01 mass_part=+2.510707e-02 c=-5.258389e-02 additive_base=+4.7091e-02 other_comps=3.1e-14 wsum=1.000000 ward=3.3e-16  (0s)
+  h=xx+  dlnm=+1.97371652e-01 mass_part=+2.495161e-02 c=-5.214448e-02 additive_base=+4.7082e-02 other_comps=3.5e-14 wsum=1.000000 ward=2.2e-16  (1s)
+  h=xx-  dlnm=+1.99609798e-01 mass_part=+2.526371e-02 c=-5.302730e-02 additive_base=+4.7098e-02 other_comps=3.9e-14 wsum=1.000000 ward=2.2e-16  (1s)
+  h=yy+  dlnm=+1.97341525e-01 mass_part=+2.494848e-02 c=-5.214326e-02 additive_base=+4.6888e-02 other_comps=3.1e-14 wsum=1.000000 ward=2.2e-16  (2s)
+  h=yy-  dlnm=+1.99640069e-01 mass_part=+2.526686e-02 c=-5.302851e-02 additive_base=+4.7296e-02 other_comps=3.2e-14 wsum=1.000000 ward=1.1e-16  (2s)
+  h=zz+  dlnm=+1.97341525e-01 mass_part=+2.494848e-02 c=-5.214326e-02 additive_base=+4.6888e-02 other_comps=3.1e-14 wsum=1.000000 ward=2.2e-16  (2s)
+  h=zz-  dlnm=+1.99640069e-01 mass_part=+2.526686e-02 c=-5.302851e-02 additive_base=+4.7296e-02 other_comps=3.2e-14 wsum=1.000000 ward=3.3e-16  (3s)
+RESULT N=48 m0=0.1 Delta=0.5: dlnm0=+1.984868e-01  C_par=-5.595363e-02 C_perp(y)=-5.746359e-02 C_perp(z)=-5.746359e-02  K=C_par-C_perp=+1.509956e-03  trace-response=-1.708808e-01
+N=48 m0=0.05 Delta=0.5 dt=0.02
+  h=0    dlnm=+2.27543079e-01 mass_part=+1.448167e-02 c=-6.209028e-02 additive_base=+4.7091e-02 other_comps=3.1e-14 wsum=1.000000 ward=2.2e-16  (0s)
+  h=xx+  dlnm=+2.26152189e-01 mass_part=+1.438557e-02 c=-6.155917e-02 additive_base=+4.7082e-02 other_comps=3.5e-14 wsum=1.000000 ward=2.2e-16  (1s)
+  h=xx-  dlnm=+2.28944474e-01 mass_part=+1.457854e-02 c=-6.262628e-02 additive_base=+4.7098e-02 other_comps=3.9e-14 wsum=1.000000 ward=2.2e-16  (1s)
+  h=yy+  dlnm=+2.26125171e-01 mass_part=+1.438417e-02 c=-6.155813e-02 additive_base=+4.6888e-02 other_comps=3.1e-14 wsum=1.000000 ward=2.2e-16  (2s)
+  h=yy-  dlnm=+2.28971629e-01 mass_part=+1.457995e-02 c=-6.262731e-02 additive_base=+4.7296e-02 other_comps=3.2e-14 wsum=1.000000 ward=2.2e-16  (2s)
+  h=zz+  dlnm=+2.26125171e-01 mass_part=+1.438417e-02 c=-6.155813e-02 additive_base=+4.6888e-02 other_comps=3.1e-14 wsum=1.000000 ward=2.2e-16  (2s)
+  h=zz-  dlnm=+2.28971629e-01 mass_part=+1.457995e-02 c=-6.262731e-02 additive_base=+4.7296e-02 other_comps=3.2e-14 wsum=1.000000 ward=2.2e-16  (3s)
+RESULT N=48 m0=0.05 Delta=0.5: dlnm0=+2.275431e-01  C_par=-6.980713e-02 C_perp(y)=-7.116143e-02 C_perp(z)=-7.116143e-02  K=C_par-C_perp=+1.354299e-03  trace-response=-2.121300e-01
+N=64 m0=0.1 Delta=0.5 dt=0.02
+  h=0    dlnm=+1.98061084e-01 mass_part=+2.504117e-02 c=-5.235058e-02 additive_base=+4.7086e-02 other_comps=5.6e-14 wsum=1.000000 ward=2.2e-16  (1s)
+  h=xx+  dlnm=+1.96948648e-01 mass_part=+2.488612e-02 c=-5.191258e-02 additive_base=+4.7077e-02 other_comps=6.3e-14 wsum=1.000000 ward=3.3e-16  (2s)
+  h=xx-  dlnm=+1.99181379e-01 mass_part=+2.519740e-02 c=-5.279257e-02 additive_base=+4.7094e-02 other_comps=5.2e-14 wsum=1.000000 ward=3.3e-16  (4s)
+  h=yy+  dlnm=+1.96918382e-01 mass_part=+2.488297e-02 c=-5.191135e-02 additive_base=+4.6883e-02 other_comps=5.6e-14 wsum=1.000000 ward=3.3e-16  (5s)
+  h=yy-  dlnm=+1.99211788e-01 mass_part=+2.520056e-02 c=-5.279379e-02 additive_base=+4.7291e-02 other_comps=5.6e-14 wsum=1.000000 ward=3.3e-16  (6s)
+  h=zz+  dlnm=+1.96918382e-01 mass_part=+2.488297e-02 c=-5.191135e-02 additive_base=+4.6883e-02 other_comps=5.6e-14 wsum=1.000000 ward=2.2e-16  (7s)
+  h=zz-  dlnm=+1.99211788e-01 mass_part=+2.520056e-02 c=-5.279379e-02 additive_base=+4.7291e-02 other_comps=5.6e-14 wsum=1.000000 ward=3.3e-16  (9s)
+RESULT N=64 m0=0.1 Delta=0.5: dlnm0=+1.980611e-01  C_par=-5.581827e-02 C_perp(y)=-5.733515e-02 C_perp(z)=-5.733515e-02  K=C_par-C_perp=+1.516877e-03  trace-response=-1.704886e-01
+N=64 m0=0.05 Delta=0.0 dt=0.02
+  h=0    dlnm=+2.64738531e-01 mass_part=+1.627234e-02 c=-6.070831e-02 additive_base=+0.0000e+00 other_comps=5.6e-14 wsum=1.000000 ward=1.1e-16  (1s)
+  h=xx+  dlnm=+2.63122434e-01 mass_part=+1.616516e-02 c=-6.018084e-02 additive_base=+0.0000e+00 other_comps=6.3e-14 wsum=1.000000 ward=1.1e-16  (1s)
+  h=xx-  dlnm=+2.66366676e-01 mass_part=+1.638037e-02 c=-6.124064e-02 additive_base=+0.0000e+00 other_comps=5.2e-14 wsum=1.000000 ward=1.2e-16  (2s)
+  h=yy+  dlnm=+2.63122434e-01 mass_part=+1.616516e-02 c=-6.018084e-02 additive_base=+0.0000e+00 other_comps=5.6e-14 wsum=1.000000 ward=1.1e-16  (2s)
+  h=yy-  dlnm=+2.66366676e-01 mass_part=+1.638037e-02 c=-6.124064e-02 additive_base=+0.0000e+00 other_comps=5.6e-14 wsum=1.000000 ward=1.1e-16  (3s)
+  h=zz+  dlnm=+2.63122434e-01 mass_part=+1.616516e-02 c=-6.018084e-02 additive_base=+0.0000e+00 other_comps=5.6e-14 wsum=1.000000 ward=1.1e-16  (4s)
+  h=zz-  dlnm=+2.66366676e-01 mass_part=+1.638037e-02 c=-6.124064e-02 additive_base=+0.0000e+00 other_comps=5.6e-14 wsum=1.000000 ward=1.1e-16  (4s)
+RESULT N=64 m0=0.05 Delta=0.0: dlnm0=+2.647385e-01  C_par=-8.110606e-02 C_perp(y)=-8.110606e-02 C_perp(z)=-8.110606e-02  K=C_par-C_perp=-8.326673e-15  trace-response=-2.433182e-01
+N=64 m0=0.1 Delta=0.0 dt=0.02
+  h=0    dlnm=+2.36711777e-01 mass_part=+2.882990e-02 c=-5.158718e-02 additive_base=+0.0000e+00 other_comps=5.6e-14 wsum=1.000000 ward=1.1e-16  (1s)
+  h=xx+  dlnm=+2.35366929e-01 mass_part=+2.865158e-02 c=-5.114892e-02 additive_base=+0.0000e+00 other_comps=6.3e-14 wsum=1.000000 ward=1.1e-16  (1s)
+  h=xx-  dlnm=+2.38066042e-01 mass_part=+2.900955e-02 c=-5.202942e-02 additive_base=+0.0000e+00 other_comps=5.2e-14 wsum=1.000000 ward=1.2e-16  (2s)
+  h=yy+  dlnm=+2.35366929e-01 mass_part=+2.865158e-02 c=-5.114892e-02 additive_base=+0.0000e+00 other_comps=5.6e-14 wsum=1.000000 ward=1.1e-16  (3s)
+  h=yy-  dlnm=+2.38066042e-01 mass_part=+2.900955e-02 c=-5.202942e-02 additive_base=+0.0000e+00 other_comps=5.6e-14 wsum=1.000000 ward=1.1e-16  (3s)
+  h=zz+  dlnm=+2.35366929e-01 mass_part=+2.865158e-02 c=-5.114892e-02 additive_base=+0.0000e+00 other_comps=5.6e-14 wsum=1.000000 ward=1.1e-16  (4s)
+  h=zz-  dlnm=+2.38066042e-01 mass_part=+2.900955e-02 c=-5.202942e-02 additive_base=+0.0000e+00 other_comps=5.6e-14 wsum=1.000000 ward=1.1e-16  (4s)
+RESULT N=64 m0=0.1 Delta=0.0: dlnm0=+2.367118e-01  C_par=-6.747784e-02 C_perp(y)=-6.747784e-02 C_perp(z)=-6.747784e-02  K=C_par-C_perp=+9.714451e-15  trace-response=-2.024335e-01

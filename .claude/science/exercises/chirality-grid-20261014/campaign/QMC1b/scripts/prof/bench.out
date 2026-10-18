@@ -1,0 +1,5 @@
+L4 fft 2.5 ms  dft-matmul 0.4 ms  maxdiff 2.2e-14
+L4 update numpy 0.52 ms  zgemm-inplace 0.38 ms  shares True  diff 8.2e-13
+L6 fft 17.5 ms  dft-matmul 5.5 ms  maxdiff 1.1e-13
+L6 update numpy 4.48 ms  zgemm-inplace 3.12 ms  shares True  diff 8.5e-13
+watchdog peak RSS 211328 KB

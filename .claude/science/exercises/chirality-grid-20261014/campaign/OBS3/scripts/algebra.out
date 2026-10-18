@@ -1,0 +1,21 @@
+(1) N=96 m0=0.1 Delta=0.5: Higgs on-site I_00(e_x) per axis [-0.01122 -0.0116  -0.0116 ];  flavon K(x,y) (own, partner, third) [-0.0116  -0.01122 -0.0116 ]
+(1) N=96 m0=0.025 Delta=0.5: Higgs on-site I_00(e_x) per axis [-0.01135 -0.01157 -0.01157];  flavon K(x,y) (own, partner, third) [-0.01157 -0.01135 -0.01157]
+(1) N=96 m0=0.025 Delta=0.0: Higgs on-site I_00(e_x) per axis [-0.01163 -0.01163 -0.01163];  flavon K(x,y) (own, partner, third) [-0.01163 -0.01163 -0.01163]
+(2) row 2 of a dephased Hadamard: a = exp(i +2.0944), b = exp(i -2.0944)  (only +-2pi/3 solve 1+a+b=0 with |a|=|b|=1)
+(2) row 2 of a dephased Hadamard: a = exp(i -2.0944), b = exp(i +2.0944)  (only +-2pi/3 solve 1+a+b=0 with |a|=|b|=1)
+(3) a unitary equivalent (rephasing + row/column permutations) to a circulant has a Latin-square moduli matrix:
+    every row and every column holds the same multiset {|c0|,|c1|,|c2|}. Compare sorted rows/columns (direct PDG 2024 moduli):
+    rows smallest: 0.00382(0.00020), 0.04110(0.00120), 0.00860(0.00020)   max pairwise pull 30.6 sigma
+    rows middle  : 0.22430(0.00080), 0.22100(0.00400), 0.04150(0.00090)   max pairwise pull 151.8 sigma
+    rows largest : 0.97367(0.00032), 0.97500(0.00600), 1.01000(0.02700)   max pairwise pull 1.3 sigma
+    cols smallest: 0.00860(0.00020), 0.04150(0.00090), 0.00382(0.00020)   max pairwise pull 40.9 sigma
+    cols middle  : 0.22100(0.00400), 0.22430(0.00080), 0.04110(0.00120)   max pairwise pull 127.0 sigma
+    cols largest : 0.97367(0.00032), 0.97500(0.00600), 1.01000(0.02700)   max pairwise pull 1.3 sigma
+    global-fit |V| (input) =
+[[0.97435 0.22501 0.00373]
+ [0.22488 0.97349 0.04182]
+ [0.00858 0.0411  0.99912]]
+(4) up-flat => |W_d,cd|^2 deviation >= (2/3)(|V_ud||...| pair bound 0.2088)(cos 30deg) = 0.1206
+(4) up-flat => |W_d,cs|^2 deviation >= (2/3)(|V_us||...| pair bound 0.1698)(cos 30deg) = 0.0980
+(4) up-flat => |W_d,cb|^2 deviation >= (2/3)(|V_ub||...| pair bound 0.0379)(cos 30deg) = 0.0219
+watchdog peak RSS 11696 KB

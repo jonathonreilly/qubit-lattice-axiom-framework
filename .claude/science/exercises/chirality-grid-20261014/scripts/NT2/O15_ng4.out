@@ -1,0 +1,3 @@
+PPoly check T3*Psi: 1.376676550535194e-13
+RESULT O15 ng=4 (1024 smooth test fns, rho=0.1): lam_min -9.0139e-03 (n1: -9.0139e-03) lam_max 4.2197e+02 rel -2.136e-05 | E 9.9e-07 | neg-converged True | 18.2s RSS 131MB
+watchdog peak RSS 132736 KB

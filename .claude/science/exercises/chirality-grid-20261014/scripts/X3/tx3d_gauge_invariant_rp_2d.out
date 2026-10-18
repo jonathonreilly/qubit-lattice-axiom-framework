@@ -1,0 +1,15 @@
+convergence check (E, s=1.0, first set):
+   op=W n=4: min eig/max = +3.5146e-05, herm defect 4.7e-15
+   op=W n=6: min eig/max = +3.5146e-05, herm defect 4.2e-15
+   W: max |Zt(n=8) - Zt(n=6)| = 3.77e-15
+   op=W n=8: min eig/max = +3.5146e-05, herm defect 5.2e-15
+   op=O n=4: min eig/max = +3.5365e-02, herm defect 2.8e-15
+   op=O n=6: min eig/max = +4.9109e-03, herm defect 2.8e-15
+   O: max |Zt(n=8) - Zt(n=6)| = 4.05e-02
+   op=O n=8: min eig/max = -6.0109e-04, herm defect 3.0e-15
+s=0.3 set 0: Wilson min/max +1.168e-06 (herm 4.2e-15) | overlap min/max +3.230e-03 (herm 4.1e-15)
+s=0.3 set 1: Wilson min/max +9.171e-06 (herm 1.1e-14) | overlap min/max +6.306e-03 (herm 3.0e-15)
+s=0.3 set 2: Wilson min/max +3.696e-06 (herm 8.3e-15) | overlap min/max +1.639e-02 (herm 3.7e-15)
+s=0.3 set 3: Wilson min/max +8.458e-06 (herm 5.4e-15) | overlap min/max +2.032e-02 (herm 2.3e-15)
+s=1.0 set 0: Wilson min/max +3.515e-05 (herm 4.2e-15) | overlap min/max +4.911e-03 (herm 2.8e-15)
+[killed by agent at 14:41Z after s=1.0 set 0: quadrature not converged for the overlap, see PREREG T-X3d result line]

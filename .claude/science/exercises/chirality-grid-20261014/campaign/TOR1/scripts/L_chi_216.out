@@ -1,0 +1,9 @@
+# TOR-1 kernel pool=pool_TOR1_srch_Lt4_k6_s3201.npz Lx=4 Lt=4 k=6 level (n=2, nw=16) ops=['chi'] pairs=upper (21 entries)
+  entry 1/21 (0,0) nodes 16384 [136s]
+  entry 6/21 (0,5) nodes 16384 [741s]
+  entry 11/21 (1,5) nodes 16384 [1347s]
+  entry 16/21 (3,3) nodes 16384 [1954s]
+  entry 21/21 (5,5) nodes 16384 [2556s]
+node checks: max|F| over all nodes 0.5887 (hard support 0.6, bulk margin 0.55); max |Q| 0
+saved pool_TOR1_srch_Lt4_k6_s3201_L2_16_chi_upper.npz done [2556s]
+watchdog peak RSS 401056 KB

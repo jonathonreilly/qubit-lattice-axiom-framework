@@ -1,0 +1,6 @@
+U_g (T4 exact)                   W3(N=32,48,64) = +3.9014, +3.9558, +3.9751  extrapolated = +3.9996  target sum chi(eps=0) = +4  PASS
+V = q_tr/|q_tr| (T4 range-2)     W3(N=32,48,64) = +3.9113, +3.9604, +3.9777  extrapolated = +3.9997  target sum chi(eps=0) = +4  PASS
+Wilson-normalized M=2            W3(N=32,48,64) = -0.9713, -0.9871, -0.9927  extrapolated = -0.9998  target sum chi(eps=0) = -1  PASS
+Wilson-normalized M=-2           W3(N=32,48,64) = -0.9713, -0.9871, -0.9927  extrapolated = -0.9998  target sum chi(eps=0) = -1  PASS
+Wilson-normalized M=0.5          W3(N=32,48,64) = +1.9132, +1.9606, +1.9776  extrapolated = +1.9989  target sum chi(eps=0) = +2  PASS
+OVERALL R1-F1: PASS

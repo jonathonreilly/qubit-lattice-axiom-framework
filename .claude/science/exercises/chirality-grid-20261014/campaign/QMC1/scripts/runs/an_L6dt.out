@@ -1,0 +1,13 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1/scripts/analysis.py:37: OptimizeWarning: Covariance of the parameters could not be estimated
+  p, _ = curve_fit(f, tau[sel], g[sel], p0=[max(g[sel].min(), 1e-6), 0.5], maxfev=20000)
+runs/L6dt_f2_W2_dt0.05.npz: n=30 46.31s/sweep acc=0.63 W=2.0 L=[6, 6] f2
+   S10(Q0) = 148.1255 +- 28.6623 (err at 80/40/20 bins: 23.2314, 23.2314, 28.6623); S10/N = 4.11460 +- 0.79618
+   S(Qpi) = 7.7410 +- 0.4105; WQ = -271.0039 +- 41.4275; WQ(HS channels) = -271.0039 +- 41.4275
+   per component SX0 [3.2371, 1.7112, 5.2523, 2.2971, 4.2308, 1.7316, 2.2304, 1.1914, 62.3948, 62.3948]
+   per component SY0 [0.1846, 0.102, 0.1195, 0.1428, 0.036, 0.1086, 0.0905, 0.1335, 0.2682, 0.2682]
+   mirror gap (cosh fit tau in [1, beta-1]) = 1.4882 +- 39.4007; c-block 34.0450 +- 4.8538
+   E2 weighted cosh gap [0.4, beta-0.4] = 4.0877 +- 0.8043; E3 weight bound w_1 = 2cosh(beta/2) G(beta/2) = 0.0750 +- 0.0883; E3w (window [1, beta-1]) = 0.0518 +- 0.0435
+   G_mirror(tau) = [0.4815, 0.1657, 0.0097, 0.0105, -0.0029, 0.01, 0.0083, 0.0086, 0.0461, 0.128, 0.5197]
+   G_light(tau)  = [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]  per-config light dev 8.9e-14
+   gate(ii) max|phase| 1.3e-11; wrap-vs-fresh max 2.7e-11
+watchdog peak RSS 73360 KB

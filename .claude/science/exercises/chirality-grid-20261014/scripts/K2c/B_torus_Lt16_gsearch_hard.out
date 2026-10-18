@@ -1,0 +1,26 @@
+# K2c gsearch op=O weight=hard torus Lx=2 Lt=16 K=24 seed=4216 delta=0.6 margin(bulk<= 0.55) quad lo=(6, 4) hi=(8, 6) third=(10, 8)
+start k=8: lam_min +1.469e-01 min/max +3.984e-02 min|H| 0.746 [4s]
+step 1: k=9 added pert0.1  objective +8.970e-01 lam_min +1.461e-01 min/max +3.709e-02 min|H| 0.720 [11s]
+step 2: k=10 added hol      objective +8.537e-01 lam_min +9.183e-02 min/max +2.067e-02 min|H| 0.720 [19s]
+step 3: k=11 added hol      objective +8.306e-01 lam_min +7.968e-02 min/max +1.601e-02 min|H| 0.720 [28s]
+step 4: k=12 added rand     objective +8.242e-01 lam_min +7.966e-02 min/max +1.449e-02 min|H| 0.720 [38s]
+step 5: k=13 added hol      objective +8.173e-01 lam_min +7.846e-02 min/max +1.303e-02 min|H| 0.720 [49s]
+step 6: k=14 added rand     objective +8.074e-01 lam_min +7.388e-02 min/max +1.087e-02 min|H| 0.720 [60s]
+step 7: k=15 added pert0.1  objective +7.620e-01 lam_min +5.576e-02 min/max +7.636e-03 min|H| 0.720 [73s]
+step 8: k=16 added rand     objective +7.555e-01 lam_min +5.561e-02 min/max +7.059e-03 min|H| 0.720 [86s]
+step 9: k=17 added rand     objective +7.415e-01 lam_min +5.522e-02 min/max +6.418e-03 min|H| 0.720 [100s]
+step 10: k=18 added rand     objective +7.385e-01 lam_min +5.516e-02 min/max +6.305e-03 min|H| 0.718 [115s]
+step 11: k=19 added rand     objective +7.365e-01 lam_min +4.600e-02 min/max +4.964e-03 min|H| 0.718 [131s]
+step 12: k=20 added rand     objective +7.294e-01 lam_min +4.563e-02 min/max +4.616e-03 min|H| 0.718 [148s]
+step 13: k=21 added rand     objective +7.267e-01 lam_min +4.563e-02 min/max +4.420e-03 min|H| 0.718 [165s]
+step 14: k=22 added rand     objective +7.217e-01 lam_min +4.550e-02 min/max +4.166e-03 min|H| 0.718 [185s]
+step 15: k=23 added pert0.05 objective +7.210e-01 lam_min +4.546e-02 min/max +4.011e-03 min|H| 0.711 [205s]
+step 16: k=24 added hol      objective +7.120e-01 lam_min +4.462e-02 min/max +3.796e-03 min|H| 0.711 [225s]
+pool saved: pool_K2c_gsearch_hard_O_torus_Lt16_seed4216.npz; max bulk |plaquette| over pool 0.5457 (margin limit 0.55)
+FINAL O   k=24: lam_min +4.4619e-02 min/max +3.7965e-03 q 4.5e-14 q3 2.7e-15 E 1.2e-12 | certified-negative False | PSD-within-error True | min|H| 0.711 | lowest [0.045 0.049 0.058 0.07 ] max 11.753 [322s]
+FINAL W   k=24: lam_min +3.5007e-02 min/max +2.8329e-03 q 1.3e-14 q3 1.0e-14 E 4.2e-13 | certified-negative False | PSD-within-error True | min|H| inf | lowest [0.035 0.043 0.054 0.067] max 12.357 [345s]
+FINAL PG  k=24: lam_min +1.5650e-02 min/max +1.0999e-03 q 8.9e-16 q3 5.6e-16 E 1.2e-13 | certified-negative False | PSD-within-error True | min|H| inf | lowest [0.016 0.03  0.033 0.039] max 14.229 [362s]
+   gen-ratio min (O vs W, W range > 1e-8): +7.120e-01
+SUMMARY torus Lt=16 gsearch weight=hard op=O seed=4216: clean True | O lam_min +4.462e-02 (E 1.2e-12) cert-neg False | W lam_min +3.501e-02 cert-neg False | PG lam_min +1.565e-02 cert-neg False
+done [362s]
+           189841408  maximum resident set size

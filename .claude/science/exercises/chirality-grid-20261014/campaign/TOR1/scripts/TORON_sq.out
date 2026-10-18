@@ -1,0 +1,13 @@
+Lx=4 Lt=4 11112: wind_t -0.000000 wind_x -0.000000 | h_t(0) +4.22e-15 h_x(0) +2.57e-15 | spread Gam_t 1.396616e+00 (nloop change 1.4e-09) spread Gam_x 1.396616e+00 [12s]
+Lx=4 Lt=4 L1   : wind_t +1.000000 wind_x -1.000000 | h_t(0) +1.11e-15 h_x(0) +6.43e-16 | spread Gam_t 2.609447e-01 (nloop change 4.1e-11) spread Gam_x 2.609447e-01 [19s]
+Lx=6 Lt=6 11112: wind_t +0.000000 wind_x +0.000000 | h_t(0) +4.90e-16 h_x(0) +5.88e-15 | spread Gam_t 3.377339e-01 (nloop change 1.2e-10) spread Gam_x 3.377339e-01 [48s]
+Lx=6 Lt=6 L1   : wind_t +1.000000 wind_x -1.000000 | h_t(0) +8.14e-16 h_x(0) +2.42e-15 | spread Gam_t 6.450413e-02 (nloop change 3.7e-12) spread Gam_x 6.450413e-02 [62s]
+Lx=8 Lt=8 11112: wind_t +0.000000 wind_x +0.000000 | h_t(0) +4.69e-15 h_x(0) -9.80e-15 | spread Gam_t 8.341500e-02 (nloop change 1.4e-11) spread Gam_x 8.341500e-02 [113s]
+Lx=8 Lt=8 L1   : wind_t +1.000000 wind_x -1.000000 | h_t(0) +5.92e-16 h_x(0) -7.35e-16 | spread Gam_t 1.602328e-02 (nloop change 4.8e-13) spread Gam_x 1.602328e-02 [139s]
+Lx=10 Lt=10 11112: wind_t +0.000000 wind_x +0.000000 | h_t(0) -7.84e-15 h_x(0) -2.45e-16 | spread Gam_t 2.073562e-02 (nloop change 2.1e-12) spread Gam_x 2.073562e-02 [219s]
+Lx=10 Lt=10 L1   : wind_t +1.000000 wind_x -1.000000 | h_t(0) -5.92e-16 h_x(0) -2.91e-15 | spread Gam_t 3.988909e-03 (nloop change 6.9e-14) spread Gam_x 3.988909e-03 [259s]
+Lx=12 Lt=12 11112: wind_t +0.000000 wind_x +0.000000 | h_t(0) -1.90e-14 h_x(0) -1.72e-14 | spread Gam_t 5.166436e-03 (nloop change 3.7e-13) spread Gam_x 5.166436e-03 [374s]
+Lx=12 Lt=12 L1   : wind_t +1.000000 wind_x -1.000000 | h_t(0) -6.46e-15 h_x(0) -7.84e-15 | spread Gam_t 9.942272e-04 (nloop change 2.0e-14) spread Gam_x 9.942272e-04 [431s]
+Lx=4 Lt=8 11112: wind_t -0.000000 wind_x +0.000000 | h_t(0) +1.14e-14 h_x(0) -5.92e-15 | spread Gam_t 1.396616e+00 (nloop change 8.7e-11) spread Gam_x 8.341500e-02 [457s]
+Lx=4 Lt=8 L1   : wind_t +1.000000 wind_x -1.000000 | h_t(0) +2.91e-15 h_x(0) -2.22e-15 | spread Gam_t 2.609447e-01 (nloop change 2.6e-12) spread Gam_x 1.602328e-02 [469s]
+watchdog peak RSS 293872 KB

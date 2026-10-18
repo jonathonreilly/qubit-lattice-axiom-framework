@@ -1,0 +1,16 @@
+mod  level (2, 4): lam_min +4.29934e-04 lam_2 +1.5743e-03 max 5.8667 min/max +7.328e-05  max|Im ln diag| 0.0e+00 <- HIGH
+mod  level (2, 6): lam_min +7.99232e-05 lam_2 +1.3072e-03 max 5.8742 min/max +1.361e-05  max|Im ln diag| 0.0e+00
+mod  SUMMARY: HIGH (2, 4) lam_min +4.29934e-04 | q_plane nan q_poly 3.06e-03 h 0.0e+00 | E 1.84e-02 | conv-negative False | PSD-within-error True
+O    level (2, 4): lam_min +4.93990e-06 lam_2 +1.4200e-04 max 5.9677 min/max +8.278e-07  max|Im ln diag| 2.8e-18 <- HIGH
+O    level (2, 6): lam_min +4.84043e-06 lam_2 +1.4197e-04 max 5.9677 min/max +8.111e-07  max|Im ln diag| 1.5e-18
+O    SUMMARY: HIGH (2, 4) lam_min +4.93990e-06 | q_plane nan q_poly 4.89e-07 h 0.0e+00 | E 2.93e-06 | conv-negative False | PSD-within-error True
+vec0 level (2, 4): lam_min +4.97518e-06 lam_2 +1.4287e-04 max 5.9676 min/max +8.337e-07  max|Im ln diag| 2.2e-18 <- HIGH
+vec0 level (2, 6): lam_min +4.87259e-06 lam_2 +1.4284e-04 max 5.9676 min/max +8.165e-07  max|Im ln diag| 1.1e-18
+vec0 SUMMARY: HIGH (2, 4) lam_min +4.97518e-06 | q_plane nan q_poly 5.04e-07 h 0.0e+00 | E 3.02e-06 | conv-negative False | PSD-within-error True
+W    level (2, 4): lam_min +1.62167e-05 lam_2 +2.5095e-04 max 5.9688 min/max +2.717e-06  max|Im ln diag| 2.0e-17 <- HIGH
+W    level (2, 6): lam_min +1.58947e-05 lam_2 +2.5079e-04 max 5.9688 min/max +2.663e-06  max|Im ln diag| 1.8e-17
+W    SUMMARY: HIGH (2, 4) lam_min +1.62167e-05 | q_plane nan q_poly 1.72e-06 h 0.0e+00 | E 1.03e-05 | conv-negative False | PSD-within-error True
+PG   level (2, 4): lam_min -1.13109e-15 lam_2 +0.0000e+00 max 6.0000 min/max -1.885e-16  max|Im ln diag| 0.0e+00 <- HIGH
+PG   level (2, 6): lam_min -1.13109e-15 lam_2 +0.0000e+00 max 6.0000 min/max -1.885e-16  max|Im ln diag| 0.0e+00
+PG   SUMMARY: HIGH (2, 4) lam_min -1.13109e-15 | q_plane nan q_poly 0.00e+00 h 0.0e+00 | E 1.00e-13 | conv-negative False | PSD-within-error True
+watchdog peak RSS 13472 KB

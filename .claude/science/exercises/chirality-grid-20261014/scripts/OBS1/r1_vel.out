@@ -1,0 +1,15 @@
+  axis 0: Z = -4.88078544e-02  (0s)
+  axis 1: Z = -4.88078544e-02  (0s)
+RESULT-VEL N=32 m0=0.1 Delta=0.0: Z_par=-4.880785e-02 Z_perp=-4.880785e-02 K_v=Z_par-Z_perp=+1.396264e-11
+  axis 0: Z = -4.50047950e-02  (0s)
+  axis 1: Z = -5.13191167e-02  (0s)
+RESULT-VEL N=32 m0=0.1 Delta=0.5: Z_par=-4.500480e-02 Z_perp=-5.131912e-02 K_v=Z_par-Z_perp=+6.314322e-03
+  axis 0: Z = -4.98671282e-02  (0s)
+  axis 1: Z = -4.98671282e-02  (1s)
+RESULT-VEL N=48 m0=0.1 Delta=0.0: Z_par=-4.986713e-02 Z_perp=-4.986713e-02 K_v=Z_par-Z_perp=+3.149735e-11
+  axis 0: Z = -4.59725026e-02  (0s)
+  axis 1: Z = -5.21764432e-02  (1s)
+RESULT-VEL N=48 m0=0.1 Delta=0.5: Z_par=-4.597250e-02 Z_perp=-5.217644e-02 K_v=Z_par-Z_perp=+6.203941e-03
+  axis 0: Z = -4.62682191e-02  (1s)
+  axis 1: Z = -5.24403697e-02  (2s)
+RESULT-VEL N=64 m0=0.1 Delta=0.5: Z_par=-4.626822e-02 Z_perp=-5.244037e-02 K_v=Z_par-Z_perp=+6.172151e-03

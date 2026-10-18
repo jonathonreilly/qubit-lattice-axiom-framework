@@ -1,0 +1,9 @@
+X2 corner package (walker C2 x Spin(10) 16)      modes=   32 overhead=1 qubits=   32 block b= 4 (b^3=64)
+X2 corner package (walker C2 x Spin(10) 16)      modes=   32 overhead=3 qubits=   96 block b= 5 (b^3=125)
+minimal onsite SMG (4 staggered = 16 Weyl)       modes=   16 overhead=1 qubits=   16 block b= 3 (b^3=27)
+minimal onsite SMG (4 staggered = 16 Weyl)       modes=   16 overhead=3 qubits=   48 block b= 4 (b^3=64)
+F4 inflow slab (~10^3 fermion qubits, 3 gens)    modes= 1000 overhead=1 qubits= 1000 block b=10 (b^3=1000)
+F4 inflow slab (~10^3 fermion qubits, 3 gens)    modes= 1000 overhead=3 qubits= 3000 block b=15 (b^3=3375)
+Lambda=1.22e+19 GeV: tau(p->e+pi0, dim-6, O(1) coeff) ~ 6.4e+44 yr; bound ~2.4e34 yr; margin 2.6e+10
+Lambda=2.40e+18 GeV: tau(p->e+pi0, dim-6, O(1) coeff) ~ 9.5e+41 yr; bound ~2.4e34 yr; margin 4.0e+07
+Lambda=1.00e+16 GeV: tau(p->e+pi0, dim-6, O(1) coeff) ~ 2.9e+32 yr; bound ~2.4e34 yr; margin 1.2e-02

@@ -1,0 +1,19 @@
+# K2c wgsearch op=O weight=hard torus Lx=2 Lt=16 K=16 seed=4416 delta=0.6 margin(bulk<= 0.55) quad lo=(6, 4) hi=(8, 6) third=(10, 8)
+start k=8: lam_min +8.529e-05 min/max +1.190e-05 min|H| 0.801 [4s]
+step 1: k=9 added rand     objective -4.775e-03 lam_min -6.915e-06 min/max -8.573e-07 min|H| 0.801 [11s]
+step 2: k=10 added pert0.05 objective -3.979e-03 lam_min -7.016e-06 min/max -7.751e-07 min|H| 0.801 [20s]
+step 3: k=11 added rand     objective -8.940e-03 lam_min -1.021e-05 min/max -1.040e-06 min|H| 0.801 [29s]
+step 4: k=12 added rand     objective -4.813e-02 lam_min -4.312e-05 min/max -3.993e-06 min|H| 0.801 [39s]
+step 5: k=13 added rand     objective -1.763e-01 lam_min -4.370e-05 min/max -3.835e-06 min|H| 0.801 [50s]
+step 6: k=14 added pert0.05 objective -2.671e-01 lam_min -4.371e-05 min/max -3.588e-06 min|H| 0.801 [62s]
+step 7: k=15 added rand     objective -9.561e-01 lam_min -6.596e-05 min/max -5.010e-06 min|H| 0.798 [75s]
+step 8: k=16 added pert0.1  objective -1.110e+00 lam_min -7.266e-05 min/max -5.131e-06 min|H| 0.798 [89s]
+W-match check: max|W1| 0.0e+00, max|W_T - W_T0| 0.0e+00
+pool saved: pool_K2c_wgsearch_hard_O_torus_Lt16_seed4416.npz; max bulk |plaquette| over pool 0.5436 (margin limit 0.55)
+FINAL O   k=16: lam_min -7.2658e-05 min/max -5.1314e-06 q 1.4e-14 q3 3.4e-15 E 3.2e-13 | certified-negative True | PSD-within-error False | min|H| 0.796 | lowest [-7.266e-05 -4.502e-06  2.458e-07  1.148e-06] max 14.159 [142s]
+FINAL W   k=16: lam_min +3.1684e-09 min/max +2.1615e-10 q 2.1e-14 q3 1.2e-14 E 4.4e-13 | certified-negative False | PSD-within-error True | min|H| inf | lowest [3.168e-09 4.322e-08 2.059e-07 3.373e-07] max 14.658 [156s]
+FINAL PG  k=16: lam_min -6.4085e-16 min/max -4.0053e-17 q 0.0e+00 q3 0.0e+00 E 1.0e-13 | certified-negative False | PSD-within-error True | min|H| inf | lowest [-6.409e-16 -6.173e-16 -3.457e-16 -3.338e-16] max 16.000 [165s]
+   gen-ratio min (O vs W, W range > 1e-8): -2.481e+00
+SUMMARY torus Lt=16 wgsearch weight=hard op=O seed=4416: clean True | O lam_min -7.266e-05 (E 3.2e-13) cert-neg True | W lam_min +3.168e-09 cert-neg False | PG lam_min -6.409e-16 cert-neg False
+done [165s]
+           172359680  maximum resident set size

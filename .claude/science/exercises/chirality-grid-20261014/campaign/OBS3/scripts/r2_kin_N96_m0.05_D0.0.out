@@ -1,0 +1,7 @@
+mode=kin N=96 m0=0.05 Delta=0.0 mH=0.05
+  corner x done (2s)
+  corner y done (3s)
+  corner z done (5s)
+  corner o done (7s)
+saved tables/yuk3_kin_N96_m0.05_D0.0_mH0.05.json (7s)
+watchdog peak RSS 72400 KB

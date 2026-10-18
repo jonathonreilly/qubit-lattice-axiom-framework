@@ -1,0 +1,6 @@
+pool 384 configs (M=12 R-values x N=32 X0-values); max|plaquette| 0.5500; max|Y0|,|Y1| 8.9e-16,8.9e-16
+closed: lam_min -3.363503e-04 lam_max 2.055329e-01 | indep: lam_min -3.363503e-04 (rel -1.6365e-03) | max|Kc-Ki| 2.3e-17 | E 1.1e-14 | negative eigenvalues: 136
+negative eigenvector: ring-momentum power peaks at j = 6 (|j| = 6), fraction 0.500+0.500 (+-j)
+profile over R of |F_j|: [1.    0.526 0.073 0.296 0.549 0.676 0.676 0.549 0.296 0.073 0.526 1.   ]
+RESULT V1 M=12 N=32 delta=0.6: indep lam_min -3.3635e-04 rel -1.636e-03 E 1.1e-14 converged-negative True | 4.2s RSS 63MB
+watchdog peak RSS 60784 KB

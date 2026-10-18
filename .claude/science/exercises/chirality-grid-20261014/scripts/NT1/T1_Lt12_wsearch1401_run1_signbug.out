@@ -1,0 +1,15 @@
+# NT-1 kernel pool=pool_K2c_wsearch_hard_O_open_Lt12_seed1401.npz Lt=12 k=20 model=11112 delta=0.6 s_k=-1 transport=Richardson R(N)=(4W(2N)-W(N))/3
+G2 (R8): max |d ln rho| under gauge transformations 2.09e-08 -> PASS; G3: Theta phase c -2.20474246 spread 4.26e-14, |Re| 3.2e-14 -> PASS; min|H| 0.562 [0s]
+LOW done min|H| 0.455 [115s]
+HIGH done min|H| 0.455 [349s]
+n=48 subset done [387s]
+R16 subset done [437s]
+FINAL chi  k=20: lam_min -2.0008e+01 min/max -1.8556e+03 | q 4.3e-14 q3 1.4e-14 qPT 4.0e-08 herm-defect h 3.2e-14 max|Im ln diag| 3.1e+00 | E 7.9e-07 | certified-negative True | PSD-within-error False | lowest [-2.001e+01 -3.079e-03 -4.579e-05 -2.544e-06] max 0.011
+   chi: max |Im Zn| 4.527e-08 (phase content of the chiral kernel)
+FINAL mod  k=20: lam_min -4.8682e-03 min/max -5.3892e-04 | q 4.3e-14 q3 1.4e-14 qPT 2.1e-14 herm-defect h 1.8e+00 max|Im ln diag| 1.1e+00 | E 3.6e+01 | certified-negative False | PSD-within-error True | lowest [-4.868e-03 -9.994e-05 -5.707e-05 -1.877e-05] max 9.033
+REF   O    k=20: lam_min -2.4215e-03 min/max -1.2107e-04 q 1.1e-14 E 3.1e-13 | certified-negative True | PSD-within-error False
+REF   W    k=20: lam_min -1.6531e-14 min/max -8.2669e-16 q 1.4e-14 E 3.8e-13 | certified-negative False | PSD-within-error True
+REF   PG   k=20: lam_min -8.6485e-15 min/max -4.3243e-16 q 0.0e+00 E 1.0e-13 | certified-negative False | PSD-within-error True
+REF   vec0 k=20: lam_min -2.4383e-03 min/max -1.2191e-04 q 1.1e-14 E 3.1e-13 | certified-negative True (massless vector overlap)
+SUMMARY pool_K2c_wsearch_hard_O_open_Lt12_seed1401.npz model=11112 delta=0.6: gates-clean True (G2 2.1e-08, G3 4.3e-14, min|H| 0.455) | chi lam_min -2.001e+01 E 7.9e-07 cert-neg True PSD False | mod lam_min -4.868e-03 | O(ref) -2.421e-03 cert-neg True | vec0 -2.438e-03 | W -1.7e-14 PG -8.6e-15
+done [444s]

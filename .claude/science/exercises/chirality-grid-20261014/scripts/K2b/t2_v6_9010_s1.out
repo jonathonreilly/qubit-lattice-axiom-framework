@@ -1,0 +1,11 @@
+# K2b-T2 pool v6_9010_s1: Lx=2 Lt=20 torus=False k=8 quad lo=(16, None) hi=(32, None)
+min|eig H| over all points (Neuberger H_W and Shamir H_T): 0.386  [70s]
+W     : lam_min +2.0893e-04 min/max +3.5915e-05 q 1.4e-14 E 2.1e-13 certified-negative False PSD-within-error True | lowest eigs [0.    0.002 0.005]
+O     : lam_min -1.9465e-04 min/max -3.3435e-05 q 6.9e-15 E 1.6e-13 certified-negative True PSD-within-error False | lowest eigs [-0.     0.001  0.005]
+SH    : lam_min +1.6352e-04 min/max +2.8102e-05 q 4.6e-15 E 1.4e-13 certified-negative False PSD-within-error True | lowest eigs [0.    0.002 0.005]
+D5_4  : lam_min +7.2127e-04 min/max +1.2426e-04 q 1.0e-13 E 9.2e-13 certified-negative False PSD-within-error True | lowest eigs [0.001 0.003 0.005]
+DWF_4 : lam_min +2.9909e-04 min/max +5.1412e-05 q 7.0e-14 E 6.6e-13 certified-negative False PSD-within-error True | lowest eigs [0.    0.002 0.005]
+D5_8  : lam_min +1.0748e-03 min/max +1.8563e-04 q 2.9e-13 E 2.4e-12 certified-negative False PSD-within-error True | lowest eigs [0.001 0.004 0.007]
+DWF_8 : lam_min +1.7601e-04 min/max +3.0250e-05 q 2.2e-13 E 1.8e-12 certified-negative False PSD-within-error True | lowest eigs [0.    0.002 0.005]
+done [70s]
+           211009536  maximum resident set size

@@ -1,0 +1,12 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+# TOR-1 search Lt=4 K=6 seed=3201: start k=3 lam_min(O) +2.420e-03 [9s]
+  k=4: lam_min(O) +2.5721e-06 (min/max +6.447e-07) [60s]
+  k=5: lam_min(O) +7.8367e-08 (min/max +1.571e-08) [124s]
+  k=6: lam_min(O) -2.2324e-07 (min/max -3.731e-08) [200s]
+saved; max |W(slice 1)| 2.8e-17 max |W(slice T)| 4.2e-17 done [200s]
+watchdog peak RSS 137584 KB

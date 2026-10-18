@@ -1,0 +1,10 @@
+N=24 m0=0.1 Delta=0.0 dt=0.02
+  h=0    dlnm=+2.40085930e-01 mass_part=+2.939751e-02 c=-5.388915e-02 additive_base=+0.0000e+00 other_comps=7.8e-15 wsum=1.000000 ward=1.1e-16  (0s)
+  h=xx+  dlnm=+2.38718552e-01 mass_part=+2.921567e-02 c=-5.343814e-02 additive_base=+0.0000e+00 other_comps=7.6e-15 wsum=1.000000 ward=1.1e-16  (0s)
+  h=xx-  dlnm=+2.41462669e-01 mass_part=+2.958068e-02 c=-5.434411e-02 additive_base=+0.0000e+00 other_comps=9.1e-15 wsum=1.000000 ward=1.1e-16  (0s)
+  h=yy+  dlnm=+2.38718552e-01 mass_part=+2.921567e-02 c=-5.343814e-02 additive_base=+0.0000e+00 other_comps=7.8e-15 wsum=1.000000 ward=1.1e-16  (0s)
+  h=yy-  dlnm=+2.41462669e-01 mass_part=+2.958068e-02 c=-5.434411e-02 additive_base=+0.0000e+00 other_comps=7.9e-15 wsum=1.000000 ward=1.1e-16  (0s)
+  h=zz+  dlnm=+2.38718552e-01 mass_part=+2.921567e-02 c=-5.343814e-02 additive_base=+0.0000e+00 other_comps=7.8e-15 wsum=1.000000 ward=1.1e-16  (0s)
+  h=zz-  dlnm=+2.41462669e-01 mass_part=+2.958068e-02 c=-5.434411e-02 additive_base=+0.0000e+00 other_comps=7.9e-15 wsum=1.000000 ward=1.1e-16  (0s)
+RESULT N=24 m0=0.1 Delta=0.0: dlnm0=+2.400859e-01  C_par=-6.860294e-02 C_perp(y)=-6.860294e-02 C_perp(z)=-6.860294e-02  K=C_par-C_perp=+6.938894e-16  trace-response=-2.058088e-01
+watchdog peak RSS 12096 KB

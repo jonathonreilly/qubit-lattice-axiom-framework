@@ -1,0 +1,10 @@
+delta=3/10: beta=-179/100: v^T K v = -89131/320000000  (-2.7853e-04; relative to |v|^2 K_aa: -1.858e-04)
+delta=3/10: beta=-9/5: v^T K v = -27/100000  (-2.7000e-04; relative to |v|^2 K_aa: -1.789e-04)
+delta=3/10: beta=-17/10: v^T K v = -619/3200000  (-1.9344e-04; relative to |v|^2 K_aa: -1.374e-04)
+delta=3/5: beta=-179/100: v^T K v = -89131/40000000  (-2.2283e-03; relative to |v|^2 K_aa: -1.858e-04)
+delta=3/5: beta=-9/5: v^T K v = -27/12500  (-2.1600e-03; relative to |v|^2 K_aa: -1.789e-04)
+delta=3/5: beta=-17/10: v^T K v = -619/400000  (-1.5475e-03; relative to |v|^2 K_aa: -1.374e-04)
+delta=3/4: beta=-179/100: v^T K v = -89131/20480000  (-4.3521e-03; relative to |v|^2 K_aa: -1.858e-04)
+delta=3/4: beta=-9/5: v^T K v = -27/6400  (-4.2188e-03; relative to |v|^2 K_aa: -1.789e-04)
+delta=3/4: beta=-17/10: v^T K v = -619/204800  (-3.0225e-03; relative to |v|^2 K_aa: -1.374e-04)
+watchdog peak RSS 592 KB

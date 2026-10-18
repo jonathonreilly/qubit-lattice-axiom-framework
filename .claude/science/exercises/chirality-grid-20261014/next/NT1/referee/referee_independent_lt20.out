@@ -1,0 +1,35 @@
+pool=scripts/pool_K2c_wsearch_hard_O_open_Lt20_seed1420.npz k=20 Lt=20 n=16 Wmatch=0.000e+00 max_bulk=0.542076
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+row 1/20 elapsed=0.8s
+row 2/20 elapsed=1.6s
+row 3/20 elapsed=2.4s
+row 4/20 elapsed=3.2s
+row 5/20 elapsed=4.0s
+row 6/20 elapsed=4.8s
+row 7/20 elapsed=5.6s
+row 8/20 elapsed=6.4s
+row 9/20 elapsed=7.2s
+row 10/20 elapsed=8.3s
+row 11/20 elapsed=9.2s
+row 12/20 elapsed=10.1s
+row 13/20 elapsed=10.9s
+row 14/20 elapsed=11.8s
+row 15/20 elapsed=12.6s
+row 16/20 elapsed=13.4s
+row 17/20 elapsed=14.2s
+row 18/20 elapsed=15.0s
+row 19/20 elapsed=15.8s
+row 20/20 elapsed=16.6s
+min_gap=5.029707652942e-01 asym=3.286e-14
+independent_lmin=-1.143452079481e-02 lmax=2.001072744515e+01 relative=-5.714195461486e-04
+saved_lmin=-1.143452079483e-02 lmax=2.001072744515e+01 relative=-5.714195461497e-04
+max_abs_matrix_diff_vs_saved_real=3.331e-14
+lowest_independent=[-1.143452079481e-02 -2.046038139828e-04 -1.475354812569e-04
+ -2.305662512249e-05 -6.958366021913e-06]
+elapsed=16.6s
+watchdog peak RSS 114608 KB

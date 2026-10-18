@@ -1,0 +1,18 @@
+eta5=1     phase=1.0 hermitian=True [G55,eps]=0:True #zero modes=4 G55 on zero modes=[-1. -1.  1.  1.] ||[G55,Dst]||=4.000e+00  -> no
+eta5=x1    phase=1.0 hermitian=False [G55,eps]=0:True #zero modes=4 G55 on zero modes=[-0. -0.  0.  0.] ||[G55,Dst]||=0.000e+00  -> no
+eta5=x2    phase=1.0 hermitian=False [G55,eps]=0:True #zero modes=4 G55 on zero modes=[-0. -0.  0.  0.] ||[G55,Dst]||=5.657e+00  -> no
+eta5=x1x2  phase=1.0 hermitian=True [G55,eps]=0:True #zero modes=4 G55 on zero modes=[-1. -1.  1.  1.] ||[G55,Dst]||=4.000e+00  -> no
+eta5=1     phase=1j hermitian=False [G55,eps]=0:True #zero modes=4 G55 on zero modes=[-0. -0.  0.  0.] ||[G55,Dst]||=4.000e+00  -> no
+eta5=x1    phase=1j hermitian=True [G55,eps]=0:True #zero modes=4 G55 on zero modes=[-1. -1.  1.  1.] ||[G55,Dst]||=0.000e+00  -> OK
+eta5=x2    phase=1j hermitian=True [G55,eps]=0:True #zero modes=4 G55 on zero modes=[-1. -1.  1.  1.] ||[G55,Dst]||=5.657e+00  -> no
+eta5=x1x2  phase=1j hermitian=False [G55,eps]=0:True #zero modes=4 G55 on zero modes=[-0. -0.  0.  0.] ||[G55,Dst]||=4.000e+00  -> no
+using eta5 = ('x1', 1j)
+m=0.3: L8n1:-1(gap 2.51e-01)  L8n2:-2(gap 2.01e-01)  L8n3:-3(gap 1.52e-01)  L12n1:-1(gap 2.78e-01)  L12n2:-2(gap 2.56e-01)  L12n3:-3(gap 2.34e-01)
+m=0.6: L8n1:-1(gap 5.51e-01)  L8n2:-2(gap 5.01e-01)  L8n3:-3(gap 4.51e-01)  L12n1:-1(gap 5.78e-01)  L12n2:-2(gap 5.56e-01)  L12n3:-3(gap 5.34e-01)
+m=1.0: L8n1:-1(gap 9.49e-01)  L8n2:-2(gap 8.95e-01)  L8n3:-3(gap 8.37e-01)  L12n1:-1(gap 9.78e-01)  L12n2:-2(gap 9.55e-01)  L12n3:-3(gap 9.31e-01)
+m=1.4: L8n1:-1(gap 5.51e-01)  L8n2:-2(gap 5.01e-01)  L8n3:-3(gap 4.51e-01)  L12n1:-1(gap 5.78e-01)  L12n2:-2(gap 5.56e-01)  L12n3:-3(gap 5.34e-01)
+  m=0.3: index = -1 * n for all L, n
+  m=0.6: index = -1 * n for all L, n
+  m=1.0: index = -1 * n for all L, n
+  m=1.4: index = -1 * n for all L, n
+T4b verdict: PASS

@@ -1,0 +1,10 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+f2: acc old 2186/2560 new 2186/2560; max|dphi| 0.0e+00; max|dG| 9.7e-14; wrap-dev old 4.9e-13 new 5.5e-13; time old 13.4s new 12.2s; PASS True
+fG: acc old 2176/2560 new 2176/2560; max|dphi| 0.0e+00; max|dG| 1.9e-13; wrap-dev old 5.2e-13 new 5.2e-13; time old 15.4s new 11.7s; PASS True
+EQUIV PASS
+watchdog peak RSS 540336 KB

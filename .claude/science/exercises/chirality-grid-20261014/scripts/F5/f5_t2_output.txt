@@ -1,0 +1,27 @@
+=== Ly = 12 ===
+  Gamma=   0.0: max #light(in-gap, decay<1e-2) per kx = 2; near-edge max decay = 3.22e-32; min decay of other in-gap states = inf; 32 far-localised light states, max decay 1.92e-46
+  Gamma=   0.1: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 2.72e-16; min decay of other in-gap states = 9.935e-02; no far-localised light state
+  Gamma=   0.3: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 3.46e-16; min decay of other in-gap states = 2.981e-01; no far-localised light state
+  Gamma=   1.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 5.00e-16; min decay of other in-gap states = 9.944e-01; no far-localised light state
+  Gamma=   3.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 5.55e-16; min decay of other in-gap states = 2.992e+00; no far-localised light state
+  Gamma=  10.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 3.55e-16; min decay of other in-gap states = 4.062e-01; no far-localised light state
+  Gamma=  30.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 3.52e-16; min decay of other in-gap states = 1.327e-01; no far-localised light state
+  Gamma= 100.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 1.13e-16; min decay of other in-gap states = 3.975e-02; no far-localised light state
+=== Ly = 20 ===
+  Gamma=   0.0: max #light(in-gap, decay<1e-2) per kx = 2; near-edge max decay = 1.47e-31; min decay of other in-gap states = inf; 32 far-localised light states, max decay 6.59e-48
+  Gamma=   0.1: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 2.61e-16; min decay of other in-gap states = 9.935e-02; no far-localised light state
+  Gamma=   0.3: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 2.53e-16; min decay of other in-gap states = 2.981e-01; no far-localised light state
+  Gamma=   1.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 5.08e-16; min decay of other in-gap states = 9.944e-01; no far-localised light state
+  Gamma=   3.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 4.60e-16; min decay of other in-gap states = 2.992e+00; no far-localised light state
+  Gamma=  10.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 4.14e-16; min decay of other in-gap states = 4.062e-01; no far-localised light state
+  Gamma=  30.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 4.50e-16; min decay of other in-gap states = 1.327e-01; no far-localised light state
+  Gamma= 100.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 1.46e-16; min decay of other in-gap states = 3.975e-02; no far-localised light state
+=== Ly = 30 ===
+  Gamma=   0.0: max #light(in-gap, decay<1e-2) per kx = 2; near-edge max decay = 2.64e-31; min decay of other in-gap states = inf; 32 far-localised light states, max decay 1.40e-49
+  Gamma=   0.1: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 1.58e-16; min decay of other in-gap states = 9.935e-02; no far-localised light state
+  Gamma=   0.3: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 4.28e-16; min decay of other in-gap states = 2.981e-01; no far-localised light state
+  Gamma=   1.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 4.02e-16; min decay of other in-gap states = 9.944e-01; no far-localised light state
+  Gamma=   3.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 5.61e-16; min decay of other in-gap states = 2.992e+00; no far-localised light state
+  Gamma=  10.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 2.01e-16; min decay of other in-gap states = 4.062e-01; no far-localised light state
+  Gamma=  30.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 4.50e-16; min decay of other in-gap states = 1.327e-01; no far-localised light state
+  Gamma= 100.0: max #light(in-gap, decay<1e-2) per kx = 1; near-edge max decay = 1.79e-16; min decay of other in-gap states = 3.975e-02; no far-localised light state

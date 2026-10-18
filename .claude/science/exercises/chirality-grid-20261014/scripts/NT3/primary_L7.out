@@ -1,0 +1,44 @@
+# F_star L=7: f on included momenta = [0.307419, 0.998184, 1.552135, 1.552135, 0.998184, 0.307419]  quads = 186
+== F_star L=7: dimGS=37698 asym=0.0e+00 time=22.4s
+   E0 = -5.4937680309  E0/site = -0.784824  D = 1  any sector below GS-sector: False
+   gap = 0.031387  gap_nonlight = 0.031387  gap_lightattrib = 0.034448  gap6(1,1,0,0;K0) = 0.031387
+   max ||E_raise GS|| = 1.23e-13  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (0.03139,(1, 1, 0),K0,l0,w0.00,n28044); (0.03445,(1, 1, 1),K6,l0,w0.93,n30174); (0.03445,(1, 1, 1),K1,l0,w0.93,n30174); (0.03445,(1, 0, 0),K1,l0,w0.93,n30174); (0.03445,(1, 0, 0),K6,l0,w0.93,n30174); (0.04784,(0, 0, 0),K0,l1,w0.00,n37698)
+   S6_psiS(q=0) = 7.012545  S6_psiS(qmax=3) = 0.410347  S6_psiM(q=0) = 3.928861  S6_psiM(qmax) = 1.204738
+   S6dag_psiS(q=0) = 7.012545  S6dag_psiM(q=0) = 3.928861
+   chi6/site psiS = 85.688231  chi6/site psiM = 241.488643
+   chi via CG: info=0 max rel resid=8.3e-12
+   <n(k)> GS (summed over flavours, per included momentum) = [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+# F_hi L=7: f on included momenta = [0.067774, 0.714535, 1.727671, 1.727671, 0.714535, 0.067774]  quads = 186
+== F_hi L=7: dimGS=37698 asym=0.0e+00 time=112.4s
+   E0 = -5.4890911051  E0/site = -0.784156  D = 1  any sector below GS-sector: False
+   gap = 0.000082  gap_nonlight = 0.333183  gap_lightattrib = 0.000082  gap6(1,1,0,0;K0) = 0.000082
+   max ||E_raise GS|| = 2.85e-11  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (0.00008,(1, 1, 0),K0,l0,w1.00,n28044); (0.00009,(1, 0, 0),K1,l0,w1.00,n30174); (0.00009,(1, 1, 1),K1,l0,w1.00,n30174); (0.00009,(1, 0, 0),K6,l0,w1.00,n30174); (0.00009,(1, 1, 1),K6,l0,w1.00,n30174); (0.00013,(0, 0, 0),K0,l1,w1.00,n37698)
+   S6_psiS(q=0) = 9.021782  S6_psiS(qmax=3) = 0.074561  S6_psiM(q=0) = 3.524533  S6_psiM(qmax) = 1.120980
+   S6dag_psiS(q=0) = 9.021782  S6dag_psiM(q=0) = 3.524533
+   chi6/site psiS = 143.262468  chi6/site psiM = 51815.161161
+   chi via CG: info=0 max rel resid=2.0e-11
+   <n(k)> GS (summed over flavours, per included momentum) = [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+# F_lo L=7: f on included momenta = [0.659714, 1.350769, 1.113643, 1.113643, 1.350769, 0.659714]  quads = 186
+== F_lo L=7: dimGS=37698 asym=0.0e+00 time=17.5s
+   E0 = -5.5838763830  E0/site = -0.797697  D = 1  any sector below GS-sector: False
+   gap = 0.330373  gap_nonlight = 0.330373  gap_lightattrib = 0.360373  gap6(1,1,0,0;K0) = 0.330373
+   max ||E_raise GS|| = 1.61e-15  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (0.33037,(1, 1, 0),K0,l0,w0.00,n28044); (0.36037,(1, 0, 0),K1,l0,w0.73,n30174); (0.36037,(1, 0, 0),K6,l0,w0.73,n30174); (0.36037,(1, 1, 1),K6,l0,w0.73,n30174); (0.36037,(1, 1, 1),K1,l0,w0.73,n30174); (0.50699,(0, 0, 0),K0,l1,w0.00,n37698)
+   S6_psiS(q=0) = 5.545637  S6_psiS(qmax=3) = 1.860398  S6_psiM(q=0) = 3.809613  S6_psiM(qmax) = 1.592682
+   S6dag_psiS(q=0) = 5.545637  S6dag_psiM(q=0) = 3.809613
+   chi6/site psiS = 40.370255  chi6/site psiM = 36.412350
+   chi via CG: info=0 max rel resid=7.0e-12
+   <n(k)> GS (summed over flavours, per included momentum) = [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+# C1 L=7: f on included momenta = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]  quads = 186
+== C1 L=7: dimGS=37698 asym=0.0e+00 time=18.5s
+   E0 = -4.4330546058  E0/site = -0.633294  D = 1  any sector below GS-sector: False
+   gap = 0.488815  gap_nonlight = 0.488815  gap_lightattrib = 0.820962  gap6(1,1,0,0;K0) = 0.488815
+   max ||E_raise GS|| = 1.14e-15  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (0.48882,(1, 1, 0),K0,l0,w0.00,n28044); (0.70151,(1, 0, 0),K3,l0,w0.27,n30174); (0.70151,(1, 1, 1),K1,l0,w0.46,n30174); (0.70151,(1, 1, 1),K2,l0,w0.27,n30174); (0.70151,(1, 0, 0),K6,l0,w0.46,n30174); (0.70151,(1, 0, 0),K5,l0,w0.27,n30174)
+   S6_psiS(q=0) = 3.440786  S6_psiS(qmax=3) = 1.803331  S6_psiM(q=0) = 3.440786  S6_psiM(qmax) = 1.803331
+   S6dag_psiS(q=0) = 3.440786  S6dag_psiM(q=0) = 3.440786
+   chi6/site psiS = 27.072050  chi6/site psiM = 27.072050
+   chi via CG: info=0 max rel resid=4.7e-13
+   <n(k)> GS (summed over flavours, per included momentum) = [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]

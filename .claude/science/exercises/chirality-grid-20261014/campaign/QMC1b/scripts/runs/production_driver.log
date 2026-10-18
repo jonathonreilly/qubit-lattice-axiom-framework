@@ -1,0 +1,41 @@
+11:51Z start
+11:52Z W=0 references done
+11:52Z L4 fG W4 seed 41004 tmax 38385
+12:03Z L4 fG W4 finished
+12:03Z L4 f2 W4 seed 42004 tmax 37676
+12:15Z L4 f2 W4 finished
+12:15Z L4 fG W2 seed 41002 tmax 36988
+12:27Z L4 fG W2 finished
+12:27Z L4 f2 W2 seed 42002 tmax 36287
+12:38Z L4 f2 W2 finished
+# fG W4.0: L4 E3w 0.1818 > 0.1 -> not a window, skip
+12:38Z L6 f2 W4 seed 62004 tmax 35263
+14:00Z L6 f2 W4 finished
+# fG W4.0: L4 E3w 0.1818 > 0.1 -> not a window, skip
+# fG W2.0: L4 E3w 1.1340 > 0.1 -> not a window, skip
+14:00Z L6 f2 W2 seed 62002 tmax 30357
+15:31Z L6 f2 W2 finished
+# fG W4.0: L4 E3w 0.1818 > 0.1 -> not a window, skip
+# fG W2.0: L4 E3w 1.1340 > 0.1 -> not a window, skip
+15:31Z queue empty
+15:31Z driver done
+15:31Z SUPP start
+15:31Z SUPP L4 fG W8 seed 41008
+15:46Z SUPP L4 fG W8 finished: E3w 0.000414 n 200
+15:46Z SUPP L6 fG W8 seed 61008
+17:11Z SUPP L6 fG W8 finished
+17:11Z SUPP S1 had an L4 window: S3 (fG W16) not run
+17:11Z SUPP L4 f2 W8 seed 42008
+17:23Z SUPP L4 f2 W8 finished: E3w -0.002980 n 200
+17:23Z SUPP L6 f2 W8 seed 62008
+18:42Z SUPP L6 f2 W8 finished
+18:42Z SUPP done
+18:44Z SUPP-D L4 fG W8 ns4 seed 41108 tmax 13340
+18:57Z SUPP-D L4 fG W8 ns4 finished
+18:57Z SUPP-D L4 f2 W8 ns4 seed 42108 tmax 12563
+19:10Z SUPP-D L4 f2 W8 ns4 finished
+19:10Z SUPP-D L6 fG W8 ns4 seed 61108 tmax 11790
+20:45Z SUPP-D L6 fG W8 ns4 finished
+20:45Z SUPP-D L6 f2 W8 ns4 seed 62108 tmax 6097
+22:32Z SUPP-D L6 f2 W8 ns4 finished
+22:32Z SUPP-D done

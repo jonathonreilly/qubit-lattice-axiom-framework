@@ -1,0 +1,6 @@
+# NT-1 T2 wsearch model=11112 open Lt=12 K=20 seed=7401 delta=0.6 margin 0.55 link sigma 0.250
+cphase +1.10237123
+start k=8: lam_min -5.999e+00 min/max -2.999e+00 min|H| 0.692 [6s]
+step 1: k=9 added rand     lam_min -6.999e+00 min/max -3.499e+00 min|H| 0.692 [18s]
+step 2: k=10 added rand     lam_min -8.000e+00 min/max -3.998e+00 min|H| 0.636 [30s]
+step 3: k=11 added rand     lam_min -9.001e+00 min/max -4.496e+00 min|H| 0.611 [46s]

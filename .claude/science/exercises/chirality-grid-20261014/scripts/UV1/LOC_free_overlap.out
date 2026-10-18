@@ -1,0 +1,14 @@
+# free overlap, torus Lt=20, Lx=2, M=1; min|eig H_W| 1.000
+dt  0: max block norm 1.467e+00
+dt  1: max block norm 6.293e-01
+dt  2: max block norm 4.169e-02
+dt  3: max block norm 1.726e-02
+dt  4: max block norm 7.521e-03
+dt  5: max block norm 3.376e-03
+dt  6: max block norm 1.544e-03
+dt  7: max block norm 7.163e-04
+dt  8: max block norm 3.362e-04
+dt  9: max block norm 1.604e-04
+dt 10: max block norm 8.018e-05
+fitted decay rate nu (dt = 2..7) = 0.810 per lattice spacing; e^nu = 2.25
+watchdog peak RSS 55296 KB

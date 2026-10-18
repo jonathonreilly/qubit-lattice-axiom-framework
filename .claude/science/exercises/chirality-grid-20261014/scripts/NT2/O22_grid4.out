@@ -1,0 +1,3 @@
+RESULT O22 grid ng=4 (256 smooth test functions, rho=0.1, centres |c|<=0.450): lam_min(n=64) -1.6082e-03 (n=48: -1.6082e-03) lam_max 1.0982e+02 rel -1.464e-05 | E 2.9e-07 | neg-converged True | support max|phi| 0.550 | 0.9s RSS 81MB
+  negative eigenvector: antisymmetry under p1<->p2 swap: 1.2587746719721804  under p1<->p3: 2.0
+watchdog peak RSS 78416 KB

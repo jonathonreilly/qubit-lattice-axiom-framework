@@ -1,0 +1,5 @@
+OWN counterexample: max cross commutator = 0.0e+00
+OWN counterexample: local-touch commutator norms = {('left', 1): 1.0, ('left', 2): 1.0, ('right', 1): 1.0, ('right', 2): 1.0}
+Z1 pair-creation gate predicate-toggle witnesses = []
+Z3 y-link pair-creation gate predicate-toggle witness count = 0
+maximum resident set size = 28868608 bytes

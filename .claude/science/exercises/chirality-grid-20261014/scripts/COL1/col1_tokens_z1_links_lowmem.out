@@ -1,0 +1,11 @@
+=== (i) parse lemma, exact, all relative offsets with overlapping supports
+  support size of G_x: 38 qubits; overlapping offsets with jointly satisfiable Pi: [-19, 19]
+  P2 failures (must be none): []; own-register blindness failures: []
+  qubits acted on (quantumly) by both G_0 and G_d for compatible d: [(-19, []), (19, [])]
+=== (ii) ring L=38, 2 tokens, all 19 offsets: constrained subspace dim 4900
+  su(3) relation err 4.4e-16 | max cross commutator over y,a,b 0.0e+00 | translation covariance err (all x,a) nan
+  leakage of G/H out of the constrained subspace: 0 | max |[H,G_y^a]| 0.0e+00 | |T H T^dag - H| nan | nnz(K) 180
+  offsets [0]: Gauss-law physical subspace dim 4 ; max |H_phys| 3.000 ; spectrum [-3.477, 0.6, 1.7, 5.177] ; max quark number on physical basis 1.000
+        1.61 real         1.48 user         0.06 sys
+           137199616  maximum resident set size
+            99156736  peak memory footprint

@@ -1,0 +1,24 @@
+# NT-1' kernel pool=pool_NT1P_PA_wsearchO_Lx4_Lt8_seed1504.npz Lx=4 Lt=8 k=12 model=11112 delta=0.6 s_k=-1 quad lo/hi/third = 3/4/5 transport main R(4) (Ns 4+8), check R(8); kbb Simpson 8/16
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+LOW (n=3) done [416s]
+HIGH (n=4) done [1474s]
+third level (n=5) subset done [1817s]
+transport R(8) subset done [2157s]
+Theta constant from diagonals: 2 Im ln K(a,a) mod 2pi = -1.67944318 (spread 1.6e-07); gate (d) value -7.962629 mod 2pi = -1.67944369
+chi diagonal phases after cphase: min +3.142e+00 max +3.142e+00 (all |.| > pi/2: True; all < pi/2: False)
+FINAL chi  k=12: lam_min -2.4485e-03 min/max -2.0514e-04 | q 4.2e-06 q3 5.8e-08 qPT 6.7e-07 h 2.0e-07 max|Im ln diag| 8.0e-08 | E 5.0e-05 | conv-negative True | PSD-within-error False | lowest [-2.448e-03 -2.649e-05 -2.464e-06] max 11.936
+FINAL mod  k=12: lam_min -2.4430e-03 min/max -2.0468e-04 | q 3.8e-06 q3 5.7e-08 qPT 1.4e-14 h 1.6e-07 max|Im ln diag| 0.0e+00 | E 4.6e-05 | conv-negative True | PSD-within-error False | lowest [-2.443e-03 -2.134e-05 -1.315e-06] max 11.936
+PHASE: max|Im Zn_chi| 1.277e-03; max|Zn_chi - Zn_mod| 1.277e-03; max phase spread over nodes within an entry 7.270e-03 rad; arg Zn_chi off-diagonal range [-1.302e-03, +1.302e-03]
+GATES on all kernel nodes: G5 min|eig H_W(U^e)| 0.314; G6 index 0 True; G7 max|sum Abar| 2.4e-14; max|W_t| (canonical) 1.238
+REF   O    k=12: lam_min -5.7445e-04 min/max -4.7937e-05 q 9.8e-08 E 1.2e-06 | conv-negative True | PSD-within-error False
+REF   W    k=12: lam_min +1.3217e-07 min/max +1.1028e-08 q 1.9e-07 E 2.2e-06 | conv-negative False | PSD-within-error True
+REF   PG   k=12: lam_min -1.5151e-15 min/max -1.2626e-16 q 0.0e+00 E 1.0e-13 | conv-negative False | PSD-within-error True
+REF   vec0 k=12: lam_min -6.3683e-04 min/max -5.3143e-05 q 9.9e-08 E 1.2e-06 | conv-negative True (massless vector overlap)
+SUMMARY pool_NT1P_PA_wsearchO_Lx4_Lt8_seed1504.npz: chi lam_min -2.4485e-03 E 5.0e-05 conv-neg True PSD False | mod -2.4430e-03 | O -5.7445e-04 conv-neg True | vec0 -6.3683e-04 | W +1.3e-07 PG -1.5e-15 | chi/O 4.26
+done [2198s]
+watchdog peak RSS 352272 KB

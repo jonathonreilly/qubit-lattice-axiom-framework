@@ -1,0 +1,19 @@
+grid 36^4 (includes all 16 corners and p=0)
+M=0.5: lam_W in [0.5000,7.5000]  lam_T,min=0.3333  Shamir rate/layer=0.693  Zolotarev rate/pole=8.186
+    delta=1e-35 (EW, U(1)_em exact): Shamir N_req=  118.3   Zolotarev n_req=  10.0
+    delta=1e-88 (photon-mass bound): Shamir N_req=  294.3   Zolotarev n_req=  24.9
+M=1.0: lam_W in [1.0000,7.0000]  lam_T,min=0.3333  Shamir rate/layer=0.693  Zolotarev rate/pole=6.654
+    delta=1e-35 (EW, U(1)_em exact): Shamir N_req=  118.3   Zolotarev n_req=  12.3
+    delta=1e-88 (photon-mass bound): Shamir N_req=  294.3   Zolotarev n_req=  30.7
+M=1.5: lam_W in [0.5000,6.5000]  lam_T,min=0.2000  Shamir rate/layer=0.405  Zolotarev rate/pole=7.900
+    delta=1e-35 (EW, U(1)_em exact): Shamir N_req=  202.2   Zolotarev n_req=  10.4
+    delta=1e-88 (photon-mass bound): Shamir N_req=  503.2   Zolotarev n_req=  25.8
+M=1.8: lam_W in [0.2000,6.2000]  lam_T,min=0.0909  Shamir rate/layer=0.182  Zolotarev rate/pole=9.640
+    delta=1e-35 (EW, U(1)_em exact): Shamir N_req=  449.6   Zolotarev n_req=   8.5
+    delta=1e-88 (photon-mass bound): Shamir N_req= 1119.0   Zolotarev n_req=  21.2
+note: free theory only; gauge backgrounds reduce lam_min (lower bound on price).
+        0.21 real         0.16 user         0.04 sys
+           174800896  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size

@@ -1,0 +1,5 @@
+walker only: Chern(P) = -4.000 (sphere gap 1.129), Chern(Gamma) = +4.000 (gap 1.129)
+strength 0.1: Chern(P) over sphere-gapped trials [-4] (12/12 gapped spheres); Chern(Gamma) [4] (12/12); min sphere gaps P 0.487, Gamma 0.502
+strength 0.3: Chern(P) over sphere-gapped trials [-4, -3, -2, -1, 0] (9/12 gapped spheres); Chern(Gamma) [1, 2, 3, 4] (12/12); min sphere gaps P 0.009, Gamma 0.029
+strength 0.6: Chern(P) over sphere-gapped trials [-1, 0] (12/12 gapped spheres); Chern(Gamma) [0, 1] (12/12); min sphere gaps P 0.032, Gamma 0.049
+watchdog peak RSS 35536 KB

@@ -1,0 +1,22 @@
+=== (a) literal task model: hw1<->hw3 hopping only, static partner on hw3 ===
+  Delta=0.5 eps=0.01: zero modes 12 (psi trace 6); hw3 psi weight in zero space 3.6e-32; chi_hw3 weight per spin 0.000300 vs analytic theta_chi^2 0.000300
+  Delta=0.5 eps=0.10: zero modes 12 (psi trace 6); hw3 psi weight in zero space 3.8e-32; chi_hw3 weight per spin 0.029126 vs analytic theta_chi^2 0.029126
+  Delta=0.5 eps=0.33: zero modes 12 (psi trace 6); hw3 psi weight in zero space 2.9e-32; chi_hw3 weight per spin 0.246250 vs analytic theta_chi^2 0.246250
+  Delta=0.5 eps=1.00: zero modes 12 (psi trace 5); hw3 psi weight in zero space 5.6e-32; chi_hw3 weight per spin 0.750000 vs analytic theta_chi^2 0.750000
+  Delta=1.0 eps=0.01: zero modes 12 (psi trace 6); hw3 psi weight in zero space 3.4e-32; chi_hw3 weight per spin 0.000075 vs analytic theta_chi^2 0.000075
+  Delta=1.0 eps=0.10: zero modes 12 (psi trace 6); hw3 psi weight in zero space 5.0e-32; chi_hw3 weight per spin 0.007444 vs analytic theta_chi^2 0.007444
+  Delta=1.0 eps=0.33: zero modes 12 (psi trace 6); hw3 psi weight in zero space 4.0e-32; chi_hw3 weight per spin 0.075508 vs analytic theta_chi^2 0.075508
+  Delta=1.0 eps=1.00: zero modes 12 (psi trace 5); hw3 psi weight in zero space 2.1e-32; chi_hw3 weight per spin 0.428571 vs analytic theta_chi^2 0.428571
+  Delta=2.0 eps=0.01: zero modes 12 (psi trace 6); hw3 psi weight in zero space 5.1e-32; chi_hw3 weight per spin 0.000019 vs analytic theta_chi^2 0.000019
+  Delta=2.0 eps=0.10: zero modes 12 (psi trace 6); hw3 psi weight in zero space 2.0e-31; chi_hw3 weight per spin 0.001871 vs analytic theta_chi^2 0.001871
+  Delta=2.0 eps=0.33: zero modes 12 (psi trace 6); hw3 psi weight in zero space 1.1e-31; chi_hw3 weight per spin 0.020010 vs analytic theta_chi^2 0.020010
+  Delta=2.0 eps=1.00: zero modes 12 (psi trace 6); hw3 psi weight in zero space 3.5e-32; chi_hw3 weight per spin 0.157895 vs analytic theta_chi^2 0.157895
+
+=== (b) Theta route (P-d kappa): hw3 weight of the light space, three ways ===
+  kappa=0.010: total hw3 weight of light space: SVD 0.00007651 | model-B direct diag 0.00007651 | A1 channel: SVD 0.00007651 vs real-space L=4 model-A eigenvectors (2 states at E=Delta*sigma_A1) 0.00007651; small-kappa formula 3kappa^2/4 = 0.00007500
+  kappa=0.030: total hw3 weight of light space: SVD 0.00071586 | model-B direct diag 0.00071586 | A1 channel: SVD 0.00071586 vs real-space L=4 model-A eigenvectors (2 states at E=Delta*sigma_A1) 0.00071586; small-kappa formula 3kappa^2/4 = 0.00067500
+  kappa=0.100: total hw3 weight of light space: SVD 0.00900975 | model-B direct diag 0.00900975 | A1 channel: SVD 0.00900975 vs real-space L=4 model-A eigenvectors (2 states at E=Delta*sigma_A1) 0.00900975; small-kappa formula 3kappa^2/4 = 0.00750000
+  kappa=0.200: total hw3 weight of light space: SVD 0.04116853 | model-B direct diag 0.04116853 | A1 channel: SVD 0.04116853 vs real-space L=4 model-A eigenvectors (2 states at E=Delta*sigma_A1) 0.04116853; small-kappa formula 3kappa^2/4 = 0.03000000
+  kappa=0.330: total hw3 weight of light space: SVD 0.11961279 | model-B direct diag 0.11961279 | A1 channel: SVD 0.11961279 vs real-space L=4 model-A eigenvectors (2 states at E=Delta*sigma_A1) 0.11961279; small-kappa formula 3kappa^2/4 = 0.08167500
+archived cls1_theta_archive.npz
+watchdog peak RSS 15360 KB

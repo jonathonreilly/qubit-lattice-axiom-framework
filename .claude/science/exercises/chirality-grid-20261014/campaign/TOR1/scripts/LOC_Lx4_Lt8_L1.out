@@ -1,0 +1,7 @@
+# TOR-1 locality Lx=4 Lt=8 model=L1 nfield=2 seed=7201 Ns=4 eps=0.0001
+field 0: chi(d) 0.0:6.86e-05 1.0:1.17e-02 2.0:7.47e-03 3.0:5.34e-03 4.0:4.11e-03 5.0:1.42e-03 6.0:2.44e-05  | far-plateau median 4.49e-06 [2s]
+   |g(x,p)| vs dist 1.0:3.32e-02 2.0:4.41e-03 3.0:5.37e-03 4.0:5.50e-03 5.0:5.48e-03
+field 1: chi(d) 0.0:3.54e-05 1.0:9.29e-03 2.0:5.87e-03 3.0:4.38e-03 4.0:3.35e-03 5.0:1.15e-03 6.0:9.64e-06  | far-plateau median 1.10e-06 [3s]
+   |g(x,p)| vs dist 1.0:2.95e-02 2.0:4.79e-03 3.0:4.41e-03 4.0:4.47e-03 5.0:4.44e-03
+FIT log chi_max(d) over d in [1, 6.0]: nu = 1.031 +- 0.322 (3.2 sigma); chi(dmax)/chi(1) = 2.09e-03
+watchdog peak RSS 132976 KB

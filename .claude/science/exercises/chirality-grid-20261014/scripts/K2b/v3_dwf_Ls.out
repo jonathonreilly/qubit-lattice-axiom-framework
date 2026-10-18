@@ -1,0 +1,35 @@
+# V3 pool pool_search_open_Lt12_seed1201_SH.npz: Lt=12 torus=False k=20; formula vs dense D5PV (L_s=4,8): max|d logdet| 8.2e-14
+   min|eig H_T| 0.370  [17s]
+   DWF L_s=4   : lam_min -2.2313e-06 min/max -1.3885e-07 E 2.1e-13 certified-negative True
+   DWF L_s=6   : lam_min -2.1657e-06 min/max -1.3475e-07 E 1.9e-13 certified-negative True
+   DWF L_s=8   : lam_min -1.4610e-06 min/max -9.0896e-08 E 2.0e-13 certified-negative True
+   DWF L_s=12  : lam_min -1.0816e-06 min/max -6.7293e-08 E 1.9e-13 certified-negative True
+   DWF L_s=16  : lam_min -1.0533e-06 min/max -6.5530e-08 E 2.0e-13 certified-negative True
+   DWF L_s=24  : lam_min -1.0519e-06 min/max -6.5440e-08 E 1.9e-13 certified-negative True
+   DWF L_s=32  : lam_min -1.0519e-06 min/max -6.5440e-08 E 1.9e-13 certified-negative True
+   DWF L_s=48  : lam_min -1.0519e-06 min/max -6.5440e-08 E 2.0e-13 certified-negative True
+   DWF L_s=inf : lam_min -1.0519e-06 min/max -6.5440e-08 E 2.0e-13 certified-negative True
+# V3 pool pool_search_open_Lt12_seed1201.npz: Lt=12 torus=False k=20; formula vs dense D5PV (L_s=4,8): max|d logdet| 8.2e-14
+   min|eig H_T| 0.371  [34s]
+   DWF L_s=4   : lam_min +3.0639e-07 min/max +1.8980e-08 E 1.9e-13 certified-negative False
+   DWF L_s=6   : lam_min -1.4237e-07 min/max -8.8184e-09 E 1.9e-13 certified-negative True
+   DWF L_s=8   : lam_min -2.9323e-07 min/max -1.8162e-08 E 1.9e-13 certified-negative True
+   DWF L_s=12  : lam_min -2.6179e-07 min/max -1.6215e-08 E 1.8e-13 certified-negative True
+   DWF L_s=16  : lam_min -2.5237e-07 min/max -1.5631e-08 E 1.9e-13 certified-negative True
+   DWF L_s=24  : lam_min -2.5190e-07 min/max -1.5602e-08 E 1.8e-13 certified-negative True
+   DWF L_s=32  : lam_min -2.5190e-07 min/max -1.5602e-08 E 1.9e-13 certified-negative True
+   DWF L_s=48  : lam_min -2.5190e-07 min/max -1.5602e-08 E 2.0e-13 certified-negative True
+   DWF L_s=inf : lam_min -2.5190e-07 min/max -1.5602e-08 E 2.0e-13 certified-negative True
+# V3 pool g1p_262_s1: Lt=12 torus=False k=8; formula vs dense D5PV (L_s=4,8): max|d logdet| 2.4e-13
+   min|eig H_T| 0.385  [37s]
+   DWF L_s=4   : lam_min +8.5446e-05 min/max +1.4194e-05 E 1.5e-13 certified-negative False
+   DWF L_s=6   : lam_min +6.5148e-05 min/max +1.0821e-05 E 1.4e-13 certified-negative False
+   DWF L_s=8   : lam_min +5.7536e-05 min/max +9.5564e-06 E 1.4e-13 certified-negative False
+   DWF L_s=12  : lam_min +5.5162e-05 min/max +9.1621e-06 E 1.5e-13 certified-negative False
+   DWF L_s=16  : lam_min +5.5081e-05 min/max +9.1486e-06 E 1.4e-13 certified-negative False
+   DWF L_s=24  : lam_min +5.5080e-05 min/max +9.1485e-06 E 1.5e-13 certified-negative False
+   DWF L_s=32  : lam_min +5.5080e-05 min/max +9.1485e-06 E 1.5e-13 certified-negative False
+   DWF L_s=48  : lam_min +5.5080e-05 min/max +9.1485e-06 E 1.5e-13 certified-negative False
+   DWF L_s=inf : lam_min +5.5080e-05 min/max +9.1485e-06 E 1.5e-13 certified-negative False
+done [37s]
+           132841472  maximum resident set size

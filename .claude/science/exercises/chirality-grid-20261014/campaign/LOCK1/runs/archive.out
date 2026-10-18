@@ -1,0 +1,9 @@
+354 runs archived; 280 S(k) arrays
+54 smallest-k
+147 corner(pi,pi,pi)
+1 other (11, 12, 12) L=24 g=0.1 rho=0.5 start=rand SQ/V=0.0134
+1 other (7, 8, 8) L=16 g=1e-05 rho=0.5 start=rand SQ/V=0.0039
+1 other (7, 8, 8) L=16 g=1e-05 rho=0.5 start=rand SQ/V=0.0023
+1 other (11, 12, 12) L=24 g=0.02 rho=0.5 start=rand SQ/V=0.0130
+1 other (7, 8, 8) L=16 g=1e-05 rho=0.5 start=rand SQ/V=0.0000
+watchdog peak RSS 15600 KB

@@ -1,0 +1,62 @@
+gamma5 diag: [ 1.  1. -1. -1.]  offdiag max 0.0
+====================================================================================================
+STEP 0: calibrate the reflection convention on the POS control (Wilson r=1, m=+0.5)
+  Gamma=+g4 L: min eig/max over link(H0)&shift(H1) = -3.799e-15; herm defect 9.4e-15
+  Gamma=-g4 L: min eig/max over link(H0)&shift(H1) = -1.466e+15; herm defect 9.4e-15
+  Gamma=+g4 R: min eig/max over link(H0)&shift(H1) = -3.892e-15; herm defect 9.4e-15
+  Gamma=-g4 R: min eig/max over link(H0)&shift(H1) = -1.402e+15; herm defect 9.4e-15
+  admissible conventions: ['+g4 L', '+g4 R']
+  USING Gamma = +g4 L
+====================================================================================================
+STEP 1: controls with the fixed convention (H0 = link form, H1 = shifted form, n=6)
+  POS Wilson r=1 m=+0.5    p=[ 0.3  0.2 -0.1]  H0 min/max=-8.97e-16  H1 min/max=-1.00e-15  rank(H0,n=2..6)=[2, 2, 2, 2, 2]
+  POS Wilson r=1 m=+0.5    p=[3.142 0.    0.   ]  H0 min/max=-6.84e-16  H1 min/max=-1.85e-15  rank(H0,n=2..6)=[2, 2, 2, 2, 2]
+  POS Wilson r=1 m=+0.5    p=[0.05 0.03 0.02]  H0 min/max=-1.66e-15  H1 min/max=-7.56e-16  rank(H0,n=2..6)=[2, 2, 2, 2, 2]
+  NEG1 naive m=+0.5        p=[ 0.3  0.2 -0.1]  H0 min/max=-9.14e-16  H1 min/max=-1.00e+00  rank(H0,n=2..6)=[4, 4, 4, 4, 4]
+  NEG1 naive m=+0.5        p=[3.142 0.    0.   ]  H0 min/max=-1.36e-15  H1 min/max=-1.00e+00  rank(H0,n=2..6)=[4, 4, 4, 4, 4]
+  NEG1 naive m=+0.5        p=[0.05 0.03 0.02]  H0 min/max=-9.62e-16  H1 min/max=-1.00e+00  rank(H0,n=2..6)=[4, 4, 4, 4, 4]
+  CMP Wilson r=1 m=-1.5    p=[ 0.3  0.2 -0.1]  H0 min/max=-9.87e-16  H1 min/max=-7.20e+14  rank(H0,n=2..6)=[2, 2, 2, 2, 2]
+  CMP Wilson r=1 m=-1.5    p=[3.142 0.    0.   ]  H0 min/max=-7.10e-16  H1 min/max=-6.69e-16  rank(H0,n=2..6)=[2, 2, 2, 2, 2]
+  CMP Wilson r=1 m=-1.5    p=[0.05 0.03 0.02]  H0 min/max=-6.07e-16  H1 min/max=-5.00e+14  rank(H0,n=2..6)=[2, 2, 2, 2, 2]
+====================================================================================================
+STEP 2: overlap -- decomposition check, positivity, Hankel rank
+ M=0.5: max rel residual (FFT vs pole+cut) = 1.19e-13; #p with light pole 7/48; min E_pole 0.062; pole at an exact doubler corner: []
+        #p with pi-type (lambda<0) cut: 0; min E1 over test set 0.694; worst H0 min/max +5.40e-15; worst H1 min/max -1.27e-14
+        light residue (Gamma-weighted) ranks (Dirac, Weyl-, Weyl+, PSD, block-diag): {(2, 1, 1, True, np.True_)}
+        Hankel rank of H0 for n=2..8 at continuum-only momenta: [((np.float64(1.77), np.float64(-0.15), np.float64(-2.41)), [8, 12, 16, 20, 20, 20, 20]), ((np.float64(2.33), np.float64(0.6), np.float64(-0.59)), [8, 12, 16, 20, 20, 22, 22]), ((np.float64(0.42), np.float64(1.45), np.float64(0.18)), [8, 12, 16, 20, 22, 24, 24])]
+        (POS Wilson at same p: ranks n=2..8 = [2, 2, 2, 2, 2, 2, 2])
+ M=1.0: max rel residual (FFT vs pole+cut) = 1.21e-13; #p with light pole 10/48; min E_pole 0.062; pole at an exact doubler corner: []
+        #p with pi-type (lambda<0) cut: 0; min E1 over test set 0.693; worst H0 min/max -4.48e-16; worst H1 min/max -2.22e-15
+        light residue (Gamma-weighted) ranks (Dirac, Weyl-, Weyl+, PSD, block-diag): {(2, 1, 1, True, np.True_)}
+        Hankel rank of H0 for n=2..8 at continuum-only momenta: [((np.float64(1.55), np.float64(2.28), np.float64(-1.38)), [8, 12, 16, 20, 20, 20, 20]), ((np.float64(2.59), np.float64(-0.55), np.float64(-1.07)), [8, 12, 16, 20, 20, 22, 22]), ((np.float64(1.49), np.float64(-1.58), np.float64(-3.03)), [8, 12, 16, 20, 20, 20, 20])]
+        (POS Wilson at same p: ranks n=2..8 = [2, 2, 2, 2, 2, 2, 2])
+ M=1.5: max rel residual (FFT vs pole+cut) = 1.23e-13; #p with light pole 11/48; min E_pole 0.062; pole at an exact doubler corner: []
+        #p with pi-type (lambda<0) cut: 4; min E1 over test set 0.405; worst H0 min/max +1.49e-15; worst H1 min/max -3.07e-03
+        light residue (Gamma-weighted) ranks (Dirac, Weyl-, Weyl+, PSD, block-diag): {(2, 1, 1, True, np.True_)}
+        Hankel rank of H0 for n=2..8 at continuum-only momenta: [((np.float64(0.64), np.float64(2.15), np.float64(-1.99)), [8, 12, 16, 20, 20, 20, 20]), ((np.float64(2.63), np.float64(1.19), np.float64(-2.15)), [8, 12, 16, 20, 20, 20, 20]), ((np.float64(2.9), np.float64(0.14), np.float64(-1.94)), [8, 12, 16, 20, 20, 20, 22])]
+        (POS Wilson at same p: ranks n=2..8 = [2, 2, 2, 2, 2, 2, 2])
+ M=1.9: max rel residual (FFT vs pole+cut) = 1.15e-13; #p with light pole 12/48; min E_pole 0.062; pole at an exact doubler corner: []
+        #p with pi-type (lambda<0) cut: 5; min E1 over test set 0.095; worst H0 min/max -1.54e-16; worst H1 min/max -2.74e-02
+        light residue (Gamma-weighted) ranks (Dirac, Weyl-, Weyl+, PSD, block-diag): {(2, 1, 1, True, np.True_)}
+        Hankel rank of H0 for n=2..8 at continuum-only momenta: [((np.float64(-2.4), np.float64(-1.54), np.float64(-1.96)), [8, 12, 16, 20, 20, 20, 20]), ((np.float64(0.03), np.float64(-3.12), np.float64(0.42)), [8, 12, 16, 20, 24, 28, 28]), ((np.float64(1.71), np.float64(1.2), np.float64(2.49)), [8, 12, 16, 20, 20, 20, 20])]
+        (POS Wilson at same p: ranks n=2..8 = [2, 2, 2, 2, 2, 2, 2])
+====================================================================================================
+STEP 3: closed-form spectrum over the full 16^3 spatial grid + exact corners
+ M=0.5: pole region: 250/4095 momenta, max dist from p=0 inside = 1.469; light (E_p<0.3) momenta max dist nan
+        doubler corners with a pole: []; E1 at corners: {(0, 0, 0): 0.693, (0, 0, 8): 0.916, (0, 8, 0): 0.916, (0, 8, 8): 1.504, (8, 0, 0): 0.916, (8, 0, 8): 1.504, (8, 8, 0): 1.504, (8, 8, 8): 1.872}
+        min E1 over grid = 0.6931; #grid momenta with pi-type cut (beta<0) = 0; min E1 over beta<0 = inf
+        check E_pole < E1 wherever pole exists: True; min gap E1-E_pole = 0.0025
+ M=1.0: pole region: 564/4095 momenta, max dist from p=0 inside = 2.041; light (E_p<0.3) momenta max dist nan
+        doubler corners with a pole: []; E1 at corners: {(0, 0, 0): inf, (0, 0, 8): 0.693, (0, 8, 0): 0.693, (0, 8, 8): 1.386, (8, 0, 0): 0.693, (8, 0, 8): 1.386, (8, 8, 0): 1.386, (8, 8, 8): 1.792}
+        min E1 over grid = 0.6931; #grid momenta with pi-type cut (beta<0) = 0; min E1 over beta<0 = inf
+        check E_pole < E1 wherever pole exists: True; min gap E1-E_pole = 0.0002
+ M=1.5: pole region: 924/4095 momenta, max dist from p=0 inside = 2.356; light (E_p<0.3) momenta max dist nan
+        doubler corners with a pole: []; E1 at corners: {(0, 0, 0): 0.693, (0, 0, 8): 0.405, (0, 8, 0): 0.405, (0, 8, 8): 1.253, (8, 0, 0): 0.405, (8, 0, 8): 1.253, (8, 8, 0): 1.253, (8, 8, 8): 1.705}
+        min E1 over grid = 0.4055; #grid momenta with pi-type cut (beta<0) = 81; min E1 over beta<0 = 0.6931
+        check E_pole < E1 wherever pole exists: True; min gap E1-E_pole = 0.0002
+ M=1.9: pole region: 1410/4095 momenta, max dist from p=0 inside = 2.804; light (E_p<0.3) momenta max dist nan
+        doubler corners with a pole: []; E1 at corners: {(0, 0, 0): 0.105, (0, 0, 8): 0.095, (0, 8, 0): 0.095, (0, 8, 8): 1.131, (8, 0, 0): 0.095, (8, 0, 8): 1.131, (8, 8, 0): 1.131, (8, 8, 8): 1.629}
+        min E1 over grid = 0.0953; #grid momenta with pi-type cut (beta<0) = 179; min E1 over beta<0 = 0.1054
+        check E_pole < E1 wherever pole exists: True; min gap E1-E_pole = 0.0004
+ M=1 random-search min E1 over BZ (20000 pts): 0.6951  (ln 2 = 0.6931)
+done

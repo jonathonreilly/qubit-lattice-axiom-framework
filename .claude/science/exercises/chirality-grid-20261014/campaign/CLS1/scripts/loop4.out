@@ -1,0 +1,5 @@
+invariant dim-4 span: 5 (diag 2, off-diag 3)
+N=48 y0=0.3292+0.0231j y1=0.33: off-diag part alone -> light flavour speed spread 2.270e-05 (vs IceCube c(4) 3.9e-28: x5.8e+22)
+N=64 y0=0.3292+0.0231j y1=0.33: off-diag part alone -> light flavour speed spread 2.338e-05 (vs IceCube c(4) 3.9e-28: x6.0e+22)
+N=48 y0=0.0000 y1=0.33: off-diag part alone -> light flavour speed spread 9.226e-03 (vs IceCube c(4) 3.9e-28: x2.4e+25)
+watchdog peak RSS 209696 KB

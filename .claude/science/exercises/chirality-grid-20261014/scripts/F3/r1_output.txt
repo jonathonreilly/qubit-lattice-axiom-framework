@@ -1,0 +1,77 @@
+=== R1 time-doubler duality check ===
+U_g: |n|-1 max = 2.220446049250313e-16
+U_g: b - g*sin k max = 0.0 (E = (i/2)(U-U^dag) = b.sigma = g * H_walker)
+U_g: g>0 everywhere sampled: True  min g = 0.5824473299422042
+   corner (0, 0, 0) a = c_x c_y c_z = 1  walker chirality (-1)^#pi = 1
+   corner (0, 0, 1) a = c_x c_y c_z = -1  walker chirality (-1)^#pi = -1
+   corner (0, 1, 0) a = c_x c_y c_z = -1  walker chirality (-1)^#pi = -1
+   corner (0, 1, 1) a = c_x c_y c_z = 1  walker chirality (-1)^#pi = 1
+   corner (1, 0, 0) a = c_x c_y c_z = -1  walker chirality (-1)^#pi = -1
+   corner (1, 0, 1) a = c_x c_y c_z = 1  walker chirality (-1)^#pi = 1
+   corner (1, 1, 0) a = c_x c_y c_z = 1  walker chirality (-1)^#pi = 1
+   corner (1, 1, 1) a = c_x c_y c_z = -1  walker chirality (-1)^#pi = -1
+U_g: a(k) = c_x c_y c_z = (1/4)[cos(kx+ky+kz)+cos(kx+ky-kz)+cos(kx-ky+kz)+cos(-kx+ky+kz)] (body-diagonal hops), check: 8.326672684688674e-16
+q_tr: number of Fourier modes kept = 62
+q_tr: min |q_tr| on 4000 random k = 0.9546666117551613
+
+--- U_g (T4 exact): W3 = +3.9366; nodes: 4 at eps=0, 4 at eps=pi; sum chi(eps=0) = +4, sum chi(eps=pi) = +4; sum chi_E (as Weyl points of E) = +0; |a|=1 at nodes: True; chi_E = +chi (0) / -chi (pi): True  -> FAIL
+     k/pi = [2. 2. 2.]  a = +1.000000  chi_tick = +1  chi_E = +1  detJ = +1
+     k/pi = [0. 0. 1.]  a = -1.000000  chi_tick = +1  chi_E = -1  detJ = -1
+     k/pi = [0. 1. 0.]  a = -1.000000  chi_tick = +1  chi_E = -1  detJ = -1
+     k/pi = [0. 1. 1.]  a = +1.000000  chi_tick = +1  chi_E = +1  detJ = +1
+     k/pi = [1. 0. 0.]  a = -1.000000  chi_tick = +1  chi_E = -1  detJ = -1
+     k/pi = [1. 0. 1.]  a = +1.000000  chi_tick = +1  chi_E = +1  detJ = +1
+     k/pi = [1. 1. 2.]  a = +1.000000  chi_tick = +1  chi_E = +1  detJ = +1
+     k/pi = [1. 1. 1.]  a = -1.000000  chi_tick = +1  chi_E = -1  detJ = -1
+     Fock vacuum, pair at eps=0 node: pair quasi-energy (mod 2pi) in [+0.0660, +0.2231];  min E-cost = 0.0660
+     Fock vacuum, pair at eps=pi node: pair quasi-energy (mod 2pi) in [-0.2231, -0.0660];  min E-cost = 0.0660
+
+--- V = q_tr/|q_tr| (T4 range-2): W3 = +3.9430; nodes: 4 at eps=0, 4 at eps=pi; sum chi(eps=0) = +4, sum chi(eps=pi) = +4; sum chi_E (as Weyl points of E) = +0; |a|=1 at nodes: True; chi_E = +chi (0) / -chi (pi): True  -> FAIL
+     k/pi = [0. 0. 0.]  a = +1.000000  chi_tick = +1  chi_E = +1  detJ = +0.8699
+     k/pi = [0. 0. 1.]  a = -1.000000  chi_tick = +1  chi_E = -1  detJ = -0.8699
+     k/pi = [0. 1. 0.]  a = -1.000000  chi_tick = +1  chi_E = -1  detJ = -0.8699
+     k/pi = [2. 1. 1.]  a = +1.000000  chi_tick = +1  chi_E = +1  detJ = +0.8699
+     k/pi = [1. 0. 0.]  a = -1.000000  chi_tick = +1  chi_E = -1  detJ = -0.8699
+     k/pi = [1. 0. 1.]  a = +1.000000  chi_tick = +1  chi_E = +1  detJ = +0.8699
+     k/pi = [1. 1. 0.]  a = +1.000000  chi_tick = +1  chi_E = +1  detJ = +0.8699
+     k/pi = [1. 1. 1.]  a = -1.000000  chi_tick = +1  chi_E = -1  detJ = -0.8699
+     Fock vacuum, pair at eps=0 node: pair quasi-energy (mod 2pi) in [+0.0630, +0.2131];  min E-cost = 0.0630
+     Fock vacuum, pair at eps=pi node: pair quasi-energy (mod 2pi) in [-0.2131, -0.0630];  min E-cost = 0.0630
+
+--- Wilson-normalized M=2: W3 = -0.9815; nodes: 7 at eps=0, 1 at eps=pi; sum chi(eps=0) = -1, sum chi(eps=pi) = -1; sum chi_E (as Weyl points of E) = +0; |a|=1 at nodes: True; chi_E = +chi (0) / -chi (pi): True  -> PASS
+     k/pi = [2. 2. 2.]  a = -1.000000  chi_tick = -1  chi_E = +1  detJ = +1
+     k/pi = [2. 2. 1.]  a = +1.000000  chi_tick = -1  chi_E = -1  detJ = -1
+     k/pi = [0. 1. 1.]  a = +1.000000  chi_tick = +1  chi_E = +1  detJ = +0.03704
+     k/pi = [0. 1. 0.]  a = +1.000000  chi_tick = -1  chi_E = -1  detJ = -1
+     k/pi = [1. 0. 1.]  a = +1.000000  chi_tick = +1  chi_E = +1  detJ = +0.03704
+     k/pi = [1. 0. 0.]  a = +1.000000  chi_tick = -1  chi_E = -1  detJ = -1
+     k/pi = [1. 1. 0.]  a = +1.000000  chi_tick = +1  chi_E = +1  detJ = +0.03704
+     k/pi = [1. 1. 1.]  a = +1.000000  chi_tick = -1  chi_E = -1  detJ = -0.008
+     Fock vacuum, pair at eps=0 node: pair quasi-energy (mod 2pi) in [+0.0660, +0.2209];  min E-cost = 0.0660
+     Fock vacuum, pair at eps=pi node: pair quasi-energy (mod 2pi) in [-0.2234, -0.0660];  min E-cost = 0.0660
+
+--- Wilson-normalized M=-2: W3 = -0.9815; nodes: 1 at eps=0, 7 at eps=pi; sum chi(eps=0) = -1, sum chi(eps=pi) = -1; sum chi_E (as Weyl points of E) = +0; |a|=1 at nodes: True; chi_E = +chi (0) / -chi (pi): True  -> PASS
+     k/pi = [2. 2. 2.]  a = -1.000000  chi_tick = -1  chi_E = +1  detJ = +0.008
+     k/pi = [2. 2. 1.]  a = -1.000000  chi_tick = +1  chi_E = -1  detJ = -0.03704
+     k/pi = [2. 1. 2.]  a = -1.000000  chi_tick = +1  chi_E = -1  detJ = -0.03704
+     k/pi = [0. 1. 1.]  a = -1.000000  chi_tick = -1  chi_E = +1  detJ = +1
+     k/pi = [1. 0. 0.]  a = -1.000000  chi_tick = +1  chi_E = -1  detJ = -0.03704
+     k/pi = [1. 1. 0.]  a = -1.000000  chi_tick = -1  chi_E = +1  detJ = +1
+     k/pi = [1. 1. 1.]  a = +1.000000  chi_tick = -1  chi_E = -1  detJ = -1
+     k/pi = [1. 0. 1.]  a = -1.000000  chi_tick = -1  chi_E = +1  detJ = +1
+     Fock vacuum, pair at eps=0 node: pair quasi-energy (mod 2pi) in [+0.0660, +0.2234];  min E-cost = 0.0660
+     Fock vacuum, pair at eps=pi node: pair quasi-energy (mod 2pi) in [-0.0446, -0.0132];  min E-cost = 0.0132
+
+--- Wilson-normalized M=0.5: W3 = +1.9436; nodes: 4 at eps=0, 4 at eps=pi; sum chi(eps=0) = +2, sum chi(eps=pi) = +2; sum chi_E (as Weyl points of E) = +0; |a|=1 at nodes: True; chi_E = +chi (0) / -chi (pi): True  -> FAIL
+     k/pi = [2. 2. 2.]  a = -1.000000  chi_tick = -1  chi_E = +1  detJ = +0.064
+     k/pi = [0. 0. 1.]  a = -1.000000  chi_tick = +1  chi_E = -1  detJ = -8
+     k/pi = [0. 1. 1.]  a = +1.000000  chi_tick = +1  chi_E = +1  detJ = +0.2963
+     k/pi = [0. 1. 0.]  a = -1.000000  chi_tick = +1  chi_E = -1  detJ = -8
+     k/pi = [1. 0. 1.]  a = +1.000000  chi_tick = +1  chi_E = +1  detJ = +0.2963
+     k/pi = [1. 1. 1.]  a = +1.000000  chi_tick = -1  chi_E = -1  detJ = -0.02332
+     k/pi = [1. 1. 0.]  a = +1.000000  chi_tick = +1  chi_E = +1  detJ = +0.2963
+     k/pi = [1. 0. 0.]  a = -1.000000  chi_tick = +1  chi_E = -1  detJ = -8
+     Fock vacuum, pair at eps=0 node: pair quasi-energy (mod 2pi) in [+0.0440, +0.1480];  min E-cost = 0.0440
+     Fock vacuum, pair at eps=pi node: pair quasi-energy (mod 2pi) in [-0.0893, -0.0264];  min E-cost = 0.0264
+
+OVERALL R1: FAIL

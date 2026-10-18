@@ -1,0 +1,14 @@
+N_f = 16
+kappa_Y = sum q = 0;  sum q^3 = 0
+kappa_B-L = sum q = 0;  sum q^3 = 0
+kappa_X = sum q = 0;  sum q^3 = 0
+kappa_F = sum 1 = 16
+X == 5(B-L)-4Y for all: True
+X mod 4: {'Q': 1, 'u^c': 1, 'd^c': 1, 'L': 1, 'e^c': 1, 'nu^c': 1} -> Z16 index (all charge 1 mod 4) = 0 mod 16
+
+G_SM-singlet psi psi pairings (Lorentz scalar, one generation):
+  nu^c nu^c: allowed; X-charge 10 = 2 mod 4 -> Z4^X-forbidden
+
+Fidkowski-Xu: uniform chiral Z_2N shallow-circuit possible only if 2N | N_f:
+  N_f=16: allowed 2N in [2, 4, 8, 16] ; U(1)_F (N->inf): forbidden
+  N_f=15: allowed 2N in [] ; U(1)_F (N->inf): forbidden

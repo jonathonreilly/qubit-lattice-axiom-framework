@@ -1,0 +1,18 @@
+# TOR-1 measure current Lx=4 Lt=8 model=11112 eps=0.0001 dlt=0.001 Ns=8
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+field 0 Ward: sum_l (d omega)_l j_l = -3.3478687642e-03; sum_x omega q_tot = -3.3505756376e-03; ratio +0.99919212
+field 0 Ward: sum_l (d omega)_l j_l = +1.8826779980e-02; sum_x omega q_tot = +1.8831980457e-02; ratio +0.99972385
+field 0 Ward: sum_l (d omega)_l j_l = -2.8931848462e-02; sum_x omega q_tot = -2.8910738616e-02; ratio +1.00073017
+field 0 source x(1, 2): |dj/dtheta| vs d: 0.0:4.18e-04 1.0:1.54e-02 2.0:6.38e-03 3.0:2.48e-03 4.0:1.85e-03 5.0:1.76e-03 6.0:1.49e-04 | fit rate 0.782 +- 0.150 [31s]
+field 0 source t(2, 1): |dj/dtheta| vs d: 0.0:6.90e-04 1.0:4.56e-03 2.0:9.50e-03 3.0:6.02e-03 4.0:3.03e-03 5.0:1.75e-03 6.0:1.15e-05 | fit rate 1.020 +- 0.425 [46s]
+field 1 Ward: sum_l (d omega)_l j_l = -1.7573340454e-03; sum_x omega q_tot = -1.7480251675e-03; ratio +1.00532537
+field 1 Ward: sum_l (d omega)_l j_l = +9.7415607511e-04; sum_x omega q_tot = +9.4462844573e-04; ratio +1.03125846
+field 1 Ward: sum_l (d omega)_l j_l = -5.1878320583e-03; sum_x omega q_tot = -5.2210174289e-03; ratio +0.99364389
+field 1 source x(1, 2): |dj/dtheta| vs d: 0.0:3.87e-04 1.0:1.28e-02 2.0:5.59e-03 3.0:1.00e-03 4.0:1.13e-03 5.0:1.14e-03 6.0:2.03e-04 | fit rate 0.726 +- 0.142 [68s]
+field 1 source t(2, 1): |dj/dtheta| vs d: 0.0:1.81e-03 1.0:3.06e-03 2.0:4.57e-03 3.0:1.86e-03 4.0:8.33e-04 5.0:6.05e-04 6.0:4.23e-05 | fit rate 0.808 +- 0.198 [82s]
+watchdog peak RSS 309408 KB

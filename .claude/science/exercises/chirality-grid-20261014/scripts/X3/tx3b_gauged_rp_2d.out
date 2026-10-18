@@ -1,0 +1,12 @@
+calibration (free):
+  Wilson r=1   P: min/max -4.71e-16 herm 1.1e-15 | Q1 eig range [-1.00e+00,+0.00e+00] herm 0.0e+00 | Q2 [+0.00e+00,+1.00e+00] herm 0.0e+00
+  overlap M=1  P: min/max -2.69e-16 herm 2.4e-15 | Q1 eig range [-1.00e+00,+8.53e-16] herm 1.9e-15 | Q2 [-8.53e-16,+1.00e+00] herm 1.9e-15
+M=1.0 bg=S s=0.3: Wilson P min/max worst -3.80e-16 | overlap P worst -1.60e-16 (herm 3.8e-15) | Q1 max-eig/scale worst +5.18e-16, Q2 min-eig/scale worst -5.18e-16 (herm 2.8e-15) | min|H_W| 1.000
+M=1.0 bg=S s=1.0: Wilson P min/max worst -3.98e-16 | overlap P worst +3.25e-14 (herm 3.9e-15) | Q1 max-eig/scale worst -1.27e-13, Q2 min-eig/scale worst +1.27e-13 (herm 3.0e-15) | min|H_W| 1.000
+M=1.0 bg=E s=0.3: Wilson P min/max worst -3.76e-16 | overlap P worst +1.92e-06 (herm 3.5e-15) | Q1 max-eig/scale worst -9.03e-06, Q2 min-eig/scale worst +9.03e-06 (herm 2.4e-15) | min|H_W| 0.465
+M=1.0 bg=E s=1.0: Wilson P min/max worst -4.07e-16 | overlap P worst +1.84e-06 (herm 4.3e-15) | Q1 max-eig/scale worst -1.10e-05, Q2 min-eig/scale worst +1.10e-05 (herm 4.2e-15) | min|H_W| 0.047
+M=1.5 bg=S s=0.3: Wilson P min/max worst -3.88e-16 | overlap P worst +9.30e-12 (herm 6.3e-15) | Q1 max-eig/scale worst -4.11e-11, Q2 min-eig/scale worst +4.11e-11 (herm 3.1e-15) | min|H_W| 0.571
+M=1.5 bg=S s=1.0: Wilson P min/max worst -3.83e-16 | overlap P worst +3.57e-14 (herm 4.9e-15) | Q1 max-eig/scale worst -1.59e-13, Q2 min-eig/scale worst +1.59e-13 (herm 2.5e-15) | min|H_W| 0.573
+M=1.5 bg=E s=0.3: Wilson P min/max worst -3.35e-16 | overlap P worst +1.21e-06 (herm 4.1e-15) | Q1 max-eig/scale worst -5.91e-06, Q2 min-eig/scale worst +5.91e-06 (herm 2.1e-15) | min|H_W| 0.361
+M=1.5 bg=E s=1.0: Wilson P min/max worst -3.36e-16 | overlap P worst +7.13e-07 (herm 6.4e-15) | Q1 max-eig/scale worst -8.27e-06, Q2 min-eig/scale worst +8.27e-06 (herm 2.4e-15) | min|H_W| 0.036
+done

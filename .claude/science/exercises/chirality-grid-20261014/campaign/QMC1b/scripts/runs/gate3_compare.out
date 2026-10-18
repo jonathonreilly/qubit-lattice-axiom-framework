@@ -1,0 +1,8 @@
+gate(iii) f1 n=6000: WQc: QMC -0.134445 +- 0.000675  ED -0.134383  |dev| = 0.09 sigma (PASS True); max phase 2.1e-15
+gate(iii) f1 n=6000: S: QMC 0.563193 +- 0.000485  ED 0.563822  |dev| = 1.30 sigma (PASS True); max phase 2.1e-15
+gate(iii) f1 n=6000: Ekin: QMC -2.421441 +- 0.000158  ED -2.421483  |dev| = 0.26 sigma (PASS True); max phase 2.1e-15
+gate(iii) g1 n=6000: WQc: QMC -0.039981 +- 0.000178  ED -0.039694  |dev| = 1.61 sigma (PASS True); max phase 2.9e-16
+gate(iii) g1 n=6000: S: QMC 0.476966 +- 0.000148  ED 0.477124  |dev| = 1.06 sigma (PASS True); max phase 2.9e-16
+gate(iii) g1 n=6000: Ekin: QMC -2.407918 +- 0.001248  ED -2.408674  |dev| = 0.61 sigma (PASS True); max phase 2.9e-16
+GATE (iii) PASS
+watchdog peak RSS 527792 KB

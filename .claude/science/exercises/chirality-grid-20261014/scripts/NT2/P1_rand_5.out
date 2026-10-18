@@ -1,0 +1,6 @@
+step 100: obj +5.7100e-02
+step 200: obj +4.7998e-02
+step 300: obj +2.4186e-02
+step 400: obj +1.2908e-02
+RESULT mode=rand seed=5 K=24 steps=400 delta=0.6: start obj +5.6012e-01 end obj +1.2908e-02 | lam_min +5.9947e-05 lam_max 4.0851e-02 min/max +1.467e-03 | indep lam_min +5.9947e-05 | E 3.2e-16 | neg-converged False | max|plaq| 0.5428 | 1.0s RSS 34MB
+watchdog peak RSS 32752 KB

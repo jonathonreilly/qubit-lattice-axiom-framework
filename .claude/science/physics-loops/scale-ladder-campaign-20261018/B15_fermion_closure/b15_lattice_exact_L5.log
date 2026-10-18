@@ -1,0 +1,14 @@
+PASS: T0 graded Poisson bracket with {psi,psibar}=-i: {psibar A psi, psibar B psi} = -i psibar[A,B]psi and {psi, psibar A psi} = -i A psi (random Gaussian-integer Hermitian A,B, 4 modes)
+PASS: T1a Weyl, endpoint-mean timing: B(delta_0, delta_d) != 0 for each nearest-neighbour d (sanity)
+PASS: T1b Weyl, endpoint-mean timing: B(delta_0, delta_d) != 0 for the 6 collinear d = +-2e_j (non-nearest-neighbour lapse bilinear N_0 M_2e - N_2e M_0 present) and = 0 for the 12 diagonal d = e_j+-e_k (cancel: {sigma^j,sigma^k} = 0); nonzero 6/18
+   <0|B(delta_0,delta_{2e1})|2e1> (2x2, v=1, (re,im)): {(0, 0): ('-1/16', '0'), (1, 1): ('-1/16', '0')}
+PASS: T1c B(delta_0, delta_z) = 0 for graph distance > 2 (40 sites tested): the bracket is range-2 in lapse pairs
+   distinct non-nn coefficient polynomials (sample): ['w_a*w_b/4', '-w_a*w_b/4', '(w_a - w_b)*(w_a + w_b)/4', '-(w_a - w_b)*(w_a + w_b)/4']
+PASS: T2 Weyl, general bond timing wbar = wa N_x + wb N_(x+e): the non-nearest-neighbour part of B vanishes only for wa = wb = 0 (sympy.solve over 4 distinct exact polynomials: [{w_a: 0, w_b: 0}]); no two-endpoint timing removes it
+PASS: T3 L=5: kernel of xi -> G_g[xi] (09-24 relabelling clause, re-implemented) has dimension 3 and contains the 3 constant shifts: G_g fixes xi up to a global translation
+PASS: T4 for each timing (1/2,1/2),(1,0),(0,1),(1/3,2/3) there is a lapse pair (delta_0, delta_d), d non-nn, with xi_g = 0 but B_f != 0 and B_f localized (support < all sites). Closure needs B_f = G_f[xi_g + kappa] = G_f[kappa], kappa constant (T3), i.e. a translation-invariant operator: impossible. => NO linear translation-covariant fermion relabelling closes the total algebra exactly on the lattice
+PASS: T5 naive Dirac, on-site mass m N_x beta, bond timing (a, 1-a): mass cross terms in [h_N,h_M] vanish for all unit-lapse pairs iff a = 1/2; table {'0': False, '1/4': False, '1/2': True, '1': False} (analytically the residual is m(2a-1) xi~_b alpha^j beta (hop - hop^dag))
+PASS: T6a naive Dirac with mass, endpoint mean: [h_N,h_M] = 1_2 (x) [Weyl bracket] exactly (alpha^j alpha^k = 1 (x) sigma^j sigma^k; mass drops out exactly), 12 lapse pairs
+PASS: T6b naive Dirac + Wilson term (r=1, endpoint mean): [h_N,h_M] has components outside {1 (x) X} (off-diagonal beta-alpha blocks and/or beta-odd parts) - not of relabelling (Kosmann) Clifford type; order in a measured in b15_scaling.py
+   T7 skipped (needs even L)
+TOTAL: PASS=10 FAIL=0

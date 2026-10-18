@@ -1,0 +1,11 @@
+   weyl_t0.5: rel = L=16: 3.426e-01, L=32: 9.822e-02, L=64: 2.542e-02; slopes 1.80, 1.95
+PASS: weyl_t0.5 relative residual of [h_N,h_M] + v^2 L_w falls as a^1.95 (expected a^2)
+   weyl_t1: rel = L=16: 4.857e-01, L=32: 2.166e-01, L=64: 1.025e-01; slopes 1.16, 1.08
+PASS: weyl_t1 relative residual of [h_N,h_M] + v^2 L_w falls as a^1.08 (expected a^1)
+   doubler: rel = L=16: 3.427e-01, L=32: 9.826e-02, L=64: 2.543e-02; slopes 1.80, 1.95
+PASS: doubler relative residual of [h_N,h_M] + v^2 L_w falls as a^1.95 (expected a^2)
+   dirac_m: rel = L=16: 3.426e-01, L=32: 9.824e-02, L=64: 2.543e-02; slopes 1.80, 1.95
+PASS: dirac_m relative residual of [h_N,h_M] + v^2 L_w falls as a^1.95 (expected a^2)
+   wilson_r1: rel = L=16: 5.103e-01, L=32: 2.639e-01, L=64: 1.327e-01; slopes 0.95, 0.99
+PASS: wilson_r1 relative residual of [h_N,h_M] + v^2 L_w falls as a^0.99 (expected a^1)
+TOTAL: PASS=5 FAIL=0

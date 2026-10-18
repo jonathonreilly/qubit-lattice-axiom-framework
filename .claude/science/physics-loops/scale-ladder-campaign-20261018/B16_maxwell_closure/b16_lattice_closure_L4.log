@@ -1,0 +1,45 @@
+B16 lattice closure, L=4, alpha=3/7, K=5/11, kappa=K/(4 alpha)=35/132
+PASS: T0 transverse parametrisation E = curl^T b + h: div = 0 identically (True); rank = 129 = dim ker(div) = 2L^3+1 = 129
+PASS: T1 gravity alone (L=4, s=-1): {C_g(N),C_g(M)} = G_g[-kappa xi~] exactly (09-24 T1 via the B14 import)
+T2 table {(link, plaquette): (bond-supported exactly, bond-supported mod Gauss, #non-bond lapse pairs)}:
+    ('head', 'antidiagonal') (False, False, 192)
+    ('head', 'c00') (False, False, 192)
+    ('head', 'c01') (False, False, 192)
+    ('head', 'c10') (False, False, 192)
+    ('head', 'c11') (True, True, 0)
+    ('head', 'diagonal') (False, False, 192)
+    ('head', 'four') (False, False, 384)
+    ('mean', 'antidiagonal') (False, False, 192)
+    ('mean', 'c00') (False, False, 192)
+    ('mean', 'c01') (False, False, 192)
+    ('mean', 'c10') (False, False, 192)
+    ('mean', 'c11') (False, False, 192)
+    ('mean', 'diagonal') (False, False, 192)
+    ('mean', 'four') (False, False, 384)
+    ('tail', 'antidiagonal') (False, False, 192)
+    ('tail', 'c00') (True, True, 0)
+    ('tail', 'c01') (False, False, 192)
+    ('tail', 'c10') (False, False, 192)
+    ('tail', 'c11') (False, False, 192)
+    ('tail', 'diagonal') (False, False, 192)
+    ('tail', 'four') (False, False, 384)
+PASS: T2a of 21 uniform timings (link: mean/tail/head x plaquette: four/diagonal/antidiagonal/one corner), {H_EM(N),H_EM(M)} depends on (N,M) only through bond xi~ for exactly [('head', 'c11'), ('tail', 'c00')]; Gauss law (any multiplier) rescues none; in particular the reflection-symmetric (mean, four) fails
+PASS: T2b all 8 per-axis orientation choices (each axis timed at its tail or head, each plaquette at the corner where its two axes' chosen endpoints meet) close exactly; a mismatched corner fails even mod Gauss
+PASS: T2c forward timing (links at tail, plaquettes at base corner): {H_EM(N),H_EM(M)} = G_A[-cB xi~] EXACTLY with symbolic lapses; g drops out (product g^2 * cB/g^2); same form as the scalar's {H_m(N),H_m(M)} = G_m[-c xi~]
+PASS: T2d span{Gauss_x} (rank 63 = L^3-1) meets span{E_l : l in boundary of one plaquette} only in 0 (4 new directions): a diagonal-pair residual B_p * (sum of E around p) can never be a Gauss term
+T2e solutions (u_tail per axis; plaquette corner with weight 1):
+    u_tail = (1, 1, 1)  corners (01,02,12 planes) = ('00', '00', '00')
+    u_tail = (1, 1, 0)  corners (01,02,12 planes) = ('00', '01', '01')
+    u_tail = (1, 0, 1)  corners (01,02,12 planes) = ('01', '00', '10')
+    u_tail = (1, 0, 0)  corners (01,02,12 planes) = ('01', '01', '11')
+    u_tail = (0, 1, 1)  corners (01,02,12 planes) = ('10', '10', '00')
+    u_tail = (0, 1, 0)  corners (01,02,12 planes) = ('10', '11', '01')
+    u_tail = (0, 0, 1)  corners (01,02,12 planes) = ('11', '10', '10')
+    u_tail = (0, 0, 0)  corners (01,02,12 planes) = ('11', '11', '11')
+PASS: T2e exact classification (sympy) over ALL corner-supported smearings (2 weights per link axis, 4 per plaquette plane, normalised): exactly 8 solutions, each link axis timed at ONE endpoint and each plaquette at the matching corner; no solution is reflection-symmetric (u_tail = u_head never occurs)
+PASS: T3a gravity + Maxwell (forward timing, supplied G_A): total O(eps) bracket closes into ONE G_g[xi] + G_A[xi] iff cB = -s K/(4 alpha), independently of g; table {(s, g^2, cB/kappa): closes} = {(-1, '1', '1'): True, (-1, '1', '2'): False, (-1, '1', '1/3'): False, (-1, '1', '-1'): False, (-1, '9/4', '1'): True, (-1, '9/4', '2'): False, (-1, '9/4', '1/3'): False, (-1, '9/4', '-1'): False, (1, '1', '1'): False, (1, '1', '2'): False, (1, '1', '1/3'): False, (1, '1', '-1'): True, (1, '9/4', '1'): False, (1, '9/4', '2'): False, (1, '9/4', '1/3'): False, (1, '9/4', '-1'): True}
+PASS: T3c control: with the generator rescaled to 2 G_A the closing value moves to cB = 2 kappa ({'1': False, '2': True}); the cone is fixed only together with the generator normalisation, which T3b fixes by the translation action
+PASS: T3b normalisation: {A_(z,j), G_A[xi = e_0 uniform]} = (A_(z,j) - A_(z-e0,j)) - (A_(z-e0+ej,0) - A_(z-e0,0)) exactly (unit backward translation + gauge); {phi_z, G_m[same]} = (phi_(z+e0) - phi_(z-e0))/2 (unit central translation): both generators carry the same unit normalisation, so the speed conditions are comparable
+PASS: T4 scalar (symmetric timing, G_m) + Maxwell (forward timing, G_A) + gravity (s=-1): one total relabelling iff c_phi = cB = K/(4 alpha); table {(c/kappa, cB/kappa): closes} = {('1', '1'): True, ('1', '2'): False, ('2', '1'): False, ('2', '2'): False}
+PASS: T5a Gauss is first class: {Gauss[theta], H_EM(N)} = 0, {Gauss[theta], G_A[xi]} = 0, {Gauss, Gauss} = 0 exactly; {Gauss[theta], G_L[xi]} is a pure Gauss term (theta transported)
+PASS: T5b with the pure-translation generator G_L (G_L[e0 uniform] shifts every A component by its backward difference, no gauge part): {H_EM(N),H_EM(M)} = G_L[-cB xi~] + Gauss[lambda], lambda_w = -cB sum_i xi~_(w-i,i) A_(w-i,i)  (field-dependent structure function, lattice image of -xi.A)

@@ -1,0 +1,14 @@
+PASS: C1 rotation invariance of sigma.grad fixes the spin coefficient of the spinor Lie derivative: b = [I/4] (Kosmann: L_xi = xi.grad + div xi/2 + (i/4) curl xi.sigma)
+PASS: C2 continuum symmetrized Weyl operator: [h_N, h_M] = -v^2 L_w exactly, w = N grad M - M grad N, L_w Kosmann (spin term produced automatically with b = i/4)
+PASS: C3a lattice naive Weyl (3D), any bond timing t: O(a^-1) part 0 and O(a^0) part of [h_N,h_M] = -v^2 L_w (Kosmann, same v^2 coefficient as the continuum)
+PASS: C3b O(a^1) part of the bracket is affine in t, vanishes at t = 1/2 (endpoint mean) and is nonzero at t = 1 (one-endpoint timing)
+   O(a) term (t=1), first component, number of terms: 102
+   1D O(a^2) remainder R (after subtracting L_{u2}): -(32*m0*n1*p3 + 48*m0*n2*p2 + 30*m0*n3*p1 + 7*m0*n4*p0 - 32*m1*n0*p3 + 18*m1*n2*p1 + 8*m1*n3*p0 - 48*m2*n0*p2 - 18*m2*n1*p1 - 30*m3*n0*p1 - 8*m3*n1*p0 - 7*m4*n0*p0)/48
+PASS: C4a 1D endpoint mean: O(a^0) of [D_N,D_M] = L_w; gravity's bond bilinear u = -xi~/a = w + O(a^2) (midpoint expansion)
+PASS: C4b 1D endpoint mean, O(a^2): the remainder is NOT absorbable by any O(a^2)-corrected relabelling L_u + a^2(c1 u d^3 + c2 u' d^2 + c3 u'' d + c4 u''') (sympy.solve -> []): the fermion bracket closes only up to an O(a^2) lattice artefact
+PASS: C4c control: if the O(a^2) part of the shift were a FREE bilinear, the remainder would be absorbable (solution [{c1: 2/3, c2: 1, c3: 1/4 - q2, c4: -q2/2 - 1/24, q1: q2 + 5/12}]); so the obstruction is the mismatch between the fermion's range-2 shift and the gravity sector's nearest-neighbour xi~
+   sigma^2 component, O(a): -r*v*(-M(x)*f(x)*Derivative(N(x), (x, 3)) - 2*M(x)*Derivative(N(x), (x, 2))*Derivative(f(x), x) + N(x)*f(x)*Derivative(M(x), (x, 3)) + 2*N(x)*Derivative(M(x), (x, 2))*Derivative(f(x), x) - f(x)*Derivative(M(x), x)*Derivative(N(x), (x, 2)) + f(x)*Derivative(M(x), (x, 2))*Derivative(N(x), x))/4
+PASS: C5a 1D naive Dirac + Wilson (endpoint mean): the bracket acquires a sigma^2 (= i alpha beta) component at O(a) (zero at O(a^0)), equal to -(r v/2) a sigma^2 (w' d + w''/2) = -(r v a/2) sigma^2 l_{w'} - Clifford-odd, not a spinor relabelling; Wilson fermions close only at leading order, O(a) obstruction
+PASS: C5b continuum: an arbitrary position-dependent mass mu(x) N beta drops out of [h_N,h_M] exactly (alpha beta = -beta alpha)
+PASS: C6 closure condition v^2 = -K*s/(4*alpha); with K, alpha > 0 and v real (Hermitian h) only s = -1 is possible and then v^2 = K/(4 alpha): the same value B14 found for the scalar gradient coefficient c
+TOTAL: PASS=10 FAIL=0

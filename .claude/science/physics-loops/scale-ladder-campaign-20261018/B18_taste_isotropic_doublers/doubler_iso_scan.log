@@ -1,0 +1,32 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+7266 (step, node) pairs with a Weyl doublet at k*  [17s]
+1872 of them have a uniaxial Weyl doublet (nonzero speeds, D4 form) at the node quasi-energy at k*+pi e_x or -k*+pi e_x
+252 doubler doublets at the node quasi-energy fail the Weyl test (a zero or non-uniaxial speed: not linear Weyl cones)
+distinct (v_axial, v_transverse) doubler pairs: 11: [(np.float64(0.1768), np.float64(0.2652)), (np.float64(0.2467), np.float64(0.5837)), (np.float64(0.2588), np.float64(0.483)), (np.float64(0.2828), np.float64(0.2828)), (np.float64(0.3536), np.float64(0.5303)), (np.float64(0.4356), np.float64(0.041)), (np.float64(0.5657), np.float64(0.4243)), (np.float64(0.6236), np.float64(0.3953)), (np.float64(0.7071), np.float64(0.3536)), (np.float64(0.7891), np.float64(0.5714)), (np.float64(0.9659), np.float64(0.1294))]
+most isotropic doubler regardless of speed: S L022*H20 E 3.14159 |v_a-v_t| = 0.0
+multiplicity at node E at (k*+pi ex, -k*+pi ex): {(0, 0): 5232, (0, 2): 128, (2, 0): 728, (2, 2): 1088, (4, 4): 72, (6, 6): 18}
+best 12 by max(|v_ax-v_tr|,|v_ax-v*|,|v_tr-v*|) (coarse q=1e-4):
+  S.RL  L020*H02     E=+3.1416 v*=0.47140  D+x 2 [0.5657 0.4243 0.4243 0.4243 0.5    0.4761]  D-x 2 [0.     0.7071 0.7071 0.7071 0.5    0.5774]  score 0.1414
+  S.RL  H01*L021     E=-3.1416 v*=0.47140  D+x 2 [0.5657 0.4243 0.4243 0.4243 0.5    0.4761]  D-x 0 [nan nan nan nan nan nan]  score 0.1414
+  S.RL  H00*L021     E=-3.1416 v*=0.47140  D+x 2 [0.5657 0.4243 0.4243 0.4243 0.5    0.4761]  D-x 0 [nan nan nan nan nan nan]  score 0.1414
+  S.RL  L021*H00     E=+3.1416 v*=0.47140  D+x 2 [0.5657 0.4243 0.4243 0.4243 0.5    0.4761]  D-x 0 [nan nan nan nan nan nan]  score 0.1414
+  S.RL  L021         E=-3.1416 v*=0.47140  D+x 2 [0.5657 0.4243 0.4243 0.4243 0.5    0.4761]  D-x 0 [nan nan nan nan nan nan]  score 0.1414
+  S.RL  H03*L023     E=-3.1416 v*=0.47140  D+x 2 [0.5657 0.4243 0.4243 0.4243 0.5    0.4761]  D-x 0 [nan nan nan nan nan nan]  score 0.1414
+  S.RL  H03*L311     E=+1.5708 v*=0.47140  D+x 2 [0.5657 0.4243 0.4243 0.4243 0.5    0.4761]  D-x 0 [nan nan nan nan nan nan]  score 0.1414
+  S.RL  L311*H00     E=+1.5708 v*=0.47140  D+x 2 [0.5657 0.4243 0.4243 0.4243 0.5    0.4761]  D-x 0 [nan nan nan nan nan nan]  score 0.1414
+  S.RL  L201*H02     E=-0.0000 v*=0.47140  D+x 2 [0.5657 0.4243 0.4243 0.4243 0.5    0.4761]  D-x 0 [nan nan nan nan nan nan]  score 0.1414
+  S.RL  H01*L131     E=-1.5708 v*=0.47140  D+x 2 [0.5657 0.4243 0.4243 0.4243 0.5    0.4761]  D-x 0 [nan nan nan nan nan nan]  score 0.1414
+  S.RL  H02*L313     E=+1.5708 v*=0.47140  D+x 2 [0.5657 0.4243 0.4243 0.4243 0.5    0.4761]  D-x 0 [nan nan nan nan nan nan]  score 0.1414
+  S.RL  L203*H02     E=+0.0000 v*=0.47140  D+x 2 [0.5657 0.4243 0.4243 0.4243 0.5    0.4761]  D-x 0 [nan nan nan nan nan nan]  score 0.1414
+distinct k* speeds: [0.4714]
+refined (Richardson) speeds of the best 5:
+  S.RL L020*H02 {'k*': array([0.471405, 0.471405, 0.471405, 0.471405]), 'D+x': array([0.565685, 0.424264, 0.424264, 0.424264])}
+  S.RL H01*L021 {'k*': array([0.471405, 0.471405, 0.471405, 0.471405]), 'D+x': array([0.565685, 0.424264, 0.424264, 0.424264])}
+  S.RL H00*L021 {'k*': array([0.471405, 0.471405, 0.471405, 0.471405]), 'D+x': array([0.565685, 0.424264, 0.424264, 0.424264])}
+  S.RL L021*H00 {'k*': array([0.471405, 0.471405, 0.471405, 0.471405]), 'D+x': array([0.565685, 0.424264, 0.424264, 0.424264])}
+  S.RL L021 {'k*': array([0.471405, 0.471405, 0.471405, 0.471405]), 'D+x': array([0.565685, 0.424264, 0.424264, 0.424264])}
+[PASS] the scan contains the eight-node step S.R_L.H23.L110 and reproduces its uniaxial doublers (0.2467 axial, 0.5838 transverse)  [(-1.5708, array([0.2467, 0.5837, 0.5837])), (1.5708, array([0.2467, 0.5837, 0.5837]))]
+[PASS] every k* Weyl doublet in the scanned families has the speed sqrt2/3 (O-forced isotropy)  7266 nodes
+[PASS] no scanned step has isotropic doublers at the k* speed (best score > 0.01; a negative search result, not a no-go)  best score 0.1414
+
+TOTAL: PASS=3 FAIL=0   [17s]

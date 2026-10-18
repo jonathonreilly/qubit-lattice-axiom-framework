@@ -1,0 +1,92 @@
+[PASS] translation-invariant gauge on the L = 4 lattice reproduces the flux pattern
+[PASS] rotations, inversion and translations all have PSG lifts; translations act without gauge signs
+[PASS] analytic Bloch derivative of the step matches central differences  max err 8.3e-11
+2-fold quasi-energies at k*: [-1.570796327, 1.570796327]  full spectrum at k*: [-3.141593 -3.141593 -1.570796 -1.570796 -0.       -0.        0.
+  0.        1.570796  1.570796  3.141593  3.141593]
+
+=== node quasi-energy E = -1.570796 ===
+  k*+pi e_y   : chi=+1 |tilt|=2.3e-16 herm=1.7e-10 speeds=[0.1744576 0.4127712 0.4127712] g=
+[[ 0.1703801 -0.        -0.       ]
+ [-0.         0.0304355 -0.       ]
+ [-0.        -0.         0.1703801]]  disp rel err/q=1.7e-01
+  -k*+pi e_x  : chi=-1 |tilt|=1.2e-16 herm=1.7e-10 speeds=[0.1744576 0.4127712 0.4127712] g=
+[[0.0304355 0.        0.       ]
+ [0.        0.1703801 0.       ]
+ [0.        0.        0.1703801]]  disp rel err/q=1.7e-01
+  k*          : chi=-1 |tilt|=1.7e-16 herm=1.4e-10 speeds=[0.3333333 0.3333333 0.3333333] g=
+[[ 0.1111111  0.        -0.       ]
+ [ 0.         0.1111111  0.       ]
+ [-0.         0.         0.1111111]]  disp rel err/q=1.4e-01
+  k*+pi e_z   : chi=+1 |tilt|=1.3e-16 herm=1.2e-10 speeds=[0.1744576 0.4127712 0.4127712] g=
+[[ 0.1703801  0.        -0.       ]
+ [ 0.         0.1703801  0.       ]
+ [-0.         0.         0.0304355]]  disp rel err/q=1.7e-01
+  -k*+pi e_z  : chi=-1 |tilt|=8.3e-17 herm=1.2e-10 speeds=[0.1744576 0.4127712 0.4127712] g=
+[[ 0.1703801 -0.         0.       ]
+ [-0.         0.1703801 -0.       ]
+ [ 0.        -0.         0.0304355]]  disp rel err/q=1.7e-01
+  -k*         : chi=+1 |tilt|=1.6e-16 herm=1.4e-10 speeds=[0.3333333 0.3333333 0.3333333] g=
+[[ 0.1111111  0.        -0.       ]
+ [ 0.         0.1111111  0.       ]
+ [-0.         0.         0.1111111]]  disp rel err/q=1.4e-01
+  k*+pi e_x   : chi=+1 |tilt|=3.9e-16 herm=1.7e-10 speeds=[0.1744576 0.4127712 0.4127712] g=
+[[ 0.0304355 -0.         0.       ]
+ [-0.         0.1703801  0.       ]
+ [ 0.         0.         0.1703801]]  disp rel err/q=1.7e-01
+  -k*+pi e_y  : chi=-1 |tilt|=3.3e-16 herm=1.7e-10 speeds=[0.1744576 0.4127712 0.4127712] g=
+[[ 0.1703801 -0.         0.       ]
+ [-0.         0.0304355  0.       ]
+ [ 0.         0.         0.1703801]]  disp rel err/q=1.7e-01
+
+=== node quasi-energy E = +1.570796 ===
+  k*+pi e_y   : chi=-1 |tilt|=1.8e-16 herm=1.7e-10 speeds=[0.1744576 0.4127712 0.4127712] g=
+[[ 0.1703801 -0.         0.       ]
+ [-0.         0.0304355 -0.       ]
+ [ 0.        -0.         0.1703801]]  disp rel err/q=1.7e-01
+  -k*+pi e_x  : chi=+1 |tilt|=2.5e-16 herm=1.7e-10 speeds=[0.1744576 0.4127712 0.4127712] g=
+[[ 0.0304355 -0.         0.       ]
+ [-0.         0.1703801  0.       ]
+ [ 0.         0.         0.1703801]]  disp rel err/q=1.7e-01
+  k*          : chi=+1 |tilt|=1.8e-16 herm=1.4e-10 speeds=[0.3333333 0.3333333 0.3333333] g=
+[[0.1111111 0.        0.       ]
+ [0.        0.1111111 0.       ]
+ [0.        0.        0.1111111]]  disp rel err/q=1.4e-01
+  k*+pi e_z   : chi=-1 |tilt|=3.7e-16 herm=1.2e-10 speeds=[0.1744576 0.4127712 0.4127712] g=
+[[ 0.1703801 -0.        -0.       ]
+ [-0.         0.1703801 -0.       ]
+ [-0.        -0.         0.0304355]]  disp rel err/q=1.7e-01
+  -k*+pi e_z  : chi=+1 |tilt|=4.1e-16 herm=1.5e-10 speeds=[0.1744576 0.4127712 0.4127712] g=
+[[ 0.1703801  0.         0.       ]
+ [ 0.         0.1703801 -0.       ]
+ [ 0.        -0.         0.0304355]]  disp rel err/q=1.7e-01
+  -k*         : chi=-1 |tilt|=2.2e-16 herm=1.4e-10 speeds=[0.3333333 0.3333333 0.3333333] g=
+[[ 0.1111111  0.        -0.       ]
+ [ 0.         0.1111111  0.       ]
+ [-0.         0.         0.1111111]]  disp rel err/q=1.4e-01
+  k*+pi e_x   : chi=-1 |tilt|=1.5e-16 herm=1.7e-10 speeds=[0.1744576 0.4127712 0.4127712] g=
+[[ 0.0304355 -0.         0.       ]
+ [-0.         0.1703801  0.       ]
+ [ 0.         0.         0.1703801]]  disp rel err/q=1.7e-01
+  -k*+pi e_y  : chi=+1 |tilt|=2.9e-16 herm=1.7e-10 speeds=[0.1744576 0.4127712 0.4127712] g=
+[[ 0.1703801 -0.        -0.       ]
+ [-0.         0.0304355  0.       ]
+ [-0.         0.         0.1703801]]  disp rel err/q=1.7e-01
+[PASS] the step has an exactly 2-fold level at E = pi/2 at all eight cube points (same quasi-energy)
+[PASS] first-order node matrices are Hermitian and the tilt vanishes at all eight nodes
+[FAIL] fitted cones reproduce the finite-q dispersion (rel. error/q < 1e-2 at q = 1e-3)  max 1.7e-01
+[FAIL] at +-k* the cone metric is (2/9) I: isotropic, speed sqrt2/3
+[PASS] each doubler k* + pi e_i / -k* + pi e_i has a diagonal uniaxial cone metric about its own axis e_i
+[FAIL] doubler speeds: axial 0.2467, transverse 0.5838 (4 d.p.), identical for all six  v_axial=0.1744576302, v_trans=0.4127711849
+[PASS] chiralities: k* and the three -k*+pi e_i one sign, -k* and k*+pi e_i the other; net zero  {'k*+pi e_y': -1, '-k*+pi e_x': 1, 'k*': 1, 'k*+pi e_z': -1, '-k*+pi e_z': 1, '-k*': -1, 'k*+pi e_x': -1, '-k*+pi e_y': 1}
+[PASS] the four cone-metric classes (isotropic, uniaxial x, y, z) are pairwise non-proportional, so no linear coordinate change or constant background strain can make all equal to one structure function
+invariants: det g^(1/3) isotropic 0.11111111111111105  doubler 0.0959560750110645  vt^2 va 0.029724099944148066  (sqrt2/3)^3 0.10475656017578486  tr g/3: 0.11111111111111105 0.12373185563623046
+
+Second 2-fold level at k*: E = -1.570796: nodes present at ['k*+pi e_y', '-k*+pi e_x', 'k*', 'k*+pi e_z', '-k*+pi e_z', '-k*', 'k*+pi e_x', '-k*+pi e_y']
+  cone metrics equal to those at pi/2: True ; chiralities {'k*+pi e_y': 1, '-k*+pi e_x': -1, 'k*': -1, 'k*+pi e_z': 1, '-k*+pi e_z': -1, '-k*': 1, 'k*+pi e_x': 1, '-k*+pi e_y': -1}
+
+isolation of E=pi/2: grid 20^3 min distance away from nodes 0.0915; refined minima (dist, distance-to-node): [(np.float64(0.0), np.float64(0.0)), (np.float64(0.0), np.float64(0.0)), (np.float64(0.0), np.float64(0.0)), (np.float64(0.0), np.float64(0.0)), (np.float64(0.0), np.float64(0.0)), (np.float64(0.0), np.float64(0.0))]
+[FAIL] E = pi/2 is reached only near the eight cube points (20^3 grid + 25 local refinements, > 0.2 from any node)  best refined distance away from nodes None
+quasi-energy coverage on 20^3 grid: 16 of 360 one-degree bins empty; empty bin starts (rad): [-1.693 -1.641 -1.623 -1.588 -1.571 -1.536 -1.518 -1.466  1.449  1.501
+  1.518  1.553  1.571  1.606  1.623  1.676]
+
+TOTAL: PASS=6 FAIL=4

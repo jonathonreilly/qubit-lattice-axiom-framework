@@ -1,0 +1,15 @@
+PASS: O1 Weyl, timings (1/2,1/2) and (1,0): O(a^-2), O(a^-1) vanish and O(a^0) = -v^2 L_w (Kosmann, sigma) exactly
+PASS: O2 endpoint mean: O(a) part = 0; O(a^2) part nonzero and NOT absorbable by any translation-covariant G_f (any range, any 2x2 structure): kappa-cubic part != -sum kappa_j^3 g_j0/6 -> genuine O(a^2) obstruction
+FAIL: O3 one-endpoint timing (1,0): O(a) deviation from the symmetric Kosmann relabelling is nonzero BUT LINEAR in kappa, i.e. of the form sum_j kappa_j g_j1(K,p): it IS absorbable by an O(a)-corrected translation-covariant G_f (B15's 'O(a) obstruction' for t != 1/2 is only an O(a) deviation from the symmetric G_f)
+FAIL: O4 one-endpoint timing: after O(a) absorption the O(a^2) part is still non-absorbable (obstruction O(a^2))
+FAIL: O3b the t=1 O(a) term equals -v^2 L_(delta u), delta u_j = c d_j u_j with c = None: a half-bond shift of where the bond field is placed (one-sided relabelling), the fermionic analogue of B14-check caveat 2
+PASS: O5 all 7 doublers (P_j -> -P_j): bracket = bracket with sigma' = (+-sigma^j) exactly; leading order -v^2 L_w with the doubler's own proper spin set tau (sigma' or -sigma'), O(a) = 0: same v^2 for every doubler
+FAIL: O5b but tau != sigma: at every doubler the O(a^0) spin term differs from an on-site (i/4)(curl xi).sigma relabelling; a lattice G_f must carry momentum-dependent spin structure (e.g. via cos(a p_j)) to close on doublers
+PASS: O6 naive Dirac + on-site mass m N beta, endpoint mean: exact symbol identity [h_N,h_M] = 1_2 (x) [Weyl bracket]: mass drops out exactly
+PASS: O7 Dirac mass cross terms: vanish iff t = 1/2 ({0: False, 1/4: False, 1/2: True, 1: False}); for t != 1/2 they are EXACTLY of the form sum_j xi~_j g_j (gravity's nn bond field, prop. (2t-1)) with Clifford-odd g_j (alpha beta type): an obstruction only relative to a Clifford-even (Kosmann-class) G_f; a G_f with an m-dependent alpha^j beta term would absorb them exactly
+PASS: O8 Dirac + Wilson (r=1, endpoint mean): O(a^0) = Kosmann; O(a) term nonzero and Clifford-odd (obstruction for a Kosmann-class G_f) BUT linear in kappa: absorbable at O(a) by a G_f with a Clifford-odd (beta-type) O(a) correction
+PASS: O8b Dirac + Wilson: O(a^2) part non-absorbable by any translation-covariant G_f
+PASS: K1 gravity relabelling kernel dimension {3: np.int64(3), 4: np.int64(3), 5: np.int64(3)} (B14 G_g convention, own build); symbol argument: (1 - e^{-iK_j}) xi_j = 0 and faces force xi = 0 unless K = 0, so ker = constants for every L
+PASS: K2a L=5, endpoint mean, d = 2e_j: 186 lapse pairs with xi_g = 0 give brackets of rank 186 > 3 = dim of G_f[constants] for ANY linear G_f (no translation covariance, any range): exact closure impossible for every linear G_f
+PASS: K2b L=5, one-endpoint, d = e_j - e_k: 186 lapse pairs with xi_g = 0 give brackets of rank 186 > 3 = dim of G_f[constants] for ANY linear G_f (no translation covariance, any range): exact closure impossible for every linear G_f
+TOTAL: PASS=10 FAIL=4

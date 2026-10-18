@@ -1,0 +1,14 @@
+PASS: C1e 40 random position-dependent timings obeying the local rule (MCMC; mean 8.7 two-sided links per sample): all exactly bond-supported
+PASS: C1f 40 timings violating the rule at a single plaquette: all fail bond support even mod Gauss (40/40)
+PASS: C1g translation-invariant timing with any two-sided axis i: every (i,j) plaquette has U_p = all 4 corners, so no admissible plaquette weight -> only the 8 one-sided classes (agrees with C1b)
+    STAG L=8: raw rel. error 1.1282e+00, 2^3-block-averaged rel. error 1.3144e-01
+    STAG L=12: raw rel. error 1.1858e+00, 2^3-block-averaged rel. error 5.9769e-02
+    STAG L=16: raw rel. error 1.2082e+00, 2^3-block-averaged rel. error 3.4096e-02
+    STAG L=20: raw rel. error 1.2190e+00, 2^3-block-averaged rel. error 2.1965e-02
+    block-averaged slope -1.95
+PASS: C2i staggered generator: smooth (block-averaged) part converges to L_xi F, but an O(1) staggered (doubler) component remains pointwise
+TOTAL: PASS=4 FAIL=0
+
+real	0m38.577s
+user	0m40.274s
+sys	0m0.360s

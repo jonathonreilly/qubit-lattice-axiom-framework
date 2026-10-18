@@ -1,0 +1,11 @@
+PASS: C2a forward timing: induced generator G' (bracket / (-c)) equals B16's stated G_A[xi] = sum xi E_(y+i,j) F_ij(y) bond by bond, exactly (L=4)
+  [FWD] G' gauge invariant: True; delta F under G'[e0] matches: ['backward F_p - F_(p-e0)']; projection on central difference alpha=1.000000; |defect EE| (transverse) = 5.850e-01, |defect AA| = 9.375e+00
+PASS: C2b forward G_A: gauge invariant; G_A[e0] acts on F as the unit BACKWARD difference (non-antisymmetric operator); hence {G_A[e0],H(1)} != 0 even on transverse E and in the pure-A sector
+  [STAG] G' gauge invariant: True; delta F under G'[e0] matches: none; projection on central difference alpha=1.000000; |defect EE| (transverse) = 9.800e-01, |defect AA| = 1.125e+01
+PASS: C2c staggered timing: induced G' is gauge invariant; delta F under G'[e0] matches no single difference, central-difference projection 1.0000
+FAIL: C2d staggered timing: uniform-shift defect {G'[e0], H(1)} vanishes on transverse E and in the A-sector (|EE|=9.8e-01, |AA|=1.1e+01) -- the B16 T6 O(a) defect is an artefact of the one-sided timing, not of Maxwell
+TOTAL: PASS=3 FAIL=1
+
+real	0m1.518s
+user	0m1.768s
+sys	0m0.072s

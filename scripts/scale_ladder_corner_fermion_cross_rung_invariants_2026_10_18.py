@@ -454,7 +454,7 @@ def main():
         return [V_[:, np.abs(w_ - l) < 1e-6] @ V_[:, np.abs(w_ - l) < 1e-6].conj().T for l in ls]
     PH, PLm = eproj(Bloch(np.zeros(3)).conj().T @ H0(1.0, 0.0) @ Bloch(np.zeros(3))), eproj(Lam)
     UH = PH[0] - PH[1] - 1j * PH[2]; UL = PLm[0] + 1j * PLm[1] + 1j * PLm[2] + PLm[3]
-    blS = blocks_from(Sr); Ws = lambda k: Hk(blS, k) @ Hk(blL, k) @ UH @ UL / np.sqrt(2)
+    blS = blocks_from(Sr); Ws = lambda k: Hk(blS, k) @ Hk(blL, k) @ UH @ UL   # blL already carries R_L = H_link/sqrt2, so Ws is unitary
     def wrap(x): return np.angle(np.exp(1j * x))
     e0 = np.angle(np.linalg.eigvals(Ws(kst))); E = [x for x in e0 if np.sum(np.abs(wrap(e0 - x)) < 1e-7) == 2][0]
     def node(k0):

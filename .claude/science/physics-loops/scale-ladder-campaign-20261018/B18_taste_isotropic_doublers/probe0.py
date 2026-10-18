@@ -1,0 +1,7 @@
+exec(open('b18lib.py').read())
+S0=SK(np.array([0.3,0.7,-1.1])); print("S(k) diagonal in corner basis:",np.allclose(S0,np.diag(np.diag(S0))))
+print({s:np.round(np.diag(M).real,3) for s,M in blS.items()})
+print("corners:",[sorted(map(tuple,c)) for c in C.CORNERS])
+print("blli shifts",list(blli))
+e0=levels(Ws,kst); print("Ws levels at k*",[(round(E,4),m) for E,m in e0])
+print("Lam vals",LamVals,"Hon vals",sorted(set(np.round(w_on,6))))

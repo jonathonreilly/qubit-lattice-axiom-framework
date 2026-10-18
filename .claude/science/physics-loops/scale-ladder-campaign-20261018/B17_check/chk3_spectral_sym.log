@@ -1,0 +1,5 @@
+spec W(k) = spec(-W(k)) [theta -> theta+pi] at 200 random k: True
+spec W(k+pi(1,1,1)) = spec(-W(k)): True
+spec W(k) = conj spec W(k) [theta -> -theta]: True ; spec W(k) = conj spec W(-k): True
+20^3 grid: 52 of 720 half-degree bins empty, all within 0.201 rad of +-pi/2; empty bins farther than 0.1 rad: 18
+32^3 grid: 28 of 720 half-degree bins empty, all within 0.122 rad of +-pi/2; empty bins farther than 0.1 rad: 4

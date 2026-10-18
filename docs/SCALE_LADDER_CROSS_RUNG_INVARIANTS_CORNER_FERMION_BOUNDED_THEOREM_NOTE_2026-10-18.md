@@ -87,7 +87,8 @@ A ladder is useful only if some data provably survives the climb, so that a stat
        - The two octahedrally fixed nodes ±k* are isotropic spin-½ Weyl nodes, speed √2/3, chirality ±1.
        - The other six are anisotropic Weyl nodes (speed spread about 0.3), chiralities three +1 and three −1. The net is zero.
        - These eight points are exactly the momenta at which commuting C2 lifts force even levels (campaign block B7, independently checked). The six extra nodes are the analogue of the 2³ doublers of naive lattice fermions.
-       - **Structure of the doublers (numerical observation).** The six are k* + πe_i (chirality −1) and −k* + πe_i (chirality +1), for i = x, y, z. So they form three opposite-chirality pairs, one per lattice axis. Each is a uniaxial Weyl cone: speed 0.2467 along its own axis and 0.5838 transverse. The C3 rotations permute the three.
+       - **Structure of the doublers (numerical observation).** The six are k* + πe_i (chirality −1) and −k* + πe_i (chirality +1), for i = x, y, z. So they form three opposite-chirality pairs, one per lattice axis. Each is a uniaxial Weyl cone: speed 0.2467 along its own axis and 0.5837 transverse. The ratio is 1 − 1/√3 to 2e−11; this is unexplained. The C3 rotations permute the three.
+       - **A second eight-node set (B17 check).** There is a second set at quasi-energy −π/2, with identical cones and opposite chiralities. It is forced: the spectrum of W(k) equals the spectrum of −W(k), and it is closed under complex conjugation. So the step has 16 Weyl nodes in all.
        - **This pattern is symmetry-forced (exact).** Under the affine rotation action, the eight points split into the orbits {k*} and {−k*}, with little group O, and two 3-point orbits k* + πe_i and −k* + πe_i. The little group of each point in the 3-point orbits is D4 about the axis e_i, which contains all three axis C2s (runner Part 1). So in every symmetric corner Hamiltonian or step:
          - levels there are even;
          - a band touching at k* is isotropic at linear order;
@@ -256,6 +257,18 @@ The ladder does unify the lanes, but not by deriving everything from the finest 
 - On the lattice that bracket fails at O(a²), with an explicit obstruction monomial.
 - **Supplied:** the matter Hamiltonian, its positivity and the scalar-lapse rule. Newton's constant is not fixed.
 - **Consequence:** a common light cone does not require a parameter-free step rule or 4D hypercubic symmetry. It can come from requiring the coarse rung's gravity constraints to close with matter. Exact lattice closure beyond leading order is the open obligation.
+
+**The closure route extends across spins and acts as a selection rule (campaign blocks B15–B17).**
+- **Spin ½ (B15, independently checked).** A naive lattice Weyl/Dirac field closes against the same constraints only on the scalar's cone, v² = K/(4α). Hermitian Clifford generators square to +1, which gives v² > 0. So, given K, α > 0, the Lorentzian sign follows without a positivity premise on the matter. All eight naive doublers share the cone.
+- **Exact lattice closure fails.** No linear relabelling of any range closes the fermion bracket. The obstruction is O(a²) at endpoint-mean timing and O(a) otherwise.
+- **Spin 1 (B16, check in progress).** A lattice Maxwell field closes on the same cone, independently of its coupling. This needs one-sided lapse timing, and holds for the unit-translation normalisation of its relabelling generator.
+- **Prior art.** In the continuum this is the known Teitelboim / Hojman–Kuchař–Teitelboim / Schwinger universality. What is new is its exact lattice realisation and the explicit obstructions.
+- **Selection rule (B17, independently checked).**
+  - Closure needs every low-energy species to carry the gravity sector's isotropic cone metric. Lapse rescalings, density improvements, anisotropic relabellings and coordinate changes cannot evade this.
+  - The repo's 2026-09-25 walk passes. It is naive-type, and the invariance of Σ sin² k_j under k_j → k_j + π makes all eight species isotropic at one speed. So the closure route reproduces its α = K/4.
+  - The parameter-free corner step fails. Its ±k* cones are isotropic, but the doublers at the same quasi-energy are uniaxial. They sit at D4 points that no species-exchanging symmetry relates to ±k*: k → k + π(1,1,1) exchanges only orbits of the same type.
+  - This is conditional on the step's long-wavelength, band-projected theory coupling to a lapse as a scalar-weighted energy density. A global local Floquet Hamiltonian is not asserted, since the step is gapless away from ±π/2.
+- **Consequence for the target below.** A parameter-free step can feed a closing gravity sector only if its doublers are isotropic at the ±k* speed. That takes a taste-type symmetry relating the 3-orbits to ±k*, or no doublers, which by the doubling corollary needs gaplessness or broken axis C2s. Campaign block B18 is searching for the former.
 
 **The information-minimal target.** One local step rule on the base grid with no continuous parameters, from which every field is built. Then:
 - each speed is a pure number fixed by the grid geometry (item 6);

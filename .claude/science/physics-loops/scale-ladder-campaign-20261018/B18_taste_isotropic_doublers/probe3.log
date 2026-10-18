@@ -1,0 +1,14 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+comm(H_on) dim 48 True
+O-symmetric on-site algebra dim 6
+e=[1 0 0] wL=+1 H_on         r=0: dim   0 generic sigma_min 0.000
+e=[1 0 0] wL=+1 H_on         r=1: dim   0 generic sigma_min 0.000
+e=[1 0 0] wL=+1 Lam(+)       r=0: dim   0 generic sigma_min 0.000
+e=[1 0 0] wL=+1 Lam(+)       r=1: dim   0 generic sigma_min 0.000
+e=[1 0 0] wL=+1 Lam(-)       r=0: dim   0 generic sigma_min 0.000
+e=[1 0 0] wL=+1 Lam(-)       r=1: dim   0 generic sigma_min 0.000
+e=[1 0 0] wL=+1 H_on,Lam(+)  r=0: dim   0 generic sigma_min 0.000
+e=[1 0 0] wL=+1 H_on,Lam(+)  r=1: dim   0 generic sigma_min 0.000
+e=[1 0 0] wL=+1 H_on,Lam(-)  r=0: dim   0 generic sigma_min 0.000
+e=[1 0 0] wL=+1 H_on,Lam(-)  r=1: dim   0 generic sigma_min 0.000
+e=[1 0 0] wL=+1 P0           r=0: dim   0 generic sigma_min 0.000

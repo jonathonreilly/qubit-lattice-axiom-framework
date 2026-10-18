@@ -1,0 +1,30 @@
+  FWD    L=  8  Lead=-1.7417e+00  B=-4.9637e+00  B/Lead= 2.84983  D/Lead= 1.734e+00  R/Lead=-1.847e+00
+  FWD    L= 12  Lead=-8.7852e-01  B=-1.9454e+00  B/Lead= 2.21435  D/Lead= 1.126e+00  R/Lead=-1.195e+00
+  FWD    L= 16  Lead=-5.1666e-01  B=-9.8606e-01  B/Lead= 1.90852  D/Lead= 8.375e-01  R/Lead=-8.864e-01
+  FWD    L= 24  Lead=-2.3710e-01  B=-3.8075e-01  B/Lead= 1.60588  D/Lead= 5.549e-01  R/Lead=-5.857e-01
+  FWD    L= 32  Lead=-1.3488e-01  B=-1.9625e-01  B/Lead= 1.45492  D/Lead= 4.153e-01  R/Lead=-4.377e-01
+  FWD    L= 40  Lead=-8.6783e-02  B=-1.1840e-01  B/Lead= 1.36428  D/Lead= 3.319e-01  R/Lead=-3.495e-01
+  STAG   L=  8  Lead=-1.7488e+00  B=-1.3664e+00  B/Lead= 0.78134  D/Lead= 9.888e-17  R/Lead=-1.120e-01
+  STAG   L= 12  Lead=-8.8101e-01  B=-8.2908e-01  B/Lead= 0.94107  D/Lead=-2.461e-17  R/Lead=-7.624e-03
+  STAG   L= 16  Lead=-5.1775e-01  B=-5.1789e-01  B/Lead= 1.00026  D/Lead=-6.701e-17  R/Lead=-2.607e-04
+  STAG   L= 24  Lead=-2.3743e-01  B=-2.4777e-01  B/Lead= 1.04357  D/Lead=-1.169e-16  R/Lead=-1.156e-02
+  STAG   L= 32  Lead=-1.3502e-01  B=-1.4298e-01  B/Lead= 1.05893  D/Lead=-3.597e-16  R/Lead=-3.505e-02
+  STAG   L= 40  Lead=-8.6854e-02  B=-9.2593e-02  B/Lead= 1.06608  D/Lead=-0.000e+00  R/Lead=-4.702e-02
+  scalar L=  8  Lead=-3.5108e+01  B=-2.2447e+01  B/Lead= 0.63936  D/Lead= 2.400e-17  R/Lead=-3.554e-01
+  scalar L= 12  Lead=-3.9659e+01  B=-3.2961e+01  B/Lead= 0.83111  D/Lead=-2.171e-17  R/Lead=-1.624e-01
+  scalar L= 16  Lead=-4.1385e+01  B=-3.7383e+01  B/Lead= 0.90331  D/Lead= 6.409e-17  R/Lead=-9.086e-02
+  scalar L= 24  Lead=-4.2665e+01  B=-4.0809e+01  B/Lead= 0.95649  D/Lead= 1.223e-16  R/Lead=-3.911e-02
+  scalar L= 32  Lead=-4.3123e+01  B=-4.2063e+01  B/Lead= 0.97542  D/Lead=-2.446e-16  R/Lead=-2.113e-02
+  scalar L= 40  Lead=-4.3336e+01  B=-4.2653e+01  B/Lead= 0.98424  D/Lead=-0.000e+00  R/Lead=-1.295e-02
+  FWD: slope D/Lead -1.03, slope R/Lead -1.03
+  STAG: slope D/Lead -259.47, slope R/Lead 0.27
+  scalar: slope D/Lead -258.88, slope R/Lead -2.06
+PASS: C3d-FWD forward Maxwell: uniform-shift defect D/Lead ~ L^-1.03, full residual R/Lead ~ L^-1.03: the defect is O(a) relative to the leading H(xi.grad N)
+PASS: C3d-scalar scalar (B14 conventions): D = 0, residual R/Lead ~ L^-2.06: O(a^2)
+  STAG: max|D| = 1.73e-16; R/Lead = [np.float64(-0.112), np.float64(-0.0076), np.float64(-0.0003), np.float64(-0.0116), np.float64(-0.0351), np.float64(-0.047)]
+FAIL: C3d-STAG staggered: D = 0 on smooth fields, but the residual does NOT decrease with L: {G',C} fails at O(1) relative to H(xi.grad N) (doubler part of G' x staggered O(a) part of the lapse smearing)
+TOTAL: PASS=2 FAIL=1
+
+real	3m36.622s
+user	3m22.357s
+sys	0m10.921s

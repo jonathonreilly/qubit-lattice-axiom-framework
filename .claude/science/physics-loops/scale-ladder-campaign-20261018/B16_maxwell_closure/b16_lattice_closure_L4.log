@@ -43,3 +43,14 @@ PASS: T3b normalisation: {A_(z,j), G_A[xi = e_0 uniform]} = (A_(z,j) - A_(z-e0,j
 PASS: T4 scalar (symmetric timing, G_m) + Maxwell (forward timing, G_A) + gravity (s=-1): one total relabelling iff c_phi = cB = K/(4 alpha); table {(c/kappa, cB/kappa): closes} = {('1', '1'): True, ('1', '2'): False, ('2', '1'): False, ('2', '2'): False}
 PASS: T5a Gauss is first class: {Gauss[theta], H_EM(N)} = 0, {Gauss[theta], G_A[xi]} = 0, {Gauss, Gauss} = 0 exactly; {Gauss[theta], G_L[xi]} is a pure Gauss term (theta transported)
 PASS: T5b with the pure-translation generator G_L (G_L[e0 uniform] shifts every A component by its backward difference, no gauge part): {H_EM(N),H_EM(M)} = G_L[-cB xi~] + Gauss[lambda], lambda_w = -cB sum_i xi~_(w-i,i) A_(w-i,i)  (field-dependent structure function, lattice image of -xi.A)
+PASS: T5c full algebra with G_g + G_L: does NOT close into relabellings alone; closes on the Gauss surface; and closes exactly once local Gauss terms Gauss_w * A_l (l touching w) are allowed -> the Gauss constraint enters {C,C} with an A-dependent structure function unless the gauge-covariant generator G_A is used
+PASS: T6a G_g[uniform shift] = 0 identically (delta h = symmetric lattice gradient of xi): at uniform xi every coupling built from h or P drops out of {G,C}
+PASS: T6b exact defect at unit lapse: {G_A[e0], H_EM(1)} = (g^2/2) sum_l (E_l - E_(l-e0))^2 - (cB/(2g^2)) sum_p (F_p - F_(p-e0))^2 + g^2 sum_w E_(w-e0,0) Gauss_w  (squares of one-sided differences)
+PASS: T6c Maxwell {G_A[uniform], H_EM(N)} is NOT H_EM(N') for any N', even on the Gauss surface, both at N = 1 and random N: coupling-independent lattice obstruction to {G,C} = C(N') (lattice translation is not an exact symmetry of H_EM; one-sided generator)
+PASS: T6d scalar comparison: {G_m[uniform], H_m(1)} = 0 exactly (symmetric generator, central difference), but for random N {G_m[uniform], H_m(N)} is not any H_m(N'): B14's E5 obstruction already occurs at uniform xi where G_g = 0, so it is independent of the coupling ansatz
+PASS: T7 compact U(1) (L=4): H_B = sum Nplaq (cB/g^2)(1 - cos F_p); {H(N),H(M)} = G_A^c[-cB xi~] with G_A^c[xi] = sum xi_(y,i) E_(y+i,j) sin F_ij(y), exactly to all orders in the field: the timing selection and the cone condition are unchanged by compactness
+TOTAL: PASS=19 FAIL=0
+
+real	2m4.393s
+user	2m2.308s
+sys	0m0.398s

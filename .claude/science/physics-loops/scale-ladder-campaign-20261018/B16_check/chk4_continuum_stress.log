@@ -1,0 +1,13 @@
+  [P_A, mod Gauss=True] #eqs 6288, #solutions 1, t=89s
+  [P_A, mod Gauss=False] #eqs 3213, #solutions 0, t=120s
+  [G_Lie, mod Gauss=True] #eqs 6288, #solutions 1, t=202s
+  [G_Lie, mod Gauss=False] #eqs 3189, #solutions 1, t=229s
+  free parameters: [s2]  s1 = 1  s2 = s2
+  lam in terms of free parameter: [{lam: -s2/2}]
+PASS: C4a P_A + G_g, mod Gauss (E = curl W), 126-coefficient general coupling: ONE-parameter solution = metric stress of H_EM(g) + lam tr h H_EM, s1 = 1, s2 = -2 lam
+PASS: C4b without restricting E: P_A has NO solution (Gauss needed, field-dependent multiplier) [0 solutions]; G_Lie closes with the same one-parameter metric-stress family and no Gauss term
+TOTAL: PASS=2 FAIL=0
+
+real	3m53.816s
+user	3m47.956s
+sys	0m1.015s

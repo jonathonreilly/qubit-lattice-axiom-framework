@@ -1,0 +1,21 @@
+PASS: M0 comparator: H_EM(g) = (g^2/2) g_ij E^i E^j/sqrt(g) + (cB/4g^2) sqrt(g) g^ik g^jl F_ij F_kl reduces to H_EM at h=0; O(h) part = (g^2/2)(h_ij E^iE^j - trh E^2/2) + (cB/g^2)(trh sum_{i<j}F^2/4 - h_ij F_ik F_jk/2)
+PASS: M1 {C(N),C(M)} = G_g[xi0] + P_A[xi0], xi0 = kappa (N grad M - M grad N), exactly (no Gauss term) iff cB = K/(4 alpha); g drops out (photon speed^2 = g^2 * cB/g^2); solve -> [{cB: K/(4*alpha)}]
+PASS: M1b with G_Lie: {C,C} - G_g[xi0] - G_Lie[xi0] != 0 exactly (True) but vanishes on div E = 0 (True); exactly = Gauss[r xi0.A] with r solved: [{rr: 1}] (the Gauss constraint enters with an A-dependent structure function)
+M2: number of solutions 1
+   free parameters: [s2]
+PASS: M2 {G[xi], C(N)} at O(E^2,F^2) = H_EM(s1 xi.grad N + s2 N div xi) mod Gauss, over the 126-parameter coupling: ONE-parameter family = Maxwell metric stress (M0) + lam tr h H_EM, with s1 = 1, s2 = -2 lam
+M2b {generator: (closes exactly without Gauss, Gauss multiplier r in Gauss[r g^2 N xi.E])}: {'P_A': (False, [{rr: 1}]), 'G_Lie': (True, [{rr: 0}])}
+PASS: M2b where Gauss enters {G,C}: with the metric stress, {P_A[xi], C(N)} = H_EM(xi.grad N) + Gauss[g^2 N xi.E] exactly (an E-dependent Gauss multiplier), while {G_Lie[xi], C(N)} = H_EM(xi.grad N) with no Gauss term; for {C,C} it is the reverse (M1, M1b). Either way the algebra closes only with Gauss first class
+PASS: M3b {C,C} alone does not force a coupling: T = 0, xi' = 0 solves the h E F order (as for the scalar: the source is fixed by {G,C})
+PASS: M4 scalar-lapse rule s2 = 0: coupling UNIQUE = Maxwell metric stress at cB = kappa, structure function forced r1 = -1, r2 = 0 (g^ij = delta - h, as for the scalar); (r1, r2) = (-1, 0)
+PASS: M5 s2 = 2 lam: r2 = -2*lam = -s2, r1 = -1 (B14 L5 gives r2 = -2 lam for the scalar at the same s2: identical function, so a common structure function needs a common lam)
+M6 combined free parameters: [r2]
+PASS: M6 scalar + Maxwell with shared N' and shared structure function: O(eps) {C,C} closes iff (c, cB) = (kappa, kappa) [[{c: K/(4*alpha), cB: K/(4*alpha)}]]; the coupled solution space is ONE parameter: both species get their metric stress plus the SAME lam tr h H (s2 = -2 lam, r1 = -1, r2 = 2 lam = -s2, matching M5's r2 = -s2)
+PASS: M7a Gauss first class: {Gauss[theta], N H_EM} = {Gauss[theta], N h.T_stress} = {Gauss[theta], P_A[xi]} = 0 identically
+PASS: M7b {P_A[xi], P_A[eta]} = a P_A[[xi,eta]] + b Gauss[F_ij xi^i eta^j] with (a, b) = [{a_: 1, b_: -1}]: the gauge-covariant generators close only up to the Gauss constraint with an F-dependent structure function
+PASS: M7c {G_Lie[xi], G_Lie[eta]} = a' G_Lie[[xi,eta]] with no Gauss term, a' = [{a_: 1}]; {Gauss[theta], G_Lie[xi]} = b' Gauss[xi.grad theta], b' = [{b_: -1}] (Gauss is an ideal; the Lie generators are a subalgebra)
+TOTAL: PASS=12 FAIL=0
+
+real	2m1.471s
+user	1m59.959s
+sys	0m0.164s

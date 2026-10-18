@@ -226,7 +226,7 @@ Labels: "checked" means a fresh-context agent of the same model family re-derive
    - **Record clock.** The hidden-clock hypothesis is refuted.
    - **Ring model.** χ ≈ 0.23–0.25 for 0.5 ≤ V ≤ 1; nothing is claimed for V ≤ 0.
 7. **Phase 2 (campaign blocks C1–C4 and B24; same-family checks where marked).**
-   - **Exact lattice closure is impossible, not just unfound (C3, checked; companion lane note).** No translation-covariant lattice relabelling algebra of any range closes like the continuum one. On each arc of momenta, the closure conditions force Λ_n/Λ_1 = n − (arc centre), so Λ_2/Λ_1 ≤ 0, against the continuum value 2. The uniform-lapse bracket needs a non-local Leibniz rule (SLAC-type). So exact discrete general covariance, in this sense, cannot be had on the grid. The leading-order closure results are the most that is available.
+   - **Exact lattice closure cannot reproduce the continuum relabellings (C3, checked; companion lane note).** A translation-covariant lattice relabelling algebra of any range can close exactly, and such algebras exist. But if it matches the continuum at the longest wavelength, the closure conditions force Λ_n/Λ_1 = n − (arc centre) on arcs of momenta. So Λ_2/Λ_1 ≤ 0, against the continuum value 2. The uniform-lapse bracket needs a non-local Leibniz rule (SLAC-type). Exact closure is therefore available only with a spectrum that is wrong beyond the longest wavelength, so the leading-order closure results are the physically meaningful ones.
    - **The doublers cannot be selectively removed under full O (C1, checked).**
      - A symmetric pairing mass is all-or-nothing at the eight cube points.
      - The doublers alone, and ±k* alone, each carry a Weyl dipole π(1,1,1), half a Hall quantum per layer. That is a Z2 obstruction to gapping either set alone into a short-range-entangled state. It is conditional on anomaly matching and on a Hamiltonian reading of the step. A compensating sector is required; the doublers are one realisation of it.
@@ -245,7 +245,7 @@ Labels: "checked" means a fresh-context agent of the same model family re-derive
      - the induced 1/G from a complete microscopic action;
      - the dynamics of the rung 0 → 1 map.
 
-     Exact lattice closure is now known to be impossible (C3).
+     Exact lattice closure with continuum-like relabellings is now known to be impossible (C3).
 
 ### Detail
 

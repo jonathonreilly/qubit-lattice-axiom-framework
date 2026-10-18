@@ -13,7 +13,7 @@ The first Leibniz run is kept as a bug log: the worker's expected N′ sign was 
 
 **Answer.**
 - **Non-locality is necessary:** every local or summable discretisation fails (Theorems A and C).
-- **It is not sufficient:** no relabelling algebra of any range closes {G, G} exactly while matching the continuum at the longest wavelengths, on any torus with L ≥ 4 or on Z (Theorem B).
+- **It is not sufficient:** a relabelling algebra of any range that closes {G, G} exactly and matches the continuum at the longest wavelength ((S)) cannot have the continuum spectrum beyond |n| = 1 (Theorem B). Such closing algebras exist abstractly; what is lost is the continuum spectrum, not closure itself (note review F1).
 - **What SLAC and band-limited constructions do give:**
   - exact sub-brackets;
   - exact closure on band-limited windows, which is not an operator identity;
@@ -78,7 +78,7 @@ So Λ_n ≠ nΛ_1.
 
 ## Relation to earlier blocks
 
-- B19's lattice non-closure is unavoidable at any range.
+- B19's lattice non-closure, with the continuum spectrum kept, is unavoidable at any range.
 - B14 E5 and B16 T6d are instances of Theorem C.
 - B15's no-go is separate.
 

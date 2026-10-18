@@ -8,14 +8,14 @@ quartet at the rotation-fixed momenta), on the L = 4 torus:
      and exactly k* and -k* are fixed;
   2. class transport: the whole twelve-state space at k* is spinorial (the
      central element of the binary octahedral lift acts as -1), so EVERY
-     Hamiltonian commuting with the twisted rotations and the translations,
+     Hamiltonian commuting with the gauge-dressed rotations and the translations,
      at any strength and range on the torus, has only even, spinorial levels
      at k*;
   3. emergent isotropy: the Weyl cone is isotropic at linear order and its
      anisotropy grows as |q|^2 (suppression (a/w)^2 for a packet of width w);
   4. naturalness: with the site rotations and the site inversion kept, every
-     level of the folded Hamiltonian at k* stays 4-fold under strong
-     symmetric staggered and uniform perturbations (no Dirac mass at any
+     level of the folded Hamiltonian at k* keeps multiplicity divisible by 4 under strong
+     symmetric staggered and uniform perturbations (no quartet splitting at any
      order), and an A2 breaking of strength eps opens a gap linear in eps.
 Supplied model only; no physical identification.
 Companion: docs/SCALE_LADDER_CROSS_RUNG_INVARIANTS_CORNER_FERMION_BOUNDED_THEOREM_NOTE_2026-10-18.md
@@ -296,7 +296,7 @@ def main():
         ev = np.linalg.eigvalsh(B2.conj().T @ Bg @ B2)
         ms = [b - a for a, b in levels(ev)]; ok4 &= all(m % 4 == 0 for m in ms); info.append(ms)
     check("with strong (0.3) random uniform and staggered terms invariant under site rotations, site inversion and the "
-          "translations (up to the staggered sign), every level of the folded Hamiltonian at k* is 4-fold: no Dirac mass at any order",
+          "translations (up to the staggered sign), every level of the folded Hamiltonian at k* has multiplicity divisible by 4: no quartet splitting at any order",
           ok4, f"multiplicities {info[0]}")
     ev0, W0 = np.linalg.eigh(B2.conj().T @ Bg @ B2); lv = levels(ev0)
     gaps = []

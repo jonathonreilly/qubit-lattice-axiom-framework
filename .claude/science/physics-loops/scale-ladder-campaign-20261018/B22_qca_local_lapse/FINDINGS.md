@@ -1,6 +1,6 @@
 # B22 findings: does a unitary step have a local lapse, and does it close like the Hamiltonian?
 
-Provenance: a worker of the same model family; not yet checked. Saved by the supervisor from the hand-back.
+Provenance: a worker of the same model family. Checked by a fresh-context same-family agent (`../B22_check/REPORT.md`): the core is confirmed, and its six corrections are applied below. Saved by the supervisor from the hand-back.
 
 | Runner | Result |
 |---|---|
@@ -15,26 +15,29 @@ Disclosures: the 3D thresholds were rewritten as scaling checks after the first 
 - **A**, the step's own causal timing, does not reduce to the Hamiltonian bracket.
 - **B**, a smooth lapse built from the step's generator, does: the shift is ξ = g·w, with g the node's cone metric.
 
-So B17's premise (a) can be met for steps, but only through B. That is a choice; the circuit does not force it.
+So, of the two definitions examined, only B realises B17's premise (a). B is a choice; the circuit does not force it. Local gate-modulation lapses (Di Molfetta–Brachet–Debbasch; AFF clock QCAs) are an untested third candidate.
 
 ## Definition A: causal cuts
 
 - **C1 (exact, trivial).** Path independence holds for any layered circuit (6e−16), because causally unordered gates act on disjoint wires. It carries no bracket information.
 - **C2 (exact).** Row j of W_F equals row j of the uniform evolution by λ_j layers.
 - **C3.** The fixed-operator commutator is far from 1: ‖C − 1‖ = 2.
-- **C4 (exact defect lemma).** A cut whose total count changes by T has at least T odd-count wires. In the massless walk each of them flips chirality. So lattice-scale defects appear at a density ∝ |∇N|, the same order as the v²w term.
+- **C4 (exact defect lemma).** Define T as the sum, over consecutive even-count runs, of the change in λ/2. Then a cut has at least T odd-count wires. In the massless walk (θ = 0 only) each of them flips chirality. So lattice-scale defects appear at a density ∝ |∇N|, the same order as the v²w term. At θ = 0 the check shows this is intrinsic for any bounded-range chirality-preserving identification: the imbalance grows as O(A).
 - **C5.** Packet displacements miss the Dirac-algebra value:
   - right-movers: −0.77, −2.46, −8.84;
   - left-movers: +0.90, +2.18, +8.56;
   - against −0.39, −1.57, −6.28.
 
-  Interband loss is 5–16%. Smooth real lapses fail grossly. The massive walk gives no clean limit.
+  Interband loss is 5–16%. Smooth real lapses fail grossly. The massive walk deviates by 5–15% and does not converge (check); this is modest, not gross.
+- **Scope:** the 1D brickwork walk, wire-label composition, and staircase or real lapses.
 
 ## Definition B: generator lapse
 
 Take H_F = i log W, H(N) = ½{N̂, H_F} and W_N = exp(−iH(N)). For integer constant N this is exactly W^n.
 
 - **Prediction, declared before running (first-order Moyal).** [H(N), H(M)] = −i G[g·w] near a node, with g = Hess(ω²/2). The sign is Lorentzian automatically.
+  - **The check sharpens this.** Order 1 is exactly ½{h, ∂h} = ½∂(h²) for any matrix structure. In more than one dimension, order 2 is the spin (Kosmann) term −¼∂_iN∂_jM[∂_ih, ∂_jh].
+  - B22's tests had ∇N ∥ ∇M, so they saw only the orbital part. The check verifies the spin term on the 3D steps: the residual drops from 3–8% to 1e−4. For the uniaxial toy it gives cof(e) = diag(2,2,1), which confirms the spin-part rejection.
 - **1D.**
   - The symbol residual is 1e−12 (massless) and 9e−7 to 3e−4 (massive), scaling as q².
   - The speed that enters is the node's cone, v² = θ cot θ, within 6e−5 to 5e−4. The light-cone speed 1 is excluded.
@@ -51,9 +54,10 @@ Take H_F = i log W, H(N) = ½{N̂, H_F} and W_N = exp(−iH(N)). For integer con
    - The walk's species at quasi-energy π misses the form by a factor of 6.2.
    - The generator of W² (lapse in two-step units) works for both.
    - Inference, not computed: the corner step, with nodes at ±π/2, needs −W².
-2. **Gaplessness.** A branch cut through a band makes H_F non-local, |H_r| ~ 1/r. The low-energy bracket is unaffected, but W_N is then only quasi-local.
-3. **The density is not unique.** Improvements leave the band-projected leading bracket unchanged, but change the interband part. A and B are themselves inequivalent.
-4. **Definition B is not path independent.** That is expected; closure with gravity takes over that role.
+2. **Gaplessness.** A branch cut through a band makes H_F non-local, |H_r| ~ 1/r. The low-energy bracket is unaffected. But W_N then has non-summable 1/r tails for non-integer N, so it is not quasi-local (check).
+3. **Node-relative momentum (check).** For a node at k* ≠ 0, G must use the momentum measured from the node. Otherwise an extra +i(g k*)·w density term appears.
+4. **The density is not unique.** Improvements leave the band-projected leading bracket unchanged, but change the interband part. A and B are themselves inequivalent.
+5. **Definition B is not path independent.** That is expected; closure with gravity takes over that role.
 
 ## Status of B17's premise
 
@@ -63,7 +67,7 @@ Take H_F = i log W, H(N) = ½{N̂, H_F} and W_N = exp(−iH(N)). For integer con
 
 ## Not tested
 
-The spin term, non-uniform w, interband parts for 12-band steps, interacting steps, and whether any other identification of cut data avoids the defect lemma.
+Non-uniform w in 3D (the check covers it in 1D), interband parts for 12-band steps, interacting steps, and whether any other identification of cut data avoids the defect lemma.
 
 ## Prior art (unverified)
 

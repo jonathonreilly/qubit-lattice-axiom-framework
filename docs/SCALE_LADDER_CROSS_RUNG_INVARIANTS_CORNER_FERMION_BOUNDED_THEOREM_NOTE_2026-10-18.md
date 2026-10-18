@@ -278,6 +278,11 @@ The ladder does unify the lanes, but not by deriving everything from the finest 
   - The repo's 2026-09-25 walk passes. It is naive-type, and the invariance of Σ sin² k_j under k_j → k_j + π makes all eight species isotropic at one speed. So the closure route reproduces its α = K/4.
   - The parameter-free corner step fails. Its ±k* cones are isotropic, but the doublers at the same quasi-energy are uniaxial. They sit at D4 points that no species-exchanging symmetry relates to ±k*: k → k + π(1,1,1) exchanges only orbits of the same type.
   - This is conditional on the step's long-wavelength, band-projected theory coupling to a lapse as a scalar-weighted energy density. A global local Floquet Hamiltonian is not asserted, since the step is gapless away from ±π/2.
+  - **Can a step couple to a lapse? (B22, independently checked.)** Two definitions were examined.
+    - **The step's own causal timing:** path independence is automatic, but it carries no bracket. An exact defect lemma forces lattice-scale defects at the same order as the bracket; this is intrinsic for the massless 1D walk.
+    - **A lapse built from the step's generator, H(N) = ½{N, i log W}:** this reproduces the deformation bracket with each node's own cone metric, spin term included. In particular, uniaxial nodes get direction-weighted shifts.
+    - So the premise above can be met, but by a choice. It also requires the node at quasi-energy 0 (a two-step lapse for the corner step, inferred), node-relative momentum, and a branch cut inside a gap. Otherwise the smeared step has 1/r tails.
+    - Gate-modulation lapses are an untested third route.
 - **Consequence for the target below.** A parameter-free step can feed a closing gravity sector only if its doublers are isotropic at the ±k* speed. That takes a taste-type symmetry relating the 3-orbits to ±k*, or no doublers, which by the doubling corollary needs gaplessness or broken axis C2s.
 - **The taste route, in the corner model (B18, independently checked).**
   - The diagonal shift S has no translation-covariant taste moving k* off ±k*. Its allowed affine momentum maps are exactly the PSG lifts times k → k + π(1,1,1).

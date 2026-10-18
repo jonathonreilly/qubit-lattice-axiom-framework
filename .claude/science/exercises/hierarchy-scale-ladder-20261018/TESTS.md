@@ -29,3 +29,18 @@
   - **OPEN:** otherwise.
 
 **Stop rule.** The goal stops early if HIER-1 reads HIER-DERIVED and a same-family referee confirms it.
+
+**HIER-1 result (11:48Z; same family; referee launched): HIER-NO-GO, within three stated classes.**
+- **(a) 16 is not a ladder invariant.**
+  - A Wilson term (all 384 signed permutations, B3a-compatible) takes the zero count from 16 to 1. The signed index is 0. The determinant degree is the block site count.
+  - The base α is not transported either: v/μ = c·α^16 at every rung would force d ln α/d ln μ = −1/16.
+  - So B4 cannot be closed by transport, and it stays the one-rung attachment gap.
+- **(b) Dimensional transmutation.** The built content (U(1), Weyl, linearised gravity) has no asymptotically free coupling. For supplied SU(N) with fundamentals at g² = 1, 15 one-loop decades force b1 < 0 for every N from 2 to 100, so the flow ends at an IR fixed point.
+- **(c) Compounding.** Rung products telescope. Under H1–H4, ξ/a ≤ C(ρ/δ)^{1/y}, and reaching 1e15 from δ ≥ 1e-2 needs y ≤ 2/15. The ladder's exponents are y = 1, 2, 4.
+- **Tool class.** The four ladder tools can force a relevant coupling to zero, never to a nonzero value (proved for T1, T2 and T4).
+- **Open escapes:**
+  - E2: a near-marginal direction with y < 2/15;
+  - E3: a selection rule putting the first breaking at order n ≥ 15, with a spurion of about 0.1;
+  - E4: cascades over physically distinct units (clockwork);
+  - non-perturbative near-conformal SU(N).
+- **Supervisor's prediction was REDUCED; the result is a sharper NO-GO.** It confirms that 16 is regulator-dependent and that (c) cannot fix a relevant coupling.

@@ -1,0 +1,33 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+PASS i.count d=3 L=4 zeros {0.0: 8, 0.1: 1, 0.5: 1, 1.0: 1}
+PASS i.count d=3 L=8 zeros {0.0: 8, 0.1: 1, 0.5: 1, 1.0: 1}
+PASS i.count d=4 L=4 zeros {0.0: 16, 0.1: 1, 0.5: 1, 1.0: 1}
+PASS i.count d=4 L=8 zeros {0.0: 16, 0.1: 1, 0.5: 1, 1.0: 1}
+PASS i.doubler masses -> 0 continuously as r -> 0 lightest doubler mass 2r at r=[0.5, 0.1, 0.01, 0.001]: [1.0, 0.2, 0.02, 0.002]
+PASS i.Wilson + naive |D|^2 invariant under all signed permutations 384 elements
+PASS i.doubler shift k->k+pi e_mu: naive invariant, Wilson not 
+PASS i.linear point group orbit of k=0 is {0} 
+PASS ii.d=1 signed chirality sum signed 0, unsigned 2
+PASS ii.d=2 signed chirality sum signed 0, unsigned 4
+PASS ii.d=3 signed chirality sum signed 0, unsigned 8
+PASS ii.d=4 signed chirality sum signed 0, unsigned 16
+PASS ii.d=5 signed chirality sum signed 0, unsigned 32
+PASS ii.d=6 signed chirality sum signed 0, unsigned 64
+PASS ii.d=4 explicit species chirality signs sum sum +0.0 over 16 corners
+PASS iii.u0-degree Ls=2 Lt=2 degree 16.000000 = number of sites 16 (= 8 Lt at Ls = 2)
+PASS iii.u0-degree Ls=2 Lt=4 degree 32.000000 = number of sites 32 (= 8 Lt at Ls = 2)
+PASS iii.u0-degree Ls=4 Lt=2 degree 128.000000 = number of sites 128 (= 8 Lt at Ls = 2)
+PASS iii.u0-degree Ls=4 Lt=4 degree 256.000000 = number of sites 256 (= 8 Lt at Ls = 2)
+PASS iv.naive Q=1: near-zero modes = 2^d |Q| = 4 |lambda|_(4Q-1)=1.009e-15, |lambda|_(4Q)=2.922e-01, ratio 289449489803298.4
+PASS iv.naive Q=1: H(m)^2 = D^dag D + m^2 (no crossings, net flow 0) 
+PASS iv.Wilson Q=1: physical-branch flow |Q|, doubler branches -2Q, +Q, total 0 flow by branch (m~0,2,4) {0: 1, 1: -2, 2: 1}, total 0
+PASS iv.naive Q=2: near-zero modes = 2^d |Q| = 8 |lambda|_(4Q-1)=1.807e-15, |lambda|_(4Q)=4.087e-01, ratio 226199903156854.6
+PASS iv.naive Q=2: H(m)^2 = D^dag D + m^2 (no crossings, net flow 0) 
+PASS iv.Wilson Q=2: physical-branch flow |Q|, doubler branches -2Q, +Q, total 0 flow by branch (m~0,2,4) {0: 2, 1: -4, 2: 2}, total 0
+TOTAL: PASS=25 FAIL=0
+watchdog peak RSS 90576 KB

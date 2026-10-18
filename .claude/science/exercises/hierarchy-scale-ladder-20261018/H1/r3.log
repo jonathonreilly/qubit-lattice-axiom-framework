@@ -1,0 +1,12 @@
+PASS scalar trial 0: on-site mass drops out of {H(N),H(M)} (any timing) max |diff| t=1/2: 2.7e-15, t=0.3: 8.9e-16
+PASS Dirac trial 0: mass drops out at endpoint-mean timing, not at t=0.3 max |diff| t=1/2: 3.3e-16, t=0.3: 2.86e-01
+PASS Dirac trial 0: control, Wilson-type hop keeps a mass-dependent bracket term max |diff| 7.15e-01
+PASS scalar trial 1: on-site mass drops out of {H(N),H(M)} (any timing) max |diff| t=1/2: 1.8e-15, t=0.3: 1.8e-15
+PASS Dirac trial 1: mass drops out at endpoint-mean timing, not at t=0.3 max |diff| t=1/2: 2.8e-16, t=0.3: 3.88e-01
+PASS Dirac trial 1: control, Wilson-type hop keeps a mass-dependent bracket term max |diff| 9.70e-01
+PASS scalar trial 2: on-site mass drops out of {H(N),H(M)} (any timing) max |diff| t=1/2: 1.8e-15, t=0.3: 2.2e-15
+PASS Dirac trial 2: mass drops out at endpoint-mean timing, not at t=0.3 max |diff| t=1/2: 2.9e-16, t=0.3: 2.74e-01
+PASS Dirac trial 2: control, Wilson-type hop keeps a mass-dependent bracket term max |diff| 6.84e-01
+PASS sanity: bracket itself nonzero for nonconstant lapses 
+TOTAL: PASS=10 FAIL=0
+watchdog peak RSS 19856 KB

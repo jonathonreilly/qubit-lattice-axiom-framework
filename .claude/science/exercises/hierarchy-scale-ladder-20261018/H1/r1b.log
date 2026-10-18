@@ -1,0 +1,4 @@
+2 2 16 slogdet 1.0 22.180709777918246 sum log|eig| 22.18070977791824 min|eig| 3.999999999999991 warning-as-error: False antisym True
+2 4 32 slogdet None None sum log|eig| 42.22491727384414 min|eig| 3.7416573867739262 warning-as-error: RuntimeWarning('divide by zero encountered in slogdet') antisym True
+4 4 256 slogdet None None sum log|eig| 266.1685173350189 min|eig| 2.8284271247461605 warning-as-error: RuntimeWarning('divide by zero encountered in slogdet') antisym True
+watchdog peak RSS 14272 KB

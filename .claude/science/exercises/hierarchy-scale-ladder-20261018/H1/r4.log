@@ -1,0 +1,12 @@
+PASS random hyperbolic maps (200): rungs in U never exceed the cone bound max n/bound = 0.968
+  y=1: xi/a <= C x 100 at delta = 1e-2
+  y=2: xi/a <= C x 10 at delta = 1e-2
+  y=4: xi/a <= C x 3 at delta = 1e-2
+PASS hierarchy 1e15 at delta >= 1e-2 and C <= 1 needs y <= 2/15 relevant exponent below 0.134: near-marginal
+PASS formula read rung-by-rung = relevant coupling with y = 1/16 from alpha_LM alpha^16 (7/8)^(1/4) = 2.0172e-17; y = 0.0625 < 2/15
+PASS 1D Ising K=18 (T/J=0.056): xi ~ 1e15 lattice units xi = 2.252e+15
+PASS   ... but in the smooth chart t = e^(-2K) the input is t ~ 2e-16 (y = 1, t' = 2t) t = 2.32e-16, t'/t = 2.000000; violates H1 (fixed point at K = infinity)
+PASS AF flow b0=1, g^2=1: xi/a = exp(8 pi^2/(b0 g^2)) ~ 1e34 from O(1) input (y = 0) xi/a = 1.95e+34
+PASS telescoping: compounded (a/w)^p is (a_0/a_N)^p under any regrouping of rungs 11 rungs vs 4 rungs, log10 = -69.863599
+TOTAL: PASS=7 FAIL=0
+watchdog peak RSS 22832 KB

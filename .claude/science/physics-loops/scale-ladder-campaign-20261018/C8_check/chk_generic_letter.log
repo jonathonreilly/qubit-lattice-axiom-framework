@@ -1,0 +1,2 @@
+[PASS] 12 random O-symmetric range-2 letters exp(iH): scalar on D+ and D- at k*, compressed derivative = c * (S's), c real
+   sample coefficients c: [np.float64(1.6302), np.float64(-0.3395), np.float64(-0.7235), np.float64(2.9557), np.float64(0.8248), np.float64(-1.5337), np.float64(2.5052), np.float64(0.185), np.float64(-4.6624), np.float64(-10.1818), np.float64(1.013), np.float64(0.0048)]

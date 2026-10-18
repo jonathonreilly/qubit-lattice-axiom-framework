@@ -14,3 +14,15 @@
 [PASS] C2' range-0 pieces: identity for chi=1, antipodal corner for chi=A2  
 [PASS] G0 perm parts: 2 x 64 = 128  
 [PASS] exactly one perm part per character is sublattice-independent (|.| pattern)  [(False, (0, 0)), (True, (7, 7))]
+[PASS] translation-invariant G0 letters: exactly 8 = {z*1} (chi=1) + {z*A0} (chi=A2), z in {+-1,+-i}  (exhaustive over 524,288)  8, [('1', 1), ('1', 1j), ('1', -1), ('1', (-0-1j)), ('A0', 1), ('A0', 1j), ('A0', -1), ('A0', (-0-1j))]
+[PASS] a R_L b support pattern is translation-invariant only if both perm parts are the s-independent ones (all 128^2 pairs)  4 admissible
+  pair (twist_a, twist_b) = (False, False) rank 7 SNF invariants [1] enum mod 4 solutions 64 words ['(-0-1j)*R_L', '-1*R_L', '1*R_L', '1j*R_L']
+  pair (twist_a, twist_b) = (False, True) rank 7 SNF invariants [1] enum mod 4 solutions 64 words ['(-0-1j)*R_L A0', '-1*R_L A0', '1*R_L A0', '1j*R_L A0']
+  pair (twist_a, twist_b) = (True, False) rank 7 SNF invariants [1] enum mod 4 solutions 64 words ['(-0-1j)*A0 R_L', '-1*A0 R_L', '1*A0 R_L', '1j*A0 R_L']
+  pair (twist_a, twist_b) = (True, True) rank 7 SNF invariants [1] enum mod 4 solutions 64 words ['(-0-1j)*Rt', '-1*Rt', '1*Rt', '1j*Rt']
+[PASS] continuous phase solutions of a R_L b change the word only by an overall scalar (kernel includes gauge directions that leave the word fixed)  kernel dims [np.int64(5), np.int64(5), np.int64(5), np.int64(5)]
+[PASS] all translation-invariant a R_L b (a, b in G0, Z_N phases with N >= SNF exponent, x Z4 global) are z*{R_L, Rt, A0 R_L, R_L A0}: 16 words  16
+[PASS] Hermitian members (possible conjugates P R_L P^-1) are only +-R_L, +-Rt: A0 R_L and R_L A0 are not Hermitian  
+[PASS] 300 random (a, b) with random U(1) orbit phases: translation invariance only for admissible perm pairs  0 invariant
+
+TOTAL: PASS=20 FAIL=0   [135s]

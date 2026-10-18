@@ -1,0 +1,57 @@
+[PASS] batched evaluator == product of mymodel letters  
+pickle totals: {'levels': 69660, 'fermi': 69021, 'surv': 639, 'clean': 0}
+[PASS] pickle totals match C8 FINDINGS (69,660 levels; 69,021 fail sign test; 639 survivors; 0 with no defective node)  {'levels': 69660, 'fermi': 69021, 'surv': 639, 'clean': 0}
+sample: 38 records
+  FERMI ('S2i', 'E+', 'Si', 'o') ('L100',) E=+0.7854 D-/D- grid8: own 11^3 sign change; crossing k/pi=[0.3778 0.4678 0.3778] min|theta-E|=3.3e-16
+  FERMI ('Si', 'E+', 'Rt', 'o') ('L331',) E=-0.7854 D+D-/D+D- grid8: own 11^3 sign change; crossing k/pi=[-0.5661  0.4678 -0.1917] min|theta-E|=5.6e-16
+  FERMI ('Si', 'E+', 'S2', 'o') ('L331',) E=+2.3562 D-/D- grid8: own 11^3 sign change; crossing k/pi=[-0.3232  0.3498 -0.3232] min|theta-E|=0.0e+00
+  FERMI ('E+', 'S2', 'E-', 'o') ('L230',) E=+0.0000 D+D-/D+D- grid8: own 11^3 sign change; crossing k/pi=[ 0.5047  0.3573 -0.8233] min|theta-E|=6.0e-16
+  FERMI ('S2', 'E+', 'S2', 'o') ('L033',) E=-0.7854 D+D-/D+D- grid16: own 11^3 sign change; crossing k/pi=[0.0972 0.8245 0.8222] min|theta-E|=0.0e+00
+  FERMI ('Rt', 'E+', 'S2', 'o') ('L011',) E=-0.7854 D+D-/D+D- grid16: own 11^3 sign change; crossing k/pi=[ 0.0879  0.0879 -0.8076] min|theta-E|=7.8e-16
+  SURV  ('E+', 'S', 'R', 'o') ('L011',) E=+2.3562 D+D-/D+D-: C8 first bad k/pi=(np.float64(-0.5), np.float64(0.5), np.float64(-0.5)) cube m=8 aniso (smin 0.174056, smax 0.981747); own m=8 aniso (smin 0.171082, smax 0.984090, tilt 2.8e-17)
+  SURV  ('S2i', 'E+', 'S', 'o') ('L213',) E=-0.7854 D+D-/D+D-: C8 first bad k/pi=(np.float64(-0.85193), np.float64(0.02369), np.float64(-0.85193)) generic m=2 tilt (smin 0.156175, smax 1.080786); own m=2 tilt (smin 0.124363, smax 1.067784, tilt 2.0e-01)
+  FERMI ('E+', 'S2i', 'o') ('H20*L312',) E=-0.7854 D+/D+ grid8: own 11^3 sign change; crossing k/pi=[-0.2233  0.555  -0.5285] min|theta-E|=2.2e-16
+  FERMI ('E+', 'S', 'o') ('H12*L301',) E=+2.3562 D+/D+ grid8: own 11^3 sign change; crossing k/pi=[ 0.4152 -0.324   0.3506] min|theta-E|=4.4e-16
+  FERMI ('S2i', 'E+', 'o') ('H10*L212',) E=-0.7854 D+/D+ grid8: own 11^3 sign change; crossing k/pi=[-0.9222 -0.0131  0.5206] min|theta-E|=0.0e+00
+  FERMI ('E+', 'Si', 'o') ('H21*L110',) E=+2.3562 D-/D- grid8: own 11^3 sign change; crossing k/pi=[ 0.2698 -0.3584  0.2698] min|theta-E|=4.4e-16
+  SURV  ('S', 'E+', 'o') ('L033',) E=-0.7854 D+D-/D+D-: C8 first bad k/pi=(np.float64(-0.5), np.float64(0.5), np.float64(-0.5)) cube m=8 aniso (smin 0.174056, smax 0.981747); own m=8 aniso (smin 0.171082, smax 0.984090, tilt 4.9e-17)
+  SURV  ('S', 'E+', 'o') ('H02*L033',) E=+2.3562 D+D-/D+D-: C8 first bad k/pi=(np.float64(0.89753), np.float64(-0.10247), np.float64(-0.97222)) generic m=2 aniso (smin 0.016536, smax 0.447051); own m=2 aniso (smin 0.015028, smax 0.457335, tilt 8.3e-12)
+  FERMI ('R', 'Rt', 'Si', 'E+', 'o') ('H22',) E=-0.7854 D+/D+ grid8: own 11^3 sign change; crossing k/pi=[-0.1629  0.0292 -0.1629] min|theta-E|=3.3e-16
+  FERMI ('R', 'S', 'E+', 'S2i', 'o') ('H21',) E=+2.3562 D-/D- grid8: own 11^3 sign change; crossing k/pi=[ 0.7937 -0.7671  0.7937] min|theta-E|=4.4e-16
+  FERMI ('S2', 'E+', 'Rt', 'R', 'o') ('L331',) E=-0.7854 D-/D- grid8: own 11^3 sign change; crossing k/pi=[-0.2535  0.2425 -0.2535] min|theta-E|=1.0e-15
+  FERMI ('E+', 'Rt', 'S2', 'E-', 'o') ('L032',) E=+0.0000 D+D-/D+D- grid8: own 11^3 sign change; crossing k/pi=[-0.6231  0.2277  0.2208] min|theta-E|=2.4e-16
+  FERMI ('Rt', 'S2i', 'E+', 'S', 'o') ('L011',) E=-0.7854 D+D-/D+D- grid16: own 16^3 sign change; crossing k/pi=[ 0.2756 -0.3541 -0.2213] min|theta-E|=2.2e-16
+  FERMI ('E+', 'S', 'R', 'S2i', 'o') ('L321',) E=+2.3562 D+D-/D+D- grid16: own 16^3 sign change; crossing k/pi=[-0.8415  0.7665 -0.7199] min|theta-E|=4.4e-16
+  SURV  ('E+', 'S2', 'E-', 'Si', 'o') ('H02',) E=+3.1416 D+D-/D+D-: C8 first bad k/pi=(np.float64(-1.0), np.float64(-1.0), np.float64(-1.0)) R_pi m=2 flat (smin 0.0, smax 0.0); own m=2 flat (smin 0.000000, smax 0.000000, tilt 8.8e-17)
+  SURV  ('Rt', 'S', 'E+', 'Rt', 'o') ('L213',) E=-0.7854 D+D-/D+D-: C8 first bad k/pi=(np.float64(0.02401), np.float64(-0.97599), np.float64(-0.73193)) generic m=2 tilt (smin 0.219748, smax 0.735424); own m=2 tilt (smin 0.048400, smax 0.740726, tilt 2.1e-02)
+  FERMI ('S', 'o', 'E+', 'o') ('H03', 'L301') E=-2.3562 D+/D+ grid8: own 11^3 sign change; crossing k/pi=[ 0.2021  0.2907 -0.2641] min|theta-E|=4.4e-16
+  FERMI ('S2i', 'o', 'E+', 'o') ('H33', 'L313') E=-2.3562 D+D-/D+D- grid8: own 11^3 sign change; crossing k/pi=[-0.8682 -0.5787 -0.0332] min|theta-E|=0.0e+00
+  FERMI ('S2i', 'o', 'E+', 'o') ('L301', 'L233') E=+0.7854 D-/D- grid8: own 11^3 sign change; crossing k/pi=[-0.2251  0.214  -0.6059] min|theta-E|=1.0e-15
+  FERMI ('Si', 'o', 'E+', 'o') ('L003', 'L220') E=-0.7854 D+D-/D+D- grid8: own 11^3 sign change; crossing k/pi=[-0.2892  0.0622 -0.1878] min|theta-E|=4.4e-16
+  FERMI ('S2', 'o', 'E+', 'o') ('L123', 'L310') E=-0.7854 D+D-/D+D- grid16: own 11^3 sign change; crossing k/pi=[-0.0802  0.6491 -0.9847] min|theta-E|=0.0e+00
+  FERMI ('S2i', 'o', 'E+', 'o') ('L332', 'L231') E=-0.7854 D+D-/D+D- grid16: own 11^3 sign change; crossing k/pi=[-0.6178 -0.7676 -0.0883] min|theta-E|=0.0e+00
+  SURV  ('Si', 'o', 'E+', 'o') ('L130', 'L033') E=-0.7854 D+D-/D+D-: C8 first bad k/pi=(np.float64(0.27615), np.float64(0.27535), np.float64(-0.72465)) generic m=2 tilt (smin 0.064824, smax 0.499165); own m=2 tilt (smin 0.080135, smax 0.498630, tilt 6.6e-03)
+  SURV  ('S', 'o', 'E+', 'o') ('L000', 'L213') E=-0.7854 D+D-/D+D-: C8 first bad k/pi=(np.float64(-0.97222), np.float64(-0.10247), np.float64(0.89753)) generic m=2 aniso (smin 0.024816, smax 0.44456); own m=2 aniso (smin 0.044961, smax 0.469380, tilt 5.0e-12)
+  FERMI ('S2i', 'E+', 'o', 'E-', 'o') ('H01', 'L133') E=-0.0000 D-/D- grid8: own 11^3 sign change; crossing k/pi=[-0.3372  0.1993 -0.9   ] min|theta-E|=2.1e-16
+  FERMI ('S', 'o', 'S2', 'E+', 'o') ('L123', 'L003') E=-2.3562 D-/D- grid8: own 11^3 sign change; crossing k/pi=[0.212  0.6268 0.5702] min|theta-E|=8.9e-16
+  FERMI ('S', 'o', 'S2i', 'E+', 'o') ('L212', 'H11') E=-0.7854 D-/D- grid8: own 11^3 sign change; crossing k/pi=[-0.2991  0.4678 -0.2991] min|theta-E|=2.2e-16
+  FERMI ('Si', 'o', 'E+', 'o') ('L133', 'L122') E=+2.3562 D-/D- grid8: own 11^3 sign change; crossing k/pi=[0.3604 0.441  0.0029] min|theta-E|=4.4e-16
+  FERMI ('E+', 'Si', 'o', 'E+', 'o') ('L211', 'L301') E=-1.5708 D+D-/D+D- grid16: own 11^3 sign change; crossing k/pi=[0.4451 0.8224 0.4451] min|theta-E|=2.2e-16
+  FERMI ('S2i', 'o', 'E+', 'S2i', 'o') ('L112', 'L101') E=-0.7854 D+D-/D+D- grid16: own 11^3 sign change; crossing k/pi=[-0.61   -0.0802  0.8236] min|theta-E|=1.1e-16
+  SURV  ('Si', 'E+', 'o', 'R', 'o') ('L123', 'L332') E=+2.3562 D+D-/D+D-: C8 first bad k/pi=(np.float64(-0.5), np.float64(0.5), np.float64(-0.5)) cube m=8 aniso (smin 0.174056, smax 0.981747); own m=8 aniso (smin 0.171082, smax 0.984090, tilt 1.2e-11)
+  SURV  ('Si', 'E+', 'o', 'Rt', 'o') ('H00', 'L011') E=-0.7854 D+D-/D+D-: C8 first bad k/pi=(np.float64(-0.5), np.float64(0.5), np.float64(-0.5)) cube m=8 aniso (smin 0.009068, smax 1.789397); own m=8 aniso (smin 0.017357, smax 1.797005, tilt 8.3e-17)
+[PASS] k* level kind reproduced (own model, own E+- = (1 +- i R_L)/sqrt2)  38/38
+[PASS] sign-test failures confirmed independently (own det-based r on own 11^3 / 18^3 grid + bisection to an actual eigenvalue at e^{iE})  28/28
+[PASS] survivor failures confirmed (first defective node: multiplicity and defect type by own finite-difference DPT)  10/10
+
+closest case E+.S.o (L033), E = -pi/4:
+   +k*: kind (4, 'D+D-') m=4 tilt=2.5e-16 smin=0.471405 smax=0.471405 -> ok
+   -k*: kind (8, '8-fold') m=8 tilt=1.2e-16 smin=0.007110 smax=1.486228 -> aniso
+[PASS] E+.S.L033: +k* is a 4-fold D+(+)D- untilted isotropic cone at sqrt2/3  
+[PASS] E+.S.L033 FAILS: -k* level at E is 8-fold and not an isotropic cone  aniso
+   own census (8 cube points + 60 Nelder-Mead starts): 60 nodes, classes {(4, 'ok'): 1, (8, 'aniso'): 1, (2, 'tilt'): 57, (2, 'aniso'): 1}
+[PASS] own search finds further defective nodes of E+.S.L033 at E (generic tilted/anisotropic)  
+   E+.Rt.S.L011: +k* m=4 ok; -k* m=8 aniso smin=0.171082 smax=0.984090
+[PASS] E+.Rt.S.L011: +k* isotropic 4-fold, -k* 8-fold defective  
+
+TOTAL: PASS=9 FAIL=0   [6s]

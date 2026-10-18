@@ -1,0 +1,7 @@
+[PASS] (i) S^n(k)^T = S^n(k); R_L(k) = D_k R0 D_k^-1 (R0 real symmetric) so R_L(k)^T = R_L(-k); S(k) = sigma D_k^-2  
+[FAIL] (i) W(k)^T = reversed word with transposed on-site letters, at the SAME k (R_L included), so spec W~ = spec W  
+[PASS] (i) PH^T = PH; PLm_i^T = PLm_{3-i}; L_abc^T = i^c L_{(b-c)(a-c)(-c)} (all 64); PL(phi)^T = e^{i phi}PL(-phi) = Y PL(phi) Y  
+[PASS] (ii) generic palette letters (PC minus identities/plane/L202) have only scalar gauges; transposable ones satisfy O^T = +-O exactly (trivial transpose gauge)  {'O^T=+O': 18, 'none': 54, 'O^T=-O': 3}
+[PASS] (ii) every diagonal-gauge relation O = h X h'^-1 between distinct PC/plane letters (X = O' or O'^T) is a proportionality or a plane/L202 relation  {'proportional': 105, 'plane': 16}
+[PASS] (ii) Delta(m) scalar iff m in bcc(2pi); in C_P iff m in piZ^3; in Y C_P iff m in (pi/2)(1,1,1)+piZ^3 (all 4096 m in (pi/8)Z^3)  {(True, True, False): 2, (False, False, False): 4080, (False, True, False): 6, (False, False, True): 8}
+[PASS] (ii) plane letters: (Y, Y) is a transpose gauge (Y P Y = P^T); L202: Y L202 Y = -L202 (unitary, w = -1)  

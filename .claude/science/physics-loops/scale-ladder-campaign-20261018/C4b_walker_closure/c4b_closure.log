@@ -1,0 +1,22 @@
+PASS: T0a [2s] spinor bracket controls: {int s_1, int s_2} = 2 int s_3 (= -i chibar[sigma1,sigma2]chi); {int N n, int M J_(0,0)} = -int M d_0N n (hand value: J_(0,0) generates -translation of density weight 1/2)
+PASS: T0b [2s] flat walker: {C_f[N],C_f[M]} = v^2 G_K[N dM - M dN] with G_K[xi] = int chibar i(xi.d + div xi/2 + (i/4) curl xi.sigma) chi (spin term -1/4 curl xi.s; +1/4 fails): {1: False, -1: True}  (B15 C2 analogue)
+PASS: T0c [3s] gravity control: {G_GR[xi], G_GR[eta]} = G_GR[[xi,eta]], G_GR = int Pt L_xi(delta + h)
+   A: 1212 real equations, 254 unknowns (G_f^(0): 84, lam1 x coupling: 168, s1, s2)
+PASS: A2 [19s] walker coupling with free strength a_s (E = (delta + a_s h)^(-1/2)): closure at order chi chi iff a_s = lam_f/lam1: [{a_s: lam_f/lam1}]
+   general null space 29 = 24 canonical W-directions (in null space: True) + ['phase', 'phase', 'phase', 's1', 's2']
+PASS: A1a [78s] FULLY GENERAL ansatz (84 + 168 coefficients): null space 29 = 24 canonical field redefinitions chi -> exp(i k h_ab sigma_mu) chi (W = int h_ab S_mu, constructed and verified) + lam_f (s1 direction) + s2 (trh x walker density convention) + 3 phase rotations by c.curl(xi) with a constant vector c (not rotation invariant)
+   isotropic ansatz: G_f^(0) 5 terms, coupling 5 terms; null space 3; spanned by (lam_f: Kosmann + walker), (s2: trh walker), (W_trh): True
+PASS: A1b [81s] SO(3)-isotropic ansatz (all invariant contractions incl. epsilon): the solution space is exactly 3-dim, spanned by lam_f x [Kosmann, walker coupling on E = (delta+h)^(-1/2), s1 = -1], the density convention s2 (coupling + (s2/2) trh x walker) and the canonical phase redefinition chi -> exp(i k trh) chi.  No other coupling closes
+   G_f^(1) isotropic basis: 20 terms
+   {G,G} chi chi solutions: [{gp10: -gp9, gp11: gp9, gp12: 0, gp13: 0, gp14: -gp17, gp15: gp17, gp16: -gp17, gp18: 0, gp19: 0, gp2: -gp5, gp3: gp5, gp4: -gp5, gp6: 0, gp7: 0, gp8: -gp9, lfu: 0}, {gp10: -gp9, gp11: gp9, gp12: 0, gp13: 0, gp14: -gp17, gp15: gp17, gp16: -gp17, gp18: 0, gp19: 0, gp2: -gp5, gp3: gp5 + nu**2/16, gp4: -gp5 + nu**2/16, gp6: 0, gp7: 0, gp8: -gp9, lfu: nu}]
+PASS: C1 [93s] {G,G} at order chi chi with the h-linear fermion relabelling part G_f^(1) free (isotropic, 20 terms): lam_f in {0, nu} only -> lam_f = nu (the fermion's structure constant is the common one, as for the scalar, B19 C1b); free G_f^(1) directions at lam_f = nu: 5
+PASS: C2 [95s] product bracket without G_f^(1): {nu K[xi], nu K[eta]} - nu^2 K[[xi,eta]] != 0 and equals c nu^2 int eps_kij (S_xi S_eta)_ij s_k (S = symmetric strain) for exactly one c: {1/2: True, -1/2: False, 1: False, -1: False} (on-site rotation remainder, spin-1/2 note Result 4 / N2; G_f^(1) is what absorbs it)
+   walker a_s = 1, lam_f = nu: [{K2: K1, lam1: nu, s1: -nu, s2: 0}]
+PASS: B1 [97s] gravity's h-linear {C,G} + the walker's order-chi-chi {C,G}, with the walker's coupling FIXED at a_s = 1 (C4) and lam_f = nu (C1): unique solution lam1 = nu, K2 = K1, s1 = -nu, s2 = 0  (fermion analogue of B21-check T6c)
+   walker a_s free: [{K2: K1*a_s, lam1: nu/a_s, s1: -nu, s2: 0}]
+PASS: B2 [98s] with the coupling strength a_s left free the same brackets give lam1 = nu/a_s and K2 = a_s K1: closure ties a_s = K2/K1 (C4 route II), so a_s = 1 <=> K1 = K2; with a_s free nothing fixes K2/K1 (B21 no-go, Phi_rho)
+   {C,C} P + chi chi: [{b: -1/2, c0: K1/(4*alpha*lam1), vv: K1*lam_f/(4*alpha*lam1)}]
+PASS: D1 [99s] {C,C} at order P (member) and chi chi (walker): b = -1/2, c0 = K1/(4 alpha lam1), walker speed^2 v^2 = lam_f K1/(4 alpha lam1) = a_s K1/(4 alpha) (A2).  With a_s = 1: v^2 = K1/(4 alpha) (C4 B2's lapse identity); with B1 (lam_f = lam1 = nu, K2 = K1): v^2 = K2/(4 alpha) = TT graviton cone (B21 check T2)
+PASS: D3 [99s] {C,C} at order P chi chi: zero identically (the walker's h-coupling has no lapse gradient), so it imposes nothing; rhs c0 G[zeta] has no P chi chi term
+   {C,G} P chi chi: kin_X basis 3; solution [{kx0: -gp0/(8*alpha*lam1) - gp1/(8*alpha*lam1), kx1: gp1/(4*alpha*lam1), kx2: nu**2/(32*alpha*lam1)}]
+PASS: E1 [101s] {C,G} at order P chi chi: solvable for the P h s / P h n cross term kin_X of the kinetic term, and kin_X is forced nonzero (its P h s part is nu^2/(32 alpha lam1^2) x [one epsilon structure], independent of the free G_f^(1) directions): the Darboux form of the symmetric-section connection term pi = P - a(h, s) (2026-09-13 note P1); a product-bracket kinetic term (kin_X = 0) does not close

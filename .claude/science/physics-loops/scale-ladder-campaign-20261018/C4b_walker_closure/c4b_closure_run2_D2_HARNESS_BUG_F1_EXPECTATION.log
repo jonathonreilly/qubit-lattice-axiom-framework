@@ -1,0 +1,14 @@
+# Run of sections D E F (tail, verbatim).  Two FAILs, two different causes:
+#  D2 = HARNESS BUG: the {C,C} h chi chi sector omitted the bracket of the Darboux cross term kin_X (P h s, found in E1)
+#       with the member's -K1 R1, which is of the same order.  Fixed: D2 moved after E1 as E2 using the full C_tot.
+#  F1 = WRONG EXPECTATION (a physics result): the bare walker's second-order symmetric-section coupling does NOT close
+#       {C,G} at order h chi chi; the locally rotation-covariant operator (walker + 1/4 N T(E) n, section G) does.
+#       Replaced by F1 (bare walker fails at r = 1 and r = 2) and F2 (covariant operator closes at r = 1, 2) + control.
+   {C,C} h chi chi: [{a_s: nu/(2*lam1), beta: -nu/(2*lam1), betap: 0, gp0: 0, gp1: 0}]
+FAIL: D2 [18s] {C,C} at order h chi chi with G_f^(1) from C1 (lam_f = nu branch): forces a_s = nu/lam1 and the structure function zeta = c0 (delta + beta h) w with beta = -nu/lam1, beta' = 0 (the walker's own cone metric delta - a_s h; B21 A7: beta = -1/r, r = lam1/nu).  Third route to a_s lam1 = nu; with a_s = 1: r = 1
+   {C,G} P chi chi: kin_X basis 3; solution [{kx0: -gp0/(8*alpha*lam1) - gp1/(8*alpha*lam1), kx1: gp1/(4*alpha*lam1), kx2: nu**2/(32*alpha*lam1)}]
+   kin_X (x lam1) = [-gp0/(8*alpha*lam1) - gp1/(8*alpha*lam1), gp1/(4*alpha*lam1), nu**2/(32*alpha*lam1)]
+PASS: E1 [20s] {C,G} at order P chi chi: solvable, and requires a nonzero P h s cross term kin_X in the kinetic term (order nu^2/(alpha lam1)): the Darboux form of the symmetric-section connection term pi = P - a(h, s) (2026-09-13 note P1); a product-bracket kinetic term (kin_X = 0) does not close
+   F: r=1 (lam1=nu=1, a_s=1): [];  r=2 (lam1=2, nu=1, a_s=1/2): [];  control lam1=nu=1, a_s=1/2: []
+FAIL: F1 [29s] {C,G} at order h chi chi (walker's second-order frame coupling included): solvable for G_f^(1)'s remaining directions at r = 1 (a_s = 1) and at r = 2 (a_s = 1/2, the Phi_2 image)
+PASS: F2 [29s] control: lam1 = nu with a_s = 1/2 (mismatched second-order coupling) fails at order h chi chi (it already fails at order chi chi, A2)

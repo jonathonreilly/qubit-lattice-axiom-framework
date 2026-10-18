@@ -1,0 +1,4 @@
+PASS: O1 [h_N, h_M] = -L^K_w with spin coefficient +i/4 curl w.sigma (i.e. -1/4 curl w.s in the bilinear, as in c4b T0b): {1: True, -1: False}
+PASS: O2 operator route, order chi chi: lam_f [h_N, L_xi] + h^(1)_N[h -> lam1 (d xi + d xi^T)] = h_(N') iff a_s = lam_f/lam1, s1 = -lam_f, s2 = 0 and the Kosmann spin coefficient (+i/4): [{a_s: lam_f/lam1, kap: 1/4, s1: -lam_f, s2: 0}]
+PASS: O3 operator route: h_N[E = 1 + A] - h_N[1] = -i[h_N, theta.sigma/2] + N div(theta)/2 exactly; the scalar remainder is nonzero (the walker is not locally rotation covariant; c4b G1)
+TOTAL: PASS=3 FAIL=0

@@ -1,0 +1,29 @@
+[PASS] own Clements-mesh decomposition reproduces the 12x12 on-site factor V = U_H U_L  60 two-mode U(2) gates + 1 diagonal phase layer; max err 3.2e-15
+[PASS] link matrix: connected components are 3 L^3 disjoint 4-cycles (every mode degree 2), entries +-1
+[PASS] each block has flux pi, matchings A, B with A^2 = B^2 = 1, {A,B} = 0 and R_L = A exp((pi/4)AB), exp acting on the two diagonals
+[PASS] S = D . S_B . S_A (S_A: plaquette-diagonal swaps found from R_L's blocks; S_B: on-site antipodes; D diagonal +-1)  #(-1) in D: 384 of 768
+[PASS] circuit == real-space step S R_L (U_H U_L) entrywise (no global phase)  max err 2.3e-15
+[PASS] Bloch transform of the circuit equals the runner's Ws(k) at all 64 torus momenta (one sign convention)  max err by convention {1: np.float64(0.8164965809277283), -1: np.float64(2.682763664628697e-15)}
+[PASS] factor-wise: R_L sub-circuit == R_L, S sub-circuit == S
+[PASS] every gate acts on <= 2 modes within sup-distance 1 (range-1 circuit)  max sup span 1
+two-mode depth: on-site (Clements) 12, R_L 2, S 2, total 16; with phase layer 17
+[PASS] two-mode depth of this alternative circuit is <= 16 (12 on-site mesh + 2 + 2), below B11's 25 (B11's 25 is an upper bound, not minimal)  total 16
+single-particle gate classes per tag (cliff = phased permutation in {+-1,+-i}; cliff+T = entries in Z[1/sqrt2,i]):
+    onsite {'other': 3456, 'cliff+T': 192, 'cliff': 192}
+    onsite-ph {'cliff': 768}
+    RL-diag {'cliff+T': 384}
+    RL-link {'cliff': 384}
+    S-diag {'cliff': 384}
+    S-onsite {'cliff': 384}
+[PASS] S: every gate a {+-1}-signed swap (fermionic Clifford); S itself a signed permutation matrix
+[PASS] R_L: link gates Clifford, diagonal gates exp((pi/4)AB) have entries +-1/sqrt2 (not Clifford, in Z[1/sqrt2])
+[PASS] JW (2 modes): Gamma(signed swap) is a qubit Clifford; Gamma(exp((pi/4)AB) diagonal gate) = exp(-+i pi/8 XY) exp(+-i pi/8 YX), not Clifford, entries in Z[1/sqrt2,i]
+[PASS] H_on eigenvalues -1-sqrt3, sqrt3-1, 2 (sorted), Lambda eigenvalues +-sqrt2, +-2sqrt2
+[PASS] Galois test: sigma(U_H U_L) is NOT a phase times U_H U_L, so some product W_ia conj(W_jb) lies outside Q(zeta8) (=> no exact ancilla-clean, measurement-free Clifford+T circuit realises W on the code, by the trace argument of exact_field.py)  min_c ||sigma(V) - cV||_max = 0.444
+explicit product at k = 0 Bloch block: W_ia conj(W_jb) = (a + b sqrt3)/36 with ((0, 1, 0, 2), 0, -2)
+[PASS] an explicit W bilinear coefficient with a sqrt3 component exists (k = 0 block)
+U_L distinct |entries|: [np.float64(0.235702), np.float64(0.745356)]  e.g. non-dyadic product (0, 0, 1, 1, np.complex128(0.555555555555555+1.1102230246251565e-15j))
+[PASS] U_L entries in (1/6) Z[i]; some product U_ia conj(U_jb) (i != j, a != b) is not dyadic (denominator 3)
+[PASS] S: net number of modes crossing the plane x_ax = 1/2 is zero on every axis (index 0; consistent with the explicit 2-mode-gate circuit)  [0, 0, 0]
+
+B11_check TOTAL: PASS=17 FAIL=0  [72s]

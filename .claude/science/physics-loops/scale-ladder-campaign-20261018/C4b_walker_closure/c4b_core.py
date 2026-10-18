@@ -180,3 +180,112 @@ def check(tag, ok, msg):
 
 def total():
     print(f"TOTAL: PASS={RES['pass']} FAIL={RES['fail']}  ({time.time() - T0:.0f}s)", flush=True)
+
+
+# ------------------------------------------------------------------ isotropic (SO(3)) contraction ansatz generator
+def _matchings(lst):
+    if not lst:
+        yield []
+        return
+    a = lst[0]
+    for i in range(1, len(lst)):
+        rest = lst[1:i] + lst[i + 1:]
+        for p in _matchings(rest):
+            yield [(a, lst[i])] + p
+
+
+def iso_candidates(factors):
+    """factors: list of (fn(idx_tuple) -> expr, nslots).  Returns all SO(3)-invariant full contractions (delta pairings,
+    plus one epsilon when the index count is odd), summed over index values."""
+    n = sum(ns for _, ns in factors)
+    slots = list(range(n))
+    cands = []
+    if n % 2 == 0:
+        structs = [(None, m) for m in _matchings(slots)]
+    else:
+        structs = []
+        for tri in itertools.combinations(slots, 3):
+            rest = [s for s in slots if s not in tri]
+            for m in _matchings(rest):
+                structs.append((tri, m))
+    for tri, m in structs:
+        tot = 0
+        free = [s for s in slots if tri is None or s not in tri]
+        for vals_e in (itertools.product(R3, repeat=3) if tri is not None else [()]):
+            if tri is not None and sp.LeviCivita(*vals_e) == 0:
+                continue
+            eps = sp.LeviCivita(*vals_e) if tri is not None else 1
+            for vals_d in itertools.product(R3, repeat=len(m)):
+                v_ = [None] * n
+                if tri is not None:
+                    for s_, x in zip(tri, vals_e):
+                        v_[s_] = x
+                for (p, q), x in zip(m, vals_d):
+                    v_[p] = v_[q] = x
+                term = eps
+                pos = 0
+                for fn, ns in factors:
+                    term *= fn(tuple(v_[pos:pos + ns]))
+                    pos += ns
+                tot += term
+        cands.append(sp.expand(tot))
+    return cands
+
+
+def _rowvec(F):
+    row = {}
+    for key, ker in F.items():
+        qs = [x for x in kb.QALL if ker.has(x)]
+        if not qs:
+            row[(key, ())] = sp.expand(ker)
+            continue
+        for mon, cc in sp.Poly(ker, *qs).terms():
+            row[(key, tuple(zip([str(x) for x in qs], mon)))] = cc
+    return row
+
+
+def independent(cands):
+    """indices of a maximal linearly independent subset of the candidate densities, as local functionals (kernels)."""
+    rows = [_rowvec(functional(c)) for c in cands]
+    cols = {}
+    for r in rows:
+        for k in r:
+            cols.setdefault(k, len(cols))
+    Mx = sp.zeros(2 * len(cols), len(rows))
+    for j, r in enumerate(rows):
+        for k, cc in r.items():
+            re, im = sp.re(cc), sp.im(cc)
+            Mx[2 * cols[k], j] = re
+            Mx[2 * cols[k] + 1, j] = im
+    if len(rows) == 0:
+        return []
+    Dm = DomainMatrix.from_Matrix(Mx).convert_to(sp.QQ)
+    _, piv = Dm.rref()
+    return list(piv)
+
+
+def Tax(E, order):
+    """axial scalar T(E) = eps_abc E_a^j E_b^k d_j e_ck (e = (E^-1)^T the co-frame), with E^-1 expanded to `order`
+    in (E - 1).  Only the parts of the result up to that order in the frame deviation are meaningful."""
+    X = E - sp.eye(3)
+    Ei, term = sp.eye(3), sp.eye(3)
+    for _ in range(order):
+        term = (-term * X).applyfunc(sp.expand)
+        Ei += term
+    e_ = Ei.T
+    T = 0
+    for a in R3:
+        for b_ in R3:
+            for c in R3:
+                if EPS(a, b_, c) == 0:
+                    continue
+                for j in R3:
+                    for k in R3:
+                        T += EPS(a, b_, c) * E[a, j] * E[b_, k] * Dk(e_[c, k], j)
+    return sp.expand(T)
+
+
+def walker_cov(Lp, E, order, v=1):
+    """the walker plus the axial (totally antisymmetric) spin-connection term 1/4 N T(E) n: the locally rotation
+    covariant half-density Weyl operator (coefficient 1/4 fixed by C4b section G)."""
+    return sp.expand(walker(Lp, E, v) + v * sp.Rational(1, 4) * Lp * Tax(E, order) * Sv[0])

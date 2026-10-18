@@ -1,1 +1,3 @@
 PASS solution 1: symplectic, det 1, O-covariant with phases (full)
+  solution 1: no elementary word found within the beam search (inconclusive)
+PASS solution 2: symplectic, det 1, O-covariant with phases (full)

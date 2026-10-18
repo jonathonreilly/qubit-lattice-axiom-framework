@@ -1,0 +1,11 @@
+PASS GNVW index identity = 1.0 :: computed 1.0000000000
+PASS GNVW index right shift (I4: d=2) = 2.0 :: computed 2.0000000000
+PASS GNVW index left shift = 0.5 :: computed 0.5000000000
+PASS GNVW index depth-2 random brickwork circuit = 1.0 :: computed 1.0000000000
+PASS GNVW index shift o depth-1 circuit = 2.0 :: computed 2.0000000000
+PASS GNVW index reflection-conjugate P(S W1)P^-1  (I7) = 0.5 :: computed 0.5000000000
+PASS GNVW index reflection-conjugate of circuit P W P^-1 = 1.0 :: computed 1.0000000000
+PASS GNVW index on-site conjugate u(S W1)u^-1  (I8) = 2.0 :: computed 2.0000000000
+PASS GNVW index S o S (I2: 2*2) = 4.0 :: computed 4.0000000000
+PASS GNVW index S o Sl (I2: 2*(1/2)) = 1.0 :: computed 1.0000000000
+TOTAL: PASS=10 FAIL=0

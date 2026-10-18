@@ -1,7 +1,7 @@
 # C7: massive continuum limit of the supplied 3D two-qubit Dirac walk
 
 **Block:** C7 of `toe-scale-ladder-20261018` (R2 → R3).
-**Status:** worker note. Unaudited, and no independent review has been done yet.
+**Status:** worker note. Independently reviewed (REVIEW.md, verdict ready); unaudited.
 **Runners:** `scripts/c7_exact.py` (sympy, exact identities) and
 `scripts/c7_numeric.py` (numpy/mpmath, a different implementation). Logs are in `logs/`.
 `scripts/run_all.sh` writes `logs/run_all.log`, which ends with the combined

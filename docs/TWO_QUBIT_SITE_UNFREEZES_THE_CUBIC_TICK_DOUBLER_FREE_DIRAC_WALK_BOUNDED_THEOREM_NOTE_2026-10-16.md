@@ -285,7 +285,9 @@ maximisation argument: on the plane the walk region is compact, its maximiser
 satisfies P = dP/dt = 0, and lex elimination leaves the real roots
 sigma = 0, +-sqrt(2/27). It then made exact sign checks of e1, e2, e3 at
 b_iso. Its results agree, including y = -s^2/360 on the plane and the
-uniqueness of +-b_iso. Its scripts are in
+uniqueness of +-b_iso. (Correction 2026-10-18: its agreement on the sextic
+coefficients is limited to y and z; the isotropic x shared the series error
+corrected above.) Its scripts are in
 `.claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/`.
 
 Reading: on the two-qubit site, cubic lattice anisotropy can be tuned away at

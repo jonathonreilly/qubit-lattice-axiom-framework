@@ -194,3 +194,33 @@ None of these is load-bearing for claims 1–5.
 3. §4 item 5: replace Bauer–Fike with the unitary matching-distance bound, and add the
    non-aliasing qualifier.
 4. §9: leave as is. It is confirmed. Optionally note the arcsin² origin of the 8/45.
+
+## Correction confirmation (2026-10-18)
+
+**Checked:**
+- the complete corrected NOTE.md (324 lines, §12 dispositions);
+- the parent repair commit f46a89b7b (runner, parent note and runner cache);
+- the C7 commit eb7f89f2e.
+
+The reviewer reran the repaired parent runner (nice 10) and it ends
+**TOTAL: PASS=41 FAIL=0**. The 1/1215 check passes, and that check now includes the
+sympy series test and a direct 50-digit arccos test. The cache file also reads
+TOTAL: PASS=41 FAIL=0.
+
+| finding | status |
+|---|---|
+| 2b adjacency hypothesis | **resolved.** §2 item 1 is stated correctly, and the named points are justified. |
+| 3(i) C₃/κ₀ quantifiers | **resolved.** §4 item 2 says existence is proved, the values are sample lower estimates, and κ₀ is unquantified. §3 is cross-referenced. |
+| 3(ii) matching distance and non-aliasing | **resolved.** §4 item 5 uses Bhatia–Davis plus the qualifier. The argument that V U^n V* has the same spectrum for any unitary V is correct. |
+| 3(iii) p-dependent wording | **resolved.** The item 4 heading is amended. |
+| 4 parent defect | **resolved, correct and minimal.** The changes are: 8/45 → 4/45 in `omega2_series`; target 1/243 → 1/1215; the x(s) check and the Theorem 7 display 8s⁴ → 4s⁴; and a dated correction remark. y, z and every order ≤ k⁴ are untouched. The only remaining "8 s^4" and "1/243" in the parent note are inside that remark, which is intentional. The added mpmath check is extra, non-circular hardening, not scope creep. |
+
+**Residual nits (non-blocking):**
+- (a) The NOTE.md header still says "no independent review has been done yet". It should
+  now say "independent-code review: REVIEW.md".
+- (b) The parent's "Independent check" paragraph still says B5 derived "the sextic
+  coefficients". Whether B5 checked x has not been re-verified. Suggest scoping that
+  sentence to y and z.
+
+**Final verdict: ready.** This holds for the claims reviewed here (items 1–5). The items
+listed under "not independently checked" remain single-author checks.

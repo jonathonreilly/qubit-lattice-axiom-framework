@@ -136,3 +136,6 @@ Large-feature collision: trace_class upstream_support; source_of_blocker_text us
 
 
 Fixed-occupation ladder: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Derives everyfixedfiniteoccupation square-root sourcevertex andfinite-time harmonicpreparedspan fromonequbitspinstrings andnativeH. Doesnotclose sourceautonomy, stableparticles, finite-densityfield orcosmologicalidentification.
+
+
+Original-readout threshold response complete: exact root resolvent yields unit bound atom plus logarithmic continuum ds/(log²s+pi²), after native weight normalization. Smooth microscopic spectral measures transfer for delta=lambda^alpha,0<alpha<1/3. Independent math, physical and final scoped review PASS; source-bound replay12.003629sPASS. No finite-lambda isolated pole or observed scalar; energy remains near8J. Next root tests genuinely many-spin whole-column low-energy features and derives their first native winding kinetic coefficient.

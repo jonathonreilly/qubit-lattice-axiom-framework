@@ -88,3 +88,6 @@ Large-feature collision keeps suppliedH/regime/reference andmomentumfamily. Full
 
 
 Fixed-occupation ladder: suppliedH/regime/state/momentum retainedaspremises. Formalcanonicalsitebosonsareanexactalgebradevice followedbyhardcoreprojection, notaddedphysicalqubits. Mfixedindependentoflambda; intervalcutoffL/(16M). Rootderives adjacentverticesandpreparedfinite-timeevolution; noexactinvariance orsourceclosure. Allmodeldevelopment.
+
+
+Original-readout threshold response complete: exact root resolvent yields unit bound atom plus logarithmic continuum ds/(log²s+pi²), after native weight normalization. Smooth microscopic spectral measures transfer for delta=lambda^alpha,0<alpha<1/3. Independent math, physical and final scoped review PASS; source-bound replay12.003629sPASS. No finite-lambda isolated pole or observed scalar; energy remains near8J. Next root tests genuinely many-spin whole-column low-energy features and derives their first native winding kinetic coefficient.

@@ -126,3 +126,6 @@ Large-feature collision: independent arbitrary-complex native Pauli check400case
 
 
 Fixed-occupation ladder: independentalgebra andphysicalchecksPASS afterexplicitM-dependentcutoff; finalscopedreviewPASS. PreparedspanDuhamelcorollary checked. Source-bound replay.151015sPASS; graph7294nodes16280edges4981runners andmanifestbuilt; vocab0violations. Controlscomparefinitebosonpolynomial devicewithphysicalhardcoreprojection, notfullmicroscopicED.
+
+
+Original-readout threshold response complete: exact root resolvent yields unit bound atom plus logarithmic continuum ds/(log²s+pi²), after native weight normalization. Smooth microscopic spectral measures transfer for delta=lambda^alpha,0<alpha<1/3. Independent math, physical and final scoped review PASS; source-bound replay12.003629sPASS. No finite-lambda isolated pole or observed scalar; energy remains near8J. Next root tests genuinely many-spin whole-column low-energy features and derives their first native winding kinetic coefficient.

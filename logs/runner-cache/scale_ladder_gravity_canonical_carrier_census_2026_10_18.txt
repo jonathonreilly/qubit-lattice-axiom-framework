@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_canonical_carrier_census_2026_10_18.py
+runner_sha256: cf6330cb8e00d5a6818caa1c591c35805565d13dc0a4208c7a76ee1e801d00df
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 170.45
+status: ok
+----- stdout -----
+[PASS] K1 canonical builder (Delaunay cells, every non-simplicial face coned from its circumcentre) on Z^4 + {hypercube centres} = the D4 cone  96 simplices, 8 vertex types, 72 edges, volume 1.000000
+[PASS] K2 hidden-curvature and partner counts: Z^4 alone 1/0; + link midpoints 0/0; + face centres 0/2; + cube centres 0/0; + hypercube centres 0/2  {}: hidden 1, partners 0, B4 True; {1}: hidden 0, partners 0, B4 True; {2}: hidden 0, partners 2, B4 True; {3}: hidden 0, partners 0, B4 True; {4}: hidden 0, partners 2, B4 True
+[PASS] K3 on omega = k, |lambda|/k^4 of all 16 Hodge modes: < 1e-4 for the even sets {4}, {2} (no O(k^4) term); > 1e-3 for {1}, {3} (splitting)  {4}: 8.1e-07; {2}: 3.1e-06; {1}: 3.1e-02; {3}: 5.7e-03
+[PASS] K4 Z^4 + link midpoints: a static T_tt source through two different consistent site readings gives h_tt k^2 = -2 and h_xx/h_tt = -1 (no curvature-squared term)  -2.0000/-1.0000; -2.0000/-1.0000; -2.0000/-1.0000; -2.0000/-1.0000
+[PASS] K5 Z^4 + link midpoints: P1 scalar with lumped mass is reflection positive at both tick planes  min/max eigenvalue -3.0e-16
+[PASS] K6 zoom-out: scaled by 2, the link-midpoint carrier's vertices are exactly all 16 sites of each 2^4 block, and the D4 cone's are the 8 even-parity sites  link-midpoint carrier: zoom 2, 16 of 16 residues; D4 cone: zoom 2, 8 of 16
+[PASS] K7 a P1 field on every site of the link-midpoint carrier sources the relative sublattice displacements at O(1) (uniform part O(k)): gravity must read matter per block  all 1.60, uniform 4.0e-02; all 1.59, uniform 2.0e-02
+
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

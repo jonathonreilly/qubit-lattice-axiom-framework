@@ -193,3 +193,12 @@ The drafts `panel_D/D1_SITE_CONTENT_PROPOSAL.md` and `panel_D/COLLABORATOR_ASKS.
 - **The record rules are safe at main's neutral setting.** A strongly repulsive record gas would freeze matter into a chessboard.
 
 **Did the campaign crack the wall? No.** It moved route 2's obstacle away from flavour and onto symmetric mass generation, and left route 1 needing lattices beyond this machine.
+
+**Same-family referee corrections to §8 (10-17).**
+- QMC-1b: no filter dependence was detected, and none is excluded.
+- TOR-1's Wilson side finding is withdrawn.
+- GEN-1: the two-sided n is 1, and X2′ also needs Θ (or about 1e-40 tuning) for a dimension-3 flavour offset.
+- GEN-2: n exceeds GEN-1's (suggested), not "≥ 7".
+- LOCK-1: main's bond-rate notes have conditional period-2 instabilities. A chessboard removes protection but does not prove a gap.
+
+See TESTS.md, "Same-family referees".

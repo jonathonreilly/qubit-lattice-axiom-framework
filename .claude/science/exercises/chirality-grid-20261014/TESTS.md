@@ -776,3 +776,23 @@ The other four panel E lenses were stopped to save tokens (Jon, 10-17).
 - **Supplementary W = 8 (registered after W = 4 failed; n_s = 4 so the gate passes):** f_Γ 0.805(63) against f2 0.861(47, incomplete at 171 sweeps). The two agree within errors. So the box-spanning 10-vector correlation does not look filter-specific (suggested).
 - **Gates re-passed**, including an ED check with negative taps.
 - **Systematics as before:** U(1)_c-plane pinning, finite temperature, no gap estimator.
+
+**Same-family referees (Claude Opus 5.5 xhigh subagents, not independent; recorded 00:27Z 10-17; Jon: "just have your own sub agent referee").** The records are in `campaign/sf_referees/`. All five results are CONFIRMED WITH CORRECTIONS.
+- **QMC-1b: OPEN (all numbers independently recomputed).**
+  - "Not filter-specific" is an overclaim. The allowed wording is: no filter dependence was detected, and none is excluded. The W = 8 comparison was added after the fact, one chain is incomplete, and the difference is resolved only to ±0.08.
+  - The n_s = 4 rerun was registered one minute after a readout. The time-left rule was dropped without disclosure. Some error bars are optimistic.
+- **TOR-1: OPEN, failing on kernel power (all kernel numbers reproduced).**
+  - Locality is supported only at 8×8. At Lx = 4 the measure current does not separate 11112 from L1.
+  - The toron sector is never exercised on the kernel nodes (w_x ≡ 0).
+  - **The Wilson + hard-weight side finding is withdrawn:** its sign is unresolved and is likely a quadrature artefact.
+- **GEN-1: GEN-CONE.**
+  - The two-sided count is **n = 1, not 2**: a free H_u or H_d coefficient suffices. The tuning is unchanged at about 3e-16.
+  - The variant-A loophole is not credited: subluminal d quarks at about 1e-7 would violate nucleon clock bounds.
+  - X2′ **still needs Θ, or about 1e-40 tuning**, for a dimension-3 flavour-offset term. This is the same structure CLS-1 priced.
+  - The twist argument is sound, conditional on recalled bordism values.
+- **GEN-2: DIR-PRICE, at the symmetry level.**
+  - "n ≥ 7" is overclaimed. The defensible statement is that n exceeds GEN-1's (suggested).
+  - The circulant ⇒ trivial-CKM step is correct.
+- **LOCK-1: LOCK-MIXED for the record gas.**
+  - "The only landed family that orders matter" is not supported. Main's bond-rate notes have conditional period-2 alternation instabilities below a threshold stiffness. If all three axes alternate, 2Z³ remains, which folds all 8 corners.
+  - The supervisor reading's index assignment is confirmed. But a chessboard removes X2′'s *symmetry protection*; it does not prove the light sector gaps (OPEN).

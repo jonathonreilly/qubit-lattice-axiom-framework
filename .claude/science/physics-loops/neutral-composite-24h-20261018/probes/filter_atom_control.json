@@ -1,0 +1,117 @@
+{
+  "scope": "Synthetic uniform continuum plus optional central atom; distinguishes shrinking overlap from genuine pole weight; no empirical data",
+  "rows": [
+    {
+      "filter": "gaussian",
+      "tau": 4,
+      "atom_weight": 0.0,
+      "source_overlap_squared": 0.4430573355204491,
+      "std": 0.17677665040159127
+    },
+    {
+      "filter": "gaussian",
+      "tau": 4,
+      "atom_weight": 0.25,
+      "source_overlap_squared": 0.5651739849753384,
+      "std": 0.11170275866397064
+    },
+    {
+      "filter": "gaussian",
+      "tau": 16,
+      "atom_weight": 0.0,
+      "source_overlap_squared": 0.11077836568159471,
+      "std": 0.044194173824159216
+    },
+    {
+      "filter": "gaussian",
+      "tau": 16,
+      "atom_weight": 0.25,
+      "source_overlap_squared": 0.3269719072078752,
+      "std": 0.01668236618512236
+    },
+    {
+      "filter": "gaussian",
+      "tau": 64,
+      "atom_weight": 0.0,
+      "source_overlap_squared": 0.02769459142039868,
+      "std": 0.011048543456039804
+    },
+    {
+      "filter": "gaussian",
+      "tau": 64,
+      "atom_weight": 0.25,
+      "source_overlap_squared": 0.26906014798747974,
+      "std": 0.0022065296554630988
+    },
+    {
+      "filter": "gaussian",
+      "tau": 256,
+      "atom_weight": 0.0,
+      "source_overlap_squared": 0.00692364785509967,
+      "std": 0.002762135864009951
+    },
+    {
+      "filter": "gaussian",
+      "tau": 256,
+      "atom_weight": 0.25,
+      "source_overlap_squared": 0.2547518484022478,
+      "std": 0.00028003647704518395
+    },
+    {
+      "filter": "resolvent",
+      "tau": 4,
+      "atom_weight": 0.0,
+      "source_overlap_squared": 0.5629937901734955,
+      "std": 0.20894911285837872
+    },
+    {
+      "filter": "resolvent",
+      "tau": 4,
+      "atom_weight": 0.25,
+      "source_overlap_squared": 0.6271985492962263,
+      "std": 0.12697008839919063
+    },
+    {
+      "filter": "resolvent",
+      "tau": 16,
+      "atom_weight": 0.0,
+      "source_overlap_squared": 0.18107355538794995,
+      "std": 0.05997147735013581
+    },
+    {
+      "filter": "resolvent",
+      "tau": 16,
+      "atom_weight": 0.25,
+      "source_overlap_squared": 0.3586039472496529,
+      "std": 0.021485203361252564
+    },
+    {
+      "filter": "resolvent",
+      "tau": 64,
+      "atom_weight": 0.0,
+      "source_overlap_squared": 0.04811583628368544,
+      "std": 0.015468832510508481
+    },
+    {
+      "filter": "resolvent",
+      "tau": 64,
+      "atom_weight": 0.25,
+      "source_overlap_squared": 0.2775594299958791,
+      "std": 0.002914889061622681
+    },
+    {
+      "filter": "resolvent",
+      "tau": 256,
+      "atom_weight": 0.0,
+      "source_overlap_squared": 0.012210887656385068,
+      "std": 0.0038965239929697965
+    },
+    {
+      "filter": "resolvent",
+      "tau": 256,
+      "atom_weight": 0.25,
+      "source_overlap_squared": 0.2569008020511875,
+      "std": 0.0003721118306842185
+    }
+  ]
+}

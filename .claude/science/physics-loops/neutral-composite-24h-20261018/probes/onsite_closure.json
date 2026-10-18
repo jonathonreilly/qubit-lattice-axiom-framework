@@ -1,0 +1,71 @@
+{
+  "scope": "All144 onsite orbital bilinears; numerical frequency grouping1e-8, Gram kernel threshold1e-12; not extended operators",
+  "rows": [
+    {
+      "q": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "modes": [
+        {
+          "omega": -2.3519997236554464e-17,
+          "residual": 5.481265277263013e-16,
+          "trace_abs": 3.4641016151377575
+        }
+      ],
+      "minimum_squared_leakage_across_onsite_eigenfrequency_groups": -1.466465633031521e-16,
+      "frequency_groups": 7
+    },
+    {
+      "q": [
+        0.1,
+        0.0,
+        0.0
+      ],
+      "modes": [],
+      "minimum_squared_leakage_across_onsite_eigenfrequency_groups": 0.00033042187827303515,
+      "frequency_groups": 7
+    },
+    {
+      "q": [
+        0.3,
+        0.0,
+        0.0
+      ],
+      "modes": [],
+      "minimum_squared_leakage_across_onsite_eigenfrequency_groups": 0.0029552427161910902,
+      "frequency_groups": 7
+    },
+    {
+      "q": [
+        1.5707963267948966,
+        0.0,
+        0.0
+      ],
+      "modes": [],
+      "minimum_squared_leakage_across_onsite_eigenfrequency_groups": 0.06719852098039533,
+      "frequency_groups": 7
+    },
+    {
+      "q": [
+        3.141592653589793,
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "modes": [],
+      "minimum_squared_leakage_across_onsite_eigenfrequency_groups": 0.0826231572951516,
+      "frequency_groups": 7
+    },
+    {
+      "q": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "modes": [],
+      "minimum_squared_leakage_across_onsite_eigenfrequency_groups": 0.0009908005132196684,
+      "frequency_groups": 7
+    }
+  ]
+}

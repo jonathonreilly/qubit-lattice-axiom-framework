@@ -1,0 +1,149 @@
+{
+  "scope": "Relative-separation support of filtered bilinear, not its center-of-mass envelope or a bound fermion size. Hilbert-Schmidt operator norm differs from ensemble response norm. Minimum-image radii need boundary control.",
+  "rows": [
+    {
+      "N": 12,
+      "tau": 0,
+      "operator_HS_norm_per_cell": 26.392932194739437,
+      "relative_support_rms_coarse_cells": 9.48778357133417e-15,
+      "periodic_boundary_weight": 1.4222625325077683e-30,
+      "same_cell_weight": 1.0
+    },
+    {
+      "N": 12,
+      "tau": 4,
+      "operator_HS_norm_per_cell": 9.717276985620671,
+      "relative_support_rms_coarse_cells": 0.484522829798396,
+      "periodic_boundary_weight": 3.76598096381859e-06,
+      "same_cell_weight": 0.8320520045060955
+    },
+    {
+      "N": 12,
+      "tau": 8,
+      "operator_HS_norm_per_cell": 4.298618581283568,
+      "relative_support_rms_coarse_cells": 0.9490600380686608,
+      "periodic_boundary_weight": 0.0002081201022928594,
+      "same_cell_weight": 0.5398633784909354
+    },
+    {
+      "N": 12,
+      "tau": 16,
+      "operator_HS_norm_per_cell": 1.8750113153566927,
+      "relative_support_rms_coarse_cells": 1.7655052378243237,
+      "periodic_boundary_weight": 0.009949647531759628,
+      "same_cell_weight": 0.34581213965014357
+    },
+    {
+      "N": 12,
+      "tau": 32,
+      "operator_HS_norm_per_cell": 0.8235693302658966,
+      "relative_support_rms_coarse_cells": 3.2116323278001153,
+      "periodic_boundary_weight": 0.09268555371588633,
+      "same_cell_weight": 0.19685219813659438
+    },
+    {
+      "N": 12,
+      "tau": 64,
+      "operator_HS_norm_per_cell": 0.3671157361406042,
+      "relative_support_rms_coarse_cells": 4.370131361239869,
+      "periodic_boundary_weight": 0.22386798032028726,
+      "same_cell_weight": 0.09924669001013228
+    },
+    {
+      "N": 24,
+      "tau": 0,
+      "operator_HS_norm_per_cell": 26.392932194739437,
+      "relative_support_rms_coarse_cells": 1.8908260383463073e-14,
+      "periodic_boundary_weight": 8.156349216440758e-31,
+      "same_cell_weight": 1.0
+    },
+    {
+      "N": 24,
+      "tau": 4,
+      "operator_HS_norm_per_cell": 9.71726935565928,
+      "relative_support_rms_coarse_cells": 0.4845093599441934,
+      "periodic_boundary_weight": 5.409031724848853e-14,
+      "same_cell_weight": 0.832052630355027
+    },
+    {
+      "N": 24,
+      "tau": 8,
+      "operator_HS_norm_per_cell": 4.298999497648114,
+      "relative_support_rms_coarse_cells": 0.9501710154115234,
+      "periodic_boundary_weight": 1.554779753243156e-09,
+      "same_cell_weight": 0.5398104024678354
+    },
+    {
+      "N": 24,
+      "tau": 16,
+      "operator_HS_norm_per_cell": 1.8746138473928597,
+      "relative_support_rms_coarse_cells": 1.770917563548638,
+      "periodic_boundary_weight": 6.823801378183614e-06,
+      "same_cell_weight": 0.346337706420327
+    },
+    {
+      "N": 24,
+      "tau": 32,
+      "operator_HS_norm_per_cell": 0.8150855385470608,
+      "relative_support_rms_coarse_cells": 3.5900448892495924,
+      "periodic_boundary_weight": 0.0019508752428276878,
+      "same_cell_weight": 0.19689224876343017
+    },
+    {
+      "N": 24,
+      "tau": 64,
+      "operator_HS_norm_per_cell": 0.3768731250780875,
+      "relative_support_rms_coarse_cells": 6.567136555881034,
+      "periodic_boundary_weight": 0.04457526385432872,
+      "same_cell_weight": 0.09650213132520602
+    },
+    {
+      "N": 36,
+      "tau": 0,
+      "operator_HS_norm_per_cell": 26.392932194739434,
+      "relative_support_rms_coarse_cells": 2.84062178796896e-14,
+      "periodic_boundary_weight": 5.684806034417413e-31,
+      "same_cell_weight": 1.0
+    },
+    {
+      "N": 36,
+      "tau": 4,
+      "operator_HS_norm_per_cell": 9.717269355659258,
+      "relative_support_rms_coarse_cells": 0.48450935994419203,
+      "periodic_boundary_weight": 1.0461592659520534e-21,
+      "same_cell_weight": 0.8320526303550281
+    },
+    {
+      "N": 36,
+      "tau": 8,
+      "operator_HS_norm_per_cell": 4.298999494822258,
+      "relative_support_rms_coarse_cells": 0.950170984560067,
+      "periodic_boundary_weight": 8.232557458636698e-16,
+      "same_cell_weight": 0.5398104028254781
+    },
+    {
+      "N": 36,
+      "tau": 16,
+      "operator_HS_norm_per_cell": 1.8746155754403282,
+      "relative_support_rms_coarse_cells": 1.77092899330435,
+      "periodic_boundary_weight": 1.4111662703355623e-09,
+      "same_cell_weight": 0.3463374368190807
+    },
+    {
+      "N": 36,
+      "tau": 32,
+      "operator_HS_norm_per_cell": 0.8159124631376866,
+      "relative_support_rms_coarse_cells": 3.6125193079418416,
+      "periodic_boundary_weight": 2.9411083551066883e-05,
+      "same_cell_weight": 0.19669380263715328
+    },
+    {
+      "N": 36,
+      "tau": 64,
+      "operator_HS_norm_per_cell": 0.38668088385400434,
+      "relative_support_rms_coarse_cells": 7.123071797795236,
+      "periodic_boundary_weight": 0.007653520266611823,
+      "same_cell_weight": 0.0959287250315239
+    }
+  ]
+}

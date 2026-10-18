@@ -1,0 +1,15 @@
+{
+  "data/collective_corner_response/candidate.json": "b4c2bc8c25dafa7c529a96f3109331924eb428d2b363ec765f66fd1efc1e0588",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/probes/filter_atom_control.py": "a9e94e387049b78d3429f5224954d99403cf116cbd724c5a2bda35606a400982",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/probes/filter_spatial_support.py": "be0c1866b68dbcb71dcc21a9b32d9bcc5b40517649f59a98abfd9e79447ce3dc",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/probes/filtered_feature.py": "61fda6311565140e31f07ff9e4851b4a297ebb7c40d2d63be644c18901848b1e",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/probes/finite_range_mode.py": "e8bdf57a0ff9e654b6808157bc1cd4528144067f77b37c2769380975d4f2eaab",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/probes/finite_range_verify.py": "81ecd6a21477ed35743c4d55bf4940363b6bdc33e4e8bcd7c293669bedc243c7",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/probes/onsite_closure.py": "f1088a6cdc78a7c82106e3ad0ae6044b600998cd45eb87f422252cb895a913c1",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/probes/parity_control.py": "150937d49f118e7da075687364398a81cff7a09d82dec149839462104fc80e25",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/probes/resolvent_limit.py": "7d32cac6753fe6aaa2fc0eb19ccccfb50645669160f0937c7df581312846d1d7",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/probes/spectral_scan.py": "535e59f0e5f9c2369bc64b414ce63ee99e689c7116fa112c8263d0911e25f69a",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/probes/velocity_limit.py": "003d7d87ef5712fa52a35f0a1732f5fea44973b0caa03e2dcae7c682f921e02b",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/probes/rational_spectral_enclosure.py": "5d282427db93dd3cc574df4b0a92ed5bfa2b7a06df64d903d03539414ecf63e9",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/probes/exact_no_flat_transition.py": "cda114f3a1994aa13136d8254536202ac086c15db87859e342e1f34317a7e62c"
+}

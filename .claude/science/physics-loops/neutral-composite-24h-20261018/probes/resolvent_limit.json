@@ -1,0 +1,275 @@
+{
+  "scope": "Infinite spatial-support spectral filter on finite periodic grids; fixed chosen center .2 and supplied state. Not an independent particle or derived scalar interaction",
+  "rows": [
+    {
+      "N": 12,
+      "metric": "HS",
+      "eta": 0.1,
+      "overlap_squared": 0.6665417120247921,
+      "mean": 0.08462231384973848,
+      "std": 0.14349551958550313,
+      "target_residual": 0.18412760412958662
+    },
+    {
+      "N": 12,
+      "metric": "HS",
+      "eta": 0.01,
+      "overlap_squared": 0.3996937990092131,
+      "mean": 0.17659373094325098,
+      "std": 0.09255464089696844,
+      "target_residual": 0.09546839782212599
+    },
+    {
+      "N": 12,
+      "metric": "HS",
+      "eta": 0.001,
+      "overlap_squared": 0.1401438875580368,
+      "mean": 0.20263585871920614,
+      "std": 0.034970100911172745,
+      "target_residual": 0.03506929866600157
+    },
+    {
+      "N": 12,
+      "metric": "HS",
+      "eta": 0.0001,
+      "overlap_squared": 0.03976577557998085,
+      "mean": 0.20115236058609295,
+      "std": 0.01139207957155318,
+      "target_residual": 0.011450214490784868
+    },
+    {
+      "N": 12,
+      "metric": "HS",
+      "eta": 1e-05,
+      "overlap_squared": 0.012668474647588067,
+      "mean": 0.20216050033981112,
+      "std": 0.0037377450002414733,
+      "target_residual": 0.004317232841202097
+    },
+    {
+      "N": 12,
+      "metric": "thermal",
+      "eta": 0.1,
+      "overlap_squared": 0.9280425033956108,
+      "mean": 0.2554238140247861,
+      "std": 0.06637060742020959,
+      "target_residual": 0.08646881917998911
+    },
+    {
+      "N": 12,
+      "metric": "thermal",
+      "eta": 0.01,
+      "overlap_squared": 0.8104096325330976,
+      "mean": 0.23101532403659714,
+      "std": 0.04513995444815084,
+      "target_residual": 0.0547682920372386
+    },
+    {
+      "N": 12,
+      "metric": "thermal",
+      "eta": 0.001,
+      "overlap_squared": 0.4908708849150381,
+      "mean": 0.2095814604162209,
+      "std": 0.023010025122723037,
+      "target_residual": 0.024925200899008883
+    },
+    {
+      "N": 12,
+      "metric": "thermal",
+      "eta": 0.0001,
+      "overlap_squared": 0.2336813785169553,
+      "mean": 0.20413550749923823,
+      "std": 0.010134152813019602,
+      "target_residual": 0.010945477399998989
+    },
+    {
+      "N": 12,
+      "metric": "thermal",
+      "eta": 1e-05,
+      "overlap_squared": 0.13806078857057655,
+      "mean": 0.20440469476845952,
+      "std": 0.0058828391350484715,
+      "target_residual": 0.007349090575857157
+    },
+    {
+      "N": 24,
+      "metric": "HS",
+      "eta": 0.1,
+      "overlap_squared": 0.6665411073085667,
+      "mean": 0.08462350891897748,
+      "std": 0.14349611189507172,
+      "target_residual": 0.1841273168847366
+    },
+    {
+      "N": 24,
+      "metric": "HS",
+      "eta": 0.01,
+      "overlap_squared": 0.3997855346942245,
+      "mean": 0.17659443419659027,
+      "std": 0.09257337685585017,
+      "target_residual": 0.0954863896745133
+    },
+    {
+      "N": 24,
+      "metric": "HS",
+      "eta": 0.001,
+      "overlap_squared": 0.13986299828383947,
+      "mean": 0.20296709120403716,
+      "std": 0.03494729799102038,
+      "target_residual": 0.0350730276293087
+    },
+    {
+      "N": 24,
+      "metric": "HS",
+      "eta": 0.0001,
+      "overlap_squared": 0.03756601645545989,
+      "mean": 0.2004526045735564,
+      "std": 0.01052415410607583,
+      "target_residual": 0.010533882026510307
+    },
+    {
+      "N": 24,
+      "metric": "HS",
+      "eta": 1e-05,
+      "overlap_squared": 0.011096090329244985,
+      "mean": 0.2002548322798473,
+      "std": 0.0031417229606055365,
+      "target_residual": 0.0031520410295629367
+    },
+    {
+      "N": 24,
+      "metric": "thermal",
+      "eta": 0.1,
+      "overlap_squared": 0.928023912114783,
+      "mean": 0.2554428335643459,
+      "std": 0.0663507943148776,
+      "target_residual": 0.08646580653564132
+    },
+    {
+      "N": 24,
+      "metric": "thermal",
+      "eta": 0.01,
+      "overlap_squared": 0.8105106618812186,
+      "mean": 0.23107131837576023,
+      "std": 0.04509325301376585,
+      "target_residual": 0.05476155853307462
+    },
+    {
+      "N": 24,
+      "metric": "thermal",
+      "eta": 0.001,
+      "overlap_squared": 0.48919034395931527,
+      "mean": 0.20859308392709844,
+      "std": 0.0233305624851875,
+      "target_residual": 0.0248627479827431
+    },
+    {
+      "N": 24,
+      "metric": "thermal",
+      "eta": 0.0001,
+      "overlap_squared": 0.20776305922900562,
+      "mean": 0.20173336605522102,
+      "std": 0.00882094904491836,
+      "target_residual": 0.008989644038249716
+    },
+    {
+      "N": 24,
+      "metric": "thermal",
+      "eta": 1e-05,
+      "overlap_squared": 0.07796712251843795,
+      "mean": 0.2009733436872784,
+      "std": 0.0029682377461749915,
+      "target_residual": 0.0031237530714482925
+    },
+    {
+      "N": 36,
+      "metric": "HS",
+      "eta": 0.1,
+      "overlap_squared": 0.6665411073133063,
+      "mean": 0.08462350891997242,
+      "std": 0.1434961118996628,
+      "target_residual": 0.18412731688769116
+    },
+    {
+      "N": 36,
+      "metric": "HS",
+      "eta": 0.01,
+      "overlap_squared": 0.39978515058090713,
+      "mean": 0.17659459121339172,
+      "std": 0.0925733081448453,
+      "target_residual": 0.09548628457191494
+    },
+    {
+      "N": 36,
+      "metric": "HS",
+      "eta": 0.001,
+      "overlap_squared": 0.13937530516062696,
+      "mean": 0.2031481684279285,
+      "std": 0.034789619927485735,
+      "target_residual": 0.03493177091344666
+    },
+    {
+      "N": 36,
+      "metric": "HS",
+      "eta": 0.0001,
+      "overlap_squared": 0.03819758768627972,
+      "mean": 0.20146220106408724,
+      "std": 0.010538518034992773,
+      "target_residual": 0.01063947340452928
+    },
+    {
+      "N": 36,
+      "metric": "HS",
+      "eta": 1e-05,
+      "overlap_squared": 0.010793442065313285,
+      "mean": 0.2004694627563826,
+      "std": 0.0030794215003475964,
+      "target_residual": 0.003115001132653632
+    },
+    {
+      "N": 36,
+      "metric": "thermal",
+      "eta": 0.1,
+      "overlap_squared": 0.928023910807202,
+      "mean": 0.25544283797016354,
+      "std": 0.06635079009517517,
+      "target_residual": 0.08646580612265058
+    },
+    {
+      "N": 36,
+      "metric": "thermal",
+      "eta": 0.01,
+      "overlap_squared": 0.8105099948305019,
+      "mean": 0.23107138288993734,
+      "std": 0.04509307087780176,
+      "target_residual": 0.05476144515882997
+    },
+    {
+      "N": 36,
+      "metric": "thermal",
+      "eta": 0.001,
+      "overlap_squared": 0.4888432416994916,
+      "mean": 0.2086726433582522,
+      "std": 0.023266963823116195,
+      "target_residual": 0.024830754083709047
+    },
+    {
+      "N": 36,
+      "metric": "thermal",
+      "eta": 0.0001,
+      "overlap_squared": 0.20664802869846954,
+      "mean": 0.20113897017222476,
+      "std": 0.008776268623193263,
+      "target_residual": 0.008849866891635392
+    },
+    {
+      "N": 36,
+      "metric": "thermal",
+      "eta": 1e-05,
+      "overlap_squared": 0.07327756292501267,
+      "mean": 0.20004818299839278,
+      "std": 0.002701584141769059,
+      "target_residual": 0.0027020137816806526
+    }
+  ]
+}

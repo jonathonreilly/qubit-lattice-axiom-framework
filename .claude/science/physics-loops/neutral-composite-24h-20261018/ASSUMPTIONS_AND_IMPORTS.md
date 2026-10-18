@@ -109,3 +109,6 @@ Environment balance: removed chosen environmental potential/stiffness in this co
 
 
 Six-layer pole: native rectangleinteraction, plaquetterenormalization, hopping, normalization andoriginalreadoutallcomputed. Positiveplane-sectorvacuumstillselected; no globalgroundselectionimportallowed. GeometryL6 andweaklambda/J remain. No empiricaltest. Negativeqcurvature explicitly limits scalarinterpretation.
+
+
+Positive plane-character vacuum now derived at each fixed R sufficiently small lambda. Uniform R-dependent threshold remains open; do not apply this selection to the previous logarithmic-box family without further proof.

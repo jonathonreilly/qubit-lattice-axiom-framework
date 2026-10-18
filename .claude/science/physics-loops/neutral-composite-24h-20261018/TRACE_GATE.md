@@ -157,3 +157,6 @@ Environment cost/balance: trace_class upstream_support; source_of_blocker_text u
 
 
 Six-layer pole: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Native interaction and original source yield actual selected-sector collective mode with checked normalization; no added scalar interaction. Global state, 3D propagation, physical scales and empirical mapping remain open.
+
+
+Ground-selection block: upstream_support; partially closes prepared symmetry-sector premise in fixed-size ordered limit, not uniform growing-volume state selection.

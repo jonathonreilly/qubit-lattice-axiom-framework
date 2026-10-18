@@ -157,3 +157,6 @@ Environment cost/balance: actual_current_surface_status bounded-support; proposa
 
 
 Six-layer pole: actual_current_surface_status conditional-support; proposal_allowed false; bare_retained_allowed false; review_loop_disposition pass. Actual finite microscopic symmetry-fibre statement alongweakcoupling/logboxfamily; Hamiltonian, geometry andsectorpreparation supplied. Notfixedlambda thermodynamicpole, observedscalar orpositivegradientfield.
+
+
+Ground-selection block actual_current_surface_status: conditional-support; proposal_allowed: false; bare_retained_allowed: false. Supplied Hamiltonian/geometry/weak-coupling premises survive. Independent audit required before any effective promotion.

@@ -410,3 +410,6 @@ PR9797 environmentbalance verifiedOPEN20674f5240cfa785b22dd3877300498989ebf65b; 
 
 
 Six-layer pole block complete: full nativeD6 includesa=-25/3072,b=18/8192,gamma63/8192, independentlychecked. Exactfourfluxstar/finite-torus reduction givesuniqueupperbound x2.114475316300649, sourceweight.14068615643. Actualselectedsymmetry-fibre logarithmic-box transfer yieldsenergyJ[.375lambda4+.16793911416lambda6+o(lambda6)] andoriginalCweight1.86442186268e-5lambda12. Source andenergyremaindersseparatelycontrolled; negativecurvature, notrelativisticscalar. Independentcoefficient, graph,torus,source/transfer andfinalchecksPASS. NextrootderivesfixedRglobalgroundselection fromfirstflatrow/coltunneling atlambda^(R+4); jointuniformselectionnotassumed.
+
+
+Fixed-R six-layer ground selection complete: native spin-count and flux-denominator counting force first nonconstant flat operator at order R+4; two perfect matchings give positive t_R and unique all-positive character ground. Finite-R analytic remainder, not D6 truncation, establishes actual ground selection. Independent analytic and final checks PASS. No uniform threshold; ordered-limit state premise retired only. Next root thicker L10 candidate: native eighth-order straight-rectangle attraction may bind thin neutral features with positive dispersion; D8 classification under check.

@@ -1,0 +1,77 @@
+{
+  "status": "conditional-support",
+  "matching_controls": [
+    {
+      "R": 8,
+      "ordering_sum": "20",
+      "t_R": "2917215/1099511627776",
+      "leading_power": 12
+    },
+    {
+      "R": 10,
+      "ordering_sum": "70",
+      "t_R": "428830605/2251799813685248",
+      "leading_power": 14
+    },
+    {
+      "R": 12,
+      "ordering_sum": "252",
+      "t_R": "16209796869/1152921504606846976",
+      "leading_power": 16
+    },
+    {
+      "R": 14,
+      "ordering_sum": "924",
+      "t_R": "1248154358913/1180591620717411303424",
+      "leading_power": 18
+    },
+    {
+      "R": 16,
+      "ordering_sum": "3432",
+      "t_R": "48678019997607/604462909807314587353088",
+      "leading_power": 20
+    },
+    {
+      "R": 18,
+      "ordering_sum": "12870",
+      "t_R": "15333576299246205/2475880078570760549798248448",
+      "leading_power": 22
+    },
+    {
+      "R": 20,
+      "ordering_sum": "48620",
+      "t_R": "608231859870099465/1267650600228229401496703205376",
+      "leading_power": 24
+    },
+    {
+      "R": 22,
+      "ordering_sum": "184756",
+      "t_R": "48536902417633937307/1298074214633706907132624082305024",
+      "leading_power": 26
+    },
+    {
+      "R": 24,
+      "ordering_sum": "705432",
+      "t_R": "1945888542379687850217/664613997892457936451903530140172288",
+      "leading_power": 28
+    }
+  ],
+  "flat_controls": [
+    {
+      "R": 4,
+      "min_nonzero_weight": 4,
+      "minimizers": 8
+    },
+    {
+      "R": 6,
+      "min_nonzero_weight": 6,
+      "minimizers": 12
+    },
+    {
+      "R": 8,
+      "min_nonzero_weight": 8,
+      "minimizers": 16
+    }
+  ],
+  "scope": "Fixed-R sufficiently weak coupling; no uniform size threshold. Finite checks corroborate the analytic proof, not replace it."
+}

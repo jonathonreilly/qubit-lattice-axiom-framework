@@ -1,0 +1,24 @@
+   chosen survivors: {('low', 4, 'aniso'): ('S', ('P1', 'L130', 'P11', 'L130'), -0.0, 'D+D-', 'sc(16)', 'bcc(16)'), ('C2', 4, 'aniso'): ('S', ('P1', 'H22', 'P11', 'H22'), -0.0, 'D+D-', 'sc(16)', 'bcc(16)'), ('gen', 2, 'aniso'): ('S', ('P1', 'L112', 'P11', 'L112'), 0.0, 'D+D-', 'sc(16)', 'bcc(16)'), ('gen', 1, 'band'): ('S', ('P5', 'H13', 'P7', 'H13'), 3.1416, 'D+D-', 'sc(16)', 'bcc(16)')}
+
+== ('low', 4, 'aniso'): S.p.S.o.S.q.S.o ('P1', 'L130', 'P11', 'L130') E=-0.0000 (D+D-), Lu=sc(16) Lsp=bcc(16), v_D = 1.8856
+[PASS] ('low', 4, 'aniso'): k* level has the screened multiplicity (4) and an isotropic untilted cone at |n_S|sqrt2/3 (FD)  m=4 speeds [1.88561, 1.88563] tilt 2.2e-11
+   witness k/pi = [-0.75 -0.75 -0.75]: residual 3.1e-15, multiplicity at E 4; FD speeds [0.0001, 2.3041], tilt 2.5e-11; stabiliser mod Lu ('C3', ['C3', 'E']), mod Lsp(E) ('C3', ['C2', 'C3', 'E']); B25: low m=4 aniso smin=0.010046 smax=2.278893
+[PASS] ('low', 4, 'aniso'): witness reproduced -- 4-fold node at E, anisotropic (FD), point type as B25 states  aniso ratio 20171.6
+
+== ('C2', 4, 'aniso'): S.p.S.o.S.q.S.o ('P1', 'H22', 'P11', 'H22') E=-0.0000 (D+D-), Lu=sc(16) Lsp=bcc(16), v_D = 1.8856
+[PASS] ('C2', 4, 'aniso'): k* level has the screened multiplicity (4) and an isotropic untilted cone at |n_S|sqrt2/3 (FD)  m=4 speeds [1.88562, 1.88562] tilt 3.8e-11
+   witness k/pi = [-1.  -1.  -0.5]: residual 2.7e-15, multiplicity at E 4; FD speeds [0.0877, 4.2554], tilt 5.0e-11; stabiliser mod Lu ('C2pair', ['C2', 'C4', 'E']), mod Lsp(E) ('C2pair', ['C2', 'C4', 'E']); B25: C2 m=4 aniso smin=0.155937 smax=4.256367
+[PASS] ('C2', 4, 'aniso'): witness reproduced -- 4-fold node at E, anisotropic (FD), point type as B25 states  aniso ratio 48.5
+
+== ('gen', 2, 'aniso'): S.p.S.o.S.q.S.o ('P1', 'L112', 'P11', 'L112') E=+0.0000 (D+D-), Lu=sc(16) Lsp=bcc(16), v_D = 1.8856
+[PASS] ('gen', 2, 'aniso'): k* level has the screened multiplicity (4) and an isotropic untilted cone at |n_S|sqrt2/3 (FD)  m=4 speeds [1.88560, 1.88563] tilt 2.5e-11
+   witness k/pi = [-0.622238  0.793802 -0.377762]: residual 3.1e-16, multiplicity at E 2; FD speeds [0.0524, 2.3374], tilt 5.9e-11; stabiliser mod Lu ('generic', []), mod Lsp(E) ('generic', []); B25: gen m=2 aniso smin=0.146088 smax=2.323853
+[PASS] ('gen', 2, 'aniso'): witness reproduced -- 2-fold node at E, anisotropic (FD), point type as B25 states  aniso ratio 44.6
+
+== ('gen', 1, 'band'): S.p.S.o.S.q.S.o ('P5', 'H13', 'P7', 'H13') E=+3.1416 (D+D-), Lu=sc(16) Lsp=bcc(16), v_D = 1.8856
+[PASS] ('gen', 1, 'band'): k* level has the screened multiplicity (4) and an isotropic untilted cone at |n_S|sqrt2/3 (FD)  m=4 speeds [1.88562, 1.88562] tilt 3.8e-11
+   witness k/pi = [-0.340541  0.682688 -0.49593 ]: residual 0.0e+00, multiplicity at E 1; FD speeds [0.0000, 0.0000], tilt 1.9e+00; stabiliser mod Lu ('generic', []), mod Lsp(E) ('generic', []); B25: gen m=1 band smin=None smax=None
+   band velocity [ 0.972   1.6457 -0.014 ]; phase - E changes sign across the node along grad: True
+[PASS] ('gen', 1, 'band'): witness reproduced -- a single band crosses E with nonzero group velocity (Fermi surface, step not gapped at E)  |grad| 1.911
+
+TOTAL: PASS=8 FAIL=0   [1s]

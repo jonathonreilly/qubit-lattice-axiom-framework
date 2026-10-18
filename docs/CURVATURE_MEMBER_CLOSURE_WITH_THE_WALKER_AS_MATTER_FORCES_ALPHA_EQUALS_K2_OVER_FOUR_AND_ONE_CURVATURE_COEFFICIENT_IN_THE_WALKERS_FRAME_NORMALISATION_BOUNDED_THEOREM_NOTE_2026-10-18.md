@@ -238,7 +238,7 @@ Expected: `TOTAL: PASS=79 FAIL=0`, in about 3 minutes (185 s and 194 s measured;
 Each tag names its source script, for example `D.c4b.B1` or `E.c4bchk.B1`.
 
 Optional:
-- `--full` adds the slow checks: the 648-coefficient `G₂`, the plane-wave `√g R`, the generic-`β` control, the fully general null space, the half-density weight, the second-order covariant operator, the constructed `G_f⁽¹⁾`, and the next-order closure (F1/F2, F1′/F2′, F1″). Expected `TOTAL: PASS=96 FAIL=0`, in about FULL_TIME minutes.
+- `--full` adds the slow checks: the 648-coefficient `G₂`, the plane-wave `√g R`, the generic-`β` control, the fully general null space, the half-density weight, the second-order covariant operator, the constructed `G_f⁽¹⁾`, and the next-order closure (F1/F2, F1′/F2′, F1″). Expected `TOTAL: PASS=96 FAIL=0`, in about 19 minutes (1125 s measured, alongside another job).
 - `--parts A,D` runs selected parts.
 
 ## Load-bearing sources

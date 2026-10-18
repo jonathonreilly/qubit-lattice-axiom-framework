@@ -1,0 +1,8 @@
+   census ALIGN2 words with a k-dependent coset: 28
+   S.p.S.o.S.q.S.o ('P2', 'H20', 'P10', 'H20'): phi+phi' = 0 mod 2pi True; G^T=+-G True; mechanism AB; spec W' = spec W True
+   S.p.S.o.S.q.S.o ('P2', 'L030', 'P10', 'L030'): phi+phi' = 0 mod 2pi True; G^T=+-G False; mechanism A; spec W' = spec W True
+   S4.p.S4.o.S4.q.S4.o ('L303', 'L220', 'P5', 'L220'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   S2.p.S2.o.S2.q.S2.o ('P7', 'H11', 'P9', 'H11'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   S.p.S.o.S.q.S.o ('L202', 'H11', 'P8', 'H11'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   S4.p.S4.o.S4.q.S4.o ('P10', 'H03', 'P4', 'H03'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True
+   S4i.p.S4i.o.S4i.q.S4i.o ('L202', 'H10', 'L303', 'H10'): phi+phi' = 0 mod 2pi False; G^T=+-G True; mechanism B; spec W' = spec W True

@@ -1,0 +1,14 @@
+[PASS] A2 = sign of S4 action on body diagonals is a character, nontrivial, -1 on C4 (trace 1)
+[PASS] O has exactly 30 subgroups  orders [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 6, 6, 6, 6, 8, 8, 8, 12, 24]
+   total (H, chi) pairs: 84
+[PASS] T4 (group-theory prediction) selective (H, chi): count 25, orders {2,3,4,8,12}, none for O  count 25; by order {2: 6, 3: 8, 4: 6, 8: 3, 12: 2}
+[PASS] T4: for T exactly two selective characters, chi(C3) = omega, omega-bar, each allowing all six doublers
+[PASS] T3 under full O: A1 forbids all eight, A2 allows all eight (no selective full-O channel)
+[PASS] doubler little groups: |G_n| = 8 for each of the six doublers, containing exactly two C4 (trace 1)
+[PASS] T2: O-fixed points of the torus at denominators <= 12 are exactly 0 and pi(1,1,1)  [(Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(1, 1), Fraction(1, 1), Fraction(1, 1))]
+[PASS] T7: b/pi mod 2: A+B -> (1,1,1), {+-k*} -> (1,1,1), all -> 0; net-zero subsets are exactly empty, {+-k*}, A+B, all; only empty and all are anomaly-free; representative-independent; either sign
+[PASS] T9: jump at k_z = pi/2 is odd for {+-k*} only and for doublers only, 0 for all eight (C2x requires J = 2 nu(0) even)  {1: (1, -1, 0), -1: (-1, 1, 0)}
+[PASS] T9: C2x fixing k* has affine shift with theta_z = pi (mod 2pi), so it maps slice k_z -> pi - k_z  theta/pi = (Fraction(0, 1), Fraction(-1, 1), Fraction(1, 1))
+[PASS] T6/A19: partner chiralities under Q = pi p are equal iff |p| odd (Q = 0: opposite; Q = R: equal)
+
+TOTAL: PASS=11 FAIL=0

@@ -1,2 +1,5 @@
 [PASS] own good table: 56 good of 74 strict nested pairs, none among (L,L), (sc,bcc)_a, (fcc,sc)_b  
    19 census words sampled from 9 strata (+ B25's Fourier-FAIL word)
+   ALIGN  S2.p.S4i.o.S2.q.S4i.o ('P4', 'L120', 'P4', 'L222'): mine Lsp=bcc(16) Lu=bcc(16) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(16) Lu=bcc(16) idx=1 T=0 kdep=0 good=False  OK
+   ALIGN  S2i.p.S4.o.S2i.q.S4.o ('P6', 'L320', 'P4', 'H32'): mine Lsp=bcc(16) Lu=bcc(16) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=bcc(16) Lu=bcc(16) idx=1 T=0 kdep=0 good=False  OK
+   ALIGN2 Si.p.Si.o.Si.q.Si.o ('P9', 'L131', 'P4', 'L131'): mine Lsp=sc(16) Lu=sc(16) idx=1 T=0 kdep=0 good=False finer=False triadic=False | B25 Lsp=sc(16) Lu=sc(16) idx=1 T=0 kdep=0 good=False  OK

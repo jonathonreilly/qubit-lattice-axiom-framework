@@ -403,6 +403,22 @@ def part_D():
           and '?' not in sum(types.values(), []))
     check("D3 smallest O-invariant index >= 12 is 16 (the 2*D3 sublattice); the long-wavelength note's registered blocks have index 125 = 48 + 77",
           min(n for n in idxs if n >= 12) == 16 and types[16] == ['F2'] and 48 + 77 == 125 == 5 ** 3)
+    # integer (indeed real) 3x3 matrices M with M R = R M for the generators of O are scalar (Schur):
+    # a linear O-equivariant placement x -> c + M x of the coarse cubic lattice has Lambda = kZ^3
+    rows = []
+    for R in gens:
+        for i in range(3):
+            for j in range(3):
+                row = np.zeros(9)
+                for k in range(3):
+                    row[i * 3 + k] += R[k, j]      # (M R)_ij = sum_k M_ik R_kj
+                    row[k * 3 + j] -= R[i, k]      # (R M)_ij = sum_k R_ik M_kj
+                rows.append(row)
+    A = np.array(rows)
+    ns = 9 - np.linalg.matrix_rank(A)
+    check("D4 the commutant of O in 3x3 matrices is the scalars (null space dim 1, spanned by I): an O-equivariant linear placement of the"
+          " coarse cubic lattice has Lambda = kZ^3, so index k^3 >= 27 under the 12-qubit density bound",
+          ns == 1 and np.allclose(A @ np.eye(3).ravel(), 0) and min(k ** 3 for k in range(1, 6) if k ** 3 >= 12) == 27)
 
 
 # =====================================================================================================

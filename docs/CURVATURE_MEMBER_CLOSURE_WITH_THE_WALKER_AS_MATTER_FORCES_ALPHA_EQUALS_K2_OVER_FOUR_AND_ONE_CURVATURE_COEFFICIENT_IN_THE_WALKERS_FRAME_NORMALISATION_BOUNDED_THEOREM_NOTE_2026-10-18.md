@@ -226,7 +226,7 @@ This runner consolidates the campaign scripts and the check scripts, reused as w
 python3 scripts/curvature_member_closure_with_the_walker_forces_alpha_k2_over_four_2026_10_18.py
 ```
 
-Expected: `TOTAL: PASS=79 FAIL=0`, in about 3.5 minutes (Python 3, sympy, numpy). Parts:
+Expected: `TOTAL: PASS=79 FAIL=0`, in about 3 minutes (185 s and 194 s measured; Python 3.13, sympy 1.14, numpy). Parts:
 - A: B21 check — `Φ_ρ`, invariants, TT cone, family, witnesses, equivalences;
 - B: the C4 runner — frame coupling, species, lapse identity, `γ`;
 - C: the C4 check — second routes for B;

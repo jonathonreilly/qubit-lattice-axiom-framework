@@ -1,0 +1,17 @@
+realised D2h t* set (deg): [2.5, 2.7, 4.4, 10.7, 13.1, 18.2, 19.1, 23.2, 23.7, 28.7, 29.2, 30.7, 31.1, 35.3, 36.2, 36.5, 37.1, 42.2, 45.5, 46.1, 46.5, 47.0, 53.3, 54.5, 58.8]
+
+=== real data, D2h t* set (search over t* in the realised set) ===
+MZ: best factor x4.65 at t*=37.1 deg; per part up x4.65 dn x1.12 lep x1.72  |Vus,Vcb,Vub| [0.9999 0.0094 0.0135]
+     tetragonal t*=0 (same search): best factor x1.88e+10; |Vus,Vcb,Vub| [1.       0.847989 0.      ]
+GUT: best factor x4.66 at t*=37.1 deg; per part up x4.66 dn x1.08 lep x1.72  |Vus,Vcb,Vub| [0.9999 0.0096 0.0145]
+     tetragonal t*=0 (same search): best factor x6.7e+09; |Vus,Vcb,Vub| [1.       0.889163 0.      ]
+MIX: best factor x4.15 at t*=2.7 deg; per part up x4.15 dn x3.14 lep x1.05  |Vus,Vcb,Vub| [0.2264 0.0121 0.0135]
+     tetragonal t*=0 (same search): best factor x1.8e+10; |Vus,Vcb,Vub| [1.       0.889086 0.      ]
+tetragonal t*=0: fraction of grid points where some eigenvector is exactly (0,1,-1)/sqrt2: 0.9836
+
+=== random control (200 spectra, R1 generator, seed 7), same search ===
+control best factors: quantiles 10/50/90% = [ 2.3   6.56 16.69]; fraction within x3: 0.185
+   MZ: real x4.65; controls at least as good: 0.315
+   GUT: real x4.66; controls at least as good: 0.315
+   MIX: real x4.15; controls at least as good: 0.260
+watchdog peak RSS 132528 KB

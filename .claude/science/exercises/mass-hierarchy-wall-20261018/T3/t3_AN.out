@@ -1,0 +1,61 @@
+=== channel A-N, BZ midpoint 32^3 (half-axis 16), 120 coupling directions x 5 eta ===
+  eta=0.333 done t=5s
+  eta=0.5 done t=11s
+  eta=1 done t=16s
+  eta=2 done t=21s
+  eta=3 done t=26s
+eta=0.333: directions with ANY rho giving D2h angular min: 3/120; with a REALISED interior D2h vacuum: 0/120; D2h only at edge: 3; ordered at all: 120/120
+     b3: frac>0 0.50, median |b3| 0.034;  c6: frac>0 0.52, median |c6| 0.000951;  K-criterion agreement with exact (all rho) 0.997
+eta=0.5: directions with ANY rho giving D2h angular min: 2/120; with a REALISED interior D2h vacuum: 0/120; D2h only at edge: 2; ordered at all: 120/120
+     b3: frac>0 0.51, median |b3| 0.0285;  c6: frac>0 0.63, median |c6| 0.000709;  K-criterion agreement with exact (all rho) 0.999
+eta=1: directions with ANY rho giving D2h angular min: 3/120; with a REALISED interior D2h vacuum: 0/120; D2h only at edge: 3; ordered at all: 120/120
+     b3: frac>0 0.47, median |b3| 0.0144;  c6: frac>0 0.65, median |c6| 0.000312;  K-criterion agreement with exact (all rho) 0.999
+eta=2: directions with ANY rho giving D2h angular min: 6/120; with a REALISED interior D2h vacuum: 0/120; D2h only at edge: 5; ordered at all: 120/120
+     b3: frac>0 0.48, median |b3| 0.00745;  c6: frac>0 0.62, median |c6| 8.09e-05;  K-criterion agreement with exact (all rho) 0.998
+eta=3: directions with ANY rho giving D2h angular min: 4/120; with a REALISED interior D2h vacuum: 0/120; D2h only at edge: 2; ordered at all: 120/120
+     b3: frac>0 0.46, median |b3| 0.00545;  c6: frac>0 0.74, median |c6| 3.49e-05;  K-criterion agreement with exact (all rho) 0.999
+
+--- D2h realised vacua (interior), details ---
+eta=0.333 lam=(-0.51,-0.63,+0.59) rho_edge=0.715 D2h realised rho=[0.715] edge=[True] t*=[23.7] deg b3=+0.00095 c6=+7.18e-06 4c6rho^3/|b3| at first=0.01 LV per unit rho: rod 0.47, universal 0.51
+eta=0.333 lam=(+0.40,-0.81,+0.43) rho_edge=1.127 D2h realised rho=[1.127] edge=[True] t*=[2.7] deg b3=+0.0061 c6=+0.000662 4c6rho^3/|b3| at first=0.62 LV per unit rho: rod 0.87, universal 0.40
+eta=0.333 lam=(-0.49,+0.76,-0.43) rho_edge=1.102 D2h realised rho=[1.102] edge=[True] t*=[54.5] deg b3=-0.00567 c6=+0.000941 4c6rho^3/|b3| at first=0.89 LV per unit rho: rod 0.89, universal 0.49
+eta=0.5 lam=(+0.61,-0.77,+0.21) rho_edge=1.001 D2h realised rho=[1.001] edge=[True] t*=[36.5] deg b3=+0.0166 c6=+0.00192 4c6rho^3/|b3| at first=0.46 LV per unit rho: rod 0.97, universal 0.61
+eta=0.5 lam=(-0.35,+0.91,-0.21) rho_edge=1.058 D2h realised rho=[1.058] edge=[True] t*=[23.2] deg b3=-0.0103 c6=+0.00094 4c6rho^3/|b3| at first=0.43 LV per unit rho: rod 0.92, universal 0.35
+eta=1 lam=(-0.47,+0.87,+0.14) rho_edge=0.987 D2h realised rho=[0.987] edge=[True] t*=[36.2] deg b3=-0.00987 c6=+0.000995 4c6rho^3/|b3| at first=0.39 LV per unit rho: rod 0.96, universal 0.47
+eta=1 lam=(-0.65,+0.76,-0.07) rho_edge=0.954 D2h realised rho=[0.954] edge=[True] t*=[37.1] deg b3=-0.0068 c6=+0.00114 4c6rho^3/|b3| at first=0.58 LV per unit rho: rod 1.00, universal 0.65
+eta=1 lam=(+0.51,-0.85,-0.14) rho_edge=0.980 D2h realised rho=[0.98] edge=[True] t*=[29.2] deg b3=+0.0111 c6=+0.00111 4c6rho^3/|b3| at first=0.38 LV per unit rho: rod 0.97, universal 0.51
+eta=2 lam=(-0.28,+0.65,+0.71) rho_edge=1.410 D2h realised rho=[1.41] edge=[True] t*=[42.2] deg b3=-0.00215 c6=+6.53e-05 4c6rho^3/|b3| at first=0.34 LV per unit rho: rod 0.88, universal 0.28
+eta=2 lam=(+0.60,-0.58,+0.56) rho_edge=1.145 D2h realised rho=[1.145] edge=[True] t*=[47.0] deg b3=+0.00155 c6=+0.000163 4c6rho^3/|b3| at first=0.63 LV per unit rho: rod 0.83, universal 0.60
+eta=2 lam=(-0.51,+0.70,+0.49) rho_edge=1.100 D2h realised rho=[1.1] edge=[True] t*=[46.1] deg b3=-0.00275 c6=+0.000283 4c6rho^3/|b3| at first=0.55 LV per unit rho: rod 0.86, universal 0.51
+eta=2 lam=(+0.64,-0.68,-0.36) rho_edge=1.018 D2h realised rho=[1.018] edge=[True] t*=[35.3] deg b3=+0.00462 c6=+0.000495 4c6rho^3/|b3| at first=0.45 LV per unit rho: rod 0.93, universal 0.64
+eta=2 lam=(-0.15,-0.90,-0.41) rho_edge=1.392 D2h realised rho=[1.392] edge=[True] t*=[4.4] deg b3=+0.001 c6=+3.57e-05 4c6rho^3/|b3| at first=0.38 LV per unit rho: rod 1.19, universal 0.15
+eta=3 lam=(+0.25,+0.86,+0.44) rho_edge=1.500 D2h realised rho=[1.5] edge=[True] t*=[45.5] deg b3=-0.00125 c6=+2.98e-05 4c6rho^3/|b3| at first=0.32 LV per unit rho: rod 1.27, universal 0.25
+eta=3 lam=(-0.72,+0.64,+0.28) rho_edge=0.989 D2h realised rho=[0.989] edge=[True] t*=[10.7] deg b3=-0.00301 c6=+0.000401 4c6rho^3/|b3| at first=0.52 LV per unit rho: rod 0.96, universal 0.72
+
+--- per-direction Landau coefficient table (eta=1 and eta=2, first 12 directions) ---
+eta=1 lam=(+0.05,-0.12,+0.99) a2=-0.1184 q4=-0.002855 b3=+0.01345 c6=+2.584e-05 rho_edge=1.267 realised rho=[1.267] classes=['TET']
+eta=1 lam=(-0.20,+0.10,+0.97) a2=-0.05716 q4=-0.004997 b3=+0.008006 c6=-4.589e-05 rho_edge=1.331 realised rho=[1.331] classes=['TET']
+eta=1 lam=(+0.27,+0.08,+0.96) a2=-0.214 q4=-0.01813 b3=+0.03815 c6=+7.9e-05 rho_edge=0.887 realised rho=[0.887] classes=['TET']
+eta=1 lam=(-0.17,-0.29,+0.94) a2=-0.05549 q4=+0.0002094 b3=+0.001698 c6=+1.125e-06 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=1 lam=(-0.07,+0.37,+0.93) a2=-0.07062 q4=-0.01811 b3=+0.0205 c6=-0.0004472 rho_edge=0.951 realised rho=[0.951] classes=['TET']
+eta=1 lam=(+0.34,-0.25,+0.91) a2=-0.2359 q4=+0.003799 b3=+0.01495 c6=+6.042e-05 rho_edge=1.166 realised rho=[1.166] classes=['TET']
+eta=1 lam=(-0.45,-0.05,+0.89) a2=-0.05258 q4=-0.0002348 b3=-0.003487 c6=+3.982e-06 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=1 lam=(+0.32,+0.36,+0.88) a2=-0.2159 q4=-0.04834 b3=+0.05437 c6=-0.0008625 rho_edge=0.747 realised rho=[0.747] classes=['TET']
+eta=1 lam=(+0.01,-0.51,+0.86) a2=-0.07997 q4=-0.0003589 b3=-0.00555 c6=+1.894e-06 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=1 lam=(-0.37,+0.39,+0.84) a2=-0.04107 q4=-0.003895 b3=-0.005887 c6=+7.844e-05 rho_edge=1.354 realised rho=[1.354] classes=['TET']
+eta=1 lam=(+0.56,-0.04,+0.82) a2=-0.3668 q4=-0.003441 b3=+0.04389 c6=+0.0005245 rho_edge=0.861 realised rho=[0.861] classes=['TET']
+eta=1 lam=(-0.46,-0.37,+0.81) a2=-0.05121 q4=+0.000141 b3=+0.002412 c6=+2.548e-06 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=2 lam=(+0.05,-0.12,+0.99) a2=-0.05228 q4=-0.001309 b3=+0.004972 c6=-3.342e-07 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=2 lam=(-0.20,+0.10,+0.97) a2=-0.01601 q4=-0.0005885 b3=+0.0002428 c6=-1.921e-06 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=2 lam=(+0.27,+0.08,+0.96) a2=-0.08758 q4=-0.005335 b3=+0.01037 c6=-3.734e-05 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=2 lam=(-0.17,-0.29,+0.94) a2=-0.03367 q4=-3.165e-05 b3=+0.0009549 c6=+6.652e-07 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=2 lam=(-0.07,+0.37,+0.93) a2=-0.006921 q4=-0.0008818 b3=+0.001067 c6=-1.016e-05 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=2 lam=(+0.34,-0.25,+0.91) a2=-0.142 q4=-0.0006428 b3=+0.008495 c6=+1.129e-05 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=2 lam=(-0.45,-0.05,+0.89) a2=-0.04011 q4=-4.473e-05 b3=-0.002998 c6=+3.764e-06 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=2 lam=(+0.32,+0.36,+0.88) a2=-0.06745 q4=-0.007935 b3=+0.007479 c6=-0.0001194 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=2 lam=(+0.01,-0.51,+0.86) a2=-0.06925 q4=+5.544e-06 b3=-0.002269 c6=-4.412e-07 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=2 lam=(-0.37,+0.39,+0.84) a2=-0.0306 q4=-0.001524 b3=-0.005253 c6=+5.967e-05 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=2 lam=(+0.56,-0.04,+0.82) a2=-0.2043 q4=-0.004732 b3=+0.01645 c6=-1.866e-05 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+eta=2 lam=(-0.46,-0.37,+0.81) a2=-0.04414 q4=+0.0001425 b3=+0.001489 c6=+2.26e-06 rho_edge=1.500 realised rho=[1.5] classes=['TET']
+total time 26s
+watchdog peak RSS 99792 KB

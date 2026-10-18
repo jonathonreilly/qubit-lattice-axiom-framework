@@ -41,3 +41,11 @@
 - **Conditional prediction: TM1 lepton mixing.** It needs F2 (star or T1 generations) and F3 (exact residuals per sector), with a bond-centred C₂[110]∘T(e₃) half-turn for the neutrinos. It is the only survivor of the lattice's residual menu.
   - Prediction: sin²θ₁₂ = 0.3182 ± 0.0002. JUNO's first result, verified, is 0.3092 ± 0.0087, about 1.0σ away (arXiv:2511.14593).
   - TM1 as a pattern is known in the literature. What is new is its lattice realisation, and that it is the only survivor.
+
+**T-LANDAU result (23:15Z, T3/REPORT.md; same-family Opus; unrefereed).** Reading: **OPEN, leaning TETRAGONAL.** D2h vacua appear only at the edge of admissibility. Taken at face value, that edge result is a tuned LANDAU-D2H.
+- **Fermion energy is concave in the order (proved).** Pure mean field mostly runs away; the interior vacua it does find are all tetragonal.
+- **D2h needs O(1) Lorentz violation.** It occurs in about 3% of couplings, with speed shifts of at least 30%. At speed shifts of 10% or less: 0 out of 8000.
+- **Mass channel is tetragonal (proved for a definite real M).**
+- **D2h angles are not fixed and do not fit.** The angles range from 2.5° to 58.8°. Fits fail by ×4.2–4.7, and 26–32% of random spectra do as well.
+- **Correction to the tetragonal reading.** It gives 3 levels, not 2, but one generation is unmixed (|V_ub| = 0). Still a kill.
+- **Effect on the wall.** The kill round's "spontaneous Eg" escape is closed in the simplest rod model, apart from a tuned, strongly Lorentz-violating edge.

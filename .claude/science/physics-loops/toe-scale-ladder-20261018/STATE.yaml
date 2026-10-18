@@ -15,6 +15,6 @@ organizing_concept: >
 token_policy: >
   Orchestrator stays lean: workers return <=600-word summaries + artifact paths;
   full derivations/logs live in pack files; one independent checker per load-bearing result.
-cycle: 0
-active_route: grounding (scale-ladder frontier map in progress)
-next_action: read SCALE_LADDER_MAP.md, select 2-3 targets, write GOAL.md contracts, dispatch workers
+cycle: 1
+active_route: wave1 = C4 (QCA classification), C1 (photon QMC), C5 (W3 chirality) running
+next_action: on each wave-1 return, dispatch an independent checker for its load-bearing step; launch wave 2 (C3, C2, C6) as CPU frees

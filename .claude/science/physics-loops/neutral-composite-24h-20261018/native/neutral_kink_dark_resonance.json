@@ -1,0 +1,155 @@
+{
+  "rows": [
+    {
+      "source_residue_coefficient": 1.9969899010315235,
+      "predicted_source": 1.9886556607902524,
+      "q": 0.0,
+      "ratio": 0.05,
+      "shift_coefficient": -1.3861991160582634,
+      "predicted_shift": -1.3872690027894004,
+      "width_coefficient": 0.27268882463547,
+      "predicted_width": 0.2796547022986292
+    },
+    {
+      "source_residue_coefficient": 1.9899849498430515,
+      "predicted_source": 1.9886556607902524,
+      "q": 0.0,
+      "ratio": 0.02,
+      "shift_coefficient": -1.3870998936303605,
+      "predicted_shift": -1.3872690027894004,
+      "width_coefficient": 0.27853601204497946,
+      "predicted_width": 0.2796547022986292
+    },
+    {
+      "source_residue_coefficient": 1.9889878318399214,
+      "predicted_source": 1.9886556607902524,
+      "q": 0.0,
+      "ratio": 0.01,
+      "shift_coefficient": -1.387226799389436,
+      "predicted_shift": -1.3872690027894004,
+      "width_coefficient": 0.27937488255502363,
+      "predicted_width": 0.2796547022986292
+    },
+    {
+      "source_residue_coefficient": 1.6064327287891205,
+      "predicted_source": 1.5997517043287754,
+      "q": 0.5235987755982989,
+      "ratio": 0.05,
+      "shift_coefficient": -1.2945924089103829,
+      "predicted_shift": -1.2961693287892286,
+      "width_coefficient": 0.1609416892584044,
+      "predicted_width": 0.16641502080134624
+    },
+    {
+      "source_residue_coefficient": 1.600818541210773,
+      "predicted_source": 1.5997517043287754,
+      "q": 0.5235987755982989,
+      "ratio": 0.02,
+      "shift_coefficient": -1.2959190903958033,
+      "predicted_shift": -1.2961693287892286,
+      "width_coefficient": 0.16553427644529164,
+      "predicted_width": 0.16641502080134624
+    },
+    {
+      "source_residue_coefficient": 1.6000183361898697,
+      "predicted_source": 1.5997517043287754,
+      "q": 0.5235987755982989,
+      "ratio": 0.01,
+      "shift_coefficient": -1.2961068430188358,
+      "predicted_shift": -1.2961693287892286,
+      "width_coefficient": 0.1661946566367223,
+      "predicted_width": 0.16641502080134624
+    },
+    {
+      "source_residue_coefficient": 0.6669181539619246,
+      "predicted_source": 0.6645306752106325,
+      "q": 1.0471975511965979,
+      "ratio": 0.05,
+      "shift_coefficient": -0.963084893519858,
+      "predicted_shift": -0.9661949685534591,
+      "width_coefficient": 4.8999344232808e-05,
+      "predicted_width": 5.687849645241353e-83
+    },
+    {
+      "source_residue_coefficient": 0.6649134136806926,
+      "predicted_source": 0.6645306752106325,
+      "q": 1.0471975511965979,
+      "ratio": 0.02,
+      "shift_coefficient": -0.9656990102868027,
+      "predicted_shift": -0.9661949685534591,
+      "width_coefficient": 1.2536943467854407e-06,
+      "predicted_width": 5.687849645241353e-83
+    },
+    {
+      "source_residue_coefficient": 0.6646263857766443,
+      "predicted_source": 0.6645306752106325,
+      "q": 1.0471975511965979,
+      "ratio": 0.01,
+      "shift_coefficient": -0.9660710382432588,
+      "predicted_shift": -0.9661949685534591,
+      "width_coefficient": 7.834951300312415e-08,
+      "predicted_width": 5.687849645241353e-83
+    },
+    {
+      "source_residue_coefficient": 1.709542543194801e-85,
+      "predicted_source": 1.7090486972213494e-85,
+      "q": 1.5707963267948966,
+      "ratio": 0.05,
+      "shift_coefficient": -0.12537578668970373,
+      "predicted_shift": -0.13020833333333334,
+      "width_coefficient": 0.8059765347875212,
+      "predicted_width": 0.795495128834866
+    },
+    {
+      "source_residue_coefficient": 1.709133114996075e-85,
+      "predicted_source": 1.7090486972213494e-85,
+      "q": 1.5707963267948966,
+      "ratio": 0.02,
+      "shift_coefficient": -0.12943449447442612,
+      "predicted_shift": -0.13020833333333334,
+      "width_coefficient": 0.7971718163408468,
+      "predicted_width": 0.795495128834866
+    },
+    {
+      "source_residue_coefficient": 1.709069995621874e-85,
+      "predicted_source": 1.7090486972213494e-85,
+      "q": 1.5707963267948966,
+      "ratio": 0.01,
+      "shift_coefficient": -0.13001485121112166,
+      "predicted_shift": -0.13020833333333334,
+      "width_coefficient": 0.7959142874428635,
+      "predicted_width": 0.795495128834866
+    },
+    {
+      "source_residue_coefficient": 1.9718705968837917,
+      "predicted_source": 1.9992997955575917,
+      "q": 2.0943951023931957,
+      "ratio": 0.05,
+      "shift_coefficient": 2.3622844579043063,
+      "predicted_shift": 2.3706687456687456,
+      "width_coefficient": 8.935453496323822,
+      "predicted_width": 8.996849080009163
+    },
+    {
+      "source_residue_coefficient": 1.9948396593504585,
+      "predicted_source": 1.9992997955575917,
+      "q": 2.0943951023931957,
+      "ratio": 0.02,
+      "shift_coefficient": 2.3693015121437746,
+      "predicted_shift": 2.3706687456687456,
+      "width_coefficient": 8.98694521052403,
+      "predicted_width": 8.996849080009163
+    },
+    {
+      "source_residue_coefficient": 1.9981821734022964,
+      "predicted_source": 1.9992997955575917,
+      "q": 2.0943951023931957,
+      "ratio": 0.01,
+      "shift_coefficient": 2.370326008922003,
+      "predicted_shift": 2.3706687456687456,
+      "width_coefficient": 8.994370188839577,
+      "predicted_width": 8.996849080009163
+    }
+  ],
+  "scope": "Expanded dark-chain effective model, no full native lifetime theorem; q=pi excluded and q=pi/3 leading width cancellation not protected."
+}

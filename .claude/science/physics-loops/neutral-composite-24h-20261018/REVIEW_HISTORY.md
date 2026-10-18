@@ -15,3 +15,7 @@ Infrared block: independent symmetry/LSM, fermionic form-factor and native/effec
 
 
 Large-column block: exact internal factor, all-L minimal tunneling and scalar square/plane commutant checks PASS. Root independently reproduced commutant dimension4 (corrected preliminary3conjecture). Final scoped scientific/provenance reviewPASS. Noformal audit.
+
+Neutral-domain block: independent second/third/fourth canonical checks, exact rational kernels and conditional pole/bound math pass. Astra low package reviewer found uniform-O versus Fourier-source conflation; root derived centered Oq and cosq form factor, reviewer affected-fix PASS. All-L closure, native infinite-volume lifetime and physical identification remain open; no formal audit verdict.
+
+Final affected replay: all10probes passed44.324s with stable input identities; cache logs/runner-cache/native_neutral_domain_resonance.txt. Outputfile parent membership guard failure resolved by completed initial creation and unchanged-byte rerun, not bypassed. Focused review disposition pass for finite/conditional scope.

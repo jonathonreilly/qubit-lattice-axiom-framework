@@ -1,0 +1,86 @@
+[
+  {
+    "L": 12,
+    "mode": 0,
+    "q": 0.0,
+    "local_coefficient_error": 1.7319479184152442e-14,
+    "third_order_closure": 1.778549117467782e-14
+  },
+  {
+    "L": 12,
+    "mode": 1,
+    "q": 0.5235987755982988,
+    "local_coefficient_error": 1.8651765371382003e-14,
+    "third_order_closure": 1.681132972886432e-14
+  },
+  {
+    "L": 12,
+    "mode": 2,
+    "q": 1.0471975511965976,
+    "local_coefficient_error": 9.103828838866829e-15,
+    "third_order_closure": 1.0414316394502153e-14
+  },
+  {
+    "L": 12,
+    "mode": 3,
+    "q": 1.5707963267948966,
+    "local_coefficient_error": 1.4654943925052066e-14,
+    "third_order_closure": 1.3272886144681745e-14
+  },
+  {
+    "L": 12,
+    "mode": 4,
+    "q": 2.0943951023931953,
+    "local_coefficient_error": 7.549528450593057e-15,
+    "third_order_closure": 4.526331021731433e-14
+  },
+  {
+    "L": 16,
+    "mode": 0,
+    "q": 0.0,
+    "local_coefficient_error": 8.881784197001252e-15,
+    "third_order_closure": 1.471670004351505e-14
+  },
+  {
+    "L": 16,
+    "mode": 1,
+    "q": 0.39269908169872414,
+    "local_coefficient_error": 1.3322683360310218e-14,
+    "third_order_closure": 7.674026248349084e-15
+  },
+  {
+    "L": 16,
+    "mode": 2,
+    "q": 0.7853981633974483,
+    "local_coefficient_error": 1.1546395028426929e-14,
+    "third_order_closure": 4.670684627570613e-15
+  },
+  {
+    "L": 16,
+    "mode": 3,
+    "q": 1.1780972450961724,
+    "local_coefficient_error": 4.440920607661896e-15,
+    "third_order_closure": 6.946498943786867e-15
+  },
+  {
+    "L": 16,
+    "mode": 4,
+    "q": 1.5707963267948966,
+    "local_coefficient_error": 8.850235606129856e-15,
+    "third_order_closure": 2.2303058869322874e-14
+  },
+  {
+    "L": 16,
+    "mode": 5,
+    "q": 1.9634954084936207,
+    "local_coefficient_error": 4.218847644706439e-15,
+    "third_order_closure": 7.416195520852641e-14
+  },
+  {
+    "L": 16,
+    "mode": 6,
+    "q": 2.356194490192345,
+    "local_coefficient_error": 7.771572262378702e-15,
+    "third_order_closure": 3.8332059635453334e-12
+  }
+]

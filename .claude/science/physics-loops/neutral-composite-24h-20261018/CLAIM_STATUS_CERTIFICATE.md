@@ -13,3 +13,5 @@ bare_retained_allowed: false
 review_loop_disposition: pass
 
 Independent exact internal factor, all-L minimum-order proof, readout representation and final provenance checks pass. Four self-contained probes reproduce the exact/finite claims. Frozen32site occupation diagnostics are separate and not needed for these proofs. No formal audit or empirical fit.
+
+Neutral-domain block actual_current_surface_status: conditional-support. Finite rational entries exact-support; numerical closure bounded-support; infinite expanded-chain pole conditional-support. proposal_allowed:false; bare_retained_allowed:false. No physical scalar, gravity, matter coupling or observational identification.

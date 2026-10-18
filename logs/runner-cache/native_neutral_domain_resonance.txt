@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/native_neutral_domain_resonance.py
+runner_sha256: fe3dd66dab4df611129d460aeae8b137599a9a0a1292fa7d7849583c9399d8bd
+input_fingerprint_sha256: 51e99cb65832047650a143bbac6856bdd9c4e59e709f1ab45ad0a5a5d394e77b
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 44.32
+status: ok
+----- stdout -----
+reproduced neutral_kink_physical_q_source
+reproduced neutral_kink_full_third_check
+reproduced neutral_kink_q_certificate
+reproduced neutral_kink_source_dressing
+reproduced neutral_kink_fourth_rational
+reproduced neutral_kink_dark_rational
+reproduced neutral_kink_dark_third
+reproduced neutral_kink_dark_fourth_diagonal
+reproduced neutral_dark_bound_math
+reproduced neutral_kink_dark_resonance
+per_site: one physical qubit; no added interaction
+per_mode: finite native neutral domains and original composite source
+per_block: conditional expanded-chain resonance; isolated-state truncation corrected
+lattice_wide: all-length control, equal coupling, physical scalar and observations open
+
+----- stderr -----
+

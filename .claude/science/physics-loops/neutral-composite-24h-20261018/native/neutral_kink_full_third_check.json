@@ -1,0 +1,20 @@
+[
+  {
+    "ratio": 0.04,
+    "operator_error": 8.190355103350622e-06,
+    "error_over_ratio4": 3.1993574622463368,
+    "min_overlap_singular": 0.9990086688468097
+  },
+  {
+    "ratio": 0.02,
+    "operator_error": 5.075314562500889e-07,
+    "error_over_ratio4": 3.1720716015630557,
+    "min_overlap_singular": 0.9997582369940627
+  },
+  {
+    "ratio": 0.01,
+    "operator_error": 3.157264622140651e-08,
+    "error_over_ratio4": 3.157264622140651,
+    "min_overlap_singular": 0.9999402873768533
+  }
+]

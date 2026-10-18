@@ -1,0 +1,89 @@
+{
+  "rows": [
+    {
+      "q": 0,
+      "boundary_defect": -1.2447916666666667,
+      "hop": -0.09375,
+      "bulk": -0.13541666666666666,
+      "exists": true,
+      "shift": -1.3872690027894004,
+      "amplitude_ratio": 0.07531380753138076,
+      "boundary_weight": 0.9943278303951262,
+      "width_coefficient": 0.2796547022986292,
+      "readout_residue_coefficient": 1.9886556607902524
+    },
+    {
+      "q": 0.5235987755982988,
+      "boundary_defect": -1.1550457045110532,
+      "hop": -0.08118988160479113,
+      "bulk": -0.13541666666666666,
+      "exists": true,
+      "shift": -1.2961693287892289,
+      "amplitude_ratio": 0.07029148828284672,
+      "boundary_weight": 0.9950591066749824,
+      "width_coefficient": 0.1664150208013463,
+      "readout_residue_coefficient": 1.5997517043287757
+    },
+    {
+      "q": 1.0471975511965976,
+      "boundary_defect": -0.8281250000000002,
+      "hop": -0.046875000000000014,
+      "bulk": -0.13541666666666666,
+      "exists": true,
+      "shift": -0.9661949685534593,
+      "amplitude_ratio": 0.05660377358490566,
+      "boundary_weight": 0.9967960128159488,
+      "width_coefficient": 2.1280772017695314e-32,
+      "readout_residue_coefficient": 0.6645306752106327
+    },
+    {
+      "q": 1.5,
+      "boundary_defect": -0.15995171144125692,
+      "hop": -0.006631612656347147,
+      "bulk": -0.13541666666666666,
+      "exists": true,
+      "shift": -0.2956433253781188,
+      "amplitude_ratio": 0.041460091902690524,
+      "boundary_weight": 0.9982810607794205,
+      "width_coefficient": 0.5282901513702408,
+      "readout_residue_coefficient": 0.01866060335608176
+    },
+    {
+      "q": 1.5707963267948966,
+      "boundary_defect": 0.00520833333333318,
+      "hop": -5.740531871003218e-18,
+      "bulk": -0.13541666666666666,
+      "exists": true,
+      "shift": -0.13020833333333348,
+      "amplitude_ratio": -1.1021821192326503e-15,
+      "boundary_weight": 1.0,
+      "width_coefficient": 0.7954951288348656,
+      "readout_residue_coefficient": 1.4997597826618573e-32
+    },
+    {
+      "q": 1.6,
+      "boundary_defect": 0.08040278103927821,
+      "hop": 0.0027374552157458263,
+      "bulk": -0.13541666666666666,
+      "exists": true,
+      "shift": -0.054920684111702645,
+      "amplitude_ratio": 0.03404677276534166,
+      "boundary_weight": 0.9988408172642652,
+      "width_coefficient": 0.9305457119700413,
+      "readout_residue_coefficient": 0.0035089548839638105
+    },
+    {
+      "q": 2.0943951023931953,
+      "boundary_defect": 2.5052083333333313,
+      "hop": 0.046874999999999986,
+      "bulk": -0.13541666666666666,
+      "exists": true,
+      "shift": 2.370668745668744,
+      "amplitude_ratio": 0.018711018711018722,
+      "boundary_weight": 0.9996498977787959,
+      "width_coefficient": 8.996849080009154,
+      "readout_residue_coefficient": 1.9992997955575895
+    }
+  ],
+  "scope": "Conditional on native-derived dark halfline coefficients; not yet all-channel or all-order certificate"
+}

@@ -1,0 +1,45 @@
+{
+  "rows": [
+    {
+      "ratio": 0.2,
+      "pole_real": -0.4078978485542976,
+      "pole_imag": -0.00014967981656870122,
+      "full_width_over_ratio4": 0.18709977071087655,
+      "bare_residue_over_ratio2": 2.134334167757465,
+      "O_residue_over_ratio4": 2.139781125149594
+    },
+    {
+      "ratio": 0.1,
+      "pole_real": -0.20099747706864976,
+      "pole_imag": -1.282010542265794e-05,
+      "full_width_over_ratio4": 0.2564021084531588,
+      "bare_residue_over_ratio2": 2.033554513862967,
+      "O_residue_over_ratio4": 2.0338759075351263
+    },
+    {
+      "ratio": 0.05,
+      "pole_real": -0.1001249262823884,
+      "pole_imag": -8.592628273714317e-07,
+      "full_width_over_ratio4": 0.27496410475885813,
+      "bare_residue_over_ratio2": 2.008367903896044,
+      "O_residue_over_ratio4": 2.008387667094296
+    },
+    {
+      "ratio": 0.02,
+      "pole_real": -0.04000799925972535,
+      "pole_imag": -2.241928305048855e-08,
+      "full_width_over_ratio4": 0.2802410381311069,
+      "bare_residue_over_ratio2": 2.0013377269572517,
+      "O_residue_over_ratio4": 2.001338230533863
+    },
+    {
+      "ratio": 0.01,
+      "pole_real": -0.020000999976931454,
+      "pole_imag": -1.4049882270743404e-09,
+      "full_width_over_ratio4": 0.2809976454148681,
+      "bare_residue_over_ratio2": 2.0003343892615484,
+      "O_residue_over_ratio4": 2.0003344207139206
+    }
+  ],
+  "scope": "Pole of third-order derived halfline truncation. Coefficient extrapolation assumes bulk/locality of finite-derived matrices and controlled higher-order expansion; not full native model lifetime."
+}

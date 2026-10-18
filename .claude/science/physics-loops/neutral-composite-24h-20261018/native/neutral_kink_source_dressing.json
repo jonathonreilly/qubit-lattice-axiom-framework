@@ -1,0 +1,29 @@
+[
+  {
+    "L": 6,
+    "source_norm": 3.999999999999999,
+    "H1source_norm": 15.999999999999996,
+    "deltaO_support_values": [
+      -16
+    ],
+    "second_source_identity_residual": 0.0
+  },
+  {
+    "L": 8,
+    "source_norm": 4.0,
+    "H1source_norm": 16.0,
+    "deltaO_support_values": [
+      -16
+    ],
+    "second_source_identity_residual": 0.0
+  },
+  {
+    "L": 12,
+    "source_norm": 4.000000000000001,
+    "H1source_norm": 16.000000000000004,
+    "deltaO_support_values": [
+      -16
+    ],
+    "second_source_identity_residual": 0.0
+  }
+]

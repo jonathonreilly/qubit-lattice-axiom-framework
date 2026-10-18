@@ -1,0 +1,125 @@
+{
+  "rows": [
+    {
+      "q": 0.0,
+      "ratio": 0.05,
+      "shift_coefficient": -1.3791414245359244,
+      "predicted_shift": -1.3802083333333333,
+      "width_coefficient": 0.2742582010231198,
+      "predicted_width": 0.28125
+    },
+    {
+      "q": 0.0,
+      "ratio": 0.02,
+      "shift_coefficient": -1.3800397086017007,
+      "predicted_shift": -1.3802083333333333,
+      "width_coefficient": 0.28012715359069407,
+      "predicted_width": 0.28125
+    },
+    {
+      "q": 0.0,
+      "ratio": 0.01,
+      "shift_coefficient": -1.3801662513245843,
+      "predicted_shift": -1.3802083333333333,
+      "width_coefficient": 0.28096914090425273,
+      "predicted_width": 0.28125
+    },
+    {
+      "q": 0.5235987755982989,
+      "ratio": 0.05,
+      "shift_coefficient": -1.2888853677832297,
+      "predicted_shift": -1.29046237117772,
+      "width_coefficient": 0.16175052975460225,
+      "predicted_width": 0.1672413424338446
+    },
+    {
+      "q": 0.5235987755982989,
+      "ratio": 0.02,
+      "shift_coefficient": -1.2902121262605255,
+      "predicted_shift": -1.29046237117772,
+      "width_coefficient": 0.16635779425249078,
+      "predicted_width": 0.1672413424338446
+    },
+    {
+      "q": 0.5235987755982989,
+      "ratio": 0.01,
+      "shift_coefficient": -1.2903998840205138,
+      "predicted_shift": -1.29046237117772,
+      "width_coefficient": 0.16702027706832454,
+      "predicted_width": 0.1672413424338446
+    },
+    {
+      "q": 1.0471975511965979,
+      "ratio": 0.05,
+      "shift_coefficient": -0.9604260099255482,
+      "predicted_shift": -0.9635416666666666,
+      "width_coefficient": 4.907579785364847e-05,
+      "predicted_width": 5.7061320191010575e-83
+    },
+    {
+      "q": 1.0471975511965979,
+      "ratio": 0.02,
+      "shift_coefficient": -0.9630448216177341,
+      "predicted_shift": -0.9635416666666666,
+      "width_coefficient": 1.2556384779462601e-06,
+      "predicted_width": 5.7061320191010575e-83
+    },
+    {
+      "q": 1.0471975511965979,
+      "ratio": 0.01,
+      "shift_coefficient": -0.9634175148847749,
+      "predicted_shift": -0.9635416666666666,
+      "width_coefficient": 7.847090528771856e-08,
+      "predicted_width": 5.7061320191010575e-83
+    },
+    {
+      "q": 1.5707963267948966,
+      "ratio": 0.05,
+      "shift_coefficient": -0.12537578668970373,
+      "predicted_shift": -0.13020833333333334,
+      "width_coefficient": 0.8059765347875212,
+      "predicted_width": 0.795495128834866
+    },
+    {
+      "q": 1.5707963267948966,
+      "ratio": 0.02,
+      "shift_coefficient": -0.12943449447442612,
+      "predicted_shift": -0.13020833333333334,
+      "width_coefficient": 0.7971718163408468,
+      "predicted_width": 0.795495128834866
+    },
+    {
+      "q": 1.5707963267948966,
+      "ratio": 0.01,
+      "shift_coefficient": -0.13001485121112166,
+      "predicted_shift": -0.13020833333333334,
+      "width_coefficient": 0.7959142874428635,
+      "predicted_width": 0.795495128834866
+    },
+    {
+      "q": 2.0943951023931957,
+      "ratio": 0.05,
+      "shift_coefficient": 2.3614158072076434,
+      "predicted_shift": 2.3697916666666665,
+      "width_coefficient": 8.938589396591086,
+      "predicted_width": 9.0
+    },
+    {
+      "q": 2.0943951023931957,
+      "ratio": 0.02,
+      "shift_coefficient": 2.3684257858060955,
+      "predicted_shift": 2.3697916666666665,
+      "width_coefficient": 8.990093728693715,
+      "predicted_width": 9.0
+    },
+    {
+      "q": 2.0943951023931957,
+      "ratio": 0.01,
+      "shift_coefficient": 2.369449268234901,
+      "predicted_shift": 2.3697916666666665,
+      "width_coefficient": 8.997520508424202,
+      "predicted_width": 9.0
+    }
+  ],
+  "scope": "Truncated effective model, no full native lifetime theorem; q=pi excluded and q=pi/3 leading width cancellation not protected."
+}

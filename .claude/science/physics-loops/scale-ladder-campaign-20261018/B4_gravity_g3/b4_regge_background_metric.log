@@ -1,0 +1,44 @@
+
+== background tick length 1.1 : g0 = diag(1,1,1,1.21) ==
+[PASS] [tick length 1.1 : g0 = diag(1,1,1,1.21)] flat background: all deficits vanish
+       max |deficit| 4.4e-15
+[PASS] [tick length 1.1 : g0 = diag(1,1,1,1.21)] g0-displacement gauge directions are null at a generic momentum
+       1.2e-16
+   non-metric k=0 eigenvalues [-48.218182 -17.6      -15.309091 -15.309091   0.      ] (4 massive)
+   |Im|/|Re| 0.0e+00; gauge variation 2.6e-08; T = c*EH[g0], c = -0.55000000, residual 6.45e-09  (vs EH[delta]: residual 8.61e-02); sqrt(det g0)/2 = 0.55000000
+[PASS] [tick length 1.1 : g0 = diag(1,1,1,1.21)] leading effective symbol = c * EH[g0] (not EH[delta])
+       residual 6.45e-09
+   [100]: roots [(np.float64(1.21), 2), (np.float64(1.21), 2)]; EH[g0] cone predicts 1.210000000
+[PASS] [tick length 1.1 : g0 = diag(1,1,1,1.21)] [100]: both TT polarisations on the single g0 cone (multiplicity 2)
+   [110]: roots [(np.float64(1.210000001), 2), (np.float64(1.210000001), 2)]; EH[g0] cone predicts 1.210000000
+[PASS] [tick length 1.1 : g0 = diag(1,1,1,1.21)] [110]: both TT polarisations on the single g0 cone (multiplicity 2)
+   [111]: roots [(np.float64(1.210000001), 2), (np.float64(1.210000001), 2)]; EH[g0] cone predicts 1.210000000
+[PASS] [tick length 1.1 : g0 = diag(1,1,1,1.21)] [111]: both TT polarisations on the single g0 cone (multiplicity 2)
+
+== background anisotropic space: g0 = diag(1,1.2,0.9,1) ==
+[PASS] [anisotropic space: g0 = diag(1,1.2,0.9,1)] flat background: all deficits vanish
+       max |deficit| 6.2e-15
+[PASS] [anisotropic space: g0 = diag(1,1.2,0.9,1)] g0-displacement gauge directions are null at a generic momentum
+       1.7e-16
+   non-metric k=0 eigenvalues [-48.343463 -17.918348 -15.780907 -14.644207  -0.      ] (4 massive)
+   |Im|/|Re| 0.0e+00; gauge variation 1.9e-08; T = c*EH[g0], c = -0.51961524, residual 5.20e-09  (vs EH[delta]: residual 1.06e-01); sqrt(det g0)/2 = 0.51961524
+[PASS] [anisotropic space: g0 = diag(1,1.2,0.9,1)] leading effective symbol = c * EH[g0] (not EH[delta])
+       residual 5.20e-09
+   [100]: roots [(np.float64(1.0), 2), (np.float64(1.0), 2)]; EH[g0] cone predicts 1.000000000
+[PASS] [anisotropic space: g0 = diag(1,1.2,0.9,1)] [100]: both TT polarisations on the single g0 cone (multiplicity 2)
+   [110]: roots [(np.float64(0.916666667), 2), (np.float64(0.916666667), 2)]; EH[g0] cone predicts 0.916666667
+[PASS] [anisotropic space: g0 = diag(1,1.2,0.9,1)] [110]: both TT polarisations on the single g0 cone (multiplicity 2)
+   [111]: roots [(np.float64(0.981481483), 2), (np.float64(0.981481483), 2)]; EH[g0] cone predicts 0.981481481
+[PASS] [anisotropic space: g0 = diag(1,1.2,0.9,1)] [111]: both TT polarisations on the single g0 cone (multiplicity 2)
+
+== background S4-invariant tilt: g0 = I + 0.1 (J - I) ==
+[PASS] [S4-invariant tilt: g0 = I + 0.1 (J - I)] flat background: all deficits vanish
+       max |deficit| 1.2e-14
+[PASS] [S4-invariant tilt: g0 = I + 0.1 (J - I)] g0-displacement gauge directions are null at a generic momentum
+       5.3e-16
+   non-metric k=0 eigenvalues [-68.891454 -20.339007 -20.339007 -20.339007  12.065501] (5 massive)
+   |Im|/|Re| 0.0e+00; gauge variation 1.5e-07; T = c*EH[g0], c = -0.48674943, residual 3.85e-08  (vs EH[delta]: residual 1.71e-01); sqrt(det g0)/2 = 0.48674942
+[PASS] [S4-invariant tilt: g0 = I + 0.1 (J - I)] leading effective symbol = c * EH[g0] (not EH[delta])
+       residual 3.85e-08
+
+TOTAL: PASS=15 FAIL=0

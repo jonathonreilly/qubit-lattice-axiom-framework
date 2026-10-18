@@ -1,0 +1,95 @@
+[PASS] A1 SAW counts c_0..c_9 on Z^3 equal OEIS A001412 :: enumerated [1, 6, 30, 150, 726, 3534, 16926, 81390, 387966, 1853886]
+[PASS] A2 c_n <= 6*5^(n-1) for 1<=n<=9 :: ratios 1.000, 1.000, 1.000, 0.968, 0.942, 0.903, 0.868, 0.828, 0.791
+B: 120000 infinite-volume samples; mean |A(0)|=16.87, max L=19, max radius(K)=15, radius(K)<=L+1 always: True
+[PASS] B0 radius of K(0) <= L(0)+1 in every sample
+   n  mean#paths   c_n/(n+1)!    z
+   1     2.99752     3.00000  -0.43
+   2     4.99292     5.00000  -0.46
+   3     6.24651     6.25000  -0.14
+   4     6.05753     6.05000  +0.24
+   5     4.92388     4.90833  +0.49
+   6     3.37848     3.35833  +0.74
+   7     2.03744     2.01860  +0.91
+   8     1.06510     1.06913  -0.29
+   9     0.50407     0.51088  -0.76
+[PASS] B1 E[# decreasing paths of length n] = c_n/(n+1)!, |z|<4 for n=1..9
+   n  P(L>=n) emp     c_n/(n+1)!   6*5^(n-1)/(n+1)!  1/(n+1)! (lower)
+   1  8.566e-01      3.000e+00    3.000e+00        5.000e-01
+   2  7.267e-01      5.000e+00    5.000e+00        1.667e-01
+   3  6.125e-01      6.250e+00    6.250e+00        4.167e-02
+   4  5.001e-01      6.050e+00    6.250e+00        8.333e-03
+   5  3.957e-01      4.908e+00    5.208e+00        1.389e-03
+   6  2.976e-01      3.358e+00    3.720e+00        1.984e-04
+   7  2.093e-01      2.019e+00    2.325e+00        2.480e-05
+   8  1.342e-01      1.069e+00    1.292e+00        2.756e-06
+   9  7.753e-02      5.109e-01    6.459e-01        2.756e-07
+  10  4.029e-02      2.322e-01    2.936e-01        2.505e-08
+  11  1.847e-02      9.676e-02    1.223e-01        2.088e-09
+  12  7.808e-03      3.721e-02    4.705e-02        1.606e-10
+  13  2.925e-03      1.329e-02    1.680e-02        1.147e-11
+  14  1.025e-03      4.430e-03    5.601e-03        7.647e-13
+  15  3.000e-04      1.384e-03    1.750e-03        4.779e-14
+[PASS] B2 empirical P(L>=n) <= c_n/(n+1)! (+4 SE), n=1..15
+[PASS] B3 empirical P(L>=n) >= 1/(n+1)! (straight-path lower bound, -4 SE)
+   d  P_bad emp (two copies)   Gamma(d) exact-c   Gamma(d) crude 144/25*sum   ball c_m/(m+1)!
+   1  1.000e+00 +- 0.0e+00     1.126e+03          1.268e+03       1.000e+00
+   2  1.000e+00 +- 0.0e+00     1.126e+03          1.268e+03       1.000e+00
+   3  8.110e-01 +- 1.2e-03     1.125e+03          1.265e+03       1.000e+00
+   4  5.367e-01 +- 1.6e-03     1.119e+03          1.256e+03       1.000e+00
+   5  2.960e-01 +- 1.4e-03     1.100e+03          1.232e+03       1.000e+00
+   6  1.370e-01 +- 1.0e-03     1.057e+03          1.184e+03       1.000e+00
+   7  5.331e-02 +- 6.2e-04     9.826e+02          1.104e+03       1.000e+00
+   8  1.745e-02 +- 3.4e-04     8.740e+02          9.893e+02       1.000e+00
+   9  4.944e-03 +- 1.7e-04     7.382e+02          8.465e+02       1.000e+00
+  10  1.350e-03 +- 8.8e-05     5.893e+02          6.877e+02       1.000e+00
+  11  2.667e-04 +- 3.8e-05     4.435e+02          5.290e+02       1.000e+00
+  12  7.778e-05 +- 2.1e-05     3.146e+02          3.847e+02       1.000e+00
+  13  5.556e-06 +- 5.6e-06     2.104e+02          2.645e+02       1.000e+00
+  14  0.000e+00 +- 0.0e+00     1.329e+02          1.720e+02       1.000e+00
+[PASS] C1 two-copy intersection probability <= Gamma(d) (+4 SE), d=1..14
+   two-copy Gamma(d) < 1 from d = 22 (exact c_n) / 22 (crude); ball bound c_m/(m+1)! < 1/4 from d = 21
+   d=20: Gamma_crude=4.38e+00  ball=5.11e-01
+   d=30: Gamma_crude=3.18e-04  ball=4.43e-03
+   d=40: Gamma_crude=9.31e-10  ball=7.44e-06
+   d=60: Gamma_crude=8.27e-24  ball=6.67e-13
+[PASS] C2 crude closed form dominates exact-count Gamma for d=1..60
+[PASS] D1 [native(3,1,2)] X_x unchanged after resampling all noise outside K_x (10 trials, full recompute)
+[PASS] D2 [native(3,1,2)] X_x unchanged after resampling all noise outside B(x, L(x)+1)
+[PASS] D3 [native(3,1,2)] control: resampling noise on K_x minus x changes X_x in some trial (test not vacuous) :: 3/10 changed
+[PASS] D1 [copy-unanimous] X_x unchanged after resampling all noise outside K_x (10 trials, full recompute)
+[PASS] D2 [copy-unanimous] X_x unchanged after resampling all noise outside B(x, L(x)+1)
+[PASS] D3 [copy-unanimous] control: resampling noise on K_x minus x changes X_x in some trial (test not vacuous) :: 2/10 changed
+   [native(3,1,2)] C(0)=+0.3333, C(1)=+0.0531, C(2)=+0.0055, C(3)=+0.0003, C(4)=-0.0002, C(5)=+0.0000, C(6)=+0.0000; |C(d)| d>=8 max 3.0e-04
+[PASS] D4 [native(3,1,2)] torus pooled P(L(x)>=n) <= c_n/(n+1)! (+4 SE), n=1..15 :: P(L>=6)=2.99e-01 vs 3.36e+00
+[PASS] D5 [native(3,1,2)] |C(d)| <= 2*P_bad(d) (+ stat. tolerance), d=1..14 :: max |C|/(2 P_bad) over resolved d [1, 2] = 0.027
+   [ferro(20,1,1)] C(0)=+0.3333, C(1)=+0.1382, C(2)=+0.0409, C(3)=+0.0090, C(4)=+0.0018, C(5)=+0.0004, C(6)=+0.0001; |C(d)| d>=8 max 4.8e-04
+[PASS] D4 [ferro(20,1,1)] torus pooled P(L(x)>=n) <= c_n/(n+1)! (+4 SE), n=1..15 :: P(L>=6)=2.99e-01 vs 3.36e+00
+[PASS] D5 [ferro(20,1,1)] |C(d)| <= 2*P_bad(d) (+ stat. tolerance), d=1..14 :: max |C|/(2 P_bad) over resolved d [1, 2, 3, 4] = 0.069
+   [copy-unanimous] C(0)=+0.3333, C(1)=+0.0251, C(2)=+0.0031, C(3)=+0.0004, C(4)=-0.0002, C(5)=-0.0000, C(6)=-0.0002; |C(d)| d>=8 max 3.8e-04
+[PASS] D4 [copy-unanimous] torus pooled P(L(x)>=n) <= c_n/(n+1)! (+4 SE), n=1..15 :: P(L>=6)=2.97e-01 vs 3.36e+00
+[PASS] D5 [copy-unanimous] |C(d)| <= 2*P_bad(d) (+ stat. tolerance), d=1..14 :: max |C|/(2 P_bad) over resolved d [1, 2] = 0.013
+E: 16 tori L=32, pooled per-plane SE of the mean = 0.0093
+   h  <v_x>(h)        2*P(K_x meets slab) [MC, part B]   analytic 2*c_(h-1)/h!
+   1  +0.8864+-0.0066   2.000e+00                          2.000e+00
+   2  +0.2639+-0.0066   1.299e+00                          2.000e+00
+   3  +0.0481+-0.0069   7.064e-01                          2.000e+00
+   4  +0.0022+-0.0084   2.836e-01                          2.000e+00
+   5  +0.0050+-0.0079   8.278e-02                          2.000e+00
+   6  +0.0019+-0.0066   1.672e-02                          2.000e+00
+   7  +0.0031+-0.0075   3.000e-03                          2.000e+00
+   8  +0.0016+-0.0073   4.167e-04                          2.000e+00
+   9  -0.0049+-0.0066   1.667e-05                          2.000e+00
+  10  -0.0157+-0.0070   0.000e+00                          1.022e+00
+  11  -0.0106+-0.0077   0.000e+00                          4.644e-01
+  12  -0.0055+-0.0074   0.000e+00                          1.935e-01
+  13  -0.0030+-0.0077   0.000e+00                          7.443e-02
+  14  -0.0035+-0.0066   0.000e+00                          2.658e-02
+  15  -0.0031+-0.0066   0.000e+00                          8.861e-03
+  16  -0.0071+-0.0071   0.000e+00                          2.769e-03
+[PASS] E1 ferro(20,1,1), fixed +x slab: |<v_x>(h)| <= 2 P(K_x meets slab) (+tol), h=1..16
+[PASS] E2 same, against the analytic 2 c_(h-1)/h! (nontrivial only for h >= 12) :: <v_x>(1)=+0.886, <v_x>(4)=+0.0022
+TOTAL: PASS=22 FAIL=0  (74 s, seed 20261018, quick=False)
+
+real	1m14.306s
+user	1m0.860s
+sys	0m0.153s

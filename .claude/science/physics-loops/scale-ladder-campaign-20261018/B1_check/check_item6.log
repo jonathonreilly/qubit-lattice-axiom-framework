@@ -1,0 +1,41 @@
+== (a) DP Weyl automaton
+ unitary: 4.446811232024849e-16
+ sign -1: residual of 8-neighbour BCC fit 7.4e-15; transfer matrices rank [np.int64(1), np.int64(1), np.int64(1), np.int64(1), np.int64(1), np.int64(1), np.int64(1), np.int64(1)]
+ sign +1: residual of 8-neighbour BCC fit 3.2e-15; transfer matrices rank [np.int64(1), np.int64(1), np.int64(1), np.int64(1), np.int64(1), np.int64(1), np.int64(1), np.int64(1)]
+ eigenphases of U equal +-arccos(ccc - sss) (sign -1 branch): 7.771561172376096e-16
+ max |v| = 0.7070; max |v_i| = 0.5773 (cube bound 1/sqrt3 = 0.5774); max |v|_1 = 1.2246
+ signed perms leaving omega invariant: 24, of which proper: 12, contains inversion: False
+  |k|=0.02: mean phase speed 0.5773297, rel spread 0.00444
+  |k|=0.01: mean phase speed 0.5773469, rel spread 0.00222
+  |k|=0.005: mean phase speed 0.5773481, rel spread 0.00111
+== (b) corner step
+ cell edge types: 36 {'on': 24, 'link': 12}
+ all 24 link 4-cycles (plaquettes) have flux pi: True
+ max |H_link(k)^2 - 2| over 500 random k: 4.440892098500626e-16
+ diag of H_link(k) zero (trace 0): True
+ on-site hopping eigenvalues: [-2.7321 -2.7321 -2.7321 -2.7321  0.7321  0.7321  0.7321  0.7321  2.
+  2.      2.      2.    ]
+ PSG rotations map k*-space to itself (unitary 12x12): True
+ commutant dim at k* = (1/24) sum |chi|^2 = 6.0 (E1/2+E5/2+2G3/2 -> 6)
+ W(k*) commutes with all 24 rho: True
+ real-space W unitary, commutes with 24 PSG rotations and 3 translations: True True
+ exact node dimension: 6
+ exact: M(q)^3 - (|q|^2/3) M(q) == 0: True ; tr M(q)^2 = 4*(q_x**2 + q_y**2 + q_z**2)/3 ; tr M(q) = 0
+ eigenvalue-1 multiplicity at random k: [2, 2, 2, 2, 2] ; +1 dims of R1,R2: 6 8
+ commutant restricted to node, eigenvalues: [-20.5457 -20.5457   8.9436   8.9436   8.9436   8.9436]
+  dir [1. 0. 0.]: ||P_D T P_D|| = 4.4e-16, ||P_D T P_G|| = 0.456
+  dir [0. 1. 0.]: ||P_D T P_D|| = 4.7e-16, ||P_D T P_G|| = 0.456
+  dir [0. 0. 1.]: ||P_D T P_D|| = 2.3e-16, ||P_D T P_G|| = 0.406
+  d=[1 0 0] q=0.01: |phase|/q [0.         0.         0.57734867 0.57734867 0.57734867 0.57734867]
+  d=[1 0 0] q=0.001: |phase|/q [0.         0.         0.57735025 0.57735025 0.57735025 0.57735025]
+  d=[0.577 0.577 0.577] q=0.01: |phase|/q [0.         0.         0.57735027 0.57735027 0.57735027 0.57735027]
+  d=[0.577 0.577 0.577] q=0.001: |phase|/q [0.         0.         0.57735027 0.57735027 0.57735027 0.57735027]
+  d=[0.447 0.894 0.   ] q=0.01: |phase|/q [0.         0.         0.57734944 0.57734944 0.57734944 0.57734944]
+  d=[0.447 0.894 0.   ] q=0.001: |phase|/q [0.         0.         0.57735026 0.57735026 0.57735026 0.57735026]
+== (c) no-go lemma
+ constant-spectrum symmetric factors: 24 isolated doublets, max half-splitting/q = 8.9e-09
+ i[H_link, H_on] commutes with PSG rotations (real space): True 0.6
+  spectrum of exp(-i th H(k)) k-dependent: True
+  spectrum of exp(-i th H(k)) k-dependent: True
+ k-dependent-spectrum factor exp(-i th H(k)): isolated doublet speeds [0. 0. 0. 0.]
+EXIT 0

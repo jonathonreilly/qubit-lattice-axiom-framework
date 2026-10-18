@@ -1,7 +1,7 @@
 ---
 claim_id: scale_ladder_cross_rung_invariants_corner_fermion_bounded_theorem_note_2026-10-18
 claim_type: bounded_theorem
-claim_scope: "Supplied model: the corner fermion of the companion notes (flux square = plaquette = tube = pi, triangle = 0, translation-invariant gauge, L = 4 torus, number-conserving one-fermion Hamiltonians). (1) Exact on the L = 4 torus, by exhaustive computation: each of the 24 twisted site rotations maps every 12-dimensional Bloch space onto exactly one Bloch space, by k -> R k + pi s_R with one shift vector s_R per rotation (all eight shift classes occur), and exactly the two momenta k* = (pi/2)(1,-1,1) and -k* are fixed by all 24. (2) Exact representation statement with numerical certificate: the twelve Bloch states at k* (and at -k*) form a linear representation of the binary octahedral group 2O, after the GF(2) lift of the companion note, in which the central element acts as -1, decomposing as E1/2 + E5/2 + 2 G3/2. Consequently every one-fermion Hamiltonian on this torus that commutes with the gauge-dressed (projective-symmetry-group) operators of the 24 site rotations and with the translations has, at k* and -k*, only levels of even multiplicity carrying spin-1/2-class irreps; the runner illustrates this with six random symmetric Hamiltonians of strength 1 and every range on the torus, and a control at Gamma (not rotation-fixed) shows odd multiplicities. (3) Numerical, runner parameter point (t1 = -1, t2 = 0.2, the runner's conjugation-odd term X at strength 0.05; the speed v scales with that term): the Weyl cone at k* has relative angular spread of its speed 2.60e-4, 6.49e-5, 1.62e-5 at |q| = 0.04, 0.02, 0.01 (ratio 4.00 per halving); the O-invariance argument that a rank-2 symmetric tensor and the linear spinor coupling are isotropic is standard. (4) Representation argument with numerical illustration: when, in addition, the site inversion and the translations up to the staggered sign (-1)^(x+y+z) are kept, every level of the 24 x 24 folded Hamiltonian at k* has multiplicity divisible by 4 (Schur: inversion anticommutes with the w1-odd rotations in the PSG and maps the E1/2 sector onto E5/2; three backgrounds with random uniform and staggered symmetric terms of strength 0.3 added to the Weyl model), so no node quartet splits at any strength or order within this symmetry class (splitting is necessary, not sufficient, for a Dirac mass); an A2 imaginary staggered on-site term of strength eps (rotations reduced to T about a site) splits every quartet with gap/eps constant within the runner's 4e-3 tolerance for eps = 2e-3, 1e-3, 5e-4; with inversion broken but rotations kept, every level stays even and some are 2-fold. (5) Exact group theory: symmetric rank-2 tensors on (t,x,y,z) invariant under the 4D hyperoctahedral group (384 signed permutations) form a one-dimensional space, and under spatial O_h times time reversal (96 elements) a two-dimensional space; this is a sufficient symmetry for one common speed, not a necessary one. Not claimed: completeness of the sampled symmetric families, any interaction or many-body statement, infinite-volume or general-L statements beyond the stated representation arguments, any coarse-graining map from a one-qubit-per-site rung producing this model, a common speed across different fields, or any physical identification."
+claim_scope: "Supplied model: the corner fermion of the companion notes (flux square = plaquette = tube = pi, triangle = 0, translation-invariant gauge, L = 4 torus, number-conserving one-fermion Hamiltonians). (1) Exact on the L = 4 torus, by exhaustive computation: each of the 24 twisted site rotations maps every 12-dimensional Bloch space onto exactly one Bloch space, by k -> R k + pi s_R with one shift vector s_R per rotation (all eight shift classes occur), and exactly the two momenta k* = (pi/2)(1,-1,1) and -k* are fixed by all 24. (2) Exact representation statement with numerical certificate: the twelve Bloch states at k* (and at -k*) form a linear representation of the binary octahedral group 2O, after the GF(2) lift of the companion note, in which the central element acts as -1, decomposing as E1/2 + E5/2 + 2 G3/2. Consequently every one-fermion Hamiltonian on this torus that commutes with the gauge-dressed (projective-symmetry-group) operators of the 24 site rotations and with the translations has, at k* and -k*, only levels of even multiplicity carrying spin-1/2-class irreps; the runner illustrates this with six random symmetric Hamiltonians of strength 1 and every range on the torus, and a control at Gamma (not rotation-fixed) shows odd multiplicities. (3) Numerical, runner parameter point (t1 = -1, t2 = 0.2, the runner's conjugation-odd term X at strength 0.05; the speed v scales with that term): the Weyl cone at k* has relative angular spread of its speed 2.60e-4, 6.49e-5, 1.62e-5 at |q| = 0.04, 0.02, 0.01 (ratio 4.00 per halving); the O-invariance argument that a rank-2 symmetric tensor and the linear spinor coupling are isotropic is standard. (4) Representation argument with numerical illustration: when, in addition, the site inversion and the translations up to the staggered sign (-1)^(x+y+z) are kept, every level of the 24 x 24 folded Hamiltonian at k* has multiplicity divisible by 4 (Schur: inversion anticommutes with the w1-odd rotations in the PSG and maps the E1/2 sector onto E5/2; three backgrounds with random uniform and staggered symmetric terms of strength 0.3 added to the Weyl model), so no node quartet splits at any strength or order within this symmetry class (splitting is necessary, not sufficient, for a Dirac mass); an A2 imaginary staggered on-site term of strength eps (rotations reduced to T about a site) splits every quartet with gap/eps constant within the runner's 4e-3 tolerance for eps = 2e-3, 1e-3, 5e-4; with inversion broken but rotations kept, every level stays even and some are 2-fold. (5) Exact group theory: symmetric rank-2 tensors on (t,x,y,z) invariant under the 4D hyperoctahedral group (384 signed permutations) form a one-dimensional space, and under spatial O_h times time reversal (96 elements) a two-dimensional space; this is a sufficient symmetry for one common speed, not a necessary one. (6) Parameter-free step rules: the minimal Weyl automaton (D'Ariano-Perinotti) has speed 1/sqrt3 with no parameter, maximal group speed exactly 1/sqrt2 (one-step cone |v_i| <= 1/sqrt3), and relative anisotropy linear in |k| (dispersion invariant under T_d, not under the w1-odd rotations); the corner step W = (H_link/sqrt2)(1 - 2 P_2), with P_2 the eigenvalue-2 space of the on-site corner hopping, is an exact local unitary in infinite volume (H_link(k)^2 = 2 for all k), commutes with the gauge-dressed rotations and translations, has no continuous parameter, and at k* has a 6-fold node G3/2 + E1/2 whose four dispersing bands leave at +-|q|/sqrt3 (each 2-fold; anisotropy falling as |q|^2) with two exactly flat bands forced by a dimension count; exact lemma: in the algebra generated by operators commuting with the gauge-dressed rotations and translations and having k-independent spectra (on-site operators, reflections), every exactly 2-fold spin-1/2 level at k* has zero velocity; the diagonal-shift step S ({d,e} at v -> {d,e} at v+d+e, a symmetric signed permutation) escapes it, and S R_link U with Clifford-phase on-site U has isolated isotropic spin-1/2 Weyl nodes at +-k* (speed sqrt2/3, chirality +-1, anisotropy ~ |q|^2) with six further anisotropic Weyl nodes at the other points (pi/2)(+-1,+-1,+-1), net chirality zero, and no other states at the node quasi-energy. Not claimed: completeness of the sampled symmetric families, any interaction or many-body statement, infinite-volume or general-L statements beyond the stated representation arguments, any coarse-graining map from a one-qubit-per-site rung producing this model, a common speed across different fields, or any physical identification."
 upstream_dependencies:
   - corner_fermion_massless_dirac_pair_protected_by_cube_rotations_and_pseudoscalar_dirac_mass_bounded_theorem_note_2026-10-17
   - corner_fermion_long_wavelength_theory_is_one_isotropic_spin_half_doublet_and_one_qubit_block_embedding_bounded_theorem_note_2026-10-17
@@ -42,11 +42,56 @@ A ladder is useful only if some data provably survives the climb, so that a stat
    - So within this symmetry class no node quartet splits, at any strength or order. Splitting is necessary for a Dirac mass but not sufficient: see the control below. The runner illustrates this with three backgrounds that add random symmetric uniform and staggered terms of strength 0.3.
    - An A2 imaginary staggered term of strength ε reduces the site rotations to T and splits every quartet. The gap/ε is constant within the runner's 4e−3 tolerance for ε = 2e−3, 1e−3 and 5e−4; the checker measured changes of 2e−6 to 2e−9 between halvings. The sampled A2 term is not itself inversion-symmetric.
    - Control: with the rotations kept and inversion broken, every level stays even but some become 2-fold. Inversion partners split, while the doublets stay pinned Weyl points. This splitting is not a mass: the rotations alone keep k* gapless.
+   - **Scope: one-fermion only.** A campaign block on filling constraints (B7, same-model-family worker, loop pack `B7_corner_LSM`) adds two things.
+     - **Odd filling per site.** With translations and three mutually commuting C2s, the gauge-dressed lifts of two commuting C2s anticommute on the whole one-particle space. So every level at a momentum fixed by both (k* for O) is even, and odd filling per site is forced gapless for free fermions. The worker's result was independently checked; corrections are in `B7_check`.
+     - **Interactions can escape.** In the doubled-cell class used here (site rotations and inversion about one site, plus the even translations), an entangled, symmetric pair state is a short-range-entangled insulator at one fermion per site. So the quartet protection is a free-fermion statement; symmetric interacting mass generation is not excluded by anomaly counting.
 5. **What fixes a common speed (exact group theory).**
    - Only one symmetric rank-2 tensor on (t,x,y,z) is invariant under the 4D hyperoctahedral group of signed permutations of all four axes: the identity.
    - Under spatial O_h times time reversal there are two, δ_00 and δ_ij.
    - So for a leading kinetic term K_μν k_μ k_ν, putting time on the same footing as space is sufficient for one common speed across fields. With only spatial O_h and time reversal, each field's speed is a separate parameter unless something else fixes it, for example a flow to a Lorentz-invariant fixed point.
    - The checker extended the counts by exact group averages. General rank-2 tensors (the Dirac form γ_μ k_ν) give 1 against 2; quadratic forms in F_μν give 1 against 2; symmetric rank-4 tensors give 2 against 4. So the first hypercubic violation is at k⁴.
+
+6. **Parameter-free step rules: speed from the grid alone.**
+   - **The minimal Weyl automaton** (D'Ariano and Perinotti 2014) is a one-step-per-tick rule on the BCC lattice with no tunable coupling. Its eigenphases are ±arccos(c_x c_y c_z − s_x s_y s_z), with c_i = cos(k_i/√3) and s_i = sin(k_i/√3); this is one of the mirror pair.
+     - **Speed.** 1/√3, a pure number from the geometry.
+     - **Causal limit.** The fastest group speed is exactly 1/√2. The one-step causal limit is the cube |v_i| ≤ 1/√3, which the automaton saturates componentwise.
+     - **Anisotropy and symmetry.** Anisotropy falls only linearly in |k|. The dispersion is invariant under 24 of the 48 signed permutations (T_d, proper part T). The term k_x k_y k_z, odd under the w1-odd rotations, is allowed.
+     - **What removes the linear term** is full octahedral symmetry at the node; inversion alone does not.
+   - **The corner reflection step** W = (H_link/√2)·(1 − 2P₂), where P₂ is the eigenvalue-2 space of the on-site corner hopping.
+     - **It is exact.** H_link(k)² = 2 at every k, in infinite volume. Proof: each corner {a,b} at v has exactly two link neighbours, {−a,b} at v+a and {a,−b} at v+b. The only off-diagonal two-step endpoint is {−a,−b} at v+a+b. It is reached by two paths that bound a π-flux link plaquette, so they cancel.
+     - **It is symmetric.** It commutes with the gauge-dressed rotations and the translations.
+     - **Its only choices are discrete:** which on-site eigenspace to reflect.
+     - **The node at k*** is 6-fold, G3/2 + E1/2, all spin-½ class.
+       - The first-order matrix M(q) on the node satisfies M³ = (|q|²/3)M exactly (checked symbolically). So four bands leave at exactly ±|q|/√3, each 2-fold, with anisotropy falling as |q|².
+       - Two bands are exactly flat, forced by dimension: the +1 spaces of the two reflections have dimensions 6 and 8 in 12.
+       - This is the spin-1 ⊗ spin-½ six-fold type, not a Dirac electron.
+   - **Lemma: no moving isolated spin-½ doublet from constant-spectrum factors (exact).**
+     - **Statement.** Let a step (or a Hamiltonian) lie in the algebra generated by operators that commute with the gauge-dressed rotations and the translations and have k-independent spectra. Then every spin-½ level of it at k* that is exactly 2-fold has zero velocity.
+     - **Proof.**
+       - E1/2 and E5/2 each occur once at k*. So an isolated doublet D lies inside a whole eigenspace E of every generator at k*.
+       - For a generator F = Σλ_i P_i(k) with constant λ_i, P_j ∂P_i P_j = 0 for all i, j. So the projection of ∂F onto E vanishes, and hence onto D.
+       - The map G ↦ P_D ∂G P_D is a derivation on this algebra, because the generators act on D as scalars at k*. So it vanishes on every product and sum of generators.
+     - **Numerical illustration.** Random symmetric on-site unitaries between link reflections give a largest doublet half-splitting/q of 2e−9. The checker found the same for many more mixed products: 24 isolated doublets, maximum 8.9e−9. The original corner Hamiltonian H0(t1,t2) also has exactly zero doublet velocity, which is why the Weyl model needed its supplied term X.
+     - **What escapes it.**
+       - **Multifold nodes**, like the six-fold node above, where the doublet mixes with G3/2.
+       - **A symmetric factor with a k-dependent spectrum** that lies outside the algebra.
+       - **Non-symmetric layers** whose product is symmetric.
+       - **Giving up the full octahedral symmetry at the node**, which admits linear anisotropy.
+   - **A parameter-free Weyl step: the diagonal shift.** Each corner {d,e} has a natural move along its own face diagonal d+e, one of the 12 FCC directions. The map S: {d,e} at v → {d,e} at v+d+e, with gauge signs fixed by symmetrising one hop, is a signed permutation. So it is exactly unitary in infinite volume and commutes with the gauge-dressed rotations and translations. Its spectrum depends on k, so it escapes the lemma.
+     - **Weyl nodes at k*.** Steps S·U, S·R_L·U and R_L·S·U, with U an on-site Clifford-phase function of the on-site hopping and the chiral triangle operator Λ, give isolated spin-½ Weyl doublets at k*:
+       - speed √2/3 = 0.4714045, with anisotropy falling as |q|²;
+       - Berry flux ±1;
+       - no flat bands.
+     - **Example 1:** S·exp(iπ/2·Q_top), with Q_top the top eigenspace of Λ. The node sits at quasi-energy π/2, but other bands cross π/2 on surfaces elsewhere in the zone, so it is not isolated.
+     - **Example 2:** S·R_L·U_H·U_Λ, with two Clifford-phase on-site factors (labels H23 and L110 in the scan). The node quasi-energy is ±π/2, depending on the phase conventions; the runner finds π/2. It is reached only at the eight points (π/2)(±1,±1,±1): a refined search in exploration, and a coarse grid in the runner (minimum distance to it elsewhere > 0.05). So this is a clean eight-node Weyl semimetal at that quasi-energy.
+       - The two octahedrally fixed nodes ±k* are isotropic spin-½ Weyl nodes, speed √2/3, chirality ±1.
+       - The other six are anisotropic Weyl nodes (speed spread about 0.3), chiralities three +1 and three −1. The net is zero.
+       - These eight points are exactly the momenta at which commuting C2 lifts force even levels (campaign block B7, independently checked). The six extra nodes are the analogue of the 2³ doublers of naive lattice fermions.
+     - **Search result (not a no-go).** The family searched was S·U, S·R_L·U and R_L·S·U with Clifford-phase on-site U: about 12,000 steps, 3,738 with Weyl doublets at k*.
+       - 4,476 node/step combinations have no level at the node quasi-energy at the other cube or high-symmetry points.
+       - All of those have other bands crossing the node quasi-energy elsewhere: the best minimum distance on a 12³ grid away from ±k* is 0.007.
+       - So in this family a clean node quasi-energy comes only with the six doublers, and the doublers sit where commuting C2 lifts force even levels.
+       - Whether a parameter-free symmetric step can have only the two spin-½ nodes is open. The Clifford-phase pinning of levels to multiples of π/2 at the cube points is a plausible cause, not established.
 
 ## How the ladder looks from five directions (interpretation, not claims)
 
@@ -160,21 +205,34 @@ The ladder does unify the lanes, but not by deriving everything from the finest 
 
 **The answer the probes converge on.** Three lanes independently hit the same wall: a common light cone.
 - Per-field isotropy is free.
-- A common speed across fields is not, and neither is spin-2 isotropy, when time is treated apart from space: item 5 and the gravity probe's g3.
-- With time on the same footing as space, as a 4D hypercubic step of a transfer matrix, the invariant kinetic tensor is unique. One speed then serves the Weyl/Dirac, gauge and spin-2 fields at leading order, and hypercubic violation starts at k⁴ (dimension six), suppressed by (a/w)². This is how Euclidean lattice field theory recovers Lorentz invariance. It is a sufficient route, not the only one: a Chadha–Nielsen flow is the alternative.
-- It holds only under conditions:
-  - the group acts on spinors through its double cover;
-  - the redundancies are exact (gauge for spin 1; linearised diffeo for spin 2, which the repo has only locus-closed);
-  - the time step equals the spacing (anisotropic lattices need speed tuning per species);
-  - the symmetry is not spontaneously broken.
-- **Doublers.** A symmetric 4D fermion step brings doublers in the time direction too. Removing them Wilson-style keeps reflection positivity and the hypercubic group, but breaks the w1-odd protection of item 4, so mass tuning returns.
-- **The corner model is not such a step.** It is a 3D Hamiltonian π-flux model. A 4D version would be a different model, its reflection positivity is untested, and its Weyl speed would have to equal 1.
-- Real-time physics then also needs reflection positivity, so the transfer matrix defines a Hamiltonian. That is the Maxwell lane's open transfer route, and it would also supply conservation.
+- A common speed across fields is not, and neither is spin-2 isotropy, when each field's speed is a tunable coupling. In the corner Hamiltonian the speed scales with a supplied term; the Maxwell probe found a coin with two light cones.
+- The grid's own speed limit does not help. A local qubit grid does give a hard limit (one site per step for a circuit; a Lieb–Robinson bound for a Hamiltonian). But a limit is a ceiling that fields can sit below at different speeds, not a common speed.
 
-**The single highest-leverage primitive** is therefore a reflection-positive transfer step with 4D hypercubic symmetry, acting on the one-qubit-per-site grid. It is a target to derive or propose to the owner, not an adopted axiom. If supplied, it would discharge at once:
-- the common-cone obligations of the electron, Maxwell and gravity lanes;
-- Maxwell items 2 and 6;
-- the Collins fine-tuning at dimension four, given the conditions above.
+**The information-minimal target.** One local step rule on the base grid with no continuous parameters, from which every field is built. Then:
+- each speed is a pure number fixed by the grid geometry (item 6);
+- composites of collinear constituents inherit it;
+- full octahedral symmetry at the node pushes anisotropy to (a/w)².
+
+This replaces a heavier earlier formulation: a reflection-positive transfer step with 4D hypercubic symmetry (item 5). That remains a sufficient alternative, with these conditions:
+- the group acts on spinors through its double cover;
+- the redundancies are exact;
+- the time step equals the spacing;
+- the symmetry is not spontaneously broken;
+- the doubler trade-off: removing time doublers Wilson-style breaks the w1-odd protection.
+
+It is a target to derive or propose to the owner, not an adopted axiom.
+
+**What item 6 adds.** The corner model supports parameter-free, symmetric, exactly unitary step rules whose speeds are pure numbers fixed by the grid.
+
+- **The reflection step** has a spin-½-class six-fold node at speed exactly 1/√3.
+- **The diagonal-shift step** has genuine isotropic spin-½ Weyl nodes at ±k*, speed √2/3. Like naive lattice fermions, they come with doublers: six anisotropic Weyl nodes at the other cube points.
+- **The lemma** shows why the shift is needed: an isolated spin-½ doublet cannot move under any symmetric operator algebra generated by constant-spectrum factors.
+
+The open problem is now concrete: a parameter-free symmetric step whose node quasi-energy is reached only at ±k*, or a proof that the doublers are forced. A search of about 12,000 Clifford-phase steps found none.
+
+**Next tests of common origin.**
+- Is a gauge-like field built from the same rule (for example, a bilinear of its cone states) a second field with the same speed?
+- Do interactions keep the speeds together?
 
 **The other shared primitives the ladder isolates.**
 - **Exact redundancies at the coarse rung.** Gauss is exact; diffeo is only locus-closed.
@@ -232,6 +290,11 @@ A fresh-context agent of the same model family checked the note; it is not an in
 - **Multiscale and holographic codes.**
   - Vidal, PRL 99, 220405 (2007).
   - Swingle, PRD 86, 065007 (2012).
+- **Quantum cellular automata for Weyl and Dirac fields.**
+  - D'Ariano and Perinotti, PRA 90, 062106 (2014).
+  - Bisio, D'Ariano and Perinotti, Ann. Phys. 368, 177 (2016), on photons as pairs of Weyl quanta.
+- **Lieb–Robinson bounds.** Lieb and Robinson, Commun. Math. Phys. 28, 251 (1972).
+- **Multifold fermions.** Bradlyn et al., Science 353, aaf5037 (2016).
   - Almheiri, Dong and Harlow, JHEP 04 (2015) 163.
 - **Quantum Darwinism.** Zurek, Nat. Phys. 5, 181 (2009).
 - **Reflection positivity of lattice gauge theories.** Osterwalder and Seiler, Ann. Phys. 110, 440 (1978).
@@ -244,6 +307,9 @@ A fresh-context agent of the same model family checked the note; it is not an in
   - The fixed-momentum spinor statement for every symmetric corner-fermion Hamiltonian.
   - The O × I protection of the Dirac quartet at every strength.
   - The cone anisotropy scaling.
+  - The parameter-free corner step and its six-fold node.
+  - The doublet no-go lemma for the algebra of symmetric constant-spectrum operators.
+  - The diagonal-shift Weyl step and its eight-node structure.
   - The cross-lane reading.
 
 ## No-Go Discipline Gate
@@ -264,7 +330,7 @@ A fresh-context agent of the same model family checked the note; it is not an in
 python3 scripts/scale_ladder_corner_fermion_cross_rung_invariants_2026_10_18.py
 ```
 
-Expected: `TOTAL: PASS=12 FAIL=0` (about three minutes).
+Expected: `TOTAL: PASS=18 FAIL=0` (about three minutes).
 
 ## Load-bearing sources
 

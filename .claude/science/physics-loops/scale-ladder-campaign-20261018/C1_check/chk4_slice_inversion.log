@@ -1,0 +1,24 @@
+   C2x affine shift theta_z = -1 pi
+   empty          jumps at k_z=+-pi/2: {}  C2x-compatible integer nu: True
+   k*             jumps at k_z=+-pi/2: {1: -1}  C2x-compatible integer nu: False
+   -k*            jumps at k_z=+-pi/2: {-1: 1}  C2x-compatible integer nu: False
+   A              jumps at k_z=+-pi/2: {1: 2, -1: 1}  C2x-compatible integer nu: False
+   B              jumps at k_z=+-pi/2: {-1: -2, 1: -1}  C2x-compatible integer nu: False
+   k*+-k*         jumps at k_z=+-pi/2: {1: -1, -1: 1}  C2x-compatible integer nu: False
+   k*+A           jumps at k_z=+-pi/2: {1: 1, -1: 1}  C2x-compatible integer nu: False
+   k*+B           jumps at k_z=+-pi/2: {1: -2, -1: -2}  C2x-compatible integer nu: False
+   -k*+A          jumps at k_z=+-pi/2: {-1: 2, 1: 2}  C2x-compatible integer nu: False
+   -k*+B          jumps at k_z=+-pi/2: {-1: -1, 1: -1}  C2x-compatible integer nu: False
+   A+B            jumps at k_z=+-pi/2: {1: 1, -1: -1}  C2x-compatible integer nu: False
+   k*+-k*+A       jumps at k_z=+-pi/2: {1: 1, -1: 2}  C2x-compatible integer nu: False
+   k*+-k*+B       jumps at k_z=+-pi/2: {1: -2, -1: -1}  C2x-compatible integer nu: False
+   k*+A+B         jumps at k_z=+-pi/2: {1: 0, -1: -1}  C2x-compatible integer nu: False
+   -k*+A+B        jumps at k_z=+-pi/2: {-1: 0, 1: 1}  C2x-compatible integer nu: False
+   k*+-k*+A+B     jumps at k_z=+-pi/2: {1: 0, -1: 0}  C2x-compatible integer nu: True
+[PASS] L1 with an axis C2 (orientation-reversing on slices) the configurations '{+-k*} only' and 'doublers only' admit NO integer slice invariant; 'all eight' (and 'empty') do: a free-fermion, Floquet-compatible (given slice invariants) version of the dipole obstruction, using only C2x  
+[PASS] L2 rephased lifts U'_g = c(g) U_g (c^2 = A2) are equally symmetries of the step; with them det = A1 at +-k* and the doublers and the old A2 channel is the new A1 channel: the all-or-nothing rule is lift-independent, the labels A1/A2 (and 'undressed') are lift conventions  
+   O_h channels: A1g: dim 0; A1u: dim 2, |m| in [1.9e-16, 5.3e-16], |m_K|=|m_-K| True; A2g: dim 3, |m| in [1.5e+00, 2.5e+00], |m_K|=|m_-K| True; A2u: dim 2, |m| in [1.7e+00, 2.7e+00], |m_K|=|m_-K| True
+   inversion affine shift: [0. 0. 0.] pi (maps K -> -K)
+[PASS] I1 O_h channels: A2g/A2u allow the singlet at all eight with |m_K| = |m_-K|; A1g/A1u forbid it at all eight (or are empty)  
+
+TOTAL: PASS=3 FAIL=0

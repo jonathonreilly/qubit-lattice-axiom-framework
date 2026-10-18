@@ -11,3 +11,11 @@
    K = [1, 1, 0, -1] M2 trial 0: position-space eps^2 coeff -0.36100990  vs C2 formula -0.36100990  rel 6.3e-09
    K = [1, 1, 0, -1] M2 trial 1: position-space eps^2 coeff -1.03264946  vs C2 formula -1.03264927  rel 1.9e-07
 PASS: X1 [55.3s] C2's momentum-space second variation (seagull + bubble, D1A/D1B placements, symmetrisation) equals the exact position-space 1/2 log det for S, M1, M2 on a periodic 6^4 lattice (max rel dev 1.9e-07)
+PASS: X2 [129.5s] C2's hand-coded Fierz-Pauli kernel equals the sympy [sqrt g R]^(2) cross kernel (rel dev 2.5e-16); so c_EH in 'W contains -c_EH FP' is 1/(16 pi G) in the Euclidean convention
+   S : Ward ratio 0.650..1.191  c_EH -0.002855 (-0.270 x cov ref)   log: (0.65, 1.191, -0.002855)
+   M1: Ward ratio 0.431..1.863  c_EH 0.003332 (+0.315 x cov ref)   log: (0.431, 1.863, 0.003332)
+   M2: Ward ratio 0.431..1.191  c_EH -0.004564 (-0.431 x cov ref)   log: (0.431, 1.191, -0.004564)
+PASS: X3 [130.0s] saved m = 1.0 symbols reproduce the logged Ward ranges and c_EH with my FP and gauge vectors; <phi^2> = 0.127112
+   bond tadpole <(D_mu phi)^2> = 0.218222;  plaquette tadpoles max |.| = 4.0e-19
+PASS: X4 [130.1s] M1 - M2 = bond-tadpole x (cos^2(K/2) - 1) on the seagull only (my W2 by numerical differentiation; rel residual 3.1e-06); its EH projection 0.007895 = +0.745 x covariant ref -- an O(1) shift of 1/G from O(a^2) leg placement
+TOTAL: PASS=4 FAIL=0  (130.1s)

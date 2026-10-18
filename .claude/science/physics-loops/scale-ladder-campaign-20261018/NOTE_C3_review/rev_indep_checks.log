@@ -1,0 +1,15 @@
+[OK]  R1_L3  1 partitions as affine matrices: graded, Lam_n = n - centre; Lam_2 set []
+[OK]  R1_L4  1 partitions as affine matrices: graded, Lam_n = n - centre; Lam_2 set [0]
+[OK]  R1_L5  2 partitions as affine matrices: graded, Lam_n = n - centre; Lam_2 set [-1/2, 0]
+[OK]  R1_L6  4 partitions as affine matrices: graded, Lam_n = n - centre; Lam_2 set [-1, -1/2, 0]
+[OK]  R1_L7  8 partitions as affine matrices: graded, Lam_n = n - centre; Lam_2 set [-3/2, -1, -1/2, 0]
+[OK]  R1_L8  16 partitions as affine matrices: graded, Lam_n = n - centre; Lam_2 set [-2, -3/2, -1, -1/2, 0]
+[OK]  R1_L9  32 partitions as affine matrices: graded, Lam_n = n - centre; Lam_2 set [-5/2, -2, -3/2, -1, -1/2, 0]
+[OK]  R2_L5  sympy.solve: 2 solution components; Lam points [(Fraction(-1, 2), Fraction(1, 2)), (Fraction(0, 1), Fraction(0, 1))] == arc points [(Fraction(-1, 2), Fraction(1, 2)), (Fraction(0, 1), Fraction(0, 1))]
+[OK]  R2_L6  sympy.solve: 5 solution components; Lam points [(Fraction(-1, 1), Fraction(0, 1), Fraction(1, 1)), (Fraction(-1, 2), Fraction(1, 2), Fraction(0, 1)), (Fraction(0, 1), Fraction(-1, 2), Fraction(1, 2)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))] == arc points [(Fraction(-1, 1), Fraction(0, 1), Fraction(1, 1)), (Fraction(-1, 2), Fraction(1, 2), Fraction(0, 1)), (Fraction(0, 1), Fraction(-1, 2), Fraction(1, 2)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))]
+  R3 B14_central: d(z) = (z**2 - 1)/(2*z); non-constant z-coeffs gcd in y: y - 1
+[OK]  R3_B14_central  common roots [1] (only y = 1 allowed)
+  R3 imp4: d(z) = (z**3*(26 - z) - 26*z + 1)/(48*z**2); non-constant z-coeffs gcd in y: y - 1
+[OK]  R3_imp4  common roots [1] (only y = 1 allowed)
+[OK]  R4_2D  2D 3x3, xi = e_1: bracket = (1/2) sum (N_(x+e1)-N_x) pi_x pi_(x+e1), no diagonal part
+BAD count: 0

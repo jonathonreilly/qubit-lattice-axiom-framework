@@ -60,12 +60,12 @@
    B24 ('S', 'p', 'S4', 'o') ('P4', 'H33') bcc(32) pmax 3 N 32 |D| 2 index 2
    (D on grid, D >= Lambda_sp, D == Lambda_sp) -> {(True, True, True): 59, (False, True, True): 1}
    problem: (('B24', ('S2', 'p', 'S4', 'o'), ('P7', 'H00')), 'bcc(16)', 16, 432)
-   off-grid diagnostic ('S2', 'p', 'S4', 'o') ('P7', 'H00') t/pi = [0.3333 0.     0.    ]: spectral True, U-intertwiner dim 3
-   off-grid diagnostic ('S2', 'p', 'S4', 'o') ('P7', 'H00') t/pi = [0.1667 0.1667 0.1667]: spectral True, U-intertwiner dim 3
-   off-grid diagnostic ('S2', 'p', 'S4', 'o') ('P7', 'H00') t/pi = [0.1667 0.     0.    ]: spectral False, U-intertwiner dim 1
-   off-grid diagnostic ('S2', 'p', 'S4', 'o') ('P7', 'H00') t/pi = [0.6667 0.6667 0.6667]: spectral True, U-intertwiner dim 3
+   off-grid diagnostic ('S2', 'p', 'S4', 'o') ('P7', 'H00') t/pi = [0.3333 0.     0.    ]: spectral True, invertible U-intertwiner dim 3
+   off-grid diagnostic ('S2', 'p', 'S4', 'o') ('P7', 'H00') t/pi = [0.1667 0.1667 0.1667]: spectral True, invertible U-intertwiner dim 3
+   off-grid diagnostic ('S2', 'p', 'S4', 'o') ('P7', 'H00') t/pi = [0.1667 0.     0.    ]: spectral False, invertible U-intertwiner dim 0
+   off-grid diagnostic ('S2', 'p', 'S4', 'o') ('P7', 'H00') t/pi = [0.6667 0.6667 0.6667]: spectral True, invertible U-intertwiner dim 3
 [FAIL] D = 2pi M*(p <= pmax) lies on the (pi/16)Z^3 grid ([Z^3 : M] = |D cap grid|) for every sampled word  59/60
 [PASS] D contains the detected Lambda_sp for every sampled word (the exact characterisation is consistent with the detector)  
 [PASS] D == Lambda_sp (detector complete, no taste finer than (pi/8)Z^3) in at least 90% of sampled words  60/60
 
-TOTAL: PASS=2 FAIL=1   [103s]
+TOTAL: PASS=2 FAIL=1   [104s]

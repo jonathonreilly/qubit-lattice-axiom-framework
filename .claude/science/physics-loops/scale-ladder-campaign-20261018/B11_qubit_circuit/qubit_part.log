@@ -1,0 +1,23 @@
+stabilizer group rank 2305 on 3072 qubits  [11s]
+[PASS] every gate generator of the circuit maps to Q = c1 P1 + c2 P2 with P1, P2 commuting Hermitian Paulis, |c| = 1/2 (hops), or to (1 - B_q)/2 (numbers); hence each gate is a product of Pauli rotations by theta/2  9728 gates, failures 0  [5s]
+max Pauli weight / max sup-norm site span / max number of sites, per gate kind:
+   ('RL-diag', 2): weight 12, span 1, sites 3
+   ('RL-link', 1): weight 6, span 0, sites 1
+   ('RL-link', 2): weight 8, span 1, sites 2
+   ('S-diag', 1): weight 6, span 0, sites 1
+   ('S-diag', 2): weight 9, span 1, sites 3
+   ('S-onsite', 1): weight 6, span 0, sites 1
+   ('S-onsite', 2): weight 12, span 0, sites 1
+   ('onsite', 1): weight 6, span 0, sites 1
+   ('onsite', 2): weight 17, span 0, sites 1
+[PASS] all distinct gate Paulis commute with every stabilizer generator (repetition, loops, Wilson loops): gauge invariant  5248 Paulis x 3395 generators  [11s]
+[PASS] Clifford factor S on the full L = 4 torus: the qubit circuit (pi/4 Pauli rotations and B phases) maps Q(c+_a c_b) to sum S_ia S_jb Q(c+_i c_j) modulo stabilizers  15/15 bilinears
+   [1s]
+[PASS] one plaquette block of R_L (two pi/4 diagonal rotations = four pi/8 Pauli rotations, plus Clifford link swaps) acts logically as its one-particle 4 x 4 block  5/5 bilinears
+[PASS] the on-site layer at one site (Givens rotations with irrational angles) acts logically as U_H U_L  4/4 bilinears
+   [1s]
+[PASS] full step W: qubit circuit maps Q(c+_a c_b) (a, b = site-0 corners 0,1) to sum W_ia conj(W_jb) Q(c+_i c_j) modulo stabilizers  residual terms 0  [16s]
+[PASS] full step W: qubit circuit maps Q(c+_a c_b) (a, b = site-0 corners 2,2) to sum W_ia conj(W_jb) Q(c+_i c_j) modulo stabilizers  residual terms 0  [18s]
+[PASS] control: comparison against W with one pi/4 plaquette rotation deleted leaves a nonzero residual  68 terms
+
+Part B TOTAL: PASS=8 FAIL=0  [48s]

@@ -91,11 +91,16 @@ def run_size(dims):
     # ---------------- source directions ------------------------------------------------
     qs = momenta(T)
     labels, C = [], []
+    full = vac.n < 200_000          # full 3-orientation Fourier basis on the small tori; co-exact basis on 2x2x4
+    res["full_basis"] = full
     for q in qs:
-        for o in range(3):
-            for k, v in enumerate(fourier_dirs(T, q, o)):
-                labels.append((q, o, k))
-                C.append(v)
+        if full or q == (0.0, 0.0, 0.0):
+            vecs = [v for o in range(3) for v in fourier_dirs(T, q, o)]
+        else:
+            vecs = coexact_dirs(T, q)
+        for k, v in enumerate(vecs):
+            labels.append((q, -1, k))
+            C.append(v)
     rng = np.random.default_rng(7)
     ngauge = 3
     for _ in range(ngauge):
@@ -177,15 +182,16 @@ for dims in [(2, 2, 2), (2, 2, 3), (2, 2, 4)]:
     rk_ok = all(abs(sg["E"][1.0]) < 1e-10 for sg in res["sectors"].values())
     check(f"{tag}: at RK (V=J) every computed winding sector has ground energy 0 (graph Laplacian)", rk_ok)
     # rank-one co-exact structure at q != 0
-    rank_ok = True
-    for r in allV:
+    rank_ok = res["full_basis"]
+    for r in (allV if res["full_basis"] else []):
         for b in r["blocks"]:
             if any(abs(x) > 1e-12 for x in b["q_over_pi"]):
                 ev = np.array(b["ev"])
                 nnz = int((np.abs(ev) > 1e-8).sum())
                 ncos = b["n"] // 3
                 rank_ok &= (nnz == ncos) and np.allclose(ev[ev > 1e-8], ev[ev > 1e-8][0], atol=1e-9)
-    check(f"{tag}: at every q != 0 the 3-orientation block has exactly one nonzero (co-exact) value per real Fourier pair", rank_ok)
+    if res["full_basis"]:
+        check(f"{tag}: at every q != 0 the 3-orientation block has exactly one nonzero (co-exact) value per real Fourier pair", rank_ok)
     if dims == (2, 2, 2):
         r1 = res["V"][1.0]
         check("2x2x2 V=1: uniform Cartesian chi_2 = 0.285050028242 (source note / probe)", abs(r1["chi_orient"][0] - 0.285050028242) < 1e-11,
@@ -214,6 +220,9 @@ for dims in [(2, 2, 2), (2, 2, 3), (2, 2, 4)]:
         gr = vac.ground(V)
         Rq, info = vac.hessian(V, Cq, ground=gr)
         w, U = np.linalg.eigh(Rq)
+        check("2x2x4 V=0.5: full 3-orientation block at q=(0,0,pi/2) has rank 2 (one co-exact value per cos/sin) and its value equals the co-exact-basis K_T",
+              int((np.abs(w) > 1e-8).sum()) == 2 and abs(w[-1] - max(b["ev"][-1] for b in res["V"][0.5]["blocks"] if b["q_over_pi"] == [0.0, 0.0, 0.5])) < 1e-9,
+              f"eig {np.round(w, 9).tolist()}")
         c = Cq.T @ U[:, -1]
         th = [0.02, 0.01]
         Ep = {h: vac.energy_with_source(V, h * c) for h in th}

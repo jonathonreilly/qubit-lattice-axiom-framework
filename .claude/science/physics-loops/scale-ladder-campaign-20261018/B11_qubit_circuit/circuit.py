@@ -327,5 +327,4 @@ def depth(glist, only2=False):
 print(f"ASAP depth (2-mode gates only / all gates): on-site {depth(gates[:n_onsite], True)}/{depth(gates[:n_onsite])}, "
       f"R_L {depth(gates[n_onsite:n_onsite+n_RL], True)}/{depth(gates[n_onsite:n_onsite+n_RL])}, "
       f"S {depth(gates[n_onsite+n_RL:], True)}/{depth(gates[n_onsite+n_RL:])}, total {depth(gates, True)}/{depth(gates)}")
-np.save(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Wref_check.npy'), np.array([err]))
 print(f"\nPart A TOTAL: PASS={PASS} FAIL={FAIL}")

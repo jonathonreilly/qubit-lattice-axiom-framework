@@ -1,0 +1,39 @@
+[PASS] lattice: plaquette/link ordering identical to B6 ringlib 
+[PASS] vacuum component has 864 states n=864
+[PASS] stoquastic: every off-diagonal element of H is -J or 0 (J=1) 
+[PASS] sign of J is a diagonal gauge on 2^3: spec(V N_f - A) = spec(V N_f + A) for V in {0,.5,1,-1} 
+[PASS] (2, 2, 2): link signs s_a(r)=(-1)^r_(a+1) give product -1 on every plaquette (J -> -J gauge) 
+[PASS] (4, 4, 4): link signs s_a(r)=(-1)^r_(a+1) give product -1 on every plaquette (J -> -J gauge) 
+[PASS] (4, 6, 8): link signs s_a(r)=(-1)^r_(a+1) give product -1 on every plaquette (J -> -J gauge) 
+[PASS] coexact directions at q=(pi,0,0): exactly one n=1
+  exact V=1.0: E0=0.000000000 chi=[0.285050028, 0.285050028, 0.285050028, 0.105121402, 0.303613603]
+  exact V=0.5: E0=-4.255811263 chi=[0.287991905, 0.287991905, 0.287991905, 0.120958514, 0.335189734]
+  exact V=0.0: E0=-9.026720914 chi=[0.267018775, 0.267018775, 0.267018775, 0.120684587, 0.349314854]
+[PASS] exact V=1 harmonic chi = 0.285050028242 (source note) 
+[PASS] exact V=1 staggered chi = 0.105121402155 (source note) 
+  DMC V=1.0: Emix=0.00000+-0.00000 chi=[(0.2833, 0.0021), (0.2856, 0.002), (0.2844, 0.002), (0.1056, 0.0009), (0.3023, 0.0021)] (11s)
+[PASS] DMC V=1.0: mixed energy within 3 sigma + 2e-3 of exact 0.000000 
+[PASS] DMC V=1.0: harm_o0 curvature within 3 sigma + 1% of exact 0.285050 0.2833+-0.0021
+[PASS] DMC V=1.0: harm_o1 curvature within 3 sigma + 1% of exact 0.285050 0.2856+-0.0020
+[PASS] DMC V=1.0: harm_o2 curvature within 3 sigma + 1% of exact 0.285050 0.2844+-0.0020
+[PASS] DMC V=1.0: stag_xy curvature within 3 sigma + 1% of exact 0.105121 0.1056+-0.0009
+[PASS] DMC V=1.0: coex_pi00 curvature within 3 sigma + 1% of exact 0.303614 0.3023+-0.0021
+  DMC V=0.5: Emix=-4.25518+-0.00059 chi=[(0.2891, 0.0054), (0.2777, 0.0057), (0.2853, 0.0056), (0.1214, 0.0022), (0.3234, 0.0057)] (12s)
+[PASS] DMC V=0.5: mixed energy within 3 sigma + 2e-3 of exact -4.255811 
+[PASS] DMC V=0.5: harm_o0 curvature within 3 sigma + 1% of exact 0.287992 0.2891+-0.0054
+[PASS] DMC V=0.5: harm_o1 curvature within 3 sigma + 1% of exact 0.287992 0.2777+-0.0057
+[PASS] DMC V=0.5: harm_o2 curvature within 3 sigma + 1% of exact 0.287992 0.2853+-0.0056
+[PASS] DMC V=0.5: stag_xy curvature within 3 sigma + 1% of exact 0.120959 0.1214+-0.0022
+[PASS] DMC V=0.5: coex_pi00 curvature within 3 sigma + 1% of exact 0.335190 0.3234+-0.0057
+  DMC V=0.0: Emix=-9.02477+-0.00114 chi=[(0.2655, 0.0098), (0.2596, 0.0093), (0.262, 0.0101), (0.1158, 0.0034), (0.3578, 0.0116)] (15s)
+[PASS] DMC V=0.0: mixed energy within 3 sigma + 2e-3 of exact -9.026721 
+[PASS] DMC V=0.0: harm_o0 curvature within 3 sigma + 1% of exact 0.267019 0.2655+-0.0098
+[PASS] DMC V=0.0: harm_o1 curvature within 3 sigma + 1% of exact 0.267019 0.2596+-0.0093
+[PASS] DMC V=0.0: harm_o2 curvature within 3 sigma + 1% of exact 0.267019 0.2620+-0.0101
+[PASS] DMC V=0.0: stag_xy curvature within 3 sigma + 1% of exact 0.120685 0.1158+-0.0034
+[PASS] DMC V=0.0: coex_pi00 curvature within 3 sigma + 1% of exact 0.349315 0.3578+-0.0116
+[PASS] DMC V=0 sector W=(2, 0, 0): energy within 3 sigma + 2e-3 of -7.399111 -7.39560+-0.00168
+[PASS] DMC V=0 sector W=(4, 0, 0): energy within 3 sigma + 2e-3 of -5.656854 -5.65739+-0.00139
+[PASS] projector SSE: operator strings stay consistent (0 violations) 
+[PASS] negative control: local pair-update SSE fails to reproduce harmonic chi (|chi|<0.1 vs exact 0.285) [np.float64(0.0239), np.float64(-0.0134), np.float64(-0.0257)]
+PASS=32 FAIL=0 (160s)

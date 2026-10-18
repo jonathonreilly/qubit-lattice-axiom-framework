@@ -1,0 +1,9 @@
+local stabilizer generators: 3392 rank 2302 inconsistent 0
+Wilson (1, 0, 0) ('new', None)
+   second random Wilson loop in the same class: ('dep', 0) (dep, 0) expected
+Wilson (0, 1, 0) ('new', None)
+   second random Wilson loop in the same class: ('dep', 0) (dep, 0) expected
+Wilson (0, 0, 1) ('new', None)
+   second random Wilson loop in the same class: ('dep', 0) (dep, 0) expected
+sampled (random walk paths incl. detours through random vertices): {'herm': 12, 'prod': 12, 'loop': 12, 'back': 12, 'stab': 12, 'n': 12}
+negative control (gauge sign dropped): loop relation fails on 4 / 8 samples (expect > 0)

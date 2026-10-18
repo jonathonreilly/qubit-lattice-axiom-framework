@@ -1,6 +1,6 @@
 {
- "edge_count": 16277,
- "node_count": 7253,
+ "edge_count": 16280,
+ "node_count": 7254,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4257,6 +4257,10 @@
   "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04": {
    "deps_hash": "48ebef824880",
    "out_degree": 6
+  },
+  "corner_fermion_eight_cube_nodes_cannot_be_selectively_gapped_under_full_octahedral_symmetry_pairing_is_all_or_nothing_and_the_doublers_carry_a_z2_weyl_dipole_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "590e7642ed8c",
+   "out_degree": 3
   },
   "corner_fermion_interaction_channels_favour_chiral_term_over_dirac_mass_and_qubit_build_bounded_theorem_note_2026-10-18": {
    "deps_hash": "7eba5c37a5c2",

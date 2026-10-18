@@ -1,7 +1,7 @@
 ---
 claim_id: iid_priority_formation_spatial_frequency_consistency_bounded_theorem_note_2026-10-18
 claim_type: bounded_theorem
-claim_scope: "Formation reading of B3 Definition 1 with an empty start slice and a translation-covariant rule of range one on Z^3. Supplied premises: iid atomless activation times, iid per-site marks, a measurable rule. For any local pattern E (a finite support S and a measurable set of Record configurations on S) with probability p, and any deterministic sequence of distinct sites: (A) the empirical frequency F_n has E F_n = p and Var F_n <= chi_E/n, where chi_E = sum_z |Cov(1_E, 1_{E+z})| is finite and explicitly bounded. Under pairwise l1-separation s the bound improves to (p(1-p)+tau_E(s))/n, with tau_E(s) decaying factorially. (B) P(|F_n - p| >= eps) <= 3 exp(-n eps^2/(8 k_m)) whenever |S| c_m/(m+1)! <= eps/4, where k_m = |B_1(0, 2m+diam S)|. (C) For a context C with P(C) = q > 0, the conditional frequency N_n(E and C)/N_n(C) tends to P(E|C) almost surely, in every L^r with r finite, with Chebyshev tail 16(chi_{E and C}+chi_C)/(n q^2 eps^2) and an exponential tail with constant 6 (m and k_m taken for S union S_c, with delta_m <= q eps/16). The limits are the formation law's own probabilities. For strictly positive order-blind rules they equal the rule weights r(a|eta) given Record neighbour contexts. For order-sensitive rules they do not in general (witness: ferro (20,1,1)). For own-mark race rules (marks independent of the clock at the same site) the rule weight is recovered given the formation-time context, a pattern of (X,T). This is a partial, conditional discharge of the 2026-09-02 frequency-consistency obligation: a spatial site-sampling notion within one realisation, not repeated trials of one experiment; the 2026-09-02 dependency row stays supplied. Nothing identifies these probabilities with Born weights, and nothing here covers repeated readout of one Record."
+claim_scope: "Formation reading of Definition 1 of the coding-radius note with an empty start slice and a translation-covariant rule of range one on Z^3. Supplied premises: iid atomless activation times, iid per-site marks, a measurable rule. For any local pattern E (a finite support S and a measurable set of Record configurations on S) with probability p, and any deterministic sequence of distinct sites: (A) the empirical frequency F_n has E F_n = p and Var F_n <= chi_E/n, where chi_E = sum_z |Cov(1_E, 1_{E+z})| is finite and explicitly bounded. Under pairwise l1-separation s the bound improves to (p(1-p)+tau_E(s))/n, with tau_E(s) decaying factorially. (B) P(|F_n - p| >= eps) <= 3 exp(-n eps^2/(8 k_m)) whenever |S| c_m/(m+1)! <= eps/4, where k_m = |B_1(0, 2m+diam S)|. (C) For a context C with P(C) = q > 0, the conditional frequency N_n(E and C)/N_n(C) tends to P(E|C) almost surely, in every L^r with r finite, with Chebyshev tail 16(chi_{E and C}+chi_C)/(n q^2 eps^2) and an exponential tail with constant 6 (m and k_m taken for S union S_c, with delta_m <= q eps/16). The limits are the formation law's own probabilities. For strictly positive order-blind rules they equal the rule weights r(a|eta) given Record neighbour contexts. For order-sensitive rules they do not in general (witness: ferro (20,1,1)). For own-mark race rules (marks independent of the clock at the same site) the rule weight is recovered given the formation-time context, a pattern of (X,T). This is a partial, conditional discharge of the 2026-09-02 frequency-consistency obligation: a spatial site-sampling notion within one realisation, not repeated trials of one experiment; the 2026-09-02 dependency row stays supplied. Nothing identifies these probabilities with Born weights, and nothing here covers repeated readout of one Record."
 upstream_dependencies:
   - iid_priority_formation_is_a_finitary_factor_of_iid_noise_with_factorial_coding_radius_tail_bounded_theorem_note_2026-10-18
   - order_blind_positive_formation_is_a_one_dependent_gibbs_field_bounded_theorem_note_2026-10-16
@@ -18,7 +18,7 @@ runner: scripts/iid_priority_formation_spatial_frequency_consistency_2026_10_18.
 
 ## 0. Result up front
 
-Take the formation class of B3 with an empty start and a translation-covariant rule. Choose any local Record pattern, optionally conditioned on a local context of positive probability. Its empirical frequency along **any** deterministic sequence of distinct sites converges to its probability under the formation law. The convergence holds almost surely and in L², with variance at most χ/n and an exponential tail bound with explicit constants. This is a **partial and conditional discharge** of the frequency-consistency obligation in the 2026-09-02 decision note. That note's missing premise concerns repeated trials of one conditional experiment. This theorem gives a different frequency notion: spatial site-sampling within one formation realisation. Its limits are the formation law's own probabilities, which equal the one-use weights given Record contexts only for order-blind positive rules. Independence is relocated to the supplied microscopic noise (iid clocks and marks, empty start, one fixed rule), not derived. The 2026-09-02 dependency row therefore stays "supplied".
+Take the formation class of the coding-radius note with an empty start and a translation-covariant rule. Choose any local Record pattern, optionally conditioned on a local context of positive probability. Its empirical frequency along **any** deterministic sequence of distinct sites converges to its probability under the formation law. The convergence holds almost surely and in L², with variance at most χ/n and an exponential tail bound with explicit constants. This is a **partial and conditional discharge** of the frequency-consistency obligation in the 2026-09-02 decision note. That note's missing premise concerns repeated trials of one conditional experiment. This theorem gives a different frequency notion: spatial site-sampling within one formation realisation. Its limits are the formation law's own probabilities, which equal the one-use weights given Record contexts only for order-blind positive rules. Independence is relocated to the supplied microscopic noise (iid clocks and marks, empty start, one fixed rule), not derived. The 2026-09-02 dependency row therefore stays "supplied".
 
 It does **not** say that these probabilities are Born weights. It does not cover sequential readouts of one Record. For order-sensitive rules it does not say that frequencies conditioned on neighbouring Records equal the rule's weights; they demonstrably do not.
 
@@ -40,7 +40,7 @@ Source: `docs/FINITE_ACTION_FUNCTIONAL_TYPED_ADMISSIBILITY_RECORD_IDENTIFICATION
 
 ## 2. Setting
 
-The setting is B3 Definition 1 with G = Z³ (nearest-neighbour, D = 6) and an empty start slice B = ∅. The supplied premises are:
+The setting is Definition 1 of the coding-radius note with G = Z³ (nearest-neighbour, D = 6) and an empty start slice B = ∅. The supplied premises are:
 
 - activation times T_y, iid and atomless;
 - marks U_y, iid;
@@ -64,7 +64,7 @@ Everything below also holds for patterns of the joint field (X_y, T_y), because 
 
 and the terms decay like exp(−d ln d + O(d)). For |S| = 1 this gives χ_E ≤ 4069 (runner X3). The bound is rigorous but loose: the measured χ̂ is 1.70 for ferro (20,1,1) and 0.29 for copy-unanimous.
 
-*Proof.* Apply B3 Theorems 2 and 2′ with osc 1_E = 1. Add Cauchy–Schwarz, |Cov| ≤ √(Var I_0 · Var I_z) = p(1−p). There are O(d²) sites z at each ℓ¹ distance (4d²+2 when |S| = 1). ∎
+*Proof.* Apply the coding-radius note's Theorems 2 and 2′ with osc 1_E = 1. Add Cauchy–Schwarz, |Cov| ≤ √(Var I_0 · Var I_z) = p(1−p). There are O(d²) sites z at each ℓ¹ distance (4d²+2 when |S| = 1). ∎
 
 **Theorem A (L² law; arbitrary site sequences).** Under the hypotheses of §2, E F_n = p and
 
@@ -88,9 +88,9 @@ In particular Σ_n P(·) < ∞, which gives almost-sure convergence directly. Th
 
 *Proof.*
 
-1. **Local copies.** Put W_x := ∪_{y∈S+x} B(y, m). Take independent copies ω′^{(x)} of the noise and set ω̂^{(x)} := ω on W_x and ω′^{(x)} off it. By B3 Lemma 3, with a deterministic set, ω̂^{(x)} has the law of ω. Hence I^{(m)}_x := 1{X_{S+x}(ω̂^{(x)}) ∈ P} satisfies E I^{(m)}_x = p.
-2. **Bad sites.** Put bad_x := 1{∃ y ∈ S+x : L_y ≥ m}, where L_y is the longest decreasing path from y. A decreasing path of length m lies in B(y, m), so bad_x is a function of the times on W_x. By B3 Lemma 1, E bad_x ≤ δ_m.
-3. **Agreement off bad sites.** On {bad_x = 0}, K_y ⊂ B(y, L_y+1) ⊂ B(y, m) ⊂ W_x for every y ∈ S+x. B3 Lemma 2(iii) then gives X_{S+x}(ω̂^{(x)}) = X_{S+x}(ω), so |I_x − I^{(m)}_x| ≤ bad_x.
+1. **Local copies.** Put W_x := ∪_{y∈S+x} B(y, m). Take independent copies ω′^{(x)} of the noise and set ω̂^{(x)} := ω on W_x and ω′^{(x)} off it. By the coding-radius note's Lemma 3, with a deterministic set, ω̂^{(x)} has the law of ω. Hence I^{(m)}_x := 1{X_{S+x}(ω̂^{(x)}) ∈ P} satisfies E I^{(m)}_x = p.
+2. **Bad sites.** Put bad_x := 1{∃ y ∈ S+x : L_y ≥ m}, where L_y is the longest decreasing path from y. A decreasing path of length m lies in B(y, m), so bad_x is a function of the times on W_x. By the coding-radius note's Lemma 1, E bad_x ≤ δ_m.
+3. **Agreement off bad sites.** On {bad_x = 0}, K_y ⊂ B(y, L_y+1) ⊂ B(y, m) ⊂ W_x for every y ∈ S+x. the coding-radius note's Lemma 2(iii) then gives X_{S+x}(ω̂^{(x)}) = X_{S+x}(ω), so |I_x − I^{(m)}_x| ≤ bad_x.
 4. **Decomposition.** Let F^{(m)}_n and B_n be the averages of I^{(m)}_{x_i} and bad_{x_i}. Then |F_n − p| ≤ |F^{(m)}_n − p| + (B_n − E B_n) + δ_m.
 5. **Colouring.** Both families are functions of (ω|_{W_x}, ω′^{(x)}). Members whose sets W_x are pairwise disjoint are therefore independent. W_x ∩ W_{x′} ≠ ∅ forces x′ − x ∈ B₁(0, 2m + diam S). So the dependency graph has maximum degree below k_m, and a greedy colouring uses at most k_m classes, each consisting of independent [0,1]-valued variables.
 6. **Hoeffding on each class.** Generalised Hölder over the k colour classes plus Hoeffding's lemma give E e^{λ(Σ − EΣ)} ≤ e^{kλ²n/8}. Hence P(Σ − EΣ ≥ nη) ≤ e^{−2nη²/k}. This is Janson's (2004) inequality with the chromatic number in place of the fractional one.
@@ -108,16 +108,16 @@ and an exponential tail holds: apply Theorem B with ε replaced by qε/4 to both
 
 So the bad event is contained in {|a − r| ≥ η} ∪ {|b − q| ≥ η}. Apply Theorem A to each. Almost-sure convergence follows from Theorem A applied to the numerator and denominator. Since |F_n(E|C)| ≤ 1, L^r convergence follows by bounded convergence. ∎
 
-**Remark (non-covariant rules or B ≠ ∅).** B3 Theorem 2 does not use translation invariance. Theorem A's variance bound therefore holds with χ := sup_x Σ_z |Cov(I_x, I_{x+z})|, and gives F_n − E F_n → 0. The frequency then tracks the average probability instead of a constant.
+**Remark (non-covariant rules or B ≠ ∅).** the coding-radius note's Theorem 2 does not use translation invariance. Theorem A's variance bound therefore holds with χ := sup_x Σ_z |Cov(I_x, I_{x+z})|, and gives F_n − E F_n → 0. The frequency then tracks the average probability instead of a constant.
 
-**Remark (what mixing alone gives).** For any stationary mixing field, C(z) → 0 gives Var F_n ≤ |B(R)|/n + sup_{|z|>R} |C(z)| → 0 along any sequence of distinct sites. That is L² consistency without a rate. Ergodicity alone gives almost-sure convergence of Følner box averages. The B3 class gives more: rates, and almost-sure convergence along arbitrary sequences. Any non-ergodic stationary law has box frequencies converging to the random limit P(E | invariant σ-field). This is exactly the failure in the repo's counterexample, where the limit is B itself.
+**Remark (what mixing alone gives).** For any stationary mixing field, C(z) → 0 gives Var F_n ≤ |B(R)|/n + sup_{|z|>R} |C(z)| → 0 along any sequence of distinct sites. That is L² consistency without a rate. Ergodicity alone gives almost-sure convergence of Følner box averages. The coding-radius class gives more: rates, and almost-sure convergence along arbitrary sequences. Any non-ergodic stationary law has box frequencies converging to the random limit P(E | invariant σ-field). This is exactly the failure in the repo's counterexample, where the limit is B itself.
 
 ## 4. Which probabilities are the limits
 
-(i) **Order-blind strictly positive rules (2026-10-16 class).** The B3 empty-start formation law restricted to any window W has the induced-subgraph product law of 2026-10-16 Theorem 1, for the following reasons:
+(i) **Order-blind strictly positive rules (2026-10-16 class).** The empty-start formation law restricted to any window W has the induced-subgraph product law of 2026-10-16 Theorem 1, for the following reasons:
 
 - Formation on a finite box Λ is formation of the window Λ, so its marginal on W is that product form for every order.
-- On {K_W ⊂ Λ}, the box and infinite-volume formations agree, by B3 Lemma 2 applied to the box graph.
+- On {K_W ⊂ Λ}, the box and infinite-volume formations agree, by the coding-radius note's Lemma 2 applied to the box graph.
 - P(K_W ⊄ Λ_N) → 0.
 
 The six neighbours of a site are pairwise non-adjacent. So for any partial neighbour context η, P(X_0 = a | X_{neighbours} = η) = r(a|η), by product-form normalisation. **Spatial conditional frequencies given Record contexts converge to the rule weights.** The runner checks this exactly for the soldered chiral-pair rule (O2).
@@ -125,7 +125,7 @@ The six neighbours of a site are pairwise non-adjacent. So for any partial neigh
 (ii) **Order-sensitive rules.** The limit is P_form(a | final Record context), which is generally not r(a|η).
 
 - **Witness.** For ferro (20,1,1), freq(X_0 = 0 | X_{+x} = 0) = 0.5125 ± 0.0009, against the rule weight 0.8 (runner F4, z ≈ −306).
-- **Own-mark rules.** These are rules that read marks only at their own site, such as the race. For them, X_0 = F(η_form, U_0), where U_0 is independent of the formation-time context. This needs U_0 independent of the clock T_0 at the same site; the race satisfies it, while B3 Definition 1 also allows dependence within a site. That context is the set of earlier-formed neighbours and their Records, which do not depend on U_0. So the rule weight **is** the limiting frequency given the formation-time context, a local pattern of (X, T): 0.8043 ± 0.0034 against 0.8 (runner F3).
+- **Own-mark rules.** These are rules that read marks only at their own site, such as the race. For them, X_0 = F(η_form, U_0), where U_0 is independent of the formation-time context. This needs U_0 independent of the clock T_0 at the same site; the race satisfies it, while Definition 1 of the coding-radius note also allows dependence within a site. That context is the set of earlier-formed neighbours and their Records, which do not depend on U_0. So the rule weight **is** the limiting frequency given the formation-time context, a local pattern of (X, T): 0.8043 ± 0.0034 against 0.8 (runner F3).
 - **Caveat.** This requires the formation order to be readable. The repo's observation clause reads Records only.
 
 (iii) **Born weights.** None of these limits is identified with Tr(ρE). That needs the 2026-09-02 premises: a complete action/state package, a registered effect partition, the identification (10) of action weights with the Admissibility law, and a matching-output instrument. They remain supplied or open.
@@ -138,14 +138,14 @@ The six neighbours of a site are pairwise non-adjacent. So for any partial neigh
 
 1. **No Born identification** (§4(iii)). Frequency equals probability only for the formation law's own probabilities.
 2. **No sequential readouts of one Record.** A permanent Record read m times gives X_i = X_0 for all i. This is *exactly* the repo's perfectly correlated counterexample, with F_m = X_0. Consistency needs distinct carriers (sites), not repetition. A temporal-trial reading (reset, cadence, a re-prepared carrier) is not modelled.
-3. **The premises stay supplied.** The independence has moved, not disappeared: iid clocks, iid marks, an empty start slice, and one fixed, non-random, covariant rule are all supplied. A rule or parameter drawn once makes a stationary non-ergodic mixture. The runner's R1 check gives a bimodal frequency, with a between-torus SD of 0.135 against 0.003 within a rule. A random correlated start slice and global conditioning also leave the class (B3 §7).
+3. **The premises stay supplied.** The independence has moved, not disappeared: iid clocks, iid marks, an empty start slice, and one fixed, non-random, covariant rule are all supplied. A rule or parameter drawn once makes a stationary non-ergodic mixture. The runner's R1 check gives a bimodal frequency, with a between-torus SD of 0.135 against 0.003 within a rule. A random correlated start slice and global conditioning also leave the class (coding-radius note §7).
 4. **Deterministic sequences only.** An adaptive selection that peeks at the target (for example "sample sites where X = 1") is not covered. Selection by a local context is covered, through Theorem C.
 5. **Matching the context to the repo's "same condition" is a modelling choice.** The note's η also covers preparation, registration and cadence; only the neighbour-Record part is modelled here.
 6. **The constants are loose.** χ ≤ 4069 against measured values of 0.14 to 1.7.
 
 ## 6. Runner evidence (finite Monte Carlo, not proof)
 
-Command: `python3 scripts/iid_priority_formation_spatial_frequency_consistency_2026_10_18.py` (seed 20261018). Result: **TOTAL PASS=17 FAIL=0** in 62 s. The simulation code is adapted, read-only, from the B3 runner, and the formation loop is rewritten to pass neighbour directions and record formation-time masks.
+Command: `python3 scripts/iid_priority_formation_spatial_frequency_consistency_2026_10_18.py` (seed 20261018). Result: **TOTAL PASS=17 FAIL=0** in 62 s. The simulation code is adapted, read-only, from the coding-radius runner, and the formation loop is rewritten to pass neighbour directions and record formation-time masks.
 
 - **X.**
   - Exact repo counterexample numbers: 3/16 against 3/64, and non-summable covariance.
@@ -188,7 +188,7 @@ A fresh-context agent of the same model family checked the draft; it is not an i
 **New here (packaging).**
 
 - The exact frequency obligation of the 2026-09-02 note is located, and its counterexample classified as non-ergodic and non-summable.
-- The obligation is discharged for the B3 formation class, along arbitrary distinct-site sequences and with explicit Z³ constants.
+- The obligation is discharged for the coding-radius formation class, along arbitrary distinct-site sequences and with explicit Z³ constants.
 - Separated sampling is shown to reproduce the IID variance.
 - The limits are identified: rule weights for the order-blind class; not rule weights for order-sensitive rules given Record contexts (a witness is given); rule weights given the formation-time context.
 - One-Record repetition is shown to be precisely the repo's counterexample.

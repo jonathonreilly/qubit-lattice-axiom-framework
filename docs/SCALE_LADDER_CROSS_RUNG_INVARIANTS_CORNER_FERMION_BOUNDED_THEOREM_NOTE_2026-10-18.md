@@ -201,7 +201,7 @@ A 12-hour campaign converted the strongest probe leads into proofs or decisive c
 | Formation | **Proved.** Every iid-priority, finite-range formation rule is a finitary factor of iid noise with a factorial coding-radius tail. From an empty start, no long-range order, power laws, pinch points or proper 3-colourings arise. Checked. |
 | Readout weights | **Proved, partial.** Spatial frequencies converge with explicit rates for that class. This is a partial, conditional discharge of the frequency-consistency obligation; the limits equal the rule weights only for order-blind rules. Checked. |
 | Emergent electron | **Corner model.** Parameter-free step rules (item 6): an isotropic spin-½ Weyl step at speed √2/3 with six cube-point doublers. **Proved** (checked): odd filling is forced gapless by anticommuting gauge-dressed C2 lifts. The doubling corollary holds for gapped steps and odd-filling Hamiltonians. In mean-field RPA, interaction channels favour the chiral triangle term over the Dirac mass for T ≲ 0.03; at higher temperature the channel is unresolved (checked). The step is an exact depth-25 circuit on the corner code, but not Clifford+T. |
-| Gravity | **One cone, closure.** Every gauge-invariant two-derivative form gives both TT polarisations one cone (symbolic determinant). Lattice constraint closure leaves only the DeWitt ray, conditional on supplied clauses (Hojman–Kuchař–Teitelboim analogue). The 06-08 induced bubble needs an underived seagull, so the induced 1/G is not fixed. Checked. |
+| Gravity | **One cone, closure.** Every gauge-invariant two-derivative form gives both TT polarisations one cone (symbolic determinant). Lattice constraint closure leaves only the DeWitt ray, conditional on supplied clauses (Hojman–Kuchař–Teitelboim analogue). With matter, closure forces one common matter cone and the Lorentzian sign at leading order; the relabelling bracket fails at O(a²). The 06-08 induced bubble needs an underived seagull, so the induced 1/G is not fixed. Checked. |
 | Native transfer | **One loop.** The heat-kernel saddle action vs Wilson in 4D gives Λ_HK/Λ_W = 1.819 for SU(3); the probe's 7/4 was the 2D shift. Checked. |
 | Record apparatus | **Hypothesis refuted.** The hidden-clock hypothesis fails for the certified tolerances, which are budget and linewidth choices with large margins. The nominal-clock term is an undetectable global phase. The physically real 1/T effects are clock-rate errors: receiver and global onsite errors. Checked. |
 | Finite-spin EM | **Partly settled.** Exact sizes reach only 2×2×L tubes. Along the long direction χ_L matches K_T(q_min) to about 1%, so the L=2 mismatch is a lattice-scale effect. Coulomb vs confined needs isotropic QMC. Unreviewed. |
@@ -246,6 +246,16 @@ The ladder does unify the lanes, but not by deriving everything from the finest 
 - Per-field isotropy is free.
 - A common speed across fields is not, and neither is spin-2 isotropy, when each field's speed is a tunable coupling. In the corner Hamiltonian the speed scales with a supplied term; the Maxwell probe found a coin with two light cones.
 - The grid's own speed limit does not help. A local qubit grid does give a hard limit (one site per step for a circuit; a Lieb–Robinson bound for a Hamiltonian). But a limit is a ceiling that fields can sit below at different speeds, not a common speed.
+
+**A third route to a common cone: closure of the gravity constraint algebra (campaign block B14, independently checked).** This is the Teitelboim / Hojman–Kuchař–Teitelboim mechanism realised on the repo's lattice gravity model.
+
+- In the 2026-09-24 curvature-member model, add a supplied scalar matter sector and require the total constraint algebra to close. At leading order, exactly on the lattice:
+  - every matter species is forced onto one common cone, set by the gravity coefficients (c = K/(4α));
+  - the curvature term is forced to the Lorentzian sign. The 09-24 runner's sign is opposite to its own action and corresponds to the Euclidean algebra.
+- In the continuum at leading order, the relabelling bracket then forces the universal metric-stress coupling.
+- On the lattice that bracket fails at O(a²), with an explicit obstruction monomial.
+- **Supplied:** the matter Hamiltonian, its positivity and the scalar-lapse rule. Newton's constant is not fixed.
+- **Consequence:** a common light cone does not require a parameter-free step rule or 4D hypercubic symmetry. It can come from requiring the coarse rung's gravity constraints to close with matter. Exact lattice closure beyond leading order is the open obligation.
 
 **The information-minimal target.** One local step rule on the base grid with no continuous parameters, from which every field is built. Then:
 - each speed is a pure number fixed by the grid geometry (item 6);

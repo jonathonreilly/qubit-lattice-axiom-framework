@@ -89,3 +89,15 @@
 - **Problems found on main (not edited).**
   - One β = 6 coupling is placed at four incompatible scales: the Planck grid, μ = v, a = 0.1 fm, and α_LM at M_Pl.
   - GAMMA_FULL_VS_GAMMA_CRIT…:73-76 has the scheme conversion going the wrong way.
+
+**HIER-3 same-family referee (recorded 12:37Z): CONFIRMED WITH CORRECTIONS. G-OUTSIDE is correct; G-UNFIXED is not the reading.**
+- **Confirmed.** Every window edge was reproduced to 4 digits. C1–C3 are one β = 6 theory. The 1/18 register cap holds analytically.
+- **Corrections.**
+  - The β = 6 non-perturbative scale (0.11–0.12 M_Pl) is conditional. It holds for pure gauge, for a Euclidean isotropic action, and for a = l_Pl. a = l_Pl is B2, which is open on main.
+  - The window β ≈ 35–38 holds for pure gauge only.
+  - "The scale ratio is the hierarchy itself" is wrong. That ratio is 5.5–8.7 decades toward the UV, which a coarsening ladder cannot reach.
+  - Dropping g_bare = 1 does not reduce the hierarchy to one number. It needs a supplied non-QCD confining sector at g² ≈ 0.285 ± 0.017, plus a supplied link to v.
+- **Main defects.**
+  - Defect 2 is better described as a misidentification: 0.019 is observed α_s at M_Pl, not a conversion of the β = 6 value.
+  - Defect 1 is real but overcounted. The true incompatibility is between the Planck and QCD placements: 18.8 decades.
+  - Main carries two β = 6 values of r0/a: 5.006 and 5.37.

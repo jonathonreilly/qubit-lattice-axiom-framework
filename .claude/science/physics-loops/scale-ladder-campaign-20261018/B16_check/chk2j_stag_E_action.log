@@ -1,0 +1,10 @@
+  FWD L=8: |dE - (-central d_0 E)| / |d_0 E| = 7.1456e-01
+  FWD L=12: |dE - (-central d_0 E)| / |d_0 E| = 4.5922e-01
+  FWD L=16: |dE - (-central d_0 E)| / |d_0 E| = 3.3909e-01
+  FWD L=24: |dE - (-central d_0 E)| / |d_0 E| = 2.2341e-01
+  STAG L=8: |dE - (-central d_0 E)| / |d_0 E| = 1.9996e+00
+  STAG L=12: |dE - (-central d_0 E)| / |d_0 E| = 2.6122e+00
+  STAG L=16: |dE - (-central d_0 E)| / |d_0 E| = 3.3088e+00
+  STAG L=24: |dE - (-central d_0 E)| / |d_0 E| = 4.7814e+00
+  slopes: {'FWD': np.float64(-1.06), 'STAG': np.float64(0.8)}
+FAIL: C2j staggered G' moves E by an O(1) (in units of E) staggered amount -- its error relative to a d_0 E grows ~L -- while FWD's error stays bounded

@@ -1,0 +1,31 @@
+PASS: C2e gravity alone: {C_g(N),C_g(M)} = G_g[sigma xi~] exactly with sigma = s K/(4 alpha): {s: (sigma, sigma/kappa, rel.resid)} = {-1: (-0.265151515152, -1.0, '2.7e-16'), 1: (0.265151515152, 1.0, '2.7e-16')}
+  (timing, s, cB/kappa, closes with G', closes with 2G'):
+    ('FWD', -1, 1.0, np.True_, np.False_)
+    ('FWD', -1, -1.0, np.False_, np.False_)
+    ('FWD', -1, 2.0, np.False_, np.True_)
+    ('FWD', -1, 0.5, np.False_, np.False_)
+    ('FWD', 1, 1.0, np.False_, np.False_)
+    ('FWD', 1, -1.0, np.True_, np.False_)
+    ('FWD', 1, 2.0, np.False_, np.False_)
+    ('FWD', 1, 0.5, np.False_, np.False_)
+    ('STAG', -1, 1.0, np.True_, np.False_)
+    ('STAG', -1, -1.0, np.False_, np.False_)
+    ('STAG', -1, 2.0, np.False_, np.True_)
+    ('STAG', -1, 0.5, np.False_, np.False_)
+    ('STAG', 1, 1.0, np.False_, np.False_)
+    ('STAG', 1, -1.0, np.True_, np.False_)
+    ('STAG', 1, 2.0, np.False_, np.False_)
+    ('STAG', 1, 0.5, np.False_, np.False_)
+PASS: C2f gravity + Maxwell closes into ONE total relabelling G_g[xi] + G'[xi] iff cB = -s K/(4 alpha), for the FWD timing (L=3) and the STAG timing (L=4)
+PASS: C2g with 2G' the closing value moves to cB = -2 s kappa (the cone is tied to the generator's normalisation)
+  C2h: delta_xi F vs L_xi F on smooth fields (relative L2 error):
+    FWD: L=8: 3.9679e-01, L=12: 2.6891e-01, L=16: 2.0285e-01, L=20: 1.6271e-01
+    STAG: L=8: 1.1282e+00, L=12: 1.1858e+00, L=16: 1.2082e+00, L=20: 1.2190e+00
+    FWD: fitted log-log slope -0.97
+    STAG: fitted log-log slope 0.09
+FAIL: C2h induced generator acts on F as the Lie derivative L_xi F with UNIT coefficient in the continuum limit (smooth non-uniform xi), both timings: the normalisation is computed, not chosen
+TOTAL: PASS=3 FAIL=1
+
+real	2m7.936s
+user	3m4.537s
+sys	0m1.777s

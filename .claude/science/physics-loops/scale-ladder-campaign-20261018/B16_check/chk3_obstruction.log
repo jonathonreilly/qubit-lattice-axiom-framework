@@ -1,0 +1,30 @@
+PASS: C3a(L=3) exact identity {G_A[e0],H_EM(1)} = (g^2/2)sum(dE)^2 - (cB/2g^2)sum(dF)^2 + g^2 sum E_(w-e0,0) Gauss_w (EE part True, AA part True; #EE monomials 216, #AA 1026)
+PASS: C3a(L=4) exact identity {G_A[e0],H_EM(1)} = (g^2/2)sum(dE)^2 - (cB/2g^2)sum(dF)^2 + g^2 sum E_(w-e0,0) Gauss_w (EE part True, AA part True; #EE monomials 512, #AA 3008)
+PASS: C3b my G_g[e0 uniform] = 0 identically, so at order (matter^2, h^0) no h- or P-coupling enters {G[e0], C(N)}: the uniform-shift identity is coupling independent
+  (L, D={G[e0],H(1)}, B={G[e0],H(N)}, R=B-H(N'_best), H(1)); ratios D/B, R/B:
+    FWD    L=  8  D=-1.7514e+00  B=-1.9187e+00  R= 1.7995e+00  H1= 9.7628e+00  D/B= 9.128e-01  R/B=-9.379e-01  D/H1=-1.794e-01
+    FWD    L= 12  D=-5.4968e-01  B=-6.0954e-01  R= 5.6896e-01  H1= 6.6986e+00  D/B= 9.018e-01  R/B=-9.334e-01  D/H1=-8.206e-02
+    FWD    L= 16  D=-2.3659e-01  B=-2.6604e-01  R= 2.4620e-01  H1= 5.0746e+00  D/B= 8.893e-01  R/B=-9.254e-01  D/H1=-4.662e-02
+    FWD    L= 24  D=-7.1112e-02  B=-8.2176e-02  R= 7.4455e-02  H1= 3.4073e+00  D/B= 8.654e-01  R/B=-9.060e-01  D/H1=-2.087e-02
+    FWD    L= 32  D=-3.0151e-02  B=-3.5762e-02  R= 3.1674e-02  H1= 2.5619e+00  D/B= 8.431e-01  R/B=-8.857e-01  D/H1=-1.177e-02
+    FWD: log-log slopes vs L: B -2.88, D/B -0.06, R/B -0.04
+    STAG   L=  8  D= 2.1116e-17  B=-5.1466e-02  R= 1.4083e-02  H1= 9.7628e+00  D/B=-4.103e-16  R/B=-2.736e-01  D/H1= 2.163e-18
+    STAG   L= 12  D= 2.5761e-16  B=-1.7169e-02  R= 6.3934e-03  H1= 6.6986e+00  D/B=-1.500e-14  R/B=-3.724e-01  D/H1= 3.846e-17
+    STAG   L= 16  D= 1.3878e-17  B=-8.2996e-03  R= 1.4770e-04  H1= 5.0746e+00  D/B=-1.672e-15  R/B=-1.780e-02  D/H1= 2.735e-18
+    STAG   L= 24  D=-1.3878e-17  B=-3.2227e-03  R= 1.2732e-03  H1= 3.4073e+00  D/B= 4.306e-15  R/B=-3.951e-01  D/H1=-4.073e-18
+    STAG   L= 32  D= 3.4694e-18  B=-1.7170e-03  R= 1.0546e-03  H1= 2.5619e+00  D/B=-2.021e-15  R/B=-6.142e-01  D/H1= 1.354e-18
+    STAG: log-log slopes vs L: B -2.45, D/B 0.67, R/B 0.54
+    scalar L=  8  D=-2.5305e-15  B= 3.2192e-01  R= 8.5174e-02  H1= 1.4919e+02  D/B=-7.861e-15  R/B= 2.646e-01  D/H1=-1.696e-17
+    scalar L= 12  D=-1.1117e-15  B= 4.7576e-01  R= 5.9318e-02  H1= 2.3019e+02  D/B=-2.337e-15  R/B= 1.247e-01  D/H1=-4.829e-18
+    scalar L= 16  D=-1.0568e-15  B= 5.3709e-01  R= 3.8320e-02  H1= 3.0995e+02  D/B=-1.968e-15  R/B= 7.135e-02  D/H1=-3.410e-18
+    scalar L= 24  D= 3.9604e-18  B= 5.8346e-01  R= 1.8717e-02  H1= 4.6821e+02  D/B= 6.788e-18  R/B= 3.208e-02  D/H1= 8.459e-21
+    scalar L= 32  D= 1.0774e-14  B= 6.0021e-01  R= 1.0873e-02  H1= 6.2581e+02  D/B= 1.795e-14  R/B= 1.812e-02  D/H1= 1.722e-17
+    scalar: log-log slopes vs L: B 0.42, D/B -1.44, R/B -1.94
+FAIL: C3c-FWD forward Maxwell: uniform-shift defect D/B ~ L^-0.06 and full residual R/B ~ L^-0.04: O(a) confirmed on smooth fields
+PASS: C3c-scalar scalar: D = 0 (max |D| 1.1e-14); residual R/B ~ L^-1.94: O(a^2)
+  STAG (measured, no prior expectation): D/B slope 0.67, R/B slope 0.54; max |D| = 2.58e-16
+TOTAL: PASS=4 FAIL=1
+
+real	1m38.590s
+user	1m31.725s
+sys	0m6.951s

@@ -1,0 +1,38 @@
+PASS: C3a(L=3) exact identity {G_A[e0],H_EM(1)} = (g^2/2)sum(dE)^2 - (cB/2g^2)sum(dF)^2 + g^2 sum E_(w-e0,0) Gauss_w (EE part True, AA part True; #EE monomials 216, #AA 1026)
+PASS: C3a(L=4) exact identity {G_A[e0],H_EM(1)} = (g^2/2)sum(dE)^2 - (cB/2g^2)sum(dF)^2 + g^2 sum E_(w-e0,0) Gauss_w (EE part True, AA part True; #EE monomials 512, #AA 3008)
+PASS: C3b my G_g[e0 uniform] = 0 identically, so at order (matter^2, h^0) no h- or P-coupling enters {G[e0], C(N)}: the uniform-shift identity is coupling independent
+  (L, D={G[e0],H(1)}, B={G[e0],H(N)}, R=B-H(N'_best), H(1)); ratios D/B, R/B:
+    FWD    L=  8  D=-1.7514e+00  B=-2.2768e+00  R= 2.2768e+00  H1= 9.7628e+00  D/B= 7.692e-01  R/B=-1.000e+00
+    FWD    L= 12  D=-5.4968e-01  B=-7.1458e-01  R= 7.1458e-01  H1= 6.6986e+00  D/B= 7.692e-01  R/B=-1.000e+00
+    FWD    L= 16  D=-2.3659e-01  B=-3.0757e-01  R= 3.0757e-01  H1= 5.0746e+00  D/B= 7.692e-01  R/B=-1.000e+00
+    FWD    L= 24  D=-7.1112e-02  B=-9.2446e-02  R= 9.2446e-02  H1= 3.4073e+00  D/B= 7.692e-01  R/B=-1.000e+00
+    FWD    L= 32  D=-3.0151e-02  B=-3.9196e-02  R= 3.9196e-02  H1= 2.5619e+00  D/B= 7.692e-01  R/B=-1.000e+00
+    FWD: log-log slopes vs L: B -2.93, D/B 0.00, R/B 0.00
+    STAG   L=  8  D= 2.1116e-17  B=-1.1970e-16  R= 8.6668e-17  H1= 9.7628e+00  D/B=-1.764e-01  R/B=-7.241e-01
+    STAG   L= 12  D= 2.5761e-16  B= 2.5934e-16  R= 2.2185e-16  H1= 6.6986e+00  D/B= 9.933e-01  R/B= 8.554e-01
+    STAG   L= 16  D= 1.3878e-17  B=-5.5511e-17  R= 5.8067e-17  H1= 5.0746e+00  D/B=-2.500e-01  R/B=-1.046e+00
+    STAG   L= 24  D=-1.3878e-17  B=-6.9389e-18  R= 8.2276e-18  H1= 3.4073e+00  D/B= 2.000e+00  R/B=-1.186e+00
+/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B16_check/chk3_obstruction.py:249: RuntimeWarning: divide by zero encountered in scalar divide
+  print(f"    {k:6s} L={L:3d}  D={D: .4e}  B={B: .4e}  R={R: .4e}  H1={H1: .4e}  D/B={D / B: .3e}  R/B={R / B: .3e}")
+    STAG   L= 32  D= 3.4694e-18  B= 0.0000e+00  R= 1.0786e-19  H1= 2.5619e+00  D/B= inf  R/B= inf
+/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B16_check/chk3_obstruction.py:239: RuntimeWarning: divide by zero encountered in log
+  return np.polyfit(np.log(Ls), np.log(np.abs(vals)), 1)[0]
+/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B16_check/chk3_obstruction.py:251: RuntimeWarning: divide by zero encountered in scalar divide
+  sl[k] = (slope(Lv, [r[2] for r in rows]), slope(Lv, [r[1] / r[2] if r[1] != 0 else 1e-300 for r in rows]),
+/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B16_check/chk3_obstruction.py:252: RuntimeWarning: divide by zero encountered in scalar divide
+  slope(Lv, [r[3] / r[2] for r in rows]))
+    STAG: log-log slopes vs L: B nan, D/B nan, R/B nan
+    scalar L=  8  D=-2.5305e-15  B=-7.5029e-16  R= 8.8907e-16  H1= 1.4919e+02  D/B= 3.373e+00  R/B=-1.185e+00
+    scalar L= 12  D=-1.1117e-15  B=-2.4261e-16  R= 1.4027e-16  H1= 2.3019e+02  D/B= 4.582e+00  R/B=-5.781e-01
+    scalar L= 16  D=-1.0568e-15  B= 1.4416e-15  R= 1.3175e-15  H1= 3.0995e+02  D/B=-7.331e-01  R/B= 9.139e-01
+    scalar L= 24  D= 3.9604e-18  B= 7.1257e-15  R= 6.2282e-15  H1= 4.6821e+02  D/B= 5.558e-04  R/B= 8.740e-01
+    scalar L= 32  D= 1.0774e-14  B= 8.6736e-17  R= 7.6707e-17  H1= 6.2581e+02  D/B= 1.242e+02  R/B= 8.844e-01
+    scalar: log-log slopes vs L: B -0.21, D/B -0.81, R/B -0.07
+FAIL: C3c-FWD forward Maxwell: uniform-shift defect D/B ~ L^0.00 and full residual R/B ~ L^0.00: O(a) confirmed on smooth fields
+FAIL: C3c-scalar scalar: D = 0 (max |D| 1.1e-14); residual R/B ~ L^-0.07: O(a^2)
+  STAG (measured, no prior expectation): D/B slope nan, R/B slope nan
+TOTAL: PASS=3 FAIL=2
+
+real	1m49.864s
+user	1m38.352s
+sys	0m10.057s

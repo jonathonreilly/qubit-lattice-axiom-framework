@@ -178,7 +178,7 @@ def main():
     errs = {}
     for name in ("FWD", "STAG"):
         errs[name] = []
-        for L in (8, 12, 16, 24):
+        for L in (8, 12, 16, 20):
             lt = Lat(L)
             u, w = uniform_timing(lt, {j: (Fr(1), Fr(0)) for j in range(3)}, {ij: {"00": Fr(1)} for ij in lt.pairs}) if name == "FWD" else staggered(lt, 0)
             X = induced_generator(lt, u, w, Fr(1))
@@ -220,11 +220,10 @@ def lie_test(lat, X):
         r[i] += 0.5  # bond midpoint
         xi[(x, i)] = xic(i, r)
     nL = len(lat.links)
-    G = np.zeros((nL, nL))
+    dA = np.zeros(nL)  # {A_k, G'} = dG'/dE_k = sum_b xi_b sum_a X_b[k,a] A_a  (sparse)
     for b, d in X.items():
         for (k, a), v in d.items():
-            G[k, a] += xi[b] * float(v)
-    dA = G @ A  # {A_k, G'} = dG'/dE_k
+            dA[k] += xi[b] * float(v) * A[a]
     dF = np.array([sum(s * dA[a] for a, s in fp.items()) for fp in lat.Fp])
     # continuum L_xi F at plaquette centre, numerical derivatives of the continuum functions
     h = 1e-4

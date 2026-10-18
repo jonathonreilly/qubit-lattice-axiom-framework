@@ -1,0 +1,15 @@
+[PASS] uniaxial diag(vt,vt,va): [h_N,h_M] = -(frame-E Kosmann derivative along xi = g w), exactly
+[PASS] uniaxial diag(vt,vt,va): derivative part is scalar, -sum g^kj w_j d_k (no spin-matrix derivative term)
+[PASS] generic rational triad: [h_N,h_M] = -(frame-E Kosmann derivative along xi = g w), exactly
+[PASS] generic rational triad: derivative part is scalar, -sum g^kj w_j d_k (no spin-matrix derivative term)
+[PASS] reflected (det<0) triad: [h_N,h_M] = -(frame-E Kosmann derivative along xi = g w), exactly
+[PASS] reflected (det<0) triad: derivative part is scalar, -sum g^kj w_j d_k (no spin-matrix derivative term)
+[PASS] derivative part = -kappa (w.grad) for arbitrary lapses N, M  <=>  g = kappa I (any symmetric cone metric)
+[PASS] uniaxial spin part: -(i/4)(vt va curl_x w sigma_x + vt va curl_y w sigma_y + vt^2 curl_z w sigma_z) [plus -(1/2)div xi]
+[PASS] improved density h_N + d_jN psi^dag B^j psi (general Hermitian B^j): spin trace of the derivative part is still -g^kj w_j d_k (any extra derivative term is traceless, so it cannot supply the missing scalar part)
+   (improvement generates a traceless matrix-valued derivative term: True - it must itself vanish for closure)
+[PASS] naive walk: all eight species have the same derivative part -w.grad (one isotropic cone, speed 1)
+[PASS] naive walk: each species' spin part is det(s) (i/4)(curl w).tau, tau_a = s_a sigma_a
+[PASS] naive walk: the on-site Kosmann spin term (i/4) curl w . sigma holds only at k = 0 and (pi,pi,pi) (6 species need a momentum-dependent spin structure, as B15 T7/O5b)  [(-1, -1, -1), (1, 1, 1)]
+
+TOTAL: PASS=12 FAIL=0

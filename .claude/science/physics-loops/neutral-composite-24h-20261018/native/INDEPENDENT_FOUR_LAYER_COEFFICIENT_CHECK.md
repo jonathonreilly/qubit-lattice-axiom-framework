@@ -1,0 +1,20 @@
+# Preliminary independent four-layer coefficient check
+
+Disposition: PASS for the proposed order-four wall-free operator, with the original periodic distance-two readout convention retained. This is a focused algebra/scope check, not a numerical ground-phase or actual-window theorem. Geometry: periodic longitudinal circumference four, open transverse square grid, native positive-direction bonds counted as supplied. Scalar energy/source terms are omitted below.
+
+At four transverse insertions, an offdiagonal N0 word must flip every site of at least two columns. Eight spin incidences exhaust the four insertions. Hence it flips exactly two adjacent columns, each site once, with the connecting transverse edge used at all four z values. No spectator, mixed-direction, repeated-edge or nonadjacent-column winding graph fits this incidence budget. Each proper rung subset has walls, so no folded return contributes to this minimal offdiagonal monomial. XX and YY signs agree at even longitudinal length four.
+
+The exact cyclic path sum is binom(6,3)=20, giving gamma4=20 J lambda^4/8^3=5 J lambda^4/128. A diagonal orientation-dependent four-insertion return is a transverse elementary square. The condition that every physical vertex be flipped an even number of times forces its four distinct edges to lie at the same z. Summing its usual -J lambda^4/128 coefficient over four layers gives -4 J lambda^4 sum P/128. Repeated-edge diagonal returns are orientation independent and contribute only scalars on the wall-free configurations. Open transverse boundaries delete absent squares/edges, rather than introduce another four-edge cycle. Thus the proposed complete nonconstant order-four operator is
+
+ H4=-(J lambda^4/128)[4 sum P+5 sum_edges Xbar_i Xbar_j].
+
+The original C=sum_z Z_z Z_(z+2) on a four-cycle counts each opposite pair twice. This is essential: retain that original directed-sum convention rather than silently replacing it by a sum over distinct undirected distance-two bonds. One isolated virtual spin flip still changes two counted terms, giving -4 per column. For a two-column rung subset S the source change remains -4 d2(S)/sqrt(V), with d2 computed on all four directed z positions. The explicit L4 subset identity gives A4=36/5. Therefore the winding source coefficient is -(5/128)(18/5)lambda^4/sqrt(V)=-18lambda^4/(128sqrt(V)); the square source coefficient is three times its energy coefficient divided by Jsqrt(V), giving -12lambda^4 sum P/(128sqrt(V)). Thus
+
+ C4=-(lambda^4/(128sqrt(V)))[12 sum P+18 sum_edges Xbar_i Xbar_j],
+ C4-3H4/(Jsqrt(V))=-3lambda^4 sum_edges Xbar_i Xbar_j/(128sqrt(V)).
+
+The real native derivative-connection check still applies at L4: its first possible offdiagonal block coefficient is order four and the lower Hamiltonian block is scalar, so its commutator cannot change C4. This assumes the same word-derived gauge for H and C and no arbitrary h-dependent block rotation. The source derivative is bookkeeping at zero, not an added physical interaction.
+
+Crucially both plaquette and pair-flip terms now appear at the SAME order. The previous L>=6 argument treating winding as a smaller perturbation of the plaquette clusters does not apply. Their fixed ratio 5/4 defines the leading interacting two-dimensional coefficient model; its spectrum and state selection require solving that model. At each fixed finite transverse box, analytic wall-block reduction yields this leading operator, but a growing-area or infinite-volume theorem, gap, phase, positive source window, and source-driven dynamics do not follow from the coefficients alone. The nonproportional source remainder is valid algebra, not by itself a nonzero inelastic matrix element.
+
+Supporting previously inspected exact controls: native/neutral_winding_control.py includes L4 path sum20; native/neutral_column_readout_control.py includes A4=36/5 and explicitly counted periodic distance-two readout. No new shared files were changed and no root-owned sector numerics were duplicated.

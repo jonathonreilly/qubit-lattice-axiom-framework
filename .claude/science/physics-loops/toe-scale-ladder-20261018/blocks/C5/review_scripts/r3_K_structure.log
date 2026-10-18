@@ -1,0 +1,17 @@
+trial 0: m=(np.int64(1), np.int64(-1), np.int64(-1)), W3 (N=26,31) = -1.60e-15+2.45e-14j, +5.08e-14-1.52e-14j; min|det| 0.728 (= 0.728 expected, |0.7+0.2i|)
+PASS: trial 0: Laurent-GL product diag(c z^m,1,1)*E1*E2*E3 has W3 = 0 (exact grid, |W3|<1e-9)
+trial 1: m=(np.int64(-1), np.int64(0), np.int64(-1)), W3 (N=26,31) = -3.92e-66+7.50e-67j, +3.25e-66+3.40e-66j; min|det| 0.728 (= 0.728 expected, |0.7+0.2i|)
+PASS: trial 1: Laurent-GL product diag(c z^m,1,1)*E1*E2*E3 has W3 = 0 (exact grid, |W3|<1e-9)
+trial 2: m=(np.int64(-1), np.int64(-1), np.int64(-1)), W3 (N=26,31) = +2.38e-15-3.14e-15j, -5.12e-16-1.37e-15j; min|det| 0.728 (= 0.728 expected, |0.7+0.2i|)
+PASS: trial 2: Laurent-GL product diag(c z^m,1,1)*E1*E2*E3 has W3 = 0 (exact grid, |W3|<1e-9)
+W3[V2]=-1.00000000  W3[V2+1_2]=-1.00000000  W3[(V2+1_2)E]=-1.00000000  W3[V2 V2]=-2.00000000
+PASS: stabilisation: W3[V2 (+) 1_2] = W3[V2] = -1
+PASS: elementary factor (Laurent p, 4x4) does not change W3: W3[(V2(+)1)E] = -1
+PASS: additivity: W3[V2 V2] = -2
+QWZ m=1.0: Chern(Q) = -1.000000, W3[1-Q+z3 Q] = -1.00000000
+PASS: slice identity m=1.0: |W3| = |Chern| (integers)
+QWZ m=-1.0: Chern(Q) = +1.000000, W3[1-Q+z3 Q] = +1.00000000
+PASS: slice identity m=-1.0: |W3| = |Chern| (integers)
+QWZ m=3.0: Chern(Q) = -0.000000, W3[1-Q+z3 Q] = -0.00000000
+PASS: slice identity m=3.0: |W3| = |Chern| (integers)
+TOTAL: PASS=9 FAIL=0

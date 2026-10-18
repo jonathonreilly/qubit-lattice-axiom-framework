@@ -1,0 +1,29 @@
+identity                           ind=1.000000 (dimRL=16, dimRR=16)   ind(P a P^-1)=1.000000 (dimRL=16, dimRR=16)
+PASS identity: ind = 1.0 
+PASS identity: dim R_L * dim R_R = d^4 = 256 
+PASS identity: (I7) ind(P a P^-1) = 1/ind(a) 
+qubit right shift                  ind=2.000000 (dimRL=4, dimRR=64)   ind(P a P^-1)=0.500000 (dimRL=64, dimRR=4)
+PASS qubit right shift: ind = 2.0 
+PASS qubit right shift: dim R_L * dim R_R = d^4 = 256 
+PASS qubit right shift: (I7) ind(P a P^-1) = 1/ind(a) 
+qubit left shift                   ind=0.500000 (dimRL=64, dimRR=4)   ind(P a P^-1)=2.000000 (dimRL=4, dimRR=64)
+PASS qubit left shift: ind = 0.5 
+PASS qubit left shift: dim R_L * dim R_R = d^4 = 256 
+PASS qubit left shift: (I7) ind(P a P^-1) = 1/ind(a) 
+random brickwork depth 2           ind=1.000000 (dimRL=16, dimRR=16)   ind(P a P^-1)=1.000000 (dimRL=16, dimRR=16)
+PASS random brickwork depth 2: ind = 1.0 
+PASS random brickwork depth 2: dim R_L * dim R_R = d^4 = 256 
+PASS random brickwork depth 2: (I7) ind(P a P^-1) = 1/ind(a) 
+right shift o brickwork            ind=2.000000 (dimRL=4, dimRR=64)   ind(P a P^-1)=0.500000 (dimRL=64, dimRR=4)
+PASS right shift o brickwork: ind = 2.0 
+PASS right shift o brickwork: dim R_L * dim R_R = d^4 = 256 
+PASS right shift o brickwork: (I7) ind(P a P^-1) = 1/ind(a) 
+left shift o brickwork             ind=0.500000 (dimRL=64, dimRR=4)   ind(P a P^-1)=2.000000 (dimRL=4, dimRR=64)
+PASS left shift o brickwork: ind = 0.5 
+PASS left shift o brickwork: dim R_L * dim R_R = d^4 = 256 
+PASS left shift o brickwork: (I7) ind(P a P^-1) = 1/ind(a) 
+shift^2 (two qubits = one cell)    ind=4.000000 (dimRL=1, dimRR=256)   ind(P a P^-1)=0.250000 (dimRL=256, dimRR=1)
+PASS shift^2 (two qubits = one cell): ind = 4.0 
+PASS shift^2 (two qubits = one cell): dim R_L * dim R_R = d^4 = 256 
+PASS shift^2 (two qubits = one cell): (I7) ind(P a P^-1) = 1/ind(a) 
+TOTAL: PASS=21 FAIL=0

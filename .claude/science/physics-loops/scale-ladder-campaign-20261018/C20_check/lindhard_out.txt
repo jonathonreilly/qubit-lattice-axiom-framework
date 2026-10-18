@@ -1,1 +1,13 @@
 mu = E_N = -2.28284271247462
+multiplicities x dim: {'A1g': 3, 'A1u': 3, 'A2g': 3, 'A2u': 3, 'Eg': 12, 'Eu': 12, 'T1g': 27, 'T1u': 27, 'T2g': 27, 'T2u': 27} sum 144
+q=0 {'A1u': np.float64(1.197), 'T1u': np.float64(0.8033), 'T1g': np.float64(0.8005), 'A1g': np.float64(0.7812)}
+Q {'T2u': np.float64(1.0054), 'T2g': np.float64(1.0051), 'A2u': np.float64(0.5881), 'A2g': np.float64(0.588)}
+A1g including the trace (charge) channel: 1.2107 (26s)
+q=0 A1u: Lindhard 1.1970  vs  -Omega'' = 1.1969
+Q A2u: Lindhard 0.5881  vs  -Omega'' = 0.5881
+Q T2u: Lindhard 1.0054  vs  -Omega'' = 1.0054
+scan: (N, T, offset) -> chi(A1u,0), chi(T1u,0), chi(T2u,Q), chi(A2u,Q)
+12 0.02 0.037 [0.9988 0.7757 0.8942 0.6457] (12s)
+12 0.01 0.0 [1.1974 0.8034 1.0057 0.5881] (12s)
+16 0.01 0.021 [1.1917 0.8011 1.0016 0.5878] (28s)
+16 0.005 0.021 [1.3583 0.8708 1.1195 0.6074] (29s)

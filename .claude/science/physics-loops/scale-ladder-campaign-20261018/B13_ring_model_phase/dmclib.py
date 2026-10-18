@@ -154,7 +154,7 @@ def run(lat, sigma0, V, N, dt, ntherm_t, nblocks, block_t, Csrc, seed_=1, J=1.0,
             Emix = (V - J) * nf.mean()
             Es.append(Emix)
             ET = 0.99 * ET + 0.01 * Emix
-            M2[b, k] = (Mac * Mac).mean(0) - Mac.mean(0) ** 2
+            M2[b, k] = (Mac * Mac).mean(0)  # <M>=0 by the sigma -> -sigma symmetry; no population-mean subtraction
         if verbose and b % max(1, nblocks // 10) == 0:
             print(f"    block {b}: Emix~{np.mean(Es[-nst:]):.5f}", flush=True)
     return dict(Emix=np.array(Es), Egrowth=np.array(Eg), M2=M2, tau=dt * np.arange(1, nst + 1), N=N, dt=dt,

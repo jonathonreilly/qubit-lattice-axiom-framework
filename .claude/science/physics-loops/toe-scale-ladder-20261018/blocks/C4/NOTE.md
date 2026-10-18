@@ -99,7 +99,7 @@ re-verified in Laurent-polynomial arithmetic. Phases are then fixed by testing t
 choices against the signed covariance relation for every R. A third count for H = O,
 `c4_05_independent_O.py`, uses a different route: orbit labelling, explicit complex Pauli
 matrices, and commutation counting, with no F_2 linear algebra and no shared enumerator.
-INDEPENDENT_RESULT.
+It reproduces 528 / 176 / 32 / 1 / 1 signed QCAs, and in the axis and full cases the identity (`logs/c4_05_independent_O.txt`, PASS=7 FAIL=0). Disclosure: its expected constants were taken from c4_02's output. It is a cross-route comparison, not a blind prediction.
 
 ## Theorem 1 — O-covariant classification on the 27-cell (exhaustive certificate)
 
@@ -168,7 +168,13 @@ and H fixes no nonzero vector. O, T, D4, D3 and the axis D2 all satisfy this. Pu
 
 Checked on instances (`logs/c4_04_dynamics.txt`) for all 168 spreading-class unsigned solutions
 (trivial and sign) and n ≤ 8: Cayley–Hamilton, the Dickson identity, the vertex claim, the cone
-bound, and the absence of glider eigenvalues. DYNAMICS_NUMERICS.
+bound, and the absence of glider eigenvalues. *Numerics (evidence, not proof):* there are 28
+representatives, one per (action, orbit shapes of τ, orbit shapes of M), iterated exactly over F_2
+up to n = 32 from both X_0 and Z_0. For all 28, the Chebyshev front radius equals n at every step,
+so the front saturates the cell light cone even when Newt(τ) is only the octahedron. log |supp|
+against log n has slope 1.9 to 2.7, below 3, so the support is a sparse, fractal-like subset of
+the cone, as expected from Frobenius in characteristic 2. Example: τ = 1 + face orbit gives
+|supp α^n(X_0)| = 7, 37, 199, 1069, 5743 at n = 2, 4, 8, 16, 32.
 
 **Twisted versions.** TR-twist conjugation sends α to α^{-1}, and tr M^{-1} = tr M, so τ is still
 invariant and Theorem 2 still applies. For twisted (ρ_in ≠ ρ_out) intertwiners Theorem 2 does not
@@ -190,10 +196,11 @@ apply directly, but there are no signed solutions (below).
 | D3 | sign | 600 | 800 | 6 | 198 | 12 (4 valid) | 390 (64 valid) |
 | D3 | sign-f | 64 | 128 | 2 | 64 | 0 | 0 |
 | D3 | axis / full | 2 each | 2 each | 1 | 2 | 0 | 0 |
-| D2 | (all five) | D2_ROWS |
+| D2 | trivial / sign / sign-f / axis (all restrict to the trivial action on D2) | 4020 each | 16080 each | 6 | 768 | 18 (along all three axes) | 3234 |
+| D2 | full | 4020 | 2680 | 6 | 768 (382 valid) | 18 (**0 valid**) | 3234 (**288 valid**) |
 
 For T, the sign and sign-f actions restrict to the trivial action, because T = A4 is their
-kernel. "periodic / glider / spreading" counts unsigned matrices; "valid" means at least one phase
+kernel. For D2 = V4, the axis action restricts to the trivial action too. "periodic / glider / spreading" counts unsigned matrices; "valid" means at least one phase
 choice is covariant.
 
 **What this says about motion with soldering.** Under axis or full soldering, no subgroup of

@@ -40,3 +40,11 @@
 - c4_05 independent recount (Pauli-matrix route) PASS=7: 528/176/32/1/1 matches c4_02.
 - r2 run was too slow (~1h/action); added vectorised dK=0 fast path (form_eq_mask), validated at r1 vs earlier
   brute-force-checked counts (O 1, T 3, D4 64, D3 2 for axis/full). Queue2: r2 -> D2 -> rerun 02, 03 with final lib.
+
+## progress 5 (~4h)
+- c4_06 r2 (TOTAL PASS=5 FAIL=2): PREDICTION FALSIFIED. Under O with axis or full soldering at radius 2 there are
+  4 unsigned / 4 signed solutions: identity + 3 entangling, all constant trace (periodic). sign-f r2: 1024 unsigned,
+  all periodic. The 2 FAILs are the identity-only predictions; log kept as is.
+- D2 (PASS=15): trivial/sign/sign-f/axis restrict to trivial action on D2 (4020 unsigned; 18 gliders along 3 axes);
+  full: 2680 signed; with valid phases 382 periodic, 288 spreading, 0 gliders.
+- c4_07 (analysis of r2 soldered solutions) queued after 02/03 reruns.

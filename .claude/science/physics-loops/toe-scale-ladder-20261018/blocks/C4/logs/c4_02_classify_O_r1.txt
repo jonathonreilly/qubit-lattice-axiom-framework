@@ -4,14 +4,14 @@ PASS every O-orbit of cell sites is closed under r -> -r (so invariant polys are
 == O-covariant, same action in and out ==
 PASS O/trivial: brute-force and split enumerators agree (132 unsigned solutions)
 PASS O/trivial: every unsigned solution is symplectic in Laurent arithmetic
-  O/trivial: dim W = 16, unsigned = 132, signed QCAs = 528, split time 1.1s
+  O/trivial: dim W = 16, unsigned = 132, signed QCAs = 528, split time 1.2s
 PASS O/trivial: every solution has det = 1
   O/trivial: on-site 6, entangling 126, nonconstant trace 84, trace 0: 46, trace 1: 2
 PASS O/trivial: every unsigned solution has the form C1 E(g) C2 (C on-site Clifford, E(g) = one layer of CZ/S-type gates along an O-orbit polynomial g)
 PASS O/trivial: solution set equals {C1 E_l(g) C2 : C1,C2 in SL2(F2), g in V_inv}
 PASS O/sign: brute-force and split enumerators agree (132 unsigned solutions)
 PASS O/sign: every unsigned solution is symplectic in Laurent arithmetic
-  O/sign: dim W = 16, unsigned = 132, signed QCAs = 176, split time 0.9s
+  O/sign: dim W = 16, unsigned = 132, signed QCAs = 176, split time 1.2s
 PASS O/sign: every solution has det = 1
   O/sign: on-site 6, entangling 126, nonconstant trace 84, trace 0: 46, trace 1: 2
 PASS O/sign: every unsigned solution has the form C1 E(g) C2 (C on-site Clifford, E(g) = one layer of CZ/S-type gates along an O-orbit polynomial g)
@@ -24,7 +24,7 @@ PASS O/sign-f: every unsigned solution has the form C1 E(g) C2 (C on-site Cliffo
 PASS O/sign-f: no solution has nonconstant trace
 PASS O/axis: brute-force and split enumerators agree (1 unsigned solutions)
 PASS O/axis: every unsigned solution is symplectic in Laurent arithmetic
-  O/axis: dim W = 7, unsigned = 1, signed QCAs = 1, split time 0.1s
+  O/axis: dim W = 7, unsigned = 1, signed QCAs = 1, split time 0.0s
 PASS O/axis: every solution has det = 1
   O/axis: on-site 1, entangling 0, nonconstant trace 0, trace 0: 1, trace 1: 0
 PASS O/axis: every unsigned solution has the form C1 E(g) C2 (C on-site Clifford, E(g) = one layer of CZ/S-type gates along an O-orbit polynomial g)
@@ -32,7 +32,7 @@ PASS O/axis: the only unsigned solution is the identity matrix
 PASS O/axis: the only signed QCA is the identity automorphism
 PASS O/full: brute-force and split enumerators agree (1 unsigned solutions)
 PASS O/full: every unsigned solution is symplectic in Laurent arithmetic
-  O/full: dim W = 7, unsigned = 1, signed QCAs = 1, split time 0.1s
+  O/full: dim W = 7, unsigned = 1, signed QCAs = 1, split time 0.0s
 PASS O/full: every solution has det = 1
   O/full: on-site 1, entangling 0, nonconstant trace 0, trace 0: 1, trace 1: 0
 PASS O/full: every unsigned solution has the form C1 E(g) C2 (C on-site Clifford, E(g) = one layer of CZ/S-type gates along an O-orbit polynomial g)

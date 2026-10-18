@@ -12,3 +12,14 @@
   into Dirac; Dirac recovered at small k and m; Lorentz distorted in the UR regime);
   Bisio-D'Ariano-Tosini Ann. Phys. 354 (2015) 244 (arXiv:1212.2839; 1D Dirac QCA;
   channel discrimination; dispersive wave-packet equation). I read no full texts.
+- c7_exact.py run 1: 30/6. Five failures were sympy non-simplification: radsimp
+  did not expand, and a chiral-rotation matrix was pre-simplified before the
+  difference was taken. One was a real error in my own series:
+  arccos(1-u)^2 = 2u + u^2/3 + 4u^3/45. I had copied 8/45 from the parent runner,
+  where it is wrong. It enters only at O(k^6) and is irrelevant to my O(eps^4)
+  claims. Fixed. Run 2: 36/0.
+- Found while doing this: the parent runner's omega2_series uses 8u^3/45. This
+  changes only the isotropic |k|^6 coefficient x of parent Theorem 7, from
+  s^2(8s^4-5s^2+2)/360 to s^2(4s^4-5s^2+2)/360, and at b_iso from 1/243 to 1/1215.
+  The anisotropic y = -s^2/360 and z are unaffected because u^3 is isotropic at
+  leading order. c7_numeric checks this at 60 digits (independent path: direct arccos).

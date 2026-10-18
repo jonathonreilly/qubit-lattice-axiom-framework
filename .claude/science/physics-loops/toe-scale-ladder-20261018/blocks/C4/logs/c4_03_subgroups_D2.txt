@@ -3,3 +3,26 @@ PASS D2/trivial: all 4020 solutions symplectic (Laurent check) with det 1
 PASS D2/trivial: every trace is D2-invariant
   D2  trivial  dimW= 36 unsigned=  4020 signed= 16080 on-site=  6 periodic=  768 glider=   18 spreading=  3234 | with valid phases: {'periodic': 768, 'glider': 18, 'spreading': 3234} glider dirs=[(0, 0, 1), (0, 1, 0), (1, 0, 0)] (236.7s)
 PASS D2/sign: restriction is a homomorphism on D2
+PASS D2/sign: all 4020 solutions symplectic (Laurent check) with det 1
+PASS D2/sign: every trace is D2-invariant
+  D2  sign     dimW= 36 unsigned=  4020 signed= 16080 on-site=  6 periodic=  768 glider=   18 spreading=  3234 | with valid phases: {'periodic': 768, 'glider': 18, 'spreading': 3234} glider dirs=[(0, 0, 1), (0, 1, 0), (1, 0, 0)] (255.0s)
+PASS D2/sign-f: restriction is a homomorphism on D2
+PASS D2/sign-f: all 4020 solutions symplectic (Laurent check) with det 1
+PASS D2/sign-f: every trace is D2-invariant
+  D2  sign-f   dimW= 36 unsigned=  4020 signed= 16080 on-site=  6 periodic=  768 glider=   18 spreading=  3234 | with valid phases: {'periodic': 768, 'glider': 18, 'spreading': 3234} glider dirs=[(0, 0, 1), (0, 1, 0), (1, 0, 0)] (282.3s)
+PASS D2/axis: restriction is a homomorphism on D2
+PASS D2/axis: all 4020 solutions symplectic (Laurent check) with det 1
+PASS D2/axis: every trace is D2-invariant
+  D2  axis     dimW= 36 unsigned=  4020 signed= 16080 on-site=  6 periodic=  768 glider=   18 spreading=  3234 | with valid phases: {'periodic': 768, 'glider': 18, 'spreading': 3234} glider dirs=[(0, 0, 1), (0, 1, 0), (1, 0, 0)] (359.4s)
+PASS D2/full: restriction is a homomorphism on D2
+PASS D2/full: all 4020 solutions symplectic (Laurent check) with det 1
+PASS D2/full: every trace is D2-invariant
+  D2  full     dimW= 36 unsigned=  4020 signed=  2680 on-site=  6 periodic=  768 glider=   18 spreading=  3234 | with valid phases: {'periodic': 382, 'glider': 0, 'spreading': 288} glider dirs=[(0, 0, 1), (0, 1, 0), (1, 0, 0)] (369.9s)
+
+SUMMARY
+D2  trivial  dimW= 36 unsigned=  4020 signed= 16080 on-site=  6 periodic=  768 glider=   18 spreading=  3234 | with valid phases: {'periodic': 768, 'glider': 18, 'spreading': 3234} glider dirs=[(0, 0, 1), (0, 1, 0), (1, 0, 0)] (236.7s)
+D2  sign     dimW= 36 unsigned=  4020 signed= 16080 on-site=  6 periodic=  768 glider=   18 spreading=  3234 | with valid phases: {'periodic': 768, 'glider': 18, 'spreading': 3234} glider dirs=[(0, 0, 1), (0, 1, 0), (1, 0, 0)] (255.0s)
+D2  sign-f   dimW= 36 unsigned=  4020 signed= 16080 on-site=  6 periodic=  768 glider=   18 spreading=  3234 | with valid phases: {'periodic': 768, 'glider': 18, 'spreading': 3234} glider dirs=[(0, 0, 1), (0, 1, 0), (1, 0, 0)] (282.3s)
+D2  axis     dimW= 36 unsigned=  4020 signed= 16080 on-site=  6 periodic=  768 glider=   18 spreading=  3234 | with valid phases: {'periodic': 768, 'glider': 18, 'spreading': 3234} glider dirs=[(0, 0, 1), (0, 1, 0), (1, 0, 0)] (359.4s)
+D2  full     dimW= 36 unsigned=  4020 signed=  2680 on-site=  6 periodic=  768 glider=   18 spreading=  3234 | with valid phases: {'periodic': 382, 'glider': 0, 'spreading': 288} glider dirs=[(0, 0, 1), (0, 1, 0), (1, 0, 0)] (369.9s)
+TOTAL: PASS=15 FAIL=0

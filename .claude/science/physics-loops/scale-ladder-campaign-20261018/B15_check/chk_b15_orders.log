@@ -1,0 +1,5 @@
+PASS: O1 Weyl, timings (1/2,1/2) and (1,0): O(a^-2), O(a^-1) vanish and O(a^0) = -v^2 L_w (Kosmann, sigma) exactly
+PASS: O2 endpoint mean: O(a) part = 0; O(a^2) part nonzero and NOT absorbable by any translation-covariant G_f (any range, any 2x2 structure): kappa-cubic part != -sum kappa_j^3 g_j0/6 -> genuine O(a^2) obstruction
+FAIL: O3 one-endpoint timing (1,0): O(a) deviation from the symmetric Kosmann relabelling is nonzero BUT LINEAR in kappa, i.e. of the form sum_j kappa_j g_j1(K,p): it IS absorbable by an O(a)-corrected translation-covariant G_f (B15's 'O(a) obstruction' for t != 1/2 is only an O(a) deviation from the symmetric G_f)
+FAIL: O4 one-endpoint timing: after O(a) absorption the O(a^2) part is still non-absorbable (obstruction O(a^2))
+FAIL: O3b the t=1 O(a) term equals -v^2 L_(delta u), delta u_j = c d_j u_j with c = None: a half-bond shift of where the bond field is placed (one-sided relabelling), the fermionic analogue of B14-check caveat 2

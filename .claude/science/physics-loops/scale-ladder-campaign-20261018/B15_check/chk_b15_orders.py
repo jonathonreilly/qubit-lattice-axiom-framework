@@ -164,6 +164,11 @@ def g0_cubic(B0):
     return sum((B0.diff(kap[j]) * kap[j] ** 3 / 6 for j in range(3)), sp.zeros(*B0.shape)).applyfunc(sp.expand)
 
 
+def even_part(Mx):
+    X = (Mx[0:2, 0:2] + Mx[2:4, 2:4]) / 2
+    return sp.kronecker_product(E2, X).applyfunc(sp.expand)
+
+
 def clifford_odd(Mx):
     """Dirac 4x4: part outside {1_2 (x) X}: off-diagonal blocks, and (upper - lower)/2 of diagonal blocks"""
     U, Lo = Mx[0:2, 0:2], Mx[2:4, 2:4]
@@ -290,8 +295,7 @@ def dirac():
             e2 = list(ee); e2[j] += 1; madd(sh, tuple(e2), -M)
         form_ok &= clean(sh) == G.get(dn, {})
     vanish = {tv: not clean({e: M.subs(t, tv) for e, M in cross.items()}) for tv in (0, sp.Rational(1, 4), HALF, 1)}
-    odd = all(clifford_odd(M.subs(t, 0)) for M in cross.values() if any(x.subs(t, 0) != 0 for x in M))
-    allfac = all(sp.factor(x).has(2 * t - 1) or sp.simplify(x.subs(t, HALF)) == 0 for M in cross.values() for x in M if x != 0)
+    odd = all(is_zero(even_part(M.subs(t, 0))) for M in cross.values()) and any(clifford_odd(M.subs(t, 0)) for M in cross.values())
     check("O7", vanish == {0: False, sp.Rational(1, 4): False, HALF: True, 1: False} and form_ok and odd,
           f"Dirac mass cross terms: vanish iff t = 1/2 ({vanish}); for t != 1/2 they are EXACTLY of the form "
           "sum_j xi~_j g_j (gravity's nn bond field, prop. (2t-1)) with Clifford-odd g_j (alpha beta type): an obstruction only "

@@ -1,0 +1,115 @@
+{
+  "status": "bounded-support",
+  "scope": "Constrained representation and explicitly chosen code failure; no derived physical fermion or observational test",
+  "controls": [
+    {
+      "status": "exact-algebra-pass",
+      "loop_basepoints": [
+        {
+          "perimeter": 6,
+          "turns": 4,
+          "start_turn": true,
+          "phase": 1
+        },
+        {
+          "perimeter": 6,
+          "turns": 4,
+          "start_turn": false,
+          "phase": -1
+        },
+        {
+          "perimeter": 6,
+          "turns": 4,
+          "start_turn": true,
+          "phase": 1
+        },
+        {
+          "perimeter": 6,
+          "turns": 4,
+          "start_turn": true,
+          "phase": 1
+        },
+        {
+          "perimeter": 6,
+          "turns": 4,
+          "start_turn": false,
+          "phase": -1
+        },
+        {
+          "perimeter": 6,
+          "turns": 4,
+          "start_turn": true,
+          "phase": 1
+        }
+      ],
+      "straight_endpoint_lengths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "scope": "Constrained rewriting, not physical deconfined fermions or independent static links"
+    },
+    {
+      "physical_sites": 8,
+      "code_dimension": 8,
+      "ports": [
+        0,
+        7,
+        4,
+        3,
+        2,
+        5
+      ],
+      "axes": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "alpha": 0.4082482904638631,
+      "compression_errors": [
+        1.4123717871492288e-15,
+        1.4089336850080151e-15,
+        1.1140057528689488e-15,
+        1.1409233205200546e-15,
+        8.280072752850088e-16,
+        7.950118534046421e-16
+      ],
+      "isometry_error": 2.597140395857908e-15,
+      "native_challenge": [
+        {
+          "lam": 0.1,
+          "leakage_norm": 2.168359606215919,
+          "code_energy_mean": -0.3333333333333332,
+          "best_eight_state_energy_mean": -4.02496328285754,
+          "code_internal_width": 2.97656250466987,
+          "lowest_eight_gap": 4.925653877219105e-05
+        },
+        {
+          "lam": 0.5,
+          "leakage_norm": 2.5009184688975203,
+          "code_energy_mean": -0.33333333333333326,
+          "best_eight_state_energy_mean": -4.607028235641904,
+          "code_internal_width": 3.8763127431431137,
+          "lowest_eight_gap": 0.021823252435347662
+        },
+        {
+          "lam": 1.0,
+          "leakage_norm": 3.3817294081253375,
+          "code_energy_mean": -0.33333333333333326,
+          "best_eight_state_energy_mean": -6.1962883128208395,
+          "code_internal_width": 5.577004394249837,
+          "lowest_eight_gap": 1.7763568394002505e-15
+        }
+      ],
+      "scope": "One explicitly chosen kinematic code fails native invariance; not a no-go for all large-feature encodings"
+    }
+  ]
+}

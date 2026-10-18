@@ -217,3 +217,8 @@ Status: bounded-support; trace: negative_route_pruning; proposal_allowed: false.
 ## Native energy-density source
 Native energy-density source complete: bond-center readout gives F4=2cx+2cy-3cxcy and windingFx=L-(L-1)cx. Groundrotation cancelsq0exactly; actualQ4pole amplitude -Jgamma(L+2)lambdaL q²/(8sqrt2L), weightJ²gamma²(L+2)²lambda2Lq4/(128L). Includeslambda^(L-2)q4 orientationerrorandM>24+5p actualtail. Densityimprovementconvention explicit, notuniversalgravity. Independentcoefficient/transfer/finalPASS; source-boundreplay.084041sPASS. Nextroot exactprimitive rectangular virtual-loop law: subsetDP suggests perimeter-only Gammaformula, now derivingviafreefermionclosedloop ratherthanfitting; fullnativeallrangeclaim notassumed.
 Status: conditional-support; trace: upstream_support; proposal_allowed: false.
+
+
+## Constrained fermion route
+Constrained fermion route: exact Majorana rewriting has noncommuting collinear links; ordered loops reduce to physical corner operators. Six Clifford directions require feature dimension multiple eight; commuting ports obey sum alpha²<=1. Explicit deterministic eight-site code saturates bound but fails native invariance (leakage2.1684/2.5009/3.3817 at lambda.1/.5/1). Independent algebra, capacity, native control and final reviews PASS. No physical fermion, universal encoding no-go or new interaction. Root next tests native spectral subspaces and actual constituent scattering; arbitrary encoded projectors not accepted.
+Status: bounded-support; trace: negative_route_pruning; proposal_allowed: false.

@@ -221,3 +221,8 @@ Status: conditional-support; trace: upstream_support; proposal_allowed: false.
 ## Native energy current
 Nativeenergycurrent complete: exactlocal3-spin commutator current obeys[H,E_q]=-q.J_q. ExistingactualQ4poleenergyreadout fixeslongitudinalcurrentamplitudeJ²Delta gamma(L+2)lambda^(L+4)|q|/(8sqrt2L). Isolatedpole-only staticsusceptibilityproportional lambda16q4 atL10; otherchannelsuncontrolled, nogravitynogo/fullstresstensorclaim. IndependentandfinalPASS, native8qubitoperator/spectral/finitefieldcontrolsPASS; sourceboundreplay.344309sPASS. Standardcontinuitymethodpriorart cited. Nextroot testsallfixedheight commonmetric compatibility beforechoosingfurtherTOEroute.
 Status: bounded-support; trace: upstream_support; proposal_allowed: false.
+
+
+## Constrained fermion route
+Constrained fermion route: exact Majorana rewriting has noncommuting collinear links; ordered loops reduce to physical corner operators. Six Clifford directions require feature dimension multiple eight; commuting ports obey sum alpha²<=1. Explicit deterministic eight-site code saturates bound but fails native invariance (leakage2.1684/2.5009/3.3817 at lambda.1/.5/1). Independent algebra, capacity, native control and final reviews PASS. No physical fermion, universal encoding no-go or new interaction. Root next tests native spectral subspaces and actual constituent scattering; arbitrary encoded projectors not accepted.
+Status: bounded-support; trace: negative_route_pruning; proposal_allowed: false.

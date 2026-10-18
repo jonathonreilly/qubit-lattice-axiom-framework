@@ -1,0 +1,5 @@
+# Publication scope
+
+Four changed construction pairs and the qualified energy-accounting pair were fully read by ROOT. Distinct same-model source-exposed mathematical checks reconstruct the changed proofs; shared campaign and inherited-author exposure is disclosed. Energy moments require the review qualification preserved in ROOT_DISPOSITION. Mechanical validation checks only source identities, links, graph and inherited entries, not physical realization. No new simulation, blanket Lean check or retained audit. Supplied coherent product reference, exact positive blocks, equal gaps, structured coefficients and integer revival remain. No arbitrary H_PE, native preparation, capture, exact all-time record, energy return or reset/reuse claim. This is one coherent active-energy milestone, not separate PRs for its subsidiary lemmas.
+
+Whitespace exception: frozen AUTHOR_NOTE.md line88 preserves the author hash7c65ac75dcf0cbba4d2dad2b42d36debc04d7a13b8b22211179f39cf4f03b852 and its trailing LaTeX spacing token. The canonical copy removes that token. The full staged whitespace check therefore reports this one frozen-provenance line; all other staged content must pass.

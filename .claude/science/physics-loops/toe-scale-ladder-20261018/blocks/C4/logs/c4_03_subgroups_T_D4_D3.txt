@@ -49,3 +49,8 @@ PASS D4/axis: all 64 solutions symplectic (Laurent check) with det 1
 PASS D4/axis: every trace is D4-invariant
   D4  axis     dimW= 18 unsigned=    64 signed=   128 on-site=  2 periodic=   64 glider=    0 spreading=     0 | with valid phases: {'periodic': 64, 'glider': 0, 'spreading': 0} glider dirs=[] (105.8s)
 PASS D4/full: restriction is a homomorphism on D4
+PASS D4/full: brute-force and split enumerators agree (64)
+PASS D4/full: all 64 solutions symplectic (Laurent check) with det 1
+PASS D4/full: every trace is D4-invariant
+  D4  full     dimW= 18 unsigned=    64 signed=    64 on-site=  2 periodic=   64 glider=    0 spreading=     0 | with valid phases: {'periodic': 32, 'glider': 0, 'spreading': 0} glider dirs=[] (102.1s)
+PASS D3/trivial: restriction is a homomorphism on D3

@@ -57,6 +57,12 @@ ck.check('proper B4 (det +1): rank-2 still 1; F-forms 2 (F.F and the topological
 ck.check('spatial cubic x time reflection only: 2 rank-2 invariants (c_t, c_s) and 2 F-forms (E^2, B^2)',
          c_sp[0] == 2 and c_sp[1] == 2)
 
+proper_cubic = [g for g in spatial if g[0, 0] == 1 and np.linalg.det(g) > 0]   # O only (Lattice axiom), no time reflection
+c_O = counts(proper_cubic)
+print(f"  proper cubic O only (order {len(proper_cubic)}): {c_O}")
+ck.check('proper cubic O only (Lattice axiom, no time reflection): 2 rank-2 invariants; 3 F-forms (E^2, B^2, E.B; E.B carries no velocity)',
+         len(proper_cubic) == 24 and c_O[0] == 2 and c_O[1] == 3)
+
 # ---------------- exact dispersions
 E, k = sp.symbols('E k', positive=True)
 z0 = sp.symbols('zeta0', positive=True)

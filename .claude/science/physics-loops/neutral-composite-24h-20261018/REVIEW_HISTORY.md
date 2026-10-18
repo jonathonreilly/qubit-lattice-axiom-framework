@@ -101,3 +101,9 @@ PR9762 verifiedOPEN dbe329e0c217459bc8dc67e3674dc1bb9d7b5537; attachment cap100 
 
 ## 2026-10-18T10:45:05.997546+00:00 bulk propagation/readout checkpoint
 PR9763 verifiedOPEN182edbe560964d5edfc40740e535c27030a80a81; attachmentcap100 persists. Root nativeendpointmotions derive gamma=cos(p/2) kineticcoefficient andcompletefixedordercompactpolefamily nearp0. Original FourierC readout yields lambda6 R(p), analyticallynonzero near0 viafreehostFermicurvesign; nonewsourceconstant. Actualground smoothwindowcomparison extendsuniformlyrealmesh p withOλ8 error, preservingfullbackground. Complexp derivativepromotion failedfaststripcontrol; no ballisticvelocityclaim. Independent geometry/pole/source/residue/windowchecks andfinalaffectedreviewPASS; sourceboundreplay1.838739sPASS. Allnumericaljobscomplete. Preparingpublication thenrootnativeK4smoothmass/envelope alternative to uncontrolledvelocityderivative. No empiricaltest orfullHpole. Matchinglockexpires11:30:32Z; fixeddeadlineunchanged.
+
+
+## 2026-10-18T11:26:16.534482+00:00 six-end checkpoint
+PR9768 real-axis contrast, PR9769 native corner interactions, PR9770 four-end exact bound mode verified OPEN. Six-end K1 binding now proved with all15 four-subset/all-momentum interval lower bounds and exact1459-state integer trial below-7.1 versus breakup lower bound-7. Source-bound replay5.502332sPASS. Independent threshold/interval/readout checks PASS; final scoped review pending. Upper-interface readout coefficient-24 explicitly distinguished from finite paired-end total-48. No empirical tests, full-H particle or scalar/cosmological bridge. Next root derives finite paired-end channel and collision structure without assuming closed dynamics. No root numerical jobs; lockexpires12:11:43Z; fixeddeadline unchanged.
+
+Six-end final scoped review PASS (REVIEW_SIX_ENDPOINT_BINDING.md); all interval/integer/threshold/readout checks covered. No formal audit.

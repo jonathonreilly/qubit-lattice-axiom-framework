@@ -110,3 +110,5 @@ Joining block: trace_class: negative_route_pruning; source_of_blocker_text: user
 
 
 Bulk COM: trace_class: upstream_support; source_of_blocker_text: user_goal; reachability_to_target: partially_closes; artifact_role: theorem. Native endpoint motion -> finite-order dispersion -> original Fourier readout; actual finite-time ground response comparison separate. Next: controlled resonance envelope without illegitimate derivative transfer.
+
+Six-end block: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Native binding and original readout remove chosen collective potential/coupling within specified K1 boundary sector. Finite feature, higher orders and physical scalar remain open.

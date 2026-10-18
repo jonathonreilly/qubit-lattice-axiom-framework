@@ -1,0 +1,328 @@
+{
+  "status": "bounded-support",
+  "four_cluster_interval_certificates": [
+    {
+      "F": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "min_pivot_lower_display": 1.0994751754781376
+    },
+    {
+      "F": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "min_pivot_lower_display": 2.2713604522872206
+    },
+    {
+      "F": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "min_pivot_lower_display": 4.098608309802028
+    },
+    {
+      "F": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "min_pivot_lower_display": 4.098608309802028
+    },
+    {
+      "F": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "min_pivot_lower_display": 2.2713604522872206
+    },
+    {
+      "F": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "min_pivot_lower_display": 2.664027149321267
+    },
+    {
+      "F": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "min_pivot_lower_display": 3.7942447631758953
+    },
+    {
+      "F": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "min_pivot_lower_display": 2.387435732230297
+    },
+    {
+      "F": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "min_pivot_lower_display": 2.2713604522872206
+    },
+    {
+      "F": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "min_pivot_lower_display": 4.098608309802028
+    },
+    {
+      "F": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "min_pivot_lower_display": 2.5157344073655232
+    },
+    {
+      "F": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "min_pivot_lower_display": 3.7942447631758953
+    },
+    {
+      "F": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "min_pivot_lower_display": 4.098608309802028
+    },
+    {
+      "F": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "min_pivot_lower_display": 2.2713604522872206
+    },
+    {
+      "F": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "min_pivot_lower_display": 1.0994751754781376
+    }
+  ],
+  "grid_points_per_shape": 257,
+  "dimension": 1459,
+  "norm": 9999999925139683,
+  "energy_numerator": -71308060208219532,
+  "exact_certificate": -3080607397277827,
+  "essential_lower_bound": -7,
+  "trial_upper_bound": -7.1,
+  "scope": "Specified native K1 boundary sector only; proof plus interval/integer certificates; not full-H particle or empirical validation"
+}

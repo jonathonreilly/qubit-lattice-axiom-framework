@@ -1,0 +1,264 @@
+{
+  "scope": "Exact finite controls for a supplied eight-spin Markov instrument on the two-excitation domain; no audit verdict or native formation derivation.",
+  "inputs": {
+    "scripts/contact_source_heisenberg_controls.py": "69c3887bb3bb5e452f29413f6e6e7c3c3f26ecc7369c849a0e83b954942f7da6",
+    "docs/CONTACT_SOURCE_HEISENBERG_CODE_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-18.md": "957df1ad1320df00b267a19b21db9a73243301c207bca1ae464f01390fb3259f",
+    "docs/NATIVE_HEISENBERG_NODAL_RECORD_PERSISTENCE_BOUNDED_THEOREM_NOTE_2026-10-18.md": "cab15d6b241572df5582db3e900dfbdd86e99fadad98b5e05f78108e550ce92e"
+  },
+  "controls": {
+    "kind": "exact finite conditional controls; no audit verdict",
+    "sympy": "1.14.0",
+    "local_dimension": 256,
+    "checks": {
+      "source_norm": true,
+      "target_norm": true,
+      "source_highest_weight": true,
+      "target_highest_weight": true,
+      "source_target_orthogonal": true,
+      "source_contact_support": true,
+      "multiplet_norm_0": true,
+      "multiplet_norm_1": true,
+      "multiplet_norm_2": true,
+      "multiplet_norm_3": true,
+      "multiplet_norm_4": true,
+      "multiplets_end": true,
+      "scalar_Jplus": true,
+      "scalar_Jminus": true,
+      "scalar_Jz": true,
+      "partial_isometry_sources": true,
+      "partial_isometry_adjoint": true,
+      "two_flip_restriction": true,
+      "selected_first_seed_rate": true,
+      "source_energy": true,
+      "target_energy": true,
+      "source_bond_action": true,
+      "dark_orbit_fixtures": true,
+      "full_H_fixtures": true,
+      "rotation_group_size": true,
+      "edge_incidence_32": true,
+      "total_initial_rate_8": true
+    },
+    "families": {
+      "normalization": true,
+      "scalar_intertwiner": true,
+      "full_H": true,
+      "dark_contact_and_plane": true,
+      "incidence": true,
+      "energy": true,
+      "selected_first_event": true
+    },
+    "source_support_size": 4,
+    "target_support_size": 8,
+    "multiplet_raw_norms": [
+      "1",
+      "4",
+      "24",
+      "144",
+      "576"
+    ],
+    "source_energy_over_j": "20",
+    "target_energy_over_j": "24",
+    "selected_first_seed_rate_over_gamma": "1/4",
+    "H_power_controls": [
+      {
+        "power": 0,
+        "support_configurations": 8,
+        "zero_contact": true,
+        "zero_x0_plane": true,
+        "full_free_action_agrees": true,
+        "independent_bond_action_agrees": true
+      },
+      {
+        "power": 1,
+        "support_configurations": 64,
+        "zero_contact": true,
+        "zero_x0_plane": true,
+        "full_free_action_agrees": true,
+        "independent_bond_action_agrees": true
+      },
+      {
+        "power": 2,
+        "support_configurations": 296,
+        "zero_contact": true,
+        "zero_x0_plane": true,
+        "full_free_action_agrees": true,
+        "independent_bond_action_agrees": true
+      },
+      {
+        "power": 3,
+        "support_configurations": 1008,
+        "zero_contact": true,
+        "zero_x0_plane": true,
+        "full_free_action_agrees": true,
+        "independent_bond_action_agrees": true
+      },
+      {
+        "power": 4,
+        "support_configurations": 2800,
+        "zero_contact": true,
+        "zero_x0_plane": true,
+        "full_free_action_agrees": true,
+        "independent_bond_action_agrees": true
+      },
+      {
+        "power": 5,
+        "support_configurations": 6720,
+        "zero_contact": true,
+        "zero_x0_plane": true,
+        "full_free_action_agrees": true,
+        "independent_bond_action_agrees": true
+      },
+      {
+        "power": 6,
+        "support_configurations": 14448,
+        "zero_contact": true,
+        "zero_x0_plane": true,
+        "full_free_action_agrees": true,
+        "independent_bond_action_agrees": true
+      }
+    ],
+    "incidence_controls": [
+      {
+        "axis": 0,
+        "source_support_count": 32,
+        "total_initial_rate_over_gamma": "8"
+      },
+      {
+        "axis": 1,
+        "source_support_count": 32,
+        "total_initial_rate_over_gamma": "8"
+      },
+      {
+        "axis": 2,
+        "source_support_count": 32,
+        "total_initial_rate_over_gamma": "8"
+      }
+    ],
+    "all_checks": true,
+    "scope": "Exact 256-state local algebra, actual-Z3 finite-support H powers 0..6 and three representative edge incidences. All-time persistence, countable CP convergence and positive-time first-event bounds require analytic proofs; no native physical instrument or registration is derived."
+  },
+  "mutations": {
+    "mutations": [
+      {
+        "mutation": "scale_source",
+        "intended_family": "normalization",
+        "failed_checks": [
+          "source_norm",
+          "multiplet_norm_0",
+          "multiplet_norm_1",
+          "multiplet_norm_2",
+          "multiplet_norm_3",
+          "multiplet_norm_4",
+          "partial_isometry_sources",
+          "selected_first_seed_rate",
+          "source_energy",
+          "total_initial_rate_8"
+        ],
+        "failed_families": [
+          "normalization",
+          "scalar_intertwiner",
+          "incidence",
+          "energy",
+          "selected_first_event"
+        ],
+        "rejected_by_checks": true
+      },
+      {
+        "mutation": "omit_last_multiplet",
+        "intended_family": "scalar_intertwiner",
+        "failed_checks": [
+          "scalar_Jplus",
+          "scalar_Jminus",
+          "partial_isometry_sources",
+          "partial_isometry_adjoint"
+        ],
+        "failed_families": [
+          "scalar_intertwiner"
+        ],
+        "rejected_by_checks": true
+      },
+      {
+        "mutation": "reverse_hopping",
+        "intended_family": "full_H",
+        "failed_checks": [
+          "source_bond_action",
+          "full_H_fixtures"
+        ],
+        "failed_families": [
+          "full_H"
+        ],
+        "rejected_by_checks": true
+      },
+      {
+        "mutation": "add_contact_to_target",
+        "intended_family": "dark_contact_and_plane",
+        "failed_checks": [
+          "target_norm",
+          "target_highest_weight",
+          "source_target_orthogonal",
+          "multiplet_norm_0",
+          "multiplet_norm_1",
+          "multiplet_norm_2",
+          "multiplet_norm_3",
+          "multiplet_norm_4",
+          "multiplets_end",
+          "scalar_Jplus",
+          "scalar_Jminus",
+          "partial_isometry_adjoint",
+          "selected_first_seed_rate",
+          "target_energy",
+          "dark_orbit_fixtures",
+          "full_H_fixtures"
+        ],
+        "failed_families": [
+          "normalization",
+          "scalar_intertwiner",
+          "full_H",
+          "dark_contact_and_plane",
+          "energy",
+          "selected_first_event"
+        ],
+        "rejected_by_checks": true
+      },
+      {
+        "mutation": "remove_rotation",
+        "intended_family": "incidence",
+        "failed_checks": [
+          "rotation_group_size",
+          "edge_incidence_32",
+          "total_initial_rate_8"
+        ],
+        "failed_families": [
+          "incidence"
+        ],
+        "rejected_by_checks": true
+      },
+      {
+        "mutation": "omit_contact_energy",
+        "intended_family": "energy",
+        "failed_checks": [
+          "source_energy",
+          "source_bond_action"
+        ],
+        "failed_families": [
+          "full_H",
+          "energy"
+        ],
+        "rejected_by_checks": true
+      },
+      {
+        "mutation": "wrong_first_seed",
+        "intended_family": "selected_first_event",
+        "failed_checks": [
+          "selected_first_seed_rate"
+        ],
+        "failed_families": [
+          "selected_first_event"
+        ],
+        "rejected_by_checks": true
+      }
+    ],
+    "all_rejected": true,
+    "scope": "Seven explicit in-memory construction mutations; not exhaustive defect coverage."
+  }
+}

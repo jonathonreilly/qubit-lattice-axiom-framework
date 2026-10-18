@@ -1,1 +1,5 @@
 PASS D2/trivial: restriction is a homomorphism on D2
+PASS D2/trivial: all 4020 solutions symplectic (Laurent check) with det 1
+PASS D2/trivial: every trace is D2-invariant
+  D2  trivial  dimW= 36 unsigned=  4020 signed= 16080 on-site=  6 periodic=  768 glider=   18 spreading=  3234 | with valid phases: {'periodic': 768, 'glider': 18, 'spreading': 3234} glider dirs=[(0, 0, 1), (0, 1, 0), (1, 0, 0)] (236.7s)
+PASS D2/sign: restriction is a homomorphism on D2

@@ -91,6 +91,7 @@ top-level field remains present as `null`.
   "negative_assertion_classes": null,
   "decoration_parent_claim_id": null,
   "open_dependency_paths": null,
+  "premises_used": null,
   "auditor_confidence": null,
   "notes_for_re_audit_if_any": null,
   "no_go_discipline": null

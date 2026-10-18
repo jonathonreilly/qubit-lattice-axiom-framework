@@ -204,9 +204,22 @@ def _string_array_schema() -> dict:
     return {"type": "array", "items": _string_schema()}
 
 
+def _premise_registry_present(repo_root: Path) -> bool:
+    """A checkout with no premise registry has no declarable premise units.
+
+    Only absence is tolerated here; a present but malformed registry or
+    clause map still raises from ``audit_science_fingerprint``.
+    """
+    return (repo_root / "docs" / "audit" / "data" / "axiom_premise_nodes.json").exists()
+
+
 def premise_units_output_schema() -> dict:
     """Closed list of declarable premise units for ``premises_used``."""
-    units = tuple(sorted(audit_science_fingerprint.premise_unit_catalog(REPO_ROOT)))
+    units = (
+        tuple(sorted(audit_science_fingerprint.premise_unit_catalog(REPO_ROOT)))
+        if _premise_registry_present(REPO_ROOT)
+        else ()
+    )
     return {
         "type": "array",
         "items": _string_schema(enum=units) if units else _string_schema(),
@@ -216,6 +229,8 @@ def premise_units_output_schema() -> dict:
 def premise_units_prompt_text(repo_root: Path | None = None) -> str:
     """Render the valid ``premises_used`` units for section 5 of the prompt."""
     root = repo_root or REPO_ROOT
+    if not _premise_registry_present(root):
+        return "(no premise units are registered)"
     registry = audit_science_fingerprint._premise_registry(root)
     clause_map = audit_science_fingerprint._premise_clause_map(root, registry)
     lines: list[str] = []
@@ -3253,6 +3268,8 @@ def validate_verdict(
     if tuple_error:
         return tuple_error
     if blob.get("premises_used") is not None:
+        if not _premise_registry_present(REPO_ROOT):
+            return "premises_used names premise units but no premise registry exists"
         premise_error = audit_science_fingerprint.premise_declaration_error(
             blob.get("premises_used"), REPO_ROOT
         )

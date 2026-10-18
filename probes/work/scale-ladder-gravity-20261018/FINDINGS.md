@@ -224,3 +224,18 @@ Write omega^2 = k^2 (1 + alpha k^2).
     response; A supplies the response.
 - Next question for the owner (Q3): does every record drain the same pace (mass = record
   count), or does a record drain according to its content (e.g. its energy)?
+- F35 (Q3, owner: "explore both"; EXPLORATION). Is gravity's source the record count, or content?
+  Tested on the 2-rung carrier {1} with the block reading (sourceQ3c.py).
+  - The block reading maps a uniform lattice displacement EXACTLY onto the continuum gauge.
+  - A conserved source T = P e_t e_t P has a Ward residual of 1e-15 at |k| from 0.004 to 0.03.
+  - A count source at a formation event (T_tt appearing with no current) has an O(1) residual at
+    every scale. Gravity's linear equations then have no solution.
+  - So "same drain per record" is fine for static records but inconsistent when records form,
+    unless formation moves conserved content from unrecorded possibilities into the record. That
+    is the content rule.
+  - Static consequences (analytic):
+    - count rule: mass = N q, so binding energy does not gravitate, and the global pace falls as
+      records accumulate (no steady state);
+    - content rule: binding energy gravitates and there is no secular drift.
+    - Both give a frozen zero-pace region (owner's 'full region = black hole' instinct) once the
+      deficit reaches 1: r_h ~ 0.5 q N in lattice units with the linear drain.

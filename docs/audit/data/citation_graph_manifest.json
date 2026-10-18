@@ -1,6 +1,6 @@
 {
- "edge_count": 16270,
- "node_count": 7251,
+ "edge_count": 16273,
+ "node_count": 7252,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4545,6 +4545,10 @@
   "curvature_fluid_construction_bounded_theorem_note_2026-10-13": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "curvature_member_closure_puts_a_lattice_weyl_field_and_a_lattice_maxwell_field_on_the_scalars_cone_and_rejects_anisotropic_cones_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "0ba6c1a54bdb",
+   "out_degree": 3
   },
   "curvature_member_closure_with_matter_forces_one_common_cone_and_the_lorentzian_sign_and_has_an_order_a_squared_obstruction_bounded_theorem_note_2026-10-18": {
    "deps_hash": "76153c805801",

@@ -1,0 +1,4 @@
+(DPT verdict, FD verdict) counts: {('aniso', 'aniso'): 568, ('flat', 'flat'): 60, ('aniso', 'flat'): 2, ('tilt', 'tilt'): 111, ('band', 'band'): 2, ('band', 'band?'): 2, ('tilt', 'flat'): 1, ('tilt', 'aniso'): 2}
+[PASS] every first defective node of every survivor is confirmed defective by finite differences  748/748
+[PASS] every re-located node is at E to 1e-8  max 6.6e-15
+TOTAL: PASS=2 FAIL=0

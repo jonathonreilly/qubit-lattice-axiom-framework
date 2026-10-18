@@ -118,7 +118,10 @@ def classify(w, k, E, vs):
     else: v = 'ok'
     return (m, v, info)
 def kclass(k):
-    a = np.abs(np.mod(np.asarray(k) / np.pi + 1, 2) - 1); a = np.round(a, 3); key = tuple(sorted(a))
-    names = {(0.5, 0.5, 0.5): 'cube(+-k*,doublers)', (0, 0, 0): 'Gamma', (0, 0, 1): 'X_pi', (0, 1, 1): 'M_pi', (1, 1, 1): 'R_pi', (0, 0, 0.5): 'X_r(pi/2 e_i)',
-             (0, 0.5, 0.5): 'M_r(pi/2(1,1,0))', (0, 0.25, 0.25): '(pi/4)(1,1,0)', (0, 0, 0.25): '(pi/4)e_i', (0.25, 0.25, 0.25): '(pi/4)(1,1,1)'}
-    return names.get(key, 'other' if not np.allclose(a * 4, np.round(a * 4), atol=1e-3) else 'piZ/4:' + str(key))
+    a = np.abs(np.mod(np.asarray(k) / np.pi + 1, 2) - 1); key = tuple(sorted(float(x) for x in np.round(a, 3)))
+    names = {(0.5, 0.5, 0.5): 'cube', (0, 0, 0): 'Gamma', (0, 0, 1): 'X_pi', (0, 1, 1): 'M_pi', (1, 1, 1): 'R_pi', (0, 0, 0.5): 'X_r',
+             (0, 0.5, 0.5): 'M_r', (0.5, 1, 1): '(1,1,1/2)pi', (0.5, 0.5, 1): '(1,1/2,1/2)pi', (0, 0.5, 1): '(0,1/2,1)pi',
+             (0, 0.25, 0.25): '(0,1,1)pi/4', (0, 0, 0.25): '(0,0,1)pi/4', (0.25, 0.25, 0.25): '(1,1,1)pi/4'}
+    if key in names: return names[key]
+    if np.allclose(np.array(key) * 4, np.round(np.array(key) * 4), atol=1e-3): return 'pi/4:' + ','.join(str(int(round(4 * x))) for x in key)
+    return 'generic'

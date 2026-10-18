@@ -1,0 +1,165 @@
+== screen_cliff2_0-1-2-3.pkl  per skeleton (Dirac levels, survivors): {"('S', 'R', 'o', 'R', 'o')": (1112, 66), "('S', 'o', 'R', 'o')": (968, 68), "('S', 'o', 'S', 'o')": (1112, 102)}
+== screen_cliff2_4-5-6-7.pkl  per skeleton (Dirac levels, survivors): {"('S', 'R', 'o', 'S', 'R', 'o')": (1112, 164), "('S2', 'o', 'S2', 'o')": (1112, 102)}
+== screen_cliff2_8-9-10.pkl  per skeleton (Dirac levels, survivors): {"('S', 'R', 'o', 'S', 'o')": (968, 80), "('S', 'o', 'S', 'R', 'o')": (968, 80)}
+== screen_pi6.pkl  per skeleton (Dirac levels, survivors): {"('S', 'R', 'o')": (121, 21), "('S', 'o')": (242, 12), "('S', 'o', 'R')": (121, 9), "('S2', 'o')": (242, 12)}
+== screen_taste_pi6.pkl  per skeleton (Dirac levels, survivors): {"('S', 'o', 'S', 'o')": (112, 16), "('S2', 'o', 'S2', 'o')": (112, 16)}
+
+Totals by family:
+   cliff2 {'Dirac levels': 7352, 'fermi (sign test)': 6690, 'survivors': 662, 'clean': 0, 'D+D-': 7352, 'G3/2': 47888, 'words n_S=0': 25600}
+   pi6 {'Dirac levels': 726, 'fermi (sign test)': 672, 'survivors': 54, 'clean': 0, 'D+D-': 726, 'G3/2': 11660}
+   taste_pi6 {'Dirac levels': 224, 'fermi (sign test)': 192, 'survivors': 32, 'clean': 0, 'G3/2': 5696, 'D+D-': 224}
+
+Coarse obstruction classes (family, class): count
+      40  ('cliff2', '(pi/2)Z^3 non-cube points + others')
+      20  ('cliff2', 'band crossing at E (missed by sign test)')
+     172  ('cliff2', 'cube doublers + other points')
+      20  ('cliff2', 'cube points only (doublers of +-k*): aniso')
+       4  ('cliff2', 'cube points only (doublers of +-k*): flat')
+      56  ('cliff2', 'generic-k nodes only: aniso')
+       4  ('cliff2', 'generic-k nodes only: aniso/flat')
+       2  ('cliff2', 'generic-k nodes only: aniso/tilt')
+      22  ('cliff2', 'generic-k nodes only: tilt')
+     222  ('cliff2', 'other (pi/4 lattice etc.)')
+     100  ('cliff2', 'piZ^3 points (Gamma/X/M/R) + others')
+       2  ('pi6', '(pi/2)Z^3 non-cube points + others')
+       5  ('pi6', 'cube doublers + other points')
+       1  ('pi6', 'cube points only (doublers of +-k*): aniso')
+       8  ('pi6', 'generic-k nodes only: aniso')
+       2  ('pi6', 'generic-k nodes only: aniso/tilt')
+      10  ('pi6', 'generic-k nodes only: tilt')
+      10  ('pi6', 'other (pi/4 lattice etc.)')
+      16  ('pi6', 'piZ^3 points (Gamma/X/M/R) + others')
+       2  ('taste_pi6', '(pi/2)Z^3 non-cube points + others')
+      16  ('taste_pi6', 'generic-k nodes only: aniso')
+      12  ('taste_pi6', 'generic-k nodes only: tilt')
+       2  ('taste_pi6', 'other (pi/4 lattice etc.)')
+
+Per skeleton:
+      32  ('cliff2', ('S', 'R', 'o', 'R', 'o'), 'piZ^3 points (Gamma/X/M/R) + others')
+      24  ('cliff2', ('S', 'R', 'o', 'R', 'o'), 'cube doublers + other points')
+       8  ('cliff2', ('S', 'R', 'o', 'R', 'o'), 'band crossing at E (missed by sign test)')
+       2  ('cliff2', ('S', 'R', 'o', 'R', 'o'), 'cube points only (doublers of +-k*)')
+      72  ('cliff2', ('S', 'R', 'o', 'S', 'R', 'o'), 'other (pi/4 lattice etc.)')
+      34  ('cliff2', ('S', 'R', 'o', 'S', 'R', 'o'), 'cube doublers + other points')
+      30  ('cliff2', ('S', 'R', 'o', 'S', 'R', 'o'), 'piZ^3 points (Gamma/X/M/R) + others')
+      20  ('cliff2', ('S', 'R', 'o', 'S', 'R', 'o'), 'cube points only (doublers of +-k*)')
+       4  ('cliff2', ('S', 'R', 'o', 'S', 'R', 'o'), 'generic-k nodes only')
+       4  ('cliff2', ('S', 'R', 'o', 'S', 'R', 'o'), 'band crossing at E (missed by sign test)')
+      44  ('cliff2', ('S', 'R', 'o', 'S', 'o'), 'other (pi/4 lattice etc.)')
+      36  ('cliff2', ('S', 'R', 'o', 'S', 'o'), 'cube doublers + other points')
+      26  ('cliff2', ('S', 'o', 'R', 'o'), 'cube doublers + other points')
+      20  ('cliff2', ('S', 'o', 'R', 'o'), 'piZ^3 points (Gamma/X/M/R) + others')
+      12  ('cliff2', ('S', 'o', 'R', 'o'), 'generic-k nodes only')
+       8  ('cliff2', ('S', 'o', 'R', 'o'), 'band crossing at E (missed by sign test)')
+       2  ('cliff2', ('S', 'o', 'R', 'o'), 'cube points only (doublers of +-k*)')
+      44  ('cliff2', ('S', 'o', 'S', 'R', 'o'), 'other (pi/4 lattice etc.)')
+      36  ('cliff2', ('S', 'o', 'S', 'R', 'o'), 'cube doublers + other points')
+      24  ('cliff2', ('S', 'o', 'S', 'o'), '(pi/2)Z^3 non-cube points + others')
+      24  ('cliff2', ('S', 'o', 'S', 'o'), 'generic-k nodes only')
+      20  ('cliff2', ('S', 'o', 'S', 'o'), 'other (pi/4 lattice etc.)')
+      18  ('cliff2', ('S', 'o', 'S', 'o'), 'piZ^3 points (Gamma/X/M/R) + others')
+      16  ('cliff2', ('S', 'o', 'S', 'o'), 'cube doublers + other points')
+      44  ('cliff2', ('S2', 'o', 'S2', 'o'), 'generic-k nodes only')
+      42  ('cliff2', ('S2', 'o', 'S2', 'o'), 'other (pi/4 lattice etc.)')
+      16  ('cliff2', ('S2', 'o', 'S2', 'o'), '(pi/2)Z^3 non-cube points + others')
+      14  ('pi6', ('S', 'R', 'o'), 'generic-k nodes only')
+       4  ('pi6', ('S', 'R', 'o'), 'piZ^3 points (Gamma/X/M/R) + others')
+       2  ('pi6', ('S', 'R', 'o'), 'cube doublers + other points')
+       1  ('pi6', ('S', 'R', 'o'), 'cube points only (doublers of +-k*)')
+      10  ('pi6', ('S', 'o'), 'piZ^3 points (Gamma/X/M/R) + others')
+       2  ('pi6', ('S', 'o'), 'cube doublers + other points')
+       6  ('pi6', ('S', 'o', 'R'), 'generic-k nodes only')
+       2  ('pi6', ('S', 'o', 'R'), 'piZ^3 points (Gamma/X/M/R) + others')
+       1  ('pi6', ('S', 'o', 'R'), 'cube doublers + other points')
+      10  ('pi6', ('S2', 'o'), 'other (pi/4 lattice etc.)')
+       2  ('pi6', ('S2', 'o'), '(pi/2)Z^3 non-cube points + others')
+      14  ('taste_pi6', ('S', 'o', 'S', 'o'), 'generic-k nodes only')
+       2  ('taste_pi6', ('S', 'o', 'S', 'o'), '(pi/2)Z^3 non-cube points + others')
+      14  ('taste_pi6', ('S2', 'o', 'S2', 'o'), 'generic-k nodes only')
+       2  ('taste_pi6', ('S2', 'o', 'S2', 'o'), 'other (pi/4 lattice etc.)')
+minimum number of defective nodes per (family, skeleton): {"cliff2('S', 'R', 'o', 'R', 'o')": 6, "cliff2('S', 'R', 'o', 'S', 'R', 'o')": 6, "cliff2('S', 'R', 'o', 'S', 'o')": 31, "cliff2('S', 'o', 'R', 'o')": 4, "cliff2('S', 'o', 'S', 'R', 'o')": 31, "cliff2('S', 'o', 'S', 'o')": 26, "cliff2('S2', 'o', 'S2', 'o')": 40, "pi6('S', 'R', 'o')": 4, "pi6('S', 'o')": 36, "pi6('S', 'o', 'R')": 40, "pi6('S2', 'o')": 104, "taste_pi6('S', 'o', 'S', 'o')": 40, "taste_pi6('S2', 'o', 'S2', 'o')": 40}
+
+Defect types over all defective nodes: {'aniso': 32652, 'flat': 7425, 'tilt': 12549, 'band': 317}
+Speeds ratio smax/smin and tilt never matter for the verdict once one defect exists; best candidates by (number of defective nodes, smallest anisotropy):
+   cliff2     ('S', 'o', 'R', 'o') ('H00', 'L022') E=+3.1416 nS=1 nR=1 v_D=0.47140 nodes=5 bad=4
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.424264,0.565685] tilt=0.0
+        k/pi=(-0.5, 0.5, -0.5) cube m=8 aniso speeds[0.235702,0.707107] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.424264,0.565685] tilt=0.0
+        k/pi=(0.5, 0.5, 0.5) cube m=4 aniso speeds[0.424264,0.565685] tilt=0.0
+   cliff2     ('S', 'o', 'R', 'o') ('L000', 'L022') E=+3.1416 nS=1 nR=1 v_D=0.47140 nodes=5 bad=4
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.424264,0.565685] tilt=0.0
+        k/pi=(-0.5, 0.5, -0.5) cube m=8 aniso speeds[0.235702,0.707107] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.424264,0.565685] tilt=0.0
+        k/pi=(0.5, 0.5, 0.5) cube m=4 aniso speeds[0.424264,0.565685] tilt=0.0
+   pi6        ('S', 'R', 'o') ('L0.6.6',) E=+3.1416 nS=1 nR=1 v_D=0.47140 nodes=5 bad=4
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.424264,0.565685] tilt=0.0
+        k/pi=(-0.5, 0.5, -0.5) cube m=8 aniso speeds[0.235702,0.707107] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.424264,0.565685] tilt=0.0
+        k/pi=(0.5, 0.5, 0.5) cube m=4 aniso speeds[0.424264,0.565685] tilt=0.0
+   cliff2     ('S', 'R', 'o', 'S', 'R', 'o') ('H13', 'H31') E=-0.0000 nS=2 nR=2 v_D=0.94281 nodes=8 bad=6
+        k/pi=(-0.5, -0.5, -0.5) cube m=4 aniso speeds[0.921849,0.98473] tilt=0.0
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.921849,0.98473] tilt=0.0
+        k/pi=(-0.5, 0.5, 0.5) cube m=4 aniso speeds[0.921849,0.98473] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.921849,0.98473] tilt=0.0
+   cliff2     ('S', 'R', 'o', 'S', 'R', 'o') ('H31', 'H13') E=+0.0000 nS=2 nR=2 v_D=0.94281 nodes=8 bad=6
+        k/pi=(-0.5, -0.5, -0.5) cube m=4 aniso speeds[0.921849,0.98473] tilt=0.0
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.921849,0.98473] tilt=0.0
+        k/pi=(-0.5, 0.5, 0.5) cube m=4 aniso speeds[0.921849,0.98473] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.921849,0.98473] tilt=0.0
+   cliff2     ('S', 'R', 'o', 'S', 'R', 'o') ('H21', 'H23') E=-0.0000 nS=2 nR=2 v_D=0.94281 nodes=8 bad=6
+        k/pi=(-0.5, -0.5, -0.5) cube m=4 aniso speeds[0.848528,1.131371] tilt=0.0
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.848528,1.131371] tilt=0.0
+        k/pi=(-0.5, 0.5, 0.5) cube m=4 aniso speeds[0.848528,1.131371] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.848528,1.131371] tilt=0.0
+   cliff2     ('S', 'R', 'o', 'S', 'R', 'o') ('H23', 'H21') E=-0.0000 nS=2 nR=2 v_D=0.94281 nodes=8 bad=6
+        k/pi=(-0.5, -0.5, -0.5) cube m=4 aniso speeds[0.848528,1.131371] tilt=0.0
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.848528,1.131371] tilt=0.0
+        k/pi=(-0.5, 0.5, 0.5) cube m=4 aniso speeds[0.848528,1.131371] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.848528,1.131371] tilt=0.0
+   cliff2     ('S', 'R', 'o', 'S', 'R', 'o') ('H12', 'H32') E=-0.0000 nS=2 nR=2 v_D=0.94281 nodes=8 bad=6
+        k/pi=(-0.5, -0.5, -0.5) cube m=4 aniso speeds[0.672693,1.077867] tilt=0.0
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.672693,1.077867] tilt=0.0
+        k/pi=(-0.5, 0.5, 0.5) cube m=4 aniso speeds[0.672693,1.077867] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.672693,1.077867] tilt=0.0
+   cliff2     ('S', 'R', 'o', 'S', 'R', 'o') ('H32', 'H12') E=-0.0000 nS=2 nR=2 v_D=0.94281 nodes=8 bad=6
+        k/pi=(-0.5, -0.5, -0.5) cube m=4 aniso speeds[0.672693,1.077867] tilt=0.0
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.672693,1.077867] tilt=0.0
+        k/pi=(-0.5, 0.5, 0.5) cube m=4 aniso speeds[0.672693,1.077867] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.672693,1.077867] tilt=0.0
+   cliff2     ('S', 'R', 'o', 'S', 'R', 'o') ('H10', 'H20') E=+0.0000 nS=2 nR=2 v_D=0.94281 nodes=8 bad=6
+        k/pi=(-0.5, -0.5, -0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(-0.5, 0.5, 0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+   cliff2     ('S', 'R', 'o', 'S', 'R', 'o') ('H10', 'H30') E=+0.0000 nS=2 nR=2 v_D=0.94281 nodes=8 bad=6
+        k/pi=(-0.5, -0.5, -0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(-0.5, 0.5, 0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+   cliff2     ('S', 'R', 'o', 'S', 'R', 'o') ('H20', 'H10') E=-0.0000 nS=2 nR=2 v_D=0.94281 nodes=8 bad=6
+        k/pi=(-0.5, -0.5, -0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(-0.5, 0.5, 0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+   cliff2     ('S', 'R', 'o', 'S', 'R', 'o') ('H20', 'H20') E=+0.0000 nS=2 nR=2 v_D=0.94281 nodes=8 bad=6
+        k/pi=(-0.5, -0.5, -0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(-0.5, 0.5, 0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+   cliff2     ('S', 'R', 'o', 'S', 'R', 'o') ('H20', 'H30') E=-0.0000 nS=2 nR=2 v_D=0.94281 nodes=8 bad=6
+        k/pi=(-0.5, -0.5, -0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(-0.5, 0.5, 0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+   cliff2     ('S', 'R', 'o', 'S', 'R', 'o') ('H30', 'H10') E=+0.0000 nS=2 nR=2 v_D=0.94281 nodes=8 bad=6
+        k/pi=(-0.5, -0.5, -0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(-0.5, -0.5, 0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(-0.5, 0.5, 0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+        k/pi=(0.5, -0.5, -0.5) cube m=4 aniso speeds[0.790649,1.24713] tilt=0.0
+
+clean at screen level: 0
+[PASS] every survivor's +k* node classified as the expected 4-fold Dirac point (classifier sanity)  
+[PASS] every rejected survivor has at least one explicit defective node (no silent rejection)  
+
+RESULT: Dirac levels=8302 survivors=748 clean_at_screen=0
+TOTAL: PASS=2 FAIL=0

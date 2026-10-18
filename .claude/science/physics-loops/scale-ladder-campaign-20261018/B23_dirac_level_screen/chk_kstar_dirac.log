@@ -1,0 +1,8 @@
+worst deviations: {'eig': 6.60047527062709e-15, 'off': np.float64(3.725068141164078e-15), 'speed': np.float64(4.218847493575595e-15), 'tilt': np.float64(1.609823385706477e-15)}
+(chi_D+, chi_D-) at +k*: {(1, -1): 748}
+-k* node (multiplicity, verdict): {(4, 'ok'): 490, (8, 'aniso'): 78, 'not at E': 180}
+[PASS] D+ (+) D- is the k* eigenspace at E for every survivor  6.6e-15
+[PASS] h_j block-diagonal in D+ / D- (no cross terms)  3.7e-15
+[PASS] each block an untilted isotropic Weyl cone at |n_S| sqrt2/3  
+[PASS] the two cones have opposite chirality  {(1, -1): 748}
+TOTAL: PASS=4 FAIL=0

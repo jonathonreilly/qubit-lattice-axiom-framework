@@ -1,0 +1,9 @@
+[PASS] vectorised step matches chk_model Ws and is unitary
+node quasi-energy E = 1.570796; Lipschitz bound along x: Lx = 1.7071
+N=24: edges 13824, edges without a certified beta 0, uncovered arcs 0, largest 0.00e+00 rad; first holes (wrapped) []
+N=48: edges 110592, edges without a certified beta 0, uncovered arcs 0, largest 0.00e+00 rad; first holes (wrapped) []
+N=64: edges 262144, edges without a certified beta 0, uncovered arcs 0, largest 0.00e+00 rad; first holes (wrapped) []
+[PASS] eight-node step: every quasi-energy is attained (edge certificate on the N = 64 x-line grid covers the whole circle)  largest uncovered arc 0.00e+00
+[PASS] negative control: the certificate leaves the true gaps (each of width about pi - 0.4) uncovered for a gapped step (exp(0.2 i R_L) U_H U_L)  5 uncovered arcs, largest 2.893 rad; on-site phases [-1.571, -1.571, -1.571, -1.571, -1.571, -1.571, -1.571, -1.571, 1.571, 1.571, 1.571, 1.571]
+
+TOTAL: PASS=3 FAIL=0

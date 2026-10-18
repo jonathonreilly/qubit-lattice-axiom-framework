@@ -31,3 +31,7 @@ results/L4_V+0.00_N1000_e2.00_tiled_dt0.1_s205.npz: Emix/plaq=-0.294545 nf0/plaq
 results/L6_V+0.00_N1000_e3.67_tiled_dt0.1_s206.npz: Emix/plaq=-0.290168 nf0/plaq=0.667 mean N/ESS=1.63 (103s)
 results/L4_V+0.00_N12000_e0.00_tiled_dt0.1_s126.npz: Emix/plaq=-0.293076 nf0/plaq=0.667 mean N/ESS=1.18 (524s)
 results/L6_V+0.00_N1000_e0.00_tiled_dt0.1_s207.npz: Emix/plaq=-0.287741 nf0/plaq=0.667 mean N/ESS=1.60 (177s)
+results/L6_V+0.50_N6000_e0.00_tiled_dt0.1_s123.npz: Emix/plaq=-0.138455 nf0/plaq=0.667 mean N/ESS=1.13 (813s)
+results/L6_V-0.50_N2000_e4.00_tiled_dt0.1_s208.npz: Emix/plaq=-0.447594 nf0/plaq=0.667 mean N/ESS=2.83 (111s)
+results/L6_V+0.00_N6000_e0.00_tiled_dt0.1_s124.npz: Emix/plaq=-0.288556 nf0/plaq=0.667 mean N/ESS=1.64 (817s)
+results/L4_V-0.50_N12000_e0.00_tiled_dt0.1_s128.npz: Emix/plaq=-0.470469 nf0/plaq=0.667 mean N/ESS=1.73 (413s)

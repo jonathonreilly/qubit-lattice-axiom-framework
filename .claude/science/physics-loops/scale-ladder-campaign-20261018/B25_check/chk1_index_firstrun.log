@@ -1,0 +1,9 @@
+# first run (naming bug: fcc at the finest unit pi/8 was not recognised -> printed as '?2048'; checks (a),(b),(c) failed on the
+# name filter only; the lattice set, pair counts (74 strict, 56 good) and O-trivial pairs were already as in the final log).
+# Copied from the terminal capture of that run (the tee'd file was overwritten by the rerun).
+   O-invariant subgroups of (pi/8)Z^3/2piZ^3 (unit pi/8): ['sc(1)', '?2048', 'bcc(2)', 'sc(2)', 'fcc(2)', 'bcc(4)', 'sc(4)', 'fcc(4)', 'bcc(8)', 'sc(8)', 'fcc(8)', 'bcc(16)', 'sc(16)']
+[FAIL] (a) exactly 13 O-invariant lattices 2piZ^3 <= L <= (pi/8)Z^3: sc(2pi..pi/8), fcc(pi..pi/8), bcc(2pi..pi/4)  13
+   strictly nested: 74 ; O-trivial strict: [('sc(16)', 'bcc(16)', 2), ('sc(2)', 'bcc(2)', 2), ('sc(4)', 'bcc(4)', 2), ('sc(8)', 'bcc(8)', 2), ('?2048', 'sc(1)', 2), ('fcc(2)', 'sc(2)', 2), ('fcc(4)', 'sc(4)', 2), ('fcc(8)', 'sc(8)', 2)]
+[FAIL] (b) 74 strictly nested pairs; the O-trivial ones are exactly (sc(a),bcc(a)) a=2pi..pi/4 and (fcc(b),sc(b)) b=pi..pi/8 (8 pairs, index 2)
+[FAIL] (c) good pairs on the (pi/64) grid: 56 of 74 strict pairs (29 of the 42 pairs of the 10 lattices down to pi/4); no (L, L) pair is good  56, 39/52
+TOTAL: PASS=7 FAIL=3   [91s]

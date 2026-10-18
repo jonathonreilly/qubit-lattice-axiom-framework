@@ -11,3 +11,4 @@
 [PASS] Delta(m): scalar iff m in bcc(2pi); plane-constant iff m in pi Z^3; Y x plane-constant iff m in (pi/2)(1,1,1) + pi Z^3 (exact, 4096 m)  {(True, True, False): 2, (False, False, False): 4080, (False, True, False): 6, (False, False, True): 8}
 [PASS] S2.L101.S2.H13: t = (pi/4)(1,1,1) has a k-independent T intertwiner, no U one; composing T o T gives a U intertwiner at 2t with V = V_T V_T^{-T}  
 [PASS] inverse of the T taste is a T taste at -t (k-independent)  
+[PASS] for all 24 rotations: R t is a T taste with transported intertwiner U_R V_T U_R^T, and R t - t has a U intertwiner (O acts trivially on Lambda_ind/Lambda_u)  

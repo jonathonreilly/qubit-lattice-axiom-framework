@@ -210,14 +210,14 @@ Hop dynamics conserves flux, so a sector chosen at random at formation would sta
 
 `python3 scripts/equivariant_iid_factor_registration_lemma_and_corner_flux_sector_freedom_2026_10_18.py`
 
-- **Default:** `TOTAL: PASS=35 FAIL=0`, about 17 s.
-- **`--energetics --full`:** `TOTAL: PASS=45 FAIL=0`, about 50 s. This adds the L = 6 A1 certificate and the E0–E5 energetics.
+- **Default:** `TOTAL: PASS=35 FAIL=0`, 16–19 s.
+- **`--energetics --full`:** `TOTAL: PASS=45 FAIL=0`. This adds the L = 6 A1 certificate and the E0–E5 energetics. It took about 50 s on an otherwise idle 4-core machine and 435 s under heavy CPU contention.
 - Seed 20261018 in both cases.
 
 The checks fall into four groups.
 
 - **R (illustrations and controls; Monte Carlo and exact statevector).**
-  - R1: an iid-priority block packing (range 4, empty start, covariant) has max_Q |S(Q)| ≈ 0.14–0.16 at L = 40, below 4/√N_c, against 1 for a registered lattice.
+  - R1: an iid-priority block packing (range 4, empty start, covariant) has max_Q |S(Q)| = 0.12–0.19 at L = 40 (about 256 centres), below 4/√N_c ≈ 0.25, against 1 for a registered lattice.
   - R2: a radius-2 equivariant factor has √N_c · max|S| ≈ 2.0–2.3 from L = 20 to 80, and balanced coset frequencies (χ² over 124 dof).
   - R3: the two controls register with |S| = 1.
   - R4: on a 12-qubit TI circuit, uniform ⟨Z_x⟩ to 4·10⁻¹⁶, and connected ⟨Z₀Z_r⟩ = 0 to 2·10⁻¹⁵ for r > 4.
@@ -303,7 +303,7 @@ python3 scripts/equivariant_iid_factor_registration_lemma_and_corner_flux_sector
 python3 scripts/equivariant_iid_factor_registration_lemma_and_corner_flux_sector_freedom_2026_10_18.py --energetics --full
 ```
 
-Expected: `TOTAL: PASS=35 FAIL=0` (about 17 s), and `TOTAL: PASS=45 FAIL=0` (about 50 s). Requires numpy and scipy.
+Expected: `TOTAL: PASS=35 FAIL=0` (under 20 s), and `TOTAL: PASS=45 FAIL=0` (about 50 s idle; several minutes under CPU contention). Requires numpy and scipy.
 
 ## Load-bearing sources and context
 

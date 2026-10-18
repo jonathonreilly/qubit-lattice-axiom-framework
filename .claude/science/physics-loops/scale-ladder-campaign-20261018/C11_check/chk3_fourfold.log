@@ -1,0 +1,23 @@
+[PASS] P_D+ is O-symmetric on-site, so Z(alpha) = exp(i alpha P_D+) is an A1 letter (v = 0)
+   levels: end 40, mid 40, root 40, old 25; 62s
+[PASS] no first-order D+<->D- block on all 145 4-fold levels (worst 1.7e-09)
+[PASS] direct diagonalisation: the 4 slopes are +-|sum v^(+path)|, +-|sum v^(-path)| (worst 9.5e-07)
+[PASS] [end] generic words: the two cone speeds differ by > 1e-3 in 40/40 levels; smallest | |v+|-|v-| | = 3.1e-02
+[PASS] [mid] generic words: the two cone speeds differ by > 1e-3 in 40/40 levels; smallest | |v+|-|v-| | = 4.5e-03
+[PASS] [root] generic words: the two cone speeds differ by > 1e-3 in 39/40 levels; smallest | |v+|-|v-| | = 4.1e-04
+   Berry on 104 generic 4-fold levels with separated speeds: same sign(v+)=sign(v-) in 30; upper-pair Chern = +-2 in 30/30 of those, 0 in 74/74 of the others
+     [end] same-chirality 10/39
+     [mid] same-chirality 12/35
+     [root] same-chirality 8/30
+[PASS] per-band Berry Chern numbers (4 bands + upper pair) = prediction from sign(v+-) with kappa=+1, 104/104
+[PASS] same chirality confirmed convention-independently: upper-pair Chern = +-2 exactly when sign(v+)=sign(v-) (30 levels, all 3 constructions)
+[PASS] old-palette control (25 levels): equal speeds, opposite chirality; upper-pair Chern 0 on 17 Berry-tested
+== W3 (3D winding) of same-chirality words, and the -k* spectrum at the node quasi-energy
+   example: ['S^1', 'exp(iH)', 'onsite', 'Z'], v+ = 0.1833, v- = 0.3155, upper-pair Chern at +k* = 2.0000
+   W3 trapezoid N=10: +0.000019 +3.4e-17i  (1s)
+   W3 trapezoid N=14: +0.000000 +7.4e-17i  (4s)
+   W3 trapezoid N=18: +0.000000 -1.5e-16i  (8s)
+[PASS] W3 of the same-chirality example -> 0 (N=18: 4.6e-10); exact: every letter here is exp(iH), a constant, a diagonal phase, Z or a reflection, so W3 = 0 by homotopy/additivity
+   min |eigenphase(-k*) - node quasi-energy| = 4.243e-02  (=> the compensating charge -+2 is not at -k*; it must sit at points where isotropy is not forced, given net chirality = W3 = 0)
+[PASS] the partner point -k* is not at the node quasi-energy in the example
+TOTAL PASS=11 FAIL=0

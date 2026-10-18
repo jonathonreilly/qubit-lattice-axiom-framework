@@ -1,0 +1,54 @@
+== (b) step-3 sign: conjugating the frame by intertwiners
+[PASS] V^dag tau^(b) V = +tau^(a) exactly on 240 intertwiners (A1 and A2, both k*); never -tau (worst 7.1e-15)
+   reason: V^dag tau V is again a Hermitian T1 triple on D_a, hence c tau^(a) with c real, c^2 = 1; conjugation preserves tau_x tau_y = i tau_z, which -tau violates, so c = +1. The eps relation is what fixes the sign.
+== (c) letter values (analytic derivatives)
+[PASS] all 31 letters covariant with declared chi (24 rotations, 2 random k)
+[PASS] analytic (Daleckii-Krein) derivatives of exp(iH) letters agree with finite differences (9.3e-10)
+   letter                 D+,+k*     D-,+k*     D+,-k*     D-,-k*
+   S^1                 -0.471405   0.471405  -0.471405   0.471405
+   S^2                 -0.942809   0.942809  -0.942809   0.942809
+   S^-1                 0.471405  -0.471405   0.471405  -0.471405
+   S^-2                 0.942809  -0.942809   0.942809  -0.942809
+   R_L                 -0.000000   0.000000  -0.000000   0.000000
+   Rt                   0.000000  -0.000000   0.000000  -0.000000
+   E+                   0.000000  -0.000000   0.000000  -0.000000
+   E-                   0.000000   0.000000  -0.000000  -0.000000
+   exp(i1pi/6 R_L)      0.000000  -0.000000  -0.000000   0.000000
+   exp(i2pi/6 R_L)      0.000000   0.000000  -0.000000  -0.000000
+   exp(i3pi/6 R_L)     -0.000000  -0.000000   0.000000   0.000000
+   exp(i4pi/6 R_L)      0.000000   0.000000  -0.000000   0.000000
+   exp(i5pi/6 R_L)     -0.000000  -0.000000   0.000000  -0.000000
+   exp(1.234i R_L)      0.000000  -0.000000  -0.000000   0.000000
+   exp(i0.9 Rt)        -0.000000   0.000000  -0.000000   0.000000
+   onsite               0.000000   0.000000   0.000000   0.000000
+   onsite               0.000000   0.000000   0.000000   0.000000
+   onsite               0.000000   0.000000   0.000000   0.000000
+   A0S^-2               0.942809  -0.942809   0.942809  -0.942809
+   A0S^-1               0.471405  -0.471405   0.471405  -0.471405
+   A0S^0                0.000000   0.000000   0.000000   0.000000
+   A0S^1               -0.471405   0.471405  -0.471405   0.471405
+   A0S^2               -0.942809   0.942809  -0.942809   0.942809
+   exp(iH)             -0.974953  -0.798973  -0.302527  -0.452725
+   exp(iH)              0.084830   0.051966   0.046592  -0.029462
+   exp(iH)              1.415877   0.525976   0.670483  -0.164247
+   exp(iH)             -0.533883   1.432553   0.711207   1.148711
+   exp(iH)              0.024908  -0.180861  -0.070091   0.139512
+   exp(iH)             -0.186910   0.256588  -0.295788   0.319385
+   A0exp(iH)           -0.198387  -0.335638  -0.245733  -0.402868
+   A0exp(iH)            0.194421  -0.258856   0.060595  -0.100156
+[PASS] A1 letters are scalars on D+ and D-, A2 letters swap D+ <-> D- (label by subspace overlap)
+[PASS] P U^dag dU P = i v tau^(b) with v real for every letter (fit residual 1.8e-15, |Im v| 3.2e-16)
+[PASS] v_S = -+sqrt2/3 on D+-: |v_S| = sqrt2/3, opposite on D+ and D-, same at +-k*. (Overall sign opposite to C11's table because this build uses X(k)=sum X_a e^{-ik.a}; a global convention)
+[PASS] v_{S^p} = p v_S
+[PASS] v = 0 for R_L, Rt, E+-, exp(i theta R_L) (6 angles incl. 4pi/6, 1.234), exp(0.9i Rt), on-site (14 letters)
+[FAIL] A0 S^a: v^(b) = a v_S^(b) (input label b)
+[PASS] generic exp(iH) letters: v real and letter-dependent; v(D+)+v(D-) != 0 in 8/8, v(+k*) != v(-k*) in 8/8
+== (d) random words
+   739 isolated (gap>1e-3) D+- levels, 61 skipped as near-degenerate; 39s
+[PASS] tracked doublet labels (subspace overlap) agree with b_j = a prod_(l>j) chi_l on every letter of every level
+[PASS] termwise: B_j^dag U_j^dag dU_j B_j = i v_j^(b_j) tau^(a) for every letter of every level (worst 4.6e-15) - step 3 holds with +tau
+[PASS] whole-word finite-difference P W^dag dW P = i (sum v) tau^(a) on 120 levels (worst 2.2e-09)
+[FAIL] direct diagonalisation (3 random directions/level): half-splitting = |sum v| (worst 4.4e-07), tilt 1.8e-02
+   Berry: 60 levels (D+ 30, D- 30); sign(sum v)*Chern(upper band) values: {1}
+[PASS] Berry flux (FHS, sphere about k0): Chern(upper band) = kappa sign(sum v) with ONE global kappa = {1} for D+ and D- at +-k* -> chirality = sign(sum v) in the tau frames is convention-consistent across doublets
+TOTAL PASS=13 FAIL=2

@@ -1,6 +1,6 @@
 # C11 findings: generalised L1 (per-letter additive speed at ±k*)
 
-Provenance: a worker of the same model family. **Unchecked.** Saved by the supervisor from the hand-back (the worker's file write was blocked). The model code is `../B26_check/mymodel.py` (an independent from-scratch build), imported read-only; no other repo or campaign code is used.
+Provenance: a worker of the same model family. Checked by a fresh-context same-family agent on an independent build, with an opposite Bloch sign convention, a projector-built T1 frame, overlap-tracked labels and Berry-flux chirality (`../C11_check/REPORT.md`, PASS=45 FAIL=0). No claim refuted; corrections applied below. Saved by the supervisor from the hand-back (the worker's file write was blocked). The model code is `../B26_check/mymodel.py` (an independent from-scratch build), imported read-only; no other repo or campaign code is used.
 
 **Runner.** `c11_generalised_L1.py`: **TOTAL PASS=28 FAIL=0**, about 20 s on 3 threads. Three earlier failing logs record the worker's own errors:
 - `_firstrun.log`: a √2 in the τ normalisation; a wrong expectation that {±U_R} is 2O; B26 words with no isolated doublet.
@@ -13,7 +13,7 @@ Provenance: a worker of the same model family. **Unchecked.** Saved by the super
 
 Two further outcomes:
 - **Phase.** c_U/u_U is purely imaginary, so the real quantity is v = c_U/(i·u_U).
-- **4-fold levels.** B20's 4-fold statement (equal speeds, opposite chirality) does **not** carry over to generic exp(iH) letters.
+- **4-fold levels.** B20's 4-fold statement (equal speeds, opposite chirality) does **not** carry over to generic exp(iH) letters. The speeds generically differ, and in about 29–30% of levels both cones have the same chirality. This is confirmed by Berry flux in the check: the upper-pair Chern number is ±2 on every same-sign level and 0 otherwise, across three constructions.
 
 ## Setup
 
@@ -23,7 +23,7 @@ Two further outcomes:
 
 Model facts (certified numerically to machine precision, runner §1–2):
 - **F1.** All 24 proper rotations fix ±k* mod 2π, so the little group is O and ρ(g) = U_R.
-- **F2.** {±U_R} (48 elements) has 13 involutions, so it is **GL(2,3)**, the non-split double cover isoclinic to 2O. Relifting odd elements by i gives 2O; no conjugation, Schur argument or χ_A2 relation changes. Which of D± is "E1/2" is a convention; what is fixed is D− ≅ A2⊗D+ and D− ≇ D+.
+- **F2.** {±U_R} (48 elements; element orders confirmed against an explicit GL(2,3) in the check) has 13 involutions, so it is **GL(2,3)**, the non-split double cover isoclinic to 2O. Relifting odd elements by i gives 2O; no conjugation, Schur argument or χ_A2 relation changes. Which of D± is "E1/2" is a convention; what is fixed is D− ≅ A2⊗D+ and D− ≇ D+. After the relift, covariance must be written with U⁻¹, since (iU)ᵀ ≠ (iU)⁻¹.
 - **F3.** 12 = D₊ ⊕ D₋ ⊕ 2G3/2: D± are irreducible, inequivalent and of multiplicity 1. χ_{D−} = χ_A2·χ_{D+} for all 24 g, so A2⊗E1/2 ≅ E5/2. The complement has no D± content, and the commutant has dimension 6.
 - **F4.** On each D_b the T1 triples in End(D_b) form a 1-dimensional, traceless space. This gives a unique Hermitian triple τ^{(b)} with τ_iτ_j = δ_ij + iε_ijk τ_k.
 - **F5.** Hom(D₊,D₋) contains no T1 and contains T2 = T1⊗A2 once; End(D) contains no T2.
@@ -40,7 +40,7 @@ Model facts (certified numerically to machine precision, runner §1–2):
 **Proof.**
 1. *Schur.* A1 letters are scalars (phases) on D₊ and D₋ by multiplicity 1. A2 letters intertwine ρ with A2⊗ρ, so they swap D₊ ↔ D₋. A word with ∏χ = 1 is A1.
 2. *Wigner–Eckart.* ∂U transforms as χ⊗T1. Then M_i = P_b U†∂_iU P_b is a T1 triple in End(D_b), so M = c·τ by F4. There is no tilt part, since O has no invariant vector. Unitarity makes M anti-Hermitian, so c = iv with v real, and P∂UP = u·iv·τ.
-3. *Additivity.* W†∂W = Σ_j V_j†(U_j†∂U_j)V_j with V_j = U_{j+1}⋯U_m. On D_a, V_j is a unitary intertwiner up to a character, so V_j†τ^{(b_j)}V_j = τ^{(a)} by F4.
+3. *Additivity.* W†∂W = Σ_j V_j†(U_j†∂U_j)V_j with V_j = U_{j+1}⋯U_m. On D_a, V_j is a unitary intertwiner up to a character, so V_j†τ^{(b_j)}V_j = c·τ^{(a)} by F4, with c real and c² = 1. Conjugation preserves τ_xτ_y = iτ_z, which excludes −τ, so c = +1.
 4. *Cone.* First-order DPT gives eigenphases ±(Σv)|q|, and the Berry charge is sign(Σv) up to a global convention. ∎
 
 **Corollaries.**
@@ -73,7 +73,13 @@ Model facts (certified numerically to machine precision, runner §1–2):
   - The first-order D₊↔D₋ block vanishes (F5): no mixing.
   - There are two untilted isotropic cones at |Σv^{(+ path)}| and |Σv^{(− path)}| (worst deviation 1.8e−9).
   - Old-palette words have equal speeds and opposite chirality (72 levels; B20's 4-fold L1).
-  - **Generic exp(iH) words:** the speeds differ in 120/120 levels, and both cones have the same chirality in 35/120 (net first-order node charge ±2). This does not contradict the global Nielsen–Ninomiya count, but L2's net-chirality bookkeeping would need to be redone for generic letters.
+  - **Generic exp(iH) words:** the speeds differ in 120/120 levels, and both cones have the same chirality in 35/120 (net first-order node charge ±2; Berry flux confirms this in the check).
+  - **Implication (from the check):**
+    - L3 (W₃ = 0) extends exactly to words in exp(iH), constant, diagonal-phase and reflection letters, because exp(iH) is homotopic to 1. So the net chirality at a node quasi-energy is still 0 (conditional on Bessho–Sato).
+    - A same-chirality 4-fold node at k* therefore forces a compensating ∓2 charge at the same quasi-energy elsewhere, at points where isotropy is not forced (assuming the basic translation lattice). B20's conditional obstruction thus applies to these levels.
+    - The opposite-chirality ones generically have two speeds. Only v₊ = −v₋ escapes both, and it needs tuning.
+    - L2's R_L-parity criterion does not carry over; per-letter v sign bookkeeping replaces it.
+    - W₃ for general C¹ covariant letters is open.
 
 ## Status
 
@@ -94,7 +100,7 @@ Model facts (certified numerically to machine precision, runner §1–2):
 ## Open
 
 - An independent check with a different implementation of the T1 frame and the path bookkeeping; a symbolic proof of F3–F4.
-- Higher orders at k*: O(q²) is a scalar on D by Schur; O(q³) could be anisotropic. Neither is computed.
-- When generic letters give equal 4-fold speeds.
-- What same-chirality 4-fold nodes mean for L2/L3 in enlarged palettes.
+- Higher orders at k*: O(q²) is a scalar on an isolated 2-fold D by Schur. At a 4-fold level the two blocks can carry different scalars, and symmetry allows a direction-dependent D₊↔D₋ term (Sym²T1 ⊃ T2). O(q³) could be anisotropic. None is computed.
+- When v₊ = −v₋ (equal speeds and opposite chirality), the only 4-fold case that escapes both failure modes.
+- W₃ = 0 for the full class of C¹ O-covariant letters.
 - G3/2 levels, where per-letter coefficients become 2×2 matrices that need not add.

@@ -1,0 +1,14 @@
+PASS all 247 cube subsets with |S|>=2 fully forced :: 247
+PASS every conv-hull vertex is forced (cube subsets)
+PASS collinear triples {0,a d,b d}: <=1 unforced (sampled directions/spacings)
+PASS all 2-site bonds up to range 3 fully forced
+PASS 7-site star: exactly the centre unforced
+PASS 3x3 square: 5 unforced
+PASS 27-cell: 19 unforced
+collinear 4-sets 0<a<b<c<=12 with >=2 unforced: [(1, 2, 3), (2, 4, 6), (3, 6, 9), (4, 8, 12)]
+PASS only equally spaced collinear 4-sets have 2 unforced (so S4 + scaling covers 'collinear 4-site segments')
+300 random 27-cell subsets, |S| uniform in [2,12] (author's distribution): unforced 0/1/>=2 = {0: 283, 1: 13, 2: 4}
+300 random 27-cell subsets, |S| uniform in [2,27]: unforced 0/1/>=2 = {0: 121, 1: 21, 2: 158}
+PASS |S|<=12 sampling reproduces the NOTE's ~296/300 covered rate (>=285) :: {0: 283, 1: 13, 2: 4}
+PASS NOTE's 296/300 does NOT survive |S| up to 27 (covered < 60%): coverage statistic is size-distribution dependent :: {0: 121, 1: 21, 2: 158}
+TOTAL: PASS=10 FAIL=0

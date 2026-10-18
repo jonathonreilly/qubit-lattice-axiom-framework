@@ -38,3 +38,9 @@ Their "TT isotropy" is (a) forced by symmetry on the axes they sampled and (b) n
 Conditional positive (proved here only numerically, B4 basis rank): any completion that restores the Ward identity at the K^2 symbol, using a seagull or counterterm, lands on the unique B4 gauge invariant, linearised EH.
 That gives TT degeneracy, common speed, and eps3-type birefringence = 0 at leading order. This agrees with B4.
 The restoring counterterm is not derived. It must cancel an O(1) non-invariant part of the power-divergent K^2 coefficient, so the induced 1/G is not fixed by the bubble.
+
+## Correction after the independent check (B4b_check/REPORT.md)
+
+- **The defect is a missing, underived seagull**, not an intrinsic break. The Ward violation is entirely a contact term. A local nearest-neighbour K² seagull removes it (the residual falls from K³ to about K⁵), but no lattice symmetry fixes its 8 B4 coefficients, so the induced 1/G stays free.
+- **0.23 is the maximum over directions;** the range is 0.18–0.23. It is roughly mass-independent.
+- **The repo's 2-component "transverse seagull" note** (2026-06-08) shows the same O(1) symbol-level violation, with ratio 0.88. Its claim "transverse to leading physical order" is an overclaim.

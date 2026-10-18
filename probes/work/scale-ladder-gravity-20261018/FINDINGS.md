@@ -132,3 +132,29 @@ Write omega^2 = k^2 (1 + alpha k^2).
 
   Cone hierarchy on the D4 cone: spins 0, 1, 2 share the leading cone; spins 0 and 1 also share
   it through k^4; the graviton splits at k^4 via its partners.
+
+## Phase 4 (PR #9774; scratch/phase4/, imports the #9714 runner as r14)
+- F20. Pseudo-inverse trap: two vertex-displacement eigenvalues of the finite-difference edge form are about 1e-9,
+  above pinv(rcond=1e-11). Off the axes the sources overlap them at O(k^2), so plain-pinv exchanges blow up
+  (lb2). Always invert on the exact complement of range(G) (common.Qinv). The static-axis numbers in G17 are
+  unaffected, because the overlap there is exactly 0.
+- F21. Light bending and non-static exchange through the strain metric (lb1, lb3, shell):
+  - null/dust test ratio = 1.99998 (1 + gamma = 2);
+  - lattice-conserved Euclidean exchange alpha = -4, beta = +2 in 5-6 directions including the tick
+    (linearised-EH form); partner share O(k^2);
+  - on the Lorentzian shells, the reading of the non-metric null modes is ~0.27 |k| times the metric ones.
+- F22. Site scalar Ward identity (ward, wpos, wfit, wamp2):
+  - the violation is O(k) relative for corner and cell-averaged gradients;
+  - the cause is the reading: per-component registration points (h_mumu at 1/2, 1/8; h_munu at 1/2, 1/4) plus
+    off-support O(q^2) gradient entries from mixing the least-squares segment midpoints;
+  - the gauge dependence of the on-shell scalar-scalar exchange is O(k^2); the distance from the EH formula
+    is O(k).
+- F23. Weighting principle (w1, w2, w3):
+  - beta = 2 - (2/3) rho^2 with rho = 4(w_a - w_b)/(4 w_a + 12 w_f + 8 w_b), exact over 8 weightings;
+  - the EH form holds iff w_a = w_b, which is the fourth-moment isotropy of the weighted segment directions;
+    the face weight is free;
+  - the reading is NOT the Euclidean M^+ (misfit 0.65 / 0.22).
+- F24. Next targets:
+  - a segment-wise matter coupling (stress at the segment midpoints) and its Ward order;
+  - whether anything fixes the face weight;
+  - O(k^4) through the reading.

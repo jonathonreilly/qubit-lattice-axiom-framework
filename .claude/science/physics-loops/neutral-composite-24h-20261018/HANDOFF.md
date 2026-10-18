@@ -386,3 +386,6 @@ Native slab response density proved at actual coefficient ratio: amplitude-ratio
 
 
 Native heavy-probe loop block complete: exact physical hopping signs, fourth return 28I+2sumP, positive selected-loop neutral weight and fixed-box microscopic timing independently checked. Source-bound replay 2.736287s PASS. Relaxed heavy environment prefers flat flux, distinct from vacuum. Next: root derived native D2=-(Tx-Ty)^2/8 and extended patch variational energy; uniform embedding and conditional flux bound focused checks PASS, canonical proof pending. No empirical test or universal coupling claim.
+
+
+Native extended-patch block: exact D2=-(Tx-Ty)^2/8, noncommuting lower bound and half-sector correction checked. Growing R~lambda^-1, ell~lambda^-3/4 trial yields actual two-wall gap4J-4Jlambda+O(Jlambda^2.5); dressed conditional bad-flux O(lambda^1.5). Uniform embedding, wall-relative band separation and final focused checks PASS, replay0.912337sPASS. No exact-radius selection or empirical identification. Next root derives complementary three-layer native hop changing the particle and two background columns together; exact amplitudes x=-1/4,y=si*sj/4 independently checked. Prepared-vacuum versus relaxed-loop response distinction being developed.

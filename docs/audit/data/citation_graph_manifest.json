@@ -1,6 +1,6 @@
 {
- "edge_count": 16263,
- "node_count": 7249,
+ "edge_count": 16267,
+ "node_count": 7250,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4257,6 +4257,10 @@
   "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04": {
    "deps_hash": "48ebef824880",
    "out_degree": 6
+  },
+  "corner_fermion_interaction_channels_favour_chiral_term_over_dirac_mass_and_qubit_build_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "7eba5c37a5c2",
+   "out_degree": 4
   },
   "corner_fermion_long_wavelength_theory_is_one_isotropic_spin_half_doublet_and_one_qubit_block_embedding_bounded_theorem_note_2026-10-17": {
    "deps_hash": "de83b23f3129",

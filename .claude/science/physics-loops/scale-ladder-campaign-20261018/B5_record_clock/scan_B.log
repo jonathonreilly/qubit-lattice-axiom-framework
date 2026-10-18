@@ -1,0 +1,8 @@
+/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_tolerance_scan.py:137: RuntimeWarning: divide by zero encountered in log
+  if abs(np.log(ys / E)) < np.log(1.1) or xs >= 10.0:
+/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_tolerance_scan.py:131: RuntimeWarning: divide by zero encountered in log
+  s_ = np.log(y1 / y2) / np.log(x1 / x2)
+/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_tolerance_scan.py:127: RuntimeWarning: divide by zero encountered in scalar divide
+  p = np.log(ya / yb) / np.log(xa / xb)
+/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_tolerance_scan.py:131: RuntimeWarning: divide by zero encountered in scalar divide
+  s_ = np.log(y1 / y2) / np.log(x1 / x2)

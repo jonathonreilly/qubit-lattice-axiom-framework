@@ -335,6 +335,84 @@ def main():
           "speed for every field), spatial O_h x time reversal (96) leaves two (each field's speed is a free parameter)",
           len(B4) == 384 and len(OhT) == 96 and nB4 == 1 and nOhT == 2, f"{nB4} vs {nOhT}")
 
+    # ---------------- Part 6: parameter-free step rules (no tunable couplings)
+    print("\nPart 6: parameter-free local step rules fix the speed from the grid alone")
+    s3 = np.sqrt(3)
+    def omega_dp(k):    # minimal Weyl automaton (D'Ariano-Perinotti 2014, BCC lattice)
+        c, s = np.cos(k / s3), np.sin(k / s3)
+        return np.arccos(np.clip(c[0]*c[1]*c[2] - s[0]*s[1]*s[2], -1, 1))
+    dq = rng2.normal(size=(300, 3)); dq /= np.linalg.norm(dq, axis=1)[:, None]
+    sp = {q: np.array([omega_dp(q * d) / q for d in dq]) for q in (0.02, 0.01, 0.005)}
+    an = [np.ptp(sp[q]) / sp[q].mean() for q in (0.02, 0.01, 0.005)]
+    vmax = 0.0
+    for k in rng2.uniform(-np.pi * s3, np.pi * s3, size=(3000, 3)):
+        g = [(omega_dp(k + 1e-6 * e) - omega_dp(k - 1e-6 * e)) / 2e-6 for e in np.eye(3)]; vmax = max(vmax, np.linalg.norm(g))
+    pair = np.array([2 * omega_dp(0.005 * d) / 0.01 for d in dq])
+    kk = np.array([0.3, 0.2, 0.1]); edge = np.array([kk[1], kk[0], -kk[2]]); cyc3 = np.array([kk[1], kk[2], kk[0]])
+    check("minimal Weyl automaton: speed 1/sqrt3 with no parameter, inside the one-step cone, inherited by collinear pairs; "
+          "anisotropy only linear in |k| because its dispersion is invariant under C3 but not under the w1-odd edge C2",
+          abs(sp[0.005].mean() - 1 / s3) < 1e-4 and abs(sp[0.005].mean() - 1 / s3) < abs(sp[0.02].mean() - 1 / s3) and vmax < 1 and np.max(np.abs(pair - sp[0.01])) < 1e-3
+          and all(abs(an[i] / an[i + 1] - 2) < 0.05 for i in range(2))
+          and abs(omega_dp(kk) - omega_dp(cyc3)) < 1e-12 and abs(omega_dp(kk) - omega_dp(edge)) > 1e-4,
+          f"v = {sp[0.005].mean():.7f}, max group speed {vmax:.3f}, anisotropy {np.round(an, 5)}, pair-vs-single speed gap {np.max(np.abs(pair - sp[0.01])):.1e}")
+    RLr = H0(0.0, 1.0) / np.sqrt(2)
+    won, Von = np.linalg.eigh(Bloch(np.zeros(3)).conj().T @ H0(1.0, 0.0) @ Bloch(np.zeros(3)))
+    P2 = Von[:, np.abs(won - 2) < 1e-6]; Uc = np.eye(12) - 2 * P2 @ P2.conj().T
+    Uon = np.zeros((nV, nV), complex)
+    for v in range(L ** 3):
+        idx = [C['VID'][(TV[v], c)] for c in CORN]; Uon[np.ix_(idx, idx)] = Uc
+    Wr = RLr @ Uon
+    ok_rule = (np.allclose(RLr @ RLr, np.eye(nV)) and np.allclose(Uon @ Uon, np.eye(nV)) and P2.shape[1] == 4
+               and all(np.allclose(conj(Wr, P, s), Wr) for P, s in rots + trans[:5]))
+    check("the corner step W = (link hopping / sqrt2) x (reflection about the eigenvalue-2 space of the on-site corner hopping) "
+          "is an exact local unitary with no parameter, built from two reflections, commuting with the gauge-dressed rotations and translations",
+          ok_rule, f"on-site eigenvalues {np.round(sorted(set(np.round(won, 6))), 4)}")
+    blW = blocks_from(Wr); blL = blocks_from(RLr)
+    Wk = lambda k: Hk(blL, k) @ Uc
+    check("the Bloch step reproduces the real-space step on the torus and stays unitary at off-grid momenta (infinite volume: the link "
+          "hopping squares to 2 at every k)", all(np.allclose(Hk(blW, KS[i]), Wk(KS[i])) for i in range(0, 64, 7))
+          and all(np.allclose(Wk(k) @ Wk(k).conj().T, np.eye(12)) for k in rng2.uniform(-np.pi, np.pi, size=(5, 3))))
+    ev_k, vk = np.linalg.eig(Bst.conj().T @ Wr @ Bst)
+    node_idx = np.where(np.abs(np.angle(ev_k)) < 1e-7)[0]; Qn, _ = np.linalg.qr(vk[:, node_idx])
+    dnode = decompose(Bst @ Qn)
+    flat = [int(np.sum(np.abs(np.angle(np.linalg.eigvals(Wk(rng2.uniform(-np.pi, np.pi, 3))))) < 1e-9)) for _ in range(5)]
+    cone = {}
+    for q in (0.004, 0.002, 0.001):
+        S = []
+        for d in dq[:60]:
+            e = np.angle(np.linalg.eigvals(Wk(kst + q * d))); e = np.sort(e[np.abs(e) < 0.05]); S.append(e / q)
+        cone[q] = np.array(S)
+    vcone = np.abs(cone[0.001][:, [0, 1, 4, 5]])
+    anc = [np.ptp(np.abs(cone[q][:, [0, 1, 4, 5]])) for q in (0.004, 0.002, 0.001)]
+    check("at k* the step has a 6-fold node, G3/2 + one spin-1/2 doublet: four bands leave at +-|q|/sqrt3 (each 2-fold; spin-1 x spin-1/2 "
+          "form) with anisotropy falling as |q|^2, and two bands are exactly flat (forced: +1 spaces of dimension 6 and 8 in 12 meet in >= 2)",
+          len(node_idx) == 6 and dnode is not None and dnode.get('G3/2') == 1 and sum(dnode.values()) == 2 and set(dnode) <= SPIN
+          and np.allclose(vcone, 1 / s3, atol=1e-6) and np.allclose(cone[0.001][:, 2:4], 0, atol=1e-9)
+          and min(flat) == 2 and all(abs(anc[i] / anc[i + 1] - 4) < 0.2 for i in range(2)),
+          f"node content {dnode}, speed {vcone.mean():.8f}, anisotropy {np.array(anc)}, flat bands at generic k {flat}")
+    # no-go illustration: doublet velocity at k* vanishes for products of symmetric reflections and on-site unitaries
+    from scipy.linalg import expm
+    loc_reps = []
+    for P, s_ in rots:
+        Mx = np.zeros((nV, nV)); Mx[P, np.arange(nV)] = (-1.0) ** s_; loc_reps.append(Mx[np.ix_(loc0, loc0)])
+    def rand_onsite():
+        A = rng2.normal(size=(12, 12)) + 1j * rng2.normal(size=(12, 12)); A = A + A.conj().T
+        return expm(1j * sum(R @ A @ R.T for R in loc_reps) / 24)
+    vmax_d = 0.0
+    for trial in range(3):
+        U1, U2 = rand_onsite(), rand_onsite()
+        for Wf in (lambda k: Hk(blL, k) @ U1 / np.sqrt(2), lambda k: Hk(blL, k) @ U1 @ Hk(blL, k) @ U2 / 2):
+            e0, v0 = np.linalg.eig(Wf(kst)); order = np.argsort(np.angle(e0)); e0 = e0[order]
+            ang = np.angle(e0)
+            for i in range(11):
+                if abs(ang[i + 1] - ang[i]) < 1e-8 and (i == 0 or abs(ang[i] - ang[i - 1]) > 1e-8) and (i + 2 > 11 or abs(ang[i + 2] - ang[i]) > 1e-8):
+                    for d in dq[:6]:
+                        e = np.angle(np.linalg.eigvals(Wf(kst + 1e-4 * d)) * np.exp(-1j * ang[i]))
+                        e = np.sort(e[np.abs(e) < 0.01]); vmax_d = max(vmax_d, abs(e[-1] - e[0]) / 2e-4)
+    check("no-go illustration: with random symmetric on-site unitaries between link reflections, every isolated spin-1/2 doublet at k* "
+          "has zero velocity (its states are fixed by symmetry; a reflection's projected derivative vanishes since {R, dR} = 0)",
+          vmax_d < 1e-3, f"largest doublet half-splitting/q {vmax_d:.2e}")
+
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     return 1 if FAIL else 0
 

@@ -1,0 +1,20 @@
+slug: scale-ladder-campaign-20261018
+start: 2026-10-18T02:14Z
+runtime: 12h
+target_stop: 2026-10-18T14:14Z
+branch: claude/scale-ladder-campaign-20261018
+base: claude/scale-ladder-20261018 (PR #9702)
+delivery: milestone
+checkpoint_interval: 30m
+lock: automation_lock acquired, ttl 13h
+current_cycle: 1
+current_block: B1 parameter-free corner fermion
+blocks:
+  B1: in_progress
+  B2: queued
+  B3: queued
+  B4: queued
+  B5: queued
+  B6: queued
+  B7: queued
+  B8: queued

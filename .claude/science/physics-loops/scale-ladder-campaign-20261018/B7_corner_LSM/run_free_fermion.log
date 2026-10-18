@@ -1,0 +1,32 @@
+A. infinite-lattice reduction
+[PASS] translation-invariant gauge reproduces the flux pattern; every O_h element has a PSG lift of the form (-1)^(lam.v + tau(c)) on the L = 4 torus
+[PASS] Bloch relation U_g H(k) U_g^T = H(g k + pi s_g) for all 48 g at 20 random continuous k (supplied H0 and a random O_h-symmetric range-2 Hamiltonian); torus restriction agrees
+
+B. fibre representation
+[PASS] twisted fibre matrices i^{w1} U_R form a 2O representation, central element = -1, decomposition E1/2 + E5/2 + 2 G3/2 (k-independent: identical at every momentum and on site 0)  {'E1/2': 1, 'E5/2': 1, 'G3/2': 2}
+
+C. odd filling at k*
+[PASS] k* is fixed by all 24 dressed rotations; for 12 random G-symmetric Hamiltonians (range 1-3, strength 0.01-10, real and complex) E_nu(k*) = E_{nu+1}(k*) for every odd nu  multiplicities e.g. [[2, 4, 2, 4], [2, 4, 2, 4], [4, 2, 2, 4]]
+
+D. little groups of the affine action
+   (group, |little group|, min level multiplicity, gcd) -> number of grid momenta
+    ('O', 2, 1, 1) 396 [(np.float64(-1.0), np.float64(-1.0), np.float64(-0.5)), (np.float64(-1.0), np.float64(-1.0), np.float64(0.5)), (np.float64(-1.0), np.float64(-0.5), np.float64(-1.0)), (np.float64(-1.0), np.float64(-0.5), np.float64(-0.5))] ...
+    ('O', 3, 1, 1) 88 [(np.float64(-1.0), np.float64(-1.0), np.float64(-1.0)), (np.float64(-1.0), np.float64(-1.0), np.float64(0.0)), (np.float64(-1.0), np.float64(0.0), np.float64(-1.0)), (np.float64(-1.0), np.float64(0.0), np.float64(0.0))] ...
+    ('O', 4, 1, 1) 132 [(np.float64(-1.0), np.float64(-0.5), np.float64(0.5)), (np.float64(-1.0), np.float64(0.5), np.float64(-0.5)), (np.float64(-0.9167), np.float64(-0.5), np.float64(0.5)), (np.float64(-0.9167), np.float64(0.5), np.float64(-0.5))] ...
+    ('O', 8, 2, 2) 6 [(np.float64(-0.5), np.float64(-0.5), np.float64(-0.5)), (np.float64(-0.5), np.float64(-0.5), np.float64(0.5)), (np.float64(-0.5), np.float64(0.5), np.float64(0.5)), (np.float64(0.5), np.float64(-0.5), np.float64(-0.5))] ...
+    ('O', 24, 2, 2) 2 [(np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), (np.float64(0.5), np.float64(-0.5), np.float64(0.5))] 
+    ('Oh', 2, 1, 1) 384 [(np.float64(-1.0), np.float64(-1.0), np.float64(-0.5)), (np.float64(-1.0), np.float64(-1.0), np.float64(0.5)), (np.float64(-1.0), np.float64(-0.5), np.float64(-1.0)), (np.float64(-1.0), np.float64(-0.5), np.float64(0.0))] ...
+    ('Oh', 3, 1, 1) 80 [(np.float64(-0.9167), np.float64(0.0833), np.float64(-0.9167)), (np.float64(-0.9167), np.float64(0.0833), np.float64(-0.0833)), (np.float64(-0.9167), np.float64(0.9167), np.float64(-0.9167)), (np.float64(-0.9167), np.float64(0.9167), np.float64(-0.0833))] ...
+    ('Oh', 4, 1, 1) 144 [(np.float64(-1.0), np.float64(-0.5), np.float64(-0.5)), (np.float64(-1.0), np.float64(-0.5), np.float64(0.5)), (np.float64(-1.0), np.float64(0.5), np.float64(-0.5)), (np.float64(-1.0), np.float64(0.5), np.float64(0.5))] ...
+    ('Oh', 6, 1, 1) 8 [(np.float64(-1.0), np.float64(-1.0), np.float64(-1.0)), (np.float64(-1.0), np.float64(-1.0), np.float64(0.0)), (np.float64(-1.0), np.float64(0.0), np.float64(-1.0)), (np.float64(-1.0), np.float64(0.0), np.float64(0.0))] ...
+    ('Oh', 8, 2, 2) 6 [(np.float64(-0.5), np.float64(-0.5), np.float64(-0.5)), (np.float64(-0.5), np.float64(-0.5), np.float64(0.5)), (np.float64(-0.5), np.float64(0.5), np.float64(0.5)), (np.float64(0.5), np.float64(-0.5), np.float64(-0.5))] ...
+    ('Oh', 24, 2, 2) 2 [(np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), (np.float64(0.5), np.float64(-0.5), np.float64(0.5))] 
+[PASS] on grids N = 8, 12, 24 the only momenta fixed by all of O are +-k* (units of pi: +-(1/2,-1/2,1/2))  [(np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), (np.float64(0.5), np.float64(-0.5), np.float64(0.5))]
+[PASS] with inversion, no grid momentum has all level multiplicities divisible by 4 (no momentum-space obstruction to nu = 2 mod 4)  Oh keys with gcd 4: []
+
+E. Wyckoff projective classes (exact operator algebra)
+   P432-type (G):
+     1a   multiplicity  1  |site group| 24  class NONTRIVIAL  anticommuting pairs 12  torus irrep dims [2, 4] (free orbit True)
+     1b   multiplicity  1  |site group| 24  class NONTRIVIAL  anticommuting pairs 12  torus irrep dims [2, 4] (free orbit True)
+     3c   multiplicity  3  |site group|  8  class NONTRIVIAL  anticommuting pairs 6  torus irrep dims [2] (free orbit True)
+     3d   multiplicity  3  |site group|  8  class NONTRIVIAL  anticommuting pairs 6  torus irrep dims [2] (free orbit True)

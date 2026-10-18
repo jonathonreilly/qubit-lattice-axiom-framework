@@ -1,0 +1,11 @@
+S1. free fermions in the doubled-cell O_h class
+[PASS] random uniform + staggered Hamiltonians invariant under the 48 dressed O_h operators and the even translations (odd translations broken)
+[PASS] every level of the folded 24-state fibre at k* has multiplicity divisible by 4, so 2 mod 4 fermions per doubled cell (odd nu per site) admit no Slater band insulator in this class  multiplicities [4, 4, 4, 4, 4, 4]
+[PASS] reason: the dressed O_h operators (inversion anticommuting with the w1-odd rotations) have only 4-dim irreps on the 12-dim fibre; on the folded fibre inversion pairs k* with -k* and the same class acts  [4]
+
+S2. many-body: interaction-enabled symmetric product state at nu = 1 per site
+   1-dim characters (a: w1 sign, b: improper sign) present on N = 2: [((0, 1), 2), ((1, 0), 3), ((1, 1), 2)]
+[PASS] the 66-dim two-fermion site space contains states in a 1-dim representation of the dressed O_h operators; the chosen one has antisymmetric coefficient rank > 2, i.e. it is not a Slater determinant  invariant dimension 2, coefficient rank 12
+[PASS] the product state (psi on every even site, vacuum on every odd site) is mapped to itself (as a ray) by all 48 dressed O_h operators and the even translations; H = sum_even (1 - |psi><psi|) + sum_odd N_v is a symmetric commuting-projector Hamiltonian with this unique ground state, gap 1, filling 1 per site
+
+TOTAL: PASS=5 FAIL=0   (66 s)

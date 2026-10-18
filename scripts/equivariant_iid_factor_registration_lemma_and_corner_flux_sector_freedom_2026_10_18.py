@@ -28,7 +28,7 @@ consolidates the campaign's exact finite certificates and illustrations:
         is set by the dictionary); A3 one sign flip flips kappa exactly on the faces through that edge;
      A4 fermion-level PSG (BFS sign propagation) on L = 4 for all 16 uniform patterns; design targets
         select {1011, 1111}; the gauge-invariant standard-convention statement (pi through every face
-        at t1 = -1, lambda = 0) and the chiral triangle phase pi + 3 arctan(lambda).
+        at t1 = -1, lambda = 0) and the chiral-term phase of every face, pi + arctan(lambda) * sum_e sigma_e over on-site edges.
   E. (--energetics) nu = 1 free-fermion energetics of the 16 uniform sectors on a 2^3 Bloch supercell
      (6^3 K-grid), with the Bloch / real-space cross-check, the diamagnetic inequality and the
      particle-hole identity.  Numerical.
@@ -853,6 +853,29 @@ def part_A4():
                 prod *= -h
             ok &= abs(np.angle(prod * np.exp(-1j * (np.pi + 3 * np.arctan(lam))))) < 1e-12
     check("A4 with the chiral term (t1 = -1, lambda = -0.5) every oriented triangle carries standard phase pi + 3 arctan(lambda)", ok)
+    # every face type with the chiral term: a face carries pi + arctan(lambda) * sum_e sigma_e over its on-site edges,
+    # sigma_e = +1 (-1) when the face runs along (against) the det > 0 orientation of the triangle containing e
+    M = Model(L); orient = {e: (q, r) for q, r, e in M.tri}
+    amp = -np.where(M.kind == 0, -1.0, 0.2) * (-1.0) ** u
+    Hk = np.zeros((V, V), complex)
+    np.add.at(Hk, (M.J, M.I), amp); np.add.at(Hk, (M.I, M.J), amp)
+    for q, r, e in M.tri:
+        a = 1j * lam * (-1.0) ** u[e]; Hk[r, q] += a; Hk[q, r] += np.conj(a)
+    th = np.arctan(lam); ok = True; net = {k: set() for k in TYPES}
+    for k in TYPES:
+        for seq in G.face_seq[k]:
+            ids = [G.vid[(tuple(x % L for x in p_), c)] for p_, c in seq]
+            prod = 1.0 + 0j; sg = 0
+            for (a_, b_), e in zip(zip(ids, ids[1:] + ids[:1]), G._cycle(seq)):
+                prod *= -Hk[b_, a_]
+                if G.edges[e][2] == 'onsite':
+                    sg += 1 if orient[e] == (a_, b_) else -1
+            ok &= abs(np.angle(prod * np.exp(-1j * (np.pi + th * sg)))) < 1e-12
+            net[k].add(abs(sg))
+    print("  |sum sigma| by face type:", {k: sorted(v) for k, v in net.items()})
+    check("A4 with the chiral term every face carries standard phase pi + arctan(lambda) * sum_e sigma_e over its on-site edges;"
+          " |sum sigma| = 4 (square), 3 (triangle), 0 (plaquette), 2 (tube): squares pi -+ 4 arctan(lambda), tubes pi -+ 2 arctan(lambda)",
+          ok and net == {'square': {4}, 'triangle': {3}, 'plaquette': {0}, 'tube': {2}})
 
 
 # =====================================================================================================

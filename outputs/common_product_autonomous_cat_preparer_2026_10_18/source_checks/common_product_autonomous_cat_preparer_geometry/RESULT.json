@@ -1,0 +1,47 @@
+{
+  "paired_lengths": [
+    20935,
+    40122,
+    60222,
+    80222,
+    100648
+  ],
+  "sum_lengths": 302149,
+  "phase_power": 302239,
+  "finite_qubits": 604496,
+  "finite_blocks": 604602,
+  "maximum_installed_degree": 6,
+  "a1_neighbors": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "validation": "all assertions passed"
+}

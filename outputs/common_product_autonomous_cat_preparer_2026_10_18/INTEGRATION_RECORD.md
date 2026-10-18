@@ -1,0 +1,12 @@
+# Integration record: standalone finite cat+ preparation
+
+Canonical NOTE.md SHA256 3988e95bed568350de271e67de646c994b66797267f58110e0d37a82a5de4a7b.
+Author manuscript SHA256 438625572f38b23cc97699400e13b93070182584f33e53981b9f49fb44777fb4 preserved verbatim. ROOT read the complete manuscript. The canonical note removes only its final author work-record paragraph; the preserved author note remains provenance. No mathematics changed.
+
+ROOT fully read stationary source/review d4e708/1f606, explicit geometry0bc688 and compressed coordinates/author script/result, and authored the distinct compressed interval-intersection reconstruction cac4a. ROOT fully read finite source942a98 and reviewcf436; accepted only their stated supplied standalone finite cat+ scope. Necessary primitive arguments and their scoped checks were previously read at the frozen identities. Signed splitter edd08/ced2 is included only as a stationary ancillary result; no finite cat-minus inference is used.
+
+Thirteen exact source/evidence files are frozen in EXPECTED_SOURCES.json. The stacked Git base is PR9729 head7e70d3593ac780ff3b253c87dcdd64411579f261. This is a recovery/source-mapping convenience, not a claim that pair-selector or gadget operation is a mathematical dependency. The canonical citation is the single-control primitive theorem; the new full-fiber noncommuting composition and finite-source proof are explicit. Inherited source mappings retain all original exclusions. The local writer inverse, scalar launcher and localized derivative source/check identities were located in the inherited manifest without duplicating them.
+
+No receiving target penalties, operating-gadget coupling, twelve-cat loading, manufacturing tolerance, native identification, capture, permanent storage or reset is established. The finite theorem supplies a product seed and fixed exact positive blocks, charges all heads/emitters and scalar phase, and has a finite observation window. All times and device sizes are conservative sufficient resources, not practical or necessary values.
+
+Checks are same-model and source-exposed with shared ancestry; the independent algorithm in geometry does not constitute independent physics-model validation. No retained audit is applied. Publication drift review is separate. Mechanical installed hashes, links and citation metadata are checked after installation; unchanged scientific scripts are not rerun.

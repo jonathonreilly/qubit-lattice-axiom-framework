@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "method": "Exact integer segment intersections, no author path expansion or BFS replay",
+  "coordinate_sha256": "f8b3c4579e82abd999ebacd403b0fd040d101d37b8f43301c287ff247bcaecc5",
+  "segments": 82,
+  "paired_lengths": [
+    20935,
+    40122,
+    60222,
+    80222,
+    100648
+  ],
+  "finite_qubits": 604496,
+  "finite_blocks": 604602,
+  "phase_power": 302239,
+  "scope": "Geometry, isometry coordinates, abstract wiring and counts only; no dynamics, coefficients, finite preparation or receiving handoff check"
+}

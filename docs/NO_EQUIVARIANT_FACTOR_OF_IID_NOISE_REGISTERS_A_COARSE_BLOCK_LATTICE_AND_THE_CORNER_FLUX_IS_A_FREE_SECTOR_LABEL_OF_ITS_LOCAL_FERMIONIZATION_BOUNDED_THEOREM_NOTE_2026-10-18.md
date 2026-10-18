@@ -213,8 +213,8 @@ Hop dynamics conserves flux, so a sector chosen at random at formation would sta
 
 `python3 scripts/equivariant_iid_factor_registration_lemma_and_corner_flux_sector_freedom_2026_10_18.py`
 
-- **Default:** `TOTAL: PASS=36 FAIL=0`, about 25–30 s.
-- **`--energetics --full`:** `TOTAL: PASS=46 FAIL=0`. This adds the L = 6 A1 certificate and the E0–E5 energetics. It took about 50 s on an otherwise idle 4-core machine (earlier 45-check version) and 435–574 s under heavy CPU contention.
+- **Default:** `TOTAL: PASS=36 FAIL=0`, 22–27 s (load average about 10 on 4 cores).
+- **`--energetics --full`:** `TOTAL: PASS=46 FAIL=0`. This adds the L = 6 A1 certificate and the E0–E5 energetics. It took about 50 s on an otherwise idle 4-core machine (earlier 45-check version) and 435–574 s under heavy CPU contention (405 s for the current 46-check version).
 - Seed 20261018 in both cases.
 
 The checks fall into four groups.
@@ -306,7 +306,7 @@ python3 scripts/equivariant_iid_factor_registration_lemma_and_corner_flux_sector
 python3 scripts/equivariant_iid_factor_registration_lemma_and_corner_flux_sector_freedom_2026_10_18.py --energetics --full
 ```
 
-Expected: `TOTAL: PASS=36 FAIL=0` (under 30 s), and `TOTAL: PASS=46 FAIL=0` (about 1 min idle; 435–574 s under CPU contention). Requires numpy and scipy.
+Expected: `TOTAL: PASS=36 FAIL=0` (under 30 s; about 8 s of it is the A2 ordering search), and `TOTAL: PASS=46 FAIL=0` (about 1 min idle; 435–574 s under CPU contention). Requires numpy and scipy.
 
 ## Load-bearing sources and context
 

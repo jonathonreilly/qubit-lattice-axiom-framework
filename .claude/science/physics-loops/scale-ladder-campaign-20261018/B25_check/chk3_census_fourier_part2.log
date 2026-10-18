@@ -1,0 +1,3 @@
+[PASS] own good table: 56 good of 74 strict nested pairs, none among (L,L), (sc,bcc)_a, (fcc,sc)_b  
+   19 census words sampled from 9 strata (+ B25's Fourier-FAIL word)
+   resuming: skipping the first 17 sampled words (done in an earlier, killed run)

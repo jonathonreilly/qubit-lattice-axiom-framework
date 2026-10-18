@@ -134,7 +134,10 @@ sample = sample[:22]
 extra = [(('B24', ('S2', 'p', 'S4', 'o'), ('P7', 'H00')), None)]                   # B25's FAIL word (non-dyadic tastes)
 print(f"   {len(sample)} census words sampled from {len(strata)} strata (+ B25's Fourier-FAIL word)")
 agree = 0; rows = []
+SKIP = int(sys.argv[1]) if len(sys.argv) > 1 else 0          # resume after a time-limit kill: skip the first SKIP sampled words
+if SKIP: print(f"   resuming: skipping the first {SKIP} sampled words (done in an earlier, killed run)")
 for wid, (j, r) in enumerate(sample + extra):
+    if wid < SKIP: continue
     w = cl.build(j[1], j[2]); A = analyse(w, wid)
     if r is None:
         print(f"   FAIL-word {j[1]} {j[2]}: Lsp cap (pi/16) = {A['Lsp']}, |cap (pi/32)| = {A['n64']}, |cap (pi/24)| = {A['n48']}, triadic tastes {A['triadic']}, Lu {A.get('Lu')}, kinds {dict(A.get('kinds', {}))}")

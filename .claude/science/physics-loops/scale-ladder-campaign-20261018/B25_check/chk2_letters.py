@@ -132,7 +132,7 @@ check("for all 24 rotations: R t is a T taste with transported intertwiner U_R V
 for sk, nm in ((('S', 'R', 'o'), ('L310',)), (('S2', 'p', 'S4', 'q', 'S2', 'o'), ('P1', 'P11', 'L310'))):
     w = cl.build(sk, nm); found = None
     # cheap spectral pre-screen for reflection-type tastes with w = 1:  spec W(k+t) = conj spec W(k)  at two random k
-    TT = np.array([n for n in itertools.product(range(0, 16, 2), repeat=3) if any(n)]) * np.pi / 16
+    TT = np.array([n for n in itertools.product(range(0, 32, 2), repeat=3) if any(n)]) * np.pi / 16
     cand = np.ones(len(TT), bool)
     for k in np.random.default_rng(77).uniform(-np.pi, np.pi, (2, 3)):
         e0 = np.sort(np.mod(-np.angle(np.linalg.eigvals(W1(w, k))), 2 * np.pi))

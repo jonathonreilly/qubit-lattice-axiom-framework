@@ -1,0 +1,17 @@
+[PASS] dressed rotations and translations are real signed permutations (K commutes with every G_g)  
+[PASS] S, R_L, A0 are real in the real-space mode basis (so K S K = S, K R_L K = R_L, K A0 K = A0)  
+[PASS] the 80-letter Clifford palette PC is closed under complex conjugation up to a global phase  
+[PASS] (V K)^2 = V V* with V*(k) = conj V(-k) = the word with every on-site letter conjugated (an old-palette word)  
+[PASS] spec (VK)^2(-k) = conj spec (VK)^2(k) (the antiunitary step pairs E <-> -E, k <-> -k)  
+[PASS] R_L(k)^2 = 1, E+- unitary, E+E- = 1, E+^2 = i R_L, E+ R_L = i E-  
+[PASS] E+ is O-symmetric and translation invariant in real space; not a phased permutation (3 nonzeros per column, |entries| in {1/sqrt2, 1/2})  
+[PASS] exp(+-i pi/4 Rt) = S E-+ S^-1 (so Rt-exponentials add nothing beyond E+-)  
+[PASS] exp(pi/4 A0) = (1 + A0)/sqrt2 is unitary and G_g exp(pi/4 A0) G_g^-1 = exp(chi_A2(g) pi/4 A0), which is not a phase times exp(pi/4 A0): only T-covariant  
+[PASS] exp(i pi/4 (1-2P)) for every sum P of H_on- or Lambda-eigenprojectors lies in PC up to a phase (old Clifford letter)  
+[PASS] E+- at +-k*: scalar on D+ and on D-, zero compressed derivative (functional calculus of R_L)  
+[PASS] L1 with E letters (random words, random symmetric on-site unitaries): every 2-fold D+/D- level at k* is an isotropic cone at |n_S| sqrt2/3  508 levels, worst deviation 7.1e-14
+[PASS] letter rules: R_L(k+t) = D_t R_L(k) D_t^-1 and E(k+t) = D_t E(k) D_t^-1 (D_t = diag e^{-i t.f_c/2}); E(k)^T = E(-k)  
+  spectral (U/T-kind) taste lattices of 120 random E-words (within (pi/4)Z^3): {'bcc(pi/2)': 1, 'sc(2pi)': 83, 'bcc(2pi)': 17, 'sc(pi/4)': 8, 'bcc(pi)': 7, 'sc(pi/2)': 3, 'sc(pi)': 1}
+[PASS] every sampled E-word's spectral taste set is one of the rotation-invariant dyadic lattices of B24 (no new lattice)  {'bcc(pi/2)': 1, 'sc(2pi)': 83, 'bcc(2pi)': 17, 'sc(pi/4)': 8, 'bcc(pi)': 7, 'sc(pi/2)': 3, 'sc(pi)': 1}
+
+TOTAL: PASS=14 FAIL=0   [74s]

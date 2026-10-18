@@ -1,0 +1,40 @@
+[PASS] Rpos_closure_formula_L3  frame solve gives C_ij^j = D_ji g_i/g_j, C_ij^i = -D_ij g_j/g_i, field-dependent
+[PASS] Rpos_JacobiSign_L3  sum_cyc C C = +sum_cyc V_c(C) at a random rational point (and the '-' sign fails)
+[PASS] Rpos_closure_formula_L4  frame solve gives C_ij^j = D_ji g_i/g_j, C_ij^i = -D_ij g_j/g_i, field-dependent
+[PASS] Rpos_JacobiSign_L4  sum_cyc C C = +sum_cyc V_c(C) at a random rational point (and the '-' sign fails)
+[PASS] Rpos_closure_formula_L5  frame solve gives C_ij^j = D_ji g_i/g_j, C_ij^i = -D_ij g_j/g_i, field-dependent
+[PASS] Rpos_JacobiSign_L5  sum_cyc C C = +sum_cyc V_c(C) at a random rational point (and the '-' sign fails)
+[PASS] Rpos_closure_formula_L6  frame solve gives C_ij^j = D_ji g_i/g_j, C_ij^i = -D_ij g_j/g_i, field-dependent
+[PASS] Rpos_closure_formula_L7  frame solve gives C_ij^j = D_ji g_i/g_j, C_ij^i = -D_ij g_j/g_i, field-dependent
+[PASS] Rmom_cbar_L3  generic symbol: C(0) graded, cbar(a,b) = lam_a - lam_b, Lam_n = -lam_n
+[PASS] Rmom_firstorder_L3  d_c C_ab^e(0) = lam_c(lam_(a+c)-lam_(b+c)-lam_a+lam_b) delta_(e,a+b+c)
+[PASS] Rmom_L2_identity_L3  Jac(cbar) = +sum_cyc <dC, V_c(0)> as polynomials in lam; Jac not identically 0
+[PASS] Rmom_cbar_L4  generic symbol: C(0) graded, cbar(a,b) = lam_a - lam_b, Lam_n = -lam_n
+[PASS] Rmom_firstorder_L4  d_c C_ab^e(0) = lam_c(lam_(a+c)-lam_(b+c)-lam_a+lam_b) delta_(e,a+b+c)
+[PASS] Rmom_L2_identity_L4  Jac(cbar) = +sum_cyc <dC, V_c(0)> as polynomials in lam; Jac not identically 0
+[PASS] Rmom_cbar_L5  generic symbol: C(0) graded, cbar(a,b) = lam_a - lam_b, Lam_n = -lam_n
+[PASS] Rmom_firstorder_L5  d_c C_ab^e(0) = lam_c(lam_(a+c)-lam_(b+c)-lam_a+lam_b) delta_(e,a+b+c)
+[PASS] Rmom_L2_identity_L5  Jac(cbar) = +sum_cyc <dC, V_c(0)> as polynomials in lam; Jac not identically 0
+[PASS] Rmom_cbar_L6  generic symbol: C(0) graded, cbar(a,b) = lam_a - lam_b, Lam_n = -lam_n
+[PASS] Rmom_firstorder_L6  d_c C_ab^e(0) = lam_c(lam_(a+c)-lam_(b+c)-lam_a+lam_b) delta_(e,a+b+c)
+[PASS] Rmom_L2_identity_L6  Jac(cbar) = +sum_cyc <dC, V_c(0)> as polynomials in lam; Jac not identically 0
+[PASS] central_L3  Lam_2 = (w+1/w) Lam_1 = 2cos(2pi/L) Lam_1 in Q(w); (S) on cbar; Jac(cbar) = 0
+[PASS] central_L4  Lam_2 = (w+1/w) Lam_1 = 2cos(2pi/L) Lam_1 in Q(w); (S) on cbar; Jac(cbar) != 0 (12 triples)
+[PASS] central_L5  Lam_2 = (w+1/w) Lam_1 = 2cos(2pi/L) Lam_1 in Q(w); (S) on cbar; Jac(cbar) != 0 (48 triples)
+[PASS] central_L6  Lam_2 = (w+1/w) Lam_1 = 2cos(2pi/L) Lam_1 in Q(w); (S) on cbar; Jac(cbar) != 0 (72 triples)
+[PASS] central_L7  Lam_2 = (w+1/w) Lam_1 = 2cos(2pi/L) Lam_1 in Q(w); (S) on cbar; Jac(cbar) != 0 (180 triples)
+[PASS] central_L8  Lam_2 = (w+1/w) Lam_1 = 2cos(2pi/L) Lam_1 in Q(w); (S) on cbar; Jac(cbar) != 0 (252 triples)
+[PASS] central_L9  Lam_2 = (w+1/w) Lam_1 = 2cos(2pi/L) Lam_1 in Q(w); (S) on cbar; Jac(cbar) != 0 (444 triples)
+[PASS] central_L10  Lam_2 = (w+1/w) Lam_1 = 2cos(2pi/L) Lam_1 in Q(w); (S) on cbar
+[PASS] central_L11  Lam_2 = (w+1/w) Lam_1 = 2cos(2pi/L) Lam_1 in Q(w); (S) on cbar
+[PASS] central_L12  Lam_2 = (w+1/w) Lam_1 = 2cos(2pi/L) Lam_1 in Q(w); (S) on cbar
+[PASS] central_Jac_pattern  Jac(cbar) = 0 exactly at L = 3 and != 0 at L = 4..9
+[PASS] central_L4_ratio_zero  L = 4: Lam_2 = 0 exactly (inside the arc set {0})
+[PASS] SLAC_L5  Lam_n = nbar Lam_1 for all n, cbar(1,-1) = 2 lam_1 != 0, Jac(cbar) != 0 on 36 triples; first bad triple (0, 1, 2)
+[PASS] SLAC_L7  Lam_n = nbar Lam_1 for all n, cbar(1,-1) = 2 lam_1 != 0, Jac(cbar) != 0 on 108 triples; first bad triple (0, 1, 3)
+[PASS] SLAC_L9  Lam_n = nbar Lam_1 for all n, cbar(1,-1) = 2 lam_1 != 0, Jac(cbar) != 0 on 276 triples; first bad triple (0, 1, 4)
+[PASS] SLAC_L11  Lam_n = nbar Lam_1 for all n, cbar(1,-1) = 2 lam_1 != 0, Jac(cbar) != 0 on 516 triples; first bad triple (0, 1, 5)
+[PASS] forward_step1  forward difference: Lam_1 + Lam_-1 != 0 for L = 3..9
+[PASS] P1_covariance_injectivity_L5  V_(T xi)(T u) = T_* V_xi(u) (u-translation T, background u = 0 T-fixed); V_xi(0) = xi so G injective
+
+TOTAL: PASS=38 FAIL=0

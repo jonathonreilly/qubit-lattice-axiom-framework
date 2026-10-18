@@ -1,0 +1,4 @@
+[PASS] d2_e1_sector_not_involutive  rank span(V_col) = 3, with brackets = 6: the e_1 sector does NOT close even with structure functions in d = 2
+[PASS] d2_full_set_frame  rank = 9 = dim: the full xi(x) set is a frame, so it closes trivially with structure functions
+
+TOTAL: PASS=2 FAIL=0

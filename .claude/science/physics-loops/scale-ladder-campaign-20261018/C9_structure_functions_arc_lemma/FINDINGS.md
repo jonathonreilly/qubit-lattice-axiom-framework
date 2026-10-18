@@ -1,6 +1,6 @@
 # C9 findings: do field-dependent structure functions evade the arc lemma?
 
-Provenance: a worker of the same model family. **Unchecked.** Saved by the supervisor from the hand-back (the worker's file write was blocked). The runner is new code and imports nothing from the lane runner. This is pure lattice mathematics with supplied vector fields: no dynamics is adopted and no physical identification is made.
+Provenance: a worker of the same model family. Checked by a fresh-context same-family agent (`../C9_check/REPORT.md`, PASS=66 FAIL=0, all exact): confirmed with scope corrections, which are applied below. Saved by the supervisor from the hand-back (the worker's file write was blocked). The runner is new code and imports nothing from the lane runner. This is pure lattice mathematics with supplied vector fields: no dynamics is adopted and no physical identification is made.
 
 | Runner | Method | Result |
 |---|---|---|
@@ -32,15 +32,15 @@ The lane note's definitions are used:
 - **L1 (grading) [exact].** C_ab^e(Φ̄) = 0 unless e ≡ a+b. So c̄ is field-independent, antisymmetric and graded, the same shape as the lemma's data. *Proof:* evaluate the covariance relation at the fixed point.
 - **L2 (Jacobiator = background-velocity term) [exact; R4, M2, M2b, M4, X1].** For each e = a+b+c with V_e(Φ̄) ≠ 0:
   `Jac(c̄)_abc = Σ_cyc ⟨dC_ab^{a+b+c}(Φ̄), V_c(Φ̄)⟩`.
-  - So c̄ fails Jacobi only through first-order structure functions contracted with the background velocities.
+  - So c̄ fails Jacobi only through first-order structure functions contracted with the background velocities. (Requires C differentiable at Φ̄. Non-zero V_e(Φ̄) of distinct momenta are independent as T_* eigenvectors with distinct eigenvalues.)
   - When c̄ satisfies Jacobi and (S) holds, the arc lemma applies to c̄ verbatim.
 - **L3 (common zero ⇒ arc lemma on the linearisation) [exact; gap form certified by H2].**
-  - If V_n(Φ̄) = 0 for all n and C is continuous at Φ̄, then A_n := DV_n(Φ̄) satisfy [A_a, A_b] = c̄(a,b) A_{a+b}. This is a graded Lie algebra on the support S = {n : A_n ≠ 0}.
+  - If V_n(Φ̄) = 0 for all n and C is continuous at Φ̄, then A_n := DV_n(Φ̄) satisfy [A_a, A_b] = −c̄(a,b) A_{a+b} (check: D[V_A, V_B] = −[A, B] for linear vector fields; the sign does not affect (S) or any ratio Λ_n/Λ_1). This is a graded Lie algebra on the support S = {n : A_n ≠ 0}.
   - **Gap form of the arc lemma.** Its proof does not need every momentum to be present: arcs are runs of consecutive momenta inside S. If 0, ±1 ∈ S and (S) holds, then Λ_2/Λ_1 ≤ 0 whenever 2 ∈ S.
   - H2 checks this by Gröbner bases for supports Z_6∖{3}, Z_7∖{3}, Z_7∖{4} and Z_8∖{4}.
   - This is the standard isotropy-algebra fact for Lie algebroids.
 - **L4 (homogeneity) [exact; H1].**
-  - If the V_n are linear vector fields and C is continuous at 0, then [V_a, V_b] = C(0)^e V_e identically. The same holds for quadratic Poisson generators.
+  - If the V_n are linear vector fields, closure holds on a neighbourhood of 0 (or an open cone at 0) and C is continuous at 0, then [V_a, V_b] = C(0)^e V_e identically. The same holds for quadratic Poisson generators.
   - **So for the note's linear matter relabellings about the vacuum, continuous structure functions add nothing**, and B19 and the arc lemma stand.
   - Structure functions that help must be homogeneous of degree 0, hence discontinuous at the vacuum. H1 shows this for δφ = ξΔφ at L = 3–6.
 - **Degeneracy answer [exact].**
@@ -70,11 +70,12 @@ The lane note's definitions are used:
   - **SLAC difference (L = 5, 7):** Λ_n = n̄Λ_1 for every n, with (S), and exact closure with structure functions. Jac(c̄) ≠ 0, consistent with the note's B3 certificate that this spectrum is impossible with constants.
   - **Forward difference:** Λ_1 + Λ_{−1} ≠ 0 (L = 3–9).
   - The model also evades Theorem A, which assumes constants.
-  - Remark (series argument, not certified): the first-order terms are O(k³) against O(k) for c̄.
+  - Remark (series argument, not certified): the first-order terms are O(k⁴) per unit u_c (O(k³) per unit Δu), against O(k) for c̄.
+  - Setting (check): on Z_L the ruler is not periodic, so P6 is an affine field-space model taken as a definition that satisfies (P1) formally, not a relabelling of a periodic field. It uses a site central difference, not B14's bond G_m; on the ruler G_m has V_n(0) ∝ ½(1 + ω^{−n}), a mixed background at even L (uncertified remark).
 - **P7 (Poisson form) [exact; P1].** The cotangent lift X_a = ⟨p, V_a⟩ gives {X_a, X_b} = −C_ab^e(u) X_e.
   - The lowest-order generators p_a Poisson-commute, and c̄ first appears one order up.
   - Whether B14's G_m, with its density weights, reduces to this form was not checked.
-- **Why closure is vacuous here [exact].** L generators on an L-dimensional configuration space form a frame, so any bracket closes with structure functions. Extra conditions are needed for closure to constrain anything:
+- **Why closure is vacuous here [exact].** L generators on an L-dimensional configuration space form a frame, so any bracket closes with structure functions. This holds when the generators span the configuration tangent space on an open set, and for their cotangent lifts. It is not vacuous for a proper distribution: in d = 2 on a 3×3 torus, the ruler model's e₁ sector fails to close even with structure functions (check `chk_d2.py`: rank 3 → 6). Nor is it vacuous for phase-space generators not linear in π. Extra conditions are needed for closure to constrain anything:
   - a common-zero background (L3);
   - continuity of C at the vacuum for linear relabellings (L4);
   - restrictions on the form of C.
@@ -87,7 +88,7 @@ Setting: g is finite-dimensional and Z_L-graded with any dim g_n; D ∈ g_0; X_{
   - **(i) survives.** Under (S′), the spectrum of ad_D lies in (Λ_1/2)Z.
   - **Necessity.** Under (S′), an ad_D-eigenvector in g_n with eigenvalue n′Λ_1, n′ ≡ n mod L, |n′| ≥ 2, forces dim g_m ≥ 2 for m = 0, ±1. Gröbner at L = 5 confirms this, with controls.
   - **Sufficiency.** sl2 ⋉ V_{L−1} (L odd) has three extra generators at momenta 0, ±1. It satisfies (S′) and has Λ_n = n̄Λ_1 for all n (L = 5, 7, 9). Span G is not a subalgebra.
-  - **Literal (S) only.** D ⋉ Heisenberg, with one central extra generator, has Λ_n = n̄.
+  - **Literal (S) only.** D ⋉ Heisenberg, with one central extra generator, has Λ_n = n̄. Under literal (S) even 2Λ_n/Λ_1 ∈ Z fails (check: Λ_2 = Λ_1/3 at L = 5 with one central extra generator).
 - **Covered:**
   - doubled fields with one diagonal generator per momentum;
   - two independent copies that each close separately.
@@ -106,8 +107,9 @@ Setting: g is finite-dimensional and Z_L-graded with any dim g_n; D ∈ g_0; X_{
 - **Novelty:** L3 and L5 are standard facts (isotropy algebras; frames close with anholonomy coefficients) applied to the arc lemma's setting. No literature search was done.
 - **Suggested sharpening of the lane note's "Not claimed":**
   - Structure functions and enlarged generator sets are not excluded; both evade the arc lemma, by explicit constructions.
-  - Structure functions help only at backgrounds the relabellings move, or by being discontinuous at the vacuum.
-  - For linear matter relabellings about the vacuum they add nothing (L4).
+  - At a common zero with continuous C, the only routes left are (S) degenerating at linear order or 2 ∉ S. Otherwise structure functions help only at backgrounds the relabellings move, or by being discontinuous at the vacuum. Mixed backgrounds are open.
+  - For linear matter relabellings about the vacuum, *continuous* structure functions add nothing (L4). The same relabellings do close with degree-0 C, discontinuous at the vacuum, on {Δφ_x ≠ 0}.
+  - The constructions are abstract graded algebras or affine field-space models, not realised periodic lattice relabellings.
   - Theorems A–C are not contradicted.
 
 ## Open

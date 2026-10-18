@@ -1,0 +1,16 @@
+[PASS] gap_projection_L6_S01245  projection to (Lam_n, n in [2, 4]) = [(0, 0)]; gap-arc prediction [(0, 0)] (0.1s)
+[PASS] gap_lam2_nonpos_L6_S01245  Lam_2/Lam_1 in [0]
+[PASS] gap_projection_L7_S012456  projection to (Lam_n, n in [2, 4, 5]) = [(0, -1/2, 1/2), (0, 0, 0)]; gap-arc prediction [(0, -1/2, 1/2), (0, 0, 0)] (0.2s)
+[PASS] gap_lam2_nonpos_L7_S012456  Lam_2/Lam_1 in [0]
+[PASS] gap_projection_L7_S012356  projection to (Lam_n, n in [2, 3, 5]) = [(-1/2, 1/2, 0), (0, 0, 0)]; gap-arc prediction [(-1/2, 1/2, 0), (0, 0, 0)] (0.0s)
+[PASS] gap_lam2_nonpos_L7_S012356  Lam_2/Lam_1 in [-1/2, 0]
+[PASS] gap_projection_L8_S0123567  projection to (Lam_n, n in [2, 3, 5, 6]) = [(-1/2, 1/2, -1/2, 1/2), (-1/2, 1/2, 0, 0), (0, 0, -1/2, 1/2), (0, 0, 0, 0)]; gap-arc prediction [(-1/2, 1/2, -1/2, 1/2), (-1/2, 1/2, 0, 0), (0, 0, -1/2, 1/2), (0, 0, 0, 0)] (0.4s)
+[PASS] gap_lam2_nonpos_L8_S0123567  Lam_2/Lam_1 in [-1/2, 0]
+[PASS] gap_projection_L7_S0123456  projection to (Lam_n, n in [2, 3, 4, 5]) = [(-3/2, -1/2, 1/2, 3/2), (-1, 0, 1, 0), (-1/2, 1/2, -1/2, 1/2), (-1/2, 1/2, 0, 0), (0, -1, 0, 1), (0, -1/2, 1/2, 0), (0, 0, -1/2, 1/2), (0, 0, 0, 0)]; gap-arc prediction [(-3/2, -1/2, 1/2, 3/2), (-1, 0, 1, 0), (-1/2, 1/2, -1/2, 1/2), (-1/2, 1/2, 0, 0), (0, -1, 0, 1), (0, -1/2, 1/2, 0), (0, 0, -1/2, 1/2), (0, 0, 0, 0)] (20.3s)
+[PASS] gap_lam2_nonpos_L7_S0123456  Lam_2/Lam_1 in [-3/2, -1, -1/2, 0]
+[PASS] gap_projection_L8_S012457  projection to (Lam_n, n in [2, 4, 5]) = [(0, -1/2, 1/2), (0, 0, 0)]; gap-arc prediction [(0, -1/2, 1/2), (0, 0, 0)] (0.0s)
+[PASS] gap_lam2_nonpos_L8_S012457  Lam_2/Lam_1 in [0]
+[PASS] gap_projection_L9_S0123678  projection to (Lam_n, n in [2, 3, 6, 7]) = [(-1/2, 1/2, -1/2, 1/2), (-1/2, 1/2, 0, 0), (0, 0, -1/2, 1/2), (0, 0, 0, 0)]; gap-arc prediction [(-1/2, 1/2, -1/2, 1/2), (-1/2, 1/2, 0, 0), (0, 0, -1/2, 1/2), (0, 0, 0, 0)] (0.3s)
+[PASS] gap_lam2_nonpos_L9_S0123678  Lam_2/Lam_1 in [-1/2, 0]
+
+TOTAL: PASS=14 FAIL=0

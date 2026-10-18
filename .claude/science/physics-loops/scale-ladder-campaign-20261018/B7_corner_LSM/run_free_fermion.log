@@ -30,3 +30,32 @@ E. Wyckoff projective classes (exact operator algebra)
      1b   multiplicity  1  |site group| 24  class NONTRIVIAL  anticommuting pairs 12  torus irrep dims [2, 4] (free orbit True)
      3c   multiplicity  3  |site group|  8  class NONTRIVIAL  anticommuting pairs 6  torus irrep dims [2] (free orbit True)
      3d   multiplicity  3  |site group|  8  class NONTRIVIAL  anticommuting pairs 6  torus irrep dims [2] (free orbit True)
+     6e   multiplicity  6  |site group|  4  class trivial  anticommuting pairs 0  torus irrep dims [1] (free orbit True)
+     6f   multiplicity  6  |site group|  4  class trivial  anticommuting pairs 0  torus irrep dims [1] (free orbit True)
+     8g   multiplicity  8  |site group|  3  class trivial  anticommuting pairs 0
+     12h  multiplicity 12  |site group|  2  class trivial  anticommuting pairs 0
+     12i  multiplicity 12  |site group|  2  class trivial  anticommuting pairs 0
+     12j  multiplicity 12  |site group|  2  class trivial  anticommuting pairs 0
+     24k  multiplicity 24  |site group|  1  class trivial  anticommuting pairs 0
+   Pm-3m-type (Gh):
+     1a   multiplicity  1  |site group| 48  class NONTRIVIAL  anticommuting pairs 84  torus irrep dims [4] (free orbit True)
+     1b   multiplicity  1  |site group| 48  class NONTRIVIAL  anticommuting pairs 48  torus irrep dims [2, 4] (free orbit True)
+     3c   multiplicity  3  |site group| 16  class NONTRIVIAL  anticommuting pairs 24  torus irrep dims [2] (free orbit True)
+     3d   multiplicity  3  |site group| 16  class NONTRIVIAL  anticommuting pairs 36  torus irrep dims [4] (free orbit True)
+     6e   multiplicity  6  |site group|  8  class NONTRIVIAL  anticommuting pairs 6  torus irrep dims [2] (free orbit True)
+     6f   multiplicity  6  |site group|  8  class NONTRIVIAL  anticommuting pairs 6  torus irrep dims [2] (free orbit True)
+     8g   multiplicity  8  |site group|  6  class trivial  anticommuting pairs 0
+     12h  multiplicity 12  |site group|  4  class trivial  anticommuting pairs 0
+     12i  multiplicity 12  |site group|  4  class trivial  anticommuting pairs 0
+     12j  multiplicity 12  |site group|  4  class NONTRIVIAL  anticommuting pairs 3
+     24k  multiplicity 24  |site group|  2  class trivial  anticommuting pairs 0
+     24l  multiplicity 24  |site group|  2  class trivial  anticommuting pairs 0
+     24m  multiplicity 24  |site group|  2  class trivial  anticommuting pairs 0
+     48n  multiplicity 48  |site group|  1  class trivial  anticommuting pairs 0
+[PASS] G: the odd-multiplicity Wyckoff positions are exactly 1a, 1b, 3c, 3d and all four carry the nontrivial class (some commuting pair of dressed operators anticommutes); torus commutant gives only even irrep dims there
+[PASS] G: cross-check of the algebra: positions with cyclic site groups (6e, 6f) carry the trivial class and the torus commutant shows 1-dim irreps
+   Gh 1a irrep dims [4], 1b irrep dims [2, 4], 3c [2], 3d [4], 6e [2], 6f [2]
+[PASS] Gh: the site (1a) carries only 4-dimensional irreps (inversion exchanges E1/2 and E5/2), so on-site Slater-determinant atomic insulators have nu in {0, 4, 8, 12} only
+
+F. constructive band insulators with certified gaps
+[PASS] G: for every even nu in 2..10 an on-site atomic Hamiltonian plus a random G-symmetric range-1 hopping has a certified global gap (grid N = 24 gap minus Lipschitz bound > 0)  (nu, grid gap, certified) [(2, np.float64(1.586), np.float64(0.89)), (4, np.float64(1.64), np.float64(0.898)), (6, np.float64(1.78), np.float64(1.356)), (8, np.float64(1.566), np.float64(0.919)), (10, np.float64(1.422), np.float64(0.536))]

@@ -1,0 +1,154 @@
+{
+  "rows": [
+    {
+      "rung": 0,
+      "transverse_energy": -1.8225241651876396,
+      "ground_internal_probability": 0.6769956821127361,
+      "zero_internal_probability": 0.2903682338147915,
+      "upper_internal_probability": 0.03263608407247245,
+      "projector_norm_check": 1.6653345369377348e-15
+    },
+    {
+      "rung": 1,
+      "transverse_energy": -1.2382716925676507,
+      "ground_internal_probability": 0.5185293491280707,
+      "zero_internal_probability": 0.4007364571268256,
+      "upper_internal_probability": 0.0807341937451037,
+      "projector_norm_check": -8.881784197001252e-16
+    },
+    {
+      "rung": 2,
+      "transverse_energy": -1.1122621100196757,
+      "ground_internal_probability": 0.48624642990016914,
+      "zero_internal_probability": 0.4207511804255444,
+      "upper_internal_probability": 0.09300238967428641,
+      "projector_norm_check": 2.4424906541753444e-15
+    },
+    {
+      "rung": 3,
+      "transverse_energy": -1.082701655732596,
+      "ground_internal_probability": 0.4787583244091587,
+      "zero_internal_probability": 0.42527619256689175,
+      "upper_internal_probability": 0.09596548302394958,
+      "projector_norm_check": 1.6653345369377348e-16
+    },
+    {
+      "rung": 4,
+      "transverse_energy": -1.0827016557325948,
+      "ground_internal_probability": 0.4787583244091608,
+      "zero_internal_probability": 0.4252761925668888,
+      "upper_internal_probability": 0.09596548302395043,
+      "projector_norm_check": 1.1102230246251565e-16
+    },
+    {
+      "rung": 5,
+      "transverse_energy": -1.1122621100196781,
+      "ground_internal_probability": 0.4862464299001709,
+      "zero_internal_probability": 0.4207511804255424,
+      "upper_internal_probability": 0.09300238967428666,
+      "projector_norm_check": 2.942091015256665e-15
+    },
+    {
+      "rung": 6,
+      "transverse_energy": -1.2382716925676536,
+      "ground_internal_probability": 0.5185293491280693,
+      "zero_internal_probability": 0.40073645712682676,
+      "upper_internal_probability": 0.08073419374510397,
+      "projector_norm_check": 1.4432899320127035e-15
+    },
+    {
+      "rung": 7,
+      "transverse_energy": -1.822524165187639,
+      "ground_internal_probability": 0.6769956821127396,
+      "zero_internal_probability": 0.29036823381478816,
+      "upper_internal_probability": 0.032636084072472225,
+      "projector_norm_check": -4.440892098500626e-16
+    }
+  ],
+  "internal_ground_covariance": [
+    [
+      0.2186725285133782,
+      0.040141084269439464,
+      0.005190681349084902,
+      0.0015924446493419953,
+      0.0008547937502703107,
+      0.0006375779739266618,
+      0.0005176850964910273,
+      0.0003591311114600759
+    ],
+    [
+      0.040141084269439464,
+      0.24965666322080915,
+      0.021418501979333704,
+      0.0033789614052167627,
+      0.0014181365044801386,
+      0.0009624136609155953,
+      0.0007556205260357829,
+      0.0005176850964676016
+    ],
+    [
+      0.005190681349084902,
+      0.021418501979333704,
+      0.24981083930953213,
+      0.016858057950478345,
+      0.002863500902867855,
+      0.001373769820135734,
+      0.0009624136609198142,
+      0.0006375779739329901
+    ],
+    [
+      0.0015924446493419953,
+      0.0033789614052167627,
+      0.016858057950478345,
+      0.24954879121797732,
+      0.01595924531840287,
+      0.0028635009028703806,
+      0.0014181365044790284,
+      0.0008547937503110004
+    ],
+    [
+      0.0008547937502703107,
+      0.0014181365044801386,
+      0.002863500902867855,
+      0.01595924531840287,
+      0.24954879121799073,
+      0.016858057950479205,
+      0.0033789614052235906,
+      0.0015924446492952549
+    ],
+    [
+      0.0006375779739266618,
+      0.0009624136609155953,
+      0.001373769820135734,
+      0.0028635009028703806,
+      0.016858057950479205,
+      0.24981083930951892,
+      0.021418501979312943,
+      0.005190681349063642
+    ],
+    [
+      0.0005176850964910273,
+      0.0007556205260357829,
+      0.0009624136609198142,
+      0.0014181365044790284,
+      0.0033789614052235906,
+      0.021418501979312943,
+      0.24965666322080798,
+      0.04014108426944124
+    ],
+    [
+      0.0003591311114600759,
+      0.0005176850964676016,
+      0.0006375779739329901,
+      0.0008547937503110004,
+      0.0015924446492952549,
+      0.005190681349063642,
+      0.04014108426944124,
+      0.21867252851339108
+    ]
+  ],
+  "initial_residual": 2.0557963014452984e-13,
+  "scope": "Fixed selected plane sector exact finite eigenstate. Probabilities of local internal h eigenspaces, not real particles or a ground-sector certificate. Frozen npz eigenstate input.",
+  "frozen_state_sha256": "be3065e52bcd86cca06d3ddfde11111a8a9e68316a3d03db40be1187e4f75823",
+  "state_distribution": "Local disposable binary not committed; this frozen diagnostic is auxiliary, not replayed by the block runner and not used in exact proofs."
+}

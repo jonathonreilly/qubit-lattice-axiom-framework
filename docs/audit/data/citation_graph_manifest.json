@@ -1,6 +1,6 @@
 {
- "edge_count": 16270,
- "node_count": 7275,
+ "edge_count": 16271,
+ "node_count": 7276,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18665,6 +18665,10 @@
   "real_overlap_local_source_threshold_bounded_theorem_note_2026-09-15": {
    "deps_hash": "d80ec1818362",
    "out_degree": 3
+  },
+  "real_two_body_gap_mediation_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "29c256b911cf",
+   "out_degree": 1
   },
   "realization_row_sigma_reconciliation_bounded_theorem_note_2026-06-11": {
    "deps_hash": "b77b49964f00",

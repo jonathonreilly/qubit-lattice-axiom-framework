@@ -300,4 +300,3 @@ Expected: `TOTAL: PASS=22 FAIL=0` (about 80 s; `--quick` takes about 20 s).
 ## Load-bearing sources
 
 - [Priority-formation note](NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md)
-- [Scale-ladder note](SCALE_LADDER_CROSS_RUNG_INVARIANTS_CORNER_FERMION_BOUNDED_THEOREM_NOTE_2026-10-18.md)

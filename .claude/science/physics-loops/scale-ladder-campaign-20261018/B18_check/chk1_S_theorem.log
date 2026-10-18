@@ -1,0 +1,14 @@
+[PASS] S(k) = diag(sigma_c e^{i k.f_c}), f_c = the corner's own face diagonal, 12 distinct, sigma = +-1  
+[PASS] (ii) the M in GL(3,Z) with M^T permuting the 12 face diagonals are exactly the 48 signed permutations (O_h)  48 matrices
+allowed (M, theta) pairs: 96
+debug: badrand 0 ok_expl True max generic sigma_min over forbidden sample 0.0
+{'-k*': 48, 'k*': 48}
+theta (units pi/2) allowed per proper M: counts [2]
+example: M = I allowed theta (pi/2 units): [(np.int64(0), np.int64(0), np.int64(0)), (np.int64(2), np.int64(2), np.int64(2))]
+[PASS] (iii) allowed (M, theta): theta must lie in (pi/2)Z^3 (random theta never works); every allowed pair is realised by an explicit monomial V; sampled forbidden pairs have no invertible intertwiner at any candidate w (null spaces may be nonzero but singular)  96 allowed of 3072; 96 forbidden sampled
+[PASS] the 24 gauge-dressed rotations (k -> R k + pi s_R) are among the allowed maps (S is PSG-symmetric)  
+[PASS] NO allowed (anti)unitary momentum map sends k* to a doubler momentum +-k*+pi e_i (images are only k*, -k*)  image classes ['-k*', 'k*']
+for M = I: thetas [(np.int64(0), np.int64(0), np.int64(0)), (np.int64(2), np.int64(2), np.int64(2))] (units of pi/2)
+inversion lifts commute with S: 24 of 24
+
+TOTAL: PASS=5 FAIL=0   [49s]

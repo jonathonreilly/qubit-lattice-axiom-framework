@@ -1227,8 +1227,9 @@ def part_N():
         eqs += JE.coeffs(JE.euler(res, n))
     sol = sp.solve(eqs, [lm_, la_, nu], dict=True)
     l1_free = all(l1 not in s_ and all(not sp.sympify(v).has(l1) for v in s_.values()) for s_ in sol)
-    want = sorted([{lm_: a_, la_: b_, nu: 1} for a_ in (0, 1) for b_ in (0, 1)], key=str)
-    check("N1 {G,G} fixes matter normalisations to one structure constant, not against gravity's linear shift", same and sorted(sol, key=str) == want and l1_free,
+    want = {frozenset({lm_: a_, la_: b_, nu: 1}.items()) for a_ in (0, 1) for b_ in (0, 1)}
+    got = {frozenset((k, sp.sympify(v)) for k, v in s_.items()) for s_ in sol}
+    check("N1 {G,G} fixes matter normalisations to one structure constant, not against gravity's linear shift", same and got == want and len(sol) == 4 and l1_free,
           f"unit generators obey {{G_s[xi], G_s[eta]}} = sigma G_s[[xi,eta]] with one sigma for gravity (delta h = L_xi g at O(h)) {sg}, scalar {sm} "
           f"and Maxwell G_Lie {sa}; for G = lam_1 G1 + G2 + lam_m G_m + lam_A G_Lie the closure conditions give {sol} with lam_1 free: every "
           "nonzero matter sector shares the structure constant of gravity's O(h) part, but the weight lam_1 of the linear shift delta h = 2 d xi "

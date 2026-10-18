@@ -1,0 +1,34 @@
+k*
+   E=-3.141593 m=4
+   E=-1.570796 m=2  speeds [0.4714045 0.4714045 0.4714045]  |det|=0.104757 chir=-1 tilt=2.8e-16
+   E=-0.000000 m=4
+   E=+1.570796 m=2  speeds [0.4714045 0.4714045 0.4714045]  |det|=0.104757 chir=+1 tilt=4.2e-16
+-k*
+   E=-3.141593 m=4
+   E=-1.570796 m=2  speeds [0.4714045 0.4714045 0.4714045]  |det|=0.104757 chir=+1 tilt=5.1e-16
+   E=-0.000000 m=4
+   E=+1.570796 m=2  speeds [0.4714045 0.4714045 0.4714045]  |det|=0.104757 chir=-1 tilt=8.1e-16
+k*+pi ex
+   E=-1.996657 m=2  speeds [0.1233602 0.0616801 0.0616801]  |det|=0.000469 chir=+1 tilt=4.9e-16
+   E=-1.570796 m=2  speeds [0.5837466 0.5837466 0.2467203]  |det|=0.084072 chir=+1 tilt=2.5e-16
+   E=-1.144936 m=2  speeds [0.1233602 0.0616801 0.0616801]  |det|=0.000469 chir=+1 tilt=1.3e-15
+   E=+1.144936 m=2  speeds [0.1233602 0.0616801 0.0616801]  |det|=0.000469 chir=-1 tilt=1.1e-15
+   E=+1.570796 m=2  speeds [0.5837466 0.5837466 0.2467203]  |det|=0.084072 chir=-1 tilt=3.9e-16
+   E=+1.996657 m=2  speeds [0.1233602 0.0616801 0.0616801]  |det|=0.000469 chir=-1 tilt=4.4e-16
+-k*+pi ex
+   E=-1.996657 m=2  speeds [0.1233602 0.0616801 0.0616801]  |det|=0.000469 chir=-1 tilt=7.4e-16
+   E=-1.570796 m=2  speeds [0.5837466 0.5837466 0.2467203]  |det|=0.084072 chir=-1 tilt=4.3e-16
+   E=-1.144936 m=2  speeds [0.1233602 0.0616801 0.0616801]  |det|=0.000469 chir=-1 tilt=6.9e-16
+   E=+1.144936 m=2  speeds [0.1233602 0.0616801 0.0616801]  |det|=0.000469 chir=+1 tilt=3.4e-16
+   E=+1.570796 m=2  speeds [0.5837466 0.5837466 0.2467203]  |det|=0.084072 chir=+1 tilt=3.3e-16
+   E=+1.996657 m=2  speeds [0.1233602 0.0616801 0.0616801]  |det|=0.000469 chir=+1 tilt=6.7e-16
+[PASS] perturbation-theory velocities agree with finite differences (k* and k*+pi e_x at the +pi/2 node)  fd [0.4714045 0.4714045 0.4714045 0.2467203 0.5837466 0.5837466]
+[PASS] k*, -k*: the 2-fold levels at +-pi/2 are isotropic Weyl nodes at sqrt2/3 (|det| = (sqrt2/3)^3 = 0.104757), untilted  4 such levels; v*^3 = 0.104757
+[PASS] EVERY 2-fold level at the doubler momenta k*+pi e_x, -k*+pi e_x (all quasi-energies, both node sets) has |det B| != v*^3, so no translation-covariant (anti)unitary with M in GL(3,Z), any theta, any E -> +-E + phi, carries a k* Weyl node there  doubler-momentum |det| values [np.float64(0.000469), np.float64(0.084072)]; levels [(np.float64(-1.9967), np.float64(0.000469)), (np.float64(-1.5708), np.float64(0.084072)), (np.float64(-1.1449), np.float64(0.000469)), (np.float64(1.1449), np.float64(0.000469)), (np.float64(1.5708), np.float64(0.084072)), (np.float64(1.9967), np.float64(0.000469)), (np.float64(-1.9967), np.float64(0.000469)), (np.float64(-1.5708), np.float64(0.084072)), (np.float64(-1.1449), np.float64(0.000469)), (np.float64(1.1449), np.float64(0.000469)), (np.float64(1.5708), np.float64(0.084072)), (np.float64(1.9967), np.float64(0.000469))]
+[PASS] the doubler cones at +pi/2 and -pi/2 are identical uniaxial cones (0.2467203, 0.5837466 x2), |det| = 0.084072, opposite chirality to the same-momentum partner set  [(np.float64(-1.5708), 1), (np.float64(1.5708), -1), (np.float64(-1.5708), -1), (np.float64(1.5708), 1)]
+chiralities at +pi/2 (sign det B): {'k*': 1, '-k*': -1, 'k*+pi ex': -1, '-k*+pi ex': 1}
+ratio v_ax/v_tr = 0.422649730810 vs 1-1/sqrt3 = 0.422649730810
+[PASS] direct spectral test, all 48 x 8 x 2 maps k -> Mk + pi e (M in O_h), E -> +-E + phi: every map whose spectra match sends k* to +-k*; no spectrally allowed map sends k* to a doubler  192 of 768 maps pass the spectral test (96 with det M = +1); destinations ['-k*', 'k*']; min mismatch among doubler-sending maps 0.384
+[PASS] k -> k + pi(1,1,1) is realised by a genuine on-site operator, V W(k) V^-1 = w W(k+Q) (a Q-type taste mapping k* <-> -k* only)  (w, null-space dim): [(-1, 1)]
+
+TOTAL: PASS=6 FAIL=0   [12s]

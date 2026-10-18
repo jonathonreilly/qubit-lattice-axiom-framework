@@ -265,7 +265,8 @@ The ladder does unify the lanes, but not by deriving everything from the finest 
   - A lattice Maxwell field closes on the same cone, independently of g.
   - Among translation-invariant timings this needs one of eight one-sided timings. Reflection-symmetric alternatives break unit translations and appear to fail elsewhere.
   - **Normalisation.** The relabelling normalisation that sets the cone is partly derived (B19, unchecked).
-    - In the continuum at leading order, {G, G} and the single lapse rule force every matter generator onto one structure constant. So the matter cones equal each other with no premise.
+    - In the continuum at leading order, {G, G} and the single lapse rule force the scalar and Maxwell generators onto one structure constant. So those matter cones equal each other with no premise.
+    - For spin ½ this is open. The Kosmann relabellings do not form a Lie algebra unless a triad or rotation constraint is added (companion lane note, Result 4).
     - Their value relative to the gravity coefficients additionally needs gravity's own {G, C} at order h, with a quadratic relabelling term. That bracket gives every matter cone = the graviton's TT cone, K₂/(4α), which is K/(4α) because block 62 carries one K on both curvature terms.
     - On the lattice the relabellings do not close: the scalar at O(a²), Maxwell at O(a). There the normalisation is selected only in the continuum limit.
   - The one-sided timing forces an O(a) lattice obstruction.

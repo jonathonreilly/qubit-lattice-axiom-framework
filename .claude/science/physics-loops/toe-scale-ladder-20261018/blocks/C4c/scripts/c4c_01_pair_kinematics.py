@@ -91,8 +91,10 @@ for r in (1, 2):
             if mov:
                 free.append((rho, len(St), mov))
         if r == 1:
+            for rho, ns, mov in free:
+                print(f"   r=1 exception rho={rho} |Stab|={ns} COM-moving fixed images: {mov}")
             check(f"r=1, G={Gname}: every Stab-fixed image of every near pair has the same COM "
-                  "(monomial U(1) QCAs freeze pairs)", len(free) == 0,
+                  "(PREDICTION declared before running: monomial U(1) QCAs freeze pairs)", len(free) == 0,
                   f"{len(free)} exceptional relative positions")
         else:
             print(f"r=2, G={Gname}: relative positions whose stabiliser allows a COM-moving "

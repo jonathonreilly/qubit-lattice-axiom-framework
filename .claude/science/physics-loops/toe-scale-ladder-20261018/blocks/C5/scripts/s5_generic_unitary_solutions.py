@@ -59,7 +59,7 @@ def run(n, r, seed_scale, anchor_w):
     sig = int((np.abs(A).reshape(nh, -1).max(1) > 1e-6).sum())
     return uerr, motion, ws, sig
 
-for n, r, trials in ((2, 1, 4), (2, 2, 1), (4, 1, 2)):
+for n, r, trials in ((2, 1, 4), (4, 1, 2)):   # run 1 (log s5_run1_stopped_in_r2_trial.log) stalled in the r=2 finite-difference solve; r=2 dropped
     for t in range(trials):
         uerr, motion, ws, sig = run(n, r, 0.15, 0.3)
         line = (f'n={n} r={r} trial {t}: unit.err {uerr:.1e}, motion {motion:.3f}, {sig} nonzero hops, '

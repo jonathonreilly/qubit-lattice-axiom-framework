@@ -137,3 +137,16 @@ checked observable; additionally all relative errors < 1% for E.
   (-0.2880(4), -0.2893(4), -0.2894(5)) and E_mix agree (-0.28938, -0.28905, -0.28942). The middle-state
   structure factors are NOT equilibrated at L>=6 within 1e5 sweeps; they will be reported as per-start
   ranges, not as converged values.
+
+## 22:25 UTC — L=8,10 results
+- Middle observables at L=8 keep the start: S_T(k1) = 0.154 (canonical) vs 0.392 (RK-walk), M-star
+  flippability Bragg 0.0145 vs 0.0047 per site; L=8 T=32 canonical chain: E_mid = -0.2795(1) vs
+  E_mix = -0.28904(9) — the middle is grossly out of equilibrium (E_mid must equal E_mix in expectation).
+  => Bragg/S_T criteria of the pre-declared list CANNOT be evaluated (mixing failure, not physics).
+- Electric-winding gap (mixed energies; chains from different starts agree): V=0, T=2L:
+  dE = 0.676(63), 0.440(102), 0.161(120), 0.505(252) for L = 4,6,8,10.
+  Fits (scripts/winding_fit.py): A/L: A = 2.64(23), chi2 = 3.0/3; A/L + sigma L: sigma = -0.010(16);
+  sigma L only: chi2 = 49.6/3 (rejected). T-convergence concern: L=8 E_mix(T=32) - E_mix(T=16) =
+  -0.17(15) total, same order as dE(L=8); W=1 at T=32 pending.
+- V=0.9: dE(L=8) = -0.119(48) < 0 — not physical for a converged ground state comparison; read as
+  insufficient projection near RK (soft k^2 modes need T ~ L^2). V=0.5 only L=4,6.

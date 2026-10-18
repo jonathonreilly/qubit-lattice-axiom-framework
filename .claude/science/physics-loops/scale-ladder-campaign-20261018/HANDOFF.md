@@ -82,3 +82,12 @@
   - The scale-ladder note's bullets point at these lane notes in plain text.
   - Running: C12 (winding letters), due by about 22:25Z.
   - Then: the final summary and releasing the lock before 23:26Z.
+- **22:30Z. Phase 2 complete.**
+  - C12 is checked: 19 PASS, 0 FAIL, on the separate C11_check build. Its result: the doubling obstruction is a strict-locality statement. A quasi-local O-covariant letter with W₃ = 1 meets the selection rule at one quasi-energy, while finite-range steps have W₃ = 0 exactly (K-theory).
+  - C12 is integrated into the scale-ladder note (PR #9702), with the premise decision added to the Open list.
+  - Final state:
+    - PR #9702 holds the scale-ladder note (runner PASS=20, three coherence passes).
+    - PR #9718 holds 15 lane notes.
+    - The campaign branch holds every block's FINDINGS and check REPORTs.
+  - Lock released.
+  - Next session's first question for the owner: are quasi-local steps admissible? If yes, look for a parameter-free or closure-compatible winding step. If no, finite range makes zero winding exact.

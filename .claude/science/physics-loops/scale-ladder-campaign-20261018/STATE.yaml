@@ -33,4 +33,4 @@ blocks:
   COROLLARY: "checked: argument correct, wording fixed; eight-node step certified gapless"
   coherence_review: "done: 58 edits applied to the scale-ladder note; summary block added"
   B24: "running: taste-enlarged steps"
-  phase2: "C1 C2 C3 C4 C4b C6 C7 B24 B25 done and checked; B26 done, check running; lane notes C1 C3 C4b C6 in PR #9718; C8 C9 running (17:15Z)"
+  phase2: "COMPLETE 22:30Z. C1-C12, B24-B26 done and checked (fresh-context same-family). Lane notes in PR #9718: C1 C3 C4b C6 C10 C11 B26+C8 (15 notes total). Scale-ladder note in PR #9702 integrates all, three coherence passes. Key open: premise decision on quasi-local steps (C12)."

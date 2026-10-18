@@ -1,0 +1,18 @@
+[PASS] b1 D+, m=2.0: spectrum at -k* = {1 (x10), -1 (x2)}; on the 48^3 midpoint grid min|lambda+1| outside 0.3-ball = 0.339; 120/120 Nelder-Mead minimisations reach |lambda+1|<1e-5, all within 1.2e-10 of -k*; cone speeds 1.000000..1.000000 (1/(3-m) = 1.0000), tilt <= 2.2e-12; FHS Berry charges (lower, upper, pair) = -1.0000, +1.0000, -0.0000
+[PASS] b1 D+, m=2.5: spectrum at -k* = {1 (x10), -1 (x2)}; on the 48^3 midpoint grid min|lambda+1| outside 0.3-ball = 0.636; 120/120 Nelder-Mead minimisations reach |lambda+1|<1e-5, all within 9.0e-11 of -k*; cone speeds 2.000000..2.000000 (1/(3-m) = 2.0000), tilt <= 1.8e-12; FHS Berry charges (lower, upper, pair) = -1.0000, +1.0000, +0.0000
+[PASS] b1 D-, m=2.0: spectrum at -k* = {1 (x10), -1 (x2)}; on the 48^3 midpoint grid min|lambda+1| outside 0.3-ball = 0.339; 120/120 Nelder-Mead minimisations reach |lambda+1|<1e-5, all within 1.0e-10 of -k*; cone speeds 1.000000..1.000000 (1/(3-m) = 1.0000), tilt <= 2.7e-12; FHS Berry charges (lower, upper, pair) = -1.0000, +1.0000, +0.0000
+[PASS] b1 D-, m=2.5: spectrum at -k* = {1 (x10), -1 (x2)}; on the 48^3 midpoint grid min|lambda+1| outside 0.3-ball = 0.636; 120/120 Nelder-Mead minimisations reach |lambda+1|<1e-5, all within 9.0e-11 of -k*; cone speeds 2.000000..2.000000 (1/(3-m) = 2.0000), tilt <= 2.5e-12; FHS Berry charges (lower, upper, pair) = -1.0000, +1.0000, +0.0000
+Traceback (most recent call last):
+  File "/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/C12_check/chk_bc.py", line 52, in <module>
+    chi_ = sphere_chern(lambda k: make_Db(1, inv=True)(k)[0], -KST, -1.0, [(0,)], 0.05)[0][0]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/C12_check/../C11_check/c11lib.py", line 133, in sphere_chern
+    gapmin = min(gapmin, np.min(np.diff(c[1])))
+                         ~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/numpy/_core/fromnumeric.py", line 3299, in min
+    return _wrapreduction(a, np.minimum, 'min', axis, None, out,
+                          keepdims=keepdims, initial=initial, where=where)
+  File "/usr/local/lib/python3.13/dist-packages/numpy/_core/fromnumeric.py", line 83, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: zero-size array to reduction operation minimum which has no identity

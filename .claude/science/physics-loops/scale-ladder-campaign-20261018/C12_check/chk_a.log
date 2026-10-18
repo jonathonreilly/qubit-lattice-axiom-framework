@@ -1,0 +1,16 @@
+[PASS] a1 D+: covariance-compatible T1 frame space (U_g T_l U_g^T = sum_j M_jl T_j) has dim 1; Hermitian, tau_i tau_j = d_ij + i eps tau_k, unitarily equivalent to Pauli; agrees with C11_check frame to 7.0e-16
+[PASS] a1 D-: covariance-compatible T1 frame space (U_g T_l U_g^T = sum_j M_jl T_j) has dim 1; Hermitian, tau_i tau_j = d_ij + i eps tau_k, unitarily equivalent to Pauli; agrees with C11_check frame to 5.6e-16
+[PASS] a2 induced action is exactly q -> R^T q mod 2pi (affine shift absorbed because R^T k* + pi lam = k* mod 2pi), err 4.4e-16; sin(R^T q) = R^T sin q and sum cos invariant (signed permutations), err 4.4e-16
+[PASS] a3 D+: unitary (7.8e-16), 2pi-periodic (5.8e-16), A1-covariant under all 24 lifts (8.9e-16); negative control: swapping tau_x,tau_y breaks covariance (0.33)
+[PASS] a3 D-: unitary (4.4e-16), 2pi-periodic (5.9e-16), A1-covariant under all 24 lifts (1.1e-15); negative control: swapping tau_x,tau_y breaks covariance (0.33)
+   W3 refinement (midpoint grid, central differences h=1e-5):
+   N= 8: W3(D+)=+0.96571416  W3(D-)=+0.96571416  W3(SU2 ctrl)=+0.96571416  imag<=1e-13  (0s)
+   N=16: W3(D+)=+0.99985871  W3(D-)=+0.99985871  W3(SU2 ctrl)=+0.99985871  imag<=5e-14  (1s)
+   N=24: W3(D+)=+0.99999945  W3(D-)=+0.99999945  W3(SU2 ctrl)=+0.99999945  imag<=3e-14  (3s)
+   N=32: W3(D+)=+1.00000000  W3(D-)=+1.00000000  W3(SU2 ctrl)=+1.00000000  imag<=5e-14  (7s)
+[PASS] a4 |W3(D_b)| = 1 with grid convergence 8->32, equal to the 2x2 SU(2) degree-one control (N=32 err 2.2e-09)
+   W3(D+) vs m (N=24; N=64 for m=1.2,2.8): {1.2: np.float64(0.99995), 2.0: np.float64(1.0), 2.8: np.float64(1.0), 3.5: np.float64(0.00012), 4.0: np.float64(0.0), 0.5: np.float64(-1.99969), -2.0: np.float64(1.0)}
+[PASS] a5 W3 constant on m in (1,3) and 0 for m > 3 (N=64 for m=1.2, 2.8; tol 1e-2). Not claimed by C12 but seen: m=0.5 gives -2, m=-2 gives +1 (Wilson-type pattern)
+   products (N=24): {'D+D-': np.float64(1.999999), 'D+D+^-1': np.float64(-0.0), 'A0 D+ A0^-1': np.float64(0.999999), 'D+ S': np.float64(0.999999), 'D+^-1': np.float64(-0.999999)}
+[PASS] a6 additivity: D+D- = 2w, D+D+^-1 = 0, conjugation = w, D+S = w, inverse = -w
+TOTAL PASS=8 FAIL=0 (49s)

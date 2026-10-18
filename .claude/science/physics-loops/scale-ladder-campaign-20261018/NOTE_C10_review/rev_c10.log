@@ -1,0 +1,7 @@
+[PASS] R1 common-zero basis change, L=6 forward: Lambda'_n = mu_0 Lambda_n for all n  mu_0 = 347/210
+[PASS] R1b c'(m,n) = mu_m mu_n c(m,n)/mu_{m+n} for all (m,n); so (S) and every ratio Lambda_n/Lambda_1 are kept  
+[PASS] R1c the unscaled claim 'Lambda_n unchanged' fails here (mu_0 != 1)  
+[PASS] R2 A1-U witness with X_4 = 3: in U = False (expected False)  m=[5, 16, -1, -18, -2], n=[-3, 14, -5, 0, -6]
+[PASS] R2 A1-U witness with X_4 = 8: in U = True (expected True)  m=[10, 16, -1, -23, -2], n=[2, 14, -5, -5, -6]
+[PASS] R3 rational class h = sum k a a/g_(x+t), Ra=1, Rg=0, explicit u: every kappa in the radical (only h = 0 flat)  (6 unknowns, 88 eqs)
+[NOT COMPLETED] R3 Ra=1, Rg=1 (18 unknowns, 18 radical-membership Groebner calls): killed by the reviewer's 900 s timeout (exit 143); no result

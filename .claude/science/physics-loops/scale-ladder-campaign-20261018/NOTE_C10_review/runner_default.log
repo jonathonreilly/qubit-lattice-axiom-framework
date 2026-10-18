@@ -1,0 +1,74 @@
+
+=== Part L: frame and counting lemmas (L1, L2), Kuchar form (L3), recombination (L4)  [0s]
+[PASS] L1a non-involutive momentum-linear pair <p,V_a>: {C1,C2} on Sigma = -p_z != 0 (not first class)  {C1,C2}|Sigma = -pz
+[PASS] L1b involutive pair: {C1,C2} = -C1 (structure function times constraint)
+[PASS] L1c frame (n momentum-linear constraints on an n-dim base): Sigma = zero section, first class automatically
+[PASS] L2 Model A L=5 general circulant: {l,l} = {k,k} = 0, {l_x,k_y} = 2 S_xy, rank(l,k) = 2L: {l=k=0} is Lagrangian (2L constraints on 4L dims, reduced space 0-dim) iff S = 0  rank 10
+[PASS] L3 Kuchar form: {K_x,K_y} = d_{X_y} h_x - d_{X_x} h_y + {h_x,h_y} is clock-momentum free (weak = strong vanishing; first class <=> zero curvature)
+[PASS] L4a L=5 central: K abelian and {g_x K_x, g_y K_y} = D_xy (g_y/g_x) C_x - D_yx (g_x/g_y) C_y strongly
+[PASS] L4a L=5 forward: K abelian and {g_x K_x, g_y K_y} = D_xy (g_y/g_x) C_x - D_yx (g_x/g_y) C_y strongly
+[PASS] L4a L=4 generic circulant: K abelian and {g_x K_x, g_y K_y} = D_xy (g_y/g_x) C_x - D_yx (g_x/g_y) C_y strongly
+[PASS] L4b L=4: cbar(m,n) = lam_n - lam_m, Lambda_n = +lam_n, (S) holds (central, forward); central Lam2/Lam1 = 2cos(2pi/L)
+[PASS] L4b L=5: cbar(m,n) = lam_n - lam_m, Lambda_n = +lam_n, (S) holds (central, forward); central Lam2/Lam1 = 2cos(2pi/L)
+[PASS] L4b L=6: cbar(m,n) = lam_n - lam_m, Lambda_n = +lam_n, (S) holds (central, forward); central Lam2/Lam1 = 2cos(2pi/L)
+[PASS] L4b L=7: cbar(m,n) = lam_n - lam_m, Lambda_n = +lam_n, (S) holds (central, forward); central Lam2/Lam1 = 2cos(2pi/L)
+[PASS] L4b L=8: cbar(m,n) = lam_n - lam_m, Lambda_n = +lam_n, (S) holds (central, forward); central Lam2/Lam1 = 2cos(2pi/L)
+[PASS] L4b L=9: cbar(m,n) = lam_n - lam_m, Lambda_n = +lam_n, (S) holds (central, forward); central Lam2/Lam1 = 2cos(2pi/L)
+
+=== Part A: Model A (one clock pair, no local degrees of freedom)  [3s]
+[PASS] A-br L=4 general circulant: H = C+ + C-, D = C+ - C-; {C+,C+} = A(lm'+ml')/8, {C-,C-} = -A(nk'+kn')/8, {C+x,C-y} = S_xy(l_x k_y + m_x n_y)/8  (0s)
+[PASS] A-br L=5 general circulant: H = C+ + C-, D = C+ - C-; {C+,C+} = A(lm'+ml')/8, {C-,C-} = -A(nk'+kn')/8, {C+x,C-y} = S_xy(l_x k_y + m_x n_y)/8  (0s)
+[PASS] A1 L=4 general antisymmetric circulant (1 parameters): {C+,C-} = 0, {C+x,C+y} = D_xy((m_y/m_x)C+x + (m_x/m_y)C+y), {C-x,C-y} = -D_xy((n_y/n_x)C-x + (n_x/n_y)C-y) strongly on U  (0s)
+[PASS] A1 L=5 general antisymmetric circulant (2 parameters; includes SLAC): {C+,C-} = 0, {C+x,C+y} = D_xy((m_y/m_x)C+x + (m_x/m_y)C+y), {C-x,C-y} = -D_xy((n_y/n_x)C-x + (n_x/n_y)C-y) strongly on U  (1s)
+[PASS] A1 L=6 general antisymmetric circulant (2 parameters): {C+,C-} = 0, {C+x,C+y} = D_xy((m_y/m_x)C+x + (m_x/m_y)C+y), {C-x,C-y} = -D_xy((n_y/n_x)C-x + (n_x/n_y)C-y) strongly on U  (2s)
+[PASS] A1 L=7 general antisymmetric circulant (3 parameters; includes SLAC): {C+,C-} = 0, {C+x,C+y} = D_xy((m_y/m_x)C+x + (m_x/m_y)C+y), {C-x,C-y} = -D_xy((n_y/n_x)C-x + (n_x/n_y)C-y) strongly on U  (12s)
+[PASS] A1 L=8 general antisymmetric circulant (3 parameters): {C+,C-} = 0, {C+x,C+y} = D_xy((m_y/m_x)C+x + (m_x/m_y)C+y), {C-x,C-y} = -D_xy((n_y/n_x)C-x + (n_x/n_y)C-y) strongly on U  (16s)
+[PASS] A1-control L=5 forward (not antisymmetric): {C+,C-} != 0, so A1 needs S = 0
+[PASS] A1-U L=5 central: Sigma cap U non-empty (explicit point with all m_x, n_x != 0); on {l=k=0} in the periodic sector sum m = sum n = 0, so a uniform background needs winding of phi -/+ X  m=[10, 16, -1, -23, -2], n=[2, 14, -5, -5, -6]
+[PASS] A5 L=5 any antisymmetric Delta, uniform background: {H_x,H_y} ~ D_xy(D_x+D_y), {D_x,H_y} ~ D_xy(H_x+H_y), {D_x,D_y} ~ D_xy(D_x+D_y) (Dirac algebra with delta' -> Delta)
+[PASS] A5-F central L=5-8: Lambda_n = lam_n, {H_1,H_-1} ~ (lam_-1 - lam_1) D_0 != 0, Lam2/Lam1 = 2cos(2pi/L)
+[PASS] A3-kink central L=4, component (l,m,l,l | k,k,k,k): {C+_0,C+_1} = A_01 m_0 l_1/8, not identically 0; the only non-vanishing brackets are C+ at the kink bonds  {C+_0,C+_1}|comp = (P1 + P3)*(P2 + p2)/2; non-zero pairs [(0, 1), (1, 2)]
+[PASS] A3-kink central L=5, C- kink (k,k,n,k,k): {C-_1,C-_2} = -A_12 n_1 k_2/8 != 0 (mirrored kink form)
+[PASS] A3-fwd L=5 forward, regular uniform (l,k) branch: {C+_0,C-_1} = S_01 m_0 n_1/8 != 0 (anomalous)
+
+=== Part P: Model P (lattice parametrised field theory, two embedding pairs)  [35s]
+[PASS] P1 L=5 central: {C+x,C+y} = D_xy Pi+_x g_y - D_yx g_x Pi+_y + A_xy a_x a_y/4, {C+x,C-y} = -S_xy a_x b_y/4 (strong)
+[PASS] P2 L=5 central: on shell {C+x,C+y} = -D_xy (a_x g_y - a_y g_x)^2/(4 g_x g_y) (perfect-square anomaly)
+[PASS] P3 L=5 central: rational point of Sigma (all g != 0) with {H_0,H_1} = 34583/570752 != 0: not first class  expected 34583/570752
+[PASS] P1 L=5 forward: {C+x,C+y} = D_xy Pi+_x g_y - D_yx g_x Pi+_y + A_xy a_x a_y/4, {C+x,C-y} = -S_xy a_x b_y/4 (strong)
+[PASS] P3 L=5 forward: rational point of Sigma (all g != 0) with {H_0,H_1} = 3/784 != 0: not first class  expected 3/784
+[PASS] P1 L=5 antisymmetric range 2: {C+x,C+y} = D_xy Pi+_x g_y - D_yx g_x Pi+_y + A_xy a_x a_y/4, {C+x,C-y} = -S_xy a_x b_y/4 (strong)
+[PASS] P2 L=5 antisymmetric range 2: on shell {C+x,C+y} = -D_xy (a_x g_y - a_y g_x)^2/(4 g_x g_y) (perfect-square anomaly)
+[PASS] P3 L=5 antisymmetric range 2 (d1 = 2/3, d2 = -1/12): rational point of Sigma (all g != 0) with {H_0,H_1} = 2591839/24618825 != 0: not first class  expected 2591839/24618825
+[PASS] P-hand L=5 general antisymmetric circulant: at u = phi = 0, pi = e_0 on Sigma, {C+_0,C+_y} = -Delta_0y/4 and {C+,C-} = 0: anomalous whenever Delta != 0
+[PASS] P-hand L=6 general antisymmetric circulant: at u = phi = 0, pi = e_0 on Sigma, {C+_0,C+_y} = -Delta_0y/4 and {C+,C-} = 0: anomalous whenever Delta != 0
+[PASS] P-hand L=7 general antisymmetric circulant: at u = phi = 0, pi = e_0 on Sigma, {C+_0,C+_y} = -Delta_0y/4 and {C+,C-} = 0: anomalous whenever Delta != 0
+[PASS] P4a L=5 central: h = a^2/(4g) has F_xy = -D_xy (v_x - v_y)^2/4, v = a/g; on-shell anomaly = g_x g_y F_xy
+[PASS] P4a L=5 general antisymmetric: h = a^2/(4g) has F_xy = -D_xy (v_x - v_y)^2/4, v = a/g; on-shell anomaly = g_x g_y F_xy
+[PASS] P4a L=6 central: h = a^2/(4g) has F_xy = -D_xy (v_x - v_y)^2/4, v = a/g; on-shell anomaly = g_x g_y F_xy
+
+=== Part J: finite-range Kuchar densities at the ruler (central Delta, chiral bracket {a_x,a_y} = 2 Delta_xy)  [52s]
+[PASS] P4b rational class h = sum k a a/g_(x+t), Ra=1 Rg=0: the only flat member is h = 0  (ring L=15, 6 unknowns, 0s)
+[PASS] P4b rational class h = sum k a a/g_(x+t), Ra=1 Rg=1: the only flat member is h = 0  (ring L=17, 18 unknowns, 2s)
+[PASS] P5a obstruction mode=g a-window=0 var-window=0 N=2: no flat C^N germ with h(1,0) != 0  (ring L=15, 3 unknowns, 4 eqs, Groebner [1], 0s)
+[PASS] P5b obstruction mode=g a-window=1 var-window=0 N=2: no flat C^N germ with h(1,0) != 0  (ring L=25, 18 unknowns, 81 eqs, Groebner [1], 2s)
+[PASS] P5c control (order 0 only) mode=g a-window=1 var-window=1 N=1: flat jets exist (consistent over C)  (ring L=29, 24 unknowns, 34 eqs, Groebner non-trivial, 2s)
+[PASS] P5e control (order 0 only) mode=shift a-window=1 var-window=1 N=1: flat jets exist (consistent over C)  (ring L=29, 24 unknowns, 34 eqs, Groebner non-trivial, 1s)
+[PASS] P5f obstruction mode=shift a-window=1 var-window=1 N=2: no flat C^N germ with h(1,0) != 0  (ring L=29, 60 unknowns, 186 eqs, Groebner [1], 19s)
+[PASS] P5h obstruction (one-sided u-window, through order 2) mode=shift a-window=(0, 0) var-window=(-2, 0) N=3: no flat C^N germ with h(1,0) != 0  (ring L=23, 20 unknowns, 43 eqs, Groebner [1], 1s)
+[PASS] P5i obstruction mode=shift a-window=(0, 0) var-window=(-2, 2) N=2: no flat C^N germ with h(1,0) != 0  (ring L=27, 21 unknowns, 35 eqs, Groebner [1], 1s)
+[PASS] P5j obstruction mode=shift a-window=(0, 1) var-window=(-2, 0) N=2: no flat C^N germ with h(1,0) != 0  (ring L=27, 30 unknowns, 70 eqs, Groebner [1], 3s)
+[PASS] P5d obstruction mode=g a-window=1 var-window=1 N=2: no flat C^N germ with h(1,0) != 0  (ring L=29, 60 unknowns, 183 eqs, Groebner [1], 15s)
+[PASS] P5g control (no shift invariance) mode=u a-window=1 var-window=1 N=2: flat jets exist (consistent over C)  (ring L=29, 60 unknowns, 162 eqs, Groebner non-trivial, 20s)
+
+=== Part G: staggered flat density (range 1, 2Z-covariant only)  [119s]
+[PASS] G L=4: staggered h flat exactly (eps = -1), opposite sign not flat (control), not shift invariant; uniform-a linear u-response -A^2 e/2 (even), 0 (odd) against continuum -A^2 e/4  even=-A**2*u1/4 + A**2*u3/4, odd=0
+[PASS] G L=6: staggered h flat exactly (eps = -1), opposite sign not flat (control), not shift invariant; uniform-a linear u-response -A^2 e/2 (even), 0 (odd) against continuum -A^2 e/4  even=-A**2*u1/4 + A**2*u5/4, odd=0
+
+=== Part K: deparametrised clocks (P6)  [119s]
+[PASS] P6 L=7 R=1 central: no translation-covariant range-R quadratic h with sum_x h_x = H0 and {h_0,H0} = 0  (21 unknowns, 0s)
+[PASS] P6 L=7 R=1 forward: no translation-covariant range-R quadratic h with sum_x h_x = H0 and {h_0,H0} = 0  (21 unknowns, 0s)
+[PASS] P6-control L=7 central: the naive density h_0 = (pi_0^2 + (Dphi)_0^2)/2 has range 1 and sums to H0, but {h_0,H0} != 0
+
+[runtime 119.6s]
+TOTAL: PASS=59 FAIL=0

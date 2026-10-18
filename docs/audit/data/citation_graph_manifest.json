@@ -1,6 +1,6 @@
 {
- "edge_count": 16257,
- "node_count": 7262,
+ "edge_count": 16258,
+ "node_count": 7263,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3904,6 +3904,10 @@
   },
   "common_product_biased_operation_bounded_theorem_note_2026-10-18": {
    "deps_hash": "da8bd285647d",
+   "out_degree": 1
+  },
+  "common_product_direct_loader_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "a05e4fd84fea",
    "out_degree": 1
   },
   "common_product_energy_preparation_bounded_theorem_note_2026-10-18": {

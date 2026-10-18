@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "base_revision": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+  "manifest_sha256": "370d61ee4e147edb5d081dcbf4e2da877e70ff23a258ad598ed30890cc6bf47c",
+  "notes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_direct_loader_publication/NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_DIRECT_LOADER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "35db7f3123f877bdbc16c51056de8267dcebd265b51ded4822b35dfd917d77ca"
+    }
+  ],
+  "files": 10,
+  "provenance": 3,
+  "links": 11,
+  "nodes": 7263,
+  "edges": 16258,
+  "added_nodes": [
+    "common_product_direct_loader_bounded_theorem_note_2026-10-18"
+  ],
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical installed source/provenance/link/topology checks only. Scoped analytical checks separately pinned; no new scientific executable or retained audit."
+}

@@ -42,6 +42,9 @@ A ladder is useful only if some data provably survives the climb, so that a stat
    - So within this symmetry class no node quartet splits, at any strength or order. Splitting is necessary for a Dirac mass but not sufficient: see the control below. The runner illustrates this with three backgrounds that add random symmetric uniform and staggered terms of strength 0.3.
    - An A2 imaginary staggered term of strength ε reduces the site rotations to T and splits every quartet. The gap/ε is constant within the runner's 4e−3 tolerance for ε = 2e−3, 1e−3 and 5e−4; the checker measured changes of 2e−6 to 2e−9 between halvings. The sampled A2 term is not itself inversion-symmetric.
    - Control: with the rotations kept and inversion broken, every level stays even but some become 2-fold. Inversion partners split, while the doublets stay pinned Weyl points. This splitting is not a mass: the rotations alone keep k* gapless.
+   - **Scope: one-fermion only.** A campaign block on filling constraints (B7, same-model-family worker, loop pack `B7_corner_LSM`) adds two things.
+     - **Odd filling per site.** With translations and three mutually commuting C2s, at k* the lifts of two commuting C2s anticommute. So odd filling per site is forced gapless for free fermions.
+     - **Interactions can escape.** In this doubled-cell class, an entangled, symmetric pair state is a short-range-entangled insulator at one fermion per site. So the quartet protection is a free-fermion statement; symmetric interacting mass generation is not excluded by anomaly counting.
 5. **What fixes a common speed (exact group theory).**
    - Only one symmetric rank-2 tensor on (t,x,y,z) is invariant under the 4D hyperoctahedral group of signed permutations of all four axes: the identity.
    - Under spatial O_h times time reversal there are two, δ_00 and δ_ij.

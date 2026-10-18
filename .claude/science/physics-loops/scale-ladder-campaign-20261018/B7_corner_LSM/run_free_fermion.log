@@ -59,3 +59,20 @@ E. Wyckoff projective classes (exact operator algebra)
 
 F. constructive band insulators with certified gaps
 [PASS] G: for every even nu in 2..10 an on-site atomic Hamiltonian plus a random G-symmetric range-1 hopping has a certified global gap (grid N = 24 gap minus Lipschitz bound > 0)  (nu, grid gap, certified) [(2, np.float64(1.586), np.float64(0.89)), (4, np.float64(1.64), np.float64(0.898)), (6, np.float64(1.78), np.float64(1.356)), (8, np.float64(1.566), np.float64(0.919)), (10, np.float64(1.422), np.float64(0.536))]
+[PASS] Gh: nu = 4, 8 realised by on-site atomic insulators plus symmetric hopping, certified gaps  [(4, np.float64(0.651)), (8, np.float64(0.755))]
+   Gh nu = 2, 6, 10 (off-site Wannier bands): see b7_inversion_wannier.py
+
+G. random-Hamiltonian scans (evidence; N = 16 grid, contains k*)
+   G: gapped samples per nu (1..11) out of 40: [0, 1, 0, 8, 0, 0, 0, 12, 0, 0, 0]; max odd-nu indirect gap -6.37e-02
+[PASS] G: no random symmetric dispersive Hamiltonian is gapped at any odd nu
+   Gh: gapped samples per nu (1..11) out of 40: [0, 2, 0, 10, 0, 0, 0, 19, 0, 0, 0]; max odd-nu indirect gap -7.69e-02
+[PASS] Gh: no random symmetric dispersive Hamiltonian is gapped at any odd nu
+
+H. the runner Weyl model (t1 = -1, t2 = 0.2, X strength 0.05)
+   levels at k*: [-2.2828 -2.2828 -1.7172 -1.7172 -0.7658 -0.7658]; node energy E_N = -2.28284
+   band 1 range [-2.3624, -2.1208], band 2 [-2.2828, -2.0298], band 3 [-2.0450, -1.7172]
+   states below E_N per site (N = 48 grid): 0.4019
+[PASS] the Weyl node at k* is the lowest level there (a doublet), so the node sits between bands 1 and 2: node filling nu = 1 (odd) -> forced gapless by C
+   indirect gap between bands 2 and 3 (nu = 2): -0.0152; between 1 and 2 (nu = 1): -0.1620
+
+TOTAL: PASS=14 FAIL=0   (747 s)

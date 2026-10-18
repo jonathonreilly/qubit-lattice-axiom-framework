@@ -41,3 +41,4 @@
   - the B1 check report recovered.
 
   Both PRs are synced. Running: B24 (taste-enlarged steps; due back by about 12:50Z). Then: integrate B24, give the final summary, release the lock.
+- **11:30Z. Phase 2 started (12 h more, to 23:26Z).** The lock was refreshed to 00:26Z. The phase-2 blocks C1–C6 are in GOAL.md. Launching C1, C2 and C3. B24 is still running.

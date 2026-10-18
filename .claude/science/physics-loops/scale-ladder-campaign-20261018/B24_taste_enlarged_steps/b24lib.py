@@ -166,3 +166,31 @@ def jobs24(tag):
 def build24(sk, names):
     it = iter(names); return [ALL[next(it)] if L in ('o', 'p') else L for L in sk]
 build = build24
+
+# ---- taste-designed families (gauge-chain rule: between generic letters, partial S-power sums N_j at plane letters need
+#      N_j t in piZ^3 and the segment total N needs N t in 2pi D3*; equal-power segments maximise Lambda_0)
+TSK = {'A': ('S4', 'p', 'S4', 'o'),            # Lambda_0 = sc (pi/4) (+ Y-type)
+       'B': ('S2', 'p', 'S2', 'o'),            # sc (pi/2), p != L202 (L202 done in B20/B23)
+       'C': ('S', 'p', 'S', 'o'),              # sc (pi),   p != L202
+       'D': ('S4', 'p', 'S2', 'q', 'S2', 'o'),  # sc (pi/2), mixed powers
+       'E': ('S2', 'p', 'S4', 'q', 'S2', 'o'),  # sc (pi/2), mixed powers
+       'F': ('S4', 'p', 'S4', 'q', 'S4', 'o')}  # bcc (pi/2) + (pi/4)(1,1,1)
+PLALL = {**PLANE, **PLANE6}
+def jobsT(tag):
+    for f in tag.split(':')[1].split(','):
+        sk = TSK[f]
+        if sk.count('q'):
+            for p in PLANE:
+                for q in PLANE:
+                    for g in PHL: yield sk, (p, q, g)
+        else:
+            pl = PLALL if f == 'A' else {n: M for n, M in PLALL.items() if n != 'L202'}
+            for p in pl:
+                for g in PHL: yield sk, (p, g)
+_j24 = jobs24
+def jobs24(tag):
+    if tag.startswith('taste'): yield from jobsT(tag)
+    else: yield from _j24(tag)
+def build24(sk, names):
+    it = iter(names); return [ALL[next(it)] if L in ('o', 'p', 'q') else L for L in sk]
+build = build24

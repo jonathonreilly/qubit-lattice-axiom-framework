@@ -1,6 +1,6 @@
 slug: scale-ladder-campaign-20261018
 start: 2026-10-18T02:14Z
-target_stop: 2026-10-18T14:14Z
+target_stop: 2026-10-18T23:26Z  # phase 2 extension (phase 1 ended 14:14Z)
 branch: claude/scale-ladder-campaign-20261018
 prs:
   "9702": "scale-ladder note revised (information-minimal target, step rules, doublet lemma, diagonal-shift Weyl step); PASS=18"

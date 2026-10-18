@@ -43,3 +43,23 @@ Ranked by expected evidence value; the live order is in OPPORTUNITY_QUEUE.md.
 
 - Milestone PRs.
 - PR #9702 is revised first, with the parameter-free step-rule material, as the owner requested.
+
+## Phase 2 (owner: "run for another 12 hours"; 2026-10-18T11:26Z to 23:26Z)
+
+Phase 1 established three things:
+- constraint closure ties every matter cone to the graviton's cone, in the continuum at leading order;
+- closure rejects anisotropic cones;
+- no tested parameter-free step passes that rule, because its D4 doublers are uniaxial.
+
+Phase 2 attacks the open items that decide whether the information-minimal target survives.
+
+- **C1. Gapping the doublers.** Can a symmetric pairing term, or an interaction that conserves number, gap the six D4 doublers while the isotropic ±k* species stay gapless? The low-energy content would then pass the selection rule. Pairing route: free-fermion BdG symmetry analysis. Interacting route: symmetric mass generation, with anomaly bookkeeping.
+- **C2. Seagull from closure.** Does closure at the next order (h² · matter²) fix the seagull that the 06-08 induced bubble needs, and hence the induced 1/G?
+- **C3. Exact lattice closure.** Is non-locality necessary? Either prove that no local lattice discretisation in a declared class closes {G, C} exactly, or construct a non-local one that does.
+- **C4. Microscopic normalisation of h.** In the repo's qubit realisation, does the bounded spectrum or the operator content fix the scale of h? That would derive r = 1, equivalently K1 = K2.
+- **C5. Checks and gaps.**
+  - Checks of B23, B24 and B11.
+  - A screen of the multifold (G3/2-mixed) k* levels.
+- **C6 (stretch). Rung 0 → 1.** What map takes the formation rung to the corner model?
+
+The contract is unchanged.

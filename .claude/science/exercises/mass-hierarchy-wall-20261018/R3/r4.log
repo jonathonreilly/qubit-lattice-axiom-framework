@@ -1,0 +1,13 @@
+trial 0: |G|=8, signs=[1, 1, 1, 1, 1, 1, 1, 1], max inter-block |Y| = 1.1e-16
+   block spectra: {'A{000,100}': array([-1.118095,  2.275816]), 'B{010,110}': array([-2.776856,  0.894248]), 'C{001,101}': array([-2.776856,  0.894248]), 'D{011,111}': array([-2.621416,  0.198529])}
+   B == C: True;   nonzero chirality-odd entries |M|: {'(np.int64(0), np.int64(0), np.int64(1))<-(np.int64(1), np.int64(0), np.int64(1))': np.float64(1.499393), '(np.int64(0), np.int64(1), np.int64(0))<-(np.int64(1), np.int64(1), np.int64(0))': np.float64(1.499393), '(np.int64(1), np.int64(0), np.int64(0))<-(np.int64(0), np.int64(0), np.int64(0))': np.float64(1.618355), '(np.int64(1), np.int64(1), np.int64(1))<-(np.int64(0), np.int64(1), np.int64(1))': np.float64(0.779415)}
+trial 1: |G|=8, signs=[1, -1, -1, 1, 1, -1, -1, -1], max inter-block |Y| = 0.0e+00
+   block spectra: {'A{000,100}': array([-2.943436,  3.040023]), 'B{010,110}': array([-1.821478,  0.953321]), 'C{001,101}': array([-1.821478,  0.953321]), 'D{011,111}': array([-1.636167,  0.016755])}
+   B == C: True;   nonzero chirality-odd entries |M|: {'(np.int64(0), np.int64(0), np.int64(1))<-(np.int64(1), np.int64(0), np.int64(1))': np.float64(1.385523), '(np.int64(0), np.int64(1), np.int64(0))<-(np.int64(1), np.int64(1), np.int64(0))': np.float64(1.385523), '(np.int64(1), np.int64(0), np.int64(0))<-(np.int64(0), np.int64(0), np.int64(0))': np.float64(2.562801)}
+trial 2: |G|=8, signs=[-1, -1, 1, -1, -1, 1, -1, -1], max inter-block |Y| = 5.6e-17
+   block spectra: {'A{000,100}': array([-2.497037,  3.808684]), 'B{010,110}': array([-1.606086,  0.024963]), 'C{001,101}': array([-1.606086,  0.024963]), 'D{011,111}': array([-1.465574,  1.738673])}
+   B == C: True;   nonzero chirality-odd entries |M|: {'(np.int64(0), np.int64(0), np.int64(1))<-(np.int64(1), np.int64(0), np.int64(1))': np.float64(0.713161), '(np.int64(0), np.int64(1), np.int64(0))<-(np.int64(1), np.int64(1), np.int64(0))': np.float64(0.713161), '(np.int64(1), np.int64(0), np.int64(0))<-(np.int64(0), np.int64(0), np.int64(0))': np.float64(3.133258), '(np.int64(1), np.int64(1), np.int64(1))<-(np.int64(0), np.int64(1), np.int64(1))': np.float64(1.545933)}
+trial 3: |G|=16, signs=[-1, -1, 1, 1, 1, 1, 1, 1], max inter-block |Y| = 2.8e-17
+   block spectra: {'A{000,100}': array([-1.375579,  0.729102]), 'B{010,110}': array([-0.148247,  0.102642]), 'C{001,101}': array([-0.148247,  0.102642]), 'D{011,111}': array([-3.103127,  0.65899 ])}
+   B == C: True;   nonzero chirality-odd entries |M|: {'(np.int64(1), np.int64(1), np.int64(1))<-(np.int64(0), np.int64(1), np.int64(1))': np.float64(1.460412)}
+watchdog peak RSS 21792 KB

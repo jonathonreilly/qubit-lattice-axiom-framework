@@ -1,0 +1,34 @@
+(a) log-log slopes of singular values vs delta (delta = 1e-2 .. 1e-3)
+    gauss         collinear slopes [0.0002 2.0002 4.0002]
+    gauss         triangle  slopes [0.0001 2.0009 1.9993]
+    expo          collinear slopes [ 0.0008 -0.2384 -1.1707]
+    expo          triangle  slopes [0.0006 1.9963 2.924 ]
+    lattice-expo  collinear slopes [ 0.0008 -0.2384 -1.1707]
+    lattice-expo  triangle  slopes [0.0005 0.0435 0.3744]
+
+(b) kappa = m2^2/(m1 m3) in the clustered limit, Gaussian kernel, L and R collinear, no offset
+    numeric    7.8926   2 G G =    7.8763
+    numeric   15.8425   2 G G =   15.8453
+    numeric   11.6668   2 G G =   11.6658
+    numeric   18.3529   2 G G =   18.3208
+    numeric   17.4024   2 G G =   17.4035
+    min_t G(0,t,1) = 1.41421  sqrt2 = 1.41421  => kappa_Gauss >= 4 (no offset)
+    with a centre offset c between the L and R clusters (Gaussian, equal spacing):
+      c = 0.0  kappa =    4.0000
+      c = 0.3  kappa =    4.0000
+      c = 0.6  kappa =    4.0001
+      c = 1.0  kappa =    4.0000
+      c = 1.5  kappa =    3.9999
+      c = 2.0  kappa =    4.0000
+      c = 3.0  kappa =    3.9994
+    generic analytic kernel (random Taylor coeffs, equal spacing): kappa percentiles 5/50/95 = [   0.0036    2.9955 2166.116 ]
+
+(c) CKM with a shared doublet cluster (Gaussian, collinear).  delta_Q, delta_u, delta_d, offsets c_u, c_d
+    dQ=0.05 du=0.05 dd=0.05 cu=0.0 cd=0.0: m_u/m_t 6.95e-07 m_c/m_t 1.67e-03 m_d/m_b 6.95e-07 m_s/m_b 1.67e-03 |Vus|~V[1,2]=1.856e-16 |Vcb|~V[0,1]=1.191e-17 |Vub|~V[0,2]=1.012e-16
+    dQ=0.05 du=0.05 dd=0.05 cu=0.5 cd=-0.5: m_u/m_t 6.94e-07 m_c/m_t 1.66e-03 m_d/m_b 6.94e-07 m_s/m_b 1.66e-03 |Vus|~V[1,2]=2.886e-02 |Vcb|~V[0,1]=4.065e-02 |Vub|~V[0,2]=5.868e-04
+    dQ=0.02 du=0.02 dd=0.02 cu=0.5 cd=-0.5: m_u/m_t 1.78e-08 m_c/m_t 2.67e-04 m_d/m_b 1.78e-08 m_s/m_b 2.67e-04 |Vus|~V[1,2]=1.155e-02 |Vcb|~V[0,1]=1.632e-02 |Vub|~V[0,2]=9.422e-05
+    dQ=0.1 du=0.1 dd=0.1 cu=0.5 cd=-0.5: m_u/m_t 1.11e-05 m_c/m_t 6.61e-03 m_d/m_b 1.11e-05 m_s/m_b 6.61e-03 |Vus|~V[1,2]=5.764e-02 |Vcb|~V[0,1]=8.024e-02 |Vub|~V[0,2]=2.318e-03
+    dQ=0.05 du=0.02 dd=0.1 cu=0.8 cd=-0.3: m_u/m_t 1.11e-07 m_c/m_t 6.65e-04 m_d/m_b 2.78e-06 m_s/m_b 3.32e-03 |Vus|~V[1,2]=3.173e-02 |Vcb|~V[0,1]=4.467e-02 |Vub|~V[0,2]=7.071e-04
+    random clustered configs: |Vcb|/|Vus| percentiles 5/50/95 = [ 1.3645  1.9586 20.2466]  fraction <= 0.55 : 0.004  (observed 0.18)
+    |Vub|/(|Vus||Vcb|) percentiles 5/50/95 = [0.4449 0.5012 0.6622]  (observed ~0.40)
+watchdog peak RSS 33824 KB

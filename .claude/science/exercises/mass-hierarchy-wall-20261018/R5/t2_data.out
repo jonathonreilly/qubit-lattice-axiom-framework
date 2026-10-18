@@ -1,0 +1,35 @@
+patterns (light->heavy): {'LIN': (3, 2, 1), 'CAT2': (4, 2, 1), 'CAT3': (9, 3, 1), 'ODD': (5, 3, 1)}
+shape statistic R = ln(m1/m3)/ln(m2/m3); pattern R: {'LIN': 2.0, 'CAT2': 3.0, 'CAT3': 4.0, 'ODD': 2.0}
+
+=== MZ: observed R (up, down, lep) = 2.10, 1.74, 2.89
+  model A (one pattern, one eps, 3 scales; 4 cont. params): best ODD eps=0.0964 max factor x3.42
+    LIN  : mass x3.44 at eps=0.0094;  CKM (FN reading) best x2.40 at eps=0.094; CKM at mass eps x42.26
+    CAT2 : mass x4.40 at eps=0.0522;  CKM (FN reading) best x5.13 at eps=0.210; CKM at mass eps x82.70
+    CAT3 : mass x5.71 at eps=0.3428;  CKM (FN reading) best x7.58 at eps=0.557; CKM at mass eps x138.58
+    ODD  : mass x3.42 at eps=0.0964;  CKM (FN reading) best x2.41 at eps=0.307; CKM at mass eps x42.88
+  model B (pattern and eps per sector; 6 cont. params): max factor x1.29
+  control C1 six-decade: model A  frac<=x3 0.056, p(F_rand <= F_data) = 0.080;  model B frac<=x3 0.409, p = 0.042
+  control C2 span-matched: model A  frac<=x3 0.000, p(F_rand <= F_data) = 0.030;  model B frac<=x3 0.380, p = 0.033
+
+=== GUT: observed R (up, down, lep) = 2.08, 1.78, 2.89
+  model A (one pattern, one eps, 3 scales; 4 cont. params): best ODD eps=0.0964 max factor x3.65
+    LIN  : mass x3.67 at eps=0.0092;  CKM (FN reading) best x2.40 at eps=0.094; CKM at mass eps x43.77
+    CAT2 : mass x4.51 at eps=0.0504;  CKM (FN reading) best x5.13 at eps=0.210; CKM at mass eps x88.42
+    CAT3 : mass x5.99 at eps=0.3373;  CKM (FN reading) best x7.58 at eps=0.557; CKM at mass eps x152.75
+    ODD  : mass x3.65 at eps=0.0964;  CKM (FN reading) best x2.41 at eps=0.307; CKM at mass eps x42.88
+  model B (pattern and eps per sector; 6 cont. params): max factor x1.24
+  control C1 six-decade: model A  frac<=x3 0.052, p(F_rand <= F_data) = 0.091;  model B frac<=x3 0.388, p = 0.022
+  control C2 span-matched: model A  frac<=x3 0.000, p(F_rand <= F_data) = 0.041;  model B frac<=x3 0.390, p = 0.018
+
+=== MIX: observed R (up, down, lep) = 2.30, 1.79, 2.89
+  model A (one pattern, one eps, 3 scales; 4 cont. params): best ODD eps=0.1042 max factor x3.08
+    LIN  : mass x3.09 at eps=0.0109;  CKM (FN reading) best x2.40 at eps=0.094; CKM at mass eps x30.97
+    CAT2 : mass x3.90 at eps=0.0575;  CKM (FN reading) best x5.13 at eps=0.210; CKM at mass eps x67.94
+    CAT3 : mass x4.79 at eps=0.3608;  CKM (FN reading) best x7.58 at eps=0.557; CKM at mass eps x102.02
+    ODD  : mass x3.08 at eps=0.1042;  CKM (FN reading) best x2.41 at eps=0.307; CKM at mass eps x31.41
+  model B (pattern and eps per sector; 6 cont. params): max factor x1.44
+  control C1 six-decade: model A  frac<=x3 0.053, p(F_rand <= F_data) = 0.060;  model B frac<=x3 0.381, p = 0.070
+  control C2 span-matched: model A  frac<=x3 0.000, p(F_rand <= F_data) = 0.031;  model B frac<=x3 0.404, p = 0.069
+
+CKM random control (log-uniform ordered magnitudes over 4 decades): frac within x3 = 0.255; p(F_rand <= F_data=2.40) = 0.175
+watchdog peak RSS 157568 KB

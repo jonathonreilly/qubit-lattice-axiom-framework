@@ -1,0 +1,21 @@
+distinct area matrices: 3312 (from 3456 placements)
+fraction of configs with a degenerate pair (mean over sigma): 0.031
+
+=== MZ: masses, universal sigma: best factor x1.14 at sigma=2.75; pass=True
+   per-sector best factor at that sigma: [1.14 1.13 1.07]
+   per-sector best factor, own sigma: [1.03 1.04 1.01]
+   CKM (masses u,d within x3): best CKM factor x1.12; sigma=2.50; |Vus,Vcb,Vub|=[0.2098 0.0366 0.0034]; u cfg=('hw1', (np.int64(-1), np.int64(1), np.int64(0)), (np.int64(-1), np.int64(0), np.int64(-1))), d cfg=('hw2', (np.int64(0), np.int64(0), np.int64(1)), (np.int64(0), np.int64(1), np.int64(0)))
+   CKM (masses u,d within x10): best CKM factor x1.05; |V|=[0.2186 0.043  0.0038]
+
+=== LOW: masses, universal sigma: best factor x1.16 at sigma=2.50; pass=True
+   per-sector best factor at that sigma: [1.16 1.11 1.15]
+   per-sector best factor, own sigma: [1.09 1.01 1.02]
+   CKM (masses u,d within x3): best CKM factor x1.12; sigma=2.50; |Vus,Vcb,Vub|=[0.2098 0.0366 0.0034]; u cfg=('hw1', (np.int64(-1), np.int64(1), np.int64(0)), (np.int64(-1), np.int64(0), np.int64(-1))), d cfg=('hw2', (np.int64(0), np.int64(0), np.int64(1)), (np.int64(0), np.int64(1), np.int64(0)))
+   CKM (masses u,d within x10): best CKM factor x1.05; |V|=[0.2186 0.043  0.0038]
+
+[N1] masses universal sigma, per-sector config: random pass rate 1.000; P(random as good as observed) 0.786
+[N1] masses(u,d) + CKM all within x3: random pass rate 59/60
+
+[N2] masses universal sigma, per-sector config: random pass rate 1.000; P(random as good as observed) 0.386
+[N2] masses(u,d) + CKM all within x3: random pass rate 59/60
+watchdog peak RSS 355264 KB

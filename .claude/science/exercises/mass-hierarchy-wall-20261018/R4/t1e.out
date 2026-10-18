@@ -1,0 +1,52 @@
+exponent library: hop 6, squares 10, union 15; bases 14
+
+=== observed set MZ ===
+V1 universal (b,S)               best factor x3.77  pass=False
+V2 universal b, S per sector     best factor x1.86  pass=True
+V3 (b,S) per sector              best factor x1.38  pass=True
+V4 continuous base per sector    best factor x1.14  pass=True
+V5 universal continuous sigma    best factor x1.57  pass=True
+  V1 best: base alpha_s(v), S=(4, 2)
+  sector u: R_obs=2.096, x3 window R in [1.51, 3.45]; library hits 8/15
+  sector d: R_obs=1.768, x3 window R in [1.13, 4.03]; library hits 12/15
+  sector e: R_obs=2.889, x3 window R in [1.63, 12.87]; library hits 12/15
+
+=== observed set LOW ===
+V1 universal (b,S)               best factor x3.13  pass=False
+V2 universal b, S per sector     best factor x1.87  pass=True
+V3 (b,S) per sector              best factor x1.46  pass=True
+V4 continuous base per sector    best factor x1.05  pass=True
+V5 universal continuous sigma    best factor x1.61  pass=True
+  V1 best: base alpha_s(v), S=(4, 2)
+  sector u: R_obs=2.298, x3 window R in [1.59, 4.16]; library hits 10/15
+  sector d: R_obs=1.788, x3 window R in [1.13, 4.24]; library hits 12/15
+  sector e: R_obs=2.889, x3 window R in [1.62, 13.04]; library hits 12/15
+[N1] single pre-registered (b,S), all sectors: pass rate mean 0.0063, max 0.0436 over 210 combos
+
+=== random control N1 (n=20000; V5 n=5000) ===
+V1 universal (b,S)               pass rate 0.193;  P(random as good as observed MZ) 0.327
+V2 universal b, S per sector     pass rate 0.915;  P(random as good as observed MZ) 0.485
+V3 (b,S) per sector              pass rate 0.973;  P(random as good as observed MZ) 0.431
+V4 continuous base per sector    pass rate 0.979;  P(as good) 0.397
+V5 universal continuous sigma    pass rate 0.936;  P(as good) 0.391
+[N2] single pre-registered (b,S), all sectors: pass rate mean 0.0012, max 0.0042 over 210 combos
+
+=== random control N2 (n=20000; V5 n=5000) ===
+V1 universal (b,S)               pass rate 0.066;  P(random as good as observed MZ) 0.140
+V2 universal b, S per sector     pass rate 0.718;  P(random as good as observed MZ) 0.212
+V3 (b,S) per sector              pass rate 0.875;  P(random as good as observed MZ) 0.206
+V4 continuous base per sector    pass rate 0.903;  P(as good) 0.255
+V5 universal continuous sigma    pass rate 0.795;  P(as good) 0.169
+MZ {'V6 u doubled': 2.62, 'V7 u x3/2': 2.01, 'V8 u free own (b,S)': 2.01, 'd,e share (b,S) only': 2.01}
+LOW {'V6 u doubled': 2.57, 'V7 u x3/2': 2.14, 'V8 u free own (b,S)': 2.14, 'd,e share (b,S) only': 2.14}
+MZ: m1/m3 u 8.02e-06 d 9.86e-04 e 2.79e-04; m2/m3 u 3.71e-03 d 1.99e-02 e 5.88e-02
+   pair spreads gen1: u/d 123, u/e 35, d/e 3.5; gen2: u/d 5.4, u/e 15.9, e/d 3.0  (x3 allows 9)
+LOW: m1/m3 u 1.25e-05 d 1.12e-03 e 2.88e-04; m2/m3 u 7.35e-03 d 2.23e-02 e 5.95e-02
+   pair spreads gen1: u/d 89, u/e 23, d/e 3.9; gen2: u/d 3.0, u/e 8.1, e/d 2.7  (x3 allows 9)
+N1 {'V6 u doubled': (0.129, 0.082), 'V7 u x3/2': (0.173, 0.035), 'V8 u free own (b,S)': (0.486, 0.213), 'd,e share (b,S) only': (0.492, 0.225)} (pass rate, P(as good as observed MZ))
+N2 {'V6 u doubled': (0.031, 0.018), 'V7 u x3/2': (0.049, 0.006), 'V8 u free own (b,S)': (0.282, 0.099), 'd,e share (b,S) only': (0.295, 0.112)} (pass rate, P(as good as observed MZ))
+MZ V6 [('<P>', (12, 5), 2.62), ('1/2', (9, 4), 2.65), ('1/8', (3, 1), 2.98)]
+MZ V7 [('1/8', (4, 2), 2.01), ('<P>', (15, 8), 2.34), ('1/6', (4, 2), 2.42)]
+LOW V6 [('<P>', (12, 5), 2.57), ('1/2', (9, 4), 2.61), ('1/8', (3, 1), 2.64)]
+LOW V7 [('1/8', (4, 2), 2.14), ('alpha_s(v)', (3, 1), 2.16), ('<P>', (15, 8), 2.31)]
+watchdog peak RSS 192688 KB

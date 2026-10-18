@@ -1,0 +1,37 @@
+gauge couplings at M_Pl: [0.6145 0.504  0.4897]  alpha_s(M_Pl) = 0.01908
+
+A [small top (0.3)] ratio(M_Z)/ratio(M_Pl):
+   up  : m1/m2 x1.0000   m2/m3 x1.0916   (y3: 0.300 -> 0.832)
+   down: m1/m2 x1.0000   m2/m3 x0.9161   (y3: 0.006 -> 0.018)
+   lep : m1/m2 x1.0000   m2/m3 x1.0000   (y3: 0.010 -> 0.011)
+
+A [GUT-set top (0.43)] ratio(M_Z)/ratio(M_Pl):
+   up  : m1/m2 x1.0000   m2/m3 x1.1562   (y3: 0.425 -> 0.992)
+   down: m1/m2 x1.0000   m2/m3 x0.8649   (y3: 0.006 -> 0.017)
+   lep : m1/m2 x1.0000   m2/m3 x1.0000   (y3: 0.010 -> 0.010)
+
+A [large top (1.5)] ratio(M_Z)/ratio(M_Pl):
+   up  : m1/m2 x1.0000   m2/m3 x1.6234   (y3: 1.500 -> 1.265)
+   down: m1/m2 x1.0000   m2/m3 x0.6160   (y3: 0.006 -> 0.012)
+   lep : m1/m2 x1.0000   m2/m3 x1.0000   (y3: 0.010 -> 0.005)
+
+B anarchic complex Gaussian matrices at M_Pl, entries s*(N(0,1)+iN(0,1))/sqrt2; 120 samples per s
+   reported: median and 10/90% of log10(m1/m3), log10(m2/m3) per sector at M_Pl -> M_Z;
+   'spread' = log10(m3/m1); fraction of samples whose spread GREW toward the IR
+  s = 0.1:
+     up   m1/m3: -0.72 [-1.07,-0.45] -> -0.71 [-1.03,-0.42];  m2/m3: -0.24 [-0.44,-0.13] -> -0.23 [-0.42,-0.12];  spread grew: 0.04 (by >0.05 dex: 0.00);  max growth +0.021 dex; y3(MZ) median 0.62
+     down m1/m3: -0.68 [-1.05,-0.46] -> -0.65 [-1.03,-0.44];  m2/m3: -0.23 [-0.44,-0.13] -> -0.21 [-0.42,-0.12];  spread grew: 0.03 (by >0.05 dex: 0.00);  max growth +0.007 dex; y3(MZ) median 0.61
+     lep  m1/m3: -0.70 [-1.15,-0.48] -> -0.69 [-1.14,-0.47];  m2/m3: -0.26 [-0.40,-0.12] -> -0.25 [-0.38,-0.12];  spread grew: 0.00 (by >0.05 dex: 0.00);  max growth -0.003 dex; y3(MZ) median 0.25
+  s = 0.5:
+     up   m1/m3: -0.72 [-1.15,-0.47] -> -0.66 [-1.04,-0.39];  m2/m3: -0.25 [-0.42,-0.11] -> -0.21 [-0.36,-0.09];  spread grew: 0.01 (by >0.05 dex: 0.00);  max growth +0.020 dex; y3(MZ) median 0.88
+     down m1/m3: -0.69 [-1.13,-0.45] -> -0.62 [-1.06,-0.40];  m2/m3: -0.24 [-0.44,-0.10] -> -0.20 [-0.36,-0.10];  spread grew: 0.05 (by >0.05 dex: 0.01);  max growth +0.059 dex; y3(MZ) median 0.84
+     lep  m1/m3: -0.65 [-1.14,-0.41] -> -0.58 [-1.09,-0.35];  m2/m3: -0.22 [-0.41,-0.11] -> -0.19 [-0.35,-0.09];  spread grew: 0.00 (by >0.05 dex: 0.00);  max growth -0.019 dex; y3(MZ) median 0.32
+  s = 1.0:
+     up   m1/m3: -0.71 [-1.11,-0.45] -> -0.62 [-1.01,-0.38];  m2/m3: -0.24 [-0.40,-0.10] -> -0.19 [-0.33,-0.08];  spread grew: 0.03 (by >0.05 dex: 0.00);  max growth +0.008 dex; y3(MZ) median 0.88
+     down m1/m3: -0.68 [-1.18,-0.42] -> -0.60 [-1.09,-0.33];  m2/m3: -0.22 [-0.37,-0.11] -> -0.18 [-0.29,-0.08];  spread grew: 0.07 (by >0.05 dex: 0.01);  max growth +0.052 dex; y3(MZ) median 0.85
+     lep  m1/m3: -0.70 [-0.97,-0.47] -> -0.61 [-0.90,-0.39];  m2/m3: -0.22 [-0.40,-0.09] -> -0.17 [-0.30,-0.07];  spread grew: 0.00 (by >0.05 dex: 0.00);  max growth -0.029 dex; y3(MZ) median 0.31
+  s = 2.0:
+     up   m1/m3: -0.75 [-1.09,-0.45] -> -0.61 [-1.00,-0.34];  m2/m3: -0.24 [-0.38,-0.12] -> -0.17 [-0.32,-0.09];  spread grew: 0.04 (by >0.05 dex: 0.00);  max growth +0.045 dex; y3(MZ) median 0.89
+     down m1/m3: -0.71 [-1.18,-0.48] -> -0.61 [-1.04,-0.38];  m2/m3: -0.23 [-0.41,-0.12] -> -0.18 [-0.34,-0.09];  spread grew: 0.02 (by >0.05 dex: 0.00);  max growth +0.035 dex; y3(MZ) median 0.86
+     lep  m1/m3: -0.70 [-1.07,-0.41] -> -0.56 [-0.95,-0.32];  m2/m3: -0.24 [-0.42,-0.10] -> -0.16 [-0.30,-0.07];  spread grew: 0.00 (by >0.05 dex: 0.00);  max growth -0.033 dex; y3(MZ) median 0.30
+watchdog peak RSS 28672 KB

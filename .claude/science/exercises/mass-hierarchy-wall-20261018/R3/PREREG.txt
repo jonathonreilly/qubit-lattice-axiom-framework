@@ -1,0 +1,20 @@
+R3 (RG / strong dynamics) pre-registration, written before any run. 2026-10-18.
+
+Predictions:
+P1 (irrelevant breaking): if the generation-splitting part of the mass anomalous
+   dimension is Delta_gamma(mu) = c (mu/Lambda)^y with y > 0, the accumulated
+   ln(m_i/m_j) is <= c/y for every window length L. Needed: ln(m_t/m_u) ~ 11.8.
+   With c <= 1 this needs y <~ 0.085. Staggered taste breaking has y = 2.
+P2 (SM running, gauge-universal): light-generation ratios m_u/m_c, m_d/m_s, m_e/m_mu
+   change by < 10% from M_Pl to M_Z; only ratios involving the third generation
+   move, by O(1) factors.
+P3 (IR fixed point): anarchic O(1) Yukawa matrices at M_Pl flow to LESS hierarchical
+   spectra at M_Z (median log-spread shrinks). IR attractors erase hierarchy.
+P4 (Schur): every S3- or 2O-covariant placement of a generation triplet gives a
+   lattice-symmetric anomalous-dimension matrix with <= 2 distinct eigenvalues;
+   corners at distinct momenta permuted by rotations give 1.
+P5 (charge grading): for a single-hw-class spurion, minimal orders on odd Z2^3 charges
+   lie in {1,3,inf}; every O_h-invariant harmonic set gives <= 2 distinct finite orders;
+   3 distinct finite orders need a non-invariant set mixing hw parities.
+P6 (radiative, data): QCD loops are u/d blind; m_u/m_t vs m_d/m_b differ by >9, so a
+   common loop ladder fails x3 on the u/d pair.

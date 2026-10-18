@@ -1,0 +1,4 @@
+MZ LIN: mass x3.44; V(us,cb,ub)=(0.097,0.097,0.0094) worst x2.53 | CAT2: mass x4.40; V(us,cb,ub)=(0.052,0.228,0.0119) worst x5.57 | CAT3: mass x5.71; V(us,cb,ub)=(0.040,0.343,0.0138) worst x8.36 | ODD: mass x3.42; V(us,cb,ub)=(0.096,0.096,0.0093) worst x2.51
+GUT LIN: mass x3.67; V(us,cb,ub)=(0.096,0.096,0.0092) worst x2.48 | CAT2: mass x4.51; V(us,cb,ub)=(0.050,0.225,0.0113) worst x5.48 | CAT3: mass x5.99; V(us,cb,ub)=(0.038,0.337,0.0129) worst x8.23 | ODD: mass x3.65; V(us,cb,ub)=(0.096,0.096,0.0093) worst x2.51
+MIX LIN: mass x3.09; V(us,cb,ub)=(0.105,0.105,0.0109) worst x2.95 | CAT2: mass x3.90; V(us,cb,ub)=(0.058,0.240,0.0138) worst x5.85 | CAT3: mass x4.79; V(us,cb,ub)=(0.047,0.361,0.0169) worst x8.80 | ODD: mass x3.08; V(us,cb,ub)=(0.104,0.104,0.0109) worst x2.93
+watchdog peak RSS 18848 KB

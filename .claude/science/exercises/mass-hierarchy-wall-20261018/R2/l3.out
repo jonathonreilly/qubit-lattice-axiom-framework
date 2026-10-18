@@ -1,0 +1,32 @@
+(i) clustered limit (delta_Q = 1e-3): ratio |Vcb|/|Vus| vs G(xi_Q)
+    G = 5.1522   |Vcb|/|Vus| = 5.1534   |Vub|/(|Vus||Vcb|) = 0.9535
+    G = 1.6188   |Vcb|/|Vus| = 1.6179   |Vub|/(|Vus||Vcb|) = 0.6962
+    G = 1.7688   |Vcb|/|Vus| = 1.7682   |Vub|/(|Vus||Vcb|) = 0.3498
+    G = 1.4171   |Vcb|/|Vus| = 1.4113   |Vub|/(|Vus||Vcb|) = 1.1725
+    max relative deviation from G over 300 random configs: 8.09e-02;  min_G = sqrt2 = 1.4142
+
+(ii) exponential tails
+    single exponential, separated      singular values [1.08453795e+00 7.22640631e-17 1.34283430e-17]
+    two equal zero modes, separated    singular values [2.17519618e+00 3.99590286e-03 2.61168282e-16]
+    two unequal zero modes, separated  singular values [1.30464263e+00 2.70757432e-03 8.29179209e-17]
+    interlaced, delta=0.01: [2.93771845 0.03027228 0.00427863]
+    interlaced, delta=0.001: [2.99367733e+00 3.09010062e-03 4.30240265e-04]
+
+(iii) random products of 3x3 steps (Anderson / theory-space chain)
+    complex Ginibre                          gaps (g1-g2, g2-g3) = (0.2514, 0.4929)  R = 2.961
+    real Ginibre                             gaps (g1-g2, g2-g3) = (0.3243, 0.6872)  R = 3.119
+    weak complex 1+0.1X                      gaps (g1-g2, g2-g3) = (0.0095, 0.0111)  R = 2.168
+    isotropic non-Gaussian (Haar*diag*Haar)  gaps (g1-g2, g2-g3) = (0.1459, 0.1504)  R = 2.031
+    digamma prediction complex Ginibre: gaps (1/4, 1/2), R = 3; weak-step (Brownian) limit: equal gaps, R = 2
+    L = 11: R percentiles 5/50/95 = [1.59 2.85 6.74];  ln kappa 5/50/95 = [-2.02  2.85  8.  ]
+    L = 16: R percentiles 5/50/95 = [1.69 2.87 6.85];  ln kappa 5/50/95 = [-2.13  4.08 10.15]
+
+(iv) observed invariants (recalled running masses, GeV; not fetched)
+    M_Z   up    R = 2.100  kappa = 1.757
+    M_Z   down  R = 1.743  kappa = 0.361
+    M_Z   lep   R = 2.889  kappa = 12.414
+    2e16  up    R = 2.077  kappa = 1.555
+    2e16  down  R = 1.769  kappa = 0.413
+    2e16  lep   R = 2.889  kappa = 12.421
+    CKM |Vcb|/|Vus| = 0.041/0.225 = 0.182 ; |Vub|/(|Vus||Vcb|) = 0.0037/(0.225*0.041) = 0.401
+watchdog peak RSS 31008 KB

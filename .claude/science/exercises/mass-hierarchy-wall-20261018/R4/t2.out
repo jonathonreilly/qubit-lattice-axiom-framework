@@ -1,0 +1,23 @@
+grammar sizes: Q targets 30, delta rad-rationals 47, delta pi-rationals 16
+leptons (pole): Q = 0.66666051, |Q-2/3| = 6.16e-06 (1-sigma tau shift moves Q by 6.8e-06)
+   Brannen r = 1.414201 (sqrt2 = 1.414214), delta = 0.22222963 rad, |delta-2/9| = 7.41e-06 (tau 1-sigma moves delta by 8.3e-06); delta/pi = 0.070738
+   MZ u: Q = 0.8871, r = 1.8227, delta = 0.0519 rad
+   MZ d: Q = 0.7425, r = 1.5669, delta = 0.1037 rad
+   MZ e: Q = 0.6679, r = 1.4169, delta = 0.2210 rad
+   LOW u: Q = 0.8490, r = 1.7589, delta = 0.0744 rad
+   LOW d: Q = 0.7314, r = 1.5455, delta = 0.1102 rad
+   LOW e: Q = 0.6667, r = 1.4142, delta = 0.2222 rad
+
+random N1 (n=1000000): P(|Q-2/3| <= 6.8e-06) = 1.60e-05; any of 30 grammar Q = 5.95e-04
+random N1: P(|delta-2/9| <= 8.3e-06) = 1.50e-05; any of 63 grammar deltas = 8.41e-04
+trials-corrected joint (independence assumed, x3 sectors): p ~ 1.5e-06
+grammar (Q,delta) points with positive masses: 1887
+
+   MZ u: best grammar (Q,delta) factor x1.45
+   MZ d: best grammar (Q,delta) factor x1.05
+   MZ e: best grammar (Q,delta) factor x1.02
+   LOW u: best grammar (Q,delta) factor x1.14
+   LOW d: best grammar (Q,delta) factor x1.05
+   LOW e: best grammar (Q,delta) factor x1.00
+random N1 triples (n=300): grammar (Q,delta) fit within x3: 0.963; within x1.1: 0.637
+watchdog peak RSS 333904 KB

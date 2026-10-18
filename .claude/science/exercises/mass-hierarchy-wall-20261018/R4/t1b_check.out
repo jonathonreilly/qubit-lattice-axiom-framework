@@ -1,0 +1,5 @@
+MZ sigma 2.5 per-sector best factors u,d,e: [1.1  1.06 1.16]
+LOW sigma 2.5 per-sector best factors u,d,e: [1.16 1.11 1.15]
+MZ sigma 2.75 per-sector best factors u,d,e: [1.14 1.13 1.07]
+LOW sigma 2.75 per-sector best factors u,d,e: [1.17 1.2  1.06]
+watchdog peak RSS 28208 KB

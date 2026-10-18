@@ -1,0 +1,11 @@
+
+##### mode blind
+MZ: best x66.20 at ('A2', '+', None, 'D_A1_A1_A2', 2, np.float64(0.34810707181870293))
+GUT: best x73.60 at ('A2', '+', None, 'D_A1_A1_A2', 2, np.float64(0.34810707181870293))
+control (300): fit within x3 0.003, x5 0.007, x10 0.023; quantiles 10/50/90 [ 22.6 110.9 402.4]
+
+##### mode chiralL
+MZ: best x3.68 at ('T2', 'gen', 1, 'T2', 0, np.float64(0.04519275633288414))
+GUT: best x3.85 at ('T2', 'gen', 1, 'T2', 0, np.float64(0.03944202726249245))
+control (300): fit within x3 0.010, x5 0.110, x10 0.453; quantiles 10/50/90 [ 4.9 10.9 27.3]
+watchdog peak RSS 208096 KB

@@ -1,0 +1,6 @@
+(i) eigenvalues of transfer matrix: [1.    +0.j     0.7455-0.6279j 0.7455+0.6279j 0.95  -0.j    ]; complex pair |lam| = 0.9747
+    D(Phi^n rho || sigma) monotone non-increasing: True; first/last D = 3.262/8.01e-02; coherence winds 6.6 turns while shrinking (attracting spiral)
+(ii) peripheral eigenvalues: [0.309-0.9511j 0.309+0.9511j 1.   -0.j     1.   +0.j    ]
+     period-5 cycle of states: True; D along cycle = [0.713603 0.713603 0.713603 0.713603 0.713603 0.713603] (DPI equality on the protected qubit)
+(iii) 200 random rank-4 qutrit channels: largest non-unit |eigenvalue| max = 0.744 (no peripheral cycles)
+watchdog peak RSS 52992 KB

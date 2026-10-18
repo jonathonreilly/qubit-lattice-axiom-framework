@@ -1,0 +1,8 @@
+samples with |Q-2/3| < 0.002: 31050; their delta range [0.0000, 0.2607] (pi/12 = 0.2618)
+density of delta at 2/9: conditional on Q~2/3 6.15/rad; unconditional 1.06/rad; ratio 5.8
+P(delta within 8.3e-06 of any of 62 grammar values): unconditional 8.21e-04 (R4: 8.41e-04); conditional on Q~2/3 7.75e-04  [13 grammar values lie in the allowed range]
+joint x3 sectors: R4 1.5e-06;  corrected (30 Q targets) 1.4e-06;  Q as the single 1983-predicted target 3.7e-08
+   if the honest delta grammar had 63 values at the same conditional density: joint (30 Q) ~ 1.4e-06
+   if the honest delta grammar had 300 values at the same conditional density: joint (30 Q) ~ 6.7e-06
+   if the honest delta grammar had 1000 values at the same conditional density: joint (30 Q) ~ 2.2e-05
+watchdog peak RSS 186032 KB

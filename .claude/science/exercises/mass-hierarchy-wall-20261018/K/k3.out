@@ -1,0 +1,21 @@
+(i) cubic-log kernel K_f = exp(F_f(x-y)), F_f(u) = -(u-D)^2/2 + c_f (u-D)^3, SAME offset D for u and d
+   D=0.3 c=(0.3,-0.3) delta=0.02: |Vus|=2.744e-02 |Vcb|=2.649e-03 ratio=0.0966 (pred 0.0963); m_c/m_t=4.1e-04 m_u/m_t=6.1e-08
+   D=0.3 c=(0.3,-0.3) delta=0.005: |Vus|=6.867e-03 |Vcb|=6.614e-04 ratio=0.0963 (pred 0.0963); m_c/m_t=2.6e-05 m_u/m_t=2.4e-10
+   D=0.5 c=(0.2,-0.2) delta=0.02: |Vus|=1.817e-02 |Vcb|=4.894e-03 ratio=0.2694 (pred 0.2694); m_c/m_t=4.3e-04 m_u/m_t=5.4e-08
+   D=0.5 c=(0.2,-0.2) delta=0.005: |Vus|=4.546e-03 |Vcb|=1.225e-03 ratio=0.2694 (pred 0.2694); m_c/m_t=2.7e-05 m_u/m_t=2.1e-10
+   D=0.0 c=(0.3,-0.3) delta=0.02: |Vus|=2.077e-02 |Vcb|=1.175e-05 ratio=0.0006 (pred 0.0000); m_c/m_t=2.7e-04 m_u/m_t=4.7e-08
+   D=0.0 c=(0.3,-0.3) delta=0.005: |Vus|=5.196e-03 |Vcb|=1.837e-07 ratio=0.0000 (pred 0.0000); m_c/m_t=1.7e-05 m_u/m_t=1.8e-10
+   D=0.8 c=(0.3,-0.3) delta=0.02: |Vus|=3.265e-02 |Vcb|=1.878e-02 ratio=0.5751 (pred 0.5760); m_c/m_t=6.5e-04 m_u/m_t=1.2e-07
+   D=0.8 c=(0.3,-0.3) delta=0.005: |Vus|=8.165e-03 |Vcb|=4.703e-03 ratio=0.5759 (pred 0.5760); m_c/m_t=4.1e-05 m_u/m_t=4.6e-10
+   (D=0.3, c_u=c_d: identical kernels -> CKM = 1, skipped)
+
+(ii) physical overlaps: K_f(x,y) = int psi_Q(z-x) psi_f(z-y) dz, psi_Q Gaussian, psi_f skew-normal
+     (same centre offset D for u_R and d_R, opposite skew a_f = +-a; flat Higgs)
+   D=0.4 a=+-1.0: |Vus|=3.634e-03 |Vcb|=5.338e-03 |Vcb|/|Vus|=1.469 |Vub|/(|Vus||Vcb|)=0.48; m_c/m_t=4.1e-05 m_s/m_b=4.0e-05
+   D=0.4 a=+-2.0: |Vus|=5.016e-03 |Vcb|=7.576e-03 |Vcb|/|Vus|=1.510 |Vub|/(|Vus||Vcb|)=0.47; m_c/m_t=4.9e-05 m_s/m_b=4.6e-05
+   D=0.8 a=+-1.0: |Vus|=3.674e-03 |Vcb|=5.396e-03 |Vcb|/|Vus|=1.469 |Vub|/(|Vus||Vcb|)=0.47; m_c/m_t=4.1e-05 m_s/m_b=4.0e-05
+   D=1.5 a=+-1.0: |Vus|=3.811e-03 |Vcb|=5.590e-03 |Vcb|/|Vus|=1.467 |Vub|/(|Vus||Vcb|)=0.44; m_c/m_t=4.2e-05 m_s/m_b=3.9e-05
+   D=0.0 a=+-1.0: |Vus|=3.620e-03 |Vcb|=5.319e-03 |Vcb|/|Vus|=1.469 |Vub|/(|Vus||Vcb|)=0.50; m_c/m_t=4.0e-05 m_s/m_b=4.0e-05
+   independent offsets: |Vcb|/|Vus| percentiles 5/50/95 = [1.014 1.428 1.648]; fraction <= 0.3: 0.020; <= 0.55: 0.027
+   co-located u_R, d_R: |Vcb|/|Vus| percentiles 5/50/95 = [1.3   1.511 2.82 ]; fraction <= 0.3: 0.020; <= 0.55: 0.027
+watchdog peak RSS 53440 KB

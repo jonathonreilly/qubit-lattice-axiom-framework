@@ -1,0 +1,29 @@
+Part A: lattice-symmetric Hermitian matrices on generation placements
+  X2' internal label (lattice acts trivially)                    dim= 3  commutant(C)= 9  distinct levels (generic)=3
+  axis labels, permutation rep of O (O->S3)                      dim= 3  commutant(C)= 2  distinct levels (generic)=2
+  axis labels, sign-twisted permutation (A2 x perm)              dim= 3  commutant(C)= 2  distinct levels (generic)=2
+  orientations: vector rep T1 of O (GEN-2)                       dim= 3  commutant(C)= 1  distinct levels (generic)=1
+  axis labels under T only (O\T broken, e.g. A2 staggered term)  dim= 3  commutant(C)= 3  distinct levels (generic)=3
+  axis labels x spin-1/2 under 2O                                dim= 6  commutant(C)= 2  distinct levels (generic)=2
+  T1 orientations x spin-1/2 under 2O                            dim= 6  commutant(C)= 2  distinct levels (generic)=2
+  axis labels x spin-1/2 under 2T (O\T broken)                   dim= 6  commutant(C)= 3  distinct levels (generic)=3
+  corners pi e_i: Z2^3 translations x| O (no spin)               dim= 3  commutant(C)= 1  distinct levels (generic)=1
+  corners pi e_i x spin-1/2: Z2^3 x| 2O                          dim= 6  commutant(C)= 1  distinct levels (generic)=1
+  corners pi e_i: Z2^3 x| T (O\T broken)                         dim= 3  commutant(C)= 1  distinct levels (generic)=1
+  circulant a=0.3, b=0.2+0.15i: eigenvalues [-0.1598  0.3598  0.7   ] ; commutes with all T labels: True
+
+Part B: minimal insertion order d_S(c) on odd Z2^3 charges
+  hw mod 2 is additive on Z2^3: checked on all 64 pairs
+  odd charges: [(0, 0, 1), (0, 1, 0), (1, 0, 0), (1, 1, 1)]  (hw: [1, 1, 1, 3] )
+  S = whole hw-1 class: orders [1, 1, 1, 3]
+  S = whole hw-2 class: orders [inf, inf, inf, inf]
+  S = whole hw-3 class: orders [inf, inf, inf, 1]
+  S = union of hw classes (1, 2): orders [1, 1, 1, 2]
+  S = union of hw classes (1, 3): orders [1, 1, 1, 1]
+  S = union of hw classes (2, 3): orders [2, 2, 2, 1]
+  S = union of hw classes (1, 2, 3): orders [1, 1, 1, 1]
+  every subset of a single hw class (15 sets): finite orders used = [1, 3]; max distinct finite per set = 2
+  all 127 harmonic sets: 12 give >= 3 distinct finite orders; of these, S3-invariant: 0
+  of the 12, mixing hw parities: 12; using >= 2 hw classes: 12
+  smallest example: S = [(0, 0, 1), (0, 1, 1), (1, 0, 1)] -> orders [1, 2, 2, 3] on [(0, 0, 1), (0, 1, 0), (1, 0, 0), (1, 1, 1)]
+watchdog peak RSS 24064 KB

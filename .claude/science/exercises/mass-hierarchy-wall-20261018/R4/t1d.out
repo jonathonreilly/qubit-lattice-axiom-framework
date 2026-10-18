@@ -1,0 +1,19 @@
+C3[111]-invariant (h,t on body diagonal): 24 placements/sector; degenerate-pair fraction 1.00
+  MZ: masses best x71.30 pass=False; CKM best (given u,d masses x3) none
+  LOW: masses best x57.09 pass=False; CKM best (given u,d masses x3) none
+  random masses pass rate N1 0.023, N2 0.000
+  random masses+CKM (N1, random CKM) pass 0/100
+Z2 (y<->z)-invariant: 288 placements/sector; degenerate-pair fraction 0.18
+  MZ: masses best x1.45 pass=True; CKM best (given u,d masses x3) x3727465598679.44
+  LOW: masses best x1.47 pass=True; CKM best (given u,d masses x3) x3727465598679.44
+  random masses pass rate N1 1.000, N2 1.000
+  random masses+CKM (N1, random CKM) pass 0/100
+canonical h=0, t=0: 2 placements/sector; degenerate-pair fraction 1.00
+  MZ: masses best x71.30 pass=False; CKM best (given u,d masses x3) none
+  LOW: masses best x57.09 pass=False; CKM best (given u,d masses x3) none
+  random masses pass rate N1 0.024, N2 0.002
+  random masses+CKM (N1, random CKM) pass 0/100
+MZ: misaligned Z2, u,d masses x3 and best CKM factor x16.00; sigma, |V| = (np.float64(4.0), array([0.71352248, 0.65613651, 0.05777517]))
+LOW: misaligned Z2, u,d masses x3 and best CKM factor x16.00; sigma, |V| = (np.float64(4.0), array([0.71352248, 0.65613651, 0.05777517]))
+random (N1 masses, random CKM): pass 14/100
+watchdog peak RSS 127152 KB

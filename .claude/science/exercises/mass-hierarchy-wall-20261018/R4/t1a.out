@@ -1,0 +1,40 @@
+exponent library: hop 6, squares 10, union 15; bases 14
+
+=== observed set MZ ===
+V1 universal (b,S)               best factor x3.77  pass=False
+V2 universal b, S per sector     best factor x1.86  pass=True
+V3 (b,S) per sector              best factor x1.38  pass=True
+V4 continuous base per sector    best factor x1.14  pass=True
+V5 universal continuous sigma    best factor x1.57  pass=True
+  V1 best: base alpha_s(v), S=(4, 2)
+  sector u: R_obs=2.096, x3 window R in [1.51, 3.45]; library hits 8/15
+  sector d: R_obs=1.768, x3 window R in [1.13, 4.03]; library hits 12/15
+  sector e: R_obs=2.889, x3 window R in [1.63, 12.87]; library hits 12/15
+
+=== observed set LOW ===
+V1 universal (b,S)               best factor x3.13  pass=False
+V2 universal b, S per sector     best factor x1.87  pass=True
+V3 (b,S) per sector              best factor x1.46  pass=True
+V4 continuous base per sector    best factor x1.05  pass=True
+V5 universal continuous sigma    best factor x1.61  pass=True
+  V1 best: base alpha_s(v), S=(4, 2)
+  sector u: R_obs=2.298, x3 window R in [1.59, 4.16]; library hits 10/15
+  sector d: R_obs=1.788, x3 window R in [1.13, 4.24]; library hits 12/15
+  sector e: R_obs=2.889, x3 window R in [1.62, 13.04]; library hits 12/15
+[N1] single pre-registered (b,S), all sectors: pass rate mean 0.0063, max 0.0436 over 210 combos
+
+=== random control N1 (n=20000; V5 n=5000) ===
+V1 universal (b,S)               pass rate 0.193;  P(random as good as observed MZ) 0.327
+V2 universal b, S per sector     pass rate 0.915;  P(random as good as observed MZ) 0.485
+V3 (b,S) per sector              pass rate 0.973;  P(random as good as observed MZ) 0.431
+V4 continuous base per sector    pass rate 0.979;  P(as good) 0.397
+V5 universal continuous sigma    pass rate 0.936;  P(as good) 0.391
+[N2] single pre-registered (b,S), all sectors: pass rate mean 0.0012, max 0.0042 over 210 combos
+
+=== random control N2 (n=20000; V5 n=5000) ===
+V1 universal (b,S)               pass rate 0.066;  P(random as good as observed MZ) 0.140
+V2 universal b, S per sector     pass rate 0.718;  P(random as good as observed MZ) 0.212
+V3 (b,S) per sector              pass rate 0.875;  P(random as good as observed MZ) 0.206
+V4 continuous base per sector    pass rate 0.903;  P(as good) 0.255
+V5 universal continuous sigma    pass rate 0.795;  P(as good) 0.169
+watchdog peak RSS 150016 KB

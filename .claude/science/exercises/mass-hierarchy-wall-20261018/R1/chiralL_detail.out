@@ -1,0 +1,11 @@
+MZ chiralL best per coefficient draw: [3.68 5.46 5.7 ]
+GUT chiralL best per coefficient draw: [3.85 5.88 6.33]
+ draw 0: eps=0.0452 factor x3.68; model/obs (after sector scale) up [3.68 0.94 0.27] down [0.56 1.8  1.09] lep [0.52 0.57 1.93] ckm(us,cb,ub) [0.3  1.52 0.72]
+    model mass ratios m1/m3,m2/m3: up [0.0001 0.0128 1.    ] down [0.0005 0.0329 1.    ]
+ draw 1: eps=0.0518 factor x6.19; model/obs (after sector scale) up [6.13 2.38 0.16] down [0.47 2.11 1.58] lep [2.82 0.35 0.74] ckm(us,cb,ub) [0.2  0.59 0.16]
+    model mass ratios m1/m3,m2/m3: up [0.0003 0.054  1.    ] down [0.0003 0.0266 1.    ]
+ draw 2: eps=0.0779 factor x9.33; model/obs (after sector scale) up [8.89 0.95 0.11] down [0.56 1.79 0.56] lep [3.05 0.33 0.43] ckm(us,cb,ub) [0.11 0.9  0.7 ]
+    model mass ratios m1/m3,m2/m3: up [0.0006 0.0312 1.    ] down [0.001  0.0641 1.    ]
+control: fraction of random spectra fit within x3.68: 0.037
+control: fraction of random spectra fit within x3.85: 0.050
+watchdog peak RSS 196544 KB

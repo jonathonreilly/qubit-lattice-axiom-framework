@@ -1,0 +1,226 @@
+=== residual groups and isotropy ===
+pair a: |H| = 48, distinct rotations 12, a2 values {1}, translations [(np.int64(0), np.int64(0), np.int64(0)), (np.int64(0), np.int64(1), np.int64(1)), (np.int64(1), np.int64(0), np.int64(1)), (np.int64(1), np.int64(1), np.int64(0))]
+   V=P                 sum m_i^2 (V|H) = 3.00  H scalar on V: False  dim Inv_H(VxVxW) = 6.00  dim Inv_G(VxVxW) = 3.00
+   V=S                 sum m_i^2 (V|H) = 1.00  H scalar on V: False  dim Inv_H(VxVxW) = 2.00  dim Inv_G(VxVxW) = 1.00
+   V=D_A1_A1_A2        sum m_i^2 (V|H) = 9.00  H scalar on V: True   dim Inv_H(VxVxW) = -0.00  dim Inv_G(VxVxW) = 0.00
+   V=D_A1_A2_A2        sum m_i^2 (V|H) = 9.00  H scalar on V: True   dim Inv_H(VxVxW) = -0.00  dim Inv_G(VxVxW) = 0.00
+   V=D_A1_C111_C111A2  sum m_i^2 (V|H) = 9.00  H scalar on V: True   dim Inv_H(VxVxW) = -0.00  dim Inv_G(VxVxW) = 0.00
+   V=D_A1_A2_C111      sum m_i^2 (V|H) = 9.00  H scalar on V: True   dim Inv_H(VxVxW) = -0.00  dim Inv_G(VxVxW) = 0.00
+   V=D_A1_A1_C111      sum m_i^2 (V|H) = 9.00  H scalar on V: True   dim Inv_H(VxVxW) = -0.00  dim Inv_G(VxVxW) = -0.00
+   dim Inv_H(W) = -0.00
+   universal LV: max rank of (s1,s2)->W images over k1+k2<=8: 0 (nonzero at [])
+pair b: |H| = 12, distinct rotations 12, a2 values {1}, translations [(np.int64(0), np.int64(0), np.int64(0))]
+   V=P                 sum m_i^2 (V|H) = 3.00  H scalar on V: False  dim Inv_H(VxVxW) = 6.00  dim Inv_G(VxVxW) = 3.00
+   V=S                 sum m_i^2 (V|H) = 3.00  H scalar on V: False  dim Inv_H(VxVxW) = 6.00  dim Inv_G(VxVxW) = 1.00
+   V=D_A1_A1_A2        sum m_i^2 (V|H) = 9.00  H scalar on V: True   dim Inv_H(VxVxW) = 0.00  dim Inv_G(VxVxW) = 0.00
+   V=D_A1_A2_A2        sum m_i^2 (V|H) = 9.00  H scalar on V: True   dim Inv_H(VxVxW) = 0.00  dim Inv_G(VxVxW) = 0.00
+   V=D_A1_C111_C111A2  sum m_i^2 (V|H) = 9.00  H scalar on V: True   dim Inv_H(VxVxW) = 0.00  dim Inv_G(VxVxW) = 0.00
+   V=D_A1_A2_C111      sum m_i^2 (V|H) = 9.00  H scalar on V: True   dim Inv_H(VxVxW) = 0.00  dim Inv_G(VxVxW) = 0.00
+   V=D_A1_A1_C111      sum m_i^2 (V|H) = 9.00  H scalar on V: True   dim Inv_H(VxVxW) = 0.00  dim Inv_G(VxVxW) = -0.00
+   dim Inv_H(W) = 0.00
+   universal LV: max rank of (s1,s2)->W images over k1+k2<=8: 0 (nonzero at [])
+precomputed  0 primary    pair a V=P                 blind   structures  40  t=0s
+precomputed  1 primary    pair a V=S                 blind   structures  15  t=0s
+precomputed  2 primary    pair b V=P                 blind   structures  40  t=0s
+precomputed  3 primary    pair b V=S                 blind   structures  31  t=0s
+precomputed  4 chiralL-PS pair a V=P                 chiralL structures  45  t=0s
+model 5 ('chiralL-PS', 'a', 'S', 'chiralL', 'S', 'triv3'): no structures
+precomputed  6 chiralL-PS pair b V=P                 chiralL structures  45  t=1s
+precomputed  7 chiralL-PS pair b V=S                 chiralL structures  30  t=1s
+precomputed  8 D-blind    pair a V=D_A1_A1_A2        blind   structures 115  t=1s
+precomputed  9 D-blind    pair a V=D_A1_A2_A2        blind   structures 115  t=1s
+precomputed 10 D-blind    pair a V=D_A1_C111_C111A2  blind   structures 105  t=1s
+precomputed 11 D-blind    pair a V=D_A1_A2_C111      blind   structures 105  t=1s
+precomputed 12 D-blind    pair a V=D_A1_A1_C111      blind   structures 115  t=1s
+precomputed 13 D-blind    pair b V=D_A1_A1_A2        blind   structures 115  t=1s
+precomputed 14 D-blind    pair b V=D_A1_A2_A2        blind   structures 115  t=2s
+precomputed 15 D-blind    pair b V=D_A1_C111_C111A2  blind   structures  89  t=2s
+precomputed 16 D-blind    pair b V=D_A1_A2_C111      blind   structures  89  t=2s
+precomputed 17 D-blind    pair b V=D_A1_A1_C111      blind   structures  99  t=2s
+precomputed 18 D-chiralL  pair a V=D_A1_A1_A2        chiralL structures 120  t=2s
+precomputed 19 D-chiralL  pair a V=D_A1_A2_A2        chiralL structures 105  t=2s
+precomputed 20 D-chiralL  pair a V=D_A1_C111_C111A2  chiralL structures 105  t=2s
+precomputed 21 D-chiralL  pair a V=D_A1_A2_C111      chiralL structures 105  t=3s
+precomputed 22 D-chiralL  pair a V=D_A1_A1_C111      chiralL structures 120  t=3s
+precomputed 23 D-chiralL  pair b V=D_A1_A1_A2        chiralL structures 120  t=3s
+precomputed 24 D-chiralL  pair b V=D_A1_A2_A2        chiralL structures 105  t=3s
+precomputed 25 D-chiralL  pair b V=D_A1_C111_C111A2  chiralL structures  81  t=3s
+precomputed 26 D-chiralL  pair b V=D_A1_A2_C111      chiralL structures  93  t=3s
+precomputed 27 D-chiralL  pair b V=D_A1_A1_C111      chiralL structures 108  t=3s
+
+=== real data ===
+
+--- set MZ: observed (m1/m3)_up/(m1/m3)_dn = 1/136 ---
+primary    pair a V=P                 blind   best x per draw [1.386e+12 2.286e+12 5.328e+10 1.437e+10 2.380e+13]
+    draw 0: e1=0.6 e2=0.311  factors up/dn/lep/ckm [3.554e+02 2.330e+01 2.860e+01 1.386e+12]  m1/m3 up 9.34e-01 dn 5.43e-01 (ratio 1/0.58)  |Vus,Vcb,Vub| [1. 0. 0.]
+    draw 1: e1=0.00193 e2=0.6  factors up/dn/lep/ckm [1.889e+02 3.120e+01 5.690e+01 2.286e+12]  m1/m3 up 2.64e-01 dn 9.78e-01 (ratio 1/3.7)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 2: e1=0.311 e2=0.509  factors up/dn/lep/ckm [3.065e+02 1.290e+01 4.480e+01 5.328e+10]  m1/m3 up 6.95e-01 dn 1.68e-01 (ratio 1/0.24)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 3: e1=0.311 e2=0.0711  factors up/dn/lep/ckm [1.510e+02 2.100e+01 4.640e+01 1.437e+10]  m1/m3 up 1.69e-01 dn 4.43e-01 (ratio 1/2.6)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 4: e1=0.00994 e2=0.6  factors up/dn/lep/ckm [2.707e+02 2.320e+01 2.810e+01 2.380e+13]  m1/m3 up 5.42e-01 dn 5.38e-01 (ratio 1/0.99)  |Vus,Vcb,Vub| [0. 0. 1.]
+primary    pair a V=S                 blind   best x per draw [2.25e+34 2.25e+34 2.25e+34 2.25e+34 2.25e+34]
+    draw 0: e1=0.001 e2=0.001  factors up/dn/lep/ckm [3.677e+02 3.160e+01 5.990e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 1: e1=0.001 e2=0.001  factors up/dn/lep/ckm [3.677e+02 3.160e+01 5.990e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 2: e1=0.001 e2=0.001  factors up/dn/lep/ckm [3.677e+02 3.160e+01 5.990e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 3: e1=0.001 e2=0.001  factors up/dn/lep/ckm [3.677e+02 3.160e+01 5.990e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 4: e1=0.001 e2=0.001  factors up/dn/lep/ckm [3.677e+02 3.160e+01 5.990e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+primary    pair b V=P                 blind   best x per draw [4.015e+12 7.940e+08 1.719e+11 4.406e+09 6.809e+09]
+    draw 0: e1=0.00118 e2=0.432  factors up/dn/lep/ckm [3.620e+02 1.350e+01 2.630e+01 4.015e+12]  m1/m3 up 9.69e-01 dn 1.82e-01 (ratio 1/0.19)  |Vus,Vcb,Vub| [0. 0. 1.]
+    draw 1: e1=0.00139 e2=0.6  factors up/dn/lep/ckm [3.632e+02 2.960e+01 3.700e+01 7.940e+08]  m1/m3 up 9.76e-01 dn 8.80e-01 (ratio 1/0.9)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 2: e1=0.0435 e2=0.6  factors up/dn/lep/ckm [1.845e+02 3.050e+01 4.910e+01 1.719e+11]  m1/m3 up 2.52e-01 dn 9.35e-01 (ratio 1/3.7)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 3: e1=0.001 e2=0.432  factors up/dn/lep/ckm [2.202e+02 2.730e+01 3.850e+01 4.406e+09]  m1/m3 up 3.59e-01 dn 7.47e-01 (ratio 1/2.1)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 4: e1=0.0138 e2=0.6  factors up/dn/lep/ckm [3.350e+02 2.800e+01 4.150e+01 6.809e+09]  m1/m3 up 8.30e-01 dn 7.88e-01 (ratio 1/0.95)  |Vus,Vcb,Vub| [1. 1. 0.]
+primary    pair b V=S                 blind   best x per draw [1.431e+07 6.030e+07 1.861e+08 2.789e+07 2.672e+07]
+    draw 0: e1=0.00118 e2=0.001  factors up/dn/lep/ckm [     367.7       31.6       59.9 14314610. ]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [1. 0. 0.]
+    draw 1: e1=0.19 e2=0.00118  factors up/dn/lep/ckm [     367.7       31.6       59.9 60295370.4]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 1. 0.]
+    draw 2: e1=0.224 e2=0.001  factors up/dn/lep/ckm [3.677e+02 3.160e+01 5.990e+01 1.861e+08]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 3: e1=0.00438 e2=0.001  factors up/dn/lep/ckm [     367.7       31.6       59.9 27888541.4]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 4: e1=0.0435 e2=0.001  factors up/dn/lep/ckm [     367.7       31.6       59.9 26715717.1]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 1.]
+chiralL-PS pair a V=P                 chiralL best x per draw [4.713e+13 9.161e+13 1.045e+14 9.761e+13 1.015e+14]
+chiralL-PS pair a V=S                 chiralL best x per draw [1.247e+34 1.247e+34 1.247e+34 1.247e+34 1.247e+34]
+chiralL-PS pair b V=P                 chiralL best x per draw [8.553e+13 9.122e+13 1.072e+14 7.764e+13 1.187e+14]
+chiralL-PS pair b V=S                 chiralL best x per draw [6.263e+13 9.090e+13 1.030e+14 7.708e+13 8.011e+13]
+D-blind    pair a V=D_A1_A1_A2        blind   best x per draw [170.  164.6 204.2 157.4 143.5]
+D-blind    pair a V=D_A1_A2_A2        blind   best x per draw [152.8 153.2 103.  125.8  78.6]
+D-blind    pair a V=D_A1_C111_C111A2  blind   best x per draw [127.8 103.6 227.  157.2 165.1]
+D-blind    pair a V=D_A1_A2_C111      blind   best x per draw [270.4  90.5 146.1 155.7  50.8]
+D-blind    pair a V=D_A1_A1_C111      blind   best x per draw [199.9 160.7  84.4 162.2 110.1]
+D-blind    pair b V=D_A1_A1_A2        blind   best x per draw [131.1 118.8 158.5 193.  178.3]
+D-blind    pair b V=D_A1_A2_A2        blind   best x per draw [197.1 161.1 107.9 190.6 170.8]
+D-blind    pair b V=D_A1_C111_C111A2  blind   best x per draw [134.  120.2  53.8 235.1 196.9]
+D-blind    pair b V=D_A1_A2_C111      blind   best x per draw [ 87.7 155.7  80.2  46.2 202.2]
+D-blind    pair b V=D_A1_A1_C111      blind   best x per draw [139.1 245.2 120.3 219.9 236.2]
+D-chiralL  pair a V=D_A1_A1_A2        chiralL best x per draw [26.4 13.9 20.9 14.2 18.6]
+D-chiralL  pair a V=D_A1_A2_A2        chiralL best x per draw [14.6 12.6 10.5 13.  19.7]
+D-chiralL  pair a V=D_A1_C111_C111A2  chiralL best x per draw [12.   8.8  9.1 10.   7.2]
+D-chiralL  pair a V=D_A1_A2_C111      chiralL best x per draw [10.1  7.   9.   6.8  6.5]
+D-chiralL  pair a V=D_A1_A1_C111      chiralL best x per draw [16.8 15.6 22.8 29.  19.6]
+D-chiralL  pair b V=D_A1_A1_A2        chiralL best x per draw [18.2 27.3 21.3 22.9 21.4]
+D-chiralL  pair b V=D_A1_A2_A2        chiralL best x per draw [14.8  6.  11.7 16.8  9.9]
+D-chiralL  pair b V=D_A1_C111_C111A2  chiralL best x per draw [4.4 7.1 7.7 6.1 8.2]
+D-chiralL  pair b V=D_A1_A2_C111      chiralL best x per draw [6.5 9.2 4.7 4.5 4.4]
+D-chiralL  pair b V=D_A1_A1_C111      chiralL best x per draw [14.9 19.1 17.3 13.3 24.4]
+  SEARCH primary    best x per draw [1.431e+07 6.030e+07 1.861e+08 2.789e+07 2.672e+07]  -> meets PASS fit criterion: False
+  SEARCH chiralL-PS best x per draw [4.713e+13 9.090e+13 1.030e+14 7.708e+13 8.011e+13]  -> meets PASS fit criterion: False
+  SEARCH D-blind    best x per draw [87.73 90.45 53.84 46.17 50.83]  -> meets PASS fit criterion: False
+  SEARCH D-chiralL  best x per draw [4.39 6.01 4.67 4.5  4.43]  -> meets PASS fit criterion: False
+
+--- set GUT: observed (m1/m3)_up/(m1/m3)_dn = 1/176 ---
+primary    pair a V=P                 blind   best x per draw [1.386e+12 2.286e+12 5.328e+10 1.437e+10 2.380e+13]
+    draw 0: e1=0.6 e2=0.311  factors up/dn/lep/ckm [3.795e+02 2.180e+01 2.860e+01 1.386e+12]  m1/m3 up 9.34e-01 dn 5.43e-01 (ratio 1/0.58)  |Vus,Vcb,Vub| [1. 0. 0.]
+    draw 1: e1=0.00193 e2=0.6  factors up/dn/lep/ckm [2.017e+02 2.930e+01 5.690e+01 2.286e+12]  m1/m3 up 2.64e-01 dn 9.78e-01 (ratio 1/3.7)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 2: e1=0.311 e2=0.509  factors up/dn/lep/ckm [3.273e+02 1.210e+01 4.480e+01 5.328e+10]  m1/m3 up 6.95e-01 dn 1.68e-01 (ratio 1/0.24)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 3: e1=0.311 e2=0.0711  factors up/dn/lep/ckm [1.612e+02 1.970e+01 4.640e+01 1.437e+10]  m1/m3 up 1.69e-01 dn 4.43e-01 (ratio 1/2.6)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 4: e1=0.00994 e2=0.6  factors up/dn/lep/ckm [2.891e+02 2.170e+01 2.810e+01 2.380e+13]  m1/m3 up 5.42e-01 dn 5.38e-01 (ratio 1/0.99)  |Vus,Vcb,Vub| [0. 0. 1.]
+primary    pair a V=S                 blind   best x per draw [2.25e+34 2.25e+34 2.25e+34 2.25e+34 2.25e+34]
+    draw 0: e1=0.001 e2=0.001  factors up/dn/lep/ckm [3.926e+02 2.960e+01 5.990e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 1: e1=0.001 e2=0.001  factors up/dn/lep/ckm [3.926e+02 2.960e+01 5.990e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 2: e1=0.001 e2=0.001  factors up/dn/lep/ckm [3.926e+02 2.960e+01 5.990e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 3: e1=0.001 e2=0.001  factors up/dn/lep/ckm [3.926e+02 2.960e+01 5.990e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 4: e1=0.001 e2=0.001  factors up/dn/lep/ckm [3.926e+02 2.960e+01 5.990e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+primary    pair b V=P                 blind   best x per draw [4.015e+12 7.940e+08 1.719e+11 4.406e+09 6.809e+09]
+    draw 0: e1=0.00118 e2=0.432  factors up/dn/lep/ckm [3.865e+02 1.260e+01 2.630e+01 4.015e+12]  m1/m3 up 9.69e-01 dn 1.82e-01 (ratio 1/0.19)  |Vus,Vcb,Vub| [0. 0. 1.]
+    draw 1: e1=0.00139 e2=0.6  factors up/dn/lep/ckm [3.878e+02 2.780e+01 3.700e+01 7.940e+08]  m1/m3 up 9.76e-01 dn 8.80e-01 (ratio 1/0.9)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 2: e1=0.0435 e2=0.6  factors up/dn/lep/ckm [1.970e+02 2.860e+01 4.910e+01 1.719e+11]  m1/m3 up 2.52e-01 dn 9.35e-01 (ratio 1/3.7)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 3: e1=0.001 e2=0.432  factors up/dn/lep/ckm [2.352e+02 2.560e+01 3.850e+01 4.406e+09]  m1/m3 up 3.59e-01 dn 7.47e-01 (ratio 1/2.1)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 4: e1=0.0138 e2=0.6  factors up/dn/lep/ckm [3.577e+02 2.630e+01 4.150e+01 6.809e+09]  m1/m3 up 8.30e-01 dn 7.88e-01 (ratio 1/0.95)  |Vus,Vcb,Vub| [1. 1. 0.]
+primary    pair b V=S                 blind   best x per draw [1.431e+07 6.030e+07 1.861e+08 2.789e+07 2.672e+07]
+    draw 0: e1=0.00118 e2=0.001  factors up/dn/lep/ckm [     392.6       29.6       59.9 14314610. ]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [1. 0. 0.]
+    draw 1: e1=0.19 e2=0.00118  factors up/dn/lep/ckm [     392.6       29.6       59.9 60295370.4]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 1. 0.]
+    draw 2: e1=0.224 e2=0.001  factors up/dn/lep/ckm [3.926e+02 2.960e+01 5.990e+01 1.861e+08]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 3: e1=0.00438 e2=0.001  factors up/dn/lep/ckm [     392.6       29.6       59.9 27888541.4]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 4: e1=0.0435 e2=0.001  factors up/dn/lep/ckm [     392.6       29.6       59.9 26715717.1]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 1.]
+  SEARCH primary    best x per draw [1.431e+07 6.030e+07 1.861e+08 2.789e+07 2.672e+07]  -> meets PASS fit criterion: False
+  SEARCH chiralL-PS best x per draw [4.713e+13 9.090e+13 1.030e+14 7.708e+13 8.011e+13]  -> meets PASS fit criterion: False
+  SEARCH D-blind    best x per draw [91.27 90.45 57.49 46.17 53.99]  -> meets PASS fit criterion: False
+  SEARCH D-chiralL  best x per draw [4.69 6.01 4.98 4.5  4.73]  -> meets PASS fit criterion: False
+
+--- set MIX: observed (m1/m3)_up/(m1/m3)_dn = 1/89 ---
+primary    pair a V=P                 blind   best x per draw [1.386e+12 2.286e+12 5.328e+10 1.437e+10 2.380e+13]
+    draw 0: e1=0.6 e2=0.311  factors up/dn/lep/ckm [2.733e+02 2.200e+01 2.820e+01 1.386e+12]  m1/m3 up 9.34e-01 dn 5.43e-01 (ratio 1/0.58)  |Vus,Vcb,Vub| [1. 0. 0.]
+    draw 1: e1=0.00193 e2=0.6  factors up/dn/lep/ckm [1.453e+02 2.960e+01 5.600e+01 2.286e+12]  m1/m3 up 2.64e-01 dn 9.78e-01 (ratio 1/3.7)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 2: e1=0.311 e2=0.509  factors up/dn/lep/ckm [2.357e+02 1.230e+01 4.410e+01 5.328e+10]  m1/m3 up 6.95e-01 dn 1.68e-01 (ratio 1/0.24)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 3: e1=0.311 e2=0.0711  factors up/dn/lep/ckm [1.161e+02 1.990e+01 4.560e+01 1.437e+10]  m1/m3 up 1.69e-01 dn 4.43e-01 (ratio 1/2.6)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 4: e1=0.00994 e2=0.6  factors up/dn/lep/ckm [2.082e+02 2.190e+01 2.770e+01 2.380e+13]  m1/m3 up 5.42e-01 dn 5.38e-01 (ratio 1/0.99)  |Vus,Vcb,Vub| [0. 0. 1.]
+primary    pair a V=S                 blind   best x per draw [2.25e+34 2.25e+34 2.25e+34 2.25e+34 2.25e+34]
+    draw 0: e1=0.001 e2=0.001  factors up/dn/lep/ckm [2.828e+02 2.990e+01 5.900e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 1: e1=0.001 e2=0.001  factors up/dn/lep/ckm [2.828e+02 2.990e+01 5.900e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 2: e1=0.001 e2=0.001  factors up/dn/lep/ckm [2.828e+02 2.990e+01 5.900e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 3: e1=0.001 e2=0.001  factors up/dn/lep/ckm [2.828e+02 2.990e+01 5.900e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 4: e1=0.001 e2=0.001  factors up/dn/lep/ckm [2.828e+02 2.990e+01 5.900e+01 2.250e+34]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+primary    pair b V=P                 blind   best x per draw [4.015e+12 7.940e+08 1.719e+11 4.406e+09 6.809e+09]
+    draw 0: e1=0.00118 e2=0.432  factors up/dn/lep/ckm [2.783e+02 1.280e+01 2.590e+01 4.015e+12]  m1/m3 up 9.69e-01 dn 1.82e-01 (ratio 1/0.19)  |Vus,Vcb,Vub| [0. 0. 1.]
+    draw 1: e1=0.00139 e2=0.6  factors up/dn/lep/ckm [2.793e+02 2.810e+01 3.640e+01 7.940e+08]  m1/m3 up 9.76e-01 dn 8.80e-01 (ratio 1/0.9)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 2: e1=0.0435 e2=0.6  factors up/dn/lep/ckm [1.419e+02 2.890e+01 4.830e+01 1.719e+11]  m1/m3 up 2.52e-01 dn 9.35e-01 (ratio 1/3.7)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 3: e1=0.001 e2=0.432  factors up/dn/lep/ckm [1.694e+02 2.590e+01 3.790e+01 4.406e+09]  m1/m3 up 3.59e-01 dn 7.47e-01 (ratio 1/2.1)  |Vus,Vcb,Vub| [1. 1. 0.]
+    draw 4: e1=0.0138 e2=0.6  factors up/dn/lep/ckm [2.576e+02 2.660e+01 4.080e+01 6.809e+09]  m1/m3 up 8.30e-01 dn 7.88e-01 (ratio 1/0.95)  |Vus,Vcb,Vub| [1. 1. 0.]
+primary    pair b V=S                 blind   best x per draw [1.431e+07 6.030e+07 1.861e+08 2.789e+07 2.672e+07]
+    draw 0: e1=0.00118 e2=0.001  factors up/dn/lep/ckm [     282.8       29.9       59.  14314610. ]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [1. 0. 0.]
+    draw 1: e1=0.19 e2=0.00118  factors up/dn/lep/ckm [     282.8       29.9       59.  60295370.4]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 1. 0.]
+    draw 2: e1=0.224 e2=0.001  factors up/dn/lep/ckm [2.828e+02 2.990e+01 5.900e+01 1.861e+08]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 3: e1=0.00438 e2=0.001  factors up/dn/lep/ckm [     282.8       29.9       59.  27888541.4]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 0.]
+    draw 4: e1=0.0435 e2=0.001  factors up/dn/lep/ckm [     282.8       29.9       59.  26715717.1]  m1/m3 up 1.00e+00 dn 1.00e+00 (ratio 1/1)  |Vus,Vcb,Vub| [0. 0. 1.]
+  SEARCH primary    best x per draw [1.431e+07 6.030e+07 1.861e+08 2.789e+07 2.672e+07]  -> meets PASS fit criterion: False
+  SEARCH chiralL-PS best x per draw [4.713e+13 9.090e+13 1.030e+14 7.708e+13 8.011e+13]  -> meets PASS fit criterion: False
+  SEARCH D-blind    best x per draw [70.07 84.64 41.4  45.45 45.5 ]  -> meets PASS fit criterion: False
+  SEARCH D-chiralL  best x per draw [3.69 5.85 4.59 4.1  4.33]  -> meets PASS fit criterion: False
+
+=== exponent structure (primary, draw 0; per sector up/dn/lep; heavy -> light) ===
+pair a V=P: ['e1^-0 e2^-0', 'e1^0 e2^0', 'e1^-0 e2^0'] | ['e1^0 e2^-0', 'e1^0 e2^-0', 'e1^-0 e2^-0'] | ['e1^0 e2^0', 'e1^-0 e2^0', 'e1^-0 e2^-0']
+pair a V=S: ['e1^-0 e2^-0', 'e1^-0 e2^-0', 'e1^-0 e2^-0'] | ['e1^0 e2^-0', 'e1^0 e2^-0', 'e1^0 e2^-0'] | ['e1^-0 e2^0', 'e1^-0 e2^0', 'e1^-0 e2^0']
+pair b V=P: ['e1^0 e2^0', 'e1^-0 e2^0', 'e1^0 e2^0'] | ['e1^0 e2^0', 'e1^0 e2^-0', 'e1^-0 e2^-0'] | ['e1^-0 e2^0', 'e1^0 e2^-0', 'e1^-0 e2^-0']
+pair b V=S: ['e1^0 e2^0', 'e1^0 e2^-0', 'e1^0 e2^-0'] | ['e1^0 e2^0', 'e1^0 e2^0', 'e1^0 e2^0'] | ['e1^0 e2^0', 'e1^0 e2^-0', 'e1^0 e2^-0']
+chiralL-PS pair a V=P                : up ['e1^-0 e2^-0', 'inf', 'inf']
+chiralL-PS pair a V=S                : up no structures (massless)
+chiralL-PS pair b V=P                : up ['e1^-0 e2^0', 'inf', 'inf']
+chiralL-PS pair b V=S                : up ['e1^-0 e2^1', 'inf', 'inf']
+D-blind    pair a V=D_A1_A1_A2       : up ['e1^0 e2^0', 'e1^0 e2^0', 'e1^-0 e2^0']
+D-blind    pair a V=D_A1_A2_A2       : up ['e1^0 e2^-0', 'e1^-0 e2^0', 'e1^0 e2^-0']
+D-blind    pair a V=D_A1_C111_C111A2 : up ['e1^-0 e2^0', 'e1^0 e2^0', 'e1^-0 e2^0']
+D-blind    pair a V=D_A1_A2_C111     : up ['e1^0 e2^0', 'e1^0 e2^0', 'e1^0 e2^-0']
+D-blind    pair a V=D_A1_A1_C111     : up ['e1^0 e2^0', 'e1^0 e2^0', 'e1^0 e2^0']
+D-blind    pair b V=D_A1_A1_A2       : up ['e1^0 e2^-0', 'e1^0 e2^0', 'e1^-0 e2^-0']
+D-blind    pair b V=D_A1_A2_A2       : up ['e1^-0 e2^-0', 'e1^0 e2^-0', 'e1^-0 e2^-0']
+D-blind    pair b V=D_A1_C111_C111A2 : up ['e1^-0 e2^0', 'e1^0 e2^0', 'e1^0 e2^-0']
+D-blind    pair b V=D_A1_A2_C111     : up ['e1^-0 e2^-0', 'e1^0 e2^0', 'e1^0 e2^0']
+D-blind    pair b V=D_A1_A1_C111     : up ['e1^0 e2^0', 'e1^0 e2^-0', 'e1^-0 e2^-0']
+D-chiralL  pair a V=D_A1_A1_A2       : up ['e1^-0 e2^0', 'e1^0 e2^-0', 'e1^1 e2^0']
+D-chiralL  pair a V=D_A1_A2_A2       : up ['e1^-0 e2^-0', 'e1^1 e2^0', 'e1^1 e2^-0']
+D-chiralL  pair a V=D_A1_C111_C111A2 : up ['e1^-0 e2^-0', 'e1^0 e2^1', 'e1^1 e2^1']
+D-chiralL  pair a V=D_A1_A2_C111     : up ['e1^0 e2^-0', 'e1^0 e2^0', 'e1^1 e2^1']
+D-chiralL  pair a V=D_A1_A1_C111     : up ['e1^-0 e2^0', 'e1^0 e2^-0', 'e1^0 e2^1']
+D-chiralL  pair b V=D_A1_A1_A2       : up ['e1^-0 e2^-0', 'e1^-0 e2^-0', 'e1^1 e2^-0']
+D-chiralL  pair b V=D_A1_A2_A2       : up ['e1^0 e2^-0', 'e1^1 e2^0', 'e1^1 e2^-0']
+D-chiralL  pair b V=D_A1_C111_C111A2 : up ['e1^-0 e2^-0', 'e1^-0 e2^3', 'e1^1 e2^3']
+D-chiralL  pair b V=D_A1_A2_C111     : up ['e1^-0 e2^0', 'e1^1 e2^-0', 'e1^-0 e2^3']
+D-chiralL  pair b V=D_A1_A1_C111     : up ['e1^-0 e2^0', 'e1^0 e2^0', 'e1^0 e2^3']
+
+=== commutator check at a generic grid point (e1=e2=0.05), draw 0 ===
+pair a V=P: ||[Hu,Hd]||/(|Hu||Hd|) = 1.60e-16; up singular values [0.985 0.308 0.294]
+pair a V=S: ||[Hu,Hd]||/(|Hu||Hd|) = 0.00e+00; up singular values [0.706 0.706 0.706]
+pair b V=P: ||[Hu,Hd]||/(|Hu||Hd|) = 2.11e-16; up singular values [1.53  1.455 1.203]
+pair b V=S: ||[Hu,Hd]||/(|Hu||Hd|) = 8.50e-22; up singular values [1.192 1.191 1.191]
+
+=== control: 300 random spectra (R1 generator) ===
+primary    random PASS-criterion rate 0.000; best-of-3-draws within x3 0.000, x10 0.000; quantiles 10/50/90 of best [ 1056130.6  6518169.1 41064597.9]
+     MZ: real best-of-3 x14314610.00; random fraction at least as good 0.700
+     GUT: real best-of-3 x14314610.00; random fraction at least as good 0.700
+     MIX: real best-of-3 x14314610.00; random fraction at least as good 0.700
+chiralL-PS random PASS-criterion rate 0.000; best-of-3-draws within x3 0.000, x10 0.000; quantiles 10/50/90 of best [1.197e+13 1.094e+14 4.897e+14]
+     MZ: real best-of-3 x47130982376690.75; random fraction at least as good 0.303
+     GUT: real best-of-3 x47130982376690.75; random fraction at least as good 0.303
+     MIX: real best-of-3 x47130982376690.75; random fraction at least as good 0.303
+D-blind    random PASS-criterion rate 0.000; best-of-3-draws within x3 0.000, x10 0.010; quantiles 10/50/90 of best [ 23.9  86.8 313.2]
+     MZ: real best-of-3 x53.84; random fraction at least as good 0.357
+     GUT: real best-of-3 x57.49; random fraction at least as good 0.370
+     MIX: real best-of-3 x41.40; random fraction at least as good 0.267
+D-chiralL  random PASS-criterion rate 0.017; best-of-3-draws within x3 0.030, x10 0.467; quantiles 10/50/90 of best [ 4.3 11.  31. ]
+     MZ: real best-of-3 x4.39; random fraction at least as good 0.110
+     GUT: real best-of-3 x4.69; random fraction at least as good 0.127
+     MIX: real best-of-3 x3.69; random fraction at least as good 0.053
+
+=== readings (primary arm) ===
+MZ: best per draw [1.431e+07 6.030e+07 1.861e+08 2.789e+07 2.672e+07]; random pass rate 0.000 -> 2AMP-FAIL
+GUT: best per draw [1.431e+07 6.030e+07 1.861e+08 2.789e+07 2.672e+07]; random pass rate 0.000 -> 2AMP-FAIL
+MIX: best per draw [1.431e+07 6.030e+07 1.861e+08 2.789e+07 2.672e+07]; random pass rate 0.000 -> 2AMP-FAIL
+done t=11s
+watchdog peak RSS 237888 KB

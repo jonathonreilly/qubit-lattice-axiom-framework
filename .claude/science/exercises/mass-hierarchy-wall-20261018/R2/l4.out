@@ -1,0 +1,6 @@
+L_Q= 4 L_u=8 L_d=4: median |Vus|=0.100 |Vcb|=0.267 |Vub|=0.0234  median Vcb/Vus=2.39  m_s/m_b=0.074 m_d/m_s=0.009
+L_Q= 8 L_u=8 L_d=4: median |Vus|=0.015 |Vcb|=0.096 |Vub|=0.0012  median Vcb/Vus=6.65  m_s/m_b=0.026 m_d/m_s=0.001
+L_Q=12 L_u=4 L_d=2: median |Vus|=0.002 |Vcb|=0.029 |Vub|=0.0000  median Vcb/Vus=18.12  m_s/m_b=0.015 m_d/m_s=0.000
+L_Q=16 L_u=2 L_d=2: median |Vus|=0.000 |Vcb|=0.009 |Vub|=0.0000  median Vcb/Vus=48.59  m_s/m_b=0.006 m_d/m_s=0.000
+observed: |Vus|=0.225 |Vcb|=0.041 |Vub|=0.0037 Vcb/Vus=0.18; m_s/m_b~0.019 m_d/m_s~0.053
+watchdog peak RSS 32432 KB

@@ -1,0 +1,8 @@
+alpha_s(v) = 0.10330; exponents 48, prefactors 17, distinct values 816
+P(random target in [1e-4,1] matched within 1.3%) = 0.931
+P(random target in [1e-4,1] matched within 3.0%) = 0.991
+P(random target in [1e-4,1] matched within 3.3%) = 0.994
+P(random target in [1e-4,1] matched within 18.6%) = 1.000
+main readings (comparators): alpha/2 = 0.05165 vs m_d/m_s 0.0500; sqrt(alpha/2) = 0.2273 vs |Vus| 0.2243; alpha/sqrt6 = 0.04217 vs |Vcb| 0.0410
+small grammar (42 values: half-integer powers, 7 prefactors): P(match within 3.3%) = 0.265, within 1.3% = 0.117
+watchdog peak RSS 15168 KB

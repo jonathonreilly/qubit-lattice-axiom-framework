@@ -1,3 +1,5 @@
+import os
+for _v in ("OMP_NUM_THREADS","OPENBLAS_NUM_THREADS","MKL_NUM_THREADS"): os.environ.setdefault(_v,"1")
 # B18 shared definitions. Builds the supplied corner model via the campaign exploration
 # library (scratchpad qca/walklib.py -> c20/diraclib.py -> corner_psg.py, bloch.py; L=4 torus,
 # translation-invariant gauge). Not modified; exec'd read-only.

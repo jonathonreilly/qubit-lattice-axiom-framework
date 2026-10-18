@@ -261,7 +261,11 @@ The ladder does unify the lanes, but not by deriving everything from the finest 
 **The closure route extends across spins and acts as a selection rule (campaign blocks B15–B17).**
 - **Spin ½ (B15, independently checked).** A naive lattice Weyl/Dirac field closes against the same constraints only on the scalar's cone, v² = K/(4α). Hermitian Clifford generators square to +1, which gives v² > 0. So, given K, α > 0, the Lorentzian sign follows without a positivity premise on the matter. All eight naive doublers share the cone.
 - **Exact lattice closure fails.** No linear relabelling of any range closes the fermion bracket. The obstruction is O(a²) at endpoint-mean timing and O(a) otherwise.
-- **Spin 1 (B16, check in progress).** A lattice Maxwell field closes on the same cone, independently of its coupling. This needs one-sided lapse timing, and holds for the unit-translation normalisation of its relabelling generator.
+- **Spin 1 (B16, independently checked).**
+  - A lattice Maxwell field closes on the same cone, independently of g.
+  - Among translation-invariant timings this needs one of eight one-sided timings. Reflection-symmetric alternatives break unit translations and appear to fail elsewhere.
+  - The relabelling normalisation that sets the cone is not free: {G, G} closure forces every sector's generator to act as the same unit Lie derivative. So the common cone is derived, given that premise. This also holds for the scalar and the fermion.
+  - The one-sided timing forces an O(a) lattice obstruction.
 - **Prior art.** In the continuum this is the known Teitelboim / Hojman–Kuchař–Teitelboim / Schwinger universality. What is new is its exact lattice realisation and the explicit obstructions.
 - **Selection rule (B17, independently checked).**
   - Closure needs every low-energy species to carry the gravity sector's isotropic cone metric. Lapse rescalings, density improvements, anisotropic relabellings and coordinate changes cannot evade this.

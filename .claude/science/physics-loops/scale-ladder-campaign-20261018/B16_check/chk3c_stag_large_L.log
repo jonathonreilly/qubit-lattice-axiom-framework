@@ -2,3 +2,11 @@
   STAG L= 24  B/Lead=1.043572  D=2.78e-17
   STAG L= 32  B/Lead=1.058932  D=4.86e-17
   STAG L= 40  B/Lead=1.066076  D=0.00e+00
+  STAG L= 48  B/Lead=1.069966  D=4.08e-17
+  STAG L= 56  B/Lead=1.072315  D=2.78e-17
+  fit B/Lead = poly(1/L) deg 1: coeffs (highest power first) [-1.6193  1.1056]; extrapolated L->inf value 1.1056
+  fit B/Lead = poly(1/L) deg 2: coeffs (highest power first) [-19.5799  -0.0414   1.0793]; extrapolated L->inf value 1.0793
+
+real	10m24.127s
+user	9m32.301s
+sys	0m31.068s

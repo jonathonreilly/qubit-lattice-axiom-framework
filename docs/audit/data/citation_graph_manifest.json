@@ -1,6 +1,6 @@
 {
- "edge_count": 16253,
- "node_count": 7258,
+ "edge_count": 16254,
+ "node_count": 7259,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3939,6 +3939,10 @@
    "out_degree": 1
   },
   "common_product_resonant_launch_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "bdce3b6d97aa",
+   "out_degree": 1
+  },
+  "common_product_resonant_router_bounded_theorem_note_2026-10-18": {
    "deps_hash": "bdce3b6d97aa",
    "out_degree": 1
   },

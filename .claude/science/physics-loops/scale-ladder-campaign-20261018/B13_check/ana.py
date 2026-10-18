@@ -69,11 +69,12 @@ def fw_chi(d, P=0, tmin=8.0):
 runs = [load(f) for f in sorted(glob.glob("results/*.npz"))]
 out = {"fw": [], "tw": []}
 print("FW runs (eta=0):  L V N init : E/plaq (plain) | E/plaq (UNR P=100) | chi_FW (plain) | chi_FW (UNR P=100) | N/ESS")
-for d in sorted([r for r in runs if r["eta"] == 0], key=lambda r: (r["L"], r["V"], r["init"], r["N"])):
+for d in sorted([r for r in runs if r["eta"] == 0], key=lambda r: (r["L"], r["V"], r["init"], r["dt"], r["N"])):
     e0 = energy(d); e1 = energy(d, P=100)
     c0 = fw_chi(d); c1 = fw_chi(d, P=100)
     npl = d["np"]
-    print(f"  L={d['L']} V={d['V']:+.2f} N={d['N']:5d} {d['init']:6s}: {e0[0]/npl:.6f}({e0[1]/npl*1e6:.0f}e-6) | {e1[0]/npl:.6f}({e1[1]/npl*1e6:.0f}e-6) | "
+    tm = [fw_chi(d, tmin=t)[0] for t in (4.0, 12.0, 16.0)]
+    print(f"  L={d['L']} V={d['V']:+.2f} N={d['N']:5d} {d['init']:6s} dt={d['dt']} tmin4/12/16={tm[0]:.3f}/{tm[1]:.3f}/{tm[2]:.3f}: {e0[0]/npl:.6f}({e0[1]/npl*1e6:.0f}e-6) | {e1[0]/npl:.6f}({e1[1]/npl*1e6:.0f}e-6) | "
           f"{c0[0]:.4f}({c0[1]:.4f}) | {c1[0]:.4f}({c1[1]:.4f}) | {d['IESS'].mean():.2f}  [{float(d['secs']):.0f}s]")
     out["fw"].append(dict(L=d["L"], V=d["V"], N=d["N"], init=d["init"], E=e0, E_unr=e1, chi=c0, chi_unr=c1, iess=float(d["IESS"].mean()), np=npl))
 print("Twisted runs: L V N eta : E_mix total, growth")
@@ -82,4 +83,25 @@ for d in sorted([r for r in runs if r["eta"] > 0], key=lambda r: (r["L"], r["V"]
     g = d["ET"] - d["LM"].mean() / d["dt"]
     print(f"  L={d['L']} V={d['V']:+.2f} N={d['N']} eta={d['eta']}: Emix={e0[0]:.4f}({e0[1]:.4f}) growth={g:.4f}")
     out["tw"].append(dict(L=d["L"], V=d["V"], N=d["N"], eta=d["eta"], E=e0, growth=float(g)))
+json.dump(out, open("ana_out.json", "w"), indent=1, default=float)
+
+print("Twisted curvature fits (same N; E(eta)-E(0) = -chi eta^2/2 + d eta^4 ; single-eta estimates -2dE/eta^2):")
+from collections import defaultdict
+grp = defaultdict(dict)
+for r in runs:
+    grp[(r["L"], r["V"], r["N"], r["init"], r["dt"])][r["eta"]] = energy(r)
+for k, g in sorted(grp.items()):
+    if 0.0 not in g or len(g) < 2:
+        continue
+    e0, s0 = g[0.0]
+    etas = sorted(e for e in g if e > 0)
+    singles = [(eta, -2 * (g[eta][0] - e0) / eta ** 2, 2 * np.hypot(g[eta][1], s0) / eta ** 2) for eta in etas]
+    line = f"  L={k[0]} V={k[1]:+.2f} N={k[2]} {k[3]}: " + " ".join(f"eta={a}: {b:.4f}({c:.4f})" for a, b, c in singles)
+    if len(etas) >= 2:
+        x = np.array([0.0] + etas); y = np.array([e0] + [g[e][0] for e in etas]); s = np.array([s0] + [g[e][1] for e in etas])
+        A = np.vstack([np.ones_like(x), -x ** 2 / 2, x ** 4]).T / s[:, None]
+        cov = np.linalg.inv(A.T @ A); p = cov @ A.T @ (y / s)
+        line += f" | quad+quartic fit chi={p[1]:.4f}({np.sqrt(cov[1, 1]):.4f})"
+        out.setdefault("twfit", []).append(dict(L=k[0], V=k[1], N=k[2], chi=float(p[1]), err=float(np.sqrt(cov[1, 1])), singles=singles))
+    print(line)
 json.dump(out, open("ana_out.json", "w"), indent=1, default=float)

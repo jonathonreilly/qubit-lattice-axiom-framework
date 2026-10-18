@@ -71,3 +71,6 @@ Charged hierarchy fixes finite M even>=4, openL even>=6 andlambda→0. Two exact
 
 
 Odd rectangle: supplied H, weak anisotropy, finite 4x6x5 geometry and original longitudinal C remain explicit. Native neutral multiplicity, tunneling, source coefficient and periodic globalground center selected rather than supplied. Open geometry extension maximalcenter conditional. All numerical data exposed development; no empirical calibration/independent test.
+
+
+BulkCOM imports: suppliedH/weakregime, compactcoefficientsector, Fourierdiagnostic, outgoingcontinuation and jointfiniteboxfamily remain explicit. Native momentumkinetic/readout derived. No derivative of C0 remainder assumed. No empirical calibration/test or physicalunitsbridge.

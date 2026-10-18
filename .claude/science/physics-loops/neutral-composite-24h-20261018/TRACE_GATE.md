@@ -107,3 +107,6 @@ Native odd-height plane multiplicity -> row/column hierarchy -> original C matri
 
 
 Joining block: trace_class: negative_route_pruning; source_of_blocker_text: user_goal; reachability_to_target: prunes; artifact_role: theorem. Restored native bonds remove the odd-half neutral low-band transition. No all-feature exclusion. Next: connected bulk mode propagation.
+
+
+Bulk COM: trace_class: upstream_support; source_of_blocker_text: user_goal; reachability_to_target: partially_closes; artifact_role: theorem. Native endpoint motion -> finite-order dispersion -> original Fourier readout; actual finite-time ground response comparison separate. Next: controlled resonance envelope without illegitimate derivative transfer.

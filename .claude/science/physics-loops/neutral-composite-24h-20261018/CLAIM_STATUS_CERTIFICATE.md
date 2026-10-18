@@ -110,3 +110,6 @@ Odd rectangle actual_current_surface_status: bounded-support; proposal_allowed: 
 
 
 Joining actual_current_surface_status: bounded-support; proposal_allowed: false; bare_retained_allowed: false; review_loop_disposition: pass. Exact finite-band selection conditional on supplied nativeH/regime, not all-response no-go.
+
+
+BulkCOM actual_current_surface_status: bounded-support; proposal_allowed: false; bare_retained_allowed: false; review_loop_disposition: pass. Fixedorder pole/readout and actual smoothwindow comparison kept distinct; no fullHpole orballisticvelocity.

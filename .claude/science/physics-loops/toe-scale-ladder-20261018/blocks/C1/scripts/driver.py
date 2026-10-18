@@ -103,7 +103,14 @@ class Sim:
         qmc.seed_rng(seed)
         if init is None:
             init = lat.canonical_rot((seed - 1) % 3)  # seed 1,4,..: canonical; 2,5,..: rotated once; 3,6,..: twice
-            if seed >= 11:
+            if seed >= 100:
+                # unit electric winding sector: flip the directed x-line (y=0, z=0) of the canonical state
+                init = lat.canonical().copy()
+                for x in range(L):
+                    l = 3 * lat.vid(np.array([x, 0, 0])) + 0
+                    init[l] = -init[l]
+                assert np.all(lat.div(init) == 0)
+            if seed >= 11 and seed % 100 >= 11:
                 # 'RK-typical' start: symmetric random walk on the flip graph (uniform stationary law),
                 # 200 attempted flips per plaquette from the canonical state
                 rs = np.random.default_rng(1000 + seed)

@@ -227,3 +227,8 @@ Status: bounded-support; trace: negative_route_pruning; proposal_allowed: false.
 ## Native pair collision
 Native far charged-pair collision derived through order10: exact shortest-graph and independentFeshbach checks give U40/t=-8/17,U41/t=-4/17,U32/t=30305/161109; 37-siteexcludedcore,20boundarypotentials. Coercivity9/17 excludesfar-channelthresholdresonance. DerivedfiniteintegralB=-.1508561092379226 andscale.150211079390 independentlychecked45digits. Matchedfinitecollisionk=lambda1/4,T=k^-3,R~lambda^-1 yieldsnormsignal4pi/log(1/lambda), errorsalgebraicallysmaller; differentiatedGreen/regularcomplementargumentindependentlyPASS. Finitekpacketcontrolsnotasymptotic(.5-1.1phaseerrors), preservedhonestly. NofixedlambdaS-matrix, empiricalforceorrelativisticclaim.
 Status: conditional-support; trace: upstream_support; proposal_allowed: false.
+
+
+## Character-independent collision
+Character-independent neutral collision: exact flat flip code distance R makes fixed-support invariant coefficients identical in every compatible X/Y character. Same native finite-time collision follows for matched packets; no exact physical momentum assigned to generic characters. Full Gibbs extension at beta g=10log(1/lambda), R~lambda^-1, M20 has trace error O(lambda^8)+O(lambda^7 sqrt(log)), conditional on global normal-form bounds and the same CPTP protocol. Independent algebra, final proof and thermal checks PASS. Chosen X/Y character retired only for invariant collision; temperature, preparation, H, geometry and empirical identification remain.
+Status: conditional-support; trace: upstream_support; reachability: supports; proposal_allowed: false. No audit verdict. Proof: native/CHARACTER_INDEPENDENT_COLLISION_PROOF.md; runner: scripts/native_character_independence.py.

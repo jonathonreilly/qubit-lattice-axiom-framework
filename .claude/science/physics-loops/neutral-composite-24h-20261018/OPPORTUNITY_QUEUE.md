@@ -27,3 +27,8 @@ Ground-window and neutral static response blocks published; native charged hiera
 2. Uniform globalgroundcharacter selection: relative winding-history bounds rather than absolute remainders; high premise-retirement value, hard analytic gate.
 3. Remove finite slab geometry and recover longitudinal propagation; existing growing-height darkness and compact-feature bounds must be respected.
 4. Full mobile heavy-plus-neutral scattering with recoil; pinned source results alone do not establish a native rate.
+
+
+## Character-independent collision
+Character-independent neutral collision: exact flat flip code distance R makes fixed-support invariant coefficients identical in every compatible X/Y character. Same native finite-time collision follows for matched packets; no exact physical momentum assigned to generic characters. Full Gibbs extension at beta g=10log(1/lambda), R~lambda^-1, M20 has trace error O(lambda^8)+O(lambda^7 sqrt(log)), conditional on global normal-form bounds and the same CPTP protocol. Independent algebra, final proof and thermal checks PASS. Chosen X/Y character retired only for invariant collision; temperature, preparation, H, geometry and empirical identification remain.
+Status: conditional-support; trace: upstream_support; reachability: supports; proposal_allowed: false. No audit verdict. Proof: native/CHARACTER_INDEPENDENT_COLLISION_PROOF.md; runner: scripts/native_character_independence.py.

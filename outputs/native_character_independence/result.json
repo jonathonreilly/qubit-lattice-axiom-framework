@@ -1,0 +1,30 @@
+{
+  "status": "conditional-support",
+  "scope": "Invariant matched neutral collision does not require chosen X/Y character; low-energy preparation and positive Z planes remain",
+  "control": {
+    "rows": [
+      {
+        "R": 4,
+        "dimension": 128,
+        "minimum_flat_flip": 4,
+        "checks": 120
+      },
+      {
+        "R": 6,
+        "dimension": 2048,
+        "minimum_flat_flip": 6,
+        "checks": 120
+      },
+      {
+        "R": 8,
+        "dimension": 32768,
+        "minimum_flat_flip": 8,
+        "checks": 120
+      }
+    ],
+    "direct_orbit_checks": 3072,
+    "noninvariant_Z_character_mean": 0.0,
+    "noninvariant_Z_classical_flat": 1,
+    "scope": "Exact code algebra; arbitrary local noninvariant readouts are not state independent"
+  }
+}

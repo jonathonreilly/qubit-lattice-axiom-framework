@@ -88,11 +88,11 @@ for t in range(160):
                 elif abs(ov) < 1e-6: g32 += 1
                 continue
             if m != 2: continue
-            dirs, sp = fd_speeds(w, k0, E, h=1e-7, rng=rng)
+            dirs, sp = fd_speeds(w, k0, E, h=2e-8, rng=rng)
             pred = abs(ns) * np.sqrt(2) / 3
             for d, (a, b) in zip(dirs, sp):
                 # dispersion E +- v|q| with no tilt: a = (-vh, +vh)
-                worst = max(worst, abs((a[1] - a[0]) / 2e-7 - pred), abs((b[1] - b[0]) / 2e-7 - pred), abs((a.sum() / 2) / 1e-7))
+                worst = max(worst, abs((a[1] - a[0]) / 4e-8 - pred), abs((b[1] - b[0]) / 4e-8 - pred), abs((a.sum() / 2) / 2e-8))
             nd += 1
             if ns != 0 and nflux < 40:
                 e, V = np.linalg.eig(W0); Vd = V[:, np.abs(wrap(np.angle(e) - E)) < 1e-6]; Q, _ = np.linalg.qr(Vd)
@@ -101,7 +101,7 @@ for t in range(160):
                 # convention: lower-band Berry flux = -sign(det M) (fixed by the control below)
                 chi_ok &= (round(fl) == -int(np.sign(ns)) * eps); nflux += 1
 check("L1 (finite differences, 29 directions, general non-commuting on-site letters): every exactly 2-fold +-k* level has dispersion E +- |n_S| (sqrt2/3)|q|, untilted",
-      nd > 60 and worst < 1e-4, f"{nd} doublets, worst deviation {worst:.1e} (FD step 1e-7; first run with 1e-5 failed by O(h) curvature near close neighbour levels)")
+      nd > 60 and worst < 5e-5, f"{nd} doublets, worst deviation {worst:.1e} (FD step 2e-8; second run at 1e-7 gave 1.0e-4; first run with 1e-5 failed by O(h) curvature near close neighbour levels)")
 # convention control for the flux sign: a single isotropic Weyl h = +sigma.q (det M = +1)
 def weyl_flux(sgn):
     th = np.linspace(0, np.pi, 15); ph = np.linspace(0, 2 * np.pi, 28, endpoint=False); U = np.zeros((15, 28, 2), complex)

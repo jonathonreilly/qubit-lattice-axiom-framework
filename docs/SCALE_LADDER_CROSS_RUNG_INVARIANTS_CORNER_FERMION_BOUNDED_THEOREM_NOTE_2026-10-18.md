@@ -291,14 +291,15 @@ The ladder does unify the lanes, but not by deriving everything from the finest 
   - For the eight-node step, an exhaustive spectral test and the velocity-determinant invariant exclude every such map: v*³ = 0.1048 against v_ax v_tr² = 0.0841.
   - Words in S² do have exact tastes, which make their Weyl copies isotropic at √2/3 per S. But they carry uniaxial nodes at the same quasi-energy, at (π/4)-type points, or nodal lines.
   - So no step found so far passes the closure selection rule.
-- **Wider search and lemmas (B20, check in progress).**
+- **Wider search and lemmas (B20, independently checked).**
   - Of 69,894 parameter-free (word, node quasi-energy) pairs with up to six letters, none reaches its node quasi-energy only at isotropic cones of one speed. Each has an explicit failure witness.
   - Exact lemmas for this word class:
     - every spin-½ doublet at ±k* has speed |n_S|·√2/3, where n_S is the net power of the diagonal shift;
     - the 3D winding vanishes for every word, so with the Floquet Nielsen–Ninomiya theorem the net chirality at any node quasi-energy is zero;
     - isotropy is symmetry-forced only at momenta whose little group contains T. The cube doublers and the X- and M-type points have only D4.
+    - a 4-fold level at ±k* made of both spin-½ doublets is an exact isotropic Dirac point: two cones of one speed and opposite chirality, so the chirality argument does not exclude it. Screening such levels in two of the four families found none passing; the other two families are not yet screened.
   - The observed blocking pattern is a uniaxial doublet pinned at a D4 point. Moving it off the node quasi-energy with continuous phases opens Fermi pockets instead.
-  - This is a negative search, not a no-go.
+  - This is a negative search over the tested palettes, not a no-go.
 
 **The information-minimal target.** One local step rule on the base grid with no continuous parameters, from which every field is built. Then:
 - each speed is a pure number fixed by the grid geometry (item 6);

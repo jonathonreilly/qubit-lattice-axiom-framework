@@ -1,0 +1,21 @@
+### What the campaign established (summary)
+
+Labels: "checked" means a fresh-context agent of the same model family re-derived the load-bearing step with its own code: a different code path, not a different model lineage. "Proved here" means proved in this note and not yet checked. The lane theorems live in the companion lane notes; this list only points to them.
+
+1. **Lattice data reaches the top rung (this note; exact on L = 4, plus representation arguments).** The PSG fixes the valleys ±k* and the spin-½ class for every symmetric one-fermion Hamiltonian. Isotropy holds to (a/w)², and O × I protects the Dirac quartet. At the eight cube points every level is even: ±k* have little group O, so cones there are isotropic; the two 3-orbits have little group D4, which allows uniaxial cones.
+2. **Filling (B7 and C20, checked).** Odd filling is forced gapless for free fermions, and a pocket-free state at odd filling touches μ at all eight points. With full translations a many-body obstruction holds conditionally. In the doubled-cell class a symmetric interacting insulator exists, so the quartet protection is free-fermion only. In mean-field RPA the chiral term beats the Dirac mass for T ≲ 0.03.
+3. **Parameter-free steps (item 6).** The diagonal-shift step has isotropic spin-½ Weyl nodes at ±k*, with speed √2/3. It also has six uniaxial doublers and a mirror eight-node set at −π/2. The doubling corollary (proved here) says that a gapped symmetric step cannot reach a k* Weyl doublet's quasi-energy only at ±k*.
+4. **One cone from constraint closure (B14–B16, B19, B21; checked; supplied matter and gravity clauses; leading order).** A scalar, a naive Weyl field and a lattice Maxwell field close against the 09-24 curvature member only on one common cone, with the Lorentzian sign (given K, α > 0). Invariantly that cone is the graviton TT cone K2/(4α); it reads K/(4α) only in block 62's normalisation. Beyond leading order the lattice relabellings do not close: O(a²) for the scalar and the endpoint-mean fermion, O(a) for one-sided Maxwell. Newton's constant is not fixed.
+5. **A selection rule on steps (B17, B18 and B22 checked; B20 check in progress).** Closure rejects anisotropic cones, so the corner step's uniaxial doublers fail. This is conditional on the step coupling to a lapse. The generator lapse (B22) gives that coupling only by a choice, and it needs a branch cut in a quasi-energy gap, which the gapless corner step lacks. No uniform taste maps the doublers to ±k* (B18). No searched word passes: 0 of 69,894 Weyl pairs (B20, unchecked).
+6. **Other lanes (checked; companion notes).**
+   - **Formation.** iid-priority formation with state-independent rates is a finitary factor of iid noise: an empty start gives no long-range order.
+   - **Record frequencies.** Spatial Record frequencies converge, a partial discharge.
+   - **Graviton kernels.** They have one TT cone, and closure selects DeWitt. The induced bubble needs an underived seagull, so the induced 1/G is not fixed.
+   - **Λ ratio.** Λ_HK/Λ_W = 1.819 for SU(3) at one loop.
+   - **Record clock.** The hidden-clock hypothesis is refuted.
+   - **Ring model.** χ ≈ 0.23–0.25 for 0.5 ≤ V ≤ 1; nothing is claimed for V ≤ 0.
+7. **Net reading.**
+   - **What the ladder carries.** It carries classes, valley positions and multiplicity structure exactly.
+   - **The common cone.** The only common-cone mechanism found with a derivation is constraint closure. It is conditional and leading-order, and it ties every matter cone to the graviton's.
+   - **The information-minimal target.** One parameter-free step is currently blocked by that rule: no step found passes.
+   - **Open:** exact lattice closure; the normalisation of h; a doubler-free or taste-isotropic step; a derived seagull; and the dynamics of the rung 0 → 1 map.

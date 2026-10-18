@@ -1,0 +1,400 @@
+{
+  "source_hashes": {
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_slow_third.py": "723ccb04d6e610fd993e4dc329e4ba9e03564028c41596478c8f9656128e63fa",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_slow_fourth_diagonal.py": "4624708155ec423cfa8bd1b72b0a4bc6707586645ae63ae11b912f9931765e28",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_slow_fourth_kernel.py": "fa4baf44e681d06350c0863936e6b38ef945dc0bd373ef21fb65a32867361dc4",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_slow_fourth_kernel_y.py": "e517989bc9d60a7c3dfc087cb7510c1f5a33a3c2191eac6b7799b2793bfa08a7",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_slow_fourth_local_independent.py": "99cdba7d514e843be41ec85bb8f92a834ba593637ccd5cd82a707cc21b6c7734"
+  },
+  "controls": {
+    "neutral_slow_third": {
+      "rows": [
+        {
+          "ell": 3,
+          "r": [
+            2,
+            0
+          ],
+          "s": [
+            1,
+            0
+          ],
+          "target_ell": 3,
+          "coefficient": "-1/4",
+          "unfolded": "-1/4",
+          "folded": "0",
+          "paths": 6,
+          "edges": 873
+        },
+        {
+          "ell": 3,
+          "r": [
+            2,
+            0
+          ],
+          "s": [
+            3,
+            0
+          ],
+          "target_ell": 3,
+          "coefficient": "-1/4",
+          "unfolded": "-1/4",
+          "folded": "0",
+          "paths": 6,
+          "edges": 873
+        },
+        {
+          "ell": 3,
+          "r": [
+            2,
+            0
+          ],
+          "s": [
+            2,
+            1
+          ],
+          "target_ell": 3,
+          "coefficient": "-1/4",
+          "unfolded": "-1/4",
+          "folded": "0",
+          "paths": 6,
+          "edges": 873
+        },
+        {
+          "ell": 3,
+          "r": [
+            0,
+            2
+          ],
+          "s": [
+            0,
+            1
+          ],
+          "target_ell": 3,
+          "coefficient": "-1/4",
+          "unfolded": "-1/4",
+          "folded": "0",
+          "paths": 6,
+          "edges": 873
+        },
+        {
+          "ell": 3,
+          "r": [
+            2,
+            0
+          ],
+          "s": [
+            1,
+            0
+          ],
+          "target_ell": 2,
+          "coefficient": "0",
+          "unfolded": "0",
+          "folded": "0",
+          "paths": 0,
+          "edges": 873
+        },
+        {
+          "ell": 3,
+          "r": [
+            2,
+            0
+          ],
+          "s": [
+            1,
+            0
+          ],
+          "target_ell": 1,
+          "coefficient": "0",
+          "unfolded": "0",
+          "folded": "0",
+          "paths": 0,
+          "edges": 873
+        },
+        {
+          "ell": 4,
+          "r": [
+            2,
+            0
+          ],
+          "s": [
+            1,
+            0
+          ],
+          "target_ell": 4,
+          "coefficient": "0",
+          "unfolded": "0",
+          "folded": "0",
+          "paths": 0,
+          "edges": 970
+        },
+        {
+          "ell": 4,
+          "r": [
+            2,
+            0
+          ],
+          "s": [
+            3,
+            0
+          ],
+          "target_ell": 4,
+          "coefficient": "0",
+          "unfolded": "0",
+          "folded": "0",
+          "paths": 0,
+          "edges": 970
+        },
+        {
+          "ell": 3,
+          "r": [
+            2,
+            0
+          ],
+          "s": [
+            2,
+            0
+          ],
+          "target_ell": 4,
+          "coefficient": "0",
+          "unfolded": "0",
+          "folded": "0",
+          "paths": 0,
+          "edges": 970
+        }
+      ],
+      "scope": "Exact canonical K3 local matrix elements, H0 energy8; supplied uniform reference"
+    },
+    "neutral_slow_fourth_diagonal": [
+      {
+        "ell": 3,
+        "edges": 522,
+        "native": "-2423/768",
+        "vacuum": "-2827/768",
+        "excess": "101/192",
+        "details": {
+          "unfolded": "-516173/768",
+          "folded": "85625/128",
+          "states": 134934
+        },
+        "vacuum_details": {
+          "unfolded": "-411553/768",
+          "folded": "68121/128",
+          "states": 134902
+        },
+        "elapsed": 0.3795759677886963
+      },
+      {
+        "ell": 4,
+        "edges": 580,
+        "native": "-673/192",
+        "vacuum": "-133/32",
+        "excess": "125/192",
+        "details": {
+          "unfolded": "-155863/192",
+          "folded": "25865/32",
+          "states": 166743
+        },
+        "vacuum_details": {
+          "unfolded": "-10579/16",
+          "folded": "21025/32",
+          "states": 166711
+        },
+        "elapsed": 0.42697882652282715
+      },
+      {
+        "ell": 5,
+        "edges": 638,
+        "native": "-987/256",
+        "vacuum": "-3557/768",
+        "excess": "149/192",
+        "details": {
+          "unfolded": "-246941/256",
+          "folded": "122977/128",
+          "states": 201916
+        },
+        "vacuum_details": {
+          "unfolded": "-614123/768",
+          "folded": "101761/128",
+          "states": 201884
+        },
+        "elapsed": 0.6016802787780762
+      },
+      {
+        "ell": 6,
+        "edges": 696,
+        "native": "-1615/384",
+        "vacuum": "-1961/384",
+        "excess": "173/192",
+        "details": {
+          "unfolded": "-434143/384",
+          "folded": "9011/8",
+          "states": 240453
+        },
+        "vacuum_details": {
+          "unfolded": "-365273/384",
+          "folded": "7569/8",
+          "states": 240421
+        },
+        "elapsed": 0.8710019588470459
+      },
+      {
+        "ell": 8,
+        "edges": 812,
+        "native": "-157/32",
+        "vacuum": "-1163/192",
+        "excess": "221/192",
+        "details": {
+          "unfolded": "-24031/16",
+          "folded": "47905/32",
+          "states": 327619
+        },
+        "vacuum_details": {
+          "unfolded": "-248417/192",
+          "folded": "41209/32",
+          "states": 327587
+        },
+        "elapsed": 1.342081069946289
+      }
+    ],
+    "neutral_slow_fourth_kernel": [
+      {
+        "ell": 5,
+        "target": [
+          0,
+          6
+        ],
+        "coefficient": "19/64",
+        "unfolded": "-1279/64",
+        "folded": "649/32"
+      },
+      {
+        "ell": 5,
+        "target": [
+          0,
+          7
+        ],
+        "coefficient": "-13/256",
+        "unfolded": "-29/256",
+        "folded": "1/16"
+      },
+      {
+        "ell": 5,
+        "target": [
+          1,
+          6
+        ],
+        "coefficient": "0",
+        "unfolded": "-1/8",
+        "folded": "1/8"
+      },
+      {
+        "ell": 5,
+        "target": [
+          -1,
+          6
+        ],
+        "coefficient": "0",
+        "unfolded": "-1/8",
+        "folded": "1/8"
+      },
+      {
+        "ell": 6,
+        "target": [
+          0,
+          7
+        ],
+        "coefficient": "19/64",
+        "unfolded": "-683/32",
+        "folded": "1385/64"
+      },
+      {
+        "ell": 6,
+        "target": [
+          0,
+          8
+        ],
+        "coefficient": "-13/256",
+        "unfolded": "-29/256",
+        "folded": "1/16"
+      },
+      {
+        "ell": 6,
+        "target": [
+          1,
+          7
+        ],
+        "coefficient": "0",
+        "unfolded": "-1/8",
+        "folded": "1/8"
+      },
+      {
+        "ell": 6,
+        "target": [
+          -1,
+          7
+        ],
+        "coefficient": "0",
+        "unfolded": "-1/8",
+        "folded": "1/8"
+      }
+    ],
+    "neutral_slow_fourth_kernel_y": [
+      {
+        "ell": 5,
+        "target": [
+          0,
+          6
+        ],
+        "coefficient": "-19/64",
+        "unfolded": "1279/64",
+        "folded": "-649/32"
+      },
+      {
+        "ell": 5,
+        "target": [
+          0,
+          7
+        ],
+        "coefficient": "-13/256",
+        "unfolded": "-29/256",
+        "folded": "1/16"
+      },
+      {
+        "ell": 5,
+        "target": [
+          1,
+          6
+        ],
+        "coefficient": "0",
+        "unfolded": "-1/8",
+        "folded": "1/8"
+      },
+      {
+        "ell": 5,
+        "target": [
+          -1,
+          6
+        ],
+        "coefficient": "0",
+        "unfolded": "-1/8",
+        "folded": "1/8"
+      }
+    ],
+    "neutral_slow_fourth_local_independent": [
+      {
+        "cut": 4,
+        "coefficient": "19/64",
+        "direct": "-315/32",
+        "fold": "649/64"
+      },
+      {
+        "cut": 5,
+        "coefficient": "-13/256",
+        "direct": "-29/256",
+        "fold": "1/16"
+      }
+    ]
+  },
+  "scope": "Exact finite-order native coefficients with local all-length proofs; native lifetime and physical scalar remain open"
+}

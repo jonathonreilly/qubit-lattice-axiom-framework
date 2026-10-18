@@ -46,3 +46,12 @@ reachability_to_target: partially_closes
 artifact_role: theorem
 next_trace_action: native omitted-order and growing-length control
 Native K2 vertices -> two-dimensional slow host -> original-source induced readout -> confined fast-channel strip bound -> explicit projected-model resonance persistence. Does not close physical scalar or native-pole blocker.
+
+## Slow native-control block
+trace_class: upstream_support
+reachability_to_target: partially_closes
+target_blocker_text: "derive the scalar mode and its coupling without adding a new interaction"
+source_of_blocker_text: user_goal
+artifact_role: theorem
+next_trace_action: corrected fast resolvent and true normal-form remainder
+Native grading/support -> K3boundary -> full long-rowK4 -> volume-independent restricted fixed-coefficient bound. No native pole or physical scalar closure.

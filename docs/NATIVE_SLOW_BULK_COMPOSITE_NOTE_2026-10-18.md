@@ -1,5 +1,7 @@
 # Slow bulk composite and its existing-interaction readout
 
+**Primary runner:** `scripts/native_slow_bulk_composite.py`
+
 Status: bounded-support. Native finite-order coefficients and an explicitly
 projected coefficient-model resonance are distinguished below. No native
 infinite-volume pole, cosmological scalar, fermion, gravity bridge or empirical
@@ -249,7 +251,8 @@ not a derivation of a cosmological state or universal matter coupling.
 
 ## Reproduction and review
 
-Run `python scripts/native_slow_bulk_composite.py`. It records source hashes,
+Run the [source-bound runner](../scripts/native_slow_bulk_composite.py) with
+`python scripts/native_slow_bulk_composite.py`. It records source hashes,
 exact path output and explicitly labelled coefficient-model controls.
 The native pack contains focused checks for the axial graph, source, host,
 response, fast K2 block, confined-strip bound and coupled endpoint argument.

@@ -224,3 +224,10 @@ PR9735verifiedOPEN1b12689e3642a4c4d3ba90aed7993f9c4fd661ffandattached. Currentbr
 
 ## 2026-10-18T07:04:51.184720+00:00 root checkpoint
 PR9736 verifiedOPEN5e5dc34182484a03406d7133f0deb6f520c55130; attachment failed chat100identity cap, recordedruntime. Branchcodex/neutral-slow-bulk-composite-20261018. Root slow distance2graph/source and confinedfast-strip proof checked. Coupled explicitmodel pole survives: shiftO(Jz lambda5/log), smallerthanlambda4width; endpointBessellemma independentlychecked. Coupled numericalcontrols lambda.2..02 residual<3.3e-10, width/lambda4 approaches.1136079. Nativehigherorders/state/measurementbridge remainopen. Allownedresearchjobscomplete. Nextpackagecoherentblockthenuniformnativecontrol; fixeddeadlineunchanged.
+
+## 2026-10-18T07:25:13.974193+00:00 root checkpoint
+PR9738verifiedOPENc5bdab101f95b65fdccb2e296c66c3d8554d62d8; attachmentfailed100identitycap. Newbranchcodex/neutral-slow-native-control-20261018. Root nativeK3boundary-1/4percolumnmove andK4all-long-rowdiagell/8+29/192, endhops19/64,-13/256 checked; independentlocalwallcheckPASS. Exactgrading+bitcountannihilatesoddKnE8rowforell>n. Restrictednormbound4(L+n)a0 controlsfinitecoefficientsincludinglengthleakage, notactualSWsectorremainder. Replay18.756166sPASS; finalscopedreviewpending. Noactiverootscientificjobs. Mainphysicalgapstill8Jz; largeinternalextentnotlightmediator. Next correctedfastboundary/lightmode regime; fixeddeadlineunchanged.
+
+
+## 2026-10-18T07:36Z checkpoint
+Native correction scoped review PASS; source-bound replay18.756166s and graph runner linkage verified. Preparing PR. Root exact27-qubit sector reduction produced checked cubic-plaquette response gap3.76356591597, residual2.54e-12, weight58.3365873; nematic low gap1.42323795538, residual4.96e-12. These are finite cubic spectra of suppliedH and probes, not bulk/physical scalar proof. Larger-residual quadrature nodes rejected. Independent response check pending. All scientific jobs complete. Lockexpires08:10:17; no deadline change.

@@ -1,0 +1,42 @@
+[
+  {
+    "ell": 5,
+    "target": [
+      0,
+      6
+    ],
+    "coefficient": "-19/64",
+    "unfolded": "1279/64",
+    "folded": "-649/32"
+  },
+  {
+    "ell": 5,
+    "target": [
+      0,
+      7
+    ],
+    "coefficient": "-13/256",
+    "unfolded": "-29/256",
+    "folded": "1/16"
+  },
+  {
+    "ell": 5,
+    "target": [
+      1,
+      6
+    ],
+    "coefficient": "0",
+    "unfolded": "-1/8",
+    "folded": "1/8"
+  },
+  {
+    "ell": 5,
+    "target": [
+      -1,
+      6
+    ],
+    "coefficient": "0",
+    "unfolded": "-1/8",
+    "folded": "1/8"
+  }
+]

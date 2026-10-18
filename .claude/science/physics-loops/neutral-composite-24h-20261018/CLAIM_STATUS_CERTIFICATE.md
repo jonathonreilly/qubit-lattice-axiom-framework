@@ -55,3 +55,10 @@ proposal_allowed_reason: native higher coefficients, uniform reduction, state an
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 review_loop_disposition: pass
+
+## Slow native-control block
+actual_current_surface_status: bounded-support
+proposal_allowed: false
+bare_retained_allowed: false
+review_loop_disposition: pass
+Exact finite-order local coefficients and restricted norm bound. Infinite-series convergence, actual SW remainder, full corrected outgoing resolvent and physical identification remain open.

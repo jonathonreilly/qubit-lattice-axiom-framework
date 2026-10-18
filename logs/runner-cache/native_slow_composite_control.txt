@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/native_slow_composite_control.py
+runner_sha256: b6875f523420656bc6ca9ba24a5e1efdb42cc96f19ac742c6de8f4889f825cbd
+input_fingerprint_sha256: cded8f553d4a67b25e72e14e6754ab2de13260cf80cca7fcef9ebc7f6c019274
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 18.76
+status: ok
+----- stdout -----
+per_site: unchanged one-qubit directional Hamiltonian
+per_mode: support and grading remove long-feature odd-order mixing
+per_block: K3 boundary and full long-row K4 coefficients checked
+lattice_wide: uniform remainder, corrected fast resolvent and physical bridge open
+
+----- stderr -----
+

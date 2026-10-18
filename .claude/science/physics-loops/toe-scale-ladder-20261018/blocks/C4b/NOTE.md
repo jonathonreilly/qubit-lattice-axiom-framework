@@ -10,7 +10,7 @@ primitive or dynamics clause is adopted.
 The question was: does any one-qubit-per-site, Z^3-translation-invariant (TI) QCA that is
 O-covariant under the **axis** or **full** soldering action transport anything? There is no
 complete answer here. The block gives one exhibit inside the premise and four lemmas. Together
-they cut the open part down to one precise sub-question.
+they cut the open part down to a short list of precise open sub-questions.
 
 1. **Something does propagate inside the premise (exhibit, exact certificate).** Compose the two
    commuting-Pauli-rotation circuits from C4:

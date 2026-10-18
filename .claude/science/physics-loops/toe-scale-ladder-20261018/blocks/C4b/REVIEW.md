@@ -215,3 +215,32 @@ A nonflat W is **sufficient** for T3 but not **necessary**. Restate the open set
 3. (minor) Restrict "no localized excitation moves" (E1, N1(v)) to local-operator gliders.
 4. (cosmetic) Lemma 2(a) wording "m = ±n or SU(2)"; describe the Lemma 4(c) exhibit's component
    count as restricted.
+
+## Correction confirmation
+
+I read the complete corrected NOTE.md, including its "Review dispositions" section.
+
+- **3c (moderate): resolved.** The reduction is now limited to the two-particle sector, and a
+  nonflat pair walk is stated as sufficient, not necessary. The k ≥ 3 clusters and the
+  finite-density / other-vacuum cases are open. These edits appear in Result 4, the Bottom line,
+  Lemma 3 "Scope of the reduction", Answer 3 ("proving none exists would not close") and N2
+  (W1 is now k ≥ 2, and W1' is added).
+- **1' (minor): resolved.** Result 1 and N1(v) now say "no local-operator glider", and they state
+  that excitations above an invariant state are not addressed. W2 in N2 includes them.
+- **3b (minor): resolved.** Lemma 3 and Result 4 now say H_m-covariant: T for the axis action and
+  O for full/SU(2). The anti-vacuum reason is given, and the 3+4+6 orbit structure is noted under T.
+- **Cosmetic: resolved.**
+  - Lemma 2(a) and Result 4 now read "m = ±n or global SU(2)".
+  - The Lemma 4(c) component count is marked as restricted, and the full count (10272) is
+    attributed to the reviewer.
+  - Result 1 now states radius 4n for all n, and validity in both layer orders.
+- **New defects:** none of substance.
+  - One cosmetic leftover remains. The intro sentence "cut the open part down to one precise
+    sub-question" no longer matches the corrected multi-part open set in N2. Suggested wording:
+    "a short list of precise sub-questions".
+  - N7 still opens with "the only obstruction to pair transport is constructing one U(1) QCA".
+    It is in quotes and marked as a steelman, and it concerns pairs only, so it is acceptable.
+- The Review dispositions section reports the evidence accurately: PASS=83 FAIL=0, and the
+  unverified items are listed as author evidence.
+
+**Final verdict: READY.** One optional cosmetic edit remains: the intro sentence above.

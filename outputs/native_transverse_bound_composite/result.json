@@ -246,71 +246,71 @@
     {
       "L": 30,
       "b": 0,
-      "energy": -4.242640686625375,
-      "source_over_lambda": -1.168899165285807e-13,
+      "energy": -4.242640686625384,
+      "source_over_lambda": 1.1690849026704808e-13,
       "analytic_anchor_residual": 3.73762472958858e-05
     },
     {
       "L": 30,
       "b": 0.001,
       "energy": -4.242658364280864,
-      "source_over_lambda": -0.0014999049638940156,
+      "source_over_lambda": -0.001499904963875699,
       "analytic_anchor_residual": 3.73762472958858e-05
     },
     {
       "L": 30,
       "b": 0.005,
-      "energy": -4.243082621684687,
-      "source_over_lambda": -0.007488130945030701,
+      "energy": -4.2430826216846915,
+      "source_over_lambda": -0.007488130945053368,
       "analytic_anchor_residual": 3.73762472958858e-05
     },
     {
       "L": 30,
       "b": 0.01,
-      "energy": -4.244408344652858,
-      "source_over_lambda": -0.014905195672307945,
+      "energy": -4.244408344652844,
+      "source_over_lambda": -0.014905195672343621,
       "analytic_anchor_residual": 3.73762472958858e-05
     },
     {
       "L": 30,
       "b": 0.02,
       "energy": -4.24970981572393,
-      "source_over_lambda": -0.029246225261673014,
+      "source_over_lambda": -0.029246225261627873,
       "analytic_anchor_residual": 3.73762472958858e-05
     },
     {
       "L": 60,
       "b": 0,
-      "energy": -4.242640687119281,
-      "source_over_lambda": -1.6382474820757264e-16,
+      "energy": -4.24264068711929,
+      "source_over_lambda": 2.4221686397048192e-15,
       "analytic_anchor_residual": 1.1406325468716215e-09
     },
     {
       "L": 60,
       "b": 0.001,
-      "energy": -4.242658364778385,
-      "source_over_lambda": -0.0014999050019732828,
+      "energy": -4.242658364778375,
+      "source_over_lambda": -0.0014999050019659237,
       "analytic_anchor_residual": 1.1406325468716215e-09
     },
     {
       "L": 60,
       "b": 0.005,
-      "energy": -4.243082622273409,
-      "source_over_lambda": -0.007488131139646066,
+      "energy": -4.243082622273411,
+      "source_over_lambda": -0.007488131139668494,
       "analytic_anchor_residual": 1.1406325468716215e-09
     },
     {
       "L": 60,
       "b": 0.01,
-      "energy": -4.244408345587885,
-      "source_over_lambda": -0.01490519608004935,
+      "energy": -4.244408345587881,
+      "source_over_lambda": -0.014905196080041948,
       "analytic_anchor_residual": 1.1406325468716215e-09
     },
     {
       "L": 60,
       "b": 0.02,
-      "energy": -4.249709819297759,
-      "source_over_lambda": -0.029246225703761917,
+      "energy": -4.249709819297753,
+      "source_over_lambda": -0.02924622570370261,
       "analytic_anchor_residual": 1.1406325468716215e-09
     }
   ],

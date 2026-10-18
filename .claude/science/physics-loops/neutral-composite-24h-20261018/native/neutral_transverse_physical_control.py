@@ -19,7 +19,7 @@ def entry(bra,ket,Q):
  return N*K[s]*v
 def run_checks():
  rows=[]
- 
+
  for Q in [(0,np.pi,0),(np.pi/2,np.pi/2,2*np.pi/10)]:
   a,b,c=np.cos(np.array(Q)/2)
   tests=[((1,1,1),(0,1,1),-2*a),((0,2,1),(0,1,1),-2*b),((0,1,2),(0,1,1),2*c),((1,0,2),(1,0,1),-2*c)]

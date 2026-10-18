@@ -143,6 +143,7 @@ Results:
   - The 2026-09-13 native-Weyl note (P7/P13) has the joint metric–spinor closure in this repository.
 - **Axial coupling.**
   - Kibble, J. Math. Phys. 2, 212 (1961); Hehl and Datta, J. Math. Phys. 12, 1334 (1971): Dirac fields couple only to the totally antisymmetric (axial) part of torsion. Result 4's term has that algebraic form. Here there is no torsion: the term is the totally antisymmetric part of the Levi-Civita spin connection.
+- **Bibliographic details** above are given from memory and from the campaign checks' attribution; volume and page numbers were not re-verified against the sources.
 - **Campaign attributions not re-verified here.** Ashtekar, Romano and Tate (1989) and Barbero (1995) on triad constraint algebras; Henneaux (1983). They are not used.
 - **Repository.** Block 62 (frame, member, T4); block 65 (the first-order lattice axial term); block 101 (the action); block 120 (the placement and its normalisation); the 09-24 constraint note; the 09-25 one-light-cone notes (block 134 and the exact-lattice note); the 09-13 native-Weyl note; the two companion closure notes of this date.
 - **New here, and narrow.**
@@ -214,6 +215,7 @@ Workers and checkers were all of the same model family as the author. None is in
     - the scope wording for `α = K₂/4`.
   - It recorded the conflict with the spin-½ note's earlier "needs a triad", since corrected in that note.
   - Not independently checked: the null-space decompositions (Result 3.1), the `{C, C}` cone and its `Pχχ̄` sector, the forced `kin_X` and the order-`hχχ̄` structure function (3.5), and the triad route (3.6). They pass the solve audit.
+  - So the walker's cone `v² = a_sK₁/(4α)` (Result 3.4), on which `α = K₂/4` rests, is computed by one engine only. Two other computations agree with it: the scalar analogue `c = λ_sK₁/(4αλ₁)` (B21 check, A.b21chk.T6b) and the lapse-identity route `K₁a_s = 4α` (Result 2; C4 and its check).
 - **Shared code.** C4b's kernel route uses the B21 checker's engine. So for Result 3 the independent second implementation is the C4b checker's position-space engine. The headline `K₂ = a_sK₁` is computed by both, and `a_sλ₁ = λ_f` also by a one-particle operator route.
 
 This runner consolidates the campaign scripts and the check scripts, reused as written. Re-running it is not a further independent check. One consolidation step is new: D4, which inserts the closure solution into the cone and solves the unit-speed condition for `α`. It was not reviewed separately. Its first version compared against the unsubstituted symbol `K₂`, an expectation bug of the consolidation that was fixed before the recorded run.

@@ -356,3 +356,10 @@ PR9782 verified OPEN8805b755540b3889663d93f0162882460bd67c80; attachment cap100 
 
 
 Original-readout threshold response complete: exact root resolvent yields unit bound atom plus logarithmic continuum ds/(log²s+pi²), after native weight normalization. Smooth microscopic spectral measures transfer for delta=lambda^alpha,0<alpha<1/3. Independent math, physical and final scoped review PASS; source-bound replay12.003629sPASS. No finite-lambda isolated pole or observed scalar; energy remains near8J. Next root tests genuinely many-spin whole-column low-energy features and derives their first native winding kinetic coefficient.
+
+
+## 2026-10-18T13:56:43.358372+00:00 whole-column checkpoint
+PR9784 fixed-occupation ladder OPEN4bad3a4f0b613243c0675bac117a413aad77ef4e; PR9785 original-readout threshold OPEN2c210ed56466531268cf6c419d8e312954611785. Attachment cap100 persists. Threshold fullmeasure transfer alpha<1/3 independently checked, replay12.003629sPASS. Root next derived genuinely many-spin whole-column light quasimodes for L~lambda^-p,p<4; actual original lowreadout superalgebraically dark and exactly dark at Qz nonzero. First native winding kinetic coefficient gamma_L=Jlambda^L binomial(2L-2,L-1)/8^(L-1) independently checked; fixedL only, not growingL dominance. Exact rational recurrence throughL16 plus fixedL ED replay.884154sPASS. Canonical block under final focused review. Prior compass column tunneling is known; no novelty claim for general mechanism. All exposed development, no observation tests. No numerical jobs active; deadline unchanged.
+
+
+Whole-column block final scoped review PASS. Native many-spin light quasimodes and low-readout bounds separate from fixedL first winding coefficient. Replay.884154sPASS, exact subsets throughL16. Trace upstream_support to original microscopic scalar/coupling request; no retained proposal, no observational identification. Root next derives original readout first winding coefficient from the same native virtual paths, with no added interaction.

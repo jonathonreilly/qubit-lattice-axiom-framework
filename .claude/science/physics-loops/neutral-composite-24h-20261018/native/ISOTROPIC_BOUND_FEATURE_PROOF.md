@@ -1,6 +1,6 @@
 # Native orientation mixing and an isotropic bound-feature pole
 
-Status: conditional-support. This extends the supplied fixed-L10 one-qubit slab result; it does not derive the geometry, global ground character or observed scalar identification. All numerical controls are exposed development.
+Status: conditional-support. This extends the supplied fixed-L10 one-qubit slab result; it does not derive the geometry or observed scalar identification. The later REFLECTION_GROUND_SECTOR_PROOF.md proves existence of a global ground in this sector, without uniqueness. All numerical controls are exposed development.
 
 Dependencies: [EIGHT_FLUX_BOUND_CLUSTER_PROOF.md](EIGHT_FLUX_BOUND_CLUSTER_PROOF.md), [POLYNOMIAL_GRID_NEUTRAL_POLE_PROOF.md](POLYNOMIAL_GRID_NEUTRAL_POLE_PROOF.md). The prior p<2 restriction was sufficient for separating the entire no-wall band. It is unnecessary for the low-energy states of interest.
 
@@ -64,4 +64,4 @@ The resolved-grid quadratic dispersion coefficient is (5/2)t=1.1197700663008921e
 
 neutral_q8_orientation.py performs exact rational path summation. neutral_q8_isotropic_control.py evaluates only the derived two-state matrix at 220-digit precision, retaining finite-lambda deviations: at lambda=.01 the (2,1) direction differs by about 7.4 percent, while at 1e-8 it differs by about 7.8e-14. These are coefficient controls, not full-grid diagonalizations or empirical tests. Actual-grid statements rely on the analytic bounds above.
 
-Independent reports: INDEPENDENT_ALL_POLYNOMIAL_EMBEDDING_CHECK.md and INDEPENDENT_Q8_ORIENTATION_CHECK.md. Uniform global ground-character selection remains open: UNIFORM_GROUND_SELECTION_OPEN.md identifies the missing all-history relative winding bound. A fixed-order remainder cannot resolve that exponentially small selection. Native Hamiltonian, weak anisotropy, fixed height, chosen sector, measurement and units remain premises.
+Independent reports: INDEPENDENT_ALL_POLYNOMIAL_EMBEDDING_CHECK.md and INDEPENDENT_Q8_ORIENTATION_CHECK.md. The all-history relative winding bound in UNIFORM_GROUND_SELECTION_OPEN.md remains unavailable for quantitative character splitting. The later REFLECTION_GROUND_SECTOR_PROOF.md bypasses that bound to prove existence of a global ground in this sector; uniqueness and preparation remain open. Native Hamiltonian, weak anisotropy, fixed height, measurement and units remain premises.

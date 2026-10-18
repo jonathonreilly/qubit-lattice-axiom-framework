@@ -431,3 +431,6 @@ Native Q8 bound cluster complete: perimeter-selected twenty-spin pair, anisotrop
 
 
 Native orientation mixing derived from four winding hops, coefficient607201/144000 in unitsgamma4/(2b)^3, negativeoffdiagonal selectsC4evenlower. GlobalQ-relative positivity removesp<2 artificialwallbandwidth restriction for lowenergywindows, notwholeN0band. Actual lowerpole onR~lambda^-5 hasresolved isotropicquadraticincrement(5/2)Jgamma²/D lambda14q² andoriginalsourceweightlambda36. Independentembedding/orientation/finalPASS; replay.435640sPASS. Allstate/geometrylimits explicit. Nextroot exactreflectionpositivity route toglobalgroundsector existence, avoiding exponentiallysmalltunneling estimates.
+
+
+Exact two-cut reflectionpositivity proves all-positive-plane GLOBALground existence for everyfiniteevenR, positiveJ/lambda. No tiny splitting estimate, newselector or field required. Originalsource preservesplanes, so nativepole can be referencedtoone actualglobalground; uniqueness/preparation notproved. Independentmatrix/parity/finalreviewsPASS; sixEDsigncontrols maxdifference9.24e-14,residual3.36e-12. PrimaryLieb-Schupptraceinequality explicitlyattributed, compasscharacterapplicationderived. Nextroot investigates lightchargedwhole-column matter andnativecoupling, ratherthanassumedexternalheavyprobe.

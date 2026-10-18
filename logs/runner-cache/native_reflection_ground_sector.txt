@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/native_reflection_ground_sector.py
+runner_sha256: 4f5032929db389c73d875a5fe6d1fb667e702233915d96487b3055bb1df29bb4
+input_fingerprint_sha256: 9f8da497104e93fef6ad77c3573679dcea1caf764ae1109a5c73b2763cac7afa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.83
+status: ok
+----- stdout -----
+{"status": "exact-support", "scope": "Analytic finite even-lattice ground existence; small-grid sign controls only, no uniqueness or empirical test", "rows": [{"shape": [2, 2, 2], "lam": 0.2, "sector_energy": -8.31384387633061, "full_energy": -8.31384387633061, "difference": 0.0, "residual": 2.5295479071299878e-15, "plane_expectations": [0.9999999999999996, 0.9999999999999996, 0.9999999999999996, 0.9999999999999994, 0.9999999999999996, 0.9999999999999996]}, {"shape": [2, 2, 2], "lam": 0.7, "sector_energy": -11.256997823576231, "full_energy": -11.256997823576219, "difference": -1.2434497875801753e-14, "residual": 4.999174832970758e-15, "plane_expectations": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]}, {"shape": [2, 2, 2], "lam": 1.0, "sector_energy": -13.856406460551018, "full_energy": -13.856406460551012, "difference": -5.329070518200751e-15, "residual": 4.0785130925166946e-15, "plane_expectations": [0.9999999999999998, 0.9999999999999998, 0.9999999999999999, 0.9999999999999998, 0.9999999999999998, 0.9999999999999998]}, {"shape": [2, 2, 4], "lam": 0.2, "sector_energy": -16.324966393925134, "full_energy": -16.32496639392509, "difference": -4.263256414560601e-14, "residual": 8.650546680735802e-13, "plane_expectations": [1.000000000000001, 1.0000000000000013, 1.0000000000000013, 1.0000000000000013, 1.0000000000000013, 1.0000000000000013, 1.0000000000000013, 1.0000000000000013]}, {"shape": [2, 2, 4], "lam": 0.7, "sector_energy": -20.511688810050607, "full_energy": -20.511688810050586, "difference": -2.1316282072803006e-14, "residual": 1.826341701881566e-13, "plane_expectations": [1.0, 1.0, 1.0000000000000002, 1.0, 1.0, 1.0, 1.0, 1.0]}, {"shape": [2, 2, 4], "lam": 1.0, "sector_energy": -25.52447246877101, "full_energy": -25.5244724687711, "difference": 9.237055564881302e-14, "residual": 3.359649209037322e-12, "plane_expectations": [1.0000000000000004, 1.0000000000000004, 1.0000000000000004, 1.0000000000000004, 1.0000000000000004, 1.0000000000000004, 1.0000000000000004, 1.0000000000000004]}]}
+
+----- stderr -----
+

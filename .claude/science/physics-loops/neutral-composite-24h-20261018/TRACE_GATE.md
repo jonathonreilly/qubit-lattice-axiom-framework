@@ -178,3 +178,6 @@ Q8 block: trace_class upstream_support; source_of_blocker_text user_goal; target
 
 
 Isotropic boundfeature: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem; next_trace_action remove globalgroundsector premise using exactreflection method.
+
+
+Reflection block: trace_class direct_blocker_closure; target_blocker_text "selected plane sector might be above global ground"; source_of_blocker_text handoff; reachability_to_target closes (existence only); artifact_role theorem; next_trace_action derive actualmatter/scalarcoupling and challenge geometry.

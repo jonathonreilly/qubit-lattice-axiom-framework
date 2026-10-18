@@ -130,3 +130,6 @@ Q8 block: no binding potential or scalar coupling supplied; both computed from n
 
 
 Isotropic boundfeature removes the p<2 restriction from lowenergywall embedding and derives orientationselection; fixedheight and globalgroundcharacter were not thereby derived. Finiteorderconstants depend on fixedp; no fixedlambda infinitevolume claim.
+
+
+Reflection block retires the premise that the positive-sector minimum might exceed the global minimum: exactexistence proved. It does not derive uniqueness, preparation, action,geometry, units or empiricalidentification. Establishedmatrixinequality is primaryliteraturemethod, rederivedlocally.

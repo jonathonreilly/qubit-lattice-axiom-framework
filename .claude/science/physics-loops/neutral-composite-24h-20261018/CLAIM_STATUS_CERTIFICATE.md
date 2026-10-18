@@ -178,3 +178,6 @@ Q8 block: actual_current_surface_status conditional-support; trace_class upstrea
 
 
 Isotropic boundfeature: actual_current_surface_status conditional-support; proposal_allowed false; bare_retained_allowed false; audit_required_before_effective_retained true; local review pass. No3D or empiricalscalar claim.
+
+
+Reflection block: actual_current_surface_status exact-support; conditional_surface_status globalgroundexistence for suppliedevencompassH; proposal_allowed false; bare_retained_allowed false; audit_required_before_effective_retained true; localreview pass. Does not establisheverygroundoruniquepreparation.

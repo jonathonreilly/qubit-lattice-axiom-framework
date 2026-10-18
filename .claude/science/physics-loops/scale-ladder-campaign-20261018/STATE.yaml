@@ -29,3 +29,7 @@ blocks:
   B21: "done, checked: K1=K2 is the normalisation premise; invariant cone = graviton TT cone"
   B22: "done, checked: generator lapse reproduces the HKT bracket with each node cone metric; causal-cut lapse does not"
   notes: "spin-1/2 + spin-1 lane note reviewed and in PR #9718 (PASS=65)"
+  B23: "done: 0 of 8,302 Dirac levels pass (unchecked); all 10,174 D+/D- levels in B20 families screened"
+  COROLLARY: "checked: argument correct, wording fixed; eight-node step certified gapless"
+  coherence_review: "done: 58 edits applied to the scale-ladder note; summary block added"
+  B24: "running: taste-enlarged steps"

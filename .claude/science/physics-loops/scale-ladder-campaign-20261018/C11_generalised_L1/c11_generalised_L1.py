@@ -75,8 +75,10 @@ chiG = np.array([np.trace(PG @ g['U']) for g in PROPER]); nG = np.mean(np.abs(ch
 comm = []
 for g in PROPER: comm.append(np.kron(g['U'], g['U']) - np.eye(144))
 sv = np.linalg.svd(np.vstack(comm), compute_uv=False); dcomm = int(np.sum(sv < 1e-9))
-report(abs(nG - 4) < 1e-10 and dcomm == 6,
-       f"8-dim complement has <chi,chi> = {nG:.3f} and full commutant dim = {dcomm} = 1+1+4: complement = 2 x (4-dim irrep G3/2)")
+oG = max(abs(np.mean(np.conj(chiG) * chiP)), abs(np.mean(np.conj(chiG) * chiM)))
+report(abs(nG - 4) < 1e-10 and dcomm == 6 and oG < 1e-12,
+       f"8-dim complement: <chi,chi> = {nG:.3f}, no D+ or D- content (overlap {oG:.1e}), full commutant dim = {dcomm} = 1+1+4; "
+       f"with projective irreps of dims 2,2,4 only, complement = 2 x G3/2, so D+ and D- have multiplicity 1")
 
 # =========================================================================================== 2. T1 triple
 print("== 2. Wigner-Eckart: T1 triples on End(D)")

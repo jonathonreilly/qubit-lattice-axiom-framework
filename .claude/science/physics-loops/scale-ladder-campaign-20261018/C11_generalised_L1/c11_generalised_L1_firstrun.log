@@ -1,0 +1,67 @@
+== 1. little group, projective representation, irreps
+[PASS] all 24 proper rotations fix +k* and -k* (R^T k + pi*lam = k mod 2pi): little group = O
+[PASS] rho(g)=U_R (12x12, real orthogonal) composes up to a sign, with both signs occurring: a genuinely projective rep; {+-U_R} is a 48-element group
+[FAIL] {+-U_R} has exactly one involution (-1): it is 2O, not O x Z2 (involutions found: 13)
+[PASS] D+ and D- (the B26-build doublets {H_on=2, Lambda=-+2sqrt2}) are rho-invariant
+[PASS] D+ and D- irreducible and inequivalent (<chi,chi> = 1.000, 1.000; <chi+,chi-> = 2.4e-17)
+[PASS] A2 (x) D+ = D-: chi_{D-}(g) = chi_A2(g) chi_{D+}(g) for all 24 lifts (lift-sign independent), i.e. A2 (x) E1/2 = E5/2
+[PASS] 8-dim complement has <chi,chi> = 4.000 and full commutant dim = 6 = 1+1+4: complement = 2 x (4-dim irrep G3/2)
+== 2. Wigner-Eckart: T1 triples on End(D)
+[FAIL] D+: the T1-triple space in End(D) is 1-dim; normalised it is a Hermitian, traceless Pauli triple tau_i tau_j = delta_ij + i eps_ijk tau_k (A1/tilt part forced to 0)
+[FAIL] D-: the T1-triple space in End(D) is 1-dim; normalised it is a Hermitian, traceless Pauli triple tau_i tau_j = delta_ij + i eps_ijk tau_k (A1/tilt part forced to 0)
+[PASS] Hom(D+,D-) contains no T1 (dim 0) [so no first-order D+<->D- mixing for an A1 word], and one T1(x)A2 = T2 (dim 1)
+[PASS] End(D+) contains no T2 (dim 0) [consistent: an A2 letter's derivative leaves D+ entirely]
+== 3. letters: covariance, scalar/swap action, v values
+[PASS] all 29 test letters are O-covariant with their declared character (24 rotations, random k)
+[FAIL] each letter preserves (A1) / swaps (A2) D+-, A1 letters are scalars there, and P U^dag dU P = i v tau with v real, at +-k* (worst residual 4.7e-01)
+   letter                v(D+,+k*)   v(D-,+k*)   v(D+,-k*)   v(D-,-k*)
+   S^1                     0.333333   -0.333333    0.333333   -0.333333
+   S^2                     0.666667   -0.666667    0.666667   -0.666667
+   S^-1                   -0.333333    0.333333   -0.333333    0.333333
+   S^-2                   -0.666667    0.666667   -0.666667    0.666667
+   R_L                    -0.000000    0.000000    0.000000    0.000000
+   Rt                     -0.000000   -0.000000    0.000000   -0.000000
+   E+                      0.000000   -0.000000   -0.000000    0.000000
+   E-                      0.000000    0.000000    0.000000   -0.000000
+   exp(i1pi/6 R_L)        -0.000000   -0.000000    0.000000    0.000000
+   exp(i2pi/6 R_L)         0.000000    0.000000    0.000000   -0.000000
+   exp(i3pi/6 R_L)        -0.000000    0.000000   -0.000000    0.000000
+   exp(i5pi/6 R_L)        -0.000000    0.000000   -0.000000    0.000000
+   exp(0.7317i R_L)        0.000000   -0.000000    0.000000    0.000000
+   onsite                  0.000000    0.000000    0.000000    0.000000
+   onsite                  0.000000    0.000000    0.000000    0.000000
+   onsite                  0.000000    0.000000    0.000000    0.000000
+   A0S^-2                 -0.666667    0.666667   -0.666667    0.666667
+   A0S^-1                 -0.333333    0.333333   -0.333333    0.333333
+   A0S^0                   0.000000    0.000000    0.000000    0.000000
+   A0S^1                   0.333333   -0.333333    0.333333   -0.333333
+   A0S^2                   0.666667   -0.666667    0.666667   -0.666667
+   exp(iH)                 0.490541   -0.043137    0.331214    0.031108
+   exp(iH)                -0.079363   -0.103381   -0.290078   -0.066799
+   exp(iH)                 0.719051   -0.326728    0.269117   -0.024157
+   exp(iH)                -0.006261   -0.012834    0.011447   -0.017824
+   exp(iH)                 0.162302   -0.040499    0.125633   -0.055421
+   exp(iH)                 0.313351    0.207224    0.353988   -0.256034
+   A0exp(iH)              -0.268198    0.469902   -0.678480    0.408880
+   A0exp(iH)               0.009910   -0.051240    0.032588   -0.001148
+[FAIL] v_S = +sqrt2/3 on D+ and -sqrt2/3 on D- at both +k* and -k* (tau orientation: tau_x tau_y = +i tau_z) [expected from B20 L1]
+[PASS] v_{S^p} = p v_S for p = 2, -1, -2 (letter-level additivity)
+[PASS] v = 0 for R_L, Rt, E+-, exp(i theta R_L) (theta = pi/6,pi/3,pi/2,5pi/6,0.7317) and random symmetric on-site letters (12 letters)
+[PASS] A2 letters A0 S^a: v^(b) (input doublet b) = a * v_S^(b), i.e. A0 contributes nothing but the label swap
+   generic exp(iH): v(D+,+k*) + v(D-,+k*) = [np.float64(0.4474), np.float64(-0.1827), np.float64(0.3923), np.float64(-0.0191), np.float64(0.1218), np.float64(0.5206), np.float64(0.2017), np.float64(-0.0413)] (nonzero: no +- antisymmetry in general)
+== 4. random words: predicted |sum v| vs actual degenerate perturbation theory
+   260 words, 948 isolated 2-fold D+- levels at +-k* (856 from words with a generic exp(iH) letter); 92 D levels degenerate with another level (not 2-fold, excluded here); 32 with sum v = 0; 251s
+[PASS] every even-A2 word preserves D+ and D- at +-k* and is a scalar there (Schur, all words)
+[FAIL] speed from DPT of the whole word = |sum_j v_j^(b_j)| on all 948 levels (worst |dev| 1.0e+00)
+[PASS] cones isotropic (spread of speed over 24 directions 4.5e-11) and untilted (tilt 2.8e-11)
+[FAIL] signed statement: P W^dag dW P = i (sum v) tau^(a) entrywise (worst 1.5e+00); chirality = sign(sum v) in the fixed tau orientation
+[FAIL] direct diagonalisation of W(k*+1e-4 q) on 120 levels x 3 directions: eigenphase slopes = |sum v| (worst 9.7e-01, O(delta) expected)
+== 5. B26 reproduction: words in S^p and A_a = A0 S^a
+[FAIL] path-sum |sum v| = |n_eff| sqrt2/3 = DPT speed on 0 doublets (B26's sign-flipped n_eff; 0 with |n_eff| != |n_raw|)
+== 6. scope: 4-fold D+ (+) D- levels (tuned with the symmetric on-site letter Z = exp(i alpha P_D+))
+[PASS] P_D+ is an O-symmetric on-site operator, so Z is a legal A1 letter with v = 0
+[PASS] 206 tuned 4-fold D+(+)D- levels: first-order D+<->D- block vanishes (worst 4.7e-11) - no mixing
+[FAIL] the two cones are untilted, isotropic, at |sum v^(+)| and |sum v^(-)| (worst dev 2.0e+00)
+[PASS] old-palette words (S, R_L, Rt, on-site, A0S^a): equal speeds |n_eff| sqrt2/3, opposite chirality (86 levels; B20 L1 4-fold)
+[PASS] with generic exp(iH) letters the two speeds differ: 119 of 120 generic 4-fold levels have | |v+| - |v-| | > 1e-3 (L1's equal-speed 4-fold statement does NOT generalise)
+TOTAL PASS=18 FAIL=10

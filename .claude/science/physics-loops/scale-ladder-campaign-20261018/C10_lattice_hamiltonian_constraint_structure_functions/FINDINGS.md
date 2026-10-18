@@ -6,8 +6,8 @@ Provenance: a worker of the same model family. **Unchecked.** Saved by the super
 |---|---|
 | `c10_runner.py` (fast) | **PASS=53 FAIL=0**, 377 s, exact (sympy over QQ and QQ(symbols), cyclotomic reduction, Gröbner, exact linear algebra). Log `c10_runner_fast.log` |
 | `c10_staggered_check.py` | PASS=6 FAIL=0 |
-| `c10_runner.py --slow` | still running at hand-back; output to scratch `c10/slow.log` |
-| second-order test, shift-invariant (1,2) class (`c10_jet_elim.py`) | still in the Gröbner stage (127 unknowns, 195 conditions); no result |
+| `c10_runner.py --slow` | **stopped at its time limit**: 38 PASS, 0 FAIL, all also covered by the fast run, and no TOTAL line (stalled on the rational class at window (2,1)). No slow-only check has a runner certificate. |
+| second-order test, shift-invariant (1,2) class (`c10_jet_elim.py`) | **stopped at its time limit** in the Gröbner stage (127 unknowns, 195 conditions); undecided |
 
 The first fast run had FAILs from three bugs in the runner itself; the computed physics was not changed:
 - two sign conventions in F1;
@@ -140,3 +140,4 @@ Slow-only window results quoted below come from `exploration/` scripts, not the 
 4. Model A's degenerate pieces; global first-classness.
 5. d > 1.
 6. General-L proofs of P6 and A3.
+7. Rerun `--slow` with a longer limit, to certify the (11,3) P6 case and the slow-only windows.

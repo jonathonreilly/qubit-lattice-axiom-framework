@@ -4,3 +4,4 @@ cd "$(dirname "$0")"
 nice python3 b26_screen.py one:PHL:0-22 3 > screen_one_PHL_0-22.log 2>&1
 nice python3 b26_screen.py onesample:PHL:22-74:300 3 > screen_onesample_PHL_22-74_300.log 2>&1
 nice python3 b26_screen.py twosample:3-40:300 3 > screen_twosample_3-40_300.log 2>&1
+# note: first queued launch never started (pgrep self-match in the wait loop); launched directly at 16:45Z

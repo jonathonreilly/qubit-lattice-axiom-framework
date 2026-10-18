@@ -1,0 +1,10 @@
+1c+11 unitary k->k+pi111 null dim 0
+1c+11 antiunitary k->-k+pi111 null dim 0
+1c+11 unitary k->-k+pi111 with H->-H null dim 0
+1c+11 E_{t2}(k) vs E_{-t2}(k): 6.2e-15
+1c+11 spec(H(k)) = -spec(H(k)) per k: 4.2e-15
+1011 unitary k->k+pi111 null dim 0
+1011 antiunitary k->-k+pi111 null dim 0
+1011 unitary k->-k+pi111 with H->-H null dim 0
+1011 E_{t2}(k) vs E_{-t2}(k): 4.0e-15
+1011 spec(H(k)) = -spec(H(k)) per k: 1.5e+00

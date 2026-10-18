@@ -1,0 +1,74 @@
+  screen_one_PC_0-74.pkl: levels 5763, survivors 449, clean 0
+  screen_one_PHL_0-22.pkl: levels 30184, survivors 896, clean 0
+  screen_onesample_PHL_22-74_300.pkl: levels 19462, survivors 567, clean 0
+  screen_two_0-3.pkl: levels 21480, survivors 324, clean 0
+  screen_twosample_3-40_300.pkl: levels 12109, survivors 163, clean 0
+TOTALS (distinct (word, level) pairs): {'levels': 88998, 'fermi': 86599, 'survivors': 2399, 'clean': 0, 'D+D- levels': 12877, 'D+/D- levels': 76121}
+k* level types (all runs, before de-duplication): {'6-fold': 31048, 'G': 96101, 'D+': 39268, 'D-': 39194, '8-fold': 11156, 'D+D-': 13378, '10-fold': 3494, '12-fold': 665}
+[PASS] no screened survivor is clean at screen level  0 clean
+defect (point class, verdict) occurrence over survivors:
+     1713  ('cube', 'aniso')
+     1281  ('Gamma', 'aniso')
+     1281  ('M_pi', 'aniso')
+     1281  ('R_pi', 'aniso')
+     1281  ('X_pi', 'aniso')
+     1194  ('(1,1/2,1/2)pi', 'aniso')
+     1194  ('M_r', 'aniso')
+      669  ('pi/4:1,1,1', 'aniso')
+      669  ('pi/4:1,1,3', 'aniso')
+      669  ('pi/4:1,3,3', 'aniso')
+      669  ('pi/4:3,3,3', 'aniso')
+      644  ('(1,1/2,1/2)pi', 'flat')
+      644  ('M_r', 'flat')
+      582  ('cube', 'flat')
+      529  ('(0,1/2,1)pi', 'aniso')
+      529  ('(1,1,1/2)pi', 'aniso')
+      529  ('X_r', 'aniso')
+      481  ('pi/4:1,2,2', 'aniso')
+      481  ('pi/4:2,2,3', 'aniso')
+      337  ('pi/4:1,2,2', 'flat')
+      337  ('pi/4:2,2,3', 'flat')
+      278  ('pi/4:0,0,1', 'aniso')
+      278  ('pi/4:0,0,3', 'aniso')
+      278  ('pi/4:0,1,4', 'aniso')
+      278  ('pi/4:0,3,4', 'aniso')
+survivors whose (pi/4)Z^3 defects are ALL at cube points (+-k*-type and the 6 cube doublers): 329
+
+FULL census of the 8 best survivors (no early reject):
+  ('S', 'o', 'Rt', 'o') ('L130', 'L332') E=-0.0000 D+D- n_S=1 v=0.4714: nodes 62, defective 61
+       53 x ('generic', 2, 'tilt')  e.g. k/pi=[ 0.1779 -0.8221  0.5304] {'tilt': np.float64(0.0003), 'smin': 0.0198, 'smax': 0.3608}
+        7 x ('generic', 2, 'aniso')  e.g. k/pi=[ 0.8086 -0.8086  0.7944] {'tilt': np.float64(0.0), 'smin': 0.0144, 'smax': 0.3629}
+        1 x ('cube', 8, 'aniso')  e.g. k/pi=[-0.5  0.5 -0.5] {'tilt': np.float64(0.0), 'smin': 0.2357, 'smax': 0.7071}
+        1 x ('cube', 4, 'ok')  e.g. k/pi=[ 0.5 -0.5  0.5] {'tilt': np.float64(0.0), 'smin': 0.4714, 'smax': 0.4714}
+  ('S', 'o', 'Rt', 'o') ('L310', 'L112') E=-0.0000 D+D- n_S=1 v=0.4714: nodes 62, defective 61
+       53 x ('generic', 2, 'tilt')  e.g. k/pi=[ 0.1785 -0.5037  0.1785] {'tilt': np.float64(0.0), 'smin': 0.0025, 'smax': 0.3737}
+        7 x ('generic', 2, 'aniso')  e.g. k/pi=[ 0.8086 -0.8086  0.7944] {'tilt': np.float64(0.0), 'smin': 0.0144, 'smax': 0.3629}
+        1 x ('cube', 8, 'aniso')  e.g. k/pi=[-0.5  0.5 -0.5] {'tilt': np.float64(0.0), 'smin': 0.2357, 'smax': 0.7071}
+        1 x ('cube', 4, 'ok')  e.g. k/pi=[ 0.5 -0.5  0.5] {'tilt': np.float64(0.0), 'smin': 0.4714, 'smax': 0.4714}
+  ('S', 'o', 'Rt', 'o') ('L112', 'L310') E=+0.0000 D+D- n_S=1 v=0.4714: nodes 62, defective 61
+       60 x ('generic', 2, 'tilt')  e.g. k/pi=[-0.4733  0.3933 -0.6067] {'tilt': np.float64(0.0282), 'smin': 0.0266, 'smax': 0.891}
+        1 x ('cube', 8, 'aniso')  e.g. k/pi=[-0.5  0.5 -0.5] {'tilt': np.float64(0.0), 'smin': 0.0016, 'smax': 1.7199}
+        1 x ('cube', 4, 'ok')  e.g. k/pi=[ 0.5 -0.5  0.5] {'tilt': np.float64(0.0), 'smin': 0.4714, 'smax': 0.4714}
+  ('S', 'o', 'Rt', 'o') ('L332', 'L130') E=+0.0000 D+D- n_S=1 v=0.4714: nodes 62, defective 61
+       60 x ('generic', 2, 'tilt')  e.g. k/pi=[-0.6067  0.3933 -0.4733] {'tilt': np.float64(0.0282), 'smin': 0.0591, 'smax': 0.8613}
+        1 x ('cube', 8, 'aniso')  e.g. k/pi=[-0.5  0.5 -0.5] {'tilt': np.float64(0.0), 'smin': 0.0016, 'smax': 1.7199}
+        1 x ('cube', 4, 'ok')  e.g. k/pi=[ 0.5 -0.5  0.5] {'tilt': np.float64(0.0), 'smin': 0.4714, 'smax': 0.4714}
+  ('S', 'o', 'S2', 'Rt', 'o') ('L310', 'L112') E=+0.0000 D+D- n_S=3 v=1.4142: nodes 62, defective 61
+       60 x ('generic', 2, 'tilt')  e.g. k/pi=[ 0.7856 -0.5952  0.7856] {'tilt': np.float64(0.462), 'smin': 0.0154, 'smax': 2.3601}
+        1 x ('cube', 8, 'aniso')  e.g. k/pi=[-0.5  0.5 -0.5] {'tilt': np.float64(0.0), 'smin': 0.5882, 'smax': 2.8764}
+        1 x ('cube', 4, 'ok')  e.g. k/pi=[ 0.5 -0.5  0.5] {'tilt': np.float64(0.0), 'smin': 1.4142, 'smax': 1.4142}
+  ('Si', 'o', 'S2i', 'Rt', 'o') ('L332', 'L130') E=+0.0000 D+D- n_S=-3 v=1.4142: nodes 59, defective 58
+       36 x ('generic', 2, 'tilt')  e.g. k/pi=[0.6799 0.5399 0.6799] {'tilt': np.float64(0.1157), 'smin': 0.0016, 'smax': 2.1101}
+       21 x ('generic', 1, 'band')  e.g. k/pi=[-0.9987  0.3976 -0.7076] {}
+        1 x ('cube', 8, 'aniso')  e.g. k/pi=[-0.5  0.5 -0.5] {'tilt': np.float64(0.0), 'smin': 0.5882, 'smax': 2.8764}
+        1 x ('cube', 4, 'ok')  e.g. k/pi=[ 0.5 -0.5  0.5] {'tilt': np.float64(0.0), 'smin': 1.4142, 'smax': 1.4142}
+  ('S', 'Rt', 'o') ('H20*L002',) E=+0.0000 D+D- n_S=1 v=0.4714: nodes 40, defective 39
+       36 x ('generic', 2, 'aniso')  e.g. k/pi=[-0.1528 -0.5    -0.1528] {'tilt': np.float64(0.0), 'smin': 0.1494, 'smax': 0.8261}
+        3 x ('cube', 4, 'aniso')  e.g. k/pi=[-0.5 -0.5  0.5] {'tilt': np.float64(0.0), 'smin': 0.2467, 'smax': 0.6236}
+        1 x ('cube', 4, 'ok')  e.g. k/pi=[ 0.5 -0.5  0.5] {'tilt': np.float64(0.0), 'smin': 0.4714, 'smax': 0.4714}
+  ('S', 'Rt', 'o') ('H20*L222',) E=-0.0000 D+D- n_S=1 v=0.4714: nodes 40, defective 39
+       36 x ('generic', 2, 'aniso')  e.g. k/pi=[ 0.5     0.8472 -0.1528] {'tilt': np.float64(0.0), 'smin': 0.2146, 'smax': 0.8053}
+        3 x ('cube', 4, 'aniso')  e.g. k/pi=[-0.5 -0.5  0.5] {'tilt': np.float64(0.0), 'smin': 0.2467, 'smax': 0.6236}
+        1 x ('cube', 4, 'ok')  e.g. k/pi=[ 0.5 -0.5  0.5] {'tilt': np.float64(0.0), 'smin': 0.4714, 'smax': 0.4714}
+
+TOTAL: PASS=1 FAIL=0   [43s]

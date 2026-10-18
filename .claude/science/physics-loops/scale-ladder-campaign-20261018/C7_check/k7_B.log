@@ -1,0 +1,103 @@
+B0: normalisation and Bloch checks
+[PASS] Bloch 2^3 supercell on a 2^3 K-grid = real-space L = 4 spectrum (random imaginary gauge field)  max dev 8.8e-15
+[PASS] Majorana hopping spectrum symmetric under E -> -E
+[PASS] Majorana many-body ground energy (JW, 6 Majoranas) = sum of negative eigenvalues of the one-body i J u matrix  -3.87152696 vs -3.87152696
+[PASS] all 16 uniform patterns are realised on the 2^3 supercell (fluxes re-measured at t2 = 0.37)
+[PASS] conjugate chirality 1c-11 has the same spectrum as 1c+11 (control on the 'c+' vs 'c-' reduction)  1.1e-14
+
+B1: 16 uniform patterns, E per site (Majorana half filling, |t1| = 1); t = 0.6s
+  t2 = 0.2: ranking on N_K = 16
+    1. 1c11  E = -11.417292  (+0.000000)  spread over grids/gauges 0.0e+00
+    2. 1c01  E = -11.416456  (+0.000837)  spread over grids/gauges 1.8e-15
+    3. 1c00  E = -11.362482  (+0.054810)  spread over grids/gauges 1.8e-15
+    4. 1c10  E = -11.362420  (+0.054872)  spread over grids/gauges 1.8e-15
+    5. 1s11  E = -11.022989  (+0.394304)  spread over grids/gauges 3.6e-15
+    6. 1s01  E = -11.022216  (+0.395076)  spread over grids/gauges 3.6e-15
+    7. 1s10  E = -10.986419  (+0.430874)  spread over grids/gauges 3.4e-12
+    8. 1s00  E = -10.985071  (+0.432222)  spread over grids/gauges 2.9e-11
+    9. 0s10  E = -9.878110  (+1.539182)  spread over grids/gauges 3.9e-04
+   10. 0s11  E = -9.843951  (+1.573342)  spread over grids/gauges 1.0e-04
+   11. 0s00  E = -9.824722  (+1.592570)  spread over grids/gauges 2.2e-03
+   12. 0s01  E = -9.788831  (+1.628461)  spread over grids/gauges 2.3e-03
+   13. 0c11  E = -9.222247  (+2.195045)  spread over grids/gauges 4.4e-06
+   14. 0c01  E = -9.118507  (+2.298786)  spread over grids/gauges 8.5e-07
+   15. 0c10  E = -9.090871  (+2.326421)  spread over grids/gauges 2.3e-04
+   16. 0c00  E = -9.014371  (+2.402921)  spread over grids/gauges 1.0e-03
+   winner 1c11, runner-up 1c01; margin per grid: 6: 0.000837, 8: 0.000837, 12: 0.000837, 16: 0.000837, 9s: 0.000837, 8b: 0.000837
+[PASS] t2 = 0.2: 1c+11 is the lowest of the 16 on every grid (N_K = 6, 8, 12, 16, shifted 9) and in the second gauge  min margin 0.000837
+  t2 = 0.5: ranking on N_K = 12
+    1. 1c11  E = -11.957009  (+0.000000)  spread over grids/gauges 7.9e-12
+    2. 1c01  E = -11.928252  (+0.028757)  spread over grids/gauges 1.1e-12
+    3. 1c00  E = -11.620627  (+0.336383)  spread over grids/gauges 3.5e-12
+    4. 1c10  E = -11.618535  (+0.338474)  spread over grids/gauges 4.6e-11
+    5. 1s11  E = -11.525528  (+0.431482)  spread over grids/gauges 1.2e-10
+    6. 1s01  E = -11.496887  (+0.460122)  spread over grids/gauges 5.7e-11
+    7. 1s10  E = -11.317577  (+0.639432)  spread over grids/gauges 2.1e-06
+    8. 1s00  E = -11.282984  (+0.674025)  spread over grids/gauges 2.5e-04
+    9. 0s11  E = -10.770509  (+1.186501)  spread over grids/gauges 1.5e-06
+   10. 0s10  E = -10.654999  (+1.302010)  spread over grids/gauges 4.1e-04
+   11. 0s00  E = -10.551444  (+1.405566)  spread over grids/gauges 1.2e-03
+   12. 0s01  E = -10.550790  (+1.406220)  spread over grids/gauges 4.5e-03
+   13. 0c11  E = -10.525064  (+1.431946)  spread over grids/gauges 4.7e-06
+   14. 0c01  E = -10.228299  (+1.728710)  spread over grids/gauges 1.2e-05
+   15. 0c10  E = -10.133462  (+1.823548)  spread over grids/gauges 2.0e-04
+   16. 0c00  E = -9.947700  (+2.009310)  spread over grids/gauges 2.5e-03
+   winner 1c11, runner-up 1c01; margin per grid: 6: 0.028757, 8: 0.028757, 12: 0.028757, 9s: 0.028757, 8b: 0.028757
+   (t2 = 0.5: winner stable on all grids: True, winner 1c11)
+  t2 = 1.0: ranking on N_K = 16
+    1. 1c11  E = -13.818077  (+0.000000)  spread over grids/gauges 3.1e-09
+    2. 1c01  E = -13.500492  (+0.317584)  spread over grids/gauges 1.5e-09
+    3. 1s11  E = -13.398196  (+0.419881)  spread over grids/gauges 3.2e-04
+    4. 0c11  E = -13.192081  (+0.625995)  spread over grids/gauges 6.2e-07
+    5. 0s11  E = -13.165414  (+0.652663)  spread over grids/gauges 1.6e-08
+    6. 1s01  E = -12.996983  (+0.821094)  spread over grids/gauges 2.9e-08
+    7. 1s10  E = -12.611618  (+1.206459)  spread over grids/gauges 1.3e-04
+    8. 1c10  E = -12.571710  (+1.246367)  spread over grids/gauges 2.8e-04
+    9. 1c00  E = -12.570933  (+1.247144)  spread over grids/gauges 6.2e-08
+   10. 0s10  E = -12.433670  (+1.384407)  spread over grids/gauges 4.0e-04
+   11. 0c01  E = -12.397054  (+1.421023)  spread over grids/gauges 8.1e-05
+   12. 1s00  E = -12.392789  (+1.425288)  spread over grids/gauges 2.6e-03
+   13. 0s01  E = -12.372632  (+1.445445)  spread over grids/gauges 5.8e-03
+   14. 0c10  E = -12.247575  (+1.570501)  spread over grids/gauges 3.3e-04
+   15. 0s00  E = -12.238282  (+1.579795)  spread over grids/gauges 3.9e-03
+   16. 0c00  E = -11.858878  (+1.959199)  spread over grids/gauges 4.4e-03
+   winner 1c11, runner-up 1c01; margin per grid: 6: 0.317584, 8: 0.317584, 12: 0.317584, 16: 0.317584, 9s: 0.317584, 8b: 0.317584
+[PASS] t2 = 1.0: 1c+11 is the lowest of the 16 on every grid (N_K = 6, 8, 12, 16, shifted 9) and in the second gauge  min margin 0.317584
+  t2 = 2.0: ranking on N_K = 12
+    1. 1c11  E = -19.999590  (+0.000000)  spread over grids/gauges 5.1e-11
+    2. 0c11  E = -19.877642  (+0.121948)  spread over grids/gauges 7.7e-10
+    3. 1s11  E = -19.865496  (+0.134094)  spread over grids/gauges 2.1e-12
+    4. 0s11  E = -19.811454  (+0.188136)  spread over grids/gauges 3.6e-14
+    5. 0s10  E = -18.379498  (+1.620092)  spread over grids/gauges 6.5e-05
+    6. 1s10  E = -18.292335  (+1.707255)  spread over grids/gauges 1.1e-07
+    7. 0c10  E = -18.095351  (+1.904240)  spread over grids/gauges 3.4e-11
+    8. 1c10  E = -18.082929  (+1.916661)  spread over grids/gauges 2.6e-07
+    9. 1c01  E = -18.062908  (+1.936682)  spread over grids/gauges 5.8e-07
+   10. 1s01  E = -17.477794  (+2.521796)  spread over grids/gauges 1.5e-06
+   11. 0c01  E = -17.439577  (+2.560013)  spread over grids/gauges 3.7e-04
+   12. 1s00  E = -17.234199  (+2.765391)  spread over grids/gauges 5.1e-08
+   13. 0s01  E = -17.142671  (+2.856919)  spread over grids/gauges 5.4e-03
+   14. 0s00  E = -17.097407  (+2.902183)  spread over grids/gauges 2.4e-03
+   15. 1c00  E = -16.749078  (+3.250512)  spread over grids/gauges 1.2e-03
+   16. 0c00  E = -16.683232  (+3.316358)  spread over grids/gauges 5.8e-03
+   winner 1c11, runner-up 0c11; margin per grid: 6: 0.121948, 8: 0.121948, 12: 0.121948, 9s: 0.121948, 8b: 0.121948
+   (t2 = 2.0: winner stable on all grids: True, winner 1c11)
+  t = 325.7s
+
+B2: wider uniform family: 2^8 triangle assignments x 8 four-cycle bits (N_K = 6, 2^3 supercell)
+  t2 = 0.2: 512 consistent patterns (of 128 x 8 up to conjugation); below 1c+11 (-11.417292): 0
+[PASS] t2 = 0.2: no translation-invariant pattern with uniform 4-cycles and any +-pi/2 triangle assignment beats 1c+11
+  t2 = 1.0: 512 consistent patterns (of 128 x 8 up to conjugation); below 1c+11 (-13.818077): 0
+[PASS] t2 = 1.0: no translation-invariant pattern with uniform 4-cycles and any +-pi/2 triangle assignment beats 1c+11
+  t = 521.4s
+
+B3: period-1 sectors (12 bands, 36 independent u's): greedy single-flip descent from random starts (N_K = 8)
+  1c+11 period-1 gauge exists: True
+  t2 = 0.2: 1c+11 E = -11.417292; 150 greedy runs: best -11.417292, fraction reaching 1c+-11 energy 0.70; best sector has 1c+-11 fluxes: True; distinct minima 13
+[PASS] t2 = 0.2: no period-1 sector found below 1c+11 (150 random greedy descents)  best - ref = +0.00e+00
+  t2 = 1.0: 1c+11 E = -13.818075; 150 greedy runs: best -13.818075, fraction reaching 1c+-11 energy 0.68; best sector has 1c+-11 fluxes: True; distinct minima 10
+[PASS] t2 = 1.0: no period-1 sector found below 1c+11 (150 random greedy descents)  best - ref = +0.00e+00
+
+elapsed 731.1s
+TOTAL: PASS=11 FAIL=0
+exit 0

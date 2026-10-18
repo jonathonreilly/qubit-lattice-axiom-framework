@@ -1,0 +1,28 @@
+A0: Cl(7) basis by random clique search
+   basis: ['YXX', 'XYZ', 'YYI', 'IZI', 'ZYZ', 'YXY', 'IXZ'] (found at trial 0)
+[PASS] 7 mutually anticommuting Hermitian 3-qubit Pauli strings (8-dim Cl(7) irrep), product = +-i  product = i^1; differs from C7 basis: True
+
+A1: Jordan-Wigner check of the Majorana dictionary (2 corners, 16 Majoranas)
+[PASS] JW: G^a = i b^a c, G^7 = i d c are Hermitian, generate Cl(7) per corner; D_q = i G1..G7 is a Z2 commuting with all G; physical dimension 8 per corner (64 for two)
+[PASS] dictionary: u_e (i c_I c_J) = -G^a_I G^b_J, u_e (i d d) = -(iG^aG^7)(iG^bG^7), u_e (i c d) = -G^a (iG^bG^7) for all 36 label pairs (operator identities)
+
+A2: L = 2 torus: 96 corners, 288 qubits, 288 edges, 232 faces
+[PASS] all 232 W_C square to +1 (Hermitian) and mutually commute
+[PASS] every bond term of H_M, H_M2 and H_R commutes with every W_C  {'M': True, 'M2': True, 'R': True}
+[PASS] control: H_M bond terms anticommute iff they share a corner (96 x C(6,2) = 1440 pairs)  1440
+
+A3: closed-surface relations (left kernel of the face-edge incidence); t = 3.5s
+   rank 190, kernel dim 42 (faces 232, edges 288, corners 96)
+[PASS] every closed-surface relation (kernel basis) gives prod W = +-1 x identity with the sign predicted by the Majorana identity W_C = (-1)^(n+1) prod_C u  42 relations, signs [1]
+[PASS] cuboctahedron of site (0,0,0): product of the 14 outward W = +1 x identity (prediction +1)  phase i^0
+[PASS] link prism (4 tubes + 2 end squares) is closed and prod W = (Majorana-predicted sign) x identity  sign 1
+   t = 3.5s
+
+A4: cluster ED of H_M (random J) vs free Majoranas
+[PASS] H_M on a triangle: qubit spectrum in each W sector = free Majorana levels (with relative multiplicities)  N = 3 corners (9 qubits), E = 3, max dev 0.0e+00
+[PASS] H_M on a square: qubit spectrum in each W sector = free Majorana levels (with relative multiplicities)  N = 4 corners (12 qubits), E = 4, max dev 0.0e+00
+[PASS] H_M on a tube: qubit spectrum in each W sector = free Majorana levels (with relative multiplicities)  N = 4 corners (12 qubits), E = 4, max dev 0.0e+00
+[PASS] H_M on a plaquette: qubit spectrum in each W sector = free Majorana levels (with relative multiplicities)  N = 4 corners (12 qubits), E = 4, max dev 0.0e+00
+
+elapsed 204.1s
+TOTAL: PASS=13 FAIL=0

@@ -1,0 +1,16 @@
+[PASS] each on-site edge lies in exactly one octant triangle (so the chiral term is one complex phase per on-site edge)
+
+flux/pi per face type (t1 = -1), measured after a random U(1) gauge transformation:
+   lambda = +0.0000: {'square': [np.float64(1.0)], 'triangle': [np.float64(1.0)], 'plaquette': [np.float64(1.0)], 'tube': [np.float64(1.0)]}  max dev from formula over t2 in (0.2,-0.3,1): see check
+   lambda = -0.5000: {'square': [np.float64(1.5903)], 'triangle': [np.float64(0.5572)], 'plaquette': [np.float64(1.0)], 'tube': [np.float64(1.2952)]}  max dev from formula over t2 in (0.2,-0.3,1): see check
+   lambda = -0.5774: {'square': [np.float64(1.6667)], 'triangle': [np.float64(0.5)], 'plaquette': [np.float64(1.0)], 'tube': [np.float64(1.3333)]}  max dev from formula over t2 in (0.2,-0.3,1): see check
+   lambda = +0.3000: {'square': [np.float64(0.6289)], 'triangle': [np.float64(1.2783)], 'plaquette': [np.float64(1.0)], 'tube': [np.float64(0.8145)]}  max dev from formula over t2 in (0.2,-0.3,1): see check
+   lambda = +1.7000: {'square': [np.float64(1.677)], 'triangle': [np.float64(1.9922)], 'plaquette': [np.float64(1.0)], 'tube': [np.float64(0.3385)]}  max dev from formula over t2 in (0.2,-0.3,1): see check
+   lambda = -2.4000: {'square': [np.float64(0.4973)], 'triangle': [np.float64(1.877)], 'plaquette': [np.float64(1.0)], 'tube': [np.float64(1.7487)]}  max dev from formula over t2 in (0.2,-0.3,1): see check
+[PASS] all 232 faces x 6 lambda x 3 t2: square pi - 4 arctan(lambda), triangle pi + 3 arctan(lambda), plaquette pi, tube pi - 2 arctan(lambda) (outward/my orientation), gauge invariant
+[PASS] reversed square orientation gives pi + 4 arctan(lambda)
+[PASS] analytic: square = pi needs 4 arctan(lambda) in 2 pi Z, i.e. lambda = 0 for finite lambda; then triangle = pi != +-pi/2 (scan of 4e5 lambda in [-20, 20] finds no simultaneous square = tube = pi and triangle = +-pi/2)
+   t1 = 0 (pure chiral) fluxes/pi: {'square': [1.0], 'triangle': [0.5], 'plaquette': [1.0], 'tube': [0.0]}
+[PASS] pure-chiral limit t1 = 0: square pi, outward triangle +pi/2, plaquette pi, tube 0 (= the Majorana pattern 1c+10, not 1c+11)
+
+TOTAL: PASS=5 FAIL=0

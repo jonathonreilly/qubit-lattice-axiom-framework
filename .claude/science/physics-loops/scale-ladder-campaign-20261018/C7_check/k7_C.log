@@ -1,0 +1,47 @@
+[PASS] 1c+11 admits a period-1 (translation-invariant) gauge
+
+C1: spectral/exact symmetry test, period-1 gauges; t = 0.0s
+   0c+00: unique s per rotation True, spectral dev 5.8e-15, wrong-shift min dev 3.87e-01, C4^4 [(1,)], O-fixed momenta (pi/2 units) []
+   0c+01: unique s per rotation True, spectral dev 7.1e-15, wrong-shift min dev 7.04e-01, C4^4 [(1,)], O-fixed momenta (pi/2 units) [(1, 3, 1), (3, 1, 3)]
+   0c+10: no period-1 gauge
+   0c+11: no period-1 gauge
+   1c+00: no period-1 gauge
+   1c+01: no period-1 gauge
+   1c+10: unique s per rotation True, spectral dev 8.4e-15, wrong-shift min dev 4.56e-01, C4^4 [(-1,)], O-fixed momenta (pi/2 units) [(0, 2, 2), (2, 0, 0)]
+   1c+11: unique s per rotation True, spectral dev 6.0e-15, wrong-shift min dev 3.11e-15, C4^4 [(-1,)], O-fixed momenta (pi/2 units) []
+   1s+11: not invariant under all 24 proper rotations (in this gauge class)
+   control corner 1011 (real): unique True, spectral dev 5.8e-15, wrong-shift min dev 2.66e-15, C4^4 [(-1,)], fixed [(1, 1, 3), (3, 3, 1)]
+[FAIL] 1c+11: invariant under all 24 rotations with a unique momentum shift each; E(Mk + pi s) = E(k) to 1e-9 and every wrong shift fails (> 1e-3)  dev 6.0e-15, wrong 3.11e-15
+[PASS] 1c+11 has NO O-fixed momentum  []
+[PASS] control: corner pattern 1011 (real hopping) has exactly two O-fixed momenta, k and k + (pi,pi,pi)  [(1, 1, 3), (3, 3, 1)]
+[PASS] C4^4 = -1 for 1c+11 and for the 1011 control  [(-1,)] / [(-1,)]
+   chiral/period-1 patterns with an O-fixed momentum: ['0c+01', '1c+10']
+
+C2: Majorana gap of 1c+11 (min positive eigenvalue of the 12-band one-body matrix; the many-body fermion gap of H_M = sum J u (i c c) is twice this); t = 1.0s
+   t2 = 0.05: Delta = 1.37380 at k/pi = [0. 2. 1.]; grid minima 6: [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+   t2 = 0.10: Delta = 1.33430 at k/pi = [1. 1. 2.]; grid minima 6: [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+   t2 = 0.20: Delta = 1.25862 at k/pi = [0. 1. 1.]; grid minima 6: [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+   t2 = 0.30: Delta = 1.18854 at k/pi = [2. 0. 0.]; grid minima 6: [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+   t2 = 0.50: Delta = 1.07226 at k/pi = [1. 1. 1.]; grid minima 6: [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+   t2 = 0.70: Delta = 1.00147 at k/pi = [2. 2. 2.]; grid minima 6: [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+   t2 = 0.80: Delta = 0.98805 at k/pi = [0. 0. 1.]; grid minima 6: [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+   t2 = 0.90: Delta = 0.99101 at k/pi = [0. 2. 1.]; grid minima 6: [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+   t2 = 1.00: Delta = 1.01065 at k/pi = [1. 1. 2.]; grid minima 6: [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+   t2 = 1.30: Delta = 1.16094 at k/pi = [0. 2. 1.]; grid minima 6: [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+   t2 = 1.60: Delta = 1.41375 at k/pi = [1. 1. 2.]; grid minima 6: [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+   t2 = 2.00: Delta = 1.84104 at k/pi = [0. 1. 1.]; grid minima 6: [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+   t2 = 2.50: Delta = 2.44728 at k/pi = [2. 1. 1.]; grid minima 6: [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+   t2 = 3.00: Delta = 3.09218 at k/pi = [1. 0. 0.]; grid minima 6: [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+[PASS] 1c+11 fully gapped for t2 in [0.05, 3]: min Delta > 0.9  min 0.98805
+[PASS] gap values agree with C7 c7_C.log at the 7 common t2  max |diff| 4.7e-06
+
+elapsed 9.4s
+TOTAL: PASS=6 FAIL=1
+
+C3: is the spectral shift test discriminating?  (extra spectral symmetry k -> k + pi(1,1,1)); t = 9.4s
+   shifts d with E(k + pi d) = E(k) for 1c+11: [(0, 0, 0), (1, 1, 1)]
+   ... for the real 1011 control: [(0, 0, 0), (1, 1, 1)]
+   alternative shift assignment s'_M = s_M + chi(M)(1,1,1) (chi = sign rep): spectral dev 5.3e-15, its 'fixed momenta' [(0, 2, 0), (2, 0, 2)]
+   alternative realised by unitary corner-sign gauges: False
+   1c+11: improper rotations unitary: 0/24; improper x K: 24/24, inversion x K shift [(0, 0, 0)]; proper x K: 0/24
+   1011 real: improper rotations unitary: 24/24; improper x K: 24/24, inversion x K shift [(0, 0, 0)]; proper x K: 24/24

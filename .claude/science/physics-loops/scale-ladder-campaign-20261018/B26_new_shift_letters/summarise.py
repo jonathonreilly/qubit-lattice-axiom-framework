@@ -12,15 +12,20 @@ PASS = FAIL = 0
 def check(name, ok, detail=""):
     global PASS, FAIL; PASS += bool(ok); FAIL += (not ok); print(f"[{'PASS' if ok else 'FAIL'}] {name}  {detail}", flush=True)
 files = sorted(glob.glob(os.path.join(HERE, 'screen_*.pkl')))
-tot = collections.Counter(); allsurv = []; lvlstats = collections.Counter(); words = 0
+tot = collections.Counter(); allsurv = []; lvlstats = collections.Counter(); words = 0; SEEN = set()
 for f in files:
-    d = pickle.load(open(f, 'rb')); recs = d['recs']; lvlstats.update(d['stats'])
+    d = pickle.load(open(f, 'rb')); lvlstats.update(d['stats'])
+    # de-duplicate (sk, fill, E) across runs (PC fills of classes 0-21 also occur in the full-PHL run)
+    recs = []
+    for r in d['recs']:
+        key = (r['sk'], r['names'], round(r['E'], 6))
+        if key not in SEEN: SEEN.add(key); recs.append(r)
     surv = [r for r in recs if not r['fermi']]; allsurv += surv
     tot['levels'] += len(recs); tot['fermi'] += len(recs) - len(surv); tot['survivors'] += len(surv)
     tot['clean'] += sum(1 for r in surv if not r['bad'])
     tot['D+D- levels'] += sum(r['kind'] == 'D+D-' for r in recs); tot['D+/D- levels'] += sum(r['kind'] != 'D+D-' for r in recs)
     print(f"  {os.path.basename(f)}: levels {len(recs)}, survivors {len(surv)}, clean {sum(1 for r in surv if not r['bad'])}")
-print("TOTALS:", dict(tot)); print("k* level types (all words):", dict(lvlstats))
+print("TOTALS (distinct (word, level) pairs):", dict(tot)); print("k* level types (all runs, before de-duplication):", dict(lvlstats))
 check("no screened survivor is clean at screen level", tot['clean'] == 0, f"{tot['clean']} clean")
 # obstruction pattern: point class of defects (any node with verdict != ok), per survivor
 pc = collections.Counter(); kinds = collections.Counter(); first = collections.Counter()

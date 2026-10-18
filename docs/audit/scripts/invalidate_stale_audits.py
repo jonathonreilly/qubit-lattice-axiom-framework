@@ -444,7 +444,8 @@ def detect_invalidation(
         # preserves the important distinction between a certificate migration
         # and a changed scientific basis: only an exact science match is ever
         # eligible for packet-only work.
-        current_science = audit_science_fingerprint.build_science_fingerprint(
+        current_science = audit_science_fingerprint.build_matching_science_fingerprint(
+            science_baseline,
             row,
             rows,
             REPO_ROOT,
@@ -749,8 +750,16 @@ def detect_invalidation(
     # text changes. Compare the dep's note_hash at audit time against the
     # current one and re-look the direct citer when the axiom actually
     # changed. (Older snapshots predate this map; in that case skip.)
+    # A science_fingerprint_v3 baseline already binds premise drift: whole
+    # premise sources when fail-closed, the declared premise units otherwise.
+    # Running this whole-note check on it would undo premise scoping.
+    snap_science = snap.get("science_fingerprint")
     legacy_premise_reason = (
-        audit_science_fingerprint.legacy_premise_snapshot_change(
+        None
+        if isinstance(snap_science, dict)
+        and snap_science.get("schema")
+        == audit_science_fingerprint.SCIENCE_FINGERPRINT_V3_SCHEMA
+        else audit_science_fingerprint.legacy_premise_snapshot_change(
             snap,
             row,
             rows,
@@ -951,6 +960,11 @@ def is_archived_terminal_failed_dep(dep: str, rows: dict[str, dict]) -> bool:
 
 def archive_and_reset(row: dict, reason: str) -> dict:
     prior = {k: row.get(k) for k in ARCHIVED_FIELDS}
+    # The auditor-declared premise scope belongs to the archived judgment.
+    # Archive it only when present so legacy frozen-judgment digests, which
+    # never carried the field, stay byte-identical.
+    if row.get("premises_used") is not None:
+        prior["premises_used"] = row.get("premises_used")
     prior["archived_at"] = datetime.now(timezone.utc).isoformat()
     prior["invalidation_reason"] = reason
     history = list(row.get("previous_audits", []))
@@ -966,6 +980,7 @@ def archive_and_reset(row: dict, reason: str) -> dict:
             new_row[k] = v
     new_row.pop("no_go_discipline", None)
     new_row.pop("negative_assertion_classes", None)
+    new_row.pop("premises_used", None)
     source_hint = row.get("claim_type_author_hint")
     if source_hint in CLAIM_TYPES:
         new_row["claim_type"] = source_hint

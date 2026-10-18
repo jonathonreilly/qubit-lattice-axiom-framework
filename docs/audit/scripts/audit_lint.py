@@ -2054,13 +2054,14 @@ def main() -> int:
                 )
                 if science_problems:
                     errors.append(
-                        f"{cid}: malformed science_fingerprint_v2: "
+                        f"{cid}: malformed science_fingerprint: "
                         f"{science_problems}"
                     )
                 else:
                     try:
                         current_science = (
-                            audit_science_fingerprint.build_science_fingerprint(
+                            audit_science_fingerprint.build_matching_science_fingerprint(
+                                science_baseline,
                                 {**row, "claim_id": cid},
                                 rows,
                                 REPO_ROOT,
@@ -2069,7 +2070,7 @@ def main() -> int:
                         )
                     except audit_science_fingerprint.ScienceFingerprintError as exc:
                         errors.append(
-                            f"{cid}: cannot recompute science_fingerprint_v2: {exc}"
+                            f"{cid}: cannot recompute science_fingerprint: {exc}"
                         )
                     else:
                         science_change = (
@@ -2080,7 +2081,7 @@ def main() -> int:
                         )
                         if science_change is not None:
                             errors.append(
-                                f"{cid}: stale science_fingerprint_v2: "
+                                f"{cid}: stale science_fingerprint: "
                                 f"{science_change}; run invalidation before "
                                 "treating this audit as live"
                             )

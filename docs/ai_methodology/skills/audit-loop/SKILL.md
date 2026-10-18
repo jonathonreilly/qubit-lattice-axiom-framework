@@ -705,6 +705,17 @@ python3 docs/audit/scripts/orchestrate_audit_batch.py \
   xhigh reasoning exactly — per seat, regardless of who orchestrates. Do not
   escalate seats to max; do not mix families inside one row's
   cross-confirmation without the owner's seating policy saying so.
+- **Clean-room Claude seats (owner seating policy 2026-10-18).** The
+  single-claim runner also seats Claude:
+  `python3 scripts/codex_audit_runner.py --auditor-backend claude --claim-id 'id1'`.
+  Each seat is one stateless Claude API request carrying only the restricted
+  packet, recorded as `fresh_context` (`FRESH_LOOK_REQUIREMENTS.md` section
+  1), at effort by criticality unless `--claude-effort` forces one level.
+  Two Claude seats may cross-confirm a critical row, and a Claude seat may
+  pair with a Codex seat. Keys rotate across `--claude-key-env` variables;
+  a run stops cleanly when every key's credit is exhausted or
+  `--claude-max-spend-usd` is reached, leaving unreached rows queued. The
+  batch drainer above remains Codex-only.
 - **Commits stay serialized** one claim at a time (apply every validated seat
   for that claim -> one pipeline -> one lint -> one commit -> one push inside
   the drainer). A simultaneous critical pair is one claim transaction, not two

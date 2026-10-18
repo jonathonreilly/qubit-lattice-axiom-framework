@@ -1,0 +1,18 @@
+{
+  "description": "Audit-tooling map of declarable premise units (owner ruling 2026-10-18; see docs/audit/PREMISE_SCOPED_FINGERPRINT_AND_CLAUDE_AUDITOR_NOTE_2026-10-18.md). It carries no premise or interpretive weight and adds no axiom content: the axiom statements live only in the premise source. Each clause is located by its existing heading line and runs to the next heading of the same or higher level. A judgment that declares premises_used binds only the declared units plus the node's shared clauses; editing any other part of the source leaves that judgment's science fingerprint unchanged. container_heading makes every subsection of the axiom section a mapped clause, so a new axiom subsection fails closed until it is mapped. Premise nodes not listed here are whole-node units. Kept outside axiom_premise_nodes.json and the memo because hundreds of runners declare those files as AUDIT_INPUT_PATHS.",
+  "nodes": {
+    "minimal_axioms": {
+      "clauses": {
+        "admissibility": "### Admissibility / Local Constraint",
+        "lattice": "### Lattice / Physical Locality",
+        "qubit": "### Qubit / Site Possibility",
+        "record": "### Record / Fixed Reality"
+      },
+      "container_heading": "## The Four Framework Axioms",
+      "shared_clauses": {
+        "qualification": "## Qualification"
+      }
+    }
+  },
+  "schema": "premise_clause_map_v1"
+}

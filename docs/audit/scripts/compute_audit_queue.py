@@ -188,7 +188,8 @@ def audit_work_kind(
     if judgment_change is not None:
         return "fresh_scientific_audit", judgment_change
     try:
-        current = audit_science_fingerprint.build_science_fingerprint(
+        current = audit_science_fingerprint.build_matching_science_fingerprint(
+            baseline,
             {
                 **row,
                 # Invalidation resets auditor-owned classification fields.

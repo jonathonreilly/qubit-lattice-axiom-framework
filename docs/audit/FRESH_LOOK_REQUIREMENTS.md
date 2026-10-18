@@ -65,9 +65,28 @@ strengthen the audit when available and are recorded with their own
 `auditor_family` value. It establishes the current best Codex GPT model as
 the baseline independent auditor that the mechanical pipeline routes work to.
 
-A claim audited only by Claude (any session, any version) records
-`independence: weak` and is not eligible to land `effective_status =
-retained` unless cross-confirmed by Codex or a human auditor.
+### Clean-room Claude API seats (owner ruling 2026-10-18)
+
+The owner ruled on 2026-10-18 that a clean fresh model counts as an
+independent auditor whatever its family. A Claude auditor seat qualifies as
+`independence: fresh_context` when the rendered Section 2 restricted packet is
+the entire content of one stateless Claude API request: no system prompt, no
+tools, no conversation history, no repository or file access, and no authoring
+context. `scripts/codex_audit_runner.py --auditor-backend claude` builds that
+request, records the request's SHA-256 and the model that actually served it,
+and stamps `auditor_family` from the served model (for example
+`claude-opus-5.5`). Such a seat may land `audited_clean` under exactly the
+rules that govern a same-family Codex clean-room seat, including the
+cross-confirmation requirement for critical claims in section 4; it records
+`cross_family` only when the note's recorded `author_family` is a non-Claude
+family. Claude seats run at reasoning effort by criticality (`medium` for
+leaf and medium rows, `high` for high, `xhigh` for critical) unless the
+operator forces one level; the Codex xhigh rule is unchanged.
+
+Any other Claude audit (an interactive or agent session, or any session with
+repository, conversation, or authoring context) records `independence: weak`
+and is not eligible to land `effective_status = retained` unless
+cross-confirmed by a clean-room seat or a human auditor.
 
 When the first clean audit was already performed by Codex, the internal
 anti-context-poisoning objective is satisfied by a second Codex audit only
@@ -205,10 +224,12 @@ toward confirming it.
 
 In practice this means: a Claude-produced note (the dominant case in this
 repo) can be audited by the current best Codex GPT model (or a human, or any
-non-Claude agent) to satisfy the standard cross-family rule. A Codex-produced
+non-Claude agent) to satisfy the standard cross-family rule, or by a
+clean-room Claude API seat (section 1) at `fresh_context`. A Codex-produced
 note requires a distinct clean-room Codex session at `fresh_context` or a
 different-family/human auditor. A human-produced note requires any independent
-agent or another human.
+agent or another human. The authoring session itself never audits its own
+note: a clean-room seat is a separate request that shares no context with it.
 
 ## 6. Audit re-runs
 
@@ -217,6 +238,21 @@ time of audit. If the note changes, the row is automatically reset to
 `audit_status = unaudited` (with the prior verdict preserved in
 `previous_audits`) and must be re-audited. This prevents drift where a
 note is edited after audit and silently inherits the prior clean tag.
+
+Premise edits follow the same rule at the granularity the auditor declared
+(owner ruling 2026-10-18). An audit that returns `premises_used` is bound by
+`science_fingerprint_v3` to exactly those premise units (one mapped axiom
+section, or one whole approved-primitive note) plus each node's shared
+clauses; an edit to an unlisted axiom section or to unmapped commentary in a
+premise source does not re-open it. An audit without a declaration stays
+bound to the whole premise surface exactly as before. A seat that lands on a
+row already holding a judgment (a second critical seat, a re-audit) binds the
+union of every declaration, and if any of those judgments omitted one the row
+stays bound to the whole premise surface. A runner that declares a premise
+source as an
+`AUDIT_INPUT_PATHS` input still binds that file's exact bytes. Units are
+defined in `docs/audit/data/premise_clause_map.json`; an unmapped subsection
+added under the axiom section fails closed until it is mapped.
 
 ## 7. What this does not require
 

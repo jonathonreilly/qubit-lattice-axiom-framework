@@ -10,6 +10,17 @@ match exactly before any prior judgment can be reused.
 The fingerprint is shared by apply, invalidation, restoration, and queue
 routing.  Do not mirror this logic in a caller: a provenance comparison is a
 security boundary and must have one producer/comparator.
+
+``science_fingerprint_v3`` (owner ruling 2026-10-18) adds premise scoping.  A
+v3 judgment either binds the whole framework premise surface exactly as v2
+did (``premise_scope.basis = fail_closed``), or binds only the premise units
+its auditor declared in ``premises_used`` (``basis = declared``).  A premise
+unit is one mapped clause of a premise source (for example the Record axiom
+section of the axiom memo) or one whole unmapped premise node.  An edit to an
+axiom clause the judgment did not rely on, or to unmapped commentary in the
+memo, then leaves the judgment's science unchanged.  New judgments are stamped
+v3; stored v2 baselines are still compared by the exact v2 rule through
+``build_matching_science_fingerprint``.
 """
 from __future__ import annotations
 
@@ -27,8 +38,28 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "scripts"))
 
 
 SCIENCE_FINGERPRINT_SCHEMA = "science_fingerprint_v2"
+SCIENCE_FINGERPRINT_V3_SCHEMA = "science_fingerprint_v3"
+SCIENCE_FINGERPRINT_SCHEMAS = frozenset(
+    {SCIENCE_FINGERPRINT_SCHEMA, SCIENCE_FINGERPRINT_V3_SCHEMA}
+)
 PACKET_POLICY_FINGERPRINT_SCHEMA = "packet_policy_fingerprint_v1"
 JUDGMENT_FINGERPRINT_SCHEMA = "frozen_audit_judgment_v1"
+
+# Premise scoping (science_fingerprint_v3).  The clause map lives in its own
+# data file, not in ``axiom_premise_nodes.json``: hundreds of runners declare
+# the registry and the axiom memo as AUDIT_INPUT_PATHS, so neither file is
+# edited to carry clause boundaries.  Clauses are located by their existing
+# markdown headings.
+PREMISE_CLAUSE_MAP_PATH = "docs/audit/data/premise_clause_map.json"
+PREMISE_CLAUSE_MAP_SCHEMA = "premise_clause_map_v1"
+PREMISE_UNIT_SCHEMA = "premise_unit_v1"
+PREMISE_DECLARATION_FIELD = "premises_used"
+PREMISE_SCOPE_FAIL_CLOSED = "fail_closed"
+PREMISE_SCOPE_DECLARED = "declared"
+_PREMISE_CLAUSE_DOMAIN = b"premise-clause-v1\0"
+_CLAUSE_ID_RE = re.compile(r"^[a-z][a-z0-9_]*$")
+_MARKDOWN_HEADING_RE = re.compile(r"^(#{1,6})\s")
+_FROM_ROW = object()
 
 # These sources define which inputs are admissible, how dependency readiness
 # is interpreted, and whether runner evidence is authentic and complete.  The
@@ -488,6 +519,293 @@ def premise_classification(
     return "ordinary_claim"
 
 
+def _premise_clause_map(repo_root: Path, registry: dict) -> dict[str, dict]:
+    """Load and validate the clause map; return ``{node_id: entry}``.
+
+    Each entry names the node's declarable ``clauses`` and its
+    ``shared_clauses`` (bound together with every declared clause of that
+    node), each as ``{clause_id: exact heading line}``.  An optional
+    ``container_heading`` names the section whose every subsection must be a
+    mapped clause, so an added axiom subsection cannot hide as commentary.
+    Unmapped premise nodes are whole-node units.  A missing map means every
+    node is a whole-node unit.
+    """
+    path = repo_root / PREMISE_CLAUSE_MAP_PATH
+    if not path.exists():
+        return {}
+    value = _load_json_object(path, "premise clause map")
+    nodes = value.get("nodes")
+    if value.get("schema") != PREMISE_CLAUSE_MAP_SCHEMA or not isinstance(nodes, dict):
+        raise ScienceFingerprintError("premise clause map has an invalid shape")
+    canonical = set(registry["canonical_ids"])
+    for node_id, entry in nodes.items():
+        if node_id not in canonical:
+            raise ScienceFingerprintError(
+                f"premise clause map names a non-premise node: {node_id}"
+            )
+        if not isinstance(entry, dict):
+            raise ScienceFingerprintError(
+                f"premise clause map entry is not an object: {node_id}"
+            )
+        clauses = entry.get("clauses")
+        shared = entry.get("shared_clauses", {})
+        container = entry.get("container_heading")
+        if (
+            not isinstance(clauses, dict)
+            or not clauses
+            or not isinstance(shared, dict)
+            or set(clauses) & set(shared)
+            or (container is not None and not isinstance(container, str))
+        ):
+            raise ScienceFingerprintError(
+                f"premise clause map entry has an invalid shape: {node_id}"
+            )
+        for clause_id, heading in {**clauses, **shared}.items():
+            if not (
+                isinstance(clause_id, str)
+                and _CLAUSE_ID_RE.fullmatch(clause_id)
+                and isinstance(heading, str)
+                and _MARKDOWN_HEADING_RE.match(heading)
+                and heading == heading.strip()
+            ):
+                raise ScienceFingerprintError(
+                    f"premise clause map has an invalid clause: "
+                    f"{node_id}:{clause_id}"
+                )
+    return nodes
+
+
+def _markdown_sections(source: bytes, path: Path) -> list[tuple[str, int, bytes]]:
+    """Split markdown into ``(heading, level, section_bytes)`` sections.
+
+    A section runs from its heading line to the next heading of the same or a
+    higher level.  Lines inside fenced code blocks are never headings.  The
+    returned bytes are exact source bytes, heading line included.
+    """
+    try:
+        source.decode("utf-8")
+    except UnicodeDecodeError as exc:
+        raise ScienceFingerprintError(
+            f"premise source is not valid UTF-8: {path}"
+        ) from exc
+    lines = source.splitlines(keepends=True)
+    headings: list[tuple[int, str, int]] = []
+    in_fence = False
+    for index, raw in enumerate(lines):
+        text = raw.decode("utf-8").rstrip("\r\n")
+        if text.lstrip().startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        match = _MARKDOWN_HEADING_RE.match(text)
+        if match:
+            headings.append((index, text, len(match.group(1))))
+    sections: list[tuple[str, int, bytes]] = []
+    for position, (start, text, level) in enumerate(headings):
+        end = len(lines)
+        for later_start, _later_text, later_level in headings[position + 1:]:
+            if later_level <= level:
+                end = later_start
+                break
+        sections.append((text, level, b"".join(lines[start:end])))
+    return sections
+
+
+def _premise_clause_texts(
+    repo_root: Path,
+    node_id: str,
+    current_path: str,
+    entry: dict,
+) -> dict[str, bytes]:
+    """Return exact clause bytes for one mapped node, failing closed."""
+    path = repo_root / current_path
+    try:
+        source = path.read_bytes()
+    except OSError as exc:
+        raise ScienceFingerprintError(
+            f"required scientific provenance surface is unreadable: {path}"
+        ) from exc
+    sections = _markdown_sections(source, path)
+    by_heading: dict[str, list[bytes]] = {}
+    for heading, _level, body in sections:
+        by_heading.setdefault(heading, []).append(body)
+    texts: dict[str, bytes] = {}
+    for clause_id, heading in {
+        **entry["clauses"],
+        **entry.get("shared_clauses", {}),
+    }.items():
+        found = by_heading.get(heading, [])
+        if len(found) != 1:
+            raise ScienceFingerprintError(
+                f"premise clause {node_id}:{clause_id} heading {heading!r} must "
+                f"occur exactly once in {current_path}; found {len(found)}"
+            )
+        texts[clause_id] = found[0]
+    container = entry.get("container_heading")
+    if container is not None:
+        matches = [item for item in sections if item[0] == container]
+        if len(matches) != 1:
+            raise ScienceFingerprintError(
+                f"premise container heading {container!r} must occur exactly "
+                f"once in {current_path}; found {len(matches)}"
+            )
+        container_level = matches[0][1]
+        mapped = set(entry["clauses"].values())
+        inside = False
+        for heading, level, _body in sections:
+            if heading == container:
+                inside = True
+                continue
+            if inside and level <= container_level:
+                break
+            if inside and level == container_level + 1 and heading not in mapped:
+                raise ScienceFingerprintError(
+                    f"unmapped premise subsection {heading!r} under "
+                    f"{container!r} in {current_path}; map it in "
+                    f"{PREMISE_CLAUSE_MAP_PATH} before relying on scoped "
+                    "premise fingerprints"
+                )
+    return texts
+
+
+def _clause_sha256(clause_id: str, body: bytes) -> str:
+    return hashlib.sha256(
+        _PREMISE_CLAUSE_DOMAIN + clause_id.encode("utf-8") + b"\0" + body
+    ).hexdigest()
+
+
+def premise_unit_catalog(repo_root: Path) -> dict[str, dict[str, str | None]]:
+    """Return every declarable premise unit as ``{unit_id: {node_id, clause}}``.
+
+    A mapped node contributes ``node:clause`` units for its declarable clauses
+    (shared clauses are bound implicitly).  An unmapped node is one unit whose
+    id is the node id.
+    """
+    registry = _premise_registry(repo_root)
+    clause_map = _premise_clause_map(repo_root, registry)
+    catalog: dict[str, dict[str, str | None]] = {}
+    for node_id in registry["canonical_ids"]:
+        entry = clause_map.get(node_id)
+        if entry is None:
+            catalog[node_id] = {"node_id": node_id, "clause": None}
+            continue
+        for clause_id in sorted(entry["clauses"]):
+            catalog[f"{node_id}:{clause_id}"] = {
+                "node_id": node_id,
+                "clause": clause_id,
+            }
+    return catalog
+
+
+def premise_unit_digests(
+    repo_root: Path,
+    unit_ids: list[str],
+) -> dict[str, str | None]:
+    """Digest each named premise unit; an unknown unit digests to ``None``.
+
+    A unit digest binds the node's registry membership and ownership
+    metadata, its clause-map entry, the exact unit text, and the node's
+    shared clauses.  The registry's descriptive ``note`` is excluded: the
+    axiom statements live only in the premise source (README), and every
+    axiom edit restates the whole node in that note.
+    """
+    registry = _premise_registry(repo_root)
+    clause_map = _premise_clause_map(repo_root, registry)
+    catalog = premise_unit_catalog(repo_root)
+    clause_cache: dict[str, dict[str, bytes]] = {}
+    digests: dict[str, str | None] = {}
+    for unit_id in unit_ids:
+        unit = catalog.get(unit_id)
+        if unit is None:
+            digests[unit_id] = None
+            continue
+        node_id = str(unit["node_id"])
+        node = registry["nodes"][node_id]
+        current_path = node["current_path"]
+        entry = clause_map.get(node_id)
+        body: dict[str, Any] = {
+            "schema": PREMISE_UNIT_SCHEMA,
+            "unit_id": unit_id,
+            "node_id": node_id,
+            "registry_entry": {
+                key: node.get(key)
+                for key in ("current_path", "aliased_paths", "legacy_claim_ids")
+            },
+            "clause_map_entry": entry,
+        }
+        if entry is None:
+            body["source_sha256"] = _file_sha256(
+                repo_root / current_path,
+                required=True,
+            )
+        else:
+            if node_id not in clause_cache:
+                clause_cache[node_id] = _premise_clause_texts(
+                    repo_root, node_id, current_path, entry
+                )
+            texts = clause_cache[node_id]
+            clause_id = str(unit["clause"])
+            body["clause_sha256"] = _clause_sha256(clause_id, texts[clause_id])
+            body["shared_clause_sha256"] = {
+                shared_id: _clause_sha256(shared_id, texts[shared_id])
+                for shared_id in sorted(entry.get("shared_clauses", {}))
+            }
+        digests[unit_id] = _digest(body)
+    return digests
+
+
+def normalize_premise_declaration(
+    declared: object,
+    deps: list[str],
+    repo_root: Path,
+) -> list[str]:
+    """Return the sorted unit set a declared judgment binds.
+
+    Every direct dependency on a premise node binds at least that node: when
+    the declaration names no unit of a directly cited premise node, all of
+    that node's units are added.  Unknown unit ids are kept so that a unit
+    removed from the registry or clause map fails the comparison instead of
+    silently dropping out of scope.
+    """
+    if not isinstance(declared, list) or not all(
+        isinstance(item, str) and item for item in declared
+    ):
+        raise ScienceFingerprintError(
+            f"{PREMISE_DECLARATION_FIELD} must be a list of premise unit ids"
+        )
+    catalog = premise_unit_catalog(repo_root)
+    canonical = set(_premise_registry(repo_root)["canonical_ids"])
+    units = set(declared)
+    declared_nodes = {
+        str(catalog[unit]["node_id"]) for unit in units if unit in catalog
+    }
+    for dep_id in deps:
+        if dep_id in canonical and dep_id not in declared_nodes:
+            units.update(
+                unit_id
+                for unit_id, unit in catalog.items()
+                if unit["node_id"] == dep_id
+            )
+    return sorted(units)
+
+
+def premise_declaration_error(declared: object, repo_root: Path) -> str | None:
+    """Validate an auditor's incoming ``premises_used`` declaration."""
+    if not isinstance(declared, list):
+        return f"{PREMISE_DECLARATION_FIELD} must be a list of premise unit ids"
+    if len(declared) != len(set(map(str, declared))):
+        return f"{PREMISE_DECLARATION_FIELD} must not repeat a premise unit"
+    catalog = premise_unit_catalog(repo_root)
+    for item in declared:
+        if not isinstance(item, str) or item not in catalog:
+            return (
+                f"{PREMISE_DECLARATION_FIELD} names an unknown premise unit "
+                f"{item!r}; valid units: {sorted(catalog)}"
+            )
+    return None
+
+
 def framework_premise_epoch(repo_root: Path) -> str:
     """Bind premise membership, governance metadata, paths, and source bytes.
 
@@ -683,14 +1001,12 @@ def _runner_state(path: str, role: str, repo_root: Path) -> dict[str, Any]:
     return state
 
 
-def build_science_fingerprint(
+def _science_inputs(
     row: dict,
     rows: dict[str, dict],
     repo_root: Path,
-    *,
-    epoch_cache: dict[str, str] | None = None,
 ) -> dict[str, Any]:
-    """Build the exact scientific-input baseline for one audit judgment."""
+    """Collect the target, dependency and runner surfaces shared by v2/v3."""
     claim_id = row.get("claim_id")
     note_path = row.get("note_path")
     if not isinstance(claim_id, str) or not claim_id:
@@ -750,8 +1066,8 @@ def build_science_fingerprint(
         raise ScienceFingerprintError(f"audit row {claim_id} has invalid helper paths")
     runners.extend(_runner_state(path, "helper", repo_root) for path in helpers)
 
-    body: dict[str, Any] = {
-        "schema": SCIENCE_FINGERPRINT_SCHEMA,
+    return {
+        "deps": deps,
         "target": {
             "claim_id": claim_id,
             "note_path": note_path,
@@ -762,6 +1078,23 @@ def build_science_fingerprint(
         },
         "dependencies": dependency_states,
         "runners": runners,
+    }
+
+
+def _build_science_fingerprint_v2(
+    row: dict,
+    rows: dict[str, dict],
+    repo_root: Path,
+    *,
+    epoch_cache: dict[str, str] | None = None,
+) -> dict[str, Any]:
+    """Rebuild a v2 baseline exactly, for comparison with stored v2 judgments."""
+    inputs = _science_inputs(row, rows, repo_root)
+    body: dict[str, Any] = {
+        "schema": SCIENCE_FINGERPRINT_SCHEMA,
+        "target": inputs["target"],
+        "dependencies": inputs["dependencies"],
+        "runners": inputs["runners"],
         "framework_premise_epoch": _epoch_value(
             repo_root,
             epoch_cache,
@@ -779,19 +1112,178 @@ def build_science_fingerprint(
     return body
 
 
+def build_science_fingerprint(
+    row: dict,
+    rows: dict[str, dict],
+    repo_root: Path,
+    *,
+    epoch_cache: dict[str, str] | None = None,
+    premise_declaration: object = _FROM_ROW,
+) -> dict[str, Any]:
+    """Build the exact scientific-input baseline for one audit judgment.
+
+    The premise scope comes from the row's ``premises_used`` unless the caller
+    passes ``premise_declaration`` (``None`` forces the fail-closed scope).
+    Callers that compare against a stored baseline must use
+    ``build_matching_science_fingerprint`` so the baseline's own schema and
+    scope are reproduced.
+    """
+    declaration = (
+        row.get(PREMISE_DECLARATION_FIELD)
+        if premise_declaration is _FROM_ROW
+        else premise_declaration
+    )
+    inputs = _science_inputs(row, rows, repo_root)
+    dependencies = inputs["dependencies"]
+    if declaration is None:
+        premise_scope: dict[str, Any] = {"basis": PREMISE_SCOPE_FAIL_CLOSED}
+        framework_epoch: str | None = _epoch_value(
+            repo_root,
+            epoch_cache,
+            "framework_premise_epoch",
+            framework_premise_epoch,
+        )
+    else:
+        units = normalize_premise_declaration(
+            declaration, inputs["deps"], repo_root
+        )
+        catalog = premise_unit_catalog(repo_root)
+        scoped_dependencies: list[dict[str, Any]] = []
+        for state in dependencies:
+            if state["premise_classification"] == "accepted_premise":
+                # The node's whole-file hash is replaced by the scoped unit
+                # digests below; an edit outside those units is not a change
+                # to this judgment's scientific basis.
+                state = {
+                    **state,
+                    "note_sha256": None,
+                    "ledger_note_hash": None,
+                    "premise_units": [
+                        unit_id
+                        for unit_id in units
+                        if (catalog.get(unit_id) or {}).get("node_id")
+                        == state["claim_id"]
+                    ],
+                }
+            scoped_dependencies.append(state)
+        dependencies = scoped_dependencies
+        premise_scope = {
+            "basis": PREMISE_SCOPE_DECLARED,
+            "declared": sorted(set(declaration)),
+            "units": premise_unit_digests(repo_root, units),
+        }
+        framework_epoch = None
+    body: dict[str, Any] = {
+        "schema": SCIENCE_FINGERPRINT_V3_SCHEMA,
+        "target": inputs["target"],
+        "dependencies": dependencies,
+        "runners": inputs["runners"],
+        "premise_scope": premise_scope,
+        "framework_premise_epoch": framework_epoch,
+        "dependency_policy_epoch": _epoch_value(
+            repo_root,
+            epoch_cache,
+            "dependency_policy_epoch",
+            dependency_policy_epoch,
+        ),
+    }
+    body["digest"] = _digest(body)
+    return body
+
+
+def build_matching_science_fingerprint(
+    baseline: object,
+    row: dict,
+    rows: dict[str, dict],
+    repo_root: Path,
+    *,
+    epoch_cache: dict[str, str] | None = None,
+) -> dict[str, Any]:
+    """Rebuild the current fingerprint in the baseline's schema and scope.
+
+    A v2 baseline is compared under the exact v2 rule.  A v3 baseline is
+    compared under its own recorded declaration, never the row's current
+    field, so a reset or rewritten row cannot narrow an archived judgment's
+    scope.  Anything else is rebuilt fail-closed and then rejected by
+    ``science_fingerprint_change`` as an invalid baseline.
+    """
+    schema = baseline.get("schema") if isinstance(baseline, dict) else None
+    if schema == SCIENCE_FINGERPRINT_SCHEMA:
+        return _build_science_fingerprint_v2(
+            row, rows, repo_root, epoch_cache=epoch_cache
+        )
+    declaration = None
+    if schema == SCIENCE_FINGERPRINT_V3_SCHEMA:
+        scope = baseline.get("premise_scope")
+        if isinstance(scope, dict) and scope.get("basis") == PREMISE_SCOPE_DECLARED:
+            declaration = scope.get("declared")
+    return build_science_fingerprint(
+        row,
+        rows,
+        repo_root,
+        epoch_cache=epoch_cache,
+        premise_declaration=declaration,
+    )
+
+
+def _premise_scope_problems(value: dict) -> list[str]:
+    scope = value.get("premise_scope")
+    if not isinstance(scope, dict):
+        return ["premise_scope:not_object"]
+    basis = scope.get("basis")
+    framework = value.get("framework_premise_epoch")
+    if basis == PREMISE_SCOPE_FAIL_CLOSED:
+        problems = []
+        if set(scope) != {"basis"}:
+            problems.append("premise_scope:unexpected_fields")
+        if not (isinstance(framework, str) and _SHA256_RE.fullmatch(framework)):
+            problems.append("framework_premise_epoch:not_sha256")
+        return problems
+    if basis != PREMISE_SCOPE_DECLARED:
+        return ["premise_scope:unknown_basis"]
+    problems = []
+    if set(scope) != {"basis", "declared", "units"}:
+        problems.append("premise_scope:unexpected_fields")
+    if framework is not None:
+        problems.append("framework_premise_epoch:not_null_for_declared_scope")
+    declared = scope.get("declared")
+    units = scope.get("units")
+    if not (
+        isinstance(declared, list)
+        and all(isinstance(item, str) and item for item in declared)
+        and declared == sorted(set(declared))
+    ):
+        problems.append("premise_scope:declared_invalid")
+    if not (
+        isinstance(units, dict)
+        and all(
+            isinstance(unit, str)
+            and (digest is None or (isinstance(digest, str) and _SHA256_RE.fullmatch(digest)))
+            for unit, digest in units.items()
+        )
+    ):
+        problems.append("premise_scope:units_invalid")
+    elif isinstance(declared, list) and not set(declared) <= set(units):
+        problems.append("premise_scope:declared_not_bound")
+    return problems
+
+
 def science_fingerprint_problems(value: object) -> list[str]:
     if not isinstance(value, dict):
         return ["fingerprint:not_object"]
     problems: list[str] = []
-    if value.get("schema") != SCIENCE_FINGERPRINT_SCHEMA:
-        problems.append("schema:not_science_fingerprint_v2")
+    schema = value.get("schema")
+    if schema not in SCIENCE_FINGERPRINT_SCHEMAS:
+        problems.append("schema:unsupported_science_fingerprint")
     if not isinstance(value.get("target"), dict):
         problems.append("target:not_object")
     if not isinstance(value.get("dependencies"), list):
         problems.append("dependencies:not_list")
     if not isinstance(value.get("runners"), list):
         problems.append("runners:not_list")
-    if not (
+    if schema == SCIENCE_FINGERPRINT_V3_SCHEMA:
+        problems.extend(_premise_scope_problems(value))
+    elif not (
         isinstance(value.get("framework_premise_epoch"), str)
         and _SHA256_RE.fullmatch(value["framework_premise_epoch"])
     ):
@@ -823,6 +1315,21 @@ def science_fingerprint_change(
     assert isinstance(before, dict) and isinstance(after, dict)
     if before["digest"] == after["digest"]:
         return None
+    if before["schema"] != after["schema"]:
+        return "science_changed:fingerprint_schema"
+    if before["schema"] == SCIENCE_FINGERPRINT_V3_SCHEMA:
+        before_scope = before["premise_scope"]
+        after_scope = after["premise_scope"]
+        if (
+            before_scope.get("basis") != after_scope.get("basis")
+            or before_scope.get("declared") != after_scope.get("declared")
+        ):
+            return "science_changed:premise_scope"
+        before_units = before_scope.get("units") or {}
+        after_units = after_scope.get("units") or {}
+        for unit_id in sorted(set(before_units) | set(after_units)):
+            if before_units.get(unit_id) != after_units.get(unit_id):
+                return f"science_changed:premise_unit:{unit_id}"
     if before["framework_premise_epoch"] != after["framework_premise_epoch"]:
         return "science_changed:framework_premise_epoch"
     if before["dependency_policy_epoch"] != after["dependency_policy_epoch"]:
@@ -851,6 +1358,7 @@ def science_fingerprint_change(
         "claim_scope",
         "effective_status",
         "premise_classification",
+        "premise_units",
     )
     for dep_id in sorted(before_deps):
         for field in dependency_fields:
@@ -923,12 +1431,15 @@ def judgment_fingerprint(row: dict) -> dict[str, Any]:
         "runner_check_breakdown",
         "cross_confirmation",
     )
+    judgment = {field: row.get(field) for field in fields}
+    # Bound only when present: judgments frozen before premise scoping never
+    # carried the field, and their digests must not move.
+    if row.get(PREMISE_DECLARATION_FIELD) is not None:
+        judgment[PREMISE_DECLARATION_FIELD] = row.get(PREMISE_DECLARATION_FIELD)
     body: dict[str, Any] = {
         "schema": JUDGMENT_FINGERPRINT_SCHEMA,
         "claim_id": row.get("claim_id"),
-        "judgment": _without_packet(
-            {field: row.get(field) for field in fields}
-        ),
+        "judgment": _without_packet(judgment),
     }
     body["digest"] = _digest(body)
     return body

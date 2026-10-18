@@ -1,7 +1,7 @@
 ---
 claim_id: no_translation_covariant_lattice_relabelling_algebra_of_any_range_closes_like_the_continuum_and_the_uniform_lapse_bracket_needs_a_non_local_leibniz_rule_bounded_theorem_note_2026-10-18
 claim_type: bounded_theorem
-claim_scope: "Pure lattice mathematics about supplied relabelling generators; no dynamics adopted. (B, arc lemma) Let G be a linear, injective, translation-covariant map from L-periodic relabelling fields xi to generators, whose L-periodic sector closes under a Lie bracket within span G with field-independent structure constants, so that X_n = G[exp(2 pi i n x/L)], n in Z_L, is a basis of a finite-dimensional complex Lie algebra graded by momentum, [X_a, X_b] = c(a,b) X_(a+b), Lam_n = c(0,n). In d > 1 the statement is about the e_1 sector xi = xi(x_1) e_1 and additionally needs covariance under x_j -> -x_j for j != 1; on Z it needs a periodic-xi extension (pointwise structure constants c(k,q)). Assume (S): Lam_1 != 0 and [X_1, X_-1] != 0. Then Lam_-1 = -Lam_1, H = 2 X_0/Lam_1, E = X_1, F = (2/(Lam_1 c(1,-1))) X_-1 span an sl2, and for L >= 4 the momenta {2, ..., L-2} split into arcs of consecutive momenta, each the weight basis of one irreducible sl2-module, with Lam_n/Lam_1 = n - (arc centre). Hence 2 Lam_n/Lam_1 is an integer, Lam_n/Lam_1 is not in n + LZ, and Lam_2/Lam_1 is in {0, -1/2, ..., -(L-4)/2}: the continuum value 2, and any approach Lam(2k)/Lam(k) -> 2 at k = 2 pi/L, is excluded on every torus where (S) holds. L = 3 (sl2 itself) is a genuine exception. Locality, bilinearity and the choice of lattice bracket are not used; the hypothesis Lam_n != 0 is not needed. Exact certificates: Groebner over QQ (two equation generators) for L = 4-9 (Lam_2 = 2 inconsistent with and without Lam_n != 0), the consistent Lam_2 grid set for L = 4-7 (L = 8 with --slow), the exact projection to (Lam_2..Lam_(L-2)) for L = 4-7; every arc partition realised exactly for L = 3-12. (A) The uniform-nonuniform sub-bracket [X_0, X_p] in span X_p requires f(k'+p,k')[d(k'+p) - d(k') - C(p)] = 0; on Z with continuous d and f nonzero on a dense set (automatic for finite range) d is constant; on Z_L the jumps of d sit on zeros of f; SLAC closes it iff f vanishes on the wrap set (f not identically zero off it; L odd, or a convention at p = L/2). (C) At uniform xi, closure of {G, C} at order phi^2 needs a lattice Leibniz rule a(k1,k2)[lam(k1) + lam(k2) - lam'(k1+k2)] = 0; with full-support product kernel a, lam - lam(0) is a homomorphism Z_L -> C, so lam = 0 for every D that annihilates constants (SLAC included); on Z a continuous lam with local a gives the same; SLAC with the anti-aliased (no-wrap) product solves it with N' = +D_SLAC N. Sub-cases: SLAC no-wrap sub-brackets exact; band-limited windows exact but not invariant (not an operator identity); 2D sine algebra closes exactly and non-locally, structure constants (N/pi) sin(pi s/N) in the Weyl basis (O(a^2)), admits no adjoined uniform translation. Not claimed: anything about field-dependent structure functions, enlarged generator sets, the non-uniform factorisation lemma (floating point, unchecked), {C, C} with the non-local coupling, or any physical identification."
+claim_scope: "Pure lattice mathematics about supplied relabelling generators; no dynamics adopted. (B, arc lemma) Let G be a linear, injective, translation-covariant map from L-periodic relabelling fields xi to generators, whose L-periodic sector closes under a Lie bracket within span G with field-independent structure constants, so that X_n = G[exp(2 pi i n x/L)], n in Z_L, is a basis of a finite-dimensional complex Lie algebra graded by momentum, [X_a, X_b] = c(a,b) X_(a+b), Lam_n = c(0,n). In d > 1 the statement is about the e_1 sector xi = xi(x_1) e_1 and additionally needs covariance under x_j -> -x_j for j != 1; on Z it needs a periodic-xi extension (pointwise structure constants c(k,q)). Assume (S): Lam_1 != 0 and [X_1, X_-1] != 0. Then Lam_-1 = -Lam_1, H = 2 X_0/Lam_1, E = X_1, F = (2/(Lam_1 c(1,-1))) X_-1 span an sl2, and for L >= 4 the momenta {2, ..., L-2} split into arcs of consecutive momenta, each the weight basis of one irreducible sl2-module, with Lam_n/Lam_1 = n - (arc centre). Hence 2 Lam_n/Lam_1 is an integer, Lam_n/Lam_1 is not in n + LZ, and Lam_2/Lam_1 is in {0, -1/2, ..., -(L-4)/2}: the continuum value 2, and any approach Lam(2k)/Lam(k) -> 2 at k = 2 pi/L, is excluded on every torus where (S) holds. L = 3 (sl2 itself) is a genuine exception. Locality, bilinearity and the choice of lattice bracket are not used; the hypothesis Lam_n != 0 is not needed. Exact certificates: Groebner over QQ (two equation generators) for L = 4-9 (Lam_2 = 2 inconsistent with and without Lam_n != 0), the consistent Lam_2 grid set for L = 4-7 (L = 8 with --slow), the exact projection to (Lam_2..Lam_(L-2)) for L = 4-7; every arc partition realised exactly for L = 3-12. (A) The uniform-nonuniform sub-bracket [X_0, X_p] in span X_p requires f(k'+p,k')[d(k'+p) - d(k') - C(p)] = 0; on Z, if it closes for every p, with continuous d and each f nonzero on a dense set (automatic for finite range), d is constant; on Z_L the jumps of d sit on zeros of f; SLAC closes it iff f vanishes on the wrap set (f not identically zero off it; L odd, or a convention at p = L/2). (C) At uniform xi, closure of {G, C} at order phi^2 needs a lattice Leibniz rule a(k1,k2)[lam(k1) + lam(k2) - lam'(k1+k2)] = 0; with full-support product kernel a, lam - lam(0) is a homomorphism Z_L -> C, so lam = 0 for every D that annihilates constants (SLAC included); on Z a continuous lam with finite-range a (or a nonzero on a dense set) gives the same, while a summable D with a band-limited product is not excluded; SLAC with the anti-aliased (no-wrap) product solves it with N' = +D_SLAC N. Sub-cases: SLAC no-wrap sub-brackets exact; band-limited windows exact but not invariant (not an operator identity); 2D sine algebra closes exactly and non-locally, structure constants (N/pi) sin(pi s/N) in the Weyl basis (O(a^2)), admits no adjoined uniform translation. Not claimed: anything about field-dependent structure functions, enlarged generator sets, the non-uniform factorisation lemma (floating point, unchecked), {C, C} with the non-local coupling, or any physical identification."
 upstream_dependencies:
   - curvature_member_closure_with_matter_forces_one_common_cone_and_the_lorentzian_sign_and_has_an_order_a_squared_obstruction_bounded_theorem_note_2026-10-18
   - admissibility_rule_the_curvature_members_constraint_algebra_closes_on_the_lattice_only_at_beta_equals_minus_alpha_and_there_the_walkers_own_states_cannot_be_its_content_bounded_theorem_note_2026-09-24
@@ -24,8 +24,8 @@ The companion scalar note (same PR) finds that the curvature member's `{G, C}` b
 
 ## Answer
 
-- **Non-locality is necessary** for the two sub-brackets tested. On Z, every local or summable discretisation fails them (Theorems A and C). On every torus, Theorem C also excludes every `D` once the density product has full support.
-- **It is not sufficient.** No relabelling algebra of any range closes exactly while matching the continuum at the longest wavelength, on any torus with `L ≥ 4` or on Z (Theorem B, arc lemma).
+- **Non-locality is necessary** for the two sub-brackets tested. On Z, every finite-range discretisation fails them, and so does every summable one whose transport symbol (Theorem A) or density-product kernel (Theorem C) is non-zero on a dense set (Theorems A and C). On every torus, Theorem C also excludes every `D` once the density product has full support.
+- **It is not sufficient.** A relabelling algebra of any range that closes exactly and matches the continuum at the longest wavelength ((S)) has `Λ_2/Λ_1 ≤ 0`, never the continuum value 2, and no `Λ_n = nΛ_1` with `n ∉ {0, ±1}`, on any torus with `L ≥ 4` or on Z (Theorem B, arc lemma). Such algebras exist abstractly (B4): what is lost is the continuum spectrum beyond `|n| = 1`, not closure itself.
 - **What SLAC and band-limited constructions give:** exact sub-brackets; exact closure on band-limited windows, which is not an operator identity; and an exact uniform-lapse Leibniz rule, but with a fully non-local lapse–strain coupling once ξ is non-uniform (floating point, unchecked).
 - **Boundary case.** The 2D sine algebra closes exactly and non-locally; it contains no uniform translation, so Theorem B does not apply.
 
@@ -55,7 +55,7 @@ The companion scalar note (same PR) finds that the curvature member's `{G, C}` b
    - (i) `2Λ_n/Λ_1 ∈ Z`.
    - (ii) `Λ_n/Λ_1 ∉ n + LZ` for `n ∉ {0, ±1}`, so `Λ_n ≠ nΛ_1`.
    - `Λ_2/Λ_1 ∈ {0, −½, …, −(L−4)/2}`, so `Λ_2/Λ_1 ≤ 0`: the second mode moves opposite to the first.
-   - The physical requirement is weaker than matching the continuum: even `Λ(2k)/Λ(k) → 2` is excluded for every `k = 2π/L` at which (S) holds.
+   - The physical requirement is weaker than matching the continuum, and it still fails: `Λ(2k)/Λ(k) ≤ 0` at every `k = 2π/L` (L ≥ 4) at which (S) holds, so even `Λ(2k)/Λ(k) → 2` is excluded.
 4. **L = 3 is a genuine exception:** the algebra is `sl2` itself, and no second mode exists.
 
 **Reading.** A finite-dimensional translation-covariant algebra can carry the Witt pattern only on its `sl2` core. Everything else is a sum of `sl2`-irreducibles whose `D`-eigenvalues are centred on their own arcs, not proportional to momentum.
@@ -83,7 +83,7 @@ The companion scalar note (same PR) finds that the curvature member's `{G, C}` b
   - On each, `Λ_n` = momentum minus arc centre, the φ-fixed momenta are exactly `{0, ±1}`, and δ is additive.
   - So the arc set is attained, not merely an upper bound.
   - These are abstract graded algebras. Whether any is realised by relabellings of a lattice field is not claimed.
-- **Scope of the certificates.** The "L = 4–9" certificate used (Z). The no-(Z) certificates cover L = 4–9 here. In the campaign, the checker covered L = 4–8 and the worker L = 5–8. The general statement rests on the proof.
+- **Scope of the certificates.** The campaign's "L = 4–9" certificate used (Z); this runner adds no-(Z) certificates for L = 4–9 (B3_noZ). In the campaign, the no-(Z) checks covered L = 4–8 (checker) and L = 5–8 (worker). The general statement rests on the proof.
 
 ## Theorem A: the uniform–non-uniform sub-bracket
 
@@ -91,11 +91,12 @@ Write `X_p e_{k'} = f(k'+p, k') e_{k'+p}` in the momentum basis and `D e_k = d(k
 
 `f(k'+p, k') [d(k'+p) − d(k') − C(p)] = 0` for all `k'`.
 
-- **On Z.** Suppose `d` is continuous, which holds for any summable kernel, and `f(·+p, ·)` is non-zero on a dense set. Then `d(k+p) − d(k) = C(p)` everywhere, `C` is a continuous additive function on the circle, so `C = 0` and `d` is constant. The density condition is per `p`. It is automatic for finite range, where `f` is a non-zero trigonometric polynomial. A non-constant `d` therefore needs a discontinuous symbol, that is a non-summable kernel such as SLAC.
+- **On Z.** Suppose the sub-bracket closes for every `p`, `d` is continuous, which holds for any summable kernel, and each `f(·+p, ·)` is non-zero on a dense set. Then `d(k+p) − d(k) = C(p)` everywhere, `C` is a continuous additive function on the circle, so `C = 0` and `d` is constant. The density condition is per `p`. It is automatic for finite range, where `f` is a non-zero trigonometric polynomial. A non-constant `d` therefore needs a discontinuous symbol, that is a non-summable kernel such as SLAC.
+- *Reviewer's remark (consolidation review; unchecked).* For summable transports, the density premise may be unnecessary: `f(k, k) = d(k)` gives closure locally near `(0, k)` wherever `d(k) ≠ 0`, so `d` is locally affine and hence constant.
 - **On Z_L.** The jumps of `d`, the `k'` where `d(k'+p) − d(k') ≠ C(p)`, must sit on zeros of `f`.
 - **SLAC.** With `d = i k̄`, the jump is the wrap (Umklapp) set `|k̄' + p̄| > L/2`. SLAC closes this sub-bracket iff `f` vanishes on the wrap set. This assumes `f` is not identically zero on the non-wrap set, so that `C(p) = ip̄` is fixed. For even L, `p = L/2` needs a convention; the runner uses odd L.
 - **Runner.**
-  - **A1:** exact Laurent-polynomial certificates on Z for three finite-range transports: B14's central `G_m`, a fourth-order improved one, and a random rational range-3 one.
+  - **A1:** exact Laurent-polynomial certificates on Z for three finite-range transports: B14's central `G_m`, a fourth-order improved one, and a random rational range-3 one. For each, the gcd of the non-constant z-coefficients is `y − 1`.
   - **A2:** SLAC no-wrap `[Y_0, Y_p] = p̄ Y_p` exactly, for L = 5, 7, 9 and `w = 0, ½, −1`.
   - **A3:** the aliased SLAC, with `f` kept on the wrap set, fails for every `p ≠ 0`.
 
@@ -110,8 +111,8 @@ Write `X_p e_{k'} = f(k'+p, k') e_{k'+p}` in the momentum basis and `D e_k = d(k
 "(b)" is exact closure of `{G[ξ], C(N)}` at order φ² into `H(N′)` plus coupling terms, as in the companion scalar note.
 
 - **Reduction.** At uniform ξ the gravity relabelling `G_g` vanishes, because it is built from differences of ξ. Every lapse–strain coupling also drops out, since `δ_ξ h = 0`. So (b) requires `{P, H(N)} = H(N′)`, with `P = G[1] = πᵀDφ` and `H(N) = Σ N_x h_x`. The density `h` is built with a bilinear product of kernel `a(k₁, k₂)`.
-- **The condition.** In momentum space: `a(k₁, k₂) · [λ(k₁) + λ(k₂) − λ′(k₁+k₂)] = 0`. Here `λ` is the symbol of `D` on φ, `λ′` the symbol of the lapse map `N′ = D′N`, and the π symbol is `−λ(−k)`, which equals `λ(k)` for real antisymmetric `D`.
-- **Full-support kernel** (for example any ultralocal product). Setting `k₂ = 0` gives `λ′ = λ + λ(0)`, so `λ − λ(0)` is a homomorphism `Z_L → C` and hence zero. `λ(0) = 0` because `D` annihilates constants. So `λ = 0` for every `D`, SLAC included, and (b) fails at uniform ξ. On Z, a continuous `λ` with a local kernel `a` gives the same conclusion.
+- **The condition.** In momentum space: `a(k₁, k₂) · [λ(k₁) + λ(k₂) − λ′(k₁+k₂)] = 0`. Here `λ` is the symbol of `D` on φ and `λ′` the symbol of the lapse map `N′ = D′N`. The symbol entering the π–π sector is `−λ(−k)`, which equals `λ(k)` only for real antisymmetric `D`. The conclusions below are unchanged, because the argument applies to whichever symbol enters.
+- **Full-support kernel** (for example any ultralocal product). Setting `k₂ = 0` gives `λ′ = λ + λ(0)`, so `λ − λ(0)` is a homomorphism `Z_L → C` and hence zero. `λ(0) = 0` because `D` annihilates constants. So `λ = 0` for every `D`, SLAC included, and (b) fails at uniform ξ. On Z, a continuous `λ` with a finite-range kernel `a` (more generally, any `a` non-zero on a dense set) gives the same. A summable `D` with a band-limited product is not excluded. Take `λ = λ′ = i g(k)`, with `g` smooth, odd and equal to `k` on `|k| < 2π/3`, and a smooth `a` supported in `|k₁|, |k₂|, |k₁+k₂| < π/3`. This solves the condition, although `H(1)` then misses the high modes.
   - Correction adopted from the check: the earlier wording "λ is a homomorphism" is replaced by "λ − λ(0) is the zero homomorphism, and λ(0) = 0".
   - Exact nullspace (C1): the solution space is `span{λ = 1, λ′ = 2}` for L = 4–9.
 - **The exact case.** Take SLAC with the anti-aliased (no-wrap) product, `a = 1` iff `|k̄₁|, |k̄₂|, |k̄₁ + k̄₂| ≤ m`. Then `λ = λ′ = k̄` solves the condition, with `N′ = +D_SLAC N`. Exactly (C2), the no-wrap solution space is `span{const, k̄}` for L = 5, 7, 9. The sign follows from `{P, F} = −𝒟F`, where `𝒟` is the induced derivation, together with summation by parts. Floating point (F_C4) confirms `N′ = +D_SLAC N` to 1e−14. The first campaign run expected the opposite sign; its log is kept as a bug record.
@@ -131,13 +132,13 @@ The area-preserving relabellings of a lattice scalar on `Z_N²` are realised thr
 
 - **B19 (lattice non-closure of the relabellings).** B19 certified exactly, at L = 3 and 4, that the lattice `G_m` does not close.
   - Theorem A shows that on Z no finite-range `G_m` closes even the uniform sub-bracket. On small tori, Theorem A alone does not decide; B19's certificates do.
-  - Theorem B shows that no translation-covariant replacement of any range closes while keeping (S). Interpretation: B19's non-closure is not an artefact of range.
+  - Theorem B shows that no translation-covariant replacement of any range closes while keeping (S) and the continuum ratio `Λ_2 = 2Λ_1` (or any `Λ_n = nΛ_1`, `n ∉ {0, ±1}`). Interpretation: B19's non-closure is not an artefact of range.
   - The 09-24 gravity relabelling `G_g` is linear on the lattice, hence abelian, so it fails (S). Theorem B concerns the matter relabellings and any relabelling meant to close like vector fields.
 - **B14 E5 / companion note Result 3, and B16 T6d (interpretation, partly supported here).**
   - The companion note's obstruction monomial `ob = −¼ ξ_b (N_{x+e} − N_x)(π_{x+e} − π_x)²` survives at `ξ ≡ 1`. There `G_g` and every coupling vanish.
   - Its π–π sector has an ultralocal, full-support product and the central `D ≠ 0`, so it is the full-support case of Theorem C.
   - Runner C3 checks the 1D reduction exactly: `{G_m[1], ½ Σ N π²} = ½ Σ (N_{x+1} − N_x) π_x π_{x+1}`, whose off-diagonal part is that of `ob`.
-  - B16 T6d reported the B14 obstruction at uniform shift. That B14 E5 and B16 T6d are instances of Theorem C was not independently verified by the campaign check. C3 is a same-family consolidation check in 1D only.
+  - B16 T6d reported the B14 obstruction at uniform shift. That B14 E5 and B16 T6d are instances of Theorem C was not independently verified by the campaign check. C3 is a same-family consolidation check in 1D; the consolidation review re-derived it in 2D (same family).
 - **B15.** B15's fermion no-go (range-2 and mixed-diagonal lapse pairs) is a separate mechanism and is not derived from Theorems A–C.
 
 ## Premises
@@ -208,7 +209,7 @@ The negative sentences:
   - The checks prefixed `F_` are floating point: the Leibniz bracket with SLAC, and sine-algebra non-locality.
   - The campaign's Levenberg–Marquardt runs (400 starts, L = 5–8) are corroboration only.
 - **N5 — wording.**
-  - "Closes like the continuum" means (P2) together with (S).
+  - "Closes like the continuum" means (P2) together with (S) and the continuum spectrum at some `n ∉ {0, ±1}` (in particular `Λ_2 = 2Λ_1`). (P2) with (S) alone is attainable (B4).
   - "Range" means the real-space support of the kernel.
   - "Non-local" means not absolutely summable, or full-torus support.
   - "O(a²)" means the order of the first deviation of the structure constants at fixed integer momenta.
@@ -219,7 +220,7 @@ The negative sentences:
     - Its content here is the application, under explicit premises, to lattice relabelling maps.
   - *"(P2) is too strong; physical lattices need not close within span G."*
     - Reply: yes, this is the premise.
-    - The theorem says exact closure must give up one of (P2), (S), one generator per momentum, or the uniform translation.
+    - The theorem says a lattice relabelling algebra must give up one of (P2), (S), one generator per momentum, the uniform translation, or the continuum ratio `Λ_2 = 2Λ_1`. Keeping all but the last, exact closure is attainable (B4).
   - *"The window is exact."*
     - Reply: only on vectors that stay inside it, and it is not invariant.
   - *"The SLAC Leibniz case shows exact (b)."*
@@ -227,7 +228,7 @@ The negative sentences:
     - The non-uniform part needs a full-range coupling, and this was found by unchecked floating-point numerics.
 - **N8 — earlier claims.**
   - The companion notes' `O(a²)` and `O(a)` obstructions are unchanged.
-  - This note says that the uniform-ξ part of the scalar one cannot be removed by any `D` while the π product has full support, nor on Z by a summable `D` with a local product. It also says that no relabelling of any range removes the `{G, G}` defect under (S), (P1) and (P2).
+  - This note says that the uniform-ξ part of the scalar one cannot be removed by any `D` while the π product has full support, nor on Z by a summable `D` with a local product. It also says that no relabelling of any range satisfying (P1) and (S) removes the `{G, G}` defect, that is achieves (P2), while keeping `Λ_2 = 2Λ_1`.
   - The campaign C3 statements "affine sl2", "|Λ_2/Λ_1 − 2| ≥ ½", "O(a)" for the sine algebra, and "λ is a homomorphism" are superseded by the corrected forms above.
 
 ## Independent check
@@ -257,7 +258,21 @@ This runner keeps both Gröbner generators: B0–B2 are the checker's, B3 the wo
 - B4, the explicit realisations;
 - exact rewrites of the SLAC, window, Leibniz and sine-algebra checks (A1–A5, C3, S0–S4).
 
-These have not been reviewed. Re-running this runner is not a further independent check.
+- **Consolidation review.** A fresh-context reviewer of the same model family, not independent in lineage, gave the verdict "needs changes". Its corrections are applied here:
+  - Theorem B forbids the continuum spectrum, not closure (F1).
+  - The Z-side scope of Theorems A and C needs the density premise, and a band-limited summable Leibniz pair exists (F2).
+  - The `Λ(2k)/Λ(k)` wording and the certificate scope are corrected (F3).
+  - The B3_Q_L5 test is tightened.
+
+  By different paths, the reviewer also re-derived:
+  - B4, as affine-matrix realisations for L = 3–9;
+  - necessity at L = 5 and 6, by `sympy.solve`;
+  - A1's `y ≠ 1` claim (the gcd of the non-constant z-coefficients is `y − 1` for all three families);
+  - C3 in 2D (a 3×3 torus with `ξ = e₁`).
+
+  Its scripts are in `.claude/science/physics-loops/scale-ladder-campaign-20261018/NOTE_C3_review/`.
+
+Re-running this runner is not a further independent check.
 
 ## Verification
 
@@ -265,7 +280,7 @@ These have not been reviewed. Re-running this runner is not a further independen
 python3 scripts/lattice_relabelling_algebra_no_go_arc_lemma_and_non_local_leibniz_2026_10_18.py
 ```
 
-Expected: `TOTAL: PASS=103 FAIL=0`, in about 80 s (78 s measured; Python 3, sympy 1.14, numpy). Parts:
+Expected: `TOTAL: PASS=103 FAIL=0`, in about 80 s (63–78 s measured; Python 3, sympy 1.14, numpy). Parts:
 - B: Theorem B and the arc lemma (Gröbner, realisations);
 - A: Theorem A, SLAC, window, SLAC full bracket;
 - C: Theorem C and the B14 instance;

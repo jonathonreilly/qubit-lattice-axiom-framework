@@ -273,8 +273,8 @@ def part_B():
     G = sp.groebner(eqs, *[v for v in vars_ if v != lam2], lam2, order="lex", domain="QQ")
     uni = [g for g in G.exprs if g.free_symbols <= {lam2}]
     roots = set(sp.solve(uni[0], lam2)) if uni else None
-    check("B3_Q_L5", bool(uni) and roots <= {sp.Rational(1, 2), sp.Rational(-1, 2)},
-          f"L = 5, (S)+(Z), Lam_2 free: elimination ideal {uni[0] if uni else None} (2 Lam_2/Lam_1 odd)")
+    check("B3_Q_L5", bool(uni) and roots == {sp.Rational(-1, 2)},
+          f"L = 5, (S)+(Z), Lam_2 free: elimination ideal {uni[0] if uni else None} (Lam_2 = -1/2: the single arc [2,3])")
     if SLOW:
         t = time.time()
         ok, nv = worker_inconsistent(10, {1: 1, 2: 2})
@@ -397,11 +397,16 @@ def part_A():
         def zcoeffs(e):
             P = sp.Poly(sp.expand(e * z ** 8), z)
             return {mon[0] - 8: sp.expand(co) for mon, co in zip(P.monoms(), P.coeffs())}
-        varying = any(e != 0 and co != 0 for e, co in zcoeffs(g).items())
+        nonconst = [co for e, co in zcoeffs(g).items() if e != 0 and co != 0]
+        varying = bool(nonconst)
         dnz = any(e != 0 and co != 0 for e, co in zcoeffs(d(z)).items())
-        check(f"A1_{nm}", sp.expand(f) != 0 and varying and dnz,
-              "finite range on Z: f(zy,z) is a nonzero Laurent polynomial and d(zy)-d(z) has a nonconstant z-part, so "
-              "f [d(zy)-d(z)-C(y)] = 0 has no solution C(y) for y != 1: [D, X_p] not in span X_p")
+        gg = sp.gcd_list([sp.numer(sp.together(co)) for co in nonconst]) if nonconst else sp.Integer(0)
+        groots = set(sp.Poly(gg, y).all_roots()) if varying and sp.Poly(gg, y).degree() > 0 else set()
+        only_y1 = varying and groots <= {1}
+        check(f"A1_{nm}", sp.expand(f) != 0 and varying and dnz and only_y1,
+              "finite range on Z: f(zy,z) is a nonzero Laurent polynomial and d(zy)-d(z) has a nonconstant z-part whose "
+              f"coefficients have gcd {sp.factor(gg)} in y (common roots only y = 1), so f [d(zy)-d(z)-C(y)] = 0 has no "
+              "solution C(y) for y != 1: [D, X_p] not in span X_p")
     # ---- A2/A3: SLAC no-wrap sub-bracket exact; aliased (full-support f) fails
     for L in (5, 7, 9):
         for w in (Fr(0), Fr(1, 2), Fr(-1)):

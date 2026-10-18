@@ -248,7 +248,26 @@ def l3(kappa_val=None):
     return eqs
 
 
+def l0():
+    """the GR target values are the linearisation of H_m(g) = pi^2/(2 sqrt g) + sqrt g (c g^ij d_i phi d_j phi + mu phi^2)/2"""
+    eps = sp.Symbol("eps")
+    hs = sp.symbols("h00 h11 h22 h01 h02 h12")
+    g = sp.Matrix([[1 + eps * hs[0], eps * hs[3], eps * hs[4]], [eps * hs[3], 1 + eps * hs[1], eps * hs[5]], [eps * hs[4], eps * hs[5], 1 + eps * hs[2]]])
+    gp = sp.Matrix(grad("phi"))
+    sq = sp.sqrt(g.det())
+    hm = pi ** 2 / (2 * sq) + sq * (c * (gp.T * g.inv() * gp)[0, 0] + mu * phi ** 2) / 2
+    lin1 = sp.expand(sp.series(hm, eps, 0, 2).removeO().coeff(eps, 1))
+    gpl = grad("phi")
+    tgt = 0
+    for j in range(DIM):
+        tgt += hs[j] * (-pi ** 2 / 4 + c * sum(x ** 2 for x in gpl) / 4 - c * gpl[j] ** 2 / 2 + mu * phi ** 2 / 4)
+    for k, (i, j) in enumerate(PAIRS):
+        tgt += hs[3 + k] * (-c * gpl[i] * gpl[j])
+    check("L0", sp.simplify(lin1 - sp.expand(tgt)) == 0, "the metric-variational stress used as comparator: O(h) part of pi^2/(2 sqrt g) + sqrt g (c g^ij d phi d phi + mu phi^2)/2 has T_jj = -pi^2/4 + c|grad phi|^2/4 - c (d_j phi)^2/2 + mu phi^2/4, U_ij = -c d_i phi d_j phi")
+
+
 if __name__ == "__main__":
+    l0()
     l1()
     sol2 = l2()
     print("L2 solutions:", sol2)

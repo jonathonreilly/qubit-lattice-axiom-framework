@@ -614,6 +614,51 @@ def e5(rng, nconf=3, allow_gm=False):
     return param_solutions(blocks, NPAR + 1)
 
 
+def e6():
+    """Long-wavelength scaling on the lattice: residual of {G,C}_(phi^2) - H_m(N'), N' = lattice transport xi.grad N,
+    with the lattice image of the metric-variational stress vs with no coupling. Floating point (diagnostic only)."""
+    import math
+    kappa = float(KK / (4 * ALPHA))
+    mu = float(MU)
+    tw = 2 * math.pi / L
+
+    def wave(kv, ph=0.0):
+        return {x: math.cos(tw * sum(kv[i] * x[i] for i in range(3)) + ph) for x in SITES}
+    q1, q2, k1, k2 = (1, 0, 0), (0, 1, 0), (1, 1, 1), (0, -1, 2)
+    k3 = tuple(-(q1[i] + q2[i] + k1[i]) for i in range(3))
+    k4 = tuple(-(q1[i] + q2[i] + k2[i]) for i in range(3))
+    wn, wx = wave(q1), wave(q2, 0.3)
+    n = {x: 1.0 + 0.5 * wn[x] for x in SITES}
+    xi = {(x, j): (0.7 + 0.2 * j) * wx[x] for x in SITES for j in range(3)}
+    w1, w3, w2, w4 = wave(k1), wave(k3, 0.4), wave(k2, 0.1), wave(k4, 0.7)
+    phv = {x: w1[x] + w3[x] for x in SITES}
+    piv = {x: w2[x] + w4[x] for x in SITES}
+    nprime = {x: 0.5 * sum(xi[(x, j)] * (n[sh(x, j)] - n[x]) + xi[(sh(x, j, -1), j)] * (n[x] - n[sh(x, j, -1)]) for j in range(3)) for x in SITES}
+    val = {}
+    for nm, i in VAR.items():
+        if nm[0] == "phi":
+            val[i] = phv[nm[1]]
+        elif nm[0] == "pi":
+            val[i] = piv[nm[1]]
+
+    def ev(poly):
+        tot = 0.0
+        for m, cv in poly.items():
+            t = float(cv)
+            for v in m:
+                t *= val[v]
+            tot += t
+        return tot
+    base = ev(bracket(g_matter(xi), h_matter(n, KK / (4 * ALPHA))))
+    rhs = ev(h_matter(nprime, KK / (4 * ALPHA)))
+    # lattice image of the GR stress: T_jj = -pi^2/4 + kappa/4 sum S - kappa/2 S_j + mu/4 phi^2 ; U_ij = -kappa d_i phi d_j phi = -(kappa/4) Bi Bj
+    gr = {0: -0.25, 1: kappa / 4, 2: -kappa / 2, 3: mu / 4, len(DIAG_NAMES): -kappa / 4}
+    coup = sum(cf * ev(bracket(g_grav(xi), coupling_basis(n, k))) for k, cf in gr.items())
+    r_gr = base + coup - rhs
+    r_none = base - rhs
+    return base, r_gr, r_none
+
+
 if __name__ == "__main__":
     rng = random.Random(20261018)
     which = sys.argv[2] if len(sys.argv) > 2 else "all"
@@ -629,8 +674,13 @@ if __name__ == "__main__":
         print("E4 closing coupling space (dim %d):" % len(sol))
         for s in sol:
             print("   ", fmt_vec(s, ALLNAMES))
-        grad_free = all(all(ALLNAMES[k] in ("d:phi^2",) or "phi^2" == ALLNAMES[k][2:] for k in s) for s in sol)
-        check("E4", True, f"order h phi pi of {{C,C}} with free structure function xi'(h): exact-lattice closing coupling space has dim {len(sol)} (listed above)")
+        kappa = KK / (4 * ALPHA)
+        expect = [{0: 1 / kappa, 1: F(1)}, {3: F(1)}]
+        red = Reducer()
+        for e in expect:
+            red.add(e, {})
+        same = len(sol) == 2 and all(not red.reduce(s_, {})[0] for s_ in sol)
+        check("E4", same, f"order h phi pi of {{C,C}}, structure function xi'(h) left FREE: the exact-lattice closing couplings are only span{{tr-type h_jj*(pi^2/2 + kappa sum_k S_k/2) [a lapse rescaling N -> N(1 + lam tr h)], h_jj*phi^2}}; every anisotropic gradient coupling (S_j, F_j, face B_i phi B_j phi, ...) - including the lattice image of the metric-variational stress - fails exact closure; T = 0 closes")
     if which in ("all", "E5"):
         names = ["matter-bracket"] + ALLNAMES
         sol = e5(rng)
@@ -638,5 +688,11 @@ if __name__ == "__main__":
         for s in sol:
             print("   ", fmt_vec(s, names))
         has_one = any(0 in s for s in sol)
-        check("E5", not has_one, f"order phi^2 of {{G,C}} = H_m(N') with N' free: NO coupling in the 18-dim ansatz closes exactly on the lattice (the matter bracket's weight is forced to 0)")
+        kappa = KK / (4 * ALPHA)
+        h0 = {1: F(1, 2), 2: kappa / 2, 4: MU / 2}  # (index shifted by 1 for the weight slot)
+        only_trace = len(sol) == 1 and all(sol[0].get(k, 0) * h0[1] == h0.get(k, 0) * sol[0].get(1, 0) for k in set(sol[0]) | set(h0))
+        check("E5", (not has_one) and only_trace, "order phi^2 of {G,C} = H_m(N') with N' FREE: no coupling in the 18-dim ansatz closes exactly on the lattice - the weight of {G_m,H_m} is forced to 0; the only surviving direction is the trace coupling h_jj*(H_m density) (absorbed by N'). Obstruction: the kinetic term gives pi_x pi_(x+e) xi_b (N_(x+e) - N_x), absent from every H_m(N') (an O(a^2) operator)")
+    if which == "E6":
+        b, rg, rn = e6()
+        print(f"E6 L={L}: |{{G_m,H_m}}|={abs(b):.6e}  residual(GR stress)={rg:.6e}  ratio={abs(rg/b):.6e}  residual(no coupling)={rn:.6e} ratio={abs(rn/b):.6e}")
     print(f"TOTAL: PASS={RESULTS['pass']} FAIL={RESULTS['fail']}")

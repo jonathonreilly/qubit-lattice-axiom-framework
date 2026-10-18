@@ -1,7 +1,7 @@
 # C2: under the matter-only reading of kinetic isotropy, the photon and fermion light cones are not tied, and the one-loop flow toward a common cone is too slow to help
 
 **Block:** C2 of `toe-scale-ladder-20261018` (R3→R4, OBL-R3.1). **Base:** main @ 584755767.
-**Status:** worker output. Unreviewed and unaudited. No audit status is claimed.
+**Status:** worker output. Independently reviewed (blocks/C2/REVIEW.md, verdict ready); unaudited. No audit status is claimed.
 **Runners:** `scripts/run_all.py` runs all four runners. The output is in `logs/run_all.log`: `TOTAL: PASS=49 FAIL=0`.
 **Review:** `REVIEW.md` (independent reviewer). Every finding is applied; see §9.
 

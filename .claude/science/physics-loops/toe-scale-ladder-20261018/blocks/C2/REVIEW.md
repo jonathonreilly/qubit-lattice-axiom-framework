@@ -135,3 +135,23 @@ The physics core is correct and confirmed by a different gauge and a different r
 - 3c: make the headline conditional on K_m, and fix the §0.2 typo.
 
 Nothing here is incorrect.
+
+## Correction confirmation
+
+I read the whole corrected `NOTE.md`, including §9. The author's rerun ends `logs/run_all.log` with `TOTAL: PASS=49 FAIL=0`. The new O-only count check is at `logs/witness_os0_surface.log` line 8.
+
+| Finding | Resolved? | Where it is fixed |
+|---|---|---|
+| 1d: toy matter content | yes | §0.4: U(1) plus one Dirac fermion, no thresholds, α(m_e) imposed at the IR end, and real spectrum gives a different O(1) number. |
+| 1e: perturbative window | yes | §0.5. The bound α_IR³ ≈ 3.9e-7 (N_f = 1) is correct; I recomputed it. It is honestly labelled as the reviewer's estimate. |
+| 1f: literature | yes | The literature coefficients are still marked "not cross-checked". |
+| 1g: "invariant to first order" | yes | §5. The δ² drift coefficient e²/(24π²) matches my log. |
+| 2a: proper-O count of 3 | yes | §0.1 and §2. Time reflection is marked as an extra assumption, and a runner check was added. |
+| 2b: hypotheses | yes | §2 lists H0–H4, matching my list. |
+| 3a/3b: "bare" matter action | yes | §0.2 and §3. |
+| 3c: headline | yes | The title and the §0 closing line now say retired under K_m and holds under K_full. Which reading the primitive carries is left to owner or audit. |
+| §0.2 typo | yes | Rewritten. |
+
+**New defects:** none of substance. One cosmetic nit remains. The header still says "Unreviewed and unaudited", which contradicts the "Review: REVIEW.md" line; "independently reviewed; unaudited" would fix it. This does not block.
+
+**Final verdict: READY.** The block is ready as worker output for audit. No audit status is implied.

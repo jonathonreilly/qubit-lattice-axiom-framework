@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "manifest_sha256": "063bccf9e203a36593a74dcbe3492117c6dd6adc8fafeede9cf69f1cb62a203e",
+  "files": 2,
+  "provenance": 3,
+  "links": 4,
+  "nodes": 7273,
+  "edges": 16267,
+  "new_nodes": {
+    "literal_direct_generator_bounded_theorem_note_2026-10-18": {
+      "path": "docs/LITERAL_DIRECT_GENERATOR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "deps": [
+        "real_endpoint_autonomous_output_bounded_theorem_note_2026-10-17"
+      ]
+    }
+  },
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical source identity, provenance, links and topology only; no scientific execution or retained audit. New note dependencies require ROOT inspection."
+}

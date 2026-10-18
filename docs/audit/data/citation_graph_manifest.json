@@ -1,6 +1,6 @@
 {
- "edge_count": 16266,
- "node_count": 7272,
+ "edge_count": 16267,
+ "node_count": 7273,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14565,6 +14565,10 @@
   "link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "literal_direct_generator_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "f39a541fbfc4",
+   "out_degree": 1
   },
   "literal_l4_always_on_control_bounded_theorem_note_2026-10-14": {
    "deps_hash": "ea431c5a27de",

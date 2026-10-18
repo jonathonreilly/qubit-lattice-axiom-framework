@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_d4_cone_fermion_cone_reflection_positivity_curvature_squared_2026_10_18.py
+runner_sha256: c9b383a3ec5f244ece0fe30466e201ac353d651ae772ab1b6cb51fb5db923ba7
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 25.34
+status: ok
+----- stdout -----
+[PASS] J1 D4 cone Whitney complex: classes per cell 8, 72, 208, 240, 96; d^2 = 0; Euler characteristic 0; mass matrices positive  counts [8, 72, 208, 240, 96]; |d d| 2e-16; min mass eigenvalue 6.65e-03
+[PASS] J2 Hodge Laplacians (square of the Dirac-Kahler operator): massless modes per degree = C(4,k) = 1, 4, 6, 4, 1, all at lambda = k^2, gap >= 20  counts [1, 4, 6, 4, 1]; max |lambda/k^2 - 1| 3e-06; gap 25.4
+[PASS] J3 on the continuum shell omega = k (|k| = 0.05; axis and generic): all 16 modes null with |lambda|/k^2 <= 1e-7 (an O(k^4) term would give ~1e-4)  max |lambda|/k^2 3.1e-09; next 1.0e+04
+[PASS] J4 reflection-positivity controls: NN Laplacian passes (site and link planes); higher-derivative scalar fails; D4 P1 with consistent mass fails  NN min/max -2e-16; higher-derivative -2.7e-02; consistent-mass P1 -9.3e-05
+[PASS] J5 D4-cone P1 scalar with lumped mass: reflection positive at the site plane t = 0 and the centre plane t = 1/2  min/max eigenvalue over 2 momenta x 2 planes -2.1e-16
+[PASS] J6 D4-cone Whitney 1-form (Proca, diagonal mass): reflection positive at both planes; consistent mass fails (control)  min/max -1.6e-14; control -9.2e-04
+[PASS] J7 curvature-squared term (lambda = -0.1): Kuhn nullity 5 -> 4 (vertex displacements only); D4 massless non-gauge directions 8 -> 6 (partners gapped)  Kuhn 5 -> 4; D4 8 -> 6; D4 next eigenvalue 1.37
+[PASS] J8 with the term: no real-k_t (tachyonic) rank drops in (0, 3) on either complex; the light-cone root omega = |k| = 0.05 is present  Kuhn real-energy roots [0.05, 1.889]; D4 [0.05, 2.752, 2.947]
+[PASS] J9 with the term: static T_tt response h_tt k^2 = -2 and h_xx/h_tt = -1 for the D4 face reading and two Kuhn readings (on and off axis)  D4 face -1.9999/-1.0001; Kuhn rel -1.9998/-1.0001; Kuhn plain -1.9998/-1.0001; D4 face -2.0000/-1.0000; Kuhn rel -1.9998/-1.0000; Kuhn plain -1.9998/-1.0000
+[PASS] J10 the static D4 response is not an exact lattice Poisson equation: at |k| = 1, h_tt k^2 and h_tt sum 4 sin^2(k/2) both differ from -2 by > 1%  h_tt k^2 -1.8369; h_tt * 4 sin^2(1/2) -1.6889
+
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

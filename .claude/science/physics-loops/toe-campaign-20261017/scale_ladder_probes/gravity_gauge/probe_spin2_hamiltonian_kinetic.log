@@ -1,0 +1,20 @@
+G=(g1,g2,g3)=(1, 0, 0)
+   [100]: nonzero omega^2/k^2 = [1. 1.]
+   [110]: nonzero omega^2/k^2 = [1. 1.]
+   [111]: nonzero omega^2/k^2 = [1. 1.]
+   [210]: nonzero omega^2/k^2 = [1. 1.]
+G=(g1,g2,g3)=(1, -0.3, 0)
+   [100]: nonzero omega^2/k^2 = [1. 1.]
+   [110]: nonzero omega^2/k^2 = [1. 1.]
+   [111]: nonzero omega^2/k^2 = [1. 1.]
+   [210]: nonzero omega^2/k^2 = [1. 1.]
+G=(g1,g2,g3)=(1, 0, 0.1)
+   [100]: nonzero omega^2/k^2 = [1.  1.1]
+   [110]: nonzero omega^2/k^2 = [1.      1.07471]
+   [111]: nonzero omega^2/k^2 = [1.03333 1.03333]
+   [210]: nonzero omega^2/k^2 = [1.      1.08388]
+G=(g1,g2,g3)=(1, 0, 0.3)
+   [100]: nonzero omega^2/k^2 = [1.  1.3]
+   [110]: nonzero omega^2/k^2 = [1.     1.2227]
+   [111]: nonzero omega^2/k^2 = [1.1 1.1]
+   [210]: nonzero omega^2/k^2 = [1.      1.25108]

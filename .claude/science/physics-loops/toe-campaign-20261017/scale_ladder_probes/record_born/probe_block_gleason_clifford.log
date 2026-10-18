@@ -1,2 +1,7 @@
 [local-Clifford only (no entangler)] states=196 bases=637 uniqueRows=637 rank=133 solution_dim(homog)=63 born_dim=15 excess=48 site_marginal_free_dim=7 (Born site marginal dim = 3)
 [Clifford with CZ, 150 elems] states=940 bases=4225 uniqueRows=4225 rank=735 solution_dim(homog)=205 born_dim=15 excess=190 site_marginal_free_dim=6 (Born site marginal dim = 3)
+[Clifford with CZ, 600 elems] states=940 bases=4225 uniqueRows=4225 rank=735 solution_dim(homog)=205 born_dim=15 excess=190 site_marginal_free_dim=6 (Born site marginal dim = 3)
+
+real	7m12.250s
+user	5m49.363s
+sys	0m13.076s

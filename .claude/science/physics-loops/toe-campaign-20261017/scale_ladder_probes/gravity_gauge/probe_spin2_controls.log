@@ -1,2 +1,15 @@
 zero-derivative (mass) forms d=4 SO: invariant=2, gauge-invariant=0 (T.k xi=0 forces T=0)
 zero-derivative (mass) forms d=4 B4: invariant=3, gauge-invariant=0 (T.k xi=0 forces T=0)
+B4 two-derivative forms with no SO(4) component: 5
+gauge-BREAKING B4 admixture eps=0.02:
+  [100]: [(np.float64(1.0), 2, np.float64(4.682086864488507e-19))]
+  [110]: [(np.float64(1.035923), 1, np.float64(5.483142910544146e-19))]
+  [111]: [(np.float64(1.032805), 0, np.float64(8.768512663658324e-06))]
+gauge-BREAKING B4 admixture eps=0.1:
+  [100]: [(np.float64(0.099986), 0, np.float64(0.00017693481837868742)), (np.float64(1.0), 2, np.float64(2.9079695722321974e-19))]
+  [110]: [(np.float64(1.038463), 1, np.float64(6.257638214034951e-19)), (np.float64(1.14413), 0, np.float64(5.618007488708496e-05))]
+  [111]: [(np.float64(1.163138), 0, np.float64(7.091685734312836e-05))]
+
+real	0m51.504s
+user	0m53.112s
+sys	0m2.142s

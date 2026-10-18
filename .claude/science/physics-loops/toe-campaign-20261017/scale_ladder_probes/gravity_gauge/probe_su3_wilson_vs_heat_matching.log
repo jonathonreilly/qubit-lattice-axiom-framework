@@ -1,0 +1,16 @@
+  beta  tau_eff*beta/3    beta^2*r[8]    beta^2*r[6]   beta^2*r[10]   beta^2*r[27]
+     6      1.29223607       4.312713       5.700417      18.933807      31.113173
+    12      1.16727549       1.987385       2.632766      10.073729      17.968176
+    24      1.07869139       0.688070       0.916341       3.780109       7.095783
+    48      1.03789285       0.283096       0.377372       1.579109       2.998490
+    96      1.01858513       0.128670       0.171551       0.719910       1.370283
+   192      1.00920318       0.061382       0.081841       0.343665       0.654489
+   384      1.00457939       0.029955       0.039972       0.167881       0.319639
+
+Interpretation keys: tau_eff*beta/3 -> 1 means heat-kernel time = g^2/2 at leading order;
+its 1/beta deviation is a coupling redefinition (scheme). beta^2*r -> const means the
+rep-dependent non-universal (non-Casimir) content starts at O(1/beta^2).
+
+real	3m11.395s
+user	2m49.878s
+sys	0m0.079s

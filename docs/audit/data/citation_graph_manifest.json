@@ -1,6 +1,6 @@
 {
- "edge_count": 16259,
- "node_count": 7266,
+ "edge_count": 16260,
+ "node_count": 7267,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6541,6 +6541,10 @@
   "exact_gauss_reduction_and_fixed_volume_weak_coupling_spectrum_bounded_theorem_note_2026-09-13": {
    "deps_hash": "9c83fb5042d9",
    "out_degree": 3
+  },
+  "exact_loader_clock_tradeoffs_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "c88f09c7c142",
+   "out_degree": 1
   },
   "exact_microscopic_energy_at_a_star_birth_bounded_theorem_note_2026-09-24": {
    "deps_hash": "1e5276f1135b",

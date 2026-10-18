@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "manifest_sha256": "b9cce909916fa3a38fb142072399c9b6204a2c07e4993a172d97ab4b129071df",
+  "files": 17,
+  "provenance": 3,
+  "links": 31,
+  "nodes": 7267,
+  "edges": 16260,
+  "new_nodes": {
+    "exact_loader_clock_tradeoffs_bounded_theorem_note_2026-10-18": {
+      "path": "docs/EXACT_LOADER_CLOCK_TRADEOFFS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "deps": [
+        "exact_two_body_engineered_loader_bounded_theorem_note_2026-10-18"
+      ]
+    }
+  },
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical source identity, provenance, links and topology only; no scientific execution or retained audit. New note dependencies require ROOT inspection."
+}

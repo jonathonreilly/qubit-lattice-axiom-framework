@@ -1,0 +1,5 @@
+# Publication scope
+
+The checked sources establish conditional finite-window exact-loader alternatives: supported-error engineered clocks and a distinct uniform weak-source proof. Full source bodies and scalar prerequisites are preserved, parent sources linked in place. The canonical synthesis and final edit diff were read by ROOT; source-exposed same-model checks share ancestry and are not retained audit or physical evidence. The proposed longer asymmetric dwell is excluded pending separate review. No scientific executable was rerun for packaging; see VALIDATION.json for mechanical identity/link/graph evidence. Native preparation, active old Hamiltonian, permanent halt, capture and reuse remain open.
+
+Whitespace check exception: the frozen exact_uniform_chain_finite_launch/PROPOSAL.md carries its original extra blank line at EOF (staged line357). It is preserved byte-for-byte at bda916e331d0bf3863feac8e0b7dce279df6f2eaa94f0dd17daf651cad51545a. The new canonical note and metadata pass whitespace checking; no source normalization is concealed.

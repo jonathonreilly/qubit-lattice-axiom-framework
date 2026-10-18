@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_regge_metric_universality_common_cone_2026_10_18.py
+runner_sha256: a1975646cfcce3b2218a98a7ea8635bdbb3752af5b8f581b1fd002898f9d1af1
+input_fingerprint_sha256: cec3f5a6b9ad7fd7a67b1078117b3bb09d3c98db51239d7d7f20e2357d41c034
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 30.28
+status: ok
+----- stdout -----
+[PASS] C1 gauge-invariant forms: scalar/spin-1/spin-2 at k^2 = 1,1,1 (B4), 2,2,2 (K48), 2,2,2 (OhT); spin-2 mass 0  invariant spin-2 forms B4/K48/OhT = 9/38/26; rank gap >= 9e+11
+[PASS] C1 K48 together with tick reflection generates the full hyperoctahedral group  order 384
+[PASS] C2 EH of g0 = 1 and g0 = 1 + 0.3 u u^T both lie in the K48 gauge-invariant pair and span it  outside 1.6e-14; second singular value 0.303
+[PASS] C3 Regge O(k^2) symbol = -(1/4) sqrt(det g0) EH_g0 at b = 0, 0.3, -0.15  coefficients -0.250000, -0.370810, -0.158114 vs -0.250000, -0.370810, -0.158114; worst 1.3e-06
+[PASS] C4 P1 scalar and Whitney Maxwell on the same complex: leading symbol = sqrt(g) x continuum form in g0 (b = 0, 0.3)  max relative deviation 5.0e-08
+[PASS] C5 real spatial momentum: tick momentum on the scalar shell is pure imaginary (real energy) at b = 0, complex at b = 0.3  k_t = -0.000000+0.588330j (b=0), 0.125192+0.467658j (b=0.3)
+[PASS] C6 O(k^4): Regge TT pair and P1 scalar both obey omega^2 = k^2[1 - k^2 (1 + sum n^4)/12] (5 directions)  worst deviation 3.5e-07; axis/face/body = -1/6, -1/8, -1/9
+[PASS] C6 Whitney Maxwell differs at O(k^4): birefringent on the axis and face+ != face- (S4-only harmonic)  axis -0.1027/-0.0859; face+ -0.0707, face- -0.0820
+[PASS] C7 b = 0: on sum_mu 4 sin^2(p_mu/2) = 0 the Regge edge form has 7 null directions (5 off shell); the P1 scalar vanishes there  7th singular value on shell <= 4.0e-16; 6th off shell >= 1.6e-05 (k up to 2.5, 6 directions)
+[PASS] C7 Whitney Maxwell is not on that shell at finite k  its 2nd singular value there >= 1.5e-06
+[PASS] C8 null directions at real momenta: 5 at b = 0, 4 (the vertex displacements) at b = 0.3, -0.15  {0.0: [5, 5, 5], 0.3: [4, 4, 4], -0.15: [4, 4, 4]}
+[PASS] C9 P1 scalar stress: on-shell Ward violation falls as s^5 (relative (a/w)^2), off-shell response as s^3  halving ratios on shell 31.95, 31.96, 31.99; off shell 7.91, 7.99, 8.01
+
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

@@ -5,7 +5,6 @@ claim_scope: "Supplied model only: the corner fermion of the companion notes (12
 upstream_dependencies:
   - corner_fermion_odd_filling_is_forced_gapless_by_anticommuting_gauge_dressed_c2_lifts_bounded_theorem_note_2026-10-18
   - corner_fermion_long_wavelength_theory_is_one_isotropic_spin_half_doublet_and_one_qubit_block_embedding_bounded_theorem_note_2026-10-17
-  - scale_ladder_cross_rung_invariants_corner_fermion_bounded_theorem_note_2026-10-18
 runner: scripts/corner_fermion_doubler_gapping_selection_rule_and_weyl_dipole_2026_10_18.py
 ---
 
@@ -327,5 +326,5 @@ Campaign scripts, all ending with FAIL = 0:
 
 - [Odd-filling note (anticommuting C2 lifts, twisted tori)](CORNER_FERMION_ODD_FILLING_IS_FORCED_GAPLESS_BY_ANTICOMMUTING_GAUGE_DRESSED_C2_LIFTS_BOUNDED_THEOREM_NOTE_2026-10-18.md)
 - [Long-wavelength note (affine action, k*)](CORNER_FERMION_LONG_WAVELENGTH_THEORY_IS_ONE_ISOTROPIC_SPIN_HALF_DOUBLET_AND_ONE_QUBIT_BLOCK_EMBEDDING_BOUNDED_THEOREM_NOTE_2026-10-17.md)
-- [Cross-rung note (k* decomposition, eight-node step, item 6)](SCALE_LADDER_CROSS_RUNG_INVARIANTS_CORNER_FERMION_BOUNDED_THEOREM_NOTE_2026-10-18.md)
+- Context, not a dependency: the scale-ladder cross-rung note (companion PR #9702; `SCALE_LADDER_CROSS_RUNG_INVARIANTS_CORNER_FERMION_BOUNDED_THEOREM_NOTE_2026-10-18.md`) defines the eight-node step and the k* decomposition used for illustration.
 - [Axioms](MINIMAL_AXIOMS_2026-06-29.md)

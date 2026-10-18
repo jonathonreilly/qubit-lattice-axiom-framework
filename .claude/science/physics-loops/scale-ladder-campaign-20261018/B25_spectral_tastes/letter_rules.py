@@ -33,7 +33,7 @@ ok &= all(np.allclose(np.diag(Wb(['S'], k[None])[0]), sig * np.diag(Dk(k)) ** -2
 check("(i) S^n(k)^T = S^n(k); R_L(k) = D_k R0 D_k^-1 (R0 real symmetric) so R_L(k)^T = R_L(-k); S(k) = sigma D_k^-2", ok)
 w_ = ['S2', PC['L123'], 'R', PC['H31'], 'Si', PLANE['L101']]; Sg = np.diag(sig).astype(complex)
 wt = []
-for L in w_[::-1]: wt += ([Sg, 'S', 'R', 'Si', Sg] if L == 'R' else [L if isinstance(L, str) else L.T])
+for L in w_[::-1]: wt += ([Sg, 'S', 'R', 'Si', Sg] if isinstance(L, str) and L == 'R' else [L if isinstance(L, str) else L.T])
 ok = all(np.allclose(Wb(w_, k[None])[0].T, Wb(wt, k[None])[0]) for k in KS)
 ok &= all(np.allclose(Wb(['R'], k[None])[0].T, Wb([Sg, 'S', 'R', 'Si', Sg], k[None])[0]) for k in KS)
 check("(i) W(k)^T = reversed word with transposed on-site letters at the SAME k, where R_L(k)^T = sigma S R_L S^-1 sigma (R_L changes the S-power pattern)", ok)

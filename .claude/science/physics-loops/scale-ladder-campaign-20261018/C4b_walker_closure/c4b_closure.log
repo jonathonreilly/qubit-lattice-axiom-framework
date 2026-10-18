@@ -29,3 +29,11 @@ PASS: G3 [122s] symmetric section E = (delta + h)^(-1/2): T^(1) = 0 identically,
 PASS: G4w [123s] triad route (walker), order chi chi: {C_f[N], lam_E G_E + lam_f G_Lie + kappa_s int curl xi.s} = C_f[N'] iff lam_E = lam_f, kappa_s = 0 (plain Lie: the frame's antisymmetric shift carries the Kosmann rotation; V = div curl xi /2 = 0), s1 = -lam_f, s2 = 0.  Since h = (E^T E)^-1 - delta shifts by lam_E (d_a xi_j + d_j xi_a), lam1 = lam_E: the triad route gives lam1 = lam_f with a_s = 1 directly
    G4 (covariant): [{kappa_s: 0, lam_E: lam_f, s1: -lam_f, s2: 0}]
 PASS: G4c [123s] triad route (covariant), order chi chi: {C_f[N], lam_E G_E + lam_f G_Lie + kappa_s int curl xi.s} = C_f[N'] iff lam_E = lam_f, kappa_s = 0 (plain Lie: the frame's antisymmetric shift carries the Kosmann rotation; V = div curl xi /2 = 0), s1 = -lam_f, s2 = 0.  Since h = (E^T E)^-1 - delta shifts by lam_E (d_a xi_j + d_j xi_a), lam1 = lam_E: the triad route gives lam1 = lam_f with a_s = 1 directly
+   F: bare walker r=1: [], r=2: [];  covariant r=1: [{gp0: 0, gp1: 0}], r=2: [{gp0: 0, gp1: 0}], control (lam1 = nu, a_s = 1/2): []
+PASS: F1 [182s] {C,G} at order h chi chi with the BARE walker's second-order symmetric-section coupling: NO solution for the remaining G_f^(1) directions, at r = 1 (a_s = 1) or r = 2 (a_s = 1/2).  The walker as supplied does not close beyond leading order (its missing axial term T^(2), G3)
+PASS: F2 [182s] with the covariant operator (walker + 1/4 N T n): closes at r = 1 ([{gp0: 0, gp1: 0}]) and r = 2 ([{gp0: 0, gp1: 0}]); the mismatched control lam1 = nu, a_s = 1/2 fails ([])
+TOTAL: PASS=21 FAIL=0  (182s)
+
+real	3m3.289s
+user	2m59.739s
+sys	0m0.222s

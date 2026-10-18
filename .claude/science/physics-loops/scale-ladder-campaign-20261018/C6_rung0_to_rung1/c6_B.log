@@ -71,3 +71,4 @@ B2: ground energy per site, standard convention (H = -sum |t| u c^dag c), |t1| =
 [PASS] K-grid changes of the reported differences are below 5e-3 per site  max 5.7e-04
 
 B3: greedy single-edge flips over all period-2 sectors (2^3 cell, 288 edges), 4^3 K-grid; t = 47.6s
+  nu=1: corner 1111 E = -2.1683; one sweep of single flips from it -> E = -3.9474 (fluxes {'square': 0.0625, 'triangle': 0.046875, 'plaquette': 0.5, 'tube': 0.34375}); best uniform 0010 E = -4.0224

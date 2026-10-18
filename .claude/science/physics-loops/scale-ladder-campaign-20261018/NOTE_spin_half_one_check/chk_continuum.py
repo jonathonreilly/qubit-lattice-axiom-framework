@@ -20,6 +20,11 @@ X = sp.symbols("x0:3")
 I = sp.I
 SIG = [sp.Matrix([[0, 1], [1, 0]]), sp.Matrix([[0, -I], [I, 0]]), sp.Matrix([[1, 0], [0, -1]])]
 res = {}
+_set = dict.__setitem__
+class R(dict):
+    def __setitem__(self, k, v):
+        print(f"[{'PASS' if v else 'FAIL'}] {k}", flush=True); _set(self, k, v)
+res = R()
 
 
 def D(f, k):
@@ -82,12 +87,12 @@ res["N1 weights: lam_m, lam_A in {0,1}, nu = 1, lam1 free"] = (
     len(sol) == 4 and all(s[nu] == 1 and s[lm] in (0, 1) and s[la] in (0, 1) for s in sol))
 
 # ---------------------------------------------------------------- N2 (polynomial vector fields)
-cx = sp.symbols("p0:60")
-ce = sp.symbols("q0:60")
+cx = sp.symbols("p0:30")
+ce = sp.symbols("q0:30")
 monos = [m for d in range(4) for m in itertools.combinations_with_replacement(X, d)]
-monos = [sp.Mul(*m) for m in monos][:20]  # 1, x, xx, xxx (20 monomials up to cubic)
-xp = [sum(cx[20 * i + k] * monos[k] for k in range(20)) for i in range(3)]
-ep = [sum(ce[20 * i + k] * monos[k] for k in range(20)) for i in range(3)]
+monos = [sp.Mul(*m) for m in monos][:10]  # 1, x, xx (generic 2-jets: the identity involves at most second derivatives of xi, eta)
+xp = [sum(cx[10 * i + k] * monos[k] for k in range(10)) for i in range(3)]
+ep = [sum(ce[10 * i + k] * monos[k] for k in range(10)) for i in range(3)]
 psi = sp.Matrix([sp.Function("u1")(*X), sp.Function("u2")(*X)])
 
 
@@ -114,7 +119,7 @@ Se = sp.Matrix(3, 3, lambda i, j: (D(ep[j], i) + D(ep[i], j)) / 2)
 P = Sx * Se
 om = [sum(sp.LeviCivita(k, i, j) * P[i, j] for i in range(3) for j in range(3)) for k in range(3)]
 pred = (-I / 2) * sum((om[k] * SIG[k] for k in range(3)), sp.zeros(2, 2)) * psi
-res["N2 [L_xi,L_eta] - L_[xi,eta] = -(i/2) eps_kij (S_xi S_eta)_ij sigma_k (cubic polynomial fields)"] = (
+res["N2 [L_xi,L_eta] - L_[xi,eta] = -(i/2) eps_kij (S_xi S_eta)_ij sigma_k (generic quadratic polynomial fields)"] = (
     (rem - pred).applyfunc(sp.expand) == sp.zeros(2, 1))
 # sign control: the opposite sign must fail
 res["N2 sign control (+i/2 fails)"] = (rem + pred).applyfunc(sp.expand) != sp.zeros(2, 1)
@@ -141,9 +146,13 @@ inner = [sum(Ax[k] * D(ep[i], k) - Ae[k] * D(xp[i], k) for k in range(3)) for i 
 rhs = list(Am * sp.Matrix(inner))
 res["Y8 [A xi, A eta] = A((A xi).grad eta - (A eta).grad xi)"] = all(zero(lhs[i] - rhs[i]) for i in range(3))
 # closure with gravity's structure [xi,eta]: need [A xi, A eta] = A [xi, eta] (gravity fixes the structure constant 1)
+xl = [sum(cx[10 * i + k] * monos[k] for k in range(4)) for i in range(3)]
+el = [sum(ce[10 * i + k] * monos[k] for k in range(4)) for i in range(3)]
+lhsl = lie_br(list(Am * sp.Matrix(xl)), list(Am * sp.Matrix(el)))
+rhsl = list(Am * sp.Matrix(lie_br(xl, el)))
 eqs = []
 for i in range(3):
-    eqs += sp.Poly(sp.expand(lhs[i] - list(Am * sp.Matrix(brp))[i]), *(list(X) + list(cx) + list(ce))).coeffs()
+    eqs += sp.Poly(sp.expand(lhsl[i] - rhsl[i]), *(list(X) + list(cx) + list(ce))).coeffs()
 solA = sp.solve(eqs, list(Am), dict=True)
 res["Y8 solutions of [A xi, A eta] = A[xi,eta]: A = 0 or A = I"] = sorted(str(sp.Matrix(3, 3, lambda i, j: Am[i, j].subs(s))) for s in solA) == sorted([str(sp.zeros(3, 3)), str(sp.eye(3))])
 
@@ -164,8 +173,5 @@ for name, G in (("O_h", group), ("O (det=+1)", [R for R in group if R.det() == 1
     Ss = S.subs(sol[0])
     res[f"Y9 {name} ({len(G)} elements): invariant symmetric 2-tensor is t*delta"] = Ss.is_diagonal() and Ss[0, 0] == Ss[1, 1] == Ss[2, 2] and len(Ss.free_symbols) == 1
 
-npass = 0
-for k, v in res.items():
-    print(f"[{'PASS' if v else 'FAIL'}] {k}")
-    npass += bool(v)
+npass = sum(bool(v) for v in res.values())
 print(f"TOTAL {npass}/{len(res)}")

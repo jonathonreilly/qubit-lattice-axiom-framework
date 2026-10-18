@@ -1,0 +1,5 @@
+[PASS] N1 gravity affine action closes, nu = 1, for any lam1*delta
+[PASS] N1 gravity affine action closes, nu = 1, for any constant symmetric g0
+[PASS] N1 scalar: [V_xi, V_eta] = V_[xi,eta]
+[PASS] N1 Maxwell one-form: [V_xi, V_eta] = V_[xi,eta]
+[PASS] N1 weights: lam_m, lam_A in {0,1}, nu = 1, lam1 free

@@ -22,3 +22,5 @@ Open length-four ends, supplied anisotropy and H, explicit subsystem sector and 
 
 ## Bulk segment block
 Uniform Z background and supplied directional H/anisotropy retained. Compact even-plane excitations. No open column ends added. Source-connected K1 block notcompletefour-wallband. PartialK1+tension model excludeslarger K2/K3 terms; long-arm K2 calculatedseparately. Complexresidue notpositiveweight. Noempiricalinput.
+
+Slow bulk block: no new interaction; native K2 cross vertices fix leading original-readout amplitudes. Projected graph and leading tensions define an explicit coefficient model. Full native remainder and prepared state remain imports; logarithmic source convergence is complex-strip only. Real-axis confined-channel response not assumed universal.

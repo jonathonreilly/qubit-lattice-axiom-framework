@@ -44,3 +44,14 @@ Status: conditional-support. Derived complete leading L4 column operator and ori
 
 ## Bulk segment block
 Native local bulk tension/source/K2 support; outgoing Airy resonance andnegative transverse curvature are partial-model calculations only. Uniform large-feature/native pole, state selection and physical scalar identification open.
+
+## Slow bulk composite block
+actual_current_surface_status: bounded-support
+conditional_surface_status: explicit projected coefficient-model pole and derived readout
+trace_class: upstream_support
+reachability_to_target: partially_closes
+proposal_allowed: false
+proposal_allowed_reason: native higher coefficients, uniform reduction, state and measurement identification remain open
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+review_loop_disposition: pass

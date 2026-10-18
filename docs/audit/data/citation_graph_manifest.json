@@ -1,6 +1,6 @@
 {
- "edge_count": 16258,
- "node_count": 7262,
+ "edge_count": 16259,
+ "node_count": 7263,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15657,6 +15657,10 @@
   "native_sixth_offdiagonal_sign_obstruction_note_2026-09-08": {
    "deps_hash": "04cc700b0857",
    "out_degree": 4
+  },
+  "native_slow_bulk_composite_note_2026-10-18": {
+   "deps_hash": "5929f6e186fa",
+   "out_degree": 1
   },
   "native_sparse_first_action_frame_note_2026-09-09": {
    "deps_hash": "5ce76bec0ab5",

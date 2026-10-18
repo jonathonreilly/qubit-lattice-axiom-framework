@@ -1,0 +1,3322 @@
+{
+  "source_hashes": {
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_bulk_second_other.py": "fc9339f0bab5ba5c03016fdb3d710bea89f70dc88c6369c416737577de97c26a",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_bulk_second_boundary.py": "c467dcd7f3d3eaadb07fe7eb7e14a772780f64a70bc3350963abfaa06cc69157",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_slow_source_check.py": "e5de3965646a6967e130dae10fa40cdbcf4e8a60298e2e904dd3cedbef4a88eb",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_slow_host.py": "c45065369d566859cd563e8108df1b00ca3737c5dfaf1c5ad582ea11c5ad40c2",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_slow_dispersion.py": "0e337edde255fed16db83eb3dcbdedc1fab63917472e4df812574ff1b723641f",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_slow_resonance.py": "46b6aa515b57afa0d01c4b3133468d8a46a8d2c31ec6cae85140b006f8a1176a",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_slow_response.py": "ef791baf551b21c832c018744535b0dfaba326e769f77e05be0745a0703545a7",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_confined_fast_source.py": "de4ffae2125fd84c1a1118c49880f8184ad2fdc687672b46ecf2bea1682487e7",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_coupled_slow_pole.py": "4682978e003c35d8e0c9decbad87d41aab5d36111342c5492414214fbcc7e536",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_outgoing_host.py": "a7845efc9767477a3bd5a8b816ba29aabe5d993bc42e53055aff34d8d2f547cf",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_bulk_source_check.py": "68e509730d4411cbbf44a9c299fa26f2b68c15aecb0dbb4a0128b900ddfc105d"
+  },
+  "checks": {
+    "neutral_bulk_second_other": [
+      {
+        "ell": 1,
+        "rx": 1,
+        "ry": 0,
+        "edges": 679,
+        "rows": [
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/4"
+          },
+          {
+            "sites": [
+              [
+                -2,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                -1,
+                -1,
+                [
+                  0
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "1/4"
+          },
+          {
+            "sites": [
+              [
+                -1,
+                0,
+                [
+                  -1
+                ]
+              ],
+              [
+                0,
+                0,
+                [
+                  -1
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                -1,
+                1,
+                [
+                  0
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "1/4"
+          },
+          {
+            "sites": [
+              [
+                -1,
+                0,
+                [
+                  1
+                ]
+              ],
+              [
+                0,
+                0,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                -2,
+                [
+                  0
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                -1,
+                [
+                  -1
+                ]
+              ],
+              [
+                0,
+                0,
+                [
+                  -1
+                ]
+              ]
+            ],
+            "coefficient": "1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                -1,
+                [
+                  1
+                ]
+              ],
+              [
+                0,
+                0,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  -2,
+                  -1,
+                  0
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  -2,
+                  -1,
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  -1
+                ]
+              ],
+              [
+                0,
+                1,
+                [
+                  -1
+                ]
+              ]
+            ],
+            "coefficient": "1/8"
+          },
+          {
+            "sites": [
+              [
+                -1,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                0,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  -1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  -1
+                ]
+              ]
+            ],
+            "coefficient": "1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  1
+                ]
+              ],
+              [
+                0,
+                1,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "1/8"
+          },
+          {
+            "sites": [
+              [
+                1,
+                -1,
+                [
+                  -1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  -1
+                ]
+              ]
+            ],
+            "coefficient": "1/8"
+          },
+          {
+            "sites": [
+              [
+                1,
+                -1,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "1/8"
+          },
+          {
+            "sites": [
+              [
+                1,
+                0,
+                [
+                  -1
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  -1
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                1,
+                0,
+                [
+                  -1
+                ]
+              ],
+              [
+                1,
+                1,
+                [
+                  -1
+                ]
+              ]
+            ],
+            "coefficient": "1/8"
+          },
+          {
+            "sites": [
+              [
+                1,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "1/8"
+          },
+          {
+            "sites": [
+              [
+                1,
+                0,
+                [
+                  1
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                1,
+                0,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                1,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                2,
+                [
+                  0
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                1,
+                -2,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                2,
+                -1,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "1/4"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                2,
+                1,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "1/4"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                1,
+                2,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                3,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          }
+        ],
+        "elapsed": 0.25918006896972656,
+        "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+      },
+      {
+        "ell": 2,
+        "rx": 1,
+        "ry": 0,
+        "edges": 776,
+        "rows": [
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-5/2"
+          },
+          {
+            "sites": [
+              [
+                -1,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                -1,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/4"
+          },
+          {
+            "sites": [
+              [
+                -1,
+                0,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/4"
+          },
+          {
+            "sites": [
+              [
+                0,
+                -1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                -1,
+                [
+                  0
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/4"
+          },
+          {
+            "sites": [
+              [
+                0,
+                -1,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/4"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  -2,
+                  -1,
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  -2,
+                  -1,
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                1,
+                [
+                  0
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/4"
+          },
+          {
+            "sites": [
+              [
+                0,
+                1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/4"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "coefficient": "-1/8"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                1,
+                -1,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/4"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                -1,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                -1,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/4"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/4"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                1,
+                1,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/4"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                1,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  1
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/4"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  1
+                ]
+              ],
+              [
+                1,
+                1,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/4"
+          }
+        ],
+        "elapsed": 0.34401893615722656,
+        "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+      },
+      {
+        "ell": 4,
+        "rx": 2,
+        "ry": 0,
+        "edges": 970,
+        "rows": [
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "coefficient": "-4"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  -1,
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  -1,
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  1,
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          }
+        ],
+        "elapsed": 0.542125940322876,
+        "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+      },
+      {
+        "ell": 4,
+        "rx": 1,
+        "ry": 1,
+        "edges": 970,
+        "rows": [
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              [
+                1,
+                1,
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "coefficient": "-4"
+          }
+        ],
+        "elapsed": 0.5511927604675293,
+        "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+      },
+      {
+        "ell": 4,
+        "rx": 3,
+        "ry": 0,
+        "edges": 970,
+        "rows": [
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              [
+                3,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "coefficient": "-4"
+          }
+        ],
+        "elapsed": 0.5386748313903809,
+        "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+      }
+    ],
+    "neutral_bulk_second_boundary": [
+      {
+        "ell": 2,
+        "rx": 2,
+        "ry": 0,
+        "edges": 776,
+        "rows": [
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-4"
+          },
+          {
+            "sites": [
+              [
+                -1,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                -1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  -1,
+                  0,
+                  1
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  -1,
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                1,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  1
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              [
+                2,
+                0,
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                2,
+                -1,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                3,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                2,
+                1,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          }
+        ],
+        "elapsed": 0.342134952545166,
+        "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+      },
+      {
+        "ell": 2,
+        "rx": 0,
+        "ry": 2,
+        "edges": 776,
+        "rows": [
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                0,
+                2,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-4"
+          },
+          {
+            "sites": [
+              [
+                -1,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                0,
+                2,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                -1,
+                2,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                -1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                0,
+                2,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  -1,
+                  0,
+                  1
+                ]
+              ],
+              [
+                0,
+                2,
+                [
+                  -1,
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                2,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                0,
+                2,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  1
+                ]
+              ],
+              [
+                0,
+                2,
+                [
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0
+                ]
+              ],
+              [
+                0,
+                2,
+                [
+                  0
+                ]
+              ]
+            ],
+            "coefficient": "1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              [
+                0,
+                2,
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "coefficient": "1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                0,
+                1,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                2,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                0,
+                3,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          }
+        ],
+        "elapsed": 0.3443131446838379,
+        "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+      },
+      {
+        "ell": 2,
+        "rx": 1,
+        "ry": 1,
+        "edges": 776,
+        "rows": [
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                1,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-4"
+          },
+          {
+            "sites": [
+              [
+                -1,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                1,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                -1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                1,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                1,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                1,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                1,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                1,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                0,
+                1,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                2,
+                1,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                1,
+                2,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "-1/2"
+          }
+        ],
+        "elapsed": 0.34297800064086914,
+        "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+      },
+      {
+        "ell": 3,
+        "rx": 0,
+        "ry": 2,
+        "edges": 873,
+        "rows": [
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              [
+                0,
+                2,
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "coefficient": "-4"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  -1,
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              [
+                0,
+                2,
+                [
+                  -1,
+                  0,
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "coefficient": "1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  1,
+                  2
+                ]
+              ],
+              [
+                0,
+                2,
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "coefficient": "1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                0,
+                2,
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "coefficient": "1/2"
+          },
+          {
+            "sites": [
+              [
+                0,
+                0,
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              [
+                0,
+                2,
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "coefficient": "1/2"
+          }
+        ],
+        "elapsed": 0.43471407890319824,
+        "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+      }
+    ],
+    "neutral_slow_source_check": {
+      "A_to_e": -0.9999999999999996,
+      "A_to_d2": -0.9999999999999996,
+      "D_to_e": -1.9999999999999991,
+      "D_to_d2": 0.0,
+      "direct_second_order_source_support_absent": true
+    },
+    "neutral_slow_host": {
+      "host": [
+        [
+          [
+            -0.30605214390853375,
+            -0.2464356212671141
+          ],
+          [
+            0.18390670718305235,
+            -0.19590895370704584
+          ]
+        ],
+        [
+          [
+            0.1839067071830523,
+            -0.1959089537070458
+          ],
+          [
+            -0.4451808785384918,
+            -0.24284086715809783
+          ]
+        ]
+      ],
+      "a": [
+        -0.2796521330954105,
+        -0.45443164880041087
+      ],
+      "width_coefficient": 0.11360791220010272,
+      "scope": "Partial K2 slow-host model; further fast-channel/source and native control pending"
+    },
+    "neutral_slow_dispersion": [
+      {
+        "q": 0.04,
+        "a_quadratic": [
+          0.004279475111189368,
+          -0.03248025685218675
+        ],
+        "physical_curvature_over_lambda4": 0.000534934388898671
+      },
+      {
+        "q": 0.02,
+        "a_quadratic": [
+          0.004280438190562563,
+          -0.03247390728378097
+        ],
+        "physical_curvature_over_lambda4": 0.0005350547738203204
+      },
+      {
+        "q": 0.01,
+        "a_quadratic": [
+          0.004280679053447756,
+          -0.03247231992908883
+        ],
+        "physical_curvature_over_lambda4": 0.0005350848816809695
+      }
+    ],
+    "neutral_slow_resonance": {
+      "rows": [
+        {
+          "lam": 0.3,
+          "N": 62,
+          "length": 4.46288633388113,
+          "success": true,
+          "residual": 1.4456818683547552e-14,
+          "pole": [
+            -1.863750355919247,
+            -0.005003486111029596
+          ],
+          "width_over_lambda4": 0.11118858024510213,
+          "residue_over_lambda6": [
+            -0.025949652451291695,
+            -0.03805090169975646
+          ]
+        },
+        {
+          "lam": 0.2,
+          "N": 81,
+          "length": 5.848035476425731,
+          "success": true,
+          "residual": 1.1418312693080003e-12,
+          "pole": [
+            -1.9231751817872342,
+            -0.002240316633677455
+          ],
+          "width_over_lambda4": 0.11201583168387276,
+          "residue_over_lambda6": [
+            -0.027967386362778447,
+            -0.03725607183225601
+          ]
+        },
+        {
+          "lam": 0.1,
+          "N": 129,
+          "length": 9.283177667225557,
+          "success": true,
+          "residual": 2.1354680312149823e-10,
+          "pole": [
+            -1.9707367778554095,
+            -0.0005645648298305116
+          ],
+          "width_over_lambda4": 0.11291296596610233,
+          "residue_over_lambda6": [
+            -0.02948710845166106,
+            -0.036674943039633943
+          ]
+        },
+        {
+          "lam": 0.05,
+          "N": 206,
+          "length": 14.736125994561544,
+          "success": true,
+          "residual": 1.1003526779604902e-11,
+          "pole": [
+            -1.9886978587869717,
+            -0.0001416503244843694
+          ],
+          "width_over_lambda4": 0.11332025958749552,
+          "residue_over_lambda6": [
+            -0.030032390687851646,
+            -0.036484748357543964
+          ]
+        },
+        {
+          "lam": 0.025,
+          "N": 327,
+          "length": 23.39214190570292,
+          "success": true,
+          "residual": 1.7583204413785967e-10,
+          "pole": [
+            -1.9955930450762234,
+            -3.5466020605917e-05
+          ],
+          "width_over_lambda4": 0.1134912659389344,
+          "residue_over_lambda6": [
+            -0.030235463278367715,
+            -0.03642064161180007
+          ]
+        }
+      ],
+      "asymptotic_width": 0.11360791220010272,
+      "asymptotic_residue": [
+        -0.03036208824144617,
+        -0.036385137901888555
+      ],
+      "scope": "Partial slow coefficient graph and limiting source, not native pole or physical detector"
+    },
+    "neutral_slow_response": {
+      "lam": 0.1,
+      "f": 0.0012500000000000002,
+      "prediction": [
+        -1.9707182320459258,
+        -0.0005680395610005137
+      ],
+      "frozen_pole": [
+        -1.970732541196152,
+        -0.0005610938582232825
+      ],
+      "rows": [
+        {
+          "E": -1.9797100429277246,
+          "spectral": 0.26574805414227215,
+          "background": 0.31975297644645784
+        },
+        {
+          "E": -1.9795978241560799,
+          "spectral": 0.2655248619789591,
+          "background": 0.3197596744007122
+        },
+        {
+          "E": -1.9794856053844352,
+          "spectral": 0.26529670255818816,
+          "background": 0.319766372133662
+        },
+        {
+          "E": -1.9793733866127905,
+          "spectral": 0.26506338263628854,
+          "background": 0.3197730696453961
+        },
+        {
+          "E": -1.979261167841146,
+          "spectral": 0.264824698612576,
+          "background": 0.3197797669359394
+        },
+        {
+          "E": -1.9791489490695013,
+          "spectral": 0.2645804358258894,
+          "background": 0.3197864640053012
+        },
+        {
+          "E": -1.9790367302978566,
+          "spectral": 0.26433036779321367,
+          "background": 0.31979316085357185
+        },
+        {
+          "E": -1.978924511526212,
+          "spectral": 0.26407425538464263,
+          "background": 0.31979985748079043
+        },
+        {
+          "E": -1.9788122927545673,
+          "spectral": 0.26381184592862933,
+          "background": 0.31980655388694823
+        },
+        {
+          "E": -1.9787000739829226,
+          "spectral": 0.2635428722406348,
+          "background": 0.3198132500721934
+        },
+        {
+          "E": -1.978587855211278,
+          "spectral": 0.2632670515669396,
+          "background": 0.3198199460364412
+        },
+        {
+          "E": -1.9784756364396334,
+          "spectral": 0.26298408443582255,
+          "background": 0.31982664177981246
+        },
+        {
+          "E": -1.9783634176679887,
+          "spectral": 0.2626936534055113,
+          "background": 0.3198333373023646
+        },
+        {
+          "E": -1.978251198896344,
+          "spectral": 0.26239542169862096,
+          "background": 0.31984003260405625
+        },
+        {
+          "E": -1.9781389801246994,
+          "spectral": 0.2620890317110151,
+          "background": 0.31984672768501915
+        },
+        {
+          "E": -1.9780267613530547,
+          "spectral": 0.261774103380884,
+          "background": 0.31985342254527926
+        },
+        {
+          "E": -1.97791454258141,
+          "spectral": 0.2614502324032336,
+          "background": 0.31986011718480734
+        },
+        {
+          "E": -1.9778023238097655,
+          "spectral": 0.26111698827236407,
+          "background": 0.319866811603723
+        },
+        {
+          "E": -1.9776901050381208,
+          "spectral": 0.26077391213248624,
+          "background": 0.3198735058021216
+        },
+        {
+          "E": -1.9775778862664761,
+          "spectral": 0.26042051441457886,
+          "background": 0.3198801997798677
+        },
+        {
+          "E": -1.9774656674948314,
+          "spectral": 0.2600562722349351,
+          "background": 0.31988689353719746
+        },
+        {
+          "E": -1.9773534487231867,
+          "spectral": 0.25968062652570234,
+          "background": 0.3198935870739528
+        },
+        {
+          "E": -1.977241229951542,
+          "spectral": 0.2592929788667681,
+          "background": 0.3199002803903762
+        },
+        {
+          "E": -1.9771290111798974,
+          "spectral": 0.25889268798040144,
+          "background": 0.31990697348640784
+        },
+        {
+          "E": -1.977016792408253,
+          "spectral": 0.25847906584808883,
+          "background": 0.3199136663621128
+        },
+        {
+          "E": -1.9769045736366082,
+          "spectral": 0.25805137340035544,
+          "background": 0.3199203590175277
+        },
+        {
+          "E": -1.9767923548649635,
+          "spectral": 0.2576088157248976,
+          "background": 0.3199270514526721
+        },
+        {
+          "E": -1.9766801360933188,
+          "spectral": 0.2571505367293892,
+          "background": 0.3199337436676177
+        },
+        {
+          "E": -1.9765679173216741,
+          "spectral": 0.2566756131857208,
+          "background": 0.3199404356623738
+        },
+        {
+          "E": -1.9764556985500294,
+          "spectral": 0.25618304807158343,
+          "background": 0.31994712743709713
+        },
+        {
+          "E": -1.976343479778385,
+          "spectral": 0.25567176311104994,
+          "background": 0.3199538189916755
+        },
+        {
+          "E": -1.9762312610067403,
+          "spectral": 0.25514059040166004,
+          "background": 0.31996051032626127
+        },
+        {
+          "E": -1.9761190422350956,
+          "spectral": 0.25458826299497933,
+          "background": 0.31996720144084634
+        },
+        {
+          "E": -1.976006823463451,
+          "spectral": 0.25401340427759844,
+          "background": 0.31997389233550366
+        },
+        {
+          "E": -1.9758946046918062,
+          "spectral": 0.25341451597191594,
+          "background": 0.3199805830102079
+        },
+        {
+          "E": -1.9757823859201615,
+          "spectral": 0.2527899645459586,
+          "background": 0.3199872734650816
+        },
+        {
+          "E": -1.9756701671485168,
+          "spectral": 0.25213796578325093,
+          "background": 0.3199939637001579
+        },
+        {
+          "E": -1.9755579483768724,
+          "spectral": 0.251456567219916,
+          "background": 0.3200006537154181
+        },
+        {
+          "E": -1.9754457296052277,
+          "spectral": 0.2507436281019,
+          "background": 0.32000734351102433
+        },
+        {
+          "E": -1.975333510833583,
+          "spectral": 0.24999679644974265,
+          "background": 0.32001403308690574
+        },
+        {
+          "E": -1.9752212920619383,
+          "spectral": 0.24921348274062866,
+          "background": 0.32002072244309043
+        },
+        {
+          "E": -1.9751090732902936,
+          "spectral": 0.248390829620262,
+          "background": 0.32002741157973513
+        },
+        {
+          "E": -1.974996854518649,
+          "spectral": 0.24752567694048705,
+          "background": 0.320034100496799
+        },
+        {
+          "E": -1.9748846357470042,
+          "spectral": 0.24661452127570088,
+          "background": 0.3200407891943566
+        },
+        {
+          "E": -1.9747724169753598,
+          "spectral": 0.2456534688933936,
+          "background": 0.32004747767242453
+        },
+        {
+          "E": -1.974660198203715,
+          "spectral": 0.24463818093748202,
+          "background": 0.32005416593107977
+        },
+        {
+          "E": -1.9745479794320704,
+          "spectral": 0.24356380931232557,
+          "background": 0.3200608539703769
+        },
+        {
+          "E": -1.9744357606604257,
+          "spectral": 0.2424249214199924,
+          "background": 0.32006754179027674
+        },
+        {
+          "E": -1.974323541888781,
+          "spectral": 0.2412154114842207,
+          "background": 0.32007422939090063
+        },
+        {
+          "E": -1.9742113231171363,
+          "spectral": 0.23992839566860633,
+          "background": 0.3200809167722973
+        },
+        {
+          "E": -1.9740991043454916,
+          "spectral": 0.23855608753686633,
+          "background": 0.3200876039344429
+        },
+        {
+          "E": -1.9739868855738472,
+          "spectral": 0.23708964956943934,
+          "background": 0.32009429087743985
+        },
+        {
+          "E": -1.9738746668022025,
+          "spectral": 0.23551901539628567,
+          "background": 0.3201009776013076
+        },
+        {
+          "E": -1.9737624480305578,
+          "spectral": 0.23383267606991293,
+          "background": 0.3201076641060736
+        },
+        {
+          "E": -1.973650229258913,
+          "spectral": 0.23201742200495806,
+          "background": 0.32011435039184344
+        },
+        {
+          "E": -1.9735380104872684,
+          "spectral": 0.23005803005543018,
+          "background": 0.32012103645855955
+        },
+        {
+          "E": -1.9734257917156237,
+          "spectral": 0.22793688246858282,
+          "background": 0.3201277223063659
+        },
+        {
+          "E": -1.9733135729439792,
+          "spectral": 0.22563350100393764,
+          "background": 0.32013440793524106
+        },
+        {
+          "E": -1.9732013541723346,
+          "spectral": 0.2231239751914982,
+          "background": 0.3201410933452811
+        },
+        {
+          "E": -1.9730891354006899,
+          "spectral": 0.22038025838785674,
+          "background": 0.3201477785364436
+        },
+        {
+          "E": -1.9729769166290452,
+          "spectral": 0.2173692989288883,
+          "background": 0.32015446350886784
+        },
+        {
+          "E": -1.9728646978574005,
+          "spectral": 0.2140519664543705,
+          "background": 0.3201611482625419
+        },
+        {
+          "E": -1.9727524790857558,
+          "spectral": 0.21038172612656658,
+          "background": 0.3201678327974623
+        },
+        {
+          "E": -1.972640260314111,
+          "spectral": 0.20630300790871578,
+          "background": 0.3201745171138105
+        },
+        {
+          "E": -1.9725280415424666,
+          "spectral": 0.20174921878942895,
+          "background": 0.32018120121151733
+        },
+        {
+          "E": -1.972415822770822,
+          "spectral": 0.19664036263061538,
+          "background": 0.3201878850906547
+        },
+        {
+          "E": -1.9723036039991773,
+          "spectral": 0.19088028598721832,
+          "background": 0.32019456875131563
+        },
+        {
+          "E": -1.9721913852275326,
+          "spectral": 0.18435370234634638,
+          "background": 0.32020125219344386
+        },
+        {
+          "E": -1.9720791664558879,
+          "spectral": 0.17692345211054086,
+          "background": 0.32020793541714837
+        },
+        {
+          "E": -1.9719669476842432,
+          "spectral": 0.16842911745305505,
+          "background": 0.32021461842244353
+        },
+        {
+          "E": -1.9718547289125987,
+          "spectral": 0.1586895092195721,
+          "background": 0.3202213012094242
+        },
+        {
+          "E": -1.971742510140954,
+          "spectral": 0.14751443248440538,
+          "background": 0.32022798377807526
+        },
+        {
+          "E": -1.9716302913693093,
+          "spectral": 0.13473694519273538,
+          "background": 0.3202346661284723
+        },
+        {
+          "E": -1.9715180725976647,
+          "spectral": 0.12028842919870521,
+          "background": 0.32024134826064893
+        },
+        {
+          "E": -1.97140585382602,
+          "spectral": 0.10435785543238735,
+          "background": 0.32024803017461295
+        },
+        {
+          "E": -1.9712936350543753,
+          "spectral": 0.08770103910417433,
+          "background": 0.32025471187050136
+        },
+        {
+          "E": -1.9711814162827306,
+          "spectral": 0.07216525875310822,
+          "background": 0.32026139334820386
+        },
+        {
+          "E": -1.9710691975110861,
+          "spectral": 0.061354434740786834,
+          "background": 0.32026807460797946
+        },
+        {
+          "E": -1.9709569787394414,
+          "spectral": 0.06084541893875534,
+          "background": 0.32027475564969565
+        },
+        {
+          "E": -1.9708447599677967,
+          "spectral": 0.07654029285613148,
+          "background": 0.3202814364734611
+        },
+        {
+          "E": -1.970732541196152,
+          "spectral": 0.11031921473360679,
+          "background": 0.32028811707923793
+        },
+        {
+          "E": -1.9706203224245074,
+          "spectral": 0.1563866129925587,
+          "background": 0.3202947974672329
+        },
+        {
+          "E": -1.9705081036528627,
+          "spectral": 0.2040010947999252,
+          "background": 0.32030147763736866
+        },
+        {
+          "E": -1.970395884881218,
+          "spectral": 0.24446550130849976,
+          "background": 0.32030815758967107
+        },
+        {
+          "E": -1.9702836661095735,
+          "spectral": 0.27455144486892114,
+          "background": 0.3203148373242625
+        },
+        {
+          "E": -1.9701714473379288,
+          "spectral": 0.2950351649036085,
+          "background": 0.32032151684115956
+        },
+        {
+          "E": -1.9700592285662841,
+          "spectral": 0.30815240600562926,
+          "background": 0.3203281961403498
+        },
+        {
+          "E": -1.9699470097946394,
+          "spectral": 0.31611600955609515,
+          "background": 0.3203348752219041
+        },
+        {
+          "E": -1.9698347910229947,
+          "spectral": 0.32063781422138643,
+          "background": 0.3203415540859606
+        },
+        {
+          "E": -1.96972257225135,
+          "spectral": 0.3229147984806913,
+          "background": 0.32034823273248736
+        },
+        {
+          "E": -1.9696103534797054,
+          "spectral": 0.3237470271639255,
+          "background": 0.320354911161467
+        },
+        {
+          "E": -1.969498134708061,
+          "spectral": 0.3236592074267788,
+          "background": 0.32036158937309167
+        },
+        {
+          "E": -1.9693859159364162,
+          "spectral": 0.3229933265262826,
+          "background": 0.32036826736725293
+        },
+        {
+          "E": -1.9692736971647715,
+          "spectral": 0.32197222094949984,
+          "background": 0.3203749451440288
+        },
+        {
+          "E": -1.9691614783931268,
+          "spectral": 0.32074135557587297,
+          "background": 0.3203816227035045
+        },
+        {
+          "E": -1.9690492596214821,
+          "spectral": 0.31939583222758955,
+          "background": 0.32038830004577634
+        },
+        {
+          "E": -1.9689370408498374,
+          "spectral": 0.31799778938622447,
+          "background": 0.3203949771707716
+        },
+        {
+          "E": -1.968824822078193,
+          "spectral": 0.31658764800672545,
+          "background": 0.32040165407854854
+        },
+        {
+          "E": -1.9687126033065483,
+          "spectral": 0.3151914282222155,
+          "background": 0.3204083307692157
+        },
+        {
+          "E": -1.9686003845349036,
+          "spectral": 0.3138255486654504,
+          "background": 0.3204150072427735
+        },
+        {
+          "E": -1.968488165763259,
+          "spectral": 0.31250000169385167,
+          "background": 0.32042168349928707
+        },
+        {
+          "E": -1.9683759469916142,
+          "spectral": 0.3112204717408576,
+          "background": 0.32042835953878573
+        },
+        {
+          "E": -1.9682637282199695,
+          "spectral": 0.3099897594701346,
+          "background": 0.32043503536132467
+        },
+        {
+          "E": -1.9681515094483248,
+          "spectral": 0.3088087456470711,
+          "background": 0.32044171096696145
+        },
+        {
+          "E": -1.9680392906766804,
+          "spectral": 0.3076770470367836,
+          "background": 0.32044838635561035
+        },
+        {
+          "E": -1.9679270719050357,
+          "spectral": 0.30659346447433883,
+          "background": 0.32045506152749714
+        },
+        {
+          "E": -1.967814853133391,
+          "spectral": 0.3055562895895158,
+          "background": 0.32046173648260223
+        },
+        {
+          "E": -1.9677026343617463,
+          "spectral": 0.3045635147358892,
+          "background": 0.32046841122088626
+        },
+        {
+          "E": -1.9675904155901016,
+          "spectral": 0.3036129762368982,
+          "background": 0.3204750857424931
+        },
+        {
+          "E": -1.967478196818457,
+          "spectral": 0.3027024514713513,
+          "background": 0.32048176004746326
+        },
+        {
+          "E": -1.9673659780468125,
+          "spectral": 0.30182972389128926,
+          "background": 0.32048843413578076
+        },
+        {
+          "E": -1.9672537592751678,
+          "spectral": 0.30099262571423757,
+          "background": 0.32049510800752584
+        },
+        {
+          "E": -1.967141540503523,
+          "spectral": 0.3001890650650633,
+          "background": 0.3205017816627662
+        },
+        {
+          "E": -1.9670293217318784,
+          "spectral": 0.29941704230417476,
+          "background": 0.3205084551014635
+        },
+        {
+          "E": -1.9669171029602337,
+          "spectral": 0.2986746588674626,
+          "background": 0.32051512832369355
+        },
+        {
+          "E": -1.966804884188589,
+          "spectral": 0.2979601209594239,
+          "background": 0.3205218013295626
+        },
+        {
+          "E": -1.9666926654169443,
+          "spectral": 0.2972717397524626,
+          "background": 0.32052847411903723
+        },
+        {
+          "E": -1.9665804466452999,
+          "spectral": 0.2966079292603166,
+          "background": 0.32053514669217154
+        },
+        {
+          "E": -1.9664682278736552,
+          "spectral": 0.29596720270909177,
+          "background": 0.3205418190490941
+        },
+        {
+          "E": -1.9663560091020105,
+          "spectral": 0.29534816798607677,
+          "background": 0.32054849118972023
+        },
+        {
+          "E": -1.9662437903303658,
+          "spectral": 0.2947495225734657,
+          "background": 0.3205551631141917
+        },
+        {
+          "E": -1.966131571558721,
+          "spectral": 0.2941700482481166,
+          "background": 0.3205618348224871
+        },
+        {
+          "E": -1.9660193527870764,
+          "spectral": 0.2936086057422692,
+          "background": 0.32056850631468026
+        },
+        {
+          "E": -1.9659071340154317,
+          "spectral": 0.29306412949484684,
+          "background": 0.3205751775908351
+        },
+        {
+          "E": -1.9657949152437872,
+          "spectral": 0.2925356225789186,
+          "background": 0.3205818486509612
+        },
+        {
+          "E": -1.9656826964721426,
+          "spectral": 0.2920221518585806,
+          "background": 0.320588519495058
+        },
+        {
+          "E": -1.9655704777004979,
+          "spectral": 0.29152284340569184,
+          "background": 0.3205951901232915
+        },
+        {
+          "E": -1.9654582589288532,
+          "spectral": 0.29103687819045154,
+          "background": 0.32060186053557
+        },
+        {
+          "E": -1.9653460401572085,
+          "spectral": 0.29056348805065724,
+          "background": 0.32060853073211254
+        },
+        {
+          "E": -1.9652338213855638,
+          "spectral": 0.2901019519338105,
+          "background": 0.32061520071274574
+        },
+        {
+          "E": -1.965121602613919,
+          "spectral": 0.2896515924053686,
+          "background": 0.3206218704776738
+        },
+        {
+          "E": -1.9650093838422746,
+          "spectral": 0.2892117724088335,
+          "background": 0.32062854002683233
+        },
+        {
+          "E": -1.96489716507063,
+          "spectral": 0.28878189226568324,
+          "background": 0.3206352093603287
+        },
+        {
+          "E": -1.9647849462989853,
+          "spectral": 0.2883613868990199,
+          "background": 0.32064187847821185
+        },
+        {
+          "E": -1.9646727275273406,
+          "spectral": 0.28794972326653245,
+          "background": 0.3206485473805291
+        },
+        {
+          "E": -1.9645605087556959,
+          "spectral": 0.28754639798756965,
+          "background": 0.32065521606726727
+        },
+        {
+          "E": -1.9644482899840512,
+          "spectral": 0.2871509351499884,
+          "background": 0.3206618845385245
+        },
+        {
+          "E": -1.9643360712124067,
+          "spectral": 0.28676288428258373,
+          "background": 0.32066855279432716
+        },
+        {
+          "E": -1.964223852440762,
+          "spectral": 0.2863818184802864,
+          "background": 0.3206752208347095
+        },
+        {
+          "E": -1.9641116336691173,
+          "spectral": 0.2860073326696826,
+          "background": 0.3206818886596879
+        },
+        {
+          "E": -1.9639994148974727,
+          "spectral": 0.28563904200335943,
+          "background": 0.32068855626936416
+        },
+        {
+          "E": -1.963887196125828,
+          "spectral": 0.28527658037221754,
+          "background": 0.3206952236637903
+        },
+        {
+          "E": -1.9637749773541833,
+          "spectral": 0.2849195990259948,
+          "background": 0.3207018908429001
+        },
+        {
+          "E": -1.9636627585825386,
+          "spectral": 0.28456776529316363,
+          "background": 0.3207085578068321
+        },
+        {
+          "E": -1.9635505398108941,
+          "spectral": 0.2842207613909413,
+          "background": 0.32071522455568297
+        },
+        {
+          "E": -1.9634383210392494,
+          "spectral": 0.2838782833182505,
+          "background": 0.3207218910893471
+        },
+        {
+          "E": -1.9633261022676047,
+          "spectral": 0.28354003982474274,
+          "background": 0.3207285574079567
+        },
+        {
+          "E": -1.96321388349596,
+          "spectral": 0.2832057514484016,
+          "background": 0.32073522351155265
+        },
+        {
+          "E": -1.9631016647243154,
+          "spectral": 0.2828751496164283,
+          "background": 0.32074188940016124
+        },
+        {
+          "E": -1.9629894459526707,
+          "spectral": 0.28254797580364216,
+          "background": 0.32074855507381084
+        },
+        {
+          "E": -1.9628772271810262,
+          "spectral": 0.28222398074319155,
+          "background": 0.32075522053258726
+        },
+        {
+          "E": -1.9627650084093815,
+          "spectral": 0.2819029236848196,
+          "background": 0.3207618857764939
+        },
+        {
+          "E": -1.9626527896377368,
+          "spectral": 0.2815845716965387,
+          "background": 0.3207685508055828
+        },
+        {
+          "E": -1.9625405708660921,
+          "spectral": 0.2812686990055738,
+          "background": 0.32077521561995864
+        },
+        {
+          "E": -1.9624283520944474,
+          "spectral": 0.2809550863745517,
+          "background": 0.3207818802195577
+        },
+        {
+          "E": -1.9623161333228027,
+          "spectral": 0.2806435205102284,
+          "background": 0.3207885446044522
+        },
+        {
+          "E": -1.962203914551158,
+          "spectral": 0.2803337935007911,
+          "background": 0.32079520877479284
+        },
+        {
+          "E": -1.9620916957795136,
+          "spectral": 0.2800257022788141,
+          "background": 0.32080187273049854
+        },
+        {
+          "E": -1.961979477007869,
+          "spectral": 0.2797190481078176,
+          "background": 0.320808536471658
+        },
+        {
+          "E": -1.9618672582362242,
+          "spectral": 0.2794136360887188,
+          "background": 0.320815199998276
+        },
+        {
+          "E": -1.9617550394645795,
+          "spectral": 0.27910927468453783,
+          "background": 0.3208218633104323
+        }
+      ],
+      "minimum_spectral": 0.06084541893875534,
+      "scope": "Slow partial coefficient model; source limit has logarithmic corrections; no native observable identification"
+    },
+    "neutral_confined_fast_source": [
+      {
+        "lam": 0.2,
+        "z": [
+          -1.1846063170490329,
+          -0.00045443164880040006
+        ],
+        "f_fast": 0.0005000000000000001,
+        "N": 19999,
+        "abs_g": 0.48437856546758096,
+        "g": [
+          -0.05241945832345721,
+          0.48153379432134036
+        ],
+        "abs_z_over_g": 2.445621025919449,
+        "eta_over_f": 0.9088632976007999,
+        "host_G": [
+          -0.4288237030817459,
+          -0.42011003972476657
+        ],
+        "source_A": [
+          0.17345234190797673,
+          0.4136451493629413
+        ],
+        "source_D": [
+          1.156955590779983,
+          1.8814012926041068
+        ]
+      },
+      {
+        "lam": 0.1,
+        "z": [
+          -0.5970718232045926,
+          -5.680395610005001e-05
+        ],
+        "f_fast": 6.250000000000001e-05,
+        "N": 159999,
+        "abs_g": 0.4326369845112035,
+        "g": [
+          -0.04744072322043615,
+          0.43002806669712773
+        ],
+        "abs_z_over_g": 1.3800757847396323,
+        "eta_over_f": 0.9088632976007999,
+        "host_G": [
+          -0.4634094376756801,
+          -0.6329215458785267
+        ],
+        "source_A": [
+          0.40812079822882774,
+          0.36695719790839093
+        ],
+        "source_D": [
+          1.9244809688123505,
+          1.9557769586992118
+        ]
+      },
+      {
+        "lam": 0.05,
+        "z": [
+          -0.299434765730371,
+          -7.100494512506251e-06
+        ],
+        "f_fast": 7.812500000000002e-06,
+        "N": 1279999,
+        "abs_g": 0.43884647456050524,
+        "g": [
+          -0.02470327121699736,
+          0.4381506323461871
+        ],
+        "abs_z_over_g": 0.6823223682369445,
+        "eta_over_f": 0.9088632976007999,
+        "host_G": [
+          -0.48146798270382285,
+          -0.8510268728163534
+        ],
+        "source_A": [
+          0.6126800083828868,
+          0.20117996846602948
+        ],
+        "source_D": [
+          2.292735217772683,
+          1.2380905331821364
+        ]
+      },
+      {
+        "lam": 0.025,
+        "z": [
+          -0.14988981701522824,
+          -8.875618140632814e-07
+        ],
+        "f_fast": 9.765625000000002e-07,
+        "N": 10239999,
+        "abs_g": 0.5641766537064941,
+        "g": [
+          -0.03487458241581588,
+          0.5630977358228142
+        ],
+        "abs_z_over_g": 0.26567887209284347,
+        "eta_over_f": 0.9088632976007999,
+        "host_G": [
+          -0.4906776510847846,
+          -1.0708418936152104
+        ],
+        "source_A": [
+          0.696964582236228,
+          0.07011786842516392
+        ],
+        "source_D": [
+          2.088443742103578,
+          0.4353143719008457
+        ]
+      },
+      {
+        "lam": 0.02,
+        "z": [
+          -0.11993481365268867,
+          -4.544316488004e-07
+        ],
+        "f_fast": 5.000000000000001e-07,
+        "N": 19999999,
+        "abs_g": 0.5178232517728344,
+        "g": [
+          -0.07530898337397537,
+          0.5123177501314692
+        ],
+        "abs_z_over_g": 0.23161341875425132,
+        "eta_over_f": 0.9088632976007999,
+        "host_G": [
+          -0.49253337424117216,
+          -1.1417498090124611
+        ],
+        "source_A": [
+          0.70625223889088,
+          0.06468522412143357
+        ],
+        "source_D": [
+          2.2062020449753508,
+          0.354129058712276
+        ]
+      }
+    ],
+    "neutral_coupled_slow_pole": {
+      "rows": [
+        {
+          "lam": 0.2,
+          "partial": [
+            -1.9231751817872342,
+            -0.0022403166336774777
+          ],
+          "coupled": [
+            -1.9229999858290159,
+            -0.002854051624506998
+          ],
+          "residual": 1.1429156780139786e-12,
+          "success": true,
+          "physical_shift_over_lambda5_log": 0.12840315761292578,
+          "partial_width_over_lambda4": 0.11201583168387386,
+          "coupled_width_over_lambda4": 0.14270258122534987
+        },
+        {
+          "lam": 0.1,
+          "partial": [
+            -1.9707367778554095,
+            -0.0005645648298305103
+          ],
+          "coupled": [
+            -1.9707314983025885,
+            -0.0006222193480437885
+          ],
+          "residual": 2.135469228224821e-10,
+          "success": true,
+          "physical_shift_over_lambda5_log": 0.1333098765866622,
+          "partial_width_over_lambda4": 0.11291296596610205,
+          "coupled_width_over_lambda4": 0.12444386960875767
+        },
+        {
+          "lam": 0.05,
+          "partial": [
+            -1.9886978587869717,
+            -0.0001416503244843694
+          ],
+          "coupled": [
+            -1.9886986140227698,
+            -0.0001465759247092604
+          ],
+          "residual": 1.360347097138643e-10,
+          "success": true,
+          "physical_shift_over_lambda5_log": 0.11942579029614356,
+          "partial_width_over_lambda4": 0.11332025958749549,
+          "coupled_width_over_lambda4": 0.11726073976740829
+        },
+        {
+          "lam": 0.025,
+          "partial": [
+            -1.9955930450762234,
+            -3.5466020605917027e-05
+          ],
+          "coupled": [
+            -1.9955932179856908,
+            -3.582340228401715e-05
+          ],
+          "residual": 3.20759432784844e-10,
+          "success": true,
+          "physical_shift_over_lambda5_log": 0.09373012592739853,
+          "partial_width_over_lambda4": 0.11349126593893447,
+          "coupled_width_over_lambda4": 0.11463488730885486
+        },
+        {
+          "lam": 0.02,
+          "partial": [
+            -1.9967408790076913,
+            -2.270417651137563e-05
+          ],
+          "coupled": [
+            -1.9967409728314793,
+            -2.287782350152978e-05
+          ],
+          "residual": 1.1313516363770347e-10,
+          "success": true,
+          "physical_shift_over_lambda5_log": 0.09651606277772729,
+          "partial_width_over_lambda4": 0.11352088255687814,
+          "coupled_width_over_lambda4": 0.1143891175076489
+        }
+      ],
+      "scope": "Explicit projected fast/slow coefficient model; native higher coefficients absent"
+    }
+  },
+  "scope": "Native finite-order coefficients; explicit projected-model pole and readout. No full native pole, physical scalar or empirical test."
+}

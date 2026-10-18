@@ -1,0 +1,85 @@
+{
+  "rows": [
+    {
+      "lam": 0.2,
+      "partial": [
+        -1.9231751817872342,
+        -0.0022403166336774777
+      ],
+      "coupled": [
+        -1.9229999858290159,
+        -0.002854051624506998
+      ],
+      "residual": 1.1429156780139786e-12,
+      "success": true,
+      "physical_shift_over_lambda5_log": 0.12840315761292578,
+      "partial_width_over_lambda4": 0.11201583168387386,
+      "coupled_width_over_lambda4": 0.14270258122534987
+    },
+    {
+      "lam": 0.1,
+      "partial": [
+        -1.9707367778554095,
+        -0.0005645648298305103
+      ],
+      "coupled": [
+        -1.9707314983025885,
+        -0.0006222193480437885
+      ],
+      "residual": 2.135469228224821e-10,
+      "success": true,
+      "physical_shift_over_lambda5_log": 0.1333098765866622,
+      "partial_width_over_lambda4": 0.11291296596610205,
+      "coupled_width_over_lambda4": 0.12444386960875767
+    },
+    {
+      "lam": 0.05,
+      "partial": [
+        -1.9886978587869717,
+        -0.0001416503244843694
+      ],
+      "coupled": [
+        -1.9886986140227698,
+        -0.0001465759247092604
+      ],
+      "residual": 1.360347097138643e-10,
+      "success": true,
+      "physical_shift_over_lambda5_log": 0.11942579029614356,
+      "partial_width_over_lambda4": 0.11332025958749549,
+      "coupled_width_over_lambda4": 0.11726073976740829
+    },
+    {
+      "lam": 0.025,
+      "partial": [
+        -1.9955930450762234,
+        -3.5466020605917027e-05
+      ],
+      "coupled": [
+        -1.9955932179856908,
+        -3.582340228401715e-05
+      ],
+      "residual": 3.20759432784844e-10,
+      "success": true,
+      "physical_shift_over_lambda5_log": 0.09373012592739853,
+      "partial_width_over_lambda4": 0.11349126593893447,
+      "coupled_width_over_lambda4": 0.11463488730885486
+    },
+    {
+      "lam": 0.02,
+      "partial": [
+        -1.9967408790076913,
+        -2.270417651137563e-05
+      ],
+      "coupled": [
+        -1.9967409728314793,
+        -2.287782350152978e-05
+      ],
+      "residual": 1.1313516363770347e-10,
+      "success": true,
+      "physical_shift_over_lambda5_log": 0.09651606277772729,
+      "partial_width_over_lambda4": 0.11352088255687814,
+      "coupled_width_over_lambda4": 0.1143891175076489
+    }
+  ],
+  "scope": "Explicit projected fast/slow coefficient model; native higher coefficients absent"
+}

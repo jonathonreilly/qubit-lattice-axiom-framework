@@ -40,3 +40,5 @@ Independent coefficient classification, all-length readout derivative, quotient/
 
 ## Bulk segment block
 Independentchannel,tension,source,K2,AiryanddispersionchecksPASS. FinalscopedreviewPASSafteraddingloadbearingplaquettenote/runnerlinks. Sourceboundreplay2.014512sPASS. Noformalauditverdict.
+
+Slow bulk block: focused native graph/source/host/response checks and transfer-strip/coupled endpoint proofs PASS. Astra-low scoped final review PASS after output-directory creation fix. Aggregate source-bound replay13.184374s PASS; no formal audit applied.

@@ -37,3 +37,12 @@ Original one-qubit H -> canonical competing order-four terms -> fixed ratio -> p
 
 ## Bulk segment block
 Native Pauli paths -> completecompactfour-wallclassification -> K1sourcecomponent and originalC -> localbulkplaquettetension -> conditionalconfinedmodel. trace_class: upstream_support; reachability_to_target: partially_closes. Next: fullslowchannel/higherordercontrol atgrowinglength.
+
+## Slow bulk block
+trace_class: upstream_support
+target_blocker_text: "derive the scalar mode and its coupling without adding a new interaction"
+source_of_blocker_text: user_goal
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: native omitted-order and growing-length control
+Native K2 vertices -> two-dimensional slow host -> original-source induced readout -> confined fast-channel strip bound -> explicit projected-model resonance persistence. Does not close physical scalar or native-pole blocker.

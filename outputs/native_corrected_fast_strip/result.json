@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "lam": 0.05,
+      "host_error": 1.3346296919489305e-12,
+      "arm_cutoff_error": 0.0,
+      "directional_imag": 2.171090119707721,
+      "identity_error": 2.3814283878209608e-14,
+      "remainder": 1.5231357482731503e-10,
+      "functional_bound": 1.5422661928117902e-10
+    },
+    {
+      "lam": 0.2,
+      "host_error": 6.701889312647343e-13,
+      "arm_cutoff_error": 0.0,
+      "directional_imag": 2.2555664746497146,
+      "identity_error": 6.217248937900877e-15,
+      "remainder": 1.517875853070786e-07,
+      "functional_bound": 1.5957192154194184e-07
+    }
+  ],
+  "poles": [
+    {
+      "lam": 0.1,
+      "e": [
+        -1.959416194654175,
+        -0.0006052034080323453
+      ],
+      "residual": 2.6145752229922437e-14,
+      "success": true,
+      "real_lambda4_coefficient": 1.345247222538157,
+      "width_over_lambda4": 0.12104068160646904,
+      "predicted_real_lambda4": 1.3504601500297404,
+      "predicted_width": 0.11360791220010272
+    },
+    {
+      "lam": 0.05,
+      "e": [
+        -1.985862632438936,
+        -0.00014465276763661117
+      ],
+      "residual": 3.5280243868060543e-10,
+      "success": true,
+      "real_lambda4_coefficient": 1.3481163507564908,
+      "width_over_lambda4": 0.11572221410928892,
+      "predicted_real_lambda4": 1.3504601500297404,
+      "predicted_width": 0.11360791220010272
+    }
+  ],
+  "scope": "Specified projected model only; finite controls do not prove uniform strip or full native resonance"
+}

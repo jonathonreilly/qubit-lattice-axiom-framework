@@ -30,3 +30,7 @@ Slow native-control: additionalmicroscopictermsderivedwithoutnewinteraction. Ter
 
 ### Cubic response imports
 Supplied compass Hamiltonian, periodic finite geometry, plane/spatial sector and numerical lowest state remain premises. Q is an algebraically derived scalar diagnostic; its selection as a physical source/detector is not derived. S and Cz are chosen probes. All inputs are exposed model development, no independent observational test. Finite shape comparisons do not prove a bulk scalar or a light cosmological mode.
+
+
+### Corrected projected channel
+The native K2/K4 coefficients are derived, but projecting to these channels and completing the long-row K4 formula at ell3 defines a conditional model. Actual full-H remainder, boundary channels, prepared state and physical source identification remain imports/gaps. The range-two Airy coefficient is a prediction, not a certified little-o theorem.

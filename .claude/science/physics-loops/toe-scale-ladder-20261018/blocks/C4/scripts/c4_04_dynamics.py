@@ -173,10 +173,11 @@ check(f'det(M^n - x^t) != 0 for all |t|_inf <= n+1, n<={NSYM} (no glider, no rec
 print(f'\nsupport growth of alpha^n(X_0), n <= {NMAX} (numerical evidence; exact F2 convolution)')
 
 
-def grow(M, nmax):
+def grow(M, nmax, seed):
     R = nmax + 1
     K = [[to_grid(M[i][j], 1) for j in range(2)] for i in range(2)]
-    vx, vz = to_grid(L.ONE, R), np.zeros((2 * R + 1,) * 3, np.int64)
+    z = np.zeros((2 * R + 1,) * 3, np.int64)
+    vx, vz = (to_grid(L.ONE, R), z.copy()) if seed == 'X' else (z.copy(), to_grid(L.ONE, R))
     out = []
     for n in range(1, nmax + 1):
         nx = (convolve(vx, K[0][0], mode='same', method='direct') + convolve(vz, K[0][1], mode='same', method='direct')) % 2
@@ -192,27 +193,29 @@ def grow(M, nmax):
 reps = {}
 for nm, s in spread:
     M = L.matrix_of(s)
-    key = (nm, tuple(sorted(tuple(sorted(map(abs, e))) for e in L.trace(M))))
+    key = (nm, tuple(sorted(set(tuple(sorted(map(abs, e))) for e in L.trace(M)))),
+           tuple(sorted(set(tuple(sorted(map(abs, e))) for i in range(2) for j in range(2) for e in M[i][j]))))
     reps.setdefault(key, s)
-shown = 0
-for key, s in sorted(reps.items())[:200]:
+print(f'  {len(reps)} representatives (action, orbit shapes in tau, orbit shapes in M)')
+ok_lb = True
+nsat = 0
+for key, s in sorted(reps.items()):
     M = L.matrix_of(s)
     tau = L.trace(M)
-    g = grow(M, NMAX)
+    gX, gZ = grow(M, NMAX, 'X'), grow(M, NMAX, 'Z')
     vmax = max(max(map(abs, v)) for v in newton_vertices(tau))
-    radii_ok = all(r == n * vmax for (n, c, r) in g) if True else True
-    sizes = [c for (_, c, _) in g]
-    # box-counting style exponent from n = 2^k - 1 vs 2^(k+1) - 1 is noisy; report log-log slope
-    ns = np.array([n for (n, _, _) in g], float)
+    lb = all(max(a[2], b[2]) >= n * vmax for (n, _, _), a, b in zip(gX, gX, gZ))
+    ub = all(max(a[2], b[2]) <= n for (n, _, _), a, b in zip(gX, gX, gZ))
+    ok_lb &= lb and ub
+    sat = all(max(a[2], b[2]) == n for (n, _, _), a, b in zip(gX, gX, gZ))
+    nsat += sat
+    sizes = [c for (_, c, _) in gX]
+    ns = np.array([n for (n, _, _) in gX], float)
     cs = np.array(sizes, float)
-    slope = np.polyfit(np.log(ns[ns >= 4]), np.log(cs[ns >= 4]), 1)[0]
-    if shown < 12:
-        print(f'  {key[0]:7s} tau-orbit-shapes {[o for o in sorted(set(tuple(sorted(map(abs, e))) for e in tau))]}: '
-              f'|supp| at n=1,2,4,8,16,32 = {[sizes[n - 1] for n in (1, 2, 4, 8, 16, 32) if n <= NMAX]}, '
-              f'Chebyshev radius = n*{vmax} for all n: {radii_ok}, log-log slope {slope:.2f}')
-        shown += 1
-    ok_r = radii_ok
-    if not ok_r:
-        print('   radius sequence', [r for (_, _, r) in g])
-check('every spreading representative has Chebyshev front radius exactly n*max|v| for n<=NMAX', True)
+    slope = np.polyfit(np.log(ns[ns >= 4]), np.log(np.maximum(cs[ns >= 4], 1)), 1)[0]
+    print(f'  {key[0]:7s} tau-shapes {list(key[1])} M-shapes {list(key[2])}: |supp a^n(X0)| n=1,2,4,8,16,32: '
+          f'{[sizes[n - 1] for n in (1, 2, 4, 8, 16, 32) if n <= NMAX]}; front radius = n for all n: {sat}; '
+          f'log-log slope {slope:.2f}')
+check(f'light cone: n*max_v|v|_inf <= max(radius a^n(X0), radius a^n(Z0)) <= n for all reps, n<={NMAX}', ok_lb)
+print(f'  representatives whose front radius saturates n at every step: {nsat}/{len(reps)}')
 print(f'TOTAL: PASS={P} FAIL={F}')

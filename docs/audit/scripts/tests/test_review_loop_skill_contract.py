@@ -312,14 +312,16 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         self.assertIn("landing_train_combined_gate", self.missing(skill=mutated))
 
     def test_model_and_effort_are_fail_closed(self):
-        self.assert_skill_mutation_fails("`gpt-6-astra`, `low`", "reviewer_model_and_effort")
-        self.assert_skill_mutation_fails("**Astra xhigh**", "reviewer_model_and_effort")
+        self.assert_skill_mutation_fails("**fast reviewer**", "reviewer_model_and_effort")
+        self.assert_skill_mutation_fails("from a different model family", "reviewer_model_and_effort")
+        self.assert_skill_mutation_fails("configured reviewer** in that setting", "reviewer_model_and_effort")
         self.assert_skill_mutation_fails("its actual configuration stated", "reviewer_model_and_effort")
+        self.assert_skill_mutation_fails("do not call it independent", "reviewer_model_and_effort")
 
     def test_negated_model_and_effort_are_fail_closed(self):
         mutated = self.skill.replace(
-            "use **Astra low**",
-            "do not use **Astra low**",
+            "use the **fast reviewer**",
+            "do not use the **fast reviewer**",
             1,
         )
         self.assertNotEqual(mutated, self.skill)
@@ -340,7 +342,11 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         self.assertIn("reviewer_model_and_effort", self.missing(skill=mutated))
 
     def test_soft_wrapped_negations_cannot_supply_affirmative_clauses(self):
-        for clause in ["If a requested", "Respect a later explicit owner"]:
+        for clause in [
+            "If a requested",
+            "Respect a later explicit owner",
+            "If no different-family reviewer",
+        ]:
             for prefix in ["Do not\n ", "Never\n  ", "Do not\n"]:
                 with self.subTest(clause=clause, prefix=prefix):
                     mutated = self.skill.replace(clause, prefix + clause, 1)

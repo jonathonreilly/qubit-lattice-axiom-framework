@@ -118,9 +118,9 @@ review-only flags contradict the drain's land-end-to-end contract).
    the shared-pool budget, cross-unit parallelism replaces per-lens
    parallelism. Use extra seats only for an identified escalation or explicit
    owner request; spare capacity alone does not require per-lens fanout.
-4. **Concurrency budget (shared codex pool).** Reviewer processes share one
+4. **Concurrency budget (shared model-worker pool).** Reviewer processes share one
    pool with the audit lane's auditor seats and judicial panels. Keep the
-   TOTAL concurrent codex processes across every lane at or under ~8-10
+   TOTAL concurrent model-worker processes across every lane at or under ~8-10
    (measured 2026-07-17: ~18 concurrent processes collapsed audit-lane
    throughput from 6-11 landed verdicts/hour to ~1 every 3 hours). When the
    audit drain is running at 4+ seats, run at most 2-3 concurrent PR
@@ -435,13 +435,13 @@ review-only flags contradict the drain's land-end-to-end contract).
    content, or quarantine a PR from a shared failure. This fallback spends more
    validation only on the exceptional failing train and keeps the common clean
    path fast.
-6. **Who may kick it off: any orchestrator** — any Claude tier, a codex
-   session, or a human. The orchestration is process: every finding and
+6. **Who may kick it off: any orchestrator** — an agent session of any host,
+   model family or tier, or a human. The orchestration is process: every finding and
    every PASS/FAIL verdict comes from the configured reviewer model's seats,
    the orchestrator fixes only per Fix Policy, and nothing lands without a
    reviewer PASS on its final state. The orchestrator never self-certifies.
    Substituting a different reviewer family for a round (for example a
-   fresh-context reviewer when the codex lane is unavailable) requires
+   fresh-context reviewer when the configured reviewer is unavailable) requires
    explicit owner authorization for that episode and must be disclosed in
    the PR's provenance comment.
 
@@ -451,7 +451,7 @@ review-only flags contradict the drain's land-end-to-end contract).
    round N / fixing / confirmation / landing / landed / closed-with-reason —
    reviewer runtime, and the finding count so far read from that PR's
    incremental findings file), landings so far with their main SHAs, the
-   remaining queue, and the current codex process count against the budget.
+   remaining queue, and the current model-worker process count against the budget.
    A session that stops early still emits a final block with the same
    fields; the [Final Report section](FIXES_AND_REPORTING.md#final-report) remains the full closing artifact.
 

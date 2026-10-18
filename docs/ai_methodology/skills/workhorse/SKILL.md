@@ -23,7 +23,8 @@ supported host or model family is in use. It owns target selection, synthesis,
 review, and authorized delivery; the selected worker profile does not change
 that responsibility.
 
-Two worker profiles are first-class (owner directive 2026-08-03).
+Two worker profiles are available; use the one the user has configured and
+the host actually provides.
 Operational support — support-only evidence, NOT on `origin/main`: the
 2026-08 campaign work-log (`STATE.yaml` and `REVIEW_HISTORY.md` under
 `.claude/science/physics-loops/toe-time-expansion-20260802/` on the pack
@@ -33,36 +34,36 @@ primary, a worker catching a verdict-flipping rubric defect in its own
 primary, and 3/3 pre-registered checker predictions on never-evaluated
 windows. The profiles:
 
-- **Codex text-reasoning worker** — the local `codex exec` setup, preferred
-  profile `gpt-5.6-sol` at `model_reasoning_effort=max` (owner directive
-  2026-07-08; verify slug and effort live against the local install). Launch
-  and reliability rules below.
-- **Claude worker** — a subagent of the host session (the Agent tool or
-  equivalent), running the strongest available WORKER-TIER Claude model
-  (currently Opus 5 — the tier below the supervising frontier model) at
-  maximum reasoning effort (farmed work runs at max — owner directive
-  2026-06-26; subagents inherit the session's effort, so the session must
-  be at max). Launched as background workers for bounded subtasks, each in its
-  own durable worktree. The codex start-hang/stdin failure modes have not
-  been observed with Claude workers (no CLI stdin is involved at launch),
-  but context exhaustion from oversized reads or tool output remains
+- **Host subagent worker** — a subagent of the host session (the host's
+  agent or subagent tool), running the user's configured worker model (by
+  default the session's configured model) at maximum available reasoning
+  effort unless the user explicitly chose another effort. Pass the effort
+  explicitly when the host allows it; where subagents inherit the session's
+  effort, the session must be at that effort. Launched as background workers
+  for bounded subtasks, each in its own durable worktree. The external-CLI
+  start-hang/stdin failure modes below have not been observed with host
+  subagents (no CLI stdin is involved at launch), but context exhaustion from oversized reads or tool output remains
   possible for any bounded-context worker: the bounded-read and
   incremental-delivery discipline applies to this profile too.
+- **External CLI worker** — a separately launched text-reasoning CLI,
+  preferably from another model family, when one is installed and configured
+  locally (for example `codex exec`), at its maximum available reasoning
+  effort. Verify the configured model and effort live against the local
+  install and record them. Launch and reliability rules below.
 
-  Worker-tier rationale (owner-ratified 2026-08-04): the frontier model is
-  NOT the default worker even though it is the strongest available Claude
-  model. The default split concentrates the frontier model where its
-  capability is load-bearing — spec judgment, line-by-line review, and
-  landing — and preserves the shared capacity pool across a long window
-  (parallel frontier workers would burn the window's budget on the lane
-  where discipline, not raw capability, carries robustness). Per the
-  campaign work-log cited above: the defects that were caught in that
-  window were caught by the verification structure, including supervisor
-  spec errors caught BY workers; that record says nothing about defects
-  that went undetected, and no completeness claim is made. The supervising
-  agent MAY escalate an individual block's worker or checker to the
-  frontier model when that block's difficulty warrants it; escalation is a
-  profile fact and is disclosed in the ship note like any other.
+Worker model choice: use the worker model and effort the user configured.
+When the user has configured a worker tier below the supervising model, that
+split concentrates the strongest model where its capability is load-bearing —
+spec judgment, line-by-line review, and landing — and preserves the shared
+capacity pool across a long window (parallel strongest-model workers would
+burn the window's budget on the lane where discipline, not raw capability,
+carries robustness). Per the campaign work-log cited above: the defects that
+were caught in that window were caught by the verification structure,
+including supervisor spec errors caught BY workers; that record says nothing
+about defects that went undetected, and no completeness claim is made. The
+supervising agent MAY escalate an individual block's worker or checker to the
+strongest available model when that block's difficulty warrants it;
+escalation is a profile fact and is disclosed in the ship note like any other.
 
 Profile selection is the supervising agent's discretion, with one preference:
 when both lanes are available, prefer primary and checker from different model
@@ -73,13 +74,15 @@ When only one family is available (quota, outage), the same-family setup is
 admissible ONLY under the robustness conditions below, and every shipped
 block must say plainly in the note, receipt, and PR whether its checker was
 built by a different model family or in a separate context of the same
-family (and say so if context separation cannot be established). This
+family (and say so if context separation cannot be established). Do not
+call a same-family checker an independent referee. This
 describes the checker pairing only; it is not an audit-independence grade —
 audit rows use the controlled `independence` vocabulary in
 `docs/repo/CONTROLLED_VOCABULARY.md`.
 
 The `/workhorse` command is an adapter to this skill. Older science-command
-boilerplate that pins a Codex-first worker or prescribes a different execution
+boilerplate that pins a named model, vendor or tool for workers (for example a
+Codex-first worker via `codex exec`) or prescribes a different execution
 split defers to these profile and responsibility rules.
 
 Never substitute an image, visual-generation, document-rendering, or
@@ -152,13 +155,13 @@ The worker must not:
 - decide to land, merge, or close PRs;
 - route science work through visual/image-generation tooling.
 
-## Claude Worker Launch (when using the Claude profile)
+## Host Subagent Launch (when using the host subagent profile)
 
 - Spawn one background subagent per independent bounded subtask, each pointed
   at its own durable
   worktree (never a tmp path — reboots purge tmp; the 2026-08-02 campaign
   interruption is the precedent), with the block spec inline in the prompt.
-- The spec carries the same bounds as a codex spec: named read caps, exact
+- The spec carries the same bounds as an external CLI worker spec: named read caps, exact
   deliverable filenames, incremental file writes, no docs/ edits
   except deliverable paths the spec names exactly (a note draft assigned
   under the worker contract is such a deliverable), no pushes (the
@@ -168,12 +171,16 @@ The worker must not:
   contract. Preserve work incrementally in the durable worktree; a certified
   run must identify the exact source it executed, even before a commit exists.
 
-## Codex Worker Launch & Reliability (REQUIRED when using the codex profile)
+## External CLI Worker Launch & Reliability (REQUIRED when using that profile)
 
-`codex exec` workers hang or silently fail to deliver in two confirmed ways. Both
-have a fix; apply all of the following every time.
+On the local `codex exec` setup, CLI workers hang or silently fail to deliver
+in two confirmed ways. Both have a fix; apply all of the following every time.
+For another CLI, apply the same rules with that tool's equivalent options
+(closed stdin, prompt from a spec file, captured log and final message) and
+record the exact command, model and effort. If no external CLI worker is
+available, use the host subagent profile and record that provenance.
 
-**Launch recipe — close stdin and capture output:**
+**Launch recipe (`codex exec` example) — close stdin and capture output:**
 
 ```bash
 codex exec -s workspace-write -C "<repo-abs-path>" \

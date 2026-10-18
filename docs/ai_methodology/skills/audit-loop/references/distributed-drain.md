@@ -1,6 +1,6 @@
 # Coordinatorless Audit Drain
 
-Use this contract when more than one employee or Codex account is helping
+Use this contract when more than one employee or agent account is helping
 drain the same repository.
 
 ## One command, separate clones
@@ -59,7 +59,7 @@ eligible row. Unknown execution failures and unreconciled apply, propagation,
 or push failures still stop that worker fail-closed; they do not authorize
 another worker to reinterpret the failed scientific packet.
 
-Keep repository-wide load near 8-10 active Codex processes when practical,
+Keep repository-wide load near 8-10 active model-worker processes when practical,
 including audit seats, panels, and review-loop reviewers. This is a throughput
 guideline, not a correctness lock. If capacity is exhausted, lower
 `--max-workers` or restart later.

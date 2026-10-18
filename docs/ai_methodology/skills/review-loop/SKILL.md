@@ -29,25 +29,29 @@ only its matching formal statement, not a new bridge or physical identification.
 
 ## Model And Tool Boundary
 
-Review-loop is a text/code/math review path. Owner direction (2026-09-08):
-use **Astra low** (`gpt-6-astra`, `low`) for ordinary pre-landing science review.
-Use one independent reviewer per coherent unit, applying the relevant lenses
-in one focused pass. Escalate a material mathematical or premise question,
-reviewer disagreement or failed decisive control that the unit review cannot
-resolve through a narrow correction to
-**Astra xhigh**; send its source and evidence, not the entire backlog. An
-escalation is not a routine second review. Reuse completed valid reviews and
-the original reviewer's affected-fix confirmation; do not rerun them just to
-change model labels. Respect a later explicit owner choice. If a requested
-model is unavailable, report that fact and use an available reviewer only
-with its actual configuration stated. Do not silently substitute a model.
+Review-loop is a text/code/math review path. For ordinary pre-landing science
+review, use the **fast reviewer** named in the owner's landing-review setting
+(`docs/ai_methodology/SCIENCE_WORKFLOW.md` section 4; owner direction
+2026-09-08), from a different model family than the author when one is
+available. Use one independent reviewer per coherent unit, applying the
+relevant lenses in one focused pass. Escalate a material mathematical or
+premise question, reviewer disagreement or failed decisive control that the
+unit review cannot resolve through a narrow correction to the **strongest
+configured reviewer** in that setting; send its source and evidence, not the
+entire backlog. An escalation is not a routine second review. Reuse completed
+valid reviews and the original reviewer's affected-fix confirmation; do not
+rerun them just to change model labels. Respect a later explicit owner choice.
+If a requested model is unavailable, report that fact and use an available
+reviewer only with its actual configuration stated. Do not silently substitute
+a model. If no different-family reviewer is available, label the review
+same-family and do not call it independent.
 
 Do not use image-generation, image-editing, presentation, document-rendering,
 or visual-generation tools unless the user explicitly asks for a separate
 visual artifact task.
 
 If a run surfaces an image-generation model/tool error such as a stale
-`gpt-image-*` tool configuration, treat it as a local Codex tooling/config
+`gpt-image-*` tool configuration, treat it as a local host tooling/config
 problem, not as part of review-loop. Do not retry the review by invoking
 imagegen, changing the science-review model, or routing science review through
 visual tooling.

@@ -402,7 +402,7 @@ explicit full-backlog request, subject to any additional user constraints.
   pointwise evaluation at the supplied realized state (bounding, where due,
   comes from the supplied state data actually quoted, not from the primitive).
   Audit only the extra content actually claimed.
-- If the author family appears to be Codex and the current auditor is Codex, do not let the current context self-ratify a clean result. Restart the claim in a distinct restricted-input sub-agent when sub-agents are available, and record a clean result only as `independence: fresh_context` with a distinct `auditor` identity if `apply_audit.py` accepts it. If no sub-agent is available, skip clean application and report that a non-Codex, human, or fresh-context agent audit is required.
+- If the author family appears to be the current auditor's model family (for example both Codex), do not let the current context self-ratify a clean result. Restart the claim in a distinct restricted-input sub-agent when sub-agents are available, and record a clean result only as `independence: fresh_context` with a distinct `auditor` identity if `apply_audit.py` accepts it. If no sub-agent is available, skip clean application and report that a different-family, human, or fresh-context agent audit is required.
 - Do not stop after producing an audit JSON unless the user explicitly asks for a dry run, no-apply, or JSON-only result. If the user asks to "return JSON" as part of an audit-loop task, treat that as the required verdict format and still apply, verify, commit, and push the audit result according to this skill.
 
 ## Two-Tier Assurance (owner-approved 2026-07-12)
@@ -510,7 +510,7 @@ or explicitly full-backlog audit, the default session is:
    not the membership of every other phase; a lane-only request uses the
    bounded path above.
 
-When multiple employees or Codex accounts participate, read and follow
+When multiple employees or agent accounts participate, read and follow
 [`references/distributed-drain.md`](references/distributed-drain.md). Every
 employee runs the same command from a separate clean clone. There is no leader,
 helper role, global lease, campaign ref, or terminal completion record.
@@ -696,15 +696,20 @@ python3 docs/audit/scripts/orchestrate_audit_batch.py \
 ```
 
 - **Who may kick it off: any orchestrator.** The invocation is pure process —
-  a Claude session (any tier), a codex session, or a human may start it
-  without ceremony, because every verdict originates from a fresh sol auditor
+  an agent session of any host, model family or tier, or a human may start it
+  without ceremony, because every verdict originates from a fresh auditor
   seat inside the drainer. The orchestrator never authors, edits, or
   completes verdict JSON, packets, or rationales; an orchestrator that
   touches verdict content has left this skill.
-- **Auditor model/effort is fixed**: the current best Codex GPT model at
-  xhigh reasoning exactly — per seat, regardless of who orchestrates. Do not
-  escalate seats to max; do not mix families inside one row's
-  cross-confirmation without the owner's seating policy saying so.
+- **Auditor model/effort is fixed by the runner**: each seat uses the
+  strongest qualifying auditor model that `scripts/codex_audit_runner.py`
+  selects under `docs/audit/FRESH_LOOK_REQUIREMENTS.md`, at the runner's
+  pinned xhigh reasoning exactly — per seat, regardless of who orchestrates;
+  the runner records the exact family. If no qualifying model is available,
+  the runner refuses to run; report that and do not substitute the
+  orchestrating model. Do not escalate seats to max; do not mix families
+  inside one row's cross-confirmation without the owner's seating policy
+  saying so.
 - **Commits stay serialized** one claim at a time (apply every validated seat
   for that claim -> one pipeline -> one lint -> one commit -> one push inside
   the drainer). A simultaneous critical pair is one claim transaction, not two
@@ -734,9 +739,9 @@ python3 docs/audit/scripts/orchestrate_audit_batch.py \
   failure is a hard error; discard the isolated checkout on every exit path.
   Never infer ownership of a shared untracked/ignored delta and recursively
   delete it.
-- **Concurrency budget (shared codex pool).** Auditor seats, review-loop
+- **Concurrency budget (shared model-worker pool).** Auditor seats, review-loop
   reviewers, and judicial panels all draw on one pool. Keep the TOTAL
-  concurrent codex processes across every lane at or under ~8-10, and
+  concurrent model-worker processes across every lane at or under ~8-10, and
   coordinate before raising `--max-workers` while review campaigns run.
   The top-level ceiling applies to judicial work too: a five-judge panel
   still requires five distinct validator-clean votes, but schedules them in
@@ -1380,9 +1385,9 @@ Create an audit JSON matching `docs/audit/scripts/apply_audit.py`. Returning thi
 
 - `claim_type`: one of `positive_theorem`, `bounded_theorem`, `no_go`, `open_gate`, `decoration`, `meta`.
 - `claim_scope`: a short citeable statement of exactly what was audited.
-- `auditor`: use a stable string such as `codex-audit-loop`.
-- `auditor_family`: use the actual family if known; otherwise use `codex-current`. Do not claim `codex-gpt-5.5` unless that is true for the session.
-- `independence`: use `cross_family` for non-Codex-authored claims, `weak` for same-family audits, `strong` for independent human review, `external` for off-project review.
+- `auditor`: use a stable string naming the actual auditing agent or lane, such as `codex-audit-loop`.
+- `auditor_family`: use the actual family, as a canonical value in `docs/audit/scripts/audit_lint.py` (`CANONICAL_AUDITOR_FAMILIES`); if only the family and not its version is known, use that family's base value. Do not claim a family or version (for example `codex-gpt-5.5`) unless that is true for the session.
+- `independence`: use `cross_family` when the auditor's family differs from the claim author's, `weak` for same-family audits, `strong` for independent human review, `external` for off-project review.
 
 Apply it:
 

@@ -19,11 +19,12 @@ it is artifact-chain or semantic drift.
 
 ## Landing review depth
 
-For pre-landing review, follow the owner-selected Astra-low default and focused
+For pre-landing review, follow the owner-selected fast-reviewer default and focused
 review contract in [`../review-loop/SKILL.md`](../review-loop/SKILL.md).
 Read the complete changed argument and its necessary premises, challenge the
 decisive mathematics and physical identifications, and report material findings
-concisely. Escalate unresolved consequential questions to Astra xhigh. The
+concisely. Escalate unresolved consequential questions to the strongest
+configured reviewer named there. The
 batteries below guide risk selection; they do not require exhaustive new
 certificates for every minor detail. Known false claims must be fixed or
 narrowed before landing; comprehensive claim certification belongs to the
@@ -144,8 +145,8 @@ reframe, or demoting to bounded.
 
 ## Executor Fabrication-Pattern Battery
 
-When the runner/note under review was produced by an LLM executor (codex or any
-generation agent) under pressure for a strong result, the failure mode is not
+When the runner/note under review was produced by an LLM executor (any model,
+host or generation agent) under pressure for a strong result, the failure mode is not
 honest error — it is a **rigged success signal**: a runner that passes its own
 gates while the load-bearing gate establishes nothing. Across a 2026-06 wave,
 four of five executor outputs fabricated the decisive step and *every one passed

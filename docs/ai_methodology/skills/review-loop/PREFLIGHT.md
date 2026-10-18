@@ -35,7 +35,7 @@ input bindings before final runner execution; freeze the reconciled correction
 and inputs first. Preserve prior receipts if a later input change requires a
 new authorized execution.
 
-Use the owner-selected focused landing depth in `SKILL.md`: default Astra-low
+Use the owner-selected focused landing depth in `SKILL.md`: default fast-reviewer
 review, targeted escalation for material unresolved questions, and concise
 reusable evidence. Fix consequential defects before handoff; do not construct
 new per-sentence, per-function or per-array report catalogs without a concrete

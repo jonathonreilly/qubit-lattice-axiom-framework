@@ -1,6 +1,6 @@
 # B24 findings: taste-enlarged steps
 
-Provenance: a worker of the same model family; not yet checked. Saved by the supervisor from the hand-back. The model is `b24base.py`, a copy of B23's `b23lib.py`.
+Provenance: a worker of the same model family. Checked by a fresh-context same-family agent (`../B24_check/REPORT.md`): claims 1–4 hold, and claim 5 is rescoped below. Saved by the supervisor from the hand-back. The model is `b24base.py`, a copy of B23's `b23lib.py`.
 
 | Runner | Result |
 |---|---|
@@ -20,8 +20,9 @@ Two first-run expectation errors are logged (12 commuting C2 pairs, not 9; fcc a
 
 ## 1. Lattice classification (exact)
 
-- **Ten rotation-invariant lattices** satisfy 2πZ³ ≤ Λ ≤ (π/4)Z³: sc at 2π, π, π/2, π/4; fcc at π, π/2, π/4; bcc at 2π, π, π/2, π/4.
+- **Ten rotation-invariant lattices** satisfy 2πZ³ ≤ Λ ≤ (π/4)Z³: sc at 2π, π, π/2, π/4; fcc at π, π/2, π/4; bcc at 2π, π, π/2 (bcc(π/4) is not in (π/4)Z³; listing corrected by the check).
 - **None makes all C2-pair classes T-fixed.** Bad classes: sc 6 of 8; fcc 6 of 10; bcc 9 of 10. Checked to (π/32)Z³.
+- **Why "any scale" covers every taste group (check).** A closed O-invariant subgroup containing 2πZ³ is either a lattice or all of R³ (a flat spectrum).
 - **Scale-free theorem.** Around k* the action is linear, q → Rq, so every invariant lattice is sc_a, fcc_a or bcc_a. Each has a witness fixed by a commuting C2 pair and by no C3, at every scale a:
   - sc: (a/2)e_x, little group D4;
   - fcc: (a/2)(0,1,1), little group D2;
@@ -74,4 +75,6 @@ Two first-run expectation errors are logged (12 commuting C2 pairs, not 9; fcc a
   - non-diagonal or longer-range tastes;
   - tastes with nontrivial linear part.
 
-The route "make every pinning point T-fixed with a larger taste lattice" is closed for pure translation tastes.
+**Route closure, rescoped by the check.** No single rotation-invariant translation lattice, used for both degeneracy-forcing and isotropy, makes every commuting-C2-pair point T-fixed (exact, any scale).
+
+Pinning needs a unitary symmetry (lattice Λ_u); isotropy needs only spectral invariance (Λ_sp, which is what the screen's Λ₀ measures, including transpose and antiunitary-type tastes). The condition "C2-pair points mod Λ_u ⊆ T-fixed points mod Λ_sp" holds in 29 of the 42 strictly nested dyadic pairs. **So the route remains open where the spectral taste lattice strictly exceeds the unitary one,** or for tastes with nontrivial linear part. The logged minimum speeds are upper bounds from 43 sampled directions.

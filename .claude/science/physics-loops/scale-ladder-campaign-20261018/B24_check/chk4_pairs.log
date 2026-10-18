@@ -1,0 +1,56 @@
+unit pi/16 (scale a in parentheses)
+  Lam_op=sc(32)   Lam_sp=sc(32)    #grid points C2pair(op) & not Tfix(sp) = 6
+  Lam_op=sc(32)   Lam_sp=sc(16)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(32)   Lam_sp=sc(8)     #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(32)   Lam_sp=sc(4)     #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(32)   Lam_sp=fcc(16)   #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(32)   Lam_sp=fcc(8)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(32)   Lam_sp=fcc(4)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(32)   Lam_sp=bcc(32)   #grid points C2pair(op) & not Tfix(sp) = 6
+  Lam_op=sc(32)   Lam_sp=bcc(16)   #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(32)   Lam_sp=bcc(8)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(16)   Lam_sp=sc(16)    #grid points C2pair(op) & not Tfix(sp) = 48
+  Lam_op=sc(16)   Lam_sp=sc(8)     #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(16)   Lam_sp=sc(4)     #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(16)   Lam_sp=fcc(8)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(16)   Lam_sp=fcc(4)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(16)   Lam_sp=bcc(16)   #grid points C2pair(op) & not Tfix(sp) = 48
+  Lam_op=sc(16)   Lam_sp=bcc(8)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(8)    Lam_sp=sc(8)     #grid points C2pair(op) & not Tfix(sp) = 384
+  Lam_op=sc(8)    Lam_sp=sc(4)     #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(8)    Lam_sp=fcc(4)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=sc(8)    Lam_sp=bcc(8)    #grid points C2pair(op) & not Tfix(sp) = 384
+  Lam_op=sc(4)    Lam_sp=sc(4)     #grid points C2pair(op) & not Tfix(sp) = 3072
+  Lam_op=fcc(16)  Lam_sp=sc(16)    #grid points C2pair(op) & not Tfix(sp) = 24
+  Lam_op=fcc(16)  Lam_sp=sc(8)     #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=fcc(16)  Lam_sp=sc(4)     #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=fcc(16)  Lam_sp=fcc(16)   #grid points C2pair(op) & not Tfix(sp) = 24
+  Lam_op=fcc(16)  Lam_sp=fcc(8)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=fcc(16)  Lam_sp=fcc(4)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=fcc(16)  Lam_sp=bcc(16)   #grid points C2pair(op) & not Tfix(sp) = 24
+  Lam_op=fcc(16)  Lam_sp=bcc(8)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=fcc(8)   Lam_sp=sc(8)     #grid points C2pair(op) & not Tfix(sp) = 192
+  Lam_op=fcc(8)   Lam_sp=sc(4)     #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=fcc(8)   Lam_sp=fcc(8)    #grid points C2pair(op) & not Tfix(sp) = 192
+  Lam_op=fcc(8)   Lam_sp=fcc(4)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=fcc(8)   Lam_sp=bcc(8)    #grid points C2pair(op) & not Tfix(sp) = 192
+  Lam_op=fcc(4)   Lam_sp=sc(4)     #grid points C2pair(op) & not Tfix(sp) = 1536
+  Lam_op=fcc(4)   Lam_sp=fcc(4)    #grid points C2pair(op) & not Tfix(sp) = 1536
+  Lam_op=bcc(32)  Lam_sp=sc(16)    #grid points C2pair(op) & not Tfix(sp) = 12
+  Lam_op=bcc(32)  Lam_sp=sc(8)     #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=bcc(32)  Lam_sp=sc(4)     #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=bcc(32)  Lam_sp=fcc(8)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=bcc(32)  Lam_sp=fcc(4)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=bcc(32)  Lam_sp=bcc(32)   #grid points C2pair(op) & not Tfix(sp) = 18
+  Lam_op=bcc(32)  Lam_sp=bcc(16)   #grid points C2pair(op) & not Tfix(sp) = 12
+  Lam_op=bcc(32)  Lam_sp=bcc(8)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=bcc(16)  Lam_sp=sc(8)     #grid points C2pair(op) & not Tfix(sp) = 96
+  Lam_op=bcc(16)  Lam_sp=sc(4)     #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=bcc(16)  Lam_sp=fcc(4)    #grid points C2pair(op) & not Tfix(sp) = 0
+  Lam_op=bcc(16)  Lam_sp=bcc(16)   #grid points C2pair(op) & not Tfix(sp) = 144
+  Lam_op=bcc(16)  Lam_sp=bcc(8)    #grid points C2pair(op) & not Tfix(sp) = 96
+  Lam_op=bcc(8)   Lam_sp=sc(4)     #grid points C2pair(op) & not Tfix(sp) = 768
+  Lam_op=bcc(8)   Lam_sp=bcc(8)    #grid points C2pair(op) & not Tfix(sp) = 1152
+
+pairs with C2pair(mod Lam_op) contained in Tfix(mod Lam_sp): [('sc(32)', 'sc(16)'), ('sc(32)', 'sc(8)'), ('sc(32)', 'sc(4)'), ('sc(32)', 'fcc(16)'), ('sc(32)', 'fcc(8)'), ('sc(32)', 'fcc(4)'), ('sc(32)', 'bcc(16)'), ('sc(32)', 'bcc(8)'), ('sc(16)', 'sc(8)'), ('sc(16)', 'sc(4)'), ('sc(16)', 'fcc(8)'), ('sc(16)', 'fcc(4)'), ('sc(16)', 'bcc(8)'), ('sc(8)', 'sc(4)'), ('sc(8)', 'fcc(4)'), ('fcc(16)', 'sc(8)'), ('fcc(16)', 'sc(4)'), ('fcc(16)', 'fcc(8)'), ('fcc(16)', 'fcc(4)'), ('fcc(16)', 'bcc(8)'), ('fcc(8)', 'sc(4)'), ('fcc(8)', 'fcc(4)'), ('bcc(32)', 'sc(8)'), ('bcc(32)', 'sc(4)'), ('bcc(32)', 'fcc(8)'), ('bcc(32)', 'fcc(4)'), ('bcc(32)', 'bcc(8)'), ('bcc(16)', 'sc(4)'), ('bcc(16)', 'fcc(4)')]
+same-lattice cases among them: []

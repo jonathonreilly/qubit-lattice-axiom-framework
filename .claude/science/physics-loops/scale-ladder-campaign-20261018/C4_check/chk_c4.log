@@ -1,0 +1,21 @@
+== A: walker coupling strength and species (Jacobian route)
+[PASS] A1: first-order cone at the 8 corners: site -eta h eta, one-step -sym(h eta), two-step -h; corners seeing delta+h: {'site': 2, 'one': 1, 'two': 8}
+[PASS] A2: 6^3 torus, position-space anticommutator couplings (blocks 64/73) with a uniform strain: hermitian, spectra equal the symbol |s + B c P| (two-step) and |s + B c s| (one-step) used in A1 (floating point, atol 1e-9)
+[NOTE] A3 (not a computed check): compatibility <K, R G xi> is homogeneous of degree 1 in R (definition, block 120 line 67): rescaling R -> cR preserves it for every c != 0; 'Lambda R(0) = 1' (line 66) is a normalisation clause, not a consequence
+[PASS] A4: rational tilt: h = -(eps+eps^T)t + O(t^2) and unit matter coupling a = [{a: 1}]
+== B: member's lapse identity with K1, K2, a_s (closed-form DeWitt inverse)
+[PASS] B1: beta = -alpha: e_u'' = K1 R1(hdd) = -(K1 a_s/(4 alpha)) p.Theta.p; K2, u, h drop (transversality of dR2, p.(p^2-pp).p = 0)
+[PASS] B2: generic beta: extra trace terms (1 + beta/alpha) p^2 tr(hdd) survive; identity is special to the closing ratio
+[PASS] B3: matching the walker's exact identity (09-25 exact-lattice T1, block 134 T2) fixes K1 a_s = 4 alpha; the notes' 'alpha = K/4' is this with a_s = 1 and K := K1
+[PASS] B4: TT pair: 2 alpha hdd = -(K2 P^2/2) h, omega^2 = K2*P**2/(4*alpha); R1 = 0 on TT so K1 is absent
+[PASS] B5: after lapse matching the TT speed^2 is K2/(K1*a_s): '= walker top speed' holds iff K2 = a_s K1 (gamma = 1); the notes' sentence 'at alpha = K/4 the disturbances move at the walker's top speed' uses the single-K member
+[PASS] B6: static pull: lam = e/(4*K1*p1**2 + 4*K1*p2**2 + 4*K1*p3**2), u = -K2*e/(4*K1**2*p1**2 + 4*K1**2*p2**2 + 4*K1**2*p3**2); gamma = K1*a_s/K2
+== C: R1, R2 against the variational identity
+[PASS] C1: linearised scalar curvature of delta + h is R1(h) = p^2 tr h - p.h.p (unit coefficient)
+[PASS] C2: block 62's R2(h) = -(1/2) h:G^(1)(h): R2 is the second-order part of sqrt(g)R[delta + h] (modulo divergences) with unit coefficient
+[PASS] C3: K r sqrt(g)R[delta + h/r] = K R1 + (K/r) R2 at quadratic order: B21's one-parameter family, matter on delta + h/r has a_s = 1/r
+TOTAL: PASS=12 FAIL=0  (10.5 s)
+
+real	0m11.253s
+user	0m21.746s
+sys	0m0.135s

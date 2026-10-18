@@ -1,0 +1,56 @@
+{
+  "status": "bounded-support",
+  "path_sum_n": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "column_model_spectra": [
+    {
+      "t": 0.1,
+      "gap": 0.021069078330157254,
+      "gap_over_2t2": 1.0534539165078625,
+      "Z00_weight": 0.9974228900115485,
+      "residual": 6.587762672449507e-14
+    },
+    {
+      "t": 0.05,
+      "gap": 0.005065722158594355,
+      "gap_over_2t2": 1.0131444317188707,
+      "Z00_weight": 0.9993703913127048,
+      "residual": 2.8584494708686316e-14
+    },
+    {
+      "t": 0.02,
+      "gap": 0.0008016747915675637,
+      "gap_over_2t2": 1.0020934894594546,
+      "Z00_weight": 0.9998998834749665,
+      "residual": 1.867313176284718e-14
+    },
+    {
+      "t": 0.01,
+      "gap": 0.00020010460611885605,
+      "gap_over_2t2": 1.0005230305942803,
+      "Z00_weight": 0.9999749927300828,
+      "residual": 6.07150324925313e-13
+    },
+    {
+      "t": 0.005,
+      "gap": 5.000653681719314e-05,
+      "gap_over_2t2": 1.0001307363438627,
+      "Z00_weight": 0.9999937495458313,
+      "residual": 5.255269648176662e-14
+    }
+  ],
+  "scope": "Exact finite path sums and 16-column coefficient-model spectra only; native hierarchy is an analytic proof, not native96-qubit diagonalization"
+}

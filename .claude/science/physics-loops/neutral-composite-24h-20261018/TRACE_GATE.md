@@ -92,3 +92,6 @@ Ground window: trace_class: upstream_support; target_blocker_text: actual micros
 
 
 Static block: trace_class negative_route_pruning; source_of_blocker_text user_goal; target_blocker_text "large feature can produce a useful scalar coupling"; reachability_to_target prunes; artifact_role theorem. Prunes long-range neutral ground response only in supplied weak-coupling family. Next test charged feature channels.
+
+
+Charged hierarchy trace_class upstream_support; reachability_to_target supports; target_blocker_text "derive collective modes and their coupling without adding interaction"; source_of_blocker_text user_goal; artifact_role theorem. Nativecharged gap/source derived, neutral scalar bridge remains open.

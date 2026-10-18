@@ -1,9 +1,9 @@
-# Ranked remaining constructive routes, 2026-10-18
+# Ranked constructive routes
 
-1. Connect the complete coefficient dynamics and original diagnostic to actual finite-time microscopic correlations. Keep prepared-state and momentum/volume limits explicit; a continued pole alone is not an observed oscillation.
-2. Derive static feature exchange range from the complete compact operator, testing whether large extent can evade its finite mass without adding interactions.
-3. Return to isotropic finite-grid scalar response and tensor calculations to challenge the anisotropic ordered-reference regime. Require residual checks; thin grids are not a 3D limit.
-4. Derive nonzero-momentum dispersion and test isotropy, universality of different feature couplings, and local environment response.
-5. Observational mapping only once a model supplies a physical scale and measurement identification; retain development/test separation.
+1. Isotropic collective feature dynamics: derive protection or leakage of a large uniform-spin feature before treating its orientation as a light field. Exact projector/Pauli controls available; supplied protected collective spin forbidden.
+2. Finite-grid anisotropy scan of native neutral Q response; distinguish directional softening from cubic scalar response. No finite-grid thermodynamic conclusion.
+3. Higher-dimensional neutral features outside the weak-coupling ground band, with native dynamics and source rather than supplied confinement.
+4. Uniform-size control of the newly derived charged row tunneling. Exact finite-size hierarchy exists; growing-size constants and charge restriction remain.
+5. Observational mapping only after deriving physical scale and measurement identification.
 
-No claim of TOE closure. Supplied Hamiltonian/reference and a cosmological bridge remain unresolved. The goal remains active until its fixed deadline.
+Ground-window and neutral static response blocks published; native charged hierarchy checked. Goal continues until fixed deadline. No empirical calibration/test or TOE closure.

@@ -101,3 +101,6 @@ Microscopic ground-window actual_current_surface_status: bounded-support; propos
 
 
 Static block actual_current_surface_status: bounded-support; proposal_allowed: false; bare_retained_allowed: false. Exact finite-family retarded bound conditional on supplied H/regime; no all-force or empirical claim. Scoped review pass; independent audit separate.
+
+
+Charged hierarchy actual_current_surface_status: bounded-support; proposal_allowed: false; bare_retained_allowed: false. Fixedfinite nativeasymptotic with suppliedH/regime; numericalchecks coefficientmodelonly; independentaudit separate.

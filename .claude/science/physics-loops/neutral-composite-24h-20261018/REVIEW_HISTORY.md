@@ -83,3 +83,6 @@ Actual microscopic ground-window block: three focused checks and final scoped re
 
 
 Static block: independent plane-character and Gaussian-filter checks PASS; final scoped review PASS. Source-bound runner .721632s PASS. No formal audit verdict.
+
+
+Charged hierarchy: three independentchecks andfinalscopedreview PASS; source-boundreplay1.021572s. Exactnative asymptotic not96physicalqubitED. Noauditverdict.

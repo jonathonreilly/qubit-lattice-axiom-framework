@@ -65,3 +65,6 @@ Ground-window block retires arbitrary choice of polarized reference within the s
 
 
 Static retarded response locality uses the previously derived restricted neutral gap, finite-range LR, fixed local probes and the same ground-box family. No isothermal covariance or charged-channel extension; no observations imported.
+
+
+Charged hierarchy fixes finite M even>=4, openL even>=6 andlambda→0. Two exact analytic reductions, nativeK/t; no addedinteraction. Groundcharacter selected asymptotically here, notcosmologicalpreparation. ChargedZsource distinctfromneutralC.

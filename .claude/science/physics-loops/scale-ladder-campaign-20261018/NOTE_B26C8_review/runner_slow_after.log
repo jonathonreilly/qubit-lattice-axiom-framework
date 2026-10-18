@@ -1,0 +1,76 @@
+=== 0. model build ===
+[PASS] 0.1 12 corners, 36 edge types (24 on-site, 12 link); the flux system (square = plaquette = tube = pi, triangle = 0) has a translation-invariant Z2 solution; loop rank 22 = 36 - 14 = 36 - rank(gauge coboundary), so every translation-invariant solution is gauge-equivalent to it  loop rank 22, coboundary rank 14
+[PASS] 0.2 every one of the 48 O_h elements has a gauge-dressed lift (lam_R, tau_R) solving the PSG equations over GF(2), unique up to the global sign (kernel dimension 1)
+[PASS] 0.3 H_on has spectrum {-1-sqrt3, sqrt3-1, 2}, Lambda has {+-sqrt2, +-2sqrt2}; R_L^2 = 1 exactly as a block dict; symmetric on-site algebra has dimension 6; D+ = {H_on = 2, Lambda = -2sqrt2}, D- = {H_on = 2, Lambda = +2sqrt2} are 2-dim
+   section 0: 2.0s
+
+=== 1. B26: translation-invariant monomial letters covariant up to a 1-d character ===
+[PASS] 1.1a the dressed lifts compose up to a GLOBAL sign: G_g G_h G_gh^-1 = (-1)^{(lam_h + R_h^T lam_g - lam_gh).v + (tau_h(c) + tau_g(R_h c) - tau_gh(c))} has zero lam part and constant tau part (all 24^2 pairs)
+[PASS] 1.1b the hopping graph is connected (the 12 corners are connected by on-site edges, and link edges run along all three axes), so a gauge transformation preserving every edge sign is constant: this is why the defect is global
+[PASS] 1.2 hence Ad(G) is a true representation on translation-invariant operators (random range-1 X); the commutator subgroup of O has order 12 and equals ker A2, so the 1-d characters of O are exactly A1 and A2; A2 is a homomorphism
+[PASS] 1.3 for every corner c: Stab_O(c@0) = {1, h_c} with h_c the C2' about f_c = d + e (h^2 = 1, trace -1); its fixed corners are exactly {c, -c}; its fixed lattice vectors in [-4,4]^3 are exactly t f_c; A2(h_c) = -1
+[PASS] 1.4 the two model sign facts, all 12 corners: (a) lam_{h_c}.f_c is even, so S^t is A1 for every t; (b) tau_{h_c}(c) + tau_{h_c}(-c) is odd, so with A2(h_c) = -1 the letter A0 S^t is A2 for every t
+[PASS] 1.5 the sign facts are gauge-invariant: three random translation-invariant gauge changes (-1)^{mu.v + eps(c)} change the lifts (lam, tau) but not the two parities
+[PASS] 1.6 Frobenius: on each 12-dim support space (c -> c or c -> -c at displacement t f_c, t = -2..2) the (A1, A2) multiplicities are (1, 0) and (0, 1)
+[PASS] 1.7 range <= 1 (sup norm): 324 single-entry seeds x {A1, A2} twisted group averages -> exactly 6 monomial letters, = z S^t (A1) and z A0 S^t (A2) for |t| <= 1  6 averages vanish, 636 non-monomial
+[PASS] 1.7 range <= 2 (sup norm): 1500 single-entry seeds x {A1, A2} twisted group averages -> exactly 10 monomial letters, = z S^t (A1) and z A0 S^t (A2) for |t| <= 2  10 averages vanish, 2980 non-monomial
+[PASS] 1.7 range <= 3 (sup norm): 4116 single-entry seeds x {A1, A2} twisted group averages -> exactly 14 monomial letters, = z S^t (A1) and z A0 S^t (A2) for |t| <= 3  14 averages vanish, 8204 non-monomial
+[PASS] 1.7 range <= 4 (sup norm): 8748 single-entry seeds x {A1, A2} twisted group averages -> exactly 18 monomial letters, = z S^t (A1) and z A0 S^t (A2) for |t| <= 4  18 averages vanish, 17460 non-monomial
+[PASS] 1.8 S is A1 and A0 is A2 under all 24 dressed rotations; S and A0 S^t are unitary (entries of modulus 1)
+   section 1: 8.7s
+
+=== 2. identities (exact block-dict equalities) and the even-A reduction ===
+[PASS] 2.1 A0 is a real signed permutation c -> -c with A0^2 = -1 (real normalisation)
+[PASS] 2.2 A0 S^p A0^-1 = S^-p (p = 1, 2, 3)  residual 0e+00
+[PASS] 2.3 A0 R_L A0^-1 = -S R_L S^-1 (the alternatives -S^-1 R_L S and +S R_L S^-1 fail)  residual 0e+00; alternatives 0.71, 1.41
+[PASS] 2.4 Rt = A0 R_L A0^-1: A0 Rt A0^-1 = +R_L (from A0^2 = -1), S^-1 Rt S = -R_L (a restatement of 2.3), Rt^2 = 1, Rt Hermitian, Rt != +-R_L  0e+00 0e+00 2e-16 0e+00; 0.71
+[PASS] 2.5 A0 H_on A0^-1 = H_on and A0 Lambda A0^-1 = -Lambda
+[PASS] 2.6 A0 maps the 80-letter Clifford palette PC onto itself up to phases in {+-1, +-i}, and the 6-dim symmetric on-site algebra into itself  phases [(-1-0j), (-0-1j), (-0+1j), (1+0j)]
+[PASS] 2.7 even-A reduction: 600 random words with 2 or 4 letters A_a = A0 S^a (a = -2..2) among S^p, R_L, Rt and random symmetric on-site / PC letters equal +-(word in S^p, R_L and symmetric on-site letters); the reduced total S power is n_eff = sum (-1)^{#A0 to the left} p  max deviation 9.8e-16
+[PASS] 2.8 A_a X A_b = -S^-a X~ S^b with X~ = A0 X A0^-1 (random A-free words X, all a, b in -2..2)
+[PASS] 2.9 D+- swap: every A_a (a = -2..2) maps D+ onto D- and D- onto D+ at +k* and -k*; the A1 letters S, R_L, Rt, H_on, Lambda and a random symmetric on-site unitary act as scalars on D+ and on D-
+   section 2: 0.8s
+
+=== 3. C8 class 1: momentum-shifting letters ===
+[PASS] 3.1 O-fixed momenta on the (pi/8)Z^3 and (pi/12)Z^3 grids of R^3/2piZ^3 are exactly 0 and Pi = pi(1,1,1) (the general-Q statement is proved by hand: C4 about each axis forces Q_i in {0, pi} and Q_i = Q_j)  [(np.float64(0.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(1.0), np.float64(1.0))]
+[PASS] 3.2 G_g D_Q G_g^-1 = D_{RQ} exactly for 24 dressed rotations x 8 Q in pi{0,1}^3 (the gauge signs cancel); the O-orbits of pi{0,1}^3 have sizes [1, 1, 3, 3], so D_0 = 1 and D_Pi are the only O-invariant ones
+[PASS] 3.3 D_Pi commutes with S, A0, H_on, Lambda, PC and symmetric on-site letters, and anticommutes with R_L and Rt (S hops by f_c, of even coordinate sum; R_L hops by unit vectors)  {'S': 'comm', 'A0': 'comm', 'H_on': 'comm', 'Lambda': 'comm', 'PC L123': 'comm', 'random on-site': 'comm', 'R_L': 'anti', 'Rt': 'anti'}
+[PASS] 3.4 k* + Pi = -k* mod 2pi, and every word in S^p, R_L, Rt, A_a and symmetric on-site letters obeys W(k+Pi) = (-1)^{n_R} W(k) (200 random): the D_Pi relation is the known Pi-taste
+   orbits (sublattice weight, corner type, modes per doubled cell, stabiliser order): [(0, 'none', 12, 2), (1, 'par', 24, 1), (1, 'perp', 12, 2), (2, 'par', 24, 1), (2, 'perp', 12, 2), (3, 'none', 12, 2)]
+[PASS] 3.5 doubled cell (O x 2Z^3, 192 signed permutations): 6 mode orbits per doubled cell, sizes 12, 12, 12, 12, 24, 24 (000, 111, 100-perp, 110-perp with stabiliser {1, C2'}; 100-par, 110-par free)
+[PASS] 3.6 doubled-cell pieces (orbit propagation): range <= 1 gives 6 per C2' orbit and 336 per free orbit; range 0 gives one per character on each C2' orbit (identity for A1, antipodal for A2) and 8 per character on each free orbit  [(6, {False: 1, True: 1}), (6, {False: 1, True: 1}), (336, {False: 8, True: 8}), (336, {False: 8, True: 8}), (6, {False: 1, True: 1}), (6, {False: 1, True: 1})]
+[PASS] 3.7 G0 (range-0 doubled-cell letters: 2 characters x 64 free-orbit choices x 4^6 orbit phases = 524,288): exactly one perm part per character is sublattice-independent, and exactly 8 letters are translation-invariant: z 1 and z A0  8 translation-invariant
+[PASS] 3.8a R_L has exactly two nonzero entries per column, at the two unit displacements along the directions of the column's corner
+[PASS] 3.8b a R_L b support: of all 128^2 = 16,384 (perm part of a, perm part of b) pairs in G0, exactly 4 give a translation-invariant support, namely both perm parts sublattice-independent  4 admissible
+   twist (a, b) = (False, False): rank 7, SNF invariants [1], Z4 solutions 64, words ['R_L']
+   twist (a, b) = (True, False): rank 7, SNF invariants [1], Z4 solutions 64, words ['A0 R_L']
+   twist (a, b) = (False, True): rank 7, SNF invariants [1], Z4 solutions 64, words ['R_L A0']
+   twist (a, b) = (True, True): rank 7, SNF invariants [1], Z4 solutions 64, words ['Rt']
+[PASS] 3.8c a R_L b phases: for each admissible pair the constraint matrix has Smith invariants all 1 (no torsion beyond Z^12) and every real-kernel direction moves all entries of the word by one common phase; so with U(1) orbit phases the solutions are x0 + ker + Z^12 and each pair gives one word up to a U(1) scalar (5 random U(1) solutions each)
+[PASS] 3.8d the translation-invariant a R_L b (a, b in G0, Z4 phases enumerated, x Z4 global) are exactly z {R_L, Rt, A0 R_L, R_L A0}, z in {+-1, +-i}: 16 words  16 words
+   section 3: 5.4s
+
+=== 4. C8 class 2: antiunitary letters ===
+[PASS] 4.1 S, R_L, Rt, A0 and all 48 dressed lift matrices are real in the real-space mode basis (K commutes with them)
+[PASS] 4.2 the Clifford palette PC is closed under complex conjugation up to phases in {+-1, +-i}
+[PASS] 4.3 (VK)^2 = V V*, and V* is the same word with every on-site slot conjugated, so for a conjugation-closed palette the square is an old-palette word up to a phase (100 random words with 0 or 2 A letters)
+[PASS] 4.4 spec (VK)^2(-k) = conj spec (VK)^2(k) (the only constraint the antiunitary class adds)
+   section 4: 0.1s
+
+=== 5. C8 class 3: exponential letters ===
+[PASS] 5.1 A_a^2 = -1 and exp(pi/4 A_a) = (1 + A_a)/sqrt2 is unitary (a = 0, 1, 2); G exp(pi/4 A_a) G^-1 = exp(chi(g) pi/4 A_a), which is a phase times exp(pi/4 A_a) exactly for the 12 rotations of ker A2 = T: only T-covariant  covariant rotations [np.int64(12), np.int64(12), np.int64(12)]
+[PASS] 5.2 S^a (a != 0) is not an involution: S(k)^2 has k-dependent, non-real spectrum
+[PASS] 5.3 exp(i pi/4 (1 - 2P)) for every sum P of H_on- or Lambda-eigenprojectors lies in PC up to a phase
+[PASS] 5.4 E+- = (1 +- i R_L)/sqrt2 = exp(+-i pi/4 R_L) (block dicts): unitary, E+ E- = 1, E+^2 = i R_L, E+ R_L = i E-
+[PASS] 5.5 E+ is O-symmetric (all 24 dressed rotations) and translation-invariant, but not monomial: 3 nonzeros per column, |entries| in {1/sqrt2, 1/2}  {3: 12} [np.float64(0.5), np.float64(0.707107)]
+[PASS] 5.6 exp(+-i pi/4 Rt) = S E-+ S^-1 (from Rt = -S R_L S^-1): nothing new
+[PASS] 5.7 R_L(k+Pi) = -R_L(k), hence E+-(k+Pi) = E-+(k); E(k)^T = E(-k)
+[PASS] 5.8 for E-words W(k+Pi) = (-1)^{n_R} W'(k), with W' = W with E+ <-> E- (all sampled words); the exact relation W(k+Pi) = +-W(k) is broken for the witness E+ S and for every sampled hygienic E-word (in the sample it survives only in non-hygienic words, e.g. those whose E letters merge, E+ E+ = i R_L)  hygienic: 112/112 broken; non-hygienic: 81/126 broken; E+ S residual 1.00
+[PASS] 5.9 spectral Pi-taste (numerical): spec W(k+Pi) = omega spec W(k), omega = +-1, holds for all 160 sampled slot-free E-words and fails for all 160 sampled E-words with a generic symmetric on-site slot (reduced words with an E letter and n_S != 0; see hygienic())  free kept 160/160, slot kept 0/160
+[PASS] 5.10 exp(i pi/6 R_L) is unitary, O-symmetric, flips to exp(-i pi/6 R_L) under k -> k + Pi, and is not z E+^n (z a 24th root of unity, n = 0..7)
+[PASS] 5.11 F = exp(i pi/4 D_Pi) = (1 + i D_Pi)/sqrt2 on the L = 4 torus: unitary, F^2 = i D_Pi, F R_L = R_L F^-1, F S = S F, and F is not translation-invariant (so words reduce to old word x F^m, invariant only for F^m = +-1)
+[PASS] 5.12 E+-, exp(i pi/6 R_L) and R_L are scalars on D+ and D- at +-k* with zero compressed derivative P d_i X P (analytic Bloch derivative): no velocity source
+[PASS] 5.13 the symmetric on-site elements commuting with R_L(k) for all k are only the scalars, so no involution R_L P + (1 - P) with P a symmetric on-site projector exists
+   section 5: 0.7s
+
+TOTAL: PASS=52 FAIL=0   [18s]

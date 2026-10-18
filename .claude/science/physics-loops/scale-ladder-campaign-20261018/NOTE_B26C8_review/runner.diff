@@ -1,0 +1,32 @@
+--- /tmp/claude-0/-home-user-qubit-lattice-axiom-framework/b589b2bf-7a67-5c50-b4cf-6f5868f1e728/scratchpad/b26c8rev/runner_before.py	2026-10-18 20:23:56.355916604 +0000
++++ scripts/corner_fermion_symmetric_shift_letter_classification_2026_10_18.py	2026-10-18 20:24:52.043774064 +0000
+@@ -1,6 +1,7 @@
+ #!/usr/bin/env python3
+ """Corner fermion: classification of O-covariant shift letters.  The translation-invariant monomial letters are exactly
+-z S^a (A1) and z A0 S^a (A2); momentum-shifting letters (settled subclasses) and antiunitary letters reduce to old words;
++z S^a (A1) and z A0 S^a (A2); momentum-shifting letters (settled subclasses) and antiunitary letters (conjugation-closed
++palette) reduce to old words;
+ among the pi/4 exponentials examined, only E+- = exp(+-i pi/4 R_L) is new.
+ 
+ Supplied model only (12-mode corner fermion; flux square = plaquette = tube = pi, triangle = 0; translation-invariant
+@@ -29,8 +30,9 @@
+   5  C8 class 3: exp(pi/4 A0) and exp(pi/4 A_a) only T-covariant; on-site involution exponentials in PC; E+-
+      identities, O-symmetry, non-monomiality; Rt exponentials; E(k+Pi) = E-+(k); broken exact Pi relation; spectral
+      Pi-taste of slot-free versus generic-slot E-words; exp(i theta R_L); D_Pi exponential; E at +-k*
+-Usage:  python3 <this file> [--slow]    default ~1 min on 2 threads; --slow enumerates to range 4 and enlarges samples.
+-Companion: docs/CORNER_FERMION_COVARIANT_MONOMIAL_SHIFT_LETTERS_ARE_ONLY_THE_DIAGONAL_SHIFT_POWERS_AND_THEIR_ANTIPODAL_TWINS_AND_MOMENTUM_SHIFTING_OR_ANTIUNITARY_LETTERS_REDUCE_TO_OLD_WORDS_BOUNDED_THEOREM_NOTE_2026-10-18.md
++Usage:  python3 <this file> [--slow]    default ~15 s on 2 threads; --slow (~20 s) enumerates to range 4 and
++        enlarges samples.
++Companion: docs/CORNER_FERMION_COVARIANT_MONOMIAL_SHIFT_LETTERS_ARE_ONLY_THE_DIAGONAL_SHIFT_POWERS_AND_THEIR_ANTIPODAL_TWINS_AND_THE_SETTLED_MOMENTUM_SHIFTING_AND_ANTIUNITARY_SUBCLASSES_REDUCE_TO_OLD_WORDS_BOUNDED_THEOREM_NOTE_2026-10-18.md
+ """
+ import os
+ for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):
+@@ -1007,7 +1009,7 @@
+ d0 = min(np.abs(Wt(w0, q + PI3) - Wt(w0, q)).max(), np.abs(Wt(w0, q + PI3) + Wt(w0, q)).max())
+ check("5.8 for E-words W(k+Pi) = (-1)^{n_R} W'(k), with W' = W with E+ <-> E- (all sampled words); the exact relation "
+       "W(k+Pi) = +-W(k) is broken for the witness E+ S and for every sampled hygienic E-word (in the sample it survives "
+-      "only in non-hygienic words, whose E letters merge, e.g. E+ E+ = i R_L)", okrel and d0 > 0.1 and brk == NW and NW > 50,
++      "only in non-hygienic words, e.g. those whose E letters merge, E+ E+ = i R_L)", okrel and d0 > 0.1 and brk == NW and NW > 50,
+       f"hygienic: {brk}/{NW} broken; non-hygienic: {brk_unh}/{nunh} broken; E+ S residual {d0:.2f}")
+ 
+ 

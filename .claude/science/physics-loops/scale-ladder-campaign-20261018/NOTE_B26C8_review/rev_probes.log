@@ -1,0 +1,6 @@
+runner (exec'd): TOTAL: PASS=51 FAIL=0   [16s]
+[PASS] P1 gauge change (-1)^{mu.v+eps(c)}: lam' = lam + mu + R^T mu and tau'(c) = tau(c) + eps(c) + eps(Rc) + global const, so tau_h(c)+tau_h(-c) changes by 2eps(c)+2eps(-c) (+2 const), with no mu-terms (240 lifts)
+[PASS] P2 hygienic(E+ S^-1 Rt S E+ S) is True although the word equals -i S (E-free) 
+[PASS] P3 (A0 R_L)^2 = -Rt R_L and it is not a scalar 
+[PASS] P4 for the H_on = 2 projector P, M = R_L P + (1-P) is not Hermitian (so not a Hermitian involution) |M - M^dag| = 0.24
+REVIEWER PROBES: ALL PASS

@@ -1,0 +1,102 @@
+--- /tmp/claude-0/-home-user-qubit-lattice-axiom-framework/b589b2bf-7a67-5c50-b4cf-6f5868f1e728/scratchpad/b26c8rev/note_before.md	2026-10-18 20:23:56.353461282 +0000
++++ docs/CORNER_FERMION_COVARIANT_MONOMIAL_SHIFT_LETTERS_ARE_ONLY_THE_DIAGONAL_SHIFT_POWERS_AND_THEIR_ANTIPODAL_TWINS_AND_THE_SETTLED_MOMENTUM_SHIFTING_AND_ANTIUNITARY_SUBCLASSES_REDUCE_TO_OLD_WORDS_BOUNDED_THEOREM_NOTE_2026-10-18.md	2026-10-18 20:25:56.973525168 +0000
+@@ -1,7 +1,7 @@
+ ---
+-claim_id: corner_fermion_covariant_monomial_shift_letters_are_only_the_diagonal_shift_powers_and_their_antipodal_twins_and_momentum_shifting_or_antiunitary_letters_reduce_to_old_words_bounded_theorem_note_2026-10-18
++claim_id: corner_fermion_covariant_monomial_shift_letters_are_only_the_diagonal_shift_powers_and_their_antipodal_twins_and_the_settled_momentum_shifting_and_antiunitary_subclasses_reduce_to_old_words_bounded_theorem_note_2026-10-18
+ claim_type: bounded_theorem
+-claim_scope: "Supplied model only: the corner fermion of the companion notes (12 corner modes per site of Z^3; flux square = plaquette = tube = pi, triangle = 0; translation-invariant gauge; gauge-dressed lifts G_g of the 24 site rotations, G|v,c> = (-1)^{lam.v + tau(c)} |Rv, Rc>). (Theorem 1, exact; B26) Let X be translation-invariant and monomial (one nonzero entry per column, any displacement, any nonzero coefficient) with G_g X G_g^-1 = chi(g) X for all 24 g. Then chi is A1 or A2, and X = z S^t (A1) or X = z A0 S^t (A2), z nonzero, t in Z; S is the diagonal shift {d,e}@v -> {d,e}@v+d+e and A0 the on-site antipodal map {c} -> {-c}. The proof uses the global-sign composition of the lifts (connected hopping graph), the stabiliser {1, C2' about d+e} of each corner, and two gauge-invariant model sign facts (lam_{C2'}.f_c even; tau_{C2'}(c) + tau_{C2'}(-c) odd), all exact finite computations. (Identities, exact) A0 S A0^-1 = S^-1, A0^2 = -1, A0 R_L A0^-1 = -S R_L S^-1, A0 Rt A0^-1 = R_L, S^-1 Rt S = -R_L (Rt := A0 R_L A0^-1), A0 H_on A0^-1 = H_on, A0 Lambda A0^-1 = -Lambda; hence every word with an even number of A letters is z times a word in S^p, R_L and symmetric on-site letters (z in {+-1, +-i} for Clifford-palette fills), with S power n_eff = sum (-1)^{#A0 to the left} p, and the A letters swap D+ and D- at +-k*. (Theorem 4, exact; C8 class 1) A letter with translation character e^{iQ.v} that is O-covariant up to a character has Q in {0, Pi}, Pi = pi(1,1,1), for every Q; Q = Pi monomial letters are z D_Pi S^a and z D_Pi A0 S^a; D_Pi commutes with S, A0 and on-site letters and anticommutes with R_L and Rt, so translation-invariant words are +- old words and the D_Pi relation is the known Pi-taste W(k+Pi) = (-1)^{n_R} W(k). Doubled-cell monomial letters: 6 orbits per doubled cell (four with stabiliser C2', two free); a product of monomial letters that is translation-invariant is z S^a or z A0 S^a; the 524,288 range-0 doubled-cell letters G0 contain exactly 8 translation-invariant ones; translation-invariant a R_L b (a, b in G0, U(1) orbit phases) are exactly z{R_L, Rt, A0 R_L, R_L A0}. (Proposition 5, exact given the palette proviso; C8 class 2) An antiunitary step has no quasi-energy; its square V V* is an old-palette word up to a phase when V is a word in a conjugation-closed palette. (Proposition 6; C8 class 3) exp(pi/4 A0) and exp(pi/4 A0 S^a) are only T-covariant (exact); among the pi/4 exponentials examined (of A0, A0 S^a, S^a, on-site involutions, R_L, Rt, D_Pi) only E+- = exp(+-i pi/4 R_L) = (1 +- i R_L)/sqrt2 is new (exact); E+E- = 1, E+^2 = i R_L, E+ R_L = i E-, E+-(k+Pi) = E-+(k), so E-words break the exact relation W(k+Pi) = +-W(k) (exact, witness E+ S); slot-free E-words keep a spectral Pi-taste and generic-slot words lose it (numerical, sampled); exp(i theta R_L), theta in (pi/6)Z, is a further parameter-free symmetric letter, not screened. (Screens, cited, not re-run) B26 (about 73k words) and C8 (69,660 levels) negative searches pass 0. Not covered: displaced doubled-cell letters, multiplets with Q outside pi{0,1}^3, non-monomial letters beyond the exponentials examined, antiunitary V outside a conjugation-closed palette, O_h or subgroup-only characters, any physical identification."
++claim_scope: "Supplied model only: the corner fermion of the companion notes (12 corner modes per site of Z^3; flux square = plaquette = tube = pi, triangle = 0; translation-invariant gauge; gauge-dressed lifts G_g of the 24 site rotations, G|v,c> = (-1)^{lam.v + tau(c)} |Rv, Rc>). (Theorem 1, exact; B26) Let X be translation-invariant and monomial (one nonzero entry per column, any displacement, any nonzero coefficient) with G_g X G_g^-1 = chi(g) X for all 24 g. Then chi is A1 or A2, and X = z S^t (A1) or X = z A0 S^t (A2), z nonzero, t in Z; S is the diagonal shift {d,e}@v -> {d,e}@v+d+e and A0 the on-site antipodal map {c} -> {-c}. The proof uses the global-sign composition of the lifts (connected hopping graph), the stabiliser {1, C2' about d+e} of each corner, and two gauge-invariant model sign facts (lam_{C2'}.f_c even; tau_{C2'}(c) + tau_{C2'}(-c) odd), all exact finite computations. (Identities, exact) A0 S A0^-1 = S^-1, A0^2 = -1, A0 R_L A0^-1 = -S R_L S^-1, A0 Rt A0^-1 = R_L, S^-1 Rt S = -R_L (Rt := A0 R_L A0^-1), A0 H_on A0^-1 = H_on, A0 Lambda A0^-1 = -Lambda; hence every word with an even number of A letters is z times a word in S^p, R_L and symmetric on-site letters (z in {+-1, +-i} for Clifford-palette fills), with S power n_eff = sum (-1)^{#A0 to the left} p, and the A letters swap D+ and D- at +-k*. (Theorem 4, exact; C8 class 1) A letter with translation character e^{iQ.v} that is O-covariant up to a character has Q in {0, Pi}, Pi = pi(1,1,1), for every Q; Q = Pi monomial letters are z D_Pi S^a and z D_Pi A0 S^a; D_Pi commutes with S, A0 and on-site letters and anticommutes with R_L and Rt, so translation-invariant words are +- words in the old letters and A0 (z times old words when A1, by the even-A reduction) and the D_Pi relation is the known Pi-taste W(k+Pi) = (-1)^{n_R} W(k). Doubled-cell monomial letters: 6 orbits per doubled cell (four with stabiliser C2', two free); a product of monomial letters that is translation-invariant is z S^a or z A0 S^a; the 524,288 range-0 doubled-cell letters G0 contain exactly 8 translation-invariant ones; translation-invariant a R_L b (a, b in G0, U(1) orbit phases) are exactly z{R_L, Rt, A0 R_L, R_L A0}. (Proposition 5, exact given the palette proviso; C8 class 2) An antiunitary step has no quasi-energy; its square V V* is an old-palette word up to a phase when V is a word in a conjugation-closed palette. (Proposition 6; C8 class 3) exp(pi/4 A0) and exp(pi/4 A0 S^a) are only T-covariant (exact); among the pi/4 exponentials examined (of A0, A0 S^a, S^a, on-site involutions, R_L, Rt, D_Pi) only E+- = exp(+-i pi/4 R_L) = (1 +- i R_L)/sqrt2 is new (exact); E+E- = 1, E+^2 = i R_L, E+ R_L = i E-, E+-(k+Pi) = E-+(k), so E-words break the exact relation W(k+Pi) = +-W(k) (exact for the witness E+ S; for every sampled locally reduced E-word, a sample count); slot-free E-words keep a spectral Pi-taste and generic-slot words lose it (numerical, sampled); exp(i theta R_L), theta in (pi/6)Z, is a further parameter-free symmetric letter, not screened. (Screens, cited, not re-run) B26 (about 73k words) and C8 (69,660 levels) negative searches pass 0; B26's family does not contain every even-A word of length <= 5 (some reduce to S^{+-3} skeletons or adjacent slots). Not covered: displaced doubled-cell letters, multiplets with Q outside pi{0,1}^3, non-monomial letters beyond the exponentials examined, antiunitary V outside a conjugation-closed palette, O_h or subgroup-only characters, any physical identification."
+ upstream_dependencies:
+   - corner_fermion_long_wavelength_theory_is_one_isotropic_spin_half_doublet_and_one_qubit_block_embedding_bounded_theorem_note_2026-10-17
+   - corner_fermion_eight_cube_nodes_cannot_be_selectively_gapped_under_full_octahedral_symmetry_pairing_is_all_or_nothing_and_the_doublers_carry_a_z2_weyl_dipole_bounded_theorem_note_2026-10-18
+@@ -9,7 +9,7 @@
+ runner: scripts/corner_fermion_symmetric_shift_letter_classification_2026_10_18.py
+ ---
+ 
+-# Corner-fermion covariant monomial shift letters are only the diagonal shift powers and their antipodal twins, and momentum-shifting or antiunitary letters reduce to old words
++# Corner-fermion covariant monomial shift letters are only the diagonal shift powers and their antipodal twins, and the settled momentum-shifting and antiunitary subclasses reduce to old words
+ 
+ **Date:** 2026-10-18
+ **Type:** bounded_theorem
+@@ -19,8 +19,8 @@
+   - the conjugation identities, the even-A reduction and the D± swap;
+   - Theorem 4 (momentum-shifting letters) in the subclasses it lists: the Q statement for every Q, the D_Π reduction, the doubled-cell orbits and range-0 letters (exhaustive), the pure-permutation reduction and the a·R_L·b lemma;
+   - Proposition 5 (antiunitary letters), given the palette proviso;
+-  - the exclusion of exp(π/4·A0), the E± identities and the broken exact Π relation.
+-- **Numerical:** the spectral Π-taste of E-words, which is a sample statement.
++  - the exclusion of exp(π/4·A0), the E± identities, the relation W(k+Π) = (−1)^{n_R}W′(k) and its breaking by the witness E₊·S.
++- **Numerical (sample statements):** the spectral Π-taste of E-words, and the breaking of the exact Π relation in every sampled reduced E-word.
+ - **By hand or worker-only, not rechecked:** the Q-multiplet paragraph (Theorem 4(c)) and the C8 worker's 20,000-word mixed-word sample.
+ - **Cited, not re-run:** the B26 and C8 screens, which are negative numerical searches, not no-go theorems.
+ 
+@@ -30,8 +30,9 @@
+ - B26: drafted by a same-model-family worker; checked by a fresh-context same-family agent on its own from-scratch model build (`B26_check`, PASS = 47).
+ - C8: drafted by a same-model-family worker, who imported the B26 worker's model chain read-only (so not an independent build); checked by a fresh-context same-family agent (`C8_check`, PASS = 49), who reused the B26 checker's model build unchanged and wrote new code on it. The two checks therefore share one model build.
+ - Written up, with a consolidated self-contained runner, by the campaign supervisor's delegate, also same-family. The checks' corrections are applied here.
++- Reviewed by a fresh-context same-family agent (`NOTE_B26C8_review`), whose scoped edits are applied here.
+ 
+-None of these is an independent human reviewer, and no reviewer of this note has run yet.
++None of these is an independent human reviewer.
+ 
+ ## Question
+ 
+@@ -77,7 +78,7 @@
+ - **(F-a)** λ_{h_c}·f_c is even.
+ - **(F-b)** τ_{h_c}(c) + τ_{h_c}(−c) is odd.
+ 
+-Both parities are gauge-invariant. Under a translation-invariant gauge change (−1)^{μ·v + ε(c)}, λ_h·f_c changes by an even amount, because h fixes f_c. τ_h(c) + τ_h(−c) changes by 2ε(c) + 2ε(−c) plus μ-terms of the same parity. The runner also confirms this on three random gauges. Every translation-invariant solution of the flux equations is gauge-equivalent to u (loop rank 22 = 36 − 14, runner 0.1), so (F-a) and (F-b) are properties of the model, not of the gauge.
++Both parities are gauge-invariant. Under a translation-invariant gauge change (−1)^{μ·v + ε(c)}, the lift of h becomes (λ_h + μ + R_hᵀμ, τ_h(c) + ε(c) + ε(R_h c)), up to the global sign. So λ_h·f_c changes by 2μ·f_c, because h fixes f_c, and τ_h(c) + τ_h(−c) changes by 2ε(c) + 2ε(−c) (plus 2 for a global sign flip), because h fixes c and −c. The runner confirms the parities on three random gauges. Every translation-invariant solution of the flux equations is gauge-equivalent to u (loop rank 22 = 36 − 14, runner 0.1), so (F-a) and (F-b) are properties of the model, not of the gauge.
+ 
+ **Proof.**
+ 1. **The lifts compose up to a global sign.** Δ = G_g G_h G_gh⁻¹ is diagonal, of the form (−1)^{μ·v + ε(c)}. The PSG equations say that each lift maps every hopping term onto its rotated image with the correct sign. Δ covers the identity rotation, so it maps every hopping term to itself and preserves every edge sign, i.e. Δ takes the same value on the two ends of every edge. The hopping graph is connected: on-site edges connect the 12 corners, and links run along all three axes. So Δ is a constant ±1.
+@@ -99,7 +100,7 @@
+ **Remarks.**
+ - No range or entry restriction is used. B26's restriction to entries in {±1, ±i} is unnecessary.
+ - By Frobenius reciprocity, each 12-dimensional support space (c → ±c at displacement t·f_c) carries exactly one of A1 and A2. The multiplicities are (1, 0) for c → c and (0, 1) for c → −c (runner 1.6).
+-- The class is narrow. It excludes R_L, a two-term sum, and every on-site letter except the identity.
++- The class is narrow. It excludes R_L, a two-term sum, and every on-site letter except multiples of 1 and A0.
+ 
+ **Enumeration (runner 1.7; a different algorithm from the B26 check's orbit propagation).** Take every single-entry seed |a, i⟩⟨0, c_xy| with displacement a in the box [−R, R]³. Average it twistedly over O, (1/24)Σ_g χ(g) G_g E G_g⁻¹, for both characters, and keep the monomial results.
+ 
+@@ -163,7 +164,7 @@
+ - D_Π commutes with A0 and with every on-site letter.
+ - D_Π anticommutes with R_L and Rt, which hop by unit vectors.
+ 
+-(Runner 3.3, on the L = 4 torus.) Moving every D_Π to the left therefore costs a sign. A word in these letters and D_Π is ±D_Π^m × (word without D_Π), and it is translation-invariant iff m is even, since D_Π² = 1. So it is ± an old word.
++(Runner 3.3, on the L = 4 torus.) Moving every D_Π to the left therefore costs a sign. A word in these letters and D_Π is ±D_Π^m × (word without D_Π), and it is translation-invariant iff m is even, since D_Π² = 1. So it is ± a word in the old letters and A0, and, when its character is A1, z times an old word by the even-A reduction.
+ 
+ In Bloch form, D_Π W D_Π = (−1)^{n_R}W reads W(k+Π) = (−1)^{n_R}W(k), with n_R the number of R_L and Rt letters (runner 3.4, 200 random words). Since k* + Π ≡ −k*, **this is the known Π-taste** of every old word (campaign blocks B18 and B20).
+ 
+@@ -215,12 +216,13 @@
+   - E± is O-symmetric and translation-invariant, but not monomial: 3 nonzeros per column, with moduli 1/√2 and 1/2.
+   - exp(±iπ/4·Rt) = S·E∓·S⁻¹ by (I3), so it is nothing new.
+   - R_L(k+Π) = −R_L(k), so E±(k+Π) = E∓(k); also E(k)ᵀ = E(−k).
+-- **Broken exact Π relation (exact).** For an E-word, W(k+Π) = (−1)^{n_R}·W′(k), with W′ the word with E₊ ↔ E₋ swapped. The relation W(k+Π) = ±W(k) of old words fails: for the witness E₊·S the residual is 1.0. It fails for every sampled reduced E-word (79/79 by default, 112/112 with `--slow`; runner 5.8). In the sample it survives only in words whose E letters merge, e.g. E₊E₊ = iR_L. So −k* is no longer guaranteed to be a copy of k* at the operator level.
++- **Broken exact Π relation (exact for the witness; sampled otherwise).** For an E-word, W(k+Π) = (−1)^{n_R}·W′(k), with W′ the word with E₊ ↔ E₋ swapped (exact). The relation W(k+Π) = ±W(k) of old words fails: for the witness E₊·S the residual is 1.0. It fails for every sampled reduced E-word (79/79 by default, 112/112 with `--slow`; runner 5.8), a sample count. In the sample it survives only in non-reduced words (22 of 112 by default, 45 of 126 with `--slow`), e.g. words whose E letters merge, E₊E₊ = iR_L. So −k* is no longer guaranteed to be a copy of k* at the operator level.
++- **"Reduced"** here and below means the runner's local filter `hygienic()`: no cyclically adjacent pair that merges or cancels (E–E, E–R_L, R_L–E, R_L–R_L, Rt–Rt, S–S⁻¹, S⁻¹–S) and no adjacent slots. The filter was fixed after the first runs (see Criterion changes disclosed). It is local, not a full reduction: the E-free word E₊·S⁻¹·Rt·S·E₊·S = −i·S passes it (review probe). The sample counts are for the filter as written.
+ - **Surviving spectral Π-taste (numerical).** spec W(k+Π) = ω·spec W(k) with ω = ±1 holds in all sampled slot-free reduced E-words, i.e. words in S^{±1}, S², R_L, Rt and E± (80/80; 160/160 with `--slow`). It fails in all sampled reduced E-words with one or more generic symmetric on-site slots (0/80 kept; 0/160). The C8 check found 167/167 and 133/133. This is a sample statement. The check attributes the survival to the reality of every letter, but no proof is given here.
+ - **Scope of "new".** Among the π/4 exponentials examined (of A0, A_a, S^a, on-site involutions, R_L, Rt and D_Π), **E± is the only new letter**.
+   - exp(iπ/4·D_Π) = F gives nothing (runner 5.11). F² = iD_Π, F·R_L = R_L·F⁻¹ and F·S = S·F, so words reduce to (old word)·F^m, which is translation-invariant only when F^m = ±1. F itself is not translation-invariant.
+   - Conjugates g·E₊·g⁻¹ by old words g are already words.
+-  - No symmetric on-site projector P gives an involution R_L·P + (1 − P) (runner 5.13: the on-site commutant of R_L(k) is the scalars).
++  - No nontrivial symmetric on-site projector P gives a Hermitian involution R_L·P + (1 − P), since Hermiticity needs [R_L, P] = 0 (runner 5.13: the on-site commutant of R_L(k) is the scalars).
+   - The C8 check found no further non-conjugate parameter-free involution, but its search was not exhaustive.
+ - **exp(iθR_L).** For θ ∈ (π/6)Z this is a further parameter-free O-symmetric letter, on the same footing as the π/6 on-site fills. For θ = π/6 it is not z·E₊ⁿ (1 and R_L are linearly independent), and it flips under k → k + Π (runner 5.10). **It was not screened.**
+ - **No velocity source.** E±, exp(iπ/6·R_L) and R_L are scalars on D₊ and D₋ at ±k*, with zero compressed derivative (runner 5.12). By the C11 lemma they contribute nothing to the k* speed.
+@@ -252,13 +254,13 @@
+   - non-monomial letters, except the exponentials of Proposition 6;
+   - O_h letters with inversion characters;
+   - letters covariant under a subgroup only.
+-- **Theorem 4** settles:
++- **Theorem 4** settles (these are the "settled momentum-shifting subclasses" of the title):
+   - single-Q letters, for every Q;
+   - Q = Π monomial letters;
+   - doubled-cell monomial letters for Q ∈ π{0,1}³ at the orbit and range-0 level;
+   - pure-permutation words;
+   - one link letter between two G0 letters.
+-- **Proposition 5** needs V in a conjugation-closed palette.
++- **Proposition 5** needs V in a conjugation-closed palette (the "settled antiunitary subclass" of the title).
+ - **Proposition 6** is scoped to the π/4 exponentials listed. The spectral Π-taste statement is numerical.
+ - **Not part of this note:**
+   - B26's and C8's taste censuses (B24 lattices, B25 index lemma);

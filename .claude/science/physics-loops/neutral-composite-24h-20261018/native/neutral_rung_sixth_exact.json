@@ -1,0 +1,13 @@
+{
+  "coefficient": "-63*sqrt(2)/256",
+  "seconds": 0.15958145773038268,
+  "field": "QQ<sqrt(2) + I>",
+  "lower_coefficients": {
+    "1": "0",
+    "2": "-3*sqrt(2)/2",
+    "3": "0",
+    "4": "-13*sqrt(2)/32",
+    "5": "0"
+  },
+  "scope": "Exact specified finite-band off-diagonal coefficient; canonical equivalence and charge obstruction proved in note."
+}

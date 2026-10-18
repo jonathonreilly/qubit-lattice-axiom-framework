@@ -5,3 +5,7 @@ Focused independent sector, response, spatial normalization and source reviews p
 Neutral bond algebra block: independent planealgebra, extrareduction andcollectivesource reviews PASS; finalcanonical/runner review PASS. Aggregate8probes passed68.54s. No formalaudit.
 
 Source-identification block: independent scale, smooth-source, ladder, protected-factor, charge and nullspace checks passed. Final scoped review PASS after declaring stationary_spatial.json as a hashed supplied prior-output input. Aggregate10probes passed66.67s with cache identity stable. No formal audit.
+
+## Derived collective interaction block
+
+Disposition pass. Reused completed independent rung intertwining, boundary/source vertex, low-band observable, fourth-order linked support and exact sixth-order checks. Final source/package reviewer confirmed conditional scope and exact-vs-numerical hierarchy. Fixed explicit J_perp>0 and numerical readout wording. Reviewer found undeclared auxiliary tube_4 energy JSON; declared, disclosed, packaged and replayed. All eight aggregate probes passed in3.665s with source-bound cache. No formal audit verdict or effective-status change.

@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/native_derived_collective_interaction.py
+runner_sha256: 141f1550d69d455d76c171b72bfa9f18c11ac37dca856de5f9faff2c83f1eb1c
+input_fingerprint_sha256: 5e0c57319b13ec03e430fb17cdb26b7888945aebc584d02753d38416920a11f5
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.67
+status: ok
+----- stdout -----
+reproduced neutral_tube_rung_control
+reproduced neutral_boundary_vertex
+reproduced neutral_rung_effective
+reproduced neutral_rung_fourth
+reproduced neutral_rung_linked_fourth
+reproduced neutral_rung_u1_probe
+reproduced neutral_rung_sixth
+reproduced neutral_rung_sixth_exact
+per_site: one physical qubit; exact parity coordinates add no degrees of freedom
+per_mode: native collective XY term, higher interactions and composite readout derived
+per_block: exact sixth-order amplitude and finite analytic-charge obstruction
+lattice_wide: equal coupling, bulk scalar and physical observations remain open
+
+----- stderr -----
+

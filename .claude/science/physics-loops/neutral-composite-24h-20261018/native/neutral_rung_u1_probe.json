@@ -1,0 +1,55 @@
+{
+  "rows": [
+    {
+      "lambda_z": 0.05,
+      "band_gap": 2.659943562046145,
+      "max_eigen_residual": 4.058323090779758e-14,
+      "min_projection_singular": 0.9991814708885336,
+      "charge_commutator": 6.170442928107464e-08,
+      "all_up_down_matrix_element_abs": 5.453953733092717e-09,
+      "all_up_down_over_lambda6": 0.3490530389179337,
+      "commutator_over_lambda6": 3.9490834739887752
+    },
+    {
+      "lambda_z": 0.1,
+      "band_gap": 2.4780345392484797,
+      "max_eigen_residual": 5.0200898842872765e-14,
+      "min_projection_singular": 0.9967210180432298,
+      "charge_commutator": 3.984095805851849e-06,
+      "all_up_down_matrix_element_abs": 3.521476461543216e-07,
+      "all_up_down_over_lambda6": 0.3521476461543215,
+      "commutator_over_lambda6": 3.9840958058518474
+    },
+    {
+      "lambda_z": 0.2,
+      "band_gap": 2.073656105517726,
+      "max_eigen_residual": 5.290966511462886e-14,
+      "min_projection_singular": 0.9867977173894946,
+      "charge_commutator": 0.0002641590478617225,
+      "all_up_down_matrix_element_abs": 2.3348581756010844e-05,
+      "all_up_down_over_lambda6": 0.36482158993766933,
+      "commutator_over_lambda6": 4.1274851228394125
+    },
+    {
+      "lambda_z": 0.3,
+      "band_gap": 1.6151051801242229,
+      "max_eigen_residual": 3.989395330031364e-14,
+      "min_projection_singular": 0.9699053712961141,
+      "charge_commutator": 0.003192050321338769,
+      "all_up_down_matrix_element_abs": 0.0002821400535122365,
+      "all_up_down_over_lambda6": 0.3870233930209006,
+      "commutator_over_lambda6": 4.3786698509448145
+    },
+    {
+      "lambda_z": 0.5,
+      "band_gap": 0.5398749801396416,
+      "max_eigen_residual": 1.3882245070680022e-13,
+      "min_projection_singular": 0.9116404244959345,
+      "charge_commutator": 0.0824896683380089,
+      "all_up_down_matrix_element_abs": 0.007291125482454142,
+      "all_up_down_over_lambda6": 0.46663203087706506,
+      "commutator_over_lambda6": 5.27933877363257
+    }
+  ],
+  "scope": "Finite polar-gauge low-band charge diagnostic; not all-orders operator identity or bulk criticality proof."
+}

@@ -1,0 +1,88 @@
+{
+  "K4_pauli_coefficients": [
+    {
+      "word": [
+        0,
+        0,
+        0
+      ],
+      "coefficient_real": -0.1325825214724783,
+      "imag": 0.0,
+      "coefficient_times_sqrt2": -0.1875000000000009
+    },
+    {
+      "word": [
+        0,
+        3,
+        3
+      ],
+      "coefficient_real": -0.1104854345603977,
+      "imag": 0.0,
+      "coefficient_times_sqrt2": -0.1562499999999995
+    },
+    {
+      "word": [
+        1,
+        0,
+        1
+      ],
+      "coefficient_real": -0.1325825214724778,
+      "imag": 0.0,
+      "coefficient_times_sqrt2": -0.1875000000000002
+    },
+    {
+      "word": [
+        2,
+        0,
+        2
+      ],
+      "coefficient_real": -0.13258252147247773,
+      "imag": 0.0,
+      "coefficient_times_sqrt2": -0.1875000000000001
+    },
+    {
+      "word": [
+        3,
+        3,
+        0
+      ],
+      "coefficient_real": -0.11048543456039764,
+      "imag": 0.0,
+      "coefficient_times_sqrt2": -0.15624999999999942
+    }
+  ],
+  "commutator_with_total_tau3_norm": 1.102547581328309e-14,
+  "rows": [
+    {
+      "lambda_z": 0.02,
+      "fourth_order_error": 1.2464373092776599e-11,
+      "error_over_lambda6": 0.19475582957463433,
+      "second_order_error": 1.2570793425206825e-07
+    },
+    {
+      "lambda_z": 0.04,
+      "fourth_order_error": 7.972691969374926e-10,
+      "error_over_lambda6": 0.19464580003356752,
+      "second_order_error": 2.011801697083019e-06
+    },
+    {
+      "lambda_z": 0.08,
+      "fourth_order_error": 5.1156182631782026e-08,
+      "error_over_lambda6": 0.19514535000527197,
+      "second_order_error": 3.22192516545516e-05
+    },
+    {
+      "lambda_z": 0.16,
+      "fourth_order_error": 3.3084154069913226e-06,
+      "error_over_lambda6": 0.19719692510314715,
+      "second_order_error": 0.0005174666913509072
+    },
+    {
+      "lambda_z": 0.3,
+      "fourth_order_error": 0.00014897683334489116,
+      "error_over_lambda6": 0.20435779608352703,
+      "second_order_error": 0.006478657081868459
+    }
+  ],
+  "scope": "Finite three-rung canonical perturbative interaction. Fourth-order source derived from native H; not an all-orders U1 symmetry or equal-coupling/bulk claim."
+}

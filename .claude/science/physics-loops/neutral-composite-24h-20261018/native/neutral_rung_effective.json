@@ -1,0 +1,122 @@
+{
+  "onsite_spectrum": [
+    -2.8284271247461907,
+    -2.82842712474619,
+    -6.691796535131758e-16,
+    -1.023965570539618e-16,
+    2.464319351527836e-16,
+    4.414438676984731e-16,
+    2.8284271247461894,
+    2.8284271247461907
+  ],
+  "XY_coefficient_at_Jperp1": "-Jz^2/(2 sqrt(2)) multiplying tau1 tau1 + tau2 tau2",
+  "K_error": 4.884981308350689e-15,
+  "O2_pauli_coefficients": [
+    {
+      "word": [
+        0,
+        0,
+        0
+      ],
+      "coefficient_real": 0.7499999999999993,
+      "imag": 0.0
+    },
+    {
+      "word": [
+        0,
+        1,
+        1
+      ],
+      "coefficient_real": 0.37499999999999956,
+      "imag": 0.0
+    },
+    {
+      "word": [
+        0,
+        2,
+        2
+      ],
+      "coefficient_real": 0.37499999999999944,
+      "imag": 0.0
+    },
+    {
+      "word": [
+        1,
+        0,
+        1
+      ],
+      "coefficient_real": 0.3749999999999996,
+      "imag": 0.0
+    },
+    {
+      "word": [
+        1,
+        1,
+        0
+      ],
+      "coefficient_real": 0.37499999999999967,
+      "imag": 0.0
+    },
+    {
+      "word": [
+        2,
+        0,
+        2
+      ],
+      "coefficient_real": 0.37499999999999933,
+      "imag": 0.0
+    },
+    {
+      "word": [
+        2,
+        2,
+        0
+      ],
+      "coefficient_real": 0.37499999999999933,
+      "imag": 0.0
+    }
+  ],
+  "rows": [
+    {
+      "lambda_z": 0.01,
+      "band_gap": 2.7999898386505553,
+      "H_error": 7.856295401793292e-09,
+      "O_error": 1.3118276486788658e-08,
+      "O2_relative_error": 3.9111143962805414e-05,
+      "min_band_projection_singular": 0.9999786607648319
+    },
+    {
+      "lambda_z": 0.025,
+      "band_gap": 2.7567603120627346,
+      "H_error": 3.069177139922639e-07,
+      "O_error": 5.125802774278306e-07,
+      "O2_relative_error": 0.00024451506010759793,
+      "min_band_projection_singular": 0.999866616639501
+    },
+    {
+      "lambda_z": 0.05,
+      "band_gap": 2.683183040187034,
+      "H_error": 4.912494860317255e-06,
+      "O_error": 8.20972725631527e-06,
+      "O2_relative_error": 0.000979067105165516,
+      "min_band_projection_singular": 0.9994662786983555
+    },
+    {
+      "lambda_z": 0.1,
+      "band_gap": 2.5303147558004397,
+      "H_error": 7.871610530394576e-05,
+      "O_error": 0.00013189829694951622,
+      "O2_relative_error": 0.003932447441274291,
+      "min_band_projection_singular": 0.9978621008195884
+    },
+    {
+      "lambda_z": 0.2,
+      "band_gap": 2.201956100137024,
+      "H_error": 0.0012669631230125278,
+      "O_error": 0.0021457031614554767,
+      "O2_relative_error": 0.01599312709516884,
+      "min_band_projection_singular": 0.9913997154736703
+    }
+  ],
+  "scope": "Finite weak-longitudinal-coupling expansion of existing native terms; equal-coupling validity and bulk3D scalar not established. Pauli variables encode four original qubits in their two-state low band."
+}

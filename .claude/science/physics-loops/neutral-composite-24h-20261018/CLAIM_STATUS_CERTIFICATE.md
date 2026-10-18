@@ -1,15 +1,15 @@
-# Neutral source identification milestone claim certificate
+# Collective interaction claim status
 
-actual_current_surface_status: bounded-support
+actual_current_surface_status: conditional-support
 trace_class: upstream_support
 reachability_to_target: supports
-conditional_surface_status: finite supplied compass model
+conditional_surface_status: exact finite rung mapping, boundary elimination, sixth-order matrix element and analytic-charge obstruction; bounded numerical readout/fourth-order checks
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: Hamiltonian, state selection, bulk limit and measurement bridge remain imports.
+proposal_allowed_reason: Supplied microscopic H, selected parity band, finite geometry and diagnostic weak longitudinal ratio do not derive the physical scalar or observational mapping.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 review_loop_disposition: pass
 
-Focused independent mathematical and source checks passed, with scope qualifications incorporated. Root aggregate replay passed all10probes in66.67s. No empirical data were used; all numerical geometries and choices are exposed development inputs. Finite lowest Ritz values are not interval-certified ground energies.
+Independent checks are attached in native/INDEPENDENT_*CHECK.md and INDEPENDENT_DERIVED_COLLECTIVE_REVIEW.md. No formal audit performed or authority updated. All numerical data are exposed model development; no observed values fitted. Canonical runner reproduces eight probes and explicitly hashes one frozen auxiliary energy comparison.

@@ -1,0 +1,470 @@
+{
+  "inputs": {
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_tube_rung_control.py": "7cc12711321e26089016c3096bfc8294ec3090d02e98202f275a04161a739043",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_boundary_vertex.py": "37452d09ab01bf6a8a76352c367351069ab6a95622393ef647cfe306328e0ee7",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_effective.py": "f789866be82331c5d06b9115950c6a28006aa1cba1027359186e7a576df167a1",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_fourth.py": "a3769e366bc7286ddeb2f178e6ca6824a10a91fc303cab77756c67fb83e16204",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_linked_fourth.py": "1b9de9a6d805b8c1c863df694f665f182147e579b5ac39d3db4ae49a098a232b",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_u1_probe.py": "edd50df2b5e01fe786434fe5477fd2089fa0b9265cdfec27bfe8b623d02812bd",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_sixth.py": "b1ef959a9fa4e1280a418c15b9646dade2d0fd4d8a63e25a14ffc3e9b5ae5b8a",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_sixth_exact.py": "c6731fddbcbbbcfe91d8c2a9e87786de99dae3d1f571a92c6ea28bc0944daba2",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/tube_results/tube_4.json": "47311399341ad594d1438eb1da0fb382ea9e68df234de16fd9086f6b5fccd7e8"
+  },
+  "results": {
+    "neutral_tube_rung_control": [
+      {
+        "L": 1,
+        "dimension": 8,
+        "full_intertwining_error": 0.0,
+        "spectral_error": 0.0
+      },
+      {
+        "L": 2,
+        "dimension": 64,
+        "full_intertwining_error": 0.0,
+        "spectral_error": 0.0
+      }
+    ],
+    "neutral_boundary_vertex": {
+      "source_vertex_rows": [
+        {
+          "gap": 1.900055472644178,
+          "direct_native_energy_matrix_element": 0.32911009549185205,
+          "bare_P_contribution": 0.7956097555746615,
+          "induced_Q_contribution": -0.4664996600828215,
+          "dressed_error": 1.2045919817182948e-14,
+          "eigen_residual": 5.1593498270264755e-14
+        }
+      ],
+      "feshbach": {
+        "odd_reconstruction_error": 2.2711458880526473e-13,
+        "neutral_equation_residual": 2.8222984542082027e-12,
+        "neutral_sector_weight": 0.6980654346122447,
+        "weight_from_energy_derivative": 0.6980654346121895,
+        "minus_self_energy_derivative": 0.432530462642876,
+        "product_ground_column_diagonal": -0.7359130152109739,
+        "product_ground_column_offdiagonal_norm": 1.311478301217582
+      },
+      "half_rungs": 2,
+      "physical_qubits": 16,
+      "uncoupled_energy": -13.856406460551018,
+      "charged_half_gap": 1.4641016151377544,
+      "first_order_even_block_error": 7.012773213101553e-17,
+      "native_boundary_norm": 4.0,
+      "product_source_weight": 3.999999999999996,
+      "second_order_energy_coefficient": -1.0584754935143121,
+      "second_order_odd_weight_coefficient": 0.31944444444444375,
+      "rows": [
+        {
+          "boundary_multiplier": 0.01,
+          "energy": -13.856512320512273,
+          "second_order_energy": -13.856512308100369,
+          "second_order_error": -1.2411904129849371e-08,
+          "residual": 2.5224291277086562e-14,
+          "odd_odd_weight": 3.195108276152518e-05,
+          "product_ground_weight": 0.9999680352864363
+        },
+        {
+          "boundary_multiplier": 0.05,
+          "energy": -13.859060402501335,
+          "second_order_energy": -13.859052649284804,
+          "second_order_error": -7.753216531537158e-06,
+          "residual": 1.4482170379324115e-12,
+          "odd_odd_weight": 0.0008027509929151875,
+          "product_ground_weight": 0.9991887304323978
+        },
+        {
+          "boundary_multiplier": 0.1,
+          "energy": -13.867115036467617,
+          "second_order_energy": -13.866991215486161,
+          "second_order_error": -0.00012382098145589417,
+          "residual": 8.626056150465928e-14,
+          "odd_odd_weight": 0.003260205130233025,
+          "product_ground_weight": 0.9966035865279951
+        },
+        {
+          "boundary_multiplier": 0.25,
+          "energy": -13.927303718182626,
+          "second_order_energy": -13.922561178895663,
+          "second_order_error": -0.0047425392869644145,
+          "residual": 2.1217826236034063e-12,
+          "odd_odd_weight": 0.02236621425660828,
+          "product_ground_weight": 0.9724266695270042
+        },
+        {
+          "boundary_multiplier": 0.5,
+          "energy": -14.18626557899315,
+          "second_order_energy": -14.121025333929596,
+          "second_order_error": -0.0652402450635553,
+          "residual": 2.0185895292292007e-12,
+          "odd_odd_weight": 0.10423475151833997,
+          "product_ground_weight": 0.8324600380513185
+        },
+        {
+          "boundary_multiplier": 1.0,
+          "energy": -15.346346595525544,
+          "second_order_energy": -14.91488195406533,
+          "second_order_error": -0.43146464146021435,
+          "residual": 3.7887168075302514e-12,
+          "odd_odd_weight": 0.30193456538775393,
+          "product_ground_weight": 0.47273726802651617
+        }
+      ],
+      "scope": "Exact finite native cut interaction. Lambda labels a diagnostic interpolation only; original H has lambda1. No weak-coupling assumption at lambda1, new mediator, universal coupling or 3D limit."
+    },
+    "neutral_rung_effective": {
+      "onsite_spectrum": [
+        -2.8284271247461907,
+        -2.82842712474619,
+        -6.691796535131758e-16,
+        -1.023965570539618e-16,
+        2.464319351527836e-16,
+        4.414438676984731e-16,
+        2.8284271247461894,
+        2.8284271247461907
+      ],
+      "XY_coefficient_at_Jperp1": "-Jz^2/(2 sqrt(2)) multiplying tau1 tau1 + tau2 tau2",
+      "K_error": 4.884981308350689e-15,
+      "O2_pauli_coefficients": [
+        {
+          "word": [
+            0,
+            0,
+            0
+          ],
+          "coefficient_real": 0.7499999999999993,
+          "imag": 0.0
+        },
+        {
+          "word": [
+            0,
+            1,
+            1
+          ],
+          "coefficient_real": 0.37499999999999956,
+          "imag": 0.0
+        },
+        {
+          "word": [
+            0,
+            2,
+            2
+          ],
+          "coefficient_real": 0.37499999999999944,
+          "imag": 0.0
+        },
+        {
+          "word": [
+            1,
+            0,
+            1
+          ],
+          "coefficient_real": 0.3749999999999996,
+          "imag": 0.0
+        },
+        {
+          "word": [
+            1,
+            1,
+            0
+          ],
+          "coefficient_real": 0.37499999999999967,
+          "imag": 0.0
+        },
+        {
+          "word": [
+            2,
+            0,
+            2
+          ],
+          "coefficient_real": 0.37499999999999933,
+          "imag": 0.0
+        },
+        {
+          "word": [
+            2,
+            2,
+            0
+          ],
+          "coefficient_real": 0.37499999999999933,
+          "imag": 0.0
+        }
+      ],
+      "rows": [
+        {
+          "lambda_z": 0.01,
+          "band_gap": 2.7999898386505553,
+          "H_error": 7.856295401793292e-09,
+          "O_error": 1.3118276486788658e-08,
+          "O2_relative_error": 3.9111143962805414e-05,
+          "min_band_projection_singular": 0.9999786607648319
+        },
+        {
+          "lambda_z": 0.025,
+          "band_gap": 2.7567603120627346,
+          "H_error": 3.069177139922639e-07,
+          "O_error": 5.125802774278306e-07,
+          "O2_relative_error": 0.00024451506010759793,
+          "min_band_projection_singular": 0.999866616639501
+        },
+        {
+          "lambda_z": 0.05,
+          "band_gap": 2.683183040187034,
+          "H_error": 4.912494860317255e-06,
+          "O_error": 8.20972725631527e-06,
+          "O2_relative_error": 0.000979067105165516,
+          "min_band_projection_singular": 0.9994662786983555
+        },
+        {
+          "lambda_z": 0.1,
+          "band_gap": 2.5303147558004397,
+          "H_error": 7.871610530394576e-05,
+          "O_error": 0.00013189829694951622,
+          "O2_relative_error": 0.003932447441274291,
+          "min_band_projection_singular": 0.9978621008195884
+        },
+        {
+          "lambda_z": 0.2,
+          "band_gap": 2.201956100137024,
+          "H_error": 0.0012669631230125278,
+          "O_error": 0.0021457031614554767,
+          "O2_relative_error": 0.01599312709516884,
+          "min_band_projection_singular": 0.9913997154736703
+        }
+      ],
+      "scope": "Finite weak-longitudinal-coupling expansion of existing native terms; equal-coupling validity and bulk3D scalar not established. Pauli variables encode four original qubits in their two-state low band."
+    },
+    "neutral_rung_fourth": {
+      "K4_pauli_coefficients": [
+        {
+          "word": [
+            0,
+            0,
+            0
+          ],
+          "coefficient_real": -0.1325825214724783,
+          "imag": 0.0,
+          "coefficient_times_sqrt2": -0.1875000000000009
+        },
+        {
+          "word": [
+            0,
+            3,
+            3
+          ],
+          "coefficient_real": -0.1104854345603977,
+          "imag": 0.0,
+          "coefficient_times_sqrt2": -0.1562499999999995
+        },
+        {
+          "word": [
+            1,
+            0,
+            1
+          ],
+          "coefficient_real": -0.1325825214724778,
+          "imag": 0.0,
+          "coefficient_times_sqrt2": -0.1875000000000002
+        },
+        {
+          "word": [
+            2,
+            0,
+            2
+          ],
+          "coefficient_real": -0.13258252147247773,
+          "imag": 0.0,
+          "coefficient_times_sqrt2": -0.1875000000000001
+        },
+        {
+          "word": [
+            3,
+            3,
+            0
+          ],
+          "coefficient_real": -0.11048543456039764,
+          "imag": 0.0,
+          "coefficient_times_sqrt2": -0.15624999999999942
+        }
+      ],
+      "commutator_with_total_tau3_norm": 1.102547581328309e-14,
+      "rows": [
+        {
+          "lambda_z": 0.02,
+          "fourth_order_error": 1.2464373092776599e-11,
+          "error_over_lambda6": 0.19475582957463433,
+          "second_order_error": 1.2570793425206825e-07
+        },
+        {
+          "lambda_z": 0.04,
+          "fourth_order_error": 7.972691969374926e-10,
+          "error_over_lambda6": 0.19464580003356752,
+          "second_order_error": 2.011801697083019e-06
+        },
+        {
+          "lambda_z": 0.08,
+          "fourth_order_error": 5.1156182631782026e-08,
+          "error_over_lambda6": 0.19514535000527197,
+          "second_order_error": 3.22192516545516e-05
+        },
+        {
+          "lambda_z": 0.16,
+          "fourth_order_error": 3.3084154069913226e-06,
+          "error_over_lambda6": 0.19719692510314715,
+          "second_order_error": 0.0005174666913509072
+        },
+        {
+          "lambda_z": 0.3,
+          "fourth_order_error": 0.00014897683334489116,
+          "error_over_lambda6": 0.20435779608352703,
+          "second_order_error": 0.006478657081868459
+        }
+      ],
+      "scope": "Finite three-rung canonical perturbative interaction. Fourth-order source derived from native H; not an all-orders U1 symmetry or equal-coupling/bulk claim."
+    },
+    "neutral_rung_linked_fourth": {
+      "rows": [
+        {
+          "L": 2,
+          "low_dimension": 4,
+          "full_rung_dimension": 64,
+          "linked_fourth_error": 1.491862189340054e-16
+        },
+        {
+          "L": 3,
+          "low_dimension": 8,
+          "full_rung_dimension": 512,
+          "linked_fourth_error": 5.551115123125783e-16
+        },
+        {
+          "L": 4,
+          "low_dimension": 16,
+          "full_rung_dimension": 4096,
+          "linked_fourth_error": 4.440892098500626e-15
+        }
+      ],
+      "scope": "Explicit finite2,3,4rung fourth-order coefficient checks; general linked support argument requires independent review, no all-orders criticality."
+    },
+    "neutral_rung_u1_probe": {
+      "rows": [
+        {
+          "lambda_z": 0.05,
+          "band_gap": 2.659943562046145,
+          "max_eigen_residual": 4.058323090779758e-14,
+          "min_projection_singular": 0.9991814708885336,
+          "charge_commutator": 6.170442928107464e-08,
+          "all_up_down_matrix_element_abs": 5.453953733092717e-09,
+          "all_up_down_over_lambda6": 0.3490530389179337,
+          "commutator_over_lambda6": 3.9490834739887752
+        },
+        {
+          "lambda_z": 0.1,
+          "band_gap": 2.4780345392484797,
+          "max_eigen_residual": 5.0200898842872765e-14,
+          "min_projection_singular": 0.9967210180432298,
+          "charge_commutator": 3.984095805851849e-06,
+          "all_up_down_matrix_element_abs": 3.521476461543216e-07,
+          "all_up_down_over_lambda6": 0.3521476461543215,
+          "commutator_over_lambda6": 3.9840958058518474
+        },
+        {
+          "lambda_z": 0.2,
+          "band_gap": 2.073656105517726,
+          "max_eigen_residual": 5.290966511462886e-14,
+          "min_projection_singular": 0.9867977173894946,
+          "charge_commutator": 0.0002641590478617225,
+          "all_up_down_matrix_element_abs": 2.3348581756010844e-05,
+          "all_up_down_over_lambda6": 0.36482158993766933,
+          "commutator_over_lambda6": 4.1274851228394125
+        },
+        {
+          "lambda_z": 0.3,
+          "band_gap": 1.6151051801242229,
+          "max_eigen_residual": 3.989395330031364e-14,
+          "min_projection_singular": 0.9699053712961141,
+          "charge_commutator": 0.003192050321338769,
+          "all_up_down_matrix_element_abs": 0.0002821400535122365,
+          "all_up_down_over_lambda6": 0.3870233930209006,
+          "commutator_over_lambda6": 4.3786698509448145
+        },
+        {
+          "lambda_z": 0.5,
+          "band_gap": 0.5398749801396416,
+          "max_eigen_residual": 1.3882245070680022e-13,
+          "min_projection_singular": 0.9116404244959345,
+          "charge_commutator": 0.0824896683380089,
+          "all_up_down_matrix_element_abs": 0.007291125482454142,
+          "all_up_down_over_lambda6": 0.46663203087706506,
+          "commutator_over_lambda6": 5.27933877363257
+        }
+      ],
+      "scope": "Finite polar-gauge low-band charge diagnostic; not all-orders operator identity or bulk criticality proof."
+    },
+    "neutral_rung_sixth": [
+      {
+        "order": 1,
+        "norm": 6.4025486455378325e-31,
+        "hermiticity": 0.0,
+        "commutator": 1.1356302188461214e-30,
+        "up_down_abs": 8.552847072295026e-49,
+        "up_eigen_res": 1.2063090058365478e-31
+      },
+      {
+        "order": 2,
+        "norm": 9.16515138991167,
+        "hermiticity": 2.634994204303569e-16,
+        "commutator": 1.2947919560772386e-14,
+        "up_down_abs": 1.868403362971464e-19,
+        "up_eigen_res": 2.2334608491001685e-15
+      },
+      {
+        "order": 3,
+        "norm": 2.0336121588030232e-30,
+        "hermiticity": 2.7651800675730184e-46,
+        "commutator": 4.31543227491258e-30,
+        "up_down_abs": 1.9549699324056376e-32,
+        "up_eigen_res": 4.240947949797276e-31
+      },
+      {
+        "order": 4,
+        "norm": 1.6488632447841116,
+        "hermiticity": 6.003665006267686e-16,
+        "commutator": 8.051227576489401e-15,
+        "up_down_abs": 2.8714432056744504e-18,
+        "up_eigen_res": 8.083684684858772e-16
+      },
+      {
+        "order": 5,
+        "norm": 5.2658508117557724e-30,
+        "hermiticity": 8.077506564034629e-46,
+        "commutator": 1.4527931526992386e-29,
+        "up_down_abs": 2.965952639201832e-32,
+        "up_eigen_res": 1.3467614006595438e-30
+      },
+      {
+        "order": 6,
+        "norm": 1.0788112059874309,
+        "hermiticity": 5.548779422692176e-16,
+        "commutator": 3.9374999999999845,
+        "up_down_abs": 0.3480291188652524,
+        "up_eigen_res": 0.3480291188652525
+      }
+    ],
+    "neutral_rung_sixth_exact": {
+      "coefficient": "-63*sqrt(2)/256",
+      "seconds": 0.15958145773038268,
+      "field": "QQ<sqrt(2) + I>",
+      "lower_coefficients": {
+        "1": "0",
+        "2": "-3*sqrt(2)/2",
+        "3": "0",
+        "4": "-13*sqrt(2)/32",
+        "5": "0"
+      },
+      "scope": "Exact specified finite-band off-diagonal coefficient; canonical equivalence and charge obstruction proved in note."
+    }
+  },
+  "scope": "Finite supplied-H feature dynamics/source vertex and weak-rung expansion; no physical scalar, bulk3D or observation identification"
+}

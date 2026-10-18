@@ -1,0 +1,23 @@
+{
+  "rows": [
+    {
+      "L": 2,
+      "low_dimension": 4,
+      "full_rung_dimension": 64,
+      "linked_fourth_error": 1.491862189340054e-16
+    },
+    {
+      "L": 3,
+      "low_dimension": 8,
+      "full_rung_dimension": 512,
+      "linked_fourth_error": 5.551115123125783e-16
+    },
+    {
+      "L": 4,
+      "low_dimension": 16,
+      "full_rung_dimension": 4096,
+      "linked_fourth_error": 4.440892098500626e-15
+    }
+  ],
+  "scope": "Explicit finite2,3,4rung fourth-order coefficient checks; general linked support argument requires independent review, no all-orders criticality."
+}

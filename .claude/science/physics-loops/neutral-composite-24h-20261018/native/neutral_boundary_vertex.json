@@ -1,0 +1,87 @@
+{
+  "source_vertex_rows": [
+    {
+      "gap": 1.900055472644178,
+      "direct_native_energy_matrix_element": 0.32911009549185205,
+      "bare_P_contribution": 0.7956097555746615,
+      "induced_Q_contribution": -0.4664996600828215,
+      "dressed_error": 1.2045919817182948e-14,
+      "eigen_residual": 5.1593498270264755e-14
+    }
+  ],
+  "feshbach": {
+    "odd_reconstruction_error": 2.2711458880526473e-13,
+    "neutral_equation_residual": 2.8222984542082027e-12,
+    "neutral_sector_weight": 0.6980654346122447,
+    "weight_from_energy_derivative": 0.6980654346121895,
+    "minus_self_energy_derivative": 0.432530462642876,
+    "product_ground_column_diagonal": -0.7359130152109739,
+    "product_ground_column_offdiagonal_norm": 1.311478301217582
+  },
+  "half_rungs": 2,
+  "physical_qubits": 16,
+  "uncoupled_energy": -13.856406460551018,
+  "charged_half_gap": 1.4641016151377544,
+  "first_order_even_block_error": 7.012773213101553e-17,
+  "native_boundary_norm": 4.0,
+  "product_source_weight": 3.999999999999996,
+  "second_order_energy_coefficient": -1.0584754935143121,
+  "second_order_odd_weight_coefficient": 0.31944444444444375,
+  "rows": [
+    {
+      "boundary_multiplier": 0.01,
+      "energy": -13.856512320512273,
+      "second_order_energy": -13.856512308100369,
+      "second_order_error": -1.2411904129849371e-08,
+      "residual": 2.5224291277086562e-14,
+      "odd_odd_weight": 3.195108276152518e-05,
+      "product_ground_weight": 0.9999680352864363
+    },
+    {
+      "boundary_multiplier": 0.05,
+      "energy": -13.859060402501335,
+      "second_order_energy": -13.859052649284804,
+      "second_order_error": -7.753216531537158e-06,
+      "residual": 1.4482170379324115e-12,
+      "odd_odd_weight": 0.0008027509929151875,
+      "product_ground_weight": 0.9991887304323978
+    },
+    {
+      "boundary_multiplier": 0.1,
+      "energy": -13.867115036467617,
+      "second_order_energy": -13.866991215486161,
+      "second_order_error": -0.00012382098145589417,
+      "residual": 8.626056150465928e-14,
+      "odd_odd_weight": 0.003260205130233025,
+      "product_ground_weight": 0.9966035865279951
+    },
+    {
+      "boundary_multiplier": 0.25,
+      "energy": -13.927303718182626,
+      "second_order_energy": -13.922561178895663,
+      "second_order_error": -0.0047425392869644145,
+      "residual": 2.1217826236034063e-12,
+      "odd_odd_weight": 0.02236621425660828,
+      "product_ground_weight": 0.9724266695270042
+    },
+    {
+      "boundary_multiplier": 0.5,
+      "energy": -14.18626557899315,
+      "second_order_energy": -14.121025333929596,
+      "second_order_error": -0.0652402450635553,
+      "residual": 2.0185895292292007e-12,
+      "odd_odd_weight": 0.10423475151833997,
+      "product_ground_weight": 0.8324600380513185
+    },
+    {
+      "boundary_multiplier": 1.0,
+      "energy": -15.346346595525544,
+      "second_order_energy": -14.91488195406533,
+      "second_order_error": -0.43146464146021435,
+      "residual": 3.7887168075302514e-12,
+      "odd_odd_weight": 0.30193456538775393,
+      "product_ground_weight": 0.47273726802651617
+    }
+  ],
+  "scope": "Exact finite native cut interaction. Lambda labels a diagnostic interpolation only; original H has lambda1. No weak-coupling assumption at lambda1, new mediator, universal coupling or 3D limit."
+}

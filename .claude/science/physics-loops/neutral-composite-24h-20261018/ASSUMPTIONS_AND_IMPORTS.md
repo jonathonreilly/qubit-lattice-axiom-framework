@@ -1,0 +1,3 @@
+# Current constructive block premises
+
+Supplied: one-qubit compass H, positive J_perp, square transverse geometry, positive rung parity, low-band/state selection and physical units. Diagnostic: lambda=J_z/J_perp small for the collective expansion; no assumption that isotropic lambda1 is perturbative. Derived: exact rung coordinates, native finite boundary elimination, leading XY coefficient and readout (numerically checked), higher collective terms, exact sixth-order finite matrix element. Open: thermodynamic/equal-coupling control, physical scalar/matter/cosmology mapping, empirical tests. New interaction terms are not added to microscopic H.

@@ -133,3 +133,21 @@ PR9711published/attached at36898bcf116f728fd818f08620c4ad2919ce45f3, base9709. N
 ## Source-identification block checked
 
 All10aggregateprobes passed66.67s; cached native_neutral_source_identification.txt. Independent final review PASS, undeclared stationary_spatial.json input fixed and replayed. Exact protected-state reduction, source-nullspace theorem and finite ladder/charge tests packaged. No physicalscalar orbulkclosure. Next sustained constructive route: neutral response on growing2x2xL native grids; thin-cross-section model tests only, no3D extrapolation. No owned research jobs at this checkpoint.
+
+## Growing native grid constructive block started
+
+PR9713verifiedOPENat2fa77e3d3569f5d4ba8d933c0e9be77049072215andattached. Newbranchcodex/neutral-growing-grid-20261018. Refetchedmainunchangedfa841753; PR9708body inspected: suppliedRegge/P1/Whitneygeometry, notsameH, noimport into nativegrid. Root2x2xLprobe completedL3..7(fullselected-sector dimensions256..1048576), standing-wave neutralcolumns; lowglobal-sector gaps shrink but source spectra broad. Nodes needconvergence/residual validation; no bulkpole. Root exact4site parity-rungmap yields8statechain with4diagonalinterrungchannels, denseL1/2intertwiningzero. Independentcheckrunning. Installingquimb isolated/private/tmp/neutral-tensor-venv(session99969) forvariational largerfeature tests, notchangingtheory. Next compareMPOandexactsmallmatrices, thenDMRGstatevarianceandsectorchecksbefore dynamics.
+
+## Constructive native collective block checkpoint
+
+Rootderivedexactpositiveparityrung8statechain; independentL3fullintertwiningPASS. NativecutFeshbachcoupling anddressedleftenergyvertexderivedwithoutnewterms: fullstrengthQweight.3019345654, sourceamplitude .7956097556-.4664996601=.3291100955. IndependentchecksPASS. Rootderivedweak-Jz XYlowdoubletinteraction -Jz²/(2sqrt2Jperp) andnativeCreadoutO2=3/4I+3/8sum3pairsXY; finitepolarbandchecksOλ4 andindependentcanonicalprojectorreviewPASS. Fourth-orderK4includingZZ/nextneighborXYderivedandlinkedL2/3/4checked; undeformedtau3chargefailsatλ6 on4rungs (notallpossible dressedcharges). Detailsnative/DERIVED_RUNG_COLLECTIVE.md andprobes. No equalcouplingor3Dscalarclaim.
+
+Exact2x2x8selectedsectorcompleted(session81371): E0=-33.101369842849316, gap.01859083327, eigenresidualsbelow6.1e-9,81.56s. ThinprobeL3..7completed, nodesnotyetresidualcertified. VariationalMPSrun63023 stillactivePID47932 onL12; L8chi48 energy-33.10134724111335, residualestimate.01554 despiteenergyconvergedflag. Do not useasstationaryresponse. Quimb1.15isolatedvenv /private/tmp/neutral-tensor-venv. Initialoptionaljoblibsavefailurepreservedandfixedwithstdlibpickle.
+
+Next: finishMPSdiagnostic; consolidatecoherentconstructiveblockandrunfinalreview/cache. Candidatefollowingroute /private/tmp/protected_interface_order.md derives firstallowedlogicalfacecouplingorderL foroddLprotectedfeatures, notnonzerocoefficient; focusedcheckpendingenvironment_equations. Ownershiproot, lockexpires04:22:07Z,deadlineunchanged.
+
+## Exact four-feature process
+
+Root extended Bloch wave recursion through order6 and certified <up^4|K6|down^4>=-63sqrt2/256 exactly in Q(sqrt2,i). Finite analytic charge Q(lambda)->sumtau3 is obstructed because up/down shareK2/K4energies. Independent proof/exact normalizationcheckPASS; no bulk/emergentIRsymmetry exclusion. Pure-numpy neutral_rung_model.py now removes quimb dependency from finite probes; liveMPSsource untouched. Exact32site neutralresponse completed96552: projectionres2.06e-13, smoothprofile1lowestnode1.79267, broadmean5.48462; duplicate256Lanczosnode mergesweights, nottwophysicalstates. Independent3360intertwiningchecksPASS. MPS63023 stillrunningL12, no restart. Canonicalderivedcollective note prepared; next finalpackagecheck/runner then PR. Nextcandidate /private/tmp/rung_discrete_symmetry.py finds native discrete quarterrotation ofeffective tau axes; investigate emergentIR scalar despite exactcontinuouschargeobstruction, after milestone. Lockexpires04:49:12Z.
+
+Derived collective block final review PASS. Eight-probe replay source-bound cache passed3.665s; frozen tube_4.json auxiliary prior energy input explicitly declared/disclosed. Canonical source numerical readout qualifier andpositiveJperp fixed. Publish onlycoherent finite collective/vertex block; leavegrowinggrid/MPS uncommittedfornextblock.

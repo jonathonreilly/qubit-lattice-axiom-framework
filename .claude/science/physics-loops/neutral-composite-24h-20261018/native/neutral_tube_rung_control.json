@@ -1,0 +1,14 @@
+[
+  {
+    "L": 1,
+    "dimension": 8,
+    "full_intertwining_error": 0.0,
+    "spectral_error": 0.0
+  },
+  {
+    "L": 2,
+    "dimension": 64,
+    "full_intertwining_error": 0.0,
+    "spectral_error": 0.0
+  }
+]

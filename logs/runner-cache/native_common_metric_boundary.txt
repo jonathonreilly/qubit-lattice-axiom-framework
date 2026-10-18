@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/native_common_metric_boundary.py
+runner_sha256: a971a3a4f1ad6fdb54fc2fe8f0aa5ca5bc1d1de85b5d4ae2d18d61e323731549
+input_fingerprint_sha256: d1251493a5ab89f22cb3423fd5d6f9fb7c995262504f6446a4551b05c3224364
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+{"status": "bounded-support", "scope": "Necessary common-relativistic-dispersion test of derived leading asymptotics; not measured/front velocities or all-regime exclusion", "squared_energy_slopes": {"charged": {"coefficient": "60775/134217728", "power": 14}, "Q4": {"coefficient": "147744025/1236950581248", "power": 16}, "Q8": {"coefficient": "738720125/26388279066624", "power": 18}, "Q6": {"coefficient": "200635554122575/236384937241422594048", "power": 22}}, "ratios": {"Q4": {"coefficient": "2431/9216", "power": 2}, "Q8": {"coefficient": "12155/196608", "power": 4}, "Q6": {"coefficient": "3301284313/1761205026816", "power": 8}}, "exposed_coefficient_examples": [{"lam": "1/10", "ratios": {"Q4": 0.0026378038194444444, "Q8": 6.182352701822917e-06, "Q6": 1.8744463380099688e-11}}, {"lam": "1/100", "ratios": {"Q4": 2.6378038194444444e-05, "Q8": 6.182352701822916e-10, "Q6": 1.8744463380099688e-19}}, {"lam": "1/1000", "ratios": {"Q4": 2.6378038194444444e-07, "Q8": 6.182352701822917e-14, "Q6": 1.8744463380099687e-27}}]}
+
+----- stderr -----
+

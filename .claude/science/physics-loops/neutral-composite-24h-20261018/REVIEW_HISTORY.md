@@ -207,3 +207,8 @@ Status: conditional-support; trace: upstream_support; proposal_allowed: false.
 ## Six-flux diagonal mode
 Native Q6 diagonal-pair block complete: six-cycle/perimeter minimum, positive lambda16 orientation flip, lambda16 translation cancellation, lambda18 detour-controlled staggered minimum(pi,pi). Curvature K6=8gamma*d/Delta-16gamma²b/Delta²>0. Symmetrized microscopic X/Y-column probe exactly transverse-A1 atstaggeredmomentum, poleweight1-5lambda²/2. Actual-H fixed-p transfer and matched-source bounds checked. Independent motion/source/finalPASS; source-bound replay.150187sPASS. Scalar u12 excluded fromabsolute orientationenergy, cancelsmotion. No3DLorentz/cosmologicalidentification. Nextroot tests common-metric compatibility across derived feature branches, informedbyupdatedPR9718head965c6f3dbd6d2023d4227886143e78a80861a1e6; nootherPRresults imported.
 Status: conditional-support; trace: upstream_support; proposal_allowed: false.
+
+
+## Common-metric boundary
+Common-metric compatibility check complete: actual squared-energy curvature ratios Q4/charged~lambda², Q8/charged~lambda4, Q6/charged~lambda8. Ratios invariant undercommonunits, source normalizationcannotrepair. Necessary commonrelativisticrest-dispersion condition fails inthisweakcouplingwindow; notfrontspeed, observationalexclusionorallregimeno-go. Independent/finalPASS, source-boundreplay.045903sPASS. Root next derives nativeHamiltonian energy-density readout coupling: preliminary cancellationatq0 and q² amplitude frominhomogeneousbondmarks, underfocusedchecks.
+Status: bounded-support; trace: negative_route_pruning; proposal_allowed: false.

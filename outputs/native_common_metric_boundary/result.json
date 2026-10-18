@@ -1,0 +1,62 @@
+{
+  "status": "bounded-support",
+  "scope": "Necessary common-relativistic-dispersion test of derived leading asymptotics; not measured/front velocities or all-regime exclusion",
+  "squared_energy_slopes": {
+    "charged": {
+      "coefficient": "60775/134217728",
+      "power": 14
+    },
+    "Q4": {
+      "coefficient": "147744025/1236950581248",
+      "power": 16
+    },
+    "Q8": {
+      "coefficient": "738720125/26388279066624",
+      "power": 18
+    },
+    "Q6": {
+      "coefficient": "200635554122575/236384937241422594048",
+      "power": 22
+    }
+  },
+  "ratios": {
+    "Q4": {
+      "coefficient": "2431/9216",
+      "power": 2
+    },
+    "Q8": {
+      "coefficient": "12155/196608",
+      "power": 4
+    },
+    "Q6": {
+      "coefficient": "3301284313/1761205026816",
+      "power": 8
+    }
+  },
+  "exposed_coefficient_examples": [
+    {
+      "lam": "1/10",
+      "ratios": {
+        "Q4": 0.0026378038194444444,
+        "Q8": 6.182352701822917e-06,
+        "Q6": 1.8744463380099688e-11
+      }
+    },
+    {
+      "lam": "1/100",
+      "ratios": {
+        "Q4": 2.6378038194444444e-05,
+        "Q8": 6.182352701822916e-10,
+        "Q6": 1.8744463380099688e-19
+      }
+    },
+    {
+      "lam": "1/1000",
+      "ratios": {
+        "Q4": 2.6378038194444444e-07,
+        "Q8": 6.182352701822917e-14,
+        "Q6": 1.8744463380099687e-27
+      }
+    }
+  ]
+}

@@ -10,3 +10,4 @@
   - rg_independent_numeric: run 1 failed 4 checks at ~2e-4 relative. The cause was IR truncation of the radial quadrature (ln r ≥ -4; the sanity integral was itself off by 1.9e-4). Extended to [-8, 4] with the tolerance unchanged: 11/0. The run-1 log is kept.
 - run_all: TOTAL PASS=48 FAIL=0.
 - Load-bearing step for independent review: the sign and normalisation of the fermion speed flow (`K_eff = K - Sigma~`), which both RG scripts share. A reviewer should redo it with a different convention, e.g. a Minkowski Hamiltonian / Hartree–Fock route, or by comparing with Isobe–Nagaosa's explicit equations.
+- Review pass: applied every REVIEW.md finding to NOTE.md (§9 maps each finding to its fix). Added a runner check for the proper-O invariant counts (2, 3). Checked the e²δ²/(24π²) drift against my closed form. run_all: TOTAL PASS=49 FAIL=0.

@@ -62,3 +62,8 @@ PASS D3/sign: all 600 solutions symplectic (Laurent check) with det 1
 PASS D3/sign: every trace is D3-invariant
   D3  sign     dimW= 28 unsigned=   600 signed=   800 on-site=  6 periodic=  198 glider=   12 spreading=   390 | with valid phases: {'periodic': 132, 'glider': 4, 'spreading': 64} glider dirs=[(1, 1, 1)] (16.4s)
 PASS D3/sign-f: restriction is a homomorphism on D3
+PASS D3/sign-f: brute-force and split enumerators agree (64)
+PASS D3/sign-f: all 64 solutions symplectic (Laurent check) with det 1
+PASS D3/sign-f: every trace is D3-invariant
+  D3  sign-f   dimW= 22 unsigned=    64 signed=   128 on-site=  2 periodic=   64 glider=    0 spreading=     0 | with valid phases: {'periodic': 64, 'glider': 0, 'spreading': 0} glider dirs=[] (0.6s)
+PASS D3/axis: restriction is a homomorphism on D3

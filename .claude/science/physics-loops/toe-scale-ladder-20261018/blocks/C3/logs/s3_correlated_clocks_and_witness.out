@@ -23,4 +23,5 @@
 [PASS] (d) mixture witness: Cov(1{v_0=b},1{v_x=b}) >= 124991/900000 = 0.138879 > 0 uniformly in x
 [PASS] (d) |O_h|=48 acts transitively on the 6 axes with stabiliser of order 8
 [PASS] (e) level clock: the 30-step backward staircase is strictly decreasing deterministically (tail = 1, no factorial decay)
-s3: PASS=16 FAIL=0
+[PASS] (f) tied-exchangeable witness: Cov(xi_0,xi_3) = 1/9 = 1/9 (for every r>=3 by disjointness): LRO outside A' (ties)
+s3: PASS=17 FAIL=0

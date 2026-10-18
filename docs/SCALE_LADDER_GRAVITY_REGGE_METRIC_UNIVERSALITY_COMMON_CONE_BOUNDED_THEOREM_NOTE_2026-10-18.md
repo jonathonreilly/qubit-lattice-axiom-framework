@@ -121,7 +121,9 @@ question is whether the complex's own symmetry forces the graviton's leading for
     - The on-shell P1 stress has a component along that direction that does not shrink with
       momentum (a fixed 9–13% of its norm).
     - So for the 15-edge carrier with P1 matter at b = 0, the linearised field equations have
-      no solution in that channel: a linear source along an exact flat direction.
+      no solution in that channel: a linear source along an exact null direction of the quadratic
+      action. That direction is not a flat deformation; it carries curvature the quadratic action
+      does not see (companion PR #9714).
     - The pullback has no such direction (nullity four), and its static response is well
       posed.
 12. **The Newtonian rung of the pullback.**
@@ -160,10 +162,10 @@ question is whether the complex's own symmetry forces the graviton's leading for
 - **The gravity rung's tension on this complex.** Within the K48 background family, two
   things cannot both hold:
   - a real spectrum, which needs b = 0 (item 5);
-  - a 15-edge carrier with no exact flat direction that geometric matter sources, which
+  - a 15-edge carrier with no exact null direction that geometric matter sources, which
     needs b ≠ 0 (items 10 and 11).
 
-  The pullback avoids the flat direction but is birefringent at O(k⁴): the companion OK4 note
+  The pullback avoids the null direction but is birefringent at O(k⁴): the companion OK4 note
   finds split axis roots −2/9 and −1/9. Several routes are open:
   - other triangulations of Z³ × Z_τ, in particular B4-symmetric ones, since this complex
     lacks the tick reflection;

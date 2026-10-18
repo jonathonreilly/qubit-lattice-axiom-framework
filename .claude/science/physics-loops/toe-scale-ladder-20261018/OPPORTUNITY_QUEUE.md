@@ -1,10 +1,10 @@
-# Opportunity queue (rank by evidence value; refresh after each block)
-1. C1 photon phase QMC — ACTIVE (wave 1)
-2. C4 one-qubit cubic Clifford QCA classification — ACTIVE (wave 1)
-3. C5 equivariant W3 / net chirality — ACTIVE (wave 1)
-4. C3 iid-formation no-phase theorem + rate extension — queued
-5. C2 common light cone witness + Chadha-Nielsen flow — queued
-6. C6 BHM stability of Z2 fermion codes — queued
-7. C7 3+1D Dirac-walk continuum limit — queued (low novelty)
-8. C8 lattice Sakharov coefficient — queued (premise heavy)
-Excluded: Koide; alpha_LM^16 hierarchy; R1 clock/controller/scalar densification.
+# Opportunity queue (refreshed 2026-10-18 ~22:50Z)
+Done/reviewed: C2 ready, C3 ready, C4 ready, C6 ready (F1-F4; F5 conditional), C7 ready (+ main runner repair).
+Under review: C5 (Theorem K: finite-range walks have W3=0), C4b (index lemma; range-4 spreading composite).
+Running: C1 photon QMC (long); C4c pair-sector dispersion (does any covariant one-qubit QCA move a bound pair?).
+Next candidates (ranked):
+1. C5b: many-body extension of Theorem K — can a strictly local fermionic/qubit QCA or finite-depth circuit in 3D pump/realize net chirality (relate to Fidkowski-Po-Potter-Vishwanath chiral pumping QCAs)? Decides whether chiral matter is possible at R1->R3 at all.
+2. Synthesis: update SCALE_LADDER_MAP rung bridges with campaign results (cheap, orchestrator).
+3. C1 follow-up depending on verdict (larger L or improved updates).
+4. C8 Sakharov coefficient (premise heavy; low).
+Excluded: Koide; alpha_LM^16; R1 densification.

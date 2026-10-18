@@ -1,0 +1,10 @@
+B4 (384)
+  symmetric rank-2 (scalar K_mu nu): 1
+  general rank-2 (Dirac c_mu nu gamma_mu k_nu): 1
+  quadratic forms in F_mu nu (gauge-invariant spin-1 kinetic): 1
+  symmetric rank-4 (k^4 terms; >1 means LV allowed at this order): 2
+O_h x T (96)
+  symmetric rank-2 (scalar K_mu nu): 2
+  general rank-2 (Dirac c_mu nu gamma_mu k_nu): 2
+  quadratic forms in F_mu nu (gauge-invariant spin-1 kinetic): 2
+  symmetric rank-4 (k^4 terms; >1 means LV allowed at this order): 4

@@ -1,0 +1,4 @@
+generator signs (1, 1) consistent homomorphism: False
+generator signs (1, -1) consistent homomorphism: True
+generator signs (-1, 1) consistent homomorphism: False
+generator signs (-1, -1) consistent homomorphism: True

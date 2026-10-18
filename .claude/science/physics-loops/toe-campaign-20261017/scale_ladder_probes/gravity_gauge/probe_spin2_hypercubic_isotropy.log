@@ -1,0 +1,33 @@
+== Leading-order (two-derivative) quadratic forms: SO(d) vs signed-permutation group ==
+d=3 spin=1 group=SO              invariant forms=  2  gauge-invariant=1
+d=3 spin=1 group=hyperoctahedral invariant forms=  3  gauge-invariant=1
+d=3 spin=2 group=SO              invariant forms=  4  gauge-invariant=1
+d=3 spin=2 group=hyperoctahedral invariant forms=  9  gauge-invariant=1
+d=4 spin=1 group=SO              invariant forms=  2  gauge-invariant=1
+d=4 spin=1 group=hyperoctahedral invariant forms=  3  gauge-invariant=1
+d=4 spin=2 group=SO              invariant forms=  4  gauge-invariant=1
+d=4 spin=2 group=hyperoctahedral invariant forms=  9  gauge-invariant=1
+
+spin-2 d=4: SO(4) gauge-invariant forms=1; B_4 forms=1; extra marginal directions=0
+
+EH reference (should be omega^2/k^2 = 1, multiplicity 2 in every direction):
+  [100]: [(np.float64(1.0), 2, np.float64(6.852423726005186e-19))]
+  [110]: [(np.float64(1.0), 2, np.float64(2.435686000668411e-17))]
+  [111]: [(np.float64(1.0), 2, np.float64(1.2998817781424523e-17))]
+  [210]: [(np.float64(1.0), 2, np.float64(1.399582523683549e-17))]
+
+Generic B_4 form, relative admixture eps=0.05 of extra hypercubic invariants:
+  [100]: omega^2/k^2 roots (value, multiplicity, rel. sigma_min) = [(np.float64(1.0), 2, np.float64(6.852423726005186e-19))]
+  [110]: omega^2/k^2 roots (value, multiplicity, rel. sigma_min) = [(np.float64(1.0), 2, np.float64(2.435686000668411e-17))]
+  [111]: omega^2/k^2 roots (value, multiplicity, rel. sigma_min) = [(np.float64(1.0), 2, np.float64(1.2998817781424523e-17))]
+  [210]: omega^2/k^2 roots (value, multiplicity, rel. sigma_min) = [(np.float64(1.0), 2, np.float64(1.399582523683549e-17))]
+
+Generic B_4 form, relative admixture eps=0.2 of extra hypercubic invariants:
+  [100]: omega^2/k^2 roots (value, multiplicity, rel. sigma_min) = [(np.float64(1.0), 2, np.float64(6.852423726005186e-19))]
+  [110]: omega^2/k^2 roots (value, multiplicity, rel. sigma_min) = [(np.float64(1.0), 2, np.float64(2.435686000668411e-17))]
+  [111]: omega^2/k^2 roots (value, multiplicity, rel. sigma_min) = [(np.float64(1.0), 2, np.float64(1.2998817781424523e-17))]
+  [210]: omega^2/k^2 roots (value, multiplicity, rel. sigma_min) = [(np.float64(1.0), 2, np.float64(1.399582523683549e-17))]
+
+real	1m9.092s
+user	1m6.238s
+sys	0m2.116s

@@ -1,0 +1,16 @@
+lam   lam_eff   t*        ideal_infid  | tolerance x giving worst infidelity 1e-2
+                                     |  bond    bond(adapt) chainsite endpt_diff endpt_common
+(target = ideal infidelity + 1e-2 excess)
+0.04  1.60e-03  9.817e+02 2.85e-03     | 2.38e-03   1.29e-01   3.05e-03   1.93e-04   1.40e-03  
+0.02  4.00e-04  3.917e+03 3.81e-04     | 1.09e-02   1.42e-01   3.36e-02   4.56e-05   5.27e-02  
+0.01  1.00e-04  1.575e+04 1.83e-04     | 1.37e-02   1.24e-01   4.14e-02   1.18e-05   6.07e-02  
+0.005 2.50e-05  6.299e+04 2.60e-05     | 1.54e-02   1.04e-01   3.78e-02   2.91e-06   6.34e-02  
+scaling exponent of tolerance vs lam [bond]: -0.84
+scaling exponent of tolerance vs lam [bond(adaptive)]: 0.11
+scaling exponent of tolerance vs lam [chainsite]: -1.12
+scaling exponent of tolerance vs lam [endpoint_diff]: 2.01
+scaling exponent of tolerance vs lam [endpoint_common]: -1.67
+
+real	2m55.764s
+user	2m43.764s
+sys	0m0.141s

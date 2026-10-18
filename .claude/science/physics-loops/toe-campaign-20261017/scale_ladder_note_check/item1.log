@@ -1,0 +1,32 @@
+shift vectors s_R per rotation (trace, w1, s_R):
+  tr 3 w1 0 s_R (0, 0, 0)
+  tr -1 w1 0 s_R (0, 1, 1)
+  tr -1 w1 0 s_R (1, 0, 1)
+  tr -1 w1 0 s_R (1, 1, 0)
+  tr 1 w1 1 s_R (0, 1, 0)
+  tr 1 w1 1 s_R (0, 0, 1)
+  tr -1 w1 1 s_R (1, 1, 1)
+  tr -1 w1 1 s_R (1, 0, 0)
+  tr -1 w1 1 s_R (1, 1, 1)
+  tr 1 w1 1 s_R (1, 0, 0)
+  tr 1 w1 1 s_R (0, 1, 0)
+  tr -1 w1 1 s_R (0, 0, 1)
+  tr 0 w1 0 s_R (1, 1, 0)
+  tr 0 w1 0 s_R (1, 0, 1)
+  tr 0 w1 0 s_R (0, 1, 1)
+  tr 0 w1 0 s_R (0, 0, 0)
+  tr 0 w1 0 s_R (0, 1, 1)
+  tr 0 w1 0 s_R (0, 0, 0)
+  tr 0 w1 0 s_R (1, 1, 0)
+  tr 0 w1 0 s_R (1, 0, 1)
+  tr 1 w1 1 s_R (0, 0, 1)
+  tr -1 w1 1 s_R (0, 1, 0)
+  tr 1 w1 1 s_R (1, 0, 0)
+  tr -1 w1 1 s_R (1, 1, 1)
+distinct shift classes: [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)] count 8
+Bloch cross-check M_R B(k) = B(Rk + pi s_R) U: True
+fixed momenta (units of pi), L=4 grid (N=2): [(np.float64(0.5), np.float64(-0.5), np.float64(0.5)), (np.float64(-0.5), np.float64(0.5), np.float64(-0.5))]
+fixed momenta with all s_R = 0, N=2: [(np.float64(0.0), np.float64(0.0), np.float64(0.0)), (np.float64(-1.0), np.float64(-1.0), np.float64(-1.0))]
+same affine action on finer grid pi/4: [(np.float64(0.5), np.float64(-0.5), np.float64(0.5)), (np.float64(-0.5), np.float64(0.5), np.float64(-0.5))] | linear: [(np.float64(0.0), np.float64(0.0), np.float64(0.0)), (np.float64(-1.0), np.float64(-1.0), np.float64(-1.0))]
+same affine action on finer grid pi/6: [(np.float64(0.5), np.float64(-0.5), np.float64(0.5)), (np.float64(-0.5), np.float64(0.5), np.float64(-0.5))] | linear: [(np.float64(0.0), np.float64(0.0), np.float64(0.0)), (np.float64(-1.0), np.float64(-1.0), np.float64(-1.0))]
+same affine action on finer grid pi/12: [(np.float64(0.5), np.float64(-0.5), np.float64(0.5)), (np.float64(-0.5), np.float64(0.5), np.float64(-0.5))] | linear: [(np.float64(0.0), np.float64(0.0), np.float64(0.0)), (np.float64(-1.0), np.float64(-1.0), np.float64(-1.0))]

@@ -3,3 +3,18 @@
 [PASS] N1 scalar: [V_xi, V_eta] = V_[xi,eta]
 [PASS] N1 Maxwell one-form: [V_xi, V_eta] = V_[xi,eta]
 [PASS] N1 weights: lam_m, lam_A in {0,1}, nu = 1, lam1 free
+[PASS] N2 [L_xi,L_eta] - L_[xi,eta] = -(i/2) eps_kij (S_xi S_eta)_ij sigma_k (generic quadratic polynomial fields)
+[PASS] N2 sign control (+i/2 fails)
+[PASS] N2 remainder is on-site (no d psi)
+[PASS] N2 remainder vanishes also for a (non-Killing) conformal Killing field (special conformal)
+[PASS] N2 remainder vanishes for dilation
+[PASS] N2 remainder nonzero in general
+[PASS] Y8 [A xi, A eta] = A((A xi).grad eta - (A eta).grad xi)
+[PASS] Y8 solutions of [A xi, A eta] = A[xi,eta]: A = 0 or A = I
+[PASS] Y9 O_h (48 elements): invariant symmetric 2-tensor is t*delta
+[PASS] Y9 O (det=+1) (24 elements): invariant symmetric 2-tensor is t*delta
+TOTAL 15/15
+
+real	0m19.228s
+user	0m18.211s
+sys	0m0.123s

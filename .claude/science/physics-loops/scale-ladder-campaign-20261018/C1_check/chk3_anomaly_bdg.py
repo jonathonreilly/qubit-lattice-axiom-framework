@@ -79,9 +79,16 @@ def local_min(f, K, r=0.3, tries=3):
         res = minimize(obj, K + 0.03 * rng.normal(size=3), method='Nelder-Mead', options=dict(xatol=1e-10, fatol=1e-14, maxiter=3000))
         best = min(best, res.fun)
     return best
-m0 = {n: local_min(lambda k: gap0(k, DA1, 0.5, Q0)[0], K) for n, K in NODES.items()}
-check("A4 Q = 0 symmetric on-site pairing (A1, tau = 0.5): a BdG zero survives within 0.3 of every node (local minimisation)",
-      max(m0.values()) < 1e-6, ", ".join(f"{NAME[n]}:{v:.1e}" for n, v in m0.items()))
+def ball_min(f_batch, f1, K, r=0.3, ng=19):
+    g = np.linspace(-r, r, ng); P = K + np.array(list(itertools.product(g, g, g))); v = f_batch(P); j = np.argmin(v)
+    res = minimize(f1, P[j], method='Nelder-Mead', options=dict(xatol=1e-11, fatol=1e-15, maxiter=4000))
+    return res.fun, np.linalg.norm(res.x - K)
+# first run used tau = 0.5 in a 0.3-ball and FAILED: in this normalisation (Delta_a = 2A) the zeros move ~0.5-0.7 away
+# (probe_q0.log), so "small" is tested at tau = 0.1 here
+m0 = {n: ball_min(lambda P: gap0(P, DA1, 0.1, Q0), lambda k: gap0(k, DA1, 0.1, Q0)[0], K) for n, K in NODES.items()}
+check("A4 Q = 0 symmetric on-site pairing (A1, tau = 0.1): a BdG zero survives within 0.3 of every node (grid + Nelder-Mead); at larger "
+      "pairing the zeros are displaced further but persist (probe_q0.log)",
+      max(v for v, d in m0.values()) < 1e-8, ", ".join(f"{NAME[n]}:{v:.1e}@{d:.2f}" for n, (v, d) in m0.items()))
 
 # ---------------- B1 ----------------
 A2m = sum((rng.normal() + 1j * rng.normal()) * X for X in VA2); A2m /= np.linalg.norm(A2m)

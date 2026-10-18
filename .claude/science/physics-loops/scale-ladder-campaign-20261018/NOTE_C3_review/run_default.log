@@ -3,3 +3,116 @@
 [PASS] B0_L4  (S) + Jacobi => Lam_(-1) + Lam_1 in the ideal (Groebner membership, checker generator, 4 vars)
 [PASS] B0_L5  (S) + Jacobi => Lam_(-1) + Lam_1 in the ideal (Groebner membership, checker generator, 8 vars)
 [PASS] B0_L6  (S) + Jacobi => Lam_(-1) + Lam_1 in the ideal (Groebner membership, checker generator, 13 vars)
+[PASS] B0_L7  (S) + Jacobi => Lam_(-1) + Lam_1 in the ideal (Groebner membership, checker generator, 19 vars)
+[PASS] B1_L4  consistent Lam_2/Lam_1 on a 20-point grid = ['0'] = arc prediction {0,...,-(L-4)/2} on the grid; 2 excluded; all <= 0 (0.1s)
+[PASS] B1_L5  consistent Lam_2/Lam_1 on a 20-point grid = ['-1/2', '0'] = arc prediction {0,...,-(L-4)/2} on the grid; 2 excluded; all <= 0 (0.5s)
+[PASS] B1_L6  consistent Lam_2/Lam_1 on a 20-point grid = ['-1', '-1/2', '0'] = arc prediction {0,...,-(L-4)/2} on the grid; 2 excluded; all <= 0 (1.4s)
+[PASS] B1_L7  consistent Lam_2/Lam_1 on a 20-point grid = ['-1', '-1/2', '-3/2', '0'] = arc prediction {0,...,-(L-4)/2} on the grid; 2 excluded; all <= 0 (16.8s)
+[PASS] B2_L4  lex elimination: projection of (S)+Jacobi to (Lam_2..Lam_2) is finite, 1 points = the 1 arc partitions (0.0s)
+[PASS] B2_L5  lex elimination: projection of (S)+Jacobi to (Lam_2..Lam_3) is finite, 2 points = the 2 arc partitions (0.1s)
+[PASS] B2_L6  lex elimination: projection of (S)+Jacobi to (Lam_2..Lam_4) is finite, 4 points = the 4 arc partitions (0.1s)
+[PASS] B2_L7  lex elimination: projection of (S)+Jacobi to (Lam_2..Lam_5) is finite, 8 points = the 8 arc partitions (2.6s)
+[PASS] B3_PC1  control: L = 3, Lam = (1,-1) is consistent (sl2 itself: the L = 3 exception)
+[PASS] B3_PC2  control: L = 5, Lam_(+-2) = -+1/2 consistent: sl2 |x C^2 (special affine); (i) is sharp
+[PASS] B3_PC3  control: L = 4, Lam_2 = 0 consistent (sl2 (+) C X_2; violates (Z))
+[PASS] B3_Z_L4  (S)+(W)+(Z), other Lam free: Groebner basis = [1] (4 vars, 0.0s)
+[PASS] B3_Z_L5  (S)+(W)+(Z), other Lam free: Groebner basis = [1] (8 vars, 0.0s)
+[PASS] B3_Z_L6  (S)+(W)+(Z), other Lam free: Groebner basis = [1] (13 vars, 0.1s)
+[PASS] B3_Z_L7  (S)+(W)+(Z), other Lam free: Groebner basis = [1] (19 vars, 0.8s)
+[PASS] B3_Z_L8  (S)+(W)+(Z), other Lam free: Groebner basis = [1] (26 vars, 3.8s)
+[PASS] B3_Z_L9  (S)+(W)+(Z), other Lam free: Groebner basis = [1] (34 vars, 19.7s)
+[PASS] B3_noZ_L4  (S)+(W) without (Z): Groebner basis = [1] (3 vars, 0.0s)
+[PASS] B3_noZ_L5  (S)+(W) without (Z): Groebner basis = [1] (7 vars, 0.0s)
+[PASS] B3_noZ_L6  (S)+(W) without (Z): Groebner basis = [1] (12 vars, 0.1s)
+[PASS] B3_noZ_L7  (S)+(W) without (Z): Groebner basis = [1] (18 vars, 0.5s)
+[PASS] B3_noZ_L8  (S)+(W) without (Z): Groebner basis = [1] (25 vars, 3.2s)
+[PASS] B3_noZ_L9  (S)+(W) without (Z): Groebner basis = [1] (33 vars, 19.6s)
+[PASS] B3_SLAC_L5  SLAC/continuum spectrum Lam_n = nbar on the whole zone: inconsistent (5 vars)
+[PASS] B3_SLAC_L7  SLAC/continuum spectrum Lam_n = nbar on the whole zone: inconsistent (14 vars)
+[PASS] B3_SLAC_L9  SLAC/continuum spectrum Lam_n = nbar on the whole zone: inconsistent (27 vars)
+[PASS] B3_Q_L5  L = 5, (S)+(Z), Lam_2 free: elimination ideal lam2 + 1/2 (2 Lam_2/Lam_1 odd)
+[PASS] B4_L3  all 1 arc partitions realised as sl2 |x (sum V_m): exact Jacobi, Lam_n = n - centre, integer weights, phi-fixed momenta = {0,+-1}, delta additive; Lam_2 set = []
+[PASS] B4_L4  all 1 arc partitions realised as sl2 |x (sum V_m): exact Jacobi, Lam_n = n - centre, integer weights, phi-fixed momenta = {0,+-1}, delta additive; Lam_2 set = ['0']
+[PASS] B4_L5  all 2 arc partitions realised as sl2 |x (sum V_m): exact Jacobi, Lam_n = n - centre, integer weights, phi-fixed momenta = {0,+-1}, delta additive; Lam_2 set = ['-1/2', '0']
+[PASS] B4_L6  all 4 arc partitions realised as sl2 |x (sum V_m): exact Jacobi, Lam_n = n - centre, integer weights, phi-fixed momenta = {0,+-1}, delta additive; Lam_2 set = ['-1', '-1/2', '0']
+[PASS] B4_L7  all 8 arc partitions realised as sl2 |x (sum V_m): exact Jacobi, Lam_n = n - centre, integer weights, phi-fixed momenta = {0,+-1}, delta additive; Lam_2 set = ['-1', '-1/2', '-3/2', '0']
+[PASS] B4_L8  all 16 arc partitions realised as sl2 |x (sum V_m): exact Jacobi, Lam_n = n - centre, integer weights, phi-fixed momenta = {0,+-1}, delta additive; Lam_2 set = ['-1', '-1/2', '-2', '-3/2', '0']
+[PASS] B4_L9  all 32 arc partitions realised as sl2 |x (sum V_m): exact Jacobi, Lam_n = n - centre, integer weights, phi-fixed momenta = {0,+-1}, delta additive; Lam_2 set = ['-1', '-1/2', '-2', '-3/2', '-5/2', '0']
+[PASS] B4_L10  all 64 arc partitions realised as sl2 |x (sum V_m): exact Jacobi, Lam_n = n - centre, integer weights, phi-fixed momenta = {0,+-1}, delta additive; Lam_2 set = ['-1', '-1/2', '-2', '-3', '-3/2', '-5/2', '0']
+[PASS] B4_L11  all 128 arc partitions realised as sl2 |x (sum V_m): exact Jacobi, Lam_n = n - centre, integer weights, phi-fixed momenta = {0,+-1}, delta additive; Lam_2 set = ['-1', '-1/2', '-2', '-3', '-3/2', '-5/2', '-7/2', '0']
+[PASS] B4_L12  all 256 arc partitions realised as sl2 |x (sum V_m): exact Jacobi, Lam_n = n - centre, integer weights, phi-fixed momenta = {0,+-1}, delta additive; Lam_2 set = ['-1', '-1/2', '-2', '-3', '-3/2', '-4', '-5/2', '-7/2', '0']
+
+=== Part A: Theorem A, SLAC sub-brackets, band-limited window (exact) ===
+[PASS] A1_B14_central  finite range on Z: f(zy,z) is a nonzero Laurent polynomial and d(zy)-d(z) has a nonconstant z-part, so f [d(zy)-d(z)-C(y)] = 0 has no solution C(y) for y != 1: [D, X_p] not in span X_p
+[PASS] A1_imp4  finite range on Z: f(zy,z) is a nonzero Laurent polynomial and d(zy)-d(z) has a nonconstant z-part, so f [d(zy)-d(z)-C(y)] = 0 has no solution C(y) for y != 1: [D, X_p] not in span X_p
+[PASS] A1_rand_r3  finite range on Z: f(zy,z) is a nonzero Laurent polynomial and d(zy)-d(z) has a nonconstant z-part, so f [d(zy)-d(z)-C(y)] = 0 has no solution C(y) for y != 1: [D, X_p] not in span X_p
+[PASS] A2_L5_w0  SLAC no-wrap: [Y_0, Y_p] = pbar Y_p exactly for every p (Theorem A sub-bracket closes)
+[PASS] A2_L5_w1/2  SLAC no-wrap: [Y_0, Y_p] = pbar Y_p exactly for every p (Theorem A sub-bracket closes)
+[PASS] A2_L5_w-1  SLAC no-wrap: [Y_0, Y_p] = pbar Y_p exactly for every p (Theorem A sub-bracket closes)
+[PASS] A3_L5  aliased SLAC (f kept on the wrap set): [Y_0, Y_p] not in span Y_p for all 4 p != 0
+[PASS] A2_L7_w0  SLAC no-wrap: [Y_0, Y_p] = pbar Y_p exactly for every p (Theorem A sub-bracket closes)
+[PASS] A2_L7_w1/2  SLAC no-wrap: [Y_0, Y_p] = pbar Y_p exactly for every p (Theorem A sub-bracket closes)
+[PASS] A2_L7_w-1  SLAC no-wrap: [Y_0, Y_p] = pbar Y_p exactly for every p (Theorem A sub-bracket closes)
+[PASS] A3_L7  aliased SLAC (f kept on the wrap set): [Y_0, Y_p] not in span Y_p for all 6 p != 0
+[PASS] A2_L9_w0  SLAC no-wrap: [Y_0, Y_p] = pbar Y_p exactly for every p (Theorem A sub-bracket closes)
+[PASS] A2_L9_w1/2  SLAC no-wrap: [Y_0, Y_p] = pbar Y_p exactly for every p (Theorem A sub-bracket closes)
+[PASS] A2_L9_w-1  SLAC no-wrap: [Y_0, Y_p] = pbar Y_p exactly for every p (Theorem A sub-bracket closes)
+[PASS] A3_L9  aliased SLAC (f kept on the wrap set): [Y_0, Y_p] not in span Y_p for all 8 p != 0
+[PASS] A4_L9_n1_w0  |a|,|b| <= 1: [Y_a,Y_b] e_k = (b-a) Y_(a+b) e_k exactly for |k| <= 2; fails for some band-edge k; window not invariant
+[PASS] A4_L9_n1_w1/2  |a|,|b| <= 1: [Y_a,Y_b] e_k = (b-a) Y_(a+b) e_k exactly for |k| <= 2; fails for some band-edge k; window not invariant
+[PASS] A4_L9_n1_w-1  |a|,|b| <= 1: [Y_a,Y_b] e_k = (b-a) Y_(a+b) e_k exactly for |k| <= 2; fails for some band-edge k; window not invariant
+[PASS] A4_L13_n2_w0  |a|,|b| <= 2: [Y_a,Y_b] e_k = (b-a) Y_(a+b) e_k exactly for |k| <= 2; fails for some band-edge k; window not invariant
+[PASS] A4_L13_n2_w1/2  |a|,|b| <= 2: [Y_a,Y_b] e_k = (b-a) Y_(a+b) e_k exactly for |k| <= 2; fails for some band-edge k; window not invariant
+[PASS] A4_L13_n2_w-1  |a|,|b| <= 2: [Y_a,Y_b] e_k = (b-a) Y_(a+b) e_k exactly for |k| <= 2; fails for some band-edge k; window not invariant
+[PASS] A4_L17_n3_w0  |a|,|b| <= 3: [Y_a,Y_b] e_k = (b-a) Y_(a+b) e_k exactly for |k| <= 2; fails for some band-edge k; window not invariant
+[PASS] A4_L17_n3_w1/2  |a|,|b| <= 3: [Y_a,Y_b] e_k = (b-a) Y_(a+b) e_k exactly for |k| <= 2; fails for some band-edge k; window not invariant
+[PASS] A4_L17_n3_w-1  |a|,|b| <= 3: [Y_a,Y_b] e_k = (b-a) Y_(a+b) e_k exactly for |k| <= 2; fails for some band-edge k; window not invariant
+[PASS] A4_L25_n4_w0  |a|,|b| <= 4: [Y_a,Y_b] e_k = (b-a) Y_(a+b) e_k exactly for |k| <= 4; fails for some band-edge k; window not invariant
+[PASS] A4_L25_n4_w1/2  |a|,|b| <= 4: [Y_a,Y_b] e_k = (b-a) Y_(a+b) e_k exactly for |k| <= 4; fails for some band-edge k; window not invariant
+[PASS] A4_L25_n4_w-1  |a|,|b| <= 4: [Y_a,Y_b] e_k = (b-a) Y_(a+b) e_k exactly for |k| <= 4; fails for some band-edge k; window not invariant
+[PASS] A5_L5_w0  Lam_1 = 1, Lam_2 = 2, [Y_1,Y_-1] != 0; 12 ordered pairs (p,q) with [Y_p,Y_q] not in span Y_(p+q)
+[PASS] A5_L5_w1/2  Lam_1 = 1, Lam_2 = 2, [Y_1,Y_-1] != 0; 12 ordered pairs (p,q) with [Y_p,Y_q] not in span Y_(p+q)
+[PASS] A5_L5_w-1  Lam_1 = 1, Lam_2 = 2, [Y_1,Y_-1] != 0; 12 ordered pairs (p,q) with [Y_p,Y_q] not in span Y_(p+q)
+[PASS] A5_L7_w0  Lam_1 = 1, Lam_2 = 2, [Y_1,Y_-1] != 0; 26 ordered pairs (p,q) with [Y_p,Y_q] not in span Y_(p+q)
+[PASS] A5_L7_w1/2  Lam_1 = 1, Lam_2 = 2, [Y_1,Y_-1] != 0; 26 ordered pairs (p,q) with [Y_p,Y_q] not in span Y_(p+q)
+[PASS] A5_L7_w-1  Lam_1 = 1, Lam_2 = 2, [Y_1,Y_-1] != 0; 26 ordered pairs (p,q) with [Y_p,Y_q] not in span Y_(p+q)
+[PASS] A5_L9_w0  Lam_1 = 1, Lam_2 = 2, [Y_1,Y_-1] != 0; 48 ordered pairs (p,q) with [Y_p,Y_q] not in span Y_(p+q)
+[PASS] A5_L9_w1/2  Lam_1 = 1, Lam_2 = 2, [Y_1,Y_-1] != 0; 48 ordered pairs (p,q) with [Y_p,Y_q] not in span Y_(p+q)
+[PASS] A5_L9_w-1  Lam_1 = 1, Lam_2 = 2, [Y_1,Y_-1] != 0; 48 ordered pairs (p,q) with [Y_p,Y_q] not in span Y_(p+q)
+[PASS] A5_L3_wm1  L = 3, w = -1: closes exactly, [Y_1,Y_-1] != 0 (the sl2 exception)
+[PASS] A5_L3_w0  L = 3, w = 0: closes only degenerately, [Y_1,Y_-1] = 0 ((S) fails)
+
+=== Part C: Theorem C, the uniform part of {G, C} is a lattice Leibniz rule ===
+[PASS] C1_L4  full support: lam(k1)+lam(k2) = lam'(k1+k2) for all k1,k2 has solution space span{lam = 1, lam' = 2} (dim 1); lam(0) = 0 (D kills constants) => lam = 0
+[PASS] C1_L5  full support: lam(k1)+lam(k2) = lam'(k1+k2) for all k1,k2 has solution space span{lam = 1, lam' = 2} (dim 1); lam(0) = 0 (D kills constants) => lam = 0
+[PASS] C1_L6  full support: lam(k1)+lam(k2) = lam'(k1+k2) for all k1,k2 has solution space span{lam = 1, lam' = 2} (dim 1); lam(0) = 0 (D kills constants) => lam = 0
+[PASS] C1_L7  full support: lam(k1)+lam(k2) = lam'(k1+k2) for all k1,k2 has solution space span{lam = 1, lam' = 2} (dim 1); lam(0) = 0 (D kills constants) => lam = 0
+[PASS] C1_L8  full support: lam(k1)+lam(k2) = lam'(k1+k2) for all k1,k2 has solution space span{lam = 1, lam' = 2} (dim 1); lam(0) = 0 (D kills constants) => lam = 0
+[PASS] C1_L9  full support: lam(k1)+lam(k2) = lam'(k1+k2) for all k1,k2 has solution space span{lam = 1, lam' = 2} (dim 1); lam(0) = 0 (D kills constants) => lam = 0
+[PASS] C2_L5  no-wrap (anti-aliased) support: solution space dim 2 = span{const, kbar}, contains SLAC lam = lam' = kbar
+[PASS] C2_L7  no-wrap (anti-aliased) support: solution space dim 2 = span{const, kbar}, contains SLAC lam = lam' = kbar
+[PASS] C2_L9  no-wrap (anti-aliased) support: solution space dim 2 = span{const, kbar}, contains SLAC lam = lam' = kbar
+[PASS] C3_B14_uniform  1D, L = 5: {G_m[xi=1], (1/2) sum N pi^2} = (1/2) sum (N_(x+1)-N_x) pi_x pi_(x+1), whose off-diagonal part equals that of the companion note's ob at xi = 1; H_m(N') has no pi_x pi_(x+1) term, and at uniform xi G_g and every coupling vanish, so the uniform part fails (full-support pi product, D = central != 0: Theorem C)
+[PASS] F_C4_L7  float: {P, H(N)} = H(N') closes for SLAC + anti-aliased density with N' = +D_SLAC N (residual 9.9e-15, |N'-DN| 6.2e-15); fails for SLAC + ultralocal (0.88) and central D (0.85, 0.61)
+[PASS] F_C4_L9  float: {P, H(N)} = H(N') closes for SLAC + anti-aliased density with N' = +D_SLAC N (residual 1.3e-14, |N'-DN| 2.9e-15); fails for SLAC + ultralocal (0.92) and central D (0.85, 0.71)
+[PASS] F_C4_L11  float: {P, H(N)} = H(N') closes for SLAC + anti-aliased density with N' = +D_SLAC N (residual 1.7e-14, |N'-DN| 3.5e-15); fails for SLAC + ultralocal (0.90) and central D (0.89, 0.70)
+
+=== Part S: the 2D sine (Fairlie-Fletcher-Zachos) algebra ===
+[PASS] S0_N5  exact monomial matrices: J_p J_q = omega^(p2 q1) J_(p+q) for all p, q in Z_N^2
+[PASS] S1_N5  exact closure: [X_p, X_r] = kappa c(p,r) X_(p+r) (Jacobi in Z[omega], all 15625 triples)
+[PASS] S2_N5  Weyl basis: J'_p J'_q = zeta^s J'_(p+q), s = p2 q1 - p1 q2, so [J'_p, J'_q] = 2i sin(pi s/N) J'_(p+q) (exact, |p_i|,|q_i| <= 1)
+[PASS] S4_N5  Jacobi with an adjoined diagonal D, (Lam(p)+Lam(q)-Lam(p+q)) c(p,q) = 0, has rank 24 = 24 unknowns: Lam = 0, so no uniform translation can be adjoined
+[PASS] S0_N7  exact monomial matrices: J_p J_q = omega^(p2 q1) J_(p+q) for all p, q in Z_N^2
+[PASS] S1_N7  exact closure: [X_p, X_r] = kappa c(p,r) X_(p+r) (Jacobi in Z[omega], all 117649 triples)
+[PASS] S2_N7  Weyl basis: J'_p J'_q = zeta^s J'_(p+q), s = p2 q1 - p1 q2, so [J'_p, J'_q] = 2i sin(pi s/N) J'_(p+q) (exact, |p_i|,|q_i| <= 1)
+[PASS] S4_N7  Jacobi with an adjoined diagonal D, (Lam(p)+Lam(q)-Lam(p+q)) c(p,q) = 0, has rank 48 = 48 unknowns: Lam = 0, so no uniform translation can be adjoined
+[PASS] S3  p = (1,2), q = (2,-1), s = 5: raw basis kappa c = s + (15*I*pi) eps + ... (O(a)); Weyl basis (N/pi) sin(pi s/N) = s - pi^2 s^3 eps^2/6 + ... (O(a^2)); the O(a) is a basis artefact
+[PASS] F_S5_N5  float: the relabelling generated by a site-localised stream function reaches torus distance 2 = N//2 (non-local)
+[PASS] F_S5_N7  float: the relabelling generated by a site-localised stream function reaches torus distance 3 = N//2 (non-local)
+
+[runtime 80.6s]
+TOTAL: PASS=103 FAIL=0
+
+real	1m21.895s
+user	1m7.093s
+sys	0m0.127s

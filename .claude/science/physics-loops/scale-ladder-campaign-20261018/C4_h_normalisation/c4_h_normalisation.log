@@ -11,3 +11,12 @@
 == Part B: the member's lapse identity with K1 != K2 and source strength a_s
 [PASS] B1: R1, R2 invariant under h -> h + p xi + xi p; p_i dR2/dh_ij = 0 (block 62 T3(b))
 [PASS] B2: at beta = -alpha: e_u'' = -(K1 a_s/(4 alpha)) p.Theta.p identically; no K2, no h, no u dependence
+[PASS] B3: control: for generic beta the identity acquires trace terms (vanishing only at beta = -alpha)
+[PASS] B4: TT disturbance: omega^2 = K2*P**2/(4*alpha) (K1 does not enter: R1 vanishes on TT)
+[PASS] B5a: Phi_rho: the member+source in h = rho h' is the member+source in h' with (rho K1, rho^2 K2, rho^2 alpha, rho a_s)
+[PASS] B5b: invariance under Phi_rho: {'K1 a_s/alpha (lapse identity, B2)': True, 'K2/alpha (TT cone, B4)': True, 'K1 a_s/K2': True, 'K1/K2': False, 'a_s': False}
+[PASS] B6: static pull: lam = e/(4 K1 p^2), u = -(K2/K1) lam; the matter's space/time curvature ratio gamma = K1*a_s/K2 (Phi_rho-invariant); block 62 (K1 = K2, a_s = 1) gives gamma = 1
+== Part C: R1, R2 are the expansion of sqrt(g) R for g = delta + h (plane-wave route)
+[PASS] C1: order-1 part of sqrt(g)R[delta + h] is R1(h) pointwise (unit coefficient), four amplitudes at p = (1,2,2)
+[PASS] C2: period average of the order-2 part / block-62 R2(A) = ['0=0', 1/2, 1/2, 1/2] (1/2 = <cos^2>): R2 is [sqrt(g)R]^(2) of delta + h
+TOTAL: PASS=18 FAIL=0  (92.7 s)

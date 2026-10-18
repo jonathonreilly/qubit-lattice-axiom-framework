@@ -1,0 +1,13 @@
+# Native plane-symmetry mobility test
+
+Conditional exact support for the supplied cubic compass candidate, not a universal one-qubit-grid no-go. Root derivation.
+
+For each plane x_a=k, P_(a,k)=product_(x_a=k) sigma_x^a. Every native bond commutes with P: a-directed bonds carry the same Pauli at their intersection, while transverse bonds have either zero or two anticommuting endpoints. Thus [P,H]=0 on open boxes and usual periodic boxes. Plane operators in different directions may anticommute; simultaneous sharp values of all planes are not assumed.
+
+For a Pauli-string feature F define epsilon_(a,k)(F)=+1 or -1 by P F P=epsilon F. Evolution preserves this sign. If rho is invariant under P, then any two-point function Tr rho F_r(t) F_0† equals epsilon(F_r)epsilon(F_0) times itself. It vanishes whenever one plane sign disagrees. The same applies to its commutator, so no linear response propagator connects those positions in that channel.
+
+For local sigma^b the minus signs occur on the two planes normal to a!=b through the site. Consequently two identical spin components can have nonzero two-point propagation only along the b direction. This is an operator/state symmetry restriction, not a claim that all energy or information is one-dimensional.
+
+For a finite supported Pauli string on an infinite lattice, the minus-sign pattern in each plane family is finite. Translation by r_a shifts that pattern by r_a. A nonempty finite pattern cannot equal a nonzero translate. Therefore a feature charged in family a has zero coherent translated two-point function whenever r_a!=0, in a state invariant under the relevant planes. Simply enlarging a charged feature does not remove this selection rule. It can become neutral by pairing charges within each family; that is a different operator sector whose dynamics still need solving.
+
+This offers a concrete split for large features: unrestricted three-dimensional mobility must lie in the fully plane-neutral operator sector (or use a state/preparation that breaks the needed invariances, or a changed Hamiltonian). Neutrality is only necessary under these premises, not sufficient for fermionic statistics, stability, a scalar pole or Lorentz covariance. Composite C studied earlier is plane neutral. One cannot infer the full invariance of a numerically selected CSS sector from H symmetry alone; Gibbs states and the normalized full ground-projector are invariant. A spontaneously selected phase or non-invariant pure state requires a separate analysis. Thermodynamic plane operators need finite-volume limiting control; the exact finite-box identities precede that limit.

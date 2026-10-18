@@ -1,4 +1,4 @@
-# Stationary milestone claim certificate
+# Neutral bond algebra milestone claim certificate
 
 actual_current_surface_status: bounded-support
 trace_class: upstream_support
@@ -12,4 +12,4 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 review_loop_disposition: pass
 
-Focused independent mathematical and source checks passed, with scope qualifications incorporated. Root aggregate replay is an integration gate before publication. No empirical data were used; all numerical geometries and choices are exposed development inputs. Finite lowest Ritz values are not interval-certified ground energies.
+Focused independent mathematical and source checks passed, with scope qualifications incorporated. Root aggregate replay passed all8probes in68.54s. No empirical data were used; all numerical geometries and choices are exposed development inputs. Finite lowest Ritz values are not interval-certified ground energies.

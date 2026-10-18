@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/native_neutral_bond_algebra.py
+runner_sha256: a518b334a40e5fdd2062daa8f911ba99961024b2c29750c7b155e7d209894c6a
+input_fingerprint_sha256: 004aad18f64eb00d212c9f154ae6c5b1f7821872eddbc1f290c2f0feb8afbd32
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 68.54
+status: ok
+----- stdout -----
+reproduced compass_sector_solve
+reproduced neutral_extra_sector_control
+reproduced neutral_extra_sector_response
+reproduced neutral_mode_symmetry_labels
+reproduced neutral_plane_mobility_control
+reproduced neutral_bond_algebra
+reproduced neutral_collective_basis
+reproduced neutral_quadratic_scalar_basis
+per_site: one physical qubit, unchanged native interaction
+per_mode: finite eigenpair residuals and source mixtures recorded
+per_block: complete plane-neutral bond algebra, no dynamical closure implied
+lattice_wide: bulk and observational identification remain open
+
+----- stderr -----
+

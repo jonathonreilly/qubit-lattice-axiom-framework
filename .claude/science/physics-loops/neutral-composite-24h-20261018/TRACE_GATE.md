@@ -1,11 +1,11 @@
-# Stationary neutral composite trace gate
+# Neutral bond algebra trace gate
 
 trace_class: upstream_support
 target_claim_id: null
 target_blocker_text: "derive the scalar mode and its coupling without adding a new interaction"
 source_of_blocker_text: user_goal
 reachability_to_target: supports
-artifact_role: frontier_probe
-next_trace_action: Establish a bulk large-feature channel and physical source identification; finite response does not close these.
+artifact_role: theorem
+next_trace_action: Test field-like internal excitation structure and bulk propagation in the derived neutral operator space.
 
-The supplied compass Hamiltonian has a nonzero composite/local-energy response in an actual finite stationary numerical eigenvector. This removes variational background drift from this particular finite diagnostic. It does not derive the Hamiltonian, selected physical state, scalar pole, cosmological field, or universal matter coupling. Exact sector algebra and numerical spectral accuracy are separately reported.
+Exact finite neutral algebra is constructed from existing bonds, reducing an arbitrary operator-choice import to a complete algebraic search space. It does not derive a physical source selector or a mode. Numerical source optimizations and resolved finite spectra remain conditional on supplied H, state and geometry; no observational identification is retired.

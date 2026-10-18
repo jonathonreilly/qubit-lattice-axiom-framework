@@ -1,0 +1,318 @@
+{
+  "plane_commutator_error": 0.0,
+  "rows": [
+    {
+      "component": 0,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "forbidden": false,
+      "response": [
+        0.3361144905749613,
+        0.09265402919181857
+      ]
+    },
+    {
+      "component": 0,
+      "position": [
+        0,
+        0,
+        1
+      ],
+      "forbidden": true,
+      "response": [
+        -7.632783294297951e-17,
+        -9.224527608778232e-17
+      ]
+    },
+    {
+      "component": 0,
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "forbidden": true,
+      "response": [
+        6.7220534694101275e-18,
+        3.107594476886577e-17
+      ]
+    },
+    {
+      "component": 0,
+      "position": [
+        0,
+        1,
+        1
+      ],
+      "forbidden": true,
+      "response": [
+        -3.010693907720685e-17,
+        -5.2146736364763746e-17
+      ]
+    },
+    {
+      "component": 0,
+      "position": [
+        1,
+        0,
+        0
+      ],
+      "forbidden": false,
+      "response": [
+        0.11539286918615133,
+        0.060082871852984485
+      ]
+    },
+    {
+      "component": 0,
+      "position": [
+        1,
+        0,
+        1
+      ],
+      "forbidden": true,
+      "response": [
+        -9.562663161322149e-17,
+        -9.932647152682827e-17
+      ]
+    },
+    {
+      "component": 0,
+      "position": [
+        1,
+        1,
+        0
+      ],
+      "forbidden": true,
+      "response": [
+        -6.193504910323444e-18,
+        2.953095667307393e-17
+      ]
+    },
+    {
+      "component": 0,
+      "position": [
+        1,
+        1,
+        1
+      ],
+      "forbidden": true,
+      "response": [
+        -4.366624249685369e-17,
+        -6.021726628620272e-17
+      ]
+    },
+    {
+      "component": 1,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "forbidden": false,
+      "response": [
+        0.33611449057496146,
+        0.09265402919181875
+      ]
+    },
+    {
+      "component": 1,
+      "position": [
+        0,
+        0,
+        1
+      ],
+      "forbidden": true,
+      "response": [
+        -4.6241222656506764e-17,
+        -1.3891340334970526e-17
+      ]
+    },
+    {
+      "component": 1,
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "forbidden": false,
+      "response": [
+        0.11539286918615148,
+        0.060082871852984686
+      ]
+    },
+    {
+      "component": 1,
+      "position": [
+        0,
+        1,
+        1
+      ],
+      "forbidden": true,
+      "response": [
+        -4.853159974588239e-17,
+        1.7089736743802764e-17
+      ]
+    },
+    {
+      "component": 1,
+      "position": [
+        1,
+        0,
+        0
+      ],
+      "forbidden": true,
+      "response": [
+        -6.16911036144252e-17,
+        2.5343225781848666e-17
+      ]
+    },
+    {
+      "component": 1,
+      "position": [
+        1,
+        0,
+        1
+      ],
+      "forbidden": true,
+      "response": [
+        -2.0599841277224584e-17,
+        3.7608262858090935e-19
+      ]
+    },
+    {
+      "component": 1,
+      "position": [
+        1,
+        1,
+        0
+      ],
+      "forbidden": true,
+      "response": [
+        -5.003593026020603e-17,
+        3.4084605797513046e-17
+      ]
+    },
+    {
+      "component": 1,
+      "position": [
+        1,
+        1,
+        1
+      ],
+      "forbidden": true,
+      "response": [
+        -3.0330555775281987e-17,
+        -3.455216798439742e-17
+      ]
+    },
+    {
+      "component": 2,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "forbidden": false,
+      "response": [
+        0.33611449057496157,
+        0.09265402919181875
+      ]
+    },
+    {
+      "component": 2,
+      "position": [
+        0,
+        0,
+        1
+      ],
+      "forbidden": false,
+      "response": [
+        0.11539286918615158,
+        0.06008287185298472
+      ]
+    },
+    {
+      "component": 2,
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "forbidden": true,
+      "response": [
+        -2.9509272629624217e-16,
+        -2.0729013801680865e-16
+      ]
+    },
+    {
+      "component": 2,
+      "position": [
+        0,
+        1,
+        1
+      ],
+      "forbidden": true,
+      "response": [
+        -2.5717275531356165e-16,
+        -2.057544672834366e-16
+      ]
+    },
+    {
+      "component": 2,
+      "position": [
+        1,
+        0,
+        0
+      ],
+      "forbidden": true,
+      "response": [
+        8.261620554339544e-17,
+        -4.834864062927546e-18
+      ]
+    },
+    {
+      "component": 2,
+      "position": [
+        1,
+        0,
+        1
+      ],
+      "forbidden": true,
+      "response": [
+        7.161155349266757e-17,
+        1.665774994070307e-17
+      ]
+    },
+    {
+      "component": 2,
+      "position": [
+        1,
+        1,
+        0
+      ],
+      "forbidden": true,
+      "response": [
+        -1.428436362249652e-17,
+        1.3745820074632237e-16
+      ]
+    },
+    {
+      "component": 2,
+      "position": [
+        1,
+        1,
+        1
+      ],
+      "forbidden": true,
+      "response": [
+        -1.940721888749053e-17,
+        1.507989696655776e-16
+      ]
+    }
+  ],
+  "scope": "Dense8site Gibbs stationary control; not the selected27site pure state, and not a bulk spectrum"
+}

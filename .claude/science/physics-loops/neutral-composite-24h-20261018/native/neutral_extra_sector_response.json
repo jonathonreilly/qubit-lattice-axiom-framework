@@ -1,0 +1,146 @@
+{
+  "projection_norm_squared": 0.999999999999995,
+  "ground_residual": 1.283443342340292e-13,
+  "dimension": 1048576,
+  "krylov_rows": [
+    {
+      "steps": 64,
+      "regularized_eta01": 0.331415073397446,
+      "nodes": [
+        {
+          "gap": 1.7389723182719121,
+          "weight": 0.0035249477569291644
+        },
+        {
+          "gap": 2.1325642594854735,
+          "weight": 0.0007914891276443609
+        },
+        {
+          "gap": 2.642079811343053,
+          "weight": 3.066699125294865e-05
+        }
+      ]
+    },
+    {
+      "steps": 128,
+      "regularized_eta01": 0.33141507339744614,
+      "nodes": [
+        {
+          "gap": 1.7389723182718846,
+          "weight": 0.003524947756927934
+        },
+        {
+          "gap": 2.132564259426557,
+          "weight": 0.0007914891269884669
+        },
+        {
+          "gap": 2.642077610055737,
+          "weight": 3.066600008174675e-05
+        }
+      ]
+    },
+    {
+      "steps": 256,
+      "regularized_eta01": 0.3314150733974461,
+      "nodes": [
+        {
+          "gap": 1.7389723182718895,
+          "weight": 0.0035249477569279358
+        },
+        {
+          "gap": 2.132564259426553,
+          "weight": 0.000791489126988465
+        },
+        {
+          "gap": 2.642077610055742,
+          "weight": 3.0666000081745206e-05
+        }
+      ]
+    }
+  ],
+  "reconstructed": [
+    {
+      "steps": 64,
+      "tridiagonal_gap": 1.7389723182719121,
+      "rayleigh_gap": 1.7389723182719068,
+      "residual": 3.985866038289925e-07,
+      "raw_norm": 0.9999999999999993,
+      "source_weight": 0.003524947756929174,
+      "ground_overlap": -2.0816681711721685e-17
+    },
+    {
+      "steps": 64,
+      "tridiagonal_gap": 2.1325642594854735,
+      "rayleigh_gap": 2.132564259485471,
+      "residual": 2.2455125409032884e-05,
+      "raw_norm": 1.0000000000000095,
+      "source_weight": 0.0007914891276444336,
+      "ground_overlap": -5.410168840702667e-17
+    },
+    {
+      "steps": 64,
+      "tridiagonal_gap": 2.642079811343053,
+      "rayleigh_gap": 2.6420798113430517,
+      "residual": 0.0038621608287323205,
+      "raw_norm": 0.9999999999999933,
+      "source_weight": 3.066699125175572e-05,
+      "ground_overlap": -1.3183898417423734e-16
+    },
+    {
+      "steps": 128,
+      "tridiagonal_gap": 1.7389723182718846,
+      "rayleigh_gap": 1.7389723182718912,
+      "residual": 2.594952130735091e-14,
+      "raw_norm": 1.0000000000000009,
+      "source_weight": 0.0035249477569279414,
+      "ground_overlap": -6.245004513516506e-17
+    },
+    {
+      "steps": 128,
+      "tridiagonal_gap": 2.132564259426557,
+      "rayleigh_gap": 2.1325642594265535,
+      "residual": 6.555509832457852e-13,
+      "raw_norm": 1.0000000000000109,
+      "source_weight": 0.0007914891269885179,
+      "ground_overlap": 1.3530843112619095e-16
+    },
+    {
+      "steps": 128,
+      "tridiagonal_gap": 2.642077610055737,
+      "rayleigh_gap": 2.6420776100557464,
+      "residual": 3.7895118989639294e-10,
+      "raw_norm": 0.9999999999999896,
+      "source_weight": 3.066600007885549e-05,
+      "ground_overlap": 1.973247953923618e-17
+    },
+    {
+      "steps": 256,
+      "tridiagonal_gap": 1.7389723182718895,
+      "rayleigh_gap": 1.738972318271891,
+      "residual": 4.327374609166176e-14,
+      "raw_norm": 1.0,
+      "source_weight": 0.003524947756927947,
+      "ground_overlap": -3.382710778154774e-17
+    },
+    {
+      "steps": 256,
+      "tridiagonal_gap": 2.132564259426553,
+      "rayleigh_gap": 2.132564259426552,
+      "residual": 3.197773951341883e-14,
+      "raw_norm": 0.9999999999999593,
+      "source_weight": 0.0007914891269884853,
+      "ground_overlap": 3.3285006695304986e-17
+    },
+    {
+      "steps": 256,
+      "tridiagonal_gap": 2.642077610055742,
+      "rayleigh_gap": 2.642077610055746,
+      "residual": 5.385971791436945e-14,
+      "raw_norm": 1.0000000000000075,
+      "source_weight": 3.066600008173049e-05,
+      "ground_overlap": 9.974659986866641e-18
+    }
+  ],
+  "elapsed": 13.560146808624268,
+  "scope": "Same finite27site state and H, extra exact symmetries, no bulk pole conclusion"
+}

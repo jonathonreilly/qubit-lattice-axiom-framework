@@ -33,5 +33,13 @@
   ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
   ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_mode_form_factors.py": "47ed54116f08448cc1d51b48405ec7e83367ae0055cfd0230f78bc199ba78849",
   ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_survey.py": "b7ce8302a6f3d85774c14277e2f35dca03910de83cf783625570d102a95d54d8",
-  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_stationary_mixed.py": "790bc67c9db9e9515c7623b6f3d8c6dbe4b83435bf6caf08a09d4f296b0ff9d0"
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_stationary_mixed.py": "790bc67c9db9e9515c7623b6f3d8c6dbe4b83435bf6caf08a09d4f296b0ff9d0",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_extra_sector_control.py": "e82a373826b6ce1d01982c009d42b502fe28a277cd24d8b4318a239f4a4ec557",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_extra_sector_response.py": "d4dd5dfa423586846b2b62a48797fb5a73a5d4362d17c4183dbe7d22666bbc0c",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_mode_symmetry_labels.py": "baaf8b8efa05153b7477bdc10591333d7e20e9f762e3225ab6e19ee107e5ee2f",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_plane_mobility_control.py": "55403903c7b96e6f82b69276ecaf916f6b656a4ae99406799bd0cdeadcaeb5cf",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_bond_algebra.py": "d2dc5d293ebcaafc90f2cf2d3fa852799d149bf4c0aba821e20634040b74fbd4",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_collective_basis.py": "84b324e031d15995a08b50993e09c287c9842a31b13a90ad99f78f50c2359eb7",
+  ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_quadratic_scalar_basis.py": "7b932b164e8247a22952313b301bd150b7d6dea2536da1851f9e120bca6bb9c7"
 }

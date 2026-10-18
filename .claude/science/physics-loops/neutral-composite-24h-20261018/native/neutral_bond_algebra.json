@@ -1,0 +1,98 @@
+[
+  {
+    "shape": [
+      2,
+      2,
+      2
+    ],
+    "sites": 8,
+    "bond_rank": 11,
+    "plane_rank": 5,
+    "neutral_dimension": 11,
+    "composite_checks": 0
+  },
+  {
+    "shape": [
+      3,
+      2,
+      2
+    ],
+    "sites": 12,
+    "bond_rank": 18,
+    "plane_rank": 6,
+    "neutral_dimension": 18,
+    "composite_checks": 4
+  },
+  {
+    "shape": [
+      3,
+      3,
+      2
+    ],
+    "sites": 18,
+    "bond_rank": 29,
+    "plane_rank": 7,
+    "neutral_dimension": 29,
+    "composite_checks": 12
+  },
+  {
+    "shape": [
+      3,
+      3,
+      3
+    ],
+    "sites": 27,
+    "bond_rank": 46,
+    "plane_rank": 8,
+    "neutral_dimension": 46,
+    "composite_checks": 27
+  },
+  {
+    "shape": [
+      4,
+      4,
+      4
+    ],
+    "sites": 64,
+    "bond_rank": 117,
+    "plane_rank": 11,
+    "neutral_dimension": 117,
+    "composite_checks": 96
+  },
+  {
+    "shape": [
+      5,
+      4,
+      3
+    ],
+    "sites": 60,
+    "bond_rank": 109,
+    "plane_rank": 11,
+    "neutral_dimension": 109,
+    "composite_checks": 86
+  },
+  {
+    "shape": [
+      6,
+      6,
+      6
+    ],
+    "sites": 216,
+    "bond_rank": 415,
+    "plane_rank": 17,
+    "neutral_dimension": 415,
+    "composite_checks": 432
+  },
+  {
+    "shape": [
+      10,
+      10,
+      10
+    ],
+    "sites": 1000,
+    "bond_rank": 1971,
+    "plane_rank": 29,
+    "neutral_dimension": 1971,
+    "composite_checks": 2400
+  }
+]

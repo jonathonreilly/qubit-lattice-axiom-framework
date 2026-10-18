@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "manifest_sha256": "e177173cc8ff4c95661607f92684fb2459e3de58515ab7c6e236056c551e5641",
+  "files": 11,
+  "provenance": 4,
+  "links": 12,
+  "nodes": 7275,
+  "edges": 16270,
+  "new_nodes": {
+    "native_compass_literal_attachment_bounded_theorem_note_2026-10-18": {
+      "path": "docs/NATIVE_COMPASS_LITERAL_ATTACHMENT_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "deps": [
+        "literal_direct_generator_bounded_theorem_note_2026-10-18"
+      ]
+    }
+  },
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical source identity, provenance, links and topology only; no scientific execution or retained audit. New note dependencies require ROOT inspection."
+}

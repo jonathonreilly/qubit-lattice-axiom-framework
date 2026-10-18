@@ -1,6 +1,6 @@
 {
- "edge_count": 16269,
- "node_count": 7274,
+ "edge_count": 16270,
+ "node_count": 7275,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15317,6 +15317,10 @@
   "native_common_frame_spin_connection_bounded_theorem_note_2026-09-13": {
    "deps_hash": "2448ffe58c24",
    "out_degree": 3
+  },
+  "native_compass_literal_attachment_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "29c256b911cf",
+   "out_degree": 1
   },
   "native_compression_action_boundary_note_2026-09-09": {
    "deps_hash": "e135cb65f69a",

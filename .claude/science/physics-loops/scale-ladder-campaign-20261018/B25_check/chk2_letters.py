@@ -28,6 +28,8 @@ inv = all(np.allclose(cl.cc.UF[g] @ Sg @ cl.cc.UF[g].T, Sg) for g in cl.ROTG)
 basis = cl.PH + cl.PLm
 A = np.array([b.ravel() for b in basis]).T; x = np.linalg.lstsq(A, Sg.ravel(), rcond=None)[0]
 in_alg = np.allclose(A @ x, Sg.ravel())
+comm = all(np.allclose(Sg @ P, P @ Sg) for P in cl.PH + cl.PLm)
+print(f"   sigma commutes with every PH, PLm: {comm}; sigma diag = {cl.SIG.astype(int).tolist()}; f_c = {cl.FC.tolist()}")
 print(f"   sigma: PSG-invariant {inv}; in span(PH, PLm) {in_alg}; sigma = +-Y ? {np.allclose(Sg, cl.Ymat) or np.allclose(Sg, -cl.Ymat)}; sigma = scalar? {np.allclose(Sg, Sg[0,0]*np.eye(12))}")
 # ---- (3) on-site letters
 okPH = all(np.allclose(P.T, P) for P in cl.PH)
@@ -71,7 +73,7 @@ for trial in range(6):
 check("every word is PSG-covariant with k-INDEPENDENT unitaries: W(R k + pi R lam_R) = U_R W(k) U_R^T (24 rotations, 6 random words)", ok)
 # ---- (6) Delta(m) classification by exact integer arithmetic: m = (pi/8) n, n in Z_16^3
 cls = collections.Counter(); okD = True
-Yd = (-1) ** (cl.FC.sum(1) // 2)
+Yd = np.where((cl.FC.sum(1) // 2) % 2 == 0, 1, -1)
 plane = [int(np.argmin(np.abs(cl.FC[c]))) for c in range(12)]
 for n in itertools.product(range(16), repeat=3):
     ph = (cl.FC @ np.array(n)) % 16                                   # phase m.f_c in units pi/8, mod 2pi

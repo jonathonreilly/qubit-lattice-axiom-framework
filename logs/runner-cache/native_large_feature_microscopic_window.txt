@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/native_large_feature_microscopic_window.py
+runner_sha256: a21531afa9c33d5be4dfb3f6abce9c10fed3542b42ab0d9931e957af453d8480
+input_fingerprint_sha256: 8773d98cdfc03185c1820eea277cec17622e0856da9f4d41747bea14d3a73ba5
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+{"status": "bounded-support", "physical_bit_controls": {"physical_qubits": 128, "backgrounds": 128, "seed_and_symmetry_checks": 384, "disjoint_seed_residual_configurations": 3200, "scope": "Exact physical-bit N4 K1/plane/source covariance and disjoint short-interval background supports; not128-qubit diagonalization or a finite-lambda full-H spectral test"}, "scope": "Exact symmetry/orbit controls supporting analytic uniform local bounds and spectral-window inequality; no finite-lambda full-H spectrum or empirical data"}
+
+----- stderr -----
+

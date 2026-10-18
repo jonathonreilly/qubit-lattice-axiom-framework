@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/native_frozen_arm_control.py
+runner_sha256: 5e14f6c631e870d60b1f050afaa92530839d1b510924dbc503b65f09cd1caa7d
+input_fingerprint_sha256: 6bf2c2c3681cda5bc020016c8ecbb94e41a9b259e7a60586bce1998be7deb995
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 3.58
+status: ok
+----- stdout -----
+{
+  "status": "PASS",
+  "K2_controls": [
+    {
+      "ell": 3,
+      "rx": 1,
+      "ry": 1,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 5,
+      "rx": 1,
+      "ry": 1,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 3,
+      "rx": 3,
+      "ry": 0,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 5,
+      "rx": 3,
+      "ry": 0,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 4,
+      "rx": 2,
+      "ry": 1,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 6,
+      "rx": 3,
+      "ry": 2,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    }
+  ],
+  "minimum_changed_plaquettes": 6,
+  "minimum_tension_coefficient": 0.09375,
+  "scope": "Finite exact examples supplement all-length/locality proof. No explicit fixed-order small-lambda threshold, full-H pole or unconditional retained-host stability."
+}
+
+----- stderr -----
+

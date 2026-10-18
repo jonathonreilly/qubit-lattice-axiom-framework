@@ -1,0 +1,126 @@
+===== runner cache v1 =====
+runner: scripts/native_range_two_airy.py
+runner_sha256: 5b2140e43b55365ef08ef7f5c8a8827184051bc7b927ad01ea5757cc9a51df07
+input_fingerprint_sha256: fdf9bf6b2fa2a7deb2e15da1358dcec969c192501ffeaeae2b50746bdb46adbe
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.95
+status: ok
+----- stdout -----
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "lam": 0.2,
+      "N": 143,
+      "coefficient": [
+        1.3408347576956636,
+        -0.05816900140221366
+      ],
+      "predicted": [
+        1.3504601500297404,
+        -0.05680395610005136
+      ],
+      "coefficient_error": 0.009721703876474502,
+      "error_over_lambda_two_thirds": 0.028426434580464222,
+      "schur_residual": 2.2056324033266752e-14,
+      "width_coefficient": 0.11633800280442733,
+      "predicted_width": 0.11360791220010272,
+      "cutoff_coefficient_difference": 0.0
+    },
+    {
+      "lam": 0.1,
+      "N": 253,
+      "coefficient": [
+        1.3465162775357216,
+        -0.05695485384454775
+      ],
+      "predicted": [
+        1.3504601500297404,
+        -0.05680395610005136
+      ],
+      "coefficient_error": 0.00394675821128841,
+      "error_over_lambda_two_thirds": 0.018319228842485828,
+      "schur_residual": 3.625264947627759e-15,
+      "width_coefficient": 0.1139097076890955,
+      "predicted_width": 0.11360791220010272,
+      "cutoff_coefficient_difference": 0.0
+    },
+    {
+      "lam": 0.05,
+      "N": 442,
+      "coefficient": [
+        1.3486758885952848,
+        -0.05678167979023395
+      ],
+      "predicted": [
+        1.3504601500297404,
+        -0.05680395610005136
+      ],
+      "coefficient_error": 0.001784400487689018,
+      "error_over_lambda_two_thirds": 0.013147575205671218,
+      "schur_residual": 1.505573050723803e-14,
+      "width_coefficient": 0.1135633595804679,
+      "predicted_width": 0.11360791220010272,
+      "cutoff_coefficient_difference": 0.0
+    },
+    {
+      "lam": 0.02,
+      "N": 914,
+      "coefficient": [
+        1.3497563082542134,
+        -0.05677970844172393
+      ],
+      "predicted": [
+        1.3504601500297404,
+        -0.05680395610005136
+      ],
+      "coefficient_error": 0.000704259322914014,
+      "error_over_lambda_two_thirds": 0.009558269563845001,
+      "schur_residual": 1.2182642724234628e-14,
+      "width_coefficient": 0.11355941688344787,
+      "predicted_width": 0.11360791220010272,
+      "cutoff_coefficient_difference": 0.0
+    },
+    {
+      "lam": 0.01,
+      "N": 1570,
+      "coefficient": [
+        1.3500853182335277,
+        -0.05679131908203087
+      ],
+      "predicted": [
+        1.3504601500297404,
+        -0.05680395610005136
+      ],
+      "coefficient_error": 0.0003750447568977171,
+      "error_over_lambda_two_thirds": 0.008080094345750162,
+      "schur_residual": 5.639091320735056e-12,
+      "width_coefficient": 0.11358263816406174,
+      "predicted_width": 0.11360791220010272,
+      "cutoff_coefficient_difference": 0.0
+    },
+    {
+      "lam": 0.005,
+      "N": 2681,
+      "coefficient": [
+        1.3502503464070232,
+        -0.05679819274701445
+      ],
+      "predicted": [
+        1.3504601500297404,
+        -0.05680395610005136
+      ],
+      "coefficient_error": 0.0002098827680956066,
+      "error_over_lambda_two_thirds": 0.007177889701308209,
+      "schur_residual": 4.147798119661858e-12,
+      "width_coefficient": 0.1135963854940289,
+      "predicted_width": 0.11360791220010272,
+      "cutoff_coefficient_difference": 0.0
+    }
+  ],
+  "scope": "Specified slowK4+outgoinghost only. Uniform infinite-arm asymptotic proof is separate; Schur residual is not a certified pole error. No full-H pole or original-source residue theorem."
+}
+
+----- stderr -----
+

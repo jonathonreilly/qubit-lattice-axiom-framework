@@ -68,3 +68,6 @@ Direct local plaquette argument now establishes leading tension in the actual lo
 
 
 Conservedscalar independentmoment/source/exactFourierchecks andfinalreviewPASS afterexplicitQ0=Q/sqrtVandpositiveJnormalization. Replay.906447sPASS; noformal audit.
+
+
+Range-two Airy / frozen arms: final scoped review PASS, native/REVIEW_RANGE_TWO_AIRY.md. Independent Bessel, perturbation and frozen-arm checks PASS. No audit verdict.

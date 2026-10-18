@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "K2_controls": [
+    {
+      "ell": 3,
+      "rx": 1,
+      "ry": 1,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 5,
+      "rx": 1,
+      "ry": 1,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 3,
+      "rx": 3,
+      "ry": 0,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 5,
+      "rx": 3,
+      "ry": 0,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 4,
+      "rx": 2,
+      "ry": 1,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 6,
+      "rx": 3,
+      "ry": 2,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    }
+  ],
+  "minimum_changed_plaquettes": 6,
+  "minimum_tension_coefficient": 0.09375,
+  "scope": "Finite exact examples supplement all-length/locality proof. No explicit fixed-order small-lambda threshold, full-H pole or unconditional retained-host stability."
+}

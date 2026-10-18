@@ -86,3 +86,6 @@ Direct local plaquette argument now establishes leading tension in the actual lo
 
 
 Conserved scalar actual_current_surface_status: exact-support for statedHamiltonian/ensemble identities; proposal_allowed: false forphysicalscalar/TOE. Independent andfinalscopedchecksPASS; noformalverdict.
+
+
+Range-two and closed-arm actual_current_surface_status: bounded-support; proposal_allowed: false; bare_retained_allowed: false; review_loop_disposition: pass. Specified coefficient-model asymptotics and fixed-order excluded-arm gap; no full-H pole or measurement bridge.

@@ -77,3 +77,6 @@ Finite-range arm: upstream_support; target higher native kinetic corrections in 
 
 
 Conserved scalar fluctuation: upstream_support; derives collective neutral energy fluctuation and specifiedQ overlap from existingH. State/detector/cosmological bridge remains open; no addedinteraction.
+
+
+Range-two and frozen-arm block: trace_class: upstream_support; target_blocker_text: uniform range-two Airy expansion and excluded long-arm control; source_of_blocker_text: handoff; reachability_to_target: partially_closes; artifact_role: theorem; next_trace_action: derive complete fixed-order retained-host stability. Full microscopic resonance remains open.

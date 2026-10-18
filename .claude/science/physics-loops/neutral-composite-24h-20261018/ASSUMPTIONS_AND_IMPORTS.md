@@ -50,3 +50,6 @@ Direct local plaquette argument now establishes leading tension in the actual lo
 
 
 Suppliedbeta0 orfiniteGibbsstate isessential. Q isderiveddiagnostic, notaddedHinteraction orphysicaldetector. Conservation/spectralprojection isknownpriorartMazur1969; modelcoefficients computedhere. No empiricalinputs.
+
+
+Range-two block retires the asymptotic-prediction status for the specified slow coefficient model, and proves fixed-order closed-arm gap. Supplied H, ordered reference, zero-block convention, COM fiber and analytic outgoing slow-host boundary remain explicit. Full retained host stability, microscopic pole transfer, original readout residue and cosmological identification remain open. No empirical input used.

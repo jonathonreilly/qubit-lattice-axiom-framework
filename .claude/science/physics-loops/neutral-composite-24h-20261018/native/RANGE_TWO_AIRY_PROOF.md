@@ -1,0 +1,24 @@
+# Root range-two Airy pole proof (specified native coefficient model)
+
+Work in slow units. f=lambda²/8, epsilon=f^(1/3), H_D=-T+f(n+2), n>=1. Attach outgoing scalar boundary selfenergy Sigma(E)P1, analytic in a fixed complex neighborhood of E=-2, with Sigma0 != -1, Im Sigma0<0. Here Sigma0 is the earlier slow-host G_AA(-2). The pole is nonlinear inE but Sigma and derivatives bounded. Add lambda² V, V=d I+a T+b(S²+S*²)+F with fixed supported boundedF; coefficientsreal d=29/192,a=19/32,b=-13/128. Set c=d+2a+2b=109/96. Proved under the stated coefficient-model assumptions:
+ E=-2+alpha1 epsilon²+f(2+Sigma0/(1+Sigma0))+lambda² c+O(epsilon4).
+This upgrades previous finite-grid prediction to asymptotic theorem of this specified coefficient model, NOT full nativeH.
+
+1 NN boundary problem has decaying solution u_n=J_(n-(E-2f)/f)(2/f). Endpointconditionu0=-Sigma(E)u1 gives J_nu(z)+Sigma(E)J_(nu+1)(z)=0, nu=-(E-2f)/f,z=2/f.
+TurningpointuniformBesselexpansion: write E=-2+alpha epsilon²+f(2+a0)+...; then nu-z=-alpha/epsilon-a0. J_nu(z)=epsilon[Ai(-alpha-a0 epsilon)+O(epsilon²)], J_nu+1=epsilon[Ai(-alpha+(1-a0)epsilon)+O(epsilon²)], uniformanalyticcomplexalpha/a0incompact neighborhoods. Root atAi(-alpha1)=0, derivativeAi'nonzero yields a0=Sigma0/(1+Sigma0). Rouché/implicitfunction gives E_NN=-2+alpha1epsilon²+f(2+a0)+O(epsilon4). Sigma(E)-Sigma0=O(epsilon²), affectsEonlyO(epsilon5). Uniform complex turning-point asymptotics are the mathematical input from DLMF10.19.8 and10.20; the independent Bessel check verifies normalization and use.
+
+2 Take circle around firstDirichletAirylevelradiusc0epsilon², withc0lesshalfnextspacing, avoiding allDirichleteigenvalues. SelfadjointR_D=(E-H_D)^-1 hasnormO(epsilon^-2). Its localg11=-1+O(epsilon), derivative magnitude and ||R_D e1||²=O(epsilon^-1) onthiscircle (deriveBesselWeylratio orAiryspectralweights). Since1-Sigma g11=1+Sigma0+O(epsilon) nonzero, rankoneformula gives fullNNresolventO(epsilon^-2) and spectralprojectiondiffP_NN-P_D=O(epsilon) fromcontourlengthepsilon² timeslocalrankone correctionO(epsilon^-1). This remainsvalidforfrozenSigma0. Simplepoleprojectionnormbounded.
+
+3 Boundedlambda²V hasnormO(epsilon³), smallerthanisolatedlevelspacingepsilon². Analyticperturbationonthatcircle gives
+ E(lambda²)=E_NN+lambda² Tr(P_NN V)+O(lambda4/epsilon²)=E_NN+lambda²Tr(P_NN V)+O(epsilon4).
+For normalizedDirichletAiryground, 2-<T>=O(epsilon²) and fixedendpointweight=O(epsilon³), so expectationV=c+O(epsilon²). ProjectiondifferenceO(epsilon) givesTr(P_NN V)=c+O(epsilon), hence statedenergyformula. For finite-rankF useboundedVandPdiff estimate, soitscontributionO(lambda²epsilon)=O(epsilon4), sufficient.
+
+4 EnergydependentSigma(E) can be restored: boundaryGreen rankone determinant and implicitfunction, with derivativeeigenenergywrtSigma=O(epsilon³), make replacingSigma0bySigma(E) affectpoleO(epsilon5). The localized estimate is essential here: generic projection O(epsilon) alone is insufficient for endpoint weight. Could instead allowerrorO(epsilon4) by proving perturbedP11=O(epsilon²), enoughsinceSigma(E)-Sigma0=O(epsilon²). Use localizedresolventexpansion: RNN e1normO(epsilon^-1/2), correctionP11 fromlambda² contour integral e1 R V R e1 <=epsilon³*epsilon²*epsilon^-1=O(epsilon4); unpertP11O(epsilon³). Therefore stillP11O(epsilon³). HigherNeumannterms gainO(epsilon), soholds. FrozenSigmaanalyticneighborhooduniform; nonlinearimplicit factor1-O(epsilon³) invertible.
+
+Then original energyEphys/Jz=8+lambda²(E-4) =8-6lambda²+alpha1lambda²(lambda²/8)^(2/3)+lambda4[c+(2+a0)/8]+O(lambda^(14/3)). Im giveswidth=-2ImEphys= (-Im a0)/4 Jzlambda4+O(Jzlambda^(14/3)). No originalreadoutresidue accuracyclaimfromgenericprojectornorm; that needslocalizedsourceanalysis. Nofullmicroscopicpole, nativeallboundarycompletion or allorderoutgoingcontinuation.
+
+
+## Clarified contour and corrected-fast extension
+Use g_D=-J_(nu+1)(2/f)/J_nu(2/f). Its analytic derivative is not a positive resolvent norm at complex E. Bound endpoint vectors by the spectral measure and dissipation; near real contour points compare denominators with a nonreal point a fixed epsilon² distance away. Both endpoint rows/columns are O(epsilon^-1/2). The difference of the two rank-one projections has rank at most two, so its O(epsilon) operator norm also bounds its trace norm.
+
+The prior corrected-fast model supplies a holomorphic deltaSigma=O(lambda/log(1/lambda)) on a radius-cf disk centered on the already established lower-half-plane pole. Its imaginary depth is order f, so the disk lies in the controlled strip. The eigenvalue derivative with respect to Sigma remains O(f). Cauchy on a smaller disk bounds deltaSigma derivative by O(lambda/(f log)); the nonlinear fixed-point derivative is O(lambda/log). Thus the additional pole shift is O(f lambda/log) in slow units, O(Jz lambda5/log) physically, smaller than the O(Jz lambda14/3) remainder. This uses uniform holomorphy, not a pointwise estimate.

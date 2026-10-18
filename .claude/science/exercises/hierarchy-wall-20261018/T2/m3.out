@@ -1,0 +1,7 @@
+L= 8 ticks=400000 tau_int(|M|^2)=19.2(0.7) ticks  tau_exp~20.8
+L=12 ticks=400000 tau_int(|M|^2)=42.5(2.2) ticks  tau_exp~45.8
+L=16 ticks=400000 tau_int(|M|^2)=74.2(5.0) ticks  tau_exp~87.9
+L=24 ticks=200000 tau_int(|M|^2)=167.3(23.7) ticks  tau_exp~179.6
+z_eff(8,12): int 1.96  exp 1.94
+z_eff(12,16): int 1.94  exp 2.27
+z_eff(16,24): int 2.00  exp 1.76

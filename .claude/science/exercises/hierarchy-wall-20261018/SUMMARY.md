@@ -38,9 +38,16 @@ This is consistent with a general observation from R4: an exact self-consistency
 
 The exercise did **not** prove that an extra number is unavoidable in general. It proved it only within each class above.
 
+## Light-cone test (T-LIGHTCONE, run on request)
+
+- **Reading: OPEN under the registered rule. In substance, no native slow passage.**
+- The landed level-time bilayer is an O(3) Heisenberg critical point, and its relevant exponent is y_t ≈ 1.40, which is fast. Using it for a hierarchy needs a supplied tuning of β to about 1e-23.
+- There is no spiral.
+- The one near-marginal direction known for this class, cubic anisotropy, is exactly zero by symmetry.
+- OPEN only because the slowest irrelevant exponent was not resolved, and irrelevant directions cannot make a scale.
+
 ## Still open
 
-- **The level-time (light-cone) reading of formation.** It has a genuine critical point, and Lemma C does not cover it. This is the one untested class that could still host a slow passage.
 - **Symmetric defect pairs** (R2). These would give a defect-level scale only.
 
 ## Files

@@ -1,0 +1,4 @@
+beta=0.5: <|m_level|^2> wolff(pair law) 0.01881+-0.00007  landed kernel 0.01872+-0.00010  diff/sigma +0.74
+          pair energy/site   wolff 1.44868+-0.00069  landed kernel 1.44947+-0.00046  diff/sigma -0.95
+beta=0.6: <|m_level|^2> wolff(pair law) 0.21284+-0.00034  landed kernel 0.21302+-0.00021  diff/sigma -0.44
+          pair energy/site   wolff 2.59128+-0.00203  landed kernel 2.59273+-0.00079  diff/sigma -0.66

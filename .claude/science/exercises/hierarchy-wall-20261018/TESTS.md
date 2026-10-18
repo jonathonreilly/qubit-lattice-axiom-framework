@@ -25,3 +25,26 @@
 - **2D:** no interior fixed point.
 - **3D:** every zero is a box-filling artefact.
 - **Open:** the level-time (light-cone) reading, which has a real critical point and where Lemma C does not apply.
+
+**T-LIGHTCONE** (pre-registered 2026-10-18T18:35Z, before any run; Jon asked to "run the light-cone level-time test").
+- **Question.** In the level-time (light-cone) reading of formation, where formation time is a lattice coordinate, the 09-23 note on main finds a reflection-positive bilayer that orders above β = 0.5905. Does the flow near that critical point give a slow passage of at least 38.4 e-folds from O(1) inputs?
+- **Task.**
+  1. Use the landed model as written.
+  2. Locate the critical point.
+  3. Extract the RG eigenvalues near it, via Monte Carlo RG, finite-size scaling or an exact method; state which.
+  4. Check whether any direction is marginal (y ≈ 0), which would give a logarithmic flow of transmutation type.
+- **Readings.**
+  - **LC-SPIRAL:** a complex pair with |Re y| ≤ 0.06 and |Im y| ≥ 1, stable across methods and sizes.
+  - **LC-MARGINAL:** a marginal direction with a nonzero first nonlinear coefficient. A passage of at least 38.4 e-folds then needs a starting coupling u0 ≤ 1/(b·38.4). State whether the model fixes u0 or supplies it.
+  - **LC-HYPERBOLIC:** all eigenvalues are real with |y| ≥ 0.2. A hierarchy then needs a supplied distance δ ≤ e^{−38.4·y} from criticality.
+  - **OPEN:** otherwise.
+- **Scope.** No claim about v. This test only decides whether the class contains a native slow passage.
+
+**T-LIGHTCONE result (recorded 19:58Z; same family; unrefereed): OPEN under the registered rule. No native slow passage.**
+- **Model.** The landed level-time bilayer is a classical O(3) Heisenberg model. It is a comparator, because it re-records every site at every tick, which the Record axiom excludes. β_c = 0.5561(1).
+- **Growing direction.** y_t = 1.40(1) is relevant and fast. A hierarchy would need a supplied tuning |β−β_c|/β_c ≈ 1e-22 to 1e-24.
+- **No spiral.**
+- **Cubic anisotropy**, the near-marginal direction in the O(3) class, is exactly zero by spin-rotation symmetry (proved).
+- **Why OPEN.** The slowest irrelevant exponent ω is not resolved away from 0.2. An irrelevant direction cannot generate a scale (suggested).
+- **Level time is diffusive at criticality** (z ≈ 2), not light-like.
+- **Raw data** (132 MB) was not archived; the scripts and outputs were.

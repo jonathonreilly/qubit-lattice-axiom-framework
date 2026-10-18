@@ -199,3 +199,28 @@ Write omega^2 = k^2 (1 + alpha k^2).
   - So gravity is a 2-rung triangulation of the sites.
   - A P1 field on every site sources the relative sublattice displacements at O(1), so gravity
     reads matter per block.
+
+## Phase 7: record-to-geometry explorations (owner: "explore both"; EXPLORATIONS, NOT POSITIONS)
+- Q1 (owner 2026-10-18): points between sites may be tested, not used; zoom out. That gives the
+  2-rung carrier (F32).
+- F33 (A, record pace sets the time length; paceA.py, paceA2.py):
+  - Under the linear nearest-neighbour averaging rule (the unapproved Q7 clarification), the
+    stationary pace deficit falls as 1/r, isotropic to a few %, slower near records (the time
+    dilation sign).
+  - If records HOLD a fixed pace (Dirichlet), mass grows with cluster SIZE, like a conductor
+    (1 site 0.165, 33 sites 0.94): not additive.
+  - If records DRAIN a fixed amount q of pace (source), mass is exactly additive (per record
+    0.00510 for N = 1, 19, 33), with isotropic 1/r.
+  - With lapse = pace, the 2-rung Regge carrier fixes the spatial lengths with nu = 1
+    (F31/K4), so the static weak-field chain closes at leading order.
+  - Needs, all unadopted: the linear averaging rule, records as drains, and pace = time length.
+- F34 (B, distance from linked possibilities; linkB.py): Gaussian NN field with precision
+  (-Delta + m^2).
+  - The correlation-decay distance is isotropic at long range: anisotropy 2% at xi = 1,
+    0.03% at xi = 3.3, emergent like (a/xi)^2.
+  - A record (conditioning one site) changes distances only within ~xi: exponential falloff,
+    and faster than r^-4 even near criticality. NOT Newtonian.
+  - So B can supply the background geometry (where things are) but not the gravitational
+    response; A supplies the response.
+- Next question for the owner (Q3): does every record drain the same pace (mass = record
+  count), or does a record drain according to its content (e.g. its energy)?

@@ -60,7 +60,7 @@ E("I10 corollary explanation",
 
 E("I11 grid evidence is not a crossing proof",
 "- All of those have other bands crossing the node quasi-energy elsewhere: the best minimum distance on a 12³ grid away from ±k* is 0.007.",
-"- All of those appear to have other bands crossing the node quasi-energy elsewhere (grid evidence, not a crossing proof): the best minimum distance on a 12³ grid away from ±k* is 0.007. B20's sign-change test, whose check is in progress, later proves crossings for 99.1% of a wider search.")
+"- All of those appear to have other bands crossing the node quasi-energy elsewhere (grid evidence, not a crossing proof): the best minimum distance on a 12³ grid away from ±k* is 0.007. B20's sign-change test (independently checked) later proves crossings for 99.1% of a wider search.")
 
 # ---------- program section 3 ----------
 E("P1 item 5 is no longer 'what would'",
@@ -160,10 +160,10 @@ E("A14 consequence: accidental isotropy, D4 points",
 "- **Consequence for the target below (given B17's premise).** A parameter-free step can feed a closing gravity sector only if every species at its node quasi-energy is isotropic at one speed. Apart from accidental (non-generic) isotropy, that takes one of two things. The first is a taste-type symmetry relating the D4-point nodes to T-fixed ones. The second is having no such nodes, which by the doubling corollary needs gaplessness in quasi-energy or broken axis C2s.")
 E("A15 B20 search scope",
 "  - Of 69,894 parameter-free (word, node quasi-energy) pairs with up to six letters, none reaches its node quasi-energy only at isotropic cones of one speed. Each has an explicit failure witness.",
-"  - Of 69,894 parameter-free (word, node quasi-energy) pairs with up to six letters and a linear spin-½ Weyl doublet at k*, none reaches its node quasi-energy only at isotropic cones of one speed. Each has an explicit failure witness. Four-fold (Dirac-type) levels at ±k* were outside this screen.")
+"  - Of 69,894 parameter-free (word, node quasi-energy) pairs with up to six letters and an exactly 2-fold (Weyl) level at k*, no tested step reaches its node quasi-energy only at isotropic cones of one speed. Each has an explicit failure witness. Four-fold levels are treated in the last lemma below.")
 E("A16 B20 lemma labels",
 "  - Exact lemmas for this word class:",
-"  - Lemmas for this word class (the worker's proofs; the check is in progress):")
+"  - Lemmas for this word class (exact unless marked):")
 E("A17 B20 chirality is conditional",
 "    - the 3D winding vanishes for every word, so with the Floquet Nielsen–Ninomiya theorem the net chirality at any node quasi-energy is zero;",
 "    - the 3D winding vanishes for every word (exact). With the Floquet Nielsen–Ninomiya theorem (Bessho–Sato 2021, checked at abstract level only), the net chirality at any point-node quasi-energy is then zero (conditional);")
@@ -175,7 +175,7 @@ E("A19 B20 continuous-phase control",
 "Moving it off the node quasi-energy with continuous phases (a control, not parameter-free) opened Fermi pockets in every tested case; there is no counting proof.")
 E("A20 information-minimal target: status",
 "- full octahedral symmetry at the node pushes anisotropy to (a/w)².",
-"- full octahedral symmetry at the node pushes anisotropy to (a/w)².\n- **Status after the campaign:** no parameter-free step found so far meets the closure selection rule (B17, B18; the B20 check is in progress), because each has anisotropic species at its node quasi-energy.")
+"- full octahedral symmetry at the node pushes anisotropy to (a/w)².\n- **Status after the campaign:** no parameter-free step found so far meets the closure selection rule (B17, B18, B20), because each has anisotropic species at its node quasi-energy.")
 E("A21 'anisotropic' doublers in item-6 summary",
 "Like naive lattice fermions, they come with doublers: six anisotropic Weyl nodes at the other cube points.",
 "Like naive lattice fermions, they come with doublers: six uniaxial Weyl nodes at the other cube points.")
@@ -217,7 +217,7 @@ E("R1 misplaced citation (remove)",
 "- **Multifold fermions.** Bradlyn et al., Science 353, aaf5037 (2016).")
 E("R2 misplaced citation (re-insert) + campaign prior art",
 "  - Swingle, PRD 86, 065007 (2012).",
-"  - Swingle, PRD 86, 065007 (2012).\n  - Almheiri, Dong and Harlow, JHEP 04 (2015) 163.\n- **Constraint closure and a universal cone (campaign B14–B22; as cited in the check reports).** Teitelboim 1973; Hojman, Kuchař and Teitelboim 1976; Kuchař 1974–76; Schwinger, Phys. Rev. 130, 800 (1963); Deser 1970; Barbour, Foster and Ó Murchadha 2002.\n- **Taste symmetry and Floquet doubling (campaign B18, B20).** Kogut and Susskind 1975; Karsten and Smit 1981; Golterman and Smit 1984; Bessho and Sato, PRL 127, 196404 (2021), checked at abstract level only.")
+"  - Swingle, PRD 86, 065007 (2012).\n  - Almheiri, Dong and Harlow, JHEP 04 (2015) 163.\n- **Constraint closure and a universal cone (campaign B14–B22; as cited in the check reports).** Teitelboim 1973; Hojman, Kuchař and Teitelboim 1976; Kuchař 1974–76; Schwinger, Phys. Rev. 130, 800 (1963); Deser 1970; Barbour, Foster and Ó Murchadha 2002.\n- **Taste symmetry and Floquet doubling (campaign B18, B20).** Kogut and Susskind 1975; Karsten and Smit 1981; Golterman and Smit 1984; Bessho and Sato, PRL 127, 196404 (2021), checked at abstract level only; PRL 121, 196401 (2018), arXiv:1806.09296, on three-dimensional chiral lattice fermions in Floquet systems (added by the B20 check).")
 E("R3 new-here list",
 "  - The doubling corollary for gapped steps with anticommuting axis-C2 lifts.",
 "  - The doubling corollary for gapped steps with anticommuting axis-C2 lifts.\n  - The symmetry-forced 1 + 3 node pattern at the eight cube points.")
@@ -225,6 +225,9 @@ E("V1 runtime",
 "(about three minutes)",
 "(about two to three minutes; 1 min 52 s in the coherence review)")
 
+E("A24 B20 Dirac-level lemma: G3/2 scope",
+"so the chirality argument does not exclude it.",
+"so the chirality argument does not exclude it. Four-fold G3/2 levels are not covered by these lemmas, and the conditional obstruction applies to 2-fold doublets only.")
 SUMMARY_ANCHOR = "## Answer to the question (interpretation)\n\n"
 
 import sys, pathlib

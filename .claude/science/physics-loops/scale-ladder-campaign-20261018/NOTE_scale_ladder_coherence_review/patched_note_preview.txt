@@ -109,7 +109,7 @@ A ladder is useful only if some data provably survives the climb, so that a stat
        - A doubler-free spin-½ Weyl step must therefore be gapless somewhere in quasi-energy, or break the axis C2s (which T contains).
      - **Search result (not a no-go).** The family searched was S·U, S·R_L·U and R_L·S·U with Clifford-phase on-site U: about 12,000 steps, 3,738 with Weyl doublets at k*.
        - 4,476 node/step combinations have no level at the node quasi-energy at the other cube or high-symmetry points.
-       - All of those appear to have other bands crossing the node quasi-energy elsewhere (grid evidence, not a crossing proof): the best minimum distance on a 12³ grid away from ±k* is 0.007. B20's sign-change test, whose check is in progress, later proves crossings for 99.1% of a wider search.
+       - All of those appear to have other bands crossing the node quasi-energy elsewhere (grid evidence, not a crossing proof): the best minimum distance on a 12³ grid away from ±k* is 0.007. B20's sign-change test (independently checked) later proves crossings for 99.1% of a wider search.
        - So in this family a clean node quasi-energy comes only with the six doublers, and the doublers sit where commuting C2 lifts force even levels.
        - Whether a parameter-free symmetric step can have only the two spin-½ nodes is open. The Clifford-phase pinning of levels to multiples of π/2 at the cube points is a plausible cause, not established.
 
@@ -217,7 +217,7 @@ Labels: "checked" means a fresh-context agent of the same model family re-derive
 2. **Filling (B7 and C20, checked).** Odd filling is forced gapless for free fermions, and a pocket-free state at odd filling touches μ at all eight points. With full translations a many-body obstruction holds conditionally. In the doubled-cell class a symmetric interacting insulator exists, so the quartet protection is free-fermion only. In mean-field RPA the chiral term beats the Dirac mass for T ≲ 0.03.
 3. **Parameter-free steps (item 6).** The diagonal-shift step has isotropic spin-½ Weyl nodes at ±k*, with speed √2/3. It also has six uniaxial doublers and a mirror eight-node set at −π/2. The doubling corollary (proved here) says that a gapped symmetric step cannot reach a k* Weyl doublet's quasi-energy only at ±k*.
 4. **One cone from constraint closure (B14–B16, B19, B21; checked; supplied matter and gravity clauses; leading order).** A scalar, a naive Weyl field and a lattice Maxwell field close against the 09-24 curvature member only on one common cone, with the Lorentzian sign (given K, α > 0). Invariantly that cone is the graviton TT cone K2/(4α); it reads K/(4α) only in block 62's normalisation. Beyond leading order the lattice relabellings do not close: O(a²) for the scalar and the endpoint-mean fermion, O(a) for one-sided Maxwell. Newton's constant is not fixed.
-5. **A selection rule on steps (B17, B18 and B22 checked; B20 check in progress).** Closure rejects anisotropic cones, so the corner step's uniaxial doublers fail. This is conditional on the step coupling to a lapse. The generator lapse (B22) gives that coupling only by a choice, and it needs a branch cut in a quasi-energy gap, which the gapless corner step lacks. No uniform taste maps the doublers to ±k* (B18). No searched word passes: 0 of 69,894 Weyl pairs (B20, unchecked).
+5. **A selection rule on steps (B17, B18, B20 and B22; checked).** Closure rejects anisotropic cones, so the corner step's uniaxial doublers fail. This is conditional on the step coupling to a lapse. The generator lapse (B22) gives that coupling only by a choice, and it needs a branch cut in a quasi-energy gap, which the gapless corner step lacks. No uniform taste maps the doublers to ±k* (B18). No tested word passes: none of 69,894 Weyl pairs, and none of 1,872 isotropic Dirac levels in the screened families (B20); two families remain unscreened for Dirac levels.
 6. **Other lanes (checked; companion notes).**
    - **Formation.** iid-priority formation with state-independent rates is a finitary factor of iid noise: an empty start gives no long-range order.
    - **Record frequencies.** Spatial Record frequencies converge, a partial discharge.
@@ -320,14 +320,15 @@ The ladder does unify the lanes, but not by deriving everything from the finest 
   - For the eight-node step, an exhaustive spectral test and the velocity-determinant invariant exclude every such map: v*³ = 0.1048 against v_ax v_tr² = 0.0841.
   - Words in S² do have exact tastes, which make their Weyl copies isotropic at √2/3 per S. But they carry uniaxial nodes at the same quasi-energy, at (π/4)-type points, or nodal lines.
   - So no step found so far passes the closure selection rule.
-- **Wider search and lemmas (B20, check in progress).**
-  - Of 69,894 parameter-free (word, node quasi-energy) pairs with up to six letters and a linear spin-½ Weyl doublet at k*, none reaches its node quasi-energy only at isotropic cones of one speed. Each has an explicit failure witness. Four-fold (Dirac-type) levels at ±k* were outside this screen.
-  - Lemmas for this word class (the worker's proofs; the check is in progress):
+- **Wider search and lemmas (B20, independently checked).**
+  - Of 69,894 parameter-free (word, node quasi-energy) pairs with up to six letters and an exactly 2-fold (Weyl) level at k*, no tested step reaches its node quasi-energy only at isotropic cones of one speed. Each has an explicit failure witness. Four-fold levels are treated in the last lemma below.
+  - Lemmas for this word class (exact unless marked):
     - every spin-½ doublet at ±k* has speed |n_S|·√2/3, where n_S is the net power of the diagonal shift;
     - the 3D winding vanishes for every word (exact). With the Floquet Nielsen–Ninomiya theorem (Bessho–Sato 2021, checked at abstract level only), the net chirality at any point-node quasi-energy is then zero (conditional);
     - isotropy is symmetry-forced only at momenta whose little group contains T (T-fixed points found exhaustively on a (π/8)Z³ grid). The cube doublers and the X- and M-type points have only D4.
+    - a 4-fold level at ±k* made of both spin-½ doublets is an exact isotropic Dirac point: two cones of one speed and opposite chirality, so the chirality argument does not exclude it. Four-fold G3/2 levels are not covered by these lemmas, and the conditional obstruction applies to 2-fold doublets only. Screening such levels in two of the four families found none passing; the other two families are not yet screened.
   - The observed blocking pattern is a uniaxial doublet pinned at a D4 point. Moving it off the node quasi-energy with continuous phases (a control, not parameter-free) opened Fermi pockets in every tested case; there is no counting proof.
-  - This is a negative search, not a no-go.
+  - This is a negative search over the tested palettes, not a no-go.
 
 ### The information-minimal target and its status
 
@@ -335,7 +336,7 @@ The ladder does unify the lanes, but not by deriving everything from the finest 
 - each speed is a pure number fixed by the grid geometry (item 6);
 - composites of collinear constituents inherit it;
 - full octahedral symmetry at the node pushes anisotropy to (a/w)².
-- **Status after the campaign:** no parameter-free step found so far meets the closure selection rule (B17, B18; the B20 check is in progress), because each has anisotropic species at its node quasi-energy.
+- **Status after the campaign:** no parameter-free step found so far meets the closure selection rule (B17, B18, B20), because each has anisotropic species at its node quasi-energy.
 
 This replaces a heavier earlier formulation: a reflection-positive transfer step with 4D hypercubic symmetry (item 5). That remains a sufficient alternative, with these conditions:
 - the group acts on spinors through its double cover;
@@ -423,7 +424,7 @@ A fresh-context agent of the same model family checked the note; it is not an in
   - Swingle, PRD 86, 065007 (2012).
   - Almheiri, Dong and Harlow, JHEP 04 (2015) 163.
 - **Constraint closure and a universal cone (campaign B14–B22; as cited in the check reports).** Teitelboim 1973; Hojman, Kuchař and Teitelboim 1976; Kuchař 1974–76; Schwinger, Phys. Rev. 130, 800 (1963); Deser 1970; Barbour, Foster and Ó Murchadha 2002.
-- **Taste symmetry and Floquet doubling (campaign B18, B20).** Kogut and Susskind 1975; Karsten and Smit 1981; Golterman and Smit 1984; Bessho and Sato, PRL 127, 196404 (2021), checked at abstract level only.
+- **Taste symmetry and Floquet doubling (campaign B18, B20).** Kogut and Susskind 1975; Karsten and Smit 1981; Golterman and Smit 1984; Bessho and Sato, PRL 127, 196404 (2021), checked at abstract level only; PRL 121, 196401 (2018), arXiv:1806.09296, on three-dimensional chiral lattice fermions in Floquet systems (added by the B20 check).
 - **Quantum cellular automata for Weyl and Dirac fields.**
   - D'Ariano and Perinotti, PRA 90, 062106 (2014).
   - Bisio, D'Ariano and Perinotti, Ann. Phys. 368, 177 (2016), on photons as pairs of Weyl quanta.

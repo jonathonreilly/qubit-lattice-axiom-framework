@@ -42,3 +42,8 @@ Only squarefree simple-cycle monomials are summed. Exact coefficients and origin
 
 ### Actual normal-form remainder
 Fixed-order actual local remainder existence is now proved, with nonexplicit order-dependent constants and sufficiently smalllambda. This does not replace unknown high-order effective dynamics with D4. Exact originalC source tails are controlled for finite packets, while physical initial state and detector mapping remain unselected.
+
+
+Finite-range arm derives polynomial/affine structure from fixed-order local coefficients. Supplied background, symmetry sector and coefficient gauge remain; chosen cubic numerical control is explicitly not a derived native coefficient.
+
+Direct local plaquette argument now establishes leading tension in the actual local normal-form construction, independently checked and narrowly rereviewed PASS. This closes the leading-coefficient gauge transfer condition only; higher matrices, sources and excluded channels remain open.

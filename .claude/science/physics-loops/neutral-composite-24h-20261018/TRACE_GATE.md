@@ -71,3 +71,6 @@ PR9744verifiedOPEN121f2f17e84e5f3b47696be470a7ea7668b6c18e; attachmentcap100reco
 
 ## 2026-10-18T08:38:05.755345+00:00 actual remainder checkpoint
 PR9745verifiedOPEN8119c372b385eeff2fdb01bbc9d7bfb6a06a7cbc; attachmentcap100recorded. Root finite-order localnormalform derivedforoverlappingcommutinglongitudinalbondN: exactfiniteunitaryproduct, locallyanalyticmixedwordmajorant, actualremainderC_mlambda^(m+1)volumeuniform. IndependentproofPASS. Duhamel/LR comparison retainsallD_m withpolynomialcone, exactoriginalCpacketdressing summablefromsameconstruction; correlatorerrorO(lambda22/3)atorder20forl2normalizedlengthlambda^-2/3packet,t~lambda^-4. Noactualpole orpreferredD4channelprecisionclaim; higherD5..20,gauge,state,empiricalbridgeopen. Source-boundreplay.599754sPASS, sixsiteoriginalCcontrolincluded, finalscopedreviewPASS. Currentbranchcodex/neutral-local-normalform-20261018; allrootnumericaljobscomplete. Nextrootproofextendsarmstriptoanyfixedrange nearNN polynomial usingFourierDuhamelpositivecongruence; independentchecksactive. Fixeddeadlineunchanged.
+
+
+Finite-range arm: upstream_support; target higher native kinetic corrections in long-arm endpoint strip; supports restricted compressed-arm control, not full sector pole.

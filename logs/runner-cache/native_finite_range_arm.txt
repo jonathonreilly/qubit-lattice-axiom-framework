@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/native_finite_range_arm.py
+runner_sha256: 2f7ed576621d802716afe50d4e9498c9063705d040127ee569b05fe65a3ea5e0
+input_fingerprint_sha256: a122e3a7c4d006595ebbc308fd5ef100730e0155b435af34b52789f7f7a6576a
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.07
+status: ok
+----- stdout -----
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "lam": 0.2,
+      "N": 24000,
+      "cutoff_error": 0.0,
+      "endpoint_imag": 0.41675784515065245,
+      "max_entry": 0.48500489608977304
+    },
+    {
+      "lam": 0.1,
+      "N": 192000,
+      "cutoff_error": 0.0,
+      "endpoint_imag": 0.4998205365659118,
+      "max_entry": 0.5095766528192923
+    },
+    {
+      "lam": 0.05,
+      "N": 1536000,
+      "cutoff_error": 0.0,
+      "endpoint_imag": 0.505651837548454,
+      "max_entry": 0.5122373738849535
+    }
+  ],
+  "scope": "Chosen cubic correction is a mathematical test, not a native coefficient. Uniform strip and native structural statements are analytical; no full microscopic pole."
+}
+
+----- stderr -----
+

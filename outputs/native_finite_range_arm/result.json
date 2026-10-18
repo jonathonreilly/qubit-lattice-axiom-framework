@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "lam": 0.2,
+      "N": 24000,
+      "cutoff_error": 0.0,
+      "endpoint_imag": 0.41675784515065245,
+      "max_entry": 0.48500489608977304
+    },
+    {
+      "lam": 0.1,
+      "N": 192000,
+      "cutoff_error": 0.0,
+      "endpoint_imag": 0.4998205365659118,
+      "max_entry": 0.5095766528192923
+    },
+    {
+      "lam": 0.05,
+      "N": 1536000,
+      "cutoff_error": 0.0,
+      "endpoint_imag": 0.505651837548454,
+      "max_entry": 0.5122373738849535
+    }
+  ],
+  "scope": "Chosen cubic correction is a mathematical test, not a native coefficient. Uniform strip and native structural statements are analytical; no full microscopic pole."
+}

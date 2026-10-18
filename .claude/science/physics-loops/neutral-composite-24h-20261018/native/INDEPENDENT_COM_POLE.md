@@ -8,7 +8,7 @@ With interval center (left+right)/2, moving either endpoint by one changes the c
 
 Divide the long arm by gamma. The NN operator is -T+(f/gamma)(n+2), its energy is E/gamma and its boundary parameter is Sigma_p(E)/gamma. The Airy formula consequently returns
 
- E=-2gamma+alpha1 gamma^(1/3) f^(2/3)+f(2+a_p)+..., 
+ E=-2gamma+alpha1 gamma^(1/3) f^(2/3)+f(2+a_p)+...,
  a_p=Sigma_p(-2gamma)/(gamma+Sigma_p(-2gamma)).
 
 Thus the physical Airy coefficient is alpha1 gamma^(1/3) lambda^(10/3)/4, and the width is [-Im a_p]/4 times Jz lambda^4. The frozen-boundary endpoint derivative is f gamma/(gamma+Sigma_p)^2 to leading order, hence O(f/gamma) uniformly on the chosen compact p set. There is no missing gamma in the leading width prefactor: it is already inside a_p.

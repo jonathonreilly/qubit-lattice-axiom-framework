@@ -222,3 +222,8 @@ Status: conditional-support; trace: upstream_support; proposal_allowed: false.
 ## Constrained fermion route
 Constrained fermion route: exact Majorana rewriting has noncommuting collinear links; ordered loops reduce to physical corner operators. Six Clifford directions require feature dimension multiple eight; commuting ports obey sum alpha²<=1. Explicit deterministic eight-site code saturates bound but fails native invariance (leakage2.1684/2.5009/3.3817 at lambda.1/.5/1). Independent algebra, capacity, native control and final reviews PASS. No physical fermion, universal encoding no-go or new interaction. Root next tests native spectral subspaces and actual constituent scattering; arbitrary encoded projectors not accepted.
 Status: bounded-support; trace: negative_route_pruning; proposal_allowed: false.
+
+
+## Native pair collision
+Native far charged-pair collision derived through order10: exact shortest-graph and independentFeshbach checks give U40/t=-8/17,U41/t=-4/17,U32/t=30305/161109; 37-siteexcludedcore,20boundarypotentials. Coercivity9/17 excludesfar-channelthresholdresonance. DerivedfiniteintegralB=-.1508561092379226 andscale.150211079390 independentlychecked45digits. Matchedfinitecollisionk=lambda1/4,T=k^-3,R~lambda^-1 yieldsnormsignal4pi/log(1/lambda), errorsalgebraicallysmaller; differentiatedGreen/regularcomplementargumentindependentlyPASS. Finitekpacketcontrolsnotasymptotic(.5-1.1phaseerrors), preservedhonestly. NofixedlambdaS-matrix, empiricalforceorrelativisticclaim.
+Status: conditional-support; trace: upstream_support; proposal_allowed: false.

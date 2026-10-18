@@ -161,9 +161,9 @@ def delta_toggle(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, ta, tb, buf):
 def delta_toggle_cyc(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, ta, tb, beta, buf):
     """cyclic interval (ta, tb) with 0<=ta<beta, ta<tb<=ta+beta."""
     if tb <= beta:
-        return delta_toggle(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, ta, tb, buf)
-    return (delta_toggle(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, ta, beta, buf)
-            + delta_toggle(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, 0.0, tb - beta, buf))
+        return delta_toggle_fast(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, ta, tb, buf)
+    return (delta_toggle_fast(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, ta, beta, buf)
+            + delta_toggle_fast(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, 0.0, tb - beta, buf))
 
 
 @njit(cache=True)
@@ -198,7 +198,7 @@ def sweep(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, V, T, per, nmoves, buf
                 if per:
                     ratio *= np.exp(-V * delta_toggle_cyc(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, t1, t2, T, buf))
                 else:
-                    ratio *= np.exp(-V * delta_toggle(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, t1, t2, buf))
+                    ratio *= np.exp(-V * delta_toggle_fast(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, t1, t2, buf))
             if np.random.random() < ratio:
                 if per and t2 >= T:
                     t2 -= T
@@ -275,7 +275,7 @@ def sweep(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, V, T, per, nmoves, buf
                 if per:
                     ratio *= np.exp(-V * delta_toggle_cyc(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, t1, t2, T, buf))
                 else:
-                    ratio *= np.exp(-V * delta_toggle(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, t1, t2, buf))
+                    ratio *= np.exp(-V * delta_toggle_fast(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, t1, t2, buf))
             if np.random.random() < ratio:
                 if k2 > k:
                     del_kink(kt, kc, p, k2)
@@ -311,7 +311,7 @@ def sweep(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, V, T, per, nmoves, buf
                     lo2 = lo % T
                     d = delta_toggle_cyc(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, lo2, lo2 + (hi - lo), T, buf)
                 else:
-                    d = delta_toggle(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, lo, hi, buf)
+                    d = delta_toggle_fast(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, lo, hi, buf)
                 ratio = np.exp(-V * d)
             if np.random.random() < ratio:
                 del_kink(kt, kc, p, k)
@@ -342,7 +342,7 @@ def sweep(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, V, T, per, nmoves, buf
                     t = np.random.random() * tf
                     ratio = g * tf
                     if useV:
-                        ratio *= np.exp(-V * delta_toggle(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, 0.0, t, buf))
+                        ratio *= np.exp(-V * delta_toggle_fast(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, 0.0, t, buf))
                     if np.random.random() < ratio:
                         flip_s0(s0, plinks, p)
                         if not ins_kink(kt, kc, p, t):
@@ -364,7 +364,7 @@ def sweep(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, V, T, per, nmoves, buf
                         tf2 = kt[p, 1]
                     ratio = 1.0 / (g * tf2)
                     if useV:
-                        ratio *= np.exp(-V * delta_toggle(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, 0.0, t, buf))
+                        ratio *= np.exp(-V * delta_toggle_fast(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, 0.0, t, buf))
                     if np.random.random() < ratio:
                         del_kink(kt, kc, p, 0)
                         flip_s0(s0, plinks, p)
@@ -381,7 +381,7 @@ def sweep(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, V, T, per, nmoves, buf
                     t = tl + np.random.random() * (T - tl)
                     ratio = g * (T - tl)
                     if useV:
-                        ratio *= np.exp(-V * delta_toggle(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, t, T, buf))
+                        ratio *= np.exp(-V * delta_toggle_fast(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, t, T, buf))
                     if np.random.random() < ratio:
                         if not ins_kink(kt, kc, p, t):
                             ok = False
@@ -402,7 +402,7 @@ def sweep(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, g, V, T, per, nmoves, buf
                         tl2 = kt[p, n - 2]
                     ratio = 1.0 / (g * (T - tl2))
                     if useV:
-                        ratio *= np.exp(-V * delta_toggle(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, t, T, buf))
+                        ratio *= np.exp(-V * delta_toggle_fast(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, t, T, buf))
                     if np.random.random() < ratio:
                         del_kink(kt, kc, p, n - 1)
                         stats[9] += 1
@@ -452,3 +452,66 @@ def path_valid(s0, kt, kc, lplaqs, plinks, psign, T):
             if kt[p, i] < 0.0 or kt[p, i] >= T:
                 return False
     return True
+
+
+@njit(cache=True)
+def delta_toggle_fast(s0, kt, kc, lplaqs, plinks, psign, nbh, nnb, p, ta, tb, buf):
+    """Same quantity as delta_toggle, computed with incremental link states (checked equal in tests)."""
+    if tb <= ta:
+        return 0.0
+    tot = 0.0
+    tmid0 = ta  # states evaluated just after ta: no events of q's links exactly at ta except possibly p's own
+    for jq in range(1, nnb[p]):
+        q = nbh[p, jq]
+        st = np.empty(4, dtype=np.int64)
+        inp = np.zeros(4, dtype=np.bool_)
+        m = 0
+        for kk in range(4):
+            l = plinks[q, kk]
+            for k2 in range(4):
+                if plinks[p, k2] == l:
+                    inp[kk] = True
+            # state just after ta: count kinks <= ta
+            par = 0
+            for j in range(4):
+                r = lplaqs[l, j]
+                par += cnt_le(kt, kc, r, tmid0)
+            st[kk] = -s0[l] if (par & 1) else s0[l]
+            if not inp[kk]:
+                for j in range(4):
+                    r = lplaqs[l, j]
+                    i0 = cnt_le(kt, kc, r, ta)
+                    i1 = cnt_lt(kt, kc, r, tb)
+                    for i in range(i0, i1):
+                        buf[2 * m] = kt[r, i]
+                        buf[2 * m + 1] = kk
+                        m += 1
+        # sort events by time (insertion sort; m is small)
+        for a in range(1, m):
+            tv = buf[2 * a]
+            kv = buf[2 * a + 1]
+            b = a - 1
+            while b >= 0 and buf[2 * b] > tv:
+                buf[2 * b + 2] = buf[2 * b]
+                buf[2 * b + 3] = buf[2 * b + 1]
+                b -= 1
+            buf[2 * b + 2] = tv
+            buf[2 * b + 3] = kv
+        prev = ta
+        for e in range(m + 1):
+            nxt = buf[2 * e] if e < m else tb
+            if nxt > prev:
+                c = 0
+                ct = 0
+                for kk in range(4):
+                    sl = psign[kk] * st[kk]
+                    c += sl
+                    ct += -sl if inp[kk] else sl
+                f0 = 1.0 if (c == 4 or c == -4) else 0.0
+                f1 = 1.0 if (ct == 4 or ct == -4) else 0.0
+                tot += (f1 - f0) * (nxt - prev)
+            if e < m:
+                kk = int(buf[2 * e + 1])
+                st[kk] = -st[kk]
+            prev = nxt if nxt > prev else prev
+    return tot

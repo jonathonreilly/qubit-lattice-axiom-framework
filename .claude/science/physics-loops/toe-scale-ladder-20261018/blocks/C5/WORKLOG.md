@@ -25,3 +25,16 @@
   signed-preimage degree 0 for SU(2) ones (calibrated -1 on V_2). PASS=27.
 - s4 early output: fit to V_2 at range 1 with growing unitarity penalty stalls at unitarity defect 3.75e-2
   with W3 = -1 (cannot reach unitarity without crossing det=0) -> compactness corollary (defect bound eps_r>0).
+
+## 19:45 UTC — s4 adversarial fit: falsified my optimizer prediction; s4b added
+- s4 run 1 was killed by the 30-min background limit (log kept: logs/s4_run1_killed_at_30min_timeout_incomplete.log).
+  Its content FALSIFIED my docstring prediction: at range 2 the penalty continuation reached unitarity
+  defect 6.7e-5 with W3 = -1, min|det| ~ 1, sup||U - V_2|| = 0.34 (decreasing defect ~ w^-0.8).
+  Not a contradiction of Theorem K (not exactly unitary) but it is the one place a counterexample could
+  show up numerically: if defect -> 0 with bounded coefficients and det bounded away from 0, the limit
+  would be an exact range-2 unitary with W3 = -1. Wrote s4b_defect_floor.py: continue the penalty to
+  w = 3e6, then pure unitarity minimization (LM), tracking defect / min|det| / W3. Prediction from K +
+  compactness: defect floor eps_2 > 0 or det collapse.
+- s4 rerun with fewer duplicate starts and the empirical assertions replaced by integer-W3 checks
+  (disclosed in the script comment). Chain s4 -> s4b -> s5 running on one core.
+- Draft NOTE.md written.

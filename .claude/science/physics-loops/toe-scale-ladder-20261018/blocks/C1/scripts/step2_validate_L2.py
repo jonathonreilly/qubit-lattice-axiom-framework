@@ -8,7 +8,7 @@ Exact references (independent path: dense diagonalisation, no sampling):
         E_mix = <1|H e^{-TH}|1>/Z;  kin_mid = (1/2w) int_{T/2-w}^{T/2+w} g <A(tau)> dtau (Gauss-Legendre);
         C(tau) from e^{-tau H} between diagonal Fourier operators.
   periodic: Tr(O e^{-beta H})/Tr e^{-beta H} on the component.
-Pass rule (declared in WORKLOG before running): |QMC - exact| <= 3 sigma for each observable.
+Pass rule (declared in WORKLOG before running): |QMC - exact| <= 3 sigma for each observable; sigma = max(seed\n  scatter/sqrt(4), combined binned error) over 4 independent chains (added after single-chain binned errors were\n  found to underestimate long autocorrelations near the RK point).
 """
 import os, sys, time, json
 for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):
@@ -132,26 +132,36 @@ def exact_thermal(V, beta, g=1.0):
 J, dtau = 4, 0.25
 cases = [(0.0, 1.0), (0.0, 4.0), (0.0, 8.0), (0.5, 2.0), (0.5, 6.0), (0.9, 3.0), (0.9, 8.0)]
 seed = 100
+NSEED = 4
 for V, T in cases:
     ex = exact_open(V, T, J, dtau)
-    seed += 1
     t0 = time.time()
-    r = run(2, V, T, nsweep=60000, ntherm=3000, seed=seed, mode=0, J=J, dtau=dtau, factor=2.0, log=LOG)
+    rs = []
+    for k in range(NSEED):
+        seed += 1
+        rs.append(run(2, V, T, nsweep=40000, ntherm=4000, seed=seed, mode=0, J=J, dtau=dtau, factor=2.0, log=LOG))
     ok_all = True
     det = []
+
+    def comb(vals):
+        m = np.array([v[0] for v in vals])
+        s = np.array([v[1] for v in vals])
+        # error: the larger of the seed-to-seed scatter and the combined binned error (autocorrelation-safe)
+        return m.mean(), max(m.std(ddof=1) / np.sqrt(len(m)), np.sqrt((s ** 2).sum()) / len(m))
+
     for k in ("Nf_mid", "ST1", "Emix", "kin_mid", "Nf_end"):
-        m, se = r[k]
+        m, se = comb([r[k] for r in rs])
         z = (m - ex[k]) / se
         ok_all &= abs(z) <= 3
         det.append(f"{k} {m:.4f}+-{se:.4f} vs {ex[k]:.4f} (z={z:+.1f})")
     jmax = min(J, int(round(T / 2 / dtau)))  # correlator defined only for tau <= T/2 (both times inside the path)
     for j in sorted({1, jmax}):
-        m, se = r["C"][j]
+        m, se = comb([r["C"][j] for r in rs])
         z = (m - ex["C"][j]) / se
         ok_all &= abs(z) <= 3
         det.append(f"C({j*dtau}) {m:.4f}+-{se:.4f} vs {ex['C'][j]:.4f} (z={z:+.1f})")
-    ok_all &= r["gauss_or_path_failures"] == 0 and r["valid_final"]
-    check(f"open-path QMC vs exact, L=2 V={V} T={T}", ok_all, "; ".join(det) + f"; {time.time()-t0:.0f}s")
+    ok_all &= all(r["gauss_or_path_failures"] == 0 and r["valid_final"] for r in rs)
+    check(f"open-path QMC vs exact, L=2 V={V} T={T} ({NSEED} seeds)", ok_all, "; ".join(det) + f"; {time.time()-t0:.0f}s")
 
 # periodic control (local moves only): expected to be class-restricted
 for V, beta in [(0.0, 1.0), (0.0, 4.0), (0.5, 4.0)]:

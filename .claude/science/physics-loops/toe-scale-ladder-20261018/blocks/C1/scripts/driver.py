@@ -40,6 +40,48 @@ def st_kmin(PE, L, m=1):
     return v / 3.0
 
 
+SHELLS = {"100": [(1, 0, 0)], "110": [(1, 1, 0), (1, -1, 0)], "111": [(1, 1, 1), (1, 1, -1), (1, -1, 1), (-1, 1, 1)],
+          "200": [(2, 0, 0)], "210": [(2, 1, 0), (2, -1, 0), (1, 2, 0), (-1, 2, 0)]}
+
+
+def shell_vecs(m):
+    import itertools
+    out = set()
+    for v in SHELLS[m]:
+        for perm in itertools.permutations(range(3)):
+            w = tuple(v[i] for i in perm)
+            out.add(w)
+            out.add(tuple(-x for x in w))
+    return sorted(out)
+
+
+def derived_bins(accPE, accPn, L):
+    """per-bin derived quantities: S_T on momentum shells (units 2pi/L), flippability S_n(Q) for Q in {0,pi}^3,
+    E-field S_aa(Q); returned as dict of arrays (nbins,)."""
+    out = {}
+    ST = accPE.sum(axis=-1)  # (nb, L, L, L)
+    for m in SHELLS:
+        vs = shell_vecs(m)
+        if max(abs(x) for v in vs for x in v) * 2 > L:
+            continue
+        out["ST_" + m] = np.mean([ST[:, v[0] % L, v[1] % L, v[2] % L] for v in vs], axis=0)
+    if L % 2 == 0:
+        h = L // 2
+        for Q in [(1, 0, 0), (1, 1, 0), (1, 1, 1), (0, 1, 0), (0, 0, 1), (0, 1, 1), (1, 0, 1)]:
+            idx = tuple(h * q for q in Q)
+            key = "".join(str(q) for q in Q)
+            out["Sn_" + key] = accPn[:, idx[0], idx[1], idx[2], :].sum(-1)
+            for o in range(3):
+                out[f"Sn{o}_" + key] = accPn[:, idx[0], idx[1], idx[2], o]
+                out[f"SE{o}_" + key] = accPE[:, idx[0], idx[1], idx[2], o]
+    # global maxima over q != 0 of bin-averaged spectra (diagnostic)
+    Pn = accPn.mean(0).sum(-1)
+    Pn[0, 0, 0] = 0
+    out["Sn_max_q"] = np.array(np.unravel_index(np.argmax(Pn), Pn.shape))
+    out["Sn_max"] = accPn.sum(-1)[(slice(None),) + tuple(out["Sn_max_q"])]
+    return out
+
+
 def binned_se(x, minbins=32):
     x = np.asarray(x, float)
     n = len(x)
@@ -59,13 +101,15 @@ class Sim:
         self.lat = lat = Lattice(L)
         self.L, self.V, self.T, self.g, self.mode = L, V, T, g, mode
         qmc.seed_rng(seed)
-        self.s0 = (lat.canonical() if init is None else np.array(init)).astype(np.int64)
+        if init is None:
+            init = lat.canonical_rot((seed - 1) % 3)  # seed 1,4,..: canonical; 2,5,..: rotated once; 3,6,..: twice
+        self.s0 = np.array(init).astype(np.int64)
         assert np.all(lat.div(self.s0) == 0)
         if cap is None:
             cap = int(max(32, 4 * g * T + 32))
         self.kt = np.zeros((lat.np, cap))
         self.kc = np.zeros(lat.np, dtype=np.int64)
-        self.buf = np.zeros(4096)
+        self.buf = np.zeros(65536)
         self.stats = np.zeros(10, dtype=np.int64)
         self.pr = np.array([0.3, 0.6, 0.9, 0.5])
         self.nm_fixed = None
@@ -178,6 +222,7 @@ def run(L, V, T, nsweep, ntherm, seed, mode=0, J=0, dtau=0.25, g=1.0, factor=1.0
     res["E_mid"] = (V * res["Nf_mid"][0] - g * 0 - res["kin_mid"][0], float(np.hypot(V * res["Nf_mid"][1], res["kin_mid"][1])))
     if mode == 1:
         res["E_mid"] = (V * res["Nf_mid"][0] - res["kin_mid"][0], float(np.hypot(V * res["Nf_mid"][1], res["kin_mid"][1])))
+    res["bins_derived"] = derived_bins(accPE, accPn, L)
     PEm = accPE.mean(0)
     PEs = accPE.std(0, ddof=1) / np.sqrt(nbins)
     Pnm = accPn.mean(0)
@@ -198,5 +243,5 @@ def run(L, V, T, nsweep, ntherm, seed, mode=0, J=0, dtau=0.25, g=1.0, factor=1.0
     res["ST1_series"] = np.array(sc["ST1"])
     if log is not None:
         print(json.dumps({k: v for k, v in res.items() if not isinstance(v, np.ndarray) and not k.endswith("_bins")
-                          and k != "C_bins"}), file=log, flush=True)
+                          and k not in ("C_bins", "bins_derived")}), file=log, flush=True)
     return res

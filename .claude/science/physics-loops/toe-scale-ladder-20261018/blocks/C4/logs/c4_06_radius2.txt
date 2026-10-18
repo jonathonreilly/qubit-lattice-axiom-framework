@@ -1,0 +1,1 @@
+PASS radius 2 geometry: 125 sites, 729 shifts

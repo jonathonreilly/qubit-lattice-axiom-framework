@@ -19,7 +19,9 @@ base = os.path.join(os.path.dirname(__file__), "..")
 log = open(os.path.join(base, "logs", "prod.jsonl"), "a")
 cap = int(max(64, 3 * T + 64))
 r = run(L, V, T, nsweep, ntherm, seed, mode=0, J=J, dtau=dtau, factor=factor, cap=cap, log=log, every=every)
+bd = r.pop("bins_derived")
 out = {k: np.asarray(v) for k, v in r.items() if isinstance(v, (np.ndarray, list, tuple, float, int))}
+out.update({"bd_" + k: np.asarray(v, dtype=float) for k, v in bd.items()})
 np.savez_compressed(os.path.join(base, "data", f"run_L{L}_V{V}_T{T}_s{seed}.npz"),
                     **{k: (np.asarray(v, dtype=float) if k not in ("stats",) else np.asarray(v)) for k, v in out.items()})
 print(f"done L={L} V={V} T={T} seed={seed} time={r['time_total']:.0f}s fails={r['gauss_or_path_failures']} "

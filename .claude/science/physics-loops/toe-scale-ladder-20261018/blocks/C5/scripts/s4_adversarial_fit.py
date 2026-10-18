@@ -97,7 +97,7 @@ def evaluate(p, H, nh, r):
     return uerr, sup, mind, ws
 
 results = []
-for r, Nf, Nu, starts in ((1, 10, 5, 3), (2, 8, 9, 2)):
+for r, Nf, Nu, starts in ((1, 10, 5, 1), (2, 8, 9, 0)):   # run 1 used 3 and 2 random starts; their trajectories duplicated the truncation start
     H, nh, Cf, Vf, Cu = build(r, Nf, Nu)
     # Fourier truncation of V_2 (projection onto the stencil using a fine grid)
     kq, Vq = V2_on_grid(32, 0.0)
@@ -122,12 +122,11 @@ for r, Nf, Nu, starts in ((1, 10, 5, 3), (2, 8, 9, 2)):
                   f'min|det| {mind:.2e}  W3(N=40,56) {ws[0].real:+.4f} {ws[1].real:+.4f}', flush=True)
             results.append((r, lab, w, uerr, sup, mind, ws))
 
-# assertions (prediction stated in the docstring)
+# Run 1 (log s4_run1_killed_at_30min_timeout_incomplete.log) FALSIFIED the docstring prediction that the
+# penalty endpoints become W3 = 0: at r = 2 the continuation reached defect 6.7e-5 with W3 = -1 and
+# sup||U - V_2|| = 0.34. This does not contradict Theorem K (the matrices are not exactly unitary), but the
+# empirical assertions were removed; the trajectory is reported and s4b tests whether the defect -> 0.
 for (r, lab, w, uerr, sup, mind, ws) in results:
-    if uerr < 1e-3:
-        ck.check(f'[empirical, not implied by Thm K for inexact unitarity] r={r} {lab} w={w}: unitary to {uerr:.1e} => sup||U - V_2|| = {sup:.3f} >= 1 - (unitarity slack)', sup >= 1 - 2 * uerr - 1e-9)
-        ck.check(f'[empirical] r={r} {lab} w={w}: nearly unitary fit has W3 = 0 (got {ws[1].real:+.4f})', abs(ws[1]) < 1e-2)
-neardone = [x for x in results if x[3] < 1e-3]
-ck.check(f'continuation reached nearly unitary fits for every start ({len(neardone)} of {len(results)} stages with err < 1e-3)',
-         len({(x[0], x[1]) for x in neardone}) == len({(x[0], x[1]) for x in results}))
+    ck.check(f'r={r} {lab} w={w}: W3 (GL formula) is an integer to 1e-6 and stable between N=40 and 56 '
+             f'({ws[1].real:+.6f}); defect {uerr:.1e} > 0', abs(ws[1] - round(ws[1].real)) < 1e-6 and abs(ws[1] - ws[0]) < 1e-6 and uerr > 0)
 sys.exit(ck.total())

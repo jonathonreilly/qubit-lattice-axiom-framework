@@ -1,0 +1,172 @@
+# Combined C6 log: concatenation of the two runner logs (verbatim), then the summed totals
+==============================================================================
+A. Consistency, frustration-freeness (-I not in S), log2 GSD k(L)
+==============================================================================
+[PASS] F1 edge BKSF: every ordering (720), uniform flux sectors 0 and pi, L=4: Hermitian commuting, no -I, k=3  (failures=0)
+   corner L=2 done (30s)
+   corner L=3 done (33s)
+   corner L=4 done (41s)
+   corner L=5 done (44s)
+   corner L=6 done (53s)
+   extra L=7 done (56s)
+   extra L=8 done (62s)
+[PASS] all tabulated codes (F1-F5, every L in the table) have Hermitian, pairwise commuting generators  (422 (code, L) cases)
+   k(L) and frustration (negI) summary:
+   F1 L=2: 48 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(0, 0, 1)', '(0, 1, 0)', '(0, 1, 1)', '(1, 0, 0)', '(1, 0, 1)', '(1, 1, 0)', '(1, 1, 1)']
+   F1 L=3: 48 codes, frustrated(-I in S)=42, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)']
+   F1 L=4: 48 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(0, 0, 1)', '(0, 1, 0)', '(0, 1, 1)', '(1, 0, 0)', '(1, 0, 1)', '(1, 1, 0)', '(1, 1, 1)']
+   F1 L=5: 48 codes, frustrated(-I in S)=42, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)']
+   F1 L=6: 48 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(0, 0, 1)', '(0, 1, 0)', '(0, 1, 1)', '(1, 0, 0)', '(1, 0, 1)', '(1, 1, 0)', '(1, 1, 1)']
+   F1 L=7: 16 codes, frustrated(-I in S)=14, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)']
+   F1 L=8: 16 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(0, 0, 1)', '(0, 1, 0)', '(0, 1, 1)', '(1, 0, 0)', '(1, 0, 1)', '(1, 1, 0)', '(1, 1, 1)']
+   F2 L=2: 4 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(1, 1, 1)']
+   F2 L=3: 4 codes, frustrated(-I in S)=2, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)']
+   F2 L=4: 4 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(1, 1, 1)']
+   F2 L=5: 4 codes, frustrated(-I in S)=2, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)']
+   F2 L=6: 4 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(1, 1, 1)']
+   F2 L=7: 4 codes, frustrated(-I in S)=2, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)']
+   F2 L=8: 4 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(1, 1, 1)']
+   F3 L=2: 8 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(0, 0, 1)', '(0, 1, 0)', '(0, 1, 1)', '(1, 0, 0)', '(1, 0, 1)', '(1, 1, 0)', '(1, 1, 1)']
+   F3 L=3: 8 codes, frustrated(-I in S)=7, k over consistent codes=[2]; consistent flux labels=['(0, 0, 0)']
+   F3 L=4: 8 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(0, 0, 1)', '(0, 1, 0)', '(0, 1, 1)', '(1, 0, 0)', '(1, 0, 1)', '(1, 1, 0)', '(1, 1, 1)']
+   F3 L=5: 8 codes, frustrated(-I in S)=7, k over consistent codes=[2]; consistent flux labels=['(0, 0, 0)']
+   F3 L=6: 8 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(0, 0, 1)', '(0, 1, 0)', '(0, 1, 1)', '(1, 0, 0)', '(1, 0, 1)', '(1, 1, 0)', '(1, 1, 1)']
+   F3 L=7: 8 codes, frustrated(-I in S)=7, k over consistent codes=[2]; consistent flux labels=['(0, 0, 0)']
+   F3 L=8: 8 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(0, 0, 1)', '(0, 1, 0)', '(0, 1, 1)', '(1, 0, 0)', '(1, 0, 1)', '(1, 1, 0)', '(1, 1, 1)']
+   F4 L=2: 2 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(1, 1, 1)']
+   F4 L=3: 2 codes, frustrated(-I in S)=1, k over consistent codes=[2]; consistent flux labels=['(0, 0, 0)']
+   F4 L=4: 2 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(1, 1, 1)']
+   F4 L=5: 2 codes, frustrated(-I in S)=1, k over consistent codes=[2]; consistent flux labels=['(0, 0, 0)']
+   F4 L=6: 2 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(1, 1, 1)']
+   F4 L=7: 2 codes, frustrated(-I in S)=1, k over consistent codes=[2]; consistent flux labels=['(0, 0, 0)']
+   F4 L=8: 2 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0)', '(1, 1, 1)']
+   F5 L=2: 16 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=16 labels
+   F5 L=3: 16 codes, frustrated(-I in S)=8, k over consistent codes=[3]; consistent flux labels=['(0, 0, 0, 0)', '(0, 0, 0, 1)', '(0, 1, 0, 0)', '(0, 1, 0, 1)', '(1, 0, 1, 0)', '(1, 0, 1, 1)', '(1, 1, 1, 0)', '(1, 1, 1, 1)']
+   F5 L=4: 16 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=16 labels
+   F5 L=5: 2 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(1, 0, 1, 0)', '(1, 0, 1, 1)']
+   F5 L=6: 2 codes, frustrated(-I in S)=0, k over consistent codes=[3]; consistent flux labels=['(1, 0, 1, 0)', '(1, 0, 1, 1)']
+[PASS] k = 3 (GSD 8) for every consistent F1/F2/F5 code at every tested L and every consistent F3/F4 code at even L
+[PASS] F3/F4 (Majorana encodings) at odd L: k = 2 (GSD 4) whenever consistent [post hoc, explained by the parity constraint]
+[PASS] flux-0 sector is frustration-free (no -I) for F1-F4 at every tested L
+[PASS] every one of the 8 sign sectors of F1/F2/F3/F4 is frustration-free at every tested even L
+[PASS] every tested corner flux pattern is frustration-free at every tested even L
+[PASS] no subextensive GSD growth: k(L) <= 3 for every code and L tested (no fracton behaviour)
+==============================================================================
+B. TQO-1 on the torus: logical operators supported in a cube of side r (cleaning-lemma count)
+==============================================================================
+   F1 L=2 k=3: logicals in cube of side r=1..L: [0, 6]
+   F1u L=2 k=3: logicals in cube of side r=1..L: [0, 6]
+   F2 L=2 k=3: logicals in cube of side r=1..L: [0, 6]
+   F3 L=2 k=3: logicals in cube of side r=1..L: [0, 6]
+   F4 L=2 k=3: logicals in cube of side r=1..L: [0, 6]
+   F5 L=2 k=3: logicals in cube of side r=1..L: [0, 6]
+   F1 L=3 k=3: logicals in cube of side r=1..L: [0, 0, 6]
+   F1u L=3 k=3: logicals in cube of side r=1..L: [0, 0, 6]
+   F2 L=3 k=3: logicals in cube of side r=1..L: [0, 0, 6]
+   F3 L=3 k=2: logicals in cube of side r=1..L: [0, 0, 4]
+   F4 L=3 k=2: logicals in cube of side r=1..L: [0, 0, 4]
+   F5 L=3 k=3: logicals in cube of side r=1..L: [0, 0, 6]
+   F1 L=4 k=3: logicals in cube of side r=1..L: [0, 0, 0, 6]
+   F1u L=4 k=3: logicals in cube of side r=1..L: [0, 0, 0, 6]
+   F2 L=4 k=3: logicals in cube of side r=1..L: [0, 0, 0, 6]
+   F3 L=4 k=3: logicals in cube of side r=1..L: [0, 0, 0, 6]
+   F4 L=4 k=3: logicals in cube of side r=1..L: [0, 0, 0, 6]
+   F5 L=4 k=3: logicals in cube of side r=1..L: [0, 0, 0, 6]
+   F1 L=5 k=3: logicals in cube of side r=1..L: [0, 0, 0, 0, 6]
+   F1u L=5 k=3: logicals in cube of side r=1..L: [0, 0, 0, 0, 6]
+   F2 L=5 k=3: logicals in cube of side r=1..L: [0, 0, 0, 0, 6]
+   F3 L=5 k=2: logicals in cube of side r=1..L: [0, 0, 0, 0, 4]
+   F4 L=5 k=2: logicals in cube of side r=1..L: [0, 0, 0, 0, 4]
+   F5 L=5 k=3: logicals in cube of side r=1..L: [0, 0, 0, 0, 6]
+   F1 L=6 k=3: logicals in cube of side r=1..L: [0, 0, 0, 0, 0, 6]
+   F1u L=6 k=3: logicals in cube of side r=1..L: [0, 0, 0, 0, 0, 6]
+   F2 L=6 k=3: logicals in cube of side r=1..L: [0, 0, 0, 0, 0, 6]
+   F3 L=6 k=3: logicals in cube of side r=1..L: [0, 0, 0, 0, 0, 6]
+   F4 L=6 k=3: logicals in cube of side r=1..L: [0, 0, 0, 0, 0, 6]
+   F5 L=6 k=3: logicals in cube of side r=1..L: [0, 0, 0, 0, 0, 6]
+[PASS] TQO-1 (torus): no nontrivial logical is supported in any cube of side r <= L-1; the full torus carries all 2k  (30 (code, L) cases)
+==============================================================================
+C. TQO-2 / local topological order: commutant of the generators in B+W restricted to B = their span
+==============================================================================
+   F1 (torus L=12) cube side r=1, W=3: defect=0, all overlapping generators inside B+W: True
+   F1 (torus L=12) cube side r=2, W=3: defect=0, all overlapping generators inside B+W: True
+   F1 (torus L=12) cube side r=3, W=3: defect=0, all overlapping generators inside B+W: True
+   F1 (torus L=12) cube side r=4, W=3: defect=0, all overlapping generators inside B+W: True
+   F1 (torus L=12) cube side r=1, W=3: defect=0, all overlapping generators inside B+W: True
+   F1 (torus L=12) cube side r=2, W=3: defect=0, all overlapping generators inside B+W: True
+   F1 (torus L=12) cube side r=3, W=3: defect=0, all overlapping generators inside B+W: True
+   F1 (torus L=12) cube side r=4, W=3: defect=0, all overlapping generators inside B+W: True
+   F2 (torus L=12) cube side r=1, W=3: defect=0, all overlapping generators inside B+W: True
+   F2 (torus L=12) cube side r=2, W=3: defect=0, all overlapping generators inside B+W: True
+   F2 (torus L=12) cube side r=3, W=3: defect=0, all overlapping generators inside B+W: True
+   F2 (torus L=12) cube side r=4, W=3: defect=0, all overlapping generators inside B+W: True
+   F3 (torus L=10) cube side r=1, W=2: defect=0, all overlapping generators inside B+W: True
+   F3 (torus L=10) cube side r=2, W=2: defect=0, all overlapping generators inside B+W: True
+   F3 (torus L=10) cube side r=3, W=2: defect=0, all overlapping generators inside B+W: True
+   F3 (torus L=10) cube side r=4, W=2: defect=0, all overlapping generators inside B+W: True
+   F4 (torus L=10) cube side r=1, W=2: defect=0, all overlapping generators inside B+W: True
+   F4 (torus L=10) cube side r=2, W=2: defect=0, all overlapping generators inside B+W: True
+   F4 (torus L=10) cube side r=3, W=2: defect=0, all overlapping generators inside B+W: True
+   F4 (torus L=10) cube side r=4, W=2: defect=0, all overlapping generators inside B+W: True
+   F5 (torus L=8) cube side r=1, W=2: defect=0, all overlapping generators inside B+W: True
+   F5 (torus L=8) cube side r=2, W=2: defect=0, all overlapping generators inside B+W: True
+   F5 (torus L=8) cube side r=3, W=2: defect=0, all overlapping generators inside B+W: True
+[PASS] local TQO (BHM TQO-2, stabilizer form) holds for every tested cube: defect 0 with enlargement W (3 for F1/F2, 2 for F3-F5)  (23 cases)
+==============================================================================
+D. Explicit string / membrane logical operators
+==============================================================================
+   F1 L=4: logicals commute=True, pairing string_a vs membrane_b=[[1, 0, 0], [0, 1, 0], [0, 0, 1]], independent mod S=6, translates equivalent=True, string weights=[12, 4, 4], membrane weights=[16, 16, 16]
+   F2 L=4: logicals commute=True, pairing string_a vs membrane_b=[[1, 0, 0], [0, 1, 0], [0, 0, 1]], independent mod S=6, translates equivalent=True, string weights=[16, 8, 8], membrane weights=[16, 16, 16]
+   F3 L=4: logicals commute=True, pairing string_a vs membrane_b=[[1, 0, 0], [0, 1, 0], [0, 0, 1]], independent mod S=6, translates equivalent=True, string weights=[8, 12, 8], membrane weights=[32, 40, 24]
+   F4 L=4: logicals commute=True, pairing string_a vs membrane_b=[[1, 0, 0], [0, 1, 0], [0, 0, 1]], independent mod S=6, translates equivalent=True, string weights=[8, 12, 8], membrane weights=[32, 40, 24]
+   F1 L=6: logicals commute=True, pairing string_a vs membrane_b=[[1, 0, 0], [0, 1, 0], [0, 0, 1]], independent mod S=6, translates equivalent=True, string weights=[18, 6, 6], membrane weights=[36, 36, 36]
+   F2 L=6: logicals commute=True, pairing string_a vs membrane_b=[[1, 0, 0], [0, 1, 0], [0, 0, 1]], independent mod S=6, translates equivalent=True, string weights=[24, 12, 12], membrane weights=[36, 36, 36]
+   F3 L=6: logicals commute=True, pairing string_a vs membrane_b=[[1, 0, 0], [0, 1, 0], [0, 0, 1]], independent mod S=6, translates equivalent=True, string weights=[12, 18, 12], membrane weights=[72, 90, 54]
+   F4 L=6: logicals commute=True, pairing string_a vs membrane_b=[[1, 0, 0], [0, 1, 0], [0, 0, 1]], independent mod S=6, translates equivalent=True, string weights=[12, 18, 12], membrane weights=[72, 90, 54]
+[PASS] even L: 3 straight strings + 3 membranes commute with S, are independent mod S and pair as the identity matrix (F1-F4)
+[PASS] translated strings / membranes are equivalent mod S (needed for the distance bound)
+   F5 L=4: corner strings commute with S=True, independent mod S=3, weights=[28, 28, 20]
+[PASS] corner code: three straight corner-hop strings are independent nontrivial logicals (L=4)
+==============================================================================
+E. Point-charge exchange statistics (Kitaev hopping test, Levin-Wen straight-leg T-junction)
+==============================================================================
+   F1 order0: hopping test (ell=1) signs {-1: 20}; straight legs ell=3 {-1: 20}
+   F1 sample: hopping test (ell=1) signs {-1: 20}; straight legs ell=3 {-1: 20}
+   F2: hopping test (ell=1) signs {-1: 20}; straight legs ell=3 {-1: 20}
+   F3: hopping test (ell=1) signs {-1: 20}; straight legs ell=3 {-1: 20}
+   F4: hopping test (ell=1) signs {-1: 20}; straight legs ell=3 {-1: 20}
+   F1 untwisted control: hopping test (ell=1) signs {1: 20}; straight legs ell=3 {1: 20}
+[PASS] every twisted family (F1, F2, F3, F4): exchange sign -1 for all 20 direction triples, ell = 1 and 3 (fermion)
+[PASS] control: untwisted toric code gives +1 for all 20 triples (boson)
+[PASS] F1: all 720 orderings give the fermionic hopping-test sign for all 20 triples (L=4)
+[PASS] exchange sign is unchanged under random stabilizer dressing of the legs (30 trials)
+   F5 corner: hopping test at the 12 corners of a site, 20 triples each: {-1: 240}
+[PASS] F5 corner charge: hopping-test sign -1 for all 240 (corner, triple) cases
+==============================================================================
+per_element: every generator pair sharing a qubit checked for commutation; all 720 F1 orderings at L=4 (sections A, E)
+per_site: generators and hops are built site by site; TQO counts resolve individual sites of cubes of side r
+per_mode: checked and not executed - no momentum-resolved or spectral quantity is computed in this runner
+per_block: cubes of side r (TQO-1 up to r=L, TQO-2 up to r=4) are the block-level objects actually tested
+lattice_wide: k(L) on tori L=2..6 (corner up to 6), string/membrane logical algebra on L=4,6
+elapsed 79s
+TOTAL: PASS=18 FAIL=0
+Local homology of the underlying 2-complexes (open boxes of Z^3)
+   cubic  r=1: cycles in B 0, filled by cells in B+1 0; closed cochains on B 0, coboundaries from B+1 0
+   cubic  r=2: cycles in B 5, filled by cells in B+1 5; closed cochains on B 0, coboundaries from B+1 0
+   cubic  r=3: cycles in B 28, filled by cells in B+1 28; closed cochains on B 1, coboundaries from B+1 1
+   cubic  r=4: cycles in B 81, filled by cells in B+1 81; closed cochains on B 8, coboundaries from B+1 8
+   cubic  r=5: cycles in B 176, filled by cells in B+1 176; closed cochains on B 27, coboundaries from B+1 27
+   corner r=1: cycles in B 13, filled by cells in B+1 13; closed cochains on B 0, coboundaries from B+1 0
+   corner r=2: cycles in B 145, filled by cells in B+1 145; closed cochains on B 24, coboundaries from B+1 24
+   corner r=3: cycles in B 541, filled by cells in B+1 541; closed cochains on B 144, coboundaries from B+1 144
+   corner r=4: cycles in B 1345, filled by cells in B+1 1345; closed cochains on B 432, coboundaries from B+1 432
+[PASS] (H1-loc) every cycle in a cube B (side 1..5 cubic, 1..4 corner) is a sum of 2-cells in B+1
+[PASS] (H^1-loc) every cell-closed cochain on B is the coboundary of a vertex function on B+1
+Torus homology (fixes the expected k = dim H_1 = dim H^1 = 3)
+   cubic torus L=3: |V|=27 |E|=81 |F|=81 dim H_1 = 3
+   corner torus L=3: |V|=324 |E|=972 |F|=1107 dim H_1 = 3
+   cubic torus L=4: |V|=64 |E|=192 |F|=192 dim H_1 = 3
+   corner torus L=4: |V|=768 |E|=2304 |F|=2624 dim H_1 = 3
+[PASS] dim H_1(T^3; F2) = 3 for the cubic and the corner complexes on L = 3, 4 tori
+TOTAL: PASS=3 FAIL=0
+TOTAL: PASS=21 FAIL=0

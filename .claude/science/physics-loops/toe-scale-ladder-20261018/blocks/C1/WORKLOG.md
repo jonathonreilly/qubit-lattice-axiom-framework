@@ -61,3 +61,45 @@ S_T(k_min) and E/N_p agree within 2 combined sigma; otherwise flagged.
 Errors: binning with bin-size scan; quoted error = plateau (largest of the last bins) of binned SE.
 Validation pass criteria vs exact L=2 (open path, finite T): |QMC - exact| <= 3 sigma for every
 checked observable; additionally all relative errors < 1% for E.
+
+## 19:23 UTC — step 1 done; QMC built; a sampler bug found and fixed; validation re-running
+
+- Step 1 (`scripts/step1_stoquastic.py`, `logs/step1_stoquastic.log`, TOTAL PASS=26 FAIL=0):
+  off-diagonals are -g x {0,1} (stoquastic for g>0 by construction, no multiplicity, distinct plaquette
+  link sets for L=2..12); diagonal gauge Lambda = {x-links, y+z even} U {y-links, z even} hits every
+  plaquette an odd number of times for every even L (checked L=2..12, proved in NOTE), so
+  D H(g) D = H(-g) on every Gauss/winding sector; independent GF(2) solve agrees (L=2,4,6), and for odd L
+  (3,5) no diagonal gauge exists (plane-cycle obstruction, L^2 odd). L=2 exact: 9600/937/864 reproduced,
+  E0(V=0) = -9.0267209135 reproduced, +g/-g spectra equal on all 937 components for V = 0, 0.5, 0.9.
+- QMC: `scripts/qmc.py` (numba), `scripts/driver.py`. Open path, uniform trial both ends, pair
+  insert/remove, shift, single-kink end moves.
+- **Bug found by exact tests and fixed:** the first validation showed kink-count / kinetic estimators
+  low by 1.5-3% (z up to -4.5 against the exact identity <n> = gT<N_f(end)> at V=0). Isolation:
+  single-move transition rates matched a pure-Python reference exactly, but the *sweep* used a number of
+  moves that depended on the current kink count; a state-dependent number of moves between
+  measurements biases the sampled law. Fixed by freezing moves/sweep after thermalisation; the
+  fixed-end-state P(n) histogram then matches the exact distribution (T=0.3: 0.1675/0.2002/0.2403 vs
+  exact 0.1665/0.1998/0.2397). Also: the correlator check is only defined for tau <= T/2.
+- Faster V-term integral `delta_toggle_fast` checked bit-identical to the reference on 8524 random
+  nonzero intervals (logs/test_delta_fast.log). (No real speed-up; V != 0 is ~12x slower than V = 0.)
+- Production queue A (V=0, L=4..12, T=2L and T=L^2/2-type checks) launched 19:22.
+
+## 19:40 UTC — slow MC modes found; production restructured (multi-start seeds, symmetrised estimators)
+
+- First validation (single chains) passed 8/9; the failure (V=0.9, T=8: S_T z=-4.5) was traced to
+  underestimated errors: three fresh 150k-sweep chains give S_T 0.809(14), 0.785(11), 0.800(10) vs exact
+  0.7913 and binned SEs that do not plateau (logs/dbg_v09.log). Validation now uses 4 independent chains
+  per case and sigma = max(seed scatter/2, combined binned SE) (re-running, logs/step2_validate_L2.log).
+- Periodic-trace local-move control vs exact thermal trace on the 864 component (L=2): energy -7.92 vs
+  -9.02 at beta=4 (V=0), N_f z=+6.8 — the predicted class restriction is real and large.
+- L=4, V=0 pilots (logs/dbg_tau_L4*.log, data/dbg_tau_*.npy): S_T(k_min) has a slow MC mode
+  (autocorrelation tail ~0.1 decaying over ~3e4 sweeps), anticorrelated with N_flip (block corr -0.75).
+  Flippability spectra are NOT cubic-symmetric within one chain (e.g. L=6 T=12: S_n(0,pi,0)=4.8 vs
+  S_n(pi,0,0)=0.9): the chain keeps a pattern related to the (symmetry-breaking) canonical start.
+  Consequences adopted (before looking at L>=8 data): (i) only cubic-star-symmetrised estimators are
+  used for decisions: m2(star) = sum over the 3 Q's of a star and the 3 orientations of S_n(Q), / N_v;
+  S_T averaged over the 6 k_min directions; (ii) every point is run from >=2 different starts
+  (canonical state rotated 0/1/2 times by the cyclic axis permutation, seed s -> (s-1) mod 3) and the
+  error is max(seed scatter, binned); (iii) agreement between starts is itself reported as a mixing check.
+- The single-chain S_T(k_min) at L=4 depends on T (T=4: ~0.345, T=8: ~0.339, T=16: 0.268 seed 1); not
+  yet known whether projection or mixing. To be resolved by the multi-start runs.

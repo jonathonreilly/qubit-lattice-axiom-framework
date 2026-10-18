@@ -36,3 +36,31 @@ support growth of alpha^n(X_0), n <= 32 (numerical evidence; exact F2 convolutio
   sign    tau-shapes [(0, 0, 0), (0, 0, 1)] M-shapes [(0, 0, 0), (0, 0, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 7, 37, 199, 1069, 5743]; front radius = n for all n: True; log-log slope 1.93
   sign    tau-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1)] M-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 19, 157, 1339, 10429, 82027]; front radius = n for all n: True; log-log slope 2.65
   sign    tau-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 1, 1)] M-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 27, 125, 1331, 9261, 79507]; front radius = n for all n: True; log-log slope 2.70
+  sign    tau-shapes [(0, 0, 0), (0, 0, 1), (1, 1, 1)] M-shapes [(0, 0, 0), (0, 0, 1), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 15, 133, 991, 7293, 53975]; front radius = n for all n: True; log-log slope 2.52
+  sign    tau-shapes [(0, 0, 0), (0, 1, 1)] M-shapes [(0, 0, 0), (0, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 13, 97, 757, 5881, 45709]; front radius = n for all n: True; log-log slope 2.44
+  sign    tau-shapes [(0, 0, 0), (0, 1, 1), (1, 1, 1)] M-shapes [(0, 0, 0), (0, 1, 1), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 21, 145, 1165, 9465, 75893]; front radius = n for all n: True; log-log slope 2.64
+  sign    tau-shapes [(0, 0, 0), (1, 1, 1)] M-shapes [(0, 0, 0), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 9, 65, 473, 3441, 25033]; front radius = n for all n: True; log-log slope 2.24
+  sign    tau-shapes [(0, 0, 1)] M-shapes [(0, 0, 0), (0, 0, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [7, 13, 49, 265, 1561, 9337]; front radius = n for all n: True; log-log slope 2.06
+  sign    tau-shapes [(0, 0, 1), (0, 1, 1)] M-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [19, 37, 193, 1465, 11497, 91945]; front radius = n for all n: True; log-log slope 2.65
+  sign    tau-shapes [(0, 0, 1), (0, 1, 1), (1, 1, 1)] M-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [27, 53, 177, 1577, 11577, 101081]; front radius = n for all n: True; log-log slope 2.66
+  sign    tau-shapes [(0, 0, 1), (1, 1, 1)] M-shapes [(0, 0, 0), (0, 0, 1), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [15, 29, 145, 1129, 9017, 72537]; front radius = n for all n: True; log-log slope 2.57
+  sign    tau-shapes [(0, 1, 1)] M-shapes [(0, 0, 0), (0, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [13, 25, 121, 889, 7033, 56185]; front radius = n for all n: True; log-log slope 2.50
+  sign    tau-shapes [(0, 1, 1), (1, 1, 1)] M-shapes [(0, 0, 0), (0, 1, 1), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [21, 41, 169, 1321, 10025, 81705]; front radius = n for all n: True; log-log slope 2.61
+  sign    tau-shapes [(1, 1, 1)] M-shapes [(0, 0, 0), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [9, 17, 81, 593, 4689, 37457]; front radius = n for all n: True; log-log slope 2.36
+  trivial tau-shapes [(0, 0, 0), (0, 0, 1)] M-shapes [(0, 0, 0), (0, 0, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 7, 37, 199, 1069, 5743]; front radius = n for all n: True; log-log slope 1.93
+  trivial tau-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1)] M-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 19, 157, 1339, 10429, 82027]; front radius = n for all n: True; log-log slope 2.65
+  trivial tau-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 1, 1)] M-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 27, 125, 1331, 9261, 79507]; front radius = n for all n: True; log-log slope 2.70
+  trivial tau-shapes [(0, 0, 0), (0, 0, 1), (1, 1, 1)] M-shapes [(0, 0, 0), (0, 0, 1), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 15, 133, 991, 7293, 53975]; front radius = n for all n: True; log-log slope 2.52
+  trivial tau-shapes [(0, 0, 0), (0, 1, 1)] M-shapes [(0, 0, 0), (0, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 13, 97, 757, 5881, 45709]; front radius = n for all n: True; log-log slope 2.44
+  trivial tau-shapes [(0, 0, 0), (0, 1, 1), (1, 1, 1)] M-shapes [(0, 0, 0), (0, 1, 1), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 21, 145, 1165, 9465, 75893]; front radius = n for all n: True; log-log slope 2.64
+  trivial tau-shapes [(0, 0, 0), (1, 1, 1)] M-shapes [(0, 0, 0), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [1, 9, 65, 473, 3441, 25033]; front radius = n for all n: True; log-log slope 2.24
+  trivial tau-shapes [(0, 0, 1)] M-shapes [(0, 0, 0), (0, 0, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [7, 13, 49, 265, 1561, 9337]; front radius = n for all n: True; log-log slope 2.06
+  trivial tau-shapes [(0, 0, 1), (0, 1, 1)] M-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [19, 37, 193, 1465, 11497, 91945]; front radius = n for all n: True; log-log slope 2.65
+  trivial tau-shapes [(0, 0, 1), (0, 1, 1), (1, 1, 1)] M-shapes [(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [27, 53, 177, 1577, 11577, 101081]; front radius = n for all n: True; log-log slope 2.66
+  trivial tau-shapes [(0, 0, 1), (1, 1, 1)] M-shapes [(0, 0, 0), (0, 0, 1), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [15, 29, 145, 1129, 9017, 72537]; front radius = n for all n: True; log-log slope 2.57
+  trivial tau-shapes [(0, 1, 1)] M-shapes [(0, 0, 0), (0, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [13, 25, 121, 889, 7033, 56185]; front radius = n for all n: True; log-log slope 2.50
+  trivial tau-shapes [(0, 1, 1), (1, 1, 1)] M-shapes [(0, 0, 0), (0, 1, 1), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [21, 41, 169, 1321, 10025, 81705]; front radius = n for all n: True; log-log slope 2.61
+  trivial tau-shapes [(1, 1, 1)] M-shapes [(0, 0, 0), (1, 1, 1)]: |supp a^n(X0)| n=1,2,4,8,16,32: [9, 17, 81, 593, 4689, 37457]; front radius = n for all n: True; log-log slope 2.36
+PASS light cone: n*max_v|v|_inf <= max(radius a^n(X0), radius a^n(Z0)) <= n for all reps, n<=32
+  representatives whose front radius saturates n at every step: 28/28
+TOTAL: PASS=21 FAIL=0

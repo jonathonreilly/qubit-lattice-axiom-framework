@@ -92,6 +92,26 @@ class Lattice:
             s[3 * v + 2] = (-1) ** x
         return s
 
+    def canonical_rot(self, k):
+        """canonical state with axes cyclically permuted k times (x->y->z): a symmetry image of the canonical state."""
+        s = self.canonical()
+        if k % 3 == 0:
+            return s
+        L = self.L
+        out = np.zeros_like(s)
+        for v in range(self.nv):
+            c = self.coords[v]
+            for a in range(3):
+                # rotation R: (x,y,z)->(z,x,y) applied k times; link (v,a) -> (Rv, a+1)
+                cc = c.copy()
+                aa = a
+                for _ in range(k % 3):
+                    cc = np.array([cc[2], cc[0], cc[1]])
+                    aa = (aa + 1) % 3
+                out[3 * self.vid(cc) + aa] = s[3 * v + a]
+        assert np.all(self.div(out) == 0)
+        return out
+
     def gauge_set(self):
         """Lambda = {x-links with y+z even} U {y-links with z even} (even L)."""
         lam = np.zeros(self.nl, dtype=bool)

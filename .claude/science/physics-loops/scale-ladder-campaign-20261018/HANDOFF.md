@@ -9,3 +9,9 @@
   - B15 (fermion in closure);
   - B16 (Maxwell in closure).
   Next: integrate these; then a cross-lane statement on the common cone across species; then a final summary.
+- **07:25Z.** Done:
+  - B13 check: EM row corrected, V ≤ 0 claim withdrawn.
+  - B15 (fermion closure) and B16 (Maxwell closure): one cone for spins 0, ½ and 1 at leading order.
+  - B17: anisotropic cones fail closure, so the eight-node step's doublers are rejected.
+
+  Running: the B15 check, the B16 check, the B14 note writer, and B18 (taste symmetry, isotropic doublers).

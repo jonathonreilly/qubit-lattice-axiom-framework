@@ -163,3 +163,6 @@ Ground-selection block actual_current_surface_status: conditional-support; propo
 
 
 Ten-layer block actual_current_surface_status: conditional-support; proposal_allowed: false; bare_retained_allowed: false. Final focused review pass, independent audit still required. Hamiltonian/geometry/weak anisotropy and joint-family selected ground remain premises.
+
+
+Bound-mode environment actual_current_surface_status: conditional-support; proposal_allowed: false; bare_retained_allowed: false. Final scoped review pass; no audit verdict. Prepared protocol and separate static coefficient scattering are not a relaxed universal coupling.

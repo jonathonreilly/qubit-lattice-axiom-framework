@@ -115,3 +115,6 @@ Positive plane-character vacuum now derived at each fixed R sufficiently small l
 
 
 Ten-layer native attraction and coupling derived without a new term. Positive coefficient curvature requires q<<lambda and is not uniform actual-H dispersion. Unknown common diagonal energy shifts explicitly retained; no fitted or independently tested observations.
+
+
+Matched dressed injection/return is a protocol premise; bare pulse not derived. Static fixed-flux scattering omits neutral recoil and other vertices. Lawler-Limic potential-kernel/killed-Green theorem is a declared mathematical input, with L0 normalization divided by4; no observational values imported.

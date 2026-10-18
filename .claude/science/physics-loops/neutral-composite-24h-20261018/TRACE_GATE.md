@@ -163,3 +163,6 @@ Ground-selection block: upstream_support; partially closes prepared symmetry-sec
 
 
 Ten-layer block: upstream_support; derives native attraction, positive coefficient curvature and original source coupling for selected-fibre neutral mode. Partially closes user scalar-mode/coupling request; unresolved finite-H resolved dispersion, full heavy channel and 3D/empirical identification.
+
+
+Bound-mode environment: upstream_support, partially closes prepared source/detector coupling to derived pole and corrects free-environment substitution. Full energy-conserving native heavy-plus-neutral channel remains open.

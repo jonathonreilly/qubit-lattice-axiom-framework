@@ -74,6 +74,15 @@ for j, r in sample:
     if not (on_grid and contains): bad.append((j, r['Lsp'], len(D), idx))
 print("   (D on grid, D >= Lambda_sp, D == Lambda_sp) ->", dict(stat))
 for b in bad[:5]: print("   problem:", b)
+# diagnostic for off-grid D (non-dyadic candidates): are they spectral tastes, and do they have k-independent U intertwiners?
+for (j, ns, nD, idx) in bad[:5]:
+    w = bld(j[1], j[2])
+    for t in (np.pi / 3 * np.array([1, 0, 0]), np.pi / 6 * np.array([1, 1, 1]), np.pi / 6 * np.array([1, 0, 0]), 2 * np.pi / 3 * np.array([1, 1, 1])):
+        sp = all(np.allclose(np.sort(np.mod(np.angle(np.linalg.eigvals(Wb(w, (k + t)[None])[0])), 2 * np.pi)),
+                             np.sort(np.mod(np.angle(np.linalg.eigvals(Wb(w, k[None])[0])), 2 * np.pi)), atol=1e-7) for k in KT2)
+        rows = [np.kron(Wb(w, (k + t)[None])[0], np.eye(12)) - np.kron(np.eye(12), Wb(w, k[None])[0].T) for k in KT2]
+        dU = inter_dim(w, t / (np.pi / 16), 'U')            # library test: counts only invertible (unitary-type) solutions
+        print(f"   off-grid diagnostic {j[1]} {j[2]} t/pi = {np.round(t / np.pi, 4)}: spectral {sp}, invertible U-intertwiner dim {dU}")
 check("D = 2pi M*(p <= pmax) lies on the (pi/16)Z^3 grid ([Z^3 : M] = |D cap grid|) for every sampled word", all(k[0] for k in stat), f"{sum(v for k, v in stat.items() if k[0])}/{len(sample)}")
 check("D contains the detected Lambda_sp for every sampled word (the exact characterisation is consistent with the detector)", all(k[1] for k in stat))
 check("D == Lambda_sp (detector complete, no taste finer than (pi/8)Z^3) in at least 90% of sampled words", sum(v for k, v in stat.items() if k[2]) >= 0.9 * len(sample), f"{sum(v for k, v in stat.items() if k[2])}/{len(sample)}")

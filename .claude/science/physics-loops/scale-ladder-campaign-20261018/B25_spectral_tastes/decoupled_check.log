@@ -1,0 +1,6 @@
+[PASS] [W(k), Z_i] = 0 for i = x, y, z (block-diagonal over the coordinate planes)  
+[PASS] plane-z block spectrum is independent of k_z (bands flat along e_z)  
+   census words with index > 2: [(('S4', 'p', 'S4', 'q', 'S4', 'o'), ('P9', 'L101', 'P6'), 'bcc(8)', 'sc(4)', 4)]
+[PASS] every census word with index > 2 has only plane/L202/identity on-site letters (decoupled)  
+
+TOTAL: PASS=3 FAIL=0   [0s]

@@ -5,6 +5,8 @@ python3 letter_rules.py > letter_rules.log 2>&1
 python3 census.py 4 > census.log 2>&1
 python3 pin_audit.py > pin_audit.log 2>&1
 python3 kdep_mechanism.py > kdep_mechanism.log 2>&1
+python3 decoupled_check.py > decoupled_check.log 2>&1
 python3 fourier_check.py > fourier_check.log 2>&1
 ./run_screens.sh
-grep -h TOTAL letter_rules.log census.log pin_audit.log kdep_mechanism.log fourier_check.log screen25_S.log screen25_S2.log screen25_S4.log
+python3 best_probe.py > best_probe.log 2>&1
+grep -h TOTAL letter_rules.log census.log pin_audit.log kdep_mechanism.log decoupled_check.log fourier_check.log screen25_S.log screen25_S2.log screen25_S4.log best_probe.log

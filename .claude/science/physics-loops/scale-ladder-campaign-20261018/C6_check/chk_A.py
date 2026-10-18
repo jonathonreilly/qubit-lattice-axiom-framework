@@ -264,27 +264,25 @@ for Fb in itertools.product((0, 1), repeat=4):
         c = [compose_sign([Tops[a]] * 4) for a in range(3)]
         assert all(np.allclose(ci, ci[0]) for ci in c)
         cs = [int(round(ci[0])) for ci in c]
-        # orthonormal basis of each joint eigenspace via projector applied to the identity
-        def proj(k):
-            X = np.eye(V, dtype=complex)
-            for a in range(3):
-                acc = np.zeros_like(X); Y = X.copy()
-                for n in range(4):
-                    acc += np.exp(-1j * k[a] * n) * Y
-                    Y = apply(Tops[a], Y)
-                X = acc / 4
-            return X
-        ks = []
+        # basis of each joint eigenspace: Bloch sums  sum_n e^{-i k.n} T^n delta_{(0,c)}  over the 64 cells
+        tpow = {}
         for nn in itertools.product(range(4), repeat=3):
-            k = [(2 * np.pi * nn[a] + (np.pi if cs[a] == -1 else 0)) / 4 for a in range(3)]
-            ks.append((nn, np.array(k)))
+            X = np.zeros((V, 12))
+            for cc in range(12):
+                X[cc, cc] = 1.0          # vertex ids 0..11 are the corners of site 0
+            for a in range(3):
+                for _ in range(nn[a]):
+                    X = apply(Tops[a], X)
+            tpow[nn] = X
         bases = {}
-        for nn, k in ks:
-            Pk = proj(k)
-            w, U = np.linalg.eigh((Pk + Pk.conj().T) / 2)
-            Q = U[:, w > 0.5]
-            assert Q.shape[1] == 12, Q.shape
-            bases[nn] = Q
+        for nn0 in itertools.product(range(4), repeat=3):
+            k = np.array([(2 * np.pi * nn0[a] + (np.pi if cs[a] == -1 else 0)) / 4 for a in range(3)])
+            Q = sum(np.exp(-1j * (k @ np.array(n))) * X for n, X in tpow.items())
+            Q, rr = np.linalg.qr(Q)
+            assert np.abs(np.diag(rr)).min() > 1e-6
+            for a in range(3):
+                assert np.allclose(apply(Tops[a], Q), np.exp(1j * k[a]) * Q)
+            bases[nn0] = Q
         fixed = []
         for nn, Q in bases.items():
             ok = True

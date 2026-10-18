@@ -1,9 +1,9 @@
 ALIGN2 [S]: 780 words
-  k* level stats: {'D+D-': 220, 'm8': 260, 'm12': 80, 'm4': 400, 'D2': 160, 'm10': 160, 'm6': 320}; screened (kind, fermi): {('D+D-', True): 136, ('D+D-', False): 84, ('D2', True): 160}  [22s]
+  k* level stats: {'D+D-': 220, 'm8': 260, 'm12': 80, 'm4': 400, 'D2': 160, 'm10': 160, 'm6': 320}; screened (kind, fermi): {('D+D-', True): 136, ('D+D-', False): 84, ('D2', True): 160}  [15s]
 [PASS] r(k) real on every grid (det W k-independent)  max 1.4e-14
   stage C stages: {'early': 60, 'full': 24}
 [PASS] DPT sanity: every survivor's k* node is an isotropic untilted cone set at |n_S| sqrt2/3  84/84
-  survivors 84; CLEAN: 0  [181s]
+  survivors 84; CLEAN: 0  [226s]
   survivors by (Lambda_u, Lambda_sp, Lambda_sp(E), kdep): {('sc(16)', 'bcc(16)', 'bcc(16)', True): 84}
   defective nodes by (type mod Lambda_u, type mod Lambda_sp(E), verdict, multiplicity): {('low', 'low', 'aniso', 4): 1240, ('C2', 'C2', 'aniso', 4): 580, ('gen', 'gen', 'aniso', 2): 400, ('gen', 'gen', 'band', 1): 80}
    best: ('S', 'p', 'S', 'o', 'S', 'q', 'S', 'o') ('P1', 'L112', 'P11', 'L112') E=+0.0000 D+D- Lu=sc(16) LspE=bcc(16) nbad=20 bad=[((np.float64(-0.62224), np.float64(0.79376), np.float64(-0.37776)), ('gen', 'gen'), 2, 'aniso', 0.146088, 2.323853), ((np.float64(-0.61703), np.float64(-0.19163), np.float64(-0.38297)), ('gen', 'gen'), 2, 'aniso', 0.135473, 1.364369), ((np.float64(-0.12204), np.float64(0.29505), np.float64(0.12204)), ('gen', 'gen'), 2, 'aniso', 0.104405, 2.261369), ((np.float64(-0.19163), np.float64(-0.61703), np.float64(-0.38297)), ('gen', 'gen'), 2, 'aniso', 0.077563, 1.273504)]
@@ -18,4 +18,4 @@ ALIGN2 [S]: 780 words
    best: ('S', 'p', 'S', 'o', 'S', 'q', 'S', 'o') ('P5', 'H31', 'P7', 'H31') E=+3.1416 D+D- Lu=sc(16) LspE=bcc(16) nbad=20 bad=[((np.float64(0.67028), np.float64(-0.47851), np.float64(0.67534)), ('gen', 'gen'), 1, 'band', None, None), ((np.float64(-0.47851), np.float64(0.67534), np.float64(0.67028)), ('gen', 'gen'), 1, 'band', None, None), ((np.float64(0.51323), np.float64(0.67109), np.float64(0.67423)), ('gen', 'gen'), 1, 'band', None, None), ((np.float64(0.67028), np.float64(0.67534), np.float64(-0.47851)), ('gen', 'gen'), 1, 'band', None, None)]
 [PASS] screen ran on every word (A/B) and every survivor (C)  
 
-TOTAL: PASS=3 FAIL=0   [181s]
+TOTAL: PASS=3 FAIL=0   [226s]

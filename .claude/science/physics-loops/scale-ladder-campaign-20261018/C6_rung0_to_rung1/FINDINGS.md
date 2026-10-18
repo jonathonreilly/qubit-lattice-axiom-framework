@@ -1,6 +1,6 @@
 # C6 findings: what takes rung 0 (one qubit per site, formation) to rung 1 (the corner model)?
 
-Provenance: a worker of the same model family; not yet checked. Saved by the supervisor from the hand-back.
+Provenance: a worker of the same model family. Checked by a fresh-context same-family agent (`../C6_check/REPORT.md`, 23/0): the headline holds, and its corrections are applied below. Saved by the supervisor from the hand-back.
 
 | Runner | Result |
 |---|---|
@@ -15,10 +15,11 @@ The shared geometry is in `c6_corner_graph.py`, built independently of the repo 
 **Answer: no map is derived.** The 12-corner space, the π-flux background and the block embedding are all supplied, and the flux pattern was chosen to meet design targets.
 - Local fermionization does not force π flux: the flux is a free sector label.
 - Energetics does not select it at the node filling.
-- Formation cannot produce the coarse rung at all (the registration lemma).
+- Formation by translation-covariant rules from an empty start cannot register the coarse block lattice (the registration lemma, as restated by the check).
 
 ## 1. How the corner model is supplied
 
+0. Also supplied (check): the U(1)-twisted rotation realization W, and the hopping family.
 1. **Corner graph** (canonical as site–plaquette incidences). It was chosen for C4-axis avoidance, which the corner-code note itself calls "not an exclusion theorem".
 2. **BKSF encoding with repetition halves:** 48 qubits per site.
 3. **Signed loop stabilizers i^n F ∏A.** F is a free sign per face type.
@@ -43,7 +44,7 @@ None of these is derived from rung 0.
   - an O-fixed momentum forces tube = π.
 
   So {1011, 1111} survive and the triangle is free.
-- **Convention-free statement:** in the standard convention the repo's corner model with t1 = −1 has flux π through every elementary face.
+- **Gauge-invariant statement in the standard convention:** the repo's corner model with t1 = −1 has flux π through every elementary face (real background, λ = 0). With the chiral term the triangle phase is π + 3 arctan λ.
 
 ## 2a'. Energetics does not select it
 
@@ -51,7 +52,7 @@ Hop-only Hamiltonians are block-diagonal over flux sectors. The method used Bloc
 
 | Filling | Result |
 |---|---|
-| ν = 1 (node filling) | The corner pattern ranks 15th–16th of 16 uniform patterns, 1.5–1.9 per site above flux-free; descent goes to near flux-free. With the chiral term it ranks 6th of 16 |
+| ν = 1 (node filling) | The corner pattern ranks 15th–16th of 16 uniform patterns, 1.5–1.9 per site above flux-free. Descent drives squares and triangles to about 0, but plaquette (~0.5) and tube (~0.3) remain (check). With the chiral term it ranks 6th of 16 |
 | ν = 7, t2 = 1 | Best uniform pattern, but unstable: 192 of 288 flips lower it; a non-uniform sector is 0.125 per site lower |
 | ν = 8 | A local minimum, but 1101 is 1e−4 below it |
 | ν = 6 | Non-uniform sectors beat all uniform ones by 0.78 per site |
@@ -64,17 +65,22 @@ Hop dynamics conserves flux, so a formation-random sector would stay frozen.
 
 - **Flux background.** It is deterministic Z2 data. A noise-blind rule can write it with coding radius 0, so B3 neither excludes nor supplies it. B3 excludes only spontaneously selected background data, such as the sign of the chiral term.
 - **The coarse rung is unreachable from formation (proof sketch, the worker's own, unchecked).**
-  - *Dimension bound.* A corner site's even mode algebra needs ≥ 12 qubits. So rung-1 sites form a sublattice of index m ≥ 12, and no fine-translation-covariant encoding exists.
-  - *Mixing.* A finitary factor of iid is mixing. An equivariant registration map into Z³/Λ would give P(o = 0 and T^λ o = 0) = 1/m along λ ∈ Λ, against the mixing limit 1/m².
+  - *Dimension bound.* A corner site's even mode algebra needs ≥ 12 qubits, a density bound. For a registered embedding the coarse sites form a sublattice of index m ≥ 12 (the smallest O-invariant index ≥ 12 is 16). The earlier corollary "no fine-translation-covariant encoding exists" is not proved: fractional-translation encodings are not excluded (check).
+  - *Mixing (as restated by the check).*
+    - For any measurable equivariant factor of iid noise (finitarity is not needed), there is no a.s. map o into Z³/Λ with o∘T^v = o − v for index m ≥ 2. Nor is there one into R³/Λ′, by weak mixing, so there are no Bragg peaks off 2πZ³.
+    - The hypotheses are load-bearing: an empty start and a translation-covariant rule. A periodic deterministic B or a y-dependent rule registers trivially.
+    - The flux background's radius-0 writing presupposes such a registering rule.
   - The same applies to translation-invariant finite-depth circuits from product states.
   - A planted start slice is forgotten at the factorial rate (B3 T3).
   - **Illustration:** the most block-favouring B3 packing gives registration amplitude ≤ 0.16.
-- **Remaining routes, all outside formation:**
+- **Not excluded:** polycrystals, defective or amorphous packings.
+- **Remaining routes, all outside covariant empty-start formation:**
   - a supplied dictionary;
   - correlated clocks;
   - global conditioning;
   - spontaneous translation breaking in a ground state;
-  - corner fermions as emergent quasiparticles of a translation-invariant fine Hamiltonian. This escapes the dimension bound and is open.
+  - corner fermions as emergent quasiparticles of a translation-invariant fine Hamiltonian, which escapes the dimension bound and is open;
+  - fractional-translation encodings, where a fine translation acts as a non-translation automorphism of the corner algebra (open).
 
 ## Caveats
 

@@ -1,0 +1,28 @@
+75 census words with [Lambda_sp : Lambda_u] = 2
+   ('T', 'sc(16)', 'bcc(16)', 'C2pair mod Lsp & mod Lu', True) 18
+   ('T', 'sc(16)', 'bcc(16)', 'C2pair mod Lsp only', False) 36
+   ('T', 'sc(32)', 'bcc(32)', 'C2pair mod Lsp & mod Lu', True) 36
+   ('T', 'sc(32)', 'bcc(32)', 'C2pair mod Lsp only', False) 72
+   ('T', 'sc(4)', 'bcc(4)', 'C2pair mod Lsp & mod Lu', True) 51
+   ('T', 'sc(4)', 'bcc(4)', 'C2pair mod Lsp only', False) 102
+   ('T', 'sc(8)', 'bcc(8)', 'C2pair mod Lsp & mod Lu', True) 36
+   ('T', 'sc(8)', 'bcc(8)', 'C2pair mod Lsp only', False) 72
+   ('kdep', 'sc(16)', 'bcc(16)', 'C2pair mod Lsp & mod Lu', True) 21
+   ('kdep', 'sc(16)', 'bcc(16)', 'C2pair mod Lsp only', False) 24
+   ('kdep', 'sc(16)', 'bcc(16)', 'C2pair mod Lsp only', True) 18
+   ('kdep', 'sc(4)', 'bcc(4)', 'C2pair mod Lsp & mod Lu', True) 39
+   ('kdep', 'sc(4)', 'bcc(4)', 'C2pair mod Lsp only', False) 54
+   ('kdep', 'sc(4)', 'bcc(4)', 'C2pair mod Lsp only', True) 24
+   ('kdep', 'sc(8)', 'bcc(8)', 'C2pair mod Lsp & mod Lu', True) 24
+   ('kdep', 'sc(8)', 'bcc(8)', 'C2pair mod Lsp only', False) 42
+   ('kdep', 'sc(8)', 'bcc(8)', 'C2pair mod Lsp only', True) 6
+   example ('T', 'C2pair mod Lsp & mod Lu', True) (('S', 'R', 'o'), ('H03',), (np.int64(8), np.int64(8), np.int64(8)), [2, 2, 2, 2, 2, 2])
+   example ('T', 'C2pair mod Lsp only', False) (('S', 'R', 'o'), ('H03',), (np.int64(0), np.int64(8), np.int64(8)), [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+   example ('kdep', 'C2pair mod Lsp & mod Lu', True) (('S', 'p', 'S', 'o', 'S', 'q', 'S', 'o'), ('P2', 'H20', 'P10', 'H20'), (np.int64(0), np.int64(0), np.int64(8)), [4, 4, 4])
+   example ('kdep', 'C2pair mod Lsp only', True) (('S', 'p', 'S', 'o', 'S', 'q', 'S', 'o'), ('P2', 'H20', 'P10', 'H20'), (np.int64(0), np.int64(4), np.int64(8)), [2, 2, 2, 2, 2, 2])
+   example ('kdep', 'C2pair mod Lsp only', False) (('S4', 'p', 'S4', 'o', 'S4', 'q', 'S4', 'o'), ('L303', 'L220', 'P5', 'L220'), (np.int64(0), np.int64(1), np.int64(2)), [2, 1, 1, 2, 2, 1, 1, 2])
+[PASS] audit covered both extension kinds  
+[PASS] at points that are C2-pair fixed mod BOTH lattices, every level is even (pinned) for every word  225 classes
+   C2pair-mod-Lsp-only classes (kind, all-even) -> {('T', False): 282, ('kdep', True): 48, ('kdep', False): 120}
+
+TOTAL: PASS=2 FAIL=0   [6s]

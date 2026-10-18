@@ -1,0 +1,52 @@
+gauges solved t=1s
+
+t2 = 0.2, nu = 1, standard convention, 2^3 cell x 6^3 K (effective L = 12):  t=17s
+   0010  E = -4.0224   (worker -4.0224)
+   0000  E = -4.0222   (worker -4.0222)
+   0001  E = -4.0133
+   0011  E = -4.0133
+   1000  E = -3.0259   (worker -3.0259)
+   1010  E = -2.9851
+   1001  E = -2.8045
+   1011  E = -2.8026   (worker -2.8026)
+   0100  E = -2.3262
+   1100  E = -2.2763
+   0110  E = -2.2666
+   1110  E = -2.2427
+   0111  E = -2.2209
+   0101  E = -2.2084
+   1111  E = -2.1686   (worker -2.1686)
+   1101  E = -2.1544
+   corner 1111 rank 15/16; excess over flux-free 0000: +1.8536
+[PASS] t2=0.2: my nu=1 energies of 5 patterns agree with the worker's table to 2e-3 (different cell, gauge, code)  max dev 4.1e-05
+[PASS] t2=0.2: corner pattern 1111 ranks 15th or 16th at nu = 1 and lies >= 1.5 per site above flux-free  rank 15, excess 1.854
+   nk=4 (eff. L=16): 1111 -2.1689, 0000 -4.0222, excess +1.8533  t=22s
+[PASS] excess stable between effective L = 12 and 16 to 1e-2
+
+t2 = 1.0, nu = 1, standard convention, 2^3 cell x 6^3 K (effective L = 12):  t=39s
+   0000  E = -4.6109   (worker -4.6109)
+   0010  E = -4.5757   (worker -4.5757)
+   0001  E = -4.3401
+   0011  E = -4.3166
+   1000  E = -4.3121   (worker -4.3121)
+   1010  E = -4.0461
+   0100  E = -3.7419
+   1100  E = -3.6402
+   1001  E = -3.4535
+   1011  E = -3.3692   (worker -3.3692)
+   0110  E = -3.3618
+   1110  E = -3.3109
+   0101  E = -3.2485
+   0111  E = -3.2175
+   1101  E = -3.1096
+   1111  E = -3.0974   (worker -3.0974)
+   corner 1111 rank 16/16; excess over flux-free 0000: +1.5135
+[PASS] t2=1.0: my nu=1 energies of 5 patterns agree with the worker's table to 2e-3 (different cell, gauge, code)  max dev 4.3e-05
+[PASS] t2=1.0: corner pattern 1111 ranks 15th or 16th at nu = 1 and lies >= 1.5 per site above flux-free  rank 16, excess 1.513
+
+repo convention t1 = -1, t2 = 0.2, lambda = -0.5, nu = 1 (u-pattern labels; corner = 1011): t=39s
+    [('0110', np.float64(-4.0224)), ('0100', np.float64(-4.0222)), ('0101', np.float64(-4.014)), ('0111', np.float64(-4.0139)), ('1001', np.float64(-3.5447)), ('1011', np.float64(-3.5257)), ('1000', np.float64(-3.4499)), ('1010', np.float64(-3.4417)), ('1100', np.float64(-3.1518)), ('1110', np.float64(-3.1137)), ('1111', np.float64(-2.9621)), ('1101', np.float64(-2.9588)), ('0001', np.float64(-2.9481)), ('0011', np.float64(-2.9445)), ('0000', np.float64(-2.895)), ('0010', np.float64(-2.8893))]
+   corner 1011 rank 6/16, E = -3.5257, best 0110 -4.0224
+[PASS] with the chiral term the corner pattern is not the lowest uniform sector at nu = 1 (worker: rank 6/16, -3.5257)  rank 6; dev from worker E 4.7e-05
+
+TOTAL: PASS=6 FAIL=0  (60s)

@@ -1,0 +1,149 @@
+{
+  "rows": [
+    {
+      "L": 4,
+      "lambda_z": 1.0,
+      "max_gap_error_over_t": 0.39506734772900476,
+      "error_over_lambda4": 0.39506734772900476,
+      "native_index2_weight_over_lambda4": 0.6656547930904244,
+      "derived_index2_O2_weight": 0.08236703946480207
+    },
+    {
+      "L": 4,
+      "lambda_z": 0.7,
+      "max_gap_error_over_t": 0.08586170887059241,
+      "error_over_lambda4": 0.35760811691208844,
+      "native_index2_weight_over_lambda4": 0.8265359500144468,
+      "derived_index2_O2_weight": 0.2842945310270959
+    },
+    {
+      "L": 4,
+      "lambda_z": 0.5,
+      "max_gap_error_over_t": 0.0267602518777319,
+      "error_over_lambda4": 0.4281640300437104,
+      "native_index2_weight_over_lambda4": 0.7532722665855425,
+      "derived_index2_O2_weight": 0.4308814390626165
+    },
+    {
+      "L": 4,
+      "lambda_z": 0.35,
+      "max_gap_error_over_t": 0.00678886909709675,
+      "error_over_lambda4": 0.4524027719847898,
+      "native_index2_weight_over_lambda4": 0.686444964114053,
+      "derived_index2_O2_weight": 0.5218776816311784
+    },
+    {
+      "L": 4,
+      "lambda_z": 0.2,
+      "max_gap_error_over_t": 0.0007399837422452649,
+      "error_over_lambda4": 0.46248983890329043,
+      "native_index2_weight_over_lambda4": 0.6396110987981823,
+      "derived_index2_O2_weight": 0.5851072832226248
+    },
+    {
+      "L": 4,
+      "lambda_z": 0.1,
+      "max_gap_error_over_t": 4.6512972931012087e-05,
+      "error_over_lambda4": 0.46512972931012075,
+      "native_index2_weight_over_lambda4": 0.6225337367451391,
+      "derived_index2_O2_weight": 0.6088651547847563
+    },
+    {
+      "L": 6,
+      "lambda_z": 1.0,
+      "max_gap_error_over_t": 0.5434785219366534,
+      "error_over_lambda4": 0.5434785219366534,
+      "native_index2_weight_over_lambda4": 6.613914850107813e-23,
+      "derived_index2_O2_weight": 0.017065287683054306
+    },
+    {
+      "L": 6,
+      "lambda_z": 0.7,
+      "max_gap_error_over_t": 0.2155073841248396,
+      "error_over_lambda4": 0.897573444918116,
+      "native_index2_weight_over_lambda4": 1.2626859479520323,
+      "derived_index2_O2_weight": 0.08133156784383379
+    },
+    {
+      "L": 6,
+      "lambda_z": 0.5,
+      "max_gap_error_over_t": 0.06020482794123394,
+      "error_over_lambda4": 0.963277247059743,
+      "native_index2_weight_over_lambda4": 0.48156210671795063,
+      "derived_index2_O2_weight": 0.13919981342222754
+    },
+    {
+      "L": 6,
+      "lambda_z": 0.35,
+      "max_gap_error_over_t": 0.014115315846592313,
+      "error_over_lambda4": 0.9406291276363059,
+      "native_index2_weight_over_lambda4": 0.30125899486499147,
+      "derived_index2_O2_weight": 0.17909727743783416
+    },
+    {
+      "L": 6,
+      "lambda_z": 0.2,
+      "max_gap_error_over_t": 0.0014684418818711187,
+      "error_over_lambda4": 0.917776176169449,
+      "native_index2_weight_over_lambda4": 0.24230944555948647,
+      "derived_index2_O2_weight": 0.20860287790650628
+    },
+    {
+      "L": 6,
+      "lambda_z": 0.1,
+      "max_gap_error_over_t": 9.091319053089464e-05,
+      "error_over_lambda4": 0.9091319053089462,
+      "native_index2_weight_over_lambda4": 0.22807160494726458,
+      "derived_index2_O2_weight": 0.2200787597937317
+    },
+    {
+      "L": 8,
+      "lambda_z": 1.0,
+      "max_gap_error_over_t": 0.8370450799220854,
+      "error_over_lambda4": 0.8370450799220854,
+      "native_index2_weight_over_lambda4": 1.6221165948109413e-27,
+      "derived_index2_O2_weight": 0.0046278327284490686
+    },
+    {
+      "L": 8,
+      "lambda_z": 0.7,
+      "max_gap_error_over_t": 0.3723589971393526,
+      "error_over_lambda4": 1.550849634066442,
+      "native_index2_weight_over_lambda4": 2.0470198892360134,
+      "derived_index2_O2_weight": 0.029021653918339815
+    },
+    {
+      "L": 8,
+      "lambda_z": 0.5,
+      "max_gap_error_over_t": 0.08304688767123936,
+      "error_over_lambda4": 1.3287502027398297,
+      "native_index2_weight_over_lambda4": 0.3023563417292525,
+      "derived_index2_O2_weight": 0.05363201103775572
+    },
+    {
+      "L": 8,
+      "lambda_z": 0.35,
+      "max_gap_error_over_t": 0.01733223699547981,
+      "error_over_lambda4": 1.155001215858713,
+      "native_index2_weight_over_lambda4": 0.14006672183561938,
+      "derived_index2_O2_weight": 0.07130620444959987
+    },
+    {
+      "L": 8,
+      "lambda_z": 0.2,
+      "max_gap_error_over_t": 0.0016959768384599005,
+      "error_over_lambda4": 1.0599855240374376,
+      "native_index2_weight_over_lambda4": 0.1020298766880743,
+      "derived_index2_O2_weight": 0.0846095413617735
+    },
+    {
+      "L": 8,
+      "lambda_z": 0.1,
+      "max_gap_error_over_t": 0.0001028804400677874,
+      "error_over_lambda4": 1.0288044006778738,
+      "native_index2_weight_over_lambda4": 0.09386558612229237,
+      "derived_index2_O2_weight": 0.08982467284070667
+    }
+  ],
+  "scope": "Finite selected-sector development comparison. Sorted eigenvalues, no complete-spectrum certificate. Index2 source comparison is valid near weak coupling; level reordering makes it invalid as an equal-mode comparison at strong coupling."
+}

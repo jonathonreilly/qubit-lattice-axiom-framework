@@ -9,3 +9,6 @@ Source-identification block: independent scale, smooth-source, ladder, protected
 ## Derived collective interaction block
 
 Disposition pass. Reused completed independent rung intertwining, boundary/source vertex, low-band observable, fourth-order linked support and exact sixth-order checks. Final source/package reviewer confirmed conditional scope and exact-vs-numerical hierarchy. Fixed explicit J_perp>0 and numerical readout wording. Reviewer found undeclared auxiliary tube_4 energy JSON; declared, disclosed, packaged and replayed. All eight aggregate probes passed in3.665s with source-bound cache. No formal audit verdict or effective-status change.
+
+
+Infrared block: independent symmetry/LSM, fermionic form-factor and native/effective comparison checks PASS. Final synthesis and six-input provenance review PASS at /private/tmp/native-infrared-final-review.md, copied into native/. Four-probe source-bound replay passed3.608s. Two wording clarifications applied only; no computation changed. No formal audit.

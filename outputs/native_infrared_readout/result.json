@@ -1,0 +1,1480 @@
+{
+  "inputs": {
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_discrete_symmetry.py": "134c049afcdb5a1f776663e7247bd7c693947fddfd8c8ab02ab28643a7bdc04e",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_xy_readout.py": "3be0418e459ec56569621fad2730203333f0989aeb7d9bd71547a59bb633f366",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_open_xy_comparison.py": "afae3959c5b4f0cf6c43659123c1a6936014fd2429ec39f63c39982bc186101c",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_anisotropy_comparison.py": "f487c38663301cc8fb23f711e8e6a726f4d80377485662f2dcb8f738b48f79b9",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_tube_anisotropy.json": "27f1fe81178acb1b990d0a7beb07dcad2b9963a4be7e605650169b1d9876b68a"
+  },
+  "results": {
+    "neutral_rung_discrete_symmetry": {
+      "projective_Px_Py": "anticommute exactly, square to identity, preserve full rung h and global interrung bonds",
+      "D_signed_permutation": "Matrix([[0, 0, -1, 0], [-1, 0, 0, 0], [0, 0, 0, 1], [0, 1, 0, 0]])",
+      "low_T": "Matrix([[sqrt(2)/2, -1/2], [1, sqrt(2)/2]])",
+      "low_adjoint_action": [
+        "tau1 -> -tau2",
+        "tau2 -> tau1",
+        "tau3 -> tau3"
+      ],
+      "charge_selection": "Delta Q0 multiple8, equivalently four collective flips; exact global discrete symmetry",
+      "scope": "Finite positive-parity tube; no continuous microscopic symmetry or bulk criticality assertion"
+    },
+    "neutral_xy_readout": {
+      "rows": [
+        {
+          "L": 8,
+          "profile_mode": 1,
+          "source": "collective_density",
+          "weight": 0.5,
+          "parity": -1.0,
+          "ground_parity": 0.9999999999999998,
+          "mean": 1.5307337294603593,
+          "nodes": [
+            {
+              "energy": 1.530733729460359,
+              "weight": 0.5
+            }
+          ],
+          "energy": -5.226251859505506,
+          "ground_residual": 1.8963376260992785e-15,
+          "cross_abs": 3.5154528813050854e-17,
+          "q": 0.7853981633974483,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 8,
+          "profile_mode": 1,
+          "source": "native_composite_O2",
+          "weight": 0.2460937499999997,
+          "parity": 1.0,
+          "ground_parity": 0.9999999999999998,
+          "mean": 4.479644451004719,
+          "nodes": [
+            {
+              "energy": 4.1438596592131125,
+              "weight": 0.20490564110435788
+            },
+            {
+              "energy": 5.2262518595055045,
+              "weight": 0.006031858895641766
+            },
+            {
+              "energy": 6.3086440597979,
+              "weight": 0.03515624999999997
+            }
+          ],
+          "energy": -5.226251859505506,
+          "ground_residual": 1.8963376260992785e-15,
+          "cross_abs": 3.5154528813050854e-17,
+          "q": 0.7853981633974483,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 8,
+          "profile_mode": 2,
+          "source": "collective_density",
+          "weight": 0.9999999999999998,
+          "parity": -1.0,
+          "ground_parity": 0.9999999999999998,
+          "mean": 2.6131259297527527,
+          "nodes": [
+            {
+              "energy": 2.613125929752753,
+              "weight": 0.9999999999999998
+            }
+          ],
+          "energy": -5.226251859505506,
+          "ground_residual": 1.8963376260992785e-15,
+          "cross_abs": 3.550564213116373e-17,
+          "q": 1.5707963267948966,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 8,
+          "profile_mode": 2,
+          "source": "native_composite_O2",
+          "weight": 0.5618249751835716,
+          "parity": 0.9999999999999996,
+          "ground_parity": 0.9999999999999998,
+          "mean": 3.07562071014926,
+          "nodes": [
+            {
+              "energy": 2.6131259297527527,
+              "weight": 0.4503243662879301
+            },
+            {
+              "energy": 4.143859659213112,
+              "weight": 0.03515624999999969
+            },
+            {
+              "energy": 5.226251859505506,
+              "weight": 0.07031250000000003
+            },
+            {
+              "energy": 6.308644059797901,
+              "weight": 0.006031858895641752
+            }
+          ],
+          "energy": -5.226251859505506,
+          "ground_residual": 1.8963376260992785e-15,
+          "cross_abs": 3.550564213116373e-17,
+          "q": 1.5707963267948966,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 12,
+          "profile_mode": 1,
+          "source": "collective_density",
+          "weight": 0.3333333333333333,
+          "parity": -0.9999999999999998,
+          "ground_parity": 0.9999999999999997,
+          "mean": 1.035276180410076,
+          "nodes": [
+            {
+              "energy": 1.0352761804100759,
+              "weight": 0.3333333333333333
+            }
+          ],
+          "energy": -7.727406610312539,
+          "ground_residual": 2.1573107956828782e-13,
+          "cross_abs": 2.991080950542119e-16,
+          "q": 0.5235987755982988,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 12,
+          "profile_mode": 1,
+          "source": "native_composite_O2",
+          "weight": 0.2822716272015961,
+          "parity": 0.9999999999999996,
+          "ground_parity": 0.9999999999999997,
+          "mean": 4.183576508612685,
+          "nodes": [
+            {
+              "energy": 2.967127832988213,
+              "weight": 0.10881408773652738
+            },
+            {
+              "energy": 4.381341395361308,
+              "weight": 0.067708333333333
+            },
+            {
+              "energy": 4.760278777324318,
+              "weight": 0.05831329386826359
+            },
+            {
+              "energy": 4.898979485566347,
+              "weight": 0.0013955687105786938
+            },
+            {
+              "energy": 5.277916867529361,
+              "weight": 0.004186706131736165
+            },
+            {
+              "energy": 5.795554957734403,
+              "weight": 0.018416137421157185
+            },
+            {
+              "energy": 6.174492339697413,
+              "weight": 0.019437764622754577
+            },
+            {
+              "energy": 6.6921304299024555,
+              "weight": 0.0013955687105787356
+            },
+            {
+              "energy": 7.209768520107496,
+              "weight": 0.0026041666666667056
+            }
+          ],
+          "energy": -7.727406610312539,
+          "ground_residual": 2.1573107956828782e-13,
+          "cross_abs": 2.991080950542119e-16,
+          "q": 0.5235987755982988,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 12,
+          "profile_mode": 2,
+          "source": "collective_density",
+          "weight": 0.6666666666666665,
+          "parity": -1.0,
+          "ground_parity": 0.9999999999999997,
+          "mean": 1.9318516525781295,
+          "nodes": [
+            {
+              "energy": 1.9318516525781293,
+              "weight": 0.6666666666666665
+            }
+          ],
+          "energy": -7.727406610312539,
+          "ground_residual": 2.1573107956828782e-13,
+          "cross_abs": 3.1100620430426293e-16,
+          "q": 1.0471975511965976,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 12,
+          "profile_mode": 2,
+          "source": "native_composite_O2",
+          "weight": 0.4037279706799068,
+          "parity": 0.9999999999999999,
+          "ground_parity": 0.9999999999999997,
+          "mean": 3.17634015729795,
+          "nodes": [
+            {
+              "energy": 1.9318516525781302,
+              "weight": 0.2036678522846986
+            },
+            {
+              "energy": 3.4847659231932533,
+              "weight": 0.05831329386826338
+            },
+            {
+              "energy": 3.8637033051562653,
+              "weight": 0.046875000000000076
+            },
+            {
+              "energy": 4.381341395361309,
+              "weight": 0.015624999999999964
+            },
+            {
+              "energy": 5.27791686752936,
+              "weight": 0.06249999999999971
+            },
+            {
+              "energy": 5.795554957734401,
+              "weight": 0.002604166666666679
+            },
+            {
+              "energy": 6.174492339697413,
+              "weight": 0.0041867061317363225
+            },
+            {
+              "energy": 6.313193047939441,
+              "weight": 0.004186706131736351
+            },
+            {
+              "energy": 6.692130429902456,
+              "weight": 0.005208333333333248
+            },
+            {
+              "energy": 7.209768520107498,
+              "weight": 0.0005609122634725658
+            }
+          ],
+          "energy": -7.727406610312539,
+          "ground_residual": 2.1573107956828782e-13,
+          "cross_abs": 3.1100620430426293e-16,
+          "q": 1.0471975511965976,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 16,
+          "profile_mode": 1,
+          "source": "collective_density",
+          "weight": 0.2500000000000004,
+          "parity": -1.0,
+          "ground_parity": 1.0000000000000007,
+          "mean": 0.780361288064513,
+          "nodes": [
+            {
+              "energy": 0.7803612880645134,
+              "weight": 0.2500000000000004
+            }
+          ],
+          "energy": -10.251661790966025,
+          "ground_residual": 5.82553083539086e-14,
+          "cross_abs": 1.3477494308594605e-16,
+          "q": 0.39269908169872414,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 16,
+          "profile_mode": 1,
+          "source": "native_composite_O2",
+          "weight": 0.29401943065071634,
+          "parity": 0.9999999999999994,
+          "ground_parity": 1.0000000000000007,
+          "mean": 4.095014284071281,
+          "nodes": [
+            {
+              "energy": 2.281682398135976,
+              "weight": 0.05553400422895421
+            },
+            {
+              "energy": 3.554440978708807,
+              "weight": 0.06133662930515982
+            },
+            {
+              "energy": 3.7236020421498695,
+              "weight": 0.039912035178229666
+            },
+            {
+              "energy": 4.404871073476067,
+              "weight": 0.017151028300147784
+            },
+            {
+              "energy": 4.574032136917126,
+              "weight": 0.01280660256902239
+            },
+            {
+              "energy": 4.703502409677433,
+              "weight": 0.00041300178852742296
+            },
+            {
+              "energy": 4.827199559281643,
+              "weight": 0.03463719887029125
+            },
+            {
+              "energy": 4.996360622722701,
+              "weight": 0.023379928905495072
+            },
+            {
+              "energy": 5.125830895483009,
+              "weight": 0.00382735708288548
+            },
+            {
+              "energy": 5.424462231684378,
+              "weight": 0.005667564741663578
+            },
+            {
+              "energy": 5.677629654048892,
+              "weight": 0.004921498847556727
+            },
+            {
+              "energy": 5.846790717489958,
+              "weight": 0.014364672811807387
+            },
+            {
+              "energy": 5.976260990250276,
+              "weight": 0.000413001788527441
+            },
+            {
+              "energy": 6.0999581398544755,
+              "weight": 0.010438266001929918
+            },
+            {
+              "energy": 6.145422053691326,
+              "weight": 0.00098099712635389
+            },
+            {
+              "energy": 6.398589476055841,
+              "weight": 0.0009250533040476291
+            },
+            {
+              "energy": 6.697220812257215,
+              "weight": 0.003605359451206309
+            },
+            {
+              "energy": 6.950388234621733,
+              "weight": 0.0030572973281362686
+            },
+            {
+              "energy": 7.249019570823107,
+              "weight": 0.0002709418397965225
+            },
+            {
+              "energy": 7.5476509070244715,
+              "weight": 0.00037699118097760803
+            }
+          ],
+          "energy": -10.251661790966025,
+          "ground_residual": 5.82553083539086e-14,
+          "cross_abs": 1.3477494308594605e-16,
+          "q": 0.39269908169872414,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 16,
+          "profile_mode": 2,
+          "source": "collective_density",
+          "weight": 0.49999999999999967,
+          "parity": -1.0,
+          "ground_parity": 1.0000000000000007,
+          "mean": 1.50132111007146,
+          "nodes": [
+            {
+              "energy": 1.5013211100714607,
+              "weight": 0.49999999999999967
+            }
+          ],
+          "energy": -10.251661790966025,
+          "ground_residual": 5.82553083539086e-14,
+          "cross_abs": 9.986640039897974e-17,
+          "q": 0.7853981633974483,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 16,
+          "profile_mode": 2,
+          "source": "native_composite_O2",
+          "weight": 0.3400176714268087,
+          "parity": 1.0000000000000002,
+          "ground_parity": 1.0000000000000007,
+          "mean": 3.465855132676255,
+          "nodes": [
+            {
+              "energy": 1.5013211100714565,
+              "weight": 0.09838486658754886
+            },
+            {
+              "energy": 2.833481156701861,
+              "weight": 0.03991203517822869
+            },
+            {
+              "energy": 3.002642220142923,
+              "weight": 0.02561320513804486
+            },
+            {
+              "energy": 3.8530723149101824,
+              "weight": 0.03294406829296373
+            },
+            {
+              "energy": 4.275400800715759,
+              "weight": 0.058707249847587274
+            },
+            {
+              "energy": 4.404871073476066,
+              "weight": 0.004394531250000385
+            },
+            {
+              "energy": 4.5740321369171255,
+              "weight": 0.004394531250000321
+            },
+            {
+              "energy": 4.827199559281641,
+              "weight": 0.00027094183979654087
+            },
+            {
+              "energy": 5.125830895483011,
+              "weight": 0.01757812500000045
+            },
+            {
+              "energy": 5.294991958924071,
+              "weight": 0.012806602569022302
+            },
+            {
+              "energy": 5.378998317847524,
+              "weight": 0.012806602569022591
+            },
+            {
+              "energy": 5.42446223168438,
+              "weight": 0.00098099712635374
+            },
+            {
+              "energy": 5.548159381288589,
+              "weight": 0.008789062500000036
+            },
+            {
+              "energy": 5.846790717489958,
+              "weight": 0.004274386997494009
+            },
+            {
+              "energy": 5.9762609902502675,
+              "weight": 0.004274386997493719
+            },
+            {
+              "energy": 6.398589476055845,
+              "weight": 0.010881099954530184
+            },
+            {
+              "energy": 6.697220812257212,
+              "weight": 0.0007539823619552374
+            },
+            {
+              "energy": 6.950388234621731,
+              "weight": 0.000705038153837289
+            },
+            {
+              "energy": 6.995852148458584,
+              "weight": 0.0007050381538373681
+            },
+            {
+              "energy": 7.249019570823104,
+              "weight": 0.0007539823619552258
+            },
+            {
+              "energy": 7.5476509070244715,
+              "weight": 8.693729713604037e-05
+            }
+          ],
+          "energy": -10.251661790966025,
+          "ground_residual": 5.82553083539086e-14,
+          "cross_abs": 9.986640039897974e-17,
+          "q": 0.7853981633974483,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 20,
+          "profile_mode": 1,
+          "source": "collective_density",
+          "weight": 0.200000000000003,
+          "parity": -0.9999999999999992,
+          "ground_parity": 1.0000000000000007,
+          "mean": 0.625737860160934,
+          "nodes": [
+            {
+              "energy": 0.6257378601609378,
+              "weight": 0.200000000000003
+            }
+          ],
+          "energy": -12.784906442999338,
+          "ground_residual": 3.348938666950635e-14,
+          "cross_abs": 4.24835736050128e-17,
+          "q": 0.3141592653589793,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 20,
+          "profile_mode": 1,
+          "source": "native_composite_O2",
+          "weight": 0.2993124102994774,
+          "parity": 1.0000000000000002,
+          "ground_parity": 1.0000000000000007,
+          "mean": 4.0563028494127495,
+          "nodes": [
+            {
+              "energy": 1.8465877897205014,
+              "weight": 0.030988093673347764
+            },
+            {
+              "energy": 2.947932422013135,
+              "weight": 0.04298815648129926
+            },
+            {
+              "energy": 3.036811928517763,
+              "weight": 0.02521835616768176
+            },
+            {
+              "energy": 3.821964470910765,
+              "weight": 0.021335403093989003
+            },
+            {
+              "energy": 3.9108439774153894,
+              "weight": 0.012925487271669298
+            },
+            {
+              "energy": 4.049277054305772,
+              "weight": 0.030750572393037575
+            },
+            {
+              "energy": 4.138156560810614,
+              "weight": 0.018248173951026254
+            },
+            {
+              "energy": 4.383127589837281,
+              "weight": 0.005762415931632338
+            },
+            {
+              "energy": 4.576508089333427,
+              "weight": 0.00015240009758098446
+            },
+            {
+              "energy": 4.610440813330278,
+              "weight": 0.010272438442660728
+            },
+            {
+              "energy": 4.784880123541102,
+              "weight": 0.012456412757789486
+            },
+            {
+              "energy": 4.924001400437309,
+              "weight": 0.008110402086266058
+            },
+            {
+              "energy": 5.009448597969737,
+              "weight": 0.02005377250063802
+            },
+            {
+              "energy": 5.104120786349028,
+              "weight": 0.0020809380842147654
+            },
+            {
+              "energy": 5.155570748282967,
+              "weight": 0.013245018828763755
+            },
+            {
+              "energy": 5.3132679836949155,
+              "weight": 0.00012938857760199862
+            },
+            {
+              "energy": 5.487559581546036,
+              "weight": 0.004907341801187706
+            },
+            {
+              "energy": 5.578646420387876,
+              "weight": 0.005676661981742269
+            },
+            {
+              "energy": 5.716972946143103,
+              "weight": 0.004452246700798286
+            },
+            {
+              "energy": 5.884367932113526,
+              "weight": 0.00996571183083518
+            },
+            {
+              "energy": 6.022759476185908,
+              "weight": 0.005954963247912323
+            },
+            {
+              "energy": 6.077469902526209,
+              "weight": 0.0015647858052951207
+            },
+            {
+              "energy": 6.273073554345259,
+              "weight": 0.001990598648902657
+            },
+            {
+              "energy": 6.447706448705732,
+              "weight": 0.0013681634104250843
+            },
+            {
+              "energy": 6.586393464319775,
+              "weight": 0.0037806433073307396
+            },
+            {
+              "energy": 6.660723362436735,
+              "weight": 0.00010703299685128999
+            },
+            {
+              "energy": 6.761423915359894,
+              "weight": 0.0026797003769196857
+            },
+            {
+              "energy": 6.785453762362756,
+              "weight": 0.0001639625594216549
+            },
+            {
+              "energy": 6.953617297204428,
+              "weight": 0.00024163062302061668
+            },
+            {
+              "energy": 7.146979973947913,
+              "weight": 0.000901486687233893
+            },
+            {
+              "energy": 7.321415826329211,
+              "weight": 0.000691195039474501
+            },
+            {
+              "energy": 7.514779459134322,
+              "weight": 6.678729894270125e-05
+            },
+            {
+              "energy": 7.708143091947576,
+              "weight": 8.206764398455244e-05
+            }
+          ],
+          "energy": -12.784906442999338,
+          "ground_residual": 3.348938666950635e-14,
+          "cross_abs": 4.24835736050128e-17,
+          "q": 0.3141592653589793,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 20,
+          "profile_mode": 2,
+          "source": "collective_density",
+          "weight": 0.3999999999999994,
+          "parity": -1.0000000000000002,
+          "ground_parity": 1.0000000000000007,
+          "mean": 1.2208499295595663,
+          "nodes": [
+            {
+              "energy": 1.2208499295595743,
+              "weight": 0.3999999999999994
+            }
+          ],
+          "energy": -12.784906442999338,
+          "ground_residual": 3.348938666950635e-14,
+          "cross_abs": 8.564071714287864e-17,
+          "q": 0.6283185307179586,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 20,
+          "profile_mode": 2,
+          "source": "native_composite_O2",
+          "weight": 0.31698483656876536,
+          "parity": 1.0000000000000002,
+          "ground_parity": 1.0000000000000007,
+          "mean": 3.678109175559953,
+          "nodes": [
+            {
+              "energy": 1.2208499295595359,
+              "weight": 0.03546829437310154
+            },
+            {
+              "energy": 1.2208499295595738,
+              "weight": 0.01806302522216637
+            },
+            {
+              "energy": 2.3528203526145,
+              "weight": 0.02521835616767729
+            },
+            {
+              "energy": 2.4416998591191303,
+              "weight": 0.014726441186716652
+            },
+            {
+              "energy": 3.3157319080167715,
+              "weight": 0.0298945434044164
+            },
+            {
+              "energy": 3.543044491411764,
+              "weight": 0.04184265248137007
+            },
+            {
+              "energy": 4.015328103724338,
+              "weight": 0.01159760489825126
+            },
+            {
+              "energy": 4.1042076102307234,
+              "weight": 0.0073632205936793906
+            },
+            {
+              "energy": 4.3831495411328545,
+              "weight": 0.00155868637471525
+            },
+            {
+              "energy": 4.417090565596364,
+              "weight": 0.021378776843007607
+            },
+            {
+              "energy": 4.506583439022677,
+              "weight": 0.013376581844433773
+            },
+            {
+              "energy": 4.558884185439258,
+              "weight": 0.013531256277872028
+            },
+            {
+              "energy": 4.636080253417661,
+              "weight": 0.010474427047344644
+            },
+            {
+              "energy": 4.714274582743715,
+              "weight": 0.00034740277825703837
+            },
+            {
+              "energy": 4.8375649432267025,
+              "weight": 0.00017545052554183443
+            },
+            {
+              "energy": 4.9769399261567075,
+              "weight": 0.006377470001487476
+            },
+            {
+              "energy": 5.192114399003867,
+              "weight": 0.005684317089079481
+            },
+            {
+              "energy": 5.223179436576373,
+              "weight": 0.00632387980142926
+            },
+            {
+              "energy": 5.294377738575309,
+              "weight": 0.009767562260658648
+            },
+            {
+              "energy": 5.5207258472689045,
+              "weight": 0.017370794408586944
+            },
+            {
+              "energy": 5.628900626569302,
+              "weight": 0.0018455510519138731
+            },
+            {
+              "energy": 5.707521709855657,
+              "weight": 0.0026066709761872436
+            },
+            {
+              "energy": 5.857741771924309,
+              "weight": 0.0015788556160480952
+            },
+            {
+              "energy": 6.078372743978107,
+              "weight": 0.005217710902043987
+            },
+            {
+              "energy": 6.2170506858632395,
+              "weight": 0.0034314848868379688
+            },
+            {
+              "energy": 6.257452351572583,
+              "weight": 0.003829584751394198
+            },
+            {
+              "energy": 6.392403040652647,
+              "weight": 0.0021517973251503645
+            },
+            {
+              "energy": 6.585812875059217,
+              "weight": 0.0012384862463194765
+            },
+            {
+              "energy": 6.640746470226901,
+              "weight": 0.0012385861654497685
+            },
+            {
+              "energy": 6.953616340246368,
+              "weight": 0.0025783974986393096
+            },
+            {
+              "energy": 7.146979973123901,
+              "weight": 0.00021485588147939055
+            },
+            {
+              "energy": 7.321415826730602,
+              "weight": 0.00016423797434604877
+            },
+            {
+              "energy": 7.34034360624508,
+              "weight": 0.00016423796244811068
+            },
+            {
+              "energy": 7.5147794591341155,
+              "weight": 0.0001641352879686148
+            },
+            {
+              "energy": 7.708143091947578,
+              "weight": 1.9500462745640918e-05
+            }
+          ],
+          "energy": -12.784906442999338,
+          "ground_residual": 3.348938666950635e-14,
+          "cross_abs": 8.564071714287864e-17,
+          "q": 0.6283185307179586,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        }
+      ],
+      "analytic_checks": [
+        {
+          "L": 8,
+          "one_pair_weight": 0.4503243662879301,
+          "analytic_weight": 0.45032436628793016,
+          "error": 5.551115123125783e-17
+        },
+        {
+          "L": 12,
+          "one_pair_weight": 0.2036678522846986,
+          "analytic_weight": 0.20366785228469853,
+          "error": 8.326672684688674e-17
+        },
+        {
+          "L": 16,
+          "one_pair_weight": 0.09838486658754886,
+          "analytic_weight": 0.098384866587549,
+          "error": 1.3877787807814457e-16
+        },
+        {
+          "L": 20,
+          "one_pair_weight": 0.05353131959526791,
+          "analytic_weight": 0.05353131959526868,
+          "error": 7.7021722333370235e-16
+        }
+      ],
+      "two_pair_checks": [
+        {
+          "L": 8,
+          "weight": 0.20490564110435788,
+          "analytic_weight": 0.2049056411043582,
+          "error": 3.0531133177191805e-16,
+          "scaled_L3": 104.91168824543124
+        },
+        {
+          "L": 12,
+          "weight": 0.10881408773652738,
+          "analytic_weight": 0.10881408773652741,
+          "error": 2.7755575615628914e-17,
+          "scaled_L3": 188.03074360871932
+        },
+        {
+          "L": 16,
+          "weight": 0.05553400422895421,
+          "analytic_weight": 0.05553400422895351,
+          "error": 7.008282842946301e-16,
+          "scaled_L3": 227.46728132179643
+        },
+        {
+          "L": 20,
+          "weight": 0.030988093673347764,
+          "analytic_weight": 0.03098809367334705,
+          "error": 7.147060721024445e-16,
+          "scaled_L3": 247.9047493867821
+        }
+      ]
+    },
+    "neutral_open_xy_comparison": {
+      "rows": [
+        {
+          "L": 4,
+          "lambda_z": 1.0,
+          "leading_gaps_over_t": [
+            0.0,
+            2.23606797749979,
+            2.23606797749979,
+            4.47213595499958
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.984137417967763,
+            3.008121950510612,
+            4.819290303392677
+          ],
+          "O2_mode_weights": [
+            1.9941803546246735e-31,
+            0.0,
+            0.08236703946480207,
+            0.0023430402157760097
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.7,
+          "leading_gaps_over_t": [
+            0.0,
+            2.23606797749979,
+            2.23606797749979,
+            4.47213595499958
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            2.0792542822871085,
+            2.5699003020541924,
+            4.586612544807132
+          ],
+          "O2_mode_weights": [
+            1.2571560776279542e-30,
+            0.0,
+            0.2842945310270959,
+            0.05313836017343809
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.5,
+          "leading_gaps_over_t": [
+            0.0,
+            2.23606797749979,
+            2.23606797749979,
+            4.47213595499958
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            2.147232858989515,
+            2.394464482080807,
+            4.515984094887738
+          ],
+          "O2_mode_weights": [
+            4.2756357402531367e-32,
+            0.0,
+            0.4308814390626165,
+            0.10516896999883445
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.35,
+          "leading_gaps_over_t": [
+            0.0,
+            2.23606797749979,
+            2.23606797749979,
+            4.47213595499958
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            2.190145812192555,
+            2.310433626452912,
+            4.489691310124754
+          ],
+          "O2_mode_weights": [
+            2.2885963328214762e-30,
+            0.0,
+            0.5218776816311784,
+            0.1407589156226838
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.2,
+          "leading_gaps_over_t": [
+            0.0,
+            2.23606797749979,
+            2.23606797749979,
+            4.47213595499958
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            2.2205569735117234,
+            2.259648552689684,
+            4.477022367845487
+          ],
+          "O2_mode_weights": [
+            3.482960695597359e-30,
+            0.0,
+            0.5851072832226248,
+            0.16665933512121256
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.1,
+          "leading_gaps_over_t": [
+            0.0,
+            2.23606797749979,
+            2.23606797749979,
+            4.47213595499958
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            2.2321428428875776,
+            2.2418985864070375,
+            4.4732799422556955
+          ],
+          "O2_mode_weights": [
+            5.452058289386549e-32,
+            0.0,
+            0.6088651547847563,
+            0.17661797574964846
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 6,
+          "lambda_z": 1.0,
+          "leading_gaps_over_t": [
+            0.0,
+            1.6920214716300932,
+            1.6920214716300939,
+            2.2469796037174645
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.4334340040344054,
+            2.2329162758311196,
+            2.5541848107893985
+          ],
+          "O2_mode_weights": [
+            7.98857074629614e-30,
+            5.0668177740043436e-33,
+            0.017065287683054306,
+            1.4531030632106652e-33
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.7,
+          "leading_gaps_over_t": [
+            0.0,
+            1.6920214716300932,
+            1.6920214716300939,
+            2.2469796037174645
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.5200345057573994,
+            1.9351239574103722,
+            2.3601103755758555
+          ],
+          "O2_mode_weights": [
+            1.2530499587049152e-30,
+            3.0444372683006036e-33,
+            0.08133156784383379,
+            3.019163537075454e-32
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.5,
+          "leading_gaps_over_t": [
+            0.0,
+            1.6920214716300932,
+            1.6920214716300939,
+            2.2469796037174645
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.5914014407309827,
+            1.8100435969933157,
+            2.2937936310891907
+          ],
+          "O2_mode_weights": [
+            6.951696805214779e-30,
+            8.737368028848958e-33,
+            0.13919981342222754,
+            7.004620968734331e-33
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.35,
+          "leading_gaps_over_t": [
+            0.0,
+            1.6920214716300932,
+            1.6920214716300939,
+            2.2469796037174645
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.639105672058001,
+            1.7482468424398179,
+            2.266827871706285
+          ],
+          "O2_mode_weights": [
+            1.878830651411919e-30,
+            5.194744931203419e-32,
+            0.17909727743783416,
+            2.8116631108563507e-33
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.2,
+          "leading_gaps_over_t": [
+            0.0,
+            1.6920214716300932,
+            1.6920214716300939,
+            2.2469796037174645
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.6739489087239505,
+            1.7100405384075603,
+            2.252777934329783
+          ],
+          "O2_mode_weights": [
+            6.791063000831301e-31,
+            8.548541661302334e-31,
+            0.20860287790650628,
+            2.415912658597989e-33
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.1,
+          "leading_gaps_over_t": [
+            0.0,
+            1.6920214716300932,
+            1.6920214716300939,
+            2.2469796037174645
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.6874296959181505,
+            1.6964953499125461,
+            2.248365703976544
+          ],
+          "O2_mode_weights": [
+            1.9304310224327328e-30,
+            3.643445201508361e-29,
+            0.2200787597937317,
+            3.372533215020788e-32
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 8,
+          "lambda_z": 1.0,
+          "leading_gaps_over_t": [
+            0.0,
+            1.347296355333853,
+            1.3472963553338646,
+            1.8793852415718155
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.1354137021858968,
+            1.7734261296787697,
+            2.0466035080894773
+          ],
+          "O2_mode_weights": [
+            2.8659875964806236e-29,
+            1.0472945342171083e-34,
+            0.0046278327284490686,
+            2.2377538365604614e-33
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.7,
+          "leading_gaps_over_t": [
+            0.0,
+            1.347296355333853,
+            1.3472963553338646,
+            1.8793852415718155
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.1992936946109332,
+            1.5437389607766985,
+            1.9266734294168715
+          ],
+          "O2_mode_weights": [
+            8.86439415144583e-30,
+            4.493550069458911e-35,
+            0.029021653918339815,
+            1.6065165558455129e-34
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.5,
+          "leading_gaps_over_t": [
+            0.0,
+            1.347296355333853,
+            1.3472963553338646,
+            1.8793852415718155
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.2587608467506342,
+            1.4443295058623047,
+            1.8928978398892484
+          ],
+          "O2_mode_weights": [
+            8.43110913261213e-31,
+            1.9590363589784785e-34,
+            0.05363201103775572,
+            3.749038643283885e-32
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.35,
+          "leading_gaps_over_t": [
+            0.0,
+            1.347296355333853,
+            1.3472963553338646,
+            1.8793852415718155
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.300200905333913,
+            1.3940597622808717,
+            1.8829207278945432
+          ],
+          "O2_mode_weights": [
+            1.9683501171151546e-31,
+            5.785786425613343e-34,
+            0.07130620444959987,
+            5.084228863737333e-32
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.2,
+          "leading_gaps_over_t": [
+            0.0,
+            1.347296355333853,
+            1.3472963553338646,
+            1.8793852415718155
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.3310959237423425,
+            1.362413609280845,
+            1.8798484564514562
+          ],
+          "O2_mode_weights": [
+            2.622041061273756e-29,
+            5.137946176005096e-34,
+            0.0846095413617735,
+            8.39844216793656e-31
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.1,
+          "leading_gaps_over_t": [
+            0.0,
+            1.347296355333853,
+            1.3472963553338646,
+            1.8793852415718155
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.343169718467701,
+            1.351062640114998,
+            1.8794363159245835
+          ],
+          "O2_mode_weights": [
+            9.014607063611358e-29,
+            4.340077046705158e-33,
+            0.08982467284070667,
+            7.438498342438615e-32
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        }
+      ]
+    },
+    "neutral_anisotropy_comparison": {
+      "rows": [
+        {
+          "L": 4,
+          "lambda_z": 1.0,
+          "max_gap_error_over_t": 0.39506734772900476,
+          "error_over_lambda4": 0.39506734772900476,
+          "native_index2_weight_over_lambda4": 0.6656547930904244,
+          "derived_index2_O2_weight": 0.08236703946480207
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.7,
+          "max_gap_error_over_t": 0.08586170887059241,
+          "error_over_lambda4": 0.35760811691208844,
+          "native_index2_weight_over_lambda4": 0.8265359500144468,
+          "derived_index2_O2_weight": 0.2842945310270959
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.5,
+          "max_gap_error_over_t": 0.0267602518777319,
+          "error_over_lambda4": 0.4281640300437104,
+          "native_index2_weight_over_lambda4": 0.7532722665855425,
+          "derived_index2_O2_weight": 0.4308814390626165
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.35,
+          "max_gap_error_over_t": 0.00678886909709675,
+          "error_over_lambda4": 0.4524027719847898,
+          "native_index2_weight_over_lambda4": 0.686444964114053,
+          "derived_index2_O2_weight": 0.5218776816311784
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.2,
+          "max_gap_error_over_t": 0.0007399837422452649,
+          "error_over_lambda4": 0.46248983890329043,
+          "native_index2_weight_over_lambda4": 0.6396110987981823,
+          "derived_index2_O2_weight": 0.5851072832226248
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.1,
+          "max_gap_error_over_t": 4.6512972931012087e-05,
+          "error_over_lambda4": 0.46512972931012075,
+          "native_index2_weight_over_lambda4": 0.6225337367451391,
+          "derived_index2_O2_weight": 0.6088651547847563
+        },
+        {
+          "L": 6,
+          "lambda_z": 1.0,
+          "max_gap_error_over_t": 0.5434785219366534,
+          "error_over_lambda4": 0.5434785219366534,
+          "native_index2_weight_over_lambda4": 6.613914850107813e-23,
+          "derived_index2_O2_weight": 0.017065287683054306
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.7,
+          "max_gap_error_over_t": 0.2155073841248396,
+          "error_over_lambda4": 0.897573444918116,
+          "native_index2_weight_over_lambda4": 1.2626859479520323,
+          "derived_index2_O2_weight": 0.08133156784383379
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.5,
+          "max_gap_error_over_t": 0.06020482794123394,
+          "error_over_lambda4": 0.963277247059743,
+          "native_index2_weight_over_lambda4": 0.48156210671795063,
+          "derived_index2_O2_weight": 0.13919981342222754
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.35,
+          "max_gap_error_over_t": 0.014115315846592313,
+          "error_over_lambda4": 0.9406291276363059,
+          "native_index2_weight_over_lambda4": 0.30125899486499147,
+          "derived_index2_O2_weight": 0.17909727743783416
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.2,
+          "max_gap_error_over_t": 0.0014684418818711187,
+          "error_over_lambda4": 0.917776176169449,
+          "native_index2_weight_over_lambda4": 0.24230944555948647,
+          "derived_index2_O2_weight": 0.20860287790650628
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.1,
+          "max_gap_error_over_t": 9.091319053089464e-05,
+          "error_over_lambda4": 0.9091319053089462,
+          "native_index2_weight_over_lambda4": 0.22807160494726458,
+          "derived_index2_O2_weight": 0.2200787597937317
+        },
+        {
+          "L": 8,
+          "lambda_z": 1.0,
+          "max_gap_error_over_t": 0.8370450799220854,
+          "error_over_lambda4": 0.8370450799220854,
+          "native_index2_weight_over_lambda4": 1.6221165948109413e-27,
+          "derived_index2_O2_weight": 0.0046278327284490686
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.7,
+          "max_gap_error_over_t": 0.3723589971393526,
+          "error_over_lambda4": 1.550849634066442,
+          "native_index2_weight_over_lambda4": 2.0470198892360134,
+          "derived_index2_O2_weight": 0.029021653918339815
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.5,
+          "max_gap_error_over_t": 0.08304688767123936,
+          "error_over_lambda4": 1.3287502027398297,
+          "native_index2_weight_over_lambda4": 0.3023563417292525,
+          "derived_index2_O2_weight": 0.05363201103775572
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.35,
+          "max_gap_error_over_t": 0.01733223699547981,
+          "error_over_lambda4": 1.155001215858713,
+          "native_index2_weight_over_lambda4": 0.14006672183561938,
+          "derived_index2_O2_weight": 0.07130620444959987
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.2,
+          "max_gap_error_over_t": 0.0016959768384599005,
+          "error_over_lambda4": 1.0599855240374376,
+          "native_index2_weight_over_lambda4": 0.1020298766880743,
+          "derived_index2_O2_weight": 0.0846095413617735
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.1,
+          "max_gap_error_over_t": 0.0001028804400677874,
+          "error_over_lambda4": 1.0288044006778738,
+          "native_index2_weight_over_lambda4": 0.09386558612229237,
+          "derived_index2_O2_weight": 0.08982467284070667
+        }
+      ],
+      "scope": "Finite selected-sector development comparison. Sorted eigenvalues, no complete-spectrum certificate. Index2 source comparison is valid near weak coupling; level reordering makes it invalid as an equal-mode comparison at strong coupling."
+    }
+  },
+  "scope": "Exact discrete symmetry, leading-theory readout, and frozen full-H finite anisotropy comparison; no bulk phase or physical scalar identification"
+}

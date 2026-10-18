@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/native_infrared_readout.py
+runner_sha256: 29ab82328a73d136c6bfed3f1ec15247209620f2564d4a9713222b92888e9d0c
+input_fingerprint_sha256: 93672e7eed8592dac09a192808a4f93d2a3c67943d8b5c643283815cef1f5558
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.61
+status: ok
+----- stdout -----
+reproduced neutral_rung_discrete_symmetry
+reproduced neutral_xy_readout
+reproduced neutral_open_xy_comparison
+reproduced neutral_anisotropy_comparison
+per_site: one physical qubit; exact parity coordinates add no degrees of freedom
+per_mode: quadratic original-composite infrared readout derived
+per_block: exact discrete symmetry and conditional infrared route
+lattice_wide: equal coupling, bulk scalar and physical observations remain open
+
+----- stderr -----
+

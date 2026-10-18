@@ -1,0 +1,418 @@
+{
+  "rows": [
+    {
+      "L": 4,
+      "lambda_z": 1.0,
+      "leading_gaps_over_t": [
+        0.0,
+        2.23606797749979,
+        2.23606797749979,
+        4.47213595499958
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        1.984137417967763,
+        3.008121950510612,
+        4.819290303392677
+      ],
+      "O2_mode_weights": [
+        1.9941803546246735e-31,
+        0.0,
+        0.08236703946480207,
+        0.0023430402157760097
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 4,
+      "lambda_z": 0.7,
+      "leading_gaps_over_t": [
+        0.0,
+        2.23606797749979,
+        2.23606797749979,
+        4.47213595499958
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        2.0792542822871085,
+        2.5699003020541924,
+        4.586612544807132
+      ],
+      "O2_mode_weights": [
+        1.2571560776279542e-30,
+        0.0,
+        0.2842945310270959,
+        0.05313836017343809
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 4,
+      "lambda_z": 0.5,
+      "leading_gaps_over_t": [
+        0.0,
+        2.23606797749979,
+        2.23606797749979,
+        4.47213595499958
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        2.147232858989515,
+        2.394464482080807,
+        4.515984094887738
+      ],
+      "O2_mode_weights": [
+        4.2756357402531367e-32,
+        0.0,
+        0.4308814390626165,
+        0.10516896999883445
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 4,
+      "lambda_z": 0.35,
+      "leading_gaps_over_t": [
+        0.0,
+        2.23606797749979,
+        2.23606797749979,
+        4.47213595499958
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        2.190145812192555,
+        2.310433626452912,
+        4.489691310124754
+      ],
+      "O2_mode_weights": [
+        2.2885963328214762e-30,
+        0.0,
+        0.5218776816311784,
+        0.1407589156226838
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 4,
+      "lambda_z": 0.2,
+      "leading_gaps_over_t": [
+        0.0,
+        2.23606797749979,
+        2.23606797749979,
+        4.47213595499958
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        2.2205569735117234,
+        2.259648552689684,
+        4.477022367845487
+      ],
+      "O2_mode_weights": [
+        3.482960695597359e-30,
+        0.0,
+        0.5851072832226248,
+        0.16665933512121256
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 4,
+      "lambda_z": 0.1,
+      "leading_gaps_over_t": [
+        0.0,
+        2.23606797749979,
+        2.23606797749979,
+        4.47213595499958
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        2.2321428428875776,
+        2.2418985864070375,
+        4.4732799422556955
+      ],
+      "O2_mode_weights": [
+        5.452058289386549e-32,
+        0.0,
+        0.6088651547847563,
+        0.17661797574964846
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 6,
+      "lambda_z": 1.0,
+      "leading_gaps_over_t": [
+        0.0,
+        1.6920214716300932,
+        1.6920214716300939,
+        2.2469796037174645
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        1.4334340040344054,
+        2.2329162758311196,
+        2.5541848107893985
+      ],
+      "O2_mode_weights": [
+        7.98857074629614e-30,
+        5.0668177740043436e-33,
+        0.017065287683054306,
+        1.4531030632106652e-33
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 6,
+      "lambda_z": 0.7,
+      "leading_gaps_over_t": [
+        0.0,
+        1.6920214716300932,
+        1.6920214716300939,
+        2.2469796037174645
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        1.5200345057573994,
+        1.9351239574103722,
+        2.3601103755758555
+      ],
+      "O2_mode_weights": [
+        1.2530499587049152e-30,
+        3.0444372683006036e-33,
+        0.08133156784383379,
+        3.019163537075454e-32
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 6,
+      "lambda_z": 0.5,
+      "leading_gaps_over_t": [
+        0.0,
+        1.6920214716300932,
+        1.6920214716300939,
+        2.2469796037174645
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        1.5914014407309827,
+        1.8100435969933157,
+        2.2937936310891907
+      ],
+      "O2_mode_weights": [
+        6.951696805214779e-30,
+        8.737368028848958e-33,
+        0.13919981342222754,
+        7.004620968734331e-33
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 6,
+      "lambda_z": 0.35,
+      "leading_gaps_over_t": [
+        0.0,
+        1.6920214716300932,
+        1.6920214716300939,
+        2.2469796037174645
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        1.639105672058001,
+        1.7482468424398179,
+        2.266827871706285
+      ],
+      "O2_mode_weights": [
+        1.878830651411919e-30,
+        5.194744931203419e-32,
+        0.17909727743783416,
+        2.8116631108563507e-33
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 6,
+      "lambda_z": 0.2,
+      "leading_gaps_over_t": [
+        0.0,
+        1.6920214716300932,
+        1.6920214716300939,
+        2.2469796037174645
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        1.6739489087239505,
+        1.7100405384075603,
+        2.252777934329783
+      ],
+      "O2_mode_weights": [
+        6.791063000831301e-31,
+        8.548541661302334e-31,
+        0.20860287790650628,
+        2.415912658597989e-33
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 6,
+      "lambda_z": 0.1,
+      "leading_gaps_over_t": [
+        0.0,
+        1.6920214716300932,
+        1.6920214716300939,
+        2.2469796037174645
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        1.6874296959181505,
+        1.6964953499125461,
+        2.248365703976544
+      ],
+      "O2_mode_weights": [
+        1.9304310224327328e-30,
+        3.643445201508361e-29,
+        0.2200787597937317,
+        3.372533215020788e-32
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 8,
+      "lambda_z": 1.0,
+      "leading_gaps_over_t": [
+        0.0,
+        1.347296355333853,
+        1.3472963553338646,
+        1.8793852415718155
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        1.1354137021858968,
+        1.7734261296787697,
+        2.0466035080894773
+      ],
+      "O2_mode_weights": [
+        2.8659875964806236e-29,
+        1.0472945342171083e-34,
+        0.0046278327284490686,
+        2.2377538365604614e-33
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 8,
+      "lambda_z": 0.7,
+      "leading_gaps_over_t": [
+        0.0,
+        1.347296355333853,
+        1.3472963553338646,
+        1.8793852415718155
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        1.1992936946109332,
+        1.5437389607766985,
+        1.9266734294168715
+      ],
+      "O2_mode_weights": [
+        8.86439415144583e-30,
+        4.493550069458911e-35,
+        0.029021653918339815,
+        1.6065165558455129e-34
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 8,
+      "lambda_z": 0.5,
+      "leading_gaps_over_t": [
+        0.0,
+        1.347296355333853,
+        1.3472963553338646,
+        1.8793852415718155
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        1.2587608467506342,
+        1.4443295058623047,
+        1.8928978398892484
+      ],
+      "O2_mode_weights": [
+        8.43110913261213e-31,
+        1.9590363589784785e-34,
+        0.05363201103775572,
+        3.749038643283885e-32
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 8,
+      "lambda_z": 0.35,
+      "leading_gaps_over_t": [
+        0.0,
+        1.347296355333853,
+        1.3472963553338646,
+        1.8793852415718155
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        1.300200905333913,
+        1.3940597622808717,
+        1.8829207278945432
+      ],
+      "O2_mode_weights": [
+        1.9683501171151546e-31,
+        5.785786425613343e-34,
+        0.07130620444959987,
+        5.084228863737333e-32
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 8,
+      "lambda_z": 0.2,
+      "leading_gaps_over_t": [
+        0.0,
+        1.347296355333853,
+        1.3472963553338646,
+        1.8793852415718155
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        1.3310959237423425,
+        1.362413609280845,
+        1.8798484564514562
+      ],
+      "O2_mode_weights": [
+        2.622041061273756e-29,
+        5.137946176005096e-34,
+        0.0846095413617735,
+        8.39844216793656e-31
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    },
+    {
+      "L": 8,
+      "lambda_z": 0.1,
+      "leading_gaps_over_t": [
+        0.0,
+        1.347296355333853,
+        1.3472963553338646,
+        1.8793852415718155
+      ],
+      "fourth_gaps_over_t": [
+        0.0,
+        1.343169718467701,
+        1.351062640114998,
+        1.8794363159245835
+      ],
+      "O2_mode_weights": [
+        9.014607063611358e-29,
+        4.340077046705158e-33,
+        0.08982467284070667,
+        7.438498342438615e-32
+      ],
+      "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
  "edge_count": 16245,
- "node_count": 7252,
+ "node_count": 7253,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15525,6 +15525,10 @@
   "native_informative_edge_record_and_disturbance_bounded_theorem_note_2026-09-13": {
    "deps_hash": "5eda749e24eb",
    "out_degree": 4
+  },
+  "native_infrared_readout_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "native_interacting_weyl_protected_paths_bounded_theorem_note_2026-09-13": {
    "deps_hash": "a6224d3271b4",

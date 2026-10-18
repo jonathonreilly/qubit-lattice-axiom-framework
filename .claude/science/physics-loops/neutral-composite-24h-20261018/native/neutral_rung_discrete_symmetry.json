@@ -1,0 +1,12 @@
+{
+  "projective_Px_Py": "anticommute exactly, square to identity, preserve full rung h and global interrung bonds",
+  "D_signed_permutation": "Matrix([[0, 0, -1, 0], [-1, 0, 0, 0], [0, 0, 0, 1], [0, 1, 0, 0]])",
+  "low_T": "Matrix([[sqrt(2)/2, -1/2], [1, sqrt(2)/2]])",
+  "low_adjoint_action": [
+    "tau1 -> -tau2",
+    "tau2 -> tau1",
+    "tau3 -> tau3"
+  ],
+  "charge_selection": "Delta Q0 multiple8, equivalently four collective flips; exact global discrete symmetry",
+  "scope": "Finite positive-parity tube; no continuous microscopic symmetry or bulk criticality assertion"
+}

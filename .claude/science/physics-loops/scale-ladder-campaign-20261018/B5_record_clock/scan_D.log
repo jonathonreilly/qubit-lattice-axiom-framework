@@ -10,3 +10,29 @@
   if abs(np.log(ys / E)) < np.log(1.1) or xs >= 10.0:
 /home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_tolerance_scan.py:131: RuntimeWarning: divide by zero encountered in log
   s_ = np.log(y1 / y2) / np.log(x1 / x2)
+/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_tolerance_scan.py:137: RuntimeWarning: divide by zero encountered in log
+  if abs(np.log(ys / E)) < np.log(1.1) or xs >= 10.0:
+/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_tolerance_scan.py:131: RuntimeWarning: divide by zero encountered in log
+  s_ = np.log(y1 / y2) / np.log(x1 / x2)
+# scan D: 21 jobs, 2665s, budget e=0.01, K=4
+D2 lam=0.004 T=6250 M=1550 n=1 MB: a_lit=1.203e-06(p=0.1,PASS) a_act=1.374e-02(p=1.0,PASS) b_pop=1.915e-02(p=1.0,PASS) c_gp=1.374e-02(p=1.0,PASS) c_rel=1.374e-02(p=1.0,PASS)
+D2 lam=0.004 T=6250 M=1550 n=1 MO: a_lit=4.600e-03(p=1.0,PASS) a_act=4.600e-03(p=1.0,PASS) b_pop=9.163e-02(p=2.0,PASS) c_gp=6.300e-03(p=1.0,PASS) c_rel=4.600e-03(p=1.0,PASS)
+D2 lam=0.004 T=6250 M=1550 n=1 EO: a_lit=2.829e-05(p=1.0,PASS) a_act=2.829e-05(p=1.0,PASS) b_pop=6.258e-04(p=2.0,PASS) c_gp=4.041e-05(p=1.0,PASS) c_rel=2.829e-05(p=1.0,PASS)
+D2 lam=0.004 T=6250 M=1550 n=2 MB: a_lit=1.138e-06(p=0.07,PASS) a_act=3.804e-03(p=1.0,PASS) b_pop=5.328e-03(p=1.0,PASS) c_gp=3.804e-03(p=1.0,PASS) c_rel=3.804e-03(p=1.0,PASS)
+D2 lam=0.004 T=6250 M=1550 n=2 MO: a_lit=4.887e-03(p=1.0,PASS) a_act=4.887e-03(p=1.0,PASS) b_pop=9.278e-02(p=2.0,PASS) c_gp=6.339e-03(p=1.0,PASS) c_rel=4.887e-03(p=1.0,PASS)
+D2 lam=0.004 T=6250 M=1550 n=2 EO: a_lit=2.843e-05(p=1.0,PASS) a_act=2.843e-05(p=1.0,PASS) b_pop=6.318e-04(p=2.0,PASS) c_gp=4.061e-05(p=1.0,PASS) c_rel=2.843e-05(p=1.0,PASS)
+D2 lam=0.004 T=6250 M=1550 n=3 MB: a_lit=1.240e-06(p=0.1,PASS) a_act=4.780e-03(p=1.0,PASS) b_pop=6.729e-03(p=1.0,PASS) c_gp=4.780e-03(p=1.0,PASS) c_rel=4.780e-03(p=1.0,PASS)
+D2 lam=0.004 T=6250 M=1550 n=3 MO: a_lit=2.224e-03(p=1.0,PASS) a_act=2.224e-03(p=1.0,PASS) b_pop=4.958e-02(p=2.0,PASS) c_gp=3.209e-03(p=1.0,PASS) c_rel=2.224e-03(p=1.0,PASS)
+D2 lam=0.004 T=6250 M=1550 n=3 EO: a_lit=2.859e-05(p=1.0,PASS) a_act=2.859e-05(p=1.0,PASS) b_pop=6.383e-04(p=2.0,PASS) c_gp=4.083e-05(p=1.0,PASS) c_rel=2.859e-05(p=1.0,PASS)
+D2 lam=0.004 T=6250 M=1550 n=4 MB: a_lit=2.036e-07(p=-0.26,PASS) a_act=1.663e-02(p=1.0,PASS) b_pop=2.388e-02(p=1.0,PASS) c_gp=1.663e-02(p=1.0,PASS) c_rel=1.663e-02(p=1.0,PASS)
+D2 lam=0.004 T=6250 M=1550 n=4 MO: a_lit=1.294e-03(p=1.0,PASS) a_act=1.294e-03(p=1.0,PASS) b_pop=2.779e-02(p=2.0,PASS) c_gp=1.783e-03(p=1.0,PASS) c_rel=1.294e-03(p=1.0,PASS)
+D2 lam=0.004 T=6250 M=1550 n=4 EO: a_lit=2.876e-05(p=1.0,PASS) a_act=2.876e-05(p=1.0,PASS) b_pop=6.458e-04(p=2.0,PASS) c_gp=4.108e-05(p=1.0,PASS) c_rel=2.876e-05(p=1.0,PASS)
+D2 lam=0.004 T=6250 M=1550 n=5 MB: a_lit=2.075e-07(p=-0.09,PASS) a_act=8.438e-03(p=1.0,PASS) b_pop=1.194e-02(p=1.0,PASS) c_gp=8.438e-03(p=1.0,PASS) c_rel=8.438e-03(p=1.0,PASS)
+D2 lam=0.004 T=6250 M=1550 n=5 MO: a_lit=1.763e-03(p=1.0,PASS) a_act=1.763e-03(p=1.0,PASS) b_pop=4.112e-02(p=2.0,PASS) c_gp=2.584e-03(p=1.0,PASS) c_rel=1.763e-03(p=1.0,PASS)
+D2 lam=0.004 T=6250 M=1550 n=5 EO: a_lit=2.897e-05(p=1.0,PASS) a_act=2.897e-05(p=1.0,PASS) b_pop=6.547e-04(p=2.0,PASS) c_gp=4.138e-05(p=1.0,PASS) c_rel=2.897e-05(p=1.0,PASS)
+D2 lam=0.004 T=1.25e+04 M=3050 n=3 MB: a_lit=6.200e-07(p=-0.02,PASS) a_act=4.780e-03(p=1.0,PASS) b_pop=6.810e-03(p=1.0,PASS) c_gp=4.780e-03(p=1.0,PASS) c_rel=4.780e-03(p=1.0,PASS)
+D2 lam=0.004 T=1.25e+04 M=3050 n=3 MO: a_lit=2.224e-03(p=1.0,PASS) a_act=2.224e-03(p=1.0,PASS) b_pop=4.499e-02(p=2.0,PASS) c_gp=3.209e-03(p=1.0,PASS) c_rel=2.224e-03(p=1.0,PASS)
+D2 lam=0.004 T=1.25e+04 M=3050 n=3 EO: a_lit=2.859e-05(p=1.0,PASS) a_act=2.859e-05(p=1.0,PASS) b_pop=5.778e-04(p=2.0,PASS) c_gp=4.083e-05(p=1.0,PASS) c_rel=2.859e-05(p=1.0,PASS)
+D2 lam=0.004 T=2.5e+04 M=6050 n=3 MB: a_lit=3.100e-07(p=0.01,PASS) a_act=4.780e-03(p=1.0,PASS) b_pop=7.178e-03(p=1.0,PASS) c_gp=4.780e-03(p=1.0,PASS) c_rel=4.780e-03(p=1.0,PASS)
+D2 lam=0.004 T=2.5e+04 M=6050 n=3 MO: a_lit=2.224e-03(p=1.0,PASS) a_act=2.224e-03(p=1.0,PASS) b_pop=4.134e-02(p=2.0,PASS) c_gp=3.209e-03(p=1.0,PASS) c_rel=2.224e-03(p=1.0,PASS)
+D2 lam=0.004 T=2.5e+04 M=6050 n=3 EO: a_lit=2.859e-05(p=1.0,PASS) a_act=2.859e-05(p=1.0,PASS) b_pop=5.293e-04(p=2.0,PASS) c_gp=4.083e-05(p=1.0,PASS) c_rel=2.859e-05(p=1.0,PASS)

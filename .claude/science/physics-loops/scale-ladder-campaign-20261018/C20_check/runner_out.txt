@@ -1,0 +1,54 @@
+model: L = 4, X = normalized combination of six sampled invariant conjugation-odd terms (seed 11); node space dimension 4
+
+Part A: Pauli images of the one-fermion terms in the 48-qubit-per-site corner code (flux 1011, L = 4)
+[PASS] Wilson loop along (1, 0, 0) (holonomy of the fermion gauge) is Hermitian and an independent, consistent generator
+[PASS] Wilson loop along (0, 1, 0) (holonomy of the fermion gauge) is Hermitian and an independent, consistent generator
+[PASS] Wilson loop along (0, 0, 1) (holonomy of the fermion gauge) is Hermitian and an independent, consistent generator
+[PASS] images of c^dag_q c_r commute with all sampled stabilizers (loops and repetition terms)
+[PASS] fermionic algebra [Q(c+_a c_b), Q(c+_b c_c)] = Q(c+_a c_c) on the code space (random triples, mod stabilizers)  25/25
+[PASS] disjoint bilinears commute on the code space (15 random pairs)
+[PASS] [Q(n_a), Q(c+_a c_b)] = Q(c+_a c_b) on the code space (15 random pairs)
+[PASS] the image of c^dag_q c_r is path independent on the code space (two different paths, random pairs)  7/7
+[PASS] images of sampled entries of the C19 terms X and M (h c^dag_q c_r + h.c., complex h) are nonzero, Hermitian and commute with the sampled stabilizers  12 entries
+[PASS] covariance U_R Q(c+_q c_r) U_R^dag = sigma_R(q) sigma_R(r) Q(c+_Rq c_Rr) with the fermion-level PSG signs (6 random rotations x 6 random bilinears)  36/36
+
+Part B: site-charge interaction (U/2) sum_v N_v^2 and the on-site particle-hole channels
+[PASS] exact: N_v commutes with every on-site bilinear c^dag_a c_b (Fock space of one site); hence (U/2) N_v^2 is invariant under the on-site U(12) and its Fock energy (U/2)[(tr rho)^2 + tr rho - tr rho^2] has second variation -U ||delta rho||^2 in every traceless direction: equal exchange attraction in all 143 channels  second variations in [-1.000000, -1.000000] (U = 1)
+[PASS] supplied metallic model (t1 = -1, t2 = 0.2, 0.05 X): degenerate node doublets at k* and -k*; chemical potential at the node  E_N = -2.282843
+[PASS] the 144 on-site operators decompose under O_h (projectors from the O character table and the site inversion) with multiplicities summing to 144  {'A1g': 3, 'A1u': 3, 'A2g': 3, 'A2u': 3, 'Eg': 6, 'Eu': 6, 'T1g': 9, 'T1u': 9, 'T2g': 9, 'T2u': 9}
+   q=0: leading susceptibility per O_h irrep (trace removed; N = 12, T = 0.01, symmetrized; raw quadrature asymmetry 4.0e-04):
+      A1u 1.1970, T1u 0.8033, T1g 0.8005, A1g 0.7812, A2g 0.1331, A2u 0.1324, T2g 0.1276, T2u 0.1271, Eu 0.0574, Eg 0.0546
+   Q: leading susceptibility per O_h irrep (trace removed; N = 12, T = 0.01, symmetrized; raw quadrature asymmetry 4.0e-04):
+      T2u 1.0054, T2g 1.0050, A2u 0.5881, A2g 0.5880, T1u 0.1331, T1g 0.1278, A1u 0.1179, A1g 0.0903, Eu 0.0305, Eg 0.0261
+   (4 s)
+[PASS] the bare static susceptibility matrices are positive semidefinite (Lindhard form) at q = 0 and Q
+[PASS] q = 0: the leading channel over all traceless on-site channels is A1u (O-invariant, odd under the site inversion), purely imaginary (complex-conjugation odd); its 3-dimensional sector contains the C18 chiral triangle term i lambda, which has a large but not complete overlap with the leading vector  A1u: chi = 1.1970, imaginary weight 1.0000, i-lambda term inside A1u: 1.0000, overlap with the leading vector 0.8195
+[PASS] Q: the leading A2 channel is the pseudoscalar Dirac-mass channel (imaginary; its node-space projection is +-m with two-fold degeneracy)  A2u: chi = 0.5881, projected eigenvalues [-0.5 -0.5  0.5  0.5]
+[PASS] ranking: chi(Dirac mass, Q) < chi(leading, q = 0) and < chi(leading, Q); so in this RPA/Landau treatment the Dirac mass is not the first instability  U_c(leading q=0) = 0.835, U_c(leading Q, T2u) = 0.995, U_c(Dirac mass) = 1.700; with the Hartree term kept: U_c(q=0) = 0.835, U_c(Q) = 0.995
+[PASS] condensing the leading q = 0 channel (strength 0.05) keeps degenerate doublets at k* and -k* and shifts them oppositely: a valley (chiral-chemical-potential-like) splitting, not a gap  E(k*) - E_N = -0.02500, E(-k*) - E_N = +0.02500
+[PASS] control (N = 16, T = 0.005, different grid offset): the ranking chi(leading q = 0) > chi(Dirac mass, Q) persists  chi(A1u, q=0) = 1.3583, chi(A2u, Q) = 0.6074, max at Q = 1.1195 (9 s)
+
+Part C0: invariant one-fermion terms of range |shift|_inf <= 1 and the supplied optimisation point
+[PASS] exact orbit count: the O_h x translation invariant Hermitian one-fermion terms of range |shift|_inf <= 1 form a space of dimension 81 = 38 conjugation-even + 43 conjugation-odd (orbit sums of block entries); the two hoppings and X lie in it  {'re': 38, 'im': 43}, span residual 6.7e-16
+[PASS] the supplied optimisation point (45 orbit coefficients: the two hoppings + 43 conjugation-odd terms; no other conjugation-even term) is a Hermitian, O_h- and translation-invariant lattice Hamiltonian
+
+Part C: can the Dirac point be the only Fermi-level feature at node filling (nu = 1)?
+[PASS] exact: the dressed lifts of the commuting half-turns C2x, C2y anticommute on the whole L = 4 one-particle space (same permutation, opposite sign on every corner mode)
+[PASS] the eight momenta (+-pi/2)^3 are fixed by both dressed half-turns, and there the restricted 12 x 12 unitaries anticommute; so every Bloch level there is even-degenerate for any translation-invariant H commuting with them
+[PASS] orbits of the eight points under the dressed affine maps: O gives {k*}, {-k*} and two triples; adding the site inversion joins the triples into one orbit of six (and k* with -k*)  O: [1, 1, 3, 3], O_h: [2, 6]
+   corollary (exact): at nu = 1 a pocket-free filled band 0 needs E0(k) <= mu <= E1(k) everywhere; at the eight points E0 = E1, so all eight touch mu: six further touchings besides +-k*, never a two-node Fermi level
+   C20 metallic model (t2 = 0.2, 0.05 X): E_N = -2.28284, Weyl velocity 0.0400; E_6 - E_N = [0.09568 0.09568 0.09568 0.09568 0.09568 0.09568] ; refined max band0 - E_N = +1.3967e-01 ; min band1 - E_N = +4.4409e-16
+   C19 model (t2 = 0.2, 0.05 X_C19): E_N = -2.28284, Weyl velocity 0.1096; E_6 - E_N = [0.16204 0.16204 0.16204 0.16204 0.16204 0.16204] ; refined max band0 - E_N = +1.6204e-01 ; min band1 - E_N = +4.4409e-16
+   optimisation point: E_N = -2.11342, Weyl velocity 0.5652; E_6 - E_N = [0.00872 0.00872 0.00872 0.00872 0.00872 0.00872] ; refined max band0 - E_N = +8.7195e-03 ; min band1 - E_N = +4.4409e-16
+[PASS] in every tested O_h-symmetric model the band-0/band-1 pairs are degenerate at all eight points and the six-point doublet energy E_6 is a single number above E_N, so each tested model has a hole pocket there
+[PASS] optimisation point: no electron pocket (min band 1 = E_N, at the node) and the only band-0 excess over E_N found by the refined search is the forced six-point doublet (max band 0 - E_N = E_6 - E_N)  E_6 - E_N = 8.7195e-03
+
+Part D: the staggered pseudoscalar mass (C19 type) on the same models: clean massive vacuum at nu = 1?
+   C20 metallic model, m = 0.02: direct gap at k* 2 m_D = 0.04243; global gap (grid + local refinement) = -0.11605; top of band 1 at k/pi = [-1.  1.  0.], bottom of band 2 at k/pi = [ 0.5 -0.5  0.5]
+   C20 metallic model, m = 0.1: direct gap at k* 2 m_D = 0.21216; global gap (grid + local refinement) = +0.01353; top of band 1 at k/pi = [ 0.001 -1.    -0.999], bottom of band 2 at k/pi = [ 0.5 -0.5  0.5]
+   optimisation point, m = 0.02: direct gap at k* 2 m_D = 0.04243; global gap (grid + local refinement) = +0.02511; top of band 1 at k/pi = [-0.5 -0.5 -0.5], bottom of band 2 at k/pi = [-0.996 -0.     0.004]
+   optimisation point, m = 0.05: direct gap at k* 2 m_D = 0.10608; global gap (grid + local refinement) = +0.05475; top of band 1 at k/pi = [-0.5 -0.5 -0.5], bottom of band 2 at k/pi = [-0.     0.009  0.009]
+[PASS] numerical (grid + local refinement, not certified): with the staggered mass the optimisation point becomes a clean insulator at nu = 1 for both tested masses, but its global gap is smaller than the direct Dirac gap 2 m_D at k*: the lowest excitation is not the Dirac fermion  [(np.float64(0.0424), np.float64(0.0251)), (np.float64(0.1061), np.float64(0.0547))]
+[PASS] numerical: the C20 metallic model with the small mass m = 0.02 stays metallic (negative global gap)  global gap -0.1160
+
+TOTAL: PASS=28 FAIL=0   (66 s)

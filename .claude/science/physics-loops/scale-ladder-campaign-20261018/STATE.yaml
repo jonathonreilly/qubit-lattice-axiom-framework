@@ -1,18 +1,19 @@
 slug: scale-ladder-campaign-20261018
 start: 2026-10-18T02:14Z
-runtime: 12h
 target_stop: 2026-10-18T14:14Z
 branch: claude/scale-ladder-campaign-20261018
-base: claude/scale-ladder-20261018 (PR #9702)
-delivery: milestone
-lock: automation_lock acquired, ttl 13h
+prs:
+  "9702": "scale-ladder note revised (information-minimal target, step rules, doublet lemma, diagonal-shift Weyl step); PASS=18"
+  "9718": "lane theorems: B3 coding radius (PASS=22), B8 frequency consistency (PASS=17), B7 odd filling (PASS=25)"
 blocks:
-  B1: done-provisional. Parameter-free corner step R_link(1-2P2) has a 6-fold node at speed 1/sqrt3 with flat bands; lemma that constant-spectrum symmetric factors give zero doublet velocity. Runner Part 6 PASS. Independent check running.
-  B2: folded into the note; the deeper test needs interactions (backlog).
-  B3: done. Coding-radius theorem; independent check confirmed with corrections, now applied; promoted to docs/IID_PRIORITY_FORMATION_* plus scripts runner (PASS=22).
-  B4: done. No leading-order TT birefringence; constraint closure forces eps3 = 0 (FINDINGS.md). Follow-up B4b running.
-  B5: running (Record clock hypothesis).
-  B6: running (Maxwell winding sectors).
-  B7: running (corner LSM).
-  B8: done (draft). Frequency consistency from mixing; independent check running.
-next: revise PR #9702 after the B1 check; promote B8 after its check; start a milestone PR for B3/B4/B8.
+  B1: "done for the search family. Parameter-free reflection step (six-fold node, speed 1/sqrt3) and diagonal-shift Weyl step (spin-1/2 Weyl at +-k*, speed sqrt2/3, six cube-point doublers). Lemma checked. Clifford-only family has no Weyl. Running: pi/6-phase search and random word search for a doubler-free step."
+  B2: "folded into the note; deeper test needs interactions"
+  B3: "done, checked, in PR #9718"
+  B4: "done and checked: one TT cone for every gauge-invariant form; closure forces DeWitt eps3=0 (conditional). Writing a docs note (worker)."
+  B4b: "done and checked: the 06-08 induced bubble needs an underived seagull (Ward ratio 0.18-0.23). Folded into the gravity note."
+  B5: "running (Record clock hypothesis)"
+  B6: "running (Maxwell winding sectors)"
+  B7: "done, checked, in PR #9718"
+  B8: "done, checked, in PR #9718"
+  B11: "done: the Weyl step is an exact depth-25 range-1 fermionic circuit on the corner code; S is Clifford, R_L is Clifford+T, the on-site factor is not exact Clifford+T"
+  C20: "being written up (worker): qubit build, channel ranking, clean vacuum not achieved"

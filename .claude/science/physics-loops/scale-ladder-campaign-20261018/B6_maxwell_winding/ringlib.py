@@ -258,6 +258,21 @@ def union_components(n, rows, cols):
     return par
 
 
+@nb.njit(parallel=True, cache=True)
+def _hmm(indptr, indices, diag, J, X, shift):
+    n, k = X.shape
+    Y = np.empty_like(X)
+    for i in nb.prange(n):
+        d = diag[i] - shift
+        for m in range(k):
+            Y[i, m] = d * X[i, m]
+        for t in range(indptr[i], indptr[i + 1]):
+            j = indices[t]
+            for m in range(k):
+                Y[i, m] -= J * X[j, m]
+    return Y
+
+
 class Component:
     """One flip component (sorted codes) with its move list."""
 
@@ -274,7 +289,7 @@ class Component:
     def H(self, V, J=1.0):
         return (sp.diags(V * self.nf.astype(float)) - J * self.A).tocsr()
 
-    def ground(self, V, J=1.0, tol=1e-13):
+    def ground(self, V, J=1.0, tol=1e-11, k=2):
         if self.n == 1:
             return float(V * self.nf[0]), np.ones(1), np.inf
         if self.n <= 800:
@@ -282,10 +297,10 @@ class Component:
             g = U[:, 0]
             return float(w[0]), g * np.sign(g.sum()), float(w[1] - w[0])
         H = self.H(V, J)
-        w, U = sla.eigsh(H, k=2, which="SA", tol=tol, v0=np.random.default_rng(1).random(self.n) + 0.5, ncv=40, maxiter=20000)
+        w, U = sla.eigsh(H, k=k, which="SA", tol=tol, v0=np.random.default_rng(1).random(self.n) + 0.5, ncv=40, maxiter=20000)
         o = np.argsort(w)
         g = U[:, o[0]]
-        return float(w[o[0]]), g * np.sign(g.sum()), float(w[o[1]] - w[o[0]])
+        return float(w[o[0]]), g * np.sign(g.sum()), (float(w[o[1]] - w[o[0]]) if k > 1 else float("nan"))
 
     # ---------------- source response -------------------------------------------------
     def w_vecs(self, g, C):
@@ -317,14 +332,14 @@ class Component:
         it = 0
         while len(act) and it < maxit:
             it += 1
-            AP = H @ P - E0 * P
+            AP = H(P)
             AP -= np.outer(g, g @ AP)
             alpha = rs / (P * AP).sum(0)
             X[:, act] += P * alpha
             R -= AP * alpha
             rs_new = (R * R).sum(0)
             if it % 50 == 0:  # residual replacement against drift
-                R = Bm[:, act] - (H @ X[:, act] - E0 * X[:, act])
+                R = Bm[:, act] - H(np.ascontiguousarray(X[:, act]))
                 R -= np.outer(g, g @ R)
                 rs_new = (R * R).sum(0)
             done = np.sqrt(rs_new) <= tol * bn[act]
@@ -335,7 +350,7 @@ class Component:
                 keep = ~done
                 act, R, P, rs = act[keep], R[:, keep], P[:, keep], rs[keep]
         X -= np.outer(g, g @ X)
-        res = np.abs(H @ X - E0 * X - Bm).max() / scale
+        res = np.abs(H(X) - Bm).max() / scale
         return X, it, res
 
     def hessian(self, V, C, J=1.0, ground=None):
@@ -345,10 +360,13 @@ class Component:
         W = self.w_vecs(g, C)
         k = C.shape[0]
         R = J * self.direct(g, C)
+        Ac = self.A.tocsr()
+        diag = V * self.nf.astype(float)
+        Hop = lambda X: _hmm(Ac.indptr, Ac.indices, diag, J, np.ascontiguousarray(X), E0)
         its, res = 0, 0.0
-        ch = 16
+        ch = 32
         for a in range(0, k, ch):
-            X, it_, re_ = self.block_cg(H, E0, g, W[:, a:a + ch])
+            X, it_, re_ = self.block_cg(Hop, E0, g, np.ascontiguousarray(W[:, a:a + ch]))
             R[:, a:a + ch] -= 2 * J * J * (W.T @ X)
             its, res = max(its, it_), max(res, re_)
             del X
@@ -360,7 +378,7 @@ class Component:
         Hb = sp.csr_matrix((-J * ph, (self.rows, self.cols)), shape=(self.n, self.n)) + sp.diags(V * self.nf.astype(float))
         if self.n <= 2500:
             return float(np.linalg.eigvalsh(Hb.toarray())[0])
-        w = sla.eigsh(Hb, k=1, which="SA", tol=1e-14, v0=(np.random.default_rng(2).random(self.n) + 0.5).astype(complex), ncv=40, maxiter=20000)[0]
+        w = sla.eigsh(Hb, k=1, which="SA", tol=1e-12, v0=(np.random.default_rng(2).random(self.n) + 0.5).astype(complex), ncv=40, maxiter=20000)[0]
         return float(w.min())
 
 
@@ -392,3 +410,16 @@ def split_components(T, codes):
     par = union_components(len(codes), r, c)
     roots, inv, sizes = np.unique(par, return_inverse=True, return_counts=True)
     return inv, sizes, nf
+
+
+def coexact_dirs(T, q):
+    """Unit real source vectors at momentum q orthogonal to every exact 2-form (image of d1)."""
+    B = []
+    for o in range(3):
+        B += fourier_dirs(T, q, o)
+    B = np.array(B)
+    M = B @ T.d1                       # coefficients of exact forms in this Fourier basis
+    u, s, vt = np.linalg.svd(M)
+    rank = int((s > 1e-9 * max(s.max(), 1e-300)).sum()) if s.size else 0
+    N = u[:, rank:]                    # complement in coefficient space
+    return [B.T @ N[:, i] for i in range(N.shape[1])]

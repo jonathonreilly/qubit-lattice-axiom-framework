@@ -1,0 +1,8 @@
+[PASS] exact eigenprojector formulas reproduce the numerical U_H and U_L of the runner construction
+distinct U_H entries: ['0', '-I/3', 'sqrt(3)/6 + I/6', 'sqrt(3)/6 - I/6', '-sqrt(3)/6 + I/6', '-sqrt(3)/6 - I/6']
+distinct U_L entries: ['0', '1/6 - I/6', '-1/6 + I/6', '1/3 + 2*I/3']
+[PASS] U_L has all entries in Q(zeta8) (= Q(sqrt2, i)); U_H has entries outside it (sqrt3)  96 U_H entries contain sqrt3
+[PASS] U_L entries lie in Q(i) but not in Z[1/sqrt2, i] (denominator 3): some product U_ia conj(U_jb), i != j, a != b, is not dyadic, so U_L has no exact measurement-free Clifford+T implementation either  e.g. 5/9
+[PASS] exact W columns (inputs at site 0) agree with the numerical W; some product W_ia conj(W_jb) (a != b) lies outside Q(zeta8): no exact measurement-free Clifford+T circuit on the corner code implements the step  e.g. W_ia conj(W_jb) = 1/36 + sqrt(3)/36
+
+exact_field TOTAL: PASS=4 FAIL=0

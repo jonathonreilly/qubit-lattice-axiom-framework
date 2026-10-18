@@ -232,6 +232,19 @@ def main():
     one_shift = all(len(v) == 1 for v in shifts.values())
     check("every twisted rotation maps each Bloch space onto exactly one Bloch space, with a single shift s_R per rotation (k -> R k + pi s_R)",
           affine and one_shift, f"distinct shift vectors {sorted(set(next(iter(v)) for v in shifts.values()))}")
+    cube_idx = [kidx_ for kidx_ in range(len(KS)) if np.allclose(np.abs(((KS[kidx_] + np.pi) % (2 * np.pi)) - np.pi), np.pi / 2)]
+    orbit_sizes = sorted(len(set(image[(r, i)] for r in range(24))) for i in cube_idx)
+    def c4_axis_ok(i):
+        stab = [r for r in range(24) if image[(r, i)] == i]
+        if len(stab) != 8: return len(stab) == 24
+        c4 = [ROTS[r] for r in stab if abs(np.trace(ROTS[r]) - 1) < 1e-9]
+        ax = [tuple(int(x) for x in np.round(np.real(np.linalg.eig(R.astype(float))[1][:, np.argmin(np.abs(np.linalg.eig(R.astype(float))[0] - 1))]))) for R in c4]
+        axis_c2 = all(any(np.array_equal(ROTS[r], np.diag(dg)) for r in stab) for dg in ((1, -1, -1), (-1, 1, -1), (-1, -1, 1)))
+        return len(c4) == 2 and len(set(map(lambda a_: tuple(abs(x) for x in a_), ax))) == 1 and axis_c2
+    stab_ok = all(c4_axis_ok(i) for i in cube_idx)
+    check("the eight momenta (pi/2)(+-1,+-1,+-1) split into orbits {k*}, {-k*} (little group O) and two 3-point orbits k*+pi e_i, -k*+pi e_i "
+          "whose little group is D4 about the axis e_i and contains all three axis C2s (forcing even levels and uniaxial cones there)",
+          len(cube_idx) == 8 and orbit_sizes == [1, 1, 3, 3, 3, 3, 3, 3] and stab_ok, f"orbit sizes {orbit_sizes}")
     fixed = [i for i in range(len(KS)) if all(image[(r, i)] == i for r in range(24))]
     fixedk = sorted(tuple(np.round(((KS[i] + np.pi) % (2 * np.pi) - np.pi) / (np.pi / 2)).astype(int)) for i in fixed)
     kidx = lambda k: [i for i, q in enumerate(KS) if np.allclose(np.exp(1j * (q - k)), 1)][0]
@@ -479,6 +492,23 @@ def main():
           ok_shift and np.allclose(nk[0.001], np.sqrt(2) / 3, atol=1e-6) and all(abs(ank[i] / ank[i + 1] - 4) < 0.2 for i in range(2))
           and all(m == 2 for m in at_E) and all(abs(f) == 1 for f in fluxes) and sum(fluxes) == 0 and gapE > 0.05,
           f"E = {E:.4f}, speed {nk[0.001].mean():.8f}, anisotropy {np.array(ank)}, fluxes {fluxes}, min distance to E elsewhere {gapE:.3f}")
+
+    def mults(M):
+        e = np.sort(np.angle(np.linalg.eigvals(M))); out = []; i = 0
+        while i < len(e):
+            j = i
+            while j + 1 < len(e) and abs(wrap(e[j + 1] - e[i])) < 1e-7: j += 1
+            out.append(j - i + 1); i = j + 1
+        if len(out) > 1 and abs(wrap(e[0] - e[-1])) < 1e-7: out[0] += out.pop()
+        return out
+    even_all = all(all(m % 2 == 0 for m in mults(Ws(c))) for c in cube)
+    phs = np.concatenate([np.angle(np.linalg.eigvals(Ws(g))) for g in grid])
+    hist, edges = np.histogram(phs, bins=720, range=(-np.pi, np.pi))
+    gap_arcs = edges[:-1][hist == 0]
+    gap_away = [x for x in gap_arcs if abs(wrap(x - E)) > 0.1]
+    check("doubling-corollary ingredient: every level of this step at all eight cube points is even (anticommuting axis-C2 lifts); "
+          "the gap hypothesis is NOT asserted for this step (coarse-grid empty arcs are reported only)",
+          even_all and all(m == 2 for m in at_E), f"coarse-grid empty arcs away from E: {len(gap_away)} of 720 bins (not a gap certificate)")
 
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     return 1 if FAIL else 0

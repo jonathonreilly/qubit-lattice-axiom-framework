@@ -1,0 +1,4 @@
+no mass, 40^3 grid: max band0 - E_N = +4.9134e-03 at k/pi=[ 0.502  0.502 -0.498]; min band1 - E_N = +6.9534e-03
+band0 at the eight points - E_N: [0.008719 0.008719 0.       0.008719 0.008719 0.       0.008719 0.008719]
+m = 0.02: direct gap at k* = 0.04243; grid gap +0.02545; refined global gap +0.02511
+m = 0.05: direct gap at k* = 0.10608; grid gap +0.05493; refined global gap +0.05475

@@ -1,0 +1,8 @@
+n=1 2n+1=3 T=6250: tol=3.306e-03  tol*(2n+1)=9.918e-03  verify=9.996e-03 PASS
+n=2 2n+1=5 T=6250: tol=2.003e-03  tol*(2n+1)=1.001e-02  verify=9.999e-03 PASS
+n=3 2n+1=7 T=6250: tol=1.444e-03  tol*(2n+1)=1.011e-02  verify=9.999e-03 PASS
+n=4 2n+1=9 T=6250: tol=1.134e-03  tol*(2n+1)=1.021e-02  verify=9.999e-03 PASS
+n=5 2n+1=11 T=6250: tol=9.382e-04  tol*(2n+1)=1.032e-02  verify=9.999e-03 PASS
+n=3 2n+1=7 T=12500: tol=1.444e-03  tol*(2n+1)=1.011e-02  verify=9.999e-03 PASS
+PASS  adversarial tol ~ (2n+1)^-0.97
+PASS  n=3 tolerance flat in T: 1.444e-03 (T=6250) vs 1.444e-03 (T=12500)

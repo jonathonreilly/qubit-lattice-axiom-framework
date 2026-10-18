@@ -87,6 +87,25 @@ A ladder is useful only if some data provably survives the climb, so that a stat
        - The two octahedrally fixed nodes ±k* are isotropic spin-½ Weyl nodes, speed √2/3, chirality ±1.
        - The other six are anisotropic Weyl nodes (speed spread about 0.3), chiralities three +1 and three −1. The net is zero.
        - These eight points are exactly the momenta at which commuting C2 lifts force even levels (campaign block B7, independently checked). The six extra nodes are the analogue of the 2³ doublers of naive lattice fermions.
+       - **Structure of the doublers (numerical observation).** The six are k* + πe_i (chirality −1) and −k* + πe_i (chirality +1), for i = x, y, z. So they form three opposite-chirality pairs, one per lattice axis. Each is a uniaxial Weyl cone: speed 0.2467 along its own axis and 0.5838 transverse. The C3 rotations permute the three.
+       - **This pattern is symmetry-forced (exact).** Under the affine rotation action, the eight points split into the orbits {k*} and {−k*}, with little group O, and two 3-point orbits k* + πe_i and −k* + πe_i. The little group of each point in the 3-point orbits is D4 about the axis e_i, which contains all three axis C2s (runner Part 1). So in every symmetric corner Hamiltonian or step:
+         - levels there are even;
+         - a band touching at k* is isotropic at linear order;
+         - a touching at k* + πe_i is uniaxial about e_i.
+
+         At odd filling all eight touch (B7, C20), so the forced low-energy content always has this 1 + 3 form.
+       - So the step's Weyl content is one isotropic spin-½ pair at the octahedrally fixed momenta plus three axis-labelled uniaxial pairs. This mirrors the taste structure of staggered fermions. Any reading as species or generations is interpretation only and is not claimed.
+     - **Corollary (doubling, exact).** Suppose a finite-range step W (so W(k) is continuous) commutes with the translations and with the gauge-dressed lifts of two commuting axis C2s. Suppose also that W has a quasi-energy gap: some E′ that no eigenphase reaches at any k. If W has a spin-½ Weyl doublet at k* at quasi-energy E (exactly 2-fold, with nonzero linear splitting), then E is also reached somewhere other than ±k*. A tilt cannot evade this: C2x and C2y act on q as diagonal sign matrices, which force the tilt to vanish, so one Weyl branch lies below E.
+       - *Proof.* The two C2 lifts anticommute on the whole one-particle space (campaign block B7, independently checked). So at each of the eight points (π/2)(±1,±1,±1), which both C2s fix, every level is even.
+       - Let n(k) count the eigenphases in the arc from E′ to E. It is locally constant wherever E is not an eigenphase.
+       - If E were reached only at ±k*, n would take one value n₀ on the rest of the zone.
+       - At the other six cube points, n₀ is even.
+       - Next to k*, n₀ is the even count of levels at k* below E, plus the lower Weyl branch: odd. Contradiction.
+       - The same counting at odd filling forces the touchings of Hamiltonians (campaign C20).
+     - **What this explains.**
+       - For Hamiltonians at odd filling the same counting gives C20's stronger pointwise obstruction: all eight points touch the chemical potential.
+       - For steps it needs a genuine quasi-energy gap. For the eight-node step, the empty quasi-energy arcs shrink as the grid is refined: on a 28³ grid only fragments near the Weyl cones remain. So the hypothesis is not established there, and the corollary is not claimed for that step; its doublers are consistent with it.
+       - A doubler-free spin-½ Weyl step must therefore be gapless somewhere in quasi-energy, or break the axis C2s (which T contains).
      - **Search result (not a no-go).** The family searched was S·U, S·R_L·U and R_L·S·U with Clifford-phase on-site U: about 12,000 steps, 3,738 with Weyl doublets at k*.
        - 4,476 node/step combinations have no level at the node quasi-energy at the other cube or high-symmetry points.
        - All of those have other bands crossing the node quasi-energy elsewhere: the best minimum distance on a 12³ grid away from ±k* is 0.007.
@@ -173,6 +192,20 @@ Each verdict is the probing agent's, with its own numbers. None is checked here 
 | Record apparatus | — | The 1e-13 mediated fine-tuning looks like a hidden phase-reference (clock) obligation: in a toy model only the differential endpoint detuning is relevant (tolerance ≈ 0.115 λ_eff); the decay rate and GKSL time could come from a weak-coupling (Davies) limit | Permanent halt; preparation (needs a non-unital low-entropy resource) |
 | Readout weights | Frequency consistency for order-blind formation from 1-dependence, hence ergodicity (conditional; to be checked) | Menu abundance and regularity become block-rung Gleason plus rung-consistency; finite Clifford-closed apparatus leaves 205 free frame-function dimensions against 15 | The fair-coin weight class |
 
+### Campaign follow-up, 2026-10-18 (interpretation)
+
+A 12-hour campaign converted the strongest probe leads into proofs or decisive computations. Workers and checkers are fresh-context agents of the same model family, not independent human reviewers. Evidence is in `.claude/science/physics-loops/scale-ladder-campaign-20261018/`; the proved lane statements are in a companion lane-theorem PR.
+
+| Lane | Campaign result |
+|---|---|
+| Formation | **Proved.** Every iid-priority, finite-range formation rule is a finitary factor of iid noise with a factorial coding-radius tail. From an empty start, no long-range order, power laws, pinch points or proper 3-colourings arise. Checked. |
+| Readout weights | **Proved, partial.** Spatial frequencies converge with explicit rates for that class. This is a partial, conditional discharge of the frequency-consistency obligation; the limits equal the rule weights only for order-blind rules. Checked. |
+| Emergent electron | **Corner model.** Parameter-free step rules (item 6): an isotropic spin-½ Weyl step at speed √2/3 with six cube-point doublers. **Proved** (checked): odd filling is forced gapless by anticommuting gauge-dressed C2 lifts. The doubling corollary holds for gapped steps and odd-filling Hamiltonians. In mean-field RPA, interaction channels favour the chiral triangle term over the Dirac mass for T ≲ 0.03; at higher temperature the channel is unresolved (checked). The step is an exact depth-25 circuit on the corner code, but not Clifford+T. |
+| Gravity | **One cone, closure.** Every gauge-invariant two-derivative form gives both TT polarisations one cone (symbolic determinant). Lattice constraint closure leaves only the DeWitt ray, conditional on supplied clauses (Hojman–Kuchař–Teitelboim analogue). The 06-08 induced bubble needs an underived seagull, so the induced 1/G is not fixed. Checked. |
+| Native transfer | **One loop.** The heat-kernel saddle action vs Wilson in 4D gives Λ_HK/Λ_W = 1.819 for SU(3); the probe's 7/4 was the 2D shift. Unreviewed. |
+| Record apparatus | **Hypothesis refuted.** The hidden-clock hypothesis fails for the certified tolerances: they are budget and linewidth choices. A nominal-clock reading would carry a 1/T obligation, which the repo handles as a premise; a co-transported reference could replace that premise. Unreviewed. |
+| Finite-spin EM | **Partly settled.** Exact sizes reach only 2×2×L tubes. Along the long direction χ_L matches K_T(q_min) to about 1%, so the L=2 mismatch is a lattice-scale effect. Coulomb vs confined needs isotropic QMC. Unreviewed. |
+
 ## Answer to the question (interpretation)
 
 The ladder does unify the lanes, but not by deriving everything from the finest rung. It gives three exact tools that every lane can use. It also collects what is left open onto a short list of shared primitives.
@@ -228,7 +261,7 @@ It is a target to derive or propose to the owner, not an adopted axiom.
 - **The diagonal-shift step** has genuine isotropic spin-½ Weyl nodes at ±k*, speed √2/3. Like naive lattice fermions, they come with doublers: six anisotropic Weyl nodes at the other cube points.
 - **The lemma** shows why the shift is needed: an isolated spin-½ doublet cannot move under any symmetric operator algebra generated by constant-spectrum factors.
 
-The open problem is now concrete: a parameter-free symmetric step whose node quasi-energy is reached only at ±k*, or a proof that the doublers are forced. A search of about 12,000 Clifford-phase steps found none.
+The doubling corollary settles the open problem for gapped steps and odd-filling Hamiltonians: with the axis C2s, the doublers are forced, as in Nielsen–Ninomiya. The minimal clean form puts them at the other six cube points. The remaining escape routes are steps gapless in quasi-energy, which is the case for every Weyl step found, or giving up the axis C2s.
 
 **Next tests of common origin.**
 - Is a gauge-like field built from the same rule (for example, a bilinear of its cone states) a second field with the same speed?
@@ -310,6 +343,7 @@ A fresh-context agent of the same model family checked the note; it is not an in
   - The parameter-free corner step and its six-fold node.
   - The doublet no-go lemma for the algebra of symmetric constant-spectrum operators.
   - The diagonal-shift Weyl step and its eight-node structure.
+  - The doubling corollary for gapped steps with anticommuting axis-C2 lifts.
   - The cross-lane reading.
 
 ## No-Go Discipline Gate
@@ -330,7 +364,7 @@ A fresh-context agent of the same model family checked the note; it is not an in
 python3 scripts/scale_ladder_corner_fermion_cross_rung_invariants_2026_10_18.py
 ```
 
-Expected: `TOTAL: PASS=18 FAIL=0` (about three minutes).
+Expected: `TOTAL: PASS=20 FAIL=0` (about three minutes).
 
 ## Load-bearing sources
 

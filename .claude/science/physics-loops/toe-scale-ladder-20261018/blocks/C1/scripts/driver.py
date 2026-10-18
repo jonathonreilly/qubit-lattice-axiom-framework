@@ -98,7 +98,7 @@ class Sim:
 
 
 def run(L, V, T, nsweep, ntherm, seed, mode=0, J=0, dtau=0.25, g=1.0, factor=1.0, cap=None, log=None,
-        nbins=64, checkevery=50):
+        nbins=64, checkevery=50, every=1):
     sim = Sim(L, V, T, g=g, mode=mode, seed=seed, cap=cap)
     lat = sim.lat
     t0 = time.time()
@@ -108,15 +108,18 @@ def run(L, V, T, nsweep, ntherm, seed, mode=0, J=0, dtau=0.25, g=1.0, factor=1.0
     sim.nm_fixed = int(factor * (lat.np + sim.nkinks())) + 1
     sc = {k: [] for k in ("Nf_mid", "Emix", "kin_mid", "nk", "ST1", "ST2", "Nf_end")}
     Ctau = []
-    nmeas = nsweep
+    nmeas = nsweep // every
     per_bin = max(1, nmeas // nbins)
     accPE = np.zeros((nbins, L, L, L, 3))
     accPn = np.zeros((nbins, L, L, L, 3))
     nfail = 0
     w = T / 8.0
     tm = T / 2.0
-    for i in range(nsweep):
+    for isw in range(nmeas * every):
         sim.do_sweep(factor)
+        if (isw + 1) % every != 0:
+            continue
+        i = isw // every
         if mode == 0:
             times = tm + dtau * np.arange(-J, J + 1)
             st = sim.states(np.concatenate([times, [0.0, T]]))
@@ -165,7 +168,7 @@ def run(L, V, T, nsweep, ntherm, seed, mode=0, J=0, dtau=0.25, g=1.0, factor=1.0
                     for b in range(nbins)])
     accPE /= cnt[:, None, None, None, None]
     accPn /= cnt[:, None, None, None, None]
-    res = {"L": L, "V": V, "T": T, "g": g, "mode": mode, "seed": seed, "nsweep": nsweep, "ntherm": ntherm,
+    res = {"L": L, "V": V, "T": T, "g": g, "mode": mode, "seed": seed, "nsweep": nsweep, "ntherm": ntherm, "every": every, "nm_fixed": sim.nm_fixed,
            "time_therm": tth, "time_total": time.time() - t0, "gauss_or_path_failures": nfail,
            "stats": sim.stats.tolist(), "valid_final": bool(sim.valid())}
     for k, v in sc.items():

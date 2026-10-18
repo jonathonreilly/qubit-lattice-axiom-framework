@@ -20,3 +20,4 @@
   - the ergodic covariant long-range-clock question and the λmin=0 classes are OPEN;
   - the B2 asymptotic constant is not optimised;
   - Theorem C has no exact infinite-volume check, only a finite-window exact law and Monte Carlo.
+- Review applied (F1-F8, REVIEW.md); W-tie witness added as s3(f); rerun TOTAL: PASS=59 FAIL=0.

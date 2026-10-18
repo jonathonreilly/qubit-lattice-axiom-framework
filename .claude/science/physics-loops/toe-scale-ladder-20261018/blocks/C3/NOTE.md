@@ -1,9 +1,9 @@
-# C3: Local formation clocks force finitary, superexponentially mixing record laws, and an ordered record phase needs a nonlocal clock
+# C3: Clocks with finite ancestry tails force finitary, superexponentially mixing record laws; within bounded-rate Markov clocks, an ordered record phase needs infinite-range clock dependence
 
 **Block:** C3 of `toe-scale-ladder-20261018` (target: `SCALE_LADDER_MAP.md`, section C3; OBL-R2.2).
-**Date:** 2026-10-18. **Status:** block-local, unaudited. No independent check has been run yet.
+**Date:** 2026-10-18. **Status:** block-local, unaudited. An independent review (`REVIEW.md`, separate code in `review_scripts/`, `TOTAL: PASS=75 FAIL=0`) found the proofs of A, A′, B, C and D correct and raised non-blocking findings F1–F8. These are applied here; see §12.
 **Claim types used:** `PROVED` (proof given here, from the stated premises), `ON-MAIN` (already proved in a cited main note), `COROLLARY` (immediate from ON-MAIN items plus routine steps), `CONDITIONAL` (proved implication from an imported premise), `EXACT-CHECK` (exhaustive finite certificate), `NUMERICAL` (Monte Carlo, declared 4-SE tolerance), `OPEN`.
-**Runner:** `scripts/run_all.sh` → `logs/run_all.log`, which ends with `TOTAL: PASS=58 FAIL=0`.
+**Runner:** `scripts/run_all.sh` → `logs/run_all.log`, which ends with `TOTAL: PASS=59 FAIL=0`.
 
 ## 0. Result up front
 
@@ -15,8 +15,12 @@
    `P(coding radius ≥ n+1) ≤ D(D-1)^{n-1} κ^{n+1}/(n+1)!`, where `κ = λmax/λmin`.
    The decay is superexponential **for every finite κ**; there is no threshold. The proof uses a Poisson graphical construction with thinning, a cutoff at each site's first "sure" point, and loop-erased space-time decreasing chains (PROVED). This covers the 2026-09-22 clocks `1+k`, `(1+k)^2` and `1/(1+k)` (κ = 7, 49, 7 on Z^3).
 3. **New, elementary: correlated clocks.** Exchangeable tie-free clocks give exactly the iid record law. Clocks that are finite-range factors of iid (`T_x = g(ζ|_{x+K})`) give FFIID with tail `D(D-1)^{n-1}/⌈(n+1)/|K-K|⌉!` (PROVED).
-4. **Counterexample family, and what a clock must do to give order.** No covariant counterexample exists with bounded rate ratio or finite-range correlation; items 1–3 rule both out. Order needs an **infinite-range** clock correlation. The level clock of the 2026-09-16 note is one (it is not cubic-covariant). Its mixture over the cubic group is a *covariant-in-law* clock whose record field has long-range order, `Cov ≥ 0.1388` at every separation. This last statement is CONDITIONAL on the imported 2026-09-16 theorem T7.
-5. **Trichotomy (Theorem G).** It gives the necessary condition, with scope:
+4. **Counterexample family, and what a clock must do to give order.** Items 1–3 rule out a covariant counterexample with bounded rate ratio, finite-range dependence, or tie-free exchangeability. Within bounded-rate Markov clocks, order therefore needs **infinite-range clock dependence**. Two kinds of example exist:
+   - **Directed level clock.** The level clock of the 2026-09-16 note is not cubic-covariant. Under it, uniqueness given the data fails (several phases coexist). This is ON-MAIN.
+   - **Covariant-in-law mixtures.** The mixture of the level clock over the cubic group is covariant in law, up to a global time shift. Its record field has covariance long-range order `Cov ≥ 0.1388` at every separation (CONDITIONAL on the imported 2026-09-16 theorem T7). This LRO is of the automatic non-ergodic-mixture kind. Its real content is the phase coexistence inherited from I-16, and the phase is extra randomness beyond the clock and marks.
+
+   The reviewer's tie witness is a simpler example of the same kind, and it is unconditional. With probability ½ all clocks are tied; with probability ½ they are iid. The clock is exchangeable and pairwise uncorrelated, yet `Cov = 1/9` for every r ≥ 3 (EXACT-CHECK s3(f)). Other escapes stay OPEN: `λmin = 0`, `λmax = ∞`, and non-Markov rates.
+5. **Three-regime classification (Theorem G; not exhaustive).** It gives a necessary condition, with scope:
    - "No order" covers only local observables. It excludes long-range order, spontaneous symmetry breaking (SSB), power-law correlations, Coulomb/pinch-point correlations, and Bragg peaks.
    - It does **not** exclude percolation-type transitions of non-local cluster observables. Example: the formed-site set at a fixed time is exactly Bernoulli percolation (2026-10-08 note), which has a critical point.
 
@@ -40,8 +44,8 @@
 - **(A4)** If the rule is translation-covariant, the factor map commutes with translations, so the record law is a stationary FFIID. If a lattice automorphism `g` together with a menu permutation preserves the rule, the record law is `g`-invariant. If the law of `T` is continuous, the record law does not depend on it.
 
 **Claim types.**
-- (A1) is ON-MAIN: 09-07 "Infinite recursive construction", and 10-08 lines 60ff, stated for `D = 6`.
-- The first inequality of (A2) is ON-MAIN for `D = 6`. For general `D` it is COROLLARY: the same proof with `c_n` in place of `6·5^{n-1}`.
+- (A1) is ON-MAIN only for iid **Exp(λ)** clocks on Z^3 (`D = 6`), in 09-07 "Infinite recursive construction" (lines 45–49) and 10-08 §2 (line 60). The version for any clock law, clocks with atoms, general `D` and arbitrary rules is COROLLARY: the same proof.
+- The first inequality of (A2) is likewise ON-MAIN only for exponential clocks with `D = 6`. For any law and general `D` it is COROLLARY: the same proof with `c_n` in place of `6·5^{n-1}`.
 - (A3)–(A4) are PROVED here; they were not stated on main. The XOR values are EXACT-CHECK.
 
 **Proof.**
@@ -62,12 +66,13 @@ Let `a(k) := D(D-1)^{k-1}/(k+1)!` for `k ≥ 1`, and `a(k) := 1` for `k ≤ 0`. 
 
 **Theorem B.** In the iid-clock model:
 
-- **(B1)** `|Cov(f,g)| ≤ 2‖f‖_∞‖g‖_∞ (|A|+|B|) · a(⌈r/2⌉ − 1)`. For `r ≥ 2e(D-1)` this is at most
+- **(B1)** `|Cov(f,g)| ≤ 2‖f‖_∞‖g‖_∞ (|A|+|B|) · a(⌈r/2⌉ − 1)`. This is at most the following (useful for `r > 2e(D-1)`; the reviewer notes that it holds for every `r`):
   `2‖f‖‖g‖(|A|+|B|) · (D/(D-1)) · (2e(D-1)/r)^{⌈r/2⌉}`.
   This is the map's `(2e(2d-1)/r)^{r/2}` form, with the prefactor made explicit.
 - **(B2)** `|Cov(f,g)| ≤ 2‖f‖‖g‖ · P(S_A(ω) ∩ S_B(ω′) ≠ ∅) ≤ 2‖f‖‖g‖ Σ_z p_A(z) p_B(z)`, where `ω′` is an independent copy of `ω`, `S_A = ∪_{x∈A} S_x`, and `p_A(z) := min(1, Σ_{x∈A} a(|z−x|−1))`. For single sites at distance `r`, the right side is `exp(−r ln r + O(r))`.
 - **(B3)** Consequences:
-  - the record law is mixing of all orders, has no long-range order, and is ergodic, so a rule symmetry cannot be broken spontaneously (the law is unique and invariant by A4);
+  - the record law is mixing, and in fact mixing of all orders. Mixing of all orders is not derived from the two-set bound B2: it holds because a stationary factor of an iid field is mixing of all orders (IMPORTED, standard), or alternatively by the same coupling applied to k sets;
+  - the law has no long-range order and is ergodic, so a rule symmetry cannot be broken spontaneously (the law is unique and invariant by A4);
   - every local truncated correlation decays superexponentially, so every local structure factor `S(q) = Σ_x e^{iqx} Cov(f(ξ_0), f(ξ_x))` extends to an entire function of `q`;
   - hence there are no power laws, no dipolar/Coulomb `|x|^{-d}` correlations, no pinch points and no Bragg peaks.
 
@@ -92,8 +97,8 @@ Let `a(k) := D(D-1)^{k-1}/(k+1)!` for `k ≥ 1`, and `a(k) := 1` for `k ≤ 0`. 
 
   By independence, that probability is at most `Σ_z P(z∈S_A)P(z∈S_B)`. Also `z ∈ S_x` implies an ancestor within distance 1 of `z`, hence `L(x) ≥ |z−x|−1`.
 
-  For the asymptotic, write `k_1 = |z−x|` and `k_2 = |z−y|`, so `k_1 + k_2 = s ≥ r`. Then `a(k_1−1)a(k_2−1) ≤ D^2 (2(D−1))^{s} s/s!`, using `k_1! k_2! ≥ s!/2^s`, plus the boundary cases `k_i ≤ 1`, which are smaller. The number of `z` with `k_1 + k_2 = s` is at most `(2s+1)^d`. Summing over `s ≥ r` gives `≤ C_d r^{d+1}(2e(D−1)/r)^r` for `r ≥ 4e(D−1)`.
-- **(B3).** Mixing follows from (B2) applied to cylinder functions, approximating general `L^2` functions. A unique and therefore invariant law that is mixing cannot be a non-trivial mixture of symmetry-related phases. ∎
+  For the asymptotic, write `k_1 = |z−x|` and `k_2 = |z−y|`, so `k_1 + k_2 = s ≥ r`. Then `a(k_1−1)a(k_2−1) ≤ D^2 (2(D−1))^{s} s/s!`, using `k_1! k_2! ≥ s!/2^s`, plus the boundary cases `k_i ≤ 1`, which are smaller. The number of `z` with `k_1 + k_2 = s` is at most `(2s+1)^d` for nearest-neighbour `N_0`, and at most `(2hs+1)^d` for a general finite `N_0` of ℓ∞-range `h`. The asymptotic is unchanged. Summing over `s ≥ r` gives `≤ C_d r^{d+1}(2e(D−1)/r)^r` for `r ≥ 4e(D−1)`.
+- **(B3).** Two-set mixing follows from (B2) applied to cylinder functions, approximating general `L^2` functions. Mixing of all orders uses the import cited above, or the k-set version of the coupling. A unique and therefore invariant law that is mixing cannot be a non-trivial mixture of symmetry-related phases. ∎
 
 ## 4. Theorem C: state-dependent covariant rates (new content (a))
 
@@ -118,7 +123,7 @@ This includes the generator of 09-07 (constant `λ`) and the 09-22 rate laws.
 - **(C3)** `P(ρ(x) ≥ n) ≤ D(D−1)^{n−1}κ^{n+1}/(n+1)!`. A.s. `C(x)` is finite for every `x`, and the graphical rules determine a unique trajectory. Every site forms at the finite time `τ_x ≤ σ_x`. The final record field `ξ = ξ_∞` is a finitary factor of the iid marked-Poisson field, with coding radius at most `ρ(x)+1`. So
   `P(R(x) ≥ n+1) ≤ D(D−1)^{n−1}κ^{n+1}/(n+1)!`.
   The same holds for the configuration at any fixed time `t`.
-- **(C4)** Theorem B and A4 hold verbatim with `a(k)` replaced by `a_κ(k) := min(1, D(D−1)^{k−1}κ^{k+1}/(k+1)!)`. Correlations therefore decay superexponentially for every finite `κ`. The bounds become effective beyond the scale `r ≈ 2e(D−1)κ`; for example, the half-distance bound needs `r ≳ 2e(D−1)κ`.
+- **(C4)** Theorem B and the stationarity and symmetry parts of A4 hold with `a(k)` replaced by `a_κ(k) := min(1, D(D−1)^{k−1}κ^{k+1}/(k+1)!)`. The last sentence of A4 (the law does not depend on the clock law) does **not** carry over: under rate modulation the record law depends on `λ`. Correlations still decay superexponentially for every finite `κ`. The bounds become effective beyond the scale `r ≈ 2e(D−1)κ`; for example, the half-distance bound needs `r ≳ 2e(D−1)κ`.
 - **(C5)** The trajectory is a version of the Markov process with generator `𝓛`. Each blank site with condition `η` forms at rate `λmax·(λ(η)/λmax) = λ(η)`, with content law `r(·|η)`.
 
 **Claim types.** (C1)–(C4) are PROVED. The construction is checked independently against an exact finite law in s2(c), and against forward simulation in s2(d). (C5) is PROVED at the level of the graphical representation. That it coincides with the Liggett/Harris Feller semigroup is standard for bounded, finite-range rates (IMPORTED: Liggett 1985, Ch. I).
@@ -169,11 +174,18 @@ A stationary invariant law of the probabilistic cellular automaton extends, by K
 
 - `W` is a record field for the covariant six-axis rule;
 - it is invariant under translations and under `O_h`;
-- its clock law is covariant in law;
+- its clock is covariant in law **only up to a global time shift**, i.e. as an order relation. As a real-valued field it is not translation-invariant (`T_0 ≡ 0`);
+- the record is **not** a function of the clock and the marks: the phase `g e_1` is extra randomness, coupled to the clock direction (`⟨g e_1, w⟩ = +1` always);
 - for `b = e_1` and every `x`,
   `Cov_W(1{v_0=b}, 1{v_x=b}) ≥ (1/6)(1 − 6·10^{−5}) − 1/36 = 124991/900000 > 0.1388`.
 
-So `W` has long-range order, and the order survives `O_h`-averaging.
+**What F does and does not show.** Covariance-LRO of a non-ergodic mixture is automatic once the components have different one-site marginals; the tie witness below has it with FFIID components. So the inequality above is not itself the content. The content is that `W` is a covariant-in-law (modulo time shift) record field whose ergodic components are the **non-unique** coexisting level-order phases of I-16. Uniqueness given the data fails there, which never happens in the classes of G-I.
+
+**Recorded witness W-tie (reviewer F1; EXACT-CHECK s3(f), and the reviewer's r4).**
+- *Clock:* with probability ½ every `T_x = ½`; with probability ½ the `T_x` are iid U[0,1].
+- *Rule on Z:* content 0 if no neighbour is strictly earlier, content 1 otherwise. The zero `r(·|∅) = δ_0` is allowed.
+
+The clock field is exchangeable, translation- and `O_h`-covariant in law, and pairwise uncorrelated. Yet `E ξ = 1/3`, `E ξ_0 ξ_r = 2/9` and `Cov(ξ_0, ξ_r) = 1/9` for every `r ≥ 3`. This is covariance-LRO, again of the non-ergodic-mixture kind. It shows that the hypothesis "tie-free" in A′ cannot be dropped.
 
 *Proof.* The rule depends only on whether `v' = v`, `v' = −v` or `v' ⊥ v`, so it is `O_h`-invariant. Hence `g_*N_a` is the level-order field for the diagonal `g(1,1,1)`.
 - By symmetry, `E_W 1{v=b} = 1/6`.
@@ -183,14 +195,14 @@ So `W` has long-range order, and the order survives `O_h`-averaging.
 **Remarks.**
 - `W` is non-ergodic: it is a mixture.
 - Its clock has perfect infinite-range correlation, and `P(L ≥ n) = 1` for every `n`; see s3(e).
-- No ergodic covariant witness is claimed (OPEN).
+- No ergodic covariant witness is claimed (OPEN). The §1 LRO notion is meant for ergodic (extremal) laws or ergodic components. For non-ergodic laws, covariance-LRO only signals a non-trivial mixture.
 - No covariant counterexample exists inside the classes of Theorems A, A′, C and D. That is a theorem, not a failed search.
 
-## 7. Theorem G: the trichotomy and the necessary clock property (part (b))
+## 7. Theorem G: a three-regime classification (not exhaustive) and a necessary clock property (part (b))
 
 Fix `d`, a finite menu, a finite-range rule (covariant or not), and selector marks iid and independent of the clocks.
 
-**(G-I) Local clocks force a trivial record phase. PROVED.** This class contains:
+**(G-I) Clock classes with finite ancestry tails force a trivial record phase. PROVED.** This class contains:
 - iid clocks of any law (A);
 - exchangeable tie-free clocks (A′);
 - finite-range factors of iid (D);
@@ -203,11 +215,12 @@ In each case the record law is unique given the data. It is FFIID, with coding-r
 **(G-III) Covariant-in-law infinite-range clock: ordered, non-ergodic phase. CONDITIONAL on I-16 (Theorem F).**
 
 **Necessity corollary (PROVED from G-I).** Suppose a record law under the stated rule class has long-range order, SSB, or local correlations that are not `O(exp(−c r ln r))`. Then its clock data lie outside every class in G-I. Concretely, it needs **one** of:
-- (i) clock correlations of infinite range, not reducible to a finite-range factor of iid or to an exchangeable family; the level clock is an example;
-- (ii) a degenerate rate ratio, `λmin = 0` or `λmax = ∞`;
-- (iii) a non-Markov, history-dependent rate law outside Theorem C.
+- (i) clock **dependence** of infinite range, not reducible to a finite-range factor of iid or to a **tie-free** exchangeable family. Examples: the level clock, and the exchangeable clocks with ties of W-tie;
+- (ii) a non-trivial mixture of clock laws that induce different record laws. This is a special case of (i), listed for clarity; W-tie and `W` are examples;
+- (iii) a degenerate rate ratio, `λmin = 0` or `λmax = ∞`;
+- (iv) a non-Markov, history-dependent rate law outside Theorem C.
 
-Item (iii) is not tested here and is listed only as a gap in scope.
+Items (iii) and (iv) are not tested here and are listed only as gaps in scope. This list is a restatement of "outside G-I". It is **not** a claim that every clock in (i)–(iv) orders, and the three regimes G-I, G-II and G-III are not exhaustive.
 
 **Explicitly outside the claim (OPEN).**
 - Ergodic covariant clocks with long-range but decaying correlations, for example stationary power-law-correlated Gaussian time fields.
@@ -224,7 +237,7 @@ Item (iii) is not tested here and is listed only as a gap in scope.
 | Covariance bounds B1 and B2; no long-range order, SSB or Coulomb for **all** finite-range rules with iid clocks | new in repo. The 10-16 note proved the stronger 1-dependence only for order-blind positive rules. |
 | Theorem C (bounded-ratio state-dependent rates, all κ) | new in repo; real content of (a) |
 | A′ and D (exchangeable, finite-range-correlated clocks) | new in repo; elementary |
-| F and G (covariant-in-law ordered witness; trichotomy) | assembled; F conditional on I-16 |
+| F, W-tie and G (covariant-in-law witnesses; three-regime classification, not exhaustive) | assembled; F conditional on I-16; W-tie exact |
 
 **Literature.**
 - Decreasing-path ancestry is Penrose–Sudbury (Ann. Appl. Probab. 15 (2005), arXiv math/0503519).
@@ -237,7 +250,7 @@ I did not read the full text of Penrose (2002). Its "monotonic particle systems"
 - the rule-independence over arbitrary finite menus and selectors;
 - the corrected coding-radius constant;
 - the application to record-phase existence (OBL-R2.2);
-- the trichotomy with the conditional covariant witness.
+- the three-regime classification (not exhaustive) with the covariant-in-law witnesses.
 
 ## 9. No-Go Discipline Gate (N1–N8)
 
@@ -271,7 +284,7 @@ The negative claim is G-I: no long-range order, SSB or power-law local correlati
 
 **N6, partial closure.** Adopting a covariant-in-law level clock (F) closes "order exists", but at the price of an infinite-range clock premise. No convention-level closure exists.
 
-**N7, steelman.** "Theorem F shows covariance does not forbid order. An *ergodic* covariant clock could order, for instance a long-range-correlated Gaussian time field whose decreasing paths have heavy tails. So the trichotomy's class boundary is not sharp."
+**N7, steelman.** "Theorem F shows covariance does not forbid order. An *ergodic* covariant clock could order, for instance a long-range-correlated Gaussian time field whose decreasing paths have heavy tails. So the classification's class boundary is not sharp."
 - *Answer:* this is correct, and it is recorded as OPEN. The theorem claims necessity of leaving the G-I classes, not sufficiency of any particular infinite-range clock.
 
 **N8, cross-cycle echo.**
@@ -293,5 +306,19 @@ The negative claim is G-I: no long-range order, SSB or power-law local correlati
 - `scripts/c3_common.py`
 - `scripts/s1_iid_paths_and_coding_radius.py` (exact Z^1 path tails; SAW counts; Monte Carlo for Z^2 and Z^3; XOR coding radius)
 - `scripts/s2_rate_modulated.py` (symbolic C1; Monte Carlo chain counts; exact 4-cycle jump-chain law vs graphical construction; backward coding map vs forward ring simulation; reach tail; covariance observation)
-- `scripts/s3_correlated_clocks_and_witness.py` (Theorem D exact and Monte Carlo; B2 bound vs Monte Carlo; F arithmetic; level-clock tail)
-- `scripts/run_all.sh` → `logs/run_all.log` (`TOTAL: PASS=58 FAIL=0`); per-script outputs in `logs/*.out`.
+- `scripts/s3_correlated_clocks_and_witness.py` (Theorem D exact and Monte Carlo; B2 bound vs Monte Carlo; F arithmetic; level-clock tail; W-tie exact)
+- `scripts/run_all.sh` → `logs/run_all.log` (`TOTAL: PASS=59 FAIL=0`); per-script outputs in `logs/*.out`.
+
+## 12. Review dispositions (REVIEW.md, F1–F8)
+
+| Finding | Disposition |
+|---|---|
+| F1: the necessity list is false as worded (tie counterexample) | (i) is restricted to *tie-free* exchangeable clocks, and "correlation" is replaced by "dependence" in §0 item 4, the title and G. Mixtures are added as (ii). The counterexample is recorded as witness W-tie (§6) and checked exactly in s3(f). The run total is now 59 PASS. N1 route 5 is updated. |
+| F2: F's LRO is the automatic non-ergodic-mixture kind | F is restated as non-uniqueness and phase coexistence inherited from I-16. Automatic mixture-LRO is noted, and the §1 LRO notion is restricted to ergodic laws (remark in §6). |
+| F3: covariance only up to time shift; the phase is extra randomness | Added to the statement of Theorem F and to §0 item 4. |
+| F4: the "trichotomy" overstates | Retitled as a "three-regime classification (not exhaustive)". The title and §0 item 4 are qualified "within bounded-rate Markov clocks". G-I is renamed "clock classes with finite ancestry tails". The open options (iii) and (iv) are kept. |
+| F5: the status line | Updated in the header. |
+| F6: A1/A2 claim types | ON-MAIN only for Exp clocks with D=6; the general version is COROLLARY (§2). |
+| F7: B2 count for general N_0; mixing of all orders | The `(2hs+1)^d` count is added. Mixing of all orders now cites the factor-of-iid property, or the k-set coupling. |
+| F8: C4 "A4 verbatim" | Changed to "the stationarity and symmetry parts of A4"; the clock-law-independence of A4 is explicitly excluded. |
+| B1 remark (the Stirling form holds for all r) | Noted in B1. |

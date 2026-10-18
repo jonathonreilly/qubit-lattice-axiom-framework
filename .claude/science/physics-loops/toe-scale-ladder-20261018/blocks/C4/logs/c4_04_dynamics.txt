@@ -26,3 +26,10 @@ PASS full: every signed periodic-class QCA has exact period dividing 4 or 6 (alp
 
 spreading-class unsigned solutions (trivial+sign): 168
 PASS spreading class exists only for the trivial and sign actions (none for sign-f, axis, full)
+PASS tr(M^n) equals the char-2 Dickson polynomial D_n(tau), all 168 spreading solutions, n<=8
+PASS x^(n v) occurs in tr(M^n) for every vertex v of Newt(tau), n<=8
+PASS supp M^n lies in the n-cell (range n), n<=8
+PASS det(M^n - x^t) = x^(2t) + tr(M^n) x^t + 1 != 0 for every t in Z^3 (tr(M^n) not 0 and not x^t + x^-t), n<=8
+
+support growth of alpha^n(X_0), n <= 32 (numerical evidence; exact F2 convolution)
+  28 representatives (action, orbit shapes in tau, orbit shapes in M)

@@ -1,0 +1,5 @@
+R2 D+: tau_x tau_y tau_z = 0.000+1.000j * 1 (offdiag 8.4e-17); unitary equivalence to sigma err 4.4e-16
+R2 D-: tau_x tau_y tau_z = -0.000+1.000j * 1 (offdiag 2.7e-16); unitary equivalence to sigma err 5.6e-16
+R2 PASS
+R1 42 isolated levels: (s(dl)/dl - |sum v|) ratio at dl = 4e-3 vs 2e-3: median 4.000, min 3.988, max 4.003  (O(dl^2) -> 4, O(dl) -> 2)
+R1 PASS

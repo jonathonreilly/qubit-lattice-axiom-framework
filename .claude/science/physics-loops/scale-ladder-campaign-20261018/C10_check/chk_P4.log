@@ -1,0 +1,4 @@
+[PASS] P4a L=5 general antisym: F_xy = -D_xy (v_x - v_y)^2/4 (chain-rule encoding)
+[PASS] P4a L=6 central: F_xy = -D_xy (v_x - v_y)^2/4 (chain-rule encoding)
+[PASS] L3 Kuchar form: {K_x,K_y} independent of Pi
+TOTAL chk_P4: PASS=3 FAIL=0

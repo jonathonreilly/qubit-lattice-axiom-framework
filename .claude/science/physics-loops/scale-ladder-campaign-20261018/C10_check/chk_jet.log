@@ -1,0 +1,8 @@
+[PASS] mode=g a[-1,1] w[0,0] N=2: EMPTY (Groebner [1]); expected empty; 18 unknowns, 125 eqs, build 2.0s, total 2.5s
+[PASS] mode=g a[-1,1] w[-1,1] N=1: CONSISTENT (Groebner 28 elements); expected consistent; 24 unknowns, 34 eqs, build 2.2s, total 2.5s
+[PASS] mode=shift a[-1,1] w[-1,1] N=2: EMPTY (Groebner [1]); expected empty; 36 unknowns, 162 eqs, build 10.0s, total 14.1s
+[PASS] mode=shift a[0,0] w[-2,0] N=3: EMPTY (Groebner [1]); expected empty; 10 unknowns, 33 eqs, build 1.1s, total 1.1s
+[PASS] mode=shift a[-1,1] w[-1,1] N=1: CONSISTENT (Groebner 40 elements); expected consistent; 18 unknowns, 28 eqs, build 1.1s, total 1.6s
+[PASS] mode=g a[-1,1] w[-1,1] N=2: EMPTY (Groebner [1]); expected empty; 60 unknowns, 254 eqs, build 47.5s, total 64.0s
+[PASS] mode=u a[-1,1] w[-1,1] N=2: CONSISTENT (Groebner 56 elements); expected consistent; 60 unknowns, 162 eqs, build 4.5s, total 18.0s
+[PASS] mode=shift a[-1,1] w[-2,2] N=2: CONSISTENT (Groebner 121 elements); expected consistent; 90 unknowns, 254 eqs, build 143.3s, total 294.6s

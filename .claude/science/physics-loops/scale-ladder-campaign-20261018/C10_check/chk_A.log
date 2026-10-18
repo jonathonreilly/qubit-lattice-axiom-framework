@@ -1,0 +1,31 @@
+[PASS] A-HD L=4 generic circulant: H = C+ + C-, D = C+ - C- 
+[PASS] A-br L=4 generic circulant: {C+,C+} = A(l m'+m l')/8 
+[PASS] A-br L=4 generic circulant: {C-,C-} = -A(n k'+k n')/8 
+[PASS] A-br L=4 generic circulant: {C+x,C-y} = S_xy (l_x k_y + m_x n_y)/8 
+[PASS] A-HD L=5 generic circulant: H = C+ + C-, D = C+ - C- 
+[PASS] A-br L=5 generic circulant: {C+,C+} = A(l m'+m l')/8 
+[PASS] A-br L=5 generic circulant: {C-,C-} = -A(n k'+k n')/8 
+[PASS] A-br L=5 generic circulant: {C+x,C-y} = S_xy (l_x k_y + m_x n_y)/8 
+[PASS] A1 L=5 general antisym (d1,d2): {C+,C-}=0 and strong closure with m_y/m_x, n_y/n_x structure functions 
+[PASS] A1 L=4 general antisym (d1): {C+,C-}=0 and strong closure with m_y/m_x, n_y/n_x structure functions 
+[PASS] SLAC L=5 real-space kernel is real antisymmetric with d(0)=0 d1=1.068959332116 d2=-0.660653199839
+[PASS] A1 SLAC L=5 numerical spot check (30 digits) max err 2.5e-31
+[PASS] SigmaU L=5 central: rank(l,k) = 2L = 10 and Lagrangian = True rank=10
+[PASS] SigmaU L=5 central: periodic sector, sum_x m_x = sum_x n_x = 0 on {l=k=0} (uniform m needs winding) 
+[PASS] SigmaU L=5 central: U cap Sigma nonempty (explicit point with all m,n != 0) [-46, 18, 6, -2, 24, 30, -10, 14, -14, -20]
+[PASS] SigmaU L=5 general antisym: rank(l,k) = 2L = 10 and Lagrangian = True rank=10
+[PASS] SigmaU L=5 general antisym: periodic sector, sum_x m_x = sum_x n_x = 0 on {l=k=0} (uniform m needs winding) 
+[PASS] SigmaU L=5 forward: rank(l,k) = 2L = 10 and Lagrangian = False rank=10
+[PASS] SigmaU L=5 forward: periodic sector, sum_x m_x = sum_x n_x = 0 on {l=k=0} (uniform m needs winding) 
+[PASS] SigmaU L=4 central: rank(l,k) = 2L = 8 and Lagrangian = True rank=8
+[PASS] SigmaU L=4 central: periodic sector, sum_x m_x = sum_x n_x = 0 on {l=k=0} (uniform m needs winding) 
+[PASS] A5 uniform background: {H,H} = Del(D+D), {D,H} = Del(H+H), {D,D} = Del(D+D) 
+[PASS] A5 Fourier central L=5: Lambda_n = lam_n, {H_1,H_-1} coefficient of D_0 = 5.8774718e-39 - 1.902113*I != 0, Lam2/Lam1 = 0.6180339888 - 2.186359391e-36*I 
+[PASS] A5 Fourier SLAC L=5: Lambda_n = lam_n, {H_1,H_-1} coefficient of D_0 = 1.2037062e-35 - 2.5132741*I != 0, Lam2/Lam1 = 2.0 + 9.578789709e-36*I 
+[PASS] A3 central L=4 kink component (l,m,l,l | k,k,k,k): on it {C+_0,C+_1} = A_01 m_0 l_1 / 8, not identically 0 = (t4 + t6)*(t5 + t7)/2
+[PASS] A3 central L=4 same component: non-vanishing brackets only between C+ at the kink sites [(0, 1), (1, 2)]
+[PASS] A3 central L=5 C- kink (k,k,n,k,k): {C-_1,C-_2} = -A_12 n_1 k_2/8 != 0 (C- kinks carry the mirrored form, not A m l/8) 
+[PASS] A3 forward L=5 regular (l,k) branch: {C+_0,C-_1} = S_01 m_0 n_1/8 != 0 
+[PASS] A3 forward L=5 regular (m,n) branch: {C+_0,C-_1} = S_01 l_0 k_1/8 != 0 
+[PASS] A3 forward L=5 (l,n) branch first class, reducible (rank < 2L) rank=9
+TOTAL chk_A: PASS=30 FAIL=0

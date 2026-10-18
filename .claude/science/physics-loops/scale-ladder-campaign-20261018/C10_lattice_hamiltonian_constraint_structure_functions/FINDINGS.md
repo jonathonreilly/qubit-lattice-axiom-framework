@@ -1,6 +1,6 @@
 # C10 findings: first-class lattice Hamiltonian constraints with structure functions (1D periodic lattice)
 
-Provenance: a worker of the same model family. **Unchecked.** Saved by the supervisor from the hand-back (the worker's file write was blocked). All code is new and imports nothing from earlier runners. Only the supplied models are used: a free scalar, one clock pair, two embedding pairs. No physical identification. Literature mentions are unchecked recollection; no literature search was run.
+Provenance: a worker of the same model family. Checked by a fresh-context same-family agent with new encodings (`../C10_check/REPORT.md`, PASS=62, FAIL=1 on the checker's own degenerate test point). Every formula and certificate re-derived holds; scope corrections are applied below. Saved by the supervisor from the hand-back (the worker's file write was blocked). All code is new and imports nothing from earlier runners. Only the supplied models are used: a free scalar, one clock pair, two embedding pairs. No physical identification. Literature mentions are unchecked recollection; no literature search was run.
 
 | Item | Result |
 |---|---|
@@ -19,16 +19,16 @@ Slow-only window results quoted below come from `exploration/` scripts, not the 
 ## Answer
 
 - **Model A (one clock pair; phase space 4L).**
-  - The naive lattice H and D are first class on an explicit translation-invariant open set for every antisymmetric Δ. They close **strongly**, with local rational structure functions.
+  - The naive lattice H and D are first class on an explicit translation-invariant open set U, for every antisymmetric Δ (reduced phase space 0-dimensional; the linear constraints ℓ = k = 0 commute only because S = 0). They close **strongly**, with local rational structure functions.
   - At a uniform background the on-shell algebra is the Dirac algebra with δ′ → Δ, so (S) holds with Λ_n = λ̂_n.
   - This is cheap: the model has no local degrees of freedom, and the constraints factor into commuting linear constraints.
   - It fails on Σ's "kink" components, and for the forward difference on every regular component.
 - **Model P (lattice parametrised field theory, two embedding pairs; real local degrees of freedom).**
-  - The naive constraints are anomalous for every Δ tested, with an explicit perfect-square anomaly.
-  - Where Π⁺ is solvable, first-classness is exactly a local zero-curvature equation for the Kuchař density h_x.
+  - The naive constraints are anomalous, with an explicit perfect-square anomaly: for every antisymmetric Δ ≠ 0 at every L (check, hand proof), and for the forward difference.
+  - Where C⁺ can be solved for Π⁺ with a diagonal coefficient (C⁺_x = α_x(Π_x + h_x)), first-classness is exactly a local zero-curvature equation for the Kuchař density h_x. A banded non-diagonal coefficient gives only a quasi-local h, which the certificates do not exclude.
   - A local solution recombined with the ruler g = ΔX⁺ would give a non-abelian first-class set satisfying (S): C9's P6 mechanism.
-  - Exact Gröbner certificates exclude such h for small windows, and in the class where X⁺ enters only through g.
-  - In the broader shift-invariant class, flat first-order jets with the correct continuum response exist at window (1,2). Whether an exact finite-range solution exists is **open**.
+  - Exact Gröbner certificates (central Δ, local germs at the ruler) exclude flat C^N germs in the listed windows: the g-only class at (0,0), (1,0), (1,1) with N = 2, plus (1,2) and (2,0) with full 1/g normalisation (exploration only); several shift-invariant windows.
+  - In the broader shift-invariant class, flat first-order jets with the correct continuum response exist at window (1,2). The check confirms that the (1,2) N = 2 system is consistent. Whether an exact finite-range solution exists is **open**; the smallest open case is shift-invariant (1,2) at N ≥ 3.
 - **Commuting deparametrised clocks** (H_x = P_x + h_x, with commuting h_x) are trivially first class but abelian, so they fail (S). They also freeze every energy density. Exact certificates show that no finite-range quadratic h_x sums to the lattice free-scalar Hamiltonian H₀ under {h₀, H₀} = 0, in the windows tested.
 
 ## Setup
@@ -57,7 +57,8 @@ Slow-only window results quoted below come from `exploration/` scripts, not the 
   - If K is abelian, C_x = g_x K_x satisfies {C_x, C_y} = Δ_xy(g_y/g_x)C_x − Δ_yx(g_x/g_y)C_y strongly (C9's P6 form).
   - At g ≡ 1, c̄(m,n) = λ̂_n − λ̂_m, so Λ_n = λ̂_n.
   - (S) holds iff λ̂₁ ≠ 0 and λ̂₁ ≠ λ̂₋₁. For the central difference Λ₂/Λ₁ = 2cos(2π/L).
-  - **So (S) is a property of a basis, not of Σ.** An abelianised H with D reconstructed matches the continuum at the longest wavelength in the recombined basis iff a local abelian K with the right continuum limit exists.
+  - **So at a background moved by the gauge flow, (S) depends on the choice of generators; first-classness depends only on Σ.** (Check: at a common zero, translation-covariant recombination leaves Λ_n unchanged.) An abelianised H with D reconstructed matches the continuum at the longest wavelength in the recombined basis if a local abelian K with the right continuum limit exists; the converse is not shown.
+  - Sign note: here Λ_n = +λ̂_n, against −λ_n in C9's P6, as C9's P7 predicts. On Z_L the ruler X⁺ = x is not periodic, so "Δx = 1" is a definition (affine sector). The H/D algebra has two generators per momentum; each chiral sector has one.
 
 ### Stage 2: known constructions (unchecked recollection, not evidence)
 
@@ -85,10 +86,10 @@ Slow-only window results quoted below come from `exploration/` scripts, not the 
   - At a uniform background: {H_x, H_y} ≈ Δ_xy(D_x + D_y) and {D_x, H_y} ≈ Δ_xy(H_x + H_y). This is the Dirac algebra with δ′ → Δ, so Λ_n = λ̂_n (2cos(2π/L) for central, n̄Λ₁ for SLAC).
   - Caveat: the uniform background needs winding of φ ∓ X, as for C9's ruler.
   - Mechanism: the constraint is null and factorises, with no local degrees of freedom.
-- **A3 [exact; L = 4, 5; all 2^{2L} pieces].** A kink rule decides first-classness on each irreducible component of Σ.
-  - Central: exactly the 4 uniform branches are first class (2 regular, 2 reducible). Every kink component is anomalous, with anomaly ⅛A m_x ℓ_y ≠ 0.
+- **A3 [exact; L = 4, 5; all 2^{2L} pieces].** A kink rule decides first-classness on each irreducible non-degenerate component of Σ (48 degenerate pieces at L = 4 and 20 at L = 5 are also first class).
+  - Central: exactly the 4 uniform branches are first class (2 regular, 2 reducible). Every kink component is anomalous, with anomaly ⅛A m_x ℓ_y ≠ 0 for C⁺ kinks and −⅛A n_x k_y for C⁻ kinks.
   - Forward: only the reducible (ℓ,n) and (m,k) branches are first class. Every regular component is anomalous, via ⅛S m_x n_y.
-  - So Σ as a whole is never first class.
+  - So Σ as a whole is not first class (shown at L = 4, 5).
 
 #### Model P
 
@@ -97,7 +98,7 @@ Slow-only window results quoted below come from `exploration/` scripts, not the 
   - At rational points of Σ, {H₀, H₁} is non-zero: 34583/570752 (central), 3/784 (forward), 2591839/24618825 (range 2).
   - The continuum counterpart of the anomaly is (x−y)²δ′ = 0.
 - **P4a.** For h = a²/(4g), the curvature is F_xy = −Δ_xy(v_x − v_y)²/4, with v = a/g.
-- **Finite-range searches.** Ansatz: h quadratic in the chiral field a, chiral, translation-covariant, and with a nonzero uniform value. The jet certificates impose flatness through order N−1 at the ruler, and are complete for all C^N coefficient functions in the window.
+- **Finite-range searches (central Δ throughout).** Ansatz: h quadratic in the chiral field a, chiral, translation-covariant, and with a nonzero uniform value. The jet certificates impose flatness through order N−1 at the ruler, and are complete for all C^N coefficient functions in the window.
 
   | Class (window radii) | Result |
   |---|---|
@@ -130,14 +131,14 @@ Slow-only window results quoted below come from `exploration/` scripts, not the 
 - **Relation to C9 and the lane note.**
   - A1 and L4 transfer C9's moved-background evasion of the arc lemma to constraints.
   - Theorems A–C are not contradicted.
-  - With local degrees of freedom (PFT), the naive discretisation is anomalous, and first-classness becomes a sharp local zero-curvature problem that small windows provably cannot solve.
+  - With local degrees of freedom (PFT), the naive discretisation is anomalous, and first-classness becomes a sharp local zero-curvature problem. No flat C^N germ exists in the listed windows under the stated premises.
 
 ## Open
 
 1. Second and higher order for the shift-invariant (1,2) class, and larger windows (`c10_jet_elim.py`).
 2. An exact local G(u): a lattice "pullback by the embedding".
-3. Non-chiral or non-quadratic densities; constraints not solvable for Π⁺.
+3. Non-chiral or non-quadratic densities; constraints not solvable for Π⁺, or solvable only with a banded non-diagonal coefficient (quasi-local h); differences other than central in the certificates.
 4. Model A's degenerate pieces; global first-classness.
 5. d > 1.
-6. General-L proofs of P6 and A3.
+6. General-L proofs of P6 and A3. (The check sketches, uncertified, that P6 holds on Z for any finite R via a Sylvester argument, without needing Σh = H₀.)
 7. Rerun `--slow` with a longer limit, to certify the (11,3) P6 case and the slow-only windows.

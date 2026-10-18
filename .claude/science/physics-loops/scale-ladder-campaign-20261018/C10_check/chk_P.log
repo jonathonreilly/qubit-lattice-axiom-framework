@@ -1,0 +1,14 @@
+[PASS] P-anom L=5 central: on shell {C+x,C+y} = -D_xy (a_x g_y - a_y g_x)^2/(4 g_x g_y); {C+,C-} = 0 
+[PASS] P-anom L=5 general antisym: on shell {C+x,C+y} = -D_xy (a_x g_y - a_y g_x)^2/(4 g_x g_y); {C+,C-} = 0 
+[PASS] P-anom L=6 central: on shell {C+x,C+y} = -D_xy (a_x g_y - a_y g_x)^2/(4 g_x g_y); {C+,C-} = 0 
+[PASS] P-anom L=5 forward: {C+x,C-y} = -S_xy a_x b_y/4 strongly 
+[PASS] P-point L=5 forward: point on Sigma (g != 0), {H_0,H_1} = 3/784 expected 3/784
+      forward point: {C+0,C+1}=-5/196  {C-0,C-1}=33/112  -({C+0,C-1}+{C-0,C+1})=-13/49  g+=[1/7, 12/7, 5/7, 6/7, 11/7] a=[1/7, 1, 3/7, -8/7, 5/7]
+[PASS] P-point L=5 central: point on Sigma (g != 0), {H_0,H_1} = 34583/570752 expected 34583/570752
+[PASS] P-point L=5 range-2 (d1=2/3,d2=-1/12): point on Sigma (g != 0), {H_0,H_1} = 2591839/24618825 expected 2591839/24618825
+[FAIL] P-point L=5 forward, own point (u=v=0, phi=0, pi=(1,2,0,0,0)): {H_0,H_1} != 0 = 0
+[PASS] L4 L=5 central: K abelian and {g_x K_x, g_y K_y} = D_xy g_y K_x - D_yx g_x K_y 
+[PASS] L4 L=5 forward: K abelian and {g_x K_x, g_y K_y} = D_xy g_y K_x - D_yx g_x K_y 
+[PASS] L4 L=4 generic circulant: K abelian and {g_x K_x, g_y K_y} = D_xy g_y K_x - D_yx g_x K_y 
+[PASS] L4 Fourier: c(m,n) = lam_n - lam_m, Lambda_n = lam_n, (S) holds (central, forward, L=5-8) 
+[PASS] P4a L=5 central: F_xy = {K_x,K_y} = -D_xy (v_x - v_y)^2/4, v = a/g 

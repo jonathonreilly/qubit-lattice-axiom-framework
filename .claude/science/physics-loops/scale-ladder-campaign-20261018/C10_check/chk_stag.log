@@ -1,0 +1,9 @@
+[PASS] stag L=4 sign=-1: flat = True (expected True) 
+[PASS] stag L=4 sign=1: flat = False (expected False) 
+[PASS] stag L=4: not shift invariant 
+[PASS] stag L=4: uniform-a linear response even site = -A^2 e/2, odd = 0 (continuum -A^2 e/4; matches only on the 2-site average) even=-A**2*u1/4 + A**2*u3/4, odd=0
+[PASS] stag L=6 sign=-1: flat = True (expected True) 
+[PASS] stag L=6 sign=1: flat = False (expected False) 
+[PASS] stag L=6: not shift invariant 
+[PASS] stag L=6: uniform-a linear response even site = -A^2 e/2, odd = 0 (continuum -A^2 e/4; matches only on the 2-site average) even=-A**2*u1/4 + A**2*u5/4, odd=0
+TOTAL chk_stag: PASS=8 FAIL=0

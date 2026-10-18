@@ -133,3 +133,26 @@ sweep, the subgroup table, the twist runs, or the C1 E(g) C2 structure claim.
 - rv_circuits.log — TOTAL: PASS=14 FAIL=0
 - rv_trace.log — TOTAL: PASS=9 FAIL=0
 - rv_period.log — TOTAL: PASS=4 FAIL=0
+
+## Correction confirmation (2026-10-18 21:55:44 UTC)
+
+I re-read the complete corrected NOTE.md.
+
+- **C-1 resolved.** Theorem 2(d) now says "nonconstant **and not of the form x^r + x^{-r}**". It
+  also explains the glider form and the D4/D3 rows, and states that O and T are unaffected.
+  The proof text is unchanged and was already correct.
+- **Cosmetic point resolved.** Theorem 1b states that the exponent sign is immaterial, and that the [1] and [2] phases were confirmed by the reviewer.
+- **Disclosures accurate.** "Review dispositions" describes my phase-A blindness correctly (the
+  prompt contained the headline counts) and lists the not-re-checked items faithfully. Item [3] is
+  marked open. The status line says "Independently reviewed; unaudited".
+- **No new defect was introduced by the edits.**
+- **New finding, C-2 (minor; pre-existing text, not introduced by the correction).** The NOTE says
+  ballistic spreading "occurs exactly for the 84 nonconstant-tau matrices of the trivial and sign
+  actions" (Answers (b)), and Result item 2 has similar wording. Under the **sign** action only
+  **14** of those 84 unsigned matrices admit a covariant phase choice; the trivial action admits
+  all 84. Evidence: review_scripts/rv_sign_spread.py, log rv_sign_spread.log, TOTAL: PASS=1
+  FAIL=0. Fix: "84 (trivial) / 14 phase-valid (sign)", or mark 84 as an unsigned count, as the subgroup table already does with
+  "valid". The headline conclusions do not change, since spreading still occurs under the sign action.
+
+**Final verdict: READY**, conditional on the one-line C-2 wording fix. The fix is non-blocking for the
+headline (soldered ⇒ frozen at ranges 1 and 2; no O/T gliders at any range).

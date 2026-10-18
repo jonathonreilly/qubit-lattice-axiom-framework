@@ -48,3 +48,13 @@ PASS [numerical] gold: theta=0.1, chi=0.00: 1 - cos omega >= (1 - cos theta) + c
    min over samples of 1 + cos omega = 8.0390e-03; min over TRIMs = 4.9958e-03
 PASS [numerical] gold: theta=0.1, chi=0.00: sampled min of 1 + cos omega >= its TRIM minimum
 PASS [numerical] gold: theta=0.1, chi=1.57: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.2837 (4000 random k)
+   min over samples of 1 + cos omega = 5.1989e-03; min over TRIMs = 4.9958e-03
+PASS [numerical] gold: theta=0.1, chi=1.57: sampled min of 1 + cos omega >= its TRIM minimum
+   bstar chi=0.000: max_p ||U^n - e^(-itH_D)|| = [0.01892159 0.00919855 0.00453429 0.00225097] slope 1.023; with p-dependent chiral rotation: [0.02255241 0.01107192 0.00548556 0.00273027] slope 1.015; C3 estimates [0.0417 0.0416 0.0415 0.0415]
+PASS [numerical] bstar chi=0.00: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.042)
+PASS [numerical] bstar chi=0.00: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
+PASS [numerical] bstar chi=0 (Wilson-aligned mass): convergence is O(a) (slope 1.02) and the chiral rotation does not help (slope 1.02)
+   bstar chi=1.571: max_p ||U^n - e^(-itH_D)|| = [0.01241881 0.00619219 0.00309393 0.00154669] slope 1.002; with p-dependent chiral rotation: [8.18650015e-04 2.05240664e-04 5.13885405e-05 1.28573157e-05] slope 1.998; C3 estimates [0.0415 0.0415 0.0415 0.0415]
+PASS [numerical] bstar chi=1.57: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.041)
+PASS [numerical] bstar chi=1.57: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
+PASS [numerical] bstar chi=pi/2 (maximal twist): constant identification O(a) (slope 1.00); p-dependent chiral rotation V_a(p) gives O(a^2) (slope 2.00)

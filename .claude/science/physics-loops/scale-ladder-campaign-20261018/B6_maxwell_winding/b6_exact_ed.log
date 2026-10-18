@@ -121,3 +121,31 @@ B6 exact ED of the supplied ring model; J = 1; V list [1.0, 0.9, 0.5, 0.0, -1.0]
 [PASS] 2x2x3: Hessian is block diagonal in lattice momentum (translation invariance) at every V :: max 1.4e-15
 [PASS] 2x2x3: at RK (V=J) every computed winding sector has ground energy 0 (graph Laplacian)
 [PASS] 2x2x3: at every q != 0 the 3-orientation block has exactly one nonzero (co-exact) value per real Fourier pair
+--- 2x2x4: zero-winding sector 1552024 states, 49 components, vacuum component 1551976
+[PASS] 2x2x4: vacuum component is mapped onto itself by the three unit translations
+  V=+1.00 E0=-0.000000000 gap=0.610074 cg_its=82 res=7.8e-13 |R.exact|=1.7e-12 |R(q,q')|=8.4e-17 chi(o=0,1,2)=[0.21040421, 0.260720049, 0.260720049] (415s)
+     q/pi=[0.0, 0.0, 0.0] eig=[0.21040421, 0.260720049, 0.260720049]
+     q/pi=[0.0, 0.0, 0.5] eig=[0.210913523, 0.210913523]
+     q/pi=[0.0, 0.0, 1.0] eig=[0.21113292]
+     q/pi=[0.0, 1.0, 0.0] eig=[0.275737149]
+     q/pi=[0.0, 1.0, 0.5] eig=[0.24440117, 0.24440117]
+     q/pi=[0.0, 1.0, 1.0] eig=[0.232999921]
+     q/pi=[1.0, 0.0, 0.0] eig=[0.275737149]
+     q/pi=[1.0, 0.0, 0.5] eig=[0.24440117, 0.24440117]
+     q/pi=[1.0, 0.0, 1.0] eig=[0.232999921]
+     q/pi=[1.0, 1.0, 0.0] eig=[0.289121316]
+     q/pi=[1.0, 1.0, 0.5] eig=[0.273614239, 0.273614239]
+     q/pi=[1.0, 1.0, 1.0] eig=[0.265744456]
+  V=+0.90 E0=-1.427963351 gap=0.754163 cg_its=72 res=4.9e-13 |R.exact|=3.8e-14 |R(q,q')|=4.3e-15 chi(o=0,1,2)=[0.237588919, 0.250713831, 0.250713831] (320s)
+     q/pi=[0.0, 0.0, 0.0] eig=[0.237588919, 0.250713831, 0.250713831]
+     q/pi=[0.0, 0.0, 0.5] eig=[0.238382158, 0.238382158]
+     q/pi=[0.0, 0.0, 1.0] eig=[0.238986158]
+     q/pi=[0.0, 1.0, 0.0] eig=[0.283072264]
+     q/pi=[0.0, 1.0, 0.5] eig=[0.265165681, 0.265165681]
+     q/pi=[0.0, 1.0, 1.0] eig=[0.259214521]
+     q/pi=[1.0, 0.0, 0.0] eig=[0.283072264]
+     q/pi=[1.0, 0.0, 0.5] eig=[0.265165681, 0.265165681]
+     q/pi=[1.0, 0.0, 1.0] eig=[0.259214521]
+     q/pi=[1.0, 1.0, 0.0] eig=[0.292798956]
+     q/pi=[1.0, 1.0, 0.5] eig=[0.285988136, 0.285988136]
+     q/pi=[1.0, 1.0, 1.0] eig=[0.284165155]

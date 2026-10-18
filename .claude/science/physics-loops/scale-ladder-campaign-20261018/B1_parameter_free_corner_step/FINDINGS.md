@@ -25,3 +25,10 @@
 - `clean_rank2.py`: all of those have other crossings. The best minimum distance on a 12³ grid away from ±k* is 0.007.
 - So in this family a clean node quasi-energy comes only with the six cube-point doublers (example: S·R_L·H23·L110).
 - The independent check (B1_check) confirmed (a)–(c) with corrections, which are applied in the note: the lemma needs isolated doublets, the strengthening to a derivation, H_link² = 2 proved, the speed exactly 1/√3 via M³ = (|q|²/3)M, and the minimal Weyl automaton's maximum group speed 1/√2.
+
+## π/6-phase extension (04:40Z)
+
+- **Scope.** `pi6_search.py` uses on-site phases e^{iπn/6} (canonical C3/C6 angles) with S and S·R_L links.
+- **Coarse result.** 5,349 Weyl-at-k* steps have no cube-point doublers. The best far-grid distance on an 8³ grid is 0.08, for S·R_L·(P₀ + iP₁ − iP₂).
+- **Refined result.** Refined minimization (`refine_H39.py`) finds about 60 crossings at the node quasi-energy, so it is not clean. The coarse-grid rankings are not reliable for cleanliness.
+- **Conclusion.** No doubler-free clean Weyl step was found in the searched families. The only clean structure seen is the eight-node one.

@@ -1,6 +1,6 @@
 {
- "edge_count": 16245,
- "node_count": 7247,
+ "edge_count": 16254,
+ "node_count": 7248,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14181,6 +14181,10 @@
   "lattice_field_strength_unification_note": {
    "deps_hash": "d1f698838e74",
    "out_degree": 1
+  },
+  "lattice_graviton_kernels_one_tt_cone_dewitt_closure_and_induced_bubble_seagull_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "0f8e85ae010e",
+   "out_degree": 9
   },
   "lattice_gravity_resolution_note": {
    "deps_hash": "3f1f52e62750",

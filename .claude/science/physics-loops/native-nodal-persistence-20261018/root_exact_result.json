@@ -1,0 +1,45 @@
+{
+  "method": "exact integer full-spin SWAP action, independent of coordinate-Laplacian derivation",
+  "scope": "three finite torus fixtures; proof still needed for arbitrary sizes and common rotated record q",
+  "fixtures": [
+    {
+      "shape": [
+        4,
+        3,
+        3
+      ],
+      "sites": 36,
+      "edges": 108,
+      "one_excitation_columns_checked": 9,
+      "normalized_two_excitation_leakage_square": 16.0,
+      "two_excitation_nonzero_leaked_configurations": 8,
+      "vacuum_H_zero": true
+    },
+    {
+      "shape": [
+        6,
+        3,
+        3
+      ],
+      "sites": 54,
+      "edges": 162,
+      "one_excitation_columns_checked": 18,
+      "normalized_two_excitation_leakage_square": 8.0,
+      "two_excitation_nonzero_leaked_configurations": 4,
+      "vacuum_H_zero": true
+    },
+    {
+      "shape": [
+        8,
+        3,
+        3
+      ],
+      "sites": 72,
+      "edges": 216,
+      "one_excitation_columns_checked": 27,
+      "normalized_two_excitation_leakage_square": 8.0,
+      "two_excitation_nonzero_leaked_configurations": 4,
+      "vacuum_H_zero": true
+    }
+  ]
+}

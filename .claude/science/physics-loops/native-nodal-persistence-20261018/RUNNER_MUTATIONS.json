@@ -1,0 +1,122 @@
+{
+  "baseline": {
+    "one": [
+      {
+        "shape": [
+          4,
+          3,
+          3
+        ],
+        "sites": 36,
+        "edges": 108,
+        "one_excitation_columns_checked": 9,
+        "normalized_two_excitation_leakage_square": 16.0,
+        "two_excitation_nonzero_leaked_configurations": 8,
+        "vacuum_H_zero": true
+      },
+      {
+        "shape": [
+          6,
+          3,
+          3
+        ],
+        "sites": 54,
+        "edges": 162,
+        "one_excitation_columns_checked": 18,
+        "normalized_two_excitation_leakage_square": 8.0,
+        "two_excitation_nonzero_leaked_configurations": 4,
+        "vacuum_H_zero": true
+      },
+      {
+        "shape": [
+          8,
+          3,
+          3
+        ],
+        "sites": 72,
+        "edges": 216,
+        "one_excitation_columns_checked": 27,
+        "normalized_two_excitation_leakage_square": 8.0,
+        "two_excitation_nonzero_leaked_configurations": 4,
+        "vacuum_H_zero": true
+      }
+    ],
+    "two": [
+      {
+        "adjacent_second_action_leak_squared": 256.0,
+        "shape": [
+          4,
+          6,
+          3
+        ],
+        "edges": 216,
+        "independent_columns": 9,
+        "integer_intertwining_verified": true,
+        "unstaggered_control_rejected": true
+      },
+      {
+        "adjacent_second_action_leak_squared": 256.0,
+        "shape": [
+          4,
+          8,
+          4
+        ],
+        "edges": 384,
+        "independent_columns": 16,
+        "integer_intertwining_verified": true,
+        "unstaggered_control_rejected": true
+      },
+      {
+        "adjacent_second_action_leak_squared": 256.0,
+        "shape": [
+          4,
+          10,
+          3
+        ],
+        "edges": 360,
+        "independent_columns": 9,
+        "integer_intertwining_verified": true,
+        "unstaggered_control_rejected": true
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "mutation": "one boundary diagonal",
+      "old": "expected[m]+=12*c",
+      "new": "expected[m]+=10*c",
+      "rejected_by_assertion": true
+    },
+    {
+      "mutation": "one hopping coefficient",
+      "old": "expected[m]-=2*c",
+      "new": "expected[m]-=c",
+      "rejected_by_assertion": true
+    },
+    {
+      "mutation": "two scalar offset",
+      "old": "target[s]+=24*c",
+      "new": "target[s]+=20*c",
+      "rejected_by_assertion": true
+    },
+    {
+      "mutation": "two hopping coefficient",
+      "old": "target[s]-=2*c",
+      "new": "target[s]-=c",
+      "rejected_by_assertion": true
+    },
+    {
+      "mutation": "two staggered preparation",
+      "old": "if stagger:c*=(-1)**y",
+      "new": "if stagger:c*=1",
+      "rejected_by_assertion": true
+    },
+    {
+      "mutation": "two encoding normalization",
+      "old": "==4*Ly",
+      "new": "==2*Ly",
+      "rejected_by_assertion": true
+    }
+  ],
+  "scope": "in-memory scratch helper mutations; no source changed, finite controls only"
+}

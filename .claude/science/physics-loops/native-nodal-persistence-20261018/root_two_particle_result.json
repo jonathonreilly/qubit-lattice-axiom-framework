@@ -1,0 +1,41 @@
+{
+  "method": "independently written full-spin exchange action and exact encoded target comparison",
+  "fixtures": [
+    {
+      "adjacent_second_action_leak_squared": 256.0,
+      "shape": [
+        4,
+        6,
+        3
+      ],
+      "edges": 216,
+      "independent_columns": 9,
+      "integer_intertwining_verified": true,
+      "unstaggered_control_rejected": true
+    },
+    {
+      "adjacent_second_action_leak_squared": 256.0,
+      "shape": [
+        4,
+        8,
+        4
+      ],
+      "edges": 384,
+      "independent_columns": 16,
+      "integer_intertwining_verified": true,
+      "unstaggered_control_rejected": true
+    },
+    {
+      "adjacent_second_action_leak_squared": 256.0,
+      "shape": [
+        4,
+        10,
+        3
+      ],
+      "edges": 360,
+      "independent_columns": 9,
+      "integer_intertwining_verified": true,
+      "unstaggered_control_rejected": true
+    }
+  ]
+}

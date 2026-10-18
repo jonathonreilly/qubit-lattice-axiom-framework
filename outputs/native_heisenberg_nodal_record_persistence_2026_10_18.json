@@ -1,0 +1,109 @@
+{
+  "kind": "conditional exact finite controls; no audit verdict",
+  "python": "3.13.5",
+  "inputs": {
+    "scripts/native_heisenberg_nodal_controls.py": "7b1044e09141974b4f46bf65b2354464b04f8442bde32a5dfd3b4b7311c3b7cf",
+    "scripts/native_heisenberg_many_particle_controls.py": "2f16644ec353d73c8fa500017d4534091c6cc8a5fe18358c8def77478ecd26b4",
+    "docs/NATIVE_HEISENBERG_NODAL_RECORD_PERSISTENCE_BOUNDED_THEOREM_NOTE_2026-10-18.md": "cab15d6b241572df5582db3e900dfbdd86e99fadad98b5e05f78108e550ce92e"
+  },
+  "one_excitation": [
+    {
+      "shape": [
+        4,
+        3,
+        3
+      ],
+      "sites": 36,
+      "edges": 108,
+      "one_excitation_columns_checked": 9,
+      "normalized_two_excitation_leakage_square": 16.0,
+      "two_excitation_nonzero_leaked_configurations": 8,
+      "vacuum_H_zero": true
+    },
+    {
+      "shape": [
+        6,
+        3,
+        3
+      ],
+      "sites": 54,
+      "edges": 162,
+      "one_excitation_columns_checked": 18,
+      "normalized_two_excitation_leakage_square": 8.0,
+      "two_excitation_nonzero_leaked_configurations": 4,
+      "vacuum_H_zero": true
+    },
+    {
+      "shape": [
+        8,
+        3,
+        3
+      ],
+      "sites": 72,
+      "edges": 216,
+      "one_excitation_columns_checked": 27,
+      "normalized_two_excitation_leakage_square": 8.0,
+      "two_excitation_nonzero_leaked_configurations": 4,
+      "vacuum_H_zero": true
+    }
+  ],
+  "two_excitation": [
+    {
+      "adjacent_second_action_leak_squared": 256.0,
+      "shape": [
+        4,
+        6,
+        3
+      ],
+      "edges": 216,
+      "independent_columns": 9,
+      "integer_intertwining_verified": true,
+      "unstaggered_control_rejected": true
+    },
+    {
+      "adjacent_second_action_leak_squared": 256.0,
+      "shape": [
+        4,
+        8,
+        4
+      ],
+      "edges": 384,
+      "independent_columns": 16,
+      "integer_intertwining_verified": true,
+      "unstaggered_control_rejected": true
+    },
+    {
+      "adjacent_second_action_leak_squared": 256.0,
+      "shape": [
+        4,
+        10,
+        3
+      ],
+      "edges": 360,
+      "independent_columns": 9,
+      "integer_intertwining_verified": true,
+      "unstaggered_control_rejected": true
+    }
+  ],
+  "actual_Z3_finite_support": [
+    {
+      "n": 1,
+      "physical_seed_terms": 2,
+      "physical_second_action_terms": 38,
+      "exact_intertwining_two_actions": true
+    },
+    {
+      "n": 2,
+      "physical_seed_terms": 8,
+      "physical_second_action_terms": 296,
+      "exact_intertwining_two_actions": true
+    },
+    {
+      "n": 3,
+      "physical_seed_terms": 48,
+      "physical_second_action_terms": 2640,
+      "exact_intertwining_two_actions": true
+    }
+  ],
+  "scope": "Full-spin integer intertwining, normalization and preserved failed controls. Infinite-volume self-adjointness and arbitrary-size statements require the note proofs. No physical preparation, Record formation or Hamiltonian selection derived."
+}

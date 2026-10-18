@@ -1,0 +1,26 @@
+# Actual Z3 native nodal persistence — root working derivation
+
+Proposed exact extension, independent check pending. It removes the finite periodic-geometry condition for this one-excitation mechanism, not the selected Hamiltonian, finite-excitation representation, encoded preparation or physical Record meaning.
+
+Fix a common pure one-qubit ray q. Use the incomplete tensor-product Hilbert space with orthonormal basis |S>, S a finite subset of Z3: spins in S are q-perpendicular and all others q. This is the supplied polarized-vacuum representation, not a derived ground-state selection. It is the direct sum of H_n=l2({S:|S|=n}), n>=0.
+
+Supply the homogeneous positive Heisenberg bond model with j>0,
+
+H = j sum_{nearest-neighbor edges} (I-sigma_x.sigma_y)
+  = 2j sum_e (I-SWAP_e).
+
+This has no exceptional bond, bath, pin or projection. Each term annihilates equal q spins. On a basis vector |S>, only edges with exactly one endpoint in S contribute, at most6n. Define the configuration graph on n-element subsets by moving one occupied vertex across such an edge. On H_n, H_n=2j L_n exactly. The graph degree is at most6n, so the symmetric adjacency has norm at most6n, its diagonal degree has norm at most6n, and ||H_n||<=24jn. For arbitrary f this follows from 2|f(S)f(T)|<=|f(S)|^2+|f(T)|^2 summed over edges. Thus H_n is a bounded self-adjoint positive operator. H_0=0.
+
+The direct sum H has domain {psi:sum_n ||H_n psi_n||^2<infinity} and is self-adjoint and positive. This follows by defining its blockwise resolvents (H_n +/- i)^-1, uniformly bounded by1, whose direct sums invert H +/- i. Its unitary group is the direct sum of exp(-itH_n). Finite linear combinations of configurations form a core: first truncate n, then approximate each finite set of H_n components by finitely supported vectors, using boundedness in each block. Thus this is a well-defined full finite-excitation spin dynamics, not merely a one-particle ansatz or a formal divergent Hamiltonian.
+
+For any local spin operator A, [H,A] on the finite-configuration core equals the finite sum of bond commutators on edges meeting supp(A). Every disjoint bond commutes with A; the remaining sum is bounded since the support is finite. The construction therefore uses precisely the declared local homogeneous bonds. No assertion about arbitrary thermodynamic representations is needed. Extension to all representations or a thermal state is not claimed.
+
+At n=1, H1=2j L_Z3, with ||H1||<=24j. Let F reflect x->-x. L commutes with F. Any l2 amplitude f with f(-x,y,z)=-f(x,y,z) vanishes on x=0, and stays odd forever. Consequently every one-excitation state in that sector keeps every plane site in the exact ray q for all real t. Including the vacuum, arbitrary mixtures, superpositions and passive references preserves this factorization. For an infinite plane this means all finite sets of its sites have pure product reduced states; equivalently every local plane projector acts as identity on the encoded sector. It does not require an infinite product of operators to be a local observable.
+
+The isometry from the half-space x>=1 is V f=(f on x>0, minus its mirror on x<0)/sqrt2. Its exact effective operator is the Dirichlet lattice Laplacian: diagonal6, hopping-1 among half-space nearest neighbors, no edge through x=0. The x=1 diagonal remains6, not the reduced boundary graph degree5. H V=V 2j L_D. Hence full physical outputs equal V exp(-it2j L_D) for every encoded input and time, including passive references. Finite-support half-space packets give finite-energy initial data and genuine propagation, not just stationary eigenvectors. For example a basis packet at(1,0,0) has nonzero first derivative to(2,0,0) and transverse neighbors under L_D; its encoded mirror packet has the corresponding opposite amplitudes. Both images are included in the output; neither is discarded as an environment.
+
+One can impose oddness under two or three commuting coordinate reflections as well. Their nonzero orthants have signs given by the product of reflected coordinate signs, normalization2^(-k/2), and all fixed coordinate planes remain q. The effective operator is the corresponding orthant Dirichlet Laplacian with unchanged diagonal6. This is the same mechanism, not additional independent milestones.
+
+Energy convention: the positive bond operator above is the actual supplied model. In finite volume it equals j|E|I-j sum sigma.sigma, with the scalar retained. In infinite volume the raw unshifted sum has divergent vacuum energy and is NOT asserted equal as a finite absolute-energy operator; this proof defines the vacuum-zero positive bond sum in the selected representation. It does not transport a global absolute phase or an energy claim from the original engineered compiler. Native j and the physical time/energy interpretation are still supplied.
+
+Open obligations: physical selection of the Heisenberg candidate and initial q-background, law-admissibility and formation of plane Records, preparation of odd paired excitations, robustness to symmetry-breaking perturbations, many-excitation useful dynamics, and a connection to the original gate's operational purpose. The single-particle nodal statement alone does not retire those suppliers.

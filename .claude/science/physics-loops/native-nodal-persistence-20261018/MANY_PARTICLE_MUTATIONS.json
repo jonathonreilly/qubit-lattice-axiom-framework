@@ -1,0 +1,48 @@
+{
+  "baseline": [
+    {
+      "n": 1,
+      "physical_seed_terms": 2,
+      "physical_second_action_terms": 38,
+      "exact_intertwining_two_actions": true
+    },
+    {
+      "n": 2,
+      "physical_seed_terms": 8,
+      "physical_second_action_terms": 296,
+      "exact_intertwining_two_actions": true
+    },
+    {
+      "n": 3,
+      "physical_seed_terms": 48,
+      "physical_second_action_terms": 2640,
+      "exact_intertwining_two_actions": true
+    }
+  ],
+  "scratch_mutations": [
+    {
+      "mutation": "physical exchange coefficient",
+      "old": "o[positions]+=2*c",
+      "new": "o[positions]+=3*c",
+      "rejected": true
+    },
+    {
+      "mutation": "ordered free diagonal",
+      "old": "12*len(positions)*c",
+      "new": "10*len(positions)*c",
+      "rejected": true
+    },
+    {
+      "mutation": "coordinate wedge signs",
+      "old": "sign=parity(xp)*parity(yp)",
+      "new": "sign=1",
+      "rejected": true
+    },
+    {
+      "mutation": "factorial normalization",
+      "old": "==factorial(n)*sum",
+      "new": "==sum",
+      "rejected": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# Bounded packaging check
+
+2026-10-18. No actionable mathematical, source-to-runner, scalar/domain, evidence-count or broken-link defect found on the source identities in PACKAGING_HASH_RECEIPT.json. This is a packaging/consistency check by the author of the precursor note, not an independent claim audit. Root independently checked the precursor finite constructions; I separately checked root's infinite-domain argument.
+
+Coverage: complete canonical helper (105 lines) and primary runner (36 lines) read; every canonical-note change relative to the fully authored/read 256-line precursor inspected, including status, packet references, evidence text and appended conformance section. The resulting canonical note is262 lines. Full ROOT_REVIEW.md and ROOT_MANY_BODY_REVIEW.md, current REVIEW_HISTORY.md, RUNNER_MUTATIONS.json and saved primary JSON read. No theorem was inferred from a title or truncated result. Large prior-art inventory and unrelated existing lint diagnostics were not fully interpreted as mathematical evidence.
+
+The physical helper uses2(I-SWAP), consistently equivalent to |E|I minus the raw J=1 model in finite volume. Effective positive operators use diagonal12 for one excitation and24 for the two-excitation code, with hopping-2. Domains/fixtures, parity and singlet conventions, normalized leakage figures and failed-input controls match the source. Whole encoded-column checks establish the finite identities, not the arbitrary-size or infinite-dimensional proofs. The source explicitly preserves that limit. The helper's comment that unstaggered input exits “this prescribed code” is not needed for a stronger claim; its executed decisive assertion correctly rejects the displayed unstaggered effective equation.
+
+The current note/helper hashes match the actual primary JSON inputs. Every Markdown target in the canonical note and current packet resolves. REVIEW_HISTORY.md was initially absent during concurrent packaging, then appeared and was read; no missing-file finding remains. Source identities were rechecked unchanged before this receipt was written.
+
+Read-only conformance commands:
+
+- `python3 docs/audit/scripts/audit_lint.py --strict`: exit0, no errors;5759 registered rows checked, with21 pre-existing/general warnings and1486 notices printed. Full log retained in PACKAGING_AUDIT_LINT.log. This does not independently validate new theorem mathematics or complete graph registration.
+- `python3 docs/audit/scripts/check_changed_audit_evidence.py --base HEAD --include-worktree --json`: exit0,25 changed paths, no failures/control failures, but `checked: []`. Saved as PACKAGING_CHANGED_EVIDENCE.json. Therefore this is no positive certificate of any newly applied audit evidence.
+
+No primary rerun was necessary because saved inputs matched and the supplied implementation was read; I did not create a second independent-run claim. No full landing pipeline, model-diverse review, audit verdict, publication authorization or graph-manifest completion is certified here. Current REVIEW_HISTORY explicitly leaves graph build/topology/acknowledgment pending; that is remaining packaging work for root, not silently discharged by this check. No repository edit was made.

@@ -197,3 +197,8 @@ Exact two-cut reflectionpositivity proves all-positive-plane GLOBALground existe
 ## Charged-column block
 Native charged-column pole complete: exact plane charge, single-column shape minimum, hopping -Jgamma lambda10 and original charged-source weight1-5lambda²/4+O(lambda4). Fixed-p polynomial-grid transfer and finite-pattern source Gram checked. Independent route/source/final review PASS; source-bound replay.089946sPASS. Charge is not electromagnetic and source is not neutral ZZ. Next root derives physical two-column readout residue of the neutral Q4 bound pole, without an added interaction.
 Status: conditional-support; trace: upstream_support; proposal_allowed: false.
+
+
+## Physical pair-source block
+Physical pair-source block complete: native two-column X readout has neutral Q4 form factor sqrt2/(R sqrt(1-2/R²))[(1-5lambda²/4)coskx+(1-5lambda²/8)cosky]+O(lambda4/R). Exact finite normalization restricted to evenR>=6 after final review. Fixed-pattern charge locality preserves1/R, finaltail M>18+5p. Independent/final reviewPASS with qualification applied; source-bound controlsPASS. This is spectral residue, not scattering or universal force. Nextroot Q6 diagonal-pair neutral branch: orderlambda16 orientation mixing positive, leadingtranslationscancel; orderlambda18 native detour may selectstaggered momentum. Under independentcheck, notyetclaim.
+Status: conditional-support; trace: upstream_support; proposal_allowed: false.

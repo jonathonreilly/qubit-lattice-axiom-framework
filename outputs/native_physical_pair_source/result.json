@@ -1,0 +1,171 @@
+{
+  "status": "conditional-support",
+  "scope": "Finite-volume physical pair-source normalization and Pauli bond counts; uniform exact-state transfer analytic, not full ED or an observation test",
+  "control": {
+    "rows": [
+      {
+        "R": 6,
+        "n": [
+          1,
+          0
+        ],
+        "norm_error": 3.1086244689504383e-15,
+        "overlap_error": 1.1102230246251565e-16,
+        "dressed_error": 3.3306690738754696e-16,
+        "reversed_bonds": [
+          40,
+          20
+        ],
+        "amplitude_coefficients": [
+          "-5/4",
+          "-5/8"
+        ]
+      },
+      {
+        "R": 6,
+        "n": [
+          1,
+          2
+        ],
+        "norm_error": 2.9976021664879227e-15,
+        "overlap_error": 5.343937099398316e-17,
+        "dressed_error": 1.0000409788463172e-16,
+        "reversed_bonds": [
+          40,
+          20
+        ],
+        "amplitude_coefficients": [
+          "-5/4",
+          "-5/8"
+        ]
+      },
+      {
+        "R": 6,
+        "n": [
+          2,
+          1
+        ],
+        "norm_error": 2.9976021664879227e-15,
+        "overlap_error": 1.150220543911598e-16,
+        "dressed_error": 9.707675201892085e-17,
+        "reversed_bonds": [
+          40,
+          20
+        ],
+        "amplitude_coefficients": [
+          "-5/4",
+          "-5/8"
+        ]
+      },
+      {
+        "R": 8,
+        "n": [
+          1,
+          0
+        ],
+        "norm_error": 1.2656542480726785e-14,
+        "overlap_error": 4.440892098500626e-16,
+        "dressed_error": 1.1102230246251565e-16,
+        "reversed_bonds": [
+          40,
+          20
+        ],
+        "amplitude_coefficients": [
+          "-5/4",
+          "-5/8"
+        ]
+      },
+      {
+        "R": 8,
+        "n": [
+          1,
+          2
+        ],
+        "norm_error": 1.27675647831893e-14,
+        "overlap_error": 2.7755575615628914e-17,
+        "dressed_error": 5.551115123125783e-17,
+        "reversed_bonds": [
+          40,
+          20
+        ],
+        "amplitude_coefficients": [
+          "-5/4",
+          "-5/8"
+        ]
+      },
+      {
+        "R": 8,
+        "n": [
+          2,
+          1
+        ],
+        "norm_error": 1.354472090042691e-14,
+        "overlap_error": 2.7755575615628914e-17,
+        "dressed_error": 1.3877787807814457e-16,
+        "reversed_bonds": [
+          40,
+          20
+        ],
+        "amplitude_coefficients": [
+          "-5/4",
+          "-5/8"
+        ]
+      },
+      {
+        "R": 12,
+        "n": [
+          1,
+          0
+        ],
+        "norm_error": 9.43689570931383e-14,
+        "overlap_error": 8.604228440844963e-16,
+        "dressed_error": 1.6653345369377348e-16,
+        "reversed_bonds": [
+          40,
+          20
+        ],
+        "amplitude_coefficients": [
+          "-5/4",
+          "-5/8"
+        ]
+      },
+      {
+        "R": 12,
+        "n": [
+          1,
+          2
+        ],
+        "norm_error": 9.43689570931383e-14,
+        "overlap_error": 6.661338147750939e-16,
+        "dressed_error": 1.942890293094024e-16,
+        "reversed_bonds": [
+          40,
+          20
+        ],
+        "amplitude_coefficients": [
+          "-5/4",
+          "-5/8"
+        ]
+      },
+      {
+        "R": 12,
+        "n": [
+          2,
+          1
+        ],
+        "norm_error": 9.414691248821327e-14,
+        "overlap_error": 6.38378239159465e-16,
+        "dressed_error": 8.049116928532385e-16,
+        "reversed_bonds": [
+          40,
+          20
+        ],
+        "amplitude_coefficients": [
+          "-5/4",
+          "-5/8"
+        ]
+      }
+    ],
+    "max_error": 9.43689570931383e-14
+  }
+}

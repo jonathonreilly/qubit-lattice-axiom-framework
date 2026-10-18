@@ -53,3 +53,9 @@
   - C4/C4b: closure with the walker forces α = K2/4.
 
   All were reviewed and pass the invariants check. Also done and checked: B25 (index lemma; 0 good pairs realised), B11 and B23. Running: the B25 check and C7 (emergent corner fermions via a Kitaev-type route). Next: a phase-2 coherence pass on the scale-ladder note, then the final summary before 23:26Z.
+- **17:15Z.** The C7 check is done: 35 PASS and 1 FAIL, the FAIL against an overstated spectral-test sentence. The corrections are applied to the C7 FINDINGS.
+  - The C6 registration note §5.4 now gives the chiral-term phase of every face type, with a new runner check (PASS=37; full 47). Synced to PR #9718.
+  - B26 (shift-letter classification; 0 of about 73k words pass) is saved; its check is running.
+  - The scale-ladder note's phase-2 summary and Open list now include C7 and B26 (unchecked). Synced to PR #9702, and both PR bodies are updated.
+  - New follow-ups in GOAL.md: C8 (letters beyond phased permutations) and C9 (structure functions versus the arc lemma), both running.
+  - The C7 checker left a stray empty file `/q.py` that it could not delete. It was not deleted here; this is reported to the owner.

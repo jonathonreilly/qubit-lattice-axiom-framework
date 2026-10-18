@@ -63,3 +63,8 @@ Phase 2 attacks the open items that decide whether the information-minimal targe
 - **C6 (stretch). Rung 0 → 1.** What map takes the formation rung to the corner model?
 
 The contract is unchanged.
+
+### Phase 2 follow-ups (added 17:15Z)
+
+- **C8. Letters outside the phased-permutation class.** B26 shows that S^a and A0·S^a are the only O-covariant phased-permutation letters. Do momentum-shifting letters (translation-covariant only up to a character, i.e. a doubled cell) or antiunitary letters give new velocity sources or new tastes at ±k*? Can any of them make a step whose node quasi-energy is reached only at isotropic cones of one speed?
+- **C9. Field-dependent structure functions and the arc lemma.** C3's arc lemma covers field-independent structure constants. Does a lattice relabelling algebra with field-dependent structure functions evade it? First test linearisation around the flat background: is the zeroth-order part a constant-structure algebra to which the lemma applies? Then test the first-order corrections.

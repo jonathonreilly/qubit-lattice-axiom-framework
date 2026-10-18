@@ -392,3 +392,6 @@ Native extended-patch block: exact D2=-(Tx-Ty)^2/8, noncommuting lower bound and
 
 
 Native assisted-hop block complete: canonical nearest x Hji/J=-lambda I+lambda³(I/8-Eedge/4), y counterpartZiZj/8-YY/4 derived with full folded normalization. Exact all-background symbolic and independent ordered-word checks PASS. Prepared neutral vertex weight≥J²lambda6m²/16 asymptotically, matched dressing required. Relaxed conditioned-loop variance separately suppressed; no unconditioned-source or emission-rate inference. Source-bound replay0.206757sPASS, finalcheckPASS. Root next derives actual particle-relative extended flat-environment correlations from kinetic Dirichlet bound, beyond a trial-radius construction; independent check active.
+
+
+Actual extended environment theorem complete: particle-relative S_d≤2F+2|d|1²delta; individualbadprobabilityvanishesq<3/4, jointflatpatchprobability1-o(1)forq<3/8. Dressedactualclustertransfer norm1 avoidsvolumeloss. Symmetrizedactualvacuum badprob≥.1-Olambda withoutinternalgap/clustering. Independent/finalchecksPASS, sourceboundreplay.150360sPASS. Mainrefreshedunchanged584755767deb8dfb670f07211d8446873fd0999b; PR9783 bodyread at762f814c40ebed337857c5729a1f7186ee999ee1 reports separatehierarchyobstacles, noresultsimported. Nextroot investigates symmetry-sector softmultiplicity ofextendedfeature, notassuming a scalaroscillator.

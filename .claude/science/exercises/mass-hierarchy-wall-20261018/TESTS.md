@@ -23,3 +23,21 @@
 - **Control.** 0/300 random spectra pass.
 - **Character labels** (secondary arm) fail ×3, and random spectra fit as well.
 - **Reading.** For P and S labels, isotropy and CKM are in tension: the residual that protects isotropy forces a permutation CKM.
+
+**T-LANDAU. Vacuum-direction test** (pre-registered 2026-10-18T22:49Z, before any run; the kill round's top route; Jon: "run the vacuum-direction test").
+- **Model.** GEN-2's rod / axis-label generations (campaign/GEN2 on branch claude/chirality-grid-exercise-20261014), coupled to an Eg order parameter Φ.
+- **Task.** Compute the Eg Landau coefficients from the model itself, not chosen: the cubic b₃, the quartic, and the sixth-order c₆. Use the one-loop fermion determinant (integrating out the generation fermions) and/or mean field, over the admissible coupling range. Then decide whether the minimum is a generic D2h direction. The criterion: c₆ > 0 and |b₃| < 4c₆ρ³ (K/REPORT.md, k1).
+- **Readings.**
+  - **LANDAU-D2H:** some admissible coupling gives a D2h minimum. State the range, and whether it is generic or tuned.
+  - **LANDAU-TETRAGONAL:** every admissible coupling gives a tetragonal or trigonal minimum. The two-level ceiling then returns without the symmetric-vacuum premise.
+  - **OPEN:** otherwise.
+- **Also report:**
+  - the Lorentz-violation cost of the order, in units of the order parameter;
+  - the three mass levels that result, compared with the data and with a random control.
+
+**First-principles derivation (FP/derivations/generations-from-lattice-symmetry-2026-10-18.md; same family; unrefereed).**
+- **Generations.** Three generations are available only as the number of axes. Nothing forces the count.
+- **Mass ratios.** No symmetry fixes any mass ratio (proved). The observed CKM leaves the shared residual nothing to act on (proved). All 13 charged-sector numbers are unavoidable inputs. Mass hierarchy: BLOCKED at the values wall.
+- **Conditional prediction: TM1 lepton mixing.** It needs F2 (star or T1 generations) and F3 (exact residuals per sector), with a bond-centred C₂[110]∘T(e₃) half-turn for the neutrinos. It is the only survivor of the lattice's residual menu.
+  - Prediction: sin²θ₁₂ = 0.3182 ± 0.0002. JUNO's first result, verified, is 0.3092 ± 0.0087, about 1.0σ away (arXiv:2511.14593).
+  - TM1 as a pattern is known in the literature. What is new is its lattice realisation, and that it is the only survivor.

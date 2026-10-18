@@ -74,3 +74,6 @@ PR9745verifiedOPEN8119c372b385eeff2fdb01bbc9d7bfb6a06a7cbc; attachmentcap100reco
 
 
 Finite-range arm: upstream_support; target higher native kinetic corrections in long-arm endpoint strip; supports restricted compressed-arm control, not full sector pole.
+
+
+Conserved scalar fluctuation: upstream_support; derives collective neutral energy fluctuation and specifiedQ overlap from existingH. State/detector/cosmological bridge remains open; no addedinteraction.

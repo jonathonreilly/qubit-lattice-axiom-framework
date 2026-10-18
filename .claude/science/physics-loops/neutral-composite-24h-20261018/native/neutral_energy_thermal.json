@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "beta": 0.02,
+      "C_mean": 0.0013511263041516147,
+      "mean_over_beta2": 3.3778157603790366,
+      "covariance": -0.13502532053584382,
+      "coupling_over_beta": -0.8213365802361937,
+      "predicted_mean_coefficient": 3.3800000000000003,
+      "predicted_coupling_coefficient": -0.8213851761846902
+    },
+    {
+      "beta": 0.01,
+      "C_mean": 0.00033794536600758457,
+      "mean_over_beta2": 3.3794536600758454,
+      "covariance": -0.06757814827077106,
+      "coupling_over_beta": -0.8213730365809638,
+      "predicted_mean_coefficient": 3.3800000000000003,
+      "predicted_coupling_coefficient": -0.8213851761846902
+    },
+    {
+      "beta": 0.005,
+      "C_mean": 8.449658493780987e-05,
+      "mean_over_beta2": 3.379863397512395,
+      "covariance": -0.033797268008494225,
+      "coupling_over_beta": -0.8213821418707068,
+      "predicted_mean_coefficient": 3.3800000000000003,
+      "predicted_coupling_coefficient": -0.8213851761846902
+    }
+  ],
+  "scope": "Six physical sites, open2x1x3, finite Gibbs Taylor control; no thermodynamic remainder or state derivation"
+}

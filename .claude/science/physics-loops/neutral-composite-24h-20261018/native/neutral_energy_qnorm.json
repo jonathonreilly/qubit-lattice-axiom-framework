@@ -1,0 +1,446 @@
+{
+  "coefficients": [
+    {
+      "twice_displacement": [
+        -2,
+        -2,
+        0
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        -2,
+        -1,
+        -1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        -2,
+        -1,
+        1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        -2,
+        0,
+        -2
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        -2,
+        0,
+        0
+      ],
+      "coefficient": 256
+    },
+    {
+      "twice_displacement": [
+        -2,
+        0,
+        2
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        -2,
+        1,
+        -1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        -2,
+        1,
+        1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        -2,
+        2,
+        0
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        -1,
+        -2,
+        -1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        -1,
+        -2,
+        1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        -1,
+        -1,
+        -2
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        -1,
+        -1,
+        0
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        -1,
+        -1,
+        2
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        -1,
+        0,
+        -1
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        -1,
+        0,
+        1
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        -1,
+        1,
+        -2
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        -1,
+        1,
+        0
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        -1,
+        1,
+        2
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        -1,
+        2,
+        -1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        -1,
+        2,
+        1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        0,
+        -2,
+        -2
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        0,
+        -2,
+        0
+      ],
+      "coefficient": 256
+    },
+    {
+      "twice_displacement": [
+        0,
+        -2,
+        2
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        0,
+        -1,
+        -1
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        0,
+        -1,
+        1
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        0,
+        0,
+        -2
+      ],
+      "coefficient": 256
+    },
+    {
+      "twice_displacement": [
+        0,
+        0,
+        0
+      ],
+      "coefficient": 1536
+    },
+    {
+      "twice_displacement": [
+        0,
+        0,
+        2
+      ],
+      "coefficient": 256
+    },
+    {
+      "twice_displacement": [
+        0,
+        1,
+        -1
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        0,
+        1,
+        1
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        0,
+        2,
+        -2
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        0,
+        2,
+        0
+      ],
+      "coefficient": 256
+    },
+    {
+      "twice_displacement": [
+        0,
+        2,
+        2
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        1,
+        -2,
+        -1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        1,
+        -2,
+        1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        1,
+        -1,
+        -2
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        1,
+        -1,
+        0
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        1,
+        -1,
+        2
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        1,
+        0,
+        -1
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        1,
+        0,
+        1
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        1,
+        1,
+        -2
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        1,
+        1,
+        0
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        1,
+        1,
+        2
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        1,
+        2,
+        -1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        1,
+        2,
+        1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        2,
+        -2,
+        0
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        2,
+        -1,
+        -1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        2,
+        -1,
+        1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        2,
+        0,
+        -2
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        2,
+        0,
+        0
+      ],
+      "coefficient": 256
+    },
+    {
+      "twice_displacement": [
+        2,
+        0,
+        2
+      ],
+      "coefficient": 64
+    },
+    {
+      "twice_displacement": [
+        2,
+        1,
+        -1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        2,
+        1,
+        1
+      ],
+      "coefficient": 32
+    },
+    {
+      "twice_displacement": [
+        2,
+        2,
+        0
+      ],
+      "coefficient": 64
+    }
+  ],
+  "at_zero": 5376,
+  "scope": "Exact Pauli contraction polynomial at isotropic J=1, multiplied by J^6 generally"
+}

@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "moments": [
+    {
+      "L": 5,
+      "J": [
+        1,
+        1,
+        1
+      ],
+      "k": [
+        1,
+        0,
+        0
+      ],
+      "m0": 3.000000000000002,
+      "m2": 12.222912360003482,
+      "predicted_m2": 12.222912360003363,
+      "distinct_current_strings": 1000,
+      "Qq_overlap": -27.92569587999901,
+      "predicted_overlap": -27.92569587999886,
+      "Qq_norm": 4295.975155040022
+    },
+    {
+      "L": 5,
+      "J": [
+        0.7,
+        1.2,
+        1.5
+      ],
+      "k": [
+        1,
+        2,
+        1
+      ],
+      "m0": 4.1799999999999775,
+      "m2": 106.883340219225,
+      "predicted_m2": 106.88334021922591,
+      "distinct_current_strings": 1250,
+      "Qq_overlap": -13.075564540855103,
+      "predicted_overlap": -13.075564540855112,
+      "Qq_norm": 3496.83313426631
+    },
+    {
+      "L": 6,
+      "J": [
+        1,
+        1,
+        1
+      ],
+      "k": [
+        1,
+        1,
+        0
+      ],
+      "m0": 3.000000000000012,
+      "m2": 16.57437415779608,
+      "predicted_m2": 16.57437415779592,
+      "distinct_current_strings": 2160,
+      "Qq_overlap": -26.4752086140676,
+      "predicted_overlap": -26.475208614067924,
+      "Qq_norm": 3929.10751010584
+    }
+  ],
+  "Q_terms": 4875,
+  "Q_variance_per_site": 5376.0,
+  "energy_projection": -32.0,
+  "conserved_weight_per_site": 3072.0,
+  "conserved_fraction": 0.5714285714285714,
+  "C_H2_per_site": 2.0,
+  "scope": "Exact Pauli traces in supplied infinite-temperature state; no retarded susceptibility, ground excitation or empirical identification"
+}

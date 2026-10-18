@@ -47,3 +47,6 @@ Fixed-order actual local remainder existence is now proved, with nonexplicit ord
 Finite-range arm derives polynomial/affine structure from fixed-order local coefficients. Supplied background, symmetry sector and coefficient gauge remain; chosen cubic numerical control is explicitly not a derived native coefficient.
 
 Direct local plaquette argument now establishes leading tension in the actual local normal-form construction, independently checked and narrowly rereviewed PASS. This closes the leading-coefficient gauge transfer condition only; higher matrices, sources and excluded channels remain open.
+
+
+Suppliedbeta0 orfiniteGibbsstate isessential. Q isderiveddiagnostic, notaddedHinteraction orphysicaldetector. Conservation/spectralprojection isknownpriorartMazur1969; modelcoefficients computedhere. No empiricalinputs.

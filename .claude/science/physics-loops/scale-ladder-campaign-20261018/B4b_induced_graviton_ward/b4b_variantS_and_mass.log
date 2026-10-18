@@ -1,1 +1,23 @@
 == MR: mass robustness of the D-vertex symbol (N=12)
+   m=0.5: Ward ratio 0.228; E/T2 1.0579; TT c^2 [110] 1.03594, 1.04233; [111] 1.05419, 1.05419
+PASS MR m=0.5 leading-symbol Ward violation O(1) (>1e-2)  [0.228]
+PASS MR m=0.5 E/T2 split nonzero (>1e-3)  [1.0579]
+PASS MR m=0.5 raw-kernel [110] TT-pencil split nonzero (>1e-5) and |c^2-1| nonzero  [split 6.39e-03]
+   m=1.0: Ward ratio 0.215; E/T2 1.0258; TT c^2 [110] 1.02352, 1.02711; [111] 1.03472, 1.03472
+PASS MR m=1.0 leading-symbol Ward violation O(1) (>1e-2)  [0.215]
+PASS MR m=1.0 E/T2 split nonzero (>1e-3)  [1.0258]
+PASS MR m=1.0 raw-kernel [110] TT-pencil split nonzero (>1e-5) and |c^2-1| nonzero  [split 3.58e-03]
+== S: sin(Pbar/2) vertex on the runners' grids (m=0.7)
+   N=6: window dependence S 2.11e+00, D 2.25e-15;  Ward residual/TT signal: S 0.412, D 0.239
+PASS S1 N=6 sin(Pbar/2)-vertex kernel changes with BZ window choice (>1e-3 relative)  [2.11e+00]
+PASS S2 N=6 sin(Pbar)-vertex control is window independent (<1e-10)  [2.2e-15]
+PASS S3 N=6 sin(Pbar/2)-vertex lattice Ward residual is O(1) of the TT signal (>0.05)  [0.412]
+   N=8: window dependence S 2.59e+00, D 7.58e-15;  Ward residual/TT signal: S 0.301, D 0.179
+PASS S1 N=8 sin(Pbar/2)-vertex kernel changes with BZ window choice (>1e-3 relative)  [2.59e+00]
+PASS S2 N=8 sin(Pbar)-vertex control is window independent (<1e-10)  [7.6e-15]
+PASS S3 N=8 sin(Pbar/2)-vertex lattice Ward residual is O(1) of the TT signal (>0.05)  [0.301]
+TOTAL: PASS=12 FAIL=0
+
+real	5m34.080s
+user	2m11.817s
+sys	0m17.613s

@@ -212,5 +212,7 @@ Kr = 0.3j*(real('link', 1.0) @ np.kron(np.eye(L**3), Hon) - np.kron(np.eye(L**3)
 print(" i[H_link, H_on] commutes with PSG rotations (real space):", all(np.allclose(Mg @ Kr, Kr @ Mg) for Mg in Mrot), np.abs(Kr).max())
 out2 = []
 for th in (0.7, 1.3):
-    out2 += iso_doublet_velocity(lambda k: expm(-1j*th*(Hs(k) + 0.3*Yodd)) @ rand_sym_onsite_unitary())
+    U0 = rand_sym_onsite_unitary()
+    out2 += iso_doublet_velocity(lambda k: expm(-1j*th*Hs(k)) @ U0)
+    print("  spectrum of exp(-i th H(k)) k-dependent:", np.ptp(np.sort(np.linalg.eigvalsh(Hs(kst)))-np.sort(np.linalg.eigvalsh(Hs(kst+0.1)))) > 1e-3)
 print(f" k-dependent-spectrum factor exp(-i th H(k)): isolated doublet speeds {np.round(out2, 4)}")

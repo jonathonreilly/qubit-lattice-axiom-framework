@@ -1,0 +1,3 @@
+trial 0: odd translation broken True; span(k*,-k*) invariant (leak 1.3e-15); folded k* multiplicities [4, 4, 4, 4, 4, 4]
+trial 1: odd translation broken True; span(k*,-k*) invariant (leak 1.3e-15); folded k* multiplicities [4, 4, 4, 4, 4, 4]
+trial 2: odd translation broken True; span(k*,-k*) invariant (leak 1.3e-15); folded k* multiplicities [4, 4, 4, 4, 4, 4]

@@ -95,3 +95,12 @@ Static block: trace_class negative_route_pruning; source_of_blocker_text user_go
 
 
 Charged hierarchy trace_class upstream_support; reachability_to_target supports; target_blocker_text "derive collective modes and their coupling without adding interaction"; source_of_blocker_text user_goal; artifact_role theorem. Nativecharged gap/source derived, neutral scalar bridge remains open.
+
+## Odd rectangle block
+trace_class: upstream_support
+target_blocker_text: "derive the scalar mode and its coupling without adding a new interaction"
+source_of_blocker_text: user_goal
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: restore native joining bonds and derive embedded bulk propagation
+Native odd-height plane multiplicity -> row/column hierarchy -> original C matrix element and actual periodic-rectangle ground selection. Open-array maximal-center control removes transverse wrap only. Physical scalar, embedding and universal coupling remain open.

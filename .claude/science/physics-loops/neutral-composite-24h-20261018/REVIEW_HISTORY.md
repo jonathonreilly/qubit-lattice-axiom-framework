@@ -86,3 +86,10 @@ Static block: independent plane-character and Gaussian-filter checks PASS; final
 
 
 Charged hierarchy: three independentchecks andfinalscopedreview PASS; source-boundreplay1.021572s. Exactnative asymptotic not96physicalqubitED. Noauditverdict.
+
+
+## 2026-10-18T10:22:09.307937+00:00 odd-height neutral response checkpoint
+PR9760 verifiedOPEN7045f4264973c8535700dcf678dae5add81bb44b; attachment cap100 persists. Root odd-height symmetry representation has a neutral multiplicity qubit, unlike even-height character band. Square mode is nematic and original even C dark; 4x6x5 rectangle derives original C amplitude189lambda7/13718 and gap3Jzlambda6/19 within maximal center. Independent algebra/source/coefficient checks PASS; global-ground center selection and open transverse extension still under focused review. Source-bound column-model replay4.074735sPASS, not120-spin ED. Native joining twooddhalves at existingJz restores even-height neutral intraband darkness; independent joining checkPASS, packaging next. No observation calibration/test or cosmological bridge. All root numericaljobs complete; matching lock expires10:52:23Z. Fixed deadline unchanged.
+
+
+Odd rectangle final affected-source review PASS, native/REVIEW_ODD_RECTANGLE.md. Independent source check resolved lambda8 globalcenter comparison; open-path coefficients checked separately and canonical scope kept maximalcenter. Runner source-binding corrected to three literal proof paths, replay4.267194sPASS. No audit/landing.

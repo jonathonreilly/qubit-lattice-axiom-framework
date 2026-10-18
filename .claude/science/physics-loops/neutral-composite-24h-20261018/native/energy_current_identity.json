@@ -1,0 +1,26 @@
+{
+  "scope": "Exact local current identity, integer compact-support profile controls",
+  "rows": [
+    {
+      "seed": 11,
+      "profile_sites": 27,
+      "bond_words": 94,
+      "current_words": 404,
+      "twice_energy_current_norm_squared": 9856
+    },
+    {
+      "seed": 42,
+      "profile_sites": 27,
+      "bond_words": 100,
+      "current_words": 466,
+      "twice_energy_current_norm_squared": 11472
+    },
+    {
+      "seed": 105,
+      "profile_sites": 27,
+      "bond_words": 90,
+      "current_words": 438,
+      "twice_energy_current_norm_squared": 9872
+    }
+  ]
+}

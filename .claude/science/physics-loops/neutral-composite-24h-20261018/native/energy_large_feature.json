@@ -1,0 +1,53 @@
+{
+  "scope": "HS norm large energy features in supplied Hamiltonian; K=1; numerical Gaussian sums, exact local kernels; not propagating particle",
+  "rows": [
+    {
+      "R": 1.0,
+      "energy_norm_squared": 14.860684516404739,
+      "residual_squared": 3.541765255901791,
+      "fourth_moment": 129.97152392835793,
+      "R_squared_residual": 3.541765255901791,
+      "R_squared_fourth_moment": 129.97152392835793
+    },
+    {
+      "R": 2.0,
+      "energy_norm_squared": 129.59145666102495,
+      "residual_squared": 0.9693909949843917,
+      "fourth_moment": 26.912114853422484,
+      "R_squared_residual": 3.877563979937567,
+      "R_squared_fourth_moment": 107.64845941368993
+    },
+    {
+      "R": 4.0,
+      "energy_norm_squared": 1060.8313986998392,
+      "residual_squared": 0.24805700791346705,
+      "fourth_moment": 6.197596762453899,
+      "R_squared_residual": 3.9689121266154728,
+      "R_squared_fourth_moment": 99.16154819926238
+    },
+    {
+      "R": 8.0,
+      "energy_norm_squared": 8536.279403623352,
+      "residual_squared": 0.0623780884781216,
+      "fourth_moment": 1.5126079173892983,
+      "R_squared_residual": 3.9921976625997826,
+      "R_squared_fourth_moment": 96.8069067129151
+    },
+    {
+      "R": 16.0,
+      "energy_norm_squared": 68390.22076523892,
+      "residual_squared": 0.015617373088390528,
+      "fourth_moment": 0.37579208746689596,
+      "R_squared_residual": 3.998047510627975,
+      "R_squared_fourth_moment": 96.20277439152537
+    },
+    {
+      "R": 32.0,
+      "energy_norm_squared": 547322.103620649,
+      "residual_squared": 0.003905773201645779,
+      "fourth_moment": 0.09379956964943943,
+      "R_squared_residual": 3.9995117584852777,
+      "R_squared_fourth_moment": 96.05075932102598
+    }
+  ]
+}

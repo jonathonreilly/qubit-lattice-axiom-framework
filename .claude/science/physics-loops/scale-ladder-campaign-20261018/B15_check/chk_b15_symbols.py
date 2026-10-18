@@ -214,7 +214,6 @@ def s3():
     xkeys = sorted(G)
     print("   X-exponents present in B (general wa, wb):", xkeys)
     coll = {tuple((2 if i == j else 0) * s for i in range(3)) for j in range(3) for s in (1, -1)}
-    diag = {tuple(sorted([])) for _ in []}
     diag = {k for k in G if sum(abs(x) for x in k) == 2 and k not in coll}
     # coefficients of the non-nn X monomials as polynomials in wa, wb (collect all matrix entries)
     def coefpolys(keyset):
@@ -228,14 +227,18 @@ def s3():
     pc = coefpolys(coll & set(G)); pd = coefpolys(diag)
     print("   collinear (X_j^{+-2}) coefficients / v^2:", sorted(map(str, pc))[:6])
     print("   diagonal (X_jX_k^{+-1}) coefficients / v^2 (sample):", sorted(map(str, pd))[:6])
-    ok_coll = coll <= set(G) and all(sp.simplify(pp.subs({wa: 0})) == 0 or sp.simplify(pp.subs({wb: 0})) == 0 for pp in pc)
     ok_coll = coll <= set(G) and all(sp.expand(pp).has(wa) and sp.expand(pp).has(wb) and sp.expand(pp.subs(wa, wb)) != 0 for pp in pc)
-    ok_diag = len(diag) == 12 and all(sp.expand(pp.subs(wa, wb)) == 0 for pp in pd) and all(sp.expand(pp.subs(wa, -wb)) == 0 for pp in pd)
+    # PRE-RUN expectation (first run, chk_b15_symbols_firstrun.log) was "all 12 diagonal X_jX_k^(+-1) present with
+    # coefficient ~ wa^2 - wb^2"; WRONG in detail: the 6 same-sign pairs +-(e_j+e_k) (forward-forward paths, weight wa*wb on
+    # both orderings) cancel through {sigma^j,sigma^k} = 0 for EVERY timing; only the 6 mixed pairs +-(e_j-e_k)
+    # (forward-backward paths, weights wb^2 and wa^2) survive, with coefficient ~ wa^2 - wb^2.
+    mixed = {k for k in diag if sorted(k) == [-1, 0, 1]}
+    ok_diag = len(diag) == 6 and diag == mixed and all(sp.expand(pp.subs(wa, wb)) == 0 for pp in pd) and all(sp.expand(pp.subs(wa, -wb)) == 0 for pp in pd)
     others = set(G) - units - coll - diag
     check("S3a", ok_coll and ok_diag and not others,
-          f"exact symbol: X-monomials of B are the 6 nn units, the 6 collinear X_j^(+-2) (coefficient prop. to wa*wb, "
-          f"nonzero at wa=wb) and the 12 diagonal X_j X_k^(+-1) (coefficient prop. to wa^2-wb^2: cancel iff wa = +-wb); "
-          f"nothing else ({len(others)} other)")
+          f"exact symbol, general (wa,wb): X-monomials of B are the 6 nn units, the 6 collinear X_j^(+-2) (coefficient "
+          f"+-wa*wb/4 v^2, spin-independent) and only the 6 mixed diagonal X_j X_k^(-1) (coefficient ~ (wa^2-wb^2)/4 v^2); the "
+          f"same-sign diagonal X_jX_k are absent for every timing; nothing else ({len(others)} other)")
     # explicit range-2 monomial at endpoint mean, position space: coefficient of |x><x+2e_1| with lapse pair (N_x M_{x+2e})
     half = {wa: sp.Rational(1, 2), wb: sp.Rational(1, 2)}
     # monomial X_1^0 Y_1^2 ... : N_x M_{x+2e} term in <x|B|x+2e>: psi momentum enters as P^2 at the right, lapse M at x+2e
@@ -251,7 +254,7 @@ def s3():
     tgt2 = {e[:6]: M.subs(half) for e, M in B.items() if e[6:9] == (-2, 0, 0)}
     # <x|B|x-2e>: N_x M_{x-2e}: X^0 Y^(-2)
     c3 = tgt2.get((0, 0, 0, -2, 0, 0))
-    okm = okm and c3 == v**2 / 16 * E2
+    okm = okm and c3 == -v**2 / 16 * E2   # from +(v^2/16) f_{x-2e}|x><x-2e|, f_{x-2e} = N_{x-2e}M_x - N_x M_{x-2e}
     check("S3b", okm, "endpoint mean: non-nn part of <x|[h_N,h_M]|x+2e> is -(v^2/16)(N_x M_{x+2e} - N_{x+2e} M_x) * 1_2 and "
           "<x+2e|..|x> the negative (anti-Hermitian), i.e. -(v^2/16) f_x (|x><x+2e| - h.c.), spin-independent")
     # no-go for ANY translation-covariant linear G_f: needs X-monomials only +-units, coef(X^-1) = -Z coef(X)

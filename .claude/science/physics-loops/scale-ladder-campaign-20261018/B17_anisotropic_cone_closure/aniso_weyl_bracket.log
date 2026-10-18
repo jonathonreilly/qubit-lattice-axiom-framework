@@ -1,0 +1,7 @@
+PASS isotropic: [h_N,h_M] = -v^2 L_w (Kosmann), reproduces B15 C2
+anisotropic derivative coefficients (comp 0, d_j f1): [v_t**2*(M(x, y, z)*Derivative(N(x, y, z), x) - N(x, y, z)*Derivative(M(x, y, z), x)), v_t**2*(M(x, y, z)*Derivative(N(x, y, z), y) - N(x, y, z)*Derivative(M(x, y, z), y)), v_a**2*(M(x, y, z)*Derivative(N(x, y, z), z) - N(x, y, z)*Derivative(M(x, y, z), z))]
+PASS anisotropic: derivative part is -v_j^2 w_j d_j (direction-dependent shift)
+solutions for kappa, v_a: [{kappa: v_t**2, v_a: v_t}]
+PASS closure against an isotropic relabelling forces v_a = v_t (=sqrt kappa)
+PASS the corner step's doubler cone (0.2467, 0.5838) is not the +-k* cone sqrt2/3: closure fails for the eight-node step
+TOTAL: PASS=4 FAIL=0

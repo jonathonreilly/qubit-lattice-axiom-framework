@@ -1,0 +1,14 @@
+PASS: S0 Fock space (Jordan-Wigner, 3 modes): [Q_A,Q_B] = Q_[A,B], [c, Q_B] = B c; with {.,.} <-> -i[.,.] this gives {psibar A psi, psibar B psi} = -i psibar[A,B]psi and {psi, psibar B psi} = -i B psi, so G_f[u] = psibar (i L_u) psi. (Same identity holds for commuting fields: statistics plays no role.)
+PASS: S1 continuum symmetric Weyl operator (plane-wave symbols, exact polynomial identity): [h_N,h_M] = -v^2 L_w, L_w = w.grad + div w/2 + (i/4)(curl w).sigma
+PASS: S1a rotation invariance [L_xi, sigma.grad] = 0 for xi = omega x x fixes b = [{b: I/4}] (spin generator sigma/2 with L = x x (-i grad); Kosmann value)
+PASS: S1b control: with anti-Hermitian Clifford generators gamma^j = i sigma^j (negative signature, h_N non-Hermitian) the bracket is +v^2 L_w: the sign of the coefficient IS the Clifford signature, and Hermitian generators square to +1
+PASS: S2 xi~/a -> -w at leading order; closure requires v^2 = -K*s/(4*alpha) (identical to B14's c = -sK/(4alpha)); v real and K, alpha > 0 => s = -1
+   X-exponents present in B (general wa, wb): [(-2, 0, 0), (-1, 0, 0), (-1, 0, 1), (-1, 1, 0), (0, -2, 0), (0, -1, 0), (0, -1, 1), (0, 0, -2), (0, 0, -1), (0, 0, 1), (0, 0, 2), (0, 1, -1), (0, 1, 0), (0, 2, 0), (1, -1, 0), (1, 0, -1), (1, 0, 0), (2, 0, 0)]
+   collinear (X_j^{+-2}) coefficients / v^2: ['-w_a*w_b/4', 'w_a*w_b/4']
+   diagonal (X_jX_k^{+-1}) coefficients / v^2 (sample): ['(w_a - w_b)*(w_a + w_b)/4', '-(w_a - w_b)*(w_a + w_b)/4', '-I*(w_a - w_b)*(w_a + w_b)/4', 'I*(w_a - w_b)*(w_a + w_b)/4']
+PASS: S3a exact symbol, general (wa,wb): X-monomials of B are the 6 nn units, the 6 collinear X_j^(+-2) (coefficient +-wa*wb/4 v^2, spin-independent) and only the 6 mixed diagonal X_j X_k^(-1) (coefficient ~ (wa^2-wb^2)/4 v^2); the same-sign diagonal X_jX_k are absent for every timing; nothing else (0 other)
+   <x|B|x+2e1> coefficient of N_x M_{x+2e1}: Matrix([[-v**2/16, 0], [0, -v**2/16]])  of N_{x+2e1} M_x: Matrix([[v**2/16, 0], [0, v**2/16]])
+PASS: S3b endpoint mean: non-nn part of <x|[h_N,h_M]|x+2e> is -(v^2/16)(N_x M_{x+2e} - N_{x+2e} M_x) * 1_2 and <x+2e|..|x> the negative (anti-Hermitian), i.e. -(v^2/16) f_x (|x><x+2e| - h.c.), spin-independent
+PASS: S3c endpoint mean, ANY-range translation-covariant G_f: the nn part satisfies the xi~ relation coef(X^-1) = -Z coef(X) exactly, but X-monomials [(-2, 0, 0), (0, -2, 0), (0, 0, -2), (0, 0, 2), (0, 2, 0), (2, 0, 0)] lie outside span_j (X_j - Y_j) g_j(XY,P): no translation-covariant linear G_f of any range (and no constant kernel shift, which lives only at K = 0) closes the bracket exactly
+PASS: S3d general timing wbar = wa N_x + wb N_(x+e): non-nn part vanishes only at [{w_a: 0, w_b: 0}]
+TOTAL: PASS=9 FAIL=0

@@ -1,1 +1,2 @@
 start (s4b endpoint w=3e6): defect 3.320e-06  sup||U-V2|| 0.549  min|det| 1.0000  W3 -1.000000
+pure-unitarity stage 0: cost 7.871e-13  defect 2.587e-06  sup||U-V2|| 0.553  min|det| 1.0000  W3 -1.000000 -1.000000

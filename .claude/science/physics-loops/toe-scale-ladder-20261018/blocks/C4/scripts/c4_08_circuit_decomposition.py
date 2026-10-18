@@ -65,6 +65,26 @@ for k, ((sx, lx), (sz, lz)) in enumerate(zip(xs, zs)):
     M = [[a, b], [c, d]]
     PX = (int(sx), {tuple(s): l for s, l in LX}); PZ = (int(sz), {tuple(s): l for s, l in LZ})
     check(f'solution {k+1}: symplectic, det 1, O-covariant with phases (full)', L.is_symplectic(M) and L.det(M) == L.ONE and L.signed_covariant(PX, PZ, h, h, L.SUBGROUPS['O']))
+    # transvection test: is M = 1 + v v^dag Lambda for a self-orthogonal v = (p, q)?  Then alpha is conjugation
+    # by prod_r exp(i pi/4 P_r) with P the Pauli string of v: a product of mutually commuting gates (finite depth).
+    N = [[L.padd(M[i][j], I2[i][j]) for j in range(2)] for i in range(2)]
+    def halve(poly):
+        if all(e[0] % 2 == 0 and e[1] % 2 == 0 and e[2] % 2 == 0 for e in poly):
+            return frozenset((e[0] // 2, e[1] // 2, e[2] // 2) for e in poly)
+        return None
+    p, q = halve(N[0][1]), halve(N[1][0])
+    if p is not None and q is not None:
+        V = [[L.pmulL(p, L.pbar(q)), L.pmulL(p, L.pbar(p))], [L.pmulL(q, L.pbar(q)), L.pmulL(q, L.pbar(p))]]
+        selfo = L.padd(L.pmulL(p, L.pbar(q)), L.pmulL(q, L.pbar(p))) == L.ZERO
+        okT = key(V) == key(N) and selfo
+        lab = {}
+        for e in p: lab[e] = lab.get(e, 0) | 1
+        for e in q: lab[e] = lab.get(e, 0) | 2
+        Pstr = sorted((e, {1: 'X', 2: 'Z', 3: 'Y'}[v]) for e, v in lab.items())
+        check(f'solution {k+1}: M = 1 + v v^dag Lambda with v self-orthogonal (transvection by the Pauli string '
+              f'{Pstr}), i.e. alpha = prod_r exp(+-i pi/4 P_r): commuting gates, finite depth', okT)
+        if okT:
+            continue
     w = reduce(M)
     if w is None:
         print(f'  solution {k+1}: no elementary word found within the beam search (inconclusive)')

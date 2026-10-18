@@ -7,12 +7,22 @@ dynamics clause is adopted.
 
 ## Result up front
 
-1. **Soldered actions freeze Clifford QCAs (exhaustive certificate).** Take one qubit per site of
-   Z^3 and a translation-invariant Clifford QCA α. Suppose the image of each single-site Pauli
-   lies in the 27-point cell {-1,0,1}^3 around that site, and α commutes with the proper cubic
-   group O acting by the **axis** or the **full** soldering action. Then α is the identity
-   automorphism, phases included. The same holds when the images are allowed the 125-point
-   ball {-2..2}^3: RADIUS2_RESULT.
+1. **Soldered actions freeze Clifford QCAs dynamically (exhaustive certificates).** Take one
+   qubit per site of Z^3 and a translation-invariant Clifford QCA α, covariant under the proper
+   cubic group O acting by the **axis** or the **full** soldering action.
+   - **Cell.** If the image of each single-site Pauli lies in the 27-point cell {-1,0,1}^3, then α
+     is the identity automorphism, phases included.
+   - **125-ball.** If the images may lie in {-2..2}^3, there are exactly 4 such QCAs, phases
+     included, for each of axis and full. They are the identity and 3 entangling involutions
+     (α^2 = id, period 2 with phases). Two of them are proved to be finite-depth circuits of
+     commuting covariant Pauli rotations, α = ∏_r exp(±iπ/4 P_r):
+     - P = X(±x) Y(±y) Z(±z), Chamon's octahedral stabilizer (`docs/ONE_QUBIT_..._2026-10-17`);
+     - P = the 12-site cuboctahedral string X on (0,±1,±1), Y on (±1,0,±1), Z on (±1,±1,0).
+
+     The structure of the third is not established. All four have constant trace, so nothing
+     propagates (Theorem 2).
+   - **Prediction checked.** I had predicted "identity only at radius 2". **That prediction
+     failed** (`logs/c4_06_radius2.txt` keeps the two FAIL lines). The dynamical freeze survives.
 2. **The unsoldered actions allow genuinely entangling, ballistically spreading QCAs
    (exhaustive certificate plus proof).** For the **trivial** action there are 528 such QCAs
    with phases (132 without phases); for the **sign** action there are 176. Every one has the
@@ -33,11 +43,15 @@ dynamics clause is adopted.
    A glider (an operator translating by r ≠ 0) needs τ = x^r + x^{-r}. That needs an orbit {±r},
    which O and T do not have. D4, D3 and D2 do have such orbits, and gliders appear there: along
    the fourfold axis (D4) and the body diagonal (D3), but only for the trivial and sign actions.
-4. **Answer to the C4 prediction.** For axis and full soldering the prediction holds, and more
-   strongly: on the cell (and on the 125-ball, see item 1) only the identity survives. Even the
-   on-site Cliffords and translations are excluded. For the unsoldered actions the prediction
-   **fails**: entangling covariant circuits exist and spread ballistically. They are still trivial
-   as QCAs (circuits, no shift), and none has a mobile localized excitation.
+4. **Answer to the C4 prediction.** For axis and full soldering the *dynamical* prediction holds
+   at ranges 1 and 2: nothing moves, no glider appears, and nothing spreads.
+   - Range 1: only the identity survives.
+   - Range 2: covariant entangling involutions appear. They are Pauli-rotation circuits built on
+     Chamon-type commuting strings, so the literal "on-site Clifford × translation only" is false
+     at range 2.
+   - Unsoldered actions (trivial, sign): here the prediction **fails** already at range 1.
+     Entangling covariant circuits exist and spread ballistically. They are still trivial as
+     QCAs (circuits, no shift), and none has a mobile localized excitation.
 
 ## Setup and premises (all supplied; named)
 
@@ -120,6 +134,26 @@ homomorphisms were run separately). Log: `logs/c4_02_classify_O_r1.txt`.
 
 *Claim type:* exhaustive finite certificate, exact over F_2, with phases. *Domain:* the radius-1
 cell, H = O, the five Clifford actions, one qubit per site.
+
+## Theorem 1b — radius 2, H = O, soldered actions (exhaustive certificate) — `logs/c4_06_radius2.txt`, `logs/c4_07_radius2_analysis.txt`, `logs/c4_08_circuit_decomposition.txt`
+
+On the 125-ball the covariance space has dim W = 25 for both axis and full. Z is determined by X,
+so 2^25 X-images are enumerated exhaustively and the conditions are checked over all 729 overlapping
+translates. The result is **4 unsigned / 4 signed QCAs for each action**:
+
+- [0] the identity;
+- [2] α = ∏_r exp(iπ/4 C_r), where C = X(±x) Y(±y) Z(±z) is the Chamon octahedron.
+  Its matrix is M = 1 + v v^†Λ with v = (s_x + s_y, s_y + s_z) and s_a = x_a + x_a^{-1}, checked
+  exactly.
+- [1] the same construction with the 12-site cuboctahedral string;
+- [3] a 73-site-image involution. It is not decomposed here.
+
+All four have τ = 0, M^2 = 1 and signed period 1 or 2. The four are *not* closed under
+composition within radius 2: the closure check FAILs in c4_07, so some products have larger range.
+Mechanism: any covariant Pauli string P whose translates all commute gives a covariant QCA
+∏_r exp(iπ/4 P_r) of range diam(P), provided the phases are consistent. On the 27-cell no such
+QCA has images inside the cell, because the images of 1 + v v^†Λ reach twice the radius of P.
+That is why radius 1 has only the identity.
 
 ## Theorem 2 — trace trichotomy, light cone and glider no-go (proved; any range)
 
@@ -236,21 +270,23 @@ is consistent with Theorem 2(d).
 ## Answers to the C4 questions
 
 (a) **On-site Clifford × shift vs entangling.** Every covariant α has det M = 1, so no shift. An
-    O-invariant shift t needs Rt = t for all R, so t = 0.
-    - axis and full: only the identity.
-    - trivial and sign: 6 on-site Cliffords (unsigned) and 126 entangling C1 E(g) C2.
-    - sign-f: 2 on-site and 14 entangling involutions.
+    O-invariant shift t needs Rt = t for all R, so t = 0. On the cell:
+    - axis and full: only the identity;
+    - trivial and sign: 6 on-site Cliffords (unsigned) and 126 entangling C1 E(g) C2;
+    - sign-f: 2 on-site and 14 entangling involutions, all of the form C1 E(g) C2.
 
-    All of them are finite-depth circuits, and they are covariant circuits. So each lies in the
-    trivial class of Clifford QCAs modulo circuits and shifts. No nontrivial (Haah/FHH-type)
-    element occurs.
+    Every one is a finite-depth Clifford circuit. For the trivial action each factor is itself
+    O-covariant. On the 125-ball under axis or full soldering we have the identity and two
+    commuting-Pauli-rotation circuits, each proved to be a circuit. The fourth solution is
+    undecided as a circuit, but it is an involution with constant trace. No nontrivial
+    (Haah/FHH-type) QCA element appears among the decided cases.
 
 (b) **Gliders and propagation.**
     - None under O or T, at any range, for any action (Theorem 2).
     - Ballistic, unbounded spreading occurs exactly for the 84 nonconstant-τ matrices of the
       trivial and sign actions. The front reaches n·vert(Newt τ). Numerically the front radius
       saturates the cell light cone in most cases. The support is sparse and fractal-like
-      (characteristic 2): DYNAMICS_NUMERICS.
+      (characteristic 2). See the numerics under Theorem 2.
     - Under the soldered actions nothing propagates at all on the cell (O, T, D4, D3).
 
 ## What is not covered (honest scope)
@@ -258,8 +294,9 @@ is consistent with Theorem 2(d).
 - **Non-Clifford QCAs** of any kind: general locality-preserving automorphisms, or the U(1)
   single-particle walks of the 10-16 note. This is the main gap. Freezing the Clifford class does
   not freeze general QCAs.
-- **Larger range.** Radius ≥ 2 is covered only for O with axis, full and sign-f
-  (RADIUS2_RESULT). Theorem 2 (no gliders under O/T, the trichotomy and the light cone) holds at
+- **Larger range.** Radius 2 is covered only for H = O with the axis, full and sign-f actions.
+  sign-f at radius 2 gives 1024 unsigned solutions, 2048 signed, all with constant trace. Radius
+  ≥ 3 is not classified. Theorem 2 (no gliders under O/T, the trichotomy and the light cone) holds at
   every range, but it does not classify.
 - More than one qubit per site, qudits, or block or staggered cells.
 - Subgroups C4, C3, C2 and the trivial group.
@@ -297,13 +334,19 @@ C4_GROUPS=T,D4,D3 python3 c4_03_subgroups.py   # PASS=63 FAIL=0 (~15 min, brute-
 C4_GROUPS=D2 C4_BRUTE_MAX=0 python3 c4_03_subgroups.py
 python3 c4_04_dynamics.py         # dynamics checks + numerics
 python3 c4_05_independent_O.py    # independent recount for O
-python3 c4_06_radius2.py          # radius-2 cell, O, axis/full/sign-f
+python3 c4_06_radius2.py          # radius-2 ball, O, axis/full/sign-f: PASS=5 FAIL=2 (2 FAILs = falsified prediction)
+python3 c4_07_radius2_analysis.py # structure of the radius-2 soldered solutions: PASS=4 FAIL=2 (closure FAILs)
+python3 c4_08_circuit_decomposition.py  # transvection (Pauli-rotation circuit) certificates: PASS=4 FAIL=0
 ```
+Logs: `logs/c4_0*_*.txt`; D2 has its own log, `logs/c4_03_subgroups_D2.txt` (PASS=15 FAIL=0).
+c4_04 reports PASS=21 FAIL=0; c4_05 reports PASS=7 FAIL=0. Runtimes: c4_06 and c4_07 take about
+13 min per action, c4_03 for D2 about 25 min.
 
 ## Load-bearing step for an independent check
 
-The certificate that **only the identity** is O-covariant under axis or full soldering on the cell
-(and the radius-2 extension). The best check is an independent implementation: it should rebuild
+Two certificates matter most. The first says **only the identity** is O-covariant under axis or
+full soldering on the cell. The second says there are **exactly 4** such QCAs on the 125-ball,
+all with constant trace. Together they carry the "soldered ⇒ frozen" conclusion. The best check is an independent implementation: it should rebuild
 the covariance conditions from the action with phases, or work directly in the Laurent ring, and
 it should not reuse `c4lib.py`. `c4_05` is a partial independent route written by the same agent.
 Theorem 2 is short and pen-checkable. Its step most worth re-checking is the claim that the

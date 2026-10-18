@@ -48,3 +48,11 @@
 - D2 (PASS=15): trivial/sign/sign-f/axis restrict to trivial action on D2 (4020 unsigned; 18 gliders along 3 axes);
   full: 2680 signed; with valid phases 382 periodic, 288 spreading, 0 gliders.
 - c4_07 (analysis of r2 soldered solutions) queued after 02/03 reruns.
+
+## progress 6 (~4h50) — wrap-up
+- c4_07: r2 soldered solutions = identity + 3 involutions (tau=0, signed period 2); closure-under-composition
+  prediction FAILed (products leave radius 2) — kept.
+- c4_08 PASS=4: two of them are transvections M = 1 + v v^dag Lambda: Chamon octahedron rotation
+  prod exp(i pi/4 C_r) and a 12-site cuboctahedral string rotation; 4th (73-site) undecomposed.
+- NOTE.md finalised. Reruns of c4_02 (41/0) and c4_03 T,D4,D3 (63/0) with final lib consistent.
+- c4_01 rerun with final lib (34/0). c4_04/c4_05 logs were produced before the dK=0 fast path was added (they use r1 only; fast path validated against brute-force counts).

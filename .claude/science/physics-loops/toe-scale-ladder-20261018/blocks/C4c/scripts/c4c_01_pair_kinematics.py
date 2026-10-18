@@ -78,14 +78,14 @@ for r in (1, 2):
         for rho in reps:
             c = canon([(0, 0, 0), rho])
             St = stab(c, G)
-            loc = [p for p in itertools.product(range(-2 * r, 2 * r + 2), repeat=3)]
+            a, b = c
+            loc = [p for p in itertools.product(range(-r, 2 * r + 1), repeat=3)
+                   if cheb(p, a) <= r and cheb(p, b) <= r]
             cand = set()
-            for p in loc:
-                for q in loc:
-                    if p < q:
-                        cc = canon([p, q])
-                        if near(cc, r) and related(cc, c, r):
-                            cand.add(cc)
+            for p, q in itertools.combinations(loc, 2):
+                cc = canon([p, q])
+                if near(cc, r):
+                    cand.add(cc)
             fixed = [cc for cc in cand if all(act(g, cc) == cc for g in St)]
             mov = [cc for cc in fixed if not np.array_equal(np.sum(cc, 0), np.sum(c, 0))]
             if mov:

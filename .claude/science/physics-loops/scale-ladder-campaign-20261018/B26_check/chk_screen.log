@@ -1,0 +1,61 @@
+sample: 40 records from 5 pickles
+  FERMI ('R', 'S2', 'Rt', 'Si', 'o') ('L331',) E=+3.1416 D+/D+ grid8: crossing at k/pi=[-0.8421  0.3351 -0.8421] min|theta-E|=2.4e-16 Im/|r|=2e-15
+  FERMI ('S2', 'Rt', 'S', 'o') ('L021',) E=-1.5708 D-/D- grid8: crossing at k/pi=[-0.6  0.4 -0.6] min|theta-E|=8.9e-16 Im/|r|=3e-15
+  FERMI ('S', 'Rt', 'R', 'S2', 'o') ('L321',) E=-1.5708 D-/D- grid8: crossing at k/pi=[-0.7111 -0.1053 -0.2996] min|theta-E|=2.2e-16 Im/|r|=2e-15
+  FERMI ('R', 'Rt', 'R', 'S2', 'o') ('H12',) E=+3.1416 D+/D+ grid8: crossing at k/pi=[-0.7373  0.3636 -0.1754] min|theta-E|=2.4e-16 Im/|r|=8e-16
+  FERMI ('S2', 'Rt', 'R', 'S', 'o') ('L130',) E=+3.1416 D+D-/D+D- grid16: crossing at k/pi=[-0.3812 -0.3721 -0.9757] min|theta-E|=4.4e-16 Im/|r|=5e-16
+  FERMI ('S2', 'Rt', 'S2', 'R', 'o') ('L130',) E=+3.1416 D+D-/D+D- grid16: crossing at k/pi=[-0.7871 -0.7871 -0.9626] min|theta-E|=4.4e-16 Im/|r|=7e-16
+  SURV  ('R', 'Rt', 'Si', 'R', 'o') ('L022',) E=+0.0000 D+D-/D+D-: B26 first bad cube m=4 aniso (smin 0.188823, smax 2.120064); own: m=4 aniso (smin 0.042849, smax 2.107519, tilt 1.1e-16)
+  SURV  ('Rt', 'S2', 'Rt', 'o') ('H02',) E=+3.1416 D+D-/D+D-: B26 first bad R_pi m=4 flat (smin 0.0, smax 1.333333); own: m=4 flat (smin 0.000000, smax 1.333333, tilt 3.2e-16)
+  FERMI ('S', 'Rt', 'S2i', 'o') ('H10*L012',) E=+0.0000 D+D-/D+D- grid8: crossing at k/pi=[-0.9397  0.739  -0.5571] min|theta-E|=3.1e-17 Im/|r|=1e-15
+  FERMI ('S2', 'R', 'Rt', 'o') ('H00*L021',) E=-1.5708 D-/D- grid8: crossing at k/pi=[ 0.1391 -0.7999 -0.5557] min|theta-E|=4.4e-16 Im/|r|=7e-16
+  FERMI ('S2', 'Rt', 'o') ('H31*L101',) E=-0.0000 D-/D- grid8: crossing at k/pi=[ 0.3414 -0.1075 -0.6245] min|theta-E|=2.8e-16 Im/|r|=2e-15
+  FERMI ('Rt', 'S2', 'Rt', 'o') ('H02*L003',) E=+1.5708 D-/D- grid8: crossing at k/pi=[-0.9274 -0.5274  0.0726] min|theta-E|=2.2e-16 Im/|r|=3e-15
+  FERMI ('S2', 'Rt', 'R', 'o') ('H03*L020',) E=+1.5708 D+D-/D+D- grid16: crossing at k/pi=[ 0.5861  0.017  -0.3946] min|theta-E|=2.2e-16 Im/|r|=1e-15
+  FERMI ('S2', 'Rt', 'S', 'o') ('H00*L332',) E=+0.0000 D+D-/D+D- grid16: own 10^3 grid: no sign change; 16^3 grid sign change: True
+  SURV  ('R', 'S2', 'Rt', 'o') ('H20*L200',) E=+3.1416 D+D-/D+D-: B26 first bad cube m=4 aniso (smin 0.141424, smax 2.375472); own: m=4 aniso (smin 0.235973, smax 2.382708, tilt 6.4e-16)
+  SURV  ('Rt', 'S2', 'Rt', 'o') ('H22*L200',) E=+3.1416 D+D-/D+D-: B26 first bad R_pi m=4 flat (smin 0.0, smax 1.333333); own: m=4 flat (smin 0.000000, smax 1.333333, tilt 2.1e-16)
+  FERMI ('S', 'Rt', 'S2i', 'Rt', 'o') ('H02*L323',) E=+1.5708 D-/D- grid8: crossing at k/pi=[ 0.3279  0.3279 -0.6127] min|theta-E|=0.0e+00 Im/|r|=2e-15
+  FERMI ('R', 'Rt', 'R', 'S', 'o') ('H03',) E=+1.5708 D-/D- grid8: crossing at k/pi=[-0.3568  0.3908 -0.2538] min|theta-E|=0.0e+00 Im/|r|=3e-15
+  FERMI ('R', 'Rt', 'S2', 'R', 'o') ('H10*L303',) E=+1.5708 D-/D- grid8: crossing at k/pi=[-0.2076  0.7924 -0.583 ] min|theta-E|=4.4e-16 Im/|r|=6e-16
+  FERMI ('S', 'R', 'Rt', 'R', 'o') ('H32*L121',) E=+1.5708 D-/D- grid8: crossing at k/pi=[-0.1983  0.6948 -0.1678] min|theta-E|=8.9e-16 Im/|r|=3e-15
+  FERMI ('S2', 'Rt', 'R', 'S', 'o') ('H31*L210',) E=-1.5708 D+D-/D+D- grid16: crossing at k/pi=[-0.9635 -0.3537 -0.3781] min|theta-E|=1.1e-15 Im/|r|=2e-15
+  FERMI ('R', 'S2', 'Rt', 'R', 'o') ('H10*L102',) E=+0.0000 D+D-/D+D- grid16: own 10^3 grid: no sign change; 16^3 grid sign change: True
+  SURV  ('R', 'S2', 'Rt', 'S', 'o') ('H20*L020',) E=+3.1416 D+D-/D+D-: B26 first bad (1,1,1/2)pi m=2 aniso (smin 0.280284, smax 1.549193); own: m=2 aniso (smin 0.281949, smax 1.549193, tilt 7.8e-16)
+  SURV  ('Rt', 'Si', 'Rt', 'S2i', 'o') ('H21*L312',) E=+1.5708 D+/D+: B26 first bad R_pi m=2 aniso (smin 0.008565, smax 0.46726); own: m=2 aniso (smin 0.000846, smax 0.441291, tilt 5.8e-16)
+  FERMI ('S2i', 'o', 'Rt', 'o') ('L202', 'H03') E=-1.5708 D+D-/D+D- grid8: crossing at k/pi=[ 0.2281 -0.1238  0.3632] min|theta-E|=2.2e-16 Im/|r|=1e-15
+  FERMI ('S', 'o', 'Rt', 'o') ('L121', 'L013') E=-0.0000 D+/D+ grid8: crossing at k/pi=[-0.4886 -0.2525  0.2753] min|theta-E|=9.1e-16 Im/|r|=3e-15
+  FERMI ('S2', 'o', 'Rt', 'o') ('L202', 'L333') E=+0.0000 D+/D+ grid8: crossing at k/pi=[-0.7291  0.709  -0.291 ] min|theta-E|=1.5e-16 Im/|r|=2e-15
+  FERMI ('S', 'o', 'Rt', 'o') ('H32', 'L121') E=+3.1416 D+/D+ grid8: crossing at k/pi=[ 0.1581  0.7134 -0.1383] min|theta-E|=0.0e+00 Im/|r|=4e-16
+  FERMI ('S2i', 'o', 'Rt', 'o') ('L300', 'L212') E=+0.0000 D+D-/D+D- grid16: crossing at k/pi=[-0.583  -0.3814  0.6144] min|theta-E|=7.7e-16 Im/|r|=2e-15
+  FERMI ('S2i', 'o', 'Rt', 'o') ('L303', 'L213') E=+0.0000 D+D-/D+D- grid16: own 10^3 grid: no sign change; 16^3 grid sign change: True
+  SURV  ('S2i', 'o', 'Rt', 'o') ('L222', 'L200') E=-0.0000 D+D-/D+D-: B26 first bad R_pi m=4 aniso (smin 0.246183, smax 1.262576); own: m=4 aniso (smin 0.246053, smax 1.261418, tilt 6.4e-12)
+  SURV  ('S', 'o', 'Rt', 'o') ('L310', 'L202') E=+0.0000 D+D-/D+D-: B26 first bad R_pi m=2 aniso (smin 0.01049, smax 0.572274); own: m=2 aniso (smin 0.001037, smax 0.540469, tilt 3.5e-16)
+  FERMI ('Si', 'o', 'Rt', 'Si', 'o') ('L302', 'L213') E=-0.0000 D+/D+ grid8: crossing at k/pi=[-0.6559  0.0529 -0.6559] min|theta-E|=3.9e-16 Im/|r|=2e-15
+  FERMI ('S', 'o', 'Rt', 'R', 'o') ('H33', 'L203') E=-0.0000 D-/D- grid8: crossing at k/pi=[ 0.753  -0.0044 -0.1759] min|theta-E|=4.6e-16 Im/|r|=2e-15
+  FERMI ('S', 'Rt', 'o', 'S2i', 'o') ('L122', 'L202') E=-0.0000 D+/D+ grid8: crossing at k/pi=[-0.7037  0.1641 -0.6905] min|theta-E|=1.5e-15 Im/|r|=2e-15
+  FERMI ('S2', 'Rt', 'o', 'Rt', 'o') ('L031', 'L001') E=+3.1416 D-/D- grid8: crossing at k/pi=[-0.7724  0.7931 -0.983 ] min|theta-E|=4.4e-16 Im/|r|=4e-16
+  FERMI ('S2i', 'Rt', 'o', 'Rt', 'o') ('L213', 'L101') E=+0.0000 D+D-/D+D- grid16: own 10^3 grid: no sign change; 16^3 grid sign change: True
+  FERMI ('R', 'S2', 'o', 'Rt', 'o') ('L321', 'L303') E=+3.1416 D+D-/D+D- grid16: crossing at k/pi=[-0.9676  0.5922  0.017 ] min|theta-E|=2.4e-16 Im/|r|=6e-16
+  SURV  ('Si', 'Rt', 'o', 'S2', 'o') ('L033', 'L303') E=-0.0000 D+D-/D+D-: B26 first bad R_pi m=2 aniso (smin 0.01049, smax 0.572274); own: m=2 aniso (smin 0.001037, smax 0.540469, tilt 1.3e-11)
+  SURV  ('Si', 'Rt', 'o', 'S2i', 'o') ('L133', 'L023') E=+0.0000 D+D-/D+D-: B26 first bad R_pi m=2 aniso (smin 0.031471, smax 1.716821); own: m=2 aniso (smin 0.003110, smax 1.621406, tilt 1.3e-11)
+[PASS] k* level kind (D+/D-/D+D-) reproduced with own model for all 40 sampled records  40/40
+[PASS] Fermi-surface failures confirmed independently (own det-based r on an own 10^3 grid + bisection to an actual crossing)  30/30
+[PASS] survivor failures confirmed: first defective node's multiplicity and defect type reproduced by own finite-difference DPT  10/10
+
+best candidate S.o.Rt.o (L130, L332), E = 0:
+   +k*: m=4 tilt=1.7e-16 smin=0.471405 smax=0.471405 -> ok ; kind (4, 'D+D-')
+   -k*: m=8 tilt=2.3e-16 smin=0.235702 smax=0.707107 -> aniso
+[PASS] best candidate: +k* is a 4-fold D+(+)D- isotropic untilted cone at sqrt2/3  
+[PASS] best candidate FAILS: -k* level at E=0 is 8-fold and anisotropic (B26: smin 0.2357, smax 0.7071)  
+   own Nelder-Mead (40 random starts): 40 distinct nodes at E=0, classes {(2, 'tilt'): 38, (2, 'aniso'): 2}
+[PASS] own search finds additional defective (non-isotropic or tilted) nodes of the best candidate at E = 0  
+
+second candidate S.Rt.o (H20*L002), E = 0:
+    ((np.float64(0.5), np.float64(0.5), np.float64(0.5)), 4, 'aniso', np.float64(0.2467), np.float64(0.6236))
+    ((np.float64(0.5), np.float64(-0.5), np.float64(0.5)), 4, 'ok', np.float64(0.4714), np.float64(0.4714))
+    ((np.float64(0.5), np.float64(-0.5), np.float64(-0.5)), 4, 'aniso', np.float64(0.2467), np.float64(0.6236))
+    ((np.float64(-0.5), np.float64(-0.5), np.float64(0.5)), 4, 'aniso', np.float64(0.2467), np.float64(0.6236))
+[PASS] second candidate: three 4-fold anisotropic cube doublets besides the isotropic 4-fold k* (B26: smin 0.2467, smax 0.6236)  
+
+TOTAL: PASS=7 FAIL=0   [12.0s]

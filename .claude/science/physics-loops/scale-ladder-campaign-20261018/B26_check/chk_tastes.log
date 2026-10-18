@@ -1,0 +1,5 @@
+[PASS] A_0 alone: invertible taste for every e, exactly with w = +-1  {(0, 0, 1): [(0,), (4,)], (0, 1, 0): [(0,), (4,)]}
+[PASS] A_1 alone: invertible taste for every e, exactly with w = +-1  {(0, 0, 1): [(0,), (4,)], (0, 1, 0): [(0,), (4,)]}
+[PASS] A_2 alone: invertible taste for every e, exactly with w = +-1  {(0, 0, 1): [(0,), (4,)], (0, 1, 0): [(0,), (4,)]}
+[PASS] S alone: invertible taste only for e = (1,1,1), w = 1 (S(k + pi(1,1,1)) = S(k); k* -> -k*)  
+[PASS] joint (S, A_1), independent w's: only e = (1,1,1)  [(0, 0), (0, 4)]

@@ -1,0 +1,29 @@
+[PASS] A0 is a real signed permutation c -> -c with A0^2 = -1 (in its real normalisation; (iA0)^2 = +1)  
+[PASS] A0 S A0^-1 = S^-1 (and A0 S^2 A0^-1 = S^-2)  
+[PASS] A0 R_L A0^-1 = -S R_L S^-1  (and NOT -S^-1 R_L S, NOT +S R_L S^-1)  res 2.9e-16, alt 1.41, 1.41
+[PASS] Rt identities: A0 Rt A0^-1 = +R_L ; S^-1 Rt S = -R_L ; Rt^2 = 1 ; Rt Hermitian ; Rt != +-R_L ; Rt != -S^2 R_L S^-2  0e+00 3e-16 3e-16 0e+00 1.41 1.41
+[PASS] Rt hop pattern = R_L with every link displacement reversed (|Rt_{-a}| = |RL_a|), so Rt(k) is not R_L(k)  
+[PASS] A0 H_on A0^-1 = H_on ; A0 Lambda A0^-1 = -Lambda  
+[PASS] A0 maps the 80-element Clifford palette PC onto itself up to a global phase (H_ab fixed; L_abc -> phase * L reversed)  e.g. L130 -> ('L310', np.complex128(1-0j)), L332 -> ('L112', np.complex128(-1-0j)), H20 -> ('H20', np.complex128(1+0j))
+[PASS] A0 maps the pi/6 palette onto itself up to phase (all 144 H + 1728 L elements; keys as tuples)  
+[PASS] A0 conjugation maps the 6-dim symmetric on-site algebra into itself; A0 itself is not in it  
+[PASS] 300 random even-A words (2 or 4 A_a letters, S^p, R_L, Rt, random symmetric on-site / PC letters) equal +-(old-palette word)  max dev 5.6e-16
+[PASS] formula A_a X A_b = -S^-a X~ S^b (X = R_L U S, all a,b in -2..2)  
+[PASS] reduced word's total S power equals n_eff = sum (-1)^{#A0 to the left} p (100 words)  
+[PASS] A_a (a=-2..2) maps D+ onto D- and D- onto D+ at +k* and -k* (P_D+ A P_D+ = 0, ||P_D- A P_D+||^2 = 2)  
+   S   +k* D+: value [1.-0.j 1.+0.j]  leak 4e-16  ||P d_j X P|| = [np.float64(0.471405), np.float64(0.471405), np.float64(0.471405)]
+   S   +k* D-: value [1.+0.j 1.+0.j]  leak 5e-16  ||P d_j X P|| = [np.float64(0.471405), np.float64(0.471405), np.float64(0.471405)]
+   S   -k* D+: value [1.+0.j 1.-0.j]  leak 3e-16  ||P d_j X P|| = [np.float64(0.471405), np.float64(0.471405), np.float64(0.471405)]
+   S   -k* D-: value [1.-0.j 1.+0.j]  leak 5e-16  ||P d_j X P|| = [np.float64(0.471405), np.float64(0.471405), np.float64(0.471405)]
+   R_L +k* D+: value [-1.-0.j -1.+0.j]  leak 1e-15  ||P d_j X P|| = [np.float64(0.0), np.float64(0.0), np.float64(0.0)]
+   R_L +k* D-: value [1.-0.j 1.+0.j]  leak 1e-15  ||P d_j X P|| = [np.float64(0.0), np.float64(0.0), np.float64(0.0)]
+   R_L -k* D+: value [1.-0.j 1.+0.j]  leak 1e-15  ||P d_j X P|| = [np.float64(0.0), np.float64(0.0), np.float64(0.0)]
+   R_L -k* D-: value [-1.+0.j -1.+0.j]  leak 1e-15  ||P d_j X P|| = [np.float64(0.0), np.float64(0.0), np.float64(0.0)]
+   Rt  +k* D+: value [1.-0.j 1.+0.j]  leak 1e-15  ||P d_j X P|| = [np.float64(0.0), np.float64(0.0), np.float64(0.0)]
+   Rt  +k* D-: value [-1.+0.j -1.+0.j]  leak 1e-15  ||P d_j X P|| = [np.float64(0.0), np.float64(0.0), np.float64(0.0)]
+   Rt  -k* D+: value [-1.-0.j -1.+0.j]  leak 1e-15  ||P d_j X P|| = [np.float64(0.0), np.float64(0.0), np.float64(0.0)]
+   Rt  -k* D-: value [1.-0.j 1.+0.j]  leak 1e-15  ||P d_j X P|| = [np.float64(0.0), np.float64(0.0), np.float64(0.0)]
+[PASS] every symmetric on-site operator acts on D+ (and D-) as a scalar (D+-: multiplicity-1 irreps)  
+[PASS] L1 with n_eff: on 400 random words with 0/2/4 A-letters, D+ and D- are invariant with scalar W(k*) (exact 2-fold unless accidental); every exact 2-fold D+- level is an untilted isotropic cone at |n_eff| sqrt2/3  710 doublets, max dev 5.2e-10 (finite diff h=1e-6), 333 with |n_eff| != |n_raw|, 126 with n_eff=0
+
+TOTAL: PASS=15 FAIL=0   [5.7s]

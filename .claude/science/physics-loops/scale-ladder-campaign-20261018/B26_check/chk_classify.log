@@ -1,0 +1,17 @@
+[PASS] flux constraints determine the translation-invariant gauge class: rank 22 = 36 - 14 (15 (lam,tau) gauge params - global sign)  
+[PASS] own model: H_on, H_link, Lambda, S commute with all 24 dressed rotations; PSG lift unique up to global sign (kernel dim 1 for all 48)  
+[PASS] dressed lifts compose exactly up to a GLOBAL sign: G_g G_h = +-G_gh (no staggered (-1)^{mu.v} defect)  
+[PASS] hence Ad(G_g) is a genuine linear representation of O on translation-invariant operators (checked on random range-1 X)  
+[PASS] A2 (axis-permutation sign) is a homomorphism of O; with Ad(G) a true rep, chi in G X G^-1 = chi X must be A1 or A2  
+  stabiliser of [(0, 1, 0), (1, 0, 0)]: [[[1, 0, 0], [0, 1, 0], [0, 0, 1]], [[0, 1, 0], [1, 0, 0], [0, 0, -1]]]
+[PASS] stabiliser of every corner@0 in O is order 2 = {1, C2' about f_c} (dressing only adds signs; translations act freely)  
+  O_h stabiliser order of a corner: 4
+[PASS] range <= 1: 324 (displacement, target) candidates x {A1,A2} -> exactly 6 letters = S^t (A1) and A0 S^t (A2), |t| <= 1  
+[PASS] range <= 2: 1500 (displacement, target) candidates x {A1,A2} -> exactly 10 letters = S^t (A1) and A0 S^t (A2), |t| <= 2  
+[PASS] range <= 3: 4116 (displacement, target) candidates x {A1,A2} -> exactly 14 letters = S^t (A1) and A0 S^t (A2), |t| <= 3  
+[PASS] range <= 4: 8748 (displacement, target) candidates x {A1,A2} -> exactly 18 letters = S^t (A1) and A0 S^t (A2), |t| <= 4  
+[PASS] for every corner: lam_{C2'}.f_c even (so S^t is A1 for ALL t) and tau_{C2'}(c)+tau_{C2'}(-c) odd with A2(C2') = -1 (so A0 S^t is A2 for all t)  
+[PASS] support spaces (12-dim, induced from the C2' sign): A1/A2 multiplicities are (1,0) for c->c and (0,1) for c->-c (Frobenius)  
+[PASS] A0 under improper elements: G A0 G^-1 = A2(perm part) A0 (B26 'A2 x inv'); A0 is not O_h-symmetric  
+
+TOTAL: PASS=13 FAIL=0   [4.2s]

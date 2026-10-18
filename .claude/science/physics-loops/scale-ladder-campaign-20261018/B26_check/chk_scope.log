@@ -1,0 +1,7 @@
+[PASS] A0 (PC element) A0^-1 = z * (PC element) with z ranging over all four of {1, i, -1, -i} (so 'even-A word = +- old word' needs 'z in {+-1, +-i}' when fills are normalised PC letters)  [(-1-0j), (-0-1j), (1+0j), (-0+1j)]
+[PASS] symmetric on-site algebra: dim 6, NOT commutative, centre dim 3 (= M1 + M1 + M2(C): D+ and D- are the two multiplicity-1 blocks; an 8-dim multiplicity-2 block carries the noncommutativity)  centre dim 3
+   H_on and Lambda commute: False  (if False, H*L and L*H fills differ; the PHL palette lists only the H*L order)
+[PASS] example: A_2 S o1 A_0 o2 = -S^-3 (A0 o1 A0^-1) o2 : a 5-letter even-A word reducing to an S^3-skeleton outside the screened token set  
+[PASS] example: A_1 S^2 o1 A_1 o2 = -S^-3 o1~ S o2 (merged power |p| = 3 > 2)  
+
+TOTAL: PASS=4 FAIL=0

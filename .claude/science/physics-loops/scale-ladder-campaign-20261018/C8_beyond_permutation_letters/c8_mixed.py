@@ -60,9 +60,9 @@ CHOICES = [(tw, ch) for tw in (False, True) for ch in itertools.product(*[range(
 check("G0 perm parts rebuilt: 2 x 64", len(CHOICES) == 128)
 PH4 = np.array([1, 1j, -1, -1j])
 def g0(tw, ch, alpha): return {(0, 0, 0): PH4[np.asarray(alpha)][ORB][:, :, None] * g0_perm(tw, ch)}
-A0perm = [(tw, ch) for tw, ch in CHOICES if np.allclose(g0_perm(tw, ch)[0], A0) and tw]
-ID = [(tw, ch) for tw, ch in CHOICES if np.allclose(g0_perm(tw, ch), np.eye(12)) and not tw]
-check("the identity and the A0 permutation are G0 perm parts (chi = 1 and chi = A2)", len(ID) == 1 and len(A0perm) == 1)
+A0perm = [(tw, ch) for tw, ch in CHOICES if tw and all(np.allclose(np.abs(p), np.abs(A0)) for p in g0_perm(tw, ch))]
+ID = [(tw, ch) for tw, ch in CHOICES if (not tw) and all(np.allclose(np.abs(p), np.eye(12)) for p in g0_perm(tw, ch))]
+check("exactly one G0 perm part has |entries| = identity (chi=1) and one = |A0| (chi=A2) on every sublattice", len(ID) == 1 and len(A0perm) == 1)
 
 # ---- (e) a R_L b, all perm-part pairs: pattern test first (phase-free), then Z4 phase solve
 RB = const(blL)
@@ -141,5 +141,8 @@ for m, gs, al, invs, W in nontriv:
         spd[(isc, iso, round(v, 6))] += 1
         if isc and abs(v - abs(ns) * np.sqrt(2) / 3) > 1e-8: bad += 1
 print("  k* (scalar on D, isotropic, speed) counts:", dict(spd))
+for m, gs, al, invs, W in nontriv:
+    print("   word", m, "G0 letters", gs, "phases", al, "second = inverse of first" if invs else "", "| W =", ident(W) or ('on-site' if list(W) == [(0, 0, 0)] else 'other'),
+          "| G0 letters are pure phases:", [bool(all(np.allclose(np.abs(p), np.eye(12)) for p in g0_perm(*g))) for g in gs])
 check("in the random mixed-word sample, every translation-invariant word with non-invariant G0 letters has k* D+/D- speed = |n_S| sqrt2/3 (no new velocity source found)", bad == 0, f"{len(nontriv)} words")
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}   [{time.time() - t0:.0f}s]")

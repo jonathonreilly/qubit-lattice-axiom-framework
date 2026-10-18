@@ -3,3 +3,7 @@
    K = [1, 0, 0, 0] M1 trial 0: position-space eps^2 coeff -0.91145641  vs C2 formula -0.91145638  rel 3.2e-08
    K = [1, 0, 0, 0] M1 trial 1: position-space eps^2 coeff -0.28258023  vs C2 formula -0.28258023  rel 1.1e-09
    K = [1, 0, 0, 0] M2 trial 0: position-space eps^2 coeff -0.54761937  vs C2 formula -0.54761936  rel 1.1e-08
+   K = [1, 0, 0, 0] M2 trial 1: position-space eps^2 coeff -0.81906692  vs C2 formula -0.81906690  rel 2.4e-08
+   K = [1, 1, 0, -1] S  trial 0: position-space eps^2 coeff -0.17377769  vs C2 formula -0.17377769  rel 4.2e-09
+   K = [1, 1, 0, -1] S  trial 1: position-space eps^2 coeff -0.70619613  vs C2 formula -0.70619610  rel 3.1e-08
+   K = [1, 1, 0, -1] M1 trial 0: position-space eps^2 coeff -0.66878884  vs C2 formula -0.66878883  rel 1.4e-08

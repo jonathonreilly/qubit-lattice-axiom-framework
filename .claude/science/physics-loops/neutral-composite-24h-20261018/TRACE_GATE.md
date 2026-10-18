@@ -127,3 +127,6 @@ Two-feature ladder: trace_class upstream_support; source_of_blocker_text user_go
 
 
 Native constituent scattering: trace_class upstream_support; source_of_blocker_text user_goal; reachability_to_target partially_closes; artifact_role theorem. Existing punctured host and attached rays derive logarithmic constituent amplitude without new contact attraction. Prepared finite-time microscopic evolution is controlled separately. Two-composite scattering and physical scalar remain open.
+
+
+Isotropic collective block: trace_class negative_route_pruning; source_of_blocker_text user_goal; reachability_to_target prunes; artifact_role theorem. Exact native leakage and ground-weight bound exclude treating the fully symmetric many-site sector as a protected ground scalar. First native internal fluctuation channel is derived. Other spatially structured features remain open.

@@ -117,3 +117,6 @@ Two-feature ladder: independent algebra, source, contact/residual and low-energy
 
 
 Native scattering: independent retarded finite-rank/threshold/optical check PASS; independent closed-ray moment and finite-time transfer check PASS. Final scoped review PASS after binding breakup proof as runner input. Source-bound replay9.139095s PASS; finite coefficient resolvent9cases maxerror2.14e-14, broadened highprecision controls converge. No empirical fit/test or formal audit.
+
+
+Isotropic collective: independent quartic leakage, variational ground-weight, exact Smax-2 channel and infrared checks PASS. Final scoped review PASS after explicit even-x ground family and mesh/cutoff symmetry qualifications. Source-bound replay .550913s PASS; exact27-site low-Dicke actions, no full physical ED.

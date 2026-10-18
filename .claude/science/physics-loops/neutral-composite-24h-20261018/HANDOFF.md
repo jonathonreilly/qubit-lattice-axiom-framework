@@ -339,3 +339,6 @@ PR9779 verified OPEN705490d9e11189d64e7e46f4a8212a6242a5a287; attachment cap100 
 
 
 Native scattering block complete: exact constituent T, native bound scale and logarithmic near-threshold limit; prepared actual finite-time packets controlled by lambda/delta error using closed-ray Sylvester bound. Explicit four-singleton on-shell channel for two composites, no decay amplitude. Independent and final checks PASS, replay9.139095s. Next root tests genuinely many-constituent isotropic collective feature: exact maxspin leakage, entangled trial energy and ground-sector weight, keeping other structured features open.
+
+
+Isotropic collective block: root exact leakageoperator and native entangled trial imply every ground has O(1/N) maximal-spin weight in growingeven-xfamily. First internalchannel exactlySmax-2 with cosky-coskx formfactor; IRdiagnostic kappa7, notscalar dispersion. Independent/finalchecksPASS; replay.550913s. Otherstructuredfeaturesopen. Rootnext native fourbodyon-shellcontactkernel atTjunctionanchor; directgeometricnumeratornonzero, focusedphysical/mathchecksactive. No exactS orlifetimeclaimed.

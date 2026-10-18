@@ -79,3 +79,6 @@ Two-feature block: supplied one-qubit compass H and weak ground family persist. 
 
 
 Native scattering preserves supplied H/regime/momentum and prepared packet premises. Exact constituent amplitude has no independently fitted contact attraction. Oriented and physical even-shell measures distinguished. Actual finite-time comparison is not an infinite-time microscopic S matrix; breakup kinematics is not a lifetime. No observed input or independent empirical test.
+
+
+Isotropic block changes only existing J ratios to equality; no added term. Maxspinprojection is tested and fails as protectedgrounddescription; dimerstate is variational not assertedphase. Oitmaa/Hamer arXiv1010.3804 abstract verified as prior quantumcompass thermodynamic context only; nofiniteTclaimimported as groundtheorem. Allcontrolsdevelopment, noobservations.

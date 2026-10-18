@@ -127,3 +127,6 @@ Two-feature ladder: actual_current_surface_status bounded-support; proposal_allo
 
 
 Native scattering: actual_current_surface_status bounded-support; proposal_allowed false; bare_retained_allowed false; review_loop_disposition pass. Exact coefficient scattering, conditional actual finite-time norm transfer and explicit breakup kinematics; no actual infinite-time S matrix, decay width or empirical identification.
+
+
+Isotropic collective: actual_current_surface_status bounded-support; proposal_allowed false; bare_retained_allowed false; review_loop_disposition pass. Exact specified-sector boundary conditional on native isotropic H; no general large-feature or ground-phase no-go.

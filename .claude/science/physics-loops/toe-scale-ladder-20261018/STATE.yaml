@@ -1,0 +1,20 @@
+slug: toe-scale-ladder-20261018
+mode: campaign
+runtime: 24h
+start_utc: 2026-10-18T18:36Z
+target_stop_utc: 2026-10-19T18:36Z
+branch: claude/focused-mccarthy-q4vbgt   # session-designated branch (overrides physics-loop/<slug> naming)
+base_main: 584755767
+delivery: milestone   # PRs only on explicit user request (platform rule); PR_BACKLOG.md holds ready bodies
+checkpoint_interval: 30m-2h (orchestrator wakes on worker completion)
+target_status: best-honest-status
+lock: scripts/automation_lock.py owner=physics-loop ttl=6h (refresh)
+organizing_concept: >
+  Scale ladder R0 axioms -> R1 finite patch -> R2 infinite volume -> R3 continuum/IR
+  -> R4 physical scale hierarchy. Attack the lowest open upward bridge; do not densify R1.
+token_policy: >
+  Orchestrator stays lean: workers return <=600-word summaries + artifact paths;
+  full derivations/logs live in pack files; one independent checker per load-bearing result.
+cycle: 0
+active_route: grounding (scale-ladder frontier map in progress)
+next_action: read SCALE_LADDER_MAP.md, select 2-3 targets, write GOAL.md contracts, dispatch workers

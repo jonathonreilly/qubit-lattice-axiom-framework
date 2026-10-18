@@ -62,4 +62,44 @@ for t in range(300):
             okall&=good; zerov+=(ns==0)
 check("random words: every exactly 2-fold level at +-k* has speed |n_S| sqrt2/3 (isotropic, untilted) and chirality sign(n_S) eps_D",
       okall and nd>50,f"{nd} doublets checked ({zerov} with n_S = 0), max speed error {worst:.1e}")
+# ---- bookkeeping of the two k* doublets (exact: each letter is a scalar on each isotypic doublet)
+Dp={lab:[b for b,e in EPS[lab] if e==+1][0] for lab in EPS}; Dm={lab:[b for b,e in EPS[lab] if e==-1][0] for lab in EPS}
+Q0,Q3=Qs[0],Qs[3]
+def sc(U,b): return np.trace(b.conj().T@U@b)/2
+ok=all(abs(sc(Ps[2],Dp[l])-1)<1e-12 and abs(sc(Ps[2],Dm[l])-1)<1e-12 and abs(sc(Q0,Dp[l])-1)<1e-12 and abs(sc(Q3,Dm[l])-1)<1e-12 for l in EPS)
+rl=[round(sc(RL(kst),Dp['k*']).real),round(sc(RL(kst),Dm['k*']).real),round(sc(RL(-kst),Dp['-k*']).real),round(sc(RL(-kst),Dm['-k*']).real)]
+check("doublets: D+ (eps=+1) = {H_on=2} cap {Lambda=-2sqrt2}, D- (eps=-1) = {H_on=2} cap {Lambda=+2sqrt2} at both +-k*; R_L = (-1,+1) on (D+,D-) at k* and (+1,-1) at -k*",
+      ok and rl==[-1,1,1,-1],f"R_L scalars {rl}")
+# random words: predicted doublet eigenvalues and the zero-net-chirality condition
+rng=np.random.default_rng(7); okp=True; cnt=collections.Counter() if 'collections' in dir() else None
+import collections; cnt=collections.Counter()
+for t in range(400):
+    n=rng.integers(1,5); w=[]
+    for _ in range(n): w+=[kletters[rng.integers(5)],ronsite()]
+    if rng.random()<0.5:   # tune: make every on-site letter have equal phases on Lambda = -+2sqrt2 (lambda_+ = lambda_-)
+        w=[L if isinstance(L,str) else L for L in w]
+        w=[L if isinstance(L,str) else (sum(np.exp(1j*rng.uniform(0,6.3))*P for P in Ps)@(np.exp(1j*0.7)*(Q0+Q3)+np.exp(1j*rng.uniform(0,6.3))*Qs[1]+np.exp(1j*rng.uniform(0,6.3))*Qs[2])) for L in w]
+    nR=sum(1 for L in w if isinstance(L,str) and L=='R'); ns=sum(nS[L] for L in w if isinstance(L,str))
+    if ns==0: continue
+    lam={}
+    for lab,k0 in (("k*",kst),("-k*",-kst)):
+        for eps,b in ((1,Dp[lab]),(-1,Dm[lab])):
+            pr=1
+            for L in w:
+                if isinstance(L,str): pr*= (sc(RL(k0),b) if L=='R' else 1.0)
+                else: pr*=sc(L,b)
+            lam[(lab,eps)]=pr
+            W0=Wk(w,k0); okp&=np.allclose(W0@b,pr*b,atol=1e-9)
+    lp=np.prod([sc(L,Dp['k*']) for L in w if not isinstance(L,str)]); lm=np.prod([sc(L,Dm['k*']) for L in w if not isinstance(L,str)])
+    equal=abs(lp-lm)<1e-9
+    # net chirality at the quasi-energy of the k* D+ doublet, from +-k*
+    E=np.angle(lam[('k*',1)]); net=0
+    for lab in ("k*","-k*"):
+        for eps in (1,-1):
+            if abs(lam[(lab,eps)]-np.exp(1j*E))<1e-9: net+=int(np.sign(ns))*eps
+    if abs(lam[('k*',1)]-lam[('k*',-1)])<1e-9: cnt['4fold']+=1; continue   # D+ and D- degenerate: a 4-fold point, not a Weyl doublet
+    cnt[(nR%2,equal,net)]+=1
+check("random words: W(+-k*) acts on D+- as the product of the letter scalars (S -> 1, R_L -> the signs above, on-site -> its scalar)",okp)
+check("(for an exactly 2-fold k* level at E) net +-k* chirality at E vanishes exactly when n_R is odd and lambda_+ = lambda_- (product of on-site scalars equal on D+ and D-); otherwise it is +-1 or +-2",
+      all((key[2]==0)==(key[0]==1 and key[1]) for key in cnt if key!='4fold') and any(n==0 for (_,_,n) in cnt),dict(cnt))
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}   [{time.time()-t0:.0f}s]")

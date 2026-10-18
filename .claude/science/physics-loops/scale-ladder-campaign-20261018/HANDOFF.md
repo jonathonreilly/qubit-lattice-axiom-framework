@@ -24,3 +24,12 @@
   - B18 (taste symmetry);
   - B19 ({G,G} normalisation);
   - the spin-½/spin-1 lane-note writer.
+- **09:20Z.**
+  - The spin-½/spin-1 lane note was reviewed and added to PR #9718.
+  - B18 and B19 checks are integrated into PR #9702.
+  - B21: K1 = K2 is the normalisation premise; the invariant cone is the graviton cone.
+  - Running: B20 (all-isotropic step), the B21 check, and B22 (QCA local lapse).
+  - Plan:
+    - integrate these results;
+    - around 12:00Z, a fresh-context coherence review of the scale-ladder note;
+    - final summary before 14:14Z.

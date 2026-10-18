@@ -6,8 +6,13 @@ L=4: 768 vertices, 2304 edges (1536 on-site)
   lattice (b), O-fixed points (k/pi, reduced): [(np.float64(0.5), np.float64(1.5), np.float64(0.5))]
   lattice (c), T-fixed points (k/pi, reduced): [(np.float64(0.0), np.float64(0.0), np.float64(0.0)), (np.float64(0.25), np.float64(0.25), np.float64(0.25))]
   lattice (c), O-fixed points (k/pi, reduced): [(np.float64(0.0), np.float64(0.0), np.float64(0.0)), (np.float64(0.25), np.float64(0.25), np.float64(0.25))]
+  lattice (d), T-fixed points (k/pi, reduced): [(np.float64(0.0), np.float64(0.0), np.float64(0.0)), (np.float64(0.5), np.float64(0.5), np.float64(0.5))]
+  lattice (d), O-fixed points (k/pi, reduced): [(np.float64(0.0), np.float64(0.0), np.float64(0.0)), (np.float64(0.5), np.float64(0.5), np.float64(0.5))]
 [PASS] (a) modulo 2pi Z^3 the O-fixed and the T-fixed points are exactly +-k* = +-(pi/2)(1,-1,1)  
 [PASS] (b) modulo 2pi Z^3 + pi(1,1,1)Z (words without R_L) the T-fixed set is the single class k* = -k*  
 [PASS] (c) modulo (pi/2) Z^3 the T-fixed set is {0 (= k*), (pi/4)(1,1,1)}, both O-fixed  
+[PASS] (d) modulo pi Z^3 the T-fixed set is {0, (pi/2)(1,1,1) (= k*)}, both O-fixed  
+  rotation little-group orders: {('d', 'X_r=(pi/2)e_x'): 8, ('d', 'M_r=(pi/2)(1,1,0)'): 8, ('c', 'X_r=(pi/4)e_x'): 8, ('c', 'M_r=(pi/4)(1,1,0)'): 8, ('a', 'k*+pi e_x'): 8}
+[PASS] the uniaxial-node points X_r, M_r of the taste families and the cube doublers k*+pi e_i have little groups of order 8 (D4: no T, so no forced isotropy)  
 
-TOTAL: PASS=4 FAIL=0   [2s]
+TOTAL: PASS=6 FAIL=0   [2s]

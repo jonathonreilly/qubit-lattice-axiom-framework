@@ -1,0 +1,47 @@
+PASS: T0a [2s] own [sqrt g R]^(1) = d_i d_j h_ij - lap trh (kernel), own [sqrt g R]^(2) = Fierz-Pauli -1/4(dh)^2 + 1/2(d.h)^2 - 1/2 d.h.dtrh + 1/4(dtrh)^2 modulo total derivatives
+PASS: T0b [3s] positive controls of the kernel bracket: {G_GR[xi],G_GR[eta]} = G_GR[[xi,eta]] with G_GR = int Pt L_xi(delta+h) (all orders), and {G_m,G_m} = G_m[[xi,eta]]
+   Phi_rho: G1 (coef lam1): scales as rho^-1  ok
+   Phi_rho: G2 = int P L_xi h (coef nu): scales as rho^0  ok
+   Phi_rho: R1 (coef K1): scales as rho^1  ok
+   Phi_rho: R2 (coef K2): scales as rho^2  ok
+   Phi_rho: kin0 (coef 1/alpha): scales as rho^-2  ok
+   Phi_rho: kin1 (coef k): scales as rho^-1  ok
+   Phi_rho: matter coupling (coef a_s): scales as rho^1  ok
+   Phi_rho: matter H0, G_m (coef 1, c, lam_s): scales as rho^0  ok
+   Phi_rho: zeta's h-term (coef beta): scales as rho^1  ok
+PASS: T1a [4s] F' = F o Phi_rho (h -> rho h, P -> P/rho): lam1 -> lam1/rho, nu -> nu, K1 -> rho K1, K2 -> rho^2 K2, alpha -> rho^2 alpha, kin1 -> kin1/rho, a_s -> rho a_s, beta -> rho beta; matter c, lam_s, s1, s2 and c0 unchanged
+   ratio new/old under Phi_rho: {'lam1 K2/K1': 1, 'K2/(4 alpha)': 1, 'nu K1/(4 alpha lam1)': 1, 'c0 = K1/(4 alpha lam1)': 1, 'K1/(4 alpha)': 1/rho, 'K2/K1': rho, 'r = lam1/nu': 1/rho}
+PASS: T1b [4s] invariants: lam1 K2/K1, K2/(4 alpha), nu K1/(4 alpha lam1), c0;  NOT invariant: K1/(4 alpha) (x 1/rho), K2/K1 (x rho), r (x 1/rho).  Canonicity: Phi_rho preserves int P dh exactly (linear symplectic map)
+   H(h01,h01) kernel = K2*kz**2/2, H(P01,P01) = 1/(8*alpha), omega^2 = 4 A_hh A_PP = K2*kz**2/(4*alpha)
+PASS: T2 [4s] TT graviton (h01, k || z, decoupled) has omega^2 = K2 k^2/(4 alpha): the graviton cone is K2/(4 alpha); R1 never enters TT propagation
+   isotropic one-derivative G2 basis: 30 pairings -> rank 12
+   {G,G} order P alone: 1 branch(es), free m: 4  [{m0: 0, m1: 0, m2: 0, m3: 0, m4: 0, m5: nu, m8: m11, m9: m10 - 2*nu}]
+   {C,G} h-linear alone: free m: 3  [{m0: -m11/2, m1: m11/2, m2: m8, m3: -m11, m4: m10 - 2*K2*lam1/K1, m5: m11 + K2*lam1/K1, m6: -m11/2, m7: m11/2, m9: -m11, s1: -K2*lam1/K1, s2: 0}]
+   joint: [{m0: 0, m1: 0, m10: 2*K2*lam1/K1, m11: 0, m2: 0, m3: 0, m4: 0, m5: K2*lam1/K1, m6: 0, m7: 0, m8: 0, m9: 0, nu: K2*lam1/K1, s1: -K2*lam1/K1, s2: 0}]
+PASS: T3 [9s] A3 reproduced on an own isotropic basis: {G,G} order P + {C,G} h-linear force G2 = nu int Pt L_xi h uniquely, nu = lam1 K2/K1, s1 = -nu, s2 = 0 (symbolic lam1, K1, K2)
+   general G2: 648 coefficients
+   trial 0: lam1=3/7 K1=7/5 K2=2: null dims (GG, CG, joint) = 129, 145, 0; consistent=True; joint sol nu, s1, s2, free, ==nu*Lie: (30/49, -30/49, 0, True)
+   trial 1: lam1=8/9 K1=1/3 K2=9/4: null dims (GG, CG, joint) = 129, 145, 0; consistent=True; joint sol nu, s1, s2, free, ==nu*Lie: (6, -6, 0, True)
+PASS: T3G [59s] A3 in the FULLY GENERAL 648-coefficient one-derivative G2 (no isotropy, no parity), two random rational (lam1, K1, K2): {G,G} order P + {C,G} h-linear have a unique solution G2 = nu int Pt L_xi h, nu = lam1 K2/K1
+   W1: r=2 lam1=2 nu=1 K1=3 K2=3/2 alpha=5 beta=-1/2 c0=3/40: {'GG_P': True, 'GG_Ph': True, 'CG_h': True, 'CG_PP': True, 'CC_P': True, 'CC_Ph': True}
+PASS: T4a [63s] witness r = 2 (lam1 = 2, nu = 1, K1 = 3, K2 = 3/2, alpha = 5, kin1 = DeWitt about 2 delta, beta = -1/2, s1 = -1): closes in {G,G} (P, Ph), {C,G} (h, P^2), {C,C} (P, Ph): K1 != K2 closes
+   W2: r=2 lam1=2 nu=1 K1=3 K2=3 alpha=5 beta=-1/2 c0=3/40: {'GG_P': True, 'GG_Ph': True, 'CG_h': False, 'CG_PP': True, 'CC_P': True, 'CC_Ph': False}
+PASS: T4b [65s] negative control r = 2 with K2 := K1 = 3: {C,G} h-linear and {C,C} Ph FAIL (others pass)
+   W3: r=1 lam1=1 nu=1 K1=3 K2=3 alpha=5 beta=-1 c0=3/20: {'GG_P': True, 'GG_Ph': True, 'CG_h': True, 'CG_PP': True, 'CC_P': True, 'CC_Ph': True}
+PASS: T4c [69s] r = 1 (lam1 = nu, K1 = K2 = 3): closes in all six sectors
+   W4: r=1/3 lam1=1/3 nu=1 K1=3 K2=9 alpha=5 beta=-3 c0=9/20: {'GG_P': True, 'GG_Ph': True, 'CG_h': True, 'CG_PP': True, 'CC_P': True, 'CC_Ph': True}
+PASS: T4d [71s] r = 1/3 (K1 = 3, K2 = 9; the Phi_3 image of r = 1, rho > 1 direction): closes in all six sectors
+   {C,C} Ph, G2 = nu Lie, unknown kin1/beta/beta'/K2: [{K2: K1*nu/lam1, beta: -nu/lam1, betap: 0, k1: -nu/(8*alpha*lam1), k2: nu/(16*alpha*lam1), k3: -nu/(4*alpha*lam1), k4: nu/(2*alpha*lam1)}]
+PASS: T5a [76s] route 2 (A7b): {C,C} at order Ph with G2 = nu L_xi h forces lam1 K2 = nu K1, beta = -nu/lam1, beta' = 0 and kin1 = DeWitt about (lam1/nu) delta (own direct expansion)
+   {G,G}P + {C,C}Ph with beta = -1 (lam1, K2 unknown): [{K2: K1, betap: 0, k1: -k3 - k4 + 1/(8*alpha), lam1: nu, m10: 4*alpha*k4*nu, m11: -2*nu*(4*alpha*(k3 + k4) - 1), m6: 2*nu*(-8*alpha*k2 + 2*alpha*k3 + 4*alpha*k4 - 1), m7: nu*(4*alpha*k3 + 1)}]
+PASS: T5b [90s] A7d: with the structure function fixed to delta - h (beta = -1), {G,G} order P + {C,C} Ph force K2 = K1 and lam1 = nu (so beta = -1 is a normalisation premise equivalent to K1 = K2)
+   matter {C,G} at order matter^2: [{a1: c*lam_s/(4*lam1) + c*s2/(4*lam1), a10: 0, a2: -c*lam_s/(2*lam1), a3: 0, a4: 0, a5: 0, a6: 0, a7: -a8, a9: -lam_s/(4*lam1) + s2/(4*lam1), s1: -lam_s}]
+   with s2 = 0: free coupling directions left = ['a8']
+PASS: T6a [92s] matter {C,G} (scalar, 10-term isotropic h-linear coupling ansatz): s1 = -lam_s and, with gravity's s2 = 0, the coupling is (lam_s/lam1) x the unit metric stress of delta + h, plus only the covariant non-minimal R1 phi^2 direction  =>  a_s = lam_s/lam1
+   {C,C} order P + order phi pi: [{b: -1/2, c: K1*lam_s/(4*alpha*lam1), c0: K1/(4*alpha*lam1)}]
+PASS: T6b [92s] {C,C}: b = -1/2, c0 = K1/(4 alpha lam1), matter cone c = lam_s K1/(4 alpha lam1); with lam_s = nu (matter {G,G}, T0b) and nu = lam1 K2/K1 (T3): c = K2/(4 alpha) = graviton TT cone (T2)
+   unit matter coupling fixed, lam_s = nu; solve gravity + matter {C,G} for lam1, K2, s1, s2: [{K2: K1, lam1: nu, s1: -nu, s2: 0}]
+PASS: T6c [94s] premise (d) computed: with the matter coupling FIXED to unit metric stress of delta + h (not Phi_rho-covariant: a_s -> rho a_s) the h-linear {C,G} brackets force lam1 = nu and K2 = K1.  So 'no bracket can force K1 = K2' holds only when every Phi_rho-non-invariant normalisation in the ansatz is left free
+   A6: [{k1: -nu/(8*alpha*lam1), k2: nu/(16*alpha*lam1), k3: -nu/(4*alpha*lam1), k4: nu/(2*alpha*lam1)}]  DeWitt/r: {k1: -nu/(8*alpha*lam1), k2: nu/(16*alpha*lam1), k3: -nu/(4*alpha*lam1), k4: nu/(2*alpha*lam1)}
+PASS: T7 [95s] A6: {C,G} P^2 sector with G2 = nu L_xi h and N' = -nu xi.dN forces kin1 = h-linear DeWitt about (lam1/nu) delta (own expansion; = (nu/lam1) x DeWitt about delta)
+TOTAL: PASS=17 FAIL=0  (95s)

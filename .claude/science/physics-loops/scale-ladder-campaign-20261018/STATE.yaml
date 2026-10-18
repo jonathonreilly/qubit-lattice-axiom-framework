@@ -4,7 +4,7 @@ target_stop: 2026-10-18T14:14Z
 branch: claude/scale-ladder-campaign-20261018
 prs:
   "9702": "scale-ladder note revised (information-minimal target, step rules, doublet lemma, diagonal-shift Weyl step); PASS=18"
-  "9718": "lane theorems: B3 coding radius (PASS=22), B8 frequency consistency (PASS=17), B7 odd filling (PASS=25), graviton kernels (PASS=37), Lambda ratio (PASS=42), C20 channels (PASS=28); B14 closure note pending"
+  "9718": "lane theorems: B3 coding radius (PASS=22), B8 frequency consistency (PASS=17), B7 odd filling (PASS=25), graviton kernels (PASS=37), Lambda ratio (PASS=42), C20 channels (PASS=28), B14 scalar closure (PASS=26), spin-1/2 + spin-1 closure (PASS=65)"
 blocks:
   B1: "done. Diagonal-shift Weyl step (spin-1/2 Weyl at +-k*, speed sqrt2/3, six doublers on the symmetry-forced 3-orbits). Lemma and doubling corollary checked; pi/6 and word searches find no doubler-free gapped step, consistent with the corollary."
   B2: "folded into the note; deeper test needs interactions"
@@ -23,6 +23,10 @@ blocks:
   B15: "done, checked: naive Weyl closes only on K/(4 alpha); no linear relabelling of any range closes exactly"
   B16: "done, checked: Maxwell on the same cone; 8 one-sided translation-invariant timings; normalisation fixed by {G,G}; O(a) from one-sided generator"
   B17: "done, checked: anisotropic cones fail closure; corner step doublers rejected (conditional)"
-  B19: "running: {G,G} fixes generator normalisation?"
-  notes: "spin-1/2 + spin-1 closure lane note being written for PR #9718"
+  B19: "done, checked: matter cones equal (continuum); = graviton cone K2/(4 alpha) via gravity order-h {G,C}; lattice relabellings do not close"
+  B18: "done, checked: no taste maps k* to doublers; S^2 tastes leave uniaxial nodes"
+  B20: "running: all-isotropic step search"
+  B21: "done (check running): K1=K2 is the normalisation premise h=g-delta, not a bracket output; invariant cone = graviton cone"
+  B22: "running: local lapse for QCA steps"
+  notes: "spin-1/2 + spin-1 lane note reviewed and in PR #9718 (PASS=65)"
   B18: "running: taste symmetry / isotropic doublers search"

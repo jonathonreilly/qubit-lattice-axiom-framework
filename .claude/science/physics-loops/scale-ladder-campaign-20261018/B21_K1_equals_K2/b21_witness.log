@@ -1,0 +1,7 @@
+   W1: r=2 lam1=2 K1=3 K2=3/2: {'GG1': True, 'GG2': True, 'CG1': True, 'CG2P': True, 'CC1': True, 'CC2': True}
+PASS: W1 [68s] r = 2 (lam1 = 2 nu): K1 = 3, K2 = 3/2 -- all six bracket sectors close exactly (independent code path, no unknowns): closure does NOT force K1 = K2
+   W2: r=2 lam1=2 K1=3 K2=3: {'GG1': True, 'GG2': True, 'CG1': False, 'CG2P': True, 'CC1': True, 'CC2': False}
+PASS: W2 [132s] negative control: lam1 = 2 nu with K2 = K1 = 3 fails the h-linear {C,G} (the bracket fixes lam1 K2 = nu K1, not K1 = K2)
+   W3: r=1 lam1=1 K1=3 K2=3: {'GG1': True, 'GG2': True, 'CG1': True, 'CG2P': True, 'CC1': True, 'CC2': True}
+PASS: W3 [211s] r = 1 (lam1 = nu, h = g - delta): K1 = K2 = 3 closes in all six sectors (the member's point)
+TOTAL: PASS=3 FAIL=0  (211s)

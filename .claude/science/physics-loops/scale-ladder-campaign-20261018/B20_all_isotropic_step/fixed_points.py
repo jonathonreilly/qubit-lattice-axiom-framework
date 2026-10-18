@@ -5,9 +5,10 @@ irreducibly on R^3 are T and O).  The affine PSG action is k -> R k + pi s_R (s_
 shift with spec W(Rk + pi s_R) = spec W(k) for a generic symmetric word; one per rotation, as in the note).
 We list the T-fixed and O-fixed points modulo three translation groups:
   (a) 2pi Z^3 (any word), (b) + pi(1,1,1) (exact period of S, hence of words without R_L),
-  (c) (pi/2) Z^3 (the corner-plane tastes Z_i of S^2 words whose last on-site factor commutes with the Z_i).
-Exhaustive over k in (pi/8) Z^3, which contains every solution (the fixed-point congruences have
-denominators dividing 4 for (a),(b) and 8 for (c)).  Prints PASS/FAIL, TOTAL."""
+  (c) (pi/2) Z^3 (the corner-plane tastes Z_i of S^2 words with a factor commuting with the Z_i),
+  (d) pi Z^3 (the same tastes for words with two S letters, e.g. S.A.S.L202).
+Exhaustive over k in (pi/8) Z^3, which contains every solution: the axis C2s alone force 2k_i in the
+translation group (+ pi Z), so k_i in (pi/2)Z for (a),(b),(d) and (pi/4)Z for (c).  Prints PASS/FAIL, TOTAL."""
 import itertools, time, numpy as np
 exec(open('/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/scale-ladder-campaign-20261018/B20_all_isotropic_step/b20lib.py').read())
 t0=time.time(); PASS=FAIL=0
@@ -42,16 +43,18 @@ def inlat(v,lat):
     if lat=='a': return np.allclose(np.mod(v+1e-9,2),0,atol=1e-7) or np.allclose(np.mod(v+1e-9,2),2,atol=1e-7)
     if lat=='b': return inlat(v*np.pi,'a') or inlat(v*np.pi-np.pi*np.ones(3),'a')
     if lat=='c': x=np.mod(v*2+1e-9,1); return np.all((x<1e-7)|(x>1-1e-7))
+    if lat=='d': x=np.mod(v+1e-9,1); return np.all((x<1e-7)|(x>1-1e-7))
 def fixed(k,group,lat): return all(inlat(R@k+np.pi*s-k,lat) for R,s,t in zip(rots,SR,isT) if (t or group=='O'))
 def reduce(k,lat):
     if lat=='c': return tuple(np.round(np.mod(k/np.pi+1e-9,0.5),4))
+    if lat=='d': return tuple(np.round(np.mod(k/np.pi+1e-9,1),4))
     v=np.mod(k/np.pi+1e-9,2)
     if lat=='b':
         v2=np.mod(v+1,2); v=min(tuple(np.round(v,4)),tuple(np.round(v2,4))); return v
     return tuple(np.round(v,4))
 pts=[np.array(p)*np.pi/8 for p in itertools.product(range(16),repeat=3)]
 res={}
-for lat in 'abc':
+for lat in 'abcd':
     for grp in 'TO':
         res[(lat,grp)]=sorted({reduce(k,lat) for k in pts if fixed(k,grp,lat)})
         print(f"  lattice ({lat}), {grp}-fixed points (k/pi, reduced):",res[(lat,grp)])
@@ -60,4 +63,13 @@ check("(a) modulo 2pi Z^3 the O-fixed and the T-fixed points are exactly +-k* = 
 check("(b) modulo 2pi Z^3 + pi(1,1,1)Z (words without R_L) the T-fixed set is the single class k* = -k*",len(res[('b','T')])==1 and res[('b','T')]==res[('b','O')])
 check("(c) modulo (pi/2) Z^3 the T-fixed set is {0 (= k*), (pi/4)(1,1,1)}, both O-fixed",
       set(res[('c','T')])=={(0,0,0),(0.25,0.25,0.25)} and res[('c','T')]==res[('c','O')])
+check("(d) modulo pi Z^3 the T-fixed set is {0, (pi/2)(1,1,1) (= k*)}, both O-fixed",
+      set(res[('d','T')])=={(0,0,0),(0.5,0.5,0.5)} and res[('d','T')]==res[('d','O')])
+def lg(k,lat): return sum(1 for R,s_ in zip(rots,SR) if inlat(R@k+np.pi*s_-k,lat))
+tab={('d','X_r=(pi/2)e_x'):lg(np.pi/2*EX[0],'d'),('d','M_r=(pi/2)(1,1,0)'):lg(np.pi/2*np.array([1,1,0]),'d'),
+     ('c','X_r=(pi/4)e_x'):lg(np.pi/4*EX[0],'c'),('c','M_r=(pi/4)(1,1,0)'):lg(np.pi/4*np.array([1,1,0]),'c'),
+     ('a','k*+pi e_x'):lg(kst+np.pi*EX[0],'a')}
+print("  rotation little-group orders:",tab)
+check("the uniaxial-node points X_r, M_r of the taste families and the cube doublers k*+pi e_i have little groups of order 8 (D4: no T, so no forced isotropy)",
+      all(v==8 for v in tab.values()))
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}   [{time.time()-t0:.0f}s]")

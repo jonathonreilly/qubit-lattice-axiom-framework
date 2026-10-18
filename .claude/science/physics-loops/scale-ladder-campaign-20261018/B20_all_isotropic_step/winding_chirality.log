@@ -7,3 +7,9 @@ L=4: 768 vertices, 2304 edges (1536 on-site)
    W3[S2.H20.S2.L202] on 20^3 grid = +1.04e-15 +4.5e-17i
    W3[S2.H20.S2.L202] on 24^3 grid = -2.72e-16 -3.4e-16i
 [PASS] W3 = 0 for the S2.H20.S2.L202 (numerical, two grid sizes; the integrand is a trigonometric polynomial, so the grid sum is exact once N exceeds its degree)  
+   W3[long word with a generic on-site unitary] on 20^3 grid = -1.25e-15 -4.5e-17i
+   W3[long word with a generic on-site unitary] on 24^3 grid = +9.92e-16 -5.7e-17i
+[PASS] W3 = 0 for the long word with a generic on-site unitary (numerical, two grid sizes; the integrand is a trigonometric polynomial, so the grid sum is exact once N exceeds its degree)  
+[PASS] eight-node step: E = pi/2 reached only in 0.03-balls around the 8 cube points (Lipschitz certificate); chiralities sum to 0  chiralities [-1, 1, 1, -1, 1, -1, -1, 1]; 869968 evaluations
+
+TOTAL: PASS=6 FAIL=0   [96s]

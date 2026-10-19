@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/native_correlated_states.py
+runner_sha256: 2588a45616d5d076b45ff88a78f2f11cf7dbb651f3b8fdfd273b7bf342cb38da
+input_fingerprint_sha256: 394cb57fcb51a2a67b83c6dbeb9b960a2c90cdd7d18fb825a547ab9014677a16
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 94.67
+status: ok
+----- stdout -----
+[{'L': 3, 'sites': 27, 'variance_per_site_over_K_squared': '-3*nx**4 - 8*nx**2*ny**2 - 8*nx**2*nz**2 + 2*nx**2 - 3*ny**4 - 8*ny**2*nz**2 + 2*ny**2 - 3*nz**4 + 2*nz**2 + 3', 'pure_state_result': '1 + nx**4 + ny**4 + nz**4'}, {'L': 4, 'sites': 64, 'variance_per_site_over_K_squared': '-3*nx**4 - 8*nx**2*ny**2 - 8*nx**2*nz**2 + 2*nx**2 - 3*ny**4 - 8*ny**2*nz**2 + 2*ny**2 - 3*nz**4 + 2*nz**2 + 3', 'pure_state_result': '1 + nx**4 + ny**4 + nz**4'}, {'L': 5, 'sites': 125, 'variance_per_site_over_K_squared': '-3*nx**4 - 8*nx**2*ny**2 - 8*nx**2*nz**2 + 2*nx**2 - 3*ny**4 - 8*ny**2*nz**2 + 2*ny**2 - 3*nz**4 + 2*nz**2 + 3', 'pure_state_result': '1 + nx**4 + ny**4 + nz**4'}]
+reproduced compass_product_state
+[{'L': 4, 'sites': 64, 'energy_per_site_over_K': '17/16', 'variance_per_site_over_K_squared': '205/128', 'composite_per_site': '15/16'}, {'L': 6, 'sites': 216, 'energy_per_site_over_K': '17/16', 'variance_per_site_over_K_squared': '201/128', 'composite_per_site': '15/16'}, {'L': 8, 'sites': 512, 'energy_per_site_over_K': '17/16', 'variance_per_site_over_K_squared': '201/128', 'composite_per_site': '15/16'}]
+reproduced compass_dimer_state
+[{'L': 4, 'sectors': {'P': {'bonds': 96, 'mean_per_site': '17/16', 'variance_per_site': '1/128'}, 'Q': {'bonds': 96, 'mean_per_site': '0', 'variance_per_site': '51/32'}}}, {'L': 6, 'sectors': {'P': {'bonds': 324, 'mean_per_site': '17/16', 'variance_per_site': '1/128'}, 'Q': {'bonds': 324, 'mean_per_site': '0', 'variance_per_site': '25/16'}}}, {'L': 8, 'sectors': {'P': {'bonds': 768, 'mean_per_site': '17/16', 'variance_per_site': '1/128'}, 'Q': {'bonds': 768, 'mean_per_site': '0', 'variance_per_site': '25/16'}}}]
+reproduced compass_dimer_projection
+{'single_site_maps': ['X1=tx rx', 'Y1=ty rx', 'Z1=tz', 'X2=rx', 'Y2=tz ry', 'Z2=tz rz'], 'bond_checks': ['inter_x', 'y_first', 'y_second', 'z_first', 'z_second'], 'exact': True, 'scope': 'Unitary regrouping of two original sites, not two qubits per physical site or a projection'}
+reproduced compass_full_dimer_map
+{'energy_per_site_over_J': np.float64(-1.0918560606060606), 'exact_formula': '-1153/1056', 's': '8/33', 't': '1/4', 'one_site_Z': [np.float64(0.9701703390049771), np.float64(0.93936339148767), np.float64(0.9701703390049771), np.float64(0.9393633914876699)], 'norm': 0.9999999999999999, 'scope': 'Variational upper bound from four-physical-site pure block product, no ground-state or scalar claim'}
+reproduced compass_four_site_trial
+{'energy_per_site_over_J': np.float64(-1.0918560606060606), 'exact_formula': '-1153/1056', 's': '8/33', 't': '1/4', 'one_site_Z': [np.float64(0.9701703390049771), np.float64(0.93936339148767), np.float64(0.9701703390049771), np.float64(0.9393633914876699)], 'norm': 0.9999999999999999, 'scope': 'Variational upper bound from four-physical-site pure block product, no ground-state or scalar claim'}
+[{'L': 4, 'sites': 64, 'energy_per_site_over_K': 1.0918560606060597, 'variance_per_site_over_K_squared': 1.3747886828306801}, {'L': 6, 'sites': 216, 'energy_per_site_over_K': 1.0918560606060677, 'variance_per_site_over_K_squared': 1.3297249596779632}, {'L': 8, 'sites': 512, 'energy_per_site_over_K': 1.0918560606060648, 'variance_per_site_over_K_squared': 1.3297249596779845}]
+reproduced compass_four_site_residual
+{'shape': (2, 2, 2), 'seed': 0, 'iterations': 28, 'converged': True, 'energy_per_site': -1.1262428846864025, 'local_residual_per_site': 8.266927290029439e-19, 'boundary_variance_per_site': [0.5324718456615731, 0.532471845661572, 0.013093874056611199], 'full_variance_per_site': 1.0780375653797563, 'scope': 'Supplied cluster-product trial, J=1; variational search not guaranteed global optimum; full variance retained'}
+{'shape': (2, 2, 2), 'seed': 1, 'iterations': 120, 'converged': False, 'energy_per_site': -1.1239675181410758, 'local_residual_per_site': 8.584356436127314e-09, 'boundary_variance_per_site': [0.5043625052912492, 0.2549240944768011, 0.25492430793728327], 'full_variance_per_site': 1.0142109162896897, 'scope': 'Supplied cluster-product trial, J=1; variational search not guaranteed global optimum; full variance retained'}
+{'shape': (2, 2, 2), 'seed': 2, 'iterations': 1, 'converged': True, 'energy_per_site': -0.8660254037844377, 'local_residual_per_site': 9.084469932666963e-27, 'boundary_variance_per_site': [0.4999999999999987, 0.49999999999999856, 0.4999999999999988], 'full_variance_per_site': 1.499999999999996, 'scope': 'Supplied cluster-product trial, J=1; variational search not guaranteed global optimum; full variance retained'}
+reproduced compass_cluster_variational 2x2x2
+{'shape': (3, 2, 2), 'seed': 0, 'iterations': 28, 'converged': True, 'energy_per_site': -1.1495195302896277, 'local_residual_per_site': 4.672397112783172e-19, 'boundary_variance_per_site': [0.3550392169052025, 0.5419426237403248, 0.01885236411054873], 'full_variance_per_site': 0.915834204756076, 'scope': 'Supplied cluster-product trial, J=1; variational search not guaranteed global optimum; full variance retained'}
+{'shape': (3, 2, 2), 'seed': 1, 'iterations': 120, 'converged': False, 'energy_per_site': -1.1267393035467899, 'local_residual_per_site': 8.171583764524204e-11, 'boundary_variance_per_site': [0.008901735735690686, 0.5330024974803566, 0.5330024991890786], 'full_variance_per_site': 1.0749067324868415, 'scope': 'Supplied cluster-product trial, J=1; variational search not guaranteed global optimum; full variance retained'}
+{'shape': (3, 2, 2), 'seed': 2, 'iterations': 1, 'converged': True, 'energy_per_site': -0.9161867314582377, 'local_residual_per_site': 9.149932984291367e-23, 'boundary_variance_per_site': [0.4221110778236458, 0.5098599932995262, 0.5747812698041751], 'full_variance_per_site': 1.5067523409273473, 'scope': 'Supplied cluster-product trial, J=1; variational search not guaranteed global optimum; full variance retained'}
+reproduced compass_cluster_variational 3x2x2
+{'shape': (4, 2, 2), 'seed': 0, 'iterations': 27, 'converged': True, 'energy_per_site': -1.161430623404632, 'local_residual_per_site': 3.062852530198082e-19, 'boundary_variance_per_site': [0.2662923228161359, 0.5464901329175469, 0.022377619057366627], 'full_variance_per_site': 0.8351600747910495, 'scope': 'Supplied cluster-product trial, J=1; variational search not guaranteed global optimum; full variance retained'}
+{'shape': (4, 2, 2), 'seed': 1, 'iterations': 120, 'converged': False, 'energy_per_site': -1.1269991903483711, 'local_residual_per_site': 2.2312754378430988e-10, 'boundary_variance_per_site': [0.006702750139675582, 0.533291286904543, 0.5332912927289291], 'full_variance_per_site': 1.073285329996275, 'scope': 'Supplied cluster-product trial, J=1; variational search not guaranteed global optimum; full variance retained'}
+{'shape': (4, 2, 2), 'seed': 2, 'iterations': 1, 'converged': True, 'energy_per_site': -0.9591466622203488, 'local_residual_per_site': 1.3157818611071058e-23, 'boundary_variance_per_site': [0.2500000000000085, 0.5000000000000031, 0.5000000000000151], 'full_variance_per_site': 1.2500000000000266, 'scope': 'Supplied cluster-product trial, J=1; variational search not guaranteed global optimum; full variance retained'}
+reproduced compass_cluster_variational 4x2x2
+{'shape': (3, 3, 2), 'seed': 0, 'iterations': 30, 'converged': True, 'energy_per_site': -1.1727887460489717, 'local_residual_per_site': 2.4270969986963376e-19, 'boundary_variance_per_site': [0.3613393195470683, 0.3613393195470675, 0.02544810205662574], 'full_variance_per_site': 0.7481267411507616, 'scope': 'Supplied cluster-product trial, J=1; variational search not guaranteed global optimum; full variance retained'}
+reproduced compass_cluster_variational 3x3x2 0
+{'shape': (2, 2, 2), 'seed': 0, 'average': {'C': 0.8679072532570364, 'dC_dt': 5.341362447431096e-16, 'd2C_dt2': -9.301400048992663}, 'cached_local_words': 301, 'scope': 'Initial exact full-H Heisenberg derivatives in supplied nonstationary cluster-product state, J=1; not equilibrium spectral response'}
+reproduced compass_cluster_neutral_acceleration 2x2x2
+{'shape': (3, 2, 2), 'seed': 0, 'average': {'C': 0.8721131312070503, 'dC_dt': 1.407434856992467e-17, 'd2C_dt2': -7.648128779935213}, 'cached_local_words': 757, 'scope': 'Initial exact full-H Heisenberg derivatives in supplied nonstationary cluster-product state, J=1; not equilibrium spectral response'}
+reproduced compass_cluster_neutral_acceleration 3x2x2
+{'shape': (4, 2, 2), 'seed': 0, 'average': {'C': 0.8768361747599621, 'dC_dt': -1.0925052888190815e-15, 'd2C_dt2': -6.930942463133317}, 'cached_local_words': 1221, 'scope': 'Initial exact full-H Heisenberg derivatives in supplied nonstationary cluster-product state, J=1; not equilibrium spectral response'}
+reproduced compass_cluster_neutral_acceleration 4x2x2
+{'shape': (3, 3, 2), 'seed': 0, 'average': {'C': 0.8764920218215875, 'dC_dt': -5.49713539879293e-16, 'd2C_dt2': -6.008647002672259}, 'cached_local_words': 1656, 'scope': 'Initial exact full-H Heisenberg derivatives in supplied nonstationary cluster-product state, J=1; not equilibrium spectral response'}
+reproduced compass_cluster_neutral_acceleration 3x3x2
+per_element: physical and logical Pauli maps, product moments and projected leakage checked; cluster optimization remains numerical
+per_site: one qubit per original site is retained by the exact dimer coordinate regrouping
+per_mode: trial residuals and initial composite derivatives are diagnostics; no equilibrium scalar pole is certified
+per_block: exact variational and leakage identities; numerical cluster trials retain failures
+lattice_wide: exact product-state full-H variance, no finite-torus extrapolation
+
+----- stderr -----
+

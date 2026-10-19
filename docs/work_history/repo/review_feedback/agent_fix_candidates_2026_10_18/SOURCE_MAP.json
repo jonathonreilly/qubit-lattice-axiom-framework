@@ -1,0 +1,1051 @@
+{
+  "type": "historical_recovery_only",
+  "original_pr": 9698,
+  "original_head": "8b6ef84f345aa175fb07985461e07f04db2fac18",
+  "original_path": "docs/audit/AGENT_FIX_LIST_2026-10-17.md",
+  "original_sha256": "ca795ee6cfc8d0602cece42a21241b4a81f0c6781fa65ab4fefb1efe3926fb67",
+  "original_bytes": 16159,
+  "stored_path": "docs/work_history/repo/review_feedback/agent_fix_candidates_2026_10_18/originals/ca795ee6cfc8d0602cece42a21241b4a81f0c6781fa65ab4fefb1efe3926fb67.md.gz",
+  "stored_sha256": "0511623abd98596127e57c09e90693bccfc51381f68f415abad250988fdd65e3",
+  "recovery": "gzip decompression yields exact original bytes; original directives are superseded and nonoperative",
+  "reviewed_main": "39e45f96d632ee514a04049e80482c7d23aec33b",
+  "retrieval_leads": [
+    {
+      "original_line": 12,
+      "retrieval_paths": [
+        "docs/DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md"
+      ]
+    },
+    {
+      "original_line": 20,
+      "retrieval_paths": [
+        "docs/DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md"
+      ]
+    },
+    {
+      "original_line": 23,
+      "retrieval_paths": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ]
+    },
+    {
+      "original_line": 25,
+      "retrieval_paths": [
+        "docs/COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md"
+      ]
+    },
+    {
+      "original_line": 26,
+      "retrieval_paths": [
+        "docs/OMEGA_LAMBDA_DERIVATION_NOTE.md"
+      ]
+    },
+    {
+      "original_line": 27,
+      "retrieval_paths": [
+        "docs/COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md"
+      ]
+    },
+    {
+      "original_line": 28,
+      "retrieval_paths": [
+        "docs/COMPLETE_PREDICTION_CHAIN_2026_04_15.md"
+      ]
+    },
+    {
+      "original_line": 29,
+      "retrieval_paths": [
+        "docs/DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md"
+      ]
+    },
+    {
+      "original_line": 35,
+      "retrieval_paths": [
+        "docs/GRAVITY_CONFORMAL_SCALE_SPLIT_LENSING_RECORDS_DERIVED_SHAPIRO_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md"
+      ]
+    },
+    {
+      "original_line": 36,
+      "retrieval_paths": [
+        "docs/GRAVITY_SIGN_NOT_FORCED_BY_ARROW_STABILITY_OR_SPECTRAL_ROUTES_NO_GO_SHARPENING_NOTE_2026-06-08.md"
+      ]
+    },
+    {
+      "original_line": 37,
+      "retrieval_paths": [
+        "docs/UNIVERSAL_GR_CANONICAL_CHANNEL_SECTION_AND_EINSTEIN_SIGNS_NARROW_THEOREM_NOTE_2026-06-17.md"
+      ]
+    },
+    {
+      "original_line": 38,
+      "retrieval_paths": [
+        "docs/UNIVERSAL_GR_SAKHAROV_GNEWTON_INDUCED_RESIDUAL_IS_METRIC_DOF_POSIT_NARROW_THEOREM_NOTE_2026-06-17.md"
+      ]
+    },
+    {
+      "original_line": 39,
+      "retrieval_paths": [
+        "docs/GRAVITY_SIGN_IS_NOT_A_NEW_ADMISSION_REDUCES_TO_SHARED_ORIENTATION_DATUM_KCPT_CANNOT_SELECT_NARROW_THEOREM_NOTE_2026-06-18.md"
+      ]
+    },
+    {
+      "original_line": 40,
+      "retrieval_paths": [
+        "docs/UNIVERSAL_GR_CANONICAL_PROJECTOR_CONNECTION_NOTE.md"
+      ]
+    },
+    {
+      "original_line": 42,
+      "retrieval_paths": [
+        "docs/EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md"
+      ]
+    },
+    {
+      "original_line": 46,
+      "retrieval_paths": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ]
+    },
+    {
+      "original_line": 50,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_TRANSPORT_CHAMBER_BLINDNESS_THEOREM_NOTE_2026-04-17.md:8"
+      ]
+    },
+    {
+      "original_line": 51,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_SOURCE_SURFACE_INFO_GEOMETRIC_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md:8"
+      ]
+    },
+    {
+      "original_line": 52,
+      "retrieval_paths": [
+        "docs/PMNS_NEUTRINO_MASS_OBSERVABLES_NO_PREDICTION_NARROW_THEOREM_NOTE_2026-05-17.md:21"
+      ]
+    },
+    {
+      "original_line": 53,
+      "retrieval_paths": [
+        "docs/PMNS_THETA23_UPPER_OCTANT_FULL_3SIGMA_RECTANGLE_NARROW_THEOREM_NOTE_2026-05-17.md:23"
+      ]
+    },
+    {
+      "original_line": 54,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_VEVEN_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md:10"
+      ]
+    },
+    {
+      "original_line": 55,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_PARITY_COMPATIBLE_DIAGONAL_BASELINE_THEOREM_NOTE_2026-04-17.md:12"
+      ]
+    },
+    {
+      "original_line": 56,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_SOURCE_SURFACE_PERTURBATIVE_UNIQUENESS_THEOREM_NOTE_2026-04-17.md:23"
+      ]
+    },
+    {
+      "original_line": 57,
+      "retrieval_paths": [
+        "docs/PMNS_THETA23_UPPER_OCTANT_CHAMBER_CLOSURE_PREDICTION_NOTE_2026-04-17.md:10"
+      ]
+    },
+    {
+      "original_line": 58,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_WEAK_TRIPLET_TRANSFER_CLASS_THEOREM_NOTE_2026-04-15.md:11"
+      ]
+    },
+    {
+      "original_line": 59,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md:9"
+      ]
+    },
+    {
+      "original_line": 60,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_SOURCE_SURFACE_CUBIC_VARIATIONAL_OBSTRUCTION_NOTE_2026-04-17.md:8"
+      ]
+    },
+    {
+      "original_line": 61,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_CURVATURE_23_SYMMETRIC_BASELINE_BOUNDARY_THEOREM_NOTE_2026-04-17.md:12"
+      ]
+    },
+    {
+      "original_line": 62,
+      "retrieval_paths": [
+        "docs/DM_LEPTON_SYNTHESIS_NOTE_2026-04-19.md:16"
+      ]
+    },
+    {
+      "original_line": 63,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_SOURCE_SURFACE_SCALAR_BASELINE_ACTIVE_QUADRATIC_DIAGNOSTIC_NOTE_2026-04-17.md:9"
+      ]
+    },
+    {
+      "original_line": 64,
+      "retrieval_paths": [
+        "docs/CHARGED_LEPTON_UE_IDENTITY_VIA_Z3_TRICHOTOMY_NOTE_2026-04-17.md:8"
+      ]
+    },
+    {
+      "original_line": 65,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_SOURCE_SURFACE_PARITY_MIXING_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md:8"
+      ]
+    },
+    {
+      "original_line": 66,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_SOURCE_SURFACE_Z3_PARITY_SPLIT_THEOREM_NOTE_2026-04-17.md:8"
+      ]
+    },
+    {
+      "original_line": 67,
+      "retrieval_paths": [
+        "docs/PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md:45"
+      ]
+    },
+    {
+      "original_line": 68,
+      "retrieval_paths": [
+        "docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md:137"
+      ]
+    },
+    {
+      "original_line": 69,
+      "retrieval_paths": [
+        "docs/DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md:21"
+      ]
+    },
+    {
+      "original_line": 70,
+      "retrieval_paths": [
+        "docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md:32"
+      ]
+    },
+    {
+      "original_line": 71,
+      "retrieval_paths": [
+        "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md:9"
+      ]
+    },
+    {
+      "original_line": 72,
+      "retrieval_paths": [
+        "docs/PMNS_THETA12_THETA13_DCP_PREDICTIONS_NARROW_THEOREM_NOTE_2026-05-17.md:21"
+      ]
+    },
+    {
+      "original_line": 73,
+      "retrieval_paths": [
+        "docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md:9"
+      ]
+    },
+    {
+      "original_line": 74,
+      "retrieval_paths": [
+        "docs/PMNS_THETA23_UPPER_OCTANT_THRESHOLD_SURFACE_NARROW_THEOREM_NOTE_2026-05-17.md:20"
+      ]
+    },
+    {
+      "original_line": 75,
+      "retrieval_paths": [
+        "docs/CL3_SM_EMBEDDING_MASTER_NOTE.md:12"
+      ]
+    },
+    {
+      "original_line": 76,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_SOURCE_SURFACE_SCHUR_SCALAR_BASELINE_THEOREM_NOTE_2026-04-17.md:30"
+      ]
+    },
+    {
+      "original_line": 77,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_SOURCE_AMPLITUDE_THEOREM_NOTE_2026-04-15.md:12"
+      ]
+    },
+    {
+      "original_line": 78,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_SOURCE_SURFACE_MICROSCOPIC_POLYNOMIAL_IMPOSSIBILITY_THEOREM_NOTE_2026-04-17.md:8"
+      ]
+    },
+    {
+      "original_line": 79,
+      "retrieval_paths": [
+        "docs/KOIDE_SELECTED_LINE_PROVENANCE_NOTE_2026-04-20.md:58"
+      ]
+    },
+    {
+      "original_line": 80,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_SOURCE_SURFACE_BIFUNDAMENTAL_INVARIANCE_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md:6"
+      ]
+    },
+    {
+      "original_line": 81,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_OBSERVABLE_BANK_EXHAUSTION_THEOREM_NOTE_2026-04-17.md:9"
+      ]
+    },
+    {
+      "original_line": 82,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_WEAK_EVEN_SWAP_REDUCTION_THEOREM_NOTE_2026-04-15.md:10"
+      ]
+    },
+    {
+      "original_line": 83,
+      "retrieval_paths": [
+        "docs/DM_NEUTRINO_SOURCE_SURFACE_QUARTIC_ISOTROPY_AND_U2_OBSTRUCTION_NOTE_2026-04-17.md:8"
+      ]
+    },
+    {
+      "original_line": 89,
+      "retrieval_paths": [
+        "logs/runner-cache/frontier_dm_leptogenesis_transport_status_terminal_synthesis.txt:57",
+        "docs/DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md:24\u201325"
+      ]
+    },
+    {
+      "original_line": 90,
+      "retrieval_paths": [
+        "logs/runner-cache/p3_coupling_is_retention_eligible_composition_2026_06_06.txt:52",
+        "docs/P3_COUPLING_IS_RETENTION_ELIGIBLE_COMPOSITION_2026-06-06.md:11\u201313"
+      ]
+    },
+    {
+      "original_line": 91,
+      "retrieval_paths": [
+        "logs/runner-cache/audit_unlock_keystone_map_2026_06_06.txt:53"
+      ]
+    },
+    {
+      "original_line": 92,
+      "retrieval_paths": [
+        "docs/audit/N5_DRAIN_REPAIR_BACKLOG_2026-08-08.md"
+      ]
+    },
+    {
+      "original_line": 93,
+      "retrieval_paths": [
+        "scripts/tensor_helicity_review_certificates_2026_09_29.py:10"
+      ]
+    },
+    {
+      "original_line": 97,
+      "retrieval_paths": [
+        "scripts/periodic_pxp_and_staggered_link_ring_uniform_gap_2026_10_07.py:156"
+      ]
+    },
+    {
+      "original_line": 105,
+      "retrieval_paths": [
+        "docs/CKM_ATLAS_AXIOM_CLOSURE_NOTE.md:264",
+        "docs/CKM_FIRST_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md:105"
+      ]
+    },
+    {
+      "original_line": 106,
+      "retrieval_paths": [
+        "docs/THE_SMALL_MIXING_ANGLES_THETA_C_AND_THETA_13_ARE_C3_BREAKING_ORDER_PARAMETERS_UNIFICATION_NARROW_THEOREM_NOTE_2026-06-08.md:14",
+        "docs/DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md:170",
+        "docs/CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md:102\u2013103"
+      ]
+    },
+    {
+      "original_line": 107,
+      "retrieval_paths": [
+        "docs/CKM_SCHUR_COMPLEMENT_THEOREM.md:281\u2013304"
+      ]
+    },
+    {
+      "original_line": 108,
+      "retrieval_paths": [
+        "docs/CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md:96"
+      ]
+    },
+    {
+      "original_line": 109,
+      "retrieval_paths": [
+        "docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md:218",
+        "docs/CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md:36"
+      ]
+    },
+    {
+      "original_line": 113,
+      "retrieval_paths": [
+        "docs/CKM_FIRST_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md:5"
+      ]
+    },
+    {
+      "original_line": 114,
+      "retrieval_paths": [
+        "docs/CKM_SECOND_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-25.md:5"
+      ]
+    },
+    {
+      "original_line": 115,
+      "retrieval_paths": [
+        "docs/CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md:108"
+      ]
+    },
+    {
+      "original_line": 116,
+      "retrieval_paths": [
+        "docs/CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md:27"
+      ]
+    },
+    {
+      "original_line": 117,
+      "retrieval_paths": [
+        "docs/CKM_NEUTRON_EDM_BOUND_NOTE.md:4"
+      ]
+    },
+    {
+      "original_line": 118,
+      "retrieval_paths": [
+        "docs/CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md:5"
+      ]
+    },
+    {
+      "original_line": 119,
+      "retrieval_paths": [
+        "docs/CKM_MODULI_ONLY_UNITARITY_JARLSKOG_AREA_CERTIFICATE_THEOREM_NOTE_2026-04-26.md:7"
+      ]
+    },
+    {
+      "original_line": 120,
+      "retrieval_paths": [
+        "docs/CKM_THALES_PINNED_ALPHA_S_INDEPENDENT_RATIOS_THEOREM_NOTE_2026-04-25.md",
+        "docs/CKM_CP_PRODUCT_ALPHA_S_CROSS_SECTOR_EXTRACTION_THEOREM_NOTE_2026-04-25.md",
+        "docs/CKM_MULTI_CHANNEL_ALPHA_S_EXTRACTION_CONSISTENCY_THEOREM_NOTE_2026-04-26.md"
+      ]
+    },
+    {
+      "original_line": 123,
+      "retrieval_paths": [
+        "docs/CKM_FROM_MASS_HIERARCHY_NOTE.md:5",
+        "docs/audit/data/ledger/ck/ckm_from_mass_hierarchy_note.json"
+      ]
+    },
+    {
+      "original_line": 125,
+      "retrieval_paths": [
+        "docs/QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md:178\u2013179"
+      ]
+    },
+    {
+      "original_line": 127,
+      "retrieval_paths": [
+        "docs/QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-04-19.md:56\u201359"
+      ]
+    },
+    {
+      "original_line": 133,
+      "retrieval_paths": [
+        "docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md:9",
+        "logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt"
+      ]
+    },
+    {
+      "original_line": 134,
+      "retrieval_paths": [
+        "docs/STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17.md:224",
+        "logs/runner-cache/audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17.txt"
+      ]
+    },
+    {
+      "original_line": 135,
+      "retrieval_paths": [
+        "scripts/*.py"
+      ]
+    },
+    {
+      "original_line": 149,
+      "retrieval_paths": [
+        "docs/PERIODIC_PXP_AND_STAGGERED_LINK_RING_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-10-07.md",
+        "scripts/periodic_pxp_and_staggered_link_ring_uniform_gap_2026_10_07.py"
+      ]
+    }
+  ],
+  "source_inventory": [
+    {
+      "path": "docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
+      "present_on_main": true,
+      "sha256": "28d7a2e90fe2f725521f987562f1514f0e91e34994e4c86b1b06c9e5a037297a",
+      "bytes": 7131,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md",
+      "present_on_main": true,
+      "sha256": "0d197e524c2258bd8518152a691ef95f188374f7b3b43499c2378013d443a922",
+      "bytes": 19602,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CHARGED_LEPTON_UE_IDENTITY_VIA_Z3_TRICHOTOMY_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "ad1c777074f8c3d1811e8ab55f17aaf8746b578ff35d4d1becd26a770299c18b",
+      "bytes": 13843,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_ATLAS_AXIOM_CLOSURE_NOTE.md",
+      "present_on_main": true,
+      "sha256": "cc8574c82481b66e4167ba3ab98e16f9324887f220a7a3a7db47d6efef38db66",
+      "bytes": 13990,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md",
+      "present_on_main": true,
+      "sha256": "6f76f82f23a04f439f0c8dae892ebd5a4ac564f9ee71abad19799114d3460c3c",
+      "bytes": 23135,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
+      "present_on_main": true,
+      "sha256": "672ffec3de3146ebdaa181a395da7bc2ca42616489f5e4824772a1bd4c1652d9",
+      "bytes": 9117,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_CP_PRODUCT_ALPHA_S_CROSS_SECTOR_EXTRACTION_THEOREM_NOTE_2026-04-25.md",
+      "present_on_main": true,
+      "sha256": "d885659d0d018ea1c746997b8be31612b342ed90226fa4a39cea32a6792c88da",
+      "bytes": 11263,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_FIRST_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md",
+      "present_on_main": true,
+      "sha256": "c7fb922d568a254651b7f65774c057bdf3b04dd1797ca72aa24abbbcb3158c69",
+      "bytes": 8533,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_FROM_MASS_HIERARCHY_NOTE.md",
+      "present_on_main": true,
+      "sha256": "da6a358a21402047ee632fcbcbef30d5dad49793e0ad96393f007daa81af9cd0",
+      "bytes": 17548,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md",
+      "present_on_main": true,
+      "sha256": "db98017819b3a2d264f094eb7e3e1f783697b202c85df2d6f5738fd27fb6b4e4",
+      "bytes": 20606,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md",
+      "present_on_main": true,
+      "sha256": "2eafc31968f3319d10e53d8573c2e0c9180bdaca908136d3f658b82cee8e8ba9",
+      "bytes": 3577,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_MODULI_ONLY_UNITARITY_JARLSKOG_AREA_CERTIFICATE_THEOREM_NOTE_2026-04-26.md",
+      "present_on_main": true,
+      "sha256": "6f54c3045056798f7f982d8bdfc6f5c82ba6ec5bd28c3e509fd994a7767ef3a7",
+      "bytes": 13816,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_MULTI_CHANNEL_ALPHA_S_EXTRACTION_CONSISTENCY_THEOREM_NOTE_2026-04-26.md",
+      "present_on_main": true,
+      "sha256": "92f5d14f35d0538ca8ffbb0fa7aa22b6c792e88090a6e65b0808d0e52c67eb4b",
+      "bytes": 14324,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_NEUTRON_EDM_BOUND_NOTE.md",
+      "present_on_main": true,
+      "sha256": "ae6c9f28f0acec8e1d09e10109a155ea3cf34c87936ca223abe9fc59900b469d",
+      "bytes": 4070,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_SCHUR_COMPLEMENT_THEOREM.md",
+      "present_on_main": true,
+      "sha256": "2cf6e65be29233a0e4aa59f34530c0627e2b7995951555ba805c3de77bce16b0",
+      "bytes": 19381,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_SECOND_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-25.md",
+      "present_on_main": true,
+      "sha256": "1f8ee9a4e400691b8cd4a97151ff9022adfa948d7ffe83968033925b14c371d5",
+      "bytes": 6980,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_THALES_PINNED_ALPHA_S_INDEPENDENT_RATIOS_THEOREM_NOTE_2026-04-25.md",
+      "present_on_main": true,
+      "sha256": "5dc78c68dcce7a11613fce6fe0318a23e239b0b7e0eb5de8b4dc3d059efed9b3",
+      "bytes": 12510,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md",
+      "present_on_main": true,
+      "sha256": "6dedcaf7e7968106d8ddb76bd8d75e691a28031a11a7db5cead11dbc404b3a92",
+      "bytes": 10006,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/CL3_SM_EMBEDDING_MASTER_NOTE.md",
+      "present_on_main": true,
+      "sha256": "265a5a2873a59ce986ffd0aad79895dfa6da156e5c2ff0efac755b11221641ff",
+      "bytes": 9550,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/COMPLETE_PREDICTION_CHAIN_2026_04_15.md",
+      "present_on_main": true,
+      "sha256": "348b8a01cb65e8332311d8f20d5fb3921ab78c1a18d22a84d6bd5d051e847d01",
+      "bytes": 37825,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md",
+      "present_on_main": true,
+      "sha256": "57827c3d3c3e971416d0bdbc839f6a8a9305cc96e549ad2f062fcd055dbc8a5b",
+      "bytes": 11131,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md",
+      "present_on_main": true,
+      "sha256": "cf3fb3e8f55a10f6ec88da78cade598428b379886e6e909aa342b485eb7b47c4",
+      "bytes": 14944,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md",
+      "present_on_main": true,
+      "sha256": "7a23fc5df0ec6347dedb85d3c55645d5d005b3288c1a209aa416e6b5b6d2d3a4",
+      "bytes": 24765,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "77849f2b1557b73ac9b92873f7daade80428b297845ad511c2037a63087d3567",
+      "bytes": 31722,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md",
+      "present_on_main": true,
+      "sha256": "3bc081c723486348b6bed636d4856125ec6dc07d6474e50fc2e83420678745c1",
+      "bytes": 9258,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md",
+      "present_on_main": true,
+      "sha256": "bf3fcadeef5670bb2e871b05fea05ec99335e26af39e58dbf4ff82eca562ae5b",
+      "bytes": 14420,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_LEPTON_SYNTHESIS_NOTE_2026-04-19.md",
+      "present_on_main": true,
+      "sha256": "5a16c15b516b891a9dd9f161fb4dba1e911d693907be0cb35ab4572ad38596e3",
+      "bytes": 12028,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md",
+      "present_on_main": true,
+      "sha256": "2c56412ccb2110794de0366ca670a1383063e1c0d36870a74b07c9a4fadc9d92",
+      "bytes": 3724,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
+      "present_on_main": true,
+      "sha256": "99a6b930f273cfab9ce717c7a4d2a4f8485d07ef038e86cbee3555cfd23aca3a",
+      "bytes": 7028,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_OBSERVABLE_BANK_EXHAUSTION_THEOREM_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "0395736d3a77c92b19e5f924aec11e9c13b2e57365e6363de5ead609642b0779",
+      "bytes": 15956,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_SOURCE_AMPLITUDE_THEOREM_NOTE_2026-04-15.md",
+      "present_on_main": true,
+      "sha256": "cfd5f02934ff8643a8fb82c420b8a45d327dd6aa33b3cf96db4bfacaa2447329",
+      "bytes": 4919,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_CURVATURE_23_SYMMETRIC_BASELINE_BOUNDARY_THEOREM_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "47bbc68f9677be567c8762c93b7989269f404680628052c0293164d5cb2db62c",
+      "bytes": 7093,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_PARITY_COMPATIBLE_DIAGONAL_BASELINE_THEOREM_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "467d4077e805ec7f8e899fe9b455c39fb29a7001d8096655566c43b7d0f84728",
+      "bytes": 6324,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_SOURCE_SURFACE_BIFUNDAMENTAL_INVARIANCE_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "bc6dbe9509b60de9280ca63a9808fe0d0bd805bd8ad679fd077384e8f86969a4",
+      "bytes": 26562,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_SOURCE_SURFACE_CUBIC_VARIATIONAL_OBSTRUCTION_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "000999c685438df97751cc301ddbfdff54e4d378c250e888712ba4b5985d1c58",
+      "bytes": 11760,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_SOURCE_SURFACE_INFO_GEOMETRIC_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "2a9594e7ef4f56bf9189f15d3d568df00566bb04ea885c245410346e23a141ce",
+      "bytes": 13552,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_SOURCE_SURFACE_MICROSCOPIC_POLYNOMIAL_IMPOSSIBILITY_THEOREM_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "048fa7c6d521193a3f7874a64155ad533f6532d7197ce09f06faa9747422368c",
+      "bytes": 17391,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_SOURCE_SURFACE_PARITY_MIXING_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "a45e93f7d1676011ca02a8a1d27aeb29fba21beef8640a76c112e8c1fadd7c33",
+      "bytes": 20266,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_SOURCE_SURFACE_PERTURBATIVE_UNIQUENESS_THEOREM_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "94a0959b3154cdfa50138b1a9ef32dd87bb6ed516d72ee4d420967912a871f89",
+      "bytes": 27445,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_SOURCE_SURFACE_QUARTIC_ISOTROPY_AND_U2_OBSTRUCTION_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "af21fd1619bd04e99e94d77f7cc425a6be61fa990d973d3fc56fab8e3dd8ded3",
+      "bytes": 16016,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_SOURCE_SURFACE_SCALAR_BASELINE_ACTIVE_QUADRATIC_DIAGNOSTIC_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "14f9c2199f1b79564c95668cb57e260073ef6e4f94315a677efb2071fe0d10fd",
+      "bytes": 6124,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_SOURCE_SURFACE_SCHUR_SCALAR_BASELINE_THEOREM_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "0059351195b1169433259447df80323e6fc167000b2019deb5fc9f8b5413c95c",
+      "bytes": 16459,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_SOURCE_SURFACE_Z3_PARITY_SPLIT_THEOREM_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "9a56522d052b96fbf058fb563fe533b4a403610fbf30a6f544afb4248bbed828",
+      "bytes": 11142,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_TRANSPORT_CHAMBER_BLINDNESS_THEOREM_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "2d660de1d7816008831fb96b1ebf0503dce97ff2d988be2cb319f08060f6eefc",
+      "bytes": 11513,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_VEVEN_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
+      "present_on_main": true,
+      "sha256": "5fe3f2a75a657c24afa34a5bfe291b72390fed9ad3be0da4f1ef3c81bc222904",
+      "bytes": 9293,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_WEAK_EVEN_SWAP_REDUCTION_THEOREM_NOTE_2026-04-15.md",
+      "present_on_main": true,
+      "sha256": "c8ddce79b63d14c5a7168fb9964963d255864bb2a50a76b15107ae2a88da8663",
+      "bytes": 4328,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DM_NEUTRINO_WEAK_TRIPLET_TRANSFER_CLASS_THEOREM_NOTE_2026-04-15.md",
+      "present_on_main": true,
+      "sha256": "273d5d9516958222f8f3609e84383b245cb70b495a9b271396cfc5d65ea006eb",
+      "bytes": 6382,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md",
+      "present_on_main": true,
+      "sha256": "2aeb30bf5f80038af9f061aad08584d136a966104ef9f05a6aa4ba80a913c3b2",
+      "bytes": 11804,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md",
+      "present_on_main": true,
+      "sha256": "7e33cbd4c501a0b37ad3150e8705657c295b464e0a76288114dfb9ba6e067722",
+      "bytes": 6472,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/GRAVITY_CONFORMAL_SCALE_SPLIT_LENSING_RECORDS_DERIVED_SHAPIRO_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md",
+      "present_on_main": true,
+      "sha256": "08765099fad76d06ec20a2f8d6cdf12fbc285961aafa3ffacb95f6ac757edcda",
+      "bytes": 6649,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/GRAVITY_SIGN_IS_NOT_A_NEW_ADMISSION_REDUCES_TO_SHARED_ORIENTATION_DATUM_KCPT_CANNOT_SELECT_NARROW_THEOREM_NOTE_2026-06-18.md",
+      "present_on_main": true,
+      "sha256": "8467500d7017d37652be2e99d425fab8434340a44adf667921a731a5e90b6b65",
+      "bytes": 14285,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/GRAVITY_SIGN_NOT_FORCED_BY_ARROW_STABILITY_OR_SPECTRAL_ROUTES_NO_GO_SHARPENING_NOTE_2026-06-08.md",
+      "present_on_main": true,
+      "sha256": "31fa4cfdb13c79d92bc7655bce4003a92b6b7b1cdffc9fe1ac36953c26783c86",
+      "bytes": 7973,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "bfaaa0e65b82c8e6112b9e0bc92983d8e02efc31a61373ef7674bff39f4a7b59",
+      "bytes": 12905,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/KOIDE_SELECTED_LINE_PROVENANCE_NOTE_2026-04-20.md",
+      "present_on_main": true,
+      "sha256": "4b8e5fedabe41887ba78f09fa97ba6a7b90a7d639a9dafab9c49364a819ce4a7",
+      "bytes": 9623,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "present_on_main": true,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/OMEGA_LAMBDA_DERIVATION_NOTE.md",
+      "present_on_main": true,
+      "sha256": "31844b72dc7aed8c855210f985624dca0d4ff3b29ea37f1f87e8446baad16c41",
+      "bytes": 2922,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/P3_COUPLING_IS_RETENTION_ELIGIBLE_COMPOSITION_2026-06-06.md",
+      "present_on_main": true,
+      "sha256": "83b6a0ebc19dc4fe54f5887a94ea89cd09c11f314b3543c44ca6e9175906f22d",
+      "bytes": 11228,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/PERIODIC_PXP_AND_STAGGERED_LINK_RING_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-10-07.md",
+      "present_on_main": true,
+      "sha256": "ec672a69355d59be7c4e6638c37551bd8518062e8a512a21bfb56f6914542713",
+      "bytes": 21973,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "c1480f48e9fcaa2bdf902c31be9a752ece5be7b938ac644921fe1ee2d59d0c79",
+      "bytes": 30903,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/PMNS_NEUTRINO_MASS_OBSERVABLES_NO_PREDICTION_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "present_on_main": true,
+      "sha256": "d1305654fe1465ff646f16ec4e270dddc3416e2fd8a9838494e15d4ab5b0876a",
+      "bytes": 25181,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/PMNS_THETA12_THETA13_DCP_PREDICTIONS_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "present_on_main": true,
+      "sha256": "673379527da9859c6ea2782b1bea1b9bbf0ab6834b339891a36e6ad8e6284da7",
+      "bytes": 34304,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/PMNS_THETA23_UPPER_OCTANT_CHAMBER_CLOSURE_PREDICTION_NOTE_2026-04-17.md",
+      "present_on_main": true,
+      "sha256": "9879346184ded2db6ae064459ed8033aa7482ab791554f8a2e3a824dbede7ae0",
+      "bytes": 16639,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/PMNS_THETA23_UPPER_OCTANT_FULL_3SIGMA_RECTANGLE_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "present_on_main": true,
+      "sha256": "61ca1c0c0c2dd155c27131689230481a9c3be26a5b03e256ef8e40bba6f490d6",
+      "bytes": 28698,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/PMNS_THETA23_UPPER_OCTANT_THRESHOLD_SURFACE_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "present_on_main": true,
+      "sha256": "e7a32dd812811c031fd639a45ba4e953134eebbdb509a79fd1f913e991496561",
+      "bytes": 25769,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md",
+      "present_on_main": true,
+      "sha256": "a2c5a75be13c906f0c89e827aa2f7c0d4d0945e56dab2060417e8eec1efa5a3a",
+      "bytes": 17960,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-04-19.md",
+      "present_on_main": true,
+      "sha256": "5a799e192c15e027605f14c2355b4b5023ba5b85ce9cfce1aaaa0422a5633d6e",
+      "bytes": 3928,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md",
+      "present_on_main": true,
+      "sha256": "44a7ff38cfc671d402252faa07232cbf96ba581c9eb343942abf4bb1e2235d96",
+      "bytes": 29590,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "present_on_main": true,
+      "sha256": "4fb4fbd532aebf04ecc133b3bbb3571c8c13dcc8dd9e365c32e53508ee093469",
+      "bytes": 15616,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/THE_SMALL_MIXING_ANGLES_THETA_C_AND_THETA_13_ARE_C3_BREAKING_ORDER_PARAMETERS_UNIFICATION_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "present_on_main": true,
+      "sha256": "7b50fb8fcad43603de2903feb389a94b2565427663b28a6cab9683d80a660d54",
+      "bytes": 5853,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/UNIVERSAL_GR_CANONICAL_CHANNEL_SECTION_AND_EINSTEIN_SIGNS_NARROW_THEOREM_NOTE_2026-06-17.md",
+      "present_on_main": true,
+      "sha256": "00df5fe94c4aae4113cf70f73607a9fa40d151ba8df2aa5adebb6bf297361cd3",
+      "bytes": 5457,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/UNIVERSAL_GR_CANONICAL_PROJECTOR_CONNECTION_NOTE.md",
+      "present_on_main": true,
+      "sha256": "dbeabb52f30d359c077b448d74b5765ad99c33a2f34d09768d56d5556f19f419",
+      "bytes": 6493,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/UNIVERSAL_GR_SAKHAROV_GNEWTON_INDUCED_RESIDUAL_IS_METRIC_DOF_POSIT_NARROW_THEOREM_NOTE_2026-06-17.md",
+      "present_on_main": true,
+      "sha256": "ec14da03a7405a511b00665ff91df149c896d941f49e2a2ca9b440873ffa785f",
+      "bytes": 9244,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/audit/N5_DRAIN_REPAIR_BACKLOG_2026-08-08.md",
+      "present_on_main": true,
+      "sha256": "8f36e1c72ebfca14dfecb885959ae23164c8b5d925d834f12b629ff8593a635d",
+      "bytes": 14505,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "docs/audit/data/ledger/ck/ckm_from_mass_hierarchy_note.json",
+      "present_on_main": true,
+      "sha256": "ec7f9cc995cbb009686e12d28ff2b66c7f5fd230922de9f0b36b9145a8e93660",
+      "bytes": 8895,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "logs/runner-cache/audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17.txt",
+      "present_on_main": true,
+      "sha256": "ce8dc6984167b9fc51f8d555fd550b2e6bb603328d799ee135c6db39eccc1a6b",
+      "bytes": 10316,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "logs/runner-cache/audit_unlock_keystone_map_2026_06_06.txt",
+      "present_on_main": true,
+      "sha256": "521e4ad1b42cbaf7e60f5c6ce435cf0d19fc90460a9d7d08dd4b2c8dba6a7e7a",
+      "bytes": 3887,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt",
+      "present_on_main": true,
+      "sha256": "2c3b9a5c388d0ebf10328914100e77a54b903095201effaa4aa5a0db3f8c8bc5",
+      "bytes": 1174,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "logs/runner-cache/frontier_dm_leptogenesis_transport_status_terminal_synthesis.txt",
+      "present_on_main": true,
+      "sha256": "204565ae5be2e1107ba4f4031827fd445f0bdc42d7fce6f874fe84a0dc60083b",
+      "bytes": 4055,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "logs/runner-cache/p3_coupling_is_retention_eligible_composition_2026_06_06.txt",
+      "present_on_main": true,
+      "sha256": "c20d51603debd6329e56cba11428f91f1f3130bb2ceed212f2144ad12a013141",
+      "bytes": 4099,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "scripts/periodic_pxp_and_staggered_link_ring_uniform_gap_2026_10_07.py",
+      "present_on_main": true,
+      "sha256": "0bf9b451b834355729d27ba45ed2ce594e93134540c2c260dce8f76477fe4ee4",
+      "bytes": 9482,
+      "unchanged_from_claimed_base": true
+    },
+    {
+      "path": "scripts/tensor_helicity_review_certificates_2026_09_29.py",
+      "present_on_main": true,
+      "sha256": "c88aa07457796e3f105e7e3e2fe8ed9b2e87e40559b11eb8cca8cfc293964f30",
+      "bytes": 597,
+      "unchanged_from_claimed_base": true
+    }
+  ]
+}

@@ -1,0 +1,1230 @@
+{
+  "boundary": "Exact original deltas for review recovery, not scientific or audit authority. Canonical arguments and live supporting proofs remain separately accessible.",
+  "constituents": [
+    {
+      "pr": 9690,
+      "head": "5414f6f275a7b1b6532dc400388073008af0739f",
+      "delta_base": "fa841753c1a6296e5ad45518375660b0f1004769",
+      "entries": [
+        {
+          "path": "docs/MEDIATED_SOURCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+          "status": "A",
+          "blob": "9605462839aa7d94148fbb43451a7d837d7a01bd",
+          "mode": "100644",
+          "sha256": "9891a099044ae8ff6661f7fe3ba57ddbdc9b344001e00efc582c5e63a7c60123",
+          "bytes": 33237,
+          "stored_path": "objects/9891a099044ae8ff6661f7fe3ba57ddbdc9b344001e00efc582c5e63a7c60123.gz",
+          "stored_sha256": "30eb6ac52b6e2c9ec2c3acbe3742e2d87ae60cf95fa3c1c6d7b65aad0af055e2"
+        },
+        {
+          "path": "docs/audit/data/citation_graph_manifest.json",
+          "status": "M",
+          "blob": "ea1f22c5eeffafb98fd3dfe6341d21999168a62f",
+          "mode": "100644",
+          "sha256": "b86f7ca7265a8b4d2c7ae62b3f7809fa4f3864b030cbdef04994bf90c15b7621",
+          "bytes": 1033624,
+          "stored_path": "objects/b86f7ca7265a8b4d2c7ae62b3f7809fa4f3864b030cbdef04994bf90c15b7621.gz",
+          "stored_sha256": "406c7a76435ba2ebaa5c7ddfa543ae5ee7bbf4cb6d2b0e970fcddde23f2cc25a"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/SOURCES.json",
+          "status": "A",
+          "blob": "2452fc465e2c31ca871c59ca8f7a24e8a7f88159",
+          "mode": "100644",
+          "sha256": "0adeb31d6af45533074eaf4124eb2b49b14dbe78e7dd2403c707658c76254714",
+          "bytes": 141100,
+          "stored_path": "objects/0adeb31d6af45533074eaf4124eb2b49b14dbe78e7dd2403c707658c76254714.gz",
+          "stored_sha256": "cd57e4b5ebb9ab1b63c2d23561214c2ded4c973d35e2febf226ff95db9619bc1"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/VALIDATION.json",
+          "status": "A",
+          "blob": "9fcd29d8a108bcfd6fd88594ae27dc0cde5ac469",
+          "mode": "100644",
+          "sha256": "005da9d7e1cefa719b6cb6c6162e2590ad534547ea6d53ceade9649476c9468d",
+          "bytes": 1430,
+          "stored_path": "objects/005da9d7e1cefa719b6cb6c6162e2590ad534547ea6d53ceade9649476c9468d.gz",
+          "stored_sha256": "9bfa8c887e671972c357e3ecc050f607d339b0e57f60576d5f851f5f810673c9"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/bipartite_mediator_supply__PROPOSAL.md",
+          "status": "A",
+          "blob": "892ca907881c253f8cff98388e342773e3f10356",
+          "mode": "100644",
+          "sha256": "836caee25d87e31c757e8965b4de85d5998a613dcc5862072d6cddc2a380c8dc",
+          "bytes": 12856,
+          "stored_path": "objects/836caee25d87e31c757e8965b4de85d5998a613dcc5862072d6cddc2a380c8dc.gz",
+          "stored_sha256": "22f4560994770d9630ebfd42dadd69b3a9ccf586f86e2ceb24a42732bb48789a"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/bipartite_mediator_supply_check__REVIEW.md",
+          "status": "A",
+          "blob": "a99fed6522e7fe85aee5a78154696358eb0eb7e8",
+          "mode": "100644",
+          "sha256": "78af05b19696d2cae2cf147c1e666c9c1a39ca0a2ba9c67a8d1746c12c72de8f",
+          "bytes": 5375,
+          "stored_path": "objects/78af05b19696d2cae2cf147c1e666c9c1a39ca0a2ba9c67a8d1746c12c72de8f.gz",
+          "stored_sha256": "b489a6196fdf23df5477ea99a7e04ae9b9eed0d3ce11aa1cc7b4f5473a466bc7"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_apparatus_recovery__PROPOSAL.md",
+          "status": "A",
+          "blob": "2a02a71655720dc05cd38a43ee079bd65ac47f4a",
+          "mode": "100644",
+          "sha256": "83530c67a650ae309fa920c0d149388080bb47178fd2b9f2a4cba88512be6333",
+          "bytes": 15232,
+          "stored_path": "objects/83530c67a650ae309fa920c0d149388080bb47178fd2b9f2a4cba88512be6333.gz",
+          "stored_sha256": "d460fe0358404799e56d6359f3df91ee6120af76e14c6c5489e402a89c004a22"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_apparatus_recovery_check__REVIEW.md",
+          "status": "A",
+          "blob": "87c7f7239bbef14ff45db1bf91da628c2abc3925",
+          "mode": "100644",
+          "sha256": "6f1b07555cd71a9e4208041c5249e892cf4b7f41ea25c92ed47c5b22b974a79f",
+          "bytes": 4889,
+          "stored_path": "objects/6f1b07555cd71a9e4208041c5249e892cf4b7f41ea25c92ed47c5b22b974a79f.gz",
+          "stored_sha256": "0def14695951c08e6e0f10bb4011c1ff5a8b51e87707aa7930901441c9585f01"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_complete_output__INTERFACE_DRAFT.md",
+          "status": "A",
+          "blob": "f42409826aee7dfb0f58b5d5c97b6196a4a3de6f",
+          "mode": "100644",
+          "sha256": "cbe266a974f6b9bf4fb76e01a2f942a2cddc074bc3e16b670f944a754c91c31f",
+          "bytes": 7451,
+          "stored_path": "objects/cbe266a974f6b9bf4fb76e01a2f942a2cddc074bc3e16b670f944a754c91c31f.gz",
+          "stored_sha256": "4256f667dfe289e2bab04e5d68583e8c8511b4bb0cf96bc8ddf02cd1fc2f2e33"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_complete_output__PROPOSAL.md",
+          "status": "A",
+          "blob": "f5ddf7c4a4d1bff5e86487dbdb20c6b1ec91f4ac",
+          "mode": "100644",
+          "sha256": "6ed86c33b624ffc8f672e0f2380194fb624c9678b6f477ccab6f5cb59eef57f7",
+          "bytes": 11771,
+          "stored_path": "objects/6ed86c33b624ffc8f672e0f2380194fb624c9678b6f477ccab6f5cb59eef57f7.gz",
+          "stored_sha256": "cc407b1b5259f66fb0887227c7f286e9580825dea1c8e231937fd076945f8652"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_complete_output_check__INTERFACE_REVIEW.md",
+          "status": "A",
+          "blob": "5f4fe7b928e2551adaee18b4582131131ba9f16d",
+          "mode": "100644",
+          "sha256": "d7137873ab8ddeb1334587c794d019dc1c4c55a4760455654d985690b4e42d87",
+          "bytes": 8211,
+          "stored_path": "objects/d7137873ab8ddeb1334587c794d019dc1c4c55a4760455654d985690b4e42d87.gz",
+          "stored_sha256": "3d9e1f4446d6469dbb0df7ccec0c95fc10a66ec863241fd7fbbd83298960d6bb"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_complete_output_check__REVIEW.md",
+          "status": "A",
+          "blob": "fe3e7eeace868827e5eacba535e7760c2f750698",
+          "mode": "100644",
+          "sha256": "e9d6b3462945e307b8ae043bcbd62f923ae969c5de644ff55d90dc635c629513",
+          "bytes": 7749,
+          "stored_path": "objects/e9d6b3462945e307b8ae043bcbd62f923ae969c5de644ff55d90dc635c629513.gz",
+          "stored_sha256": "9f3cd2ea1b40140ed6e8689b0f44ac4492ca36a97d79e3c66021796fe632332a"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_critical_source_interface__ORIGINAL_2972451d.md",
+          "status": "A",
+          "blob": "ac8bb23fceadfaa9b0a5636c809d9cf6c98a7863",
+          "mode": "100644",
+          "sha256": "2972451d77aae751d5cf64c7022468e372d078a5bfda36b7a9c7b8477036596e",
+          "bytes": 14157,
+          "stored_path": "objects/2972451d77aae751d5cf64c7022468e372d078a5bfda36b7a9c7b8477036596e.gz",
+          "stored_sha256": "2a440867140f78ffc619f6822d30b84f0903b46b0069d6cfa2a47721b1653ba0"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_critical_source_interface__PROPOSAL.md",
+          "status": "A",
+          "blob": "0b3b6565bf354e8cb51e3c9a4f65bf25ed68692e",
+          "mode": "100644",
+          "sha256": "d2b7b435f6813847a0b293d5584a3aa5af844a02be09a95b768adc4ea4f963e3",
+          "bytes": 15217,
+          "stored_path": "objects/d2b7b435f6813847a0b293d5584a3aa5af844a02be09a95b768adc4ea4f963e3.gz",
+          "stored_sha256": "2d725612b975a70cc569075069ff2df2766f8b228fd533dcf96f09685a705fb4"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_critical_source_interface_check__CORRECTION_RECHECK.md",
+          "status": "A",
+          "blob": "e6c12a71e94e4b444aeb4bbea477fceb6dc44b92",
+          "mode": "100644",
+          "sha256": "2cea5e9a3cd59b63d09bf21c1ddb929fff2251f9044ed3bd7189b3df10062ff8",
+          "bytes": 5089,
+          "stored_path": "objects/2cea5e9a3cd59b63d09bf21c1ddb929fff2251f9044ed3bd7189b3df10062ff8.gz",
+          "stored_sha256": "57db9b49379b49420aa78735db4dcaa39d707e433143a4083e2e18cb096af5ac"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_critical_source_interface_check__REVIEW.md",
+          "status": "A",
+          "blob": "9de2d30d0c87a84420e27dae7d858a878c8520a5",
+          "mode": "100644",
+          "sha256": "bda0710050f4154b190220419a1240c52adc04b15d0dfdb1a8e3ed27c22e6a7f",
+          "bytes": 20076,
+          "stored_path": "objects/bda0710050f4154b190220419a1240c52adc04b15d0dfdb1a8e3ed27c22e6a7f.gz",
+          "stored_sha256": "56b278a1ac2fdc96f4f149f09d690910ea813b914f37686c18b5bd8d83481820"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_finite_cut_interface__PROPOSAL.md",
+          "status": "A",
+          "blob": "cea54beaa45df00bda9614a4f114c4362467d531",
+          "mode": "100644",
+          "sha256": "5bcb4f17ae54f968a5d7566a2215810309b76351463e5034c5ee50d8cb307822",
+          "bytes": 15549,
+          "stored_path": "objects/5bcb4f17ae54f968a5d7566a2215810309b76351463e5034c5ee50d8cb307822.gz",
+          "stored_sha256": "91264009a9956c9dc6772ad529250e7a1bbcea665e738023e1680502d95797eb"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_finite_cut_interface_check__REVIEW.md",
+          "status": "A",
+          "blob": "d457eb634d31afeac924ad2ebb334d6cf88eccb9",
+          "mode": "100644",
+          "sha256": "0c089edf2a2b85fb30c37675e5da085dac3c4f721b263a35fb85e3c1094a14af",
+          "bytes": 14557,
+          "stored_path": "objects/0c089edf2a2b85fb30c37675e5da085dac3c4f721b263a35fb85e3c1094a14af.gz",
+          "stored_sha256": "26be5bfdb78a790907beae3df7ebc7f0ac750dc5c9bddfcb8d4d62d36dfc02d7"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_lattice_embedding__PROPOSAL.md",
+          "status": "A",
+          "blob": "585c2c504d1275eec155014ce32e6d7c4e034861",
+          "mode": "100644",
+          "sha256": "d776246fb1a96136ef647da6d0311b58d64b581819ed9dfdb086e87896e6fe58",
+          "bytes": 12245,
+          "stored_path": "objects/d776246fb1a96136ef647da6d0311b58d64b581819ed9dfdb086e87896e6fe58.gz",
+          "stored_sha256": "8afdc7c0d4f8fe17b181ca308c95bceba94cec8ec1c8744ebd01ecddafa67f8d"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_loaded_inverse_interface__PROPOSAL.md",
+          "status": "A",
+          "blob": "0ef77d8f399f8a4a110984d197f25bd90818f9ea",
+          "mode": "100644",
+          "sha256": "5f909e1ea897e9aaef31dd362e42fc60d5ba0b5f595d28bd12f1d000d8552a22",
+          "bytes": 26824,
+          "stored_path": "objects/5f909e1ea897e9aaef31dd362e42fc60d5ba0b5f595d28bd12f1d000d8552a22.gz",
+          "stored_sha256": "1a364073e754ed8e9850ddcd9ed2f6ac3232899b12c54606a270bbea8b2a84f6"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_loaded_inverse_interface_check__REVIEW.md",
+          "status": "A",
+          "blob": "9234bb908bd33c0a2da07875d0bc1df09ab837a2",
+          "mode": "100644",
+          "sha256": "f6303bb308a56b0db39cf66b673e40174be775e7a32a71f28a6e489beb3990c3",
+          "bytes": 10993,
+          "stored_path": "objects/f6303bb308a56b0db39cf66b673e40174be775e7a32a71f28a6e489beb3990c3.gz",
+          "stored_sha256": "5252a850ebc69b30b714534f63cfe08554541bd89903aa2337089f7604de4cd5"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_mass_tuned_family__ORIGINAL_37736cb9.md",
+          "status": "A",
+          "blob": "df4e92685c0fd614f51e9d01bdef80ea76e21d63",
+          "mode": "100644",
+          "sha256": "37736cb921b2f0e3e3c6fef9042225a0b44770bd8c58dba78807b04658bef288",
+          "bytes": 6895,
+          "stored_path": "objects/37736cb921b2f0e3e3c6fef9042225a0b44770bd8c58dba78807b04658bef288.gz",
+          "stored_sha256": "d44fed3cd9d75ad8dd85cf81bed7080ce0335238138df11cb52dc4abddcbcc41"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_mass_tuned_family__PROPOSAL.md",
+          "status": "A",
+          "blob": "426b1d44a29929faaa2e6eb84fe3135832b07dbc",
+          "mode": "100644",
+          "sha256": "d01ed6b60f3bacf2b7557687995902f8c3e172eafecd7a1547cb3bc458451883",
+          "bytes": 6895,
+          "stored_path": "objects/d01ed6b60f3bacf2b7557687995902f8c3e172eafecd7a1547cb3bc458451883.gz",
+          "stored_sha256": "d093f5d898d59ab6ec7e145fa007f76cf290c44941f98e913f6d5df07a78aa1b"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_mass_tuned_family_check__REVIEW.md",
+          "status": "A",
+          "blob": "c50102df9a60e3addb5b80819553ad3f59e486dc",
+          "mode": "100644",
+          "sha256": "6a7a9f0dcb6ea04e5bde943e99a9ab7e04755ab0cfb26a07e6d1a4fd4e174b2e",
+          "bytes": 7559,
+          "stored_path": "objects/6a7a9f0dcb6ea04e5bde943e99a9ab7e04755ab0cfb26a07e6d1a4fd4e174b2e.gz",
+          "stored_sha256": "82e7c38b6680d3b38675f839f3efa43eb9bfe55a8f096b0ff72a7d1c53ef1ff3"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_positive_bond_precision__PROPOSAL.md",
+          "status": "A",
+          "blob": "0ee2488d393af7e4815d3e06d365bde1f4b35415",
+          "mode": "100644",
+          "sha256": "8cadb35ee3c41e02b984906030297c2e1a5d5daf5a576ef0e2dfb4531f3da616",
+          "bytes": 15176,
+          "stored_path": "objects/8cadb35ee3c41e02b984906030297c2e1a5d5daf5a576ef0e2dfb4531f3da616.gz",
+          "stored_sha256": "f198c83eb22feffa44151b4ebe3fdd4fb84bf2277240227ffabb0342877d398f"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_positive_bond_precision_check__REVIEW.md",
+          "status": "A",
+          "blob": "5cfde545149fb3d4d058d217699b279491849e00",
+          "mode": "100644",
+          "sha256": "65719cf16109c9cc397890ebcffbf592979a09299a872f9c26ed213b7fad23e0",
+          "bytes": 5504,
+          "stored_path": "objects/65719cf16109c9cc397890ebcffbf592979a09299a872f9c26ed213b7fad23e0.gz",
+          "stored_sha256": "3acc2b9499d74150e02d53355c503c59faade6989e2aa334e1311f13abf091fe"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_product_seed_witness__PROPOSAL.md",
+          "status": "A",
+          "blob": "e369d97dfea9fcc33ef366b59af516c0e1e1b338",
+          "mode": "100644",
+          "sha256": "57892f7690a5f634c44c2fe0752c5cfb682d3fbfbda1aa4c1ca4edd45bb0fdee",
+          "bytes": 5008,
+          "stored_path": "objects/57892f7690a5f634c44c2fe0752c5cfb682d3fbfbda1aa4c1ca4edd45bb0fdee.gz",
+          "stored_sha256": "d6dce1453ebd7f132ef5e29583f93afc906bd08065fd5457be89de084493378e"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_product_seed_witness_check__REVIEW.md",
+          "status": "A",
+          "blob": "9895b28a7ffa4a2c615ec62bed091e6f06b5539f",
+          "mode": "100644",
+          "sha256": "aac24f84f9373a5e59511195e717780d24ecffc41c1e4cb878bcf262a4085630",
+          "bytes": 6616,
+          "stored_path": "objects/aac24f84f9373a5e59511195e717780d24ecffc41c1e4cb878bcf262a4085630.gz",
+          "stored_sha256": "0f7bf3a618f7a3b30fd43896afa6e47bdb34b0c19967affe6477d3bd790c0334"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_pulse_bridge_plan__PROPOSAL.md",
+          "status": "A",
+          "blob": "92440693e6ec70bc03d8ab0e44a10b5c00b253ce",
+          "mode": "100644",
+          "sha256": "2ad7f5936ab6044d180fe16ddf96f954a077f81f9d3e760df64ee373689b9e36",
+          "bytes": 20863,
+          "stored_path": "objects/2ad7f5936ab6044d180fe16ddf96f954a077f81f9d3e760df64ee373689b9e36.gz",
+          "stored_sha256": "f2bb977f16cf05edb06f35c32e08327a62c7894c4073c5f79629231fe3a19124"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_pulse_bridge_plan_check__REVIEW.md",
+          "status": "A",
+          "blob": "d8498169add7152f098c55621b1501f5b1b8e5e1",
+          "mode": "100644",
+          "sha256": "b7b8697bbda3746ba98373562cbb9648bb8bc65d378887bcd4b56fe16d4f13cc",
+          "bytes": 9730,
+          "stored_path": "objects/b7b8697bbda3746ba98373562cbb9648bb8bc65d378887bcd4b56fe16d4f13cc.gz",
+          "stored_sha256": "1d6ba9902eab19a2210bd42890e6b050f7a09d2d89b24f066664a6e31d36c482"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_raw_traveling__PROPOSAL.md",
+          "status": "A",
+          "blob": "1e60f0ed8618b55fa329069060849d71fa4b137d",
+          "mode": "100644",
+          "sha256": "263929233b06c4466535452e95f3a05ecfd6ab1a1046938bbac57322c2870f97",
+          "bytes": 11012,
+          "stored_path": "objects/263929233b06c4466535452e95f3a05ecfd6ab1a1046938bbac57322c2870f97.gz",
+          "stored_sha256": "e630e58439c4a91882d515ad5b1b4671fdc785762aa5c8246ab6bd27b8f2c589"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_raw_traveling_check__REVIEW.md",
+          "status": "A",
+          "blob": "9383128c81689bec892e02374783e9fabd93500d",
+          "mode": "100644",
+          "sha256": "111aaeff2a9839c028d2cf203c4cb5d324cca3ffcec2b0d7f127be9bc8732186",
+          "bytes": 9433,
+          "stored_path": "objects/111aaeff2a9839c028d2cf203c4cb5d324cca3ffcec2b0d7f127be9bc8732186.gz",
+          "stored_sha256": "01f5fd8bab0c3dbdfb8afb26462b8807f56b64491186963810575da2026dcaf5"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_seed_regularity__PROPOSAL.md",
+          "status": "A",
+          "blob": "759f53d9f0975e43ddf94c70818afd2b0de1bd1a",
+          "mode": "100644",
+          "sha256": "f8153ddb6a86a58e04e9d69a1ef98d13feefe8f0171ba3cbb3e98cf35ae4522b",
+          "bytes": 10238,
+          "stored_path": "objects/f8153ddb6a86a58e04e9d69a1ef98d13feefe8f0171ba3cbb3e98cf35ae4522b.gz",
+          "stored_sha256": "4e90a2212a5c6bb6b01f19fa5cac9e21ea09f2586c037f5527407b33b5814511"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_seed_regularity_check__REVIEW.md",
+          "status": "A",
+          "blob": "ea57b3cd6ffea1f76d275fa82285a89cf019f356",
+          "mode": "100644",
+          "sha256": "9d837417cc295e6d96fcaf1c8db5aad508d618f90cd57bcb9d560bb70640ea6d",
+          "bytes": 11101,
+          "stored_path": "objects/9d837417cc295e6d96fcaf1c8db5aad508d618f90cd57bcb9d560bb70640ea6d.gz",
+          "stored_sha256": "27d37cd321d795d6cd64f1c7a54505a17fb993e2e68366c6778b1dda6ee79be9"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_source_linear_mass__PROPOSAL.md",
+          "status": "A",
+          "blob": "352238121945e18037d5474de17ee4f0004c9846",
+          "mode": "100644",
+          "sha256": "51b3461c0ed92f304a34cc97f017e1cda53876ec5904b0868682dfe09dffc44d",
+          "bytes": 3178,
+          "stored_path": "objects/51b3461c0ed92f304a34cc97f017e1cda53876ec5904b0868682dfe09dffc44d.gz",
+          "stored_sha256": "0ba2706423aeb79cf5f5e57a036afe8f62dcdf636a748d85be7318927edc8560"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_source_linear_mass_check__REVIEW.md",
+          "status": "A",
+          "blob": "a44d25a5d15decfcd11bc85e4a4935a24592568f",
+          "mode": "100644",
+          "sha256": "4195db1eb9b15ed68397350433981ffd0ba9d31815161927beb0a57eb02c05e1",
+          "bytes": 6799,
+          "stored_path": "objects/4195db1eb9b15ed68397350433981ffd0ba9d31815161927beb0a57eb02c05e1.gz",
+          "stored_sha256": "ee7d0a2304668cd0d9d6348a6199a0ba6971b30d121c517c08db11f05dc40ea1"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_source_time_composition__PROPOSAL.md",
+          "status": "A",
+          "blob": "7161fc085d537be0d4d546545cb10a50738cb089",
+          "mode": "100644",
+          "sha256": "73116231ff9d68e030b86def616eb69c088d72647005049279d82b5d0ab4137e",
+          "bytes": 22918,
+          "stored_path": "objects/73116231ff9d68e030b86def616eb69c088d72647005049279d82b5d0ab4137e.gz",
+          "stored_sha256": "a6da66bdade923f463293c98c9e5a8f0fcbfd95597a871eb7826c20aa6cb399f"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediated_source_time_composition_check__REVIEW.md",
+          "status": "A",
+          "blob": "dd23c729c595b3f7aaf480fe3776e6148c48eab3",
+          "mode": "100644",
+          "sha256": "496164c0b8fff7dcd6bdb5f2037ba07c7954bd1720f2c6f881030a6b47fd7ebb",
+          "bytes": 6294,
+          "stored_path": "objects/496164c0b8fff7dcd6bdb5f2037ba07c7954bd1720f2c6f881030a6b47fd7ebb.gz",
+          "stored_sha256": "76631d2b6e9897c11d30c4d133da8e28d0b28a9447c45bc70a95d29842a12a7c"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediator_coefficient_precision__PROPOSAL.md",
+          "status": "A",
+          "blob": "30b2469b870fd9505885aa828b34130d20e3b395",
+          "mode": "100644",
+          "sha256": "ec94570c294d760dadda17370fb8e65634880aa346709bc2d28fc6f3245f0084",
+          "bytes": 14529,
+          "stored_path": "objects/ec94570c294d760dadda17370fb8e65634880aa346709bc2d28fc6f3245f0084.gz",
+          "stored_sha256": "5b835f0dda744a10c11784bc2b6882652a0a08af4a58f0489c4f487de9e8914c"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediator_coefficient_precision__PROPOSAL_v1.md",
+          "status": "A",
+          "blob": "63021eb4bdc17d393da3b9113d1cc5ae6db75efd",
+          "mode": "100644",
+          "sha256": "64e54aa4529b8dcb9753e27b5a02df2a277dbafcc111e32ada28c9bf316f5dd6",
+          "bytes": 14213,
+          "stored_path": "objects/64e54aa4529b8dcb9753e27b5a02df2a277dbafcc111e32ada28c9bf316f5dd6.gz",
+          "stored_sha256": "73deeae186c62a3936960afeac551857ac45b483c0714892f229bd90b07fec2d"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/proofs/mediator_coefficient_precision_check__REVIEW.md",
+          "status": "A",
+          "blob": "fce5f1a4fb0e4b265c359aa2ba3c9c258e00ffad",
+          "mode": "100644",
+          "sha256": "2c6f4d9d74dc4fd348da7c743260caa5f32394a91db96ae458c50d5def6fef34",
+          "bytes": 5109,
+          "stored_path": "objects/2c6f4d9d74dc4fd348da7c743260caa5f32394a91db96ae458c50d5def6fef34.gz",
+          "stored_sha256": "157d40017849937ea5bd9f3085a9c13fd6154429593f2aeafb13f4e058e54798"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/provenance/INTEGRATION_REVIEW.md",
+          "status": "A",
+          "blob": "32cb206fb3a5e6cc475ec564d62b5225bea9d117",
+          "mode": "100644",
+          "sha256": "e0b2ea4b9dfa1639e161b5b24320a2ee4c0dab48477cfb9f60c7cbd995a7574a",
+          "bytes": 8162,
+          "stored_path": "objects/e0b2ea4b9dfa1639e161b5b24320a2ee4c0dab48477cfb9f60c7cbd995a7574a.gz",
+          "stored_sha256": "10cb2d1fc46c9e52be3afd89bf77105642e2bcc2d57958601cef952ac30bf56b"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/provenance/MAPPINGS.json",
+          "status": "A",
+          "blob": "846442c31ac07d58da2f341c3613ce3957827f9c",
+          "mode": "100644",
+          "sha256": "12c6b5442a421cf803da28a1f618f896d2742145fdb6d5d9e4e5440f662541b4",
+          "bytes": 11864,
+          "stored_path": "objects/12c6b5442a421cf803da28a1f618f896d2742145fdb6d5d9e4e5440f662541b4.gz",
+          "stored_sha256": "9b6140df702ef3ace613fb222944123b35cd5e976f1d6b4bb6036e5dff229dac"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/provenance/NOTE_REVIEWED_0409906e.md",
+          "status": "A",
+          "blob": "1f49439976c93d5735a77adc16eb80e0ccaa7b2c",
+          "mode": "100644",
+          "sha256": "0409906eeb6ae6e12c48472cff1f0924739eef30ff2f125b33d2f78a5326b7c8",
+          "bytes": 33186,
+          "stored_path": "objects/0409906eeb6ae6e12c48472cff1f0924739eef30ff2f125b33d2f78a5326b7c8.gz",
+          "stored_sha256": "e2f8e163f0314be15f255d7cd881fdb2f336f83339a35552d8035a2e33cc6a19"
+        },
+        {
+          "path": "outputs/mediated_complete_2026_10_17/provenance/REVIEW.md",
+          "status": "A",
+          "blob": "ed2b04ed14e9dd783e986292a52fda8ad3fda942",
+          "mode": "100644",
+          "sha256": "fbccc19f1d7f4e861773449cd554b3c033bafd8b4df8f85f6fa52f3da926e138",
+          "bytes": 10872,
+          "stored_path": "objects/fbccc19f1d7f4e861773449cd554b3c033bafd8b4df8f85f6fa52f3da926e138.gz",
+          "stored_sha256": "621d7706a85ef4d318d31d89f8c2281f15ddf985135e5e6c2a93f3eed9fa411f"
+        }
+      ]
+    },
+    {
+      "pr": 9691,
+      "head": "108fe5d3ca89eb67d2cb15b2959c61d8e1ff5e76",
+      "delta_base": "5414f6f275a7b1b6532dc400388073008af0739f",
+      "entries": [
+        {
+          "path": "docs/MEDIATED_FINITE_POINT_AND_DECAY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+          "status": "A",
+          "blob": "f15b86b1554ed637f65db562a1563376502c66bb",
+          "mode": "100644",
+          "sha256": "d8a9bac0cb8a730a0f7fd0965f95f671d9dbaf096f88d031b4643dc85587c6a5",
+          "bytes": 29832,
+          "stored_path": "objects/d8a9bac0cb8a730a0f7fd0965f95f671d9dbaf096f88d031b4643dc85587c6a5.gz",
+          "stored_sha256": "b1e25c340de979c1fc1270fb98307e7edd060f5577dcfcdd24a71a21c7c7c008"
+        },
+        {
+          "path": "docs/audit/data/citation_graph_manifest.json",
+          "status": "M",
+          "blob": "997a4e78aeeb7d3b3cb0eb6cbd5dba0054b6176e",
+          "mode": "100644",
+          "sha256": "3a07e5632fddc5a0cfb4bc9519d583c20932de9a97579b3c95c1b34de8c658a1",
+          "bytes": 1033751,
+          "stored_path": "objects/3a07e5632fddc5a0cfb4bc9519d583c20932de9a97579b3c95c1b34de8c658a1.gz",
+          "stored_sha256": "5e9d128ff7c5bdcb4dce0c41ed28485885171be8f9a234a2b6e6548821e4eff8"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/SOURCES.json",
+          "status": "A",
+          "blob": "16ebbe4ac7de9a3728a36124e9129734f7754762",
+          "mode": "100644",
+          "sha256": "2d3ea4f0b8782c1b59182e83457e9fb300ca83fc02f529b4199d8767a6ccf160",
+          "bytes": 155352,
+          "stored_path": "objects/2d3ea4f0b8782c1b59182e83457e9fb300ca83fc02f529b4199d8767a6ccf160.gz",
+          "stored_sha256": "cebfb25b8be5e7898c3b91efdcb7ded7ee310dc1e38ea3bc758ed028cda4a9f2"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/VALIDATION.json",
+          "status": "A",
+          "blob": "165a66c20c1f3bd48218868377f8f2da58addc6d",
+          "mode": "100644",
+          "sha256": "1f4b823c27658372ed63ac796e047e7763aa1a15eaf81e6737242207037bf67b",
+          "bytes": 1233,
+          "stored_path": "objects/1f4b823c27658372ed63ac796e047e7763aa1a15eaf81e6737242207037bf67b.gz",
+          "stored_sha256": "8d14ec71ca692205ddc1fc7b45bf29f542404fe83b13d4833ed2da213ea4586a"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/CALCULATION_PLAN.md",
+          "status": "A",
+          "blob": "335db65b7c405bbf5f120d06b87bd6189d1ddcdf",
+          "mode": "100644",
+          "sha256": "ad9f31d1873cca4ed7ddca7bd2d7461c2d97cf373ea3017cd4c162a0cce61d01",
+          "bytes": 2402,
+          "stored_path": "objects/ad9f31d1873cca4ed7ddca7bd2d7461c2d97cf373ea3017cd4c162a0cce61d01.gz",
+          "stored_sha256": "cc09f3b2d8438254f2d7dc36490c5998a8109addedd69b5f90541fef0ae5e0c8"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/FINAL_FREEZE.json",
+          "status": "A",
+          "blob": "21d34f46d5945106ba8c6045d6ff8fd5f45bc297",
+          "mode": "100644",
+          "sha256": "e6d74e8e464e4d317a8c7f0b75353b7305e984d3495eed4489edf7e46eb0dcce",
+          "bytes": 2837,
+          "stored_path": "objects/e6d74e8e464e4d317a8c7f0b75353b7305e984d3495eed4489edf7e46eb0dcce.gz",
+          "stored_sha256": "f81bacd940f8e85d1029f9e2e54aab99ca04c8a969a65ce2d668dd1a698f4377"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/METADATA_VALIDATION.json",
+          "status": "A",
+          "blob": "056ab50c73af7f2666156d82f0f3ecee5cfa692c",
+          "mode": "100644",
+          "sha256": "5ab0ffc301d8e37c8cdad2bc8b8998ae7d394adc7971ecd5a92812021b0282c5",
+          "bytes": 1036,
+          "stored_path": "objects/5ab0ffc301d8e37c8cdad2bc8b8998ae7d394adc7971ecd5a92812021b0282c5.gz",
+          "stored_sha256": "6d7193fcd357bfc32702aaa11875bf53322e42c86ac8d9f316fa20c2c21d5cfe"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/PRECALCULATION_METADATA.json",
+          "status": "A",
+          "blob": "4ff65371c2c8a1e533032f1f3e37553b1362ee22",
+          "mode": "100644",
+          "sha256": "23db766811ab904633887edff013173cd35db9094bb60878faf8b4b686482537",
+          "bytes": 801,
+          "stored_path": "objects/23db766811ab904633887edff013173cd35db9094bb60878faf8b4b686482537.gz",
+          "stored_sha256": "5d5ad64597562f374ed4f8a2d4e91a99575efa9d25aa30feeed355fcde896570"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/PROPOSAL.md",
+          "status": "A",
+          "blob": "b56e591e43e3bab938bfa269a489cf91b453a629",
+          "mode": "100644",
+          "sha256": "243c172226f2a509ce9ba11686763ebc2e754f52a8b5a4e98d6ab4424c0ca20d",
+          "bytes": 28224,
+          "stored_path": "objects/243c172226f2a509ce9ba11686763ebc2e754f52a8b5a4e98d6ab4424c0ca20d.gz",
+          "stored_sha256": "5af60f5c475ef2e32688eb98b18815099537e02909902d9f8ecf1f6f8b890f46"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/SOURCE_PINS.json",
+          "status": "A",
+          "blob": "43b588feba24ce9c51fac8e8a998f3dd0cfcbb7a",
+          "mode": "100644",
+          "sha256": "d66a7c1602f6d23e81b8b020946eb21c044dd60dd386c68aa9128e947bdafd23",
+          "bytes": 11126,
+          "stored_path": "objects/d66a7c1602f6d23e81b8b020946eb21c044dd60dd386c68aa9128e947bdafd23.gz",
+          "stored_sha256": "76d440db17eb241335fa104c166d6aeefff5cd6210f835fae60dd8b3ba9eed5a"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/SUPPLEMENTAL_SOURCE_PINS.json",
+          "status": "A",
+          "blob": "2ff59b6071f35795df4ba83d52874fb3a3e831b2",
+          "mode": "100644",
+          "sha256": "9f50a6654bb7025b1b8891957a7e4d31001423abc4d6a96f4b642d9b502c336f",
+          "bytes": 830,
+          "stored_path": "objects/9f50a6654bb7025b1b8891957a7e4d31001423abc4d6a96f4b642d9b502c336f.gz",
+          "stored_sha256": "cfc614f17fabeb2a660edd6c9868bbd5937b042900c4faf327e49c207e68e195"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/calculate.py",
+          "status": "A",
+          "blob": "4429d67c7e02fefe93d7c2a8dc796326c91fdc38",
+          "mode": "100644",
+          "sha256": "4f5340de216d97d0609d198e8b488b56447d087ea5483731eb01cfbcfe55ee88",
+          "bytes": 21499,
+          "stored_path": "objects/4f5340de216d97d0609d198e8b488b56447d087ea5483731eb01cfbcfe55ee88.gz",
+          "stored_sha256": "f5ed634255ff9768cfd173a0d00dae00ecf37f02dc7a5e5f08c82e0c334fa6b0"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/run_once.py",
+          "status": "A",
+          "blob": "26d1df437c65774e899c21de8677160788cc91ae",
+          "mode": "100644",
+          "sha256": "02a8202aa15304acf45c25dababc79ae0c42f97a5f6dd99d17b6420fa1c853be",
+          "bytes": 3002,
+          "stored_path": "objects/02a8202aa15304acf45c25dababc79ae0c42f97a5f6dd99d17b6420fa1c853be.gz",
+          "stored_sha256": "54dcd162472b9b5eac84b45309e0db5046304c37cd8cad071c7effaeae08fbeb"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/runs/calculation_001/EXACT_CERTIFICATE.json",
+          "status": "A",
+          "blob": "1597035e650224ce1db8695be600a022df6536ae",
+          "mode": "100644",
+          "sha256": "3cb5c2632601bab0bab931893f8cbdb4b20cfc02585b5540ce7cd9ac7c11cdbe",
+          "bytes": 196424,
+          "stored_path": "objects/3cb5c2632601bab0bab931893f8cbdb4b20cfc02585b5540ce7cd9ac7c11cdbe.gz",
+          "stored_sha256": "3a6a2f44c0955b5a0cd890ccf2754211242b8f307b624a8fdee8dd5bccd629a9"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/runs/calculation_001/EXECUTION.json",
+          "status": "A",
+          "blob": "7ae757bbd44d9f855e935ba0f5c851a074dd917f",
+          "mode": "100644",
+          "sha256": "c970c217b29b5aca6eab7925691568430a21927260925f89dd0f93630b1affa0",
+          "bytes": 3801,
+          "stored_path": "objects/c970c217b29b5aca6eab7925691568430a21927260925f89dd0f93630b1affa0.gz",
+          "stored_sha256": "f2bbd2c305dff4e2ac3bf9645dcf66236a528adc290325feac1c8bb477daf641"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/runs/calculation_001/PRELAUNCH.json",
+          "status": "A",
+          "blob": "8f3365d69ed3b322e2616dce5080462afb35deaa",
+          "mode": "100644",
+          "sha256": "d83323fe38cd329ac91083a9e2cedf70c324a1a346b07a58de88418917010225",
+          "bytes": 2109,
+          "stored_path": "objects/d83323fe38cd329ac91083a9e2cedf70c324a1a346b07a58de88418917010225.gz",
+          "stored_sha256": "cad95ca95029a098141c2cfde1b870d1187beb9a320236fc46b3afb99130a8f3"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/runs/calculation_001/executed_launcher.py",
+          "status": "A",
+          "blob": "26d1df437c65774e899c21de8677160788cc91ae",
+          "mode": "100644",
+          "sha256": "02a8202aa15304acf45c25dababc79ae0c42f97a5f6dd99d17b6420fa1c853be",
+          "bytes": 3002,
+          "stored_path": "objects/02a8202aa15304acf45c25dababc79ae0c42f97a5f6dd99d17b6420fa1c853be.gz",
+          "stored_sha256": "54dcd162472b9b5eac84b45309e0db5046304c37cd8cad071c7effaeae08fbeb"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/runs/calculation_001/executed_source.py",
+          "status": "A",
+          "blob": "4429d67c7e02fefe93d7c2a8dc796326c91fdc38",
+          "mode": "100644",
+          "sha256": "4f5340de216d97d0609d198e8b488b56447d087ea5483731eb01cfbcfe55ee88",
+          "bytes": 21499,
+          "stored_path": "objects/4f5340de216d97d0609d198e8b488b56447d087ea5483731eb01cfbcfe55ee88.gz",
+          "stored_sha256": "f5ed634255ff9768cfd173a0d00dae00ecf37f02dc7a5e5f08c82e0c334fa6b0"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/runs/calculation_001/stderr",
+          "status": "A",
+          "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "mode": "100644",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "stored_path": "objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+          "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/runs/calculation_001/stdout",
+          "status": "A",
+          "blob": "bb828de2944877d86c1591f8e0437ad3c7558e55",
+          "mode": "100644",
+          "sha256": "f49280baa55c5164f54b440dada940316691a94797b35d93650f115cdb05e209",
+          "bytes": 12527,
+          "stored_path": "objects/f49280baa55c5164f54b440dada940316691a94797b35d93650f115cdb05e209.gz",
+          "stored_sha256": "bf3fb8c03f91f5126f9e4a64fcd556d353b863a03f949bb6d41ea55aa5300af7"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/evidence/mediated_finite_point_candidate/seal_packet.py",
+          "status": "A",
+          "blob": "7f24c2e8eec22557a4f0711839acfb5a4933908d",
+          "mode": "100644",
+          "sha256": "92d10fcb0be3327def547d65bd7d98b1b7876b6c367865fd69fb66fe940d9632",
+          "bytes": 4691,
+          "stored_path": "objects/92d10fcb0be3327def547d65bd7d98b1b7876b6c367865fd69fb66fe940d9632.gz",
+          "stored_sha256": "862b8180e7ada5c894dc2e7cf3361660de1f05ed5123e69eb6eafd0c3fab5faa"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/proofs/mediated_energy_resolved_raw__PROPOSAL.md",
+          "status": "A",
+          "blob": "6a64e7817b5199a01c0b9d329282ca8f695e04bc",
+          "mode": "100644",
+          "sha256": "7b74e1850a59a4d809edf0a049aa1fb5e773ddb5fdfb88aea563b2ba6db6fa44",
+          "bytes": 11889,
+          "stored_path": "objects/7b74e1850a59a4d809edf0a049aa1fb5e773ddb5fdfb88aea563b2ba6db6fa44.gz",
+          "stored_sha256": "22226739a7853104d5e140276e6c2bd4447321c3914eea259410c5aedfee5ed3"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/proofs/mediated_energy_resolved_raw_check__REVIEW.md",
+          "status": "A",
+          "blob": "82c50e4a8680bf3f8912c9b5d6ec2e69ad0bc27f",
+          "mode": "100644",
+          "sha256": "be74e1e896b508bcfa2e50d65ae2ff87663eefeecd785e3a5819fa87e821a1cc",
+          "bytes": 7149,
+          "stored_path": "objects/be74e1e896b508bcfa2e50d65ae2ff87663eefeecd785e3a5819fa87e821a1cc.gz",
+          "stored_sha256": "3f9a1612bfdb36e3ad8b39810487c1b4e1853959445335d4da614cbd73b1cf63"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/proofs/mediated_finite_point_check__REVIEW.md",
+          "status": "A",
+          "blob": "55e54003ab2e1d018236d72e681ee1a356ebd903",
+          "mode": "100644",
+          "sha256": "080266c4b4f7d0b26ef2d366582961221a91294ed207f615bc29d7fbf4d1223d",
+          "bytes": 13126,
+          "stored_path": "objects/080266c4b4f7d0b26ef2d366582961221a91294ed207f615bc29d7fbf4d1223d.gz",
+          "stored_sha256": "2396f94da41ca7f0a9ed21be30e765d9a9aa84a7f9432657eaf134034478ea31"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/proofs/mediated_nontraveling_time_decay__PROPOSAL.md",
+          "status": "A",
+          "blob": "65ef605c654f04334aef2353ed9db6ef789b1082",
+          "mode": "100644",
+          "sha256": "9e4dffc592cb259b58090b64016807f8f34024c2d07050467d30bc2042d71404",
+          "bytes": 14233,
+          "stored_path": "objects/9e4dffc592cb259b58090b64016807f8f34024c2d07050467d30bc2042d71404.gz",
+          "stored_sha256": "6619ccfb1f7519eaf225a3e5004bf4583686891f2e7839bda6ab0229a9afedb0"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/proofs/mediated_nontraveling_time_decay_check__REVIEW.md",
+          "status": "A",
+          "blob": "a912322c0db555dc14bf0878d12ae35a5df2a8cc",
+          "mode": "100644",
+          "sha256": "a973842794e10806684ebddbbe89a0f1cf1f1cb6a0eb04c56bfc3b5f27c47240",
+          "bytes": 5990,
+          "stored_path": "objects/a973842794e10806684ebddbbe89a0f1cf1f1cb6a0eb04c56bfc3b5f27c47240.gz",
+          "stored_sha256": "6d07a8c2f9043eea6ec61b9e45c528e8188451a54a63a995772c7256cfcc934e"
+        },
+        {
+          "path": "outputs/mediated_finite_point_2026_10_17/provenance/INTEGRATION_REVIEW.md",
+          "status": "A",
+          "blob": "633f1346bd9c03050c502df9ff21f2ee8daeee23",
+          "mode": "100644",
+          "sha256": "0f0af265c4458010fcdf3ca0a2c2d37786939ed352054a6fe1e88b8e2a184083",
+          "bytes": 7984,
+          "stored_path": "objects/0f0af265c4458010fcdf3ca0a2c2d37786939ed352054a6fe1e88b8e2a184083.gz",
+          "stored_sha256": "a3b80d514ee297d9cdb382371e0f5ff953935a6fe8aeb898f29385ef8cc2c7bd"
+        }
+      ]
+    },
+    {
+      "pr": 9692,
+      "head": "afe4295ae5a1df0f1735b0040ae003eb20ec4357",
+      "delta_base": "108fe5d3ca89eb67d2cb15b2959c61d8e1ff5e76",
+      "entries": [
+        {
+          "path": "docs/MEDIATED_EARLIER_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+          "status": "A",
+          "blob": "63f2b15d36b1f6415d502effae3c6e4a028963a4",
+          "mode": "100644",
+          "sha256": "9ca07c5e4fdc86f29d4560e9fb3222b28181d86e62d8ce5696251dc8df7b35f0",
+          "bytes": 11981,
+          "stored_path": "objects/9ca07c5e4fdc86f29d4560e9fb3222b28181d86e62d8ce5696251dc8df7b35f0.gz",
+          "stored_sha256": "f879e202b67fea890d03cb82247c0bf79e2ad3094fbb8ae35623f4e4a99cbbc1"
+        },
+        {
+          "path": "docs/MEDIATED_SCALAR_BOND_TOLERANCE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+          "status": "A",
+          "blob": "52bf77f3cc40435a78cfcc38f2d1b416582742cf",
+          "mode": "100644",
+          "sha256": "d9825f0b3262ad0f49c1589274706ea811146a7b9e691b09ad757db197bceb5c",
+          "bytes": 19131,
+          "stored_path": "objects/d9825f0b3262ad0f49c1589274706ea811146a7b9e691b09ad757db197bceb5c.gz",
+          "stored_sha256": "0e1780f3c25fbc94bc1f940e38296cf618c1271ca81c80b0b52b4867875bf8a1"
+        },
+        {
+          "path": "docs/audit/data/citation_graph_manifest.json",
+          "status": "M",
+          "blob": "77628deff49332b17cb4da9d051f94ab4b9c1b26",
+          "mode": "100644",
+          "sha256": "10319947eff5c02141d756fa0ce027bd7bff3a854c35a8ee0be1040d00aaff26",
+          "bytes": 1033996,
+          "stored_path": "objects/10319947eff5c02141d756fa0ce027bd7bff3a854c35a8ee0be1040d00aaff26.gz",
+          "stored_sha256": "a2a4cd68462a2994f82bbef47305a6ab86fd94f02576bffecec3189e27e7177f"
+        },
+        {
+          "path": "outputs/mediated_precision_2026_10_17/SOURCES.json",
+          "status": "A",
+          "blob": "efd8738490a95f7d01436ba767f69aa8c93ba85d",
+          "mode": "100644",
+          "sha256": "10da3424c98db832e39fa40484e3abfff732d4cedd4a7217353be5e4266446fb",
+          "bytes": 167488,
+          "stored_path": "objects/10da3424c98db832e39fa40484e3abfff732d4cedd4a7217353be5e4266446fb.gz",
+          "stored_sha256": "db7168fc1f532b4ffca446ad5da1162c954372a11483c5bbfc83c7a547332713"
+        },
+        {
+          "path": "outputs/mediated_precision_2026_10_17/VALIDATION.json",
+          "status": "A",
+          "blob": "45499c0b4526c3a1242688ca943e9c79505672c0",
+          "mode": "100644",
+          "sha256": "70fab6fee499264db2e33aac1231f87868998e7089333466ee3aca1fc39fbdbc",
+          "bytes": 2111,
+          "stored_path": "objects/70fab6fee499264db2e33aac1231f87868998e7089333466ee3aca1fc39fbdbc.gz",
+          "stored_sha256": "0f7f206727fc1d27ec9717c9a21acc5757e69d196afbc9eef98362351728597c"
+        },
+        {
+          "path": "outputs/mediated_precision_2026_10_17/proofs/critical_scalar_halfline_sharpening__PROPOSAL.md",
+          "status": "A",
+          "blob": "587d26e3d65db95711abfc87bd96b41c90549012",
+          "mode": "100644",
+          "sha256": "9fb115c3135c97f294783310e28c55e6b6073f076a4f66ebb9fe8d6f37e98f7d",
+          "bytes": 13318,
+          "stored_path": "objects/9fb115c3135c97f294783310e28c55e6b6073f076a4f66ebb9fe8d6f37e98f7d.gz",
+          "stored_sha256": "fe71c8c0ee8e3919c21bf8a0de08a252e18acd4532aa9611f39c310ea8a2ce1d"
+        },
+        {
+          "path": "outputs/mediated_precision_2026_10_17/proofs/critical_scalar_halfline_sharpening_check__REVIEW.md",
+          "status": "A",
+          "blob": "15e31f8b1d5fbfdfd4e8bf73823a74f34c90e0fe",
+          "mode": "100644",
+          "sha256": "9a585de47e8e70fcd3fef5654247dc3a788895bfcb26fb9064455eb12b28e3c3",
+          "bytes": 8165,
+          "stored_path": "objects/9a585de47e8e70fcd3fef5654247dc3a788895bfcb26fb9064455eb12b28e3c3.gz",
+          "stored_sha256": "2ecf42ac51775f01c789d2f6c08cb7f38eef80e54ff373eb0f24f1dfac34ac55"
+        },
+        {
+          "path": "outputs/mediated_precision_2026_10_17/proofs/mediated_bond_error_dynamics__PROPOSAL.md",
+          "status": "A",
+          "blob": "c027c1b2bde245ca6ecd08471b3d44bfad96a4d0",
+          "mode": "100644",
+          "sha256": "594461345ee6546318179e1ef649dcbeac9ea64a1b8f5cd7907c40ee5c7640ac",
+          "bytes": 17637,
+          "stored_path": "objects/594461345ee6546318179e1ef649dcbeac9ea64a1b8f5cd7907c40ee5c7640ac.gz",
+          "stored_sha256": "d6bb1337e9a61a4f58dbb20908e58db2c3edbb2f64cce2dc6022a40f2bdb1b20"
+        },
+        {
+          "path": "outputs/mediated_precision_2026_10_17/proofs/mediated_bond_error_dynamics_check__REVIEW.md",
+          "status": "A",
+          "blob": "1d15cc35bcb6f0f13b80fe5f1f249872690c8488",
+          "mode": "100644",
+          "sha256": "462c76bd07091ce7a18c5efc6bbe89911271583368c9081c5f510cda68211ba9",
+          "bytes": 6349,
+          "stored_path": "objects/462c76bd07091ce7a18c5efc6bbe89911271583368c9081c5f510cda68211ba9.gz",
+          "stored_sha256": "a3a85979db5883c1f6697caa0bf7d09201ea7afae4e227ec1ac7d8f68a81d999"
+        },
+        {
+          "path": "outputs/mediated_precision_2026_10_17/proofs/mediated_nonuniform_complete__PROPOSAL.md",
+          "status": "A",
+          "blob": "575cdf7c981120338d103c3e7669c6ce188d4fce",
+          "mode": "100644",
+          "sha256": "b06b088a789ad3230f32c8d4c30dab804b97f82af05b0d0c00f011111e868570",
+          "bytes": 17157,
+          "stored_path": "objects/b06b088a789ad3230f32c8d4c30dab804b97f82af05b0d0c00f011111e868570.gz",
+          "stored_sha256": "65bf1eff634485d33f58372bd37a649ae0b1b3120b8451cf620028218dd2dbd7"
+        },
+        {
+          "path": "outputs/mediated_precision_2026_10_17/proofs/mediated_nonuniform_complete_check__REVIEW.md",
+          "status": "A",
+          "blob": "96b4fa3639f3addc5aa0c2ab43b82de031c9e29c",
+          "mode": "100644",
+          "sha256": "8d6d452445b2e7e69be4294a57cc52e3189e22c30166594281bf7d1f3a36dd7e",
+          "bytes": 8122,
+          "stored_path": "objects/8d6d452445b2e7e69be4294a57cc52e3189e22c30166594281bf7d1f3a36dd7e.gz",
+          "stored_sha256": "9acdb4dc4366f21fb78d185fc1c5b62f6dea76898be417ae7ecba8150e5a3d4c"
+        },
+        {
+          "path": "outputs/mediated_precision_2026_10_17/proofs/mediated_nonuniform_numerator__PROPOSAL.md",
+          "status": "A",
+          "blob": "a6de2973619f68c181b5e30748926255c870c34b",
+          "mode": "100644",
+          "sha256": "dd9db7ee72ad2c3a779a193b68629bba402444fb3dbae529d54235e6a21b6b0c",
+          "bytes": 13797,
+          "stored_path": "objects/dd9db7ee72ad2c3a779a193b68629bba402444fb3dbae529d54235e6a21b6b0c.gz",
+          "stored_sha256": "29f14fd98140e39d2ba84d1b171248dd7829695bbc69b6219ad8a77f4dc649a1"
+        },
+        {
+          "path": "outputs/mediated_precision_2026_10_17/proofs/mediated_nonuniform_numerator_check__REVIEW.md",
+          "status": "A",
+          "blob": "23b22364489576cf0a75637823cc39e4cc172413",
+          "mode": "100644",
+          "sha256": "2ac7558630ede8e5f2a21c07781d1310587f49646a3ba86784b49c271b980f40",
+          "bytes": 4485,
+          "stored_path": "objects/2ac7558630ede8e5f2a21c07781d1310587f49646a3ba86784b49c271b980f40.gz",
+          "stored_sha256": "545773d4b2523e9cdd4f8acecbddf6546b345a47c53a831d1ce6920a7e5f7487"
+        },
+        {
+          "path": "outputs/mediated_precision_2026_10_17/proofs/mediated_scalar_improved_point__PROPOSAL.md",
+          "status": "A",
+          "blob": "69ebad5a69d337b795b6ca32a387fc70626fc78a",
+          "mode": "100644",
+          "sha256": "4d0492b02455494c8f9da707358ba7ed7d55152303ea8d10f916344d8797ce18",
+          "bytes": 14357,
+          "stored_path": "objects/4d0492b02455494c8f9da707358ba7ed7d55152303ea8d10f916344d8797ce18.gz",
+          "stored_sha256": "42a2290ce4fc0d03561483e8f57be23d293d9063194a85217f15069fcdddc984"
+        },
+        {
+          "path": "outputs/mediated_precision_2026_10_17/proofs/mediated_scalar_improved_point_check__REVIEW.md",
+          "status": "A",
+          "blob": "4a806b1425d5f30c0f3e1491105fb4f2520f9efd",
+          "mode": "100644",
+          "sha256": "450b226b5f3e372f4e77e35ac9d612f8ac3ce481615468c94916355c6de09690",
+          "bytes": 5448,
+          "stored_path": "objects/450b226b5f3e372f4e77e35ac9d612f8ac3ce481615468c94916355c6de09690.gz",
+          "stored_sha256": "52ac068620873e7a7288901d7d52bf23c6626233987f035f00a047bab463ce1f"
+        },
+        {
+          "path": "outputs/mediated_precision_2026_10_17/provenance/PRECISION_INTEGRATION_REVIEW.md",
+          "status": "A",
+          "blob": "b06f2ad1663e06aa3dbd6bf8bddc093df343741f",
+          "mode": "100644",
+          "sha256": "a1d6d0ef1ded2440d40652e2719a600ee372787cf30d63f4d4d45bb31f326942",
+          "bytes": 9829,
+          "stored_path": "objects/a1d6d0ef1ded2440d40652e2719a600ee372787cf30d63f4d4d45bb31f326942.gz",
+          "stored_sha256": "f34fd93032c73a352f8752a8d96e51dc2a7170ba599965072297a6d5ca247047"
+        },
+        {
+          "path": "outputs/mediated_precision_2026_10_17/provenance/SCALAR_INTEGRATION_REVIEW.md",
+          "status": "A",
+          "blob": "dc366ad5f36b26a9584eabc1e401d6e2c11ae816",
+          "mode": "100644",
+          "sha256": "d6bae01f113bc5f5b740f3c95fa97a0aead338c1b327054a11d70ddcf8588db3",
+          "bytes": 6651,
+          "stored_path": "objects/d6bae01f113bc5f5b740f3c95fa97a0aead338c1b327054a11d70ddcf8588db3.gz",
+          "stored_sha256": "83e4ad49449e570c8d0f5c2227198383596d2cc00c4a14e60771d5781455e2d8"
+        }
+      ]
+    },
+    {
+      "pr": 9695,
+      "head": "0118d39aca10a7b6939afe1157eaf63b74bce899",
+      "delta_base": "afe4295ae5a1df0f1735b0040ae003eb20ec4357",
+      "entries": [
+        {
+          "path": "docs/MEDIATED_FINITE_BOND_PRECISION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+          "status": "A",
+          "blob": "73d55cb19262309ec5dececd0c201836bd922c51",
+          "mode": "100644",
+          "sha256": "20ff8d650375aef31b9972bbaba3c9044c94f76cd8fa51d165da5bb991b2d9ba",
+          "bytes": 10931,
+          "stored_path": "objects/20ff8d650375aef31b9972bbaba3c9044c94f76cd8fa51d165da5bb991b2d9ba.gz",
+          "stored_sha256": "c06e0cb0a1a216d00ce07c9e5ead115fa18ff23f01507317fe217883a9975657"
+        },
+        {
+          "path": "docs/MEDIATED_RECOVERY_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+          "status": "A",
+          "blob": "e79fc40a54a98602ae1e6777636487c93d16baaa",
+          "mode": "100644",
+          "sha256": "cd8dec82ddf2d65e6f7e43e4c12990e9623f5c2d7d53eba8483e53b47f8b472d",
+          "bytes": 15039,
+          "stored_path": "objects/cd8dec82ddf2d65e6f7e43e4c12990e9623f5c2d7d53eba8483e53b47f8b472d.gz",
+          "stored_sha256": "10e869428a8aea8bd6c63706abd76b1b7334409218227c0da212817f69a6cc32"
+        },
+        {
+          "path": "docs/MEDIATED_SHORTER_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+          "status": "A",
+          "blob": "1aa19e5aa731610b3db717100d5e8726b8cc5180",
+          "mode": "100644",
+          "sha256": "928b61a98c476d241e4ad183d60f5d72c8edbc2429544e74b135afceaf7ba9bf",
+          "bytes": 14407,
+          "stored_path": "objects/928b61a98c476d241e4ad183d60f5d72c8edbc2429544e74b135afceaf7ba9bf.gz",
+          "stored_sha256": "f85575fd495df07ef1ded169d0c041b7bd231fb2c88b0b94a7041f6d1a4a1552"
+        },
+        {
+          "path": "docs/audit/data/citation_graph_manifest.json",
+          "status": "M",
+          "blob": "658a23f20bdeb87deb81f09536df70fe0f34ede1",
+          "mode": "100644",
+          "sha256": "d15c2f853a58fb567ecac5ef610bec199e238e6bf348baab1d03144842e6af8d",
+          "bytes": 1034362,
+          "stored_path": "objects/d15c2f853a58fb567ecac5ef610bec199e238e6bf348baab1d03144842e6af8d.gz",
+          "stored_sha256": "a3f14739c21ed2923e1b34cb171920ac058d26c9c12cf4ffba317b00a2e60590"
+        },
+        {
+          "path": "outputs/mediated_residual_precision_2026_10_18/SOURCES.json",
+          "status": "A",
+          "blob": "8fe30d9503dc606c4e1b87f687e7d0e71cb662f8",
+          "mode": "100644",
+          "sha256": "04476ae154f4ba0bf5a3a941aa7b2304cde1af3d9c0f9c4b20a344042f27be33",
+          "bytes": 176446,
+          "stored_path": "objects/04476ae154f4ba0bf5a3a941aa7b2304cde1af3d9c0f9c4b20a344042f27be33.gz",
+          "stored_sha256": "bc1b3acc380e4300d3709b8be6061f283dc1173c5a21f572c3700dad426584cd"
+        },
+        {
+          "path": "outputs/mediated_residual_precision_2026_10_18/VALIDATION.json",
+          "status": "A",
+          "blob": "4fa1b3128ee1f5776212c52b41ef9f91fa7a6df9",
+          "mode": "100644",
+          "sha256": "60654a43ff16fde962492a24cd546abed6a2ce05c8064afaa095875a024f9975",
+          "bytes": 5843,
+          "stored_path": "objects/60654a43ff16fde962492a24cd546abed6a2ce05c8064afaa095875a024f9975.gz",
+          "stored_sha256": "88f45cbe4aff872af4420718ed17d2d2f6483029a58960d61105198ea2e3c35d"
+        },
+        {
+          "path": "outputs/mediated_residual_precision_2026_10_18/history/precision_PROPOSAL_56b49f1e.md",
+          "status": "A",
+          "blob": "b98b67b23dd0eaed83ec06945f9c502b1b1a5f25",
+          "mode": "100644",
+          "sha256": "56b49f1e995d5f7d99dcf6bd47d9982f876927d6fc89050a61dff6aa0a751c6f",
+          "bytes": 16491,
+          "stored_path": "objects/56b49f1e995d5f7d99dcf6bd47d9982f876927d6fc89050a61dff6aa0a751c6f.gz",
+          "stored_sha256": "c1fd2e2305c89ed4be244e0be9a7e3c779f8e70be0cd84c26ae4c0eb98d7504c"
+        },
+        {
+          "path": "outputs/mediated_residual_precision_2026_10_18/proofs/mediated_energy_resolved_precision__PROPOSAL.md",
+          "status": "A",
+          "blob": "12c6e8314a6eaa7b959dd3568b856b66818d1be7",
+          "mode": "100644",
+          "sha256": "ef8a9b815d2378c4305558969a86d14c77d3a391f13d1ca0dc4d3fd92a2f1a65",
+          "bytes": 16667,
+          "stored_path": "objects/ef8a9b815d2378c4305558969a86d14c77d3a391f13d1ca0dc4d3fd92a2f1a65.gz",
+          "stored_sha256": "45ffcdcf735dec28eec4897e7cf96e990be22e06b56b9607d2889fe55a98f33e"
+        },
+        {
+          "path": "outputs/mediated_residual_precision_2026_10_18/proofs/mediated_energy_resolved_precision_check__REVIEW.md",
+          "status": "A",
+          "blob": "a36b39a5a038cb10fd4778b7227fe80275adf316",
+          "mode": "100644",
+          "sha256": "c6bae58f21e5ce11d548549cc33dc1387d247c7de440cbfeea76bb0152b1a386",
+          "bytes": 28294,
+          "stored_path": "objects/c6bae58f21e5ce11d548549cc33dc1387d247c7de440cbfeea76bb0152b1a386.gz",
+          "stored_sha256": "560a1310f4333674d60672048de43c97913cb99d05fb3a8401debb0164862399"
+        },
+        {
+          "path": "outputs/mediated_residual_precision_2026_10_18/proofs/mediated_recovery_residual_decay__PROPOSAL.md",
+          "status": "A",
+          "blob": "bfb3bd206fbf57808c0f89ee6b14753464396d26",
+          "mode": "100644",
+          "sha256": "f66b5636cca5cc6ef8e71b40746beb97b831527028738a6ccef7f17bca2b28ea",
+          "bytes": 23730,
+          "stored_path": "objects/f66b5636cca5cc6ef8e71b40746beb97b831527028738a6ccef7f17bca2b28ea.gz",
+          "stored_sha256": "228a95b06e8ae83b8c617c3ce846f9dd64a3f23fb9cfb11962f1966e492b9bde"
+        },
+        {
+          "path": "outputs/mediated_residual_precision_2026_10_18/proofs/mediated_recovery_residual_decay_check__REVIEW.md",
+          "status": "A",
+          "blob": "f6a245173684631e375d3646c9fe180d0be9c61b",
+          "mode": "100644",
+          "sha256": "4f6784efb2f68f36b5598ac764cc3ae33ee7785048ad440acf16016305cadc5c",
+          "bytes": 7596,
+          "stored_path": "objects/4f6784efb2f68f36b5598ac764cc3ae33ee7785048ad440acf16016305cadc5c.gz",
+          "stored_sha256": "967b61b22c19a88c60e7a5c617a21ccd5adbbc2db2eeb1c8c70d74c58c11b6cb"
+        },
+        {
+          "path": "outputs/mediated_residual_precision_2026_10_18/proofs/mediated_residual_complete_point__PROPOSAL.md",
+          "status": "A",
+          "blob": "7dab5494c63d8e0a623a78cc1f3e23f936bf1297",
+          "mode": "100644",
+          "sha256": "fd9ee286420775aa54dcd9bee657c04be9a39b30003ab6b73c4fe955dc5e0cbd",
+          "bytes": 21807,
+          "stored_path": "objects/fd9ee286420775aa54dcd9bee657c04be9a39b30003ab6b73c4fe955dc5e0cbd.gz",
+          "stored_sha256": "97e720eddd4d010d21170915abaebab28eac921cae6c7fff36c797c200ba29f4"
+        },
+        {
+          "path": "outputs/mediated_residual_precision_2026_10_18/proofs/mediated_residual_complete_point_check__REVIEW.md",
+          "status": "A",
+          "blob": "d9b6579a76042958bcad172f17a17cec6218234f",
+          "mode": "100644",
+          "sha256": "041850aafdf054376de82d1c9ff481076c924cdbcd9eeae3f5a95bfd7089cf7c",
+          "bytes": 9069,
+          "stored_path": "objects/041850aafdf054376de82d1c9ff481076c924cdbcd9eeae3f5a95bfd7089cf7c.gz",
+          "stored_sha256": "3d91a85768c542de5ed7048c40635b97e95fb1674b131eca37a94b3843103c6d"
+        },
+        {
+          "path": "outputs/mediated_residual_precision_2026_10_18/proofs/mediated_shorter_chain_candidate__PROPOSAL.md",
+          "status": "A",
+          "blob": "d0bfc7a1c2312b39dc0798e024d33b71e6b7b630",
+          "mode": "100644",
+          "sha256": "60dad0d2aa904a7b6a2827571e4ed13455bda6331aa77200eee36f204176ce83",
+          "bytes": 17391,
+          "stored_path": "objects/60dad0d2aa904a7b6a2827571e4ed13455bda6331aa77200eee36f204176ce83.gz",
+          "stored_sha256": "c8932919abcf0cba43c21a5be1c8f222e4e5e9483092bcea6753005a834c2840"
+        },
+        {
+          "path": "outputs/mediated_residual_precision_2026_10_18/proofs/mediated_shorter_chain_candidate_check__REVIEW.md",
+          "status": "A",
+          "blob": "87f2e1e1e89fa4dea597c1804d027c81fba3cc6c",
+          "mode": "100644",
+          "sha256": "10a1071307b4ca91b198a20568563f15a51e66894faad1f234c5d2fe0080e6f2",
+          "bytes": 10828,
+          "stored_path": "objects/10a1071307b4ca91b198a20568563f15a51e66894faad1f234c5d2fe0080e6f2.gz",
+          "stored_sha256": "c9c855d9264c2c3104715ccb8a0fe4e5205b50b3218d942f3f6793febf48ecba"
+        },
+        {
+          "path": "outputs/mediated_residual_precision_2026_10_18/provenance/PRECISION_INTEGRATION_REVIEW.md",
+          "status": "A",
+          "blob": "7603087c53b6a7c106541e48d90bf25c44466e79",
+          "mode": "100644",
+          "sha256": "4fd567a002b87e979ba8c5c2dbe93769e1eb3d046cc679c897ae5cdc3c419cc8",
+          "bytes": 11696,
+          "stored_path": "objects/4fd567a002b87e979ba8c5c2dbe93769e1eb3d046cc679c897ae5cdc3c419cc8.gz",
+          "stored_sha256": "287404e3f0e1631ea5d75db35111552c110067b27b21fa5450d9722668198d30"
+        },
+        {
+          "path": "outputs/mediated_residual_precision_2026_10_18/provenance/RESIDUAL_INTEGRATION_REVIEW.md",
+          "status": "A",
+          "blob": "3d2b1199d607230464d91b9cf1c7bb6a48860242",
+          "mode": "100644",
+          "sha256": "52b4094c79eb268b3a4128e0f7d2e758371e052188877266ebc37afc04b2e551",
+          "bytes": 3253,
+          "stored_path": "objects/52b4094c79eb268b3a4128e0f7d2e758371e052188877266ebc37afc04b2e551.gz",
+          "stored_sha256": "c0cd8bfef6d3413ee173929f7e87595fd56c7830010b0e633df2d4ecdc891008"
+        },
+        {
+          "path": "outputs/mediated_residual_precision_2026_10_18/provenance/SHORTER_INTEGRATION_REVIEW.md",
+          "status": "A",
+          "blob": "e30ecc69aeed69a25e77700b7d0f4244e08c0b9e",
+          "mode": "100644",
+          "sha256": "62f4fc494668989d1ecaa776a9db911d41f65bf2d80a6d73ee6252bb43d49377",
+          "bytes": 3294,
+          "stored_path": "objects/62f4fc494668989d1ecaa776a9db911d41f65bf2d80a6d73ee6252bb43d49377.gz",
+          "stored_sha256": "b024afdee082f628bd2c4b01b89cfda1f24a8b049eaac5b84f4094e0e786683e"
+        }
+      ]
+    },
+    {
+      "pr": 9696,
+      "head": "2321c0780b84ef3547a46512cd3b1b62015e2d17",
+      "delta_base": "0118d39aca10a7b6939afe1157eaf63b74bce899",
+      "entries": [
+        {
+          "path": "docs/MEDIATED_ONSITE_TOLERANCE_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+          "status": "A",
+          "blob": "95f108779629aedcc542bda11ab7f32117429b44",
+          "mode": "100644",
+          "sha256": "5e6ac48d03620ec2efb79b642d4a63c5008873af39d5579c4d3864bdb3d9943d",
+          "bytes": 14239,
+          "stored_path": "objects/5e6ac48d03620ec2efb79b642d4a63c5008873af39d5579c4d3864bdb3d9943d.gz",
+          "stored_sha256": "76588eb7b7be36e3ba12710fb6bb64bdaba5e837fcc039d8eb4383652009383e"
+        },
+        {
+          "path": "docs/audit/data/citation_graph_manifest.json",
+          "status": "M",
+          "blob": "dd23fd7dff97638d20cef42b731580fa54463aeb",
+          "mode": "100644",
+          "sha256": "05fadfc7da06a63c947db4410bc4462540b55d1c420be51bcef6685bbd5015a9",
+          "bytes": 1034483,
+          "stored_path": "objects/05fadfc7da06a63c947db4410bc4462540b55d1c420be51bcef6685bbd5015a9.gz",
+          "stored_sha256": "ee9d0044e38898ea34c6a6834878e42b3536fd75bc26d96c37b0c0b0fc94744f"
+        },
+        {
+          "path": "outputs/mediated_onsite_2026_10_18/SOURCES.json",
+          "status": "A",
+          "blob": "8e0cb159e049b96ebcf22953d79731e05d2f160a",
+          "mode": "100644",
+          "sha256": "a5e0ca719500fe6cd09b8c36965786f101296523dc0820f9962e8438172c79f6",
+          "bytes": 180742,
+          "stored_path": "objects/a5e0ca719500fe6cd09b8c36965786f101296523dc0820f9962e8438172c79f6.gz",
+          "stored_sha256": "2d68801ac9a0ec3fe9f3aac0cca7119b58fca7f59397177a3f7c6ece3faa1c15"
+        },
+        {
+          "path": "outputs/mediated_onsite_2026_10_18/VALIDATION.json",
+          "status": "A",
+          "blob": "94cfccf3f2eb04232103304e633314d4aa0d3e99",
+          "mode": "100644",
+          "sha256": "dec4d75fa8ee5174ae9762796b9c7370820921e9cb60a014072045d376937bf4",
+          "bytes": 2099,
+          "stored_path": "objects/dec4d75fa8ee5174ae9762796b9c7370820921e9cb60a014072045d376937bf4.gz",
+          "stored_sha256": "fb8bdfdabaa82fd9d9489389f4c9d5d64eaba2f0669fff8037cfde1ef9650757"
+        },
+        {
+          "path": "outputs/mediated_onsite_2026_10_18/history/onsite_PROPOSAL_7e38d53d.md",
+          "status": "A",
+          "blob": "686906f0187a1227ea1c49a85406892676b147b5",
+          "mode": "100644",
+          "sha256": "7e38d53dfb1ddace7c25017c6975557a654c44ba305bee219824c8d314e84b72",
+          "bytes": 15382,
+          "stored_path": "objects/7e38d53dfb1ddace7c25017c6975557a654c44ba305bee219824c8d314e84b72.gz",
+          "stored_sha256": "3021bb52dbfa2d218552e345121d60f66ed34552b0fbd5f98c0614dd00bbfa54"
+        },
+        {
+          "path": "outputs/mediated_onsite_2026_10_18/proofs/mediated_finite_onsite_point__PROPOSAL.md",
+          "status": "A",
+          "blob": "b62eed1f5722ce61cdfe6caeb846daf6da029695",
+          "mode": "100644",
+          "sha256": "c14b1b9f4033dded398b6c70b57ae6cd6713bfcf368094b1d7c9ab66b4fb39fa",
+          "bytes": 15533,
+          "stored_path": "objects/c14b1b9f4033dded398b6c70b57ae6cd6713bfcf368094b1d7c9ab66b4fb39fa.gz",
+          "stored_sha256": "b33756c8aaa34f953644764a48892d2465f3fad5f020388933988f10ccfc330f"
+        },
+        {
+          "path": "outputs/mediated_onsite_2026_10_18/proofs/mediated_finite_onsite_point_check__REVIEW.md",
+          "status": "A",
+          "blob": "8d6c9d72b3eb6c90d09335204f606c34eb56ad84",
+          "mode": "100644",
+          "sha256": "c11a48a22978aa538a7d45b0f733b5e97d09197cab39719d23d8e7e8bed12ded",
+          "bytes": 8923,
+          "stored_path": "objects/c11a48a22978aa538a7d45b0f733b5e97d09197cab39719d23d8e7e8bed12ded.gz",
+          "stored_sha256": "4a7d9749b41099723372708ad07c7cad39fe66b42e134ff80a4b71354a1c742c"
+        },
+        {
+          "path": "outputs/mediated_onsite_2026_10_18/proofs/mediated_onsite_energy_resolved__PROPOSAL.md",
+          "status": "A",
+          "blob": "bb718be557914cfbc7c28cd5e9a5bb3b613ec259",
+          "mode": "100644",
+          "sha256": "7e1e1d1813f976a13c676d56373a073eab540acfe0c846d52805a48e1b04cdb0",
+          "bytes": 12218,
+          "stored_path": "objects/7e1e1d1813f976a13c676d56373a073eab540acfe0c846d52805a48e1b04cdb0.gz",
+          "stored_sha256": "b931c34c9a10293012d520826d449ccf87669113c56e6c363adcbca80733c227"
+        },
+        {
+          "path": "outputs/mediated_onsite_2026_10_18/proofs/mediated_onsite_energy_resolved_check__REVIEW.md",
+          "status": "A",
+          "blob": "d7f73b4ce9101c7817656523258fa07164ca9abd",
+          "mode": "100644",
+          "sha256": "9403a1ce45e246c9aefbdd11dcf591df4f7969f017e379fb315018de1eb4174b",
+          "bytes": 8645,
+          "stored_path": "objects/9403a1ce45e246c9aefbdd11dcf591df4f7969f017e379fb315018de1eb4174b.gz",
+          "stored_sha256": "6770a351729f72c108d0bf8afdd21c80806ece7ac24617effbb1cd006ec895e8"
+        },
+        {
+          "path": "outputs/mediated_onsite_2026_10_18/proofs/mediated_onsite_supply__PROPOSAL.md",
+          "status": "A",
+          "blob": "56454be99ad8dcdc48118102c6fbac092154f9d3",
+          "mode": "100644",
+          "sha256": "bba11422e5b425fa003ba4ba4890e2cdf70b717389d4b6ada4136ee19154dc50",
+          "bytes": 13935,
+          "stored_path": "objects/bba11422e5b425fa003ba4ba4890e2cdf70b717389d4b6ada4136ee19154dc50.gz",
+          "stored_sha256": "aca9e0147deef0834d70189b3678db2d8e81ca39c85964178e307243069a77aa"
+        },
+        {
+          "path": "outputs/mediated_onsite_2026_10_18/proofs/mediated_onsite_supply_check__REVIEW.md",
+          "status": "A",
+          "blob": "faa0f0a763c6646fdfa12cd0b4bbfffbde5d8570",
+          "mode": "100644",
+          "sha256": "972406c9ba8c40658ba3465f09a3110b270938a7b7df229472c1e5b2c18211c7",
+          "bytes": 6673,
+          "stored_path": "objects/972406c9ba8c40658ba3465f09a3110b270938a7b7df229472c1e5b2c18211c7.gz",
+          "stored_sha256": "dedf13d25424f3c3e6905165885cf1acd944b00eeb5ad2a87af04187cf1bf90a"
+        },
+        {
+          "path": "outputs/mediated_onsite_2026_10_18/provenance/INTEGRATION_REVIEW.md",
+          "status": "A",
+          "blob": "e55bdb98322ebb19cb1c0df29011fab87c3b7639",
+          "mode": "100644",
+          "sha256": "d1a41c6cfa2a120f7392e8e3937add92d3340b809d5abf36ef0ddb822cd81979",
+          "bytes": 2435,
+          "stored_path": "objects/d1a41c6cfa2a120f7392e8e3937add92d3340b809d5abf36ef0ddb822cd81979.gz",
+          "stored_sha256": "01b22db2184439a4988ea522079722f486710a12c1b347315ff02b7892a075be"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/native_stationary_response.py
+runner_sha256: c9dec89f5b7da9fbc26a401274dc028be61553fc3fd008404e135cc2f8324c6d
+input_fingerprint_sha256: d3ff7e908b35ec978ca2a596db5a8cdf944c1444c98074bd2a7f13bb2557c82c
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 404.26
+status: ok
+----- stdout -----
+{'shape': (2, 2, 2), 'sectors': 8, 'dimension_each': 32, 'max_intertwiner_error': np.float64(0.0), 'spectrum_error': 1.5987211554602254e-14, 'larger_sector_dimension': 4194304, 'scope': 'Exact symmetry coordinates checked against full open8-site Hamiltonian; no sector identified as global ground'}
+reproduced compass_sector_control
+{"shape": [3, 3, 3], "dimension": 4194304, "terms": 54, "matvec_seconds": 0.06534229218959808}
+{'shape': (3, 3, 3), 'sector': 'all selected Z planes and adjacent X-plane pairs +1', 'dimension': 4194304, 'energies': [-27.16489442506342, -26.89423609982402, -26.89423609982399, -26.577963797186325], 'residuals': [2.302586348520834e-13, 8.692694199361935e-10, 2.837937467761518e-11, 2.447262030565423e-13], 'calls': 365, 'elapsed_seconds': 41.96528391726315, 'scope': 'Numerical low eigenpairs of one exact invariant sector; no global ground, thermodynamic pole or physical preparation identification'}
+reproduced compass_sector_solve
+{'zsign': [0, 0, 0], 'xsign': [0, 0], 'energy': -27.164894425063462, 'residual': 1.7231510695261417e-09, 'calls': 138, 'seed': 7100, 'elapsed_total': 14.579953417181969}
+{'zsign': [0, 0, 0], 'xsign': [0, 1], 'energy': -26.894236099823882, 'residual': 1.431524784168189e-09, 'calls': 154, 'seed': 7101, 'elapsed_total': 31.351939458865672}
+{'zsign': [0, 0, 0], 'xsign': [1, 0], 'energy': -26.894236099823964, 'residual': 1.5864010706442474e-09, 'calls': 154, 'seed': 7102, 'elapsed_total': 47.11161233391613}
+{'zsign': [0, 0, 0], 'xsign': [1, 1], 'energy': -26.577963797186275, 'residual': 1.8899065779889637e-09, 'calls': 162, 'seed': 7103, 'elapsed_total': 64.16090920893475}
+{'zsign': [0, 0, 1], 'xsign': [0, 0], 'energy': -26.894236099823907, 'residual': 2.367371853282953e-09, 'calls': 138, 'seed': 7104, 'elapsed_total': 80.25746958423406}
+{'zsign': [0, 0, 1], 'xsign': [0, 1], 'energy': -26.558746869575128, 'residual': 1.5634201361459711e-09, 'calls': 162, 'seed': 7105, 'elapsed_total': 98.01245925016701}
+{'zsign': [0, 0, 1], 'xsign': [1, 0], 'energy': -26.558746869575113, 'residual': 1.5377861509053328e-09, 'calls': 170, 'seed': 7106, 'elapsed_total': 116.1813476672396}
+{'zsign': [0, 0, 1], 'xsign': [1, 1], 'energy': -26.268317377753377, 'residual': 1.7299640200807206e-09, 'calls': 202, 'seed': 7107, 'elapsed_total': 137.3009057091549}
+{'zsign': [0, 1, 0], 'xsign': [0, 0], 'energy': -26.577963797186243, 'residual': 1.1902095518971454e-09, 'calls': 162, 'seed': 7108, 'elapsed_total': 154.01210091728717}
+{'zsign': [0, 1, 0], 'xsign': [0, 1], 'energy': -26.268317377753302, 'residual': 1.8306191148160947e-09, 'calls': 210, 'seed': 7109, 'elapsed_total': 176.2399578341283}
+{'zsign': [0, 1, 0], 'xsign': [1, 0], 'energy': -26.268317377753277, 'residual': 1.3924217632011803e-09, 'calls': 202, 'seed': 7110, 'elapsed_total': 197.35765099991113}
+{'zsign': [0, 1, 0], 'xsign': [1, 1], 'energy': -25.889050663849076, 'residual': 2.314122105390759e-09, 'calls': 322, 'seed': 7111, 'elapsed_total': 233.1030655419454}
+{'zsign': [0, 1, 1], 'xsign': [0, 0], 'energy': -26.894236099823875, 'residual': 7.225179527448866e-10, 'calls': 146, 'seed': 7112, 'elapsed_total': 248.829244625289}
+{'zsign': [0, 1, 1], 'xsign': [0, 1], 'energy': -26.5587468695751, 'residual': 1.5347334951373212e-09, 'calls': 170, 'seed': 7113, 'elapsed_total': 267.583207083866}
+{'zsign': [0, 1, 1], 'xsign': [1, 0], 'energy': -26.558746869575202, 'residual': 9.682390224952279e-10, 'calls': 170, 'seed': 7114, 'elapsed_total': 286.0356232500635}
+{'zsign': [0, 1, 1], 'xsign': [1, 1], 'energy': -26.26831737775322, 'residual': 1.7719024985971666e-09, 'calls': 210, 'seed': 7115, 'elapsed_total': 309.7385467090644}
+reproduced compass_sector_survey
+{'C': {'mean': 0.727144835825004, 'connected_source_weight': 2.616991340697543, 'centroid': 8.68135746478038, 'variance': 7.769051824398829, 'initial_acceleration': 1.3642420526593924e-12, 'low_level_weights': [9.868243476059394e-26, 1.0639233032139905e-28, 1.3589361687596336e-30], 'regularized_inverse_moments': {'16': {'0.1': 0.3314150283864193, '0.5': 0.3296393823967296, '1.0': 0.32435783324503403}, '32': {'0.1': 0.33141507339740134, '0.5': 0.32963936720159714, '1.0': 0.32435780992036867}, '64': {'0.1': 0.33141507339744464, '0.5': 0.32963936720155373, '1.0': 0.32435780992039126}}}, 'e': {'mean': -1.2587908972503417, 'connected_source_weight': 0.27901789491216455, 'centroid': 8.302648838411619, 'variance': 5.56281238202304, 'initial_acceleration': -4.547473508864641e-13, 'low_level_weights': [7.374644602043252e-27, 7.099748146989106e-30, 2.819754031577352e-30], 'regularized_inverse_moments': {'16': {'0.1': 0.036124496638088234, '0.5': 0.035940371648209214, '1.0': 0.03538579536630301}, '32': {'0.1': 0.0361244999418538, '0.5': 0.0359403705511835, '1.0': 0.035385793625094794}, '64': {'0.1': 0.036124499941857034, '0.5': 0.035940370551180253, '1.0': 0.035385793625096494}}}}
+reproduced compass_stationary_response
+{'equal_time_covariance': -0.6147119872450361, 'normalized_equal_time_overlap': -0.7193736243766097, 'interior_identity_error': 4.942299894663696e-16, 'mixed_regularized_inverse_moments': {'16': {'0.1': -0.08798181667142918, '0.5': -0.08746082638260072, '1.0': -0.08590421741762913}, '32': {'0.1': -0.08798182520968262, '0.5': -0.08746082318241644, '1.0': -0.08590421328701825}, '64': {'0.1': -0.08798182520969008, '0.5': -0.08746082318240886, '1.0': -0.08590421328702198}}, 'scope': 'Finite selected-sector mixed spectral functional, not universal scalar coupling or independent empirical prediction; probe response does not add term to autonomous H'}
+reproduced compass_stationary_mixed
+{'uniform_error': 2.6111916269805313e-13, 'eta01_values': [-0.0019720752352202593, 0.007331818767474193, -0.0019720752352202662, 0.0073318187674742035, 0.0026294336469603347, 0.007331818767474186, -0.0019720752352202528, 0.007331818767474207, -0.0019720752352202484, 0.0073318187674741965, 0.0026294336469603052, 0.007331818767474163, 0.0026294336469603907, -0.08798182520969014, 0.002629433646960344, 0.007331818767474179, 0.0026294336469603117, 0.007331818767474161, -0.001972075235220263, 0.007331818767474177, -0.001972075235220232, 0.007331818767474172, 0.0026294336469603165, 0.007331818767474178, -0.0019720752352202285, 0.007331818767474158, -0.0019720752352202432], 'max_32_64_difference': np.float64(1.3115885270226224e-09)}
+reproduced compass_stationary_spatial
+{'rows': [{'lanczos_gap': 1.7389723182719081, 'actual_rayleigh_gap': 1.738972318271916, 'full_residual': 3.9858660977621645e-07, 'source_weight': 0.003524947756929154, 'initial_overlap': 8.481171494267858e-17, 'norm': 1.0}, {'lanczos_gap': 2.132564259485475, 'actual_rayleigh_gap': 2.132564259485452, 'full_residual': 2.2455125756163652e-05, 'source_weight': 0.0007914891276445802, 'initial_overlap': -8.99548989984067e-17, 'norm': 1.0}, {'lanczos_gap': 2.642079811342992, 'actual_rayleigh_gap': 2.6420798113429846, 'full_residual': 0.0038621608918341507, 'source_weight': 3.066699125012874e-05, 'initial_overlap': 7.730361489821647e-17, 'norm': 1.0}], 'scope': 'Actual finite selected-sector full-H residual checks; residual implies nearby finite eigenvalue, not thermodynamic particle/pole or unique mode'}
+reproduced compass_visible_ritz
+[{'mode': 0, 'energy_participation': 3.887680140747044, 'composite_participation': 5.836279560615327, 'uniform_energy': -2.8787736083835114e-15}, {'mode': 1, 'energy_participation': 1.1991317833568795, 'composite_participation': 1.6344508667205047, 'uniform_energy': -2.306694332071535e-15}, {'mode': 2, 'energy_participation': 13.651678364076433, 'composite_participation': 7.558373462899199, 'uniform_energy': 9.926955091277279e-16}]
+reproduced compass_mode_form_factors
+per_element: native bond actions and central composite sector intertwiners checked; eigenpairs have floating residuals
+per_site: original one-qubit sites and native bond interaction retained throughout finite sector construction
+per_mode: actual finite full-H residuals retained; no bulk pole
+per_block: all 32 finite sign sectors are represented modulo the checked unitary equivalence
+lattice_wide: scope is finite open27-site grid, not infinite-volume extrapolation
+
+----- stderr -----
+

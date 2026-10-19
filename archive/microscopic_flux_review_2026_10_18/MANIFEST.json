@@ -1,0 +1,167 @@
+{
+  "pr": 9694,
+  "head": "7c214326b9d58f68d5410157f9a691e4ce3aad5d",
+  "delta_base": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "entries": [
+    {
+      "path": ".claude/science/physics-loops/microscopic-flux-interaction-20261017/CLAIM_STATUS_CERTIFICATE.md",
+      "status": "A",
+      "blob": "50b12c586d184a3756cf00a45d0f168049e1aa7b",
+      "mode": "100644",
+      "sha256": "ffc816d7b302c219177ea8e5c99ef7566eebd3c0edf22f43c83f975a68fe14e8",
+      "bytes": 875,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/ffc816d7b302c219177ea8e5c99ef7566eebd3c0edf22f43c83f975a68fe14e8.gz",
+      "stored_sha256": "a959adb8d597793067992ecc4fd565a5ed4f16136ce45e5ef75f2ddc1c6637b1"
+    },
+    {
+      "path": ".claude/science/physics-loops/microscopic-flux-interaction-20261017/HANDOFF.md",
+      "status": "A",
+      "blob": "ea2e0a958334409927150a790cd1d69ba5ecaf9c",
+      "mode": "100644",
+      "sha256": "3e51a2622a6006a4270687ee02c25f66265034912c036c230012ae168a4fd75d",
+      "bytes": 2099,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/3e51a2622a6006a4270687ee02c25f66265034912c036c230012ae168a4fd75d.gz",
+      "stored_sha256": "e959386d30a71547d1e00b119d154a1aa3d1c197bd8286dff75b2a87fb9e2b6c"
+    },
+    {
+      "path": ".claude/science/physics-loops/microscopic-flux-interaction-20261017/INDEPENDENT_MATH.md",
+      "status": "A",
+      "blob": "6842997c5a6aa10920ba3e4b017386c722889a62",
+      "mode": "100644",
+      "sha256": "0f7c533d141dcb2dbbc5ecd6d495869ad90596aeb08d4f6f3d8dc1877a1c06d9",
+      "bytes": 10574,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/0f7c533d141dcb2dbbc5ecd6d495869ad90596aeb08d4f6f3d8dc1877a1c06d9.gz",
+      "stored_sha256": "48fada0e706ca6d2534baeab52b7421e665c7b3fcba5135d7c9c0212af3fe827"
+    },
+    {
+      "path": ".claude/science/physics-loops/microscopic-flux-interaction-20261017/INDEPENDENT_PROBES.md",
+      "status": "A",
+      "blob": "3fd87ba2c292d052e44f28f66c03275f5b1eb2bf",
+      "mode": "100644",
+      "sha256": "9d7763d59bfaf1a618b10b47f463a6b08ae434356bf478f6266d2c71ee916871",
+      "bytes": 5134,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/9d7763d59bfaf1a618b10b47f463a6b08ae434356bf478f6266d2c71ee916871.gz",
+      "stored_sha256": "ec2d5c71cae8abc045558fa76fffca5b240de3fc61dc72699207fd73df5bb91a"
+    },
+    {
+      "path": ".claude/science/physics-loops/microscopic-flux-interaction-20261017/SOURCE_REVIEW.md",
+      "status": "A",
+      "blob": "0a9464cfd521de67fd0a1425c2184c3a3d3314d6",
+      "mode": "100644",
+      "sha256": "7dbe7cd6b7730995ea6821abb910c45828733bf74f929732632c46cfbeb029a1",
+      "bytes": 8055,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/7dbe7cd6b7730995ea6821abb910c45828733bf74f929732632c46cfbeb029a1.gz",
+      "stored_sha256": "7c707bdc43ade9f4b8b36bc2fa490cfbd40138f2d62d2cd470514b57ef0abbc1"
+    },
+    {
+      "path": ".claude/science/physics-loops/microscopic-flux-interaction-20261017/STATE.yaml",
+      "status": "A",
+      "blob": "dabf80c72df1f11982d23e27fbb6608c6a3f1854",
+      "mode": "100644",
+      "sha256": "42bde1b8108d0c4b79424b1762ac3293d80a3573931847a51da8cfd5850f083f",
+      "bytes": 416,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/42bde1b8108d0c4b79424b1762ac3293d80a3573931847a51da8cfd5850f083f.gz",
+      "stored_sha256": "58eaf88c6b60ec0ebee04064ce15226b2e7f6bbf143b36ef66e7b11016e4f7d8"
+    },
+    {
+      "path": ".claude/science/physics-loops/microscopic-flux-interaction-20261017/TRACE_GATE.md",
+      "status": "A",
+      "blob": "fb26fb4185ce739e4f7c392d88ba763a4ae8b7ad",
+      "mode": "100644",
+      "sha256": "3549c4b7b4b68117bd1ecdff94c3684f226ce1fcce5f98b7c1043e3095afdbfd",
+      "bytes": 624,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/3549c4b7b4b68117bd1ecdff94c3684f226ce1fcce5f98b7c1043e3095afdbfd.gz",
+      "stored_sha256": "4ec22b6ae3b6963b32e3b19c47af712ed5c5d46f581f4731b0d3c4d183175bb3"
+    },
+    {
+      "path": "docs/MICROSCOPIC_FLUX_INTERACTION_NOTE_2026-10-17.md",
+      "status": "A",
+      "blob": "b88eb82afc8d227c94ddf3dc2a8552ad526782b9",
+      "mode": "100644",
+      "sha256": "2187816f2a9d5a34f433511c154c13b39b7346a613af50a9099daf8f84619de6",
+      "bytes": 11174,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/2187816f2a9d5a34f433511c154c13b39b7346a613af50a9099daf8f84619de6.gz",
+      "stored_sha256": "a8819b1c632e4bcee40cb8d7dbd9edf4055146c7429a1ded050fa9153c7e7bde"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "status": "M",
+      "blob": "97a08cdf45e75571c7c002b7a3907f6e3429d80a",
+      "mode": "100644",
+      "sha256": "f806cb526432b5cc8bfe3264bea174d0db40ab2c1a5679a9169728f6ed31c965",
+      "bytes": 1033605,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/f806cb526432b5cc8bfe3264bea174d0db40ab2c1a5679a9169728f6ed31c965.gz",
+      "stored_sha256": "7b67373e2c5c8bf8193183a34ae945aa426e6ea075904a1f443e893fbe7ee6de"
+    },
+    {
+      "path": "logs/runner-cache/microscopic_flux_interaction.txt",
+      "status": "A",
+      "blob": "dafc5f8c5e0ece7143456595c2f9552239900168",
+      "mode": "100644",
+      "sha256": "373daf50f523b53b9c4614f835503c224b483d3f895fac194aa7b2cdb41b2dec",
+      "bytes": 1863,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/373daf50f523b53b9c4614f835503c224b483d3f895fac194aa7b2cdb41b2dec.gz",
+      "stored_sha256": "7e0ba7e5ca6bb5d7711d34e433a493532c2d6249f572791a25c6543ba8858822"
+    },
+    {
+      "path": "outputs/microscopic_flux_interaction/independent.json",
+      "status": "A",
+      "blob": "604c93e91181ead7690be68be1f5c074c858ae21",
+      "mode": "100644",
+      "sha256": "90828f661436c1bf124c4d13f8991ca78f12a2c7ea84873dbaece31537bfbdd4",
+      "bytes": 285,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/90828f661436c1bf124c4d13f8991ca78f12a2c7ea84873dbaece31537bfbdd4.gz",
+      "stored_sha256": "8d4afaa0331c29aca3c8b6cbaed683c4586722306addc2ce4f662dba8d21fc4f"
+    },
+    {
+      "path": "outputs/microscopic_flux_interaction/independent_check.py",
+      "status": "A",
+      "blob": "3a9741c333753d0515a0bbc78ab9d1365ac3bb9f",
+      "mode": "100644",
+      "sha256": "4c2e390b2988284e394a32e3100299baf7bac9db42a28dd299b74ee4a49685ba",
+      "bytes": 3109,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/4c2e390b2988284e394a32e3100299baf7bac9db42a28dd299b74ee4a49685ba.gz",
+      "stored_sha256": "c98fc1acc8c2bfbbe00c2575ce93dad9ec9ea9937871342220ae187647ecc004"
+    },
+    {
+      "path": "outputs/microscopic_flux_interaction/mutation_check.py",
+      "status": "A",
+      "blob": "aa20c03e36a6c504ac6a82ae52ac6f4ca464f363",
+      "mode": "100644",
+      "sha256": "c18123812b25e2c11b4ee7a6f51d29ce843afeb6568f8f12efaf68d2a701bcba",
+      "bytes": 1407,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/c18123812b25e2c11b4ee7a6f51d29ce843afeb6568f8f12efaf68d2a701bcba.gz",
+      "stored_sha256": "bfdae40bcde87e02cc11062eed96bfcb57dcf5bba27e5b08cbd33312390f68b3"
+    },
+    {
+      "path": "outputs/microscopic_flux_interaction/mutations.json",
+      "status": "A",
+      "blob": "770608f822ccb5397de18b09c3334dc66bf728c3",
+      "mode": "100644",
+      "sha256": "f37b0e813e556bafc8068195475c00d804971bec4658bf7536677e1502780fa3",
+      "bytes": 383,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/f37b0e813e556bafc8068195475c00d804971bec4658bf7536677e1502780fa3.gz",
+      "stored_sha256": "f6c259f9881203acef6f293bdf53a2e5d6a4729c3cb737a0aec220cf86b8c7f7"
+    },
+    {
+      "path": "outputs/microscopic_flux_interaction/result.json",
+      "status": "A",
+      "blob": "4ba25e84c1ce5c8d654abbed125c6ce83534a86d",
+      "mode": "100644",
+      "sha256": "b6aafeb6f84b4133ea918d4997824eb64acb5c037c60c28b0efb18e85de1d8be",
+      "bytes": 1517,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/b6aafeb6f84b4133ea918d4997824eb64acb5c037c60c28b0efb18e85de1d8be.gz",
+      "stored_sha256": "4fb1c7679a0d022f09ec923d3dedae14aec5da67d840b2dc8f82ceb27d1ba89e"
+    },
+    {
+      "path": "scripts/microscopic_flux_interaction.py",
+      "status": "A",
+      "blob": "e4ff3307979eccc47d40679e62f8a923020ee621",
+      "mode": "100644",
+      "sha256": "2cf991823adbcf6f77e49131d9aefc4670a766a14a09b68038eb30d57925e8b0",
+      "bytes": 5601,
+      "recovery": "archive/microscopic_flux_review_2026_10_18/objects/2cf991823adbcf6f77e49131d9aefc4670a766a14a09b68038eb30d57925e8b0.gz",
+      "stored_sha256": "1bf2bc16dcff94a9e70ca0f3c239573d9aaa8e06d2477e2c32fe15d5c561ad55"
+    }
+  ]
+}

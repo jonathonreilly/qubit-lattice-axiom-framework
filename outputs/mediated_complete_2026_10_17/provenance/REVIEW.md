@@ -1,0 +1,54 @@
+# Scoped current-main dependency refresh
+
+Disposition: the twelve changed canonical surfaces contain no changed scientific premise, mathematical formula, domain, physical geometry, error budget or proof step requiring a new mediator argument. Their changes are publication/runner qualifications and proof-link presentation. Historical exact-byte dependency reuse is available for ALL twelve directly in current main. No reversion of main is required. This is a dependency compatibility review, not landing approval, runner certification or a retained audit.
+
+## Compared revisions and complete read coverage
+
+Compared base `ca2dfdfa01a23605e5460d3b584934ebb3b79b32` with current main `fa841753c1a6296e5ad45518375660b0f1004769`. I independently regenerated the diff for the exact twelve paths and verified byte equality with the supplied904-line `main_refresh_2310_dependency.diff`, SHA256 `a6286b569f7ee9cd4caf8106736af8c0d7c686b1159445ec62294d8ceb56bd8e`. I read every changed hunk and its displayed context. One combined response was truncated; the affected range451–680 was reread in smaller complete ranges451–529,530–610,611–680. The other complete ranges were1–220,221–450,681–790,791–904. Truncated output was not treated as completed coverage.
+
+ROOT's inventory reports186 compared dependencies,174 unchanged proof mappings, twelve changed canonical notes, zero instruction-diff bytes and664 overall changed paths. I used that supplied inventory to bound this task, independently verified all twelve current canonical hashes and located/hash-verified their historical equivalents. I did not repeat the174-file comparison or inspect all664 unrelated paths. No result about unrelated scientific changes, PR state or broader main compatibility follows from this report.
+
+## Classification of every changed note
+
+Nine notes—weighted hopping transfer, nominal converter, attached record, fixed slow record, uniform slow family, slow complete onset, wide slow complete state, critical-source spectral and three-site temporal—add the common conditional/unaudited header, shared `control_output_family_2026_10_17.py` runner link and an evidence-boundary paragraph. That paragraph leaves analytical proofs controlling, limits finite corroborations, and identifies historical original-note preservation. Their remaining changes replace Markdown proof/manifest links by repository-root path text, sometimes removing descriptive link labels. The actual source path targets, formulas, physical premises, constants, source scopes and historical corrections remain unchanged. The lost descriptive adjectives such as “corrected” or “checked” do not erase the substantive correction histories, which remain in the prose and frozen proof files.
+
+The faster-three-site note adds its own bounded/unaudited runner/evidence qualification and likewise changes proof-link formatting. Its endpoint derivative, cubic cancellation, full recovery and point budgets are unchanged.
+
+The factored-recovery and all-late notes add YAML claim metadata, dependency identifiers and dedicated runner names; both change proof links to path text and append a finite-corroboration section. The new text expressly limits those runners to finite identities, derivative samples or generic scalar/onset witnesses; it does not replace the complete apparatus or continuum proofs. The factored derivative constants, complete point, all-late exact coefficient/onset formulas and physical limitations are unchanged. The explicit contextual status of historical53f571b6 is retained rather than elevated into a numerical premise.
+
+The added runner statements are new evidence/provenance claims, not newly checked mathematics in this review. I did not run, inspect or validate the runners, declared runtime caps, their controls, their input totals, or their reports. They are unnecessary for reuse of the unchanged frozen analytical arguments. Historical same-model checks remain historical source-exposed checks, not independent landing authority; nothing here changes that assessment.
+
+## Impact on the mediator work
+
+The original endpoint calibration, full finite matching, positive-block source/port conventions, wider-gate and background kernel interfaces, full physical recovery, real two-lip synthesis and g-only compression arguments used by the mediator work retain their previous stated scope. No note delta changes a selected versus complementary hypothesis, threshold margin, source normalization, ordered inverse, scalar phase or resource definition. The new mediator conclusions still need their own checked interfaces and cannot inherit nominal three-source pulse performance merely because these canonical notes landed externally.
+
+Exact canonical hashes in historical research sources should not be silently reassigned to current `docs/` bytes. Instead, the new packet should map each original canonical path plus expected hash to its verified historical snapshot below, while identifying the live canonical document separately as current publication context. This avoids both false identity claims and reverting unrelated landing work. Relative links inside a preserved original note still reflect its original location: an explicit dependency mapping is needed; moving a byte-identical file into a landing folder does not automatically make every relative link resolve there. Existing frozen proof mappings remain their own authoritative resolution data.
+
+## Historical mapping available in current main
+
+`MAPPINGS.json` is the machine-readable deliverable. It records the fixed commit, every original path, expected old SHA256, current canonical SHA256, all matching historical paths located, and one preferred repository path. Every listed historical path was read using `git show` at the fixed current-main commit and its bytes hashed, not inferred from a manifest label. The discovery hashed51 candidate Markdown snapshots plus the explicit landing original-note/historical-pin files. All twelve expected hashes were found.
+
+Preferred paths and exact old identities:
+
+| Original canonical basename | Historical repository path | Expected and verified SHA256 |
+|---|---|---|
+| WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md | `outputs/control_family_landing_2026_10_17/originals/WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `feec1a7b2d48b758c86d5bdcde4ef0043a3b51ee09fb773024fbd7fd52d5bb38` |
+| HOPPING_CONTROLLED_FINITE_OUTPUT_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-17.md | `outputs/control_family_landing_2026_10_17/originals/HOPPING_CONTROLLED_FINITE_OUTPUT_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `735ec540842018f17ecde72b43d102f52dd76f9df65682eaaeec64498628c429` |
+| NOMINAL_BANDCENTER_CONVERTER_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md | `outputs/control_family_landing_2026_10_17/originals/NOMINAL_BANDCENTER_CONVERTER_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `f8480df631730d3e4e9fadb07b73486a1e02aec650511f7eae859ae2dabbe311` |
+| AUTONOMOUS_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md | `outputs/control_family_landing_2026_10_17/originals/AUTONOMOUS_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `f5ad73714d96536b965802e7bcb54c011f329e684d1ffd84e4e13fb4a37a429f` |
+| SLOW_OUTPUT_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md | `outputs/control_family_landing_2026_10_17/originals/SLOW_OUTPUT_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `2bda0ce48663763bdd3964b2a8bd9c6a160a45a32f7e56e94772cbfa98865d9d` |
+| UNIFORM_SLOW_OUTPUT_RESOURCE_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md | `outputs/control_family_landing_2026_10_17/originals/UNIFORM_SLOW_OUTPUT_RESOURCE_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `fe9c64423e058791d4c9d4f26aeecf2d1ba7d9240988691e7e535316829095f7` |
+| SLOW_OUTPUT_COMPLETE_STATE_ONSET_BOUNDED_THEOREM_NOTE_2026-10-17.md | `outputs/control_family_landing_2026_10_17/originals/SLOW_OUTPUT_COMPLETE_STATE_ONSET_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `49f53a9ab571c7784158d64a4b206e43e570b6c4252f294ec854015d99ba7027` |
+| CRITICAL_PRODUCT_SOURCE_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-17.md | `outputs/control_family_landing_2026_10_17/originals/CRITICAL_PRODUCT_SOURCE_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `455a12b8f1bf33cc653402f87e555cd01aee9ffa49cca5cae4d2a9ecf1bb7412` |
+| THREE_SITE_PRODUCT_SOURCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md | `outputs/control_family_landing_2026_10_17/originals/THREE_SITE_PRODUCT_SOURCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `9664da772e44fda23f62ba098d393f6b00676717e83fc75f2cce1caae126ae3c` |
+| FASTER_THREE_SITE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md | `outputs/all_late_complete_2026_10_17/landing/historical-parents/FASTER_THREE_SITE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `cf1125b7b5e43c8fe65607f1f62c1ecc176257113a0ed78c497d4f6217b87d62` |
+| FACTORED_RECOVERY_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md | `outputs/all_late_complete_2026_10_17/landing/historical-parents/FACTORED_RECOVERY_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `8e371a92befcc528bee765c282ae0f422239b71bf69b409c80e2203b1fa2e33e` |
+| ALL_LATE_THREE_SITE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md | `outputs/all_late_complete_2026_10_17/landing/original-note.md.txt` | `d18f41d78e08096d45d85b331271175d8116b1d4a67cb93d4fdb4021fe6e06f0` |
+
+The JSON also records alternate identical copies. In particular the all-late original is `landing/original-note.md.txt`, not a Markdown-suffixed historical parent. The original `.md` suffix search alone did not find it; the extension was checked explicitly and its exact hash matches. The factored and faster originals also have byte-identical existing historical parent copies. No new duplication of these twelve notes is necessary for packaging unless a separate transport requirement chooses it.
+
+## Exposure and verification limits
+
+I authored some of these original publication or component interfaces and checked others, including several mediator dependencies. The read therefore has substantial ancestral exposure. It directly checks the changed publication text and byte identities, not the independence or correctness of every unchanged original proof. ROOT supplied the main-change notification and initial inventory. Their reported external PR closure is not independently verified or attributed to our actions here.
+
+Only `main_refresh_2310/REVIEW.md` and the authorized accompanying `MAPPINGS.json` were written. Git operations were read-only diff/tree/show/rev-parse; no checkout, fetch, index, branch, commit, PR, W/canonical, checkpoint or editable prompt mutation occurred. No scientific runner, numerical solver, dynamics, parameter sweep, new model or delegation was used. No new retained or native-physical status is granted.

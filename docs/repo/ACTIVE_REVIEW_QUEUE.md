@@ -27,6 +27,17 @@ them.
 
 Current science/open-lane follow-ups:
 
+- `2026-10-18-source-repair-candidates-pr9698`
+  Scope: dated relic/gravity/axiom/CKM/citation and runner retrieval leads.
+  Finding: review confirmed representative stale live axiom/status prose;
+  the broader scan contains candidates, historical records and valid
+  author proposals, not universal defects.
+  Disposition: source-context triage; reconcile existing N5 science-fix work
+  before selecting a narrow follow-up. No blanket reruns or status changes.
+  Evidence and next action: [corrected packet](../work_history/repo/review_feedback/agent_fix_candidates_2026_10_18/PACKET.md),
+  preserving exact original proposal and81 source identities.
+
+
 - `2026-08-13-record-additivity-premise-removal-consumers`
   Scope: at reviewed main `c45dd5ab30b5a65df74621af789ae34cf6e4ae35`
   plus the PR #6247 proposed source delta, the citation graph has 576 direct

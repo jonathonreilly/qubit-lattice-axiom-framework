@@ -1,0 +1,38 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_finite_point_candidate/calculate.py",
+    "--output",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_finite_point_candidate/runs/calculation_001/EXACT_CERTIFICATE.json"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_finite_point_candidate",
+  "timeout_seconds": 120,
+  "cpu_quota": null,
+  "ram_quota": null,
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_finite_point_candidate/calculate.py",
+    "bytes": 21499,
+    "sha256": "4f5340de216d97d0609d198e8b488b56447d087ea5483731eb01cfbcfe55ee88"
+  },
+  "launcher_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_finite_point_candidate/run_once.py",
+    "bytes": 3002,
+    "sha256": "02a8202aa15304acf45c25dababc79ae0c42f97a5f6dd99d17b6420fa1c853be"
+  },
+  "source_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_finite_point_candidate/runs/calculation_001/executed_source.py",
+    "bytes": 21499,
+    "sha256": "4f5340de216d97d0609d198e8b488b56447d087ea5483731eb01cfbcfe55ee88"
+  },
+  "launcher_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_finite_point_candidate/runs/calculation_001/executed_launcher.py",
+    "bytes": 3002,
+    "sha256": "02a8202aa15304acf45c25dababc79ae0c42f97a5f6dd99d17b6420fa1c853be"
+  },
+  "premise_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_finite_point_candidate/SOURCE_PINS.json",
+    "bytes": 11126,
+    "sha256": "d66a7c1602f6d23e81b8b020946eb21c044dd60dd386c68aa9128e947bdafd23"
+  },
+  "planned_at_utc": "2026-10-17T23:32:15.290936+00:00"
+}

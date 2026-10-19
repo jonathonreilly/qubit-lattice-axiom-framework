@@ -1,0 +1,19 @@
+invariants: pure-l 92, pure-nu 131, cross 714, Z2xZ2-even cross 298, U(1)xU(1) cross combos 56
+
+Part A, sector l: global-minimum stratum over 300 random potentials (stabilizer order mod +-1, flag, nondegenerate):
+   ('|H|=6', True, np.False_): 108
+   ('|H|=3', True, np.True_): 89
+   ('|H|=2', False, np.True_): 76
+   ('|H|=4', False, np.False_): 15
+   ('|H|=1', False, np.True_): 12
+
+Part A, sector n: global-minimum stratum over 300 random potentials (stabilizer order mod +-1, flag, nondegenerate):
+   ('|H|=24', 12, np.False_): 257
+   ('|H|=6', 6, np.False_): 21
+   ('|H|=8', 4, np.False_): 19
+   ('|H|=4', 4, np.True_): 2
+   ('|H|=2', 2, np.True_): 1
+divergent starts discarded: 0; draws with every start divergent (classified symmetric/skipped): 0
+
+F3-type strata: l-sector exactly Z3 with nondegenerate M_l: 89/300; nu-sector exactly a transposition-type Z2 with nondegenerate M_nu: 1/300
+watchdog peak RSS 141424 KB

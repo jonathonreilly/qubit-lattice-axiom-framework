@@ -69,3 +69,19 @@ Add every leading cross-sector operator that G = Z³⋊O allows (the potential c
 **Also required.**
 - Check whether the joint vacuum (φ_ℓ, φ_ν) is even a minimum of a G-invariant potential without separate sectors. This is vacuum alignment: report whether it needs sector separation.
 - Do a prior-art check of the literature (discrete-flavour vacuum alignment: driving fields, sequestering), as templates only.
+
+**T-F3 result (02:27Z, T4/REPORT.md; same-family Opus; unrefereed).**
+
+**Worker's reading:** F3-PRICE, at the KILL boundary.
+
+**Supervisor's note: the pre-registration was ambiguous.** The PRICE clause ("tuning ε ≤ 1e-2") and the KILL clause overlap. The KILL condition is met literally: at natural size the median Δ is 0.057 (0.23 with every trilinear included), and no framework symmetry forbids the leakage. The worker pinned its reading of PRICE before any run (PREREG_NOTES.md). I record both readings and do not pick one after seeing the results.
+
+**What follows either way.** TM1 is not a consequence of the axioms. It needs the two sectors to be kept apart, or tuned apart, by hand.
+- The cross couplings must sit at about 0.05 of loop size. That is about 3e-4 of tree size, and about 0.01 for inverted ordering.
+- The joint vacuum is not stationary: its stabilizer is only ±1.
+- The neutrino stratum is hit 1 time in 300 even within its own sector.
+- No single named structure removes the leakage. The literature fixes (driving fields, sequestering, modular symmetry) are all imports.
+
+**Status of the FP prediction:** PROPOSED becomes CONDITIONAL ON AN IMPORT OR A TUNING. Its JUNO comparison no longer tests the axioms.
+
+**Side finding:** a site-centred C₂[110] axis of odd class also gives TM1. This corrects the derivation's line 104.

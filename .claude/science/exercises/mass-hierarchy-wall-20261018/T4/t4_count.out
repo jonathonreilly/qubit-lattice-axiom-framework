@@ -1,0 +1,6 @@
+linear insertions (complex couplings): phi_nu -> M_l: 6 ; phi_l -> M_nu: 4  [without A1 parts: 4 , 2 ]
+phi_l(x)phi_l -> M_nu at second order (no phi_nu at all): 33  ; phi_nu(x)phi_nu -> M_l: 35
+trilinear shaping-proof: phi_l (x) S2(phi_nu) -> M_l: 414  ; phi_nu (x) S2(phi_l) -> M_nu: 342
+   (without A1 parts: 244 , 208 )
+within-sector for comparison: phi_l -> M_l: 6 ; phi_l (x) S2 phi_l -> M_l: 554
+watchdog peak RSS 22896 KB

@@ -1,0 +1,16 @@
+spectrum NO, draws 40, loop factor 0.006333, trilinear words per draw: l 414, nu 342
+L1-loop      N=40 refit 0.97 | Delta median 0.0463 [16%,84%: 0.017, 0.099] P(D<0.003) 0.03 P(D>0.01) 0.95 | |dU_mu1| med 0.0362 |dU_tau1| med 0.0133 (signed med -0.0064,-0.005) | |s13-0.022| before refit med 0.0082
+L2-loop      N=40 refit 0.17 | Delta median 0.287 [16%,84%: 0.077, 0.74] P(D<0.003) 0.00 P(D>0.01) 1.00 | |dU_mu1| med 0.174 |dU_tau1| med 0.0523 (signed med +0.17,+0.011) | |s13-0.022| before refit med 0.17
+W-loop       N=40 refit 1.00 | Delta median 0.00555 [16%,84%: 0.00096, 0.01] P(D<0.003) 0.30 P(D>0.01) 0.17 | |dU_mu1| med 0.00303 |dU_tau1| med 0.00274 (signed med -0.00067,+0.001) | |s13-0.022| before refit med 0.00079
+ALL-loop     N=40 refit 0.23 | Delta median 0.25 [16%,84%: 0.083, 0.81] P(D<0.003) 0.00 P(D>0.01) 1.00 | |dU_mu1| med 0.165 |dU_tau1| med 0.0509 (signed med +0.17,+0.017) | |s13-0.022| before refit med 0.14
+TREE         N=40 refit 0.07 | Delta median 0.516 [16%,84%: 0.18, 0.82] P(D<0.003) 0.00 P(D>0.01) 1.00 | |dU_mu1| med 0.148 |dU_tau1| med 0.163 (signed med +0.097,+0.16) | |s13-0.022| before refit med 0.28
+PHYS         N=40 refit 1.00 | Delta median 8.93e-06 [16%,84%: 7.4e-06, 1.4e-05] P(D<0.003) 1.00 P(D>0.01) 0.00 | |dU_mu1| med 2.39e-06 |dU_tau1| med 1.09e-05 (signed med -2.1e-06,+1.1e-05) | |s13-0.022| before refit med 1e-06
+ALL-loop without refit: leak into M_l only -> median Delta 0.173; into M_nu only -> 0.116
+
+tuning t_req (median Delta = 0.003 when every leakage coefficient is multiplied by t):
+  ALL-loop : t_req = 0.0109  (check median at t_req: 0.0030); relative to O(1) tree size: 6.9e-05
+  L1-loop  : t_req = 0.0563  (check median at t_req: 0.0030); relative to O(1) tree size: 0.000356
+  L2-loop  : t_req = 0.0102  (check median at t_req: 0.0030); relative to O(1) tree size: 6.43e-05
+  W-loop   : t_req = 0.541  (check median at t_req: 0.0030); relative to O(1) tree size: 0.00343
+  TREE     : t_req = 9.48e-05  (check median at t_req: 0.0030); relative to O(1) tree size: 9.48e-05
+watchdog peak RSS 95408 KB

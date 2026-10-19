@@ -1,0 +1,30 @@
+invariants: pure-l 92, pure-nu 131, cross 714, Z2xZ2-even cross 298, U(1)xU(1) cross combos 56
+   pair 0: level none lambda 0.006333: break l 0.00895, nu 0.00724, max|d col| 0.00875, |stab| 2, nit 31, |grad| 3.5e-11
+   pair 0: level none lambda 1: break l 0.288, nu 0.715, max|d col| 0.0507, |stab| 2, nit 31, |grad| 4.9e+12
+   pair 0: level U1xU1 lambda 0.006333: break l 0.003, nu 0.000357, max|d col| 0.00219, |stab| 2, nit 31, |grad| 4.2e-09
+   pair 0: level U1xU1 lambda 1: break l 0.286, nu 0.0199, max|d col| 0.229, |stab| 2, nit 30, |grad| 1.3e-07
+pair 0 done (l tries 7, nu tries 812)
+   pair 1: level none lambda 0.006333: break l 0.0111, nu 0.00258, max|d col| 0.0442, |stab| 2, nit 32, |grad| 2.4e-10
+   pair 1: level none lambda 1: break l 0.756, nu 0.168, max|d col| 0.0961, |stab| 2, nit 42, |grad| 4.9e+14
+   pair 1: level U1xU1 lambda 0.006333: break l 0.00119, nu 0.000164, max|d col| 0.00147, |stab| 2, nit 32, |grad| 1.6e-11
+   pair 1: level U1xU1 lambda 1: break l 0.298, nu 0.00463, max|d col| 0.236, |stab| 2, nit 33, |grad| 4.1e-08
+pair 1 done (l tries 1, nu tries 726)
+   pair 2: level none lambda 0.006333: break l 0.00267, nu 0.0028, max|d col| 0.00317, |stab| 2, nit 33, |grad| 1.6e-08
+   pair 2: level none lambda 1: break l 0.904, nu 0.168, max|d col| 0.149, |stab| 2, nit 80, |grad| 5.9e+09
+   pair 2: level U1xU1 lambda 0.006333: break l 0.000555, nu 0.000564, max|d col| 0.00073, |stab| 2, nit 35, |grad| 1.9e-09
+   pair 2: level U1xU1 lambda 1: break l 0.1, nu 0.0854, max|d col| 0.0894, |stab| 2, nit 42, |grad| 9.6e-08
+pair 2 done (l tries 2, nu tries 4429)
+   pair 3: level none lambda 0.006333: break l 0.00373, nu 0.000908, max|d col| 0.0112, |stab| 2, nit 32, |grad| 9.0e-08
+   pair 3: level none lambda 1: break l 0.95, nu 0.0576, max|d col| 0.296, |stab| 2, nit 62, |grad| 7.5e+14
+   pair 3: level U1xU1 lambda 0.006333: break l 0.0013, nu 0.000523, max|d col| 0.000789, |stab| 2, nit 32, |grad| 5.6e-10
+   pair 3: level U1xU1 lambda 1: break l 0.637, nu 0.211, max|d col| 0.276, |stab| 2, nit 44, |grad| 1.8e-07
+pair 3 done (l tries 1, nu tries 7723)
+Part A2: 4 pairs; random l-potentials per Z3-stratum hit: 2.8; random nu-potentials per transposition-Z2 hit: 3422.5
+  unperturbed fixed-column patterns (sorted |U_a1|^2): [(np.float64(0.16), np.float64(0.327), np.float64(0.513)), (np.float64(0.167), np.float64(0.167), np.float64(0.667)), (np.float64(0.233), np.float64(0.265), np.float64(0.502)), (np.float64(0.245), np.float64(0.267), np.float64(0.488))]
+  cross level none:
+    lambda_x=0.006333: median breaking fraction l 0.00634 [84%: 0.01], nu 0.00269 [84%: 0.0051]; median max|d|U_a1|^2| 0.00999; joint stabilizer only +-1: 1.00
+    lambda_x=      1: median breaking fraction l 0.83 [84%: 0.93], nu 0.168 [84%: 0.45]; median max|d|U_a1|^2| 0.123; joint stabilizer only +-1: 1.00
+  cross level U1xU1:
+    lambda_x=0.006333: median breaking fraction l 0.00125 [84%: 0.0022], nu 0.00044 [84%: 0.00054]; median max|d|U_a1|^2| 0.00113; joint stabilizer only +-1: 1.00
+    lambda_x=      1: median breaking fraction l 0.292 [84%: 0.47], nu 0.0526 [84%: 0.15]; median max|d|U_a1|^2| 0.232; joint stabilizer only +-1: 1.00
+watchdog peak RSS 137504 KB

@@ -1,0 +1,24 @@
+invariants: pure-l 92, pure-nu 131, cross 714, Z2xZ2-even cross 298, U(1)xU(1) cross combos 56
+Part B (data-fit F3 point, first-order misalignment with natural stiffness |H_br|): 500 draws
+  F3 point is a saddle (some breaking direction with negative curvature) in: l 261/500, nu 101/500
+  F3 point a strict local minimum of the full retuned sector potential: l 214/500, nu 2/500; both: see rows
+  breaking-block Hessian replaced by |H_br| (natural stiffness surrogate) for the first-order shift.
+  cross level none:
+    lambda_x=  0.001: median Delta 0.00278 [16%,84%: 0.0008, 0.012], frac<0.003 0.52; med|dU_mu1| 0.00224, med|dU_tau1| 0.000848; med |dz_br| l 0.00132, nu 0.000534
+    lambda_x=0.006333: median Delta 0.0179 [16%,84%: 0.0051, 0.067], frac<0.003 0.08; med|dU_mu1| 0.0138, med|dU_tau1| 0.00538; med |dz_br| l 0.00834, nu 0.00338
+    lambda_x=    0.1: median Delta 0.184 [16%,84%: 0.054, 0.52], frac<0.003 0.01; med|dU_mu1| 0.111, med|dU_tau1| 0.0687; med |dz_br| l 0.132, nu 0.0534
+  cross level Z2xZ2:
+    lambda_x=  0.001: median Delta 0.00207 [16%,84%: 0.00054, 0.0074], frac<0.003 0.64; med|dU_mu1| 0.00152, med|dU_tau1| 0.000654; med |dz_br| l 0.000989, nu 0.000384
+    lambda_x=0.006333: median Delta 0.0129 [16%,84%: 0.0034, 0.043], frac<0.003 0.15; med|dU_mu1| 0.00937, med|dU_tau1| 0.0042; med |dz_br| l 0.00626, nu 0.00243
+    lambda_x=    0.1: median Delta 0.16 [16%,84%: 0.041, 0.42], frac<0.003 0.02; med|dU_mu1| 0.0987, med|dU_tau1| 0.0595; med |dz_br| l 0.0989, nu 0.0384
+  cross level U1xU1:
+    lambda_x=  0.001: median Delta 0.000954 [16%,84%: 0.00025, 0.0041], frac<0.003 0.79; med|dU_mu1| 0.000703, med|dU_tau1| 0.000307; med |dz_br| l 0.000426, nu 0.00019
+    lambda_x=0.006333: median Delta 0.00592 [16%,84%: 0.0016, 0.024], frac<0.003 0.30; med|dU_mu1| 0.00441, med|dU_tau1| 0.00195; med |dz_br| l 0.0027, nu 0.00121
+    lambda_x=    0.1: median Delta 0.0756 [16%,84%: 0.02, 0.26], frac<0.003 0.02; med|dU_mu1| 0.0576, med|dU_tau1| 0.03; med |dz_br| l 0.0426, nu 0.019
+
+  combined budgets at the data-fit point (first-order V + operator leakage), common factor t on loop-natural size:
+    V only (all 714 cross invariants)         : median Delta at loop-natural 0.0171; t_req 0.175 (check 0.0030); vs tree-natural 0.0011
+    V + L1 + W (leading set)                  : median Delta at loop-natural 0.05; t_req 0.0589 (check 0.0030); vs tree-natural 0.00037
+    V + L1 + L2(8 words) + W                  : median Delta at loop-natural 0.0725; t_req 0.0445 (check 0.0030); vs tree-natural 0.00028
+    V + L1 + L2(count-matched 414/342) + W    : median Delta at loop-natural 0.259; t_req 0.01 (check 0.0030); vs tree-natural 6.3e-05
+watchdog peak RSS 215696 KB

@@ -1,0 +1,10 @@
+axis [110] through [0. 0. 0.] (site): translation part [0 0 0], image [[0, 1, 0], [1, 0, 0], [0, 0, 1]], fixed column [0.  0.5 0.5]
+axis [110] through [0.  0.  0.5] (non-site): translation part [0 0 1], image [[0, 1, 0], [1, 0, 0], [0, 0, -1]], fixed column [0.1667 0.1667 0.6667]
+axis [110] through [0. 1. 0.] (site): translation part [-1  1  0], image [[0.0, -1.0, 0.0], [-1.0, 0.0, 0.0], [0.0, 0.0, 1.0]], fixed column [0.1667 0.1667 0.6667]
+axis [110] through [1. 0. 0.] (site): translation part [ 1 -1  0], image [[0.0, -1.0, 0.0], [-1.0, 0.0, 0.0], [0.0, 0.0, 1.0]], fixed column [0.1667 0.1667 0.6667]
+axis [110] through [0. 0. 1.] (site): translation part [0 0 2], image [[0, 1, 0], [1, 0, 0], [0, 0, 1]], fixed column [0.  0.5 0.5]
+axis [110] through [0.5 0.5 0. ] (non-site): translation part [0 0 0], image [[0, 1, 0], [1, 0, 0], [0, 0, 1]], fixed column [0.  0.5 0.5]
+axis through [0.5 0.  0. ]: t=[ 0.5 -0.5  0. ] not a lattice translation
+axis through [0.  0.5 0.5]: t=[-0.5  0.5  1. ] not a lattice translation
+axis [110] through [1. 1. 0.] (site): translation part [0 0 0], image [[0, 1, 0], [1, 0, 0], [0, 0, 1]], fixed column [0.  0.5 0.5]
+axis [110] through [ 0.5 -0.5  0. ] (non-site): translation part [ 1 -1  0], image [[0.0, -1.0, 0.0], [-1.0, 0.0, 0.0], [0.0, 0.0, 1.0]], fixed column [0.1667 0.1667 0.6667]

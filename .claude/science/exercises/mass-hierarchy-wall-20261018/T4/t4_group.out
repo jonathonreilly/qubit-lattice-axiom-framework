@@ -1,0 +1,53 @@
+|B3| = 48
+g_l  (C3[111] through a site) = [[0, 0, 1], [1, 0, 0], [0, 1, 0]]
+g_nu (C2[110] o T(e3), axis through (0,0,1/2)) = [[0, 1, 0], [1, 0, 0], [0, 0, -1]] ; site-centred C2[110] -> [[0, 1, 0], [1, 0, 0], [0, 0, 1]]
+<g_l, g_nu>: order 24, contains -1: False, commutant dim on triplet 1 (1 = irreducible)
+<g_l, site C2[110]>: order 6, commutant dim 2
+  => a G-covariant map from ONE state to both mass matrices, generic coefficients, gives each sector the state's stabilizer;
+     requiring both residuals forces the stabilizer to contain <g_l,g_nu>, irreducible -> Schur -> degenerate masses.
+irrep A1: dim 1, commutant 1 (1=irreducible); g_l-fixed dim 1, g_nu-fixed dim 1
+irrep E: dim 2, commutant 1 (1=irreducible); g_l-fixed dim 0, g_nu-fixed dim 1
+irrep 3M: dim 3, commutant 1 (1=irreducible); g_l-fixed dim 1, g_nu-fixed dim 2
+irrep 3M': dim 3, commutant 1 (1=irreducible); g_l-fixed dim 1, g_nu-fixed dim 1
+character inner products (identity => four inequivalent irreps, each multiplicity 1 in 3x3):
+ [[ 1. -0.  0. -0.]
+ [-0.  1.  0.  0.]
+ [ 0.  0.  1.  0.]
+ [-0.  0.  0.  1.]]
+Dirac  rho(x)rho = A1+E+3M+3M' ; Majorana S^2 rho = A1+E+3M  (3M' is antisymmetric)  -> Majorana irreps are a subset of Dirac irreps
+T(1,1,1) image: [-1, -1, -1] -> acts trivially on every bilinear (s_i s_j = 1)
+  projection of C onto A1: nonzero = False
+  projection of C onto E: nonzero = False
+  projection of C onto 3M: nonzero = True
+  projection of C onto 3M': nonzero = True
+A1+3M' only (e = trivial character): max over 2e5 draws of (m_heavy - m_mid)/(2 m_e) = 1.000000 (proved <= 1); data need 1635
+A1+3M only: singular values [1.7 0.4 0.4] (mu-tau degenerate)
+check unperturbed: {'s13': np.float64(0.022), 's12': np.float64(0.31834), 's23': np.float64(0.58072), 'Delta': np.float64(0.0), 'dmu1': np.float64(-0.0), 'dtau1': np.float64(0.0), 'Ue1': np.float64(0.66667)}
+  g_l-invariance of M_l: True ; g_nu-invariance of M_nu: True ; M_l g_nu-inv: False ; M_nu g_l-inv: False
+  phi_nu has E component: 0.418; that component is g_l-invariant: False
+  phi_nu has 3M component: 0.765; that component is g_l-invariant: False
+  phi_l has 3M component: 0.395; g_nu-invariant: False
+
+G-invariant polynomials in (mR,mI,nR,nI | DR,DI,pR,pI), orbit-sum basis, counts by (deg_l, deg_nu):
+  degree 1: {(np.int64(0), np.int64(1)): 2}
+  degree 2: {(np.int64(0), np.int64(2)): 9, (np.int64(1), np.int64(1)): 4, (np.int64(2), np.int64(0)): 6}
+  degree 3: {(np.int64(0), np.int64(3)): 30, (np.int64(1), np.int64(2)): 32, (np.int64(2), np.int64(1)): 52, (np.int64(3), np.int64(0)): 12}
+  degree 4: {(np.int64(0), np.int64(4)): 90, (np.int64(1), np.int64(3)): 164, (np.int64(2), np.int64(2)): 298, (np.int64(3), np.int64(1)): 164, (np.int64(4), np.int64(0)): 74}
+  cross-sector invariants (deg<=4): 714; even in each sector (survive Z2xZ2 shaping): 298
+  bidegree (np.int64(1), np.int64(1)): 4 invariants, U(1)xU(1)-invariant combinations: 0
+  bidegree (np.int64(1), np.int64(2)): 32 invariants, U(1)xU(1)-invariant combinations: 0
+  bidegree (np.int64(1), np.int64(3)): 164 invariants, U(1)xU(1)-invariant combinations: 0
+  bidegree (np.int64(2), np.int64(1)): 52 invariants, U(1)xU(1)-invariant combinations: 0
+  bidegree (np.int64(2), np.int64(2)): 298 invariants, U(1)xU(1)-invariant combinations: 56
+  bidegree (np.int64(3), np.int64(1)): 164 invariants, U(1)xU(1)-invariant combinations: 0
+
+joint F3 point: in Fix(g_l)+Fix(g_nu): True; dim Fix_l = 4, dim Fix_nu = 8
+stabilizer of the joint point in B3: order 2 (2 = only +-1)
+max breaking-gradient over pure-l invariants: 2.88e-16; pure-nu: 4.91e-18  (Michel: 0)
+all cross: 710/714 have nonzero breaking gradient at the joint point; median |grad_br| 0.004
+Z2xZ2-even cross: 298/298 have nonzero breaking gradient at the joint point; median |grad_br| 0.002
+U(1)xU(1)-invariant cross combinations: 56/56 have nonzero breaking gradient
+lowest-degree misaligning cross invariant: degree 2, bidegree (np.int64(1), np.int64(1)): +0.333*mR0*pR0 + +0.333*mR1*pR1 + +0.333*mR2*pR2
+example Z2xZ2-even (shaping-proof) misaligning quartic: +0.167*mR0*mR0*DR0*DR0 + +0.167*mR1*mR1*DR0*DR0 + +0.167*mR0*mR0*DR1*DR1 + +0.167*mR2*mR2*DR1*DR1 + +0.167*mR1*mR1*DR2*DR2 + +0.167*mR2*mR2*DR2*DR2 ...
+hand invariant sum_k |m_k|^2|p_k|^2: B3-invariant True; |breaking gradient| at joint point = 0.1075
+watchdog peak RSS 123696 KB

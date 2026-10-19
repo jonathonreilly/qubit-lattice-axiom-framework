@@ -50,3 +50,30 @@ Two of my own test errors, disclosed:
 4. **Minor (C2, C6, C7, C8, C9):** say that the gauge is chosen per sign. Weaken the wording of the periodic-control attribution. Name E_mix as the failed observable and use 8/9 for the QMC cases. Add seeds 129–131 to the hazard. State the limits of the step-3 scope.
 
 No claim was found incorrect. The stoquasticity theorem (C1–C3) is confirmed independently, including all winding sectors and a staggered background at L=2.
+
+## Correction confirmation (2026-10-19)
+
+**Who and what.** The same reviewer (a Claude subagent, same model as the author) read the complete corrected NOTE.md (434 lines), including its "Review dispositions" table.
+
+**Per finding:**
+
+| finding | resolved? | where |
+|---|---|---|
+| C2 (gauge chosen per sign of g) | yes | §0.1 |
+| C6 (periodic-control attribution) | yes | §0.2 |
+| C7 (validation counts, failed observable) | yes in §0.3; residual in §3.4 | §3.4 line "The failure is V=0.9, T=3: N_f(end) z = −3.1" still names only N_f(end) and not E_mix (nit) |
+| C8 (seed hazard incl. 129–131, W=0 evidence) | yes | §3.4 |
+| C9 (step-3 scope) | yes | §3.4 |
+| C12 (L=4 dependence) | yes | §0.5, §6, §9; numbers match rv2 |
+| C14 (L=4, 6, 12 projection untested; T=18 inversion) | yes | §0.5, §6 |
+| C15 (8³ disagreement) | yes | §0.5, §5.5, §6, §9; residual in §8 (nit) |
+
+**Residual nits.** None of these is a defect that changes any verdict.
+1. §3.4: also name E_mix (z=+3.1) as the failed observable.
+2. §8 "Repo context": still says "3.2σ"; it should say 3.2–4.5σ.
+3. §5.5 "biased by at least about 3e−4 per plaquette": the two comparisons give 0.37–0.46 / 1536 = 2.4–3.0e−4. The imprecision originated in this review's C15 wording, and "≳2.4e−4" is accurate.
+4. §10 refers to `blocks/C1b`, which does not exist yet. Mark it as planned.
+
+**New defects.** None found. The verdicts, fit numbers and the overall INCONCLUSIVE verdict are unchanged and consistent with the review.
+
+**Final verdict: READY.** The four nits above are optional wording fixes.

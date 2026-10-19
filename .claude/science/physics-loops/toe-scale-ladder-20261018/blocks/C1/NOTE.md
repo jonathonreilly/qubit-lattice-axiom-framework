@@ -292,7 +292,7 @@ cached output in `logs/runner-cache/`) gives, for the same q=1 sector:
 - Refitting the repo's more precise numbers with the same models gives A/L χ² = 51/2 (rejected) and B/L² χ² =
   5.1/2. A/L + σL gives σ = −0.034(5), χ² 0.07/1. So the repo data show ΔE·L *decreasing* from 2.9 to 1.35
   over L = 4..8.
-- **Recorded disagreement:** the repo's 8³ W=0 energy −443.364(31) lies 0.46 (3.2σ) *above* this block's
+- **Recorded disagreement:** the repo's 8³ W=0 energy −443.364(31) lies 0.46 (3.2–4.5σ depending on the error estimate; see REVIEW.md) *above* this block's
   −443.828(140). This block's estimator is a Rayleigh quotient and so, in expectation, an upper bound. Either the
   repo value is biased high (guide or population effects) or this one is biased low (residual mixing). This is not
   resolved here. Further points from the review:
@@ -360,7 +360,7 @@ beyond memory.
 
 Repo context:
 - `docs/RING_MODEL_*` notes use guided projectors. Their winding splittings (§5.5) are consistent with ours.
-  Their 8³ energy disagrees with ours at 3.2σ.
+  Their 8³ energy disagrees with ours at 3.2–4.5σ.
 - The 09-04 note title claims a "quadratic transverse mode, not a Maxwell photon". ΔE·L decreasing in the repo
   data would fit that reading, but this block cannot test it.
 

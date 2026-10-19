@@ -180,3 +180,40 @@ retracted ad-hoc check are reported transparently in the WORKLOG.
 
 With 1–2 applied, claims (1)–(4) stand as stated. The headline numbers 7.36673×10⁻³ (b\*) and the
 continuum references are confirmed by two routes different from the author's.
+
+## Correction confirmation
+
+**Provenance.** The same reviewer as above, in a separate agent context. I read the whole corrected
+NOTE.md, `logs/run_all.log` (TOTAL: PASS=58 FAIL=0) and the main note around the quoted line. My own
+evidence is unchanged (`review_scripts/logs/review_all.log`, TOTAL: PASS=54 FAIL=0).
+
+**Findings: all resolved.**
+- 5b is applied in the result paragraph and in §7: "positive TT stiffness, attractive only if EH",
+  a third caveat covering ρ_vac, the TT q⁰ term and the conformal channel, and the coupling range
+  0.43–0.69 √N_f.
+- 5c is applied in §5. The new θ = 0.0125 and θ = 0 rows (35.955 and 38.895 ×10⁻³) agree with my
+  35.956 and 38.894. The |ρg| ≤ π bound is stated and the old mechanism is withdrawn.
+- The c_G^iso convention and the b_gold mass-direction convention are both stated.
+
+**New defect (minor).** §0 P5 still says "At b_gold it requires θ > 0 (§5)", which contradicts the
+corrected §5. That section now computes θ = 0 and says the principal-branch sea is defined there.
+*Fix:* "At b_gold the principal-branch sea is defined almost everywhere (the f = −1 points have
+measure zero); see §5."
+
+**§11 (proposed repair to main).**
+- The quoted current line matches line 23 of the main note verbatim, and the string is unique there.
+  6π is the right value: 1/(16πG) = Λ²/(96π²) gives G = 6π/Λ². The consequential numbers are also
+  right: 6π/N_f, and l_P/a = √(6π/8) = 1.535.
+- **But the replacement is not exactly correct in context.**
+  - Line 22 introduces the value as "the coefficient of the **supplied** heat-kernel matching
+    equation". That supplied equation is §1's (4π)⁻²(1/3)Λ²N_f, which solves to 3π, not 6π.
+  - Lines 28–29 still say "The determinant half-factor … remain[s] open".
+  - The note's runner asserts 3π (check C1).
+  - So editing line 23 alone makes the boundary paragraph contradict itself and its runner.
+- **Fix (minimal and consistent):** keep line 23. Replace "The determinant half-factor, sign, …" in
+  lines 28–29 with "Evaluating the determinant half-factor (det D = (det D²)^{1/2}) doubles this to
+  `G = 6 pi/(N_f Lambda^2)` (1/(16πG) = Λ²/(96π²) per Dirac fermion; C8). The sign, …". Add the
+  half-factor case to the runner (the audit lane's call).
+
+**Final verdict: not ready.** Only two small edits remain: the P5 sentence, and §11 revised as above.
+The physics and the numbers are confirmed. With those two edits the block is ready.

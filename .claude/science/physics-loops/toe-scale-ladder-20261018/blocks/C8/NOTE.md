@@ -52,7 +52,9 @@ The lapse channel, by contrast, has exactly zero O(q²) response (Lemma L), as c
 - **P5 (observable identification, supplied).** The induced gravitational action is identified
   with the walk's static vacuum (Dirac-sea) quasienergy in the background:
   E_vac[γ] = −L_eff[γ] (Sakharov). The vacuum is the filled lower band of H_a.
-  This is well defined for b\* and b_iso (no π-modes, C7). At b_gold it requires θ > 0 (§5).
+  This is well defined for b\* and b_iso (no π-modes, C7). At b_gold (θ = 0) the principal-branch
+  sea is still defined, because the f = −1 points have measure zero. c_G has a finite θ → 0 limit
+  there (§5), subject to the two-tick-clock π-mode caveat of C7 §5.
 - **Units.** Lattice units a = τ = 1, where the light speed is s (C7). Physical c = 1 requires
   τ = s a, so physical energies are lattice energies divided by s. Hence c_G = 2 c₂/s, where c₂
   is the q² coefficient of E₂/(Vol λ²) (normalisation in §2).
@@ -306,26 +308,24 @@ fermion sign are textbook. As far as I know, what is specific here is the exact 
 coefficient for this walk, the witnessed coupling non-uniqueness, the cubic decomposition of
 the induced TT stiffness, and Lemma L.
 
-## 11. Proposed repair to main (not applied; this block edits no repo file)
+## 11. Repair to main (applied by the orchestrator, not by this block)
 
-File: `docs/UNIVERSAL_GR_SAKHAROV_GNEWTON_INDUCED_RESIDUAL_IS_METRIC_DOF_POSIT_NARROW_THEOREM_NOTE_2026-06-17.md`,
-section "Current reviewed theorem boundary (2026-10-04)". Current line, verbatim:
+File: `docs/UNIVERSAL_GR_SAKHAROV_GNEWTON_INDUCED_RESIDUAL_IS_METRIC_DOF_POSIT_NARROW_THEOREM_NOTE_2026-06-17.md`.
+The orchestrator added a dated addendum, "*Addendum (2026-10-18), determinant half-factor*", after
+the "remain open" paragraph of the "Current reviewed theorem boundary (2026-10-04)" section. The
+existing line
 
 ```
 equation: `G = 3 pi/(N_f Lambda^2)`. It is conditional on the stated Dirac
 ```
 
-Proposed replacement for that line:
-
-```
-equation: `G = 6 pi/(N_f Lambda^2)` (1/(16 pi G) = Lambda^2/(96 pi^2) per Dirac fermion, with the 1/2 of det D = (det D^2)^(1/2) evaluated). It is conditional on the stated Dirac
-```
-
-Reason: Γ_E = −½ log det D² with a proper-time cutoff gives 1/(16πG) = +Λ²/(96π²) per Dirac
-fermion (c8_exact E3; reproduced in REVIEW.md S4). The note's matching line
-(4π)⁻²(1/3)Λ² = Λ²/(48π²) omits the ½, which the note itself lists as "not evaluated".
-Consequential edits for the audit lane: the corrigendum's "Corrected statement"
-(`G/a² = 3π/N_f`, `l_P/a = 1.085` at N_f = 8) would become 6π/N_f and 1.535.
+is kept unchanged. The addendum states that evaluating the half-factor of
+det D = (det D²)^{1/2} gives 1/(16πG) = Λ²/(96π²) per Dirac fermion, so G = 6π/(N_f Λ²). It also
+states that the note's runner still checks the supplied 3π form.
+Basis: c8_exact E3 (Γ_E = −½ log det D² with a proper-time cutoff), reproduced in REVIEW.md S4.
+This block edited no repo file. The corrigendum's illustrative numbers (G/a² = 3π/N_f and
+l_P/a = 1.085 at N_f = 8) correspond to the supplied form; with the half-factor they would be
+6π/N_f and 1.535.
 
 ## 12. Review dispositions (REVIEW.md)
 
@@ -334,8 +334,8 @@ Consequential edits for the audit lane: the corrigendum's "Corrected statement"
 | 1 vertex, Prop. 1, half-density identity | correct | none needed |
 | 2 normalisation c_G = 2c₂/s, Lemma C | correct | none needed |
 | 3 c_G(b\*) = 7.36673×10⁻³, sign, Lemma L | correct (reproduced by tanh-sinh octant quadrature and by a finite-q periodic lattice) | none needed |
-| 4 heat kernel Λ²/(96π²), sharp cutoff 13Λ²/(840π²) | correct | proposed repair to main written as §11; the repo file is not edited |
+| 4 heat kernel Λ²/(96π²), sharp cutoff 13Λ²/(840π²) | correct | the main-note addendum was applied by the orchestrator and is described in §11; this block edited no repo file |
 | 5a non-uniqueness, anisotropy | correct | the c_G^iso projection convention is now stated (caveat 2) |
 | 5b headline overstated | fix | **applied**: "positive TT stiffness, attractive only if EH"; third caveat (ρ_vac, TT q⁰ term, conformal channel); a/l_P quoted with the 0.43–0.69 √N_f coupling range (headline and §7) |
-| 5c b_gold limit and mechanism | incorrect | **applied**: verified with my own code (new θ = 0.0125 and θ = 0 runs, job D: 3.88948×10⁻², reviewer 3.8894×10⁻²) and `c8_gold_bound.py` (\|ρg\| ≤ π); §5 rewritten; mass-direction convention stated |
+| 5c b_gold limit and mechanism | incorrect | **applied** (§5 and §0 P5): verified with my own code (new θ = 0.0125 and θ = 0 runs, job D: 3.88948×10⁻², reviewer 3.8894×10⁻²) and `c8_gold_bound.py` (\|ρg\| ≤ π); §5 rewritten; mass-direction convention stated |
 | mass dependence (b\*, b_iso) | not re-verified | remains single-author, reported only |

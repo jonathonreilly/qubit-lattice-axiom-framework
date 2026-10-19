@@ -4,7 +4,7 @@
 **Claim types used below:** [THM] proved statement with exhaustive finite certificate; [NUM] numerical
 evidence from the QMC of this block; [EXT] repo result from a different code, not verified here;
 [LIT] literature, recalled from memory, not re-checked; [VERDICT] application of pre-declared criteria.
-**Status:** unaudited block output; no independent check has been done yet (see §9).
+**Status:** Reviewed in a separate agent context (same model as the author); unaudited. See `REVIEW.md` and the "Review dispositions" section at the end.
 **Merges** `NOTE_part1_stoquastic.md` (§1–2) and `NOTE_part2_method.md` (§3). The full history,
 including the times when criteria were declared, is in `WORKLOG.md`.
 
@@ -13,13 +13,17 @@ including the times when criteria were declared, is in `WORKLOG.md`.
 ## 0. Bottom line
 
 1. [THM] On every even cubic torus, for any static background, the ring Hamiltonian is stoquastic in the
-   Gauss-legal σ^z basis for either sign of g. A diagonal ±1 gauge maps H(g) to H(−g). For odd L no diagonal
-   gauge does this.
+   Gauss-legal σ^z basis for either sign of g, with the gauge chosen according to the sign: the identity for
+   g > 0 and the diagonal ±1 gauge D for g < 0. D maps H(g) to H(−g). No single fixed gauge works for both signs.
+   For odd L no diagonal gauge maps g to −g. The review confirmed this independently by brute-force ED over all
+   2^24 configurations at L=2.
 2. [THM] A local-update finite-temperature trace (worldline) code conserves a flip-class label and so does not
-   sample Tr e^{−βH}. The L=2 control shows a large bias: E = −7.95 vs −9.02.
+   sample Tr e^{−βH}. The L=2 control shows a large bias, E = −7.95 vs −9.02, consistent with the class restriction. No exact
+   class-restricted reference was computed.
 3. [NUM] The guide-free open-path projector built here reproduces exact L=2 results (W=0 and W=1 sectors) within
-   3σ in 12 of 13 checks. The single failure was resolved as statistical by fresh chains, and both results are
-   reported.
+   3σ in 8 of 9 QMC-vs-exact cases (7 W=0 and 2 W=1); the other 4 checks are structural. The failure is in
+   **E_mix** (z=+3.1), the production estimator, at V=0.9, T=3; equivalently N_f(end), z=−3.1. Fresh chains
+   (a diagnostic, not a re-validation) gave z=−0.3. Under the pre-declared rule the case remains a FAIL.
 4. [NUM/VERDICT] **Middle-of-path structure factors do not equilibrate for L ≥ 6.** They depend on the start
    state, and at L=8, T=32 E_mid differs from E_mix by about 100σ. The pre-declared S_T exponent, Bragg and
    photon-velocity criteria **cannot be evaluated**. This is a method failure, not a physics result.
@@ -29,6 +33,16 @@ including the times when criteria were declared, is in `WORKLOG.md`.
    Coulomb ∝1/L scaling. Verdict at V=0: **confined-with-resolvable-string-tension disfavoured; Coulomb
    consistent but not decided (inconclusive at accessible L)**. At V=0.5 and 0.9 the results are inconclusive, and
    the V=0.9 points show insufficient projection.
+   **Caveats on these results (from the review):**
+   - *L=4 dependence.* The pure-σL rejection and the bound σ ≲ 0.04 rest on the L=4 point alone. Without L=4,
+     pure σL has χ² 6.9/3 (T=2L) and 2.7/3 (largest T), so it is not rejected, and the 2σ bound on σ
+     loosens to about 0.05–0.08.
+   - *Untested T-convergence.* The ΔE points at L = 4, 6 and 12 were not tested at a second T, yet they
+     carry most of the fit leverage. At L=6 the single T=18 W=0 chain lies 1.7σ *above* the T=12 value, the
+     opposite of the expected decrease with T.
+   - *Cancellation assumption.* At 8³ this block's E(W=0) disagrees with the repo projector by 3.2–4.5σ. The
+     difference, 0.37–0.46, is larger than ΔE(8) itself. The ΔE results at L ≥ 8 therefore **assume that the
+     bias cancels between sectors**, which is untested.
 
 ---
 
@@ -160,9 +174,11 @@ thermalisation. After the fix, the exact fixed-end P(n) at T=0.3 is reproduced:
   - Exact L=2 gap: ΔE = 1.62761 at V=0 and 0.73146 at V=0.5.
 - **Reproducibility hazard (found at resumption).** `driver.Sim` now interprets seed ≥ 100 as a W=1 start.
   The logged step-2 run (finished 19:49) predates that change (driver.py modified 20:00), but step 2 uses seeds
-  101–128. **Re-running `step2_validate_L2.py` with the current driver would start its chains in the W=1 sector
+  101–128, and the periodic-control seeds 129–131. **Re-running `step2_validate_L2.py` with the current driver would start its chains in the W=1 sector
   and fail.** Its seeds must be moved below 100 before re-use. The log as recorded is valid for the code at the
-  time.
+  time. It is empirically the W=0 sector: its E_mix values of −9.02 to −9.04 match the W=0 exact value, not W=1's
+  −7.40. Step 3 covers only W=1 line starts at V = 0 and 0.5; the W=1 RK-walk starts and V=0.9 in W=1 are
+  not validated.
 
 ## 4. Pre-declared criteria (copied; see WORKLOG for timestamps)
 
@@ -279,7 +295,13 @@ cached output in `logs/runner-cache/`) gives, for the same q=1 sector:
 - **Recorded disagreement:** the repo's 8³ W=0 energy −443.364(31) lies 0.46 (3.2σ) *above* this block's
   −443.828(140). This block's estimator is a Rayleigh quotient and so, in expectation, an upper bound. Either the
   repo value is biased high (guide or population effects) or this one is biased low (residual mixing). This is not
-  resolved here.
+  resolved here. Further points from the review:
+  - Against the T=16 value −443.734(77) the disagreement is 4.5σ.
+  - At L = 4 and 6 the absolute energies agree, so the problem first appears at L=8.
+  - The repo's loop moves target the whole sector, whose ground energy is ≤ that of the component. The
+    component/sector difference therefore cannot explain the repo value being higher.
+  - One of the two codes is biased by at least about 3e−4 per plaquette, which is the size of ΔE/N_p at L ≥ 8.
+  - Agreement of ΔE with the repo at L=8 therefore holds only if this bias cancels between the sectors.
 
 ## 6. Verdicts against the pre-declared criteria [VERDICT]
 
@@ -288,12 +310,12 @@ cached output in `logs/runner-cache/`) gives, for the same q=1 sector:
 | S_T exponent p (Coulomb p≈1, ordered p≥1.6, RK p≤0.4) | **not evaluable**: middle not equilibrated (§5.4) | not evaluable | not evaluable |
 | Bragg ratio R_Q (ordered R_Q≥0.5; Coulomb ≤0.25) | **not evaluable** (start-dependent, §5.4) | not evaluable | not evaluable |
 | ω_eff·L photon criterion | not evaluable (C(τ) measured at the non-equilibrated middle) | not evaluable | not evaluable |
-| projection rule (two T agree within 2σ) | ΔE: passes formally at L=8 and 10, but the errors are as large as ΔE | not tested at L=8 | fails in effect (ΔE<0) |
-| winding gap: confined ⇒ ΔE ∝ L | **pure σL rejected** (χ² 37–54/4). With the Coulomb term included, σ = −0.010(15) or +0.007(18): **no resolvable string tension; σ ≲ 0.04 g (2σ)** at L ≤ 12 | σ = 0.007(18) from L=4..8 only: no evidence of confinement | inconclusive (insufficient projection) |
+| projection rule (two T agree within 2σ) | ΔE: passes formally at L=8 and 10, but the errors are as large as ΔE. **L = 4, 6, 12 untested**: a single T for W=1; the L=6 T=18 W=0 chain is 1.7σ above T=12 | not tested at L=8 | fails in effect (ΔE<0) |
+| winding gap: confined ⇒ ΔE ∝ L | **pure σL rejected** (χ² 37–54/4). With the Coulomb term included, σ = −0.010(15) or +0.007(18): **no resolvable string tension; σ ≲ 0.04 g (2σ)** at L ≤ 12. **Both of these depend on L=4**: without it, pure σL has χ² 2.7–6.9/3 (not rejected) and σ ≲ 0.05–0.08 (2σ). L ≥ 8 points assume sector-bias cancellation | σ = 0.007(18) from L=4..8 only: no evidence of confinement | inconclusive (insufficient projection) |
 | winding gap: Coulomb ⇒ ΔE·L → const | **consistent** (A/L χ² 1.6–3.9/4), but **not established**: B/L² fits equally well, L ≥ 10 errors are too large, the T-convergence of ΔE at L ≥ 10 is not shown, and the more precise repo [EXT] values show ΔE·L falling over L = 4..8 | consistent but untested beyond L=8 | — |
 
 **Overall verdict for OBL-R2.1:** **INCONCLUSIVE at accessible L.**
-- Supported: the method is sign-free and guide-free, and a large string tension is excluded on L ≤ 12.
+- Supported: the method is sign-free and guide-free, and a large string tension is excluded on L ≤ 12. This exclusion depends on the L=4 point and on the L ≥ 8 bias-cancellation assumption.
 - Not supported: neither a Coulomb phase (S_T ∝ |k|, a 1/L winding gap, a finite photon velocity) nor an
   ordered phase is established.
 - Reason: the structure-factor criteria failed for an algorithmic reason (mixing in the middle of the path),
@@ -349,7 +371,7 @@ Repo context:
    even though the middle is not;
 2. the T-convergence of ΔE at L ≥ 8.
 
-The rejection of a pure string tension rests mainly on L = 4, 6 and 8.
+The rejection of a pure string tension rests on L=4. The L ≥ 8 points additionally assume that the 8³ absolute-energy bias, seen against the repo projector, cancels between sectors.
 
 An independent check must use a *different path*, for example:
 - (a) exact or Lanczos ground energies of both components at L=4. This may be infeasible: the 4³ ice
@@ -362,6 +384,8 @@ Re-running `scripts/prod.py` with new seeds is **not** independent. The stoquast
 self-contained and can be checked by hand.
 
 ## 10. What a decisive follow-up needs
+
+The follow-up block with non-local updates is `blocks/C1b`.
 
 1. **Non-local updates.** Loop or worm updates in space-time, i.e. directed loops in the plaquette-flip worldline,
    or cluster moves on the dual height/flux representation. These would remove the frozen-middle problem. The
@@ -388,3 +412,23 @@ self-contained and can be checked by hand.
   - fits: `logs/winding_fit.log`, `logs/winding_fit2.log`.
 - Data: `data/run_*.npz` (one per chain), `data/winding_gap.{md,json}`, `data/winding_fit{,2}.json`,
   `data/per_chain.md`, `data/summary_combined.md`.
+
+## Review dispositions
+
+Review: `REVIEW.md`, written in a separate agent context (same model as the author). It found no incorrect
+claim and confirmed stoquasticity independently with 2^24 brute-force ED at L=2.
+
+| item | severity | disposition |
+|---|---|---|
+| C2: the gauge is chosen per sign of g | minor | **Accepted.** §0.1 now says: identity for g > 0, D for g < 0, no single gauge for both. |
+| C6: periodic-control attribution | minor | **Accepted.** §0.2 now says "consistent with the class restriction"; no exact n=0 reference was computed. |
+| C7: validation counts and the failed observable | minor | **Accepted.** 8 of 9 QMC-vs-exact cases pass; the other 4 checks are structural. The failure is in E_mix, the production estimator. dbg_vend is a diagnostic, and the case stays a FAIL. |
+| C8: seed hazard | minor | **Accepted.** Seeds 129–131 added. The recorded step-2 log is W=0, confirmed by its E_mix values. |
+| C9: step-3 scope | minor | **Accepted.** Only W=1 line starts at V = 0 and 0.5 are validated; this is stated in §3.4. |
+| C12: L=4 dependence of the σL rejection | moderate | **Accepted.** Both statements are now given, with and without L=4, in §0, §6 and §9. |
+| C14: projection untested at L = 4, 6, 12; L=6 T=18 inversion | moderate | **Accepted.** Flagged in §0 and in the §6 projection row. |
+| C15: 8³ disagreement of 3.2–4.5σ, larger than ΔE(8) | moderate | **Accepted.** Stated in §0, §5.5, §6 and §9: the L ≥ 8 gap results assume the bias cancels between sectors. Unresolved; left to C1b. |
+| Others (C1, C3–C5, C10, C11, C13, C16, C17) | — | Confirmed correct; no change. |
+
+The overall verdict is unchanged: **INCONCLUSIVE at accessible L**. The supporting evidence against confinement is
+now explicitly conditional, as described above.

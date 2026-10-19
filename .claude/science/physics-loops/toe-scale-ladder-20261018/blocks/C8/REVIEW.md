@@ -217,3 +217,11 @@ measure zero); see §5."
 
 **Final verdict: not ready.** Only two small edits remain: the P5 sentence, and §11 revised as above.
 The physics and the numbers are confirmed. With those two edits the block is ready.
+
+**Final confirmation.**
+- §0 P5 now matches §5.
+- The addendum to main (commit 68a504d) is correct and consistent. It keeps the supplied 3π line and the runner check, and it states 6π with the half-factor.
+- C8 §11 describes the addendum accurately.
+- Optional wording nit: the addendum says "independently reviewed". The review was done by the same model in a separate context, so "reviewed in a separate context" would be more accurate.
+
+**Verdict: ready.**

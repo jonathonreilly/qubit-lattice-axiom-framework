@@ -32,8 +32,8 @@ physical source bridge remain open. No exhaustive route obstruction is claimed.
 det D = (det D^2)^(1/2), the heat-kernel coefficient is Lambda^2/(96 pi^2) per Dirac
 fermion, so the supplied matching equation becomes `G = 6 pi/(N_f Lambda^2)`, twice the
 value above. The runner still checks the supplied 3 pi form; the sign, cutoff
-identification, matter count and source bridge stay open. Derived and independently
-reviewed in campaign block C8:
+identification, matter count and source bridge stay open. Derived and reviewed in a separate
+agent context in campaign block C8:
 `.claude/science/physics-loops/toe-scale-ladder-20261018/blocks/C8/` (NOTE.md section 11, REVIEW.md).
 
 ## Corrigendum (2026-09-30)

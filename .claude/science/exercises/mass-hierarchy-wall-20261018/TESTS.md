@@ -49,3 +49,23 @@
 - **D2h angles are not fixed and do not fit.** The angles range from 2.5° to 58.8°. Fits fail by ×4.2–4.7, and 26–32% of random spectra do as well.
 - **Correction to the tetragonal reading.** It gives 3 levels, not 2, but one generation is unmixed (|V_ub| = 0). Still a kill.
 - **Effect on the wall.** The kill round's "spontaneous Eg" escape is closed in the simplest rod model, apart from a tuned, strongly Lorentz-violating edge.
+
+**T-F3 pre-registration (01:03Z, before any run). Can one realised state hold both residual symmetries?**
+
+**The test.** Model the two orders together:
+- φ_ℓ, a C₃-preserving order (charged leptons);
+- φ_ν, an order preserved by the bond-centred half-turn C₂[110]∘T(e₃) (neutrinos).
+
+Add every leading cross-sector operator that G = Z³⋊O allows (the potential cross terms, and the mixed Yukawa or mass insertions). Then compute the one-loop leakage, where the loop is closed by the fermions of both sectors.
+
+**The measure.** Δ = |sin²θ₁₂ − (1 − 2/(3cos²θ₁₃))|, together with the shifts of |U_μ1|² and |U_τ1|² from 1/6.
+
+**Readings (fixed).**
+- **F3-SAFE:** a symmetry allowed by the framework forbids every leading leakage operator. Or, with all couplings natural (O(1) times the loop factor), the median Δ is below 0.003 (JUNO's final reach).
+- **F3-PRICE:** keeping Δ < 0.003 needs one named extra structure, or a tuning of ε ≤ 1e-2 relative to natural size. Report the size of each.
+- **F3-KILL:** leakage at natural size gives median Δ > 0.01 and no symmetry forbids it.
+- **OPEN:** none of the above can be decided within scope.
+
+**Also required.**
+- Check whether the joint vacuum (φ_ℓ, φ_ν) is even a minimum of a G-invariant potential without separate sectors. This is vacuum alignment: report whether it needs sector separation.
+- Do a prior-art check of the literature (discrete-flavour vacuum alignment: driving fields, sequestering), as templates only.

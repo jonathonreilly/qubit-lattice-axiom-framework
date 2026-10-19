@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/scale_ladder_gravity_d4cone_strain_reading_exchange_2026_10_18.py
-runner_sha256: a715340147f8d61e3b4a9177ed2a3913d91ab34906fc86f40d39ef2e8b6c8880
+runner_sha256: 0f630c6cd9a5f8fa9d63a2f970ff132f1b85129460cc4d641966acb0f44f8fbb
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 10.94
+elapsed_sec: 12.15
 status: ok
 ----- stdout -----
 D4 cone: 96 simplices, 72 edge classes, 8 vertex types
@@ -16,8 +16,10 @@ strain reading: exact on constant metrics (9e-16), blind to non-site vertex disp
 [PASS] H6 two on-shell scalar pairs at momenta q, -q: gauge-fixing dependence (lambda 1 -> 10) falls ~4x on halving (O(k^2)); distance from -4(T.T - trT trT/2)/q^2 is O(k)  corner: gauge 2.6e-03 -> 5.4e-04, from EH form 2.3e-02 -> 9.5e-03; cell-averaged: gauge 3.1e-04 -> 3.6e-05, from EH form 1.8e-02 -> 9.5e-03
 [PASS] H7 class weights (axis, face, body) on relative strain: alpha = -4 and beta = 2 - (2/3) rho^2, rho = 4(w_a - w_b)/(4 w_a + 12 w_f + 8 w_b); EH form iff w_a = w_b, any face weight (8 weightings, 2 directions)  (1, 1, 1): rho +0.000, ratio 2.0000; (1, 0.25, 1): rho +0.000, ratio 2.0000; (1, 4, 1): rho +0.000, ratio 2.0000; (1, 0, 1): rho +0.000, ratio 2.0000; (1, 1, 0.5): rho +0.100, ratio 1.9933; (1, 1, 2): rho -0.125, ratio 1.9896; (1, 4, 16): rho -0.333, ratio 1.9286; (1, 1, 0): rho +0.250, ratio 1.9592; max dev 1e-04
 [PASS] H8 weighted 24-direction fourth moment is isotropic iff w_a = w_b; the strain reading is not the Euclidean pseudo-inverse of the line map (all 72 or the 44 used edges)  (1, 1, 1): 1.6e-16; (1, 0.25, 1): 0.0e+00; (1, 4, 1): 8.4e-17; (1, 0, 1): 0.0e+00; (1, 1, 0.5): 1.0e-01; (1, 4, 16): 3.2e-01; pinv misfit 0.65 / 0.22
+[PASS] H9 cell-averaged scalar, each segment's share of the stress evaluated at the segment midpoint (local cell average): Ward ratio over segment strains falls 4x on halving (O(k^2)); cell-centred falls 2x  cell-centred 1.98e-03, 9.91e-04, 4.96e-04; midpoint 1.04e-04, 2.59e-05, 6.47e-06 (s = 0.1, 0.05, 0.025)
+[PASS] H10 midpoint coupling, two on-shell scalar pairs at q, -q: distance from -4(T.T - trT trT/2)/q^2 falls ~4x on halving (O(k^2)); gauge-fixing dependence (lambda 1 -> 10) falls ~16x (O(k^4))  from EH form 2.4e-03, 7.0e-04, 1.8e-04; gauge 1.1e-06, 5.3e-08, 3.2e-09 (s = 0.1, 0.05, 0.025)
 
-TOTAL: PASS=8 FAIL=0
+TOTAL: PASS=10 FAIL=0
 
 ----- stderr -----
 

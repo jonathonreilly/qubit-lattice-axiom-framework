@@ -18,7 +18,11 @@ least-squares metric fitted to the relative strains of the 24 site-site segments
      coefficient by (2/3) rho^2, rho = 4(w_a - w_b)/(4 w_a + 12 w_f + 8 w_b), so the exchange is the
      linearised-EH form iff w_a = w_b, for every face weight;
   H8 w_a = w_b is exactly the condition that the weighted segment directions have an isotropic fourth moment;
-     the reading is not the Euclidean pseudo-inverse of the line map.
+     the reading is not the Euclidean pseudo-inverse of the line map;
+  H9 segment-midpoint coupling (each segment's share of the stress evaluated at the segment midpoint by local
+     averaging over the cells around it): the Ward violation drops to relative O(k^2);
+  H10 with that coupling the on-shell scalar-scalar exchange matches the linearised-EH form to O(k^2), and
+     its gauge-fixing dependence is O(k^4).
 Supplied model only; no physical identification.
 Companion: docs/SCALE_LADDER_GRAVITY_D4CONE_STRAIN_READING_EXCHANGE_BOUNDED_THEOREM_NOTE_2026-10-18.md
 """
@@ -283,6 +287,24 @@ def pair_at(q, s, grad, d, e):
     raise RuntimeError("no on-shell pair")
 
 
+def midpoint_coupling(C):
+    """segment-strain weights Lt (10 x 24, h = Lt delta(l^2)) and the segment midpoints (cell corner at the origin)."""
+    R0, D, ls = segment_readings(C, np.zeros(4)); Wt = np.diag(1 / ls ** 2); Lt = np.linalg.pinv(Wt @ D) @ Wt
+    E = np.eye(4); pairs = list(itertools.combinations(range(4), 2))
+    mids = [0.5 * E[m] for m in range(4)] + [0.5 * (E[m] + E[n]) for (m, n) in pairs for _ in (0, 1)] + [0.5 * np.ones(4)] * 8
+    return Lt, mids
+
+
+def place(q, mid):
+    """local average of a cell-centred density (cell centre u/2) over the cells whose centres surround the midpoint."""
+    fr = [nu for nu in range(4) if abs(mid[nu] - round(mid[nu])) < 1e-9]; tot = 0
+    for sg in itertools.product([-0.5, 0.5], repeat=len(fr)):
+        c = np.array(mid, float)
+        for nu, s_ in zip(fr, sg): c[nu] += s_
+        tot += np.exp(1j * q @ (c - 0.5))
+    return tot / 2 ** len(fr)
+
+
 def golden(f, lo, hi):
     gr = (5 ** .5 - 1) / 2; a, b = lo, hi; c, d = b - gr * (b - a), a + gr * (b - a); fc, fd = f(c), f(d)
     for _ in range(120):
@@ -418,6 +440,36 @@ def main():
     check("H8 weighted 24-direction fourth moment is isotropic iff w_a = w_b; the strain reading is not the Euclidean pseudo-inverse of the line map (all 72 or the 44 used edges)",
           all((a < 1e-12) == (w[0] == w[2]) for w, a in an) and min(mis) > 0.1,
           "; ".join(f"{w}: {a:.1e}" for w, a in an) + f"; pinv misfit {mis[0]:.2f} / {mis[1]:.2f}")
+
+    # ---------------- H9 segment-midpoint coupling: Ward order
+    Lt, mids = midpoint_coupling(Dc)
+    assert np.abs(Lt @ segment_readings(Dc, np.zeros(4))[0] - L0).max() < 1e-12
+    w9 = {'cell-centred': [], 'midpoint': []}
+    for s in (0.1, 0.05, 0.025):
+        k1 = shell_kt(s * n1, grad_cell); k2 = shell_kt(0.7 * s * n2, grad_cell); q = k2 - k1
+        b = stress_c(grad_cell(-k1), grad_cell(k2)) @ Lt; WG = segment_readings(Dc, -q)[0] @ Dc.gauge(-q)[:, :4]
+        for nm, bb in (('cell-centred', b), ('midpoint', b * np.array([place(q, m) for m in mids]))):
+            w9[nm].append(np.linalg.norm(bb @ WG) / (np.linalg.norm(bb) * np.linalg.norm(WG)))
+    f9 = {nm: [v[i] / v[i + 1] for i in range(2)] for nm, v in w9.items()}
+    check("H9 cell-averaged scalar, each segment's share of the stress evaluated at the segment midpoint (local cell average): Ward ratio over segment strains falls 4x on halving (O(k^2)); cell-centred falls 2x",
+          all(3.8 < f < 4.3 for f in f9['midpoint']) and all(1.9 < f < 2.1 for f in f9['cell-centred']),
+          "; ".join(f"{nm} " + ", ".join(f"{x:.2e}" for x in v) for nm, v in w9.items()) + " (s = 0.1, 0.05, 0.025)")
+
+    # ---------------- H10 midpoint coupling: exchange of two on-shell scalar pairs
+    def amp_seg(q, b1, b2, lam):
+        G, Gm = Dc.gauge(q), Dc.gauge(-q)
+        return b2 @ segment_readings(Dc, q)[0] @ np.linalg.solve(Dc.Q(q) + lam * G @ Gm.T, segment_readings(Dc, -q)[0].T @ b1)
+    o10 = []
+    for s in (0.1, 0.05, 0.025):
+        k1 = shell_kt(s * ds[0], grad_cell); k2 = shell_kt(0.8 * s * ds[1], grad_cell); q = k2 - k1; k3, k4 = pair_at(q, 0.9 * s, grad_cell, ds[2], ds[3])
+        c1 = stress_c(grad_cell(-k1), grad_cell(k2)); c2 = stress_c(grad_cell(-k3), grad_cell(k4))
+        b1 = (c1 @ Lt) * np.array([place(q, m) for m in mids]); b2 = (c2 @ Lt) * np.array([place(-q, m) for m in mids])
+        A = [amp_seg(q, b1, b2, l) for l in (1.0, 10.0)]
+        T1, T2 = T_of_c(c1), T_of_c(c2); gr = -4 * (np.sum(T1 * T2) - 0.5 * np.trace(T1) * np.trace(T2)) / (q @ q)
+        o10.append((abs(A[1] - A[0]) / abs(A[0]), abs(A[0] - gr) / abs(gr)))
+    check("H10 midpoint coupling, two on-shell scalar pairs at q, -q: distance from -4(T.T - trT trT/2)/q^2 falls ~4x on halving (O(k^2)); gauge-fixing dependence (lambda 1 -> 10) falls ~16x (O(k^4))",
+          all(3.0 < o10[i][1] / o10[i + 1][1] < 4.5 and o10[i][0] / o10[i + 1][0] > 12 for i in range(2)),
+          "from EH form " + ", ".join(f"{o[1]:.1e}" for o in o10) + "; gauge " + ", ".join(f"{o[0]:.1e}" for o in o10) + " (s = 0.1, 0.05, 0.025)")
 
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

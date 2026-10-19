@@ -1,7 +1,7 @@
 ---
 claim_id: scale_ladder_gravity_d4cone_strain_reading_exchange_bounded_theorem_note_2026-10-18
 claim_type: bounded_theorem
-claim_scope: "Supplied model: the Regge second variation of the D4 cone (vertices Z^4 u (Z^4 + u/2) plus the deep holes (e_mu + e_nu)/2, each D4 Delaunay 16-cell coned from its centre; 96 simplices, 72 edge classes, 8 vertex types; hypercubic edge lengths; index 3 = tick), built by a generic Bloch Regge code with finite-difference dihedral derivatives, and a matter reading L: a least-squares metric fitted to the relative strains delta(l^2)/l^2 of the 24 site-site segments of a cell (4 axes, 12 face diagonals through the holes, 8 body diagonals through the centre), with class weights (w_a, w_f, w_b); w = (1, 1, 1) is the strain reading. Exchanges use the edge form inverted on the orthogonal complement of the exact vertex-displacement range. Floating-point checks at sampled momenta: (1) Static T_tt source; Euclidean test sources n n^T with n = (e_perp, i) (null) and (0,0,0,i) (dust): amplitude ratio 1.99989, 1.99997, 1.99998 at |k| = 0.04, 0.02, 0.015, and k^2 times the dust amplitude 2.00026 -> 2.00005. (2) Lattice-conserved sources (c . L G_site = 0 exactly) at |k| = 0.01 in six directions, including the tick axis and two generic directions with tick component: k^2 times the exchange fits alpha T1*.T2 + beta trT1* trT2 with alpha = -4.0000 and beta = +2.0000 (within 1e-4); the fit residual falls with |k| (about 3e-3 at most at 0.01); the non-metric partners' share is <= 5e-7 and falls 4x on halving |k|. (3) Near the light cone (k_t = i omega, spatial |k| = 0.08, 0.04, three directions), on each shell the largest strain reading of a non-metric null direction is 0.26-0.32 |k| times the largest reading of a metric one. (4) A site-only scalar with nearest-neighbour differences (corner or cell-averaged gradients) and stress coupled through L: for on-shell mode pairs the vertex-displacement Ward ratio |c . L G_site| / (|c| |L G_site|) halves when momenta halve (corner 1.3e-2 at s = 0.1; cell-averaged 3.4e-3), while the cell-averaged stress is continuum-conserved to relative O(k^2). (5) L G_site equals e^{i q . p_row} times the continuum symmetrised gradient on its support, with p = 1/2 along mu and 1/8 across for h_mumu and 1/2 along mu, nu and 1/4 across for h_munu (to 1e-5), plus entries off that support at relative O(k). (6) For two on-shell scalar pairs at momenta q and -q, the exchange changes under the gauge-fixing weight 1 -> 10 by a relative amount that falls 4.8-8.6x on halving the momenta, and differs from -4 (T1.T2 - trT1 trT2/2)/q^2 by a relative amount that falls about 2x. (7) For eight class weightings and two directions, alpha = -4 and beta = 2 - (2/3) rho^2 with rho = 4 (w_a - w_b)/(4 w_a + 12 w_f + 8 w_b), within 3e-4; so the exchange has the linearised-EH trace ratio iff w_a = w_b, for every tested face weight including 0. (8) The weighted fourth moment of the 24 segment directions is isotropic (to 1e-16) iff w_a = w_b; the strain reading differs from the Euclidean pseudo-inverse of the line map (relative misfit 0.65 over all 72 edges, 0.22 over the 44 edges it uses). Not claimed: nonlinear statements, any principle singling out the reading beyond the fourth-moment condition, a site-matter discretisation with an exact Ward identity, the physical status of the partner modes, a PPN value, or any physical identification."
+claim_scope: "Supplied model: the Regge second variation of the D4 cone (vertices Z^4 u (Z^4 + u/2) plus the deep holes (e_mu + e_nu)/2, each D4 Delaunay 16-cell coned from its centre; 96 simplices, 72 edge classes, 8 vertex types; hypercubic edge lengths; index 3 = tick), built by a generic Bloch Regge code with finite-difference dihedral derivatives, and a matter reading L: a least-squares metric fitted to the relative strains delta(l^2)/l^2 of the 24 site-site segments of a cell (4 axes, 12 face diagonals through the holes, 8 body diagonals through the centre), with class weights (w_a, w_f, w_b); w = (1, 1, 1) is the strain reading. Exchanges use the edge form inverted on the orthogonal complement of the exact vertex-displacement range. Floating-point checks at sampled momenta: (1) Static T_tt source; Euclidean test sources n n^T with n = (e_perp, i) (null) and (0,0,0,i) (dust): amplitude ratio 1.99989, 1.99997, 1.99998 at |k| = 0.04, 0.02, 0.015, and k^2 times the dust amplitude 2.00026 -> 2.00005. (2) Lattice-conserved sources (c . L G_site = 0 exactly) at |k| = 0.01 in six directions, including the tick axis and two generic directions with tick component: k^2 times the exchange fits alpha T1*.T2 + beta trT1* trT2 with alpha = -4.0000 and beta = +2.0000 (within 1e-4); the fit residual falls with |k| (about 3e-3 at most at 0.01); the non-metric partners' share is <= 5e-7 and falls 4x on halving |k|. (3) Near the light cone (k_t = i omega, spatial |k| = 0.08, 0.04, three directions), on each shell the largest strain reading of a non-metric null direction is 0.26-0.32 |k| times the largest reading of a metric one. (4) A site-only scalar with nearest-neighbour differences (corner or cell-averaged gradients) and stress coupled through L: for on-shell mode pairs the vertex-displacement Ward ratio |c . L G_site| / (|c| |L G_site|) halves when momenta halve (corner 1.3e-2 at s = 0.1; cell-averaged 3.4e-3), while the cell-averaged stress is continuum-conserved to relative O(k^2). (5) L G_site equals e^{i q . p_row} times the continuum symmetrised gradient on its support, with p = 1/2 along mu and 1/8 across for h_mumu and 1/2 along mu, nu and 1/4 across for h_munu (to 1e-5), plus entries off that support at relative O(k). (6) For two on-shell scalar pairs at momenta q and -q, the exchange changes under the gauge-fixing weight 1 -> 10 by a relative amount that falls 4.8-8.6x on halving the momenta, and differs from -4 (T1.T2 - trT1 trT2/2)/q^2 by a relative amount that falls about 2x. (7) For eight class weightings and two directions, alpha = -4 and beta = 2 - (2/3) rho^2 with rho = 4 (w_a - w_b)/(4 w_a + 12 w_f + 8 w_b), within 3e-4; so the exchange has the linearised-EH trace ratio iff w_a = w_b, for every tested face weight including 0. (8) The weighted fourth moment of the 24 segment directions is isotropic (to 1e-16) iff w_a = w_b; the strain reading differs from the Euclidean pseudo-inverse of the line map (relative misfit 0.65 over all 72 edges, 0.22 over the 44 edges it uses). (9) Segment-midpoint coupling: give each segment its least-squares share of the cell-averaged stress, evaluated at the segment midpoint by averaging the cell-centred density over the cells whose centres surround that midpoint. The Ward ratio over segment strains then falls 4.0x on halving (1.0e-4, 2.6e-5, 6.5e-6 at s = 0.1, 0.05, 0.025), against 2.0x for the cell-centred placement. (10) With that coupling, the exchange of two on-shell scalar pairs differs from -4 (T1.T2 - trT1 trT2/2)/q^2 by 2.4e-3, 7.0e-4, 1.8e-4, and its gauge-fixing dependence (weight 1 -> 10) is 1.1e-6, 5.3e-8, 3.2e-9, at s = 0.1, 0.05, 0.025. Not claimed: nonlinear statements, any principle singling out the reading beyond the fourth-moment condition, a site-matter discretisation with an exact Ward identity, the physical status of the partner modes, a PPN value, or any physical identification."
 upstream_dependencies:
   - the_regge_second_variation_on_the_4d_cubic_coxeter_complex_carries_a_native_linearised_graviton_bounded_theorem_note_2026-09-03
   - kinetic_isotropy_primitive
@@ -28,7 +28,8 @@ This note asks four questions about that supplied carrier:
 1. Does the exchange keep the linearised-EH form beyond the static slice: for a null-fluid test
    source, at Euclidean momenta with a tick component, and near the light cone?
 2. Does a site-only scalar coupled through this reading satisfy the lattice vertex-displacement
-   Ward identity, and if not, at what order does it fail?
+   Ward identity, and if not, at what order does it fail? Does placing the stress where the
+   reading registers it improve that order?
 3. Is the 1/l⁴ weighting forced, or one choice among several?
 4. If it is one choice among several, which condition picks out the readings that work?
 
@@ -103,6 +104,26 @@ This note asks four questions about that supplied carrier:
    - The reading is not the Euclidean pseudo-inverse of the line map (misfit 0.65 over all 72
      edges, 0.22 over the 44 edges the reading uses).
 
+9. **Midpoint placement raises the Ward order to O(k²).**
+   - Item 5 suggests a fix. Give each segment its least-squares share of the cell-averaged stress,
+     (c·L̃)_seg, where L̃ maps segment strains to h. Evaluate that share at the segment midpoint
+     instead of the cell centre.
+   - This stays local: average the cell-centred density over the cells whose centres surround
+     the midpoint. That is 8 cells for an axis midpoint, 4 for a face centre and 1 for the body
+     centre.
+   - Under a site displacement, each segment's strain is exact at its midpoint to relative O(k²),
+     and L̃ D = 1 exactly. So the remaining violation is the stress's own O(k²)
+     non-conservation plus the O(k²) of the averaging.
+   - Measured: the Ward ratio over segment strains is 1.0e−4, 2.6e−5 and 6.5e−6 at
+     s = 0.1, 0.05 and 0.025, a factor of 4.0 per halving. The cell-centred placement falls only
+     2.0×. With the opposite placement phase the ratio stays O(k), which serves as a control
+     (probe workspace).
+10. **With that coupling the scalar–scalar exchange is the EH form to O(k²).**
+    - For two on-shell scalar pairs, the distance from −4 (T₁·T₂ − ½ trT₁ trT₂)/q² is 2.4e−3,
+      7.0e−4 and 1.8e−4, so O(k²). The cell-centred placement was O(k).
+    - The gauge-fixing dependence is 1.1e−6, 5.3e−8 and 3.2e−9, so O(k⁴), the product of the two
+      sources' O(k²) violations.
+
 ## Reading on the ladder (interpretation, not claims)
 
 - **The carrier passes the next three tests at leading order.** The comparison values are those
@@ -119,15 +140,17 @@ This note asks four questions about that supplied carrier:
   weight). The condition ties partner decoupling to the reading not preferring the lattice axes,
   which is a cleaner statement than "use 1/l⁴". Interpretation, not a claim: whether a site
   matter field can be made to read the geometry this way from its own dynamics is open.
-- **The Ward identity is the next wall.** A naive site scalar coupled through the strain fit
-  breaks the lattice vertex-displacement Ward identity at relative O(k). The exchange it
-  produces is gauge-dependent only at O(k²). That is harmless for the leading-order statements,
-  but it rules out an exact lattice diffeomorphism Ward identity for this coupling. A matter
-  action whose stress is evaluated on the same segments and midpoints as the reading would be the
-  natural thing to try next.
+- **The Ward wall moves to O(k²).** A naive site scalar coupled through the strain fit breaks
+  the lattice vertex-displacement Ward identity at relative O(k). The cause is placement, not
+  dynamics: the reading registers each segment at its own midpoint. Evaluating each segment's
+  share of the stress at that midpoint, with a local cell average, makes the violation O(k²),
+  the exchange the EH form to O(k²), and its gauge dependence O(k⁴). An exact lattice Ward
+  identity would need a stress that is exactly conserved for the segment strains; that is the
+  next target.
 - **Next targets.**
-  - A segment-wise matter coupling: the stress assembled per segment at the segment's midpoint,
-    so that it matches the reading's registration points, together with its Ward order.
+  - A matter action whose stress is exactly conserved with respect to the segment strains (an
+    exact lattice Ward identity), for example one built from the segment lengths and a
+    covariant volume factor.
   - Whether a principle selects the face weight.
   - The O(k⁴) birefringence through the reading.
 
@@ -140,7 +163,7 @@ This note asks four questions about that supplied carrier:
   - The Regge action.
   - The hypercubic edge lengths.
   - The segment-strain least-squares reading and its class weights.
-  - The site scalar's nearest-neighbour action.
+  - The site scalar's nearest-neighbour action and the midpoint placement of its stress.
   - The Euclidean test sources and their analytic continuation to a null vector.
 - **Standard facts used.**
   - The Schläfli identity.
@@ -159,7 +182,8 @@ Citations are from memory and were not checked against the primaries.
 - **New here.**
   - The exchange of the D4-cone carrier off the static slice through the strain reading.
   - The light-cone partner reading.
-  - The site-scalar Ward order and its registration-point origin.
+  - The site-scalar Ward order, its registration-point origin, and the midpoint placement
+    that raises it to O(k²).
   - The closed form β = 2 − (2/3)ρ² over the class-weight family, and the
     fourth-moment-isotropy condition.
 
@@ -194,7 +218,7 @@ Citations are from memory and were not checked against the primaries.
 python3 scripts/scale_ladder_gravity_d4cone_strain_reading_exchange_2026_10_18.py
 ```
 
-Expected: `TOTAL: PASS=8 FAIL=0` (about 15 seconds).
+Expected: `TOTAL: PASS=10 FAIL=0` (about 15 seconds).
 
 ## Load-bearing sources
 

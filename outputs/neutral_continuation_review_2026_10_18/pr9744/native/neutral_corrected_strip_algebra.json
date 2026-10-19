@@ -1,0 +1,83 @@
+[
+  {
+    "lam": 0.2,
+    "N": 32,
+    "identity_error": 6.217248937900877e-15,
+    "doublecomm_error": 2.1889619908823753e-13,
+    "remainder_norm": 1.517875865599292e-07,
+    "functional_bound": 1.5955609515486621e-07,
+    "scaled_remainder": 0.12143006924794329
+  },
+  {
+    "lam": 0.2,
+    "N": 128,
+    "identity_error": 6.217248937900877e-15,
+    "doublecomm_error": 1.2131738109841333e-12,
+    "remainder_norm": 1.5178758526704676e-07,
+    "functional_bound": 1.595721586052728e-07,
+    "scaled_remainder": 0.12143006821363736
+  },
+  {
+    "lam": 0.2,
+    "N": 256,
+    "identity_error": 6.217248937900877e-15,
+    "doublecomm_error": 2.421805153187276e-12,
+    "remainder_norm": 1.517875825449647e-07,
+    "functional_bound": 1.5957215860533145e-07,
+    "scaled_remainder": 0.1214300660359717
+  },
+  {
+    "lam": 0.1,
+    "N": 32,
+    "identity_error": 1.1379786002407855e-14,
+    "doublecomm_error": 2.909203849439334e-13,
+    "remainder_norm": 4.847142166031234e-09,
+    "functional_bound": 4.969826314968332e-09,
+    "scaled_remainder": 0.12408683945039954
+  },
+  {
+    "lam": 0.1,
+    "N": 128,
+    "identity_error": 1.2045919817182948e-14,
+    "doublecomm_error": 1.3627442991397648e-12,
+    "remainder_norm": 4.847143163438526e-09,
+    "functional_bound": 4.970286503897707e-09,
+    "scaled_remainder": 0.12408686498402623
+  },
+  {
+    "lam": 0.1,
+    "N": 256,
+    "identity_error": 1.2490009027033011e-14,
+    "doublecomm_error": 2.751765526839413e-12,
+    "remainder_norm": 4.847145898730884e-09,
+    "functional_bound": 4.970287447054396e-09,
+    "scaled_remainder": 0.12408693500751057
+  },
+  {
+    "lam": 0.05,
+    "N": 32,
+    "identity_error": 2.3814283878209608e-14,
+    "doublecomm_error": 1.464749005414053e-13,
+    "remainder_norm": 1.5231667099913825e-10,
+    "functional_bound": 1.5422012431782306e-10,
+    "scaled_remainder": 0.12477781688249401
+  },
+  {
+    "lam": 0.05,
+    "N": 128,
+    "identity_error": 2.3814283878209608e-14,
+    "doublecomm_error": 9.715540246183853e-13,
+    "remainder_norm": 1.523085355848679e-10,
+    "functional_bound": 1.5422820149937378e-10,
+    "scaled_remainder": 0.12477115235112374
+  },
+  {
+    "lam": 0.05,
+    "N": 256,
+    "identity_error": 2.3814283878209608e-14,
+    "doublecomm_error": 3.8459642685672086e-12,
+    "remainder_norm": 1.5230842487868908e-10,
+    "functional_bound": 1.5422845202852724e-10,
+    "scaled_remainder": 0.12477106166062205
+  }
+]

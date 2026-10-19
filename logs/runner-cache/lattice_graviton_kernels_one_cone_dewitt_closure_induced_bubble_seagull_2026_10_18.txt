@@ -1,0 +1,109 @@
+===== runner cache v1 =====
+runner: scripts/lattice_graviton_kernels_one_cone_dewitt_closure_induced_bubble_seagull_2026_10_18.py
+runner_sha256: 2b045aca478d3186e7eda77acd324fa135b24ca6eb017b4c62288b0aea7e9c7d
+input_fingerprint_sha256: 572fab0d2e3b3fb85581760f680779c16aa93da094ee22555305a71af6decf98
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 22.46
+status: ok
+----- stdout -----
+Execution scope: default and explicitly requested optional branches only; historical totals are not fresh evidence.
+per_element: algebraic entries and numerical fixtures below have their stated exact or floating arithmetic scope.
+per_site: only the explicitly supplied local sites and translation rules are exercised; no physical site law is inferred.
+per_mode: only displayed momentum, representation and coefficient sectors are checked; untested sectors remain unverified.
+per_block: finite matrix, graph and ansatz blocks below use their declared dimensions; optional blocks require explicit flags.
+lattice_wide: finite tori and written conditional proofs have distinct scope; numerical scans do not certify all sizes.
+Lattice graviton kernels: one TT cone, DeWitt closure, induced-bubble seagull (2026-10-18)
+
+== PART A1: invariant / gauge-invariant two-derivative forms (exact, orbit sums over QQ)  (t = 0s)
+[PASS] A1 d=4 S4 (Kuhn-complex permutations): 38 invariant forms, 2 gauge-invariant  [ambient 550, invariant 38, gauge-invariant 2]
+[PASS] A1 d=4 B4 (hyperoctahedral): 9 invariant forms, 1 gauge-invariant  [ambient 550, invariant 9, gauge-invariant 1]
+[PASS] A1 d=4 B3 x Z2 (space cube x time sign): 26 invariant forms, 2 gauge-invariant  [ambient 550, invariant 26, gauge-invariant 2]
+[PASS] A1 d=4 no symmetry: 550 invariant forms, 10 gauge-invariant  [ambient 550, invariant 550, gauge-invariant 10]
+[PASS] A1 d=3 no symmetry: 126 invariant forms, 1 gauge-invariant  [ambient 126, invariant 126, gauge-invariant 1]
+
+== PART A2: the gauge-invariant forms in d=4 are exactly L_M = eps eps M k k h h  (t = 0s)
+[PASS] A2a the ten L_M (M symmetric) are independent, gauge invariant, and span the full gauge-invariant space  [rank L = 10, rank(V L) = 0, dim gauge-invariant = 10]
+[PASS] A2b L_I = -(flat Fierz-Pauli) = -(linearised EH symbol about delta), exact polynomial identity
+[PASS] A2c L_M = -det(M) x Fierz-Pauli about the background metric g0 = M (two random rational M, indefinite and definite blocks; symbolic k, h)  [[True, True]]
+
+== PART A3: symmetry-restricted gauge-invariant spaces are spanned by L_M  (t = 1s)
+[PASS] A3 S: L_I, L_J  (backgrounds I + c(J - I)) are group invariant, gauge invariant, independent and number dim = 2
+[PASS] A3 B: L_I are group invariant, gauge invariant, independent and number dim = 1
+[PASS] A3 B3xZ2: L_I, L_E33  (backgrounds diag(1,1,1,s)) are group invariant, gauge invariant, independent and number dim = 2
+
+== PART A4: one characteristic cone for every gauge-invariant form (temporal gauge, symbolic proof)  (t = 1s)
+[PASS] A4i temporal gauge: L_M restricted to spatial h equals eps3 eps3 N h h with N = B^T M B, B = [w e_s - k_s e_t] (symbolic M, k, h)
+[PASS] A4ii det N = w^4 Q with Q = k^T adj(M) k (Cauchy-Binet; symbolic M, k)
+[PASS] A4iii the Sym3 quadratic form eps3 eps3 N h h has determinant -16 det(N)^2 (symbolic N)  [det at N = I: -16]
+[PASS] A4 => det(temporal-gauge spatial block of L_M) = -16 w^8 Q^2 for every symmetric M (any signature, degenerate included): polynomial factor Q^2; a two-propagating-mode interpretation needs nondegenerate Lorentzian M and admissible time/gauge, with a shared metric characteristic under those additional hypotheses
+[PASS] A4 direct: det(spatial block) = -16 w^8 Q^2 for two random rational M (independent direct expansion)  [[True, True]]
+
+== PART B1: the supplied rotation-invariant kinetic term has eps3 = 0 (supplied, not derived)  (t = 3s)
+[PASS] B1a alpha tr h'^2 + beta (tr h')^2: M1 = alpha + beta, M2 = 2 beta, M3 = 2 alpha => eps3 = 0 identically  [eps3 = 0]
+[PASS] B1b in (a,b,f) coordinates beta = -alpha (c = beta/(alpha+3 beta) = 1/2, the 09-24 closing ratio) is the DeWitt ray (2,-1,1); generally eps3 = a/(2f) - 1  [ray [2, -1, 1]]
+
+== PART B2-B4: exact lattice closure {C[N],C[M]} in span(relabellings), cubic family (a,b,f)  (t = 3s)
+[PASS] B2 R1[N] is exactly relabelling invariant on the 3^3 torus (D^T dR1 = 0)
+   n=3 timing=mean4  lapses=delta(0),delta(e1)     rank D = 78: closing (a,b,f) dim 1 [(2, -1, 1)]
+   n=3 timing=mean4  lapses=random ints            rank D = 78: closing (a,b,f) dim 1 [(2, -1, 1)]
+   n=3 timing=mean4  lapses=delta(0),delta(e1+e2)  rank D = 78: closing (a,b,f) dim 3 [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+   n=3 timing=opp_a  lapses=delta(0),delta(e1)     rank D = 78: closing (a,b,f) dim 1 [(2, -1, 1)]
+   n=3 timing=opp_a  lapses=random ints            rank D = 78: closing (a,b,f) dim 1 [(2, -1, 1)]
+   n=3 timing=opp_a  lapses=delta(0),delta(e1+e2)  rank D = 78: closing (a,b,f) dim 3 [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+   n=3 timing=opp_b  lapses=delta(0),delta(e1)     rank D = 78: closing (a,b,f) dim 1 [(2, -1, 1)]
+   n=3 timing=opp_b  lapses=random ints            rank D = 78: closing (a,b,f) dim 1 [(2, -1, 1)]
+   n=3 timing=opp_b  lapses=delta(0),delta(e1+e2)  rank D = 78: closing (a,b,f) dim 3 [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+   n=3 timing=corner lapses=delta(0),delta(e1)     rank D = 78: closing (a,b,f) dim 0 []
+   n=3 timing=corner lapses=random ints            rank D = 78: closing (a,b,f) dim 0 []
+   n=3 timing=corner lapses=delta(0),delta(e1+e2)  rank D = 78: closing (a,b,f) dim 2 [(1, 0, 0), (0, 1, 0)]
+   n=4 timing=mean4  lapses=delta(0),delta(e1)     rank D = 189: closing (a,b,f) dim 1 [(2, -1, 1)]
+   n=4 timing=mean4  lapses=random ints            rank D = 189: closing (a,b,f) dim 1 [(2, -1, 1)]
+   n=4 timing=mean4  lapses=delta(0),delta(e1+e2)  rank D = 189: closing (a,b,f) dim 3 [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+   n=4 timing=corner lapses=delta(0),delta(e1)     rank D = 189: closing (a,b,f) dim 0 []
+   n=4 timing=corner lapses=random ints            rank D = 189: closing (a,b,f) dim 0 []
+   n=4 timing=corner lapses=delta(0),delta(e1+e2)  rank D = 189: closing (a,b,f) dim 2 [(1, 0, 0), (0, 1, 0)]
+   n=5 timing=mean4  lapses=random ints            rank D = 372: closing (a,b,f) dim 1 [(2, -1, 1)]
+   n=5 timing=corner lapses=random ints            rank D = 372: closing (a,b,f) dim 0 []
+[PASS] B3 tested generic lapses: mean4 on 3^3,4^3,5^3; opp_a/opp_b on 3^3: closing set is exactly the DeWitt ray (2,-1,1)  (eps3 = 0 and c = 1/2)  [9/9 cases]
+[PASS] B4a caveat: the lapse pair delta(0), delta(e1+e2) closes for every (a,b,f) (closure must be required for all lapse pairs)
+[PASS] B4b caveat: single-corner face timing closes for no nonzero (a,b,f) at generic lapse pairs
+
+== PART B5: eps3 label correction for the campaign script's float kinetic points (exact rationals)  (t = 6s)
+[PASS] B5 alpha_d = 1.1 alpha_f has eps3 = -1/11 (labelled +0.1 in the campaign script) and alpha_d = 0.8 alpha_f has eps3 = +1/4 (labelled -0.2); the closure conclusion is unaffected  [{Fraction(11, 10): Fraction(-1, 11), Fraction(4, 5): Fraction(1, 4)}]
+
+== PART C1: kernel reconstruction (vertex D of the 06-08 dispersion / telescope runners)  (t = 6s)
+[PASS] C1a two independent constructions of the 16x16 block staggered D(P) agree  [max diff 0.0e+00]
+[PASS] C1b D D^dag = (m^2 + sum sin^2(P/2)) I and operator Ward telescope khat.Vel(Pbar) = D(P+K) - D(P)  [8.9e-16, 3.6e-16]
+[PASS] C1c reproduces the repo dispersion runner-cache constant C_time(N=6) = 0.08961606 (= C_space)  [C_t = 0.08961606, C_x = 0.08961606]
+
+== PART C2: Brillouin-zone periodicity of the two repo vertex variants (N = 6)  (t = 6s)
+[PASS] C2 vertex D (f = sin Pbar) is window independent; vertex S (f = sin(Pbar/2)) changes at O(1) with the BZ window, so it is not a periodic lattice kernel; the theorem uses vertex D  [D: 2.2e-15, S: 0.85]
+
+== PART C3: khat.Pi_bubble is a sum of one-propagator loops (exact identity, N = 8, on-grid K)  (t = 6s)
+[PASS] C3 khat.Pi_bubble(K) equals the one-propagator (seagull-tadpole-shaped) contact loops  [relative error 4.9e-15, |khat.Pi| = 9.993e-01]
+
+== PART C4: B4-invariant two-derivative symbols and their Ward map  (t = 9s)
+[PASS] C4 B4 symbol space has dim 9 (= exact count A1), the Ward map has rank 8, and its one-dim kernel is linearised EH  [dim 9; sv min 1.2e-15, next 4.08e-01; |cos(null, EH)| = 1.000000000000; EH Ward 0e+00]
+
+== PART C5-C7: measured K^2 symbol (m = 0.7, N = 12) and the seagull (parallel bubbles)  (t = 10s)
+   16 bubbles at N = 12 in 12s
+[PASS] C5a the measured symbol lies in the 9-dim B4 space: 3-direction fit residual < 1e-3 and the fit predicts an out-of-fit direction to < 1e-2  [fit residual 1.7e-08; out-of-fit deviation 9.9e-07]
+[PASS] C5b Ward identity k.M2(k) = 0 is violated at O(1) by the K^2 symbol in every direction (ratio > 0.05)  [direct along fit dirs [0.1961, 0.1844, 0.1896]; over the checker's five dirs 0.184-0.228; over 409 sampled dirs 0.130-0.231]
+[PASS] C5c the symbol is not linearised EH: Frobenius EH projection a_EH ~ 0.0288, non-EH fraction > 0.5 (both norm dependent)  [a_EH = 0.028815, non-EH fraction 0.923]
+   kappa 0.40: |khat.Pi| = 2.287e-01  |khat.(Pi-Pi0)| = 4.962e-04  |khat.(Pi-Pi0+S)| = 1.338e-07
+   kappa 0.20: |khat.Pi| = 1.148e-01  |khat.(Pi-Pi0)| = 6.248e-05  |khat.(Pi-Pi0+S)| = 5.123e-09
+   kappa 0.10: |khat.Pi| = 5.745e-02  |khat.(Pi-Pi0)| = 7.824e-06  |khat.(Pi-Pi0+S)| = 1.679e-10
+[PASS] C6a lattice Ward residual (out-of-fit direction): unsubtracted ~ K^1, Pi(0)-subtracted ~ K^3 (so the K^2 symbol itself violates Ward)  [powers 1.00, 2.99]
+[PASS] C6b a local nearest-neighbour B4 K^2 seagull S(K) = (a EH - T)[khat, khat] removes the violation (residual power >= 4.5, and smaller by > 10x at kappa = 0.1)  [power 4.82; at kappa 0.1: 7.8e-06 -> 1.7e-10]
+[PASS] C6c the seagull's EH coefficient is unconstrained by the Ward identity (changing a leaves the residual unchanged): Ward fixes 8 of the 9 B4 seagull coefficients and leaves a_EH free  [max change 1.3e-19]
+[PASS] C7 the symbol-level Ward ratio along a fixed direction is mass insensitive (m = 1.0, 0.7, 0.5: spread < 15%)  [m=0.5: 0.2013, m=0.7: 0.1961, m=1.0: 0.1891]
+
+== PART C8: the repo's 2-component 'transverse seagull' scheme (06-08 note), symbol level  (t = 22s)
+[PASS] C8 with its K-independent seagull (equivalent to subtracting Pi(0)) the 2-component scheme's O(k^3) residual is O(1) relative to k x (TT k^2 slope): the leading symbol is not transverse  [ratio 0.877 (k=0.2), 0.877 (k=0.1)]
+
+elapsed 22s
+TOTAL: PASS=37 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/heat_kernel_saddle_versus_wilson_one_loop_lambda_ratio_2026_10_18.py
+runner_sha256: 03d84366ea3e29043fd1deeb64c281009efaf02e1deda754d0ffb84ef7d5e86d
+input_fingerprint_sha256: 572fab0d2e3b3fb85581760f680779c16aa93da094ee22555305a71af6decf98
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 113.35
+status: ok
+----- stdout -----
+Execution scope: default and explicitly requested optional branches only; historical totals are not fresh evidence.
+per_element: algebraic entries and numerical fixtures below have their stated exact or floating arithmetic scope.
+per_site: only the explicitly supplied local sites and translation rules are exercised; no physical site law is inferred.
+per_mode: only displayed momentum, representation and coefficient sectors are checked; untested sectors remain unverified.
+per_block: finite matrix, graph and ansatz blocks below use their declared dimensions; optional blocks require explicit flags.
+lattice_wide: finite tori and written conditional proofs have distinct scope; numerical scans do not certify all sizes.
+Heat-kernel saddle versus Wilson: one-loop Lambda ratio and the 2D seven quarters (2026-10-18)
+
+== PART A: native packet recurrence = Wilson character recurrence; saddle multiplier = heat kernel  (t = 0s)
+[PASS] A1 SU(3) Pieri rule: (chi_F + chi_Fbar) chi_(p,q) = six-neighbour sum, negative labels omitted (4 random eigenphase points, p,q <= 6)  [max residual 1.1e-13]
+[PASS] A2 native exp(beta J)|0> coefficients c_(p,q)/c_(0,0) = Wilson character coefficients of exp[(beta/3) Re tr U] (beta = 6, 12; p,q <= 3): native/Wilson Lambda ratio is 1  [max relative deviation 7.8e-16]
+[PASS] A3 repo C2(p,q) = (p^2+q^2+pq+3p+3q)/3 and d_(p,q) = (p+1)(q+1)(p+q+2)/2 match the partition formulas (p,q <= 7); C2(F) = 4/3
+[PASS] A4 Wilson: -log w_W = const + g^-2 [trX^2 - trX^4/12] + O(X^6) (beta_W = 2N/g^2, SU(3) eigenvalues)
+[PASS] A4 tree-level matching tau = g^2/2, so tau = 3/beta for SU(3) (g^2 = 6/beta): the saddle multiplier d_lam exp(-3 C2/beta) is the heat-kernel weight
+
+== PART B: heat-kernel small-field expansion  (t = 5s)
+[PASS] B1 SU(2) tau=0.05: log K + trX^2/(2tau) - sum_(i<j) log(theta/sin theta) is X-independent (5 random X)  [spread 4.6e-13]
+[PASS] B1 SU(3) tau=0.08: log K + trX^2/(2tau) - sum_(i<j) log(theta/sin theta) is X-independent (5 random X)  [spread 5.5e-14]
+[PASS] B1 SU(3) tau=0.04: log K + trX^2/(2tau) - sum_(i<j) log(theta/sin theta) is X-independent (5 random X)  [spread 8.9e-11]
+[PASS] B2 log(theta/sin theta) = theta^2/6 + theta^4/180 + ...; sum_(i<j) theta_ij^2/6 = N trX^2/24 (N = 2..5): trX^2 coefficient of -log K is 1/(2tau) - N/24, quartic terms tau-independent (no O(1/g^2) quartic)
+[PASS] B3 SU(2) tau=0.05: fitted trX^2 coefficient = 1/(2tau) - 2/24  [9.91665313 vs 9.91666667; (trX^2)^2 coefficient -1.16e-03, tau-independent O(1)]
+[PASS] B3 SU(2) tau=0.1: fitted trX^2 coefficient = 1/(2tau) - 2/24  [4.91665996 vs 4.91666667; (trX^2)^2 coefficient -1.28e-03, tau-independent O(1)]
+[PASS] B3 SU(3) tau=0.06: fitted trX^2 coefficient = 1/(2tau) - 3/24  [8.20832745 vs 8.20833333]
+[PASS] B3 SU(3) tau=0.12: fitted trX^2 coefficient = 1/(2tau) - 3/24  [4.04166367 vs 4.04166667]
+
+== PART C: tadpole and the one-loop coupling shift c(d)  (t = 6s)
+[PASS] C1 SU(2): Gram = 1/2, <trX^4>_qq = (2N^2-3)/N w trB^2, <(trX^2)^2>_qq = (N^2+1) w trB^2  [2.5000000000, 5.0000000000]
+[PASS] C1 SU(3): Gram = 1/2, <trX^4>_qq = (2N^2-3)/N w trB^2, <(trX^2)^2>_qq = (N^2+1) w trB^2  [5.0000000000, 10.0000000000]
+[PASS] C1 SU(4): Gram = 1/2, <trX^4>_qq = (2N^2-3)/N w trB^2, <(trX^2)^2>_qq = (N^2+1) w trB^2  [7.2500000000, 17.0000000000]
+[PASS] C2 d=2, L=4: <q_P^2>/g^2 = diag of the plaquette projector = (links - gauge - harmonic)/plaquettes -> 2/d  [mean diag 0.937500, counting 0.937500, 2/d = 1.0000]
+[PASS] C2 d=3, L=4: <q_P^2>/g^2 = diag of the plaquette projector = (links - gauge - harmonic)/plaquettes -> 2/d  [mean diag 0.656250, counting 0.656250, 2/d = 0.6667]
+[PASS] C2 d=4, L=3: <q_P^2>/g^2 = diag of the plaquette projector = (links - gauge - harmonic)/plaquettes -> 2/d  [mean diag 0.493824, counting 0.493827, 2/d = 0.5000]
+[PASS] C3 d=4 momentum sum: w/g^2 = <(khat_mu^2 + khat_nu^2)/khat^2> = 1/2 (L = 16)  [0.500000000000]
+[PASS] C4 w = g^2/2 reproduces the standard 4D weak-coupling <1-P> = (N^2-1) g^2/(8N) (SU(2): 3/(4beta), SU(3): 2/beta)
+[PASS] C5 g_HK^-2 = g_W^-2 + c(d), c(d) = N/24 - (2/d)(2N^2-3)/(12N) = (dN^2 - 8N^2 + 12)/(24Nd); c(4) = (3-N^2)/(24N)  [c(d) = (N**2*d - 8*N**2 + 12)/(24*N*d)]
+[PASS] C6 SU(3): c(4) = -1/12, beta_HK = beta_W + 2N c(4) = beta_W - 1/2
+[PASS] C6 SU(2): Lambda_HK/Lambda_W = exp(-c/(2b0)) = exp[pi^2 (N^2-3)/(11N^2)] = 1.2515  [1.251458; c = -0.020833, b0 = 11N/(48 pi^2)]
+[PASS] C6 SU(3): Lambda_HK/Lambda_W = exp(-c/(2b0)) = exp[pi^2 (N^2-3)/(11N^2)] = 1.8188  [1.818765; c = -0.083333, b0 = 11N/(48 pi^2)]
+[PASS] C6 SU(4): Lambda_HK/Lambda_W = exp(-c/(2b0)) = exp[pi^2 (N^2-3)/(11N^2)] = 2.0730  [2.073017; c = -0.135417, b0 = 11N/(48 pi^2)]
+[INFO] PROVISIONAL, UNCHECKED Hamiltonian variant SU(2): w_s/g^2 = 0.795867, c_H = -0.041236, ratio 1.5589, one-loop speed shift v^2-1 = -0.08247 g^2 (needs retuning)
+[INFO] PROVISIONAL, UNCHECKED Hamiltonian variant SU(3): w_s/g^2 = 0.795867, c_H = -0.103306, ratio 2.0991, one-loop speed shift v^2-1 = -0.20661 g^2 (needs retuning)
+
+== PART D: d = 2 exact single-plaquette matching, k = (N^2-2)/4  (t = 6s)
+[PASS] D1 SU(2) Bessel determinants: k = -2N c(2) = (N^2-2)/4 = 0.5000  [raw k(800) = 0.50016, Richardson 0.500000]
+[PASS] D1 SU(3) Bessel determinants: k = -2N c(2) = (N^2-2)/4 = 1.7500  [raw k(800) = 1.75407, Richardson 1.750000]
+[PASS] D1 SU(4) Bessel determinants: k = -2N c(2) = (N^2-2)/4 = 3.5000  [raw k(800) = 3.51837, Richardson 3.500000]
+[PASS] D2 SU(2) Weyl integration: k -> (N^2-2)/4 = 0.5  [raw ['0.50062', '0.50031', '0.50016', '0.50008'], Richardson 0.500000]
+[PASS] D2 SU(3) Weyl integration: k -> (N^2-2)/4 = 1.75  [raw ['1.76633', '1.75814', '1.75407', '1.75203'], Richardson 1.750000]
+[PASS] D2 SU(4) Weyl integration: k -> (N^2-2)/4 = 3.5  [raw ['3.65163', '3.57447', '3.53690'], Richardson 3.499999]
+[PASS] D3 SU(3) d=2 residue beta^3[log a_lam - (C2/C_F) log a_F], rep 8 -> (9/4)(C2^2 - C2 C_F) = 11.25  [raw ['11.763', '11.503', '11.376', '11.313'], Richardson 11.2501]
+[PASS] D3 SU(3) d=2 residue beta^3[log a_lam - (C2/C_F) log a_F], rep 6 -> (9/4)(C2^2 - C2 C_F) = 15.00  [raw ['15.684', '15.337', '15.168', '15.084'], Richardson 15.0001]
+[PASS] D3 SU(3) d=2 residue beta^3[log a_lam - (C2/C_F) log a_F], rep 10 -> (9/4)(C2^2 - C2 C_F) = 63.00  [raw ['65.862', '64.414', '63.703', '63.351'], Richardson 63.0001]
+[PASS] D3 SU(3) d=2 residue beta^3[log a_lam - (C2/C_F) log a_F], rep 27 -> (9/4)(C2^2 - C2 C_F) = 120.00  [raw ['125.431', '122.689', '121.338', '120.667'], Richardson 120.0002]
+[PASS] D3 repo W2 = (3 - 7Q/4 + Q^2/4) W reproduced: max_lam |beta(v-W)/W - W2/W| -> 0 like 1/beta  [beta=200: 0.0477, beta=400: 0.0241, beta=800: 0.0121, beta=1600: 0.0061]
+
+== PART E: reconciliation algebra  (t = 113s)
+[PASS] E1 beta^-3/2 d exp[-tau_eff C2 + (9/4) C2^2/beta^3], tau_eff = (3/beta)(1 + 7/(4beta)), = W [1 + (3 - 7Q/4 + Q^2/4)/beta + O(beta^-2)]: the -7Q/4 of the repo W2 is the d = 2 shift
+[PASS] E1 scaling: beta^(3/2) H(x_p) = d_(p,q) and 3 C2(p,q)/beta = Q(x_p) - 3/beta (source of the 3 in W2)
+[PASS] E2 full-top note algebra: d0/mu = [Var + (kappa+3/2)(kappa-11/2)]/4, c_full/mu = 7/16 + [Var + (|L phi|^2 - kappa^2) + 2(kappa-1)^2]/4 (a Perron-vector spectral functional, not a coupling shift)
+[PASS] E2 with W2 - 3W = (-k_s Q + Q^2/4) W the same bound gives floor(k_s) = 105/32 - 3k_s/4 - k_s^2/2; k_s = 7/4 gives 7/16: the d = 2 shift feeds the floor, but the floor is a spectral functional  [floor(k_s) = -k_s**2/2 - 3*k_s/4 + 105/32]
+[PASS] E3 1/(8N) - c(4) = N/24 for all N: composing c(4) with the (recalled) Hasenfratz-Hasenfratz form ln(Lambda_W/Lambda_MS) = [1/(8N) - 0.16995599 N]/(2b0) leaves only a planar term
+[INFO] recalled-input composition SU(2): Lambda_MS/Lambda_W = 19.823, Lambda_MS/Lambda_HK = 15.840 (38.853 recalled, NOT retrieved)
+[INFO] recalled-input composition SU(3): Lambda_MS/Lambda_W = 28.810, Lambda_MS/Lambda_HK = 15.840 (38.853 recalled, NOT retrieved)
+[INFO] recalled-input composition SU(4): Lambda_MS/Lambda_W = 32.837, Lambda_MS/Lambda_HK = 15.840 (38.853 recalled, NOT retrieved)
+
+elapsed 113s
+TOTAL: PASS=42 FAIL=0
+
+----- stderr -----
+

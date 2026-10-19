@@ -1,0 +1,51 @@
+[
+  {
+    "r": 1,
+    "coefficient": "-1/2",
+    "conjecture": "-1/2",
+    "match": true,
+    "seconds": 7.605552673339844e-05
+  },
+  {
+    "r": 2,
+    "coefficient": "-3/8",
+    "conjecture": "-3/8",
+    "match": true,
+    "seconds": 0.00021791458129882812
+  },
+  {
+    "r": 3,
+    "coefficient": "-9/16",
+    "conjecture": "-5/16",
+    "match": false,
+    "seconds": 0.0011968612670898438
+  },
+  {
+    "r": 4,
+    "coefficient": "-143/128",
+    "conjecture": "-35/128",
+    "match": false,
+    "seconds": 0.006240129470825195
+  },
+  {
+    "r": 5,
+    "coefficient": "-663/256",
+    "conjecture": "-63/256",
+    "match": false,
+    "seconds": 0.028661012649536133
+  },
+  {
+    "r": 6,
+    "coefficient": "-6783/1024",
+    "conjecture": "-231/1024",
+    "match": false,
+    "seconds": 0.12680673599243164
+  },
+  {
+    "r": 7,
+    "coefficient": "-37145/2048",
+    "conjecture": "-429/2048",
+    "match": false,
+    "seconds": 0.58650803565979
+  }
+]

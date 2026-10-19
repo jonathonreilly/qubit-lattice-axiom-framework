@@ -1,0 +1,155 @@
+===== runner cache v1 =====
+runner: scripts/common_product_device_controls_2026_10_18.py
+runner_sha256: 8f80466ed2e275c30cceb440fa2c876782feed3a3ce7940c6a165d3e754e0d41
+input_fingerprint_sha256: 893e393cdc52dbbc50b91a998cf4fc1ea7c4d51621f15ef201d618f9ebf4ac9f
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.10
+status: ok
+----- stdout -----
+[PASS] 9725 joint normalized fourth-order ordered paths {"nonscalar_words": 12, "paths": 4800, "scalar": "27"}
+[PASS] 9725 real gauge XX {}
+[PASS] 9725 real gauge XY {}
+[PASS] 9725 real gauge XZ {}
+[PASS] 9725 real gauge YX {}
+[PASS] 9725 real gauge YY {}
+[PASS] 9725 real gauge YZ {}
+[PASS] 9725 six signed rows {}
+[PASS] 9729 full16-state selector sigma=1 r=0.0078125 {"cat_distance": 0.007811844446888174, "e0": 0.015502937137171238, "gap": 0.000122062862828759}
+[PASS] 9729 full16-state selector sigma=1 r=0.015625 {"cat_distance": 0.01561975792497809, "e0": 0.030761837901117615, "gap": 0.0004881620988826073}
+[PASS] 9729 full16-state selector sigma=-1 r=0.0078125 {"cat_distance": 0.007811844446888178, "e0": 0.01550293713717168, "gap": 0.00012206286282876073}
+[PASS] 9729 full16-state selector sigma=-1 r=0.015625 {"cat_distance": 0.01561975792497809, "e0": 0.030761837901117615, "gap": 0.0004881620988826073}
+[PASS] 9731/9733 actual8-head core data=0 eta=0.02 offset=0.0 {"residual": 8.201909839905079e-15, "scattering_defect": 0.0035948038552358085}
+[PASS] 9731/9733 actual8-head core data=0 eta=0.02 offset=0.0001 {"residual": 1.3640372566272184e-14, "scattering_defect": 0.0035946040581371448}
+[PASS] 9731/9733 actual8-head core data=0 eta=0.02 offset=-0.0001 {"residual": 9.936603160755128e-15, "scattering_defect": 0.0035950036563467042}
+[PASS] 9731/9733 actual8-head core data=1 eta=0.02 offset=0.0 {"residual": 1.0718743768203363e-14, "scattering_defect": 0.003594803855236138}
+[PASS] 9731/9733 actual8-head core data=1 eta=0.02 offset=0.0001 {"residual": 8.848347455581102e-15, "scattering_defect": 0.0035946040581373226}
+[PASS] 9731/9733 actual8-head core data=1 eta=0.02 offset=-0.0001 {"residual": 9.911497015288581e-15, "scattering_defect": 0.003595003656346951}
+[PASS] 9731/9733 actual8-head core data=0 eta=0.01 offset=0.0 {"residual": 1.2885518241979082e-14, "scattering_defect": 0.0009995800970401666}
+[PASS] 9731/9733 actual8-head core data=0 eta=0.01 offset=0.0001 {"residual": 1.0824738201082829e-14, "scattering_defect": 0.0009995201160598274}
+[PASS] 9731/9733 actual8-head core data=0 eta=0.01 offset=-0.0001 {"residual": 1.6565329970303688e-14, "scattering_defect": 0.0009996400800214044}
+[PASS] 9731/9733 actual8-head core data=1 eta=0.01 offset=0.0 {"residual": 2.3065741748944187e-14, "scattering_defect": 0.0009995800970405992}
+[PASS] 9731/9733 actual8-head core data=1 eta=0.01 offset=0.0001 {"residual": 1.744879589600118e-14, "scattering_defect": 0.0009995201160595438}
+[PASS] 9731/9733 actual8-head core data=1 eta=0.01 offset=-0.0001 {"residual": 1.1734314527030521e-14, "scattering_defect": 0.0009996400800212702}
+[PASS] 9737 ordered26-layer shared-data word all32columns {"error": 1.1709238889729005e-15}
+[PASS] 9733 eleven-stage full auxiliary/data/reference word {}
+[PASS] 9731 product-seed cat and common outgoing path {}
+[PASS] 9737 unequal-end exact physical diamond [[0.0, 1.0], [1.0, 0.0]] {}
+[PASS] 9737 unequal-end exact physical diamond [[1.0, 0.0], [0.0, -1.0]] {}
+[PASS] 9737 unequal-end exact physical diamond [[1.0, 0.0], [0.0, 1.0]] {}
+[PASS] 9731/9733/9734/9741 exact source measure rho=0.08 {"integral": 1.0000000000000013}
+[PASS] 9731/9733/9734/9741 exact source measure rho=0.3 {"integral": 1.0000000000000002}
+[PASS] 9731/9733/9734/9741 exact source measure rho=0.7 {"integral": 1.0000000000000002}
+[PASS] actual quintic cutoff matching traces {}
+[PASS] 9733/9741/9742 fixed-diagonal cut and omitted-occupation mutant {}
+[PASS] 9737 exact scalar profile L=8 theta=1.0471975511965976 {"error": 1.5587935515053562e-15}
+[PASS] 9737 exact scalar profile L=8 theta=1.5707963267948966 {"error": 1.9937689449705327e-15}
+[PASS] 9737 exact scalar profile L=8 theta=2.0943951023931953 {"error": 1.9524459144253365e-15}
+[PASS] 9737 exact scalar profile L=8 theta=3.141592653589793 {"error": 2.7554579511164523e-15}
+[PASS] 9737 exact scalar profile L=17 theta=1.0471975511965976 {"error": 4.2613687078900885e-15}
+[PASS] 9737 exact scalar profile L=17 theta=1.5707963267948966 {"error": 5.848969124460293e-15}
+[PASS] 9737 exact scalar profile L=17 theta=2.0943951023931953 {"error": 8.183427657334749e-15}
+[PASS] 9737 exact scalar profile L=17 theta=3.141592653589793 {"error": 1.1244932961036683e-14}
+[PASS] 9737 exact scalar profile L=30 theta=1.0471975511965976 {"error": 3.560707043922915e-15}
+[PASS] 9737 exact scalar profile L=30 theta=1.5707963267948966 {"error": 4.793208126428657e-15}
+[PASS] 9737 exact scalar profile L=30 theta=2.0943951023931953 {"error": 5.49928546009343e-15}
+[PASS] 9737 exact scalar profile L=30 theta=3.141592653589793 {"error": 8.167339818970174e-15}
+[PASS] 9741 elapsed-time supported-error allocation eps=1.0 {"blocks": 2540, "error_ceiling": 1.5699469607391826e-07, "horizon": 24881.41381643116, "qubits": 1191}
+[PASS] 9737 finite engineered dwell eps=1.0 ratio=2.0 {"L": 297, "actual_ratio": 2.0085924378016085}
+[PASS] 9737 finite engineered dwell eps=1.0 ratio=5.0 {"L": 787, "actual_ratio": 5.003976827413871}
+[PASS] 9737 finite engineered dwell eps=1.0 ratio=20.0 {"L": 7308, "actual_ratio": 20.000948452495237}
+[PASS] 9741 elapsed-time supported-error allocation eps=0.1 {"blocks": 2540, "error_ceiling": 1.5699469607391826e-08, "horizon": 24881.41381643116, "qubits": 1191}
+[PASS] 9737 finite engineered dwell eps=0.1 ratio=2.0 {"L": 297, "actual_ratio": 2.0085924378016085}
+[PASS] 9737 finite engineered dwell eps=0.1 ratio=5.0 {"L": 787, "actual_ratio": 5.003976827413871}
+[PASS] 9737 finite engineered dwell eps=0.1 ratio=20.0 {"L": 7308, "actual_ratio": 20.000948452495237}
+[PASS] 9741 elapsed-time supported-error allocation eps=0.01 {"blocks": 2540, "error_ceiling": 1.5699469607391825e-09, "horizon": 24881.41381643116, "qubits": 1191}
+[PASS] 9737 finite engineered dwell eps=0.01 ratio=2.0 {"L": 297, "actual_ratio": 2.0085924378016085}
+[PASS] 9737 finite engineered dwell eps=0.01 ratio=5.0 {"L": 787, "actual_ratio": 5.003976827413871}
+[PASS] 9737 finite engineered dwell eps=0.01 ratio=20.0 {"L": 7308, "actual_ratio": 20.000948452495237}
+[PASS] 9741/9742 uniform six-entry policy eps=1 {"cut": "0.015624999999999360477461080169324128385076561447199921903510251749117327544161168", "ell": 15651292371923, "filter": "0.0033829117335329634639207936357536569666851665113483996641714980067420566736500000", "incoming": "5.2660340204392064270354059896617415196537507293138016747896508425172580123015623E-9", "tail": "1.3905997761237209520855519041693428077842156459781738502174140242575971479467793E-7"}
+[PASS] 9742 asymmetric dwell eps=1 ratio=0.16666666666666666666666666666666666666666666666666666666666666666666666666666667 {"blocks": 250420677951246, "output_length": 15651292371923, "qubits": 125210338975685, "ratio": "0.16666666666666666666666666666666666666666666666666666666666666666666666666666667"}
+[PASS] 9742 asymmetric dwell eps=1 ratio=1 {"blocks": 429292590773230, "output_length": 38010281474671, "qubits": 214646295386677, "ratio": "1.0000000000000319462436786980405379689209681210347857237842977597614704457775516"}
+[PASS] 9742 asymmetric dwell eps=1 ratio=10 {"blocks": 2361109249250582, "output_length": 279487363784340, "qubits": 1180554624625353, "ratio": "10.000000000000026621869732248367114974100806767528988103153581466467892038147960"}
+[PASS] 9741/9742 uniform six-entry policy eps=0.1 {"cut": "0.0013120836486291009807561030323632040849861131737322187441108514316524305620826098", "ell": 18638403394997, "filter": "0.00033829117335329634639207936357536569666851665113483996641714980067420566736500000", "incoming": "4.0522469717354884878437571833768104798631252136093431857400162894450683489888363E-10", "tail": "0.00078126070075401362368455987469509419160869744201944899623922673818240830061158379"}
+[PASS] 9742 asymmetric dwell eps=0.1 ratio=0.16666666666666666666666666666666666666666666666666666666666666666666666666666667 {"blocks": 298214454320430, "output_length": 18638403394997, "qubits": 149107227160277, "ratio": "0.16666666666666666666666666666666666666666666666666666666666666666666666666666667"}
+[PASS] 9742 asymmetric dwell eps=0.1 ratio=1 {"blocks": 511224778834686, "output_length": 45264693959279, "qubits": 255612389417405, "ratio": "1.0000000000000178842214254686693348934107744338802881488248298640163543806014604"}
+[PASS] 9742 asymmetric dwell eps=0.1 ratio=10 {"blocks": 2811736283588598, "output_length": 332828632053518, "qubits": 1405868141794361, "ratio": "10.000000000000004471055356367167333723352693608470072037206207466004088595150365"}
+[PASS] 9741/9742 uniform six-entry policy eps=0.01 {"cut": "0.0000010420956430382542226322197615165189554617835581621931578894435784307908884467685", "ell": 2346727432793898, "filter": "0.000033829117335329634639207936357536569666851665113483996641714980067420566736500000", "incoming": "2.8682367211910189856138842417434752635227357837304002499755010777244088015789070E-14", "tail": "0.000078125000757414039410762535437754469215168717783725866262461691999599069014907422"}
+[PASS] 9742 asymmetric dwell eps=0.01 ratio=0.16666666666666666666666666666666666666666666666666666666666666666666666666666667 {"blocks": 37547638924702846, "output_length": 2346727432793898, "qubits": 18773819462351485, "ratio": "0.16666666666666666666666666666666666666666666666666666666666666666666666666666667"}
+[PASS] 9742 asymmetric dwell eps=0.01 ratio=1 {"blocks": 64367381013775966, "output_length": 5699195193928038, "qubits": 32183690506888045, "ratio": "1"}
+[PASS] 9742 asymmetric dwell eps=0.01 ratio=10 {"blocks": 354020595575765662, "output_length": 41905847014176750, "qubits": 177010297787882893, "ratio": "10"}
+[PASS] 9731 literal module and target site injection {}
+[PASS] 9731 expanded cable 1/0 {"length": 20935}
+[PASS] 9731 expanded cable 1/1 {"length": 20935}
+[PASS] 9731 expanded cable 2/0 {"length": 40122}
+[PASS] 9731 expanded cable 2/1 {"length": 40122}
+[PASS] 9731 expanded cable 3/0 {"length": 60222}
+[PASS] 9731 expanded cable 3/1 {"length": 60222}
+[PASS] 9731 expanded cable 4/0 {"length": 80222}
+[PASS] 9731 expanded cable 4/1 {"length": 80222}
+[PASS] 9731 expanded cable 5/0 {"length": 100648}
+[PASS] 9731 expanded cable 5/1 {"length": 100648}
+[PASS] 9731 equal paired phases and exact finite inventory {}
+[PASS] 9731 analytic infinite-ray exclusion from all finite vertices {}
+[PASS] 9731 actual module unit edges and six shared-target neighbours {}
+[PASS] 9733 supplied range21 relabeling all499 sites {}
+[PASS] 9733 complete old finite and bounded-horizon branch budget eps=1.0 {"branch": 0.0014226841690895078, "early": 2.46412633782437e-10, "ell": 3794733192356752827124515483586228387840, "final": 0.0011680391023544923}
+[PASS] 9725 actual scaled-operation six-entry allocation eps=1.0 {"alpha": 9.896490514730889e-16, "costs": [7.600504715313323e-13, 2.747627312126521e-10, 0.041666666666666664]}
+[PASS] 9729 joint rest and selector runtime allocation eps=1.0 {"h": 7.137162456051478e-69}
+[PASS] 9733 complete old finite and bounded-horizon branch budget eps=0.1 {"branch": 0.00012679471034847422, "early": 1.3856418926832773e-11, "ell": 1200000000001016761637719903657072044393103360, "final": 0.00011680229298943249}
+[PASS] 9725 actual scaled-operation six-entry allocation eps=0.1 {"alpha": 3.129545086880186e-18, "costs": [2.4034906267239828e-15, 2.7476273121265383e-13, 0.0041666666666666675]}
+[PASS] 9729 joint rest and selector runtime allocation eps=0.1 {"h": 7.137162456051576e-82}
+[PASS] 9733 complete old finite and bounded-horizon branch budget eps=0.01 {"branch": 1.2057547230016457e-05, "early": 7.792030193086374e-13, "ell": 379473319220215169737127545397093959987290942996480, "final": 1.168021013547014e-05}
+[PASS] 9725 actual scaled-operation six-entry allocation eps=0.01 {"alpha": 9.896490514730919e-21, "costs": [7.600504715313346e-18, 2.747627312126539e-16, 0.0004166666666666666]}
+[PASS] 9729 joint rest and selector runtime allocation eps=0.01 {"h": 7.137162456051567e-95}
+[PASS] 9734 resonant contribution 01 eps=1.0 {"ceiling": 1e-08, "value": 1.1327780603206334e-37}
+[PASS] 9734 resonant contribution 02 eps=1.0 {"ceiling": 1.0000001333333333e-08, "value": 1.6495610993501712e-15}
+[PASS] 9734 resonant contribution 03 eps=1.0 {"ceiling": 2.0002e-08, "value": 6.324555320336766e-12}
+[PASS] 9734 resonant contribution 04 eps=1.0 {"ceiling": 0.0009765625, "value": 0.0006928203230275508}
+[PASS] 9734 resonant contribution 05 eps=1.0 {"ceiling": 2e-15, "value": 7.115948952324304e-30}
+[PASS] 9734 resonant contribution 06 eps=1.0 {"ceiling": 2e-10, "value": 3.241020854680145e-27}
+[PASS] 9734 resonant contribution 07 eps=1.0 {"ceiling": 7e-08, "value": 6.999999999999999e-08}
+[PASS] 9734 resonant contribution 08 eps=1.0 {"ceiling": 1e-10, "value": 1e-10}
+[PASS] 9734 resonant contribution 09 eps=1.0 {"ceiling": 4.0000001e-08, "value": 1.2649110640673518e-11}
+[PASS] 9734 resonant contribution 10 eps=1.0 {"ceiling": 1.1e-09, "value": 1.7825614700740798e-26}
+[PASS] 9734 resonant contribution 11 eps=1.0 {"ceiling": 0.00048828125, "value": 0.000475217250386189}
+[PASS] 9734 resonant contribution 12 eps=1.0 {"ceiling": 8.0000004e-08, "value": 2.5298221281347035e-11}
+[PASS] 9734 simultaneous total and positive normalization eps=1.0 {"dF": 1.2649110640673518e-11, "ell": 789940432591565721171631689578965893120, "total": 0.0011681077176872766}
+[PASS] 9734 resonant contribution 01 eps=0.1 {"ceiling": 1e-09, "value": 1.1324318204241697e-38}
+[PASS] 9734 resonant contribution 02 eps=0.1 {"ceiling": 1.0000000013333333e-09, "value": 2.3333333333333332e-18}
+[PASS] 9734 resonant contribution 03 eps=0.1 {"ceiling": 2.0002e-09, "value": 2.0000000000000016e-13}
+[PASS] 9734 resonant contribution 04 eps=0.1 {"ceiling": 9.765625e-05, "value": 6.928203230275508e-05}
+[PASS] 9734 resonant contribution 05 eps=0.1 {"ceiling": 2.0000000000000002e-16, "value": 1.2654145504806356e-31}
+[PASS] 9734 resonant contribution 06 eps=0.1 {"ceiling": 2.0000000000000002e-11, "value": 3.24097988272282e-27}
+[PASS] 9734 resonant contribution 07 eps=0.1 {"ceiling": 7.000000000000001e-09, "value": 7e-09}
+[PASS] 9734 resonant contribution 08 eps=0.1 {"ceiling": 1.0000000000000001e-11, "value": 1.0000000000000001e-11}
+[PASS] 9734 resonant contribution 09 eps=0.1 {"ceiling": 4.0000001e-09, "value": 4.0000000000000006e-13}
+[PASS] 9734 resonant contribution 10 eps=0.1 {"ceiling": 1.1000000000000001e-10, "value": 1.7825389354975507e-26}
+[PASS] 9734 resonant contribution 11 eps=0.1 {"ceiling": 4.8828125e-05, "value": 4.752017249822618e-05}
+[PASS] 9734 resonant contribution 12 eps=0.1 {"ceiling": 8.0000004e-09, "value": 8.000000000000001e-13}
+[PASS] 9734 simultaneous total and positive normalization eps=0.1 {"dF": 4.0000000000000006e-13, "ell": 24980109828480534966313966217457079156736, "total": 0.00011680921620098359}
+[PASS] 9734 resonant contribution 01 eps=0.01 {"ceiling": 1e-10, "value": 1.1323223297552045e-39}
+[PASS] 9734 resonant contribution 02 eps=0.01 {"ceiling": 1.0000000000133334e-10, "value": 4.495610993501714e-21}
+[PASS] 9734 resonant contribution 03 eps=0.01 {"ceiling": 2.0002e-10, "value": 6.324555320336762e-15}
+[PASS] 9734 resonant contribution 04 eps=0.01 {"ceiling": 9.765625e-06, "value": 6.928203230275509e-06}
+[PASS] 9734 resonant contribution 05 eps=0.01 {"ceiling": 2e-17, "value": 2.250260640283373e-33}
+[PASS] 9734 resonant contribution 06 eps=0.01 {"ceiling": 2e-12, "value": 3.240978587075765e-27}
+[PASS] 9734 resonant contribution 07 eps=0.01 {"ceiling": 7.000000000000001e-10, "value": 7e-10}
+[PASS] 9734 resonant contribution 08 eps=0.01 {"ceiling": 1e-12, "value": 1.0000000000000002e-12}
+[PASS] 9734 resonant contribution 09 eps=0.01 {"ceiling": 4.0000001e-10, "value": 1.264911064067352e-14}
+[PASS] 9734 resonant contribution 10 eps=0.01 {"ceiling": 1.1e-11, "value": 1.782538222891671e-26}
+[PASS] 9734 resonant contribution 11 eps=0.01 {"ceiling": 4.8828125e-06, "value": 4.752001724976626e-06}
+[PASS] 9734 resonant contribution 12 eps=0.01 {"ceiling": 8.0000004e-10, "value": 2.529822128134704e-14}
+[PASS] 9734 simultaneous total and positive normalization eps=0.01 {"dF": 1.264911064067352e-14, "ell": 789940432591565769528664474164132881367040, "total": 1.1680905999524027e-05}
+[PASS] 9731 complete geometry-aware finite cat budget eps=1.0 {"blocks": 144000000048002751376305531230440630448712818659425060473354686, "ell": 36000000012000687844076382807610157612178204664856265118187520, "qubits": 144000000048002751376305531230440630448712818659425060473354578, "total": 0.002310140552432973}
+[PASS] 9731 complete geometry-aware finite cat budget eps=0.1 {"blocks": 14400000000151791123345938068870785230887621766020152398240096658599262654, "ell": 3600000000037947780836484517217696307721905441505038099560024164649664512, "qubits": 14400000000151791123345938068870785230887621766020152398240096658599262546, "total": 0.00023098523402614922}
+[PASS] 9731 complete geometry-aware finite cat budget eps=0.01 {"blocks": 1440000000000478917718275649114258740577944615197941599797783249264199742961863965118, "ell": 360000000000119729429568912278564685144486153799485399949445812316049935740465840128, "qubits": 1440000000000478917718275649114258740577944615197941599797783249264199742961863965010, "total": 2.30982352469389e-05}
+per_element: Exact ordered Pauli coefficients, full selector spectra, signed gates and scalar phases are calculated from supplied matrices.
+per_site: Physical local blocks, complete frozen cable vertices and infinite-ray exclusions are checked; primitive block and incidence hypotheses remain in bound proofs.
+per_mode: Full logical columns, ancillary sectors, source normalization and finite scalar-clock modes are retained; no successful branch substitutes for full output.
+per_block: Written leakage, scattering and tail estimates retain their stated hypotheses; finite controls accompany rather than replace those general proofs.
+lattice_wide: All devices are finite supplied constructions with explicit resource policies; native interactions, preparation of a coupled receiving gadget, active environments and permanent halt remain unproved.
+TOTAL: PASS=137 FAIL=0
+
+----- stderr -----
+

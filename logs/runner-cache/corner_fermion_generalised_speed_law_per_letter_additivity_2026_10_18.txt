@@ -1,0 +1,118 @@
+===== runner cache v1 =====
+runner: scripts/corner_fermion_generalised_speed_law_per_letter_additivity_2026_10_18.py
+runner_sha256: e06fe40a77d5c47e89549ba9da4f2aabcb7b1f8a0bf31ff68c6929cd48d7d4bc
+input_fingerprint_sha256: 572fab0d2e3b3fb85581760f680779c16aa93da094ee22555305a71af6decf98
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 10.81
+status: ok
+----- stdout -----
+Execution scope: default and explicitly requested optional branches only; historical totals are not fresh evidence.
+per_element: algebraic entries and numerical fixtures below have their stated exact or floating arithmetic scope.
+per_site: only the explicitly supplied local sites and translation rules are exercised; no physical site law is inferred.
+per_mode: only displayed momentum, representation and coefficient sectors are checked; untested sectors remain unverified.
+per_block: finite matrix, graph and ansatz blocks below use their declared dimensions; optional blocks require explicit flags.
+lattice_wide: finite tori and written conditional proofs have distinct scope; numerical scans do not certify all sizes.
+=== 0. model build ===
+[PASS] 0.1 12 corners, 36 edge types (24 on-site, 12 link); flux system (square = plaquette = tube = pi, triangle = 0) has a translation-invariant Z2 gauge solution
+[PASS] 0.2 every one of the 48 O_h elements has a gauge-dressed lift (lam_R, tau_R) solving the PSG equations over GF(2)
+[PASS] 0.3 H_on has spectrum {-1-sqrt3, sqrt3-1, 2}, Lambda has {+-sqrt2, +-2sqrt2}, H_link(k)^2 = 2 (random k)
+[PASS] 0.4 S is a unitary diagonal shift with signs fixed by covariance; A0^2 = -1; D+ = {H_on = 2, Lambda = -2sqrt2} and D- = {H_on = 2, Lambda = +2sqrt2} are 2-dimensional
+
+=== 1. F1-F3: little group, double cover, decomposition of the 12 ===
+[PASS] F1 all 24 proper rotations fix +k* and -k* (R^T k + pi lam = k mod 2pi): little group O, rho(g) = U_R
+[PASS] F2a U_R U_S = +-U_RS with both signs occurring: a projective representation; {+-U_R} has 48 elements
+[PASS] F2b element orders of {+-U_R} equal those of an explicit GL(2,3) over F3 (13 involutions): the non-split double cover isoclinic to 2O; relifting odd elements by i gives 2O (1 involution)  {+-U_R}: {1: 1, 2: 13, 3: 8, 4: 6, 6: 8, 8: 12}; GL(2,3): {1: 1, 2: 13, 3: 8, 4: 6, 6: 8, 8: 12}; relift: {1: 1, 2: 1, 3: 8, 4: 18, 6: 8, 8: 12}
+[PASS] F3a D+ and D- are invariant, irreducible and inequivalent  <chi,chi> = 1.000, 1.000; |<chi+,chi->| = 2.5e-17
+[PASS] F3b chi_{D-}(g) = chi_A2(g) chi_{D+}(g) for all 24 lifts: D- = A2 (x) D+
+[PASS] F3c 8-dim complement has <chi,chi> = 4 and no D+- content; commutant dimension 6 = 1 + 1 + 4: 12 = D+ + D- + 2 G3/2, D+- of multiplicity 1  <chi_G,chi_G> = 4.000, commutant 6
+
+=== 2. F4-F5: T1 frames; step-3 sign ===
+[PASS] F4 D+: T1 triples in End(D) form a 1-dim space; normalised: Hermitian, traceless, tau_i tau_j = delta_ij + i eps_ijk tau_k, and -tau violates it
+[PASS] F4 D-: T1 triples in End(D) form a 1-dim space; normalised: Hermitian, traceless, tau_i tau_j = delta_ij + i eps_ijk tau_k, and -tau violates it
+[PASS] F5 Hom(D+,D-) contains no T1 and one T2 = T1 (x) A2; End(D+-) contains no T2  dims 0, 1, 0, 0
+[PASS] 2.1 step 3: X^dag tau^(b) X = +tau^(a) for unitary intertwiners X: D_a -> D_b (A1 and A2 products, both k*); never -tau (the eps relation fixes the sign)  160 cases, worst 6.7e-15
+
+=== 3. letters: covariance, action on D+-, values v ===
+[PASS] 3.1 all 30 letters are O-covariant with their declared character (24 rotations, random k)
+[PASS] 3.2 analytic (Daleckii-Krein / Bloch) letter derivatives agree with finite differences  1.0e-09
+[PASS] 3.3 A1 letters act as scalars on D+ and D-; A2 letters swap D+ <-> D-
+[PASS] 3.4 P_b U^dag dU P_b = i v tau^(b) with v real for every letter, both doublets, both +-k*  fit residual 2.4e-15, |Im v| 6.9e-17
+   letter                v(D+,+k*)   v(D-,+k*)   v(D+,-k*)   v(D-,-k*)
+   S^1                     0.471405   -0.471405    0.471405   -0.471405
+   S^2                     0.942809   -0.942809    0.942809   -0.942809
+   S^-1                   -0.471405    0.471405   -0.471405    0.471405
+   S^-2                   -0.942809    0.942809   -0.942809    0.942809
+   R_L                     0.000000    0.000000    0.000000    0.000000
+   Rt                     -0.000000   -0.000000   -0.000000   -0.000000
+   E+                     -0.000000    0.000000    0.000000    0.000000
+   E-                     -0.000000    0.000000   -0.000000   -0.000000
+   exp(i1pi/6 R_L)        -0.000000   -0.000000    0.000000   -0.000000
+   exp(i2pi/6 R_L)        -0.000000    0.000000   -0.000000    0.000000
+   exp(i3pi/6 R_L)        -0.000000    0.000000    0.000000    0.000000
+   exp(i5pi/6 R_L)         0.000000   -0.000000   -0.000000    0.000000
+   exp(0.7317i R_L)       -0.000000   -0.000000   -0.000000   -0.000000
+   exp(0.9i Rt)            0.000000   -0.000000    0.000000    0.000000
+   onsite                  0.000000    0.000000    0.000000    0.000000
+   onsite                  0.000000    0.000000    0.000000    0.000000
+   onsite                  0.000000    0.000000    0.000000    0.000000
+   A0S^-2                 -0.942809    0.942809   -0.942809    0.942809
+   A0S^-1                 -0.471405    0.471405   -0.471405    0.471405
+   A0S^0                   0.000000    0.000000    0.000000    0.000000
+   A0S^1                   0.471405   -0.471405    0.471405   -0.471405
+   A0S^2                   0.942809   -0.942809    0.942809   -0.942809
+   exp(iH)                -0.775247    0.265967   -0.521067    0.465178
+   exp(iH)                 0.062319    0.299859    0.148917    0.223841
+   exp(iH)                 0.215973    0.490678    0.010076    0.799396
+   exp(iH)                 0.270415   -0.012816    0.518558   -0.126526
+   exp(iH)                -0.128587   -0.171036   -0.272796   -0.300115
+   exp(iH)                 0.990757    0.157996    0.674072    0.335902
+   A0exp(iH)              -0.567192    0.852549   -0.613881    1.412070
+   A0exp(iH)              -0.005546   -0.006844   -0.016980   -0.038058
+[PASS] 3.5 v_S = +sqrt2/3 on D+ and -sqrt2/3 on D- at both +k* and -k* (tau_x tau_y = +i tau_z; Bloch e^{+ik.a}) [expected constant: B20 L1 speed sqrt2/3 per S]
+[PASS] 3.6 v_{S^p} = p v_S for p = 2, -1, -2
+[PASS] 3.7 v = 0 for R_L, Rt, E+-, exp(i theta R_L) (theta = pi/6, pi/3, pi/2, 5pi/6, 0.7317), exp(0.9i Rt) and random symmetric on-site letters (13 letters)
+[PASS] 3.8 Daleckii-Krein zero: R_L(k*) is a scalar r on D+- and P dR_L P = 0, so P d f(R_L) P = f'(r) P dR_L P = 0 exactly  max |P dR_L P| = 3.8e-16
+[PASS] 3.9 A2 letters A0 S^a: v^(b) (input label b) = a v_S^(b): A0 contributes only the label swap
+[PASS] 3.10 generic exp(iH) letters: v real and letter-dependent; v(D+) + v(D-) != 0 and v(+k*) != v(-k*) in every case  8/8, 8/8
+
+=== 4. random words: path-additive prediction vs whole word ===
+   160 words: 606 isolated 2-fold D+- levels (gap > 1e-3), 34 near-degenerate skipped, 8 with sum v = 0; 4s
+[PASS] 4.1 every even-A2 word preserves D+ and D- at +-k* and is a scalar there (Schur)
+[PASS] 4.2 doublet labels tracked by subspace overlap agree with b_j = a prod_{l>j} chi_l on every letter
+[PASS] 4.3 signed identity: whole-word P W^dag dW P = i (sum_j v_j^(b_j)) tau^(a) entrywise  worst 2.0e-09 on 606 levels
+[PASS] 4.4 first-order cone speed = |sum v| in 12 random directions; isotropic and untilted  speed 2.0e-09, spread 2.3e-10, tilt 2.6e-10
+[PASS] 4.5 direct diagonalisation of W(k* +- dl q), dl = 1e-4, 5e-5, Richardson: half eigenphase splitting / dl = |sum v|  worst 1.5e-07 on 150 levels x 2 directions
+   Berry: 24 levels (D+ 13, D- 11, +k* 14); Chern(upper band) * sign(sum v) = 1
+[PASS] 4.6 FHS Berry flux: Chern(upper band) = kappa sign(sum v) with one global kappa for D+ and D- at +-k*  kappa = 1
+
+=== 5. corollaries: B20 L1 and B26's sign-flipped n_eff ===
+[PASS] 5.1 B20 L1: words in S^{+-1,+-2}, R_L and symmetric on-site letters: sum v = a (sqrt2/3) n_S on D_a (speed |n_S| sqrt2/3, chirality sign(n_S) eps_D), path sum and whole-word derivative  84 levels
+[PASS] 5.2 B26: adding Rt and A0 S^a: sum v = a (sqrt2/3) n_eff, n_eff = sum_p (-1)^{#A0 left} p (signed), path sum and whole-word derivative  148 levels, 56 with |n_eff| != |n_raw|
+
+=== 6. 4-fold D+ (+) D- levels ===
+[PASS] 6.1 P_D+ is O-symmetric on-site, so Z(alpha) = exp(i alpha P_D+) is an A1 letter with v = 0
+   levels: end 20, mid 20, old palette 12; 4s
+[PASS] 6.2 no first-order D+ <-> D- block at any tuned 4-fold level (F5)  worst 1.6e-09 on 52 levels
+[PASS] 6.3 two untilted isotropic cones at |sum v^(+ path)| and |sum v^(- path)| (whole-word derivative, 4 directions)  worst 2.3e-09
+[PASS] 6.4 old palette (S^p, R_L, Rt, on-site, A0 S^a): equal speeds, opposite chirality (B20's 4-fold L1); upper-pair Chern number 0  12 levels, 9 Berry-tested
+[PASS] 6.5 generic words (at least one exp(iH) letter): the two speeds differ  | |v+| - |v-| | > 1e-3 in 40/40; smallest 1.5e-03
+   Berry on 32 generic levels with separated speeds: same sign(v+) = sign(v-) in 9; upper-pair Chern +-2 in 9/9 of those, 0 in 23/23 of the others
+[PASS] 6.6 per-band FHS Chern numbers (4 bands and the upper pair) match the prediction from sign(v+-) with the kappa of 4.6  32/32
+[PASS] 6.7 same chirality occurs and is confirmed without any frame convention: upper-pair Chern = +-2 exactly when sign(v+) = sign(v-), 0 otherwise  9 same-sign levels
+
+=== 7. W3 of a same-chirality word ===
+[PASS] 7.1 integrator control: the 2x2 map (m - sum cos k + i sin k . sigma)/norm, m = 2, has |W3| = 1  W3 = -0.9978
+   partner distances of the same-sign levels: 3.9e-16, 5.8e-04, 7.2e-02, 1.3e-01, 1.5e-01, 1.5e-01, 3.0e-01, 7.6e-01, 1.1e+00
+   example: ['Rt', 'exp(iH)', 'Z'] at -k*, v+ = 0.3920, v- = 0.0561, upper-pair Chern +2.0000
+   W3 midpoint grid N=8: +3.032e-01 +4.2e-16i  (0s)
+   W3 midpoint grid N=12: +1.138e-02 -3.8e-16i  (1s)
+   W3 midpoint grid N=16: -1.058e-04 -1.6e-16i  (1s)
+[PASS] 7.2 W3 of the same-chirality example -> 0 under refinement (exact: every letter is exp(iH), a constant, a diagonal phase, Z or a reflection, so W3 = 0 by homotopy and additivity)  |W3| = 3.0e-01, 1.1e-02, 1.1e-04
+[PASS] 7.3 in the example the partner point -k0 has no eigenphase at the node quasi-energy, so the net charge +-2 at {+-k*} is nonzero (conditionally on Bessho-Sato, the compensating charge sits at points that are not T-fixed)  min distance 7.56e-01
+   section 7: 2s
+
+TOTAL: PASS=42 FAIL=0   [11s]
+
+----- stderr -----
+

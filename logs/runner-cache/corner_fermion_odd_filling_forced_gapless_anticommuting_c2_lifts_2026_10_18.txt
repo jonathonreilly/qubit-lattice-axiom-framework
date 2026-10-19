@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/corner_fermion_odd_filling_forced_gapless_anticommuting_c2_lifts_2026_10_18.py
+runner_sha256: b9265c9d0faa1c01c2f7c1ebe47873fb5fa3f63cb426a0cc5dd1f71b87cf0b43
+input_fingerprint_sha256: 572fab0d2e3b3fb85581760f680779c16aa93da094ee22555305a71af6decf98
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 22.51
+status: ok
+----- stdout -----
+Execution scope: default and explicitly requested optional branches only; historical totals are not fresh evidence.
+per_element: algebraic entries and numerical fixtures below have their stated exact or floating arithmetic scope.
+per_site: only the explicitly supplied local sites and translation rules are exercised; no physical site law is inferred.
+per_mode: only displayed momentum, representation and coefficient sectors are checked; untested sectors remain unverified.
+per_block: finite matrix, graph and ansatz blocks below use their declared dimensions; optional blocks require explicit flags.
+lattice_wide: finite tori and written conditional proofs have distinct scope; numerical scans do not certify all sizes.
+A. reduction to the infinite lattice
+[PASS] translation-invariant gauge reproduces the flux pattern; every O_h PSG lift on the L = 4 torus has the form (-1)^(lam.v + tau(c))
+[PASS] Bloch relation U_g H(k) U_g^T = H(g k + pi s_g) for all 48 g at 20 random continuous k (supplied H0 and a random O_h-symmetric range-2 H); L = 4 Bloch restriction of H0 agrees
+[PASS] exactly 21 of the 24 proper rotations have a nonzero affine shift s_g; on the N = 24 grid only +-k* (k* = (pi/2, -pi/2, pi/2)) are fixed by all 24 affine maps k -> g k + pi s_g  shifted 21; fixed [(np.float64(-0.5), np.float64(0.5), np.float64(-0.5)), (np.float64(0.5), np.float64(-0.5), np.float64(0.5))]
+
+B. global anticommutation of commuting-C2 lifts   [0 s elapsed]
+[PASS] all 12 commuting pairs (a, b) of proper C2 rotations: the site-dependent signs agree, lam_b + R_b^T lam_a = lam_a + R_a^T lam_b (mod 2), and the fibre matrices anticommute exactly, U_a U_b = -U_b U_a; hence G_a G_b = -G_b G_a on all of l^2(Z^3) (x) C^12  pairs 12
+[PASS] on the L = 4 torus the 768 x 768 operators satisfy G_a G_b = -G_b G_a for all 12 pairs
+
+C. even levels at momenta fixed by both C2s; odd-filling logic   [1 s elapsed]
+[PASS] the momenta fixed by the D2 affine maps (C2x, C2y, C2z) on the N = 24 grid are exactly the 8 points (+-pi/2)^3  8 points
+[PASS] 6 random Hamiltonians symmetric under translations + 24 dressed rotations (range 1-2, scale 0.05-10): every level at k* and -k* has even multiplicity
+[PASS] 6 random Hamiltonians symmetric under translations + dressed D2 only: every level at all 8 points (+-pi/2)^3 has even multiplicity
+[PASS] control: at a random generic momentum both families have only simple levels  max multiplicities [(1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1)]
+[PASS] odd-filling logic: for every odd nu, E_nu(k) = E_{nu+1}(k) at k* (O) and at the 8 D2-fixed points (D2), so min_k E_{nu+1} - max_k E_nu <= 0: no band gap, no gapped Slater ground state at odd nu
+
+D. insulators at allowed fillings; site irreps   [1 s elapsed]
+[PASS] nu = 2 insulator in the class translations + 24 dressed rotations: on-site -P (P onto a 2-dim site irrep) + symmetric range-1 hopping; Bloch symmetry verified; Lipschitz-certified global gap > 0 (N = 48 grid)  grid gap 0.7439, certified >= 0.5828
+[PASS] nu = 1 insulator with translations + dressed C2x only: certified global gap > 0 (no commuting C2 pair, so no obstruction)  grid gap 0.8613, certified >= 0.7116
+[PASS] site irreps of the dressed operators (generic commutant splitting): O gives [2, 2, 4, 4], O_h gives [4, 4, 4]; so no O_h-symmetric on-site Slater state has N = 2 mod 4  O [2, 4, 2, 4] (commutant dim 6); O_h [4, 4, 4] (commutant dim 3)
+
+E. twisted odd-L tori and the Fock-space (-1)^N relation   [3 s elapsed]
+[PASS] L = 3, theta = k*: H Hermitian, the 24 dressed rotations unitary and all symmetries (= the set predicted by R theta + pi L R lam = theta), C2x/C2y anticommute on the whole one-particle space, every one-particle level even; spectrum = union of H(k) over L k = theta  symmetric 24/24
+[PASS] L = 3, theta = -k*: H Hermitian, the 24 dressed rotations unitary and all symmetries (= the set predicted by R theta + pi L R lam = theta), C2x/C2y anticommute on the whole one-particle space, every one-particle level even; spectrum = union of H(k) over L k = theta  symmetric 24/24
+[PASS] L = 1, theta = k*: H Hermitian, the 24 dressed rotations unitary and all symmetries (= the set predicted by R theta + pi L R lam = theta), C2x/C2y anticommute on the whole one-particle space, every one-particle level even; spectrum = union of H(k) over L k = theta  symmetric 24/24
+[PASS] L = 1, theta = -k*: H Hermitian, the 24 dressed rotations unitary and all symmetries (= the set predicted by R theta + pi L R lam = theta), C2x/C2y anticommute on the whole one-particle space, every one-particle level even; spectrum = union of H(k) over L k = theta  symmetric 24/24
+[PASS] control: L = 3 with theta = 0 -- exactly the 21 rotations with nonzero shift s_g fail to be symmetries  21 fail
+[PASS] L = 1 twisted torus Fock space (4096 states): Gamma(G_a) Gamma(G_b) = Gamma(G_a G_b) (vacuum-fixing lift is multiplicative) and Gamma(C2x) Gamma(C2y) = (-1)^N Gamma(C2y) Gamma(C2x) exactly
+[PASS] L = 1, theta = k*: generic interacting N-conserving Hamiltonians commuting with all 24 Fock lifts have only even-degenerate levels in the N = 3 and N = 5 sectors; control: N = 2 or 4 sectors have simple levels  ground multiplicities {N: m} = {2: 2, 3: 4, 4: 1, 5: 2}
+
+F. doubled-cell class: dressed O_h about site 0 + even translations   [5 s elapsed]
+[PASS] every O_h element preserves the parity of x + y + z, so the class maps the even sublattice to itself
+[PASS] free fermions in the doubled-cell class (random symmetric L = 4 Hamiltonians, odd translations broken): every level of the folded 24-state k* fibre has multiplicity divisible by 4, so odd nu per site admits no Slater band insulator in this class  multiplicities [[4, 4, 4, 4, 4, 4], [4, 4, 4, 4, 4, 4]]
+[PASS] U (x) U on the 66-dim two-fermion site space is a linear O_h representation; it contains a state psi transforming by a 1-dim character, with antisymmetric coefficient rank > 2 (not a Slater determinant)  invariant dim 2, coefficient rank 12
+[PASS] pair operators P_v^dag = (1/2) sum_ab psi_ab c^dag_{v,a} c^dag_{v,b} on even sites satisfy G_g P_v^dag G_g^-1 = chi_g P_{g v}^dag (all 48 g, all 32 even sites) and T_t P_v^dag T_t^-1 = P_{v+t}^dag (sampled even t) on the L = 4 torus; hence prod_{v even} P_v^dag |0> is symmetric as a ray (analytic: a product of on-site states, unique ground state of sum_even (1 - |psi><psi|_v) + sum_odd N_v, gap 1, filling 1 per site)
+[PASS] scoping control: the 24 rotations about the cube centre c = (1/2,1/2,1/2), as maps (R, c - Rc), have integer-translation parity w1(R); the 12 w1-odd ones need an odd translation, so the cube-centre group (the A2-staggered-mass symmetry) is a different class from O_h about site 0 + even translations  w1-odd count 12
+
+TOTAL: PASS=25 FAIL=0   (22 s)
+
+----- stderr -----
+

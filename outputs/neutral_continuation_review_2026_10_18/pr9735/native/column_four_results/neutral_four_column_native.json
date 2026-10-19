@@ -1,0 +1,24 @@
+[
+  {
+    "lam": 0.1,
+    "max_residual": 6.691900465254011e-12,
+    "minimum_aligned_overlap": 0.9968629685756631,
+    "H_coefficient_error": 0.005719775260086768,
+    "C_coefficient_error": 0.027132087415088213,
+    "H_plaquette": -0.14047757115442924,
+    "H_pair": -0.12398109110753516,
+    "C_plaquette": -0.39819020301312674,
+    "C_pair": -0.37008257997289384
+  },
+  {
+    "lam": 0.2,
+    "max_residual": 9.4450673659583e-12,
+    "minimum_aligned_overlap": 0.9873139053343497,
+    "H_coefficient_error": 0.022265831652577426,
+    "C_coefficient_error": 0.10463921524111576,
+    "H_plaquette": -0.14004101889848738,
+    "H_pair": -0.12100028872965536,
+    "C_plaquette": -0.3973731814395711,
+    "C_pair": -0.355843539573082
+  }
+]

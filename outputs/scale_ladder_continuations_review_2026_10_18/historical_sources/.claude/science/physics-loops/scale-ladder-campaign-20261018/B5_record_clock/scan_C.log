@@ -1,0 +1,13 @@
+# scan C: 12 jobs, 129s, budget e=0.01, K=4
+D1 lam=0.04 T=625 M=3050 SB: a_lit=2.680e-05(p=0.55,PASS) a_act=7.597e-03(p=1.0,PASS) b_pop=1.261e-02(p=1.0,PASS) c_gp=7.597e-03(p=1.0,PASS) c_rel=7.597e-03(p=1.0,PASS)
+D1 lam=0.04 T=625 M=3050 SO: a_lit=1.898e-04(p=1.0,PASS) a_act=1.898e-04(p=1.0,PASS) b_pop=7.773e-03(p=2.0,PASS) c_gp=3.241e-04(p=1.0,PASS) c_rel=1.898e-04(p=1.0,PASS)
+D1 lam=0.04 T=625 M=3050 LB: a_lit=2.744e-04(p=1.0,PASS) a_act=2.744e-04(p=1.0,PASS) b_pop=1.541e-03(p=1.06,PASS) c_gp=2.744e-04(p=1.0,PASS) c_rel=inf(p=None,PASS)
+D1 lam=0.04 T=625 M=3050 LO: a_lit=3.381e-04(p=1.0,PASS) a_act=3.381e-04(p=1.0,PASS) b_pop=5.497e-03(p=2.0,PASS) c_gp=5.323e-04(p=1.0,PASS) c_rel=inf(p=None,PASS)
+D1 lam=0.04 T=625 M=6050 SB: a_lit=2.680e-05(p=0.55,PASS) a_act=7.597e-03(p=1.0,PASS) b_pop=1.261e-02(p=1.0,PASS) c_gp=7.597e-03(p=1.0,PASS) c_rel=7.597e-03(p=1.0,PASS)
+D1 lam=0.04 T=625 M=6050 SO: a_lit=1.898e-04(p=1.0,PASS) a_act=1.898e-04(p=1.0,PASS) b_pop=7.773e-03(p=2.0,PASS) c_gp=3.241e-04(p=1.0,PASS) c_rel=1.898e-04(p=1.0,PASS)
+D1 lam=0.04 T=625 M=6050 LB: a_lit=2.801e-04(p=1.0,PASS) a_act=2.801e-04(p=1.0,PASS) b_pop=1.486e-03(p=1.05,PASS) c_gp=2.801e-04(p=1.0,PASS) c_rel=inf(p=None,PASS)
+D1 lam=0.04 T=625 M=6050 LO: a_lit=5.096e-04(p=1.0,PASS) a_act=5.096e-04(p=1.0,PASS) b_pop=5.497e-03(p=2.0,PASS) c_gp=5.323e-04(p=1.0,PASS) c_rel=inf(p=None,PASS)
+D1 lam=0.04 T=625 M=12050 SB: a_lit=2.680e-05(p=0.55,PASS) a_act=7.597e-03(p=1.0,PASS) b_pop=1.261e-02(p=1.0,PASS) c_gp=7.597e-03(p=1.0,PASS) c_rel=7.597e-03(p=1.0,PASS)
+D1 lam=0.04 T=625 M=12050 SO: a_lit=1.898e-04(p=1.0,PASS) a_act=1.898e-04(p=1.0,PASS) b_pop=7.773e-03(p=2.0,PASS) c_gp=3.241e-04(p=1.0,PASS) c_rel=1.898e-04(p=1.0,PASS)
+D1 lam=0.04 T=625 M=12050 LB: a_lit=2.932e-04(p=1.0,PASS) a_act=2.932e-04(p=1.0,PASS) b_pop=1.776e-03(p=1.02,PASS) c_gp=2.932e-04(p=1.0,PASS) c_rel=inf(p=None,PASS)
+D1 lam=0.04 T=625 M=12050 LO: a_lit=5.096e-04(p=1.0,PASS) a_act=5.096e-04(p=1.0,PASS) b_pop=5.497e-03(p=2.0,PASS) c_gp=5.323e-04(p=1.0,PASS) c_rel=inf(p=None,PASS)

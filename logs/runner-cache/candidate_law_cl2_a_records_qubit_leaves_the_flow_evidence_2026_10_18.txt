@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/candidate_law_cl2_a_records_qubit_leaves_the_flow_evidence_2026_10_18.py
+runner_sha256: 4891c524a67dcbab0cf8c6ffe7e60d63c15dde682d503f09cf3b36b3dbb40356
+input_fingerprint_sha256: 7bef39f14f0c3aa58352ab4a8233b234bb24faa0f557a18ad8ca5fa77af8a014
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 40.70
+status: ok
+----- stdout -----
+[PASS] packet pre-wrap detection 0.0  T=260 detected_u2_fraction=0.99402 peak_x=210.0 max_boundary_u2_fraction=0.00516759
+[PASS] packet pre-wrap detection -0.05  T=260 detected_u2_fraction=0.994445 peak_x=209.0 max_boundary_u2_fraction=0.00509855
+[PASS] packet pre-wrap detection 0.05  T=260 detected_u2_fraction=0.993599 peak_x=213.0 max_boundary_u2_fraction=0.00527673
+[PASS] finite pre-wrap scalar packet centroid direction  extra sideways shift: lower -8.74, raise +8.51 sites (negative = toward)
+[PASS] finite neutralized source proxies at r16 and r3  r=16: 0.01654, 0.01654, 0.01654; r=3: 0.15164, 0.14506, 0.15164
+[PASS] arbitrary-source torus neutralization and conjugacy
+[PASS] torus gauge constraints
+[PASS] finite staggered and ordinary source proxy comparisons  one record +0.02639; same colour +0.05620; opposite colour -0.00360; averaging, opposite colour +0.05638
+[PASS] floor/scale subtract linear solve  info=0 normalized_residual=1.856e-13
+[PASS] floor complementarity  iterations=1 fixed_point=6.406e-14 complementarity=5.220e-14 active=0
+[PASS] floor/scale subtract linear solve  info=0 normalized_residual=1.829e-13
+[PASS] floor complementarity  iterations=1 fixed_point=5.784e-14 complementarity=4.630e-14 active=0
+[PASS] floor/scale subtract linear solve  info=0 normalized_residual=1.856e-13
+[PASS] floor/scale subtract linear solve  info=0 normalized_residual=1.993e-13
+[PASS] floor/scale subtract linear solve  info=0 normalized_residual=1.790e-13
+[PASS] floor/scale subtract linear solve  info=0 normalized_residual=1.838e-13
+[PASS] floor/scale subtract linear solve  info=0 normalized_residual=1.865e-13
+[PASS] floor/scale subtract linear solve  info=0 normalized_residual=1.766e-13
+[PASS] floor/scale subtract linear solve  info=0 normalized_residual=1.964e-13
+[PASS] floor/scale subtract linear solve  info=0 normalized_residual=1.890e-13
+[PASS] floor/scale subtract linear solve  info=0 normalized_residual=1.773e-13
+[PASS] floor/scale subtract linear solve  info=0 normalized_residual=1.884e-13
+[PASS] floor complementarity  iterations=10 fixed_point=5.440e-14 complementarity=5.169e-14 active=147
+[PASS] floor/scale scale linear solve  info=0 normalized_residual=1.903e-13
+[PASS] floor/scale scale linear solve  info=0 normalized_residual=1.998e-13
+[PASS] floor/scale scale linear solve  info=0 normalized_residual=1.835e-13
+[PASS] floor source support and positive exterior  sparse proxy/count=[(np.float64(0.12000421399224358), 0), (np.float64(0.12011456604436253), 0)]; dense active=147 active_volume_radius=3.27398; scale proxies=[np.float64(0.10055787525107644), np.float64(0.08429855489365035)]; scale_min=0.0418268
+[PASS] finite scalar delay: 6% and 8% continuum comparisons; short wavelength excess  delay / (2 int |Phi|) = 1.030, 1.056, 1.504 at wavelengths 41.9, 20.9, 6.3
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.642e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.658e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.738e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.738e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.795e-13
+[PASS] finite uniform-boundary hole and position-dependent source proxies  pure-hole max deviation 9e-13; absorber per record 0.393 (1) -> 0.211 (33); fixed share per record 0.00588 -> 0.00600
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.725e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.816e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.892e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.979e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.820e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.760e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.811e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.903e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.854e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.826e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.733e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.984e-13
+[PASS] Dirichlet graph linear solve  info=0 normalized_residual=1.887e-13
+[PASS] pinning vertices to their existing static equilibrium values  far-field mass after 12 records +1.3e-12
+[PASS] exact torus mean once  mean_at_70=0.00041015625 recurrence_error=2.168e-19; no stationarity inferred
+[PASS] exact torus mean steady  mean_at_70=0.000364013671875 recurrence_error=1.084e-19; no stationarity inferred
+[PASS] exact torus mean absorber  mean_at_70=0.00475152260595 recurrence_error=1.735e-18; no stationarity inferred
+[PASS] finite r10 trace variation over ticks56-68 only  r*d late values: steady +0.023, +0.026, +0.028, +0.024; absorber +0.303, +0.337, +0.337, +0.310; once -0.016, +0.015, +0.168, +0.034
+[PASS] two seeded slab excess crossing-time diagnostics  excess crossing time / 100 sites: 0.0680826 at 5%, 0.142187 at 10%; not fractional speed
+per_element: full floor complementarity and normalized linear residuals are checked before finite proxy comparisons.
+per_site: equal drain and scalar wave weights are supplied choices, not consequences of the local qubit algebra.
+per_mode: zero and checkerboard torus projections are explicit; packet diagnostics use chosen amplitude weights.
+per_block: finite geometries, source supports, seeds and detection windows are printed or fixed in the bound source.
+lattice_wide: no universal dynamics, stationary torus field, physical gravity or empirical readout conclusion is established.
+elapsed_seconds 40.604422292206436
+
+TOTAL: PASS=53 FAIL=0
+
+----- stderr -----
+

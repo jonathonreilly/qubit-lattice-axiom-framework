@@ -1,0 +1,39 @@
+{
+  "original_head": "3fb70ea183fdeedd58e7638abe2a6d5fea508eff",
+  "current_main": "f182d27a1aec4cda8069c00c9a5dd8d3e5f045a0",
+  "parents": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "scope": "Actual framework context"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "scope": "Actual framework context"
+    },
+    {
+      "path": "docs/THE_REGGE_SECOND_VARIATION_ON_THE_4D_CUBIC_COXETER_COMPLEX_CARRIES_A_NATIVE_LINEARISED_GRAVITON_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "aad9fa7b70fe00a18ea627248270c4d47250ff214e98d2ae2466760ad2084bf8",
+      "scope": "Reviewed lineage/context only; no uniform EH/partner or broader physical theorem imported"
+    },
+    {
+      "path": "docs/SCALE_LADDER_GRAVITY_D4_CONE_COMMON_CONE_SPINS_ZERO_ONE_TWO_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "4f4b2007b5e533b0316c60b81a4a70bd94daeb3eadecafff6e8363ae0a4bb311",
+      "scope": "Reviewed lineage/context only; no uniform EH/partner or broader physical theorem imported"
+    },
+    {
+      "path": "docs/SCALE_LADDER_GRAVITY_D4CONE_STRAIN_READING_EXCHANGE_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "1ce3f66bff5b4efff644a614b9548aacfbecad9b566bd182bf04f46c615aaa81",
+      "scope": "Reviewed lineage/context only; no uniform EH/partner or broader physical theorem imported"
+    }
+  ],
+  "scientific_runtime": "Self-contained geometry, FD Regge builder, scalar/segment formulas; no repository imports",
+  "libraries": [
+    "Python standard library",
+    "numpy",
+    "sympy"
+  ],
+  "generated_outputs": [],
+  "scope": "Exact Laurent algebra and full32-column local displacement cancellation are distinct from finite FD fits, numerical ranks and two-scale selected-partner diagnostics."
+}

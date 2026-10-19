@@ -1,0 +1,71 @@
+{
+  "nx": 6,
+  "ny": 6,
+  "dimension": 16777216,
+  "t_over_K": 0.8888888888888888,
+  "ground_energy": -66.5725078936911,
+  "energy_per_column": -1.8492363303803083,
+  "low_gaps": [
+    0.0
+  ],
+  "eigen_residuals": [
+    2.0490276804067434e-11
+  ],
+  "plaquette_mean_per_site": 0.14559835470581806,
+  "source_norm2": 1.0319295020325732,
+  "source_mean": 13.355273488763693,
+  "source_std": 2.433355740939275,
+  "ritz": [
+    {
+      "index": 0,
+      "gap": 12.402899230245898,
+      "weight": 0.8774116392942187,
+      "residual": 3.1887207805482664e-09
+    },
+    {
+      "index": 1,
+      "gap": 17.849244149967774,
+      "weight": 0.10961116892241166,
+      "residual": 0.00011677534855577115
+    },
+    {
+      "index": 2,
+      "gap": 18.53829230857191,
+      "weight": 0.02669918534283324,
+      "residual": 0.0007568277283424963
+    },
+    {
+      "index": 3,
+      "gap": 20.714842385109495,
+      "weight": 0.00042402657210333057,
+      "residual": 0.052186079417360975
+    },
+    {
+      "index": 4,
+      "gap": 22.603191701632188,
+      "weight": 0.0012580825118003386,
+      "residual": 0.351970434269351
+    },
+    {
+      "index": 5,
+      "gap": 23.75218321872212,
+      "weight": 0.0104575006467738,
+      "residual": 0.4148424816143463
+    },
+    {
+      "index": 6,
+      "gap": 25.041815375299873,
+      "weight": 0.0028558507762403234,
+      "residual": 1.5768224087160552
+    },
+    {
+      "index": 7,
+      "gap": 26.331225864591985,
+      "weight": 0.0015426286177897294,
+      "residual": 2.5842614870722698
+    }
+  ],
+  "lanczos_steps": 32,
+  "elapsed": 99.82858085632324,
+  "scope": "Full leading order-four coefficient model, selected + subsystem-flip sector; no exact microscopic or infinite-grid claim"
+}

@@ -1,0 +1,20 @@
+   L=4 d=2: mean diag = 0.937500, spread=6.7e-16, (rank/nP=0.937500, counting=0.937500); infinite-volume 2/d=1.0000
+PASS: d=2 plaquette tadpole -> 2/d up to O(1/V)
+   L=3 d=4: mean diag = 0.493825, spread=4.8e-04, (rank/nP=0.493827, counting=0.493827); infinite-volume 2/d=0.5000
+PASS: d=4 plaquette tadpole -> 2/d up to O(1/V)
+   L=4 d=3: mean diag = 0.656242, spread=9.6e-04, (rank/nP=0.656250, counting=0.656250); infinite-volume 2/d=0.6667
+PASS: d=3 plaquette tadpole -> 2/d up to O(1/V)
+PASS: SU(2) <1-P>=(N^2-1)w/(4N), w=g^2/2 reproduces textbook
+PASS: SU(3) <1-P>=(N^2-1)w/(4N), w=g^2/2 reproduces textbook
+PASS: SU(2) HK tau=0.05: coeff of trX^2 = 1/(2tau) - N/24 got 9.91665313 vs 9.91666667; (trX^2)^2 coeff -1.16e-03 (expected tau-indep. O(1): -1/720 = -1.39e-03)
+PASS: SU(2) HK tau=0.1: coeff of trX^2 = 1/(2tau) - N/24 got 4.91665996 vs 4.91666667; (trX^2)^2 coeff -1.28e-03 (expected tau-indep. O(1): -1/720 = -1.39e-03)
+PASS: SU(3) HK tau=0.06: coeff of trX^2 = 1/(2tau) - 3/24 got 8.20832742 vs 8.20833333
+PASS: SU(3) HK tau=0.12: coeff of trX^2 = 1/(2tau) - 3/24 got 4.04166363 vs 4.04166667
+   c(d) = (N**2*d - 8*N**2 + 12)/(24*N*d) ; c(4) = -(N**2 - 3)/(24*N) ; c(2) = -(N**2 - 2)/(8*N)
+PASS: c(d) matches B12 claim
+PASS: c(4)=(3-N^2)/(24N)
+PASS: k=-2N c(2) = (N^2-2)/4
+   SU(2): c=-0.020833, dbeta=2Nc=-0.0833, Lambda_HK/Lambda_W=1.2515, Lambda_MS/Lambda_W=19.823, Lambda_MS/Lambda_HK=15.840
+   SU(3): c=-0.083333, dbeta=2Nc=-0.5000, Lambda_HK/Lambda_W=1.8188, Lambda_MS/Lambda_W=28.810, Lambda_MS/Lambda_HK=15.840
+   SU(4): c=-0.135417, dbeta=2Nc=-1.0833, Lambda_HK/Lambda_W=2.0730, Lambda_MS/Lambda_W=32.837, Lambda_MS/Lambda_HK=15.840
+SUMMARY: ALL PASS

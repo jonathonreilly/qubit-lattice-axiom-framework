@@ -1,0 +1,48 @@
+{
+  "original_head": "3fb70ea183fdeedd58e7638abe2a6d5fea508eff",
+  "purpose": "Exact historical recovery, not evidence of current execution or verdict",
+  "originals": [
+    {
+      "original_path": "docs/SCALE_LADDER_GRAVITY_D4CONE_EXACT_WARD_SITE_SCALAR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "original_sha256": "2fe684adc14c7b0eee3fb54030ca494e9d3ae24ab8b6a89f068e0aa689ac693c",
+      "original_head": "3fb70ea183fdeedd58e7638abe2a6d5fea508eff",
+      "original_blob": "0de0e4d237d56055bc28c2520f92ec0d20b312a9",
+      "recovery": {
+        "path": "archive/d4cone_ward_review_2026_10_18/original-recovery.tar.gz",
+        "member": "docs/SCALE_LADDER_GRAVITY_D4CONE_EXACT_WARD_SITE_SCALAR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+        "sha256": "2fe684adc14c7b0eee3fb54030ca494e9d3ae24ab8b6a89f068e0aa689ac693c"
+      },
+      "disposition": "Complete math retained with explicit scope and source corrections",
+      "final_path": "docs/SCALE_LADDER_GRAVITY_D4CONE_EXACT_WARD_SITE_SCALAR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "final_sha256": null
+    },
+    {
+      "original_path": "logs/runner-cache/scale_ladder_gravity_d4cone_exact_ward_site_scalar_2026_10_18.txt",
+      "original_sha256": "33c2f22f14e19cdb59a064f0b770e3c3c73f77a7b251cc62c041e31677dcf640",
+      "original_head": "3fb70ea183fdeedd58e7638abe2a6d5fea508eff",
+      "original_blob": "4eb9437d6066da63c8c190a106b5ddb9d1b7011f",
+      "recovery": {
+        "path": "archive/d4cone_ward_review_2026_10_18/original-recovery.tar.gz",
+        "member": "logs/runner-cache/scale_ladder_gravity_d4cone_exact_ward_site_scalar_2026_10_18.txt",
+        "sha256": "33c2f22f14e19cdb59a064f0b770e3c3c73f77a7b251cc62c041e31677dcf640"
+      },
+      "disposition": "Historical cache retained only for recovery; no current execution evidence",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "scripts/scale_ladder_gravity_d4cone_exact_ward_site_scalar_2026_10_18.py",
+      "original_sha256": "5e35264a5dad816327c98759b9675cabd0c2cd2a29c4b00fce4e863a7c5887de",
+      "original_head": "3fb70ea183fdeedd58e7638abe2a6d5fea508eff",
+      "original_blob": "1bbaa496ff9f13427f34c620833b210e37c73bbc",
+      "recovery": {
+        "path": "archive/d4cone_ward_review_2026_10_18/original-recovery.tar.gz",
+        "member": "scripts/scale_ladder_gravity_d4cone_exact_ward_site_scalar_2026_10_18.py",
+        "sha256": "5e35264a5dad816327c98759b9675cabd0c2cd2a29c4b00fce4e863a7c5887de"
+      },
+      "disposition": "Corrected primary with full-column checks, exact certificate and honest finite diagnostics",
+      "final_path": "scripts/scale_ladder_gravity_d4cone_exact_ward_site_scalar_2026_10_18.py",
+      "final_sha256": null
+    }
+  ]
+}

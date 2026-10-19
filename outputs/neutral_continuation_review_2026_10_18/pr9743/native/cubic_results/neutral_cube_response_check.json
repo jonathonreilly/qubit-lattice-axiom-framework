@@ -1,0 +1,89 @@
+{
+  "ground": -38.19164989239815,
+  "ground_residual": 2.549011258384237e-11,
+  "rows": [
+    {
+      "source": "cubic_plaquette",
+      "variance": 119.34894680730226,
+      "peaks": [
+        {
+          "gap": 3.7635659159706094,
+          "residual": 2.5416056021406025e-12,
+          "weight": 58.336587311838066,
+          "quadrature_energy": 3.763565915973061,
+          "accepted": true
+        },
+        {
+          "gap": 6.797207494806578,
+          "residual": 6.471187045203947e-12,
+          "weight": 13.7981342113848,
+          "quadrature_energy": 6.7972074948035015,
+          "accepted": true
+        },
+        {
+          "gap": 13.739661197472827,
+          "residual": 0.0014814544971268324,
+          "weight": 7.1283850700858284,
+          "quadrature_energy": 13.739661197472802,
+          "accepted": false
+        },
+        {
+          "gap": 17.27574940678464,
+          "residual": 0.8774170635645075,
+          "weight": 4.914096102601576,
+          "quadrature_energy": 17.275749406784573,
+          "accepted": false
+        },
+        {
+          "gap": 15.360285830348886,
+          "residual": 0.19304405399594068,
+          "weight": 4.560320165440963,
+          "quadrature_energy": 15.360285830348829,
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "source": "nematic",
+      "variance": 131.2730267548768,
+      "peaks": [
+        {
+          "gap": 5.315798341170414,
+          "residual": 1.012257324383223e-11,
+          "weight": 36.42059046519459,
+          "quadrature_energy": 5.315798341163417,
+          "accepted": true
+        },
+        {
+          "gap": 6.932304652089293,
+          "residual": 3.049345802276644e-11,
+          "weight": 26.311073737321543,
+          "quadrature_energy": 6.932304652089731,
+          "accepted": true
+        },
+        {
+          "gap": 5.119443487208933,
+          "residual": 2.1607153575519355e-12,
+          "weight": 26.133734316302903,
+          "quadrature_energy": 5.119443487210275,
+          "accepted": true
+        },
+        {
+          "gap": 10.38467740656133,
+          "residual": 3.801896200089863e-06,
+          "weight": 15.728834969758902,
+          "quadrature_energy": 10.384677406561499,
+          "accepted": false
+        },
+        {
+          "gap": 1.4232379553811114,
+          "residual": 4.955818024313263e-12,
+          "weight": 5.36617754448746,
+          "quadrature_energy": 1.4232379553860692,
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "scope": "Finite27physicalqubit cube; direct eigenvector residual checks, no thermodynamic limit"
+}

@@ -1,0 +1,859 @@
+===== runner cache v1 =====
+runner: scripts/native_bulk_segment_resonance.py
+runner_sha256: a1f380d480825a87d074587095e71c3f05f6c61fe0a7336996a7cb8a4731e3ae
+input_fingerprint_sha256: 296470cc8b6007373d3458a4f7c2bd6d251646bb78356c036acab05c301ba43a
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 2.18
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-f8fm2zj7
+Executing child: ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-f8fm2zj7/native/neutral_bulk_source_check.py']
+{'shape': [5, 5, 9], 'physical_spins': 225, 'orbit_norm2': 0.9999999999999996, 'source_norm2': 2.0, 'errors': {'host_plus_interval': 0.0, 'interval_2': 0.0, 'interval_3': 0.0, 'frozen_separated': 0.0, 'physical_source': 0.0}, 'source_coefficient': '-sqrt(2) lambda', 'K1_hopping': -2}
+[PASS] child:neutral_bulk_source_check
+Executing child: ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-f8fm2zj7/native/neutral_bulk_second.py']
+{
+  "ell": 3,
+  "edges": 441,
+  "rows": [
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            0,
+            1,
+            2
+          ]
+        ]
+      ],
+      "coefficient": "-5/2"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            -2,
+            -1,
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            -2,
+            -1,
+            0,
+            1,
+            2
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            2
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            2
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            0
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    }
+  ],
+  "elapsed": 0.11427879333496094,
+  "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+}
+{
+  "ell": 4,
+  "edges": 490,
+  "rows": [
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ]
+      ],
+      "coefficient": "-5/2"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            -2,
+            -1,
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            -2,
+            -1,
+            0,
+            1,
+            2,
+            3
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            2,
+            3
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    }
+  ],
+  "elapsed": 0.1384110450744629,
+  "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+}
+{
+  "ell": 5,
+  "edges": 539,
+  "rows": [
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ]
+      ],
+      "coefficient": "-5/2"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            -2,
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            -2,
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            2,
+            3,
+            4
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            0,
+            1,
+            2
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    }
+  ],
+  "elapsed": 0.16841793060302734,
+  "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+}
+{
+  "ell": 6,
+  "edges": 588,
+  "rows": [
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      ],
+      "coefficient": "-5/2"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            -2,
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            -2,
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    },
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        ],
+        [
+          1,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        ]
+      ],
+      "coefficient": "-1/8"
+    }
+  ],
+  "elapsed": 0.20072293281555176,
+  "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+}
+[PASS] child:neutral_bulk_second
+Executing child: ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-f8fm2zj7/native/neutral_bulk_resonance.py']
+{
+  "G": [
+    -0.2817722049865238,
+    -0.08706810029134317
+  ],
+  "self_energy": [
+    -1.127088819946095,
+    -0.34827240116537267
+  ],
+  "scattering_length": [
+    -0.9765497711071192,
+    -0.7885999750442362
+  ],
+  "endpoint_length": [
+    1.9765497711071192,
+    0.7885999750442362
+  ],
+  "rows": [
+    {
+      "lam": 0.2,
+      "length": 15.874010519681992,
+      "spacing_scale": 0.0015874010519682004,
+      "width": 0.00015771999500884727
+    },
+    {
+      "lam": 0.1,
+      "length": 31.74802103936398,
+      "spacing_scale": 0.00019842513149602505,
+      "width": 9.857499688052955e-06
+    },
+    {
+      "lam": 0.05,
+      "length": 63.49604207872796,
+      "spacing_scale": 2.4803141437003134e-05,
+      "width": 6.160937305033097e-07
+    },
+    {
+      "lam": 0.025,
+      "length": 126.99208415745592,
+      "spacing_scale": 3.1003926796253918e-06,
+      "width": 3.8505858156456854e-08
+    }
+  ],
+  "scope": "Host-plus-string coefficient model only; not native resonance proof"
+}
+[
+  {
+    "lam": 0.3,
+    "N": 148,
+    "energy": [
+      -3.958216739645841,
+      -0.0012813312043238646
+    ],
+    "prediction": [
+      -3.9582058934052355,
+      -0.0013307624578871484
+    ],
+    "width_over_lambda4": 0.09491342254250848,
+    "complex_readout_residue_over_lambda5": [
+      0.024148828435932388,
+      0.0923364073581532
+    ],
+    "asymptotic_residue_over_lambda5": [
+      0.02073497092559981,
+      0.0962633906405661
+    ],
+    "residual": 1.1174702701799251e-15
+  },
+  {
+    "lam": 0.2,
+    "N": 222,
+    "energy": [
+      -3.9814332321971246,
+      -0.00038762916146563314
+    ],
+    "prediction": [
+      -3.981430704070661,
+      -0.0003942999875221182
+    ],
+    "width_over_lambda4": 0.09690729036640827,
+    "complex_readout_residue_over_lambda5": [
+      0.02236877133754614,
+      0.09451195188063859
+    ],
+    "asymptotic_residue_over_lambda5": [
+      0.02073497092559981,
+      0.0962633906405661
+    ],
+    "residual": 1.2530239807670987e-15
+  },
+  {
+    "lam": 0.1,
+    "N": 444,
+    "energy": [
+      -3.9953593139546206,
+      -4.907483768621829e-05
+    ],
+    "prediction": [
+      -3.995359141656971,
+      -4.9287498440264775e-05
+    ],
+    "width_over_lambda4": 0.09814967537243657,
+    "complex_readout_residue_over_lambda5": [
+      0.021167046017181064,
+      0.09582428861093004
+    ],
+    "asymptotic_residue_over_lambda5": [
+      0.02073497092559981,
+      0.0962633906405661
+    ],
+    "residual": 1.1777761236545542e-15
+  },
+  {
+    "lam": 0.05,
+    "N": 888,
+    "energy": [
+      -3.9988399796521326,
+      -6.154235729871651e-06
+    ],
+    "prediction": [
+      -3.9988399686191562,
+      -6.160937305033097e-06
+    ],
+    "width_over_lambda4": 0.0984677716779464,
+    "complex_readout_residue_over_lambda5": [
+      0.020845337658593723,
+      0.09615338187940324
+    ],
+    "asymptotic_residue_over_lambda5": [
+      0.02073497092559981,
+      0.0962633906405661
+    ],
+    "residual": 9.65076877791604e-16
+  },
+  {
+    "lam": 0.025,
+    "N": 1777,
+    "energy": [
+      -3.999710015751073,
+      -7.699069390833287e-07
+    ],
+    "prediction": [
+      -3.999710015055403,
+      -7.701171631291371e-07
+    ],
+    "width_over_lambda4": 0.09854808820266606,
+    "complex_readout_residue_over_lambda5": [
+      0.020762814936179666,
+      0.09623585020681363
+    ],
+    "asymptotic_residue_over_lambda5": [
+      0.02073497092559981,
+      0.0962633906405661
+    ],
+    "residual": 1.0466396651200193e-15
+  }
+]
+[PASS] child:neutral_bulk_resonance
+Executing child: ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-f8fm2zj7/native/neutral_bulk_resonance_dynamic.py']
+{
+  "G0": [
+    -0.281772204986684,
+    -0.08706810029145133
+  ],
+  "rows": [
+    {
+      "lam": 0.3,
+      "N": 148,
+      "converged": true,
+      "residual": 5.282716045548288e-13,
+      "energy": [
+        -3.95821742630802,
+        -0.0013256319320755121
+      ],
+      "width_over_lambda4": 0.09819495793151943,
+      "residue_over_lambda5": [
+        0.021829795501856944,
+        0.09559133108709386
+      ]
+    },
+    {
+      "lam": 0.2,
+      "N": 222,
+      "converged": true,
+      "residual": 7.014552863346107e-11,
+      "energy": [
+        -3.981433170294649,
+        -0.00039352603952831064
+      ],
+      "width_over_lambda4": 0.09838150988207764,
+      "residue_over_lambda5": [
+        0.021245961154532967,
+        0.09594164363388191
+      ]
+    },
+    {
+      "lam": 0.1,
+      "N": 444,
+      "converged": true,
+      "residual": 5.668674046278199e-12,
+      "energy": [
+        -3.9953593081909156,
+        -4.9260206456117596e-05
+      ],
+      "width_over_lambda4": 0.09852041291223518,
+      "residue_over_lambda5": [
+        0.020868863924969623,
+        0.09617716697572921
+      ]
+    },
+    {
+      "lam": 0.05,
+      "N": 888,
+      "converged": true,
+      "residual": 1.86581092456576e-09,
+      "energy": [
+        -3.9988399794256746,
+        -6.160035706717122e-06
+      ],
+      "width_over_lambda4": 0.09856057130747393,
+      "residue_over_lambda5": [
+        0.020769202514271636,
+        0.09624110521070825
+      ]
+    },
+    {
+      "lam": 0.025,
+      "N": 1777,
+      "converged": true,
+      "residual": 5.5692109822162856e-09,
+      "energy": [
+        -3.9997100157433794,
+        -7.700882292692551e-07
+      ],
+      "width_over_lambda4": 0.09857129334646463,
+      "residue_over_lambda5": [
+        0.020743621570776808,
+        0.09625772681443145
+      ]
+    }
+  ],
+  "scope": "Frequency-dependent analytically continued host-plus-linear-string coefficient model; higher native orders not included"
+}
+[PASS] child:neutral_bulk_resonance_dynamic
+Executing child: ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-f8fm2zj7/native/neutral_bulk_dispersion_check.py']
+finite-regulator dispersion PASS 0.001 discrepancy 9.170684099936036e-09 aQ (-0.08893224967293983+0.01443861665862454j)
+finite-regulator dispersion PASS 0.0001 discrepancy 9.10581560133583e-09 aQ (-0.08900552697868333+0.014485932961811549j)
+finite-regulator dispersion PASS 1e-05 discrepancy 9.48310342111564e-09 aQ (-0.08901285775568696+0.014490669791421914j)
+{'eta': 1e-05, 'G': [-0.28177167028385747, -0.08706856362905505], 'Gprime': [-0.04633364001832563, -0.053470304384600764], 'GQ_numeric': [-0.006027292373533832, 0.007925754916954242], 'GQ_formula': [-0.006027285969219445, 0.007925761910809239], 'a': [-0.976543369448676, -0.7885996852575411], 'aQ': [-0.08901285775568696, 0.014490669791421914], 'Gd0': [1.4157540657300113e-15, 1.2660529907569388e-15], 'Gs_hardcore': [-0.0732875284411313, -0.22606107838133987], 'channel_den_d': [0.8729133188645701, -0.3482742545162202], 'channel_den_s': [1.7068498862354748, -0.9042443135253595]}
+[PASS] child:neutral_bulk_dispersion_check
+[PASS] P9736-C001 physical source normalization
+[PASS] neutral_bulk_second:cardinality
+[PASS] neutral_bulk_second:identities
+[PASS] P9736-C002 second order exact rows
+[PASS] P9736-C002 second order exact rows
+[PASS] P9736-C002 second order exact rows
+[PASS] P9736-C002 second order exact rows
+[PASS] neutral_bulk_resonance_dynamic:cardinality
+[PASS] neutral_bulk_resonance_dynamic:identities
+[PASS] P9736-C003 specified host edge product
+[PASS] P9736-C004 frozen boundary residual
+[PASS] P9736-C005 dynamic pole convergence
+[PASS] P9736-C006 conditional width coefficient
+per_site: one physical qubit; bulk segments do not cut column ends
+per_mode: native source and tension motivate conditional outgoing resonance
+per_block: growing length, width and residue remain partial-model results
+lattice_wide: higher-order/uniform native control and scalar identification open
+[PASS] fresh-artifact:neutral-bulk-source-normalization-independent.json
+[PASS] fresh-artifact:neutral_bulk_second.json
+[PASS] fresh-artifact:neutral_bulk_resonance.json
+[PASS] fresh-artifact:neutral_bulk_resonance_dynamic.json
+[PASS] fresh-artifact:neutral-bulk-dispersion-independent.json
+AGGREGATE_RESULT {"conditional_model": {"dispersion": [{"G": [-0.2817187325561466, -0.08711442212585749], "GQ_formula": [-0.0060266316474998465, 0.0079211038581365], "GQ_numeric": [-0.0060266378554274525, 0.007921097108093411], "Gd0": [9.076452704263292e-18, 5.093857107031414e-17], "Gprime": [-0.04630978789943452, -0.05347459841098523], "Gs_hardcore": [-0.07328631862000322, -0.22602346046353533], "a": [-0.9759098485180235, -0.7885708500877833], "aQ": [-0.08893224967293983, 0.01443861665862454], "channel_den_d": [0.8731250697754136, -0.34845768850342995], "channel_den_s": [1.706854725519987, -0.9040938418541413], "eta": 0.001}, {"G": [-0.2817668579388783, -0.08707273355907966], "GQ_formula": [-0.006027226518762273, 0.007925338372195223], "GQ_numeric": [-0.006027232643535108, 0.007925331634017763], "Gd0": [5.14942018252139e-16, 5.772347830095354e-16], "Gprime": [-0.046331471642291344, -0.053470695165341864], "Gs_hardcore": [-0.07328741859838231, -0.22605765824046303], "a": [-0.9764857567314006, -0.7885970758327292], "aQ": [-0.08900552697868333, 0.014485932961811549], "channel_den_d": [0.8729325682444868, -0.34829093423631863], "channel_den_s": [1.7068503256064709, -0.9042306329618521], "eta": 0.0001}, {"G": [-0.28177167028385747, -0.08706856362905505], "GQ_formula": [-0.006027285969219445, 0.007925761910809239], "GQ_numeric": [-0.006027292373533832, 0.007925754916954242], "Gd0": [1.4157540657300113e-15, 1.2660529907569388e-15], "Gprime": [-0.04633364001832563, -0.053470304384600764], "Gs_hardcore": [-0.0732875284411313, -0.22606107838133987], "a": [-0.976543369448676, -0.7885996852575411], "aQ": [-0.08901285775568696, 0.014490669791421914], "channel_den_d": [0.8729133188645701, -0.3482742545162202], "channel_den_s": [1.7068498862354748, -0.9042443135253595], "eta": 1e-05}], "dynamic_boundary": {"G0": [-0.281772204986684, -0.08706810029145133], "rows": [{"N": 148, "converged": true, "energy": [-3.95821742630802, -0.0013256319320755121], "lam": 0.3, "residual": 5.282716045548288e-13, "residue_over_lambda5": [0.021829795501856944, 0.09559133108709386], "width_over_lambda4": 0.09819495793151943}, {"N": 222, "converged": true, "energy": [-3.981433170294649, -0.00039352603952831064], "lam": 0.2, "residual": 7.014552863346107e-11, "residue_over_lambda5": [0.021245961154532967, 0.09594164363388191], "width_over_lambda4": 0.09838150988207764}, {"N": 444, "converged": true, "energy": [-3.9953593081909156, -4.9260206456117596e-05], "lam": 0.1, "residual": 5.668674046278199e-12, "residue_over_lambda5": [0.020868863924969623, 0.09617716697572921], "width_over_lambda4": 0.09852041291223518}, {"N": 888, "converged": true, "energy": [-3.9988399794256746, -6.160035706717122e-06], "lam": 0.05, "residual": 1.86581092456576e-09, "residue_over_lambda5": [0.020769202514271636, 0.09624110521070825], "width_over_lambda4": 0.09856057130747393}, {"N": 1777, "converged": true, "energy": [-3.9997100157433794, -7.700882292692551e-07], "lam": 0.025, "residual": 5.5692109822162856e-09, "residue_over_lambda5": [0.020743621570776808, 0.09625772681443145], "width_over_lambda4": 0.09857129334646463}], "scope": "Frequency-dependent analytically continued host-plus-linear-string coefficient model; higher native orders not included"}, "frozen_boundary": {"G": [-0.2817722049865238, -0.08706810029134317], "edge_product": 0.07321431535203451, "endpoint_length": [1.9765497711071192, 0.7885999750442362], "frozen_boundary_controls": [{"N": 148, "asymptotic_residue_over_lambda5": [0.02073497092559981, 0.0962633906405661], "complex_readout_residue_over_lambda5": [0.024148828435932388, 0.0923364073581532], "energy": [-3.958216739645841, -0.0012813312043238646], "lam": 0.3, "prediction": [-3.9582058934052355, -0.0013307624578871484], "residual": 1.1174702701799251e-15, "width_over_lambda4": 0.09491342254250848}, {"N": 222, "asymptotic_residue_over_lambda5": [0.02073497092559981, 0.0962633906405661], "complex_readout_residue_over_lambda5": [0.02236877133754614, 0.09451195188063859], "energy": [-3.9814332321971246, -0.00038762916146563314], "lam": 0.2, "prediction": [-3.981430704070661, -0.0003942999875221182], "residual": 1.2530239807670987e-15, "width_over_lambda4": 0.09690729036640827}, {"N": 444, "asymptotic_residue_over_lambda5": [0.02073497092559981, 0.0962633906405661], "complex_readout_residue_over_lambda5": [0.021167046017181064, 0.09582428861093004], "energy": [-3.9953593139546206, -4.907483768621829e-05], "lam": 0.1, "prediction": [-3.995359141656971, -4.9287498440264775e-05], "residual": 1.1777761236545542e-15, "width_over_lambda4": 0.09814967537243657}, {"N": 888, "asymptotic_residue_over_lambda5": [0.02073497092559981, 0.0962633906405661], "complex_readout_residue_over_lambda5": [0.020845337658593723, 0.09615338187940324], "energy": [-3.9988399796521326, -6.154235729871651e-06], "lam": 0.05, "prediction": [-3.9988399686191562, -6.160937305033097e-06], "residual": 9.65076877791604e-16, "width_over_lambda4": 0.0984677716779464}, {"N": 1777, "asymptotic_residue_over_lambda5": [0.02073497092559981, 0.0962633906405661], "complex_readout_residue_over_lambda5": [0.020762814936179666, 0.09623585020681363], "energy": [-3.999710015751073, -7.699069390833287e-07], "lam": 0.025, "prediction": [-3.999710015055403, -7.701171631291371e-07], "residual": 1.0466396651200193e-15, "width_over_lambda4": 0.09854808820266606}], "rows": [{"lam": 0.2, "length": 15.874010519681992, "spacing_scale": 0.0015874010519682004, "width": 0.00015771999500884727}, {"lam": 0.1, "length": 31.74802103936398, "spacing_scale": 0.00019842513149602505, "width": 9.857499688052955e-06}, {"lam": 0.05, "length": 63.49604207872796, "spacing_scale": 2.4803141437003134e-05, "width": 6.160937305033097e-07}, {"lam": 0.025, "length": 126.99208415745592, "spacing_scale": 3.1003926796253918e-06, "width": 3.8505858156456854e-08}], "scattering_length": [-0.9765497711071192, -0.7885999750442362], "scope": "Host-plus-string coefficient model only; not native resonance proof", "self_energy": [-1.127088819946095, -0.34827240116537267]}}, "inputs": {"archive/neutral_composite_continuation_review_2026_10_18/MANIFEST.json": "6b4779cb5b8414b5c915833c99a48d364cfb204125e6fa20e46675a597c11abb", "docs/NATIVE_BULK_SEGMENT_RESONANCE_NOTE_2026-10-18.md": "06921b785416b79bbc6aa1e608e88335cbcfe38e5df936820ed847902c25bbe7", "docs/NATIVE_COLUMN_COLLECTIVE_MODE_NOTE_2026-10-18.md": "8851c4ec44c555eb7bf6da9f43fab2fd40947278f7c48b407b082c920b23c1db", "docs/NATIVE_COLUMN_PLAQUETTE_SELECTION_NOTE_2026-10-18.md": "ee1e194b55505c5991dd7fe5466868491f5cedaa48b5637096265257b227493a", "docs/NATIVE_CORRECTED_FAST_STRIP_NOTE_2026-10-18.md": "ffa4a8e86f42fc5ad7bcb03fb594f5b0008c5e2bdc8dba32bf529703ca916988", "docs/NATIVE_CUBIC_SCALAR_RESPONSE_NOTE_2026-10-18.md": "86ef07777da80c1b017046a311a27395ff3348a0e78e670e0b93531a085e8640", "docs/NATIVE_DERIVED_COLLECTIVE_INTERACTION_NOTE_2026-10-18.md": "4ce6d968a21610a1cb17ad175c1329a4a4b222f811e584af7ad560554beaaf7e", "docs/NATIVE_FOUR_COLUMN_COMPETITION_NOTE_2026-10-18.md": "02f7a446b6eaaa91dad22efa49aecb7c38fbe5ae92c99cea359eddded80b4ea5", "docs/NATIVE_INFRARED_READOUT_NOTE_2026-10-18.md": "6c35a1d389419a7474b91425cceb4c4d27db07b8bb05d729b024fb127cc741ca", "docs/NATIVE_LARGE_COLUMN_DYNAMICS_NOTE_2026-10-18.md": "3b9abe4bc6b63a53d3268dc8cfaf26103d8e69ec44dfea983487ed38bf5278b1", "docs/NATIVE_LOCAL_NORMALFORM_NOTE_2026-10-18.md": "30005769d1119622c1aec84c82f58c6da262ce19d8118320fdecb8a081ab7c0b", "docs/NATIVE_LOCAL_NORMAL_FORM_NOTE_2026-10-18.md": "f7a21feeee63c90fd36024b292362c5a1b542689d2bb6a554433a59a7b1908ec", "docs/NATIVE_LOOP_INTERACTION_NOTE_2026-10-18.md": "3c48222d7541aebe38961cb6ea8b75a2a50d1eec8b750320a3600354db221254", "docs/NATIVE_NEUTRAL_DOMAIN_RESONANCE_NOTE_2026-10-18.md": "07c1d1cee2e5d9166ee5c5111cf4fd40281236de15ffca78a40647a6a2b285f3", "docs/NATIVE_SCALAR_BAND_LOCAL_PROOF_NOTE_2026-10-18.md": "1f7fd979178a307cf94967e40a515f02e4fd770ccd70d4144459607ccbd1884a", "docs/NATIVE_SLOW_BULK_COMPOSITE_NOTE_2026-10-18.md": "82861da6b7c723965f97a27cd5700903ad9e149f5105254be40dd342e43d39f2", "docs/NATIVE_SLOW_COMPOSITE_CONTROL_NOTE_2026-10-18.md": "b410099638aa3fdd190b02d78540bb891f14150622789a6c23338b51b8586d62", "docs/NATIVE_ZONE_BOUNDARY_COMPOSITE_NOTE_2026-10-18.md": "2b93dd1734f8ab3b6bc90c63594e108b41ab6fc810bcd7dc31067462956b50ee", "docs/work_history/repo/review_feedback/NEUTRAL_CONTINUATION_BOUNDARIES_2026-10-18.md": "7f996bba4dd3089083bb6fb25167d3edc8cfd423c99287ad25d5b422e6c0e2b3", "outputs/neutral_composite_continuation_review_2026_10_18/INPUT_CLOSURE.json": "759e83c41f9a2ac11ace61240389e14fde3abe79504cda33047665cc6ec8ae5b", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_boundary_vertex.py": "37452d09ab01bf6a8a76352c367351069ab6a95622393ef647cfe306328e0ee7", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_effective.py": "f789866be82331c5d06b9115950c6a28006aa1cba1027359186e7a576df167a1", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_fourth.py": "a3769e366bc7286ddeb2f178e6ca6824a10a91fc303cab77756c67fb83e16204", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_linked_fourth.py": "1b9de9a6d805b8c1c863df694f665f182147e579b5ac39d3db4ae49a098a232b", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_sixth.py": "b1ef959a9fa4e1280a418c15b9646dade2d0fd4d8a63e25a14ffc3e9b5ae5b8a", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_sixth_exact.py": "c6731fddbcbbbcfe91d8c2a9e87786de99dae3d1f571a92c6ea28bc0944daba2", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_u1_probe.py": "edd50df2b5e01fe786434fe5477fd2089fa0b9265cdfec27bfe8b623d02812bd", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_tube_rung_control.py": "7cc12711321e26089016c3096bfc8294ec3090d02e98202f275a04161a739043", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_anisotropy_comparison.py": "f487c38663301cc8fb23f711e8e6a726f4d80377485662f2dcb8f738b48f79b9", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_open_xy_comparison.py": "afae3959c5b4f0cf6c43659123c1a6936014fd2429ec39f63c39982bc186101c", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_rung_discrete_symmetry.py": "134c049afcdb5a1f776663e7247bd7c693947fddfd8c8ab02ab28643a7bdc04e", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_xy_readout.py": "3be0418e459ec56569621fad2730203333f0989aeb7d9bd71547a59bb633f366", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_exact_internal_factor.py": "e330a678e8a84a40acaf8cdf4e6dd5fcb45d342487bbedc1e66d7f1d1ff362c0", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_spectrum.py": "4fb0a54b26c387eff517b35bf959e88042b741e4fbadcd27fcf061cb2d0f7636", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_symmetry.py": "768726d6736a5d9b2cb5b437c1daafb85715b9040d041c9a222a31f141d0d187", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_tunnel.py": "f7e6f7865c6ba6e942db3311b5dc6b4287e7ed67e3cc2986aee002c94bfbfd5d", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_dark_bound_math.py": "cd821809563dbf58bc94cf19b6c304eaf06685f06460e7b53e92b16aef5cb6b2", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_fourth_action.py": "08c2bbde3e51f48168afa5587eec4564115de1bcacaf823a67b919d01d6acb7a", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_fourth_diagonal.py": "2fee020468cad24902e2659d22b77e45b920852cca30fd34b2c55b3b3130e0a4", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_rational.py": "0516f65706926fd5235d7b23a297fa3b038cde4b0cd1f176e8c5d62bea5e896f", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_resonance.py": "cd14169b2b9d5a0ff5f93d3c88cbaa1a29bd96876b03ad5ce2d3e4ce0b411193", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_third.py": "cc0afa75619e9abee8d65cb780fb1da9809460493fea4ebd7e551fb21571cff4", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_fourth_overlap.py": "ce2abe5f6441e85cf431034fbea7241e6d01f58a86c70618bbf9f5d77b790bac", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_fourth_rational.py": "d6c8af36a836d1eb1fdd65e489ea7a6bb8ca02f92b8cdef58c0be53305afb9c4", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_full_third_check.py": "bf31f58d4b47efeba270c3aac658d598ef3919d43b5df772feb24ecb3e4f995b", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_physical_q_source.py": "1e34c264518527172fe81070b4bd9f0c622f8aae3756fbf581b80c70abe4a6f1", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_q_certificate.py": "7117d45884550d9e91291f663b204c5a45f8d3bfdda85eaf3ade38b54f46a540", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_source_dressing.py": "7676ef18c16301fcb9eb33983b5a949bddab7091e6bac37ce43cca380d647b9d", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_band_scalar_reflection_sector.py": "c0a731c4b75ada19bfb344d062c6585d0d97498652afc87f5f1e8d9d46e62869", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_domain_boundary_local.py": "a64c6085f6998e5d2fe7d7b56a7eadada6032631ea3713785ff2901d2ea5d5d4", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_scalar_explicit_basis.py": "638b21aba1240d49871bbd6574f16e2ddda099b230dc0b8321d99f819d20e5d9", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_wall_connected.py": "a12994a5231b55f119c50b9c687b40ec9586ee90ddc991df9c79390669a0a802", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_wall_full_kernel.py": "f447dab9fb716b0c1ece4b5b59eedcc44dc0a7a7a77fdc8d09017641d4d69a20", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_scalar_explicit_basis.py": "638b21aba1240d49871bbd6574f16e2ddda099b230dc0b8321d99f819d20e5d9", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_boundary.py": "6cb5c73f7b785b581c2c0bb7f8fdefa3b579e54820ad4bebfa55f5dd39153f69", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_exact_math.py": "47b6ba85b485650c6603f5b2febe447feaba6a43ba569220283b11a5de527632", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_large_feature.py": "2e24443e2125f13a664f03c87a96f951a14829b5ac98d3d4ca9cd69f720f6f65", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_local_second.py": "971a7b17e341a7324fd1a9fb524957ee7a173075f20d0af13a6014012c3feb75", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_local_normal_form.py": "d7f22b3537c28647afb5b78b94d9d8ca4a23f33e1d2b48096620ac0882d82848", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_packet_control.py": "26c4f6e01a85ed00374eb91c7e9e9f911f63052233b643e325b81c80cf4396cc", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9730/neutral_column_parity_native.py": "2b6e8560fd6c2cf15d83448b3746358bef937aa88c366e5293d7c47ce0ee5049", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9730/neutral_column_plaquette.py": "94aaba329f92a322e6cc52c98138670e5edf4a35e571989a461ae63803361a93", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_column_six_mode.py": "139716946d77aea3947332b8345849e1a0990db870e931b7b56d48c19a56c01e", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_column_source_derivative.py": "171ee42c797ed3b41caca0543d3928f006a7bf76548da10d0069a8963f6ba1a3", "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_rectangle_six.py": "1719b71435e78ade10338820dd32e1688a1dd588198e295b80505bbd92a379c8", "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9717/tube_4.json": "47311399341ad594d1438eb1da0fb382ea9e68df234de16fd9086f6b5fccd7e8", "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9720/neutral_tube_anisotropy.json": "27f1fe81178acb1b990d0a7beb07dcad2b9963a4be7e605650169b1d9876b68a", "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9724/neutral_kink_dark_fourth_action.json": "4a162174f1c3db2d9619aff9ba1f6503aa8cce4976a68448bfb9ea8b9b43f63b", "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9724/neutral_kink_fourth_overlap.json": "aa18eb4c162be11a20436e9fdfb9ff4b7c4cebf8aa9a651234ad5b7f4b6f7fbb", "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9726/neutral_native_periodic_pole.json": "b72485e438609cecd638ff703bc9ece8e934e5a4cbaef75ffa85a4bda9afd8dd", "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9727/neutral_native_periodic_pi_pole.json": "57c6f13b35ac717897c75581c4066602bbd1baa1757b31a7e3bb608763ec47b9", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/DEFERRED_TERMINAL_PROMOTION.md": "8f860d706b5da679553d32c0fcb461ea23a81eb07bb6128b194a255cb099f9f6", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/DERIVED_RUNG_COLLECTIVE.md": "e575dc62726b3e5b71c6d64374935c1cf0061c2c8a5e4f987e06e4486df07d0f", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_BOUNDARY_VERTEX_CHECK.md": "15503895f71fb0dc2e3a05e12e29dfffb492f845e8540316fde6a4acfcd85b0f", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_DERIVED_COLLECTIVE_REVIEW.md": "8b90f8bd4ee5b737e1b43098a55575866422884169a27fdfa7bfcd14c88b12a1", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_RUNG_EFFECTIVE_CHECK.md": "530ca8bb4889850014e77018c6e988e95b47a02e32842406288d256ce43336c9", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_RUNG_HIGHER_CHECK.md": "37fa4ca4cd9045614589afa10b1f9e04cf573ea4f2eb058f9f52cf7d6e6f1534", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_SIXTH_CHARGE_CHECK.md": "a1cb524ec80bf85051a0c647e0363130ef8953a82e09319c8d99c6a1755f7d0d", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_TUBE_RUNG_CHECK.md": "79d8b6154242c54e609520283a3f6780e0ff9230c5b7997437ecae4f61771c29", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/NATIVE_BOUNDARY_VERTEX.md": "924f5a86a06e31bd32c649791d30ae19d4c6ab16adeda893dc701296c18f5713", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/SIXTH_ORDER_COLLECTIVE_PROCESS.md": "c8182c4cee5440404942856653e98ae9864da539964b20f2b4af6f0ee8f2a62e", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/TUBE_RUNG_REDUCTION.md": "1da0424f2b0cfc1aef429f58ef02577e01c608c81e72883cedaac6f208a8fa26", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/DEFERRED_TERMINAL_PROMOTION.md": "847e7098026ed75152de1fed0df4a4aafd7e2ab3c13ba6f3b5fce3dce83b6ddc", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/DERIVED_INFRARED_ROUTE.md": "32322347ddb6c8fdbae6121af7c072c2d77a5654e64a3f60f518d1ee43ee9b64", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_ANISOTROPY_CHECK.md": "ea587203f8bdff6f39d294f99668d812d4b215a22ae292342cc5d5c5de26de70", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_DISCRETE_INFRARED_CHECK.md": "34ef05b5605dd6c16b9bb884014b01136f83b892d245eefe08ad659a5efa91f8", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_INFRARED_FINAL_REVIEW.md": "43e0da90813f1a1ea4ca2c119e249b35126e3a5ceeeffcb27b4a34a9c45585a7", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_XY_READOUT_CHECK.md": "a05c740cae85adf9efcf2ccd796ce0de7402872a2f1b26e76bc35fb7007dac07", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/DEFERRED_TERMINAL_PROMOTION.md": "16a3129fd3345ca0df3e04bc31fa1ce38f21d3fec5d8710c312a3286138b56f4", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/EXACT_INTERNAL_FACTOR.md": "d906c2bf12a1c73d1e8023056a3d48cbdf0c0aec45dcfa697986c617803cd4fd", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_EXACT_INTERNAL_FACTOR_CHECK.md": "1766683ad2f096e02731fc7bc9bdbde0ecb037725fd5980a3f6036616a3f626f", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_LARGE_COLUMN_AUX_CHECK.md": "79a880d0c169a8f959b447637d93888fab1a495108fc9b9b512be4f1ba3e90c0", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_LARGE_COLUMN_FINAL_REVIEW.md": "71beb7ed4598c2a185ac9ab69818e4cb41dabe9c3952eaadbf150130ab47bcc7", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_STRONG_READOUT_CHECK.md": "006cce2a1d7ab9be9b43717a7b5fc8b53319eead2a8e96176737dcb2d79e04f5", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_STRONG_TUNNEL_CHECK.md": "fa73dcc0c5b5da75f449ec1ba68d46a4e25fce7b51966378e8c46ca36624a5c0", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/STRONG_COLUMN_FEATURE.md": "7dbfd13f194ffeb1eb658e96348f8d08f1eb89c7818b1c759df6601ced344b23", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DARK_BOUND_CHECK.md": "8e62b8ac2bd748604f621a5818afce3c3e603bc7c358bef1d6f7e73a63a69fe1", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DARK_FOURTH_CHECK.md": "68cef4611a5aea9299f1ef21a095b3b7b5ec45c3fc044dd2774174bcdc185759", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DOMAIN_RESONANCE_FINAL_REVIEW.md": "2e31d833d07928d527281d3f2b1dd6e30929e4505f62d9c8be3c1d30835dd7ff", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_FOURTH_CHECK.md": "15e2e293a38470f35c77ce010120ea1004977cddab90722b1c406ab077d8bd83", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_MOMENTUM_CHECK.md": "302cbc8505f2db6e49a2dd5ee5920a0259dbc5b57677a09fc8b5977b45d725c4", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_RESONANCE_CHECK.md": "10544bcf1262c27c674711f135badfa9a17f8f9c448a4472b7d2701e4c152042", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_SECOND_CHECK.md": "aa7bea68d4dcb14aabe72ebb542541d122786f7ca11ebbee03d9a06e52fda59c", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_THIRD_CHECK.md": "e86139e1ccc07bfb8cbc132d7013d0f14a1a766d8dfed6e251253f838759e5ad", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_LOCAL_BOUNDARY_CHECK.md": "c29312e26b0d2d3a069bb0b68b6ff6fa9f21d223587c24389f4a669cd2ff8c72", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_LOCAL_WALL_CHECK.md": "a987c2748c911243ffe47aa98acaba11cfc7ef6e97b31ad37b09cfdd74d4346f", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_NATIVE_PERIODIC_POLE_CHECK.md": "51b8fb114c0b49b6aa97957c3414c51b1dd4a20de38af2f99ec28b82eb634709", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_SCALAR_BAND_CHECK.md": "a8a7f171cb8441ed835a1a25781be574b77504926cd31fde93973cf0563b0822", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/LOCAL_PROOF_FINAL_REVIEW.md": "5804aa9df1eb21eba664f097b555a7f2fdd8d19e69cc34423832cfe325056c01", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/DEFERRED_TERMINAL_PROMOTION.md": "b0ad74b2b5e10139c41e5bf52d340a9b842ea9887759bec7dba511a0b00db71e", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_NATIVE_PI_POLE_CHECK.md": "c8e9034b56b61a2f6fd73df2e7efc6754e3d125f7adb0e13aeab3b937a1c0ae1", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_BOUNDARY_CHECK.md": "917c92a074fd71c3ce48b608a8a9d721a5bd4ee9cff74ec363caa31c73ff1487", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_CROSSOVER_CHECK.md": "64c26afee7665e1081466b133d223a245e94346fdd1acec8dac9532deb402a3d", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_LARGE_FEATURE_CHECK.md": "d3a62e6e814b3dbb2c0e040632a95ce6a973139d69dd2c53e357baf5b2d1b885", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_LOCAL_SECOND_CHECK.md": "9b65eda2f5c6e50e5386db05f80dfdfb3ee41c0a28a3d37badd722821c9dbcad", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/ZONE_BOUNDARY_FINAL_REVIEW.md": "5d17e46e71561ee2e508bc1a1ede853f113042beefed7e90144067a166c133f4", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_PACKET_FILTER_CHECK.md": "c246d5006d2c39fbaa206c18a8783f0b6d8040bff17511aee34ed53a2215541e", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_SOURCE_GRAM_FIBER_CHECK.md": "68afe5d8e0225eb3d5c07826134ee217264f0a6967fb281833f71bd65f04d0e2", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_UNIFORM_NORMAL_FORM_CHECK.md": "f176d9852cee9b58809e760cf2f106a40c6637daa23e49a9a050d21c2896ce68", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/NORMAL_FORM_FINAL_REVIEW.md": "3ff4aa1a356a219cf38d6b3f66779d416d62ac3f7b0bc0fa44a207f06252d09a", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/COLUMN_PLAQUETTE_FINAL_REVIEW.md": "e444b36fa4fc2fafb9ca688930f0fea2e83cf51b08a3438958bfe8414b34997c", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/INDEPENDENT_COLUMN_PLAQUETTE_CHECK.md": "3226fe3119ca908b5a19d5f11250e2d839846fc18f4ec429ef2120eb69a6234d", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/INDEPENDENT_COLUMN_READOUT_CHECK.md": "afd9dc9fbe284e95d4cc0432bcf92c666e66b1e7d8a793888499ccb1c0d53466", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/COLUMN_COLLECTIVE_FINAL_REVIEW.md": "7f2eabb1710a9a987b01137ee19463a4d5fe03b571862cf02b79e86ad2b3d595", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/DEFERRED_TERMINAL_PROMOTION.md": "59482b9881e8c3637bef6e53000b70323b270bd5a7045e194aec7b05b4f10855", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_COLUMN_SOURCE_CHECK.md": "9f6d1ded1f717bffe80bb8f7683f49a518044eb395d31f258d8c7670f11dafb7", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_COLUMN_STAR_CHECK.md": "bc09200504eb37f3934bb46e097892b62bae67302e3288718d053fee6fb0e1ae", "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_SIX_LOOP_CHECK.md": "9e2861d6adeac6a9f62cbbd63c83873a71c85073c5b22331164a62eb08d9783c", "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529", "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1", "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318", "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/neutral_tube_anisotropy.py": "73f488ad7e8029834bccbd755effdf20563ef20d2124a971ddda4510df35c41a", "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529", "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1", "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318", "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_internal_occupation.json": "2d609402878fe5a327b6158e3eed9e0eefb4e735eecb2666cf2893551473c16e", "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_internal_occupation.py": "f687fd8e24bc4a1f7c221c068c7727ceb2df26a0e4dcb66bc77135eb67167bb3", "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/stationary_2x2x8_plus.json": "056ec68a0ece08943d0dd1ed4daa549634a3288bdae75c6c957f9e89697c759c", "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9726/LOCAL_PROOF_PROVENANCE.md": "d66ba8edf4672b901755a1a3214638a2966e1dbae7ed34ae148f298827b4e8f7", "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9726/neutral_native_periodic_pole.py": "1e8db854d23891aa9c561d918308a13d0aa5325c2fdc9e5c0f3ea82fa30a945a", "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9727/ZONE_BOUNDARY_PROVENANCE.md": "8bb5d9128e7fece1798e1f1a8bcb14a550c9c39a49f4f4356637cd94794ea153", "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9727/neutral_native_periodic_pi_pole.py": "7f8fceaca39d26fbabda3342c1eb7a41d4f8c96c5feeefbd8cbf4a04e5c359a5", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/FOUR_COLUMN_FINAL_REVIEW.md": "0a8b3e7ff58e4eb759a1bc3d7a55b9c065972ccd77ee0aaca88df172af857200", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/INDEPENDENT_COLUMN_SOURCE_ALL_LENGTH.md": "47b69350c2ff8fe0c0a8d6083be474d02e933baba10941c62d52fc1b147fcb55", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/INDEPENDENT_FOUR_COLUMN_CHARGES.md": "90c124398784d865eee629b7e7469a08b0936e24b769d889690e693d7038b387", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/INDEPENDENT_FOUR_COLUMN_COEFFICIENT.md": "62e2c161a4b7b7626346baf7172e840c02d75b8e5a7ddf53505b8c2300dcbab4", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/INDEPENDENT_FOUR_COLUMN_DROPLET.md": "2ff9efb517b1c6bddf4ffed23d288b8caa71800ad204ee7b95f23dcf8c3e9203", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/INDEPENDENT_FOUR_COLUMN_QUOTIENT.md": "33a9c8fc5eef8a08701a694ea67bd64f6ed7df999f5fc087f0b65b8ef48c8f11", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/column_four_results/PROVENANCE.json": "db617f5c9a188723cfc26b2647564e84abe173673fab1d57168ec5272a4349b5", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/column_four_results/neutral_four_column_5x5.json": "092fb78e1a3d4d08f38968ddb217cc30de65c3329ce7ad53e18d5dfb15548c33", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/column_four_results/neutral_four_column_5x6.json": "1fb5fd6fe10c54b2c10d50dc23859e7f85d0ddeebb633e19a482893af6dcc8fa", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/column_four_results/neutral_four_column_6x6.json": "93dac5123f0124704b4698610cb9063b7e9298125f4b938bc7d6e14af4c350e8", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/column_four_results/neutral_four_column_charges_5x5.json": "63cd43b0f10bf45c0f8d199bae7a1bbd7cf8dd2994721084321c1a8417deb1dd", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/column_four_results/neutral_four_column_charges_5x6.json": "7262149d56ead2210249b99b9dc5134865efbb771a8765a5bfbc32b6d4066aee", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/column_four_results/neutral_four_column_droplet.json": "c55b488bb61e9af0bf0ccfa8f6e990f7d05920e0dd6dffc6e76120ea5bcf849e", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/column_four_results/neutral_four_column_momentum_5x5_t0.8889.json": "f4ad77035c426e3a2ca43f539c5876cbd1726b4d787e0011d475e3f04f98665c", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/column_four_results/neutral_four_column_momentum_5x5_t4.0000.json": "f693745f33dd61c489429b45f6b60ecafe943725a15f124676fb66dafe3c8b7b", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/column_four_results/neutral_four_column_momentum_6x6_t0.8889.json": "7d837654948d9f6b9f68f3babfd0f2bad2c9a8c6f871d7de3c303b46329fc5ac", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/column_four_results/neutral_four_column_native.json": "ff3a670e4c6ba79681d1eced452516210bf4a64583a25767bf80ceaae24bf48d", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/neutral_four_column_charges.py": "f21c9b1688fe606f7052b55efd8d7a649c9610664b80a2df2b6d5a59416ae9a5", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/neutral_four_column_droplet.py": "598850503bcd75ac95af6bed08ea2fbf2c5cdec0eed5f0c94ca24eb2a1fb3954", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/neutral_four_column_model.py": "295efcbe31214e8d26a40a04c7c7fcf3d70622a11417734569e728cadf8f51a0", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/neutral_four_column_model_v2.py": "4b0cba139a151786bb09337c078d8ff6bd27949defcef0b71f2b7f140f20fc4c", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/neutral_four_column_momentum.py": "7f29270d1400dc3ffac919be826dc554c9920a5792194d0eb4c7e76e1a4085ff", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/neutral_four_column_momentum_six.py": "61525efd7e2944d2c6c4186ff473fae8406b197c5cf25f0126c41a1dd274f527", "outputs/neutral_continuation_review_2026_10_18/pr9735/native/neutral_four_column_native.py": "213703a79f0645b23c54e5d27224c398fe4d8ccc1c92568bbcf2189782f88d07", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/BULK_SEGMENT_FINAL_REVIEW.md": "fd76db156bac66edd0b76530227603065d1a74681d7609f70a586f316e638fdd", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/INDEPENDENT_BULK_AIRY.md": "9223863416d1857fcf4a22d1db2f4a9b5cf3e57ed866472c07c7745f07f7ddd3", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/INDEPENDENT_BULK_CHANNEL.md": "f9a27005018400caff75f4a4343f29de495f48a87bb9b4e656ffdddac1b21a46", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/INDEPENDENT_BULK_DISPERSION.md": "617cb80d2f8a9bfb240f62957e5ebc5f8bf15961eb9b728d43749a5e649a1c56", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/INDEPENDENT_BULK_SECOND.md": "d5bed25b186034536e44c33bb33b2e02f1100856ac91da50c0601e7b45a93b1e", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/INDEPENDENT_BULK_SOURCE.md": "eefb0ce5a5d090221ba1d7730f1e8653be7988fb05f94c3bf59fde2aedc76805", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/INDEPENDENT_BULK_TENSION.md": "768069c86c23690c9044ef9d8e561bb8517f24f235406032f79f4d34393e0a23", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/neutral_bulk_dispersion_check.json": "1a3da592ba07c4999c6be4b2c280e0e8d6bb93420a77ccae3250620dd4b612f8", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/neutral_bulk_dispersion_check.py": "576f98e416bb601f48cebc6bf592080a7c50c8b876f6941f71af3e818fc70ebb", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/neutral_bulk_resonance.json": "1c97b664483b5615952d1b37facd87e478ab8d1364720be750332f72d9a27921", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/neutral_bulk_resonance.py": "e2a062da120d05f06ed60ac40a99dc75ccedf05a8b661a54b4c02440d3fb786a", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/neutral_bulk_resonance_dynamic.json": "4e8833a883b073712564f2e275254fbc9e104fa94abd72cd744d3a9683d388f7", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/neutral_bulk_resonance_dynamic.py": "4eb1c6323a51b4cd4d6e45057f44b3e95e83e85a7cfc54198d8b286cb427b4f0", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/neutral_bulk_second.json": "0f7c0e47cc75c294c54c061fcbb36e090efae94ea0826840a4bc1903043ab675", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/neutral_bulk_second.py": "cd61062f2758fdc0cb6538e9b2b9a27787c9ef9579e475cdda546dccb07cec6d", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/neutral_bulk_source_check.json": "0089401c59badd488f354c211f51984325199cb7deb4d7367f94dba22361d61f", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/neutral_bulk_source_check.py": "68e509730d4411cbbf44a9c299fa26f2b68c15aecb0dbb4a0128b900ddfc105d", "outputs/neutral_continuation_review_2026_10_18/pr9736/native/neutral_bulk_tension_check.json": "8f11d719654ccc62517ec45de55ad5d30a60e1124e4c34009d062cd4579e0018", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/INDEPENDENT_AXIAL_TWO_CHANNEL.md": "215d98661d80f32450314a8240516ff1f60ea330eba4eddf414c42a67b2785f2", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/INDEPENDENT_CONFINED_FAST_STRIP.md": "a06dc37ddfcd9e43a6dfd54991f5918f5d4ced62444de5a95f0cb0b7d42a9abc", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/INDEPENDENT_COUPLED_STRIP.md": "1f441583f8b414e462abf6c58c046e76a0cd4294123cd7f0dae01ce260b552cc", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/INDEPENDENT_FAST_SECOND.md": "3b40075d02243f183aaa90dcbc3edaea92a175d98cb66ef0f459a2e806b48705", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/INDEPENDENT_SLOW_HOST.md": "75c37ad1b8d7f54b04e5a743cc64724c130f0a509a074fa7a6c9b6eeb7f7bfbd", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/INDEPENDENT_SLOW_RESPONSE.md": "8b4263410e4bc7ceaf1f1a818850d7be2d86222aa406e6ac58235fcd264c79b4", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/INDEPENDENT_SLOW_SOURCE.md": "92cad7614500859a2b4072ac3cc081c840b7bc16d7a297440323e99edc4c7225", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/REVIEW_SLOW_BULK_COMPOSITE.md": "2739e1451f3e9da433cc56299dca5868368d89f7d397ddd742ea00933425c974", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_bulk_second_boundary.json": "8ad010f53bc869c0227f9e3e6ce5e7fca68106b79d35929671303163aeb0a61c", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_bulk_second_boundary.py": "c467dcd7f3d3eaadb07fe7eb7e14a772780f64a70bc3350963abfaa06cc69157", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_bulk_second_other.json": "d28a431a110f0c0472c1b7ad4b2b314fc4d3a34a7f1189d837f9663758be7018", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_bulk_second_other.py": "fc9339f0bab5ba5c03016fdb3d710bea89f70dc88c6369c416737577de97c26a", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_bulk_source_check.py": "68e509730d4411cbbf44a9c299fa26f2b68c15aecb0dbb4a0128b900ddfc105d", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_confined_fast_source.json": "3a5ba02f19e771d5b84d74b07c3067284c7ceec1aa9a6aa6e05daf0c4c6b80de", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_confined_fast_source.py": "de4ffae2125fd84c1a1118c49880f8184ad2fdc687672b46ecf2bea1682487e7", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_coupled_slow_pole.json": "0c9d06826283881258a204a7fb546488373b6cda8437e3d17a5132923e7c0a66", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_coupled_slow_pole.py": "4682978e003c35d8e0c9decbad87d41aab5d36111342c5492414214fbcc7e536", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_outgoing_host.py": "a7845efc9767477a3bd5a8b816ba29aabe5d993bc42e53055aff34d8d2f547cf", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_slow_dispersion.json": "4f511c59724809a6fb43f06a04a959ad3a6fac94679e6f2e330a119c3a4772f0", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_slow_dispersion.py": "0e337edde255fed16db83eb3dcbdedc1fab63917472e4df812574ff1b723641f", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_slow_host.json": "31b91afd082b2db209578c088e71a965bf7c1082dec60d6e5ab8dcb7af3cc4c7", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_slow_host.py": "c45065369d566859cd563e8108df1b00ca3737c5dfaf1c5ad582ea11c5ad40c2", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_slow_resonance.json": "79f287a9ba9aa7fef454d5b30e0ae4ca73ed298c4bdac26c802196a3d00ad8c0", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_slow_resonance.py": "46b6aa515b57afa0d01c4b3133468d8a46a8d2c31ec6cae85140b006f8a1176a", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_slow_response.json": "ccc8ebce523b144068c29acf700ed1b7a00d13d5d840774053dcc29c00b57dcc", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_slow_response.py": "ef791baf551b21c832c018744535b0dfaba326e769f77e05be0745a0703545a7", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_slow_source_check.json": "82c27a2964bab36a9cc4a7f29aca9fc51265673bc271aa0b6556148dfff0453e", "outputs/neutral_continuation_review_2026_10_18/pr9738/native/neutral_slow_source_check.py": "e5de3965646a6967e130dae10fa40cdbcf4e8a60298e2e904dd3cedbef4a88eb", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/INDEPENDENT_SLOW_FOURTH_DIAGONAL.md": "7c5c21296227dd90f3a9acdaaad54135d7373a47b92eba0c05a2654e6cbc4512", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/INDEPENDENT_SLOW_FOURTH_KERNEL.md": "21852ed689693419cddcd1160b9c36c4f68de0c7ed6e80e01db5aa9ebf608d78", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/INDEPENDENT_SLOW_PARITY.md": "be3cadba62859ff79158031e5cc2634e90645ca6ffae2206d886bc36c042b886", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/INDEPENDENT_SLOW_RESTRICTED_BOUND.md": "4a87f98205898383cdd57d4a794e1db693c2a06db5583705e8f55afbdbebc6cb", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/INDEPENDENT_SLOW_SUPPORT.md": "3f8564cbf6dcba8193742089af48c88795502d4f2827519676b8e0e9f7e0011f", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/INDEPENDENT_SLOW_THIRD.md": "6504d19e1b97404fae6884d76615a4683c9eb96f5a4265efd7dd30d76f2404c0", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/REVIEW_SLOW_NATIVE_CONTROL.md": "7f3313273f947e5af443497244a1aaff2730a4a5ec40818864bbe4885eeee6b9", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/neutral_slow_fourth_diagonal.json": "7c384ce982e6124eae890ab3c3387c3353ef127b88df06df688d6d7b1fbc5a64", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/neutral_slow_fourth_diagonal.py": "4624708155ec423cfa8bd1b72b0a4bc6707586645ae63ae11b912f9931765e28", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/neutral_slow_fourth_kernel.json": "08acd43a5f702f3a3c664143d9c830e71190f70b62a4b6e658546303822f7862", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/neutral_slow_fourth_kernel.py": "fa4baf44e681d06350c0863936e6b38ef945dc0bd373ef21fb65a32867361dc4", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/neutral_slow_fourth_kernel_y.json": "35f6efd13265868ea5e4d4ac3b3e9adf89f197d2e44ac59709331494556c8764", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/neutral_slow_fourth_kernel_y.py": "e517989bc9d60a7c3dfc087cb7510c1f5a33a3c2191eac6b7799b2793bfa08a7", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/neutral_slow_fourth_local_independent.json": "475418db81843283f0d25e610ca2c3a04217c8fa7e13534438d759483c4f00e6", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/neutral_slow_fourth_local_independent.py": "99cdba7d514e843be41ec85bb8f92a834ba593637ccd5cd82a707cc21b6c7734", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/neutral_slow_third.json": "20bc111a35f7e30a3231389a305ecde7efea20091f6be3bdd089fce1333a03ff", "outputs/neutral_continuation_review_2026_10_18/pr9740/native/neutral_slow_third.py": "723ccb04d6e610fd993e4dc329e4ba9e03564028c41596478c8f9656128e63fa", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/INDEPENDENT_CUBIC_RESPONSE.md": "a037485051fbedf0c7da8a1f079d84e59efeb57ec4a197ae1f79f5ddca3c73f2", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/INDEPENDENT_CUBIC_SECTORS.md": "63cf018e4d174553db1864b770d78f2a41a712dbf030920d05c6f615d63ae169", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/INDEPENDENT_NATIVE_Q.md": "51a67b4a0987cd44e8a1ecf5baed6b526b8752bb824e69039e76b95bd66d5c7f", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/INDEPENDENT_RECT_ENGINE.md": "0a44b4971c18e7059766c105186b37c86151d2a4d56047b96825f1dc9fb50173", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/INDEPENDENT_RECT_TRANSLATIONS.md": "fc66e54814349f77ffe17d1e03e97bc4fb9cf2a29cef13b53c947c4b5fb6578b", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/INDEPENDENT_SPACEGROUP.md": "5a252b8b5728b5b7921c85e813a10e727a6ecba160c437ad6f5bd09cc98806d6", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/REVIEW_CUBIC_NATIVE_RESPONSE.md": "c359b87dd87f6e9c8513bde1db1d3665d8af55d601ee7376691c57cabe90a76b", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/cubic_results/IDENTITIES.json": "52108e0c5d8cb9b3ad355712662afc031e819bcaf4ae6bfd45d886f30f114ee0", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/cubic_results/REPRODUCTION.md": "88dd9bb3c8336ffd723e838c5f3900b90f13746da015f556c839f0d66c7bafe7", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/cubic_results/neutral_cube_low_spectrum.json": "b32abc53aa12b206284e451cdceb50f7d2b75124f192aceb7cb6c857bb1eee82", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/cubic_results/neutral_cube_native_scalar.json": "d97693693757d73325a1c3c1386e39da2d00471bb94c458c0b77ee6e7957c2d9", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/cubic_results/neutral_cube_probe.json": "106f6aafc1ea7a97f984c07766a2b08d09085aacfd3279bf58167b5f29a207cf", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/cubic_results/neutral_cube_response_check.json": "8ba21d72b2a881edaab78f563c7034114dfd3f23dd0cc8cbf6a3d2bebdad57e0", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/cubic_results/neutral_cube_sectors.json": "ff04b51b49a65956ff3f0352b2b0f0f4a45683a049ed7cd204a03833ff726cf3", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/cubic_results/neutral_rect_data_ground.json": "1bae0cee27f421ca7bcb91b30141e45b42701c25d3dfabe5d2a2208ac3942872", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/cubic_results/neutral_rect_data_observables.json": "01f081e2e48cb330738de5c07f4c290424901f5a9b7eb11265bfcb8d0dbc2706", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/cubic_results/neutral_rect_data_original_source_rejected_nodes.json": "989cfc10343e37dfaf16d7ed78b4c820bac533c67f147bd6739e036fdabd5069", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/cubic_results/neutral_rect_data_response_rejected_nodes.json": "c296e01607a038491343108c77d4e0569c3e27afb72b14af7aa20e6a9d5255ce", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/cubic_results/neutral_rect_spacegroup_data_low.json": "87658c7fe3330a415e59f1133d677ffc707d385d92cd1a64428bd7c63c01ba14", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/cubic_results/neutral_rect_spacegroup_data_response.json": "8b787d83681d813f776f2c9efdbec1612c192bf472c327461a67e8b0893a0d8c", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/cubic_results/neutral_rect_spacegroup_data_response_before_Q_projection_fix.json": "d6f59c5ff4d2a158edc5562f3dd3c06a660d1a9feee69526446062d37f9a2e4c", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_cube_low_spectrum.py": "e1e084f2ade8e537d5802852bf1a519da02d51aae920e3609ab20572d492fd56", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_cube_map_independent.py": "70ef0537804ad07ffa639f37d148f778acaa49f75a85f101b0be1686754c86a2", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_cube_model.py": "81257417f88a5b8cd56ca69e58889b8e5ff8fd0bd894a5291ee9ba0060c894c6", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_cube_native_scalar.py": "0b2e12f60c81b61439572c3ce549a8cde5c882f26dfc59f0b27ff9a418dfc40e", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_cube_probe.py": "7fcc6e5f2a2b5b007aa2676a8c4f50ec90c448dcc440d8cfadd415bae08a8c53", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_cube_response_check.py": "9280dd253c02839eb410762abe2f1338fcd4b347fa266f50e1f73e4494c2efcd", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_cube_sectors.py": "8a2a58b8cc5a719ecf7a092a99899f4697e17306ab84ddd0043c75db605d19c3", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_rect_ground.py": "e17670bbdca8e3c7c54788507fa4f0def23348ddd008d8f649cc3b32d69a22b6", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_rect_independent_check.py": "883d9dcc0af03392c5c0113237cdc90304785eabe6ec668062f7638b08634426", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_rect_model.py": "05fcbb0b421085bd592325b4718d8a3b8d519116916082c7c3b0a532fd5cfbcd", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_rect_original_source.py": "4d1322b4eeb66a6e409c3655a2f4097e203a586c4a3c9375a6b35fa48be61ac0", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_rect_response.py": "45fad45fb61d89f87a82f6ff73dcde8b24f4c04fd60bc9f6c8c329ccd41706b1", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_rect_spacegroup.py": "b0ec444892a9bb3d5a8afbe9e0461ad9ffdeccfa10aad73fecb40d8a09f555b2", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_rect_spacegroup_response.py": "1f0e77779a09877d67ef77c097e69b401eeb36acbcfd4f3e79011d381fb1cd83", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_spacegroup_check.py": "1aa15896d24119bd75279099dc024e89c686c7f7e5c0c2c822a01abbf62f070a", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_spacegroup_model.py": "6f4443c036f38b9fe5b3814d3d2e3e636cbd5033718b050ff624f52873876fda", "outputs/neutral_continuation_review_2026_10_18/pr9743/native/neutral_translation_model.py": "e734bb5c91accab688da8edcca3c16ecc60332e183991a184545af70b97c9c08", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/CORRECTED_FAST_SCHUR_PROOF.md": "3161489aaac299c881c1446830a3af675878b1f732a19b9e875a0610dd5dab6c", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/CORRECTED_FAST_STRIP_PROOF.md": "ba78dd6995459dcf37313595f4d6534cbc3d01bf87877636153a10d5ec061081", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/INDEPENDENT_CORRECTED_FAST_HOST.md": "7115f4ac6d0f69359bf45f093a58db357738dd46498e46ff86b4b64b5d9002b6", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/INDEPENDENT_CORRECTED_FAST_SCHUR.md": "95447bb30fe3cd861261b70f261f27f3b693e8cebd9e11ca81e89c3a622682a4", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/INDEPENDENT_CORRECTED_FAST_STRIP.md": "66d8149c99d7ea8a9a27fd2eb3a7fdee79c8fdeb53ad88e1cde37ea3e5605442", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/INDEPENDENT_NATIVE_K4_POLE.md": "9010e6da835a5bb8f6f6d231477d224742c7526346549ee98f57af19b354b054", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/REVIEW_CORRECTED_FAST.md": "b8d520642fcf66eb79c424909023ec4a4f122013b4f31ef13271bf0daf4a2108", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/neutral_corrected_coupled_slow_pole.json": "7c7c93c6a93f0482dad7f3060ac28bbb067f87fe6bb72a19e7b4e9d6a9e8f381", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/neutral_corrected_coupled_slow_pole.py": "4560cf79c891b063d9a5fdfe7d65e2c7e8925c3aa9e9c2e71512bbd805c118cf", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/neutral_corrected_fast_boundary.json": "d4aa5bf37a377fdc06db43e45df30a2e46d3e4ef77a465e02da47628c33197e7", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/neutral_corrected_fast_boundary.py": "818b100ba671c418dadb31a1f7618d02f358cfdf09efeabfa621c5a16b915ab7", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/neutral_corrected_fast_host.json": "bce270d8a9ebc34ce597c803a9610e1898b85dd597c526bf7bd9ca6363b5a8da", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/neutral_corrected_fast_host.py": "4a6c3990d99d49b5834bc20fa8119b8c401198fdf9f6ea406c980aae9a92a6a3", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/neutral_corrected_strip_algebra.json": "156ceb081723ff32b6e3c448c90a423a077bc6b9e2722c98b62f4e26757b8cc0", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/neutral_corrected_strip_algebra.py": "d6d6496d8da03b9f29075d58700860eef82753fd2e77f512fb61ea605133dc4e", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/neutral_native_order4_pole.json": "ba5e3271b34fd89401d2210dadabc68ddd9c5a73196f5857b9a5c2fe55b5e7ec", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/neutral_native_order4_pole.py": "6ca702bb2c645a8444cf63a10098e2c9bdc0b312a215eb1db154bd3927ceb17c", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/neutral_outgoing_host.py": "a7845efc9767477a3bd5a8b816ba29aabe5d993bc42e53055aff34d8d2f547cf", "outputs/neutral_continuation_review_2026_10_18/pr9744/native/neutral_slow_host.py": "c45065369d566859cd563e8108df1b00ca3737c5dfaf1c5ad582ea11c5ad40c2", "outputs/neutral_continuation_review_2026_10_18/pr9745/native/INDEPENDENT_RECTANGLE_RANGE.md": "22855265062f11f01b060c4f8973c68eb12f892557ccef7bfab55acfd153b57a", "outputs/neutral_continuation_review_2026_10_18/pr9745/native/INDEPENDENT_SIMPLE_LOOP.md": "10dad38ee43c2de34ec202d86aae251e5d113e657d5e68e7befd642518406f4e", "outputs/neutral_continuation_review_2026_10_18/pr9745/native/LOOP_INTERACTION_PRIOR_ART.md": "a1154803dbb28948a4ac68185fb4eda54cce621ed4970241c7b80369e8e611d6", "outputs/neutral_continuation_review_2026_10_18/pr9745/native/REVIEW_LOOP_INTERACTION.md": "dd39a5847514cdc90f730cc9c2f6aa4761feb150105da74bd9e93997b9fa7bde", "outputs/neutral_continuation_review_2026_10_18/pr9745/native/neutral_rectangle_closed.json": "a5446246905cbffe3523e700e781449fb73e07fff9ea6a18e676f549de8ff133", "outputs/neutral_continuation_review_2026_10_18/pr9745/native/neutral_rectangle_closed.py": "1e63e0844d339618bf749b57ac2c1ee9ace4693103a2b8d28f8648be1dd720ec", "outputs/neutral_continuation_review_2026_10_18/pr9745/native/neutral_rectangle_range.json": "eb4f79016b1a25587674b744e118c0e5e88b65df317dc913bf1fc1e6006fca8e", "outputs/neutral_continuation_review_2026_10_18/pr9745/native/neutral_rectangle_range.py": "3bd259ef0bec42fcb179c0a1a21d212d196dcf4133c4ca4898890d157311fedd", "outputs/neutral_continuation_review_2026_10_18/pr9745/native/neutral_simple_loop.json": "8086ff887a6fc51f5cbc51251ecb5c8555571f5b979fcce371503579c3ebe13d", "outputs/neutral_continuation_review_2026_10_18/pr9745/native/neutral_simple_loop.py": "728120e6fca2cd79143ed4fcfac8e2e50713063f312f1398a5de236fe033882e", "outputs/neutral_continuation_review_2026_10_18/pr9747/native/DRESSED_SOURCE_BOUND.md": "ed716692a4c71659ee5a89088a7c4c994441a024a23de7c3129022badabb3df8", "outputs/neutral_continuation_review_2026_10_18/pr9747/native/INDEPENDENT_DRESSED_READOUT.md": "39e8a72bacb438e33cd6c71dd253a6ab030f49d56e960b17607f3670aa5d724d", "outputs/neutral_continuation_review_2026_10_18/pr9747/native/INDEPENDENT_LOCAL_DYNAMICS.md": "1b90c83811f5e36730a87b0b0d1d613da83f7ec81f8c32ea048fcea8dea801f5", "outputs/neutral_continuation_review_2026_10_18/pr9747/native/INDEPENDENT_LOCAL_NORMALFORM.md": "1c0f963d7f7707379933a1cd5c43857245a41acd6d8e4e677a91c4c525a9feb1", "outputs/neutral_continuation_review_2026_10_18/pr9747/native/REVIEW_LOCAL_NORMALFORM.md": "c4ea484d36def14a45badb901c85c0150916fd37d5d41a2bc76c16009e3bc52c", "outputs/neutral_continuation_review_2026_10_18/pr9747/native/neutral_local_normalform.json": "57f65cc412b644c248b212f12a355e5bd2fe9a136229e5012855ac86ff3663a5", "outputs/neutral_continuation_review_2026_10_18/pr9747/native/neutral_local_normalform.py": "4eb258404270444748eb7608af480e39e947f24f66236a2ad29d6d35427354b1", "scripts/native_column_collective_mode.py": "5a28c479ef69a1364093998f729b0188edb292f92a8050625aa18be225855fb5", "scripts/native_column_plaquette_selection.py": "88f92b357f87200ac72b72e106f6ae96f0a4e7dcca53bd97603dd7bf83f96645", "scripts/native_corrected_fast_strip.py": "b9566279b2d3cbabf8ce15b40088a90121a6c045dd339866e9de43ab1b787c56", "scripts/native_cubic_scalar_response.py": "df8941c079eea353bc7859b123e65be095b9bf95415c64359f8f515654729f91", "scripts/native_derived_collective_interaction.py": "5e95b32e32d425e558e0cccfe48897d0b31d59a7eaabb0161419016cc820538f", "scripts/native_four_column_competition.py": "c645092255120d380036979582797be903a960decf1c52e11d28b8e685780585", "scripts/native_infrared_readout.py": "b4e48bd74dd4ad6db13ffaf5d0961958a77b73453e3b7b528842926e2da1c12e", "scripts/native_large_column_dynamics.py": "c34a2537ce017b32733f843891bb6d7f8c06714e5c96d06789e242fb862dbb23", "scripts/native_local_normal_form.py": "3318382964911c74270f24ea4a10e349eafc06a421e51b75d5d2b43508b1672a", "scripts/native_local_normalform.py": "211bd25235c76f1f91f8e287ff8c41410b38b6447f1905111cfcaf23a4dc3571", "scripts/native_loop_interaction.py": "46f3604ff1432bb7616525ee09d4e9bed64715f0b079f8b6ff723f1b04c5cb48", "scripts/native_neutral_domain_resonance.py": "a0bd0658e5a6fd74e27db21eac131fc5c17c9cf43c998cfef1896ece24ad4f12", "scripts/native_scalar_band_local_proof.py": "ffecc33d15fd736690b302157f5e7b6e413e687241752907610772eb0a36cc9b", "scripts/native_slow_bulk_composite.py": "3914cd59c9943a1c054536a4f793219821df634494a72211be7863990863bad1", "scripts/native_slow_composite_control.py": "ad3745fc41ca525abaa04ab9bf12484723f5b90de94c08f68709efe7c74e5963", "scripts/native_zone_boundary_composite.py": "243bda277c202fd0fc18836e4dcf64b915cdca90fb28d7a9175ce0c8cfae1ac5", "scripts/neutral_continuation_runtime_2026_10_18.py": "394bd32a56debcb7f1bd70117a4b160646568aac0c6a66a48277fc82b5d3f79f"}, "native_local": {"second_order": [{"edges": 441, "elapsed": 0.11427879333496094, "ell": 3, "rows": [{"coefficient": "-5/2", "sites": [[0, 0, [0, 1, 2]], [1, 0, [0, 1, 2]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [-2, -1, 0, 1, 2]], [1, 0, [-2, -1, 0, 1, 2]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [2]], [1, 0, [2]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [0]], [1, 0, [0]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [0, 1, 2, 3, 4]], [1, 0, [0, 1, 2, 3, 4]]]}], "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"}, {"edges": 490, "elapsed": 0.1384110450744629, "ell": 4, "rows": [{"coefficient": "-5/2", "sites": [[0, 0, [0, 1, 2, 3]], [1, 0, [0, 1, 2, 3]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [-2, -1, 0, 1, 2, 3]], [1, 0, [-2, -1, 0, 1, 2, 3]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [2, 3]], [1, 0, [2, 3]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [0, 1]], [1, 0, [0, 1]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [0, 1, 2, 3, 4, 5]], [1, 0, [0, 1, 2, 3, 4, 5]]]}], "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"}, {"edges": 539, "elapsed": 0.16841793060302734, "ell": 5, "rows": [{"coefficient": "-5/2", "sites": [[0, 0, [0, 1, 2, 3, 4]], [1, 0, [0, 1, 2, 3, 4]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [-2, -1, 0, 1, 2, 3, 4]], [1, 0, [-2, -1, 0, 1, 2, 3, 4]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [2, 3, 4]], [1, 0, [2, 3, 4]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [0, 1, 2]], [1, 0, [0, 1, 2]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [0, 1, 2, 3, 4, 5, 6]], [1, 0, [0, 1, 2, 3, 4, 5, 6]]]}], "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"}, {"edges": 588, "elapsed": 0.20072293281555176, "ell": 6, "rows": [{"coefficient": "-5/2", "sites": [[0, 0, [0, 1, 2, 3, 4, 5]], [1, 0, [0, 1, 2, 3, 4, 5]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [-2, -1, 0, 1, 2, 3, 4, 5]], [1, 0, [-2, -1, 0, 1, 2, 3, 4, 5]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [2, 3, 4, 5]], [1, 0, [2, 3, 4, 5]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [0, 1, 2, 3]], [1, 0, [0, 1, 2, 3]]]}, {"coefficient": "-1/8", "sites": [[0, 0, [0, 1, 2, 3, 4, 5, 6, 7]], [1, 0, [0, 1, 2, 3, 4, 5, 6, 7]]]}], "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"}], "source": {"K1_hopping": -2, "errors": {"frozen_separated": 0.0, "host_plus_interval": 0.0, "interval_2": 0.0, "interval_3": 0.0, "physical_source": 0.0}, "orbit_norm2": 0.9999999999999996, "physical_spins": 225, "shape": [5, 5, 9], "source_coefficient": "-sqrt(2) lambda", "source_norm2": 2.0}}, "scope": "Native finite-order source/channel and K2 checks; resonances and dispersion belong only to partial coefficient model, not a native pole or empirical test"}
+per_element: each named assertion checks the declared coefficient, matrix entry or numerical residual; arithmetic scope is retained.
+per_site: the supplied physical-qubit and projected-site models are distinguished; no physical primitive is inferred from them.
+per_mode: finite momenta and selected source channels only; frozen large-grid identities are not fresh spectral replays.
+per_block: actual completed assertion groups and child exit codes are counted; missing fresh artifacts fail closed.
+lattice_wide: Finite declared models and conditional analytical hypotheses only; full microscopic resonance and physical interpretation remain open.
+Execution evidence: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-f8fm2zj7 elapsed_seconds= 2.100180000066757
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-f8fm2zj7/aggregate.json sha256=4dd96b9b0d071cb514aab3fa2743d6b97c1a86213c417a3bb57e4edd31be1f44
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-f8fm2zj7/execution-copy-map.json sha256=74b51b7e917c36c2142387983d4062f2da6ce99a93f27cdb1d5ce1f189e8a547
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-f8fm2zj7/neutral-bulk-dispersion-independent.json sha256=1a3da592ba07c4999c6be4b2c280e0e8d6bb93420a77ccae3250620dd4b612f8
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-f8fm2zj7/neutral-bulk-source-normalization-independent.json sha256=0089401c59badd488f354c211f51984325199cb7deb4d7367f94dba22361d61f
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-f8fm2zj7/neutral_bulk_resonance.json sha256=4b3db1450c07f2d7dc56a8955f416ff81545b3ea9a3f6eadea2496c180cef951
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-f8fm2zj7/neutral_bulk_resonance_dynamic.json sha256=4e8833a883b073712564f2e275254fbc9e104fa94abd72cd744d3a9683d388f7
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-f8fm2zj7/neutral_bulk_second.json sha256=51c65675148edd447230cbd7b998b99c8021377e8ae671c8cbe8ea0fc04a0a99
+Assertion evaluations=23; PASS counts distinct completed assertion groups.
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

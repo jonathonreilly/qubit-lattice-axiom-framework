@@ -1,0 +1,198 @@
+===== runner cache v1 =====
+runner: scripts/native_cubic_scalar_response.py
+runner_sha256: df8941c079eea353bc7859b123e65be095b9bf95415c64359f8f515654729f91
+input_fingerprint_sha256: 8c82d22e6342f1d26d55d75dc26a870db3b7707149f103f9aaebd675d673b1fd
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.09
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5
+[PASS] P9743-C001 sampled physical action and full Gram
+[PASS] P9743-C002 selected cube lowest eigenpair energy
+[PASS] P9743-C003 finite S source line
+[PASS] P9743-C004 finite Q source line
+[PASS] P9743-C005 finite B source line
+[PASS] P9743-C006 selected line residuals
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C007 frozen producer identities
+[PASS] P9743-C008 frozen large result identities
+[PASS] P9743-C008 frozen large result identities
+[PASS] P9743-C008 frozen large result identities
+[PASS] P9743-C008 frozen large result identities
+[PASS] P9743-C008 frozen large result identities
+[PASS] P9743-C008 frozen large result identities
+[PASS] P9743-C008 frozen large result identities
+[PASS] P9743-C008 frozen large result identities
+[PASS] P9743-C008 frozen large result identities
+[PASS] P9743-C008 frozen large result identities
+[PASS] P9743-C008 frozen large result identities
+[PASS] P9743-C008 frozen large result identities
+{
+  "status": "PASS",
+  "physical8site_sampled_vector_intertwiner_error": 1.1957870576362262e-15,
+  "cube27_ground": -38.19164989239819,
+  "cube27_reduced_dimension": 2655,
+  "responses": [
+    {
+      "source": "S",
+      "mean": 20.783380052541304,
+      "variance": 119.34894680731716,
+      "lines": [
+        {
+          "gap": 3.7635659159729684,
+          "weight": 58.336587311860626,
+          "residual": 1.3872278128525593e-13
+        },
+        {
+          "gap": 6.797207494803608,
+          "weight": 13.798134211376338,
+          "residual": 7.45639389659058e-14
+        },
+        {
+          "gap": 9.418048671572947,
+          "weight": 0.6620729209391878,
+          "residual": 4.3563202487636044e-14
+        },
+        {
+          "gap": 10.43391005952937,
+          "weight": 0.9834768066233595,
+          "residual": 7.773233058161178e-14
+        }
+      ]
+    },
+    {
+      "source": "Q",
+      "mean": 2327.4755441214384,
+      "variance": 84384.286707196,
+      "lines": [
+        {
+          "gap": 3.7635659159729684,
+          "weight": 7094.981094988332,
+          "residual": 1.3872278128525593e-13
+        },
+        {
+          "gap": 6.797207494803608,
+          "weight": 17383.339916601137,
+          "residual": 7.45639389659058e-14
+        },
+        {
+          "gap": 9.418048671572947,
+          "weight": 12476.144798886231,
+          "residual": 4.3563202487636044e-14
+        },
+        {
+          "gap": 10.43391005952937,
+          "weight": 12135.298472714576,
+          "residual": 7.773233058161178e-14
+        }
+      ]
+    },
+    {
+      "source": "B",
+      "mean": -1.8818280267396403e-14,
+      "variance": 131.27302675488522,
+      "lines": [
+        {
+          "gap": 1.4232379553860426,
+          "weight": 5.366177544480508,
+          "residual": 7.583899332322166e-14
+        },
+        {
+          "gap": 3.3889942128620945,
+          "weight": 4.915333168179987,
+          "residual": 1.1789568252221576e-13
+        },
+        {
+          "gap": 5.119443487210397,
+          "weight": 26.133734316319373,
+          "residual": 9.538239210588485e-14
+        },
+        {
+          "gap": 5.315798341163472,
+          "weight": 36.420590465194955,
+          "residual": 3.3141692547184004e-14
+        },
+        {
+          "gap": 6.932304652089648,
+          "weight": 26.31107373733264,
+          "residual": 1.3465805185161236e-13
+        },
+        {
+          "gap": 7.013862988489123,
+          "weight": 2.831702919859934,
+          "residual": 6.93787326059734e-14
+        },
+        {
+          "gap": 8.856280259741332,
+          "weight": 3.562386588422014,
+          "residual": 9.292312044935964e-14
+        },
+        {
+          "gap": 9.576955662537223,
+          "weight": 0.1994977441873098,
+          "residual": 4.178857381190945e-14
+        },
+        {
+          "gap": 9.767531588711883,
+          "weight": 0.8633716954608806,
+          "residual": 4.486478369467688e-14
+        },
+        {
+          "gap": 10.384677406560453,
+          "weight": 15.72883471169891,
+          "residual": 5.96114619600658e-14
+        },
+        {
+          "gap": 10.765600003632315,
+          "weight": 0.0804634125234578,
+          "residual": 9.262863066844786e-13
+        }
+      ]
+    }
+  ],
+  "frozen_large_results": "SHA256 verified; not replayed by this short runner",
+  "scope": "Supplied nativeH finite model development; physicalmeasurement, lightmass and thermodynamiclimit open"
+}
+AGGREGATE_RESULT {"cube27_ground": -38.19164989239819, "cube27_reduced_dimension": 2655, "frozen_large_results": "SHA256 verified; not replayed by this short runner", "physical8site_sampled_vector_intertwiner_error": 1.1957870576362262e-15, "responses": [{"lines": [{"gap": 3.7635659159729684, "residual": 1.3872278128525593e-13, "weight": 58.336587311860626}, {"gap": 6.797207494803608, "residual": 7.45639389659058e-14, "weight": 13.798134211376338}, {"gap": 9.418048671572947, "residual": 4.3563202487636044e-14, "weight": 0.6620729209391878}, {"gap": 10.43391005952937, "residual": 7.773233058161178e-14, "weight": 0.9834768066233595}], "mean": 20.783380052541304, "source": "S", "variance": 119.34894680731716}, {"lines": [{"gap": 3.7635659159729684, "residual": 1.3872278128525593e-13, "weight": 7094.981094988332}, {"gap": 6.797207494803608, "residual": 7.45639389659058e-14, "weight": 17383.339916601137}, {"gap": 9.418048671572947, "residual": 4.3563202487636044e-14, "weight": 12476.144798886231}, {"gap": 10.43391005952937, "residual": 7.773233058161178e-14, "weight": 12135.298472714576}], "mean": 2327.4755441214384, "source": "Q", "variance": 84384.286707196}, {"lines": [{"gap": 1.4232379553860426, "residual": 7.583899332322166e-14, "weight": 5.366177544480508}, {"gap": 3.3889942128620945, "residual": 1.1789568252221576e-13, "weight": 4.915333168179987}, {"gap": 5.119443487210397, "residual": 9.538239210588485e-14, "weight": 26.133734316319373}, {"gap": 5.315798341163472, "residual": 3.3141692547184004e-14, "weight": 36.420590465194955}, {"gap": 6.932304652089648, "residual": 1.3465805185161236e-13, "weight": 26.31107373733264}, {"gap": 7.013862988489123, "residual": 6.93787326059734e-14, "weight": 2.831702919859934}, {"gap": 8.856280259741332, "residual": 9.292312044935964e-14, "weight": 3.562386588422014}, {"gap": 9.576955662537223, "residual": 4.178857381190945e-14, "weight": 0.1994977441873098}, {"gap": 9.767531588711883, "residual": 4.486478369467688e-14, "weight": 0.8633716954608806}, {"gap": 10.384677406560453, "residual": 5.96114619600658e-14, "weight": 15.72883471169891}, {"gap": 10.765600003632315, "residual": 9.262863066844786e-13, "weight": 0.0804634125234578}], "mean": -1.8818280267396403e-14, "source": "B", "variance": 131.27302675488522}], "scope": "Supplied nativeH finite model development; physicalmeasurement, lightmass and thermodynamiclimit open", "status": "PASS"}
+per_element: each named assertion checks the declared coefficient, matrix entry or numerical residual; arithmetic scope is retained.
+per_site: the supplied physical-qubit and projected-site models are distinguished; no physical primitive is inferred from them.
+per_mode: finite momenta and selected source channels only; frozen large-grid identities are not fresh spectral replays.
+per_block: actual completed assertion groups and child exit codes are counted; missing fresh artifacts fail closed.
+lattice_wide: Finite declared models and conditional analytical hypotheses only; full microscopic resonance and physical interpretation remain open.
+Execution evidence: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5 elapsed_seconds= 1.9577021249569952
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/aggregate.json sha256=3ee0ae2dd842cb406cbd04bfb75115777f7d729f197e6abd2050d61c8fd87103
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/execution-copy-map.json sha256=f696a0fec4cff23e965aad0e1cc91d305dc83537b9a26a24afe0257ef823c2f2
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/native/cubic_results/IDENTITIES.json sha256=52108e0c5d8cb9b3ad355712662afc031e819bcaf4ae6bfd45d886f30f114ee0
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/native/cubic_results/neutral_cube_low_spectrum.json sha256=b32abc53aa12b206284e451cdceb50f7d2b75124f192aceb7cb6c857bb1eee82
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/native/cubic_results/neutral_cube_native_scalar.json sha256=d97693693757d73325a1c3c1386e39da2d00471bb94c458c0b77ee6e7957c2d9
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/native/cubic_results/neutral_cube_probe.json sha256=106f6aafc1ea7a97f984c07766a2b08d09085aacfd3279bf58167b5f29a207cf
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/native/cubic_results/neutral_cube_response_check.json sha256=8ba21d72b2a881edaab78f563c7034114dfd3f23dd0cc8cbf6a3d2bebdad57e0
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/native/cubic_results/neutral_cube_sectors.json sha256=ff04b51b49a65956ff3f0352b2b0f0f4a45683a049ed7cd204a03833ff726cf3
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/native/cubic_results/neutral_rect_data_ground.json sha256=1bae0cee27f421ca7bcb91b30141e45b42701c25d3dfabe5d2a2208ac3942872
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/native/cubic_results/neutral_rect_data_observables.json sha256=01f081e2e48cb330738de5c07f4c290424901f5a9b7eb11265bfcb8d0dbc2706
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/native/cubic_results/neutral_rect_data_original_source_rejected_nodes.json sha256=989cfc10343e37dfaf16d7ed78b4c820bac533c67f147bd6739e036fdabd5069
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/native/cubic_results/neutral_rect_data_response_rejected_nodes.json sha256=c296e01607a038491343108c77d4e0569c3e27afb72b14af7aa20e6a9d5255ce
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/native/cubic_results/neutral_rect_spacegroup_data_low.json sha256=87658c7fe3330a415e59f1133d677ffc707d385d92cd1a64428bd7c63c01ba14
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/native/cubic_results/neutral_rect_spacegroup_data_response.json sha256=8b787d83681d813f776f2c9efdbec1612c192bf472c327461a67e8b0893a0d8c
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-xed3jlb5/native/cubic_results/neutral_rect_spacegroup_data_response_before_Q_projection_fix.json sha256=d6f59c5ff4d2a158edc5562f3dd3c06a660d1a9feee69526446062d37f9a2e4c
+Assertion evaluations=35; PASS counts distinct completed assertion groups.
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

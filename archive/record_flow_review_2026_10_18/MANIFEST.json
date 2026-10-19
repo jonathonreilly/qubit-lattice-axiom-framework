@@ -1,0 +1,40 @@
+{
+  "head": "63c0341a73ff6348996066a89f492cc4f369183f",
+  "originals": [
+    {
+      "original_path": "docs/CANDIDATE_LAWS.md",
+      "original_sha256": "f334b161f4b5028dbef69e00739a755937bdcbf4f6bc814263de6728c301d07e",
+      "original_blob": "94cfe2e8b90066e36af912caceb8612f892ac0d2",
+      "recovery": "archive/record_flow_review_2026_10_18/objects/f334b161f4b5028dbef69e00739a755937bdcbf4f6bc814263de6728c301d07e.gz",
+      "recovery_sha256": "ecfa9600175d9b3a24e98ff40212c2e9979a59568d000f938afe107ce08a46f1"
+    },
+    {
+      "original_path": "docs/CANDIDATE_LAW_CL2_A_RECORDS_QUBIT_LEAVES_THE_FLOW_EVIDENCE_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "original_sha256": "280cd4edbdb6aa387cb1c2747d0a1e49659c877534e5b649b8b9ac1b246ed7ed",
+      "original_blob": "800116b7b4277088843662d8e271b8ae096e5ea7",
+      "recovery": "archive/record_flow_review_2026_10_18/objects/280cd4edbdb6aa387cb1c2747d0a1e49659c877534e5b649b8b9ac1b246ed7ed.gz",
+      "recovery_sha256": "ef8af4dff4cfc90ac8763118b385bff537d9ec8d88a3da575906214584be8fbe"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "918df1dc792a8ff9da0696027eb704795172fa141293f8cff763f032906802be",
+      "original_blob": "979e7683d1721c8ecea85596d13681ba8a3e6aaa",
+      "recovery": "archive/record_flow_review_2026_10_18/objects/918df1dc792a8ff9da0696027eb704795172fa141293f8cff763f032906802be.gz",
+      "recovery_sha256": "f4211c9319adaecb1b7589e9afff04c272e7ad24145a590443f9f6897f9f993a"
+    },
+    {
+      "original_path": "logs/runner-cache/candidate_law_cl2_a_records_qubit_leaves_the_flow_evidence_2026_10_18.txt",
+      "original_sha256": "3a10304501e8f824b95a4c9ea25f956491e95e202878c62edc64a7e24653dde1",
+      "original_blob": "7da59e3b4028688f80f36c20a7b88a9390a2ef5f",
+      "recovery": "archive/record_flow_review_2026_10_18/objects/3a10304501e8f824b95a4c9ea25f956491e95e202878c62edc64a7e24653dde1.gz",
+      "recovery_sha256": "5f5ad50fe64c4b98cc6a07eacaae8e023c0b63653731cbda2a812cb3860ed440"
+    },
+    {
+      "original_path": "scripts/candidate_law_cl2_a_records_qubit_leaves_the_flow_evidence_2026_10_18.py",
+      "original_sha256": "f1844fbbefa18fa7b50043f4114ea9035077744bc769ed69e534517be90fc625",
+      "original_blob": "de3a2006bb0f163d4a46143ace6755a10341dafc",
+      "recovery": "archive/record_flow_review_2026_10_18/objects/f1844fbbefa18fa7b50043f4114ea9035077744bc769ed69e534517be90fc625.gz",
+      "recovery_sha256": "5bf241fb8d4e8d00a15f81f82fe9b3a27ea99a91bffe9c27799c79d614c13b48"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 4038,
+    "bounded_theorem": 4197,
     "decoration": 8,
-    "meta": 376,
+    "meta": 377,
     "no_go": 350,
     "open_gate": 307,
     "positive_theorem": 680
@@ -78,10 +78,10 @@
       "a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1"
     ]
   ],
-  "cycles_detected": 68,
+  "cycles_detected": 69,
   "effective_status_counts": {
-    "meta": 376,
-    "unaudited": 5383
+    "meta": 377,
+    "unaudited": 5542
   },
   "retained_pending_chain_count": 0,
   "retained_pending_chain_examples": []

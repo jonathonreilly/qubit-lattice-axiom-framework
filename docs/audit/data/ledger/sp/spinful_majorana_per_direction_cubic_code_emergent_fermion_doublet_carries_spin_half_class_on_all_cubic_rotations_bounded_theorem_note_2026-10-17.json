@@ -37,7 +37,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.085,
+  "load_bearing_score": 3.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -58,6 +58,6 @@
   },
   "runner_path": "scripts/spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_2026_10_17.py",
   "title": "A spinful cubic code has a matter doublet with an exact on-site spin action and a conditional spin-class identification",
-  "transitive_descendants": 5,
+  "transitive_descendants": 9,
   "verdict_rationale": null
 }

@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem. Status: conditional mathematical note prepared for review. The scalar all-late lemma and complete composition have completed distinct ROOT checks; publication integration is recorded separately. No retained audit status is conferred.",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -27,13 +27,13 @@
     "critical_product_source_spectral_bounded_theorem_note_2026-10-17",
     "three_site_product_source_complete_output_bounded_theorem_note_2026-10-17"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 3.67,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/all_late_three_site_complete_output_2026_10_17.py",
   "title": "Three-site complete output at all sufficiently late times on an infinite receiver",
-  "transitive_descendants": 0,
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

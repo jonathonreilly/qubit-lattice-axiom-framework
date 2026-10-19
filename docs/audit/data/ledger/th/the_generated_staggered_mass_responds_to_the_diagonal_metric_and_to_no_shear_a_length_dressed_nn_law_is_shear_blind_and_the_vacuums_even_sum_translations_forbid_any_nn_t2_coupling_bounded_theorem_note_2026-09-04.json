@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 2.585,
+  "load_bearing_score": 3.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/generated_mass_no_shear_even_sum_translations_forbid_nn_t2_check_2026_09_04.py",
   "title": "Finite Hartree response of an axis-length ansatz and a uniform-pattern symmetry restriction",
-  "transitive_descendants": 2,
+  "transitive_descendants": 5,
   "verdict_rationale": null
 }

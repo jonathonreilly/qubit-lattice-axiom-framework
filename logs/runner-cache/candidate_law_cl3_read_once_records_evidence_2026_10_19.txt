@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/candidate_law_cl3_read_once_records_evidence_2026_10_19.py
+runner_sha256: f6a9ef7b45580a66ac64a4a1f3a1355244091b87aa96eaffe36b87d719895611
+input_fingerprint_sha256: 223354216576aed56c26cbbeb7e5c7947507fd95d61cba3da0d1873ad421b232
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 15.06
+status: ok
+----- stdout -----
+[PASS] A1 unrecorded walk keeps its group speed  group speed 0.7678; measured 0.7671 (ticks 0-100), 0.7671 (ticks 500-600)
+[PASS] A2 a position record at every tick drags the mean speed toward zero (late speed + 3 standard errors < 0.3 group speed)  mean speed 0.6031+-0.0477 (0-100), 0.2717+-0.0634 (100-200), 0.0177+-0.0656 (500-600); 200 runs, seed 12
+[PASS] A3 the recorded body spreads more than twice as wide as the unrecorded packet  recorded spread 440.6 sites; unrecorded packet width 177.1 sites at tick 600
+A-note: the record lifetime does not enter this update. Keeping the conditioned odds after the record ends reproduces A2;
+        restoring the unconditioned odds reproduces A1, i.e. the record then has no later effect.
+[PASS] B1 one slit open: no fringes in its own half of the screen  contrast 0.142 (lower), 0.154 (upper)
+[PASS] B2 both slits: wave flux and front arrivals both show fringes  wave flux contrast 1.000; front contrast 0.944; 485 of 3000 fronts reached x=105
+[PASS] B3 sorting fronts by a readable trail gives which-slit predictability with fringes kept: D^2+V^2 > 1  P(upper half|upper slit) 0.967, P(upper half|lower slit) 0.050, D 0.917; group contrasts 0.879, 0.944; D^2+V^2 1.672
+per_site: the coin angle, record rule, jump rates and no-revisit constraint are supplied choices.
+per_block: geometries, seeds, packet parameters, bins and contrast windows are fixed in this source.
+lattice_wide: no physical record dynamics, interpretation of the Englert bound beyond this model, or derivation of the clause is established.
+elapsed_seconds 15.0
+
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

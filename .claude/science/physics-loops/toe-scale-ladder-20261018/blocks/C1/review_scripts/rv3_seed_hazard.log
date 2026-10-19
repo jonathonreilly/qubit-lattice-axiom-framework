@@ -1,0 +1,5 @@
+[PASS] current driver: every step2 seed (101..131) starts OUTSIDE the W=0 canonical component (hazard confirmed) :: fluxes [(-2, 0, 0)]
+[PASS] current driver: dbg_vend seeds 31..36 start inside the W=0 component
+[PASS] current driver: step3 seeds 201..208 start outside W=0 with sigma-flux magnitude 2 along x
+[PASS] current driver: production seeds 1,2,3,11 in W=0; 100,111 in the W=1 sector
+TOTAL: PASS=4 FAIL=0

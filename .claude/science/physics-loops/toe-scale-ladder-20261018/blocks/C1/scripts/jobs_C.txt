@@ -18,4 +18,4 @@
 # 00:41 UTC change: after L=10 T=40 gave E(W=1) 0.5 below its T=20 value (T=20 not projected for W=1), the
 # L=12 s112 job is dropped (T=24 at L=12 is then also suspect) in favour of second L=10 T=40 chains:
 10 0.0 40 25000 7000 111 20 0.5 1.0 4
-10 0.0 40 25000 7000 11 20 0.5 1.0 4
+10 0.0 40 22000 6000 11 20 0.5 1.0 4

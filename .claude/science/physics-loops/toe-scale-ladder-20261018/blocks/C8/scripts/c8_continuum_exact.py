@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact (sympy) evaluation of the continuum sharp-cutoff TT bubble coefficient: for H = alpha.p,
 minimal-coupling vertex O = -(1/2) eps_ij alpha_i k_j at the midpoint momentum, the angular integral
-int dOmega F2(n) = -52/(35*... ) is computed in closed form, giving c_G^sharp = 13 Lambda^2/(840 pi^2)."""
+int dOmega F2(n) is computed in closed form (-52 pi/105), giving c_G^sharp = 13 Lambda^2/(840 pi^2)."""
 import sys
 import sympy as sp
 t, x, y, z = sp.symbols('t x y z', real=True)

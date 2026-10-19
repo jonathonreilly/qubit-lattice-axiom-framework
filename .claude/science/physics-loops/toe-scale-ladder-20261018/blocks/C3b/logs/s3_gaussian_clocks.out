@@ -16,7 +16,7 @@ PASS  s3 P0.25: Theorem K |C(8)| <= 2P(L>=r/2)  C=2.44e-04+-3.8e-04 bound=7.27e-
    32   9.444e-05+-3.4e-04  -3.408e-05+-1.2e-04
    64  -1.112e-05+-3.8e-04   1.409e-04+-1.3e-04
   NUMERICAL: bond correlation not resolved above 3 SE beyond r=4
-  elapsed 48s
+  elapsed 56s
 === family P par=1.0 ===
  L=  64 ns= 800  chi_L=  10.673+-0.522  <L(x)>=2.592+-0.002  max_box L=11.5  sigma^2/v=1.22
  L= 128 ns= 800  chi_L=  11.051+-0.557  <L(x)>=2.587+-0.001  max_box L=12.6  sigma^2/v=1.22
@@ -35,7 +35,7 @@ PASS  s3 P1.0: Theorem K |C(8)| <= 2P(L>=r/2)  C=6.24e-04+-3.4e-04 bound=6.18e-0
    32  -3.186e-04+-3.4e-04   5.066e-05+-1.3e-04
    64  -3.393e-04+-3.5e-04  -1.950e-05+-1.4e-04
   NUMERICAL: bond correlation not resolved above 3 SE beyond r=4
-  elapsed 91s
+  elapsed 111s
 === family F par=0.5 ===
  L=  64 ns= 800  chi_L=  19.341+-0.944  <L(x)>=4.965+-0.012  max_box L=24.9  sigma^2/v=nan
  L= 128 ns= 800  chi_L=  20.179+-1.049  <L(x)>=5.081+-0.007  max_box L=30.3  sigma^2/v=nan
@@ -54,7 +54,7 @@ PASS  s3 F0.5: Theorem K |C(8)| <= 2P(L>=r/2)  C=6.60e-03+-4.1e-04 bound=1.11e+0
    32  -1.119e-03+-4.8e-04   2.424e-04+-1.1e-04
    64  -5.270e-04+-4.6e-04  -1.753e-05+-1.1e-04
   NUMERICAL: bond correlation not resolved above 3 SE beyond r=4
-  elapsed 134s
+  elapsed 160s
 === family F par=0.8 ===
  L=  64 ns= 800  chi_L=  37.346+-1.894  <L(x)>=8.719+-0.051  max_box L=40.8  sigma^2/v=nan
  L= 128 ns= 800  chi_L=  39.916+-1.934  <L(x)>=10.340+-0.054  max_box L=61.2  sigma^2/v=nan
@@ -73,7 +73,7 @@ PASS  s3 F0.8: Theorem K |C(8)| <= 2P(L>=r/2)  C=4.78e-02+-7.7e-04 bound=1.45e+0
    32  -1.021e-04+-6.3e-04   3.176e-05+-8.9e-05
    64  -4.607e-04+-6.4e-04   4.752e-05+-8.9e-05
   NUMERICAL: bond correlation |Cb(r)| ~ r^-2.97+-0.09 over r in [np.int64(4), np.int64(6), np.int64(8), np.int64(12)] (chi2/dof 1.17)
-  elapsed 179s
+  elapsed 208s
 === family F par=0.95 ===
  L=  64 ns= 800  chi_L=  62.289+-3.094  <L(x)>=12.658+-0.094  max_box L=53.0  sigma^2/v=nan
  L= 128 ns= 800  chi_L=  69.703+-3.582  <L(x)>=17.736+-0.142  max_box L=90.1  sigma^2/v=nan
@@ -92,5 +92,5 @@ PASS  s3 F0.95: Theorem K |C(8)| <= 2P(L>=r/2)  C=1.18e-01+-1.5e-03 bound=1.64e+
    32  -1.492e-03+-8.0e-04   4.723e-04+-7.9e-05
    64  -1.853e-03+-8.7e-04   1.220e-04+-9.2e-05
   NUMERICAL: bond correlation |Cb(r)| ~ r^-2.14+-0.14 over r in [np.int64(4), np.int64(6), np.int64(8), np.int64(12), np.int64(16), np.int64(24), np.int64(32)] (chi2/dof 18.15)
-  elapsed 218s
+  elapsed 249s
 TOTAL: PASS=18 FAIL=2

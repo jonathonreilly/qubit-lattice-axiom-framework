@@ -1,6 +1,6 @@
 # C4c — independent review
 
-**Reviewer:** Claude Opus 5.5 (`claude-opus-5-5`), a subagent launched by the coordinating session.
+**Reviewer:** a Claude subagent (same model as the author) launched by the coordinating session.
 It is a different invocation from the author but the same model family, so independence is
 procedural only. **Date:** 2026-10-18. **Scope:** `NOTE.md`, `scripts/`, `logs/`, with C4b NOTE as
 context. Every load-bearing step was re-derived by hand and re-checked with reviewer-written
@@ -43,10 +43,23 @@ Re-derivation (reviewer's own):
 Numerical tests (rv1, own code):
 - (C) 200 random U(1) unitaries on each of the bond e1, the face bond, the collinear triple, the
   L-triple and a skew triple all fail translate-commutation, while random diagonal gates commute.
-- (D) Levenberg–Marquardt minimisation of Σ_t‖[h,h_t]‖² with the hop part normalised to 1. Results
-  are in the log; see the evidence section.
-- (D0) Positive control without U(1): the collinear triple reaches ≈ 0, as ZXZ-type families do.
-  This shows the optimiser does find solutions when they exist.
+- (D0) Positive control without U(1): the collinear triple reaches min Σ_t‖[h,h_t]‖² ≈ 7.5e−27.
+  ZXZ-type families exist there, so the optimiser does find solutions when they exist.
+- (D) Levenberg–Marquardt minimisation of Σ_t‖[h,h_t]‖², with the hop part normalised to 1 and D
+  free. With U(1) the minimum stays well away from 0: 7.41 for the bond, 1.96 for the collinear
+  triple, 7.41 for the L-triple.
+- rv1b: the 4-segment with the *general* 70-parameter U(1) Hermitian ansatz, i.e. no Lemma V
+  reduction. With the compact normalisation ‖X‖² = f and ‖D‖² = 1 − f, the minimum is 0.062 at
+  f = 0.5 and 0.0048 at f = 0.05.
+- These minimisations are local searches with few restarts. They are evidence, not proof. The
+  proof is the analytic argument above.
+
+Caveat found while doing this (rv1c, informational). With ‖X‖ = 1 and D unbounded, the
+infimum is 0, but it is reached only as ‖D‖ → ∞. The sequence is h ≈ c·n₂ + O(1) hop, which
+degenerates to a single-site operator, so it is not a solution. This does not affect Lemma V,
+which is exact. It does mean that "approximately commuting" non-diagonal U(1) families exist
+arbitrarily close to diagonal ones. Any future *numerical* search (e.g. `c4c_03`) must use a
+compact normalisation, or it will report spurious near-solutions.
 
 Coverage classification (rv3, own forced-site code):
 - every one of the 247 cube subsets with |S| ≥ 2 is fully forced;
@@ -78,9 +91,9 @@ The reviewer's construction (rv2) builds integer structure tensors from kron-emb
 - Control: diagonal assignments solve the system.
 
 The homogeneity normalisation argument is valid over C: rescaling by λ multiplies a b by λ². The
-24-unknown ansatz relies on Lemma V, which (1) verified. As a further check, rv1 (D) minimises
-over the *full* 70-parameter U(1) Hermitian 4-site ansatz with no Lemma V reduction; see the
-evidence section.
+24-unknown ansatz relies on Lemma V, which (1) verified. As a further check, rv1b minimises
+over the *full* 70-parameter U(1) Hermitian 4-site ansatz with no Lemma V reduction. The minimum
+stays away from 0 (numerical evidence only; see (1)).
 
 ## (3) Lemma F and Theorem N — correct with fixes
 
@@ -157,9 +170,13 @@ Minor points:
 
 ## Evidence (reviewer logs in `review_scripts/`)
 
-- `rv1_vertex_numeric.log` — commutants, charge grading, random U(1) gates, optimisation (see TOTAL line)
+- `rv1_vertex_numeric.log` — commutants, charge grading, random U(1) gates, optimisation — TOTAL: PASS=11 FAIL=0
+- `rv1b_seg4_full_ansatz.log` — 70-parameter 4-segment search, compact normalisation — TOTAL: PASS=3 FAIL=0
+- `rv1c_inspect.log` — degenerate D → ∞ near-solution (informational, no checks)
 - `rv2_seg4_groebner.log` — TOTAL: PASS=7 FAIL=0 (≈ 1 min)
 - `rv3_forcing.log` — TOTAL: PASS=10 FAIL=0
 - `rv4_pair_symmetry.log` — TOTAL: PASS=12 FAIL=0
 - `rv5_layers.log` — TOTAL: PASS=3 FAIL=0
-- `rv_SUMMARY.log` — combined
+- `rv_SUMMARY.log` — combined: **TOTAL: PASS=46 FAIL=0**
+
+Run from `review_scripts/`: `python3 rv1_vertex_numeric.py` (≈ 20 min on a loaded core), `rv1b` (≈ 4 min), `rv2` (≈ 1 min), `rv3`/`rv4`/`rv5` (seconds).

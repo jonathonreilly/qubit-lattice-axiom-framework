@@ -11,3 +11,4 @@
   mixing clocks / internal symmetry breaking.
 - s2 first run: sanity test s2.0 was MIS-SPECIFIED (I expected iid colours at eps->inf; wrong: order becomes iid but majority copying persists). Replaced by a cross-implementation comparison with the iid-clock model. Other s2 results unchanged in design.
 - s4 first run (ns as low as 6 at the largest L) gave chi_L error bars too large to be informative at ell=12; rerun with ns>=24 (log overwritten; first-run numbers: xi/ell ~0.35, 0.31; all 5 checks passed).
+- s4 rerun complete (5 PASS). NOTE drafted. Launching run_all.sh for the final aggregated log.

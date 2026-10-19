@@ -21,5 +21,5 @@ seeded p=1e-02 L=256 ns=30: xi=6.34, C(60)=-0.0028+-0.0027, C(L/2)=-0.0033+-0.00
 PASS  s2.3 seeded p=1e-02 (lam_min=0): C(L/2) consistent with 0 (4 SE)  
 seeded p=1e-03 L=512 ns=8: xi=18.85, C(189)=-0.0124+-0.0081, C(L/2)=-0.0105+-0.0145
 PASS  s2.3 seeded p=1e-03 (lam_min=0): C(L/2) consistent with 0 (4 SE)  
-elapsed 69s
+elapsed 100s
 TOTAL: PASS=6 FAIL=0

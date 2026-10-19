@@ -2,7 +2,8 @@
 """C8 production runner: lattice Sakharov coefficients. Results are checkpointed to
 logs/c8_results.json (one entry per configuration; reruns skip finished entries).
 Usage: c8_lattice.py A   (b*, b_iso, massless, couplings M1-M4, lapse L1/L2)
-       c8_lattice.py B   (b_gold at theta > 0; massive b*, b_iso; continuum reference)
+       c8_lattice.py B   (massive b*, b_iso)
+       c8_lattice.py C   (b_gold at theta > 0)
 """
 from __future__ import annotations
 
@@ -24,7 +25,7 @@ CHANS = [('z', 'A'), ('z', 'B'), ('f', 'A'), ('f', 'B'), ('d', 'A'), ('d', 'B'),
 XPTS = [(np.pi, 0, 0), (0, np.pi, 0), (0, 0, np.pi)]
 
 
-def run(walk, theta, chi, coupling, ch, N, kap=1.0, nr=24, nmu=24, nph=48, gold_balls=False):
+def run(walk, theta, chi, coupling, ch, N, kap=1.0, nr=96, nmu=32, nph=64, gold_balls=False):
     key = f"{walk}|th={theta}|chi={chi:.4f}|{coupling}|{ch[0]}{ch[1]}|N={N}|kap={kap}|in={nr},{nmu},{nph}|X={int(gold_balls)}"
     if key in res:
         return res[key]
@@ -47,31 +48,31 @@ job = sys.argv[1] if len(sys.argv) > 1 else 'A'
 if job == 'A':
     for walk in ('bstar', 'iso'):
         for ch in CHANS:
-            for N in (64, 96):
+            for N in (96, 128):
                 run(walk, 0.0, np.pi/2, 'M1', ch, N)
         for ch in (('z', 'A'), ('z', 'B'), ('d', 'A')):
-            run(walk, 0.0, np.pi/2, 'M1', ch, 128)
-            run(walk, 0.0, np.pi/2, 'M1', ch, 96, kap=0.7)
-            run(walk, 0.0, np.pi/2, 'M1', ch, 96, nr=36, nmu=36, nph=72)
+            run(walk, 0.0, np.pi/2, 'M1', ch, 128, kap=1.4)
+            run(walk, 0.0, np.pi/2, 'M1', ch, 96, nr=128, nmu=40, nph=80)
         for cp in ('M2', 'M3', 'M4'):
             for ch in CHANS[:6]:
-                for N in (64, 96):
+                for N in (96, 128):
                     run(walk, 0.0, np.pi/2, cp, ch, N)
         for cp in ('L1', 'L2'):
             for ch in (('z', 'A'), ('d', 'A')):
-                run(walk, 0.0, np.pi/2, cp, ch, 64)
+                run(walk, 0.0, np.pi/2, cp, ch, 96)
 elif job == 'B':
     for walk in ('bstar', 'iso'):
         for chi in (0.0, np.pi/2):
             for th in (0.2, 0.1, 0.05):
                 for ch in (('z', 'A'), ('z', 'B'), ('d', 'A')):
                     run(walk, th, chi, 'M1', ch, 96)
+elif job == 'C':
     for th in (0.4, 0.2, 0.1, 0.05):
         for ch in CHANS[:6]:
-            for N in (64, 96):
+            for N in (96, 128):
                 run('gold', th, np.pi/2, 'M1', ch, N, gold_balls=True)
     for th in (0.1, 0.05):
         for ch in (('z', 'A'), ('z', 'B'), ('d', 'A')):
-            run('gold', th, np.pi/2, 'M1', ch, 128, gold_balls=True)
-            run('gold', th, np.pi/2, 'M1', ch, 96, nr=40, nmu=36, nph=72, gold_balls=True)
+            run('gold', th, np.pi/2, 'M1', ch, 128, kap=1.4, gold_balls=True)
+            run('gold', th, np.pi/2, 'M1', ch, 96, nr=128, nmu=40, nph=80, gold_balls=True)
 print('done', job)

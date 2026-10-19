@@ -188,7 +188,18 @@ The bound is crude. It shows that the theorem's guarantee is effective only beyo
 **Numerics (s4, NUMERICAL).**
 - Colour correlation length `ξ ≈ 2.0, 2.9, 3.7` for `ℓ = 4, 8, 12`, i.e. `ξ/ℓ ≈ 0.3`.
 - `⟨L(x)⟩` is independent of the box size `L` (e.g. 11.1 at ℓ = 8 for L = 24, 48, 72).
-- `χ_L = N⟨m²⟩` does not grow like `L³`; see the log for the fitted slopes.
+- `χ_L = N⟨m²⟩` does not grow like `L³`. Fitted log–log slopes over the box sizes:
+
+  | ℓ | s | δ | slope |
+  |---|---|---|---|
+  | 4 | 0 | 0 | 0.38 ± 0.14 |
+  | 8 | 0 | 0 | −0.13 ± 0.34 |
+  | 8 | 0 | 0.02 | 0.02 ± 0.22 |
+  | 8 | 0.3 | 0.02 | −0.14 ± 0.14 |
+  | 12 | 0 | 0.02 | −0.27 ± 0.20 |
+
+  LRO would give 3. The small positive slope at ℓ = 4 comes from the smallest box (L = 24), where `C(L/2)` is significantly negative, a wrap-around effect.
+- `C(L/2)` is consistent with 0 at the largest L, within about 2 SE.
 - Control: an isolated level-ordered open box gives a strongly ordered late corner, `|m| = 0.94, 0.83, 0.71` for side 16, 32, 48. The within-cell mechanism exists; it is the cells that destroy LRO.
 
 ## 7. Numerical results (finite-size scaling)

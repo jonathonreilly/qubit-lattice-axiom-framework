@@ -235,7 +235,7 @@ def wrap(v):
     return (v + np.pi) % (2*np.pi) - np.pi
 
 
-def bz_integral(walk, coupling, eps, qh, N, kap=1.0, nr=24, nmu=24, nph=48, chunk=1 << 15, centers=None):
+def bz_integral(walk, coupling, eps, qh, N, kap=1.0, nr=96, nmu=32, nph=64, chunk=1 << 15, centers=None):
     """Returns (int F0, int F2) with int = int_BZ d^3k/(2pi)^3, split by a smooth partition of
     unity around Gamma: outer part on an N^3 midpoint (periodic trapezoid) grid, inner ball in
     spherical Gauss-Legendre x Gauss-Legendre x trapezoid coordinates."""

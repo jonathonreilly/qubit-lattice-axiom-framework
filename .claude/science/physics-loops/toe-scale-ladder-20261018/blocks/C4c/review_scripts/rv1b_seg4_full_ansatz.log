@@ -1,2 +1,8 @@
 PASS parameter count 16 + 54 = 70
 PASS analytic Jacobian matches finite difference
+FR=0.5 restart 0: nfev=71 commutator^2=0.06226 constraints=[-0.01563398  0.00313175] 33s
+FR=0.5 restart 1: nfev=110 commutator^2=0.20765 constraints=[-4.18798706e-02  8.23674462e-12] 100s
+FR=0.05 restart 0: nfev=48 commutator^2=0.00481 constraints=[-9.80392139e-03  2.13162821e-13] 24s
+FR=0.05 restart 1: nfev=38 commutator^2=0.00925 constraints=[-1.92307692e-02  2.68445266e-10] 43s
+PASS 4-segment, general 70-param U(1) ansatz, compact normalisation: min commutator^2 bounded away from 0 (numerical evidence only) :: {0.5: 0.062256946482753116, 0.05: 0.004805843909726181}
+TOTAL: PASS=3 FAIL=0

@@ -8,5 +8,5 @@ PASS  s3b.1 Theorem H scale n* is finite (<=1e15) for P0.25, P1.0, F0.5
 Box sizes used in s3 are 64..256; for F0.8/F0.95 n* exceeds them, so s3's box-size dependence of L(x) is not in tension with Theorem H (which is an a.s.-finiteness statement, with this effective scale).
 F0.8 L=512 ns=40: <L(x)>=13.338+-0.187  max_box L=133.8  chi_L=54.08+-8.87
 F0.95 L=512 ns=40: <L(x)>=31.231+-0.865  max_box L=254.7  chi_L=131.36+-20.74
-elapsed 148s
+elapsed 156s
 TOTAL: PASS=1 FAIL=0

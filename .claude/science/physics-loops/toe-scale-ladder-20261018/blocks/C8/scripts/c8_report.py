@@ -36,12 +36,12 @@ def entries(walk, theta, coupling, chan, chi=np.pi/2, X=None):
 
 
 def best(walk, theta, coupling, chan, chi=np.pi/2):
-    """Value at the reference resolution (N=96, kap=1, inner 24/24/48) and an error certificate =
-    max deviation over every other resolution computed (N = 64, 128; kap = 0.7; finer inner rule)."""
+    """Value at the reference resolution (N=96, kap=1, inner 96/32/64) and an error certificate =
+    max deviation over every other resolution computed (N = 128; kap = 1.4; finer inner rule)."""
     es = entries(walk, theta, coupling, chan, chi)
     if not es:
         return None, None
-    ref = [e for e in es if e['N'] == 96 and e['kap'] == 1.0 and e['inner'] == [24, 24, 48]]
+    ref = [e for e in es if e['N'] == 96 and e['kap'] == 1.0 and e['inner'] == [96, 32, 64]]
     ref = ref[0] if ref else max(es, key=lambda e: e['N'])
     dev = max([abs(e['cG'] - ref['cG']) for e in es if e is not ref] + [0.0])
     return ref['cG'], dev
@@ -106,8 +106,8 @@ for walk in ('bstar', 'iso'):
     for ch in ('zA', 'zB', 'dA'):
         v, e = best(walk, 0.0, 'M1', ch)
         n = len(entries(walk, 0.0, 'M1', ch))
-        check(f'{walk} M1 {ch}: error certificate over {n} resolutions (N=64/96/128, kap=1/0.7, inner 24/36) rel {e/v:.1e} < 1e-5',
-              e < 1e-5*v and n >= 5)
+        check(f'{walk} M1 {ch}: error certificate over {n} resolutions (N=96/128, kap=1/1.4, inner 96/128 radial) rel {e/v:.1e} < 1e-6',
+              e < 1e-6*v and n >= 4)
 check('SIGN (pre-registered, decisive): c_G > 0 in every TT channel, every coupling M1-M4, at b* and b_iso', allpos)
 
 print("-" * 100)

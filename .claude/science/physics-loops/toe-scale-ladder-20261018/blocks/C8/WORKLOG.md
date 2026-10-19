@@ -52,3 +52,23 @@ H_a + delta H (block-chain in k) vs the second-order formula on the same k grid;
   while the gammas here satisfy {gamma^a, gamma^b} = -2 delta (signature +---). Lowering
   the frame index flips the sign. With the correct sign the identity holds exactly
   (residual 0); with the wrong sign a non-derivative residual ~ (dh) psi remains. Run 2: 12/0.
+- 00:55Z c8_core.py (Clifford-vector form of the walk generator, midpoint vertices, closed-form
+  Clifford trace, pointwise Richardson for the t^2 coefficient, smooth partition of unity:
+  periodic midpoint grid outside a ball at Gamma, spherical Gauss inside). Unit tests in
+  scratch: sym() reproduces M U0 M to 2e-15; derivatives match finite differences to 1e-10;
+  Richardson F2 matches a direct small-step difference.
+- 01:05Z c8_ed_check.py (independent path: exact diagonalisation of 4L x 4L k-chains, explicit
+  matrices, matrix log of M U0 M, finite-difference dH for M4): 15/15, rel. agreement 3e-10..1e-7.
+- 01:10Z first look at c_G (N = 32/48): positive for M1-M4 at b*, b_iso; lapse O(q^2) zero to
+  1e-12. Lapse zero explained by Lemma L (NOTE §4): for any Clifford generator and any lapse
+  vertex parallel to x(k_mid) + O(t^2), F(k,t) = O(t^4) pointwise. Not anticipated before the run.
+- 01:15Z continuum reference: same bubble with H = alpha.p and sharp cutoff |k_mid| < Lambda gives
+  c_G = 13 Lambda^2/(840 pi^2) = (52/35) x heat kernel (numerics to 1e-10, then sympy exact).
+- 01:20Z production run 1 (inner radial Gauss nr = 24): error certificate only ~2e-6 relative.
+  Diagnosed: the radial rule (bump function is C-infinity, not analytic). nr >= 64 converges the
+  inner part to 1e-13; the outer grid at N = 96 vs 128 agrees to 3e-8 relative. Run 1 kept as
+  logs/c8_results_run1_nr24.json (values agree with run 2 to ~1e-6). Production rerun with
+  nr = 96, nmu = 32, nph = 64. (A pkill of the old job also killed my own shell once; no data lost.)
+- Cubic-fit prediction test (K(qhat) = A + B sum q^4 + C qx^2qy^2qz^2 fitted on z,(110),(111),
+  tested on (123)): checked it is not tautological - a deliberately coarse, non-O_h-symmetric
+  inner rule fails it at 3e-6; the production rule passes at ~1e-14.

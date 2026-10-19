@@ -47,7 +47,7 @@ No axiom, primitive or dynamics clause is adopted.
    - For k = 3, the same single-term deduction leaves 159 of 255 off-diagonal unknowns undecided.
      The prediction "W_3 is diagonal by the same argument" FAILs, and the FAIL is kept in the log.
      A numerical probe finds near-solutions of the full W_3-only system that are non-diagonal
-     and COM-moving. Their residual norm is ‖r‖ ≈ 5e−7 to 8e−7 (see the k = 3 section) and they
+     and COM-moving. Their residual norm is ‖r‖ ≈ 5.5e−7 (see the k = 3 section) and they
      carry moving weight 0.2, with a W_3(K) band variation of about 1e−2 rad. *Evidence, not a
      conclusion:* this suggests the W-only constraints may not freeze triples at k = 3. It is not
      established, and whether any solution extends to a QCA is open.
@@ -269,12 +269,11 @@ square root of the cost.
 
 - Contrast with k = 2 (c4d_04): there the optimum scales as 0.14 μ².
 - **Moving solution** (`c4d_10`, μ = 0.2, 4000 evaluations): printed cost 3.0e−13, so the
-  residual norm is ‖r‖ ≈ 5.5e−7, not "≤ 3e−13" as an earlier draft said. The review reads the
-  printed value as scipy's ½‖r‖² and gets ‖r‖ ≈ 8e−7. The script sums the squares directly, so I
-  get 5.5e−7. Either way the residual is of order 1e−6, far from machine precision. The log line
+  residual norm is ‖r‖ ≈ 5.5e−7, not "≤ 3e−13" as an earlier draft said. The script sums the squares
+  directly (‖r‖², confirmed by the reviewer), so ‖r‖ ≈ 5.5e−7. Either way the residual is of order 1e−6, far from machine precision. The log line
   "satisfies the W₃-only system to 1e−10" compares this cost, not ‖r‖, so it is weaker than it
   reads. W_3(K) is unitary to 1.4e−8. Its eigenphases vary by 1.2e−2 rad over a 6³ K-grid (Hausdorff distance on
-  the circle). With 500 evaluations the residual was 1.4e−12 and the variation 3e−3.
+  the circle). With 500 evaluations the cost ‖r‖² was 1.4e−12 and the variation 3e−3.
 
 **Reading.**
 - Off-diagonal W_3 solutions appear to exist: the cost reaches 2e−18, so ‖r‖ ≈ 1.4e−9.

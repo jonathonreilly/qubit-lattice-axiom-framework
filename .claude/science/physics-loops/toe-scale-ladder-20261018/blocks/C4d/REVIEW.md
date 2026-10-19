@@ -202,3 +202,35 @@ discipline is honest. Only the item-4 phrasing and the residual metric need corr
      is automatic at every r.
 
 The load-bearing Theorem P1 is confirmed by blind independent exact elimination for both T and O.
+
+## Correction confirmation
+
+I re-read the complete corrected NOTE.md and checked the disputed residual against the scripts.
+
+**The residual dispute is settled in the author's favour.**
+- `c4d_10_clique3_solution.py` (line `c = float(np.sum(s.fun ** 2))`) and `c4d_08_clique_numeric.py`
+  both print ‖r‖², not scipy's ½‖r‖².
+- So the printed cost of 3.04e−13 gives ‖r‖ ≈ 5.5e−7. My 8e−7 was wrong.
+- Off-diagonal: cost 2e−18 gives ‖r‖ ≈ 1.4e−9.
+
+**Status of each finding:**
+
+| finding | status |
+|---|---|
+| U† phase e^{−iφ} | resolved (Result 1 and the proof) |
+| Prop. E "every finite shell" | resolved ("surrounding shell", defined, in Result 5 and Coverage) |
+| k = 3 residual misreported | resolved; metric now stated as ‖r‖² and the cost-vs-‖r‖ caveat on the 1e−10 PASS line added |
+| "do not freeze triples" overstated | resolved (relabelled evidence) |
+| "DISPERSIVE" log label | resolved (explanatory line; logs unedited, acceptable) |
+| optional items (W_k defined under the inductive hypothesis; P1 needs only pair-sector covariance) | not applied; non-blocking |
+
+**No new defect** in a proved claim. Three cosmetic leftovers, none blocking:
+1. Result 4 still says "‖r‖ ≈ 5e−7 to 8e−7". This should now be ≈ 5.5e−7.
+2. The k = 3 section's sentence giving the review's ½‖r‖² reading (8e−7) can be replaced by
+   "settled: ‖r‖ ≈ 5.5e−7", and the disposition table updated to match.
+3. "With 500 evaluations the residual was 1.4e−12" should say *cost* 1.4e−12
+   (‖r‖ ≈ 1.2e−6).
+
+**Final verdict: READY.** Theorem P1, Lemma S, Lemma D and Prop. E are correct as now stated.
+The "open" statuses are stated honestly. The three cosmetic edits above are recommended but not
+required.

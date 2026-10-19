@@ -1,0 +1,398 @@
+{
+  "baseline": "913beccb3f2e2280378a4f0e965d3369a92648db",
+  "runtime_imports": [
+    "scripts/corner_fermion_projective_symmetry_group_class_and_site_shell_2026_10_17.py",
+    "scripts/scale_ladder_exact_reflection_certificate_2026_10_18.py"
+  ],
+  "parents": [
+    {
+      "path": "docs/CORNER_FERMION_LONG_WAVELENGTH_THEORY_IS_ONE_ISOTROPIC_SPIN_HALF_DOUBLET_AND_ONE_QUBIT_BLOCK_EMBEDDING_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "2efab2f13a8e3a66c9dc452272b4a6d3c4216ae4f52505f605c40556e0073181",
+      "role": "current-main bounded parent premise"
+    },
+    {
+      "path": "docs/CORNER_FERMION_MASSLESS_DIRAC_PAIR_PROTECTED_BY_CUBE_ROTATIONS_AND_PSEUDOSCALAR_DIRAC_MASS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "33588efe60859cc6babcd0a73939438af1bd0564b99e956fbcd6d3542d9ee8bb",
+      "role": "current-main bounded parent premise"
+    },
+    {
+      "path": "docs/CORNER_FERMION_QUBIT_CODE_GENUINE_CUBE_ROTATION_ACTION_EMERGENT_FERMION_CARRIES_SPIN_HALF_CLASS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "94c2ca7c38f7cc83c7e16b2ade40ee9f3d58c2ca7130fb001c604c17b8ab6477",
+      "role": "current-main bounded parent premise"
+    },
+    {
+      "path": "scripts/corner_fermion_projective_symmetry_group_class_and_site_shell_2026_10_17.py",
+      "sha256": "b2d26b31602726478846f4aac7346c61f741ff3049f722fa9b8dcb1575294b92",
+      "role": "current-main parent runtime"
+    }
+  ],
+  "supporting_sources": [
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/DEFERRED_CAMPAIGN_NARRATIVE.md",
+      "sha256": "9b0757fef4b3915955bc8492cda25941f448d71127bf801d6a884abad807e5e7",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/EXACT_CORE_ARGUMENTS.md",
+      "sha256": "1211cb853be3cc4a8af4cbc8730e3ee63c7897891f1a96756e8379ddeff49259",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B11_check__REPORT.md",
+      "sha256": "3f2a1bf6227881c00b02e35d5cb7f835ba4424b645c58009309546ae8c059352",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B12_check__REPORT.md",
+      "sha256": "eb8632a7191b2bb1a5f063b296eee1a04d0ab4f9e00198af332e78885e50ceb2",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B13_check__REPORT.md",
+      "sha256": "c79cc0d03e6436866d198b47e02a53ca0fc0124dfff9949a323214aafec01e33",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B14_check__REPORT.md",
+      "sha256": "597aa253d6639b33d2e02be1357bf86637ff54e0feb82362faabfcd2f318fe79",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B15_check__REPORT.md",
+      "sha256": "49513bc20d3bccfac1db85d4d61b3ee9104ea6d925435f88ad7489b558046dc9",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B16_check__REPORT.md",
+      "sha256": "bc42e4edb7fd3d85c423cc81f203ef223141411b32f994e71fdbd1da1b353db9",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B17_check__REPORT.md",
+      "sha256": "ae305470acaf5d29ec88d36912d7c87ab53e80aa1a82055346bf3ba0ef7be24a",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B18_check__REPORT.md",
+      "sha256": "96824098cfae38242cbc85ac171f0dba023b940a8ca74d4bad6d4159bba6ae7a",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B19_check__REPORT.md",
+      "sha256": "3e9dbe1696275892e1bad931f0abb776bfd8df02612f3a97c3cbac3a8b7ad1e6",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B1_check__REPORT.md",
+      "sha256": "71678e96c5a4359bbba39f91baf3b3aef7f549f3d9455d571f056e1b53cc6b15",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B20_check__REPORT.md",
+      "sha256": "5388f7ee09bfe533348ec6c588cd0f29924a072436a78053d764b28583ad4918",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B21_check__REPORT.md",
+      "sha256": "e8ae476672afdc19905533bc01ebffdb7a59dfecb0bf50c79a413c390bf72070",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B22_check__REPORT.md",
+      "sha256": "2ea8c0043570c0daef97c1a5dbd90b4ed45bea80775a99d8c73e0db8ced68f0e",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B23_check__REPORT.md",
+      "sha256": "76f19879dadce093cd26a1fb1222e61f235fc401484cc079e31e024a1c3f8d3d",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B24_check__REPORT.md",
+      "sha256": "c78be7bb2a65c8759f352cd55a403147c7a8a1f3625e153e25e7c7bf9874e232",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B25_check__REPORT.md",
+      "sha256": "b014d179037542b05e5fc3d03a93e725a78a2a9425484d93412a0401de793306",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B3_check__REPORT.md",
+      "sha256": "298f09f4e54d8ee394b615dca40b37d8f7243d9d3b878000bc6765bc6947aa6b",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B4_check__REPORT.md",
+      "sha256": "8099381fee57a592ed24d44c9c4e6cbdf7104035d7f0a3c966acf6051b495efa",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B4b_check__REPORT.md",
+      "sha256": "54be0899cf97a6390cfdf687a09b617b9fa8cfecd7bfa51894251853ba8a3a23",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B5_check__REPORT.md",
+      "sha256": "d8dcaa2949307010edac12b3d128dc8228611372ec222d03c92135db17f3850d",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B7_check__REPORT.md",
+      "sha256": "72501a60a5fd47243431aa37a70ad478cdbf4ac99d8fcfda361d5955ad5f35ce",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B8_check__REPORT.md",
+      "sha256": "7a2ae02992a1cc9580e5c3cdaf339790c162999ebbc4397a85d6dffa7cc0fb30",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/B8_frequency_ergodicity__REPORT.md",
+      "sha256": "41b39e06a7502d23b633ea0b76e4c2b2f926984359b14fe221afd5ced48d1e5b",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/C1_check__REPORT.md",
+      "sha256": "e80752de47f4d16b4e1560f4739ed603f5ef8263aeb7ab3fbca0c3530c1b1063",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/C2_check__REPORT.md",
+      "sha256": "8b4def880996e4bc53b471be0acaecf0517deb1137a74e0ddfe3461eae467d3e",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/C3_check__REPORT.md",
+      "sha256": "f47e3f597613b9efe69502ceecb1b915d7bc80dd6f401c3a2d7c230ab42dbb67",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/C4_check__REPORT.md",
+      "sha256": "68d03fcef4954cecfc51d3da20e449bb9c32f14480110066c8f1bba5b290f0fd",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/C4b_check__REPORT.md",
+      "sha256": "9a8b4e3cd118a6594caa789a5d0584a3ccde5fdc047cfb627de6a38fa859b3ff",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/C6_check__REPORT.md",
+      "sha256": "07b4b9cbd7c4a63fe970093657864c10b11fec282da49fc1bea1e20744b254a1",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/COROLLARY_check__REPORT.md",
+      "sha256": "2668dd491579e1792a8897093c43f15917710d00983c3876517f9608055ed0e7",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/NOTE_C3_review__REPORT.md",
+      "sha256": "00434511e5a99c074cfa1de66e3553d8572743bad5ea12eb3ec8028dc5946940",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/NOTE_C6_review__REPORT.md",
+      "sha256": "04459dac94dc3018ae2559e288cda471deb919cdc1eb452bfec57636637e96d5",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/NOTE_spin_half_one_check__REPORT.md",
+      "sha256": "32c19b0786e32027cecf73311220004c1cb742cfd4c0a7a528725be2d0b42ee9",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/README.md",
+      "sha256": "c8c3b1e0d6c3e9a9723c166ad2fcfc8a301b15fdda3a2c2f2ce53d2e2b5cda55",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/scale_ladder_note_check__REPORT.md",
+      "sha256": "3c0d0c604271e247b91cdff8402d2b77422d883cebbee7941f605635c708d9a9",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/scale_ladder_probes__formation_chirality__REPORT.md",
+      "sha256": "16e8e7e0b72f41a8e9b4d4f085acc2d7857344fcf290f3bf4097ea006489b8ad",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/scale_ladder_probes__gravity_gauge__REPORT.md",
+      "sha256": "21e11f779e7b9d0e6e0bb96362e739792faff2e7ed9d84d94898a4c55b9e7371",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/scale_ladder_probes__maxwell_em__REPORT.md",
+      "sha256": "fae649c48e87b027df8000e4ed962146a785e60cc0c607c0917f17adf095f875",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/historical_reports/scale_ladder_probes__record_born__REPORT.md",
+      "sha256": "7290077859ae962572463110a624e033cc0adb9f3653cc0525db32590c642daa",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/FORMATION_CODING.md",
+      "sha256": "6dde8ff58a0c4f7f8fa050cc2148eb52e45a1138df1a1ba399abf663af8e8fea",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/FORMATION_CODING_HISTORICAL_EVIDENCE.md",
+      "sha256": "40cff41fdc697b36b267ab259b68500348649ecc1a609857f497967991f9270c",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/FORMATION_DEFERRED_PROMOTIONS.md",
+      "sha256": "6a376752c92f6da10a6c220bf88350337755afc5b8a134d9b339d3a16ae54c0f",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/SPATIAL_FREQUENCY.md",
+      "sha256": "bd7c2a6e50649fd3d756de6b4b7aa91fc0aad68318249e254e4803da7b08314a",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/SPATIAL_FREQUENCY_HISTORICAL_EVIDENCE.md",
+      "sha256": "00f3d024cb3dbb9c1d9a4b5f926c2a36340f761bccafd4645791ededc8181b3d",
+      "role": "historical nonpremise"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B11_qubit_circuit.md",
+      "sha256": "14bc7c3913ef16e20c9f6a20a557a4befeec703bb963cab127dd37f933560cb9",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B12_native_lambda_ratio.md",
+      "sha256": "2808c219299f0a9f3181a8f8d077a238c240681f20789a905a7ed5275fc9aadb",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B13_ring_model_phase.md",
+      "sha256": "6a8716427decc5f30101567dc64b5cb3269fcba2892ff320c642807de096ce45",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B14_gravity_noether_source.md",
+      "sha256": "ec9f1b74958130432d0bc9ac133cf7f3509302024841a03fa6b36fedbcaa77a3",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B15_fermion_closure.md",
+      "sha256": "f55f8c56afeaa421a2f126e7c82a5019308a5010e95f288cf455ee7d4c7635cc",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B16_maxwell_closure.md",
+      "sha256": "ed5423a7319d747ad3747b3a6c2d54c462ec4396d42cc659b186b0774adceeda",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B17_anisotropic_cone_closure.md",
+      "sha256": "89b1ee1b2916dabd2929ebb504118c5885a3111b892a32b1e9e8f5a1080cf585",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B18_taste_isotropic_doublers.md",
+      "sha256": "2d7707976ab42d1a19d5c41edfb7ad03ae4ab008adf493c40bafbca9e2b71e81",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B19_generator_normalisation.md",
+      "sha256": "fc2e0078dcc7f7d986eb2ffb62049a4510ca557547003a09ffc0a77d3504841c",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B1_parameter_free_corner_step.md",
+      "sha256": "9f9704f53b8830a97bac47f369166ac071568f5a8fec550313cfe63ba6026f91",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B20_all_isotropic_step.md",
+      "sha256": "342634ae06760c949fb9a1007551a9e127e730e9c3e6c4a386bebd5230a32068",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B21_K1_equals_K2.md",
+      "sha256": "fbd3055589931e8209af13c7618cbe179a52037b531ff6eaa43fe1d671e6c6dd",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B22_qca_local_lapse.md",
+      "sha256": "766552b46ed73026a3874e521953935fa6de097474c4bf9da6e0a5de7555a2d4",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B23_dirac_level_screen.md",
+      "sha256": "e3d5a85cb09618b4c9a4adf0621562182bc5284b2d40a41959142d03febcc146",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B24_taste_enlarged_steps.md",
+      "sha256": "0aac00f8e7a5f91f1a2e39cf39fbe99b9720975e2ddf2be7fd4fe3a83b44df0d",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B25_spectral_tastes.md",
+      "sha256": "7871a1325767b07c2cf1eaa56a932a85fc3d6686ef6ed75f8941b0de98d190e3",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B4_gravity_g3.md",
+      "sha256": "d9b0ac36b9a93ae40aabfce36dad683d97ec169f365e4225a7b7b1c567a15f12",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B4b_induced_graviton_ward.md",
+      "sha256": "ae70a53a57a1bb888a9b0aacfc07ba9f933c817a474dcd31baef0483ac322ac2",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B5_record_clock.md",
+      "sha256": "82c94976d4c2ad8bd24aa468ffcc6acd10ba7dc5484fe98c3ad4d918632001aa",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B6_maxwell_winding.md",
+      "sha256": "ca697885982796ba32afd9a26ed2e8056d112a18f0485bf286f18c030cb480c5",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/B7_corner_LSM.md",
+      "sha256": "96685dd34eb36432d8796038eef839450d98eb9238fdf7d11d6e68ac12bb3bfd",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/C1_gap_the_doublers.md",
+      "sha256": "5a0b58e76b4972efd7d5fe22d380da109f057d759439d479eec8e4105019c443",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/C2_seagull_from_closure.md",
+      "sha256": "b32441e84d2f7bc17684416f73eb7869533aa99244e778d989f3eeab700dcca3",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/C3_exact_closure_nonlocality.md",
+      "sha256": "6307734b2998fe2f525e4b228f182da7bd0f8516cffe1d35cf40e87e64a08247",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/C4_h_normalisation.md",
+      "sha256": "f720471892622784d51fd2ab503ad301482fddf6c312b914405acf6c74e46c46",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/C4b_walker_closure.md",
+      "sha256": "48166301f1a3dbae5ccb7ee484f114fc88447d9c3cf35cdc68be97464d70c078",
+      "role": "live mathematical supporting argument"
+    },
+    {
+      "path": "outputs/scale_ladder_review_2026_10_18/mathematics/campaign/C6_rung0_to_rung1.md",
+      "sha256": "9ff4282a2f5df102a8e0eac7ef4f99a8727a30b5274ab19bd5ea57e39f3aa417",
+      "role": "live mathematical supporting argument"
+    }
+  ],
+  "historical_producers": "All submitted producers and frozen artifacts remain exactly recoverable through archive/scale_ladder_review_2026_10_18/MANIFEST.json and original-recovery.tar.gz. They are not imported, executed or promoted by this primary. Numerical assertions in their reports remain historical.",
+  "execution": "No primary or historical producer executed during authoring."
+}

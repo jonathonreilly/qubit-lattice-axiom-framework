@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/chirality_constructive_algebra.py
+runner_sha256: 58cf11b4b0f115b3706ab9415dd1f5c991682442d2086890452b282b504687f6
+input_fingerprint_sha256: 197af61a7b6022d55b35de71f7d5286976b4316779e98f69328d9e4af9a1bb30
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+[PASS] complete marker-word proper-overlap test {7: 3, 19: 70, 35: 7000}
+[PASS] cubic token joint-sector register ownership {'displacements_checked': 1268, 'compatible': 588}
+[PASS] full-space controlled SU3 and fundamental-conjugate singlet {'dimension': 128, 'Lie_error': 0.0, 'singlet_error': 0.0}
+[PASS] filter corner and Bernstein decomposition [((0, 0, 0), '-1', '1'), ((0, 0, 1), '0', '0'), ((0, 1, 0), '0', '0'), ((0, 1, 1), '1', '1'), ((1, 0, 0), '0', '0'), ((1, 0, 1), '1', '1'), ((1, 1, 0), '1', '1'), ((1, 1, 1), '2', '1')]
+[PASS] proper-cubic character multiplicities ['2', '1', '5', '2']
+[PASS] open Wilson boundary-row norm {'sizes': [2, 3, 5], 'momenta': [0, 0.13, 0.7, 3.141592653589793], 'max_error': np.float64(8.881784197001252e-16)}
+[PASS] free overlap inverse and analytic branch thresholds {'fixtures': 3, 'max_inverse_error': 1.5700924586837751e-15}
+[PASS] bare supplied scalar integral cancellation {'Watson_coefficient': '0', 'constant': '-1/96', 'scope': 'supplied stress/kernel, zero-mode prescription, no seagull or counterterm'}
+[PASS] full-S3 covariance and flat-column example {'alpha': '62/3', 'beta': '6', 'iso': '68/3', 'tet': '6', 'Hadamard': 'Fourier3'}
+per_element: supplied finite matrices, all marker words and exact coefficient identities are evaluated; no microscopic Standard Model supplier is inferred
+per_site: seven-qubit controlled generators and explicitly allocated token registers are checked; ground-state selection is an additional unresolved problem
+per_mode: all eight corners and selected free momentum fixtures are included; no full interacting spectrum or gap is certified
+per_block: supplied tensor representations, local singlets and finite Wilson blocks are checked; allowed invariant coefficients are not forced dynamics
+lattice_wide: translation-covariant algebraic constructions and conditional formulas only; continuum universality, chirality and physical reconstruction are not established
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

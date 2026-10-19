@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/chirality_endpoint_algebra.py
+runner_sha256: f4b2eee100bd8d7f8016b6fafcfb9a4bfd242974aef09e1476bc4e9e41dd5c96
+input_fingerprint_sha256: 197af61a7b6022d55b35de71f7d5286976b4316779e98f69328d9e4af9a1bb30
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.89
+status: ok
+----- stdout -----
+[PASS] all annihilator quartic coefficients {'components': 35960, 'Cl9_words': ['IIIX', 'IIIZ', 'IIEE', 'IEXE', 'XEZE', 'ZEZE', 'EIZE', 'EXXE', 'EZXE'], 'kappa': [1.5, -0.5, 0, 0]}
+[PASS] complete Majorana operator identity {'nonzero_coefficients': 5888, 'grades': [4], 'scalar': '0', 'quadratic_terms': 0}
+[PASS] endpoint antiunitary channel parities {'channels': 64, 'Theta_squared': -1, 'scope': 'local endpoint channels; no gap or Monte Carlo inference'}
+per_element: all 35960 annihilator quartic components and every generated Majorana coefficient are checked exactly in dyadic arithmetic
+per_site: one explicitly supplied 32-complex-mode vertex is checked; arbitrary interacting lattice states are not tested
+per_mode: all internal channel indices are enumerated; no spatial momentum spectrum or excitation gap is inferred
+per_block: complete local scalar, quadratic and quartic Clifford grades are compared; the wider coupling cone is not certified
+lattice_wide: local endpoint algebra and antiunitary parities only; lattice kinetics and all auxiliary-field histories need their own hypotheses
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

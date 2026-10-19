@@ -1,6 +1,6 @@
 {
  "edge_count": 16290,
- "node_count": 7294,
+ "node_count": 7298,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3346,9 +3346,21 @@
    "deps_hash": "9b4242982270",
    "out_degree": 7
   },
+  "chirality_constructive_finite_algebra_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "chirality_finite_reflection_kernels_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08": {
    "deps_hash": "92c36e250532",
    "out_degree": 3
+  },
+  "chirality_local_endpoint_algebra_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "chirality_record_typing_interface_2026-06-05": {
    "deps_hash": "afb32706c492",
@@ -19873,6 +19885,10 @@
   "scalar_vacuum_metric_inverse_bounded_theorem_note_2026-10-15": {
    "deps_hash": "f8150ff62aac",
    "out_degree": 2
+  },
+  "scale_ladder_cross_rung_invariants_corner_fermion_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "scale_ladder_gravity_canonical_carrier_census_bounded_theorem_note_2026-10-18": {
    "deps_hash": "e3b0c44298fc",

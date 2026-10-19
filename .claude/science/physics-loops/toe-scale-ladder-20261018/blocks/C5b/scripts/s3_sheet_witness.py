@@ -74,12 +74,12 @@ for W in (T2, T3):
         ok, phi = small_box_certificate(W, p, 0.1)
         lo_k, hi_k = p - 0.1, p + 0.1
         ch, rk = L.chern_box(W, lo_k, hi_k, 0.0, phi, 24) if ok else (np.nan, None)
-        tv = np.linalg.norm(np.linalg.solve(v.T, tilt))
+        tv = np.linalg.norm(np.linalg.solve(v, tilt))
         nod.append(dict(k=p, chi=chi, ch=ch, ok=ok, tv=tv))
         print(f'    level-0 Weyl node k={np.round(p, 6)} chi={chi:+d} (chi of Q: {chiQ:+d}) tilt={np.round(tilt, 4)} '
-              f'v sing.vals={np.round(np.linalg.svd(v, compute_uv=False), 4)} |v^-T t|={tv:.3f} box(0.1) certified={ok} Ch={ch:+.6f}')
+              f'v sing.vals={np.round(np.linalg.svd(v, compute_uv=False), 4)} |v^-1 t|={tv:.3f} box(0.1) certified={ok} Ch={ch:+.6f}')
     C.check(f'{W.name}: every level-0 node box surface certified level-free and phi-free inside', all(q['ok'] for q in nod) and len(nod) > 0)
-    C.check(f'{W.name}: all level-0 nodes are type-I (|v^-T tilt| < 1)', all(q['tv'] < 1 for q in nod))
+    C.check(f'{W.name}: all level-0 nodes are type-I (|v^-1 tilt| < 1)', all(q['tv'] < 1 for q in nod))
     C.check(f'{W.name}: per node box Ch(P_<) = chi (Lemma S)', all(abs(q['ch'] - q['chi']) < 1e-9 for q in nod))
     s = sum(q['chi'] for q in nod)
     print(f'  net chirality of the {len(nod)} isolated level-0 Weyl nodes: {s:+d}.  Theorem L with W3 = 0 then forces '

@@ -80,9 +80,9 @@ def minimise(S, u1=True, restarts=4):
     return best
 mc = minimise([(0,0,0),(1,0,0),(2,0,0)], u1=False, restarts=4)
 check("(D0) positive control: without U(1), collinear triple admits a non-diagonal commuting family (ZXZ-type), min G ~ 0", mc < 1e-8, f"{mc:.2e}")
-for S, name in [([(0,0,0),(1,0,0)], "bond"), ([(0,0,0),(1,0,0),(2,0,0)], "collinear triple"), ([(0,0,0),(1,0,0),(0,1,0)], "L-triple"),
-                ([(0,0,0),(1,0,0),(2,0,0),(3,0,0)], "4-segment (full 70-param U(1) ansatz, no Lemma V reduction)")]:
+for S, name in [([(0,0,0),(1,0,0)], "bond"), ([(0,0,0),(1,0,0),(2,0,0)], "collinear triple"), ([(0,0,0),(1,0,0),(0,1,0)], "L-triple")]:
     m = minimise(S, restarts=4 if len(S) < 4 else 3)
     check(f"(D) {name}: U(1) Hermitian h with unit hop part never has commuting translates (min G bounded away from 0)", m > 1e-3, f"min G = {m:.4f}")
 # (E) sanity of 'unforced' reality: 3x3-square-type gate with ZXZ-like non-U(1) structure exists (not U(1)); skipped
+print('(4-segment full-ansatz test is in rv1b_seg4_full_ansatz.py)')
 total()

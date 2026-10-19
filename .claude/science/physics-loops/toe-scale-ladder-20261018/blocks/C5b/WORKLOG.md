@@ -9,3 +9,4 @@
 - s3 run 1 (kept, 4 FAIL): coarse component analysis merged nodes into the single sheet component; and in T3 the third band e^{-2ikx} passed through the nodes. Fixed: nodes taken from the certified Q211 inventory, each given a small certified box; third band shifted by e^{-0.5i}. Final PASS=13 FAIL=0.
 - logs/ALL_TOTALS.log (scripts/sum_totals.sh): TOTAL: PASS=135 FAIL=0.
 - Outcome: obstruction (b). Theorem L (localization identity) + K => level-wise NN for all n. Witness shows clean-level hypothesis is sharp.
+- Review corrections applied (REVIEW.md): NN sign, Win hypothesis, cluster form for sheets, witness flux −4, PW −3, NN′ C¹, clean-level wording. s3 type-I parameter fixed to |v^{-1}t| and rerun (0.500 at all nodes; PASS=13 FAIL=0; previous log kept as s3_run2_superseded_...). ALL_TOTALS still PASS=135 FAIL=0. Model identifier in REVIEW.md header redacted to "separate agent context, same model as the author" per coordinator instruction.

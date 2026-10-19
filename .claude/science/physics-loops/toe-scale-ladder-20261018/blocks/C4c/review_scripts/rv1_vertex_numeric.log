@@ -7,5 +7,3 @@ PASS (C) L-triple: 200 random U(1) gates all fail translate-commutation, diagona
 PASS (C) skew triple: 200 random U(1) gates all fail translate-commutation, diagonal ones commute :: min generic=104
 PASS (D0) positive control: without U(1), collinear triple admits a non-diagonal commuting family (ZXZ-type), min G ~ 0 :: 7.53e-27
 PASS (D) bond: U(1) Hermitian h with unit hop part never has commuting translates (min G bounded away from 0) :: min G = 7.4074
-PASS (D) collinear triple: U(1) Hermitian h with unit hop part never has commuting translates (min G bounded away from 0) :: min G = 1.9608
-PASS (D) L-triple: U(1) Hermitian h with unit hop part never has commuting translates (min G bounded away from 0) :: min G = 7.4074

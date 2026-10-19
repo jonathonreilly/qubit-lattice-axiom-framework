@@ -1,6 +1,6 @@
 # C5b REVIEW: independent mathematical review of NOTE.md
 
-**Reviewer:** Claude Opus 5.5 (`claude-opus-5-5`), run as a subagent of the loop's orchestrating session. This is the same model
+**Reviewer:** reviewed in a separate agent context, same model as the author, run as a subagent of the loop's orchestrating session. This is the same model
 family as the worker, so it is **not** an independent human or cross-model audit. Date 2026-10-18/19.
 I read NOTE.md, WORKLOG.md, `scripts/s3_sheet_witness.py`, the `weyl_chirality` routine in `scripts/lib5b.py`, all the logs, and,
 for context, C5 NOTE (Theorem K) and C5 REVIEW.

@@ -1,0 +1,280 @@
+===== runner cache v1 =====
+runner: scripts/native_local_normal_form.py
+runner_sha256: 3318382964911c74270f24ea4a10e349eafc06a421e51b75d5d2b43508b1672a
+input_fingerprint_sha256: 5b90c6d9d2b30a7a018e8b7e52cd6497934c95fa7f17978bc0abdef1e150417c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+BEGIN_PROBE neutral_local_normal_form
+{"cancellation_error": 0.0, "K2_match_error": 0.0, "central_generator_norm": 0.7071067811865477, "central_vacuum_constant": -0.5, "uniform_annihilation_error": 0.0, "scope": "Finite algebra checks; no native pole, state selection or uniform remainder inferred from finite matrices"}
+END_PROBE neutral_local_normal_form completed
+BEGIN_PROBE neutral_packet_control
+{"packet": [{"lam": 0.1, "M": 32, "eta": 0.7498942093324559, "moment": 0.0090561548538306, "exact_moment": 0.00905615485383079, "tail_bound": 1.6111922628814017, "correlation_error_power_factor": 0.0032000000000000006, "relative_error_power_factor": 0.32000000000000006}, {"lam": 0.03, "M": 193, "eta": 0.6451194812038943, "moment": 0.0002622326687355958, "exact_moment": 0.00026223266873568547, "tail_bound": 0.7001281304617967, "correlation_error_power_factor": 0.00015632999999999996, "relative_error_power_factor": 0.1737}, {"lam": 0.01, "M": 1000, "eta": 0.5623413251903491, "moment": 9.849886676738251e-06, "exact_moment": 9.84988667663834e-06, "tail_bound": 0.31148158675242343, "correlation_error_power_factor": 1e-05, "relative_error_power_factor": 0.1}, {"lam": 0.003, "M": 6086, "eta": 0.4837713632823584, "moment": 2.6637479733082614e-07, "exact_moment": 2.6637479729953854e-07, "tail_bound": 0.12646501077292818, "correlation_error_power_factor": 4.92966e-07, "relative_error_power_factor": 0.054774}], "modes": [{"kappa": 0, "energy": 0.5624999999999999, "residue": 0.9374999999999999, "source_coefficient": 3.7499999999999996, "other_upper": 0.40633685686109927}, {"kappa": 0.001, "energy": 0.5625077033732737, "residue": 0.9374510846590695, "source_coefficient": 3.749804338636278, "other_upper": 0.40633034635058785}, {"kappa": 0.003, "energy": 0.5625693065880599, "residue": 0.9370602271209073, "source_coefficient": 3.7482409084836292, "other_upper": 0.4062782864059228}, {"kappa": 0.01, "energy": 0.5632670956394077, "residue": 0.9326715617181145, "source_coefficient": 3.730686246872458, "other_upper": 0.40568909818621324}, {"kappa": 0.03, "energy": 0.5691856498359062, "residue": 0.8980866966139307, "source_coefficient": 3.592346786455723, "other_upper": 0.40072898855226385}, {"kappa": 0.1, "energy": 0.6211496421674416, "residue": 0.7125309152538895, "source_coefficient": 2.850123661015558, "other_upper": 0.36025111019892087}]}
+END_PROBE neutral_packet_control completed
+RESULT_JSON {
+  "inputs": {
+    "archive/neutral_composite_continuation_review_2026_10_18/MANIFEST.json": "6b4779cb5b8414b5c915833c99a48d364cfb204125e6fa20e46675a597c11abb",
+    "docs/NATIVE_COLUMN_COLLECTIVE_MODE_NOTE_2026-10-18.md": "8851c4ec44c555eb7bf6da9f43fab2fd40947278f7c48b407b082c920b23c1db",
+    "docs/NATIVE_COLUMN_PLAQUETTE_SELECTION_NOTE_2026-10-18.md": "ee1e194b55505c5991dd7fe5466868491f5cedaa48b5637096265257b227493a",
+    "docs/NATIVE_DERIVED_COLLECTIVE_INTERACTION_NOTE_2026-10-18.md": "4ce6d968a21610a1cb17ad175c1329a4a4b222f811e584af7ad560554beaaf7e",
+    "docs/NATIVE_INFRARED_READOUT_NOTE_2026-10-18.md": "6c35a1d389419a7474b91425cceb4c4d27db07b8bb05d729b024fb127cc741ca",
+    "docs/NATIVE_LARGE_COLUMN_DYNAMICS_NOTE_2026-10-18.md": "3b9abe4bc6b63a53d3268dc8cfaf26103d8e69ec44dfea983487ed38bf5278b1",
+    "docs/NATIVE_LOCAL_NORMAL_FORM_NOTE_2026-10-18.md": "f7a21feeee63c90fd36024b292362c5a1b542689d2bb6a554433a59a7b1908ec",
+    "docs/NATIVE_NEUTRAL_DOMAIN_RESONANCE_NOTE_2026-10-18.md": "07c1d1cee2e5d9166ee5c5111cf4fd40281236de15ffca78a40647a6a2b285f3",
+    "docs/NATIVE_SCALAR_BAND_LOCAL_PROOF_NOTE_2026-10-18.md": "1f7fd979178a307cf94967e40a515f02e4fd770ccd70d4144459607ccbd1884a",
+    "docs/NATIVE_ZONE_BOUNDARY_COMPOSITE_NOTE_2026-10-18.md": "2b93dd1734f8ab3b6bc90c63594e108b41ab6fc810bcd7dc31067462956b50ee",
+    "docs/work_history/repo/review_feedback/NEUTRAL_CONTINUATION_BOUNDARIES_2026-10-18.md": "7f996bba4dd3089083bb6fb25167d3edc8cfd423c99287ad25d5b422e6c0e2b3",
+    "outputs/neutral_composite_continuation_review_2026_10_18/INPUT_CLOSURE.json": "759e83c41f9a2ac11ace61240389e14fde3abe79504cda33047665cc6ec8ae5b",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_boundary_vertex.py": "37452d09ab01bf6a8a76352c367351069ab6a95622393ef647cfe306328e0ee7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_effective.py": "f789866be82331c5d06b9115950c6a28006aa1cba1027359186e7a576df167a1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_fourth.py": "a3769e366bc7286ddeb2f178e6ca6824a10a91fc303cab77756c67fb83e16204",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_linked_fourth.py": "1b9de9a6d805b8c1c863df694f665f182147e579b5ac39d3db4ae49a098a232b",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_sixth.py": "b1ef959a9fa4e1280a418c15b9646dade2d0fd4d8a63e25a14ffc3e9b5ae5b8a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_sixth_exact.py": "c6731fddbcbbbcfe91d8c2a9e87786de99dae3d1f571a92c6ea28bc0944daba2",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_u1_probe.py": "edd50df2b5e01fe786434fe5477fd2089fa0b9265cdfec27bfe8b623d02812bd",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_tube_rung_control.py": "7cc12711321e26089016c3096bfc8294ec3090d02e98202f275a04161a739043",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_anisotropy_comparison.py": "f487c38663301cc8fb23f711e8e6a726f4d80377485662f2dcb8f738b48f79b9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_open_xy_comparison.py": "afae3959c5b4f0cf6c43659123c1a6936014fd2429ec39f63c39982bc186101c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_rung_discrete_symmetry.py": "134c049afcdb5a1f776663e7247bd7c693947fddfd8c8ab02ab28643a7bdc04e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_xy_readout.py": "3be0418e459ec56569621fad2730203333f0989aeb7d9bd71547a59bb633f366",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_exact_internal_factor.py": "e330a678e8a84a40acaf8cdf4e6dd5fcb45d342487bbedc1e66d7f1d1ff362c0",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_spectrum.py": "4fb0a54b26c387eff517b35bf959e88042b741e4fbadcd27fcf061cb2d0f7636",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_symmetry.py": "768726d6736a5d9b2cb5b437c1daafb85715b9040d041c9a222a31f141d0d187",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_tunnel.py": "f7e6f7865c6ba6e942db3311b5dc6b4287e7ed67e3cc2986aee002c94bfbfd5d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_dark_bound_math.py": "cd821809563dbf58bc94cf19b6c304eaf06685f06460e7b53e92b16aef5cb6b2",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_fourth_action.py": "08c2bbde3e51f48168afa5587eec4564115de1bcacaf823a67b919d01d6acb7a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_fourth_diagonal.py": "2fee020468cad24902e2659d22b77e45b920852cca30fd34b2c55b3b3130e0a4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_rational.py": "0516f65706926fd5235d7b23a297fa3b038cde4b0cd1f176e8c5d62bea5e896f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_resonance.py": "cd14169b2b9d5a0ff5f93d3c88cbaa1a29bd96876b03ad5ce2d3e4ce0b411193",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_third.py": "cc0afa75619e9abee8d65cb780fb1da9809460493fea4ebd7e551fb21571cff4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_fourth_overlap.py": "ce2abe5f6441e85cf431034fbea7241e6d01f58a86c70618bbf9f5d77b790bac",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_fourth_rational.py": "d6c8af36a836d1eb1fdd65e489ea7a6bb8ca02f92b8cdef58c0be53305afb9c4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_full_third_check.py": "bf31f58d4b47efeba270c3aac658d598ef3919d43b5df772feb24ecb3e4f995b",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_physical_q_source.py": "1e34c264518527172fe81070b4bd9f0c622f8aae3756fbf581b80c70abe4a6f1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_q_certificate.py": "7117d45884550d9e91291f663b204c5a45f8d3bfdda85eaf3ade38b54f46a540",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_source_dressing.py": "7676ef18c16301fcb9eb33983b5a949bddab7091e6bac37ce43cca380d647b9d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_band_scalar_reflection_sector.py": "c0a731c4b75ada19bfb344d062c6585d0d97498652afc87f5f1e8d9d46e62869",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_domain_boundary_local.py": "a64c6085f6998e5d2fe7d7b56a7eadada6032631ea3713785ff2901d2ea5d5d4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_scalar_explicit_basis.py": "638b21aba1240d49871bbd6574f16e2ddda099b230dc0b8321d99f819d20e5d9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_wall_connected.py": "a12994a5231b55f119c50b9c687b40ec9586ee90ddc991df9c79390669a0a802",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_wall_full_kernel.py": "f447dab9fb716b0c1ece4b5b59eedcc44dc0a7a7a77fdc8d09017641d4d69a20",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_scalar_explicit_basis.py": "638b21aba1240d49871bbd6574f16e2ddda099b230dc0b8321d99f819d20e5d9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_boundary.py": "6cb5c73f7b785b581c2c0bb7f8fdefa3b579e54820ad4bebfa55f5dd39153f69",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_exact_math.py": "47b6ba85b485650c6603f5b2febe447feaba6a43ba569220283b11a5de527632",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_large_feature.py": "2e24443e2125f13a664f03c87a96f951a14829b5ac98d3d4ca9cd69f720f6f65",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_local_second.py": "971a7b17e341a7324fd1a9fb524957ee7a173075f20d0af13a6014012c3feb75",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_local_normal_form.py": "d7f22b3537c28647afb5b78b94d9d8ca4a23f33e1d2b48096620ac0882d82848",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_packet_control.py": "26c4f6e01a85ed00374eb91c7e9e9f911f63052233b643e325b81c80cf4396cc",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9730/neutral_column_parity_native.py": "2b6e8560fd6c2cf15d83448b3746358bef937aa88c366e5293d7c47ce0ee5049",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9730/neutral_column_plaquette.py": "94aaba329f92a322e6cc52c98138670e5edf4a35e571989a461ae63803361a93",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_column_six_mode.py": "139716946d77aea3947332b8345849e1a0990db870e931b7b56d48c19a56c01e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_column_source_derivative.py": "171ee42c797ed3b41caca0543d3928f006a7bf76548da10d0069a8963f6ba1a3",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_rectangle_six.py": "1719b71435e78ade10338820dd32e1688a1dd588198e295b80505bbd92a379c8",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9717/tube_4.json": "47311399341ad594d1438eb1da0fb382ea9e68df234de16fd9086f6b5fccd7e8",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9720/neutral_tube_anisotropy.json": "27f1fe81178acb1b990d0a7beb07dcad2b9963a4be7e605650169b1d9876b68a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9724/neutral_kink_dark_fourth_action.json": "4a162174f1c3db2d9619aff9ba1f6503aa8cce4976a68448bfb9ea8b9b43f63b",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9724/neutral_kink_fourth_overlap.json": "aa18eb4c162be11a20436e9fdfb9ff4b7c4cebf8aa9a651234ad5b7f4b6f7fbb",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9726/neutral_native_periodic_pole.json": "b72485e438609cecd638ff703bc9ece8e934e5a4cbaef75ffa85a4bda9afd8dd",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9727/neutral_native_periodic_pi_pole.json": "57c6f13b35ac717897c75581c4066602bbd1baa1757b31a7e3bb608763ec47b9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/DEFERRED_TERMINAL_PROMOTION.md": "8f860d706b5da679553d32c0fcb461ea23a81eb07bb6128b194a255cb099f9f6",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/DERIVED_RUNG_COLLECTIVE.md": "e575dc62726b3e5b71c6d64374935c1cf0061c2c8a5e4f987e06e4486df07d0f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_BOUNDARY_VERTEX_CHECK.md": "15503895f71fb0dc2e3a05e12e29dfffb492f845e8540316fde6a4acfcd85b0f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_DERIVED_COLLECTIVE_REVIEW.md": "8b90f8bd4ee5b737e1b43098a55575866422884169a27fdfa7bfcd14c88b12a1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_RUNG_EFFECTIVE_CHECK.md": "530ca8bb4889850014e77018c6e988e95b47a02e32842406288d256ce43336c9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_RUNG_HIGHER_CHECK.md": "37fa4ca4cd9045614589afa10b1f9e04cf573ea4f2eb058f9f52cf7d6e6f1534",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_SIXTH_CHARGE_CHECK.md": "a1cb524ec80bf85051a0c647e0363130ef8953a82e09319c8d99c6a1755f7d0d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_TUBE_RUNG_CHECK.md": "79d8b6154242c54e609520283a3f6780e0ff9230c5b7997437ecae4f61771c29",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/NATIVE_BOUNDARY_VERTEX.md": "924f5a86a06e31bd32c649791d30ae19d4c6ab16adeda893dc701296c18f5713",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/SIXTH_ORDER_COLLECTIVE_PROCESS.md": "c8182c4cee5440404942856653e98ae9864da539964b20f2b4af6f0ee8f2a62e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/TUBE_RUNG_REDUCTION.md": "1da0424f2b0cfc1aef429f58ef02577e01c608c81e72883cedaac6f208a8fa26",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/DEFERRED_TERMINAL_PROMOTION.md": "847e7098026ed75152de1fed0df4a4aafd7e2ab3c13ba6f3b5fce3dce83b6ddc",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/DERIVED_INFRARED_ROUTE.md": "32322347ddb6c8fdbae6121af7c072c2d77a5654e64a3f60f518d1ee43ee9b64",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_ANISOTROPY_CHECK.md": "ea587203f8bdff6f39d294f99668d812d4b215a22ae292342cc5d5c5de26de70",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_DISCRETE_INFRARED_CHECK.md": "34ef05b5605dd6c16b9bb884014b01136f83b892d245eefe08ad659a5efa91f8",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_INFRARED_FINAL_REVIEW.md": "43e0da90813f1a1ea4ca2c119e249b35126e3a5ceeeffcb27b4a34a9c45585a7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_XY_READOUT_CHECK.md": "a05c740cae85adf9efcf2ccd796ce0de7402872a2f1b26e76bc35fb7007dac07",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/DEFERRED_TERMINAL_PROMOTION.md": "16a3129fd3345ca0df3e04bc31fa1ce38f21d3fec5d8710c312a3286138b56f4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/EXACT_INTERNAL_FACTOR.md": "d906c2bf12a1c73d1e8023056a3d48cbdf0c0aec45dcfa697986c617803cd4fd",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_EXACT_INTERNAL_FACTOR_CHECK.md": "1766683ad2f096e02731fc7bc9bdbde0ecb037725fd5980a3f6036616a3f626f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_LARGE_COLUMN_AUX_CHECK.md": "79a880d0c169a8f959b447637d93888fab1a495108fc9b9b512be4f1ba3e90c0",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_LARGE_COLUMN_FINAL_REVIEW.md": "71beb7ed4598c2a185ac9ab69818e4cb41dabe9c3952eaadbf150130ab47bcc7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_STRONG_READOUT_CHECK.md": "006cce2a1d7ab9be9b43717a7b5fc8b53319eead2a8e96176737dcb2d79e04f5",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_STRONG_TUNNEL_CHECK.md": "fa73dcc0c5b5da75f449ec1ba68d46a4e25fce7b51966378e8c46ca36624a5c0",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/STRONG_COLUMN_FEATURE.md": "7dbfd13f194ffeb1eb658e96348f8d08f1eb89c7818b1c759df6601ced344b23",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DARK_BOUND_CHECK.md": "8e62b8ac2bd748604f621a5818afce3c3e603bc7c358bef1d6f7e73a63a69fe1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DARK_FOURTH_CHECK.md": "68cef4611a5aea9299f1ef21a095b3b7b5ec45c3fc044dd2774174bcdc185759",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DOMAIN_RESONANCE_FINAL_REVIEW.md": "2e31d833d07928d527281d3f2b1dd6e30929e4505f62d9c8be3c1d30835dd7ff",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_FOURTH_CHECK.md": "15e2e293a38470f35c77ce010120ea1004977cddab90722b1c406ab077d8bd83",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_MOMENTUM_CHECK.md": "302cbc8505f2db6e49a2dd5ee5920a0259dbc5b57677a09fc8b5977b45d725c4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_RESONANCE_CHECK.md": "10544bcf1262c27c674711f135badfa9a17f8f9c448a4472b7d2701e4c152042",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_SECOND_CHECK.md": "aa7bea68d4dcb14aabe72ebb542541d122786f7ca11ebbee03d9a06e52fda59c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_THIRD_CHECK.md": "e86139e1ccc07bfb8cbc132d7013d0f14a1a766d8dfed6e251253f838759e5ad",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_LOCAL_BOUNDARY_CHECK.md": "c29312e26b0d2d3a069bb0b68b6ff6fa9f21d223587c24389f4a669cd2ff8c72",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_LOCAL_WALL_CHECK.md": "a987c2748c911243ffe47aa98acaba11cfc7ef6e97b31ad37b09cfdd74d4346f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_NATIVE_PERIODIC_POLE_CHECK.md": "51b8fb114c0b49b6aa97957c3414c51b1dd4a20de38af2f99ec28b82eb634709",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_SCALAR_BAND_CHECK.md": "a8a7f171cb8441ed835a1a25781be574b77504926cd31fde93973cf0563b0822",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/LOCAL_PROOF_FINAL_REVIEW.md": "5804aa9df1eb21eba664f097b555a7f2fdd8d19e69cc34423832cfe325056c01",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/DEFERRED_TERMINAL_PROMOTION.md": "b0ad74b2b5e10139c41e5bf52d340a9b842ea9887759bec7dba511a0b00db71e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_NATIVE_PI_POLE_CHECK.md": "c8e9034b56b61a2f6fd73df2e7efc6754e3d125f7adb0e13aeab3b937a1c0ae1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_BOUNDARY_CHECK.md": "917c92a074fd71c3ce48b608a8a9d721a5bd4ee9cff74ec363caa31c73ff1487",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_CROSSOVER_CHECK.md": "64c26afee7665e1081466b133d223a245e94346fdd1acec8dac9532deb402a3d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_LARGE_FEATURE_CHECK.md": "d3a62e6e814b3dbb2c0e040632a95ce6a973139d69dd2c53e357baf5b2d1b885",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_LOCAL_SECOND_CHECK.md": "9b65eda2f5c6e50e5386db05f80dfdfb3ee41c0a28a3d37badd722821c9dbcad",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/ZONE_BOUNDARY_FINAL_REVIEW.md": "5d17e46e71561ee2e508bc1a1ede853f113042beefed7e90144067a166c133f4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_PACKET_FILTER_CHECK.md": "c246d5006d2c39fbaa206c18a8783f0b6d8040bff17511aee34ed53a2215541e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_SOURCE_GRAM_FIBER_CHECK.md": "68afe5d8e0225eb3d5c07826134ee217264f0a6967fb281833f71bd65f04d0e2",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_UNIFORM_NORMAL_FORM_CHECK.md": "f176d9852cee9b58809e760cf2f106a40c6637daa23e49a9a050d21c2896ce68",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/NORMAL_FORM_FINAL_REVIEW.md": "3ff4aa1a356a219cf38d6b3f66779d416d62ac3f7b0bc0fa44a207f06252d09a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/COLUMN_PLAQUETTE_FINAL_REVIEW.md": "e444b36fa4fc2fafb9ca688930f0fea2e83cf51b08a3438958bfe8414b34997c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/INDEPENDENT_COLUMN_PLAQUETTE_CHECK.md": "3226fe3119ca908b5a19d5f11250e2d839846fc18f4ec429ef2120eb69a6234d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/INDEPENDENT_COLUMN_READOUT_CHECK.md": "afd9dc9fbe284e95d4cc0432bcf92c666e66b1e7d8a793888499ccb1c0d53466",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/COLUMN_COLLECTIVE_FINAL_REVIEW.md": "7f2eabb1710a9a987b01137ee19463a4d5fe03b571862cf02b79e86ad2b3d595",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/DEFERRED_TERMINAL_PROMOTION.md": "59482b9881e8c3637bef6e53000b70323b270bd5a7045e194aec7b05b4f10855",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_COLUMN_SOURCE_CHECK.md": "9f6d1ded1f717bffe80bb8f7683f49a518044eb395d31f258d8c7670f11dafb7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_COLUMN_STAR_CHECK.md": "bc09200504eb37f3934bb46e097892b62bae67302e3288718d053fee6fb0e1ae",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_SIX_LOOP_CHECK.md": "9e2861d6adeac6a9f62cbbd63c83873a71c85073c5b22331164a62eb08d9783c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/neutral_tube_anisotropy.py": "73f488ad7e8029834bccbd755effdf20563ef20d2124a971ddda4510df35c41a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_internal_occupation.json": "2d609402878fe5a327b6158e3eed9e0eefb4e735eecb2666cf2893551473c16e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_internal_occupation.py": "f687fd8e24bc4a1f7c221c068c7727ceb2df26a0e4dcb66bc77135eb67167bb3",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/stationary_2x2x8_plus.json": "056ec68a0ece08943d0dd1ed4daa549634a3288bdae75c6c957f9e89697c759c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9726/LOCAL_PROOF_PROVENANCE.md": "d66ba8edf4672b901755a1a3214638a2966e1dbae7ed34ae148f298827b4e8f7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9726/neutral_native_periodic_pole.py": "1e8db854d23891aa9c561d918308a13d0aa5325c2fdc9e5c0f3ea82fa30a945a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9727/ZONE_BOUNDARY_PROVENANCE.md": "8bb5d9128e7fece1798e1f1a8bcb14a550c9c39a49f4f4356637cd94794ea153",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9727/neutral_native_periodic_pi_pole.py": "7f8fceaca39d26fbabda3342c1eb7a41d4f8c96c5feeefbd8cbf4a04e5c359a5"
+  },
+  "local_algebra": {
+    "cancellation_error": 0.0,
+    "K2_match_error": 0.0,
+    "central_generator_norm": 0.7071067811865477,
+    "central_vacuum_constant": -0.5,
+    "uniform_annihilation_error": 0.0,
+    "scope": "Finite algebra checks; no native pole, state selection or uniform remainder inferred from finite matrices"
+  },
+  "packet": {
+    "packet": [
+      {
+        "lam": 0.1,
+        "M": 32,
+        "eta": 0.7498942093324559,
+        "moment": 0.0090561548538306,
+        "exact_moment": 0.00905615485383079,
+        "tail_bound": 1.6111922628814017,
+        "correlation_error_power_factor": 0.0032000000000000006,
+        "relative_error_power_factor": 0.32000000000000006
+      },
+      {
+        "lam": 0.03,
+        "M": 193,
+        "eta": 0.6451194812038943,
+        "moment": 0.0002622326687355958,
+        "exact_moment": 0.00026223266873568547,
+        "tail_bound": 0.7001281304617967,
+        "correlation_error_power_factor": 0.00015632999999999996,
+        "relative_error_power_factor": 0.1737
+      },
+      {
+        "lam": 0.01,
+        "M": 1000,
+        "eta": 0.5623413251903491,
+        "moment": 9.849886676738251e-06,
+        "exact_moment": 9.84988667663834e-06,
+        "tail_bound": 0.31148158675242343,
+        "correlation_error_power_factor": 1e-05,
+        "relative_error_power_factor": 0.1
+      },
+      {
+        "lam": 0.003,
+        "M": 6086,
+        "eta": 0.4837713632823584,
+        "moment": 2.6637479733082614e-07,
+        "exact_moment": 2.6637479729953854e-07,
+        "tail_bound": 0.12646501077292818,
+        "correlation_error_power_factor": 4.92966e-07,
+        "relative_error_power_factor": 0.054774
+      }
+    ],
+    "modes": [
+      {
+        "kappa": 0,
+        "energy": 0.5624999999999999,
+        "residue": 0.9374999999999999,
+        "source_coefficient": 3.7499999999999996,
+        "other_upper": 0.40633685686109927
+      },
+      {
+        "kappa": 0.001,
+        "energy": 0.5625077033732737,
+        "residue": 0.9374510846590695,
+        "source_coefficient": 3.749804338636278,
+        "other_upper": 0.40633034635058785
+      },
+      {
+        "kappa": 0.003,
+        "energy": 0.5625693065880599,
+        "residue": 0.9370602271209073,
+        "source_coefficient": 3.7482409084836292,
+        "other_upper": 0.4062782864059228
+      },
+      {
+        "kappa": 0.01,
+        "energy": 0.5632670956394077,
+        "residue": 0.9326715617181145,
+        "source_coefficient": 3.730686246872458,
+        "other_upper": 0.40568909818621324
+      },
+      {
+        "kappa": 0.03,
+        "energy": 0.5691856498359062,
+        "residue": 0.8980866966139307,
+        "source_coefficient": 3.592346786455723,
+        "other_upper": 0.40072898855226385
+      },
+      {
+        "kappa": 0.1,
+        "energy": 0.6211496421674416,
+        "residue": 0.7125309152538895,
+        "source_coefficient": 2.850123661015558,
+        "other_upper": 0.36025111019892087
+      }
+    ],
+    "scope": "Leading crossover and envelope controls only; constants of native remainder not numerically estimated"
+  },
+  "scope": "Finite algebra and leading packet checks; uniform proof is in note; no exact native pole or empirical test"
+}
+
+per_element: Local inversion and canonical second-order cancellation are checked directly.
+per_site: Finite local matrices retain the supplied rung and wall-number operators.
+per_mode: Prepared packet normalization, Fourier moments and leading source coefficient are tested.
+per_block: The separate analytic uniform proof remains inspectable; finite controls alone do not prove it.
+lattice_wide: Infinite native spectra, physical state/readout supply and observational identification remain outside these finite controls.
+Count unit: completed finite probe groups; aggregate predicates and child assertions must all succeed.
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

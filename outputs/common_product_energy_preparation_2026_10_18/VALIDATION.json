@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "base_revision": "abcec11eb9dbbd585c530f8003d0b0c18d703612",
+  "manifest_sha256": "6f90e8ecb85b759d8c672ee9a82d0dbcbe8e5aeeb4e454f82adca9653736f623",
+  "notes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_energy_preparation_publication/NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_ENERGY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "f757e877af607bf442455de52e09ccf8a50ffb0b3cc2c3fd43183c3b5b98d64a"
+    }
+  ],
+  "files": 4,
+  "provenance": 1,
+  "links": 6,
+  "nodes": 7256,
+  "edges": 16251,
+  "added_nodes": [
+    "common_product_energy_preparation_bounded_theorem_note_2026-10-18"
+  ],
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical installed source/provenance/link/topology checks only. Scoped analytical and exact finite matrix checks separately pinned; no retained audit."
+}

@@ -1,0 +1,7 @@
+# Zone-boundary provenance
+
+Root authored calculations in /private/tmp; independent focused checks preserve original source identities. Packaged imports/output paths are made portable in the historical campaign; current packaging awaits fresh capture. The first exact local-kernel test omitted ell8 output for an ell6 source and failed its full reconstruction assertion atL16; preserved diagnostic is not an accepted result. Corrected L18/20 with targetell1..8 avoids folding.
+
+Native periodic qpi full-H data are frozen auxiliary inputs, with replay code supplied; aggregate does not rerun the large eigensolve. Accepted indices0,2 at bothratios; allothers rejected, especially lambda.2 near-duplicateindex1. No empirical dataset used. The exact native scalar basis and local kernels are distinguished from the conditional infinite crossover operator. Abstract-level primary prior art was checked via arxiv0906.4462 and DOI10.1103/PhysRevB.103.144419; context only, no proof imports or general novelty claim.
+
+Current portable execution stages owning-head helper bytes and frozen inputs in a unique temporary directory. Heavy full-H producers are source provenance only, are not imported or executed by the primary, and retain their original fixed memmap paths solely for source inspectability. Any future producer replay requires a separate bounded execution plan. The full literal closure and source mapping are in `outputs/neutral_composite_continuation_review_2026_10_18/INPUT_CLOSURE.json`.

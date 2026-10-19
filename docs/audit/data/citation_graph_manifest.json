@@ -1,6 +1,6 @@
 {
- "edge_count": 16274,
- "node_count": 7278,
+ "edge_count": 16290,
+ "node_count": 7294,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3898,6 +3898,14 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "common_product_biased_operation_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "da8bd285647d",
+   "out_degree": 1
+  },
+  "common_product_energy_preparation_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "a05e4fd84fea",
+   "out_degree": 1
+  },
   "common_product_finite_seed_router_bounded_theorem_note_2026-10-18": {
    "deps_hash": "479caec56c20",
    "out_degree": 2
@@ -3928,6 +3936,22 @@
   },
   "common_product_refined_resources_bounded_theorem_note_2026-10-18": {
    "deps_hash": "3257a784e639",
+   "out_degree": 1
+  },
+  "common_product_resonant_launch_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "bdce3b6d97aa",
+   "out_degree": 1
+  },
+  "common_product_resonant_router_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "bdce3b6d97aa",
+   "out_degree": 1
+  },
+  "common_product_robustness_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "a05e4fd84fea",
+   "out_degree": 1
+  },
+  "common_product_single_control_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "d3b6d72799ea",
    "out_degree": 1
   },
   "common_product_stage_record_bounded_theorem_note_2026-10-18": {
@@ -15278,6 +15302,14 @@
    "deps_hash": "5bd92167bfd1",
    "out_degree": 3
   },
+  "native_column_collective_mode_note_2026-10-18": {
+   "deps_hash": "f068f101903f",
+   "out_degree": 2
+  },
+  "native_column_plaquette_selection_note_2026-10-18": {
+   "deps_hash": "4f3c49eb4bd8",
+   "out_degree": 2
+  },
   "native_common_frame_spin_connection_bounded_theorem_note_2026-09-13": {
    "deps_hash": "2448ffe58c24",
    "out_degree": 3
@@ -15301,6 +15333,10 @@
   "native_density_spectrum_and_readout_energy_bounded_theorem_note_2026-09-30": {
    "deps_hash": "3b1ea74dccf2",
    "out_degree": 2
+  },
+  "native_derived_collective_interaction_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "native_dilute_cell_interaction_proof_2026-09-30": {
    "deps_hash": "e778f34c48c5",
@@ -15598,6 +15634,10 @@
    "deps_hash": "5eda749e24eb",
    "out_degree": 4
   },
+  "native_infrared_readout_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "native_interacting_weyl_protected_paths_bounded_theorem_note_2026-09-13": {
    "deps_hash": "a6224d3271b4",
    "out_degree": 3
@@ -15614,6 +15654,10 @@
    "deps_hash": "97e3c6b16435",
    "out_degree": 3
   },
+  "native_large_column_dynamics_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "native_leading_ring_stoquastic_gauge_note_2026-09-08": {
    "deps_hash": "24394f690c47",
    "out_degree": 6
@@ -15625,6 +15669,10 @@
   "native_local_natural_ring_dynamics_note_2026-09-08": {
    "deps_hash": "4578d7bc3a88",
    "out_degree": 4
+  },
+  "native_local_normal_form_note_2026-10-18": {
+   "deps_hash": "55cc44f7f58e",
+   "out_degree": 3
   },
   "native_low_charge_u1_dictionary_note_2026-09-08": {
    "deps_hash": "7165261fd0dd",
@@ -15640,6 +15688,10 @@
   },
   "native_neutral_bond_algebra_note_2026-10-18": {
    "deps_hash": "7c4bf148687d",
+   "out_degree": 1
+  },
+  "native_neutral_domain_resonance_note_2026-10-18": {
+   "deps_hash": "95a47d7852a5",
    "out_degree": 1
   },
   "native_neutral_source_identification_note_2026-10-18": {
@@ -15689,6 +15741,10 @@
   "native_same_hamiltonian_ramp_note_2026-09-08": {
    "deps_hash": "856049afb739",
    "out_degree": 5
+  },
+  "native_scalar_band_local_proof_note_2026-10-18": {
+   "deps_hash": "17432f51de2d",
+   "out_degree": 1
   },
   "native_sixth_offdiagonal_sign_obstruction_note_2026-09-08": {
    "deps_hash": "04cc700b0857",
@@ -15781,6 +15837,10 @@
   "native_zero_penalty_optimal_flux_dispersion_note_2026-09-08": {
    "deps_hash": "3249f6ddff35",
    "out_degree": 4
+  },
+  "native_zone_boundary_composite_note_2026-10-18": {
+   "deps_hash": "f889be28a83f",
+   "out_degree": 1
   },
   "nature_discovery_directions_2026-04-11": {
    "deps_hash": "e3b0c44298fc",
@@ -23539,6 +23599,10 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.native_parity_entangler_history_2026-09-08": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.neutral_continuation_boundaries_2026-10-18": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

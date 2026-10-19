@@ -1,0 +1,1220 @@
+{
+  "scope": "Complete nine-unit live source closure; producer provenance and unavailable supplementary context do not imply execution or proof use. Primary identities are independently bound by the capture system, excluded here to avoid circular hashes.",
+  "sources": [
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/DERIVED_RUNG_COLLECTIVE.md",
+      "original_sha256": "4719d0df57b0b03b3c1b5a5c51d5139a859fe556105027ede56af17900a4b6cf",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/DERIVED_RUNG_COLLECTIVE.md",
+      "final_sha256": "e575dc62726b3e5b71c6d64374935c1cf0061c2c8a5e4f987e06e4486df07d0f"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_BOUNDARY_VERTEX_CHECK.md",
+      "original_sha256": "56d25a955b775865c98cee2bb53a2846b60b3158f82dffdc33c7a73f6959a63d",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_BOUNDARY_VERTEX_CHECK.md",
+      "final_sha256": "15503895f71fb0dc2e3a05e12e29dfffb492f845e8540316fde6a4acfcd85b0f"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_DERIVED_COLLECTIVE_REVIEW.md",
+      "original_sha256": "6a564be671d0a6bbf0dbb601b962b01aacf864840a3f8dad70957b071f223de3",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_DERIVED_COLLECTIVE_REVIEW.md",
+      "final_sha256": "8b90f8bd4ee5b737e1b43098a55575866422884169a27fdfa7bfcd14c88b12a1"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_RUNG_EFFECTIVE_CHECK.md",
+      "original_sha256": "3d9d8cb05f0800efb8f83a88894dd883c4ed25ee8e6f385bbe79d954516ff35c",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_RUNG_EFFECTIVE_CHECK.md",
+      "final_sha256": "1b72c5007ff6107601cf32876b5a8a46169234cf79c2303bba2abc456b365c91"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_RUNG_HIGHER_CHECK.md",
+      "original_sha256": "f1955f8c9a8f5b753cba080b9bef7df0774c1ac25611e88100dffe38140b4143",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_RUNG_HIGHER_CHECK.md",
+      "final_sha256": "7f315cae5aad95b7e41c5633b18ac8be023a87dfc3b1fafa7557225c0f4e4cf1"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_SIXTH_CHARGE_CHECK.md",
+      "original_sha256": "46e3db105e6f99aa3e04ef9c16e39d3d00f8d17083cd3a18ee7bdff72ded8e83",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_SIXTH_CHARGE_CHECK.md",
+      "final_sha256": "a1cb524ec80bf85051a0c647e0363130ef8953a82e09319c8d99c6a1755f7d0d"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_TUBE_RUNG_CHECK.md",
+      "original_sha256": "c75a177733f15093a89ed884cce275bf7e73cb0aa06b78dda4d7a8e55eb8e058",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_TUBE_RUNG_CHECK.md",
+      "final_sha256": "79d8b6154242c54e609520283a3f6780e0ff9230c5b7997437ecae4f61771c29"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/NATIVE_BOUNDARY_VERTEX.md",
+      "original_sha256": "5f5326191e356228fed48f82cf8fe196812a0556b7db38f93332eecedcafd02a",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/NATIVE_BOUNDARY_VERTEX.md",
+      "final_sha256": "924f5a86a06e31bd32c649791d30ae19d4c6ab16adeda893dc701296c18f5713"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/SIXTH_ORDER_COLLECTIVE_PROCESS.md",
+      "original_sha256": "38f16a0d607c22baf9eed5cd4175fd190e6efd9bda26db38f487a681aecd30dd",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/SIXTH_ORDER_COLLECTIVE_PROCESS.md",
+      "final_sha256": "c8182c4cee5440404942856653e98ae9864da539964b20f2b4af6f0ee8f2a62e"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/TUBE_RUNG_REDUCTION.md",
+      "original_sha256": "6d156efcfdf93ff5f39c85b1aeaa4eceb990d028bf7a6588641550468aa9a116",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/TUBE_RUNG_REDUCTION.md",
+      "final_sha256": "1da0424f2b0cfc1aef429f58ef02577e01c608c81e72883cedaac6f208a8fa26"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_boundary_vertex.py",
+      "original_sha256": "37452d09ab01bf6a8a76352c367351069ab6a95622393ef647cfe306328e0ee7",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_boundary_vertex.py",
+      "final_sha256": "37452d09ab01bf6a8a76352c367351069ab6a95622393ef647cfe306328e0ee7"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_effective.py",
+      "original_sha256": "f789866be82331c5d06b9115950c6a28006aa1cba1027359186e7a576df167a1",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_effective.py",
+      "final_sha256": "f789866be82331c5d06b9115950c6a28006aa1cba1027359186e7a576df167a1"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_fourth.py",
+      "original_sha256": "a3769e366bc7286ddeb2f178e6ca6824a10a91fc303cab77756c67fb83e16204",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_fourth.py",
+      "final_sha256": "a3769e366bc7286ddeb2f178e6ca6824a10a91fc303cab77756c67fb83e16204"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_linked_fourth.py",
+      "original_sha256": "1b9de9a6d805b8c1c863df694f665f182147e579b5ac39d3db4ae49a098a232b",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_linked_fourth.py",
+      "final_sha256": "1b9de9a6d805b8c1c863df694f665f182147e579b5ac39d3db4ae49a098a232b"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_model.py",
+      "original_sha256": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_model.py",
+      "final_sha256": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_sixth.py",
+      "original_sha256": "b1ef959a9fa4e1280a418c15b9646dade2d0fd4d8a63e25a14ffc3e9b5ae5b8a",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_sixth.py",
+      "final_sha256": "b1ef959a9fa4e1280a418c15b9646dade2d0fd4d8a63e25a14ffc3e9b5ae5b8a"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_sixth_exact.py",
+      "original_sha256": "c6731fddbcbbbcfe91d8c2a9e87786de99dae3d1f571a92c6ea28bc0944daba2",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_sixth_exact.py",
+      "final_sha256": "c6731fddbcbbbcfe91d8c2a9e87786de99dae3d1f571a92c6ea28bc0944daba2"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_u1_probe.py",
+      "original_sha256": "edd50df2b5e01fe786434fe5477fd2089fa0b9265cdfec27bfe8b623d02812bd",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_u1_probe.py",
+      "final_sha256": "edd50df2b5e01fe786434fe5477fd2089fa0b9265cdfec27bfe8b623d02812bd"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_tube_rung_control.py",
+      "original_sha256": "7cc12711321e26089016c3096bfc8294ec3090d02e98202f275a04161a739043",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_tube_rung_control.py",
+      "final_sha256": "7cc12711321e26089016c3096bfc8294ec3090d02e98202f275a04161a739043"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/tube_results/tube_4.json",
+      "original_sha256": "47311399341ad594d1438eb1da0fb382ea9e68df234de16fd9086f6b5fccd7e8",
+      "role": "frozen_live_input",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9717/tube_4.json",
+      "final_sha256": "47311399341ad594d1438eb1da0fb382ea9e68df234de16fd9086f6b5fccd7e8"
+    },
+    {
+      "pr": 9717,
+      "original_path": "docs/NATIVE_DERIVED_COLLECTIVE_INTERACTION_NOTE_2026-10-18.md",
+      "original_sha256": "69533d60ab9aa87cf2b857ca67d843f6394b6cf69c6e6c1a7e9b706db3f44fa9",
+      "role": "canonical_note_live",
+      "proposed_final_path": "docs/NATIVE_DERIVED_COLLECTIVE_INTERACTION_NOTE_2026-10-18.md",
+      "final_sha256": "4ce6d968a21610a1cb17ad175c1329a4a4b222f811e584af7ad560554beaaf7e"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/DERIVED_INFRARED_ROUTE.md",
+      "original_sha256": "b66d03edc10b48c2a60d3f0a42f41e62cce04374e54d7d7fa3cabd2870399d00",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/DERIVED_INFRARED_ROUTE.md",
+      "final_sha256": "32322347ddb6c8fdbae6121af7c072c2d77a5654e64a3f60f518d1ee43ee9b64"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_ANISOTROPY_CHECK.md",
+      "original_sha256": "4ef4e4c6b0d6bf7d2bb8ad25f2de43557b93ab16b5a5ac93e8b0ee1a39d76731",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_ANISOTROPY_CHECK.md",
+      "final_sha256": "ea587203f8bdff6f39d294f99668d812d4b215a22ae292342cc5d5c5de26de70"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_DISCRETE_INFRARED_CHECK.md",
+      "original_sha256": "52d78bf96616103add3e727de50c190cadbe1588ec6ae8bf0328a56955a30f09",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_DISCRETE_INFRARED_CHECK.md",
+      "final_sha256": "34ef05b5605dd6c16b9bb884014b01136f83b892d245eefe08ad659a5efa91f8"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_INFRARED_FINAL_REVIEW.md",
+      "original_sha256": "4b2e2d6b2f7976fc58ee677a51b391511d0a12f57b1ce23480b9a0c9ad15a89b",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_INFRARED_FINAL_REVIEW.md",
+      "final_sha256": "43e0da90813f1a1ea4ca2c119e249b35126e3a5ceeeffcb27b4a34a9c45585a7"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_XY_READOUT_CHECK.md",
+      "original_sha256": "f09cc777cc4c23e245da9b1fdb17806883bd9d176cd84b5e42c7ff7d6baeb9ca",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_XY_READOUT_CHECK.md",
+      "final_sha256": "a05c740cae85adf9efcf2ccd796ce0de7402872a2f1b26e76bc35fb7007dac07"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_anisotropy_comparison.py",
+      "original_sha256": "f487c38663301cc8fb23f711e8e6a726f4d80377485662f2dcb8f738b48f79b9",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_anisotropy_comparison.py",
+      "final_sha256": "f487c38663301cc8fb23f711e8e6a726f4d80377485662f2dcb8f738b48f79b9"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_open_xy_comparison.py",
+      "original_sha256": "afae3959c5b4f0cf6c43659123c1a6936014fd2429ec39f63c39982bc186101c",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_open_xy_comparison.py",
+      "final_sha256": "afae3959c5b4f0cf6c43659123c1a6936014fd2429ec39f63c39982bc186101c"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_discrete_symmetry.py",
+      "original_sha256": "134c049afcdb5a1f776663e7247bd7c693947fddfd8c8ab02ab28643a7bdc04e",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_rung_discrete_symmetry.py",
+      "final_sha256": "134c049afcdb5a1f776663e7247bd7c693947fddfd8c8ab02ab28643a7bdc04e"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_tube_anisotropy.json",
+      "original_sha256": "27f1fe81178acb1b990d0a7beb07dcad2b9963a4be7e605650169b1d9876b68a",
+      "role": "frozen_live_input",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9720/neutral_tube_anisotropy.json",
+      "final_sha256": "27f1fe81178acb1b990d0a7beb07dcad2b9963a4be7e605650169b1d9876b68a"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_tube_anisotropy.py",
+      "original_sha256": "73f488ad7e8029834bccbd755effdf20563ef20d2124a971ddda4510df35c41a",
+      "role": "frozen_producer_source_not_primary_execution",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/neutral_tube_anisotropy.py",
+      "final_sha256": "73f488ad7e8029834bccbd755effdf20563ef20d2124a971ddda4510df35c41a"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_xy_readout.py",
+      "original_sha256": "3be0418e459ec56569621fad2730203333f0989aeb7d9bd71547a59bb633f366",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_xy_readout.py",
+      "final_sha256": "3be0418e459ec56569621fad2730203333f0989aeb7d9bd71547a59bb633f366"
+    },
+    {
+      "pr": 9720,
+      "original_path": "docs/NATIVE_INFRARED_READOUT_NOTE_2026-10-18.md",
+      "original_sha256": "911300f6e92e1e584546dad9689d09bba64a4c845cfdde2a34feec677689922d",
+      "role": "canonical_note_live",
+      "proposed_final_path": "docs/NATIVE_INFRARED_READOUT_NOTE_2026-10-18.md",
+      "final_sha256": "6c35a1d389419a7474b91425cceb4c4d27db07b8bb05d729b024fb127cc741ca"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/EXACT_INTERNAL_FACTOR.md",
+      "original_sha256": "bebe07c21ada85c2d5f153517763a8a6b998eb7ff45933602c4b1f029f01c6f1",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/EXACT_INTERNAL_FACTOR.md",
+      "final_sha256": "d906c2bf12a1c73d1e8023056a3d48cbdf0c0aec45dcfa697986c617803cd4fd"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_EXACT_INTERNAL_FACTOR_CHECK.md",
+      "original_sha256": "b4cec1dd1f22d2bb3ae2dcdd3531992cabf569f8490583b39399b211d7785b98",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_EXACT_INTERNAL_FACTOR_CHECK.md",
+      "final_sha256": "c6c7cda818675b3d1169b771f67cb207f506f4273ec4371a4f03bb23d41e0714"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_LARGE_COLUMN_AUX_CHECK.md",
+      "original_sha256": "d3b921ec97a4996880b47ca60f6ea92334a8e60af464d8e1977159b3de3e87ea",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_LARGE_COLUMN_AUX_CHECK.md",
+      "final_sha256": "79a880d0c169a8f959b447637d93888fab1a495108fc9b9b512be4f1ba3e90c0"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_LARGE_COLUMN_FINAL_REVIEW.md",
+      "original_sha256": "71c57e91def6381343c7e221e55ea932d31f59c9e3defaac37d6cd9aa690c7f1",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_LARGE_COLUMN_FINAL_REVIEW.md",
+      "final_sha256": "71beb7ed4598c2a185ac9ab69818e4cb41dabe9c3952eaadbf150130ab47bcc7"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_STRONG_READOUT_CHECK.md",
+      "original_sha256": "21a85f7fcfdba1af9e8cf89b8d23f2269b6a0005b949b421c441b37da87f5442",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_STRONG_READOUT_CHECK.md",
+      "final_sha256": "006cce2a1d7ab9be9b43717a7b5fc8b53319eead2a8e96176737dcb2d79e04f5"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_STRONG_TUNNEL_CHECK.md",
+      "original_sha256": "7a0b0c23af2ccce2fa1c7e3afd721e3602eb309c121f433d5a8ca3882f4ac23f",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_STRONG_TUNNEL_CHECK.md",
+      "final_sha256": "fa73dcc0c5b5da75f449ec1ba68d46a4e25fce7b51966378e8c46ca36624a5c0"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/STRONG_COLUMN_FEATURE.md",
+      "original_sha256": "f263054cfdfba8d969430863eff05901918eca38ded1ac9e530c61e3f6274aac",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/STRONG_COLUMN_FEATURE.md",
+      "final_sha256": "7dbfd13f194ffeb1eb658e96348f8d08f1eb89c7818b1c759df6601ced344b23"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_exact_internal_factor.py",
+      "original_sha256": "e330a678e8a84a40acaf8cdf4e6dd5fcb45d342487bbedc1e66d7f1d1ff362c0",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_exact_internal_factor.py",
+      "final_sha256": "e330a678e8a84a40acaf8cdf4e6dd5fcb45d342487bbedc1e66d7f1d1ff362c0"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_internal_occupation.json",
+      "original_sha256": "2d609402878fe5a327b6158e3eed9e0eefb4e735eecb2666cf2893551473c16e",
+      "role": "frozen_auxiliary_context_not_proof_premise",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_internal_occupation.json",
+      "final_sha256": "2d609402878fe5a327b6158e3eed9e0eefb4e735eecb2666cf2893551473c16e"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_internal_occupation.py",
+      "original_sha256": "f687fd8e24bc4a1f7c221c068c7727ceb2df26a0e4dcb66bc77135eb67167bb3",
+      "role": "frozen_producer_source_not_primary_execution",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_internal_occupation.py",
+      "final_sha256": "f687fd8e24bc4a1f7c221c068c7727ceb2df26a0e4dcb66bc77135eb67167bb3"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_strong_spectrum.py",
+      "original_sha256": "4fb0a54b26c387eff517b35bf959e88042b741e4fbadcd27fcf061cb2d0f7636",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_spectrum.py",
+      "final_sha256": "4fb0a54b26c387eff517b35bf959e88042b741e4fbadcd27fcf061cb2d0f7636"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_strong_symmetry.py",
+      "original_sha256": "768726d6736a5d9b2cb5b437c1daafb85715b9040d041c9a222a31f141d0d187",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_symmetry.py",
+      "final_sha256": "768726d6736a5d9b2cb5b437c1daafb85715b9040d041c9a222a31f141d0d187"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_strong_tunnel.py",
+      "original_sha256": "f7e6f7865c6ba6e942db3311b5dc6b4287e7ed67e3cc2986aee002c94bfbfd5d",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_tunnel.py",
+      "final_sha256": "f7e6f7865c6ba6e942db3311b5dc6b4287e7ed67e3cc2986aee002c94bfbfd5d"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/stationary_2x2x8_plus.json",
+      "original_sha256": "056ec68a0ece08943d0dd1ed4daa549634a3288bdae75c6c957f9e89697c759c",
+      "role": "frozen_auxiliary_context_not_proof_premise",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/stationary_2x2x8_plus.json",
+      "final_sha256": "056ec68a0ece08943d0dd1ed4daa549634a3288bdae75c6c957f9e89697c759c"
+    },
+    {
+      "pr": 9722,
+      "original_path": "docs/NATIVE_LARGE_COLUMN_DYNAMICS_NOTE_2026-10-18.md",
+      "original_sha256": "58f87669d9e58a6f632bc6d1cb1d3e2ab43a9ef44a676f36c59fd180ab6f24ea",
+      "role": "canonical_note_live",
+      "proposed_final_path": "docs/NATIVE_LARGE_COLUMN_DYNAMICS_NOTE_2026-10-18.md",
+      "final_sha256": "3b9abe4bc6b63a53d3268dc8cfaf26103d8e69ec44dfea983487ed38bf5278b1"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_DARK_BOUND_CHECK.md",
+      "original_sha256": "2b46b11f5e3097b8b7d7d4f23ce69b970e912b16b0d7b9b83e33c802886b96ee",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DARK_BOUND_CHECK.md",
+      "final_sha256": "8e62b8ac2bd748604f621a5818afce3c3e603bc7c358bef1d6f7e73a63a69fe1"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_DARK_FOURTH_CHECK.md",
+      "original_sha256": "d7613c4e87c2e13bbc8936e3dfa8d0b77de0b972d9fdf94f53d4ef001706ff75",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DARK_FOURTH_CHECK.md",
+      "final_sha256": "68cef4611a5aea9299f1ef21a095b3b7b5ec45c3fc044dd2774174bcdc185759"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_DOMAIN_RESONANCE_FINAL_REVIEW.md",
+      "original_sha256": "62884c96402ff689348206bcbe6e151524f33ba60894df58764dc26ff8386bb1",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DOMAIN_RESONANCE_FINAL_REVIEW.md",
+      "final_sha256": "68e020ec0eb0f79d1b610295e130191b079687edd639f50dd51e3b24851ec6b3"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_KINK_FOURTH_CHECK.md",
+      "original_sha256": "b5d0a2aa0107b92e37f5513cd9882e558386634d86e34b86348363133dcaf1df",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_FOURTH_CHECK.md",
+      "final_sha256": "15e2e293a38470f35c77ce010120ea1004977cddab90722b1c406ab077d8bd83"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_KINK_MOMENTUM_CHECK.md",
+      "original_sha256": "6221d468d063f066b407dbc0175bb478156a32c393607b6bacf4f1e547573379",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_MOMENTUM_CHECK.md",
+      "final_sha256": "302cbc8505f2db6e49a2dd5ee5920a0259dbc5b57677a09fc8b5977b45d725c4"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_KINK_RESONANCE_CHECK.md",
+      "original_sha256": "353976446dc7c030381b608a99cd3afb4f9e478ccc94b369b41e3ec8e2e80d3f",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_RESONANCE_CHECK.md",
+      "final_sha256": "10544bcf1262c27c674711f135badfa9a17f8f9c448a4472b7d2701e4c152042"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_KINK_SECOND_CHECK.md",
+      "original_sha256": "fd5908f9b6c893c08e2de0e30258224f789574f10ed82a8ef0dbf5e8977f3a8a",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_SECOND_CHECK.md",
+      "final_sha256": "7a3dae579dcaf59a0b8e5dc9ef924683c897ec523abbda45594f1c0fca62c637"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_KINK_THIRD_CHECK.md",
+      "original_sha256": "07a32e5e35f856456682514ca422270ed1ba4f3f4d230dace6566a27f64f5c1a",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_THIRD_CHECK.md",
+      "final_sha256": "08cfcc3a59714c397095cfe89904d0c7549ad59d26936667fbc66b1f9af9b52f"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_dark_bound_math.py",
+      "original_sha256": "cd821809563dbf58bc94cf19b6c304eaf06685f06460e7b53e92b16aef5cb6b2",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_dark_bound_math.py",
+      "final_sha256": "cd821809563dbf58bc94cf19b6c304eaf06685f06460e7b53e92b16aef5cb6b2"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_core.py",
+      "original_sha256": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_core.py",
+      "final_sha256": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_dark_fourth_action.py",
+      "original_sha256": "08c2bbde3e51f48168afa5587eec4564115de1bcacaf823a67b919d01d6acb7a",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_fourth_action.py",
+      "final_sha256": "08c2bbde3e51f48168afa5587eec4564115de1bcacaf823a67b919d01d6acb7a"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_dark_fourth_diagonal.py",
+      "original_sha256": "2fee020468cad24902e2659d22b77e45b920852cca30fd34b2c55b3b3130e0a4",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_fourth_diagonal.py",
+      "final_sha256": "2fee020468cad24902e2659d22b77e45b920852cca30fd34b2c55b3b3130e0a4"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_dark_rational.py",
+      "original_sha256": "0516f65706926fd5235d7b23a297fa3b038cde4b0cd1f176e8c5d62bea5e896f",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_rational.py",
+      "final_sha256": "0516f65706926fd5235d7b23a297fa3b038cde4b0cd1f176e8c5d62bea5e896f"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_dark_resonance.py",
+      "original_sha256": "cd14169b2b9d5a0ff5f93d3c88cbaa1a29bd96876b03ad5ce2d3e4ce0b411193",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_resonance.py",
+      "final_sha256": "cd14169b2b9d5a0ff5f93d3c88cbaa1a29bd96876b03ad5ce2d3e4ce0b411193"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_dark_third.py",
+      "original_sha256": "cc0afa75619e9abee8d65cb780fb1da9809460493fea4ebd7e551fb21571cff4",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_third.py",
+      "final_sha256": "cc0afa75619e9abee8d65cb780fb1da9809460493fea4ebd7e551fb21571cff4"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_fourth_overlap.py",
+      "original_sha256": "ce2abe5f6441e85cf431034fbea7241e6d01f58a86c70618bbf9f5d77b790bac",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_fourth_overlap.py",
+      "final_sha256": "ce2abe5f6441e85cf431034fbea7241e6d01f58a86c70618bbf9f5d77b790bac"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_fourth_rational.py",
+      "original_sha256": "d6c8af36a836d1eb1fdd65e489ea7a6bb8ca02f92b8cdef58c0be53305afb9c4",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_fourth_rational.py",
+      "final_sha256": "d6c8af36a836d1eb1fdd65e489ea7a6bb8ca02f92b8cdef58c0be53305afb9c4"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_full_third_check.py",
+      "original_sha256": "bf31f58d4b47efeba270c3aac658d598ef3919d43b5df772feb24ecb3e4f995b",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_full_third_check.py",
+      "final_sha256": "bf31f58d4b47efeba270c3aac658d598ef3919d43b5df772feb24ecb3e4f995b"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_physical_q_source.py",
+      "original_sha256": "1e34c264518527172fe81070b4bd9f0c622f8aae3756fbf581b80c70abe4a6f1",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_physical_q_source.py",
+      "final_sha256": "1e34c264518527172fe81070b4bd9f0c622f8aae3756fbf581b80c70abe4a6f1"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_q_certificate.py",
+      "original_sha256": "7117d45884550d9e91291f663b204c5a45f8d3bfdda85eaf3ade38b54f46a540",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_q_certificate.py",
+      "final_sha256": "7117d45884550d9e91291f663b204c5a45f8d3bfdda85eaf3ade38b54f46a540"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_source_dressing.py",
+      "original_sha256": "7676ef18c16301fcb9eb33983b5a949bddab7091e6bac37ce43cca380d647b9d",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_source_dressing.py",
+      "final_sha256": "7676ef18c16301fcb9eb33983b5a949bddab7091e6bac37ce43cca380d647b9d"
+    },
+    {
+      "pr": 9724,
+      "original_path": "docs/NATIVE_NEUTRAL_DOMAIN_RESONANCE_NOTE_2026-10-18.md",
+      "original_sha256": "9196443ebcee90efe5282f062d2a68ff0d07b408aeea3b7ac8f2b071f8f4723d",
+      "role": "canonical_note_live",
+      "proposed_final_path": "docs/NATIVE_NEUTRAL_DOMAIN_RESONANCE_NOTE_2026-10-18.md",
+      "final_sha256": "07c1d1cee2e5d9166ee5c5111cf4fd40281236de15ffca78a40647a6a2b285f3"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_LOCAL_BOUNDARY_CHECK.md",
+      "original_sha256": "fcfce465cc7d3cfd674cafc2cc9903f0a2862dfd6984c8a20c1b0b643acc1564",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_LOCAL_BOUNDARY_CHECK.md",
+      "final_sha256": "c29312e26b0d2d3a069bb0b68b6ff6fa9f21d223587c24389f4a669cd2ff8c72"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_LOCAL_WALL_CHECK.md",
+      "original_sha256": "ffa3e85c211d1e57870325148461ce5663964d4d5470eec280321a940fd79765",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_LOCAL_WALL_CHECK.md",
+      "final_sha256": "a987c2748c911243ffe47aa98acaba11cfc7ef6e97b31ad37b09cfdd74d4346f"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_NATIVE_PERIODIC_POLE_CHECK.md",
+      "original_sha256": "9551ad317c122db922b061987fe7c2c4162f83d9a1972631d6c4f3a8357d8a6c",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_NATIVE_PERIODIC_POLE_CHECK.md",
+      "final_sha256": "51b8fb114c0b49b6aa97957c3414c51b1dd4a20de38af2f99ec28b82eb634709"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_SCALAR_BAND_CHECK.md",
+      "original_sha256": "d3c8069033c2eee98285a407f50759937cc0b2bb63b14a7465e27e4ccd67ea51",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_SCALAR_BAND_CHECK.md",
+      "final_sha256": "a8a7f171cb8441ed835a1a25781be574b77504926cd31fde93973cf0563b0822"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/LOCAL_PROOF_FINAL_REVIEW.md",
+      "original_sha256": "1b7ece1895faec31ffd327da52b3be6676aa5f8dfa8e44c645d4d3002896e634",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/LOCAL_PROOF_FINAL_REVIEW.md",
+      "final_sha256": "5804aa9df1eb21eba664f097b555a7f2fdd8d19e69cc34423832cfe325056c01"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/LOCAL_PROOF_PROVENANCE.md",
+      "original_sha256": "c37c323a485d21b3317bd51a9863c99f6fa96371c1d703c7ff75e4df751a9f24",
+      "role": "provenance_rewrite_live_and_preserve_original",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9726/LOCAL_PROOF_PROVENANCE.md",
+      "final_sha256": "d66ba8edf4672b901755a1a3214638a2966e1dbae7ed34ae148f298827b4e8f7"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_band_scalar_reflection_sector.py",
+      "original_sha256": "c0a731c4b75ada19bfb344d062c6585d0d97498652afc87f5f1e8d9d46e62869",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_band_scalar_reflection_sector.py",
+      "final_sha256": "c0a731c4b75ada19bfb344d062c6585d0d97498652afc87f5f1e8d9d46e62869"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_domain_boundary_local.py",
+      "original_sha256": "a64c6085f6998e5d2fe7d7b56a7eadada6032631ea3713785ff2901d2ea5d5d4",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_domain_boundary_local.py",
+      "final_sha256": "a64c6085f6998e5d2fe7d7b56a7eadada6032631ea3713785ff2901d2ea5d5d4"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_native_periodic_pole.json",
+      "original_sha256": "b72485e438609cecd638ff703bc9ece8e934e5a4cbaef75ffa85a4bda9afd8dd",
+      "role": "frozen_live_input",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9726/neutral_native_periodic_pole.json",
+      "final_sha256": "b72485e438609cecd638ff703bc9ece8e934e5a4cbaef75ffa85a4bda9afd8dd"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_native_periodic_pole.py",
+      "original_sha256": "1e8db854d23891aa9c561d918308a13d0aa5325c2fdc9e5c0f3ea82fa30a945a",
+      "role": "frozen_producer_source_not_primary_execution",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9726/neutral_native_periodic_pole.py",
+      "final_sha256": "1e8db854d23891aa9c561d918308a13d0aa5325c2fdc9e5c0f3ea82fa30a945a"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_scalar_explicit_basis.py",
+      "original_sha256": "638b21aba1240d49871bbd6574f16e2ddda099b230dc0b8321d99f819d20e5d9",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_scalar_explicit_basis.py",
+      "final_sha256": "638b21aba1240d49871bbd6574f16e2ddda099b230dc0b8321d99f819d20e5d9"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_wall_connected.py",
+      "original_sha256": "a12994a5231b55f119c50b9c687b40ec9586ee90ddc991df9c79390669a0a802",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_wall_connected.py",
+      "final_sha256": "a12994a5231b55f119c50b9c687b40ec9586ee90ddc991df9c79390669a0a802"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_wall_full_kernel.py",
+      "original_sha256": "f447dab9fb716b0c1ece4b5b59eedcc44dc0a7a7a77fdc8d09017641d4d69a20",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_wall_full_kernel.py",
+      "final_sha256": "f447dab9fb716b0c1ece4b5b59eedcc44dc0a7a7a77fdc8d09017641d4d69a20"
+    },
+    {
+      "pr": 9726,
+      "original_path": "docs/NATIVE_SCALAR_BAND_LOCAL_PROOF_NOTE_2026-10-18.md",
+      "original_sha256": "40201c97c4278f433301824adad876feab8054e2e8bd6f691bd61744da2f3973",
+      "role": "canonical_note_live",
+      "proposed_final_path": "docs/NATIVE_SCALAR_BAND_LOCAL_PROOF_NOTE_2026-10-18.md",
+      "final_sha256": "1f7fd979178a307cf94967e40a515f02e4fd770ccd70d4144459607ccbd1884a"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_NATIVE_PI_POLE_CHECK.md",
+      "original_sha256": "187688e2cba705b456b0365b04fe90df0183be8fc16168132cc48b15a4abc8b0",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_NATIVE_PI_POLE_CHECK.md",
+      "final_sha256": "c8e9034b56b61a2f6fd73df2e7efc6754e3d125f7adb0e13aeab3b937a1c0ae1"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_ZONE_BOUNDARY_CHECK.md",
+      "original_sha256": "bfa6315df335c972f87a87e6849805e70e82a47ab1051635ac697e9b120b7c6a",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_BOUNDARY_CHECK.md",
+      "final_sha256": "917c92a074fd71c3ce48b608a8a9d721a5bd4ee9cff74ec363caa31c73ff1487"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_ZONE_CROSSOVER_CHECK.md",
+      "original_sha256": "eddee71d0d1db67e9221c47c7b1e06520d14ecfa6e16ac6089e8cf384a13a00f",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_CROSSOVER_CHECK.md",
+      "final_sha256": "64c26afee7665e1081466b133d223a245e94346fdd1acec8dac9532deb402a3d"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_ZONE_LARGE_FEATURE_CHECK.md",
+      "original_sha256": "82dee6f9c8bfeafc720616a8af44872526233e6c825f43b7fe42ffa745000a0f",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_LARGE_FEATURE_CHECK.md",
+      "final_sha256": "d3a62e6e814b3dbb2c0e040632a95ce6a973139d69dd2c53e357baf5b2d1b885"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_ZONE_LOCAL_SECOND_CHECK.md",
+      "original_sha256": "680189a4fd5fe30e6feebe4a900d20f26f15b84532e66c21cf298a899524882b",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_LOCAL_SECOND_CHECK.md",
+      "final_sha256": "9b65eda2f5c6e50e5386db05f80dfdfb3ee41c0a28a3d37badd722821c9dbcad"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/ZONE_BOUNDARY_FINAL_REVIEW.md",
+      "original_sha256": "21c7f53bcb0f252b78bf3d3beddbcfe363cdabd503747f05d62296be51eb8c24",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/ZONE_BOUNDARY_FINAL_REVIEW.md",
+      "final_sha256": "3e5d5dcfded636e2cd661d3493abaaec2b99508e9aa473b5f48ad8d70230d432"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/ZONE_BOUNDARY_PROVENANCE.md",
+      "original_sha256": "bae32103191bdaeb224248478f341dfc0e6f710254f0315c0d5d04749a17ec75",
+      "role": "provenance_rewrite_live_and_preserve_original",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9727/ZONE_BOUNDARY_PROVENANCE.md",
+      "final_sha256": "8bb5d9128e7fece1798e1f1a8bcb14a550c9c39a49f4f4356637cd94794ea153"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_native_periodic_pi_pole.json",
+      "original_sha256": "57c6f13b35ac717897c75581c4066602bbd1baa1757b31a7e3bb608763ec47b9",
+      "role": "frozen_live_input",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9727/neutral_native_periodic_pi_pole.json",
+      "final_sha256": "57c6f13b35ac717897c75581c4066602bbd1baa1757b31a7e3bb608763ec47b9"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_native_periodic_pi_pole.py",
+      "original_sha256": "7f8fceaca39d26fbabda3342c1eb7a41d4f8c96c5feeefbd8cbf4a04e5c359a5",
+      "role": "frozen_producer_source_not_primary_execution",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9727/neutral_native_periodic_pi_pole.py",
+      "final_sha256": "7f8fceaca39d26fbabda3342c1eb7a41d4f8c96c5feeefbd8cbf4a04e5c359a5"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_zone_boundary.py",
+      "original_sha256": "6cb5c73f7b785b581c2c0bb7f8fdefa3b579e54820ad4bebfa55f5dd39153f69",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_boundary.py",
+      "final_sha256": "6cb5c73f7b785b581c2c0bb7f8fdefa3b579e54820ad4bebfa55f5dd39153f69"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_zone_exact_math.py",
+      "original_sha256": "47b6ba85b485650c6603f5b2febe447feaba6a43ba569220283b11a5de527632",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_exact_math.py",
+      "final_sha256": "47b6ba85b485650c6603f5b2febe447feaba6a43ba569220283b11a5de527632"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_zone_large_feature.py",
+      "original_sha256": "2e24443e2125f13a664f03c87a96f951a14829b5ac98d3d4ca9cd69f720f6f65",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_large_feature.py",
+      "final_sha256": "2e24443e2125f13a664f03c87a96f951a14829b5ac98d3d4ca9cd69f720f6f65"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_zone_local_second.py",
+      "original_sha256": "971a7b17e341a7324fd1a9fb524957ee7a173075f20d0af13a6014012c3feb75",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_local_second.py",
+      "final_sha256": "971a7b17e341a7324fd1a9fb524957ee7a173075f20d0af13a6014012c3feb75"
+    },
+    {
+      "pr": 9727,
+      "original_path": "docs/NATIVE_ZONE_BOUNDARY_COMPOSITE_NOTE_2026-10-18.md",
+      "original_sha256": "cb12cdf350d0a8c6b592333913976d4c6d491b16a176155331ad973cdfc36f5b",
+      "role": "canonical_note_live",
+      "proposed_final_path": "docs/NATIVE_ZONE_BOUNDARY_COMPOSITE_NOTE_2026-10-18.md",
+      "final_sha256": "2b93dd1734f8ab3b6bc90c63594e108b41ab6fc810bcd7dc31067462956b50ee"
+    },
+    {
+      "pr": 9728,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_PACKET_FILTER_CHECK.md",
+      "original_sha256": "dc7a722e7e093713232c252c37d1928060a365d18474bc02aa5f9dca514573c1",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_PACKET_FILTER_CHECK.md",
+      "final_sha256": "c246d5006d2c39fbaa206c18a8783f0b6d8040bff17511aee34ed53a2215541e"
+    },
+    {
+      "pr": 9728,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_SOURCE_GRAM_FIBER_CHECK.md",
+      "original_sha256": "00ddb8df99cb10424f37d294062026e9c4b4bcdb0ed478cadbb1570ee357e96e",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_SOURCE_GRAM_FIBER_CHECK.md",
+      "final_sha256": "68afe5d8e0225eb3d5c07826134ee217264f0a6967fb281833f71bd65f04d0e2"
+    },
+    {
+      "pr": 9728,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_UNIFORM_NORMAL_FORM_CHECK.md",
+      "original_sha256": "15566c58321dbb18f1746134d6b24f012a33baa8241c37d9744573c7e4b51bd6",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_UNIFORM_NORMAL_FORM_CHECK.md",
+      "final_sha256": "f176d9852cee9b58809e760cf2f106a40c6637daa23e49a9a050d21c2896ce68"
+    },
+    {
+      "pr": 9728,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/NORMAL_FORM_FINAL_REVIEW.md",
+      "original_sha256": "44e524eba9bd9dcf37af2aa231b773136d7c8aa1f0cae9caa67b5acc6ed5cc93",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/NORMAL_FORM_FINAL_REVIEW.md",
+      "final_sha256": "4416acdbbc6fcee56eb50c2256f2819e1f577ee50e47d0fd6c1aaf9d23e2008a"
+    },
+    {
+      "pr": 9728,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_local_normal_form.py",
+      "original_sha256": "d7f22b3537c28647afb5b78b94d9d8ca4a23f33e1d2b48096620ac0882d82848",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_local_normal_form.py",
+      "final_sha256": "d7f22b3537c28647afb5b78b94d9d8ca4a23f33e1d2b48096620ac0882d82848"
+    },
+    {
+      "pr": 9728,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_packet_control.py",
+      "original_sha256": "26c4f6e01a85ed00374eb91c7e9e9f911f63052233b643e325b81c80cf4396cc",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_packet_control.py",
+      "final_sha256": "26c4f6e01a85ed00374eb91c7e9e9f911f63052233b643e325b81c80cf4396cc"
+    },
+    {
+      "pr": 9728,
+      "original_path": "docs/NATIVE_LOCAL_NORMAL_FORM_NOTE_2026-10-18.md",
+      "original_sha256": "50ef43034beaa711576f7b4e9f1317206cfc73a1bbd601c87ae33f060833648d",
+      "role": "canonical_note_live",
+      "proposed_final_path": "docs/NATIVE_LOCAL_NORMAL_FORM_NOTE_2026-10-18.md",
+      "final_sha256": "f7a21feeee63c90fd36024b292362c5a1b542689d2bb6a554433a59a7b1908ec"
+    },
+    {
+      "pr": 9730,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/COLUMN_PLAQUETTE_FINAL_REVIEW.md",
+      "original_sha256": "618bc3a5b6a52d554d843a4b9b6b3db856906561c746869fddeb39c0f08a4c29",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/COLUMN_PLAQUETTE_FINAL_REVIEW.md",
+      "final_sha256": "e444b36fa4fc2fafb9ca688930f0fea2e83cf51b08a3438958bfe8414b34997c"
+    },
+    {
+      "pr": 9730,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_COLUMN_PLAQUETTE_CHECK.md",
+      "original_sha256": "bbb79ed6935817b95afadb8fecd54fd62ebcc457bbbd0f92a3ceb9e55a7359ef",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/INDEPENDENT_COLUMN_PLAQUETTE_CHECK.md",
+      "final_sha256": "3226fe3119ca908b5a19d5f11250e2d839846fc18f4ec429ef2120eb69a6234d"
+    },
+    {
+      "pr": 9730,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_COLUMN_READOUT_CHECK.md",
+      "original_sha256": "6bf59c48dc5bfb616f727d820e654b226b0b6d8627fca5710c1650e063f536d5",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/INDEPENDENT_COLUMN_READOUT_CHECK.md",
+      "final_sha256": "afd9dc9fbe284e95d4cc0432bcf92c666e66b1e7d8a793888499ccb1c0d53466"
+    },
+    {
+      "pr": 9730,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_column_parity_native.py",
+      "original_sha256": "2b6e8560fd6c2cf15d83448b3746358bef937aa88c366e5293d7c47ce0ee5049",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9730/neutral_column_parity_native.py",
+      "final_sha256": "2b6e8560fd6c2cf15d83448b3746358bef937aa88c366e5293d7c47ce0ee5049"
+    },
+    {
+      "pr": 9730,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_column_plaquette.py",
+      "original_sha256": "94aaba329f92a322e6cc52c98138670e5edf4a35e571989a461ae63803361a93",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9730/neutral_column_plaquette.py",
+      "final_sha256": "94aaba329f92a322e6cc52c98138670e5edf4a35e571989a461ae63803361a93"
+    },
+    {
+      "pr": 9730,
+      "original_path": "docs/NATIVE_COLUMN_PLAQUETTE_SELECTION_NOTE_2026-10-18.md",
+      "original_sha256": "9e2d8594a8882f3ac291d35b8e828fa6f0c809140907f96f482d89ac37658f6b",
+      "role": "canonical_note_live",
+      "proposed_final_path": "docs/NATIVE_COLUMN_PLAQUETTE_SELECTION_NOTE_2026-10-18.md",
+      "final_sha256": "ee1e194b55505c5991dd7fe5466868491f5cedaa48b5637096265257b227493a"
+    },
+    {
+      "pr": 9732,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/COLUMN_COLLECTIVE_FINAL_REVIEW.md",
+      "original_sha256": "ea58e80f3815e61623daedb4e2467f1b901b9386b057c19e6f36e81772354687",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/COLUMN_COLLECTIVE_FINAL_REVIEW.md",
+      "final_sha256": "7f2eabb1710a9a987b01137ee19463a4d5fe03b571862cf02b79e86ad2b3d595"
+    },
+    {
+      "pr": 9732,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_COLUMN_SOURCE_CHECK.md",
+      "original_sha256": "9a49fcd23913199c791b3cd8c10bd47d384e167b20410a8b96105c8a801eb513",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_COLUMN_SOURCE_CHECK.md",
+      "final_sha256": "9f6d1ded1f717bffe80bb8f7683f49a518044eb395d31f258d8c7670f11dafb7"
+    },
+    {
+      "pr": 9732,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_COLUMN_STAR_CHECK.md",
+      "original_sha256": "e1d6d663e533e74086b119ea9d9638257723a5da8faccd0b3cfe3218368b3ab4",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_COLUMN_STAR_CHECK.md",
+      "final_sha256": "bc09200504eb37f3934bb46e097892b62bae67302e3288718d053fee6fb0e1ae"
+    },
+    {
+      "pr": 9732,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/INDEPENDENT_SIX_LOOP_CHECK.md",
+      "original_sha256": "550b4ec45e5b5d7be39dff26b637d900cb55f42fa749b5368e5742a51f0b5450",
+      "role": "live_mathematical_support_extract_proof_keep_historical_verdict_in_archive",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_SIX_LOOP_CHECK.md",
+      "final_sha256": "9e2861d6adeac6a9f62cbbd63c83873a71c85073c5b22331164a62eb08d9783c"
+    },
+    {
+      "pr": 9732,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_column_six_mode.py",
+      "original_sha256": "139716946d77aea3947332b8345849e1a0990db870e931b7b56d48c19a56c01e",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_column_six_mode.py",
+      "final_sha256": "139716946d77aea3947332b8345849e1a0990db870e931b7b56d48c19a56c01e"
+    },
+    {
+      "pr": 9732,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_column_source_derivative.py",
+      "original_sha256": "171ee42c797ed3b41caca0543d3928f006a7bf76548da10d0069a8963f6ba1a3",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_column_source_derivative.py",
+      "final_sha256": "171ee42c797ed3b41caca0543d3928f006a7bf76548da10d0069a8963f6ba1a3"
+    },
+    {
+      "pr": 9732,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rectangle_six.py",
+      "original_sha256": "1719b71435e78ade10338820dd32e1688a1dd588198e295b80505bbd92a379c8",
+      "role": "live_helper",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_rectangle_six.py",
+      "final_sha256": "1719b71435e78ade10338820dd32e1688a1dd588198e295b80505bbd92a379c8"
+    },
+    {
+      "pr": 9732,
+      "original_path": "docs/NATIVE_COLUMN_COLLECTIVE_MODE_NOTE_2026-10-18.md",
+      "original_sha256": "0a2f9934c3708c14bbbb1493ad8c3ac3a666dc7719daac668d17092936427205",
+      "role": "canonical_note_live",
+      "proposed_final_path": "docs/NATIVE_COLUMN_COLLECTIVE_MODE_NOTE_2026-10-18.md",
+      "final_sha256": "8851c4ec44c555eb7bf6da9f43fab2fd40947278f7c48b407b082c920b23c1db"
+    },
+    {
+      "pr": 9717,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_basis.py",
+      "original_sha256": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/compass_sector_basis.py",
+      "final_sha256": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_model.py",
+      "original_sha256": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_rung_model.py",
+      "final_sha256": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_model.py",
+      "original_sha256": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_rung_model.py",
+      "final_sha256": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_model.py",
+      "original_sha256": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_rung_model.py",
+      "final_sha256": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_fourth_overlap.json",
+      "original_sha256": "aa18eb4c162be11a20436e9fdfb9ff4b7c4cebf8aa9a651234ad5b7f4b6f7fbb",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9724/neutral_kink_fourth_overlap.json",
+      "final_sha256": "aa18eb4c162be11a20436e9fdfb9ff4b7c4cebf8aa9a651234ad5b7f4b6f7fbb"
+    },
+    {
+      "pr": 9724,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_dark_fourth_action.json",
+      "original_sha256": "4a162174f1c3db2d9619aff9ba1f6503aa8cce4976a68448bfb9ea8b9b43f63b",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9724/neutral_kink_dark_fourth_action.json",
+      "final_sha256": "4a162174f1c3db2d9619aff9ba1f6503aa8cce4976a68448bfb9ea8b9b43f63b"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_core.py",
+      "original_sha256": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_kink_core.py",
+      "final_sha256": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_model.py",
+      "original_sha256": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_rung_model.py",
+      "final_sha256": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_basis.py",
+      "original_sha256": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/compass_sector_basis.py",
+      "final_sha256": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_solve.py",
+      "original_sha256": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/compass_sector_solve.py",
+      "final_sha256": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1"
+    },
+    {
+      "pr": 9726,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_extra_sector.py",
+      "original_sha256": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_extra_sector.py",
+      "final_sha256": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_scalar_explicit_basis.py",
+      "original_sha256": "638b21aba1240d49871bbd6574f16e2ddda099b230dc0b8321d99f819d20e5d9",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_scalar_explicit_basis.py",
+      "final_sha256": "638b21aba1240d49871bbd6574f16e2ddda099b230dc0b8321d99f819d20e5d9"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_core.py",
+      "original_sha256": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_kink_core.py",
+      "final_sha256": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_model.py",
+      "original_sha256": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_rung_model.py",
+      "final_sha256": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_basis.py",
+      "original_sha256": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/compass_sector_basis.py",
+      "final_sha256": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_solve.py",
+      "original_sha256": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/compass_sector_solve.py",
+      "final_sha256": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1"
+    },
+    {
+      "pr": 9727,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_extra_sector.py",
+      "original_sha256": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_extra_sector.py",
+      "final_sha256": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318"
+    },
+    {
+      "pr": 9728,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_rung_model.py",
+      "original_sha256": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_rung_model.py",
+      "final_sha256": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d"
+    },
+    {
+      "pr": 9728,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_kink_core.py",
+      "original_sha256": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+      "role": "dependency_copy_at_owning_frozen_head",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_kink_core.py",
+      "final_sha256": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_basis.py",
+      "original_sha256": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+      "role": "producer_only_import_provenance",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/compass_sector_basis.py",
+      "final_sha256": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_solve.py",
+      "original_sha256": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+      "role": "producer_only_import_provenance",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/compass_sector_solve.py",
+      "final_sha256": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1"
+    },
+    {
+      "pr": 9720,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_extra_sector.py",
+      "original_sha256": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+      "role": "producer_only_import_provenance",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/neutral_extra_sector.py",
+      "final_sha256": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_basis.py",
+      "original_sha256": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+      "role": "producer_only_import_provenance",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/compass_sector_basis.py",
+      "final_sha256": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_solve.py",
+      "original_sha256": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+      "role": "producer_only_import_provenance",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/compass_sector_solve.py",
+      "final_sha256": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1"
+    },
+    {
+      "pr": 9722,
+      "original_path": ".claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_extra_sector.py",
+      "original_sha256": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+      "role": "producer_only_import_provenance",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_extra_sector.py",
+      "final_sha256": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318"
+    },
+    {
+      "pr": 9717,
+      "original_path": "AUTHOR_DEFERRED_PASSAGES",
+      "original_sha256": null,
+      "role": "deferred_scientific_source_complete_terminal_passages",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/DEFERRED_TERMINAL_PROMOTION.md",
+      "final_sha256": "8f860d706b5da679553d32c0fcb461ea23a81eb07bb6128b194a255cb099f9f6"
+    },
+    {
+      "pr": 9720,
+      "original_path": "AUTHOR_DEFERRED_PASSAGES",
+      "original_sha256": null,
+      "role": "deferred_scientific_source_complete_terminal_passages",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/DEFERRED_TERMINAL_PROMOTION.md",
+      "final_sha256": "847e7098026ed75152de1fed0df4a4aafd7e2ab3c13ba6f3b5fce3dce83b6ddc"
+    },
+    {
+      "pr": 9722,
+      "original_path": "AUTHOR_DEFERRED_PASSAGES",
+      "original_sha256": null,
+      "role": "deferred_scientific_source_complete_terminal_passages",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/DEFERRED_TERMINAL_PROMOTION.md",
+      "final_sha256": "16a3129fd3345ca0df3e04bc31fa1ce38f21d3fec5d8710c312a3286138b56f4"
+    },
+    {
+      "pr": 9727,
+      "original_path": "AUTHOR_DEFERRED_PASSAGES",
+      "original_sha256": null,
+      "role": "deferred_scientific_source_complete_terminal_passages",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/DEFERRED_TERMINAL_PROMOTION.md",
+      "final_sha256": "74549bfe3275105ece30fc5189bf5337e192a5e4800e69286759c1db20b59b7d"
+    },
+    {
+      "pr": 9732,
+      "original_path": "AUTHOR_DEFERRED_PASSAGES",
+      "original_sha256": null,
+      "role": "deferred_scientific_source_complete_terminal_passages",
+      "proposed_final_path": "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/DEFERRED_TERMINAL_PROMOTION.md",
+      "final_sha256": "59482b9881e8c3637bef6e53000b70323b270bd5a7045e194aec7b05b4f10855"
+    }
+  ],
+  "additional_inputs": [
+    {
+      "path": "archive/neutral_composite_continuation_review_2026_10_18/MANIFEST.json",
+      "sha256": "6b4779cb5b8414b5c915833c99a48d364cfb204125e6fa20e46675a597c11abb"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/NEUTRAL_CONTINUATION_BOUNDARIES_2026-10-18.md",
+      "sha256": "7f996bba4dd3089083bb6fb25167d3edc8cfd423c99287ad25d5b422e6c0e2b3"
+    }
+  ],
+  "unavailable_supplement": "stationary_2x2x8_plus.npz is not supplied, reproduced or an exact-proof premise.",
+  "nonexecuted_producers": [
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/neutral_tube_anisotropy.py",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_internal_occupation.py",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9726/neutral_native_periodic_pole.py",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9727/neutral_native_periodic_pi_pole.py",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/compass_sector_basis.py",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/compass_sector_solve.py",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/neutral_extra_sector.py",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/compass_sector_basis.py",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/compass_sector_solve.py",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_extra_sector.py"
+  ]
+}

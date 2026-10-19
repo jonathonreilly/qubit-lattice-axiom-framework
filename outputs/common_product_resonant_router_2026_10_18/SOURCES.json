@@ -1,0 +1,1052 @@
+{
+  "schema_version": 2,
+  "base_revision": "259b175d74e5768447f3ab8f723917160f61df23",
+  "base_pr": 9721,
+  "main_revision": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "packet_destination": "outputs/common_product_resonant_router_2026_10_18",
+  "source_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934",
+  "status": "Selectively checked resonance-resolved finite router and explicit preparation re-instantiation; conditional and unaudited",
+  "note_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_router_publication/NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_RESONANT_ROUTER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "0be4cbc1110a199e320627d8232a850c40ba916252604eceff7c593c6b6de08e"
+    }
+  ],
+  "files": [
+    {
+      "path": "common_product_resonant_boundary_tail/PROPOSAL.md",
+      "sha256": "4eb53a9531fa977e0ef775aadd3a5ca37f4e3d42d83488d44a9fbc6d730150bc",
+      "destination": "source_checks/incoming/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete scoped argument/review for actual resonance-resolved finite router. Preserve sign, cutoff, phase, output and exposure premises; no native/permanent halt claim.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_boundary_tail/PROPOSAL.md",
+      "bytes": 15032
+    },
+    {
+      "path": "common_product_resonant_boundary_tail_check/REVIEW.md",
+      "sha256": "5a2e695674fb8710687f88a9921d5ea4ede9915735c2ebd7dc0f14ce94157ed0",
+      "destination": "source_checks/incoming/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete scoped argument/review for actual resonance-resolved finite router. Preserve sign, cutoff, phase, output and exposure premises; no native/permanent halt claim.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_boundary_tail_check/REVIEW.md",
+      "bytes": 8497
+    },
+    {
+      "path": "common_product_outgoing_pole_tail/PROPOSAL.md",
+      "sha256": "b2622fbb513ef30840ba719fb6f7725e9dba24cf74ebe48be5e790c0fa3e4b80",
+      "destination": "source_checks/outgoing/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete scoped argument/review for actual resonance-resolved finite router. Preserve sign, cutoff, phase, output and exposure premises; no native/permanent halt claim.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_outgoing_pole_tail/PROPOSAL.md",
+      "bytes": 17300
+    },
+    {
+      "path": "common_product_outgoing_pole_tail_check/REVIEW.md",
+      "sha256": "0071e81532263d56c37690be97aa25e30ed56a7fa6c394dbfc9243a646e62d00",
+      "destination": "source_checks/outgoing/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete scoped argument/review for actual resonance-resolved finite router. Preserve sign, cutoff, phase, output and exposure premises; no native/permanent halt claim.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_outgoing_pole_tail_check/REVIEW.md",
+      "bytes": 12246
+    },
+    {
+      "path": "common_product_resonant_halfline_tails/PROPOSAL.md",
+      "sha256": "43c0cc0560ccd6b9ce33345796f511fba63c5fa7360f9225e8d9b30ec1bf33b1",
+      "destination": "source_checks/halfline/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete scoped argument/review for actual resonance-resolved finite router. Preserve sign, cutoff, phase, output and exposure premises; no native/permanent halt claim.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_halfline_tails/PROPOSAL.md",
+      "bytes": 15197
+    },
+    {
+      "path": "common_product_resonant_halfline_tails_check/REVIEW.md",
+      "sha256": "1fa285544e38728389fb6bb9928b8bbd1e6a9612beb12cfde7532439b0935f9b",
+      "destination": "source_checks/halfline/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete scoped argument/review for actual resonance-resolved finite router. Preserve sign, cutoff, phase, output and exposure premises; no native/permanent halt claim.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_halfline_tails_check/REVIEW.md",
+      "bytes": 9812
+    },
+    {
+      "path": "common_product_resonant_late_tails/PROPOSAL.md",
+      "sha256": "a03139261c649546c00b7a15bef01c4a7387dfa6cc267f5c20e82f88b65f02d9",
+      "destination": "source_checks/late/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete scoped argument/review for actual resonance-resolved finite router. Preserve sign, cutoff, phase, output and exposure premises; no native/permanent halt claim.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_late_tails/PROPOSAL.md",
+      "bytes": 13034
+    },
+    {
+      "path": "common_product_resonant_late_tails_check/REVIEW.md",
+      "sha256": "ef27352b742abe064e5b8d71d09d7904182cea49c9dce2c77187aab8494b34cd",
+      "destination": "source_checks/late/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete scoped argument/review for actual resonance-resolved finite router. Preserve sign, cutoff, phase, output and exposure premises; no native/permanent halt claim.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_late_tails_check/REVIEW.md",
+      "bytes": 7992
+    },
+    {
+      "path": "common_product_resonant_router_resources/PROPOSAL.md",
+      "sha256": "970a84e5e9157c6a9d5934f00df59491de19e6c88402efe0e14b44e68bc1479b",
+      "destination": "source_checks/composition/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete scoped argument/review for actual resonance-resolved finite router. Preserve sign, cutoff, phase, output and exposure premises; no native/permanent halt claim.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_router_resources/PROPOSAL.md",
+      "bytes": 23097
+    },
+    {
+      "path": "common_product_resonant_router_resources_check/REVIEW.md",
+      "sha256": "cb0e278a7311651ea9f8d258089cba00a10fb03bb37457d2f8db1d5864af5da7",
+      "destination": "source_checks/composition/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete scoped argument/review for actual resonance-resolved finite router. Preserve sign, cutoff, phase, output and exposure premises; no native/permanent halt claim.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_router_resources_check/REVIEW.md",
+      "bytes": 13764
+    },
+    {
+      "path": "common_product_resonant_preparation_transfer/PROPOSAL.md",
+      "sha256": "b499a6eda66a91f021bc4673908ade89331ad09e2be7d3bc856480c36bbc9937",
+      "destination": "source_checks/preparation/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Actual new finite-family preparation re-instantiation; fresh full-output loader remains supplied; no cooling/native conclusion.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_preparation_transfer/PROPOSAL.md",
+      "bytes": 17964
+    },
+    {
+      "path": "common_product_resonant_preparation_transfer_check/REVIEW.md",
+      "sha256": "5287cd302a64313deb0d97be1d0c9998cded3a9923b09e59be33188dc60126fc",
+      "destination": "source_checks/preparation/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Actual new finite-family preparation re-instantiation; fresh full-output loader remains supplied; no cooling/native conclusion.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_preparation_transfer_check/REVIEW.md",
+      "bytes": 9789
+    }
+  ],
+  "provenance": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_router_publication/INTEGRATION_RECORD.md",
+      "destination": "INTEGRATION_RECORD.md",
+      "sha256": "a4e5d2b40896823ad51ca509bf37bb019e68cb92c9a9ddb0c41f22d553c58437"
+    }
+  ],
+  "path_resolution": "New source/check paths resolve through files destination mappings. Earlier composition/window/scalar/cell sources resolve through inherited_files repository_path. Preserve all inherited proof_dependency flags and scope exclusions; parent manifest remains authoritative for its own provenance.",
+  "limits": [
+    "Supplied endpoint seed, coherent input, empty other heads, exact compensated positive blocks and absent unwanted interactions.",
+    "Full finite supplied router and conditional supplied-state/loader preparation interface only. No automatic old literal processor or robustness transfer.",
+    "No native Hamiltonian identification, readout, permanent halt, capture or reset.",
+    "Same-model source-exposed analytical checks with shared ancestry, not blind replication or retained audit."
+  ],
+  "inherited_manifest": {
+    "path": "outputs/common_product_resonant_launch_2026_10_18/SOURCES.json",
+    "sha256": "9ba6207f5d91aa84b53fdc4e2f95bd4f10de69b6e5f480855d30387fd313b973",
+    "scope": "Exact parent9721 source mappings and exclusions preserved; only stated router/preparation ancestry used. Resolve original relative source paths by parent destination mappings."
+  },
+  "inherited_files": [
+    {
+      "path": "common_product_resonance_tail/PROPOSAL.md",
+      "sha256": "306174fb0a884c62d5c6de401492a742a3d8a55670ef273f9d376258e531c002",
+      "destination": "source_checks/survival/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete survival argument or scoped review; no automatic router transfer; preserve source-exposure limits.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonance_tail/PROPOSAL.md",
+      "bytes": 10383,
+      "repository_path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/survival/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_resonance_tail_check/REVIEW.md",
+      "sha256": "de9dbd20bf873f194d969ec6570e77224a2dfb192ba3ac4035b0933fc3d610bd",
+      "destination": "source_checks/survival/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete survival argument or scoped review; no automatic router transfer; preserve source-exposure limits.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonance_tail_check/REVIEW.md",
+      "bytes": 7399,
+      "repository_path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/survival/REVIEW.md"
+    },
+    {
+      "path": "common_product_geometric_source_profile/PROPOSAL.md",
+      "sha256": "be2ab9da4b62ca7f595c17fea5ec6e62849cdada2c34416154996ad15180538e",
+      "destination": "source_checks/geometric/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete geometric argument or scoped review; no automatic router transfer; preserve source-exposure limits.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_geometric_source_profile/PROPOSAL.md",
+      "bytes": 15295,
+      "repository_path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/geometric/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_geometric_source_profile_check/REVIEW.md",
+      "sha256": "cfd880ac1dcd866fe47fd51c7b8f29764270fc028e67e540c1cb1a6b1f86dfed",
+      "destination": "source_checks/geometric/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete geometric argument or scoped review; no automatic router transfer; preserve source-exposure limits.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_geometric_source_profile_check/REVIEW.md",
+      "bytes": 10906,
+      "repository_path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/geometric/REVIEW.md"
+    },
+    {
+      "path": "common_product_resonant_launch_window/PROPOSAL.md",
+      "sha256": "c5acbc2c71cf352563e196bfb24225590f2f02718a86d39cc611461fadff5e5a",
+      "destination": "source_checks/window/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete window argument or scoped review; no automatic router transfer; preserve source-exposure limits.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_launch_window/PROPOSAL.md",
+      "bytes": 14421,
+      "repository_path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/window/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_resonant_launch_window_check/REVIEW.md",
+      "sha256": "539037ccb03cd5c2641774f890362cc07b911cd8fcea6d41ee945a51bf7aa649",
+      "destination": "source_checks/window/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete window argument or scoped review; no automatic router transfer; preserve source-exposure limits.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_launch_window_check/REVIEW.md",
+      "bytes": 9469,
+      "repository_path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/window/REVIEW.md"
+    },
+    {
+      "path": "common_product_resonant_finite_launch/PROPOSAL.md",
+      "sha256": "41878812eb8afeb214cb9deb8b0da976fcf200542dd7675237fe14efd360e880",
+      "destination": "source_checks/finite/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete finite argument or scoped review; no automatic router transfer; preserve source-exposure limits.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_finite_launch/PROPOSAL.md",
+      "bytes": 13022,
+      "repository_path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/finite/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_resonant_finite_launch_check/REVIEW.md",
+      "sha256": "1c408ca6d88e995b810bfb9d8d583b3fd8616947bedd327e6cb5ac923c721203",
+      "destination": "source_checks/finite/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete finite argument or scoped review; no automatic router transfer; preserve source-exposure limits.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_resonant_finite_launch_check/REVIEW.md",
+      "bytes": 9303,
+      "repository_path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/finite/REVIEW.md"
+    },
+    {
+      "path": "common_product_biased_writer_scattering/PROPOSAL.md",
+      "sha256": "dfe071282ac3d160073b85caa0bd11d4e1834e58278e1da8a3c354fec5440c18",
+      "destination": "source_checks/writer/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete writer argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_writer_scattering/PROPOSAL.md",
+      "bytes": 14929,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/writer/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_biased_writer_scattering/CORRECTION.md",
+      "sha256": "639ae4101b142c70a56d1967bb8909d3b745e308a93865c3fc3a533fe9bb7b8c",
+      "destination": "source_checks/writer/CORRECTION.md",
+      "proof_dependency": true,
+      "scope": "Complete writer argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_writer_scattering/CORRECTION.md",
+      "bytes": 978,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/writer/CORRECTION.md"
+    },
+    {
+      "path": "common_product_biased_writer_scattering_check/REVIEW.md",
+      "sha256": "c568fe01ce4c6e9e89e6488808bb39c9ba7a98e1df4b0fc5bcc8d21439315829",
+      "destination": "source_checks/writer/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete writer argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_writer_scattering_check/REVIEW.md",
+      "bytes": 12289,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/writer/REVIEW.md"
+    },
+    {
+      "path": "common_product_biased_record_network/PROPOSAL.md",
+      "sha256": "cdf35dd3f9a8ea32ce0b52745ac00756885dba014d67db7e12f706e58e63b666",
+      "destination": "source_checks/network/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete network argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_record_network/PROPOSAL.md",
+      "bytes": 18998,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/network/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_biased_record_network_check/REVIEW.md",
+      "sha256": "1bd4a2878923495df99a219cce1c520cc03674bce2da5ff1d61d64d0940f8d40",
+      "destination": "source_checks/network/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete network argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_record_network_check/REVIEW.md",
+      "bytes": 12461,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/network/REVIEW.md"
+    },
+    {
+      "path": "common_product_biased_record_packet/PROPOSAL.md",
+      "sha256": "cf080f0dae5bf71021fe91533fc97355ceaaadb5db6f3d3145e3a911c8f3ffcf",
+      "destination": "source_checks/packet/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete packet argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_record_packet/PROPOSAL.md",
+      "bytes": 22311,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/packet/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_biased_record_packet_check/REVIEW.md",
+      "sha256": "315a618f389598fe8443a8ed3cdf8c39180b65ba223c4de2a359be4e218ea916",
+      "destination": "source_checks/packet/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete packet argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_record_packet_check/REVIEW.md",
+      "bytes": 12963,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/packet/REVIEW.md"
+    },
+    {
+      "path": "common_product_biased_phase_envelopes/PROPOSAL.md",
+      "sha256": "54e054cbe0238590de69aced0d49a9d162f31c1503e105fe70b6e46047c6d3bc",
+      "destination": "source_checks/phase/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete phase argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_phase_envelopes/PROPOSAL.md",
+      "bytes": 3952,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/phase/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_biased_phase_envelopes_check/REVIEW.md",
+      "sha256": "a7947be2735e66eae24dcd530c94da8167467c7d7b3cfc279ad83c9821d218b9",
+      "destination": "source_checks/phase/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete phase argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_phase_envelopes_check/REVIEW.md",
+      "bytes": 7559,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/phase/REVIEW.md"
+    },
+    {
+      "path": "common_product_biased_record_finite_seed/PROPOSAL.md",
+      "sha256": "532866ed3e3d9117906c4f5b6be3839fdc45c522bae727d1980e724ad11b7123",
+      "destination": "source_checks/finite/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete finite argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_record_finite_seed/PROPOSAL.md",
+      "bytes": 24786,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/finite/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_biased_record_finite_seed_check/REVIEW.md",
+      "sha256": "5ef953f745c598888b329aa8fafa94d226a18f2cc01fa57f09b165e0e7a1a936",
+      "destination": "source_checks/finite/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete finite argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_record_finite_seed_check/REVIEW.md",
+      "bytes": 15119,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/finite/REVIEW.md"
+    },
+    {
+      "path": "common_product_biased_record_resource_split/PROPOSAL.md",
+      "sha256": "556956724f545b8241171490a990e71e1c08eb1e1e67d84a82e6a44d2162a49b",
+      "destination": "source_checks/resources/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete resources argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_record_resource_split/PROPOSAL.md",
+      "bytes": 17834,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/resources/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_biased_record_resource_split_check/REVIEW.md",
+      "sha256": "0a05d11b377f1e4318aae54227b5a3afa90d829b207acc05f745e5fb4ef01965",
+      "destination": "source_checks/resources/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete resources argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_record_resource_split_check/REVIEW.md",
+      "bytes": 13728,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/resources/REVIEW.md"
+    },
+    {
+      "path": "common_product_biased_record_preparation/PROPOSAL.md",
+      "sha256": "9979b614d77b98bf8bc63b6b87b69305beb7cf7607adf5722ae57b759728627e",
+      "destination": "source_checks/preparation/PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Complete preparation argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_record_preparation/PROPOSAL.md",
+      "bytes": 24824,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/preparation/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_biased_record_preparation_check/REVIEW.md",
+      "sha256": "162eddafa64f5b71afefea600f8811461d6a6b71ec60e16e2a8d9cc79c41e578",
+      "destination": "source_checks/preparation/REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Complete preparation argument or scoped review; preserve all conditional premises and exposure.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_biased_record_preparation_check/REVIEW.md",
+      "bytes": 12555,
+      "repository_path": "outputs/common_product_biased_operation_2026_10_18/source_checks/preparation/REVIEW.md"
+    },
+    {
+      "path": "common_product_energy_blank_interface/PROPOSAL.md",
+      "destination": "source_checks/head_energy/PROPOSAL.md",
+      "sha256": "e6df21d39a9673b7e396390b64986a9e0deb74223540c975c14675a7f6fec668",
+      "proof_dependency": true,
+      "status": "Complete source and grouped distinct check fully ROOT read; conditional scope only",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_energy_blank_interface/PROPOSAL.md",
+      "bytes": 21898,
+      "repository_path": "outputs/common_product_energy_preparation_2026_10_18/source_checks/head_energy/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_record_ground_preparation/PROPOSAL.md",
+      "destination": "source_checks/record_ground/PROPOSAL.md",
+      "sha256": "aaa0786b19ec5b0c37923e712fe8f9b80c3490a1c495a7bb5f2482c97402a1bc",
+      "proof_dependency": true,
+      "status": "Complete source and grouped distinct check fully ROOT read; conditional scope only",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_record_ground_preparation/PROPOSAL.md",
+      "bytes": 15867,
+      "repository_path": "outputs/common_product_energy_preparation_2026_10_18/source_checks/record_ground/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_energy_preparation_check/REVIEW.md",
+      "destination": "source_checks/REVIEW.md",
+      "sha256": "f7156129dbe665ba0951bbc92f49b4a22b8b577801890a78a1cbb3e6b2f4aea7",
+      "proof_dependency": true,
+      "status": "Complete source and grouped distinct check fully ROOT read; conditional scope only",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_energy_preparation_check/REVIEW.md",
+      "bytes": 18346,
+      "repository_path": "outputs/common_product_energy_preparation_2026_10_18/source_checks/REVIEW.md"
+    },
+    {
+      "path": "blank_supply_opportunity/ASSESSMENT.md",
+      "destination": "history/ASSESSMENT.md",
+      "sha256": "0eab0fc5eed427936637115f9daba30468a9e23fd94a7461d5aafd1d90bbd287",
+      "proof_dependency": false,
+      "status": "Authoring opportunity assessment; historical context, not theorem evidence",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/blank_supply_opportunity/ASSESSMENT.md",
+      "bytes": 14174,
+      "repository_path": "outputs/common_product_energy_preparation_2026_10_18/history/ASSESSMENT.md"
+    },
+    {
+      "path": "common_product_single_control_router/PROPOSAL.md",
+      "destination": "source_checks/common_product_single_control_router/PROPOSAL.md",
+      "sha256": "76b5fd9bdf7a1609dfbc981211a508991a6a24c53686e26f28907210007e1b01",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_single_control_router/PROPOSAL.md",
+      "bytes": 22595,
+      "repository_path": "outputs/common_product_single_control_2026_10_18/source_checks/common_product_single_control_router/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_single_control_router_check/REVIEW.md",
+      "destination": "source_checks/common_product_single_control_router_check/REVIEW.md",
+      "sha256": "549bf5e4862f9ad384fddaca6b6e73ae6c4da74c397b981c93a2d16473b418d0",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_single_control_router_check/REVIEW.md",
+      "bytes": 16128,
+      "repository_path": "outputs/common_product_single_control_2026_10_18/source_checks/common_product_single_control_router_check/REVIEW.md"
+    },
+    {
+      "path": "common_product_logarithmic_flag_policy/PROPOSAL.md",
+      "destination": "source_checks/common_product_logarithmic_flag_policy/PROPOSAL.md",
+      "sha256": "7160387f62fdb71afadd3e30a37bf93d9dd566c9bfd9a3739177331bb68254a8",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_logarithmic_flag_policy/PROPOSAL.md",
+      "bytes": 20505,
+      "repository_path": "outputs/common_product_single_control_2026_10_18/source_checks/common_product_logarithmic_flag_policy/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_logarithmic_flag_policy_check/REVIEW.md",
+      "destination": "source_checks/common_product_logarithmic_flag_policy_check/REVIEW.md",
+      "sha256": "d1787938d55970246d222b91df1824c165bf16b58924cd7f5f3936a6d5cc16b3",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_logarithmic_flag_policy_check/REVIEW.md",
+      "bytes": 14902,
+      "repository_path": "outputs/common_product_single_control_2026_10_18/source_checks/common_product_logarithmic_flag_policy_check/REVIEW.md"
+    },
+    {
+      "path": "next_physical_supply_opportunities/ASSESSMENT.md",
+      "destination": "source_checks/next_physical_supply_opportunities/ASSESSMENT.md",
+      "sha256": "d1c58b809dd37ff1e784f271eb2ded3df3644209879a0beca36a8c167d62ac59",
+      "proof_dependency": false,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/next_physical_supply_opportunities/ASSESSMENT.md",
+      "bytes": 13337,
+      "repository_path": "outputs/common_product_single_control_2026_10_18/source_checks/next_physical_supply_opportunities/ASSESSMENT.md"
+    },
+    {
+      "path": "common_product_stage_record_core/PROPOSAL.md",
+      "destination": "source_checks/common_product_stage_record_core/PROPOSAL.md",
+      "sha256": "c91300a5eb6db28e67e4b494398c57c3c53bc39d2da8c800a12c284cc5d6c729",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_record_core/PROPOSAL.md",
+      "bytes": 17781,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_core/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_stage_record_core_check/REVIEW.md",
+      "destination": "source_checks/common_product_stage_record_core_check/REVIEW.md",
+      "sha256": "61de4ee29dd3838c4fc7c3bd19c49bf0cd4cb4bacf5ad3e8e10ca06c864e27c1",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_record_core_check/REVIEW.md",
+      "bytes": 18617,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_core_check/REVIEW.md"
+    },
+    {
+      "path": "common_product_stage_record_packet/PROPOSAL.md",
+      "destination": "source_checks/common_product_stage_record_packet/PROPOSAL.md",
+      "sha256": "3477197cdf54d18ab538c517726d64f3dbc556f6ddb7a6d4b2608b458d34eeb9",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_record_packet/PROPOSAL.md",
+      "bytes": 17153,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_packet/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_stage_record_packet_check/REVIEW.md",
+      "destination": "source_checks/common_product_stage_record_packet_check/REVIEW.md",
+      "sha256": "17029fa32989bae3869c4ffee81def65201edc0f0b996013ede8996ca8cf1453",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_record_packet_check/REVIEW.md",
+      "bytes": 12645,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_packet_check/REVIEW.md"
+    },
+    {
+      "path": "common_product_stage_record_finite_seed/PROPOSAL.md",
+      "destination": "source_checks/common_product_stage_record_finite_seed/PROPOSAL.md",
+      "sha256": "7286105ffd9b6b6d0caa97b121c5e79d37dfcf638128d63c6bbc144e9aa2a995",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_record_finite_seed/PROPOSAL.md",
+      "bytes": 20733,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_finite_seed/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_stage_record_finite_seed_check/REVIEW.md",
+      "destination": "source_checks/common_product_stage_record_finite_seed_check/REVIEW.md",
+      "sha256": "60896f1b1b4b76d27158ce46e097565d1ed777d45ee4dc1c394b02d52ac71a9f",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_record_finite_seed_check/REVIEW.md",
+      "bytes": 19927,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_finite_seed_check/REVIEW.md"
+    },
+    {
+      "path": "common_product_writer_resolvent_sharpening/PROPOSAL.md",
+      "destination": "source_checks/common_product_writer_resolvent_sharpening/PROPOSAL.md",
+      "sha256": "22bca57ebcbfb8cfabebbe044cd5302e784e585b503cee28d6172afc72e54cf0",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_writer_resolvent_sharpening/PROPOSAL.md",
+      "bytes": 12952,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_writer_resolvent_sharpening/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_writer_resolvent_sharpening/certify_inverse.py",
+      "destination": "source_checks/common_product_writer_resolvent_sharpening/certify_inverse.py",
+      "sha256": "f1deb1c3200ca89e287f92ea69acbdf0ac02442ef84795717c795c0aa4b62a7d",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_writer_resolvent_sharpening/certify_inverse.py",
+      "bytes": 3667,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_writer_resolvent_sharpening/certify_inverse.py"
+    },
+    {
+      "path": "common_product_writer_resolvent_sharpening/certificate.txt",
+      "destination": "source_checks/common_product_writer_resolvent_sharpening/certificate.txt",
+      "sha256": "218168f4038232b24f2daa861b8adb37fe6eecc9845bf0c30bc4bb1338e58dda",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_writer_resolvent_sharpening/certificate.txt",
+      "bytes": 669,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_writer_resolvent_sharpening/certificate.txt"
+    },
+    {
+      "path": "common_product_writer_resolvent_sharpening_check/REVIEW.md",
+      "destination": "source_checks/common_product_writer_resolvent_sharpening_check/REVIEW.md",
+      "sha256": "d96ed6b26856490d802ceed2009f75aa9c0919eb8760bcfffe0389807965d1b5",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_writer_resolvent_sharpening_check/REVIEW.md",
+      "bytes": 10931,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_writer_resolvent_sharpening_check/REVIEW.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/attached_record_2026_10_17/source_checks/autonomous_record_route/PROPOSAL.md",
+      "destination": "source_checks/autonomous_record_route/PROPOSAL.md",
+      "sha256": "93445d7d52e32859c980f0a0ebc6024238bedc7571d09e145ab1b128d8292f56",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/attached_record_2026_10_17/source_checks/autonomous_record_route/PROPOSAL.md",
+      "bytes": 15875,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/autonomous_record_route/PROPOSAL.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/attached_record_2026_10_17/source_checks/autonomous_record_route_check/REVIEW.md",
+      "destination": "source_checks/autonomous_record_route_check/REVIEW.md",
+      "sha256": "c5f3e1d7cef939e1bfa95df19f970e4da454cd12a74f068147b6cd50cdf51d5a",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/attached_record_2026_10_17/source_checks/autonomous_record_route_check/REVIEW.md",
+      "bytes": 9923,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/autonomous_record_route_check/REVIEW.md"
+    },
+    {
+      "path": "common_product_stage_record_flag_branch/PROPOSAL.md",
+      "destination": "source_checks/common_product_stage_record_flag_branch/PROPOSAL.md",
+      "sha256": "e7b53eeda3fc7df96986d3b55f68d9e5af4f1b6657ba068b6f33d03e18a37ee0",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_record_flag_branch/PROPOSAL.md",
+      "bytes": 16658,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_flag_branch/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_stage_record_flag_branch_check/REVIEW.md",
+      "destination": "source_checks/common_product_stage_record_flag_branch_check/REVIEW.md",
+      "sha256": "e548a664449546f76fbad2b24d5c7bcf5e0d318ecb6dd75f4234fb078ccdae5a",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_record_flag_branch_check/REVIEW.md",
+      "bytes": 15497,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_flag_branch_check/REVIEW.md"
+    },
+    {
+      "path": "common_product_stage_record_resource_split/PROPOSAL.md",
+      "destination": "source_checks/common_product_stage_record_resource_split/PROPOSAL.md",
+      "sha256": "c4086aec4d338da11dcea256367e34ceea496044ca7ff1bc30ca55ee5489f977",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_record_resource_split/PROPOSAL.md",
+      "bytes": 17190,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_resource_split/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_stage_record_resource_split_check/REVIEW.md",
+      "destination": "source_checks/common_product_stage_record_resource_split_check/REVIEW.md",
+      "sha256": "d697d3cdb72ee52a62f3508245a87239108937819f41966c120bc149d674befa",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_record_resource_split_check/REVIEW.md",
+      "bytes": 15194,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_resource_split_check/REVIEW.md"
+    },
+    {
+      "path": "common_product_narrow_cutoff_derivative/PROPOSAL.md",
+      "destination": "source_checks/common_product_narrow_cutoff_derivative/PROPOSAL.md",
+      "sha256": "550946fdebc4e68522c997ed914e23a8baf40cb660dfc22e4f09e00add1216a3",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_narrow_cutoff_derivative/PROPOSAL.md",
+      "bytes": 15964,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_narrow_cutoff_derivative/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_narrow_cutoff_derivative_check/REVIEW.md",
+      "destination": "source_checks/common_product_narrow_cutoff_derivative_check/REVIEW.md",
+      "sha256": "6a4866e76cc5c6c760284c9a3f6c07c71410f701d727e8765edc8f6a57d328a4",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_narrow_cutoff_derivative_check/REVIEW.md",
+      "bytes": 14861,
+      "repository_path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_narrow_cutoff_derivative_check/REVIEW.md"
+    },
+    {
+      "path": "common_product_stage_separated_router/PROPOSAL.md",
+      "destination": "source_checks/common_product_stage_separated_router/PROPOSAL.md",
+      "sha256": "60bc91b6ad085a722b3805de1d1b0d93a9cabcf77b1c3f5a74e43045354c3182",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_separated_router/PROPOSAL.md",
+      "bytes": 15853,
+      "repository_path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_router/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_stage_separated_router_check/REVIEW.md",
+      "destination": "source_checks/common_product_stage_separated_router_check/REVIEW.md",
+      "sha256": "8fcee7e6ee6579196141e8e67d5adbf9887969cbbbd3de3c7d00c9caf8777e5d",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_separated_router_check/REVIEW.md",
+      "bytes": 11719,
+      "repository_path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_router_check/REVIEW.md"
+    },
+    {
+      "path": "common_product_stage_separated_seed/PROPOSAL.md",
+      "destination": "source_checks/common_product_stage_separated_seed/PROPOSAL.md",
+      "sha256": "340b724d949f9c88da332209e200c2e593b89b68a1a1e02caf5ba9cebbef44f2",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_separated_seed/PROPOSAL.md",
+      "bytes": 25632,
+      "repository_path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_seed/PROPOSAL.md"
+    },
+    {
+      "path": "common_product_stage_separated_seed_check/REVIEW.md",
+      "destination": "source_checks/common_product_stage_separated_seed_check/REVIEW.md",
+      "sha256": "6f99b759c1d2a97a55b81a3d954c8721f0b07ec167564619b0a470fa1b676314",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_separated_seed_check/REVIEW.md",
+      "bytes": 14963,
+      "repository_path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_seed_check/REVIEW.md"
+    },
+    {
+      "path": "common_product_microscopic_scattering/PROPOSAL.md",
+      "sha256": "59b59ea3fc51e6ae364716a63ff4b9e001390cba112f48f0b4214c01318865a6",
+      "destination": "proofs/common_product_microscopic_scattering__PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_microscopic_scattering/PROPOSAL.md",
+      "bytes": 13462,
+      "repository_path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_scattering__PROPOSAL.md"
+    },
+    {
+      "path": "common_product_microscopic_scattering_check/REVIEW.md",
+      "sha256": "3e1dc92540af46ec3a20b928001c7796795bf6c6a6b8580fe307c3e3ca3f8eb6",
+      "destination": "proofs/common_product_microscopic_scattering_check__REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_microscopic_scattering_check/REVIEW.md",
+      "bytes": 9769,
+      "repository_path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_scattering_check__REVIEW.md"
+    },
+    {
+      "path": "common_product_microscopic_packet/PROPOSAL.md",
+      "sha256": "c105226ebeead1f87bb11c6afcc8dadac59520401d5f8c0fa6dba4ba3ef90e4e",
+      "destination": "proofs/common_product_microscopic_packet__PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_microscopic_packet/PROPOSAL.md",
+      "bytes": 14149,
+      "repository_path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_packet__PROPOSAL.md"
+    },
+    {
+      "path": "common_product_microscopic_packet_check/REVIEW.md",
+      "sha256": "c27e7a93c6d76e8261d5a081c3af6ad94438aa803a69354dfb7d2e762e6e0234",
+      "destination": "proofs/common_product_microscopic_packet_check__REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_microscopic_packet_check/REVIEW.md",
+      "bytes": 11082,
+      "repository_path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_packet_check__REVIEW.md"
+    },
+    {
+      "path": "common_product_microscopic_finite_seed/PROPOSAL.md",
+      "sha256": "452231afa993c7a14e1b55c0b302d499e0284ce02266f8a1039a75474053392a",
+      "destination": "proofs/common_product_microscopic_finite_seed__PROPOSAL.md",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_microscopic_finite_seed/PROPOSAL.md",
+      "bytes": 20098,
+      "repository_path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_finite_seed__PROPOSAL.md"
+    },
+    {
+      "path": "common_product_microscopic_finite_seed_check/REVIEW.md",
+      "sha256": "50148e56b0e38556f633cf225df82403b66d2e60c43f6391d355f84d6c4f2a51",
+      "destination": "proofs/common_product_microscopic_finite_seed_check__REVIEW.md",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_microscopic_finite_seed_check/REVIEW.md",
+      "bytes": 15463,
+      "repository_path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_finite_seed_check__REVIEW.md"
+    },
+    {
+      "path": "common_product_microscopic_finite_seed/PROPOSAL.preclarification.3261f709.md",
+      "sha256": "3261f709fd527b369546c6531e5e3bb2967b3c023e161b72aeab470cd3e6d7cb",
+      "destination": "history/common_product_microscopic_finite_seed__PROPOSAL.preclarification.3261f709.md",
+      "proof_dependency": false,
+      "scope": "Preserved preclarification history, not a proof premise.",
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_microscopic_finite_seed/PROPOSAL.preclarification.3261f709.md",
+      "bytes": 20051,
+      "repository_path": "outputs/common_product_microscopic_seed_2026_10_18/history/common_product_microscopic_finite_seed__PROPOSAL.preclarification.3261f709.md"
+    },
+    {
+      "path": "common_product_finite_seed_scaling/PROPOSAL.md",
+      "sha256": "0e21dae83a8449f03276b4099ea6a6ae23e08afa5b4a1297122e67e7b9095f6e",
+      "destination": "proofs/common_product_finite_seed_scaling__PROPOSAL.md",
+      "role": "Conditional mathematical source or distinct exposed analytical check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_finite_seed_scaling/PROPOSAL.md",
+      "bytes": 13824,
+      "repository_path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_finite_seed_scaling__PROPOSAL.md"
+    },
+    {
+      "path": "common_product_finite_seed_scaling_check/REVIEW.md",
+      "sha256": "751c97d5cabdf08f12f1c1852f0fbcf2bfc5fdcfe3179b6cc033ad23f36c91e5",
+      "destination": "proofs/common_product_finite_seed_scaling_check__REVIEW.md",
+      "role": "Conditional mathematical source or distinct exposed analytical check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_finite_seed_scaling_check/REVIEW.md",
+      "bytes": 10586,
+      "repository_path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_finite_seed_scaling_check__REVIEW.md"
+    },
+    {
+      "path": "common_product_launch_derivative_bounds/PROPOSAL.md",
+      "sha256": "378086fdc6b217f9a2eb9d85fdb1ca862a54905be048d298465e0b123722fec8",
+      "destination": "proofs/common_product_launch_derivative_bounds__PROPOSAL.md",
+      "role": "Conditional mathematical source or distinct exposed analytical check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_launch_derivative_bounds/PROPOSAL.md",
+      "bytes": 9659,
+      "repository_path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_launch_derivative_bounds__PROPOSAL.md"
+    },
+    {
+      "path": "common_product_launch_derivative_bounds_check/REVIEW.md",
+      "sha256": "aadee4cd02baeef710662631401aef613c1bd353252d7f75d499289991bcf341",
+      "destination": "proofs/common_product_launch_derivative_bounds_check__REVIEW.md",
+      "role": "Conditional mathematical source or distinct exposed analytical check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_launch_derivative_bounds_check/REVIEW.md",
+      "bytes": 7055,
+      "repository_path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_launch_derivative_bounds_check__REVIEW.md"
+    },
+    {
+      "path": "common_product_second_order_attachment/PROPOSAL.md",
+      "sha256": "a322e3689a5b58cd56c173d22df93c68199ead8cf04af88cb101af305798468c",
+      "destination": "proofs/common_product_second_order_attachment__PROPOSAL.md",
+      "role": "Conditional mathematical source or distinct exposed analytical check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_second_order_attachment/PROPOSAL.md",
+      "bytes": 7608,
+      "repository_path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_second_order_attachment__PROPOSAL.md"
+    },
+    {
+      "path": "common_product_second_order_attachment_check/REVIEW.md",
+      "sha256": "a12914c8b15d73836f93d0472f94ddfbf4a63b9eff5f9191e4ed483b7cdcf2af",
+      "destination": "proofs/common_product_second_order_attachment_check__REVIEW.md",
+      "role": "Conditional mathematical source or distinct exposed analytical check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_second_order_attachment_check/REVIEW.md",
+      "bytes": 9354,
+      "repository_path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_second_order_attachment_check__REVIEW.md"
+    },
+    {
+      "path": "common_product_refined_resource_family/PROPOSAL.md",
+      "sha256": "79f5bd9c07fe0eb0f37d051446f69759a32559ba7ce9e8bb835db01287188bb3",
+      "destination": "proofs/common_product_refined_resource_family__PROPOSAL.md",
+      "role": "Conditional mathematical source or distinct exposed analytical check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_refined_resource_family/PROPOSAL.md",
+      "bytes": 14961,
+      "repository_path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_refined_resource_family__PROPOSAL.md"
+    },
+    {
+      "path": "common_product_refined_resource_family_check/REVIEW.md",
+      "sha256": "5999fccf27396704e010049ee62fd5c342afcbc5fbd8f335ee11dd46783bb575",
+      "destination": "proofs/common_product_refined_resource_family_check__REVIEW.md",
+      "role": "Conditional mathematical source or distinct exposed analytical check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_refined_resource_family_check/REVIEW.md",
+      "bytes": 12323,
+      "repository_path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_refined_resource_family_check__REVIEW.md"
+    },
+    {
+      "path": "mediated_common_product_program/PROPOSAL.md",
+      "sha256": "739e99c44feb30f0bdc569d804f0e643ff993ab556056e1b6820f7012a9de088",
+      "destination": "proofs/mediated_common_product_program__PROPOSAL.md",
+      "role": "conditional mathematical source",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_program/PROPOSAL.md",
+      "bytes": 16265,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_common_product_program__PROPOSAL.md"
+    },
+    {
+      "path": "mediated_common_product_program_check/REVIEW.md",
+      "sha256": "809a2083527cf942e6a6e879a6211600c9f144938915a43dbcf56d5680858fb6",
+      "destination": "proofs/mediated_common_product_program_check__REVIEW.md",
+      "role": "scoped analytical check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_program_check/REVIEW.md",
+      "bytes": 9716,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_common_product_program_check__REVIEW.md"
+    },
+    {
+      "path": "mediated_program_attachment/PROPOSAL.md",
+      "sha256": "55af72a1a334730be95de5427646de29fa7d1d6ebac21d888dc1f231406d9b7a",
+      "destination": "proofs/mediated_program_attachment__PROPOSAL.md",
+      "role": "conditional mathematical source",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_program_attachment/PROPOSAL.md",
+      "bytes": 12985,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_program_attachment__PROPOSAL.md"
+    },
+    {
+      "path": "mediated_program_attachment_check/REVIEW.md",
+      "sha256": "48940d210811f4599c16677edde54b6e3b1be8d6715b7a14aa29e5c4b3b440ce",
+      "destination": "proofs/mediated_program_attachment_check__REVIEW.md",
+      "role": "scoped analytical check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_program_attachment_check/REVIEW.md",
+      "bytes": 8354,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_program_attachment_check__REVIEW.md"
+    },
+    {
+      "path": "common_product_autonomous_interface/PROPOSAL.md",
+      "sha256": "bcc47793a94d578fcbf403115dcce099f6728752d0953a03d80051f75d3e22b5",
+      "destination": "proofs/common_product_autonomous_interface__PROPOSAL.md",
+      "role": "Conditional mathematical source",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_autonomous_interface/PROPOSAL.md",
+      "bytes": 15885,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_autonomous_interface__PROPOSAL.md"
+    },
+    {
+      "path": "common_product_autonomous_interface_check/REVIEW.md",
+      "sha256": "90c7926ed7c681286108afe5a9063a9f63f2be690026ff0abc56844214ab67b2",
+      "destination": "proofs/common_product_autonomous_interface_check__REVIEW.md",
+      "role": "Distinct source-exposed analytical check; not audit",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_autonomous_interface_check/REVIEW.md",
+      "bytes": 12069,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_autonomous_interface_check__REVIEW.md"
+    },
+    {
+      "path": "common_product_endpoint_launch/PROPOSAL.md",
+      "sha256": "fb72f4ed4af9d6f00d6430ec4997fab3f8fbb978b140692b083ddda5e324e9e4",
+      "destination": "proofs/common_product_endpoint_launch__PROPOSAL.md",
+      "role": "Conditional mathematical source",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_endpoint_launch/PROPOSAL.md",
+      "bytes": 14099,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_endpoint_launch__PROPOSAL.md"
+    },
+    {
+      "path": "common_product_endpoint_launch_check/REVIEW.md",
+      "sha256": "51247de9ba58bbfeb7f731c478d939e05e2e9d90956192d2e9e6f612401662c1",
+      "destination": "proofs/common_product_endpoint_launch_check__REVIEW.md",
+      "role": "Distinct source-exposed analytical check; not audit",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_endpoint_launch_check/REVIEW.md",
+      "bytes": 12312,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_endpoint_launch_check__REVIEW.md"
+    },
+    {
+      "path": "common_product_outer_boundary/PROPOSAL.md",
+      "sha256": "af7dfe4193865bb80f9302fcb39f62c7be9ab7693d29b1b53bea8f620f8f2c43",
+      "destination": "proofs/common_product_outer_boundary__PROPOSAL.md",
+      "role": "Conditional mathematical source",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_outer_boundary/PROPOSAL.md",
+      "bytes": 15811,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_outer_boundary__PROPOSAL.md"
+    },
+    {
+      "path": "common_product_outer_boundary_check/REVIEW.md",
+      "sha256": "756514da092c820d3e19601565f6d60b174acc2aed26cfcad551e598f0020985",
+      "destination": "proofs/common_product_outer_boundary_check__REVIEW.md",
+      "role": "Distinct source-exposed analytical check; not audit",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_outer_boundary_check/REVIEW.md",
+      "bytes": 12216,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_outer_boundary_check__REVIEW.md"
+    },
+    {
+      "path": "common_product_finite_seed_router/PROPOSAL.md",
+      "sha256": "3a195efcf8d5196ed54a74228033d0888e7f18c864e481ce61b2efea6c67992b",
+      "destination": "proofs/common_product_finite_seed_router__PROPOSAL.md",
+      "role": "Conditional mathematical source",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_finite_seed_router/PROPOSAL.md",
+      "bytes": 21077,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_seed_router__PROPOSAL.md"
+    },
+    {
+      "path": "common_product_finite_seed_router_check/REVIEW.md",
+      "sha256": "5f5b1727a31df17facb9232e902c1d6985cd175058d66e54862ae614fef148a9",
+      "destination": "proofs/common_product_finite_seed_router_check__REVIEW.md",
+      "role": "Distinct source-exposed analytical check; not audit",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_finite_seed_router_check/REVIEW.md",
+      "bytes": 16569,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_seed_router_check__REVIEW.md"
+    },
+    {
+      "path": "bandcenter_reference_measure_check/REVIEW.md",
+      "sha256": "1953d153c9ac8583202e7ca18bff62829bfbff2373691cc43a5ae152a2a6b0ae",
+      "destination": "proofs/bandcenter_reference_measure_check__REVIEW.md",
+      "role": "Only operator-defined scalar reference measure, completeness, cyclicity and band-tail theorem",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/bandcenter_reference_measure_check/REVIEW.md",
+      "bytes": 8876,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/bandcenter_reference_measure_check__REVIEW.md"
+    },
+    {
+      "path": "endpoint_bandcenter_reference/PROPOSAL.md",
+      "sha256": "510d5b1b51a152f90a8c2054fab382f74fb3f31159359e9c723e89d557380b2c",
+      "destination": "proofs/endpoint_bandcenter_reference__PROPOSAL.md",
+      "role": "ONLY section1 positive endpoint family; all parity/converter/old-system/runtime portions excluded",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_bandcenter_reference/PROPOSAL.md",
+      "bytes": 11112,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/endpoint_bandcenter_reference__PROPOSAL.md"
+    },
+    {
+      "path": "common_product_outer_boundary/PROPOSAL_v1.md",
+      "sha256": "e4649afe46ad1e704cba35a4bfc24013522cebc3de2278b01396085c37e3e396",
+      "destination": "history/common_product_outer_boundary__PROPOSAL_v1.md",
+      "role": "Historical Laplacian-deletion model; not equal-diagonal emitter premise",
+      "proof_dependency": false,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_outer_boundary/PROPOSAL_v1.md",
+      "bytes": 10514,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/history/common_product_outer_boundary__PROPOSAL_v1.md"
+    },
+    {
+      "path": "mediated_program_attachment/PROPOSAL_v1.md",
+      "sha256": "65355be5c834e18db22da52ae67e67b406cc81c40527071ae5b12920c9235cbb",
+      "destination": "history/mediated_program_attachment__PROPOSAL_v1.md",
+      "role": "historical strict-min correction; not a premise",
+      "proof_dependency": false,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_program_attachment/PROPOSAL_v1.md",
+      "bytes": 12985,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/history/mediated_program_attachment__PROPOSAL_v1.md"
+    },
+    {
+      "path": "common_product_finite_window/PROPOSAL.md",
+      "sha256": "1ea1943e162c1ab7f0da057a1343b95b859e394c25420d5577830a838d116b1b",
+      "destination": "proofs/common_product_finite_window__PROPOSAL.md",
+      "role": "Uniform observation-window source or distinct check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_finite_window/PROPOSAL.md",
+      "bytes": 11263,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window__PROPOSAL.md"
+    },
+    {
+      "path": "common_product_finite_window_check/REVIEW.md",
+      "sha256": "1337df4d94e3d6b555a88167945e5e8490e9df978b1fbc3e140db17622e36cbb",
+      "destination": "proofs/common_product_finite_window_check__REVIEW.md",
+      "role": "Uniform observation-window source or distinct check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_finite_window_check/REVIEW.md",
+      "bytes": 9147,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window_check__REVIEW.md"
+    },
+    {
+      "path": "common_product_finite_window/TIMING_MIXTURE.md",
+      "sha256": "c2713ddb892b5c1f509ab66a796a6aa17711552496044e558805984db58eef73",
+      "destination": "proofs/common_product_finite_window__TIMING_MIXTURE.md",
+      "role": "Classical timing-mixture source or distinct check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_finite_window/TIMING_MIXTURE.md",
+      "bytes": 10383,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window__TIMING_MIXTURE.md"
+    },
+    {
+      "path": "common_product_finite_window_check/TIMING_REVIEW.md",
+      "sha256": "30c900378c0d18ab9420287001246ee1d506008a4a1ada4e012afcf056ec4c74",
+      "destination": "proofs/common_product_finite_window_check__TIMING_REVIEW.md",
+      "role": "Classical timing-mixture source or distinct check",
+      "proof_dependency": true,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_finite_window_check/TIMING_REVIEW.md",
+      "bytes": 7738,
+      "repository_path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window_check__TIMING_REVIEW.md"
+    }
+  ],
+  "ancestor_manifests": [
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/SOURCES.json",
+      "sha256": "5d7d77b2ea4930506cce4b70384b674fcac7e1f0684203418dd8f06684b9ff2b",
+      "scope": "Exact parent9719 source mappings and exclusions preserved; only stated standalone ancestry used. Resolve original relative source paths by parent destination mappings."
+    },
+    {
+      "path": "outputs/common_product_energy_preparation_2026_10_18/SOURCES.json",
+      "sha256": "6f90e8ecb85b759d8c672ee9a82d0dbcbe8e5aeeb4e454f82adca9653736f623",
+      "scope": "Exact parent9716 premises and exclusions preserved. Resolve original relative source paths by parent destination mappings."
+    },
+    {
+      "path": "outputs/common_product_single_control_2026_10_18/SOURCES.json",
+      "sha256": "130025500b801e7dfe014202d0b7dbfe1bad169a01cb269c618840724ac4b789",
+      "scope": "Exact parent9712 premises and exclusions preserved. Resolve original relative source paths by parent destination mappings."
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "sha256": "4bd97772cb881890ab7b1d972706709e9d39bde2a8def1027ee276255c18b79a",
+      "scope": "Exact parent9710 premises and exclusions preserved. Resolve original relative source paths by parent destination mappings."
+    },
+    {
+      "path": "outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "sha256": "c4cb0adc7763e30807e0cc3fd4c05639838c4c6141af13294e619804659d08c0",
+      "scope": "Exact parent9707 premises and exclusions preserved. Resolve original relative source paths by parent destination mappings."
+    },
+    {
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "sha256": "0c3e7faf90d48b8054dc84a59dc903c31ca0b5f4777af8a3a7a8887ceb9bb4f5",
+      "scope": "Exact parent9705 premises and exclusions preserved. Resolve original relative source paths by parent destination mappings."
+    },
+    {
+      "path": "outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "sha256": "2ba677857524dfd9839065ca82fb8775150c98af9af30a165461900bf2a67909",
+      "scope": "Exact parent9703 premises and exclusions preserved. Resolve original relative source paths by parent destination mappings."
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "sha256": "857c4932273fab8bf3795e946389fcbb9d795f65478585e6770a70d5fff5ed8a",
+      "scope": "Exact parent9700 premises and exclusions preserved. Resolve original relative source paths by parent destination mappings."
+    }
+  ]
+}

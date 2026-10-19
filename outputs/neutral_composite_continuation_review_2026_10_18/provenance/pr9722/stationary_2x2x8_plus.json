@@ -1,0 +1,24 @@
+{
+  "shape": [
+    2,
+    2,
+    8
+  ],
+  "sector": "all selected Z planes and adjacent X-plane pairs +1",
+  "dimension": 8388608,
+  "energies": [
+    -33.101369842849316,
+    -33.08277900957736,
+    -33.08277900957727,
+    -33.06314844308756
+  ],
+  "residuals": [
+    4.044169184861933e-13,
+    4.0210078222053536e-13,
+    6.095501398525984e-09,
+    5.105335606022423e-13
+  ],
+  "calls": 283,
+  "elapsed_seconds": 81.56466362532228,
+  "scope": "Numerical low eigenpairs of one exact invariant sector; no global ground, thermodynamic pole or physical preparation identification"
+}

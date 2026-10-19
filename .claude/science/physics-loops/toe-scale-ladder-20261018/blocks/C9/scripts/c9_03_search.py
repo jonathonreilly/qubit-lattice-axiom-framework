@@ -17,7 +17,20 @@ import sys
 import numpy as np
 from scipy.optimize import least_squares
 
-from c9_common import Counter, all_perm_ops, embed, swap_op
+from c9_common import Counter, all_perm_ops, embed, swap_op, perm_op
+
+
+class Embedder:
+    """Cached version of c9_common.embed (same formula, permutation matrix precomputed)."""
+    def __init__(self, sub, full):
+        n, k = len(full), len(sub)
+        pos = [full.index(s) for s in sub]
+        rest = [i for i in range(n) if i not in pos]
+        self.Pm = perm_op(n, pos + rest)
+        self.I = np.eye(2 ** (n - k), dtype=complex)
+
+    def __call__(self, op):
+        return self.Pm @ np.kron(op, self.I) @ self.Pm.T
 
 
 def herm_basis(n):
@@ -51,7 +64,7 @@ def run_window(C, name, W, e1, rng, starts):
     for t in ts:
         Wt = [tuple(np.add(p, t)) for p in W]
         union = list(dict.fromkeys(W + Wt))
-        setups.append((union, Wt))
+        setups.append((union, Wt, Embedder(W, union), Embedder(Wt, union)))
     dim = 2 ** n
 
     def build(c):
@@ -60,9 +73,9 @@ def run_window(C, name, W, e1, rng, starts):
     def resid(c):
         g = build(c)
         r = [(g @ g - np.eye(dim)).ravel(), np.array([np.trace(g) / dim - 0.5])]
-        for union, Wt in setups:
-            G1 = embed(g, W, union)
-            G2 = embed(g, Wt, union)
+        for union, Wt, E1, E2 in setups:
+            G1 = E1(g)
+            G2 = E2(g)
             r.append((G1 @ G2 - G2 @ G1).ravel() / np.sqrt(len(union)))
         r = np.concatenate(r)
         return np.concatenate([r.real, r.imag])

@@ -1,0 +1,24 @@
+{
+  "owner": "docs/LOCAL_REFERENCE_STATIC_SWAP_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+  "primary": "scripts/local_reference_static_swap_2026_10_18.py",
+  "live_proofs": [
+    {
+      "path": "outputs/local_reference_static_swap_review_2026_10_18/proofs/local_reference_chain_weights.md",
+      "sha256": "7bae8b953e0bbb4435f9398029b42b081257b5c5b0edffc0d37ffb41152f8d5f"
+    },
+    {
+      "path": "outputs/local_reference_static_swap_review_2026_10_18/proofs/local_reference_static_swap.md",
+      "sha256": "9e68a0eb2f81955e900a23bd88b05321b75ea4e2741da89f812ef2eda59b5c70"
+    },
+    {
+      "path": "outputs/local_reference_static_swap_review_2026_10_18/proofs/product_reference_static_swap.md",
+      "sha256": "1a9e0ee47c8cc5b4f874abb2c8fa47258ee00fbe3cf77a87a2c968b407f0a825"
+    }
+  ],
+  "exact_recovery_manifest": "archive/local_reference_static_swap_review_2026_10_18/MANIFEST.json",
+  "archive": "archive/local_reference_static_swap_review_2026_10_18/original-recovery.tar.gz",
+  "repository_imports": [],
+  "external_data": [],
+  "generated_outputs": [],
+  "premises": "Fully displayed supplied positive blocks/equal gaps/coherent product reference/degenerate Q/passive spectators. No genealogy or historical check status is a premise."
+}

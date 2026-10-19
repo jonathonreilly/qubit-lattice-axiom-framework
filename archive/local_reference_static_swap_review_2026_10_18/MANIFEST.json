@@ -1,0 +1,99 @@
+{
+  "original_head": "8130f99c0af5cd04f3a7750087ae27132feb1204",
+  "archive": "archive/local_reference_static_swap_review_2026_10_18/original-recovery.tar.gz",
+  "archive_sha256": "b2cffab4725c05dae8c3a661f14881a87f5a465325385f17f327542a560b8e9e",
+  "objects": [
+    {
+      "original_path": "docs/LOCAL_REFERENCE_STATIC_SWAP_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "original_sha256": "f072a5d6a885cb987fce5bc11f7cb0c9fb24097e610802c20984d965dfaa180f",
+      "original_blob": "3e2facdf5de245deb263645228b91755239db595",
+      "member": "docs/LOCAL_REFERENCE_STATIC_SWAP_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "live_path": null
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "b248ec862b1f46c734ffa68cb571334a02d33f1c959e1f5b5af16dc0c86541b2",
+      "original_blob": "95581a154df943561b11f5b5b2d321f21989ce85",
+      "member": "docs/audit/data/citation_graph_manifest.json",
+      "live_path": null
+    },
+    {
+      "original_path": "outputs/local_reference_static_swap_2026_10_18/AUTHOR_NOTE.md",
+      "original_sha256": "6024bf322cf2ecf20b78a2e3f925ee9d315bfc00d16ce16a6400c6d64aa3c899",
+      "original_blob": "573a2fd82f0137b30b312654dc7ee5fc91339481",
+      "member": "outputs/local_reference_static_swap_2026_10_18/AUTHOR_NOTE.md",
+      "live_path": null
+    },
+    {
+      "original_path": "outputs/local_reference_static_swap_2026_10_18/INTEGRATION_RECORD.md",
+      "original_sha256": "c1f94c025500d297adab2f0dd3af1656e0e7fd599588c013f5529a0a629cf730",
+      "original_blob": "1445c365f2b29aad30627c70b6f5dfa4ad8324b5",
+      "member": "outputs/local_reference_static_swap_2026_10_18/INTEGRATION_RECORD.md",
+      "live_path": null
+    },
+    {
+      "original_path": "outputs/local_reference_static_swap_2026_10_18/PUBLICATION_CHECK.md",
+      "original_sha256": "3c2731183c7411aed866caec09d1daf7ebb03def78d477b818a8cbcef0347696",
+      "original_blob": "6103b0ee8faf4d2550cd1fdbfb68611db1224859",
+      "member": "outputs/local_reference_static_swap_2026_10_18/PUBLICATION_CHECK.md",
+      "live_path": null
+    },
+    {
+      "original_path": "outputs/local_reference_static_swap_2026_10_18/SOURCES.json",
+      "original_sha256": "5feb138b2562ff8a90caa64934e1e756633d1e049ea76492f6c79af34a30512d",
+      "original_blob": "57a4345f716f9fbbcec8bd7cc3e384f7a7551188",
+      "member": "outputs/local_reference_static_swap_2026_10_18/SOURCES.json",
+      "live_path": null
+    },
+    {
+      "original_path": "outputs/local_reference_static_swap_2026_10_18/VALIDATION.json",
+      "original_sha256": "935f8147a27826effb8bede51c1c972fc8b799862d384cf67241ecc50ce465b9",
+      "original_blob": "56c1e843e4c37bb3db04b63d6b204ad7ab843b4e",
+      "member": "outputs/local_reference_static_swap_2026_10_18/VALIDATION.json",
+      "live_path": null
+    },
+    {
+      "original_path": "outputs/local_reference_static_swap_2026_10_18/source_checks/local_reference_chain_weights/PROPOSAL.md",
+      "original_sha256": "7bae8b953e0bbb4435f9398029b42b081257b5c5b0edffc0d37ffb41152f8d5f",
+      "original_blob": "13bcefb32adcbe75391badaeaeb35f40a998e493",
+      "member": "outputs/local_reference_static_swap_2026_10_18/source_checks/local_reference_chain_weights/PROPOSAL.md",
+      "live_path": "outputs/local_reference_static_swap_review_2026_10_18/proofs/local_reference_chain_weights.md"
+    },
+    {
+      "original_path": "outputs/local_reference_static_swap_2026_10_18/source_checks/local_reference_chain_weights_check/REVIEW.md",
+      "original_sha256": "7d8e01a66128e5bd092845d33d36d4e4c059d429107527a70dc381d576f46c82",
+      "original_blob": "d4ce17093144e43782fb91e5e9a56333fc5aa7a5",
+      "member": "outputs/local_reference_static_swap_2026_10_18/source_checks/local_reference_chain_weights_check/REVIEW.md",
+      "live_path": null
+    },
+    {
+      "original_path": "outputs/local_reference_static_swap_2026_10_18/source_checks/local_reference_static_swap/PROPOSAL.md",
+      "original_sha256": "9e68a0eb2f81955e900a23bd88b05321b75ea4e2741da89f812ef2eda59b5c70",
+      "original_blob": "b1b152c52066d30e461219109cd64123bea6db5b",
+      "member": "outputs/local_reference_static_swap_2026_10_18/source_checks/local_reference_static_swap/PROPOSAL.md",
+      "live_path": "outputs/local_reference_static_swap_review_2026_10_18/proofs/local_reference_static_swap.md"
+    },
+    {
+      "original_path": "outputs/local_reference_static_swap_2026_10_18/source_checks/local_reference_static_swap_check/REVIEW.md",
+      "original_sha256": "bc0e54499663904538b862421d7338c31131cd9dc2923519b7d45fffb323a00b",
+      "original_blob": "a2574e641356453a7b722bed37cc7620448bf09d",
+      "member": "outputs/local_reference_static_swap_2026_10_18/source_checks/local_reference_static_swap_check/REVIEW.md",
+      "live_path": null
+    },
+    {
+      "original_path": "outputs/local_reference_static_swap_2026_10_18/source_checks/product_reference_static_swap/PROPOSAL.md",
+      "original_sha256": "1a9e0ee47c8cc5b4f874abb2c8fa47258ee00fbe3cf77a87a2c968b407f0a825",
+      "original_blob": "1f2a23a8f5877083bef79775c6c49ddb96cba3a6",
+      "member": "outputs/local_reference_static_swap_2026_10_18/source_checks/product_reference_static_swap/PROPOSAL.md",
+      "live_path": "outputs/local_reference_static_swap_review_2026_10_18/proofs/product_reference_static_swap.md"
+    },
+    {
+      "original_path": "outputs/local_reference_static_swap_2026_10_18/source_checks/product_reference_static_swap_check/REVIEW.md",
+      "original_sha256": "69c07739988970d1671e2b5acd985ec48d935d74066afc456761301e086be195",
+      "original_blob": "6a00cc07aff50aaed8c3bb82157a9b7a41a3ac52",
+      "member": "outputs/local_reference_static_swap_2026_10_18/source_checks/product_reference_static_swap_check/REVIEW.md",
+      "live_path": null
+    }
+  ],
+  "authority": "Exact historical recovery, including original checks/status/manuscript/graph; no current review or audit authority."
+}

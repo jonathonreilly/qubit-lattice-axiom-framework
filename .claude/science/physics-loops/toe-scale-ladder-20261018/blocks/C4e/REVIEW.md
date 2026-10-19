@@ -235,3 +235,27 @@ Reproduce (one core, `OMP_NUM_THREADS=1 nice -n 10`, each job < 20 min), from `r
 - `rv_extract_matching.py`, then `rv_matching_verify.py`, then `rv_xlocal.py`
 - `rv_extract_candidates.py`, then `rv_xfilter.py`, then
   `MATCHING_JSON=matching_xfiltered_s-1.json LOG_SUFFIX=_xfiltered python3 -B rv_xlocal.py`
+
+## Correction confirmation (2026-10-19)
+
+I re-read the complete corrected NOTE.md.
+
+- **Fix 1: resolved.** The title, Result 2 and the claim-types table now say CA radius ≤ 6 and QCA
+  range in [5, 18]: ≥ 5 from the exact witness in `review_scripts/logs/qca_range.txt`, ≤ 18 proved.
+- **Fix 2: resolved.** The reduction is now stated as necessary conditions only, with X-locality
+  added, and "⇔" is withdrawn. The 336 conflicts are reported. Result 3 cites the X-filtered
+  re-match as its certificate, with the coverage gap (600 skipped classes) and the k ≤ 3 limit
+  stated.
+- **The citation resolves.** The re-match pipeline and its outputs are all saved in
+  `review_scripts/`:
+  - scripts: `rv_extract_candidates.py`, `rv_xfilter.py`, `rv_matching_verify.py`, `rv_xlocal.py`;
+  - matching: `logs/matching_xfiltered_s-1.json`;
+  - logs: `logs/xfilter.txt` (TOTAL: PASS=2 FAIL=0), `logs/matching_verify_xfiltered.txt`
+    (TOTAL: PASS=7 FAIL=0), `logs/xlocal_xfiltered.txt` (TOTAL: PASS=2 FAIL=0).
+- **No new defect.** One wording nit, not blocking: the bullet "The unknowns are independent" is
+  true only for the F/G relaxation. The next bullet says so, because X-locality couples classes.
+  Optionally retitle it "independent under F/G only". X-locality of transitions into the k = 4
+  sector stays untested; this is already covered by "does not reach k ≥ 4".
+
+**Final verdict:** the construction (claims 1, 1′, 2, 4–7) is **correct**. Claim 3 is **correct with
+the applied fix**. No open defects remain.

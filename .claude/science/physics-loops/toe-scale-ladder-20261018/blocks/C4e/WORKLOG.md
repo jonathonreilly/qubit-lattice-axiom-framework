@@ -1,5 +1,5 @@
 # C4e WORKLOG
-Started 2026-10-19. Worker: Claude (Opus 5.5) subagent. Writes only in blocks/C4e/.
+Started 2026-10-19. Worker: subagent. Writes only in blocks/C4e/.
 ## Plan
 1. 1D SAT probe: does a reversible number-conserving CA with frozen singles and moving pairs exist (intuition for collisions).
 2. 3D: glider = L2∘L1 (square crossing then B-tetra opposite-edge) — design/predicate search.
@@ -35,3 +35,4 @@ Started 2026-10-19. Worker: Claude (Opus 5.5) subagent. Writes only in blocks/C4
 - NOTE.md drafted. Remaining: c4e_07 result, c4e_04 rerun result, logs/SUMMARY.txt.
 - FINAL: all scripts re-run; logs/SUMMARY.txt TOTAL: PASS=25 FAIL=0 (plus 1 kept FAIL from superseded run).
   NOTE.md complete. Status: unreviewed. Block done.
+- Review dispositions applied (Fix1, Fix2) to NOTE.md; Result 3 now cites reviewer X-filtered re-match.

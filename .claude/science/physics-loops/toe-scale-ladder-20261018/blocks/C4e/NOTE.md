@@ -1,8 +1,8 @@
-# C4e — A moving bound pair exists: an explicit T-covariant, U(1), one-qubit QCA on Z^3 with frozen magnons and a speed-1 face-diagonal pair glider (range ≤ 6), plus exact 3-magnon consistency at range 2
+# C4e — A moving bound pair exists: an explicit T-covariant, U(1), one-qubit QCA on Z^3 with frozen magnons and a speed-1 face-diagonal pair glider (CA radius ≤ 6; QCA range between 5 and 18), plus 3-magnon consistency at range 2
 
 **Block:** C4e of `toe-scale-ladder-20261018`, following C4d (spectator lemma, Theorem P1, range-2
 glider passes the W-only test, Prop. E) and C4c (Observation M). **Date:** 2026-10-19.
-**Author:** Claude (Opus 5.5) subagent. **Status:** unreviewed. No axiom, primitive or dynamics
+**Status:** Reviewed in a separate agent context (same model as the author); unaudited. See `REVIEW.md` and "Review dispositions". No axiom, primitive or dynamics
 clause is adopted; the QCA below is a *constructed example* inside the premise class, not a
 proposal for the framework's dynamics.
 
@@ -19,16 +19,23 @@ proposal for the framework's dynamics.
      configuration). So U is a reversible CA with inverse L1 ∘ L2.
 2. **Range: the range-2 target is NOT met.** As a CA, U and U^{-1} have Chebyshev radius ≤ 6
    (each layer has radius ≤ 3; exact dependency-region computation). The empirical lower bound is
-   4 (`c4e_04`; an earlier run with fewer effective samples found 3). As an automorphism, α(A_x) ⊂ A_{B_18(x)} (crude bound, proved below). Whether a range-2
+   4 (`c4e_04`; an earlier run with fewer effective samples found 3). As an automorphism (the (D-QCA) notion of range), α(A_x) ⊂ A_{B_18(x)} is proved (crude bound, below), and the review found an exact witness that α has range ≥ 5 (and α^{-1} ≥ 4). So the QCA range lies in [5, 18]. Whether a range-2
    realisation exists is **open**. At range 2 the strongest exact statement is item 3.
-3. **Range 2: exact 3-magnon consistency (exact certificate).** Assume a monomial QCA of range 2,
-   with frozen singles and the face glider (all other pairs fixed). Its 3-magnon sector is then an
-   equivariant bipartite matching problem.
-   - There are 478 source orbits (connected triples) and 478 target orbits.
-   - 1,191,376 candidate images were examined, giving 9002 admissible orbit edges.
-   - A perfect matching exists (478/478).
+3. **Range 2: 3-magnon consistency (exact certificate, corrected after review).** Assume a monomial
+   QCA of range 2, with frozen singles and the face glider (all other pairs fixed). Necessary
+   conditions on its 3-magnon sector are F-, G- and X-locality (from α(Z_x), α(X_x) ∈ A_{B_2(x)})
+   plus equivariance.
+   - My `c4e_02` matching imposed only F/G-locality and stabilisers: 478 source = 478 target orbits,
+     9002 orbit edges, matching 478/478. That map passes F/G-locality but has **336 X-locality
+     conflicts** (found by the review), so `c4e_02` alone does **not** certify a range-2 sector.
+   - **Certificate (the reviewer's, built on my candidate generator):** after X-local filtering
+     (6142 of 9002 edges kept) a perfect matching 478/478 again exists, and the re-matched map passes
+     F/G-locality and the full X-locality check on all 2,578,011 tested k ≤ 3 transitions
+     (`review_scripts/logs/xfilter`, `xlocal_xfiltered`; 600 diameter-5 classes with diameter-6
+     preimage skipped). I did not re-implement this within this block.
 
-   So a T-equivariant, local, bijective 3-magnon extension exists at range 2. This extends C4d's
+   So a T-equivariant monomial 3-magnon extension compatible with range 2 exists (k ≤ 3 only, with
+   the stated coverage gap). This extends C4d's
    "pair + far magnon" test to the full 3-magnon sector. It does not reach k ≥ 4.
 4. **Pair band** (exact, from the glider identity). Write |ρ, K⟩ = Σ_x e^{iK·x}|P_x(ρ)⟩. Then
    U|ρ,K⟩ = e^{−iK·v(ρ)}|ρ,K⟩. With U = e^{−iE}, E_ρ(K) = K·v(ρ) mod 2π, and the group velocity is
@@ -146,9 +153,9 @@ layers failed. This construction escapes Prop. E because its layers are **not** 
 commuting emptiness-controlled gates: condition (b) is a *non-emptiness* control, and the layer
 is an involution of a self-consistent active set rather than a commuting product.
 
-## Range-2 3-magnon consistency (`c4e_02`, exact)
+## Range-2 3-magnon consistency (`c4e_02` + review re-match)
 
-*Reduction (proved).*
+*Reduction (necessary conditions; corrected after review).*
 - **Monomial QCAs are permutations by reversible CAs.** Suppose U|c⟩ = e^{iθ(c)}|π(c)⟩. Then
   α(Z_x) = Σ_c z_x(c)|π c⟩⟨π c| is diagonal and supported in B_2(x). So π^{-1}, and likewise π,
   is a reversible CA of radius 2.
@@ -158,15 +165,22 @@ is an involution of a self-consistent active set rather than a commuting product
   maps to W(c∖z) ∪ z, by the spectator lemma. For a connected c (class C3), F(c) = known1(c) ∪ Y
   with Y ⊂ X(c) = ⋂_z B_2(z).
 - **The unknowns are independent.** Each 3-magnon window value belongs to exactly one translation
-  class of C3. So existence at k ≤ 3 ⇔ an equivariant bijection C3 → (C3 ∖ π(D)) ∪
+  class of C3. So existence at k ≤ 3 **implies** an equivariant bijection C3 → (C3 ∖ π(D)) ∪
   {d ∈ D : π^{-1}d ∈ C3}, whose edges obey F-locality, G-locality and equal stabilisers. Equal
-  stabilisers turn this into a perfect matching between orbits.
+  stabilisers turn this into a perfect matching between orbits. The converse ("⇔") stated in an
+  earlier draft is false: range 2 also requires **X-locality**, i.e. α(X_x): d ↦ π(π^{-1}(d) ⊕ x)
+  may change only sites in B_2(x) and may depend only on d ∩ B_2(x). This couples different classes
+  and is not encoded in `c4e_02`.
 
 *Result.*
 - **Consistency checks** (PASS): the D-part is self-consistent (π^{-1}π = id on spectator
   configurations), and the connected images π(D) are G-local.
 - **Counts:** |π(D) ∩ C3| = 17 orbits and the D-targets are 17 orbits, so sources = targets = 478.
   Every source and every target has at least one admissible edge. The maximum matching is 478.
+- **X-locality (review):** this matching has 336 X-locality conflicts (each involving one free C3
+  choice; forced data alone are X-local, 0 conflicts). The reviewer's X-filtered re-match (6142 edges)
+  is again 478/478 and passes all F/G/X checks on k ≤ 3 transitions tested. That re-match is the
+  certificate for Result 3.
 
 *Scope.*
 - Monomial (permutation-with-phases) QCAs only.
@@ -213,10 +227,11 @@ earlier FAIL is recorded in `logs/c4e_04_first_run_FAIL.txt`.
 |---|---|
 | Lemma I (each L_i is an involution on every configuration) | proved; implementation checked exhaustively on small sectors and by an independent implementation (same author) |
 | U is a TI, T-covariant, U(1) QCA with frozen singles and the face glider | proved from Lemma I and the definitions; exact checks |
-| CA radius ≤ 6 (empirical ≥ 4); α support ≤ 18 | proved upper bounds (computed / crude); lower bound empirical |
+| CA radius ≤ 6 (empirical ≥ 4); QCA range ≤ 18 | proved upper bounds (computed / crude) |
+| QCA range ≥ 5 | exact witness (review, `qca_range`) |
 | not O-covariant (axis), not full-action covariant | exact (explicit witnesses) |
 | pair band ε = −K·v, |v_g| = 1 | exact |
-| range-2 monomial 3-magnon extension exists | exact finite certificate (matching) |
+| range-2 monomial 3-magnon extension exists (k ≤ 3) | exact finite certificate: reviewer's X-filtered re-match; my `c4e_02` matching is only a relaxation (F/G) |
 | cluster outcomes | exact simulation, descriptive (finite windows and times) |
 | 1D UNSAT | SAT certificate for the stated 1D encodings only; intuition |
 
@@ -264,3 +279,15 @@ python3 c4e_06_independent_check.py     # ~2 min
 python3 c4e_07_stress.py                # ~2 min
 python3 c4e_01_sat1d.py 2 cons one      # 1D probe lines as in logs/c4e_01_sat1d.txt
 ```
+
+## Review dispositions (`REVIEW.md`)
+
+The review reproduced the construction blind with two independent implementations (sparse and
+dense), confirmed Lemma I step by step, and reproduced every table number.
+
+| item | disposition |
+|---|---|
+| Fix 1: "range ≤ 6" is the CA radius, not the QCA range | **accepted.** Title and Result 2 now state CA radius ≤ 6 and QCA range in [5, 18] (≥ 5 by the reviewer's exact witness, ≤ 18 proved) |
+| Fix 2: range-2 reduction omits α(X_x)-locality; "⇔" false; `c4e_02` matching has 336 X-locality conflicts | **accepted.** Reduction restated as necessary conditions with X-locality added; "⇔" withdrawn; Result 3 now cites the reviewer's X-filtered re-match (478/478, all F/G/X checks pass on tested k ≤ 3 transitions) as the certificate. Not re-implemented by me in this block |
+| random-torus coverage thin; stress tests carry Lemma I's load | noted; no change |
+| provenance of checks | noted: `c4e_06` is same-author; the review's implementations are a separate context, same model |

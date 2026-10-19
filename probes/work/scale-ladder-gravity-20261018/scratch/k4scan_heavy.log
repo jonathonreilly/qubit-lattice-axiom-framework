@@ -1,5 +1,0 @@
-canon 23: forms [96, 816, 2304, 2640, 1056]; max over degrees/dirs of |lambda(omega=k)|/k^4 = 8.453e-03  (O(k^4) splitting)  [711s]
-canon 12: forms [88, 904, 2736, 3200, 1280]; max over degrees/dirs of |lambda(omega=k)|/k^4 = 7.426e-03  (O(k^4) splitting)  [1280s]
-canon 134: forms [96, 768, 2112, 2400, 960]; max over degrees/dirs of |lambda(omega=k)|/k^4 = 5.436e-03  (O(k^4) splitting)  [489s]
-canon 124: forms [120, 1128, 3312, 3840, 1536]; max over degrees/dirs of |lambda(omega=k)|/k^4 = 6.603e-03  (O(k^4) splitting)  [2412s]
-canon 234: forms [120, 1128, 3312, 3840, 1536]; max over degrees/dirs of |lambda(omega=k)|/k^4 = 6.613e-03  (O(k^4) splitting)  [2278s]

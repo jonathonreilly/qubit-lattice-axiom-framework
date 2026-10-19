@@ -24,7 +24,7 @@ including the times when criteria were declared, is in `WORKLOG.md`.
    state, and at L=8, T=32 E_mid differs from E_mix by about 100σ. The pre-declared S_T exponent, Bragg and
    photon-velocity criteria **cannot be evaluated**. This is a method failure, not a physics result.
 5. [NUM/VERDICT] The guide-free electric-winding gap ΔE(L) = E0(W=1) − E0(W=0) at V=0 (see the table in §5)
-   shows **no string tension**. The fitted σ is FILL, and the pure σL law is rejected (χ² FILL). The
+   shows **no resolvable string tension**. With the Coulomb term included the fit gives σ = −0.010(15) at T=2L and +0.007(18) at the largest T, and the pure σL law is rejected (χ² 37–54/4). The
    pre-declared Coulomb form A/L fits, but so do the post hoc forms B/L² and const. The data **do not establish**
    Coulomb ∝1/L scaling. Verdict at V=0: **confined-with-resolvable-string-tension disfavoured; Coulomb
    consistent but not decided (inconclusive at accessible L)**. At V=0.5 and 0.9 the results are inconclusive, and
@@ -181,3 +181,210 @@ Declared 20:27 UTC, after L=4 and 6 but before any L ≥ 8 data (prior exposure:
 Declared 19:57–20:27, before L ≥ 8: chains are run from ≥ 2 different starts, and agreement between starts is a
 mixing check.
 
+
+## 5. Results [NUM]
+
+Production settings:
+- open path, uniform trial state at both ends;
+- 2–3 chains per point from different starts: canonical, cyclically rotated canonical, or an "RK-walk" random
+  flip walk; for W=1, the line start or an RK-walk from it;
+- the error on each sector energy is max(seed scatter/√n, combined binned SE).
+
+Source files: `data/winding_gap.md`, `data/per_chain.md`, `data/summary_combined.md`; fits in
+`logs/winding_fit2.log` and `data/winding_fit2.json`.
+
+### 5.1 Electric-winding gap ΔE = E0(W=1) − E0(W=0) (mixed estimator, total energies, g=1)
+
+| V | L | T | E(W=0) [chains] | E(W=1) [chains] | ΔE | ΔE·L |
+|---|---|---|---|---|---|---|
+| 0 | 2 | exact | −9.026721 | −7.399111 | 1.627610 | 3.255 |
+| 0 | 4 | 8 | −56.253(45) [3] | −55.577(44) [2] | 0.676(63) | 2.71(25) |
+| 0 | 6 | 12 | −187.455(76) [3] | −187.015(69) [2] | 0.440(102) | 2.64(61) |
+| 0 | 8 | 16 | −443.734(77) [2] | −443.573(92) [2] | 0.161(120) | 1.29(96) |
+| 0 | 8 | 32 | −443.828(140) [2] | −443.506(94) [2] | 0.322(169) | 2.6(1.3) |
+| 0 | 10 | 20 | −866.374(152) [2] | −866.282(260) [2] | 0.092(301) | 0.9(3.0) |
+| 0 | 10 | 40 | −866.658(189) [2] | −866.500(336) [2] | 0.158(385) | 1.6(3.9) |
+| 0 | 12 | 24 | −1497.314(229) [2] | −1496.659(269) [2] | 0.655(353) | 7.9(4.2) |
+| 0.5 | 2 | exact | −4.255811 | −3.524354 | 0.731458 | 1.463 |
+| 0.5 | 4 | 8 | −26.823(19) | −26.638(33) [1] | 0.185(38) | 0.74(15) |
+| 0.5 | 6 | 12 | −89.686(42) | −89.448(68) [1] | 0.238(80) | 1.43(48) |
+| 0.5 | 8 | 16 | −212.154(102) [2] | −212.192(116) [1] | −0.038(154) | −0.3(1.2) |
+| 0.9 | 4 | 8 | −5.175(6) | −5.107(9) [1] | 0.068(10) | 0.27(4) |
+| 0.9 | 6 | 12 | −17.171(12) | −17.186(21) [1] | −0.014(24) | −0.09(14) |
+| 0.9 | 8 | 16 | −40.578(26) [2] | −40.702(35) [1] | −0.124(43) | −0.99(34) |
+
+### 5.2 Fits at V = 0 (weighted LSQ, L = 4..12)
+
+Models C, S and Str were declared before L ≥ 8; Q and K are post hoc. The first p is A (or B or c), the second
+is σ.
+
+| set | C: A/L | S: A/L + σL | Str: σL | Q (post hoc): B/L² | K (post hoc): const |
+|---|---|---|---|---|---|
+| T = 2L | A=2.62(23), χ² 3.9/4 | σ = −0.010(15), χ² 3.4/3 | χ² 54.5/4 | χ² 4.4/4 | χ² 17.9/4 |
+| largest T per L | A=2.70(23), χ² 1.6/4 | σ = +0.007(18), χ² 1.4/3 | χ² 36.7/4 | χ² 5.2/4 | χ² 7.8/4 |
+
+Leverage comes almost entirely from L = 4, 6 and 8. At L ≥ 10 the errors are 50–250% of ΔE.
+
+### 5.3 Projection (T) and start checks for the winding energies
+
+- **Start consistency of E_mix** (same L, T, W, different starts; V=0, L ≥ 8): 10 pairs with total
+  χ² = 12.8/10. The two largest tensions are both in W=1 at L=10: 2.1σ at T=20 and 2.0σ at T=40.
+- **T-dependence.**
+  - L=8, T=16 → 32: ΔE goes 0.161(120) → 0.322(169), consistent.
+  - L=10, T=20 → 40: E(W=0) drops by 0.28(24) and E(W=1) by 0.22(42); ΔE goes 0.09(30) → 0.16(39).
+  - These shifts are not significant, but they are of the same size as ΔE itself. T-convergence of ΔE is
+    therefore **not demonstrated** at L ≥ 10, and L=12 has only T = 2L.
+- **Binned errors.** The binned SE on E_mix still grows by about 5–10% over the last bin doublings, so the quoted
+  per-chain errors may be underestimates of that order.
+- **V=0.9.** ΔE < 0 at L=6 and 8. If both runs were converged, a negative ΔE would mean the W=1 component lies
+  below W=0, which is not excluded a priori. With T = 2L near RK, where soft modes need T ~ L², it is read as
+  insufficient projection, and no conclusion is drawn.
+
+### 5.4 Middle-of-path observables: not equilibrated (mixing failure)
+
+| L | T | E_mix/N_p (all chains) | E_mid/N_p | S_T(k1) by start |
+|---|---|---|---|---|
+| 6 | 12 | −0.2894…−0.2891 | −0.2880…−0.2894 | 0.185 / 0.248 / 0.369 |
+| 8 | 16 | −0.2889 | −0.2878…−0.2892 | 0.14–0.15 (canon/line) vs 0.39–0.40 (RK-walk) |
+| 8 | 32 | −0.2890…−0.2887 | −0.2754…−0.2795 | 0.10–0.13 vs 0.23–0.28 |
+| 10 | 20 | −0.2889…−0.2887 | −0.2862…−0.2872 | 0.11–0.12 vs 0.44–0.64 |
+| 10 | 40 | −0.2889…−0.2887 | −0.2775…−0.2801 | 0.06–0.12 |
+| 12 | 24 | −0.2888…−0.2887 | −0.2757…−0.2779 | 0.10–0.11 vs 0.24–0.25 |
+
+- E_mid and E_mix must agree in expectation. For T ≥ 24 they differ by 0.010–0.013 per plaquette, which is
+  more than 20σ. The middle of a long path stays far from the projected state; longer paths are *worse*.
+- S_T(k1) at L=10 and 12 differs by a factor of 2–5 between starts.
+- Flippability Bragg weights are also start-dependent. Example: at L=8, T=32, m2_n(X) is 0.10 (canonical) vs
+  0.03 (RK-walk).
+
+These numbers are reported as per-start ranges only. They are **not** estimates of ground-state structure
+factors.
+
+### 5.5 External comparison [EXT]
+
+The repo's guide-dependent projector with loop moves (different algorithm and code;
+`scripts/ring_model_electric_coupling_from_winding_sector_energies_and_the_comparator_coupling_constant_2026_09_25.py`,
+cached output in `logs/runner-cache/`) gives, for the same q=1 sector:
+
+| L | repo ΔE | this block ΔE | difference |
+|---|---|---|---|
+| 4 | 0.7315(84) | 0.676(63) | 0.9σ |
+| 6 | 0.370(20) | 0.440(102) | 0.7σ |
+| 8 | 0.169(44) | 0.322(169) at T=32 | 0.9σ |
+
+- The two ΔE sets agree within 1σ at every common L.
+- Refitting the repo's more precise numbers with the same models gives A/L χ² = 51/2 (rejected) and B/L² χ² =
+  5.1/2. A/L + σL gives σ = −0.034(5), χ² 0.07/1. So the repo data show ΔE·L *decreasing* from 2.9 to 1.35
+  over L = 4..8.
+- **Recorded disagreement:** the repo's 8³ W=0 energy −443.364(31) lies 0.46 (3.2σ) *above* this block's
+  −443.828(140). This block's estimator is a Rayleigh quotient and so, in expectation, an upper bound. Either the
+  repo value is biased high (guide or population effects) or this one is biased low (residual mixing). This is not
+  resolved here.
+
+## 6. Verdicts against the pre-declared criteria [VERDICT]
+
+| criterion (declared) | V=0 | V=0.5 | V=0.9 |
+|---|---|---|---|
+| S_T exponent p (Coulomb p≈1, ordered p≥1.6, RK p≤0.4) | **not evaluable**: middle not equilibrated (§5.4) | not evaluable | not evaluable |
+| Bragg ratio R_Q (ordered R_Q≥0.5; Coulomb ≤0.25) | **not evaluable** (start-dependent, §5.4) | not evaluable | not evaluable |
+| ω_eff·L photon criterion | not evaluable (C(τ) measured at the non-equilibrated middle) | not evaluable | not evaluable |
+| projection rule (two T agree within 2σ) | ΔE: passes formally at L=8 and 10, but the errors are as large as ΔE | not tested at L=8 | fails in effect (ΔE<0) |
+| winding gap: confined ⇒ ΔE ∝ L | **pure σL rejected** (χ² 37–54/4). With the Coulomb term included, σ = −0.010(15) or +0.007(18): **no resolvable string tension; σ ≲ 0.04 g (2σ)** at L ≤ 12 | σ = 0.007(18) from L=4..8 only: no evidence of confinement | inconclusive (insufficient projection) |
+| winding gap: Coulomb ⇒ ΔE·L → const | **consistent** (A/L χ² 1.6–3.9/4), but **not established**: B/L² fits equally well, L ≥ 10 errors are too large, the T-convergence of ΔE at L ≥ 10 is not shown, and the more precise repo [EXT] values show ΔE·L falling over L = 4..8 | consistent but untested beyond L=8 | — |
+
+**Overall verdict for OBL-R2.1:** **INCONCLUSIVE at accessible L.**
+- Supported: the method is sign-free and guide-free, and a large string tension is excluded on L ≤ 12.
+- Not supported: neither a Coulomb phase (S_T ∝ |k|, a 1/L winding gap, a finite photon velocity) nor an
+  ordered phase is established.
+- Reason: the structure-factor criteria failed for an algorithmic reason (mixing in the middle of the path),
+  which is operational and not physical evidence. The one robust observable does not separate 1/L from faster
+  decay.
+
+## 7. Scope and caveats
+
+- **Model scope.** These are statements about the two specified flip components (W=0 canonical and W=1
+  line-reversed), with ρ = 0, on even L ≤ 12. They are not about all components or whole winding sectors.
+- **Exactness of the energy estimator.** E_mix is exact in expectation for the uniform trial state *only if the
+  chain is equilibrated*. The ends move fast and agree across starts (§5.3), but the middle does not equilibrate
+  (§5.4). A residual end bias at the 1e−4-per-plaquette level would be enough to move ΔE at L ≥ 10. Agreement
+  between starts is evidence, not proof.
+- **Finite projection.** E_mix(T) ≥ E0 only in expectation. ΔE is a difference of two upper bounds, so it has no
+  bound of either sign at finite T.
+- **Errors.** Errors come from binning plus seed scatter over only 2–3 starts. They have no proved coverage.
+- **Prior exposure.** The ΔE criterion was declared after the L=4 and 6 values were seen. Fit forms Q and K are
+  post hoc.
+- **Lost or incomplete runs.** The run of 2026-10-18/19 lost these jobs to container restarts and the 25-minute
+  job limit: L=12 W=0 seed 2 (killed at the limit); the L=12 W=1 seed-112 job (dropped); and earlier queue jobs
+  never run (V=0.5 and 0.9 second W=1 chains, V=0.5/0.9 at L ≥ 10). V=0.5 and 0.9 rest on one W=1 chain per L.
+
+## 8. Literature and repo context
+
+[LIT], recalled from memory; no numbers relied on:
+- Hermele, Fisher and Balents, PRB 69, 064404 (2004): a U(1) Coulomb phase with emergent photon in pyrochlore
+  quantum spin ice, perturbatively near the ring-exchange limit.
+- Banerjee, Isakov, Damle and Kim, PRL 100, 047208 (2008): QMC support for the photon in the pyrochlore ring
+  model.
+- Shannon, Sikora, Pollmann, Penc and Fulde, PRL 108, 067204 (2012): quantum ice, the photon with ω ~ k² near RK
+  crossing over to ω ~ k.
+- Cubic quantum dimer model (Sikora et al., PRL 103, 247001 (2009) and PRB 84, 115129 (2011)): a Coulomb phase
+  only in a window below the RK point, with crystalline order at smaller V. I do not reliably recall the window
+  edges, nor whether the pure-ring point V=0 is inside it.
+- 3D U(1) quantum link models (Wiese and collaborators; Banerjee et al.): known; specific results not recalled.
+
+Implication: the cubic dimer analogy makes a *confined/ordered* phase at V=0 a live possibility. A tiny string
+tension, or a crystal with a weak Bragg weight, would be invisible at L ≤ 12 with these errors. I could not
+confirm a literature treatment of exactly this cubic spin-1/2 link model, and novelty has not been checked
+beyond memory.
+
+Repo context:
+- `docs/RING_MODEL_*` notes use guided projectors. Their winding splittings (§5.5) are consistent with ours.
+  Their 8³ energy disagrees with ours at 3.2σ.
+- The 09-04 note title claims a "quadratic transverse mode, not a Maxwell photon". ΔE·L decreasing in the repo
+  data would fit that reading, but this block cannot test it.
+
+## 9. Load-bearing step and what an independent check must do
+
+**Load-bearing step:** the estimate ΔE(L) = E_mix(W=1) − E_mix(W=0) at V=0, L = 4..12. In particular:
+1. the claim that the mixed estimator with the uniform trial state and free-end moves is equilibrated at the ends
+   even though the middle is not;
+2. the T-convergence of ΔE at L ≥ 8.
+
+The rejection of a pure string tension rests mainly on L = 4, 6 and 8.
+
+An independent check must use a *different path*, for example:
+- (a) exact or Lanczos ground energies of both components at L=4. This may be infeasible: the 4³ ice
+  manifold is large. Check its size first.
+- (b) a different QMC (SSE or worm/loop) with its own code, computing E0(W) or the winding susceptibility
+  ⟨W²⟩ at finite β.
+- (c) a reptation or forward-walking estimator, with E_mid ≈ E_mix as an acceptance test.
+
+Re-running `scripts/prod.py` with new seeds is **not** independent. The stoquasticity proof (§2) is
+self-contained and can be checked by hand.
+
+## 10. What a decisive follow-up needs
+
+1. **Non-local updates.** Loop or worm updates in space-time, i.e. directed loops in the plaquette-flip worldline,
+   or cluster moves on the dual height/flux representation. These would remove the frozen-middle problem. The
+   pass criterion is E_mid = E_mix within errors and agreement of S_T and Bragg weights across starts.
+2. **Finite-T SSE with winding-changing loops.** This avoids the class restriction of Lemma 3. It would measure
+   ⟨W²⟩/L (Coulomb: finite stiffness) and S_T(q, iω_n) directly, with β ∝ L and β ∝ L² both run.
+3. **Larger L at fixed relative error.** ΔE at L=16 with an error ≲ 0.05 needs about 50× the statistics used here.
+   That requires a variance-reduced estimator, e.g. a correlated W=0/W=1 pair, or thermodynamic integration of
+   the flux energy.
+4. **Before claiming Coulomb vs order, rerun the pre-declared criteria unchanged** on equilibrated data. Add a
+   check that ΔE·L stabilises rather than falls: the repo [EXT] values show it falling.
+
+## 11. Files (all in this block)
+
+- Scripts: `scripts/step1_stoquastic.py`, `scripts/step2_validate_L2.py` (see the seed hazard in §3.4),
+  `scripts/step3_validate_W1_L2.py`, `scripts/qmc.py`, `scripts/driver.py`, `scripts/prod.py`,
+  `scripts/analyze.py`, `scripts/winding_fit.py`, `scripts/winding_fit2.py`, `scripts/run1.sh`,
+  `scripts/jobs_*.txt` (`jobs_C.txt` = the resumption runs, with the changes annotated).
+- Logs:
+  - validation, each ending with a TOTAL line: `logs/step1_stoquastic.log` (PASS=26 FAIL=0),
+    `logs/step2_validate_L2.log` (PASS=8 FAIL=1), `logs/step3_validate_W1_L2.log` (PASS=4 FAIL=0);
+  - debug logs `dbg_*.log` and `test_delta_fast.log` (no TOTAL line; diagnostics, not runners);
+  - production: `logs/prod.jsonl`, `logs/queue_*.log` (`queue_C.log` = resumption);
+  - fits: `logs/winding_fit.log`, `logs/winding_fit2.log`.
+- Data: `data/run_*.npz` (one per chain), `data/winding_gap.{md,json}`, `data/winding_fit{,2}.json`,
+  `data/per_chain.md`, `data/summary_combined.md`.

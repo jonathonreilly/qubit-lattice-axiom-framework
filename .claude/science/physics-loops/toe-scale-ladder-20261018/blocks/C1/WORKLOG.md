@@ -150,3 +150,21 @@ checked observable; additionally all relative errors < 1% for E.
   -0.17(15) total, same order as dE(L=8); W=1 at T=32 pending.
 - V=0.9: dE(L=8) = -0.119(48) < 0 — not physical for a converged ground state comparison; read as
   insufficient projection near RK (soft k^2 modes need T ~ L^2). V=0.5 only L=4,6.
+
+## 2026-10-19 01:25 UTC — resumption after container restart (new worker)
+- Inventory: all queue A5/B3 jobs up to L=8 V=0.9 s11 had completed. L=8 W=1 T=32 (s100) had already been
+  run before the restart. Lost: L=12 s1/s100, L=10 s11, L=8 V=0.5 s11.
+- Re-run (`scripts/jobs_C.txt`, `logs/queue_C.log`; each job a single process < 25 min, nice 10): L=8 T=32
+  s11/s111; L=10 T=20 s11/s111; L=10 T=40 s1/s100/s11/s111; L=12 T=24 s1/s100/s11/s111; V=0.5 L=8 s11.
+  L=12 s2 was killed at the 25-min limit; L=12 s112 was dropped after the L=10 T=40 result.
+- New exact validation of the W=1 path (`scripts/step3_validate_W1_L2.py`): TOTAL PASS=4 FAIL=0. Exact L=2
+  ΔE = 1.62761 (V=0).
+- Hazard found: step2 uses seeds ≥ 100, which the current driver maps to W=1 starts. Its log predates that
+  change. It must not be re-run unchanged.
+- Results:
+  - ΔE(V=0): L=8 T=32 0.322(169); L=10 T=20 0.092(301), T=40 0.158(385); L=12 T=24 0.655(353).
+  - Fits: σ = −0.010(15) (T=2L) and +0.007(18) (largest T); σL-only rejected; A/L and B/L² both acceptable.
+  - Middle observables still start-dependent at L=10 and 12. E_mid − E_mix ≈ 0.01 per plaquette for T ≥ 24.
+- Repo guided-projector ΔE agrees with ours within 1σ. Repo 8³ E(W=0) is 3.2σ above ours (recorded,
+  unresolved).
+- Final verdict: INCONCLUSIVE. See NOTE.md.

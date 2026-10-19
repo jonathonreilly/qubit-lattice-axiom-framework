@@ -221,10 +221,13 @@ for bgname, rho in (("rho=0", np.zeros(G.Nv, int)),
                     maxspec = max(maxspec, np.abs(e1 - e2).max(), np.abs(e1 - e3).max())
             gneg = [w for w in worst_off if w[0] < 0][0]
             maxdiff = max(w[3] for w in worst_off)
-            ok = all(w[2] <= 0 for w in worst_off) and gneg[1] > 0 and maxdiff == 0.0 and maxspec < 1e-10
-            check(f"L=2 {bgname} {lname} V={V}: D H(g) D has all off-diagonals <= 0 for g=+-1; ungauged H(-1) has "
-                  f"max off-diagonal {gneg[1]:+.0f}; D H(g) D == H(-g) exactly; spectra equal per component and per sector",
-                  ok, f"max off-diag of DH(g)D for g=+1,-1: {[w[2] for w in worst_off]}, max|DHD-H(-g)| {maxdiff}, max |dE| {maxspec:.1e}")
+            gpos = [w for w in worst_off if w[0] > 0][0]
+            # stoquastic gauge per sign: identity for g>0, D for g<0 (D cannot work for both: D H(+g) D = H(-g))
+            ok = gpos[1] <= 0 and gneg[2] <= 0 and gneg[1] > 0 and maxdiff == 0.0 and maxspec < 1e-10
+            check(f"L=2 {bgname} {lname} V={V}: H(+1) off-diag <= 0; H(-1) ungauged has max off-diag {gneg[1]:+.0f} "
+                  f"but D H(-1) D has all off-diag <= 0; D H(g) D == H(-g) exactly; spectra of H(g), DH(g)D, H(-g) equal per "
+                  f"component and per winding sector",
+                  ok, f"max off-diag: H(+1) {gpos[1]}, DH(-1)D {gneg[2]}, [DH(+1)D {gpos[2]}]; max|DHD-H(-g)| {maxdiff}; max |dE| {maxspec:.1e}")
     if bgname == "rho=0":
         ic = np.searchsorted(st, code(canon))
         iw = np.searchsorted(st, code(w1))

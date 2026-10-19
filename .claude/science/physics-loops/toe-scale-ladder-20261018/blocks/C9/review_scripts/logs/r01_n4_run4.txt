@@ -5,3 +5,4 @@ PASS A Heisenberg bonds sharing one site do not commute
 PASS B n=4: dim Hermitian vector operators = 28, Schur-Weyl spin-1 multiplicity in (1/2)^(2n) = 28
 PASS C n=4: the 4 window shifts sigma_k are exact solutions (max residual 1.3e-12)
 PASS C n=4: control (sigma_0+sigma_1)/sqrt2 violates constraints (constraints active)
+   start 0: residual 4.29e-12 nfev 250 -> shift-to-site-2 (slow valley: dist 2.07e-04 -> 1.26e-04 after polish, residual 4.3e-12 -> 9.5e-13)  t=353s

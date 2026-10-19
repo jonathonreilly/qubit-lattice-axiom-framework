@@ -32,3 +32,5 @@
 {"tag": "L4_s3", "L": 4, "seed": 103, "start": "canonical", "nsw": 19622, "sweeps_this_call": 9693, "trips_total": 9, "trips_this_call": 7, "check": 0, "nrows": 4847, "secs": 900.4, "swap_min": 0.28355927020691063}
 {"tag": "L4_s3", "L": 4, "seed": 103, "start": "canonical", "nsw": 29411, "sweeps_this_call": 9789, "trips_total": 11, "trips_this_call": 2, "check": 0, "nrows": 4894, "secs": 900.4, "swap_min": 0.2828097375220998}
 {"tag": "L4_s4", "L": 4, "seed": 104, "start": "mixW_rot", "nsw": 29919, "sweeps_this_call": 9725, "trips_total": 13, "trips_this_call": 2, "check": 0, "nrows": 4862, "secs": 900.4, "swap_min": 0.2863636363636364}
+{"tag": "L8E_s3", "L": 8, "seed": 303, "start": "canonical", "nsw": 3252, "sweeps_this_call": 3252, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 1126, "secs": 900.1, "swap_min": null}
+{"tag": "L6_s4", "L": 6, "seed": 204, "start": "mixW_rot", "nsw": 3366, "sweeps_this_call": 3366, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 683, "secs": 900.3, "swap_min": 0.23945335710041593}

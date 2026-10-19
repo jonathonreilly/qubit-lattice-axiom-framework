@@ -440,6 +440,11 @@
       "source_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
       "timeout_sec": 60,
       "reason": "Explicit 60-second helper cap, matching preserved historical child wall limits (weighted helper includes independent 60-second check); shared primary remains subject to its own cap. Hash-bound sidecar preserves original helper bytes."
+    },
+    "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py": {
+      "source_sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
+      "timeout_sec": 300,
+      "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
     }
   }
 }

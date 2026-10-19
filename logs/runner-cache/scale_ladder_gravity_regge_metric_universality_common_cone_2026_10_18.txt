@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_regge_metric_universality_common_cone_2026_10_18.py
+runner_sha256: f4f8c7f336fc98b35a1948e9a41f5dedc16d4c1ec49613582cd4f0c4c200e7b3
+input_fingerprint_sha256: a0e1438e5ff43837d41d83bddd7844a2a3320d5a9415c15af205ff131fab9110
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 31.91
+status: ok
+----- stdout -----
+[PASS] C1 finite invariant-matrix ranks  invariant spin-2 forms B4/K48/OhT = 9/38/26; rank gap >= 9e+11
+[PASS] C1 finite signed-permutation group closure  order 384
+[PASS] C2 finite Einstein-Hilbert span fit  outside 1.6e-14; second singular value 0.303
+[PASS] C3 finite line-map pullback fits  coefficients -0.250000, -0.370810, -0.158114 vs -0.250000, -0.370810, -0.158114; worst 1.2e-07
+[PASS] C3b finite nonmetric Schur and soft-block comparison  worst 1.2e-07; smallest eliminated eigenvalue b=0.3: 28.9; b=0: 9.98e-06 -> 2.49e-06 on halving k
+[PASS] C4 finite scalar and Maxwell leading-symbol fits  max relative deviation 5.0e-08
+[PASS] C5 selected complex-frequency roots  k_t = -0.000000+0.588330j (b=0), 0.125192+0.467658j (b=0.3)
+[PASS] C6 finite scalar and Regge shell-coefficient comparison  worst deviation 3.5e-07; axis/face/body = -1/6, -1/8, -1/9
+[PASS] C6 finite Maxwell splitting comparison  axis -0.1027/-0.0859; face+ -0.0707, face- -0.0820
+[PASS] C7 sampled scalar and Regge shell residuals  7th singular value on shell <= 4.0e-16; 6th off shell >= 1.6e-05 (k up to 2.5, 6 directions)
+[PASS] C7 sampled Maxwell off-shell residuals  its 2nd singular value there >= 1.5e-06
+[PASS] C8 sampled real-momentum nullities  {0.0: [5, 5, 5], 0.3: [4, 4, 4], -0.15: [4, 4, 4]}
+[PASS] C8b selected background and metric-projection comparisons  nullity 5; sv5/b = 65.90, 67.85; min cosine 1.00000000
+[PASS] C9 finite on-shell and off-shell Ward ratios  halving ratios on shell 31.95, 31.96, 31.99; off shell 7.91, 7.99, 8.01
+[PASS] C10 corrected analytic bilinear extra-direction source  fractions 0.153 -> 0.151; 0.086 -> 0.086
+[PASS] C11 finite static pullback responses  k = 0.01: -2.00002, -2.00001, -2.00000, -2.00000; axis k = 0.5, 1.5: -2.000000000, -2.000000000
+per_element: explicit simplex geometry and local matrix entries are computed on the supplied finite carrier; no microscopic interaction supplier is derived
+per_site: listed vertex types and periodic-cell incidences are included; arbitrary lattice defects and unspecified site models are untested
+per_mode: only the literal momentum fixtures, thresholds and finite scans above are tested; no complete zero-set or spectrum census is certified
+per_block: the displayed cell operators and source or covariance contractions are evaluated; numerical pass labels do not supply an interacting physical theory
+lattice_wide: finite periodic-symbol diagnostics and explicitly stated constructive identities only; thermodynamic limits, all-volume OS positivity and physical reconstruction remain deferred
+
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

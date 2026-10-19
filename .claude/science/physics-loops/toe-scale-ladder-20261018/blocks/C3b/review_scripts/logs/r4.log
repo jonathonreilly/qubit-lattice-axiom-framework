@@ -1,2 +1,7 @@
-eps=1e-02 L=128 ns=60: xi(1/e)=4.125+-0.030  (author: 4.154, 8.552, 18.854)  t=3s
-eps=1e-03 L=256 ns=16: xi(1/e)=8.605+-0.105  (author: 4.154, 8.552, 18.854)  t=4s
+eps=1e-02 L=128 ns=60: xi(1/e)=4.125+-0.030  (author: 4.154, 8.552, 18.854)  t=1s
+eps=1e-03 L=256 ns=16: xi(1/e)=8.605+-0.105  (author: 4.154, 8.552, 18.854)  t=2s
+eps=1e-04 L=512 ns=6: xi(1/e)=18.488+-0.311  (author: 4.154, 8.552, 18.854)  t=4s
+PASS  k1 xi(eps) exponent within 0.05 of -1/3 (independent Dijkstra implementation)  slope -0.326
+PASS  k2 xi values agree with author's s2 table within 4 SE (author SE <= 0.2)  4.12 8.61 18.49
+PASS  k3 Corollary J-KJMA tail bound P(tau>t) <= exp(-eps|B_r|t/2)+P(Gamma(r,1)>t/2) on a t-grid  eps=1e-02: P(tau>40)=0.00e+00; eps=1e-03: P(tau>40)=0.00e+00; eps=1e-04: P(tau>40)=0.00e+00
+TOTAL: PASS=3 FAIL=0

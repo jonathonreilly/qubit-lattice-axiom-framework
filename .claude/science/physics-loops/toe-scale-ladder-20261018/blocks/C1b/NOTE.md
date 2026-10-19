@@ -47,7 +47,7 @@ settings at 03:35, and the estimator addendum at 03:40. All three predate any L 
    - At **L=4, β=4**, the last-chunk P1 is 0.055–0.058 from both sides, so dF1 ≈ 0.88. This is a [POST HOC] reading.
    - **L=4 thermal energy:** E(β=8) = −56.20(6). This is consistent with C1's projector E0 = −56.253(45), and
      E(β) ≥ E0 holds as it must.
-   - **L=8 energy (one-sided check requested by the C1 review):** __L8E__
+   - **L=8 energy (one-sided check requested by the C1 review):** E(β=16) = −443.4 ± 0.5. This comes from one start, L8E_s3: 6.4k sweeps, W stayed 0. The binned error grows from 0.31 to 0.43 as the bins lengthen, and the five sub-run means range from −444.8 to −442.3. At this precision the run **does not discriminate** between C1's −443.83(14) and the repo's −443.364(31) (§5.5).
 
 ---
 
@@ -194,8 +194,8 @@ do some odd n_p.
 | L4_s1 / L4_s2 | 4 | canonical / loop-scrambled | 4 / 4 | 39.7k / 40.2k | 27 / 24 | **compromised** (event-free start, §0.2b) |
 | L6_s1 / L6_s2 | 6 | canonical / loop-scrambled | 7 / 7 | 24.1k / 24.6k | 13 / 15 | **compromised** |
 | L4_s3 / L4_s4 | 4 | canonical / mixW_rot | 3 / 3 | 29.4k / 29.9k | 11 / 13 | clean (no loops at β > 1 for the first 2000 sweeps) |
-| L6_s4 | 6 | mixW_rot | 2 | __L6SW__ | __L6TR__ | clean, one start only |
-| L8E_s3 | 8 | canonical | 2 | __L8SW__ | – (single β=16) | clean |
+| L6_s4 | 6 | mixW_rot | 2 | 6.6k | 0 | clean, one start only |
+| L8E_s3 | 8 | canonical | 2 | 6.4k | – (single β=16) | clean |
 
 **Start conventions.**
 - `mixW_rot` alternates the replicas between the axis-rotated canonical state and the same state with one directed
@@ -242,11 +242,26 @@ equilibrated in s4 (they were seeded by the initial W=1 walkers).
 - **Compromised runs (s1, s2), β=6.** P1 per chunk scatters between 0.06 and 0.57. ⟨W²⟩ start z = −3.4. These
   runs are not used. S_T(q1 = π/3) = 0.2447(20) agrees between their starts (z = 0.2), but the runs remain
   compromised.
-- **Clean run L6_s4**, one start only, so the EQ test cannot be applied: __L6RES__
+- **Clean run L6_s4**, one start only, so the EQ test cannot be applied: 
+  - P1(β=6) per chunk is 0.123 then 0.018: the population is still relaxing, with 0 round trips.
+  - dF1(β=6) = 0.71(4) direct and 0.67(7) TI; dF1(β=3) = 0.66(4) direct and 0.62(11) TI.
+  - S_T(q1, β=6) = 0.2254(33). That is 5σ below the compromised runs' 0.2447(20). So **S_T is also shifted by the
+    winding-population artifact**, and agreement between starts in the compromised runs did not protect against it.
+  - [POST HOC] Using clean L4 S_T(β=4) = 0.328(6) together with this value gives p = ln(0.328/0.2254)/ln 1.5 = 0.93(5).
+    That lies inside the declared Coulomb window, but it is **not** a valid evaluation of the criterion: L=6 has one
+    start, 0 round trips, and is still drifting.
 
 ### 5.5 L = 8 energy (one-sided check)
 
-__L8RES__
+`scripts/energy_L8.py`, `logs/energy_L8.log`. The run was L=8 at β=16 from the canonical start, with no
+winding loops at β > 1 during the first 2000 sweeps, for 2 chunks (6.4k sweeps). W stayed (0,0,0).
+- E = −443.36, with a binned error of 0.31–0.43 (40 to 10 bins). The five sub-run means are −443.3, −444.8, −443.4,
+  −442.3 and −442.9, so the autocorrelation is long. A realistic error is ≳ 0.5.
+- Since ⟨H⟩_β ≥ E0(global) for every β, a value significantly below −443.364 would have shown that the repo's
+  guided value lies above the ground energy. **The result is not significant either way.** It is compatible with
+  both the repo's −443.364(31) and C1's −443.83(14).
+- The first attempt (L8E_s1/s2) started from an event-free path and froze into W = (0,0,−16) and (−11,0,0), at
+  E = −388 and −407. That is §0.2b. It was discarded.
 
 ## 6. Verdicts against the pre-declared criteria [VERDICT]
 
@@ -256,7 +271,7 @@ __L8RES__
 | EQ at β = L | **FAIL** at L=4 (⟨W²⟩ z = −3.0, with a drifting chunk series); **FAIL** at L=6 (compromised runs; clean run has one start); L=8 not run |
 | C-W / X-W (a(L) fit at β = L) | **INCONCLUSIVE**: no two L have equilibrated β = L winding data |
 | TI vs direct agreement | not established at β ≥ L (start-dependent at L=4) |
-| S_T exponent p | **NOT EVALUABLE** (EQ fails at the two largest L). For the record [POST HOC], the compromised-L6 / clean-L4 ratio gives p ≈ 0.9, but it is not used. |
+| S_T exponent p | **NOT EVALUABLE** (EQ fails at the two largest L). For the record [POST HOC], clean L4 (β=4) with clean single-start L6_s4 (β=6, drifting) gives p = 0.93(5); this is not a criterion evaluation. |
 | Overall OBL-R2.1 | **INCONCLUSIVE**. This is an operational result: the winding-sector mixing time at low T exceeds the budget. It is not physical evidence. |
 
 ## 7. What is learned, and what is not
@@ -269,8 +284,9 @@ __L8RES__
   β ≲ 1 and back. With 34–40 replicas each round trip takes about 1000–1600 sweeps. The sector *populations* need
   many such trips, because the heavy W ≠ 0 walkers are expelled from low T only slowly. This mirrors C1's
   frozen-middle failure in a different guise: low-T flux sectors are dynamically isolated for every local or
-  plaquette-cluster dynamics. The cluster moves themselves decorrelate the *within-sector* observables quickly:
-  E, N_circ and S_T agree between starts at L=6 even in the compromised runs.
+  plaquette-cluster dynamics. In the compromised L=6 runs, E, N_circ and S_T agree between starts, but both starts
+  share the same winding artifact. The clean run shows that S_T is shifted by it (§5.4), so start agreement is not
+  evidence of equilibrium here.
 - **No evidence of confinement** [NUM, weak]:
   - At L=4 the winding free-energy cost at β = L/2 is about 0.5g, which is O(1/L)-sized.
   - The dF2/dF1 ratios at L=4 and 6 are about 3.2–4.1 [POST HOC; from the compromised runs, so indicative only].
@@ -303,7 +319,7 @@ here.
    `scripts/drift.py`. An independent check should run longer (≥ 10× more sweeps). It should also start from
    *both* sides (all W=0, and half the replicas W=1), and report the per-chunk P1(β=L). The two sides must
    converge for several consecutive chunks.
-3. **The L=8 one-sided energy check:** __L8LB__
+3. **The L=8 one-sided energy check:** not informative at the present precision (±0.5). It needs at least 10× more sweeps and at least 2 starts.
 
 Re-running these scripts with new seeds is not independent. A different code (for example SSE with the same cube and
 cluster moves, written separately), or a guided projector with sector-resolved forward walking, would be.

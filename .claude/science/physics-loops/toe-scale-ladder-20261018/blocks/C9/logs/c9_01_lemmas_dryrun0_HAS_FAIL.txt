@@ -1,0 +1,24 @@
+C9/01 lemma certificates; seed 20261019
+PASS A Schur-Weyl n=1: dim commutant=1, dim span(perms)=1, expected 1
+PASS A Schur-Weyl n=2: dim commutant=2, dim span(perms)=2, expected 2
+PASS A Schur-Weyl n=3: dim commutant=5, dim span(perms)=5, expected 5
+PASS A Schur-Weyl n=4: dim commutant=14, dim span(perms)=14, expected 14
+PASS A Schur-Weyl n=5: dim commutant=42, dim span(perms)=42, expected 42
+PASS B 20 random invariant pairs overlapping in one site never commute (min relative ||[g,h]|| = 6.122e-02)
+PASS B commutator = 2i eps X_j Y_k sigma^l (max err 2.7e-15)
+PASS B vector channel of random invariant op spans C^3 (min rank 3)
+PASS B zero vector channel at the shared site => commute
+PASS B vector channel is a vector operator, X_0 invariant (err 4.4e-16)
+PASS C 24 random supports (|S|=2,3,4), generic ell: S cap (S+t) = {s1} and random g has full support
+PASS C [g, T_t g] != 0 in all 24 cases (min relative norm 3.298e-03)
+PASS D 2-qubit SU(2) commutant = span{1,P}
+PASS D self-adjoint unitary non-scalar a+bP with tau=1/2: [(0.0, 1.0)] (= +P only)
+PASS D tau(P) = 1/2
+PASS E sets S in 3^3 box (|S|<=4) with extremal difference +-e1 for 40 generic ell: {2: 18, 3: 0, 4: 0} (expected 18 NN x-bonds only)
+PASS F D_ij + delta = D_ij only for delta = 0 (all axis pairs, |delta|_inf <= 3)
+PASS F swaps on bonds sharing one site do not commute
+PASS F image bond families reproduce the x/y overlap pattern iff c_x = c_y (729 pairs)
+FAIL G one-qubit vector operators form a 1-dim space spanned by sigma (nullity 0)
+PASS G vector ops with y-dependence never commute with P_yz (z outside support), min 4.54e+00
+PASS G 12 NN transpositions of the unit cube generate |S_8| = 40320
+TOTAL: PASS=21 FAIL=1

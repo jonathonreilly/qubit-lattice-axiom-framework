@@ -7,3 +7,5 @@
 07:21:53 start L6_s4 chunk 0
 {"tag": "L6_s4", "L": 6, "seed": 204, "start": "mixW_rot", "nsw": 3366, "sweeps_this_call": 3366, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 683, "secs": 900.3, "swap_min": 0.23945335710041593}
 07:36:54 start L6_s4 chunk 1
+{"tag": "L6_s4", "L": 6, "seed": 204, "start": "mixW_rot", "nsw": 6644, "sweeps_this_call": 3278, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 1639, "secs": 900.4, "swap_min": 0.24413004214328718}
+07:51:56 queue D done

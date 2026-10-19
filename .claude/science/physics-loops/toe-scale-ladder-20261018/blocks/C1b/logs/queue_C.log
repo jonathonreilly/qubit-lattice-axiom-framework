@@ -7,3 +7,5 @@
 07:21:53 start L8E_s3 chunk 0
 {"tag": "L8E_s3", "L": 8, "seed": 303, "start": "canonical", "nsw": 3252, "sweeps_this_call": 3252, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 1126, "secs": 900.1, "swap_min": null}
 07:36:54 start L8E_s3 chunk 1
+{"tag": "L8E_s3", "L": 8, "seed": 303, "start": "canonical", "nsw": 6434, "sweeps_this_call": 3182, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 1591, "secs": 900.1, "swap_min": null}
+07:51:55 queue C done

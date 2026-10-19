@@ -165,3 +165,9 @@ Physics (V=0, beta = L, also beta = L/2 from the same ladder):
   Per-chunk P1(beta=4): s3 0.016 -> 0.088 -> 0.058 ; s4 0.253 -> 0.175 -> 0.055 (last chunks agree,
   approached from both sides). beta=L/2=2.05: P1 0.39-0.43 in all chunks of both runs; dF1_direct
   0.510(34) / 0.500(28). L8E_s3 and L6_s4 running until ~07:52.
+- 07:53 final runs done. L8E_s3 (beta=16, 6.4k sweeps): E = -443.36 +- >=0.4 (sub-run means -444.8..-442.3):
+  not discriminating C1 vs repo. L6_s4 (2 chunks, 0 trips): P1(beta=6) 0.123 -> 0.018, still relaxing;
+  S_T(q1,beta=6)=0.2254(33) vs compromised 0.2447(20) -> S_T also biased by the winding artifact.
+  Final analysis logs: logs/analysis_L4_clean.log, analysis_compromised_L4_L6.log, analysis_L6_s4.log,
+  drift.log, ti_estimates.log, posthoc.log, energy_L8.log. VERDICT (declared criteria): INCONCLUSIVE
+  (EQ fails at beta=L for L=4,6; L=8 PT infeasible). NOTE.md written. No jobs running. Block complete.

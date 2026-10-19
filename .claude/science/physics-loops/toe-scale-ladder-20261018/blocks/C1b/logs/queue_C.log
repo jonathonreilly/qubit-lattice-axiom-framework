@@ -3,3 +3,5 @@
 06:51:50 start L4_s3 chunk 1
 {"tag": "L4_s3", "L": 4, "seed": 103, "start": "canonical", "nsw": 19622, "sweeps_this_call": 9693, "trips_total": 9, "trips_this_call": 7, "check": 0, "nrows": 4847, "secs": 900.4, "swap_min": 0.28355927020691063}
 07:06:51 start L4_s3 chunk 2
+{"tag": "L4_s3", "L": 4, "seed": 103, "start": "canonical", "nsw": 29411, "sweeps_this_call": 9789, "trips_total": 11, "trips_this_call": 2, "check": 0, "nrows": 4894, "secs": 900.4, "swap_min": 0.2828097375220998}
+07:21:53 start L8E_s3 chunk 0

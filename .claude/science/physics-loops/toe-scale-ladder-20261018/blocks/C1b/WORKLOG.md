@@ -161,3 +161,7 @@ Physics (V=0, beta = L, also beta = L/2 from the same ladder):
   beta >= L still start-dependent -> brackets. Changed queue D second job from L8E_s4 to L6_s4 (mixW_rot,
   2 chunks) to get sector-conditional energies at L=6 for the TI estimator (which needs equilibration only
   within sectors, not of the sector populations). L8E then has one start only (L8E_s3).
+- 07:22 L4_s3/s4 done (3 chunks, 11/13 trips). Declared EQ fails at beta=L=4 (W2 z=-3.0, S1 z=-2.2).
+  Per-chunk P1(beta=4): s3 0.016 -> 0.088 -> 0.058 ; s4 0.253 -> 0.175 -> 0.055 (last chunks agree,
+  approached from both sides). beta=L/2=2.05: P1 0.39-0.43 in all chunks of both runs; dF1_direct
+  0.510(34) / 0.500(28). L8E_s3 and L6_s4 running until ~07:52.

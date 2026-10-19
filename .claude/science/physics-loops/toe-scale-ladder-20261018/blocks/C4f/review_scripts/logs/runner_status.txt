@@ -1,0 +1,7 @@
+radius exit 0
+sym_random exit 0
+sectors exit 0
+inv exit 0
+inv_more exit 0
+sym_planted exit 0
+influence exit 0

@@ -3,3 +3,5 @@
 06:51:50 start L4_s4 chunk 1
 {"tag": "L4_s4", "L": 4, "seed": 104, "start": "mixW_rot", "nsw": 20194, "sweeps_this_call": 9885, "trips_total": 11, "trips_this_call": 7, "check": 0, "nrows": 4943, "secs": 900.4, "swap_min": 0.2864217094186392}
 07:06:51 start L4_s4 chunk 2
+{"tag": "L4_s4", "L": 4, "seed": 104, "start": "mixW_rot", "nsw": 29919, "sweeps_this_call": 9725, "trips_total": 13, "trips_this_call": 2, "check": 0, "nrows": 4862, "secs": 900.4, "swap_min": 0.2863636363636364}
+07:21:53 start L6_s4 chunk 0

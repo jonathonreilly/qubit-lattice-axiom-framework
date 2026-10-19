@@ -1,0 +1,22 @@
+trial 0: |v^-1 t|=0.77 det v=-1.005  Ch_direct=-1.00002+0.0e+00i  Ch_FHS=-1.00000 rank={1}  LemmaT=-1.00005+1.3e-18i
+PASS trial 0: direct Ch(P_-) = sign det v = -1 (Lemma S)
+PASS trial 0: FHS (my orientation) = direct Ch
+PASS trial 0: Lemma T integral = Ch(P)
+trial 1: |v^-1 t|=0.46 det v=-0.098  Ch_direct=-1.00005+0.0e+00i  Ch_FHS=-1.00000 rank={1}  LemmaT=-0.99975+1.9e-18i
+PASS trial 1: direct Ch(P_-) = sign det v = -1 (Lemma S)
+PASS trial 1: FHS (my orientation) = direct Ch
+PASS trial 1: Lemma T integral = Ch(P)
+trial 2: |v^-1 t|=0.25 det v=-3.508  Ch_direct=-1.00008+0.0e+00i  Ch_FHS=-1.00000 rank={1}  LemmaT=-1.00019+8.7e-19i
+PASS trial 2: direct Ch(P_-) = sign det v = -1 (Lemma S)
+PASS trial 2: FHS (my orientation) = direct Ch
+PASS trial 2: Lemma T integral = Ch(P)
+trial 3: |v^-1 t|=0.55 det v=+0.194  Ch_direct=+1.00009+0.0e+00i  Ch_FHS=+1.00000 rank={1}  LemmaT=+0.99989-1.4e-18i
+PASS trial 3: direct Ch(P_-) = sign det v = +1 (Lemma S)
+PASS trial 3: FHS (my orientation) = direct Ch
+PASS trial 3: Lemma T integral = Ch(P)
+n=3 trial 0 (rank 1): Ch_direct=+1.00004  LemmaT=+1.00010
+PASS n=3 trial 0: Lemma T = Ch for a rank-1 projector in C^3 (integer)
+n=3 trial 1 (rank 2): Ch_direct=+1.00009  LemmaT=+1.00021
+PASS n=3 trial 1: Lemma T = Ch for a rank-2 projector in C^3 (integer)
+PASS step 2: H_eps = H_reg + 2pi P_< and exp(-itH_eps) = exp(-itH_reg) exp(-2pi i t P_<) (50 random U(3), 150 t)
+TOTAL: PASS=15 FAIL=0

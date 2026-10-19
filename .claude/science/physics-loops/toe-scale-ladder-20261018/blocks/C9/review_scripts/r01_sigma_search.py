@@ -294,8 +294,8 @@ def partC(rng):
                 # deformations delta W = i[sum_x tau_x h, W] (h an SU(2)-invariant local term;
                 # the generator of the quasi-local flow e^{itH}), so Gauss-Newton converges only
                 # slowly along it.  Polish further and record whether the distance decreases.
-                sol2 = least_squares(resid, sol.x, method="trf", xtol=1e-16, ftol=1e-16,
-                                     gtol=1e-16, max_nfev=POLISH)
+                sol2 = least_squares(resid, sol.x, method="trf", xtol=1e-15, ftol=1e-15,
+                                     gtol=1e-15, max_nfev=POLISH)
                 k2, dk2 = mindist(Wof(sol2.x))
                 rn2 = np.linalg.norm(sol2.fun)
                 slow_tail.append((dk, dk2, rn, rn2))

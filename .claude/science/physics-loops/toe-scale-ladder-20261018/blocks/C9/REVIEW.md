@@ -115,10 +115,10 @@ automorphism rather than an injective endomorphism, through multiplicativity and
   - W satisfies the Pauli algebra and commutes with all its translates. These are necessary
     conditions, and they define an injective TI endomorphism.
   - The search is least squares over the **entire** vector-operator space, which has
-    dimensions 9, 28 and 90 for n = 3, 4, 5. Each dimension matches the spin-1 multiplicity
+    dimensions 9 and 28 for n = 3, 4 (n = 5, 90, was planned but not run). Each dimension matches the spin-1 multiplicity
     from Schur–Weyl.
   - Every converged solution was a single-site Pauli triple, i.e. a shift. Results:
-    RESULTS_PLACEHOLDER
+    n = 3: 200/200 starts converged, all to shifts {0:51, 1:98, 2:51}, 0 other (`r01_n3_run2.txt`, TOTAL: PASS=8 FAIL=0). n = 4: running at hand-back as `r01_n4_run4.txt` (pending; not counted). An earlier n = 4 run showed a slow-convergence valley (residual 2e-12 at distance 1.6e-4 from a shift), consistent with the first-order Heisenberg-flow deformation i[ΣP, σ] that does not integrate to a strictly local solution; the classifier was changed to polish such cases. Earlier n = 4 attempts are kept as INCOMPLETE logs.
   - This tests Theorem 1 as a whole in 1D, rather than the swap step tested by `c9_03`. It is
     evidence, not proof.
 
@@ -202,9 +202,8 @@ multiplicity space of S = N/2 − 1; frozen singles make it the same constant c_
 | log | content | result |
 |---|---|---|
 | `review_scripts/logs/r02_steps_run1.txt` | Step D geometry (20 000 random sets + all pairs) and sign; Step G exact nullspace (dim 1) + control (dim 5); 6-cycle witness | TOTAL: PASS=7 FAIL=0 |
-| `review_scripts/logs/r01_n3_run2.txt` | Lemma B random/converse; vector-op dim 9; σ-image search n=3 | N3_TOTAL |
-| `review_scripts/logs/r01_n4_run2.txt` | same, n=4 (dim 28) | N4_TOTAL |
-| `review_scripts/logs/r01_n5_run2.txt` | same, n=5 (dim 90) | N5_TOTAL |
+| `review_scripts/logs/r01_n3_run2.txt` | Lemma B random/converse; vector-op dim 9; σ-image search n=3 | TOTAL: PASS=8 FAIL=0 |
+| `review_scripts/logs/r01_n4_run2.txt` | same, n=4 (dim 28) | pending at hand-back (not counted) |
 
 **Disclosure.** My first launch of `r01` was given the arguments in the wrong order (n = 200). I
 killed it by hand after Part A, and its log is kept, renamed, as
@@ -221,3 +220,5 @@ in total, as stated. Their dry-run and incomplete logs are disclosed correctly.
 3. Step (1): fix the "c_1 on the multiplicity space" attribution (minor).
 4. Corollary 2: "e.g. O or T" can be "i.e. O or T" among subgroups of the rotation group O
    (cosmetic).
+
+Reviewer counted total (completed official logs r02_steps_run1 + r01_n3_run2): TOTAL: PASS=15 FAIL=0

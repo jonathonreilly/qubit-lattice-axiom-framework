@@ -1,0 +1,92 @@
+[
+  {
+    "id": "J:derive:review-20261018-finite-product-launch-and-release:a1",
+    "problem": "review-20261018-finite-product-launch-and-release",
+    "title": "Construct a finite product-seed launch and released output",
+    "type": "judgment",
+    "lane": "review-science-20261018",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "Starting from the exact supplied positive two-body mediator and stationary ladder, construct and prove ONE finite product-seed launcher-to-output interface with complete outputs, actual environment evolution, finite-time error, positive/local inventory and incident norm budget. The infinite-lead incoming packet theorem is not a finite launch, and a second clock cycle applies another gate. First reconcile existing launch results and choose the first unsolved interface; if finite release is impossible only prove an obstruction for explicitly enumerated hypotheses, not all autonomous devices. Do not count the existing scattering matrix, supplied packet or known halt limitation as progress.",
+    "what": "Starting from the exact supplied positive two-body mediator and stationary ladder, construct and prove ONE finite product-seed launcher-to-output interface with complete outputs, actual environment evolution, finite-time error, positive/local inventory and incident norm budget. The infinite-lead incoming packet theorem is not a finite launch, and a second clock cycle applies another gate. First reconcile existing launch results and choose the first unsolved interface; if finite release is impossible only prove an obstruction for explicitly enumerated hypotheses, not all autonomous devices. Do not count the existing scattering matrix, supplied packet or known halt limitation as progress. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "source_branch": {
+      "name": "main",
+      "head": "77565121a9e2598aa4daed6413c5c723241654a5",
+      "on_origin": true
+    },
+    "source_paths": [
+      "docs/REAL_MEDIATED_VACANCY_NETWORK_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "docs/REAL_TWO_BODY_GAP_MEDIATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "docs/COMMON_PRODUCT_RESONANT_LAUNCH_BOUNDED_THEOREM_NOTE_2026-10-18.md"
+    ],
+    "source_objects": [
+      {
+        "path": "docs/REAL_MEDIATED_VACANCY_NETWORK_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+        "commit": "77565121a9e2598aa4daed6413c5c723241654a5",
+        "sha256": "d4a60c480454e5fee8987b4a9ca786771f73bcb7e7317fc7768513938286f8c2"
+      },
+      {
+        "path": "docs/REAL_TWO_BODY_GAP_MEDIATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+        "commit": "77565121a9e2598aa4daed6413c5c723241654a5",
+        "sha256": "c525e617abf39a5cddc7c0e891fdcf13f1dbfc35309d38e42fc7c6f12f5b3d77"
+      },
+      {
+        "path": "docs/COMMON_PRODUCT_RESONANT_LAUNCH_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+        "commit": "77565121a9e2598aa4daed6413c5c723241654a5",
+        "sha256": "ef0d1ca5b3d83f7e5740d68d58b97a27bdc25c2bf3fef8b040ed17b188767952"
+      }
+    ],
+    "related_tasks": [
+      "J:derive:review-20261008-portfolio-next-bridge:a1"
+    ]
+  },
+  {
+    "id": "J:derive:review-20261018-uniform-d4-conserved-exchange:a1",
+    "problem": "review-20261018-uniform-d4-conserved-exchange",
+    "title": "Prove or refute uniform conserved-source exchange on the D4 carrier",
+    "type": "judgment",
+    "lane": "review-science-20261018",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "Resolve ONE analytic small-momentum exchange obligation for the supplied D4 carrier: establish or refute a direction-uniform leading tensor form with an explicit remainder on the stated conserved-source space, treating gauge quotient, rank changes and other low modes explicitly. Begin with the exact Laurent Ward identity and current complex finite diagnostics. A small fitted coefficient error is not a bound on the full exchange tensor; generic residuals at .02 exceed .003 and roughly halve at .01. Finite sampled ratios, real-part fits and numerically selected subspaces are not uniform theorems. No physical gravity identification or nonlinear action symmetry is assumed.",
+    "what": "Resolve ONE analytic small-momentum exchange obligation for the supplied D4 carrier: establish or refute a direction-uniform leading tensor form with an explicit remainder on the stated conserved-source space, treating gauge quotient, rank changes and other low modes explicitly. Begin with the exact Laurent Ward identity and current complex finite diagnostics. A small fitted coefficient error is not a bound on the full exchange tensor; generic residuals at .02 exceed .003 and roughly halve at .01. Finite sampled ratios, real-part fits and numerically selected subspaces are not uniform theorems. No physical gravity identification or nonlinear action symmetry is assumed. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "source_branch": {
+      "name": "main",
+      "head": "77565121a9e2598aa4daed6413c5c723241654a5",
+      "on_origin": true
+    },
+    "source_paths": [
+      "docs/SCALE_LADDER_GRAVITY_D4CONE_EXACT_WARD_SITE_SCALAR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "scripts/scale_ladder_gravity_d4cone_exact_ward_site_scalar_2026_10_18.py"
+    ],
+    "source_objects": [
+      {
+        "path": "docs/SCALE_LADDER_GRAVITY_D4CONE_EXACT_WARD_SITE_SCALAR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+        "commit": "77565121a9e2598aa4daed6413c5c723241654a5",
+        "sha256": "909cdd8782e8495024359bac4f4154530b082c6746424396e8684ec7c024f883"
+      },
+      {
+        "path": "scripts/scale_ladder_gravity_d4cone_exact_ward_site_scalar_2026_10_18.py",
+        "commit": "77565121a9e2598aa4daed6413c5c723241654a5",
+        "sha256": "c11e0b23f041f7201592251e7b08a434432924565ac03183641182879bc2a57a"
+      }
+    ],
+    "related_tasks": [
+      "J:derive:review-20261008-portfolio-next-bridge:a1"
+    ]
+  }
+]

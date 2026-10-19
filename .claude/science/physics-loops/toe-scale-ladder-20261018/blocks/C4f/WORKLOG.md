@@ -23,3 +23,7 @@
 - Disclosed: first c4f_01 Part-B criterion (orbit-restricted images) gave a FAIL vs C4c r=1 count; replaced by
   C4c's exact criterion; that log was overwritten (disclosed in NOTE).
 - Open for review: Lemma I' (read-set N1), parity step, Step 1.
+
+## review corrections applied
+- NOTE: status line, Lemma I' wording (56/400 site-sharing failure; one-sided variants observation), descriptive results marked not re-checked, Review dispositions.
+- logs/c4f_01_superseded_RECONSTRUCTED.txt (labelled reconstructed from session output; not in SUMMARY). From now on new runs go to new log files.

@@ -2,7 +2,7 @@
 
 **Block:** C4f of `toe-scale-ladder-20261018`, following C4e (T-covariant glider, not O-covariant),
 C4b (axis/full actions, Lemma 2), C4c (Observation M) and C4d (P1, spectator lemma, Prop. E).
-**Date:** 2026-10-19. **Status:** author's work only; not yet reviewed. No axiom, primitive or
+**Date:** 2026-10-19. **Status:** Reviewed in a separate agent context (same model as the author); unaudited. See `REVIEW.md` and "Review dispositions". No axiom, primitive or
 dynamics clause is adopted. The QCA below is a *constructed example* inside the premise class.
 
 ## Result up front
@@ -206,9 +206,9 @@ because activity depends only on the finite set ⋃_{v ∈ {u}∪N1∪N2} F_v. �
 | `c4f_03_interface.py` | Θ-mirror along 8 interface trajectories; head-on pairs | PASS=2 FAIL=0 |
 | `c4f_04_stress.py` | 1500 packed-candidate configurations on 5 backgrounds × 8 ticks (crossings: 58,925 L1, 24,958 B-type, 25,088 A-type): every layer is an involution on its input, U^{-8}U^{8} = id, sparse = dense on 60 | PASS=4 FAIL=0 |
 
-`logs/SUMMARY.txt`: **TOTAL: PASS=37 FAIL=0**. No recorded run FAILed. One earlier version of the `c4f_01` classification used a wrong criterion: it required c′ to lie in the orbit of c. It disagreed with C4c's r = 1 count (one FAIL) and was replaced by C4c's exact criterion. That superseded log was overwritten, not kept, and is disclosed here.
+`logs/SUMMARY.txt`: **TOTAL: PASS=37 FAIL=0**. No recorded run FAILed. One earlier version of the `c4f_01` classification used a wrong criterion: it required c′ to lie in the orbit of c. It disagreed with C4c's r = 1 count (one FAIL) and was replaced by C4c's exact criterion. The original superseded log was overwritten and is not recoverable (it is also absent from git). Its PASS/FAIL and count lines are recorded in `logs/c4f_01_superseded_RECONSTRUCTED.txt`, which is **reconstructed** from the session's terminal output and is not an original log. What was lost is the original file, including its per-orbit example lines. The failing line was `FAIL regression Obs. M, r=1, T: exactly 6 relative positions (face diagonals) admit moves` (TOTAL: PASS=8 FAIL=1; that criterion counted 10). From now on, new runs go to new log files, and no log is overwritten.
 
-**Descriptive (exact simulation, finite windows).**
+**Descriptive (exact simulation, finite windows; author only, NOT independently re-checked by the review).**
 - **Interface.** A (1,1,0) magnon pair moving +e3 into a filled slab z ∈ [7,10] on the L = 12
   torus is **reflected**, for all 8 tested start positions. After 12 ticks it is a (1,−1,0) pair
   below the slab; no magnon is left inside and no hole is created. This is the analogue of C4e's
@@ -230,7 +230,7 @@ sense.
 | Lemma I′ | proved; exhaustive small-sector and stress checks |
 | U is TI, U(1), O-covariant (axis, phases), frozen singles/holes, C4e glider, hole glider −v | proved from Lemma I′ + geometry; exact checks |
 | CA radius ≤ 6 (per layer exactly 3); radius ≥ 5 (witness); QCA range ≤ 18 | computed / proved bound / exact witness |
-| interface reflection, head-on table | exact simulation, descriptive |
+| interface reflection, head-on table | exact simulation, descriptive; not independently re-checked |
 
 ## No-go discipline / scope
 
@@ -248,8 +248,13 @@ sense.
 
 ## Load-bearing steps for independent check
 
-1. **Lemma I′**, especially (ii). Check that N1 must include *both* F_w∩S_u and F_u∩S_w. The
-   first protects Q1's (b) and (c); the second protects Q1's own candidacy. A blind route is to
+1. **Lemma I′**, especially (ii). The proof uses *both* N1 clauses, F_w∩S_u and F_u∩S_w. The first
+   protects Q1's (b) and (c); the second protects Q1's own candidacy.
+   - The read-set extension is load-bearing. The review found that C4e's site-sharing N1 on the
+     controlled layer breaks L2² = id on 56/400 packed configurations (`REVIEW.md`, `rC_variants`).
+   - *Observation, not a theorem:* the one-sided variants (only F_w∩S_u, or only F_u∩S_w) showed 0
+     failures in the review's 400 tests. So "both" is shown necessary for the proof, not for the
+     involution. A blind route is to
    implement the rule from this text and test L∘L = id on packed configurations near empty/full
    interfaces.
 2. **The parity step:** odd R maps B(k) onto A(k') with Γ ↦ Γ, so that Cπ_R maps B-empty units to
@@ -275,3 +280,18 @@ python3 c4f_02_verify.py radius        # ~35 s
 python3 c4f_03_interface.py            # ~10 s
 python3 c4f_04_stress.py 1500          # ~10 min
 ```
+
+## Review dispositions (`REVIEW.md`)
+
+The review was done in a separate agent context, by the same model as the author. It derived the
+symmetry independently, rebuilt the construction from the definitions, and reproduced all claims
+except the descriptive interface and head-on results. It found no load-bearing error.
+
+| item | disposition |
+|---|---|
+| Lemma I′: the proof uses both N1 clauses; one-sided variants did not fail in tests; C4e's site-sharing N1 fails 56/400 | **accepted.** Load-bearing step 1 reworded; recorded as an observation |
+| the torus needs even L (parity of B/A), and L ≥ 8 suffices for the neighbourhood lists | **accepted, noted here.** All runs use L = 10 and 12 |
+| "6 move" counts unordered pairs (12 ordered relative vectors) | **accepted, noted here** |
+| interface reflection and head-on table not re-simulated | **accepted.** Marked "not independently re-checked" |
+| evidence: the first `c4f_01` FAIL log was overwritten | **accepted.** The lost file is stated, its lines are given in a clearly labelled reconstructed file, and later runs use new log files |
+| `c4f_02_sym` log replaced by a stronger run (30 → 200 configurations; old version in git) | noted; a strengthening, not a hidden failure |

@@ -1,7 +1,7 @@
 # C3b: Ergodic covariant formation clocks: internal-symmetry order needs infinite ancestries; noisy, power-law and nucleation-growth clocks have none
 
 **Block:** C3b of `toe-scale-ladder-20261018`. It follows up the OPEN items of `blocks/C3/NOTE.md` §7: ergodic covariant long-range clocks, `λmin = 0`, and non-Markov rates.
-**Date:** 2026-10-19. **Status:** author draft. Not independently reviewed. Unaudited.
+**Date:** 2026-10-19. **Status:** Reviewed in a separate agent context (same model as the author); unaudited. See `REVIEW.md`; findings F1–F6 are applied (§10).
 **Claim types:**
 - `PROVED`: proof given here, from the stated premises.
 - `IMPORTED`: a standard theorem, cited and not re-proved.
@@ -27,11 +27,11 @@ The target question splits into two answers. They depend on **which symmetry** t
    - *Setting:* let a group `Γ` act on the menu and preserve the rule. Majority/Potts rules and the I-16 six-axis rule are examples. The clock law is **arbitrary**: it need not be ergodic, mixing or covariant. The marks are iid.
    - *Bound:* for every `Γ`-mean-zero local `f`, `|E f(ξ_A) g(ξ_B)| ≤ ‖f‖‖g‖ · P(Anc(A) ∩ Anc(B) ≠ ∅)`.
    - *Consequence:* if ancestries are a.s. finite, no ergodic component breaks `Γ`, and order-parameter correlations decay at the rate of the ancestry tail.
-   - *Corollary for d = 1:* there, every stationary clock has finite ancestries, by Poincaré recurrence (Prop. K3). So internal SSB never occurs in d = 1.
+   - *Corollary for d = 1:* there, every stationary clock (stationary itself, not merely gradient-stationary) has finite ancestries under a nearest-neighbour rule, by Poincaré recurrence (Prop. K3). So internal SSB never occurs in that setting. The level clock `T_x = x` has stationary increments and is a counterexample to any increment-only version.
 3. **Positional/local LRO needs a non-mixing clock or infinite ancestries (PROVED, Theorem M, §2).** If ancestries are a.s. finite, the record is a translation-equivariant factor of (clock, marks). A factor of a mixing system is mixing. So no local observable has covariance-LRO.
 4. **Finite ancestries hold for the three candidate mechanisms:**
    - **Theorem H (PROVED, §4).** Suppose the clock has a non-interpolable local random component: conditional on `T_0`, every finite set of other clocks has density `≤ K^{|S|}`. Then `P(L(0) ≥ n) ≤ c_n (KM)^n/n! + P(T_0 − min_{B(0,n)} T > M)`. Sublinear oscillation therefore gives finite ancestries.
-     - This covers candidate **(b)**: every stationary Gaussian clock with `∫ f^{-1} < ∞`, including all power-law covariances, and every fractional (gradient-stationary) Gaussian clock with Hurst `H < 1`.
+     - This covers candidate **(b)**: every stationary Gaussian clock with `∫ f^{-1} < ∞`, including power-law covariances whose spectral density is bounded below (e.g. any with a white-noise component; not every power-law covariance: `T = W − W(·+e_1)` has `∫ f^{-1} = ∞`), and every fractional (gradient-stationary) Gaussian clock with Hurst `H < 1`.
      - It covers candidate **(c)** for any additive noise strength `s > 0`.
      - For Gaussian clocks it also bounds record correlations by the clock's maximal correlation. Power-law record correlations are allowed; LRO is not.
    - **Theorem J (PROVED, §5).** Take any formation dynamics with bounded rates `λ ≤ λmax`, finite range and **arbitrary history dependence**, with `λmin = 0` allowed. If every site forms a.s., then the coding radius satisfies `P(R ≥ n+1) ≤ P(τ_0 > t) + c_n(λmax t)^{n+1}/(n+1)!` for every `t`. So the record is a finitary factor of iid (FFIID): mixing, no LRO and no SSB.
@@ -40,9 +40,9 @@ The target question splits into two answers. They depend on **which symmetry** t
      - The trivial case `λ(∅) = 0` with no seeds forms nothing at all (Prop. J3).
 5. **What LRO there is, and where.**
    - Nucleation-growth (a): only the domain size diverges as ε → 0. The ε → 0 limit is the non-ergodic q-colour mixture of C3 §1.
-   - Fractional clocks (b) as `H → 1`: the ancestry scale of Theorem H grows like `exp(O(1/(1−H)))`. At `H = 0.95` the simulated boxes (up to 512²) still show growing `⟨L⟩` and `χ_L` (NUMERICAL, §7). This is a **divergent crossover length, not LRO**: Theorems H and K prove that colour correlations vanish at every `H < 1`.
+   - Fractional clocks (b) as `H → 1`: the scale guaranteed by Theorem H's bound diverges like `exp(O(1/(1−H)))`. At `H = 0.95` the simulated `⟨L⟩` and `χ_L` still grow with box size (up to 512²; NUMERICAL, §7), and the clock law itself is not converged on these tori (REVIEW r2 d3–d4). A divergence of the true crossover scale is **not proved**. What is proved (Theorems H, K and M) is that colour correlations vanish and there is no LRO at every `H < 1`.
    - The ordered endpoint `H = 1` is the random-tilt level clock, which is non-ergodic.
-   - Noise-free two-stage Voronoi–level clocks (c), whose cell interiors run Toom's eroder: colour correlation length about 0.3 ℓ, and no LRO in finite-size scaling (NUMERICAL).
+   - Noise-free two-stage Voronoi–level clocks (c), whose cell interiors run Toom's eroder: colour correlation length 0.3–0.5 ℓ, with the ratio decreasing in ℓ, and no LRO in finite-size scaling (NUMERICAL).
 6. **Still OPEN.**
    - Mixing, `O_h`-covariant clocks in d ≥ 2 that **violate both** Theorem H's premise and Theorem J's premise. These are clocks with no non-interpolable local randomness and no bounded-rate Poisson representation, such as deterministic factor clocks and deterministic growth delays (`λmax = ∞`). For these, finiteness of ancestries is not proved. No example with infinite ancestries is known to me.
    - Holes and jamming, i.e. sites that never form.
@@ -81,8 +81,8 @@ The setting is as in C3 §1: `Z^d` with nearest neighbours (`D = 2d`), a finite 
 **Theorem K (PROVED).**
 - *Premises:* `Γ` is a finite group acting on `M` with `r_x(γs | γ∘η) = r_x(s|η)` for all `x, s, η`. `T` has an arbitrary law and is independent of the iid marks. `A, B` are finite. `f: M^A → R` is `Γ`-mean-zero, i.e. `Σ_γ f(γs) = 0` for all `s`, and `g` is any bounded function. `Anc(A), Anc(B)` are a.s. finite.
 - **(K1)** `|E[f(ξ_A) g(ξ_B)]| ≤ ‖f‖_∞ ‖g‖_∞ · P(Anc(A) ∩ Anc(B) ≠ ∅)`.
-- **(K2)** In addition, suppose `T` is stationary, the rule is translation-covariant, and `P(L(0) ≥ n) → 0`. Then every translation-ergodic component `μ_ω` of the record law has `E_{μ_ω} f = 0` for every `Γ`-mean-zero local `f`, i.e. no spontaneous breaking of `Γ`. Moreover, `Cov(f(ξ_A), f(ξ_{A+x})) ≤ ‖f‖² · 2|A| P(L(0) ≥ (|x| − diam A)/2)`.
-- **(K3, d = 1)** Every stationary real clock on `Z` (any law, ergodic or not) has a.s. finite ancestries. Hence (K2) holds for all stationary clocks in d = 1.
+- **(K2)** In addition, suppose the orientation field `o` is stationary (stationarity of `T` itself is not needed), the rule is translation-covariant, and `P(L(0) ≥ n) → 0`. Then every translation-ergodic component `μ_ω` of the record law has `E_{μ_ω} f = 0` for every `Γ`-mean-zero local `f`, i.e. no spontaneous breaking of `Γ`. Moreover, `Cov(f(ξ_A), f(ξ_{A+x})) ≤ ‖f‖² · 2|A| P(L(0) ≥ (|x| − diam A)/2)`.
+- **(K3, d = 1)** Every stationary real clock on `Z` (any law, ergodic or not; `T` itself stationary, not merely its increments) with a nearest-neighbour rule has a.s. finite ancestries. Hence (K2) holds for all such clocks. Both premises are needed. The level clock `T_x = x` has stationary increments, `L(0) = ∞`, and two solutions under the copy rule. With range `h > 1`, decreasing paths need not be monotone runs.
 
 **Proof.**
 - **(K1).** `E_T := {Anc(A) ∩ Anc(B) = ∅}` is `T`-measurable. By Lemma 1, given `T`, `ξ_A` is a function of `U|_{Anc(A)}` and `ξ_B` of `U|_{Anc(B)}`. On `E_T` these are disjoint, so the two are conditionally independent. The conditional law of `ξ_{Anc(A)}` is a product of rule kernels, which is `Γ`-invariant by the hypothesis on `r`. Hence `E[f(ξ_A)|T] = 0`, and `E[fg|T] = 0` on `E_T`. Off `E_T`, `|E[fg|T]| ≤ ‖f‖‖g‖`.
@@ -116,8 +116,8 @@ The setting is as in C3 §1: `Z^d` with nearest neighbours (`D = 2d`), a finite 
   - MC s1(d): the volume bound holds for correlated Gaussian paths.
 
 **Corollary H-G (candidate b; PROVED with IMPORTED Maruyama).**
-- *Stationary Gaussian clocks* with `∫ f^{-1} < ∞`. Every continuous `f > 0` on the torus qualifies, including power-law `C(r) ~ r^{−α}`, `α > 0`, and smooth fields with finite correlation scale. Then `ψ_n(M) ≤ (|B_n|+1) e^{−M²/(8σ²)}`, so ancestries are finite. If `C(r) → 0`, the field is mixing (Maruyama, IMPORTED), and Theorems M and K give no covariance-LRO and no internal SSB.
-- *Gradient-stationary (fractional) Gaussian clocks*: `f(k) = lap(k)^{−(1+H)}`, `0 < H < 1`, where `lap(k) = Σ_i (2 − 2cos k_i)` is the lattice Laplacian symbol (as in `s3`). Here `f ≥ (4d)^{−(1+H)} > 0`, so (i) applies with `K = (2π (4d)^{−(1+H)})^{−1/2}`. Also `Var(T_0 − T_y) ≤ A|y|^{2H}`, so `ψ_n(ηn) ≤ |B_n| e^{−η²n^{2−2H}/(2A)} → 0`. Ancestries are finite for every `H < 1`. The increment covariance decays like `r^{2H−2} → 0`, so the increments are mixing (IMPORTED, vector Maruyama). There is no LRO.
+- *Stationary Gaussian clocks* with `∫ f^{-1} < ∞`. Every continuous `f > 0` on the torus qualifies, including power-law `C(r) ~ r^{−α}`, `α > 0`, **when `f` is bounded below** (as for the s3 families `f = s2 + lap^{(α−2)/2}`), and smooth fields. A power-law covariance alone is not enough: `T_x = W_x − W_{x+e_1}`, with `W` a power-law field, has `f = 0` on `k_1 = 0`, `∫ f^{-1} = ∞`, and (H1) is not established with finite correlation scale. Then `ψ_n(M) ≤ (|B_n|+1) e^{−M²/(8σ²)}`, so ancestries are finite. If `C(r) → 0`, the field is mixing (Maruyama, IMPORTED), and Theorems M and K give no covariance-LRO and no internal SSB.
+- *Gradient-stationary (fractional) Gaussian clocks*: `f(k) = lap(k)^{−(d/2+H)}`, `0 < H < 1`, where `lap(k) = Σ_i (2 − 2cos k_i)` is the lattice Laplacian symbol. In d = 2 this is `lap^{−(1+H)}`, as in `s3`. `T` is defined modulo a constant, which does not matter by Lemma 0. Here `f ≥ s² := (4d)^{−(d/2+H)} > 0`. Write `T = T_1 + sZ`, where `T_1` is the intrinsic field with spectral weight `f − s² ≥ 0` and `Z` is independent iid N(0,1) white noise. Then (i) applies with `K = (2π s²)^{−1/2}`. Also `Var(T_0 − T_y) ≤ A|y|^{2H}`, so `ψ_n(ηn) ≤ |B_n| e^{−η²n^{2−2H}/(2A)} → 0`. Ancestries are finite for every `H < 1`. The increment covariance decays like `r^{2H−2} → 0`, so the increments are mixing (IMPORTED, vector Maruyama). There is no LRO.
 - *Quantitative bound (H4, CONDITIONAL on the imported Csáki–Fischer and Kolmogorov–Rozanov facts).* Let `ρ_m(A,B)` be the maximal correlation of the clock on the disjoint windows `A+B(m)` and `B+B(m)`. Then
   `|Cov(f(ξ_A), g(ξ_B))| ≤ ‖f‖‖g‖ [ρ_m(A,B) + 2(|A|+|B|) P(L ≥ m)]`.
   For a Gaussian clock, `ρ_m` is the largest canonical correlation. So record correlations can be at most as long-ranged as the clock's canonical correlations. Power laws are allowed; LRO is not.
@@ -149,7 +149,7 @@ The bound is crude. It shows that the theorem's guarantee is effective only beyo
 - **(J1)** For each `t`, a.s. only finitely many points lie on backward chains from any site with `t_0 ≤ t`. So the dynamics on `[0,t]` is well-defined and locally determined (Harris argument).
 - **(J2)** Suppose `τ_0 < ∞` a.s., i.e. every site forms. Then for every `t > 0`,
   `P(R(0) ≥ n+1) ≤ P(τ_0 > t) + c_n (λmax t)^{n+1}/(n+1)!`.
-  Hence the final record is a finitary factor of iid: mixing of all orders, with no LRO and no SSB (Theorems M and K). Taking `t = n/(2e(D−1)λmax)` makes the second term `≤ (D/(D−1)) 2^{−n}`.
+  Hence the final record is a finitary factor of iid, mixing of all orders, with no LRO. On no SSB: Theorem K is proved for the clock model only, so it is not cited here. Directly: if the rates are translation-covariant and the rates and content kernels are Γ-equivariant (`λ(γH) = λ(H)`, `Φ`-law of `γ·` equal to `γ` of the `Φ`-law), then the FFIID record law is unique. It is therefore invariant under Γ (apply γ to the iid data and to the contents), and mixing. A unique, mixing, Γ-invariant law has no SSB. Taking `t = n/(2e(D−1)λmax)` makes the second term `≤ (D/(D−1)) 2^{−n}`.
 - **(J3)** Suppose `λ_x = 0` whenever the neighbourhood history is empty, and the start is empty with no seeds. Then a.s. no site ever forms.
 
 **Proof.**
@@ -165,7 +165,7 @@ The bound is crude. It shows that the theorem's guarantee is effective only beyo
 - *Formation-time tail.* Let `r = ⌊at/4⌋`. Then
   `P(τ_0 > t) ≤ exp(−ε|B_r| t/2) + P(Gamma(r,a) > t/2) ≤ exp(−c_d ε a^d t^{d+1}) + e^{−0.3 r}`.
   The first term: if nothing in `B(0,r)` has formed by `t/2`, every site there is still blank and isolated, and so nucleates at rate `≥ ε`. The second: growth from the first formed site along a geodesic is dominated by a sum of `Exp(a)` variables (strong Markov property in the graphical construction).
-- *Conclusion:* `P(R ≥ n+1) ≤ C(2^{−n} + e^{−c'n}) + exp(−c'' ε n^{d+1})`. So the local correlation length is `O(ε^{−1/(d+1)})` as ε → 0, i.e. `O(ε^{−1/3})` in d = 2.
+- *Conclusion:* `P(R ≥ n+1) ≤ C(2^{−n} + e^{−c'n}) + exp(−c'' ε n^{d+1})`. So the local correlation length is `O(ε^{−1/(d+1)})` as ε → 0. This is an upper bound only; the matching growth is NUMERICAL, i.e. `O(ε^{−1/3})` in d = 2.
 - *Comparison with C3 Theorem C.* Theorem C gives the scale `O(1/ε)`, with superexponential tails. The two bounds are complementary.
 - *Seeded variant* (iid seeds of density `p`, rate 0 for isolated non-seeds, so `λmin = 0`): `τ_0 < ∞` a.s., and J applies.
 
@@ -186,7 +186,7 @@ The bound is crude. It shows that the theorem's guarantee is effective only beyo
 - This is a heuristic (not proved).
 
 **Numerics (s4, NUMERICAL).**
-- Colour correlation length `ξ ≈ 2.0, 2.9, 3.7` for `ℓ = 4, 8, 12`, i.e. `ξ/ℓ ≈ 0.3`.
+- Colour correlation length `ξ ≈ 2.0, 2.9, 3.7` for `ℓ = 4, 8, 12`, i.e. `ξ/ℓ` is 0.3–0.5 and decreases with ℓ: about 0.49 at ℓ = 4, 0.35–0.38 at ℓ = 8, 0.31 at ℓ = 12. Runs with δ = 0 and δ = 0.02 are pooled here.
 - `⟨L(x)⟩` is independent of the box size `L` (e.g. 11.1 at ℓ = 8 for L = 24, 48, 72).
 - `χ_L = N⟨m²⟩` does not grow like `L³`. Fitted log–log slopes over the box sizes:
 
@@ -217,7 +217,7 @@ All criteria were declared in the script headers before running.
 | 1e-4 | 18.9 ± 0.2 |
 
 - Fit: `ξ ∝ ε^{−0.326 ± 0.005}`, with χ²/dof 7.5, i.e. small curvature from pre-asymptotic corrections. KJMA predicts −1/3.
-- At fixed ε, `χ_L` is flat in L: slope −0.04 ± 0.15 (ε = 1e-2) and −0.04 ± 0.26 (ε = 1e-3). LRO would give 2.
+- At fixed ε, `χ_L` is flat in L: slope −0.011 ± 0.114 (ε = 1e-2) and −0.080 ± 0.161 (ε = 1e-3), from `logs/s2_nucleation_growth.out` (the earlier text quoted a superseded run). LRO would give 2.
 - Seeded `λmin = 0` variant: `C(L/2)` is consistent with 0.
 - Cross-implementation check: the ε → ∞ limit reproduces the iid-clock model, `C(1) = 0.5768(17)` against `0.5749(19)`.
 
@@ -241,7 +241,7 @@ The negative claim is: no internal SSB, and no local LRO for mixing clocks, with
 **N1, routes that might evade it.**
 1. A non-mixing ergodic clock. ATTEMPTED: it **succeeds** for positional order (witness X). The claim is narrowed accordingly.
 2. Power-law Gaussian clocks. ATTEMPTED; closed by H-G.
-3. Fractional clocks with `H → 1`. ATTEMPTED; closed for every `H < 1`. The crossover scale diverges, and the numerics do not resolve it at `H = 0.95`.
+3. Fractional clocks with `H → 1`. ATTEMPTED; closed for every `H < 1`. The scale guaranteed by the bound diverges as H → 1. The simulated ancestry length grows, but a divergence of the true scale is not proved, and the numerics do not resolve H = 0.95.
 4. Nucleation-growth with `λmin → 0`, and seeded `λmin = 0`. ATTEMPTED; closed by J.
 5. History-dependent (non-Markov) bounded rates. ATTEMPTED; closed by J.
 6. Two-stage clocks with noise. Closed by H. Without noise, NUMERICAL only, and OPEN.
@@ -296,3 +296,14 @@ The negative claim is: no internal SSB, and no local LRO for mixing clocks, with
 - Kolmogorov–Rozanov (1960); Csáki–Fischer (1963).
 - KJMA: Kolmogorov 1937, Johnson–Mehl 1939, Avrami 1939.
 - Penrose (2002): stabilization for monotone particle systems. This may contain J-type statements; no novelty is claimed for the method.
+
+## 10. Review dispositions (REVIEW.md, F1–F6)
+
+| Finding | Disposition |
+|---|---|
+| F1: K3 scope | K3 and §0 item 2 now say "`T` stationary (not merely gradient-stationary), nearest-neighbour rule". The level-clock counterexample and the range-`h` caveat are added. |
+| F2: "all power-law covariances" | Restricted to spectral density bounded below. The `W − W(·+e_1)` counterexample is recorded in §0 and in H-G. |
+| F3: fractional formula and dimension | General d uses `lap^{−(d/2+H)}`, with floor `(4d)^{−(d/2+H)}`. The decomposition into an intrinsic part plus white noise is stated, and T is noted to be defined modulo a constant. |
+| F4: premises of K2 and J | K2 now assumes a stationary orientation field. J no longer cites K; no SSB is argued directly from uniqueness, mixing and Γ-equivariance. |
+| F5: slopes and ξ/ℓ | §7(a) slopes are corrected from the log. ξ/ℓ is now stated as "0.3–0.5, decreasing", with the δ pooling noted. The note that s1 a3 asserts the covariance rather than computing it is acknowledged; the reviewer's r1 a3 computes it. |
+| F6: wording for H → 1 | Only the bound's guaranteed scale is said to diverge. The clock is noted as unconverged on the tori at H = 0.95. `ε^{−1/(d+1)}` is labelled an upper bound. |

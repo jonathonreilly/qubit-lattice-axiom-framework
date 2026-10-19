@@ -91,3 +91,9 @@ H_a + delta H (block-chain in k) vs the second-order formula on the same k grid;
   check by a reported, non-asserted table (slope and linear extrapolation; the extrapolation
   recovers c_G(0) to 0.02-0.9%). The FAIL lines are kept in that log.
 - 01:2xZ container restart killed job C after 31 gold entries (checkpoint intact); relaunched job C (resumes).
+- Job C resumed and finished. b_gold M1 c_G^iso = 11.97, 16.80, 23.10, 29.07 (x1e-3) at theta = 0.4,
+  0.2, 0.1, 0.05: no theta -> 0 limit (roughly logarithmic growth; the generator is singular at the
+  massless pi-modes). NOTE §5 is filled in.
+- run_all.sh (fast scripts rerun, lattice resumed from the checkpoint): TOTAL: PASS=55 FAIL=0
+  (logs/run_all.log). Not done: independent review; the conformal and Newtonian channels; the kick
+  coupling K U K; an interval-rigorous quadrature.

@@ -13,3 +13,4 @@
 - s4 first run (ns as low as 6 at the largest L) gave chi_L error bars too large to be informative at ell=12; rerun with ns>=24 (log overwritten; first-run numbers: xi/ell ~0.35, 0.31; all 5 checks passed).
 - s4 rerun complete (5 PASS). NOTE drafted. Launching run_all.sh for the final aggregated log.
 - run_all.sh final: TOTAL: PASS=50 FAIL=2 (the two s3 declared box-size-stability criteria for H=0.8, 0.95; kept as FAIL, explained in NOTE §7). Seeded reruns reproduce earlier numbers.
+- 2026-10-19: applied REVIEW.md F1–F6 text fixes to NOTE.md (status line, K3 scope, power-law scope, general-d fractional formula, K2/J premises, slopes from log, H->1 wording); added §10 dispositions. No code/log changes.

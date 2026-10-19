@@ -1,7 +1,7 @@
 # C8: lattice Sakharov coefficient of the supplied two-qubit Dirac walk
 
 **Block:** C8 of `toe-scale-ladder-20261018` (R3 → R4).
-**Status:** worker note, single author. Not independently reviewed. Unaudited.
+**Status:** worker note, single author. Not independently reviewed. Unaudited. Runner total: `logs/run_all.log` TOTAL: PASS=55 FAIL=0.
 **Runners** (all in `scripts/`; logs in `logs/`; `scripts/run_all.sh` writes `logs/run_all.log`,
 which ends with the combined `TOTAL:` line):
 `c8_exact.py` (sympy identities), `c8_core.py` (the lattice response), `c8_lattice.py`

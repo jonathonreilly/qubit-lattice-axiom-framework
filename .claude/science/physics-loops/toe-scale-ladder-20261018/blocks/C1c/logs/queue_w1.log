@@ -43,3 +43,21 @@
 14:11:34 w1 start L6_s3 chunk 14
 {"tag": "L6_s3", "L": 6, "seed": 203, "start": "canonical", "nsw": 50673, "sweeps_this_call": 3354, "trips_total": 12, "trips_this_call": 2, "check": 0, "nrows": 1677, "secs": 900.2, "swap_min": 0.23258475746931365}
 14:26:35 w1 start L6_s3 chunk 15
+{"tag": "L6_s3", "L": 6, "seed": 203, "start": "canonical", "nsw": 54040, "sweeps_this_call": 3367, "trips_total": 15, "trips_this_call": 3, "check": 0, "nrows": 1684, "secs": 900.2, "swap_min": 0.231680236861584}
+14:41:36 w1 start L6_s3 chunk 16
+{"tag": "L6_s3", "L": 6, "seed": 203, "start": "canonical", "nsw": 57400, "sweeps_this_call": 3360, "trips_total": 17, "trips_this_call": 2, "check": 0, "nrows": 1680, "secs": 900.2, "swap_min": 0.2318466898954704}
+14:56:37 w1 start L6_s3 chunk 17
+{"tag": "L6_s3", "L": 6, "seed": 203, "start": "canonical", "nsw": 60812, "sweeps_this_call": 3412, "trips_total": 19, "trips_this_call": 2, "check": 0, "nrows": 1706, "secs": 900.1, "swap_min": 0.23255278563441426}
+15:11:38 w1 start L6_s3 chunk 18
+{"tag": "L6_s3", "L": 6, "seed": 203, "start": "canonical", "nsw": 64212, "sweeps_this_call": 3400, "trips_total": 20, "trips_this_call": 1, "check": 0, "nrows": 1700, "secs": 900.3, "swap_min": 0.23235532299258704}
+15:26:40 w1 start L6_s3 chunk 19
+{"tag": "L6_s3", "L": 6, "seed": 203, "start": "canonical", "nsw": 67661, "sweeps_this_call": 3449, "trips_total": 21, "trips_this_call": 1, "check": 0, "nrows": 1724, "secs": 900.3, "swap_min": 0.23404569773284858}
+15:41:41 w1 start L6_s3 chunk 20
+{"tag": "L6_s3", "L": 6, "seed": 203, "start": "canonical", "nsw": 71194, "sweeps_this_call": 3533, "trips_total": 24, "trips_this_call": 3, "check": 0, "nrows": 1767, "secs": 900.2, "swap_min": 0.23468269798016686}
+15:56:42 w1 start L6_s3 chunk 21
+{"tag": "L6_s3", "L": 6, "seed": 203, "start": "canonical", "nsw": 74640, "sweeps_this_call": 3446, "trips_total": 25, "trips_this_call": 1, "check": 0, "nrows": 1723, "secs": 900.4, "swap_min": 0.2344855305466238}
+16:11:44 w1 start L6_s3 chunk 22
+{"tag": "L6_s3", "L": 6, "seed": 203, "start": "canonical", "nsw": 78216, "sweeps_this_call": 3576, "trips_total": 27, "trips_this_call": 2, "check": 0, "nrows": 1788, "secs": 900.4, "swap_min": 0.2347601513756776}
+16:26:45 w1 start L6_s3 chunk 23
+{"tag": "L6_s3", "L": 6, "seed": 203, "start": "canonical", "nsw": 81788, "sweeps_this_call": 3572, "trips_total": 29, "trips_this_call": 2, "check": 0, "nrows": 1786, "secs": 900.4, "swap_min": 0.2359514843253289}
+16:41:47 deadline reached, w1 exits

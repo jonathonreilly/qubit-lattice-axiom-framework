@@ -49,3 +49,13 @@
   K(4)=0.1142(83), dF1_direct(4)=0.692(21), dF1_TI(4)=0.670(20) (agree). Per-chunk P1(beta=4) fluctuates
   0.035-0.20 in both runs with no monotone trend after chunk 3. Workers moved to L6_s3, L6_s4, L8E_s3.
 - 14:15 status: L6_s3 14 chunks (47k sweeps, 10 trips), L6_s4 16 (54k, 17 trips); L8E_s3 6, L8E_s5 3 chunks; interim L8 E (nb=20, not final): -443.55(22) / -443.50(24). All check=0.
+- 16:42 all workers exited at the 16:35 start deadline (93 chunks total incl. C1b's, all check=0).
+  Final counts: L4_s3 17, L4_s4 17, L6_s3 24, L6_s4 26, L8E_s3 11, L8E_s5 8.
+- 16:45 final analysis (unchanged C1b scripts): logs/analysis_L4_L6_final.log, ti_L6.log, drift_L6.log,
+  energy_L8_final.log. EQ at beta=L: L4 PASS, L6 PASS (E z=-2.32). a(L) fit s=0.495(90) (TI 0.60(12));
+  K(6)/K(4)=0.394 -> declared X-W conditions met, C-W fails; S_T exponent p=1.131(24) -> Coulomb window.
+  Declared probes conflict; no combination rule was declared -> no phase verdict. L8: E(beta=16) =
+  -443.85(15) (2 starts) vs repo -443.364(31): z=-3.3; vs C1 -443.83(14): z=-0.1.
+- 16:48 [POST HOC] scripts/posthoc_chunk_errors.py (chunk-mean errors; labelled post hoc in NOTE).
+  numba cache moved out of scripts/ to /tmp/claude-0/c1c_raw/numba_cache_scripts (size limit).
+- 16:55 NOTE.md written. No jobs running. Block complete. No git commit/push.

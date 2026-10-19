@@ -43,3 +43,21 @@
 14:11:53 w2 start L8E_s5 chunk 3
 {"tag": "L8E_s5", "L": 8, "seed": 305, "start": "mixW_rot", "nsw": 13075, "sweeps_this_call": 3217, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 1608, "secs": 900.1, "swap_min": null}
 14:26:54 w2 start L8E_s3 chunk 6
+{"tag": "L8E_s3", "L": 8, "seed": 303, "start": "canonical", "nsw": 22901, "sweeps_this_call": 3255, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 1627, "secs": 900.1, "swap_min": null}
+14:41:55 w2 start L8E_s5 chunk 4
+{"tag": "L8E_s5", "L": 8, "seed": 305, "start": "mixW_rot", "nsw": 16366, "sweeps_this_call": 3291, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 1646, "secs": 900.1, "swap_min": null}
+14:56:56 w2 start L8E_s3 chunk 7
+{"tag": "L8E_s3", "L": 8, "seed": 303, "start": "canonical", "nsw": 26179, "sweeps_this_call": 3278, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 1639, "secs": 900.1, "swap_min": null}
+15:11:57 w2 start L8E_s5 chunk 5
+{"tag": "L8E_s5", "L": 8, "seed": 305, "start": "mixW_rot", "nsw": 19647, "sweeps_this_call": 3281, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 1640, "secs": 900.3, "swap_min": null}
+15:26:59 w2 start L8E_s3 chunk 8
+{"tag": "L8E_s3", "L": 8, "seed": 303, "start": "canonical", "nsw": 29545, "sweeps_this_call": 3366, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 1683, "secs": 900.0, "swap_min": null}
+15:42:00 w2 start L8E_s5 chunk 6
+{"tag": "L8E_s5", "L": 8, "seed": 305, "start": "mixW_rot", "nsw": 23104, "sweeps_this_call": 3457, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 1729, "secs": 900.2, "swap_min": null}
+15:57:01 w2 start L8E_s3 chunk 9
+{"tag": "L8E_s3", "L": 8, "seed": 303, "start": "canonical", "nsw": 32877, "sweeps_this_call": 3332, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 1666, "secs": 900.2, "swap_min": null}
+16:12:02 w2 start L8E_s5 chunk 7
+{"tag": "L8E_s5", "L": 8, "seed": 305, "start": "mixW_rot", "nsw": 26560, "sweeps_this_call": 3456, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 1728, "secs": 900.2, "swap_min": null}
+16:27:03 w2 start L8E_s3 chunk 10
+{"tag": "L8E_s3", "L": 8, "seed": 303, "start": "canonical", "nsw": 36336, "sweeps_this_call": 3459, "trips_total": 0, "trips_this_call": 0, "check": 0, "nrows": 1730, "secs": 900.2, "swap_min": null}
+16:42:04 deadline reached, w2 exits

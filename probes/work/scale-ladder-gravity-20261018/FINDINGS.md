@@ -287,3 +287,36 @@ EXPLORATIONS.
     is O(k^4).
   - The s = 0.2 point is outside the scaling regime.
   - Next: a stress exactly conserved with respect to the segment strains (an exact lattice Ward identity).
+
+## Phase 9: grid/time deep dive (owner spitball: influence faster than records? separate ticks? probabilistic time for compression?)
+EXPLORATIONS.
+- F41 (tick1/tick2). Light at 1 site per RECORD tick needs n >= sqrt3 influence sub-steps per
+  record tick: n = 1 blows up; n = 2, 3, 4 are stable.
+  - With n >= 2, the long-wavelength light speed is 1.00/0.975/0.95 (axis/face/body, +-0.025),
+    so the cone is round.
+  - The naive one-sub-step-per-axis split at full speed is unstable.
+  - Consequence: records advance at most 1 site per tick along an axis and less on diagonals,
+    so the record cone lies inside the light cone at ANY formation odds. The F40 bound
+    (p <= 0.3) disappears.
+- F42 (tick3). Per-site random clocks for the second-order influence rule destroy propagation
+  (speed ~0, noise grows 0.02 -> 52 at rho = 0.4). Records (first order) tolerate random timing;
+  influence does not.
+- F43 (tick4). COHERENT random time (all sites tick together, random tick lengths) is stable,
+  with light at 0.966 per unit time IDENTICAL along axis/face/body (fixed ticks: 1.02/0.96/0.96).
+  Random tick lengths wash out the lattice anisotropy, as odds rounded the record cone.
+- F44 (clock sharpness, analytic). If proper time is read from record counts (Poisson), a block
+  with N records reads time to 1/sqrt(N). Telling apart two clocks differing by pace Phi needs
+  N ~ 1/Phi^2 records. Time is sharp only at large blocks (a ladder statement). The record
+  stack stores time as counts (compressed), and a global beat carries no extra information.
+- F45 (bend1, 1D Shapiro check). Delay through a pace well: lapse-only 7.5 = integral |Phi|;
+  GR 15.5 = 2x. In wave-rule weights m u_tt = (k u_x)_x:
+  - lapse-only: m = 1/N, k = N;
+  - GR (gamma = 1): m = a^3/N ~ 1 + 4|Phi| (= pace^-4), k = N a ~ 1.
+  So the full bending needs records to leave neighbour passing alone and raise each site's
+  weight on its own past by 4|Phi|: "near records, a site's memory weighs more".
+- Synthesis (exploration): two clocks.
+  - INFLUENCE runs on a shared beat at least sqrt3 (in practice 2+) times faster than record
+    formation; the beat may have random lengths, which rounds the light cone.
+  - RECORDS form on random local clocks whose rate (pace) is set by nearby records.
+  - Gravity enters as records weighting each site's memory of its past (pace^-4), which gives
+    the light cone, retarded gravity, Newton and the full GR light bending.

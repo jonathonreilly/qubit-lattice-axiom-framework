@@ -16,5 +16,5 @@ token_policy: >
   Orchestrator stays lean: workers return <=600-word summaries + artifact paths;
   full derivations/logs live in pack files; one independent checker per load-bearing result.
 cycle: 1
-active_route: 22:53Z container restart recovered; C1 finisher (new agent), C5 review finisher (new agent), C4c resumed. Ready: C2 C3 C4 C4b C6(F1-F4) C7
-next_action: on C1/C5/C4c returns -> review/confirm; then C5b (many-body chirality) or synthesis; keep background jobs <25 min (restart risk)
+active_route: 02:50Z — ready: C1(inconclusive) C2 C3 C3b C4 C4b C4c C5 C5b C6 C7 C8; running: C1b (worm/loop QMC), C4d (non-commuting-layer pair transport); synthesis in RESULTS.md
+next_action: review C1b/C4d on return; then final PR_BACKLOG body + HANDOFF; stop on quality exhaustion if no high-value target remains

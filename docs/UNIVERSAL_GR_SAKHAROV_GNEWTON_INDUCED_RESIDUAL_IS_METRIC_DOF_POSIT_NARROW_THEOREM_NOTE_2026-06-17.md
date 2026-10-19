@@ -28,6 +28,14 @@ withdrawn as conclusions of this packet; this runner does not test them.
 The determinant half-factor, sign, cutoff identification, matter count and
 physical source bridge remain open. No exhaustive route obstruction is claimed.
 
+*Addendum (2026-10-18), determinant half-factor.* Taking the Dirac determinant as
+det D = (det D^2)^(1/2), the heat-kernel coefficient is Lambda^2/(96 pi^2) per Dirac
+fermion, so the supplied matching equation becomes `G = 6 pi/(N_f Lambda^2)`, twice the
+value above. The runner still checks the supplied 3 pi form; the sign, cutoff
+identification, matter count and source bridge stay open. Derived and independently
+reviewed in campaign block C8:
+`.claude/science/physics-loops/toe-scale-ladder-20261018/blocks/C8/` (NOTE.md section 11, REVIEW.md).
+
 ## Corrigendum (2026-09-30)
 
 **In plain words.** This note printed the wrong number in front of its estimate for Newton's

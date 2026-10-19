@@ -1,0 +1,22 @@
+<!-- Original PR9813 source SHA256 3be0a2305d9f2455ab377fc4563dd265e91b47c0ce195900f71acad3f65e3170. -->
+**Source boundary:** Complete mathematical source follows. Historical verdicts, replay narratives and workflow instructions are provenance only. Mathematical identities and constructive arguments retain their explicit hypotheses; an old status supplies no current certification. Earlier exploratory statements must be read with the later corrections in this unit.
+
+# Secondary axis-three pair: focused motion check
+
+PASS for the stated reduced fixed-order motion, conditional on the supplied complete D8 energy function and isolation of its axis-three minima. No actual-H transfer theorem is supplied by this check.
+
+Read /tmp/neutral_secondary_motion.py and its output. Wrote /tmp/neutral_secondary_review.py using a separate exhaustive nearest-edge enumeration over a bounding rectangle, rather than the root's syndrome-adjacent edge generator. For every state encountered through six hops the neighbor sets agree exactly. All retained nonband denominators energy(z)+v are positive. Exact rational replay verifies the two-hop amplitudes and every one of the sixteen orientation-changing endpoints. This independently checks path generation and weighted propagation; it reuses the supplied D8 energy formula rather than independently deriving all its native invariants.
+
+Two-hop displaced weights are 1/v parallel and 4/v perpendicular, v=9/32768. Restoring the factor L in each order-eight denominator gives negative Hamiltonian hopping −Jgamma²lambda12/(Lv) and −4Jgamma²lambda12/(Lv). The positive tparallel/tperp in the proposal should be understood as hopping magnitudes. The return term is an onsite shift and does not change the leading translation coefficients.
+
+There is no orientation-changing endpoint in fewer than six nearest-edge events. At six events, the vertical endpoint {(x,y),(x,y+3)} has x=0..3, y=−3..0 and exact positive denominator weight
+
+ C binom(3,x) binom(3,y+3), C=1046023065421557893414518784/118275147.
+
+Their sum is 64C. Six negative winding vertices and five negative resolvents give an overall negative Hamiltonian coefficient −Jgamma^6lambda20/L^5 times these weights. In physical-center Bloch coordinates the displacement is (x−3/2,y+3/2), hence the real symbol is exactly 64C cos³(qx/2)cos³(qy/2). A corner-anchored convention carries a removable phase; it must not be mixed with the centered convention. At q0 the negative offdiagonal selects the symmetric orientation combination.
+
+The native exclusion argument is stronger than merely observing the reduced graph. For horizontal versus vertical length-three pairs, the symmetric-difference endpoints have minimum nearest-neighbor matching length at least six, including cases sharing a column. Every vertical layer must implement this change, requiring at least 6L=60 native transverse insertions at L10. The maximum enhancement from six separate minimal winding events is five order-eight denominators, giving order20. Grouping multiple column moves into a higher native vertex loses such denominators; leaving the perimeter-sixteen Q8 sector uses an order-six or order-four denominator and is later. Scalar or plaquette dressing of a winding vertex increases the order. Four-hop or lower products do not change orientation, so folded products made from earlier band operators are orientation diagonal and cannot alter the first orientation-changing coefficient. No earlier direct native orientation mechanism was identified under the supplied hierarchy.
+
+The denominator energy for a (3,1) intermediate must be −v/2 relative to separated columns, giving gap v/2 above the axis-three minimum; replacing it by zero changes the six-hop coefficient. The script retains that distinction. It also allows more-than-two-column intermediate patterns, rather than restricting the path sum to a two-particle toy graph.
+
+This is not yet a uniform actual-H pole/curvature/source proof. The author still needs the complete D8 minimum classification, weighted displacement bounds through the gap reductions, final absolute tails smaller than the resolved dispersion and orientation splitting, and any microscopic source normalization. No scattering rate or all-orders interaction law follows from this coefficient calculation.

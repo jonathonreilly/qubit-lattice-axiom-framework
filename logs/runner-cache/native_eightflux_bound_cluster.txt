@@ -1,0 +1,320 @@
+===== runner cache v1 =====
+runner: scripts/native_eightflux_bound_cluster.py
+runner_sha256: fffac355186da631540415c5616c10fed2f907021f1d8dd714ff5a972390c621
+input_fingerprint_sha256: cf34bc24d93de12ec377efd4cc8c02f031b7790e2eed8046793be677214b64eb
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.90
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_eightflux_bound_cluster-2cedrnhn
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_eightflux_bound_cluster-2cedrnhn/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_eightflux_geometry.py']
+{
+  "minima": [
+    {
+      "w": 2,
+      "h": 4,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "perimeter": 12
+    },
+    {
+      "w": 4,
+      "h": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "perimeter": 12
+    }
+  ],
+  "paths": {
+    "[(-1, 0), (1, 0)]": [
+      {
+        "Q": 8,
+        "perimeter": 16,
+        "mid": [
+          [
+            -1,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "Q": 4,
+        "perimeter": 12,
+        "mid": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      }
+    ],
+    "[(0, -1), (2, -1)]": [
+      {
+        "Q": 8,
+        "perimeter": 14,
+        "mid": [
+          [
+            0,
+            -1
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "Q": 8,
+        "perimeter": 14,
+        "mid": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            -1
+          ]
+        ]
+      }
+    ],
+    "[(1, 0), (3, 0)]": [
+      {
+        "Q": 4,
+        "perimeter": 12,
+        "mid": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "Q": 8,
+        "perimeter": 16,
+        "mid": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "[(0, 1), (2, 1)]": [
+      {
+        "Q": 8,
+        "perimeter": 14,
+        "mid": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "Q": 8,
+        "perimeter": 14,
+        "mid": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      }
+    ]
+  }
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_eightflux_bound_cluster-2cedrnhn/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_eightflux_geometry.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_eightflux_bound_cluster-2cedrnhn/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_eightflux_geometry.py']
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_eightflux_bound_cluster-2cedrnhn/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_detour_winding.py']
+{
+  "rows": [
+    {
+      "L": 4,
+      "per_layer": "-127/110592",
+      "all_layers": "-127/27648",
+      "ratio_to_gamma": "-127/1080",
+      "gamma": "5/128",
+      "marked_ratio": "5669/1016",
+      "words": 720
+    },
+    {
+      "L": 6,
+      "per_layer": "-14051/63700992",
+      "all_layers": "-14051/10616832",
+      "ratio_to_gamma": "-14051/81648",
+      "gamma": "63/8192",
+      "marked_ratio": "3882135/449632",
+      "words": 40320
+    },
+    {
+      "L": 8,
+      "per_layer": "-283513/6115295232",
+      "all_layers": "-283513/764411904",
+      "ratio_to_gamma": "-283513/1250964",
+      "gamma": "429/262144",
+      "marked_ratio": "7613085727/653213952",
+      "words": 3628800
+    },
+    {
+      "L": 10,
+      "per_layer": "-215302027/21134460321792",
+      "all_layers": "-1076510135/10567230160896",
+      "ratio_to_gamma": "-215302027/765589968",
+      "gamma": "12155/33554432",
+      "marked_ratio": "1616665793187/110234637824",
+      "words": 479001600
+    },
+    {
+      "L": 12,
+      "per_layer": "-13989450481/6086724572676096",
+      "all_layers": "-13989450481/507227047723008",
+      "ratio_to_gamma": "-13989450481/41655054168",
+      "gamma": "88179/1073741824",
+      "marked_ratio": "1012638682840241/57300789170176",
+      "words": 87178291200
+    }
+  ],
+  "seconds": 0.6042128331027925
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_eightflux_bound_cluster-2cedrnhn/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_detour_winding.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_eightflux_bound_cluster-2cedrnhn/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_detour_winding.py']
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_eightflux_bound_cluster-2cedrnhn/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_q8_source_control.py']
+{
+  "binding": "578808945/1125899906842624",
+  "detour": "875311750216475/945539748965690376192",
+  "coefficient": "1361400132699035/945539748965690376192",
+  "source_weight_coefficient": 4.1461211842976135e-13,
+  "rows": [
+    {
+      "lambda_value": ".03",
+      "scaled_amplitude": "0.000001439939930289295649957024776086777611797764539877191970136451281676532186884043109266710189081829138",
+      "relative_error": 8.83704279804895e-05
+    },
+    {
+      "lambda_value": ".01",
+      "scaled_amplitude": "0.000001439826845180321408094124616767633571342922130412728723517193311065154333539358815813406416365830812",
+      "relative_error": 9.828886090614692e-06
+    },
+    {
+      "lambda_value": ".003",
+      "scaled_amplitude": "0.000001439813967229951221338968928886794626954141273091457135098750866804169035821934766013047383180546565",
+      "relative_error": 8.847015942621493e-07
+    },
+    {
+      "lambda_value": ".001",
+      "scaled_amplitude": "0.000001439812834960641074835558868512471997986863054085428571544659155790753001460205836428104633880643357",
+      "relative_error": 9.830117195944397e-08
+    }
+  ]
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_eightflux_bound_cluster-2cedrnhn/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_q8_source_control.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_eightflux_bound_cluster-2cedrnhn/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_q8_source_control.py']
+[PASS] native_eightflux_bound_cluster:C001
+[PASS] native_eightflux_bound_cluster:C002
+[PASS] native_eightflux_bound_cluster:C003
+[PASS] native_eightflux_bound_cluster:C004
+[PASS] native_eightflux_bound_cluster:C005
+[PASS] geometry:complete intermediate charge and perimeter multisets
+{"status": "conditional-support", "scope": "Native fixed-L coefficient and source controls; actual selected-fibre transfer is analytic, not full-grid ED; no empirical test", "controls": {"neutral_eightflux_geometry.py": {"minima": [{"w": 2, "h": 4, "points": [[0, 0], [0, 1], [0, 2], [0, 3], [1, 0], [1, 1], [1, 2], [1, 3]], "perimeter": 12}, {"w": 4, "h": 2, "points": [[0, 0], [0, 1], [1, 0], [1, 1], [2, 0], [2, 1], [3, 0], [3, 1]], "perimeter": 12}], "paths": {"[(-1, 0), (1, 0)]": [{"Q": 8, "perimeter": 16, "mid": [[-1, 0], [2, 0]]}, {"Q": 4, "perimeter": 12, "mid": [[0, 0], [1, 0]]}], "[(0, -1), (2, -1)]": [{"Q": 8, "perimeter": 14, "mid": [[0, -1], [2, 0]]}, {"Q": 8, "perimeter": 14, "mid": [[0, 0], [2, -1]]}], "[(1, 0), (3, 0)]": [{"Q": 4, "perimeter": 12, "mid": [[1, 0], [2, 0]]}, {"Q": 8, "perimeter": 16, "mid": [[0, 0], [3, 0]]}], "[(0, 1), (2, 1)]": [{"Q": 8, "perimeter": 14, "mid": [[0, 1], [2, 0]]}, {"Q": 8, "perimeter": 14, "mid": [[0, 0], [2, 1]]}]}}, "neutral_detour_winding.py": {"rows": [{"L": 4, "per_layer": "-127/110592", "all_layers": "-127/27648", "ratio_to_gamma": "-127/1080", "gamma": "5/128", "marked_ratio": "5669/1016", "words": 720}, {"L": 6, "per_layer": "-14051/63700992", "all_layers": "-14051/10616832", "ratio_to_gamma": "-14051/81648", "gamma": "63/8192", "marked_ratio": "3882135/449632", "words": 40320}, {"L": 8, "per_layer": "-283513/6115295232", "all_layers": "-283513/764411904", "ratio_to_gamma": "-283513/1250964", "gamma": "429/262144", "marked_ratio": "7613085727/653213952", "words": 3628800}, {"L": 10, "per_layer": "-215302027/21134460321792", "all_layers": "-1076510135/10567230160896", "ratio_to_gamma": "-215302027/765589968", "gamma": "12155/33554432", "marked_ratio": "1616665793187/110234637824", "words": 479001600}, {"L": 12, "per_layer": "-13989450481/6086724572676096", "all_layers": "-13989450481/507227047723008", "ratio_to_gamma": "-13989450481/41655054168", "gamma": "88179/1073741824", "marked_ratio": "1012638682840241/57300789170176", "words": 87178291200}], "seconds": 0.6042128331027925}, "neutral_q8_source_control.py": {"binding": "578808945/1125899906842624", "detour": "875311750216475/945539748965690376192", "coefficient": "1361400132699035/945539748965690376192", "source_weight_coefficient": 4.1461211842976135e-13, "rows": [{"lambda_value": ".03", "scaled_amplitude": "0.000001439939930289295649957024776086777611797764539877191970136451281676532186884043109266710189081829138", "relative_error": 8.83704279804895e-05}, {"lambda_value": ".01", "scaled_amplitude": "0.000001439826845180321408094124616767633571342922130412728723517193311065154333539358815813406416365830812", "relative_error": 9.828886090614692e-06}, {"lambda_value": ".003", "scaled_amplitude": "0.000001439813967229951221338968928886794626954141273091457135098750866804169035821934766013047383180546565", "relative_error": 8.847015942621493e-07}, {"lambda_value": ".001", "scaled_amplitude": "0.000001439812834960641074835558868512471997986863054085428571544659155790753001460205836428104633880643357", "relative_error": 9.830117195944397e-08}]}}}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_eightflux_bound_cluster-2cedrnhn/outputs/native_eightflux_bound_cluster/result.json sha256=a94a895bc80f1fe58da8e896b9e931465b9e379554e1493bb68b1dcadd825755
+{"controls": {"neutral_detour_winding.py": {"rows": [{"L": 4, "all_layers": "-127/27648", "gamma": "5/128", "marked_ratio": "5669/1016", "per_layer": "-127/110592", "ratio_to_gamma": "-127/1080", "words": 720}, {"L": 6, "all_layers": "-14051/10616832", "gamma": "63/8192", "marked_ratio": "3882135/449632", "per_layer": "-14051/63700992", "ratio_to_gamma": "-14051/81648", "words": 40320}, {"L": 8, "all_layers": "-283513/764411904", "gamma": "429/262144", "marked_ratio": "7613085727/653213952", "per_layer": "-283513/6115295232", "ratio_to_gamma": "-283513/1250964", "words": 3628800}, {"L": 10, "all_layers": "-1076510135/10567230160896", "gamma": "12155/33554432", "marked_ratio": "1616665793187/110234637824", "per_layer": "-215302027/21134460321792", "ratio_to_gamma": "-215302027/765589968", "words": 479001600}, {"L": 12, "all_layers": "-13989450481/507227047723008", "gamma": "88179/1073741824", "marked_ratio": "1012638682840241/57300789170176", "per_layer": "-13989450481/6086724572676096", "ratio_to_gamma": "-13989450481/41655054168", "words": 87178291200}], "seconds": 0.6042128331027925}, "neutral_eightflux_geometry.py": {"minima": [{"h": 4, "perimeter": 12, "points": [[0, 0], [0, 1], [0, 2], [0, 3], [1, 0], [1, 1], [1, 2], [1, 3]], "w": 2}, {"h": 2, "perimeter": 12, "points": [[0, 0], [0, 1], [1, 0], [1, 1], [2, 0], [2, 1], [3, 0], [3, 1]], "w": 4}], "paths": {"[(-1, 0), (1, 0)]": [{"Q": 8, "mid": [[-1, 0], [2, 0]], "perimeter": 16}, {"Q": 4, "mid": [[0, 0], [1, 0]], "perimeter": 12}], "[(0, -1), (2, -1)]": [{"Q": 8, "mid": [[0, -1], [2, 0]], "perimeter": 14}, {"Q": 8, "mid": [[0, 0], [2, -1]], "perimeter": 14}], "[(0, 1), (2, 1)]": [{"Q": 8, "mid": [[0, 1], [2, 0]], "perimeter": 14}, {"Q": 8, "mid": [[0, 0], [2, 1]], "perimeter": 14}], "[(1, 0), (3, 0)]": [{"Q": 4, "mid": [[1, 0], [2, 0]], "perimeter": 12}, {"Q": 8, "mid": [[0, 0], [3, 0]], "perimeter": 16}]}}, "neutral_q8_source_control.py": {"binding": "578808945/1125899906842624", "coefficient": "1361400132699035/945539748965690376192", "detour": "875311750216475/945539748965690376192", "rows": [{"lambda_value": ".03", "relative_error": 8.83704279804895e-05, "scaled_amplitude": "0.000001439939930289295649957024776086777611797764539877191970136451281676532186884043109266710189081829138"}, {"lambda_value": ".01", "relative_error": 9.828886090614692e-06, "scaled_amplitude": "0.000001439826845180321408094124616767633571342922130412728723517193311065154333539358815813406416365830812"}, {"lambda_value": ".003", "relative_error": 8.847015942621493e-07, "scaled_amplitude": "0.000001439813967229951221338968928886794626954141273091457135098750866804169035821934766013047383180546565"}, {"lambda_value": ".001", "relative_error": 9.830117195944397e-08, "scaled_amplitude": "0.000001439812834960641074835558868512471997986863054085428571544659155790753001460205836428104633880643357"}], "source_weight_coefficient": 4.1461211842976135e-13}}, "scope": "Native fixed-L coefficient and source controls; actual selected-fibre transfer is analytic, not full-grid ED; no empirical test", "status": "conditional-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_eightflux_bound_cluster-2cedrnhn elapsed_seconds= 0.8369625830091536
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

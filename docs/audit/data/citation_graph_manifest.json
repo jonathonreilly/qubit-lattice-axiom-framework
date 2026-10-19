@@ -1,6 +1,6 @@
 {
  "edge_count": 16342,
- "node_count": 7388,
+ "node_count": 7407,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15426,6 +15426,10 @@
    "deps_hash": "d6845a57b2e3",
    "out_degree": 5
   },
+  "native_bound_mode_environment_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "native_bulk_com_propagation_note_2026-10-18": {
    "deps_hash": "9ce35dce9d41",
    "out_degree": 3
@@ -15442,9 +15446,17 @@
    "deps_hash": "522c75ee011c",
    "out_degree": 4
   },
+  "native_character_independent_collision_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "native_charge_motion_and_spectral_weight_bounds_bounded_theorem_note_2026-09-15": {
    "deps_hash": "6e5209b9fa1f",
    "out_degree": 5
+  },
+  "native_charged_column_pole_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "native_charged_ground_dynamics_note_2026-10-18": {
    "deps_hash": "abf0b923a99c",
@@ -15469,6 +15481,10 @@
   "native_common_frame_spin_connection_bounded_theorem_note_2026-09-13": {
    "deps_hash": "2448ffe58c24",
    "out_degree": 3
+  },
+  "native_common_metric_boundary_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "native_compass_literal_attachment_bounded_theorem_note_2026-10-18": {
    "deps_hash": "29c256b911cf",
@@ -15495,6 +15511,10 @@
    "out_degree": 1
   },
   "native_constituent_scattering_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "native_constrained_fermion_note_2026-10-18": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -15525,6 +15545,10 @@
   "native_dilute_cell_interaction_proof_2026-09-30": {
    "deps_hash": "e778f34c48c5",
    "out_degree": 2
+  },
+  "native_dilute_field_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "native_dilute_lower_and_limits_proof_2026-09-30": {
    "deps_hash": "6c5fdc363a63",
@@ -15598,6 +15622,10 @@
    "deps_hash": "05fc281e1618",
    "out_degree": 2
   },
+  "native_eight_flux_cluster_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "native_eighth_diagonal_cycle_potential_note_2026-09-08": {
    "deps_hash": "211135b0c4c7",
    "out_degree": 4
@@ -15606,9 +15634,17 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "native_energy_current_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "native_energy_features_note_2026-10-18": {
    "deps_hash": "2c6492089764",
    "out_degree": 1
+  },
+  "native_energy_source_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "native_environment_cost_note_2026-10-18": {
    "deps_hash": "e3b0c44298fc",
@@ -15878,6 +15914,10 @@
    "deps_hash": "a6224d3271b4",
    "out_degree": 3
   },
+  "native_isotropic_bound_feature_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "native_isotropic_collective_note_2026-10-18": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -15962,6 +16002,10 @@
    "deps_hash": "482afd0a38f7",
    "out_degree": 10
   },
+  "native_mixing_induced_vertex_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "native_neutral_bond_algebra_note_2026-10-18": {
    "deps_hash": "7c4bf148687d",
    "out_degree": 1
@@ -15978,6 +16022,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "native_pair_scattering_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "native_pair_vacuum_chart_note_2026-09-09": {
    "deps_hash": "99abfde38abe",
    "out_degree": 4
@@ -15990,7 +16038,19 @@
    "deps_hash": "3b1ea74dccf2",
    "out_degree": 2
   },
+  "native_physical_pair_source_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "native_polynomial_grid_pole_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "native_positive_ward_scalar_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "native_primitive_loop_interaction_note_2026-10-18": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -16022,6 +16082,10 @@
    "deps_hash": "1badd550395b",
    "out_degree": 3
   },
+  "native_reflection_ground_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "native_rho4_moment_certificates_note_2026-09-09": {
    "deps_hash": "9637ec1a7ee6",
    "out_degree": 4
@@ -16038,7 +16102,19 @@
    "deps_hash": "17432f51de2d",
    "out_degree": 1
   },
+  "native_scalar_tetramer_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "native_secondary_neutral_molecule_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "native_six_endpoint_binding_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "native_six_flux_diagonal_mode_note_2026-10-18": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

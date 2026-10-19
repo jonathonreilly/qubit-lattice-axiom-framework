@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/native_charged_column_pole.py
+runner_sha256: e6982cf697f6dd29ae3deb24d541f8a1fe040f5e8eb041ffff4ef6fd09609cdb
+input_fingerprint_sha256: cf34bc24d93de12ec377efd4cc8c02f031b7790e2eed8046793be677214b64eb
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_charged_column_pole-yz84cui1
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_charged_column_pole-yz84cui1/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_charged_column_control.py']
+{
+  "rows": [
+    {
+      "R": 4,
+      "L": 10,
+      "virtual_states": 320,
+      "amplitude_correction": "-5/8",
+      "weight_correction": "-5/4",
+      "minimum_shapes": [
+        [
+          1,
+          1,
+          8
+        ]
+      ],
+      "next_perimeter": null
+    },
+    {
+      "R": 8,
+      "L": 10,
+      "virtual_states": 1280,
+      "amplitude_correction": "-5/8",
+      "weight_correction": "-5/4",
+      "minimum_shapes": [
+        [
+          1,
+          1,
+          8
+        ]
+      ],
+      "next_perimeter": 12
+    },
+    {
+      "R": 12,
+      "L": 10,
+      "virtual_states": 2880,
+      "amplitude_correction": "-5/8",
+      "weight_correction": "-5/4",
+      "minimum_shapes": [
+        [
+          1,
+          1,
+          8
+        ]
+      ],
+      "next_perimeter": 12
+    }
+  ],
+  "gamma": "12155/33554432"
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_charged_column_pole-yz84cui1/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_charged_column_control.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_charged_column_pole-yz84cui1/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_charged_column_control.py']
+[PASS] native_charged_column_pole:C001
+[PASS] native_charged_column_pole:C002
+[PASS] native_charged_column_pole:C003
+{"status": "conditional-support", "scope": "Native bond-level source dressing and charged geometry controls; actual-grid transfer analytic; charged source is not neutral ZZ source", "control": {"rows": [{"R": 4, "L": 10, "virtual_states": 320, "amplitude_correction": "-5/8", "weight_correction": "-5/4", "minimum_shapes": [[1, 1, 8]], "next_perimeter": null}, {"R": 8, "L": 10, "virtual_states": 1280, "amplitude_correction": "-5/8", "weight_correction": "-5/4", "minimum_shapes": [[1, 1, 8]], "next_perimeter": 12}, {"R": 12, "L": 10, "virtual_states": 2880, "amplitude_correction": "-5/8", "weight_correction": "-5/4", "minimum_shapes": [[1, 1, 8]], "next_perimeter": 12}], "gamma": "12155/33554432"}}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_charged_column_pole-yz84cui1/outputs/native_charged_column_pole/result.json sha256=b6fa78abe935e97a014f4c7ba74aaea6be01898d9cd78c8236e83407f240115a
+{"control": {"gamma": "12155/33554432", "rows": [{"L": 10, "R": 4, "amplitude_correction": "-5/8", "minimum_shapes": [[1, 1, 8]], "next_perimeter": null, "virtual_states": 320, "weight_correction": "-5/4"}, {"L": 10, "R": 8, "amplitude_correction": "-5/8", "minimum_shapes": [[1, 1, 8]], "next_perimeter": 12, "virtual_states": 1280, "weight_correction": "-5/4"}, {"L": 10, "R": 12, "amplitude_correction": "-5/8", "minimum_shapes": [[1, 1, 8]], "next_perimeter": 12, "virtual_states": 2880, "weight_correction": "-5/4"}]}, "scope": "Native bond-level source dressing and charged geometry controls; actual-grid transfer analytic; charged source is not neutral ZZ source", "status": "conditional-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_charged_column_pole-yz84cui1 elapsed_seconds= 0.29899024963378906
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

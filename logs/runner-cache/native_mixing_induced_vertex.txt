@@ -1,0 +1,137 @@
+===== runner cache v1 =====
+runner: scripts/native_mixing_induced_vertex.py
+runner_sha256: c1ab9f0256a8335db2578f4cff340323c2f7f7a74ac9f53972d7ae5a4a7f8a9b
+input_fingerprint_sha256: cf34bc24d93de12ec377efd4cc8c02f031b7790e2eed8046793be677214b64eb
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.71
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_mixing_induced_vertex-9kkftg_6
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_mixing_induced_vertex-9kkftg_6/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_mixing_vertex.py']
+{
+  "rotation": [
+    {
+      "c": 0.1,
+      "rotation_error": 3.861494713777849e-18,
+      "leading_relative_error": 0.019419324309079666
+    },
+    {
+      "c": 0.03,
+      "rotation_error": 1.0836162993158948e-18,
+      "leading_relative_error": 0.0017951545342211883
+    },
+    {
+      "c": 0.01,
+      "rotation_error": 4.1206863152426835e-19,
+      "leading_relative_error": 0.00019994001999290578
+    }
+  ],
+  "duhamel_error": 2.67147470653964e-16,
+  "quadrature_error": 4.300245332973175e-14,
+  "flux_return_trace4": -64.0
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_mixing_induced_vertex-9kkftg_6/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_mixing_vertex.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_mixing_induced_vertex-9kkftg_6/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_mixing_vertex.py']
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_mixing_induced_vertex-9kkftg_6/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_mixing_scattering.py']
+{
+  "gc": 0.10442215919000226,
+  "scaled_limit": 12.566370614359172,
+  "threshold_rows": [
+    {
+      "ef": 0.001,
+      "incoming_energy": 0.002,
+      "formfactor": [
+        1.2397705476698164,
+        -0.4289117745515674
+      ],
+      "asymptotic": [
+        1.2378474090408211,
+        -0.4291660806486928
+      ],
+      "relative_error": 0.0014806734328001218,
+      "scaled": [
+        8.56403154539275,
+        -2.962817574876186
+      ]
+    },
+    {
+      "ef": 1e-05,
+      "incoming_energy": 2e-05,
+      "formfactor": [
+        0.8733744035400081,
+        -0.200761913404669
+      ],
+      "asymptotic": [
+        0.8733530226371884,
+        -0.20076308007115745
+      ],
+      "relative_error": 2.3894611303275935e-05,
+      "scaled": [
+        10.055094410968945,
+        -2.311356945232762
+      ]
+    },
+    {
+      "ef": 1e-07,
+      "incoming_energy": 2e-07,
+      "formfactor": [
+        0.6680054668393115,
+        -0.11485570397566368
+      ],
+      "asymptotic": [
+        0.6680052412111575,
+        -0.11485571056966995
+      ],
+      "relative_error": 3.3302158878249787e-07,
+      "scaled": [
+        10.766976009879087,
+        -1.8512552227379009
+      ]
+    }
+  ],
+  "exact_twochannel_control": [
+    {
+      "c": 0.03,
+      "relative_born_error": 0.0017644509850402387,
+      "amplitude": [
+        0.05671562102946135,
+        -0.03410743254585793
+      ]
+    },
+    {
+      "c": 0.01,
+      "relative_born_error": 0.00019651486720871877,
+      "amplitude": [
+        0.01893521075487038,
+        -0.01138647724044073
+      ]
+    },
+    {
+      "c": 0.003,
+      "relative_born_error": 1.7691110001830413e-05,
+      "amplitude": [
+        0.005681589826389765,
+        -0.003416536193527049
+      ]
+    }
+  ],
+  "scope": "Pinned coefficient model, first order in c then threshold; no native emission rate"
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_mixing_induced_vertex-9kkftg_6/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_mixing_scattering.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_mixing_induced_vertex-9kkftg_6/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_mixing_scattering.py']
+[PASS] native_mixing_induced_vertex:C001
+[PASS] native_mixing_induced_vertex:C002
+{"status": "conditional-support", "controls": {"neutral_mixing_vertex.py": {"rotation": [{"c": 0.1, "rotation_error": 3.861494713777849e-18, "leading_relative_error": 0.019419324309079666}, {"c": 0.03, "rotation_error": 1.0836162993158948e-18, "leading_relative_error": 0.0017951545342211883}, {"c": 0.01, "rotation_error": 4.1206863152426835e-19, "leading_relative_error": 0.00019994001999290578}], "duhamel_error": 2.67147470653964e-16, "quadrature_error": 4.300245332973175e-14, "flux_return_trace4": -64.0}, "neutral_mixing_scattering.py": {"gc": 0.10442215919000226, "scaled_limit": 12.566370614359172, "threshold_rows": [{"ef": 0.001, "incoming_energy": 0.002, "formfactor": [1.2397705476698164, -0.4289117745515674], "asymptotic": [1.2378474090408211, -0.4291660806486928], "relative_error": 0.0014806734328001218, "scaled": [8.56403154539275, -2.962817574876186]}, {"ef": 1e-05, "incoming_energy": 2e-05, "formfactor": [0.8733744035400081, -0.200761913404669], "asymptotic": [0.8733530226371884, -0.20076308007115745], "relative_error": 2.3894611303275935e-05, "scaled": [10.055094410968945, -2.311356945232762]}, {"ef": 1e-07, "incoming_energy": 2e-07, "formfactor": [0.6680054668393115, -0.11485570397566368], "asymptotic": [0.6680052412111575, -0.11485571056966995], "relative_error": 3.3302158878249787e-07, "scaled": [10.766976009879087, -1.8512552227379009]}], "exact_twochannel_control": [{"c": 0.03, "relative_born_error": 0.0017644509850402387, "amplitude": [0.05671562102946135, -0.03410743254585793]}, {"c": 0.01, "relative_born_error": 0.00019651486720871877, "amplitude": [0.01893521075487038, -0.01138647724044073]}, {"c": 0.003, "relative_born_error": 1.7691110001830413e-05, "amplitude": [0.005681589826389765, -0.003416536193527049]}], "scope": "Pinned coefficient model, first order in c then threshold; no native emission rate"}}, "scope": "Native local matched vertex; separate pinned coefficient scattering, not full microscopic rate"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_mixing_induced_vertex-9kkftg_6/outputs/native_mixing_induced_vertex/result.json sha256=6e4728fb8297a86586a1aebcee009861ab1aeda3b946666ec39e67f512913578
+{"controls": {"neutral_mixing_scattering.py": {"exact_twochannel_control": [{"amplitude": [0.05671562102946135, -0.03410743254585793], "c": 0.03, "relative_born_error": 0.0017644509850402387}, {"amplitude": [0.01893521075487038, -0.01138647724044073], "c": 0.01, "relative_born_error": 0.00019651486720871877}, {"amplitude": [0.005681589826389765, -0.003416536193527049], "c": 0.003, "relative_born_error": 1.7691110001830413e-05}], "gc": 0.10442215919000226, "scaled_limit": 12.566370614359172, "scope": "Pinned coefficient model, first order in c then threshold; no native emission rate", "threshold_rows": [{"asymptotic": [1.2378474090408211, -0.4291660806486928], "ef": 0.001, "formfactor": [1.2397705476698164, -0.4289117745515674], "incoming_energy": 0.002, "relative_error": 0.0014806734328001218, "scaled": [8.56403154539275, -2.962817574876186]}, {"asymptotic": [0.8733530226371884, -0.20076308007115745], "ef": 1e-05, "formfactor": [0.8733744035400081, -0.200761913404669], "incoming_energy": 2e-05, "relative_error": 2.3894611303275935e-05, "scaled": [10.055094410968945, -2.311356945232762]}, {"asymptotic": [0.6680052412111575, -0.11485571056966995], "ef": 1e-07, "formfactor": [0.6680054668393115, -0.11485570397566368], "incoming_energy": 2e-07, "relative_error": 3.3302158878249787e-07, "scaled": [10.766976009879087, -1.8512552227379009]}]}, "neutral_mixing_vertex.py": {"duhamel_error": 2.67147470653964e-16, "flux_return_trace4": -64.0, "quadrature_error": 4.300245332973175e-14, "rotation": [{"c": 0.1, "leading_relative_error": 0.019419324309079666, "rotation_error": 3.861494713777849e-18}, {"c": 0.03, "leading_relative_error": 0.0017951545342211883, "rotation_error": 1.0836162993158948e-18}, {"c": 0.01, "leading_relative_error": 0.00019994001999290578, "rotation_error": 4.1206863152426835e-19}]}}, "scope": "Native local matched vertex; separate pinned coefficient scattering, not full microscopic rate", "status": "conditional-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_mixing_induced_vertex-9kkftg_6 elapsed_seconds= 1.6148045836016536
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

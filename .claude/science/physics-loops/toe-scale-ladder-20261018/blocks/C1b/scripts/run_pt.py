@@ -31,6 +31,8 @@ def main():
     os.makedirs(os.path.join(D, "raw"), exist_ok=True)
     ck = os.path.join(D, "ckpt", tag + ".npz")
     pt = PT(L, betas, V=V, seed=seed, start=start)
+    bmax = max(betas)
+    FULL = set(int(np.argmin(np.abs(np.array(betas) - x))) for x in (L / 2, float(L), bmax, min(betas)))
     if os.path.exists(ck):
         pt.load(ck)
         nb_seed(seed * 1000 + pt.nsw % 100000 + 7)  # fresh stream after resume
@@ -46,7 +48,7 @@ def main():
         pt.sweep_all()
         pt.swaps()
         if pt.nsw > therm and pt.nsw % every == 0:
-            m = pt.measure(range(len(betas)))
+            m = pt.measure(range(len(betas)), full=FULL)
             rows.append([[m[k].get(key, np.nan) for key in KEYS] for k in range(len(betas))])
     bad = pt.check()
     pt.save(ck)

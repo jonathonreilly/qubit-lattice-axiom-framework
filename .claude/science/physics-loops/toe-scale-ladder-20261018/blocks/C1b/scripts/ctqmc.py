@@ -428,7 +428,7 @@ def sweep(s0, ft, fp, nF, beta, g, V, plinks, lplaqs, tail, head, star, starsgn,
                         dI += In - Io
             for kk in range(foff[r], foff[r + 1]):
                 lflip[flk[kk]] = False
-        acc = legal and (np.random.random() < np.exp(-(g + V) * beta * dI))
+        acc = legal and (np.random.random() < 1.0 / (1.0 + np.exp((g + V) * beta * dI)))
         if acc:
             nacc += 1
             dIacc += dI
@@ -501,7 +501,7 @@ def sweep(s0, ft, fp, nF, beta, g, V, plinks, lplaqs, tail, head, star, starsgn,
                     Io, In = plaq_integral(q, plinks, off, lst, vt, sstate, sclus, -7, lflip, s0)
                     dI += In - Io
         # winding change of the loop (net crossings of the a=0 planes)
-        if np.random.random() < np.exp(-(g + V) * beta * dI):
+        if np.random.random() < 1.0 / (1.0 + np.exp((g + V) * beta * dI)):
             nlacc += 1
             dIacc += dI
             for i in range(i0, nst):
@@ -626,3 +626,169 @@ def check_config(s0, ft, fp, nF, plinks, star, starsgn):
         if s[l] != s0[l]:
             return 3
     return 0
+
+
+def cube_tables(lat):
+    """faces (6 plaquettes) and 12 links of the elementary cube at every vertex v."""
+    L = lat.L
+    co = lat.coords
+    vid = lambda c: ((c[0] % L) * L + c[1] % L) * L + c[2] % L
+    E = np.eye(3, dtype=int)
+    faces = np.zeros((lat.nv, 6), dtype=np.int64)
+    links = np.zeros((lat.nv, 12), dtype=np.int64)
+    for v in range(lat.nv):
+        c = co[v]
+        # o: 0:(x,y) normal z ; 1:(y,z) normal x ; 2:(x,z) normal y
+        faces[v] = [3 * v + 0, 3 * vid(c + E[2]) + 0, 3 * v + 1, 3 * vid(c + E[0]) + 1, 3 * v + 2, 3 * vid(c + E[1]) + 2]
+        s = set()
+        for f in faces[v]:
+            for l in lat.plinks[f]:
+                s.add(int(l))
+        assert len(s) == 12
+        links[v] = sorted(s)
+    pc = -np.ones((lat.np, 2), dtype=np.int64)
+    for v in range(lat.nv):
+        for f in faces[v]:
+            k = 0 if pc[f, 0] < 0 else 1
+            pc[f, k] = v
+    assert np.all(pc >= 0) and np.all(pc[:, 0] != pc[:, 1])
+    return faces, links, pc
+
+
+@nb.njit(cache=True)
+def _flip_ok(st, plinks, q):
+    return _circ4(st[plinks[q, 0]], st[plinks[q, 1]], st[plinks[q, 2]], st[plinks[q, 3]])
+
+
+@nb.njit(cache=True)
+def _link_csr(nl, ft, fp, nF, plinks, order):
+    cnt = np.zeros(nl + 1, dtype=np.int64)
+    for k in range(nF):
+        for j in range(4):
+            cnt[plinks[fp[k], j] + 1] += 1
+    off = np.cumsum(cnt)
+    fill = off[:-1].copy()
+    tl = np.empty(4 * nF + 1, dtype=np.float64)
+    for ii in range(nF):
+        k = order[ii]
+        for j in range(4):
+            l = plinks[fp[k], j]
+            tl[fill[l]] = ft[k]
+            fill[l] += 1
+    return off, tl
+
+
+@nb.njit(cache=True)
+def cube_moves(s0, ft, fp, nF, plinks, lplaqs, cfaces, clinks, pcubes, ntry):
+    """3<->3 cube moves (V=0 only): event e1 and the next two events (in time, among all events on plaquettes
+    touching the links of a cube c containing e1's plaquette; window must not wrap u=0) must sit on three
+    distinct faces T of c.  They are replaced, at the same times, by the complementary faces T' in a uniformly
+    chosen valid order.  Same number of events -> equal weight; acceptance min(1, N'/N), N (N') = number of
+    valid orderings of T (T') from the state just before e1.  Changes the net-flip class by a cube boundary."""
+    nl = s0.shape[0]
+    npl = plinks.shape[0]
+    if nF < 3:
+        return 0, 0
+    order = np.argsort(ft[:nF])
+    rank = np.empty(nF, dtype=np.int64)
+    for i in range(nF):
+        rank[order[i]] = i
+    off, tl = _link_csr(nl, ft, fp, nF, plinks, order)
+    touch = np.zeros(npl, dtype=np.int64)
+    st = s0.copy()
+    loc = np.empty(12, dtype=np.int64)
+    perms = np.array([[0, 1, 2], [0, 2, 1], [1, 0, 2], [1, 2, 0], [2, 0, 1], [2, 1, 0]])
+    okp = np.zeros(6, dtype=np.bool_)
+    ev = np.empty(3, dtype=np.int64)
+    T = np.empty(3, dtype=np.int64)
+    Tp = np.empty(3, dtype=np.int64)
+    nacc = 0
+    nvalid = 0
+    stamp = 0
+    for it in range(ntry):
+        e1 = np.random.randint(nF)
+        c = pcubes[fp[e1], np.random.randint(2)]
+        stamp += 1
+        for j in range(12):
+            for k in range(4):
+                touch[lplaqs[clinks[c, j], k]] = stamp
+        ev[0] = e1
+        nf = 1
+        ii = rank[e1] + 1
+        while ii < nF and nf < 3:
+            e = order[ii]
+            if touch[fp[e]] == stamp:
+                ev[nf] = e
+                nf += 1
+            ii += 1
+        if nf < 3:
+            continue
+        good = True
+        for a in range(3):
+            T[a] = fp[ev[a]]
+            isf = False
+            for f in range(6):
+                if cfaces[c, f] == T[a]:
+                    isf = True
+            if not isf:
+                good = False
+        if not good or T[0] == T[1] or T[1] == T[2] or T[0] == T[2]:
+            continue
+        n3 = 0
+        for f in range(6):
+            q = cfaces[c, f]
+            if q != T[0] and q != T[1] and q != T[2]:
+                Tp[n3] = q
+                n3 += 1
+        t1 = ft[e1]
+        for j in range(12):
+            l = clinks[c, j]
+            # parity of events on l strictly before t1
+            lo = off[l]
+            hi = off[l + 1]
+            cntb = 0
+            for pp in range(lo, hi):
+                if tl[pp] < t1:
+                    cntb += 1
+                else:
+                    break
+            st[l] = s0[l] * (1 - 2 * (cntb % 2))
+            loc[j] = st[l]
+        Nv = 0
+        Np_ = 0
+        for which in range(2):
+            for pi in range(6):
+                gd = True
+                for a in range(3):
+                    q = T[perms[pi, a]] if which == 0 else Tp[perms[pi, a]]
+                    if not _flip_ok(st, plinks, q):
+                        gd = False
+                        break
+                    for k in range(4):
+                        st[plinks[q, k]] = -st[plinks[q, k]]
+                for j in range(12):
+                    st[clinks[c, j]] = loc[j]
+                if which == 0:
+                    if gd:
+                        Nv += 1
+                else:
+                    okp[pi] = gd
+                    if gd:
+                        Np_ += 1
+        if Np_ == 0:
+            continue
+        nvalid += 1
+        if np.random.random() * Nv < Np_:
+            k = np.random.randint(Np_)
+            pi = -1
+            for p6 in range(6):
+                if okp[p6]:
+                    if k == 0:
+                        pi = p6
+                        break
+                    k -= 1
+            for a in range(3):
+                fp[ev[a]] = Tp[perms[pi, a]]
+            nacc += 1
+            off, tl = _link_csr(nl, ft, fp, nF, plinks, order)
+    return nacc, nvalid

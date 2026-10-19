@@ -71,3 +71,50 @@ Physics (V=0, beta = L, also beta = L/2 from the same ladder):
 - 02:40 launched PT validation (L=2, 11 betas 0.1..4, 15 min each):
     cd scripts; python3 run_pt.py val2_s1 2 1 canonical 0.1,0.18,0.25,0.35,0.5,0.7,1.0,1.4,2.0,2.8,4.0 15 2000 1
     (and val2_s2 ... 2 2 scrambled ...). Re-running the same command continues from data/ckpt/<tag>.npz.
+- 02:58 val2 (PT, 300k sweeps x2, 2000 round trips) FAILED: E biased at beta=1,2,4 (z up to 27).
+  Diagnosis (02:59, scratch t28): sum_p n_p^2 of the net-flip class never takes the value 6 -> elementary
+  CUBE classes (n = +-boundary of a cube) are never generated. Reason (proved by inspection): a single
+  plaquette cluster's time-slice set S(tau) can only change by ADDING a plaquette boundary disjoint from S
+  or REMOVING one contained in S (SW binding of all 4 legs of a vertex side), so sweeping a cube (which needs
+  XOR with shared links) is impossible. Plane classes do occur.
+  Fix: new move cube_moves (ctqmc.py): three consecutive events on three distinct faces T of a cube (no
+  other event on any plaquette touching the cube links in between, window not wrapping u=0) are relabelled,
+  same times, to the complementary faces T' in a uniformly chosen valid order; equal weight; acceptance
+  min(1, N'/N). V=0 only. val2 result kept in logs/validate_L2_val2.log (superseded).
+- 03:02 launched val3 (same command as val2 with tag val3_s1/val3_s2) with cube moves on.
+- 03:35 val3 PASSED: logs/validate_L2_val3.log  TOTAL: PASS=25 FAIL=0 (E, <W^2>, P(W=0), N_circ, S(pi) at
+  beta=0.25..4; 1519+1558 round trips; both starts). Code state = current ctqmc.py/sim.py (cube moves on).
+  Validation rule unchanged from declaration (3 sigma, max(binned, seed-scatter) error).
+- 03:35 production settings (declared before any L>=4 production data; pilots at L=4,6 seen only for
+  timing/acceptance and one L=4 beta=8 energy -0.293/plaquette, consistent with C1's E0/N_p=-0.2930):
+  ladders data/ladders/L{4,6,8}.txt (ladder.py L 0.15 bmax 1.0 0.27 1.2; bmax = 8, 6, 8 for L = 4, 6, 8;
+  beta = L and L/2 on every ladder). Measure every 2 sweeps, thermalisation 2000 (L4) / 1000 sweeps, and the
+  analysis discards the first 20% of measurements. Two runs per L: canonical start and loop-scrambled start
+  (different seeds). Errors: 20 bins per run; combined = max(binned, seed scatter).
+  Queues: scripts/queue.sh jobs_A.txt A ; scripts/queue.sh jobs_B.txt B  (restart-safe: just relaunch both
+  with nohup; each chunk is 15 min and checkpoints in data/ckpt/).
+- 03:40 (before looking at any L>=4 production observable; only chunk bookkeeping seen: L4_s1 chunk0 =
+  9499 sweeps, 10 round trips) ESTIMATOR ADDENDUM, declared now:
+  PT round trips are slow (~1 per 950 sweeps at L=4), so the direct estimate of P(|W_a|=1)/P(W_a=0) at
+  beta=L has few independent samples. Added a second estimator of the SAME declared quantity dF1:
+  Z_S(beta) = sum_{s in S} <s|e^{-beta H}|s> for S0={W_a=0}, S1={|W_a|=1} (unions of conserved sectors), so
+  d ln Z_S/d beta = -<H>_S exactly and
+     ln[Z_S1/(2 Z_S0)](beta) = ln[P1/(2 P0)](beta_min) - int_{beta_min}^{beta} (E_S1 - E_S0) dbeta'
+  (thermodynamic integration over the PT ladder with sector-conditional energies, trapezoid rule, errors
+  from 20 time bins with bin-wise jackknife). Criteria C-W / X-W are applied to BOTH estimators; if they
+  disagree the point is reported as inconclusive. (Implemented in scripts/ti.py.)
+  Also: run_pt now records full observables (S, Nc) only at beta in {bmin, L/2, L, bmax}; E and W at all betas.
+  L6 ladder regenerated (ladder.py 6 0.3 6 1.0 0.27 1.3, 40 betas) before any L6 run started.
+- 03:42 TI estimator check at L=2 (val3 data): trapezoid on the coarse 11-point L=2 ladder gave dF1(beta=2)
+  1.4046(64) vs exact 1.4294 (3.9 sigma: quadrature error). Switched quadrature to cubic spline
+  (TI_QUAD=spline default in ti.py; decided on L=2 validation data only, before any production analysis).
+  logs/validate_TI_L2.log: TOTAL: PASS=10 FAIL=0 (TI and direct dF1 at beta=0.25..4).
+- 03:55 L4 after 2 chunks/run (15 trips each): EQ check fails narrowly (<W^2> at beta=L=4 start-diff
+  z=2.62 > 2.5; |W|=2 visits only in run 1). Not used for verdict yet; 2 more chunks per run appended to
+  the queues (after L6). Runs L6_s1/L6_s2 started 03:54.
+- 04:12 L6 chunk 0: 3500 sweeps/15 min, 0-1 round trips per run. PT at L=8 (76 betas, est. ~600 sweeps per
+  chunk) is not feasible in the remaining budget -> L=8 winding/S_T measurement dropped (operational).
+  Queue plan (appended to jobs_A/B.txt): L6 6 chunks -> L4 to 4 chunks -> L6 to 10 chunks -> L8E (single
+  beta=16 at L=8, 2 chunks, two starts) for a one-sided check of the 8^3 ground energy:
+  <H>_beta >= E0(global) for every beta, so a thermal energy significantly below -443.364 would show the
+  repo guided-projector value lies above the true ground energy (declared before running).

@@ -1,7 +1,7 @@
 """Replica container, measurements and parallel tempering driver for ctqmc."""
 import numpy as np
 import time, json, os
-from ctqmc import Lat, sweep, ibar, states_at, check_config, nb_seed
+from ctqmc import Lat, sweep, ibar, states_at, check_config, nb_seed, cube_tables, cube_moves
 
 
 class Replica:
@@ -21,6 +21,32 @@ def scramble(lat, s0, nloop, rng_seed):
         r.ft, r.fp, r.nF, st, _, _m1, _m2, _m3 = sweep(r.s0, r.ft, r.fp, r.nF, 1e-9, 1.0, 0.0, A[0], A[2], A[3], A[4],
                                          A[5], A[6], 20, 0.5)
     return r.s0
+
+
+def rot_state(lat, s):
+    L = lat.L
+    out = np.zeros_like(s)
+    for v in range(lat.nv):
+        c = lat.coords[v]
+        for a in range(3):
+            cc = np.array([c[2], c[0], c[1]])
+            out[3 * (((cc[0] % L) * L + cc[1] % L) * L + cc[2] % L) + (a + 1) % 3] = s[3 * v + a]
+    assert np.all(lat.div(out) == 0)
+    return out
+
+
+def reverse_xline(lat, s):
+    """reverse a directed straight x-line (y=z=0 if directed, else search) -> changes W_x by +-1"""
+    L = lat.L
+    for y in range(L):
+        for z in range(L):
+            ls = [3 * ((x * L + y) * L + z) + 0 for x in range(L)]
+            if abs(s[ls].sum()) == L:
+                t = s.copy()
+                t[ls] *= -1
+                assert np.all(lat.div(t) == 0)
+                return t
+    raise RuntimeError("no directed x-line")
 
 
 class Meas:
@@ -74,7 +100,15 @@ class PT:
         s = self.lat.canonical()
         if start == "scrambled":
             s = scramble(self.lat, s, 200, seed)
-        self.reps = [Replica(self.lat, s) for _ in betas]
+        if start.startswith("mixW"):
+            # alternate replicas between W=0 and W=(1,0,0) starts (directed x-line y=0,z=0 reversed);
+            # mixW_rot: same with the axes of the canonical state cyclically rotated (x->y->z)
+            if start == "mixW_rot":
+                s = rot_state(self.lat, s)
+            s1 = reverse_xline(self.lat, s)
+            self.reps = [Replica(self.lat, s if k % 2 == 0 else s1) for k in range(len(betas))]
+        else:
+            self.reps = [Replica(self.lat, s) for _ in betas]
         self.where = np.arange(len(betas))  # where[k] = replica index at beta k
         self.label = np.arange(len(betas))  # label of walker at beta k (for round trips)
         self.dirn = np.zeros(len(betas), dtype=np.int64)  # walker direction state: +1 last visited lowest beta index 0
@@ -86,6 +120,9 @@ class PT:
         self.swap_acc = np.zeros(len(betas) - 1)
         self.swap_try = np.zeros(len(betas) - 1)
         self.stats = np.zeros((len(betas), 10))
+        self.cf, self.cl, self.pc = cube_tables(self.lat)
+        self.cube_frac = 0.5
+        self.cstats = np.zeros((len(betas), 2))
 
     def sweep_all(self):
         A = self.A
@@ -94,6 +131,10 @@ class PT:
             r.ft, r.fp, r.nF, st, _, _m1, _m2, _m3 = sweep(r.s0, r.ft, r.fp, r.nF, b, 1.0, self.V, A[0], A[2], A[3], A[4],
                                              A[5], A[6], self.nloops, self.giant_frac)
             self.stats[k] += st
+            if self.V == 0.0 and self.cube_frac > 0 and r.nF >= 3:
+                a, v = cube_moves(r.s0, r.ft, r.fp, r.nF, A[0], A[2], self.cf, self.cl, self.pc,
+                                  max(1, int(self.cube_frac * r.nF)))
+                self.cstats[k] += (a, v)
         self.nsw += 1
 
     def swaps(self):
@@ -123,8 +164,16 @@ class PT:
                 self.dirn[lab] = 2
                 self.trips += 1
 
-    def measure(self, ks):
-        return {int(k): self.meas(self.reps[self.where[k]], self.betas[k], self.V) for k in ks}
+    def measure(self, ks, full=None):
+        out = {}
+        for k in ks:
+            r = self.reps[self.where[k]]
+            if full is None or k in full:
+                out[int(k)] = self.meas(r, self.betas[k], self.V)
+            else:  # lite: energy (V=0 estimator) and winding only
+                w = self.lat.winding(r.s0)
+                out[int(k)] = {"nF": r.nF, "E": -r.nF / self.betas[k], "Wx": int(w[0]), "Wy": int(w[1]), "Wz": int(w[2])}
+        return out
 
     def check(self):
         A = self.A

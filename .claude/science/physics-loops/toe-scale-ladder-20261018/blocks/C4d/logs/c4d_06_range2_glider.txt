@@ -1,0 +1,16 @@
+orbit reps (rho, orbit size): [((0, 0, 1), 3), ((0, 0, 2), 3), ((0, 1, -2), 6), ((0, 1, -1), 6), ((0, 2, -2), 6), ((0, 2, -1), 6), ((1, -2, -2), 12), ((1, -2, -1), 12), ((1, -1, -1), 4), ((2, -2, -2), 4)]
+face-diagonal representative: (0, 1, -1)
+stabiliser-fixed images of the face rep: [[(-2, 0, -1), (-2, 1, 0)], [(-2, 0, 0), (-2, 1, -1)], [(-1, 0, -1), (-1, 1, 0)], [(-1, 0, 0), (-1, 1, -1)], [(0, 0, -1), (0, 1, 0)], [(0, 0, 0), (0, 1, -1)], [(1, 0, -1), (1, 1, 0)], [(1, 0, 0), (1, 1, -1)], [(2, 0, -1), (2, 1, 0)], [(2, 0, 0), (2, 1, -1)]]
+  image [(-2, 0, -1), (-2, 1, 0)]: moving cycles []  spectator conflicts: 16
+  image [(-2, 0, 0), (-2, 1, -1)]: moving cycles [((0, 1, -1), 1, (-2, 0, 0)), ((0, 1, 1), 1, (2, 0, 0)), ((1, -1, 0), 1, (0, 0, -2))]...  spectator conflicts: 16
+  image [(-1, 0, -1), (-1, 1, 0)]: moving cycles []  spectator conflicts: 0
+  image [(-1, 0, 0), (-1, 1, -1)]: moving cycles [((0, 1, -1), 1, (-1, 0, 0)), ((0, 1, 1), 1, (1, 0, 0)), ((1, -1, 0), 1, (0, 0, -1))]...  spectator conflicts: 0
+  image [(0, 0, -1), (0, 1, 0)]: moving cycles []  spectator conflicts: 0
+  image [(0, 0, 0), (0, 1, -1)]: moving cycles []  spectator conflicts: 0
+  image [(1, 0, -1), (1, 1, 0)]: moving cycles []  spectator conflicts: 0
+  image [(1, 0, 0), (1, 1, -1)]: moving cycles [((0, 1, -1), 1, (1, 0, 0)), ((0, 1, 1), 1, (-1, 0, 0)), ((1, -1, 0), 1, (0, 0, 1))]...  spectator conflicts: 0
+  image [(2, 0, -1), (2, 1, 0)]: moving cycles []  spectator conflicts: 16
+  image [(2, 0, 0), (2, 1, -1)]: moving cycles [((0, 1, -1), 1, (2, 0, 0)), ((0, 1, 1), 1, (-2, 0, 0)), ((1, -1, 0), 1, (0, 0, 2))]...  spectator conflicts: 16
+PASS range 2: moving face-diagonal monomial maps exist (2-magnon level) :: 4
+PASS range 2: some moving map passes the exact 3-magnon spectator test (no 3-body obstruction) :: 2 of 4
+TOTAL: PASS=2 FAIL=0

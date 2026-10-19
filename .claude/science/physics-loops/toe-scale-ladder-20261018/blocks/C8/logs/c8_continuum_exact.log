@@ -1,0 +1,5 @@
+int dOmega F2(n) = -52*pi/105 = -1.55583636177780
+c_G^sharp / Lambda^2 = 13/(840*pi**2) = 0.00156806593732189
+ratio to heat kernel 1/(96 pi^2): 52/35
+PASS [exact] continuum sharp-cutoff TT bubble: c_G = 13 Lambda^2/(840 pi^2) = (52/35) x heat kernel
+TOTAL: PASS=1 FAIL=0

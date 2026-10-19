@@ -1,0 +1,25 @@
+PASS  s2.0 eps->inf limit equals iid-clock model (two implementations), C(1) within 4 SE  KJMA 0.5768+-0.0017 vs iid 0.5749+-0.0019
+eps   L   nsamp  C(1)  xi(1/e)  <tau>
+1e-02   128  183 0.817   4.154+-0.019 3.34
+3e-03   256   45 0.868   6.040+-0.035 4.80
+1e-03   256   45 0.902   8.552+-0.053 6.67
+3e-04   512   11 0.930  13.005+-0.098 9.58
+1e-04  1024    8 0.953  18.854+-0.165 13.32
+fit xi ~ eps^a : a = -0.326 +- 0.005 (chi2/dof 7.49); KJMA d=2 prediction -1/3
+PASS  s2.1 xi(eps) exponent consistent with KJMA -1/3 within 4 SE or 0.05  a=-0.326+-0.005
+FSS eps=1e-02 L=64 nsamp=976 chi_L=71.95+-3.18  <m^2>=1.76e-02
+FSS eps=1e-02 L=128 nsamp=244 chi_L=74.27+-7.52  <m^2>=4.53e-03
+FSS eps=1e-02 L=256 nsamp=61 chi_L=66.21+-13.39  <m^2>=1.01e-03
+   slope dlog chi/dlog L = -0.011 +- 0.114  (LRO would give 2)
+PASS  s2.2 eps=1e-02: chi_L bounded in L (|slope|<0.5, declared), no LRO  slope=-0.011+-0.114
+FSS eps=1e-03 L=128 nsamp=244 chi_L=296.27+-26.37  <m^2>=1.81e-02
+FSS eps=1e-03 L=256 nsamp=61 chi_L=313.83+-55.03  <m^2>=4.79e-03
+FSS eps=1e-03 L=512 nsamp=16 chi_L=246.27+-56.87  <m^2>=9.39e-04
+   slope dlog chi/dlog L = -0.080 +- 0.161  (LRO would give 2)
+PASS  s2.2 eps=1e-03: chi_L bounded in L (|slope|<0.5, declared), no LRO  slope=-0.080+-0.161
+seeded p=1e-02 L=256 ns=30: xi=6.34, C(60)=-0.0028+-0.0027, C(L/2)=-0.0033+-0.0049
+PASS  s2.3 seeded p=1e-02 (lam_min=0): C(L/2) consistent with 0 (4 SE)  
+seeded p=1e-03 L=512 ns=8: xi=18.85, C(189)=-0.0124+-0.0081, C(L/2)=-0.0105+-0.0145
+PASS  s2.3 seeded p=1e-03 (lam_min=0): C(L/2) consistent with 0 (4 SE)  
+elapsed 69s
+TOTAL: PASS=6 FAIL=0

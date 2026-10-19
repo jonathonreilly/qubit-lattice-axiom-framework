@@ -12,3 +12,10 @@
 12 0.0 24 26000 6000 11 24 0.25 1.0 5
 12 0.0 24 24000 6000 111 24 0.25 1.0 5
 8 0.5 16 20000 5000 11 16 0.25 1.0 4
+# Round 2 (added 00:20 UTC, before seeing round-2 data): extra L=12 chains from further starts to cut the L=12 error
+12 0.0 24 24000 6000 2 24 0.25 1.0 5
+# DROPPED: 12 0.0 24 24000 6000 112 24 0.25 1.0 5
+# 00:41 UTC change: after L=10 T=40 gave E(W=1) 0.5 below its T=20 value (T=20 not projected for W=1), the
+# L=12 s112 job is dropped (T=24 at L=12 is then also suspect) in favour of second L=10 T=40 chains:
+10 0.0 40 25000 7000 111 20 0.5 1.0 4
+10 0.0 40 25000 7000 11 20 0.5 1.0 4

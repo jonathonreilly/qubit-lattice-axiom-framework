@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/native_row_tunneling.py
+runner_sha256: dc2a3e809c733898ca2ae05095fb32d24d85259a91a88efcc05fe99bf56772c8
+input_fingerprint_sha256: 4af0e454a66b5814090e0bb3e239eaa0e1d21909d75ed3f2e6ce5394ed648fc9
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.02
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_row_tunneling-54xxqrkk
+[PASS] P9760:native_row_tunneling:C001
+[PASS] P9760:native_row_tunneling:C002
+[PASS] P9760:native_row_tunneling:C003
+[PASS] P9760:native_row_tunneling:C004
+[PASS] P9760:native_row_tunneling:C005
+[PASS] P9760:native_row_tunneling:C006
+[PASS] P9760:native_row_tunneling:C007
+[PASS] P9760:native_row_tunneling:C008
+[PASS] P9760:native_row_tunneling:C009
+[PASS] P9760:native_row_tunneling:C010
+[PASS] P9760:native_row_tunneling:C011
+[PASS] P9760:native_row_tunneling:C012
+{"status": "bounded-support", "path_sum_n": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "column_model_spectra": [{"t": 0.1, "gap": 0.021069078330157254, "gap_over_2t2": 1.0534539165078625, "Z00_weight": 0.9974228900115485, "residual": 6.587762672449507e-14}, {"t": 0.05, "gap": 0.005065722158594355, "gap_over_2t2": 1.0131444317188707, "Z00_weight": 0.9993703913127048, "residual": 2.8584494708686316e-14}, {"t": 0.02, "gap": 0.0008016747915675637, "gap_over_2t2": 1.0020934894594546, "Z00_weight": 0.9998998834749665, "residual": 1.867313176284718e-14}, {"t": 0.01, "gap": 0.00020010460611885605, "gap_over_2t2": 1.0005230305942803, "Z00_weight": 0.9999749927300828, "residual": 6.07150324925313e-13}, {"t": 0.005, "gap": 5.000653681719314e-05, "gap_over_2t2": 1.0001307363438627, "Z00_weight": 0.9999937495458313, "residual": 5.255269648176662e-14}], "scope": "Exact finite path sums and 16-column coefficient-model spectra only; native hierarchy is an analytic proof, not native96-qubit diagonalization"}
+Assertion evaluations: 49 ; PASS counts distinct primary assertion groups; helper assertions are additional uncounted checks.
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_row_tunneling-54xxqrkk/outputs/native_row_tunneling/result.json sha256=d1711cf3f7d9dc80cbeac6655ab5484018c61095512336735c89300afe6703e9
+{"column_model_spectra": [{"Z00_weight": 0.9974228900115485, "gap": 0.021069078330157254, "gap_over_2t2": 1.0534539165078625, "residual": 6.587762672449507e-14, "t": 0.1}, {"Z00_weight": 0.9993703913127048, "gap": 0.005065722158594355, "gap_over_2t2": 1.0131444317188707, "residual": 2.8584494708686316e-14, "t": 0.05}, {"Z00_weight": 0.9998998834749665, "gap": 0.0008016747915675637, "gap_over_2t2": 1.0020934894594546, "residual": 1.867313176284718e-14, "t": 0.02}, {"Z00_weight": 0.9999749927300828, "gap": 0.00020010460611885605, "gap_over_2t2": 1.0005230305942803, "residual": 6.07150324925313e-13, "t": 0.01}, {"Z00_weight": 0.9999937495458313, "gap": 5.000653681719314e-05, "gap_over_2t2": 1.0001307363438627, "residual": 5.255269648176662e-14, "t": 0.005}], "path_sum_n": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "scope": "Exact finite path sums and 16-column coefficient-model spectra only; native hierarchy is an analytic proof, not native96-qubit diagonalization", "status": "bounded-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion groups, not loop iterations; helper assertions fail closed but are additional uncounted checks.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; no microscopic pole, universal force or empirical identification is established.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_row_tunneling-54xxqrkk elapsed_seconds= 0.9345378750003874
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

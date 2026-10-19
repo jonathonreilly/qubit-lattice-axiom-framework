@@ -1,0 +1,18 @@
+<!-- Owning original: PR9753; source SHA256 b46eee84e483366a05cf38aed37fa5fd4047a9a1f2f6d5089046cc6bd2dd4132. -->
+**Source boundary:** Complete mathematical source follows. Original review dispositions, execution stories, provisional questions and PASS labels are historical annotations, not current certification. Later explicit addenda supersede earlier provisional statements. Mathematical hypotheses and conclusions are retained; terminal exclusion interpretations require separate admission and are not promoted by this source enclosure.
+
+# Root closed-arm elimination in fixed-order E8 coefficients
+
+Use compact four-wall/even-plane-parity sector, vacuum energy subtracted, infinitebulk, all three center-of-mass momenta fixed to zero. States indexed by unordered transversecolumnseparation r!=0 and commonintervalell>=1. Retain R: all ell1/ell2 host states; long adjacent fastarms; long axialdistance2 slowarms. F is ell>=3 with r neithernearestneighbor noraxialdistance2 (includes diagonal(1,1) andalllarger distances). Work atfixedm>=4 inlocal symmetrypreserving effectivecoefficients; nofullnativeHilbertinvarianceclaim.
+
+K1 restrictedtoF andF-R iszero. K2_F=-4I. K2_F-R=0: longdiagonal endpoint extension cancelsbetweenXY/YX paths; largerdistance needs>=3transverseoperations. Wholecolumnmotion atell>=3 also needs>=3operations. The independent report gives the all-length endpoint counting and two-path cancellation proof; finite examples supplement it.
+
+Connected finite-order support gives on F
+ H_F/Jz=8-4lambda²+lambda4 s_r(lambda) ell+B_F(lambda),
+ with s_r(0)>=3/32 (diagonalpairchanges6plaquettes; genericnonneighborpair8, so1/8), and||B_F(lambda)||<=C_mlambda³. Atfixedm, onlyfinitelymany short-r patterns differ; forlarge r localcoefficients split into independentcolumns. Thus s_r(lambda)=s_r(0)+O_m(lambda) uniformlyr, so remainspositivefor smalllambda. The longdiagonalclassification derivesaffineslope; shortell entries, endpointmoves andwholecolumnmovesell<=m contribute bounded finite-degree operators. Offdiagonalrowdegreeandamplitudeboundsuniformr,ell. Domainform includespositiveunboundedpotential; discarditforlowerbound.
+
+Hence infspec H_F/Jz>=8-4lambda²-C_mlambda³. In neighborhood Re(E/Jz)=8-6lambda²+O(lambda10/3), get||(E-H_F)^-1||<=C/(Jzlambda²), includingcomplexEnearproposedpole. H_RF hasnorm<=C_m Jzlambda³ and support in a finite fixed endpoint/relative-position block. Indeed, eachtermchangesrbyboundedamount; F-toR requiresrclose tofixedfast/slowseparations or ellchangeinto1/2. For arbitrarylarge r, ell3→ell2 requiresflippingbothseparatedendspins via connectedcluster; impossibleforr>rho_m. Therefore r<=rho_m andell<=rho_m onallcrosscouplings. AfterCOMprojection this is finite-dimensional support dependingonlym.
+
+Schur correction Delta_R=H_RF(E-H_F)^-1H_FR is finite-rank, normO_m(Jzlambda4), derivativewrtE O_m(lambda²), analyticthroughslowenergyregion. In slowunits the correctionisO(lambda²) onfiniteboundary/hostsites; it cannot changeleadinglambda4polewidth in an otherwiseprovedslowArm+regularhostmodel, asboundaryAiryweightO(lambda²) givesenergycorrectionO(Jzlambda6). Its possibleeffectonfastboundaryisalsohigherorder. This latterconsumerstatementrequiresthe retainedhostresolvent stability, notjustnormbound; do notclaimfullpolefromF-elimination.
+
+This removes extra long frozen separations as resonant decay channels at the slowbandedge withinfixed-orderE8effectiveH. It doesnotruleoutotherNsectors, establishactualfull-Hpole, orselectstate/physicalmeasurement. Use the zero-block local homological convention for K2; arbitrary additional block rotations are not covered; leadingtensiondirectlocalproofavailable.

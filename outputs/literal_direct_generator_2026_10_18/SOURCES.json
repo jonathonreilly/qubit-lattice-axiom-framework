@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "base_revision": "8e800e511aa71a6b9af26947bd3dad9c49c4e5c0",
+  "base_pr": 9751,
+  "main_revision": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "packet_destination": "outputs/literal_direct_generator_2026_10_18",
+  "source_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934",
+  "status": "Selectively checked literal direct-generator benchmark with explicitly changed supplied actuator inventory",
+  "files": [
+    {
+      "path": "literal_direct_generator/PROPOSAL.md",
+      "destination": "source_checks/literal_direct_generator/PROPOSAL.md",
+      "sha256": "c0cc65e615bb6bdb7466c01c68ce53d6647c75e73a322bd88fff97580428f7d6",
+      "bytes": 15405,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/literal_direct_generator/PROPOSAL.md"
+    },
+    {
+      "path": "literal_direct_generator_check/REVIEW.md",
+      "destination": "source_checks/literal_direct_generator_check/REVIEW.md",
+      "sha256": "e58d3fd82b27d94ae862a528707e3eb279ad5964dd5ca4641fb0e7e4fbfe3e38",
+      "bytes": 22934,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/literal_direct_generator_check/REVIEW.md"
+    }
+  ],
+  "inherited": [
+    {
+      "path": "docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "71c65d72570a32365ded6dacfc78308ac8429d9e8003a3731af88b5600eb45ff",
+      "role": "context only; no scattering theorem imported"
+    }
+  ],
+  "note_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/literal_direct_generator_publication/NOTE.md",
+      "destination": "docs/LITERAL_DIRECT_GENERATOR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "1ba5a1d12cc728172144cd0c2b0f563523f009770f11cbe12db09fecef182bbc"
+    }
+  ],
+  "provenance": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/literal_direct_generator_publication/AUTHOR_NOTE.md",
+      "destination": "AUTHOR_NOTE.md",
+      "sha256": "be881fe8d969a0be56a99ae238bdd94d05372d1eea7168a413dc8aabf988d3e5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/literal_direct_generator_publication/INTEGRATION_RECORD.md",
+      "destination": "INTEGRATION_RECORD.md",
+      "sha256": "27c5f9056b1eb44b0e9292bdefe63a930daef16db333f6e925ad53ff7373f430"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/literal_direct_generator_publication/PUBLICATION_CHECK.md",
+      "destination": "PUBLICATION_CHECK.md",
+      "sha256": "366537812eca2662a61ff9abf7f01d800d10a5a8070f3c78a9cab0a4f8f9e814"
+    }
+  ],
+  "limits": [
+    "New direct target generator, exact static synchronization, selected zero couplings and pure product input supplied.",
+    "Different apparatus, no equal-inventory speedup or original scattering theorem replacement.",
+    "Selected finite observation window only; no autonomous release/capture/reset/permanent halt.",
+    "Analytical source-exposed same-model selective check; no physical validation or retained audit."
+  ]
+}

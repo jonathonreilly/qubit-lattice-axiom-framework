@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_microscopic_source_snapshots/NATIVE_CONSERVED_SCALAR_NOTE_2026-10-18.md",
+    "revision": "33f0af206df4897744a9d5e248c2889fdd6ed1e7",
+    "sha256": "1b579ec1901f2389b4fb058649b8ea78f0d0d0c4737e36c54af1c400bf4f795e",
+    "bytes": 6226
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_microscopic_source_snapshots/NATIVE_LOCAL_NORMALFORM_NOTE_2026-10-18.md",
+    "revision": "e161fcef330a7cad87a19e3ffcb2fc3b03691083",
+    "sha256": "debd8448a97a982d23074582e983438cebc880a86cb03f44bfe9be57921d4d3d",
+    "bytes": 9105
+  }
+]

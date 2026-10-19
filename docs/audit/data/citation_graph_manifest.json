@@ -1,6 +1,6 @@
 {
- "edge_count": 16315,
- "node_count": 7334,
+ "edge_count": 16341,
+ "node_count": 7355,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -292,6 +292,18 @@
   },
   "action_uniqueness_note": {
    "deps_hash": "8d80d0a97cfc",
+   "out_degree": 1
+  },
+  "active_energy_cubic_loader_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "5c4ae624aadd",
+   "out_degree": 2
+  },
+  "active_output_windows_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "28ac89d821fe",
+   "out_degree": 1
+  },
+  "active_reference_tolerance_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "28ac89d821fe",
    "out_degree": 1
   },
   "active_sector_grounded_by_mass_vs_k_dominant_operator_sieve_narrow_theorem_note_2026-06-06": {
@@ -14630,6 +14642,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "literal_direct_generator_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "f39a541fbfc4",
+   "out_degree": 1
+  },
   "literal_l4_always_on_control_bounded_theorem_note_2026-10-14": {
    "deps_hash": "ea431c5a27de",
    "out_degree": 5
@@ -15394,6 +15410,10 @@
    "deps_hash": "d6845a57b2e3",
    "out_degree": 5
   },
+  "native_bulk_com_propagation_note_2026-10-18": {
+   "deps_hash": "9ce35dce9d41",
+   "out_degree": 3
+  },
   "native_bulk_segment_resonance_note_2026-10-18": {
    "deps_hash": "be1508c7efa7",
    "out_degree": 1
@@ -15409,6 +15429,10 @@
   "native_charge_motion_and_spectral_weight_bounds_bounded_theorem_note_2026-09-15": {
    "deps_hash": "6e5209b9fa1f",
    "out_degree": 5
+  },
+  "native_charged_ground_dynamics_note_2026-10-18": {
+   "deps_hash": "abf0b923a99c",
+   "out_degree": 3
   },
   "native_charged_record_histories_note_2026-09-09": {
    "deps_hash": "5bd92167bfd1",
@@ -15426,6 +15450,18 @@
    "deps_hash": "2448ffe58c24",
    "out_degree": 3
   },
+  "native_compass_literal_attachment_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "29c256b911cf",
+   "out_degree": 1
+  },
+  "native_composite_pole_envelope_note_2026-10-18": {
+   "deps_hash": "19d53a3d5407",
+   "out_degree": 1
+  },
+  "native_composite_readout_note_2026-10-18": {
+   "deps_hash": "22c7ff57c551",
+   "out_degree": 1
+  },
   "native_composite_transport_note_2026-10-18": {
    "deps_hash": "5b3106468dc3",
    "out_degree": 4
@@ -15433,6 +15469,10 @@
   "native_compression_action_boundary_note_2026-09-09": {
    "deps_hash": "e135cb65f69a",
    "out_degree": 3
+  },
+  "native_conserved_scalar_note_2026-10-18": {
+   "deps_hash": "32224e388abf",
+   "out_degree": 1
   },
   "native_corrected_fast_strip_note_2026-10-18": {
    "deps_hash": "57597c31531b",
@@ -15553,6 +15593,14 @@
   "native_finite_moment_ward_note_2026-09-10": {
    "deps_hash": "8f0cb25a6495",
    "out_degree": 4
+  },
+  "native_finite_range_arm_note_2026-10-18": {
+   "deps_hash": "b212a7809af1",
+   "out_degree": 2
+  },
+  "native_fixed_order_composite_note_2026-10-18": {
+   "deps_hash": "64d2e34f7774",
+   "out_degree": 1
   },
   "native_flux_defect_comparison_and_winding_gap_note_2026-09-08": {
    "deps_hash": "07c7d22c3d12",
@@ -15766,6 +15814,10 @@
    "deps_hash": "a6224d3271b4",
    "out_degree": 3
   },
+  "native_joined_neutral_band_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "native_l6_nonlinear_star_vertex_note_2026-09-09": {
    "deps_hash": "1cd58b38a11f",
    "out_degree": 10
@@ -15810,6 +15862,10 @@
    "deps_hash": "7165261fd0dd",
    "out_degree": 4
   },
+  "native_microscopic_ground_window_note_2026-10-18": {
+   "deps_hash": "40f4f1d820b9",
+   "out_degree": 1
+  },
   "native_mixed_gaussian_transition_note_2026-09-09": {
    "deps_hash": "444603b9eb3f",
    "out_degree": 3
@@ -15827,6 +15883,10 @@
    "out_degree": 1
   },
   "native_neutral_source_identification_note_2026-10-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "native_odd_rectangle_scalar_response_note_2026-10-18": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -15856,6 +15916,10 @@
   },
   "native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30": {
    "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "native_range_two_airy_note_2026-10-18": {
+   "deps_hash": "5571875d1c51",
    "out_degree": 1
   },
   "native_record_support_preserving_priority_formation_bounded_theorem_note_2026-09-07": {
@@ -15905,6 +15969,10 @@
   "native_star_thermodynamic_limit_note_2026-09-09": {
    "deps_hash": "a5940e8607f3",
    "out_degree": 5
+  },
+  "native_static_neutral_response_note_2026-10-18": {
+   "deps_hash": "122c71b94550",
+   "out_degree": 1
   },
   "native_stationary_response_note_2026-10-18": {
    "deps_hash": "e3b0c44298fc",
@@ -16849,6 +16917,10 @@
   "original_record_thermodynamic_dynamics_and_energy_density_bounded_theorem_note_2026-09-30": {
    "deps_hash": "89fc0be4bfdf",
    "out_degree": 4
+  },
+  "original_seed_static_bias_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "8a3c1579a7ad",
+   "out_degree": 2
   },
   "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27": {
    "deps_hash": "37b34cf3d5e2",
@@ -18854,9 +18926,17 @@
    "deps_hash": "d8ff3cbf3e4c",
    "out_degree": 2
   },
+  "real_mediated_vacancy_network_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "5a4e1ffd75ec",
+   "out_degree": 1
+  },
   "real_overlap_local_source_threshold_bounded_theorem_note_2026-09-15": {
    "deps_hash": "d80ec1818362",
    "out_degree": 3
+  },
+  "real_two_body_gap_mediation_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "29c256b911cf",
+   "out_degree": 1
   },
   "realization_row_sigma_reconciliation_bounded_theorem_note_2026-06-11": {
    "deps_hash": "b77b49964f00",
@@ -22457,6 +22537,10 @@
   "u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12": {
    "deps_hash": "311d6b921eb1",
    "out_degree": 3
+  },
+  "uncentered_reference_offsets_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "e6a6f6d2bdcd",
+   "out_degree": 1
   },
   "unequal_height_signature_with_one_partner_bounded_theorem_note_2026-10-10": {
    "deps_hash": "5859f1e27606",

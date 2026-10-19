@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "base_revision": "99dafd7ed463c529cca4f13b20a1456e869add23",
+  "base_pr": 9754,
+  "main_revision": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "packet_destination": "outputs/original_seed_static_bias_2026_10_18",
+  "source_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934",
+  "status": "Selectively checked original-apparatus blank-sector certificate and exact one-head phase transfer",
+  "files": [
+    {
+      "path": "original_seed_static_bias/PROPOSAL.md",
+      "destination": "source_checks/original_seed_static_bias/PROPOSAL.md",
+      "sha256": "67bb3fc30e42ef5fb716376af518e381b3c3b527dc27e49d91eb4a0a4424cef9",
+      "bytes": 18801,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/original_seed_static_bias/PROPOSAL.md"
+    },
+    {
+      "path": "original_seed_static_bias_check/REVIEW.md",
+      "destination": "source_checks/original_seed_static_bias_check/REVIEW.md",
+      "sha256": "f1e277b618e33653990b057dbdf11eeb35c77fea7268e03dc826175d7512838a",
+      "bytes": 21954,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/original_seed_static_bias_check/REVIEW.md"
+    }
+  ],
+  "inherited": [
+    {
+      "path": "docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "71c65d72570a32365ded6dacfc78308ac8429d9e8003a3731af88b5600eb45ff"
+    },
+    {
+      "path": "docs/HOPPING_CONTROLLED_FINITE_OUTPUT_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "79c4b2867e6ce4a2e8039ce04390c4a8cca6c8e83819c6ad2561dbadafde5126"
+    }
+  ],
+  "note_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/original_seed_static_bias_publication/NOTE.md",
+      "destination": "docs/ORIGINAL_SEED_STATIC_BIAS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "fc7d8466aad72a74f8566111ea22947b497890bc72c1e814a1c401a9fcef2561"
+    }
+  ],
+  "provenance": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/original_seed_static_bias_publication/AUTHOR_NOTE.md",
+      "destination": "AUTHOR_NOTE.md",
+      "sha256": "57a9d7f167d3283a59d459aed133ccb37e9d42483eabf1369ddaae80e0852008"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/original_seed_static_bias_publication/INTEGRATION_RECORD.md",
+      "destination": "INTEGRATION_RECORD.md",
+      "sha256": "76757d183a3e2c4d721bf2d16e2cf3bbac7b536971351bdee8d71a41c2dfae29"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/original_seed_static_bias_publication/PUBLICATION_CHECK.md",
+      "destination": "PUBLICATION_CHECK.md",
+      "sha256": "e7eb8aa2e1ee944818c4daa270904e33a196d907c8a7d2c5c1085ca5a6ebc0a8"
+    }
+  ],
+  "limits": [
+    "Exact original nominal positive inventory, uniform head bias and occupation basis supplied.",
+    "Readiness criterion is not cooling, preservation of a prescribed logical input, or one-head delivery.",
+    "Exact one-head theorem transfer only; correlated seed imperfections require full-state accounting.",
+    "No native supplier, autonomous release/capture/reset or permanent halt.",
+    "Source-exposed same-model selective analytical check, not physical validation or retained audit."
+  ]
+}

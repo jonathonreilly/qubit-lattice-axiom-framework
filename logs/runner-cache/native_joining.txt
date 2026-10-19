@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/native_joining.py
+runner_sha256: 9b61b0749bdf39edcc2598c8599d22e0776130295487c92255447ffc715b179b
+input_fingerprint_sha256: 4af0e454a66b5814090e0bb3e239eaa0e1d21909d75ed3f2e6ce5394ed648fc9
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_joining-ilcvy9bb
+[PASS] P9763:native_joining:C001
+[PASS] P9763:native_joining:C002
+[PASS] P9763:native_joining:C003
+[PASS] P9763:native_joining:C004
+{"status": "bounded-support", "pair_coefficients": [{"g": "1/3", "t10": "3/512"}, {"g": "1", "t10": "1/512"}, {"g": "2", "t10": "1/1024"}], "pattern_count": 512, "min_pattern_interface_cost_over_g": 8, "characters": 512, "neutral_multiplicity": 1, "scope": "Exact path and representation controls, not240-spin diagonalization or observational test"}
+Assertion evaluations: 517 ; PASS counts distinct primary assertion groups; helper assertions are additional uncounted checks.
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_joining-ilcvy9bb/outputs/native_joining/result.json sha256=49c0c896c35aa333e23421498d2857dfc614c43066a034558b9acc114e7c078f
+{"characters": 512, "min_pattern_interface_cost_over_g": 8, "neutral_multiplicity": 1, "pair_coefficients": [{"g": "1/3", "t10": "3/512"}, {"g": "1", "t10": "1/512"}, {"g": "2", "t10": "1/1024"}], "pattern_count": 512, "scope": "Exact path and representation controls, not240-spin diagonalization or observational test", "status": "bounded-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion groups, not loop iterations; helper assertions fail closed but are additional uncounted checks.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; no microscopic pole, universal force or empirical identification is established.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_joining-ilcvy9bb elapsed_seconds= 0.08114275010302663
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

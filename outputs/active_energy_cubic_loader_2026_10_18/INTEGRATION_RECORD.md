@@ -1,0 +1,7 @@
+> Historical exposition/integration record. Mathematical arguments remain inspectable; historical status and execution assertions are not fresh evidence. Exact original recovery: `archive/product_continuation_four_review_2026_10_18/MANIFEST.json`.
+
+# Integration record
+
+Author manuscript 7c65ac75dcf0cbba4d2dad2b42d36debc04d7a13b8b22211179f39cf4f03b852, canonical 8023deeb062288b75065576d89f726d528e077e7b10fac90333b33c61fbff110. ROOT fully read the source/check arguments, 742-line manuscript snapshot and complete final clarification diff. Canonical edits only clarify publication provenance and link the controlling energy-accounting disposition. Base45f3a59e13ae73edf18d238a0328fc66bc1f5191 (PR9742), mathematical parents9739/9737. This coherent milestone integrates actual active energy, full cubic gap, exchange-range elimination, late suffix and sharpened head policy; it imports no aged-target, weighted-bond or detuning variant. Frozen source errors/author-time statuses remain visible with later review qualifications. No scientific execution or retained audit. No editable prompts changed.
+
+Canonical equation7 removes a trailing LaTeX spacing token at line88; the frozen AUTHOR_NOTE keeps its exact bytes and reported trailing whitespace. This is a formatting-only difference, with no changed bound or phase.

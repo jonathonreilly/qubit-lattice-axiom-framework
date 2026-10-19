@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "manifest_sha256": "d94fcc7ab71f4e7800417612e3f2e58106a866b652f91165847122cd3945fb94",
+  "files": 16,
+  "provenance": 6,
+  "links": 21,
+  "nodes": 7276,
+  "edges": 16271,
+  "new_nodes": {
+    "real_two_body_gap_mediation_bounded_theorem_note_2026-10-18": {
+      "path": "docs/REAL_TWO_BODY_GAP_MEDIATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "deps": [
+        "literal_direct_generator_bounded_theorem_note_2026-10-18"
+      ]
+    }
+  },
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical source identity, provenance, links and topology only; no scientific execution or retained audit. New note dependencies require ROOT inspection."
+}

@@ -1,0 +1,106 @@
+===== runner cache v1 =====
+runner: scripts/native_ground_window.py
+runner_sha256: de6780e2baf14f51cf70f33efd4e6f6f9e52b3899567ee7d538b64cfa2045de7
+input_fingerprint_sha256: 4af0e454a66b5814090e0bb3e239eaa0e1d21909d75ed3f2e6ce5394ed648fc9
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_ground_window-qvk8b48w
+[PASS] P9758:native_ground_window:C001
+[PASS] P9758:native_ground_window:C002
+[PASS] P9758:native_ground_window:C003
+[PASS] P9758:native_ground_window:C004
+{
+  "status": "PASS",
+  "plaquette_manifold": {
+    "transverse_shape": [
+      4,
+      4
+    ],
+    "configurations": 65536,
+    "ground_patterns": 128,
+    "predicted_ground_patterns": 128,
+    "minimum_nonzero_bad_plaquettes": 4,
+    "rectangle_checks": 589824
+  },
+  "native_local_response": {
+    "physical_shape": [
+      3,
+      3,
+      9
+    ],
+    "physical_qubits": 81,
+    "ground_pattern_count": 32,
+    "rows": [
+      {
+        "commutator_order": 0,
+        "pauli_terms": 1,
+        "ground_restriction_scalar_error": 0.0,
+        "scalar": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "commutator_order": 1,
+        "pauli_terms": 8,
+        "ground_restriction_scalar_error": 0.0,
+        "scalar": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "commutator_order": 2,
+        "pauli_terms": 69,
+        "ground_restriction_scalar_error": 0.0,
+        "scalar": [
+          32.0,
+          0.0
+        ]
+      },
+      {
+        "commutator_order": 3,
+        "pauli_terms": 568,
+        "ground_restriction_scalar_error": 0.0,
+        "scalar": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "commutator_order": 4,
+        "pauli_terms": 4825,
+        "ground_restriction_scalar_error": 0.0,
+        "scalar": [
+          3328.0,
+          0.0
+        ]
+      }
+    ],
+    "scope": "Exact low-order Pauli controls of symmetry/local support, not an order40 computation or a finite-time theorem by enumeration."
+  },
+  "error_exponents": {
+    "remainder_global": 29,
+    "dynamics": 13,
+    "ground_state_replacement": 17,
+    "source_tail": 29,
+    "high_sector_filter": 8
+  },
+  "scope": "Finite combinatorial and native Pauli controls supplement the analytical ground-window theorem; no empirical test or numerical weak-coupling threshold."
+}
+Assertion evaluations: 45 ; PASS counts distinct primary assertion groups; helper assertions are additional uncounted checks.
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_ground_window-qvk8b48w/outputs/native_ground_window/result.json sha256=9818db01ddbcd9bcf94ccaeeef610a7fc9830eb6625f49807443280c631059fe
+{"error_exponents": {"dynamics": 13, "ground_state_replacement": 17, "high_sector_filter": 8, "remainder_global": 29, "source_tail": 29}, "native_local_response": {"ground_pattern_count": 32, "physical_qubits": 81, "physical_shape": [3, 3, 9], "rows": [{"commutator_order": 0, "ground_restriction_scalar_error": 0.0, "pauli_terms": 1, "scalar": [1.0, 0.0]}, {"commutator_order": 1, "ground_restriction_scalar_error": 0.0, "pauli_terms": 8, "scalar": [0.0, 0.0]}, {"commutator_order": 2, "ground_restriction_scalar_error": 0.0, "pauli_terms": 69, "scalar": [32.0, 0.0]}, {"commutator_order": 3, "ground_restriction_scalar_error": 0.0, "pauli_terms": 568, "scalar": [0.0, 0.0]}, {"commutator_order": 4, "ground_restriction_scalar_error": 0.0, "pauli_terms": 4825, "scalar": [3328.0, 0.0]}], "scope": "Exact low-order Pauli controls of symmetry/local support, not an order40 computation or a finite-time theorem by enumeration."}, "plaquette_manifold": {"configurations": 65536, "ground_patterns": 128, "minimum_nonzero_bad_plaquettes": 4, "predicted_ground_patterns": 128, "rectangle_checks": 589824, "transverse_shape": [4, 4]}, "scope": "Finite combinatorial and native Pauli controls supplement the analytical ground-window theorem; no empirical test or numerical weak-coupling threshold.", "status": "PASS"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion groups, not loop iterations; helper assertions fail closed but are additional uncounted checks.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; no microscopic pole, universal force or empirical identification is established.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_ground_window-qvk8b48w elapsed_seconds= 0.12637870805338025
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

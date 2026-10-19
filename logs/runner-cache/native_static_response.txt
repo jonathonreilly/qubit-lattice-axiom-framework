@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/native_static_response.py
+runner_sha256: 4a83dfdf41a10ec06b3a1463cb919ce50c517c566c543e74c3f53f672a24b896
+input_fingerprint_sha256: 4af0e454a66b5814090e0bb3e239eaa0e1d21909d75ed3f2e6ce5394ed648fc9
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_static_response-udv5pofw
+[PASS] P9759:native_static_response:C001
+[PASS] P9759:native_static_response:C002
+[PASS] P9759:native_static_response:C003
+[PASS] P9759:native_static_response:C004
+[PASS] P9759:native_static_response:C005
+{"status": "bounded-support", "representation": [{"L": 2, "characters": 8, "each_rank": 1}, {"L": 4, "characters": 128, "each_rank": 1}, {"L": 6, "characters": 2048, "each_rank": 1}], "max_fourier_error": 3.6126657221302594e-13, "cross_spectral_bound_max_ratio": 0.08593517344359715, "scope": "Finite representation and filter controls only; no numerical microscopic gap or observed-force test"}
+Assertion evaluations: 15204 ; PASS counts distinct primary assertion groups; helper assertions are additional uncounted checks.
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_static_response-udv5pofw/outputs/native_static_response/result.json sha256=b467b7a35803bf681df159954a4ff1eb824dce8df38dc1066af7e0dac80bd1c0
+{"cross_spectral_bound_max_ratio": 0.08593517344359715, "max_fourier_error": 3.6126657221302594e-13, "representation": [{"L": 2, "characters": 8, "each_rank": 1}, {"L": 4, "characters": 128, "each_rank": 1}, {"L": 6, "characters": 2048, "each_rank": 1}], "scope": "Finite representation and filter controls only; no numerical microscopic gap or observed-force test", "status": "bounded-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion groups, not loop iterations; helper assertions fail closed but are additional uncounted checks.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; no microscopic pole, universal force or empirical identification is established.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_static_response-udv5pofw elapsed_seconds= 0.35977237531915307
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

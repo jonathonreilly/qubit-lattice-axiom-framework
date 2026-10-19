@@ -1,0 +1,135 @@
+{
+  "schema_version": 2,
+  "base_revision": "cbeaccf4b0e4c87bbcb4214ee4daaaf9ea0ae75a",
+  "base_pr": 9765,
+  "packet_destination": "outputs/real_mediated_vacancy_network_2026_10_18",
+  "source_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934",
+  "files": [
+    {
+      "path": "counterterm_free_gap_mediation/VACANCY_HOPPING_PROBE.md",
+      "destination": "source_checks/counterterm_free_gap_mediation/VACANCY_HOPPING_PROBE.md",
+      "sha256": "7ce327a279b7c89e6ee48dd94555a78bdb357dd183b4333618f958e4d387da00",
+      "bytes": 9334,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation/VACANCY_HOPPING_PROBE.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation_check/VACANCY_HOPPING_REVIEW.md",
+      "destination": "source_checks/counterterm_free_gap_mediation_check/VACANCY_HOPPING_REVIEW.md",
+      "sha256": "f1e754ed52ccb2ea27c3831659467a3f94f51d8ce75b26c8b7ce882a4b7e9df3",
+      "bytes": 10856,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation_check/VACANCY_HOPPING_REVIEW.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation/NETWORK_VACANCY_INTERFACE.md",
+      "destination": "source_checks/counterterm_free_gap_mediation/NETWORK_VACANCY_INTERFACE.md",
+      "sha256": "de29d04e85e5479ef4c35969f079bd5727f846c59ba6225f79fc81405c7cf86e",
+      "bytes": 9142,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation/NETWORK_VACANCY_INTERFACE.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation_check/NETWORK_VACANCY_REVIEW.md",
+      "destination": "source_checks/counterterm_free_gap_mediation_check/NETWORK_VACANCY_REVIEW.md",
+      "sha256": "88169175decc90a4f706ea3a1168ae54bf763e5a0cb5d3cb516b749fd65b9066",
+      "bytes": 9450,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation_check/NETWORK_VACANCY_REVIEW.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation/LOCAL_BACKGROUND_SHARPENING.md",
+      "destination": "source_checks/counterterm_free_gap_mediation/LOCAL_BACKGROUND_SHARPENING.md",
+      "sha256": "e18c49d6a664a382e26b7b658da4ed3bc593738ccd1806772254181c5d0d6f67",
+      "bytes": 8466,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation/LOCAL_BACKGROUND_SHARPENING.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation_check/LOCAL_BACKGROUND_REVIEW.md",
+      "destination": "source_checks/counterterm_free_gap_mediation_check/LOCAL_BACKGROUND_REVIEW.md",
+      "sha256": "ab6058efd1fa019ff4d04824b560e36abb1f0d1637d4966f1951c9f29ee03310",
+      "bytes": 10873,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation_check/LOCAL_BACKGROUND_REVIEW.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation/LADDER_SCATTERING_REDUCTION.md",
+      "destination": "source_checks/counterterm_free_gap_mediation/LADDER_SCATTERING_REDUCTION.md",
+      "sha256": "4f22fdb84d7636a6caad536323e5f02f971fba04a22ae9e8292e3c4e234929cc",
+      "bytes": 7981,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation/LADDER_SCATTERING_REDUCTION.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation_check/LADDER_SCATTERING_REVIEW.md",
+      "destination": "source_checks/counterterm_free_gap_mediation_check/LADDER_SCATTERING_REVIEW.md",
+      "sha256": "e2aaddf2f55f39fa82aebea45c22dbade0fbc3e245b489f7ea8d9b1e06bc6c01",
+      "bytes": 11132,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation_check/LADDER_SCATTERING_REVIEW.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation/EXACT_ALL_TIME.md",
+      "destination": "source_checks/counterterm_free_gap_mediation/EXACT_ALL_TIME.md",
+      "sha256": "37e2cf2c776d6425c93b113b92bc114b8e478db779d1dc6f0d28cc33a925ca34",
+      "bytes": 11261,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation/EXACT_ALL_TIME.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation_check/EXACT_ALL_TIME_REVIEW.md",
+      "destination": "source_checks/counterterm_free_gap_mediation_check/EXACT_ALL_TIME_REVIEW.md",
+      "sha256": "80c09db471dea4542ccfe9b236b91ccd2cd285502ce4b091d59cbcfbfa7e1e70",
+      "bytes": 13928,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation_check/EXACT_ALL_TIME_REVIEW.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation/BANDWIDTH.md",
+      "destination": "source_checks/counterterm_free_gap_mediation/BANDWIDTH.md",
+      "sha256": "1193e84952ce9cd8d80fdc79b8723f474b9319b0d1c70d65ea31e56f66806e90",
+      "bytes": 9106,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation/BANDWIDTH.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation_check/BANDWIDTH_REVIEW.md",
+      "destination": "source_checks/counterterm_free_gap_mediation_check/BANDWIDTH_REVIEW.md",
+      "sha256": "fa55ae7d878b10c4810393d602ecbb860bc872046d5c31a8e2b15a507d1d4e6c",
+      "bytes": 11038,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation_check/BANDWIDTH_REVIEW.md"
+    }
+  ],
+  "provenance": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_mediated_vacancy_network_publication/AUTHOR_NOTE.md",
+      "destination": "AUTHOR_NOTE.md",
+      "sha256": "1481b3888eba0dc6d6bb72fa7cc81b046aecb2c372b176b8ae5366fb2e4dc9a9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_mediated_vacancy_network_publication/INTEGRATION_RECORD.md",
+      "destination": "INTEGRATION_RECORD.md",
+      "sha256": "c5df86d6d13d09cc5e8120257aec60df9fd22b9cebbbb3012806d28a323bd168"
+    }
+  ],
+  "inherited": [
+    {
+      "path": "docs/REAL_TWO_BODY_GAP_MEDIATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "a4c9869efd9728e78e33ec164583fcdc7a310b113a5fdc254de0ef5564440014",
+      "scope": "Exact mediator \u00a710 only; clock-return gate not imported"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/counterterm_free_gap_mediation/EXACT_ALL_TIME.md",
+      "sha256": "37e2cf2c776d6425c93b113b92bc114b8e478db779d1dc6f0d28cc33a925ca34",
+      "scope": "Pinned exact mediator proof/check"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/counterterm_free_gap_mediation_check/EXACT_ALL_TIME_REVIEW.md",
+      "sha256": "80c09db471dea4542ccfe9b236b91ccd2cd285502ce4b091d59cbcfbfa7e1e70",
+      "scope": "Pinned exact mediator proof/check"
+    }
+  ],
+  "note_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_mediated_vacancy_network_publication/FINAL_NOTE.md",
+      "destination": "docs/REAL_MEDIATED_VACANCY_NETWORK_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "6710e073b3921ab8f9fc0b494530d2e5167906846e2a921026005684686ea9e8"
+    }
+  ],
+  "limits": [
+    "Complete finite-network comparison, all outputs retained; actual extra-head leakage paid.",
+    "Exact calibration, positive sparse hardware and initial global one-head support supplied.",
+    "Distinct source-exposed same-model checks; shared ancestry, not retained audit.",
+    "No endpoint launch, common released packet, bounded return or reset proof."
+  ]
+}

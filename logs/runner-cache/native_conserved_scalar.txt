@@ -1,0 +1,597 @@
+===== runner cache v1 =====
+runner: scripts/native_conserved_scalar.py
+runner_sha256: ac1019eeb792316dc5f447adb4204d324d9d1ee18b2124677fa30c5068e5b9a0
+input_fingerprint_sha256: 4af0e454a66b5814090e0bb3e239eaa0e1d21909d75ed3f2e6ce5394ed648fc9
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.35
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_conserved_scalar-6y5_mryt
+[PASS] P9752:native_conserved_scalar:C001
+[PASS] P9752:native_conserved_scalar:C002
+{
+  "status": "PASS",
+  "native": {
+    "status": "PASS",
+    "moments": [
+      {
+        "L": 5,
+        "J": [
+          1,
+          1,
+          1
+        ],
+        "k": [
+          1,
+          0,
+          0
+        ],
+        "m0": 3.000000000000002,
+        "m2": 12.222912360003482,
+        "predicted_m2": 12.222912360003363,
+        "distinct_current_strings": 1000,
+        "Qq_overlap": -27.92569587999901,
+        "predicted_overlap": -27.92569587999886,
+        "Qq_norm": 4295.975155040022
+      },
+      {
+        "L": 5,
+        "J": [
+          0.7,
+          1.2,
+          1.5
+        ],
+        "k": [
+          1,
+          2,
+          1
+        ],
+        "m0": 4.1799999999999775,
+        "m2": 106.883340219225,
+        "predicted_m2": 106.88334021922591,
+        "distinct_current_strings": 1250,
+        "Qq_overlap": -13.075564540855103,
+        "predicted_overlap": -13.075564540855112,
+        "Qq_norm": 3496.83313426631
+      },
+      {
+        "L": 6,
+        "J": [
+          1,
+          1,
+          1
+        ],
+        "k": [
+          1,
+          1,
+          0
+        ],
+        "m0": 3.000000000000012,
+        "m2": 16.57437415779608,
+        "predicted_m2": 16.57437415779592,
+        "distinct_current_strings": 2160,
+        "Qq_overlap": -26.4752086140676,
+        "predicted_overlap": -26.475208614067924,
+        "Qq_norm": 3929.10751010584
+      }
+    ],
+    "Q_terms": 4875,
+    "Q_variance_per_site": 5376.0,
+    "energy_projection": -32.0,
+    "conserved_weight_per_site": 3072.0,
+    "conserved_fraction": 0.5714285714285714,
+    "C_H2_per_site": 2.0,
+    "scope": "Exact Pauli traces in supplied infinite-temperature state; no retarded susceptibility, ground excitation or empirical identification"
+  },
+  "qnorm": {
+    "coefficients": [
+      {
+        "twice_displacement": [
+          -2,
+          -2,
+          0
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          -2,
+          -1,
+          -1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          -2,
+          -1,
+          1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          -2,
+          0,
+          -2
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          -2,
+          0,
+          0
+        ],
+        "coefficient": 256
+      },
+      {
+        "twice_displacement": [
+          -2,
+          0,
+          2
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          -2,
+          1,
+          -1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          -2,
+          1,
+          1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          -2,
+          2,
+          0
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          -1,
+          -2,
+          -1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          -1,
+          -2,
+          1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          -1,
+          -1,
+          -2
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          -1,
+          -1,
+          0
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          -1,
+          -1,
+          2
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          -1,
+          0,
+          -1
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          -1,
+          0,
+          1
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          -1,
+          1,
+          -2
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          -1,
+          1,
+          0
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          -1,
+          1,
+          2
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          -1,
+          2,
+          -1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          -1,
+          2,
+          1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          0,
+          -2,
+          -2
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          0,
+          -2,
+          0
+        ],
+        "coefficient": 256
+      },
+      {
+        "twice_displacement": [
+          0,
+          -2,
+          2
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          0,
+          -1,
+          -1
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          0,
+          -1,
+          1
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          0,
+          0,
+          -2
+        ],
+        "coefficient": 256
+      },
+      {
+        "twice_displacement": [
+          0,
+          0,
+          0
+        ],
+        "coefficient": 1536
+      },
+      {
+        "twice_displacement": [
+          0,
+          0,
+          2
+        ],
+        "coefficient": 256
+      },
+      {
+        "twice_displacement": [
+          0,
+          1,
+          -1
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          0,
+          1,
+          1
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          0,
+          2,
+          -2
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          0,
+          2,
+          0
+        ],
+        "coefficient": 256
+      },
+      {
+        "twice_displacement": [
+          0,
+          2,
+          2
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          1,
+          -2,
+          -1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          1,
+          -2,
+          1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          1,
+          -1,
+          -2
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          1,
+          -1,
+          0
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          1,
+          -1,
+          2
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          1,
+          0,
+          -1
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          1,
+          0,
+          1
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          1,
+          1,
+          -2
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          1,
+          1,
+          0
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          1,
+          1,
+          2
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          1,
+          2,
+          -1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          1,
+          2,
+          1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          2,
+          -2,
+          0
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          2,
+          -1,
+          -1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          2,
+          -1,
+          1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          2,
+          0,
+          -2
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          2,
+          0,
+          0
+        ],
+        "coefficient": 256
+      },
+      {
+        "twice_displacement": [
+          2,
+          0,
+          2
+        ],
+        "coefficient": 64
+      },
+      {
+        "twice_displacement": [
+          2,
+          1,
+          -1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          2,
+          1,
+          1
+        ],
+        "coefficient": 32
+      },
+      {
+        "twice_displacement": [
+          2,
+          2,
+          0
+        ],
+        "coefficient": 64
+      }
+    ],
+    "at_zero": 5376,
+    "scope": "Exact Pauli contraction polynomial at isotropic J=1, multiplied by J^6 generally"
+  },
+  "thermal_control": {
+    "status": "PASS",
+    "rows": [
+      {
+        "beta": 0.02,
+        "C_mean": 0.0013511263041516147,
+        "mean_over_beta2": 3.3778157603790366,
+        "covariance": -0.13502532053584382,
+        "coupling_over_beta": -0.8213365802361937,
+        "predicted_mean_coefficient": 3.3800000000000003,
+        "predicted_coupling_coefficient": -0.8213851761846902
+      },
+      {
+        "beta": 0.01,
+        "C_mean": 0.00033794536600758457,
+        "mean_over_beta2": 3.3794536600758454,
+        "covariance": -0.06757814827077106,
+        "coupling_over_beta": -0.8213730365809638,
+        "predicted_mean_coefficient": 3.3800000000000003,
+        "predicted_coupling_coefficient": -0.8213851761846902
+      },
+      {
+        "beta": 0.005,
+        "C_mean": 8.449658493780987e-05,
+        "mean_over_beta2": 3.379863397512395,
+        "covariance": -0.033797268008494225,
+        "coupling_over_beta": -0.8213821418707068,
+        "predicted_mean_coefficient": 3.3800000000000003,
+        "predicted_coupling_coefficient": -0.8213851761846902
+      }
+    ],
+    "scope": "Six physical sites, open2x1x3, finite Gibbs Taylor control; no thermodynamic remainder or state derivation"
+  },
+  "low_window": [
+    {
+      "q": 0.1,
+      "window": 1.0,
+      "rigorous_fraction_lower_bound": 0.351123222390441
+    },
+    {
+      "q": 0.01,
+      "window": 0.1,
+      "rigorous_fraction_lower_bound": 0.351209013124088
+    },
+    {
+      "q": 0.001,
+      "window": 0.01,
+      "rigorous_fraction_lower_bound": 0.35120986953893635
+    }
+  ],
+  "scope": "Exact fluctuation statements in supplied beta0 state; highT finite-volume Taylor control only. No nonzero beta0 retarded response, vacuum particle, physical detector or cosmological identification."
+}
+Assertion evaluations: 4 ; PASS counts distinct primary assertion groups; helper assertions are additional uncounted checks.
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_conserved_scalar-6y5_mryt/outputs/native_conserved_scalar/result.json sha256=ebbc4a3e0d92071cee12b609a8ed8ef4127f4c807606de30f5049cd9c2cf88ba
+{"low_window": [{"q": 0.1, "rigorous_fraction_lower_bound": 0.351123222390441, "window": 1.0}, {"q": 0.01, "rigorous_fraction_lower_bound": 0.351209013124088, "window": 0.1}, {"q": 0.001, "rigorous_fraction_lower_bound": 0.35120986953893635, "window": 0.01}], "native": {"C_H2_per_site": 2.0, "Q_terms": 4875, "Q_variance_per_site": 5376.0, "conserved_fraction": 0.5714285714285714, "conserved_weight_per_site": 3072.0, "energy_projection": -32.0, "moments": [{"J": [1, 1, 1], "L": 5, "Qq_norm": 4295.975155040022, "Qq_overlap": -27.92569587999901, "distinct_current_strings": 1000, "k": [1, 0, 0], "m0": 3.000000000000002, "m2": 12.222912360003482, "predicted_m2": 12.222912360003363, "predicted_overlap": -27.92569587999886}, {"J": [0.7, 1.2, 1.5], "L": 5, "Qq_norm": 3496.83313426631, "Qq_overlap": -13.075564540855103, "distinct_current_strings": 1250, "k": [1, 2, 1], "m0": 4.1799999999999775, "m2": 106.883340219225, "predicted_m2": 106.88334021922591, "predicted_overlap": -13.075564540855112}, {"J": [1, 1, 1], "L": 6, "Qq_norm": 3929.10751010584, "Qq_overlap": -26.4752086140676, "distinct_current_strings": 2160, "k": [1, 1, 0], "m0": 3.000000000000012, "m2": 16.57437415779608, "predicted_m2": 16.57437415779592, "predicted_overlap": -26.475208614067924}], "scope": "Exact Pauli traces in supplied infinite-temperature state; no retarded susceptibility, ground excitation or empirical identification", "status": "PASS"}, "qnorm": {"at_zero": 5376, "coefficients": [{"coefficient": 64, "twice_displacement": [-2, -2, 0]}, {"coefficient": 32, "twice_displacement": [-2, -1, -1]}, {"coefficient": 32, "twice_displacement": [-2, -1, 1]}, {"coefficient": 64, "twice_displacement": [-2, 0, -2]}, {"coefficient": 256, "twice_displacement": [-2, 0, 0]}, {"coefficient": 64, "twice_displacement": [-2, 0, 2]}, {"coefficient": 32, "twice_displacement": [-2, 1, -1]}, {"coefficient": 32, "twice_displacement": [-2, 1, 1]}, {"coefficient": 64, "twice_displacement": [-2, 2, 0]}, {"coefficient": 32, "twice_displacement": [-1, -2, -1]}, {"coefficient": 32, "twice_displacement": [-1, -2, 1]}, {"coefficient": 32, "twice_displacement": [-1, -1, -2]}, {"coefficient": 64, "twice_displacement": [-1, -1, 0]}, {"coefficient": 32, "twice_displacement": [-1, -1, 2]}, {"coefficient": 64, "twice_displacement": [-1, 0, -1]}, {"coefficient": 64, "twice_displacement": [-1, 0, 1]}, {"coefficient": 32, "twice_displacement": [-1, 1, -2]}, {"coefficient": 64, "twice_displacement": [-1, 1, 0]}, {"coefficient": 32, "twice_displacement": [-1, 1, 2]}, {"coefficient": 32, "twice_displacement": [-1, 2, -1]}, {"coefficient": 32, "twice_displacement": [-1, 2, 1]}, {"coefficient": 64, "twice_displacement": [0, -2, -2]}, {"coefficient": 256, "twice_displacement": [0, -2, 0]}, {"coefficient": 64, "twice_displacement": [0, -2, 2]}, {"coefficient": 64, "twice_displacement": [0, -1, -1]}, {"coefficient": 64, "twice_displacement": [0, -1, 1]}, {"coefficient": 256, "twice_displacement": [0, 0, -2]}, {"coefficient": 1536, "twice_displacement": [0, 0, 0]}, {"coefficient": 256, "twice_displacement": [0, 0, 2]}, {"coefficient": 64, "twice_displacement": [0, 1, -1]}, {"coefficient": 64, "twice_displacement": [0, 1, 1]}, {"coefficient": 64, "twice_displacement": [0, 2, -2]}, {"coefficient": 256, "twice_displacement": [0, 2, 0]}, {"coefficient": 64, "twice_displacement": [0, 2, 2]}, {"coefficient": 32, "twice_displacement": [1, -2, -1]}, {"coefficient": 32, "twice_displacement": [1, -2, 1]}, {"coefficient": 32, "twice_displacement": [1, -1, -2]}, {"coefficient": 64, "twice_displacement": [1, -1, 0]}, {"coefficient": 32, "twice_displacement": [1, -1, 2]}, {"coefficient": 64, "twice_displacement": [1, 0, -1]}, {"coefficient": 64, "twice_displacement": [1, 0, 1]}, {"coefficient": 32, "twice_displacement": [1, 1, -2]}, {"coefficient": 64, "twice_displacement": [1, 1, 0]}, {"coefficient": 32, "twice_displacement": [1, 1, 2]}, {"coefficient": 32, "twice_displacement": [1, 2, -1]}, {"coefficient": 32, "twice_displacement": [1, 2, 1]}, {"coefficient": 64, "twice_displacement": [2, -2, 0]}, {"coefficient": 32, "twice_displacement": [2, -1, -1]}, {"coefficient": 32, "twice_displacement": [2, -1, 1]}, {"coefficient": 64, "twice_displacement": [2, 0, -2]}, {"coefficient": 256, "twice_displacement": [2, 0, 0]}, {"coefficient": 64, "twice_displacement": [2, 0, 2]}, {"coefficient": 32, "twice_displacement": [2, 1, -1]}, {"coefficient": 32, "twice_displacement": [2, 1, 1]}, {"coefficient": 64, "twice_displacement": [2, 2, 0]}], "scope": "Exact Pauli contraction polynomial at isotropic J=1, multiplied by J^6 generally"}, "scope": "Exact fluctuation statements in supplied beta0 state; highT finite-volume Taylor control only. No nonzero beta0 retarded response, vacuum particle, physical detector or cosmological identification.", "status": "PASS", "thermal_control": {"rows": [{"C_mean": 0.0013511263041516147, "beta": 0.02, "coupling_over_beta": -0.8213365802361937, "covariance": -0.13502532053584382, "mean_over_beta2": 3.3778157603790366, "predicted_coupling_coefficient": -0.8213851761846902, "predicted_mean_coefficient": 3.3800000000000003}, {"C_mean": 0.00033794536600758457, "beta": 0.01, "coupling_over_beta": -0.8213730365809638, "covariance": -0.06757814827077106, "mean_over_beta2": 3.3794536600758454, "predicted_coupling_coefficient": -0.8213851761846902, "predicted_mean_coefficient": 3.3800000000000003}, {"C_mean": 8.449658493780987e-05, "beta": 0.005, "coupling_over_beta": -0.8213821418707068, "covariance": -0.033797268008494225, "mean_over_beta2": 3.379863397512395, "predicted_coupling_coefficient": -0.8213851761846902, "predicted_mean_coefficient": 3.3800000000000003}], "scope": "Six physical sites, open2x1x3, finite Gibbs Taylor control; no thermodynamic remainder or state derivation", "status": "PASS"}}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion groups, not loop iterations; helper assertions fail closed but are additional uncounted checks.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; no microscopic pole, universal force or empirical identification is established.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_conserved_scalar-6y5_mryt elapsed_seconds= 1.3046847502700984
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

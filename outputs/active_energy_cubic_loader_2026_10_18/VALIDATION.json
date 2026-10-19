@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "manifest_sha256": "3e761b4431c60f80b4c4f05069ba37fcd88434844edf61a0a6beff3f9cff33fd",
+  "files": 11,
+  "provenance": 3,
+  "links": 23,
+  "nodes": 7269,
+  "edges": 16263,
+  "new_nodes": {
+    "active_energy_cubic_loader_bounded_theorem_note_2026-10-18": {
+      "path": "docs/ACTIVE_ENERGY_CUBIC_LOADER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "deps": [
+        "local_reference_static_swap_bounded_theorem_note_2026-10-18",
+        "exact_two_body_engineered_loader_bounded_theorem_note_2026-10-18"
+      ]
+    }
+  },
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical source identity, provenance, links and topology only; no scientific execution or retained audit. New note dependencies require ROOT inspection."
+}

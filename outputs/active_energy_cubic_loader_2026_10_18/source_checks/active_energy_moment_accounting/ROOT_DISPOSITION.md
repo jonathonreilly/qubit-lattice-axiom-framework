@@ -1,0 +1,5 @@
+> Source-use boundary (2026-10-18 packaging): The complete mathematical body below remains inspectable supporting material at its explicit hypotheses. Historical author/check status, acceptance and execution narratives are provenance only; they confer no present verdict. Original byte-exact recovery is in `archive/product_continuation_four_review_2026_10_18/MANIFEST.json`. References to earlier hashes identify original versions; the live input closure binds current portable sources.
+
+# ROOT disposition
+
+The frozen proposal4bd84f3b86e74792724649bf355152d9eeb58f45d595a5f25b513c9b7fb86627 and reviewd3e54559249cf619a9252e748f4f3c4cbcc0f7c5081e13870c4e2ba5674b8d5a were fully read. All exact moment and mean-balance formulas are accepted at their installed-H_E scope. The review controls the unconditional-reference sentence: exact equality with beta(t) is not guaranteed; it is excluded when p differs from q and delta<|p-q|/2. Time zero and special inputs are not excluded. Publication must use this qualified wording and preserve the frozen original and review. No general no-go or energy-return theorem follows.

@@ -1,0 +1,178 @@
+===== runner cache v1 =====
+runner: scripts/product_reference_attachment_controls_2026_10_18.py
+runner_sha256: f56fc337c45c5fe4d7aa944248a20572279c7e76bff63d9de1ca7d301acccb00
+input_fingerprint_sha256: 0533c622d11b916f142a493ab1cb117a05ca5195831015114918d9fcbc83b0b0
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+Finite source-derived controls; literal inputs are frozen source identities, not claims of dynamic execution of every proof.
+PASS reference full 256-dimensional symmetric kernel: kernel=9, min=-4.56467061651e-15
+PASS reference weighted full-space gap: gap=1.41715489093; bound=0.0525
+PASS reference weighted Dicke kernel: Frobenius/Euclidean residual=9.58599761549e-16; tolerance=2e-10
+PASS reference inverse-range finite cube: uniform=0.120659722222, weighted=0.264716737107
+PASS reference weighted lowering intertwiner all Dicke sectors: Frobenius/Euclidean residual=4.3549506458e-16; tolerance=2e-10
+PASS reference lowering Gram all Dicke sectors: Frobenius/Euclidean residual=6.35960131078e-17; tolerance=2e-10
+PASS reference centered offset symmetric compression: Frobenius/Euclidean residual=4.6730560043e-18; tolerance=2e-10
+PASS reference centered occupation Gram: Frobenius/Euclidean residual=7.02643314453e-19; tolerance=2e-10
+PASS reference nominal energy conservation: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS reference unequal free energy is not conserved fixture: commutator Frobenius norm=0.98828829478
+PASS reference inverse-order prerequisite: min(B-A)=0.0394448724536
+PASS reference squared inverse-order counterexample: min(A^-2-B^-2)=-0.00178120342878
+PASS reference inverse-order finite control: min(A^-1-B^-1)=0.00794174948886
+PASS active exact SWAP phase: Frobenius/Euclidean residual=1.29936628563e-15; tolerance=2e-10
+PASS active effective norm: norm=2.25
+PASS active ordered free aging mutant: order error=0.366254737828
+PASS uncentered exact charge generator split: Frobenius/Euclidean residual=3.92523114671e-17; tolerance=2e-10
+PASS uncentered exact charge propagator split: Frobenius/Euclidean residual=2.97372287046e-16; tolerance=2e-10
+PASS head binomial signed cosine L=16 s=0.37: Frobenius/Euclidean residual=9.71557686718e-16; tolerance=1e-10
+PASS head binomial signed cosine L=16 s=1.4: Frobenius/Euclidean residual=1.59238115855e-15; tolerance=1e-10
+PASS head binomial signed cosine L=16 s=2.0: Frobenius/Euclidean residual=1.48605129345e-15; tolerance=1e-10
+PASS head exact endpoint distance L=16: Frobenius/Euclidean residual=6.0802057833e-16; tolerance=2e-10
+PASS head normalized moving profile L=16: Frobenius/Euclidean residual=4.4408920985e-16; tolerance=2e-10
+PASS head binomial signed cosine L=23 s=0.37: Frobenius/Euclidean residual=1.22979350368e-15; tolerance=1e-10
+PASS head binomial signed cosine L=23 s=1.4: Frobenius/Euclidean residual=1.15016670204e-15; tolerance=1e-10
+PASS head binomial signed cosine L=23 s=2.0: Frobenius/Euclidean residual=2.6522552181e-15; tolerance=1e-10
+PASS head exact endpoint distance L=23: Frobenius/Euclidean residual=1.09114106639e-15; tolerance=2e-10
+PASS head normalized moving profile L=23: Frobenius/Euclidean residual=8.881784197e-16; tolerance=2e-10
+PASS active finite policy eps=0.8: n=51, L=104857600, lambda=5.96046440648e-10, reference error=0.000278962044664
+PASS active finite policy eps=0.2: n=127, L=1677721600, lambda=3.72529029569e-11, reference error=2.75132511259e-05
+PASS active finite policy eps=0.03: n=448, L=74565404445, lambda=8.38190317134e-13, reference error=1.16268368159e-06
+PASS active actual second moment N=8: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS active target moment differs N=8: actual=10.407537; ideal occupation=0.81
+PASS active actual second moment N=27: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS active target moment differs N=27: actual=103.254704; ideal occupation=0.81
+PASS direct literal ready-space invariance: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS direct full-space XX commutator: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS direct supplied positive blocks: minimum=0
+PASS direct complete 64-dimensional error Gram offset=0.0: Frobenius/Euclidean residual=8.81005120812e-25; tolerance=5e-10
+PASS direct complete 64-dimensional error Gram offset=2.0: Frobenius/Euclidean residual=2.48615129709e-15; tolerance=5e-10
+PASS direct complete 64-dimensional error Gram offset=-2.0: Frobenius/Euclidean residual=3.362345022e-15; tolerance=5e-10
+PASS direct literal incident cap 13: source A=12.7290993268311, source B=11.9287718121993
+PASS compass complete four-site unequal j0=0.004: error=0.00885941571733; bound=0.015418361744
+PASS compass complete four-site unequal j0=0.007: error=0.0147868441509; bound=0.026982133052
+PASS compass literal 54-site inventory: edges by direction=[45, 36, 36]; old/E=8, E/E=8
+PASS compass actual environment counts: actual E-only=106; reference E-only=98
+PASS compass independent coefficient budget eps=0.8: complete upper bound=0.0340287830777
+PASS compass independent coefficient budget eps=0.1: complete upper bound=0.00422699607988
+PASS mediation calibrated square u=0.08 v=0.08: Frobenius/Euclidean residual=6.28106732282e-16; tolerance=2e-10
+PASS mediation exact full norm u=0.08 v=0.08 t=0.4: Frobenius/Euclidean residual=2.63677968348e-16; tolerance=2e-10
+PASS mediation exact full norm u=0.08 v=0.08 t=7.3: Frobenius/Euclidean residual=2.69229083472e-15; tolerance=2e-10
+PASS mediation unequal exact dressing u=0.08: Frobenius/Euclidean residual=1.17612833177e-15; tolerance=2e-10
+PASS mediation noncommuting background u=0.08: error=0.0441418041364; bound=0.166672676598
+PASS mediation calibrated square u=0.07 v=0.11: Frobenius/Euclidean residual=1.99458622438e-17; tolerance=2e-10
+PASS mediation exact full norm u=0.07 v=0.11 t=0.4: Frobenius/Euclidean residual=1.66533453694e-16; tolerance=2e-10
+PASS mediation exact full norm u=0.07 v=0.11 t=7.3: Frobenius/Euclidean residual=1.85962356625e-15; tolerance=2e-10
+PASS mediation unequal exact dressing u=0.07: Frobenius/Euclidean residual=1.26013351802e-15; tolerance=2e-10
+PASS mediation noncommuting background u=0.07: error=0.0503986366349; bound=0.187463194037
+PASS exact mediator full conserved sector: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS exact mediator full characteristic spectrum: Frobenius/Euclidean residual=8.58827658137e-15; tolerance=5e-12
+PASS exact mediator retained scalar decomposition: Frobenius/Euclidean residual=1.7763568394e-15; tolerance=2e-10
+PASS exact mediator path trace cube: Frobenius/Euclidean residual=3.06062141776e-15; tolerance=2e-10
+PASS exact mediator path determinant: Frobenius/Euclidean residual=1.7763568394e-15; tolerance=2e-10
+PASS exact mediator projector rank r=-1 center=-3: ranks=4,4
+PASS exact mediator projector rank r=-1 center=-1: ranks=4,4
+PASS exact mediator projector rank r=-1 center=1: ranks=4,4
+PASS exact mediator projector rank r=-1 center=3: ranks=4,4
+PASS exact mediator projector rank r=1 center=-3: ranks=4,4
+PASS exact mediator projector rank r=1 center=-1: ranks=4,4
+PASS exact mediator projector rank r=1 center=1: ranks=4,4
+PASS exact mediator projector rank r=1 center=3: ranks=4,4
+PASS exact mediator polar orthogonality: Frobenius/Euclidean residual=7.30287350565e-15; tolerance=2e-10
+PASS exact mediator complete polar intertwiner: Frobenius/Euclidean residual=3.66633923154e-14; tolerance=1e-11
+PASS exact mediator dressing distance: distance=0.00160292254001; bound=0.082
+PASS exact mediator finite all-time formula control t=0.7: error=0.00208906255238; bound=0.041
+PASS exact mediator finite all-time formula control t=123.0: error=0.00155869531801; bound=0.041
+PASS finite-order mediator full second-order generator: Frobenius/Euclidean residual=1.9860273226e-15; tolerance=2e-10
+PASS finite-order mediator first conjugation sign: Frobenius/Euclidean residual=2.51214793389e-15; tolerance=2e-10
+PASS clock-return interlacing positive weights: weights=[0.44169032078624093, 0.26144174103576345, 0.2968679381779956]
+PASS clock-return full block positivity: min=0.547192334471, norm=4.55236524563
+PASS clock-return complete three-dimensional return p=-1: Frobenius/Euclidean residual=4.55805146762e-15; tolerance=2e-10
+PASS clock-return second-cycle p=-1: Frobenius/Euclidean residual=9.02013914237e-15; tolerance=2e-10
+PASS clock-return complete three-dimensional return p=1: Frobenius/Euclidean residual=5.54314957478e-15; tolerance=2e-10
+PASS clock-return second-cycle p=1: Frobenius/Euclidean residual=1.1075590928e-14; tolerance=2e-10
+PASS exact mediator actual clock-background composition: error=0.00293019021409; bound=0.395442249088
+PASS vacancy exact even-sector dressing p=-1: Frobenius/Euclidean residual=3.5527381022e-15; tolerance=2e-10
+PASS vacancy full even error p=-1 s=0.12: Frobenius/Euclidean residual=1.11022302463e-16; tolerance=2e-10
+PASS vacancy full even error p=-1 s=1.7: Frobenius/Euclidean residual=8.60422844084e-16; tolerance=2e-10
+PASS vacancy exact even-sector dressing p=1: Frobenius/Euclidean residual=3.5527381022e-15; tolerance=2e-10
+PASS vacancy full even error p=1 s=0.12: Frobenius/Euclidean residual=1.11022302463e-16; tolerance=2e-10
+PASS vacancy full even error p=1 s=1.7: Frobenius/Euclidean residual=8.60422844084e-16; tolerance=2e-10
+PASS vacancy global one-head compensation: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS vacancy full compensation norm: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS vacancy actual pair creation remains: number commutator=2
+PASS vacancy remote full-space dressing commutator: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS vacancy compensation full-space dressing commutator: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS vacancy near and far need not commute: commutator=0.121763171772
+PASS ladder actual positive core inventory: min onsite=0.116116523517; six exchanges and six onsite blocks
+PASS ladder full-support background norm sum: Frobenius/Euclidean residual=1.7763568394e-15; tolerance=2e-10
+PASS ladder full two-port center p=-1: Frobenius/Euclidean residual=1.10722484358e-14; tolerance=2e-10
+PASS ladder literal internal Schur p=-1: Frobenius/Euclidean residual=7.80953319571e-15; tolerance=2e-10
+PASS ladder full center inverse p=-1: full inverse=16.1091093663
+PASS ladder full current unitarity p=-1 dk=-0.0001: Frobenius/Euclidean residual=1.15462297558e-15; tolerance=2e-10
+PASS ladder full incoming forcing p=-1 dk=-0.0001: Frobenius/Euclidean residual=5.68171518172e-16; tolerance=2e-10
+PASS ladder finite band maps p=-1 dk=-0.0001: inverse=16.0715988846, field=6.4746455151, derivative=196.934551453
+PASS ladder differentiated forcing p=-1 dk=-0.0001: Frobenius/Euclidean residual=1.78325491158e-07; tolerance=2e-06
+PASS ladder full current unitarity p=-1 dk=0.0: Frobenius/Euclidean residual=8.98697936727e-16; tolerance=2e-10
+PASS ladder full incoming forcing p=-1 dk=0.0: Frobenius/Euclidean residual=5.38445944973e-16; tolerance=2e-10
+PASS ladder finite band maps p=-1 dk=0.0: inverse=16.1091093663, field=6.48860028037, derivative=197.851794806
+PASS ladder differentiated forcing p=-1 dk=0.0: Frobenius/Euclidean residual=1.81677375e-07; tolerance=2e-06
+PASS ladder full current unitarity p=-1 dk=0.0001: Frobenius/Euclidean residual=1.06538648592e-15; tolerance=2e-10
+PASS ladder full incoming forcing p=-1 dk=0.0001: Frobenius/Euclidean residual=4.47002204676e-16; tolerance=2e-10
+PASS ladder finite band maps p=-1 dk=0.0001: inverse=16.1467368686, field=6.50260006484, derivative=198.774049629
+PASS ladder differentiated forcing p=-1 dk=0.0001: Frobenius/Euclidean residual=1.80488566094e-07; tolerance=2e-06
+PASS ladder full two-port center p=1: Frobenius/Euclidean residual=1.4719984786e-15; tolerance=2e-10
+PASS ladder literal internal Schur p=1: Frobenius/Euclidean residual=6.66133814775e-16; tolerance=2e-10
+PASS ladder full center inverse p=1: full inverse=15.513828083
+PASS ladder full current unitarity p=1 dk=-0.0001: Frobenius/Euclidean residual=6.72683362871e-16; tolerance=2e-10
+PASS ladder full incoming forcing p=1 dk=-0.0001: Frobenius/Euclidean residual=5.35154294905e-16; tolerance=2e-10
+PASS ladder finite band maps p=1 dk=-0.0001: inverse=15.465926592, field=2.42777850032, derivative=26.5118692105
+PASS ladder differentiated forcing p=1 dk=-0.0001: Frobenius/Euclidean residual=2.23164561396e-08; tolerance=2e-06
+PASS ladder full current unitarity p=1 dk=0.0: Frobenius/Euclidean residual=5.26830693022e-16; tolerance=2e-10
+PASS ladder full incoming forcing p=1 dk=0.0: Frobenius/Euclidean residual=7.2841388759e-16; tolerance=2e-10
+PASS ladder finite band maps p=1 dk=0.0: inverse=15.513828083, field=2.42859350276, derivative=26.670344804
+PASS ladder differentiated forcing p=1 dk=0.0: Frobenius/Euclidean residual=2.42955411386e-08; tolerance=2e-06
+PASS ladder full current unitarity p=1 dk=0.0001: Frobenius/Euclidean residual=3.2971417432e-16; tolerance=2e-10
+PASS ladder full incoming forcing p=1 dk=0.0001: Frobenius/Euclidean residual=4.47273884729e-16; tolerance=2e-10
+PASS ladder finite band maps p=1 dk=0.0001: inverse=15.5620272102, field=2.42941647589, derivative=26.8303266152
+PASS ladder differentiated forcing p=1 dk=0.0001: Frobenius/Euclidean residual=2.37672345716e-08; tolerance=2e-06
+PASS vacancy local sufficient budget eps=0.7: U=93.7142857143; lambda=3.68791951966e-06; error=0.35
+PASS vacancy local sufficient budget eps=0.07: U=937.142857143; lambda=3.78444587186e-08; error=0.035
+PASS suffix complete ordered word with both diamond signs: Frobenius/Euclidean residual=8.92674853443e-16; tolerance=2e-10
+PASS suffix prefix nominal free-energy commutator 0: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS suffix prefix nominal free-energy commutator 1: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS suffix prefix nominal free-energy commutator 2: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS suffix prefix nominal free-energy commutator 3: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS suffix prefix nominal free-energy commutator 4: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS suffix prefix nominal free-energy commutator 5: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS suffix actual structured diamond X: Frobenius/Euclidean residual=9.03482423656e-16; tolerance=2e-10
+PASS suffix positive module compensation X: potentials=[1.66, 1.4100000000000001, 1.54]
+PASS suffix actual structured diamond Z: Frobenius/Euclidean residual=7.76753499427e-16; tolerance=2e-10
+PASS suffix positive module compensation Z: potentials=[1.66, 1.4100000000000001, 1.54]
+PASS suffix actual structured diamond identity: Frobenius/Euclidean residual=9.39266019197e-16; tolerance=2e-10
+PASS suffix positive module compensation identity: potentials=[1.66, 1.4100000000000001, 1.54]
+PASS suffix ordinary exchange full spectrum: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS suffix positive compensation margin L=16: min guaranteed margin=0.202720779386
+PASS suffix explicit inventory L=16: head qubits=68; blocks=162
+PASS suffix positive compensation margin L=31: min guaranteed margin=0.38058874503
+PASS suffix explicit inventory L=31: head qubits=128; blocks=282
+PASS static bias eight-site vacuum scalar: Frobenius/Euclidean residual=0; tolerance=2e-10
+PASS static bias full vacancy coefficient domination: eight coefficients=[1.459892813020969, 1.459892813020969, 0.017104332596001873, 0.017104332596001873, 0.01243514972118797, 0.01243514972118797, 0.01243514972118797, 0.01243514972118797]; maximum=1.45989281302097
+PASS static bias positive endpoint repairs: beta=0.0171043325960019, gamma=0.012435149721188
+PASS static bias whole-old-band separation: 4-nu=2.54010718697903; band separation=0.186826508897014
+PASS static bias declared endpoint incident-budget arithmetic: sourceA=27.9362248531559; sourceB=22.2289068753533; c0=12.0151206915417; c1=10.7300447730261; finite inventory proof supplies remaining-site bounds
+PASS static bias exact finite inventory M=3: heads=115; qubits=119; blocks=256; distinct pairs=123
+PASS static bias exact finite inventory M=60000000000000000: heads=60000000000000112; qubits=60000000000000116; blocks=120000000000000250; distinct pairs=60000000000000120
+PASS static bias one-head scalar t=0.4: Frobenius/Euclidean residual=4.59767177737e-16; tolerance=2e-10
+PASS static bias one-head scalar t=2.1: Frobenius/Euclidean residual=1.19122843444e-15; tolerance=2e-10
+per_element: Actual finite local Pauli matrices, positive supports, phases and coefficient calibrations were checked.
+per_site: Explicit finite geometry, incident norm budgets and complete Hilbert-space input/output fixtures were checked.
+per_mode: All sectors of each declared finite matrix fixture were retained; no native pole or infinite-volume spectrum was inferred.
+per_block: Supplied finite module identities and sufficient error allocations were checked; arbitrary actuator perturbations remain outside scope.
+lattice_wide: Written proofs retain their stated finite-volume or constructed-scattering hypotheses; no finite product launcher or permanent halt was established.
+Completed 158 distinct finite controls in 0.266242 seconds; aggregate cap 180 seconds.
+TOTAL: PASS=158 FAIL=0
+
+----- stderr -----
+

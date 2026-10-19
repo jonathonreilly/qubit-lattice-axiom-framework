@@ -40,3 +40,4 @@
 ## Log
 - 08:56 launched workers w1 (L4_s3), w2 (L4_s4), w3 (L6_s3/L6_s4 alternating; after L4 finishes the
   workers move to L6 and then L8E per tiers).
+- 09:50 status: L4_s3/s4 at chunk 6 (~59k sweeps, 25/26 trips), L6_s3 c0 done, L6_s4 c3 running; check=0 throughout.

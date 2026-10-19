@@ -249,3 +249,32 @@ Write omega^2 = k^2 (1 + alpha k^2).
   - So Newton needs the rule to pass influence on WITHOUT LOSS, with either sign. "Lossless" is
     also exactly the condition for a rule's effect to survive zooming out (the owner's 'scale'
     intuition).
+
+## Phase 8: time and the tick (owner: "do something about time ... stop giving a/b choices; keep exploring")
+Owner view: the fixed grid doesn't matter for the Wolfram comparison; odds and records carry the structure.
+EXPLORATIONS.
+- F37 (record cone; cone1.py, cone2.py). One seed; each tick every empty site with a recorded
+  neighbour forms with probability p.
+  - p = 1 gives a diamond (body/axis 0.58).
+  - Smaller p gives a rounder front (p = 0.05: body/axis 0.98) and a slower one (0.14 sites per
+    tick). Odds make the causal cone round; roundness costs speed.
+- F38 (lean-away-in-time; wave1.py). Leaning with spatial neighbours and away from your own
+  previous tick gives a wave rule with a true light cone at speed sqrt(s).
+  - With the tick on the same footing (s = 1) the real-time step rule blows up within 8 ticks
+    (CFL: stable only for s <= 1/3 in 3D, so light <= 1/sqrt3 site per tick).
+  - So "same footing" holds in the Euclidean/transfer sense, not as an explicit tick step.
+- F39 (gravity's speed; gspeed.py). A record forms and drains pace.
+  - Second-order (lean-away-in-time): the pull arrives near r/c, then settles to the static 1/r
+    (0.99 at r = 10). Gravity is retarded at the wave speed.
+  - First-order (relax each tick): diffusive arrival (r^2 times), no cone.
+  - Leaky second-order: same arrival but screened.
+- F40 (causality bound; cone2.py). The record front must not outrun the fastest stable light
+  cone, so formation odds are <= ~0.30 per tick (axis front speed 0.566 vs cap 0.577 at p = 0.3).
+- Synthesis:
+  - Decision 1 ("lossless passing") plus a sign flip between space and time (lean with
+    neighbours in space, away from the past in time) gives Lorentzian waves, a light cone,
+    retarded gravity and a Newton limit.
+  - The owner's lean-away instinct, applied between ticks, is what distinguishes time from space.
+  - Open: the gamma = 1 light-bending factor needs records to change spatial passing as much as
+    pace (nu = 1), which the 2-rung Regge carrier supplies; in a pure odds rule it is a
+    constraint on link vs tick weights.

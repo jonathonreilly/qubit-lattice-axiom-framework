@@ -159,3 +159,30 @@ on Z³ with frozen singles and holes, a speed-1 face-pair glider, and the −v h
 reproduced from the definitions by independent code, and no load-bearing error was found. Not
 established, as the NOTE itself states: range 2, k ≥ 3 dynamics beyond the involution and covariance
 checks above, and the interface results.
+
+## Correction confirmation
+
+I read the full corrected NOTE.md and `logs/c4f_01_superseded_RECONSTRUCTED.txt`, and diffed the NOTE
+against the author draft (e05d97173 → 8cdbfcbd2).
+
+- **Only additive edits.** All changes are wording, status or disclosure additions. No mathematical
+  claim, number or definition was changed, so my Phase A–C verdicts stand unchanged.
+- **Every finding is resolved:**
+  - Lemma I′ "both N1 clauses" now reads as necessary for the proof only, with the one-sided
+    variants recorded as an observation.
+  - The even-L torus requirement is noted.
+  - The 6-versus-12 counting is noted.
+  - The interface and head-on results are marked not independently re-checked.
+  - The evidence issue is handled. The lost file is stated as lost. The reconstructed file is
+    clearly labelled, is not counted in SUMMARY, and gives the failing line. Its criterion
+    (orbit-restricted) and its r=1 count of 10 versus C4c's 6 are consistent with the disclosure.
+    I cannot verify the transcription against the lost original; its label says so. A no-clobber
+    log policy is stated.
+- **No new defect.** Two cosmetic points remain, and neither needs action:
+  - The sentence "No recorded run FAILed" sits next to the disclosed superseded FAIL. The context
+    makes clear that it refers to the current logs.
+  - Load-bearing step 1 has a misindented line ("A blind route is to / implement…"). The
+    disposition "All runs use L = 10 and 12" refers to the torus runs; the sparse runs are on Z³.
+    This is accurate.
+
+**Final verdict: ready.**

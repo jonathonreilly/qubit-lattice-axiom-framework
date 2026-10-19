@@ -159,3 +159,24 @@ content. I know of no explicit statement of that combination, but I did not sear
 6. Clean-level wording: allow non-degenerate isolated extrema (charge 0) (low). NN′: C¹ in k (low).
 
 Theorem L, the clean-level NN for all n, D, and Ans are correct.
+
+## Correction confirmation
+
+I re-read the whole corrected NOTE.md, including its "Review dispositions" table, and checked the rerun s3 script and its logs.
+The reviewer is in the same agent context as above: same model as the author, not an independent audit.
+
+| Finding | Status |
+|---|---|
+| NN headline sign | **Resolved.** The table now reads `Σχ = ΣΦ` (Φ oriented by ∇E), which is consistent with §2, §3 and my r2 sign checks. |
+| Win | **Resolved.** The single-adjacent-band-pair hypothesis is in the table and in §3, and the counterexample is noted. |
+| Sheet case without a global cut | **Resolved.** The cluster form is stated in Lemma S(c), and it matches my §1.3. |
+| Witness sheet flux | **Resolved.** The note now gives ΣΦ = −4, with the tube Ch sum = +4, and still labels the flux as inferred. |
+| Type-I parameter | **Resolved.** `s3_sheet_witness.py` line 77 now uses `solve(v, tilt)`, and the log shows \|v^{-1}t\| = 0.500 at all 4 nodes for both T2 and T3. The s3 rerun gives PASS=13 FAIL=0, and `logs/ALL_TOTALS.log` gives TOTAL: PASS=135 FAIL=0. |
+| PW sign, NN′ C¹, clean-level wording | **Resolved.** |
+| D, L, S(a), Ans, novelty hedge | Unchanged and still correct. |
+
+The edits introduced no new mathematical defect. Two optional cosmetic nits remain:
+1. §2 step 3 reads "`+ −3 d tr(...)`". It should read "`− 3 d tr(...)`".
+2. In the §3 Win paragraph, the final "So Σ_i Ch_i = …" comes right after the counterexample. It would read better as "Hence, under the single-pair hypothesis, Σ_i Ch_i = …".
+
+**Final verdict: ready.**

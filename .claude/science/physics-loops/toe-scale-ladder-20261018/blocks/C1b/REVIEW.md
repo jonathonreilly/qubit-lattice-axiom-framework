@@ -72,3 +72,32 @@ Exploratory runs that were not logged: rs1 at L=4 with only 2000 calls gave χ²
 6. **Nits:** R4 (z range), R10 (use "inconclusive"), R11 (0.93(6)), R17 (wording).
 
 **No claim on which a verdict rests is incorrect.** Detailed balance of every move holds by derivation, and three independent numerical tests confirm it, including the N′/N factor of the cube move at L=4. The INCONCLUSIVE verdict is correct and robust. Not done by this review: a check at L ≥ 4 against an independent method (NOTE §9.1), and any test of winding-sector ergodicity beyond L=2.
+
+## Correction confirmation (2026-10-19)
+
+**Who and what.** The same reviewer (a Claude subagent, same model as the author) read the complete corrected NOTE.md (391 lines), including its "Review dispositions" section.
+
+**Per finding:**
+
+| finding | resolved? | where |
+|---|---|---|
+| R12 (moderate) | yes | §0.5 (3.4σ against the compromised runs, P1 = 0.477, "not shown to be equilibrated") and the dispositions |
+| R5 | yes | §0.2(a) label, §3.2 "Exact form" paragraph |
+| R7 | yes | §3.3 |
+| R8 | yes | §0.2(b), dispositions, §7 heading [POST HOC] |
+| R3 | yes | §11, dispositions |
+| R10 | yes | §6 |
+| R4, R11 | in dispositions only | see below |
+
+**The three items left as they are:**
+1. **"8–27σ" in §0.2(a).** Acceptable. The dispositions give the correct range (3.4–26.6, and 5.4–26.6 for E), and the val2 log is cited. It is a nit, and an inline edit would be cleaner.
+2. **"0.39–0.43" in §5.3.** Acceptable. The dispositions say the range applies only to later chunks, and §0.5 and §5.2 both show 0.477.
+3. **"stationary in every chunk" (§0.5; also "At β = L/2 the populations are stationary", §5.2).** Acceptable but loose. The same §0.5 bullet now says the value "is not shown to be equilibrated" and quotes the 0.477 chunk, so a reader is not misled. **Suggestion:** "approximately stationary (0.39–0.48)".
+
+**New defects.** None that affect any verdict. Remaining nits:
+1. The post hoc p is still 0.93(5) in §5.4 and §6, while the dispositions say 0.93(6).
+2. The §3.2 heading still reads [THM + NUM].
+3. The R17 wording ("in s4") is unchanged in §5.3.
+4. The dispositions say the review confirmed "detailed balance of all moves with independent exact kernels". In fact the loops were checked by derivation and by the combined test rs2, the clusters by an estimated-kernel balance test (rs6), and only the cube move against an exact kernel (rs1).
+
+**Final verdict: READY.** The overall INCONCLUSIVE verdict and every claim a verdict rests on are unchanged and consistent with this review.

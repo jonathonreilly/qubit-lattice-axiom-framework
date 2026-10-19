@@ -90,3 +90,4 @@ H_a + delta H (block-chain in k) vs the second-order formula on the same k grid;
   terms possible, as in C7's twist dichotomy), negligible in the continuum limit. I replaced the
   check by a reported, non-asserted table (slope and linear extrapolation; the extrapolation
   recovers c_G(0) to 0.02-0.9%). The FAIL lines are kept in that log.
+- 01:2xZ container restart killed job C after 31 gold entries (checkpoint intact); relaunched job C (resumes).

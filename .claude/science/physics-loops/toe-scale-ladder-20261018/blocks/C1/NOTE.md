@@ -181,30 +181,3 @@ Declared 20:27 UTC, after L=4 and 6 but before any L ≥ 8 data (prior exposure:
 Declared 19:57–20:27, before L ≥ 8: chains are run from ≥ 2 different starts, and agreement between starts is a
 mixing check.
 
-## 5. Results [NUM]
-
-FILL
-
-## 6. Verdicts against the pre-declared criteria [VERDICT]
-
-FILL
-
-## 7. Scope and caveats
-
-FILL
-
-## 8. Literature and repo context
-
-FILL
-
-## 9. Load-bearing step and what an independent check must do
-
-FILL
-
-## 10. What a decisive follow-up needs
-
-FILL
-
-## 11. Files
-
-FILL

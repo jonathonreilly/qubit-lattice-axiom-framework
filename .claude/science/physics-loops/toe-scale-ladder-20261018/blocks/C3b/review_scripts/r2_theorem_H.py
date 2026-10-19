@@ -126,7 +126,7 @@ for D in (2, 4, 6, 8):
 check("c1 c_n (K eta n)^n/n! <= (D/(D-1)) (e(D-1)K eta)^n on a grid", ok)
 
 # ---------- (d) ----------
-Lt = 4096
+Lt = 1024
 k = 2 * np.pi * np.fft.fftfreq(Lt)
 KX, KY = np.meshgrid(k, k, indexing='ij')
 lap = 4 - 2 * np.cos(KX) - 2 * np.cos(KY)
@@ -151,7 +151,7 @@ for H in (0.5, 0.8, 0.95):
           f"{A_num:.5f} vs {A_author:.5f}")
     # torus deficit at fixed r=8 for the author's box sizes: Var_torus,L(8) / (A_H 8^(2H))
     rat = []
-    for Ls_ in (64, 128, 256, 512, 4096):
+    for Ls_ in (64, 128, 256, 512, 2048):
         kq = 2 * np.pi * np.fft.fftfreq(Ls_)
         B1, B2 = np.meshgrid(kq, kq, indexing='ij')
         lq = 4 - 2 * np.cos(B1) - 2 * np.cos(B2); lq[0, 0] = 1.0
@@ -159,13 +159,13 @@ for H in (0.5, 0.8, 0.95):
         rat.append(2 * np.mean((1 - np.cos(B1 * 8)) * fq) / (A_author * 8 ** (2 * H)))
         SHAPE.setdefault(H, []).append(np.mean((1 - np.cos(B1 * 32)) * fq) / np.mean((1 - np.cos(B1 * 1)) * fq))
     TORUS[H] = rat
-    print(f"  INFO H={H}: Var_torus(r=8)/(A_H 8^2H) for L=64,128,256,512,4096: " + " ".join(f"{x:.3f}" for x in rat))
+    print(f"  INFO H={H}: Var_torus(r=8)/(A_H 8^2H) for L=64,128,256,512,2048: " + " ".join(f"{x:.3f}" for x in rat))
     check(f"d3 H={H}: torus increment variance increases monotonically with box size (IR cutoff)", np.all(np.diff(rat) > 0))
 # NOTE (reviewer): a first version of d4 compared absolute variances; that is ill-posed because a global rescaling of T
 # does not change the record (Lemma 0).  The scale-free quantity is the SHAPE Var(32)/Var(1).
 for H in (0.5, 0.8, 0.95):
     sh_ = np.array(SHAPE[H]) / SHAPE[H][-1]
-    print(f"  INFO H={H}: shape Var(32)/Var(1) on torus L=64..512, relative to L=4096: " + " ".join(f"{x:.3f}" for x in sh_[:-1]))
+    print(f"  INFO H={H}: shape Var(32)/Var(1) on torus L=64..512, relative to L=2048: " + " ".join(f"{x:.3f}" for x in sh_[:-1]))
 d95 = 1 - SHAPE[0.95][3] / SHAPE[0.95][-1]; d05 = 1 - SHAPE[0.5][3] / SHAPE[0.5][-1]
 check("d4 at L=512 the clock's large/small-scale shape is still far from converged for H=0.95, not for H=0.5",
       d95 > 0.2 and d05 < 0.05, f"shape deficit H=0.95: {d95:.3f}, H=0.5: {d05:.3f}")

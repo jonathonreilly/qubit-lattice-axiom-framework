@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/candidate_law_cl2_a_records_qubit_leaves_the_flow_evidence_2026_10_18.py
+runner_sha256: f1844fbbefa18fa7b50043f4114ea9035077744bc769ed69e534517be90fc625
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 26.09
+status: ok
+----- stdout -----
+[PASS] M1 a packet bends toward records that lower the pace and away from records that raise it  extra sideways shift: lower -12.50, raise +16.81 sites (negative = toward)
+[PASS] M2 far field fixed by the total drain: single site, 3x3x3 block and 6-site star agree at r = 16; they differ close in (r = 3)  r=16: 0.01654, 0.01654, 0.01654; r=3: 0.15164, 0.14506, 0.15164
+[PASS] M3 lean-away pace rule: two records on same-colour sites add, on opposite-colour sites cancel at long range; under averaging they add  one record +0.02639; same colour +0.05620; opposite colour -0.00360; averaging, opposite colour +0.05638
+[PASS] M4 subtract-with-floor: sparse records additive (no freezing); a dense cluster freezes a region larger than itself. Scale drains: no freezing, not additive  subtract per record 0.1200, 0.1201; dense radius 3.2 -> frozen radius 10.0; scale per record 0.1006, 0.0843, min pace 0.042
+[PASS] M5 group delay through a pace well: within 6% of the long-wavelength value at wavelengths 42 and 21 sites; a lattice-scale excess (> 30%) at wavelength 6  delay / (2 int |Phi|) = 1.030, 1.056, 1.504 at wavelengths 41.9, 20.9, 6.3
+[PASS] M6 pure hole: no far-field effect; perfect absorbers shield (mass per record falls); a fixed share per record is additive  pure-hole max deviation 7e-11; absorber per record 0.393 (1) -> 0.211 (33); fixed share per record 0.00588 -> 0.00600
+[PASS] M7 records that hold the pace they had when they formed have no effect  far-field mass after 12 records +9.3e-09
+[PASS] M8 timing: a record permanently short one share settles to a steady 1/r value; an absorber settles too; a one-time removal does not settle  r*d late values: steady +0.023, +0.026, +0.028, +0.024; absorber +0.303, +0.337, +0.337, +0.310; once -0.016, +0.015, +0.168, +0.034
+[PASS] M9 removed sites slow influence crossing a crowded slab, about in proportion to the removed fraction  fractional slowing 0.068 at 5%, 0.142 at 10%
+
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

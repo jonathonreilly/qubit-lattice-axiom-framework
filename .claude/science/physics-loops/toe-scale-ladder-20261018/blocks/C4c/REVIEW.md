@@ -180,3 +180,25 @@ Minor points:
 - `rv_SUMMARY.log` — combined: **TOTAL: PASS=46 FAIL=0**
 
 Run from `review_scripts/`: `python3 rv1_vertex_numeric.py` (≈ 20 min on a loaded core), `rv1b` (≈ 4 min), `rv2` (≈ 1 min), `rv3`/`rv4`/`rv5` (seconds).
+
+## Correction confirmation (2026-10-19)
+
+I read the complete corrected `NOTE.md`, including its "Review dispositions" table.
+
+| finding | status |
+|---|---|
+| "a TI layer must be commuting" (medium) | **resolved.** Replaced by a scope paragraph: 𝓕 is commuting by definition, the SWAP staircase / shift counterexample is given, and staircase circuits are listed as open, both in "Not tried" and in Answer 1 |
+| XY gates called covered | **resolved.** Two-site gates are forced to \|11⟩-phase type; XY gates are excluded |
+| 296/300 sampling dependence | **resolved.** Sizes [2,12] are stated, and 142/300 for [2,27] |
+| per-gate U(1) scope | **resolved.** Stated in the result-up-front |
+| caterpillar T-covariance; single-gate qualifier on the Lemma V step | **resolved.** Both stated |
+| unbounded-D numerical caveat | **resolved.** Recorded. I confirmed that `scripts/c4c_03_commuting_search.py` constrains only ‖X‖, so the caveat is accurate |
+
+No new defects were introduced. All the edits are scope and wording changes, and the proofs and
+certificates are unchanged.
+
+Optional cosmetic nits, not blocking:
+- The claim-type table row "296/300 sampled supports covered" could add "(|S| ≤ 12)".
+- Obs. M's "COM steps of ±e_⊥/…" could read "ΔCOM = ±e_⊥ per tick".
+
+**Final verdict: ready.**

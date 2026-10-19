@@ -1,0 +1,14 @@
+record_X = 1
+exact full inverse residual = 0 (left and right)
+chain Frobenius norm squared = [72, 159/2]
+chain inverse row norm squares = [[6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6], [6, 6, 6, 21/2, 5/2, 19/2, 13/2, 13/2, 13/2, 13/2, 13/2, 13/2]]
+continuant entry checks = exact equality
+full Frobenius norm squared = 303/2
+determinant = -4
+record_X = -1
+exact full inverse residual = 0 (left and right)
+chain Frobenius norm squared = [72, 129/2]
+chain inverse row norm squares = [[6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6], [6, 6, 6, 3/2, 19/2, 5/2, 11/2, 11/2, 11/2, 11/2, 11/2, 11/2]]
+continuant entry checks = exact equality
+full Frobenius norm squared = 273/2
+determinant = 4

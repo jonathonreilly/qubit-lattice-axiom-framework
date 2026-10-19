@@ -32,10 +32,11 @@ Mode selection:
    their mechanical checks never create a scientific verdict or landing PASS.
 2. Select the mode per the Invocation section above; focused mode only
    when a `[target]` is named.
-3. Use one independent Astra-low (`gpt-6-astra`, `low`) reviewer per coherent
-   unit. Apply the relevant physics lenses in one focused pass. Escalate only
-   unresolved material mathematical/premise questions or reviewer disagreements
-   to Astra xhigh. Completed valid reviews remain reusable. Follow the skill's
+3. Use one independent fast reviewer per coherent unit, configured as the
+   skill's Model And Tool Boundary section directs. Apply the relevant physics
+   lenses in one focused pass. Escalate only unresolved material
+   mathematical/premise questions or reviewer disagreements to the strongest
+   configured reviewer. Completed valid reviews remain reusable. Follow the skill's
    focused-landing section: concise material findings and decisive evidence;
    exhaustive claim certification belongs to the deferred formal audit.
 4. Fix only verified, narrow findings. Demote overclaims instead of patching

@@ -1,0 +1,223 @@
+===== runner cache v1 =====
+runner: scripts/common_product_program_controls_2026_10_18.py
+runner_sha256: a627c67158b55598bf1a98d23eb413126b3e6ea3f1d19d349386f46be279cfea
+input_fingerprint_sha256: 311bc4330e931560e88eb7220ac75a1b7c0eaa3d9b629fc90f2e394e2db36120
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.04
+status: ok
+----- stdout -----
+{"name": "positive full bond spectrum", "passed": true, "value": 0.0}
+{"name": "projectors include double occupation", "passed": true, "value": 0.0}
+{"name": "plus projector", "passed": true, "value": 0.0}
+{"name": "physical cell expansion0", "passed": true, "value": 7.691850745534255e-16}
+{"name": "four column dressed intertwiner0", "passed": true, "value": 2.220446049250313e-16}
+{"name": "exact code distance0", "passed": true, "value": 1.3877787807814457e-16}
+{"name": "detuning acts on dressed code0", "passed": true, "value": null}
+{"name": "literal complete error0/0.07", "passed": true, "value": 0.02993669169845456}
+{"name": "enabled exact sine0.07", "passed": true, "value": 3.469446951953614e-18}
+{"name": "literal complete error0/0.5", "passed": true, "value": 0.1939491533081731}
+{"name": "enabled exact sine0.5", "passed": true, "value": 5.551115123125783e-17}
+{"name": "literal complete error0/2.1", "passed": true, "value": 0.01998106629282171}
+{"name": "enabled exact sine2.1", "passed": true, "value": 8.326672684688674e-17}
+{"name": "eight coefficient box residual0", "passed": true, "value": 0.02751393229962296}
+{"name": "physical cell expansion1", "passed": true, "value": 0.0}
+{"name": "four column dressed intertwiner1", "passed": true, "value": 1.2497234951286321e-16}
+{"name": "exact code distance1", "passed": true, "value": 1.942890293094024e-15}
+{"name": "detuning acts on dressed code1", "passed": true, "value": null}
+{"name": "literal complete error1/0.07", "passed": true, "value": 0.028831971652030854}
+{"name": "literal complete error1/0.5", "passed": true, "value": 0.012251378595289915}
+{"name": "literal complete error1/2.1", "passed": true, "value": 0.0316320967120116}
+{"name": "eight coefficient box residual1", "passed": true, "value": 0.028404919140370723}
+{"name": "tensor overlap distance", "passed": true, "value": 3.1155633628543455e-15}
+{"name": "double phase mutant detected", "passed": true, "value": null}
+{"name": "endpoint full-domain attachment", "passed": true, "value": 0.0}
+{"name": "mediator contact off-code mutant", "passed": true, "value": null}
+{"name": "logical neighboring terms noncommute", "passed": true, "value": null}
+{"name": "path degree-one spectrum1", "passed": true, "value": 2.220446049250313e-16}
+{"name": "physical chain counts1", "passed": true, "value": null}
+{"name": "path degree-one spectrum2", "passed": true, "value": 5.112408820543597e-16}
+{"name": "physical chain counts2", "passed": true, "value": null}
+{"name": "path degree-one spectrum5", "passed": true, "value": 1.287706301385754e-15}
+{"name": "physical chain counts5", "passed": true, "value": null}
+{"name": "ordered rectangular second-order identity", "passed": true, "value": 4.885456855702079e-16}
+{"name": "noncommuting residual fixture", "passed": true, "value": null}
+{"name": "source spectral normalization0.08", "passed": true, "value": 1.2925216452686072e-12}
+{"name": "complex source amplitude phase0.08", "passed": true, "value": 3.469446951953614e-18}
+{"name": "source phase omission mutant0.08", "passed": true, "value": null}
+{"name": "source spectral normalization0.2", "passed": true, "value": 2.220446049250313e-16}
+{"name": "complex source amplitude phase0.2", "passed": true, "value": 3.1031676915590914e-17}
+{"name": "source phase omission mutant0.2", "passed": true, "value": null}
+{"name": "source spectral normalization0.6", "passed": true, "value": 0.0}
+{"name": "complex source amplitude phase0.6", "passed": true, "value": 1.1188630228279524e-16}
+{"name": "source phase omission mutant0.6", "passed": true, "value": null}
+{"name": "fixed diagonal boundary contact norm", "passed": true, "value": 0.0}
+{"name": "boundary diagonal unchanged", "passed": true, "value": 0.0}
+{"name": "full positive source block norm", "passed": true, "value": 4.440892098500626e-16}
+{"name": "outer one-head diagonals with inward bond", "passed": true, "value": 0.0}
+{"name": "actual finite geometry counts", "passed": true, "value": null}
+{"name": "equal physical cables34", "passed": true, "value": null}
+{"name": "all installed head bonds cubic nearest neighbor", "passed": true, "value": null}
+{"name": "four local shared record contacts", "passed": true, "value": null}
+{"name": "literal preray positive inventory", "passed": true, "value": null}
+{"name": "actual finite source/cap geometry3", "passed": true, "value": null}
+{"name": "counted full positive blocks3", "passed": true, "value": null}
+{"name": "actual finite source/cap geometry7", "passed": true, "value": null}
+{"name": "counted full positive blocks7", "passed": true, "value": null}
+{"name": "exact chain inverseFalse/-1", "passed": true, "value": null}
+{"name": "exact chain inverseTrue/-1", "passed": true, "value": null}
+{"name": "writer exact Frobenius squares-1", "passed": true, "value": ["72", "129/2"]}
+{"name": "writer exact determinant-1", "passed": true, "value": null}
+{"name": "actual24 inverse Frobenius-1", "passed": true, "value": 2.842170943040401e-14}
+{"name": "actual24 center shared record-1", "passed": true, "value": 2.5121479338940403e-15}
+{"name": "writer common phase omission mutant-1", "passed": true, "value": null}
+{"name": "actual24 inverse band-1/-0.001", "passed": true, "value": null}
+{"name": "writer complete scattering-1/-0.001", "passed": true, "value": null}
+{"name": "actual24 inverse band-1/0", "passed": true, "value": null}
+{"name": "writer complete scattering-1/0", "passed": true, "value": null}
+{"name": "actual24 inverse band-1/0.001", "passed": true, "value": null}
+{"name": "writer complete scattering-1/0.001", "passed": true, "value": null}
+{"name": "exact chain inverseFalse/1", "passed": true, "value": null}
+{"name": "exact chain inverseTrue/1", "passed": true, "value": null}
+{"name": "writer exact Frobenius squares1", "passed": true, "value": ["72", "159/2"]}
+{"name": "writer exact determinant1", "passed": true, "value": null}
+{"name": "actual24 inverse Frobenius1", "passed": true, "value": 0.0}
+{"name": "actual24 center shared record1", "passed": true, "value": 2.589462819655575e-15}
+{"name": "writer common phase omission mutant1", "passed": true, "value": null}
+{"name": "actual24 inverse band1/-0.001", "passed": true, "value": null}
+{"name": "writer complete scattering1/-0.001", "passed": true, "value": null}
+{"name": "actual24 inverse band1/0", "passed": true, "value": null}
+{"name": "writer complete scattering1/0", "passed": true, "value": null}
+{"name": "actual24 inverse band1/0.001", "passed": true, "value": null}
+{"name": "writer complete scattering1/0.001", "passed": true, "value": null}
+{"name": "continuum inverse margin exact", "passed": true, "value": null}
+{"name": "physical122 Hermitian0/-1", "passed": true, "value": null}
+{"name": "full122 flux conservation0/-1/-0.0002", "passed": true, "value": 2.0770949066267715e-15}
+{"name": "full122 all feedback0/-1/-0.0002", "passed": true, "value": 0.025878463400972895}
+{"name": "full122 flux conservation0/-1/0", "passed": true, "value": 1.3483382341584923e-15}
+{"name": "full122 all feedback0/-1/0", "passed": true, "value": 0.026074480919674275}
+{"name": "full122 flux conservation0/-1/0.0002", "passed": true, "value": 1.1396751486317554e-15}
+{"name": "full122 all feedback0/-1/0.0002", "passed": true, "value": 0.026270310064460237}
+{"name": "physical122 Hermitian0/1", "passed": true, "value": null}
+{"name": "full122 flux conservation0/1/-0.0002", "passed": true, "value": 1.8584861542934984e-15}
+{"name": "full122 all feedback0/1/-0.0002", "passed": true, "value": 0.02547817665663275}
+{"name": "full122 flux conservation0/1/0", "passed": true, "value": 1.0626298274553644e-15}
+{"name": "full122 all feedback0/1/0", "passed": true, "value": 0.026074480919674948}
+{"name": "full122 flux conservation0/1/0.0002", "passed": true, "value": 1.8660762154001466e-15}
+{"name": "full122 all feedback0/1/0.0002", "passed": true, "value": 0.026669950757869054}
+{"name": "physical122 Hermitian1/-1", "passed": true, "value": null}
+{"name": "full122 flux conservation1/-1/-0.0002", "passed": true, "value": 2.18452023489923e-15}
+{"name": "full122 all feedback1/-1/-0.0002", "passed": true, "value": 0.025878463400973446}
+{"name": "full122 flux conservation1/-1/0", "passed": true, "value": 1.2513313302613894e-15}
+{"name": "full122 all feedback1/-1/0", "passed": true, "value": 0.026074480919674074}
+{"name": "full122 flux conservation1/-1/0.0002", "passed": true, "value": 1.8084480739256196e-15}
+{"name": "full122 all feedback1/-1/0.0002", "passed": true, "value": 0.026270310064460303}
+{"name": "physical122 Hermitian1/1", "passed": true, "value": null}
+{"name": "full122 flux conservation1/1/-0.0002", "passed": true, "value": 2.1611211899781475e-15}
+{"name": "full122 all feedback1/1/-0.0002", "passed": true, "value": 0.025478176656633256}
+{"name": "full122 flux conservation1/1/0", "passed": true, "value": 1.5679313085204687e-15}
+{"name": "full122 all feedback1/1/0", "passed": true, "value": 0.026074480919674466}
+{"name": "full122 flux conservation1/1/0.0002", "passed": true, "value": 2.1387389441590608e-15}
+{"name": "full122 all feedback1/1/0.0002", "passed": true, "value": 0.02666995075786881}
+{"name": "microscopic boundary elimination0/1.0471975511965976", "passed": true, "value": 6.93325511672546e-16}
+{"name": "mediator full column0/1.0471975511965976", "passed": true, "value": 9.813077866773595e-18}
+{"name": "microscopic scattering ceiling0/1.0471975511965976", "passed": true, "value": null}
+{"name": "microscopic boundary elimination0/1.5707963267948966", "passed": true, "value": 3.5307087848224905e-16}
+{"name": "mediator full column0/1.5707963267948966", "passed": true, "value": 6.938893903907228e-18}
+{"name": "microscopic scattering ceiling0/1.5707963267948966", "passed": true, "value": null}
+{"name": "microscopic boundary elimination0/2.0943951023931953", "passed": true, "value": 2.6010667681170486e-16}
+{"name": "mediator full column0/2.0943951023931953", "passed": true, "value": 7.757919228897728e-18}
+{"name": "microscopic scattering ceiling0/2.0943951023931953", "passed": true, "value": null}
+{"name": "microscopic boundary elimination1/1.0471975511965976", "passed": true, "value": 5.40986247430013e-16}
+{"name": "mediator full column1/1.0471975511965976", "passed": true, "value": 7.666467083416871e-20}
+{"name": "microscopic scattering ceiling1/1.0471975511965976", "passed": true, "value": null}
+{"name": "microscopic boundary elimination1/1.5707963267948966", "passed": true, "value": 3.149037540216851e-16}
+{"name": "mediator full column1/1.5707963267948966", "passed": true, "value": 9.389466242107245e-20}
+{"name": "microscopic scattering ceiling1/1.5707963267948966", "passed": true, "value": null}
+{"name": "microscopic boundary elimination1/2.0943951023931953", "passed": true, "value": 2.965670109120241e-16}
+{"name": "mediator full column1/2.0943951023931953", "passed": true, "value": 6.639355251516202e-20}
+{"name": "microscopic scattering ceiling1/2.0943951023931953", "passed": true, "value": null}
+{"name": "all four complex source second derivative terms", "passed": true, "value": null}
+{"name": "localized cutoff constant", "passed": true, "value": null}
+{"name": "refined complete budget exact", "passed": true, "value": null}
+{"name": "F resource powers", "passed": true, "value": ["11/2", "15/2"]}
+{"name": "A resource powers", "passed": true, "value": ["7", "9"]}
+{"name": "core/writer feedback denominator1.0", "passed": true, "value": null}
+{"name": "F source normalization premise1.0", "passed": true, "value": null}
+{"name": "F separated maxima1.0", "passed": true, "value": null}
+{"name": "F all12 finite allowances1.0", "passed": true, "value": [1e-12, 2e-12, 8.319615316133193e-09, 0.0067658234670659265, 3.327846126453277e-08, 1.6639230632266388e-09, 3.0000000000000005e-14, 2e-12, 2.495884594839958e-09, 0.00390625, 5.6e-13, 1.1647461442586472e-08]}
+{"name": "F charged complete scattering1.0", "passed": true, "value": null}
+{"name": "F finite window phase gaps1.0", "passed": true, "value": null}
+{"name": "F relative window1.0", "passed": true, "value": 0.0}
+{"name": "F full physical incident loads1.0", "passed": true, "value": [9.51683298050514e-08, 0.5000000316227766, 1.0000000000000002e-10, 0.4999999683772234, 2.0000000000000003e-10, 2.707106781186548e-10, 2.6213203435596433e-10, 4.0000000000000007e-10, 1.5000000000000002e-10, 2.5000000000000007e-10]}
+{"name": "F finite counts1.0", "passed": true, "value": null}
+{"name": "A source normalization premise1.0", "passed": true, "value": null}
+{"name": "A separated maxima1.0", "passed": true, "value": null}
+{"name": "A all12 finite allowances1.0", "passed": true, "value": [1e-12, 2e-12, 1.886087629883714e-11, 0.0067658234670659265, 7.544350519534856e-11, 3.772175259767428e-12, 3.0000000000000005e-14, 2e-12, 5.658262889651142e-12, 0.00390625, 5.6e-13, 2.6405226818371995e-11]}
+{"name": "A charged complete scattering1.0", "passed": true, "value": null}
+{"name": "A finite window phase gaps1.0", "passed": true, "value": null}
+{"name": "A relative window1.0", "passed": true, "value": 0.0}
+{"name": "A uniform internal/origin budget1.0", "passed": true, "value": null}
+{"name": "A absolute branch total1.0", "passed": true, "value": null}
+{"name": "A full physical incident loads1.0", "passed": true, "value": [9.51683298050514e-08, 0.5000000316227766, 1.0000000000000002e-10, 0.4999999683772234, 2.0000000000000003e-10, 2.707106781186548e-10, 2.6213203435596433e-10, 4.0000000000000007e-10, 1.5000000000000002e-10, 2.5000000000000007e-10]}
+{"name": "A finite counts1.0", "passed": true, "value": null}
+{"name": "refined nine ideal allocations1.0", "passed": true, "value": null}
+{"name": "refined entire duration cell1.0", "passed": true, "value": null}
+{"name": "microscopic twelve allowances stageFalse/1.0", "passed": true, "value": null}
+{"name": "microscopic twelve allowances stageTrue/1.0", "passed": true, "value": null}
+{"name": "core/writer feedback denominator0.5", "passed": true, "value": null}
+{"name": "F source normalization premise0.5", "passed": true, "value": null}
+{"name": "F separated maxima0.5", "passed": true, "value": null}
+{"name": "F all12 finite allowances0.5", "passed": true, "value": [5e-13, 1e-12, 3.4979673544044783e-09, 0.0033829117335329633, 1.3991869417617913e-08, 6.995934708808956e-10, 1.4999999999999996e-14, 1e-12, 1.0493902063213433e-09, 0.001953125, 2.7999999999999997e-13, 4.897154296166269e-09]}
+{"name": "F charged complete scattering0.5", "passed": true, "value": null}
+{"name": "F finite window phase gaps0.5", "passed": true, "value": null}
+{"name": "F relative window0.5", "passed": true, "value": 0.0}
+{"name": "F full physical incident loads0.5", "passed": true, "value": [3.361601966249685e-08, 0.5000000111803399, 2.500000000000001e-11, 0.4999999888196601, 5.000000000000002e-11, 6.767766952966371e-11, 6.55330085889911e-11, 1.0000000000000004e-10, 3.750000000000001e-11, 6.250000000000003e-11]}
+{"name": "F finite counts0.5", "passed": true, "value": null}
+{"name": "A source normalization premise0.5", "passed": true, "value": null}
+{"name": "A separated maxima0.5", "passed": true, "value": null}
+{"name": "A all12 finite allowances0.5", "passed": true, "value": [5e-13, 1e-12, 6.669591011998012e-12, 0.0033829117335329633, 2.6678364047992047e-11, 1.3339182023996023e-12, 1.5e-14, 1e-12, 2.0008773035994036e-12, 0.001953125, 2.7999999999999997e-13, 9.337427416797217e-12]}
+{"name": "A charged complete scattering0.5", "passed": true, "value": null}
+{"name": "A finite window phase gaps0.5", "passed": true, "value": null}
+{"name": "A relative window0.5", "passed": true, "value": 0.0}
+{"name": "A uniform internal/origin budget0.5", "passed": true, "value": null}
+{"name": "A absolute branch total0.5", "passed": true, "value": null}
+{"name": "A full physical incident loads0.5", "passed": true, "value": [3.361601966249685e-08, 0.5000000111803399, 2.500000000000001e-11, 0.4999999888196601, 5.000000000000002e-11, 6.767766952966371e-11, 6.55330085889911e-11, 1.0000000000000004e-10, 3.750000000000001e-11, 6.250000000000003e-11]}
+{"name": "A finite counts0.5", "passed": true, "value": null}
+{"name": "refined nine ideal allocations0.5", "passed": true, "value": null}
+{"name": "refined entire duration cell0.5", "passed": true, "value": null}
+{"name": "microscopic twelve allowances stageFalse/0.5", "passed": true, "value": null}
+{"name": "microscopic twelve allowances stageTrue/0.5", "passed": true, "value": null}
+{"name": "core/writer feedback denominator0.125", "passed": true, "value": null}
+{"name": "F source normalization premise0.125", "passed": true, "value": null}
+{"name": "F separated maxima0.125", "passed": true, "value": null}
+{"name": "F all12 finite allowances0.125", "passed": true, "value": [1.25e-13, 2.5e-13, 6.183591093309808e-10, 0.0008457279333832408, 2.473436437323923e-09, 1.2367182186619617e-10, 3.7500000000000006e-15, 2.5e-13, 1.8550773279929426e-10, 0.00048828125, 7e-14, 8.657027530633732e-10]}
+{"name": "F charged complete scattering0.125", "passed": true, "value": null}
+{"name": "F finite window phase gaps0.125", "passed": true, "value": null}
+{"name": "F relative window0.125", "passed": true, "value": 0.0}
+{"name": "F full physical incident loads0.125", "passed": true, "value": [4.197314957812107e-09, 0.5000000013975425, 1.5625000000000007e-12, 0.49999999860245753, 3.1250000000000013e-12, 4.229854345603982e-12, 4.0958130368119435e-12, 6.250000000000003e-12, 2.3437500000000008e-12, 3.906250000000002e-12]}
+{"name": "F finite counts0.125", "passed": true, "value": null}
+{"name": "A source normalization premise0.125", "passed": true, "value": null}
+{"name": "A separated maxima0.125", "passed": true, "value": null}
+{"name": "A all12 finite allowances0.125", "passed": true, "value": [1.25e-13, 2.5e-13, 8.338635195601262e-13, 0.0008457279333832408, 3.335454078240505e-12, 1.6677270391202527e-13, 3.7500000000000006e-15, 2.5e-13, 2.5015905586803787e-13, 0.00048828125, 7e-14, 1.1674089273841768e-12]}
+{"name": "A charged complete scattering0.125", "passed": true, "value": null}
+{"name": "A finite window phase gaps0.125", "passed": true, "value": null}
+{"name": "A relative window0.125", "passed": true, "value": 0.0}
+{"name": "A uniform internal/origin budget0.125", "passed": true, "value": null}
+{"name": "A absolute branch total0.125", "passed": true, "value": null}
+{"name": "A full physical incident loads0.125", "passed": true, "value": [4.197314957812107e-09, 0.5000000013975425, 1.5625000000000007e-12, 0.49999999860245753, 3.1250000000000013e-12, 4.229854345603982e-12, 4.0958130368119435e-12, 6.250000000000003e-12, 2.3437500000000008e-12, 3.906250000000002e-12]}
+{"name": "A finite counts0.125", "passed": true, "value": null}
+{"name": "refined nine ideal allocations0.125", "passed": true, "value": null}
+{"name": "refined entire duration cell0.125", "passed": true, "value": null}
+{"name": "microscopic twelve allowances stageFalse/0.125", "passed": true, "value": null}
+{"name": "microscopic twelve allowances stageTrue/0.125", "passed": true, "value": null}
+per_element: full positive qubit blocks, double occupation and independent coefficient vertices checked
+per_site: explicit finite cell and122-head network; supplied occupancy roles and initialization remain premises
+per_mode: finite full-channel scattering and source-phase identities checked; no global spectral completeness inferred
+per_block: exact writer chain inverse certificates and fixed-diagonal boundary bookkeeping checked
+lattice_wide: finite supplied graphs and sufficient budget prescriptions only; no native lattice law or enormous-device simulation executed
+TOTAL: PASS=204 FAIL=0
+{"checks": 204, "passed": true, "scope": "finite controls corroborate analytical conditional proofs; no audit verdict; F final window and A absolute finite horizon remain distinct"}
+
+----- stderr -----
+

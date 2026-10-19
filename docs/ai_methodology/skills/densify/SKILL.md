@@ -52,15 +52,18 @@ ARCHIVE = indexed, preserved, out of the way) are made by the SUPERVISOR in
 the review loop below.
 
 **The lanes, explicitly (three review lanes + an execution lane):**
-- READER — a worker-tier model (strong comprehension, not the frontier
-  model). Its job is faithful extraction, not judgment: what each item
+- READER — a worker subagent on the user's configured worker model at
+  maximum available reasoning (strong comprehension). Its job is faithful
+  extraction, not judgment: what each item
   actually establishes (quote the theorem/claim), its artifacts (checkers,
   exact values), what it depends on, what carries it (and HOW that was
   verified — ancestry compare, restatement located, roll-up line), plus a
   recommendation with a confidence. The report must be complete enough that
   the supervisor can locate the full sources required by rule 0. Reports never replace those reads.
 - CHECKER — an independent refutation lane (prefer a different model family
-  from the readers) that TRAILS the readers batch-by-batch, spec'd to RESCUE:
+  from the readers when available; otherwise require a distinct restricted-input
+  context and label it same-family/fresh-context, never cross-family; hold
+  independent confirmation if context separation cannot be established) that TRAILS the readers batch-by-batch, spec'd to RESCUE:
   for every planned-archive item it hunts (i) corrections/supersessions of
   kept content, (ii) obligation records pricing published claims, (iii)
   forcing negatives on live routes, (iv) falsifiable/fit-free numbers stated

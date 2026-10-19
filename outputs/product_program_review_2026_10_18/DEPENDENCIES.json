@@ -1,0 +1,1764 @@
+{
+  "owner": "scripts/common_product_program_controls_2026_10_18.py",
+  "canonical_notes": [
+    "docs/COMMON_PRODUCT_FINITE_SEED_ROUTER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+    "docs/COMMON_PRODUCT_MICROSCOPIC_SEED_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+    "docs/COMMON_PRODUCT_PROGRAM_ATTACHMENT_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+    "docs/COMMON_PRODUCT_PROGRAM_CELL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+    "docs/COMMON_PRODUCT_PROGRAM_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+    "docs/COMMON_PRODUCT_PROGRAM_SECTOR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+    "docs/COMMON_PRODUCT_PROGRAM_TOLERANCE_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+    "docs/COMMON_PRODUCT_REFINED_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+    "docs/COMMON_PRODUCT_STAGE_RECORD_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+    "docs/COMMON_PRODUCT_STAGE_SEED_BOUNDED_THEOREM_NOTE_2026-10-18.md"
+  ],
+  "original_scope_mappings": [
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/proofs/mediated_common_product_program__PROPOSAL.md",
+      "sha256": "739e99c44feb30f0bdc569d804f0e643ff993ab556056e1b6820f7012a9de088",
+      "proof_dependency": true,
+      "scope": "conditional mathematical source"
+    },
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/proofs/mediated_common_product_program_check__REVIEW.md",
+      "sha256": "809a2083527cf942e6a6e879a6211600c9f144938915a43dbcf56d5680858fb6",
+      "proof_dependency": true,
+      "scope": "scoped analytical check"
+    },
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/proofs/mediated_program_attachment__PROPOSAL.md",
+      "sha256": "55af72a1a334730be95de5427646de29fa7d1d6ebac21d888dc1f231406d9b7a",
+      "proof_dependency": true,
+      "scope": "conditional mathematical source"
+    },
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/proofs/mediated_program_attachment_check__REVIEW.md",
+      "sha256": "48940d210811f4599c16677edde54b6e3b1be8d6715b7a14aa29e5c4b3b440ce",
+      "proof_dependency": true,
+      "scope": "scoped analytical check"
+    },
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/proofs/mediated_program_network__PROPOSAL.md",
+      "sha256": "1d830ee1638794876d2a5062f436be9e32b484fef0c79de095aa54d16c0e5edc",
+      "proof_dependency": true,
+      "scope": "conditional mathematical source"
+    },
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/proofs/mediated_program_network_check__REVIEW.md",
+      "sha256": "4e6e229f5cbc92321f72bf71289ed8f911c7663773e3731fa0ab54997f22db77",
+      "proof_dependency": true,
+      "scope": "scoped analytical check"
+    },
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/history/attachment_PROPOSAL_v1.md",
+      "sha256": "65355be5c834e18db22da52ae67e67b406cc81c40527071ae5b12920c9235cbb",
+      "proof_dependency": false,
+      "scope": "historical strict-min correction; not a premise"
+    },
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/context/mediated_program_cell__PROPOSAL.md",
+      "sha256": "0e665329d8034e1bf2dfbbd4cfd918fc7f95451060906562d56fe04e5ff5928d",
+      "proof_dependency": false,
+      "scope": "earlier different program-dependent encoded cell; comparison/context only, its execution evidence not reused"
+    },
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/context/mediated_program_cell_check__REVIEW.md",
+      "sha256": "160fcc32d0936a9f090c62a2fab9dfb649ae800353c956df1e101945fdf3a115",
+      "proof_dependency": false,
+      "scope": "earlier different program-dependent encoded cell; comparison/context only, its execution evidence not reused"
+    },
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/proofs/common_product_sector_transport__PROPOSAL.md",
+      "sha256": "a94697cf9dd3c0b62a38b97a3cc64640b7d3eac41d48f625e1595ec7d857dd76",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/proofs/common_product_sector_transport_check__REVIEW.md",
+      "sha256": "feb55d2719b8eda3eff7c8547497b23be2fae7b89ff1e6c5a91f53833e3c8272",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/proofs/common_product_coefficient_tolerance__PROPOSAL.md",
+      "sha256": "496cd963122ac22bdc3a66c475a83536a484a23e306d2a667596604973aff24c",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/proofs/common_product_coefficient_tolerance_check__REVIEW.md",
+      "sha256": "8c81728048223b2a20486f82671d8f152c284efbc48659d848fbeb7eaaeb31ab",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/history/common_product_coefficient_tolerance__PROPOSAL_v1.md",
+      "sha256": "8934d4f00c5dea01fe26c24a10f67a8b143e180269e1d7e66e11770a5df18260",
+      "proof_dependency": false,
+      "scope": null
+    },
+    {
+      "pr": 9697,
+      "manifest": "9697/outputs/common_product_program_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_program_2026_10_18/history/common_product_coefficient_tolerance_check__REVIEW_v1.md",
+      "sha256": "181a80d0d8d25cadd4bd62da18f8620221534e9c8598d5d1f15737039b9cdddd",
+      "proof_dependency": false,
+      "scope": null
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_common_product_program__PROPOSAL.md",
+      "sha256": "739e99c44feb30f0bdc569d804f0e643ff993ab556056e1b6820f7012a9de088",
+      "proof_dependency": true,
+      "scope": "conditional mathematical source"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_common_product_program_check__REVIEW.md",
+      "sha256": "809a2083527cf942e6a6e879a6211600c9f144938915a43dbcf56d5680858fb6",
+      "proof_dependency": true,
+      "scope": "scoped analytical check"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_program_attachment__PROPOSAL.md",
+      "sha256": "55af72a1a334730be95de5427646de29fa7d1d6ebac21d888dc1f231406d9b7a",
+      "proof_dependency": true,
+      "scope": "conditional mathematical source"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_program_attachment_check__REVIEW.md",
+      "sha256": "48940d210811f4599c16677edde54b6e3b1be8d6715b7a14aa29e5c4b3b440ce",
+      "proof_dependency": true,
+      "scope": "scoped analytical check"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_autonomous_interface__PROPOSAL.md",
+      "sha256": "bcc47793a94d578fcbf403115dcce099f6728752d0953a03d80051f75d3e22b5",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_autonomous_interface_check__REVIEW.md",
+      "sha256": "90c7926ed7c681286108afe5a9063a9f63f2be690026ff0abc56844214ab67b2",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_endpoint_launch__PROPOSAL.md",
+      "sha256": "fb72f4ed4af9d6f00d6430ec4997fab3f8fbb978b140692b083ddda5e324e9e4",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_endpoint_launch_check__REVIEW.md",
+      "sha256": "51247de9ba58bbfeb7f731c478d939e05e2e9d90956192d2e9e6f612401662c1",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_outer_boundary__PROPOSAL.md",
+      "sha256": "af7dfe4193865bb80f9302fcb39f62c7be9ab7693d29b1b53bea8f620f8f2c43",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_outer_boundary_check__REVIEW.md",
+      "sha256": "756514da092c820d3e19601565f6d60b174acc2aed26cfcad551e598f0020985",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_seed_router__PROPOSAL.md",
+      "sha256": "3a195efcf8d5196ed54a74228033d0888e7f18c864e481ce61b2efea6c67992b",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_seed_router_check__REVIEW.md",
+      "sha256": "5f5b1727a31df17facb9232e902c1d6985cd175058d66e54862ae614fef148a9",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/bandcenter_reference_measure_check__REVIEW.md",
+      "sha256": "1953d153c9ac8583202e7ca18bff62829bfbff2373691cc43a5ae152a2a6b0ae",
+      "proof_dependency": true,
+      "scope": "Only operator-defined scalar reference measure, completeness, cyclicity and band-tail theorem"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/endpoint_bandcenter_reference__PROPOSAL.md",
+      "sha256": "510d5b1b51a152f90a8c2054fab382f74fb3f31159359e9c723e89d557380b2c",
+      "proof_dependency": true,
+      "scope": "ONLY section1 positive endpoint family; all parity/converter/old-system/runtime portions excluded"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/history/common_product_outer_boundary__PROPOSAL_v1.md",
+      "sha256": "e4649afe46ad1e704cba35a4bfc24013522cebc3de2278b01396085c37e3e396",
+      "proof_dependency": false,
+      "scope": "Historical Laplacian-deletion model; not equal-diagonal emitter premise"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/history/mediated_program_attachment__PROPOSAL_v1.md",
+      "sha256": "65355be5c834e18db22da52ae67e67b406cc81c40527071ae5b12920c9235cbb",
+      "proof_dependency": false,
+      "scope": "historical strict-min correction; not a premise"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window__PROPOSAL.md",
+      "sha256": "1ea1943e162c1ab7f0da057a1343b95b859e394c25420d5577830a838d116b1b",
+      "proof_dependency": true,
+      "scope": "Uniform observation-window source or distinct check"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window_check__REVIEW.md",
+      "sha256": "1337df4d94e3d6b555a88167945e5e8490e9df978b1fbc3e140db17622e36cbb",
+      "proof_dependency": true,
+      "scope": "Uniform observation-window source or distinct check"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window__TIMING_MIXTURE.md",
+      "sha256": "c2713ddb892b5c1f509ab66a796a6aa17711552496044e558805984db58eef73",
+      "proof_dependency": true,
+      "scope": "Classical timing-mixture source or distinct check"
+    },
+    {
+      "pr": 9700,
+      "manifest": "9700/outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window_check__TIMING_REVIEW.md",
+      "sha256": "30c900378c0d18ab9420287001246ee1d506008a4a1ada4e012afcf056ec4c74",
+      "proof_dependency": true,
+      "scope": "Classical timing-mixture source or distinct check"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_finite_seed_scaling__PROPOSAL.md",
+      "sha256": "0e21dae83a8449f03276b4099ea6a6ae23e08afa5b4a1297122e67e7b9095f6e",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_finite_seed_scaling_check__REVIEW.md",
+      "sha256": "751c97d5cabdf08f12f1c1852f0fbcf2bfc5fdcfe3179b6cc033ad23f36c91e5",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_launch_derivative_bounds__PROPOSAL.md",
+      "sha256": "378086fdc6b217f9a2eb9d85fdb1ca862a54905be048d298465e0b123722fec8",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_launch_derivative_bounds_check__REVIEW.md",
+      "sha256": "aadee4cd02baeef710662631401aef613c1bd353252d7f75d499289991bcf341",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_second_order_attachment__PROPOSAL.md",
+      "sha256": "a322e3689a5b58cd56c173d22df93c68199ead8cf04af88cb101af305798468c",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_second_order_attachment_check__REVIEW.md",
+      "sha256": "a12914c8b15d73836f93d0472f94ddfbf4a63b9eff5f9191e4ed483b7cdcf2af",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_refined_resource_family__PROPOSAL.md",
+      "sha256": "79f5bd9c07fe0eb0f37d051446f69759a32559ba7ce9e8bb835db01287188bb3",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_refined_resource_family_check__REVIEW.md",
+      "sha256": "5999fccf27396704e010049ee62fd5c342afcbc5fbd8f335ee11dd46783bb575",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_common_product_program__PROPOSAL.md",
+      "sha256": "739e99c44feb30f0bdc569d804f0e643ff993ab556056e1b6820f7012a9de088",
+      "proof_dependency": true,
+      "scope": "conditional mathematical source"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_common_product_program_check__REVIEW.md",
+      "sha256": "809a2083527cf942e6a6e879a6211600c9f144938915a43dbcf56d5680858fb6",
+      "proof_dependency": true,
+      "scope": "scoped analytical check"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_program_attachment__PROPOSAL.md",
+      "sha256": "55af72a1a334730be95de5427646de29fa7d1d6ebac21d888dc1f231406d9b7a",
+      "proof_dependency": true,
+      "scope": "conditional mathematical source"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_program_attachment_check__REVIEW.md",
+      "sha256": "48940d210811f4599c16677edde54b6e3b1be8d6715b7a14aa29e5c4b3b440ce",
+      "proof_dependency": true,
+      "scope": "scoped analytical check"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_autonomous_interface__PROPOSAL.md",
+      "sha256": "bcc47793a94d578fcbf403115dcce099f6728752d0953a03d80051f75d3e22b5",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_autonomous_interface_check__REVIEW.md",
+      "sha256": "90c7926ed7c681286108afe5a9063a9f63f2be690026ff0abc56844214ab67b2",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_endpoint_launch__PROPOSAL.md",
+      "sha256": "fb72f4ed4af9d6f00d6430ec4997fab3f8fbb978b140692b083ddda5e324e9e4",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_endpoint_launch_check__REVIEW.md",
+      "sha256": "51247de9ba58bbfeb7f731c478d939e05e2e9d90956192d2e9e6f612401662c1",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_outer_boundary__PROPOSAL.md",
+      "sha256": "af7dfe4193865bb80f9302fcb39f62c7be9ab7693d29b1b53bea8f620f8f2c43",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_outer_boundary_check__REVIEW.md",
+      "sha256": "756514da092c820d3e19601565f6d60b174acc2aed26cfcad551e598f0020985",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_seed_router__PROPOSAL.md",
+      "sha256": "3a195efcf8d5196ed54a74228033d0888e7f18c864e481ce61b2efea6c67992b",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_seed_router_check__REVIEW.md",
+      "sha256": "5f5b1727a31df17facb9232e902c1d6985cd175058d66e54862ae614fef148a9",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/bandcenter_reference_measure_check__REVIEW.md",
+      "sha256": "1953d153c9ac8583202e7ca18bff62829bfbff2373691cc43a5ae152a2a6b0ae",
+      "proof_dependency": true,
+      "scope": "Only operator-defined scalar reference measure, completeness, cyclicity and band-tail theorem"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/endpoint_bandcenter_reference__PROPOSAL.md",
+      "sha256": "510d5b1b51a152f90a8c2054fab382f74fb3f31159359e9c723e89d557380b2c",
+      "proof_dependency": true,
+      "scope": "ONLY section1 positive endpoint family; all parity/converter/old-system/runtime portions excluded"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/history/common_product_outer_boundary__PROPOSAL_v1.md",
+      "sha256": "e4649afe46ad1e704cba35a4bfc24013522cebc3de2278b01396085c37e3e396",
+      "proof_dependency": false,
+      "scope": "Historical Laplacian-deletion model; not equal-diagonal emitter premise"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/history/mediated_program_attachment__PROPOSAL_v1.md",
+      "sha256": "65355be5c834e18db22da52ae67e67b406cc81c40527071ae5b12920c9235cbb",
+      "proof_dependency": false,
+      "scope": "historical strict-min correction; not a premise"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window__PROPOSAL.md",
+      "sha256": "1ea1943e162c1ab7f0da057a1343b95b859e394c25420d5577830a838d116b1b",
+      "proof_dependency": true,
+      "scope": "Uniform observation-window source or distinct check"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window_check__REVIEW.md",
+      "sha256": "1337df4d94e3d6b555a88167945e5e8490e9df978b1fbc3e140db17622e36cbb",
+      "proof_dependency": true,
+      "scope": "Uniform observation-window source or distinct check"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window__TIMING_MIXTURE.md",
+      "sha256": "c2713ddb892b5c1f509ab66a796a6aa17711552496044e558805984db58eef73",
+      "proof_dependency": true,
+      "scope": "Classical timing-mixture source or distinct check"
+    },
+    {
+      "pr": 9703,
+      "manifest": "9703/outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window_check__TIMING_REVIEW.md",
+      "sha256": "30c900378c0d18ab9420287001246ee1d506008a4a1ada4e012afcf056ec4c74",
+      "proof_dependency": true,
+      "scope": "Classical timing-mixture source or distinct check"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_scattering__PROPOSAL.md",
+      "sha256": "59b59ea3fc51e6ae364716a63ff4b9e001390cba112f48f0b4214c01318865a6",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_scattering_check__REVIEW.md",
+      "sha256": "3e1dc92540af46ec3a20b928001c7796795bf6c6a6b8580fe307c3e3ca3f8eb6",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_packet__PROPOSAL.md",
+      "sha256": "c105226ebeead1f87bb11c6afcc8dadac59520401d5f8c0fa6dba4ba3ef90e4e",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_packet_check__REVIEW.md",
+      "sha256": "c27e7a93c6d76e8261d5a081c3af6ad94438aa803a69354dfb7d2e762e6e0234",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_finite_seed__PROPOSAL.md",
+      "sha256": "452231afa993c7a14e1b55c0b302d499e0284ce02266f8a1039a75474053392a",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_finite_seed_check__REVIEW.md",
+      "sha256": "50148e56b0e38556f633cf225df82403b66d2e60c43f6391d355f84d6c4f2a51",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/history/common_product_microscopic_finite_seed__PROPOSAL.preclarification.3261f709.md",
+      "sha256": "3261f709fd527b369546c6531e5e3bb2967b3c023e161b72aeab470cd3e6d7cb",
+      "proof_dependency": false,
+      "scope": "Preserved preclarification history, not a proof premise."
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_finite_seed_scaling__PROPOSAL.md",
+      "sha256": "0e21dae83a8449f03276b4099ea6a6ae23e08afa5b4a1297122e67e7b9095f6e",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_finite_seed_scaling_check__REVIEW.md",
+      "sha256": "751c97d5cabdf08f12f1c1852f0fbcf2bfc5fdcfe3179b6cc033ad23f36c91e5",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_launch_derivative_bounds__PROPOSAL.md",
+      "sha256": "378086fdc6b217f9a2eb9d85fdb1ca862a54905be048d298465e0b123722fec8",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_launch_derivative_bounds_check__REVIEW.md",
+      "sha256": "aadee4cd02baeef710662631401aef613c1bd353252d7f75d499289991bcf341",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_second_order_attachment__PROPOSAL.md",
+      "sha256": "a322e3689a5b58cd56c173d22df93c68199ead8cf04af88cb101af305798468c",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_second_order_attachment_check__REVIEW.md",
+      "sha256": "a12914c8b15d73836f93d0472f94ddfbf4a63b9eff5f9191e4ed483b7cdcf2af",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_refined_resource_family__PROPOSAL.md",
+      "sha256": "79f5bd9c07fe0eb0f37d051446f69759a32559ba7ce9e8bb835db01287188bb3",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_refined_resource_family_check__REVIEW.md",
+      "sha256": "5999fccf27396704e010049ee62fd5c342afcbc5fbd8f335ee11dd46783bb575",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_common_product_program__PROPOSAL.md",
+      "sha256": "739e99c44feb30f0bdc569d804f0e643ff993ab556056e1b6820f7012a9de088",
+      "proof_dependency": true,
+      "scope": "conditional mathematical source"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_common_product_program_check__REVIEW.md",
+      "sha256": "809a2083527cf942e6a6e879a6211600c9f144938915a43dbcf56d5680858fb6",
+      "proof_dependency": true,
+      "scope": "scoped analytical check"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_program_attachment__PROPOSAL.md",
+      "sha256": "55af72a1a334730be95de5427646de29fa7d1d6ebac21d888dc1f231406d9b7a",
+      "proof_dependency": true,
+      "scope": "conditional mathematical source"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_program_attachment_check__REVIEW.md",
+      "sha256": "48940d210811f4599c16677edde54b6e3b1be8d6715b7a14aa29e5c4b3b440ce",
+      "proof_dependency": true,
+      "scope": "scoped analytical check"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_autonomous_interface__PROPOSAL.md",
+      "sha256": "bcc47793a94d578fcbf403115dcce099f6728752d0953a03d80051f75d3e22b5",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_autonomous_interface_check__REVIEW.md",
+      "sha256": "90c7926ed7c681286108afe5a9063a9f63f2be690026ff0abc56844214ab67b2",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_endpoint_launch__PROPOSAL.md",
+      "sha256": "fb72f4ed4af9d6f00d6430ec4997fab3f8fbb978b140692b083ddda5e324e9e4",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_endpoint_launch_check__REVIEW.md",
+      "sha256": "51247de9ba58bbfeb7f731c478d939e05e2e9d90956192d2e9e6f612401662c1",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_outer_boundary__PROPOSAL.md",
+      "sha256": "af7dfe4193865bb80f9302fcb39f62c7be9ab7693d29b1b53bea8f620f8f2c43",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_outer_boundary_check__REVIEW.md",
+      "sha256": "756514da092c820d3e19601565f6d60b174acc2aed26cfcad551e598f0020985",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_seed_router__PROPOSAL.md",
+      "sha256": "3a195efcf8d5196ed54a74228033d0888e7f18c864e481ce61b2efea6c67992b",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_seed_router_check__REVIEW.md",
+      "sha256": "5f5b1727a31df17facb9232e902c1d6985cd175058d66e54862ae614fef148a9",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/bandcenter_reference_measure_check__REVIEW.md",
+      "sha256": "1953d153c9ac8583202e7ca18bff62829bfbff2373691cc43a5ae152a2a6b0ae",
+      "proof_dependency": true,
+      "scope": "Only operator-defined scalar reference measure, completeness, cyclicity and band-tail theorem"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/endpoint_bandcenter_reference__PROPOSAL.md",
+      "sha256": "510d5b1b51a152f90a8c2054fab382f74fb3f31159359e9c723e89d557380b2c",
+      "proof_dependency": true,
+      "scope": "ONLY section1 positive endpoint family; all parity/converter/old-system/runtime portions excluded"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/history/common_product_outer_boundary__PROPOSAL_v1.md",
+      "sha256": "e4649afe46ad1e704cba35a4bfc24013522cebc3de2278b01396085c37e3e396",
+      "proof_dependency": false,
+      "scope": "Historical Laplacian-deletion model; not equal-diagonal emitter premise"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/history/mediated_program_attachment__PROPOSAL_v1.md",
+      "sha256": "65355be5c834e18db22da52ae67e67b406cc81c40527071ae5b12920c9235cbb",
+      "proof_dependency": false,
+      "scope": "historical strict-min correction; not a premise"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window__PROPOSAL.md",
+      "sha256": "1ea1943e162c1ab7f0da057a1343b95b859e394c25420d5577830a838d116b1b",
+      "proof_dependency": true,
+      "scope": "Uniform observation-window source or distinct check"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window_check__REVIEW.md",
+      "sha256": "1337df4d94e3d6b555a88167945e5e8490e9df978b1fbc3e140db17622e36cbb",
+      "proof_dependency": true,
+      "scope": "Uniform observation-window source or distinct check"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window__TIMING_MIXTURE.md",
+      "sha256": "c2713ddb892b5c1f509ab66a796a6aa17711552496044e558805984db58eef73",
+      "proof_dependency": true,
+      "scope": "Classical timing-mixture source or distinct check"
+    },
+    {
+      "pr": 9705,
+      "manifest": "9705/outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window_check__TIMING_REVIEW.md",
+      "sha256": "30c900378c0d18ab9420287001246ee1d506008a4a1ada4e012afcf056ec4c74",
+      "proof_dependency": true,
+      "scope": "Classical timing-mixture source or distinct check"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_router/PROPOSAL.md",
+      "sha256": "60bc91b6ad085a722b3805de1d1b0d93a9cabcf77b1c3f5a74e43045354c3182",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_router_check/REVIEW.md",
+      "sha256": "8fcee7e6ee6579196141e8e67d5adbf9887969cbbbd3de3c7d00c9caf8777e5d",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_seed/PROPOSAL.md",
+      "sha256": "340b724d949f9c88da332209e200c2e593b89b68a1a1e02caf5ba9cebbef44f2",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_seed_check/REVIEW.md",
+      "sha256": "6f99b759c1d2a97a55b81a3d954c8721f0b07ec167564619b0a470fa1b676314",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_scattering__PROPOSAL.md",
+      "sha256": "59b59ea3fc51e6ae364716a63ff4b9e001390cba112f48f0b4214c01318865a6",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_scattering_check__REVIEW.md",
+      "sha256": "3e1dc92540af46ec3a20b928001c7796795bf6c6a6b8580fe307c3e3ca3f8eb6",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_packet__PROPOSAL.md",
+      "sha256": "c105226ebeead1f87bb11c6afcc8dadac59520401d5f8c0fa6dba4ba3ef90e4e",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_packet_check__REVIEW.md",
+      "sha256": "c27e7a93c6d76e8261d5a081c3af6ad94438aa803a69354dfb7d2e762e6e0234",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_finite_seed__PROPOSAL.md",
+      "sha256": "452231afa993c7a14e1b55c0b302d499e0284ce02266f8a1039a75474053392a",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_finite_seed_check__REVIEW.md",
+      "sha256": "50148e56b0e38556f633cf225df82403b66d2e60c43f6391d355f84d6c4f2a51",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/history/common_product_microscopic_finite_seed__PROPOSAL.preclarification.3261f709.md",
+      "sha256": "3261f709fd527b369546c6531e5e3bb2967b3c023e161b72aeab470cd3e6d7cb",
+      "proof_dependency": false,
+      "scope": "Preserved preclarification history, not a proof premise."
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_finite_seed_scaling__PROPOSAL.md",
+      "sha256": "0e21dae83a8449f03276b4099ea6a6ae23e08afa5b4a1297122e67e7b9095f6e",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_finite_seed_scaling_check__REVIEW.md",
+      "sha256": "751c97d5cabdf08f12f1c1852f0fbcf2bfc5fdcfe3179b6cc033ad23f36c91e5",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_launch_derivative_bounds__PROPOSAL.md",
+      "sha256": "378086fdc6b217f9a2eb9d85fdb1ca862a54905be048d298465e0b123722fec8",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_launch_derivative_bounds_check__REVIEW.md",
+      "sha256": "aadee4cd02baeef710662631401aef613c1bd353252d7f75d499289991bcf341",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_second_order_attachment__PROPOSAL.md",
+      "sha256": "a322e3689a5b58cd56c173d22df93c68199ead8cf04af88cb101af305798468c",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_second_order_attachment_check__REVIEW.md",
+      "sha256": "a12914c8b15d73836f93d0472f94ddfbf4a63b9eff5f9191e4ed483b7cdcf2af",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_refined_resource_family__PROPOSAL.md",
+      "sha256": "79f5bd9c07fe0eb0f37d051446f69759a32559ba7ce9e8bb835db01287188bb3",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_refined_resource_family_check__REVIEW.md",
+      "sha256": "5999fccf27396704e010049ee62fd5c342afcbc5fbd8f335ee11dd46783bb575",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_common_product_program__PROPOSAL.md",
+      "sha256": "739e99c44feb30f0bdc569d804f0e643ff993ab556056e1b6820f7012a9de088",
+      "proof_dependency": true,
+      "scope": "conditional mathematical source"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_common_product_program_check__REVIEW.md",
+      "sha256": "809a2083527cf942e6a6e879a6211600c9f144938915a43dbcf56d5680858fb6",
+      "proof_dependency": true,
+      "scope": "scoped analytical check"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_program_attachment__PROPOSAL.md",
+      "sha256": "55af72a1a334730be95de5427646de29fa7d1d6ebac21d888dc1f231406d9b7a",
+      "proof_dependency": true,
+      "scope": "conditional mathematical source"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_program_attachment_check__REVIEW.md",
+      "sha256": "48940d210811f4599c16677edde54b6e3b1be8d6715b7a14aa29e5c4b3b440ce",
+      "proof_dependency": true,
+      "scope": "scoped analytical check"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_autonomous_interface__PROPOSAL.md",
+      "sha256": "bcc47793a94d578fcbf403115dcce099f6728752d0953a03d80051f75d3e22b5",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_autonomous_interface_check__REVIEW.md",
+      "sha256": "90c7926ed7c681286108afe5a9063a9f63f2be690026ff0abc56844214ab67b2",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_endpoint_launch__PROPOSAL.md",
+      "sha256": "fb72f4ed4af9d6f00d6430ec4997fab3f8fbb978b140692b083ddda5e324e9e4",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_endpoint_launch_check__REVIEW.md",
+      "sha256": "51247de9ba58bbfeb7f731c478d939e05e2e9d90956192d2e9e6f612401662c1",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_outer_boundary__PROPOSAL.md",
+      "sha256": "af7dfe4193865bb80f9302fcb39f62c7be9ab7693d29b1b53bea8f620f8f2c43",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_outer_boundary_check__REVIEW.md",
+      "sha256": "756514da092c820d3e19601565f6d60b174acc2aed26cfcad551e598f0020985",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_seed_router__PROPOSAL.md",
+      "sha256": "3a195efcf8d5196ed54a74228033d0888e7f18c864e481ce61b2efea6c67992b",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_seed_router_check__REVIEW.md",
+      "sha256": "5f5b1727a31df17facb9232e902c1d6985cd175058d66e54862ae614fef148a9",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/bandcenter_reference_measure_check__REVIEW.md",
+      "sha256": "1953d153c9ac8583202e7ca18bff62829bfbff2373691cc43a5ae152a2a6b0ae",
+      "proof_dependency": true,
+      "scope": "Only operator-defined scalar reference measure, completeness, cyclicity and band-tail theorem"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/endpoint_bandcenter_reference__PROPOSAL.md",
+      "sha256": "510d5b1b51a152f90a8c2054fab382f74fb3f31159359e9c723e89d557380b2c",
+      "proof_dependency": true,
+      "scope": "ONLY section1 positive endpoint family; all parity/converter/old-system/runtime portions excluded"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/history/common_product_outer_boundary__PROPOSAL_v1.md",
+      "sha256": "e4649afe46ad1e704cba35a4bfc24013522cebc3de2278b01396085c37e3e396",
+      "proof_dependency": false,
+      "scope": "Historical Laplacian-deletion model; not equal-diagonal emitter premise"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/history/mediated_program_attachment__PROPOSAL_v1.md",
+      "sha256": "65355be5c834e18db22da52ae67e67b406cc81c40527071ae5b12920c9235cbb",
+      "proof_dependency": false,
+      "scope": "historical strict-min correction; not a premise"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window__PROPOSAL.md",
+      "sha256": "1ea1943e162c1ab7f0da057a1343b95b859e394c25420d5577830a838d116b1b",
+      "proof_dependency": true,
+      "scope": "Uniform observation-window source or distinct check"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window_check__REVIEW.md",
+      "sha256": "1337df4d94e3d6b555a88167945e5e8490e9df978b1fbc3e140db17622e36cbb",
+      "proof_dependency": true,
+      "scope": "Uniform observation-window source or distinct check"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window__TIMING_MIXTURE.md",
+      "sha256": "c2713ddb892b5c1f509ab66a796a6aa17711552496044e558805984db58eef73",
+      "proof_dependency": true,
+      "scope": "Classical timing-mixture source or distinct check"
+    },
+    {
+      "pr": 9707,
+      "manifest": "9707/outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window_check__TIMING_REVIEW.md",
+      "sha256": "30c900378c0d18ab9420287001246ee1d506008a4a1ada4e012afcf056ec4c74",
+      "proof_dependency": true,
+      "scope": "Classical timing-mixture source or distinct check"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_core/PROPOSAL.md",
+      "sha256": "c91300a5eb6db28e67e4b494398c57c3c53bc39d2da8c800a12c284cc5d6c729",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_core_check/REVIEW.md",
+      "sha256": "61de4ee29dd3838c4fc7c3bd19c49bf0cd4cb4bacf5ad3e8e10ca06c864e27c1",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_packet/PROPOSAL.md",
+      "sha256": "3477197cdf54d18ab538c517726d64f3dbc556f6ddb7a6d4b2608b458d34eeb9",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_packet_check/REVIEW.md",
+      "sha256": "17029fa32989bae3869c4ffee81def65201edc0f0b996013ede8996ca8cf1453",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_finite_seed/PROPOSAL.md",
+      "sha256": "7286105ffd9b6b6d0caa97b121c5e79d37dfcf638128d63c6bbc144e9aa2a995",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_finite_seed_check/REVIEW.md",
+      "sha256": "60896f1b1b4b76d27158ce46e097565d1ed777d45ee4dc1c394b02d52ac71a9f",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_writer_resolvent_sharpening/PROPOSAL.md",
+      "sha256": "22bca57ebcbfb8cfabebbe044cd5302e784e585b503cee28d6172afc72e54cf0",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_writer_resolvent_sharpening/certify_inverse.py",
+      "sha256": "f1deb1c3200ca89e287f92ea69acbdf0ac02442ef84795717c795c0aa4b62a7d",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_writer_resolvent_sharpening/certificate.txt",
+      "sha256": "218168f4038232b24f2daa861b8adb37fe6eecc9845bf0c30bc4bb1338e58dda",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_writer_resolvent_sharpening_check/REVIEW.md",
+      "sha256": "d96ed6b26856490d802ceed2009f75aa9c0919eb8760bcfffe0389807965d1b5",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/autonomous_record_route/PROPOSAL.md",
+      "sha256": "93445d7d52e32859c980f0a0ebc6024238bedc7571d09e145ab1b128d8292f56",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/autonomous_record_route_check/REVIEW.md",
+      "sha256": "c5f3e1d7cef939e1bfa95df19f970e4da454cd12a74f068147b6cd50cdf51d5a",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_flag_branch/PROPOSAL.md",
+      "sha256": "e7b53eeda3fc7df96986d3b55f68d9e5af4f1b6657ba068b6f33d03e18a37ee0",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_flag_branch_check/REVIEW.md",
+      "sha256": "e548a664449546f76fbad2b24d5c7bcf5e0d318ecb6dd75f4234fb078ccdae5a",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_resource_split/PROPOSAL.md",
+      "sha256": "c4086aec4d338da11dcea256367e34ceea496044ca7ff1bc30ca55ee5489f977",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_resource_split_check/REVIEW.md",
+      "sha256": "d697d3cdb72ee52a62f3508245a87239108937819f41966c120bc149d674befa",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_narrow_cutoff_derivative/PROPOSAL.md",
+      "sha256": "550946fdebc4e68522c997ed914e23a8baf40cb660dfc22e4f09e00add1216a3",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "files",
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_narrow_cutoff_derivative_check/REVIEW.md",
+      "sha256": "6a4866e76cc5c6c760284c9a3f6c07c71410f701d727e8765edc8f6a57d328a4",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_router/PROPOSAL.md",
+      "sha256": "60bc91b6ad085a722b3805de1d1b0d93a9cabcf77b1c3f5a74e43045354c3182",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_router_check/REVIEW.md",
+      "sha256": "8fcee7e6ee6579196141e8e67d5adbf9887969cbbbd3de3c7d00c9caf8777e5d",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_seed/PROPOSAL.md",
+      "sha256": "340b724d949f9c88da332209e200c2e593b89b68a1a1e02caf5ba9cebbef44f2",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_seed_check/REVIEW.md",
+      "sha256": "6f99b759c1d2a97a55b81a3d954c8721f0b07ec167564619b0a470fa1b676314",
+      "proof_dependency": true,
+      "scope": null
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_scattering__PROPOSAL.md",
+      "sha256": "59b59ea3fc51e6ae364716a63ff4b9e001390cba112f48f0b4214c01318865a6",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_scattering_check__REVIEW.md",
+      "sha256": "3e1dc92540af46ec3a20b928001c7796795bf6c6a6b8580fe307c3e3ca3f8eb6",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_packet__PROPOSAL.md",
+      "sha256": "c105226ebeead1f87bb11c6afcc8dadac59520401d5f8c0fa6dba4ba3ef90e4e",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_packet_check__REVIEW.md",
+      "sha256": "c27e7a93c6d76e8261d5a081c3af6ad94438aa803a69354dfb7d2e762e6e0234",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_finite_seed__PROPOSAL.md",
+      "sha256": "452231afa993c7a14e1b55c0b302d499e0284ce02266f8a1039a75474053392a",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_finite_seed_check__REVIEW.md",
+      "sha256": "50148e56b0e38556f633cf225df82403b66d2e60c43f6391d355f84d6c4f2a51",
+      "proof_dependency": true,
+      "scope": "Exact new argument or source-exposed analytical check; conditional scope retained."
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/history/common_product_microscopic_finite_seed__PROPOSAL.preclarification.3261f709.md",
+      "sha256": "3261f709fd527b369546c6531e5e3bb2967b3c023e161b72aeab470cd3e6d7cb",
+      "proof_dependency": false,
+      "scope": "Preserved preclarification history, not a proof premise."
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_finite_seed_scaling__PROPOSAL.md",
+      "sha256": "0e21dae83a8449f03276b4099ea6a6ae23e08afa5b4a1297122e67e7b9095f6e",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_finite_seed_scaling_check__REVIEW.md",
+      "sha256": "751c97d5cabdf08f12f1c1852f0fbcf2bfc5fdcfe3179b6cc033ad23f36c91e5",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_launch_derivative_bounds__PROPOSAL.md",
+      "sha256": "378086fdc6b217f9a2eb9d85fdb1ca862a54905be048d298465e0b123722fec8",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_launch_derivative_bounds_check__REVIEW.md",
+      "sha256": "aadee4cd02baeef710662631401aef613c1bd353252d7f75d499289991bcf341",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_second_order_attachment__PROPOSAL.md",
+      "sha256": "a322e3689a5b58cd56c173d22df93c68199ead8cf04af88cb101af305798468c",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_second_order_attachment_check__REVIEW.md",
+      "sha256": "a12914c8b15d73836f93d0472f94ddfbf4a63b9eff5f9191e4ed483b7cdcf2af",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_refined_resource_family__PROPOSAL.md",
+      "sha256": "79f5bd9c07fe0eb0f37d051446f69759a32559ba7ce9e8bb835db01287188bb3",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_refined_resource_family_check__REVIEW.md",
+      "sha256": "5999fccf27396704e010049ee62fd5c342afcbc5fbd8f335ee11dd46783bb575",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source or distinct exposed analytical check"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_common_product_program__PROPOSAL.md",
+      "sha256": "739e99c44feb30f0bdc569d804f0e643ff993ab556056e1b6820f7012a9de088",
+      "proof_dependency": true,
+      "scope": "conditional mathematical source"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_common_product_program_check__REVIEW.md",
+      "sha256": "809a2083527cf942e6a6e879a6211600c9f144938915a43dbcf56d5680858fb6",
+      "proof_dependency": true,
+      "scope": "scoped analytical check"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_program_attachment__PROPOSAL.md",
+      "sha256": "55af72a1a334730be95de5427646de29fa7d1d6ebac21d888dc1f231406d9b7a",
+      "proof_dependency": true,
+      "scope": "conditional mathematical source"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_program_attachment_check__REVIEW.md",
+      "sha256": "48940d210811f4599c16677edde54b6e3b1be8d6715b7a14aa29e5c4b3b440ce",
+      "proof_dependency": true,
+      "scope": "scoped analytical check"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_autonomous_interface__PROPOSAL.md",
+      "sha256": "bcc47793a94d578fcbf403115dcce099f6728752d0953a03d80051f75d3e22b5",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_autonomous_interface_check__REVIEW.md",
+      "sha256": "90c7926ed7c681286108afe5a9063a9f63f2be690026ff0abc56844214ab67b2",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_endpoint_launch__PROPOSAL.md",
+      "sha256": "fb72f4ed4af9d6f00d6430ec4997fab3f8fbb978b140692b083ddda5e324e9e4",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_endpoint_launch_check__REVIEW.md",
+      "sha256": "51247de9ba58bbfeb7f731c478d939e05e2e9d90956192d2e9e6f612401662c1",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_outer_boundary__PROPOSAL.md",
+      "sha256": "af7dfe4193865bb80f9302fcb39f62c7be9ab7693d29b1b53bea8f620f8f2c43",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_outer_boundary_check__REVIEW.md",
+      "sha256": "756514da092c820d3e19601565f6d60b174acc2aed26cfcad551e598f0020985",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_seed_router__PROPOSAL.md",
+      "sha256": "3a195efcf8d5196ed54a74228033d0888e7f18c864e481ce61b2efea6c67992b",
+      "proof_dependency": true,
+      "scope": "Conditional mathematical source"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_seed_router_check__REVIEW.md",
+      "sha256": "5f5b1727a31df17facb9232e902c1d6985cd175058d66e54862ae614fef148a9",
+      "proof_dependency": true,
+      "scope": "Distinct source-exposed analytical check; not audit"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/bandcenter_reference_measure_check__REVIEW.md",
+      "sha256": "1953d153c9ac8583202e7ca18bff62829bfbff2373691cc43a5ae152a2a6b0ae",
+      "proof_dependency": true,
+      "scope": "Only operator-defined scalar reference measure, completeness, cyclicity and band-tail theorem"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/endpoint_bandcenter_reference__PROPOSAL.md",
+      "sha256": "510d5b1b51a152f90a8c2054fab382f74fb3f31159359e9c723e89d557380b2c",
+      "proof_dependency": true,
+      "scope": "ONLY section1 positive endpoint family; all parity/converter/old-system/runtime portions excluded"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/history/common_product_outer_boundary__PROPOSAL_v1.md",
+      "sha256": "e4649afe46ad1e704cba35a4bfc24013522cebc3de2278b01396085c37e3e396",
+      "proof_dependency": false,
+      "scope": "Historical Laplacian-deletion model; not equal-diagonal emitter premise"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/history/mediated_program_attachment__PROPOSAL_v1.md",
+      "sha256": "65355be5c834e18db22da52ae67e67b406cc81c40527071ae5b12920c9235cbb",
+      "proof_dependency": false,
+      "scope": "historical strict-min correction; not a premise"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window__PROPOSAL.md",
+      "sha256": "1ea1943e162c1ab7f0da057a1343b95b859e394c25420d5577830a838d116b1b",
+      "proof_dependency": true,
+      "scope": "Uniform observation-window source or distinct check"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window_check__REVIEW.md",
+      "sha256": "1337df4d94e3d6b555a88167945e5e8490e9df978b1fbc3e140db17622e36cbb",
+      "proof_dependency": true,
+      "scope": "Uniform observation-window source or distinct check"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window__TIMING_MIXTURE.md",
+      "sha256": "c2713ddb892b5c1f509ab66a796a6aa17711552496044e558805984db58eef73",
+      "proof_dependency": true,
+      "scope": "Classical timing-mixture source or distinct check"
+    },
+    {
+      "pr": 9710,
+      "manifest": "9710/outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "kind": "inherited_files",
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window_check__TIMING_REVIEW.md",
+      "sha256": "30c900378c0d18ab9420287001246ee1d506008a4a1ada4e012afcf056ec4c74",
+      "proof_dependency": true,
+      "scope": "Classical timing-mixture source or distinct check"
+    }
+  ],
+  "history_rule": "proof_dependency=false is exact preserved nonpremise history; true rows supply only their explicit bounded scope. Historical validation labels do not certify current capture."
+}

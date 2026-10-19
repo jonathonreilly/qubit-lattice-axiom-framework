@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "base_revision": "4b3d652e8a383346a34c03946415681eb1fcb17c",
+  "manifest_sha256": "857c4932273fab8bf3795e946389fcbb9d795f65478585e6770a70d5fff5ed8a",
+  "notes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_finite_seed_publication/NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_FINITE_SEED_ROUTER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "883a5d0c0ffb41260b64813697cc936908d337ddaaf8f7372b8f878009e16143"
+    }
+  ],
+  "files": 20,
+  "provenance": 1,
+  "links": 3,
+  "nodes": 7250,
+  "edges": 16245,
+  "added_nodes": [
+    "common_product_finite_seed_router_bounded_theorem_note_2026-10-18"
+  ],
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical installed source/provenance/link/topology checks only. Exact analytical checks separately pinned; no scientific executable or retained audit."
+}

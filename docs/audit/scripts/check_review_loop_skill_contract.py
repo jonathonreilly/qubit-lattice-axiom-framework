@@ -174,14 +174,25 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"premise_decision_history\.json",
     ),
     "reviewer_model_and_effort": (
-        r"^Review-loop is a text/code/math review path\. Owner direction \(2026-09-08\):\s+"
-        r"use \*\*Astra low\*\* \(`gpt-6-astra`, `low`\) for ordinary pre-landing science review\.",
-        r"\.\s+Escalate a material mathematical or premise question,\s+"
-        r"reviewer disagreement or failed decisive control that the unit review cannot\s+"
-        r"resolve through a narrow correction to\s+\*\*Astra xhigh\*\*;",
+        r"^Review-loop is a text/code/math review path\. For ordinary pre-landing science\s+"
+        r"review, use the \*\*fast reviewer\*\* named in the owner's landing-review setting\s+"
+        r"\(`docs/ai_methodology/SCIENCE_WORKFLOW\.md` section 4; owner direction\s+"
+        r"2026-09-08\), from a different model family than the author when one is\s+"
+        r"available\.",
+        r"\.\s+Escalate a material mathematical or\s+"
+        r"premise question, reviewer disagreement or failed decisive control that the\s+"
+        r"unit review cannot resolve through a narrow correction to the \*\*strongest\s+"
+        r"configured reviewer\*\* in that setting;",
         r"\.\s+Respect a later explicit owner choice\.",
-        r"\.\s+If a requested\s+model is unavailable, report that fact and use an available reviewer only\s+"
-        r"with its actual configuration stated\. Do not silently substitute a model\.",
+        r"\.\s+If a requested model is unavailable, report that fact and use an available\s+"
+        r"reviewer only with its actual configuration stated\. Do not silently substitute\s+"
+        r"a model\.",
+        r"\.\s+If no different-family reviewer is available, use a distinct\s+"
+        r"restricted-input reviewer context and label it same-family/fresh-context\.",
+        r"^Independence here requires separation from authorship and independent checks;\s+"
+        r"model-family diversity alone does not establish it\. Never label same-family\s+"
+        r"work cross-family\. If context separation cannot be established, hold the\s+"
+        r"independent confirmation gate\. Keep the original reviewer for affected fixes\.",
     ),
     "reviewer_lenses": (
         r"^- `CodeRunnerReviewer`\s*$",

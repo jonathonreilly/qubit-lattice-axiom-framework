@@ -1,0 +1,464 @@
+===== runner cache v1 =====
+runner: scripts/native_neutral_source_identification.py
+runner_sha256: 3d2e3c44c31ec12d91295c63a6c9aff910313ef91021a80d43e07a590f6d829f
+input_fingerprint_sha256: 6005e2c9dd76a34dfa3e566d9f40105443adfad7f2f024b6df821a6618561186
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 66.17
+status: ok
+----- stdout -----
+{"shape": [3, 3, 3], "dimension": 4194304, "terms": 54, "matvec_seconds": 0.05345191573724151}
+{'shape': (3, 3, 3), 'sector': 'all selected Z planes and adjacent X-plane pairs +1', 'dimension': 4194304, 'energies': [-27.16489442506342, -26.89423609982402, -26.89423609982399, -26.577963797186325], 'residuals': [2.302586348520834e-13, 8.692694199361935e-10, 2.837937467761518e-11, 2.447262030565423e-13], 'calls': 365, 'elapsed_seconds': 38.90476420801133, 'scope': 'Numerical low eigenpairs of one exact invariant sector; no global ground, thermodynamic pole or physical preparation identification'}
+reproduced compass_sector_solve
+{
+  "projection_norm_squared": 0.999999999999995,
+  "ground_residual": 1.283443342340292e-13,
+  "dimension": 1048576,
+  "krylov_rows": [
+    {
+      "steps": 64,
+      "regularized_eta01": 0.331415073397446,
+      "nodes": [
+        {
+          "gap": 1.7389723182719121,
+          "weight": 0.0035249477569291644
+        },
+        {
+          "gap": 2.1325642594854735,
+          "weight": 0.0007914891276443609
+        },
+        {
+          "gap": 2.642079811343053,
+          "weight": 3.066699125294865e-05
+        }
+      ]
+    },
+    {
+      "steps": 128,
+      "regularized_eta01": 0.33141507339744614,
+      "nodes": [
+        {
+          "gap": 1.7389723182718846,
+          "weight": 0.003524947756927934
+        },
+        {
+          "gap": 2.132564259426557,
+          "weight": 0.0007914891269884669
+        },
+        {
+          "gap": 2.642077610055737,
+          "weight": 3.066600008174675e-05
+        }
+      ]
+    },
+    {
+      "steps": 256,
+      "regularized_eta01": 0.3314150733974461,
+      "nodes": [
+        {
+          "gap": 1.7389723182718895,
+          "weight": 0.0035249477569279358
+        },
+        {
+          "gap": 2.132564259426553,
+          "weight": 0.000791489126988465
+        },
+        {
+          "gap": 2.642077610055742,
+          "weight": 3.0666000081745206e-05
+        }
+      ]
+    }
+  ],
+  "reconstructed": [
+    {
+      "steps": 64,
+      "tridiagonal_gap": 1.7389723182719121,
+      "rayleigh_gap": 1.7389723182719068,
+      "residual": 3.985866038289925e-07,
+      "raw_norm": 0.9999999999999993,
+      "source_weight": 0.003524947756929174,
+      "ground_overlap": -2.0816681711721685e-17
+    },
+    {
+      "steps": 64,
+      "tridiagonal_gap": 2.1325642594854735,
+      "rayleigh_gap": 2.132564259485471,
+      "residual": 2.2455125409032884e-05,
+      "raw_norm": 1.0000000000000095,
+      "source_weight": 0.0007914891276444336,
+      "ground_overlap": -5.410168840702667e-17
+    },
+    {
+      "steps": 64,
+      "tridiagonal_gap": 2.642079811343053,
+      "rayleigh_gap": 2.6420798113430517,
+      "residual": 0.0038621608287323205,
+      "raw_norm": 0.9999999999999933,
+      "source_weight": 3.066699125175572e-05,
+      "ground_overlap": -1.3183898417423734e-16
+    },
+    {
+      "steps": 128,
+      "tridiagonal_gap": 1.7389723182718846,
+      "rayleigh_gap": 1.7389723182718912,
+      "residual": 2.594952130735091e-14,
+      "raw_norm": 1.0000000000000009,
+      "source_weight": 0.0035249477569279414,
+      "ground_overlap": -6.245004513516506e-17
+    },
+    {
+      "steps": 128,
+      "tridiagonal_gap": 2.132564259426557,
+      "rayleigh_gap": 2.1325642594265535,
+      "residual": 6.555509832457852e-13,
+      "raw_norm": 1.0000000000000109,
+      "source_weight": 0.0007914891269885179,
+      "ground_overlap": 1.3530843112619095e-16
+    },
+    {
+      "steps": 128,
+      "tridiagonal_gap": 2.642077610055737,
+      "rayleigh_gap": 2.6420776100557464,
+      "residual": 3.7895118989639294e-10,
+      "raw_norm": 0.9999999999999896,
+      "source_weight": 3.066600007885549e-05,
+      "ground_overlap": 1.973247953923618e-17
+    },
+    {
+      "steps": 256,
+      "tridiagonal_gap": 1.7389723182718895,
+      "rayleigh_gap": 1.738972318271891,
+      "residual": 4.327374609166176e-14,
+      "raw_norm": 1.0,
+      "source_weight": 0.003524947756927947,
+      "ground_overlap": -3.382710778154774e-17
+    },
+    {
+      "steps": 256,
+      "tridiagonal_gap": 2.132564259426553,
+      "rayleigh_gap": 2.132564259426552,
+      "residual": 3.197773951341883e-14,
+      "raw_norm": 0.9999999999999593,
+      "source_weight": 0.0007914891269884853,
+      "ground_overlap": 3.3285006695304986e-17
+    },
+    {
+      "steps": 256,
+      "tridiagonal_gap": 2.642077610055742,
+      "rayleigh_gap": 2.642077610055746,
+      "residual": 5.385971791436945e-14,
+      "raw_norm": 1.0000000000000075,
+      "source_weight": 3.066600008173049e-05,
+      "ground_overlap": 9.974659986866641e-18
+    }
+  ],
+  "elapsed": 11.043796062469482,
+  "scope": "Same finite27site state and H, extra exact symmetries, no bulk pole conclusion"
+}
+reproduced neutral_extra_sector_response
+[{'J': 1.0, 'CC': [0.2648223550668287, 0.0076696295787065044], 'Ce': [-0.07568896158019255, -0.0020923163885750522], 'ee': [0.024002103655296148, 0.0005847035186041306]}, {'J': 0.1, 'CC': [2.6482235506682867, 0.07669629578706502], 'Ce': [-0.07568896158019256, -0.002092316388575052], 'ee': [0.002400210365529615, 5.847035186041307e-05]}, {'J': 3.0, 'CC': [0.08827411835560958, 0.002556543192902168], 'Ce': [-0.07568896158019257, -0.0020923163885750522], 'ee': [0.07200631096588843, 0.0017541105558123915]}, {'J': 10.0, 'CC': [0.026482235506682876, 0.0007669629578706508], 'Ce': [-0.07568896158019256, -0.0020923163885750527], 'ee': [0.24002103655296145, 0.005847035186041308]}]
+reproduced compass_scale_control
+{
+  "source_sha256": "aeacdea6dbbc76e6ad1233cc2db99fd7c819f3b96ea16256e9cf65f66317e3f4",
+  "uniform_sum": 4.206704429243757e-17,
+  "inversion_error": 4.683753385137379e-17,
+  "second_moment": [
+    [
+      0.048136815551952136,
+      -3.3393426912553537e-17,
+      4.2500725161431774e-17
+    ],
+    [
+      -3.3393426912553537e-17,
+      0.04813681555195207,
+      -1.9081958235744878e-17
+    ],
+    [
+      4.2500725161431774e-17,
+      -1.9081958235744878e-17,
+      0.04813681555195218
+    ]
+  ],
+  "rows": [
+    {
+      "R": 2,
+      "response": -0.016381797875455177,
+      "quadratic_term": -0.01805130583198205,
+      "remainder": 0.0016695079565268722,
+      "absolute_remainder_bound": 0.0039819790598155155,
+      "scaled_response": -0.06552719150182071
+    },
+    {
+      "R": 4,
+      "response": -0.004404101927341491,
+      "quadratic_term": -0.004512826457995512,
+      "remainder": 0.00010872453065402174,
+      "absolute_remainder_bound": 0.0002488736912385092,
+      "scaled_response": -0.07046563083746385
+    },
+    {
+      "R": 8,
+      "response": -0.001121341670441129,
+      "quadratic_term": -0.001128206614498878,
+      "remainder": 6.864944057749164e-06,
+      "absolute_remainder_bound": 1.555460570244626e-05,
+      "scaled_response": -0.07176586690823225
+    },
+    {
+      "R": 16,
+      "response": -0.0002816215019802275,
+      "quadratic_term": -0.0002820516536247195,
+      "remainder": 4.3015164449204234e-07,
+      "absolute_remainder_bound": 9.721628564423292e-07,
+      "scaled_response": -0.07209510450693823
+    },
+    {
+      "R": 32,
+      "response": -7.048601184012114e-05,
+      "quadratic_term": -7.051291340617988e-05,
+      "remainder": 2.6901566058736308e-08,
+      "absolute_remainder_bound": 6.076017856708343e-08,
+      "scaled_response": -0.07217767612428405
+    },
+    {
+      "R": 64,
+      "response": -1.7626546736571568e-05,
+      "quadratic_term": -1.762822835154497e-05,
+      "remainder": 1.6816149734025644e-09,
+      "absolute_remainder_bound": 3.797511199880568e-09,
+      "scaled_response": -0.07219833543299714
+    }
+  ],
+  "scope": "Fixed finite27site cube and regularized response eta=.1. Larger R only smooths an externally specified diagnostic profile; no volume extrapolation or matter source derivation."
+}
+reproduced compass_smooth_source
+[{'beta': 0.1, 'isothermal_derivative': -0.019350525646311643, 'finite_difference': -0.019350525645549232, 'retarded_absolute': 9.382000835745338e-18}, {'beta': 0.5, 'isothermal_derivative': -0.2543182976058317, 'finite_difference': -0.2543182975975333, 'retarded_absolute': 2.6014958963477798e-17}, {'beta': 1, 'isothermal_derivative': -0.3315136417672868, 'finite_difference': -0.3315136417769704, 'retarded_absolute': 2.3730135166225078e-17}, {'beta': 2, 'isothermal_derivative': -0.23930444237538495, 'finite_difference': -0.23930444238429158, 'retarded_absolute': 2.3596339615770645e-18}]
+reproduced neutral_thermal_protocol_control
+[{'shape': (2, 2, 2), 'sites': 8, 'plane_rank': 5, 'symplectic_rank': 0, 'central_bits': 5, 'protected_qubits': 0, 'neutral_multiplicity_qubits': 3}, {'shape': (3, 2, 2), 'sites': 12, 'plane_rank': 6, 'symplectic_rank': 2, 'central_bits': 4, 'protected_qubits': 1, 'neutral_multiplicity_qubits': 7}, {'shape': (3, 3, 2), 'sites': 18, 'plane_rank': 7, 'symplectic_rank': 2, 'central_bits': 5, 'protected_qubits': 1, 'neutral_multiplicity_qubits': 12}, {'shape': (3, 3, 3), 'sites': 27, 'plane_rank': 8, 'symplectic_rank': 2, 'central_bits': 6, 'protected_qubits': 1, 'neutral_multiplicity_qubits': 20}, {'shape': (4, 4, 4), 'sites': 64, 'plane_rank': 11, 'symplectic_rank': 0, 'central_bits': 11, 'protected_qubits': 0, 'neutral_multiplicity_qubits': 53}, {'shape': (5, 5, 5), 'sites': 125, 'plane_rank': 14, 'symplectic_rank': 2, 'central_bits': 12, 'protected_qubits': 1, 'neutral_multiplicity_qubits': 112}, {'shape': (10, 10, 10), 'sites': 1000, 'plane_rank': 29, 'symplectic_rank': 0, 'central_bits': 29, 'protected_qubits': 0, 'neutral_multiplicity_qubits': 971}]
+reproduced neutral_plane_factor
+[{'kappa': 0, 'width': 0.02, 'upper_over_2Z': 1.0, 'lower_over_Z': 1.0}, {'kappa': 0, 'width': 0.05, 'upper_over_2Z': 1.0, 'lower_over_Z': 1.0}, {'kappa': 0, 'width': 0.1, 'upper_over_2Z': 1.0, 'lower_over_Z': 1.0}, {'kappa': 0, 'width': 0.2, 'upper_over_2Z': 1.0, 'lower_over_Z': 1.0}, {'kappa': 0.08, 'width': 0.02, 'upper_over_2Z': 1.1253517471925591e-07, 'lower_over_Z': 1.0}, {'kappa': 0.08, 'width': 0.05, 'upper_over_2Z': 0.0773047404432994, 'lower_over_Z': 1.0}, {'kappa': 0.08, 'width': 0.1, 'upper_over_2Z': 0.527292424043048, 'lower_over_Z': 1.0}, {'kappa': 0.08, 'width': 0.2, 'upper_over_2Z': 0.8521437889662111, 'lower_over_Z': 1.0}]
+reproduced neutral_ladder_control
+{
+  "gap": 1.738972318271891,
+  "ground_to_mode_weight": 0.003524947756927933,
+  "excited_C_mean": 0.8686917716773526,
+  "excited_connected_weight": 2.5810623819193688,
+  "rows": [
+    {
+      "steps": 64,
+      "windows": [
+        {
+          "width": 0.02,
+          "upper_weight": 4.192474773997506e-16,
+          "lower_weight": 0.003524947756927934,
+          "upper_over_2Z": 5.946860865891721e-14
+        },
+        {
+          "width": 0.05,
+          "upper_weight": 0.00020562162682243973,
+          "lower_weight": 0.003524947756927934,
+          "upper_over_2Z": 0.029166620472361744
+        },
+        {
+          "width": 0.1,
+          "upper_weight": 0.012342458786237638,
+          "lower_weight": 0.003524947756927934,
+          "upper_over_2Z": 1.7507293210203991
+        },
+        {
+          "width": 0.2,
+          "upper_weight": 0.041847840945938596,
+          "lower_weight": 0.003524947756927934,
+          "upper_over_2Z": 5.935951939101911
+        }
+      ],
+      "near_double_gap": [
+        {
+          "energy": 3.1234066761943398,
+          "weight": 0.0014544369432531214
+        },
+        {
+          "energy": 3.323701644622834,
+          "weight": 0.030697728392601636
+        },
+        {
+          "energy": 3.591139670732236,
+          "weight": 0.03420850855045772
+        },
+        {
+          "energy": 3.9491679636285113,
+          "weight": 0.004414461740235979
+        }
+      ]
+    },
+    {
+      "steps": 128,
+      "windows": [
+        {
+          "width": 0.02,
+          "upper_weight": 2.5904098964945547e-10,
+          "lower_weight": 0.0035249477569279553,
+          "upper_over_2Z": 3.674394735926742e-08
+        },
+        {
+          "width": 0.05,
+          "upper_weight": 0.0010819943581189524,
+          "lower_weight": 0.0035249477569279553,
+          "upper_over_2Z": 0.15347665167411353
+        },
+        {
+          "width": 0.1,
+          "upper_weight": 0.013641761150980558,
+          "lower_weight": 0.0035249477569279553,
+          "upper_over_2Z": 1.9350302602597496
+        },
+        {
+          "width": 0.2,
+          "upper_weight": 0.04174952972927587,
+          "lower_weight": 0.0035249477569279553,
+          "upper_over_2Z": 5.922006878998609
+        }
+      ],
+      "near_double_gap": [
+        {
+          "energy": 3.1225729370016047,
+          "weight": 0.0014267381129311964
+        },
+        {
+          "energy": 3.3226150213662757,
+          "weight": 0.03033641143047625
+        },
+        {
+          "energy": 3.563140192710457,
+          "weight": 0.019676547607731215
+        },
+        {
+          "energy": 3.6338431178741137,
+          "weight": 0.0159384547988545
+        }
+      ]
+    },
+    {
+      "steps": 256,
+      "windows": [
+        {
+          "width": 0.02,
+          "upper_weight": 2.590409900094111e-10,
+          "lower_weight": 0.0035249477569279275,
+          "upper_over_2Z": 3.6743947410325717e-08
+        },
+        {
+          "width": 0.05,
+          "upper_weight": 0.0010819943582360363,
+          "lower_weight": 0.0035249477569279275,
+          "upper_over_2Z": 0.15347665169072142
+        },
+        {
+          "width": 0.1,
+          "upper_weight": 0.013641761150922084,
+          "lower_weight": 0.0035249477569279275,
+          "upper_over_2Z": 1.9350302602514553
+        },
+        {
+          "width": 0.2,
+          "upper_weight": 0.04174952972927272,
+          "lower_weight": 0.0035249477569279275,
+          "upper_over_2Z": 5.922006878998162
+        }
+      ],
+      "near_double_gap": [
+        {
+          "energy": 3.1225729370016,
+          "weight": 0.0014267381129311665
+        },
+        {
+          "energy": 3.322615021366272,
+          "weight": 0.030336411430472818
+        },
+        {
+          "energy": 3.5631401927068733,
+          "weight": 0.019676547605034574
+        },
+        {
+          "energy": 3.6338431178635813,
+          "weight": 0.015938454801184606
+        }
+      ]
+    }
+  ],
+  "reconstructed_near_double_gap": [
+    {
+      "energy": 3.1225729370016033,
+      "delta_from_double_gap": -0.35537169954217873,
+      "residual": 3.422178467852724e-14,
+      "weight": 0.0014267381129312278,
+      "raw_norm": 1.000000000000007
+    },
+    {
+      "energy": 3.3226150213662717,
+      "delta_from_double_gap": -0.15532961517751032,
+      "residual": 2.6209919454903616e-14,
+      "weight": 0.03033641143047277,
+      "raw_norm": 1.0000000000000004
+    },
+    {
+      "energy": 3.563140192706877,
+      "delta_from_double_gap": 0.08519555616309482,
+      "residual": 8.707991659720649e-14,
+      "weight": 0.01967654760503436,
+      "raw_norm": 1.0000000000000033
+    },
+    {
+      "energy": 3.6338431178635826,
+      "delta_from_double_gap": 0.15589848131980055,
+      "residual": 1.3039601798664293e-13,
+      "weight": 0.015938454801184807,
+      "raw_norm": 0.9999999999999998
+    }
+  ],
+  "scope": "Finite27site ladder diagnostic of chosen frequency-filtered C, no bulk scalar or interaction coefficient identification"
+}
+reproduced neutral_ladder_probe
+[{'operator': 'central_C', 'initial_mean': 0.7271448358250071, 'modes': [{'gap': 1.738972318271891, 'C_mean': 0.8686917716773526, 'delta_C': 0.14154693585234546, 'conditional_branch_gap_derivative_for_H_minus_lambda_C': -0.14154693585234546, 'conditional_fractional_gap_derivative': -0.08139688847549233, 'uniform_H_rescale_derivative': 1.738972318271891}, {'gap': 2.132564259426553, 'C_mean': 0.60885197588026, 'delta_C': -0.11829285994474714, 'conditional_branch_gap_derivative_for_H_minus_lambda_C': 0.11829285994474714, 'conditional_fractional_gap_derivative': 0.055469775141292164, 'uniform_H_rescale_derivative': 2.132564259426553}, {'gap': 2.642077610055747, 'C_mean': 0.9717072203156562, 'delta_C': 0.24456238449064904, 'conditional_branch_gap_derivative_for_H_minus_lambda_C': -0.24456238449064904, 'conditional_fractional_gap_derivative': -0.09256442110551358, 'uniform_H_rescale_derivative': 2.642077610055747}]}, {'operator': 'sum_existing_C', 'initial_mean': 8.943383985558574, 'modes': [{'gap': 1.738972318271891, 'C_mean': 8.831261296870457, 'delta_C': -0.11212268868811748, 'conditional_branch_gap_derivative_for_H_minus_lambda_C': 0.11212268868811748, 'conditional_fractional_gap_derivative': 0.06447640799684479, 'uniform_H_rescale_derivative': 1.738972318271891}, {'gap': 2.132564259426553, 'C_mean': 7.700701399011027, 'delta_C': -1.2426825865475468, 'conditional_branch_gap_derivative_for_H_minus_lambda_C': 1.2426825865475468, 'conditional_fractional_gap_derivative': 0.5827175340928317, 'uniform_H_rescale_derivative': 2.132564259426553}, {'gap': 2.642077610055747, 'C_mean': 7.80145976388479, 'delta_C': -1.1419242216737846, 'conditional_branch_gap_derivative_for_H_minus_lambda_C': 1.1419242216737846, 'conditional_fractional_gap_derivative': 0.4322069182705388, 'uniform_H_rescale_derivative': 2.642077610055747}]}]
+reproduced neutral_mode_charges
+{
+  "shape": [
+    3,
+    2,
+    1
+  ],
+  "beta": 0.7,
+  "native_J": 1,
+  "commutator_identity_error": 8.439034118033912e-14,
+  "rows": [
+    {
+      "alpha": 0,
+      "diagonal_energy_error": 9.769962616701378e-15,
+      "degenerate_block_error": 9.769962616701378e-15,
+      "thermal_inelastic_weight": 1.4486851487870693e-29
+    },
+    {
+      "alpha": 0.25,
+      "diagonal_energy_error": 9.769962616701378e-15,
+      "degenerate_block_error": 9.769962616701378e-15,
+      "thermal_inelastic_weight": 43.96476507436913
+    },
+    {
+      "alpha": 1,
+      "diagonal_energy_error": 1.354472090042691e-14,
+      "degenerate_block_error": 1.354472090042691e-14,
+      "thermal_inelastic_weight": 703.4362411899061
+    }
+  ],
+  "scope": "Constructed observable family, not added interactions, derived scalar or observed coupling. Alpha is an explicit arbitrary probe coefficient."
+}
+reproduced neutral_source_ambiguity
+per_element: plane symplectic form, double-commutator matrix elements and synthetic ladder controls checked
+per_site: original one-qubit sites and native bond interaction retained throughout these finite controls
+per_mode: finite ladder windows and conditional diagonal expectations are checked at the declared finite state
+per_block: neutral factorization and observable-family matrix blocks checked
+lattice_wide: controls use the stated finite open geometry; bulk persistence and observations remain untested
+
+----- stderr -----
+

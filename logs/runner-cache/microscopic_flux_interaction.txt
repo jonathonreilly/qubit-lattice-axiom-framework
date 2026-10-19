@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/microscopic_flux_interaction.py
+runner_sha256: 646de3d2550fe60473a654c1d71cf7c03c018dddfe70fa21160acc5f3f3fa60a
+input_fingerprint_sha256: cb1c57cef3d85b24b372172a2b2b304d867005ee1cfe49ab8691b8fba4cfb6b2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.72
+status: ok
+----- stdout -----
+{
+  "scope": "Current L4 corner Pauli definitions; general quadratic identities tested on an explicit four-mode fixture, not a fitted corner spectrum. No scalar derived.",
+  "counts": {
+    "loop_hop": {
+      "pairs": 6045696,
+      "violations": 0
+    },
+    "loop_charge": {
+      "pairs": 2015232,
+      "violations": 0
+    },
+    "repetition_hop": {
+      "pairs": 1769472,
+      "violations": 0
+    },
+    "repetition_charge": {
+      "pairs": 589824,
+      "violations": 0
+    },
+    "loop_repetition": {
+      "pairs": 2015232,
+      "violations": 0
+    }
+  },
+  "Z_syndromes": {
+    "classes": 2304,
+    "max_class_size": 2,
+    "max_coarse_L1_diameter": 1
+  },
+  "qubits": 3072,
+  "vertices": 768,
+  "edges": 2304,
+  "loops": 2624,
+  "repetitions": 768,
+  "electric_witness_qubit": 0,
+  "bilinear_error": 0.0,
+  "pair_additivity_error": 2.6645352591003757e-15,
+  "Schur_error": 5.874748045952207e-16,
+  "PHQ_norm": 0.0,
+  "added_quartic_shift": 0.3679697254318634,
+  "checks": {
+    "loop_hop": true,
+    "loop_charge": true,
+    "repetition_hop": true,
+    "repetition_charge": true,
+    "loop_repetition": true,
+    "charge_hop_noncommuting": true,
+    "added_electric_control_changes_flux": true,
+    "all_Z_probes_have_nonempty_flux_syndrome": true,
+    "Z_equal_syndromes_local_to_one_link": true,
+    "bilinear_commutator_closure": true,
+    "two_particle_spectrum_additive": true,
+    "exact_high_band_elimination": true,
+    "sector_PHQ_zero": true,
+    "added_quartic_control_detected": true
+  }
+}
+per_element: binary Pauli centrality and explicit four-mode Fock products checked
+per_site: finite L4 encoded qubits enumerated; a physical preparation is not supplied
+per_mode: four-mode numerical fixture only; no corner-model bulk spectrum executed
+per_block: loop and repetition classes and the supplied block operator identities checked
+lattice_wide: checked and not executed — exhaustive counts apply to L4 only, not a continuum or bulk claim
+
+----- stderr -----
+

@@ -504,3 +504,7 @@ Status: conditional-support; trace: upstream_support; reachability: supports; pr
 
 
 Campaign closed at its original deadline; final packaging after interruption. See FINAL_REPORT.md. New user-directed finite-size work is a separate direct task. No jobs or automation remained.
+
+
+## Post-campaign finite-size research
+Post-campaign direct task: root derives reflection-gluing identity for arbitrary finite neutral syndromes and conditional E2q-2Eq <= -8Jb lambda6+4CJq lambda8+Cprime JR²lambdaM. All2047 finite controls pass. Growing q lambda²->0 extension explicitly depends on global Q-relative bounds and is not independently reviewed. Root also derives uniform-in-time O(lambda16) lower-bound-band occupation for prepared dilute two-feature states from an initial residual plus exact spectral conservation. This supplies kinetic persistence, not preferred-size selection. Review workers hit usage limits; no further agents launched and no model settings changed. Empirical identification, mesoscopic q lambda²=O(1), strong coupling and capture/emission channels remain open.

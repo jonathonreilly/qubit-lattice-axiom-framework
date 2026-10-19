@@ -1,0 +1,15 @@
+{
+  "tested": 2047,
+  "contact_histogram": {
+    "2": 1364,
+    "4": 683
+  },
+  "minimum_perimeter_saving": 4,
+  "minimum_D6_energy_saving_in_Jlambda6": "15/512",
+  "scope": "Exact finite geometry controls; asymptotic native-energy inequalities rely on separately stated normal-form bounds; no observed data",
+  "rate_claim": false,
+  "capture_probability_exponent": 16,
+  "independent_review": "pending for new fusion-energy and uniform-q transfer; earlier coarse-subset check complete",
+  "status": "conditional-support",
+  "claim_type": "bounded_theorem"
+}

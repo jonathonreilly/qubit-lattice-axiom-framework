@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/native_finite_feature_size.py
+runner_sha256: e299cfc4b6c47580945cfe40739732f05326bc3e4bff613bba9a06b1ca4b8eee
+input_fingerprint_sha256: 46470d3bc075c47bcf4003e07f6adb9630373c37876bc9ffdb0e468e6ecb11e9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.23
+status: ok
+----- stdout -----
+{
+  "tested": 2047,
+  "contact_histogram": {
+    "2": 1364,
+    "4": 683
+  },
+  "minimum_perimeter_saving": 4,
+  "minimum_D6_energy_saving_in_Jlambda6": "15/512",
+  "scope": "Exact finite geometry controls; asymptotic native-energy inequalities rely on separately stated normal-form bounds; no observed data",
+  "rate_claim": false,
+  "capture_probability_exponent": 16,
+  "independent_review": "pending for new fusion-energy and uniform-q transfer; earlier coarse-subset check complete",
+  "status": "conditional-support",
+  "claim_type": "bounded_theorem"
+}
+per_element: reflected syndrome points checked exactly; no empirical particle identification.
+per_site: finite inverse masks preserve one physical qubit per site; no extra occupancy is introduced.
+per_mode: checked and not executed — lifetime and full scalar-mode spectrum are not numerically tested here.
+per_block: 2047 finite geometry constructions and exponent bookkeeping pass; energy proof is analytic and review pending.
+lattice_wide: checked and not executed — arbitrary fixed-coupling thermodynamic size selection remains open.
+
+----- stderr -----
+

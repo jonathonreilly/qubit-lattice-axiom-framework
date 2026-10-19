@@ -118,3 +118,8 @@ Physics (V=0, beta = L, also beta = L/2 from the same ladder):
   beta=16 at L=8, 2 chunks, two starts) for a one-sided check of the 8^3 ground energy:
   <H>_beta >= E0(global) for every beta, so a thermal energy significantly below -443.364 would show the
   repo guided-projector value lies above the true ground energy (declared before running).
+- 04:41 status: L6 3 chunks/run (trips 1 and ~6). Preliminary look (not a verdict): W distribution at
+  beta=L=6 is walker-dominated (13-16 distinct W vectors visited; P(|W|=2) 2.5% vs 28% between runs) ->
+  EQ fails so far. Queues continue automatically. RESUME: if the container restarted, relaunch
+    cd scripts; nohup ./queue.sh jobs_A.txt A >/dev/null 2>&1 & nohup ./queue.sh jobs_B.txt B >/dev/null 2>&1 &
+  (completed chunks are skipped by counting data/raw/TAG_c*.npz).

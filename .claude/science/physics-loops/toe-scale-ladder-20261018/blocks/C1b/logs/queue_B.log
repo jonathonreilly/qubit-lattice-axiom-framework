@@ -5,3 +5,7 @@
 03:54:04 start L6_s2 chunk 0
 {"tag": "L6_s2", "L": 6, "seed": 202, "start": "scrambled", "nsw": 3619, "sweeps_this_call": 3619, "trips_total": 1, "trips_this_call": 1, "check": 0, "nrows": 1309, "secs": 900.4, "swap_min": 0.2408839779005525}
 04:09:14 start L6_s2 chunk 1
+{"tag": "L6_s2", "L": 6, "seed": 202, "start": "scrambled", "nsw": 7111, "sweeps_this_call": 3492, "trips_total": 6, "trips_this_call": 5, "check": 0, "nrows": 1746, "secs": 900.4, "swap_min": 0.2314398200224972}
+04:24:24 start L6_s2 chunk 2
+{"tag": "L6_s2", "L": 6, "seed": 202, "start": "scrambled", "nsw": 10617, "sweeps_this_call": 3506, "trips_total": 7, "trips_this_call": 1, "check": 0, "nrows": 1753, "secs": 900.3, "swap_min": 0.23205876812959125}
+04:39:34 start L6_s2 chunk 3

@@ -1,0 +1,7 @@
+PASS  a1 AR(1) rho=0.9: 1/Q_cc = closed form = 1/mean(1/f)  0.1049723757 0.1049723757 0.1049723757
+PASS  a2 AR(1) rho=0.9: det Cov(T_S|T_0)^(1/|S|) >= v (300 random S)  min log-margin 0.5933
+PASS  a1 AR(1) rho=0.5: 1/Q_cc = closed form = 1/mean(1/f)  2.4000000000 2.4000000000 2.4000000000
+PASS  a2 AR(1) rho=0.5: det Cov(T_S|T_0)^(1/|S|) >= v (300 random S)  min log-margin 0.3670
+PASS  a1 AR(1) rho=-0.7: 1/Q_cc = closed form = 1/mean(1/f)  0.3422818792 0.3422818792 0.3422818792
+PASS  a2 AR(1) rho=-0.7: det Cov(T_S|T_0)^(1/|S|) >= v (300 random S)  min log-margin 0.3988
+PASS  b1 beta=0.15: P(L(0)>=n) <= c_n(KM)^n/n! + psi_n(M) for n=1..10, 24 values of M (T1 non-stationary)  n=1:P=0.802,minbound=1.47; n=4:P=0.285,minbound=0.956; n=7:P=0.0396,minbound=0.904; n=10:P=0.00248,minbound=0.77

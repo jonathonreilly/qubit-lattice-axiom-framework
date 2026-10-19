@@ -1,0 +1,16 @@
+PASS  a1 record == late-sublattice indicator, both phases, 60 samples, noise amplitude 0.49  
+PASS  a2 ancestry depth L(x) <= 1 everywhere  
+PASS  a3 exact Cov(xi_0,xi_x) = +1/4 (even), -1/4 (odd), for every x  [(0, Fraction(1, 4)), (1, Fraction(-1, 4))]
+PASS  a4 translation by e1 swaps the two phases (law stationary under uniform phase; 2-point rotation is transitive)  
+PASS  a5 O_h (48 signed permutations) preserves parity  
+PASS  a6 clock covariance Cov(T_0,T_x) in {+1/4,-1/4} for all x != 0 (clock non-mixing)  [Fraction(-1, 4), Fraction(1, 4)]
+PASS  b0 f is S_3-mean-zero  
+PASS  b1 E[f(xi_A)|T] = 0 for every clock realisation (incl. ties): Gamma-invariant product kernel  
+PASS  b2 disjoint ancestries => E[fg|T] = E[f|T]E[g|T] exactly  
+PASS  b3 |E f g| <= ||f|| ||g|| P(Anc(A) cap Anc(B) != empty)  |Efg|=0.10325 bound=1.25000 P(ov)=3/4
+PASS  b4 the bound is not vacuous here (P(ov) < 1 and E f g != 0)  Efg=-2479/24010
+PASS  b5 negative control: colour-biased rule (not S_3-invariant) gives E f != 0  Ef=0.1471
+PASS  c1 level clock T_x=x on Z (stationary increments, NOT stationary): L(0)=inf, copy rule has 2 solutions -> K3 does not extend to gradient-stationary clocks  by hand: T_0>T_-1>T_-2>...; xi==+1 and xi==-1
+PASS  c2 stationary AR(1) rho=0.999: decreasing runs from sampled sites finite (never hit the 2000 window edge)  max run 9
+PASS  c3 random-phase sawtooth (stationary, non-mixing): run length < period  run 16
+TOTAL: PASS=15 FAIL=0

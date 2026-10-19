@@ -320,3 +320,27 @@ EXPLORATIONS.
   - RECORDS form on random local clocks whose rate (pace) is set by nearby records.
   - Gravity enters as records weighting each site's memory of its past (pace^-4), which gives
     the light cone, retarded gravity, Newton and the full GR light bending.
+
+## Phase 10: continuous probability (owner: "what if probability is continuous instead of just faster than record formation?")
+EXPLORATION.
+- F46 (cont1.py, exact Fourier evolution on the grid, point start, t = 30).
+  - Continuous-time real wave (with memory): an effective cone at r = t, falling
+    super-exponentially outside (6e-10 at r = 1.5 t). Share of |u|^2 beyond 1.1 t is 3e-5,
+    beyond 1.3 t is 3e-12. There is no stability limit, so speed 1 ("same footing") holds
+    literally.
+  - Continuous-time real first-order (no memory): diffusion, no cone.
+  - Continuous-time COMPLEX two-component first-order (qubit-like, H = sum sigma_j sin k_j):
+    waves with a cone at r ~ t and no explicit memory. Leakage beyond 1.1 t is 6e-4, beyond
+    1.3 t is 1e-7. Naive form, with corner doublers.
+- Reading (analytic):
+  - In continuous time, the discrete rule's (value, previous-tick value) pair is equivalent to
+    one complex amplitude per site (u + i v/omega). The lean-away-from-the-past memory BECOMES
+    the imaginary part.
+  - So continuous probability plus the Qubit axiom's complex structure gives waves and a light
+    cone without a memory rule.
+  - Gravity's memory weight (pace^-4, F45) becomes a slower local phase rotation near records,
+    i.e. gravitational redshift.
+  - The cone is no longer strict: records driven by influence could form outside it only with
+    super-exponentially small odds (Lieb-Robinson-type), so causality holds up to those tails.
+  - This matches Campaign 7 sentence (2): change is continuous and is a sum of reversible
+    changes.

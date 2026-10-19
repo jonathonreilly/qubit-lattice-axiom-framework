@@ -9,7 +9,7 @@ finite-T QMC with non-local, winding-changing updates.
 - [VERDICT] a pre-declared criterion applied as declared;
 - [POST HOC] a diagnostic not declared before the data were seen.
 
-**Status:** unaudited block output. No independent check has been done yet (§9).
+**Status:** Reviewed in a separate agent context (same model as the author); unaudited. See `REVIEW.md` and the review dispositions at the end of this note.
 **History:** every timestamp is in `WORKLOG.md`. The criteria were declared at 01:32 UTC, the production
 settings at 03:35, and the estimator addendum at 03:40. All three predate any L ≥ 4 production observable.
 
@@ -25,14 +25,14 @@ settings at 03:35, and the estimator addendum at 03:40. All three predate any L 
      β = 0.25 to 4.
    - `logs/validate_TI_L2.log` gives **TOTAL: PASS=10 FAIL=0**. It covers both winding free-energy estimators.
 2. **Two algorithmic results, found by the validation itself** [THM + NUM]:
-   - **(a)** SW-type plaquette clusters alone can never generate the elementary-cube classes of the net-flip
+   - **(a)** [NUM; exhaustive at L=2, review rs3; general L is a conjecture] SW-type plaquette clusters alone can never generate an odd number of elementary-cube classes of the net-flip
      2-cycle (C1 Lemma 3). A cluster's time-slice set can only gain plaquette boundaries that are disjoint from it,
      or lose ones that it contains. This produced an 8–27σ bias at L=2. A 3↔3 cube-relabelling move fixes it (§2).
    - **(b)** Starting from an event-free path causes pathological winding trapping. At n_F = 0 every base state has
      the same weight, so the winding loops randomise W before the flip events build up. At L=8, β=16 the system
      froze into W = (0,0,±16), where E = −388 against a ground energy near −444. The fix is to switch the winding
      loops off at β > 1 during thermalisation. It was found after the first production runs (L4_s1/s2, L6_s1/s2),
-     which are therefore **compromised for winding observables** and are not used for verdicts.
+     which are therefore **compromised for winding observables** and are not used for verdicts ([POST HOC] exclusion; under the declared rule L4_s1/s2 would pass, and the verdict is unchanged with them included; see Review dispositions).
 3. **The winding populations at β ≥ L relax very slowly** [NUM]. At L=4 the relaxation takes ≫ 10 PT round trips:
    after ~30k sweeps the per-chunk values are still drifting. Clean L=4 runs from opposite sides (all W=0, or half
    the replicas at W=1) only agree in their last 15-minute chunk. So **the declared equilibration test fails at
@@ -43,7 +43,7 @@ settings at 03:35, and the estimator addendum at 03:40. All three predate any L 
    - No string tension is resolved, and none is excluded beyond C1.
 5. **Equilibrated-looking numbers that survive** [NUM]:
    - At **L=4, β = L/2 = 2.05**, P(|W_a|=1) is stationary in every chunk of both clean runs. The winding free-energy
-     gap is dF1 = 0.505(25), from the direct estimate, which agrees between starts.
+     gap is dF1 = 0.505(25), from the direct estimate, which agrees between the two clean starts. It is not shown to be equilibrated: the compromised runs give 0.394(24) at the same β, which is 3.4σ lower, so this β is also sensitive to the start protocol. The s4 chunk-0 value of P1 is 0.477 (§5.2).
    - At **L=4, β=4**, the last-chunk P1 is 0.055–0.058 from both sides, so dF1 ≈ 0.88. This is a [POST HOC] reading.
    - **L=4 thermal energy:** E(β=8) = −56.20(6). This is consistent with C1's projector E0 = −56.253(45), and
      E(β) ≥ E0 holds as it must.
@@ -150,7 +150,9 @@ matches the repo and C1. The reference shares no code with the sampler except th
 Let n_p be the net signed flip count of plaquette p over a period. The quantity Σ_p n_p² never took the value 6 in
 v2. A value of 6 corresponds to an elementary-cube class: ±1 on each of a cube's 6 faces.
 
-**Reason.** Each side of a vertex binds all 4 legs. So a single cluster's time-slice set S(τ) changes, at a one-sided
+**Exact form (review rs3, exhaustive at L=2, mod 2):** the span of cluster moves has dimension 9 out of 10. It contains every sum of two cubes and all planes, but no single cube. So the obstruction is the parity of the cube number. Single cubes are unreachable and pairs are reachable. This is not a general-L theorem.
+
+**Heuristic reason.** Each side of a vertex binds all 4 legs. So a single cluster's time-slice set S(τ) changes, at a one-sided
 vertex, only by adding ∂p where ∂p ∩ S = ∅, or by removing ∂p where ∂p ⊆ S. Sweeping a cube needs XOR updates on
 shared links, which these two operations cannot produce.
 
@@ -161,7 +163,7 @@ do some odd n_p.
 
 - **ΔĪ bookkeeping.** It equals the recomputation from scratch after every sweep (3000 sweeps).
 - **Conditional detailed balance at fixed vertex positions.** The visit frequencies of all reachable configurations
-  were compared with ∝ e^{−gβĪ}. For example: χ² = 19.5 with 19 dof, and 66.6 with 31 dof after 4× longer runs.
+  were compared with ∝ e^{−gβĪ}. One result was χ² = 19.5 with 19 dof. A second, 66.6 with 31 dof after 4× longer runs, has p ≈ 2×10⁻⁴: it is a failed test and does **not** support the claim as cited. The reviewer's autocorrelation-free kernel test on the same kind of configuration (rs6, 6.4M sweeps) passes, so the batch-mean statistic is unreliable here.
 - **Loop-proposal symmetry.** Checked exhaustively in pure Python on random free-link sets: 0 asymmetric pairs.
 - **Marker intensities.** These equal gβ times the circulating time per plaquette, to within 0.013.
 
@@ -271,7 +273,7 @@ winding loops at β > 1 during the first 2000 sweeps, for 2 chunks (6.4k sweeps)
 | EQ at β = L | **FAIL** at L=4 (⟨W²⟩ z = −3.0, with a drifting chunk series); **FAIL** at L=6 (compromised runs; clean run has one start); L=8 not run |
 | C-W / X-W (a(L) fit at β = L) | **INCONCLUSIVE**: no two L have equilibrated β = L winding data |
 | TI vs direct agreement | not established at β ≥ L (start-dependent at L=4) |
-| S_T exponent p | **NOT EVALUABLE** (EQ fails at the two largest L). For the record [POST HOC], clean L4 (β=4) with clean single-start L6_s4 (β=6, drifting) gives p = 0.93(5); this is not a criterion evaluation. |
+| S_T exponent p | **INCONCLUSIVE** (declared wording; NOT EVALUABLE) (EQ fails at the two largest L). For the record [POST HOC], clean L4 (β=4) with clean single-start L6_s4 (β=6, drifting) gives p = 0.93(5); this is not a criterion evaluation. |
 | Overall OBL-R2.1 | **INCONCLUSIVE**. This is an operational result: the winding-sector mixing time at low T exceeds the budget. It is not physical evidence. |
 
 ## 7. What is learned, and what is not
@@ -287,7 +289,7 @@ winding loops at β > 1 during the first 2000 sweeps, for 2 chunks (6.4k sweeps)
   plaquette-cluster dynamics. In the compromised L=6 runs, E, N_circ and S_T agree between starts, but both starts
   share the same winding artifact. The clean run shows that S_T is shifted by it (§5.4), so start agreement is not
   evidence of equilibrium here.
-- **No evidence of confinement** [NUM, weak]:
+- **No evidence of confinement** [POST HOC, weak]:
   - At L=4 the winding free-energy cost at β = L/2 is about 0.5g, which is O(1/L)-sized.
   - The dF2/dF1 ratios at L=4 and 6 are about 3.2–4.1 [POST HOC; from the compromised runs, so indicative only].
     That is closer to the quadratic (Coulomb-like) value 4 than to the linear string value 2.
@@ -359,5 +361,31 @@ cluster moves, written separately), or a guided projector with sector-resolved f
   - `raw/` (production chunks, 15-min measurement files);
   - `ckpt/` (PT checkpoints);
   - `val_bins_L2.npz` (20-bin summaries of the L=2 validation runs; the raw validation files of 125 MB were moved
-    out of the block for the 50 MB limit);
+    out of the block for the 50 MB limit into the session scratchpad only, which will not persist; the reduced logs are the durable evidence);
   - `summary_prod.json`.
+
+
+## Review dispositions
+
+The review is in `REVIEW.md`. It was done in a separate agent context with the same model as the author. It
+confirmed detailed balance of all moves with independent exact kernels, and **INCONCLUSIVE stands**.
+
+- **R8, exclusion of the compromised runs.** Excluding L4_s1/s2 and L6_s1/s2 is a **[POST HOC] deviation** from
+  the declared EQ rule. Under that rule, L4_s1/s2 at β=4 would **pass** (⟨W²⟩ z = −0.38; 27 and 24 round trips).
+  The verdict is unchanged with them included: L=6 still fails EQ (z = −3.42), and the compromised fit
+  s = −0.52(10) matches neither C-W nor X-W. §7's heading is relabelled [POST HOC].
+- **R12, moderate.** dF1(β=L/2=2.05) = 0.505(25) from the clean runs is **3.4σ above** the compromised runs'
+  0.394(24) at the same β. The s4 chunk-0 P1 is 0.477, so the §5.3 range "0.39–0.43" applies only to later
+  chunks. The value is described as "agrees between two clean starts", not as equilibrated.
+- **R5, cube obstruction.** This is now stated as exhaustively checked at L=2 only: the obstruction is the parity of
+  the cube number, single cubes are unreachable, and pairs are reachable. It is not a general theorem.
+- **R7, the χ² = 66.6/31 citation.** It has p ≈ 2×10⁻⁴, so it does not support the claim. The supporting evidence
+  is instead the reviewer's autocorrelation-free kernel test (rs6, pass).
+- **R3, raw validation files.** The 125 MB of raw validation files exist **only in the session scratchpad and will
+  not persist**. The durable evidence is the reduced logs (`logs/validate_L2_val*.log`, `validate_TI_L2.log`)
+  and `data/val_bins_L2.npz`. The reviewer reproduced the val2 and val3 log rows from the raw files before their
+  loss (rs4, PASS=2). The spline quadrature for the TI estimator was chosen after the trapezoid rule failed on the
+  same val3 data, so the TI 10/10 is a consistency check, not an independent validation.
+- **R4.** The val2 failing z values span 3.4–26.6, and for E specifically 5.4–26.6. "8–27σ" in §0.2(a) should be
+  read that way.
+- **R11.** The post hoc S_T exponent is 0.93(6).

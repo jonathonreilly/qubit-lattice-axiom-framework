@@ -171,3 +171,4 @@ Physics (V=0, beta = L, also beta = L/2 from the same ladder):
   Final analysis logs: logs/analysis_L4_clean.log, analysis_compromised_L4_L6.log, analysis_L6_s4.log,
   drift.log, ti_estimates.log, posthoc.log, energy_L8.log. VERDICT (declared criteria): INCONCLUSIVE
   (EQ fails at beta=L for L=4,6; L=8 PT infeasible). NOTE.md written. No jobs running. Block complete.
+- review applied to NOTE.md (Review dispositions section added).

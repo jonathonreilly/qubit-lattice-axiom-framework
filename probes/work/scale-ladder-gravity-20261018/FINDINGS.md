@@ -278,3 +278,12 @@ EXPLORATIONS.
   - Open: the gamma = 1 light-bending factor needs records to change spatial passing as much as
     pace (nu = 1), which the 2-rung Regge carrier supplies; in a pure odds rule it is a
     constraint on link vs tick weights.
+- F25. Segment-midpoint placement (seg, seg2; in PR #9774 as H9/H10):
+  - Give each segment its least-squares share (c L~)_seg of the cell-averaged stress, evaluated at the segment
+    midpoint by a local average over the cells around it.
+  - The Ward violation is O(k^2): 1.0e-4 -> 6.5e-6 over s = 0.1 -> 0.025. The opposite phase stays O(k), as a
+    control.
+  - Scalar-scalar exchange: the distance from the EH form is O(k^2) (2.4e-3 -> 1.8e-4) and the gauge dependence
+    is O(k^4).
+  - The s = 0.2 point is outside the scaling regime.
+  - Next: a stress exactly conserved with respect to the segment strains (an exact lattice Ward identity).

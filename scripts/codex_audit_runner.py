@@ -61,6 +61,7 @@ AUDIT_DIR = REPO_ROOT / "docs" / "audit"
 sys.path.insert(0, str(AUDIT_DIR / "scripts"))
 import premise_nodes
 import ledger_io
+import audit_science_fingerprint
 import no_go_discipline_gate
 import audit_invocation
 import audit_contract
@@ -201,6 +202,56 @@ def _string_schema(
 
 def _string_array_schema() -> dict:
     return {"type": "array", "items": _string_schema()}
+
+
+def _premise_registry_present(repo_root: Path) -> bool:
+    """A checkout with no premise registry has no declarable premise units.
+
+    Only absence is tolerated here; a present but malformed registry or
+    clause map still raises from ``audit_science_fingerprint``.
+    """
+    return (repo_root / "docs" / "audit" / "data" / "axiom_premise_nodes.json").exists()
+
+
+def premise_units_output_schema() -> dict:
+    """Closed list of declarable premise units for ``premises_used``."""
+    units = (
+        tuple(sorted(audit_science_fingerprint.premise_unit_catalog(REPO_ROOT)))
+        if _premise_registry_present(REPO_ROOT)
+        else ()
+    )
+    return {
+        "type": "array",
+        "items": _string_schema(enum=units) if units else _string_schema(),
+    }
+
+
+def premise_units_prompt_text(repo_root: Path | None = None) -> str:
+    """Render the valid ``premises_used`` units for section 5 of the prompt."""
+    root = repo_root or REPO_ROOT
+    if not _premise_registry_present(root):
+        return "(no premise units are registered)"
+    registry = audit_science_fingerprint._premise_registry(root)
+    clause_map = audit_science_fingerprint._premise_clause_map(root, registry)
+    lines: list[str] = []
+    for node_id in registry["canonical_ids"]:
+        path = registry["nodes"][node_id]["current_path"]
+        entry = clause_map.get(node_id)
+        if entry is None:
+            lines.append(f"- `{node_id}`: all of `{path}`")
+            continue
+        for clause_id, heading in sorted(entry["clauses"].items()):
+            lines.append(
+                f"- `{node_id}:{clause_id}`: the `{heading}` section of `{path}`"
+            )
+        shared = entry.get("shared_clauses") or {}
+        if shared:
+            headings = ", ".join(f"`{heading}`" for heading in shared.values())
+            lines.append(
+                f"  (the {headings} section of `{path}` is bound automatically "
+                f"with every `{node_id}:` unit; do not list it)"
+            )
+    return "\n".join(lines) if lines else "(no premise units are registered)"
 
 
 def no_go_output_schema() -> dict:
@@ -424,6 +475,7 @@ def audit_verdict_output_schema(*, allow_compute_required: bool = True) -> dict:
         },
         "decoration_parent_claim_id": _nullable(_string_schema()),
         "open_dependency_paths": _string_array_schema(),
+        "premises_used": premise_units_output_schema(),
         "auditor_confidence": _string_schema(enum=("low", "medium", "high")),
         "notes_for_re_audit_if_any": _string_schema(),
         "no_go_discipline": no_go_output_schema(),
@@ -765,9 +817,15 @@ def determine_audit_role(led_row: dict, auditor_family: str,
                                           prior auditor, cross_family vs
                                           different-family prior auditor
 
+    A Claude auditor family records ``fresh_context`` for first and re-audit
+    seats unless the row's recorded ``author_family`` is a different family
+    (then ``cross_family``); second seats follow the same-family rule above.
+
     apply_audit.py validates the independence rule; we precompute here so
     the metadata is always correct on the first try.
     """
+    if is_claude_auditor_family(auditor_family) and not CLAUDE_AUDIT_ENABLED:
+        return "skip", "Claude audit proposal is unactivated"
     audit_status = led_row.get("audit_status") or "unknown"
     blocker = led_row.get("blocker") or ""
     cc = led_row.get("cross_confirmation") or {}
@@ -806,6 +864,28 @@ def determine_audit_role(led_row: dict, auditor_family: str,
                 prior_family = prior["auditor_family"]
                 break
     author_family = led_row.get("author_family")
+    if CLAUDE_AUDIT_ENABLED and is_claude_auditor_family(auditor_family):
+        # A proposed Claude seat is a stateless restricted-packet API request (
+        # proposal; not an authorized governance exception). Most notes
+        # are Claude-authored and authorship is rarely recorded, so the seat
+        # claims only the clean-room tier unless the recorded author family is
+        # known to differ. A prior Codex verdict is not evidence of authorship.
+        independence = (
+            "cross_family"
+            if author_family and not is_claude_auditor_family(author_family)
+            else "fresh_context"
+        )
+        if is_reaudit_candidate and (prior_family or is_dispatch_target):
+            has_prior_audit = bool(
+                prior_family
+                or led_row.get("previous_audits")
+                or audit_status != "unaudited"
+            )
+            return ("reaudit" if has_prior_audit else "first"), independence
+        if audit_status == "unaudited":
+            return "first", independence
+        cc_note = f" cc.status={cc_status}" if cc_status else ""
+        return "skip", f"already at audit_status={audit_status}{cc_note}; not re-auditing"
     if is_reaudit_candidate and (prior_family or is_dispatch_target):
         if is_dispatch_target and not author_family:
             has_prior_audit = bool(
@@ -2264,6 +2344,7 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         "{{RUNNER_SOURCE}}": runner_source or "(no source available)",
         "{{HELPER_RUNNER_SOURCES}}": helper_runner_sources,
         "{{FRAMEWORK_PREMISE_CONTEXT}}": premise_context,
+        "{{PREMISE_UNITS}}": premise_units_prompt_text(),
         "{{NO_GO_PARTIAL_CLOSURE_INDEX}}": partial_closure_context,
         "{{NO_GO_CROSS_CYCLE_INDEX}}": cross_cycle_context,
     }
@@ -2508,6 +2589,368 @@ def run_codex(prompt: str, isolated_dir: Path, timeout_sec: int,
         return False, "", f"[codex timed out at {timeout_sec}s]"
     except FileNotFoundError:
         return False, "", "[codex CLI not on PATH; install or `codex login`]"
+
+
+# ---------------------------------------------------------------------------
+# Claude API backend proposal (unactivated).
+#
+# The rendered prompt is the entire content of one stateless Messages API
+# request: no system prompt, no tools, no conversation history and no
+# repository access. That request is the restricted-input clean room that
+# the proposed clean-room transport requires; independence remains governed.
+# Its SHA-256 is logged so the
+# exact auditor input is reproducible. Requests are synchronous rather than
+# batched: the forensic tier binds a trusted manifest issued within two hours
+# of apply, which a batch's turnaround cannot guarantee.
+#
+# Credits: each API key draws on one Console organization's balance. Keys are
+# tried in --claude-key-env order (put the soonest-expiring credits first);
+# a key whose balance is exhausted is retired for the rest of the run, and the
+# run stops cleanly when every key is exhausted. Rows not reached stay in the
+# queue for the next run. --claude-max-spend-usd caps one run's estimated
+# spend. Requires `pip install anthropic`.
+# ---------------------------------------------------------------------------
+# Proposal only: activation requires a separate governed change. No CLI/env override.
+CLAUDE_AUDIT_ENABLED = False
+
+CLAUDE_AUDIT_MODEL = "claude-opus-5-5"
+CLAUDE_FALLBACK_BETA = "server-side-fallback-2026-07-01"
+CLAUDE_EFFORTS = ("low", "medium", "high", "xhigh", "max")
+# Proposed, inactive effort map: routine rows at medium; proof-critical rows
+# at the strongest routinely used level (repository CLAUDE.md model policy).
+CLAUDE_EFFORT_BY_CRITICALITY = {
+    "leaf": "medium",
+    "medium": "medium",
+    "high": "high",
+    "critical": "xhigh",
+}
+CLAUDE_KEY_ENV_DEFAULT = (
+    "ANTHROPIC_AUDIT_KEY_BUSINESS",
+    "ANTHROPIC_AUDIT_KEY_PERSONAL",
+)
+CLAUDE_MAX_TOKENS = 64_000
+CLAUDE_DEFAULT_TIMEOUT_SEC = 1800
+# First-party Claude API list prices, USD per million (input, output) tokens,
+# used only to enforce --claude-max-spend-usd. A model missing from the table
+# (for example a refusal fallback) is costed at the highest listed rate.
+CLAUDE_PRICES_PER_MTOK = {
+    "claude-fable-5-1": (10.0, 50.0),
+    "claude-opus-5-5": (4.0, 20.0),
+    "claude-opus-5": (5.0, 25.0),
+    "claude-opus-4-8": (5.0, 25.0),
+    "claude-sonnet-5-5": (2.0, 10.0),
+}
+CLAUDE_CACHE_WRITE_MULTIPLIER = 1.25
+CLAUDE_CACHE_READ_MULTIPLIER = 0.1
+CLAUDE_CREDIT_EXHAUSTED_MARKER = "credit balance is too low"
+# JSON-schema keywords the structured-output endpoint does not accept. The
+# runner's own validators re-check every constraint after the reply arrives.
+CLAUDE_UNSUPPORTED_SCHEMA_KEYWORDS = frozenset({
+    "minLength", "maxLength", "pattern", "minimum", "maximum",
+    "exclusiveMinimum", "exclusiveMaximum", "multipleOf",
+    "minItems", "maxItems", "uniqueItems",
+})
+
+
+def is_claude_auditor_family(family: str | None) -> bool:
+    return isinstance(family, str) and family.startswith("claude-")
+
+
+def claude_family_for_model(model: str) -> str:
+    """``claude-opus-5-5`` -> ``claude-opus-5.5``; ``claude-sonnet-5`` -> itself."""
+    parts = model.split("-")
+    if len(parts) < 3 or parts[0] != "claude":
+        raise ValueError(f"not a Claude model id: {model!r}")
+    names = [part for part in parts[1:] if not part.isdigit()]
+    version = [part for part in parts[1:] if part.isdigit()]
+    if not names or not version or parts[1:] != names + version:
+        raise ValueError(f"unrecognized Claude model id: {model!r}")
+    return "claude-" + "-".join(names) + "-" + ".".join(version)
+
+
+def claude_effort_for_row(row: dict, override: str | None = None) -> str:
+    if override is not None:
+        return override
+    return CLAUDE_EFFORT_BY_CRITICALITY.get(row.get("criticality") or "leaf", "high")
+
+
+def claude_compatible_schema(schema: object) -> object:
+    """Drop keywords the structured-output endpoint rejects, recursively."""
+    if isinstance(schema, dict):
+        return {
+            key: claude_compatible_schema(value)
+            for key, value in schema.items()
+            if key not in CLAUDE_UNSUPPORTED_SCHEMA_KEYWORDS
+        }
+    if isinstance(schema, list):
+        return [claude_compatible_schema(item) for item in schema]
+    return schema
+
+
+class ClaudeCreditsExhausted(RuntimeError):
+    """Every configured API key has run out of credit."""
+
+
+class ClaudeKeyPool:
+    """Ordered API keys; a key is retired once its balance is exhausted.
+
+    Keys are read from environment variables and never logged; only the
+    variable name labels a key in logs.
+    """
+
+    def __init__(self, env_names: list[str] | tuple[str, ...],
+                 environ: dict[str, str] | None = None):
+        source = os.environ if environ is None else environ
+        self._keys = [
+            (name, source.get(name, "").strip())
+            for name in env_names
+        ]
+        self._keys = [(name, key) for name, key in self._keys if key]
+        self._retired: dict[str, str] = {}
+
+    @property
+    def labels(self) -> list[str]:
+        return [name for name, _key in self._keys]
+
+    def current(self) -> tuple[str, str] | None:
+        for name, key in self._keys:
+            if name not in self._retired:
+                return name, key
+        return None
+
+    def retire(self, label: str, reason: str) -> None:
+        self._retired[label] = reason
+
+    @property
+    def retired(self) -> dict[str, str]:
+        return dict(self._retired)
+
+
+class ClaudeSpend:
+    """Estimated spend for one run, against an optional cap."""
+
+    def __init__(self, cap_usd: float | None):
+        self.cap_usd = cap_usd
+        self.spent_usd = 0.0
+
+    @staticmethod
+    def cost_usd(model: str, usage: object) -> float:
+        input_rate, output_rate = CLAUDE_PRICES_PER_MTOK.get(
+            model, max(CLAUDE_PRICES_PER_MTOK.values())
+        )
+
+        def tokens(name: str) -> int:
+            value = getattr(usage, name, None)
+            if value is None and isinstance(usage, dict):
+                value = usage.get(name)
+            return int(value or 0)
+
+        return (
+            tokens("input_tokens") * input_rate
+            + tokens("cache_creation_input_tokens")
+            * input_rate * CLAUDE_CACHE_WRITE_MULTIPLIER
+            + tokens("cache_read_input_tokens")
+            * input_rate * CLAUDE_CACHE_READ_MULTIPLIER
+            + tokens("output_tokens") * output_rate
+        ) / 1_000_000
+
+    def add(self, requested_model: str, served_model: str, usage: object) -> float:
+        # Iterations already include the final attempt. Never add top-level
+        # usage again. Charge every reported attempt conservatively; this is
+        # a stop-before-next-request estimate, not an invoice or hard ceiling.
+        iterations = _claude_value(usage, "iterations")
+        attempts = iterations if iterations else [usage]
+        cost = sum(max(
+            self.cost_usd(requested_model, attempt),
+            self.cost_usd(str(_claude_value(attempt, "model") or served_model), attempt),
+        ) for attempt in attempts)
+        self.spent_usd += cost
+        return cost
+
+    def exhausted(self) -> bool:
+        return self.cap_usd is not None and self.spent_usd >= self.cap_usd
+
+
+def _claude_value(value: object, key: str, default=None):
+    if isinstance(value, dict):
+        return value.get(key, default)
+    # SDK models expose reserved JSON field names such as "from" as from_.
+    return getattr(value, key, getattr(value, key + "_", default))
+
+
+def _claude_usage_record(usage: object) -> dict:
+    record = {name: _claude_value(usage, name) for name in (
+        "input_tokens", "output_tokens", "cache_creation_input_tokens",
+        "cache_read_input_tokens", "model", "type",
+    )}
+    iterations = _claude_value(usage, "iterations")
+    if iterations is not None:
+        record["iterations"] = [_claude_usage_record(item) for item in iterations]
+    return record
+
+
+def _default_claude_client(api_key: str, timeout_sec: int):
+    if not CLAUDE_AUDIT_ENABLED:
+        raise RuntimeError("Claude audit proposal is unactivated; formal audit remains deferred")
+    import anthropic
+    import inspect
+
+    client = anthropic.Anthropic(api_key=api_key, timeout=float(timeout_sec))
+    if "fallbacks" not in inspect.signature(client.beta.messages.stream).parameters:
+        raise RuntimeError("installed Anthropic SDK does not explicitly support fallbacks")
+    return client
+
+
+class ClaudeAuditBackend:
+    """Run one restricted audit prompt as one stateless Claude API request.
+
+    ``run`` mirrors ``run_codex``: it returns ``(ok, reply, stderr)`` with the
+    reply being the JSON object text. ``last_call`` describes the most recent
+    request (request digest, key label, served model, usage, estimated cost)
+    for the run log. ``ClaudeCreditsExhausted`` propagates so the caller can
+    stop the run without counting the row as failed.
+    """
+
+    def __init__(self, pool: ClaudeKeyPool, spend: ClaudeSpend, *,
+                 client_factory=_default_claude_client):
+        self.pool = pool
+        self.spend = spend
+        self.client_factory = client_factory
+        self.last_call: dict = {}
+
+    @staticmethod
+    def request_params(prompt: str, model: str, effort: str, *,
+                       response_kind: str = "audit",
+                       allow_compute_required: bool = True) -> dict:
+        if response_kind == "audit":
+            schema = audit_verdict_output_schema(
+                allow_compute_required=allow_compute_required
+            )
+        elif response_kind == "judicial_vote":
+            schema = judicial_vote_output_schema()
+        else:
+            raise ValueError(f"unknown response schema kind {response_kind!r}")
+        return {
+            "model": model,
+            "max_tokens": CLAUDE_MAX_TOKENS,
+            "messages": [{"role": "user", "content": prompt}],
+            "thinking": {"type": "adaptive"},
+            "output_config": {
+                "effort": effort,
+                "format": {
+                    "type": "json_schema",
+                    "schema": claude_compatible_schema(schema),
+                },
+            },
+            "betas": [CLAUDE_FALLBACK_BETA],
+            "fallbacks": "default",
+        }
+
+    @staticmethod
+    def request_digest(params: dict) -> str:
+        return hashlib.sha256(
+            json.dumps(params, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        ).hexdigest()
+
+    def run(self, prompt: str, isolated_dir: Path | None, timeout_sec: int,
+            reasoning_effort: str | None = None,
+            model: str | None = None, *,
+            response_kind: str = "audit",
+            allow_compute_required: bool = True) -> tuple[bool, str, str]:
+        import anthropic
+
+        model = model or CLAUDE_AUDIT_MODEL
+        effort = reasoning_effort or "high"
+        params = self.request_params(
+            prompt, model, effort,
+            response_kind=response_kind,
+            allow_compute_required=allow_compute_required,
+        )
+        digest = self.request_digest(params)
+        self.last_call = {
+            "request_sha256": digest,
+            "requested_model": model,
+            "reasoning_effort": effort,
+        }
+        while True:
+            # Covers initial, repair, repeat, and key-rotation attempts.
+            if self.spend.exhausted():
+                raise ClaudeCreditsExhausted(
+                    "estimated spend threshold reached before next request"
+                )
+            current = self.pool.current()
+            if current is None:
+                raise ClaudeCreditsExhausted(
+                    "every configured API key is exhausted or unusable: "
+                    f"{self.pool.retired}"
+                )
+            label, key = current
+            self.last_call["key_label"] = label
+            client = self.client_factory(key, timeout_sec)
+            try:
+                with client.beta.messages.stream(**params) as stream:
+                    message = stream.get_final_message()
+            except anthropic.AuthenticationError:
+                self.pool.retire(label, "authentication_failed")
+                continue
+            except anthropic.APIStatusError as exc:
+                if CLAUDE_CREDIT_EXHAUSTED_MARKER in str(exc).lower():
+                    self.pool.retire(label, "credit_balance_exhausted")
+                    continue
+                return False, "", f"[claude API error {exc.status_code}: {str(exc)[:300]}]"
+            except anthropic.APIConnectionError as exc:
+                return False, "", f"[claude connection error: {str(exc)[:300]}]"
+            usage = getattr(message, "usage", None)
+            content = getattr(message, "content", None) or []
+            fallbacks = [block for block in content if _claude_value(block, "type") == "fallback"]
+            chain = [{"from": _claude_value(_claude_value(block, "from"), "model"),
+                      "to": _claude_value(_claude_value(block, "to"), "model")}
+                     for block in fallbacks]
+            iterations = _claude_value(usage, "iterations") or []
+            iteration_model = _claude_value(iterations[-1], "model") if iterations else None
+            message_model = getattr(message, "model", None)
+            served = str(iteration_model or (chain[-1]["to"] if chain else None)
+                         or message_model or model)
+            cost = self.spend.add(model, served, usage)
+            self.last_call.update({
+                "served_model": served,
+                "message_model": message_model,
+                "fallbacks": chain,
+                "message_id": getattr(message, "id", None),
+                "stop_reason": getattr(message, "stop_reason", None),
+                "usage": _claude_usage_record(usage),
+                "estimated_cost_usd": round(cost, 6),
+                "run_spend_usd": round(self.spend.spent_usd, 6),
+            })
+            if not (iteration_model or chain or message_model):
+                return False, "", "[Claude serving-model provenance missing]"
+            previous = model
+            for transition in chain:
+                if transition["from"] != previous or not transition["to"]:
+                    return False, "", "[ambiguous Claude fallback provenance]"
+                previous = transition["to"]
+            if ((chain and previous != served)
+                    or (message_model and message_model not in {model, served})):
+                return False, "", "[inconsistent Claude serving-model provenance]"
+            stop_reason = getattr(message, "stop_reason", None)
+            if stop_reason == "refusal":
+                details = getattr(message, "stop_details", None)
+                category = getattr(details, "category", None)
+                return False, "", f"[claude refusal: category={category}]"
+            if stop_reason == "max_tokens":
+                return False, "", "[claude reply truncated at max_tokens]"
+            # Streaming fallback continues partial output in later text blocks.
+            reply = "".join(str(_claude_value(block, "text", "")) for block in content
+                            if _claude_value(block, "type") == "text")
+            if not reply:
+                return False, "", "[claude reply carried no text block]"
+            try:
+                parsed = json.loads(reply)
+            except (ValueError, TypeError):
+                return False, "", "[claude reply is not one complete JSON object]"
+            if not isinstance(parsed, dict):
+                return False, "", "[claude reply is not a JSON object]"
+            return True, reply, ""
 
 
 # Files that the audit pipeline regenerates and that should be committed
@@ -2880,6 +3323,14 @@ def validate_verdict(
     )
     if tuple_error:
         return tuple_error
+    if blob.get("premises_used") is not None:
+        if not _premise_registry_present(REPO_ROOT):
+            return "premises_used names premise units but no premise registry exists"
+        premise_error = audit_science_fingerprint.premise_declaration_error(
+            blob.get("premises_used"), REPO_ROOT
+        )
+        if premise_error:
+            return premise_error
     forensic_tier = bool(
         source_requires_no_go
         or blob.get("claim_type") == "no_go"
@@ -3739,6 +4190,50 @@ def main() -> int:
                         "family and won't satisfy the standard "
                         "independence rule for clean verdicts.")
     p.add_argument(
+        "--auditor-backend",
+        choices=["codex", "claude"],
+        default="codex",
+        help="Auditor backend. The Claude proposal is unactivated and refuses "
+             "requests; no account configuration or SDK installation activates it.",
+    )
+    p.add_argument(
+        "--claude-model",
+        default=CLAUDE_AUDIT_MODEL,
+        help=f"Claude model for --auditor-backend claude (default {CLAUDE_AUDIT_MODEL}).",
+    )
+    p.add_argument(
+        "--claude-effort",
+        choices=CLAUDE_EFFORTS,
+        default=None,
+        help="Force one effort level for every row. Default is by criticality: "
+             + ", ".join(
+                 f"{tier}={effort}"
+                 for tier, effort in CLAUDE_EFFORT_BY_CRITICALITY.items()
+             )
+             + ".",
+    )
+    p.add_argument(
+        "--claude-key-env",
+        action="append",
+        default=None,
+        help="Environment variable holding one Claude API key. Repeat to rotate "
+             "across Console organizations, soonest-expiring credits first. "
+             "Default: " + ", ".join(CLAUDE_KEY_ENV_DEFAULT) + ".",
+    )
+    p.add_argument(
+        "--claude-max-spend-usd",
+        type=float,
+        default=None,
+        help="Stop starting new Claude requests once this run's estimated "
+             "spend reaches this many USD (list-price estimate).",
+    )
+    p.add_argument(
+        "--claude-timeout-sec",
+        type=int,
+        default=CLAUDE_DEFAULT_TIMEOUT_SEC,
+        help=f"Per-request Claude API timeout (default {CLAUDE_DEFAULT_TIMEOUT_SEC}).",
+    )
+    p.add_argument(
         "--run-log-path",
         type=Path,
         default=None,
@@ -3768,13 +4263,43 @@ def main() -> int:
     if args.no_propagate and args.push_mode != "none":
         p.error("--no-propagate is allowed only with --push-mode none")
 
-    # Reasoning-effort policy: per repo audit-lane decision (2026-05-04),
-    # ALL audits run at xhigh. We do not expose a knob to lower it.
-    reasoning_effort = AUDIT_REASONING_EFFORT
-    audit_model, auditor_family, model_source, model_warnings = resolve_audit_model()
+    claude_backend: ClaudeAuditBackend | None = None
+    if args.auditor_backend == "claude":
+        if not CLAUDE_AUDIT_ENABLED:
+            print("REFUSING: Claude audit proposal is unactivated; formal audit remains deferred.")
+            return 2
+        # Proposed Claude seats run per-row effort by
+        # criticality (CLAUDE_EFFORT_BY_CRITICALITY) or --claude-effort.
+        reasoning_effort = args.claude_effort or "by-criticality"
+        audit_model = args.claude_model
+        try:
+            auditor_family = claude_family_for_model(audit_model)
+        except ValueError as exc:
+            print(f"REFUSING: {exc}")
+            return 2
+        model_source = "--claude-model"
+        model_warnings = []
+        key_envs = args.claude_key_env or list(CLAUDE_KEY_ENV_DEFAULT)
+        pool = ClaudeKeyPool(key_envs)
+        if not pool.labels and not args.dry_run:
+            print(
+                "REFUSING: no Claude API key found in any of "
+                f"{key_envs}; set one or pass --claude-key-env."
+            )
+            return 2
+        claude_backend = ClaudeAuditBackend(
+            pool, ClaudeSpend(args.claude_max_spend_usd)
+        )
+    else:
+        # Reasoning-effort policy: per repo audit-lane decision (2026-05-04),
+        # ALL Codex audits run at xhigh. We do not expose a knob to lower it.
+        reasoning_effort = AUDIT_REASONING_EFFORT
+        audit_model, auditor_family, model_source, model_warnings = resolve_audit_model()
 
-    # Defense in depth beneath best-available model selection.
-    if not _meets_floor(audit_model) and not args.allow_low_model:
+    # Defense in depth beneath best-available Codex model selection. The GPT
+    # rank floor does not apply to a Claude seat.
+    codex_seat = claude_backend is None
+    if codex_seat and not _meets_floor(audit_model) and not args.allow_low_model:
         floor_str = ".".join(str(x) for x in MIN_AUDIT_MODEL_RANK)
         print(
             f"\nREFUSING to run: resolved audit model {audit_model!r} "
@@ -3786,7 +4311,7 @@ def main() -> int:
             f"  on the next batch once this is resolved."
         )
         return 2
-    if not _meets_floor(audit_model):
+    if codex_seat and not _meets_floor(audit_model):
         floor_str = ".".join(str(x) for x in MIN_AUDIT_MODEL_RANK)
         print(
             f"WARNING: --allow-low-model: running below gpt-{floor_str} floor "
@@ -3799,7 +4324,8 @@ def main() -> int:
     run_uuid = uuid.uuid4().hex
     run_id = run_uuid[:8]
     auditor_name_base = args.auditor_name or (
-        f"codex-cli-{audit_model}-"
+        f"{'claude-api' if claude_backend is not None else 'codex-cli'}-"
+        f"{audit_model}-"
         f"{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S')}-{run_id}"
     )
     if args.run_log_path is not None:
@@ -3816,23 +4342,40 @@ def main() -> int:
         )
     print(f"Run log: {run_log}")
     print(f"Auditor (base): {auditor_name_base}  ({auditor_family})")
-    print(f"Codex model: {audit_model}  reasoning_effort={reasoning_effort}")
+    backend_label = "Claude" if claude_backend is not None else "Codex"
+    print(f"{backend_label} model: {audit_model}  reasoning_effort={reasoning_effort}")
     print(f"Model policy source: {model_source}")
     for warning in model_warnings:
         print(f"MODEL POLICY WARNING: {warning}")
+    if claude_backend is not None:
+        print(
+            "Claude keys (rotation order): "
+            + (", ".join(claude_backend.pool.labels) or "(none; dry run)")
+        )
+        if args.claude_max_spend_usd is not None:
+            print(f"Claude run spend cap: ${args.claude_max_spend_usd:.2f}")
     with run_log.open("a", encoding="utf-8") as f:
         f.write(json.dumps({
             "phase": "model_policy",
+            "backend": args.auditor_backend,
             "model": audit_model,
             "auditor_family": auditor_family,
             "reasoning_effort": reasoning_effort,
             "source": model_source,
             "warnings": model_warnings,
+            "claude_key_labels": (
+                claude_backend.pool.labels if claude_backend is not None else None
+            ),
+            "claude_max_spend_usd": args.claude_max_spend_usd,
         }) + "\n")
     print("Per-row independence is determined from each row's existing cross_confirmation:")
-    print("  first-pass with no prior audit                    -> cross_family")
+    if claude_backend is not None:
+        print("  first-pass / re-audit, author family unknown or Claude -> fresh_context")
+        print("  first-pass / re-audit, author family known non-Claude  -> cross_family")
+    else:
+        print("  first-pass with no prior audit                    -> cross_family")
     print("  second-pass after a prior audit by a different family -> cross_family")
-    print("  second-pass after a prior audit by Codex            -> fresh_context")
+    print("  second-pass after a prior audit by the same family     -> fresh_context")
     print("  rows in disagreement / awaiting-judicial-review     -> top-level panel lane")
     if args.from_dispatch:
         print("Source: audit_dispatch_queue.json (live targeted re-audits)")
@@ -3960,7 +4503,12 @@ def main() -> int:
     skipped = 0
     push_failed = False
     propagation_failed = False
+    # Set when a Claude run must stop early (credits exhausted or spend cap).
+    # Rows not reached are untouched and stay queued for the next run.
+    claude_stop_reason: str | None = None
     for i, row in enumerate(targets, 1):
+        if claude_stop_reason is not None:
+            break
         cid = row["claim_id"]
         print(f"\n[{i}/{len(targets)}] {cid}")
         try:
@@ -4201,12 +4749,62 @@ def main() -> int:
                 continue
 
             isolated = ISOLATED_BASE / f"{run_id}-{i:03d}"
-            t0 = time.time()
-            ok, stdout, stderr = run_codex(
-                prompt, isolated, args.codex_timeout_sec,
-                reasoning_effort=reasoning_effort,
-                model=audit_model,
+            row_model, row_family = audit_model, auditor_family
+            row_effort = (
+                claude_effort_for_row(full_led_row, args.claude_effort)
+                if claude_backend is not None
+                else reasoning_effort
             )
+            if claude_backend is not None and claude_backend.spend.exhausted():
+                claude_stop_reason = (
+                    f"run spend cap ${args.claude_max_spend_usd:.2f} reached "
+                    f"(estimated ${claude_backend.spend.spent_usd:.2f})"
+                )
+                break
+            t0 = time.time()
+            if claude_backend is not None:
+                try:
+                    ok, stdout, stderr = claude_backend.run(
+                        prompt, isolated, args.claude_timeout_sec,
+                        reasoning_effort=row_effort,
+                        model=audit_model,
+                    )
+                except ClaudeCreditsExhausted as exc:
+                    claude_stop_reason = str(exc)
+                    break
+                with run_log.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps({
+                        "claim_id": cid,
+                        "phase": "claude_request",
+                        **claude_backend.last_call,
+                    }) + "\n")
+                if ok:
+                    row_model = (
+                        claude_backend.last_call.get("served_model") or audit_model
+                    )
+                    try:
+                        row_family = claude_family_for_model(row_model)
+                        served_role, served_independence = determine_audit_role(
+                            full_led_row, row_family,
+                            is_reaudit_candidate=(args.from_reaudit_candidates or args.from_dispatch),
+                            is_dispatch_target=args.from_dispatch,
+                        )
+                        if (served_role != role or served_role == "skip"
+                                or (args.from_dispatch and served_independence == "weak"
+                                    and not args.allow_weak_dispatch)):
+                            ok, stderr = False, "[served family is ineligible for selected audit seat]"
+                        else:
+                            row_independence = served_independence
+                    except ValueError:
+                        ok, stderr = False, (
+                            f"[claude reply served by unrecognized model {row_model!r}]"
+                        )
+            else:
+                ok, stdout, stderr = run_codex(
+                    prompt, isolated, args.codex_timeout_sec,
+                    reasoning_effort=reasoning_effort,
+                    model=audit_model,
+                )
             elapsed = time.time() - t0
             with run_log.open("a", encoding="utf-8") as f:
                 f.write(json.dumps({
@@ -4392,13 +4990,39 @@ def main() -> int:
                         break
                     repair_dir = isolated / f"validation-repair-{repair_attempt:02d}"
                     repair_t0 = time.time()
-                    repair_ok, repair_stdout, repair_stderr = run_codex(
-                        repair_prompt,
-                        repair_dir,
-                        args.codex_timeout_sec,
-                        reasoning_effort=reasoning_effort,
-                        model=audit_model,
-                    )
+                    if claude_backend is not None:
+                        try:
+                            repair_ok, repair_stdout, repair_stderr = (
+                                claude_backend.run(
+                                    repair_prompt,
+                                    repair_dir,
+                                    args.claude_timeout_sec,
+                                    reasoning_effort=row_effort,
+                                    model=audit_model,
+                                )
+                            )
+                        except ClaudeCreditsExhausted as exc:
+                            # Finish this row as an unrepaired reject; the
+                            # loop stops before the next row.
+                            claude_stop_reason = str(exc)
+                            repair_ok, repair_stdout, repair_stderr = (
+                                False, "", f"[{exc}]"
+                            )
+                        with run_log.open("a", encoding="utf-8") as f:
+                            f.write(json.dumps({
+                                "claim_id": cid,
+                                "phase": "claude_validation_repair_request",
+                                "attempt": repair_attempt,
+                                **claude_backend.last_call,
+                            }) + "\n")
+                    else:
+                        repair_ok, repair_stdout, repair_stderr = run_codex(
+                            repair_prompt,
+                            repair_dir,
+                            args.codex_timeout_sec,
+                            reasoning_effort=reasoning_effort,
+                            model=audit_model,
+                        )
                     repair_elapsed += time.time() - repair_t0
                     if not repair_ok:
                         err = f"validation repair codex exec failed: {repair_stderr.strip()[:300]}"
@@ -4577,10 +5201,12 @@ def main() -> int:
                     }) + "\n")
                 continue
 
+            # row_model/row_family name the model that actually served the
+            # judgment (a Claude refusal fallback may differ from the request).
             full_blob = add_auditor_metadata(
-                blob, row_auditor, auditor_family, row_independence,
-                auditor_model=audit_model,
-                auditor_reasoning_effort=reasoning_effort,
+                blob, row_auditor, row_family, row_independence,
+                auditor_model=row_model,
+                auditor_reasoning_effort=row_effort,
             )
             if args.push_mode != "none":
                 selection_source = (
@@ -4700,8 +5326,9 @@ def main() -> int:
     ):
         crit = f" {args.criticality}" if args.criticality else ""
         msg = (
-            f"audit: codex-cli batch {applied} verdict(s){crit} "
-            f"({audit_model}, xhigh, {auditor_name_base})"
+            f"audit: {'claude-api' if claude_backend is not None else 'codex-cli'} "
+            f"batch {applied} verdict(s){crit} "
+            f"({audit_model}, {reasoning_effort}, {auditor_name_base})"
         )
         pushed, push_msg = commit_and_push_to_main(msg)
         if pushed:
@@ -4718,6 +5345,25 @@ def main() -> int:
 
     print(f"\nDone. applied={applied} failed={failed} skipped={skipped}  "
           f"(of {len(targets)} attempted)")
+    if claude_backend is not None:
+        print(
+            f"Claude estimated spend this run: "
+            f"${claude_backend.spend.spent_usd:.2f}"
+        )
+        for label, reason in claude_backend.pool.retired.items():
+            print(f"  key {label}: retired ({reason})")
+    if claude_stop_reason is not None:
+        print(
+            f"Stopped early: {claude_stop_reason}. Rows not reached were not "
+            "touched and stay queued; rerun when credits refresh."
+        )
+        with run_log.open("a", encoding="utf-8") as f:
+            f.write(json.dumps({
+                "phase": "claude_run_stopped",
+                "reason": claude_stop_reason,
+                "spent_usd": round(claude_backend.spend.spent_usd, 6)
+                if claude_backend is not None else None,
+            }) + "\n")
     print(f"Run log: {run_log}")
     if args.no_propagate and applied > 0:
         print("\nNote: --no-propagate was set; run "

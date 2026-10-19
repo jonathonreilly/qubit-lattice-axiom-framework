@@ -1524,3 +1524,12 @@ records, and exact command output, then report the blocker. A verified
 claim-local rollback is quarantined and does not stop the campaign. Do not stop
 merely because a five-judge panel occurred or because a panel was unresolved;
 continue with a fresh panel carrying the prior panel outcomes in context.
+
+## Unactivated audit-tooling proposal
+
+The 2026-10-18 premise-scoping and Claude API backend source is an unactivated
+proposal. Do not use it to seat auditors, lower effort, relax author-family
+independence, or narrow current premise invalidation. Existing account and
+concurrency limits, exact canonical provenance (unknown means hold), and
+strongest qualifying runner requirements above remain binding. The source
+review authorizes synthetic regression tests only; formal audit is deferred.

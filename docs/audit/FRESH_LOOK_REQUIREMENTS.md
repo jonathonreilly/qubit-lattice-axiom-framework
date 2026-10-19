@@ -225,3 +225,11 @@ mathematics from scratch. The auditor checks whether the derivation as
 presented closes from its cited inputs, not whether an alternative
 derivation exists. Independent re-derivation is a separate, stronger
 check that belongs to external peer review.
+
+## Unactivated tooling proposal (2026-10-18)
+
+The premise-scoped fingerprint and Claude API backend proposal is documented
+in `PREMISE_SCOPED_FINGERPRINT_AND_CLAUDE_AUDITOR_NOTE_2026-10-18.md`.
+Its source is available for synthetic tests only. It grants no exception to
+this document's independence, effort, provenance, or whole-premise rules.
+Formal audit remains deferred. A separate governed activation is required.

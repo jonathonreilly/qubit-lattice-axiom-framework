@@ -1,0 +1,18 @@
+{
+  "description": "Unactivated audit-tooling proposal map; carries no premise or interpretive weight and adds no axiom content. Exact clauses and shared clauses are bound only in synthetic scoped-v3 tests; production remains whole-premise v2. Mapped nested content and container preamble are bound, unmapped normative headings fail closed. See the 2026-10-18 proposal note. Original assertions of owner authorization are withdrawn.",
+  "nodes": {
+    "minimal_axioms": {
+      "clauses": {
+        "admissibility": "### Admissibility / Local Constraint",
+        "lattice": "### Lattice / Physical Locality",
+        "qubit": "### Qubit / Site Possibility",
+        "record": "### Record / Fixed Reality"
+      },
+      "container_heading": "## The Four Framework Axioms",
+      "shared_clauses": {
+        "qualification": "## Qualification"
+      }
+    }
+  },
+  "schema": "premise_clause_map_v1"
+}

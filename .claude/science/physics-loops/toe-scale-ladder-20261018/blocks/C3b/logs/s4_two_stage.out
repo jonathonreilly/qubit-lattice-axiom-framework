@@ -18,3 +18,4 @@ ell=8 A=0.0 s=0.0 delta=0.02 L=72 ns=53: chi_L=242.14+-47.14 xi=2.83 C(ell)=0.03
 PASS  s4 ell=8 s=0.0 delta=0.02: chi_L slope |.|<1 (no LRO; LRO->3)  slope=0.021+-0.218
   elapsed 246s
 ell=8 A=0.0 s=0.3 delta=0.02 L=24 ns=400: chi_L=317.19+-23.68 xi=2.73 C(ell)=0.014 C(L/2)=-0.0121+-0.0018 <L(x)>=13.91 maxL=39.8
+ell=8 A=0.0 s=0.3 delta=0.02 L=48 ns=180: chi_L=296.60+-29.01 xi=2.79 C(ell)=0.031 C(L/2)=-0.0027+-0.0012 <L(x)>=13.84 maxL=45.0

@@ -30,8 +30,10 @@ explicit user request) — ready body in `PR_BACKLOG.md`.
 
 ## Open, highest-blast-radius residuals (next campaign)
 - **Photon phase (R2→R3):** C1/C1b inconclusive; bottleneck is winding-sector mixing at
-  β ≥ L. C1c long production (results in `blocks/C1c/` if finished). Next: dual-height or
-  worm formulation, L ≥ 8–16, ~50× statistics.
+  β ≥ L. C1c equilibrated L=4,6: pre-declared tests conflict (no verdict); its L=8
+  energy −443.85(15) indicates the repo's 8³ guided-projector value (−443.364) is too high —
+  a repair candidate for that note after an owner/review decision. Next: equilibrated L ≥ 8
+  (dual-height/worm formulation or much longer PT), and a declared rule for combining tests.
 - **Chiral matter (R3):** K + L force interacting dynamics. Precise next question: can a
   strictly local interacting one-qubit (or emergent-fermion code) dynamics carry net
   chirality at low energy? Relate to anomaly / symmetric-mass-generation literature.

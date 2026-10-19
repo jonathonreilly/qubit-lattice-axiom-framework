@@ -3,15 +3,15 @@
 **Block:** `toe-scale-ladder-20261018 / C1c`. This is a production follow-up to C1b (`blocks/C1b/NOTE.md`, `REVIEW.md`).
 **Claim types:** [NUM] numerical evidence from this block's runs; [VERDICT] a pre-declared criterion applied as declared;
 [POST HOC] a diagnostic chosen after the data were seen; [EXT] a value from elsewhere, not re-verified here.
-**Status:** this note has not been reviewed. Author: a Claude subagent (Opus 5.5). No independent check was made:
-the code is C1b's, re-run.
+**Status:** reviewed in a separate agent context (same model as the author; REVIEW.md, verdict ready after wording fixes); unaudited. 
+Code: C1b's scripts, copied unchanged (hashes verified) and re-run.
 **Criteria:** C1b's pre-declared criteria (C1b WORKLOG 01:32/03:35/03:40; C1b NOTE §4), used **unchanged**. The C1c
 plan, its fixed schedule and the L=8 criterion (error ≤ 0.15, from C1's review) were declared in `WORKLOG.md` at 08:57 UTC,
 before any C1c data existed.
 
 ## 0. Bottom line
 
-1. **What equilibrated, by the declared EQ rule.** The rule asks two starts to agree on E, ⟨W²⟩ and S_T(q1) within 2.5σ,
+1. **What passed the declared EQ rule** (weak evidence at L=6: in L6_s3, P1(β=6) stays ≲0.02 for 14 chunks, then jumps to ≈0.08 — see REVIEW.md). The rule asks two starts to agree on E, ⟨W²⟩ and S_T(q1) within 2.5σ,
    with at least 10 round trips per run. [NUM]
    - **L=4, β=4: PASS.** It took 173k sweeps per start, with 71 and 78 trips. The start-difference z values are
      E +0.26, ⟨W²⟩ +0.43, S_T +0.03.
@@ -133,7 +133,7 @@ At β = L/2, the L=4 value is not evaluated by `analyze_prod.py`, because L/2 = 
   - against the repo [EXT] −443.364(31): z = −3.29.
 - **Interpretation.** The sampler is exact for the W=0 sector at fixed β, so ⟨H⟩_{β, W=0} ≥ E0(W=0) holds up to
   statistics. A value 3.3σ below −443.364 therefore indicates that the repo figure lies above the W=0 ground energy, by
-  roughly 0.5 ± 0.15. This is a one-sided statement.
+  at least about 0.5 ± 0.15. This is a one-sided statement.
 - **Caveats.**
   - The autocorrelation is long. Fifths of the s5 run range from −444.4 to −443.1, and a fifths-based error, which
     is post hoc, would be about 0.14 combined.

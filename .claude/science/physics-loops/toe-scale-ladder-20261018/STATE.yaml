@@ -8,7 +8,7 @@ base_main: 584755767
 delivery: milestone   # PRs only on explicit user request (platform rule); PR_BACKLOG.md holds ready bodies
 checkpoint_interval: 30m-2h (orchestrator wakes on worker completion)
 target_status: best-honest-status
-lock: scripts/automation_lock.py owner=physics-loop ttl=6h (refresh)
+lock: released at stop
 organizing_concept: >
   Scale ladder R0 axioms -> R1 finite patch -> R2 infinite volume -> R3 continuum/IR
   -> R4 physical scale hierarchy. Attack the lowest open upward bridge; do not densify R1.
@@ -16,5 +16,5 @@ token_policy: >
   Orchestrator stays lean: workers return <=600-word summaries + artifact paths;
   full derivations/logs live in pack files; one independent checker per load-bearing result.
 cycle: 1
-active_route: 08:55Z — ready: C1/C1b (inconclusive) C2 C3 C3b C4 C4b C4c C4d C4e C4f C5 C5b C6 C7 C8; running: C9 (full-soldering SU(2) pair motion), C1c (long QMC production, ends 17:30Z)
-next_action: review C9 on return; final packaging (HANDOFF.md, PR_BACKLOG.md) from ~16:30Z; fold C1c into results; stop 18:36Z
+active_route: STOPPED 2026-10-19 ~17:00Z — all 18 blocks complete and reviewed (C1/C1b inconclusive, C1c no phase verdict); see HANDOFF.md
+next_action: owner decisions in HANDOFF.md; open PR from PR_BACKLOG.md on request

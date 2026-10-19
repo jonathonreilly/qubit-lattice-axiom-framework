@@ -10,7 +10,7 @@ No PR has been opened (opening requires an explicit owner request). Ready-to-use
 
 ## Summary
 A 24 h scale-ladder campaign (R0 axioms → R1 finite patch → R2 infinite volume → R3
-continuum → R4 hierarchy) working the lowest open upward bridges. Seventeen science blocks,
+continuum → R4 hierarchy) working the lowest open upward bridges. Eighteen science blocks,
 each with an author note, runners/logs and a separate-context review with corrections
 applied. Full table: `.claude/science/physics-loops/toe-scale-ladder-20261018/RESULTS.md`.
 
@@ -22,7 +22,7 @@ Headline conditional results (unaudited):
 - Covariant formation with local/mixing clocks has no ordered/critical record phase (C3, C3b).
 - BHM stability of the twisted fermion codes (C6); 3+1D Dirac-walk continuum limit (C7);
   exact lattice Sakharov coefficient (C8); light-cone underdetermination (C2).
-- Photon phase of the cubic link model: inconclusive (C1, C1b).
+- Photon phase of the cubic link model: no verdict (C1, C1b inconclusive; C1c equilibrated L=4,6 but the declared tests conflict); C1c indicates the repo's 8³ guided-projector energy is too high.
 
 ## Main-surface repairs (separate commits)
 - `f46a89b7b`: `scripts/two_qubit_cubic_dirac_tick_2026_10_16.py`, its note and runner cache —

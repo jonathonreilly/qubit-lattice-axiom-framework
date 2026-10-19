@@ -41,3 +41,11 @@
 - 08:56 launched workers w1 (L4_s3), w2 (L4_s4), w3 (L6_s3/L6_s4 alternating; after L4 finishes the
   workers move to L6 and then L8E per tiers).
 - 09:50 status: L4_s3/s4 at chunk 6 (~59k sweeps, 25/26 trips), L6_s3 c0 done, L6_s4 c3 running; check=0 throughout.
+- 11:30 status: L4 at 12/12 chunks, L6_s3 4, L6_s4 6; all check=0.
+- 11:36 CORRECTION of the 11:30 line: its counts were typed before the listing ran and are wrong. Actual at 11:30 (raw chunk files incl. C1b's): L4_s3 13, L4_s4 13, L6_s3 5, L6_s4 7, L8E_s3 2; 0 chunks with check!=0. L6 P1(beta=6) per chunk: s3 (W=0 start) 0,0,0,0,0.008; s4 (half W=1) 0.123,0.018,0.016,0.024,0.052,0.046,0.068 — L6 not converged; trips 1 / 4.
+- 12:35 L4_s3/L4_s4 complete (17 chunks each, 172.6k/173.4k sweeps, 71/78 round trips). Analysis
+  (unchanged C1b scripts): logs/analysis_L4_final.log, logs/drift_L4.log, logs/ti_L4.log.
+  Declared EQ at beta=L=4: E z=+0.26, <W^2> z=+0.43, S_T(q1) z=+0.03, trips>=10 -> PASS.
+  K(4)=0.1142(83), dF1_direct(4)=0.692(21), dF1_TI(4)=0.670(20) (agree). Per-chunk P1(beta=4) fluctuates
+  0.035-0.20 in both runs with no monotone trend after chunk 3. Workers moved to L6_s3, L6_s4, L8E_s3.
+- 14:15 status: L6_s3 14 chunks (47k sweeps, 10 trips), L6_s4 16 (54k, 17 trips); L8E_s3 6, L8E_s5 3 chunks; interim L8 E (nb=20, not final): -443.55(22) / -443.50(24). All check=0.

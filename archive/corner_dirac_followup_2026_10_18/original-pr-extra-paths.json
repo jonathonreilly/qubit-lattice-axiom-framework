@@ -1,0 +1,25 @@
+{
+  "revision": "06b8f42d9bbf956763f5a3ea90d0992d0e67b145",
+  "entries": [
+    {
+      "path": ".claude/science/physics-loops/toe-campaign-20261017/STATE.yaml",
+      "status": "M",
+      "blob": "104b1d3e84aa9efe929fd1eb653f88d194d236d7",
+      "mode": "100644",
+      "sha256": "73f0f6c1cfc61000e3f9fdc856b2abd240ce33430a21aff1abfb9dded64fc39e",
+      "bytes": 2064,
+      "stored_path": "_objects/73f0f6c1cfc61000e3f9fdc856b2abd240ce33430a21aff1abfb9dded64fc39e.gz",
+      "stored_sha256": "3741674ff38e60ddf321ff12dd571157a17dcc8a8d162ce1292f7a824820e3c0"
+    },
+    {
+      "path": "docs/CORNER_FERMION_MASSLESS_DIRAC_PAIR_PROTECTED_BY_CUBE_ROTATIONS_AND_PSEUDOSCALAR_DIRAC_MASS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "status": "M",
+      "blob": "81ca121d752a45b81712446da8bb2abbdc3c1249",
+      "mode": "100644",
+      "sha256": "0104bdfd431182dccf25b223d49ff497a54779269d73088ce2087f26a3a26870",
+      "bytes": 14914,
+      "stored_path": "_objects/0104bdfd431182dccf25b223d49ff497a54779269d73088ce2087f26a3a26870.gz",
+      "stored_sha256": "8b743ca2be68c8862f1bdc175ba4ae91d3f8174598059d164e37b5383994699c"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "status": "Selectively checked conditional theorem and single bounded arithmetic point; unaudited",
+  "note_sha256": "d8a9bac0cb8a730a0f7fd0965f95f671d9dbaf096f88d031b4643dc85587c6a5",
+  "manifest_sha256": "2d3ea4f0b8782c1b59182e83457e9fb300ca83fc02f529b4199d8767a6ccf160",
+  "integration_sha256": "0f0af265c4458010fcdf3ca0a2c2d37786939ed352054a6fe1e88b8e2a184083",
+  "post_review_edits": [],
+  "new_files": 22,
+  "inherited_mappings": 213,
+  "inherited_false_proof_flags": 12,
+  "historical_notes": 14,
+  "current_context_notes": 12,
+  "inherited_manifests": 11,
+  "note_links": 38,
+  "point_source_pins_resolved": 43,
+  "frozen_members_preserved": 16,
+  "graph": {
+    "old_nodes_unchanged": true,
+    "new_nodes": {
+      "mediated_finite_point_and_decay_bounded_theorem_note_2026-10-17": {
+        "deps_hash": "b7130df5f13f",
+        "out_degree": 1
+      }
+    },
+    "node_count": 7246,
+    "edge_count": 16240,
+    "added_edges": 1
+  },
+  "limits": "One previous captured interval-bound calculation preserved, not rerun. Full ROOT note/review read, selective independent code/argument checks. No dynamics, parameter sweep, full pipeline, retained audit or native realization. Separate decay not evaluated in baseline."
+}

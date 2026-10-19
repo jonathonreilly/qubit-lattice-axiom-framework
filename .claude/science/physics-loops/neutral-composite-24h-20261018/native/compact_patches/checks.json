@@ -1,0 +1,57 @@
+{
+  "periodic_cube_source_visible_group": {
+    "gap": 1.423237955385929,
+    "indices": [
+      6,
+      7
+    ],
+    "captured_normalized_source_weights": [
+      0.019615814985364598,
+      0.0011794269894264498
+    ],
+    "max_residual": 1.210789860176888e-12,
+    "touches_eigensolver_cutoff": false
+  },
+  "sheet_source_visible_modes": [
+    {
+      "shape": [
+        4,
+        1,
+        4
+      ],
+      "gap": 3.408437343311398,
+      "eigen_residual": 1.707909055956951e-11,
+      "normalized_source_weights": [
+        0.12820521469473778
+      ]
+    },
+    {
+      "shape": [
+        4,
+        1,
+        6
+      ],
+      "gap": 1.5735867885685444,
+      "eigen_residual": 2.306864959145287e-14,
+      "normalized_source_weights": [
+        0.01214077729432685,
+        3.3742512568636694e-05
+      ]
+    },
+    {
+      "shape": [
+        6,
+        1,
+        4
+      ],
+      "gap": 1.5735867885685408,
+      "eigen_residual": 2.5737097608537742e-14,
+      "normalized_source_weights": [
+        0.012140777294327438,
+        3.374251256862366e-05
+      ]
+    }
+  ],
+  "three_dimensional_variational_energy_reduction": 2.7956722297076047,
+  "scope": "Dense/tensor and representation/solver checks by root; no stable finite size established; thresholds are exposed numerical diagnostics"
+}

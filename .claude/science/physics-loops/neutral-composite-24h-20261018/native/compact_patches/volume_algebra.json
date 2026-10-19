@@ -1,0 +1,91 @@
+{
+  "cases": 12,
+  "all_pass": true,
+  "x_face_fusion_contribution": 0,
+  "rows": [
+    {
+      "thickness": 1,
+      "width": 2,
+      "length": 2,
+      "changed_YY": 4,
+      "changed_ZZ": 4
+    },
+    {
+      "thickness": 1,
+      "width": 2,
+      "length": 4,
+      "changed_YY": 8,
+      "changed_ZZ": 4
+    },
+    {
+      "thickness": 1,
+      "width": 2,
+      "length": 6,
+      "changed_YY": 12,
+      "changed_ZZ": 4
+    },
+    {
+      "thickness": 1,
+      "width": 4,
+      "length": 2,
+      "changed_YY": 4,
+      "changed_ZZ": 8
+    },
+    {
+      "thickness": 1,
+      "width": 4,
+      "length": 4,
+      "changed_YY": 8,
+      "changed_ZZ": 8
+    },
+    {
+      "thickness": 1,
+      "width": 4,
+      "length": 6,
+      "changed_YY": 12,
+      "changed_ZZ": 8
+    },
+    {
+      "thickness": 2,
+      "width": 2,
+      "length": 2,
+      "changed_YY": 8,
+      "changed_ZZ": 8
+    },
+    {
+      "thickness": 2,
+      "width": 2,
+      "length": 4,
+      "changed_YY": 16,
+      "changed_ZZ": 8
+    },
+    {
+      "thickness": 2,
+      "width": 2,
+      "length": 6,
+      "changed_YY": 24,
+      "changed_ZZ": 8
+    },
+    {
+      "thickness": 2,
+      "width": 4,
+      "length": 2,
+      "changed_YY": 8,
+      "changed_ZZ": 16
+    },
+    {
+      "thickness": 2,
+      "width": 4,
+      "length": 4,
+      "changed_YY": 16,
+      "changed_ZZ": 16
+    },
+    {
+      "thickness": 2,
+      "width": 4,
+      "length": 6,
+      "changed_YY": 24,
+      "changed_ZZ": 16
+    }
+  ]
+}

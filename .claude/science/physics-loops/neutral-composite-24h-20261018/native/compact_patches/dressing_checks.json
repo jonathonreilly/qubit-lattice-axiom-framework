@@ -1,0 +1,27 @@
+{
+  "defects": [
+    {
+      "patch": "2x2",
+      "native_action_defect": 1.4166218465436602,
+      "reference_residual_bound": 1.5273071435242875
+    },
+    {
+      "patch": "2x4",
+      "native_action_defect": 1.418694318415683,
+      "reference_residual_bound": 1.4301493711197424
+    }
+  ],
+  "coherent_native_first_step_energies": [
+    4.855944498991787,
+    5.652137791857346,
+    14.830131705329105,
+    18.627694435319682
+  ],
+  "full_H_residuals": [
+    4.117123096872629,
+    4.321187141392916,
+    5.488818881602597,
+    7.228528675075262
+  ],
+  "scope": "Exact reference-error identity and original-H boundary coefficients; no added interaction or stable-size certificate"
+}

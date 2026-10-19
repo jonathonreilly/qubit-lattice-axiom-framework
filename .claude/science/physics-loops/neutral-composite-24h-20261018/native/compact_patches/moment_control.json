@@ -1,0 +1,5 @@
+{
+  "max_error": 5.329070518200751e-15,
+  "reference_residual": 3.1288658865431302,
+  "scope": "Dense versus tensor centered moments and full residuals with deliberately nonstationary reference"
+}

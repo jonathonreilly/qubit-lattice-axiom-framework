@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-19T01:55:14.854247+00:00",
-  "scope": "Direct user-requested strong-mixing finite-size research; original24hgoalclosed",
-  "branch": "codex/neutral-strong-mixing-size-20261018",
-  "status": "exploratory partial narrowing; independent review pending",
-  "result": "Direct strong-coupling block: full native equal-coupling H, open ED through32 and variational thin grids through96 physical qubits. Exact endpoint-only string identity explains open-boundary length preference; periodic ED length energies agree within4.7e-12. 450 string and56 interior compact-patch algebra checks pass; compact patches restore native YY side-wall terms. Mixed Ritz states are not stationary certificates. Refined64-qubit reference residual0.00673;96-qubit reference fails at0.32766. No stable finite size derived and no universal absence claimed. Independent review unavailable; coherent exploratory branch preserved, PR backlogged. Next: compact transversely growing features, relaxed full-H states, merged/separated comparisons, boundary and residual control.",
+  "updated_at": "2026-10-19T11:28:45.155250+00:00",
+  "scope": "Direct compact-patch research; prior24hgoal remains closed",
+  "branch": "codex/native-compact-patches-20261019",
+  "status": "open; finite-volume evidence and exact algebra, independent review pending",
+  "result": "Compact-patch direct block: native cut/fusion algebra and volumetric tests, full 3D MPS through108 physical qubits, original-H boundary dressing lowers72-site candidate energy7.633675 to4.838003 but residual4.156 remains. Fixed native first-step coefficients give4.855944. Exact27-qubit periodic selected sector resolves compact-source-visible gap1.423237955386 with residual<=1.21e-12; both single-layer and volumetric sources couple. Exact sheet/rotated-sector controls agree. No preferred internal size, scalar irrep, large-volume stability or empirical identification derived. All new independent review pending; no formal audit. Next: resolve native dressed mode internal correlations and spectral separation across volumes with controlled references; do not identify source support with particle size.",
   "owned_processes": []
 }

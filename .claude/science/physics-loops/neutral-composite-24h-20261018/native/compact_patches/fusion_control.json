@@ -1,0 +1,79 @@
+{
+  "cases": 12,
+  "all_pass": true,
+  "scope": "Exact operator identity, not relaxed bound-state or size selection",
+  "rows": [
+    {
+      "w": 1,
+      "ell": 1,
+      "shift": 1,
+      "shared_bonds": 1
+    },
+    {
+      "w": 1,
+      "ell": 1,
+      "shift": 2,
+      "shared_bonds": 0
+    },
+    {
+      "w": 1,
+      "ell": 2,
+      "shift": 1,
+      "shared_bonds": 2
+    },
+    {
+      "w": 1,
+      "ell": 2,
+      "shift": 2,
+      "shared_bonds": 0
+    },
+    {
+      "w": 1,
+      "ell": 3,
+      "shift": 1,
+      "shared_bonds": 3
+    },
+    {
+      "w": 1,
+      "ell": 3,
+      "shift": 2,
+      "shared_bonds": 0
+    },
+    {
+      "w": 1,
+      "ell": 4,
+      "shift": 1,
+      "shared_bonds": 4
+    },
+    {
+      "w": 1,
+      "ell": 4,
+      "shift": 2,
+      "shared_bonds": 0
+    },
+    {
+      "w": 2,
+      "ell": 1,
+      "shift": 2,
+      "shared_bonds": 1
+    },
+    {
+      "w": 2,
+      "ell": 2,
+      "shift": 2,
+      "shared_bonds": 2
+    },
+    {
+      "w": 2,
+      "ell": 3,
+      "shift": 2,
+      "shared_bonds": 3
+    },
+    {
+      "w": 2,
+      "ell": 4,
+      "shift": 2,
+      "shared_bonds": 4
+    }
+  ]
+}

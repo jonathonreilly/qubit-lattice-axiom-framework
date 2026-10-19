@@ -1,0 +1,131 @@
+{
+  "scope": "Full native finite open 3D H, variational references; no exact sector or global-ground certificate",
+  "rows": [
+    {
+      "shape": [
+        3,
+        4,
+        4
+      ],
+      "N": 48,
+      "bond_limit": 8,
+      "actual_bond": 8,
+      "energy": -47.223391598529844,
+      "residual": 3.415923474304577,
+      "variance": 11.668533182305055,
+      "seconds": 1.1732927081175148
+    },
+    {
+      "shape": [
+        3,
+        4,
+        4
+      ],
+      "N": 48,
+      "bond_limit": 16,
+      "actual_bond": 16,
+      "energy": -48.94140064059196,
+      "residual": 1.9564135793728998,
+      "variance": 3.8275540935546815,
+      "seconds": 2.2614816250279546
+    },
+    {
+      "shape": [
+        3,
+        4,
+        4
+      ],
+      "N": 48,
+      "bond_limit": 32,
+      "actual_bond": 32,
+      "energy": -49.311501656541935,
+      "residual": 1.6168703772874535,
+      "variance": 2.6142698169496725,
+      "seconds": 4.7110279579646885
+    },
+    {
+      "shape": [
+        3,
+        4,
+        6
+      ],
+      "N": 72,
+      "bond_limit": 8,
+      "actual_bond": 8,
+      "energy": -74.164715260728,
+      "residual": 3.779436942456189,
+      "variance": 14.284143602002587,
+      "seconds": 0.559648958966136
+    },
+    {
+      "shape": [
+        3,
+        4,
+        6
+      ],
+      "N": 72,
+      "bond_limit": 16,
+      "actual_bond": 16,
+      "energy": -77.30631136951116,
+      "residual": 2.050429740512551,
+      "variance": 4.204262120778367,
+      "seconds": 1.9948805840685964
+    },
+    {
+      "shape": [
+        3,
+        4,
+        6
+      ],
+      "N": 72,
+      "bond_limit": 32,
+      "actual_bond": 32,
+      "energy": -77.68017794293695,
+      "residual": 1.41868495035344,
+      "variance": 2.012666988359342,
+      "seconds": 5.046222874894738
+    },
+    {
+      "shape": [
+        3,
+        6,
+        6
+      ],
+      "N": 108,
+      "bond_limit": 8,
+      "actual_bond": 8,
+      "energy": -110.41727385741575,
+      "residual": 6.474643887205815,
+      "variance": 41.921013466131626,
+      "seconds": 1.3213807088322937
+    },
+    {
+      "shape": [
+        3,
+        6,
+        6
+      ],
+      "N": 108,
+      "bond_limit": 16,
+      "actual_bond": 16,
+      "energy": -116.50795795482964,
+      "residual": 2.987533137492886,
+      "variance": 8.925354247618088,
+      "seconds": 4.552713458891958
+    },
+    {
+      "shape": [
+        3,
+        6,
+        6
+      ],
+      "N": 108,
+      "bond_limit": 32,
+      "actual_bond": 32,
+      "energy": -117.00275283078942,
+      "residual": 2.551601731895705,
+      "variance": 6.510671398213162,
+      "seconds": 11.732640250120312
+    }
+  ]
+}

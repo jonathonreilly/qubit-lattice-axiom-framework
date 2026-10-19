@@ -1,0 +1,391 @@
+{
+  "base_commit": "1074a21da0",
+  "main_read": "97e4f70d58c61c88b957b28aac6846e90c0d7945",
+  "files": [
+    {
+      "path": "native/compact_patches/.gitignore",
+      "sha256": "6c2517d7164a23f835bbab5fc1fbf928e67e78ae8613c5f979739376cb1fd729",
+      "bytes": 19,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/COMPACT_PATCH_RESULTS.md",
+      "sha256": "33b0b6504c61fe8b671d4a792a0568d1c125a1d2a183340aba85bef7f41e46bb",
+      "bytes": 11600,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/CONTRACT.md",
+      "sha256": "dfe13bcdaf94c470654e5748f011537d5e0d8e183c57db364ecaa8ecb5067682",
+      "bytes": 3135,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/ENVIRONMENT.json",
+      "sha256": "9f974420e6027faef9f8f72ddfd0404b3eb377b229da1b0c90a4cb68cebe7b8c",
+      "bytes": 189,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/OPERATIONS.md",
+      "sha256": "5adcef285fcc8443433d6a614552d166bd9e847a49a5499a90f54a73dfff9aeb",
+      "bytes": 569,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/REPLAY.md",
+      "sha256": "72890062fa3a9c1d7e7cd78856d2cdf2009ec495f3d0525d08660beab947f77f",
+      "bytes": 1693,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/boundary_response.py",
+      "sha256": "c370c5b00d55113b192799290c96035a565e92eb1a84e3987c731392c6565223",
+      "bytes": 3017,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/boundary_response_32.json",
+      "sha256": "7ffd002918e7e388614dc288609c6119d89dc67fbadbf183575c7e1c028cce9a",
+      "bytes": 66519,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/check_results.py",
+      "sha256": "6757535e15f4ce0e4b26f5ebbdb2d9ee80b2b11892132f2d2833c6898b1b5cbb",
+      "bytes": 2323,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/checks.json",
+      "sha256": "0c0cb232412601b5c7a4077c264d592106f481c03236767a3f6628ca8755f857",
+      "bytes": 1306,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/dressing_checks.json",
+      "sha256": "70edcab4daf01dfe9b9f36c2e311da17b5b244b7c7a2a13cf1c79b8f6d000601",
+      "bytes": 689,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/dressing_checks.py",
+      "sha256": "14d40793c3ab71e82fa5ec3908a3cc893ee4422fb9d79d4dd77a88a45840b5c5",
+      "bytes": 1264,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/exact_cube_poles.json",
+      "sha256": "30e9229b4a8b66b06c8783b220d242872d894c8388d48e4113c1fa9fe91a095c",
+      "bytes": 1917,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/exact_cube_poles.py",
+      "sha256": "615a4c49f59a631b3cc9c34de12a074a82eb85a8816bd7192c91c510657d7478",
+      "bytes": 2051,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/exact_periodic_cube.json",
+      "sha256": "29fcdc020e190c1b0be67e984c9500b357f3f2a3a042f1d06eb3972eea6479e8",
+      "bytes": 2807,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/exact_periodic_cube.py",
+      "sha256": "a146de9c5f4a3f350d88a35cb2edb882c36c1dc443b5255f72724dee12ddfa0f",
+      "bytes": 2536,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/exact_sheet.json",
+      "sha256": "12ebecdbd9f3d6b3a642ea97b96b46edcbe1b2e3f611a34a0ad2c50c38d0e269",
+      "bytes": 12007,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/exact_sheet.py",
+      "sha256": "f113cbf815f94d82693508a8f10643be163997242a2d8d24392c9ac70631c2e9",
+      "bytes": 2329,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/exact_sheet_deep.json",
+      "sha256": "e0c15e4df9881cd92994dd102b2fede19c96273638da8a11f8935d0701ad9497",
+      "bytes": 6723,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/exact_sheet_deep.py",
+      "sha256": "eba04be2811c7742747e1547172ba7c4d7c83c33d158b859447159e5e69d58cb",
+      "bytes": 2326,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/fusion_control.json",
+      "sha256": "e3a3a527d0213cbf9e4c441b58289ac4de92f94421f7cebd1964e3869101f0bc",
+      "bytes": 1155,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/fusion_control.py",
+      "sha256": "64377e50db5f539cc0babd13700e65a36844109e7a5d11dfdb2db70b68359877",
+      "bytes": 1189,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/ground_states.json",
+      "sha256": "7574f77398f47d78d30750da46c227af1fc9bf788debe6368b3b6f1c70097c2c",
+      "bytes": 2664,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/ground_states.py",
+      "sha256": "ceb6cf122d25c3efa30d4a5b9d93ae12a73fe60f81ac8fea4dc8cded2b27954f",
+      "bytes": 1242,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/moment_control.json",
+      "sha256": "bcd685edd2c94de177c7461f8b7bf33455bddf9939f7c55b3c82d036b7f44291",
+      "bytes": 197,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/moment_control.py",
+      "sha256": "14441e4f51e5ee721272c85bebd99a3f0292aff4f436797fc4e10162f800706d",
+      "bytes": 1494,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/mpo_check.json",
+      "sha256": "d37ecf6bdea240b0fb507205ee88795ee20f9a6d8c1ec65663c97cd130674bef",
+      "bytes": 315,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/mpo_check.py",
+      "sha256": "c5924413135777713b9e789b28b21ce9079cc48cfa5660160f0dc92520b908e5",
+      "bytes": 604,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/native_mpo.py",
+      "sha256": "ac98c5597beb02e0c57487ba8f3d49752ded9317c000af07f6d6ac924c537f58",
+      "bytes": 1290,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/patch_response.py",
+      "sha256": "5e427b394fe4ef03ed6585b9d113506cdb4e72d1991d045cab61342f5f67608e",
+      "bytes": 2456,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/patch_response_128.json",
+      "sha256": "c83bc39d093bac6138a033007395fecfcd2587e2d6c62d96e9f531c14403e090",
+      "bytes": 7367,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/patch_response_32.json",
+      "sha256": "18d48897dcbc1cf3e087c167b9ec17c2f32a649d0747c7384765163ec3e35b90",
+      "bytes": 7395,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/pole_analysis.json",
+      "sha256": "e0d6ed8c1b74d5850324b40a5421201f7d6dac0fdf332ea8a3d86417b9f91d40",
+      "bytes": 2306,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/pole_analysis.py",
+      "sha256": "acefbc3fe17ad219dac542db83ff60b2c88748203c9d326656ed885a31b79644",
+      "bytes": 1147,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/refine_states.json",
+      "sha256": "94715ec566492144c225503fb9664051f78f2b45233af2eaba63676e295a56fc",
+      "bytes": 1278,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/refine_states.py",
+      "sha256": "097c5078f969af7cc43d1d32a43ed1dc17b4fa1bedd39d479b819855e98353d9",
+      "bytes": 999,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/sheet_fixed_characters.json",
+      "sha256": "41a288850ab8186f96c60ee90e5468c5ad3c4e6dc416fa3568b9963aef56a52e",
+      "bytes": 11849,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/sheet_fixed_characters.py",
+      "sha256": "ccb2ede17fd3b7031ad1f97832ffd758f8d560f47cc38184acdedf4e0be0139d",
+      "bytes": 2564,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/state_3x4x4_128.pkl",
+      "sha256": "ee8b534623a3d6e9069aa97716aba275b9bdf3290762115c41aa45cf5508e3bc",
+      "bytes": 9272846,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_3x4x4_16.pkl",
+      "sha256": "1545a4d8475804f69017d2fc15460a3ff0b3a67fc6e2053694b85e38a6e89066",
+      "bytes": 179420,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_3x4x4_32.pkl",
+      "sha256": "f30d72bbfc0cd829b14d88df67af7b1d643b39222d9d802d19f6c70105d4f41a",
+      "bytes": 654619,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_3x4x4_64.pkl",
+      "sha256": "d6cb8fcdbef6388bc7222748ce139c691dacdd1aea7a75ff2e517d6b1d43711c",
+      "bytes": 2457102,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_3x4x4_8.pkl",
+      "sha256": "fcb33581cccba2d2feb522350182edef0c6c6c15e0bf811c442491e9d76b442c",
+      "bytes": 54474,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_3x4x6_128.pkl",
+      "sha256": "16fad40ec9152b098600e9be1dcb94c504e024c826264c7e0e0d9d5485cae167",
+      "bytes": 15565393,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_3x4x6_16.pkl",
+      "sha256": "20a56c93f3440c56bcf4a6c6f6ec8ad4b86262f0509eab680e14bad2b5d111ad",
+      "bytes": 282713,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_3x4x6_32.pkl",
+      "sha256": "ab498aff5f53002edffc6e1d1ee42877e6ef761e54c318b5c44b1e073dc3641a",
+      "bytes": 1052860,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_3x4x6_64.pkl",
+      "sha256": "fb233249533fcfc489ecd20403f619da518d35ced84c1364b03d85352e1fb354",
+      "bytes": 4035153,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_3x4x6_8.pkl",
+      "sha256": "1e61a8b22366f54ba6c7f5686a2e9213276f45546fd9347daebd5528d99732b9",
+      "bytes": 84030,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_3x6x6_128.pkl",
+      "sha256": "6b5dd0bead7e2ad8ee1326c68af7879bd8e2bec4d88aab19bde2c130f7b3b47b",
+      "bytes": 24977601,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_3x6x6_16.pkl",
+      "sha256": "4e5a397b75d34eb58e64983a8c46dbbac1a61b3e6c69783264b21cc1c9b7f666",
+      "bytes": 427927,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_3x6x6_32.pkl",
+      "sha256": "1ddecd8960d0a0bb778cc2bac77829caeefa9cb35819a4cbc6e11f3f52f66d43",
+      "bytes": 1641008,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_3x6x6_64.pkl",
+      "sha256": "914386f4b208e24d2cd06938d460eaf38d86469adc26d0a10d4d63ffaa217c14",
+      "bytes": 6402241,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_3x6x6_8.pkl",
+      "sha256": "b21b1e8c5b0cc51cb118e26c17556e66d134d92bd55c10fc9b73ca333e88450e",
+      "bytes": 126826,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_4x4x6_16.pkl",
+      "sha256": "e0fa89d020356da2970221d28ac02a7e4a02ab40a4407a5d9d6eb4d557fca68b",
+      "bytes": 382410,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_4x4x6_32.pkl",
+      "sha256": "c41b3a6e206692fdc12cd95812726fd356723518804f05716f7fefec10d746e2",
+      "bytes": 1451098,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/state_4x4x6_8.pkl",
+      "sha256": "68eef598a4ec9cb47d8f26d505410833f2e111131239eee872333b11cc159f22",
+      "bytes": 113574,
+      "embedded": false
+    },
+    {
+      "path": "native/compact_patches/volume_algebra.json",
+      "sha256": "dbec1039e1e4f4bebb37c4897540d07277bbceda5f093f052e4c214ba00357d1",
+      "bytes": 1502,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/volume_algebra.py",
+      "sha256": "e186ae0f265c4b032b965f0e4f2d1d8a2b6133faedd3b3f3355c8a047a5158cb",
+      "bytes": 934,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/volume_ground.json",
+      "sha256": "a4071123ad5067c09bdaca856b89865773e69882d43a6011429a7c7c0c20c5a0",
+      "bytes": 975,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/volume_ground.py",
+      "sha256": "a77a8c3174db1da652d628bdd4cd5a0b0690c309e5d708d519fea29672bbb536",
+      "bytes": 1226,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/volume_response.py",
+      "sha256": "af2c337260f2256537b59ea966083f7fe8ff528bccafa7ac8165da0203f5e177",
+      "bytes": 2293,
+      "embedded": true
+    },
+    {
+      "path": "native/compact_patches/volume_response_32.json",
+      "sha256": "303d97fca238d8740fe17a3bd654056b64325471e21047646823f6ad22e2bcfb",
+      "bytes": 3626,
+      "embedded": true
+    },
+    {
+      "path": "native/compass_sector_basis.py",
+      "sha256": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+      "bytes": 3088,
+      "embedded": true
+    },
+    {
+      "path": "native/compass_sector_solve.py",
+      "sha256": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+      "bytes": 2454,
+      "embedded": true
+    }
+  ],
+  "scope": "Root-generated model-development outputs; local checkpoints reproducible from scripts; independent review pending"
+}

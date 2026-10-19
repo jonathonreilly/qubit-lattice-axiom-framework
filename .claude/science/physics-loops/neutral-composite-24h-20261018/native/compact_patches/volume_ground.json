@@ -1,0 +1,47 @@
+{
+  "scope": "Full native finite open 3D H, variational references; no exact sector or global-ground certificate",
+  "rows": [
+    {
+      "shape": [
+        4,
+        4,
+        6
+      ],
+      "N": 96,
+      "bond_limit": 8,
+      "actual_bond": 8,
+      "energy": -98.16602987998746,
+      "residual": 4.811100919869131,
+      "variance": 23.146692061165595,
+      "seconds": 1.9434177088551223
+    },
+    {
+      "shape": [
+        4,
+        4,
+        6
+      ],
+      "N": 96,
+      "bond_limit": 16,
+      "actual_bond": 16,
+      "energy": -101.4210387174677,
+      "residual": 3.197904831205926,
+      "variance": 10.226595309450204,
+      "seconds": 5.072422083932906
+    },
+    {
+      "shape": [
+        4,
+        4,
+        6
+      ],
+      "N": 96,
+      "bond_limit": 32,
+      "actual_bond": 32,
+      "energy": -104.1384978312713,
+      "residual": 2.3419378001251845,
+      "variance": 5.484672659655189,
+      "seconds": 11.838315750006586
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "first_returned_source_visible_group": {
+    "gap": 1.423237955385929,
+    "indices": [
+      6,
+      7
+    ],
+    "captured_normalized_source_weights": [
+      0.019615814985364598,
+      0.0011794269894264498
+    ],
+    "max_residual": 1.210789860176888e-12,
+    "touches_eigensolver_cutoff": false
+  },
+  "groups": [
+    {
+      "gap": 0.0,
+      "indices": [
+        0
+      ],
+      "captured_normalized_source_weights": [
+        2.900884405100646e-30,
+        3.5873059041921246e-30
+      ],
+      "max_residual": 3.233919365824304e-13,
+      "touches_eigensolver_cutoff": false
+    },
+    {
+      "gap": 0.46394631349666327,
+      "indices": [
+        1,
+        2,
+        3
+      ],
+      "captured_normalized_source_weights": [
+        6.051953213309517e-30,
+        1.532676337295176e-30
+      ],
+      "max_residual": 3.101793939166153e-13,
+      "touches_eigensolver_cutoff": false
+    },
+    {
+      "gap": 1.3619160105136743,
+      "indices": [
+        4,
+        5
+      ],
+      "captured_normalized_source_weights": [
+        2.828875058278737e-28,
+        1.0631245164916543e-28
+      ],
+      "max_residual": 2.821102391386705e-13,
+      "touches_eigensolver_cutoff": false
+    },
+    {
+      "gap": 1.423237955385929,
+      "indices": [
+        6,
+        7
+      ],
+      "captured_normalized_source_weights": [
+        0.019615814985364598,
+        0.0011794269894264498
+      ],
+      "max_residual": 1.210789860176888e-12,
+      "touches_eigensolver_cutoff": false
+    },
+    {
+      "gap": 1.4503934107471679,
+      "indices": [
+        8,
+        9
+      ],
+      "captured_normalized_source_weights": [
+        6.572949250696577e-26,
+        1.4269454471109458e-26
+      ],
+      "max_residual": 3.4583142861489617e-12,
+      "touches_eigensolver_cutoff": false
+    },
+    {
+      "gap": 1.5494949047873092,
+      "indices": [
+        10,
+        11
+      ],
+      "captured_normalized_source_weights": [
+        0.009054524605100677,
+        0.0014109022301128369
+      ],
+      "max_residual": 2.662477557574066e-12,
+      "touches_eigensolver_cutoff": true
+    }
+  ],
+  "scope": "Weights summed over returned eigenvectors at each energy; full degeneracy completeness not certified. Finite selected-sector periodic cube, no internal-size or scalar-irrep certificate."
+}

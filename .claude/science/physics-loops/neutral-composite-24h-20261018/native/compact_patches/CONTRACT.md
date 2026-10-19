@@ -1,0 +1,15 @@
+# Compact native patches: direct research contract
+
+Claim type: open_gate. Status: open. Trace: frontier_discovery addressing the user's stable finite feature-size question. This is a separate direct task after the original campaign ended; no new unattended campaign or deadline was invented.
+
+Target: determine whether compact neutral patches and their native quantum dressing have a stable finite internal size. A selected rectangle in a variational basis is insufficient: require controlled stationary/quasistationary spectral evidence, a meaningful internal-size diagnostic, and stability against separated/merged alternatives as the surrounding box grows. Patch support is an operator-support label, not a conserved constituent number or a size observable of a mixed state.
+
+Hamiltonian: H=-sum_x XX-sum_y YY-sum_z ZZ, all coefficients unity. One physical qubit at every site. The Hamiltonian, finite geometry, reference/preparation and probe definition are explicit model inputs; none is asserted to follow uniquely from the primitive registry. No interaction, physical axiom or measured scale is added. Every numerical input here is exposed model development; no empirical calibration or independent observation test is present.
+
+Direct root authorship. No detached author or scheduler. New worktree /private/tmp/native-compact-patches-20261019 is stacked on 1074a21da0; unrelated primary and earlier-worktree changes remain untouched. Landed main checked: 97e4f70d58c61c88b957b28aac6846e90c0d7945. Search: compact.patch and finite.feature.size in main docs; relevant open PR search compact OR finite size OR tetramer returned no matches at intake. This is a scoped search, not exhaustive review of unrelated open proposals.
+
+Main source scope comparisons read: NATIVE_ISOTROPIC_BOUND_FEATURE_NOTE_2026-10-18.md and NATIVE_LARGE_BOUND_FEATURE_NOTE_2026-10-18.md retain weak-coupling/slab or threshold limits. NATIVE_SCALAR_TETRAMER_NOTE_2026-10-18.md uses a fixed-order weak-coupling syndrome manifold. COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md concerns supplied mass-shell/scattering conditions, not geometric patch-size selection in this native H. Those hypotheses cannot supply the present strong-coupling result. No broad novelty claim is made.
+
+Routes executed: (1) exact compact-boundary/fusion algebra; (2) full native 3D MPS reference and source-moment calculations; (3) boundary-bond dressing derived by acting with native H; (4) one-layer exact controls with deeper Krylov search; (5) rotated, explicitly fixed-character representation and independent eigensolver comparison. These are checks and approach variations, not five proven exclusions. Open: much richer 3D dressing, reference convergence, all-volume spectral control, relative-coordinate size and physical identification.
+
+Independent review remains pending; prior review-worker usage failures are recorded in the parent pack. Root checks use different representations/algorithms but are not a separate reviewer. No formal audit, no retained proposal, and no merge to main. An incomplete exploratory packet does not force a PR.

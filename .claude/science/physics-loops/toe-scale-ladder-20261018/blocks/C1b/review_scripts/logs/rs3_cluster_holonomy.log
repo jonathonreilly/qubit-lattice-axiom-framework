@@ -1,0 +1,8 @@
+[INFO] L=2: 24 plaquettes, dim Z(mod2 2-cycles) = 10, rank(cubes+planes) = 10
+[INFO] S-graph components over all 2^24 S(0): 2272258; dim span(holonomies) = 9; dim span(planes) = 6
+[PASS] every holonomy is a 2-cycle (sanity)
+[PASS] dim span(cubes+planes) == dim Z (sanity)
+[PASS] no single elementary cube boundary lies in the cluster holonomy span (claim 0.2a, mod 2)
+[FAIL] cluster holonomy span is contained in span(planes)
+[INFO] single cubes in span(planes): 0 of 8
+TOTAL: PASS=3 FAIL=1

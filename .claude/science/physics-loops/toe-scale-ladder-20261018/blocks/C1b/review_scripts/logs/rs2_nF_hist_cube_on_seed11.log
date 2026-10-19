@@ -1,0 +1,6 @@
+[INFO] own enumeration: 9600 Gauss states, 937 flip components, E0 = -9.0267209135
+[INFO] cube_frac=0.5 seed=11 sweeps=454220 round_trips=2610 measured=452220
+[PASS] beta=1.0: P(n_F=n) and P(n_F=n, W=0) in 16 bins, max|z|=2.73 chi2/bin=1.95; worst: all W n=10: QMC 0.0616+-0.0004 exact 0.0627; <n_F> QMC 4.955 exact 4.976 z=-2.20
+[PASS] beta=2.0: P(n_F=n) and P(n_F=n, W=0) in 24 bins, max|z|=1.75 chi2/bin=0.76; worst: all W n=18: QMC 0.1502+-0.0008 exact 0.1517; <n_F> QMC 16.212 exact 16.254 z=-1.01
+[PASS] beta=4.0: P(n_F=n) and P(n_F=n, W=0) in 32 bins, max|z|=1.82 chi2/bin=1.24; worst: all W n=50: QMC 0.0106+-0.0002 exact 0.0103; <n_F> QMC 36.081 exact 36.034 z=+1.56
+TOTAL: PASS=3 FAIL=0

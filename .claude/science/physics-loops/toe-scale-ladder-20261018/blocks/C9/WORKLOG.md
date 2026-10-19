@@ -17,3 +17,7 @@
   translates; expect only NN swaps).
 - Resume: rerun scripts; logs go to NEW files logs/<name>_runN.txt (never overwrite).
 - dry runs of c9_01 in scratchpad (one FAIL in dry run was a sign-convention bug R[j,k]->R[k,j] in the G check's equation, fixed before official run). Official: logs/c9_01_lemmas_run1.txt
+- 07:55 launched c9_03_search.py 100 starts -> logs/c9_03_search_run1.txt (~15 min). Dry run (10 starts, scratch) had 2 FAILs 'each expected bond found' just from too few starts. If container restarts: rerun to logs/c9_03_search_run2.txt
+- 07:57 NOTE.md drafted (Theorem 1 + Cor 2 + sector witnesses + gate). Corollary 2 corrected: needs H irreducible on R^3 (D2 counter-case). Remaining: wait c9_03, write logs/SUMMARY.txt, fill c9_03 result in NOTE table.
+- 08:19 c9_03 run1 produced only header lines then python was gone (likely killed by its 1150 s timeout: some starts very slow at max_nfev=4000). Kept as logs/c9_03_search_run1_INCOMPLETE_killed.txt (renamed, content unchanged). Relaunch run2 with max_nfev=800, 60 starts, progress lines.
+- 08:39 c9_03 run2 also killed by its 1150 s timeout during 1D window (machine load ~2; starts far slower than dry run). Renamed to logs/c9_03_search_run2_INCOMPLETE_timeout.txt. Restructuring: per-window runs, per-start log lines, wall-clock budget.

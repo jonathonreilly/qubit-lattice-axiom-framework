@@ -51,7 +51,9 @@ def herm_basis(n):
     return basis
 
 
-def run_window(C, name, W, e1, rng, starts):
+def run_window(C, name, W, e1, rng, starts, budget=600.0):
+    import time
+    t0 = time.time()
     n = len(W)
     B = herm_basis(n)
     C.log(f"[{name}] window {W}; Hermitian SU(2)-invariant algebra dim = {len(B)}")
@@ -83,17 +85,23 @@ def run_window(C, name, W, e1, rng, starts):
     # expected solutions: P on e1-bonds inside window
     expected = []
     for a in W:
-        b = tuple(np.add(a, e1))
+        b = tuple(int(x) for x in np.add(a, e1))
         if b in W:
             expected.append((a, b, embed(swap_op(2, 0, 1), [a, b], W)))
     C.log(f"[{name}] expected solutions: {[(a, b) for a, b, _ in expected]}")
     found = {}
     other = []
     nconv = 0
+    done = 0
     for s in range(starts):
+        if time.time() - t0 > budget:
+            C.log(f"[{name}] wall-clock budget {budget:.0f}s reached after {done} starts")
+            break
+        done += 1
         c0 = rng.normal(size=len(B))
-        sol = least_squares(resid, c0, xtol=1e-15, ftol=1e-15, gtol=1e-15, max_nfev=4000)
+        sol = least_squares(resid, c0, xtol=1e-15, ftol=1e-15, gtol=1e-15, max_nfev=800)
         cost = np.linalg.norm(resid(sol.x))
+        C.log(f"[{name}] start {s}: residual {cost:.2e} nfev {sol.nfev} t={time.time()-t0:.0f}s")
         if cost > 1e-8:
             continue
         nconv += 1
@@ -106,7 +114,7 @@ def run_window(C, name, W, e1, rng, starts):
             other.append((cost, g))
         else:
             found[match] = found.get(match, 0) + 1
-    C.log(f"[{name}] {starts} starts, {nconv} converged to residual < 1e-8; hits per expected bond: {found}")
+    C.log(f"[{name}] {done} starts, {nconv} converged to residual < 1e-8; hits per expected bond: {found}")
     C.check(nconv > 0 and len(other) == 0,
             f"[{name}] every converged solution is a NN e1-bond swap ({len(other)} other solutions)")
     C.check(set(found) == {(a, b) for a, b, _ in expected},
@@ -121,13 +129,15 @@ def run_window(C, name, W, e1, rng, starts):
     return other
 
 
-def main(logname, starts=120):
+def main(logname, starts=120, which="both", budget=600.0):
     fh = open(logname, "w")
     C = Counter(fh)
-    C.log("C9/03 optimisation search for alpha(P_{0,e1}) candidates; seed 11")
-    rng = np.random.default_rng(11)
-    run_window(C, "1D", [(0,), (1,), (2,), (3,)], (1,), rng, starts)
-    run_window(C, "2D", [(0, 0), (1, 0), (0, 1), (1, 1)], (1, 0), rng, starts)
+    C.log(f"C9/03 optimisation search for alpha(P_{{0,e1}}) candidates; seed 11; windows={which}")
+    rng = np.random.default_rng(11 if which != "2D" else 12)
+    if which in ("both", "1D"):
+        run_window(C, "1D", [(0,), (1,), (2,), (3,)], (1,), rng, starts, budget)
+    if which in ("both", "2D"):
+        run_window(C, "2D", [(0, 0), (1, 0), (0, 1), (1, 1)], (1, 0), rng, starts, budget)
     # control: without commutation constraints, the self-adjoint-unitary + trace conditions alone
     # have many solutions (e.g. P_{02}, P_{03}); confirm P_{03} in 1D window violates commutation.
     W = [(0,), (1,), (2,), (3,)]
@@ -142,4 +152,6 @@ def main(logname, starts=120):
 
 if __name__ == "__main__":
     main(sys.argv[1] if len(sys.argv) > 1 else "../logs/c9_03_search_run1.txt",
-         int(sys.argv[2]) if len(sys.argv) > 2 else 120)
+         int(sys.argv[2]) if len(sys.argv) > 2 else 120,
+         sys.argv[3] if len(sys.argv) > 3 else "both",
+         float(sys.argv[4]) if len(sys.argv) > 4 else 600.0)

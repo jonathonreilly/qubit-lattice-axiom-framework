@@ -1,0 +1,6 @@
+rv_p1_blind_T.log: TOTAL: PASS=5 FAIL=0
+rv_p1_blind_O.log: TOTAL: PASS=5 FAIL=0
+rv_r2_glider.log: TOTAL: PASS=3 FAIL=0
+rv_spectator_and_phases.log: TOTAL: PASS=5 FAIL=0
+rv_p1_blind_C1.log: scope probe, stopped deliberately in optional branching stage (no TOTAL); R1-only reproduces author's 174/679
+TOTAL: PASS=18 FAIL=0

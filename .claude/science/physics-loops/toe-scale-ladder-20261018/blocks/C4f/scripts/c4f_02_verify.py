@@ -140,9 +140,9 @@ def sym():
     okT = True
     for s in ((1, 0, 0), (0, 1, 0), (0, 0, 1), (3, -2, 5)):
         sh = T.idx(T.coords - np.array(s))       # (S c)[x] = c[x - s]
-        for c, b in zip(cfgs[:12], imgs[:12]):
+        for c, b in zip(cfgs[::10], imgs[::10]):
             okT &= np.array_equal(DU(c[sh]), b[sh])
-    check('translation invariance (4 shifts x 12 configs)', okT)
+    check('translation invariance (4 shifts x 20 configs)', okT)
     # point group with axis action
     from c4f_su2 import su2_lift, Bn
     okR = []; okph = True

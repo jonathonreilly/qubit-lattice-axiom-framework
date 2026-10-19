@@ -1,0 +1,2 @@
+PASS parameter count 16 + 54 = 70
+PASS analytic Jacobian matches finite difference

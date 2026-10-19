@@ -2,7 +2,7 @@
 
 **Block:** C9 of `toe-scale-ladder-20261018`, following C4b (Lemma 2: U(1) + full action ⇒
 SU(2)), C4f (S^- remark: monomial SU(2) pairs are static) and C4d (spectator lemma).
-**Date:** 2026-10-19. **Status:** author work only; not independently reviewed; unaudited. No
+**Date:** 2026-10-19. **Status:** Reviewed in a separate agent context (same model as the author); unaudited. See `REVIEW.md` and "Review dispositions". No
 axiom, primitive or dynamics clause is adopted.
 
 ## Result up front
@@ -17,7 +17,7 @@ exactly one QCA, the identity.**
    - Covariance is not used. Frozen singles are not used. Non-permutation dynamics is not excluded
      by assumption: the theorem quantifies over **all** *-automorphisms with finite-range images.
 2. **Corollary 2 (proved).** Under the full action, every TI one-qubit QCA that conserves an
-   on-site U(1) charge and is covariant under some H ≤ O acting irreducibly on R^3 (e.g. O or T) is the
+   on-site U(1) charge and is covariant under some H ≤ O acting irreducibly on R^3 (i.e. O or T) is the
    **identity**. So nothing moves in any sense: no T1, T2 or T3. There are no single, pair or
    k-cluster motions, no finite-density transport, and no operator spreading. Moving bound
    pairs, the target of this block, are therefore excluded. This proves C4b's open item W1 for the
@@ -83,7 +83,7 @@ and the converse.
 
 **Lemma C (lexicographic translate).** Let g be invariant and non-scalar, with minimal support S.
 Then |S| ≥ 2, because single-site invariant operators are scalars. Fix any total order ≺ on Z^d
-compatible with translations, for instance by a generic linear functional ℓ. Let s1 = max S,
+compatible with translations, for instance by a generic linear functional ℓ. Here "generic" means injective on Z^d, i.e. ℓ(v) ≠ 0 for every v ∈ Z^d ∖ {0}. Let s1 = max S,
 s2 = min S, and t = s1 − s2 ≠ 0.
 1. Then S ∩ (S+t) = {s1}. If p ∈ S and p − t ∈ S, then p ⪯ s1 and p ⪰ s2 + t = s1.
 2. τ_t g has vector channel at s1 equal to the translate of g's vector channel at s2. By
@@ -97,8 +97,9 @@ the side lemma of Result 4: take t to be any translate in the family.
 
 **Step D (swaps go to bonds).** Take F = {0, e} and A = P_{0e}, so F − F = {0, ±e}.
 1. For every generic ℓ, the ℓ-extreme points of S := supp α(P_{0e}) differ by ±e.
-2. Choosing ℓ close to each coordinate axis shows that S has a single value in every coordinate
-   ⊥ e, and extent exactly 1 along e. So S = {p, p+e}.
+2. Let v = s − s′ for any s, s′ ∈ S. Then |ℓ(v)| ≤ max_S ℓ − min_S ℓ = |ℓ(e)| for every generic ℓ.
+   By density this holds for every ℓ ∈ R^d, and that forces v ∈ R·e with |v| ≤ |e|. As v is in
+   Z^d, v ∈ {0, ±e}. With |S| ≥ 2, S = {p, p+e}.
 3. `c9_01` E confirms exhaustively, in the 3^3 box with |S| ≤ 4 and 40 generic ℓ, that only the
    18 x-bonds qualify.
 4. The invariant algebra of two qubits is span{1, P} (R1). So α(P_{0e}) = a + bP_{p,p+e}.
@@ -138,8 +139,9 @@ unit cube). So α′ fixes every P_{yz}.
 
 ## Step (1) in detail: what SU(2) + frozen singles force on H_2 (sector level)
 
-On the torus, U commutes with S^±. It is c_0 on the S = N/2 multiplet and c_1 on the S = N/2−1
-multiplicity space. Frozen singles give c_0 = c_1, because U|x⟩ must be local (C4b Lemma 2).
+On the torus, U commutes with S^±. SU(2) alone makes it c_0 on the S = N/2 multiplet and some
+unitary on the S = N/2−1 multiplicity space. It is a scalar c_1 there only because singles are
+frozen, which C4b Lemma 2 derives from TI plus covariance. Locality of U|x⟩ then gives c_0 = c_1.
 1. Since U S^+ = S^+ U, U|H_2 = c_0 on im S^+|_{H_1} (dimension N, `c9_02`: rank 64 at L = 4).
 2. U preserves ker S^- ∩ H_2, of dimension N(N−1)/2 − N, and is otherwise unconstrained there.
 3. The monomial S^- argument (C4f) works because S^-|x,y⟩ = |x⟩+|y⟩ pins {x,y} (`c9_02`). For a
@@ -215,8 +217,8 @@ The negative claim is the quantified Theorem 1 and Corollary 2, proved. The gate
   generators (open).
 - **N7, steelman.** "Heisenberg ferromagnets have mobile two-magnon bound states, and SU(2)
   Trotter circuits move magnons." Both are true and both are out of premise. The Hamiltonian
-  is not a finite-range QCA, and its single magnons also move. Brickwork circuits are 2Z^d-TI
-  only. Theorem 1 says the exact-TI qubit setting is rigid, and no claim is made beyond it.
+  is not a finite-range QCA, and its single magnons also move. Brickwork Heisenberg circuits (layers of exp(iθ P_swap)
+  on even, then odd, bonds) are only 2Z-invariant, so they lie outside the premise. Theorem 1 says the exact-TI qubit setting is rigid, and no claim is made beyond it.
 - **N8, cross-cycle echo.** This extends and supersedes C4f's "non-monomial SU(2) pair motion is
   open" and C4b's W1 for the full action. The axis-action positive result (C4f) is unaffected.
 
@@ -232,8 +234,10 @@ The negative claim is the quantified Theorem 1 and Corollary 2, proved. The gate
 - The axis action beyond C4f.
 - Any physical identification.
 
-**Novelty:** no literature search was done. The statement is elementary, and may be known for
-symmetric QCAs or matrix-product unitaries. Novelty does not bear on correctness.
+**Novelty: unverified.** No literature search was done. The review recalls, without verifying,
+that the known classifications of symmetric matrix-product unitaries and QCAs work up to
+symmetric circuits. They are not rigidity statements of this kind. The result is elementary and
+may still be known. Novelty does not bear on correctness.
 
 ## Load-bearing steps for independent check
 
@@ -254,3 +258,18 @@ python3 c9_02_sector.py ../logs/c9_02_sector_runN.txt     # ~35 s
 python3 c9_03_search.py ../logs/c9_03_search_runN_1D.txt 200 1D 840  # <= 14 min
 python3 c9_03_search.py ../logs/c9_03_search_runN_2D.txt 200 2D 840  # <= 14 min
 ```
+
+## Review dispositions (`REVIEW.md`)
+
+The review was done in a separate agent context, by the same model as the author. It re-derived
+every step and wrote its own scripts in `review_scripts/` (its count: PASS=15 FAIL=0). It found
+no error and no counterexample, and judged Theorem 1 correct.
+
+| item | disposition |
+|---|---|
+| Step D: replace the "ℓ near axes" sketch with the difference-vector argument | **accepted, applied** |
+| Lemma C: "generic" must mean ℓ injective on Z^d | **accepted, applied** |
+| Step (1): the scalar c_1 on the S = N/2−1 multiplicity space comes from frozen singles plus TI, not from SU(2) alone | **accepted, applied** |
+| Corollary 2: "e.g. O or T" should read "i.e." | **accepted, applied** |
+| N7: brickwork Heisenberg circuits are only 2Z-invariant, so outside the premise | **accepted, made explicit** |
+| Novelty: symmetric MPU/QCA classifications work up to symmetric circuits, not rigidity (recalled) | **accepted.** Novelty marked unverified |

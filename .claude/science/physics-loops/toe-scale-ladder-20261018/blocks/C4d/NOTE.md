@@ -3,7 +3,7 @@
 **Block:** C4d of `toe-scale-ladder-20261018`. It follows up C4b Lemma 3 and C4c, and asks:
 does any one-qubit, Z^3-translation-invariant (TI), U(1)-conserving QCA that is covariant under O
 (full action) or T (the axis-action vacuum stabiliser) transport a bound pair, or carry charge at
-finite density? **Date:** 2026-10-19. **Status:** author work, not yet independently reviewed.
+finite density? **Date:** 2026-10-19. **Status:** Reviewed in a separate agent context (same model as the author); unaudited.
 No axiom, primitive or dynamics clause is adopted.
 
 ## Result up front
@@ -15,7 +15,8 @@ No axiom, primitive or dynamics clause is adopted.
    U|C ∪ {w}⟩ = e^{iφ} (U|C⟩) ⊗ |w⟩.
 
    A lone magnon farther than r from a cluster is an exact spectator, even when the cluster
-   moves toward it. The same holds for U^† = α^{-1}. A consequence: the images of every
+   moves toward it. The same holds for U^† = α^{-1} with the phase e^{−iφ}:
+   U^†|C ∪ {w}⟩ = e^{−iφ} (U^†|C⟩) ⊗ |w⟩. A consequence: the images of every
    configuration "pair + far magnon" are fixed by the pair walk W alone. So unitarity of U on the
    3-magnon sector gives **W-only constraints**. These are the "3-magnon consistency
    constraints" the task asked for, and they come out in closed form.
@@ -46,13 +47,14 @@ No axiom, primitive or dynamics clause is adopted.
    - For k = 3, the same single-term deduction leaves 159 of 255 off-diagonal unknowns undecided.
      The prediction "W_3 is diagonal by the same argument" FAILs, and the FAIL is kept in the log.
      A numerical probe finds near-solutions of the full W_3-only system that are non-diagonal
-     and COM-moving. Their residual is ≤ 3e−13 and they carry moving weight 0.2, with a W_3(K)
-     band variation of about 1e−2 rad. So **at k = 3 the W-only constraints do not freeze
-     triples**. Whether these extend to a QCA is open.
+     and COM-moving. Their residual norm is ‖r‖ ≈ 5e−7 to 8e−7 (see the k = 3 section) and they
+     carry moving weight 0.2, with a W_3(K) band variation of about 1e−2 rad. *Evidence, not a
+     conclusion:* this suggests the W-only constraints may not freeze triples at k = 3. It is not
+     established, and whether any solution extends to a QCA is open.
 5. **Emptiness-shell pair gates cannot form commuting layers (proved; instance-checked).**
    Consider monomial gates that act on a pattern region R only when a surrounding shell is empty.
    If some generic linear functional has both of its extreme sites on R toggled by the gate, the
-   gate's translates do not all commute. This holds for every finite shell (Proposition E). It
+   gate's translates do not all commute. This holds for every *surrounding* shell, meaning both ℓ-extreme sites of the support lie in the shell, for example S ⊇ vertices of conv A (Proposition E). Partial, one-sided or empty shells are not covered. It
    turns C4c's "boundary-shell conflict" from an argument into a theorem. It kills every
    tetrahedral or caterpillar realisation of the face-diagonal move as a commuting emptiness-
    controlled layer, at any range.
@@ -91,7 +93,8 @@ density. This is **not decided in general.**
 - α(σ⁺_C) is supported in N_r(C), and w ∉ N_r(C). So α(σ⁺_C)|w⟩ = (α(σ⁺_C)|Ω⟩) ⊗ |w⟩.
 - α(σ⁺_C)|Ω⟩ = U|C⟩, which has no magnon at w.
 
-The same argument applies to α^{-1}. ∎
+The same argument applies to α^{-1}. Its neighbourhood is −B_r = B_r, and
+α^{-1}(σ⁺_w)|Ω⟩ = e^{−iφ}|w⟩. So U^†|C ∪ {w}⟩ = e^{−iφ}(U^†|C⟩) ⊗ |w⟩. ∎
 
 It needs no TI and no symmetry. Sanity check (`c4d_01`): U = V D V^†, where V is an XY layer on
 the even bonds of a 10-site ring and D = exp(iφ Σ n_x n_{x+1}).
@@ -228,7 +231,7 @@ Then the translates of g do not all commute.
   Observation-M move as a commuting emptiness-controlled layer. This gate acts on an even
   tetrahedron with exactly 2 magnons, moving them to the opposite edge, and the tetrahedron's 6
   edges are exactly 3 opposite face-diagonal pairs. Every site of the tetrahedron is toggled, so
-  the claim applies for every shell.
+  the claim applies for every surrounding shell.
 - *Instance checks* (`c4d_09`, PASS = 2): explicit non-commuting translate pairs are found for
   shells N₁, N₂ and N₃ and for 12 random T-symmetric shells. The witness provably does not apply
   to a collinear "inchworm" gate whose end partner is never toggled.
@@ -255,21 +258,32 @@ Then the translates of g do not all commute.
 
 **Results.**
 
+Every value in this table and in the run reports below is the script's printed "cost",
+np.sum(s.fun**2) = ‖r‖². That includes the moving-weight penalty row. The residual norm is the
+square root of the cost.
+
 | target | μ = 0 | μ = 0.05 | μ = 0.2 |
 |---|---|---|---|
 | off-diagonal weight | 1.7e−25 | 4.1e−17 | 2.0e−18 |
 | COM-moving weight | 1.5e−23 | 5.0e−14 | 5.6e−12 |
 
 - Contrast with k = 2 (c4d_04): there the optimum scales as 0.14 μ².
-- **Moving solution** (`c4d_10`, μ = 0.2, 4000 evaluations): residual 3.0e−13, and W_3(K) is
-  unitary to 1.4e−8. Its eigenphases vary by 1.2e−2 rad over a 6³ K-grid (Hausdorff distance on
+- **Moving solution** (`c4d_10`, μ = 0.2, 4000 evaluations): printed cost 3.0e−13, so the
+  residual norm is ‖r‖ ≈ 5.5e−7, not "≤ 3e−13" as an earlier draft said. The review reads the
+  printed value as scipy's ½‖r‖² and gets ‖r‖ ≈ 8e−7. The script sums the squares directly, so I
+  get 5.5e−7. Either way the residual is of order 1e−6, far from machine precision. The log line
+  "satisfies the W₃-only system to 1e−10" compares this cost, not ‖r‖, so it is weaker than it
+  reads. W_3(K) is unitary to 1.4e−8. Its eigenphases vary by 1.2e−2 rad over a 6³ K-grid (Hausdorff distance on
   the circle). With 500 evaluations the residual was 1.4e−12 and the variation 3e−3.
 
 **Reading.**
-- Off-diagonal W_3 solutions appear to exist, since the residual reaches machine level.
-- COM-moving ones are reached only to about 1e−13. Convergence is slow, so I cannot tell from this
+- Off-diagonal W_3 solutions appear to exist: the cost reaches 2e−18, so ‖r‖ ≈ 1.4e−9.
+- COM-moving ones are reached only to ‖r‖ of order 1e−6. Convergence is slow, so I cannot tell from this
   data whether exact moving solutions exist or the infimum is not attained.
-- No claim of a dispersive triple band is made.
+- No claim of a dispersive triple band is made. The `c4d_10` logs print "DISPERSIVE bands for
+  this solution". That label only means the spectral variation of this *approximate* solution
+  exceeded 1e−4. Given ‖r‖ ~ 1e−6 and the unknown status of exact solutions, it is **not** a
+  claim of a dispersive band. The old logs are left unedited.
 - The open k = 3 problem is now concrete. It needs an exact solution of a 164-unknown bilinear
   system, then the 2→3 local data of α(σ⁺_x) (the 4-magnon sector) to decide whether any solution
   extends.
@@ -396,3 +410,15 @@ constraints are standard-looking but not written down for this setting. They res
 cluster-decomposition arguments in Schumacher–Werner reversible QCA theory (recalled, not
 re-checked). No literature search was done. The cubic-covariant range-1 rigidity and Prop. E
 appear new. Novelty does not bear on correctness.
+
+## Review dispositions (`REVIEW.md`)
+
+The review reproduced Theorem P1 for T and O with a blind independent solver.
+
+| item | disposition |
+|---|---|
+| Spectator lemma: U† phase | **accepted.** e^{−iφ} is now explicit, in Result 1 and in the proof |
+| Prop. E: "every finite shell" is too broad | **accepted.** Now "every surrounding shell" (both ℓ-extreme support sites in S), in Result 5 and Coverage |
+| k = 3 residual misreported | **accepted in substance.** The printed figure is a cost, not a residual. My script computes np.sum(fun²) = ‖r‖², giving ‖r‖ ≈ 5.5e−7. The review assumes ½‖r‖² and gets 8e−7. The disagreement is recorded, and both are of order 1e−6 |
+| "W-only constraints do not freeze triples" stated too strongly | **accepted.** Relabelled as evidence, not a conclusion |
+| log "DISPERSIVE" vs "no dispersive claim" | **accepted.** Explanatory line added. The logs are not edited |

@@ -47,3 +47,4 @@ Resume: after long run, finish NOTE "k = 3 numerics", write logs/SUMMARY.txt (co
 - NOTE.md complete; logs/SUMMARY.txt TOTAL: PASS=37 FAIL=4 (all FAILs explained in NOTE).
 - Open for a follow-up: exact k=3 clique-walk system (164 unknowns); range-2 glider extension to a full QCA;
   independent review of Theorem P1 certificate (suggest blind Groebner/elimination route).
+- review corrections applied to NOTE.md (dispositions appended)

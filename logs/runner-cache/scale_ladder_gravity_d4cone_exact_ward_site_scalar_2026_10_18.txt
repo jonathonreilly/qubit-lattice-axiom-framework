@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_d4cone_exact_ward_site_scalar_2026_10_18.py
+runner_sha256: 5e35264a5dad816327c98759b9675cabd0c2cd2a29c4b00fce4e863a7c5887de
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.70
+status: ok
+----- stdout -----
+D4 cone: 96 simplices, 72 edge classes; NN site scalar K0 = sum_mu (2 - 2 cos k_mu)
+[PASS] E1 sum_m (w_m - 1) S_mn = -(1/4) d_n (K0(k2) - K0(k1)) identically (6 random complex momentum pairs, off shell); on shell S - S_min falls linearly with |k|  identity residual 4e-14; |S - S_min|/|S| 1.6e-02, 7.9e-03, 3.9e-03
+[PASS] E2 axis/face vertex-displacement strains of the D4-cone code equal the symbolic rows; the local map gives b . W = sum_m (w_m - 1) S_mn exactly; on constant metrics b . eps = (1/2) c(S) . h  row dev 3e-16; map dev 2e-16; normalisation 0.5000
+[PASS] E3 symmetrised site-scalar coupling: on-shell Ward ratio at rounding level at finite complex momenta (with or without the face combination); with k1's tick momentum moved 10% off shell it is not  scale 0.5: on 3e-17, off 6e-05; scale 0.1: on 3e-16, off 3e-03; scale 0.02: on 3e-14, off 4e-03
+[PASS] E4 N_f: blind to vertex displacements to rounding; its constant-metric reading falls at least linearly with |k| (|k| = 0.02, 0.01)  gauge 1e-16, metric 1.0e-05; gauge 9e-17, metric 2.5e-06
+[PASS] E5 conserved corner sources, |k| = 0.01, four directions incl. tick: alpha = -4 and beta = 4/3 without the face combination; beta = +2 (linearised-EH form) with weight trS/24  k=0 axis: a -4.0001 b +1.3333; k=0 tick: a -4.0001 b +1.3333; k=0 generic: a -4.0001 b +1.3333; k=0 body: a -4.0000 b +1.3333; k=1/24 axis: a -4.0001 b +2.0000; k=1/24 tick: a -4.0001 b +2.0000; k=1/24 generic: a -4.0001 b +2.0000; k=1/24 body: a -4.0000 b +2.0000
+[PASS] E6 scalar coupling to the two non-metric partners / to the metric modes: O(1) without the face combination; with it small and falling at least linearly (|k| = 0.02, 0.01); on-shell scalar-scalar exchange independent of the gauge-fixing weight (1 -> 10) to <= 1e-10  partner 0.85 -> 2.8e-03; 0.85 -> 1.4e-03; gauge dependence 4e-13, 4e-13, 2e-12
+
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

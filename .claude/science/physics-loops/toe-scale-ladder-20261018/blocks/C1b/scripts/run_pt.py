@@ -33,6 +33,7 @@ def main():
     pt = PT(L, betas, V=V, seed=seed, start=start)
     bmax = max(betas)
     FULL = set(int(np.argmin(np.abs(np.array(betas) - x))) for x in (L / 2, float(L), bmax, min(betas)))
+    pt.noloop_sweeps = int(os.environ.get("NOLOOP_SWEEPS", "0"))
     if os.path.exists(ck):
         pt.load(ck)
         nb_seed(seed * 1000 + pt.nsw % 100000 + 7)  # fresh stream after resume
@@ -60,7 +61,7 @@ def main():
     info = {"tag": tag, "L": L, "seed": seed, "start": start, "nsw": pt.nsw, "sweeps_this_call": pt.nsw - n0,
             "trips_total": pt.trips, "trips_this_call": pt.trips - tr0, "check": int(bad),
             "nrows": len(rows), "secs": round(time.time() - t0, 1),
-            "swap_min": float((pt.swap_acc / np.maximum(1, pt.swap_try)).min())}
+            "swap_min": float((pt.swap_acc / np.maximum(1, pt.swap_try)).min()) if len(betas) > 1 else None}
     print(json.dumps(info), flush=True)
     with open(os.path.join(HERE, "..", "logs", "prod_chunks.jsonl"), "a") as f:
         f.write(json.dumps(info) + "\n")

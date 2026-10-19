@@ -122,14 +122,17 @@ class PT:
         self.stats = np.zeros((len(betas), 10))
         self.cf, self.cl, self.pc = cube_tables(self.lat)
         self.cube_frac = 0.5
+        self.noloop_sweeps = 0   # thermalisation: no static loops at beta > noloop_beta for this many sweeps
+        self.noloop_beta = 1.0
         self.cstats = np.zeros((len(betas), 2))
 
     def sweep_all(self):
         A = self.A
         for k, b in enumerate(self.betas):
             r = self.reps[self.where[k]]
+            nl_ = 0 if (self.nsw < self.noloop_sweeps and b > self.noloop_beta) else self.nloops
             r.ft, r.fp, r.nF, st, _, _m1, _m2, _m3 = sweep(r.s0, r.ft, r.fp, r.nF, b, 1.0, self.V, A[0], A[2], A[3], A[4],
-                                             A[5], A[6], self.nloops, self.giant_frac)
+                                             A[5], A[6], nl_, self.giant_frac)
             self.stats[k] += st
             if self.V == 0.0 and self.cube_frac > 0 and r.nF >= 3:
                 a, v = cube_moves(r.s0, r.ft, r.fp, r.nF, A[0], A[2], self.cf, self.cl, self.pc,

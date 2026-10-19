@@ -1,0 +1,2 @@
+INFO built L=24 in 9s
+INFO alpha(X_x): torus search 560 probes: max write distance 0, max dependence distance 0

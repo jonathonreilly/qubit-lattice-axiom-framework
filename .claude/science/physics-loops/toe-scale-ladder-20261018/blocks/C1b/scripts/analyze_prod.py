@@ -79,7 +79,8 @@ def main():
     res = {}
     for L in Ls:
         bsel = [L / 2, float(L), 8.0]
-        runs = [r for r in (run_est(f"L{L}_s{s}", bsel) for s in (1, 2, 3, 4)) if r is not None]
+        seeds = [int(x) for x in os.environ.get("SEEDS", "1,2,3,4").split(",")]
+        runs = [r for r in (run_est(f"L{L}_s{s}", bsel) for s in seeds) if r is not None]
         if not runs:
             continue
         res[L] = {"runs": runs, "comb": {}}

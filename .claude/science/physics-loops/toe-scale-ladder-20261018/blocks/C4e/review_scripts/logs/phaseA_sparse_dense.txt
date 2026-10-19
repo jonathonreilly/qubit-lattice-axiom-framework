@@ -1,0 +1,3 @@
+PASS sparse (Z^3) and dense (torus L=12) implementations agree on 2100 random clusters (k=2..20), all four maps
+INFO section sparse_dense wall time 191s
+TOTAL: PASS=1 FAIL=0

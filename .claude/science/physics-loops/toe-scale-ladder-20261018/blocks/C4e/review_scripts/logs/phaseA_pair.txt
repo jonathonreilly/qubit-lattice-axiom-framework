@@ -1,0 +1,15 @@
+PASS (vi) all 9841 pairs with |rho|<=13: 6 face-diagonal relative positions move by v=rho_b rho_c e_a, 9835 static, anomalies []
+PASS (vi) near pairs |rho|<=2: total 62, static 56 (claim 62 = 6 dispersive + 56 flat)
+INFO    rho=(0, 1, -1) -> v=(-1, 0, 0)
+INFO    rho=(0, 1, 1) -> v=(1, 0, 0)
+INFO    rho=(1, -1, 0) -> v=(0, 0, -1)
+INFO    rho=(1, 0, -1) -> v=(0, -1, 0)
+INFO    rho=(1, 0, 1) -> v=(0, 1, 0)
+INFO    rho=(1, 1, 0) -> v=(0, 0, 1)
+PASS (vi) {0,e1+e2} -> {e3,(1,1,1)} exactly
+PASS (vi) intermediate L1 image {e1,e2}
+PASS (vi) 50 ticks: pair displaced by 50 e3 (speed 1)
+PASS (vi) torus L=10: glider returns after 10 ticks (wraps)
+INFO    T-orbits among the 6 moving pair shapes: 1
+INFO section pair wall time 2s
+TOTAL: PASS=6 FAIL=0

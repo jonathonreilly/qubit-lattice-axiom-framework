@@ -13,3 +13,10 @@
 04:54:44 start L6_s2 chunk 4
 {"tag": "L6_s2", "L": 6, "seed": 202, "start": "scrambled", "nsw": 17722, "sweeps_this_call": 3527, "trips_total": 11, "trips_this_call": 1, "check": 0, "nrows": 1764, "secs": 900.3, "swap_min": 0.23597788060038372}
 05:09:53 start L6_s2 chunk 5
+{"tag": "L6_s2", "L": 6, "seed": 202, "start": "scrambled", "nsw": 21218, "sweeps_this_call": 3496, "trips_total": 13, "trips_this_call": 2, "check": 0, "nrows": 1748, "secs": 900.3, "swap_min": 0.2352719389197851}
+05:25:03 start L4_s2 chunk 2
+{"tag": "L4_s2", "L": 4, "seed": 102, "start": "scrambled", "nsw": 30156, "sweeps_this_call": 10426, "trips_total": 19, "trips_this_call": 4, "check": 0, "nrows": 5213, "secs": 900.3, "swap_min": 0.28637750364769865}
+05:40:13 start L4_s2 chunk 3
+{"tag": "L4_s2", "L": 4, "seed": 102, "start": "scrambled", "nsw": 40208, "sweeps_this_call": 10052, "trips_total": 24, "trips_this_call": 5, "check": 0, "nrows": 5026, "secs": 900.4, "swap_min": 0.28755471547950656}
+05:55:22 start L6_s2 chunk 6
+{"tag": "L6_s2", "L": 6, "seed": 202, "start": "scrambled", "nsw": 24587, "sweeps_this_call": 3369, "trips_total": 15, "trips_this_call": 2, "check": 0, "nrows": 1684, "secs": 900.2, "swap_min": 0.23769624989831611}

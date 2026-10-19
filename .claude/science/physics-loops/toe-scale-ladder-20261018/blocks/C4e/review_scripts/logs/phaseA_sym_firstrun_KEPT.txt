@@ -1,0 +1,10 @@
+PASS (iv) L=8: U and U^-1 commute with all 12 R in T (site permutation about origin) on 216 random configs each
+FAIL (iv) L=8: U fails to commute with odd R on 26/108 random configs
+PASS (iv) L=10: U and U^-1 commute with all 12 R in T (site permutation about origin) on 216 random configs each
+FAIL (iv) L=10: U fails to commute with odd R on 32/108 random configs
+PASS (iv) sparse: T-covariance on 3000 random k<=4 clusters x 12 R
+PASS (iv) odd R: U P_R != P_R U on pair {0,e1+e2} for 12/12 odd R
+INFO    example odd R=((1, 0, 0), (0, 0, 1), (0, -1, 0)): U(R P)=[(0, -1, 0), (1, -1, -1)]  R U(P)=[(0, 1, 0), (1, 1, -1)]
+PASS (iv) odd R with particle-hole (P_R C) also not a symmetry (pair config, L=8 torus)
+INFO section sym wall time 36s
+TOTAL: PASS=5 FAIL=2

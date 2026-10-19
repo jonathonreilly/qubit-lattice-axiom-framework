@@ -3,6 +3,7 @@
 # JOBFILE lines: TAG L SEED START BETAS NCHUNKS [THERM] [EVERY]
 # runs each job's chunks (15 min each) until data/raw/TAG_c*.npz count >= NCHUNKS; safe to restart anytime.
 cd "$(dirname "$0")"
+export NOLOOP_SWEEPS=${NOLOOP_SWEEPS:-0}
 export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_NUM_THREADS=1
 while read -r TAG L SEED START BETAS NCH THERM EVERY; do
   [ -z "$TAG" ] && continue

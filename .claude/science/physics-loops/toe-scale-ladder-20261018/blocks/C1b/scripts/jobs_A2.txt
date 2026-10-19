@@ -1,0 +1,2 @@
+L8E_s1 8 301 canonical 16 2 1000 2
+L4_s1 4 101 canonical @../data/ladders/L4.txt 8 2000 2

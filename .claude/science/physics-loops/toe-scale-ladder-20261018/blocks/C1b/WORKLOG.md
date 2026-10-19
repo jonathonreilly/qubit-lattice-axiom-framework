@@ -123,3 +123,37 @@ Physics (V=0, beta = L, also beta = L/2 from the same ladder):
   EQ fails so far. Queues continue automatically. RESUME: if the container restarted, relaunch
     cd scripts; nohup ./queue.sh jobs_A.txt A >/dev/null 2>&1 & nohup ./queue.sh jobs_B.txt B >/dev/null 2>&1 &
   (completed chunks are skipped by counting data/raw/TAG_c*.npz).
+- 05:27 L6 after 6 chunks (trips 9/13): EQ still fails on <W^2> at beta=6 (z=-2.91); run L6_s2 never visits
+  W=(0,0,0) at beta=6 (marginal P0=0.57 per direction) -> walker-dominated winding populations. E and S1
+  agree between starts. Post hoc diagnostics script scripts/posthoc.py (dF1 along ladder, dF2/dF1, S2/S1,
+  E|W=000) written; its outputs are labelled post hoc in the NOTE.
+- 05:58 KEY FINDING (drift diagnostic scripts/drift.py, per 15-min chunk): at L=4 the winding populations
+  at beta >= L are still drifting after 27/24 round trips: P(|W_a|=1) at beta=8 went 0.14 -> 0.10 -> 0.005
+  -> 0.000 (run 1) and 0.23 -> 0.07 -> 0.001 -> 0.002 (run 2); at beta=4 0.32 -> 0.07 / 0.36 -> 0.11.
+  Both starts drift TOGETHER, so the declared EQ test (start agreement + >=10 trips) passes while the data
+  are non-stationary: the declared EQ test is insufficient; W-observables at beta >= L are NOT equilibrated
+  at L=4 or L=6 (L=6 chunk values of P1 at beta=6 scatter 0.06-0.57). At beta = L/2 = 2.05 (L=4) P1 is
+  stationary across chunks (0.44-0.49). The L=6 queue was stopped after chunk 6/7 completes (operational:
+  winding mixing at L=6 is far from converged); remaining time: L8E (2 chunks/start) then L4 to 8 chunks
+  per run to test whether the L=4 drift stops. New queues: scripts/relaunch2.sh -> queue.sh jobs_A2.txt A2,
+  queue.sh jobs_B2.txt B2 (RESUME: relaunch those two queue commands with nohup if the container restarted).
+- 06:13 size limit: raw L=2 validation measurement files (val2/val3, 125 MB) moved out of the block to the
+  session scratchpad; 20-bin summaries kept in data/val_bins_L2.npz (scripts/save_bins.py). The validation
+  logs were produced from the full raw files before the move. L6 stopped at 7 chunks per run (15/13 trips).
+  L8E_s1/L8E_s2 (L=8, single beta=16) started 06:10.
+- 06:35 SECOND KEY FINDING: L8E (L=8, beta=16 single replica) ran into W=(0,0,-16) and (-11,0,0) with
+  E = -388 / -407 (ground ~ -443.8); configs valid (check_config=0). Reproduced at L=4, beta=8 (scratch
+  t31): in the FIRST sweep from the event-free start, W jumped 0 -> 7. Cause: every replica starts with
+  n_F = 0, where all base states have equal weight (gβ)^0 = 1, so the static loop move randomises W freely
+  before events build up; once events are dense, W is frozen at low T. This is correct detailed balance but
+  a pathological initial condition (metastable high-W trapping), and it explains the excess winding at low T
+  and the slow monotone drift of P1 seen in the L4/L6 PT runs (walkers initialised with large W must be
+  expelled by PT). The L4_s1/s2, L6_s1/s2 production data are therefore compromised by the initialisation
+  and are NOT used for verdicts (kept and reported as such). L8E_s1/s2 discarded (killed in chunk 1).
+  FIX (thermalisation only, does not change the stationary dynamics): no static loops at beta > 1 during the
+  first NOLOOP_SWEEPS sweeps (sim.PT.noloop_sweeps; env NOLOOP_SWEEPS in queue.sh). Check at L=4,
+  beta=8, seed 1: E/N_p -> -0.29, W stays 0.
+  New runs (06:37): queue.sh jobs_C.txt C and jobs_D.txt D with NOLOOP_SWEEPS=2000:
+    L4_s3 (canonical, 3 chunks) -> L8E_s3 (canonical, beta=16, 2 chunks)
+    L4_s4 (mixW_rot: alternate replicas W=0 / W=(1,0,0) rotated canonical, 3 chunks) -> L8E_s4 (2 chunks)
+  RESUME: cd scripts; export NOLOOP_SWEEPS=2000; nohup ./queue.sh jobs_C.txt C & nohup ./queue.sh jobs_D.txt D &

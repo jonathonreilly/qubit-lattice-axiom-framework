@@ -1,0 +1,7 @@
+C9 SUMMARY (official logs; dry runs and INCOMPLETE logs excluded from totals, listed below)
+logs/c9_01_lemmas_run1.txt: TOTAL: PASS=22 FAIL=0
+logs/c9_02_sector_run1.txt: TOTAL: PASS=19 FAIL=0
+logs/c9_03_search_run3_1D.txt: TOTAL: PASS=4 FAIL=0
+logs/c9_03_search_run3_2D.txt: TOTAL: PASS=4 FAIL=0
+excluded: logs/c9_01_lemmas_dryrun0_HAS_FAIL.txt (test-convention bug, fixed), logs/c9_03_search_run1_INCOMPLETE_killed.txt, logs/c9_03_search_run2_INCOMPLETE_timeout.txt (killed by timeout, no results)
+TOTAL: PASS=49 FAIL=0

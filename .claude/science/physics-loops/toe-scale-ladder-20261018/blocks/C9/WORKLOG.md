@@ -21,3 +21,5 @@
 - 07:57 NOTE.md drafted (Theorem 1 + Cor 2 + sector witnesses + gate). Corollary 2 corrected: needs H irreducible on R^3 (D2 counter-case). Remaining: wait c9_03, write logs/SUMMARY.txt, fill c9_03 result in NOTE table.
 - 08:19 c9_03 run1 produced only header lines then python was gone (likely killed by its 1150 s timeout: some starts very slow at max_nfev=4000). Kept as logs/c9_03_search_run1_INCOMPLETE_killed.txt (renamed, content unchanged). Relaunch run2 with max_nfev=800, 60 starts, progress lines.
 - 08:39 c9_03 run2 also killed by its 1150 s timeout during 1D window (machine load ~2; starts far slower than dry run). Renamed to logs/c9_03_search_run2_INCOMPLETE_timeout.txt. Restructuring: per-window runs, per-start log lines, wall-clock budget.
+- 09:00 c9_03 run3 1D: PASS=4 FAIL=0 (62 starts, 16 converged, all NN swaps). 2D running.
+- 09:03 DONE. c9_03 2D PASS=4. logs/SUMMARY.txt TOTAL PASS=49 FAIL=0. Block complete; needs independent review (load-bearing: Lemma B, Step D, Step G).

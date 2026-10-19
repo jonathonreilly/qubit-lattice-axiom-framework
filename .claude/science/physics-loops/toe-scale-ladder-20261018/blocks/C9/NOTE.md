@@ -164,9 +164,9 @@ O-covariance is irrelevant at this level: π_R covariance is easy to satisfy.
 |---|---|---|
 | `c9_01_lemmas.py` | Schur–Weyl dims; Lemma B formula, rank, non-commutation, converse, vector-operator covariance; Lemma C on 24 random supports; 2-qubit algebra and the a+bP step; exhaustive geometric step; commutation-pattern step; one-qubit vector operators; site elimination; S_8 generation | `logs/c9_01_lemmas_run1.txt` PASS=22 FAIL=0 |
 | `c9_02_sector.py` | H_2 decomposition at L = 4; monomial step; ψ properties; W_g and W_O as above; exact Z^3 Bloch table | `logs/c9_02_sector_run1.txt` PASS=19 FAIL=0 |
-| `c9_03_search.py` | least-squares search, from 100 random starts per window, over the whole invariant Hermitian algebra of a 4-site window (1D chain and 2D 2×2) for self-adjoint unitaries with τ = 1/2 commuting with every disjoint-from-{0,e1} translate; prediction: only NN e1-swaps | `logs/c9_03_search_run1.txt` (see SUMMARY) |
+| `c9_03_search.py` | least-squares search from random starts over the whole invariant Hermitian algebra of a 4-site window (1D chain; 2D 2×2). It looks for self-adjoint unitaries with τ = 1/2 that commute with every translate whose support is disjoint from {0,e1}'s. Each window has an 840 s wall-clock budget. Prediction: only NN e1-swaps. | `logs/c9_03_search_run3_1D.txt`, `logs/c9_03_search_run3_2D.txt` (see SUMMARY) |
 
-`logs/SUMMARY.txt` gives the combined total.
+`logs/SUMMARY.txt`: **TOTAL: PASS=49 FAIL=0**. The `c9_03` runs used 62 starts in 1D (16 converged) and 200 starts in 2D (21 converged). Every converged solution was an NN e1-swap, and every expected bond was found.
 
 **Disclosure.**
 - The dry run of `c9_01` in scratch had one FAIL, in check G. The cause was a transposed rotation
@@ -174,6 +174,10 @@ O-covariance is irrelevant at this level: π_R covariance is easy to satisfy.
   before the official run, and the dry-run log is kept as `logs/c9_01_lemmas_dryrun0_HAS_FAIL.txt`.
 - A 10-start dry run of `c9_03` in scratch had two FAILs on "each expected bond is found". There
   were too few starts, about 20 % of starts converge. It found no non-swap solution.
+- Official `c9_03` runs 1 and 2 were killed by their own 1150 s timeouts before the first window
+  finished. Some least-squares starts are very slow. The partial logs are kept, renamed
+  `*_INCOMPLETE_*`, and their content is unchanged. The script was then given per-start log lines
+  and a wall-clock budget, and run per window as run3.
 - The theorem was derived analytically before any code was written (`WORKLOG.md`).
 
 ## No-Go Discipline Gate (N1–N8)
@@ -247,5 +251,6 @@ A blind route is to attempt a counterexample: a 1D TI SU(2) qubit QCA other than
 cd blocks/C9/scripts      # OMP_NUM_THREADS=1 nice -n 10
 python3 c9_01_lemmas.py ../logs/c9_01_lemmas_runN.txt     # ~3 s
 python3 c9_02_sector.py ../logs/c9_02_sector_runN.txt     # ~35 s
-python3 c9_03_search.py ../logs/c9_03_search_runN.txt 100 # ~15 min
+python3 c9_03_search.py ../logs/c9_03_search_runN_1D.txt 200 1D 840  # <= 14 min
+python3 c9_03_search.py ../logs/c9_03_search_runN_2D.txt 200 2D 840  # <= 14 min
 ```

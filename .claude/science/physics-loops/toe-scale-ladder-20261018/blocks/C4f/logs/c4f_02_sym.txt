@@ -1,0 +1,8 @@
+PASS N conserved on all stress configs 
+PASS translation invariance (4 shifts x 12 configs) 
+PASS U M_R = M_R U for all 12 R in T (M_R = P_R) on 30 stress configs [9 crossings] 
+PASS U M_R = M_R U for all 12 odd R (M_R = P_R o C) on 30 stress configs 
+PASS explicit SU(2) amplitudes of beta_R agree on c and Uc (all 24 R): beta_R U = U beta_R exactly 
+PASS witness: U P_R != P_R U for all 12 odd R (pure permutation is NOT a symmetry) 
+PASS witness: U C != C U (U is not particle-hole symmetric, unlike C4e) 
+TOTAL: PASS=7 FAIL=0

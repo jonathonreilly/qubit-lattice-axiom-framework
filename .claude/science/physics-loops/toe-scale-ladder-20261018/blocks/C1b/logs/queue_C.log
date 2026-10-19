@@ -1,1 +1,3 @@
 06:36:48 start L4_s3 chunk 0
+{"tag": "L4_s3", "L": 4, "seed": 103, "start": "canonical", "nsw": 9929, "sweeps_this_call": 9929, "trips_total": 2, "trips_this_call": 2, "check": 0, "nrows": 3964, "secs": 900.3, "swap_min": 0.28056394763343406}
+06:51:50 start L4_s3 chunk 1

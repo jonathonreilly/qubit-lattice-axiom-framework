@@ -157,3 +157,7 @@ Physics (V=0, beta = L, also beta = L/2 from the same ladder):
     L4_s3 (canonical, 3 chunks) -> L8E_s3 (canonical, beta=16, 2 chunks)
     L4_s4 (mixW_rot: alternate replicas W=0 / W=(1,0,0) rotated canonical, 3 chunks) -> L8E_s4 (2 chunks)
   RESUME: cd scripts; export NOLOOP_SWEEPS=2000; nohup ./queue.sh jobs_C.txt C & nohup ./queue.sh jobs_D.txt D &
+- 06:55 L4_s3/s4 chunk 0: P1(beta=4) = 0.016 (W=0 start) vs 0.25 (half-W=1 start); populations at
+  beta >= L still start-dependent -> brackets. Changed queue D second job from L8E_s4 to L6_s4 (mixW_rot,
+  2 chunks) to get sector-conditional energies at L=6 for the TI estimator (which needs equilibration only
+  within sectors, not of the sector populations). L8E then has one start only (L8E_s3).

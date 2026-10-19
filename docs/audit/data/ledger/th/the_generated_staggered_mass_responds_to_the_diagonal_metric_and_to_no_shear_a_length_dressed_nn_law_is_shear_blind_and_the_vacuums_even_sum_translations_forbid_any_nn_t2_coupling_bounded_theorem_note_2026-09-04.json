@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -27,13 +27,13 @@
     "the_two_tt_graviton_polarisations_are_read_by_the_axis_bond_pair_record_statistics_of_the_pi_flux_sea_off_the_coordinate_planes_the_shear_sector_needs_one_period_2_coupling_bounded_theorem_note_2026-09-04",
     "the_interaction_generates_the_staggered_mass_at_hartree_level_and_no_term_in_the_law_fixes_its_sign_bounded_theorem_note_2026-09-03"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 2.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/generated_mass_no_shear_even_sum_translations_forbid_nn_t2_check_2026_09_04.py",
   "title": "Finite Hartree response of an axis-length ansatz and a uniform-pattern symmetry restriction",
-  "transitive_descendants": 1,
+  "transitive_descendants": 2,
   "verdict_rationale": null
 }

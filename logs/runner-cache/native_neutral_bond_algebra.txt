@@ -1,0 +1,180 @@
+===== runner cache v1 =====
+runner: scripts/native_neutral_bond_algebra.py
+runner_sha256: 73b1200495e0e3bcec5ef189c92a139252e28a2f25d12dcc19df934a2c9d3f25
+input_fingerprint_sha256: e94c8b8f71289d0aa58df0017cbfd38f9a7f9ff3012f53ec7c635722c83a2a07
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 61.81
+status: ok
+----- stdout -----
+{"shape": [3, 3, 3], "dimension": 4194304, "terms": 54, "matvec_seconds": 0.054173083044588566}
+{'shape': (3, 3, 3), 'sector': 'all selected Z planes and adjacent X-plane pairs +1', 'dimension': 4194304, 'energies': [-27.16489442506342, -26.89423609982402, -26.89423609982399, -26.577963797186325], 'residuals': [2.302586348520834e-13, 8.692694199361935e-10, 2.837937467761518e-11, 2.447262030565423e-13], 'calls': 365, 'elapsed_seconds': 39.79170712502673, 'scope': 'Numerical low eigenpairs of one exact invariant sector; no global ground, thermodynamic pole or physical preparation identification'}
+reproduced compass_sector_solve
+{'checks': 10800, 'dimension': 1048576, 'stabilizers': [(523292, 3677212, -1), (4136863, 3554075, -1)], 'pivots': (0, 2)}
+reproduced neutral_extra_sector_control
+{
+  "projection_norm_squared": 0.999999999999995,
+  "ground_residual": 1.283443342340292e-13,
+  "dimension": 1048576,
+  "krylov_rows": [
+    {
+      "steps": 64,
+      "regularized_eta01": 0.331415073397446,
+      "nodes": [
+        {
+          "gap": 1.7389723182719121,
+          "weight": 0.0035249477569291644
+        },
+        {
+          "gap": 2.1325642594854735,
+          "weight": 0.0007914891276443609
+        },
+        {
+          "gap": 2.642079811343053,
+          "weight": 3.066699125294865e-05
+        }
+      ]
+    },
+    {
+      "steps": 128,
+      "regularized_eta01": 0.33141507339744614,
+      "nodes": [
+        {
+          "gap": 1.7389723182718846,
+          "weight": 0.003524947756927934
+        },
+        {
+          "gap": 2.132564259426557,
+          "weight": 0.0007914891269884669
+        },
+        {
+          "gap": 2.642077610055737,
+          "weight": 3.066600008174675e-05
+        }
+      ]
+    },
+    {
+      "steps": 256,
+      "regularized_eta01": 0.3314150733974461,
+      "nodes": [
+        {
+          "gap": 1.7389723182718895,
+          "weight": 0.0035249477569279358
+        },
+        {
+          "gap": 2.132564259426553,
+          "weight": 0.000791489126988465
+        },
+        {
+          "gap": 2.642077610055742,
+          "weight": 3.0666000081745206e-05
+        }
+      ]
+    }
+  ],
+  "reconstructed": [
+    {
+      "steps": 64,
+      "tridiagonal_gap": 1.7389723182719121,
+      "rayleigh_gap": 1.7389723182719068,
+      "residual": 3.985866038289925e-07,
+      "raw_norm": 0.9999999999999993,
+      "source_weight": 0.003524947756929174,
+      "ground_overlap": -2.0816681711721685e-17
+    },
+    {
+      "steps": 64,
+      "tridiagonal_gap": 2.1325642594854735,
+      "rayleigh_gap": 2.132564259485471,
+      "residual": 2.2455125409032884e-05,
+      "raw_norm": 1.0000000000000095,
+      "source_weight": 0.0007914891276444336,
+      "ground_overlap": -5.410168840702667e-17
+    },
+    {
+      "steps": 64,
+      "tridiagonal_gap": 2.642079811343053,
+      "rayleigh_gap": 2.6420798113430517,
+      "residual": 0.0038621608287323205,
+      "raw_norm": 0.9999999999999933,
+      "source_weight": 3.066699125175572e-05,
+      "ground_overlap": -1.3183898417423734e-16
+    },
+    {
+      "steps": 128,
+      "tridiagonal_gap": 1.7389723182718846,
+      "rayleigh_gap": 1.7389723182718912,
+      "residual": 2.594952130735091e-14,
+      "raw_norm": 1.0000000000000009,
+      "source_weight": 0.0035249477569279414,
+      "ground_overlap": -6.245004513516506e-17
+    },
+    {
+      "steps": 128,
+      "tridiagonal_gap": 2.132564259426557,
+      "rayleigh_gap": 2.1325642594265535,
+      "residual": 6.555509832457852e-13,
+      "raw_norm": 1.0000000000000109,
+      "source_weight": 0.0007914891269885179,
+      "ground_overlap": 1.3530843112619095e-16
+    },
+    {
+      "steps": 128,
+      "tridiagonal_gap": 2.642077610055737,
+      "rayleigh_gap": 2.6420776100557464,
+      "residual": 3.7895118989639294e-10,
+      "raw_norm": 0.9999999999999896,
+      "source_weight": 3.066600007885549e-05,
+      "ground_overlap": 1.973247953923618e-17
+    },
+    {
+      "steps": 256,
+      "tridiagonal_gap": 1.7389723182718895,
+      "rayleigh_gap": 1.738972318271891,
+      "residual": 4.327374609166176e-14,
+      "raw_norm": 1.0,
+      "source_weight": 0.003524947756927947,
+      "ground_overlap": -3.382710778154774e-17
+    },
+    {
+      "steps": 256,
+      "tridiagonal_gap": 2.132564259426553,
+      "rayleigh_gap": 2.132564259426552,
+      "residual": 3.197773951341883e-14,
+      "raw_norm": 0.9999999999999593,
+      "source_weight": 0.0007914891269884853,
+      "ground_overlap": 3.3285006695304986e-17
+    },
+    {
+      "steps": 256,
+      "tridiagonal_gap": 2.642077610055742,
+      "rayleigh_gap": 2.642077610055746,
+      "residual": 5.385971791436945e-14,
+      "raw_norm": 1.0000000000000075,
+      "source_weight": 3.066600008173049e-05,
+      "ground_overlap": 9.974659986866641e-18
+    }
+  ],
+  "elapsed": 11.35778522491455,
+  "scope": "Same finite27site state and H, extra exact symmetries, no bulk pole conclusion"
+}
+reproduced neutral_extra_sector_response
+[{'energy': -27.16489442506342, 'labels': [{'mean': 0.9999999999999951, 'variance': 4.9960036108132044e-15}, {'mean': 0.9999999999999951, 'variance': 5.10702591327572e-15}]}, {'energy': -26.89423609982402, 'labels': [{'mean': -0.6689631953591035, 'variance': 0.5524882432549396}, {'mean': 0.668963195359104, 'variance': 0.5524882432549382}]}, {'energy': -26.89423609982399, 'labels': [{'mean': 0.6689631953591033, 'variance': 0.5524882432549391}, {'mean': -0.6689631953591036, 'variance': 0.5524882432549377}]}, {'energy': -26.577963797186325, 'labels': [{'mean': -1.0000000000000027, 'variance': -2.220446049250313e-15}, {'mean': -1.0000000000000027, 'variance': -2.220446049250313e-15}]}]
+reproduced neutral_mode_symmetry_labels
+forbidden max 3.606229588253866e-16
+allowed nonlocal [{'component': 0, 'position': (1, 0, 0), 'forbidden': False, 'response': [0.11539286918615133, 0.060082871852984485]}, {'component': 1, 'position': (0, 1, 0), 'forbidden': False, 'response': [0.11539286918615148, 0.060082871852984686]}, {'component': 2, 'position': (0, 0, 1), 'forbidden': False, 'response': [0.11539286918615158, 0.06008287185298472]}]
+reproduced neutral_plane_mobility_control
+[{'shape': (2, 2, 2), 'sites': 8, 'bond_rank': 11, 'plane_rank': 5, 'neutral_dimension': 11, 'composite_checks': 0}, {'shape': (3, 2, 2), 'sites': 12, 'bond_rank': 18, 'plane_rank': 6, 'neutral_dimension': 18, 'composite_checks': 4}, {'shape': (3, 3, 2), 'sites': 18, 'bond_rank': 29, 'plane_rank': 7, 'neutral_dimension': 29, 'composite_checks': 12}, {'shape': (3, 3, 3), 'sites': 27, 'bond_rank': 46, 'plane_rank': 8, 'neutral_dimension': 46, 'composite_checks': 27}, {'shape': (4, 4, 4), 'sites': 64, 'bond_rank': 117, 'plane_rank': 11, 'neutral_dimension': 117, 'composite_checks': 96}, {'shape': (5, 4, 3), 'sites': 60, 'bond_rank': 109, 'plane_rank': 11, 'neutral_dimension': 109, 'composite_checks': 86}, {'shape': (6, 6, 6), 'sites': 216, 'bond_rank': 415, 'plane_rank': 17, 'neutral_dimension': 415, 'composite_checks': 432}, {'shape': (10, 10, 10), 'sites': 1000, 'bond_rank': 1971, 'plane_rank': 29, 'neutral_dimension': 1971, 'composite_checks': 2400}]
+reproduced neutral_bond_algebra
+{'all_neutral_local': {'rank': 72, 'modes': [(4.158198068316641, 1.3170148910085993), (4.158198068316638, 1.3170148910086101), (4.348133015537314, 1.2085315050360368), (4.348133015537311, 1.2085315050360423), (4.348133015537313, 1.208531505036061)]}, 'C_only': {'rank': 19, 'modes': [(4.477302847475395, 1.786980101020042), (4.477302847475397, 1.7869801010200297), (4.684729257160858, 1.6890715455438505), (4.684729257160855, 1.6890715455438494), (4.684729257160854, 1.68907154554385)]}, 'cubic_scalar_orbit_sums': {'rank': 5, 'modes': [(6.708759274304292, 1.7107548136773025), (7.585521737339767, 2.011515048917888), (8.318212472597176, 1.500270101925516), (10.349159114246039, 2.2512947082944668), (11.820990963287004, 2.463835339953549)]}}
+reproduced neutral_collective_basis
+{'linear': {'rank': 2, 'modes': [(7.93039910154261, 1.7920895416264282, 0.0006456890365051953), (8.32831165118487, 2.2513901950165685, 0.0010361688429103805)]}, 'linear_and_quadratic': {'rank': 41, 'modes': [(6.180758212225244, 1.27341371469041, 0.0009225185658388173), (6.884415412448741, 1.857570831404467, 0.00020732127063141038), (7.259180598097597, 2.8004233028803864, 0.04351639304302156), (8.722465236173656, 2.0667184330541337, 0.0034684996728270192), (9.205310320311142, 2.6746180487158875, 0.0004356243307966054)]}}
+reproduced neutral_quadratic_scalar_basis
+per_element: binary Pauli commutation, signed orbit actions and source covariance entries checked
+per_site: original one-qubit sites and native bond interaction retained throughout these finite controls
+per_mode: floating full-H eigenpair residuals and finite source mixtures are recorded without bulk extrapolation
+per_block: complete plane-neutral bond algebra, no dynamical closure implied
+lattice_wide: controls use the stated finite open geometry; bulk persistence and observational identification remain open
+
+----- stderr -----
+

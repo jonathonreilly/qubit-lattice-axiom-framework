@@ -1,0 +1,45 @@
+{
+  "new_files": 7,
+  "new_proof_files": 6,
+  "new_historical_nonpremises": 1,
+  "inherited_mappings": 254,
+  "inherited_false_flags": 13,
+  "historical_notes": 20,
+  "current_context_notes": 12,
+  "inherited_manifests": 14,
+  "links": 12,
+  "provenance": 1,
+  "notes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_onsite_publication/NOTE.md",
+      "destination": "docs/MEDIATED_ONSITE_TOLERANCE_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "5e6ac48d03620ec2efb79b642d4a63c5008873af39d5579c4d3864bdb3d9943d",
+      "bytes": 14239
+    }
+  ],
+  "manifest_sha256": "a5e0ca719500fe6cd09b8c36965786f101296523dc0820f9962e8438172c79f6",
+  "graph": {
+    "old_nodes_unchanged": true,
+    "new_nodes": {
+      "mediated_onsite_tolerance_bounded_theorem_note_2026-10-18": {
+        "claim_id": "mediated_onsite_tolerance_bounded_theorem_note_2026-10-18",
+        "claim_type_author_hint": "bounded_theorem",
+        "claim_type_author_hint_raw": "bounded_theorem. Conditional mathematical result with selective analytical source checks and a separate publication integration review; no retained audit or native physical implementation is asserted.",
+        "claim_type_seed_hint": "bounded_theorem",
+        "deps": [
+          "mediated_recovery_residual_bounded_theorem_note_2026-10-18"
+        ],
+        "helper_runner_paths": [],
+        "note_hash": "5e6ac48d03620ec2efb79b642d4a63c5008873af39d5579c4d3864bdb3d9943d",
+        "path": "docs/MEDIATED_ONSITE_TOLERANCE_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+        "runner_path": null,
+        "title": "A sufficient onsite tolerance for the mediated complete-output certificate"
+      }
+    },
+    "node_count": 7252,
+    "edge_count": 16252,
+    "added_edges": 1
+  },
+  "review_sha256": "d1a41c6cfa2a120f7392e8e3937add92d3340b809d5abf36ef0ddb822cd81979",
+  "limits": "Analytical checks only; no new scientific execution. Graph/hash/link checks are bookkeeping. Final note mathematical text unchanged from full-read draft; only recorded publication metadata changed."
+}

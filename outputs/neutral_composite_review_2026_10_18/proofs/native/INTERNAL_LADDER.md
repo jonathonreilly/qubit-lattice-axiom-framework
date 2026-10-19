@@ -1,0 +1,11 @@
+# Internal ladder diagnostic
+
+Status: conditional-support. Same finite27site H/state, no new interaction. Root tested C acting on the lowest C-visible vector with gap Delta=1.738972318272. Its vacuum-return weight Z=.003524947756928 is reproduced. C expectation changes from .727144835825 to .868691771677; full connected weight in the excited state is2.581062381919, so a simple linear single-oscillator readout is already restrictive.
+
+Separate branch amplitude filters are exp[-(omega-sign*Delta)^2/(2width²)], whose squared norms use exp[-d²/width²]. The upper branch centered at total excitation energy2Delta and lower at0 are evaluated separately; no exact norm identity for their sum is asserted. A linear harmonic C=sqrt(Z)(a+a†) has upper weight2Z and lowerZ. Therefore JSON upper_over_2Z targets1, not2. Root initially misstated that target in a checker message; checker caught it and the computation itself always used the correct denominator. No bandwidth may be fitted to force the harmonic ratio.
+
+At128and256Krylov steps upper_over_2Z is3.67439474e-8 atwidth.02, .15347665 at.05,1.93503026 at.1,5.92200688 at.2. The64step narrow filter was not converged and is preserved. Reconstructed nearby states at energies3.122572937002,3.322615021366,3.563140192707,3.633843117864 have direct full-H residuals3.42e-14,2.62e-14,8.71e-14,1.30e-13 and weights .001426738113,.030336411430,.019676547605,.015938454801. None of these is the exact double-gap line3.477944636544. This does not certify absence of every weak eigenline or give an interval spectral exclusion.
+
+Synthetic controls reproduce harmonic upper/lower ratios1 atallfourwidths. A chosen anharmonic oscillator with kappa=.08 suppresses the narrow upper window despite being an interacting oscillator. Hence the native result challenges an isolated linear harmonic realization through this C; it does not exclude nonlinear readouts, interacting scalar modes, other source operators or a bulk continuum limit. No self-coupling constant is inferred by choosing one nearby level as a two-particle state.
+
+Operational failure: NUMBA_NUM_THREADS=2 conflicts with imported solver's explicit4-thread setting; rerunwith4succeeded. This is not scientific evidence.

@@ -1,0 +1,9 @@
+goal: "Derive or test finite internal size under the unchanged one-qubit Hamiltonian"
+actual_current_surface_status: open
+target_claim_type: open_gate
+trace_class: upstream_support
+active_route: "Finite-mode correlations and longitudinal volume controls"
+next_milestone: "Track a momentum-resolved excitation branch and its relative correlations"
+independent_check: "Physical-action, sign/wrap mutations, covariance algebra checked by focused reviewer"
+pr_status: "Source checks passed; opening a self-contained positive finite-mode PR"
+clock: "Direct user-authorized continuation; earlier campaign deadlines remain closed"

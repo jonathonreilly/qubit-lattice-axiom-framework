@@ -1,0 +1,49 @@
+# Distinct integration review: scalar mediator-bond tolerance
+
+Conditional support; no required correction found in the complete publication note `NOTE.md`, SHA256 `d9825f0b3262ad0f49c1589274706ea811146a7b9e691b09ad757db197bceb5c`. The note accurately presents a finite conditional complete-certificate perturbation expression and an O(m epsilon) family increment under uniform margins. It does not certify a numerical epsilon, fixed-supplier performance point, native supply or retained audit status.
+
+I read the full note and all six new source/check files. I reconstructed the load-bearing new composition and checked that the note preserves the source reviews' logarithm and anchored-witness qualifications. This is publication integration, not a blanket revalidation of the original processor or every unchanged ancestor.
+
+## Physical error class and fixed target
+
+The P_w=w(I-X) identity is a full-qubit operator identity: summing its wI terms produces the actual scalar C(w), while its centered exchange part changes only hopping. Exact2j occupations on new vertices, the retained old cap and no new port occupation give the stated centered H(w). This is the positive implementation previously derived, not the occupation-compensated Q installation silently altered by bond errors. Independent onsite errors and independent diagonal/exchange shape errors would invalidate this interpretation and are explicitly excluded.
+
+The same nominal lambda, nominal limiting masses, prescribed critical packet, original K/W, physical windows and product seed remain fixed. The fixed endpoint sign gauge does not change because all bonds remain positive. Centering shifts the physical windows by the ACTUAL C(w); the target receives exp(-itC(w)). Replacing that phase by nominal C(w0) costs the stated sine norm and cannot be included in a uniform O(m epsilon) vector allowance. The note correctly makes no numerical-error-box application to the separate earlier-window Q point.
+
+## Finite inverse, full reconstruction and normalization
+
+The note imports the complete finite definitions of E_loc and E_z from b06b, rather than treating their names as unexplained small quantities. The gaps a_*>rho and b_*>0, port eta_i<1, full complementary k_i>0 and selected theta_F<1 must hold for the actual tuple, or uniformly for every member of a claimed error box. Fixed real matching/analytic boundary branches and actual seed spectral identification are additional premises. An internal gap or scalar background envelope alone would not prove regularity. The note retains this distinction and includes window endpoints.
+
+In the fixed nominal congruence the selected inverse subtraction has E_F=H0² D/[(1-theta_F)R²]. Subtracting the four exact block inverse entries retains E_F v1+f0 dV, v1 E_F+dW f0 and dJ+v1²E_F+f0(dW v1+v0 dV). In particular dJ is not removed on the wrong window. Opposite rectangular blocks are not replaced by adjoints on one lip. Restoring the same physical mass factors contractively bounds the actual source-column difference without changing its preparation or target.
+
+The full forcing is Kp_i t3_i psi_i,2 in that order. The physical selected hopping bound is sqrt(Z2)u_i; complementary t3 has its own unsuppressed ceiling. Splitting source OUTPUT into P and C before subtracting t3 retains both the selected-to-complementary response and the direct complementary prepared input. The note's summary faithfully reflects these terms. It does not infer a full-input traveling bound from only a selected row.
+
+Internal recovery uses R1 Gamma1-R0 Gamma0 and the full gapped cell inverse. Endpoint injections have orthogonal ranges within each cell, so the difference ceiling epsilon gamma_l/d_l+gamma_l d_A/d_l² is valid without a factor proportional to cell length. Summing three cell output norms is conservative. The source-plus-port endpoint bound accounts for repeated incidence, while p is a background output only once. L0=14000 includes every background finite head and closed slow tail for the full forcing domain.
+
+The retained local difference has two-window/two-lip coefficient2/pi. One traveling coefficient per window has exact prefactor461 sqrt(j/pi); two windows and outgoing plus incoming give4 times this coefficient. Thus equation(3) of the note has the correct factors. Incoming relies on physical real matching with unchanged positive time, not on a fitted scalar or conjugated input. All halfline restrictions are contractions; physical images from different windows need not be orthogonal.
+
+For the final triangle, b0(t) is the explicit nominal RETAINED-to-target allowance furnished by the original proof. It is not obtained by subtracting a number from an arbitrary inequality. Actual full evolution equals its retained piece plus one actual outside vector. Comparing retained pieces and then using b0(t) therefore proves o_box+B_ret+b0(t) without an extra nominal outside charge. Nominal packet/physical-halfline normalization and right seed mass remain in b0(t); the perturbation argument neither normalizes an erroneous packet nor changes the comparator. Arbitrary passive references are preserved by these operator bounds.
+
+## Numerator, family scaling and outside witness
+
+The selected numerator's slope differences follow from inverse-power telescoping and bipartite parity, giving O(epsilon)|delta| and an O(epsilon)|delta|³ remainder at fixed gaps. Nonuniform hopping products have logarithmic sensitivity at most(2n_l+1)[-log(1-epsilon)]. Under bounded m[-log(1-epsilon)], their relative changes are O(m epsilon). The port identity Gt1 DeltaSp Gt0 leaves two cross-kernel factors on a closed perturbation returning to selected output. These are essential to the lambda epsilon(a0+b0|delta|)² term and are preserved by the note.
+
+For the geometric family and rho=sqrt(a lambda), integrating lambda*m*epsilon/R² gives O(m epsilon), whereas epsilon|delta|/R² gives epsilon log(1+rho²/lambda²)=O(m epsilon). There is no second m in that slope coefficient. The raw bound uses sqrt(lambda)||D/R²||2; its constant and linear terms have the stated finite rational integrals, and higher powers retain finite bandwidth. The full inverse/forcing subtraction adds terms sqrt(lambda)*m*epsilon/R and direct complementary O(epsilon) terms. Their local logarithms are controlled because m sqrt(lambda_m) is bounded. Finally changed mediator recovery is O(epsilon) times a nominal source integral O(m). This verifies the note's explanation of the complete, rather than selected-only, scaling.
+
+All these statements require fixed suppliers and uniformly positive gaps and inverse margins. A fixed nonzero epsilon at unbounded m, changing g or closing theta_F margin is not covered. The coarse594461 interface is correctly described as a finite-tuple fallback; its historical logarithm discussion is not advertised as a no-go or as already proving the later refinement.
+
+The first-cell witness is actual: its Gram is1+c_L, residual is the exact zero-energy t1, and normalization gives the preparation-distance term in(4). Its residual contribution uses rho and the ACTUAL unequal left slope, with all outside spectral types retained. The error-box expression uses c_max in the increasing distance term and c_min in the residual denominator, which are the correct directions. For a vanishing increment, the upper/lower slope bounds must be Lipschitz and coincide with the nominal finite-cell value at epsilon=0. The note states that qualification explicitly. The uniform nominal slope lower bound gamma1²/J_m² makes the preparation term locally Lipschitz. Without anchored bounds the claimed increment would not follow; the note does not leave that as an optional choice.
+
+## Source identities and publication scope
+
+The full reviewed six-file packet is:
+
+- coarse source594461345ee6546318179e1ef649dcbeac9ea64a1b8f5cd7907c40ee5c7640ac; review462c76bd07091ce7a18c5efc6bbe89911271583368c9081c5f510cda68211ba9;
+- numerator sourcedd9db7ee72ad2c3a779a193b68629bba402444fb3dbae529d54235e6a21b6b0c; review2ac7558630ede8e5f2a21c07781d1310587f49646a3ba86784b49c271b980f40;
+- complete sourceb06b088a789ad3230f32c8d4c30dab804b97f82af05b0d0c00f011111e868570; review8d6d452445b2e7e69be4294a57cc52e3189e22c30166594281bf7d1f3a36dd7e.
+
+All six identities and the note hash were refreshed. The stated direct parent is9891a099044ae8ff6661f7fe3ba57ddbdc9b344001e00efc582c5e63a7c60123. The relative canonical parent and planned flat proof destinations match the declared publication layout. This review verifies citation intent and exact source identity; installed-copy/link-graph verification remains separately owned by root. No future publication status is inferred.
+
+The theorem supplies no numerical tolerance coefficient or epsilon, new time, receiver length, practical precision advantage, microscopic derivation, native Record/selector, independent onsite robustness, capture/reuse, repeated monitoring or permanent finite storage. The note consistently retains those limits. Its uniform time claim concerns an additive complete OUTPUT CERTIFICATE on the nominal certificate's valid time domain, not an O(m epsilon) difference of full unitaries on all outside eigenvectors.
+
+I authored the stationary precision and positive-block ancestors and scalar-window work, and checked earlier loaded/raw/regularity/finite-point interfaces. I did not author these three new precision derivations or this publication note. Root proposed the route and checked the components; I was exposed to those checks and then reconstructed the new integration above. This is distinct source-exposed review, not blind, model-diverse or whole-ancestry verification. No numerical run, solver, sweep, scientific rerun, W/Git/PR/checkpoint/prompt/model changes or delegation occurred. Only this integration review was written.

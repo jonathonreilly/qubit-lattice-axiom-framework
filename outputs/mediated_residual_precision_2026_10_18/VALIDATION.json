@@ -1,0 +1,96 @@
+{
+  "new_files": 9,
+  "new_proof_files": 8,
+  "new_historical_nonpremises": 1,
+  "inherited_mappings": 245,
+  "inherited_false_flags": 12,
+  "historical_notes": 17,
+  "current_context_notes": 12,
+  "inherited_manifests": 13,
+  "links": 24,
+  "provenance": 3,
+  "notes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_residual_precision_publication/RESIDUAL_NOTE.md",
+      "destination": "docs/MEDIATED_RECOVERY_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "cd8dec82ddf2d65e6f7e43e4c12990e9623f5c2d7d53eba8483e53b47f8b472d",
+      "bytes": 15039
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_residual_precision_publication/PRECISION_NOTE.md",
+      "destination": "docs/MEDIATED_FINITE_BOND_PRECISION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "20ff8d650375aef31b9972bbaba3c9044c94f76cd8fa51d165da5bb991b2d9ba",
+      "bytes": 10931
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_residual_precision_publication/SHORTER_NOTE.md",
+      "destination": "docs/MEDIATED_SHORTER_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "928b61a98c476d241e4ad183d60f5d72c8edbc2429544e74b135afceaf7ba9bf",
+      "bytes": 14407
+    }
+  ],
+  "manifest_sha256": "04476ae154f4ba0bf5a3a941aa7b2304cde1af3d9c0f9c4b20a344042f27be33",
+  "graph": {
+    "old_nodes_unchanged": true,
+    "new_nodes": {
+      "mediated_finite_bond_precision_bounded_theorem_note_2026-10-18": {
+        "claim_id": "mediated_finite_bond_precision_bounded_theorem_note_2026-10-18",
+        "claim_type_author_hint": "bounded_theorem",
+        "claim_type_author_hint_raw": "bounded_theorem. Conditional analytical result; no retained audit or native implementation is asserted. This note evaluates the previously checked [complete scalar-bond tolerance interface](MEDIATED_SCALAR_BOND_TOLERANCE_BOUNDED_THEOREM_NOTE_2026-10-17.md) at the exact supplied tuple of the [earlier-window point](MEDIATED_EARLIER_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md). The new calculation keeps the energy dependence through every source, internal-head, background and traveling-output bound. It establishes one nonzero error box rather than leaving an unspecified asymptotic coefficient.",
+        "claim_type_seed_hint": "bounded_theorem",
+        "deps": [
+          "mediated_scalar_bond_tolerance_bounded_theorem_note_2026-10-17",
+          "mediated_earlier_window_bounded_theorem_note_2026-10-17"
+        ],
+        "helper_runner_paths": [],
+        "note_hash": "20ff8d650375aef31b9972bbaba3c9044c94f76cd8fa51d165da5bb991b2d9ba",
+        "path": "docs/MEDIATED_FINITE_BOND_PRECISION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+        "runner_path": null,
+        "title": "An explicit scalar-bond tolerance for complete mediated operation"
+      },
+      "mediated_recovery_residual_bounded_theorem_note_2026-10-18": {
+        "claim_id": "mediated_recovery_residual_bounded_theorem_note_2026-10-18",
+        "claim_type_author_hint": "bounded_theorem",
+        "claim_type_author_hint_raw": "bounded_theorem. Conditional mathematical result with selective, source-exposed analytical checks; no retained audit or native implementation is asserted.",
+        "claim_type_seed_hint": "bounded_theorem",
+        "deps": [
+          "mediated_earlier_window_bounded_theorem_note_2026-10-17",
+          "mediated_finite_point_and_decay_bounded_theorem_note_2026-10-17",
+          "mediated_source_complete_output_bounded_theorem_note_2026-10-17"
+        ],
+        "helper_runner_paths": [],
+        "note_hash": "cd8dec82ddf2d65e6f7e43e4c12990e9623f5c2d7d53eba8483e53b47f8b472d",
+        "path": "docs/MEDIATED_RECOVERY_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+        "runner_path": null,
+        "title": "Static recovery and a smaller complete error allowance for the same mediated apparatus"
+      },
+      "mediated_shorter_chain_bounded_theorem_note_2026-10-18": {
+        "claim_id": "mediated_shorter_chain_bounded_theorem_note_2026-10-18",
+        "claim_type_author_hint": "bounded_theorem",
+        "claim_type_author_hint_raw": "bounded_theorem. Conditional mathematical result with selective, source-exposed checks; no retained audit or native implementation is asserted.",
+        "claim_type_seed_hint": "bounded_theorem",
+        "deps": [
+          "mediated_finite_point_and_decay_bounded_theorem_note_2026-10-17",
+          "mediated_earlier_window_bounded_theorem_note_2026-10-17",
+          "mediated_recovery_residual_bounded_theorem_note_2026-10-18",
+          "mediated_source_complete_output_bounded_theorem_note_2026-10-17"
+        ],
+        "helper_runner_paths": [],
+        "note_hash": "928b61a98c476d241e4ad183d60f5d72c8edbc2429544e74b135afceaf7ba9bf",
+        "path": "docs/MEDIATED_SHORTER_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+        "runner_path": null,
+        "title": "A shorter mediated source with fixed microscopic suppliers"
+      }
+    },
+    "node_count": 7251,
+    "edge_count": 16251,
+    "added_edges": 9
+  },
+  "reviews": {
+    "RESIDUAL_INTEGRATION_REVIEW.md": "52b4094c79eb268b3a4128e0f7d2e758371e052188877266ebc37afc04b2e551",
+    "PRECISION_INTEGRATION_REVIEW.md": "4fd567a002b87e979ba8c5c2dbe93769e1eb3d046cc679c897ae5cdc3c419cc8",
+    "SHORTER_INTEGRATION_REVIEW.md": "62f4fc494668989d1ecaa776a9db911d41f65bf2d80a6d73ee6252bb43d49377"
+  },
+  "post_review_edits": [],
+  "limits": "Analytical theorem/point checks only. No new scientific numerical execution, dynamics/sweep/solver/retained audit; graph and byte checks are bookkeeping. First graph-delta observation occurred before graph process finished and did not pass; this check uses its successful completed output."
+}

@@ -5,5 +5,5 @@ trace_class: upstream_support
 active_route: "Finite-mode correlations and longitudinal volume controls"
 next_milestone: "Track a momentum-resolved excitation branch and its relative correlations"
 independent_check: "Physical-action, sign/wrap mutations, covariance algebra checked by focused reviewer"
-pr_status: "Source checks passed; opening a self-contained positive finite-mode PR"
+pr_status: "Open PR 9828; source checks passed; formal audit and integrated landing checks pending"
 clock: "Direct user-authorized continuation; earlier campaign deadlines remain closed"

@@ -7,3 +7,5 @@ Positive result: finite selected-sector source-visible level with computed nativ
 Next personally driven block: resolve translation eigenvalues and completeness of returned level spaces, then compare momentum-resolved bond spectral weights on geometry families with matching boundaries. Establish a relative-structure observable that separates center-of-mass effects before fitting a length; exploit additional exact symmetries before larger ED. Do not replace this with an imposed radius or a new interaction.
 
 The author PR is self-contained frontier support. Larger MPS/compact-source blocks remain separately preserved. No science merge, formal audit verdict or older campaign restart is authorized here.
+
+Reviewable milestone: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9828 (open against main, no merge). Verified GitHub reports mergeable. App attachment failed because this chat already exceeds its 100-identity attachment limit; the direct PR URL remains usable.

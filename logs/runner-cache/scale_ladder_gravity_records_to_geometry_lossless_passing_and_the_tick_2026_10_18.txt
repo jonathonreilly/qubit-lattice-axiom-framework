@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_records_to_geometry_lossless_passing_and_the_tick_2026_10_18.py
+runner_sha256: ecb49430241bbfeceb2d3096f36b6226333915264929338a7bd45224037ed8d6
+input_fingerprint_sha256: cec3f5a6b9ad7fd7a67b1078117b3bb09d3c98db51239d7d7f20e2357d41c034
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 7.12
+status: ok
+----- stdout -----
+[PASS] L1 one record: lossless averaging and lossless lean-away give the same long-range profile (lean-away = chessboard copy); loss eps screens it, range ~ 1/sqrt(eps)  |lean-away - (-1)^r average| 4e-16; screening range eps=0.03: 2.32, eps=0.01: 4.04 (ratio 1.74, sqrt3 = 1.73)
+[PASS] L2 one rung out: the plain block reading sees averaging and misses lean-away; the chessboard reading does the reverse  plain: average 0.0247, lean-away 6.5e-08; chessboard: average 6.5e-08, lean-away 0.0247
+[PASS] L3 records that drain a fixed pace give additive mass (same 1/r coefficient per record for 1, 19, 33 records); records holding a pace give mass growing with size, not count  drain coefficient per record 0.00524, 0.00524, 0.00524; holding: 1 records -> 0.176, 33 -> 1.022
+[PASS] L4 Kuhn complex: through the least-squares reading a lattice displacement is exactly a continuum gauge change; a conserved source passes the Ward identity, a source appearing with no current fails at O(1)  conserved residual <= 2e-15; current-free source residual >= 0.70
+[PASS] L5 lean-away-in-time at light speed 1 site per tick: one sub-step per tick is unstable; two sub-steps are stable with speed ~1 in all directions  speeds axis 1.000, face 1.050, body 1.050
+[PASS] L6 per-site random clocks (half the sites update each step) stop the wave; coherent random tick lengths carry it at equal speed along axis, face and body  coherent random ticks: speeds 0.988, 0.988, 1.043
+[PASS] L7 delay through a pace well: lapse-only weights give the integral of |Phi|; weights m = a^3/N, k = N a give twice it  lapse-only 6.0, full 12.5, integral |Phi| 6.02
+[PASS] L8 continuous time: the complex two-component first-order rule carries a cone (a third of the weight in 0.6t-1.1t, leakage beyond 1.3 t < 1e-6); the real first-order rule only diffuses (monotone, no front)  complex: share in 0.6t-1.1t 0.32, beyond 1.1t 6.1e-04, beyond 1.3t 9.4e-08
+[PASS] L9 the record cone: certain formation gives a diamond (body/axis ~ 0.58); formation odds 0.05 per tick give a rounder (> 0.85), slower front  body/axis 0.579 (p=1), 0.978 (p=0.05); axis speed 1.00 vs 0.134 sites/tick
+
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

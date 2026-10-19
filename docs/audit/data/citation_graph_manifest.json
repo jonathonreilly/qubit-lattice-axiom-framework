@@ -1,6 +1,6 @@
 {
- "edge_count": 16274,
- "node_count": 7271,
+ "edge_count": 16276,
+ "node_count": 7272,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19812,6 +19812,10 @@
   },
   "scalar_vacuum_metric_inverse_bounded_theorem_note_2026-10-15": {
    "deps_hash": "f8150ff62aac",
+   "out_degree": 2
+  },
+  "scale_ladder_gravity_records_to_geometry_lossless_passing_and_the_tick_bounded_theorem_note_2026-10-18": {
+   "deps_hash": "0d988fd1ac07",
    "out_degree": 2
   },
   "scale_reference_primitive": {

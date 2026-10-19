@@ -1,0 +1,7 @@
+# ROOT sector publication integration
+
+Final SECTOR_NOTE.md SHA256 `26899d180b17ac4d288adefeaabaaeccd270ba10d66f8d4c60d0623cd1739a41`. Full draft6dd61a804bcfd0255962f2529f708bde81acc147f974aeb0cca6b68cfa49a02f read, preserved as DRAFT_SECTOR_NOTE.md. Final changes clarify publication metadata and define X_h=(XX+YY)/2 and A_cell=C+sum P0 a Rminus explicitly. These definitions already occur in the parent proof; no altered bound or hypothesis.
+
+ROOT fully read sourcea94697cf and distinct reviewfeb55d27. The invariant vacuum-plus-one-head domain, positive overlap maximum, external matching norm2cmax, rectangular residual and two code replacements are valid on that sector, including coherent programs/vacuum and arbitrary passive references. All physical outputs and true scalar retained. Exact enabled path has degree-one endpoints and cosine spectrum. The bounded-load family is independent of N at fixed comparison horizon, not a traversal guarantee or arbitrary-occupation improvement. Full occupation theorem is unchanged.
+
+ROOT proposed the sector question; source author and distinct checker share parent-cell ancestry, explicitly recorded. This integration is not a further independent source check. No native law, old processor/algorithm interface, incoming packet preparation, permanent halt or reset is inferred. No scientific program, numerical point, sweep or retained audit was run. Coherent addition to regular PR9697, not a separate milestone count.

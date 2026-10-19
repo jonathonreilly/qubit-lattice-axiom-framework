@@ -42,9 +42,10 @@ drain steps below apply when that end-to-end operation is in scope.
   widened scope merely to turn a row clean.
 
 An explicit long-running request such as "drain", "keep going", or "do not
-stop" is a persistence contract. If the caller explicitly requests a Codex
-goal, create one for the concrete campaign; a goal is optional orchestration,
-not a repair for pipeline state. Keep draining independent work when one row is
+stop" is a persistence contract. If the caller explicitly requests a host
+goal (for example a Codex goal), create one for the concrete campaign when the
+host supports it, and otherwise say so and continue; a goal is optional
+orchestration, not a repair for pipeline state. Keep draining independent work when one row is
 hard, quarantined, forensic-only, or awaiting a panel.
 
 ## Preflight
@@ -233,7 +234,7 @@ For every source-side PR in an authorized review-and-land operation:
    ratification. Never reuse the old
    campaign workdir; its exclusions are intentionally durable.
 
-Limit aggregate Codex concurrency to the measured safe range. Audit seats,
+Limit aggregate model-worker concurrency to the measured safe range. Audit seats,
 science workers, and reviewers share the same pool.
 
 ## Drain loop

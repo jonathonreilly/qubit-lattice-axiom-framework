@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "base_revision": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "manifest_sha256": "a7dbb7ed660442baa0613f061f8a8fba0bbcada6acbfc780bd2625881682cc06",
+  "notes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_PROGRAM_CELL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "1a782eff76f8730d1fd4906b70ea0bd000dd58a630bbc3129c4a1e8ebd9389eb",
+      "bytes": 11834
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/ATTACHMENT_NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_PROGRAM_ATTACHMENT_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "2ae125673d13bc1480d33068e65aacf021dd6c12a504f63a07476baeef63a646",
+      "bytes": 11611
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/NETWORK_NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_PROGRAM_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "5efb9be381ed9247c87987751a492eda3ad8a6022989f5e90d3017c0101899d1",
+      "bytes": 15407
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/SECTOR_NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_PROGRAM_SECTOR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "26899d180b17ac4d288adefeaabaaeccd270ba10d66f8d4c60d0623cd1739a41",
+      "bytes": 11715
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_common_product_publication/TOLERANCE_NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_PROGRAM_TOLERANCE_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "c6d88f1612dfbfd3868172f79a911e999d7cfc8bc6caac18eee5373a3d932a6c",
+      "bytes": 7772
+    }
+  ],
+  "files": 15,
+  "provenance": 5,
+  "links": 18,
+  "nodes": 7249,
+  "edges": 16243,
+  "added_nodes": [
+    "common_product_program_attachment_bounded_theorem_note_2026-10-18",
+    "common_product_program_cell_bounded_theorem_note_2026-10-18",
+    "common_product_program_chain_bounded_theorem_note_2026-10-18",
+    "common_product_program_sector_bounded_theorem_note_2026-10-18",
+    "common_product_program_tolerance_bounded_theorem_note_2026-10-18"
+  ],
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical installed source/provenance/link/topology checks only; analytical checks are separately pinned. No scientific program or retained audit."
+}

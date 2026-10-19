@@ -7,9 +7,9 @@ Required for every review and affected-fix confirmation. Apply every lens whose 
 On each iteration, set `files_to_review` to the files that changed since their
 last clean review. On iteration 1, use all original changed files.
 
-Apply the relevant lenses in the default single Astra-low unit review.
+Apply the relevant lenses in the default single fast-reviewer unit review.
 Record their material conclusions in the concise unit report. Use an extra
-Astra-xhigh seat only for the unresolved question that needs it. The lens
+strongest-configured-reviewer seat only for the unresolved question that needs it. The lens
 names below identify responsibilities, not mandatory separate workers or
 standalone reports. When independent agents are unavailable, report that
 limitation; an author's self-review is not independent confirmation.

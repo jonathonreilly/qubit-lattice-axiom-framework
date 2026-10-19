@@ -16,5 +16,5 @@ token_policy: >
   Orchestrator stays lean: workers return <=600-word summaries + artifact paths;
   full derivations/logs live in pack files; one independent checker per load-bearing result.
 cycle: 1
-active_route: 02:50Z — ready: C1(inconclusive) C2 C3 C3b C4 C4b C4c C5 C5b C6 C7 C8; running: C1b (worm/loop QMC), C4d (non-commuting-layer pair transport); synthesis in RESULTS.md
-next_action: review C1b/C4d on return; then final PR_BACKLOG body + HANDOFF; stop on quality exhaustion if no high-value target remains
+active_route: 08:55Z — ready: C1/C1b (inconclusive) C2 C3 C3b C4 C4b C4c C4d C4e C4f C5 C5b C6 C7 C8; running: C9 (full-soldering SU(2) pair motion), C1c (long QMC production, ends 17:30Z)
+next_action: review C9 on return; final packaging (HANDOFF.md, PR_BACKLOG.md) from ~16:30Z; fold C1c into results; stop 18:36Z

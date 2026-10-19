@@ -197,7 +197,20 @@ limit. The full table is in `logs/c8_report.log`.
 ambiguous, and ρ(f) diverges at f = −1, so the generator coupling is singular there. I
 computed only θ > 0, where U(X) = −U(0) gives π-modes at quasienergy π − θ. The partition-of-unity
 balls are at Γ and at the three X points.
-GOLD_TABLE_PLACEHOLDER
+| θ | zA | zB | fA | fB | dA | c_G^iso (×10⁻³) |
+|---|---|---|---|---|---|---|
+| 0.4 | 14.695 | 14.332 | 11.217 | 11.535 | 10.199 | 11.970 |
+| 0.2 | 23.777 | 22.937 | 15.049 | 15.404 | 12.298 | 16.797 |
+| 0.1 | 36.218 | 34.704 | 20.097 | 20.077 | 14.714 | 23.098 |
+| 0.05 | 48.265 | 46.177 | 24.882 | 24.313 | 16.834 | 29.065 |
+
+(entries ×10⁻³; certificates ≤ 1×10⁻⁷ absolute). c_G^iso **does not converge as θ → 0**. Each
+halving of θ adds 4.8, 6.3 and 6.0 (×10⁻³), consistent with logarithmic growth, about
+0.009 ln(1/θ) (an empirical description, not proved). The q-axis channels grow fastest. The
+origin is that the vertex ρ g of M1 is ~π/θ near X: the exact generator becomes singular at the
+massless π-modes. **So M1 has no θ → 0 limit at b_gold, and the light-speed member gives no
+finite Sakharov coefficient under this coupling.** At fixed θ the values are positive, and
+their size is set by θ, not by the Γ cone.
 
 ## 6. Comparison with the continuum (replacing the cutoff import)
 

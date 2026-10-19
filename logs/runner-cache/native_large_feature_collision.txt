@@ -1,0 +1,291 @@
+===== runner cache v1 =====
+runner: scripts/native_large_feature_collision.py
+runner_sha256: ada4641ed9385b79c03e8dcb12505158e41099d0c69369bcaa93714b29bba831
+input_fingerprint_sha256: 988888c92161c56ae009bbaf807f8aa14ac2dc4a1f574c624a3e0c0d1461bba5
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.69
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_large_feature_collision-yze6klkp
+{
+  "b": "[0.234756900926999999999999999999999999999999774, 0.234756900927100000000000000000000000000002607]",
+  "vx": "[0.490689489105028048677578758870801859825520626, 0.490689489106899942745453442671189915877355604]",
+  "vy": "[0.871334508257515303614477979957126540464258935, 0.871334508258160332987449592582656140215720586]",
+  "A": "[0.511039634699002350635435331776081723426754076, 0.511039634700284191139871224681979502617363068]",
+  "M": "[1.33968390069267263828472487659851968574486911, 1.33968390069494491088068861366754775500601033]",
+  "C": "[83.7430853217184592233046520866091555856718049, 83.7430853229641820624039277914671498562136481]",
+  "lower": "[2.58914383410619537591320098137898814915341194, 2.58914383569969638009204301074209604503844051]",
+  "imaginary": "[-0.000000000634269336793238535584358702725810307369147418, 0.000000000634269336793238535584358702725993978361463401]"
+}
+[PASS] child:neutral_large_collision_interval.py
+{
+  "general_native_identity_cases": 400,
+  "general_native_identity_max_error": 6.4047456679787536e-15,
+  "permanent_factorization_error": 4.14314051144892e-14,
+  "ray_amplitudes": "independent complex values for both x/y edges; pair amplitudes arbitrary complex finite support"
+}
+[PASS] child:neutral_general_contact_control.py
+{
+  "cases": 710,
+  "max_error": 5.329070518200751e-15,
+  "nonzero_residual_cases": 168,
+  "six_spin_example": {
+    "S": [
+      [
+        -2,
+        -1,
+        0
+      ],
+      [
+        -2,
+        0,
+        0
+      ],
+      [
+        -2,
+        1,
+        0
+      ],
+      [
+        -2,
+        2,
+        0
+      ]
+    ],
+    "direct_residual": -3.552713678800501e-15,
+    "target": 0.0,
+    "parts": {
+      "4": -11.313708498984763,
+      "6": -5.656854249492381,
+      "2": 0.0
+    },
+    "wave": 2.0,
+    "active": [
+      [
+        0,
+        [
+          [
+            -3,
+            0,
+            0
+          ],
+          [
+            -2,
+            0,
+            0
+          ]
+        ],
+        4,
+        -1.4142135623730951
+      ],
+      [
+        0,
+        [
+          [
+            -2,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        4,
+        -1.4142135623730951
+      ],
+      [
+        0,
+        [
+          [
+            -3,
+            -1,
+            0
+          ],
+          [
+            -2,
+            -1,
+            0
+          ]
+        ],
+        4,
+        -1.4142135623730951
+      ],
+      [
+        0,
+        [
+          [
+            -3,
+            1,
+            0
+          ],
+          [
+            -2,
+            1,
+            0
+          ]
+        ],
+        4,
+        -1.4142135623730951
+      ],
+      [
+        0,
+        [
+          [
+            -2,
+            1,
+            0
+          ],
+          [
+            -1,
+            1,
+            0
+          ]
+        ],
+        4,
+        -1.4142135623730951
+      ],
+      [
+        1,
+        [
+          [
+            -2,
+            -1,
+            1
+          ],
+          [
+            -2,
+            0,
+            1
+          ]
+        ],
+        6,
+        -1.4142135623730951
+      ],
+      [
+        1,
+        [
+          [
+            -2,
+            1,
+            -1
+          ],
+          [
+            -2,
+            2,
+            -1
+          ]
+        ],
+        6,
+        -1.4142135623730951
+      ],
+      [
+        0,
+        [
+          [
+            -2,
+            -1,
+            0
+          ],
+          [
+            -1,
+            -1,
+            0
+          ]
+        ],
+        4,
+        -1.4142135623730951
+      ],
+      [
+        1,
+        [
+          [
+            -2,
+            -1,
+            -1
+          ],
+          [
+            -2,
+            0,
+            -1
+          ]
+        ],
+        6,
+        -1.4142135623730951
+      ],
+      [
+        0,
+        [
+          [
+            -2,
+            2,
+            0
+          ],
+          [
+            -1,
+            2,
+            0
+          ]
+        ],
+        4,
+        -1.4142135623730951
+      ],
+      [
+        1,
+        [
+          [
+            -2,
+            1,
+            1
+          ],
+          [
+            -2,
+            2,
+            1
+          ]
+        ],
+        6,
+        -1.4142135623730951
+      ],
+      [
+        0,
+        [
+          [
+            -3,
+            2,
+            0
+          ],
+          [
+            -2,
+            2,
+            0
+          ]
+        ],
+        4,
+        -1.4142135623730951
+      ]
+    ]
+  }
+}
+[PASS] child:neutral_fourbody_physical_control.py
+{"L": 64, "v": [0.4906894891059937, 0.871334508257821], "A": 0.5110396346996785, "theta": 1.304974012871007, "convolutions": {"0": -1.0573510427480646, "1": -0.2175237599016649, "-1": -0.2175237599016649}, "kernel_over_u2": [51.081953096229576, 4.440892098500626e-16]}
+{"L": 128, "v": [0.4906894891059937, 0.871334508257821], "A": 0.5110396346996785, "theta": 1.304974012871007, "convolutions": {"0": -1.0570531518814459, "1": -0.21758658001032977, "-1": -0.2175865800103298}, "kernel_over_u2": [51.06089459882577, -4.440892098500626e-16]}
+{"L": 256, "v": [0.4906894891059937, 0.871334508257821], "A": 0.5110396346996785, "theta": 1.304974012871007, "convolutions": {"0": -1.0569788647383618, "1": -0.21756339691852716, "-1": -0.21756339691852716}, "kernel_over_u2": [51.05410808337832, 2.220446049250313e-15]}
+{"L": 512, "v": [0.4906894891059937, 0.871334508257821], "A": 0.5110396346996785, "theta": 1.304974012871007, "convolutions": {"0": -1.0569603044316254, "1": -0.21756308737728303, "-1": -0.21756308737728303}, "kernel_over_u2": [51.052629134839414, -8.881784197001252e-16]}
+{"L": 1024, "v": [0.4906894891059937, 0.871334508257821], "A": 0.5110396346996785, "theta": 1.304974012871007, "convolutions": {"0": -1.0569556650705598, "1": -0.21756276017326617, "-1": -0.21756276017326615}, "kernel_over_u2": [51.0522495833642, -4.440892098500626e-16]}
+[PASS] child:neutral_large_collision_quadrature.py
+{"status": "bounded-support", "checks": {"neutral_large_collision_interval.py": "completed; child stdout/stderr streamed into owning capture", "neutral_general_contact_control.py": "completed; child stdout/stderr streamed into owning capture", "neutral_fourbody_physical_control.py": "completed; child stdout/stderr streamed into owning capture", "neutral_large_collision_quadrature.py": "completed; child stdout/stderr streamed into owning capture"}, "scope": "Native coefficient contact/Born numerator for large neutral features; no exact four-body S, lifetime, actual-H linewidth or observation test"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_large_feature_collision-yze6klkp/outputs/native_large_feature_collision/result.json sha256=09588b7fc1cf79b77cc986f59c0489e197c4219c4b07871d966ecb6d7befb54a
+{"checks": {"neutral_fourbody_physical_control.py": "completed; child stdout/stderr streamed into owning capture", "neutral_general_contact_control.py": "completed; child stdout/stderr streamed into owning capture", "neutral_large_collision_interval.py": "completed; child stdout/stderr streamed into owning capture", "neutral_large_collision_quadrature.py": "completed; child stdout/stderr streamed into owning capture"}, "scope": "Native coefficient contact/Born numerator for large neutral features; no exact four-body S, lifetime, actual-H linewidth or observation test", "status": "bounded-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; no microscopic pole, universal force or empirical identification is established.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_large_feature_collision-yze6klkp elapsed_seconds= 0.5996862091124058
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,72 @@
+{
+  "method": "fresh independent exact integer ordered free action versus unordered full physical spin-exchange action on actual Z3, j=1; no finite torus",
+  "results": [
+    {
+      "n": 1,
+      "ordered_seed_norm_squared": 2,
+      "physical_integer_seed_norm_squared": 2,
+      "checks": [
+        {
+          "power": 0,
+          "ordered_support": 2,
+          "physical_support": 2
+        },
+        {
+          "power": 1,
+          "ordered_support": 12,
+          "physical_support": 12
+        },
+        {
+          "power": 2,
+          "ordered_support": 38,
+          "physical_support": 38
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "ordered_seed_norm_squared": 16,
+      "physical_integer_seed_norm_squared": 8,
+      "checks": [
+        {
+          "power": 0,
+          "ordered_support": 16,
+          "physical_support": 8
+        },
+        {
+          "power": 1,
+          "ordered_support": 128,
+          "physical_support": 64
+        },
+        {
+          "power": 2,
+          "ordered_support": 592,
+          "physical_support": 296
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "ordered_seed_norm_squared": 288,
+      "physical_integer_seed_norm_squared": 48,
+      "checks": [
+        {
+          "power": 0,
+          "ordered_support": 288,
+          "physical_support": 48
+        },
+        {
+          "power": 1,
+          "ordered_support": 2880,
+          "physical_support": 480
+        },
+        {
+          "power": 2,
+          "ordered_support": 15840,
+          "physical_support": 2640
+        }
+      ]
+    }
+  ],
+  "scope": "finite-support controls through H^2; written proof carries all finite n and all times"
+}

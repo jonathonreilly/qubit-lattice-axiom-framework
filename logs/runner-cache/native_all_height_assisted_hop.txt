@@ -1,0 +1,142 @@
+===== runner cache v1 =====
+runner: scripts/native_all_height_assisted_hop.py
+runner_sha256: 83cb577722308ce96f5403fec858fddc161262445e53f1b5367f6a8d390ea013
+input_fingerprint_sha256: 537b5d1ffc6a20a8be1e04aa211aabf82dff28f165f23361ce3b9bcd95a92805
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_all_height_assisted_hop-vzgin77i
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_all_height_assisted_hop-vzgin77i/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_complementary_all_length.py']
+[
+  {
+    "L": 2,
+    "amplitude": "1",
+    "scaled": "1"
+  },
+  {
+    "L": 3,
+    "amplitude": "1/2",
+    "scaled": "1"
+  },
+  {
+    "L": 4,
+    "amplitude": "1/4",
+    "scaled": "1"
+  },
+  {
+    "L": 5,
+    "amplitude": "1/8",
+    "scaled": "1"
+  },
+  {
+    "L": 6,
+    "amplitude": "1/16",
+    "scaled": "1"
+  },
+  {
+    "L": 7,
+    "amplitude": "1/32",
+    "scaled": "1"
+  },
+  {
+    "L": 8,
+    "amplitude": "1/64",
+    "scaled": "1"
+  },
+  {
+    "L": 9,
+    "amplitude": "1/128",
+    "scaled": "1"
+  },
+  {
+    "L": 10,
+    "amplitude": "1/256",
+    "scaled": "1"
+  },
+  {
+    "L": 11,
+    "amplitude": "1/512",
+    "scaled": "1"
+  },
+  {
+    "L": 12,
+    "amplitude": "1/1024",
+    "scaled": "1"
+  },
+  {
+    "L": 13,
+    "amplitude": "1/2048",
+    "scaled": "1"
+  },
+  {
+    "L": 14,
+    "amplitude": "1/4096",
+    "scaled": "1"
+  },
+  {
+    "L": 15,
+    "amplitude": "1/8192",
+    "scaled": "1"
+  }
+]
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_all_height_assisted_hop-vzgin77i/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_complementary_all_length.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_all_height_assisted_hop-vzgin77i/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_complementary_all_length.py']
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_all_height_assisted_hop-vzgin77i/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_third_height_symbolic.py', '6', '6']
+{
+  "status": "pass",
+  "all_background_symbolic": true,
+  "rows": [
+    {
+      "axis": "x",
+      "background_changed": false,
+      "result": {
+        "0": "1/8"
+      },
+      "raw": {
+        "0": "-443/64",
+        "195": "1/64",
+        "2145": "1/64"
+      },
+      "fold": {
+        "0": "-451/64",
+        "195": "1/64",
+        "2145": "1/64"
+      }
+    },
+    {
+      "axis": "y",
+      "background_changed": false,
+      "result": {
+        "3": "1/8"
+      },
+      "raw": {
+        "3": "-443/64",
+        "192": "1/64",
+        "3221225472": "1/64"
+      },
+      "fold": {
+        "3": "-451/64",
+        "192": "1/64",
+        "3221225472": "1/64"
+      }
+    }
+  ]
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_all_height_assisted_hop-vzgin77i/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_third_height_symbolic.py', '6', '6']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_all_height_assisted_hop-vzgin77i/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_third_height_symbolic.py', '6', '6']
+[PASS] P9796:C001
+{"status": "conditional-support", "controls": {"neutral_complementary_all_length.py": [{"L": 2, "amplitude": "1", "scaled": "1"}, {"L": 3, "amplitude": "1/2", "scaled": "1"}, {"L": 4, "amplitude": "1/4", "scaled": "1"}, {"L": 5, "amplitude": "1/8", "scaled": "1"}, {"L": 6, "amplitude": "1/16", "scaled": "1"}, {"L": 7, "amplitude": "1/32", "scaled": "1"}, {"L": 8, "amplitude": "1/64", "scaled": "1"}, {"L": 9, "amplitude": "1/128", "scaled": "1"}, {"L": 10, "amplitude": "1/256", "scaled": "1"}, {"L": 11, "amplitude": "1/512", "scaled": "1"}, {"L": 12, "amplitude": "1/1024", "scaled": "1"}, {"L": 13, "amplitude": "1/2048", "scaled": "1"}, {"L": 14, "amplitude": "1/4096", "scaled": "1"}, {"L": 15, "amplitude": "1/8192", "scaled": "1"}], "neutral_third_height_symbolic.py": {"status": "pass", "all_background_symbolic": true, "rows": [{"axis": "x", "background_changed": false, "result": {"0": "1/8"}, "raw": {"0": "-443/64", "195": "1/64", "2145": "1/64"}, "fold": {"0": "-451/64", "195": "1/64", "2145": "1/64"}}, {"axis": "y", "background_changed": false, "result": {"3": "1/8"}, "raw": {"3": "-443/64", "192": "1/64", "3221225472": "1/64"}, "fold": {"3": "-451/64", "192": "1/64", "3221225472": "1/64"}}]}}, "scope": "Fixed-height canonical prepared background vertex; no empirical scalar or hierarchy selection"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_all_height_assisted_hop-vzgin77i/outputs/native_all_height_assisted_hop/result.json sha256=741c42330f4f3204e08334d80d687db04a58e26402f776a5694562e722c9a886
+{"controls": {"neutral_complementary_all_length.py": [{"L": 2, "amplitude": "1", "scaled": "1"}, {"L": 3, "amplitude": "1/2", "scaled": "1"}, {"L": 4, "amplitude": "1/4", "scaled": "1"}, {"L": 5, "amplitude": "1/8", "scaled": "1"}, {"L": 6, "amplitude": "1/16", "scaled": "1"}, {"L": 7, "amplitude": "1/32", "scaled": "1"}, {"L": 8, "amplitude": "1/64", "scaled": "1"}, {"L": 9, "amplitude": "1/128", "scaled": "1"}, {"L": 10, "amplitude": "1/256", "scaled": "1"}, {"L": 11, "amplitude": "1/512", "scaled": "1"}, {"L": 12, "amplitude": "1/1024", "scaled": "1"}, {"L": 13, "amplitude": "1/2048", "scaled": "1"}, {"L": 14, "amplitude": "1/4096", "scaled": "1"}, {"L": 15, "amplitude": "1/8192", "scaled": "1"}], "neutral_third_height_symbolic.py": {"all_background_symbolic": true, "rows": [{"axis": "x", "background_changed": false, "fold": {"0": "-451/64", "195": "1/64", "2145": "1/64"}, "raw": {"0": "-443/64", "195": "1/64", "2145": "1/64"}, "result": {"0": "1/8"}}, {"axis": "y", "background_changed": false, "fold": {"192": "1/64", "3": "-451/64", "3221225472": "1/64"}, "raw": {"192": "1/64", "3": "-443/64", "3221225472": "1/64"}, "result": {"3": "1/8"}}], "status": "pass"}}, "scope": "Fixed-height canonical prepared background vertex; no empirical scalar or hierarchy selection", "status": "conditional-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_all_height_assisted_hop-vzgin77i elapsed_seconds= 0.3211448327638209
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

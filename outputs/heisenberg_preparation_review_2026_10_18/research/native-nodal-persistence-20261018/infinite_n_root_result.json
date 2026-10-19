@@ -1,0 +1,27 @@
+{
+  "fixtures": [
+    {
+      "n": 1,
+      "ordered_seed_terms": 2,
+      "physical_seed_terms": 2,
+      "physical_second_action_terms": 38,
+      "exact_intertwining_two_actions": true
+    },
+    {
+      "n": 2,
+      "ordered_seed_terms": 16,
+      "physical_seed_terms": 8,
+      "physical_second_action_terms": 296,
+      "exact_intertwining_two_actions": true
+    },
+    {
+      "n": 3,
+      "ordered_seed_terms": 288,
+      "physical_seed_terms": 48,
+      "physical_second_action_terms": 2640,
+      "exact_intertwining_two_actions": true
+    }
+  ],
+  "method": "ordered coordinate determinants versus independent unordered hard-core full spin action on actual Z3; exact integers",
+  "scope": "n=1,2,3 finite-support witnesses, no finite-volume boundary"
+}

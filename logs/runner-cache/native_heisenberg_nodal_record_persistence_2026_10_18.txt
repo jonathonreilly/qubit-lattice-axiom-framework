@@ -1,0 +1,145 @@
+===== runner cache v1 =====
+runner: scripts/native_heisenberg_nodal_record_persistence_2026_10_18.py
+runner_sha256: cbb0cbc24ab01649c3ee7615d3170d886376f478046632a0ac171c7424a66d08
+input_fingerprint_sha256: 8ba16a09548f30aa23df44f39bb49cb5bf28a8dfe8e9fab40db3ba5b346c5916
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_heisenberg_nodal_record_persistence_2026_10_18-g0_gv680
+START_CONTROL_GROUP one excitation L=4
+PASS_CONTROL_GROUP one excitation L=4
+START_CONTROL_GROUP one excitation L=6
+PASS_CONTROL_GROUP one excitation L=6
+START_CONTROL_GROUP one excitation L=8
+PASS_CONTROL_GROUP one excitation L=8
+START_CONTROL_GROUP two excitations L,M=(6, 3)
+PASS_CONTROL_GROUP two excitations L,M=(6, 3)
+START_CONTROL_GROUP two excitations L,M=(8, 4)
+PASS_CONTROL_GROUP two excitations L,M=(8, 4)
+START_CONTROL_GROUP two excitations L,M=(10, 3)
+PASS_CONTROL_GROUP two excitations L,M=(10, 3)
+START_CONTROL_GROUP actual-Z3 n=1,2,3 two-action fixtures
+PASS_CONTROL_GROUP actual-Z3 n=1,2,3 two-action fixtures
+{
+  "kind": "conditional exact finite controls; no audit verdict",
+  "python": "3.12.8",
+  "inputs": {
+    "scripts/native_heisenberg_nodal_controls.py": "f9001f6ae4bad5f0a88c4ae9293f0207582dccf4eedaa4a2f93bd6fe1924b400",
+    "scripts/native_heisenberg_many_particle_controls.py": "f5bea2f261d8662875c87ea82458a039da88f8f46a8d8ea64b1e6a03b6f4b4e8",
+    "docs/NATIVE_HEISENBERG_NODAL_RECORD_PERSISTENCE_BOUNDED_THEOREM_NOTE_2026-10-18.md": "59258f9e0b5a640738dfc8b6e5b2c00bd546f6d80a686b024d739b0cae0fac8d"
+  },
+  "one_excitation": [
+    {
+      "shape": [
+        4,
+        3,
+        3
+      ],
+      "sites": 36,
+      "edges": 108,
+      "one_excitation_columns_checked": 9,
+      "normalized_two_excitation_leakage_square": 16.0,
+      "two_excitation_nonzero_leaked_configurations": 8,
+      "vacuum_H_zero": true
+    },
+    {
+      "shape": [
+        6,
+        3,
+        3
+      ],
+      "sites": 54,
+      "edges": 162,
+      "one_excitation_columns_checked": 18,
+      "normalized_two_excitation_leakage_square": 8.0,
+      "two_excitation_nonzero_leaked_configurations": 4,
+      "vacuum_H_zero": true
+    },
+    {
+      "shape": [
+        8,
+        3,
+        3
+      ],
+      "sites": 72,
+      "edges": 216,
+      "one_excitation_columns_checked": 27,
+      "normalized_two_excitation_leakage_square": 8.0,
+      "two_excitation_nonzero_leaked_configurations": 4,
+      "vacuum_H_zero": true
+    }
+  ],
+  "two_excitation": [
+    {
+      "adjacent_second_action_leak_squared": 256.0,
+      "shape": [
+        4,
+        6,
+        3
+      ],
+      "edges": 216,
+      "independent_columns": 9,
+      "integer_intertwining_verified": true,
+      "unstaggered_control_rejected": true
+    },
+    {
+      "adjacent_second_action_leak_squared": 256.0,
+      "shape": [
+        4,
+        8,
+        4
+      ],
+      "edges": 384,
+      "independent_columns": 16,
+      "integer_intertwining_verified": true,
+      "unstaggered_control_rejected": true
+    },
+    {
+      "adjacent_second_action_leak_squared": 256.0,
+      "shape": [
+        4,
+        10,
+        3
+      ],
+      "edges": 360,
+      "independent_columns": 9,
+      "integer_intertwining_verified": true,
+      "unstaggered_control_rejected": true
+    }
+  ],
+  "actual_Z3_finite_support": [
+    {
+      "n": 1,
+      "physical_seed_terms": 2,
+      "physical_second_action_terms": 38,
+      "exact_intertwining_two_actions": true
+    },
+    {
+      "n": 2,
+      "physical_seed_terms": 8,
+      "physical_second_action_terms": 296,
+      "exact_intertwining_two_actions": true
+    },
+    {
+      "n": 3,
+      "physical_seed_terms": 48,
+      "physical_second_action_terms": 2640,
+      "exact_intertwining_two_actions": true
+    }
+  ],
+  "scope": "Full-spin integer intertwining, normalization and preserved failed controls. Infinite-volume self-adjointness and arbitrary-size statements require the note proofs. No physical preparation, Record formation or Hamiltonian selection derived."
+}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_heisenberg_nodal_record_persistence_2026_10_18-g0_gv680/outputs/native_heisenberg_nodal_record_persistence_2026_10_18.json sha256=defa1b1ff3cce36ca4ffe4426ce6a57ed69fe13ce15128f1c22ce5de46655161
+{"actual_Z3_finite_support": [{"exact_intertwining_two_actions": true, "n": 1, "physical_second_action_terms": 38, "physical_seed_terms": 2}, {"exact_intertwining_two_actions": true, "n": 2, "physical_second_action_terms": 296, "physical_seed_terms": 8}, {"exact_intertwining_two_actions": true, "n": 3, "physical_second_action_terms": 2640, "physical_seed_terms": 48}], "inputs": {"docs/NATIVE_HEISENBERG_NODAL_RECORD_PERSISTENCE_BOUNDED_THEOREM_NOTE_2026-10-18.md": "59258f9e0b5a640738dfc8b6e5b2c00bd546f6d80a686b024d739b0cae0fac8d", "scripts/native_heisenberg_many_particle_controls.py": "f5bea2f261d8662875c87ea82458a039da88f8f46a8d8ea64b1e6a03b6f4b4e8", "scripts/native_heisenberg_nodal_controls.py": "f9001f6ae4bad5f0a88c4ae9293f0207582dccf4eedaa4a2f93bd6fe1924b400"}, "kind": "conditional exact finite controls; no audit verdict", "one_excitation": [{"edges": 108, "normalized_two_excitation_leakage_square": 16.0, "one_excitation_columns_checked": 9, "shape": [4, 3, 3], "sites": 36, "two_excitation_nonzero_leaked_configurations": 8, "vacuum_H_zero": true}, {"edges": 162, "normalized_two_excitation_leakage_square": 8.0, "one_excitation_columns_checked": 18, "shape": [6, 3, 3], "sites": 54, "two_excitation_nonzero_leaked_configurations": 4, "vacuum_H_zero": true}, {"edges": 216, "normalized_two_excitation_leakage_square": 8.0, "one_excitation_columns_checked": 27, "shape": [8, 3, 3], "sites": 72, "two_excitation_nonzero_leaked_configurations": 4, "vacuum_H_zero": true}], "python": "3.12.8", "scope": "Full-spin integer intertwining, normalization and preserved failed controls. Infinite-volume self-adjointness and arbitrary-size statements require the note proofs. No physical preparation, Record formation or Hamiltonian selection derived.", "two_excitation": [{"adjacent_second_action_leak_squared": 256.0, "edges": 216, "independent_columns": 9, "integer_intertwining_verified": true, "shape": [4, 6, 3], "unstaggered_control_rejected": true}, {"adjacent_second_action_leak_squared": 256.0, "edges": 384, "independent_columns": 16, "integer_intertwining_verified": true, "shape": [4, 8, 4], "unstaggered_control_rejected": true}, {"adjacent_second_action_leak_squared": 256.0, "edges": 360, "independent_columns": 9, "integer_intertwining_verified": true, "shape": [4, 10, 3], "unstaggered_control_rejected": true}]}
+per_element: exact spin matrix elements, normalization and finite full-generator identities execute; historical research results are not fresh controls.
+per_site: finite full-spin graphs and actual-Z3 finite-support actions are distinct fixtures; no full infinite-lattice computation is inferred.
+per_mode: the supplied nodal sectors and encoded inputs are tested; spectral completeness and arbitrary-density state claims are not executed.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: all-time nodal persistence and countable complete-channel convergence are analytic proofs under supplied H, representation and instrument; finite controls do not supply physical Records.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_heisenberg_nodal_record_persistence_2026_10_18-g0_gv680 elapsed_seconds= 0.15018729213625193
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

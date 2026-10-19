@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/native_constituent_scattering.py
+runner_sha256: eb502d9d5b9f58234fcca0a9d5531cf92450ddf11249a6775491660418d93cbe
+input_fingerprint_sha256: 988888c92161c56ae009bbaf807f8aa14ac2dc4a1f574c624a3e0c0d1461bba5
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 8.68
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_constituent_scattering-ze6t9nsj
+{
+  "cases": 9,
+  "max_error": 2.1354700489025015e-14,
+  "scope": "Finite coefficient graph resolvent identity; 100 host sites and two length8 rays, not physical-spin ED"
+}
+[PASS] child:neutral_scattering_resolvent_control.py
+{"b": 0.1, "delta": 0.014667681500123368, "t": [1.0073392077035144, -2.2973850754043688], "target": [1.0309252886440272, -2.2208844389768903], "relative_error": 0.03269518704436313, "rank_reduction_error": 0.0023787685061194786}
+{"b": 0.1, "delta": 0.014667681500123368, "t": [-0.11296629738333679, -2.6976007638209536], "target": [-0.0010380810817532365, -2.57070165930169], "relative_error": 0.06582166800674805, "rank_reduction_error": 0.010062953710180123}
+{"b": 0.1, "delta": 0.014667681500123368, "t": [-1.284710028937211, -2.3821473662330472], "target": [-0.9406807219893948, -2.1231507342668676], "relative_error": 0.18543651557697793, "rank_reduction_error": 0.03553285809521665}
+{"b": 0.15, "delta": 0.0002743339111765634, "t": [1.2617088924885669, -2.7223334100239946], "target": [1.262620460054666, -2.720016826590333], "relative_error": 0.0008301635603233605, "rank_reduction_error": 0.00010892008919597205}
+{"b": 0.15, "delta": 0.0002743339111765634, "t": [-0.004994536431049846, -3.1515218780248744], "target": [-0.0012713844809659092, -3.1484536731075927], "relative_error": 0.0015323374760839107, "rank_reduction_error": 0.0004575195963024608}
+{"b": 0.15, "delta": 0.0002743339111765634, "t": [-1.161696286881704, -2.60438614730956], "target": [-1.1520938898734485, -2.600317972984633], "relative_error": 0.0036667393329196593, "rank_reduction_error": 0.0016541354637855201}
+{"b": 0.18, "delta": 6.468264699436965e-07, "t": [1.3831269647416198, -2.97963863750102], "target": [1.3831314150789822, -2.979629145434286], "relative_error": 3.1913370428306015e-06, "rank_reduction_error": 4.743125036889293e-07}
+{"b": 0.18, "delta": 6.468264699436965e-07, "t": [-0.0014091727156497944, -3.4489683583546444], "target": [-0.0013927319189740522, -3.44895819604205], "relative_error": 5.604016704007766e-06, "rank_reduction_error": 1.9919431769713044e-06}
+{"b": 0.18, "delta": 6.468264699436965e-07, "t": [-1.2620929988153178, -2.84851255609379], "target": [-1.2620556236951208, -2.848505620979585], "relative_error": 1.2201013151279074e-05, "rank_reduction_error": 7.1975848052561345e-06}
+[PASS] child:neutral_scattering_control.py
+{"status": "bounded-support", "checks": {"neutral_scattering_resolvent_control.py": "completed; child stdout/stderr streamed into owning capture", "neutral_scattering_control.py": "completed; child stdout/stderr streamed into owning capture"}, "scope": "Native coefficient constituent scattering; broadened development controls, not full-H asymptotic scattering or empirical tests"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_constituent_scattering-ze6t9nsj/outputs/native_constituent_scattering/result.json sha256=0507f602144c28771c308a4a1eabff32cbd9d2fae0eec1faf937b4bbef308dae
+{"checks": {"neutral_scattering_control.py": "completed; child stdout/stderr streamed into owning capture", "neutral_scattering_resolvent_control.py": "completed; child stdout/stderr streamed into owning capture"}, "scope": "Native coefficient constituent scattering; broadened development controls, not full-H asymptotic scattering or empirical tests", "status": "bounded-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; no microscopic pole, universal force or empirical identification is established.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_constituent_scattering-ze6t9nsj elapsed_seconds= 8.616535666864365
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

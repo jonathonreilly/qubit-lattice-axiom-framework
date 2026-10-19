@@ -1,0 +1,51 @@
+{
+  "method": "exact integer literal Pauli exchange and diagonal action, E0 subtracted only for computation, J=1",
+  "scope": "same-author controls; arbitrary-size statement rests on written proof",
+  "results": [
+    {
+      "shape": [
+        4,
+        6,
+        3
+      ],
+      "vertices": 72,
+      "edges": 216,
+      "code_dimension": 9,
+      "column_norm_squared": 24,
+      "exact_full_spin_intertwining": true,
+      "nonstationary_code": true,
+      "adjacent_singlet_first_record_leakage": 0,
+      "adjacent_singlet_second_action_record_leakage_norm_squared_normalized": 256.0
+    },
+    {
+      "shape": [
+        4,
+        8,
+        4
+      ],
+      "vertices": 128,
+      "edges": 384,
+      "code_dimension": 16,
+      "column_norm_squared": 32,
+      "exact_full_spin_intertwining": true,
+      "nonstationary_code": true,
+      "adjacent_singlet_first_record_leakage": 0,
+      "adjacent_singlet_second_action_record_leakage_norm_squared_normalized": 256.0
+    },
+    {
+      "shape": [
+        4,
+        10,
+        3
+      ],
+      "vertices": 120,
+      "edges": 360,
+      "code_dimension": 9,
+      "column_norm_squared": 40,
+      "exact_full_spin_intertwining": true,
+      "nonstationary_code": true,
+      "adjacent_singlet_first_record_leakage": 0,
+      "adjacent_singlet_second_action_record_leakage_norm_squared_normalized": 256.0
+    }
+  ]
+}

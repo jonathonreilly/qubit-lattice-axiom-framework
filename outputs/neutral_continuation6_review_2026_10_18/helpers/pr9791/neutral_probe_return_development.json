@@ -1,0 +1,41 @@
+{
+  "R": 5,
+  "dimension": 1638400,
+  "loop_identity_residual": 2.22610255929076e-15,
+  "local_loop_variance": 3.98605710800684,
+  "time_controls": [
+    {
+      "tau": 0.1,
+      "inelastic_return_probability": 2.7378985506413516e-10,
+      "leading_probability": 2.7680952138936407e-10,
+      "amplitude_error": 9.195143611734284e-08,
+      "error_div_tau6": 0.09195143611734281,
+      "series_tail_bound": 1.0828589667780268e-35
+    },
+    {
+      "tau": 0.2,
+      "inelastic_return_probability": 6.78181304350977e-08,
+      "leading_probability": 7.08632374756772e-08,
+      "amplitude_error": 5.843531290029566e-06,
+      "error_div_tau6": 0.09130517640671194,
+      "series_tail_bound": 5.420502904729144e-28
+    },
+    {
+      "tau": 0.4,
+      "inelastic_return_probability": 1.5206512716520466e-05,
+      "leading_probability": 1.8140988793773364e-05,
+      "amplitude_error": 0.0003636127961140886,
+      "error_div_tau6": 0.08877265530129112,
+      "series_tail_bound": 4.047856039725205e-20
+    },
+    {
+      "tau": 0.6,
+      "inelastic_return_probability": 0.00031167943697259416,
+      "leading_probability": 0.00046493370107791767,
+      "amplitude_error": 0.00395328671250917,
+      "error_div_tau6": 0.08473265416043319,
+      "series_tail_bound": 2.274794243232697e-15
+    }
+  ],
+  "scope": "Prepared heavy defect over vacuum coefficient ground, leading N2 hopping; not dressed matter ground or universal coupling"
+}

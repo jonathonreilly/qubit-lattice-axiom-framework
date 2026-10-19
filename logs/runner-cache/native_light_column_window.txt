@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/native_light_column_window.py
+runner_sha256: 552ca315c6cf8dec49c78cbb45048d64d74567fb791c0b7b5ff2c9c170523e27
+input_fingerprint_sha256: 537b5d1ffc6a20a8be1e04aa211aabf82dff28f165f23361ce3b9bcd95a92805
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.10
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_light_column_window-ydchhble
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_light_column_window-ydchhble/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_light_window_control.py']
+{
+  "edge_gram": [
+    {
+      "R": 6,
+      "ground_references": 2048,
+      "orthogonal_edge_outputs": 147456
+    },
+    {
+      "R": 8,
+      "ground_references": 256,
+      "orthogonal_edge_outputs": 32768
+    }
+  ],
+  "max_fourier_error": 2.3904947723411268e-14,
+  "bright_mixing": [
+    {
+      "L": 6,
+      "lam": 0.4,
+      "weight_ratio": 0.9833982401781187,
+      "gap_over_delta": 1.0084056878310435
+    },
+    {
+      "L": 6,
+      "lam": 0.3,
+      "weight_ratio": 0.9946868006800915,
+      "gap_over_delta": 1.0026672330340687
+    },
+    {
+      "L": 6,
+      "lam": 0.2,
+      "weight_ratio": 0.9989459851663349,
+      "gap_over_delta": 1.0005274243883198
+    },
+    {
+      "L": 8,
+      "lam": 0.4,
+      "weight_ratio": 0.9999818029178097,
+      "gap_over_delta": 1.0000090986652723
+    },
+    {
+      "L": 8,
+      "lam": 0.3,
+      "weight_ratio": 0.9999981782072233,
+      "gap_over_delta": 1.0000009108976324
+    },
+    {
+      "L": 8,
+      "lam": 0.2,
+      "weight_ratio": 0.9999999289163599,
+      "gap_over_delta": 1.0000000355418224
+    }
+  ],
+  "scope": "Exact discrete geometry/Fourier controls and derived two-cluster algebra; no full microscopic eigenvalue calculation"
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_light_column_window-ydchhble/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_light_window_control.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_light_column_window-ydchhble/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_light_window_control.py']
+{"status": "bounded-support", "checks": {"edge_gram": [{"R": 6, "ground_references": 2048, "orthogonal_edge_outputs": 147456}, {"R": 8, "ground_references": 256, "orthogonal_edge_outputs": 32768}], "max_fourier_error": 2.3904947723411268e-14, "bright_mixing": [{"L": 6, "lam": 0.4, "weight_ratio": 0.9833982401781187, "gap_over_delta": 1.0084056878310435}, {"L": 6, "lam": 0.3, "weight_ratio": 0.9946868006800915, "gap_over_delta": 1.0026672330340687}, {"L": 6, "lam": 0.2, "weight_ratio": 0.9989459851663349, "gap_over_delta": 1.0005274243883198}, {"L": 8, "lam": 0.4, "weight_ratio": 0.9999818029178097, "gap_over_delta": 1.0000090986652723}, {"L": 8, "lam": 0.3, "weight_ratio": 0.9999981782072233, "gap_over_delta": 1.0000009108976324}, {"L": 8, "lam": 0.2, "weight_ratio": 0.9999999289163599, "gap_over_delta": 1.0000000355418224}], "scope": "Exact discrete geometry/Fourier controls and derived two-cluster algebra; no full microscopic eigenvalue calculation"}, "scope": "Geometry and coefficient/mixing controls; actual microscopic window is an analytic fixed-box theorem, not a full-H numerical spectrum or observed scalar"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_light_column_window-ydchhble/outputs/native_light_column_window/result.json sha256=20746608b1f3bd2775edd3d33cc735f8f3bdc2a7cbbccc3afb2b81440a089a74
+{"checks": {"bright_mixing": [{"L": 6, "gap_over_delta": 1.0084056878310435, "lam": 0.4, "weight_ratio": 0.9833982401781187}, {"L": 6, "gap_over_delta": 1.0026672330340687, "lam": 0.3, "weight_ratio": 0.9946868006800915}, {"L": 6, "gap_over_delta": 1.0005274243883198, "lam": 0.2, "weight_ratio": 0.9989459851663349}, {"L": 8, "gap_over_delta": 1.0000090986652723, "lam": 0.4, "weight_ratio": 0.9999818029178097}, {"L": 8, "gap_over_delta": 1.0000009108976324, "lam": 0.3, "weight_ratio": 0.9999981782072233}, {"L": 8, "gap_over_delta": 1.0000000355418224, "lam": 0.2, "weight_ratio": 0.9999999289163599}], "edge_gram": [{"R": 6, "ground_references": 2048, "orthogonal_edge_outputs": 147456}, {"R": 8, "ground_references": 256, "orthogonal_edge_outputs": 32768}], "max_fourier_error": 2.3904947723411268e-14, "scope": "Exact discrete geometry/Fourier controls and derived two-cluster algebra; no full microscopic eigenvalue calculation"}, "scope": "Geometry and coefficient/mixing controls; actual microscopic window is an analytic fixed-box theorem, not a full-H numerical spectrum or observed scalar", "status": "bounded-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_light_column_window-ydchhble elapsed_seconds= 1.0123022082261741
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,494 @@
+{
+  "original_dispositions": [
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/contact-source-preparation-20261018/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "d1cb9e0f3e3493e9dd045f84dc06741fb13f10dafb209f087f759400818c1459",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/contact-source-preparation-20261018/CLAIM_STATUS_CERTIFICATE.md.gz",
+      "recovery_sha256": "742ae89c3cf8d6c7470ef3c10958cb9f89b91c582cc7baecd8658e197cdb184b",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/contact-source-preparation-20261018/CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "c39c828c879f9c9c9ff847533a5ae37fb836adc7338ba02483249a041757b3ef"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/contact-source-preparation-20261018/CONTACT_PUMP_COMPARISON.md",
+      "original_sha256": "6ce1914d25df82877d64cb55bf6ab8bec655adfb8d850e5f86e77749d6e7ac3b",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/contact-source-preparation-20261018/CONTACT_PUMP_COMPARISON.md.gz",
+      "recovery_sha256": "2fe4b9c2b098800f646e58e6926efa35fec4104d5aabecde6c9682d2744c22ed",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/contact-source-preparation-20261018/CONTACT_PUMP_COMPARISON.md",
+      "final_sha256": "13ccd35a99800a2b80440ce98cbbe58866bb19d0831b564a719e8caa5f934723"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/contact-source-preparation-20261018/CONTACT_PUMP_INDEPENDENT.md",
+      "original_sha256": "2237bef6065c11d3cad5ccc04f88a52823c8e24bccaba473c6e7e0311412380c",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/contact-source-preparation-20261018/CONTACT_PUMP_INDEPENDENT.md.gz",
+      "recovery_sha256": "a4a7bf36eb3396b31fc61ae91a66c2ff04850ae4d84017552ddf28947393a9b9",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/contact-source-preparation-20261018/CONTACT_PUMP_INDEPENDENT.md",
+      "final_sha256": "f257a7b17cadf7d8e0ec75b8022dcee483ccbe6b8991d9d7fecb81dab057766b"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/contact-source-preparation-20261018/FINAL_SOURCE_CHECK.md",
+      "original_sha256": "da2a731fbf399a65580d24707f1272c18b6acb0d4a03238d8aae6d8dbc158326",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/contact-source-preparation-20261018/FINAL_SOURCE_CHECK.md.gz",
+      "recovery_sha256": "71bf68a13e1f2cde800a1e6f10071bed397e1a132fa5f6941499255411eeabba",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/contact-source-preparation-20261018/FINAL_SOURCE_CHECK.md",
+      "final_sha256": "fec681509b9d31c2462a33aafa81da457c9492d65b8cbca17eaa71081b2e2dcf"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/contact-source-preparation-20261018/HANDOFF.md",
+      "original_sha256": "85a69ed6a19d981de6f1f21dabc268c0fb15280e5a497581d1518a17635ced6c",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/contact-source-preparation-20261018/HANDOFF.md.gz",
+      "recovery_sha256": "265965c256560d94e1875d624f7ebc05538a4151f35f56f9f661e8a23143c328",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/contact-source-preparation-20261018/HANDOFF.md",
+      "final_sha256": "11ffbd43ac2e764b5f98756acbc43fdc609d6cdb4b9e63ea9931d7e5d46cc17c"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/contact-source-preparation-20261018/REVIEW_HISTORY.md",
+      "original_sha256": "9001a5a85ade7f639edcd7fe6cff3461f34a497ebd922274d2b6c0847777fcad",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/contact-source-preparation-20261018/REVIEW_HISTORY.md.gz",
+      "recovery_sha256": "c7b9effb1e92e5e00f6dbeeaf9bb4aa1d48ead60ae3c23a93b3ce8c22180e67a",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/contact-source-preparation-20261018/REVIEW_HISTORY.md",
+      "final_sha256": "d792057bd93030f9018ee02bfc55309bb2fc03b2c0cc921fc7928c7ced42445c"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/contact-source-preparation-20261018/TRACE_GATE.md",
+      "original_sha256": "211fae95507459ab5ee47013c5dacecb90d0dea8f7523348c9464c09ad2a0e2a",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/contact-source-preparation-20261018/TRACE_GATE.md.gz",
+      "recovery_sha256": "57b2301371da0ad8af2abb2fc29e914c20441f1696e786040f049b1a9b16e224",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/contact-source-preparation-20261018/TRACE_GATE.md",
+      "final_sha256": "f1892af6a1fcb588a8d61de4974c0a69570000657c4f35fcc66b676d18eab4ce"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "9aed76f0183dde7a253683eea49fb1046dfef2c2a751ed167374fb75ac8fef28",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/CLAIM_STATUS_CERTIFICATE.md.gz",
+      "recovery_sha256": "096e554eb729f2ace1fdddf9ab4639e813120d0b39b48554e89d4c1172439817",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "e087260e8477576377ba5c90ad8c375262a18cabbadc6cf1a42286ce1a9dfc15"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/FINAL_SOURCE_CHECK.md",
+      "original_sha256": "7b3012555ff2c565e362a4694cb0ec61daf6bbee6c28af2c38a12593cff30b3d",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/FINAL_SOURCE_CHECK.md.gz",
+      "recovery_sha256": "90000997fec93ceb37efea6d5d676598062de89ba7159fbf24c6e55fd70370bc",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/FINAL_SOURCE_CHECK.md",
+      "final_sha256": "bce282410c8ad5e1cb28be39562cba51bee85f67ed5e26e398c122a3f63d5789"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/HANDOFF.md",
+      "original_sha256": "538ff56307b292c2c096b939f60f690d2cd29b6fd42e44421e7fb9dacc9d27a8",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/HANDOFF.md.gz",
+      "recovery_sha256": "26f70e4758e2c300f4766c6f3ef34fd125b26fae858a0354ea266f09b032e4f6",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/HANDOFF.md",
+      "final_sha256": "c0a261e9b61bf30d57bb4b441681bca40cd95fe1ada4361470ae5927d3f74690"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/INFINITE_CHECK.md",
+      "original_sha256": "3518afc688da1f9003fb509f027bfe4b1e8b007008dc5eb1c27dd89536e0d91a",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/INFINITE_CHECK.md.gz",
+      "recovery_sha256": "5828ece30f0ed8cba6554655bcaaa25eb753d419d75710cfce4e92da137d044d",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/INFINITE_CHECK.md",
+      "final_sha256": "432adfa81b6de94b2ad02ee36ec0d7ca6467eb40342f4a1b21acde66308ee9f7"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/INFINITE_LATTICE_PROBE.md",
+      "original_sha256": "d85f00866d575e03486ed876f0694b28e7f723f6d228ab3e2cf7854f2ddef1b0",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/INFINITE_LATTICE_PROBE.md.gz",
+      "recovery_sha256": "50469e8c339ceb416ef23cb51ee5e739b39be126418f1d15282adbfc4342a54f",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/INFINITE_LATTICE_PROBE.md",
+      "final_sha256": "76f4dd57aa7616a3d8accc1b36e883350f90868e120fef62d9e12ef286a1bd8e"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/INFINITE_MANY_EXCITATION_CHECK.md",
+      "original_sha256": "37df775aa35e15bd4bd631f2d8ce44956e8235528f10827ba5298d32989077a0",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/INFINITE_MANY_EXCITATION_CHECK.md.gz",
+      "recovery_sha256": "4275d515abdf0ce6569fb34ad76f37e17128005242bec0f47f92ba0f266f111b",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/INFINITE_MANY_EXCITATION_CHECK.md",
+      "final_sha256": "e710c1cb41d42e69431775b85032d717eb4478051056a7bc108891246ac0fe62"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/INFINITE_N_PROBE.md",
+      "original_sha256": "62a6135efd5861b6ecf97f9d1f938a6367b54507d0a134457611c442b3ddbb3d",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/INFINITE_N_PROBE.md.gz",
+      "recovery_sha256": "295334be85d0cfed2d0aafae8f6b3ecc8fc53ef0ef7212a8d83b06ddf9690a18",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/INFINITE_N_PROBE.md",
+      "final_sha256": "4212b55906e4813c203a7cb692819d63dc1daffbb56e811186ec03ec64bf6cbf"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/LITERATURE_SEARCH.md",
+      "original_sha256": "ab301890ff18fddde10e1ff186abd72bf2616000915044aefac0b674a7e7a3ff",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/LITERATURE_SEARCH.md.gz",
+      "recovery_sha256": "bfacf632ca2602307721e7e9830fdd6e1d4a3bc88c991e39e40296d6f8f30b46",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/LITERATURE_SEARCH.md",
+      "final_sha256": "4ab80df375779d87ce38490f22a58d4d5cfb1fc4796474d9bc6fe55bb1d4d586"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/MANY_BODY_DARK_CODE.md",
+      "original_sha256": "76b8e51ee20610585eecf253517047798ea1e03e0e6c77262caa13a7d7e5d9c8",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/MANY_BODY_DARK_CODE.md.gz",
+      "recovery_sha256": "aba4f83cbb9d9156350b94f1e5844cf905dd5eafc225d0de83f270daa0b7f372",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/MANY_BODY_DARK_CODE.md",
+      "final_sha256": "127df0e32ebd64061916dcd79c09c66a02d27a5acde7a3e882ff5ab787fc1bbf"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/MANY_PARTICLE_MUTATIONS.json",
+      "original_sha256": "93f0bbab3e6943e7211e8ebb1ed42e8b229a9c8d4ec107fdf5d0e474599b369a",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/MANY_PARTICLE_MUTATIONS.json.gz",
+      "recovery_sha256": "027168cb43c0e8a767b55f28dd717ca9c34c8801fa0cf23fe90aef6f84db30ac",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/MANY_PARTICLE_MUTATIONS.json",
+      "final_sha256": "93f0bbab3e6943e7211e8ebb1ed42e8b229a9c8d4ec107fdf5d0e474599b369a"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/NATIVE_COMPRESSION_PRIOR_ART.md",
+      "original_sha256": "80e52f61fe19d9b7430517d0a140914eceb40657fa49a80cf02b2fc7690b1393",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/NATIVE_COMPRESSION_PRIOR_ART.md.gz",
+      "recovery_sha256": "5850e5327f8045a3ad12ee2c524c4b9ce374264f285dad06f7c5b1a262bd9926",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/NATIVE_COMPRESSION_PRIOR_ART.md",
+      "final_sha256": "ede3130cefa49f8d42c5880bfce30d1eee07e2771ba3515ec5e7622e299ec6a2"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/NATIVE_PROTECTION_ROUTES.md",
+      "original_sha256": "3623ee3301483783bc3c991a86f6702eb7c8715a975d776869acf473a0384548",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/NATIVE_PROTECTION_ROUTES.md.gz",
+      "recovery_sha256": "9044e7c512e7c5a7a9865221e17ce7eefe63ce0e72fae15e14f32ab93d192dd4",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/NATIVE_PROTECTION_ROUTES.md",
+      "final_sha256": "4e5e36d6b11ee11ed5248b9295214053ef7ac063955a3e88a80652ba6e35904b"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/PACKAGING_CHECK.md",
+      "original_sha256": "3d88dde58530885b5a5a632cf8e8fe3095f2d0143c09fed2770ca8fa1256e473",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/PACKAGING_CHECK.md.gz",
+      "recovery_sha256": "7e888238cc3d19426aec98716caccfdda1ec543140fb7557a7520ae799b299f5",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/PACKAGING_CHECK.md",
+      "final_sha256": "965939a604723ecfc29884376c15243080c108c22bc2305d4b90e976ac0f05fa"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/PACKAGING_HASH_RECEIPT.json",
+      "original_sha256": "871509ff6c66f7aae996c53303b45d0b5296b0b73977a6e9505ad9dcd09e9550",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/PACKAGING_HASH_RECEIPT.json.gz",
+      "recovery_sha256": "6fa14ffd4bbfbd9fe4a8ef1251d4db30deed311811f1fa780d6f8b175e7640da",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/PACKAGING_HASH_RECEIPT.json",
+      "final_sha256": "871509ff6c66f7aae996c53303b45d0b5296b0b73977a6e9505ad9dcd09e9550"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/PRIOR_ART_SEARCH.json",
+      "original_sha256": "bbfb6c17b1376f91d086e5380a1b46b29831f26e1ec08c312778a37621d0b198",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/PRIOR_ART_SEARCH.json.gz",
+      "recovery_sha256": "4643c7deee77e222c52dab7311723baf38bd82531cf03864ba70a7f142b03001",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/PRIOR_ART_SEARCH.json",
+      "final_sha256": "bbfb6c17b1376f91d086e5380a1b46b29831f26e1ec08c312778a37621d0b198"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/REVIEW_HISTORY.md",
+      "original_sha256": "e56753666c9e407822e4223cca40bbef02879be58d0c65a72d51cc31fdf5625a",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/REVIEW_HISTORY.md.gz",
+      "recovery_sha256": "bf2ce779bcedf574c353f4458024c4c452e4a272252de94adf669e1fe2da0f89",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/REVIEW_HISTORY.md",
+      "final_sha256": "8c6c305672f2c444618cee011a7e4b66ca570e9cdee0efeb3ca5555e172fcd76"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/ROOT_MANY_BODY_REVIEW.md",
+      "original_sha256": "190e3d5b31448621b4f201f8dbc0fabf18db059a3fac2583dddd3cf98335c236",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/ROOT_MANY_BODY_REVIEW.md.gz",
+      "recovery_sha256": "16d127d8a4ec7b84948a6269dd3fd6a1e86065b7d9978b6be46d13bd236279d7",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/ROOT_MANY_BODY_REVIEW.md",
+      "final_sha256": "48eb327015a6b0a15569a252e733fe710d53ce677c48d98c403bf98fb9ca22ad"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/ROOT_REVIEW.md",
+      "original_sha256": "4c5e3d8e27557034b61592c6edab9622c72be44d6c78e849a8fa1321024427fc",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/ROOT_REVIEW.md.gz",
+      "recovery_sha256": "21a438bc743cf30a17d5442cf6474d4fddfb682ab774ee5cce80ba452304b4c6",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/ROOT_REVIEW.md",
+      "final_sha256": "0da7ca64f837306c3beb263e45f171a5708525b54aa8ee43b99fb2d6403ddb8f"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/RUNNER_MUTATIONS.json",
+      "original_sha256": "7938683396790d0f2b640e2f1226dc78d65cfb3617fba6c8f827eadc42d9e465",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/RUNNER_MUTATIONS.json.gz",
+      "recovery_sha256": "5d98276d0383dcaf92b29b2e55eb227a92db6180445b5a7641d3a74736b8e0e8",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/RUNNER_MUTATIONS.json",
+      "final_sha256": "7938683396790d0f2b640e2f1226dc78d65cfb3617fba6c8f827eadc42d9e465"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/TRACE_GATE.md",
+      "original_sha256": "174caede7e684fd6695a5bc33382db103f0b8b8433739749e55dcf2706ac94ba",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/TRACE_GATE.md.gz",
+      "recovery_sha256": "81b9c951935085cad9c3e1ed80888af967bfb53e50684f72ded175c5c7f46671",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/TRACE_GATE.md",
+      "final_sha256": "dcad0cd733f03b4f0894ceea514148b19cd4e977dd93a643e90d3165f60fde46"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/infinite_many_independent_check.py",
+      "original_sha256": "c848fff9ae0f24fa27c21d02b0951c27fefe31e5a59b8a59b92b02c8fcfea986",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/infinite_many_independent_check.py.gz",
+      "recovery_sha256": "8ca126f4eef7acb9823b8ac81e49d1cd73d5da2d78fa2f3da2a798015c962953",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/infinite_many_independent_check.py",
+      "final_sha256": "c848fff9ae0f24fa27c21d02b0951c27fefe31e5a59b8a59b92b02c8fcfea986"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/infinite_many_independent_result.json",
+      "original_sha256": "2d8b121da80714f1b4461fb9c2bb930dbb1407e72d40b9dffb020f23984faf6e",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/infinite_many_independent_result.json.gz",
+      "recovery_sha256": "405d09ad13f1123bfd0c752cf0241b5c40f96da494392dfd3cae1bd9c466d2e9",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/infinite_many_independent_result.json",
+      "final_sha256": "2d8b121da80714f1b4461fb9c2bb930dbb1407e72d40b9dffb020f23984faf6e"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/infinite_n_root_check.py",
+      "original_sha256": "8adabc04fa3f26a33fef9f1cf74dafbc3d9edf38d7fdc5fbd06f1be049edef23",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/infinite_n_root_check.py.gz",
+      "recovery_sha256": "9b5e0b26329c4f74352acc639443f1108973b7776eabca8a475e86db4d09de0f",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/infinite_n_root_check.py",
+      "final_sha256": "8adabc04fa3f26a33fef9f1cf74dafbc3d9edf38d7fdc5fbd06f1be049edef23"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/infinite_n_root_result.json",
+      "original_sha256": "3563c1d2e6d1409575bbfde9142c32d827703c586d5ed340ad0826e2e961c611",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/infinite_n_root_result.json.gz",
+      "recovery_sha256": "f404790356f04fcac30de25ad54aed116261af40efb220422e3cbee7cdd3dc92",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/infinite_n_root_result.json",
+      "final_sha256": "3563c1d2e6d1409575bbfde9142c32d827703c586d5ed340ad0826e2e961c611"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/many_body_dark_check.py",
+      "original_sha256": "c59f25fffe35c13ff105bd8fce78d686ad30724e1ba435e99e9faa4e65cc9b43",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/many_body_dark_check.py.gz",
+      "recovery_sha256": "1e80815d1dc057955d0f21cfc1f119df8236529ddfb376d61bd23291d6998ad3",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/many_body_dark_check.py",
+      "final_sha256": "c59f25fffe35c13ff105bd8fce78d686ad30724e1ba435e99e9faa4e65cc9b43"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/many_body_dark_result.json",
+      "original_sha256": "0066719ce121bb8b370c266e0ee09dc24aca4c554a0e7314c8dfd8a84be5936f",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/many_body_dark_result.json.gz",
+      "recovery_sha256": "f9d9766e570aa34ba2b31925c494adbab8234ab558e38bfa171b43702fb921eb",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/many_body_dark_result.json",
+      "final_sha256": "0066719ce121bb8b370c266e0ee09dc24aca4c554a0e7314c8dfd8a84be5936f"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/root_exact_check.py",
+      "original_sha256": "32d468510489530a8c6ba4c3ebfe6dc4a9d8782d772676456b5708f65850a66e",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/root_exact_check.py.gz",
+      "recovery_sha256": "7430cf1865b88f18cb7695e826eb75861faaa9ae947da6f72843ee801e1153ea",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/root_exact_check.py",
+      "final_sha256": "32d468510489530a8c6ba4c3ebfe6dc4a9d8782d772676456b5708f65850a66e"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/root_exact_result.json",
+      "original_sha256": "c08d56544b8a5cdc2f8f5ac7a64fd21128c01bf0f86f4bfd7dfdf4e42319a66e",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/root_exact_result.json.gz",
+      "recovery_sha256": "c75b8329363c0499dbdd7f2781e060cec00d7c9c158c5461e52fc873330ccb4d",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/root_exact_result.json",
+      "final_sha256": "c08d56544b8a5cdc2f8f5ac7a64fd21128c01bf0f86f4bfd7dfdf4e42319a66e"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/root_two_particle_check.py",
+      "original_sha256": "ed34808a700bb78e667af02066493182bf87c707add34f3034bf75fdbb647a07",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/root_two_particle_check.py.gz",
+      "recovery_sha256": "10373cf7682870ebdfdb8b1e1b703c5c14de7ce9f43298fe9ee6e85df94b3e2d",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/root_two_particle_check.py",
+      "final_sha256": "ed34808a700bb78e667af02066493182bf87c707add34f3034bf75fdbb647a07"
+    },
+    {
+      "pr": 9815,
+      "original_path": ".claude/science/physics-loops/native-nodal-persistence-20261018/root_two_particle_result.json",
+      "original_sha256": "19870bbb626f77c73d6ad1045293c5de3abf064284e9b7609c4fcb9c8c102734",
+      "disposition": "complete supporting source and historical provenance",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/.claude/science/physics-loops/native-nodal-persistence-20261018/root_two_particle_result.json.gz",
+      "recovery_sha256": "413fc98c72878b7ce0c54952cb6e75a8c5dd5d444b3a2a0a7bf4918e54480d79",
+      "final_path": "outputs/heisenberg_preparation_review_2026_10_18/research/native-nodal-persistence-20261018/root_two_particle_result.json",
+      "final_sha256": "19870bbb626f77c73d6ad1045293c5de3abf064284e9b7609c4fcb9c8c102734"
+    },
+    {
+      "pr": 9815,
+      "original_path": "docs/CONTACT_SOURCE_HEISENBERG_CODE_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "original_sha256": "957df1ad1320df00b267a19b21db9a73243301c207bca1ae464f01390fb3259f",
+      "disposition": "complete conditional theorem; portable references and current execution boundary",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/docs/CONTACT_SOURCE_HEISENBERG_CODE_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-18.md.gz",
+      "recovery_sha256": "daf56b2bcf1cbd1c515bdbbd62415b5e9c8b65199ec38b65954cc8ae44a36762",
+      "final_path": "docs/CONTACT_SOURCE_HEISENBERG_CODE_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "final_sha256": "f5b718f691faff44b8b8bb1e6d2beb1711efc047467ef483c4788a51989dfe7a"
+    },
+    {
+      "pr": 9815,
+      "original_path": "docs/NATIVE_HEISENBERG_NODAL_RECORD_PERSISTENCE_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "original_sha256": "cab15d6b241572df5582db3e900dfbdd86e99fadad98b5e05f78108e550ce92e",
+      "disposition": "complete conditional theorem; portable references and current execution boundary",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/docs/NATIVE_HEISENBERG_NODAL_RECORD_PERSISTENCE_BOUNDED_THEOREM_NOTE_2026-10-18.md.gz",
+      "recovery_sha256": "bb25ee6165125bd0a2ca1011c51164c641d958514948a32003036058b299c081",
+      "final_path": "docs/NATIVE_HEISENBERG_NODAL_RECORD_PERSISTENCE_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "final_sha256": "59258f9e0b5a640738dfc8b6e5b2c00bd546f6d80a686b024d739b0cae0fac8d"
+    },
+    {
+      "pr": 9815,
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "44770861750f663c9bb5b48bfd5c622dc49c08902ea14242457ecb6708e111ec",
+      "disposition": "exact historical recovery; no fresh execution or graph authority",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/docs/audit/data/citation_graph_manifest.json.gz",
+      "recovery_sha256": "f7123348fde82b9eba33780b519bc6d7189d9f7a8b64aae98235f7ec6b32f70d",
+      "final_path": "archive/heisenberg_preparation_review_2026_10_18/originals/docs/audit/data/citation_graph_manifest.json.gz",
+      "final_sha256": "f7123348fde82b9eba33780b519bc6d7189d9f7a8b64aae98235f7ec6b32f70d"
+    },
+    {
+      "pr": 9815,
+      "original_path": "logs/runner-cache/contact_source_heisenberg_code_preparation_2026_10_18.txt",
+      "original_sha256": "1a74ab085bf3ffb3de5f4493ddf05c043e51c45bc84f5fe140ed034f956f7d7f",
+      "disposition": "exact historical recovery; no fresh execution or graph authority",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/logs/runner-cache/contact_source_heisenberg_code_preparation_2026_10_18.txt.gz",
+      "recovery_sha256": "448bd307eba49f6fd28d259b3c5efa80f7b0c34b0e5894fb191533babf851ba6",
+      "final_path": "archive/heisenberg_preparation_review_2026_10_18/originals/logs/runner-cache/contact_source_heisenberg_code_preparation_2026_10_18.txt.gz",
+      "final_sha256": "448bd307eba49f6fd28d259b3c5efa80f7b0c34b0e5894fb191533babf851ba6"
+    },
+    {
+      "pr": 9815,
+      "original_path": "logs/runner-cache/native_heisenberg_nodal_record_persistence_2026_10_18.txt",
+      "original_sha256": "d0c95f4d0fd8204f5461164ad249c25d08267829c39e52d22133187309bd035d",
+      "disposition": "exact historical recovery; no fresh execution or graph authority",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/logs/runner-cache/native_heisenberg_nodal_record_persistence_2026_10_18.txt.gz",
+      "recovery_sha256": "8a2aa20496722f9db85a6ef5932c7524ab34b0c2205c07b4f3a96aa5de3c6412",
+      "final_path": "archive/heisenberg_preparation_review_2026_10_18/originals/logs/runner-cache/native_heisenberg_nodal_record_persistence_2026_10_18.txt.gz",
+      "final_sha256": "8a2aa20496722f9db85a6ef5932c7524ab34b0c2205c07b4f3a96aa5de3c6412"
+    },
+    {
+      "pr": 9815,
+      "original_path": "outputs/contact_source_heisenberg_code_preparation_2026_10_18.json",
+      "original_sha256": "6b382935cc9961a8b2b8ae0d13b0ae1f621c5d4ba81253551d01f4ac6f7b7c7d",
+      "disposition": "exact historical recovery; no fresh execution or graph authority",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/outputs/contact_source_heisenberg_code_preparation_2026_10_18.json.gz",
+      "recovery_sha256": "779a56b347861f73bf7957e901062e9f62572f3ea9f0a98d3aedb4025164bff9",
+      "final_path": "archive/heisenberg_preparation_review_2026_10_18/originals/outputs/contact_source_heisenberg_code_preparation_2026_10_18.json.gz",
+      "final_sha256": "779a56b347861f73bf7957e901062e9f62572f3ea9f0a98d3aedb4025164bff9"
+    },
+    {
+      "pr": 9815,
+      "original_path": "outputs/native_heisenberg_nodal_record_persistence_2026_10_18.json",
+      "original_sha256": "3bdb0a8f0bbf92624426fc76aa4fcad50ab9763e75451fbc961ed4905c4ee559",
+      "disposition": "exact historical recovery; no fresh execution or graph authority",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/outputs/native_heisenberg_nodal_record_persistence_2026_10_18.json.gz",
+      "recovery_sha256": "aa16fd0551c992061b7f973453b05652342df64a7835ac47f78caecc6acc75ce",
+      "final_path": "archive/heisenberg_preparation_review_2026_10_18/originals/outputs/native_heisenberg_nodal_record_persistence_2026_10_18.json.gz",
+      "final_sha256": "aa16fd0551c992061b7f973453b05652342df64a7835ac47f78caecc6acc75ce"
+    },
+    {
+      "pr": 9815,
+      "original_path": "scripts/contact_source_heisenberg_code_preparation_2026_10_18.py",
+      "original_sha256": "1d2147cd5770677c26f8df55d630c09f54c33a22137ed1df557b289af49d68f4",
+      "disposition": "capped isolated primary retaining original finite predicates",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/scripts/contact_source_heisenberg_code_preparation_2026_10_18.py.gz",
+      "recovery_sha256": "785b439b66434dad796462eebbb9653a621e8e0622031ecc189df92a3cc147e6",
+      "final_path": "scripts/contact_source_heisenberg_code_preparation_2026_10_18.py",
+      "final_sha256": "a5b1a674937194772bc6d8b1567938af74d9d38a94c6765ebb0a2f0d261f2f0a"
+    },
+    {
+      "pr": 9815,
+      "original_path": "scripts/contact_source_heisenberg_controls.py",
+      "original_sha256": "69c3887bb3bb5e452f29413f6e6e7c3c3f26ecc7369c849a0e83b954942f7da6",
+      "disposition": "original finite-control helper with timeout metadata; aggregate primary cap",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/scripts/contact_source_heisenberg_controls.py.gz",
+      "recovery_sha256": "ee954bf44f973d65c5902fb4b7af6d19ff574eab45a4d2682aa339a15fcbd60e",
+      "final_path": "scripts/contact_source_heisenberg_controls.py",
+      "final_sha256": "ab056fef0b58b66c49132be657cbd0209ecb4aff1420ad0398cc17324d5dcc88"
+    },
+    {
+      "pr": 9815,
+      "original_path": "scripts/native_heisenberg_many_particle_controls.py",
+      "original_sha256": "2f16644ec353d73c8fa500017d4534091c6cc8a5fe18358c8def77478ecd26b4",
+      "disposition": "original finite-control helper with timeout metadata; aggregate primary cap",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/scripts/native_heisenberg_many_particle_controls.py.gz",
+      "recovery_sha256": "042015df257868e7c7a26c41c7b286e53247c834fcf32c9883ef8e332c19defc",
+      "final_path": "scripts/native_heisenberg_many_particle_controls.py",
+      "final_sha256": "f5bea2f261d8662875c87ea82458a039da88f8f46a8d8ea64b1e6a03b6f4b4e8"
+    },
+    {
+      "pr": 9815,
+      "original_path": "scripts/native_heisenberg_nodal_controls.py",
+      "original_sha256": "7b1044e09141974b4f46bf65b2354464b04f8442bde32a5dfd3b4b7311c3b7cf",
+      "disposition": "original finite-control helper with timeout metadata; aggregate primary cap",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/scripts/native_heisenberg_nodal_controls.py.gz",
+      "recovery_sha256": "172fc3f452e839cc8c64e91fd1dc63ab2cbe9659ae4473af5dc18c2a5da9e3b2",
+      "final_path": "scripts/native_heisenberg_nodal_controls.py",
+      "final_sha256": "f9001f6ae4bad5f0a88c4ae9293f0207582dccf4eedaa4a2f93bd6fe1924b400"
+    },
+    {
+      "pr": 9815,
+      "original_path": "scripts/native_heisenberg_nodal_record_persistence_2026_10_18.py",
+      "original_sha256": "ac125668c6fd89a7702ed5144c023601bfd6c9f83cc7d00ec471008081c25d9f",
+      "disposition": "capped isolated primary retaining original finite predicates",
+      "recovery": "archive/heisenberg_preparation_review_2026_10_18/originals/scripts/native_heisenberg_nodal_record_persistence_2026_10_18.py.gz",
+      "recovery_sha256": "d7b74346e82291538ddb38f2a62b384738d90010e4b4177be3e9c4e3693f6e34",
+      "final_path": "scripts/native_heisenberg_nodal_record_persistence_2026_10_18.py",
+      "final_sha256": "cbb0cbc24ab01649c3ee7615d3170d886376f478046632a0ac171c7424a66d08"
+    }
+  ]
+}

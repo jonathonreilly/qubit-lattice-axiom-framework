@@ -1,0 +1,163 @@
+===== runner cache v1 =====
+runner: scripts/native_two_feature_ladder.py
+runner_sha256: 2bf18839f6221634fee04ebb2838f3e342a231dfd91b9415d29925b8ed314bf1
+input_fingerprint_sha256: 988888c92161c56ae009bbaf807f8aa14ac2dc4a1f574c624a3e0c0d1461bba5
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_two_feature_ladder-794_ppee
+4 0.42575042228412985 0.4257504222841313 1.4432899320127035e-15
+5 0.4223028969426336 0.42230289694263556 1.942890293094024e-15
+6 0.6544708255418435 0.6544708255418432 3.3306690738754696e-16
+8 1.0968701733016315 1.0968701733016306 8.881784197001252e-16
+[PASS] child:neutral_pair_algebra_control.py
+{
+  "cases": 27,
+  "max_error": 8.05098602561001e-16
+}
+[PASS] child:neutral_pair_mixed_control.py
+{
+  "physical_qubits": 432,
+  "separated_exact_additivity": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      3
+    ]
+  ],
+  "contact_examples": [
+    {
+      "z": 1,
+      "overlap": true,
+      "union_walls": 4,
+      "residual_terms": 0,
+      "residual_norm2": 0
+    },
+    {
+      "z": 2,
+      "overlap": true,
+      "union_walls": 4,
+      "residual_terms": 0,
+      "residual_norm2": 0
+    },
+    {
+      "z": 3,
+      "overlap": false,
+      "union_walls": 4,
+      "residual_terms": 2,
+      "residual_norm2": 2
+    },
+    {
+      "z": 4,
+      "overlap": false,
+      "union_walls": 8,
+      "residual_terms": 6,
+      "residual_norm2": 6
+    }
+  ],
+  "scope": "Exact native projected bit-state intertwining, not full Hilbert-space diagonalization"
+}
+[PASS] child:neutral_two_feature_contact_control.py
+[
+  {
+    "V": 128,
+    "ell": 1,
+    "contact_terms": 14,
+    "scaled_difference_norm": 2.2360679774997894
+  },
+  {
+    "V": 256,
+    "ell": 1,
+    "contact_terms": 14,
+    "scaled_difference_norm": 2.23606797749979
+  },
+  {
+    "V": 384,
+    "ell": 1,
+    "contact_terms": 14,
+    "scaled_difference_norm": 2.2360679774997902
+  },
+  {
+    "V": 128,
+    "ell": 2,
+    "contact_terms": 14,
+    "scaled_difference_norm": 2.236067977499789
+  },
+  {
+    "V": 256,
+    "ell": 2,
+    "contact_terms": 14,
+    "scaled_difference_norm": 2.23606797749979
+  },
+  {
+    "V": 384,
+    "ell": 2,
+    "contact_terms": 14,
+    "scaled_difference_norm": 2.2360679774997902
+  },
+  {
+    "V": 128,
+    "ell": 3,
+    "contact_terms": 19,
+    "scaled_difference_norm": 2.82842712474619
+  },
+  {
+    "V": 256,
+    "ell": 3,
+    "contact_terms": 19,
+    "scaled_difference_norm": 2.8284271247461903
+  },
+  {
+    "V": 384,
+    "ell": 3,
+    "contact_terms": 19,
+    "scaled_difference_norm": 2.828427124746191
+  }
+]
+[PASS] child:neutral_source_contact_control.py
+{"status": "bounded-support", "checks": {"neutral_pair_algebra_control.py": "completed; child stdout/stderr streamed into owning capture", "neutral_pair_mixed_control.py": "completed; child stdout/stderr streamed into owning capture", "neutral_two_feature_contact_control.py": "completed; child stdout/stderr streamed into owning capture", "neutral_source_contact_control.py": "completed; child stdout/stderr streamed into owning capture"}, "scope": "Exact local algebra/contact controls for analytic two-feature window-vector theorem; no full-H ED, isolated particles, finite-density theory or empirical tests"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_two_feature_ladder-794_ppee/outputs/native_two_feature_ladder/result.json sha256=6608c4df2ca10bab2d3510e62be7f9ed7667422c9cbaf4d5de77675bf448d84d
+{"checks": {"neutral_pair_algebra_control.py": "completed; child stdout/stderr streamed into owning capture", "neutral_pair_mixed_control.py": "completed; child stdout/stderr streamed into owning capture", "neutral_source_contact_control.py": "completed; child stdout/stderr streamed into owning capture", "neutral_two_feature_contact_control.py": "completed; child stdout/stderr streamed into owning capture"}, "scope": "Exact local algebra/contact controls for analytic two-feature window-vector theorem; no full-H ED, isolated particles, finite-density theory or empirical tests", "status": "bounded-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; no microscopic pole, universal force or empirical identification is established.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_two_feature_ladder-794_ppee elapsed_seconds= 0.5171942501328886
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

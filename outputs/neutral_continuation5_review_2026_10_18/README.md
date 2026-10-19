@@ -1,0 +1,3 @@
+# Neutral continuation five live source register
+
+Thirteen canonical arguments and thirteen finite-control primaries. Complete proof bodies and owning-head helper versions remain live and inspectable. Historical status narratives confer no current authority. Pending neutral4 premise bytes are pinned in the external parent identity record and the full literal runtime closure; this package does not replace them. Exact original recovery is recorded in `archive/neutral_continuation5_review_2026_10_18/MANIFEST.json`. Physical scalar-route exclusion from the symmetric-sector estimates remains deferred; constructive identities and their exact hypotheses are retained.

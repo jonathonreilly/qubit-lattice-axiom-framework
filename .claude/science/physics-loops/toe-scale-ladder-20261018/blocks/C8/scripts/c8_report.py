@@ -139,7 +139,7 @@ for walk in ('bstar', 'iso'):
 
 print("-" * 100)
 print("b_gold (massless pi-modes at X; computed at theta > 0 with partition-of-unity balls at Gamma and the three X)")
-for th in (0.4, 0.2, 0.1, 0.05):
+for th in (0.4, 0.2, 0.1, 0.05, 0.0125, 0.0):
     row = []
     for ch in ('zA', 'zB', 'fA', 'fB', 'dA', 'dB'):
         v, e = best('gold', th, 'M1', ch)

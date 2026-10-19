@@ -1,7 +1,7 @@
 # C8: lattice Sakharov coefficient of the supplied two-qubit Dirac walk
 
 **Block:** C8 of `toe-scale-ladder-20261018` (R3 → R4).
-**Status:** worker note, single author. Not independently reviewed. Unaudited. Runner total: `logs/run_all.log` TOTAL: PASS=55 FAIL=0.
+**Status:** Reviewed in a separate agent context (same model as the author); unaudited. Review: `REVIEW.md`; dispositions in §12. Runner total: `logs/run_all.log`.
 **Runners** (all in `scripts/`; logs in `logs/`; `scripts/run_all.sh` writes `logs/run_all.log`,
 which ends with the combined `TOTAL:` line):
 `c8_exact.py` (sympy identities), `c8_core.py` (the lattice response), `c8_lattice.py`
@@ -20,17 +20,25 @@ fermion, with its lattice doublers included), in c = ħ = 1 units, the isotropic
 
   **c_G ≡ a²/(16πG_ind) = 7.36673×10⁻³ (b\*), 6.63451×10⁻³ (b_iso)**, certified to < 2×10⁻⁷ relative.
 
-So **G_ind > 0**: the induced gravity is attractive. The sign is positive in every channel, for
-every coupling tried, at b\* and b_iso. Then **a/l_P = √(16π N_f c_G) = 0.6085 √N_f (b\*) and
-0.5775 √N_f (b_iso)**, with N_f symbolic. In heat-kernel language this is an effective cutoff
-Λ_eff = 0.84 π/a (b\*) or 0.80 π/a (b_iso). Two caveats limit the result, and both are results
-in their own right.
+So the **induced spin-2 (TT) stiffness is positive** (G_ind > 0 in the TT q² channel). This is
+attractive gravity only if the induced static action is Einstein–Hilbert, and §6 shows it is not
+(caveat 3). The stiffness is positive in every channel, for every coupling tried, at b\* and b_iso.
+For M1, **a/l_P = √(16π N_f c_G) = 0.6085 √N_f (b\*) and 0.5775 √N_f (b_iso)**. Over the
+couplings M1–M4 with the same continuum limit, the range is **0.43–0.69 √N_f**. N_f is symbolic.
+In heat-kernel language this is an effective cutoff Λ_eff = 0.84 π/a (b\*) or 0.80 π/a (b_iso).
+Three caveats limit the result, and each is a result in its own right.
 1. **The coefficient is not unique.** Four couplings with the same continuum limit (minimal
    coupling, proved) give c_G^iso between 3.60×10⁻³ and 9.52×10⁻³, a factor 2.6.
 2. **The induced spin-2 stiffness is cubic-anisotropic.** The polarisation-summed TT stiffness
    varies by 25% (b\*) and 55% (b_iso) over q directions. The static induced action is
    therefore not Einstein–Hilbert at O(∂²). It is EH plus O(1) cubic-symmetric
-   Lorentz-violating terms.
+   Lorentz-violating terms. (c_G^iso is a convention: the direction and polarisation average
+   of K/2, used to project the anisotropic stiffness onto EH.)
+3. **The q⁰ sector is non-covariant and large.** The induced vacuum energy is
+   ρ_vac = −4.03 a⁻⁴. There is also a destabilising TT q⁰ ("mass") term of about −2.39 a⁻⁴
+   (M1; §6). At physical q ≪ 1/a both dominate the O(a⁻²q²) stiffness by (qa)⁻². Positive G
+   therefore means attractive gravity only if other sectors cancel these terms, which this block
+   does not supply. The conformal (Newtonian) channel was not computed.
 
 The lapse channel, by contrast, has exactly zero O(q²) response (Lemma L), as covariance requires.
 
@@ -193,24 +201,31 @@ c_G(θ) approaches c_G(0). The deviation at θ = 0.05 is about 3% (Wilson-aligne
 These are O(m a) corrections to an a⁻² coefficient, so they are irrelevant in the continuum
 limit. The full table is in `logs/c8_report.log`.
 
-**b_gold.** At θ = 0 the X triplet consists of massless π-modes (C7). The sea is then
-ambiguous, and ρ(f) diverges at f = −1, so the generator coupling is singular there. I
-computed only θ > 0, where U(X) = −U(0) gives π-modes at quasienergy π − θ. The partition-of-unity
-balls are at Γ and at the three X points.
+**b_gold** (corrected after review; see §12). At θ = 0 the X triplet consists of massless
+π-modes (C7). The principal-branch sea is still defined, because the f = −1 points have measure zero.
+The partition-of-unity balls are at Γ and at the three X points. The mass direction is χ = π/2 in
+the numerically built h-plane frame: since W = 0, χ has no Wilson-referenced meaning here, and the
+reviewer finds frame dependence at the 10⁻⁴ level.
+
 | θ | zA | zB | fA | fB | dA | c_G^iso (×10⁻³) |
 |---|---|---|---|---|---|---|
 | 0.4 | 14.695 | 14.332 | 11.217 | 11.535 | 10.199 | 11.970 |
 | 0.2 | 23.777 | 22.937 | 15.049 | 15.404 | 12.298 | 16.797 |
 | 0.1 | 36.218 | 34.704 | 20.097 | 20.077 | 14.714 | 23.098 |
 | 0.05 | 48.265 | 46.177 | 24.882 | 24.313 | 16.834 | 29.065 |
+| 0.0125 | 62.493 | 59.864 | 30.327 | 29.075 | 19.049 | 35.955 |
+| 0 | 68.705 | 65.888 | 32.599 | 31.073 | 19.887 | **38.895** |
 
-(entries ×10⁻³; certificates ≤ 1×10⁻⁷ absolute). c_G^iso **does not converge as θ → 0**. Each
-halving of θ adds 4.8, 6.3 and 6.0 (×10⁻³), consistent with logarithmic growth, about
-0.009 ln(1/θ) (an empirical description, not proved). The q-axis channels grow fastest. The
-origin is that the vertex ρ g of M1 is ~π/θ near X: the exact generator becomes singular at the
-massless π-modes. **So M1 has no θ → 0 limit at b_gold, and the light-speed member gives no
-finite Sakharov coefficient under this coupling.** At fixed θ the values are positive, and
-their size is set by θ, not by the Γ cone.
+(entries ×10⁻³; certificates ≤ 1×10⁻⁷). **c_G^iso converges as θ → 0, to 3.889×10⁻²,** and it
+approaches that limit roughly linearly in θ. An earlier draft of this note said it diverged
+logarithmically. That was wrong: it was fitted on pre-asymptotic points (θ ≥ 0.05).
+The M1 vertex stays bounded. |ρg| = E|g|/|x| ≤ E ≤ π identically, because |g| ≤ |x|;
+`c8_gold_bound.py` gives a sampled maximum of 3.14156. The earlier "~π/θ" mechanism was wrong.
+Near X, F₂ ~ 1/|δk|² (reviewer), which is integrable in 3D. H_a itself is non-analytic only at the
+measure-zero f = −1 points.
+This gives a/l_P ≈ 1.40 √N_f and Λ_eff ≈ 1.93 π/a. These values include the three π-mode
+species, which are light for a two-tick clock (C7 §5). That caveat is the reason to treat
+b_gold separately.
 
 ## 6. Comparison with the continuum (replacing the cutoff import)
 
@@ -242,8 +257,10 @@ their size is set by θ, not by the Γ cone.
 Take N_f copies of the walk, each one IR Dirac fermion with its doublers included in c_G, and
 no other induced contributions. Then 1/(16πG) = N_f c_G/a², so G = a²/(16π N_f c_G) and
 
-  **a/l_P = √(16π c_G N_f)**: 0.6085 √N_f (b\*, M1), 0.5775 √N_f (b_iso, M1). The range over
-  M1–M4 is 0.43–0.69 √N_f.
+  **a/l_P = √(16π c_G N_f) ∈ [0.43, 0.69] √N_f over the couplings M1–M4** (b\* and b_iso). For M1
+  it is 0.6085 √N_f (b\*) and 0.5775 √N_f (b_iso). At b_gold (M1, θ → 0) it is ≈ 1.40 √N_f.
+  This is a/l_P for the TT stiffness only. It means a physical Newton constant only if the q⁰ terms
+  (ρ_vac, the TT mass) are cancelled and the conformal sector is fixed (caveat 3).
 
 N_f is not fitted. Bosons, gauge fields and the cancellation sectors needed for Λ_cc and for the
 TT q⁰ term (§6) would add their own (possibly negative) contributions to 1/G. This formula
@@ -263,7 +280,8 @@ counts only the walk.
 | cubic anisotropy of the induced spin-2 stiffness | numerical; the O_h structure of K is exact |
 | Lemma L (zero O(q²) lapse response) | proved theorem; numerics agree to 10⁻¹² |
 | continuum sharp-cutoff 13Λ²/(840π²) | exact (sympy) |
-| mass dependence, b_gold values | numerical, reported |
+| mass dependence (b\*, b_iso) | numerical, reported |
+| b_gold θ → 0 limit 3.889×10⁻² (two routes, author and reviewer) | numerical |
 | q⁰ TT mismatch | numerical diagnostic (M1-specific) |
 | P4 coupling, P5 observable identification | supplied premises |
 
@@ -287,3 +305,37 @@ gravity from ⟨TT⟩ (the Adler–Zee formula). The regulator dependence of the
 fermion sign are textbook. As far as I know, what is specific here is the exact Brillouin-zone
 coefficient for this walk, the witnessed coupling non-uniqueness, the cubic decomposition of
 the induced TT stiffness, and Lemma L.
+
+## 11. Proposed repair to main (not applied; this block edits no repo file)
+
+File: `docs/UNIVERSAL_GR_SAKHAROV_GNEWTON_INDUCED_RESIDUAL_IS_METRIC_DOF_POSIT_NARROW_THEOREM_NOTE_2026-06-17.md`,
+section "Current reviewed theorem boundary (2026-10-04)". Current line, verbatim:
+
+```
+equation: `G = 3 pi/(N_f Lambda^2)`. It is conditional on the stated Dirac
+```
+
+Proposed replacement for that line:
+
+```
+equation: `G = 6 pi/(N_f Lambda^2)` (1/(16 pi G) = Lambda^2/(96 pi^2) per Dirac fermion, with the 1/2 of det D = (det D^2)^(1/2) evaluated). It is conditional on the stated Dirac
+```
+
+Reason: Γ_E = −½ log det D² with a proper-time cutoff gives 1/(16πG) = +Λ²/(96π²) per Dirac
+fermion (c8_exact E3; reproduced in REVIEW.md S4). The note's matching line
+(4π)⁻²(1/3)Λ² = Λ²/(48π²) omits the ½, which the note itself lists as "not evaluated".
+Consequential edits for the audit lane: the corrigendum's "Corrected statement"
+(`G/a² = 3π/N_f`, `l_P/a = 1.085` at N_f = 8) would become 6π/N_f and 1.535.
+
+## 12. Review dispositions (REVIEW.md)
+
+| item | verdict | disposition |
+|---|---|---|
+| 1 vertex, Prop. 1, half-density identity | correct | none needed |
+| 2 normalisation c_G = 2c₂/s, Lemma C | correct | none needed |
+| 3 c_G(b\*) = 7.36673×10⁻³, sign, Lemma L | correct (reproduced by tanh-sinh octant quadrature and by a finite-q periodic lattice) | none needed |
+| 4 heat kernel Λ²/(96π²), sharp cutoff 13Λ²/(840π²) | correct | proposed repair to main written as §11; the repo file is not edited |
+| 5a non-uniqueness, anisotropy | correct | the c_G^iso projection convention is now stated (caveat 2) |
+| 5b headline overstated | fix | **applied**: "positive TT stiffness, attractive only if EH"; third caveat (ρ_vac, TT q⁰ term, conformal channel); a/l_P quoted with the 0.43–0.69 √N_f coupling range (headline and §7) |
+| 5c b_gold limit and mechanism | incorrect | **applied**: verified with my own code (new θ = 0.0125 and θ = 0 runs, job D: 3.88948×10⁻², reviewer 3.8894×10⁻²) and `c8_gold_bound.py` (\|ρg\| ≤ π); §5 rewritten; mass-direction convention stated |
+| mass dependence (b\*, b_iso) | not re-verified | remains single-author, reported only |

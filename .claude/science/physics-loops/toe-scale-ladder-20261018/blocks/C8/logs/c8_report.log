@@ -91,6 +91,10 @@ b_gold (massless pi-modes at X; computed at theta > 0 with partition-of-unity ba
      isotropic average c_G = 2.309781e-02 (+-5e-08)
   theta=0.05: zA 4.826530e-02(+-3e-08)  zB 4.617713e-02(+-3e-08)  fA 2.488160e-02(+-7e-09)  fB 2.431321e-02(+-9e-09)  dA 1.683443e-02(+-3e-08)  dB 1.683435e-02(+-5e-09)
      isotropic average c_G = 2.906515e-02 (+-1e-07)
+  theta=0.0125: zA 6.249303e-02(+-1e-08)  zB 5.986360e-02(+-2e-09)  fA 3.032681e-02(+-8e-09)  fB 2.907493e-02(+-3e-08)  dA 1.904872e-02(+-2e-08)  dB 1.904748e-02(+-2e-08)
+     isotropic average c_G = 3.595514e-02 (+-7e-08)
+  theta=0.0: zA 6.870548e-02(+-8e-10)  zB 6.588840e-02(+-2e-08)  fA 3.259936e-02(+-6e-09)  fB 3.107318e-02(+-4e-08)  dA 1.988672e-02(+-2e-08)  dB 1.988366e-02(+-2e-08)
+     isotropic average c_G = 3.889476e-02 (+-1e-07)
 ----------------------------------------------------------------------------------------------------
 Comparison with the continuum (pre-registered criterion 2)
   heat kernel (proper time, one Dirac): c_G = (Lambda a)^2/(96 pi^2): Lambda = 1/a -> 1.055429e-03; Lambda = pi/a -> 1.041667e-02
@@ -107,6 +111,8 @@ Comparison with the continuum (pre-registered criterion 2)
   ('gold', 0.2)     : c_G^iso = 1.679660e-02; Lambda_eff a (heat-kernel equivalent) = 3.9893 = 1.2698 pi;  a/l_P = sqrt(16 pi c_G N_f) = 0.9189 sqrt(N_f)
   ('gold', 0.1)     : c_G^iso = 2.309781e-02; Lambda_eff a (heat-kernel equivalent) = 4.6781 = 1.4891 pi;  a/l_P = sqrt(16 pi c_G N_f) = 1.0775 sqrt(N_f)
   ('gold', 0.05)    : c_G^iso = 2.906515e-02; Lambda_eff a (heat-kernel equivalent) = 5.2477 = 1.6704 pi;  a/l_P = sqrt(16 pi c_G N_f) = 1.2087 sqrt(N_f)
+  ('gold', 0.0125)  : c_G^iso = 3.595514e-02; Lambda_eff a (heat-kernel equivalent) = 5.8367 = 1.8579 pi;  a/l_P = sqrt(16 pi c_G N_f) = 1.3444 sqrt(N_f)
+  ('gold', 0.0)     : c_G^iso = 3.889476e-02; Lambda_eff a (heat-kernel equivalent) = 6.0706 = 1.9323 pi;  a/l_P = sqrt(16 pi c_G N_f) = 1.3982 sqrt(N_f)
 PASS [numerical] bstar M1: Lambda_eff/(pi/a) = 0.841 lies in the pre-declared "same order" window [0.1, 10]
 PASS [numerical] iso M1: Lambda_eff/(pi/a) = 0.798 lies in the pre-declared "same order" window [0.1, 10]
 TOTAL: PASS=21 FAIL=0

@@ -47,7 +47,7 @@ def main():
         pt.swaps()
         if pt.nsw > therm and pt.nsw % every == 0:
             m = pt.measure(range(len(betas)))
-            rows.append([[m[k][key] for key in KEYS] for k in range(len(betas))])
+            rows.append([[m[k].get(key, np.nan) for key in KEYS] for k in range(len(betas))])
     bad = pt.check()
     pt.save(ck)
     if rows:

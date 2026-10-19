@@ -97,3 +97,9 @@ H_a + delta H (block-chain in k) vs the second-order formula on the same k grid;
 - run_all.sh (fast scripts rerun, lattice resumed from the checkpoint): TOTAL: PASS=55 FAIL=0
   (logs/run_all.log). Not done: independent review; the conformal and Newtonian channels; the kick
   coupling K U K; an interval-rigorous quadrature.
+- Review (REVIEW.md) corrections applied. Job D (b_gold theta = 0.0125 and 0, own code) gives
+  c_G^iso = 35.955e-3 and 38.895e-3, confirming the reviewer's 38.894e-3. My earlier "log divergence"
+  came from a fit to theta >= 0.05 only, and the "vertex ~ pi/theta" mechanism was wrong: |rho g| <= pi
+  (c8_gold_bound.py). The headline now says "positive TT stiffness" and carries a third caveat
+  (rho_vac, the TT q^0 term, the conformal channel), and a/l_P is quoted with its 0.43-0.69 coupling range.
+  Added NOTE §11 (proposed repair to the repo Sakharov note, not applied) and §12 (review dispositions).

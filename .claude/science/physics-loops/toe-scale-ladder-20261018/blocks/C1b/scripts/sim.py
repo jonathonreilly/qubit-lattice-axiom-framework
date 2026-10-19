@@ -31,7 +31,7 @@ class Meas:
         self.qs = []
         # q1 = 2pi/L e_b, q2 = 4pi/L e_b (if distinct from q1 mod 2pi and not 0)
         for m in (1, 2):
-            if (2 * m) % L == 0 and m > 1:
+            if m % L == 0:
                 continue
             self.qs.append(m)
         self.ph = {}

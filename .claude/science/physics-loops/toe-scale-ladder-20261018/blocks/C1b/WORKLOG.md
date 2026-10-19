@@ -54,4 +54,20 @@ Physics (V=0, beta = L, also beta = L/2 from the same ladder):
    ground energies; E(beta) is an upper estimate of E0 only up to thermal excitation; reported as such.
 
 ## Status
-- [ ] code (scripts/ctqmc.py), [ ] exact L=2 (scripts/exact_L2.py), [ ] validation, [ ] production
+- [x] code: scripts/ctqmc.py (numba kernel), scripts/sim.py (PT driver), scripts/run_pt.py (resumable chunk runner)
+- [x] exact L=2: scripts/exact_L2.py -> data/exact_L2.json (9600 states, 937 comps, E0=-9.0267209135 matches repo/C1)
+- [~] validation L=2 PT: tags val2_s1, val2_s2 (see Log 02:40)
+
+## Log
+- 01:32 worklog + criteria declared.
+- 01:45-02:35 debugging at L=2 (scratch tests, not kept as runners):
+  * first version: E(beta=1) biased (-4.89 vs -4.976). Found that single plaquette-clusters are often Gauss-illegal
+    alone (static charges); added "super-cluster" merging of charged clusters (+ vertex-free links) at the tau=0
+    sites (partition invariant under flips -> DB kept). Conditional DB of cluster phase verified by enumeration of
+    visited configurations at fixed vertex positions (chi2/dof ~ 1, scratch t14/t16); loop proposal symmetry
+    verified exhaustively in pure Python (t18); dIbar bookkeeping verified against recomputation (t8);
+    Gibbs marker intensities verified (t24). Apparent residual biases in single-beta runs traced to slow mixing
+    between flip components / windings (seed scatter large); PT validation is the decisive test.
+- 02:40 launched PT validation (L=2, 11 betas 0.1..4, 15 min each):
+    cd scripts; python3 run_pt.py val2_s1 2 1 canonical 0.1,0.18,0.25,0.35,0.5,0.7,1.0,1.4,2.0,2.8,4.0 15 2000 1
+    (and val2_s2 ... 2 2 scrambled ...). Re-running the same command continues from data/ckpt/<tag>.npz.

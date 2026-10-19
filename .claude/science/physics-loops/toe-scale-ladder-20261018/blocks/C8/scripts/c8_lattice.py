@@ -75,4 +75,9 @@ elif job == 'C':
         for ch in (('z', 'A'), ('z', 'B'), ('d', 'A')):
             run('gold', th, np.pi/2, 'M1', ch, 128, kap=1.4, gold_balls=True)
             run('gold', th, np.pi/2, 'M1', ch, 96, nr=128, nmu=40, nph=80, gold_balls=True)
+elif job == 'D':                                    # review fix: theta -> 0 at b_gold
+    for th in (0.0125, 0.0):
+        for ch in CHANS[:6]:
+            for N in (96, 128):
+                run('gold', th, np.pi/2, 'M1', ch, N, gold_balls=True)
 print('done', job)

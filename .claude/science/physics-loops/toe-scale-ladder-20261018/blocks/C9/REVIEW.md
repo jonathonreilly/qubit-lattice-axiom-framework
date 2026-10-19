@@ -203,7 +203,7 @@ multiplicity space of S = N/2 − 1; frozen singles make it the same constant c_
 |---|---|---|
 | `review_scripts/logs/r02_steps_run1.txt` | Step D geometry (20 000 random sets + all pairs) and sign; Step G exact nullspace (dim 1) + control (dim 5); 6-cycle witness | TOTAL: PASS=7 FAIL=0 |
 | `review_scripts/logs/r01_n3_run2.txt` | Lemma B random/converse; vector-op dim 9; σ-image search n=3 | TOTAL: PASS=8 FAIL=0 |
-| `review_scripts/logs/r01_n4_run2.txt` | same, n=4 (dim 28) | pending at hand-back (not counted) |
+| `review_scripts/logs/r01_n4_run2.txt` | same, n=4 (dim 28); only 3 starts within budget, all slow-valley convergence toward shifts | TOTAL: PASS=8 FAIL=0 |
 
 **Disclosure.** My first launch of `r01` was given the arguments in the wrong order (n = 200). I
 killed it by hand after Part A, and its log is kept, renamed, as
@@ -221,4 +221,31 @@ in total, as stated. Their dry-run and incomplete logs are disclosed correctly.
 4. Corollary 2: "e.g. O or T" can be "i.e. O or T" among subgroups of the rotation group O
    (cosmetic).
 
-Reviewer counted total (completed official logs r02_steps_run1 + r01_n3_run2): TOTAL: PASS=15 FAIL=0
+Reviewer counted total (r02_steps_run1 + r01_n3_run2 + r01_n4_run4): TOTAL: PASS=23 FAIL=0
+
+## Correction confirmation (2026-10-19)
+
+I re-read all of the corrected NOTE.md.
+- **Step D (new item 2).** For s, s′ ∈ S the bound is |ℓ(s−s′)| ≤ max_S ℓ − min_S ℓ = |ℓ(e)| for
+  every generic ℓ.
+  - By density the bound holds for every ℓ ∈ R^d.
+  - Taking ℓ ⊥ e gives v ∥ e, and then |v| ≤ |e| with v ∈ Z^d gives v ∈ {0, ±e}.
+  - So S = {p, p+e}.
+  This is correct and complete.
+- **Lemma C.** "Generic" is now defined as ℓ injective on Z^d. Correct.
+- **Step (1).** The c_1 attribution is fixed: SU(2) gives some unitary on the multiplicity space,
+  and frozen singles plus TI make it a scalar. Correct.
+- **Corollary 2.** It now reads "i.e. O or T". Correct.
+- **N7.** The brickwork 2Z remark is correct.
+- **Novelty.** Marked unverified. Appropriate.
+- **No new defect found.** The dispositions table matches the review.
+
+**Status line.** The status line now cites my count of PASS=15. With the n = 4 log it is PASS=23
+FAIL=0. The author may update the line; this is cosmetic.
+
+**n = 4 search** (`review_scripts/logs/r01_n4_run4.txt`): TOTAL: PASS=8 FAIL=0. The time budget
+allowed only 3 starts. All 3 converged, slowly, toward single-site shifts: the distance shrank
+under polishing, from at most 1.0e-3 to at most 1.9e-4. None converged to anything else. This is
+weak but consistent evidence.
+
+**Final verdict: READY.**

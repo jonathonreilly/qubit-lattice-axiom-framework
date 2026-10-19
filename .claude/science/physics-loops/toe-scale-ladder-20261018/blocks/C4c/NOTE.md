@@ -2,8 +2,9 @@
 
 **Block:** C4c of `toe-scale-ladder-20261018`, a follow-up to C4b Lemma 3 (the open question: does
 any U(1)-conserving, translation-invariant (TI), O-covariant one-qubit QCA on Z^3 have a nonflat
-two-magnon band?). **Date:** 2026-10-18. **Status:** author note. It has not been independently
-reviewed. No axiom, primitive or dynamics clause is adopted.
+two-magnon band?). **Date:** 2026-10-18 (corrections 2026-10-19). **Status:** Reviewed in a separate agent
+context (same model as the author); unaudited. See `REVIEW.md` and "Review dispositions" below.
+No axiom, primitive or dynamics clause is adopted.
 
 ## Result up front
 
@@ -11,11 +12,12 @@ reviewed. No axiom, primitive or dynamics clause is adopted.
 - **Scoped no-go (proved).** Take any finite product of
   - TI *commuting layers* of U(1)-conserving gates (each layer a closed O-orbit, so the layer is
     O-covariant by itself), and
-  - covariant on-site gates.
+  - covariant on-site gates,
 
-  If every gate support is "covered" (defined below), the QCA is diagonal in the n-basis for the
+  where **each individual gate conserves the U(1) charge**. If every gate support is "covered" (defined below), the QCA is diagonal in the n-basis for the
   axis action, and is the identity for the full action. Covered supports include:
-  - two-site gates at any separation (so phases on |11⟩ and XY/exchange-type gates);
+  - two-site gates at any separation. These are then forced to be |11⟩-phase type, so
+    XY/exchange gates are *excluded* from the family, not members of it;
   - every subset of a unit cube;
   - collinear triples;
   - the 7-site star;
@@ -76,10 +78,13 @@ The light cone is bounded uniformly in n, so every band is flat. Transport requi
 mutually non-commuting layers, as in C4b E1. Numerical sanity check (ZXZ layer, ring L = 10):
 |supp α^n(X_0)| = 5 for n = 1..12 (`logs/c4c_02` (d)).
 
-**Why a layer must be commuting.** In a TI layer, every translate of a gate is applied. An infinite
-product of non-commuting translates needs an ordering. Any ordering function that is invariant
-under Z^3 is constant, so a non-commuting layer either is not TI or is not well defined. This is
-the ordering issue for exchange gates: a "layer of XY gates on all bonds" is not a TI QCA.
+**Scope of "layer" (corrected after review).** Layers are commuting *by definition* of the
+family 𝓕 below. This is a scope choice, not a theorem. An earlier version of this note argued
+that a TI layer must be commuting. That argument was wrong. A lexicographic order is
+translation-invariant as a relation, and ordered (staircase) products of non-commuting
+translates can define TI QCAs. For example, the staircase of SWAPs along each line is the shift,
+which is TI, well defined and U(1)-conserving. Sequential (staircase) circuits of U(1) gates are
+therefore an **open class**, outside 𝓕.
 
 ## Lemma V — vertex lemma (proved; ingredients checked exactly in `logs/c4c_02`)
 
@@ -114,8 +119,11 @@ Covered supports, checked in `logs/c4c_02` and `c4c_05`:
 - collinear triples;
 - the 7-site star.
 
-Of 300 random subsets of the 27-cell, 283 are fully forced and 13 have one unforced site. So
-296/300 are covered. This is a sample, not a theorem about all subsets. Not covered: the 3×3 square
+Of 300 random subsets of the 27-cell with size drawn uniformly from [2, 12], 283 are fully
+forced and 13 have one unforced site, so 296/300 are covered. This figure depends on the size
+distribution. The reviewer finds only 142/300 covered when sizes are drawn uniformly from
+[2, 27]. Large supports are therefore mostly *not* covered. This is a sample, not a theorem about
+all subsets. Not covered: the 3×3 square
 (5 unforced sites) and the full 27-cell (19 unforced sites).
 
 **Proposition S4 (exact certificate; `logs/c4c_04`, PASS = 5).** For the collinear 4-segment the
@@ -182,18 +190,23 @@ If every such c' has the same COM as c, the pair is frozen forever.
 
 **The glider candidate.** The exception gives a symmetry-consistent pair glider. It can be built
 from a two-layer caterpillar: P(z) ↔ Q(z+1), then Q(z) ↔ P(z+1), where P and Q are the two face
-diagonals at height z. The two-layer form is T-covariant, which I checked by hand.
+diagonals at height z. I checked the T-covariance of the two-layer form only by hand. The independent review did
+**not** verify it, so it is unverified.
 
 **Why I could not realise it.** Each layer must be a commuting family. With "rest of region
 empty" controls, two active gates at distance just beyond the control radius toggle each other's
 control. This boundary-shell conflict means the order of the gates matters (argued, not proved
-impossible). Also, the four moving sites form a rectangle in convex position. By Lemma V they must
-lie in the *unforced interior* of a larger gate support, which is outside the covered family.
+impossible). Also, the four moving sites form a rectangle in convex position. This consequence of
+Lemma V holds only if a *single* gate performs the whole move: then the four sites must lie in
+the unforced interior of that gate's larger support, which is outside the covered family. A move
+assembled from several gates is not constrained this way.
 
 ## Answers to the tasks
 
-1. **Family.** The honest family is 𝓕 above. Exchange-type 2-site gates cannot be put in a TI
-   layer: their translates do not commute (Lemma V; also checked directly in `c4c_02` (c)). Layer
+1. **Family.** The honest family is 𝓕 above, which uses commuting layers by definition.
+   Exchange-type 2-site gates are excluded from commuting layers, because their translates do not
+   commute (Lemma V; also checked directly in `c4c_02` (c)). Staircase (sequential) circuits are
+   not covered. Layer
    ordering does not break O for 𝓕, because each layer is orbit-closed and commuting. Products of
    individually non-covariant layers are **not** covered. Within 𝓕, U(1) plus covariance leaves
    only diagonal phase type, so pairs cannot move (Theorem N).
@@ -224,12 +237,17 @@ lie in the *unforced interior* of a larger gate support, which is outside the co
   - 4-segment (diagonal, exact);
   - monomial maps (r = 1 full frozen; axis open channel);
   - emptiness-controlled involution layers (shell conflict, not closed).
-- **Not tried:** 3×3/27-cell gate supports; non-circuit QCAs.
+- **Not tried:** 3×3/27-cell gate supports; staircase (sequential) circuits; non-circuit
+  QCAs.
 - **N7, steelman.** Under the axis action a face-diagonal pair glider is symmetry-allowed at
   range 1, and non-convex gates could realise it. This is why **no universal no-go is claimed**.
 - A numerical search script for non-convex supports (`scripts/c4c_03_commuting_search.py`) was
   written but did not finish within budget, at more than 8 min per restart. It has no log, and
-  nothing is claimed from it.
+  nothing is claimed from it. Reviewer caveat (`REVIEW.md` rv1c): that script normalises only the
+  off-diagonal part, ‖X‖ = 1, and leaves the diagonal part D unbounded. With that normalisation
+  the infimum is 0, reached only as ‖D‖ → ∞, so the script would report spurious near-solutions.
+  Any future numerical search must use a compact normalisation, e.g. ‖X‖² + ‖D‖² = 1. Lemma V
+  and Prop. S4 are exact and unaffected.
 
 ## Reproduction
 
@@ -241,3 +259,17 @@ python3 c4c_04_seg4_exact.py          # PASS=5 FAIL=0 (~ minutes; Groebner)
 python3 c4c_05_forcing_and_bands.py   # PASS=4 FAIL=0
 ```
 Combined: PASS=24 FAIL=1.
+
+## Review dispositions (2026-10-19, `REVIEW.md`)
+
+The review found no load-bearing errors. It confirmed Lemma V, the Prop. S4 Gröbner certificate
+(f5b, own construction), Lemma F and Observation M using independent code.
+
+| item | severity | disposition |
+|---|---|---|
+| "a TI layer must be commuting" is false (the SWAP staircase is the shift) | medium | **accepted.** Paragraph replaced; 𝓕 is commuting by definition; staircase circuits listed as open. Theorem N unaffected |
+| XY gates called covered | low | **accepted.** Reworded: XY gates are excluded, two-site gates are forced to \|11⟩-phase type |
+| 296/300 depends on size distribution | low | **accepted.** Now states [2, 12]; 142/300 for [2, 27] |
+| per-gate U(1) not stated in the summary | low | **accepted.** Stated |
+| caterpillar T-covariance unverified; the Lemma V step needs a single gate doing the whole move | low | **accepted.** Both now stated |
+| unbounded diagonal part in numerical searches | informational | **recorded** under no-go discipline |

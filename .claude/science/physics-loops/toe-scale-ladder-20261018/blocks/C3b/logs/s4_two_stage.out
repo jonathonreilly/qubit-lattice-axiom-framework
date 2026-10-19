@@ -24,3 +24,8 @@ PASS  s4 ell=8 s=0.3 delta=0.02: chi_L slope |.|<1 (no LRO; LRO->3)  slope=-0.14
   elapsed 285s
 ell=12 A=0.0 s=0.0 delta=0.02 L=36 ns=400: chi_L=775.38+-51.83 xi=3.64 C(ell)=0.007 C(L/2)=-0.0118+-0.0016 <L(x)>=16.76 maxL=43.1
 ell=12 A=0.0 s=0.0 delta=0.02 L=72 ns=53: chi_L=630.53+-114.15 xi=3.75 C(ell)=0.024 C(L/2)=-0.0022+-0.0020 <L(x)>=16.93 maxL=49.0
+ell=12 A=0.0 s=0.0 delta=0.02 L=96 ns=24: chi_L=614.20+-157.13 xi=3.73 C(ell)=0.024 C(L/2)=-0.0001+-0.0014 <L(x)>=16.86 maxL=51.1
+PASS  s4 ell=12 s=0.0 delta=0.02: chi_L slope |.|<1 (no LRO; LRO->3)  slope=-0.267+-0.202
+  elapsed 367s
+NUMERICAL: xi/ell at delta=0.02: ell=8 -> 0.354, ell=12 -> 0.311
+TOTAL: PASS=5 FAIL=0

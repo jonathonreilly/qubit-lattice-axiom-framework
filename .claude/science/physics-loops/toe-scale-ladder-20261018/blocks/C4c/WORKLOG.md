@@ -19,3 +19,4 @@
 - Tried by hand: caterpillar realisation of face-diagonal glider with emptiness-controlled
   involution layers -> boundary-shell conflict (argument only).
 - NOTE.md written. Combined PASS=24 FAIL=1.
+- 2026-10-19: applied REVIEW.md corrections to NOTE.md (staircase counterexample, XY wording, sample size range, per-gate U(1), caterpillar caveats, numeric normalisation caveat); added Review dispositions.

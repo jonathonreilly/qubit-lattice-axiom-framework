@@ -50,3 +50,9 @@ PASS  s3 F0.95: Theorem K |C(8)| <= 2P(L>=r/2)  C=1.18e-01+-1.5e-03 bound=1.64e+
 === s3b_scale_of_theorem_H ===
 PASS  s3b.1 Theorem H scale n* is finite (<=1e15) for P0.25, P1.0, F0.5  
 === s4_two_stage ===
+PASS  s4 ell=4 s=0.0 delta=0.0: chi_L slope |.|<1 (no LRO; LRO->3)  slope=0.379+-0.140
+PASS  s4 ell=8 s=0.0 delta=0.0: chi_L slope |.|<1 (no LRO; LRO->3)  slope=-0.125+-0.337
+PASS  s4 ell=8 s=0.0 delta=0.02: chi_L slope |.|<1 (no LRO; LRO->3)  slope=0.021+-0.218
+PASS  s4 ell=8 s=0.3 delta=0.02: chi_L slope |.|<1 (no LRO; LRO->3)  slope=-0.140+-0.135
+PASS  s4 ell=12 s=0.0 delta=0.02: chi_L slope |.|<1 (no LRO; LRO->3)  slope=-0.267+-0.202
+TOTAL: PASS=50 FAIL=2

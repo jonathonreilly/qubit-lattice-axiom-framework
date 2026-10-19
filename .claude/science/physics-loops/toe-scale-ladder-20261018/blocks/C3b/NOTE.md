@@ -10,7 +10,7 @@
 - `NUMERICAL`: Monte Carlo with finite-size scaling. Error bars are 1 SE over independent samples.
 - `OPEN`.
 
-**Runner:** `scripts/run_all.sh` writes `logs/run_all.log` (the TOTAL line is quoted in §9). Per-script output is in `logs/*.out`.
+**Runner:** `scripts/run_all.sh` writes `logs/run_all.log` (`TOTAL: PASS=50 FAIL=2`; the 2 FAILs are declared finite-size criteria, explained in §7). Per-script output is in `logs/*.out`.
 
 ## 0. Result up front
 
@@ -287,7 +287,7 @@ The negative claim is: no internal SSB, and no local LRO for mixing clocks, with
 - `scripts/s3_gaussian_clocks.py`
 - `scripts/s3b_scale_of_theorem_H.py`
 - `scripts/s4_two_stage.py`
-- `scripts/run_all.sh` → `logs/run_all.log`, which ends with the TOTAL line (`PASS=… FAIL=2`). The 2 FAILs are the declared finite-size criteria in s3 for H = 0.8 and 0.95; see §7.
+- `scripts/run_all.sh` → `logs/run_all.log`, which ends with `TOTAL: PASS=50 FAIL=2`. The 2 FAILs are the declared finite-size criteria in s3 for H = 0.8 and 0.95; see §7.
 
 **Literature, not re-derived.**
 - Toom, *Stable and attractive trajectories in multicomponent systems* (1980).

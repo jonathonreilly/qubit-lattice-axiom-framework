@@ -1,0 +1,164 @@
+{
+  "scope": "Exact conjugation identity evaluated in variational MPS; connected covariance is not a binding potential",
+  "rows": [
+    {
+      "L": 8,
+      "cut_energies": [
+        2.878691773964335,
+        3.300405328204004,
+        3.404040472835824,
+        3.4235760978239087,
+        3.4040404469954675,
+        3.30040536671289,
+        2.878691827045291
+      ],
+      "lengths": [
+        {
+          "length": 2,
+          "left_cut": 2,
+          "right_cut": 4,
+          "endcap_energy": 6.8080809198312915,
+          "connected_endcap_covariance": 0.10892975240251168
+        },
+        {
+          "length": 4,
+          "left_cut": 1,
+          "right_cut": 5,
+          "endcap_energy": 6.600810694916894,
+          "connected_endcap_covariance": 0.01642652520038901
+        },
+        {
+          "length": 6,
+          "left_cut": 0,
+          "right_cut": 6,
+          "endcap_energy": 5.757383601009626,
+          "connected_endcap_covariance": 0.005122302748715057
+        }
+      ]
+    },
+    {
+      "L": 12,
+      "cut_energies": [
+        2.891295089957012,
+        3.321990277881494,
+        3.428096730810059,
+        3.454601382151532,
+        3.4611434526541904,
+        3.462388423519789,
+        3.4611435121661467,
+        3.4546014192521968,
+        3.4280967587588993,
+        3.3219903349575355,
+        2.89129511548359
+      ],
+      "lengths": [
+        {
+          "length": 2,
+          "left_cut": 4,
+          "right_cut": 6,
+          "endcap_energy": 6.922286964820337,
+          "connected_endcap_covariance": 0.08646655134880277
+        },
+        {
+          "length": 4,
+          "left_cut": 3,
+          "right_cut": 7,
+          "endcap_energy": 6.909202801403729,
+          "connected_endcap_covariance": 0.0026984029536674115
+        },
+        {
+          "length": 6,
+          "left_cut": 2,
+          "right_cut": 8,
+          "endcap_energy": 6.856193489568959,
+          "connected_endcap_covariance": 0.0007364996247343214
+        },
+        {
+          "length": 8,
+          "left_cut": 1,
+          "right_cut": 9,
+          "endcap_energy": 6.643980612839029,
+          "connected_endcap_covariance": 0.0005142789423366878
+        },
+        {
+          "length": 10,
+          "left_cut": 0,
+          "right_cut": 10,
+          "endcap_energy": 5.782590205440602,
+          "connected_endcap_covariance": 0.00018074731980455283
+        }
+      ]
+    },
+    {
+      "L": 16,
+      "cut_energies": [
+        2.891975223871075,
+        3.32316186235338,
+        3.429317105135179,
+        3.4558514999937495,
+        3.462486868011437,
+        3.4641395191141093,
+        3.4645447533224414,
+        3.4646216170804065,
+        3.464544759825229,
+        3.4641395411753697,
+        3.4624869349294642,
+        3.4558515384606867,
+        3.4293171328390013,
+        3.3231619196541606,
+        2.891975247116557
+      ],
+      "lengths": [
+        {
+          "length": 2,
+          "left_cut": 6,
+          "right_cut": 8,
+          "endcap_energy": 6.92908951314767,
+          "connected_endcap_covariance": 0.08521060679925263
+        },
+        {
+          "length": 4,
+          "left_cut": 5,
+          "right_cut": 9,
+          "endcap_energy": 6.928279060289479,
+          "connected_endcap_covariance": 0.0018620073584187935
+        },
+        {
+          "length": 6,
+          "left_cut": 4,
+          "right_cut": 10,
+          "endcap_energy": 6.924973802940901,
+          "connected_endcap_covariance": 0.0001017521169384139
+        },
+        {
+          "length": 8,
+          "left_cut": 3,
+          "right_cut": 11,
+          "endcap_energy": 6.911703038454436,
+          "connected_endcap_covariance": 3.5737936981306007e-05
+        },
+        {
+          "length": 10,
+          "left_cut": 2,
+          "right_cut": 12,
+          "endcap_energy": 6.85863423797418,
+          "connected_endcap_covariance": 2.8206494697258222e-05
+        },
+        {
+          "length": 12,
+          "left_cut": 1,
+          "right_cut": 13,
+          "endcap_energy": 6.64632378200754,
+          "connected_endcap_covariance": 2.2096311587560535e-05
+        },
+        {
+          "length": 14,
+          "left_cut": 0,
+          "right_cut": 14,
+          "endcap_energy": 5.783950470987632,
+          "connected_endcap_covariance": 7.676263569678099e-06
+        }
+      ]
+    }
+  ]
+}

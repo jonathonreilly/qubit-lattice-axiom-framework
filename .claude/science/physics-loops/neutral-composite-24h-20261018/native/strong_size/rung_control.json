@@ -1,0 +1,7 @@
+{
+  "max_error": 0.0,
+  "physical_qubits_per_rung": 4,
+  "sector_dimension": 8,
+  "checks": 7,
+  "scope": "Exact native parity-coordinate representation, not additional qubits"
+}

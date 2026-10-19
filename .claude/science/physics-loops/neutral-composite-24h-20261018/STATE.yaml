@@ -6,7 +6,7 @@ final_packaging_at: 2026-10-19T00:32:35Z
 checkpoint_interval_minutes: 30
 actual_current_surface_status: bounded-support
 active_route: campaign closed; post-campaign finite-size research recorded separately
-next_action: independent check of finite-size energy and capture bounds
+next_action: compact strongly mixed features with side walls and full-H residual control; pending independent review
 main_at_launch: fa841753c1a6296e5ad45518375660b0f1004769
 prior_campaigns: stopped
 proposal_allowed: false

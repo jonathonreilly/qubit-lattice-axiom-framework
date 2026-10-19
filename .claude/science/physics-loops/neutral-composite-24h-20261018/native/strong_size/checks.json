@@ -1,0 +1,9 @@
+{
+  "endcap_identity_max_error": 1.2789769243681803e-13,
+  "periodic_ED_length_spread": 4.689582056016661e-12,
+  "periodic_ED_residual": 2.860819222391984e-10,
+  "periodic_MPS_minus_ED_energy": 0.00010611056160314547,
+  "algebra_cases": 450,
+  "compact_patch_cases": 56,
+  "scope": "Author consistency checks only; independent review pending; no stable-size certificate"
+}

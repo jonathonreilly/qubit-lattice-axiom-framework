@@ -1,0 +1,203 @@
+{
+  "files": [
+    {
+      "name": ".gitignore",
+      "sha256": "6c2517d7164a23f835bbab5fc1fbf928e67e78ae8613c5f979739376cb1fd729",
+      "bytes": 19,
+      "embedded": true
+    },
+    {
+      "name": "INPUTS.json",
+      "sha256": "b13b3c2241858a7d0da8c1de776d1676de082212ecbb290ee5909be138721e6c",
+      "bytes": 2908,
+      "embedded": true
+    },
+    {
+      "name": "OPERATIONS.md",
+      "sha256": "b2acf03995acee499b3e779044fa7fe90b9b90524b8ac2bc2c7f27c27f9ed05b",
+      "bytes": 479,
+      "embedded": true
+    },
+    {
+      "name": "STRONG_MIXING_SIZE.md",
+      "sha256": "572b37e69dea78d96297128b905f0457e479b229f09af09e00dcaec04c3f2ea7",
+      "bytes": 9327,
+      "embedded": true
+    },
+    {
+      "name": "algebra_control.json",
+      "sha256": "1bb4ac74d3fda20bdf80373febbb9763c98a4e695a4a6308bfec14c128d18059",
+      "bytes": 44671,
+      "embedded": true
+    },
+    {
+      "name": "algebra_control.py",
+      "sha256": "ad09641b832ab1ab2a6621a0c517a43d8801c160d75fdd8bd51c30b22a81ae7b",
+      "bytes": 1159,
+      "embedded": true
+    },
+    {
+      "name": "check_results.py",
+      "sha256": "cf4faab94f48a384056a320f4bad5653379ed74b774c84483ce556b84044246d",
+      "bytes": 1556,
+      "embedded": true
+    },
+    {
+      "name": "checks.json",
+      "sha256": "540c4f42fc8c1be2d4a7e007d33763e3023771d78fca40cca0a96e09574ee7c9",
+      "bytes": 373,
+      "embedded": true
+    },
+    {
+      "name": "compact_patch_control.json",
+      "sha256": "d1b22645938f9d43058d1e5e7d18aaef021a8e80cc34c8e0e35571acda1d82b5",
+      "bytes": 10082,
+      "embedded": true
+    },
+    {
+      "name": "compact_patch_control.py",
+      "sha256": "2a521ac832e9373a270bde7c000defa993df16988da1ce7c7806499ae88b0f7e",
+      "bytes": 875,
+      "embedded": true
+    },
+    {
+      "name": "endcap_control.json",
+      "sha256": "f1e1356040bb0f400bb20a3c0de5c807ec17c3b76ae665a0ba4942d8e958c085",
+      "bytes": 4362,
+      "embedded": true
+    },
+    {
+      "name": "endcap_control.py",
+      "sha256": "6091d372e354bfb5aa4fd52442ac69cd6178fb1dd2526af03a19873085cc72cd",
+      "bytes": 1234,
+      "embedded": true
+    },
+    {
+      "name": "exact_size.json",
+      "sha256": "ead04029e781e1b5f8aa56eada93e176dd474ccea44211a5d5edde2cf5baf3fe",
+      "bytes": 6336,
+      "embedded": true
+    },
+    {
+      "name": "exact_size.py",
+      "sha256": "323193e8e5ed613c60f91c795664dcaef87adfd26541b9ff1169ab66f6a06b52",
+      "bytes": 2496,
+      "embedded": true
+    },
+    {
+      "name": "mps_size.json",
+      "sha256": "085407ef8130bd59919f444f4e6f93a6726c458270f059b44ab2791bd51cbb27",
+      "bytes": 14718,
+      "embedded": true
+    },
+    {
+      "name": "mps_size.py",
+      "sha256": "ca921ef8a086e056e64aed5342610b6cb06c2b08fd38d0a120be32c7dcee9c80",
+      "bytes": 2169,
+      "embedded": true
+    },
+    {
+      "name": "native_rung.py",
+      "sha256": "cceab51bf1423340c3179ad3eac92b87b0b52297e8044b0a053ff12001e3a12f",
+      "bytes": 830,
+      "embedded": true
+    },
+    {
+      "name": "periodic_exact.json",
+      "sha256": "5e5f3de9cedd1c0376f16f5ed6e2b431492708ef29ceaf8a01d372a08ad71ac2",
+      "bytes": 743,
+      "embedded": true
+    },
+    {
+      "name": "periodic_exact.py",
+      "sha256": "71a1ad12917105d4f3f71ea49688c6111d880734c85323a53f2bd52162647a86",
+      "bytes": 1225,
+      "embedded": true
+    },
+    {
+      "name": "periodic_mps.json",
+      "sha256": "37fdf6276ffc9147aa07ff4f3df193ac51ce56871e19edb612f4fbedf5829602",
+      "bytes": 11809,
+      "embedded": true
+    },
+    {
+      "name": "periodic_mps.py",
+      "sha256": "8f514adfef2d0a9de400d5e4b203775ac58eeb4c00371e2db6d0fac0804715fc",
+      "bytes": 2507,
+      "embedded": true
+    },
+    {
+      "name": "periodic_retry.json",
+      "sha256": "8d109697f4ccfcf2ea68e8dddc6dcb9a8d4d681fff857bc05ae13e187c95818e",
+      "bytes": 689,
+      "embedded": true
+    },
+    {
+      "name": "periodic_retry.py",
+      "sha256": "b68b567635316361ca79d7d8483f55832ade756deaa7798f6b8a10ba3bb8666b",
+      "bytes": 1062,
+      "embedded": true
+    },
+    {
+      "name": "periodic_retry_state_16.pkl",
+      "sha256": "9677f88798523d54ee92ba9b9b0941b99a79f3d05c31dd17d0885703e90e3125",
+      "bytes": 3142004,
+      "embedded": false
+    },
+    {
+      "name": "periodic_retry_state_24.pkl",
+      "sha256": "d50549a4018d0c642e546bd17eff64e946f153e9ccb4f1d27e77a2b9bb6abf88",
+      "bytes": 2734999,
+      "embedded": false
+    },
+    {
+      "name": "periodic_state_12.pkl",
+      "sha256": "4c5a11e233b47ea00ff60cb9916a26c7b747a46a51b3f814941eb5b525dade99",
+      "bytes": 4314593,
+      "embedded": false
+    },
+    {
+      "name": "periodic_state_16.pkl",
+      "sha256": "bb05051129a0a2a8316eaf82d93ed2e47d30ba5c1e0e2f780512f932f96001e6",
+      "bytes": 1023220,
+      "embedded": false
+    },
+    {
+      "name": "periodic_state_24.pkl",
+      "sha256": "07418c02e2ca6a726bbf21ae5ca90eaac9dc453b1a231fceda24fb124e8258fe",
+      "bytes": 1725975,
+      "embedded": false
+    },
+    {
+      "name": "periodic_state_8.pkl",
+      "sha256": "b44d66ab54205866408a722a8e5a239909cff5cfcc05ebf78ff86726c2244758",
+      "bytes": 2034441,
+      "embedded": false
+    },
+    {
+      "name": "retry_response.json",
+      "sha256": "435841b1564ea91cb13673880da8e200111822dfaa920466d8a061e7a2730df8",
+      "bytes": 1052,
+      "embedded": true
+    },
+    {
+      "name": "retry_response.py",
+      "sha256": "155f4e2bec2096027db88b45aac15044dab40a969b27481c70d9fbe782083441",
+      "bytes": 1325,
+      "embedded": true
+    },
+    {
+      "name": "rung_control.json",
+      "sha256": "ffb623b17b1e66f005a9a9f5aa28e51249c7d9867abed29d1bd509d02a92d56d",
+      "bytes": 179,
+      "embedded": true
+    },
+    {
+      "name": "rung_control.py",
+      "sha256": "59d25e32a24269ba0153fb77ec7f1e3ca4017913e1a8569e3a65098103d585f3",
+      "bytes": 1137,
+      "embedded": true
+    }
+  ],
+  "scope": "Final author checkpoint; hashes identify local binaries without embedding them; independent review pending"
+}

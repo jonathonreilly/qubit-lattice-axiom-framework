@@ -1,0 +1,678 @@
+{
+  "cases": 56,
+  "all_pass": true,
+  "rows": [
+    {
+      "shape": [
+        3,
+        6,
+        8
+      ],
+      "width": 2,
+      "length": 2,
+      "changed_XX": 0,
+      "changed_YY": 4,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        6,
+        8
+      ],
+      "width": 2,
+      "length": 4,
+      "changed_XX": 0,
+      "changed_YY": 8,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        6,
+        8
+      ],
+      "width": 2,
+      "length": 6,
+      "changed_XX": 0,
+      "changed_YY": 12,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        6,
+        8
+      ],
+      "width": 4,
+      "length": 2,
+      "changed_XX": 0,
+      "changed_YY": 4,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        6,
+        8
+      ],
+      "width": 4,
+      "length": 4,
+      "changed_XX": 0,
+      "changed_YY": 8,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        6,
+        8
+      ],
+      "width": 4,
+      "length": 6,
+      "changed_XX": 0,
+      "changed_YY": 12,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 2,
+      "length": 2,
+      "changed_XX": 0,
+      "changed_YY": 4,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 2,
+      "length": 4,
+      "changed_XX": 0,
+      "changed_YY": 8,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 2,
+      "length": 6,
+      "changed_XX": 0,
+      "changed_YY": 12,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 2,
+      "length": 8,
+      "changed_XX": 0,
+      "changed_YY": 16,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 2,
+      "length": 10,
+      "changed_XX": 0,
+      "changed_YY": 20,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 4,
+      "length": 2,
+      "changed_XX": 0,
+      "changed_YY": 4,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 4,
+      "length": 4,
+      "changed_XX": 0,
+      "changed_YY": 8,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 4,
+      "length": 6,
+      "changed_XX": 0,
+      "changed_YY": 12,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 4,
+      "length": 8,
+      "changed_XX": 0,
+      "changed_YY": 16,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 4,
+      "length": 10,
+      "changed_XX": 0,
+      "changed_YY": 20,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 6,
+      "length": 2,
+      "changed_XX": 0,
+      "changed_YY": 4,
+      "changed_ZZ": 12
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 6,
+      "length": 4,
+      "changed_XX": 0,
+      "changed_YY": 8,
+      "changed_ZZ": 12
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 6,
+      "length": 6,
+      "changed_XX": 0,
+      "changed_YY": 12,
+      "changed_ZZ": 12
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 6,
+      "length": 8,
+      "changed_XX": 0,
+      "changed_YY": 16,
+      "changed_ZZ": 12
+    },
+    {
+      "shape": [
+        3,
+        8,
+        12
+      ],
+      "width": 6,
+      "length": 10,
+      "changed_XX": 0,
+      "changed_YY": 20,
+      "changed_ZZ": 12
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 2,
+      "length": 2,
+      "changed_XX": 0,
+      "changed_YY": 4,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 2,
+      "length": 4,
+      "changed_XX": 0,
+      "changed_YY": 8,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 2,
+      "length": 6,
+      "changed_XX": 0,
+      "changed_YY": 12,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 2,
+      "length": 8,
+      "changed_XX": 0,
+      "changed_YY": 16,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 2,
+      "length": 10,
+      "changed_XX": 0,
+      "changed_YY": 20,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 2,
+      "length": 12,
+      "changed_XX": 0,
+      "changed_YY": 24,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 2,
+      "length": 14,
+      "changed_XX": 0,
+      "changed_YY": 28,
+      "changed_ZZ": 4
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 4,
+      "length": 2,
+      "changed_XX": 0,
+      "changed_YY": 4,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 4,
+      "length": 4,
+      "changed_XX": 0,
+      "changed_YY": 8,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 4,
+      "length": 6,
+      "changed_XX": 0,
+      "changed_YY": 12,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 4,
+      "length": 8,
+      "changed_XX": 0,
+      "changed_YY": 16,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 4,
+      "length": 10,
+      "changed_XX": 0,
+      "changed_YY": 20,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 4,
+      "length": 12,
+      "changed_XX": 0,
+      "changed_YY": 24,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 4,
+      "length": 14,
+      "changed_XX": 0,
+      "changed_YY": 28,
+      "changed_ZZ": 8
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 6,
+      "length": 2,
+      "changed_XX": 0,
+      "changed_YY": 4,
+      "changed_ZZ": 12
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 6,
+      "length": 4,
+      "changed_XX": 0,
+      "changed_YY": 8,
+      "changed_ZZ": 12
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 6,
+      "length": 6,
+      "changed_XX": 0,
+      "changed_YY": 12,
+      "changed_ZZ": 12
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 6,
+      "length": 8,
+      "changed_XX": 0,
+      "changed_YY": 16,
+      "changed_ZZ": 12
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 6,
+      "length": 10,
+      "changed_XX": 0,
+      "changed_YY": 20,
+      "changed_ZZ": 12
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 6,
+      "length": 12,
+      "changed_XX": 0,
+      "changed_YY": 24,
+      "changed_ZZ": 12
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 6,
+      "length": 14,
+      "changed_XX": 0,
+      "changed_YY": 28,
+      "changed_ZZ": 12
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 8,
+      "length": 2,
+      "changed_XX": 0,
+      "changed_YY": 4,
+      "changed_ZZ": 16
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 8,
+      "length": 4,
+      "changed_XX": 0,
+      "changed_YY": 8,
+      "changed_ZZ": 16
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 8,
+      "length": 6,
+      "changed_XX": 0,
+      "changed_YY": 12,
+      "changed_ZZ": 16
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 8,
+      "length": 8,
+      "changed_XX": 0,
+      "changed_YY": 16,
+      "changed_ZZ": 16
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 8,
+      "length": 10,
+      "changed_XX": 0,
+      "changed_YY": 20,
+      "changed_ZZ": 16
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 8,
+      "length": 12,
+      "changed_XX": 0,
+      "changed_YY": 24,
+      "changed_ZZ": 16
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 8,
+      "length": 14,
+      "changed_XX": 0,
+      "changed_YY": 28,
+      "changed_ZZ": 16
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 10,
+      "length": 2,
+      "changed_XX": 0,
+      "changed_YY": 4,
+      "changed_ZZ": 20
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 10,
+      "length": 4,
+      "changed_XX": 0,
+      "changed_YY": 8,
+      "changed_ZZ": 20
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 10,
+      "length": 6,
+      "changed_XX": 0,
+      "changed_YY": 12,
+      "changed_ZZ": 20
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 10,
+      "length": 8,
+      "changed_XX": 0,
+      "changed_YY": 16,
+      "changed_ZZ": 20
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 10,
+      "length": 10,
+      "changed_XX": 0,
+      "changed_YY": 20,
+      "changed_ZZ": 20
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 10,
+      "length": 12,
+      "changed_XX": 0,
+      "changed_YY": 24,
+      "changed_ZZ": 20
+    },
+    {
+      "shape": [
+        3,
+        12,
+        16
+      ],
+      "width": 10,
+      "length": 14,
+      "changed_XX": 0,
+      "changed_YY": 28,
+      "changed_ZZ": 20
+    }
+  ]
+}

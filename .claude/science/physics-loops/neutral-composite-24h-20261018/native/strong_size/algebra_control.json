@@ -1,0 +1,2707 @@
+{
+  "cases": 450,
+  "all_pass": true,
+  "scope": "Only specified full-transverse-width strings on thin grids",
+  "rows": [
+    {
+      "L": 4,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 4,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 5,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 5,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 6,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 6,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 6,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 6,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 7,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 7,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 7,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 7,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 8,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 8,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 8,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 8,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 8,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 8,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 9,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 9,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 9,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 9,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 9,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 9,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 10,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 10,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 10,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 10,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 10,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 10,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 10,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 10,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 11,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 11,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 11,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 11,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 11,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 11,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 11,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 11,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 12,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 12,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 12,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 12,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 12,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 12,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 12,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 12,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 12,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 12,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 13,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 13,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 13,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 13,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 13,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 13,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 13,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 13,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 13,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 13,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 14,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 14,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 14,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 14,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 14,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 14,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 14,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 14,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 14,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 14,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 14,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 14,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 15,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 15,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 15,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 15,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 15,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 15,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 15,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 15,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 15,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 15,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 15,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 15,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 16,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 16,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 16,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 16,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 16,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 16,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 16,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 16,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 16,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 16,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 16,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 16,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 16,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 16,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 17,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 17,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 17,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 17,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 17,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 17,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 17,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 17,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 17,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 17,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 17,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 17,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 17,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 17,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 18,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 19,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": false,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 20,
+      "periodic_z": true,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": false,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 21,
+      "periodic_z": true,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": false,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": false,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": true,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 22,
+      "periodic_z": true,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": false,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": false,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": true,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 23,
+      "periodic_z": true,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": false,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": false,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": false,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": true,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": true,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 24,
+      "periodic_z": true,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": false,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": false,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": false,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": true,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": true,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 25,
+      "periodic_z": true,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": false,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": false,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": false,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": false,
+      "length": 24,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": true,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": true,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": true,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 26,
+      "periodic_z": true,
+      "length": 24,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": false,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": false,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": false,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": false,
+      "length": 24,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": true,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": true,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": true,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 27,
+      "periodic_z": true,
+      "length": 24,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": false,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": false,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": false,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": false,
+      "length": 24,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": false,
+      "length": 26,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": true,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": true,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": true,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": true,
+      "length": 24,
+      "changed_bonds": 4
+    },
+    {
+      "L": 28,
+      "periodic_z": true,
+      "length": 26,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": false,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": false,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": false,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": false,
+      "length": 24,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": false,
+      "length": 26,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": true,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": true,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": true,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": true,
+      "length": 24,
+      "changed_bonds": 4
+    },
+    {
+      "L": 29,
+      "periodic_z": true,
+      "length": 26,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": false,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": false,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": false,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": false,
+      "length": 24,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": false,
+      "length": 26,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": false,
+      "length": 28,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": true,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": true,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": true,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": true,
+      "length": 24,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": true,
+      "length": 26,
+      "changed_bonds": 4
+    },
+    {
+      "L": 30,
+      "periodic_z": true,
+      "length": 28,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": false,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": false,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": false,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": false,
+      "length": 24,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": false,
+      "length": 26,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": false,
+      "length": 28,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": true,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": true,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": true,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": true,
+      "length": 24,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": true,
+      "length": 26,
+      "changed_bonds": 4
+    },
+    {
+      "L": 31,
+      "periodic_z": true,
+      "length": 28,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 24,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 26,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 28,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": false,
+      "length": 30,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 2,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 4,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 6,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 8,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 10,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 12,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 14,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 16,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 18,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 20,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 22,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 24,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 26,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 28,
+      "changed_bonds": 4
+    },
+    {
+      "L": 32,
+      "periodic_z": true,
+      "length": 30,
+      "changed_bonds": 4
+    }
+  ]
+}

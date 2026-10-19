@@ -1,0 +1,52 @@
+{
+  "base_commit": "8f8bcadc0c22f6bee3ad949c524f0bb534b2465a",
+  "main_checked": "847eb8a25bbeafd3228a56c503ef3e6030410234",
+  "inputs": [
+    {
+      "path": "/private/tmp/scalar-environment-20261017/.claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_basis.py",
+      "sha256": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+      "bytes": 3088
+    },
+    {
+      "path": "/private/tmp/scalar-environment-20261017/.claude/science/physics-loops/neutral-composite-24h-20261018/native/compass_sector_solve.py",
+      "sha256": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+      "bytes": 2454
+    },
+    {
+      "path": "/private/tmp/scalar-environment-20261017/.claude/science/physics-loops/neutral-composite-24h-20261018/native/stationary_2x2x8_plus.npz",
+      "sha256": "be3065e52bcd86cca06d3ddfde11111a8a9e68316a3d03db40be1187e4f75823",
+      "bytes": 243706305
+    },
+    {
+      "path": "/private/tmp/scalar-environment-20261017/.claude/science/physics-loops/neutral-composite-24h-20261018/native/stationary_tube_mps_refined_8.pkl",
+      "sha256": "b53ac388b666c3c0051c4215b7096897d7a76750df1e661552a12e718f5825fc",
+      "bytes": 2034441
+    },
+    {
+      "path": "/private/tmp/scalar-environment-20261017/.claude/science/physics-loops/neutral-composite-24h-20261018/native/stationary_tube_mps_refined_12.pkl",
+      "sha256": "482c0eef0470e51d465d9ee25355b7c6e44ed57cb39ed460e209b2b936d66b5c",
+      "bytes": 4394465
+    },
+    {
+      "path": "/private/tmp/scalar-environment-20261017/.claude/science/physics-loops/neutral-composite-24h-20261018/native/stationary_tube_mps_refined_16.pkl",
+      "sha256": "0d0b2202c3f3b57ad34621549df025cbb85cc90e15328a7e7fe876756a7c881b",
+      "bytes": 6754676
+    },
+    {
+      "path": "/private/tmp/scalar-environment-20261017/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_tube_mps.py",
+      "sha256": "57e33fa3c4fe6fcc3ccced0ed5c68bc8e782de9982c3ef483f83ff56b2896942",
+      "bytes": 2559
+    },
+    {
+      "path": "/private/tmp/scalar-environment-20261017/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_tube_mps_bounded.py",
+      "sha256": "612514ab6526cace781c5cc0a25ad5a5e27f11229de4c926d93331ac4bb086fd",
+      "bytes": 1831
+    },
+    {
+      "path": "/private/tmp/scalar-environment-20261017/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_tube_mps_refined.py",
+      "sha256": "e5c6b3b478058b1f006596aaf86b195628ce7bfe81f51a54d8e2452cf1ae6f56",
+      "bytes": 1844
+    }
+  ],
+  "portability": "Open MPS and L8 ED calculations consumed existing local binary checkpoints, hashes recorded here. They are not embedded. Periodic ED/MPS and algebra controls regenerate directly from the included source plus tracked CSS code. All inputs are synthetic model development, no empirical data."
+}

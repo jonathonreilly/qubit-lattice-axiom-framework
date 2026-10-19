@@ -63,3 +63,11 @@ C9/03 optimisation search for alpha(P_{0,e1}) candidates; seed 11; windows=1D
 [1D] start 58: residual 4.96e-01 nfev 14 t=760s
 [1D] start 59: residual 4.96e-01 nfev 11 t=762s
 [1D] start 60: residual 4.96e-01 nfev 13 t=763s
+[1D] start 61: residual 9.92e-01 nfev 756 t=861s
+[1D] wall-clock budget 840s reached after 62 starts
+[1D] 62 starts, 16 converged to residual < 1e-8; hits per expected bond: {((1,), (2,)): 9, ((0,), (1,)): 5, ((2,), (3,)): 2}
+PASS [1D] every converged solution is a NN e1-bond swap (0 other solutions)
+PASS [1D] each expected bond swap is found
+PASS [1D] NN swaps satisfy all constraints (residual 4.7e-15)
+PASS control: P_{03} fails [g, T_3 g] = 0 (constraints are active)
+TOTAL: PASS=4 FAIL=0

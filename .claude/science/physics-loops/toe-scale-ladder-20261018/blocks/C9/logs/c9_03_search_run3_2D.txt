@@ -1,0 +1,16 @@
+C9/03 optimisation search for alpha(P_{0,e1}) candidates; seed 11; windows=2D
+[2D] window [(0, 0), (1, 0), (0, 1), (1, 1)]; Hermitian SU(2)-invariant algebra dim = 14
+[2D] imposed commuting translates: 6
+[2D] expected solutions: [((0, 0), (1, 0)), ((0, 1), (1, 1))]
+[2D] start 0: residual 4.96e-01 nfev 11 t=3s
+[2D] start 1: residual 1.49e+00 nfev 10 t=5s
+[2D] start 2: residual 4.96e-01 nfev 21 t=8s
+[2D] start 3: residual 4.96e-01 nfev 20 t=10s
+[2D] start 4: residual 4.96e-01 nfev 22 t=13s
+[2D] start 5: residual 1.49e+00 nfev 22 t=16s
+[2D] start 6: residual 4.96e-01 nfev 13 t=18s
+[2D] start 7: residual 1.49e+00 nfev 11 t=21s
+[2D] start 8: residual 1.49e+00 nfev 22 t=24s
+[2D] start 9: residual 4.96e-01 nfev 9 t=26s
+[2D] start 10: residual 4.96e-01 nfev 12 t=29s
+[2D] start 11: residual 4.96e-01 nfev 11 t=32s

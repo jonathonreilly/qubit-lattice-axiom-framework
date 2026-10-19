@@ -179,3 +179,32 @@ r4 reproduces the KJMA numerics with an independent Dijkstra site-first-passage 
 - `review_scripts/run_review.sh` → `review_scripts/logs/review_all.log` (`TOTAL: PASS=43 FAIL=0`)
 
 **Final verdict: READY after the text fixes F1–F6.** None of them changes a proof.
+
+## Correction confirmation
+
+I re-read the complete corrected `NOTE.md` (commit 54d7c144e), §0–§10, and diffed it against the reviewed commit 906cbc171. The proofs of Witness X and of Theorems K1, M, H-a/H-b, J1–J3 are unchanged. I did not re-run either suite, and my evidence is unchanged (`review_scripts/logs/review_all.log`, `TOTAL: PASS=43 FAIL=0`).
+
+| Finding | Resolved? |
+|---|---|
+| F1 | **Yes.** K3 and §0 item 2 now require `T` itself stationary and a nearest-neighbour rule. The level-clock counterexample and the range-`h` caveat are stated. |
+| F2 | **Yes.** The claim is restricted to spectral density bounded below, and the `W − W(·+e1)` counterexample is recorded. |
+| F3 | **Yes.** The exponent is now `lap^{−(d/2+H)}`, and that is correct: `∫(1−cos k·r)|k|^{−d−2H}d^dk ∝ r^{2H}`. The floor `(4d)^{−(d/2+H)}` follows from `lap ≤ 4d`. The intrinsic-plus-white-noise decomposition and the remark that `T` is defined only modulo a constant are both correct. |
+| F4 | **Yes.** K2 is now stated with a stationary orientation field, which is all its proof uses. The new J argument for no SSB is **correct**; see the check below. |
+| F5 | **Yes.** The slopes now match `logs/s2_nucleation_growth.out`, and ξ/ℓ is stated as "0.3–0.5, decreasing", with the δ pooling noted. |
+| F6 | **Yes.** Only the bound's guaranteed scale is said to diverge. The clock is noted as unconverged at H = 0.95. `ε^{−1/(d+1)}` is labelled an upper bound, and N1 item 3 is aligned with this. |
+
+**Check of the new J no-SSB argument.**
+- Let `ζ` be the process with selector `Φ`, and define the twisted selector `Φ'(H,u) := γ^{−1}Φ(γH,u)`.
+- `Φ'` has law `r(·|H)`, by the assumed equivariance of the content law.
+- On the same data, `ζ' := γ^{−1}ζ` satisfies the dynamics with selector `Φ'`:
+  - acceptance is unchanged, since `λ(H_ζ) = λ(γH_{ζ'}) = λ(H_{ζ'})`;
+  - the contents satisfy `γ^{−1}Φ(H_ζ,U) = Φ'(H_{ζ'},U)`.
+- On each finite reach the record law is the time-ordered sequential kernel, which does not depend on the selector. Hence `law(γ^{−1}ζ) = law(ζ)`.
+- Together with mixing (translation-covariant rates, FFIID), this gives a unique, mixing, Γ-invariant law, so there is no SSB.
+- The conclusion is correct. The note's phrase "apply γ to the iid data" is loose. Γ acts on the menu, not on the marks `U`, so the mechanism is the twisted selector plus selector-independence of the law. Suggested wording: "by the twisted selector `γ^{−1}Φ(γ·,u)` and selector-independence of the law". This is editorial.
+
+**New issues introduced (editorial, non-blocking).**
+- **N-a.** H-G, first bullet: "(H1) is not established with finite correlation scale" is garbled. The words "with finite correlation scale" belong to the earlier phrase "smooth fields with finite correlation scale".
+- **N-b.** The J wording described in the check above.
+
+**Final verdict: READY.** No mathematical defect remains. N-a and N-b are editorial and can be fixed without re-review.

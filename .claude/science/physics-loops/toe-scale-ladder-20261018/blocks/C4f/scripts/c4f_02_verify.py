@@ -58,6 +58,10 @@ def stress_config(DU, rng, bg, nplace):
         if ctl == 2: c[lay['G'][u]] = True
     return c
 
+def nplace_draw(rng, V):
+    """log-uniform number of unit placements in [3, V/8]"""
+    return int(np.exp(rng.uniform(np.log(3), np.log(V / 8))))
+
 def to_set(T, c):
     return frozenset(tuple(int(v) for v in T.coords[i]) for i in np.nonzero(c)[0])
 
@@ -104,7 +108,7 @@ def inv_dense():
         nst = 60 if L == 10 else 25
         for bg in bgs:
             for i in range(nst):
-                c = stress_config(DU, rng, bg, int(rng.integers(T.V // 40, T.V // 8)))
+                c = stress_config(DU, rng, bg, nplace_draw(rng, T.V))
                 a, x1 = Dn.apply(DU.L1, c, True); b, x2 = Dn.apply(DU.L2, a, True)
                 c1 = Dn.apply(DU.L2, c)
                 nb += not np.array_equal(Dn.apply(DU.L1, a), c)
@@ -124,8 +128,8 @@ def inv_dense():
 def sym():
     rng = np.random.default_rng(7)
     L = 10; DU = Dn.DenseU(L); T = DU.T
-    cfgs = [stress_config(DU, rng, bg, int(rng.integers(T.V // 40, T.V // 8)))
-            for bg in ('empty', 'full', 'half', 'slab', 'rand') for _ in range(6)]
+    cfgs = [stress_config(DU, rng, bg, nplace_draw(rng, T.V))
+            for bg in ('empty', 'full', 'half', 'slab', 'rand') for _ in range(40)]
     acts = 0
     imgs = []
     for c in cfgs:
@@ -158,9 +162,9 @@ def sym():
             return Dm[0, 0] ** n1 * Dm[1, 1] ** n0
         for c, b in zip(cfgs, imgs):
             okph &= abs(amp(c) - amp(b)) < 1e-9
-    check(f'U M_R = M_R U for all 12 R in T (M_R = P_R) on 30 stress configs [{acts} crossings]',
+    check(f'U M_R = M_R U for all 12 R in T (M_R = P_R) on 200 stress configs [{acts} crossings]',
           all(okR[i] for i in range(24) if i not in ODD))
-    check('U M_R = M_R U for all 12 odd R (M_R = P_R o C) on 30 stress configs', all(okR[i] for i in ODD))
+    check('U M_R = M_R U for all 12 odd R (M_R = P_R o C) on 200 stress configs', all(okR[i] for i in ODD))
     check('explicit SU(2) amplitudes of beta_R agree on c and Uc (all 24 R): beta_R U = U beta_R exactly', okph)
     # witnesses: C4e-style symmetry fails here
     pair = np.zeros(T.V, bool); pair[T.idx([(0, 0, 0), (1, 1, 0)])] = True

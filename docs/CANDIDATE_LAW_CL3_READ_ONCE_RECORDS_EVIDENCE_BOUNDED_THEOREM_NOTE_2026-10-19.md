@@ -13,11 +13,11 @@ runner: scripts/candidate_law_cl3_read_once_records_evidence_2026_10_19.py
 Claim type: bounded_theorem.
 Primary runner: `scripts/candidate_law_cl3_read_once_records_evidence_2026_10_19.py`.
 
-The [proposal register](CANDIDATE_LAWS.md) is provenance context with zero premise weight. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) do not choose the walks, jump rates, record rules or readouts below. The note reports what happens in those explicitly supplied models. It motivates the read-once clause; it does not derive it, and neither model is offered as physical dynamics.
+The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) do not choose the walks, jump rates, record rules or readouts below. The note reports what happens in those explicitly supplied models. It motivates the read-once clause; it does not derive it, and neither model is offered as physical dynamics.
 
 ## Question
 
-Burn fronts of the register's relay definition form a record at a site each step. Two readings of such records were compared. In the first, the records are readable and the odds condition on them. In the second, each record's single read is taken by the next site of its relay, so no other reader exists. The diagnostics ask what goes wrong in the first reading.
+A relay, as defined in the register, forms a record at a site each step. Two readings of such records were compared. In the first, the records are readable and the odds condition on them. In the second, each record's single read is taken by the next site of its relay, so no other reader exists. The diagnostics ask what goes wrong in the first reading.
 
 ## Part A: a position record every tick
 

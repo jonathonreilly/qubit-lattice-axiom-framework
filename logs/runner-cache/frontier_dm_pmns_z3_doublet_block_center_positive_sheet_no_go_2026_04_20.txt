@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py
-runner_sha256: eec17b671ca04df0872ec11f602283fa851121097052c0fe50bba6f69b4064af
-input_fingerprint_sha256: 34db0ce7bc74c4b37eca265cb75cfd2a231297dee84d58fcafdbadb90644bf6a
+runner_sha256: b258aaf612da4603ac97ce3d320f6d6a693687b0a78b117ae00fc6b732555423
+input_fingerprint_sha256: c84477b3f23ba9b5467117157df043463d9c132a797121748861b2347ec29295
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 1.05
+elapsed_sec: 1.46
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -42,11 +42,11 @@ PART 3: CONDITIONAL VALUE — CENTER LAW CUTS THE EXACT TARGET TO A TWO-SHEET PA
   [PASS] They differ only by the sheet flip delta_src -> -delta_src and I_src -> -I_src  (delta_src=(-0.728938949196,0.728938949196))
 
 ========================================================================================
-PART 4: THE NOTE RECORDS THE CORRECT NO-GO STATUS
+PART 4: DOCUMENTARY SCOPE CHECKS (NOT PROOF OR AUDIT AUTHORITY)
 ========================================================================================
   [PASS] The new note states that center law + I12 does not close I5
   [PASS] The note records the local 3-real positive-sheet center locus
-  [PASS] The current authoritative I5 status note still treats I5 as open
+  LOCAL_SELECTOR_DOCUMENTARY_SCOPE (unscored): finite_diagnostic_boundary_present=False; open_proof_obligations_present=False. Text presence is not mathematical proof or audit authority; the obsolete I5 authority score is not included in PASS/FAIL totals.
 
 ========================================================================================
 PART 5: N5 EXECUTION CERTIFICATE -- WHAT THIS RUNNER RESOLVES
@@ -68,7 +68,7 @@ RESULT
     - so I5 remains open, but the live missing object is now sharper than
       before
 
-PASS=12 FAIL=0
+PASS=11 FAIL=0
 
 ----- stderr -----
 

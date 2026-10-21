@@ -168,6 +168,11 @@ def main() -> int:
     for name,obs in [('pin',obs1),('Basin 2',obs2),('Basin X under supplied pairing',obsx)]:print(name,obs['sin_dcp'],obs['det_H'])
     print('Conjugate control is for Hermitian matrices generally; fixed positive-gamma chart membership is not claimed.')
     print('No all-basin exclusion, observational confidence level, or framework falsification follows.')
+    print("per_element: supplied matrix entries and eigenvector quartet checked; no entrywise physical selection rule derived.")
+    print("per_site: not executed; no spatial sites or site-dependent dynamics are represented in this finite chart comparison.")
+    print("per_mode: not executed; no physical mode decomposition or mode-dependent CP selector is constructed.")
+    print("per_block: the supplied three-dimensional pin, two fitted candidates and conjugate matrix are checked; no exhaustive block family certified.")
+    print("lattice_wide: not executed; no lattice limit, all-basin exclusion or physical source-selection theorem is established.")
     print(f'PASS={PASS_COUNT} FAIL={FAIL_COUNT}')
     return 1 if FAIL_COUNT else 0
 

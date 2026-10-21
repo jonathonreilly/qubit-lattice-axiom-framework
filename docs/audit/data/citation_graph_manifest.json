@@ -1,5 +1,5 @@
 {
- "edge_count": 16342,
+ "edge_count": 16336,
  "node_count": 7407,
  "nodes": {
   "3d_correction_master_note": {
@@ -5551,8 +5551,8 @@
    "out_degree": 2
   },
   "dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15": {
-   "deps_hash": "37f1d28ff4f4",
-   "out_degree": 4
+   "deps_hash": "3fdb94cdfaa8",
+   "out_degree": 3
   },
   "dm_neutrino_observable_bank_exhaustion_theorem_note_2026-04-17": {
    "deps_hash": "a73e6f7b3428",
@@ -5919,8 +5919,8 @@
    "out_degree": 3
   },
   "dm_pmns_native_current_last_mile_reduction_theorem_note_2026-04-21": {
-   "deps_hash": "46acc91605b3",
-   "out_degree": 7
+   "deps_hash": "c5a160654d2f",
+   "out_degree": 2
   },
   "dm_pmns_ne_seed_surface_exact_source_manifold_theorem_note_2026-04-20": {
    "deps_hash": "ad4dee777f3f",

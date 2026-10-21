@@ -1,5 +1,16 @@
 # Conditional parity and supplied-orbit boundary record
 
+**Type:** meta
+**Scope:** procedural review checklist; no autonomous theorem, no-go or audit verdict.
+
+The entries summarize the reviewed boundaries of the following source notes;
+mathematical statements and execution evidence belong to those sources and their
+primaries, not to this checklist as a separate proof authority:
+
+- [Even-data sign ambiguity](../../DM_LEPTOGENESIS_PMNS_SELECTOR_BANK_CP_SHEET_BLINDNESS_THEOREM_NOTE_2026-04-16.md)
+- [Stationary CP boundary](../../DM_LEPTOGENESIS_PMNS_STATIONARY_CP_INCOMPATIBILITY_THEOREM_NOTE_2026-04-16.md)
+- [Supplied microscopic comparisons](../../DM_LEPTOGENESIS_PMNS_MICROSCOPIC_SELECTOR_REDUCTION_THEOREM_NOTE_2026-04-17.md)
+
 This is partial narrowing, not a universal no-go or a five-closed-route packet PASS.
 
 ## N1 — Alternative routes

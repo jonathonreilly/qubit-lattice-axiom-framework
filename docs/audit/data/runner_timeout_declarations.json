@@ -445,6 +445,16 @@
       "source_sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
       "timeout_sec": 300,
       "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
+    },
+    "scripts/frontier_ckm_brocard_polynomial_vieta_structural_integers.py": {
+      "source_sha256": "be935a33511e94bb5879d577f99a538f1980269c1786708aa800c99d976ab38d",
+      "timeout_sec": 300,
+      "reason": "Bounded CKM scoped-source replay cap; inherited authority failures remain diagnostic, no physics certification. Source changes invalidate this cap."
+    },
+    "scripts/frontier_ckm_brocard_q_polynomial_perfect_square_decomposition.py": {
+      "source_sha256": "c0f3b1bff55025d355eec9594c339fb3539d7d0dba5560b9a3f5e9250498b88b",
+      "timeout_sec": 300,
+      "reason": "Bounded CKM scoped-source replay cap; inherited authority failures remain diagnostic, no physics certification. Source changes invalidate this cap."
     }
   }
 }

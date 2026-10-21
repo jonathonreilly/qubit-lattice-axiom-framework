@@ -172,6 +172,18 @@ def s3_ratio_inversion_at_d4() -> bool:
     numerical = float(factor.evalf())
     return abs(numerical - 0.967168210133835) < 1e-12
 
+def s3_equal_energy_temperature_ratio() -> bool:
+    # Equal energies have different species coefficients; do not reuse the
+    # equal-temperature energy ratio as T_F/T_B.
+    r = sp.Rational(7, 8)
+    t_f, c = sp.symbols("t_f c", positive=True)
+    t_b = r ** sp.Rational(1, 4) * t_f
+    equal_energy = sp.simplify(c * t_b**4 - r * c * t_f**4) == 0
+    old_t_b = t_f / r ** sp.Rational(1, 4)
+    old_fails = sp.simplify(c * old_t_b**4 - r * c * t_f**4) != 0
+    return equal_energy and old_fails
+
+
 def s3_d_dependence() -> bool:
     # At d != 4, (eta(d)/zeta(d))^(1/d) does NOT equal (7/8)^(1/4)
     # d=2: eta(2)/zeta(2) = 1/2; (1/2)^(1/2) = 0.7071
@@ -196,6 +208,8 @@ check("(B1) at d=4, alpha = 1/4 (dimensional fourth-root compression)",
 check("(B4) ratio inversion: (7/8)^(1/4) ≈ 0.967168 (10⁻¹² precision)",
       s3_ratio_inversion_at_d4,
       "Stefan-Boltzmann scale conversion")
+check("equal-energy T_B/T_F=(7/8)^(1/4); inverse old direction fails",
+      s3_equal_energy_temperature_ratio, "substitution into both species energy laws")
 check("d-dependence: (eta(d)/zeta(d))^(1/d) values for d in {2,3,4,5,6}",
       s3_d_dependence,
       "only d=4 gives ≈ 0.9672")

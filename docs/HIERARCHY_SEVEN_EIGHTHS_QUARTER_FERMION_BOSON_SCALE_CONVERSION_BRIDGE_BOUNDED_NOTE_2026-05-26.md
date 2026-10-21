@@ -25,11 +25,15 @@ fermion-to-boson radiation-energy ratio of `7/8`:
 
 ```text
 (7/8)^(1/4)  =  (u_F / u_B)^(1/4)  at d=4 (per d.o.f.)            (2)
-             =  T_F / T_B  for equal-energy-density radiation     (3)
+             =  T_B / T_F  for equal-energy-density radiation     (3)
 ```
 
-where (3) is the standard Stefan-Boltzmann inversion `T ∝ u^(1/d)` at
-`d_spacetime = 4`.
+Equation (2) compares energy densities at the **same temperature**. For
+(3), write `u_F=(7/8)c T_F^4` and `u_B=c T_B^4`, with the same positive
+per-degree-of-freedom coefficient `c`. Equal energy densities give
+`T_B/T_F=(7/8)^(1/4)` and `T_F/T_B=(8/7)^(1/4)`. The earlier equation
+(3) reversed this ratio. This algebra does not identify a hierarchy
+coordinate with either physical temperature; that remains a supplied bridge.
 
 This is bounded support for the `(7/8)^(1/4)` hierarchy prefactor. It is
 not a closure of the hierarchy formula
@@ -225,7 +229,7 @@ PYTHONPATH=scripts python3 scripts/frontier_hierarchy_seven_eighths_quarter_ferm
 Expected:
 
 ```text
-TOTAL: PASS=18 FAIL=0
+TOTAL: PASS=19 FAIL=0
 VERDICT: bounded support bridge passes; the exact d=4
 Stefan-Boltzmann conversion factor is (7/8)^(1/4), with named support
 witnesses for 7/8 and no fitted observational value used as a

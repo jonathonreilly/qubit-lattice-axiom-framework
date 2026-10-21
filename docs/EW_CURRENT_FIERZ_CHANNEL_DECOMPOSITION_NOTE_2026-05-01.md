@@ -11,6 +11,17 @@
 
 ---
 
+## Current algebraic boundary
+
+The exact `8/9` is a **dimension fraction**, not a propagator amplitude
+fraction. The prior inference that channel selection (M) plus this count
+alone fixes a physical `9/8` coupling multiplier is withdrawn. Besides (M),
+such an inference needs a supplied channel-weight condition (W), for example
+an applicable independent-endpoint gauge-orbit average with
+`<C>/<S+C>=(N_c^2-1)/N_c^2`. That condition and its physical readout
+identification are not supplied by dimension counting. Historical audit
+and citation-graph descriptions below confer no additional mathematical premise.
+
 ## 0. Why this note exists
 
 The 2026-05-01 audit ledger flags a circular dependency:
@@ -108,12 +119,13 @@ matrix algebra; no dynamics, no expansion, no large-N_c assumption.
 ## 3. Channel decomposition of the q-qbar two-point function
 
 Let `M_{ab}(x, y) = G_{ab}(x, y)` be the quark propagator in a fixed gauge
-configuration. The q-qbar two-point function Tr_color[G(x, y) G(y, x)]
-admits the exact channel decomposition (substitute M = G into Fierz-1):
+configuration. Fierz-1 directly decomposes the nonnegative Hilbert-Schmidt
+norm `T=Tr_color[G(x,y)G(x,y)^dag]`. For the massive staggered reflection
+`G(y,x)=eps(x)eps(y)G(x,y)^dag`, define `p_xy=eps(x)eps(y)`:
 
 ```text
-Tr_color[G(x, y) G(y, x)] = (1/N_c) |Tr G(x, y)|^2  +  2 Σ_A |Tr[G(x, y) t^A]|^2     (3.1)
-                          ≡ S(x, y)  +  C(x, y)
+T = Tr_color[G(x,y) G(x,y)^dag] = S(x,y) + C(x,y)                 (3.1)
+Tr_color[G(x,y) G(y,x)] = p_xy * (S(x,y) + C(x,y))
 ```
 
 where:
@@ -124,12 +136,15 @@ where:
 - **`C(x, y) = 2 Σ_A |Tr[G(x, y) t^A]|^2`** is the **adjoint-channel** piece,
   summed over the `N_c^2 − 1` independent SU(N_c) generators.
 
-This decomposition is exact at every gauge configuration. No expansion is
-performed.
+The norm decomposition is exact at every gauge configuration. Identifying
+the reversed propagator with a conjugate requires the stated reflection;
+dropping `p_xy` is valid only at even parity or for a sign-adjusted
+correlator. This color identity alone does not specify current-vertex or
+Wick-contraction signs.
 
 ## 4. Hilbert-space dimension fraction (the exact `(N_c^2 − 1)/N_c^2` ratio)
 
-The decomposition of equation (3.1) splits the q-qbar two-point function
+The decomposition of equation (3.1) splits its Hilbert-Schmidt norm
 into exactly two channels: 1 singlet channel and `N_c^2 − 1` adjoint
 channels. The total channel count is `1 + (N_c^2 − 1) = N_c^2`, matching
 the dimension of the q-qbar tensor-product space.
@@ -165,9 +180,9 @@ specific direction set by the matching rule (M) below.
 
 ## 5. The matching rule (named structural input, NOT derived here)
 
-Equation (4.1) gives the exact adjoint-channel fraction. To convert this
+Equation (4.1) gives the exact adjoint-channel dimension fraction. To convert this
 into the package-level EW coupling correction, the framework requires one
-additional structural input:
+channel-selection input and a separate weight condition:
 
 > **(M) Matching rule:** the physical (continuum-matched) EW vacuum
 > polarization, after the framework's retained Coupling Map Theorem (CMT)
@@ -176,17 +191,22 @@ additional structural input:
 
 The matching rule is **not derived in this note**. It is a structural
 input from the framework's lattice EW current construction. This note
-takes (M) as named and admitted, and notes the audit consequence: under
-the matching rule (M) plus the exact group-theory ratio (4.1), the
-package-level EW coupling correction is exactly `N_c^2 / (N_c^2 − 1)`.
+takes (M) as named and admitted. However, (M) alone does not set
+`C/(S+C)`. In particular, `M=I` gives `C=0`,
+while any nonzero traceless `M` gives `S=0` and `C/(S+C)=1`, despite
+identical representation dimensions. Under an additional **(W)** condition
+fixing the applicable averaged norm fraction to `(N_c^2-1)/N_c^2`, and
+an explicitly supplied reciprocal-coupling readout, the corresponding
+multiplier is `N_c^2/(N_c^2-1)`. Neither W nor that physical readout is
+derived by this note.
 
 If a future research lane derives (M) from retained primitives — by, for
 example, showing that the framework's specific Wilson-line construction
 of the EW current at the lattice level mechanically projects onto the
 adjoint channel after the singlet contribution is absorbed by the
-mean-field factor `u_0` — then the package-level 9/8 correction would
-upgrade from "support / exact group-theory ratio + admitted matching" to
-a later proposed-retained claim requiring independent audit.
+mean-field factor `u_0` — then the separate weight condition (W) and
+reciprocal-coupling readout
+would still require justification before a physical 9/8 coefficient follows.
 
 This note explicitly does not propose to make that upgrade.
 
@@ -223,7 +243,8 @@ This note explicitly does not propose to make that upgrade.
 - An independent derivation of (M) — i.e., a rigorous demonstration that
   the framework's specific Wilson-line construction of the EW current
   reduces to the adjoint-channel projection after CMT factorization —
-  would close the full 9/8 package-level coefficient.
+  would close the channel-selection step only; (W) and the physical
+  normalization/readout would still need justification.
 
 **Comparison with `RCONN_DERIVED_NOTE` (1/N_c topology route):**
 
@@ -231,10 +252,10 @@ This note explicitly does not propose to make that upgrade.
   topological expansion. That route gives the ratio at *leading* order
   with explicit `O(1/N_c^4) ~ 1.2%` corrections from non-planar diagrams.
 - This note's derivation is **exact at any N_c**: the ratio is an
-  irreducible-representation dimension fraction. The 1/N_c expansion and
-  the Fierz/Hilbert-space-counting derivation are two independent routes
-  to the same coefficient; this note shows the coefficient is not
-  contingent on the 1/N_c expansion.
+  irreducible-representation dimension fraction. The Fierz/Hilbert-space
+  count is an exact dimension identity; it
+  does not independently establish the dynamical coefficient estimated
+  by the other route.
 
 The two routes are complementary: 1/N_c provides the dynamical-correction
 estimate (giving the `O(1/N_c^4)` bound on non-leading corrections to the
@@ -260,7 +281,7 @@ The runner verifies:
    matrices at N_c = 2, 3, 4, 5.
 5. The dimension count `1 + (N_c^2 − 1) = N_c^2` is exact for
    N_c = 2, 3, 4, 5.
-6. The adjoint-channel fraction `(N_c^2 − 1)/N_c^2` evaluates to
+6. The adjoint-channel dimension fraction `(N_c^2 − 1)/N_c^2` evaluates to
    exactly 8/9 at N_c = 3 (no `O(1/N_c^4)` correction).
 7. The matching rule (M) is explicitly named as not-derived in this
    note, with the load-bearing structural input role labeled.
@@ -294,17 +315,17 @@ the audit-graph cycle returns and this note's cycle-breaking value is lost.
 
 **Can claim:**
 - "Exact group-theory derivation of the `(N_c^2 − 1)/N_c^2` channel
-  ratio, independent of the 1/N_c topological expansion."
+  dimension ratio, independent of the 1/N_c topological expansion."
 - "Cycle-breaking derivation: cites only retained upstreams; no
   citation-graph cycle through `yt_ew_color_projection`,
   `rconn_derived`, or `ew_current_matching_ozi_suppression`."
-- "At N_c = 3, the adjoint-channel fraction is exactly 8/9 (no
+- "At N_c = 3, the adjoint-channel dimension fraction is exactly 8/9 (no
   `O(1/N_c^4)` correction)."
 
 **Cannot claim:**
 - bare `retained` / `promoted`.
 - "This closes the 9/8 EW coupling correction." (it does not — the
-  matching rule (M) remains a load-bearing input)
+  matching rule (M), weight condition (W), and physical readout remain inputs)
 - "This retires `RCONN_DERIVED_NOTE`." (it does not — `RCONN` is an
   independent dynamical-correction estimate, complementary to this
   representation-theoretic ratio)

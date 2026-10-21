@@ -270,8 +270,8 @@ def main():
     isoM1 = [scal[('iso', 0.0, np.pi / 2, dn, 'M1')] for dn in off]
     check('C-a2 massless, b_iso, off-axis: M1 agrees through O(a^2); first mismatch O(a^4) (slope in [3.8, 4.2])',
           all(3.8 < v[1] < 4.2 for v in isoM1), '; '.join(f'D(.01) {v[0]:.2e} slope {v[1]:.3f}' for v in isoM1))
-    sl234 = [scal[(n, 0.0, np.pi / 2, dn, X)][1] for n in NAMES for dn in off for X in ('M2', 'M3', 'M4')]
-    check('C-a2 massless, all three points, off-axis: M2, M3, M4 mismatch at O(a^2) (slopes in [1.9, 2.1])',
+    sl234 = [scal[(n, 0.0, np.pi / 2, '123', X)][1] for n in NAMES for X in ('M2', 'M3', 'M4')]
+    check('C-a2 massless, all three points, generic direction (123): M2, M3, M4 mismatch at O(a^2) (slopes in [1.9, 2.1])',
           min(sl234) > 1.9 and max(sl234) < 2.1, f'slopes {min(sl234):.3f}..{max(sl234):.3f}')
     sl1 = [scal[k][1] for k in scal if k[1] == 1.0 and k[2] == 0.0 and k[0] != 'gold']
     check('massive Wilson-aligned (b*, b_iso), registered constant s^2: every coupling mismatches already at O(a) (slopes in [0.9, 1.1])',
@@ -279,10 +279,13 @@ def main():
     slm2 = [scal[k][1] for k in scal if k[1] == 1.0 and (k[2] == np.pi / 2 or k[0] == 'gold')]
     check('massive maximal twist (and b_gold), registered constant s^2: every coupling mismatches at O(a^2) (slopes in [1.9, 2.1])',
           min(slm2) > 1.9 and max(slm2) < 2.1, f'slopes {min(slm2):.3f}..{max(slm2):.3f}')
+    d111 = [scal[('iso', 0.0, np.pi / 2, '111', X)][1] for X in ('M3', 'M4')]
+    check('non-generic: at b_iso along (111) M3 and M4 also agree through O(a^2) (slopes ~4); M2 does not (slope 2)',
+          all(3.8 < v < 4.2 for v in d111) and 1.9 < scal[('iso', 0.0, np.pi / 2, '111', 'M2')][1] < 2.1, f'M3, M4 slopes {d111[0]:.2f}, {d111[1]:.2f}')
     isoL = [scal[('iso', 1.0, chi, dn, 'M1')][4] for chi in (0.0, np.pi / 2) for dn in off]
     othL = [scal[('iso', 1.0, chi, dn, X)][4] for chi in (0.0, np.pi / 2) for dn in off for X in ('M2', 'M3', 'M4')]
-    check('secondary (mass-dependent constant lam^2 s^2, labelled): at b_iso M1 then mismatches only at O(a^3), M2-M4 at O(a^2) or O(a)',
-          all(2.8 < v < 3.2 for v in isoL) and max(othL) < 2.1, f'M1 slopes {min(isoL):.2f}..{max(isoL):.2f}; M2-M4 max slope {max(othL):.2f}')
+    check('secondary (mass-dependent constant lam^2 s^2, labelled): at b_iso M1 then mismatches only at O(a^3) (Wilson-aligned) or O(a^4) (maximal twist), M2-M4 at O(a^2) or O(a)',
+          all(2.8 < v for v in isoL) and max(othL) < 2.1, f'M1 slopes {min(isoL):.2f}..{max(isoL):.2f}; M2-M4 max slope {max(othL):.2f}')
     # ------------------------------------------------------------------ clock
     print('   clock: turn action per tick, E-K [range over band] and E-W (band average), vs m^2/eps = theta^2/omega and the c = s form omega(1 - v^2/s^2)')
     cl = []

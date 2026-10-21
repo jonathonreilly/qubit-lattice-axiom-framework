@@ -155,6 +155,13 @@ def main():
     print('   M1 same quantity: ' + ', '.join(f'{float(v):.4e}' for v in m1n))
     check('E5d: M2, M3, M4 mismatch T^BT,W/s^2 at O(a^2) at all three points (generic direction); M1 only at b*, b_gold',
           all(v > 1e-6 for X in nz for v in nz[X]) and m1n[0] > 1e-6 and m1n[1] < 1e-30 and m1n[2] > 1e-6)
+    d111 = {X: sp.simplify(mis[X][(0, 1)][1].subs({nn[0]: 1, nn[1]: 1, nn[2]: 1}).subs(iso)) for X in ('M2', 'M3', 'M4')}
+    d111xx = {X: sp.simplify(mis[X][(0, 0)][1].subs({nn[0]: 1, nn[1]: 1, nn[2]: 1}).subs(iso)) for X in ('M2', 'M3', 'M4')}
+    check('E5e (non-generic): at b_iso along (111) the O(a^2) mismatch of M3 and M4 vanishes, that of M2 does not',
+          d111['M3'] == 0 and d111['M4'] == 0 and d111xx['M3'] == 0 and d111xx['M4'] == 0 and d111xx['M2'] != 0, f'M2 xx: {d111xx["M2"]}')
+    # b_iso: the h row orthogonal to W is proportional to (-1, 1, -1, 1), i.e. hperp.h0 = -c x1 x2 x3 = O(k^6)
+    xprod = sp.expand(sum(v * phi[i] for i, v in enumerate((-1, 1, -1, 1))) + (1 - c[0]) * (1 - c[1]) * (1 - c[2]))
+    check('E5f: (-1,1,-1,1).phi = -(1-c1)(1-c2)(1-c3) (used to explain the O(a^4) maximal-twist residual at b_iso; the row itself is numerical)', xprod == 0)
     # ---------------- E6 E-W rest clock
     # sum_n |n|^2 w_n = -exp(i om) <u| lap U |u>; at k = 0 the band vector satisfies hhat.tau u = -u (U(0) = exp(i th hhat.tau))
     lapf0 = sp.simplify(sum(sp.diff(f0, x, 2) for x in K).subs({k1: 0, k2: 0, k3: 0}))

@@ -44,9 +44,9 @@ This restates the Record axiom's "one per site" as one per site per half-tick. M
 
 ## CL-5: following
 
-> "The actual configuration is distributed as its odds. Each half-tick it moves by a transport that keeps it so, uses only transitions the half-tick connects (staying included), and leaves the most in place."
+> "The actual configuration is distributed as its odds. Each half-tick it moves by a transport that keeps it so, uses only transitions (staying included) along nonzero elements of the half-tick, changes the fewest mode occupations on average, and of those is the one of greatest entropy."
 
-Such a transport always exists: the half-tick maps the odds of any set of configurations into the odds of the set it connects to, and a supply-demand argument then gives the transport. Records never condition the odds, because the update of CL-3 is the only change they undergo.
+Such a transport always exists: the half-tick maps the odds of any set of configurations into the odds of the set it connects to, and a supply-demand argument then gives the transport. Counting changed occupations rather than changed configurations keeps unentangled relays independent, and the greatest-entropy choice makes the transport unique and independent of labels. The mean drift of relays equals the group velocity exactly. Records never condition the odds, because the update of CL-3 is the only change they undergo.
 
 The rule acts on the joint configuration of all modes. That is what makes two readers of one pointer agree and lets relays violate CHSH as measured. Number-changing transitions cover pair creation and annihilation.
 
@@ -110,9 +110,9 @@ Evidence:
 - **Gauge groups and generations.** No law selects SU(3) x SU(2) x U(1) or three generations.
 - **Masses.** mu and b are given per species, and no law predicts a mass ratio. A species' limiting speed is cos(b)/sqrt(3), so the absence of photon decay at 1.4 PeV requires b < 7e-10 for the electron.
 - **Vacuum energy and dark matter.** No law gives the cosmological constant or a dark sector. The second copy, the cone partners at quasi-energy pi (charged, with inverted inertia) and records are each excluded as dark matter. The remaining slot is a species with no link, whose mass and abundance only the initial odds would fix, and no law gives the initial odds. Counting records as 4-volume fails: a half-filled sea's configuration is frozen under CL-5, so its record count does not fluctuate as Poisson, and an imported Poisson count matches the size of the constant but its measured equation of state excludes the resulting drift.
+- **Relay paths.** In some plane waves the relays of CL-5 split into two sublattice streams that move at different speeds, while measured tracks move at one speed.
 - **Supplied pieces.**
   - the rung that sets G and the radian-for-radian unit;
   - the positive/negative frequency branch;
-  - the tie-break inside CL-5;
   - quantised bosonic links, which are forced by measured antibunching but not by the laws;
   - the site carrier of the link phase, which needs Z_N with N >= 5 or a U(1) rotor beyond the one qubit. Zooming moves this cost into CL-3 as role-assigned sites but does not remove it.

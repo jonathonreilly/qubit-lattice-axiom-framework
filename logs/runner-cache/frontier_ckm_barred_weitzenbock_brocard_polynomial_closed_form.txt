@@ -1,60 +1,63 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_barred_weitzenbock_brocard_polynomial_closed_form.py
-runner_sha256: 78dbee81985a6ffaf598088599203d9d941b42e1d76be4e3a30f91bf9df49021
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 1.39
-status: ok
+runner_sha256: c03bac7a05bd7dc37cacb2aa9e30bf4aeab29ed456894813ab6ac0bb7e063436
+input_fingerprint_sha256: 6810e309d215630676938f2842663bd6a63948e07ed3e9998d9aa7f4dc15ffa8
+timeout_sec: 300
+exit_code: 1
+elapsed_sec: 0.66
+status: nonzero_exit
 ----- stdout -----
+  Conditional supplied-model identities only; no physical parameter selection is certified.
+  Inspect all failures below; source/ledger status checks are not mathematical proof.
 ========================================================================================
 Barred unitarity-triangle Weitzenbock + Brocard polynomial unification audit
 See docs/CKM_BARRED_WEITZENBOCK_BROCARD_POLYNOMIAL_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
-Ground-up status verification of each cited authority
+Documentary source-label checks; not mathematical proof
 ----------------------------------------------------------------------------------------
-  RETAINED-TIER (load-bearing for closure):
+  Supplied model inputs; source labels below are documentary:
 
     [CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md]
-      Status (extracted): 'proposed_retained NLO CKM-structure corollary on the proposed_promoted atlas/axiom'
-      Tier classification: retained
-  [PASS (A)] Retained-tier verified: CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [FAIL (A)] Legacy retained-label string matches: CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md
 
     [CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md]
-      Status (extracted): 'proposed_retained structural-identity subtheorem of the proposed_promoted CKM'
-      Tier classification: retained
-  [PASS (A)] Retained-tier verified: CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [FAIL (A)] Legacy retained-label string matches: CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
 
     [CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md]
-      Status (extracted): 'proposed_retained standalone structural-identity theorem on `main`.'
-      Tier classification: retained
-  [PASS (A)] Retained-tier verified: CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [FAIL (A)] Legacy retained-label string matches: CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md
 
     [CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md]
       Status (extracted): 'proposed_retained CKM-structure corollary on the proposed_promoted CKM atlas'
       Tier classification: retained
-  [PASS (A)] Retained-tier verified: CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md
+  [PASS (A)] Legacy retained-label string matches: CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md
 
 
 ----------------------------------------------------------------------------------------
-Extracting retained inputs from authority text
+Checking source phrases/count literals; symbolic values remain supplied
 ----------------------------------------------------------------------------------------
   rho_bar = (4 - alpha_s)/24:        FOUND
   eta_bar = sqrt(5)(4 - alpha_s)/24: FOUND
   N_pair extracted:                  n_pair  = 2
   N_color extracted:                 n_color = 3
   N_quark = N_pair * N_color:        FOUND
-  Jarlskog retained closed form:     FOUND
-  [PASS (A)] NLO retains rho_bar = (4 - alpha_s)/24
-  [PASS (A)] NLO retains eta_bar = sqrt(5)(4 - alpha_s)/24
-  [PASS (A)] MAGNITUDES retains N_pair = 2
-  [PASS (A)] MAGNITUDES retains N_color = 3
-  [PASS (A)] MAGNITUDES retains N_quark = N_pair * N_color (=6)
-  [PASS (A)] Jarlskog retained authority cited
+  Jarlskog supplied closed form:     FOUND
+  [PASS (A)] NLO contains the supplied literal rho_bar = (4 - alpha_s)/24
+  [PASS (A)] NLO contains the supplied literal eta_bar = sqrt(5)(4 - alpha_s)/24
+  [PASS (A)] MAGNITUDES contains the supplied literal N_pair = 2
+  [PASS (A)] MAGNITUDES contains the supplied literal N_color = 3
+  [PASS (A)] MAGNITUDES contains the supplied literal N_quark = N_pair * N_color (=6)
+  [PASS (A)] Jarlskog supplied authority cited
 
 ----------------------------------------------------------------------------------------
-W1: Weitzenbock inequality on retained surface
+W1: Weitzenbock inequality on supplied surface
 ----------------------------------------------------------------------------------------
   Weitzenbock: a^2 + b^2 + c^2 >= 4 sqrt(3) Area_triangle.
   perim_sq = a^2 + b^2 + c^2 = alpha_s**2/48 - alpha_s/12 + 2
@@ -143,7 +146,7 @@ W7: Five-form unification of P(alpha_s)
   (e) Marden form: P = 9216 |V_3^2 - V_3 + 1|^2 = (N_pair^4 N_quark)^2 * |...|^2
   [PASS (A)] W7(e): Marden form: P(alpha_s) = 9216 * |V_3^2 - V_3 + 1|^2
 
-  All FIVE forms equal P(alpha_s) on the retained surface.
+  All FIVE forms equal P(alpha_s) on the supplied surface.
   Each encodes a different classical equilateral condition:
     (a) Raw polynomial in alpha_s.
     (b) Brocard inequality cot^2(omega_bar) >= 3.
@@ -180,21 +183,21 @@ P(alpha_s) root structure: complex conjugate pairs over Q[sqrt(15)]
   Numerical: -4.0645, -251.9355
   [PASS (A)] Root structure: both quadratic factors have negative discriminant (no real roots)
 
-  => P(alpha_s) > 0 for ALL real alpha_s on the retained surface.
-     The unitarity triangle never reaches equilateral.
+  => P(alpha_s) > 0 for ALL real alpha_s on the supplied surface.
+     The nondegenerate supplied triangles never reach equilateral.
 
 ----------------------------------------------------------------------------------------
-Summary of NEW retained content
+Summary of NEW supplied content
 ----------------------------------------------------------------------------------------
-  Inputs (retained-tier, ground-up Status verified):
-    CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA  (retained)
-    CKM_MAGNITUDES_STRUCTURAL_COUNTS         (retained)
-    CKM_CP_PHASE_STRUCTURAL_IDENTITY         (retained)
-    CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM       (retained)
+  Inputs (supplied constants; inspect documentary status failures below):
+    CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA  (supplied)
+    CKM_MAGNITUDES_STRUCTURAL_COUNTS         (supplied)
+    CKM_CP_PHASE_STRUCTURAL_IDENTITY         (supplied)
+    CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM       (supplied)
 
-  NEW retained closed forms:
+  NEW supplied closed forms:
 
-    (W1) Weitzenbock inequality on the retained CKM unitarity triangle:
+    (W1) Weitzenbock inequality on the supplied CKM unitarity triangle:
          a^2 + b^2 + c^2 >= 4 sqrt(3) Area_triangle.
 
     (W2/W3) Weitzenbock sum and gap closed forms:
@@ -222,14 +225,14 @@ Summary of NEW retained content
 
     Root structure (NEW): P(alpha_s) factors over Q[sqrt(15)] as a product
     of two quadratics, each with NEGATIVE discriminant. So P(alpha_s) > 0
-    for ALL real alpha_s -- the retained unitarity triangle never reaches
-    equilateral on any alpha_s deformation.
+    for ALL real alpha_s; triangle statements exclude the degenerate a=4 case,
+    and use unsigned area or the stated a<4 oriented-area domain.
 
-    sqrt(15) = sqrt(N_color (N_quark - 1)) is the natural irrationality
-    of the retained surface.
+    sqrt(15) = sqrt(N_color (N_quark - 1)) is the irrationality of this factorization
+    only; it is not the whole coordinate or splitting field.
 
 ========================================================================================
-TOTAL: PASS=28, FAIL=0
+TOTAL: PASS=25, FAIL=3
 ========================================================================================
 
 ----- stderr -----

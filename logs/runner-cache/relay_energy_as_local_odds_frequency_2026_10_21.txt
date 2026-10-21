@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/relay_energy_as_local_odds_frequency_2026_10_21.py
+runner_sha256: 4a85b02ef134b5cf207a9b2f6702d5dfe012dfb5ebd3dcf8b7f307486c28dde4
+input_fingerprint_sha256: 27f63bd150a8d671ce57664efaa24b2b7704581854b5c602da80314af2a5009f
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 2.55
+status: ok
+----- stdout -----
+[PASS] 1D packets: total relay energy under the local rule is steady over 160 ticks and approaches the packet frequency  width 30: energy 0.079640 (spread 1.1e-04) vs frequency 0.079721; width 60: energy 0.078450 (spread 1.8e-05) vs frequency 0.078460; width 120: energy 0.078175 (spread 1.2e-06) vs frequency 0.078175
+[PASS] 1D packets: with local energy the momentum residual falls with width  width 30: residual 0.1141; width 60: residual 0.0437; width 120: residual 0.0195
+[PASS] six-direction packets along (1,1,0): with local energy the momentum residual falls with width  width 3: residual 0.277; width 5: residual 0.179; width 8: residual 0.114
+per_site: the walks, coin angles, packets, phase-advance evaluation and smoothing are supplied choices.
+lattice_wide: no physical energy identification, field equation or derivation of the rules is established.
+elapsed_seconds 2.5
+
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

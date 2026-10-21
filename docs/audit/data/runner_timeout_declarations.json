@@ -487,7 +487,7 @@
       "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
     },
     "scripts/cl3_lattice_physical_matching_2026_05_10_match.py": {
-      "source_sha256": "d2acad82b75174ee9f3206044745cd18b8722cb429022bcdd1596164f58a207f",
+      "source_sha256": "58868f40e6df3f6075b771c6a30ca3e6e840614bc8a6aba2019a8ebbf06b4254",
       "timeout_sec": 300,
       "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
     },

@@ -104,8 +104,8 @@ for t in ["**(T1) ", "**(T2) ", "**(T3) ", "**(T4) ", "**(T5) ", "**(T6) "]:
 
 # Sister cluster cross-references (cycles 5, 9, 11)
 for cite in [
-    "YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02",
-    "GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_IMPLICIT_FLOW_THEOREM_NOTE_2026-05-03",
+    "YT_EW_MATCHING_RULE_M_NOTE_2026-05-02",
+    "GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE",
     "GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03",
     "LATTICE_PHYSICAL_MATCHING_CLUSTER_OBSTRUCTION_NOTE_2026-05-02",
     "BRIDGE_LANES_PROMOTION_PROPOSAL_NOTE_2026-05-10_lanes",
@@ -117,7 +117,7 @@ for cite in [
     "STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac",
     "COMPLETE_PREDICTION_CHAIN_2026_04_15",
 ]:
-    check(f"sister/parent cite: {cite}", cite in note_text)
+    check(f"documentary citation name present: {cite}", cite in note_text)
 
 # Audit-readable scope block
 for yaml_marker in [

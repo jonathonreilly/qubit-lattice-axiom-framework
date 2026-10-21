@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/lorentzian_regge_continuation_and_the_attractive_geometry_phase_sign_2026_10_21.py
+runner_sha256: 04d94152b8633779d39945e6f16a3aa08e116b5177469247e5a429a2a1c5b685
+input_fingerprint_sha256: 3333754122fc786a63fa34228ad4a0a13e5839910917f55ab4c87b6a81fc903d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 21.81
+status: ok
+----- stdout -----
+Kuhn cubic: 15 edge classes, 50 hinge classes (14 timelike, 36 spacelike); min |D_hinge| = 0.400 at alpha = 0.6
+[PASS] (1) Kuhn cubic: continuation phi 0 -> pi gives sqrt(det Gamma) = +i|.| on every simplex and Schlaefli sum_h A dtheta_h = 0 holds per simplex  max rel Schlaefli residual 3.0e-16
+[PASS] (1) Kuhn cubic: timelike hinges have A = +i|A| and dtheta = d(real rotation angle in the spacelike normal plane); spacelike hinges have real A  max rel err 5.0e-08 over 72 wedges
+    spacelike-hinge wedges: d theta/i = s * d eta, s by wedge type: both spacelike, same cone: [1]; mixed (crosses a null ray): [1]
+[PASS] (1) Kuhn cubic: on spacelike hinges dtheta = i s deta with one sign s per wedge type (boost deficit)
+coned D4: 72 edge classes, 208 hinge classes (40 timelike, 168 spacelike); min |D_hinge| = 0.050 at alpha = 0.6
+[PASS] (1) coned D4: continuation phi 0 -> pi gives sqrt(det Gamma) = +i|.| on every simplex and Schlaefli sum_h A dtheta_h = 0 holds per simplex  max rel Schlaefli residual 3.7e-16
+[PASS] (1) coned D4: timelike hinges have A = +i|A| and dtheta = d(real rotation angle in the spacelike normal plane); spacelike hinges have real A  max rel err 5.6e-07 over 192 wedges
+    spacelike-hinge wedges: d theta/i = s * d eta, s by wedge type: both spacelike, same cone: [1]; mixed (crosses a null ray): [1]; both spacelike, opposite: [-1]
+[PASS] (1) coned D4: on spacelike hinges dtheta = i s deta with one sign s per wedge type (boost deficit)
+[PASS] (2) Kuhn cubic: Hess(S_L) / Hess((1/2) int sqrt(-g) R) -> 1 for random h and random spacetime k (Richardson .04/.02)  1.00000 (spacelike k), 1.00000 (timelike k), 1.00000 (spacelike k), 1.00000 (timelike k); Im/Re < 8e-14
+[PASS] (2) coned D4: Hess(S_L) / Hess((1/2) int sqrt(-g) R) -> 1 for random h and random spacetime k (Richardson .04/.02)  1.00000 (timelike k), 1.00000 (spacelike k), 1.00000 (spacelike k), 1.00000 (spacelike k); Im/Re < 2e-13
+[PASS] (2) Kuhn cubic: continuing through phi -> -pi gives the same real S_L Hessian; flipping the sign of the spacelike-hinge (boost) part breaks the continuum match  max|K(+pi) - K(-pi)| = 2.4e-16; flipped-boost ratio -1.243
+[PASS] (2) coned D4: continuing through phi -> -pi gives the same real S_L Hessian; flipping the sign of the spacelike-hinge (boost) part breaks the continuum match  max|K(+pi) - K(-pi)| = 1.4e-16; flipped-boost ratio -3.362
+[PASS] (2) Kuhn cubic, Euclidean diag(1,1,1,alpha): the same ratio -> 1 (the coupling-G result at alpha != 1)  1.00000
+[PASS] (3) Kuhn cubic, sigma = -1 (geometry RETARDS the phase by kappa S_L): static physical h_00 k^2 -> +E/kappa > 0, i.e. attraction, along three directions  1.00003, 1.00002, 1.00000
+[PASS] (3) Kuhn cubic, sigma = -1: PPN gamma = P_ij h_ij / (2 h_00) -> 1 (gauge invariant), light deflection 2(1+gamma) G E / b toward the mass  1.00000, 1.00002, 1.00003
+[PASS] (3) Kuhn cubic, sigma = -1: TT wave action ~ (omega^2/alpha - k^2): rises with omega (positive kinetic term), vanishes on the light cone omega = sqrt(alpha) k  S at omega/(sqrt(alpha)k) = 0, .5, 1, 1.5: -1.549e-04, -1.162e-04, +1.377e-09, +1.936e-04
+[PASS] (3) Kuhn cubic, sigma = +1 (geometry ADVANCES the phase by kappa S_L): h_00 < 0 (repulsion) and TT kinetic term negative: excluded by measured attraction and binary-pulsar decay  h_00 k^2 = -1.00003; S_TT(1.5) = -1.936e-04
+[PASS] (3) coned D4, sigma = -1 (geometry RETARDS the phase by kappa S_L): static physical h_00 k^2 -> +E/kappa > 0, i.e. attraction, along three directions  0.99999, 0.99999, 1.00000
+[PASS] (3) coned D4, sigma = -1: PPN gamma = P_ij h_ij / (2 h_00) -> 1 (gauge invariant), light deflection 2(1+gamma) G E / b toward the mass  1.00002, 1.00001, 1.00001
+[PASS] (3) coned D4, sigma = -1: TT wave action ~ (omega^2/alpha - k^2): rises with omega (positive kinetic term), vanishes on the light cone omega = sqrt(alpha) k  S at omega/(sqrt(alpha)k) = 0, .5, 1, 1.5: -1.549e-04, -1.162e-04, +4.361e-10, +1.936e-04
+[PASS] (3) coned D4, sigma = +1 (geometry ADVANCES the phase by kappa S_L): h_00 < 0 (repulsion) and TT kinetic term negative: excluded by measured attraction and binary-pulsar decay  h_00 k^2 = -0.99999; S_TT(1.5) = -1.936e-04
+[PASS] (4) coned D4, Lorentzian, sigma = -1: position-space h_00 on a 20^3 torus fits 8 pi G E G_lat(r) + const over 4 <= r <= 8 with G = 1/(8 pi) = 0.03979 within 3%  G = 0.03942, relative residual 0.047
+[PASS] (5) Kuhn cubic: ratio -> 1 at alpha = 1.7 and as alpha -> 1 (null relay steps), although single hinge coefficients grow  alpha 1.7: ratio 1.00000, min|A| 2.74e-01, max|dA||dtheta| 5.4e-01; alpha 0.99: ratio 1.00000, min|A| 5.00e-02, max|dA||dtheta| 1.8e+02; alpha 0.999: ratio 1.00000, min|A| 1.58e-02, max|dA||dtheta| 5.6e+03
+[PASS] (5) coned D4: ratio -> 1 at alpha = 1.7 and as alpha -> 1 (null relay steps), although single hinge coefficients grow  alpha 1.7: ratio 1.00000, min|A| 1.37e-01, max|dA||dtheta| 1.7e+00; alpha 0.99: ratio 1.00000, min|A| 1.77e-02, max|dA||dtheta| 7.1e+02; alpha 0.999: ratio 1.00000, min|A| 5.59e-03, max|dA||dtheta| 2.2e+04
+supplied: carriers, flat lengths, tick index 3, alpha = 0.6, continuation direction (+i), squared-length metric reading, kappa, torus, radii, rcond.
+derived: Lorentzian S_L = (1/2) int sqrt(-g) R per cell; sign sigma = -1 forced by attraction, gamma = 1 and positive TT kinetic term; G = a^2/(8 pi kappa).
+elapsed_seconds 21.7
+
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

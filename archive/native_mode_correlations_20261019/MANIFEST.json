@@ -158,17 +158,21 @@
       "original_path": "logs/runner-cache/native_compact_mode.txt",
       "original_sha256": "eb486df470090ac648e80c15dee2e8f760e745c047b30ebb5b9675ef33cd74a3",
       "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
-      "archived_path": "archive/native_mode_correlations_20261019/original/logs/runner-cache/native_compact_mode.txt.txt",
-      "archived_sha256": "eb486df470090ac648e80c15dee2e8f760e745c047b30ebb5b9675ef33cd74a3",
-      "role": "Historical exact original bytes; not current scientific or audit authority"
+      "archived_path": "archive/native_mode_correlations_20261019/original/logs/runner-cache/native_compact_mode.txt.txt.gz",
+      "archived_sha256": "e1d8bf910f23d99e1c655ea60ac50d1b5eafc679b6ff202b2d72d82722618011",
+      "role": "Historical exact original bytes; not current scientific or audit authority",
+      "encoding": "gzip",
+      "decoded_sha256": "eb486df470090ac648e80c15dee2e8f760e745c047b30ebb5b9675ef33cd74a3"
     },
     {
       "original_path": "logs/runner-cache/native_longitudinal_mode.txt",
       "original_sha256": "1afe23533a732805ab10cb53c5881a8d8ea0fa96fe08589fbd7677e6cbd67907",
       "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
-      "archived_path": "archive/native_mode_correlations_20261019/original/logs/runner-cache/native_longitudinal_mode.txt.txt",
-      "archived_sha256": "1afe23533a732805ab10cb53c5881a8d8ea0fa96fe08589fbd7677e6cbd67907",
-      "role": "Historical exact original bytes; not current scientific or audit authority"
+      "archived_path": "archive/native_mode_correlations_20261019/original/logs/runner-cache/native_longitudinal_mode.txt.txt.gz",
+      "archived_sha256": "41a761255ab539b72f3a677ceb5737b178cd7e0a40aadee4544310a5900572c3",
+      "role": "Historical exact original bytes; not current scientific or audit authority",
+      "encoding": "gzip",
+      "decoded_sha256": "1afe23533a732805ab10cb53c5881a8d8ea0fa96fe08589fbd7677e6cbd67907"
     },
     {
       "original_path": "outputs/native_mode_correlations_20261019/correlations.json",

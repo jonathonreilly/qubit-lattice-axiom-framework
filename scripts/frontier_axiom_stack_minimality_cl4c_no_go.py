@@ -49,6 +49,12 @@ def main():
     check("all Clifford anticommutators", all(a*b+b*a == (2*sp.eye(4) if i == j else sp.zeros(4)) for i,a in enumerate(gammas) for j,b in enumerate(gammas)))
     print(f"SUMMARY: PASS={sum(checks)} FAIL={len(checks)-sum(checks)}")
     print("Scope: supplied CAR countermodel; physical selection remains unproved.")
+    print("Resolution scope and limits (not physical bridge certificates):")
+    print("per_element: checked all sixteen supplied matrix units and their products.")
+    print("per_block: checked only the supplied four-dimensional one-particle block.")
+    print("per_mode: checked the algebra of four supplied CAR modes; their physical selection is unproved.")
+    print("per_site: no physical site assignment or local realization is proved here.")
+    print("lattice_wide: no lattice embedding, physical selector, or global construction is proved here.")
     return 0 if all(checks) else 1
 
 

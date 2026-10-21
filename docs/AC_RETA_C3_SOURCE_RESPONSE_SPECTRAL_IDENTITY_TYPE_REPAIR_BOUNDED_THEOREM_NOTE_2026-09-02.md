@@ -541,10 +541,12 @@ additivity is imported from the July era. The three exact archived July texts
 are historical comparisons: [h-class](../archive/notes/docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md),
 [angle routes](../archive/notes/docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md),
 and [cycle presentation](../archive/notes/docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md).
-The [April character note](KOIDE_A1_O13_CHEEGER_SIMONS_RZ_NO_GO_NOTE_2026-04-24.md),
-its [runner text](../scripts/frontier_koide_a1_cheeger_simons_rz_probe.py),
+The [April character note](../archive/notes/review_feedback/cheeger-o13-f24d17d-2026-10-21/KOIDE_A1_O13_CHEEGER_SIMONS_RZ_NO_GO_NOTE_2026-04-24.md.txt),
+its [runner text](../archive/notes/review_feedback/cheeger-o13-f24d17d-2026-10-21/frontier_koide_a1_cheeger_simons_rz_probe.py.txt),
 and the [radian note](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
-are pinned comparators. Their parent proofs, old classifications, status
+are pinned comparators. The two character snapshots preserve byte-exact sources
+from `f24d17d97d372df977476e4a69674577f31af575`; the current O13
+note and runner now correct the historical error. Their parent proofs, old classifications, status
 claims and reported campaigns are not accepted or executed here. In
 particular, the old character claim is contradicted by the explicit torsion
 calculation above. The legacy runner is read as text only.

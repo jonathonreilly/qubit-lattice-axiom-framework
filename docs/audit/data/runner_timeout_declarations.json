@@ -455,6 +455,11 @@
       "source_sha256": "cb8753b688e21a4f9dba717d974f674bc33fa3b39d02acf253f4f051be8d9285",
       "timeout_sec": 120,
       "reason": "Explicit review cap for unchanged affected primary or cache helper; source-hash bound. No scientific scope or audit runtime policy change."
+    },
+    "scripts/reta_c3_source_response_independent_check_2026_09_02.py": {
+      "source_sha256": "5cd0edff88cf4f32082710c8d54e6497b45781a203274ba3368dc0faef0f9d53",
+      "timeout_sec": 150,
+      "reason": "Explicit bounded review cap for unchanged arithmetic helper; source identity required. No inherited science certification."
     }
   }
 }

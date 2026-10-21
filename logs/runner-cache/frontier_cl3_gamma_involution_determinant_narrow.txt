@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cl3_gamma_involution_determinant_narrow.py
-runner_sha256: 19d4078185477c26b23359bae0c2fc31a7384a5b5bc8f8b03a6a714a03b4b603
+runner_sha256: 95224293b68455c514eadeaaa45da1c8f336d1620b9b7a2ab01a4bf766018210
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.38
+elapsed_sec: 0.62
 status: ok
 ----- stdout -----
 ========================================================================
@@ -15,7 +15,7 @@ Cl(3) γ-involution determinant identity — narrow theorem runner
 
 [Part 2] γ-norm determinant identity (symbolic)
 [gamma-norm symbolic] M·γ(M) = det(M)·I_2:  PASS
-[gamma-norm symbolic] ⟨M·γ(M)⟩_0 = det(M):  PASS
+[gamma-norm symbolic] c(M·γ(M)) = det(M):  PASS
 
 [Part 3] γ-norm determinant identity (numerical, 10 random M)
 [gamma-norm numerical] |M|_γ = √|det(M)| on 10 random M: 10/10 PASS
@@ -51,8 +51,10 @@ Cl(3) γ-involution determinant identity — narrow theorem runner
 [readout boundary] block-diagonal |det|^{1/2} = ∏|M_i|_γ: 5/5 PASS
 [readout boundary] hopping → det(D_hop) ≠ det(M_1)·det(M_2):  PASS  (gap = -27/16)
 
+[boundary] reversion differs from adjugate: PASS
+[boundary] complex center differs from real grade zero: PASS
 ========================================================================
-SUMMARY: PASS=8 FAIL=0 TOTAL=8
+SUMMARY: PASS=9 FAIL=0 TOTAL=9
   PASS   symplectic-adjoint
   PASS   gamma-norm-symbolic
   PASS   gamma-norm-numerical
@@ -61,6 +63,7 @@ SUMMARY: PASS=8 FAIL=0 TOTAL=8
   PASS   pseudoscalar-grade
   PASS   basis-grade
   PASS   readout-boundary
+  PASS   reversion-real-grade-boundary
 ========================================================================
 
 ----- stderr -----

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_a3_route4_spin6_chain_2026_05_08_r4.py
-runner_sha256: 06a99891168b223022ee3e493b03633041146ba86330da158f7ae7d8c48a8a4c
+runner_sha256: 4fd5ec38aef6109ff70c38358317768312241c4f504228c04ffbfe26c7de9705
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 PASS: all Clifford anticommutators
@@ -25,6 +25,12 @@ PASS: Hermitian nonscalar cyclic counterexample
 PASS: counterexample equal diagonals distinct eigenvalues
 PASS: each cyclic commutant basis element has equal diagonals
 Finite matrix residual/rank checks only; supplied group, block and charge choices; physical identifications open.
+Resolution scope and limits (not physical bridge or no-go certificates):
+per_element: six supplied 8x8 Clifford matrices, their 36 anticommutators and 64 monomial-span rank; finite numerical residuals only.
+per_block: two supplied 4D chirality blocks and a chosen 3+1 embedding; no physical block selection derived.
+per_mode: six supplied Clifford generators, not a physical mode spectrum or generation count.
+per_site: no site-resolved dynamics or physical site assignment calculated.
+lattice_wide: no full-lattice embedding, continuum limit or universal physical exclusion tested.
 
 ----- stderr -----
 

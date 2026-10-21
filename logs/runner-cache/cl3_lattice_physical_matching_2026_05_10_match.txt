@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_lattice_physical_matching_2026_05_10_match.py
-runner_sha256: 58868f40e6df3f6075b771c6a30ca3e6e840614bc8a6aba2019a8ebbf06b4254
+runner_sha256: 584c0a85fa1dfb7e1d8a9ea691f56ba62a798608d162a0a07e4da138def3e202
 input_fingerprint_sha256: 33cb8aff081fd89108df199be93b33ebc410b9ce31fec03289033b93096fc4d8
 timeout_sec: 300
 exit_code: 0
@@ -127,6 +127,12 @@ Part 8: honest verdict summary
   [PASS] resolution-route language: Nature-grade  ()
   [PASS] resolution-route language: governance  ()
   [PASS] resolution-route language: engineering  ()
+Resolution scope and limits (not physical bridge or no-go certificates):
+per_element: scalar arithmetic with supplied plaquette/scale values and documentary note guards; no elementwise physical operator calculation.
+per_block: supplied uniform taste-count 16 enters one scalar formula; individual physical blocks are not resolved.
+per_mode: no mode-resolved determinant, physical spectrum or generation selection calculated.
+per_site: no site-resolved field or lattice evolution calculated.
+lattice_wide: no new lattice simulation, continuum matching proof or universal exclusion; inherited physical and authority claims are not certified by these labels.
 
 ========================================================================================
   TOTAL: PASS=88, FAIL=0

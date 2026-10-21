@@ -31,14 +31,18 @@ Then:
   (so `M · γ(M) = γ(M) · M = det(M) · I_2`).
 
 - **Gamma-norm determinant identity.** For all `M ∈ M_2(C)`,
-  the scalar (grade-0 / identity-coefficient) component of `M · γ(M)`
+  the complex central coefficient of `M · γ(M)`
   is `det(M)`:
 
   ```text
-  ⟨M · γ(M)⟩_0  =  det(M)         (so |M · γ(M)| = det(M) · I_2).
+  c(M · γ(M))  =  det(M)
   ```
 
-  Equivalently, the **γ-norm** `|M|_γ := √|⟨M · γ(M)⟩_0|` satisfies
+  Here `c(z I_2) := z`. In the real Clifford grading, the grade-zero
+  component is instead `Re(det(M))`; the imaginary component multiplies
+  the pseudoscalar `ω = i I_2`.
+
+  Equivalently, the **γ-norm** `|M|_γ := √|c(M · γ(M))|` satisfies
 
   ```text
   |M|_γ  =  √|det(M)|.
@@ -47,15 +51,16 @@ Then:
 - **Gamma grade-action identity.** In the
   positive-chirality Pauli realisation
   `(I_2, σ_1, σ_2, σ_3, σ_1σ_2, σ_1σ_3, σ_2σ_3, ω = σ_1σ_2σ_3 = i I_2)`
-  of `Cl(3,0) ⊗_R C`, the γ-involution `γ(M) = σ_2 M^T σ_2` acts as
+  of the real algebra `Cl(3,0)`, the γ-involution `γ(M) = σ_2 M^T σ_2` acts as
   `+id` on `I_2` and `ω`, and as `-id` on the vector and bivector
   grades: `γ(σ_i) = -σ_i` (`i = 1, 2, 3`) and `γ(σ_iσ_j) = -σ_iσ_j`
-  (`i ≠ j`). This grade pattern is the **antiautomorphic transpose**
-  of the standard reversion: reversion preserves identity and vector
+  (`i ≠ j`). This is **Clifford conjugation**, the composition of grade involution
+  with reversion: reversion preserves identity and vector
   grades and flips bivector and pseudoscalar grades, while γ
   preserves identity and pseudoscalar grades and flips vector and
-  bivector grades. Either is a valid `M_2(C)` involution; this note
-  records the specific γ-involution `γ(M) = σ_2 M^T σ_2`.
+  bivector grades. Reversion corresponds to Hermitian conjugation in this real Pauli
+  algebra and is conjugate-linear over its complex center. It does not
+  satisfy the adjugate determinant identity.
 
 - **Full-lattice determinant-readout boundary.**
   The γ-norm determinant identity gives the γ-norm of a **single**
@@ -140,16 +145,18 @@ then gives `M · γ(M) = γ(M) · M = det(M) · I_2`. ∎
 
 ### 5.2 Gamma-norm determinant identity
 
-From the cofactor identity, `M · γ(M) = det(M) · I_2`, so the scalar
-(identity-coefficient) part is `⟨M · γ(M)⟩_0 = det(M)`. The γ-norm
-defined as `|M|_γ := √|⟨M · γ(M)⟩_0|` is therefore
+From the cofactor identity, `M · γ(M) = det(M) · I_2`, so the complex central
+coefficient is `c(M · γ(M)) = det(M)`. The γ-norm
+defined as `|M|_γ := √|c(M · γ(M))|` is therefore
 
 ```text
 |M|_γ  =  √|det(M)|.
 ```
 
-For `M = c · I_2` (scalar in the identity grade), `det(M) = c²`, so
-`|M|_γ = |c|`. For invertible `M`, `|M|_γ > 0`. ∎
+For `M = c · I_2` (a complex central element), `det(M) = c²`, so
+`|M|_γ = |c|`. For invertible `M`, `|M|_γ > 0`. The term “γ-norm” names this
+readout only: it is not a vector-space norm, since it vanishes on
+nonzero singular matrices. ∎
 
 ### 5.3 Gamma action by grade on the Pauli realisation
 
@@ -176,8 +183,8 @@ for `i = 1, 3`). `σ_2` is purely imaginary and anti-symmetric:
 ```
 
 Hence `γ(σ_i) = -σ_i` for `i = 1, 2, 3` and `γ(I_2) = I_2`. By
-linearity over `C`, `γ` acts as `-id` on the vector grade
-`Span_C(σ_1, σ_2, σ_3)` and as `+id` on the identity grade. For
+real linearity, `γ` acts as `-id` on the vector grade
+`Span_R(σ_1, σ_2, σ_3)` and as `+id` on the identity grade. For
 bivectors with `i ≠ j`, use the antiautomorphic property of γ
 (from the transpose):
 
@@ -211,13 +218,14 @@ In summary, on the 8-element Cl(3) basis
 `(I_2, σ_1, σ_2, σ_3, σ_1σ_2, σ_1σ_3, σ_2σ_3, ω)`, γ acts with
 signs `(+, -, -, -, -, -, -, +)`, preserving identity and
 pseudoscalar grades and flipping vector and bivector grades. This
-is the **antiautomorphic transpose involution** restricted to the
-Pauli realisation. It differs from reversion (which preserves
+is **Clifford conjugation** in the real Pauli algebra. It differs from reversion (which preserves
 identity and vector grades and flips bivector and pseudoscalar
-grades) in the grading pattern; both are valid `M_2(C)` involutions
-with `|M|_γ² = det(M)` (this norm-identity follows from the
-symplectic-adjoint identity and is independent of the per-grade sign
-pattern). ∎
+grades). The determinant identity is specific to γ; its nonnegative
+readout satisfies `|M|_γ² = |det(M)|`. For example, reversion fixes
+`M = I_2 + σ_3 = diag(2,0)`, so `M rev(M) = diag(4,0)` whereas
+`det(M) I_2 = 0`. Also `M = (1+i)I_2` gives determinant `2i`: its
+real grade-zero product component is zero, while its complex central
+coefficient is `2i`. ∎
 
 ### 5.4 Per-element vs full-lattice readout boundary
 
@@ -337,7 +345,7 @@ matrices:
    `σ_2 · M^T · σ_2 = adj(M)` entrywise.
 2. **Gamma-norm determinant identity.** For symbolic `M`,
    `M · γ(M) = det(M) · I_2` entrywise and
-   `⟨M · γ(M)⟩_0 = det(M)`.
+   `c(M · γ(M)) = det(M)`.
 3. **Numerical γ-norm.** For ten random `M ∈ M_2(C)` (rational + i ·
    rational entries), verify `|M|_γ = √|det(M)|` exactly.
 4. **Vector-grade action.** `γ(σ_i) = -σ_i` for `i = 1, 2, 3`
@@ -350,14 +358,17 @@ matrices:
    matrix `D_lat = M_1 ⊕ M_2` with two `M_i ∈ M_2(C)`. Show that
    `|det(D_lat)|^{1/2}` (the "geometric-mean readout at `N_modes = 2`")
    equals `|det(M_1) · det(M_2)|^{1/2}` (a per-element-product fact),
-   which is NOT the same as `|M_1|_γ + |M_2|_γ` or any other per-element
-   γ-norm combination. This is a numerical witness that per-element
-   γ-norm does not produce the per-determinant readout.
-8. **γ-involution as composition.** Verify the equivalent
-   reversion-and-grading-automorphism decomposition on the Cl(3) basis
+   which equals the product `|M_1|_γ |M_2|_γ`. A separate coupled-block
+   example shows that this factorization need not hold when hopping is
+   present; neither example selects a physical determinant exponent.
+8. **γ grade signs.** Verify the Clifford-conjugation signs on the real Cl(3) basis
    `(I_2, σ_1, σ_2, σ_3, σ_1σ_2, σ_1σ_3, σ_2σ_3, ω)`.
 
-Expected output: `PASS=N FAIL=0` with `N ≥ 30`.
+9. **Distinguishing counterexamples.** Check reversion versus adjugate,
+   and complex central coefficient versus real grade-zero component.
+
+The summary counts test groups, not individual identities; successful
+execution reports `FAIL=0` and exits zero.
 
 ## 10. Cross-references
 

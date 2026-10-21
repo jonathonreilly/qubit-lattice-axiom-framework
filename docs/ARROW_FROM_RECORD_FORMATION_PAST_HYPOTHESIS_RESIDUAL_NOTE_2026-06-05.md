@@ -125,11 +125,10 @@ low-record boundary, not by `T`.
   shared-physics open inputs (a low-entropy past boundary, as in standard
   time-symmetric physics), not a framework-specific derivation target. This note
   does not add a row to any audit-lane data file.
-- `AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01.md` — its "matter
-  second law `delta S_matter >= 0` under unital evolution" step is precisely the
-  direction-relative statement this note grounds: entropy non-decrease holds
-  *relative to* the low-entropy initial; the same symmetric map run from a
-  high-entropy/time-reversed state shows the opposite sign.
+- `AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01.md` — its
+  former exterior-entropy inference has been withdrawn. The present toy
+  record-arrow calculation does not establish that exterior evolution is a
+  unital channel or prove generalized-entropy monotonicity at a horizon.
 - `FLAVOR_RECORD_DYNAMICS_SHARPENS_ARROW_STABILIZER_FAILS_2026-06-02.md` —
   closes a *different* route (thermalizing-arrow stabilizer cannot force the
   Koide value); this note is about the arrow's direction and its boundary

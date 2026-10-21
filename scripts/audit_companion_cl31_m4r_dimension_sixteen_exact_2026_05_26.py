@@ -2,7 +2,7 @@
 """Exact-symbolic audit-companion runner for
 `CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26.md`.
 
-Pattern A narrow witness for n=4 forcing from the Cartan-Bott
+Finite algebra verification at supplied n=4 from the Cartan-Bott
 classification direction. The narrow scope is purely the
 Clifford-algebra identities:
 
@@ -32,8 +32,8 @@ The script verifies, at exact rational precision via sympy:
       vector space M_4(R)).
   (6) (C3) Numerical readout dim_R Cl(3, 1) = 16 = 4·4 = 2^4 at
       exact integer arithmetic.
-  (7) (C4) Cartan-Bott classification table verified for (p, q) with
-      p + q in {0, 1, 2, 3, 4} against the standard classification.
+  (7) Even-subalgebra generators and rank; other table cells are
+      classification inputs, not independently proved by this runner.
   (8) (C4) Counterfactuals at n = 2, n = 3: no single M_4(R) cell.
   (9) (C4) Uniqueness assertion at the integer-arithmetic level.
 
@@ -56,6 +56,8 @@ except ImportError:
     print("FAIL: sympy required for exact algebra")
     sys.exit(1)
 
+
+AUDIT_TIMEOUT_SEC = 120
 
 ROOT = Path(__file__).resolve().parent.parent
 NOTE_PATH = ROOT / "docs" / "CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26.md"
@@ -162,7 +164,7 @@ def main() -> int:
         expected = 2 ** n
         check(
             f"(C1) signature ({p}, {q}): dim_R Cl({p}, {q}) = 2^{n} = {expected}",
-            True,  # Universal property; verified arithmetically.
+            sum(comb(n, k) for k in range(n + 1)) == expected,
             detail=f"2^{p+q} = {expected}",
         )
 
@@ -234,7 +236,7 @@ def main() -> int:
     # =========================================================================
     section("Part 4: (C2) Clifford anticommutation Γ_i Γ_j + Γ_j Γ_i = 2 η_{ij} I_4")
     # =========================================================================
-    # η = diag(+1, +1, +1, -1) under Lawson-Michelsohn (3, 1) convention.
+    # η = diag(+1, +1, +1, -1) in the positive-square-first (Gallier) convention.
     eta = [1, 1, 1, -1]
 
     for i in range(4):
@@ -397,7 +399,7 @@ def main() -> int:
     # No single M_4(R) cell at n = 2.
     check(
         "(C4) at n = 2, no signature realizes Cl(p, q) ≅ M_4(R)",
-        True,  # By dimension mismatch.
+        2 ** 2 != I4.rows * I4.cols,
         detail="excluded by dim formula",
     )
 
@@ -418,7 +420,7 @@ def main() -> int:
     )
     check(
         "(C4) at n = 3, no signature realizes Cl(p, q) ≅ M_4(R)",
-        True,  # By dimension mismatch and direct-sum structure.
+        2 ** 3 != I4.rows * I4.cols,
         detail="excluded by dim formula",
     )
 
@@ -452,7 +454,8 @@ def main() -> int:
     # =========================================================================
     # Iterate over n in {0, 1, 2, 3, 4} and tabulate whether ANY signature
     # (p, q) with p + q = n has Cl(p, q) ≅ M_4(R).
-    has_M4_R = {n: (n == 4) for n in range(5)}
+    has_M4_R = {n: (2 ** n == I4.rows * I4.cols and rank == 16)
+                for n in range(5)}
     for n in range(5):
         check(
             f"(C4) at n = {n}, any signature realizes Cl(p,q) ≅ M_4(R): {has_M4_R[n]}",
@@ -530,6 +533,23 @@ def main() -> int:
             mat_zero(omega * G + G * omega),
             detail="parity rule for even n",
         )
+
+    # The even generators use the already verified (3,1) representation.
+    section("Even subalgebra: Cl^0(3,1) = Cl(3,0)")
+    even_generators = [G * Gamma_4 for G in Gammas[:3]]
+    for i, F in enumerate(even_generators):
+        for j, H in enumerate(even_generators):
+            target = 2 * I4 if i == j else zeros(4, 4)
+            check(f"even generators anticommutator ({i},{j})",
+                  mat_eq(F * H + H * F, target))
+    even_products = [I4]
+    for F in even_generators:
+        even_products += [M * F for M in list(even_products)]
+    check("even monomials have real rank 8", real_span_rank(even_products) == 8)
+    check("volume commutes with every even monomial",
+          all(mat_zero(omega * M - M * omega) for M in even_products))
+    check("even complex structure squares to minus identity",
+          mat_eq(omega * omega, -I4))
 
     # =========================================================================
     section("Summary")

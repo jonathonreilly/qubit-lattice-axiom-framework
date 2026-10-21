@@ -127,10 +127,9 @@ narrower than what was unforced before.
 ## Relation to adjacent landed results
 
 - [`AXIOM_STACK_MINIMALITY_CL4C_NO_GO_THEOREM_NOTE_2026-04-29.md`](AXIOM_STACK_MINIMALITY_CL4C_NO_GO_THEOREM_NOTE_2026-04-29.md)
-  records the adjacent cell-space no-four-generators claim on `P_A H_cell`.
-  T1 is the per-site statement on `M_2(C)` itself — a different, smaller
-  space with a two-line obstruction; the two surfaces are complementary rungs
-  of the same wall.
+  withdraws its broad cell-space impossibility claim: supplied bilinears
+  can generate `M_4(C)` on `P_A H_cell`. T1 concerns the different, smaller
+  per-site algebra `M_2(C)` and does not use that withdrawn claim.
 - [`CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md`](CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md)
   concerns the grade-1 generation 3-space; T5 concerns the spinor carrier.
   Distinct surfaces; the separate-factor conclusion is shared.
@@ -178,7 +177,7 @@ narrower than what was unforced before.
   — the independently-reached separate-factor chirality structure T5
   reproduces.
 - [AXIOM_STACK_MINIMALITY_CL4C_NO_GO_THEOREM_NOTE_2026-04-29.md](AXIOM_STACK_MINIMALITY_CL4C_NO_GO_THEOREM_NOTE_2026-04-29.md)
-  — the complementary cell-space no-go.
+  — historical cell-space claim, now corrected; not a premise of T1.
 
 **No-promotion statement:** this note does not promote, demote, or set the
 audit status of any dependency. It changes no axiom memo and registers no

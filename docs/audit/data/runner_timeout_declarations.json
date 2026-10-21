@@ -445,6 +445,18 @@
       "source_sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
       "timeout_sec": 300,
       "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
+    },
+    "scripts/adjacency_rank_qubit_clifford_bound_2026_06_10.py": {
+      "source_sha256": "81b6cb9e3e09d1914dab8361cee379cc7ce7ff2e53cb8ec50b6fdfea49a6daf1",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_arrow_from_record_formation_2026_06_05.py": {
+      "source_sha256": "d1306f32dc634dded2c9263152084ffd2533cf3d0cb7bf7c29d635532de5b2a9",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_hubble_lane5_c1_cl4c_conditional_derivation_chain_construction.py": {
+      "source_sha256": "6e05d4dd6a407bf7affdc4c16c7e665c27f7e01e91ea9c7ea035a6d4d1a1c516",
+      "timeout_sec": 120
     }
   }
 }

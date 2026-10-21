@@ -13,8 +13,8 @@ surface. Bare `retained` / `promoted` is NOT used.
 
 **Cited authorities (one-hop deps):**
 - [AXIOM_STACK_MINIMALITY_CL4C_NO_GO_THEOREM_NOTE_2026-04-29.md](AXIOM_STACK_MINIMALITY_CL4C_NO_GO_THEOREM_NOTE_2026-04-29.md)
-  — V1 minimality no-go: Cl_4(C) on `P_A H_cell` is non-derivable from
-  `A_min`; Axiom\* is the unique minimal extension that closes `(G1)`.
+  — corrected historical V1 claim: algebraic capacity exists in the supplied
+  bilinear model; non-derivability and unique-extension claims are withdrawn.
 - [HUBBLE_LANE5_C1_A6_BILINEAR_ACTIVE_BLOCK_SUPPORT_BOUNDARY_NOTE_2026-04-29.md](HUBBLE_LANE5_C1_A6_BILINEAR_ACTIVE_BLOCK_SUPPORT_BOUNDARY_NOTE_2026-04-29.md)
   — A6 bilinear support: number-preserving bilinears on `P_A H_cell` realize
   `M_4(C)` as a host algebra (existence, not selection).
@@ -30,17 +30,17 @@ surface. Bare `retained` / `promoted` is NOT used.
   `a/l_P = 1`.
 - [HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md](HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md)
   — Two-gate dependency firewall: numerical `H_0` requires `(C1) ∧ ((C2) ∨ (C3))`.
-- [CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md](CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md)
+- `archive_unlanded/stale-frames-2026-04-30/CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md`
   — Cross-lane consequence map under Axiom\*.
 
 ---
 
 ## 0. Headline
 
-V1 closes the question of whether Cl_4(C) is derivable from `A_min`:
-**no.** Adopting Axiom\* — the irreducible Cl_4(C) module on `P_A H_cell` —
-is the unique minimal extension that opens the `(G1)/(C1)` lane. That
-adoption is a science-level decision and is **not** taken here.
+V1 no longer supplies an impossibility theorem or a unique-extension
+argument. The following construction treats Axiom\* as a supplied
+conditional input. Its adoption is **not** taken here; physical selection
+from the current axioms remains a separate obligation.
 
 This note assumes the user's hypothetical: *what if Axiom\* is adopted?*
 It then constructs the four-arrow derivation chain explicitly:
@@ -89,9 +89,9 @@ Cl_4(C) module action: there exist four Hermitian operators
 {Γ_a, Γ_b} = 2 δ_ab I_K.
 ```
 
-Per V1, this is **not** derivable from `A_min`. It is a separate carrier
-axiom. This note proceeds *as if* it has been adopted, and traces the
-chain.
+This note supplies the carrier premise rather than deriving it from
+`A_min`. V1 does not prove such a derivation impossible. The following
+chain must be read conditionally on its stated premises.
 
 No measured value of `G`, `ℏ`, `M_Pl`, `H_0`, or any cosmological
 observable enters this construction.
@@ -298,10 +298,10 @@ on the surface.
 
 ## 8. What this note does NOT close
 
-1. **Adoption of Axiom\*.** Per V1 corollary, this is a science-level
+1. **Adoption of Axiom\*.** This is a science-level
    decision; the note is conditional only.
-2. **`(G1)` and `(C1)` in current `A_min`.** They remain open, exactly as
-   V1 records.
+2. **`(G1)` and `(C1)` in current `A_min`.** No current-axiom closure is established by
+   the conditional construction.
 3. **Numerical `H_0`.** Blocked by `(C2)` independently of any Axiom\*
    decision.
 4. **SI decimal of `ℏ` or `M_Pl`.** Remains metrology.
@@ -319,8 +319,7 @@ hypothetical_axiom_status: axiom_star_assumed_not_adopted
 admitted_observation_status: null
 proposal_allowed: true
 proposal_allowed_reason: |
-  Walks the conditional consequence chain of the V1 minimality no-go's
-  option (i) without adopting Axiom*. Pure construction; no observed
+  Walks a conditional consequence chain without adopting Axiom*. Pure construction; no observed
   value enters; no theorem is promoted on the actual current surface.
 audit_required_before_effective_retained: false
 bare_retained_allowed: false
@@ -386,9 +385,9 @@ Expected: `PASS = 24, FAIL = 0`.
 
 After this note lands as `support`:
 
-- `(G1)`/`(C1)` still **open** in current `A_min` posture (V1 governs).
+- `(G1)`/`(C1)` still **open** in current `A_min` posture (not settled by the withdrawn V1 claim).
 - Adoption of Axiom\* still a **science-level decision** for the user
-  (V1 corollary governs).
+  (no uniqueness follows from V1).
 - Numerical `H_0` still **blocked** by the structurally orthogonal
   `(C2)` residual, regardless of any Axiom\* decision.
 - The construction here makes the `Axiom\* ⟹ (C1)` arrow concrete: it
@@ -398,6 +397,6 @@ After this note lands as `support`:
 
 What this note adds to the surface: **a concrete realization** of the
 conditional Axiom\* consequence chain that the existing
-[CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md](CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md)
+`archive_unlanded/stale-frames-2026-04-30/CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md`
 lists abstractly, with the `(C2)` orthogonality residual confirmed in
 the same construction.

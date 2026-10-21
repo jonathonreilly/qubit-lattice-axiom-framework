@@ -75,8 +75,9 @@ finite-dimensional algebra:
   Cl(3, 1)  ≅  M_4(R).                                          (★)
   ```
 
-  This is a specific cell of the Cartan-Bott periodic table
-  (Lawson-Michelsohn, *Spin Geometry*, Theorem I.4.3).
+  This is a specific cell of the Cartan-Bott periodic table, using
+  Gallier’s positive-square-first convention throughout. References using
+  the opposite Clifford sign convention require swapped indices.
 
 - **(C3) Dimension readout at `n = 4`.** Combining (C1) and (C2):
 
@@ -242,8 +243,8 @@ n = 1:   Cl(1, 0) ≅ R ⊕ R          Cl(0, 1) ≅ C
 n = 2:   Cl(2, 0) ≅ M_2(R)          Cl(1, 1) ≅ M_2(R)          Cl(0, 2) ≅ H
 n = 3:   Cl(3, 0) ≅ M_2(C)          Cl(2, 1) ≅ M_2(R) ⊕ M_2(R)  Cl(1, 2) ≅ M_2(C)   Cl(0, 3) ≅ H ⊕ H
 n = 4:   Cl(4, 0) ≅ M_2(H)          Cl(3, 1) ≅ M_4(R)           Cl(2, 2) ≅ M_4(R)   Cl(1, 3) ≅ M_2(H)   Cl(0, 4) ≅ M_2(H)
-n = 5:   Cl(5, 0) ≅ M_4(C)          Cl(4, 1) ≅ M_4(R) ⊕ M_4(R)  Cl(3, 2) ≅ M_4(C)   ...
-n = 6:   Cl(6, 0) ≅ M_8(R)          ...
+n = 5:   Cl(5, 0) ≅ M_2(H) ⊕ M_2(H)  Cl(4, 1) ≅ M_4(C)             Cl(3, 2) ≅ M_4(R) ⊕ M_4(R)   ...
+n = 6:   Cl(6, 0) ≅ M_4(H)          ...
 n = 7:   ...
 n = 8:   Cl(8, 0) ≅ M_{16}(R)        ...
 ```
@@ -262,6 +263,12 @@ admitted-context classification cell. The companion runner verifies
 (★) directly by exhibiting four explicit `4 × 4` real matrices
 satisfying the signature-`(3, 1)` Clifford relations and generating
 a 16-dimensional real subalgebra equal to all of `M_4(R)`.
+
+The corrected higher-dimensional cells also follow from the recurrence
+`Cl(p+1,q+1) ≅ M_2(Cl(p,q))` and the pure-sign recurrence
+`Cl(n+2,0) ≅ Cl(0,n) ⊗ M_2(R)`; see
+[Gallier, §1.6, Lemma 1.15](https://arxiv.org/abs/0805.0311).
+These classification inputs use the explicit generator-square convention above.
 
 ### 5.3 (C3) Dimension readout
 
@@ -289,7 +296,7 @@ real Clifford algebra `Cl(p, q)` is isomorphic to a single (not a
 direct sum) real `M_k(R)` algebra with `k = 4`. The signature
 `(p, q) = (3, 1)`, matching the framework's `Z³` spatial substrate
 combined with one timelike direction (per the standard Minkowski-
-signature convention `(+, +, +, -)` used in Lawson-Michelsohn), is one
+signature convention `(+, +, +, -)` used here), is one
 of the two `n = 4` cells realizing this property (the other being
 `(2, 2)`). QED.
 
@@ -302,13 +309,14 @@ of the two `n = 4` cells realizing this property (the other being
   for the Majorana spinor representation at signature `(3, 1)`
   (Lawson-Michelsohn, Ch. I §5).
 
-- **Even-graded subalgebra.** The even-graded subalgebra
-  `Cl^0(3, 1) ⊂ Cl(3, 1)` has real dimension `8 = 2^{n-1}` and is
-  isomorphic to `M_2(R) ⊕ M_2(R)` (via the standard chirality
-  decomposition; equivalently `Cl(3, 0)` viewed as the even
-  subalgebra). This matches the upstream `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕
-  M_2(C)` complexified split (from the cited Cl(3) narrow), but is
-  the real-graded direct-sum statement before complexification.
+- **Even-graded subalgebra.** The even subalgebra has real dimension
+  `8` and satisfies `Cl^0(3, 1) ≅ Cl(3, 0) ≅ M_2(C)` as real algebras.
+  Indeed, `f_i = e_i e_4` for `i = 1,2,3` square to `+1`, anticommute,
+  and generate all even monomials. Their eight monomials give the
+  isomorphism with `Cl(3,0)`. The volume element is central in this
+  even subalgebra and squares to `-1`; it supplies its complex structure.
+  The real algebra does not split as `M_2(R) ⊕ M_2(R)`. The split
+  `M_2(C) ⊕ M_2(C)` occurs only after complexification.
 
 - **`Spin(3, 1) ≅ SL(2, C)`.** At the Lie-group level, the spin
   group `Spin(3, 1)` arising from the even-graded subalgebra of
@@ -435,7 +443,10 @@ value at `n = 4`.
 - The narrow theorem does not resolve the `Cl(3, 1)` vs `Cl(1, 3)`
   signature convention choice. The framework's accepted-surface
   convention is `(+, +, +, -)` (timelike component negative under
-  the metric), consistent with Lawson-Michelsohn; under the opposite
+  the metric), in the positive-square-first convention of Gallier.
+  Lawson-Michelsohn reverses the signature indices for its Clifford
+  convention (see Gallier §1.6); its tables require that translation.
+  Under the opposite
   convention `(-, -, -, +)` one would have `Cl(1, 3) ≅ M_2(H)`. Both
   Clifford algebras have real dimension `16`; the choice between
   them is a Lorentzian-signature convention and not a derivation.
@@ -484,11 +495,9 @@ verifies, at exact rational precision via sympy:
    vector space `M_4(R)`).
 6. (C3) Numerical readout `dim_R Cl(3, 1) = 16 = 4 · 4 = 2^4` at
    exact-integer arithmetic.
-7. (C4) Cartan-Bott classification table verified for
-   `(p, q)` with `p + q ∈ {0, 1, 2, 3, 4}` against the standard
-   classification (admitted-context reference; companion runner
-   constructs explicit Pauli / Pauli-`I`-tensor representations
-   where applicable).
+7. The even-subalgebra generators `Γ_i Γ_4` satisfy the `Cl(3,0)`
+   relations and have eight independent monomials. The remaining table
+   cells are standard classification inputs, not established by this runner.
 8. (C4) Counterfactual at `n = 3`: no signature `(p, q)` with
    `p + q = 3` admits an isomorphism to a single `M_k(R)`; the
    real-matrix-algebra entries at `n = 3` are `M_2(R) ⊕ M_2(R)`
@@ -499,8 +508,9 @@ verifies, at exact rational precision via sympy:
     cell `(p, q) = (3, 1)` is the lowest-`n` cell with
     `Cl(p, q) ≅ M_4(R)`.
 
-Expected runner result: `PASS = 100`, `FAIL = 0` (exact-symbolic
-sympy verification).
+The runner exits nonzero on any failed check and reports its actual totals.
+Its finite dimension checks do not prove the universal dimension theorem;
+that theorem is the algebraic argument in §5.1.
 
 ## 14. Cross-references (non-load-bearing)
 

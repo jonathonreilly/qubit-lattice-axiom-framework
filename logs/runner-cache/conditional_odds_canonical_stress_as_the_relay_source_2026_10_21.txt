@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/conditional_odds_canonical_stress_as_the_relay_source_2026_10_21.py
+runner_sha256: 7146f5c08eea97103e5acebcc3f847a5515bb6e80ba66878d698522e3ad27d1b
+input_fingerprint_sha256: 32e7c65e747c191bc4f763930af7a24bdc196f9ebbe7fee52feaf51e0ebdf525
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.70
+status: ok
+----- stdout -----
+A. Page-Geilker toy: ball (L or R, weight 1/2) conditioned on n pointer relays
+[PASS] A1 full odds (no conditioning): torque 0; conditional odds: torque rises to 1 with n  per-relay overlap 0.801; n=1: 0.3211, n=4: 0.7342, n=16: 0.9889, n=64: 1.0000, n=256: 1.0000
+[PASS] A2 bound 1 - torque <= overlap^n (Bhattacharyya; rederived by AM-GM)  n=4: 2.7e-01 <= 4.1e-01, n=16: 1.1e-02 <= 2.9e-02, n=64: 1.5e-11 <= 6.7e-07, n=256: 0.0e+00 <= 2.0e-25
+[PASS] A3 one ideal pointer relay (disjoint supports): torque 1  1.000000000000000
+   a ball of N relays is its own pointer (n = N-1 others): N=1 torque 0; a kg ball (N~1e25) torque 1 - O(overlap^1e25)
+B. single relay (theta 0.1, N 154): canonical stress (T00, Tx0, T0x, Txx), CL-7 standing T_xx was -0.0563
+[PASS] B1 plane wave: (eps, k, eps v, k v)  T=[0.2269 0.204  0.2033 0.1828]
+[PASS] B2 standing wave: T00 = eps, momentum 0, energy flux 0, Txx = k v (same sign and size as the plane wave)  T=[ 0.2269 -0.     -0.      0.1828]
+[PASS] B3 linear: 6-mode packet stress = odds-weighted mode stresses  Txx 0.1517 (target 0.1517)
+[PASS] B4 conserved: a moving packet keeps its integrated stress for 60 ticks  max dev 2.2e-16, T=[0.3286 0.3    0.299  0.2894]
+[PASS] B5 lattice asymmetry: energy flux / momentum density = eps v / k -> theta/tan(theta) at k -> 0 (the low-k c_eff^2), 1 only as theta -> 0  k=0.204: 0.99665; k=0.0408: 0.996664; theta/tan theta 0.996664
+[PASS] B6 the generator H = i log U is quasi-local: |H(x, x+r)| decays exponentially (range ~ 1/theta blocks)  |H| at r=0,10,20,40: 2.3e-01, 6.0e-02, 1.4e-02, 1.2e-03; decay 0.129/block
+C. entangled pair (0, 2k)+(2k, 0), N 32, theta 0.2: conditional source of relay 1
+[PASS] C1 Born mean of the conditional source = reduced-state (branch mixture) value, all four components  mean [0.3192 0.1963 0.1937 0.1735]; CL-7 gave Txx 0.0512 vs eps v^2 mixture 0.1711
+[PASS] C2 per configuration the conditional source spreads between the branch values  T00 range [0.2826, 0.4135], branches 0.2000, 0.4383
+[PASS] C3 per tick the conditional energy is NOT conserved: it jumps when the other relay switches direction  jump fraction 0.056/tick, rms jump 0.1308, max 0.1308; momentum rms 0.0511
+[PASS] C4 the jumps average to zero: exact Born mean constant every tick; sampled mean within error  exact dev 1.2e-15; sampled max dev 0.0021 (5 se 0.0046); mean jump -1.0e-05
+[PASS] C5 no secular drift: variance of E1(t)-E1(0) saturates below (branch gap)^2  var at t=10,50,150: 0.0040, 0.0043, 0.0043; gap^2 0.0568
+[PASS] C6 a free per-subsystem stress misses the binding energy: bound pair E = <H1>+<H2>+<V>  E -5.0000, free parts -3.2000, <V> -1.8000 (36% of E)
+[PASS] C7 scattering: free subsystem energies change; with V split half to each relay the Born-mean source is conserved  free sum range 0.309; split mean dev 4.9e-16
+D. A (two blocks) entangled with B; A's setting z (none) or x (Hadamard); B's conditional source
+[PASS] D1 momentum Tx0: Born mean independent of A setting, distribution not (B marginal odds identical)  mean z 5.55e-17 x 1.09e-16; variance z 0.1542 x 4.8e-33
+[PASS] D2 mass dipole: Born mean independent of A setting, distribution not (B marginal odds identical)  mean z -5.00e-01 x -5.00e-01; variance z 255.9448 x 5.6e-17
+   SI: Rb at 1 cm/s, momentum source per run +-1.4e-27 kg m/s vs 0 (mass-equivalent p/c 4.8e-36 kg)
+   Rb split 0.54 m, field at 1 m per run differs by G m d/r^3 = 5.2e-36 m/s^2 (gravimeters ~1e-9; 1e6 pairs x1e3)
+   smallest measured gravitating source 9e-5 kg = 6e+20 Rb masses
+[PASS] D3 the setting-dependent part is >= 20 orders below any measured gravitational source
+E. minimal switching only (no redraws)
+[PASS] E1 joint Born kept exactly (20 ticks, entangled packets); samples agree  max TV 3.6e-16; chi2/dof 1.016 over 978 bins
+[PASS] E2 two coined pointers: exact Born, reader disagreement = that of the odds, Born frequency  disagree relays 0.1002 odds 0.1012; up 0.3234 vs 0.3214; switched mass 0.996
+[PASS] E3 singlet + coined pointers: relay readings violate CHSH like the odds  S_odds 2.5710, S_relays 2.567
+[PASS] E4 a plane-wave relay never switches (straight null path); a standing wave switches  switch mass/tick plane 5.6e-17, standing 0.0883
+F. two-arm superposition (arms 20 blocks apart): one relay versus a bound pair (relative width 1)
+[PASS] F1 single elementary relay: conditional = full odds, source half in each arm (torque 0)  left weight 0.500000
+[PASS] F2 bound pair: relay 1 conditioned on relay 2 sits in relay 2's actual arm (torque ~1)  torque 1.000000
+   if the response acts back on the odds: arm-phase rate G m^2/(hbar R), molecule 4e-23 kg, R 1 nm: 1.1e-12 rad/s
+   if the response acts back on the odds: arm-phase rate G m^2/(hbar R), BMV crystal 1e-14 kg, R 0.9 um: 7.0e+01 rad/s
+
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

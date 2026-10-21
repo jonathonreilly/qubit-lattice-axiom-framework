@@ -1,7 +1,7 @@
 ---
 claim_id: candidate_laws
 claim_type: meta
-claim_scope: "Register of the current working candidate laws CL-1 to CL-6, what follows from them, untested predictions and open dependencies; zero premise weight. Several laws restate axiom clauses in the form the evidence needs; the axioms themselves are unchanged. Results that use a candidate law are conditional on it."
+claim_scope: "Register of the current working candidate laws CL-1 to CL-6, what follows from them, untested predictions and where the rules are wrong or incomplete; zero premise weight. Several laws restate axiom clauses in the form the evidence needs; the axioms themselves are unchanged. Results that use a candidate law are conditional on it."
 ---
 
 # Candidate laws
@@ -61,7 +61,7 @@ Evidence:
 > - minus the sum over hinges of area times deficit, in units of the rung's cells, with rotation deficits around hinges that contain a tick direction and rapidity deficits around the others;
 > - the links' plaquette phase.
 >
-> The flat background is the metric in which every source's stress is symmetric. Links sit on the links between neighbouring centres of each partition's cubes."
+> The flat background is the metric in which every source's stress is symmetric. A link's connection is a phase at each site; its holonomies sit on the bonds between neighbouring centres of each partition's cubes."
 
 **Gravity.**
 - The second variation is the linearised Einstein operator, with G = a^2/(8 pi) per cell.
@@ -72,7 +72,8 @@ Evidence:
 
 **Links.**
 - A conserved value current gives Maxwell, and a self-coupled multiplet gives Yang-Mills with the Jacobi identity.
-- Placing link quanta on the partition lattices gives photons the same band as fermions at every momentum.
+- The site phase and the centre-bond holonomies are one photon at two levels, related by an exact gauge-covariant map. On the centre lattices the photon has the fermion band at every momentum, and the symmetric-stress clause fixes its speed equal to the fermion speed without a tuned coupling.
+- A magnetic term cannot act inside one cube, and a register hopped by W is fermionic, so the photon is not a mode of the update itself.
 - Links attach only to currents the full update conserves exactly. On chiral content this leaves hypercharge, fixes the charge pattern and gives baryon and lepton number no massless field.
 
 Evidence:
@@ -101,15 +102,16 @@ Evidence:
 - **The lattice spacing is a few Planck lengths.**
 - **Matter still relative to the lattice at nuclear density would exhaust its sites after about 1e8 years.** Moving matter does not.
 
-## Open dependencies
+## Where the rules are wrong or incomplete
 
 - **Chirality.** A finite-range update gives no net chirality, so parity violation is not reproduced. The charge rule of CL-6 needs chiral content. Interactions that gap mirror fermions without breaking the gauge symmetry are under study.
 - **The two copies.** No covariant term splits them, so as they stand they conflict with the measured electron g-2 and the three light neutrinos.
 - **Gauge groups and generations.** No law selects SU(3) x SU(2) x U(1) or three generations.
 - **Masses.** mu and b are given per species, and no law predicts a mass ratio.
-- **Vacuum energy and dark matter.** The value of the cosmological constant and any dark sector are open.
+- **Vacuum energy and dark matter.** No law gives the cosmological constant or a dark sector. Counting records as 4-volume fails: a half-filled sea's configuration is frozen under CL-5, so its record count does not fluctuate as Poisson, and an imported Poisson count matches the size of the constant but its measured equation of state excludes the resulting drift.
 - **Supplied pieces.**
   - the rung that sets G and the radian-for-radian unit;
   - the positive/negative frequency branch;
   - the tie-break inside CL-5;
-  - quantised bosonic links, which are forced by measured antibunching but not by the laws.
+  - quantised bosonic links, which are forced by measured antibunching but not by the laws;
+  - the site carrier of the link phase, which needs Z_N with N >= 5 or a U(1) rotor beyond the one qubit. Zooming moves this cost into CL-3 as role-assigned sites but does not remove it.

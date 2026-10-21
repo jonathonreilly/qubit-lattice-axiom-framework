@@ -9,10 +9,10 @@
 
 ## Statement of the theorem
 
-Given the cluster's already-closed upstream inputs (radiation-branch
-expansion law from the `HRAD` theorem, exact source-and-CP-channel
-package from the exact-kernel-closure note, exact `K_H = m_tilde/m_*`
-from the `HRAD` theorem), the standard heavy-basis Boltzmann transport
+Given the supplied radiation-branch expansion law and conditional
+`K_H = m_tilde/m_*` arithmetic from the `HRAD` boundary note, together
+with the specified source-and-CP-channel package from the exact-kernel
+closure note, the standard heavy-basis Boltzmann transport
 ODE in normalized abundance variables
 
 ```
@@ -76,19 +76,15 @@ authority:
   this is the standard inverse-decay rate evaluated on the same
   relativistic Maxwell-Boltzmann distribution that supplies `N_{N1}^eq`
   above.
-- **The transport input** `K_H = m_tilde / m_*` is theorem-native on the
-  radiation branch by `DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md`
-  Result 5, which closes `m_* = 8 pi v^2 H_rad(T)/T^2` from the
-  Cl(3)/Z^3 flatness chain.
-- **The exact radiation profile** `E_H(z) = 1` is theorem-native by
-  the same `HRAD` theorem: on `Z^3` the cubic Regge deficit
-  `delta_e = 2 pi - 4 (pi/2) = 0` enforces exact spatial flatness, so
-  the dimensionless Hubble profile reduces to unity on the radiation
-  branch.
+- **The transport input** `K_H = m_tilde / m_*` inherits the open physical-slice
+  and radiation Friedmann/pressure-source premises of
+  `DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md`.
+- **The radiation profile** `E_H(z) = 1` follows conditionally from the supplied
+  `H(T)` proportional to `T^2` law with constant `g_*`. Vanishing cubic Regge
+  deficit alone supplies neither that expansion law nor its physical mapping.
 
-In particular, every quantity appearing on the right-hand sides of
-(T1) and (T2) is closed by a one-hop upstream theorem. The current
-note inherits these and exhibits (T1)-(T4) as a derived consequence.
+The integrating-factor result (T1)-(T4) is conditional on these ODE inputs.
+It does not close their physical-source or cosmological identification.
 
 ### (D2) The integrating-factor identity (T3) = (T4)
 
@@ -194,11 +190,10 @@ the load-bearing claim; the load-bearing claim is (T4), the
 direct-vs.-formal equivalence.
 
 This note does **not** by itself close the DM flagship lane. The DM
-flagship lane is closed downstream by the
-`TRANSPORT_DECOMPOSITION` note (which uses the result of *this* note as
-its step-(a) definition of `kappa_axiom[H]`) and ultimately by the
-microscopic selector law tracked by the cluster's `TRANSPORT_STATUS`
-leaf. The honest scientific status of the full chain is carried by
+flagship lane remains open. The
+`TRANSPORT_DECOMPOSITION` note uses this result as its step-(a) definition of `kappa_axiom[H]`,
+but supplies no physical source selector. The missing selector law is
+tracked by the cluster's `TRANSPORT_STATUS` leaf. The honest scientific status of the full chain is carried by
 those downstream notes, not by this one.
 
 ## Audit dependency repair links
@@ -216,9 +211,9 @@ benchmark-anchored.
   — supplies the radiation-branch expansion law
   `H_rad(T) = sqrt(4 pi^3 g_*/45) T^2/M_Pl`, the exact transport input
   `K_H = m_tilde/m_* = 47.235979629...`, and the exact normalized
-  Hubble profile `E_H(z) = 1` (closed by the Cl(3)/Z^3 flatness chain
-  with cubic Regge deficit `delta_e = 0`). Steps (D1) and (D3) inherit
-  these directly.
+  Hubble profile `E_H(z) = 1`, conditional on the physical-slice mapping and
+  radiation Friedmann/pressure-source premises still open in that note.
+  Steps (D1) and (D3) inherit those conditions.
 - [`DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md)
   — supplies the relativistic-Majorana yield bookkeeping
   `N_{N1}^eq(z) = (1/2) z^2 K_2(z)` with `N_{N1}^eq(0) = 1`, which

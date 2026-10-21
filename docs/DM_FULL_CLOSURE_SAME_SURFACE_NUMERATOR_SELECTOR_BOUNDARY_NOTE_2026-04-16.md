@@ -39,7 +39,7 @@ same-surface packet:
 - the helper layer supplies two endpoint couplings, `alpha_lo` and `alpha_hi`;
 - the two endpoint couplings are distinct and both lie above the common
   ingredient `alpha_bare = 1/(4 pi)`;
-- the helper-returned certified `R(alpha)` intervals at those endpoints are
+- the helper-returned numerical-support `R(alpha)` intervals at those endpoints are
   disjoint;
 - after multiplying by the helper-returned `Omega_b`, the displayed
   `Omega_DM` intervals are also disjoint.
@@ -58,7 +58,8 @@ alpha_hi = 0.092264992618360
 alpha_bare = 0.079577471545948
 ```
 
-and certified interval outputs:
+and numerical-support interval outputs (no certified rounding enclosure; see
+the October 4 boundary in `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md`):
 
 ```text
 R(alpha_lo) in [5.442019867867, 5.442019867931]

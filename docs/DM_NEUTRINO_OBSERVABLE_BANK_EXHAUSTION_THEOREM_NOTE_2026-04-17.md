@@ -10,6 +10,10 @@
 
 ## Scope and discipline
 
+The historical status line above names a downstream P3 closure route; it is
+not evidence that P3 has been supplied. This note leaves all three promotion
+lanes open, as its non-claims below require.
+
 This note attempts to close the selector law on the `Z_3` doublet block by
 **extending the observable bank** beyond the currently-exhausted
 transport/source/slot/CP bank. Specifically: the runner searches the
@@ -54,7 +58,7 @@ pin `(delta_*, q_+*)` on the chamber.
 **Proof sketch.** The retained downstream observables split into three
 families:
 
-1. **Gauge-sector observables** (e.g. `R = Omega_DM/Omega_B ~ 5.48` via
+1. **Gauge-sector observables** (e.g. `R = Omega_DM/Omega_B ~ 8.07` via
  `alpha_plaq` from the `Cl(3)` normalization `g_bare = 1`, and all
  `Omega_X` quantities derived from it). None reads the neutrino
  doublet block.
@@ -77,7 +81,7 @@ derivation. QED.
 
 | # | Observable | retained? | `f(H)`? | varies on chamber? | obs target? | closes? |
 |---|------------|-----------|---------|--------------------|-------------|---------|
-| O1 | `R = Omega_DM/Omega_B` (5.48 vs 5.47) | Y | **N** | N | Y | no |
+| O1 | `R = Omega_DM/Omega_B` (corrected ~8.07 vs 5.364) | Y | **N** | N | Y | no |
 | O2 | `m_DM` (DM particle mass) | Y | **N** | N | Y | no |
 | O3 | Atmospheric `Dm^2_31` via `m_3` | Y | **N** | N | Y | no |
 | O4 | PMNS `θ_12, θ_13, θ_23` | **N** | Y | Y | **N** | no |
@@ -91,8 +95,10 @@ EMPTY.** This is the CASE 4 obstruction.
 
 ### Per-observable rationale
 
-**O1. `R = Omega_DM/Omega_B`.** Retained (0.25% agreement with
-`R_obs = 5.47` at the `g_bare = 1` Cl(3) normalization). Routes through
+**O1. `R = Omega_DM/Omega_B`.** The corrected conditional value is approximately
+`8.07` versus the Planck physical-density comparator `5.364`, about 50% high.
+The old 0.25% match is withdrawn by the September 30 Sommerfeld/comparator
+corrigendum in `G_BARE_DERIVATION_NOTE.md`. Routes through
 `alpha_plaq` (gauge sector), not through the neutrino active doublet
 block. Provenance: `G_BARE_DERIVATION_NOTE.md`,
 `OMEGA_LAMBDA_DERIVATION_NOTE.md`. **Not a function of `H(m, delta, q_+)`.**
@@ -102,7 +108,7 @@ Chamber-blind.
 (`sigma_v = pi alpha_s^2 / m_DM^2`) plus `alpha_s`/`alpha_plaq`; does
 not read the neutrino doublet block.
 
-**O3. Atmospheric `Dm^2_31` via `m_3`.** On the retained diagonal
+**O3. Atmospheric `Dm^2_31` via `m_3`.** On the admission-conditional diagonal
 benchmark,
 ```
 m_3 = y_nu_eff^2 v^2 / M_1,
@@ -110,7 +116,12 @@ y_nu_eff = g_weak^2 / 64,
 v = M_Pl C alpha_LM^16,
 M_1 = M_Pl alpha_LM^8 (1 - alpha_LM/2),
 ```
-giving `m_3 = 5.058e-2 eV` and `Dm^2_31 = 2.539e-3 eV^2`. Authority:
+The physical Schur readout, coupling identification and taste-to-Dirac
+transport remain named admissions; see
+`DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md`.
+The pure even spectral-trace Dirac class does not supply the taste anisotropy;
+see `DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md`.
+Conditional substitution gives `m_3 = 5.058e-2 eV` and `Dm^2_31 = 2.539e-3 eV^2`. Authority:
 `DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md`. **None of
 `y_nu_eff, v, M_1` depend on `(delta, q_+)`.** Chamber-blind.
 
@@ -283,13 +294,10 @@ object:
  parity-mixing F1 candidate, and the transport chamber-blindness
  theorem.
 - This note does not close the DM flagship lane on its own. It names
- the three promotion lanes (P1, P2, P3) that can close it. The
- integrated closure is the downstream PMNS-as-f(H) closure, which
- realises P3 explicitly.
+ the three promotion lanes (P1, P2, P3) that can close it. This note does not supply the missing P3 promotion.
 - The observable-bank-extension lane is classified as CASE 3 + CASE 4.
  Any future selector attempt along observable-bank lines must cite one
- of P1 / P2 / P3 and supply the missing promotion; P3 is realised by
- the PMNS-as-f(H) closure.
+ of P1 / P2 / P3 and supply the missing promotion; none is supplied here.
 
 ## Command
 

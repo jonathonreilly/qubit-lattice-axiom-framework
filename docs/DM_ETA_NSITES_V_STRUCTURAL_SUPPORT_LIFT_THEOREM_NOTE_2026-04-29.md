@@ -1,5 +1,6 @@
 # DM eta N_sites · v Structural Support Theorem (V1)
 
+**Type:** bounded_theorem
 **Date:** 2026-04-29
 **Status (actual current surface):** `bounded` support theorem —
 records that the DM η freeze-out-bypass quantitative theorem
@@ -22,12 +23,21 @@ mechanism) remains EXPLICITLY OPEN. No audit-ratified tier is claimed.
 
 ---
 
+## Current scope and historical provenance
+
+The retained-input labels and target-selection census below record the April
+proposal, not current audit authority. Here N_sites=16 and v=246.28 GeV are
+supplied inputs to a conditional product. Their physical interpretation,
+hierarchy normalization and dark-state identification require separate
+authorities; multiplication does not establish them. The old within-5%
+match is superseded by the corrected same-coupling result in §1.4.
+
 ## 0. Headline
 
 The DM η freeze-out-bypass theorem (2026-04-25) discovered, via a
 systematic audit of 22 single-block structural multipliers, that
-exactly one candidate `m_DM = N_sites · v = 16 · v ≈ 3940 GeV` lands
-within 5% of the freeze-out target (next-closest at -29.63%, a 14×
+on the historical supplied-kernel inputs exactly one candidate
+`m_DM = N_sites · v = 16 · v ≈ 3940 GeV` landed within 5% of the freeze-out target (next-closest at -29.63%, a 14×
 gap). Among 10,743 structural identities of complexity up to 4, only
 0.75% land within 5%.
 
@@ -87,6 +97,16 @@ new audit input required.
 
 ### 1.4 Composition with the freeze-out-bypass theorem
 
+**Corrected numerical boundary.** The nominal `6.38e-10` / `+4.22%`
+calculation below is historical half-argument-kernel arithmetic. The September
+30 corrigendum in `DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md`
+gives `eta = 4.3820e-10` with the corrected same-coupling kernel, about 28.4%
+below `6.12e-10`. The supplied `S in [1.4,1.7]` rectangle is not a derived
+same-coupling uncertainty band. The product `16 v` remains a selected
+conditional mass candidate; neither its physical dark-state identification
+nor its singlet premise follows from this product. See the conditional
+embedding correction in `DM_SU3_GAUGE_LOOP_OBSTRUCTION_NOTE_2026-04-25.md`.
+
 DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM eq. (2):
 
 ```text
@@ -121,11 +141,10 @@ from-axiom), the DM mass candidate
 m_DM = N_sites · v = 16 · v ≈ 3940 GeV
 ```
 
-is the unique framework-composed single-block structural product
-landing within 5% of the freeze-out-bypass target on the bounded DM
-η identity `eta = C · m_DM²`. Combined with retained R_base = 31/9
-and bounded Sommerfeld + freeze-out band, this gives the bounded
-prediction band `eta_pred ∈ [5.25 × 10^{-10}, 8.11 × 10^{-10}]`,
+was the unique single-block product within 5% of the historical
+half-argument-kernel target in the tested class. That numerical agreement
+is superseded by the corrected same-coupling result in §1.4. On the separately
+supplied Sommerfeld/freeze-out rectangle, conditional arithmetic gives the band `eta_pred ∈ [5.25 × 10^{-10}, 8.11 × 10^{-10}]`,
 bracketing the Planck observation.
 
 **Status:** `bounded` support — the candidate is recorded as a
@@ -151,19 +170,21 @@ No additional input required.
 
 **Step 4 (substitute into DM η identity).** By DM_ETA_FREEZEOUT_BYPASS
 eq. (2): eta = C · m_DM². Substituting m_DM = N_sites · v gives
-eta = C · N_sites² · v². Numerically eta_pred ≈ 6.38 × 10^{-10}
-(central).
+eta = C · N_sites² · v². The historical central value was approximately
+6.38 × 10^{-10}; the corrected same-coupling central value is
+4.3820 × 10^{-10}, as explained in §1.4.
 
-**Step 5 (bounded band).** With bounded Sommerfeld continuation
+**Step 5 (supplied rectangle).** With separately supplied Sommerfeld ratio
 S_vis/S_dark ∈ [1.4, 1.7] and freeze-out coefficient x_F ∈ [22, 28],
 the bounded band on eta_pred is [5.25 × 10^{-10}, 8.11 × 10^{-10}],
 bracketing eta_obs = 6.12 × 10^{-10}.
 
-**Step 6 (uniqueness within the audit class).** The 22-multiplier
-audit (from the freeze-out-bypass theorem) shows only N_sites · v
-lands within 5%; next-closest at -29.63%. So the framework-composed
+**Step 6 (historical target-selected class).** The 22-multiplier
+audit (from the freeze-out-bypass theorem) used the historical kernel and
+target; on those inputs only N_sites · v landed within 5%; next-closest at -29.63%. So the framework-composed
 N_sites · v product is the unique candidate within the systematic
-single-block multiplier class. **QED on the bounded support claim**; the
+single-block multiplier class on those historical inputs. This does not
+establish a present observational match or physical mass selection; the
 G1 mechanism remains separately open.
 
 ---
@@ -203,7 +224,8 @@ m_dm_falsifiable_prediction: "3.94 TeV (m_DM = 16 v)"
 2. bounded support for the previously audit-discovered DM η
    freeze-out-bypass candidate as a framework-composed structural
    product;
-3. enumeration that this is the unique audit-class candidate within 5%;
+3. historical enumeration of the unique tested-class candidate within 5%
+   on the superseded supplied-kernel inputs;
 4. computed replay that the stated x_F/Sommerfeld rectangle brackets
    eta_obs.
 
@@ -237,7 +259,8 @@ If V1 is kept as bounded support:
   add §Note that the previously audit-discovered N_sites · v candidate
   is also framework-composed.
 - **DM lane status:** the bounded band [5.25e-10, 8.11e-10] remains a
-  bounded prediction until the G1 mechanism is derived.
+  conditional rectangle calculation, not a same-coupling prediction or
+  uncertainty band. G1 alone would not derive the supplied rectangle.
 
 ---
 

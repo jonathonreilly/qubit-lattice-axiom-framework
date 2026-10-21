@@ -1,8 +1,9 @@
 # DM Leptogenesis PMNS Observable-Relative-Action Law
 
+**Type:** bounded_theorem
 **Date:** 2026-04-16 (initial); 2026-05-16 prose recast so the load-bearing
-selector law is explicitly carried by its already-derived effective-action
-identity rather than presented as a free postulate.  
+objective is expressed by its effective-action identity; physical minimization
+and the observed-target constraint remain supplied selection premises.
 **Status:** support - structural / confirmatory support note attached to the
 already-landed `DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16`.  
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py`  
@@ -11,16 +12,11 @@ spatial substrate.
 
 ## Role of this note
 
-This note records the **operational PMNS-assisted off-seed source selector**
-used on the current refreshed DM branch and the numerical source it picks
-out. It is a support note, not a free selector ansatz: the underlying
-**why** of the selector — that the seed-relative bosonic action is the exact
-Legendre-dual effective action of the baseline-framework observable
-generator — is
-the load-bearing content of the sister theorem note
-`DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16`
-and is exercised here so a reader of this note alone still sees the
-derivation chain wired in.
+This note evaluates an adopted constrained source-selection prescription.
+The relative-action identity below fixes the objective's algebraic form; it
+neither derives a physical minimization postulate nor selects the observed-target
+constraint `eta / eta_obs = 1`. Numerical solutions therefore give conditional
+source witnesses, not independent predictions of the baryon asymmetry.
 
 ## Selector law (operational form)
 
@@ -36,17 +32,19 @@ where:
 
 Then:
 
-1. determine the favored flavor column `i_*` from the exact transport-extremal
-   class
+1. determine the favored flavor column `i_*` from the finite numerical transport-search
+   witness
 2. among all positive off-seed sources on the same seed surface satisfying
    `eta_{i_*} / eta_obs = 1`, choose the one minimizing `S_rel`
 
-## Why the operational law is not an extra postulate
+## Objective identity and the supplied selection prescription
 
-The seed-normalized matrix `Y = H_seed^{-1/2} H_e H_seed^{-1/2}` satisfies
+For positive-definite Hermitian `H_seed` and `H_e`, the positive-definite
+seed-normalized matrix `Y = H_seed^{-1/2} H_e H_seed^{-1/2}` satisfies
 
 `S_rel(Y) = sup_K [ log det(I + K) - Tr(K Y) ]`
 
+where the supremum is over Hermitian `K` with `I+K` positive definite,
 with unique maximizer `K_* = Y^{-1} - I`. That is, `S_rel` is the **exact
 Legendre dual** of the baseline-framework scalar observable generator
 `W(K) = log det(I + K)`. This identity is proved and numerically exercised
@@ -55,27 +53,15 @@ in `DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16`
 Part 1) and is **re-exercised inside this note's own runner** in Part 0 so
 the derivation chain is visible from the support runner alone.
 
-Because `S_rel` is the effective action attached to the framework's exact
-observable generator, the operational law above is the **native
-effective-action selector** on the fixed seed surface, restricted by the
-exact transport-favored column. The previous prose treated the
-minimization step as a separate philosophical assumption; on the current
-branch that assumption has already been discharged at the effective-action
-reduction level, and uniqueness of the lowest-action closure branch on the
-current closure patch is verified directly by the stationarity-theorem
-runner.
+This identity does not discharge the physical selection premise. The
+operational calculation additionally supplies:
 
-Operationally, that means the support law inherits from its sister theorem:
+- the seed surface and favored transport column;
+- the observed-target equality `eta_{i_*}(H_e) / eta_obs = 1`;
+- minimization of this objective on that constraint surface.
 
-- exact Legendre-dual / effective-action reduction of the objective
-- exact transport-favored column on the fixed seed surface
-- exact closure constraint `eta_{i_*}(H_e) / eta_obs = 1`
-- uniqueness of the lowest-action closure branch on the current closure
-  patch (bounded uniqueness, sampled feasible starts)
-
-so the operational law here is a re-statement of that already-derived
-selector on the same closure patch, used to produce the explicit numerical
-source on the current refreshed DM branch.
+The stationarity and sampled feasible-start checks support a candidate on the
+examined patch. They do not prove a physical source law or global uniqueness.
 
 ## Output of the operational law on the current branch
 
@@ -95,10 +81,11 @@ and the resulting transport values are
 
 `eta / eta_obs = (1.0, 0.75917896, 0.48458840)`,
 
-with the exact relative action value `S_rel = 0.240906701369` (matches the
+with the numerical relative action value `S_rel = 0.240906701369` (matches the
 Legendre-dual functional to ~1e-12 in the runner's Part 0).
 
-The favored column remains column `0`, and exact closure is reached there.
+The favored column remains column `0`; its imposed equality is met to the
+reported numerical precision. This is not an independent observational match.
 
 ## What this note still does not claim
 
@@ -111,10 +98,9 @@ This note does **not** claim, on its own:
    `DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16`
    itself claims
 
-The current bounded scope is identical to that of the sister theorem
-note: exact at the effective-action reduction, branch-exact at the
-closure equation, and bounded-unique on the sampled current closure
-patch.
+The objective identity is exact on its stated positive-definite domain.
+The constrained source is numerical candidate support on the sampled patch;
+these samples establish neither exact nor global uniqueness.
 
 ## Command
 

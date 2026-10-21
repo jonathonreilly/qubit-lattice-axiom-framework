@@ -16,9 +16,9 @@ Purpose:
     S_rel(H_e || H_seed) = Tr(H_seed^{-1} H_e) - log det(H_seed^{-1} H_e) - 3
 
   is the *exact Legendre-dual effective action* of the baseline-framework scalar
-  observable generator W(K) = log det(I + K), so that constrained
-  minimization of S_rel is the native effective-action selector rather
-  than a free postulate.
+  observable generator W(K) = log det(I + K). The physical minimization
+  prescription and observed-target constraint are additional supplied inputs;
+  the objective identity does not derive them.
 
   To keep the derivation chain visible from this support runner alone,
   Part 0 re-exercises the Legendre-dual identity locally before Parts 1-3
@@ -26,8 +26,7 @@ Purpose:
 
 Operational law (restated):
   1. keep the already-derived native N_e seed pair (xbar, ybar) fixed
-  2. determine the favored closure column i_* from the exact transport-extremal
-     class
+  2. select a favored column i_* from a finite transport search witness
   3. among all positive off-seed sources on that fixed seed surface satisfying
        eta_{i_*} / eta_obs = 1,
      choose the one minimizing the exact observable-principle relative action
@@ -57,6 +56,8 @@ from frontier_dm_leptogenesis_flavor_column_functional_theorem import (
 )
 from frontier_dm_leptogenesis_pmns_active_projector_reduction import active_packet_from_h
 from frontier_dm_leptogenesis_pmns_projector_interface import canonical_h
+
+AUDIT_TIMEOUT_SEC = 300
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -148,7 +149,8 @@ def part0_relative_action_is_the_exact_legendre_dual_effective_action() -> None:
 
     The seed-relative bosonic action is the exact Legendre-dual effective
     action of the baseline-framework scalar observable generator W(K)=log det(I+K).
-    The unique dual maximizer is K_* = Y^{-1} - I.
+    For Hermitian Y>0 and Hermitian K with I+K>0, the unique dual
+    maximizer is K_* = Y^{-1} - I.
 
     This part demonstrates that fact directly inside the support runner so
     the derivation chain is visible without depending on
@@ -217,7 +219,7 @@ def part0_relative_action_is_the_exact_legendre_dual_effective_action() -> None:
         f"max directional gradient={grad_probe:.3e}",
     )
     check(
-        "The dual is strictly concave at K_*, so S_rel is uniquely defined on the positive cone",
+        "Eight sampled Hessian directions are negative at K_*",
         max(hess_samples) < -1e-6,
         f"worst sampled Hessian quadratic={max(hess_samples):.6e}",
     )
@@ -226,13 +228,14 @@ def part0_relative_action_is_the_exact_legendre_dual_effective_action() -> None:
     print("  Effective-action identity (Legendre dual of W(K) = log det(I+K)):")
     print("    S_rel(Y) = sup_K [ log det(I+K) - Tr(K Y) ],   K_* = Y^{-1} - I")
     print(f"  Y = H_seed^(-1/2) H_e H_seed^(-1/2),  S_rel = {s_rel:.12f}")
-    print("  Full proof + bounded-uniqueness: see")
+    print("  Domain: Hermitian Y>0, Hermitian K with I+K>0.")
+    print("  Mathematical objective identity; physical minimization remains supplied. See")
     print("    docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md")
 
 
 def part1_transport_extremality_still_fixes_the_favored_column() -> tuple[int, np.ndarray]:
     print("\n" + "=" * 88)
-    print("PART 1: TRANSPORT EXTREMALITY FIXES THE FAVORED COLUMN")
+    print("PART 1: FINITE SEARCH SELECTS A CANDIDATE COLUMN")
     print("=" * 88)
 
     result = differential_evolution(
@@ -255,19 +258,19 @@ def part1_transport_extremality_still_fixes_the_favored_column() -> tuple[int, n
     best_idx = int(np.argmax(etas_opt))
 
     check(
-        "The transport-extremal class stays on the exact fixed native seed surface",
+        "The searched witness stays on the supplied fixed seed surface",
         abs(np.mean(x_opt) - XBAR_NE) < 1e-12 and abs(np.mean(y_opt) - YBAR_NE) < 1e-12,
         f"(xbar,ybar)=({np.mean(x_opt):.6f},{np.mean(y_opt):.6f})",
     )
     check(
-        "The favored closure column is fixed by the exact extremal class",
+        "The finite search witness favors column zero",
         best_idx == 0,
         f"etas={np.round(etas_opt, 6)}",
     )
 
     print()
-    print(f"  extremal packet:\n{np.round(packet_opt, 6)}")
-    print(f"  extremal eta/eta_obs = {np.round(etas_opt, 6)}")
+    print(f"  searched packet:\n{np.round(packet_opt, 6)}")
+    print(f"  searched eta/eta_obs = {np.round(etas_opt, 6)}")
     return best_idx, result.x
 
 
@@ -315,7 +318,7 @@ def part2_observable_relative_action_law(i_star: int, extremal_params: np.ndarra
         f"(xbar,ybar)=({np.mean(x_sel):.6f},{np.mean(y_sel):.6f})",
     )
     check(
-        "The law closes eta exactly on the favored column",
+        "The numerical source satisfies the imposed eta equality on the favored column",
         abs(etas_sel[i_star] - 1.0) < 1e-12,
         f"etas={np.round(etas_sel, 12)}",
     )
@@ -325,7 +328,7 @@ def part2_observable_relative_action_law(i_star: int, extremal_params: np.ndarra
         f"xi={fmt(xi)}, eta={fmt(eta)}",
     )
     check(
-        "The selected source is simpler than the earlier canonical near-closing sample",
+        "The selected source phase magnitude is below 1e-4",
         abs(delta_sel) < 1e-4,
         f"delta={delta_sel:.12e}",
     )
@@ -353,21 +356,9 @@ def part3_bottom_line() -> None:
     print("PART 3: BOTTOM LINE")
     print("=" * 88)
 
-    check(
-        "The off-seed selector is the native effective-action selector of the exact observable principle",
-        True,
-        "S_rel is the Legendre dual of W(K)=log det(I+K) [Part 0]; minimization is its native rule",
-    )
-    check(
-        "The operational law inherits the sister theorem's bounded uniqueness on the current closure patch",
-        True,
-        "see DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16",
-    )
-    check(
-        "What remains beyond this support note is only a future branch-global analytic uniqueness proof",
-        True,
-        "the selector principle itself is no longer an external import on the current branch",
-    )
+    print("  [SCOPE] The objective identity is checked in Part 0.")
+    print("  [SCOPE] Minimization and eta/eta_obs=1 are supplied constraints.")
+    print("  [SCOPE] Numerical witnesses do not prove physical selection or global uniqueness.")
 
 
 def main() -> int:
@@ -385,8 +376,8 @@ def main() -> int:
     print()
     print("Derivation chain (carried into Part 0 of this runner):")
     print("  S_rel(Y) = sup_K [ log det(I+K) - Tr(K Y) ]  (Legendre dual)")
-    print("  => the minimization rule is the native effective-action selector")
-    print("     attached to the baseline-framework observable generator W(K)=log det(I+K)")
+    print("  The identity fixes the objective, not the physical minimization rule.")
+    print("  The equality eta/eta_obs=1 is an imposed observed-target constraint.")
     print("  (full theorem: DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16)")
 
     part0_relative_action_is_the_exact_legendre_dual_effective_action()
@@ -400,9 +391,9 @@ def main() -> int:
     print("  Observable-principle selector:")
     print("    - selector objective derived: S_rel is the Legendre-dual effective")
     print("      action of W(K)=log det(I+K)  [Part 0]")
-    print("    - favored column fixed by exact transport extremality  [Part 1]")
-    print("    - off-seed source fixed by minimum relative bosonic action  [Part 2]")
-    print("    - exact eta/eta_obs = 1 on the current PMNS-assisted N_e branch")
+    print("    - candidate column selected by finite transport search  [Part 1]")
+    print("    - numerical source from adopted constrained minimization  [Part 2]")
+    print("    - imposed eta/eta_obs = 1 met numerically; no independent prediction")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

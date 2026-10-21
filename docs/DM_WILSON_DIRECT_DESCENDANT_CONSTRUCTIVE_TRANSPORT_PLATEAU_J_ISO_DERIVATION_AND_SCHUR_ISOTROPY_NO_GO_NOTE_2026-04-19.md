@@ -1,5 +1,29 @@
 # DM Wilson Direct-Descendant Constructive Transport Plateau J_iso Derivation And Schur-Isotropy No-Go
 
+## Current dependency and proof boundary (2026-10-21)
+
+The archived spectral-isotropy and normalized-determinant selector notes are
+historical provenance, not retained premises. Their claims of certified W1
+selection, exact transport-optimality and unique path crossings are not imported
+here. For a supplied positive 3-by-3 Hermitian matrix H, the definitions
+T=Tr(H), Q=Tr(H²), Delta=det(H) give q3=Delta/T³ and J_iso=27q3 directly.
+AM-GM gives 0<J_iso<=1, with equality only for three equal eigenvalues.
+If supplied normalized spectra satisfy strict majorization, every strictly
+Schur-concave function orders them accordingly. This conditional mathematical
+implication does not establish that the numerical source witnesses satisfy
+exact fiber constraints or that a physical selector has been derived.
+
+Numerical witness membership, tangent ranks and optimization results below
+remain finite diagnostics. Any exact local exclusion is conditional on a
+smooth positive three-dimensional fiber and an actual nonsingular (T,Q,Delta)
+coordinate chart; a numerical rank at sampled points is not that proof.
+Those realization/rank obligations remain unresolved here. Historical audit
+and closure language below is not a new certification of those obligations.
+
+The cubic-law calculation uses supplied polynomial, symmetry, boundary-vanishing and normalization assumptions; these are not derived physical requirements. A finite boundary-drift packet does not prove a global maximizer lies at the boundary.
+
+**Type:** no_go
+
 **Date:** 2026-04-19  
 **Status:** proposed_no_go — exact positive-plus-negative closeout on
 the current DM constructive-plateau lane (J_iso derivation succeeds at
@@ -96,7 +120,7 @@ F(p) = a sum_i p_i^3
      + c p_1 p_2 p_3.
 ```
 
-Now impose the retained physical requirements.
+Now impose the supplied polynomial requirements.
 
 ### 1. Vanish on complete one-channel collapse
 
@@ -283,8 +307,8 @@ In other words, the branch now knows both:
 
 ## Cross-references
 
-- [`docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_SCHUR_SPECTRAL_ISOTROPY_SELECTOR_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_SCHUR_SPECTRAL_ISOTROPY_SELECTOR_NOTE_2026-04-19.md)
-- [`docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_NORMALIZED_SCHUR_DETERMINANT_SELECTOR_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_NORMALIZED_SCHUR_DETERMINANT_SELECTOR_NOTE_2026-04-19.md)
+- Historical archived source: `archive/notes/docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_SCHUR_SPECTRAL_ISOTROPY_SELECTOR_NOTE_2026-04-19.md` (provenance only; no active theorem authority)
+- Historical archived source: `archive/notes/docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_NORMALIZED_SCHUR_DETERMINANT_SELECTOR_NOTE_2026-04-19.md` (provenance only; no active theorem authority)
 - [`docs/DM_WILSON_DIRECT_DESCENDANT_TRANSPORT_FIBER_SPECTRAL_COMPLETION_THEOREM_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_TRANSPORT_FIBER_SPECTRAL_COMPLETION_THEOREM_NOTE_2026-04-19.md)
 - [`docs/DM_WILSON_DIRECT_DESCENDANT_CANONICAL_TRANSPORT_COLUMN_FIBER_THEOREM_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CANONICAL_TRANSPORT_COLUMN_FIBER_THEOREM_NOTE_2026-04-19.md)
 

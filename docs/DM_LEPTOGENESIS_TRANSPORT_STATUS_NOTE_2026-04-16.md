@@ -8,12 +8,12 @@
 
 ## Status
 
-**EXACT TRANSPORT CHAIN CLOSED; DM GATE STILL OPEN**
+**CONDITIONAL TRANSPORT SOLUTION; DM GATE STILL OPEN**
 
 The refreshed branch adds real exact transport-side results, but it does not
 justify a live `full theorem closure` claim for the DM lane.
 
-What is now exact on the current branch:
+The following algebra and numerical transport use the supplied source package:
 
 - exact source package
   - `gamma = 1/2`
@@ -24,19 +24,33 @@ What is now exact on the current branch:
 - exact equilibrium conversion factors
   - `d_N = 0.003901498367656259`
   - `s/n_gamma = 7.039433661546651`
-- exact radiation expansion law
+- supplied radiation expansion law (physical/GR bridge open)
   - `H_rad(T) = sqrt(4*pi^3*g_*/45) * T^2 / M_Pl`
 - exact normalized radiation transport branch
   - `E_H(z) = 1`
-- exact direct transport solve on that branch
+- numerical direct transport solve on that branch
 
-## Exact transport result
+## Conditional numerical transport result
 
-On the exact theorem-native radiation branch:
+On the supplied radiation branch with the specified source and normalization:
 
 - `epsilon_1 / epsilon_DI = 0.9276209209197268`
 - `kappa_axiom = 0.004829545290766509`
 - `eta / eta_obs = 0.188785929502`
+
+## Branch and premise boundary
+
+| Evaluation | `eta / eta_obs` | Scope |
+|---|---:|---|
+| Direct radiation ODE | `0.18878592785` (about `0.188785929502` at the historical solver tolerance) | supplied source, radiation law and thermal initial condition |
+| Corrected `K00` package with legacy efficiency fit | approximately `0.558` | approximation in `DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md` |
+| Earlier benchmarks (`0.30`, `0.99`) | historical | superseded branch/method values, not current direct-ODE results |
+| PMNS constrained/existence constructions | `1` on selected witnesses | source/constraint supplied; not an independent asymmetry prediction |
+
+The physical radiation law and slice identification remain open as specified in
+`DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md`. The current delta-even
+selector bank does not choose a physical CP sheet or baryon-asymmetry sign.
+Positive-source witnesses do not discharge that selection problem.
 
 ## PMNS-assisted support status
 
@@ -187,13 +201,14 @@ the same final place:
 
 ## Meaning
 
-The old transport-side exact boundary on `H_rad(T)` is gone. The current live
-end state is:
+The physical-source and `H_rad(T)` premises remain open. Conditional on the
+supplied inputs, the current results are:
 
-- exact source + transport chain on the one-flavor theorem-native branch
-- exact same-surface thermal bounding, with a certified current-bank
-  numerator-selector no-go and a certified unique root interval on the admitted
-  one-scalar same-surface family
+- conditional source + transport chain on the specified one-flavor branch
+- same-surface thermal numerical support on the admitted one-scalar family;
+  the October 4 thermal-bounding boundary does not supply certified rounding
+  enclosures. The corrected Sommerfeld endpoints are about `7.97` and `8.07`,
+  versus the physical-density comparator `5.364`
 - exact strongest-current native local parity-compatible diagonal observable
   route closure at `delta_* = q_+* = rho_* = sqrt(6)/3`, but with that
   selected slice still transport-subcritical
@@ -209,7 +224,7 @@ end state is:
   carrier-side pressure is exhausted to two explicit split-2 upper-face
   neighborhoods rather than a diffuse rival-window search
 - exact PMNS constructive existence on the fixed native `N_e` seed surface
-- exact theorem-native prediction undershoots observation by a factor
+- conditional direct-ODE evaluation undershoots observation by a factor
   `~ 5.297`
 - PMNS-assisted repair is scientifically stronger than before: the
   constructive projected-source chamber contains an exact `eta/eta_obs = 1`
@@ -227,7 +242,8 @@ The load-bearing traceability requirement for this status note is to
 link the full `dm_leptogenesis_exact_common` source, or retained
 upstream notes deriving `exact_package`, `H_RAD_COEFFICIENT_EXACT`,
 `D_THERMAL_EXACT`, `S_OVER_NGAMMA_EXACT`, and
-`kappa_axiom_reference` from the stated axiom. The runner-side carrier
+`kappa_axiom_reference`, with their supplied model and open physical
+identification premises. The runner-side carrier
 of these constants is
 
 - `scripts/dm_leptogenesis_exact_common.py` — defines
@@ -247,7 +263,8 @@ and `kappa_axiom`.
   `E1 = sqrt(8/3)`, `E2 = sqrt(8)/3`, and the axiom-side kernel closure
   the runner imports through `dm_leptogenesis_exact_common`.
 - [DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md)
-  — exact derivation of the radiation-expansion law
+  — conditional radiation-expansion formula, requiring the physical-slice
+  mapping and radiation Friedmann/pressure-source premises;
   `H_rad(T) = sqrt(4π³ g_*/45) * T² / M_Pl`, i.e. the
   `H_RAD_COEFFICIENT_EXACT` constant.
 - [DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md)

@@ -30,7 +30,8 @@ current dependency packet.
 The exact chain is:
 
 1. the axiom geometry `Z^3` is intrinsically flat
-2. the homogeneous/isotropic spatial slice therefore has exact `k = 0`
+2. identifying that cubic geometry with the physical homogeneous/isotropic
+   spatial slice supplies `k = 0` as a separate mapping premise
 3. a retained GR/pressure-source authority supplies the flat radiation
    Friedmann law `H^2 = (8 pi G / 3) rho_rad` (**open input; not supplied by
    the dust Newton-Poisson wrapper**)
@@ -44,13 +45,17 @@ The exact chain is:
 
 with exact normalized transport profile
 
-`E_H(z) = z^2 H(M1/z)/H(M1) = 1`.
+`E_H(z) = z^2 H(M1/z)/H(M1) = 1`,
 
-## Why `k = 0` is no longer bounded
+conditional on `H(T)` proportional to `T^2` with constant `g_*` over the
+transport domain. Spatial flatness alone does not imply this scaling.
 
-The old bounded lane treated `k = 0` as an external flatness assumption.
-That spatial-flatness input is supported by the cubic-Regge dependency below.
-This does **not** close the missing radiation Friedmann/pressure-source input.
+## Cubic flatness and the physical-slice premise
+
+The cubic-Regge dependency proves a geometric statement on the supplied
+cubic tessellation. Identifying it with a physical cosmological slice is a
+separate premise; neither it nor the radiation Friedmann/pressure-source
+input is derived by the deficit calculation.
 
 On the cubic spatial tessellation of `Z^3`, each edge has four incident
 square plaquettes with dihedral angle `pi/2`, so the Regge deficit is
@@ -86,7 +91,7 @@ GR/pressure-source authority lands and audits clean.
 
 ## Upstream authority
 
-- [CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md](CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md) — narrow theorem proving the cubic-Coxeter Regge deficit vanishes identically on `Z^3` (interior edges of every class), used here as the framework-side authority for the `k = 0` spatial-flatness input formerly carried as a bounded sub-assumption in step (2) of the chain.
+- [CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md](CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md) — narrow theorem proving the cubic-Coxeter Regge deficit vanishes identically on `Z^3` (interior edges of every class), used here only for cubic geometric flatness, not for the physical-slice identification in step (2).
 - [SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md) — finite declared-inventory arithmetic certificate for the SM relativistic degrees-of-freedom count `g_* = 28 + (7/8) * 90 = 106.75` used in step (4) and propagated through step (5).
 - [AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md](AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md) — framework-side Stefan-Boltzmann derivation for the `(pi^2 / 30)` per-DOF prefactor in the relativistic energy density `rho_rad(T) = (pi^2 / 30) g_* T^4` used in step (4).
 

@@ -1,0 +1,31 @@
+========================================================================================
+DM LEPTOGENESIS PMNS STATIONARY CP INCOMPATIBILITY THEOREM
+========================================================================================
+
+Question:
+  Can the current exact PMNS selector families on the fixed native N_e
+  seed surface serve as constructive witnesses for the source-oriented
+  mainline CP branch?
+
+========================================================================================
+PART 1: CURRENT STATIONARY SELECTOR FAMILIES ARE PARITY-EVEN
+========================================================================================
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py", line 235, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py", line 216, in main
+    part1_current_stationary_selector_families_are_parity_even_and_cp_sheet_ambiguous()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py", line 85, in part1_current_stationary_selector_families_are_parity_even_and_cp_sheet_ambiguous
+    i_star, branches = quiet_call(selector.part1_enumerate_stationary_branches)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py", line 73, in quiet_call
+    return fn(*args, **kwargs)
+  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py", line 142, in part1_enumerate_stationary_branches
+    branches = cluster_solutions(sols, i_star)
+  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py", line 114, in cluster_solutions
+    rep = constrained_refine(rep, i_star)
+  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py", line 74, in constrained_refine
+    raise RuntimeError("constrained refinement failed")
+RuntimeError: constrained refinement failed

@@ -1,7 +1,7 @@
 # DM Leptogenesis PMNS Conditional Reduction-Factorization Boundary
 
 **Status:** support - structural or confirmatory support note
-**Type:** bounded_theorem
+**Type:** open_gate
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.py`
 
 ## Question
@@ -72,3 +72,12 @@ The runner imports six PMNS-side modules; each has a framework wrapper note:
 ```bash
 python3 scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.py
 ```
+
+## Execution boundary recorded 2026-10-21
+
+This wrapper remains an open research gate: the current canonical diagnostic
+failed, and no numerical expectation or tolerance has been relaxed. The finite
+chart statements above are retained at their supplied-model scope.
+[Preserved failure evidence](review_evidence/dm-canonical-failures-2026-10-21/manifest.json)
+records the command and source recovery identity. This classification does not
+turn a failed execution into successful evidence.

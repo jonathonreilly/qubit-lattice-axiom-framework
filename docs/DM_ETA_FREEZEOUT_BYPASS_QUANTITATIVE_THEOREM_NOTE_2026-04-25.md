@@ -252,17 +252,22 @@ the predicted `eta` across bounded-input bands:
 
 | `(x_F, S_vis/S_dark)` | `eta_pred` | dev vs `eta_obs` |
 |---|---:|---:|
-| (22, 1.4) -- low/low | 4.94e-10 | -19.27% |
+| (22, 1.4) -- low/low | 6.37e-10 | +4.16% |
 | (22, 1.59) | 5.61e-10 | -8.29% |
-| (22, 1.7) | 5.25e-10 | -14.21% |
+| (22, 1.7) | 5.25e-10 | -14.22% |
 | (25, 1.4) | 7.24e-10 | +18.36% |
 | **(25, 1.59) -- nominal** | **6.38e-10** | **+4.22%** |
 | (25, 1.7) | 5.97e-10 | -2.52% |
 | (28, 1.59) | 7.14e-10 | +16.73% |
+| (28, 1.4) -- upper corner | 8.11e-10 | +32.57% |
 
 The **bounded band** `[x_F in [22,28], S_vis/S_dark in [1.4, 1.7]]` gives
-`eta_pred in [4.94e-10, 7.24e-10]`, which **brackets the Planck observed
-value `eta_obs = 6.12e-10`**.
+`eta_pred in [5.25e-10, 8.11e-10]`, which brackets the supplied comparator
+`eta_obs = 6.12e-10`. This is arithmetic on the supplied independent rectangle,
+not a derived same-coupling Sommerfeld uncertainty band. At fixed other inputs,
+Eq. (2) gives `eta` proportional to `x_F / (S_vis/S_dark)`. The September 30
+corrigendum supersedes the historical nominal match: the corrected same-coupling
+benchmark is `eta = 4.3820e-10`, about 28.4% below that comparator.
 
 ## Honest gaps (Option A labels)
 

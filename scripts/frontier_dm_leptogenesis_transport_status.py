@@ -79,7 +79,7 @@ def part1_exact_source_projection_and_kernel() -> dict[str, float]:
     }
 
 
-def part2_exact_equilibrium_bookkeeping_and_hrad_are_now_closed() -> None:
+def part2_equilibrium_bookkeeping_and_conditional_hrad() -> None:
     print("\n" + "=" * 88)
     print("PART 2: EXACT EQUILIBRIUM BOOKKEEPING AND H_rad(T)")
     print("=" * 88)
@@ -98,7 +98,7 @@ def part2_exact_equilibrium_bookkeeping_and_hrad_are_now_closed() -> None:
         f"d_N={D_THERMAL_EXACT:.15f}",
     )
     check(
-        "The exact radiation expansion law is H_rad(T) = sqrt(4*pi^3*g_*/45) * T^2 / M_Pl",
+        "The supplied radiation expansion law is H_rad(T) = sqrt(4*pi^3*g_*/45) * T^2 / M_Pl",
         abs(h_rad_exact(pkg.M1) / (H_RAD_COEFFICIENT_EXACT * pkg.M1 * pkg.M1) - 1.0) < 1e-15,
         f"H/T^2={H_RAD_COEFFICIENT_EXACT:.16e}",
     )
@@ -113,7 +113,7 @@ def part2_exact_equilibrium_bookkeeping_and_hrad_are_now_closed() -> None:
     print(f"  d_N = {D_THERMAL_EXACT:.15f}")
     print(f"  (s/n_gamma) * C_sph * d_N = {pref:.12e}")
     print(f"  H_rad(T)/T^2 = {H_RAD_COEFFICIENT_EXACT:.16e}")
-    print("  eta[H] uses the exact prefactor above on the theorem-native radiation branch.")
+    print("  eta[H] uses the exact prefactor above on the supplied radiation branch.")
 
 
 def part3_direct_transport_integral_on_the_exact_radiation_branch() -> tuple[float, float]:
@@ -126,7 +126,7 @@ def part3_direct_transport_integral_on_the_exact_radiation_branch() -> tuple[flo
     eta_ratio_direct = S_OVER_NGAMMA_EXACT * C_SPH * D_THERMAL_EXACT * pkg.epsilon_1 * kappa_direct / ETA_OBS
 
     check(
-        "The direct theorem-native transport integral on the exact radiation branch gives kappa_axiom = 0.004829545290766509",
+        "The direct supplied transport integral on the exact radiation branch gives kappa_axiom = 0.004829545290766509",
         abs(kappa_direct - 0.004829545290766509) < 1e-12,
         f"kappa_axiom={kappa_direct:.15f}",
     )
@@ -158,20 +158,20 @@ def part4_final_end_state(eta_ratio_direct: float) -> None:
 
     SUPPORT += 1
     print(
-        "  [SUPPORT] The exact transport chain is now internal on the one-flavor radiation branch"
+        "  [SUPPORT] The conditional transport calculation uses the supplied one-flavor radiation branch"
         f"  (eta/eta_obs={eta_ratio_direct:.12f})"
     )
     SUPPORT += 1
     print(
-        "  [SUPPORT] The live DM gate stays open because the theorem-native branch undershoots"
+        "  [SUPPORT] The live DM gate stays open because the supplied branch undershoots"
         f" observation by {1.0 / eta_ratio_direct:.6f}x"
     )
 
     print()
-    print("  END STATE: EXACT TRANSPORT CHAIN CLOSED; DM GATE OPEN")
-    print("  Exact theorem-native prediction on the one-flavor branch:")
+    print("  END STATE: CONDITIONAL TRANSPORT SOLUTION; DM GATE OPEN")
+    print("  Conditional numerical result on the one-flavor branch:")
     print(f"    eta/eta_obs = {eta_ratio_direct:.12f}")
-    print("  This closes the transport law but numerically undershoots observation.")
+    print("  Physical source, radiation/GR and CP-sheet selection remain open.")
 
 
 def main() -> int:
@@ -180,7 +180,7 @@ def main() -> int:
     print("=" * 88)
 
     part1_exact_source_projection_and_kernel()
-    part2_exact_equilibrium_bookkeeping_and_hrad_are_now_closed()
+    part2_equilibrium_bookkeeping_and_conditional_hrad()
     eta_ratio_direct, _ = part3_direct_transport_integral_on_the_exact_radiation_branch()
     part4_final_end_state(eta_ratio_direct)
 

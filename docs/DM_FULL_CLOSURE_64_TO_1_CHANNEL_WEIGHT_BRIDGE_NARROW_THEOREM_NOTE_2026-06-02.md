@@ -39,8 +39,11 @@ input to it. The verifier therefore proves the folding identity directly on
 the SU(3) carrier and exact rational coefficients instead of importing parent
 helper modules.
 
-This companion adds no axiom, primitive, Tier-A input, convention, fitted value,
-or observed-data input.
+The weighting prescription is supplied by the parent helper: channel weights
+are proportional to multiplicity times the squared potential eigenvalue.
+The algebra below verifies that prescription; it does not derive physical
+annihilation probabilities or process-dependent short-distance cross sections.
+That identification requires an additional amplitude calculation.
 
 ## 1. Parent Formula
 
@@ -80,8 +83,8 @@ Therefore the raw squared-coupling ratio is
   = 64.
 ```
 
-The multiplicities of `3 x 3bar = 1 + 8` are `1` and `8`, so the folded weights
-are
+The multiplicities of `3 x 3bar = 1 + 8` are `1` and `8`. Under the supplied
+squared-potential weighting prescription, the folded weights are
 
 ```text
 w_1 = (1/9) * (4/3)^2 = 16/81,

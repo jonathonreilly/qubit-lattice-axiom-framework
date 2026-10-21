@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_a1_probe_gravity_phase_2026_05_08_probe3.py
-runner_sha256: 4d409c71db99698cd82c1191eb5d745ac7890dbd32b0bdc9b86993959a2cec52
+runner_sha256: 3d9dd064addaae61491b6f1cbcfe3b9711deabfb7ada81532a6b9eea34947f81
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 PASS: supplied circulant is Hermitian and C3 equivariant
@@ -29,6 +29,11 @@ PASS: cube coordinate permutation has C3 action on hw=1
 PASS: four supplied historical numbers are not 1/2 at tolerance 1e-3
 PASS: their ordered distinct pairwise ratios are not 1/2 at tolerance 1e-3
 Historical mass anchor only: Q=0.666660512411, absolute residual=6.15426e-06
+per_element: The supplied 3 by 3 circulant is checked entrywise for Hermiticity and commutation; the two scalar source components are compared with NumPy allclose. These are floating-point finite checks, not exact symbolic certification.
+per_site: The spatial state has exactly two supplied components, with probabilities 1/5 and 4/5. Flavor probabilities are summed separately at each component; no lattice neighbor relation or spatial field equation is supplied.
+per_mode: Three supplied C3 Fourier vectors construct the flavor states; the three real-b circulant eigenvalues are compared to their cosine formula. A mixed-sign phase example checks the physical absolute-root limitation.
+per_block: The 2 by 2 arbitrary matrix and 3 by 3 circulants are lifted to 6 by 6 tensor-product matrices. Their commutators are checked at five supplied ratios; factorization and flavor blindness are assumptions.
+lattice_wide: No physical lattice Laplacian, Green function, gravitational iteration, volume scan, continuum limit, or Newton self-consistency is computed. The result is only finite scalar-source non-identifiability under the stated product-state and flavor-sum hypotheses.
 NOT VERIFIED: physical gravity, Laplacian/Green inversion, Newton constant,
 self-consistency, ledger status, exhaustive induction maps, or five-route no-go.
 Total: 22 PASS / 0 FAIL

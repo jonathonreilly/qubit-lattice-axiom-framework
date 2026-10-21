@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/two_chirality_split_step_mass_gaps_every_cone_2026_10_21.py
+runner_sha256: aa26705fc74adcf535dac2c605beaec769c8ad914c584f7622858f0ce381e229
+input_fingerprint_sha256: 6d327e79503e197e5351b6981de60569e304b04cba2b3a5dcfcc7940075da033
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 7.89
+status: ok
+----- stdout -----
+[PASS] cone sets: L and R share four momenta with opposite chirality; L has four more that R lacks  shared [(np.int64(0), np.int64(0), np.int64(0)), (np.int64(0), np.int64(2), np.int64(2)), (np.int64(2), np.int64(0), np.int64(2)), (np.int64(2), np.int64(2), np.int64(0))]; L only [(np.int64(1), np.int64(1), np.int64(1)), (np.int64(1), np.int64(3), np.int64(3)), (np.int64(3), np.int64(1), np.int64(3)), (np.int64(3), np.int64(3), np.int64(1))] (units of pi/2, mod 4)
+[PASS] same-site mass alone leaves zero-quasi-energy points; with the staggered mass the minimum gap over the zone equals the same-site mass  m=.05, M=0: 3.6e-20; m=.05, M=.5: 0.0500; m=.02, M=1: 0.0200 (25^3 grid)
+[PASS] light band near k=0 follows sqrt(m^2 + cos(M)^2 k^2) within 1.5% for |k| <= 2m on three directions (the staggered mass M slows it uniformly)  max relative deviation 1.33%
+per_site: two chirality components per site, the substep order, the momentum-reversed R walk and the two mass terms are supplied choices.
+lattice_wide: no matter content, one-qubit realization, exact cubic covariance or physical mass values are established.
+elapsed_seconds 7.8
+
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

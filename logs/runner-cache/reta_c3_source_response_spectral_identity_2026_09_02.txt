@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/reta_c3_source_response_spectral_identity_2026_09_02.py
-runner_sha256: 2b9f946d685f46fbd9f23e5e50e20b89731fd6f964daedf5f584721be20bf293
-input_fingerprint_sha256: 013070e57ab4b9a06645b7b382c9859c2e10c0c704d1991043abf1630cf899dc
+runner_sha256: 8a0feae3966d1e126aef669d5aa6af941a5912b1a8f587314d97de7648a2c73d
+input_fingerprint_sha256: cfb87fc962856cc16bf6e919287f911b5860cef2f7af2d9cd1039982cef38ab3
 timeout_sec: 150
 exit_code: 0
-elapsed_sec: 1.75
+elapsed_sec: 1.90
 status: ok
 ----- stdout -----
 per_element: checked — C3 projectors, source scale, and flat-character values are exact.

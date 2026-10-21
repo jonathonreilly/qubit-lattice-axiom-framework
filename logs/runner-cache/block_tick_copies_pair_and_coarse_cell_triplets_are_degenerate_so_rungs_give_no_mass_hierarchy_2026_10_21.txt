@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/block_tick_copies_pair_and_coarse_cell_triplets_are_degenerate_so_rungs_give_no_mass_hierarchy_2026_10_21.py
+runner_sha256: 768915315aa6725981542d7daea9f54c47b5b4b2a71db65f9c3bcc52616f8c53
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.68
+status: ok
+----- stdout -----
+== A. supplied Margolus tick: copies at one block and in a coarse cell of 2^3 blocks
+[PASS] commutant of the 24 spin-3/2 corner actions has dim 4 (covariant block unitaries exp(i sum x_j H_j))  dim 4
+[PASS] 30 random covariant multi-step ticks: K = 0 and K = pi(1,1,1) levels have multiplicity 4k (copies come in pairs)  multiplicities seen [4]
+[PASS] coarse cell of 2^3 blocks: fine corners fold to coarse K = 0 in rotation orbits of sizes 1,3,3,1 (n = # of pi), and corners in one orbit have identical spectra (each triplet is exactly degenerate)  orbit sizes [1, 3, 3, 1]
+[PASS] W(mu) tick: coarse-cell levels |w_n| = arccos(cos^2(mu/2)(3-2n)/3 - sin^2(mu/2)); mu = 0.1 gives  w_n = 0.1000, 1.2345, 1.9124, 3.1416  (dev 1.3e-15)
+[PASS] one zoom step (2 fine ticks per coarse tick, K_c = 2K_f): coarse gap = 2 x fine gap, so the physical mass is rung-invariant; zooming makes no new light copy  coarse gap 0.20000 vs 2mu 0.2
+[PASS] family cos w = A S - B (Margolus with any even/odd masses): one copy per orbit n = 0,1,2 cannot carry the lepton ratios, since cos w0 - 2cos w1 + cos w2 = 0 has no root with w1/w0 = 206.77, w2/w1 = 16.817 (w2 <= pi)  f < 0 on (0, pi/16.817], f ~ -140 w1^2 near 0; small-w law w_n^2 affine in n gives w2/w1 -> sqrt2 = 1.414
+== B. three copies: what a copy symmetry allows
+[PASS] S3 (perm rep = A1 + E): commutant dim 2 = span{1, J}, spectrum {a+2d, a-d, a-d}: at most 2 distinct masses
+[PASS] C3 only: commutant dim 3 (circulants a + bP + b*P^2); (a, |b|, phase) reproduce ANY three masses: 3 parameters for 3 data, 0 predictions  leptons: |b|/a = 0.707100, phase = 0.222230 rad mod 2pi/3
+[PASS] C3 with a real structure (b real, i.e. an axis reflection or antiunitary symmetry) forces a degenerate pair; three distinct masses need a complex phase off multiples of pi/3
+[PASS] Koide Q = 1/3 + (2/3)|b|^2/a^2 on the sqrt-mass circulant, independent of the phase
+   measured Q: leptons 0.666661 +- 0.000007 (2/3 at 0.9 sigma); up 0.8490; down 0.7314
+[PASS] measured Koide Q: leptons within 1 sigma of 2/3, quarks not (so no species-blind Q = 2/3 mechanism)
+== C. rung ladders
+[PASS] rung-independent rule => m_(n+1)/m_n constant; measured lepton ratios 206.77 and 16.817 differ by x12.30  ratio of ratios 12.2952
+[PASS] a geometric ladder obeys Koide only for sqrt-ratio s with s^2 - 5s + 1 = 0: mass ratio (23+5sqrt21)/2 per rung, i.e. 1 : 22.96 : 527 vs measured 1 : 206.8 : 3477  ratio 22.9564
+[PASS] suppression m_n ~ exp(-c L_n), L_n = 2^n: predicts ln(m2/m1)/ln(m3/m2) = 2 (8 for L = 8^n); measured differ and differ by species  leptons 1.8890, up 1.2981, down 0.7881; c fitted to mu/e predicts tau/mu 14.38 vs 16.817
+[PASS] universal 2-parameter rung map ln m -> L* + c(ln m - L*) fitted to leptons (c = 0.5294, m* = 42.5 GeV) mispredicts every quark step by more than x2  c from u 0.18x; t from c 0.04x; s from d 3.65x; b from s 0.40x
+== D. mixing from a shared copy symmetry
+[PASS] up and down both circulant in one copy basis: CKM is a permutation matrix, |V_us| = 0 vs measured 0.22500 +- 0.00067  336 sigma
+[PASS] circulant charged leptons with diagonal neutrinos: |U|^2 = 1/3 everywhere, sin^2 th13 = 1/3, sin^2 th12 = 1/2 vs measured 0.0220 and 0.307
+== E. reference: Brannen form, r and delta supplied (not produced by any tick here)
+   r = 1/2, delta = 2/9: mu/e 206.770 (meas 206.768), tau/mu 16.8180 (meas 16.8170); Koide (Q = 2/3) m_tau from e, mu: 1776.97 MeV (meas 1776.86 +- 0.12)
+[PASS] Brannen (r = 1/2, delta = 2/9) reproduces both lepton ratios within 0.1%, with two supplied constants for two ratios
+supplied: tick, j = 3/2 action, partitions, masses; measured PDG/NuFIT values; rung-to-copy assignments.
+not established: any tick-level mechanism giving three non-degenerate light copies, Koide r, delta, or mixing.
+
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

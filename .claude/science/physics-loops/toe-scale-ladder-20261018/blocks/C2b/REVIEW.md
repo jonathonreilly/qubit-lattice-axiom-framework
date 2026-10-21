@@ -125,3 +125,23 @@
 | (6) deleted committed log | finding confirmed; restored byte-identical in a80252e33 | medium (process) | list it in §8 as a run-2 prefix snapshot; fix the `kip_flow.py` reference; stop checkpoints from deleting snapshots |
 
 No claim is incorrect. The load-bearing numerical step was re-derived with different code and agrees to 7 digits: B4-breaking irrelevant terms give an anisotropy that tends to a nonzero, a-independent constant, and the symmetric action gives exactly zero.
+
+## Correction confirmation
+
+I read the whole corrected `NOTE.md` (§0–§9) and checked the `scripts/kip_flow.py` diff since 40e20dfd3. It changes only the comment on line 53, so the logs still stand.
+
+| item | status |
+|---|---|
+| (1) time-reflection wording | Resolved (§0.1, §1). "No improper element, no separate time-reflection generator; t → −t only as R_tx² = diag(−1,−1,1,1)." |
+| (3) RT normalisation | Resolved (§3(b), §4). 1.85 per unit Δr, which is 0.93 at Δr = 0.5. This is consistent with C = 8π²·0.01175/0.5 = 1.86. |
+| (4) \|s\| = 1; π-mode decoupling | Resolved (§0.4, §5). s = −1 at −b_gold. Single-tick decoupling is marked as cited from C7 §5. |
+| (5) "strictly implies" | Resolved (§0.5, §1, §6). It is restricted to KI+_G and KI+_tick under K_m, and KI+_w is stated to be independent. |
+| (6) restored snapshot; stale reference | Resolved (§8). The snapshot is listed as a WIP-checkpoint artifact with no data lost, and the kip_flow.py comment is fixed. |
+
+**Two nits (optional, not blocking):**
+- In §8 the closing bullet "In neither case was any expected constant changed" now sits after three items. It should read "In none of these cases".
+- The snapshot entry could also say that it is a byte-identical 48-line prefix of the run-2 log, written by the script version at 7b6117b76.
+
+**No new defect found.** The Status line reports review provenance without model identifiers. The candidate and not-adopted labelling is unchanged. No headline claim was altered beyond the requested wording.
+
+**Final verdict: ready.** It is ready as a reviewed **candidate** (not adopted). Adoption still needs an owner act under AXIOM_MINIMALITY_POLICY §6.

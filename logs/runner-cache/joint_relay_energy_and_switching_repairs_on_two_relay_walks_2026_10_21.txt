@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/joint_relay_energy_and_switching_repairs_on_two_relay_walks_2026_10_21.py
+runner_sha256: 14273534751a78c922132e3b9b59a901aaa9b3bd56612dce71d114c58c9e8b3e
+input_fingerprint_sha256: 61b7e296afd7f92d32b748af41e6eef13c4f0812c3057a67e6b9929a08736902
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.59
+status: ok
+----- stdout -----
+A. CL-5' conditional energy: other relays' phase, arg(0), range
+[PASS] A1 FAILURE of literal CL-5': for a product of modes, relay 1's energy is w1 + w2 (counts relay 2's phase)  w1=0.2000, w2=0.4383, literal=0.6383
+[PASS] A2 repair 'own part of the tick' gives w1 exactly  0.200000
+[PASS] A3 FAILURE: from a one-site start, the odds weight with zero same-block amplitude before the tick is 1 at every tick  min over 20 ticks 1.000000000000000; np.angle(0)=0 then gives energy 0 and no redraws
+[PASS] A4 generator local energy (H = i log U) is defined wherever odds > 0; here it is 0 to rounding  max |local energy| 1.7e-16
+[PASS] A5 FAILURE: an upper-band packet has negative same-block energy in its tails (probability 2*eps < 0)  weight with eps<0: 0.0035, min eps -0.228
+[PASS] A6 FAILURE of CL-6's domain: entangled state, repaired conditional energy exceeds 1/2 on some configurations  own: range [0.1414,0.5105], weight>1/2 0.0173; generator [0.1336,0.5139]
+B. CL-6 with fresh redraws: is the relay distribution kept exactly at the joint odds?
+[PASS] B1 sequential redraws (each a draw from the conditional odds): joint occupation = joint odds for 20 ticks  max TV 2.1e-16; redraw rate up to 1.00/tick
+[PASS] B2 FAILURE of simultaneous redraws (both relays from the pre-redraw configuration)  max TV 7.92e-02
+[PASS] B3 FAILURE of own-block-marginal redraws (CL-6 as written): joint odds lost  max TV 1.00e-01
+[PASS] B4 stationary entangled state (branch energies 0.200, 0.438): seq exact, sim and marg not  TV seq 1.1e-16, sim 3.97e-02, marg 1.20e-01
+[PASS] B5 sampled relay pairs match the joint odds after 20 ticks (chi2/dof)  chi2/dof=0.919 over 978 bins
+C. two pointers read one spin; pointers carry a coin (theta 0.15) so redraws change directions
+[PASS] C1 seq redraws: exact occupation = odds through coupling + 6 coined ticks  TV 6.5e-16
+[PASS] C2 reader disagreement equals that of the odds (coin only)  relays 0.0965, odds 0.1012, Born up 0.3240 vs odds 0.3214
+[PASS] C3 FAILURE of own-block-marginal redraws: reader disagreement and occupation leave the odds  relays 0.0677 vs odds 0.1012, TV 5.64e-02
+D. singlet with coined pointers and redraws: CHSH
+[PASS] D1 odds of the pointer readings violate CHSH  S_odds=2.5710
+[PASS] D2 relay readings with redraws reproduce it  S_relays=2.577
+E. record source per relay per tick (tt, tx, xx) versus eps u u
+[PASS] E1 product k (x) 2k: repaired rules give eps u u for relay 1  T=[0.27935 0.19371 0.13433], target [0.27935 0.19371 0.13433], switch turns 1.1e-16
+[PASS] E1 product 0 (x) 2k: repaired rules give eps u u for relay 1  T=[ 0.2  0.  -0. ], target [0.2 0.  0. ], switch turns 6.0e-17
+[PASS] E2 FAILURE of literal CL-5' for a product: T_tt = w1 + w2  T=[0.71768 0.49766 0.4581 ]
+[PASS] E3 entangled (0,2k)+(2k,0): T_tt is the mean energy (generator reading exact; own-part reading close)  gen 0.31916, own 0.31889, reduced-state value 0.31916
+[PASS] E4 entangled: T_tx and T_xx are NOT the reduced-state (branch-mixture) values  own T=[0.3189 0.16   0.0512], gen T=[0.3192 0.1602 0.051 ], mixture [0.3192 0.1937 0.1711]; turns switch 0.0563 redraw 0.2114
+[PASS] E5 FAILURE (signalling of the turn source): relay-1 switching turns depend on walker 2's coin, its own odds do not  turns 0.0563 vs 0.1265; own-odds diff 6.9e-18
+F. burns (a site records once) + block capacity n (CL-4); odds never conditioned
+[PASS] F1 FAILURE at exhaustion, ring L=16, n=4: exact current until a block is used up, then all relays stuck (CL-4 has no rule)  first hit min 7 median 50 (nL=64); current/odds before 0.999, last 10 ticks 0.000; stuck 1.000
+[PASS] F1 FAILURE at exhaustion, ring L=16, n=16: exact current until a block is used up, then all relays stuck (CL-4 has no rule)  first hit min 146 median 223 (nL=256); current/odds before 0.999, last 10 ticks 0.000; stuck 1.000
+[PASS] F1 FAILURE at exhaustion, ring L=16, n=64: exact current until a block is used up, then all relays stuck (CL-4 has no rule)  first hit min 799 median 951 (nL=1024); current/odds before 1.000, last 10 ticks 0.000; stuck 1.000
+[PASS] F2 entangled pair sharing blocks, n=16: hits and stuck relays at about nL/2=128  first hit min 30 median 89; stuck by 192: 1.000
+[PASS] F3 drifting packet (v~0.88), 150 ticks: n=1 breaks for most relays; n>=8 gives no hit at this scale  n=1: hit 1.000, current/odds 1.051; n=2: hit 0.791, current/odds 0.597; n=4: hit 0.106, current/odds 0.969; n=8: hit 0.004, current/odds 1.001
+G. standing wave (theta 0.1, k = 2 pi 5/154 = 0.2040): burns+turns stress versus the conserved stress
+[PASS] G1 plane wave: burns+turns give eps v^2  T_xx=0.1822, eps v^2=0.1822
+[PASS] G2 FAILURE of CL-7 for a standing wave (same modes, same energy): burns+turns stress has the wrong sign  T_xx=-0.0563 (turns: switching 0.0572, redraw 0.2259; plane-wave turns 0.0447)
+[PASS] G3 conserved (linear) stress readings give the standing wave the plane-wave value  eps v^2=0.1822, k v=0.1828, Dirac-form 0.1815, <H>-theta<sx> 0.1834 (plane wave 0.1834)
+[PASS] G4 repair: T_xx = <H> - theta <sigma_x> (mass-term reading) is linear, so any superposition gets its modes' weighted stress  6-mode packet: CL-7 burns+turns 0.0046; repaired 0.1860; mode-weighted eps v^2 0.1848
+
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

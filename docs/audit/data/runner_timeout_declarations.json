@@ -7,9 +7,9 @@
       "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
     },
     "scripts/canonical_plaquette_surface.py": {
+      "timeout_sec": 300,
       "source_sha256": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
+      "rationale": "Bounded prediction-inventory review cap; preserve all mathematical and documentary failures."
     },
     "scripts/dm_leptogenesis_exact_common.py": {
       "source_sha256": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41",
@@ -57,9 +57,9 @@
       "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
     },
     "scripts/frontier_complete_prediction_chain.py": {
-      "source_sha256": "e5abb0dd1735111a5ed5cd8ac3069ba66a3c6c59715ec59b4565b1c7ef87f446",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
+      "timeout_sec": 300,
+      "source_sha256": "f4442c2ed3a58aa93ea00e12cb4aa60bff2d7f3218cddaec231aed9047311536",
+      "rationale": "Bounded prediction-inventory review cap; preserve all mathematical and documentary failures."
     },
     "scripts/frontier_cosmology_from_mass_spectrum.py": {
       "source_sha256": "0935d6144172aec8a209ec8513a6b5976160ea0de290068834caa3c9a415f4e1",
@@ -1343,6 +1343,41 @@
       "source_sha256": "c0f3b1bff55025d355eec9594c339fb3539d7d0dba5560b9a3f5e9250498b88b",
       "timeout_sec": 300,
       "reason": "Bounded CKM scoped-source replay cap; inherited authority failures remain diagnostic, no physics certification. Source changes invalidate this cap."
+    },
+    "scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py": {
+      "timeout_sec": 300,
+      "source_sha256": "1cc8d647ef326aad60a78166d8edc712b82acfcffb9dd73ace29466042338282",
+      "rationale": "Bounded dimension diagnostic review cap; preserve all mathematical and documentary failures."
+    },
+    "scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py": {
+      "timeout_sec": 300,
+      "source_sha256": "319d534873ad6c905d9c5467873d9fa2dac1e39ab6d8e8636336b9e7409bab8d",
+      "rationale": "Bounded dimension diagnostic review cap; preserve all mathematical and documentary failures."
+    },
+    "scripts/frontier_dimension_selection.py": {
+      "timeout_sec": 300,
+      "source_sha256": "48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83",
+      "rationale": "Bounded dimension diagnostic review cap; preserve all mathematical and documentary failures."
+    },
+    "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py": {
+      "timeout_sec": 300,
+      "source_sha256": "9cd088d0549d36eb03dc528e5d22b48fe7cf20a03a606e927ea537132a006fa8",
+      "rationale": "Bounded dimension diagnostic review cap; preserve all mathematical and documentary failures."
+    },
+    "scripts/frontier_dimension_selection_lower_bound_parent_repair.py": {
+      "timeout_sec": 300,
+      "source_sha256": "aa55dabfb5095c4a1799f69a209b2c749de4ea30eed186df5c28230af058dbfb",
+      "rationale": "Bounded dimension diagnostic review cap; preserve all mathematical and documentary failures."
+    },
+    "scripts/frontier_hadron_lane1_b2_dynamical_screening_boundary.py": {
+      "timeout_sec": 300,
+      "source_sha256": "732f4fcc5b29b9a925be1c157e4f724a48b35069d7a716d63451e96446a4e928",
+      "rationale": "Bounded prediction-inventory review cap; preserve all mathematical and documentary failures."
+    },
+    "scripts/frontier_hadron_lane1_sqrt_sigma_b5_framework_link_audit.py": {
+      "timeout_sec": 300,
+      "source_sha256": "48779d313455b5eec344123fa9e68747ce9e19828c4063a827aab04dbe09e0a2",
+      "rationale": "Bounded prediction-inventory review cap; preserve all mathematical and documentary failures."
     }
   }
 }

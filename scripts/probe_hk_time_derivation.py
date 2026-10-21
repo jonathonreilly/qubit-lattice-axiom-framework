@@ -1,25 +1,18 @@
-"""Block 01 R1.A: exact-arithmetic verification of Theorem (T1).
+"""Trace/Wilson identities and formal leading short-time Gaussian matching.
 
-Verifies the leading-order small-U match:
-    Wilson:        S_W = (β / (4 N_c)) · |X|² + O(X⁴)
-    Heat-kernel:   S_HK_dyn = |X|² / (2 t) + O(X⁴)
-    Match:         t = 2 N_c / β = g_bare²
-
-at the framework's canonical g_bare = 1, β = 2 N_c = 6, gives t(6) = 1.
-
-Companion: docs/BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md
-Block: 01
-
-This is exact-arithmetic; all symbolic checks are performed via sympy
-where the result must be an exact rational. Numerical sanity checks are
-included for the small-U expansion at randomly sampled X.
+The heat-kernel quadratic coefficient is not exactly1/(2t) at fixed t.
+Substituting beta6 into t_leading=2Nc/beta is illustrative, not finite-time
+matching or action selection. Original source recoverable at f24d17d97d372df977476e4a69674577f31af575.
 """
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
 
 from fractions import Fraction
 from typing import Tuple
 
 import sympy as sp
+import math
 
 
 def gell_mann() -> list[sp.Matrix]:
@@ -129,7 +122,7 @@ def check_norm_squared_under_canonical_basis() -> Tuple[bool, str]:
 
 
 def derive_t_from_canonical_match(beta: sp.Expr, N_c: int = 3) -> sp.Expr:
-    """Derive t from the canonical small-U Wilson-HK matching.
+    """Derive t from the formal leading short-time Gaussian matching.
 
     Wilson per-plaquette small-U:
        S_W = β · (1 - (1/N_c) Re Tr U)
@@ -137,7 +130,7 @@ def derive_t_from_canonical_match(beta: sp.Expr, N_c: int = 3) -> sp.Expr:
            = β · (1/N_c) · (1/2) · (1/2) |X|²
            = (β / (4 N_c)) |X|²
 
-    Heat-kernel small-U:
+    Assumed leading short-time Gaussian:
        S_HK_dyn = |X|² / (2 t)
 
     Match: β / (4 N_c) = 1 / (2 t) → t = 2 N_c / β
@@ -147,7 +140,7 @@ def derive_t_from_canonical_match(beta: sp.Expr, N_c: int = 3) -> sp.Expr:
 
 def main() -> None:
     print("=" * 72)
-    print("Block 01 R1.A — Exact-Arithmetic Verification of Theorem (T1)")
+    print("Block 01 R1.A — Conditional Gaussian matching and trace identities")
     print("Companion: docs/BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md")
     print("=" * 72)
     print()
@@ -170,7 +163,7 @@ def main() -> None:
     ok, msg = check_norm_squared_under_canonical_basis()
     checks.append(("K4 Tr(X²) → (1/2) |X|²", ok, msg))
 
-    # K5 — derived t at canonical β = 6
+    # K5 — formal leading Gaussian parameter evaluated at supplied beta6
     beta = sp.Symbol('beta', positive=True)
     t_general = derive_t_from_canonical_match(beta, N_c=3)
     t_at_6 = t_general.subs(beta, 6)
@@ -179,9 +172,9 @@ def main() -> None:
     msg = (
         f"t(β) = {t_general} = 2·N_c/β; t(6) = {t_at_6} (expected 1)"
     )
-    checks.append(("K5 derived t(β=6) = 1", ok, msg))
+    checks.append(("K5 formal Gaussian parameter at beta6 = 1", ok, msg))
 
-    # K6 — at canonical g_bare = 1: β = 2 N_c = 6, so t = g_bare² = 1
+    # K6 — supplied beta=2Nc/g² convention in the formal leading identity
     g_bare = sp.Symbol('g_bare', positive=True)
     beta_in_terms_of_g = 2 * 3 / g_bare ** 2  # SU(3): β = 2 N_c / g²
     t_in_terms_of_g = derive_t_from_canonical_match(beta_in_terms_of_g, N_c=3)
@@ -189,14 +182,32 @@ def main() -> None:
     expected = g_bare ** 2
     ok = sp.simplify(t_simplified - expected) == 0
     msg = f"t = 2·N_c/β = {t_simplified}; expected g_bare² = {expected}"
-    checks.append(("K6 t = g_bare² (canonical)", ok, msg))
+    checks.append(("K6 formal Gaussian parameter = supplied g_bare²", ok, msg))
 
     # K7 — Casimir-form preview: ⟨P⟩_HK,1plaq(t) = exp(-2t/3) at t=1 = exp(-2/3)
     t = sp.S.One
     avg = sp.exp(-2 * t / 3)
     avg_eval = sp.N(avg, 15)
     msg = f"⟨P⟩_HK,1plaq(t=1) = exp(-2/3) = {avg_eval}"
-    checks.append(("K7 ⟨P⟩_HK,1plaq preview", True, msg))
+    print("SUPPLIED t=1 character expectation preview (not a new check): " + msg)
+
+    # Numerical diagnostic of the exact-character Hessian, truncated in p,q.
+    # No infinite-tail bound is claimed by the agreement of two cutoffs.
+    coefficients=[]
+    for cutoff in (8,12,20,30):
+        normalizer=weighted=0.0
+        for p in range(cutoff+1):
+            for q in range(cutoff+1):
+                dim=(p+1)*(q+1)*(p+q+2)/2
+                casimir=(p*p+p*q+q*q+3*p+3*q)/3
+                weight=dim**2*math.exp(-casimir/2)
+                normalizer+=weight
+                weighted+=weight*casimir
+        coefficient=weighted/(16*normalizer)
+        coefficients.append(coefficient)
+        print(f"NUMERICAL t1 Hessian coefficient, p,q<={cutoff}: {coefficient:.16g}")
+    checks.append(("K8 finite-cutoff Hessian sums stabilize",abs(coefficients[-1]-coefficients[-2])<1e-12,"No infinite-tail certificate"))
+    checks.append(("K9 fixed-time Gaussian negative control",abs(coefficients[-1]-.5)>.05,"Numerical discrepancy from assumed0.5"))
 
     # Print results
     n_pass = sum(1 for _, ok, _ in checks if ok)
@@ -207,11 +218,12 @@ def main() -> None:
     print()
     print(f"SUMMARY: PASS={n_pass} FAIL={n_total - n_pass}")
     print()
-    print("Theorem (T1) verified at canonical normalization: t = 2 N_c / β = g_bare²")
-    print("At framework β = 6, g_bare = 1: t(6) = 1 (exact rational).")
+    print("Conditional leading Gaussian coefficient identity: t_leading = 2 N_c / beta.")
+    print("At supplied beta6 the formal substitution is1; exact finite-time matching is not proved.")
     print()
-    print("Block 02 preview: ⟨P⟩_HK,1plaq(6) = exp(-2/3) ≈ 0.5134171190")
+    print("Supplied t=1 preview: ⟨P⟩_HK,1plaq(t=1) = exp(-2/3) ≈ 0.5134171190")
 
+    raise SystemExit(0 if all(ok for _, ok, _ in checks) else 1)
 
 if __name__ == "__main__":
     main()

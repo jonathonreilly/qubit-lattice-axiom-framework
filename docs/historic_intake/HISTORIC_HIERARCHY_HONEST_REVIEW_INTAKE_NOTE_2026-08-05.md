@@ -10,9 +10,60 @@ Era: april_pre_reset
 Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
 science iff relevant and/or valuable; pulled items enter the ledger and are
 audited). This wrapper registers a claim from the repo's unledgered history.
-The wrapper asserts nothing beyond what the pinned original states; the
-original's own scope, caveats and era conventions govern. Independent audit
-required before any effective status.
+The original claim compression below is historical. The explicit arithmetic
+annotation corrects its stated computation without rewriting the pinned
+original. Independent audit remains required before any effective status.
+
+## Arithmetic correction annotation (2026-10-21)
+
+This annotation corrects the arithmetic quoted below; it does not alter the
+pinned archive or certify the historical physical model. With all masses in
+GeV, the printed model is
+
+```text
+v = 2.435e18 * exp(-8*pi^2/(N_eff*y_t^2)) GeV,
+N_eff = 12*Z_chi^2.
+```
+
+Direct substitution gives:
+
+| Supplied y_t | Supplied N_eff | v (GeV) |
+|---:|---:|---:|
+| 0.439 | 10.64 | 46.12277 |
+| 0.439 | 12 | 3623.61063 |
+| 0.9369 | 10.64 | 5.18774513e14 |
+
+Thus substituting 0.9369 does not yield 226 GeV in the displayed formula.
+The historical explanation that two errors cancel to produce 226 is not a
+verified computation. The historical 45 GeV and 3.6 TeV values are rough estimates; the table
+evaluates the specified decimals directly, without establishing physical predictions.
+
+For a target 246 GeV and y_t=0.439, consistent units give
+
+```text
+ln(246/2.435e18) = -36.8311468945,
+N_eff = -8*pi^2/(0.439^2*ln(246/2.435e18)) = 11.12360220,
+Z_chi = sqrt(N_eff/12) = 0.96279118.
+```
+
+The WHY-226 archive's literal `ln(246e9/2.435e18)` is -16.1078810575, not -22.31,
+and mixes the stated mass-unit conventions. The claimed requirement
+N_eff>12 or Z_chi>1 is therefore false for the printed model. The WHY-226 archive
+later gives 11.12/0.963; that calculation is consistent with the corrected units; contradictory
+earlier claims should not be reused. This inverse calculation merely solves
+for an input and does not derive a physical normalization or rescue the model.
+
+The coefficient mapping called Sigma_1 remains unresolved in these records.
+Neither 2.48 nor 6.12 is certified as the physical self-energy coefficient by
+multiplying a scalar lattice integral by a guessed prefactor. The original
+negative conclusion that 226 GeV was not derived is preserved; this annotation
+does not validate the separate CW/gauge-sign argument, a physical mechanism,
+or an order-of-magnitude prediction. Current use of the historical compression
+below is subject to this correction.
+
+The additional historical `5*10^5 GeV` explanation is also not the result
+of the printed GeV formula at y_t=0.9369 and N_eff=10.64. No claim about
+intentional fabrication follows from this arithmetic correction.
 
 ## The claim (as stated by the original, supervisor-compressed)
 

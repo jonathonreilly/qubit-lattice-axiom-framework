@@ -36,7 +36,7 @@ If this context is identified with standard SU(3) Yang-Mills dynamics,
 then standard confinement, Sommer-scale, and EFT/lattice inputs give a
 bounded string-tension consistency window overlapping the usual
 `sqrt(sigma) ~ 440 MeV` phenomenological scale. This note does not
-derive four-dimensional Yang-Mills confinement, the continuum
+derive four-dimensional Yang-Mills confinement, the supplied finite-spacing
 Sommer-scale data, or the physical string tension from the minimal
 framework primitives.
 
@@ -48,9 +48,9 @@ the staggered lattice. This gave σ = 0.018 but the potential was
 strongly oscillatory (even/odd staggered artifacts), making the fit
 unreliable. That approach was classified as a clean negative result.
 
-The new approach avoids staggered artifacts entirely by working in the
-pure-gauge sector and connecting to the quantitative prediction through
-the coupling constant.
+The new calculation uses a pure-gauge sector and supplied scale-setting
+inputs. This changes the observable/measure; it does not remove all lattice
+artifacts or establish a physical dynamical-fermion result.
 
 ## Derivation Chain
 
@@ -61,7 +61,8 @@ From the minimal axiom stack:
 - N_c = 3 (graph-first SU(3) commutant)
 - β = 2N_c/g² = 6.0
 
-This defines SU(3) Yang-Mills with the Wilson plaquette action at β = 6.0.
+With the separately supplied Wilson action, this fixes its bare lattice
+parameter β=6.0. It does not by itself establish a continuum limit.
 
 ### Step 2: Confinement (standard Yang-Mills input, not framework-derived here)
 
@@ -95,17 +96,20 @@ Two independent methods:
 
 **Method 1: Λ_QCD route.**
 √σ = (√σ/Λ^(3))_lattice × Λ^(3)_framework = 1.33 × 389 MeV ≈ 518 MeV.
-This overestimates by ~18% due to accumulated two-loop matching errors
-in Λ^(3).
+This is about 18% above the supplied 440 MeV comparator. Accumulated
+two-loop matching error in Λ^(3) is one proposed explanation, not an
+isolated error determination.
+The supplied phenomenological ratio and scale-setting uncertainties also
+enter; the discrepancy is not attributed uniquely by this check.
 
 **Method 2: Sommer scale at β = 6.0.**
 This method imports standard lattice QCD results for SU(3) Yang-Mills
 at β = 6.0. The framework claims its gauge sector is SU(3) YM; these
 results follow as consequences of that identification. The imported
-values are properties of SU(3) YM dynamics, not of a specific lattice
-setup:
-- r₀/a = 5.37 (Sommer parameter in lattice units, from continuum-limit
-  lattice QCD at β = 6.0)
+values are finite-spacing Wilson-action data at the specified bare coupling,
+with a separately supplied physical scale. They are not continuum-limit
+quantities at a fixed β:
+- r₀/a = 5.37 (supplied finite-spacing Sommer ratio at β = 6.0)
 - σa² = 0.0465 (Creutz ratio from large Wilson loops)
 - a = 0.088 fm (from r₀ = 0.472 fm)
 - √σ_quenched = 484 MeV
@@ -117,8 +121,13 @@ screening treatment. The rough central estimate is √σ ≈ 460 MeV.
 **Comparison:** √σ_exp ≈ 440 ± 20 MeV. The framework's range [435, 484]
 overlaps with experiment.
 
-**Sensitivity:** A 0.2% change in α_s(M_Z) shifts √σ by ~1.2%. The
-framework's 0.2% accuracy in α_s propagates to ~1% accuracy in √σ.
+**Sensitivity, not accuracy:** the runner estimates the local one-loop
+Λ-route response to the supplied difference Δα_s=0.0002. That is a
+parameter sensitivity, not a physical uncertainty or a 1% accuracy claim for
+√σ. A complete budget must include truncation/threshold matching, imported
+ratios, finite spacing and volume, Sommer scale setting, quenching and the
+rough screening prescription. The Sommer method does not acquire that
+precision from the separate Λ-route sensitivity.
 
 **Important caveat:** The Sommer-scale lattice data are derived from
 standard lattice QCD simulations at a ≈ 0.09 fm, not from the
@@ -127,7 +136,7 @@ rests on the identification "the framework's gauge sector = SU(3) YM,"
 which is the structural claim. The quantitative string tension is
 therefore bounded through this identification.
 
-## Monte Carlo Verification (qualitative consistency check)
+## Historical Monte Carlo Diagnostic (qualitative consistency check)
 
 Pure-gauge SU(3) Monte Carlo at β = 6.0 on a 4⁴ lattice
 (PASS = 30, FAIL = 0). This is a qualitative consistency check, not a
@@ -137,7 +146,8 @@ string tension measurement:
 - ⟨P⟩_MC = 0.5973 ± 0.0006 (framework: 0.5934; the 0.7% shift is a
   known finite-size effect at this volume)
 - W(1,1) = 0.597, W(1,2) = 0.391, W(2,2) = 0.205
-- Clear area-law decay: W decreases exponentially with loop area
+- The three reported small loops decrease with area; this alone does not
+  distinguish an asymptotic area law from perimeter/short-distance effects
 - Creutz ratio χ(2,2) = 0.226 > 0 (positive string tension, but
   dominated by short-distance perturbative contributions at this scale)
 - Quantitative σa² extraction requires volumes ≥ 16⁴
@@ -147,8 +157,10 @@ string tension measurement:
 ### Exact inside this note:
 
 1. g_bare² = 1, N_c = 3 → β = 6.0 (arithmetic)
-2. The small pure-gauge MC runner reproduces qualitative β=6
-   plaquette and Wilson-loop behavior on the stated finite volume.
+
+The reported small-volume Monte Carlo outputs are numerical diagnostics,
+not exact results or a continuum confinement proof; they are not rerun by
+this source correction.
 
 ### Bounded (EFT bridge):
 
@@ -157,7 +169,8 @@ string tension measurement:
    identified with that standard theory.
 4. α_s(M_Z) = 0.1181 → Λ_MS̄^(5) = 210 MeV (two-loop running)
 5. √σ ≈ 465 MeV from Sommer scale at β = 6.0 with screening correction
-6. Wilson loops on 4⁴ lattice show area-law behavior at β = 6.0
+6. The reported 4⁴ small-loop ordering is compatible with qualitative
+   confinement context but does not extract an asymptotic string tension.
 
 ## What Remains Open
 
@@ -179,17 +192,17 @@ string tension measurement:
    resources.
 
 5. **Deconfining transition temperature.** Predicted T_c ≈ 264 MeV
-   (from T_c/√σ ≈ 0.60, lattice QCD). This is consistent with
-   T_c ≈ 155 MeV for N_f = 2+1 (the discrepancy is the same
-   quenched-vs-dynamical effect as the string tension).
+   (from the supplied T_c/√σ ≈ 0.60). The separate 155 MeV number
+   refers to a supplied N_f=2+1 comparator; the two refer to different
+   theory settings. Their numerical difference
+   is not a same-premise prediction test or a derived screening correction.
 
 ## Relation to Prior Negative Result
 
 The prior frontier_confinement_probe.py measured the static potential
 directly on the staggered lattice and got even/odd oscillations from
-staggered artifacts. That approach is dead for this framework because
-the staggered fermion structure introduces artifacts in the spatial
-correlator.
+staggered artifacts. That particular fit failed; the recorded finite-lattice artifacts do not
+prove that every improved staggered-potential extraction is impossible.
 
 The new approach works because:
 1. Confinement is a pure-gauge phenomenon — it doesn't depend on the
@@ -217,7 +230,7 @@ This is useful support for credibility with the lattice QCD community,
 but it is bounded support: the non-perturbative confinement and
 Sommer-scale inputs are imported standard Yang-Mills/lattice facts.
 
-## Commands Run
+## Historical Commands and Reported Scorecard
 
 ```
 python3 scripts/frontier_confinement_string_tension.py

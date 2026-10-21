@@ -20,22 +20,18 @@ rows to retained grade") remains separate open work. Until then,
 this note's identities may be cited as **conditional algebra over
 the barred-triangle surface** only, not as a retained or promoted
 theorem.
-**Status authority:** independent audit lane only. The
-`proposed_retained` label below is a source-side proposal placeholder,
-not an audit verdict; the independent audit lane has classified this
-row `audited_conditional` pending upstream ratification.
+**Status authority:** independent audit lane only. The earlier proposed-retained label was a source-side proposal, not an audit verdict. The historical conditional-audit statement above is provenance; current audit status remains independently ledger-derived.
 
-**Status:** proposed_retained CKM-structure corollary on the proposed_promoted CKM atlas
-+ NLO Wolfenstein protected-γ̄ surfaces. This note derives the
+**Status:** conditional classical geometry on the supplied NLO apex surface. This note derives the
 **EXACT closed form for the classical Weitzenbock inequality**
 (`a² + b² + c² ≥ 4√3 · Area`) applied to the barred unitarity
-triangle on the retained NLO Wolfenstein protected-γ̄ surface, and
+triangle on the supplied NLO Wolfenstein protected-γ̄ surface, and
 identifies it as the **fifth distinct closed-form representation** of
 the Brocard polynomial `P(α_s)`. Combined with the existing
 representations from the companion theorems on the Brocard angle,
 the Steiner inellipse, and Marden's theorem, this completes a
 **five-form algebraic unification** of `P(α_s)` as the **universal
-equilateral excess polynomial** of the retained CKM unitarity triangle.
+equilateral excess polynomial** of the supplied CKM unitarity triangle.
 
 The headline closed forms:
 
@@ -66,8 +62,8 @@ The headline closed forms:
 ```
 
 `sqrt(15)` plays a central role here: it is exactly
-`sqrt(N_color (N_quark − 1))`, the **natural irrationality of the
-retained surface**. The Weitzenbock sum / gap split factors P(α_s)
+`sqrt(N_color (N_quark − 1))`, the **irrationality of the displayed
+Weitzenbock factorization**. The Weitzenbock sum / gap split factors P(α_s)
 through Q[√15], giving a NEW characterization of `P(α_s) > 0` strictly:
 each factor of `P(α_s)` over Q[√15] is a quadratic with strictly
 negative discriminant, so `P(α_s)` has no real roots at all.
@@ -75,16 +71,24 @@ negative discriminant, so `P(α_s)` has no real roots at all.
 **Primary runner:**
 `scripts/frontier_ckm_barred_weitzenbock_brocard_polynomial_closed_form.py`
 
+**Domain and normalization.** Geometric formulas with
+`Area=sqrt(5)*(4-alpha_s)/48` use `alpha_s<4`; above 4 the geometric
+area is its absolute value and the displayed signed W-plus/minus labels
+exchange. At 4 the triangle degenerates and the Brocard ratio is undefined.
+The polynomial factorization and positivity statement remain valid for all
+real alpha_s. Here `perim_sq` means the sum of squared side lengths, not
+the square of the perimeter; the product W-plus*W-minus is not W-minus squared.
+
 ## Statement
 
-On the retained NLO Wolfenstein protected-γ̄ surface (where
+On the supplied NLO Wolfenstein protected-γ̄ surface (where
 `tan(γ̄) = √5` is α_s-protected; vertex
-`V_3 = (rho_bar, eta_bar) = ((4-α_s)/24, sqrt(5)(4-α_s)/24)` is retained;
+`V_3 = (rho_bar, eta_bar) = ((4-α_s)/24, sqrt(5)(4-α_s)/24)` is supplied;
 side-length squares
 `a² = (80+α_s²)/96, b² = (4-α_s)²/96, c² = 1` follow):
 
 ```text
-(W1)  Weitzenbock inequality on the retained surface:
+(W1)  Weitzenbock inequality on the supplied surface:
         a^2 + b^2 + c^2  >=  4 sqrt(3) Area_triangle.
 
       Numerical sweep across alpha_s in [0, 3.0] confirms strict inequality.
@@ -121,7 +125,7 @@ side-length squares
 
 (W6)  Squared-form identity: (perim_sq)^2 - 48 Area^2 = P(alpha_s)/2304.
 
-      This is the Weitzenbock-excess-squared in closed form on the retained
+      This is the Weitzenbock sum-gap product in closed form on the supplied
       surface, with structural-integer scaling 2304 = N_pair^8 N_color^2.
 
 (W7)  FIVE-FORM UNIFICATION of P(alpha_s):
@@ -131,7 +135,7 @@ side-length squares
         (d) Steiner     :  P  =  746496  (S'^2 - 4 P').
         (e) Marden      :  P  =  9216  |V_3^2 - V_3 + 1|^2.
 
-      All five are equivalent on the retained surface; each encodes a
+      All five are equivalent on the supplied surface; each encodes a
       different classical equilateral condition. The structural-integer
       scaling factors are:
         80 (4 - alpha_s)^2  -- alpha_s-DEPENDENT,
@@ -146,7 +150,7 @@ side-length squares
       The Brocard inequality cot^2(omega_bar) >= 3 and the Weitzenbock
       inequality (perim_sq)^2 >= 48 Area^2 are algebraically equivalent.
       Both become equality at omega_bar = pi/6 (equilateral), and both
-      are governed by P(alpha_s) >= 0 on the retained surface.
+      are governed by P(alpha_s) >= 0 on the supplied surface.
 
 (W9)  Root structure: P(alpha_s) factors over Q[sqrt(15)] as
 
@@ -155,31 +159,31 @@ side-length squares
 
       Each quadratic factor has NEGATIVE discriminant (the discriminants
       are -32 sqrt(15) - 128 and 32 sqrt(15) - 128 ~ -4.06, both negative).
-      So P(alpha_s) has no real roots at all -- the retained unitarity
-      triangle is uniformly bounded away from equilateral across the
-      ENTIRE real alpha_s axis, not just the physical range.
+      So P(alpha_s) has no real roots at all -- the displayed
+      polynomial is positive on the entire real alpha_s axis. Geometric statements retain the domain above.
 ```
 
-## Retained Inputs
+## Supplied Inputs
 
 | Input | Authority on `main` | Tier |
 | --- | --- | --- |
-| `rho_bar = (4 - alpha_s)/24`, `eta_bar = sqrt(5)(4 - alpha_s)/24` | [`CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md`](CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md) | retained |
-| `N_pair = 2`, `N_color = 3`, `N_quark = N_pair * N_color = 6` | [`CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md`](CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md) | retained |
-| `rho = 1/6`, `eta = sqrt(5)/6` | [`CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md`](CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md) | retained |
-| Jarlskog `J̄ = √5(4-α_s)/24` (= 2 × Area on retained surface) | [`CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md`](CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md) | retained |
+| `rho_bar = (4 - alpha_s)/24`, `eta_bar = sqrt(5)(4 - alpha_s)/24` | [`CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md`](CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md) | supplied |
+| `N_pair = 2`, `N_color = 3`, `N_quark = N_pair * N_color = 6` | [`CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md`](CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md) | supplied |
+| `rho = 1/6`, `eta = sqrt(5)/6` | [`CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md`](CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md) | supplied |
+| Normalized area `J_norm = eta_bar = √5(4-α_s)/24` (= 2 × Area for alpha_s<4); the cited Jarlskog row instead uses `J_bar = A² lambda⁶ eta_bar` on its NLO model | [`CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md`](CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md) | supplied |
 
-The closure uses ONLY retained-tier authorities. No support-tier note
-is load-bearing. No unmerged branch is cited as load-bearing — the
+The local geometry assumes the displayed apex and counts. Their physical derivation and audit retention are not established here. The
 companion Brocard, Steiner, and Marden theorem branches are referenced
 in W7 for context (the five-form unification observation), but each
 form (b), (d), (e) of `P(α_s)` is independently re-derivable from the
-retained inputs, and the runner verifies each form by direct symbolic
+supplied inputs, and the runner verifies each form by direct symbolic
 computation against the raw `P(α_s)` form (a).
+
+For a unitary CKM matrix with the usual normalized unitarity triangle, the exact physical magnitude is `abs(J)=abs(V_cd*conj(V_cb))**2 * abs(eta_bar)`. The approximation `A² lambda⁶ eta_bar` belongs to the cited NLO model; normalized area alone is neither expression.
 
 ## Derivation
 
-### W1: Weitzenbock inequality on the retained surface
+### W1: Weitzenbock inequality on the supplied surface
 
 The classical **Weitzenbock inequality** states that for any triangle
 with side lengths `(a, b, c)` and area `K`,
@@ -188,7 +192,7 @@ with side lengths `(a, b, c)` and area `K`,
 a^2 + b^2 + c^2  >=  4 sqrt(3) * K,
 ```
 
-with equality iff the triangle is equilateral. For the retained CKM
+with equality iff the triangle is equilateral. For the supplied CKM
 unitarity triangle on the protected-γ̄ surface:
 
 ```text
@@ -199,7 +203,7 @@ a^2 + b^2 + c^2  =  perim_sq  =  (alpha_s^2 - 4 alpha_s + 96) / 48,
 ```
 
 `sqrt(15) = sqrt(3 * 5) = sqrt(N_color × (N_quark - 1))` — the
-**natural irrationality of the retained surface**.
+**irrationality of the displayed Weitzenbock factorization**.
 
 ### W2, W3: Weitzenbock sum and gap
 
@@ -213,7 +217,7 @@ W_-  =  perim_sq - 4 sqrt(3) Area
      =  ((alpha_s^2 - 4 alpha_s + 96) - 4 sqrt(15) (4 - alpha_s)) / 48.
 ```
 
-`W_-` is the **Weitzenbock gap** — the deficit of the perimeter² from
+`W_-` is the **Weitzenbock gap** — the excess of the sum of squared sides over
 the equilateral lower bound `4√3 · Area`. The Weitzenbock inequality
 states `W_- ≥ 0`.
 
@@ -257,15 +261,12 @@ Pure structural-integer ratio at LO.
 ### W6: Squared-form identity
 
 By construction, `(perim_sq)² − 48 Area² = W_+ · W_- = P(α_s)/2304`.
-This is the **Weitzenbock excess squared in closed form**, equating the
-Weitzenbock excess (the algebraic-positivity signature of the
-inequality) to the Brocard polynomial divided by a structural-integer
-scaling.
+This is the **Weitzenbock sum-gap product in closed form**, equating the sum-gap product to the Brocard polynomial divided by a structural-integer scaling.
 
 ### W7: Five-form unification
 
 The Brocard polynomial `P(α_s)` admits five distinct closed-form
-representations on the retained surface:
+representations on the supplied surface:
 
 | Form | Closed form | Scaling factor |
 | --- | --- | --- |
@@ -282,7 +283,7 @@ Each form encodes a different classical equilateral condition:
 discriminant (Steiner inellipse circular iff `P = 0`); **(e)** the
 Marden foci coincidence (Steiner inellipse foci collapse iff `P = 0`).
 
-All five become **algebraically equivalent on the retained surface**
+All five become **algebraically equivalent on the supplied surface**
 because they all characterise the SAME equilateral limit. The
 **single algebraic invariant `P(α_s)`** governs the entire equilateral
 condition, manifesting in five different geometric guises with five
@@ -329,8 +330,7 @@ Delta_-  =  16 (1 - sqrt(15))^2 - 384  =  -128 - 32 sqrt(15)  ~  -252.
 ```
 
 Both discriminants are NEGATIVE. So `P(α_s)` has **no real roots at
-all** — the retained unitarity triangle is uniformly bounded away
-from equilateral on the ENTIRE real α_s axis. The four complex roots
+all** — the displayed polynomial is positive on the ENTIRE real α_s axis; the nondegenerate geometric interpretation keeps the stated domain. The four complex roots
 of `P(α_s)` come in two conjugate pairs:
 
 ```text
@@ -342,9 +342,7 @@ alpha_s_root  =  (2 - 2 sqrt(15)) +/- 2i (sqrt(5) - sqrt(3))
 ```
 
 In structural-integer form the roots involve `sqrt(N_color)`,
-`sqrt(N_quark - 1)`, and `sqrt(N_color (N_quark - 1))`. The natural
-irrationality of the retained surface is precisely the Q[√15] (i.e.
-Q[√(N_color × (N_quark - 1))]) extension.
+`sqrt(N_quark - 1)`, and `sqrt(N_color (N_quark - 1))`. The displayed quadratic factorization uses Q[√15]; the original apex coordinates instead lie in Q(√5, alpha_s). No identification of these fields is made.
 
 ## Numerical Verification
 
@@ -374,7 +372,7 @@ All identities verified via sympy:
 
 ### What this lets the framework state cleanly
 
-Previously, the framework had retained closed forms for the Brocard
+Previously, the framework had supplied closed forms for the Brocard
 angle, Steiner inellipse, and Marden foci, with the deep observation
 (from the companion theorems) that the polynomial
 `P(α_s) = (α_s² − 4α_s + 96)² − 240(4-α_s)²` simultaneously controls
@@ -386,7 +384,7 @@ was not previously made explicit.
 This note delivers:
 
 1. **NEW Weitzenbock closed forms** (W2, W3): the Weitzenbock sum and
-   gap on the retained surface, with `√15` as the natural
+   gap on the supplied surface, with `√15` as the natural
    irrationality.
 
 2. **NEW product factorization** (W4): `W_+ · W_- = P(α_s)/2304` —
@@ -397,47 +395,44 @@ This note delivers:
    `(N_quark + 1)/N_color = 7/3`, a pure structural-integer ratio.
 
 4. **NEW five-form unification** (W7): the Brocard polynomial admits
-   FIVE distinct closed-form representations on the retained surface,
+   FIVE distinct closed-form representations on the supplied surface,
    with structural-integer scaling factors revealing different
    algebraic guises of the equilateral condition.
 
 5. **NEW root structure observation** (W9): `P(α_s)` factors over
    Q[√15] into two quadratics, each with strictly negative
    discriminant. So `P(α_s) > 0` on the ENTIRE real α_s axis (not
-   just the physical range), and the retained unitarity triangle is
-   uniformly bounded away from equilateral.
+   just the physical range), with no equilateral member in the stated nondegenerate geometric domain.
 
 ### Why this counts as pushing the science forward
 
 The Weitzenbock inequality is one of the most studied classical
 triangle inequalities, with countless refinements (Hadwiger-Finsler,
 Pedoe, etc.). Connecting it to `P(α_s)` gives **the universal
-equilateral excess polynomial of the retained CKM unitarity triangle
-a clean physical interpretation as the Weitzenbock excess squared**.
+equilateral excess polynomial of the supplied CKM unitarity triangle
+a classical geometric interpretation as the Weitzenbock sum-gap product**.
 
 The Q[√15] factorisation observation (W9) is structurally striking:
-the natural irrationality of the retained surface is **exactly**
+the irrationality of this displayed Weitzenbock factorization is
 `√(N_color × (N_quark − 1))`, and the Brocard polynomial factors
 through this irrationality into two conjugate quadratics, each with
-strictly negative discriminant. This is **algebraic rigidity**: the
-retained surface admits a single irrational extension Q[√15], and
-within that extension `P(α_s)` factors into structurally-determined
+strictly negative discriminant. This is **algebraic rigidity**: the displayed polynomial factors over Q[√15]; this does not assert that the whole coordinate field or splitting field equals Q[√15]. Within that factorization field `P(α_s)` factors into structurally-determined
 conjugate pieces.
 
 The five-form unification (W7) consolidates the picture: `P(α_s)` is
 not just one polynomial in α_s — it is the **invariant signature of
-the retained surface's non-equilateral structure**, manifesting in
+the supplied surface's non-equilateral structure**, manifesting in
 classical triangle inequalities, classical triangle interior points,
 and classical triangle inscribed conics. A single algebraic object
 with five geometric interpretations.
 
-### Falsifiable structural claim
+### Conditional consistency of the supplied model
 
 The closure (W2-W7, W9) is sharp:
 
 ```text
-The retained NLO Wolfenstein protected-γ̄ surface
-  + retained CKM_MAGNITUDES (N_pair = 2, N_color = 3, N_quark = 6)
+The supplied NLO Wolfenstein protected-γ̄ surface
+  + supplied CKM_MAGNITUDES (N_pair = 2, N_color = 3, N_quark = 6)
 forces:
   W_+ * W_-  =  P(alpha_s) / (N_pair^8 N_color^2),
   W_+ | LO * W_- | LO  =  (N_quark + 1) / N_color  =  7/3,
@@ -445,26 +440,23 @@ forces:
   quadratics with strictly negative discriminants.
 ```
 
-Any framework revision shifting `(rho_bar, eta_bar)` off the retained
-protected-γ̄ surface, or changing structural integers, would break
-W4, W5, AND W9 simultaneously. The Q[√15] factorisation is
+Changing supplied inputs requires recomputing the identities; it need not break all of them. This is conditional consistency, not an independent empirical selection test. The Q[√15] factorisation is
 particularly rigid: it depends on the specific equality
 `240 = N_pair⁴ × N_color × (N_quark − 1) = 16 × 3 × 5`.
 
 ## What This Claims
 
-- `(W1)`: NEW retained verification that the classical Weitzenbock
-  inequality `a²+b²+c² ≥ 4√3 · Area` holds strictly on the retained
+- `(W1)`: Conditional verification that the classical Weitzenbock
+  inequality `a²+b²+c² ≥ 4√3 · Area` holds strictly on the supplied
   unitarity triangle for all physical α_s.
-- `(W2, W3)`: NEW retained closed forms for the Weitzenbock sum
-  `W_+` and gap `W_-`, with `√15` as the natural irrationality.
-- `(W4)`: NEW retained product factorization `W_+·W_- = P(α_s)/2304`
+- `(W2, W3)`: Conditional closed forms for the Weitzenbock sum
+  `W_+` and gap `W_-`, with `√15` in this displayed factorization.
+- `(W4)`: Conditional product factorization `W_+·W_- = P(α_s)/2304`
   — Brocard polynomial as the Weitzenbock sum-gap product.
 - `(W5)`: NEW LO recovery
   `W_+|LO · W_-|LO = (N_quark+1)/N_color = 7/3` in pure
   structural integers.
-- `(W6)`: NEW retained closed form for the Weitzenbock excess
-  squared, `(perim_sq)² − 48 Area² = P(α_s)/2304`.
+- `(W6)`: Conditional closed form for the Weitzenbock sum-gap product, `(perim_sq)² − 48 Area² = P(α_s)/2304`.
 - `(W7)`: NEW five-form unification of `P(α_s)`, with the Weitzenbock
   form `(c)` adding to the previously-derived Brocard, Steiner, and
   Marden forms.
@@ -477,13 +469,13 @@ particularly rigid: it depends on the specific equality
 
 ## What This Does NOT Claim
 
-- Does **not** modify any retained authority.
-- Does **not** promote any support-tier theorem to retained.
+- Does **not** modify any supplied authority.
+- Does **not** promote any source to retained audit authority.
 - Does **not** cite unmerged branches as load-bearing (each form of
-  `P(α_s)` in W7 is independently re-derivable from retained inputs;
+  `P(α_s)` in W7 is independently re-derivable from supplied inputs;
   the runner verifies each form by direct symbolic computation).
 - Does **not** introduce a new `d`-selector or `N_color`-selector;
-  all structural integers are retained inputs.
+  all structural integers are supplied inputs.
 - Does **not** depend on any α_s-running pipeline; all results live
   on the protected-γ̄ surface at canonical `α_s(v)`.
 - Does **not** make a direct CKM-observable claim about the
@@ -496,7 +488,7 @@ particularly rigid: it depends on the specific equality
 python3 scripts/frontier_ckm_barred_weitzenbock_brocard_polynomial_closed_form.py
 ```
 
-Expected:
+Historical expected output (not a fresh execution result):
 
 ```text
 TOTAL: PASS=28, FAIL=0
@@ -505,11 +497,12 @@ TOTAL: PASS=28, FAIL=0
 The runner:
 
 - Reads each cited authority file from disk.
-- Extracts the verbatim `Status:` line and prints it as ground-truth proof.
-- Verifies tier label (retained vs support).
-- Independently extracts retained inputs (`rho_bar`, `eta_bar`,
-  `N_pair`, `N_color`, `N_quark`, Jarlskog citation).
-- Computes W1–W9 symbolically via sympy at the retained values and
+- Extracts the verbatim `Status:` line as a documentary source label, not proof or current audit authority.
+- Checks legacy tier-label strings; such checks do not establish current audit retention.
+- Checks source phrases and count literals, then uses explicitly hardcoded
+  symbolic apex values and counts `(2,3,6)`; this is not independent extraction
+  or derivation of those supplied values.
+- Computes W1–W9 symbolically via sympy at the supplied values and
   asserts each closed form by `simplify(diff) == 0`.
 - Independently re-derives each of the FIVE forms of `P(α_s)` and
   matches against the raw form (a) — confirming the unification.
@@ -518,7 +511,7 @@ The runner:
 
 ## Cross-References
 
-**Retained-tier authorities used (each Status verified by extraction):**
+**Cited model sources (Status extraction is documentary only):**
 
 - [`CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md`](CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md)
   — `(rho_bar, eta_bar)` apex coordinates.
@@ -527,7 +520,7 @@ The runner:
 - [`CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md`](CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md)
   — `rho = 1/6`, `eta = sqrt(5)/6`.
 - [`CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md`](CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md)
-  — Jarlskog `J̄`.
+  — distinguishes the model Jarlskog normalization from normalized triangle area.
 
 **Companion barred-triangle closed forms (cited for context, not
 load-bearing here):**
@@ -547,5 +540,5 @@ load-bearing here):**
 - Any unmerged branch (companion Brocard-angle, symmedian-Brocard-circle,
   and Steiner-inellipse-Marden branches are referenced only for
   context in the W7 unification observation; each form of `P(α_s)`
-  is independently re-derived here from retained inputs).
+  is independently re-derived here from supplied inputs).
 - Any candidates-tier theorem.

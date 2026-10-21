@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
-runner_sha256: 121cc5d53af922dafce2acf8633624bea896795eb7103d83091043cd4f492ade
-input_fingerprint_sha256: e930b674a18932d85782a39a6127bbdfbbe04774008c78afb915318d033811c3
-timeout_sec: 120
+runner_sha256: 9cd088d0549d36eb03dc528e5d22b48fe7cf20a03a606e927ea537132a006fa8
+input_fingerprint_sha256: 4590523867755094fab82a98908b7660de957834e79d28c2dd2e1e4599de4f44
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 1.00
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -15,9 +15,10 @@ Part 1: anchors and audit boundary
 [PASS] docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md exists
 [PASS] docs/DIMENSION_SELECTION_NOTE.md exists
 [PASS] docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md exists
-[PASS] docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md exists
 [PASS] scripts/frontier_dimension_selection.py exists
 [PASS] canonical sharded audit ledger or legacy cache exists: sharded
+HISTORICAL_DOCUMENTARY_AVAILABILITY: {"available": false, "content_verified": false, "original_missing_artifact_failure_preserved": true, "path": "docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md", "role": "historical documentary anchor; not a calculation input"}
+HISTORICAL_PLAN_NONVERIFICATION: availability is not proof; the prior missing-artifact failure is not resolved by this diagnostic split
 [PASS] note contains required section: Exact Finite-k Derivative
 [PASS] note contains required section: Result
 [PASS] note contains required section: What This Closes
@@ -63,6 +64,26 @@ Part 4: parent finite-M runner sign
 [PASS] d=4 direct finite-M replay matches parent raw_delta: {'direct': 0.6596476486924026, 'parent': 0.6596476488010232}
 [PASS] d=5 parent raw_delta sign matches lower-bound sign: 0.8307846758016488
 [PASS] d=5 direct finite-M replay matches parent raw_delta: {'direct': 0.8307846749345735, 'parent': 0.8307846758016488}
+[PASS] attractive d=1: derivative transforms linearly: 6178.064177806486
+[PASS] attractive d=1: finite difference: 6177.98825517409
+[PASS] attractive d=1: infinitesimal response is toward: 6178.064177806486
+attractive d=1: finite probe delta=1.971008131659; no uniform-M sign claim
+[PASS] attractive d=2: derivative transforms linearly: 693.5367985302938
+[PASS] attractive d=2: finite difference: 693.5363018865104
+[PASS] attractive d=2: infinitesimal response is toward: 693.5367985302938
+attractive d=2: finite probe delta=2.80831659141137; no uniform-M sign claim
+[PASS] attractive d=3: derivative transforms linearly: 137.43355955069325
+[PASS] attractive d=3: finite difference: 137.4340736403449
+[PASS] attractive d=3: infinitesimal response is toward: 137.43355955069325
+attractive d=3: finite probe delta=0.727197696589517; no uniform-M sign claim
+[PASS] attractive d=4: derivative transforms linearly: 119.62276629484603
+[PASS] attractive d=4: finite difference: 119.62308497892593
+[PASS] attractive d=4: infinitesimal response is toward: 119.62276629484603
+attractive d=4: finite probe delta=0.659647648692403; no uniform-M sign claim
+[PASS] attractive d=5: derivative transforms linearly: 145.12754503252833
+[PASS] attractive d=5: finite difference: 145.1264870103349
+[PASS] attractive d=5: infinitesimal response is toward: 145.12754503252833
+attractive d=5: finite probe delta=0.830784674934574; no uniform-M sign claim
 
 Part 5: claim-status firewalls
 [PASS] boundary phrase present: no repo-wide dimension-axiom rewrite
@@ -77,8 +98,9 @@ Part 5: claim-status firewalls
 [PASS] forbidden overclaim absent: full retained spatial d = 3 closure
 [PASS] forbidden overclaim absent: repo-wide axiom rewrite is authorized
 
-wrote outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json
-SUMMARY: PASS=56 FAIL=0
+wrote /Users/jonreilly/Documents/Codex/grok-review-20261021/dimension-publication-worktree/outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json
+DIAGNOSTIC_SCOPE: current required checks only; historical-plan availability excluded from score; no dimension-selection closure
+SUMMARY: PASS=70 FAIL=0
 
 ----- stderr -----
 

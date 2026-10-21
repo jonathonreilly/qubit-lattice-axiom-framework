@@ -1,11 +1,11 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dimension_selection_lower_bound_parent_repair.py
 runner_sha256: aa55dabfb5095c4a1799f69a209b2c749de4ea30eed186df5c28230af058dbfb
-input_fingerprint_sha256: fb5f905efa834034bfea36d130a3455667b4f3bc01bbcd9dffaec218effc70ec
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.24
-status: ok
+input_fingerprint_sha256: 8cf9b29cdbdf9e6fb08b2091b463a5b53bb82bff75ea876e64466bb76b2f47bf
+timeout_sec: 300
+exit_code: 1
+elapsed_sec: 0.46
+status: nonzero_exit
 ----- stdout -----
 # Dimension-selection parent lower-bound repair
 [PASS] parent note contains boundary phrase: finite-runner lower-bound support only
@@ -37,11 +37,11 @@ status: ok
 
 # Dimension-selection companion source packet
 [PASS] original_dimension_runner: source=scripts/frontier_dimension_selection.py sha256=48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83 cache=logs/runner-cache/frontier_dimension_selection.txt cache_sha256=0cf09aa8f6b968c267536b91a061941a098d895bfc4c97e1538ff210b601ea7e snippets_ok=True
-[PASS] finite_k_bridge: source=scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py sha256=121cc5d53af922dafce2acf8633624bea896795eb7103d83091043cd4f492ade cache=logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt cache_sha256=c3564f68e249ba97f06bbfc39fa7d6da6f10a2dfecf1650e07320aab13c873d1 snippets_ok=True
+[FAIL] finite_k_bridge: source=scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py sha256=9cd088d0549d36eb03dc528e5d22b48fe7cf20a03a606e927ea537132a006fa8 cache=logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt cache_sha256=4afb6393da94a7fed9418bc2adc44f832a3b0149a9fe5145e064973d13d5d350 snippets_ok=False
 [PASS] source_packet_manifest_source_exposed: source=scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py sha256=1cc8d647ef326aad60a78166d8edc712b82acfcffb9dd73ace29466042338282
-COMPANION_PACKET: PASS
-[PASS] companion packet sources/caches are exposed and fresh
-SUMMARY: PASS=27 FAIL=0
+COMPANION_PACKET: FAIL
+[FAIL] companion packet sources/caches are exposed and fresh
+SUMMARY: PASS=26 FAIL=1
 
 ----- stderr -----
 

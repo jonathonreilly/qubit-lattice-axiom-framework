@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_complete_prediction_chain.py
-runner_sha256: e5abb0dd1735111a5ed5cd8ac3069ba66a3c6c59715ec59b4565b1c7ef87f446
-timeout_sec: 120
+runner_sha256: f4442c2ed3a58aa93ea00e12cb4aa60bff2d7f3218cddaec231aed9047311536
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -20,7 +20,12 @@ Framework inputs
   R_conn          = 0.888889
   taste_weight    = 0.388889 (= 7/18)
 
-Support inventory quantitative package
+Conditional historical support inventory; most rows below are supplied literals
+INPUT_SCOPE: declared pure-gauge plaquette, M_Pl, Ward/threshold/readout conventions
+MATCHING_SCOPE: kappa_EW=0 and kappa_Y=0 are supplied specializations
+HIGGS_SCOPE: 125.10 is not derived here; displayed calibration inputs give the value below
+  Supplied calibration formula at mt=172.57, alpha_s=0.1181: 128.2945 GeV
+This arithmetic is not a full RGE execution or a physical Higgs prediction
   v [GeV]                        246.2828   obs   246.2200   dev  +0.026%
   alpha_s(M_Z)                     0.1181   obs     0.1179   dev  +0.141%
   sin^2(theta_W)(M_Z)              0.2306   obs     0.2312   dev  -0.264%
@@ -31,8 +36,8 @@ Support inventory quantitative package
   m_t(pole, 2-loop) [GeV]        172.5700   obs   172.6900   dev  -0.069%
   m_t(pole, 3-loop) [GeV]        173.1000   obs   172.6900   dev  +0.237%
   m_H(2-loop) [GeV]              119.7700   obs   125.2500   dev  -4.375%
-  m_H(full 3-loop) [GeV]         125.1000   obs   125.2500   dev  -0.120%
-  Vacuum stability          Qualitatively favorable   comparator SM metastability
+  m_H(historical literal) [GeV]   125.1000   obs   125.2500   dev  -0.120%
+  Vacuum stability          Sampled-flow diagnostic; no all-scale proof   comparator SM metastability
 
 Primary support stack
   COMPLETE_PREDICTION_CHAIN_2026_04_15.md

@@ -94,6 +94,12 @@ def main():
     m = np.array([.5109989461, 105.6583745, 1776.86])
     q = m.sum()/np.sqrt(m).sum()**2
     print(f'Historical mass anchor only: Q={q:.12f}, absolute residual={abs(q-2/3):.6g}')
+    # N5 resolution report only; no new checks or scientific verdict.
+    print('per_element: The supplied 3 by 3 circulant is checked entrywise for Hermiticity and commutation; the two scalar source components are compared with NumPy allclose. These are floating-point finite checks, not exact symbolic certification.')
+    print('per_site: The spatial state has exactly two supplied components, with probabilities 1/5 and 4/5. Flavor probabilities are summed separately at each component; no lattice neighbor relation or spatial field equation is supplied.')
+    print('per_mode: Three supplied C3 Fourier vectors construct the flavor states; the three real-b circulant eigenvalues are compared to their cosine formula. A mixed-sign phase example checks the physical absolute-root limitation.')
+    print('per_block: The 2 by 2 arbitrary matrix and 3 by 3 circulants are lifted to 6 by 6 tensor-product matrices. Their commutators are checked at five supplied ratios; factorization and flavor blindness are assumptions.')
+    print('lattice_wide: No physical lattice Laplacian, Green function, gravitational iteration, volume scan, continuum limit, or Newton self-consistency is computed. The result is only finite scalar-source non-identifiability under the stated product-state and flavor-sum hypotheses.')
     print('NOT VERIFIED: physical gravity, Laplacian/Green inversion, Newton constant,')
     print('self-consistency, ledger status, exhaustive induction maps, or five-route no-go.')
     print(f'Total: {sum(results)} PASS / {len(results)-sum(results)} FAIL')

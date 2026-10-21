@@ -483,7 +483,7 @@
     },
     "scripts/cl3_koide_a1_probe_gravity_phase_2026_05_08_probe3.py": {
       "timeout_sec": 300,
-      "source_sha256": "4d409c71db99698cd82c1191eb5d745ac7890dbd32b0bdc9b86993959a2cec52",
+      "source_sha256": "3d9dd064addaae61491b6f1cbcfe3b9711deabfb7ada81532a6b9eea34947f81",
       "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
     },
     "scripts/frontier_universal_gr_discrete_global_closure.py": {

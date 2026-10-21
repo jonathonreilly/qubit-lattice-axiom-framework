@@ -68,7 +68,7 @@ For a mode of definite frequency of a tick update that moves each direction ampl
 
 ## Open dependencies
 
-- **The tick update of the odds.** CL-5 to CL-8 use it, but no law here fixes it. This includes how a block's possibilities split into step directions, and each species' mixing strength (its mass).
+- **The tick update of the odds.** CL-5 to CL-8 use it, but no law here fixes it. This includes how a block's possibilities split into step directions, and each species' mixing strength (its mass). One candidate uses one qubit per site and three nearest-neighbour substeps, with step directions given by the qubit's own Pauli outcomes. It satisfies CL-5 to CL-8 exactly for plane waves (`docs/ONE_QUBIT_SPLIT_STEP_WALK_RELAY_SOURCE_AND_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md`). It is not adopted, because its fixed substep order breaks exact cubic covariance, its massless fermions come with opposite-chirality doublers, and a mass term needs a further rule.
 - **Reading squared amplitudes as probabilities.** The Terms take the squared magnitudes of the odds as probabilities; the axioms give a per-site distribution but not this identification for block-direction amplitudes.
 - **The field equation.** Nothing here says how geometry responds to the record source, or fixes its coupling.
 - **Proper time.** On cubic walks in 3D the turn count is not a relativistic clock. Flips set by the chirality coherence converge to one in a supplied spin-1/2 walk, but they need signed ticks where packets interfere, so no clock law is listed.

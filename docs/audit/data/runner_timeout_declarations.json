@@ -445,6 +445,16 @@
       "source_sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
       "timeout_sec": 300,
       "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
+    },
+    "scripts/lattice_nn_rescaled_C_arm_NLO_saddle.py": {
+      "source_sha256": "3e04a84b91e997f80339acfb1fb29a9dc4c10726aa919005dce286b820526ecc",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/lattice_nn_rescaled_C_arm_NNLO_saddle.py": {
+      "source_sha256": "05a38516a9454a46c8c4fa5624720510af624a29fbb6c4676f49befa8ae94b34",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
     }
   }
 }

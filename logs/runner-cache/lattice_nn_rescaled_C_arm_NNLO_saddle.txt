@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_nn_rescaled_C_arm_NNLO_saddle.py
-runner_sha256: 3d5a1755e19d5c5d2fc207afbaa2901e9722cff733d85dbe67dc75cd82a42319
-timeout_sec: 600
+runner_sha256: 05a38516a9454a46c8c4fa5624720510af624a29fbb6c4676f49befa8ae94b34
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.68
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -76,15 +76,15 @@ Frozen harness parameters:
      0.12500     3.1701     3.2268     0.8990     0.8996     +0.063%        -1.365%
      0.06250     3.0895     3.1191     0.6282     0.6281     -0.020%        -0.862%
      0.03125     3.0467     3.0616     0.4416     0.4417     +0.023%        -0.446%
-     0.01562     3.0239     3.0581     0.3115     0.2884     -7.407%        -0.246%
+     0.01562     3.0239     3.0315     0.3115     0.3115     +0.004%        -0.246%
 
   Max |residual| on 4-point fit window (h in (0.25, 0.125, 0.0625, 0.03125)): 0.205%
 
-  Note: at h = 0.015625, the slit y = 3 lies deep in the saddle tail
-  (exp(-y^2 * 2 Re(1/(4 alpha_total))) ~ 1e-46 at h = 0.0156), and the
-  closed-form Gaussian approximation underpredicts the true amplitude
-  sourced by ballistic non-Gaussian lattice terms.  This is OUTSIDE
-  the alpha fit window and reported for completeness.
+  The finer point is outside the unchanged four-point fit window.
+  Stable erfc differences give sigma=0.3115126 at h=0.015625.
+  The earlier 0.2884 was cancellation, not a physical saddle failure.
+  Direct aperture integration checks this numerical repair; no
+  universal small-h or physical lattice-equivalence claim follows.
 
 ------------------------------------------------------------------------------
 4) ALPHA_NNLO_EFF AND ACCEPTANCE VERDICT
@@ -93,7 +93,7 @@ Frozen harness parameters:
   LO     (C_arm support)    0.5000      2.4855   0.0256
   NLO    (phase note)       0.5165      2.6186   0.0091
   NNLO_q (phase + q^4+q^6)  0.5170      2.6234   0.0086
-  NNLO_full (+ aperture)    0.5247      2.7041   0.0009  <-- this note
+  Aperture q^2 model        0.5247      2.7041   0.0009  <-- this note
   EMPIRICAL  (continuum)    0.5256      2.7107   --
 
   Local alpha at h_geom = sqrt(0.25 * 0.03125) = 0.08839:

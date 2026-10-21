@@ -41,23 +41,23 @@ to the LO constant:
 | 0.0625  | 0.6282      | 6.3160        |
 | 0.03125 | 0.4416      | 6.2406        |
 
-`sigma^2 / h` decreases monotonically with h, asymptoting to a value
-indistinguishable from `C_LO^2 = 6.178` at the smallest h. So
-`sigma^2(h) = C_LO^2 h (1 + delta(h))` with `delta(h) > 0` in the fit
-window and `delta(h) -> 0` as `h -> 0`.
+`sigma^2 / h` decreases as h shrinks through these four points. This is
+consistent with approach to `C_LO^2 = 6.178`, but finite measurements do not
+prove the limit. Define `sigma^2(h) = C_LO^2 h (1 + delta(h))`; the
+measured `delta(h)` is positive on this window.
 
 ## Claim
 
-The leading non-trivial NLO correction to the LO saddle is
+The leading phase correction to the LO saddle is
 
 ```text
-delta(h) ~ d2 h^2 + O(h^4),
+delta_a(h) = d2 h^2 + O(h^4),
    d2 = (A / (A + B)) * [k (sqrt(2) - 1)]^2 / 2 = 1.1510
 ```
 
 with `A = c / (FANOUT sqrt(2))`, `B = c^2 / FANOUT`. The closed-form
-prediction propagated through the continuum diagnostic's four-point log-log
-fit gives
+phase expression, combined with the q^4 correction below and propagated
+through the continuum diagnostic's four-point log-log fit, gives
 
 ```text
 alpha_NLO_eff = 0.5170
@@ -68,8 +68,9 @@ versus empirical `alpha = 0.5256`. The NLO captures the **direction** and
 gap is `|delta alpha| = 0.0086`. This is a bounded theorem, not a full
 closure.
 
-The candidate (b) `q^4` saddle correction is < 1% of the candidate (a)
-phase correction on the fit window and does not change the conclusion.
+The candidate (b) `q^4` saddle correction is < 1% of the full
+phase-corrected variance on the fit window. Its ratio to the phase increment
+is 3.58–22.04%, not < 1%; it does not change the bounded fit conclusion.
 
 ## Imported Authorities
 
@@ -147,8 +148,10 @@ correction to `sigma^2(h)/(C_LO^2 h)` at order `h^2`, `h^4`, ...
 the inverse Fourier transform of `g^{N_2}(q)` at order `h^2` via standard
 perturbation theory in the variance.
 
-Both candidates produce an `O(h^2)` correction. We compute each in closed
-form and report which dominates.
+The phase correction is relative `O(h^2)` and absolute `O(h^3)`, since
+the leading variance is `O(h)`. The q^4 correction is absolute `O(h^2)`
+and relative `O(h)`. The finite-window comparison below is not a uniform
+small-h dominance assertion.
 
 ### 2. Candidate (a): phase NLO
 
@@ -220,7 +223,7 @@ where `A_0(y) = (g(0)^{N_2} / sqrt(4 pi alpha_2)) exp(-y^2 / (4 alpha_2))`
 is the LO Gaussian and, with `mu := 1/(4 alpha_2)`,
 
 ```text
-X(y) = ( -1/A_0(y) ) * d^4/dy^4 A_0(y) ... evaluated explicitly:
+X(y) = (1/A_0(y)) * d^4/dy^4 A_0(y), evaluated explicitly:
 X(y) = 12 mu^2  -  48 mu^3 y^2  +  16 mu^4 y^4.                                   (7)
 ```
 
@@ -258,7 +261,7 @@ dV_b(h)   :=  variance correction
             =  -2 Re( alpha_4 Y ).                                                (10)
 ```
 
-`mu`, `sigma_0^2`, `alpha_4` are all complex per-h objects; we evaluate
+`mu` and `alpha_4` are complex; `sigma_0^2` is real. We evaluate
 them numerically (closed form, no Monte Carlo) in the runner.
 
 ### 4. Numerical magnitude of (a) vs (b)
@@ -276,9 +279,11 @@ From the runner ([`scripts/lattice_nn_rescaled_C_arm_NLO_saddle.py`](../scripts/
 Two readings:
 - `delta_a(h) ~ d2_phase h^2` to better than 5% on the entire fit window.
   The `d4_phase h^4` and higher terms are sub-percent at `h <= 0.25`.
-- The `q^4` saddle correction is < 1% of the phase correction on the fit
-  window. Candidate (a) dominates. The closed-form leading NLO is
-  `delta(h) ~ 1.1510 * h^2`.
+- The `q^4` saddle correction is < 1% of the full phase-corrected
+  variance, but respectively 3.58%, 5.88%, 11.17%, and 22.04% of the
+  phase increment at the four fit points. The leading **phase** correction
+  is `delta_a(h) ~ 1.1510 * h^2`; it is not the leading small-h relative
+  correction of the combined phase+q^4 model.
 
 ### 5. Per-h cross-check vs continuum diagnostic measurements
 
@@ -349,15 +354,13 @@ This is a **bounded theorem** outcome:
   `0.9%` at `h = 0.03125`.
 
 The unaccounted residual gap of `|delta alpha| = 0.0086` is outside the
-strong-closure band `+/- 0.005` set by the task acceptance criterion. Three
-candidate sources for the next-to-NLO contribution:
+strong-closure band `+/- 0.005` set by the task acceptance criterion. The following
+original follow-up mechanisms require separate treatment:
 
-1. **O(h^4) phase corrections** to the variance. The `d4_phase = 0.913`
-   coefficient is comparable to `d2_phase = 1.151`, so at `h = 0.25` the
-   `h^4` correction adds `0.913 * 0.0039 = 0.0036` to delta_a, against
-   the `0.072` from `d2 h^2` — a 5% lift. Propagating an extra `+0.0036`
-   to `delta_a(h=0.25)` would close a small fraction of the per-h
-   residual (`-4.62% -> -4.27%`).
+1. **Higher phase orders are already included.** The runner uses the
+   exact cosine, so adding `d4_phase h^4` again would double count. These
+   terms explain the difference from a truncated phase series, not the
+   remaining discrepancy of the exact-cosine prediction.
 
 2. **q^6 (and higher) saddle terms** in (5). The next-leading term is
    `O((qh)^6)` in `log[g/g(0)]`, with coefficient mixing `r`, `r^2`, and
@@ -382,7 +385,7 @@ The runner reports all three candidates and tags the outcome BOUNDED.
 python3 scripts/lattice_nn_rescaled_C_arm_NLO_saddle.py
 ```
 
-Closed form. No Monte Carlo, no lattice propagation, no fit. Depends
+Closed form. No Monte Carlo, no lattice propagation, no fitted model parameter. Depends
 only on `BETA`, `K_PHYS`, `PHYS_L`, `FANOUT` (taken from
 `scripts/lattice_nn_deterministic_rescale.py`) and the slit-plane
 fraction `1/3`. Bounded-support guards inside the runner check:
@@ -392,7 +395,7 @@ fraction `1/3`. Bounded-support guards inside the runner check:
   overshoot).
 - `|alpha_eff - 0.5256| <= 0.020` (right magnitude band).
 - max per-h `sigma^2` residual `<= 5%`.
-- candidate (a) dominates (b) on the fit window (ratio < 1%).
+- q^4 divided by the full phase-corrected variance is < 1% on the fit window.
 - `h -> 0` limit recovers `C_LO^2 = 6.178`.
 
 All seven guards PASS at the harness-fixed parameters.
@@ -401,16 +404,16 @@ All seven guards PASS at the harness-fixed parameters.
 
 This note:
 
-- derives the closed-form NLO `delta(h) ~ 1.1510 h^2` from the saddle
+- derives the closed-form phase correction `delta_a(h) ~ 1.1510 h^2` from the saddle
   expansion of the per-step characteristic function, with a clean
   algebraic origin (the cosine phase factor in `Re(a_pm conj(a_0))`);
-- propagates `delta(h)` through the continuum diagnostic's log-log fit
+- propagates the exact phase expression plus q^4 correction through the log-log fit
   protocol and
   predicts `alpha_eff = 0.5170` versus empirical `alpha = 0.5256`;
-- shows that the `q^4` saddle correction is sub-leading to the phase NLO
-  by two orders of magnitude on the fit window;
-- documents the `0.0086` residual alpha-gap and three candidate sources
-  for the next-to-NLO contribution.
+- quantifies the q^4 correction relative to both full variance and phase
+  increment on the fit window, without asserting uniform phase dominance;
+- documents the `0.0086` residual alpha-gap and separates already included
+  phase orders from possible further corrections.
 
 It does NOT:
 
@@ -430,4 +433,9 @@ expansion. The audit lane sets the effective status after independent
 review of the runner, the saddle expansion, and the alpha_eff
 extraction protocol.
 
-https://claude.ai/code/session_015mocy1jaZodDXSwpnZypjH
+## Superseded numerical record and recovery
+
+The original note, runner and cached output are recoverable byte-for-byte at
+Git commit `f24d17d97d372df977476e4a69674577f31af575` under their unchanged
+repository paths. The linked cached log records that earlier execution and is
+not fresh evidence for this correction. No audit status is changed.

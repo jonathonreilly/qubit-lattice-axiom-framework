@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/one_qubit_split_step_walk_relay_source_and_doublers_2026_10_21.py
+runner_sha256: f07055f6c0456330cfffcf671f15f93aaed52cc46ee8931b8b152ff74c30f1df
+input_fingerprint_sha256: d861ffa815aaa34dff6aeb580d87afeb3ebad1039d7a3ad6206ad35ac18dd0f7
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 4.27
+status: ok
+----- stdout -----
+[PASS] plane waves: mean step per axis equals the group velocity  max |mean step - v| 1.4e-10
+[PASS] plane waves: burns + turns (independent axis signs, redraw 2 eps) equal eps v v including shear; burns alone do not  max |burns+turns - eps v v| 1.8e-11; burns alone >= 6.8e-02; |k| 0.1 along [1. 0. 0.]: eps 0.10000, |v| 1.0000; |k| 0.1 along [0.71 0.71 0.  ]: eps 0.09996, |v| 1.0000; |k| 0.1 along [0.58 0.58 0.58]: eps 0.09800, |v| 0.9592; |k| 0.2 along [0.89 0.45 0.  ]: eps 0.19979, |v| 1.0000; |k| 0.15 along [0.3  0.51 0.81]: eps 0.14705, |v| 0.9609
+[PASS] long-wavelength dispersion: eps/|k| within 3% of one on the sampled directions  max |eps/|k| - 1| 2.00%
+[PASS] Brillouin-zone scan: eight zero-quasi-energy cones, four of each chirality  [-1. -1.  0.]: +1, [-1.  0. -1.]: +1, [-0.5 -0.5  0.5]: -1, [-0.5  0.5 -0.5]: -1, [ 0. -1. -1.]: +1, [0. 0. 0.]: +1, [ 0.5 -0.5 -0.5]: -1, [0.5 0.5 0.5]: -1
+per_site: the walk (substep order x, y, z), momenta, scan grid and chirality evaluation are supplied choices.
+lattice_wide: no physical matter content, derivation of the update or exact cubic covariance is established.
+elapsed_seconds 4.2
+
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

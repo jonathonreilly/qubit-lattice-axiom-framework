@@ -13,3 +13,4 @@
 - Run 3 of the toy (RT range extended to m a = 2e-4 with N = 96/128): 14/0. RT step ratio 0.65, limit about -0.0117. C is about 0.36 per unit eps (T3) and 0.93 (RT).
 - run_all: TOTAL PASS=45 FAIL=0 (group 7, selection 19, flow 5, toy 14). Per-runner outputs are in logs/*.runall.log.
 - NOTE.md is written and headed as a candidate primitive extension, not adopted. No file outside blocks/C2b was touched.
+- Applied the REVIEW.md corrections (1, 3, 4, 5, 6) to NOTE.md, set the status line and added §9 Review dispositions. Fixed a comment in kip_flow.py:53; no re-run needed.

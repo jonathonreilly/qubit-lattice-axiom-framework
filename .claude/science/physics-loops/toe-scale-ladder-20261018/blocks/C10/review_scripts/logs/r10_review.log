@@ -1,0 +1,20 @@
+u* = 0.039552379669855599999243993581436525088209481589620
+   bstar: s = 0.91442227, |W| = 0.370123 (s sqrt(1-s^2) = 0.370123), unitarity err 1.0e-15
+   iso: s = 0.81649658, |W| = 0.471405 (s sqrt(1-s^2) = 0.471405), unitarity err 1.0e-15
+   gold: s = 1.00000000, |W| = 0.000000 (s sqrt(1-s^2) = 0.000000), unitarity err 1.6e-15
+[PASS] R0: rebuilt walk unitary at all three points; |W| = s sqrt(1-s^2)
+R1 domain test
+   bstar th=0.0 chi=0.00: rec 1.1e-15, Kraus 6.7e-16, nonzero hops 27, rank sum 92, max ||A_n A_m^+||_2 0.232 (max element 0.159, basis-dependent), max ||[U(k)C^+, U(k')C^+]|| 1.896
+   bstar th=0.2 chi=0.00: rec 8.2e-16, Kraus 2.2e-16, nonzero hops 27, rank sum 92, max ||A_n A_m^+||_2 0.232 (max element 0.173, basis-dependent), max ||[U(k)C^+, U(k')C^+]|| 1.896
+   bstar th=0.2 chi=1.57: rec 8.2e-16, Kraus 2.2e-16, nonzero hops 27, rank sum 92, max ||A_n A_m^+||_2 0.232 (max element 0.156, basis-dependent), max ||[U(k)C^+, U(k')C^+]|| 1.896
+   iso th=0.0 chi=0.00: rec 7.8e-16, Kraus 2.2e-16, nonzero hops 27, rank sum 92, max ||A_n A_m^+||_2 0.254 (max element 0.213, basis-dependent), max ||[U(k)C^+, U(k')C^+]|| 1.903
+   iso th=0.2 chi=0.00: rec 5.6e-16, Kraus 4.4e-16, nonzero hops 27, rank sum 92, max ||A_n A_m^+||_2 0.254 (max element 0.225, basis-dependent), max ||[U(k)C^+, U(k')C^+]|| 1.903
+   iso th=0.2 chi=1.57: rec 6.7e-16, Kraus 3.3e-16, nonzero hops 27, rank sum 92, max ||A_n A_m^+||_2 0.254 (max element 0.210, basis-dependent), max ||[U(k)C^+, U(k')C^+]|| 1.903
+   gold th=0.0 chi=0.00: rec 7.4e-16, Kraus 3.3e-16, nonzero hops 27, rank sum 92, max ||A_n A_m^+||_2 0.234 (max element 0.223, basis-dependent), max ||[U(k)C^+, U(k')C^+]|| 1.939
+   gold th=0.2 chi=0.00: rec 7.5e-16, Kraus 4.4e-16, nonzero hops 27, rank sum 92, max ||A_n A_m^+||_2 0.234 (max element 0.222, basis-dependent), max ||[U(k)C^+, U(k')C^+]|| 1.939
+   gold th=0.2 chi=1.57: rec 7.2e-16, Kraus 4.4e-16, nonzero hops 27, rank sum 92, max ||A_n A_m^+||_2 0.234 (max element 0.211, basis-dependent), max ||[U(k)C^+, U(k')C^+]|| 1.939
+[PASS] R1: 27 nonzero hops at every point/mass setting; U(k)U(0)^+ do not commute (basis-free: not shift-coin under any constant internal basis)
+   rank sums (massless): [np.int64(92), np.int64(92), np.int64(92)]; all rank sums: [np.int64(92), np.int64(92), np.int64(92), np.int64(92), np.int64(92), np.int64(92), np.int64(92), np.int64(92), np.int64(92)]
+[PASS] R1b: rank sum = 92 at all points and mass settings (author: 92)
+[PASS] R1c: overlaps nonzero; basis-invariant spectral norm max ||A_n A_m^+||_2 is theta-independent (A_n(th) = M A_n(0) M) and in [0.2, 0.26] (author quotes 0.16-0.23, a basis-dependent element measure)  range 0.232-0.254
+R2 extensions

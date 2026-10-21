@@ -50,7 +50,7 @@ for d0 in (0.0, 1e-6, 1e-3):
         if d0 == 1e-6:
             r = dIR/d0
 check(f'small-mismatch IR/UV ratio {r:.4f} matches C2 value 0.781 to 1e-3', abs(r - 0.7813) < 1e-3, 'numerical')
-# illustrative threshold from a KI+_w-only regulator (toy coefficient, see kip_collins_toy.log)
+# illustrative threshold from a KI+_w-only regulator (toy coefficient, see logs/kip_collins_toy.runall.log)
 for C, eps in ((0.3, 0.05), (0.3, 1.0)):
     dth = C*alpha_IR/(4*np.pi)*eps
     print(f"  illustrative KI+_w threshold: C = {C}, eps = {eps}: delta_th ~ {dth:.1e} -> delta_IR ~ {r*dth:.1e}"

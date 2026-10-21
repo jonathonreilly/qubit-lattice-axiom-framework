@@ -46,13 +46,14 @@ for nm, w in WK.items():
         nz = [n for n in NS if np.abs(A[n]).max() > 1e-12]
         rk = sum(np.linalg.matrix_rank(A[n], tol=1e-10) for n in nz)
         ov = max(np.linalg.norm(A[n] @ A[m].conj().T, 2) for n in nz for m in nz if n != m)
+        ove = max(np.abs(A[n] @ A[m].conj().T).max() for n in nz for m in nz if n != m)   # basis-dependent element measure
         kr = np.abs(sum(A[n].conj().T @ A[n] for n in NS) - np.eye(4)).max()
         # basis-free certificate: shift-coin => U(k) U(0)^dag = diag phases for all k => pairwise commuting
         C0 = w.U(np.zeros(3), th, ch)
         ks = np.random.default_rng(4).uniform(-2, 2, (6, 3))
         Ms = [w.U(k, th, ch) @ C0.conj().T for k in ks]
         comm = max(np.linalg.norm(a @ b - b @ a, 2) for a in Ms for b in Ms)
-        print(f'   {nm} th={th} chi={ch:.2f}: rec {rec:.1e}, Kraus {kr:.1e}, nonzero hops {len(nz)}, rank sum {rk}, max ||A_n A_m^+|| {ov:.3f}, max ||[U(k)C^+, U(k\')C^+]|| {comm:.3f}')
+        print(f'   {nm} th={th} chi={ch:.2f}: rec {rec:.1e}, Kraus {kr:.1e}, nonzero hops {len(nz)}, rank sum {rk}, max ||A_n A_m^+||_2 {ov:.3f} (max element {ove:.3f}, basis-dependent), max ||[U(k)C^+, U(k\')C^+]|| {comm:.3f}')
         dom_ok &= (rec < 1e-12 and kr < 1e-12 and len(nz) == 27 and comm > 1e-2)
         HOPS[(nm, th, ch, 'stats')] = (rk, ov)
 check('R1: 27 nonzero hops at every point/mass setting; U(k)U(0)^+ do not commute (basis-free: not shift-coin under any constant internal basis)', dom_ok)
@@ -60,7 +61,9 @@ rk0 = [HOPS[(nm, 0.0, 0.0, 'stats')][0] for nm in WK]
 print(f'   rank sums (massless): {rk0}; all rank sums: {[HOPS[k][0] for k in HOPS if len(k) == 4]}')
 check('R1b: rank sum = 92 at all points and mass settings (author: 92)', all(HOPS[k][0] == 92 for k in HOPS if len(k) == 4))
 ovs = [HOPS[k][1] for k in HOPS if len(k) == 4]
-check('R1c: max overlap ||A_n A_m^+|| in [0.15, 0.24] (author 0.16-0.23)', 0.15 < min(ovs) and max(ovs) < 0.24, f'range {min(ovs):.3f}-{max(ovs):.3f}')
+check('R1c: overlaps nonzero; basis-invariant spectral norm max ||A_n A_m^+||_2 is theta-independent (A_n(th) = M A_n(0) M) and in [0.2, 0.26] '
+      '(author quotes 0.16-0.23, a basis-dependent element measure)', min(ovs) > 0.2 and max(ovs) < 0.26 and
+      all(abs(HOPS[(nm, 0.2, ch, 'stats')][1] - HOPS[(nm, 0.0, 0.0, 'stats')][1]) < 1e-12 for nm in WK for ch in (0.0, np.pi/2)), f'range {min(ovs):.3f}-{max(ovs):.3f}')
 
 # ---------------- R2 E-K and E-W
 print('R2 extensions')

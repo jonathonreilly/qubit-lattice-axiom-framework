@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_removed_sites_repel_and_blueshift_2026_10_21.py
+runner_sha256: 60a87a52b47d5b9b05da53817c1b44a5fead57c65a5b5cbcac44c296ffb8702c
+input_fingerprint_sha256: 032713afa3118d3630d927f5136db891655c086f904fe2537257e201b917c4e1
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 3.32
+status: ok
+----- stdout -----
+[PASS] mass 0.0: the packet is shifted away from the disk at every removal fraction  group speed 0.969; detected fraction without removals 0.979; shifts at 0.5%: +3.96, 1.0%: +9.98, 2.0%: +14.50 sites (positive = away)
+[PASS] mass 0.5: the packet is shifted away from the disk at every removal fraction  group speed 0.780; detected fraction without removals 0.963; shifts at 0.5%: +3.86, 1.0%: +5.63, 2.0%: +9.01 sites (positive = away)
+[PASS] the lowest mode of a region containing the disk rises in frequency as sites are removed  no removals 0.13122 (rest frequency 0.1); relative change 0.5%: +5.90%, 1.0%: +23.22%, 2.0%: +49.80%
+per_site: the Klein-Gordon discretization, removal rule (amplitude zero, links deleted), masses and momenta are supplied choices.
+per_block: geometry, impact parameter, seeds, removal fractions, time step and detection window are fixed in this source.
+lattice_wide: no gravity field, long-range response, physical identification or derivation of the record-removal clause is established.
+elapsed_seconds 3.2
+
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

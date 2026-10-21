@@ -1,11 +1,190 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_perturbative_uniqueness_theorem.py
-runner_sha256: 7234225a6f76b5979147fd08f3f795331c7311039819686315b6eef47a4c6a82
+runner_sha256: 6b8b9febf10a254e79a54f33d68eb06e50be9dcbc4d010131de100beee946ebb
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 451.70
+elapsed_sec: 763.78
 status: ok
 ----- stdout -----
+========================================================================================
+Finite PMNS affine-surface diagnostics with an imposed inertia filter
+========================================================================================
+
+Objective: reproduce finite search diagnostics with original predicates and thresholds.
+No global uniqueness, physical admissibility, or retained-theorem certification follows.
+Part 1: supplied baseline and finite norm diagnostics.
+For invertible D, rho(D^-1 J)<1 suffices for the log-det Taylor expansion at source amplitude1.
+W[J]=log|det(D+J)|-log|det(D)| is also defined outside that Taylor domain whenever det(D+J) is nonzero.
+Neither ||J||F<=||D||F nor ||J||op<=||D||op is a necessary or sufficient Taylor-convergence criterion.
+These are supplied size cuts, not an axiom-derived physical selection principle.
+Positive determinant alone does not determine inertia; inertia alone need not determine connectedness within an affine restriction.
+Numerical reference:
+ ||H_base||_F = 3.597839
+ ||H_base||_op = 2.868007
+ ||H_base||_sr = spectral radius = 2.868007
+ ||H_base^{-1}||_op = 1.131942
+
+Retained inertia invariants of H_base (Sylvester-inertia lemma):
+ signature(H_base) = (2, 0, 1)  (n_-, n_0, n_+)
+ det(H_base)       = +5.028315
+ [PASS] H_base has no zero eigenvalue (so D^{-1} exists; Taylor series well posed)
+ [PASS] Supplied baseline signature(H_base) = (2, 0, 1) (got (2, 0, 1))
+ [PASS] Supplied baseline det(H_base) > 0 (got +5.028315)
+ [PASS] Hermitian H_base: ||H_base||_op == spectral radius (op=2.868007, sr=2.868007)
+ [PASS] ||H_base||_F >= ||H_base||_op (Cauchy-Schwarz)
+
+========================================================================================
+Part 2: finite multistart scan across all six permutations
+========================================================================================
+
+Initial starts: [-5,10]^3,60/perm; Nelder-Mead iterates are not box-constrained.
+
+--- permutation sigma = (0, 1, 2) ---
+  no chamber closure found
+--- permutation sigma = (0, 2, 1) ---
+  no chamber closure found
+--- permutation sigma = (1, 0, 2) ---
+  no chamber closure found
+--- permutation sigma = (1, 2, 0) ---
+  no chamber closure found
+--- permutation sigma = (2, 0, 1) ---
+  basin @ (m,d,q)=( 21.128, 12.680,  2.089) sin(dcp)=-0.4188 |J|_F/|H|_F=13.916 |J|_op/|H|_op=11.354
+--- permutation sigma = (2, 1, 0) ---
+  basin @ (m,d,q)=(  0.657,  0.934,  0.715) sin(dcp)=-0.9874 |J|_F/|H|_F=0.941 |J|_op/|H|_op=0.858
+  basin @ (m,d,q)=( 28.006, 20.722,  5.012) sin(dcp)=+0.5544 |J|_F/|H|_F=20.876 |J|_op/|H|_op=17.621
+Part 3: imposed same-inertia filter applied only to clusters found by this finite search.
+The filter is signature(H_base+J)=signature(H_base)=(2,0,1). It is not derived physical admissibility.
+The positive-determinant test is redundant for this inertia but is not equivalent to it in general.
+Any continuous nonsingular path preserves inertia. The converse need not hold on this restricted affine surface.
+No path-connectivity certificate or exhaustive solution count is computed.
+ Found in-chamber clusters with residual below tolerance across six permutations: 3
+ Found-cluster inventory (numerical inertia at H_base + J):
+  perm=(2, 1, 0) @ (m,d,q)=(  0.657,  0.934,  0.715) sig=(2, 0, 1) det=    +0.959 sin(dcp)=-0.9874 [ON BRANCH]
+  perm=(2, 0, 1) @ (m,d,q)=( 21.128, 12.680,  2.089) sig=(1, 0, 2) det=-20296.106 sin(dcp)=-0.4188 [off branch]
+  perm=(2, 1, 0) @ (m,d,q)=( 28.006, 20.722,  5.012) sig=(1, 0, 2) det=-70537.233 sin(dcp)=+0.5544 [off branch]
+
+ Found clusters passing the imposed same-inertia filter: 1 basin(s)
+ Found clusters failing the imposed same-inertia filter: 2 basin(s)
+
+ Consistency diagnostics (non-selector):
+  Frobenius scale (|J|_F <= |H|_F):       1 basin(s)
+  Operator-norm scale (|J|_op <= |H|_op): 1 basin(s)
+  Taylor convergence (rho(D^{-1}J) < 1):   0 basin(s)
+
+Scale cuts are diagnostics on found clusters; rho<1 is checked separately.
+No retained authority, global uniqueness, or physical selector is established.
+ [PASS] Finite search: exactly one found cluster passes imposed same-inertia filter (admissible=1)
+ [PASS] At least one found cluster fails the same-inertia filter (off-branch count=2)
+ [PASS] Admissible (under imposed rule) basin preserves signature (2, 0, 1) (sig=(2, 0, 1))
+ [PASS] Admissible basin preserves sgn det > 0 (det=+0.959)
+ [PASS] Admissible basin is at permutation sigma=(2,1,0) (perm=(2, 1, 0))
+ [PASS] Admissible basin is the PMNS-closure theorem Basin 1 @ (0.657, 0.934, 0.715) ((m,d,q) = (0.657061, 0.933806, 0.715042))
+ [PASS] Admissible basin gives sin(delta_CP) = -0.987 (conditional on imposed rule) (sin(delta_CP)=-0.9874)
+ [PASS] Off-branch basin at perm=(2, 0, 1) (m,d,q)~(21.13,12.68,2.09) has flipped signature (1,0,2) (sig=(1, 0, 2))
+ [PASS] Off-branch basin at perm=(2, 0, 1) has det < 0 (any nonsingular path to positive-det baseline is impossible) (det=-20296.106)
+ [PASS] Off-branch basin at perm=(2, 1, 0) (m,d,q)~(28.01,20.72,5.01) has flipped signature (1,0,2) (sig=(1, 0, 2))
+ [PASS] Off-branch basin at perm=(2, 1, 0) has det < 0 (any nonsingular path to positive-det baseline is impossible) (det=-70537.233)
+ [PASS] Consistency: Frobenius scale picks the same basin as the imposed branch-choice rule
+ [PASS] Consistency: operator-norm scale picks the same basin as the imposed branch-choice rule
+ [PASS] At least one off-branch basin predicts sin(delta_CP) > 0 (opposite sign) (count=1)
+ [PASS] Finite inventory: rho(D^{-1}J) < 1 fails at every found cluster (min rho over basins = 1.285)
+ [PASS] Among found clusters, the same-inertia cluster minimises rho(D^{-1} J) (closest to series disk) (smallest rho=1.285 at x=(np.float64(0.6570613422127581), np.float64(0.9338063437588396), np.float64(0.7150423295898918)))
+
+========================================================================================
+Part 4: numerical profile of the three advertised adversarial basins
+========================================================================================
+
+ Basin 1 sigma=(2,1,0)
+  (m, delta, q_+)    = (+0.657061, +0.933806, +0.715042)
+  chamber distance   = +0.0159
+  (s12^2, s13^2, s23^2) = (0.3070, 0.0218, 0.5450)
+  sin(delta_CP)     = -0.9874
+  |J|_F / |H_base|_F  = 0.941
+  |J|_op / |H_base|_op = 0.858
+  rho(H^{-1} J)      = 1.285
+ [PASS] Basin 1 sigma=(2,1,0): inside chamber
+ [PASS] Basin 1 sigma=(2,1,0): |J|_F / |H|_F < 1 (scale-perturbative, Frobenius)
+ [PASS] Basin 1 sigma=(2,1,0): |J|_op / |H|_op < 1 (scale-perturbative, operator)
+ Basin 2 sigma=(2,1,0)
+  (m, delta, q_+)    = (+28.006188, +20.721831, +5.011599)
+  chamber distance   = +24.1004
+  (s12^2, s13^2, s23^2) = (0.3070, 0.0218, 0.5450)
+  sin(delta_CP)     = +0.5544
+  |J|_F / |H_base|_F  = 20.876
+  |J|_op / |H_base|_op = 17.621
+  rho(H^{-1} J)      = 36.101
+ [PASS] Basin 2 sigma=(2,1,0): returned iterate inside chamber; convergence/residual not certified
+ [PASS] Basin 2 sigma=(2,1,0): |J|_F / |H|_F > 1 (non-scale-perturbative, Frobenius)
+ [PASS] Basin 2 sigma=(2,1,0): |J|_op / |H|_op > 1 (non-scale-perturbative, operator)
+ Basin X sigma=(2,0,1)
+  (m, delta, q_+)    = (+21.128264, +12.680028, +2.089235)
+  chamber distance   = +13.1363
+  (s12^2, s13^2, s23^2) = (0.3070, 0.0218, 0.5450)
+  sin(delta_CP)     = -0.4188
+  |J|_F / |H_base|_F  = 13.916
+  |J|_op / |H_base|_op = 11.354
+  rho(H^{-1} J)      = 26.071
+ [PASS] Basin X sigma=(2,0,1): returned iterate inside chamber; convergence/residual not certified
+ [PASS] Basin X sigma=(2,0,1): |J|_F / |H|_F > 1 (non-scale-perturbative, Frobenius)
+ [PASS] Basin X sigma=(2,0,1): |J|_op / |H|_op > 1 (non-scale-perturbative, operator)
+
+========================================================================================
+Part 5: finite-search target transition diagnostic
+========================================================================================
+
+ NuFit NO lower-octant best fit (~0.445): s23^2 = 0.445 => no point found by finite search (expected search success=False)
+ [PASS] s23^2 = 0.445: finite-search success = False
+ NuFit 1-sigma upper edge (~0.527): s23^2 = 0.527 => no point found by finite search (expected search success=False)
+ [PASS] s23^2 = 0.527: finite-search success = False
+ NuFit NO upper-octant best fit (0.545): s23^2 = 0.545 => point found by finite search (expected search success=True)
+ [PASS] s23^2 = 0.545: finite-search success = True
+ NuFit 3-sigma upper edge (~0.600): s23^2 = 0.6 => point found by finite search (expected search success=True)
+ [PASS] s23^2 = 0.6: finite-search success = True
+
+ Binary search using a finite optimizer-success indicator (not a certified existence oracle)...
+  s23^2_threshold = 0.540863 (bracket [0.540862, 0.540863])
+ [PASS] Finite-search transition estimate lies in [0.540, 0.542] (threshold=0.540863)
+ [PASS] Finite-search transition estimate exceeds supplied comparator0.5 (threshold=0.540863)
+ [PASS] Finite-search transition estimate exceeds historical comparator0.527 (threshold=0.540863)
+
+ ==> This search reports an upper-octant transition estimate,
+   near s23^2 = 0.5409 for this supplied map and search,
+   at the supplied historical (s12^2,s13^2) targets.
+   No global lower-octant exclusion or experimental significance is established.
+Part 6: finite support enumeration for supplied Z3 charges.
+Assuming qL=(0,1,-1), qR=(0,-1,1) and neutrality modulo3 gives the listed permutation supports.
+For the supplied diagonal example YeYe^dagger is diagonal; a left basis with no mixing can be chosen.
+This does not derive the physical charge assignment, nondegenerate charged-lepton spectrum, or equivalence of full theories under right-handed relabeling.
+ [PASS] Z_3 support for q_H = 0 matches trichotomy prediction (derived=[(0, 0), (1, 1), (2, 2)], expected=[(0, 0), (1, 1), (2, 2)])
+ [PASS] Z_3 support for q_H = 1 matches trichotomy prediction (derived=[(0, 1), (1, 2), (2, 0)], expected=[(0, 1), (1, 2), (2, 0)])
+ [PASS] Z_3 support for q_H = -1 matches trichotomy prediction (derived=[(0, 2), (1, 0), (2, 1)], expected=[(0, 2), (1, 0), (2, 1)])
+ [PASS] Diagonal Y_e (q_H=0 support) gives |U_e| = I in axis basis (no mixing)
+Part 7: local finite-difference Jacobian diagnostic at the supplied basin.
+The fourth computed coordinate is sin(delta_CP), not delta_CP itself.
+Rank3 at one numerical point is not a global embedded-manifold or injectivity theorem.
+If the exact angle Jacobian is nonsingular on a smooth eigenvector branch, the inverse-function theorem gives local angle coordinates.
+The finite-difference calculation below supports that local hypothesis numerically; it does not prove it with interval bounds.
+ Numerical Jacobian rank at Basin 1 = 3 (expected 3)
+ [PASS] Finite-difference J4 has numerical rank3 at this point and tolerance
+ [PASS] Numerical derivative row of sin(delta_CP) lies in the span of the three angle rows (residual=6.94e-18)
+
+========================================================================================
+Part 8: finite norm-cut chamber search
+========================================================================================
+
+ Found norm-cut chamber clusters below residual tolerance across six permutations: 1
+  perm=(2, 1, 0) @ (m,d,q)=(0.6571,0.9338,0.7150) |J|_F/|H|_F=0.941 sin(dcp)=-0.9874
+ [PASS] Finite search finds exactly one norm-cut chamber cluster (count=1)
+ [PASS] the sole found norm-cut cluster is at sigma = (2, 1, 0)
+ [PASS] the sole found norm-cut cluster is the PMNS-closure theorem Basin 1
+
+========================================================================================
+ PASS = 46
+ FAIL = 0
+========================================================================================
+
+All implemented finite diagnostic predicates passed in this run.
+This is not an exhaustion proof or an independently established physical prediction.
 
 ----- stderr -----
 

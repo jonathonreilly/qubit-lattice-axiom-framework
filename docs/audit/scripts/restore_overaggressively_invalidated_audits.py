@@ -150,6 +150,9 @@ ARCHIVED_FIELDS = (
     "audit_invocation_id",
     "audit_invocation_history",
     "negative_assertion_classes",
+    # Archived only when the judgment declared a premise scope; restored with
+    # it so the frozen judgment digest still matches.
+    "premises_used",
 )
 
 RANK = {
@@ -572,7 +575,8 @@ def restore_audit_from_previous(
     # briefly live between restoration and the next invalidation sweep.
     if rows is not None:
         if science_baseline is not None:
-            current_science = audit_science_fingerprint.build_science_fingerprint(
+            current_science = audit_science_fingerprint.build_matching_science_fingerprint(
+                science_baseline,
                 {
                     **row,
                     "claim_type": archived.get("claim_type"),

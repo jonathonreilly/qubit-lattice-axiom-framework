@@ -1,0 +1,158 @@
+{
+  "rows": [
+    {
+      "ell": 3,
+      "r": [
+        2,
+        0
+      ],
+      "s": [
+        1,
+        0
+      ],
+      "target_ell": 3,
+      "coefficient": "-1/4",
+      "unfolded": "-1/4",
+      "folded": "0",
+      "paths": 6,
+      "edges": 873
+    },
+    {
+      "ell": 3,
+      "r": [
+        2,
+        0
+      ],
+      "s": [
+        3,
+        0
+      ],
+      "target_ell": 3,
+      "coefficient": "-1/4",
+      "unfolded": "-1/4",
+      "folded": "0",
+      "paths": 6,
+      "edges": 873
+    },
+    {
+      "ell": 3,
+      "r": [
+        2,
+        0
+      ],
+      "s": [
+        2,
+        1
+      ],
+      "target_ell": 3,
+      "coefficient": "-1/4",
+      "unfolded": "-1/4",
+      "folded": "0",
+      "paths": 6,
+      "edges": 873
+    },
+    {
+      "ell": 3,
+      "r": [
+        0,
+        2
+      ],
+      "s": [
+        0,
+        1
+      ],
+      "target_ell": 3,
+      "coefficient": "-1/4",
+      "unfolded": "-1/4",
+      "folded": "0",
+      "paths": 6,
+      "edges": 873
+    },
+    {
+      "ell": 3,
+      "r": [
+        2,
+        0
+      ],
+      "s": [
+        1,
+        0
+      ],
+      "target_ell": 2,
+      "coefficient": "0",
+      "unfolded": "0",
+      "folded": "0",
+      "paths": 0,
+      "edges": 873
+    },
+    {
+      "ell": 3,
+      "r": [
+        2,
+        0
+      ],
+      "s": [
+        1,
+        0
+      ],
+      "target_ell": 1,
+      "coefficient": "0",
+      "unfolded": "0",
+      "folded": "0",
+      "paths": 0,
+      "edges": 873
+    },
+    {
+      "ell": 4,
+      "r": [
+        2,
+        0
+      ],
+      "s": [
+        1,
+        0
+      ],
+      "target_ell": 4,
+      "coefficient": "0",
+      "unfolded": "0",
+      "folded": "0",
+      "paths": 0,
+      "edges": 970
+    },
+    {
+      "ell": 4,
+      "r": [
+        2,
+        0
+      ],
+      "s": [
+        3,
+        0
+      ],
+      "target_ell": 4,
+      "coefficient": "0",
+      "unfolded": "0",
+      "folded": "0",
+      "paths": 0,
+      "edges": 970
+    },
+    {
+      "ell": 3,
+      "r": [
+        2,
+        0
+      ],
+      "s": [
+        2,
+        0
+      ],
+      "target_ell": 4,
+      "coefficient": "0",
+      "unfolded": "0",
+      "folded": "0",
+      "paths": 0,
+      "edges": 970
+    }
+  ],
+  "scope": "Exact canonical K3 local matrix elements, H0 energy8; supplied uniform reference"
+}

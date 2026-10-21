@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/native_six_endpoint_binding.py
+runner_sha256: 407bfc857ac73c54bf00c75cf2220af4e1fa2dfd0f79ecf053d901f44260ac18
+input_fingerprint_sha256: 988888c92161c56ae009bbaf807f8aa14ac2dc4a1f574c624a3e0c0d1461bba5
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 5.56
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_endpoint_binding-xabuxqeg
+[PASS] P9771:C001
+[PASS] P9771:C002
+[PASS] P9771:C003
+[PASS] P9771:C004
+[PASS] P9771:C005
+[PASS] P9771:C006
+[PASS] P9771:C007
+[PASS] P9771:C008
+[PASS] P9771:C009
+[PASS] P9771:C010
+{"status": "bounded-support", "four_cluster_interval_certificates": [{"F": [[0, 0], [1, 0], [0, 1], [1, 1]], "min_pivot_lower_display": 1.0994751754781376}, {"F": [[0, 0], [1, 0], [0, 1], [0, 2]], "min_pivot_lower_display": 2.2713604522872206}, {"F": [[0, 0], [1, 0], [0, 1], [1, 2]], "min_pivot_lower_display": 4.098608309802028}, {"F": [[0, 0], [1, 0], [1, 1], [0, 2]], "min_pivot_lower_display": 4.098608309802028}, {"F": [[0, 0], [1, 0], [1, 1], [1, 2]], "min_pivot_lower_display": 2.2713604522872206}, {"F": [[0, 0], [1, 0], [0, 2], [1, 2]], "min_pivot_lower_display": 2.664027149321267}, {"F": [[0, 0], [0, 1], [1, 1], [0, 2]], "min_pivot_lower_display": 3.7942447631758953}, {"F": [[0, 0], [0, 1], [1, 1], [1, 2]], "min_pivot_lower_display": 2.387435732230297}, {"F": [[0, 0], [0, 1], [0, 2], [1, 2]], "min_pivot_lower_display": 2.2713604522872206}, {"F": [[0, 0], [1, 1], [0, 2], [1, 2]], "min_pivot_lower_display": 4.098608309802028}, {"F": [[1, 0], [0, 1], [1, 1], [0, 2]], "min_pivot_lower_display": 2.5157344073655232}, {"F": [[1, 0], [0, 1], [1, 1], [1, 2]], "min_pivot_lower_display": 3.7942447631758953}, {"F": [[1, 0], [0, 1], [0, 2], [1, 2]], "min_pivot_lower_display": 4.098608309802028}, {"F": [[1, 0], [1, 1], [0, 2], [1, 2]], "min_pivot_lower_display": 2.2713604522872206}, {"F": [[0, 1], [1, 1], [0, 2], [1, 2]], "min_pivot_lower_display": 1.0994751754781376}], "grid_points_per_shape": 257, "dimension": 1459, "norm": 9999999925139683, "energy_numerator": -71308060208219532, "exact_certificate": -3080607397277827, "essential_lower_bound": -7, "trial_upper_bound": -7.1, "scope": "Specified native K1 boundary sector only; proof plus interval/integer certificates; not full-H particle or empirical validation"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_endpoint_binding-xabuxqeg/outputs/native_six_endpoint_binding/result.json sha256=5d7ea4c32f714c97713770a5274473649ee13cf00241713c13c4761440d30a04
+{"dimension": 1459, "energy_numerator": -71308060208219532, "essential_lower_bound": -7, "exact_certificate": -3080607397277827, "four_cluster_interval_certificates": [{"F": [[0, 0], [1, 0], [0, 1], [1, 1]], "min_pivot_lower_display": 1.0994751754781376}, {"F": [[0, 0], [1, 0], [0, 1], [0, 2]], "min_pivot_lower_display": 2.2713604522872206}, {"F": [[0, 0], [1, 0], [0, 1], [1, 2]], "min_pivot_lower_display": 4.098608309802028}, {"F": [[0, 0], [1, 0], [1, 1], [0, 2]], "min_pivot_lower_display": 4.098608309802028}, {"F": [[0, 0], [1, 0], [1, 1], [1, 2]], "min_pivot_lower_display": 2.2713604522872206}, {"F": [[0, 0], [1, 0], [0, 2], [1, 2]], "min_pivot_lower_display": 2.664027149321267}, {"F": [[0, 0], [0, 1], [1, 1], [0, 2]], "min_pivot_lower_display": 3.7942447631758953}, {"F": [[0, 0], [0, 1], [1, 1], [1, 2]], "min_pivot_lower_display": 2.387435732230297}, {"F": [[0, 0], [0, 1], [0, 2], [1, 2]], "min_pivot_lower_display": 2.2713604522872206}, {"F": [[0, 0], [1, 1], [0, 2], [1, 2]], "min_pivot_lower_display": 4.098608309802028}, {"F": [[1, 0], [0, 1], [1, 1], [0, 2]], "min_pivot_lower_display": 2.5157344073655232}, {"F": [[1, 0], [0, 1], [1, 1], [1, 2]], "min_pivot_lower_display": 3.7942447631758953}, {"F": [[1, 0], [0, 1], [0, 2], [1, 2]], "min_pivot_lower_display": 4.098608309802028}, {"F": [[1, 0], [1, 1], [0, 2], [1, 2]], "min_pivot_lower_display": 2.2713604522872206}, {"F": [[0, 1], [1, 1], [0, 2], [1, 2]], "min_pivot_lower_display": 1.0994751754781376}], "grid_points_per_shape": 257, "norm": 9999999925139683, "scope": "Specified native K1 boundary sector only; proof plus interval/integer certificates; not full-H particle or empirical validation", "status": "bounded-support", "trial_upper_bound": -7.1}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; no microscopic pole, universal force or empirical identification is established.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_endpoint_binding-xabuxqeg elapsed_seconds= 5.458522957749665
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

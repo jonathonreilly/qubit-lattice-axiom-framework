@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/native_feature_soft_sectors.py
+runner_sha256: be34d29a4c8958c80f0f6c019ee795a4b12b23fa47a1c60d21b1e5a26c14c4e2
+input_fingerprint_sha256: 537b5d1ffc6a20a8be1e04aa211aabf82dff28f165f23361ce3b9bcd95a92805
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_feature_soft_sectors-yg1vfbgg
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_feature_soft_sectors-yg1vfbgg/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_patch_orbit_control.py']
+{"status": "pass", "rows": [{"m": 2, "orbit_size": 8, "minimum_column_difference": 2, "minimum_physical_difference_allowing_singletons": 6, "order4_flip_limit": 8}, {"m": 3, "orbit_size": 32, "minimum_column_difference": 3, "minimum_physical_difference_allowing_singletons": 10, "order4_flip_limit": 8}, {"m": 4, "orbit_size": 128, "minimum_column_difference": 4, "minimum_physical_difference_allowing_singletons": 14, "order4_flip_limit": 8}, {"m": 5, "orbit_size": 512, "minimum_column_difference": 5, "minimum_physical_difference_allowing_singletons": 18, "order4_flip_limit": 8}, {"m": 6, "orbit_size": 2048, "minimum_column_difference": 6, "minimum_physical_difference_allowing_singletons": 22, "order4_flip_limit": 8}], "scope": "exact finite flat-pattern subgroup and locality count; not a microscopic spectrum simulation"}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_feature_soft_sectors-yg1vfbgg/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_patch_orbit_control.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_feature_soft_sectors-yg1vfbgg/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_patch_orbit_control.py']
+{"status": "bounded-support", "control": {"status": "pass", "rows": [{"m": 2, "orbit_size": 8, "minimum_column_difference": 2, "minimum_physical_difference_allowing_singletons": 6, "order4_flip_limit": 8}, {"m": 3, "orbit_size": 32, "minimum_column_difference": 3, "minimum_physical_difference_allowing_singletons": 10, "order4_flip_limit": 8}, {"m": 4, "orbit_size": 128, "minimum_column_difference": 4, "minimum_physical_difference_allowing_singletons": 14, "order4_flip_limit": 8}, {"m": 5, "orbit_size": 512, "minimum_column_difference": 5, "minimum_physical_difference_allowing_singletons": 18, "order4_flip_limit": 8}, {"m": 6, "orbit_size": 2048, "minimum_column_difference": 6, "minimum_physical_difference_allowing_singletons": 22, "order4_flip_limit": 8}], "scope": "exact finite flat-pattern subgroup and locality count; not a microscopic spectrum simulation"}, "scope": "Native odd heavy levels counted with multiplicity; distinct symmetry characters are neutral-readout dark"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_feature_soft_sectors-yg1vfbgg/outputs/native_feature_soft_sectors/result.json sha256=58040ef41ce9fd70b3c139c564e426f0e98f63a2e77d8ca1ceddcfed8dc18422
+{"control": {"rows": [{"m": 2, "minimum_column_difference": 2, "minimum_physical_difference_allowing_singletons": 6, "orbit_size": 8, "order4_flip_limit": 8}, {"m": 3, "minimum_column_difference": 3, "minimum_physical_difference_allowing_singletons": 10, "orbit_size": 32, "order4_flip_limit": 8}, {"m": 4, "minimum_column_difference": 4, "minimum_physical_difference_allowing_singletons": 14, "orbit_size": 128, "order4_flip_limit": 8}, {"m": 5, "minimum_column_difference": 5, "minimum_physical_difference_allowing_singletons": 18, "orbit_size": 512, "order4_flip_limit": 8}, {"m": 6, "minimum_column_difference": 6, "minimum_physical_difference_allowing_singletons": 22, "orbit_size": 2048, "order4_flip_limit": 8}], "scope": "exact finite flat-pattern subgroup and locality count; not a microscopic spectrum simulation", "status": "pass"}, "scope": "Native odd heavy levels counted with multiplicity; distinct symmetry characters are neutral-readout dark", "status": "bounded-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_feature_soft_sectors-yg1vfbgg elapsed_seconds= 0.1367740840651095
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

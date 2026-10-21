@@ -31,7 +31,7 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 5759 |
+| Ledger rows | 5919 |
 | Applied audit verdicts | 0 |
 | Retained-grade rows, including boxed decorations | 0 |
 | Retained positive theorems | 0 |
@@ -39,12 +39,12 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 0 |
 | Boxed decorations under retained parents | 0 |
 | Open gates | 0 |
-| Unaudited rows | 5383 |
+| Unaudited rows | 5542 |
 | Retained-pending-chain rows | 0 |
 | Audited conditional rows | 0 |
 | Audited renaming rows | 0 |
 | Audited numerical-match rows | 0 |
-| Citation cycles detected | 68 |
+| Citation cycles detected | 69 |
 
 Source: tracked shards under `docs/audit/data/ledger/` and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 5383 |
-| Ready rows | 1794 |
-| Cycle-break targets | 80 |
+| Total pending rows | 5542 |
+| Ready rows | 1884 |
+| Cycle-break targets | 81 |
 | Critical pending | 746 |
-| High pending | 425 |
-| Medium pending | 1387 |
-| Leaf pending | 2825 |
+| High pending | 426 |
+| Medium pending | 1425 |
+| Leaf pending | 2945 |
 
 Next ready rows by queue order:
 
@@ -88,7 +88,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest state | ok |
 | Manifest pending additions | 0 |
 | Manifest pending removals | 0 |
-| Unmanifested candidates (need pending entries) | 10 |
+| Unmanifested candidates (need pending entries) | 11 |
 | Admitted ids absent from lane candidates | 565 |
 | Live conditional/failed rows that would park | 0 |
 | Live rows fail-open (legacy/unversioned snapshot) | 0 |
@@ -101,6 +101,7 @@ Unmanifested candidates (visible gaming surface; need review-landed pending entr
 - `admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21`
 - `admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21`
 - `admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20`
+- `candidate_law_cl2_a_records_qubit_leaves_the_flow_evidence_bounded_theorem_note_2026-10-18`
 - `compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_bounded_theorem_note_2026-09-14`
 - `local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24`
 - `massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_bounded_theorem_note_2026-09-14`
@@ -696,19 +697,19 @@ Source: deferred package (`archive/publication/ci3_z3/`).
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 7244 |
-| Critical nodes | 778 |
-| High nodes | 483 |
-| Medium nodes | 1577 |
-| Leaf nodes | 4406 |
+| Citation-graph nodes | 7407 |
+| Critical nodes | 779 |
+| High nodes | 484 |
+| Medium nodes | 1615 |
+| Leaf nodes | 4529 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2942 descendants; score 605.023
-- `three_generation_observable_theorem_note` - critical; 1272 descendants; score 57.314
+- `minimal_axioms` - critical; 2963 descendants; score 607.533
+- `three_generation_observable_theorem_note` - critical; 1273 descendants; score 57.315
 - `observable_principle_from_axiom_note` - critical; 1004 descendants; score 53.973
-- `graph_first_su3_integration_note` - critical; 1625 descendants; score 52.167
-- `kinetic_isotropy_primitive` - critical; 959 descendants; score 48.907
-- `plaquette_self_consistency_note` - critical; 1301 descendants; score 47.847
+- `graph_first_su3_integration_note` - critical; 1626 descendants; score 52.168
+- `kinetic_isotropy_primitive` - critical; 965 descendants; score 49.916
+- `plaquette_self_consistency_note` - critical; 1302 descendants; score 47.848
 - `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 43.514
-- `key_terminology` - critical; 1353 descendants; score 43.403
+- `key_terminology` - critical; 1354 descendants; score 43.404

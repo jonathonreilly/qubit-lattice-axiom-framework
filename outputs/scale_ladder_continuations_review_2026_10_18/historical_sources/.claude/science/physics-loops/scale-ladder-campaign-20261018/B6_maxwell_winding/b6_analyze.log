@@ -1,0 +1,69 @@
+== P2: co-exact source stiffness K_T(q) vs uniform (harmonic) chi_L, same field component ==
+   B_z (xy plaquettes): chi_z = chi(o=0) vs K_T(0,0,2pi/Lz);  B_x (yz plaquettes): chi_x = chi(o=1) vs K_T(pi,0,0)
+torus      V     chi_z  K_T(0,0,2pi/Lz)   ratio  K_T(0,0,pi) |     chi_x  K_T(pi,0,0)   ratio | K_T(pi,pi,pi)      gap
+2x2x2  +1.00  0.285050         0.303614  1.0651     0.303614 |  0.285050     0.303614  1.0651 |      0.315364  0.96962
+2x2x2  +0.90  0.287751         0.311468  1.0824     0.311468 |  0.287751     0.311468  1.0824 |      0.329203  1.09159
+2x2x2  +0.50  0.287992         0.335190  1.1639     0.335190 |  0.287992     0.335190  1.1639 |      0.362876  1.59336
+2x2x2  +0.00  0.267019         0.349315  1.3082     0.349315 |  0.267019     0.349315  1.3082 |      0.362054  2.22579
+2x2x2  -1.00  0.153427         0.285413  1.8603     0.285413 |  0.153427     0.285413  1.8603 |      0.204090  1.13404
+2x2x3  +1.00  0.229792         0.231651  1.0081          nan |  0.267343     0.283909  1.0620 |      0.280934  0.75538
+2x2x3  +0.90  0.254267         0.256679  1.0095          nan |  0.259642     0.289994  1.1169 |      0.295058  1.00756
+2x2x3  +0.50  0.319298         0.324985  1.0178          nan |  0.206109     0.299044  1.4509 |      0.311836  1.46342
+2x2x3  +0.00  0.376667         0.386013  1.0248          nan |  0.123639     0.293584  2.3745 |      0.298982  1.65819
+2x2x3  -1.00  0.424619         0.440228  1.0368          nan |  0.022890     0.219452  9.5871 |      0.213656  0.87179
+2x2x4  +1.00  0.210404         0.210914  1.0024     0.211133 |  0.260720     0.275737  1.0576 |      0.265744  0.61007
+2x2x4  +0.90  0.237589         0.238382  1.0033     0.238986 |  0.250714     0.283072  1.1291 |      0.284165  0.75416
+2x2x4  +0.50  0.312914         0.316048  1.0100     0.319313 |  0.158516     0.293674  1.8526 |      0.302175  1.29879
+2x2x4  +0.00  0.368362         0.374972  1.0179     0.382303 |  0.059284     0.288271  4.8625 |      0.281377  1.48648
+2x2x4  -1.00  0.247103         0.270230  1.0936     0.312564 |  0.003708     0.159020 42.8885 |      0.103785  0.29857
+
+== P3: winding-sector gaps dE(W) = E_min(sector) - E(0), min over all flip components ==
+2x2x2  flux axis x (L_a=2, A=4) V=+0.90: W=2: dE=0.14672 U_W=0.1467  W=4: dE=0.27449 U_W=0.0686   dE(4)/dE(2)=1.871 [Coulomb 4, string 2]
+2x2x2  flux axis x (L_a=2, A=4) V=+0.50: W=2: dE=0.73146 U_W=0.7315  W=4: dE=1.51125 U_W=0.3778   dE(4)/dE(2)=2.066 [Coulomb 4, string 2]
+2x2x2  flux axis x (L_a=2, A=4) V=+0.00: W=2: dE=1.62761 U_W=1.6276  W=4: dE=3.36987 U_W=0.8425   dE(4)/dE(2)=2.070 [Coulomb 4, string 2]
+2x2x2  flux axis x (L_a=2, A=4) V=-1.00: W=2: dE=4.36142 U_W=4.3614  W=4: dE=8.57985 U_W=2.1450   dE(4)/dE(2)=1.967 [Coulomb 4, string 2]
+2x2x2  flux axis z (L_a=2, A=4) V=+0.90: W=2: dE=0.14672 U_W=0.1467  W=4: dE=0.27449 U_W=0.0686   dE(4)/dE(2)=1.871 [Coulomb 4, string 2]
+2x2x2  flux axis z (L_a=2, A=4) V=+0.50: W=2: dE=0.73146 U_W=0.7315  W=4: dE=1.51125 U_W=0.3778   dE(4)/dE(2)=2.066 [Coulomb 4, string 2]
+2x2x2  flux axis z (L_a=2, A=4) V=+0.00: W=2: dE=1.62761 U_W=1.6276  W=4: dE=3.36987 U_W=0.8425   dE(4)/dE(2)=2.070 [Coulomb 4, string 2]
+2x2x2  flux axis z (L_a=2, A=4) V=-1.00: W=2: dE=4.36142 U_W=4.3614  W=4: dE=8.57985 U_W=2.1450   dE(4)/dE(2)=1.967 [Coulomb 4, string 2]
+2x2x3  flux axis x (L_a=2, A=6) V=+0.90: W=2: dE=0.07794 U_W=0.1169  W=4: dE=0.27486 U_W=0.1031  W=6: dE=0.49978 U_W=0.0833   dE(4)/dE(2)=3.527 [Coulomb 4, string 2]
+2x2x3  flux axis x (L_a=2, A=6) V=+0.50: W=2: dE=0.48301 U_W=0.7245  W=4: dE=1.46902 U_W=0.5509  W=6: dE=2.77156 U_W=0.4619   dE(4)/dE(2)=3.041 [Coulomb 4, string 2]
+2x2x3  flux axis x (L_a=2, A=6) V=+0.00: W=2: dE=1.20261 U_W=1.8039  W=4: dE=3.27890 U_W=1.2296  W=6: dE=6.11362 U_W=1.0189   dE(4)/dE(2)=2.726 [Coulomb 4, string 2]
+2x2x3  flux axis x (L_a=2, A=6) V=-1.00: W=2: dE=3.31222 U_W=4.9683  W=4: dE=8.00968 U_W=3.0036  W=6: dE=14.51630 U_W=2.4194   dE(4)/dE(2)=2.418 [Coulomb 4, string 2]
+2x2x3  flux axis z (L_a=3, A=4) V=+0.90: W=2: dE=0.19106 U_W=0.1274  W=4: dE=0.30029 U_W=0.0500   dE(4)/dE(2)=1.572 [Coulomb 4, string 2]
+2x2x3  flux axis z (L_a=3, A=4) V=+0.50: W=2: dE=0.97859 U_W=0.6524  W=4: dE=1.77782 U_W=0.2963   dE(4)/dE(2)=1.817 [Coulomb 4, string 2]
+2x2x3  flux axis z (L_a=3, A=4) V=+0.00: W=2: dE=2.17104 U_W=1.4474  W=4: dE=4.10047 U_W=0.6834   dE(4)/dE(2)=1.889 [Coulomb 4, string 2]
+2x2x3  flux axis z (L_a=3, A=4) V=-1.00: W=2: dE=5.52491 U_W=3.6833  W=4: dE=10.17316 U_W=1.6955   dE(4)/dE(2)=1.841 [Coulomb 4, string 2]
+2x2x4  flux axis x (L_a=2, A=8) V=+0.90: W=2: dE=0.05618 U_W=0.1124  W=4: dE=0.20463 U_W=0.1023  W=6: dE=0.41662 U_W=0.0926  W=8: dE=0.57409 U_W=0.0718   dE(4)/dE(2)=3.642 [Coulomb 4, string 2]
+2x2x4  flux axis x (L_a=2, A=8) V=+0.50: W=2: dE=0.41224 U_W=0.8245  W=4: dE=1.23043 U_W=0.6152  W=6: dE=2.29925 U_W=0.5109  W=8: dE=3.26596 U_W=0.4082   dE(4)/dE(2)=2.985 [Coulomb 4, string 2]
+2x2x4  flux axis x (L_a=2, A=8) V=+0.00: W=2: dE=1.14949 U_W=2.2990  W=4: dE=2.93790 U_W=1.4690  W=6: dE=5.19815 U_W=1.1551  W=8: dE=7.32296 U_W=0.9154   dE(4)/dE(2)=2.556 [Coulomb 4, string 2]
+2x2x4  flux axis x (L_a=2, A=8) V=-1.00: W=2: dE=3.64599 U_W=7.2920  W=4: dE=7.67890 U_W=3.8395  W=6: dE=12.62581 U_W=2.8057  W=8: dE=17.68625 U_W=2.2108   dE(4)/dE(2)=2.106 [Coulomb 4, string 2]
+2x2x4  flux axis z (L_a=4, A=4) V=+0.90: W=2: dE=0.24941 U_W=0.1247  W=4: dE=0.35531 U_W=0.0444   dE(4)/dE(2)=1.425 [Coulomb 4, string 2]
+2x2x4  flux axis z (L_a=4, A=4) V=+0.50: W=2: dE=1.32862 U_W=0.6643  W=4: dE=2.24668 U_W=0.2808   dE(4)/dE(2)=1.691 [Coulomb 4, string 2]
+2x2x4  flux axis z (L_a=4, A=4) V=+0.00: W=2: dE=3.03398 U_W=1.5170  W=4: dE=5.39008 U_W=0.6738   dE(4)/dE(2)=1.777 [Coulomb 4, string 2]
+2x2x4  flux axis z (L_a=4, A=4) V=-1.00: W=2: dE=8.20206 U_W=4.1010  W=4: dE=14.52065 U_W=1.8151   dE(4)/dE(2)=1.770 [Coulomb 4, string 2]
+
+== Size dependence of the W=2 x-flux (L_x = 2 fixed, A_x = 2 Lz grows): Coulomb dE ~ 1/Lz (U_W const), string dE ~ const (U_W ~ Lz) ==
+V=+0.90: Lz=2: dE=0.14672 U_W=0.1467  Lz=3: dE=0.07794 U_W=0.1169  Lz=4: dE=0.05618 U_W=0.1124   d ln dE / d ln Lz = -1.396 [Coulomb -1, string 0]
+V=+0.50: Lz=2: dE=0.73146 U_W=0.7315  Lz=3: dE=0.48301 U_W=0.7245  Lz=4: dE=0.41224 U_W=0.8245   d ln dE / d ln Lz = -0.840 [Coulomb -1, string 0]
+V=+0.00: Lz=2: dE=1.62761 U_W=1.6276  Lz=3: dE=1.20261 U_W=1.8039  Lz=4: dE=1.14949 U_W=2.2990   d ln dE / d ln Lz = -0.518 [Coulomb -1, string 0]
+V=-1.00: Lz=2: dE=4.36142 U_W=4.3614  Lz=3: dE=3.31222 U_W=4.9683  Lz=4: dE=3.64599 U_W=7.2920   d ln dE / d ln Lz = -0.286 [Coulomb -1, string 0]
+
+== Cubic comparison (V=0): exact L=2 here; 4^3, 6^3, 8^3 are the LANDED projector-MC values (W=2, q=1) ==
+L=2 exact U_W = L dE/2 = 1.6276;  landed MC: 4^3 1.463(17), 6^3 1.110(59), 8^3 0.674(177)
+[PASS] 2x2x2 V=0.9: vacuum component energy equals the W=0 sector minimum
+[PASS] 2x2x2 V=0.5: vacuum component energy equals the W=0 sector minimum
+[PASS] 2x2x2 V=0.0: vacuum component energy equals the W=0 sector minimum
+[PASS] 2x2x2 V=-1.0: vacuum component energy equals the W=0 sector minimum
+[PASS] 2x2x3 V=0.9: vacuum component energy equals the W=0 sector minimum
+[PASS] 2x2x3 V=0.5: vacuum component energy equals the W=0 sector minimum
+[PASS] 2x2x3 V=0.0: vacuum component energy equals the W=0 sector minimum
+[PASS] 2x2x3 V=-1.0: vacuum component energy equals the W=0 sector minimum
+[PASS] 2x2x4 V=0.9: vacuum component energy equals the W=0 sector minimum
+[PASS] 2x2x4 V=0.5: vacuum component energy equals the W=0 sector minimum
+[PASS] 2x2x4 V=0.0: vacuum component energy equals the W=0 sector minimum
+[PASS] 2x2x4 V=-1.0: vacuum component energy equals the W=0 sector minimum
+[PASS] 2x2x2: chi_x = chi_z (cubic symmetry) at every V
+[PASS] 2x2x3: chi_x = chi_y (x<->y symmetry) at every V
+[PASS] 2x2x4: chi_x = chi_y (x<->y symmetry) at every V
+TOTAL: PASS=15 FAIL=0

@@ -1,0 +1,15 @@
+{
+  "hashes": {
+    "docs/NATIVE_HEISENBERG_NODAL_RECORD_PERSISTENCE_BOUNDED_THEOREM_NOTE_2026-10-18.md": "f96d5918028590db417d2f02cb7bbf8861206dfc64c97e772cf6792efddf66d2",
+    "scripts/native_heisenberg_nodal_controls.py": "7b1044e09141974b4f46bf65b2354464b04f8442bde32a5dfd3b4b7311c3b7cf",
+    "scripts/native_heisenberg_nodal_record_persistence_2026_10_18.py": "e1a6e239eb210b5a4b701f9dfe2d8681e330dbeeaa01fcd914097cdbf999fed1",
+    "outputs/native_heisenberg_nodal_record_persistence_2026_10_18.json": "2706d0e169e6fac42707f69b0d55b0852befb10f1c2fbf22f94c0bd1cdcc3daa",
+    "logs/runner-cache/native_heisenberg_nodal_record_persistence_2026_10_18.txt": "3eb443a07cb2cec12f2444f6fe06f7b2f6520f1c2700222fcbdb8308011c006a"
+  },
+  "evidence_inputs_match": {
+    "scripts/native_heisenberg_nodal_controls.py": true,
+    "docs/NATIVE_HEISENBERG_NODAL_RECORD_PERSISTENCE_BOUNDED_THEOREM_NOTE_2026-10-18.md": true
+  },
+  "broken_markdown_links": [],
+  "review_history_exists": true
+}

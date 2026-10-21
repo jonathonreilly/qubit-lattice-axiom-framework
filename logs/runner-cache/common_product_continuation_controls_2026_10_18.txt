@@ -1,0 +1,307 @@
+===== runner cache v1 =====
+runner: scripts/common_product_continuation_controls_2026_10_18.py
+runner_sha256: 2cd02a22e798a85da32c8bfec5dcc5fbb11d49493fa4f995f6f01ca34a7fe2cc
+input_fingerprint_sha256: 0bc796bb9a8ed63b94581fef99eab146d15fa7df53bfa2b60db3e4cea2a22813
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.09
+status: ok
+----- stdout -----
+{"name": "full occupation one-control identity P0", "passed": true, "value": 0.0}
+{"name": "vacuum scalar eight-b P0", "passed": true, "value": 0.0}
+{"name": "double-occupation deletion mutant P0", "passed": true, "value": null}
+{"name": "full occupation one-control identity P1", "passed": true, "value": 0.0}
+{"name": "vacuum scalar eight-b P1", "passed": true, "value": 0.0}
+{"name": "double-occupation deletion mutant P1", "passed": true, "value": null}
+{"name": "one-control shared program incident load", "passed": true, "value": 0.0}
+{"name": "positive rotated bond eigenvalues", "passed": true, "value": 5.085437850418549e-16}
+{"name": "exact local vacuum retained", "passed": true, "value": 0.0}
+{"name": "number-changing difference exact norm", "passed": true, "value": 2.7755575615628914e-17}
+{"name": "rectangular overlapping full-output bound", "passed": true, "value": null}
+{"name": "extra-head output actually nonzero", "passed": true, "value": null}
+{"name": "nonzero local-vacuum action outside-support mutant detected", "passed": true, "value": null}
+{"name": "fullspace Duhamel with leakage t0.2", "passed": true, "value": null}
+{"name": "fullspace Duhamel with leakage t1.3", "passed": true, "value": null}
+{"name": "degenerate A-D rotation would be ineffective", "passed": true, "value": null}
+{"name": "fullspace occupation lower bound", "passed": true, "value": null}
+{"name": "record bias truly noncommuting", "passed": true, "value": null}
+{"name": "fullspace energy certificate remainder positive", "passed": true, "value": null}
+{"name": "blank record unique ground before passive program", "passed": true, "value": 0.0}
+{"name": "record excitation realizes exact gap", "passed": true, "value": 2.7755575615628914e-16}
+{"name": "ordered-eigenvalue Gibbs ceiling beta2.0", "passed": true, "value": 0.7322789861427291}
+{"name": "ordered-eigenvalue Gibbs ceiling beta20.0", "passed": true, "value": 0.34978686170399365}
+{"name": "ordered-eigenvalue Gibbs ceiling beta100.0", "passed": true, "value": 0.043107254941084916}
+{"name": "coherent joint preparation square root q0.01", "passed": true, "value": 0.0}
+{"name": "incorrect two-q general bound rejected q0.01", "passed": true, "value": null}
+{"name": "joint block diagonal sharper cost q0.01", "passed": true, "value": 1.0408340855860843e-17}
+{"name": "coherent joint preparation square root q0.2", "passed": true, "value": 1.1102230246251565e-16}
+{"name": "incorrect two-q general bound rejected q0.2", "passed": true, "value": null}
+{"name": "joint block diagonal sharper cost q0.2", "passed": true, "value": 5.551115123125783e-17}
+{"name": "complete loader error accounting eps1.0", "passed": true, "value": 0.0}
+{"name": "biased new-family final and branch budgets eps1.0", "passed": true, "value": null}
+{"name": "mixed probability loss remains linear eps1.0", "passed": true, "value": null}
+{"name": "complete loader error accounting eps0.3", "passed": true, "value": 0.0}
+{"name": "biased new-family final and branch budgets eps0.3", "passed": true, "value": null}
+{"name": "mixed probability loss remains linear eps0.3", "passed": true, "value": null}
+{"name": "complete loader error accounting eps0.01", "passed": true, "value": 0.0}
+{"name": "biased new-family final and branch budgets eps0.01", "passed": true, "value": null}
+{"name": "mixed probability loss remains linear eps0.01", "passed": true, "value": null}
+{"name": "biased full48 flux unitarity r0.0/off-0.001", "passed": true, "value": 1.7590228655530311e-15}
+{"name": "biased actual inverse bound r0.0/off-0.001", "passed": true, "value": null}
+{"name": "biased threshold energy r0.0/off-0.001", "passed": true, "value": null}
+{"name": "non-strict corrected endpoint r0.0/off-0.001", "passed": true, "value": null}
+{"name": "local resolvent scattering difference r0.0/off-0.001", "passed": true, "value": null}
+{"name": "local full record comparator r0.0/off-0.001", "passed": true, "value": null}
+{"name": "physical outgoing Jacobian r0.0/off-0.001", "passed": true, "value": 0.0}
+{"name": "biased full48 flux unitarity r0.0/off0.0", "passed": true, "value": 3.8459354429649957e-16}
+{"name": "biased actual inverse bound r0.0/off0.0", "passed": true, "value": null}
+{"name": "biased threshold energy r0.0/off0.0", "passed": true, "value": null}
+{"name": "non-strict corrected endpoint r0.0/off0.0", "passed": true, "value": null}
+{"name": "local resolvent scattering difference r0.0/off0.0", "passed": true, "value": null}
+{"name": "local full record comparator r0.0/off0.0", "passed": true, "value": null}
+{"name": "physical outgoing Jacobian r0.0/off0.0", "passed": true, "value": 0.0}
+{"name": "biased full48 flux unitarity r0.0/off0.001", "passed": true, "value": 7.790285744093137e-16}
+{"name": "biased actual inverse bound r0.0/off0.001", "passed": true, "value": null}
+{"name": "biased threshold energy r0.0/off0.001", "passed": true, "value": null}
+{"name": "non-strict corrected endpoint r0.0/off0.001", "passed": true, "value": null}
+{"name": "local resolvent scattering difference r0.0/off0.001", "passed": true, "value": null}
+{"name": "local full record comparator r0.0/off0.001", "passed": true, "value": null}
+{"name": "physical outgoing Jacobian r0.0/off0.001", "passed": true, "value": 0.0}
+{"name": "biased full48 flux unitarity r0.0003/off-0.001", "passed": true, "value": 5.854589989767135e-16}
+{"name": "biased actual inverse bound r0.0003/off-0.001", "passed": true, "value": null}
+{"name": "biased threshold energy r0.0003/off-0.001", "passed": true, "value": null}
+{"name": "non-strict corrected endpoint r0.0003/off-0.001", "passed": true, "value": null}
+{"name": "local resolvent scattering difference r0.0003/off-0.001", "passed": true, "value": null}
+{"name": "local full record comparator r0.0003/off-0.001", "passed": true, "value": null}
+{"name": "physical outgoing Jacobian r0.0003/off-0.001", "passed": true, "value": 0.0}
+{"name": "biased full48 flux unitarity r0.0003/off0.0", "passed": true, "value": 1.1075152014277968e-15}
+{"name": "biased actual inverse bound r0.0003/off0.0", "passed": true, "value": null}
+{"name": "biased threshold energy r0.0003/off0.0", "passed": true, "value": null}
+{"name": "non-strict corrected endpoint r0.0003/off0.0", "passed": true, "value": null}
+{"name": "local resolvent scattering difference r0.0003/off0.0", "passed": true, "value": null}
+{"name": "local full record comparator r0.0003/off0.0", "passed": true, "value": null}
+{"name": "physical outgoing Jacobian r0.0003/off0.0", "passed": true, "value": 0.0}
+{"name": "biased full48 flux unitarity r0.0003/off0.001", "passed": true, "value": 7.412300674793929e-16}
+{"name": "biased actual inverse bound r0.0003/off0.001", "passed": true, "value": null}
+{"name": "biased threshold energy r0.0003/off0.001", "passed": true, "value": null}
+{"name": "non-strict corrected endpoint r0.0003/off0.001", "passed": true, "value": null}
+{"name": "local resolvent scattering difference r0.0003/off0.001", "passed": true, "value": null}
+{"name": "local full record comparator r0.0003/off0.001", "passed": true, "value": null}
+{"name": "physical outgoing Jacobian r0.0003/off0.001", "passed": true, "value": 0.0}
+{"name": "biased full48 flux unitarity r0.001/off-0.001", "passed": true, "value": 4.207081357724314e-16}
+{"name": "biased actual inverse bound r0.001/off-0.001", "passed": true, "value": null}
+{"name": "biased threshold energy r0.001/off-0.001", "passed": true, "value": null}
+{"name": "non-strict corrected endpoint r0.001/off-0.001", "passed": true, "value": null}
+{"name": "local resolvent scattering difference r0.001/off-0.001", "passed": true, "value": null}
+{"name": "local full record comparator r0.001/off-0.001", "passed": true, "value": null}
+{"name": "physical outgoing Jacobian r0.001/off-0.001", "passed": true, "value": 1.1102230246251565e-16}
+{"name": "biased full48 flux unitarity r0.001/off0.0", "passed": true, "value": 6.014511429050828e-16}
+{"name": "biased actual inverse bound r0.001/off0.0", "passed": true, "value": null}
+{"name": "biased threshold energy r0.001/off0.0", "passed": true, "value": null}
+{"name": "non-strict corrected endpoint r0.001/off0.0", "passed": true, "value": null}
+{"name": "local resolvent scattering difference r0.001/off0.0", "passed": true, "value": null}
+{"name": "local full record comparator r0.001/off0.0", "passed": true, "value": null}
+{"name": "physical outgoing Jacobian r0.001/off0.0", "passed": true, "value": 0.0}
+{"name": "biased full48 flux unitarity r0.001/off0.001", "passed": true, "value": 1.0170566487254288e-15}
+{"name": "biased actual inverse bound r0.001/off0.001", "passed": true, "value": null}
+{"name": "biased threshold energy r0.001/off0.001", "passed": true, "value": null}
+{"name": "non-strict corrected endpoint r0.001/off0.001", "passed": true, "value": null}
+{"name": "local resolvent scattering difference r0.001/off0.001", "passed": true, "value": null}
+{"name": "local full record comparator r0.001/off0.001", "passed": true, "value": null}
+{"name": "physical outgoing Jacobian r0.001/off0.001", "passed": true, "value": 0.0}
+{"name": "noncommuting forward reverse phase mutant", "passed": true, "value": null}
+{"name": "R0 forward phase retained", "passed": true, "value": 4.652318874793954e-15}
+{"name": "third inverse differentiated product identity", "passed": true, "value": 6.460746894279072e-13}
+{"name": "full244 shared-record Hermiticity P0", "passed": true, "value": 0.0}
+{"name": "full244 all-incidence flux P0/off-0.0004", "passed": true, "value": 3.4511441336519116e-15}
+{"name": "full244 ordered feedback ceiling P0/off-0.0004", "passed": true, "value": 0.008328309883295954}
+{"name": "full244 swapped-order mutant P0/off-0.0004", "passed": true, "value": null}
+{"name": "full244 actual multiple-return correction P0/off-0.0004", "passed": true, "value": null}
+{"name": "full244 all-incidence flux P0/off0.0004", "passed": true, "value": 3.336935237791748e-15}
+{"name": "full244 ordered feedback ceiling P0/off0.0004", "passed": true, "value": 0.009769413314557447}
+{"name": "full244 swapped-order mutant P0/off0.0004", "passed": true, "value": null}
+{"name": "full244 actual multiple-return correction P0/off0.0004", "passed": true, "value": null}
+{"name": "full244 shared-record Hermiticity P1", "passed": true, "value": 0.0}
+{"name": "full244 all-incidence flux P1/off-0.0004", "passed": true, "value": 2.763435657635586e-15}
+{"name": "full244 ordered feedback ceiling P1/off-0.0004", "passed": true, "value": 0.008328309883295635}
+{"name": "full244 swapped-order mutant P1/off-0.0004", "passed": true, "value": null}
+{"name": "full244 actual multiple-return correction P1/off-0.0004", "passed": true, "value": null}
+{"name": "full244 all-incidence flux P1/off0.0004", "passed": true, "value": 2.964461512828077e-15}
+{"name": "full244 ordered feedback ceiling P1/off0.0004", "passed": true, "value": 0.00976941331455721}
+{"name": "full244 swapped-order mutant P1/off0.0004", "passed": true, "value": null}
+{"name": "full244 actual multiple-return correction P1/off0.0004", "passed": true, "value": null}
+{"name": "all seven third integration coefficients", "passed": true, "value": null}
+{"name": "actual quintic C2 contacts", "passed": true, "value": null}
+{"name": "quintic integrable third derivative finite", "passed": true, "value": null}
+{"name": "physical upper-band mass rho0.08", "passed": true, "value": 3.9968028886505635e-15}
+{"name": "complex lower-pole amplitude rho0.08/k1.2", "passed": true, "value": 1.4304896245381992e-17}
+{"name": "complex lower-pole amplitude rho0.08/k1.5707963267948966", "passed": true, "value": 1.902343687111712e-13}
+{"name": "complex lower-pole amplitude rho0.08/k1.8", "passed": true, "value": 2.8609792490763984e-17}
+{"name": "normalized geometric Fourier sum rho0.08", "passed": true, "value": 5.995204332975845e-15}
+{"name": "full-circle rational mass-two mutant rho0.08", "passed": true, "value": null}
+{"name": "geometric common phase cannot be dropped rho0.08", "passed": true, "value": null}
+{"name": "physical upper-band mass rho0.2", "passed": true, "value": 0.0}
+{"name": "complex lower-pole amplitude rho0.2/k1.2", "passed": true, "value": 8.777083671441753e-17}
+{"name": "complex lower-pole amplitude rho0.2/k1.5707963267948966", "passed": true, "value": 1.1969802975084927e-14}
+{"name": "complex lower-pole amplitude rho0.2/k1.8", "passed": true, "value": 1.6711069443220838e-16}
+{"name": "normalized geometric Fourier sum rho0.2", "passed": true, "value": 6.661338147750939e-16}
+{"name": "full-circle rational mass-two mutant rho0.2", "passed": true, "value": null}
+{"name": "geometric common phase cannot be dropped rho0.2", "passed": true, "value": null}
+{"name": "physical upper-band mass rho0.45", "passed": true, "value": 0.0}
+{"name": "complex lower-pole amplitude rho0.45/k1.2", "passed": true, "value": 1.1123893155135927e-16}
+{"name": "complex lower-pole amplitude rho0.45/k1.5707963267948966", "passed": true, "value": 9.63723114032201e-16}
+{"name": "complex lower-pole amplitude rho0.45/k1.8", "passed": true, "value": 2.618455766672135e-16}
+{"name": "normalized geometric Fourier sum rho0.45", "passed": true, "value": 0.0}
+{"name": "full-circle rational mass-two mutant rho0.45", "passed": true, "value": null}
+{"name": "geometric common phase cannot be dropped rho0.45", "passed": true, "value": null}
+{"name": "energy denominator pole factorization", "passed": true, "value": null}
+{"name": "finite launch centered Taylor cap eps1.0", "passed": true, "value": null}
+{"name": "geometric center fits finite cap eps1.0", "passed": true, "value": null}
+{"name": "finite launch centered Taylor cap eps0.2", "passed": true, "value": null}
+{"name": "geometric center fits finite cap eps0.2", "passed": true, "value": null}
+{"name": "finite launch centered Taylor cap eps0.01", "passed": true, "value": null}
+{"name": "geometric center fits finite cap eps0.01", "passed": true, "value": null}
+{"name": "incoming residue phase rho0.001/offset0", "passed": true, "value": 2.220446049250313e-16}
+{"name": "incoming residue numerator rho0.001/offset0", "passed": true, "value": 2.7755575615628914e-17}
+{"name": "incoming canceled energy pole rho0.001/offset0/x-0.0004", "passed": true, "value": 2.7796518708854652e-11}
+{"name": "incoming canceled energy pole rho0.001/offset0/x0.0002", "passed": true, "value": 3.3287922433723064e-10}
+{"name": "incoming sign-conjugation mutant rho0.001/offset0", "passed": true, "value": null}
+{"name": "incoming nonzero residue retained rho0.001/offset0", "passed": true, "value": null}
+{"name": "incoming residue phase rho0.001/offset-1", "passed": true, "value": 0.0}
+{"name": "incoming residue numerator rho0.001/offset-1", "passed": true, "value": 0.0}
+{"name": "incoming canceled energy pole rho0.001/offset-1/x-0.0004", "passed": true, "value": 2.779651884770526e-11}
+{"name": "incoming canceled energy pole rho0.001/offset-1/x0.0002", "passed": true, "value": 3.3299291086374674e-10}
+{"name": "incoming sign-conjugation mutant rho0.001/offset-1", "passed": true, "value": null}
+{"name": "incoming nonzero residue retained rho0.001/offset-1", "passed": true, "value": null}
+{"name": "incoming residue phase rho0.001/offset-2", "passed": true, "value": 0.0}
+{"name": "incoming residue numerator rho0.001/offset-2", "passed": true, "value": 0.0}
+{"name": "incoming canceled energy pole rho0.001/offset-2/x-0.0004", "passed": true, "value": 2.7796518431486003e-11}
+{"name": "incoming canceled energy pole rho0.001/offset-2/x0.0002", "passed": true, "value": 3.327655367003654e-10}
+{"name": "incoming sign-conjugation mutant rho0.001/offset-2", "passed": true, "value": null}
+{"name": "incoming nonzero residue retained rho0.001/offset-2", "passed": true, "value": null}
+{"name": "incoming residue phase rho0.004/offset0", "passed": true, "value": 0.0}
+{"name": "incoming residue numerator rho0.004/offset0", "passed": true, "value": 0.0}
+{"name": "incoming canceled energy pole rho0.004/offset0/x-0.0004", "passed": true, "value": 2.7875499285504954e-11}
+{"name": "incoming canceled energy pole rho0.004/offset0/x0.0002", "passed": true, "value": 3.3245891666134215e-10}
+{"name": "incoming sign-conjugation mutant rho0.004/offset0", "passed": true, "value": null}
+{"name": "incoming nonzero residue retained rho0.004/offset0", "passed": true, "value": null}
+{"name": "incoming residue phase rho0.004/offset-1", "passed": true, "value": 0.0}
+{"name": "incoming residue numerator rho0.004/offset-1", "passed": true, "value": 2.7755575615628914e-17}
+{"name": "incoming canceled energy pole rho0.004/offset-1/x-0.0004", "passed": true, "value": 2.7875499285504954e-11}
+{"name": "incoming canceled energy pole rho0.004/offset-1/x0.0002", "passed": true, "value": 3.3257280784337287e-10}
+{"name": "incoming sign-conjugation mutant rho0.004/offset-1", "passed": true, "value": null}
+{"name": "incoming nonzero residue retained rho0.004/offset-1", "passed": true, "value": null}
+{"name": "incoming residue phase rho0.004/offset-2", "passed": true, "value": 1.1102230246251565e-16}
+{"name": "incoming residue numerator rho0.004/offset-2", "passed": true, "value": 2.7755575615628914e-17}
+{"name": "incoming canceled energy pole rho0.004/offset-2/x-0.0004", "passed": true, "value": 2.787553475882528e-11}
+{"name": "incoming canceled energy pole rho0.004/offset-2/x0.0002", "passed": true, "value": 3.3234587686034075e-10}
+{"name": "incoming sign-conjugation mutant rho0.004/offset-2", "passed": true, "value": null}
+{"name": "incoming nonzero residue retained rho0.004/offset-2", "passed": true, "value": null}
+{"name": "finite real network jets tau1.0", "passed": true, "value": [2.0, 9034.39560490501, 3874194.221181861, 2833348611.1396904, 84.52323403967169, 50969.67309365819, 20266969.893132232]}
+{"name": "exponential allowance logarithmic proof tau1.0", "passed": true, "value": -6360599289380.974}
+{"name": "twelve budget early contact tau1.0", "passed": true, "value": 1.2457795823909273e-39}
+{"name": "twelve budget occupied source survival tau1.0", "passed": true, "value": 1.0000000000000169e-14}
+{"name": "twelve budget conjugate incoming tau1.0", "passed": true, "value": 2.748433990577787e-48}
+{"name": "twelve budget omitted mass tau1.0", "passed": true, "value": 5.5161394244403026e-11}
+{"name": "twelve budget early projection tau1.0", "passed": true, "value": 1e-14}
+{"name": "twelve budget early leads tau1.0", "passed": true, "value": 2.748433990577787e-48}
+{"name": "twelve budget early internal tau1.0", "passed": true, "value": 3.174051288775578e-26}
+{"name": "twelve budget finite contacts tau1.0", "passed": true, "value": 1.0000000000002463e-14}
+{"name": "twelve budget late incoming tau1.0", "passed": true, "value": 1e-14}
+{"name": "twelve budget full scattering tau1.0", "passed": true, "value": 0.00390625}
+{"name": "twelve budget late internal tau1.0", "passed": true, "value": 5.924895739047746e-25}
+{"name": "twelve budget output truncation tau1.0", "passed": true, "value": 1e-14}
+{"name": "complete first-eight and twelve sums tau1.0", "passed": true, "value": [5.5191394244403064e-11, 0.0039062500552113945]}
+{"name": "actual stationary allocation tau1.0", "passed": true, "value": null}
+{"name": "whole-horizon same-target budget tau1.0", "passed": true, "value": null}
+{"name": "cutoff normalization and source compatibility tau1.0", "passed": true, "value": null}
+{"name": "full-support actual incident cap tau1.0", "passed": true, "value": [7.505000000000001e-10, 0.12500000025, 0.499999999, 1.0000001250000003e-12, 3.7500000000000007e-13, 6.250000000000001e-13]}
+{"name": "preparation full-support cap tau1.0", "passed": true, "value": null}
+{"name": "finite count arithmetic tau1.0", "passed": true, "value": null}
+{"name": "finite interval geometry tau1.0", "passed": true, "value": null}
+{"name": "final window relative width tau1.0", "passed": true, "value": 0.0}
+{"name": "earlier G2 family paid separately tau1.0", "passed": true, "value": null}
+{"name": "finite real network jets tau0.5", "passed": true, "value": [2.0, 9034.19777722548, 3873838.0875295517, 2832970062.484644, 84.5130067944558, 50962.285621472365, 20262630.57802266]}
+{"name": "exponential allowance logarithmic proof tau0.5", "passed": true, "value": -6577178230983.455}
+{"name": "twelve budget early contact tau0.5", "passed": true, "value": 2.1307377281644433e-40}
+{"name": "twelve budget occupied source survival tau0.5", "passed": true, "value": 5.000000000000021e-15}
+{"name": "twelve budget conjugate incoming tau0.5", "passed": true, "value": 1.6350594841466173e-49}
+{"name": "twelve budget omitted mass tau0.5", "passed": true, "value": 2.7587218482076685e-11}
+{"name": "twelve budget early projection tau0.5", "passed": true, "value": 5e-15}
+{"name": "twelve budget early leads tau0.5", "passed": true, "value": 1.6350594841466173e-49}
+{"name": "twelve budget early internal tau0.5", "passed": true, "value": 1.0853692046800283e-26}
+{"name": "twelve budget finite contacts tau0.5", "passed": true, "value": 5.000000000000421e-15}
+{"name": "twelve budget late incoming tau0.5", "passed": true, "value": 5e-15}
+{"name": "twelve budget full scattering tau0.5", "passed": true, "value": 0.001953125}
+{"name": "twelve budget late internal tau0.5", "passed": true, "value": 2.0260225154027196e-25}
+{"name": "twelve budget output truncation tau0.5", "passed": true, "value": 5e-15}
+{"name": "complete first-eight and twelve sums tau0.5", "passed": true, "value": [2.7602218482076697e-11, 0.0019531250276122185]}
+{"name": "actual stationary allocation tau0.5", "passed": true, "value": null}
+{"name": "whole-horizon same-target budget tau0.5", "passed": true, "value": null}
+{"name": "cutoff normalization and source compatibility tau0.5", "passed": true, "value": null}
+{"name": "full-support actual incident cap tau0.5", "passed": true, "value": [2.652900429449553e-10, 0.12500000008838835, 0.4999999996464466, 2.50000015625e-13, 9.375e-14, 1.5625e-13]}
+{"name": "preparation full-support cap tau0.5", "passed": true, "value": null}
+{"name": "finite count arithmetic tau0.5", "passed": true, "value": null}
+{"name": "finite interval geometry tau0.5", "passed": true, "value": null}
+{"name": "final window relative width tau0.5", "passed": true, "value": 0.0}
+{"name": "earlier G2 family paid separately tau0.5", "passed": true, "value": null}
+{"name": "finite real network jets tau0.125", "passed": true, "value": [2.0, 9034.049439576556, 3873571.0175590073, 2832686198.356146, 84.50319513082634, 50954.37628541362, 20258519.637295444]}
+{"name": "exponential allowance logarithmic proof tau0.125", "passed": true, "value": -7010366864077.479}
+{"name": "twelve budget early contact tau0.125", "passed": true, "value": 6.249940909802357e-42}
+{"name": "twelve budget occupied source survival tau0.125", "passed": true, "value": 1.2500000000000004e-15}
+{"name": "twelve budget conjugate incoming tau0.125", "passed": true, "value": 5.809160369552619e-52}
+{"name": "twelve budget omitted mass tau0.125", "passed": true, "value": 6.898369255551504e-12}
+{"name": "twelve budget early projection tau0.125", "passed": true, "value": 1.25e-15}
+{"name": "twelve budget early leads tau0.125", "passed": true, "value": 5.809160369552619e-52}
+{"name": "twelve budget early internal tau0.125", "passed": true, "value": 1.27301776544288e-27}
+{"name": "twelve budget finite contacts tau0.125", "passed": true, "value": 1.2500000000000124e-15}
+{"name": "twelve budget late incoming tau0.125", "passed": true, "value": 1.25e-15}
+{"name": "twelve budget full scattering tau0.125", "passed": true, "value": 0.00048828125}
+{"name": "twelve budget late internal tau0.125", "passed": true, "value": 2.3762998288267092e-26}
+{"name": "twelve budget output truncation tau0.125", "passed": true, "value": 1.25e-15}
+{"name": "complete first-eight and twelve sums tau0.125", "passed": true, "value": [6.902119255551506e-12, 0.0004882812569046192]}
+{"name": "actual stationary allocation tau0.125", "passed": true, "value": null}
+{"name": "whole-horizon same-target budget tau0.125", "passed": true, "value": null}
+{"name": "cutoff normalization and source compatibility tau0.125", "passed": true, "value": null}
+{"name": "full-support actual incident cap tau0.125", "passed": true, "value": [3.3153442868119416e-11, 0.12500000001104855, 0.49999999995580585, 1.5625000244140623e-14, 5.859375e-15, 9.765625e-15]}
+{"name": "preparation full-support cap tau0.125", "passed": true, "value": null}
+{"name": "finite count arithmetic tau0.125", "passed": true, "value": null}
+{"name": "finite interval geometry tau0.125", "passed": true, "value": null}
+{"name": "final window relative width tau0.125", "passed": true, "value": 0.0}
+{"name": "earlier G2 family paid separately tau0.125", "passed": true, "value": null}
+{"name": "finite real network jets tau0.01", "passed": true, "value": [2.0, 9034.003955050091, 3873489.121298663, 2832599154.8225365, 84.49786438003773, 50949.38263182813, 20256330.110908788]}
+{"name": "exponential allowance logarithmic proof tau0.01", "passed": true, "value": -7799641658720.184}
+{"name": "twelve budget early contact tau0.01", "passed": true, "value": 1.0171243025264462e-44}
+{"name": "twelve budget occupied source survival tau0.01", "passed": true, "value": 1e-16}
+{"name": "twelve budget conjugate incoming tau0.01", "passed": true, "value": 2.0285216458765072e-56}
+{"name": "twelve budget omitted mass tau0.01", "passed": true, "value": 5.519375645430066e-13}
+{"name": "twelve budget early projection tau0.01", "passed": true, "value": 1e-16}
+{"name": "twelve budget early leads tau0.01", "passed": true, "value": 2.0285216458765072e-56}
+{"name": "twelve budget early internal tau0.01", "passed": true, "value": 2.5891765877552166e-29}
+{"name": "twelve budget finite contacts tau0.01", "passed": true, "value": 1.0000000000000002e-16}
+{"name": "twelve budget late incoming tau0.01", "passed": true, "value": 1e-16}
+{"name": "twelve budget full scattering tau0.01", "passed": true, "value": 3.90625e-05}
+{"name": "twelve budget late internal tau0.01", "passed": true, "value": 4.833129630476404e-28}
+{"name": "twelve budget output truncation tau0.01", "passed": true, "value": 1e-16}
+{"name": "complete first-eight and twelve sums tau0.01", "passed": true, "value": [5.522375645430065e-13, 3.9062500552437566e-05]}
+{"name": "actual stationary allocation tau0.01", "passed": true, "value": null}
+{"name": "whole-horizon same-target budget tau0.01", "passed": true, "value": null}
+{"name": "cutoff normalization and source compatibility tau0.01", "passed": true, "value": null}
+{"name": "full-support actual incident cap tau0.01", "passed": true, "value": [7.5005e-13, 0.12500000000025, 0.499999999999, 1.0000000012499999e-16, 3.749999999999999e-17, 6.249999999999999e-17]}
+{"name": "preparation full-support cap tau0.01", "passed": true, "value": null}
+{"name": "finite count arithmetic tau0.01", "passed": true, "value": null}
+{"name": "finite interval geometry tau0.01", "passed": true, "value": null}
+{"name": "final window relative width tau0.01", "passed": true, "value": 0.0}
+{"name": "earlier G2 family paid separately tau0.01", "passed": true, "value": null}
+{"name": "sufficient resonant exponents only", "passed": true, "value": null}
+{"name": "earlier chosen sufficient exponents only", "passed": true, "value": null}
+per_element: full local occupation matrices retain vacuum, double occupancy and nonconserving admissible outputs
+per_site: full finite small apparatus controls and exact count formulas retain all stated head and fiber roles
+per_mode: both open record channels retain flux Jacobians, complex source phases and finite inverse margins
+per_block: full-support positive blocks, incident loads and complete loader assumptions are explicitly accounted
+lattice_wide: only supplied finite programs and analytical sufficient families; no native universal lattice or cooling claim
+TOTAL: PASS=288 FAIL=0
+{"passed": true, "checks": 288, "seconds": 0.21253429213538766, "scope": "bounded corroboration of retained analytical proofs; no enormous apparatus simulation or audit verdict"}
+
+----- stderr -----
+

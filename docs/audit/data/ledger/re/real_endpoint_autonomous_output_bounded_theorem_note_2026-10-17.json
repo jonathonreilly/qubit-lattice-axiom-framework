@@ -26,13 +26,13 @@
     "two_body_autonomous_halt_bounded_theorem_note_2026-10-17",
     "emitter_coupling_family_bounded_theorem_note_2026-10-17"
   ],
-  "direct_in_degree": 6,
+  "direct_in_degree": 8,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.907,
+  "load_bearing_score": 8.807,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/real_endpoint_autonomous_output_2026_10_17.py",
   "title": "Real autonomous endpoint emission with a common complete-output operation",
-  "transitive_descendants": 14,
+  "transitive_descendants": 27,
   "verdict_rationale": null
 }

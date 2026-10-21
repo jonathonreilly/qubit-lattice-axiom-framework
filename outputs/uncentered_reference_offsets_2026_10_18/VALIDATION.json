@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "manifest_sha256": "c038ecc5766ee32aa910810d11cc668f34fe4484a443ce60826a98ddee584704",
+  "files": 2,
+  "provenance": 3,
+  "links": 7,
+  "nodes": 7272,
+  "edges": 16266,
+  "new_nodes": {
+    "uncentered_reference_offsets_bounded_theorem_note_2026-10-18": {
+      "path": "docs/UNCENTERED_REFERENCE_OFFSETS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "deps": [
+        "active_reference_tolerance_bounded_theorem_note_2026-10-18"
+      ]
+    }
+  },
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical source identity, provenance, links and topology only; no scientific execution or retained audit. New note dependencies require ROOT inspection."
+}

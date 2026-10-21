@@ -1,0 +1,104 @@
+===== runner cache v1 =====
+runner: scripts/native_whole_column_modes.py
+runner_sha256: bc7f4050d2b726674f3a4b710040fda3f30a2123e1fb8cfaf5e0ba8e86d40361
+input_fingerprint_sha256: 537b5d1ffc6a20a8be1e04aa211aabf82dff28f165f23361ce3b9bcd95a92805
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.95
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_whole_column_modes-8v3j14j7
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_whole_column_modes-8v3j14j7/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_winding_control.py']
+{
+  "exact_subset_controls": [
+    {
+      "L": 4,
+      "subsets_checked": 14,
+      "sum": "20",
+      "coefficient": "5/128"
+    },
+    {
+      "L": 6,
+      "subsets_checked": 62,
+      "sum": "252",
+      "coefficient": "63/8192"
+    },
+    {
+      "L": 8,
+      "subsets_checked": 254,
+      "sum": "3432",
+      "coefficient": "429/262144"
+    },
+    {
+      "L": 10,
+      "subsets_checked": 1022,
+      "sum": "48620",
+      "coefficient": "12155/33554432"
+    },
+    {
+      "L": 12,
+      "subsets_checked": 4094,
+      "sum": "705432",
+      "coefficient": "88179/1073741824"
+    },
+    {
+      "L": 14,
+      "subsets_checked": 16382,
+      "sum": "10400600",
+      "coefficient": "1300075/68719476736"
+    },
+    {
+      "L": 16,
+      "subsets_checked": 65534,
+      "sum": "155117520",
+      "coefficient": "9694845/2199023255552"
+    }
+  ],
+  "fixed_L_monomial_ED": [
+    {
+      "L": 4,
+      "lambda": 0.2,
+      "splitting_over_2gamma": 0.996493413353505
+    },
+    {
+      "L": 4,
+      "lambda": 0.1,
+      "splitting_over_2gamma": 0.99912458927065
+    },
+    {
+      "L": 4,
+      "lambda": 0.05,
+      "splitting_over_2gamma": 0.9997812230722045
+    },
+    {
+      "L": 6,
+      "lambda": 0.3,
+      "splitting_over_2gamma": 0.9911199326979072
+    },
+    {
+      "L": 6,
+      "lambda": 0.2,
+      "splitting_over_2gamma": 0.9960634138729393
+    },
+    {
+      "L": 6,
+      "lambda": 0.15,
+      "splitting_over_2gamma": 0.9977876500710178
+    }
+  ]
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_whole_column_modes-8v3j14j7/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_winding_control.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_whole_column_modes-8v3j14j7/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_winding_control.py']
+{"status": "bounded-support", "checks": {"exact_subset_controls": [{"L": 4, "subsets_checked": 14, "sum": "20", "coefficient": "5/128"}, {"L": 6, "subsets_checked": 62, "sum": "252", "coefficient": "63/8192"}, {"L": 8, "subsets_checked": 254, "sum": "3432", "coefficient": "429/262144"}, {"L": 10, "subsets_checked": 1022, "sum": "48620", "coefficient": "12155/33554432"}, {"L": 12, "subsets_checked": 4094, "sum": "705432", "coefficient": "88179/1073741824"}, {"L": 14, "subsets_checked": 16382, "sum": "10400600", "coefficient": "1300075/68719476736"}, {"L": 16, "subsets_checked": 65534, "sum": "155117520", "coefficient": "9694845/2199023255552"}], "fixed_L_monomial_ED": [{"L": 4, "lambda": 0.2, "splitting_over_2gamma": 0.996493413353505}, {"L": 4, "lambda": 0.1, "splitting_over_2gamma": 0.99912458927065}, {"L": 4, "lambda": 0.05, "splitting_over_2gamma": 0.9997812230722045}, {"L": 6, "lambda": 0.3, "splitting_over_2gamma": 0.9911199326979072}, {"L": 6, "lambda": 0.2, "splitting_over_2gamma": 0.9960634138729393}, {"L": 6, "lambda": 0.15, "splitting_over_2gamma": 0.9977876500710178}]}, "scope": "Exact finite-size coefficient checks; microscopic asymptotic bounds supplied by linked analytic proof, not full-H numerics or empirical data"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_whole_column_modes-8v3j14j7/outputs/native_whole_column_modes/result.json sha256=845ce39b64c8ed9e5783647b1637c0b4bb3b7cbb0d22b00969bf84772bedb156
+{"checks": {"exact_subset_controls": [{"L": 4, "coefficient": "5/128", "subsets_checked": 14, "sum": "20"}, {"L": 6, "coefficient": "63/8192", "subsets_checked": 62, "sum": "252"}, {"L": 8, "coefficient": "429/262144", "subsets_checked": 254, "sum": "3432"}, {"L": 10, "coefficient": "12155/33554432", "subsets_checked": 1022, "sum": "48620"}, {"L": 12, "coefficient": "88179/1073741824", "subsets_checked": 4094, "sum": "705432"}, {"L": 14, "coefficient": "1300075/68719476736", "subsets_checked": 16382, "sum": "10400600"}, {"L": 16, "coefficient": "9694845/2199023255552", "subsets_checked": 65534, "sum": "155117520"}], "fixed_L_monomial_ED": [{"L": 4, "lambda": 0.2, "splitting_over_2gamma": 0.996493413353505}, {"L": 4, "lambda": 0.1, "splitting_over_2gamma": 0.99912458927065}, {"L": 4, "lambda": 0.05, "splitting_over_2gamma": 0.9997812230722045}, {"L": 6, "lambda": 0.3, "splitting_over_2gamma": 0.9911199326979072}, {"L": 6, "lambda": 0.2, "splitting_over_2gamma": 0.9960634138729393}, {"L": 6, "lambda": 0.15, "splitting_over_2gamma": 0.9977876500710178}]}, "scope": "Exact finite-size coefficient checks; microscopic asymptotic bounds supplied by linked analytic proof, not full-H numerics or empirical data", "status": "bounded-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_whole_column_modes-8v3j14j7 elapsed_seconds= 0.8743377923965454
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

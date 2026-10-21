@@ -1,0 +1,1690 @@
+===== runner cache v1 =====
+runner: scripts/native_infrared_readout.py
+runner_sha256: b4e48bd74dd4ad6db13ffaf5d0961958a77b73453e3b7b528842926e2da1c12e
+input_fingerprint_sha256: 5b90c6d9d2b30a7a018e8b7e52cd6497934c95fa7f17978bc0abdef1e150417c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.67
+status: ok
+----- stdout -----
+BEGIN_PROBE neutral_rung_discrete_symmetry
+{'projective_Px_Py': 'anticommute exactly, square to identity, preserve full rung h and global interrung bonds', 'D_signed_permutation': 'Matrix([[0, 0, -1, 0], [-1, 0, 0, 0], [0, 0, 0, 1], [0, 1, 0, 0]])', 'low_T': 'Matrix([[sqrt(2)/2, -1/2], [1, sqrt(2)/2]])', 'low_adjoint_action': ['tau1 -> -tau2', 'tau2 -> tau1', 'tau3 -> tau3'], 'charge_selection': 'Delta Q0 multiple8, equivalently four collective flips; exact global discrete symmetry', 'scope': 'Finite positive-parity tube; no continuous microscopic symmetry or bulk criticality assertion'}
+END_PROBE neutral_rung_discrete_symmetry completed
+reproduced neutral_rung_discrete_symmetry
+BEGIN_PROBE neutral_xy_readout
+8 70 seconds 0.003744749817997217 [(1, 'collective_density', 0.5, 1.5307337294603593), (1, 'native_composite_O2', 0.2460937499999997, 4.479644451004719), (2, 'collective_density', 0.9999999999999998, 2.6131259297527527), (2, 'native_composite_O2', 0.5618249751835716, 3.07562071014926)]
+12 924 seconds 0.007764833979308605 [(1, 'collective_density', 0.3333333333333333, 1.035276180410076), (1, 'native_composite_O2', 0.2822716272015961, 4.183576508612685), (2, 'collective_density', 0.6666666666666665, 1.9318516525781295), (2, 'native_composite_O2', 0.4037279706799068, 3.17634015729795)]
+16 12870 seconds 0.08035079203546047 [(1, 'collective_density', 0.2500000000000004, 0.780361288064513), (1, 'native_composite_O2', 0.29401943065071634, 4.095014284071281), (2, 'collective_density', 0.49999999999999967, 1.50132111007146), (2, 'native_composite_O2', 0.3400176714268087, 3.465855132676255)]
+20 184756 seconds 1.6780326250009239 [(1, 'collective_density', 0.200000000000003, 0.625737860160934), (1, 'native_composite_O2', 0.2993124102994774, 4.0563028494127495), (2, 'collective_density', 0.3999999999999994, 1.2208499295595663), (2, 'native_composite_O2', 0.31698483656876536, 3.678109175559953)]
+END_PROBE neutral_xy_readout completed
+reproduced neutral_xy_readout
+BEGIN_PROBE neutral_open_xy_comparison
+[{'L': 4, 'lambda_z': 1.0, 'leading_gaps_over_t': [0.0, 2.23606797749979, 2.23606797749979, 4.47213595499958], 'fourth_gaps_over_t': [0.0, 1.984137417967763, 3.008121950510612, 4.819290303392677], 'O2_mode_weights': [1.9941803546246735e-31, 0.0, 0.08236703946480207, 0.0023430402157760097], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 4, 'lambda_z': 0.7, 'leading_gaps_over_t': [0.0, 2.23606797749979, 2.23606797749979, 4.47213595499958], 'fourth_gaps_over_t': [0.0, 2.0792542822871085, 2.5699003020541924, 4.586612544807132], 'O2_mode_weights': [1.2571560776279542e-30, 0.0, 0.2842945310270959, 0.05313836017343809], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 4, 'lambda_z': 0.5, 'leading_gaps_over_t': [0.0, 2.23606797749979, 2.23606797749979, 4.47213595499958], 'fourth_gaps_over_t': [0.0, 2.147232858989515, 2.394464482080807, 4.515984094887738], 'O2_mode_weights': [4.2756357402531367e-32, 0.0, 0.4308814390626165, 0.10516896999883445], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 4, 'lambda_z': 0.35, 'leading_gaps_over_t': [0.0, 2.23606797749979, 2.23606797749979, 4.47213595499958], 'fourth_gaps_over_t': [0.0, 2.190145812192555, 2.310433626452912, 4.489691310124754], 'O2_mode_weights': [2.2885963328214762e-30, 0.0, 0.5218776816311784, 0.1407589156226838], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 4, 'lambda_z': 0.2, 'leading_gaps_over_t': [0.0, 2.23606797749979, 2.23606797749979, 4.47213595499958], 'fourth_gaps_over_t': [0.0, 2.2205569735117234, 2.259648552689684, 4.477022367845487], 'O2_mode_weights': [3.482960695597359e-30, 0.0, 0.5851072832226248, 0.16665933512121256], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 4, 'lambda_z': 0.1, 'leading_gaps_over_t': [0.0, 2.23606797749979, 2.23606797749979, 4.47213595499958], 'fourth_gaps_over_t': [0.0, 2.2321428428875776, 2.2418985864070375, 4.4732799422556955], 'O2_mode_weights': [5.452058289386549e-32, 0.0, 0.6088651547847563, 0.17661797574964846], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 6, 'lambda_z': 1.0, 'leading_gaps_over_t': [0.0, 1.6920214716300932, 1.6920214716300939, 2.2469796037174645], 'fourth_gaps_over_t': [0.0, 1.4334340040344054, 2.2329162758311196, 2.5541848107893985], 'O2_mode_weights': [7.98857074629614e-30, 5.0668177740043436e-33, 0.017065287683054306, 1.4531030632106652e-33], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 6, 'lambda_z': 0.7, 'leading_gaps_over_t': [0.0, 1.6920214716300932, 1.6920214716300939, 2.2469796037174645], 'fourth_gaps_over_t': [0.0, 1.5200345057573994, 1.9351239574103722, 2.3601103755758555], 'O2_mode_weights': [1.2530499587049152e-30, 3.0444372683006036e-33, 0.08133156784383379, 3.019163537075454e-32], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 6, 'lambda_z': 0.5, 'leading_gaps_over_t': [0.0, 1.6920214716300932, 1.6920214716300939, 2.2469796037174645], 'fourth_gaps_over_t': [0.0, 1.5914014407309827, 1.8100435969933157, 2.2937936310891907], 'O2_mode_weights': [6.951696805214779e-30, 8.737368028848958e-33, 0.13919981342222754, 7.004620968734331e-33], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 6, 'lambda_z': 0.35, 'leading_gaps_over_t': [0.0, 1.6920214716300932, 1.6920214716300939, 2.2469796037174645], 'fourth_gaps_over_t': [0.0, 1.639105672058001, 1.7482468424398179, 2.266827871706285], 'O2_mode_weights': [1.878830651411919e-30, 5.194744931203419e-32, 0.17909727743783416, 2.8116631108563507e-33], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 6, 'lambda_z': 0.2, 'leading_gaps_over_t': [0.0, 1.6920214716300932, 1.6920214716300939, 2.2469796037174645], 'fourth_gaps_over_t': [0.0, 1.6739489087239505, 1.7100405384075603, 2.252777934329783], 'O2_mode_weights': [6.791063000831301e-31, 8.548541661302334e-31, 0.20860287790650628, 2.415912658597989e-33], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 6, 'lambda_z': 0.1, 'leading_gaps_over_t': [0.0, 1.6920214716300932, 1.6920214716300939, 2.2469796037174645], 'fourth_gaps_over_t': [0.0, 1.6874296959181505, 1.6964953499125461, 2.248365703976544], 'O2_mode_weights': [1.9304310224327328e-30, 3.643445201508361e-29, 0.2200787597937317, 3.372533215020788e-32], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 8, 'lambda_z': 1.0, 'leading_gaps_over_t': [0.0, 1.347296355333853, 1.3472963553338646, 1.8793852415718155], 'fourth_gaps_over_t': [0.0, 1.1354137021858968, 1.7734261296787697, 2.0466035080894773], 'O2_mode_weights': [2.8659875964806236e-29, 1.0472945342171083e-34, 0.0046278327284490686, 2.2377538365604614e-33], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 8, 'lambda_z': 0.7, 'leading_gaps_over_t': [0.0, 1.347296355333853, 1.3472963553338646, 1.8793852415718155], 'fourth_gaps_over_t': [0.0, 1.1992936946109332, 1.5437389607766985, 1.9266734294168715], 'O2_mode_weights': [8.86439415144583e-30, 4.493550069458911e-35, 0.029021653918339815, 1.6065165558455129e-34], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 8, 'lambda_z': 0.5, 'leading_gaps_over_t': [0.0, 1.347296355333853, 1.3472963553338646, 1.8793852415718155], 'fourth_gaps_over_t': [0.0, 1.2587608467506342, 1.4443295058623047, 1.8928978398892484], 'O2_mode_weights': [8.43110913261213e-31, 1.9590363589784785e-34, 0.05363201103775572, 3.749038643283885e-32], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 8, 'lambda_z': 0.35, 'leading_gaps_over_t': [0.0, 1.347296355333853, 1.3472963553338646, 1.8793852415718155], 'fourth_gaps_over_t': [0.0, 1.300200905333913, 1.3940597622808717, 1.8829207278945432], 'O2_mode_weights': [1.9683501171151546e-31, 5.785786425613343e-34, 0.07130620444959987, 5.084228863737333e-32], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 8, 'lambda_z': 0.2, 'leading_gaps_over_t': [0.0, 1.347296355333853, 1.3472963553338646, 1.8793852415718155], 'fourth_gaps_over_t': [0.0, 1.3310959237423425, 1.362413609280845, 1.8798484564514562], 'O2_mode_weights': [2.622041061273756e-29, 5.137946176005096e-34, 0.0846095413617735, 8.39844216793656e-31], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}, {'L': 8, 'lambda_z': 0.1, 'leading_gaps_over_t': [0.0, 1.347296355333853, 1.3472963553338646, 1.8793852415718155], 'fourth_gaps_over_t': [0.0, 1.343169718467701, 1.351062640114998, 1.8794363159245835], 'O2_mode_weights': [9.014607063611358e-29, 4.340077046705158e-33, 0.08982467284070667, 7.438498342438615e-32], 'scope': 'Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1'}]
+END_PROBE neutral_open_xy_comparison completed
+reproduced neutral_open_xy_comparison
+BEGIN_PROBE neutral_anisotropy_comparison
+[
+  {
+    "L": 8,
+    "lambda_z": 0.35,
+    "max_gap_error_over_t": 0.01733223699547981,
+    "error_over_lambda4": 1.155001215858713,
+    "native_index2_weight_over_lambda4": 0.14006672183561938,
+    "derived_index2_O2_weight": 0.07130620444959987
+  },
+  {
+    "L": 8,
+    "lambda_z": 0.2,
+    "max_gap_error_over_t": 0.0016959768384599005,
+    "error_over_lambda4": 1.0599855240374376,
+    "native_index2_weight_over_lambda4": 0.1020298766880743,
+    "derived_index2_O2_weight": 0.0846095413617735
+  },
+  {
+    "L": 8,
+    "lambda_z": 0.1,
+    "max_gap_error_over_t": 0.0001028804400677874,
+    "error_over_lambda4": 1.0288044006778738,
+    "native_index2_weight_over_lambda4": 0.09386558612229237,
+    "derived_index2_O2_weight": 0.08982467284070667
+  }
+]
+END_PROBE neutral_anisotropy_comparison completed
+reproduced neutral_anisotropy_comparison
+RESULT_JSON {
+  "inputs": {
+    "archive/neutral_composite_continuation_review_2026_10_18/MANIFEST.json": "6b4779cb5b8414b5c915833c99a48d364cfb204125e6fa20e46675a597c11abb",
+    "docs/NATIVE_COLUMN_COLLECTIVE_MODE_NOTE_2026-10-18.md": "8851c4ec44c555eb7bf6da9f43fab2fd40947278f7c48b407b082c920b23c1db",
+    "docs/NATIVE_COLUMN_PLAQUETTE_SELECTION_NOTE_2026-10-18.md": "ee1e194b55505c5991dd7fe5466868491f5cedaa48b5637096265257b227493a",
+    "docs/NATIVE_DERIVED_COLLECTIVE_INTERACTION_NOTE_2026-10-18.md": "4ce6d968a21610a1cb17ad175c1329a4a4b222f811e584af7ad560554beaaf7e",
+    "docs/NATIVE_INFRARED_READOUT_NOTE_2026-10-18.md": "6c35a1d389419a7474b91425cceb4c4d27db07b8bb05d729b024fb127cc741ca",
+    "docs/NATIVE_LARGE_COLUMN_DYNAMICS_NOTE_2026-10-18.md": "3b9abe4bc6b63a53d3268dc8cfaf26103d8e69ec44dfea983487ed38bf5278b1",
+    "docs/NATIVE_LOCAL_NORMAL_FORM_NOTE_2026-10-18.md": "f7a21feeee63c90fd36024b292362c5a1b542689d2bb6a554433a59a7b1908ec",
+    "docs/NATIVE_NEUTRAL_DOMAIN_RESONANCE_NOTE_2026-10-18.md": "07c1d1cee2e5d9166ee5c5111cf4fd40281236de15ffca78a40647a6a2b285f3",
+    "docs/NATIVE_SCALAR_BAND_LOCAL_PROOF_NOTE_2026-10-18.md": "1f7fd979178a307cf94967e40a515f02e4fd770ccd70d4144459607ccbd1884a",
+    "docs/NATIVE_ZONE_BOUNDARY_COMPOSITE_NOTE_2026-10-18.md": "2b93dd1734f8ab3b6bc90c63594e108b41ab6fc810bcd7dc31067462956b50ee",
+    "docs/work_history/repo/review_feedback/NEUTRAL_CONTINUATION_BOUNDARIES_2026-10-18.md": "7f996bba4dd3089083bb6fb25167d3edc8cfd423c99287ad25d5b422e6c0e2b3",
+    "outputs/neutral_composite_continuation_review_2026_10_18/INPUT_CLOSURE.json": "759e83c41f9a2ac11ace61240389e14fde3abe79504cda33047665cc6ec8ae5b",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_boundary_vertex.py": "37452d09ab01bf6a8a76352c367351069ab6a95622393ef647cfe306328e0ee7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_effective.py": "f789866be82331c5d06b9115950c6a28006aa1cba1027359186e7a576df167a1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_fourth.py": "a3769e366bc7286ddeb2f178e6ca6824a10a91fc303cab77756c67fb83e16204",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_linked_fourth.py": "1b9de9a6d805b8c1c863df694f665f182147e579b5ac39d3db4ae49a098a232b",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_sixth.py": "b1ef959a9fa4e1280a418c15b9646dade2d0fd4d8a63e25a14ffc3e9b5ae5b8a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_sixth_exact.py": "c6731fddbcbbbcfe91d8c2a9e87786de99dae3d1f571a92c6ea28bc0944daba2",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_u1_probe.py": "edd50df2b5e01fe786434fe5477fd2089fa0b9265cdfec27bfe8b623d02812bd",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_tube_rung_control.py": "7cc12711321e26089016c3096bfc8294ec3090d02e98202f275a04161a739043",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_anisotropy_comparison.py": "f487c38663301cc8fb23f711e8e6a726f4d80377485662f2dcb8f738b48f79b9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_open_xy_comparison.py": "afae3959c5b4f0cf6c43659123c1a6936014fd2429ec39f63c39982bc186101c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_rung_discrete_symmetry.py": "134c049afcdb5a1f776663e7247bd7c693947fddfd8c8ab02ab28643a7bdc04e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_xy_readout.py": "3be0418e459ec56569621fad2730203333f0989aeb7d9bd71547a59bb633f366",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_exact_internal_factor.py": "e330a678e8a84a40acaf8cdf4e6dd5fcb45d342487bbedc1e66d7f1d1ff362c0",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_spectrum.py": "4fb0a54b26c387eff517b35bf959e88042b741e4fbadcd27fcf061cb2d0f7636",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_symmetry.py": "768726d6736a5d9b2cb5b437c1daafb85715b9040d041c9a222a31f141d0d187",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_tunnel.py": "f7e6f7865c6ba6e942db3311b5dc6b4287e7ed67e3cc2986aee002c94bfbfd5d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_dark_bound_math.py": "cd821809563dbf58bc94cf19b6c304eaf06685f06460e7b53e92b16aef5cb6b2",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_fourth_action.py": "08c2bbde3e51f48168afa5587eec4564115de1bcacaf823a67b919d01d6acb7a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_fourth_diagonal.py": "2fee020468cad24902e2659d22b77e45b920852cca30fd34b2c55b3b3130e0a4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_rational.py": "0516f65706926fd5235d7b23a297fa3b038cde4b0cd1f176e8c5d62bea5e896f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_resonance.py": "cd14169b2b9d5a0ff5f93d3c88cbaa1a29bd96876b03ad5ce2d3e4ce0b411193",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_third.py": "cc0afa75619e9abee8d65cb780fb1da9809460493fea4ebd7e551fb21571cff4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_fourth_overlap.py": "ce2abe5f6441e85cf431034fbea7241e6d01f58a86c70618bbf9f5d77b790bac",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_fourth_rational.py": "d6c8af36a836d1eb1fdd65e489ea7a6bb8ca02f92b8cdef58c0be53305afb9c4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_full_third_check.py": "bf31f58d4b47efeba270c3aac658d598ef3919d43b5df772feb24ecb3e4f995b",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_physical_q_source.py": "1e34c264518527172fe81070b4bd9f0c622f8aae3756fbf581b80c70abe4a6f1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_q_certificate.py": "7117d45884550d9e91291f663b204c5a45f8d3bfdda85eaf3ade38b54f46a540",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_source_dressing.py": "7676ef18c16301fcb9eb33983b5a949bddab7091e6bac37ce43cca380d647b9d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_band_scalar_reflection_sector.py": "c0a731c4b75ada19bfb344d062c6585d0d97498652afc87f5f1e8d9d46e62869",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_domain_boundary_local.py": "a64c6085f6998e5d2fe7d7b56a7eadada6032631ea3713785ff2901d2ea5d5d4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_scalar_explicit_basis.py": "638b21aba1240d49871bbd6574f16e2ddda099b230dc0b8321d99f819d20e5d9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_wall_connected.py": "a12994a5231b55f119c50b9c687b40ec9586ee90ddc991df9c79390669a0a802",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_wall_full_kernel.py": "f447dab9fb716b0c1ece4b5b59eedcc44dc0a7a7a77fdc8d09017641d4d69a20",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_scalar_explicit_basis.py": "638b21aba1240d49871bbd6574f16e2ddda099b230dc0b8321d99f819d20e5d9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_boundary.py": "6cb5c73f7b785b581c2c0bb7f8fdefa3b579e54820ad4bebfa55f5dd39153f69",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_exact_math.py": "47b6ba85b485650c6603f5b2febe447feaba6a43ba569220283b11a5de527632",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_large_feature.py": "2e24443e2125f13a664f03c87a96f951a14829b5ac98d3d4ca9cd69f720f6f65",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_local_second.py": "971a7b17e341a7324fd1a9fb524957ee7a173075f20d0af13a6014012c3feb75",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_local_normal_form.py": "d7f22b3537c28647afb5b78b94d9d8ca4a23f33e1d2b48096620ac0882d82848",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_packet_control.py": "26c4f6e01a85ed00374eb91c7e9e9f911f63052233b643e325b81c80cf4396cc",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9730/neutral_column_parity_native.py": "2b6e8560fd6c2cf15d83448b3746358bef937aa88c366e5293d7c47ce0ee5049",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9730/neutral_column_plaquette.py": "94aaba329f92a322e6cc52c98138670e5edf4a35e571989a461ae63803361a93",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_column_six_mode.py": "139716946d77aea3947332b8345849e1a0990db870e931b7b56d48c19a56c01e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_column_source_derivative.py": "171ee42c797ed3b41caca0543d3928f006a7bf76548da10d0069a8963f6ba1a3",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_rectangle_six.py": "1719b71435e78ade10338820dd32e1688a1dd588198e295b80505bbd92a379c8",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9717/tube_4.json": "47311399341ad594d1438eb1da0fb382ea9e68df234de16fd9086f6b5fccd7e8",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9720/neutral_tube_anisotropy.json": "27f1fe81178acb1b990d0a7beb07dcad2b9963a4be7e605650169b1d9876b68a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9724/neutral_kink_dark_fourth_action.json": "4a162174f1c3db2d9619aff9ba1f6503aa8cce4976a68448bfb9ea8b9b43f63b",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9724/neutral_kink_fourth_overlap.json": "aa18eb4c162be11a20436e9fdfb9ff4b7c4cebf8aa9a651234ad5b7f4b6f7fbb",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9726/neutral_native_periodic_pole.json": "b72485e438609cecd638ff703bc9ece8e934e5a4cbaef75ffa85a4bda9afd8dd",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9727/neutral_native_periodic_pi_pole.json": "57c6f13b35ac717897c75581c4066602bbd1baa1757b31a7e3bb608763ec47b9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/DEFERRED_TERMINAL_PROMOTION.md": "8f860d706b5da679553d32c0fcb461ea23a81eb07bb6128b194a255cb099f9f6",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/DERIVED_RUNG_COLLECTIVE.md": "e575dc62726b3e5b71c6d64374935c1cf0061c2c8a5e4f987e06e4486df07d0f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_BOUNDARY_VERTEX_CHECK.md": "15503895f71fb0dc2e3a05e12e29dfffb492f845e8540316fde6a4acfcd85b0f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_DERIVED_COLLECTIVE_REVIEW.md": "8b90f8bd4ee5b737e1b43098a55575866422884169a27fdfa7bfcd14c88b12a1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_RUNG_EFFECTIVE_CHECK.md": "530ca8bb4889850014e77018c6e988e95b47a02e32842406288d256ce43336c9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_RUNG_HIGHER_CHECK.md": "37fa4ca4cd9045614589afa10b1f9e04cf573ea4f2eb058f9f52cf7d6e6f1534",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_SIXTH_CHARGE_CHECK.md": "a1cb524ec80bf85051a0c647e0363130ef8953a82e09319c8d99c6a1755f7d0d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_TUBE_RUNG_CHECK.md": "79d8b6154242c54e609520283a3f6780e0ff9230c5b7997437ecae4f61771c29",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/NATIVE_BOUNDARY_VERTEX.md": "924f5a86a06e31bd32c649791d30ae19d4c6ab16adeda893dc701296c18f5713",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/SIXTH_ORDER_COLLECTIVE_PROCESS.md": "c8182c4cee5440404942856653e98ae9864da539964b20f2b4af6f0ee8f2a62e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/TUBE_RUNG_REDUCTION.md": "1da0424f2b0cfc1aef429f58ef02577e01c608c81e72883cedaac6f208a8fa26",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/DEFERRED_TERMINAL_PROMOTION.md": "847e7098026ed75152de1fed0df4a4aafd7e2ab3c13ba6f3b5fce3dce83b6ddc",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/DERIVED_INFRARED_ROUTE.md": "32322347ddb6c8fdbae6121af7c072c2d77a5654e64a3f60f518d1ee43ee9b64",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_ANISOTROPY_CHECK.md": "ea587203f8bdff6f39d294f99668d812d4b215a22ae292342cc5d5c5de26de70",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_DISCRETE_INFRARED_CHECK.md": "34ef05b5605dd6c16b9bb884014b01136f83b892d245eefe08ad659a5efa91f8",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_INFRARED_FINAL_REVIEW.md": "43e0da90813f1a1ea4ca2c119e249b35126e3a5ceeeffcb27b4a34a9c45585a7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_XY_READOUT_CHECK.md": "a05c740cae85adf9efcf2ccd796ce0de7402872a2f1b26e76bc35fb7007dac07",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/DEFERRED_TERMINAL_PROMOTION.md": "16a3129fd3345ca0df3e04bc31fa1ce38f21d3fec5d8710c312a3286138b56f4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/EXACT_INTERNAL_FACTOR.md": "d906c2bf12a1c73d1e8023056a3d48cbdf0c0aec45dcfa697986c617803cd4fd",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_EXACT_INTERNAL_FACTOR_CHECK.md": "1766683ad2f096e02731fc7bc9bdbde0ecb037725fd5980a3f6036616a3f626f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_LARGE_COLUMN_AUX_CHECK.md": "79a880d0c169a8f959b447637d93888fab1a495108fc9b9b512be4f1ba3e90c0",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_LARGE_COLUMN_FINAL_REVIEW.md": "71beb7ed4598c2a185ac9ab69818e4cb41dabe9c3952eaadbf150130ab47bcc7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_STRONG_READOUT_CHECK.md": "006cce2a1d7ab9be9b43717a7b5fc8b53319eead2a8e96176737dcb2d79e04f5",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_STRONG_TUNNEL_CHECK.md": "fa73dcc0c5b5da75f449ec1ba68d46a4e25fce7b51966378e8c46ca36624a5c0",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/STRONG_COLUMN_FEATURE.md": "7dbfd13f194ffeb1eb658e96348f8d08f1eb89c7818b1c759df6601ced344b23",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DARK_BOUND_CHECK.md": "8e62b8ac2bd748604f621a5818afce3c3e603bc7c358bef1d6f7e73a63a69fe1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DARK_FOURTH_CHECK.md": "68cef4611a5aea9299f1ef21a095b3b7b5ec45c3fc044dd2774174bcdc185759",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DOMAIN_RESONANCE_FINAL_REVIEW.md": "2e31d833d07928d527281d3f2b1dd6e30929e4505f62d9c8be3c1d30835dd7ff",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_FOURTH_CHECK.md": "15e2e293a38470f35c77ce010120ea1004977cddab90722b1c406ab077d8bd83",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_MOMENTUM_CHECK.md": "302cbc8505f2db6e49a2dd5ee5920a0259dbc5b57677a09fc8b5977b45d725c4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_RESONANCE_CHECK.md": "10544bcf1262c27c674711f135badfa9a17f8f9c448a4472b7d2701e4c152042",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_SECOND_CHECK.md": "aa7bea68d4dcb14aabe72ebb542541d122786f7ca11ebbee03d9a06e52fda59c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_THIRD_CHECK.md": "e86139e1ccc07bfb8cbc132d7013d0f14a1a766d8dfed6e251253f838759e5ad",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_LOCAL_BOUNDARY_CHECK.md": "c29312e26b0d2d3a069bb0b68b6ff6fa9f21d223587c24389f4a669cd2ff8c72",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_LOCAL_WALL_CHECK.md": "a987c2748c911243ffe47aa98acaba11cfc7ef6e97b31ad37b09cfdd74d4346f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_NATIVE_PERIODIC_POLE_CHECK.md": "51b8fb114c0b49b6aa97957c3414c51b1dd4a20de38af2f99ec28b82eb634709",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_SCALAR_BAND_CHECK.md": "a8a7f171cb8441ed835a1a25781be574b77504926cd31fde93973cf0563b0822",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/LOCAL_PROOF_FINAL_REVIEW.md": "5804aa9df1eb21eba664f097b555a7f2fdd8d19e69cc34423832cfe325056c01",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/DEFERRED_TERMINAL_PROMOTION.md": "b0ad74b2b5e10139c41e5bf52d340a9b842ea9887759bec7dba511a0b00db71e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_NATIVE_PI_POLE_CHECK.md": "c8e9034b56b61a2f6fd73df2e7efc6754e3d125f7adb0e13aeab3b937a1c0ae1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_BOUNDARY_CHECK.md": "917c92a074fd71c3ce48b608a8a9d721a5bd4ee9cff74ec363caa31c73ff1487",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_CROSSOVER_CHECK.md": "64c26afee7665e1081466b133d223a245e94346fdd1acec8dac9532deb402a3d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_LARGE_FEATURE_CHECK.md": "d3a62e6e814b3dbb2c0e040632a95ce6a973139d69dd2c53e357baf5b2d1b885",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_LOCAL_SECOND_CHECK.md": "9b65eda2f5c6e50e5386db05f80dfdfb3ee41c0a28a3d37badd722821c9dbcad",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/ZONE_BOUNDARY_FINAL_REVIEW.md": "5d17e46e71561ee2e508bc1a1ede853f113042beefed7e90144067a166c133f4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_PACKET_FILTER_CHECK.md": "c246d5006d2c39fbaa206c18a8783f0b6d8040bff17511aee34ed53a2215541e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_SOURCE_GRAM_FIBER_CHECK.md": "68afe5d8e0225eb3d5c07826134ee217264f0a6967fb281833f71bd65f04d0e2",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_UNIFORM_NORMAL_FORM_CHECK.md": "f176d9852cee9b58809e760cf2f106a40c6637daa23e49a9a050d21c2896ce68",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/NORMAL_FORM_FINAL_REVIEW.md": "3ff4aa1a356a219cf38d6b3f66779d416d62ac3f7b0bc0fa44a207f06252d09a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/COLUMN_PLAQUETTE_FINAL_REVIEW.md": "e444b36fa4fc2fafb9ca688930f0fea2e83cf51b08a3438958bfe8414b34997c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/INDEPENDENT_COLUMN_PLAQUETTE_CHECK.md": "3226fe3119ca908b5a19d5f11250e2d839846fc18f4ec429ef2120eb69a6234d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/INDEPENDENT_COLUMN_READOUT_CHECK.md": "afd9dc9fbe284e95d4cc0432bcf92c666e66b1e7d8a793888499ccb1c0d53466",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/COLUMN_COLLECTIVE_FINAL_REVIEW.md": "7f2eabb1710a9a987b01137ee19463a4d5fe03b571862cf02b79e86ad2b3d595",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/DEFERRED_TERMINAL_PROMOTION.md": "59482b9881e8c3637bef6e53000b70323b270bd5a7045e194aec7b05b4f10855",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_COLUMN_SOURCE_CHECK.md": "9f6d1ded1f717bffe80bb8f7683f49a518044eb395d31f258d8c7670f11dafb7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_COLUMN_STAR_CHECK.md": "bc09200504eb37f3934bb46e097892b62bae67302e3288718d053fee6fb0e1ae",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_SIX_LOOP_CHECK.md": "9e2861d6adeac6a9f62cbbd63c83873a71c85073c5b22331164a62eb08d9783c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/neutral_tube_anisotropy.py": "73f488ad7e8029834bccbd755effdf20563ef20d2124a971ddda4510df35c41a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_internal_occupation.json": "2d609402878fe5a327b6158e3eed9e0eefb4e735eecb2666cf2893551473c16e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_internal_occupation.py": "f687fd8e24bc4a1f7c221c068c7727ceb2df26a0e4dcb66bc77135eb67167bb3",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/stationary_2x2x8_plus.json": "056ec68a0ece08943d0dd1ed4daa549634a3288bdae75c6c957f9e89697c759c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9726/LOCAL_PROOF_PROVENANCE.md": "d66ba8edf4672b901755a1a3214638a2966e1dbae7ed34ae148f298827b4e8f7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9726/neutral_native_periodic_pole.py": "1e8db854d23891aa9c561d918308a13d0aa5325c2fdc9e5c0f3ea82fa30a945a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9727/ZONE_BOUNDARY_PROVENANCE.md": "8bb5d9128e7fece1798e1f1a8bcb14a550c9c39a49f4f4356637cd94794ea153",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9727/neutral_native_periodic_pi_pole.py": "7f8fceaca39d26fbabda3342c1eb7a41d4f8c96c5feeefbd8cbf4a04e5c359a5"
+  },
+  "results": {
+    "neutral_rung_discrete_symmetry": {
+      "projective_Px_Py": "anticommute exactly, square to identity, preserve full rung h and global interrung bonds",
+      "D_signed_permutation": "Matrix([[0, 0, -1, 0], [-1, 0, 0, 0], [0, 0, 0, 1], [0, 1, 0, 0]])",
+      "low_T": "Matrix([[sqrt(2)/2, -1/2], [1, sqrt(2)/2]])",
+      "low_adjoint_action": [
+        "tau1 -> -tau2",
+        "tau2 -> tau1",
+        "tau3 -> tau3"
+      ],
+      "charge_selection": "Delta Q0 multiple8, equivalently four collective flips; exact global discrete symmetry",
+      "scope": "Finite positive-parity tube; no continuous microscopic symmetry or bulk criticality assertion"
+    },
+    "neutral_xy_readout": {
+      "rows": [
+        {
+          "L": 8,
+          "profile_mode": 1,
+          "source": "collective_density",
+          "weight": 0.5,
+          "parity": -1.0,
+          "ground_parity": 0.9999999999999998,
+          "mean": 1.5307337294603593,
+          "nodes": [
+            {
+              "energy": 1.530733729460359,
+              "weight": 0.5
+            }
+          ],
+          "energy": -5.226251859505506,
+          "ground_residual": 1.8963376260992785e-15,
+          "cross_abs": 3.5154528813050854e-17,
+          "q": 0.7853981633974483,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 8,
+          "profile_mode": 1,
+          "source": "native_composite_O2",
+          "weight": 0.2460937499999997,
+          "parity": 1.0,
+          "ground_parity": 0.9999999999999998,
+          "mean": 4.479644451004719,
+          "nodes": [
+            {
+              "energy": 4.1438596592131125,
+              "weight": 0.20490564110435788
+            },
+            {
+              "energy": 5.2262518595055045,
+              "weight": 0.006031858895641766
+            },
+            {
+              "energy": 6.3086440597979,
+              "weight": 0.03515624999999997
+            }
+          ],
+          "energy": -5.226251859505506,
+          "ground_residual": 1.8963376260992785e-15,
+          "cross_abs": 3.5154528813050854e-17,
+          "q": 0.7853981633974483,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 8,
+          "profile_mode": 2,
+          "source": "collective_density",
+          "weight": 0.9999999999999998,
+          "parity": -1.0,
+          "ground_parity": 0.9999999999999998,
+          "mean": 2.6131259297527527,
+          "nodes": [
+            {
+              "energy": 2.613125929752753,
+              "weight": 0.9999999999999998
+            }
+          ],
+          "energy": -5.226251859505506,
+          "ground_residual": 1.8963376260992785e-15,
+          "cross_abs": 3.550564213116373e-17,
+          "q": 1.5707963267948966,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 8,
+          "profile_mode": 2,
+          "source": "native_composite_O2",
+          "weight": 0.5618249751835716,
+          "parity": 0.9999999999999996,
+          "ground_parity": 0.9999999999999998,
+          "mean": 3.07562071014926,
+          "nodes": [
+            {
+              "energy": 2.6131259297527527,
+              "weight": 0.4503243662879301
+            },
+            {
+              "energy": 4.143859659213112,
+              "weight": 0.03515624999999969
+            },
+            {
+              "energy": 5.226251859505506,
+              "weight": 0.07031250000000003
+            },
+            {
+              "energy": 6.308644059797901,
+              "weight": 0.006031858895641752
+            }
+          ],
+          "energy": -5.226251859505506,
+          "ground_residual": 1.8963376260992785e-15,
+          "cross_abs": 3.550564213116373e-17,
+          "q": 1.5707963267948966,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 12,
+          "profile_mode": 1,
+          "source": "collective_density",
+          "weight": 0.3333333333333333,
+          "parity": -0.9999999999999998,
+          "ground_parity": 0.9999999999999997,
+          "mean": 1.035276180410076,
+          "nodes": [
+            {
+              "energy": 1.0352761804100759,
+              "weight": 0.3333333333333333
+            }
+          ],
+          "energy": -7.727406610312539,
+          "ground_residual": 2.1573107956828782e-13,
+          "cross_abs": 2.991080950542119e-16,
+          "q": 0.5235987755982988,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 12,
+          "profile_mode": 1,
+          "source": "native_composite_O2",
+          "weight": 0.2822716272015961,
+          "parity": 0.9999999999999996,
+          "ground_parity": 0.9999999999999997,
+          "mean": 4.183576508612685,
+          "nodes": [
+            {
+              "energy": 2.967127832988213,
+              "weight": 0.10881408773652738
+            },
+            {
+              "energy": 4.381341395361308,
+              "weight": 0.067708333333333
+            },
+            {
+              "energy": 4.760278777324318,
+              "weight": 0.05831329386826359
+            },
+            {
+              "energy": 4.898979485566347,
+              "weight": 0.0013955687105786938
+            },
+            {
+              "energy": 5.277916867529361,
+              "weight": 0.004186706131736165
+            },
+            {
+              "energy": 5.795554957734403,
+              "weight": 0.018416137421157185
+            },
+            {
+              "energy": 6.174492339697413,
+              "weight": 0.019437764622754577
+            },
+            {
+              "energy": 6.6921304299024555,
+              "weight": 0.0013955687105787356
+            },
+            {
+              "energy": 7.209768520107496,
+              "weight": 0.0026041666666667056
+            }
+          ],
+          "energy": -7.727406610312539,
+          "ground_residual": 2.1573107956828782e-13,
+          "cross_abs": 2.991080950542119e-16,
+          "q": 0.5235987755982988,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 12,
+          "profile_mode": 2,
+          "source": "collective_density",
+          "weight": 0.6666666666666665,
+          "parity": -1.0,
+          "ground_parity": 0.9999999999999997,
+          "mean": 1.9318516525781295,
+          "nodes": [
+            {
+              "energy": 1.9318516525781293,
+              "weight": 0.6666666666666665
+            }
+          ],
+          "energy": -7.727406610312539,
+          "ground_residual": 2.1573107956828782e-13,
+          "cross_abs": 3.1100620430426293e-16,
+          "q": 1.0471975511965976,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 12,
+          "profile_mode": 2,
+          "source": "native_composite_O2",
+          "weight": 0.4037279706799068,
+          "parity": 0.9999999999999999,
+          "ground_parity": 0.9999999999999997,
+          "mean": 3.17634015729795,
+          "nodes": [
+            {
+              "energy": 1.9318516525781302,
+              "weight": 0.2036678522846986
+            },
+            {
+              "energy": 3.4847659231932533,
+              "weight": 0.05831329386826338
+            },
+            {
+              "energy": 3.8637033051562653,
+              "weight": 0.046875000000000076
+            },
+            {
+              "energy": 4.381341395361309,
+              "weight": 0.015624999999999964
+            },
+            {
+              "energy": 5.27791686752936,
+              "weight": 0.06249999999999971
+            },
+            {
+              "energy": 5.795554957734401,
+              "weight": 0.002604166666666679
+            },
+            {
+              "energy": 6.174492339697413,
+              "weight": 0.0041867061317363225
+            },
+            {
+              "energy": 6.313193047939441,
+              "weight": 0.004186706131736351
+            },
+            {
+              "energy": 6.692130429902456,
+              "weight": 0.005208333333333248
+            },
+            {
+              "energy": 7.209768520107498,
+              "weight": 0.0005609122634725658
+            }
+          ],
+          "energy": -7.727406610312539,
+          "ground_residual": 2.1573107956828782e-13,
+          "cross_abs": 3.1100620430426293e-16,
+          "q": 1.0471975511965976,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 16,
+          "profile_mode": 1,
+          "source": "collective_density",
+          "weight": 0.2500000000000004,
+          "parity": -1.0,
+          "ground_parity": 1.0000000000000007,
+          "mean": 0.780361288064513,
+          "nodes": [
+            {
+              "energy": 0.7803612880645134,
+              "weight": 0.2500000000000004
+            }
+          ],
+          "energy": -10.251661790966025,
+          "ground_residual": 5.82553083539086e-14,
+          "cross_abs": 1.3477494308594605e-16,
+          "q": 0.39269908169872414,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 16,
+          "profile_mode": 1,
+          "source": "native_composite_O2",
+          "weight": 0.29401943065071634,
+          "parity": 0.9999999999999994,
+          "ground_parity": 1.0000000000000007,
+          "mean": 4.095014284071281,
+          "nodes": [
+            {
+              "energy": 2.281682398135976,
+              "weight": 0.05553400422895421
+            },
+            {
+              "energy": 3.554440978708807,
+              "weight": 0.06133662930515982
+            },
+            {
+              "energy": 3.7236020421498695,
+              "weight": 0.039912035178229666
+            },
+            {
+              "energy": 4.404871073476067,
+              "weight": 0.017151028300147784
+            },
+            {
+              "energy": 4.574032136917126,
+              "weight": 0.01280660256902239
+            },
+            {
+              "energy": 4.703502409677433,
+              "weight": 0.00041300178852742296
+            },
+            {
+              "energy": 4.827199559281643,
+              "weight": 0.03463719887029125
+            },
+            {
+              "energy": 4.996360622722701,
+              "weight": 0.023379928905495072
+            },
+            {
+              "energy": 5.125830895483009,
+              "weight": 0.00382735708288548
+            },
+            {
+              "energy": 5.424462231684378,
+              "weight": 0.005667564741663578
+            },
+            {
+              "energy": 5.677629654048892,
+              "weight": 0.004921498847556727
+            },
+            {
+              "energy": 5.846790717489958,
+              "weight": 0.014364672811807387
+            },
+            {
+              "energy": 5.976260990250276,
+              "weight": 0.000413001788527441
+            },
+            {
+              "energy": 6.0999581398544755,
+              "weight": 0.010438266001929918
+            },
+            {
+              "energy": 6.145422053691326,
+              "weight": 0.00098099712635389
+            },
+            {
+              "energy": 6.398589476055841,
+              "weight": 0.0009250533040476291
+            },
+            {
+              "energy": 6.697220812257215,
+              "weight": 0.003605359451206309
+            },
+            {
+              "energy": 6.950388234621733,
+              "weight": 0.0030572973281362686
+            },
+            {
+              "energy": 7.249019570823107,
+              "weight": 0.0002709418397965225
+            },
+            {
+              "energy": 7.5476509070244715,
+              "weight": 0.00037699118097760803
+            }
+          ],
+          "energy": -10.251661790966025,
+          "ground_residual": 5.82553083539086e-14,
+          "cross_abs": 1.3477494308594605e-16,
+          "q": 0.39269908169872414,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 16,
+          "profile_mode": 2,
+          "source": "collective_density",
+          "weight": 0.49999999999999967,
+          "parity": -1.0,
+          "ground_parity": 1.0000000000000007,
+          "mean": 1.50132111007146,
+          "nodes": [
+            {
+              "energy": 1.5013211100714607,
+              "weight": 0.49999999999999967
+            }
+          ],
+          "energy": -10.251661790966025,
+          "ground_residual": 5.82553083539086e-14,
+          "cross_abs": 9.986640039897974e-17,
+          "q": 0.7853981633974483,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 16,
+          "profile_mode": 2,
+          "source": "native_composite_O2",
+          "weight": 0.3400176714268087,
+          "parity": 1.0000000000000002,
+          "ground_parity": 1.0000000000000007,
+          "mean": 3.465855132676255,
+          "nodes": [
+            {
+              "energy": 1.5013211100714565,
+              "weight": 0.09838486658754886
+            },
+            {
+              "energy": 2.833481156701861,
+              "weight": 0.03991203517822869
+            },
+            {
+              "energy": 3.002642220142923,
+              "weight": 0.02561320513804486
+            },
+            {
+              "energy": 3.8530723149101824,
+              "weight": 0.03294406829296373
+            },
+            {
+              "energy": 4.275400800715759,
+              "weight": 0.058707249847587274
+            },
+            {
+              "energy": 4.404871073476066,
+              "weight": 0.004394531250000385
+            },
+            {
+              "energy": 4.5740321369171255,
+              "weight": 0.004394531250000321
+            },
+            {
+              "energy": 4.827199559281641,
+              "weight": 0.00027094183979654087
+            },
+            {
+              "energy": 5.125830895483011,
+              "weight": 0.01757812500000045
+            },
+            {
+              "energy": 5.294991958924071,
+              "weight": 0.012806602569022302
+            },
+            {
+              "energy": 5.378998317847524,
+              "weight": 0.012806602569022591
+            },
+            {
+              "energy": 5.42446223168438,
+              "weight": 0.00098099712635374
+            },
+            {
+              "energy": 5.548159381288589,
+              "weight": 0.008789062500000036
+            },
+            {
+              "energy": 5.846790717489958,
+              "weight": 0.004274386997494009
+            },
+            {
+              "energy": 5.9762609902502675,
+              "weight": 0.004274386997493719
+            },
+            {
+              "energy": 6.398589476055845,
+              "weight": 0.010881099954530184
+            },
+            {
+              "energy": 6.697220812257212,
+              "weight": 0.0007539823619552374
+            },
+            {
+              "energy": 6.950388234621731,
+              "weight": 0.000705038153837289
+            },
+            {
+              "energy": 6.995852148458584,
+              "weight": 0.0007050381538373681
+            },
+            {
+              "energy": 7.249019570823104,
+              "weight": 0.0007539823619552258
+            },
+            {
+              "energy": 7.5476509070244715,
+              "weight": 8.693729713604037e-05
+            }
+          ],
+          "energy": -10.251661790966025,
+          "ground_residual": 5.82553083539086e-14,
+          "cross_abs": 9.986640039897974e-17,
+          "q": 0.7853981633974483,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 20,
+          "profile_mode": 1,
+          "source": "collective_density",
+          "weight": 0.200000000000003,
+          "parity": -0.9999999999999992,
+          "ground_parity": 1.0000000000000007,
+          "mean": 0.625737860160934,
+          "nodes": [
+            {
+              "energy": 0.6257378601609378,
+              "weight": 0.200000000000003
+            }
+          ],
+          "energy": -12.784906442999338,
+          "ground_residual": 3.348938666950635e-14,
+          "cross_abs": 4.24835736050128e-17,
+          "q": 0.3141592653589793,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 20,
+          "profile_mode": 1,
+          "source": "native_composite_O2",
+          "weight": 0.2993124102994774,
+          "parity": 1.0000000000000002,
+          "ground_parity": 1.0000000000000007,
+          "mean": 4.0563028494127495,
+          "nodes": [
+            {
+              "energy": 1.8465877897205014,
+              "weight": 0.030988093673347764
+            },
+            {
+              "energy": 2.947932422013135,
+              "weight": 0.04298815648129926
+            },
+            {
+              "energy": 3.036811928517763,
+              "weight": 0.02521835616768176
+            },
+            {
+              "energy": 3.821964470910765,
+              "weight": 0.021335403093989003
+            },
+            {
+              "energy": 3.9108439774153894,
+              "weight": 0.012925487271669298
+            },
+            {
+              "energy": 4.049277054305772,
+              "weight": 0.030750572393037575
+            },
+            {
+              "energy": 4.138156560810614,
+              "weight": 0.018248173951026254
+            },
+            {
+              "energy": 4.383127589837281,
+              "weight": 0.005762415931632338
+            },
+            {
+              "energy": 4.576508089333427,
+              "weight": 0.00015240009758098446
+            },
+            {
+              "energy": 4.610440813330278,
+              "weight": 0.010272438442660728
+            },
+            {
+              "energy": 4.784880123541102,
+              "weight": 0.012456412757789486
+            },
+            {
+              "energy": 4.924001400437309,
+              "weight": 0.008110402086266058
+            },
+            {
+              "energy": 5.009448597969737,
+              "weight": 0.02005377250063802
+            },
+            {
+              "energy": 5.104120786349028,
+              "weight": 0.0020809380842147654
+            },
+            {
+              "energy": 5.155570748282967,
+              "weight": 0.013245018828763755
+            },
+            {
+              "energy": 5.3132679836949155,
+              "weight": 0.00012938857760199862
+            },
+            {
+              "energy": 5.487559581546036,
+              "weight": 0.004907341801187706
+            },
+            {
+              "energy": 5.578646420387876,
+              "weight": 0.005676661981742269
+            },
+            {
+              "energy": 5.716972946143103,
+              "weight": 0.004452246700798286
+            },
+            {
+              "energy": 5.884367932113526,
+              "weight": 0.00996571183083518
+            },
+            {
+              "energy": 6.022759476185908,
+              "weight": 0.005954963247912323
+            },
+            {
+              "energy": 6.077469902526209,
+              "weight": 0.0015647858052951207
+            },
+            {
+              "energy": 6.273073554345259,
+              "weight": 0.001990598648902657
+            },
+            {
+              "energy": 6.447706448705732,
+              "weight": 0.0013681634104250843
+            },
+            {
+              "energy": 6.586393464319775,
+              "weight": 0.0037806433073307396
+            },
+            {
+              "energy": 6.660723362436735,
+              "weight": 0.00010703299685128999
+            },
+            {
+              "energy": 6.761423915359894,
+              "weight": 0.0026797003769196857
+            },
+            {
+              "energy": 6.785453762362756,
+              "weight": 0.0001639625594216549
+            },
+            {
+              "energy": 6.953617297204428,
+              "weight": 0.00024163062302061668
+            },
+            {
+              "energy": 7.146979973947913,
+              "weight": 0.000901486687233893
+            },
+            {
+              "energy": 7.321415826329211,
+              "weight": 0.000691195039474501
+            },
+            {
+              "energy": 7.514779459134322,
+              "weight": 6.678729894270125e-05
+            },
+            {
+              "energy": 7.708143091947576,
+              "weight": 8.206764398455244e-05
+            }
+          ],
+          "energy": -12.784906442999338,
+          "ground_residual": 3.348938666950635e-14,
+          "cross_abs": 4.24835736050128e-17,
+          "q": 0.3141592653589793,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 20,
+          "profile_mode": 2,
+          "source": "collective_density",
+          "weight": 0.3999999999999994,
+          "parity": -1.0000000000000002,
+          "ground_parity": 1.0000000000000007,
+          "mean": 1.2208499295595663,
+          "nodes": [
+            {
+              "energy": 1.2208499295595743,
+              "weight": 0.3999999999999994
+            }
+          ],
+          "energy": -12.784906442999338,
+          "ground_residual": 3.348938666950635e-14,
+          "cross_abs": 8.564071714287864e-17,
+          "q": 0.6283185307179586,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        },
+        {
+          "L": 20,
+          "profile_mode": 2,
+          "source": "native_composite_O2",
+          "weight": 0.31698483656876536,
+          "parity": 1.0000000000000002,
+          "ground_parity": 1.0000000000000007,
+          "mean": 3.678109175559953,
+          "nodes": [
+            {
+              "energy": 1.2208499295595359,
+              "weight": 0.03546829437310154
+            },
+            {
+              "energy": 1.2208499295595738,
+              "weight": 0.01806302522216637
+            },
+            {
+              "energy": 2.3528203526145,
+              "weight": 0.02521835616767729
+            },
+            {
+              "energy": 2.4416998591191303,
+              "weight": 0.014726441186716652
+            },
+            {
+              "energy": 3.3157319080167715,
+              "weight": 0.0298945434044164
+            },
+            {
+              "energy": 3.543044491411764,
+              "weight": 0.04184265248137007
+            },
+            {
+              "energy": 4.015328103724338,
+              "weight": 0.01159760489825126
+            },
+            {
+              "energy": 4.1042076102307234,
+              "weight": 0.0073632205936793906
+            },
+            {
+              "energy": 4.3831495411328545,
+              "weight": 0.00155868637471525
+            },
+            {
+              "energy": 4.417090565596364,
+              "weight": 0.021378776843007607
+            },
+            {
+              "energy": 4.506583439022677,
+              "weight": 0.013376581844433773
+            },
+            {
+              "energy": 4.558884185439258,
+              "weight": 0.013531256277872028
+            },
+            {
+              "energy": 4.636080253417661,
+              "weight": 0.010474427047344644
+            },
+            {
+              "energy": 4.714274582743715,
+              "weight": 0.00034740277825703837
+            },
+            {
+              "energy": 4.8375649432267025,
+              "weight": 0.00017545052554183443
+            },
+            {
+              "energy": 4.9769399261567075,
+              "weight": 0.006377470001487476
+            },
+            {
+              "energy": 5.192114399003867,
+              "weight": 0.005684317089079481
+            },
+            {
+              "energy": 5.223179436576373,
+              "weight": 0.00632387980142926
+            },
+            {
+              "energy": 5.294377738575309,
+              "weight": 0.009767562260658648
+            },
+            {
+              "energy": 5.5207258472689045,
+              "weight": 0.017370794408586944
+            },
+            {
+              "energy": 5.628900626569302,
+              "weight": 0.0018455510519138731
+            },
+            {
+              "energy": 5.707521709855657,
+              "weight": 0.0026066709761872436
+            },
+            {
+              "energy": 5.857741771924309,
+              "weight": 0.0015788556160480952
+            },
+            {
+              "energy": 6.078372743978107,
+              "weight": 0.005217710902043987
+            },
+            {
+              "energy": 6.2170506858632395,
+              "weight": 0.0034314848868379688
+            },
+            {
+              "energy": 6.257452351572583,
+              "weight": 0.003829584751394198
+            },
+            {
+              "energy": 6.392403040652647,
+              "weight": 0.0021517973251503645
+            },
+            {
+              "energy": 6.585812875059217,
+              "weight": 0.0012384862463194765
+            },
+            {
+              "energy": 6.640746470226901,
+              "weight": 0.0012385861654497685
+            },
+            {
+              "energy": 6.953616340246368,
+              "weight": 0.0025783974986393096
+            },
+            {
+              "energy": 7.146979973123901,
+              "weight": 0.00021485588147939055
+            },
+            {
+              "energy": 7.321415826730602,
+              "weight": 0.00016423797434604877
+            },
+            {
+              "energy": 7.34034360624508,
+              "weight": 0.00016423796244811068
+            },
+            {
+              "energy": 7.5147794591341155,
+              "weight": 0.0001641352879686148
+            },
+            {
+              "energy": 7.708143091947578,
+              "weight": 1.9500462745640918e-05
+            }
+          ],
+          "energy": -12.784906442999338,
+          "ground_residual": 3.348938666950635e-14,
+          "cross_abs": 8.564071714287864e-17,
+          "q": 0.6283185307179586,
+          "scope": "Finite leading XY effective theory, no native full-H remainder control"
+        }
+      ],
+      "analytic_checks": [
+        {
+          "L": 8,
+          "one_pair_weight": 0.4503243662879301,
+          "analytic_weight": 0.45032436628793016,
+          "error": 5.551115123125783e-17
+        },
+        {
+          "L": 12,
+          "one_pair_weight": 0.2036678522846986,
+          "analytic_weight": 0.20366785228469853,
+          "error": 8.326672684688674e-17
+        },
+        {
+          "L": 16,
+          "one_pair_weight": 0.09838486658754886,
+          "analytic_weight": 0.098384866587549,
+          "error": 1.3877787807814457e-16
+        },
+        {
+          "L": 20,
+          "one_pair_weight": 0.05353131959526791,
+          "analytic_weight": 0.05353131959526868,
+          "error": 7.7021722333370235e-16
+        }
+      ],
+      "two_pair_checks": [
+        {
+          "L": 8,
+          "weight": 0.20490564110435788,
+          "analytic_weight": 0.2049056411043582,
+          "error": 3.0531133177191805e-16,
+          "scaled_L3": 104.91168824543124
+        },
+        {
+          "L": 12,
+          "weight": 0.10881408773652738,
+          "analytic_weight": 0.10881408773652741,
+          "error": 2.7755575615628914e-17,
+          "scaled_L3": 188.03074360871932
+        },
+        {
+          "L": 16,
+          "weight": 0.05553400422895421,
+          "analytic_weight": 0.05553400422895351,
+          "error": 7.008282842946301e-16,
+          "scaled_L3": 227.46728132179643
+        },
+        {
+          "L": 20,
+          "weight": 0.030988093673347764,
+          "analytic_weight": 0.03098809367334705,
+          "error": 7.147060721024445e-16,
+          "scaled_L3": 247.9047493867821
+        }
+      ]
+    },
+    "neutral_open_xy_comparison": {
+      "rows": [
+        {
+          "L": 4,
+          "lambda_z": 1.0,
+          "leading_gaps_over_t": [
+            0.0,
+            2.23606797749979,
+            2.23606797749979,
+            4.47213595499958
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.984137417967763,
+            3.008121950510612,
+            4.819290303392677
+          ],
+          "O2_mode_weights": [
+            1.9941803546246735e-31,
+            0.0,
+            0.08236703946480207,
+            0.0023430402157760097
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.7,
+          "leading_gaps_over_t": [
+            0.0,
+            2.23606797749979,
+            2.23606797749979,
+            4.47213595499958
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            2.0792542822871085,
+            2.5699003020541924,
+            4.586612544807132
+          ],
+          "O2_mode_weights": [
+            1.2571560776279542e-30,
+            0.0,
+            0.2842945310270959,
+            0.05313836017343809
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.5,
+          "leading_gaps_over_t": [
+            0.0,
+            2.23606797749979,
+            2.23606797749979,
+            4.47213595499958
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            2.147232858989515,
+            2.394464482080807,
+            4.515984094887738
+          ],
+          "O2_mode_weights": [
+            4.2756357402531367e-32,
+            0.0,
+            0.4308814390626165,
+            0.10516896999883445
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.35,
+          "leading_gaps_over_t": [
+            0.0,
+            2.23606797749979,
+            2.23606797749979,
+            4.47213595499958
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            2.190145812192555,
+            2.310433626452912,
+            4.489691310124754
+          ],
+          "O2_mode_weights": [
+            2.2885963328214762e-30,
+            0.0,
+            0.5218776816311784,
+            0.1407589156226838
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.2,
+          "leading_gaps_over_t": [
+            0.0,
+            2.23606797749979,
+            2.23606797749979,
+            4.47213595499958
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            2.2205569735117234,
+            2.259648552689684,
+            4.477022367845487
+          ],
+          "O2_mode_weights": [
+            3.482960695597359e-30,
+            0.0,
+            0.5851072832226248,
+            0.16665933512121256
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.1,
+          "leading_gaps_over_t": [
+            0.0,
+            2.23606797749979,
+            2.23606797749979,
+            4.47213595499958
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            2.2321428428875776,
+            2.2418985864070375,
+            4.4732799422556955
+          ],
+          "O2_mode_weights": [
+            5.452058289386549e-32,
+            0.0,
+            0.6088651547847563,
+            0.17661797574964846
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 6,
+          "lambda_z": 1.0,
+          "leading_gaps_over_t": [
+            0.0,
+            1.6920214716300932,
+            1.6920214716300939,
+            2.2469796037174645
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.4334340040344054,
+            2.2329162758311196,
+            2.5541848107893985
+          ],
+          "O2_mode_weights": [
+            7.98857074629614e-30,
+            5.0668177740043436e-33,
+            0.017065287683054306,
+            1.4531030632106652e-33
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.7,
+          "leading_gaps_over_t": [
+            0.0,
+            1.6920214716300932,
+            1.6920214716300939,
+            2.2469796037174645
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.5200345057573994,
+            1.9351239574103722,
+            2.3601103755758555
+          ],
+          "O2_mode_weights": [
+            1.2530499587049152e-30,
+            3.0444372683006036e-33,
+            0.08133156784383379,
+            3.019163537075454e-32
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.5,
+          "leading_gaps_over_t": [
+            0.0,
+            1.6920214716300932,
+            1.6920214716300939,
+            2.2469796037174645
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.5914014407309827,
+            1.8100435969933157,
+            2.2937936310891907
+          ],
+          "O2_mode_weights": [
+            6.951696805214779e-30,
+            8.737368028848958e-33,
+            0.13919981342222754,
+            7.004620968734331e-33
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.35,
+          "leading_gaps_over_t": [
+            0.0,
+            1.6920214716300932,
+            1.6920214716300939,
+            2.2469796037174645
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.639105672058001,
+            1.7482468424398179,
+            2.266827871706285
+          ],
+          "O2_mode_weights": [
+            1.878830651411919e-30,
+            5.194744931203419e-32,
+            0.17909727743783416,
+            2.8116631108563507e-33
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.2,
+          "leading_gaps_over_t": [
+            0.0,
+            1.6920214716300932,
+            1.6920214716300939,
+            2.2469796037174645
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.6739489087239505,
+            1.7100405384075603,
+            2.252777934329783
+          ],
+          "O2_mode_weights": [
+            6.791063000831301e-31,
+            8.548541661302334e-31,
+            0.20860287790650628,
+            2.415912658597989e-33
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.1,
+          "leading_gaps_over_t": [
+            0.0,
+            1.6920214716300932,
+            1.6920214716300939,
+            2.2469796037174645
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.6874296959181505,
+            1.6964953499125461,
+            2.248365703976544
+          ],
+          "O2_mode_weights": [
+            1.9304310224327328e-30,
+            3.643445201508361e-29,
+            0.2200787597937317,
+            3.372533215020788e-32
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 8,
+          "lambda_z": 1.0,
+          "leading_gaps_over_t": [
+            0.0,
+            1.347296355333853,
+            1.3472963553338646,
+            1.8793852415718155
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.1354137021858968,
+            1.7734261296787697,
+            2.0466035080894773
+          ],
+          "O2_mode_weights": [
+            2.8659875964806236e-29,
+            1.0472945342171083e-34,
+            0.0046278327284490686,
+            2.2377538365604614e-33
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.7,
+          "leading_gaps_over_t": [
+            0.0,
+            1.347296355333853,
+            1.3472963553338646,
+            1.8793852415718155
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.1992936946109332,
+            1.5437389607766985,
+            1.9266734294168715
+          ],
+          "O2_mode_weights": [
+            8.86439415144583e-30,
+            4.493550069458911e-35,
+            0.029021653918339815,
+            1.6065165558455129e-34
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.5,
+          "leading_gaps_over_t": [
+            0.0,
+            1.347296355333853,
+            1.3472963553338646,
+            1.8793852415718155
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.2587608467506342,
+            1.4443295058623047,
+            1.8928978398892484
+          ],
+          "O2_mode_weights": [
+            8.43110913261213e-31,
+            1.9590363589784785e-34,
+            0.05363201103775572,
+            3.749038643283885e-32
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.35,
+          "leading_gaps_over_t": [
+            0.0,
+            1.347296355333853,
+            1.3472963553338646,
+            1.8793852415718155
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.300200905333913,
+            1.3940597622808717,
+            1.8829207278945432
+          ],
+          "O2_mode_weights": [
+            1.9683501171151546e-31,
+            5.785786425613343e-34,
+            0.07130620444959987,
+            5.084228863737333e-32
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.2,
+          "leading_gaps_over_t": [
+            0.0,
+            1.347296355333853,
+            1.3472963553338646,
+            1.8793852415718155
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.3310959237423425,
+            1.362413609280845,
+            1.8798484564514562
+          ],
+          "O2_mode_weights": [
+            2.622041061273756e-29,
+            5.137946176005096e-34,
+            0.0846095413617735,
+            8.39844216793656e-31
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.1,
+          "leading_gaps_over_t": [
+            0.0,
+            1.347296355333853,
+            1.3472963553338646,
+            1.8793852415718155
+          ],
+          "fourth_gaps_over_t": [
+            0.0,
+            1.343169718467701,
+            1.351062640114998,
+            1.8794363159245835
+          ],
+          "O2_mode_weights": [
+            9.014607063611358e-29,
+            4.340077046705158e-33,
+            0.08982467284070667,
+            7.438498342438615e-32
+          ],
+          "scope": "Exact finite diagonalization of derived fourth-order truncation in matching globalX/Y+ low band; omitted terms not bounded atlambda1"
+        }
+      ]
+    },
+    "neutral_anisotropy_comparison": {
+      "rows": [
+        {
+          "L": 4,
+          "lambda_z": 1.0,
+          "max_gap_error_over_t": 0.39506734772900476,
+          "error_over_lambda4": 0.39506734772900476,
+          "native_index2_weight_over_lambda4": 0.6656547930904244,
+          "derived_index2_O2_weight": 0.08236703946480207
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.7,
+          "max_gap_error_over_t": 0.08586170887059241,
+          "error_over_lambda4": 0.35760811691208844,
+          "native_index2_weight_over_lambda4": 0.8265359500144468,
+          "derived_index2_O2_weight": 0.2842945310270959
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.5,
+          "max_gap_error_over_t": 0.0267602518777319,
+          "error_over_lambda4": 0.4281640300437104,
+          "native_index2_weight_over_lambda4": 0.7532722665855425,
+          "derived_index2_O2_weight": 0.4308814390626165
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.35,
+          "max_gap_error_over_t": 0.00678886909709675,
+          "error_over_lambda4": 0.4524027719847898,
+          "native_index2_weight_over_lambda4": 0.686444964114053,
+          "derived_index2_O2_weight": 0.5218776816311784
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.2,
+          "max_gap_error_over_t": 0.0007399837422452649,
+          "error_over_lambda4": 0.46248983890329043,
+          "native_index2_weight_over_lambda4": 0.6396110987981823,
+          "derived_index2_O2_weight": 0.5851072832226248
+        },
+        {
+          "L": 4,
+          "lambda_z": 0.1,
+          "max_gap_error_over_t": 4.6512972931012087e-05,
+          "error_over_lambda4": 0.46512972931012075,
+          "native_index2_weight_over_lambda4": 0.6225337367451391,
+          "derived_index2_O2_weight": 0.6088651547847563
+        },
+        {
+          "L": 6,
+          "lambda_z": 1.0,
+          "max_gap_error_over_t": 0.5434785219366534,
+          "error_over_lambda4": 0.5434785219366534,
+          "native_index2_weight_over_lambda4": 6.613914850107813e-23,
+          "derived_index2_O2_weight": 0.017065287683054306
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.7,
+          "max_gap_error_over_t": 0.2155073841248396,
+          "error_over_lambda4": 0.897573444918116,
+          "native_index2_weight_over_lambda4": 1.2626859479520323,
+          "derived_index2_O2_weight": 0.08133156784383379
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.5,
+          "max_gap_error_over_t": 0.06020482794123394,
+          "error_over_lambda4": 0.963277247059743,
+          "native_index2_weight_over_lambda4": 0.48156210671795063,
+          "derived_index2_O2_weight": 0.13919981342222754
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.35,
+          "max_gap_error_over_t": 0.014115315846592313,
+          "error_over_lambda4": 0.9406291276363059,
+          "native_index2_weight_over_lambda4": 0.30125899486499147,
+          "derived_index2_O2_weight": 0.17909727743783416
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.2,
+          "max_gap_error_over_t": 0.0014684418818711187,
+          "error_over_lambda4": 0.917776176169449,
+          "native_index2_weight_over_lambda4": 0.24230944555948647,
+          "derived_index2_O2_weight": 0.20860287790650628
+        },
+        {
+          "L": 6,
+          "lambda_z": 0.1,
+          "max_gap_error_over_t": 9.091319053089464e-05,
+          "error_over_lambda4": 0.9091319053089462,
+          "native_index2_weight_over_lambda4": 0.22807160494726458,
+          "derived_index2_O2_weight": 0.2200787597937317
+        },
+        {
+          "L": 8,
+          "lambda_z": 1.0,
+          "max_gap_error_over_t": 0.8370450799220854,
+          "error_over_lambda4": 0.8370450799220854,
+          "native_index2_weight_over_lambda4": 1.6221165948109413e-27,
+          "derived_index2_O2_weight": 0.0046278327284490686
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.7,
+          "max_gap_error_over_t": 0.3723589971393526,
+          "error_over_lambda4": 1.550849634066442,
+          "native_index2_weight_over_lambda4": 2.0470198892360134,
+          "derived_index2_O2_weight": 0.029021653918339815
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.5,
+          "max_gap_error_over_t": 0.08304688767123936,
+          "error_over_lambda4": 1.3287502027398297,
+          "native_index2_weight_over_lambda4": 0.3023563417292525,
+          "derived_index2_O2_weight": 0.05363201103775572
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.35,
+          "max_gap_error_over_t": 0.01733223699547981,
+          "error_over_lambda4": 1.155001215858713,
+          "native_index2_weight_over_lambda4": 0.14006672183561938,
+          "derived_index2_O2_weight": 0.07130620444959987
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.2,
+          "max_gap_error_over_t": 0.0016959768384599005,
+          "error_over_lambda4": 1.0599855240374376,
+          "native_index2_weight_over_lambda4": 0.1020298766880743,
+          "derived_index2_O2_weight": 0.0846095413617735
+        },
+        {
+          "L": 8,
+          "lambda_z": 0.1,
+          "max_gap_error_over_t": 0.0001028804400677874,
+          "error_over_lambda4": 1.0288044006778738,
+          "native_index2_weight_over_lambda4": 0.09386558612229237,
+          "derived_index2_O2_weight": 0.08982467284070667
+        }
+      ],
+      "scope": "Finite selected-sector development comparison. Sorted eigenvalues, no complete-spectrum certificate. Index2 source comparison is valid near weak coupling; level reordering makes it invalid as an equal-mode comparison at strong coupling."
+    }
+  },
+  "scope": "Exact discrete symmetry, leading-theory readout, and frozen full-H finite anisotropy comparison; no bulk phase or physical scalar identification"
+}
+
+per_element: Exact rung projective symmetry and Pauli adjoint actions are checked algebraically.
+per_site: The full eight-state parity rung is used; extra global sector restrictions are not on-site reductions.
+per_mode: Leading XY source weights and finite finite-H comparison are separated in the structured output.
+per_block: Finite L8 through20 effective readout controls run; expensive native scan remains frozen provenance.
+lattice_wide: Infinite native spectra, physical state/readout supply and observational identification remain outside these finite controls.
+Count unit: completed finite probe groups; aggregate predicates and child assertions must all succeed.
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "base_revision": "abcec11eb9dbbd585c530f8003d0b0c18d703612",
+  "manifest_sha256": "860d1f08fd2f890532acbbf227db547b33b98338682e559db9b3372fc90445ea",
+  "notes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_robustness_publication/NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_ROBUSTNESS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "f9e6bf061f2c4485deb892cd76adbab7025bf795c93375aab6e35fe1df79ea43"
+    }
+  ],
+  "files": 6,
+  "provenance": 1,
+  "links": 9,
+  "nodes": 7256,
+  "edges": 16251,
+  "added_nodes": [
+    "common_product_robustness_bounded_theorem_note_2026-10-18"
+  ],
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical installed source/provenance/link/topology checks only. Scoped analytical and exact finite matrix checks separately pinned; no retained audit."
+}

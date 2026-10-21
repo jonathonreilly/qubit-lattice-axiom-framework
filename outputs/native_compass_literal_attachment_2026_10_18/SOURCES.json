@@ -1,0 +1,130 @@
+{
+  "schema_version": 2,
+  "base_revision": "3a5e00f2ea9ad521ba01458a7ff9108f7794d504",
+  "base_pr": 9756,
+  "main_revision": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "packet_destination": "outputs/native_compass_literal_attachment_2026_10_18",
+  "source_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934",
+  "status": "Selectively checked finite compass attachment with given literal K and independent positive edge-coefficient extension",
+  "files": [
+    {
+      "path": "native_weak_transverse_attachment/PROPOSAL.md",
+      "destination": "source_checks/native_weak_transverse_attachment/PROPOSAL.md",
+      "sha256": "323817300ff86682cca410da69aca9e99b484474e972bab0d263c9448c1297ed",
+      "bytes": 9857,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_weak_transverse_attachment/PROPOSAL.md"
+    },
+    {
+      "path": "native_weak_transverse_publication_draft/COROLLARY.md",
+      "destination": "source_checks/native_weak_transverse_publication_draft/COROLLARY.md",
+      "sha256": "4c557bf1dbfbc68378d6b600319be84ae074dd20dd39bb007649771e526c9e73",
+      "bytes": 7848,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_weak_transverse_publication_draft/COROLLARY.md"
+    },
+    {
+      "path": "native_weak_transverse_attachment_check/REVIEW.md",
+      "destination": "source_checks/native_weak_transverse_attachment_check/REVIEW.md",
+      "sha256": "4b2d7042321a21d3a55420a92b8496e076b215146da1be4353912dcd70b3dbb6",
+      "bytes": 18390,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_weak_transverse_attachment_check/REVIEW.md"
+    },
+    {
+      "path": "native_exterior_x_contacts/NOTE.md",
+      "destination": "source_checks/native_exterior_x_contacts/NOTE.md",
+      "sha256": "1d27903b2dbe3041bc76f8cf52085dc59a6bf0d3463a65c377e166f82a416af8",
+      "bytes": 13421,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_exterior_x_contacts/NOTE.md"
+    },
+    {
+      "path": "native_exterior_x_contacts/ACTUAL_ENVIRONMENT_ADDENDUM.md",
+      "destination": "source_checks/native_exterior_x_contacts/ACTUAL_ENVIRONMENT_ADDENDUM.md",
+      "sha256": "ab9a2d00dbf10754235adad790a6ba0d6bd67fd273aab1a7a5f0ab96a273d08f",
+      "bytes": 4618,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_exterior_x_contacts/ACTUAL_ENVIRONMENT_ADDENDUM.md"
+    },
+    {
+      "path": "native_microscopic_source_snapshots/NATIVE_CONSERVED_SCALAR_NOTE_2026-10-18.md",
+      "destination": "source_checks/native_microscopic_source_snapshots/NATIVE_CONSERVED_SCALAR_NOTE_2026-10-18.md",
+      "sha256": "1b579ec1901f2389b4fb058649b8ea78f0d0d0c4737e36c54af1c400bf4f795e",
+      "bytes": 6226,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_microscopic_source_snapshots/NATIVE_CONSERVED_SCALAR_NOTE_2026-10-18.md"
+    },
+    {
+      "path": "native_microscopic_source_snapshots/NATIVE_LOCAL_NORMALFORM_NOTE_2026-10-18.md",
+      "destination": "source_checks/native_microscopic_source_snapshots/NATIVE_LOCAL_NORMALFORM_NOTE_2026-10-18.md",
+      "sha256": "debd8448a97a982d23074582e983438cebc880a86cb03f44bfe9be57921d4d3d",
+      "bytes": 9105,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_microscopic_source_snapshots/NATIVE_LOCAL_NORMALFORM_NOTE_2026-10-18.md"
+    },
+    {
+      "path": "native_exterior_x_contacts_check/REVIEW.md",
+      "destination": "source_checks/native_exterior_x_contacts_check/REVIEW.md",
+      "sha256": "b5bbc7a528244cd95ad4efa55b6ca4ac63584ea0dfd35e785ff1818b180b91d4",
+      "bytes": 21362,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_exterior_x_contacts_check/REVIEW.md"
+    },
+    {
+      "path": "native_microscopic_source_snapshots/MANIFEST.json",
+      "destination": "source_checks/native_microscopic_source_snapshots/MANIFEST.json",
+      "sha256": "60971010858bfd2617eb63e8e1674ed42139363aabe9e5829b3304ca404cffc6",
+      "bytes": 707,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_microscopic_source_snapshots/MANIFEST.json"
+    },
+    {
+      "path": "native_inhomogeneous_attachment/PROPOSAL.md",
+      "destination": "source_checks/native_inhomogeneous_attachment/PROPOSAL.md",
+      "sha256": "62946d19efd9978639c55c03881eeb013f89487ddd56105018cca72cda34a4e3",
+      "bytes": 5612,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_inhomogeneous_attachment/PROPOSAL.md"
+    },
+    {
+      "path": "native_inhomogeneous_attachment_check/REVIEW.md",
+      "destination": "source_checks/native_inhomogeneous_attachment_check/REVIEW.md",
+      "sha256": "9708bf0524056a98db006b53628f243f5624f9162d8194dafcc6502ade386e03",
+      "bytes": 18337,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_inhomogeneous_attachment_check/REVIEW.md"
+    }
+  ],
+  "inherited": [
+    {
+      "path": "docs/LITERAL_DIRECT_GENERATOR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "1ba5a1d12cc728172144cd0c2b0f563523f009770f11cbe12db09fecef182bbc",
+      "scope": "K/W convention only"
+    }
+  ],
+  "note_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_compass_attachment_publication/NOTE.md",
+      "destination": "docs/NATIVE_COMPASS_LITERAL_ATTACHMENT_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "3a6c62874d679890679ee16e757745833afc40598cf75cb7894c9f4ec2b0b1db"
+    }
+  ],
+  "provenance": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_compass_attachment_publication/AUTHOR_NOTE.md",
+      "destination": "AUTHOR_NOTE.md",
+      "sha256": "c52c65367e89c02947505860baaf384c2c83abbcb42d29dc8d34adc5fae588ac"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_compass_attachment_publication/ROOT_APPENDIX.md",
+      "destination": "ROOT_APPENDIX.md",
+      "sha256": "624e8540b2aa8fcfc35da8fa14610436dbdb31ad3bfcaaf03add9147285b0965"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_compass_attachment_publication/INTEGRATION_RECORD.md",
+      "destination": "INTEGRATION_RECORD.md",
+      "sha256": "3ca411b5ecf4b6fa010a499066c8e77beaab23b5bcd0effbf9d30b387d6d996b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/native_compass_attachment_publication/PUBLICATION_CHECK.md",
+      "destination": "PUBLICATION_CHECK.md",
+      "sha256": "606e4cc449cd24aa8babc48a0c1219c518ec05aa5b7e5fcdd4f692bf5c841b38"
+    }
+  ],
+  "limits": [
+    "Given K and compass coefficients supplied; no microscopic derivation.",
+    "Finite calibrated window, not autonomous halt, capture, reset or reuse.",
+    "Full-space finite-volume estimate; no infinite-volume global dynamics claim.",
+    "Same-model source-exposed analytical checks; not physical validation or retained audit."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "G0": [
+    -0.281772204986684,
+    -0.08706810029145133
+  ],
+  "rows": [
+    {
+      "lam": 0.3,
+      "N": 148,
+      "converged": true,
+      "residual": 5.282716045548288e-13,
+      "energy": [
+        -3.95821742630802,
+        -0.0013256319320755121
+      ],
+      "width_over_lambda4": 0.09819495793151943,
+      "residue_over_lambda5": [
+        0.021829795501856944,
+        0.09559133108709386
+      ]
+    },
+    {
+      "lam": 0.2,
+      "N": 222,
+      "converged": true,
+      "residual": 7.014552863346107e-11,
+      "energy": [
+        -3.981433170294649,
+        -0.00039352603952831064
+      ],
+      "width_over_lambda4": 0.09838150988207764,
+      "residue_over_lambda5": [
+        0.021245961154532967,
+        0.09594164363388191
+      ]
+    },
+    {
+      "lam": 0.1,
+      "N": 444,
+      "converged": true,
+      "residual": 5.668674046278199e-12,
+      "energy": [
+        -3.9953593081909156,
+        -4.9260206456117596e-05
+      ],
+      "width_over_lambda4": 0.09852041291223518,
+      "residue_over_lambda5": [
+        0.020868863924969623,
+        0.09617716697572921
+      ]
+    },
+    {
+      "lam": 0.05,
+      "N": 888,
+      "converged": true,
+      "residual": 1.86581092456576e-09,
+      "energy": [
+        -3.9988399794256746,
+        -6.160035706717122e-06
+      ],
+      "width_over_lambda4": 0.09856057130747393,
+      "residue_over_lambda5": [
+        0.020769202514271636,
+        0.09624110521070825
+      ]
+    },
+    {
+      "lam": 0.025,
+      "N": 1777,
+      "converged": true,
+      "residual": 5.5692109822162856e-09,
+      "energy": [
+        -3.9997100157433794,
+        -7.700882292692551e-07
+      ],
+      "width_over_lambda4": 0.09857129334646463,
+      "residue_over_lambda5": [
+        0.020743621570776808,
+        0.09625772681443145
+      ]
+    }
+  ],
+  "scope": "Frequency-dependent analytically continued host-plus-linear-string coefficient model; higher native orders not included"
+}

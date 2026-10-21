@@ -1,0 +1,1197 @@
+{
+  "original_versions": [
+    {
+      "blob": "490849a74ff88cc1ec91670c59b46e7ea3fdbf07",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/docs/COMMON_PRODUCT_TWO_BODY_OPERATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "path": "docs/COMMON_PRODUCT_TWO_BODY_OPERATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "pr": 9725,
+      "sha256": "299339801b7f6714df652ab874a1a65ad504ceaf8ba934c08249dde458986899"
+    },
+    {
+      "blob": "1d1192fc87ad48b46ec8fdb4f67e49897b76265b",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/docs/audit/data/citation_graph_manifest.json",
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "pr": 9725,
+      "sha256": "9a522cf24b9b8e2fae48bc3a3b54d4bbccf1c2261d1532badb3999a864518fe5"
+    },
+    {
+      "blob": "fb18efa511788aa8b9e30cf33276e35e3b49d05e",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/AUTHOR_EXPOSURE.json",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/AUTHOR_EXPOSURE.json",
+      "pr": 9725,
+      "sha256": "aca31b764a17a54918e06bc67e96034168abda41d03bb02a658f75e7e485511d"
+    },
+    {
+      "blob": "6b41c6c7ec48c245d03434225560d954228fa4e2",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/AUTHOR_NOTE_21.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/AUTHOR_NOTE_21.md",
+      "pr": 9725,
+      "sha256": "7db80cf49a53d6958278d9a15134f424cc05a60b630427ea6b756138a50ee749"
+    },
+    {
+      "blob": "5c207478bca367c301b65b9edd4ace534270e4f2",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/INTEGRATION_RECORD.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/INTEGRATION_RECORD.md",
+      "pr": 9725,
+      "sha256": "a2d54119d7c373da3532d2fe5273383948d5d69de8a36ec2c280880c05793632"
+    },
+    {
+      "blob": "f7574b69290e9dc595010ee0c3b573cc24958c24",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/PUBLICATION_CHECK.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/PUBLICATION_CHECK.md",
+      "pr": 9725,
+      "sha256": "daaaf1005fcc1eb0335e9d4d61e6f8d1d7b3a4a2b6943a9bd48d67b87ddab7a1"
+    },
+    {
+      "blob": "08dc5c77eda07e1ca0e25579e4f29242d3d2bcac",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/SOURCES.json",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/SOURCES.json",
+      "pr": 9725,
+      "sha256": "cf1c24430ee5eb169e24d1bb7f1d86a8d568591d29bd17ae14a8e01a57a9b0c8"
+    },
+    {
+      "blob": "f90601978ef09f428baaaa536bcb2c883ff69139",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/VALIDATION.json",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/VALIDATION.json",
+      "pr": 9725,
+      "sha256": "3e7fabe6da6d4fbc1ab13063275f64f66f97a4fd1edaa16ab8cffc96e86eae04"
+    },
+    {
+      "blob": "b28a09bda0aa0517629a2b7a5b84632455747089",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_autonomous_loader_interface/PROPOSAL.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_autonomous_loader_interface/PROPOSAL.md",
+      "pr": 9725,
+      "sha256": "c97bffbbd02d1703103b4f59131706cdd9be8a19a937ea17382b6621df1bd83e"
+    },
+    {
+      "blob": "22d22ed6ade9fd4eb6fea99ea0f8b97b37696c28",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_autonomous_loader_interface_check/REVIEW.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_autonomous_loader_interface_check/REVIEW.md",
+      "pr": 9725,
+      "sha256": "7a98f648e21cf63b70d481b2cbaba8fac86376763cec0f50678f0ed49e9bd68f"
+    },
+    {
+      "blob": "d3a4d27610db6dd2915e7316de3bf06e41567555",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_boundary_input_contract/PROPOSAL.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_boundary_input_contract/PROPOSAL.md",
+      "pr": 9725,
+      "sha256": "b58d047e8b7d6598951f84cb5c275d9709fe19b9b99e0383558536b581332ad9"
+    },
+    {
+      "blob": "6a6f8f904e04d5fc71c915039bb7f88563e0209d",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_boundary_input_contract_check/REVIEW.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_boundary_input_contract_check/REVIEW.md",
+      "pr": 9725,
+      "sha256": "dcb52ff26e482a9d175d9e5c357624a51e2c5e40c8cbad72512853698ec2c901"
+    },
+    {
+      "blob": "29b88c02d5d5b91beef829f465a6dc63fc3eefe5",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_full_swap_gadget/PROPOSAL.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_full_swap_gadget/PROPOSAL.md",
+      "pr": 9725,
+      "sha256": "b54c6f29ea780efdcad7f33def048a0b5f9436fe8125ce3c2b2b416cabde4436"
+    },
+    {
+      "blob": "d9ee4620787a80c832b8a20659712523fb79256f",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_full_swap_gadget_check/REVIEW.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_full_swap_gadget_check/REVIEW.md",
+      "pr": 9725,
+      "sha256": "6dfaeacb3a3b1b2f2dfdcdf4c2f862b41687dac7a9dc08b35adae1865e4e90e3"
+    },
+    {
+      "blob": "05f424d769b14df844b50d14ecd450b4922f7298",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_full_swap_gadget_check/exact_paths.py",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_full_swap_gadget_check/exact_paths.py",
+      "pr": 9725,
+      "sha256": "8edbbd017adad9e2c9061e4f64eb94f9bf795bf9e042092294c33781a6942f7e"
+    },
+    {
+      "blob": "76037ff07332efd8b3ac68f3ba44fa83550c89e8",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_full_swap_gadget_check/exact_paths.txt",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_full_swap_gadget_check/exact_paths.txt",
+      "pr": 9725,
+      "sha256": "e462e64e99d32afccf96e1f0ebf93708409c7369dd045d63fc546b0b5f67ce13"
+    },
+    {
+      "blob": "43e11f2ca706e98e7419e2fe1b2d2ec0fefe5b2f",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization/PROPOSAL.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization/PROPOSAL.md",
+      "pr": 9725,
+      "sha256": "7e6769927d3138b2812e0b4a0db62df1ef4d1d7096b10acfa2269a5ca8a98d39"
+    },
+    {
+      "blob": "205abd7041415bd3507d347c5634f4d53c0e7704",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization_check/REVIEW.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization_check/REVIEW.md",
+      "pr": 9725,
+      "sha256": "f71cdc4e4039f923f99c8ed1f2abab9baedee9f8f9456c1d77ed6a9978b9fd58"
+    },
+    {
+      "blob": "a8f45b1764f9061a467c4e6df28c7318e28a79de",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization_check/exact_square.py",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization_check/exact_square.py",
+      "pr": 9725,
+      "sha256": "109b3f33919446f0c7cb7fa5cbcec5209df4f381bdbd145f5ab3661fb46f9ee3"
+    },
+    {
+      "blob": "ebd655b88d12862a62772126f21a4fe2cf6f629d",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization_check/exact_square.txt",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_bond_realization_check/exact_square.txt",
+      "pr": 9725,
+      "sha256": "4023c5f3fbd8eeabfe7feaa2d3cea77f694da7e1cece3ea5897dbf28e8247758"
+    },
+    {
+      "blob": "05b03fd5f88b135141d84070ee58935665017b17",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_loader_component_background/PROPOSAL.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_component_background/PROPOSAL.md",
+      "pr": 9725,
+      "sha256": "e7d3efb291b47ce6d6265b293ea448de917380ae5a36322664bee857ca7312aa"
+    },
+    {
+      "blob": "c317666d7368e0f654a8265e2ac88249d705e0e1",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_loader_component_background_check/REVIEW.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_loader_component_background_check/REVIEW.md",
+      "pr": 9725,
+      "sha256": "9fc08fb322d2e323d9f8cbaf1669c1b6bcc5954c6857296e5e9adb8e1821738b"
+    },
+    {
+      "blob": "a23da9e4b7eb5f808c341f69ff997512de8e4879",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_real_two_body_gauge/PROPOSAL.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_real_two_body_gauge/PROPOSAL.md",
+      "pr": 9725,
+      "sha256": "1cc8b14dabd52a73f90bedf0186d7c3c92d02a9608aa72ce01ff0303fa3fe1f3"
+    },
+    {
+      "blob": "67ece6e2e9976335659acf1a0dc48dbfe4125371",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_real_two_body_gauge_check/REVIEW.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_real_two_body_gauge_check/REVIEW.md",
+      "pr": 9725,
+      "sha256": "603671b279be1867d9aabca527ac0142bee3e9d915eccf4ed050a2d9ae29db4a"
+    },
+    {
+      "blob": "b40af88446a15dcdf2cc0b486b9e49398cae51e4",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_background_refinement/PROPOSAL.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_background_refinement/PROPOSAL.md",
+      "pr": 9725,
+      "sha256": "388ebae502c0687fbbf267294d36ad7c32ddfa3dc32c1cd5d8ffbf7cb7af15fa"
+    },
+    {
+      "blob": "ac40620750dcf6748dffce1fa71d667f66a2d328",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_background_refinement_check/REVIEW.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_background_refinement_check/REVIEW.md",
+      "pr": 9725,
+      "sha256": "39e5671ca6c4799ed011819a950af6743cb10eceb76c0e0465336bd8a1ba7f1e"
+    },
+    {
+      "blob": "233b521b059968911264efa29d4eb2bce12e5403",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_runtime_penalty_removal/PROPOSAL.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_runtime_penalty_removal/PROPOSAL.md",
+      "pr": 9725,
+      "sha256": "b74d8f05658f6718dfcb4d9a050c6ddca90a357eabeb9dfed9c042567b36d9bb"
+    },
+    {
+      "blob": "b8b623ea04581c3c2335f7d56268337135c6ba20",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_runtime_penalty_removal_check/REVIEW.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_runtime_penalty_removal_check/REVIEW.md",
+      "pr": 9725,
+      "sha256": "64174ac689b6894ebfdf69369bdeb6816501ce15388cce6db5dd232d651b4337"
+    },
+    {
+      "blob": "06df0b957dc8449b30549f005ba24f83889d7907",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_scaled_operation/PROPOSAL.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_scaled_operation/PROPOSAL.md",
+      "pr": 9725,
+      "sha256": "c1cbdb0eb1b7cc4b865c3ad8b8323b646eeff47e195c3239e297f007f0884bb7"
+    },
+    {
+      "blob": "71d7ddd392916627c8ea528e7790bc8316c059b8",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_scaled_operation_check/REVIEW.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/common_product_two_body_scaled_operation_check/REVIEW.md",
+      "pr": 9725,
+      "sha256": "4a1bc10174a72991ef77648188deedce151ad69f3e196ed572648064de6e2f4f"
+    },
+    {
+      "blob": "d677bca01e4e80ccdd0380b2670c1ec4142ae809",
+      "head": "24daf0bc43bf9eb2844abd55b93d01f91670f4f6",
+      "member": "pr9725/outputs/common_product_two_body_operation_2026_10_18/loader_gadget_prior_art/NOTE.md",
+      "path": "outputs/common_product_two_body_operation_2026_10_18/loader_gadget_prior_art/NOTE.md",
+      "pr": 9725,
+      "sha256": "eae61f1d6462a847157c09a0fb55fef0f8b63607c7941d24c29f994e807b1e85"
+    },
+    {
+      "blob": "696fc8178ade5bebfd87acc80d315ab78a63ac33",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/docs/COMMON_PRODUCT_PAIR_CAT_SELECTOR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "path": "docs/COMMON_PRODUCT_PAIR_CAT_SELECTOR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "pr": 9729,
+      "sha256": "ca6da55f212cf85e802e2883f3406f96d4c8c1d6c97c32b702ad60b50f3aa30b"
+    },
+    {
+      "blob": "493858278bcc73b0bbd3d6350d4151b9afc4f06e",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/docs/audit/data/citation_graph_manifest.json",
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "pr": 9729,
+      "sha256": "8565cb83fc919e34073548986ebebed98be1da944661e807d6a79bc5e98e380c"
+    },
+    {
+      "blob": "66db45e21f38377d8882d66598d8b646350c14df",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/AUTHOR_EXPOSURE.json",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/AUTHOR_EXPOSURE.json",
+      "pr": 9729,
+      "sha256": "c09415bfabcc44ea5af2859a53d5e244e1dccd071d05c1b853d5768250f5ad2d"
+    },
+    {
+      "blob": "ffab14c81c37aadea26759f792095fb10c6d13c5",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/AUTHOR_NOTE.md",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/AUTHOR_NOTE.md",
+      "pr": 9729,
+      "sha256": "7c081d77d856d1e58ef57ac60c5b1c3bbe3021dbdcf432e0f1d85b488937370a"
+    },
+    {
+      "blob": "fbde76860849eaa45d8416f75eac556c7125e060",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/INTEGRATION_RECORD.md",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/INTEGRATION_RECORD.md",
+      "pr": 9729,
+      "sha256": "652c1ebb1ea3f42582b1af3b1e30241a51d76c46f9bc3f2b47957c1589d1825c"
+    },
+    {
+      "blob": "40533bec76ccc973c01ad341b5b3ae27596a3840",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/ONSITE_EXPOSURE.json",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/ONSITE_EXPOSURE.json",
+      "pr": 9729,
+      "sha256": "43a397d074bcdef32ccd85fd4c380f9c41b15bf2f64962ba39a8c04ec40f1603"
+    },
+    {
+      "blob": "a5db19c323e10613a54c206b869acb9678b23cf9",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/ONSITE_NOTE.md",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/ONSITE_NOTE.md",
+      "pr": 9729,
+      "sha256": "b3c55f0a2221ea3723b366400b408a20b1aaea368716e402b0ca4ac83a19503f"
+    },
+    {
+      "blob": "0d7a628fa243a7fc56ad53c1c1519ad2dee4404f",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/PUBLICATION_CHECK.md",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/PUBLICATION_CHECK.md",
+      "pr": 9729,
+      "sha256": "82511849c60bd68ec75b95396ca85780be223ee0d338cf761c7cfa1088c25cbd"
+    },
+    {
+      "blob": "db268c79260169babdda4394b74e3a6ca32e89e8",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/SOURCES.json",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/SOURCES.json",
+      "pr": 9729,
+      "sha256": "05d12cd64176378cb79cd97edc387f3654113dfba89105764d4d152553194a22"
+    },
+    {
+      "blob": "399099c68e7a5f4e81c3a61fc2ecd1ed2c3ebb4d",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/VALIDATION.json",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/VALIDATION.json",
+      "pr": 9729,
+      "sha256": "3addb7686a7829e41499adff0fa80dfa8824abdf9e6661ede1267cae48c2517a"
+    },
+    {
+      "blob": "972c5f151a3caf72fdcbde73c0ff6f61f6ac44d5",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/common_product_pair_cat_selector/AUTHOR_PROPOSAL_V1.md",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/common_product_pair_cat_selector/AUTHOR_PROPOSAL_V1.md",
+      "pr": 9729,
+      "sha256": "ab95fdeab0146d06ba04177cae215ad577909cba9eb2fc2a826ca6177c43df2d"
+    },
+    {
+      "blob": "b4838d6f5b50f2a53abd282aeec121c8fa96eec9",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/common_product_pair_cat_selector/PROPOSAL.md",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/common_product_pair_cat_selector/PROPOSAL.md",
+      "pr": 9729,
+      "sha256": "8f0545c498bf6e6b4796e2c47fffedead122d3fdec0fb45607b853650e3b6a71"
+    },
+    {
+      "blob": "e064b21358af0b5ee625854cc35894825e12a9c9",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/common_product_pair_cat_selector_check/CORRECTION_CHECK.md",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/common_product_pair_cat_selector_check/CORRECTION_CHECK.md",
+      "pr": 9729,
+      "sha256": "819b86be97e53e187bbb68d4161006bfef127beb722e9034285995a824bc5999"
+    },
+    {
+      "blob": "679f18ef66ab9e4983aa5035d7477194407db105",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/common_product_pair_cat_selector_check/REVIEW.md",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/common_product_pair_cat_selector_check/REVIEW.md",
+      "pr": 9729,
+      "sha256": "0f7cd6b14562fbf50985ccb0aa1f53d1c642add92aa24fc0d1c1a90723980811"
+    },
+    {
+      "blob": "e90bdedc61016b0347c0aaf9bf0a4e7e8ed733f7",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/common_product_selector_exact_energy/PROPOSAL.md",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/common_product_selector_exact_energy/PROPOSAL.md",
+      "pr": 9729,
+      "sha256": "0ef4a6cdf6b2f228bb93e39f244720db533c47c6df3f8cb531b48ce8c424714c"
+    },
+    {
+      "blob": "6b8c434cc302e615d853fbc5060c44a7c5167f97",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/common_product_selector_exact_energy_check/REVIEW.md",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/common_product_selector_exact_energy_check/REVIEW.md",
+      "pr": 9729,
+      "sha256": "a0f095998b28ff7ede8f637713eaaf2f5a5de7a907f83afdbf72063547e04d56"
+    },
+    {
+      "blob": "00db72938268e75d6eebfea408272219acc51742",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/common_product_static_cat_selector/PROPOSAL.md",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/common_product_static_cat_selector/PROPOSAL.md",
+      "pr": 9729,
+      "sha256": "ab894394a2b2bd76dcc59b591f5d39d2aa070d7c1c3aa62528b76c99c6cd8c18"
+    },
+    {
+      "blob": "27f286572500d0327648a1d2eae3f06b65b48b4a",
+      "head": "7e70d3593ac780ff3b253c87dcdd64411579f261",
+      "member": "pr9729/outputs/common_product_pair_cat_selector_2026_10_18/common_product_static_cat_selector_check/REVIEW.md",
+      "path": "outputs/common_product_pair_cat_selector_2026_10_18/common_product_static_cat_selector_check/REVIEW.md",
+      "pr": 9729,
+      "sha256": "c34ef97e7ae4a3b96932e9904b79aacc18cae6b6ac0f8c999006395a2b1aa32a"
+    },
+    {
+      "blob": "b456584584a1ecbdc681b22ce1bfce6fc843b999",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/docs/COMMON_PRODUCT_AUTONOMOUS_CAT_PREPARER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "path": "docs/COMMON_PRODUCT_AUTONOMOUS_CAT_PREPARER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "pr": 9731,
+      "sha256": "3988e95bed568350de271e67de646c994b66797267f58110e0d37a82a5de4a7b"
+    },
+    {
+      "blob": "c73590f07697b7c65773dab0dbdfe996d29a89da",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/docs/audit/data/citation_graph_manifest.json",
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "pr": 9731,
+      "sha256": "3842ce3f3643f89ab1bb07def61bcfceaaff9660ce660476c62a639c3d2ed8b0"
+    },
+    {
+      "blob": "274b69fdc690a9dc7bf77c9b54bc3d27bb397008",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/AUTHOR_NOTE.md",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/AUTHOR_NOTE.md",
+      "pr": 9731,
+      "sha256": "438625572f38b23cc97699400e13b93070182584f33e53981b9f49fb44777fb4"
+    },
+    {
+      "blob": "6c34d98fe25be9d4b8b1511fe53c1fea06cfad4c",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/INTEGRATION_RECORD.md",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/INTEGRATION_RECORD.md",
+      "pr": 9731,
+      "sha256": "5b87e20868e0885b2596d81c6c3d71a194e676df24b11e655ff0a2e370896c77"
+    },
+    {
+      "blob": "c887692c23785310180585d8019bab516d6bd283",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/PUBLICATION_CHECK.md",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/PUBLICATION_CHECK.md",
+      "pr": 9731,
+      "sha256": "d5b9e195026755fa11fcefec0991d688f08b3b215ed469113e78b0601b3ded8e"
+    },
+    {
+      "blob": "cb15c6999aec32e7ccb41d34b9fdc39e1ef9ed9d",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/SOURCES.json",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/SOURCES.json",
+      "pr": 9731,
+      "sha256": "d9e8c3b688a45b5cdacf3a6e4c32f89e853a96ea408373229abe9d06e56ed821"
+    },
+    {
+      "blob": "cf28be536972b55766f5c9a599867a7037768cae",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/VALIDATION.json",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/VALIDATION.json",
+      "pr": 9731,
+      "sha256": "2e2fe3b0525941594c385b60b8d44a2cefcdea4e4defc75ed7bc7472f97e6281"
+    },
+    {
+      "blob": "dcfc46111df3475aa97c69dde96215adfd51070c",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer/PROPOSAL.md",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer/PROPOSAL.md",
+      "pr": 9731,
+      "sha256": "d4e708583626102d5f09d6f98c56e25fadb36895fdb437d07b69c0e345ef96af"
+    },
+    {
+      "blob": "9f6c35dad59a93eb1c319b1e97c27e642097d6f8",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_check/REVIEW.md",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_check/REVIEW.md",
+      "pr": 9731,
+      "sha256": "1f606fc5146becf42420d36411011d2a376b121d0c44bd8a7e1dad2c5f6fd59f"
+    },
+    {
+      "blob": "c2d0b6afc0ddb35f03e4e939491a2deaf9c9a894",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_finite/PROPOSAL.md",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_finite/PROPOSAL.md",
+      "pr": 9731,
+      "sha256": "942a98e3d2d84bfe4e2393bf6cd4119c8c2fd63e5589031280272b7582914459"
+    },
+    {
+      "blob": "45ce0f7d8197518ff425ce98f413a46ec024aafd",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_finite_check/REVIEW.md",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_finite_check/REVIEW.md",
+      "pr": 9731,
+      "sha256": "cf436d95d6f1feaa13d917a71d5928bce05204fd454f97ee506b71bd389d062d"
+    },
+    {
+      "blob": "6623a9bee9427a05d0b42f5a3edee33a268ae052",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_geometry/COORDINATES.json",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_geometry/COORDINATES.json",
+      "pr": 9731,
+      "sha256": "f8b3c4579e82abd999ebacd403b0fd040d101d37b8f43301c287ff247bcaecc5"
+    },
+    {
+      "blob": "777185ffc8ba24086fb47cf3da12c53e6b1b5908",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_geometry/PROPOSAL.md",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_geometry/PROPOSAL.md",
+      "pr": 9731,
+      "sha256": "0bc68860f2cc55b7895f6f184fe464f810b3a02d4ca7c49bab153864c092125b"
+    },
+    {
+      "blob": "b991424e3bba7120a48102874c0ccc49966cead1",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_geometry/RESULT.json",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_geometry/RESULT.json",
+      "pr": 9731,
+      "sha256": "4a136378609119999a12b41ac97e31d2cc284dd5261da5bab10bc619e1ffdd2a"
+    },
+    {
+      "blob": "b5b806d274e69dcc68752cb115ebd52a455f6e2d",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_geometry/validate.py",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_geometry/validate.py",
+      "pr": 9731,
+      "sha256": "08c24b6d0f3bdc738c76946608ce13338825b2c869cedc4c7dd3b51a126bdceb"
+    },
+    {
+      "blob": "420ffbad8c9d42f247088348d91b9379a92a7611",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_geometry_check/RESULT.json",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_geometry_check/RESULT.json",
+      "pr": 9731,
+      "sha256": "99a39a56cde45b415a702bc27a8750ccbfeb3d262447b99c8c8bea981a884956"
+    },
+    {
+      "blob": "20cc7216b96e4cdf779b8bdab269565705dfb29e",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_geometry_check/REVIEW.md",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_geometry_check/REVIEW.md",
+      "pr": 9731,
+      "sha256": "cac4a38481c064dec912f6c1dafc1b446dbebfc39bfa7a4754c4b76d0f87fe3f"
+    },
+    {
+      "blob": "7a3dae93cb0a9ee6a602f20a4dd0087bb319bd93",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_geometry_check/interval_check.py",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_geometry_check/interval_check.py",
+      "pr": 9731,
+      "sha256": "cdda6cba3fc601b7afc74fe8d26a14108633dc281978b72651785a79bfc5601e"
+    },
+    {
+      "blob": "ea5a7e92c93f970e27fb2a185c1dce02ed6c6dba",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_signs/PROPOSAL.md",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_signs/PROPOSAL.md",
+      "pr": 9731,
+      "sha256": "edd08f803adc9dcd9a92d2d4a9f8a119d0ddc96e4a2adc5e4aee39a43f63989a"
+    },
+    {
+      "blob": "a9db576cb600e6756fbb3d2aeba6666d9f8ce4ac",
+      "head": "077043635c0f4e12c175d1ded3ab06221137bd1e",
+      "member": "pr9731/outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_signs_check/REVIEW.md",
+      "path": "outputs/common_product_autonomous_cat_preparer_2026_10_18/source_checks/common_product_autonomous_cat_preparer_signs_check/REVIEW.md",
+      "pr": 9731,
+      "sha256": "ced2bd921f0971557260555403b7da1a97328f16a2fb3e6d397cc08abb473a27"
+    },
+    {
+      "blob": "607df6eff4e8206de8dce371e22f99ddb1b228b7",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/docs/COMMON_PRODUCT_DIRECT_LOADER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "path": "docs/COMMON_PRODUCT_DIRECT_LOADER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "pr": 9733,
+      "sha256": "35db7f3123f877bdbc16c51056de8267dcebd265b51ded4822b35dfd917d77ca"
+    },
+    {
+      "blob": "db464094b975ebdd98e3076d14374c2283e60c44",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/docs/audit/data/citation_graph_manifest.json",
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "pr": 9733,
+      "sha256": "e338915b87ce2ad609613bdf060930466085181130f8a8f28a46fd539e6106f1"
+    },
+    {
+      "blob": "44df1d09ed4e576f8acbf8f5e315d08e8baca61a",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/AUTHOR_NOTE.md",
+      "path": "outputs/common_product_direct_loader_2026_10_18/AUTHOR_NOTE.md",
+      "pr": 9733,
+      "sha256": "a939310892d0d0dd6a424361777e40a76321091c4be65f447536382a22098982"
+    },
+    {
+      "blob": "c378d83dc4ce648ec9302878f5f286887d323a85",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/INTEGRATION_RECORD.md",
+      "path": "outputs/common_product_direct_loader_2026_10_18/INTEGRATION_RECORD.md",
+      "pr": 9733,
+      "sha256": "242fb2078d397fbca8e846252cd41f2e7db14d74b10a03f90cc067e98ca328d6"
+    },
+    {
+      "blob": "9c833115f9dbd340705f6977ba1feaf05efbd9b2",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/PUBLICATION_CHECK.md",
+      "path": "outputs/common_product_direct_loader_2026_10_18/PUBLICATION_CHECK.md",
+      "pr": 9733,
+      "sha256": "23738fd1395c4a4c28d932d407daeb05429fc866d7ea382c07124d63530f8bd5"
+    },
+    {
+      "blob": "d84f02dc6df0a17639f651f9d487d2d69a726bb6",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/SOURCES.json",
+      "path": "outputs/common_product_direct_loader_2026_10_18/SOURCES.json",
+      "pr": 9733,
+      "sha256": "370d61ee4e147edb5d081dcbf4e2da877e70ff23a258ad598ed30890cc6bf47c"
+    },
+    {
+      "blob": "4929fcb785b718d29a32ccecb4c437f26bf18458",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/VALIDATION.json",
+      "path": "outputs/common_product_direct_loader_2026_10_18/VALIDATION.json",
+      "pr": 9733,
+      "sha256": "6c57371af43cee2745ecaf36a2a31b66eb1614534cdce160b95ec5a87af7b4a1"
+    },
+    {
+      "blob": "b3ead7e0b5a807b95da8cc14ea54fad4257ef2fa",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_loader_branch_instantiation/PROPOSAL.md",
+      "path": "outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_loader_branch_instantiation/PROPOSAL.md",
+      "pr": 9733,
+      "sha256": "a630d90f122853a998f8d598da13d5876247c53117663c6483967b1d34d2c791"
+    },
+    {
+      "blob": "2fc36d92fc8e01ea04864d649d2803c5f47c8cdc",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_loader_branch_instantiation_check/REVIEW.md",
+      "path": "outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_loader_branch_instantiation_check/REVIEW.md",
+      "pr": 9733,
+      "sha256": "ea9d95003927c61e71f3531b8b501ca83cfff69e2ef33dcf5ee81029757e6ca3"
+    },
+    {
+      "blob": "1890492d19c73abe335d5237195ff9c6926352b0",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_loader_range21/PROPOSAL.md",
+      "path": "outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_loader_range21/PROPOSAL.md",
+      "pr": 9733,
+      "sha256": "fe506b9dcff78e88c9d01a15563a9b186a9b42c38263575279c63090c2ff901e"
+    },
+    {
+      "blob": "0831402dc5c693bb8aab62533d67c1498d8ef799",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_loader_range21_check/REVIEW.md",
+      "path": "outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_loader_range21_check/REVIEW.md",
+      "pr": 9733,
+      "sha256": "f5b4a6fbda3a25a198f15bc26e9d393e38743a783207fdf8f52df6dd501bbdc6"
+    },
+    {
+      "blob": "bb03745ba6e641d9402948f97dcc26f3596f1dc3",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_loader_uniform_branch/PROPOSAL.md",
+      "path": "outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_loader_uniform_branch/PROPOSAL.md",
+      "pr": 9733,
+      "sha256": "51872d1fa2af85f915d792b47e333c6539339ed75194ebaa666e691bf1941403"
+    },
+    {
+      "blob": "227b4e08e3612c83aae7286f877225f9f124d788",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_loader_uniform_branch_check/REVIEW.md",
+      "path": "outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_loader_uniform_branch_check/REVIEW.md",
+      "pr": 9733,
+      "sha256": "0d125a9714379c6627dc137f4af0ad90a8916f08fb3439b25e51f628713e7d34"
+    },
+    {
+      "blob": "7dc71c3d84d18d4f37293a9a89a409803c24f96d",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_two_body_loader/PROPOSAL.md",
+      "path": "outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_two_body_loader/PROPOSAL.md",
+      "pr": 9733,
+      "sha256": "89489c13a6450f142c8ac2212ee680bc7272addcff30c53fcb01e52dff4ee7a9"
+    },
+    {
+      "blob": "5942f12db74854f87411ca58b068d325361b1c6b",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_two_body_loader_check/REVIEW.md",
+      "path": "outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_two_body_loader_check/REVIEW.md",
+      "pr": 9733,
+      "sha256": "9818c72551eec2d2be17224dde6e07335f1ff7157b94a91c4a372aff3873343d"
+    },
+    {
+      "blob": "39ac3ca07370ba43cd0143464880862726eba8ac",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_two_body_loader_finite/PROPOSAL.md",
+      "path": "outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_two_body_loader_finite/PROPOSAL.md",
+      "pr": 9733,
+      "sha256": "1b168c4ac2e606ee3905c104f90879fe5731c9113318e37566add92f681dd77b"
+    },
+    {
+      "blob": "42330240c312ade7c45e682c90564df62e0094ba",
+      "head": "23b64908b51b6ea563127b351336d85b29079919",
+      "member": "pr9733/outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_two_body_loader_finite_check/REVIEW.md",
+      "path": "outputs/common_product_direct_loader_2026_10_18/source_checks/common_product_direct_two_body_loader_finite_check/REVIEW.md",
+      "pr": 9733,
+      "sha256": "cf1095dcdd74d6969257dfce0797f7a406f2d33a946bfdf352413f1d47dd38ca"
+    },
+    {
+      "blob": "1e121d7aa5aa9b248fde5fe7238abbff99953b1d",
+      "head": "505b96162c4ca7742515572b79d0f71f8b0a85f4",
+      "member": "pr9734/docs/DIRECT_LOADER_RESONANT_OPERATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "path": "docs/DIRECT_LOADER_RESONANT_OPERATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "pr": 9734,
+      "sha256": "25b2345d566e1597d34bd2158bce053a011cc4c57da7a65468f69bfd2a6b77f7"
+    },
+    {
+      "blob": "84aa6aa0c653e08684e6932de8076014ccaaa612",
+      "head": "505b96162c4ca7742515572b79d0f71f8b0a85f4",
+      "member": "pr9734/docs/audit/data/citation_graph_manifest.json",
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "pr": 9734,
+      "sha256": "c5739b268a19f6ac64f52453bc1b502cf183f91b9e4c3740014a2eb3a1ea7a40"
+    },
+    {
+      "blob": "a1cf4908a6908dec64e1c99bb8daa358bbc41bdf",
+      "head": "505b96162c4ca7742515572b79d0f71f8b0a85f4",
+      "member": "pr9734/outputs/direct_loader_resonant_operation_2026_10_18/AUTHOR_NOTE.md",
+      "path": "outputs/direct_loader_resonant_operation_2026_10_18/AUTHOR_NOTE.md",
+      "pr": 9734,
+      "sha256": "e65b70c9f978b29998ac8e097e2d22c327091d59b4cd7f1d70725319d47e8087"
+    },
+    {
+      "blob": "6f9e382d7ceb0cd1319741d11f4e299dee6a168e",
+      "head": "505b96162c4ca7742515572b79d0f71f8b0a85f4",
+      "member": "pr9734/outputs/direct_loader_resonant_operation_2026_10_18/INTEGRATION_RECORD.md",
+      "path": "outputs/direct_loader_resonant_operation_2026_10_18/INTEGRATION_RECORD.md",
+      "pr": 9734,
+      "sha256": "386facb91b4ffad2519442857088aaf5815099e151d87f4c3b4564ba5c100bc0"
+    },
+    {
+      "blob": "6bd0e290dfcd01b6ce816cafec10cf5534bb434c",
+      "head": "505b96162c4ca7742515572b79d0f71f8b0a85f4",
+      "member": "pr9734/outputs/direct_loader_resonant_operation_2026_10_18/PUBLICATION_CHECK.md",
+      "path": "outputs/direct_loader_resonant_operation_2026_10_18/PUBLICATION_CHECK.md",
+      "pr": 9734,
+      "sha256": "7f14257d29cacec692d43da52d26b01631324922dd6898164bb513c3ac76c000"
+    },
+    {
+      "blob": "dd7a91f738a4f4a55c41e85901e8128157682ecc",
+      "head": "505b96162c4ca7742515572b79d0f71f8b0a85f4",
+      "member": "pr9734/outputs/direct_loader_resonant_operation_2026_10_18/SOURCES.json",
+      "path": "outputs/direct_loader_resonant_operation_2026_10_18/SOURCES.json",
+      "pr": 9734,
+      "sha256": "aff5bfd0718c72a64dba96303c01234189f9e0aceea92b01c13d4760badceaec"
+    },
+    {
+      "blob": "9534ba3d726001eab4b841219528ece8af62caf1",
+      "head": "505b96162c4ca7742515572b79d0f71f8b0a85f4",
+      "member": "pr9734/outputs/direct_loader_resonant_operation_2026_10_18/VALIDATION.json",
+      "path": "outputs/direct_loader_resonant_operation_2026_10_18/VALIDATION.json",
+      "pr": 9734,
+      "sha256": "c3394d590d6eddadfeac9d7c442c6a27bcd586f003de11496c280e3ba233c6fe"
+    },
+    {
+      "blob": "51087cc4361c342b6b2158ef2fc7a951bf378252",
+      "head": "505b96162c4ca7742515572b79d0f71f8b0a85f4",
+      "member": "pr9734/outputs/direct_loader_resonant_operation_2026_10_18/source_checks/common_product_direct_loader_resonant_jets/PROPOSAL.md",
+      "path": "outputs/direct_loader_resonant_operation_2026_10_18/source_checks/common_product_direct_loader_resonant_jets/PROPOSAL.md",
+      "pr": 9734,
+      "sha256": "315de10538a430d80fad26f8fd10d932280bf6ec61d234568af2580caa36e0ad"
+    },
+    {
+      "blob": "50769456e44b9e25d8f475d7784983c9aeea7e25",
+      "head": "505b96162c4ca7742515572b79d0f71f8b0a85f4",
+      "member": "pr9734/outputs/direct_loader_resonant_operation_2026_10_18/source_checks/common_product_direct_loader_resonant_jets_check/REVIEW.md",
+      "path": "outputs/direct_loader_resonant_operation_2026_10_18/source_checks/common_product_direct_loader_resonant_jets_check/REVIEW.md",
+      "pr": 9734,
+      "sha256": "53de84d8f03b3314c9bc7ce06b78cf31d3f6341675d4d93dad1ef9f514e48d89"
+    },
+    {
+      "blob": "ac5307f4dfe3d59ea5357abba7afacef38bb39aa",
+      "head": "505b96162c4ca7742515572b79d0f71f8b0a85f4",
+      "member": "pr9734/outputs/direct_loader_resonant_operation_2026_10_18/source_checks/common_product_direct_loader_resonant_operation/PROPOSAL.md",
+      "path": "outputs/direct_loader_resonant_operation_2026_10_18/source_checks/common_product_direct_loader_resonant_operation/PROPOSAL.md",
+      "pr": 9734,
+      "sha256": "a1892b53dd9d71f151dd06405535d59dbd77ebbf9ab593fd1e3979368943e50e"
+    },
+    {
+      "blob": "6978f98f87b715660577dc51dc1fa1c8c064c8dd",
+      "head": "505b96162c4ca7742515572b79d0f71f8b0a85f4",
+      "member": "pr9734/outputs/direct_loader_resonant_operation_2026_10_18/source_checks/common_product_direct_loader_resonant_operation_check/REVIEW.md",
+      "path": "outputs/direct_loader_resonant_operation_2026_10_18/source_checks/common_product_direct_loader_resonant_operation_check/REVIEW.md",
+      "pr": 9734,
+      "sha256": "3542538a16a3419afb69d49facffc38898e137480c00959e9de7df96c3499652"
+    },
+    {
+      "blob": "9abfb66184cdc5fd7f041e334597e07c76288fe0",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/docs/EXACT_TWO_BODY_ENGINEERED_LOADER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "path": "docs/EXACT_TWO_BODY_ENGINEERED_LOADER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "pr": 9737,
+      "sha256": "43558ea59ebee23bf539d27ba1818a06b914fff52bb87d251b959b4889f3b868"
+    },
+    {
+      "blob": "331047c450949737f075ca955ca813d7cad0df13",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/docs/audit/data/citation_graph_manifest.json",
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "pr": 9737,
+      "sha256": "f426afd01ed15567717c8771522edae37dc604a4ec7fe923e5d6250596c5adbd"
+    },
+    {
+      "blob": "7eb26a3d2229e130cc2c1f7657b851e652c844d9",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/AUTHOR_NOTE.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/AUTHOR_NOTE.md",
+      "pr": 9737,
+      "sha256": "0c01822cd7168a7cfd1987d79549ebdad6ef1796f58a5e353360b65b45fb0b92"
+    },
+    {
+      "blob": "ee16e7b14327dab37114903f618e171dd3423b13",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/INTEGRATION_RECORD.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/INTEGRATION_RECORD.md",
+      "pr": 9737,
+      "sha256": "135913fd30a03f6d6bb811d12152d5a38cb057a87b9e6eaf09deb3caa4548627"
+    },
+    {
+      "blob": "4ca5f26a5c47bce1ff79988ff056d64d87ad7c6d",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/PUBLICATION_CHECK.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/PUBLICATION_CHECK.md",
+      "pr": 9737,
+      "sha256": "936473983a67998f0b6ef3ae4d3d9af152ce06fde37322cb8bcc307f0756b2fe"
+    },
+    {
+      "blob": "cd70234a1c3b271a5a207e8ac8467754fbb5aa02",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/SOURCES.json",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/SOURCES.json",
+      "pr": 9737,
+      "sha256": "cbf98858ecf01dcc626eb245d6d8a65e0c91e7adaf9ac8fca108c59d72a4112f"
+    },
+    {
+      "blob": "910022137d77163b416375589950975e59792d06",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/VALIDATION.json",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/VALIDATION.json",
+      "pr": 9737,
+      "sha256": "b1dcf2c29b50c3a57326a72ccab7fb16482a74899c04475d7a3721387a28daca"
+    },
+    {
+      "blob": "52e0e3bcbbf163dbc23a9e9feca2c1d556c27bd9",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_engineered_clock_dwell_tradeoff/PROPOSAL.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_engineered_clock_dwell_tradeoff/PROPOSAL.md",
+      "pr": 9737,
+      "sha256": "d739d552cc04424cb659f4107174d1dbe04756c0409704437176364aba0e0c25"
+    },
+    {
+      "blob": "59f1800c73f238981165039bac2622434fb2b7b3",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_engineered_clock_dwell_tradeoff_check/REVIEW.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_engineered_clock_dwell_tradeoff_check/REVIEW.md",
+      "pr": 9737,
+      "sha256": "7db9b3a4aaa62a0ae9e7c665a9767cc2ee5d65ee6f75960e97a8834648d48f46"
+    },
+    {
+      "blob": "94d394ab93ed185fb2e4cde515665483e2b51470",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_engineered_clock_operation/PROPOSAL.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_engineered_clock_operation/PROPOSAL.md",
+      "pr": 9737,
+      "sha256": "b8bbfb7d40c491aff6b893df6423b98e68edad91ef6596124dac10f3620c53f8"
+    },
+    {
+      "blob": "22f6adc5a31dccc6ed81aa59e390f57778d7bfb9",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_engineered_clock_operation_check/REVIEW.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_engineered_clock_operation_check/REVIEW.md",
+      "pr": 9737,
+      "sha256": "8351f91d29bbb570f8e9970962c2e0e24ea0db8dd06744d2180df761eae9272a"
+    },
+    {
+      "blob": "8e50d100fcafac15ece1ed1989f871516999beda",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_loader_structured_coefficients/PROPOSAL.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_loader_structured_coefficients/PROPOSAL.md",
+      "pr": 9737,
+      "sha256": "515c9e17df0a0c12e7df0dab6431015348af4140cef69189d334cd3574ea3de2"
+    },
+    {
+      "blob": "1e91c328d2ff284355d0d42257c38972e8e4c276",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_loader_structured_coefficients_check/REVIEW.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_loader_structured_coefficients_check/REVIEW.md",
+      "pr": 9737,
+      "sha256": "273da0a0d28269e6e40aff0695f5465456acd35abe4c0b4eddc1acf0578334c8"
+    },
+    {
+      "blob": "4540715fb2323e88af72d46bb724b8390d5c0620",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_two_body_direct_loader_composition/PROPOSAL.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_two_body_direct_loader_composition/PROPOSAL.md",
+      "pr": 9737,
+      "sha256": "f874302baf42f962939fb0c9497b2c4f55283ed9189671048faadeeb04eca946"
+    },
+    {
+      "blob": "27d37f989a4084be3d8ac6f64b396f12c3c251fc",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_two_body_direct_loader_composition_check/REVIEW.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_two_body_direct_loader_composition_check/REVIEW.md",
+      "pr": 9737,
+      "sha256": "41a080068c63261491aeaa04b9c4b397fb31de03f160724be0024b81020e73f6"
+    },
+    {
+      "blob": "35e7d34776445cc5ecfc01a9897a4f3e34e3669f",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_two_body_gate_diamond/PROPOSAL.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_two_body_gate_diamond/PROPOSAL.md",
+      "pr": 9737,
+      "sha256": "7fa888681833216ded21fab0028f18ad079fde94b7f884a391c83196fb5a3e33"
+    },
+    {
+      "blob": "6577cf516ad88736a3c114882c6689083969dee8",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_two_body_gate_diamond_check/REVIEW.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_two_body_gate_diamond_check/REVIEW.md",
+      "pr": 9737,
+      "sha256": "da5cbc9bcb0f66442da600191c4b863ed7c22a5a4bba0d024a0c683cf71b1945"
+    },
+    {
+      "blob": "1d9347a93ac833b7235b7317c0a0e31417ae0c78",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_two_body_gate_matched_extension/PROPOSAL.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_two_body_gate_matched_extension/PROPOSAL.md",
+      "pr": 9737,
+      "sha256": "a1157d95d06e7eeced6217ec2fb7b43247619a74cd9aded3eeb811a68ba6075e"
+    },
+    {
+      "blob": "7188654dcb63d2a8d3c79089cb4e58f9d36705de",
+      "head": "0de2d6c9d0ac308bccd5c721217150cb63dfcf26",
+      "member": "pr9737/outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_two_body_gate_matched_extension_check/REVIEW.md",
+      "path": "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_two_body_gate_matched_extension_check/REVIEW.md",
+      "pr": 9737,
+      "sha256": "36a1f3585c9ddde455078c72e7f48dc2b2cd8bfd1165026f4d3f60c6dbc6c77f"
+    },
+    {
+      "blob": "6227100aae01eb01d96a85450d3a4829c1c88a29",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/docs/EXACT_LOADER_CLOCK_TRADEOFFS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "path": "docs/EXACT_LOADER_CLOCK_TRADEOFFS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "pr": 9741,
+      "sha256": "e89aadfcfb49096cdf7cd9831d1317d7063a5cc9d229b16f200761dadb39e23c"
+    },
+    {
+      "blob": "e24f62ad49207a93a02188c23d8f193b436a0935",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/docs/audit/data/citation_graph_manifest.json",
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "pr": 9741,
+      "sha256": "80fbe806969e8785b1b8523e1fb8f485018c33580d42d1ac8bd6f66f94d9ca87"
+    },
+    {
+      "blob": "5c2d691d5ddd9982a758f61960de46c96c48f0b2",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/AUTHOR_NOTE.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/AUTHOR_NOTE.md",
+      "pr": 9741,
+      "sha256": "34a8ba3eb1fb64b1f7ca32aced642af27c7fc159cb6fbe8353da5b3e734b8b59"
+    },
+    {
+      "blob": "e4a3b7fb6ecbe42a9c64c463b332df7fc6faf3ed",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/INTEGRATION_RECORD.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/INTEGRATION_RECORD.md",
+      "pr": 9741,
+      "sha256": "5eec606276fe2cd659c4816170f20dc1eaf0f42dee1059f846407da17845e944"
+    },
+    {
+      "blob": "54bc865fc408b3061c8d0b2203dae95594183281",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/PUBLICATION_CHECK.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/PUBLICATION_CHECK.md",
+      "pr": 9741,
+      "sha256": "5d71bab2efbcdbbb7733d469b2f0b4b15676696dfeabc5c388ba13c6f62a34a3"
+    },
+    {
+      "blob": "b22fcfb72bc30086f49df1ac5f164412e2e03b22",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/SOURCES.json",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/SOURCES.json",
+      "pr": 9741,
+      "sha256": "b9cce909916fa3a38fb142072399c9b6204a2c07e4993a172d97ab4b129071df"
+    },
+    {
+      "blob": "41dd2adeee14d758c01005ad8ef189fc2515aeba",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/VALIDATION.json",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/VALIDATION.json",
+      "pr": 9741,
+      "sha256": "264f4926140362ba373b19999f1dbd36437a0105ce7b6487627d6c317900d9c6"
+    },
+    {
+      "blob": "5c753b75e7173c02a3be2a7ebaf05a707e95e8c6",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/bandcenter_reference_measure_check/REVIEW.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/bandcenter_reference_measure_check/REVIEW.md",
+      "pr": 9741,
+      "sha256": "1953d153c9ac8583202e7ca18bff62829bfbff2373691cc43a5ae152a2a6b0ae"
+    },
+    {
+      "blob": "2dea35964c21f9f0a30303e62ba38a670a63e029",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_endpoint_launch/PROPOSAL.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_endpoint_launch/PROPOSAL.md",
+      "pr": 9741,
+      "sha256": "fb72f4ed4af9d6f00d6430ec4997fab3f8fbb978b140692b083ddda5e324e9e4"
+    },
+    {
+      "blob": "6511afd36a3da53f3c74b59169e230dbb41f524b",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_endpoint_launch_check/REVIEW.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_endpoint_launch_check/REVIEW.md",
+      "pr": 9741,
+      "sha256": "51247de9ba58bbfeb7f731c478d939e05e2e9d90956192d2e9e6f612401662c1"
+    },
+    {
+      "blob": "a1602807e84430247c08c61973e352e95c257fa5",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_outgoing_pole_tail/PROPOSAL.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_outgoing_pole_tail/PROPOSAL.md",
+      "pr": 9741,
+      "sha256": "b2622fbb513ef30840ba719fb6f7725e9dba24cf74ebe48be5e790c0fa3e4b80"
+    },
+    {
+      "blob": "26ef8dbdb2e728d0b0345dab751ffaab0436209c",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_outgoing_pole_tail_check/REVIEW.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_outgoing_pole_tail_check/REVIEW.md",
+      "pr": 9741,
+      "sha256": "0071e81532263d56c37690be97aa25e30ed56a7fa6c394dbfc9243a646e62d00"
+    },
+    {
+      "blob": "f54eb5a9d5562067b07cc5d0f652af14fccd9d31",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_resonant_halfline_tails/PROPOSAL.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_resonant_halfline_tails/PROPOSAL.md",
+      "pr": 9741,
+      "sha256": "43c0cc0560ccd6b9ce33345796f511fba63c5fa7360f9225e8d9b30ec1bf33b1"
+    },
+    {
+      "blob": "a04dfb3e550f41b034471f0f3a79697430975364",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_resonant_halfline_tails_check/REVIEW.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_resonant_halfline_tails_check/REVIEW.md",
+      "pr": 9741,
+      "sha256": "1fa285544e38728389fb6bb9928b8bbd1e6a9612beb12cfde7532439b0935f9b"
+    },
+    {
+      "blob": "46e426a24bc1d3aa3e7ae8a7d55612bfb18712f7",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_resonant_late_tails/PROPOSAL.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_resonant_late_tails/PROPOSAL.md",
+      "pr": 9741,
+      "sha256": "a03139261c649546c00b7a15bef01c4a7387dfa6cc267f5c20e82f88b65f02d9"
+    },
+    {
+      "blob": "404cad66d87d108259252f1cfe3cfd01ef40930b",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_resonant_late_tails_check/REVIEW.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/common_product_resonant_late_tails_check/REVIEW.md",
+      "pr": 9741,
+      "sha256": "ef27352b742abe064e5b8d71d09d7904182cea49c9dce2c77187aab8494b34cd"
+    },
+    {
+      "blob": "44c35d2cb54735f5c50ab58b4b40afc7d5e4ef09",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_engineered_loader_robust_policy/PROPOSAL.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_engineered_loader_robust_policy/PROPOSAL.md",
+      "pr": 9741,
+      "sha256": "e69fa0e34d3fdb8d205cd1a8a5e26ea2efd3f3963a279b0d5edcf5d12ddbdc06"
+    },
+    {
+      "blob": "66270161d299d1e363a0673fce68b416f874e080",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_engineered_loader_robust_policy_check/REVIEW.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_engineered_loader_robust_policy_check/REVIEW.md",
+      "pr": 9741,
+      "sha256": "040de776f54dd19c241837eef77338aec6e2480a4e25b3d3009c9341a1d8a460"
+    },
+    {
+      "blob": "b3dfd242742d42e6465ca4cf4adfab7ac82c6740",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_engineered_loader_robust_policy_check/ROOT_ARITHMETIC_CORRECTION.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_engineered_loader_robust_policy_check/ROOT_ARITHMETIC_CORRECTION.md",
+      "pr": 9741,
+      "sha256": "0376cf28e128a19750d5a72676afd1a4b9a60817369dea40a1711e90d3ef5455"
+    },
+    {
+      "blob": "ead841eb7452d56357ceb5127149fb82be16ebd7",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_loader_publication/PUBLISHED.json",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_loader_publication/PUBLISHED.json",
+      "pr": 9741,
+      "sha256": "67e7830958c8a8dfed42764f21291e0abbd762fb7d3b0c2fa24e384e588b3d82"
+    },
+    {
+      "blob": "bb91249f17bc73e3454f177852904315ddbec19c",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_uniform_chain_finite_launch/PROPOSAL.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_uniform_chain_finite_launch/PROPOSAL.md",
+      "pr": 9741,
+      "sha256": "bda916e331d0bf3863feac8e0b7dce279df6f2eaa94f0dd17daf651cad51545a"
+    },
+    {
+      "blob": "efea2066342b9a09815c6cfa82989fb8dec42ad6",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_uniform_chain_finite_launch_check/REVIEW.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_uniform_chain_finite_launch_check/REVIEW.md",
+      "pr": 9741,
+      "sha256": "0ef35c231f3550f196bd1f8df8b5b3773ebfa6314232931ea9470ca1f00a5bac"
+    },
+    {
+      "blob": "98cdc0481b5674c3a2d0d240661362d55dcc5898",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_uniform_physical_loader/PROPOSAL.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_uniform_physical_loader/PROPOSAL.md",
+      "pr": 9741,
+      "sha256": "809d39e07806cc05af1c715f58ebde90209a07b2dfc2e86bce481fe629c0629f"
+    },
+    {
+      "blob": "be657c7428c7938d3736e3d2387c033edbf3c71a",
+      "head": "d27a365724c544edeb1374f7c32ac9667168db55",
+      "member": "pr9741/outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_uniform_physical_loader_check/REVIEW.md",
+      "path": "outputs/exact_loader_clock_tradeoffs_2026_10_18/source_checks/exact_uniform_physical_loader_check/REVIEW.md",
+      "pr": 9741,
+      "sha256": "b9b897fc8dbce257a2bbe7895d5413d30d6f8cc289efb83b14ff7d465f5277c0"
+    },
+    {
+      "blob": "d301c2502e575e7d0ebbf684f9c9a9fad7b0bb16",
+      "head": "45f3a59e13ae73edf18d238a0328fc66bc1f5191",
+      "member": "pr9742/docs/EXACT_UNIFORM_LOADER_DWELL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "path": "docs/EXACT_UNIFORM_LOADER_DWELL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "pr": 9742,
+      "sha256": "932694107ccc9989a24d811721ef56691698c02ada691355a4c03d58542f373c"
+    },
+    {
+      "blob": "aca2280bbcead1b0a7c7286d2de5da52bfb7e83f",
+      "head": "45f3a59e13ae73edf18d238a0328fc66bc1f5191",
+      "member": "pr9742/docs/audit/data/citation_graph_manifest.json",
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "pr": 9742,
+      "sha256": "62483f9aa534cffcd78608c619958792c133726bdf4e5e2539abc9370d63bc5d"
+    },
+    {
+      "blob": "39a5b70e9e94fd10cf165b23f31804990b7d708c",
+      "head": "45f3a59e13ae73edf18d238a0328fc66bc1f5191",
+      "member": "pr9742/outputs/exact_uniform_loader_dwell_2026_10_18/AUTHOR_NOTE.md",
+      "path": "outputs/exact_uniform_loader_dwell_2026_10_18/AUTHOR_NOTE.md",
+      "pr": 9742,
+      "sha256": "508d10710bbf88403358618e2efde3bdd2c68636fcc80ee988674126e3be6731"
+    },
+    {
+      "blob": "c599b82eafbe385e46dc02cb63b017adaa1116bb",
+      "head": "45f3a59e13ae73edf18d238a0328fc66bc1f5191",
+      "member": "pr9742/outputs/exact_uniform_loader_dwell_2026_10_18/INTEGRATION_RECORD.md",
+      "path": "outputs/exact_uniform_loader_dwell_2026_10_18/INTEGRATION_RECORD.md",
+      "pr": 9742,
+      "sha256": "17bffef91ef982a54bcaa6622565c1df853a6968304279a5bc9fc7f40ba98b2c"
+    },
+    {
+      "blob": "99ba6c97a0428e5afdafb193a6cf1c2912ee0e97",
+      "head": "45f3a59e13ae73edf18d238a0328fc66bc1f5191",
+      "member": "pr9742/outputs/exact_uniform_loader_dwell_2026_10_18/PUBLICATION_CHECK.md",
+      "path": "outputs/exact_uniform_loader_dwell_2026_10_18/PUBLICATION_CHECK.md",
+      "pr": 9742,
+      "sha256": "ee212887d94fac62db28104d7df7a373f20e0becc05bca8fe183c1045d00abcf"
+    },
+    {
+      "blob": "c468c98ace72f8689e618378a2464df377e37ae3",
+      "head": "45f3a59e13ae73edf18d238a0328fc66bc1f5191",
+      "member": "pr9742/outputs/exact_uniform_loader_dwell_2026_10_18/SOURCES.json",
+      "path": "outputs/exact_uniform_loader_dwell_2026_10_18/SOURCES.json",
+      "pr": 9742,
+      "sha256": "0c73aeb81b952a19b3ecc86880ced86c0b4b5d71d2bfbf2dee6a8e34c036c0de"
+    },
+    {
+      "blob": "9d6988eee19b18841f17baa4818b48ac4bd130cf",
+      "head": "45f3a59e13ae73edf18d238a0328fc66bc1f5191",
+      "member": "pr9742/outputs/exact_uniform_loader_dwell_2026_10_18/VALIDATION.json",
+      "path": "outputs/exact_uniform_loader_dwell_2026_10_18/VALIDATION.json",
+      "pr": 9742,
+      "sha256": "44b1cc475a7f5e10f70461f23b8adc5507f8c0a1a06eaaee27258d34b50ee73e"
+    },
+    {
+      "blob": "bc45401528c6a8b1bcdd5cb1e3e4725467ee3bfa",
+      "head": "45f3a59e13ae73edf18d238a0328fc66bc1f5191",
+      "member": "pr9742/outputs/exact_uniform_loader_dwell_2026_10_18/source_checks/exact_uniform_loader_dwell/PROPOSAL.md",
+      "path": "outputs/exact_uniform_loader_dwell_2026_10_18/source_checks/exact_uniform_loader_dwell/PROPOSAL.md",
+      "pr": 9742,
+      "sha256": "96660b9eaf719aac01d4b8e29cdde3661ed6d2b710745ceacccce286e5b4d031"
+    },
+    {
+      "blob": "ac5abf390dc9630acf19ef84086c7636f1592cb5",
+      "head": "45f3a59e13ae73edf18d238a0328fc66bc1f5191",
+      "member": "pr9742/outputs/exact_uniform_loader_dwell_2026_10_18/source_checks/exact_uniform_loader_dwell_check/REVIEW.md",
+      "path": "outputs/exact_uniform_loader_dwell_2026_10_18/source_checks/exact_uniform_loader_dwell_check/REVIEW.md",
+      "pr": 9742,
+      "sha256": "af641f89b7759889d2e76b0a57564b56f381d155a0fb014ef86fd4bfadb4be41"
+    }
+  ],
+  "status": "exact historical recovery, never scientific authority"
+}

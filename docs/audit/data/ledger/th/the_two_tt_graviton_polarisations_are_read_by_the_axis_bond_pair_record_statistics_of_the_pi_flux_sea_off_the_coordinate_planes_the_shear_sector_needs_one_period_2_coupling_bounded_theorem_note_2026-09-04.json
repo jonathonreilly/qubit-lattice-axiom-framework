@@ -35,7 +35,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.0,
+  "load_bearing_score": 3.807,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/tt_graviton_polarisations_read_by_axis_bond_pair_record_statistics_check_2026_09_04.py",
   "title": "Finite axis-bond response, endpoint rank losses, and supplied shear alternatives",
-  "transitive_descendants": 3,
+  "transitive_descendants": 6,
   "verdict_rationale": null
 }

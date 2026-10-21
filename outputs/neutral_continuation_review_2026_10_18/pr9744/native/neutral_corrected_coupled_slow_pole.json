@@ -1,0 +1,85 @@
+{
+  "rows": [
+    {
+      "lam": 0.2,
+      "partial": [
+        -1.9231751817872342,
+        -0.0022403166336774777
+      ],
+      "coupled": [
+        -1.923156601961015,
+        -0.002731120585268137
+      ],
+      "residual": 8.491875871282005e-12,
+      "success": true,
+      "physical_shift_over_lambda5_log": 0.09881053607445797,
+      "partial_width_over_lambda4": 0.11201583168387386,
+      "coupled_width_over_lambda4": 0.13655602926340682
+    },
+    {
+      "lam": 0.1,
+      "partial": [
+        -1.9707367778554095,
+        -0.0005645648298305103
+      ],
+      "coupled": [
+        -1.9707429344052643,
+        -0.0005983792096265578
+      ],
+      "residual": 2.135469228224821e-10,
+      "success": true,
+      "physical_shift_over_lambda5_log": 0.07914046890672781,
+      "partial_width_over_lambda4": 0.11291296596610205,
+      "coupled_width_over_lambda4": 0.11967584192531153
+    },
+    {
+      "lam": 0.05,
+      "partial": [
+        -1.9886978587869717,
+        -0.0001416503244843694
+      ],
+      "coupled": [
+        -1.9886990225789276,
+        -0.0001442988210525871
+      ],
+      "residual": 1.2546223367557399e-11,
+      "success": true,
+      "physical_shift_over_lambda5_log": 0.06933114338442362,
+      "partial_width_over_lambda4": 0.11332025958749549,
+      "coupled_width_over_lambda4": 0.11543905684206965
+    },
+    {
+      "lam": 0.025,
+      "partial": [
+        -1.9955930450762234,
+        -3.5466020605917027e-05
+      ],
+      "coupled": [
+        -1.9955931880399647,
+        -3.5702483365371625e-05
+      ],
+      "residual": 1.758320476653034e-10,
+      "success": true,
+      "physical_shift_over_lambda5_log": 0.0652361394362168,
+      "partial_width_over_lambda4": 0.11349126593893447,
+      "coupled_width_over_lambda4": 0.11424794676918917
+    },
+    {
+      "lam": 0.02,
+      "partial": [
+        -1.9967408790076913,
+        -2.270417651137563e-05
+      ],
+      "coupled": [
+        -1.99674094663766,
+        -2.282977355528331e-05
+      ],
+      "residual": 9.158127524719312e-11,
+      "success": true,
+      "physical_shift_over_lambda5_log": 0.06975524485379672,
+      "partial_width_over_lambda4": 0.11352088255687814,
+      "coupled_width_over_lambda4": 0.11414886777641654
+    }
+  ],
+  "scope": "Projected model with complete fast K2, leading slow K2/tension and native K2 crossvertices; slow K4 and K3 boundary omitted"
+}

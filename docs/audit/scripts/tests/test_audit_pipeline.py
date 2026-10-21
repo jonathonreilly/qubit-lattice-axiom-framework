@@ -1922,6 +1922,7 @@ class ApplyAuditTest(unittest.TestCase):
             "hybrid_resolution_note": "ratify the bounded tuple",
             "no_go_discipline": {"status": "PASS"},
         }
+        led["rows"]["test_judicial_tier"]["premises_used"] = ["stale_prior_scope"]
         self._attest_judgment(m, led, judgment)
         forensic_led = json.loads(json.dumps(led))
         packetless_led = json.loads(json.dumps(led))
@@ -1932,6 +1933,8 @@ class ApplyAuditTest(unittest.TestCase):
         ):
             ok, msg = m.apply_one(led, dict(judgment))
         self.assertTrue(ok, msg)
+        self.assertNotIn("premises_used", led["rows"]["test_judicial_tier"])
+        self.assertEqual(led["rows"]["test_judicial_tier"]["audit_state_snapshot"]["science_fingerprint"]["schema"], "science_fingerprint_v2")
         self.assertNotIn(
             "evidence_snapshot",
             led["rows"]["test_judicial_tier"]["no_go_discipline"],
@@ -2220,6 +2223,180 @@ class ApplyAuditTest(unittest.TestCase):
             updated["cross_confirmation"]["agreement_schema"],
             "audit_tuple_v2",
         )
+
+    def _write_two_premise_registry(self) -> None:
+        # Explicit synthetic opt-in; production remains on v2.
+        import audit_science_fingerprint as science
+        proposal = mock.patch.object(science, "SCOPED_PREMISE_FINGERPRINTS_ENABLED", True)
+        proposal.start()
+        self.addCleanup(proposal.stop)
+        self.fx.write_note("docs/PREM_A.md", "# Premise A\n")
+        self.fx.write_note("docs/PREM_B.md", "# Premise B\n")
+        (self.fx.data_dir / "axiom_premise_nodes.json").write_text(
+            json.dumps({
+                "schema_version": 1,
+                "canonical_ids": ["prem_a", "prem_b"],
+                "nodes": {
+                    "prem_a": {
+                        "current_path": "docs/PREM_A.md",
+                        "aliased_paths": ["docs/PREM_A.md"],
+                        "note": "fixture premise a",
+                    },
+                    "prem_b": {
+                        "current_path": "docs/PREM_B.md",
+                        "aliased_paths": ["docs/PREM_B.md"],
+                        "note": "fixture premise b",
+                    },
+                },
+            }) + "\n",
+            encoding="utf-8",
+        )
+
+    def _claude_seat(self, cid: str, auditor: str, invocation: str, **extra) -> dict:
+        return {
+            "claim_id": cid,
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "shared scope",
+            "auditor": auditor,
+            "negative_assertion_classes": [],
+            "auditor_family": "claude-opus-5.5",
+            "auditor_model": "claude-opus-5-5",
+            "auditor_reasoning_effort": "medium",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "C",
+            "audit_invocation_id": invocation * 32,
+            **extra,
+        }
+
+    def test_premises_used_rejects_unknown_unit(self):
+        self._write_two_premise_registry()
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_unknown_premise")
+        led = self.fx.read_ledger()
+        ok, msg = m.apply_one(
+            led,
+            self._claude_seat(
+                "test_unknown_premise", "seat", "1", premises_used=["prem_z"]
+            ),
+        )
+        self.assertFalse(ok)
+        self.assertIn("unknown premise unit", msg)
+
+    def test_premises_used_scopes_the_v3_snapshot(self):
+        self._write_two_premise_registry()
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_scoped_premise", deps=["prem_a"])
+        led = self.fx.read_ledger()
+        ok, msg = m.apply_one(
+            led,
+            self._claude_seat(
+                "test_scoped_premise", "seat", "1", premises_used=["prem_a"]
+            ),
+        )
+        self.assertTrue(ok, msg)
+        row = led["rows"]["test_scoped_premise"]
+        self.assertEqual(row["premises_used"], ["prem_a"])
+        self.assertEqual(row["independence"], "fresh_context")
+        science = row["audit_state_snapshot"]["science_fingerprint"]
+        self.assertEqual(science["schema"], "science_fingerprint_v3")
+        self.assertEqual(science["premise_scope"]["basis"], "declared")
+        self.assertEqual(sorted(science["premise_scope"]["units"]), ["prem_a"])
+
+    def test_undeclared_seat_keeps_fail_closed_scope(self):
+        self._write_two_premise_registry()
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_undeclared_premise")
+        led = self.fx.read_ledger()
+        ok, msg = m.apply_one(
+            led, self._claude_seat("test_undeclared_premise", "seat", "1")
+        )
+        self.assertTrue(ok, msg)
+        row = led["rows"]["test_undeclared_premise"]
+        self.assertNotIn("premises_used", row)
+        science = row["audit_state_snapshot"]["science_fingerprint"]
+        self.assertEqual(science["premise_scope"], {"basis": "fail_closed"})
+
+    def test_critical_seats_bind_the_union_of_premise_declarations(self):
+        self._write_two_premise_registry()
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_union_premise", criticality="critical")
+        led = self.fx.read_ledger()
+        ok, msg = m.apply_one(
+            led,
+            self._claude_seat(
+                "test_union_premise", "first", "1", premises_used=["prem_a"]
+            ),
+        )
+        self.assertTrue(ok, msg)
+        self.assertEqual(
+            led["rows"]["test_union_premise"]["audit_status"],
+            "audit_in_progress",
+        )
+        ok, msg = m.apply_one(
+            led,
+            self._claude_seat(
+                "test_union_premise", "second", "2", premises_used=["prem_b"]
+            ),
+        )
+        self.assertTrue(ok, msg)
+        row = led["rows"]["test_union_premise"]
+        self.assertEqual(row["cross_confirmation"]["status"], "confirmed")
+        self.assertEqual(row["premises_used"], ["prem_a", "prem_b"])
+        science = row["audit_state_snapshot"]["science_fingerprint"]
+        self.assertEqual(
+            sorted(science["premise_scope"]["units"]), ["prem_a", "prem_b"]
+        )
+
+    def test_seat_over_an_undeclared_prior_judgment_fails_closed(self):
+        self._write_two_premise_registry()
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_reaudit_fail_closed")
+        led = self.fx.read_ledger()
+        prior = self._claude_seat("test_reaudit_fail_closed", "prior", "1")
+        prior["verdict"] = "audited_conditional"
+        self.assertTrue(m.apply_one(led, prior)[0])
+        ok, msg = m.apply_one(
+            led,
+            self._claude_seat(
+                "test_reaudit_fail_closed", "later", "2",
+                premises_used=["prem_a"],
+            ),
+        )
+        self.assertTrue(ok, msg)
+        row = led["rows"]["test_reaudit_fail_closed"]
+        self.assertNotIn("premises_used", row)
+        science = row["audit_state_snapshot"]["science_fingerprint"]
+        self.assertEqual(science["premise_scope"], {"basis": "fail_closed"})
+
+    def test_undeclared_second_seat_makes_judgment_fail_closed(self):
+        self._write_two_premise_registry()
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_union_fail_closed", criticality="critical")
+        led = self.fx.read_ledger()
+        self.assertTrue(
+            m.apply_one(
+                led,
+                self._claude_seat(
+                    "test_union_fail_closed", "first", "1",
+                    premises_used=["prem_a"],
+                ),
+            )[0]
+        )
+        ok, msg = m.apply_one(
+            led, self._claude_seat("test_union_fail_closed", "second", "2")
+        )
+        self.assertTrue(ok, msg)
+        row = led["rows"]["test_union_fail_closed"]
+        self.assertNotIn("premises_used", row)
+        science = row["audit_state_snapshot"]["science_fingerprint"]
+        self.assertEqual(science["premise_scope"], {"basis": "fail_closed"})
 
     def test_main_persists_disagreement_as_applied_and_runs_propagation(self):
         m = _import("apply_audit")

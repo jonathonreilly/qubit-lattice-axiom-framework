@@ -1,0 +1,18 @@
+H            |H| contains-D2 anticommuting-pair irrep-dims  #fixed-momenta(N=24, incl. k*)  nu=1 certified gap
+O             24 True  True  [2, 4]       2 True  -
+T             12 True  True  [2]          2 True  -
+D4z            8 True  True  [2]          4 True  -
+D2 (axes)      4 True  True  [2]          8 True  -
+D2' (z, xy)    4 True  True  [2]          4 True  -
+C4z            4 False False [1]         48 True  0.533
+C3[111]        3 False False [1]         24 True  0.517
+C2x            2 False False [1]         96 True  0.532
+C2xy           2 False False [1]         48 True  0.608
+[PASS] for every tested subgroup: the dressed lift has an anticommuting commuting pair (only even irreps) iff the subgroup contains a Klein four-group
+[PASS] k* is fixed by every subgroup, so the k*-fibre and the theta = k* odd torus argument apply to each; the obstruction (odd nu) holds exactly for the D2-containing ones
+[PASS] subgroups without D2 (C4z, C3, C2x, C2xy) admit a certified gapped symmetric insulator at nu = 1  {'C4z': np.float64(0.533), 'C3[111]': np.float64(0.517), 'C2x': np.float64(0.532), 'C2xy': np.float64(0.608)}
+   D2 (axes): random dispersive Hamiltonians gapped at nu = 1: 0/20
+   C4z: random dispersive Hamiltonians gapped at nu = 1: 0/20
+[PASS] the 24 rotations about a cube centre (site rotation composed with c - Rc) all lie in the A2-mass model's group and their dressed class is nontrivial: one fermion per cube centre is forbidden, a doublet (2 per cube centre on one of the two FCC cosets = 1 per original site) is allowed  12 anticommuting commuting pairs; translation parity = w1(R) for all 24
+
+TOTAL: PASS=4 FAIL=0   (113 s)

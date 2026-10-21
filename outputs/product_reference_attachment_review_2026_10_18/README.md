@@ -1,0 +1,7 @@
+# Product/reference attachment source package
+
+Nine conditional positive constructions retain their complete arguments and supporting mathematics. The shared finite primary is corroborating evidence, not a physical supplier or whole-apparatus simulation. Current parent proof extractions govern the named mathematical imports. Historical source/check verdicts and author expositions remain provenance; their useful derivations remain inspectable and are not deleted merely because they originally appeared in reviews.
+
+The earlier finite-order mediator and later exactly calibrated mediator are different Hamiltonians. Effective mediator aging is retained. The compass estimate is finite-volume and supplied-coefficient; the ladder packet is constructed on infinite comparison leads, with finite product launch, cuts and released-output windows still open. The original energy-accounting overstatement has an explicit controlling qualification. No universal negative claim or physical realization is inferred from these bounded results.
+
+All 130 original PR path versions, including nine historical graph manifests, have byte-exact compressed recovery. Current graphs are generated separately. The literal input closure includes source identities from existing parent packages for provenance and reproducibility; those parent runners are not invoked. No historical execution or status is represented as a fresh primary result.

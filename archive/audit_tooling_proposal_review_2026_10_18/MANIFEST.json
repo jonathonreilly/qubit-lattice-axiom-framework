@@ -1,0 +1,587 @@
+{
+  "pr": 9824,
+  "status": "Historical exact source; not active policy or scientific evidence",
+  "original_dispositions": [
+    {
+      "original_path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
+      "original_sha256": "6cd92f0c5ed13e4b431ba1212195fcf0afeb5752cdb888099697a68c4f975dd2",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/6cd92f0c5ed13e4b431ba1212195fcf0afeb5752cdb888099697a68c4f975dd2.gz",
+        "encoding": "gzip",
+        "original_sha256": "6cd92f0c5ed13e4b431ba1212195fcf0afeb5752cdb888099697a68c4f975dd2"
+      },
+      "final_path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
+      "final_sha256": "f3d4ae7c067a65cc3e6869ca8c43ec79d62cfe7b2582a13a31f34baac03e5f54",
+      "main_path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
+      "main_sha256": "a36eb620343f3ef654249c9774eb145c85be504d0b060979e0f7264fe8e220ed",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/ai_methodology/skills/audit-loop/SKILL.md",
+      "main_loss_check": "current governance preserved; skill uses corrected9823 prefix"
+    },
+    {
+      "original_path": "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+      "original_sha256": "77670a19eb297168389b51729864296960e184f2604830d1e55c98f538dcb83f",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/77670a19eb297168389b51729864296960e184f2604830d1e55c98f538dcb83f.gz",
+        "encoding": "gzip",
+        "original_sha256": "77670a19eb297168389b51729864296960e184f2604830d1e55c98f538dcb83f"
+      },
+      "final_path": "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+      "final_sha256": "df53a9a21c70e213ebff96a65e3d77376b70d13829ecea92723ba9b59fd827f4",
+      "main_path": "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+      "main_sha256": "882fa02fd63f0779ab2d1f521b3dc840cdb4d5f6f49906b3f48d9d657a864f56",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+      "original_sha256": "ef3c6257d17f247134f79e66b684f1b0f1221d841e1fe29fe822fc22e2521272",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/ef3c6257d17f247134f79e66b684f1b0f1221d841e1fe29fe822fc22e2521272.gz",
+        "encoding": "gzip",
+        "original_sha256": "ef3c6257d17f247134f79e66b684f1b0f1221d841e1fe29fe822fc22e2521272"
+      },
+      "final_path": "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+      "final_sha256": "a4e336fc9c1ad715188830f295452765beb5365ee0f5de870bf0a08f6700456e",
+      "main_path": "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+      "main_sha256": "9893d3d632ae3fc3dc0584b7d6c430f7429448d70d9761797a37d36b3f9f6be8",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+      "main_loss_check": "current governance preserved as exact prefix"
+    },
+    {
+      "original_path": "docs/audit/PREMISE_SCOPED_FINGERPRINT_AND_CLAUDE_AUDITOR_NOTE_2026-10-18.md",
+      "original_sha256": "8ec653ea6b245ae32761f481f9b8a981ac72be5246b382a1fe21c3b2310c0c05",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/8ec653ea6b245ae32761f481f9b8a981ac72be5246b382a1fe21c3b2310c0c05.gz",
+        "encoding": "gzip",
+        "original_sha256": "8ec653ea6b245ae32761f481f9b8a981ac72be5246b382a1fe21c3b2310c0c05"
+      },
+      "final_path": "docs/audit/PREMISE_SCOPED_FINGERPRINT_AND_CLAUDE_AUDITOR_NOTE_2026-10-18.md",
+      "final_sha256": "eb3eb6a88f13408517458de681c55cbfec13eb016403c76109bb45da16e7c540",
+      "main_path": "docs/audit/PREMISE_SCOPED_FINGERPRINT_AND_CLAUDE_AUDITOR_NOTE_2026-10-18.md",
+      "main_sha256": null,
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/PREMISE_SCOPED_FINGERPRINT_AND_CLAUDE_AUDITOR_NOTE_2026-10-18.md",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/data/dependency_policy_epoch.json",
+      "original_sha256": "8f6c69039344a2f3217e9e721538ec859a21c62a507e41e445bc90e03c785dca",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/8f6c69039344a2f3217e9e721538ec859a21c62a507e41e445bc90e03c785dca.gz",
+        "encoding": "gzip",
+        "original_sha256": "8f6c69039344a2f3217e9e721538ec859a21c62a507e41e445bc90e03c785dca"
+      },
+      "final_path": "docs/audit/data/dependency_policy_epoch.json",
+      "final_sha256": "ef56084a746f17c648eec20456f035bf3824a1e723d1af074e9bf6235e9d622f",
+      "main_path": "docs/audit/data/dependency_policy_epoch.json",
+      "main_sha256": "33bd1bad768aa690e3bd195f3b23b0a8274b1b103806a205e0b5883909914969",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/data/dependency_policy_epoch.json",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/data/premise_clause_map.json",
+      "original_sha256": "d3c2e89a1e332a12a8d3cee813e30659aa0b71bd224f69e39db7ab8d996cde54",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/d3c2e89a1e332a12a8d3cee813e30659aa0b71bd224f69e39db7ab8d996cde54.gz",
+        "encoding": "gzip",
+        "original_sha256": "d3c2e89a1e332a12a8d3cee813e30659aa0b71bd224f69e39db7ab8d996cde54"
+      },
+      "final_path": "docs/audit/data/premise_clause_map.json",
+      "final_sha256": "04d74995abda7d6e79f48506cbb1a3a99994f20cc8e660da35e3e6e407802246",
+      "main_path": "docs/audit/data/premise_clause_map.json",
+      "main_sha256": null,
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/data/premise_clause_map.json",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/apply_audit.py",
+      "original_sha256": "fea10cf3e36e5b8ef4b67c47a34e011af8a2cc17af665f88da7def20ce2e0910",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/fea10cf3e36e5b8ef4b67c47a34e011af8a2cc17af665f88da7def20ce2e0910.gz",
+        "encoding": "gzip",
+        "original_sha256": "fea10cf3e36e5b8ef4b67c47a34e011af8a2cc17af665f88da7def20ce2e0910"
+      },
+      "final_path": "docs/audit/scripts/apply_audit.py",
+      "final_sha256": "2d059c4c2c363c6f6f6644bf993b3ab2133e785d21a8d0525720cd936de59413",
+      "main_path": "docs/audit/scripts/apply_audit.py",
+      "main_sha256": "c80a927605a7dad21c8913c25229bc607649dfeb0b1449613e5e5f885823a131",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/apply_audit.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/audit_lint.py",
+      "original_sha256": "9c59ebcc0833214d7c3a6232dca2fefd83fbe0b1c3b3836669f78fdc459e68c9",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/9c59ebcc0833214d7c3a6232dca2fefd83fbe0b1c3b3836669f78fdc459e68c9.gz",
+        "encoding": "gzip",
+        "original_sha256": "9c59ebcc0833214d7c3a6232dca2fefd83fbe0b1c3b3836669f78fdc459e68c9"
+      },
+      "final_path": "docs/audit/scripts/audit_lint.py",
+      "final_sha256": "9c59ebcc0833214d7c3a6232dca2fefd83fbe0b1c3b3836669f78fdc459e68c9",
+      "main_path": "docs/audit/scripts/audit_lint.py",
+      "main_sha256": "3b2481f82c05c4c03b9e346766dd75174bdcbd08bd08c84e7b676e364c600689",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/audit_lint.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/audit_science_fingerprint.py",
+      "original_sha256": "df661553759c28b3476c1e5d736147b9157d68a4b4de12b1789597973aceab43",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/df661553759c28b3476c1e5d736147b9157d68a4b4de12b1789597973aceab43.gz",
+        "encoding": "gzip",
+        "original_sha256": "df661553759c28b3476c1e5d736147b9157d68a4b4de12b1789597973aceab43"
+      },
+      "final_path": "docs/audit/scripts/audit_science_fingerprint.py",
+      "final_sha256": "dc9529e0c0831b9e7097cbaff4b0466c39934e5e88304c1ca595ff97533a5b25",
+      "main_path": "docs/audit/scripts/audit_science_fingerprint.py",
+      "main_sha256": "ab604aa6fad2a1a8697698efda93f758c769203c1dfc16d09b614c3198214250",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/audit_science_fingerprint.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/compute_audit_queue.py",
+      "original_sha256": "3791a98bbfc3f1500315f39230d79f33e285f8049cfffd3b2f012fd77ab952d4",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/3791a98bbfc3f1500315f39230d79f33e285f8049cfffd3b2f012fd77ab952d4.gz",
+        "encoding": "gzip",
+        "original_sha256": "3791a98bbfc3f1500315f39230d79f33e285f8049cfffd3b2f012fd77ab952d4"
+      },
+      "final_path": "docs/audit/scripts/compute_audit_queue.py",
+      "final_sha256": "3791a98bbfc3f1500315f39230d79f33e285f8049cfffd3b2f012fd77ab952d4",
+      "main_path": "docs/audit/scripts/compute_audit_queue.py",
+      "main_sha256": "9cfe60140554ac19c38bfd8637d3a5348b665beae6059d61e127af1b9cba1ff6",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/compute_audit_queue.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/invalidate_stale_audits.py",
+      "original_sha256": "d7d14cb325ea26dee9a3b7478be85d22002fa704141743abd8c17fae2db993e3",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/d7d14cb325ea26dee9a3b7478be85d22002fa704141743abd8c17fae2db993e3.gz",
+        "encoding": "gzip",
+        "original_sha256": "d7d14cb325ea26dee9a3b7478be85d22002fa704141743abd8c17fae2db993e3"
+      },
+      "final_path": "docs/audit/scripts/invalidate_stale_audits.py",
+      "final_sha256": "d7d14cb325ea26dee9a3b7478be85d22002fa704141743abd8c17fae2db993e3",
+      "main_path": "docs/audit/scripts/invalidate_stale_audits.py",
+      "main_sha256": "2280c3677d4f2e694dec944a0bdff568dfafaf162d192e3f726a9ce3c6e7b213",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/invalidate_stale_audits.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/premise_change_impact.py",
+      "original_sha256": "4c415c45a515672ae633a336edcf142bd1c53ec18dd1f21a08c2ea24b9cb7c6a",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/4c415c45a515672ae633a336edcf142bd1c53ec18dd1f21a08c2ea24b9cb7c6a.gz",
+        "encoding": "gzip",
+        "original_sha256": "4c415c45a515672ae633a336edcf142bd1c53ec18dd1f21a08c2ea24b9cb7c6a"
+      },
+      "final_path": "docs/audit/scripts/premise_change_impact.py",
+      "final_sha256": "a67876282974393e181bd646859bf71a55035220b6c17243b2603ace0a59afae",
+      "main_path": "docs/audit/scripts/premise_change_impact.py",
+      "main_sha256": null,
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/premise_change_impact.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/restore_overaggressively_invalidated_audits.py",
+      "original_sha256": "0fd0e2a370cee2b4fb45e27045d4f7d4e4c6109a8c7e64869420df3c60d64ca7",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/0fd0e2a370cee2b4fb45e27045d4f7d4e4c6109a8c7e64869420df3c60d64ca7.gz",
+        "encoding": "gzip",
+        "original_sha256": "0fd0e2a370cee2b4fb45e27045d4f7d4e4c6109a8c7e64869420df3c60d64ca7"
+      },
+      "final_path": "docs/audit/scripts/restore_overaggressively_invalidated_audits.py",
+      "final_sha256": "0fd0e2a370cee2b4fb45e27045d4f7d4e4c6109a8c7e64869420df3c60d64ca7",
+      "main_path": "docs/audit/scripts/restore_overaggressively_invalidated_audits.py",
+      "main_sha256": "d73c680c1bb6f2c9c9b82592ad044580e69726ab82be25c226ae07ea11e80ba4",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/restore_overaggressively_invalidated_audits.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/tests/test_audit_pipeline.py",
+      "original_sha256": "6bdcd0140acc9c93f85924cf84f8aa9a2eb85e737dd073572123b772b93e9411",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/6bdcd0140acc9c93f85924cf84f8aa9a2eb85e737dd073572123b772b93e9411.gz",
+        "encoding": "gzip",
+        "original_sha256": "6bdcd0140acc9c93f85924cf84f8aa9a2eb85e737dd073572123b772b93e9411"
+      },
+      "final_path": "docs/audit/scripts/tests/test_audit_pipeline.py",
+      "final_sha256": "e139294deb6a7dcf900abce6a6977284c2cfd5d290a4a90e47a7a50f59177fee",
+      "main_path": "docs/audit/scripts/tests/test_audit_pipeline.py",
+      "main_sha256": "addac680a04a64545e95b1bbca5873f458fffe1785f310b2724f21866898c777",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/tests/test_audit_pipeline.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/tests/test_audit_science_fingerprint.py",
+      "original_sha256": "0a976e8f1051a013e7e64857960dc2661d542386e348fd4addeb0885829ededb",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/0a976e8f1051a013e7e64857960dc2661d542386e348fd4addeb0885829ededb.gz",
+        "encoding": "gzip",
+        "original_sha256": "0a976e8f1051a013e7e64857960dc2661d542386e348fd4addeb0885829ededb"
+      },
+      "final_path": "docs/audit/scripts/tests/test_audit_science_fingerprint.py",
+      "final_sha256": "503c8620fe58938dfe96d09db2bba3a6687a861962e77797fed3cbb7cc899a0b",
+      "main_path": "docs/audit/scripts/tests/test_audit_science_fingerprint.py",
+      "main_sha256": "74f68602af5fd19f464bd22a401c9bb5b9ed3072426d41cd4e62e550863aec9a",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/tests/test_audit_science_fingerprint.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/tests/test_claude_audit_backend.py",
+      "original_sha256": "b9e0daef4cc575bb1de7d8705cb0ca9070407ae2ace760e759512e89202cd256",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/b9e0daef4cc575bb1de7d8705cb0ca9070407ae2ace760e759512e89202cd256.gz",
+        "encoding": "gzip",
+        "original_sha256": "b9e0daef4cc575bb1de7d8705cb0ca9070407ae2ace760e759512e89202cd256"
+      },
+      "final_path": "docs/audit/scripts/tests/test_claude_audit_backend.py",
+      "final_sha256": "ac639a25ede5c7449802d30d8d40605cf2eb51bad2146fb0eee6987cdca1fabe",
+      "main_path": "docs/audit/scripts/tests/test_claude_audit_backend.py",
+      "main_sha256": null,
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/tests/test_claude_audit_backend.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "scripts/codex_audit_runner.py",
+      "original_sha256": "bd5d18487560ad6005ad3c21b7ec91001dccdc9904db49c39693f80910c02c49",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/bd5d18487560ad6005ad3c21b7ec91001dccdc9904db49c39693f80910c02c49.gz",
+        "encoding": "gzip",
+        "original_sha256": "bd5d18487560ad6005ad3c21b7ec91001dccdc9904db49c39693f80910c02c49"
+      },
+      "final_path": "scripts/codex_audit_runner.py",
+      "final_sha256": "6ea185945ec19cfcdc769461111e8027ae5981fc7159a833c4c77b50f102f299",
+      "main_path": "scripts/codex_audit_runner.py",
+      "main_sha256": "919a0b8f8526c92d0d9527aed929e1af99a7dd5106fb4d8137aefba112400c7a",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/scripts/codex_audit_runner.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    }
+  ],
+  "refreshed_head": "59d16939e0789ef5a08c23df7bbf799570daa733",
+  "refreshed_original_dispositions": [
+    {
+      "original_path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
+      "original_sha256": "507b7513a65c499239c6efb6b4cd8fdcd76b01f2ce37d4e443889249722b4a47",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/507b7513a65c499239c6efb6b4cd8fdcd76b01f2ce37d4e443889249722b4a47.gz",
+        "encoding": "gzip",
+        "original_sha256": "507b7513a65c499239c6efb6b4cd8fdcd76b01f2ce37d4e443889249722b4a47"
+      },
+      "final_path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
+      "final_sha256": "f3d4ae7c067a65cc3e6869ca8c43ec79d62cfe7b2582a13a31f34baac03e5f54",
+      "main_path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
+      "main_sha256": "a36eb620343f3ef654249c9774eb145c85be504d0b060979e0f7264fe8e220ed",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/ai_methodology/skills/audit-loop/SKILL.md",
+      "main_loss_check": "current governance preserved; skill uses corrected9823 prefix"
+    },
+    {
+      "original_path": "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+      "original_sha256": "77670a19eb297168389b51729864296960e184f2604830d1e55c98f538dcb83f",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/77670a19eb297168389b51729864296960e184f2604830d1e55c98f538dcb83f.gz",
+        "encoding": "gzip",
+        "original_sha256": "77670a19eb297168389b51729864296960e184f2604830d1e55c98f538dcb83f"
+      },
+      "final_path": "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+      "final_sha256": "df53a9a21c70e213ebff96a65e3d77376b70d13829ecea92723ba9b59fd827f4",
+      "main_path": "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+      "main_sha256": "882fa02fd63f0779ab2d1f521b3dc840cdb4d5f6f49906b3f48d9d657a864f56",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+      "original_sha256": "ef3c6257d17f247134f79e66b684f1b0f1221d841e1fe29fe822fc22e2521272",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/ef3c6257d17f247134f79e66b684f1b0f1221d841e1fe29fe822fc22e2521272.gz",
+        "encoding": "gzip",
+        "original_sha256": "ef3c6257d17f247134f79e66b684f1b0f1221d841e1fe29fe822fc22e2521272"
+      },
+      "final_path": "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+      "final_sha256": "a4e336fc9c1ad715188830f295452765beb5365ee0f5de870bf0a08f6700456e",
+      "main_path": "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+      "main_sha256": "9893d3d632ae3fc3dc0584b7d6c430f7429448d70d9761797a37d36b3f9f6be8",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+      "main_loss_check": "current governance preserved as exact prefix"
+    },
+    {
+      "original_path": "docs/audit/PREMISE_SCOPED_FINGERPRINT_AND_CLAUDE_AUDITOR_NOTE_2026-10-18.md",
+      "original_sha256": "8ec653ea6b245ae32761f481f9b8a981ac72be5246b382a1fe21c3b2310c0c05",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/8ec653ea6b245ae32761f481f9b8a981ac72be5246b382a1fe21c3b2310c0c05.gz",
+        "encoding": "gzip",
+        "original_sha256": "8ec653ea6b245ae32761f481f9b8a981ac72be5246b382a1fe21c3b2310c0c05"
+      },
+      "final_path": "docs/audit/PREMISE_SCOPED_FINGERPRINT_AND_CLAUDE_AUDITOR_NOTE_2026-10-18.md",
+      "final_sha256": "eb3eb6a88f13408517458de681c55cbfec13eb016403c76109bb45da16e7c540",
+      "main_path": "docs/audit/PREMISE_SCOPED_FINGERPRINT_AND_CLAUDE_AUDITOR_NOTE_2026-10-18.md",
+      "main_sha256": null,
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/PREMISE_SCOPED_FINGERPRINT_AND_CLAUDE_AUDITOR_NOTE_2026-10-18.md",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/data/dependency_policy_epoch.json",
+      "original_sha256": "8f6c69039344a2f3217e9e721538ec859a21c62a507e41e445bc90e03c785dca",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/8f6c69039344a2f3217e9e721538ec859a21c62a507e41e445bc90e03c785dca.gz",
+        "encoding": "gzip",
+        "original_sha256": "8f6c69039344a2f3217e9e721538ec859a21c62a507e41e445bc90e03c785dca"
+      },
+      "final_path": "docs/audit/data/dependency_policy_epoch.json",
+      "final_sha256": "ef56084a746f17c648eec20456f035bf3824a1e723d1af074e9bf6235e9d622f",
+      "main_path": "docs/audit/data/dependency_policy_epoch.json",
+      "main_sha256": "33bd1bad768aa690e3bd195f3b23b0a8274b1b103806a205e0b5883909914969",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/data/dependency_policy_epoch.json",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/data/premise_clause_map.json",
+      "original_sha256": "d3c2e89a1e332a12a8d3cee813e30659aa0b71bd224f69e39db7ab8d996cde54",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/d3c2e89a1e332a12a8d3cee813e30659aa0b71bd224f69e39db7ab8d996cde54.gz",
+        "encoding": "gzip",
+        "original_sha256": "d3c2e89a1e332a12a8d3cee813e30659aa0b71bd224f69e39db7ab8d996cde54"
+      },
+      "final_path": "docs/audit/data/premise_clause_map.json",
+      "final_sha256": "04d74995abda7d6e79f48506cbb1a3a99994f20cc8e660da35e3e6e407802246",
+      "main_path": "docs/audit/data/premise_clause_map.json",
+      "main_sha256": null,
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/data/premise_clause_map.json",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/apply_audit.py",
+      "original_sha256": "fea10cf3e36e5b8ef4b67c47a34e011af8a2cc17af665f88da7def20ce2e0910",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/fea10cf3e36e5b8ef4b67c47a34e011af8a2cc17af665f88da7def20ce2e0910.gz",
+        "encoding": "gzip",
+        "original_sha256": "fea10cf3e36e5b8ef4b67c47a34e011af8a2cc17af665f88da7def20ce2e0910"
+      },
+      "final_path": "docs/audit/scripts/apply_audit.py",
+      "final_sha256": "2d059c4c2c363c6f6f6644bf993b3ab2133e785d21a8d0525720cd936de59413",
+      "main_path": "docs/audit/scripts/apply_audit.py",
+      "main_sha256": "c80a927605a7dad21c8913c25229bc607649dfeb0b1449613e5e5f885823a131",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/apply_audit.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/audit_lint.py",
+      "original_sha256": "9c59ebcc0833214d7c3a6232dca2fefd83fbe0b1c3b3836669f78fdc459e68c9",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/9c59ebcc0833214d7c3a6232dca2fefd83fbe0b1c3b3836669f78fdc459e68c9.gz",
+        "encoding": "gzip",
+        "original_sha256": "9c59ebcc0833214d7c3a6232dca2fefd83fbe0b1c3b3836669f78fdc459e68c9"
+      },
+      "final_path": "docs/audit/scripts/audit_lint.py",
+      "final_sha256": "9c59ebcc0833214d7c3a6232dca2fefd83fbe0b1c3b3836669f78fdc459e68c9",
+      "main_path": "docs/audit/scripts/audit_lint.py",
+      "main_sha256": "3b2481f82c05c4c03b9e346766dd75174bdcbd08bd08c84e7b676e364c600689",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/audit_lint.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/audit_science_fingerprint.py",
+      "original_sha256": "df661553759c28b3476c1e5d736147b9157d68a4b4de12b1789597973aceab43",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/df661553759c28b3476c1e5d736147b9157d68a4b4de12b1789597973aceab43.gz",
+        "encoding": "gzip",
+        "original_sha256": "df661553759c28b3476c1e5d736147b9157d68a4b4de12b1789597973aceab43"
+      },
+      "final_path": "docs/audit/scripts/audit_science_fingerprint.py",
+      "final_sha256": "dc9529e0c0831b9e7097cbaff4b0466c39934e5e88304c1ca595ff97533a5b25",
+      "main_path": "docs/audit/scripts/audit_science_fingerprint.py",
+      "main_sha256": "ab604aa6fad2a1a8697698efda93f758c769203c1dfc16d09b614c3198214250",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/audit_science_fingerprint.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/compute_audit_queue.py",
+      "original_sha256": "3791a98bbfc3f1500315f39230d79f33e285f8049cfffd3b2f012fd77ab952d4",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/3791a98bbfc3f1500315f39230d79f33e285f8049cfffd3b2f012fd77ab952d4.gz",
+        "encoding": "gzip",
+        "original_sha256": "3791a98bbfc3f1500315f39230d79f33e285f8049cfffd3b2f012fd77ab952d4"
+      },
+      "final_path": "docs/audit/scripts/compute_audit_queue.py",
+      "final_sha256": "3791a98bbfc3f1500315f39230d79f33e285f8049cfffd3b2f012fd77ab952d4",
+      "main_path": "docs/audit/scripts/compute_audit_queue.py",
+      "main_sha256": "9cfe60140554ac19c38bfd8637d3a5348b665beae6059d61e127af1b9cba1ff6",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/compute_audit_queue.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/invalidate_stale_audits.py",
+      "original_sha256": "d7d14cb325ea26dee9a3b7478be85d22002fa704141743abd8c17fae2db993e3",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/d7d14cb325ea26dee9a3b7478be85d22002fa704141743abd8c17fae2db993e3.gz",
+        "encoding": "gzip",
+        "original_sha256": "d7d14cb325ea26dee9a3b7478be85d22002fa704141743abd8c17fae2db993e3"
+      },
+      "final_path": "docs/audit/scripts/invalidate_stale_audits.py",
+      "final_sha256": "d7d14cb325ea26dee9a3b7478be85d22002fa704141743abd8c17fae2db993e3",
+      "main_path": "docs/audit/scripts/invalidate_stale_audits.py",
+      "main_sha256": "2280c3677d4f2e694dec944a0bdff568dfafaf162d192e3f726a9ce3c6e7b213",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/invalidate_stale_audits.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/premise_change_impact.py",
+      "original_sha256": "4c415c45a515672ae633a336edcf142bd1c53ec18dd1f21a08c2ea24b9cb7c6a",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/4c415c45a515672ae633a336edcf142bd1c53ec18dd1f21a08c2ea24b9cb7c6a.gz",
+        "encoding": "gzip",
+        "original_sha256": "4c415c45a515672ae633a336edcf142bd1c53ec18dd1f21a08c2ea24b9cb7c6a"
+      },
+      "final_path": "docs/audit/scripts/premise_change_impact.py",
+      "final_sha256": "a67876282974393e181bd646859bf71a55035220b6c17243b2603ace0a59afae",
+      "main_path": "docs/audit/scripts/premise_change_impact.py",
+      "main_sha256": null,
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/premise_change_impact.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/restore_overaggressively_invalidated_audits.py",
+      "original_sha256": "0fd0e2a370cee2b4fb45e27045d4f7d4e4c6109a8c7e64869420df3c60d64ca7",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/0fd0e2a370cee2b4fb45e27045d4f7d4e4c6109a8c7e64869420df3c60d64ca7.gz",
+        "encoding": "gzip",
+        "original_sha256": "0fd0e2a370cee2b4fb45e27045d4f7d4e4c6109a8c7e64869420df3c60d64ca7"
+      },
+      "final_path": "docs/audit/scripts/restore_overaggressively_invalidated_audits.py",
+      "final_sha256": "0fd0e2a370cee2b4fb45e27045d4f7d4e4c6109a8c7e64869420df3c60d64ca7",
+      "main_path": "docs/audit/scripts/restore_overaggressively_invalidated_audits.py",
+      "main_sha256": "d73c680c1bb6f2c9c9b82592ad044580e69726ab82be25c226ae07ea11e80ba4",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/restore_overaggressively_invalidated_audits.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/tests/test_audit_pipeline.py",
+      "original_sha256": "6bdcd0140acc9c93f85924cf84f8aa9a2eb85e737dd073572123b772b93e9411",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/6bdcd0140acc9c93f85924cf84f8aa9a2eb85e737dd073572123b772b93e9411.gz",
+        "encoding": "gzip",
+        "original_sha256": "6bdcd0140acc9c93f85924cf84f8aa9a2eb85e737dd073572123b772b93e9411"
+      },
+      "final_path": "docs/audit/scripts/tests/test_audit_pipeline.py",
+      "final_sha256": "e139294deb6a7dcf900abce6a6977284c2cfd5d290a4a90e47a7a50f59177fee",
+      "main_path": "docs/audit/scripts/tests/test_audit_pipeline.py",
+      "main_sha256": "addac680a04a64545e95b1bbca5873f458fffe1785f310b2724f21866898c777",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/tests/test_audit_pipeline.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/tests/test_audit_science_fingerprint.py",
+      "original_sha256": "0a976e8f1051a013e7e64857960dc2661d542386e348fd4addeb0885829ededb",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/0a976e8f1051a013e7e64857960dc2661d542386e348fd4addeb0885829ededb.gz",
+        "encoding": "gzip",
+        "original_sha256": "0a976e8f1051a013e7e64857960dc2661d542386e348fd4addeb0885829ededb"
+      },
+      "final_path": "docs/audit/scripts/tests/test_audit_science_fingerprint.py",
+      "final_sha256": "503c8620fe58938dfe96d09db2bba3a6687a861962e77797fed3cbb7cc899a0b",
+      "main_path": "docs/audit/scripts/tests/test_audit_science_fingerprint.py",
+      "main_sha256": "74f68602af5fd19f464bd22a401c9bb5b9ed3072426d41cd4e62e550863aec9a",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/tests/test_audit_science_fingerprint.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "docs/audit/scripts/tests/test_claude_audit_backend.py",
+      "original_sha256": "b9e0daef4cc575bb1de7d8705cb0ca9070407ae2ace760e759512e89202cd256",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/b9e0daef4cc575bb1de7d8705cb0ca9070407ae2ace760e759512e89202cd256.gz",
+        "encoding": "gzip",
+        "original_sha256": "b9e0daef4cc575bb1de7d8705cb0ca9070407ae2ace760e759512e89202cd256"
+      },
+      "final_path": "docs/audit/scripts/tests/test_claude_audit_backend.py",
+      "final_sha256": "ac639a25ede5c7449802d30d8d40605cf2eb51bad2146fb0eee6987cdca1fabe",
+      "main_path": "docs/audit/scripts/tests/test_claude_audit_backend.py",
+      "main_sha256": null,
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/docs/audit/scripts/tests/test_claude_audit_backend.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    },
+    {
+      "original_path": "scripts/codex_audit_runner.py",
+      "original_sha256": "bd5d18487560ad6005ad3c21b7ec91001dccdc9904db49c39693f80910c02c49",
+      "disposition": "retain original exact recovery; land corrected unactivated source proposal",
+      "recovery": {
+        "path": "archive/audit_tooling_proposal_review_2026_10_18/objects/bd5d18487560ad6005ad3c21b7ec91001dccdc9904db49c39693f80910c02c49.gz",
+        "encoding": "gzip",
+        "original_sha256": "bd5d18487560ad6005ad3c21b7ec91001dccdc9904db49c39693f80910c02c49"
+      },
+      "final_path": "scripts/codex_audit_runner.py",
+      "final_sha256": "6ea185945ec19cfcdc769461111e8027ae5981fc7159a833c4c77b50f102f299",
+      "main_path": "scripts/codex_audit_runner.py",
+      "main_sha256": "919a0b8f8526c92d0d9527aed929e1af99a7dd5106fb4d8137aefba112400c7a",
+      "main_changed_since_original_base": false,
+      "candidate_file": "/private/tmp/cl3-review-20261018/author9824/files/scripts/codex_audit_runner.py",
+      "main_loss_check": "additive candidate delta; current main matches original base"
+    }
+  ]
+}

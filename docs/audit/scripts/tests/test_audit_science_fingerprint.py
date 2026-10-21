@@ -1277,5 +1277,503 @@ class ScienceFingerprintFixture(unittest.TestCase):
             )
 
 
+PREMISE_MEMO = (
+    "# Fixture axioms\n"
+    "\n"
+    "Intro commentary.\n"
+    "\n"
+    "## Axioms\n"
+    "\n"
+    "### Alpha\n"
+    "\n"
+    "Alpha statement.\n"
+    "\n"
+    "### Beta\n"
+    "\n"
+    "Beta statement.\n"
+    "\n"
+    "## Rules\n"
+    "\n"
+    "Shared rule text.\n"
+    "\n"
+    "## History\n"
+    "\n"
+    "Historical commentary.\n"
+)
+
+
+class PremiseScopedFingerprintTest(ScienceFingerprintFixture):
+    """science_fingerprint_v3: declared premise units scope premise drift."""
+
+    def setUp(self) -> None:
+        proposal = mock.patch.object(science, "SCOPED_PREMISE_FINGERPRINTS_ENABLED", True)
+        proposal.start()
+        self.addCleanup(proposal.stop)
+        super().setUp()
+        self._write("docs/AXIOM.md", PREMISE_MEMO)
+        self._write_json(
+            science.PREMISE_CLAUSE_MAP_PATH,
+            {
+                "schema": science.PREMISE_CLAUSE_MAP_SCHEMA,
+                "nodes": {
+                    "axiom": {
+                        "clauses": {"alpha": "### Alpha", "beta": "### Beta"},
+                        "shared_clauses": {"rules": "## Rules"},
+                        "container_heading": "## Axioms",
+                    }
+                },
+            },
+        )
+        self._refresh_axiom_row()
+        # Re-anchor the legacy deployment baseline on the structured memo so
+        # every inherited legacy/v2 test also runs with a clause map present.
+        self._write_json(
+            "docs/audit/data/legacy_science_epoch_baseline.json",
+            {
+                "schema": "legacy_science_epoch_baseline_v1",
+                "framework_premise_epoch_digest": (
+                    science.framework_premise_epoch(self.root)
+                ),
+                "dependency_policy_epoch_digest": (
+                    science.dependency_policy_epoch(self.root)
+                ),
+            },
+        )
+
+    def _refresh_axiom_row(self) -> None:
+        body = (self.root / "docs/AXIOM.md").read_text(encoding="utf-8")
+        self.rows["axiom"]["note_hash"] = _sha(body)
+
+    def _edit_memo(self, old: str, new: str) -> None:
+        body = (self.root / "docs/AXIOM.md").read_text(encoding="utf-8")
+        self.assertIn(old, body)
+        self._write("docs/AXIOM.md", body.replace(old, new, 1))
+        self._refresh_axiom_row()
+
+    def _declared_target(self, units: list[str], deps=("axiom",)) -> dict:
+        return {
+            **self.rows["target"],
+            "deps": list(deps),
+            science.PREMISE_DECLARATION_FIELD: units,
+        }
+
+    def _change_after(self, row: dict, edit) -> str | None:
+        before = science.build_science_fingerprint(row, self.rows, self.root)
+        edit()
+        after = science.build_matching_science_fingerprint(
+            before, row, self.rows, self.root
+        )
+        return science.science_fingerprint_change(before, after)
+
+    def test_catalog_lists_clause_units_and_unmapped_nodes(self) -> None:
+        self.assertEqual(
+            sorted(science.premise_unit_catalog(self.root)),
+            ["axiom:alpha", "axiom:beta"],
+        )
+
+    def test_new_judgments_are_v3(self) -> None:
+        declared = science.build_science_fingerprint(
+            self._declared_target(["axiom:beta"]), self.rows, self.root
+        )
+        undeclared = science.build_science_fingerprint(
+            self.rows["target"], self.rows, self.root
+        )
+        self.assertEqual(declared["schema"], science.SCIENCE_FINGERPRINT_V3_SCHEMA)
+        self.assertEqual(declared["premise_scope"]["basis"], "declared")
+        self.assertIsNone(declared["framework_premise_epoch"])
+        self.assertEqual(undeclared["premise_scope"], {"basis": "fail_closed"})
+        self.assertEqual(science.science_fingerprint_problems(declared), [])
+        self.assertEqual(science.science_fingerprint_problems(undeclared), [])
+
+    def test_unrelated_clause_edit_leaves_declared_judgment_unchanged(self) -> None:
+        row = self._declared_target(["axiom:beta"])
+        self.assertIsNone(
+            self._change_after(
+                row,
+                lambda: self._edit_memo(
+                    "Alpha statement.", "Alpha statement, revised."
+                ),
+            )
+        )
+
+    def test_commentary_edit_leaves_declared_judgment_unchanged(self) -> None:
+        row = self._declared_target(["axiom:beta"])
+        self.assertIsNone(
+            self._change_after(
+                row,
+                lambda: self._edit_memo(
+                    "Historical commentary.", "Rewritten history and intro."
+                ),
+            )
+        )
+
+    def test_declared_clause_edit_invalidates(self) -> None:
+        row = self._declared_target(["axiom:beta"])
+        self.assertEqual(
+            self._change_after(
+                row,
+                lambda: self._edit_memo("Beta statement.", "Beta, amended."),
+            ),
+            "science_changed:premise_unit:axiom:beta",
+        )
+
+    def test_shared_clause_edit_invalidates_every_declared_unit(self) -> None:
+        row = self._declared_target(["axiom:alpha"])
+        self.assertEqual(
+            self._change_after(
+                row,
+                lambda: self._edit_memo("Shared rule text.", "Changed rule."),
+            ),
+            "science_changed:premise_unit:axiom:alpha",
+        )
+
+    def test_heading_edit_is_a_clause_edit(self) -> None:
+        row = self._declared_target(["axiom:beta"])
+        with self.assertRaisesRegex(
+            science.ScienceFingerprintError, "must occur exactly once"
+        ):
+            self._change_after(
+                row, lambda: self._edit_memo("### Beta\n", "### Beta prime\n")
+            )
+
+    def test_undeclared_judgment_fails_closed_like_v2(self) -> None:
+        self.assertEqual(
+            self._change_after(
+                self.rows["target"],
+                lambda: self._edit_memo(
+                    "Historical commentary.", "Rewritten history."
+                ),
+            ),
+            "science_changed:framework_premise_epoch",
+        )
+
+    def test_direct_premise_dependency_binds_whole_node_when_undeclared(self) -> None:
+        row = self._declared_target([])
+        fingerprint = science.build_science_fingerprint(row, self.rows, self.root)
+        self.assertEqual(
+            sorted(fingerprint["premise_scope"]["units"]),
+            ["axiom:alpha", "axiom:beta"],
+        )
+        self.assertEqual(
+            self._change_after(
+                row,
+                lambda: self._edit_memo("Alpha statement.", "Alpha, amended."),
+            ),
+            "science_changed:premise_unit:axiom:alpha",
+        )
+
+    def test_premise_free_judgment_survives_any_premise_edit(self) -> None:
+        row = self._declared_target([], deps=("dep",))
+        self.assertIsNone(
+            self._change_after(
+                row,
+                lambda: self._edit_memo("Alpha statement.", "Alpha, amended."),
+            )
+        )
+
+    def test_premise_dependency_hash_is_replaced_by_unit_digests(self) -> None:
+        fingerprint = science.build_science_fingerprint(
+            self._declared_target(["axiom:beta"]), self.rows, self.root
+        )
+        (axiom_dep,) = fingerprint["dependencies"]
+        self.assertIsNone(axiom_dep["note_sha256"])
+        self.assertIsNone(axiom_dep["ledger_note_hash"])
+        self.assertEqual(axiom_dep["premise_units"], ["axiom:beta"])
+
+    def test_unmapped_axiom_subsection_fails_closed(self) -> None:
+        self._edit_memo(
+            "## Rules\n", "### Gamma\n\nA new axiom.\n\n## Rules\n"
+        )
+        with self.assertRaisesRegex(
+            science.ScienceFingerprintError, "unmapped premise subsection"
+        ):
+            science.build_science_fingerprint(
+                self._declared_target(["axiom:beta"]), self.rows, self.root
+            )
+
+    def test_clause_heading_inside_code_fence_is_not_a_heading(self) -> None:
+        self._edit_memo(
+            "Historical commentary.\n",
+            "Historical commentary.\n\n```\n### Beta\n```\n",
+        )
+        science.build_science_fingerprint(
+            self._declared_target(["axiom:beta"]), self.rows, self.root
+        )
+
+    def test_premise_node_removal_invalidates_declared_judgment(self) -> None:
+        row = self._declared_target(["axiom:beta"])
+
+        def remove_node() -> None:
+            self._write(science.PREMISE_CLAUSE_MAP_PATH, "")
+            (self.root / science.PREMISE_CLAUSE_MAP_PATH).unlink()
+            self._write_json(
+                "docs/audit/data/axiom_premise_nodes.json",
+                {"schema_version": 1, "canonical_ids": [], "nodes": {}},
+            )
+
+        change = self._change_after(row, remove_node)
+        self.assertEqual(change, "science_changed:premise_unit:axiom:beta")
+
+    def test_registry_note_edit_does_not_move_unit_digest(self) -> None:
+        row = self._declared_target(["axiom:beta"])
+
+        def edit_note() -> None:
+            registry_path = self.root / "docs/audit/data/axiom_premise_nodes.json"
+            registry = json.loads(registry_path.read_text())
+            registry["nodes"]["axiom"]["note"] = "restated description"
+            self._write_json("docs/audit/data/axiom_premise_nodes.json", registry)
+
+        self.assertIsNone(self._change_after(row, edit_note))
+
+    def test_registry_path_edit_invalidates(self) -> None:
+        row = self._declared_target(["axiom:beta"])
+
+        def edit_aliases() -> None:
+            registry_path = self.root / "docs/audit/data/axiom_premise_nodes.json"
+            registry = json.loads(registry_path.read_text())
+            registry["nodes"]["axiom"]["aliased_paths"].append("docs/OLD.md")
+            self._write_json("docs/audit/data/axiom_premise_nodes.json", registry)
+
+        self.assertEqual(
+            self._change_after(row, edit_aliases),
+            "science_changed:premise_unit:axiom:beta",
+        )
+
+    def test_matching_builder_uses_baseline_scope_not_reset_row(self) -> None:
+        declared = self._declared_target(["axiom:beta"])
+        baseline = science.build_science_fingerprint(declared, self.rows, self.root)
+        reset = dict(declared)
+        reset.pop(science.PREMISE_DECLARATION_FIELD)
+        self._edit_memo("Alpha statement.", "Alpha, amended.")
+        current = science.build_matching_science_fingerprint(
+            baseline, reset, self.rows, self.root
+        )
+        self.assertIsNone(science.science_fingerprint_change(baseline, current))
+
+    def test_v2_baseline_keeps_whole_premise_binding(self) -> None:
+        baseline = science._build_science_fingerprint_v2(
+            self.rows["target"], self.rows, self.root
+        )
+        self.assertEqual(baseline["schema"], science.SCIENCE_FINGERPRINT_SCHEMA)
+        self._edit_memo("Historical commentary.", "Rewritten history.")
+        current = science.build_matching_science_fingerprint(
+            baseline, self.rows["target"], self.rows, self.root
+        )
+        self.assertEqual(current["schema"], science.SCIENCE_FINGERPRINT_SCHEMA)
+        self.assertEqual(
+            science.science_fingerprint_change(baseline, current),
+            "science_changed:framework_premise_epoch",
+        )
+
+    def test_schema_mismatch_is_a_change(self) -> None:
+        v2 = science._build_science_fingerprint_v2(
+            self.rows["target"], self.rows, self.root
+        )
+        v3 = science.build_science_fingerprint(
+            self.rows["target"], self.rows, self.root
+        )
+        self.assertEqual(
+            science.science_fingerprint_change(v2, v3),
+            "science_changed:fingerprint_schema",
+        )
+
+    def test_tampered_scope_is_rejected(self) -> None:
+        baseline = science.build_science_fingerprint(
+            self._declared_target(["axiom:beta"]), self.rows, self.root
+        )
+        narrowed = json.loads(json.dumps(baseline))
+        narrowed["premise_scope"]["declared"] = []
+        self.assertIn(
+            "digest:mismatch", science.science_fingerprint_problems(narrowed)
+        )
+        dropped = json.loads(json.dumps(baseline))
+        dropped["premise_scope"]["declared"] = ["axiom:alpha"]
+        dropped["digest"] = science._digest(
+            {k: v for k, v in dropped.items() if k != "digest"}
+        )
+        self.assertIn(
+            "premise_scope:declared_not_bound",
+            science.science_fingerprint_problems(dropped),
+        )
+
+    def test_declaration_validation(self) -> None:
+        self.assertIsNone(
+            science.premise_declaration_error(["axiom:beta"], self.root)
+        )
+        self.assertIsNone(science.premise_declaration_error([], self.root))
+        self.assertIn(
+            "unknown premise unit",
+            science.premise_declaration_error(["axiom:gamma"], self.root),
+        )
+        self.assertIn(
+            "unknown premise unit",
+            science.premise_declaration_error(["axiom:rules"], self.root),
+        )
+        self.assertIn(
+            "must not repeat",
+            science.premise_declaration_error(
+                ["axiom:beta", "axiom:beta"], self.root
+            ),
+        )
+        self.assertIn(
+            "must be a list",
+            science.premise_declaration_error("axiom:beta", self.root),
+        )
+
+    def test_frozen_judgment_digest_unchanged_without_declaration(self) -> None:
+        row = {**self.rows["target"], "audit_status": "audited_clean"}
+        with_none = {**row, science.PREMISE_DECLARATION_FIELD: None}
+        self.assertEqual(
+            science.judgment_fingerprint(row)["digest"],
+            science.judgment_fingerprint(with_none)["digest"],
+        )
+        declared = {**row, science.PREMISE_DECLARATION_FIELD: ["axiom:beta"]}
+        self.assertNotEqual(
+            science.judgment_fingerprint(row)["digest"],
+            science.judgment_fingerprint(declared)["digest"],
+        )
+
+    def _v3_snapshot(self, row: dict) -> dict:
+        return {
+            "deps": list(row["deps"]),
+            "dep_effective_status": {"axiom": "meta"},
+            "dep_claim_type": {"axiom": "meta"},
+            "dep_claim_scope": {"axiom": "scope for axiom"},
+            "dep_axiom_premise_note_hash": {
+                "axiom": self.rows["axiom"]["note_hash"]
+            },
+            "criticality": "leaf",
+            "runner_hash": None,
+            "helper_runner_hashes": {},
+            "science_fingerprint": science.build_science_fingerprint(
+                row, self.rows, self.root
+            ),
+        }
+
+    def test_live_invalidator_honors_declared_scope(self) -> None:
+        target = self._declared_target(["axiom:beta"])
+        target["audit_state_snapshot"] = self._v3_snapshot(target)
+        rows = {**self.rows, "target": target}
+        self._edit_memo("Alpha statement.", "Alpha, amended.")
+        with mock.patch.object(invalidate_stale_audits, "REPO_ROOT", self.root):
+            self.assertIsNone(
+                invalidate_stale_audits.detect_invalidation(target, rows)
+            )
+        self._edit_memo("Beta statement.", "Beta, amended.")
+        with mock.patch.object(invalidate_stale_audits, "REPO_ROOT", self.root):
+            self.assertEqual(
+                invalidate_stale_audits.detect_invalidation(target, rows),
+                "science_changed:premise_unit:axiom:beta",
+            )
+
+    def test_live_invalidator_still_catches_fail_closed_premise_drift(self) -> None:
+        target = dict(self.rows["target"])
+        target["audit_state_snapshot"] = self._v3_snapshot(target)
+        rows = {**self.rows, "target": target}
+        self._edit_memo("Historical commentary.", "Rewritten history.")
+        with mock.patch.object(invalidate_stale_audits, "REPO_ROOT", self.root):
+            self.assertEqual(
+                invalidate_stale_audits.detect_invalidation(target, rows),
+                "science_changed:framework_premise_epoch",
+            )
+
+    def test_archive_and_reset_moves_declaration_into_history(self) -> None:
+        row = {
+            **self._declared_target(["axiom:beta"]),
+            "audit_status": "audited_clean",
+        }
+        reset = invalidate_stale_audits.archive_and_reset(row, "fixture")
+        self.assertNotIn(science.PREMISE_DECLARATION_FIELD, reset)
+        self.assertEqual(
+            reset["previous_audits"][-1][science.PREMISE_DECLARATION_FIELD],
+            ["axiom:beta"],
+        )
+        legacy = invalidate_stale_audits.archive_and_reset(
+            {**self.rows["target"], "audit_status": "audited_clean"}, "fixture"
+        )
+        self.assertNotIn(
+            science.PREMISE_DECLARATION_FIELD, legacy["previous_audits"][-1]
+        )
+
+    def _impact_rows(self) -> dict[str, dict]:
+        target = {
+            **self._declared_target(["axiom:beta"]),
+            "audit_status": "audited_clean",
+            "criticality": "critical",
+        }
+        target["audit_state_snapshot"] = {
+            "science_fingerprint": science.build_science_fingerprint(
+                target, self.rows, self.root
+            )
+        }
+        chain = {
+            **self.rows["chain"],
+            "audit_status": "audited_clean",
+            science.PREMISE_DECLARATION_FIELD: [],
+        }
+        # The fixture's other rows are snapshot-less legacy judgments, which
+        # any premise edit re-opens; keep them out of these scenarios.
+        rows = {
+            **{
+                cid: {**row, "audit_status": "unaudited"}
+                for cid, row in self.rows.items()
+            },
+            "target": target,
+            "chain": chain,
+        }
+        chain["audit_state_snapshot"] = {
+            "science_fingerprint": science.build_science_fingerprint(
+                chain, rows, self.root
+            )
+        }
+        return rows
+
+    def test_impact_preview_lists_only_scoped_reopenings(self) -> None:
+        import premise_change_impact as impact
+
+        rows = self._impact_rows()
+        self._edit_memo("Alpha statement.", "Alpha, amended.")
+        report = impact.impact_report(rows, self.root)
+        self.assertEqual(report["live_judgments"], 2)
+        self.assertEqual(report["direct"], {})
+        self.assertEqual(report["estimated_reaudit_usd"], 0)
+
+    def test_impact_preview_reports_direct_cascade_and_cost(self) -> None:
+        import premise_change_impact as impact
+
+        rows = self._impact_rows()
+        self._edit_memo("Beta statement.", "Beta, amended.")
+        report = impact.impact_report(
+            rows, self.root, usd_per_audit=0.5, usd_per_critical_audit=1.0,
+            monthly_credit_usd=4.0,
+        )
+        self.assertEqual(
+            report["direct"],
+            {"target": "science_changed:premise_unit:axiom:beta"},
+        )
+        self.assertEqual(report["cascade"], ["chain"])
+        self.assertEqual(
+            report["direct_reasons"],
+            {"science_changed:premise_unit:axiom:beta": 1},
+        )
+        # Critical target: two seats at $1.00; leaf chain: one seat at $0.50.
+        self.assertEqual(report["estimated_reaudit_usd"], 2.5)
+        self.assertEqual(report["estimated_months_of_credit"], 0.62)
+
+    def test_real_axiom_memo_clause_map_resolves(self) -> None:
+        catalog = science.premise_unit_catalog(PROJECT_ROOT)
+        self.assertEqual(
+            sorted(unit for unit in catalog if unit.startswith("minimal_axioms:")),
+            [
+                "minimal_axioms:admissibility",
+                "minimal_axioms:lattice",
+                "minimal_axioms:qubit",
+                "minimal_axioms:record",
+            ],
+        )
+        digests = science.premise_unit_digests(PROJECT_ROOT, sorted(catalog))
+        self.assertTrue(all(digests.values()))
+
+
 if __name__ == "__main__":
     unittest.main()

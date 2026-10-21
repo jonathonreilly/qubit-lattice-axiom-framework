@@ -1,0 +1,5 @@
+# Inspectable mathematical source
+
+The argument below is supporting source under its stated hypotheses. Original checking narratives describe development history; they do not constitute a fresh capture or audit verdict. Exact original bytes remain in the recovery archive.
+
+Prior-art context, accessed2026-10-18: Dorier, Becca and Mila, The Quantum Compass Model on the Square Lattice (2005), https://arxiv.org/abs/cond-mat/0501708, studies a different two-dimensional directional model using high-order perturbation theory and numerical spectra. This establishes that compass-model perturbation theory is prior art; it neither supplies nor validates the particular simple-cycle coefficient derived here. No priority claim is made for the present susceptibility identity.

@@ -1,0 +1,5 @@
+# Supplied finite common-product devices
+
+Eight distinct conditional constructions retain their complete canonical mathematical arguments and live supporting proofs. Exact original packet recovery is in `archive/common_product_devices_review_2026_10_18/MANIFEST.json` and `archive/common_product_devices_review_2026_10_18/original-recovery.tar.gz`; members include their original PR and path. `INPUT_CLOSURE.json` maps original source paths to live destinations, including inherited versions. Original relative and machine-local paths within immutable proofs are provenance locators resolved by that map; they are not executable runtime locations. Historical verdicts and author records do not supply proof or current review authority.
+
+The primary owns its new finite calculations; it never executes historical validators or interprets historical PASS records. General estimates remain analytical and conditional. There are no generated output files. No primary execution or retained-audit promotion is included in this author package.

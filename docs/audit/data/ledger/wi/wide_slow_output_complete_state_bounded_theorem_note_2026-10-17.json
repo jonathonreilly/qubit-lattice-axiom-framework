@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.0,
+  "load_bearing_score": 5.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/control_output_family_2026_10_17.py",
   "title": "Complete output with a wider relative slow-receiver band",
-  "transitive_descendants": 7,
+  "transitive_descendants": 15,
   "verdict_rationale": null
 }

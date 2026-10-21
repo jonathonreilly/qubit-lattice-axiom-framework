@@ -1,0 +1,219 @@
+===== runner cache v1 =====
+runner: scripts/native_dilute_field.py
+runner_sha256: ee186e52a5df56222f1f9ca694177308ac2aa6df3c443b4dd96fd9b2cce5cbce
+input_fingerprint_sha256: cf34bc24d93de12ec377efd4cc8c02f031b7790e2eed8046793be677214b64eb
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 2.60
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_dilute_field-zggtjb0u
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_dilute_field-zggtjb0u/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_cluster_fock_control.py']
+{
+  "status": "bounded-support",
+  "scope": "Exact finite motif algebra with complete syndrome buffers; not full Hamiltonian dynamics",
+  "rows": [
+    {
+      "R": 10,
+      "one_norm": 1.0,
+      "rows": [
+        {
+          "modes": [
+            0,
+            0
+          ],
+          "two_norm_squared": 1.0099999999999998,
+          "ideal_norm_squared": 2,
+          "full_lowering_error": 0.9900000000000018,
+          "configurations": 10100
+        },
+        {
+          "modes": [
+            0,
+            1
+          ],
+          "two_norm_squared": 0.3165121959281337,
+          "ideal_norm_squared": 1,
+          "full_lowering_error": 0.6851482844007466,
+          "configurations": 10100
+        }
+      ]
+    },
+    {
+      "R": 14,
+      "one_norm": 0.9999999999999999,
+      "rows": [
+        {
+          "modes": [
+            0,
+            0
+          ],
+          "two_norm_squared": 1.4948979591836729,
+          "ideal_norm_squared": 2,
+          "full_lowering_error": 0.5051020408163286,
+          "configurations": 57428
+        },
+        {
+          "modes": [
+            0,
+            1
+          ],
+          "two_norm_squared": 0.58690175825858,
+          "ideal_norm_squared": 1,
+          "full_lowering_error": 0.41371413539669477,
+          "configurations": 57428
+        }
+      ]
+    },
+    {
+      "R": 18,
+      "one_norm": 0.9999999999999999,
+      "rows": [
+        {
+          "modes": [
+            0,
+            0
+          ],
+          "two_norm_squared": 1.6944444444444442,
+          "ideal_norm_squared": 2,
+          "full_lowering_error": 0.30555555555554764,
+          "configurations": 177876
+        },
+        {
+          "modes": [
+            0,
+            1
+          ],
+          "two_norm_squared": 0.7301611724157758,
+          "ideal_norm_squared": 1,
+          "full_lowering_error": 0.2700985351270802,
+          "configurations": 177876
+        }
+      ]
+    }
+  ]
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_dilute_field-zggtjb0u/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_cluster_fock_control.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_dilute_field-zggtjb0u/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_cluster_fock_control.py']
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_dilute_field-zggtjb0u/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_dilute_field_scaling.py']
+{
+  "status": "conditional-support",
+  "kappa": 0.00019110742464868558,
+  "source_g": 0.001572371242317782,
+  "source_weight": 2.472351323667965e-06,
+  "exponents": {
+    "contact": 2,
+    "global_tail": 36,
+    "projector_source": 24,
+    "orientation": 2,
+    "dispersion": 2
+  },
+  "rows": [
+    {
+      "lambda_value": ".01",
+      "k": [
+        1,
+        0
+      ],
+      "scaled_energy": 9.552845497184047e-05,
+      "limit": 9.555371232434279e-05,
+      "relative_error": -0.0002643262295930793
+    },
+    {
+      "lambda_value": ".01",
+      "k": [
+        1,
+        1
+      ],
+      "scaled_energy": 0.000191107871919687,
+      "limit": 0.00019110742464868558,
+      "relative_error": 2.340416664717986e-06
+    },
+    {
+      "lambda_value": ".01",
+      "k": [
+        2,
+        1
+      ],
+      "scaled_energy": 0.0004775403472204709,
+      "limit": 0.000477768561621714,
+      "relative_error": -0.0004776672631376875
+    },
+    {
+      "lambda_value": ".001",
+      "k": [
+        1,
+        0
+      ],
+      "scaled_energy": 9.555345975395154e-05,
+      "limit": 9.555371232434279e-05,
+      "relative_error": -2.643229499979593e-06
+    },
+    {
+      "lambda_value": ".001",
+      "k": [
+        1,
+        1
+      ],
+      "scaled_energy": 0.00019110742912770216,
+      "limit": 0.00019110742464868558,
+      "relative_error": 2.3437166666664713e-08
+    },
+    {
+      "lambda_value": ".001",
+      "k": [
+        2,
+        1
+      ],
+      "scaled_energy": 0.00047776627952977755,
+      "limit": 0.000477768561621714,
+      "relative_error": -4.776563633013137e-06
+    },
+    {
+      "lambda_value": ".0001",
+      "k": [
+        1,
+        0
+      ],
+      "scaled_energy": 9.55537097986392e-05,
+      "limit": 9.555371232434279e-05,
+      "relative_error": -2.643229169999998e-08
+    },
+    {
+      "lambda_value": ".0001",
+      "k": [
+        1,
+        1
+      ],
+      "scaled_energy": 0.0001911074246934764,
+      "limit": 0.00019110742464868558,
+      "relative_error": 2.3437496666666665e-10
+    },
+    {
+      "lambda_value": ".0001",
+      "k": [
+        2,
+        1
+      ],
+      "scaled_energy": 0.0004777685388008,
+      "limit": 0.000477768561621714,
+      "relative_error": -4.776562511333301e-08
+    }
+  ]
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_dilute_field-zggtjb0u/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_dilute_field_scaling.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_dilute_field-zggtjb0u/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_dilute_field_scaling.py']
+[PASS] native_dilute_field:C001
+{"status": "conditional-support", "scope": "Native finite-mode fixed-occupation bosonic limit; no relativistic or finite-density field claim", "motif_control": {"status": "bounded-support", "scope": "Exact finite motif algebra with complete syndrome buffers; not full Hamiltonian dynamics", "rows": [{"R": 10, "one_norm": 1.0, "rows": [{"modes": [0, 0], "two_norm_squared": 1.0099999999999998, "ideal_norm_squared": 2, "full_lowering_error": 0.9900000000000018, "configurations": 10100}, {"modes": [0, 1], "two_norm_squared": 0.3165121959281337, "ideal_norm_squared": 1, "full_lowering_error": 0.6851482844007466, "configurations": 10100}]}, {"R": 14, "one_norm": 0.9999999999999999, "rows": [{"modes": [0, 0], "two_norm_squared": 1.4948979591836729, "ideal_norm_squared": 2, "full_lowering_error": 0.5051020408163286, "configurations": 57428}, {"modes": [0, 1], "two_norm_squared": 0.58690175825858, "ideal_norm_squared": 1, "full_lowering_error": 0.41371413539669477, "configurations": 57428}]}, {"R": 18, "one_norm": 0.9999999999999999, "rows": [{"modes": [0, 0], "two_norm_squared": 1.6944444444444442, "ideal_norm_squared": 2, "full_lowering_error": 0.30555555555554764, "configurations": 177876}, {"modes": [0, 1], "two_norm_squared": 0.7301611724157758, "ideal_norm_squared": 1, "full_lowering_error": 0.2700985351270802, "configurations": 177876}]}]}, "derived_matrix_control": {"status": "conditional-support", "kappa": 0.00019110742464868558, "source_g": 0.001572371242317782, "source_weight": 2.472351323667965e-06, "exponents": {"contact": 2, "global_tail": 36, "projector_source": 24, "orientation": 2, "dispersion": 2}, "rows": [{"lambda_value": ".01", "k": [1, 0], "scaled_energy": 9.552845497184047e-05, "limit": 9.555371232434279e-05, "relative_error": -0.0002643262295930793}, {"lambda_value": ".01", "k": [1, 1], "scaled_energy": 0.000191107871919687, "limit": 0.00019110742464868558, "relative_error": 2.340416664717986e-06}, {"lambda_value": ".01", "k": [2, 1], "scaled_energy": 0.0004775403472204709, "limit": 0.000477768561621714, "relative_error": -0.0004776672631376875}, {"lambda_value": ".001", "k": [1, 0], "scaled_energy": 9.555345975395154e-05, "limit": 9.555371232434279e-05, "relative_error": -2.643229499979593e-06}, {"lambda_value": ".001", "k": [1, 1], "scaled_energy": 0.00019110742912770216, "limit": 0.00019110742464868558, "relative_error": 2.3437166666664713e-08}, {"lambda_value": ".001", "k": [2, 1], "scaled_energy": 0.00047776627952977755, "limit": 0.000477768561621714, "relative_error": -4.776563633013137e-06}, {"lambda_value": ".0001", "k": [1, 0], "scaled_energy": 9.55537097986392e-05, "limit": 9.555371232434279e-05, "relative_error": -2.643229169999998e-08}, {"lambda_value": ".0001", "k": [1, 1], "scaled_energy": 0.0001911074246934764, "limit": 0.00019110742464868558, "relative_error": 2.3437496666666665e-10}, {"lambda_value": ".0001", "k": [2, 1], "scaled_energy": 0.0004777685388008, "limit": 0.000477768561621714, "relative_error": -4.776562511333301e-08}]}}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_dilute_field-zggtjb0u/outputs/native_dilute_field/result.json sha256=1ce722a58efb8d8752f0d48c93ad25f005d469861af7d6ec139a1732c58ecaff
+{"derived_matrix_control": {"exponents": {"contact": 2, "dispersion": 2, "global_tail": 36, "orientation": 2, "projector_source": 24}, "kappa": 0.00019110742464868558, "rows": [{"k": [1, 0], "lambda_value": ".01", "limit": 9.555371232434279e-05, "relative_error": -0.0002643262295930793, "scaled_energy": 9.552845497184047e-05}, {"k": [1, 1], "lambda_value": ".01", "limit": 0.00019110742464868558, "relative_error": 2.340416664717986e-06, "scaled_energy": 0.000191107871919687}, {"k": [2, 1], "lambda_value": ".01", "limit": 0.000477768561621714, "relative_error": -0.0004776672631376875, "scaled_energy": 0.0004775403472204709}, {"k": [1, 0], "lambda_value": ".001", "limit": 9.555371232434279e-05, "relative_error": -2.643229499979593e-06, "scaled_energy": 9.555345975395154e-05}, {"k": [1, 1], "lambda_value": ".001", "limit": 0.00019110742464868558, "relative_error": 2.3437166666664713e-08, "scaled_energy": 0.00019110742912770216}, {"k": [2, 1], "lambda_value": ".001", "limit": 0.000477768561621714, "relative_error": -4.776563633013137e-06, "scaled_energy": 0.00047776627952977755}, {"k": [1, 0], "lambda_value": ".0001", "limit": 9.555371232434279e-05, "relative_error": -2.643229169999998e-08, "scaled_energy": 9.55537097986392e-05}, {"k": [1, 1], "lambda_value": ".0001", "limit": 0.00019110742464868558, "relative_error": 2.3437496666666665e-10, "scaled_energy": 0.0001911074246934764}, {"k": [2, 1], "lambda_value": ".0001", "limit": 0.000477768561621714, "relative_error": -4.776562511333301e-08, "scaled_energy": 0.0004777685388008}], "source_g": 0.001572371242317782, "source_weight": 2.472351323667965e-06, "status": "conditional-support"}, "motif_control": {"rows": [{"R": 10, "one_norm": 1.0, "rows": [{"configurations": 10100, "full_lowering_error": 0.9900000000000018, "ideal_norm_squared": 2, "modes": [0, 0], "two_norm_squared": 1.0099999999999998}, {"configurations": 10100, "full_lowering_error": 0.6851482844007466, "ideal_norm_squared": 1, "modes": [0, 1], "two_norm_squared": 0.3165121959281337}]}, {"R": 14, "one_norm": 0.9999999999999999, "rows": [{"configurations": 57428, "full_lowering_error": 0.5051020408163286, "ideal_norm_squared": 2, "modes": [0, 0], "two_norm_squared": 1.4948979591836729}, {"configurations": 57428, "full_lowering_error": 0.41371413539669477, "ideal_norm_squared": 1, "modes": [0, 1], "two_norm_squared": 0.58690175825858}]}, {"R": 18, "one_norm": 0.9999999999999999, "rows": [{"configurations": 177876, "full_lowering_error": 0.30555555555554764, "ideal_norm_squared": 2, "modes": [0, 0], "two_norm_squared": 1.6944444444444442}, {"configurations": 177876, "full_lowering_error": 0.2700985351270802, "ideal_norm_squared": 1, "modes": [0, 1], "two_norm_squared": 0.7301611724157758}]}], "scope": "Exact finite motif algebra with complete syndrome buffers; not full Hamiltonian dynamics", "status": "bounded-support"}, "scope": "Native finite-mode fixed-occupation bosonic limit; no relativistic or finite-density field claim", "status": "conditional-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_dilute_field-zggtjb0u elapsed_seconds= 2.540777917020023
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

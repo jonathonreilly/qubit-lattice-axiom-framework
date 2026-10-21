@@ -1,0 +1,104 @@
+> Source-use boundary (2026-10-18 packaging): The complete mathematical body below remains inspectable supporting material at its explicit hypotheses. Historical author/check status, acceptance and execution narratives are provenance only; they confer no present verdict. Original byte-exact recovery is in `archive/product_continuation_four_review_2026_10_18/MANIFEST.json`. References to earlier hashes identify original versions; the live input closure binds current portable sources.
+
+# Local background norms for a single mediated clock link
+
+Status: new author sharpening, pending distinct check. ROOT proposed separating background blocks disjoint from the active clock pair. This note proves the two required exact commutators, retains the entire background evolution, and gives the resulting finite-network budget. Earlier bounds remain valid and unchanged; no new gate or finite-release theorem is inferred.
+
+Dependencies: EXACT_ALL_TIME.md SHA `37e2cf2c776d6425c93b113b92bc114b8e478db779d1dc6f0d28cc33a925ca34`; VACANCY_HOPPING_PROBE.md SHA `7ce327a279b7c89e6ee48dd94555a78bdb357dd183b4333618f958e4d387da00`; NETWORK_VACANCY_INTERFACE.md SHA `de29d04e85e5479ef4c35969f079bd5727f846c59ba6225f79fc81405c7cf86e`. ROOT reports these accepted at their scoped interfaces. Their arguments were fully read/authored previously and are reused at unchanged identities. This is shared-design author evidence, not a further independent review.
+
+## Support is the decisive hypothesis
+
+Take a finite network of clock qubits containing the neighboring pair a,b, plus the two old qubits and mediator m. The exact mediator polar dressing U_med from EXACT_ALL_TIME is constructed entirely from spectral projectors of operators on old1,old2,a,b,m. When this device is embedded in the clock network, use U_med tensor identity on every other site and passive reference. It retains its exact intertwining identity and ||U_med−I||<=82lambda. Degeneracies introduced by spectators do not require a new arbitrary global spectral choice: this explicitly extended local dressing already proves the identity.
+
+The vacancy rotation D_vac is likewise the explicit pair rotation, controlled by the old operator X1X2. It acts only on old1,old2,a,b and has ||D_vac−I||<=1/U, where U>0 is the dimensionless repulsion. Neither dressing is installed as a physical block.
+
+Let the actual clock-only background inventory be B=sum_ell B_ell, with bounded real positive allowed local blocks and [B,N]=0, N=sum_clock n_j. Split the LISTED blocks into
+
+    B_near=sum_{supp(B_ell) intersects {a,b}} B_ell,
+    B_far =sum_{supp(B_ell) disjoint from {a,b}} B_ell.
+
+The blocks act trivially on old and mediator sites. Their local supports give exactly
+
+    [B_far,U_med]=[B_far,D_vac]=0.                 (1)
+
+The optional vacancy compensation B_comp=r sum_{j outside {a,b}}n_j, r=(sqrt(U²+4)−U)/2, also commutes with both dressings. These are support statements on the full occupation Hilbert space, not expectations on a one-head input. If a background term acts on an old qubit or mediator, disjointness from {a,b} alone would not prove (1); that different inventory is excluded here.
+
+It is not necessary that B_near commute with B_far or that each part separately conserve N. The actual target retains their sum and its assumed global number conservation.
+
+## Physical mediator comparison with the full far background retained
+
+Use H_med=c_eff I+U_med H_eff U_med†, with
+
+    H_eff=K−b_eff X1X2Y_aY_b+2a_eff n_m.
+
+Install the physical background
+
+    b_eff[U n_a n_b+B_near+B_far+B_comp].
+
+On conjugating it by U_med, only U n_a n_b+B_near can change. With M=||B_near||, the transformed-minus-original background norm is therefore at most
+
+    2||U_med−I|| b_eff(U+M).
+
+The outside dressing factors plus Duhamel give, with s=b_eff t,
+
+    mediator error <=164lambda[1+|s|(U+M)].        (2)
+
+The comparator contains the ENTIRE B_far and B_comp. Their norms do not enter (2) because their conjugation error is exactly zero, not because their dynamics were discarded or replaced by a one-head compression. Duhamel between selfadjoint finite matrices bounds the difference by the perturbation norm independently of the sizes of the common terms. No commutation of these common terms with the retained near terms is needed.
+
+## Vacancy comparison and global one-head restriction
+
+At the clock level H_pair=U P11−X1X2Y_aY_b=D_vac H_diag D_vac† with
+
+    H_diag=−X1X2 J_ab−rP00+(U+r)P11.
+
+Using (1), conjugation of B_near+B_far+B_comp changes only B_near. The same two-endpoint and Duhamel estimate gives
+
+    vacancy error <=(2/U)(1+|s|M).                (3)
+
+Again all far dynamics and compensation remain in the comparison. H_diag+B+B_comp commutes with global N. Restrict its comparison evolution, but not the actual evolution, to the initial global one-head subspace. There P11=0, P00=I−n_a−n_b and B_comp=r(I−n_a−n_b). The vacancy shift cancels exactly. The resulting target is generated by
+
+    −X1X2 J_ab+B|_{N=1}.
+
+Actual pair-creation leakage is included in (3). No final projection, reset or selection of a rare outcome is performed.
+
+Combining (2)-(3), the complete no-double/global-one-head input isometry is within
+
+    E(s)=164lambda[1+|s|(U+M)]
+                          +(2/U)(1+|s|M)         (4)
+
+of
+
+    exp(−it c_eff) exp(−itK)
+       exp[−is(−X1X2 J_ab+B|_{N=1})]
+                       tensor exp(−it2a_eff n_m).
+
+The product factors commute for this clock-only background. The target applies to arbitrary old/clock/mediator correlations initially supported on one clock head and to arbitrary passive references. A definite head at one vertex is a real product clock input. The initial mediator is unrestricted. The scalar and effective mediator aging are retained as in the source; no bare-gap or reset replacement is made.
+
+Without compensation use the same bound (4) and retain −rI+r(n_a+n_b) in the restricted target generator. There is then no extra compensation inventory.
+
+## Explicit budgets, caps and what remains extensive
+
+For a specified finite clock network, scaled horizon |s|<=S and 0<epsilon<=1, it suffices to take
+
+    U>=8(1+SM)/epsilon,
+    lambda<=min{1/1000,
+                  epsilon/[656(1+S(U+M))]}.
+
+Then each term in (4) is <=epsilon/4, so the complete vector error is <=epsilon/2 and the unhalved complete channel error <=epsilon. A readily evaluated bound is M<=sum_{ell incident a or b}||B_ell||, counting each listed block once in this union. This is a full-support operator norm bound; it is not its one-head restriction.
+
+The compensation still has L−2 installed positive onsite blocks for L clocks, full norm r(L−2), and load b_eff r at each outside clock. Its extensive norm is absent from (4) because of exact (1), not because those hardware resources disappear. Counts remain L+3 qubits and L+4+q positive blocks with q listed B blocks, as in the frozen network source. The repulsion block costs b_eff U at each of a,b. All B blocks incur b_eff||B_ell|| at each incident site.
+
+For a simple sufficient cap condition, put K_load=max_v sum_{ell incident v}||B_ell|| over clock sites, and C_load=U+K_load+r. The original source gives g<3lambda, b_eff<=lambda². Every incident load is then <=4+8lambda+lambda² C_load. For any Lambda>4, additionally choosing
+
+    lambda<=min{(Lambda−4)/16,
+                    sqrt((Lambda−4)/(2C_load))}
+
+ensures the cap. This condition pays the local far-block load even though their total norm is absent from the dynamical error. Constants can depend on the chosen local inventory; no uniform bound is assumed for an unspecified graph with growing incident weights.
+
+This proof is for each finite network. It does not construct an infinite-volume many-head generator or justify exchanging an infinite-volume limit with evolution. It does show that this particular finite-network dynamical error need not grow with distant arm length when the near inventory and local cap remain fixed. Source preparation, actual propagation, common head output and boundary-return errors remain separate obligations.
+
+## Scope and work record
+
+The improved estimate is a local-support consequence of two already explicit finite dressings. It neither changes the actual Hamiltonian nor improves unproved packet or gate properties. It does not justify multiple shared-gap mediated edges, a released literal W, capture, reset, or permanent halt. Positivity, calibrated coefficients, finite geometry, initial one-head support and the chosen finite observation horizon remain supplied.
+
+ROOT proposed the locality sharpening; the support commutators, retained-background Duhamel argument and budgets were reconstructed here. No scientific executable, external search, Git, canonical/checkpoint/editable-prompt/model change, publication, delegation or predecessor edit occurred. Only this new source was written. Distinct checking is required before downstream promotion.

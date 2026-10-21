@@ -1,0 +1,152 @@
+===== runner cache v1 =====
+runner: scripts/curvature_member_closure_with_the_walker_forces_alpha_k2_over_four_2026_10_18.py
+runner_sha256: 8061c2b855b57832154495bcac863bcf259ab006967612733c5634a2159cf099
+input_fingerprint_sha256: 572fab0d2e3b3fb85581760f680779c16aa93da094ee22555305a71af6decf98
+timeout_sec: 2400
+exit_code: 0
+elapsed_sec: 54.76
+status: ok
+----- stdout -----
+Execution scope: default and explicitly requested optional branches only; historical totals are not fresh evidence.
+per_element: algebraic entries and numerical fixtures below have their stated exact or floating arithmetic scope.
+per_site: only the explicitly supplied local sites and translation rules are exercised; no physical site law is inferred.
+per_mode: only displayed momentum, representation and coefficient sectors are checked; untested sectors remain unverified.
+per_block: finite matrix, graph and ansatz blocks below use their declared dimensions; optional blocks require explicit flags.
+lattice_wide: finite tori and written conditional proofs have distinct scope; numerical scans do not certify all sizes.
+== Part A [part_A]: Result 1: Phi_rho invariance, the invariant TT cone, premises equivalent to K1 = K2 (B21 check)
+[PASS] A.b21chk.T0a [1s]: own [sqrt g R]^(1) = d_i d_j h_ij - lap trh (kernel), own [sqrt g R]^(2) = Fierz-Pauli -1/4(dh)^2 + 1/2(d.h)^2 - 1/2 d.h.dtrh + 1/4(dtrh)^2 modulo total derivatives
+[PASS] A.b21chk.T0b [1s]: positive controls of the kernel bracket: {G_GR[xi],G_GR[eta]} = G_GR[[xi,eta]] with G_GR = int Pt L_xi(delta+h) (all orders), and {G_m,G_m} = G_m[[xi,eta]]
+   Phi_rho: G1 (coef lam1): scales as rho^-1  ok
+   Phi_rho: G2 = int P L_xi h (coef nu): scales as rho^0  ok
+   Phi_rho: R1 (coef K1): scales as rho^1  ok
+   Phi_rho: R2 (coef K2): scales as rho^2  ok
+   Phi_rho: kin0 (coef 1/alpha): scales as rho^-2  ok
+   Phi_rho: kin1 (coef k): scales as rho^-1  ok
+   Phi_rho: matter coupling (coef a_s): scales as rho^1  ok
+   Phi_rho: matter H0, G_m (coef 1, c, lam_s): scales as rho^0  ok
+   Phi_rho: zeta's h-term (coef beta): scales as rho^1  ok
+[PASS] A.b21chk.T1a [1s]: F' = F o Phi_rho (h -> rho h, P -> P/rho): lam1 -> lam1/rho, nu -> nu, K1 -> rho K1, K2 -> rho^2 K2, alpha -> rho^2 alpha, kin1 -> kin1/rho, a_s -> rho a_s, beta -> rho beta; matter c, lam_s, s1, s2 and c0 unchanged
+   ratio new/old under Phi_rho: {'lam1 K2/K1': 1, 'K2/(4 alpha)': 1, 'nu K1/(4 alpha lam1)': 1, 'c0 = K1/(4 alpha lam1)': 1, 'K1/(4 alpha)': 1/rho, 'K2/K1': rho, 'r = lam1/nu': 1/rho}
+[PASS] A.b21chk.T1b [1s]: invariants: lam1 K2/K1, K2/(4 alpha), nu K1/(4 alpha lam1), c0;  NOT invariant: K1/(4 alpha) (x 1/rho), K2/K1 (x rho), r (x 1/rho).  Canonicity: Phi_rho preserves int P dh exactly (linear symplectic map)
+   H(h01,h01) kernel = K2*kz**2/2, H(P01,P01) = 1/(8*alpha), omega^2 = 4 A_hh A_PP = K2*kz**2/(4*alpha)
+[PASS] A.b21chk.T2 [1s]: TT graviton (h01, k || z, decoupled) has omega^2 = K2 k^2/(4 alpha): the graviton cone is K2/(4 alpha); R1 never enters TT propagation
+   isotropic one-derivative G2 basis: 30 pairings -> rank 12
+   {G,G} order P alone: 1 branch(es), free m: 4  [{m0: 0, m1: 0, m2: 0, m3: 0, m4: 0, m5: nu, m8: m11, m9: m10 - 2*nu}]
+   {C,G} h-linear alone: free m: 3  [{m0: -m11/2, m1: m11/2, m2: m8, m3: -m11, m4: m10 - 2*K2*lam1/K1, m5: m11 + K2*lam1/K1, m6: -m11/2, m7: m11/2, m9: -m11, s1: -K2*lam1/K1, s2: 0}]
+   joint: [{m0: 0, m1: 0, m10: 2*K2*lam1/K1, m11: 0, m2: 0, m3: 0, m4: 0, m5: K2*lam1/K1, m6: 0, m7: 0, m8: 0, m9: 0, nu: K2*lam1/K1, s1: -K2*lam1/K1, s2: 0}]
+[PASS] A.b21chk.T3 [3s]: A3 reproduced on an own isotropic basis: {G,G} order P + {C,G} h-linear force G2 = nu int Pt L_xi h uniquely, nu = lam1 K2/K1, s1 = -nu, s2 = 0 (symbolic lam1, K1, K2)
+   W1: r=2 lam1=2 nu=1 K1=3 K2=3/2 alpha=5 beta=-1/2 c0=3/40: {'GG_P': True, 'GG_Ph': True, 'CG_h': True, 'CG_PP': True, 'CC_P': True, 'CC_Ph': True}
+[PASS] A.b21chk.T4a [4s]: witness r = 2 (lam1 = 2, nu = 1, K1 = 3, K2 = 3/2, alpha = 5, kin1 = DeWitt about 2 delta, beta = -1/2, s1 = -1): closes in {G,G} (P, Ph), {C,G} (h, P^2), {C,C} (P, Ph): K1 != K2 closes
+   W2: r=2 lam1=2 nu=1 K1=3 K2=3 alpha=5 beta=-1/2 c0=3/40: {'GG_P': True, 'GG_Ph': True, 'CG_h': False, 'CG_PP': True, 'CC_P': True, 'CC_Ph': False}
+[PASS] A.b21chk.T4b [5s]: negative control r = 2 with K2 := K1 = 3: {C,G} h-linear and {C,C} Ph FAIL (others pass)
+   W3: r=1 lam1=1 nu=1 K1=3 K2=3 alpha=5 beta=-1 c0=3/20: {'GG_P': True, 'GG_Ph': True, 'CG_h': True, 'CG_PP': True, 'CC_P': True, 'CC_Ph': True}
+[PASS] A.b21chk.T4c [6s]: r = 1 (lam1 = nu, K1 = K2 = 3): closes in all six sectors
+   W4: r=1/3 lam1=1/3 nu=1 K1=3 K2=9 alpha=5 beta=-3 c0=9/20: {'GG_P': True, 'GG_Ph': True, 'CG_h': True, 'CG_PP': True, 'CC_P': True, 'CC_Ph': True}
+[PASS] A.b21chk.T4d [7s]: r = 1/3 (K1 = 3, K2 = 9; the Phi_3 image of r = 1, rho > 1 direction): closes in all six sectors
+   {C,C} Ph, G2 = nu Lie, unknown kin1/beta/beta'/K2: [{K2: K1*nu/lam1, beta: -nu/lam1, betap: 0, k1: -nu/(8*alpha*lam1), k2: nu/(16*alpha*lam1), k3: -nu/(4*alpha*lam1), k4: nu/(2*alpha*lam1)}]
+[PASS] A.b21chk.T5a [8s]: route 2 (A7b): {C,C} at order Ph with G2 = nu L_xi h forces lam1 K2 = nu K1, beta = -nu/lam1, beta' = 0 and kin1 = DeWitt about (lam1/nu) delta (own direct expansion)
+   {G,G}P + {C,C}Ph with beta = -1 (lam1, K2 unknown): [{K2: K1, betap: 0, k1: -k3 - k4 + 1/(8*alpha), lam1: nu, m10: 4*alpha*k4*nu, m11: -2*nu*(4*alpha*(k3 + k4) - 1), m6: 2*nu*(-8*alpha*k2 + 2*alpha*k3 + 4*alpha*k4 - 1), m7: nu*(4*alpha*k3 + 1)}]
+[PASS] A.b21chk.T5b [13s]: A7d: with the structure function fixed to delta - h (beta = -1), {G,G} order P + {C,C} Ph force K2 = K1 and lam1 = nu (so beta = -1 is a normalisation premise equivalent to K1 = K2)
+   matter {C,G} at order matter^2: [{a1: c*lam_s/(4*lam1) + c*s2/(4*lam1), a10: 0, a2: -c*lam_s/(2*lam1), a3: 0, a4: 0, a5: 0, a6: 0, a7: -a8, a9: -lam_s/(4*lam1) + s2/(4*lam1), s1: -lam_s}]
+   with s2 = 0: free coupling directions left = ['a8']
+[PASS] A.b21chk.T6a [14s]: matter {C,G} (scalar, 10-term isotropic h-linear coupling ansatz): s1 = -lam_s and, with gravity's s2 = 0, the coupling is (lam_s/lam1) x the unit metric stress of delta + h, plus only the covariant non-minimal R1 phi^2 direction  =>  a_s = lam_s/lam1
+   {C,C} order P + order phi pi: [{b: -1/2, c: K1*lam_s/(4*alpha*lam1), c0: K1/(4*alpha*lam1)}]
+[PASS] A.b21chk.T6b [14s]: {C,C}: b = -1/2, c0 = K1/(4 alpha lam1), matter cone c = lam_s K1/(4 alpha lam1); with lam_s = nu (matter {G,G}, T0b) and nu = lam1 K2/K1 (T3): c = K2/(4 alpha) = graviton TT cone (T2)
+   unit matter coupling fixed, lam_s = nu; solve gravity + matter {C,G} for lam1, K2, s1, s2: [{K2: K1, lam1: nu, s1: -nu, s2: 0}]
+[PASS] A.b21chk.T6c [14s]: premise (d) computed: with the matter coupling FIXED to unit metric stress of delta + h (not Phi_rho-covariant: a_s -> rho a_s) the h-linear {C,G} brackets force lam1 = nu and K2 = K1.  So 'no bracket can force K1 = K2' holds only when every Phi_rho-non-invariant normalisation in the ansatz is left free
+   A6: [{k1: -nu/(8*alpha*lam1), k2: nu/(16*alpha*lam1), k3: -nu/(4*alpha*lam1), k4: nu/(2*alpha*lam1)}]  DeWitt/r: {k1: -nu/(8*alpha*lam1), k2: nu/(16*alpha*lam1), k3: -nu/(4*alpha*lam1), k4: nu/(2*alpha*lam1)}
+[PASS] A.b21chk.T7 [15s]: A6: {C,G} P^2 sector with G2 = nu L_xi h and N' = -nu xi.dN forces kin1 = h-linear DeWitt about (lam1/nu) delta (own expansion; = (nu/lam1) x DeWitt about delta)
+== Part B [part_B]: Results 1-2: the walker's coupling strength, the lapse identity with K1, K2, a_s (C4 runner)
+   -- C4 runner part A: the walker's coupling strength to h
+[PASS] B.c4.A1 [15s]: uniform frame: H(k)^2 = s^T (E^T E) s * 1 exactly (Clifford relation of the coin); the walker's cone is g^{-1} = E^T E
+[PASS] B.c4.A2a [15s]: h = (E^T E)^{-1} - delta = -(eps + eps^T) t + O(t^2): only the symmetric part of the tilt enters (block 62 T3(a))
+[PASS] B.c4.A2b [15s]: order-t match of the walker's cone with matter on delta + a h for all eps, s: solution [{a: 1}] (a_s = 1 uniquely)
+[PASS] B.c4.A2c [15s]: second order: (delta + h)(E^T E) = 1 + O(t^3) with h = -tX + t^2(X^2 - eps^T eps); unit coupling persists beyond first order
+[PASS] B.c4.A3 [15s]: block 62's source -(1/2) sum Theta_(ij) h_ij is the metric-variational stress at unit strength: a_s = 1
+[PASS] B.c4.A5a [15s]: two-step coupling: H^2 = |s|^2 - a_R P^T h P + O(h^2) at every wave vector (s_a c_a = P_a)
+[PASS] B.c4.A5b [17s]: two-step coupling at all eight species corners: H^2 = dk^T (1 - a_R h) dk + O(dk^3, h^2) -> a_s = a_R for every species
+[PASS] B.c4.A4 [17s]: species corners: site frame (block 62) sees eta h eta (diagonals unit, mixed off-diagonals flipped); one-step bond (block 64) sees sym(h eta); species seeing exactly delta + a_R h: {'site': 2, 'one-step': 1, 'two-step': 8}
+[PASS] B.c4.A5c [17s]: long wavelength: the realisation's normalisation clause 'Lambda R(0) = 1' (block 120 note) is a_R = 1, i.e. a_s = 1
+   -- C4 runner part B: the member's lapse identity with K1 != K2 and source strength a_s
+[PASS] B.c4.B1 [18s]: R1, R2 invariant under h -> h + p xi + xi p; p_i dR2/dh_ij = 0 (block 62 T3(b))
+[PASS] B.c4.B2 [18s]: at beta = -alpha: e_u'' = -(K1 a_s/(4 alpha)) p.Theta.p identically; no K2, no h, no u dependence
+[PASS] B.c4.B4 [18s]: TT disturbance: omega^2 = K2*P**2/(4*alpha) (K1 does not enter: R1 vanishes on TT)
+[PASS] B.c4.B5a [18s]: Phi_rho: the member+source in h = rho h' is the member+source in h' with (rho K1, rho^2 K2, rho^2 alpha, rho a_s)
+[PASS] B.c4.B5b [18s]: invariance under Phi_rho: {'K1 a_s/alpha (lapse identity, B2)': True, 'K2/alpha (TT cone, B4)': True, 'K1 a_s/K2': True, 'K1/K2': False, 'a_s': False}
+[PASS] B.c4.B6 [18s]: static pull: lam = e/(4 K1 p^2), u = -(K2/K1) lam; the matter's space/time curvature ratio gamma = K1*a_s/K2 (Phi_rho-invariant); block 62 (K1 = K2, a_s = 1) gives gamma = 1
+== Part C [part_C]: Results 1-2: second routes (C4 check)
+   -- C4 check part A: walker coupling strength and species (Jacobian route)
+[PASS] C.c4chk.A1 [18s]: first-order cone at the 8 corners: site -eta h eta, one-step -sym(h eta), two-step -h; corners seeing delta+h: {'site': 2, 'one': 1, 'two': 8}
+[PASS] C.c4chk.A2 [18s]: 6^3 torus, position-space anticommutator couplings (blocks 64/73) with a uniform strain: hermitian, spectra equal the symbol |s + B c P| (two-step) and |s + B c s| (one-step) used in A1 (floating point, atol 1e-9)
+[NOTE] A3 (not a computed check): compatibility <K, R G xi> is homogeneous of degree 1 in R (definition, block 120 line 67): rescaling R -> cR preserves it for every c != 0; 'Lambda R(0) = 1' (line 66) is a normalisation clause, not a consequence
+[PASS] C.c4chk.A4 [19s]: rational tilt: h = -(eps+eps^T)t + O(t^2) and unit matter coupling a = [{a: 1}]
+   -- C4 check part B: member's lapse identity with K1, K2, a_s (closed-form DeWitt inverse)
+[PASS] C.c4chk.B1 [19s]: beta = -alpha: e_u'' = K1 R1(hdd) = -(K1 a_s/(4 alpha)) p.Theta.p; K2, u, h drop (transversality of dR2, p.(p^2-pp).p = 0)
+[PASS] C.c4chk.B2 [19s]: generic beta: extra trace terms (1 + beta/alpha) p^2 tr(hdd) survive; identity is special to the closing ratio
+[PASS] C.c4chk.B3 [20s]: matching the walker's exact identity (09-25 exact-lattice T1, block 134 T2) fixes K1 a_s = 4 alpha; the notes' 'alpha = K/4' is this with a_s = 1 and K := K1
+[PASS] C.c4chk.B4 [20s]: TT pair: 2 alpha hdd = -(K2 P^2/2) h, omega^2 = K2*P**2/(4*alpha); R1 = 0 on TT so K1 is absent
+[PASS] C.c4chk.B5 [20s]: after lapse matching the TT speed^2 is K2/(K1*a_s): '= walker top speed' holds iff K2 = a_s K1 (gamma = 1); the notes' sentence 'at alpha = K/4 the disturbances move at the walker's top speed' uses the single-K member
+[PASS] C.c4chk.B6 [20s]: static pull: lam = e/(4*K1*p1**2 + 4*K1*p2**2 + 4*K1*p3**2), u = -K2*e/(4*K1**2*p1**2 + 4*K1**2*p2**2 + 4*K1**2*p3**2); gamma = K1*a_s/K2
+   -- C4 check part C: R1, R2 against the variational identity
+[PASS] C.c4chk.C1 [20s]: linearised scalar curvature of delta + h is R1(h) = p^2 tr h - p.h.p (unit coefficient)
+[PASS] C.c4chk.C2 [20s]: block 62's R2(h) = -(1/2) h:G^(1)(h): R2 is the second-order part of sqrt(g)R[delta + h] (modulo divergences) with unit coefficient
+[PASS] C.c4chk.C3 [20s]: K r sqrt(g)R[delta + h/r] = K R1 + (K/r) R2 at quadratic order: B21's one-parameter family, matter on delta + h/r has a_s = 1/r
+== Part D [part_D]: Results 3-4: closure with the walker as matter, Fourier-kernel route (C4b runner)
+[PASS] D.c4b.T0a [20s]: spinor bracket controls: {int s_1, int s_2} = 2 int s_3 (= -i chibar[sigma1,sigma2]chi); {int N n, int M J_(0,0)} = -int M d_0N n (hand value: J_(0,0) generates -translation of density weight 1/2)
+[PASS] D.c4b.T0b [20s]: flat walker: {C_f[N],C_f[M]} = v^2 G_K[N dM - M dN] with G_K[xi] = int chibar i(xi.d + div xi/2 + (i/4) curl xi.sigma) chi (spin term -1/4 curl xi.s; +1/4 fails): {1: False, -1: True}  (B15 C2 analogue)
+[PASS] D.c4b.T0c [21s]: gravity control: {G_GR[xi], G_GR[eta]} = G_GR[[xi,eta]], G_GR = int Pt L_xi(delta + h)
+[PASS] D.c4b.A2 [21s]: walker coupling with free strength a_s (E = (delta + a_s h)^(-1/2)): closure at order chi chi iff a_s = lam_f/lam1: [{a_s: lam_f/lam1}]
+   isotropic ansatz: G_f^(0) 5 terms, coupling 5 terms; null space 3; spanned by (lam_f: Kosmann + walker), (s2: trh walker), (W_trh): True
+[PASS] D.c4b.A1b [22s]: SO(3)-isotropic ansatz (all invariant contractions incl. epsilon): the solution space is exactly 3-dim, spanned by lam_f x [Kosmann, walker coupling on E = (delta+h)^(-1/2), s1 = -1], the density convention s2 (coupling + (s2/2) trh x walker) and the canonical phase redefinition chi -> exp(i k trh) chi.  No other coupling closes
+   G_f^(1) isotropic basis: 20 terms
+   {G,G} chi chi solutions: [{gp10: -gp9, gp11: gp9, gp12: 0, gp13: 0, gp14: -gp17, gp15: gp17, gp16: -gp17, gp18: 0, gp19: 0, gp2: -gp5, gp3: gp5, gp4: -gp5, gp6: 0, gp7: 0, gp8: -gp9, lfu: 0}, {gp10: -gp9, gp11: gp9, gp12: 0, gp13: 0, gp14: -gp17, gp15: gp17, gp16: -gp17, gp18: 0, gp19: 0, gp2: -gp5, gp3: gp5 + nu**2/16, gp4: -gp5 + nu**2/16, gp6: 0, gp7: 0, gp8: -gp9, lfu: nu}]
+[PASS] D.c4b.C1 [26s]: {G,G} at order chi chi with the h-linear fermion relabelling part G_f^(1) free (isotropic, 20 terms): lam_f in {0, nu} only -> lam_f = nu (the fermion's structure constant is the common one, as for the scalar, B19 C1b); free G_f^(1) directions at lam_f = nu: 5
+[PASS] D.c4b.C2 [27s]: product bracket without G_f^(1): {nu K[xi], nu K[eta]} - nu^2 K[[xi,eta]] != 0 and equals c nu^2 int eps_kij (S_xi S_eta)_ij s_k (S = symmetric strain) for exactly one c: {1/2: True, -1/2: False, 1: False, -1: False} (on-site rotation remainder, spin-1/2 note Result 4 / N2; G_f^(1) is what absorbs it)
+   walker a_s = 1, lam_f = nu: [{K2: K1, lam1: nu, s1: -nu, s2: 0}]
+[PASS] D.c4b.B1 [27s]: gravity's h-linear {C,G} + the walker's order-chi-chi {C,G}, with the walker's coupling FIXED at a_s = 1 (C4) and lam_f = nu (C1): unique solution lam1 = nu, K2 = K1, s1 = -nu, s2 = 0  (fermion analogue of B21-check T6c)
+   walker a_s free: [{K2: K1*a_s, lam1: nu/a_s, s1: -nu, s2: 0}]
+[PASS] D.c4b.B2 [28s]: with the coupling strength a_s left free the same brackets give lam1 = nu/a_s and K2 = a_s K1: closure ties a_s = K2/K1 (C4 route II), so a_s = 1 <=> K1 = K2; with a_s free nothing fixes K2/K1 (B21 no-go, Phi_rho)
+   {C,C} P + chi chi: [{b: -1/2, c0: K1/(4*alpha*lam1), vv: K1*lam_f/(4*alpha*lam1)}]
+[PASS] D.c4b.D1 [28s]: {C,C} at order P (member) and chi chi (walker): b = -1/2, c0 = K1/(4 alpha lam1), walker speed^2 v^2 = lam_f K1/(4 alpha lam1) = a_s K1/(4 alpha) (A2).  With a_s = 1: v^2 = K1/(4 alpha) (C4 B2's lapse identity); with B1 (lam_f = lam1 = nu, K2 = K1): v^2 = K2/(4 alpha) = TT graviton cone (B21 check T2)
+[PASS] D.c4b.D3 [28s]: {C,C} at order P chi chi: zero identically (the walker's h-coupling has no lapse gradient), so it imposes nothing; rhs c0 G[zeta] has no P chi chi term
+[PASS] D.c4b.D4 [28s]: with B2's closure solution the walker's speed^2 is v^2 = K1*a_s/(4*alpha) = K2/(4 alpha) = a_s K1/(4 alpha) (one cone for walker and TT member, every a_s); the walker's speed v = 1 then forces alpha = K1*a_s/4 = K2/4 = a_s K1/4, i.e. alpha = K1/4 = K2/4 at block 62's a_s = 1
+   {C,G} P chi chi: kin_X basis 3; solution [{kx0: -gp0/(8*alpha*lam1) - gp1/(8*alpha*lam1), kx1: gp1/(4*alpha*lam1), kx2: nu**2/(32*alpha*lam1)}]
+[PASS] D.c4b.E1 [28s]: {C,G} at order P chi chi: solvable for the P h s / P h n cross term kin_X of the kinetic term, and kin_X is forced nonzero (its P h s part is nu^2/(32 alpha lam1^2) x [one epsilon structure], independent of the free G_f^(1) directions): the Darboux form of the symmetric-section connection term pi = P - a(h, s) (2026-09-13 note P1); a product-bracket kinetic term (kin_X = 0) does not close
+   {C,C} h chi chi (full C_tot): [{a_s: nu/lam1, beta: -nu/lam1, betap: 0}]
+[PASS] D.c4b.E2 [30s]: {C,C} at order h chi chi (full C_tot incl. kin_X from E1, G_f^(1) from C1, v^2 = c0 nu): forces a_s = nu/lam1 and the structure function zeta = c0 (delta + beta h) w with beta = -nu/lam1 = -a_s, beta' = 0, i.e. B21 A7's beta = -1/r with r = lam1/nu.  A second, independent route to a_s lam1 = nu (A2 + C1 is the first); with the walker's a_s = 1: r = 1, beta = -1 (structure function delta - h)
+[PASS] D.c4b.G1 [30s]: walker on E = 1 + A, A_aj = eps_ajk theta_k: C_f[E] - C_f[1] = {C_f[1], 1/2 int theta.s} + 1/2 int N div(theta) n (unique: [{cc: 1/2, kap: 1/2}]); no spin rotation alone reproduces it ([]).  So the walker is NOT locally rotation covariant: its antisymmetric frame part is a rotation of chi plus the scalar potential V = div(theta)/2
+[PASS] D.c4b.G2 [30s]: axial scalar T(E) = eps_abc E_a^j E_b^k d_j e_ck has T^(1)(1 + A) = -2 div(theta); walker + c_ax N T n is locally rotation covariant at first order iff c_ax = 1/4 ([{c_ax: 1/4}]): this is the totally antisymmetric spin-connection term (1/4) eps^abc omega_abc of the half-density Weyl operator, absent from the walker
+[PASS] D.c4b.G3 [35s]: symmetric section E = (delta + h)^(-1/2): T^(1) = 0 identically, so the walker EQUALS the covariant operator at O(h) (all order-chi-chi results above and the a_s = 1 of C4 hold for both); T^(2) != 0, so they differ at O(h^2) by 1/4 int N T^(2)(h) n
+   G4 (walker): [{kappa_s: 0, lam_E: lam_f, s1: -lam_f, s2: 0}]
+[PASS] D.c4b.G4w [35s]: triad route (walker), order chi chi: {C_f[N], lam_E G_E + lam_f G_Lie + kappa_s int curl xi.s} = C_f[N'] iff lam_E = lam_f, kappa_s = 0 (plain Lie: the frame's antisymmetric shift carries the Kosmann rotation; V = div curl xi /2 = 0), s1 = -lam_f, s2 = 0.  Since h = (E^T E)^-1 - delta shifts by lam_E (d_a xi_j + d_j xi_a), lam1 = lam_E: the triad route gives lam1 = lam_f with a_s = 1 directly
+   G4 (covariant): [{kappa_s: 0, lam_E: lam_f, s1: -lam_f, s2: 0}]
+[PASS] D.c4b.G4c [35s]: triad route (covariant), order chi chi: {C_f[N], lam_E G_E + lam_f G_Lie + kappa_s int curl xi.s} = C_f[N'] iff lam_E = lam_f, kappa_s = 0 (plain Lie: the frame's antisymmetric shift carries the Kosmann rotation; V = div curl xi /2 = 0), s1 = -lam_f, s2 = 0.  Since h = (E^T E)^-1 - delta shifts by lam_E (d_a xi_j + d_j xi_a), lam1 = lam_E: the triad route gives lam1 = lam_f with a_s = 1 directly
+== Part E [part_E]: Result 3: K2 = a_s K1 by the position-space route (C4b check)
+[PASS] E.c4bchk.T1 [37s]: own [sqrt g R]^(1) of delta + h = d_i d_j h_ij - lap tr h
+[PASS] E.c4bchk.T2 [38s]: {int N sqrt(g)R, int P L_xi(delta+h)} at O(h) = -int (xi.dN) R1 (density of weight 1): own R2 consistent with own R1
+[PASS] E.c4bchk.T3 [38s]: spinor bracket {int s1, int s2} = 2 int s3
+[PASS] E.c4bchk.T4 [39s]: flat walker {C[N],C[M]} = G_K[N dM - M dN] with G_K = int chibar i(xi.d + w div xi + i kap curl xi.sigma) chi: forces w = 1/2 (half-density) and kap = 1/4: [{cv: 1, kk: 1/4, ww: 1/2}]
+[PASS] E.c4bchk.G1 [41s]: gravity's h-linear {C,G} (G = lam1 G1 + mu int P L_xi h): lam1 K2 = mu K1, s1 = -mu, s2 = 0: [{K2: K1*mu/lam1, s1: -mu, s2: 0}]
+[PASS] E.c4bchk.G2 [42s]: {G[xi],G[eta]} at order P = (+-)mu lam1 G1[[xi,eta]] (sign = bracket orientation): [{nus: mu}]; so the structure constant nu of {G,G} = nu G[[xi,eta]] equals mu: G2 = nu int P L_xi h is forced, not a choice
+[PASS] E.c4bchk.M1 [44s]: walker {C,G} at order chi chi, frame delta - a h/2: a lam1 = lam_f, s1 = -lam_f, s2 = 0, Kosmann kap = 1/4: [{a: lam_f/lam1, kappa: 1/4, s1: -lam_f, s2: 0}]  (C4b A2)
+[PASS] E.c4bchk.B1 [47s]: a = 1, lam_f = nu, mu = nu: unique lam1 = nu, K2 = K1: [{K2: K1, lam1: nu, s1: -nu, s2: 0}]
+[PASS] E.c4bchk.B2 [49s]: a free: lam1 = nu/a, K2 = a K1: [{K2: K1*a, lam1: nu/a, s1: -nu, s2: 0}].  Invariant content: gamma = a K1/K2 = 1 for every a
+   H2 solutions: [{K2: K1*lam_f/lam1, a: lam_f/lam1, mu: lam_f, s1: -lam_f, s2: 0}]
+[PASS] E.c4bchk.H2 [51s]: mu, lam_f free: common lapse rule s1 = -mu = -lam_f forces mu = lam_f; K2/K1 = mu/lam1 = a.  So K2 = a K1 needs only one common lapse rule (mu = lam_f), and {G,G} (G2) plus the fermion {G,G} (C1) both give it as nu: [{K2: K1*lam_f/lam1, a: lam_f/lam1, mu: lam_f, s1: -lam_f, s2: 0}]
+== Part E [part_E2]: Result 3: one-particle operator identities (C4b operator route)
+[PASS] E.c4bop.O1 [51s]: [h_N, h_M] = -L^K_w with spin coefficient +i/4 curl w.sigma (i.e. -1/4 curl w.s in the bilinear, as in c4b T0b): {1: True, -1: False}
+[PASS] E.c4bop.O2 [51s]: operator route, order chi chi: lam_f [h_N, L_xi] + h^(1)_N[h -> lam1 (d xi + d xi^T)] = h_(N') iff a_s = lam_f/lam1, s1 = -lam_f, s2 = 0 and the Kosmann spin coefficient (+i/4): [{a_s: lam_f/lam1, kap: 1/4, s1: -lam_f, s2: 0}]
+[PASS] E.c4bop.O3 [52s]: operator route: h_N[E = 1 + A] - h_N[1] = -i[h_N, theta.sigma/2] + N div(theta)/2 exactly; the scalar remainder is nonzero (the walker is not locally rotation covariant; c4b G1)
+== Part F [part_F]: Result 4: the walker against the Levi-Civita covariant Weyl operator (C4b check)
+   sign 1: flat part = walker: True; c_ax solutions [{c_ax: 1/4}]
+   eps_abc omega_abc (first order) = rr * T^(1): [{rr: 1, re(rr): 1, im(rr): 0}]
+   sign -1: flat part = walker: True; c_ax solutions []
+[PASS] F.c4bchk.G2a [54s]: general first-order frame 1 + t eps (9 free functions): covariant Weyl functional (LC spin connection, the sign that makes it Hermitian/covariant) = walker + c_ax int N T n with c_ax = 1/4 uniquely; other sign: no c_ax. {1: (True, [{c_ax: 1/4}]), -1: (True, [])}
+[PASS] F.c4bchk.G2b [54s]: eps_abc omega_abc = 1 x T at first order: T is (proportional to) the totally antisymmetric part of the LC spin connection, so the 1/4 N T n term is the Hehl-Datta-type 'axial' coupling eps^abc omega_abc to chi^dag chi (= the Weyl field's axial density)
+[PASS] F.c4bchk.G1 [54s]: walker on E = 1 + A (A_aj = eps_ajk th_k): = {C[1], kap int th.s} + cc int N div(th) n with kap = cc = 1/2 ([{cc: 1/2, kap: 1/2}]); no pure spin rotation ([])
+== Part Z: solve audit
+[PASS] Z.audit [54s]: 47 sympy.solve calls, 45 solutions back-substituted into all their equations, 0 rejected
+TOTAL: PASS=79 FAIL=0  (54 s)
+
+----- stderr -----
+

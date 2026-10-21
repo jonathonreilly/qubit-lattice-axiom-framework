@@ -1,0 +1,2194 @@
+{
+  "base_main": "54ced4a8e7ea26a4801e89aab1921318fe6fc6d5",
+  "primary": "scripts/product_reference_attachment_controls_2026_10_18.py",
+  "primary_execution": false,
+  "scope_prs": [
+    9746,
+    9748,
+    9749,
+    9751,
+    9754,
+    9756,
+    9761,
+    9765,
+    9767
+  ],
+  "inputs": [
+    {
+      "path": "archive/common_product_devices_review_2026_10_18/MANIFEST.json",
+      "sha256": "0c6fb07fbb2f31af050180dcf1854c975ab90680c46bb611e0413a8b819c8c3c",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "archive/common_product_devices_review_2026_10_18/original-recovery.tar.gz",
+      "sha256": "0d92eefccbfa89093c84c41d37d65a5b17d208c2b4e22f8034bdffead9a205f1",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "archive/local_reference_static_swap_review_2026_10_18/MANIFEST.json",
+      "sha256": "47648784e951d643cad16b8c26ba3280e4eb0139d63a73832723842be6439b39",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "archive/local_reference_static_swap_review_2026_10_18/original-recovery.tar.gz",
+      "sha256": "b2cffab4725c05dae8c3a661f14881a87f5a465325385f17f327542a560b8e9e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "archive/product_continuation_four_review_2026_10_18/parent_history/273da0a0d28269e6e40aff0695f5465456acd35abe4c0b4eddc1acf0578334c8.gz",
+      "sha256": "67a16181c4305d9f905b9897943e7ec55e7b03d1a72048839f71e6a786402b26",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "archive/product_continuation_four_review_2026_10_18/parent_history/69c07739988970d1671e2b5acd985ec48d935d74066afc456761301e086be195.gz",
+      "sha256": "199d3eaa0114a6113c063c5567815e46e4deaee0bd726ff61f0719a346f606e1",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "archive/product_continuation_four_review_2026_10_18/parent_history/bc0e54499663904538b862421d7338c31131cd9dc2923519b7d45fffb323a00b.gz",
+      "sha256": "aebeca08d119b7ef769b92e81a1073f4b8923248fe633490a3d4dd114b4bf5dd",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/ACTIVE_ENERGY_CUBIC_LOADER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "8c9797fe83542e8c10297ec4de626bc989425e2a9914e6ad8710e6c221ddd2e6",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "docs/ACTIVE_OUTPUT_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "8ea950cc057a700dfc6c2606a6c890f0b91dd35e63ec7a1b58871ecb63005727",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "docs/ACTIVE_REFERENCE_TOLERANCE_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "242a4ec5e5c32740096ffb2514edf7154bb4d94cfde70763a714716284e29eb2",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "docs/COMMON_PRODUCT_AUTONOMOUS_CAT_PREPARER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "631da572eeeda3b4c4b2c1294186ef70bd2808ade2918204ec85f91b9a05bd56",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/COMMON_PRODUCT_BIASED_OPERATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "0b445c74c11c745dc39e8df50703cb3085f9240b6fb1a684c91dde8d8a9a5ef2",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/COMMON_PRODUCT_DIRECT_LOADER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "4995424b8e9309f21f8fe95e5e5f6126935628d5287bac293d86250b8ad7f4d3",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/COMMON_PRODUCT_ENERGY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "7d24591c408ddf326914f36d53abd882b40439f20d5e052ba1ac5e032c351545",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/COMMON_PRODUCT_PAIR_CAT_SELECTOR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "487b35f173a8cfe3e445fa6692eaa2307edf9a8bcc759a29df2da4d851b26b7e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/COMMON_PRODUCT_RESONANT_LAUNCH_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "ef0d1ca5b3d83f7e5740d68d58b97a27bdc25c2bf3fef8b040ed17b188767952",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/COMMON_PRODUCT_RESONANT_ROUTER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "0e5380fdfbca6a5f81d2190f16719052ee9c2676f6f45a4f769c61a18776db92",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/COMMON_PRODUCT_ROBUSTNESS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "37a84772c22ee8d6bee94c4176e5442c816f2e7322be746d2975eeab0836a56c",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/COMMON_PRODUCT_SINGLE_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "4175d9681cb0120108a86a57117bc4d9d22e54a97c3b214459a11a152e8ee84e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/COMMON_PRODUCT_TWO_BODY_OPERATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "4920be3771488fd9d7c59d0d61c19c66eebfb06b719f2669f94041f404d8833a",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/DIRECT_LOADER_RESONANT_OPERATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "09b31aafdb5cdf48725aa41223cc7b993166e81dd1be86586da00f081913a831",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/EXACT_LOADER_CLOCK_TRADEOFFS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "4d442323ab927e3234509705d71463413907ebe005b7a76004bc5cf372deeada",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/EXACT_TWO_BODY_ENGINEERED_LOADER_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "918dd345ec02b362008525553e4ba78b6dce11e1e500e8a2b80e1c8c00846ebc",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/EXACT_UNIFORM_LOADER_DWELL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "b084408c6c3bab91bb8e597f7ecb2efe46113aa62a7ea76a394658fca7efc7d1",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/HOPPING_CONTROLLED_FINITE_OUTPUT_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "79c4b2867e6ce4a2e8039ce04390c4a8cca6c8e83819c6ad2561dbadafde5126",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/LITERAL_DIRECT_GENERATOR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "c09ab6901c59d9601e23c5e6a0f066059feb6581bd0fd2dde862fc884c783c9e",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "docs/LOCAL_REFERENCE_STATIC_SWAP_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "19f02c48c73fc2ed12ad76e2c627c8604f2fb1649d0926be869b9ac128520bbc",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/NATIVE_COMPASS_LITERAL_ATTACHMENT_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "1ea60ddb6d405c9c9e5c89729394ed4850f8b667ebcd8a185c14eb42d7c3d132",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "docs/ORIGINAL_SEED_STATIC_BIAS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "c0c36bf7df744fe25de97408f903d972a1dc53ef756cc2d7b510c531f88dad47",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "71c65d72570a32365ded6dacfc78308ac8429d9e8003a3731af88b5600eb45ff",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "docs/REAL_MEDIATED_VACANCY_NETWORK_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "d4a60c480454e5fee8987b4a9ca786771f73bcb7e7317fc7768513938286f8c2",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "docs/REAL_TWO_BODY_GAP_MEDIATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "c525e617abf39a5cddc7c0e891fdcf13f1dbfc35309d38e42fc7c6f12f5b3d77",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "docs/UNCENTERED_REFERENCE_OFFSETS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "5333ccf48598520574a4555c7b91a4ef711140be359f19d85f13e05bef443899",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/AUTHOR_NOTE.md",
+      "sha256": "b60f306b06ce7103306e3b001022a054f10eb81926d80f72af628d2f874f8360",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "68b2fbae98bc8a18ce9ac8a59ccca417857e5df64418498e47a822ab536b932a",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/PUBLICATION_CHECK.md",
+      "sha256": "a01794d460e18893105f5ccb6597d55006a4fd102555625a402cabf3b6cb61dd",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/SOURCES.json",
+      "sha256": "3e761b4431c60f80b4c4f05069ba37fcd88434844edf61a0a6beff3f9cff33fd",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/VALIDATION.json",
+      "sha256": "a2374592492fc8043043f1e7ea6d9019470b731dd9d3d506ea238393fefaa2dc",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/source_checks/active_energy_loader_interface/PROPOSAL.md",
+      "sha256": "6fca2db0bff3e8a094b7b7a4b17fd243fa62a757a49e3136998b65fa08d84212",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/source_checks/active_energy_loader_interface_check/REVIEW.md",
+      "sha256": "94f9064a602c45fcde50975777874c3172caf8d3d630d8401ec0723b0694b9ee",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/source_checks/active_energy_moment_accounting/PROPOSAL.md",
+      "sha256": "603e1c5b154b326e83e4c5fa7eac576c2687709bcdb82eda09da24b187ed8718",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/source_checks/active_energy_moment_accounting/ROOT_DISPOSITION.md",
+      "sha256": "8f2e04c168c995097ba16d4720f8a9391f83469bdab0c397ce2bd7837c5fdc2a",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/source_checks/active_energy_moment_accounting_check/REVIEW.md",
+      "sha256": "5ce3f1ec01b6127e348843767931aa294e290ad2b62fa96be53f3839a392b548",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/source_checks/active_energy_suffix_prefactor/PROPOSAL.md",
+      "sha256": "7c8e39e8a4b0ff56c7562b01b82adcf3ae9326354cc3ddd050293f8a1bc18e68",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/source_checks/active_energy_suffix_prefactor_check/REVIEW.md",
+      "sha256": "8325554820045a256f773799c8f8c5bb8030e3db4f967ee9f2f65903842e0648",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/source_checks/cubic_reference_gap_swap/PROPOSAL.md",
+      "sha256": "1439ac2a9d4378ed7a77bb8e9795e5cb45af812e2a39fec3527cbe9c5ab3250a",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/source_checks/cubic_reference_gap_swap_check/REVIEW.md",
+      "sha256": "34c1c094e6aaad8b5c394e349be5418dec7a537819416252029fe74913b2267c",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/source_checks/cubic_reference_resolvent/PROPOSAL.md",
+      "sha256": "e4b51acfe1fc475ee728e683642b50160e63d39184c5101471aefa4ce93ab1f7",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_energy_cubic_loader_2026_10_18/source_checks/cubic_reference_resolvent_check/REVIEW.md",
+      "sha256": "3e5974b31fd390215ecfbf5e518853f0c4ce9314a4b57fb782ba89329ead81ba",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_output_windows_2026_10_18/AUTHOR_NOTE.md",
+      "sha256": "fc263408d82f728362476b2363bc3f30305cbaf082bf34ee0bbfeb35d79ae286",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_output_windows_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "ea63403cdb1bc0ff243a17bb1512fe80a582bc4f04c59e624ec84e1256274fe0",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_output_windows_2026_10_18/PUBLICATION_CHECK.md",
+      "sha256": "c9d628dd7cbcdbeacd2c17c4aa764132b19ce23a1475eed3bec3d21bb0668b1f",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_output_windows_2026_10_18/SOURCES.json",
+      "sha256": "958a6978982133b0c9104fd5cfdab306ae7b31f03c53f38f580b9f002b60c039",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_output_windows_2026_10_18/VALIDATION.json",
+      "sha256": "8af502628082f404168be613bdf603f66b05d694ac6fd3a2c56162b21be82280",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_output_windows_2026_10_18/source_checks/active_energy_aged_window/PROPOSAL.md",
+      "sha256": "33dcd9d8810082989aaa8ef9948c247fdb96fdd3d543d2ef041233d252111b58",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_output_windows_2026_10_18/source_checks/active_energy_aged_window_check/REVIEW.md",
+      "sha256": "ecc4fcc368ef2a77e3e6da496ae0e3b2575e906eff47d0697fffa2ccb1a854f2",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_output_windows_2026_10_18/source_checks/active_energy_output_ray/PROPOSAL.md",
+      "sha256": "1df7425d61ab76efd7049a2a3ed22e664dd24c5ac4086f98beba3a87b6cfddfe",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_output_windows_2026_10_18/source_checks/active_energy_output_ray_check/REVIEW.md",
+      "sha256": "d1f1ce720e970774e811134742f9c0f8f029f672c845cc31fdeb43c2c8e790bf",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_reference_tolerance_2026_10_18/AUTHOR_NOTE.md",
+      "sha256": "bc6bd6bf3886c191053b0a8f79eaa9d381e2e624f5ed11ea6b6d4565eb91d4a2",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_reference_tolerance_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "4258e43946e5b6195e020953f111360844c10ba7160a50abd9349ee048c19232",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_reference_tolerance_2026_10_18/PUBLICATION_CHECK.md",
+      "sha256": "0f3b0a64867b8642c5b0a4090fc96c913775ff9a4ea3ebd0c170fb586198a323",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_reference_tolerance_2026_10_18/SOURCES.json",
+      "sha256": "a14f139b2b7190a4bfb13c8e61f8997bb3d4d781b5ef919d3894355c8f328eb7",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_reference_tolerance_2026_10_18/VALIDATION.json",
+      "sha256": "9b9565944c7db764a2e88eb560076e3c7eb111ee5e3d1ca167f1645d2e3d1064",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_reference_tolerance_2026_10_18/source_checks/reference_gap_detuning/PROPOSAL.md",
+      "sha256": "d6e25a1c47d6ac4eec9fca402d3b848437fa465e5f07b2f11e935f3de5fa184d",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_reference_tolerance_2026_10_18/source_checks/reference_gap_detuning_check/REVIEW.md",
+      "sha256": "7c09c663925163c3f9e65dfd938f863d05c451fae6ea1094897b041a6df9d49f",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_reference_tolerance_2026_10_18/source_checks/weighted_cubic_reference/PROPOSAL.md",
+      "sha256": "98b02c3bb28e04c327b4c53663f465f580b827828039909f605c9bdb32362f66",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/active_reference_tolerance_2026_10_18/source_checks/weighted_cubic_reference_check/REVIEW.md",
+      "sha256": "79563c8a682a6f6625d7a1930af1fa398184c9c02373f670314d6110901f426f",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "3f8e63b8eac1bb4d030ddd342a40f47c367a257753355f18b9f20db15c1b5db9",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/SOURCES.json",
+      "sha256": "5d7d77b2ea4930506cce4b70384b674fcac7e1f0684203418dd8f06684b9ff2b",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/finite/PROPOSAL.md",
+      "sha256": "532866ed3e3d9117906c4f5b6be3839fdc45c522bae727d1980e724ad11b7123",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/finite/REVIEW.md",
+      "sha256": "5ef953f745c598888b329aa8fafa94d226a18f2cc01fa57f09b165e0e7a1a936",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/network/PROPOSAL.md",
+      "sha256": "cdf35dd3f9a8ea32ce0b52745ac00756885dba014d67db7e12f706e58e63b666",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/network/REVIEW.md",
+      "sha256": "1bd4a2878923495df99a219cce1c520cc03674bce2da5ff1d61d64d0940f8d40",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/packet/PROPOSAL.md",
+      "sha256": "cf080f0dae5bf71021fe91533fc97355ceaaadb5db6f3d3145e3a911c8f3ffcf",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/packet/REVIEW.md",
+      "sha256": "315a618f389598fe8443a8ed3cdf8c39180b65ba223c4de2a359be4e218ea916",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/phase/PROPOSAL.md",
+      "sha256": "54e054cbe0238590de69aced0d49a9d162f31c1503e105fe70b6e46047c6d3bc",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/phase/REVIEW.md",
+      "sha256": "a7947be2735e66eae24dcd530c94da8167467c7d7b3cfc279ad83c9821d218b9",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/preparation/PROPOSAL.md",
+      "sha256": "9979b614d77b98bf8bc63b6b87b69305beb7cf7607adf5722ae57b759728627e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/preparation/REVIEW.md",
+      "sha256": "162eddafa64f5b71afefea600f8811461d6a6b71ec60e16e2a8d9cc79c41e578",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/resources/PROPOSAL.md",
+      "sha256": "556956724f545b8241171490a990e71e1c08eb1e1e67d84a82e6a44d2162a49b",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/resources/REVIEW.md",
+      "sha256": "0a05d11b377f1e4318aae54227b5a3afa90d829b207acc05f745e5fb4ef01965",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/writer/CORRECTION.md",
+      "sha256": "639ae4101b142c70a56d1967bb8909d3b745e308a93865c3fc3a533fe9bb7b8c",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/writer/PROPOSAL.md",
+      "sha256": "dfe071282ac3d160073b85caa0bd11d4e1834e58278e1da8a3c354fec5440c18",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_biased_operation_2026_10_18/source_checks/writer/REVIEW.md",
+      "sha256": "c568fe01ce4c6e9e89e6488808bb39c9ba7a98e1df4b0fc5bcc8d21439315829",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/INPUT_CLOSURE.json",
+      "sha256": "6602b0774b0037cb1ebabc364a6ea7da5dd027c4b8231de5f45a39576fa6ac5b",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/README.md",
+      "sha256": "4e9b036ebb0a720976b5e201800dde5b99481d878a2d9fce73bea94bf5e0a979",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/inputs/cat_preparer_coordinates.json",
+      "sha256": "f8b3c4579e82abd999ebacd403b0fd040d101d37b8f43301c287ff247bcaecc5",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/parents/autonomous_record_route.md",
+      "sha256": "93445d7d52e32859c980f0a0ebc6024238bedc7571d09e145ab1b128d8292f56",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/parents/common_product_launch_derivative_bounds.md",
+      "sha256": "378086fdc6b217f9a2eb9d85fdb1ca862a54905be048d298465e0b123722fec8",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/parents/common_product_narrow_cutoff_derivative.md",
+      "sha256": "550946fdebc4e68522c997ed914e23a8baf40cb660dfc22e4f09e00add1216a3",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/parents/common_product_resonance_tail.md",
+      "sha256": "306174fb0a884c62d5c6de401492a742a3d8a55670ef273f9d376258e531c002",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/parents/common_product_resonant_boundary_tail.md",
+      "sha256": "4eb53a9531fa977e0ef775aadd3a5ca37f4e3d42d83488d44a9fbc6d730150bc",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/parents/common_product_single_control_router.md",
+      "sha256": "76b5fd9bdf7a1609dfbc981211a508991a6a24c53686e26f28907210007e1b01",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/parents/common_product_stage_separated_router.md",
+      "sha256": "60bc91b6ad085a722b3805de1d1b0d93a9cabcf77b1c3f5a74e43045354c3182",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/parents/common_product_writer_resolvent_sharpening.md",
+      "sha256": "22bca57ebcbfb8cfabebbe044cd5302e784e585b503cee28d6172afc72e54cf0",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9725/common_product_autonomous_loader_interface_PROPOSAL.md",
+      "sha256": "c97bffbbd02d1703103b4f59131706cdd9be8a19a937ea17382b6621df1bd83e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9725/common_product_boundary_input_contract_PROPOSAL.md",
+      "sha256": "b58d047e8b7d6598951f84cb5c275d9709fe19b9b99e0383558536b581332ad9",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9725/common_product_full_swap_gadget_PROPOSAL.md",
+      "sha256": "b54c6f29ea780efdcad7f33def048a0b5f9436fe8125ce3c2b2b416cabde4436",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9725/common_product_loader_bond_realization_PROPOSAL.md",
+      "sha256": "7e6769927d3138b2812e0b4a0db62df1ef4d1d7096b10acfa2269a5ca8a98d39",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9725/common_product_loader_component_background_PROPOSAL.md",
+      "sha256": "e7d3efb291b47ce6d6265b293ea448de917380ae5a36322664bee857ca7312aa",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9725/common_product_real_two_body_gauge_PROPOSAL.md",
+      "sha256": "1cc8b14dabd52a73f90bedf0186d7c3c92d02a9608aa72ce01ff0303fa3fe1f3",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9725/common_product_two_body_background_refinement_PROPOSAL.md",
+      "sha256": "388ebae502c0687fbbf267294d36ad7c32ddfa3dc32c1cd5d8ffbf7cb7af15fa",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9725/common_product_two_body_runtime_penalty_removal_PROPOSAL.md",
+      "sha256": "b74d8f05658f6718dfcb4d9a050c6ddca90a357eabeb9dfed9c042567b36d9bb",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9725/common_product_two_body_scaled_operation_PROPOSAL.md",
+      "sha256": "c1cbdb0eb1b7cc4b865c3ad8b8323b646eeff47e195c3239e297f007f0884bb7",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9729/common_product_pair_cat_selector_PROPOSAL.md",
+      "sha256": "8f0545c498bf6e6b4796e2c47fffedead122d3fdec0fb45607b853650e3b6a71",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9729/common_product_selector_exact_energy_PROPOSAL.md",
+      "sha256": "0ef4a6cdf6b2f228bb93e39f244720db533c47c6df3f8cb531b48ce8c424714c",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9729/common_product_static_cat_selector_PROPOSAL.md",
+      "sha256": "ab894394a2b2bd76dcc59b591f5d39d2aa070d7c1c3aa62528b76c99c6cd8c18",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9731/common_product_autonomous_cat_preparer_PROPOSAL.md",
+      "sha256": "d4e708583626102d5f09d6f98c56e25fadb36895fdb437d07b69c0e345ef96af",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9731/common_product_autonomous_cat_preparer_finite_PROPOSAL.md",
+      "sha256": "942a98e3d2d84bfe4e2393bf6cd4119c8c2fd63e5589031280272b7582914459",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9731/common_product_autonomous_cat_preparer_geometry_PROPOSAL.md",
+      "sha256": "0bc68860f2cc55b7895f6f184fe464f810b3a02d4ca7c49bab153864c092125b",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9731/common_product_autonomous_cat_preparer_signs_PROPOSAL.md",
+      "sha256": "edd08f803adc9dcd9a92d2d4a9f8a119d0ddc96e4a2adc5e4aee39a43f63989a",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9733/common_product_direct_loader_branch_instantiation_PROPOSAL.md",
+      "sha256": "a630d90f122853a998f8d598da13d5876247c53117663c6483967b1d34d2c791",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9733/common_product_direct_loader_range21_PROPOSAL.md",
+      "sha256": "fe506b9dcff78e88c9d01a15563a9b186a9b42c38263575279c63090c2ff901e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9733/common_product_direct_loader_uniform_branch_PROPOSAL.md",
+      "sha256": "51872d1fa2af85f915d792b47e333c6539339ed75194ebaa666e691bf1941403",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9733/common_product_direct_two_body_loader_PROPOSAL.md",
+      "sha256": "29dfa4ab39176908245194bb8abcf13f55c0ec6483b86a9d16b86ca04f6e6c78",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9733/common_product_direct_two_body_loader_finite_PROPOSAL.md",
+      "sha256": "ad0ec529dc7dd264ccf656084b0cbdfa275f688303628ba9876b2a02f8fe9207",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9734/common_product_direct_loader_resonant_jets_PROPOSAL.md",
+      "sha256": "315de10538a430d80fad26f8fd10d932280bf6ec61d234568af2580caa36e0ad",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9734/common_product_direct_loader_resonant_operation_PROPOSAL.md",
+      "sha256": "a1892b53dd9d71f151dd06405535d59dbd77ebbf9ab593fd1e3979368943e50e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9737/exact_engineered_clock_dwell_tradeoff_PROPOSAL.md",
+      "sha256": "d739d552cc04424cb659f4107174d1dbe04756c0409704437176364aba0e0c25",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9737/exact_engineered_clock_operation_PROPOSAL.md",
+      "sha256": "b8bbfb7d40c491aff6b893df6423b98e68edad91ef6596124dac10f3620c53f8",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9737/exact_loader_structured_coefficients_PROPOSAL.md",
+      "sha256": "515c9e17df0a0c12e7df0dab6431015348af4140cef69189d334cd3574ea3de2",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9737/exact_two_body_direct_loader_composition_PROPOSAL.md",
+      "sha256": "f874302baf42f962939fb0c9497b2c4f55283ed9189671048faadeeb04eca946",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9737/exact_two_body_gate_diamond_PROPOSAL.md",
+      "sha256": "7fa888681833216ded21fab0028f18ad079fde94b7f884a391c83196fb5a3e33",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9737/exact_two_body_gate_matched_extension_PROPOSAL.md",
+      "sha256": "a1157d95d06e7eeced6217ec2fb7b43247619a74cd9aded3eeb811a68ba6075e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9741/bandcenter_reference_measure_check_REVIEW.md",
+      "sha256": "1953d153c9ac8583202e7ca18bff62829bfbff2373691cc43a5ae152a2a6b0ae",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9741/common_product_endpoint_launch_PROPOSAL.md",
+      "sha256": "fb72f4ed4af9d6f00d6430ec4997fab3f8fbb978b140692b083ddda5e324e9e4",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9741/common_product_outgoing_pole_tail_PROPOSAL.md",
+      "sha256": "b2622fbb513ef30840ba719fb6f7725e9dba24cf74ebe48be5e790c0fa3e4b80",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9741/common_product_resonant_halfline_tails_PROPOSAL.md",
+      "sha256": "43c0cc0560ccd6b9ce33345796f511fba63c5fa7360f9225e8d9b30ec1bf33b1",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9741/common_product_resonant_late_tails_PROPOSAL.md",
+      "sha256": "a03139261c649546c00b7a15bef01c4a7387dfa6cc267f5c20e82f88b65f02d9",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9741/exact_engineered_loader_robust_policy_PROPOSAL.md",
+      "sha256": "e69fa0e34d3fdb8d205cd1a8a5e26ea2efd3f3963a279b0d5edcf5d12ddbdc06",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9741/exact_engineered_loader_robust_policy_check_ROOT_ARITHMETIC_CORRECTION.md",
+      "sha256": "0376cf28e128a19750d5a72676afd1a4b9a60817369dea40a1711e90d3ef5455",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9741/exact_uniform_chain_finite_launch_PROPOSAL.md",
+      "sha256": "2119424091eca806aa1b49abe506d715411e2a6a8ce2b78ff8c69cb00b8505c2",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9741/exact_uniform_physical_loader_PROPOSAL.md",
+      "sha256": "809d39e07806cc05af1c715f58ebde90209a07b2dfc2e86bce481fe629c0629f",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_devices_review_2026_10_18/proofs/pr9742/exact_uniform_loader_dwell_PROPOSAL.md",
+      "sha256": "96660b9eaf719aac01d4b8e29cdde3661ed6d2b710745ceacccce286e5b4d031",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_energy_preparation_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "6c839f241a4186dc0d5ca18fa46d19ca68e7c8c0067eb0071fae2828a8f32bd4",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_energy_preparation_2026_10_18/SOURCES.json",
+      "sha256": "6f90e8ecb85b759d8c672ee9a82d0dbcbe8e5aeeb4e454f82adca9653736f623",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_energy_preparation_2026_10_18/source_checks/REVIEW.md",
+      "sha256": "f7156129dbe665ba0951bbc92f49b4a22b8b577801890a78a1cbb3e6b2f4aea7",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_energy_preparation_2026_10_18/source_checks/head_energy/PROPOSAL.md",
+      "sha256": "e6df21d39a9673b7e396390b64986a9e0deb74223540c975c14675a7f6fec668",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_energy_preparation_2026_10_18/source_checks/record_ground/PROPOSAL.md",
+      "sha256": "aaa0786b19ec5b0c37923e712fe8f9b80c3490a1c495a7bb5f2482c97402a1bc",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/SOURCES.json",
+      "sha256": "857c4932273fab8bf3795e946389fcbb9d795f65478585e6770a70d5fff5ed8a",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/bandcenter_reference_measure_check__REVIEW.md",
+      "sha256": "1953d153c9ac8583202e7ca18bff62829bfbff2373691cc43a5ae152a2a6b0ae",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_autonomous_interface__PROPOSAL.md",
+      "sha256": "bcc47793a94d578fcbf403115dcce099f6728752d0953a03d80051f75d3e22b5",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_autonomous_interface_check__REVIEW.md",
+      "sha256": "90c7926ed7c681286108afe5a9063a9f63f2be690026ff0abc56844214ab67b2",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_endpoint_launch__PROPOSAL.md",
+      "sha256": "fb72f4ed4af9d6f00d6430ec4997fab3f8fbb978b140692b083ddda5e324e9e4",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_endpoint_launch_check__REVIEW.md",
+      "sha256": "51247de9ba58bbfeb7f731c478d939e05e2e9d90956192d2e9e6f612401662c1",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_seed_router__PROPOSAL.md",
+      "sha256": "3a195efcf8d5196ed54a74228033d0888e7f18c864e481ce61b2efea6c67992b",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_seed_router_check__REVIEW.md",
+      "sha256": "5f5b1727a31df17facb9232e902c1d6985cd175058d66e54862ae614fef148a9",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window__PROPOSAL.md",
+      "sha256": "1ea1943e162c1ab7f0da057a1343b95b859e394c25420d5577830a838d116b1b",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window__TIMING_MIXTURE.md",
+      "sha256": "c2713ddb892b5c1f509ab66a796a6aa17711552496044e558805984db58eef73",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window_check__REVIEW.md",
+      "sha256": "1337df4d94e3d6b555a88167945e5e8490e9df978b1fbc3e140db17622e36cbb",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_finite_window_check__TIMING_REVIEW.md",
+      "sha256": "30c900378c0d18ab9420287001246ee1d506008a4a1ada4e012afcf056ec4c74",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_outer_boundary__PROPOSAL.md",
+      "sha256": "af7dfe4193865bb80f9302fcb39f62c7be9ab7693d29b1b53bea8f620f8f2c43",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/common_product_outer_boundary_check__REVIEW.md",
+      "sha256": "756514da092c820d3e19601565f6d60b174acc2aed26cfcad551e598f0020985",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/endpoint_bandcenter_reference__PROPOSAL.md",
+      "sha256": "510d5b1b51a152f90a8c2054fab382f74fb3f31159359e9c723e89d557380b2c",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_common_product_program__PROPOSAL.md",
+      "sha256": "739e99c44feb30f0bdc569d804f0e643ff993ab556056e1b6820f7012a9de088",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_common_product_program_check__REVIEW.md",
+      "sha256": "809a2083527cf942e6a6e879a6211600c9f144938915a43dbcf56d5680858fb6",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_program_attachment__PROPOSAL.md",
+      "sha256": "55af72a1a334730be95de5427646de29fa7d1d6ebac21d888dc1f231406d9b7a",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_finite_seed_2026_10_18/proofs/mediated_program_attachment_check__REVIEW.md",
+      "sha256": "48940d210811f4599c16677edde54b6e3b1be8d6715b7a14aa29e5c4b3b440ce",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/SOURCES.json",
+      "sha256": "0c3e7faf90d48b8054dc84a59dc903c31ca0b5f4777af8a3a7a8887ceb9bb4f5",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_finite_seed__PROPOSAL.md",
+      "sha256": "452231afa993c7a14e1b55c0b302d499e0284ce02266f8a1039a75474053392a",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_finite_seed_check__REVIEW.md",
+      "sha256": "50148e56b0e38556f633cf225df82403b66d2e60c43f6391d355f84d6c4f2a51",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_packet__PROPOSAL.md",
+      "sha256": "c105226ebeead1f87bb11c6afcc8dadac59520401d5f8c0fa6dba4ba3ef90e4e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_packet_check__REVIEW.md",
+      "sha256": "c27e7a93c6d76e8261d5a081c3af6ad94438aa803a69354dfb7d2e762e6e0234",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_scattering__PROPOSAL.md",
+      "sha256": "59b59ea3fc51e6ae364716a63ff4b9e001390cba112f48f0b4214c01318865a6",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_microscopic_seed_2026_10_18/proofs/common_product_microscopic_scattering_check__REVIEW.md",
+      "sha256": "3e1dc92540af46ec3a20b928001c7796795bf6c6a6b8580fe307c3e3ca3f8eb6",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_refined_resources_2026_10_18/SOURCES.json",
+      "sha256": "2ba677857524dfd9839065ca82fb8775150c98af9af30a165461900bf2a67909",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_finite_seed_scaling__PROPOSAL.md",
+      "sha256": "0e21dae83a8449f03276b4099ea6a6ae23e08afa5b4a1297122e67e7b9095f6e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_finite_seed_scaling_check__REVIEW.md",
+      "sha256": "751c97d5cabdf08f12f1c1852f0fbcf2bfc5fdcfe3179b6cc033ad23f36c91e5",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_launch_derivative_bounds__PROPOSAL.md",
+      "sha256": "378086fdc6b217f9a2eb9d85fdb1ca862a54905be048d298465e0b123722fec8",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_launch_derivative_bounds_check__REVIEW.md",
+      "sha256": "aadee4cd02baeef710662631401aef613c1bd353252d7f75d499289991bcf341",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_refined_resource_family__PROPOSAL.md",
+      "sha256": "79f5bd9c07fe0eb0f37d051446f69759a32559ba7ce9e8bb835db01287188bb3",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_refined_resource_family_check__REVIEW.md",
+      "sha256": "5999fccf27396704e010049ee62fd5c342afcbc5fbd8f335ee11dd46783bb575",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_second_order_attachment__PROPOSAL.md",
+      "sha256": "a322e3689a5b58cd56c173d22df93c68199ead8cf04af88cb101af305798468c",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_refined_resources_2026_10_18/proofs/common_product_second_order_attachment_check__REVIEW.md",
+      "sha256": "a12914c8b15d73836f93d0472f94ddfbf4a63b9eff5f9191e4ed483b7cdcf2af",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_launch_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "b384b3a5bf5fb83633ec263af5c9c2a994ef701d1ef665887800ec77f9f6cced",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_launch_2026_10_18/SOURCES.json",
+      "sha256": "9ba6207f5d91aa84b53fdc4e2f95bd4f10de69b6e5f480855d30387fd313b973",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/finite/PROPOSAL.md",
+      "sha256": "41878812eb8afeb214cb9deb8b0da976fcf200542dd7675237fe14efd360e880",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/finite/REVIEW.md",
+      "sha256": "1c408ca6d88e995b810bfb9d8d583b3fd8616947bedd327e6cb5ac923c721203",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/geometric/PROPOSAL.md",
+      "sha256": "be2ab9da4b62ca7f595c17fea5ec6e62849cdada2c34416154996ad15180538e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/geometric/REVIEW.md",
+      "sha256": "cfd880ac1dcd866fe47fd51c7b8f29764270fc028e67e540c1cb1a6b1f86dfed",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/survival/PROPOSAL.md",
+      "sha256": "306174fb0a884c62d5c6de401492a742a3d8a55670ef273f9d376258e531c002",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/survival/REVIEW.md",
+      "sha256": "de9dbd20bf873f194d969ec6570e77224a2dfb192ba3ac4035b0933fc3d610bd",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/window/PROPOSAL.md",
+      "sha256": "c5acbc2c71cf352563e196bfb24225590f2f02718a86d39cc611461fadff5e5a",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_launch_2026_10_18/source_checks/window/REVIEW.md",
+      "sha256": "539037ccb03cd5c2641774f890362cc07b911cd8fcea6d41ee945a51bf7aa649",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_router_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "a4e5d2b40896823ad51ca509bf37bb019e68cb92c9a9ddb0c41f22d553c58437",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_router_2026_10_18/SOURCES.json",
+      "sha256": "c7979a43239f67088242a6db16651e0a5ea14534b204e48ce6767e837ba345df",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_router_2026_10_18/source_checks/composition/PROPOSAL.md",
+      "sha256": "970a84e5e9157c6a9d5934f00df59491de19e6c88402efe0e14b44e68bc1479b",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_router_2026_10_18/source_checks/composition/REVIEW.md",
+      "sha256": "cb0e278a7311651ea9f8d258089cba00a10fb03bb37457d2f8db1d5864af5da7",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_router_2026_10_18/source_checks/halfline/PROPOSAL.md",
+      "sha256": "43c0cc0560ccd6b9ce33345796f511fba63c5fa7360f9225e8d9b30ec1bf33b1",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_router_2026_10_18/source_checks/halfline/REVIEW.md",
+      "sha256": "1fa285544e38728389fb6bb9928b8bbd1e6a9612beb12cfde7532439b0935f9b",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_router_2026_10_18/source_checks/incoming/PROPOSAL.md",
+      "sha256": "4eb53a9531fa977e0ef775aadd3a5ca37f4e3d42d83488d44a9fbc6d730150bc",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_router_2026_10_18/source_checks/incoming/REVIEW.md",
+      "sha256": "5a2e695674fb8710687f88a9921d5ea4ede9915735c2ebd7dc0f14ce94157ed0",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_router_2026_10_18/source_checks/late/PROPOSAL.md",
+      "sha256": "a03139261c649546c00b7a15bef01c4a7387dfa6cc267f5c20e82f88b65f02d9",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_router_2026_10_18/source_checks/late/REVIEW.md",
+      "sha256": "ef27352b742abe064e5b8d71d09d7904182cea49c9dce2c77187aab8494b34cd",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_router_2026_10_18/source_checks/outgoing/PROPOSAL.md",
+      "sha256": "b2622fbb513ef30840ba719fb6f7725e9dba24cf74ebe48be5e790c0fa3e4b80",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_router_2026_10_18/source_checks/outgoing/REVIEW.md",
+      "sha256": "0071e81532263d56c37690be97aa25e30ed56a7fa6c394dbfc9243a646e62d00",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_router_2026_10_18/source_checks/preparation/PROPOSAL.md",
+      "sha256": "b499a6eda66a91f021bc4673908ade89331ad09e2be7d3bc856480c36bbc9937",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_resonant_router_2026_10_18/source_checks/preparation/REVIEW.md",
+      "sha256": "5287cd302a64313deb0d97be1d0c9998cded3a9923b09e59be33188dc60126fc",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_robustness_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "f3db69533132021bd9bc5d56381be64966bd98a95f5b5b84b96732c153c97b3c",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_robustness_2026_10_18/SOURCES.json",
+      "sha256": "860d1f08fd2f890532acbbf227db547b33b98338682e559db9b3372fc90445ea",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_robustness_2026_10_18/source_checks/local_matrix/PROPOSAL.md",
+      "sha256": "f9e427ccd5ec0a25f0c28639f9707728489a7a7dcca139e6f9fe03289d9b8a20",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_robustness_2026_10_18/source_checks/local_matrix/REVIEW.md",
+      "sha256": "3d7be49f11dadbae49ed7c84a29e2a32ae8d38a83c1552a630716cc54c554b39",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_robustness_2026_10_18/source_checks/scalar_weights/PROPOSAL.md",
+      "sha256": "3218676f11bbc39ecfcf3c84a568a2ffc8107a7b303f349195394a338b2b0623",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_robustness_2026_10_18/source_checks/scalar_weights/REVIEW.md",
+      "sha256": "0995e9e58fc7aa93fe27a3892e9615be7f3fd72fb6c989709dcb0a84105549e1",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_robustness_2026_10_18/source_checks/vacuum_preserving/PROPOSAL.md",
+      "sha256": "04702cd75574699e252c37e78d307ef606c1e7ba0db39b9c78bfaae4bb0add83",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_robustness_2026_10_18/source_checks/vacuum_preserving/REVIEW.md",
+      "sha256": "caae4f1a06cb8325e58faace55306ad660dffbf6cdee3c62ed002362ef273c3e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_single_control_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "06316158d9b3449ed86a112d413dfcef0e40cdda01c82b0f8d3475bcf0ce155f",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_single_control_2026_10_18/SOURCES.json",
+      "sha256": "130025500b801e7dfe014202d0b7dbfe1bad169a01cb269c618840724ac4b789",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_single_control_2026_10_18/source_checks/common_product_logarithmic_flag_policy/PROPOSAL.md",
+      "sha256": "7160387f62fdb71afadd3e30a37bf93d9dd566c9bfd9a3739177331bb68254a8",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_single_control_2026_10_18/source_checks/common_product_logarithmic_flag_policy_check/REVIEW.md",
+      "sha256": "d1787938d55970246d222b91df1824c165bf16b58924cd7f5f3936a6d5cc16b3",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_single_control_2026_10_18/source_checks/common_product_single_control_router/PROPOSAL.md",
+      "sha256": "76b5fd9bdf7a1609dfbc981211a508991a6a24c53686e26f28907210007e1b01",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_single_control_2026_10_18/source_checks/common_product_single_control_router_check/REVIEW.md",
+      "sha256": "549bf5e4862f9ad384fddaca6b6e73ae6c4da74c397b981c93a2d16473b418d0",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/SOURCES.json",
+      "sha256": "4bd97772cb881890ab7b1d972706709e9d39bde2a8def1027ee276255c18b79a",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/autonomous_record_route/PROPOSAL.md",
+      "sha256": "93445d7d52e32859c980f0a0ebc6024238bedc7571d09e145ab1b128d8292f56",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/autonomous_record_route_check/REVIEW.md",
+      "sha256": "c5f3e1d7cef939e1bfa95df19f970e4da454cd12a74f068147b6cd50cdf51d5a",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_narrow_cutoff_derivative/PROPOSAL.md",
+      "sha256": "550946fdebc4e68522c997ed914e23a8baf40cb660dfc22e4f09e00add1216a3",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_narrow_cutoff_derivative_check/REVIEW.md",
+      "sha256": "6a4866e76cc5c6c760284c9a3f6c07c71410f701d727e8765edc8f6a57d328a4",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_core/PROPOSAL.md",
+      "sha256": "c91300a5eb6db28e67e4b494398c57c3c53bc39d2da8c800a12c284cc5d6c729",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_core_check/REVIEW.md",
+      "sha256": "61de4ee29dd3838c4fc7c3bd19c49bf0cd4cb4bacf5ad3e8e10ca06c864e27c1",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_finite_seed/PROPOSAL.md",
+      "sha256": "7286105ffd9b6b6d0caa97b121c5e79d37dfcf638128d63c6bbc144e9aa2a995",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_finite_seed_check/REVIEW.md",
+      "sha256": "60896f1b1b4b76d27158ce46e097565d1ed777d45ee4dc1c394b02d52ac71a9f",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_flag_branch/PROPOSAL.md",
+      "sha256": "e7b53eeda3fc7df96986d3b55f68d9e5af4f1b6657ba068b6f33d03e18a37ee0",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_flag_branch_check/REVIEW.md",
+      "sha256": "e548a664449546f76fbad2b24d5c7bcf5e0d318ecb6dd75f4234fb078ccdae5a",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_packet/PROPOSAL.md",
+      "sha256": "3477197cdf54d18ab538c517726d64f3dbc556f6ddb7a6d4b2608b458d34eeb9",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_packet_check/REVIEW.md",
+      "sha256": "17029fa32989bae3869c4ffee81def65201edc0f0b996013ede8996ca8cf1453",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_resource_split/PROPOSAL.md",
+      "sha256": "c4086aec4d338da11dcea256367e34ceea496044ca7ff1bc30ca55ee5489f977",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_stage_record_resource_split_check/REVIEW.md",
+      "sha256": "d697d3cdb72ee52a62f3508245a87239108937819f41966c120bc149d674befa",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_writer_resolvent_sharpening/PROPOSAL.md",
+      "sha256": "22bca57ebcbfb8cfabebbe044cd5302e784e585b503cee28d6172afc72e54cf0",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_writer_resolvent_sharpening/certificate.txt",
+      "sha256": "218168f4038232b24f2daa861b8adb37fe6eecc9845bf0c30bc4bb1338e58dda",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_writer_resolvent_sharpening/certify_inverse.py",
+      "sha256": "f1deb1c3200ca89e287f92ea69acbdf0ac02442ef84795717c795c0aa4b62a7d",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_record_2026_10_18/source_checks/common_product_writer_resolvent_sharpening_check/REVIEW.md",
+      "sha256": "d96ed6b26856490d802ceed2009f75aa9c0919eb8760bcfffe0389807965d1b5",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_seed_2026_10_18/SOURCES.json",
+      "sha256": "c4cb0adc7763e30807e0cc3fd4c05639838c4c6141af13294e619804659d08c0",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_router/PROPOSAL.md",
+      "sha256": "60bc91b6ad085a722b3805de1d1b0d93a9cabcf77b1c3f5a74e43045354c3182",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_router_check/REVIEW.md",
+      "sha256": "8fcee7e6ee6579196141e8e67d5adbf9887969cbbbd3de3c7d00c9caf8777e5d",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_seed/PROPOSAL.md",
+      "sha256": "340b724d949f9c88da332209e200c2e593b89b68a1a1e02caf5ba9cebbef44f2",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/common_product_stage_seed_2026_10_18/source_checks/common_product_stage_separated_seed_check/REVIEW.md",
+      "sha256": "6f99b759c1d2a97a55b81a3d954c8721f0b07ec167564619b0a470fa1b676314",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/literal_direct_generator_2026_10_18/AUTHOR_NOTE.md",
+      "sha256": "59c4642b1c25753b94652301d92cad807b1a5b022740734eb2de4c1001b7aed0",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/literal_direct_generator_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "a528ba9d36eaa0a54f6a4166ddc0e18fea965847f207c1d674aba8bf2500e3cc",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/literal_direct_generator_2026_10_18/PUBLICATION_CHECK.md",
+      "sha256": "fc82a6b03fbabae4eae3a433366624054dd0666a39120e0078b699aa889c760e",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/literal_direct_generator_2026_10_18/SOURCES.json",
+      "sha256": "063bccf9e203a36593a74dcbe3492117c6dd6adc8fafeede9cf69f1cb62a203e",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/literal_direct_generator_2026_10_18/VALIDATION.json",
+      "sha256": "993a6e398833b8364ad536bfd6c3f0c63ae532897e0bea28aa8de605bf0a9c19",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/literal_direct_generator_2026_10_18/source_checks/literal_direct_generator/PROPOSAL.md",
+      "sha256": "445b9a50b631bdf0b3eb4570ec30282bd92a8cd20a2af5bb98e3262878b23a6c",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/literal_direct_generator_2026_10_18/source_checks/literal_direct_generator_check/REVIEW.md",
+      "sha256": "822eb38d176d1fd30823b9a080effda9fc40fbbd08046545d1c45ec469950741",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/local_reference_static_swap_review_2026_10_18/INPUT_CLOSURE.json",
+      "sha256": "97168a876540eb044a092e91fa9a70347dd2cc190a4950b2cf856bf3122a7c80",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/local_reference_static_swap_review_2026_10_18/README.md",
+      "sha256": "957023e1b529b6c35265e3521488d955a26b28c916c69b62c31060df260ff708",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/local_reference_static_swap_review_2026_10_18/proofs/local_reference_chain_weights.md",
+      "sha256": "7bae8b953e0bbb4435f9398029b42b081257b5c5b0edffc0d37ffb41152f8d5f",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/local_reference_static_swap_review_2026_10_18/proofs/local_reference_static_swap.md",
+      "sha256": "9e68a0eb2f81955e900a23bd88b05321b75ea4e2741da89f812ef2eda59b5c70",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/local_reference_static_swap_review_2026_10_18/proofs/product_reference_static_swap.md",
+      "sha256": "1a9e0ee47c8cc5b4f874abb2c8fa47258ee00fbe3cf77a87a2c968b407f0a825",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/AUTHOR_NOTE.md",
+      "sha256": "8363467e571fe56cbea37f0b1dceae649af87ad820e3692e7b67ceb7ec16b4f9",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "737cce21459a1d3d68fac472838ade55b5128c1ec910f0d5a2b5b58a301dc9b8",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/PUBLICATION_CHECK.md",
+      "sha256": "253d02d951a77379a333c40430ea7b39d17c3aac1b3c2bb1654690ca233b8260",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/ROOT_APPENDIX.md",
+      "sha256": "f9a460ffa4ad09e4d9f70f58a1424de9d7edbf9e8dc99e2bb00d07439c082fe5",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/SOURCES.json",
+      "sha256": "e177173cc8ff4c95661607f92684fb2459e3de58515ab7c6e236056c551e5641",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/VALIDATION.json",
+      "sha256": "d4930842a7d998b01b9b369db85efe132788ca4339b7a9cfa49f007ee81e0209",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/source_checks/native_exterior_x_contacts/ACTUAL_ENVIRONMENT_ADDENDUM.md",
+      "sha256": "93bb364a180a8ab264b142b9d91515f81343dd0d3a2c3f03ca3b225e61d30efc",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/source_checks/native_exterior_x_contacts/NOTE.md",
+      "sha256": "d2916b315f09fb432c9f44eb7a9b87c45de6ade98b8db7f33ba534685b879771",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/source_checks/native_exterior_x_contacts_check/REVIEW.md",
+      "sha256": "feb2622c7f18abbadfe16b51ed1f68c3e96c8e681593b2072bcd7ab36b1c51f2",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/source_checks/native_inhomogeneous_attachment/PROPOSAL.md",
+      "sha256": "b038d6e1644ffc22dfb1d27c9c6c2617da0134c27ecf049ddf764a20ac6c566b",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/source_checks/native_inhomogeneous_attachment_check/REVIEW.md",
+      "sha256": "b3dbd39b2fb26d6b8b9f726a16ba4afce0157ff2641a27d0dba7acd052f0bddf",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/source_checks/native_microscopic_source_snapshots/MANIFEST.json",
+      "sha256": "60971010858bfd2617eb63e8e1674ed42139363aabe9e5829b3304ca404cffc6",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/source_checks/native_microscopic_source_snapshots/NATIVE_CONSERVED_SCALAR_NOTE_2026-10-18.md",
+      "sha256": "545072fc9c34d6414984f382f76a630ea24393d406c7957147ba3137d6f0f3d6",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/source_checks/native_microscopic_source_snapshots/NATIVE_LOCAL_NORMALFORM_NOTE_2026-10-18.md",
+      "sha256": "f908752489655016002dd67e8d4edef598249f225e1e5aca3048ab5c2b201804",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/source_checks/native_weak_transverse_attachment/PROPOSAL.md",
+      "sha256": "77620ce12b85f57857cfbe691197c8efb312a6951cb54a52ca5f6b6a14d8619a",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/source_checks/native_weak_transverse_attachment_check/REVIEW.md",
+      "sha256": "eb25043d942b24632c066806d298130eb01c33938de915399486e074dc873d3a",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/native_compass_literal_attachment_2026_10_18/source_checks/native_weak_transverse_publication_draft/COROLLARY.md",
+      "sha256": "9fd0645732e2d22fc92f630a2d29231625a1c4e57a3075d5e5f78e14f54520f2",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/original_seed_static_bias_2026_10_18/AUTHOR_NOTE.md",
+      "sha256": "2fea76e6ba9d43930c3c5bb6c7ae095a9e1493d3d9065fc08ff22e1ebd2da9b9",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/original_seed_static_bias_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "afdfd510a3c896488b152013388b915bbb5c417b12ad2cc6b2f1ba67a8f280b6",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/original_seed_static_bias_2026_10_18/PUBLICATION_CHECK.md",
+      "sha256": "6b6619cb3246a60082a4b26079f5ddf0747771ca4114ae8fee182d7d14c9f4dc",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/original_seed_static_bias_2026_10_18/SOURCES.json",
+      "sha256": "2b22fe72a2340358568e824855aea99174f4ca5518d84e2b2993e9eefd65a647",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/original_seed_static_bias_2026_10_18/VALIDATION.json",
+      "sha256": "c3f67561c613b90bdea077a90103c104c4a20bad49d597d643fe5e79c59cd8dd",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/original_seed_static_bias_2026_10_18/source_checks/original_seed_static_bias/PROPOSAL.md",
+      "sha256": "b061e8f1bbc81bf8c812fb9d02bc4cd8b9b497765089fc2dc642d56853717ce0",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/original_seed_static_bias_2026_10_18/source_checks/original_seed_static_bias_check/REVIEW.md",
+      "sha256": "f08ce75188fc5e576a27687cbeabc192b558c1066e3cd82b137a34e512af2088",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/product_program_continuation_review_2026_10_18/DEPENDENCIES.json",
+      "sha256": "a567f350408d0434e5673987858016235f3eaeb0fc25441f794d05d618e59e6e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/product_reference_attachment_review_2026_10_18/README.md",
+      "sha256": "0071c55e2f321e5400f9abb112537a68f56ceadd4fb4ce6d6f992fc8e75c6692",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "sha256": "d9ef08360edf5a5c4f1eddff7f400f05dedda4cee711553d276cb5b60d8bdf72",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/FAILURES_AND_SCOPE.md.txt",
+      "sha256": "5d8371aadcbad87e775bc93b21acae4671d5ebdb96d4b94111a4825c46f5d5f5",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/RESOURCE_PLAN.md.txt",
+      "sha256": "dafcd0d72db737c84cf17f9f8d452d08a66cb79ed3f13bb4a9ff004f96614a9e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/ROUTE.md.txt",
+      "sha256": "fa51af25903bd07f2ec7a3ab6f4afb78122011a4197b81d514f653d12ce288e9",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/SOURCE_MANIFEST.json.txt",
+      "sha256": "5fe85e0e4d1a67351e125ab512f92cea27e2f3ec028e11ae10ede858e89a6659",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/THEOREM_NOTE_V1.md.txt",
+      "sha256": "02d8ac6dc3ab1f3c7a3d30933a14f6cbffd8971ffc59e59cb2ba364b3dee1a92",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/check_route.py.txt",
+      "sha256": "f6b6ebc57e5a2a88ba51165c797e413e7f8de0f056e2885eaefec4fea30a17d0",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/launch_check.py.txt",
+      "sha256": "f2ff747e22159c3bcc6636559c60ede21ce9435281f3d8e4467377a666700075",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/EXECUTION.json.txt",
+      "sha256": "8ba051ae7f79546c7110997f3809b5aabf643bd4602ec5f6a108bf03bf674588",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/PRELAUNCH.json.txt",
+      "sha256": "eb28ad2b386e6876cc823facb5075edea989602ff8510e3e0fad010ccc12270f",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/RESULT.json.txt",
+      "sha256": "dc357f329d87e74579396e533afca517438f0dc35f9537464e032dcdeea26e5e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/stdout.txt",
+      "sha256": "205b47d0920d5bf2dfa70494df5eef380ad18a94a04b7d2d96a54b82235ae190",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/parameters.json",
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/ROOT_QUALIFICATION.md.txt",
+      "sha256": "4424b600ca44784b818de64c0c9b7eb2e0a4d11878fd3f187ceca88403d1777f",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/ROUTE_SOURCE_IDENTITY_CHECK.json",
+      "sha256": "ec825871169afa5087bcd02b6b21fb45eb9182fcdefa14f45917fae42ca980ec",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/ARITHMETIC_DRAFT.py.txt",
+      "sha256": "d0aea85b2f7685d3c6a9c24c006008bdcd87c5bd49330c207a07a2fb250d1ddb",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/PROPOSAL.md",
+      "sha256": "2d1da7e51d68377d164f2529f7e6430e36ffb333a1241a694c4e75d9949ebf4c",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/REVIEW.md",
+      "sha256": "4789b360ecf4df8116f8735640ad9cb852e9cced24fb11ba1952a508128ddbe1",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/SECTION_QUALIFIED.md",
+      "sha256": "86101f319469b014cdfe9018ab623d0a6b753198a45501480b40969c9f0de7f8",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/ARITHMETIC_BLOCK.py.txt",
+      "sha256": "fd353c123f9fd48af1cd17b11c421e73ea2a669564256bbf13e07635658ffc9b",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/CHECK_MAP.md",
+      "sha256": "a121bc0b559ad981918ac05b92468d710e42effe460aa25448f4c84355e90a3e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/POSITIVE_REVIEW.md.txt",
+      "sha256": "40f7649071bc0eeb192a7832c64510c4185d39d31b6c27e9064a77fd5fa6a5f5",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/POSITIVE_SECTION.md.txt",
+      "sha256": "fde5d563e86cf660e16f71fe1f0bf8f3aebd7f2201ffb42b4708e469e5f52d77",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_precision_publication__RANKONE_ARITHMETIC_DRAFT.py.txt",
+      "sha256": "84ed1fab8d2bd9edc58aa781bd5c5dcf0b7d4ea18428f46c2caa3f773c63dad1",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_precision_publication__RANKONE_COROLLARY_QUALIFIED.md",
+      "sha256": "cb4186d7098d75861c9951bb3c5d3100bded100445f08500c937c5be9377d417",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_rankone_baseline_check__REVIEW.md",
+      "sha256": "8bd60218b0200888ee7ab32fe6836ac2d1c64e4eac5f8a72fec3660b2fa46c11",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_rankone_integration_check__REVIEW.md",
+      "sha256": "8e5d58e9bc9a5e6bb67cb91fb89b276d6c69c5b282e8ce11897f62691d24d65a",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_structural_precision__CORRECTIONS.md",
+      "sha256": "ee6df01851795fd3adfd4c693cd387299b5ae791271af90f757931e69db17eb2",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/APPENDIX.md.txt",
+      "sha256": "6a3d56e316d06e73deefb8a89646b601ebea92f986c9ba8d7f8e2d9ea728212c",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/ARITHMETIC_BLOCK.py.txt",
+      "sha256": "50038ba03bf952efad22720416ca76c17c90581d450c834f45c607b616701225",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/CHECK_MAP.md",
+      "sha256": "9fde480b7e37de74d83d6d7d1e55434c15b3c0f6794f7dad9a6cf9c5bf9067c7",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/PROPOSAL.md.txt",
+      "sha256": "2fe29c4799f73cff7712d04e94446b033bb4857c926d9348dae5ae016ab70a3f",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/REVIEW.md.txt",
+      "sha256": "d148847bbc8903e66dd4a734a52ab269f1a1d4cfa90e6d6677675a47bc62286a",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_spectral_check/REVIEW.md.txt",
+      "sha256": "b7f46ace4aa202aa69269362a4dbf978d3190aa3db15dbeb8c03124b58ec35a9",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_background_perturbation__PROPOSAL.md",
+      "sha256": "8c308e8d699122318f41fc0195028f3626ba3bd14558d589b3271f16a6c7d32e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_background_perturbation_check__REVIEW.md",
+      "sha256": "a7fd6b54e1be5fe21e2001d8509bf8961247ee47c506968ae0eed46db08906fd",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_fixed_spectrum_interface_check__REVIEW.md",
+      "sha256": "d370f70e5232904389368434a18a88407d30474b98b030a03c96e4d2e24fc7ce",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_precision_root_notes__FIXED_EIGENVALUE_INTERFACE.md",
+      "sha256": "548c8579d603200db45c7c7f4fdd3f2cef08aee53846efe524ef94591b692057",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_composition__PROPOSAL.md",
+      "sha256": "167780ae8a31b3bb0dbc8daee76518390b77978105bca1e7124636feb4d1ba12",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_composition_check__REVIEW.md",
+      "sha256": "4e85d1982bd8b8193874ea7dd575aa67edcb4e374e0458216c31c26ea9eaf586",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_orientation_scope__ASSESSMENT.md",
+      "sha256": "25221ebc70b09702b38aa626410f7760c57968d732b2c0b620c46fda548afaa3",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_orientation_scope__QUALIFIED.md",
+      "sha256": "d9b13303f9a2f0aa21ce1991748d66787f3e71b35919f845ac0765ad1be60462",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_orientation_scope__REVIEW.md",
+      "sha256": "00cc88339fbd6864bc756600403ca25bb960bc13e92ffcb8ef4920482a1dbefe",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_publication__ARITHMETIC_DRAFT.py.txt",
+      "sha256": "688bc36b49981a55c1aba289c75e782dfc6a3f34ed1bfbfcb7085f76515f5ac3",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_publication__CHECK_MAP.md",
+      "sha256": "69ea49e73b715783b6fca13e1ffc4d89bc863f26111987244efd7574abcee5aa",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/fixed_spectrum_publication__SECTION_QUALIFIED.md",
+      "sha256": "ab580a11d75728b2c056eefc7e6d9aed5734d5955b53843e159c76fd4726ce22",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/LARGER_COUPLING_COMPOSITION.md.txt",
+      "sha256": "3fd18e576fb394caea2b93272c4b430d782ec5c4663a9e961c8e3205d179952f",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/LARGER_COUPLING_QUALIFICATION.md.txt",
+      "sha256": "6001c9ddf96c54f49d86bfaf373f8c5f0d8aee3ece18a6a477f240ec9e1863b0",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/complex_selfenergy_bridge/PROPOSAL.md.txt",
+      "sha256": "0f627a4c3390ab007be46794b37a2daa21399dc61de7f23417e4082d2051e892",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/complex_selfenergy_bridge_check/REVIEW.md.txt",
+      "sha256": "b46c9a561316415aac0d35344a4ada6ec0325c4fabef1e7f49a4e0fdf3c65c49",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_background_regularity/PROPOSAL.md.txt",
+      "sha256": "1229768dfdc065c6396a7f5d9ca0c8518f0862d8523a1dc9efed2ae9b3f6b64c",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_background_regularity_check/REVIEW.md.txt",
+      "sha256": "c97208c7542cffffabc46f9445056332336126274d9d957fa7830be6c2538d77",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_coupling_interface/PROPOSAL.md.txt",
+      "sha256": "7d1cb4ba6fa19a2529f1453ab5a471207dfa1156d801cbaa944bc639ab191676",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_coupling_interface_check/REVIEW.md.txt",
+      "sha256": "c89dbf5a567e4c2c38db93c3cc2ccba95456f0942073d94121ec87432594efc2",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_spectral_mass_assessment/ASSESSMENT.md.txt",
+      "sha256": "f81fd349ce1d67c0ce1ed7b8d3405dbdc63aca5602a59e2c4d80caec18ebd6e8",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_spectral_mass_check/REVIEW.md.txt",
+      "sha256": "eef72a0d61cb9ba79756fea1492aa507027a7b515b77e04c1230751cf47d4712",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/larger_coupling_composition_check/REVIEW.md.txt",
+      "sha256": "f2094c29156d63152bddb4792e27e822902274f4d18b1d1b1f577b85cb949646",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/restricted_reference_moment/PROPOSAL.md.txt",
+      "sha256": "f76d55f9c51f582cf519bc025d5ae54e51d514023eaab7def6993c1cde782762",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/restricted_reference_moment_check/REVIEW.md.txt",
+      "sha256": "e9ce634ae0b1981507e0e354ccc386c485fc1cbc5e4f0343fad7c7a439b6a686",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/schur_strip_interface/PROPOSAL.md.txt",
+      "sha256": "16cc6ce85dd6bd40cf9ca6084274fd9b9d438134b39b35af21646a3af4f82a39",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/schur_strip_interface_check/REVIEW.md.txt",
+      "sha256": "11346d3c20ca4ae749b3c55750e8e0ec4144a9b4e9f82b3018c093f3a9516f18",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/weighted_mass_composition/PROPOSAL.md.txt",
+      "sha256": "79fe84afc4a244c346161a75b2850d81790f1c4add88009e6761d7cc7c939491",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/weighted_mass_composition_check/REVIEW.md.txt",
+      "sha256": "063966229b2712e636f04b9c77f52c1faefa2264d3888084bcb857a735100cdf",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset/CANDIDATE.md.txt",
+      "sha256": "8c9e935f0316d2a4b138c815c0312ce322bc3e06ad939d11dedf37d2e2127cc4",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset/CORRECTED_V2.md.txt",
+      "sha256": "3c90a0f71ccccbbba857bde79680c6eb10271af4bf7d71d04172b1149004ebe3",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset/SPECTRAL_SUM_ADDENDUM.md.txt",
+      "sha256": "9ad37ab5908a0eb342d7e5d009ed6862ae94dedd900ad589381594d9161b5bb6",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset/SPECTRAL_SUM_CORRECTED.md.txt",
+      "sha256": "1f45d62ff287c1d26b6cfedd8c682e440ffd185d6cec2a600ed2c7ed520dd072",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset/WEIGHTED_VARIATION_CANDIDATE.md.txt",
+      "sha256": "705081af26f4850d0688efdbf55c99443a4b359897d87c390d07aa8a7dbd21b3",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset_check/ADDENDUM_REVIEW.md.txt",
+      "sha256": "26078b2784d1958b4fb3d6dbe49ab78ac45d2fc95f8e447ad2b892483753bed3",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset_check/REVIEW.md.txt",
+      "sha256": "dd85745135125e1366bf9abd696a7f5e37c705e21ec551afd145bf3cc5564de0",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset_check/WEIGHTED_REVIEW.md.txt",
+      "sha256": "99b91967f2aace33c2bbc80b75c4dc9eec49d3e6646ce86242a9ea2ce5f23a66",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/quantitative_programs/check_quantitative.py.txt",
+      "sha256": "ba0d69a0a090e79ca33da31777379534c1584feeffe3719789980c8bdeab9eba",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/quantitative_programs/launch_quantitative.py.txt",
+      "sha256": "257960489b47887797b8be5f85638481ab5c3d68795d6c1e59235d3daa4571c5",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/quantitative_run/EXECUTION.json.txt",
+      "sha256": "5be444a86d647d4f48a07874c024651145a639dbe92440514e72a05ad403b8b6",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/quantitative_run/PRELAUNCH.json.txt",
+      "sha256": "7056f5262a16db16d8774f02cd39f7010627510dcf83af68ed126fd876e52b3a",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/quantitative_run/RESULT.json.txt",
+      "sha256": "294421a0eddceee3278a71e3ee2d6aff495eea0a5766a4260e7a38fd14b2648b",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/quantitative_run/stderr.txt.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/quantitative_run/stdout.jsonl.txt",
+      "sha256": "cc5dc485f3e70bb3a8f9deb8086a74c98b7e2a99e139f478a468db9218200073",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/QUANTITATIVE.md.txt",
+      "sha256": "733fdb0943ce84f86457bffcf5c8798c2bbfd02ce3c95af62760d42f9865f7b1",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/QUANTITATIVE_PRECHECK.md.txt",
+      "sha256": "4f7cb35787a0a6483ad7fb8266242ef673306ab28e29f859b2a85175f7667818",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/RECEIPT.json.txt",
+      "sha256": "ee6cb0e3bd03f56aa3995bedd71558d8f6ab2d830677c0202f30190c28c7fbaf",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/REVIEW.md.txt",
+      "sha256": "9e3c67a2154dd6ca83ebaa643484007d519600a7a1d242b6b225fe9860015b51",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/SOURCE_PINS.json.txt",
+      "sha256": "3489621eee24fbeaae2c87a079c27728d47014b5c3ea770fc24b28b9945f3756",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/CONJUGATE_PACKET_QUALIFICATION.md.txt",
+      "sha256": "e7d5f9920fcdf5666dc5e09e55a609234b95d3fefa355f60d4b823871ff59032",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/ENDPOINT_COLUMN_QUALIFICATION.md.txt",
+      "sha256": "130cf97149689ec0d91d960595ef9a5e207e8b07932943463b7c200742fadc8e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/conjugate_packet_independent_check/REVIEW.md.txt",
+      "sha256": "5df64d41d870b25589e2c783151857c241c301eb2a37e22c054a9102e0322f34",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/conjugate_packet_tradeoff_proposal/PROPOSAL.md.txt",
+      "sha256": "c49c0f7cd3af2c939085cee80883f4a36024b4979992bba1ee7628eb4b8961ac",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/endpoint_column_independent_check/REVIEW.md.txt",
+      "sha256": "bc10c35ec7a16af2b9b218d7077a0f37bbe2dedcbdb807cfa3ca5cbfb62b1a47",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/weighted_core_derivative_proposal/PROPOSAL.md.txt",
+      "sha256": "08cf51274fce1209a92c551487ed168ddaf0a1a4eb2edbf99eb2602ab35cf78e",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/CORE_STRIP_QUALIFICATION.md.txt",
+      "sha256": "03da9dfad78db9d2861197d52cbc627b38cd03c22ac590b60cb00aa96c84aa26",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/WEIGHTED_STRIP_COMPOSITION.md.txt",
+      "sha256": "27d36e89ed7b5389b4bf929030367de3ce6c2f490d0195074a62d4912fdd0b82",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour/CORRECTED_V2.md.txt",
+      "sha256": "d05c342bcdd5d31f9696c33aa0a81306fae8abb81e7adae87995490fe9a17874",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour/CORRECTIONS.json.txt",
+      "sha256": "aada05c2f46f45e42f3bd5eb662d176908e947f7f6227aa10d66fc75a0b1ae5a",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour/PROPOSAL.md.txt",
+      "sha256": "4667ce65a41e55e21a624d521838271cad0ab98e30b2dbbffca5ef1c34a87f31",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_contour_independent_check/REVIEW.md.txt",
+      "sha256": "297e324d25905a1a70fa934f37dc1c1b3c2c32051bda2a888e7ddc09b7628dc1",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/core_strip_scalar_independent_check/REVIEW.md.txt",
+      "sha256": "2fa1b96545f01eb9d38a5682a9018dcff341f68efc11d979476487d4d14b0fa0",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/endpoint_weighted_profile/PROPOSAL.md.txt",
+      "sha256": "28a0f35bc28b46d4cd343967543b24b51afb7368dd5bfc4c707565daddbeae3c",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/endpoint_weighted_profile_independent_check/REVIEW.md.txt",
+      "sha256": "74ca5c9f8137e0f37afc762dc79bddbe0642bca3cc4e3f09fe32a596f2a4d948",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/weighted_strip_composition_check/REVIEW.md.txt",
+      "sha256": "03bff8954690e0fa1dd827989cc0514a740ff53bf7d8077963e498d5fd09ac25",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family.md.txt",
+      "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family_acceptance.json.txt",
+      "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family_qualification.md.txt",
+      "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/interval.md.txt",
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/interval_acceptance.json.txt",
+      "sha256": "fba41e11ee5e282800547e7571ab520abddeda1d9d3947d7095b9dfbf6fbc4fb",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/interval_qualification.md.txt",
+      "sha256": "33f4e340f2909d907e4c8fe166c86b306e82e369a6fa3ddb5eca1ab4f19405c8",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/AUTHOR_NOTE.md",
+      "sha256": "a7ff2330eb7609a2edc849a9ac536c105024edb0ba60e2d7ea0bea89994716a7",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "027d9c2cf34580e6208172d86742ee01a7584f4d16929fd11b7ca54a2622d913",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/SOURCES.json",
+      "sha256": "01d15433422006142ba158ac55bf8d51f493b86a895ec0f6eae87ce213bc0ba4",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/VALIDATION.json",
+      "sha256": "dd6080d229ccc69483750a20ae758600adb31f1c03b40b502b0124f346a11f0a",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/source_checks/counterterm_free_gap_mediation/BANDWIDTH.md",
+      "sha256": "869529810d240931865dba69a192d48c1495792822486f50406ff376b565cd11",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/source_checks/counterterm_free_gap_mediation/EXACT_ALL_TIME.md",
+      "sha256": "c2f2b6d62879eded5a95def7df594c5f27349dafc737e7f9e236a9acbfb82d2a",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/source_checks/counterterm_free_gap_mediation/LADDER_SCATTERING_REDUCTION.md",
+      "sha256": "6bd1c720bd2a461a3384a7fc0688e2d38aea103524d74ca6987f252f3b88e128",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/source_checks/counterterm_free_gap_mediation/LOCAL_BACKGROUND_SHARPENING.md",
+      "sha256": "e7c6b9884612b79b4fbf14ca613133587fb7da43d7f519b1e2c730176f4e857a",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/source_checks/counterterm_free_gap_mediation/NETWORK_VACANCY_INTERFACE.md",
+      "sha256": "6428efd8acda2898d6051edffa60f349d08e6f919613e1fdcb234b58d66e4ea9",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/source_checks/counterterm_free_gap_mediation/VACANCY_HOPPING_PROBE.md",
+      "sha256": "6902cd136d74a9f7fdf66074abf8390a0ad4c75541775d6dd0aed53be8034b6f",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/source_checks/counterterm_free_gap_mediation_check/BANDWIDTH_REVIEW.md",
+      "sha256": "583774b7b4ec8dedd1ba0f5397a2517f04651d9e2c83552136f24bb3cacafdf2",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/source_checks/counterterm_free_gap_mediation_check/EXACT_ALL_TIME_REVIEW.md",
+      "sha256": "8f1b3796c051f00bf86d33913930ce4707692c1d7f93cabebcc07e915484b489",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/source_checks/counterterm_free_gap_mediation_check/LADDER_SCATTERING_REVIEW.md",
+      "sha256": "47dfbd3aa2f9226ed00eac09458327cc46f3624eeefa8c4fc2141224dbcd1d7b",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/source_checks/counterterm_free_gap_mediation_check/LOCAL_BACKGROUND_REVIEW.md",
+      "sha256": "139215bcd7161245cf7938d4d8e0b04c10987490e2a36177f59eb554a05a9bfc",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/source_checks/counterterm_free_gap_mediation_check/NETWORK_VACANCY_REVIEW.md",
+      "sha256": "9aa9efaf46d330944715ac21308ed6dd8ecb507116386e041f61782b46684aba",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_mediated_vacancy_network_2026_10_18/source_checks/counterterm_free_gap_mediation_check/VACANCY_HOPPING_REVIEW.md",
+      "sha256": "b926d1a07a6b5dd8eb035573d7255830f416bb8d34132f405dfc86b84a359e61",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/AUTHOR_CLOCK_RETURN.md",
+      "sha256": "07435e0303730d440469f9ebff62d157950696f4b365ad40d9659809d84083e1",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/AUTHOR_EXACT_MEDIATOR.md",
+      "sha256": "14a0fd7da51d18d0e043fdc4566388a277ff07d2fcdcc19f46dfd857345d20df",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/AUTHOR_NOTE.md",
+      "sha256": "ba9e34cfbb9eaed3c95165483b6384fa274903a067385423d20add34e9fe49d2",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/AUTHOR_SELECTED_MEDIATOR_HISTORY.md",
+      "sha256": "ffbd5eef604a92562baffb30d23b2baefd1c38437918181ddb81aa2ad0f1cc87",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "7f2fe34c01fa8cfbdb725528ce32b5ca1627ae1d0888c9e7df6f1e7fb60e080b",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/PUBLICATION_CHECK.md",
+      "sha256": "0d6a5167df3befabc24ba3095e1374a9daa2fa1f541df73ec49422fc2517f491",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/SOURCES.json",
+      "sha256": "d94fcc7ab71f4e7800417612e3f2e58106a866b652f91165847122cd3945fb94",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/VALIDATION.json",
+      "sha256": "0495102fdc0d81bcc6148033243d4e92a56bcb8a83856d21d5209ea6f1e268cf",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/counterterm_free_gap_mediation/ALL_MEDIATOR_INPUTS.md",
+      "sha256": "4e78ac9a7c537367b3125ff33c8889ec78e7f478090aed199f1e70b6d0f67836",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/counterterm_free_gap_mediation/BACKGROUND.md",
+      "sha256": "5ef99f99791a0cc4322220c1d15fa3c17724d6321adc615cc2b9b0e78faf8a95",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/counterterm_free_gap_mediation/CLOCK_RETURN.md",
+      "sha256": "b82a0a3291fd97d1a25ba9a88e921305c2049630c3aeecf1ad8f45a5943130b3",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/counterterm_free_gap_mediation/EXACT_ALL_TIME.md",
+      "sha256": "c2f2b6d62879eded5a95def7df594c5f27349dafc737e7f9e236a9acbfb82d2a",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/counterterm_free_gap_mediation/PROPOSAL.md",
+      "sha256": "be8814b5e1ee6f8cc9e737897c0eaa7a81daa1e6f2b4c4e9b9b9fe8f69a28c97",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/counterterm_free_gap_mediation_check/ALL_MEDIATOR_INPUTS_REVIEW.md",
+      "sha256": "98c213c581300a0cfe61af1b34b7c2eb99365138a08acd21315cc02aa40b777c",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/counterterm_free_gap_mediation_check/BACKGROUND_REVIEW.md",
+      "sha256": "723d1c9207976652a163bd908675bd7bfe385333500d04f5d4c80fc39a2b4672",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/counterterm_free_gap_mediation_check/CLOCK_RETURN_REVIEW.md",
+      "sha256": "6bd35a64513b86140d6a7e747684d90f4a6e05a7c7f4c10cfea5ba5064262eec",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/counterterm_free_gap_mediation_check/EXACT_ALL_TIME_REVIEW.md",
+      "sha256": "8f1b3796c051f00bf86d33913930ce4707692c1d7f93cabebcc07e915484b489",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/counterterm_free_gap_mediation_check/REVIEW.md",
+      "sha256": "b034c5ead5d43e65b891841dd58582a6ec5d39078b2cf82e83a08719beacbd51",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/real_two_body_gap_mediation_check/ADDENDUM_REVIEW.md",
+      "sha256": "6bd888e28dc6e241bac356478768183dcf8a4e160853618ad93d6496f57687f3",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/real_two_body_gap_mediation_check/REVIEW.md",
+      "sha256": "5689ad177750d010b737cba1747a6aadad2f9ec39a5a7d0535c4e46a316f26c0",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/real_two_body_gap_mediation_check/UNEQUAL_REVIEW.md",
+      "sha256": "70b12d308a56fb2bbd84c293c479400141bcd3e1ad9b4f2aa1b92213465a9c5d",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/real_two_body_gap_mediation_probe/ADDENDUM.md",
+      "sha256": "8eab643600f6b654bb84c1dddde8c2afb55eff58593691ea147dfb697ebcfae7",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/real_two_body_gap_mediation_probe/PROPOSAL.md",
+      "sha256": "f8b8618d255d6193afa3265202693ef669a0bd5b403c00fb901ba49c539b87c2",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/real_two_body_gap_mediation_2026_10_18/source_checks/real_two_body_gap_mediation_probe/UNEQUAL_COUPLINGS.md",
+      "sha256": "5364c664a8b3cdfbc8fc37cf02630e78925774eb7bdd11a1551cd99dc404e6aa",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/uncentered_reference_offsets_2026_10_18/AUTHOR_NOTE.md",
+      "sha256": "851717a83e98cd96b505a31ed74e43ccab33a2a7021c1594cbf269e99dabdd39",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/uncentered_reference_offsets_2026_10_18/INTEGRATION_RECORD.md",
+      "sha256": "09a12ba0c2894ebf7bed8df8c8433ae18dbd014c31deb83ded1ec54fb5ea4785",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/uncentered_reference_offsets_2026_10_18/PUBLICATION_CHECK.md",
+      "sha256": "94fc9e0ac4b295827455fc0581e049018df967c0676f8d089a1028d9854c48a3",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/uncentered_reference_offsets_2026_10_18/SOURCES.json",
+      "sha256": "c038ecc5766ee32aa910810d11cc668f34fe4484a443ce60826a98ddee584704",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/uncentered_reference_offsets_2026_10_18/VALIDATION.json",
+      "sha256": "3e73fb461a646e6d56a38dc4e6bf1cbaed7dc19f6185f4a1b5fdefaee5f44122",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/uncentered_reference_offsets_2026_10_18/source_checks/reference_uncentered_offsets/PROPOSAL.md",
+      "sha256": "173ebf7c13c66c89b99e492222ad26bb37a42ef2c43454a6ee7f3440a207c97c",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "outputs/uncentered_reference_offsets_2026_10_18/source_checks/reference_uncentered_offsets_check/REVIEW.md",
+      "sha256": "85d8fd9340d54e4b882f8a8d1ae16219b39dbb6c63e0749ef9f64f4b643c30ae",
+      "role": "unit live source or preserved provenance"
+    },
+    {
+      "path": "scripts/common_product_device_controls_2026_10_18.py",
+      "sha256": "8f80466ed2e275c30cceb440fa2c876782feed3a3ce7940c6a165d3e754e0d41",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "scripts/local_reference_static_swap_2026_10_18.py",
+      "sha256": "f25dd25f019842f633d8ddd7a426d91896409f80310d65d937b84d11a9479011",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    },
+    {
+      "path": "scripts/real_endpoint_autonomous_output_2026_10_17.py",
+      "sha256": "d93be99a2a49abed5c3a8edc6740af7c50fa6d8ba6a7f9d156cb73319d4e78cb",
+      "role": "existing parent identity; only explicitly invoked bounded mathematical premises are used; no dynamic execution"
+    }
+  ],
+  "portable_parent_routes": {
+    "outputs/local_reference_static_swap_2026_10_18/source_checks/local_reference_static_swap/PROPOSAL.md": "outputs/local_reference_static_swap_review_2026_10_18/proofs/local_reference_static_swap.md",
+    "outputs/local_reference_static_swap_2026_10_18/source_checks/product_reference_static_swap/PROPOSAL.md": "outputs/local_reference_static_swap_review_2026_10_18/proofs/product_reference_static_swap.md",
+    "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_loader_structured_coefficients/PROPOSAL.md": "outputs/common_product_devices_review_2026_10_18/proofs/pr9737/exact_loader_structured_coefficients_PROPOSAL.md",
+    "outputs/local_reference_static_swap_2026_10_18/source_checks/local_reference_static_swap_check/REVIEW.md": "archive/product_continuation_four_review_2026_10_18/parent_history/bc0e54499663904538b862421d7338c31131cd9dc2923519b7d45fffb323a00b.gz",
+    "outputs/local_reference_static_swap_2026_10_18/source_checks/product_reference_static_swap_check/REVIEW.md": "archive/product_continuation_four_review_2026_10_18/parent_history/69c07739988970d1671e2b5acd985ec48d935d74066afc456761301e086be195.gz",
+    "outputs/exact_two_body_engineered_loader_2026_10_18/source_checks/exact_loader_structured_coefficients_check/REVIEW.md": "archive/product_continuation_four_review_2026_10_18/parent_history/273da0a0d28269e6e40aff0695f5465456acd35abe4c0b4eddc1acf0578334c8.gz"
+  },
+  "repository_imports": [],
+  "runtime_dependencies": [
+    "Python standard library",
+    "numpy",
+    "scipy"
+  ],
+  "generated_outputs": [],
+  "boundary": "Full proof text is retained; literal input binding does not imply dynamic verification of every proof. Historical source checks are not present authority. No new physical suppliers, finite scattering launch, or halt is established."
+}

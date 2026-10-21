@@ -1,0 +1,18 @@
+<!-- Original PR9808 source SHA256 402d4cc6084666b52a927feb0940a2c8a9fca592f01bf67579b28023aa193ff0. -->
+**Source boundary:** Complete mathematical source follows. Historical verdicts, replay narratives and workflow instructions are provenance only. Mathematical identities and constructive arguments retain their explicit hypotheses; an old status supplies no current certification. Earlier exploratory statements must be read with the later corrections in this unit.
+
+# Physical pair-source final focused review
+
+PASS for the polynomial-grid theorem and matched-source calculation. One narrow finite-volume wording fix is requested below. Ordinary review only; no formal audit or repository edits.
+
+The generic-momentum normalization is correct for sufficiently large even R: unordered pair amplitude 2cos(k·d)/(R²sqrt(1−2/R²)), norm one from sum(d!=0)cos²(k·d)=R²/2−1. Its overlap with the normalized endpoint sum is sqrt(2)(cos kx+cos ky)/(R sqrt(1−2/R²)). The separately stated k0 identical-pair normalization and overlap are correct. Self-inverse momenta are properly excluded from the generic normalization.
+
+Narrow fix: explicitly impose R>=6, or sufficiently large R, on the exact finite-volume orbit-normalization statements. The setup currently says only even R. At R4, two distinct two-column subsets can differ by an entire flat row/column, so their positive-character flat-orbit images need not be orthogonal. The controls already use R6/8/12, and the polynomial-grid limit is unaffected. This is not a challenge to the asymptotic result.
+
+The matched wall dressing counts 4L reversed YY bonds for an x pair and 2L for a y pair. Each contributes −λ²/32 to the amplitude. Thus the orientation factors 1−Lλ²/8 and 1−Lλ²/16 are correct. This is not a product of separate state fidelities. At order two no different wall-free pattern is reachable; the endpoint's first λ² shape tail contains more than two columns and does not overlap the leading pair source. Its normalization begins at λ4. Vacuum winding is later. Checkerboard symmetry excludes odd powers. The additive remainder convention correctly handles leading form-factor zeros and probe anisotropy.
+
+The locality argument retains the exact charge of each transformed column source. Two distant finite charged collars produce at least eight bad plaquettes and cannot overlap Q4. Connected retained contributions and endpoint paths have bounded relative range/l1 norm. The ordered-pair normalization and translated endpoint sum then preserve 1/R at each fixed order, without assuming factorization of the interacting vacuum. Exact ground scalar pieces are removed or cancel by orthogonality.
+
+The strengthened tail requirement is correct: R²λ^M divided by the same-fibre λ14 gap and multiplied by ||O_k||=O(R²) gives R4λ^(M−14). Relative to λ4/R, its exponent condition is M>18+5p. At p5,M60 the crude tail is λ26 versus λ9 retained remainder. Joint source truncation and inherited reduction requirements remain explicitly included. This is a fixed-p finite-order limit, not a fixed-coupling thermodynamic or on-shell scattering theorem.
+
+Read the independent physical-pair check, proof, note, runner and literal helper. Replayed the helper without repository writes: all nine normalization/overlap/dressing cases pass, maximum error 9.43689570931383e−14; counts [40,20] and coefficients [−5/4,−5/8]. The runner binds the executed helper and all listed load-bearing proofs. The source is a neutral product of charged columns; neither the note nor proof confuses this residue with original neutral ZZ readout, an emission rate, or universal scalar coupling.

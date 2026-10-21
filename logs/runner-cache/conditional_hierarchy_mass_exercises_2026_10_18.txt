@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/conditional_hierarchy_mass_exercises_2026_10_18.py
+runner_sha256: 7c7add9046b235e27c9fed6353dcce61ce208918127af035af7602ed4ab0cd1b
+input_fingerprint_sha256: 62028b64ab0daff97f53a3507076369c1c379eaa57c480f4df577f46d8ed439e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+[PASS] first-exit (Fraction(2, 1), Fraction(1, 10), Fraction(1, 4)) {'exit': 2, 'real_log_bound': 1.3219280948873624, 'rounding_factor': True}
+[PASS] first-exit (Fraction(3, 2), Fraction(1, 100), Fraction(1, 3)) {'exit': 9, 'real_log_bound': 8.648235883183691, 'rounding_factor': True}
+[PASS] first-exit (Fraction(2, 1), Fraction(1, 16), Fraction(1, 2)) {'exit': 3, 'real_log_bound': 3.0, 'rounding_factor': True}
+[PASS] first-exit (Fraction(5, 4), Fraction(1, 1000), Fraction(1, 5)) {'exit': 24, 'real_log_bound': 23.743986036537727, 'rounding_factor': True}
+[PASS] two-loop substitution identity B*(13*N - 3/N)/2 - 25*N**2/2 + 11/2
+[PASS] two-loop rational endpoint bound -73/5 at N=2; slope -201/20
+[PASS] B elementary numerical guard pi upper and log(10) lower comparator bounds
+[PASS] endpoint mass bracket anticommuting t=0.0 {'max_error': 3.972054645195637e-15, 'norm': 32.66833329081849}
+[PASS] endpoint mass bracket commuting t=0.0 {'max_error': 0.0, 'norm': 32.668333290818495}
+[PASS] endpoint mass bracket anticommuting t=0.25 {'max_error': 1.9860273225978185e-15, 'norm': 16.334166645409248}
+[PASS] endpoint mass bracket commuting t=0.25 {'max_error': 0.0, 'norm': 32.668333290818495}
+[PASS] endpoint mass bracket anticommuting t=0.5 {'max_error': 1.7763568394002505e-15, 'norm': 1.7763568394002505e-15}
+[PASS] endpoint mass bracket commuting t=0.5 {'max_error': 0.0, 'norm': 32.668333290818495}
+[PASS] endpoint mass bracket anticommuting t=1.0 {'max_error': 0.0, 'norm': 32.668333290818495}
+[PASS] endpoint mass bracket commuting t=1.0 {'max_error': 3.552713678800501e-15, 'norm': 32.668333290818495}
+[PASS] signed-permutation image closure {'order': 48}
+[PASS] scalar commutant of supplied image {'constraint_rank': 8, 'commutant_dimension': 1}
+[PASS] period-two corner orbit decomposition [1, 1, 3, 3]
+[PASS] nearest-neighbor complementary corners 0 {'axis': 0}
+[PASS] nearest-neighbor complementary corners 1 {'axis': 1}
+[PASS] nearest-neighbor complementary corners 2 {'axis': 2}
+[PASS] nearest-neighbor Hessian splitting (0, 1) {'axes': [0, 1]}
+[PASS] nearest-neighbor Hessian splitting (0, 2) {'axes': [0, 2]}
+[PASS] nearest-neighbor Hessian splitting (1, 2) {'axes': [1, 2]}
+[PASS] image stabilizers need not stabilize pair-state Both coordinate projections are conjugation-equivariant; residuals of images differ
+[PASS] common simple residual finite fixture [[4.372807087362867e-31, 3.3841635389210985e-31, 1.0000000000000004], [1.0, 1.4764290585894454e-31, 8.731198636063634e-31], [5.187211027833877e-31, 0.9999999999999996, 5.414429487413533e-31]]
+[PASS] angular family quadratic trace 3*m0**2 + 6*mJ**2 + (a**2 + 2*b**2)*(x**2 + y**2 + (-x - y)**2)
+[PASS] angular family cubic trace -3*x*y*(a - b)**2*(a + 2*b)*(x + y)
+[PASS] flat characteristic coefficients mu1=mu2 trace1/2/3 determine characteristic polynomial
+[PASS] flat characteristic coefficients mu1=-2mu2 trace1/2/3 determine characteristic polynomial
+[PASS] definite-spectrum derivative identity S>0 and q>0; negative definite has opposite sign
+[PASS] specified four-link plaquette ceiling {'full_register_dimension': 10000, 'nonzero_support': 54, 'oriented_entries': 81, 'maximum': 0.055555555555555594}
+[PASS] single Hamming-class insertion orders 1 {'generators': [1], 'distances': [1, None, None, None]}
+[PASS] single Hamming-class insertion orders 2 {'generators': [2], 'distances': [None, 1, None, None]}
+[PASS] single Hamming-class insertion orders 3 {'generators': [1, 2], 'distances': [1, 1, None, None]}
+[PASS] single Hamming-class insertion orders 4 {'generators': [3], 'distances': [None, None, None, None]}
+[PASS] single Hamming-class insertion orders 8 {'generators': [4], 'distances': [None, None, 1, None]}
+[PASS] single Hamming-class insertion orders 9 {'generators': [1, 4], 'distances': [1, None, 1, None]}
+[PASS] single Hamming-class insertion orders 10 {'generators': [2, 4], 'distances': [None, 1, 1, None]}
+[PASS] single Hamming-class insertion orders 11 {'generators': [1, 2, 4], 'distances': [1, 1, 1, 3]}
+[PASS] single Hamming-class insertion orders 16 {'generators': [5], 'distances': [None, None, None, None]}
+[PASS] single Hamming-class insertion orders 20 {'generators': [3, 5], 'distances': [None, None, None, None]}
+[PASS] single Hamming-class insertion orders 32 {'generators': [6], 'distances': [None, None, None, None]}
+[PASS] single Hamming-class insertion orders 36 {'generators': [3, 6], 'distances': [None, None, None, None]}
+[PASS] single Hamming-class insertion orders 48 {'generators': [5, 6], 'distances': [None, None, None, None]}
+[PASS] single Hamming-class insertion orders 52 {'generators': [3, 5, 6], 'distances': [None, None, None, None]}
+[PASS] single Hamming-class insertion orders 64 {'generators': [7], 'distances': [None, None, None, 1]}
+[PASS] all 127 charge subsets finite census {'three-order_sets': 12, 'not_a_gap_census': True}
+[PASS] higher-order singular-value counterexample {'small_singular_over_eps5': [0.9999000199950016, 0.9999937500781237, 0.9999996093753053]}
+[PASS] specified irrelevant integral (1.0, 2.0, 10.0) {'integral': 0.4999999989694232, 'absolute_bound': 0.5}
+[PASS] specified irrelevant integral (-0.3, 0.5, 4.0) {'integral': -0.5187988300580324, 'absolute_bound': 0.6}
+[PASS] specified irrelevant integral (0.2, 3.0, 0.01) {'integral': 0.001970297763432788, 'absolute_bound': 0.06666666666666667}
+[PASS] Pauli phase sign 0.0 {'eigenvalue': 1.0, 'phase': 0.0}
+[PASS] Pauli phase sign 0.1 {'eigenvalue': 0.8, 'phase': 0.0}
+[PASS] Pauli phase sign 0.4 {'eigenvalue': 0.19999999999999996, 'phase': 0.0}
+[PASS] Pauli phase sign 0.75 {'eigenvalue': -0.5, 'phase': 3.141592653589793}
+per_element: Finite exact rational and symbolic identities, with stated algebraic hypotheses; no physical mass identification.
+per_site: Discrete fixtures and full 48-element image plus 127 charge subsets; no complete family of native models claimed.
+per_mode: Exact symbolic controls and numerical residual checks use declared tolerances; no exploratory scan replayed.
+per_block: Parameters are supplied model fixtures; empirical and coupling values in historical sources remain comparators.
+lattice_wide: Continuum, infinite-volume, all-order gap and nonperturbative extensions are not established by these controls.
+TOTAL: PASS=56 FAIL=0
+
+----- stderr -----
+

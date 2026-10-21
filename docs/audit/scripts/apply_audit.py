@@ -1550,6 +1550,10 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         row.pop("no_go_discipline", None)
     else:
         row["no_go_discipline"] = judgment.get("no_go_discipline")
+    # Judicial votes currently have no complete per-constituent premise
+    # declaration protocol. Acceptance must therefore bind the whole premise
+    # surface, even when an earlier judgment declared a narrower scope.
+    row.pop(audit_science_fingerprint.PREMISE_DECLARATION_FIELD, None)
     row["blocker"] = None
     consume_audit_invocation(row, invocation_id)
     row["audit_state_snapshot"] = snapshot_audit_state(row, rows)
@@ -1742,6 +1746,37 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             f"must be produced by codex-gpt-{floor_str} or newer; non-codex "
             f"families remain allowed for human / judicial reviews."
         )
+
+    # Optional auditor-declared premise scope (science_fingerprint_v3, owner
+    # ruling 2026-10-18). Absent or null keeps the fail-closed scope. A seat
+    # landing on a row that already holds a judgment (a second critical seat,
+    # a legacy-clean re-audit, any later seat) binds the union of every
+    # declaration, and any judgment without one makes the row fail closed: a
+    # scope is only ever as narrow as the least specific judgment allows.
+    premise_field = audit_science_fingerprint.PREMISE_DECLARATION_FIELD
+    declared_premises = audit.get(premise_field)
+    if declared_premises is not None:
+        premise_error = audit_science_fingerprint.premise_declaration_error(
+            declared_premises, REPO_ROOT
+        )
+        if premise_error:
+            return False, premise_error
+    later_seat = rows[cid].get("audit_status") not in {None, "unaudited"}
+    if later_seat:
+        prior_premises = rows[cid].get(premise_field)
+        scoped_premises = (
+            None
+            if declared_premises is None or prior_premises is None
+            else sorted(set(prior_premises) | set(declared_premises))
+        )
+    else:
+        scoped_premises = (
+            None if declared_premises is None else sorted(set(declared_premises))
+        )
+    if scoped_premises is None:
+        row.pop(premise_field, None)
+    else:
+        row[premise_field] = scoped_premises
 
     criticality = row.get("criticality") or "leaf"
     if verdict == "audited_clean":

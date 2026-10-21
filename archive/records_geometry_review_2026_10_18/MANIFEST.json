@@ -1,0 +1,58 @@
+{
+  "original_head": "1aeba75180241364ab3661c3ec90f432dbf55f92",
+  "delta_base": "913beccb3f2e2280378a4f0e965d3369a92648db",
+  "original_dispositions": [
+    {
+      "original_path": "docs/SCALE_LADDER_GRAVITY_RECORDS_TO_GEOMETRY_LOSSLESS_PASSING_AND_THE_TICK_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "original_sha256": "d68f7863b95d00e9c2f03d869a4d1c16ea88cfbd8e3dd08e63d96e5a2dc6beac",
+      "original_blob": "6e225499950a6496caf7b46a8a9435c84f99b301",
+      "recovery": {
+        "path": "archive/records_geometry_review_2026_10_18/objects/d68f7863b95d00e9c2f03d869a4d1c16ea88cfbd8e3dd08e63d96e5a2dc6beac.gz",
+        "sha256": "2821171121a88399f06d45b8df0c6db557749414f744509399eaef90624f1b37",
+        "uncompressed_sha256": "d68f7863b95d00e9c2f03d869a4d1c16ea88cfbd8e3dd08e63d96e5a2dc6beac"
+      },
+      "disposition": "Requires narrow correction; retain finite conditional formulas and experiments, remove unsupported physical and universal interpretations.",
+      "final_path": "archive/records_geometry_review_2026_10_18/objects/d68f7863b95d00e9c2f03d869a4d1c16ea88cfbd8e3dd08e63d96e5a2dc6beac.gz",
+      "final_sha256": "2821171121a88399f06d45b8df0c6db557749414f744509399eaef90624f1b37"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "a36fab2b5499d8575cccc3f3d85a14f5fca85b27438e35692598c07f31aef9fd",
+      "original_blob": "272b5829e311748774ab367809ad1f31b1e13009",
+      "recovery": {
+        "path": "archive/records_geometry_review_2026_10_18/objects/a36fab2b5499d8575cccc3f3d85a14f5fca85b27438e35692598c07f31aef9fd.gz",
+        "sha256": "0d61058f7912be358e80ebaead573e0c9a309a4120ed3257471f15bfabd54f04",
+        "uncompressed_sha256": "a36fab2b5499d8575cccc3f3d85a14f5fca85b27438e35692598c07f31aef9fd"
+      },
+      "disposition": "Generated original graph retained for recovery only; regenerate combined graph on landing main.",
+      "final_path": "archive/records_geometry_review_2026_10_18/objects/a36fab2b5499d8575cccc3f3d85a14f5fca85b27438e35692598c07f31aef9fd.gz",
+      "final_sha256": "0d61058f7912be358e80ebaead573e0c9a309a4120ed3257471f15bfabd54f04"
+    },
+    {
+      "original_path": "logs/runner-cache/scale_ladder_gravity_records_to_geometry_lossless_passing_and_the_tick_2026_10_18.txt",
+      "original_sha256": "5e4ccc438949c1e6a1de699550ba6428fd4ce0c1c235d67742c2ca1128c7c228",
+      "original_blob": "0a4fb658caa7a8c38c5ac5cea7455a9095f71ebb",
+      "recovery": {
+        "path": "archive/records_geometry_review_2026_10_18/objects/5e4ccc438949c1e6a1de699550ba6428fd4ce0c1c235d67742c2ca1128c7c228.gz",
+        "sha256": "4dace2df1ac0ab82a0d4114be026b41bd0c9f4537a98a61b5db0aad864e5e82c",
+        "uncompressed_sha256": "5e4ccc438949c1e6a1de699550ba6428fd4ce0c1c235d67742c2ca1128c7c228"
+      },
+      "disposition": "Historical submitted cache only; fresh corrected-source capture required.",
+      "final_path": "archive/records_geometry_review_2026_10_18/objects/5e4ccc438949c1e6a1de699550ba6428fd4ce0c1c235d67742c2ca1128c7c228.gz",
+      "final_sha256": "4dace2df1ac0ab82a0d4114be026b41bd0c9f4537a98a61b5db0aad864e5e82c"
+    },
+    {
+      "original_path": "scripts/scale_ladder_gravity_records_to_geometry_lossless_passing_and_the_tick_2026_10_18.py",
+      "original_sha256": "ecb49430241bbfeceb2d3096f36b6226333915264929338a7bd45224037ed8d6",
+      "original_blob": "e196d7a4c078f7e9e2c2ae61c9f4cee00bd216ab",
+      "recovery": {
+        "path": "archive/records_geometry_review_2026_10_18/objects/ecb49430241bbfeceb2d3096f36b6226333915264929338a7bd45224037ed8d6.gz",
+        "sha256": "baa965d75722c03547e2b7e267ad57e26bed72bf339df9b21ad9af592571bf4c",
+        "uncompressed_sha256": "ecb49430241bbfeceb2d3096f36b6226333915264929338a7bd45224037ed8d6"
+      },
+      "disposition": "Requires narrow correction; retain finite conditional formulas and experiments, remove unsupported physical and universal interpretations.",
+      "final_path": "archive/records_geometry_review_2026_10_18/objects/ecb49430241bbfeceb2d3096f36b6226333915264929338a7bd45224037ed8d6.gz",
+      "final_sha256": "baa965d75722c03547e2b7e267ad57e26bed72bf339df9b21ad9af592571bf4c"
+    }
+  ]
+}

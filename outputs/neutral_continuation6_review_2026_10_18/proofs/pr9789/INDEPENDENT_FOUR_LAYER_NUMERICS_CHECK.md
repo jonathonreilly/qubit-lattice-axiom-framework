@@ -1,0 +1,55 @@
+<!-- Original PR9789 source SHA256 d0c1be28463cf196f1ecf6ac21959a5bdfdf428e0de0e86253336df76925f70a. -->
+**Source boundary:** Complete mathematical argument follows. Historical verdicts, execution narratives and provisional instructions are provenance only. Exact identities and conditional mathematical implications remain live; no audit status or additional physical premise is conferred. Earlier exploratory statements are read with their explicit later corrections.
+
+# Independent four-layer coefficient-model numerics check
+
+Reviewed `/tmp/neutral_four_layer_spatial.py` and `/tmp/neutral_four_layer_probe.py`. Ran independent small geometry/isometry controls only, with no duplicate R6 computation. Control files: `/private/tmp/neutral_four_layer_independent_control.py` and `.json`.
+
+## Geometry and physical meaning
+
+The scripts implement OPEN transverse R by R geometry: edges use x+1<R and y+1<R, and plaquettes have lower-left corners in 0,...,R-2. They do not implement a transverse torus. The leading coefficient operator is K=-4P-5E, with E=sum nearest XX in the original logical axes and P=sum plaquette ZZZZ. After rotating to the X eigenbasis, E is diagonal and P flips four plaquette bits.
+
+Fixing all logical row and column X products to +1 imposes 2R-1 independent parity constraints. The (R-1)^2 free bits determine the final row and column by parity, exactly as in both scripts. Thus the reduced dimension is 2^((R-1)^2). These are coordinates on a symmetry sector of the four-layer coefficient problem; the physical site count remains 4R². No extra physical qubits are introduced.
+
+I independently formed full R by R bit arrays, filled their boundary row/column by parity, computed nearest-edge energies directly from the physical array, and flipped actual four-corner plaquettes before mapping back. This reproduces the masks and flips used by the scripts.
+
+## D4 reduction and normalization
+
+The rotation maps array coordinates (i,j) to (j,R-1-i), and reflection maps (i,j) to (i,R-1-j). Both preserve the parity constraints. Expanding, permuting, and retaining the independent upper-left bits gives the advertised binary linear maps. They are plain unsigned permutations for this coefficient Hamiltonian; no fermionic or gauge-string signs enter.
+
+For each orbit O_i, use |i>=|O_i|^(-1/2) sum_(x in O_i)|x>. For an invariant vector, its raw amplitude at representative x_i is v_i/sqrt(|O_i|). Applying each plaquette flip to x_i therefore gives
+
+    (K_D4 v)_i=diag_i v_i
+       -4 sum_f sqrt(|O_i|/|O_(x_i xor f)|) v_(orbit(x_i xor f)).
+
+This is exactly the code's weight orientation. Repeated flips into the same orbit are correctly counted with multiplicity, not deduplicated. Although an individual summand need not look symmetric, the full reduced operator is Hermitian by orbit incidence balance.
+
+Independent controls:
+
+- R3: raw dimension 16, D4 dimension 6; isometry error 2.23e-16, intertwining error 1.26e-15.
+- R4: raw dimension 512, D4 dimension 102; isometry error 9.16e-16, intertwining error 1.04e-14.
+- Full raw versus D4 ground energies differ by at most 4.27e-14.
+
+The first scratch control accidentally applied numpy sqrt directly to an int8 orbit size, producing a low-precision intermediate. Casting that size to float fixed the control. The root code already casts its initial-vector sizes to float and computes its matvec ratios in numba floating arithmetic; this scratch-control issue does not identify a root-code defect.
+
+The plaquette flip masks span the raw free-bit space, so the selected-sector stoquastic graph is connected. Its strictly positive ground vector is unique in that sector and invariant under D4. This explains preservation of that ground by the D4 quotient, without asserting a global ground across every other plane-charge sector.
+
+## Source vector
+
+For the stated coefficient observable O=3K-3E and a normalized exact eigenvector g of K,
+
+    (O-<O>)g=-3(E-<E>)g.
+
+The code uses E=-diag/5, so q=-3(E-mean)*g has the correct sign and normalization. A direct matrix calculation of O on the independently constructed raw models agreed to 1.12e-12 or better; that error includes the numerical eigensolver residual. This verifies the coefficient-source identity, not any omitted microscopic lambda or volume prefactor. Physical readout weights must retain those prefactors from the separate source derivation.
+
+## Numerical interpretation limits
+
+The positive/uniform initial vector restricts eigsh to its generated invariant subspace. The D4 model intentionally discards nontrivial D4 irreps, and additional accidental or exact symmetries can leave dark low states inaccessible even within the raw selected sector. A small residual certifies proximity to some eigenvalue; it does not prove that a reported excited value is the globally first excitation or that all lower source-dark states were found.
+
+Source Lanczos likewise probes only the cyclic subspace generated by q. Reconstructing each Ritz vector and computing its full matvec residual, as the probe does, is the appropriate check for individual candidate nodes. An 80-step Krylov spectrum is not automatically a resolved exact spectral measure. The residual threshold is an explicit numerical acceptance convention, not an interval certificate. Degenerate or nearly degenerate weights should be aggregated over a resolved cluster if individual vectors can rotate.
+
+The long-double Collatz calculation is labeled numerically inflated, correctly distinguishing it from rigorous directed-rounding interval arithmetic. No formal certification should be inferred solely from that heuristic error inflation.
+
+## Conclusion
+
+The physical parity coordinates, unsigned D4 maps, orbit normalization, and coefficient-source vector check out on independent small controls. Retain open transverse geometry, selected symmetry sector, finite coefficient-model scope, and residual-qualified visible-mode claims. No extra-qubit, full microscopic spectrum, thermodynamic, or scalar identification follows from this engine alone.

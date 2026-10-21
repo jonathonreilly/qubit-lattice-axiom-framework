@@ -1,0 +1,27 @@
+# Distinct ROOT check: earlier complete mediated certificate
+
+Reviewed complete source `mediated_scalar_improved_point/PROPOSAL.md`, SHA2564d0492b02455494c8f9da707358ba7ed7d55152303ea8d10f916344d8797ce18. Conditional support: infinite complete error<.00046 for all t>=8e18, and finite complete error<.0005 on[8e18,1.6e19] with M1920000000011, for exactly the unchanged correlated supplied tuple and a new shorter receiver truncation.
+
+## Direct reconstruction
+
+I read the full new argument, scalar sharpening9fb115c3135c97f294783310e28c55e6b6073f076a4f66ebb9fe8d6f37e98f7d and distinct scalar review9a585de47e8e70fcd3fef5654247dc3a788895bfcb26fb9064455eb12b28e3c3. The baseline243c1722/check080266c4, full source731162/check496164, recovery83530/check6f1b, complete6ed86/checke9d6, raw7b74/checkbe74 and cut/layout5bcb/d776/check0c089 were already fully read and selectively checked at unchanged identities. No baseline calculation is rerun here.
+
+1. The source parameters, exact implicit v,w root at the original j, masses, window rho, slow g and Q installation are unchanged. The interval displays are bounds on that one correlated prescription, not fabrication boxes. Lambda at m12 uses r^(2m-2)=2^-22. The positive Q baseline has no additional pure-P global phase. The old K/W, carrier, gauge sign, target packet, n=0 and every prescribed output remain explicit.
+
+2. The actual nontraveling contribution is still c_R[C_s exp(-lambda t/2)+S_s]+E_rec. Two actual raw coefficient discrepancies are retained. The same normalized scalar incoming functional corresponds to raw norm sqrt(p)*h_in, so its physical comparator norm is sqrt(p/Z0)*h_in. The discarded outgoing m<0 mass is bounded by the larger m<=0 functional, giving r squared>=p(1-ell squared). This directly yields equation(3) without reusing a nominal actual-device runtime theorem.
+
+3. Since p>=p_* and Z0>=1, replace p by p_* only in the normalization deficit, split the square root, and bound 1-sqrt(1-ell squared)<=ell squared. The coefficient sqrt(p_*/Z0) is at most one. Thus the existing E_floor allowance receives only the new local exponential, h_in and ell squared. One actual omitted spectral vector and one physical-halfline normalization are charged. Reference second/sixth moments are not transferred to the actual mediated seed.
+
+4. The scalar all-late lemma applies because lambda*T>3.09e-18*8e18=24.72>20. Its h_in<1.7e-6 and h_left<2.4e-6 hold for every t>=T, not merely the weighted comparator's finite interval. Source exponential coefficient c_R*C_s<1.053*9<9.48 and exponent lambda*T/2>12.36. The positive Taylor partial sum at3 through degree8 exceeds20 (the exact numerator over8! is806769, whereas20*8!=806400). Hence exp12>160000, exp(.36)>1.36, and exp12.36>217600. The rational inequality9.48/217600<.00004357 is strict. Adding .000409185+.00004357+.0000017+.00000000000576 gives .00045445500576<.00046. Monotonicity of the exponential and uniform scalar bounds prove the all-late infinite statement.
+
+5. For T1=1.6e19 and g5e-8,2g*T1*(6/5)=1920000000000. The old rigorous sinh1<6/5 remains unchanged. Since exp3>20 and exp2>7 (its degree4 partial sum is7 and omitted positive terms make it strict), exp11>56000>30000. Therefore log(1.2/.00004)=log30000<11. M1920000000011 meets the exact cut condition. The finite g-only compression with its terminal cap is the checked construction, and adds at most .00004 to the complete error against the unchanged normalized infinite packet. No output tail is silently renormalized.
+
+6. At m12 the head, qubit and edge offsets are354,359,355. They yield1920000000365,1920000000370 and1920000000366 respectively. The block ceiling2M+514 is3840000000536. The source path's120 heads include the existing port once. Failure effect<=.0005 squared I=2.5e-7 I and unhalved channel bound<=.001 follow for a single chosen record read after unmeasured evolution. They do not control repeated monitoring.
+
+7. The old/new onset ratio is exactly125000. Receiver ratio exceeds120000 because120000*1920000000011=230400000001320000<240000000000000008. Comparing.006 to.0005 gives a12-fold smaller upper allowance. These are sufficient-certificate comparisons for different double-onset windows and truncations; they are not observed errors, lower bounds or an optimum. The new numbers remain enormous.
+
+## Verification limits and exposure
+
+No correction required within the stated scope. I suggested testing a full same-device transfer after the scalar bound was independently checked, without specifying a desired threshold. I did not author this composition. My check reconstructs its normalization, physical term inventory, exponential arithmetic, finite cut and counts; it reuses the separately checked baseline interval certificate and unchanged inherited mathematical machinery. The explicit Taylor numerator above was derived algebraically, not by a scientific program or dynamics run. No new root solve, simulation, quadrature, sweep, physical calibration, blanket Lean check or retained audit occurred.
+
+This certificate changes only the sufficient waiting window and receiver truncation of the same infinite model. It does not improve exact coefficient supply or prove native blocks/diagonals, preparation, Record identification, practical time units, finite permanent halt, autonomous capture, reset or reuse. The distinct C_decay/t theorem is not used. Earlier evidence remains intact, and no editable prompt was changed.

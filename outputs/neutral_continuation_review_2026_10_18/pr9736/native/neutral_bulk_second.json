@@ -1,0 +1,554 @@
+[
+  {
+    "ell": 3,
+    "edges": 441,
+    "rows": [
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        ],
+        "coefficient": "-5/2"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              2
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              2
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              0
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      }
+    ],
+    "elapsed": 0.10730290412902832,
+    "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+  },
+  {
+    "ell": 4,
+    "edges": 490,
+    "rows": [
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ]
+        ],
+        "coefficient": "-5/2"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              2,
+              3
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              2,
+              3
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      }
+    ],
+    "elapsed": 0.13552474975585938,
+    "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+  },
+  {
+    "ell": 5,
+    "edges": 539,
+    "rows": [
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ]
+        ],
+        "coefficient": "-5/2"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              2,
+              3,
+              4
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              2,
+              3,
+              4
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      }
+    ],
+    "elapsed": 0.16867804527282715,
+    "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+  },
+  {
+    "ell": 6,
+    "edges": 588,
+    "rows": [
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ]
+        ],
+        "coefficient": "-5/2"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              2,
+              3,
+              4,
+              5
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              2,
+              3,
+              4,
+              5
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      },
+      {
+        "sites": [
+          [
+            0,
+            0,
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ],
+          [
+            1,
+            0,
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ]
+        ],
+        "coefficient": "-1/8"
+      }
+    ],
+    "elapsed": 0.19902896881103516,
+    "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+  }
+]

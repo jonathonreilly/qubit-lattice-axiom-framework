@@ -1,0 +1,1216 @@
+{
+  "original_head": "89d8e5956e3d76daa455e694f61161d119f5453c",
+  "original_versions": [
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B11_qubit_circuit/FINDINGS.md",
+      "sha256": "fcaf13d639bbbb4bcf92e00520961a4c6fd5dfddf85207f8bf71a17ed4b0d629",
+      "blob": "7837cb1d9c3176fe9db31c9e470f6d9c4199b1cd"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B11_qubit_circuit/Wref_check.npy",
+      "sha256": "83b11ca0edb734c5262738b799677742e254baa3a9d29bcd847414a359004a82",
+      "blob": "41c78ca66e9fe8e5d91b1f8d26917378e8d5bc59"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B11_qubit_circuit/circuit.log",
+      "sha256": "4cfe42771ff1c448ba698044f45273801b42abec4277871349bcad31816fb062",
+      "blob": "5df5a9fd92c0e307a42647f68b711b048b5f5091"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B11_qubit_circuit/circuit.py",
+      "sha256": "a25c845f3939ed2c33f2ff09ed983df2b8f3259d585d577716da757a304e925a",
+      "blob": "92cb476a04c0b3e62c4afc07faf6845dd82e59dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B11_qubit_circuit/exact_field.log",
+      "sha256": "4de26fb31ef985ac9af97ad5fff8e6b4097cc9c235e08d227f84759e6f5ad8dd",
+      "blob": "2c8dea2ca816e976ddd92e2ce07789bae2802654"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B11_qubit_circuit/exact_field.py",
+      "sha256": "f136a47f72a4358d3d639bb451246543ab37724a3cc9b6cc9f875487206c11cc",
+      "blob": "08f986959cc4ce0de0cb3ae5b38b8f1222a8328e"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B11_qubit_circuit/qubit_part.log",
+      "sha256": "042903ff3ccc1d34df32aab7cba577ef2e5d7d8a60ddf63cacd9ce8fe3e0fe49",
+      "blob": "3ac69258a3b757af8305538288abc34fa5e92ef8"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B11_qubit_circuit/qubit_part.py",
+      "sha256": "a07bc92f8ddc2bf6758f71bc24f5c06938e4b2d48bd6cf48b7fa3320f6b30ade",
+      "blob": "b223c349b934a52d4cf97011731d0e8eba6d1373"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B12_check/REPORT.md",
+      "sha256": "eb8632a7191b2bb1a5f063b296eee1a04d0ab4f9e00198af332e78885e50ceb2",
+      "blob": "0070b00d7b7696af49de05e637f964130adf36b7"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B12_check/b12_check_2d_weyl.log",
+      "sha256": "f0f213b42c2f146a502daba5e6b99dcd40d9a0e681d8ef636a90f19efced38a8",
+      "blob": "321e453489845a6bdf565a23596f97d87601b6c8"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B12_check/b12_check_2d_weyl.py",
+      "sha256": "d33c1c5ae0ae87ac6d57200af95dcc6678c0f5c9001d8e538255b058813aecac",
+      "blob": "fc5fdfd62431a256f7e2b5ed12bec8fa8a5720ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B12_check/b12_check_tadpole_hk.log",
+      "sha256": "5762dccb48213c162fe9c9d479c56f3e201aa8291830a78aebd86649ab79d5ca",
+      "blob": "03accf19980f2b6d240b42734d4ee2714c90f4fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B12_check/b12_check_tadpole_hk.py",
+      "sha256": "226528828777f4bebd713928b56e1740b19efb38e17badb8906c0deee14eb744",
+      "blob": "ac7e170f0d58ffb1aa27e3dce21b1e3a295ceb25"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B12_native_lambda_ratio/FINDINGS.md",
+      "sha256": "d240d48cdd35858f3407c85cbb754efe93803abb962e391e49924c8038bfc60b",
+      "blob": "13574837a297345973ca12fac12453981e6ee897"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B12_native_lambda_ratio/b12_lambda_ratio.log",
+      "sha256": "c9c2784aabd33939c08a6653e0c2d3219dde49d3ce086e1868be9f4e54969d77",
+      "blob": "13cdc7aa8b821bbfec7595e9b04696c99359c689"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B12_native_lambda_ratio/b12_lambda_ratio.py",
+      "sha256": "70a902d1ec956bf5e289779b3302af0b15b82fbfadb3633b8c54c18add7907fb",
+      "blob": "8451bd158b00e1edbf21f457b517f51d907155dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B12_native_lambda_ratio/b12_literature_compare.log",
+      "sha256": "4011e01ba340db4a1bcc34bfe0bd445ae9a46e5703280658f766943c1138fbc8",
+      "blob": "1e936fd9e1fccb8258950570076e2198a6e6ff85"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B12_native_lambda_ratio/b12_literature_compare.py",
+      "sha256": "119f97f4dc9494b11546e132e0a8d7201b16edcd372a393c545e7feeecc7cb9e",
+      "blob": "3cf3480d3eeb4c677e033fb40d0da8ba162fbe7f"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B12_native_lambda_ratio/consolidated_runner_2026_10_18.log",
+      "sha256": "62f3c3854120fa8f270850182c824fe522cb65a5847ea857647f289947cedaa4",
+      "blob": "ee7cdea06f38613d05b0abc8ac182d3c2734b298"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B13_ring_model_phase/b13_analyze.py",
+      "sha256": "6040f2c0a199ff9e8f51dde9dcdc6fbd0417f7d8fc1143bacc47a13b5feedb17",
+      "blob": "d64f400e57e5fccb0b66a753fd7d8149cbfcda50"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B13_ring_model_phase/b13_scan.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B13_ring_model_phase/b13_scan.py",
+      "sha256": "e0529a5ec26054631c6420397fb357922b0660d72918e9ad910a3816a6a06eec",
+      "blob": "360834a7872952da87e563d650d9a28c5cae9d4b"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B13_ring_model_phase/b13_scan2.log",
+      "sha256": "14ca26f55b404e819e9375f8463a20606db7360723ae74e22d7deb8f693e9e45",
+      "blob": "f551f2b9e1f99f9f0bfc466d2c3b7d607dd35fbf"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B13_ring_model_phase/b13_validate_2cubed.log",
+      "sha256": "4b6b3ef50536b99ce3ea886db12d969f69f1c283858ffd99fdfdb5b9d91909c5",
+      "blob": "5a3508ab42b063db42ab3f8652df50aa081d3dbd"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B13_ring_model_phase/b13_validate_2cubed.py",
+      "sha256": "2fc31a2822298ba2bd564ceca4e594630b6e7ff9fd09011e7f35a425be4e2367",
+      "blob": "26d9a0bea6a823c72d19e8d053e490f1a75a0665"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B13_ring_model_phase/b13_validate_2cubed_results.json",
+      "sha256": "3ab7780e7ee08674a4b06ccd006839a8ac305f5cb01e55cc12155aa8a1c29803",
+      "blob": "7613bd2657589db27b2a316320402e38fd31fe9d"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B13_ring_model_phase/dmclib.py",
+      "sha256": "b1944d718b85a008479fe60d2be368724d9d9f39425986cf3bee609f36da5ff2",
+      "blob": "9dd1c90ff3b67b8b4e0d7b997ece796b1c58593d"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B13_ring_model_phase/jobs.txt",
+      "sha256": "5526d358f6a2e99604c244aad0546ea1a8374e2db19db8d864f392613018a779",
+      "blob": "b6060fd94aced130b8597cc32448e93c5d8e91a3"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B13_ring_model_phase/jobs2.txt",
+      "sha256": "bd06593baa03b7f04fe4185a474beb2331af9186efd487e489ec230944726f57",
+      "blob": "d1377fb663c53ce6789e4992735304b88a0ae03b"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B13_ring_model_phase/pqmclib.py",
+      "sha256": "1d362c8185dd61d7d314282b5007b2e80fb39e3d77dfe954be4d7953e3a6d6cc",
+      "blob": "0332958811af72ae4e8ed564d045e79f80954de2"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B13_ring_model_phase/results/L4_V+0.00_N4000_s1.json",
+      "sha256": "0c5781eb04d1763bdfa41fad7cc2095ca4d7ee294eb9f1d973b5f9c4970cc2e9",
+      "blob": "04d1e40fc2de3d05e83f1917ceb5be76f4c63192"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B13_ring_model_phase/results/L4_V+0.50_N4000_s2.json",
+      "sha256": "d262da0eb8c52887545ebe617576b728c052f0cacfb268116d3ceea86770f8ad",
+      "blob": "3948e1911ad3f3d877c81f8fae227f508e2b880b"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B13_ring_model_phase/results/L4_V+1.00_N4000_s3.json",
+      "sha256": "3558358e6760ccafac5908e18abb87b0d59aa4c2a4ddd9b0a715187bc0b1afe2",
+      "blob": "d18d7df7b22f422ec0790c566e90f79c1a4770d3"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_check/check_item6.log",
+      "sha256": "1c53b8ca93c626d4e910d18d2317bf0619546ac6337176da1897ca641ae2323f",
+      "blob": "f8cd6f8c1a83c339b6e35f4ef24c602cee8f2a82"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_check/check_item6.py",
+      "sha256": "e3bfda9cdc23cf9d56c2766d664de8915c8edfc15106c20e04afd58cc16d9f6d",
+      "blob": "0921603a95f76aed383667b8201592ec14fd9da4"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_check/dp_vmax.py",
+      "sha256": "be467bf1a15767273b85cb5a51707bf66030a2b9415214cd5cbd19c2d83a09b8",
+      "blob": "e7b878c6654258929efa699ca1a5e1dbd890d8f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_check/necessity_probe.py",
+      "sha256": "c3cbf16da1293e07b4ada3ffeafa87988f1f916a9a97000b525c4a770c6fa4a6",
+      "blob": "b942bd9f75a0d7c084e5bcc3af4a95f941abcdad"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/FINDINGS.md",
+      "sha256": "ce8643d166b0a41465a361c7e13f8b27e0510eb84c04003f3734890d9aa959d1",
+      "blob": "e683e7f94ba6cf948441f24d5b91652829867b7c"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/S_110_0.npy",
+      "sha256": "69759436784cfe70b076275b1f235d65f50248dc83748c0ab32802dedf1ebcc5",
+      "blob": "37d85859acd8ced6f8fb89af7bc60dfe8b4b9e7b"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/axis_pairs.py",
+      "sha256": "9a8352fc5f10341ec7578565f114afc5d8efc79801d97cfbeeb290056dad5978",
+      "blob": "dad1e13be13415ad4ce1f5540259826363ca991f"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/best_weyl.py",
+      "sha256": "63017eb05a690fe5d50956d1b40558ab0ee6f66fba07791d76a427cfd0be6038",
+      "blob": "a4f38f3240b3c48d9facb791231e1e081964296b"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/best_weyl2.py",
+      "sha256": "f22f5da00063c8f2adf12be287240c9bb245b6a3407f22a8ee0f120eb86e235c",
+      "blob": "09d556aa550c1c0a4ce97868738ca00124fc4759"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/clean_rank2.log",
+      "sha256": "3c135baa5b541f3d151d28dc9e0f7f6d76c3d4950ab9f21ca81a80785c56b1a1",
+      "blob": "035dbb351efb51d3d5b0e066280cc48ceccce44b"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/clean_rank2.py",
+      "sha256": "b60ba2ada8be650f5c8624bb17fd9f73728e1c5d1bbb2941d161d30d4c335be1",
+      "blob": "392f71067db813974f5d0bb51fbb3728872c8dc9"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/clean_weyl.py",
+      "sha256": "6b5ff64b37c5d704608d1158a1f37fd27e39a4dbca8642bc1be3f72bc5eba1dd",
+      "blob": "33383df3ecb1970bb16b9c16d084320335f8f3b7"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/clifford_family.py",
+      "sha256": "88fe8e0981fdef6260f84b3ed55869cf2bc34a53eb49944349a2925a00ad54ed",
+      "blob": "d58a65e839b49c0fd3a1867c2168a46383e94cb3"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/cone.py",
+      "sha256": "251f025ab8bcd91b0bca6258f2e5e0e0fad74bdc94404ad753031b5c7cf47cf9",
+      "blob": "44912f2978327d3decb71bfbd50938e336e0acf0"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/constspec.py",
+      "sha256": "567cdead84a0c6f0ff73c1c2b7c41d664c9cade46c3f4d55bf0ece3daf80aa99",
+      "blob": "40d825c40bdbb7afae5b4e3ccfe4b361ac393662"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/corner_walk0.py",
+      "sha256": "64bde0f1906a7b1c0a26a59d85155f5258c10393c510985cacad00a56a617717",
+      "blob": "8e459525d13de5217cf37a1630030790f22082ff"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/corner_walk1.py",
+      "sha256": "acc847500aa1da1b97e6092d75f896f2139cf0390266e44b11a4a7b09c2f8a32",
+      "blob": "141e0bd01d85f14cbed1cfbb001cb2658f23337b"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/corner_walk10.py",
+      "sha256": "247c7e59d5dde2f0b330919390636412bcac2d6729765fef9c79666380476380",
+      "blob": "f33baccc0020dd39e09b4e5eee450adfdd154228"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/corner_walk11.py",
+      "sha256": "fac8e9462207610eeaa46004ad43ee1df13a2f8f1cd2555be1e9eba762c46acc",
+      "blob": "d25fe830c1661d739b0b1fe1c7baf4d7edec4f17"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/corner_walk12.py",
+      "sha256": "d99d7d845bda1dcb10d14a0d3b7087778ed82073fb0f849c9c05e69a927920b2",
+      "blob": "c360b019148811776a850819c07cf7618ecb3792"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/corner_walk13.py",
+      "sha256": "8ac39fecf445bfebbd0df13df5201856f46fb43ff2a182cee7b8717fb5355170",
+      "blob": "d73c21ff11382b97a406917cd80b91b381b9aedf"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/corner_walk2.py",
+      "sha256": "81c0ec9a6164099f711a7d148cc37e2239c9271f18340359f294e0cdbc4611ed",
+      "blob": "b0747de42b336f3d302b5a1b67121976de9355ef"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/corner_walk3.py",
+      "sha256": "f5c20d9ff71c959145305567f5a2e2ce9942dafb5c08b74b5cd665392f4501a0",
+      "blob": "064268787c35b2e15b90269018bdbddd087961ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/corner_walk4.py",
+      "sha256": "b87085cc3990cb6864e8ec062e47b8ba9fc7e013e0071e6cfaf45d9c046e6a95",
+      "blob": "729c97382df9f21162c225f860e06b0d3c7a5027"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/corner_walk5.py",
+      "sha256": "36d195d860b360a0c6dfd7e45e410235f9b73a27a5a65d3d3b1d1104f76c4742",
+      "blob": "f58e3324dfad8074ab8aea088f25d416fa79873a"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/corner_walk6.py",
+      "sha256": "e72a6b13badef8d01bf59e00b3b6813ec5f415f90eb8cc90a7e938f1964ddbc3",
+      "blob": "0796f000f9f090ff34f15320382128077718ca85"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/corner_walk7.py",
+      "sha256": "f73b50be065d2ce82fdebd1e18d6aa8c2bfcdf0b0ea83843a8e7e2b25f210938",
+      "blob": "2e4f64e758ae02790c04cd88af88b0f6b3cfbc48"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/corner_walk8.py",
+      "sha256": "d52402fa1fe14b9c33ff77e63dff7417c3d1e0136189985cbcbfb9821bb43f68",
+      "blob": "fba5867407615764506cc15ffd882bf19af8630a"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/corner_walk9.py",
+      "sha256": "4f93f51636749279e8ddcffd8cdc935800450c82fca71150a13f6df306ad854d",
+      "blob": "ddce7292fa8e2fdcd861f1f2c9fd0ca54cf4da9f"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/cube_scan.log",
+      "sha256": "56736b82b0a283ba5c4124b22aded0362a7620d1ec56362f5db96d7ca12ff2be",
+      "blob": "b921c3e93a95ce90381bf487fca43f02d8c01821"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/cube_scan.py",
+      "sha256": "fe7832c4e05d1fb4078f983def11ef085c1fc0dd98a984093725a3235c83303f",
+      "blob": "69e54e22fad566035c5e4cf4a87326c2676d6ed9"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/dbg.py",
+      "sha256": "18bf6fbcfa0863f4e9e2472d7c502fe10bf1b71aee71b44e6be589ee736b450a",
+      "blob": "ac5b84cdbfd2b743942776393305da54b8232960"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/dbg2.py",
+      "sha256": "084e91f664f0fd455e36c37b1f00fbd5587445febc429f2781a038c725c8d016",
+      "blob": "1cacdc8ca6922790f88ab952344f3f7699066463"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/dense_check.py",
+      "sha256": "ee08d2c17fff836fe7b04ea7b13f6102158abe6085bed48fffb91b4b4c55540d",
+      "blob": "8f15b7ab8a84bad5bdb08c36ff5daf3d98d59868"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/expH_search.log",
+      "sha256": "f43d4306499b48cc3accf2cc12816f5798518db75e507194f645e1cdad214f91",
+      "blob": "37313d1cbd015e380319f51dc96ba5783bac580d"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/expH_search.py",
+      "sha256": "dffb6f9034d7b508cddc3b168363dcf02c7e18c9e0e8c10883944b33c5024e97",
+      "blob": "de8bc17b8b4a40f344ce19d025989fec78e1469b"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/gapcheck.py",
+      "sha256": "bbc460e691945611f663cd78de6030530e1eba72d6af64c9c10332ecd8131cde",
+      "blob": "9af314f0bcd9c570ed95dc98f3e618202fb75d7c"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/gapcheck2.py",
+      "sha256": "ef36e0ed8a38d78f8513c16b4507a3fc05705cad92241ba67e82f5d9201ad5a1",
+      "blob": "5788d9a95ad61e83f544a5e0afb697991468cc7a"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/orbits.py",
+      "sha256": "89074a4ae903846eef9c0b19e785f4b00e87765b5e8468923737a224c1f3dcd7",
+      "blob": "8b1deed07961273848f750ee661a05eb62741d8d"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/pi6_search.log",
+      "sha256": "bf0f94ceaf8b3f012b344afe3436413c027e98c2605ab8ece9e07be1bb4afe11",
+      "blob": "28ce862233a62aa91a014d1f290d3445e57942ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/pi6_search.py",
+      "sha256": "646b2223820b20c81f7ecd55a7aa4c2d4b814166536a2de56580bffe987cb100",
+      "blob": "3ff8f5b04cfe11da0103d03013f8a783c2f16ac7"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/refine_H39.py",
+      "sha256": "b65823053573fa79b4a1705c4fc22801ac94e0aabc90b13170953167f0e319b8",
+      "blob": "cc8f9fce040cd5efcc98daa0b91c23ee338de208"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/runner_PASS18.log",
+      "sha256": "aadf47c9cac855820b3c889d90927dad5707e288ced40574b676a549e01a1fd6",
+      "blob": "8c79c1e53d3eb74e9d691f9c4d75813702be3d7a"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/runner_PASS19.log",
+      "sha256": "863fb3213cd0c8ac743474a3794da33a77df88ab3d94cd5736c85b8f0c791ce1",
+      "blob": "c4a9efb2807c72a106e417f8d263c9aa50fbca25"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/runner_PASS20.log",
+      "sha256": "fff384f86340303b54c1551d8e04e27db0a9888bae23163fa117d205bc46795c",
+      "blob": "d4a5a5d80278fff68236c3fb25320f9a02cb0a86"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/shift.py",
+      "sha256": "7555a6660dd2e0174b26c46c76d42003e40a1adcf5341b236f0c7b687f279155",
+      "blob": "e172b82cdbece87e6bd75e7ab6466e49a3341c6b"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/shift_clean.py",
+      "sha256": "87bbb511058daa35f73e2e894844c4e47e5c3dcc85c06d7563e775395017d485",
+      "blob": "5367d0067798a0e0d3c14546702bc57cdc8307dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/shift_walk.py",
+      "sha256": "979e2bf41e1f34ab29bc03c9d60641987ddeb2418bc6d5350938d7a056da7c0f",
+      "blob": "0e12e2cb46cc5d657db91b4756a88cc4abe2d88a"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/stabilizers.py",
+      "sha256": "0269bacf012ee0f58e5a42a012ac30b10a94a65451b693eda99670d1b2acefc2",
+      "blob": "3758219b2a91e4bf1ca87d1b23fff8e0d2374c33"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/walk_b.py",
+      "sha256": "8c6915254cea07e5a426d2be8071625cb8e1f0c817a76eb618d8173d3d11d7b7",
+      "blob": "fc69007e327116929181c5551882ac2b5c92582d"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/walk_b2.py",
+      "sha256": "3188024b2a0e8e8afa415bfa153784f730b3cf57d054f2662c23b7294ffad340",
+      "blob": "b376ea708d3171a03d7e171be04fb4eee8be9ba6"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/walklib.py",
+      "sha256": "641ab3205352be9de12d95493b56295c0d4a53595b7f358bc6ac998325f930ca",
+      "blob": "7bab741ef2fbf8d2a94c7616cb0f1ffba9a11d1c"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/weyl_qca.py",
+      "sha256": "7d74de79ec560cfeeacf6fa40d9c1c9a0a1f38e1d69c0cd96c88734ce6f3404f",
+      "blob": "05327993ca18042537bf9627a666657baaa7813b"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/weyl_qca_corner.py",
+      "sha256": "faef0680e1f5b3809f854c41090ac15398384b6bc8068bebf4bf386b7af14039",
+      "blob": "1c5b91a74b988f33c492bc1fdcf0f81d29c3a6f7"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/weyl_scan.py",
+      "sha256": "d0d7c977e516d8be99f7df760f0976b52458eeacd6c94fa8223489649e435797",
+      "blob": "3944b725187be880cdc153d0a3a10404ed7445dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/word_search.log",
+      "sha256": "b2dcd85f067799129160f169c6235430dc058693e9d45719b85d2fd5d184c6a4",
+      "blob": "f2145d64331f7746960cef3b93fb652a2abf8dc4"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B1_parameter_free_corner_step/word_search.py",
+      "sha256": "f23eaa13b015b673676bdef1ffd747314ab92c4f8e0af423c0f298bcad6dd843",
+      "blob": "5a1a9241582f225abfd8f40d6ba9ef1526797a82"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B3_check/REPORT.md",
+      "sha256": "298f09f4e54d8ee394b615dca40b37d8f7243d9d3b878000bc6765bc6947aa6b",
+      "blob": "f2ea9f5262d5e13ab30abb26de71b2953f89a30e"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B3_check/independent_check.log",
+      "sha256": "e24c81434dd63415dcb1d234e619dded39cae802ec61ee82465dcf31b1ac053d",
+      "blob": "40b5e61aa6954f9bb9493e7c1abd1b2341059c72"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B3_check/independent_check.py",
+      "sha256": "2f5fd993e4487336fad954c85459d06db28b7d1cff2dac8afb753b897bb07fb5",
+      "blob": "76a51e2b14ae219b95597ec17f5428a045e35a9c"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B3_formation_coding_radius/DRAFT_NOTE.md",
+      "sha256": "ee020031783e23dc372dec5a22514fce9990a05bfba9a1b024f13243afb0ebb1",
+      "blob": "51bd7f0ecdbdcdbe7eb01f826f5cf66cf0439c57"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B3_formation_coding_radius/runner_formation_coding_radius.py",
+      "sha256": "4d93583c0cc18f803fc690b72fa75d58cf2bb9f647a15d61439516b7a7cd6aab",
+      "blob": "62ea5971aeb18539b9d335fe7aeebefe8fa1552c"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B3_formation_coding_radius/runner_full.log",
+      "sha256": "5b3039645f424f8ff4d8846a38437434f08498d3ab1e5256ba74903a80f65c14",
+      "blob": "095eba30eb6bd10992cdfdaebb1d735a181ee570"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4_check/REPORT.md",
+      "sha256": "8099381fee57a592ed24d44c9c4e6cbdf7104035d7f0a3c966acf6051b495efa",
+      "blob": "481696fb8c61d6d6d3cca24096ecd1579b624d38"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4_check/check_a_forms.py",
+      "sha256": "72813e8c3bbab93a1dc4cf18338fcf11a176eb02d5e0fc2efdfd6a44696ef404",
+      "blob": "e137f5cad40691dbd74319f81998ddaabb5fbb0c"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4_check/check_a_forms_part1.log",
+      "sha256": "60230ffe1d9c8eed6449aa302e3415f80ab13a7a56c96cded25788a8436311f5",
+      "blob": "41879baf904e8f1c4d871fe954f5be081331c184"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4_check/check_a_forms_part2.log",
+      "sha256": "2eaaaa0041d81d2e4949a48a946672de655200e355414b9ba05620f91b9a0f0a",
+      "blob": "19d1cb1317f303c25bafe6e300a1e62eb5f3106a"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4_check/check_c_closure.log",
+      "sha256": "3a6c65aa67f1c2d78927c7b282dec8943b0a04ba57134bc884d4b9b46a59aaf1",
+      "blob": "a56dbc8b4f211875b83da93f56df5dc3f78fc7a0"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4_check/check_c_closure.py",
+      "sha256": "26c84f9ba8560bae97ef3b916a66554bc50813ff2ff2580d85988242dfbe653a",
+      "blob": "9961a25c981cd7fcad9a5f8347ad6c615ddeccfa"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4_gravity_g3/FINDINGS.md",
+      "sha256": "6c9a27fd59f9295f79d01ada83346a2aaf74c2b3100eed94d914a06240224c3d",
+      "blob": "cc18ddfafb0e07fa71565c0320204a1b10a6e079"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4_gravity_g3/b4_curvature_member_g3.log",
+      "sha256": "07b087a1e8afe610b9883bd380f27a4ca10090f766d281da1c5c973a50874c50",
+      "blob": "b3ee513b1f7e59c749f3023af187228524099014"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4_gravity_g3/b4_curvature_member_g3.py",
+      "sha256": "206e4d8b9fe90fec47099b174dfb881ed9de684f0c46ee2f455dfe421184f65a",
+      "blob": "3cf7d852e54684d27a905e287d26e9339d90bf3f"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4_gravity_g3/b4_regge_background_metric.log",
+      "sha256": "f9c8cde818e38ca2b4e1985e72bb06df07f64d767f23715cc49d53464c09b976",
+      "blob": "bdbdd57de581b95421d3a3d1e29fa256f433d6ca"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4_gravity_g3/b4_regge_background_metric.py",
+      "sha256": "b0cc87dddab1cf7b4c0909ed0525d1740587c7d3abe997c1775edae6428fe3b0",
+      "blob": "ab38cd32066d0b5690b6a31cdce4cbdaf72a7b74"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4_gravity_g3/b4_regge_symbol_g3.log",
+      "sha256": "1bf7f9b46a15c5aab52695391844f3a7ac9286748d4b5d275c717c659fa7de35",
+      "blob": "8ced93ead5cd98db9229313cba49088b688bd630"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4_gravity_g3/b4_regge_symbol_g3.py",
+      "sha256": "8085ef2ba6c1a63f9f297692de0b3d942ca11972afb22dc19c06b604e809a503",
+      "blob": "b717ff5fd166c98d05e3d7e4079f0dc12dbd2ec5"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4_gravity_g3/common_spin2.py",
+      "sha256": "b4869f7564412532b9d4b08a94bd5832324a4b588773e91451032d240a362a1a",
+      "blob": "594856f1b7a8424194529fc29fbe8bac07c9d253"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/M2_m0.250_N28.npy",
+      "sha256": "1e23e9c350504149a9e2290ed652264244937daa8ea5ca1b8f09000355cd14b9",
+      "blob": "bf4c79a0a01a290854c5d0985dc355dc034e52dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/M2_m0.350_N20.npy",
+      "sha256": "a109cb0a5724c95135303a5f45d6bd25572c755671a15a5574b1f0bc28c65c50",
+      "blob": "57a4f79309c8eee9990d184a5cffce001a98d224"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/M2_m0.500_N16.npy",
+      "sha256": "9871e49e126937539ddc152a2927267452e4bd3431d40804c6dc4ff911562086",
+      "blob": "437f4fa0fe582b94fe559fcec81f03fc57a7e326"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/M2_m0.700_N12.npy",
+      "sha256": "0261b70b155e84b1789fe6491ef537fb82b21c97cf2cbf08558fcc1ae35532e4",
+      "blob": "5bb51433f864f8776ff135b497d7b910ffcfe236"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/M2_m1.000_N12.npy",
+      "sha256": "28c5d78aa29dea4eb0f5e589613d5fec9a7ebbfe0922508117972399b0bbe7b9",
+      "blob": "88c7acb75b0c23dca55c1bfb335fe8330f4421a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/M2_n.npy",
+      "sha256": "08d762584ab2ef41462eb63c417ab137204ad531092e0d06dfb3af752b413156",
+      "blob": "4779be85abe629fa2786951fdd34d93f1e35c6bc"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/REPORT.md",
+      "sha256": "54be0899cf97a6390cfdf687a09b617b9fa8cfecd7bfa51894251853ba8a3a23",
+      "blob": "424b26c28e7602137dcb86a97c2b73f5f16d3c70"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/Tmeas_m0.7_N12.npy",
+      "sha256": "8383610099144b2a4492cc7d975952d02cfd467882ef15e8f07d453d58f5a0c8",
+      "blob": "fdbabe3da078d370fb054907e571d2635dc05f55"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/check1.py",
+      "sha256": "1f2596a49f614ce9d3e4bb6287c7b0c545b4800c89ecb76d42b4f0366c321311",
+      "blob": "bc50f133eb97ab411daaf21f0c4add0959212224"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/check2.py",
+      "sha256": "84f6eda3ec57ffa011d9a1bfff5c9031c4fd0c2725a9a0f1b363042515721ef3",
+      "blob": "1ad5aa5140bccf69a9d132023154f291c03c0896"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/check3_b4.py",
+      "sha256": "04493b3917397dc00ea77bb82d9c6f51250fc0e6de248cd9cfa5c3c4642c243c",
+      "blob": "62238621bd882e80b54efbecbb92dd36fef84305"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/check4_mass.log",
+      "sha256": "8a8ee2936350e3ebf265a52351bb7fd43041c9568a27cf8ab890ca9999f148b3",
+      "blob": "54d6cc1ca4d42b8394034ae1e3362bf2b00d77d4"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/check4_mass.py",
+      "sha256": "2757404362afe632f585f48480c9bfac0a0ccd28b924b64d877fbda557969668",
+      "blob": "403272f556b8a9c3fa96c33e2877f0d4c744fcec"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/check5_ct.py",
+      "sha256": "5e8bd0fc31162e56c196d5be2d1692682bd12cdbff9c710377610713cdfac361",
+      "blob": "79189a4e05b2bdd411a3b21adf2e8db05ba5c6d7"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/check6_2comp.py",
+      "sha256": "0fe5e1f01ada89c3fd6abb1b79e01732591fb72b5640aa2ee4eaa0850dbcde8b",
+      "blob": "c87d9af6f687844b1f9e57a83c5a04e926133afb"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/check7_S.py",
+      "sha256": "3c71bd80dcb6945de7d42c0fe93c33f1b43c0ba0375f97d358f7b15fffae1887",
+      "blob": "9e633470dc27abe5be892a04cfe65641f83ee9b1"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_check/indep_bubble.py",
+      "sha256": "aa08ca898d4f8ba122c5e0215c9e789fadbbb6aeac5ef776a61720ab0eb66191",
+      "blob": "cfb3be0bf24be1fba6e6311c9ff2407aafbacd52"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_induced_graviton_ward/FINDINGS.md",
+      "sha256": "3b5a79591955a39f6f555ec6d36943331f6b8b2dcf49682df63daf5c8746d492",
+      "blob": "3dadc939068486e9a571834fbc639835213cdc2c"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_induced_graviton_ward/b4b_variantS_and_mass.log",
+      "sha256": "0e91fab8ab97fa8d6566fb7c841abd682863fe3d8cca86181d29b7dc99342779",
+      "blob": "abe9fd9e055c4a1cda87d4f717f1dc425583d35d"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_induced_graviton_ward/b4b_variantS_and_mass.py",
+      "sha256": "0efc206f75e1fafcccfa36b2412aeaaf264b700c85bde0adc9944eac1a26aea6",
+      "blob": "0474612cff518d76d0499553602557d49c0b91a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_induced_graviton_ward/b4b_ward_symbol.log",
+      "sha256": "90a96efd30c1086426c5e2412a46ee7b9d0641056d8b9d155ac3e437eac35ffe",
+      "blob": "33b709b420395891bfbe862e28d0423ccebd9ac1"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_induced_graviton_ward/b4b_ward_symbol.py",
+      "sha256": "5e03d994b614f7779b0b4af9f0cadf9083b8626598797a7059bb568ab7e1c40f",
+      "blob": "bd7d1809b272b062c669a602fc79bc7b76b2890a"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_induced_graviton_ward/stag_kernel.py",
+      "sha256": "b2d1cccdee2759747f021c2a9019369486e598d806c7347570d64d5f5b0f271c",
+      "blob": "e248fbc7d5b1bc98a4a3edbbd37c4f3e0926ea04"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B4b_induced_graviton_ward/symbol_T6_D_m0.7.npy",
+      "sha256": "9febc6faa52287999cc10afe2bc36bda4139f0c46b09899dde2816aa5580b76b",
+      "blob": "e16f877743c954f30231d1e85adcfdefcae23195"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_check/b5c_emitter.log",
+      "sha256": "d3f59edd8b1b8317884a1311880d29020e9e357fb9a93ccd95009203b655fc4f",
+      "blob": "9fa1c30e30851c8a79e6d4a7b01d2fc1920b16f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_check/b5c_emitter.py",
+      "sha256": "af2464ba73ab582d14fb3982baa99e91ad0d836540e66db06550490df27a7d12",
+      "blob": "418031e00a924803bb9ce02a133133f709b21048"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_check/b5c_fast.log",
+      "sha256": "b68c4ae03aa336344fa915795339832ea4998d609c3c6e5d21cff60f81a0112a",
+      "blob": "4b785e785da9a65f1402dcfe64ab60e0b861613d"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_check/b5c_fast.py",
+      "sha256": "d956911e0d31a6dbc81247acaaf51f9698cd26c818178475f225aac8d8e18ad1",
+      "blob": "1d9a25afecf31cc5c85bab54d20577b773b595c8"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/FINDINGS.md",
+      "sha256": "e4197eea1da476477be1d6247efa1a78bfc15c399a693eb4053da63fde21a5bf",
+      "blob": "739c397c30e8290c53a4661c8215c644dbe46042"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_adversarial_mediator.log",
+      "sha256": "bd7e9596ee4b324741a4ce32edb2e377d13ec6db9478407e5697419321bb546c",
+      "blob": "b4098c2e0fcdfdcd000f77269d81b55c5c8f2102"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_adversarial_mediator.py",
+      "sha256": "38d61bda341fa5ed6946e467b50138ab7b6abe3c69844a239ecd7ae7d622d447",
+      "blob": "2ea146bd6c27ff3fc37296888e827247a739493b"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_analyze.log",
+      "sha256": "c40f3ebd51db4f3e7760e179ccbcd80a938ed8ddbb3f1c312ff9d1931261369f",
+      "blob": "856d7e141b87dd3e51a548179c23f539a9fc6071"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_analyze.py",
+      "sha256": "05aca9dec4d87c9e87793cfd2d15c7135529e6a82e62245480d84e3dd1142a58",
+      "blob": "63ec8fb267d0a8c9387798a8f693aa837f7fa254"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_device.py",
+      "sha256": "18ee819bc47cdc5eb05a1adfb9b632a888d267e24380603dcf9ce2510955c74f",
+      "blob": "bcb58e288bcfb9c4f3ad1fc19b2017a2cc32014f"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_repo_scale_arithmetic.log",
+      "sha256": "5132bd9c63459805e14c1cc73eed12ea2e3b5b88de269c7ade5f8be691470182",
+      "blob": "c7d91cf9c8e1b6bcbaca5415eaa62a45be5bd55f"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_repo_scale_arithmetic.py",
+      "sha256": "b03e1537f6965280c46ed53ae7b83ff7f739cf4d3bc2dd9c741c694628670ff1",
+      "blob": "05d794c9edba22b68084473bab3e97456ca8e041"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/b5_tolerance_scan.py",
+      "sha256": "33004a58e4da59f179b54cf28c34f0520097e2f5d2217b3347c63e4df9d11b87",
+      "blob": "10a299dc7b0afb1e4bbaeefdfbd9f3f896ada32b"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/scan_A.json",
+      "sha256": "69697ccad80f83fb2c5fa5ebe8143447380e3a2b8f4af2a4cbc0027051557d6c",
+      "blob": "45b6dce18fdafd6ca058fe751d4c390b3af7764d"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/scan_A.log",
+      "sha256": "76d6627b1746e948e0ea3f9535bcb8b80ab24bc42e642756e25a529f7f363719",
+      "blob": "a19d0366312b987f5bbdee78653674f994f09bab"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/scan_B.json",
+      "sha256": "41f1caf80518da2c8d439db43d18a51be8ce4ffc1f0304ba4139ce8ae56d2fdb",
+      "blob": "afdb662d375fd6bacb04f132525aa104fcde5877"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/scan_B.log",
+      "sha256": "eef91edd126ebc8da9b9f29c9e2c44d210614f4b5dfb78a88a5eef3e071677f1",
+      "blob": "2cf24d37a9ab2c70c7807c163e4057067e80a72a"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/scan_C.json",
+      "sha256": "bb89a2492b6ef4ecafee5dfdf641cff05d7454d0646039cc9c1a991f94142158",
+      "blob": "a633edd1658e3a03711a9f65735c7d6e2696a9fa"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/scan_C.log",
+      "sha256": "0281cc6fa2e767efe742ab52e40dc3f93f5a29c4c5ed2bf717844fb4c34c0a0d",
+      "blob": "ca97bea39e640d7d66d2ebaef178f9ca856226b3"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/scan_D.json",
+      "sha256": "1ffab57aae6e4e0149d925b34af68a3a655d3606e0a255d33172fc6650f5e490",
+      "blob": "1cb634217662f55d3ef80b6b570aeae229fe9b9f"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/scan_D.log",
+      "sha256": "be28107f7b6aeecb888ba445d98da7eb62aa3bb1527696189267419e27abfa6b",
+      "blob": "ad29b0f1623bbbd2316a37a59e364977c1aa42e3"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/scan_E.json",
+      "sha256": "89026cd9a183216528679808844b08222406d92d7f65676155c44a3a1b18e4af",
+      "blob": "a45f1051186f8c6e7788ce44986c656b52d08f4f"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B5_record_clock/scan_E.log",
+      "sha256": "d57736012c40d50c2f7c49c10d94613103dbaf6efbd717cbc0c0933020f50ecf",
+      "blob": "bf1bda7b6789e6da68033c2dda951eb44edbb839"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B6_maxwell_winding/FINDINGS.md",
+      "sha256": "f065d17e5c2162a23fc71b2c732aae59b5336fed65f79c4721f1821e647e6bfd",
+      "blob": "6ea1126d70b5cad7874c503e950a012e67e460db"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B6_maxwell_winding/b6_analyze.log",
+      "sha256": "0cf7278cfa5fdf5b95c7adc6a8de93eb9bdf9fe701125c5e81959fed27eb7cd1",
+      "blob": "514951c200bf2a0d4bdef1e0235e7f07137d79c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B6_maxwell_winding/b6_analyze.py",
+      "sha256": "a7a81c06dd154a0e5b0d768ddb7bb289e2443a54cebd3670f024f090c3df6a29",
+      "blob": "2611306392c99a70ef8443ad0c7c465d175182a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B6_maxwell_winding/b6_exact_ed.log",
+      "sha256": "7934364c7f5cbc73fdf56f22198e7721d3b88126899bfcfaa1ad32a0a90f11de",
+      "blob": "9bcb4552c8a13d685348bc8b7ab756e166caa520"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B6_maxwell_winding/b6_exact_ed.py",
+      "sha256": "60fdbdcd98e04848d2f728c6cf3d025ecede0c37c42e36354c0d83634ba7630b",
+      "blob": "1ab849be7ec2dd261bb98684a89c727ac8e2bc36"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B6_maxwell_winding/b6_exact_ed_results.json",
+      "sha256": "91093dfbacaeacfd0162b25d36db1630221ea9f988dfd6db7c83b83f18ff5f67",
+      "blob": "768fcafebd3d987fd18dafd6220f237401e70d42"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B6_maxwell_winding/ringlib.py",
+      "sha256": "df6f83d7d9aba6893f7b32520ac146a993351a515c4cf70b29dee22168de3389",
+      "blob": "939441e2eb71d77e7ce11605cd19591d68b246d2"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_check/REPORT.md",
+      "sha256": "72501a60a5fd47243431aa37a70ad478cdbf4ac99d8fcfda361d5955ad5f35ce",
+      "blob": "880b3e8944a2f2a03ac71ed5aa0351c697bb507a"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_check/chk_a.log",
+      "sha256": "b90528855d5bbee3d35b0cd69da6ca51e122c2c8afef7d0970f1c1189d345ec7",
+      "blob": "ac2f0bee3cd3afb2fdae473f6227edabcaf20892"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_check/chk_a_kstar.py",
+      "sha256": "9a6c9f8a3f1b30a4f1772a577622a78948b1eea411eb3bf51ac24e900f2c6f1a",
+      "blob": "9dd37ed21ace45ab0112cd5541d72ca8604344d1"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_check/chk_c.log",
+      "sha256": "3c208f9ebbca48f4a951421d0bd58a8168c7d7382309e2931b7ff5139821ff02",
+      "blob": "cb93ed9576ef7959876af8a7c4230662b366ea4e"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_check/chk_c_gap.py",
+      "sha256": "68e5c0fc3bddec92b95992ca8401ed27549d6d4dd1d8176befb0ffd4e344a98d",
+      "blob": "53ff894c0edc8b384d5b937ff9598049329a4746"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_check/chk_core.py",
+      "sha256": "aa194483f155b0532629e602a850ab655b3a08940a86c2b706fbe8e5327fb925",
+      "blob": "6d321a83f4cb57c7fbc1af4d7454c380a40a7cc1"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_check/chk_d.log",
+      "sha256": "2a4f91e58e67f84ee28391685c74cecbc042761e04c8c9f4565e98d3321b3c62",
+      "blob": "61db6ce1f3ada25e7255415f4ddb5e240fdf7bb8"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_check/chk_d_twist.py",
+      "sha256": "78f582277f57ee895511976da565568fefe05cbbba8fb9c3580f61e41e288ca0",
+      "blob": "a6dee84ce0e97b470093045abbe9609eabac119c"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_check/chk_e.log",
+      "sha256": "26c8eede092afa791e4c9333370ef5593e367a5f0e3c5d42642969f817a58ae7",
+      "blob": "52703ac16eac4d39f27e8f1919dc363ffb3ad61b"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_check/chk_e_pair.py",
+      "sha256": "8b9cbd708eceeede1cb7c28693b887da39fb3afaf93614530cf7f6c0009b9b16",
+      "blob": "ccfa12331d78a6ed1d38f055d0e71f6d8e1e439e"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_corner_LSM/FINDINGS.md",
+      "sha256": "23a9c6d9192b4a337712a629f7b0abdbae6737bf98c965c7f25c2c2f0fbe0597",
+      "blob": "e3654eb3eb8e1e54664f76064c614a635243e4e8"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_corner_LSM/b7_free_fermion_filling.py",
+      "sha256": "7f2d0c03dbb17129c45941393b7d5be3b04b9426ac3a1d8bcc49423c484b6fee",
+      "blob": "1dc6e8ba5e360a90fa914e4b06e3302ec53ef0b1"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_corner_LSM/b7_inversion_wannier.py",
+      "sha256": "d20ee0e472f48bc7ab75423a73ccad1e241a6365f4620562432142568ea50b75",
+      "blob": "398455de3276bb93eb729fb3dc58654458aab8c3"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_corner_LSM/b7_many_body_lsm.py",
+      "sha256": "3a7c91debe72337919b7130a2c1fd83a66d5390d352b1eedf5b9f5fb1505b9e1",
+      "blob": "abfa14ea8dfde0a92a117c5dc5d2e808ba51f7b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_corner_LSM/b7_model.py",
+      "sha256": "6fcc9b7ac3b768251f1f3b7052187a75a32706717d946b9117b08cf3f8ce1f90",
+      "blob": "65470ea524b37838df97b2d5505a58f13a757d83"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_corner_LSM/b7_staggered_class.py",
+      "sha256": "23b4925548b7da1163795c0a7c44c01396c5b535bd5b404ec846de2100afef3b",
+      "blob": "405b4b7b3ab6a913b2483e2389fcbbf590b05ba1"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_corner_LSM/b7_subgroups.py",
+      "sha256": "89f0593d50d161b01c7169d8a668be0780c8a7f91ea618f381adcf64b5a25bc3",
+      "blob": "69b67bde91075657ea0f849f8e65ab8cfdebed16"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_corner_LSM/run_free_fermion.log",
+      "sha256": "768e7af642b8bf447c35ad2f38b30fab1a9f82669067003fb48c35798d6e6f68",
+      "blob": "1bc79ec28e86025fefb4c2dd1e4c4167038ee53f"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_corner_LSM/run_inversion_wannier.log",
+      "sha256": "06de5520c7e0f8feaabbc0068062188aa8f8d35ebcebc9ba18049899756d590c",
+      "blob": "6b3993fa1115d4a7c6a519f89bf1aa55055b3c9f"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_corner_LSM/run_many_body.log",
+      "sha256": "bd947822bae15697c5d32194bfe4e5ea14a1d6d509bf7ed1681ed7d34ee5683e",
+      "blob": "2e4a19d5828e0e6da292f49795b1f1ff60a51a75"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_corner_LSM/run_staggered.log",
+      "sha256": "d8f2f5140e98eb1e87b081a6c2234297cfc73613f95ed15c86e4a5c17d124db7",
+      "blob": "b7e903b4a3ca1294fe574ffe2b2edcad5f449162"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_corner_LSM/run_subgroups.log",
+      "sha256": "a44a2e3280016a5229253897c16d271d3753843ef532854f5b1766dbdc1b8d04",
+      "blob": "968a4d5d936bbc377a6dbc1d7565501a09fa8773"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B7_corner_LSM/runner_PASS25.log",
+      "sha256": "a5c201372b16b05a47c5e529aa65dafb1e3ac82aed8abdac39172b5f282230f9",
+      "blob": "84d6640b65d9289662cc4f58c47471b20e5f48f5"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B8_check/REPORT.md",
+      "sha256": "7a2ae02992a1cc9580e5c3cdaf339790c162999ebbc4397a85d6dffa7cc0fb30",
+      "blob": "8bfc3d609081dd218766511a2f33bdd86ba55604"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B8_check/independent_check.log",
+      "sha256": "f97994326b1925fa13de3a06f5933002975de0e4916170fad9ac31d297eefc36",
+      "blob": "3ccbae1b1f100c59c2eea11a3c01f39e0d7c439c"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B8_check/independent_check.py",
+      "sha256": "74eac9e870f2a79b96a5cef1ab68e2254558e2fc93b82b25203b340bbdc72719",
+      "blob": "d5888c487f6200106c86624ca3f289d9da37a881"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B8_frequency_ergodicity/DRAFT_NOTE.md",
+      "sha256": "2e0246d01773ce125b60ed08330dcf09701cd9265150cba74cfc5c05fcb29f13",
+      "blob": "312c39d7dc76ca2a896adddb0b9d8fca5d687884"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B8_frequency_ergodicity/REPORT.md",
+      "sha256": "41b39e06a7502d23b633ea0b76e4c2b2f926984359b14fe221afd5ced48d1e5b",
+      "blob": "a951b519ce18d1423070c8bdd1873bbea45a1c21"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B8_frequency_ergodicity/runner_frequency_consistency.py",
+      "sha256": "5262c527a3145c9bae76cf8ef0024d35554b2470b8e9ab7d31eb3c0c20071364",
+      "blob": "c94114923b6bfabd3d12d538b76c7697e6d45d55"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/B8_frequency_ergodicity/runner_full.log",
+      "sha256": "4041d86717471260ee4d37e22201b187af41f32cb63a6a870b7047d40fca8b5d",
+      "blob": "ef854a4843cb9705c09a40b3ff5e9b6af16e5d14"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/C20_check/c2_out.txt",
+      "sha256": "cb37f5f7aac4a14300349cce9636559df0a750de6c0ec77fb2652c987cbe02fe",
+      "blob": "2d11265b9e2bbb6be1fa8620b6ffa94c7a325272"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/C20_check/chk_Tscan.py",
+      "sha256": "777facb966b022dab5c9a35c70d3b57ba0ed3764b0aa14b844ed7d6f58d28c6b",
+      "blob": "598d7cbf291ac924372ab7edb6fa239fc1df7eb7"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/C20_check/chk_c2.py",
+      "sha256": "079fa89587c4fc5efa0c8f9c29602f61d0ebeca73f87a0b722ca16be0635ae0f",
+      "blob": "3181f17f1127c6f9a494f3f540e0b8302be8a91e"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/C20_check/chk_common.py",
+      "sha256": "d2fe72dbb3baa1cfcb5f1bf220eee24eee4dc8bffbf6fac4d1fb784bda50f117",
+      "blob": "ed14a71caa6a58d9256d942282d26d8d694b1672"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/C20_check/chk_count.py",
+      "sha256": "0e0d676eadfd0d8628646061ecdc833153364b0e06988e49d7236ab96609b38c",
+      "blob": "54108b7c0677b58dcf47b7a0321ed3ca7d2a0cb8"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/C20_check/chk_gap.py",
+      "sha256": "09f3e0c4ff13e547e317311ced1863af9c13b7c2b0d2cd5117507c523766756c",
+      "blob": "3347d01655bbc88c1a6322b5e737c5103b84f343"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/C20_check/chk_lindhard.py",
+      "sha256": "b8bf14c460aeac59dc8ed647f2bd75bd073238323ed3dd0fd9a72c7343391efa",
+      "blob": "fb7ba03969bde55f31d6139b9c86a2ee266e199c"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/C20_check/chk_qubit.py",
+      "sha256": "dddaa98b90e0506f43e3391582e9ce78ea8b0d7e017289af7bfcdf5921f0f514",
+      "blob": "74becbaa4a690bda9e0d5000f4535951c7323997"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/C20_check/gap_out.txt",
+      "sha256": "bf0ce1fe0d310f1483ed73e51bcee509886048250bdc6c283c165db892dbc84d",
+      "blob": "c9531d1ce793b05349e300b25cedcd0a4f45c968"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/C20_check/lindhard_out.txt",
+      "sha256": "d0e639848abe04e57668079b7b3fac7bd8cc635bde9ae441c11b6a06da1efde7",
+      "blob": "898ef40454c09dd190e2b7935cab03477baefb3f"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/C20_check/qubit_out.txt",
+      "sha256": "6a5f81128bebeacdd6624ead9c7f46730f8ba37c77bd388ebca7182a6249e8e4",
+      "blob": "e59b1e63bd32e30603f89eab06f338ab221063d8"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/C20_check/runner_out.txt",
+      "sha256": "7659e62fa598783b3edee992b6ae05cb6f84dc8c86f4cf7fbc5568f74efd4bf6",
+      "blob": "6f662cc2f0f98110c974213b9fe069d864fec717"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/GOAL.md",
+      "sha256": "fd532d062243fa43de3efad0e8ea1dac78a2dcae87b74ec2ad7bfa260a8169f0",
+      "blob": "f692ae03d7032d79cdf7105f172aec70846e8f60"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/HANDOFF.md",
+      "sha256": "a81fc2b60b7ead58ebf6451cf08892a803f691921d3eb7bf60079586da2a0098",
+      "blob": "e02a5cfde9b41138d5bfcb87193fc3e2b63d9401"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/OPPORTUNITY_QUEUE.md",
+      "sha256": "1c0a1741ee2bd99f40e3fe87767a691ccc073e6e4a7aea5fcccd4473857d69cc",
+      "blob": "2342c823b5dab300157efccc5ff68a60ff2967d3"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/STATE.yaml",
+      "sha256": "d98e5f6f88f737e93b548f1ddcc2f9ea4486906aee98f1967a9c1ead84e8bbf7",
+      "blob": "3aa828c40fd99fac5fe3d0c680dfb08837d27827"
+    },
+    {
+      "path": ".claude/science/physics-loops/scale-ladder-campaign-20261018/TRACE_GATE.md",
+      "sha256": "157c7a1c5ac6a0385c802a0e406bd97c2ebb4cb7d35d577089d496b2516742ff",
+      "blob": "999381ffb4a129a4caf8c4e44b88eef74ee76734"
+    },
+    {
+      "path": "docs/A_ONE_DIMENSIONAL_LATTICE_HAMILTONIAN_CONSTRAINT_WITHOUT_LOCAL_DEGREES_OF_FREEDOM_IS_FIRST_CLASS_BUT_LATTICE_PARAMETRISED_FIELD_THEORY_IS_ANOMALOUS_AND_FIRST_CLASSNESS_IS_LOCAL_ZERO_CURVATURE_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "f857aae6e269881be9c54edcf84373b866ad85878d27953124d19e445398374f",
+      "blob": "b6ee64da14a5bdcd00ed492ecd0a9002a30efc82"
+    },
+    {
+      "path": "docs/CORNER_FERMION_COVARIANT_MONOMIAL_SHIFT_LETTERS_ARE_ONLY_THE_DIAGONAL_SHIFT_POWERS_AND_THEIR_ANTIPODAL_TWINS_AND_THE_SETTLED_MOMENTUM_SHIFTING_AND_ANTIUNITARY_SUBCLASSES_REDUCE_TO_OLD_WORDS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "feb9d0f46aff30a05cb5dc55b3395c3a4208b1c3c9b0254f47f5e8057d8cb026",
+      "blob": "611f8ddeb5b44f92143555f57c069ca7e032cd4c"
+    },
+    {
+      "path": "docs/CORNER_FERMION_EIGHT_CUBE_NODES_CANNOT_BE_SELECTIVELY_GAPPED_UNDER_FULL_OCTAHEDRAL_SYMMETRY_PAIRING_IS_ALL_OR_NOTHING_AND_THE_DOUBLERS_CARRY_A_Z2_WEYL_DIPOLE_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "9f361ea0d510231d04506afbf11b68a61591ef5b564f17c64c5aea8d4d424ac0",
+      "blob": "96ac51b003818c9a9c46b1e015c8b3ebc62ac6d0"
+    },
+    {
+      "path": "docs/CORNER_FERMION_INTERACTION_CHANNELS_FAVOUR_CHIRAL_TERM_OVER_DIRAC_MASS_AND_QUBIT_BUILD_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "23575ffa12489790ab43269d7dba946d7c379e6503a240828b2dfdf575a0cad3",
+      "blob": "8ff34af7463b902e134f02ffea6bffd9012d7bd8"
+    },
+    {
+      "path": "docs/CORNER_FERMION_ODD_FILLING_IS_FORCED_GAPLESS_BY_ANTICOMMUTING_GAUGE_DRESSED_C2_LIFTS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "1e1e6672c179814a52be69371eeb3ed1135f1c6ee4d643a968833b07f68df0f5",
+      "blob": "257309f74046cd1d834c1910dc8766a2f4d4cc15"
+    },
+    {
+      "path": "docs/CORNER_FERMION_STEP_SPEED_AT_THE_FULL_OCTAHEDRAL_NODE_IS_A_SUM_OF_PER_LETTER_COEFFICIENTS_AND_GENERIC_LETTERS_SPLIT_THE_FOUR_FOLD_DIRAC_LEVEL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "aa9371b7168f4ee26766e052406ad6580fd58426f6284c1789aa4c95624f3d2a",
+      "blob": "87468fe53cef9965d6c956a2d2b5325edb56c6de"
+    },
+    {
+      "path": "docs/CURVATURE_MEMBER_CLOSURE_PUTS_A_LATTICE_WEYL_FIELD_AND_A_LATTICE_MAXWELL_FIELD_ON_THE_SCALARS_CONE_AND_REJECTS_ANISOTROPIC_CONES_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "fff3d81258f5332b9edabd7666e55619e6260d535c00132f66982bb9edbd8d71",
+      "blob": "19c80cbf2fd3eaea1add5cb650459ec806c0fb6b"
+    },
+    {
+      "path": "docs/CURVATURE_MEMBER_CLOSURE_WITH_MATTER_FORCES_ONE_COMMON_CONE_AND_THE_LORENTZIAN_SIGN_AND_HAS_AN_ORDER_A_SQUARED_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "39938b3ab4b2c978ac8b3b1dfbe8a27cad6566362fda1db703b3767b372dd021",
+      "blob": "0ca5303aa06bd9984a33648a08a9fd59e4944c27"
+    },
+    {
+      "path": "docs/CURVATURE_MEMBER_CLOSURE_WITH_THE_WALKER_AS_MATTER_FORCES_ALPHA_EQUALS_K2_OVER_FOUR_AND_ONE_CURVATURE_COEFFICIENT_IN_THE_WALKERS_FRAME_NORMALISATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "570478556ce26b8d1061225f958f00b01bbd520a7cfe1d7535a3f7ed60952c50",
+      "blob": "fc0de33718b9d9caf68cdf40c05120a049079f97"
+    },
+    {
+      "path": "docs/HEAT_KERNEL_SADDLE_VERSUS_WILSON_ONE_LOOP_LAMBDA_RATIO_AND_THE_TWO_DIMENSIONAL_SEVEN_QUARTERS_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "f29d8b7ee3a2ab228586b62ac189a1999c160bfad0b95b227657f2c76118988e",
+      "blob": "f0d31c4135a7f4f8172a3afe728c8cf94107b65a"
+    },
+    {
+      "path": "docs/IID_PRIORITY_FORMATION_IS_A_FINITARY_FACTOR_OF_IID_NOISE_WITH_FACTORIAL_CODING_RADIUS_TAIL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "8b06c019f8e2f1ed6f65bceb1711ab0ea73a6be8060348d8972421d957a7e32c",
+      "blob": "cca41c119c5c041524216b9fcc1876dfa9f52608"
+    },
+    {
+      "path": "docs/IID_PRIORITY_FORMATION_SPATIAL_FREQUENCY_CONSISTENCY_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "da6a7fa8481d7ebfa992f0e83de8c8bff68be4fbaa2a7b7585fc0f037fce7d5c",
+      "blob": "ddcaffd99d3e7517aac4094261c061cfd7f6900c"
+    },
+    {
+      "path": "docs/LATTICE_GRAVITON_KERNELS_ONE_TT_CONE_DEWITT_CLOSURE_AND_INDUCED_BUBBLE_SEAGULL_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "4cd5b759588db6276560728fb94ae551b066e6d188e98fdf9e5ef460ce13c75d",
+      "blob": "9c6c166c4f4f437599dcb25af88fcd1ef7aac519"
+    },
+    {
+      "path": "docs/NO_EQUIVARIANT_FACTOR_OF_IID_NOISE_REGISTERS_A_COARSE_BLOCK_LATTICE_AND_THE_CORNER_FLUX_IS_A_FREE_SECTOR_LABEL_OF_ITS_LOCAL_FERMIONIZATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "c0f48067e77e519d7701b1ee42d42590720cc8f5989460ec916c0ba2cad9c6ba",
+      "blob": "feaacc38dd766a85717aee49af3a9a7fb717d1ff"
+    },
+    {
+      "path": "docs/NO_TRANSLATION_COVARIANT_LATTICE_RELABELLING_ALGEBRA_OF_ANY_RANGE_CLOSES_LIKE_THE_CONTINUUM_AND_THE_UNIFORM_LAPSE_BRACKET_NEEDS_A_NON_LOCAL_LEIBNIZ_RULE_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "d7a7b529d942bb53e3682b35a2fa5ce9d50676e9ec73862cf25b8eceef76016e",
+      "blob": "365b22f51ddbafe17057283fea19e31d4c5d4a8d"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "cd7dcf829f5331dea3e034e5109c156f2e9ddfae28eeef00761b6c681e25145e",
+      "blob": "5b13e19481dc379b924605a0af8a8199b8eaf767"
+    },
+    {
+      "path": "scripts/corner_fermion_doubler_gapping_selection_rule_and_weyl_dipole_2026_10_18.py",
+      "sha256": "148e5fb792b6ce2aef817b2a047a55fc27a2f5b8b3d276765eb8b101e4eb32e5",
+      "blob": "fa8cff8d6a5ad59bf999d402546d314b93b00a12"
+    },
+    {
+      "path": "scripts/corner_fermion_generalised_speed_law_per_letter_additivity_2026_10_18.py",
+      "sha256": "343acf2526d2ad12b3522a176ffd85e1a1b79fe65956a6b0e1a83ad0b962d77e",
+      "blob": "7e5d3fafc07b6f07d434de2c879020f55ffbc4ef"
+    },
+    {
+      "path": "scripts/corner_fermion_interaction_channels_and_qubit_build_2026_10_18.py",
+      "sha256": "ae57e734fdbfa49e4d2a1ce73cf9ecca3534bccd44cc1b3b3e2e0ca2d547c1ac",
+      "blob": "1829148517b1ffe5def85bfddcfa4f9950fc81f6"
+    },
+    {
+      "path": "scripts/corner_fermion_odd_filling_forced_gapless_anticommuting_c2_lifts_2026_10_18.py",
+      "sha256": "aa01c0668b4074bf84a368ef8fe6cc9f24d4fb6649fbbb70e1f0eda7e2be1d33",
+      "blob": "1b2d9c4290fbe6a2ef0606f1a9dfc35dc8e900d7"
+    },
+    {
+      "path": "scripts/corner_fermion_symmetric_shift_letter_classification_2026_10_18.py",
+      "sha256": "dd85240308933f62a1ed14168782be9fea340c25381f279a4f5ed13857db4e33",
+      "blob": "bf6dc93b7def8f6865ddf7c1f2c87e206ba5caeb"
+    },
+    {
+      "path": "scripts/curvature_member_closure_spin_half_and_spin_one_common_cone_2026_10_18.py",
+      "sha256": "067a651e8509653c7e03f762bbd581c9fb3817e026a2cd53de06a1c845cba671",
+      "blob": "3a6ba7d2f22a85ce1e18ccfb79f2e368b5accae0"
+    },
+    {
+      "path": "scripts/curvature_member_closure_with_matter_common_cone_2026_10_18.py",
+      "sha256": "9bbbaf54f374494dbc6377557682ef20dd869f1a83204cc018f6bef7a20273a1",
+      "blob": "59ae32e141b70c5507514fd1d2c03581750d8f04"
+    },
+    {
+      "path": "scripts/curvature_member_closure_with_the_walker_forces_alpha_k2_over_four_2026_10_18.py",
+      "sha256": "6c5cf4f2c9e38f8ca562fd3420e12549fc6a5715f121b708033184d91c543049",
+      "blob": "3c067d6b712c427fc31d03eafa6c68d3fd9cb8cc"
+    },
+    {
+      "path": "scripts/equivariant_iid_factor_registration_lemma_and_corner_flux_sector_freedom_2026_10_18.py",
+      "sha256": "1ce24171260e795b4aa290350bb4c7d1e90c6d5713e8a9e099030539df1bf1ae",
+      "blob": "ef06a537535e3456e84b43b3d724d493282a13ae"
+    },
+    {
+      "path": "scripts/heat_kernel_saddle_versus_wilson_one_loop_lambda_ratio_2026_10_18.py",
+      "sha256": "a434b00c41dcb518e28b03630bf14c54122865f4a67f5b48ddcbb542622a4840",
+      "blob": "5c81c067e9ff184c5a543f7c95696341f678f5ef"
+    },
+    {
+      "path": "scripts/iid_priority_formation_finitary_factor_coding_radius_2026_10_18.py",
+      "sha256": "bfa35eabf406e2e775af2eb22c31db06e35442fc5daab883c6c1c1c6642e61cb",
+      "blob": "29c1f2187dfb101e47c29f1dac3e24d272c4810e"
+    },
+    {
+      "path": "scripts/iid_priority_formation_spatial_frequency_consistency_2026_10_18.py",
+      "sha256": "c35afeb39dbec77538da9887f767aed790c233dae53761b6d2ea9912187fc6a7",
+      "blob": "e756202a2f6dc13521ceceac6373c6dfef76bdbb"
+    },
+    {
+      "path": "scripts/lattice_graviton_kernels_one_cone_dewitt_closure_induced_bubble_seagull_2026_10_18.py",
+      "sha256": "1206803976b1c709532add4f11d6d33e4edd87bd88a0b99c64568bd03fd15d9d",
+      "blob": "c8c873663b28f1184889390772e0d6a7aecc7495"
+    },
+    {
+      "path": "scripts/lattice_hamiltonian_constraint_first_class_and_zero_curvature_2026_10_18.py",
+      "sha256": "015474be6e9de78cd8cb160c7254421b0f69cee8820aa62dfc4bc7de571637e1",
+      "blob": "afa1fb9497625f8b0a74448fb5f96c71b9059225"
+    },
+    {
+      "path": "scripts/lattice_relabelling_algebra_no_go_arc_lemma_and_non_local_leibniz_2026_10_18.py",
+      "sha256": "e45ae1db00e095d76d6582f7c07b4f9db3eb2a461400111f13f8cf9073cb304c",
+      "blob": "c7a4fe76ac953df8405d86dcb87a3638b31a8f41"
+    }
+  ],
+  "archive_sha256": "4905599b9a954d9e74434eea342523ec0dd17931d57893850e1267d2f21b50e9"
+}

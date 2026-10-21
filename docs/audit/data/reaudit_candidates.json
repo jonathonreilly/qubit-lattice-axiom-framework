@@ -26,16 +26,16 @@
     "positive_theorem"
   ],
   "packet_policy_fingerprint": {
-    "digest": "a539c1dd4f687418b19d2a62c58f4f855e77bbd67043efe84e4123a7a4fc8ad1",
+    "digest": "e12fa45d6087846c979d8d9750fa1fb2b34408aead0701251fd2fd2512cc9ba2",
     "schema": "packet_policy_fingerprint_v1",
     "sources": {
-      "docs/ai_methodology/skills/audit-loop/SKILL.md": "a36eb620343f3ef654249c9774eb145c85be504d0b060979e0f7264fe8e220ed",
-      "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "882fa02fd63f0779ab2d1f521b3dc840cdb4d5f6f49906b3f48d9d657a864f56",
-      "docs/audit/scripts/apply_audit.py": "c80a927605a7dad21c8913c25229bc607649dfeb0b1449613e5e5f885823a131",
+      "docs/ai_methodology/skills/audit-loop/SKILL.md": "f3d4ae7c067a65cc3e6869ca8c43ec79d62cfe7b2582a13a31f34baac03e5f54",
+      "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "df53a9a21c70e213ebff96a65e3d77376b70d13829ecea92723ba9b59fd827f4",
+      "docs/audit/scripts/apply_audit.py": "2d059c4c2c363c6f6f6644bf993b3ab2133e785d21a8d0525720cd936de59413",
       "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
       "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
       "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
-      "scripts/codex_audit_runner.py": "919a0b8f8526c92d0d9527aed929e1af99a7dd5106fb4d8137aefba112400c7a"
+      "scripts/codex_audit_runner.py": "6ea185945ec19cfcdc769461111e8027ae5981fc7159a833c4c77b50f102f299"
     }
   },
   "policy": "reaudit_unblocked_v4_dep_runner_or_stdout_transport",

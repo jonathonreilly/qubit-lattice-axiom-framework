@@ -1,0 +1,17 @@
+[
+  {
+    "geometry": "adjacent",
+    "changed_plaquettes": 4,
+    "tension": "1/16"
+  },
+  {
+    "geometry": "separated",
+    "changed_plaquettes": 8,
+    "tension": "1/8"
+  },
+  {
+    "geometry": "diagonal",
+    "changed_plaquettes": 6,
+    "tension": "3/32"
+  }
+]

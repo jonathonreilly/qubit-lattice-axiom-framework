@@ -1,0 +1,14 @@
+
+== (a2) eps-eps-M forms span the full gauge-invariant space (d=4) ==
+   rank of {L_M} over the 10 symmetric M: 10;  gauge variation of all L_M zero: True;  dim gauge-invariant space (no symmetry): 10
+   L_I ray-equal to flat Fierz-Pauli/linearised EH: True (ratio -1)
+   S: rank[gauge-inv basis | L_M1, L_M2] = 2 = dim 2: True
+   B3xZ2: rank[gauge-inv basis | L_M1, L_M2] = 2 = dim 2: True
+
+== (a4) temporal-gauge characteristic polynomial of L_M (k = (n1,n2,n3, w)) ==
+   random M #0: det(spatial block) = Q^2 * (-16*w**8) ; Q=adj(M)(k,k); remainder has w-degree 8 and is a pure power of w: True
+   random M #1: det(spatial block) = Q^2 * (-16*w**8) ; Q=adj(M)(k,k); remainder has w-degree 8 and is a pure power of w: True
+   random M #2: det(spatial block) = Q^2 * (-16*w**8) ; Q=adj(M)(k,k); remainder has w-degree 8 and is a pure power of w: True
+   S4 tilt c=-1/2: det(spatial block) = Q^2 * (-16*w**8) ; Q=adj(M)(k,k); remainder has w-degree 8 and is a pure power of w: True
+   S4 tilt c=3/2: det(spatial block) = Q^2 * (-16*w**8) ; Q=adj(M)(k,k); remainder has w-degree 8 and is a pure power of w: True
+   S4 tilt c=5: det(spatial block) = Q^2 * (-16*w**8) ; Q=adj(M)(k,k); remainder has w-degree 8 and is a pure power of w: True

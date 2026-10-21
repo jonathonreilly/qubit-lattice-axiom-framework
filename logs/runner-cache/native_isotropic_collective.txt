@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/native_isotropic_collective.py
+runner_sha256: 64295b342871c4f54251981618147ccd9babec74b65ba7b12da955f7c2b0a0b0
+input_fingerprint_sha256: 988888c92161c56ae009bbaf807f8aa14ac2dc4a1f574c624a3e0c0d1461bba5
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.58
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_isotropic_collective-pob0_x5p
+{
+  "physical_qubits": 27,
+  "dicke_matrix_entries": 25,
+  "max_matrix_error": 7.105427357601002e-15,
+  "minimum_symmetric_leakage_squared": 35.26462585814319,
+  "analytic_lower": 32.76,
+  "coherent_cases": 12,
+  "max_coherent_error": 7.815970093361102e-14,
+  "scope": "Exact native H action on low-excitation Dicke vectors and collective spin matrix; not full 27-qubit ED"
+}
+{"dimer_energy_per_site": -1.0625, "highest_weight_residual": 0.0, "scope": "Variational energy and exact first spin channel, not a ground-state phase solution"}
+[PASS] child:neutral_isotropic_collective_control.py
+{
+  "rows": [
+    {
+      "kappa": 0.8,
+      "norm2_over_J2N": 0.000188455217149863,
+      "leading": 0.00020236754563609139,
+      "ratio": 0.931252175626786
+    },
+    {
+      "kappa": 0.4,
+      "norm2_over_J2N": 1.553127073685191e-06,
+      "leading": 1.580996450281964e-06,
+      "ratio": 0.9823722712395702
+    },
+    {
+      "kappa": 0.2,
+      "norm2_over_J2N": 1.2296755349780742e-08,
+      "leading": 1.2351534767827843e-08,
+      "ratio": 0.995564970744382
+    },
+    {
+      "kappa": 0.1,
+      "norm2_over_J2N": 9.638920402929413e-11,
+      "leading": 9.649636537365503e-11,
+      "ratio": 0.9988894779202725
+    }
+  ],
+  "scope": "Continuum Fourier integral of exact initial spin-pair form factor, not an invariant mode spectrum"
+}
+[PASS] child:neutral_isotropic_ir_control.py
+{"status": "bounded-support", "checks": {"neutral_isotropic_collective_control.py": "completed; child stdout/stderr streamed into owning capture", "neutral_isotropic_ir_control.py": "completed; child stdout/stderr streamed into owning capture"}, "scope": "Exact native collective-sector boundary and first fluctuation channel; no full-H ED, ground phase, scalar identification or empirical tests"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_isotropic_collective-pob0_x5p/outputs/native_isotropic_collective/result.json sha256=3f0f4944b93a21063f3bd6b684a0211b5a8cf2a10d5b39fcd79e64bc25f61bea
+{"checks": {"neutral_isotropic_collective_control.py": "completed; child stdout/stderr streamed into owning capture", "neutral_isotropic_ir_control.py": "completed; child stdout/stderr streamed into owning capture"}, "scope": "Exact native collective-sector boundary and first fluctuation channel; no full-H ED, ground phase, scalar identification or empirical tests", "status": "bounded-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; no microscopic pole, universal force or empirical identification is established.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_isotropic_collective-pob0_x5p elapsed_seconds= 0.5385554158128798
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

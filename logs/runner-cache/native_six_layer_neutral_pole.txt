@@ -1,0 +1,218 @@
+===== runner cache v1 =====
+runner: scripts/native_six_layer_neutral_pole.py
+runner_sha256: eb31371986fd7f0a047b9f8580e966793a1e4e2a1b9056d978d43df3bd2f0fa8
+input_fingerprint_sha256: 537b5d1ffc6a20a8be1e04aa211aabf82dff28f165f23361ce3b9bcd95a92805
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.14
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_loop.py']
+[
+  {
+    "w": 1,
+    "h": 1,
+    "per_layer": "-1/128",
+    "squared_resolvent_sum": "5/2048"
+  },
+  {
+    "w": 2,
+    "h": 1,
+    "per_layer": "-3/8192",
+    "squared_resolvent_sum": "13/65536"
+  },
+  {
+    "w": 1,
+    "h": 2,
+    "per_layer": "-3/8192",
+    "squared_resolvent_sum": "13/65536"
+  }
+]
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_loop.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_loop.py']
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_star.py']
+{
+  "a": 0.7140883235871018,
+  "b": 0.3431493345632229,
+  "E_over_t": 2.1144753163006493,
+  "gap_above_continuum": 0.11447531630064933,
+  "center_weight": 0.29869300450170455,
+  "source_weight": 0.1406861564304876,
+  "source_fraction": 0.0703430782152438,
+  "rows": [
+    {
+      "q": 0.001,
+      "e": 2.1144751681909453,
+      "curvature": -0.1481097040567647
+    },
+    {
+      "q": 0.002,
+      "e": 2.114474723862295,
+      "curvature": -0.14810958859357015
+    },
+    {
+      "q": 0.005,
+      "e": 2.114471613583077,
+      "curvature": -0.14810870290205003
+    },
+    {
+      "q": 0.01,
+      "e": 2.114460505747752,
+      "curvature": -0.14810552897426277
+    },
+    {
+      "q": 0.1,
+      "e": 2.1129984538463615,
+      "curvature": -0.1476862454287797
+    },
+    {
+      "q": 0.5,
+      "e": 2.080138723899905,
+      "curvature": -0.13734636960297664
+    },
+    {
+      "q": 1.0,
+      "e": 2.0121103644817877,
+      "curvature": -0.10236495181886163
+    },
+    {
+      "q": 1.5,
+      "e": null,
+      "curvature": null
+    },
+    {
+      "q": 2.0,
+      "e": null,
+      "curvature": null
+    }
+  ]
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_star.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_star.py']
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_torus.py']
+[
+  {
+    "R": 8,
+    "dim": 9,
+    "upper": 2.2264255980310486,
+    "next": 1.414213562373095,
+    "weight": 0.1792359755912593,
+    "min": -3.071097560073671
+  },
+  {
+    "R": 10,
+    "dim": 11,
+    "upper": 2.1520905341620846,
+    "next": 1.7320508075688774,
+    "weight": 0.12458531138505897,
+    "min": -3.075490222029872
+  },
+  {
+    "R": 12,
+    "dim": 15,
+    "upper": 2.14003310272113,
+    "next": 1.847759065022566,
+    "weight": 0.13309053068748705,
+    "min": -3.0868033209628636
+  },
+  {
+    "R": 16,
+    "dim": 21,
+    "upper": 2.1213480866949888,
+    "next": 1.9318516525781333,
+    "weight": 0.13276963656721408,
+    "min": -3.10275728618805
+  },
+  {
+    "R": 20,
+    "dim": 27,
+    "upper": 2.1163187334620073,
+    "next": 1.961570560806461,
+    "weight": 0.13686565909525378,
+    "min": -3.112402928110477
+  },
+  {
+    "R": 24,
+    "dim": 33,
+    "upper": 2.1149608007465517,
+    "next": 1.975376681190275,
+    "weight": 0.13924436484609862,
+    "min": -3.1187570323763456
+  },
+  {
+    "R": 32,
+    "dim": 45,
+    "upper": 2.11450828053977,
+    "next": 1.9874244197864854,
+    "weight": 0.14053215857586518,
+    "min": -3.1264940383215665
+  },
+  {
+    "R": 48,
+    "dim": 69,
+    "upper": 2.114475466919987,
+    "next": 1.9949042292205066,
+    "weight": 0.14068495645255052,
+    "min": -3.1337433514988975
+  },
+  {
+    "R": 64,
+    "dim": 93,
+    "upper": 2.1144753169891195,
+    "next": 1.997259069509148,
+    "weight": 0.14068614868691487,
+    "min": -3.1370095226337518
+  },
+  {
+    "R": 80,
+    "dim": 117,
+    "upper": 2.1144753163037966,
+    "next": 1.998291516774602,
+    "weight": 0.14068615638476775,
+    "min": -3.1387770118009826
+  },
+  {
+    "R": 120,
+    "dim": 177,
+    "upper": 2.114475316300649,
+    "next": 1.999266572446568,
+    "weight": 0.14068615643048743,
+    "min": -3.1408021601200726
+  }
+]
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_torus.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_torus.py']
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_plaquette.py']
+{"z": 0, "total": "7/2048"}
+{"z": 1, "total": "-11/4608"}
+{"z": 5, "total": "-11/4608"}
+{"z": 2, "total": "0"}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_plaquette.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_plaquette.py']
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_plaquette_independent.py']
+0 7/2048
+1 -11/4608
+5 -11/4608
+2 0
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_plaquette_independent.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_sixth_plaquette_independent.py']
+[PASS] P9798:C001
+[PASS] P9798:C002
+[PASS] P9798:C003
+[PASS] P9798:C004
+[PASS] P9798:C005
+[PASS] P9798:C006
+{"status": "conditional-support", "controls": {"neutral_sixth_loop.py": [{"w": 1, "h": 1, "per_layer": "-1/128", "squared_resolvent_sum": "5/2048"}, {"w": 2, "h": 1, "per_layer": "-3/8192", "squared_resolvent_sum": "13/65536"}, {"w": 1, "h": 2, "per_layer": "-3/8192", "squared_resolvent_sum": "13/65536"}], "neutral_sixth_star.py": {"a": 0.7140883235871018, "b": 0.3431493345632229, "E_over_t": 2.1144753163006493, "gap_above_continuum": 0.11447531630064933, "center_weight": 0.29869300450170455, "source_weight": 0.1406861564304876, "source_fraction": 0.0703430782152438, "rows": [{"q": 0.001, "e": 2.1144751681909453, "curvature": -0.1481097040567647}, {"q": 0.002, "e": 2.114474723862295, "curvature": -0.14810958859357015}, {"q": 0.005, "e": 2.114471613583077, "curvature": -0.14810870290205003}, {"q": 0.01, "e": 2.114460505747752, "curvature": -0.14810552897426277}, {"q": 0.1, "e": 2.1129984538463615, "curvature": -0.1476862454287797}, {"q": 0.5, "e": 2.080138723899905, "curvature": -0.13734636960297664}, {"q": 1.0, "e": 2.0121103644817877, "curvature": -0.10236495181886163}, {"q": 1.5, "e": null, "curvature": null}, {"q": 2.0, "e": null, "curvature": null}]}, "neutral_sixth_torus.py": [{"R": 8, "dim": 9, "upper": 2.2264255980310486, "next": 1.414213562373095, "weight": 0.1792359755912593, "min": -3.071097560073671}, {"R": 10, "dim": 11, "upper": 2.1520905341620846, "next": 1.7320508075688774, "weight": 0.12458531138505897, "min": -3.075490222029872}, {"R": 12, "dim": 15, "upper": 2.14003310272113, "next": 1.847759065022566, "weight": 0.13309053068748705, "min": -3.0868033209628636}, {"R": 16, "dim": 21, "upper": 2.1213480866949888, "next": 1.9318516525781333, "weight": 0.13276963656721408, "min": -3.10275728618805}, {"R": 20, "dim": 27, "upper": 2.1163187334620073, "next": 1.961570560806461, "weight": 0.13686565909525378, "min": -3.112402928110477}, {"R": 24, "dim": 33, "upper": 2.1149608007465517, "next": 1.975376681190275, "weight": 0.13924436484609862, "min": -3.1187570323763456}, {"R": 32, "dim": 45, "upper": 2.11450828053977, "next": 1.9874244197864854, "weight": 0.14053215857586518, "min": -3.1264940383215665}, {"R": 48, "dim": 69, "upper": 2.114475466919987, "next": 1.9949042292205066, "weight": 0.14068495645255052, "min": -3.1337433514988975}, {"R": 64, "dim": 93, "upper": 2.1144753169891195, "next": 1.997259069509148, "weight": 0.14068614868691487, "min": -3.1370095226337518}, {"R": 80, "dim": 117, "upper": 2.1144753163037966, "next": 1.998291516774602, "weight": 0.14068615638476775, "min": -3.1387770118009826}, {"R": 120, "dim": 177, "upper": 2.114475316300649, "next": 1.999266572446568, "weight": 0.14068615643048743, "min": -3.1408021601200726}], "neutral_sixth_plaquette.py": [{"z": 0, "total": "7/2048"}, {"z": 1, "total": "-11/4608"}, {"z": 5, "total": "-11/4608"}, {"z": 2, "total": "0"}], "neutral_sixth_plaquette_independent.py": [{"z": 0, "total": "7/2048"}, {"z": 1, "total": "-11/4608"}, {"z": 5, "total": "-11/4608"}, {"z": 2, "total": "0"}]}, "original_pole_weight_coefficient": 1.864421862683507e-05, "scope": "Actual selected-symmetry-fibre mode in weak-coupling logarithmic-box family; not global-ground or empirical scalar"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w/outputs/native_six_layer_neutral_pole/result.json sha256=e2e5731926b2ff61dfeb758ca4688f255aa03538c98116e3c6754fa614239199
+{"controls": {"neutral_sixth_loop.py": [{"h": 1, "per_layer": "-1/128", "squared_resolvent_sum": "5/2048", "w": 1}, {"h": 1, "per_layer": "-3/8192", "squared_resolvent_sum": "13/65536", "w": 2}, {"h": 2, "per_layer": "-3/8192", "squared_resolvent_sum": "13/65536", "w": 1}], "neutral_sixth_plaquette.py": [{"total": "7/2048", "z": 0}, {"total": "-11/4608", "z": 1}, {"total": "-11/4608", "z": 5}, {"total": "0", "z": 2}], "neutral_sixth_plaquette_independent.py": [{"total": "7/2048", "z": 0}, {"total": "-11/4608", "z": 1}, {"total": "-11/4608", "z": 5}, {"total": "0", "z": 2}], "neutral_sixth_star.py": {"E_over_t": 2.1144753163006493, "a": 0.7140883235871018, "b": 0.3431493345632229, "center_weight": 0.29869300450170455, "gap_above_continuum": 0.11447531630064933, "rows": [{"curvature": -0.1481097040567647, "e": 2.1144751681909453, "q": 0.001}, {"curvature": -0.14810958859357015, "e": 2.114474723862295, "q": 0.002}, {"curvature": -0.14810870290205003, "e": 2.114471613583077, "q": 0.005}, {"curvature": -0.14810552897426277, "e": 2.114460505747752, "q": 0.01}, {"curvature": -0.1476862454287797, "e": 2.1129984538463615, "q": 0.1}, {"curvature": -0.13734636960297664, "e": 2.080138723899905, "q": 0.5}, {"curvature": -0.10236495181886163, "e": 2.0121103644817877, "q": 1.0}, {"curvature": null, "e": null, "q": 1.5}, {"curvature": null, "e": null, "q": 2.0}], "source_fraction": 0.0703430782152438, "source_weight": 0.1406861564304876}, "neutral_sixth_torus.py": [{"R": 8, "dim": 9, "min": -3.071097560073671, "next": 1.414213562373095, "upper": 2.2264255980310486, "weight": 0.1792359755912593}, {"R": 10, "dim": 11, "min": -3.075490222029872, "next": 1.7320508075688774, "upper": 2.1520905341620846, "weight": 0.12458531138505897}, {"R": 12, "dim": 15, "min": -3.0868033209628636, "next": 1.847759065022566, "upper": 2.14003310272113, "weight": 0.13309053068748705}, {"R": 16, "dim": 21, "min": -3.10275728618805, "next": 1.9318516525781333, "upper": 2.1213480866949888, "weight": 0.13276963656721408}, {"R": 20, "dim": 27, "min": -3.112402928110477, "next": 1.961570560806461, "upper": 2.1163187334620073, "weight": 0.13686565909525378}, {"R": 24, "dim": 33, "min": -3.1187570323763456, "next": 1.975376681190275, "upper": 2.1149608007465517, "weight": 0.13924436484609862}, {"R": 32, "dim": 45, "min": -3.1264940383215665, "next": 1.9874244197864854, "upper": 2.11450828053977, "weight": 0.14053215857586518}, {"R": 48, "dim": 69, "min": -3.1337433514988975, "next": 1.9949042292205066, "upper": 2.114475466919987, "weight": 0.14068495645255052}, {"R": 64, "dim": 93, "min": -3.1370095226337518, "next": 1.997259069509148, "upper": 2.1144753169891195, "weight": 0.14068614868691487}, {"R": 80, "dim": 117, "min": -3.1387770118009826, "next": 1.998291516774602, "upper": 2.1144753163037966, "weight": 0.14068615638476775}, {"R": 120, "dim": 177, "min": -3.1408021601200726, "next": 1.999266572446568, "upper": 2.114475316300649, "weight": 0.14068615643048743}]}, "original_pole_weight_coefficient": 1.864421862683507e-05, "scope": "Actual selected-symmetry-fibre mode in weak-coupling logarithmic-box family; not global-ground or empirical scalar", "status": "conditional-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_neutral_pole-ctsmrm7w elapsed_seconds= 1.0801289593800902
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

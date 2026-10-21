@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/native_character_independence.py
+runner_sha256: b45b92b7f6b310bb6cdc60233a3b5e499b0d22ef1b217e7c79c0753ea3ef8dc6
+input_fingerprint_sha256: cf34bc24d93de12ec377efd4cc8c02f031b7790e2eed8046793be677214b64eb
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_character_independence-7ufvtvw8
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_character_independence-7ufvtvw8/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_flat_character_control.py']
+{"rows": [{"R": 4, "dimension": 128, "minimum_flat_flip": 4, "checks": 120}, {"R": 6, "dimension": 2048, "minimum_flat_flip": 6, "checks": 120}, {"R": 8, "dimension": 32768, "minimum_flat_flip": 8, "checks": 120}], "direct_orbit_checks": 3072, "noninvariant_Z_character_mean": 0.0, "noninvariant_Z_classical_flat": 1, "scope": "Exact code algebra; arbitrary local noninvariant readouts are not state independent"}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_character_independence-7ufvtvw8/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_flat_character_control.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_character_independence-7ufvtvw8/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_flat_character_control.py']
+[PASS] native_character_independence:C001
+[PASS] native_character_independence:C002
+{"status": "conditional-support", "scope": "Invariant matched neutral collision does not require chosen X/Y character; low-energy preparation and positive Z planes remain", "control": {"rows": [{"R": 4, "dimension": 128, "minimum_flat_flip": 4, "checks": 120}, {"R": 6, "dimension": 2048, "minimum_flat_flip": 6, "checks": 120}, {"R": 8, "dimension": 32768, "minimum_flat_flip": 8, "checks": 120}], "direct_orbit_checks": 3072, "noninvariant_Z_character_mean": 0.0, "noninvariant_Z_classical_flat": 1, "scope": "Exact code algebra; arbitrary local noninvariant readouts are not state independent"}}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_character_independence-7ufvtvw8/outputs/native_character_independence/result.json sha256=e13e689e05a73fcadeb6d78733a64fea39a6ef646c1b41d56c662acc7a74620c
+{"control": {"direct_orbit_checks": 3072, "noninvariant_Z_character_mean": 0.0, "noninvariant_Z_classical_flat": 1, "rows": [{"R": 4, "checks": 120, "dimension": 128, "minimum_flat_flip": 4}, {"R": 6, "checks": 120, "dimension": 2048, "minimum_flat_flip": 6}, {"R": 8, "checks": 120, "dimension": 32768, "minimum_flat_flip": 8}], "scope": "Exact code algebra; arbitrary local noninvariant readouts are not state independent"}, "scope": "Invariant matched neutral collision does not require chosen X/Y character; low-energy preparation and positive Z planes remain", "status": "conditional-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_character_independence-7ufvtvw8 elapsed_seconds= 0.15086195897310972
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

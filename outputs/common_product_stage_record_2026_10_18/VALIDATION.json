@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "base_revision": "9f375bb40cb7bc28209a10387944f7262d7021f8",
+  "manifest_sha256": "4bd97772cb881890ab7b1d972706709e9d39bde2a8def1027ee276255c18b79a",
+  "notes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/common_product_stage_record_publication/NOTE.md",
+      "destination": "docs/COMMON_PRODUCT_STAGE_RECORD_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "dae19d4f8d81222109776500642fad6677c4e0ccd011bce6849da298a33fcef3"
+    }
+  ],
+  "files": 18,
+  "provenance": 1,
+  "links": 3,
+  "nodes": 7254,
+  "edges": 16249,
+  "added_nodes": [
+    "common_product_stage_record_bounded_theorem_note_2026-10-18"
+  ],
+  "old_dependency_and_note_hashes_unchanged": true,
+  "old_manifest_entries_unchanged": true,
+  "limits": "Mechanical installed source/provenance/link/topology checks only. Scoped analytical and exact finite matrix checks separately pinned; no retained audit."
+}

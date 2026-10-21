@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/native_loop_interaction_law.py
+runner_sha256: 6adfdb7bfaf89021a77d48c2f6a1bc92c27ef6ea5f6bac9b335952181f2d02ae
+input_fingerprint_sha256: cf34bc24d93de12ec377efd4cc8c02f031b7790e2eed8046793be677214b64eb
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 2.24
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_loop_interaction_law-zeaud6y3
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_loop_interaction_law-zeaud6y3/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_loop_interaction_control.py']
+{"rectangles": [{"a": 1, "b": 1, "coefficient": "-1/128"}, {"a": 2, "b": 1, "coefficient": "-3/8192"}, {"a": 2, "b": 2, "coefficient": "-9/262144"}, {"a": 3, "b": 1, "coefficient": "-9/262144"}, {"a": 3, "b": 2, "coefficient": "-143/33554432"}, {"a": 3, "b": 3, "coefficient": "-663/1073741824"}, {"a": 4, "b": 1, "coefficient": "-143/33554432"}, {"a": 4, "b": 2, "coefficient": "-663/1073741824"}, {"a": 4, "b": 3, "coefficient": "-6783/68719476736"}, {"a": 5, "b": 1, "coefficient": "-663/1073741824"}, {"a": 5, "b": 2, "coefficient": "-6783/68719476736"}], "nonrectangles": [{"N": 8, "turns": 6, "coefficient": "5/262144"}, {"N": 10, "turns": 6, "coefficient": "55/33554432"}, {"N": 12, "turns": 8, "coefficient": "-91/1073741824"}], "linked": [{"dz": 0, "coefficient": "3/65536"}, {"dz": 1, "coefficient": "-127/10616832"}, {"dz": 2, "coefficient": "0"}, {"dz": 3, "coefficient": "0"}], "diagonal_interaction": "545/5308416", "axis_interaction": "-9/32768"}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_loop_interaction_law-zeaud6y3/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_loop_interaction_control.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_loop_interaction_law-zeaud6y3/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_loop_interaction_control.py']
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_loop_interaction_law-zeaud6y3/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_loop_feshbach_control.py']
+[
+  {
+    "dz": 0,
+    "raw": "1/131072",
+    "fold": "5/131072",
+    "connected": "3/65536",
+    "E4": "-1/128",
+    "derivative4": "-5/2048"
+  },
+  {
+    "dz": 1,
+    "raw": "-133/2654208",
+    "fold": "5/131072",
+    "connected": "-127/10616832",
+    "E4": "-1/128",
+    "derivative4": "-5/2048"
+  },
+  {
+    "dz": 2,
+    "raw": "-5/131072",
+    "fold": "5/131072",
+    "connected": "0",
+    "E4": "-1/128",
+    "derivative4": "-5/2048"
+  }
+]
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_loop_interaction_law-zeaud6y3/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_loop_feshbach_control.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_loop_interaction_law-zeaud6y3/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_loop_feshbach_control.py']
+[PASS] native_loop_interaction_law:C001
+[PASS] native_loop_interaction_law:C002
+[PASS] native_loop_interaction_law:C003
+{"status": "bounded-support", "scope": "Exact local primitive and connected interaction coefficients; no observation or isolated-band test", "subset": {"rectangles": [{"a": 1, "b": 1, "coefficient": "-1/128"}, {"a": 2, "b": 1, "coefficient": "-3/8192"}, {"a": 2, "b": 2, "coefficient": "-9/262144"}, {"a": 3, "b": 1, "coefficient": "-9/262144"}, {"a": 3, "b": 2, "coefficient": "-143/33554432"}, {"a": 3, "b": 3, "coefficient": "-663/1073741824"}, {"a": 4, "b": 1, "coefficient": "-143/33554432"}, {"a": 4, "b": 2, "coefficient": "-663/1073741824"}, {"a": 4, "b": 3, "coefficient": "-6783/68719476736"}, {"a": 5, "b": 1, "coefficient": "-663/1073741824"}, {"a": 5, "b": 2, "coefficient": "-6783/68719476736"}], "nonrectangles": [{"N": 8, "turns": 6, "coefficient": "5/262144"}, {"N": 10, "turns": 6, "coefficient": "55/33554432"}, {"N": 12, "turns": 8, "coefficient": "-91/1073741824"}], "linked": [{"dz": 0, "coefficient": "3/65536"}, {"dz": 1, "coefficient": "-127/10616832"}, {"dz": 2, "coefficient": "0"}, {"dz": 3, "coefficient": "0"}], "diagonal_interaction": "545/5308416", "axis_interaction": "-9/32768"}, "independent_feshbach": [{"dz": 0, "raw": "1/131072", "fold": "5/131072", "connected": "3/65536", "E4": "-1/128", "derivative4": "-5/2048"}, {"dz": 1, "raw": "-133/2654208", "fold": "5/131072", "connected": "-127/10616832", "E4": "-1/128", "derivative4": "-5/2048"}, {"dz": 2, "raw": "-5/131072", "fold": "5/131072", "connected": "0", "E4": "-1/128", "derivative4": "-5/2048"}]}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_loop_interaction_law-zeaud6y3/outputs/native_loop_interaction_law/result.json sha256=d5cb361a1a43884702f14b538019a0ee8e1d82940ec29f282f44bbab0880b3b8
+{"independent_feshbach": [{"E4": "-1/128", "connected": "3/65536", "derivative4": "-5/2048", "dz": 0, "fold": "5/131072", "raw": "1/131072"}, {"E4": "-1/128", "connected": "-127/10616832", "derivative4": "-5/2048", "dz": 1, "fold": "5/131072", "raw": "-133/2654208"}, {"E4": "-1/128", "connected": "0", "derivative4": "-5/2048", "dz": 2, "fold": "5/131072", "raw": "-5/131072"}], "scope": "Exact local primitive and connected interaction coefficients; no observation or isolated-band test", "status": "bounded-support", "subset": {"axis_interaction": "-9/32768", "diagonal_interaction": "545/5308416", "linked": [{"coefficient": "3/65536", "dz": 0}, {"coefficient": "-127/10616832", "dz": 1}, {"coefficient": "0", "dz": 2}, {"coefficient": "0", "dz": 3}], "nonrectangles": [{"N": 8, "coefficient": "5/262144", "turns": 6}, {"N": 10, "coefficient": "55/33554432", "turns": 6}, {"N": 12, "coefficient": "-91/1073741824", "turns": 8}], "rectangles": [{"a": 1, "b": 1, "coefficient": "-1/128"}, {"a": 2, "b": 1, "coefficient": "-3/8192"}, {"a": 2, "b": 2, "coefficient": "-9/262144"}, {"a": 3, "b": 1, "coefficient": "-9/262144"}, {"a": 3, "b": 2, "coefficient": "-143/33554432"}, {"a": 3, "b": 3, "coefficient": "-663/1073741824"}, {"a": 4, "b": 1, "coefficient": "-143/33554432"}, {"a": 4, "b": 2, "coefficient": "-663/1073741824"}, {"a": 4, "b": 3, "coefficient": "-6783/68719476736"}, {"a": 5, "b": 1, "coefficient": "-663/1073741824"}, {"a": 5, "b": 2, "coefficient": "-6783/68719476736"}]}}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_loop_interaction_law-zeaud6y3 elapsed_seconds= 2.1884069577790797
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

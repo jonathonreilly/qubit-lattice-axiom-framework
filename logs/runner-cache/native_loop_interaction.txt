@@ -1,0 +1,1033 @@
+===== runner cache v1 =====
+runner: scripts/native_loop_interaction.py
+runner_sha256: 46f3604ff1432bb7616525ee09d4e9bed64715f0b079f8b6ff723f1b04c5cb48
+input_fingerprint_sha256: 64f193456c026becde36023d67d4ad40731bbd98bc66945736b739a02805fae7
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 3.39
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-axa4_pa4
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C001 colored cycle exact coefficient
+[PASS] P9745-C002 rectangle closed coefficient
+[PASS] P9745-C002 rectangle closed coefficient
+[PASS] P9745-C002 rectangle closed coefficient
+[PASS] P9745-C002 rectangle closed coefficient
+[PASS] P9745-C002 rectangle closed coefficient
+[PASS] P9745-C002 rectangle closed coefficient
+[PASS] P9745-C002 rectangle closed coefficient
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+[PASS] P9745-C003 reference parity and source derivative
+{
+  "status": "PASS",
+  "cycles": [
+    {
+      "n": 4,
+      "color_assignments": 16,
+      "coefficients": {
+        "0": "-5/2",
+        "2": "1/2",
+        "4": "-1/2"
+      }
+    },
+    {
+      "n": 6,
+      "color_assignments": 64,
+      "coefficients": {
+        "0": "-63/8",
+        "2": "7/8",
+        "4": "-3/8",
+        "6": "3/8"
+      }
+    },
+    {
+      "n": 8,
+      "color_assignments": 256,
+      "coefficients": {
+        "0": "-429/16",
+        "2": "33/16",
+        "4": "-9/16",
+        "6": "5/16",
+        "8": "-5/16"
+      }
+    }
+  ],
+  "rectangles": [
+    {
+      "width": 1,
+      "coefficient": "-1/2",
+      "bulk_K": "1/128"
+    },
+    {
+      "width": 2,
+      "coefficient": "-3/8",
+      "bulk_K": "3/8192"
+    },
+    {
+      "width": 3,
+      "coefficient": "-9/16",
+      "bulk_K": "9/262144"
+    },
+    {
+      "width": 4,
+      "coefficient": "-143/128",
+      "bulk_K": "143/33554432"
+    },
+    {
+      "width": 5,
+      "coefficient": "-663/256",
+      "bulk_K": "663/1073741824"
+    },
+    {
+      "width": 6,
+      "coefficient": "-6783/1024",
+      "bulk_K": "6783/68719476736"
+    },
+    {
+      "width": 7,
+      "coefficient": "-37145/2048",
+      "bulk_K": "37145/2199023255552"
+    }
+  ],
+  "reference_and_source_checks": 592,
+  "scope": "Distinct-edge formal coefficients and source derivatives only; full-H remainder and empirical identification open"
+}
+AGGREGATE_RESULT {"cycles": [{"coefficients": {"0": "-5/2", "2": "1/2", "4": "-1/2"}, "color_assignments": 16, "n": 4}, {"coefficients": {"0": "-63/8", "2": "7/8", "4": "-3/8", "6": "3/8"}, "color_assignments": 64, "n": 6}, {"coefficients": {"0": "-429/16", "2": "33/16", "4": "-9/16", "6": "5/16", "8": "-5/16"}, "color_assignments": 256, "n": 8}], "rectangles": [{"bulk_K": "1/128", "coefficient": "-1/2", "width": 1}, {"bulk_K": "3/8192", "coefficient": "-3/8", "width": 2}, {"bulk_K": "9/262144", "coefficient": "-9/16", "width": 3}, {"bulk_K": "143/33554432", "coefficient": "-143/128", "width": 4}, {"bulk_K": "663/1073741824", "coefficient": "-663/256", "width": 5}, {"bulk_K": "6783/68719476736", "coefficient": "-6783/1024", "width": 6}, {"bulk_K": "37145/2199023255552", "coefficient": "-37145/2048", "width": 7}], "reference_and_source_checks": 592, "scope": "Distinct-edge formal coefficients and source derivatives only; full-H remainder and empirical identification open", "status": "PASS"}
+per_element: each named assertion checks the declared coefficient, matrix entry or numerical residual; arithmetic scope is retained.
+per_site: the supplied physical-qubit and projected-site models are distinguished; no physical primitive is inferred from them.
+per_mode: finite momenta and selected source channels only; frozen large-grid identities are not fresh spectral replays.
+per_block: actual completed assertion groups and child exit codes are counted; missing fresh artifacts fail closed.
+lattice_wide: Finite declared models and conditional analytical hypotheses only; full microscopic resonance and physical interpretation remain open.
+Execution evidence: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-axa4_pa4 elapsed_seconds= 3.3076928327791393
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-axa4_pa4/aggregate.json sha256=1463ca2c69c4830eda407c09c7348c945157d344ad3d2da2d4bef8b8e68c81df
+EVIDENCE_JSON /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/neutral-continuation-axa4_pa4/execution-copy-map.json sha256=0659da12ca5d8011525a37f1b5d98b1791e196d6d47faea1c2c75e779167429f
+Assertion evaluations=935; PASS counts distinct completed assertion groups.
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

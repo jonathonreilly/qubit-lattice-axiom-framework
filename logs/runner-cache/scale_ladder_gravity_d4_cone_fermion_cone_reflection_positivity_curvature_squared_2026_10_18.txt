@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_d4_cone_fermion_cone_reflection_positivity_curvature_squared_2026_10_18.py
+runner_sha256: efadc538b83cac9211bd4acf6868f59ac248c1eee6b9851aa8e7fb3489e88313
+input_fingerprint_sha256: b8db6c19dc339a866b208fef9a5c403adb3cb46a36dc880a331cc86c1fb22df0
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 23.13
+status: ok
+----- stdout -----
+[PASS] J1 finite supplied-model control; fixture and predicate specified in source  counts [8, 72, 208, 240, 96]; |d d| 2e-16; min mass eigenvalue 6.65e-03
+[PASS] J2 finite supplied-model control; fixture and predicate specified in source  counts [1, 4, 6, 4, 1]; max |lambda/k^2 - 1| 3e-06; gap 25.4
+[PASS] J3 finite supplied-model control; fixture and predicate specified in source  max |lambda|/k^2 3.1e-09; next 1.0e+04
+[PASS] J4 finite supplied-model control; fixture and predicate specified in source  NN min/max -2e-16; higher-derivative -2.7e-02; consistent-mass P1 -9.3e-05
+[PASS] J5 finite supplied-model control; fixture and predicate specified in source  min/max eigenvalue over 2 momenta x 2 planes -2.1e-16
+[PASS] J6 finite supplied-model control; fixture and predicate specified in source  min/max -1.6e-14; control -9.2e-04
+[PASS] J7 finite supplied-model control; fixture and predicate specified in source  Kuhn 5 -> 4; D4 8 -> 6; D4 next eigenvalue 1.37
+[PASS] J8 finite supplied-model control; fixture and predicate specified in source  Kuhn real-energy roots [0.05, 1.889]; D4 [0.05, 2.752, 2.947]
+[PASS] J9 finite supplied-model control; fixture and predicate specified in source  D4 face -1.9999/-1.0001; Kuhn rel -1.9998/-1.0001; Kuhn plain -1.9998/-1.0001; D4 face -2.0000/-1.0000; Kuhn rel -1.9998/-1.0000; Kuhn plain -1.9998/-1.0000
+[PASS] J10 finite supplied-model control; fixture and predicate specified in source  h_tt k^2 -1.8369; h_tt * 4 sin^2(1/2) -1.6889
+per_element: explicit simplex geometry and local matrix entries are computed on the supplied finite carrier; no microscopic interaction supplier is derived
+per_site: listed vertex types and periodic-cell incidences are included; arbitrary lattice defects and unspecified site models are untested
+per_mode: only the literal momentum fixtures, thresholds and finite scans above are tested; no complete zero-set or spectrum census is certified
+per_block: the displayed cell operators and source or covariance contractions are evaluated; numerical pass labels do not supply an interacting physical theory
+lattice_wide: finite periodic-symbol diagnostics and explicitly stated constructive identities only; thermodynamic limits, all-volume OS positivity and physical reconstruction remain deferred
+
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

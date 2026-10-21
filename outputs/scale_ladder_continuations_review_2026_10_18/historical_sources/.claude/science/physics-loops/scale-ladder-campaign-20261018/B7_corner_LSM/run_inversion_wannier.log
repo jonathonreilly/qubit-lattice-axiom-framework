@@ -1,0 +1,6 @@
+   search: best rank-6 combination doublet seed 2, on-site quartet 1, Gram lambda_min (N = 16) 0.2256
+   rank 2 (cube-centre doublet): Gram lambda_min (N = 96) 0.7400, Lipschitz bound 2.899, certified 0.5757, P symmetric under all 48 dressed O_h: True, rank ok: True
+   rank 6 (doublet + on-site quartet): Gram lambda_min (N = 144) 0.2172, Lipschitz bound 4.633, certified 0.0421, P symmetric under all 48 dressed O_h: True, rank ok: True
+[PASS] Gh: symmetric Wannier bands of rank 2 and 6 with certified nonsingular Gram matrix; H = -P gives gapped symmetric Slater insulators at nu = 2 and 6, H = +P at nu = 10 and 6 (complements); with the on-site quartets (nu = 4, 8) every even nu is realised under Gh
+
+TOTAL: PASS=1 FAIL=0   (127 s)

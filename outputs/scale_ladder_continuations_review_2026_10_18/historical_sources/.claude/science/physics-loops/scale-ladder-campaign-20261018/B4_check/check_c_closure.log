@@ -1,0 +1,39 @@
+R1 relabelling invariance on 3^3 (D^T r1[N] == 0): True
+
+== closure solution space for (a, b, f); expected 1-dim ray (2,-1,1) = DeWitt, eps3 = 0 ==
+   n=3 timing=mean4  lapses=delta(0), delta(e1)     : rank D = 78; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=3 timing=mean4  lapses=delta(0), delta(e1+e2)  : rank D = 78; closing (a,b,f) space dim 3: [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+   n=3 timing=mean4  lapses=random ints             : rank D = 78; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=3 timing=mean4  lapses=smooth-ish              : rank D = 78; closing (a,b,f) space dim 2: [(-2, 1, 0), (0, 0, 1)]
+   n=3 timing=opp_a  lapses=delta(0), delta(e1)     : rank D = 78; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=3 timing=opp_a  lapses=delta(0), delta(e1+e2)  : rank D = 78; closing (a,b,f) space dim 3: [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+   n=3 timing=opp_a  lapses=random ints             : rank D = 78; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=3 timing=opp_a  lapses=smooth-ish              : rank D = 78; closing (a,b,f) space dim 2: [(-2, 1, 0), (0, 0, 1)]
+   n=3 timing=opp_b  lapses=delta(0), delta(e1)     : rank D = 78; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=3 timing=opp_b  lapses=delta(0), delta(e1+e2)  : rank D = 78; closing (a,b,f) space dim 3: [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+   n=3 timing=opp_b  lapses=random ints             : rank D = 78; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=3 timing=opp_b  lapses=smooth-ish              : rank D = 78; closing (a,b,f) space dim 2: [(-2, 1, 0), (0, 0, 1)]
+   n=3 timing=corner lapses=delta(0), delta(e1)     : rank D = 78; closing (a,b,f) space dim 0: []
+   n=3 timing=corner lapses=delta(0), delta(e1+e2)  : rank D = 78; closing (a,b,f) space dim 2: [(1, 0, 0), (0, 1, 0)]
+   n=3 timing=corner lapses=random ints             : rank D = 78; closing (a,b,f) space dim 0: []
+   n=3 timing=corner lapses=smooth-ish              : rank D = 78; closing (a,b,f) space dim 2: [(-2, 1, 0), (0, 0, 1)]
+   n=4 timing=mean4  lapses=delta(0), delta(e1)     : rank D = 189; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=4 timing=mean4  lapses=delta(0), delta(e1+e2)  : rank D = 189; closing (a,b,f) space dim 3: [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+   n=4 timing=mean4  lapses=random ints             : rank D = 189; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=4 timing=mean4  lapses=smooth-ish              : rank D = 189; closing (a,b,f) space dim 2: [(-2, 1, 0), (0, 0, 1)]
+   n=4 timing=corner lapses=delta(0), delta(e1)     : rank D = 189; closing (a,b,f) space dim 0: []
+   n=4 timing=corner lapses=delta(0), delta(e1+e2)  : rank D = 189; closing (a,b,f) space dim 2: [(1, 0, 0), (0, 1, 0)]
+   n=4 timing=corner lapses=random ints             : rank D = 189; closing (a,b,f) space dim 0: []
+   n=4 timing=corner lapses=smooth-ish              : rank D = 189; closing (a,b,f) space dim 2: [(-2, 1, 0), (0, 0, 1)]
+   n=5 timing=mean4  lapses=random ints             : rank D = 372; closing (a,b,f) space dim 1: [(2, -1, 1)]
+   n=5 timing=corner lapses=random ints             : rank D = 372; closing (a,b,f) space dim 0: []
+
+== float SVD gap at the B4 script's four kinetic points (n=3, random lapses, mean4) ==
+   alpha_d=alpha_f, c=1/2        : true eps3 = alpha_f/alpha_d - 1 = +0.000000; sigma_78..80/sigma_1 = 2.67e-01, 1.10e-16, 9.32e-17; relative residual outside range(D) 2.00e-15
+   alpha_d=1.1 alpha_f, c=1/2    : true eps3 = alpha_f/alpha_d - 1 = -0.090909; sigma_78..80/sigma_1 = 2.67e-01, 1.84e-02, 1.00e-16; relative residual outside range(D) 4.00e-02
+   alpha_d=0.8 alpha_f, c=1/2    : true eps3 = alpha_f/alpha_d - 1 = +0.250000; sigma_78..80/sigma_1 = 2.68e-01, 4.13e-02, 1.02e-16; relative residual outside range(D) 8.83e-02
+   alpha_d=alpha_f, c=1/3        : true eps3 = alpha_f/alpha_d - 1 = +0.000000; sigma_78..80/sigma_1 = 2.83e-01, 2.18e-01, 1.09e-16; relative residual outside range(D) 4.86e-01
+   alpha_d=(1+1e-6) alpha_f      : true eps3 = alpha_f/alpha_d - 1 = -0.000001; sigma_78..80/sigma_1 = 2.67e-01, 1.91e-07, 9.93e-17; relative residual outside range(D) 4.14e-07
+
+== (b) eps3 of alpha tr hdot^2 + beta (tr hdot)^2 ==
+   M1 = alpha+beta, M2 = 2 beta, M3 = 2 alpha -> eps3 = 0

@@ -1,0 +1,211 @@
+{
+  "kind": "bounded_named_source_identity_manifest",
+  "scope": "Exact dependencies reused within their selectively checked scope; no blanket ancestral recertification. No recursive publication archive.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/bandcenter_bandwidth_check/REVIEW.md",
+      "bytes": 10610,
+      "sha256": "3f721b75911630e0aec48688893c6bae84a182cafaa1012c977e9e262d6e180d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/bandcenter_bandwidth_extension/PROPOSAL.md",
+      "bytes": 13793,
+      "sha256": "d79a1e9abbf0508a05169d4588539063854f0604ba8db933cf878496aa7328a2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/bipartite_mediator_supply/PROPOSAL.md",
+      "bytes": 12856,
+      "sha256": "836caee25d87e31c757e8965b4de85d5998a613dcc5862072d6cddc2a380c8dc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/bipartite_mediator_supply_check/REVIEW.md",
+      "bytes": 5375,
+      "sha256": "78af05b19696d2cae2cf147c1e666c9c1a39ca0a2ba9c67a8d1746c12c72de8f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_apparatus_recovery/PROPOSAL.md",
+      "bytes": 15232,
+      "sha256": "83530c67a650ae309fa920c0d149388080bb47178fd2b9f2a4cba88512be6333"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_apparatus_recovery_check/REVIEW.md",
+      "bytes": 4889,
+      "sha256": "6f1b07555cd71a9e4208041c5249e892cf4b7f41ea25c92ed47c5b22b974a79f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_complete_output/INTERFACE_DRAFT.md",
+      "bytes": 7451,
+      "sha256": "cbe266a974f6b9bf4fb76e01a2f942a2cddc074bc3e16b670f944a754c91c31f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_complete_output/PROPOSAL.md",
+      "bytes": 11771,
+      "sha256": "6ed86c33b624ffc8f672e0f2380194fb624c9678b6f477ccab6f5cb59eef57f7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_complete_output_check/INTERFACE_REVIEW.md",
+      "bytes": 8211,
+      "sha256": "d7137873ab8ddeb1334587c794d019dc1c4c55a4760455654d985690b4e42d87"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_complete_output_check/REVIEW.md",
+      "bytes": 7749,
+      "sha256": "e9d6b3462945e307b8ae043bcbd62f923ae969c5de644ff55d90dc635c629513"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_critical_source_interface/PROPOSAL.md",
+      "bytes": 15217,
+      "sha256": "d2b7b435f6813847a0b293d5584a3aa5af844a02be09a95b768adc4ea4f963e3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_critical_source_interface_check/CORRECTION_RECHECK.md",
+      "bytes": 5089,
+      "sha256": "2cea5e9a3cd59b63d09bf21c1ddb929fff2251f9044ed3bd7189b3df10062ff8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_critical_source_interface_check/REVIEW.md",
+      "bytes": 20076,
+      "sha256": "bda0710050f4154b190220419a1240c52adc04b15d0dfdb1a8e3ed27c22e6a7f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_energy_resolved_raw/PROPOSAL.md",
+      "bytes": 11889,
+      "sha256": "7b74e1850a59a4d809edf0a049aa1fb5e773ddb5fdfb88aea563b2ba6db6fa44"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_energy_resolved_raw_check/REVIEW.md",
+      "bytes": 7149,
+      "sha256": "be74e1e896b508bcfa2e50d65ae2ff87663eefeecd785e3a5819fa87e821a1cc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_finite_cut_interface/PROPOSAL.md",
+      "bytes": 15549,
+      "sha256": "5bcb4f17ae54f968a5d7566a2215810309b76351463e5034c5ee50d8cb307822"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_finite_cut_interface_check/REVIEW.md",
+      "bytes": 14557,
+      "sha256": "0c089edf2a2b85fb30c37675e5da085dac3c4f721b263a35fb85e3c1094a14af"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_lattice_embedding/PROPOSAL.md",
+      "bytes": 12245,
+      "sha256": "d776246fb1a96136ef647da6d0311b58d64b581819ed9dfdb086e87896e6fe58"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_loaded_inverse_interface/PROPOSAL.md",
+      "bytes": 26824,
+      "sha256": "5f909e1ea897e9aaef31dd362e42fc60d5ba0b5f595d28bd12f1d000d8552a22"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_loaded_inverse_interface_check/REVIEW.md",
+      "bytes": 10993,
+      "sha256": "f6303bb308a56b0db39cf66b673e40174be775e7a32a71f28a6e489beb3990c3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_mass_tuned_family/PROPOSAL.md",
+      "bytes": 6895,
+      "sha256": "d01ed6b60f3bacf2b7557687995902f8c3e172eafecd7a1547cb3bc458451883"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_mass_tuned_family_check/REVIEW.md",
+      "bytes": 7559,
+      "sha256": "6a7a9f0dcb6ea04e5bde943e99a9ab7e04755ab0cfb26a07e6d1a4fd4e174b2e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_product_seed_witness/PROPOSAL.md",
+      "bytes": 5008,
+      "sha256": "57892f7690a5f634c44c2fe0752c5cfb682d3fbfbda1aa4c1ca4edd45bb0fdee"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_product_seed_witness_check/REVIEW.md",
+      "bytes": 6616,
+      "sha256": "aac24f84f9373a5e59511195e717780d24ecffc41c1e4cb878bcf262a4085630"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_pulse_bridge_plan/PROPOSAL.md",
+      "bytes": 20863,
+      "sha256": "2ad7f5936ab6044d180fe16ddf96f954a077f81f9d3e760df64ee373689b9e36"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_pulse_bridge_plan_check/REVIEW.md",
+      "bytes": 9730,
+      "sha256": "b7b8697bbda3746ba98373562cbb9648bb8bc65d378887bcd4b56fe16d4f13cc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_raw_traveling/PROPOSAL.md",
+      "bytes": 11012,
+      "sha256": "263929233b06c4466535452e95f3a05ecfd6ab1a1046938bbac57322c2870f97"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_raw_traveling_check/REVIEW.md",
+      "bytes": 9433,
+      "sha256": "111aaeff2a9839c028d2cf203c4cb5d324cca3ffcec2b0d7f127be9bc8732186"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_seed_regularity/PROPOSAL.md",
+      "bytes": 10238,
+      "sha256": "f8153ddb6a86a58e04e9d69a1ef98d13feefe8f0171ba3cbb3e98cf35ae4522b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_seed_regularity_check/REVIEW.md",
+      "bytes": 11101,
+      "sha256": "9d837417cc295e6d96fcaf1c8db5aad508d618f90cd57bcb9d560bb70640ea6d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_source_time_composition/PROPOSAL.md",
+      "bytes": 22918,
+      "sha256": "73116231ff9d68e030b86def616eb69c088d72647005049279d82b5d0ab4137e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_source_time_composition_check/REVIEW.md",
+      "bytes": 6294,
+      "sha256": "496164c0b8fff7dcd6bdb5f2037ba07c7954bd1720f2c6f881030a6b47fd7ebb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/prepared_core_composition_check/REVIEW.md",
+      "bytes": 9403,
+      "sha256": "52edba6061be49eef40b5c06754a7425b5f7f62671f175cc72a093d4a60de65c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/prepared_core_dwell_check/REVIEW.md",
+      "bytes": 10030,
+      "sha256": "88274b8b49e583bdb9b5f933f7406b1a96a6ca79049e57b83e8030c834d16819"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/prepared_core_recovery/PROPOSAL.md",
+      "bytes": 24731,
+      "sha256": "cce29994b7141df161ca12f377765fdaf760f7e64fc56043bbf370e2cd437ea9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/three_site_all_late_reference/PROPOSAL.md",
+      "bytes": 12039,
+      "sha256": "7044e77bcf2d944a3f1b4286b885691fd9f88e733a6ab49514111af5acbc5966"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/three_site_all_late_reference_check/REVIEW.md",
+      "bytes": 6307,
+      "sha256": "4ba80afbbc2301fbb4e23aafe59f85b3a85ebdab160101f970774d0383139247"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/three_site_outgoing/PROPOSAL.md",
+      "bytes": 13773,
+      "sha256": "af580b44fc2ebfc35eb014ffc63b8bae17464150677ede4a8b8315886f6f36ac"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/three_site_outgoing_check/REVIEW.md",
+      "bytes": 8055,
+      "sha256": "721a183db3e42527d7cb5bdda697e6c6d81312a94cf047dd7ea15897cb4c2f02"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/three_site_product_source/PROPOSAL.md",
+      "bytes": 13214,
+      "sha256": "a89025dafcb588459e88c14fa802e9e9ce2e5184aa42d9d22f6521a1dadb4823"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/three_site_product_source_check/REVIEW.md",
+      "bytes": 8100,
+      "sha256": "c161daea2f3a126ad84baaa63d975b5d80fd3243f11ca3b1075673f62530245b"
+    }
+  ]
+}

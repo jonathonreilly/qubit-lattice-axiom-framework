@@ -26,13 +26,13 @@
     "corner_fermion_massless_dirac_pair_protected_by_cube_rotations_and_pseudoscalar_dirac_mass_bounded_theorem_note_2026-10-17",
     "the_generated_staggered_mass_responds_to_the_diagonal_metric_and_to_no_shear_a_length_dressed_nn_law_is_shear_blind_and_the_vacuums_even_sum_translations_forbid_any_nn_t2_coupling_bounded_theorem_note_2026-09-04"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 2.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/collective_corner_response.py",
   "title": "Collective response of the supplied corner lattice",
-  "transitive_descendants": 0,
+  "transitive_descendants": 3,
   "verdict_rationale": null
 }

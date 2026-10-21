@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_records_to_geometry_lossless_passing_and_the_tick_2026_10_18.py
+runner_sha256: c94310eb3f22e2d72d74735738a3d1de481b7b87ba2650bb55259b4d5a4dafc7
+input_fingerprint_sha256: 60c11587900692899c3a8d927814e23bd417498c7ef62954ef6975466a7e29bd
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 7.14
+status: ok
+----- stdout -----
+[PASS] neutralized torus equations and fixed singular-mode gauges  positive residual 1.275e-16; checkerboard residual 2.056e-16
+[PASS] unneutralized delta source residual mutant detected
+[PASS] finite torus checkerboard conjugacy and two-epsilon screening-length diagnostic  |lean-away - (-1)^r average| 4e-16; screening range eps=0.03: 2.32, eps=0.01: 4.04 (ratio 1.74, sqrt3 = 1.73)
+[PASS] finite two-site block means: channel exchange and sampled suppression ratio  plain: average 0.0247, lean-away 6.5e-08; chessboard: average 6.5e-08, lean-away 0.0247
+Dirichlet CG free=59319 status=0 relative residual=8.621e-13
+Dirichlet CG free=59318 status=0 relative residual=7.414e-13
+Dirichlet CG free=59319 status=0 relative residual=8.907e-13
+Dirichlet CG free=59300 status=0 relative residual=8.393e-13
+Dirichlet CG free=59319 status=0 relative residual=8.852e-13
+Dirichlet CG free=59286 status=0 relative residual=7.985e-13
+[PASS] finite Dirichlet clusters: drain far-field proxy per site and pinned-value proxy differ  drain coefficient per record 0.00524, 0.00524, 0.00524; holding: 1 records -> 0.176, 33 -> 1.022
+[PASS] segment gauge identity at (np.complex128(0.02+0j), np.complex128(-0.01+0j), np.complex128(0.015+0j), np.complex128(0.01j))  smallest singular value 0.46482
+[PASS] segment gauge identity at (np.complex128(0.004+0j), np.complex128(0.003+0j), np.complex128(-0.002+0j), np.complex128(0.005j))  smallest singular value 0.465602
+[PASS] two nondegenerate segment fixtures: transverse symmetric source pairing and unprojected temporal source contrast  conserved residual <= 6e-15; current-free source residual >= 0.70
+[PASS] specified leapfrog fixture: n=1 growth and n=2 finite pulse speeds near one  speeds axis 1.000, face 1.050, body 1.050
+[PASS] leapfrog checkerboard characteristic roots
+seeded asynchronous fixture: peak radius=7.000, amplification=7.52498; amplification is not nonpropagation
+[PASS] growing remote pulse rejected by localization diagnostic
+[PASS] specified coherent variable-step fixture: three finite pulse speeds near one; asynchronous amplitude reported separately  coherent random ticks: speeds 0.988, 0.988, 1.043
+[PASS] one-dimensional finite pulse-delay fixture agrees with leading weak-well travel-time formulas  lapse-only 6.0, full 12.5, integral |Phi| 6.02
+[PASS] finite Pauli-sine propagator shell weights versus specified scalar heat-kernel monotonicity  complex: share in 0.6t-1.1t 0.32, beyond 1.1t 6.1e-04, beyond 1.3t 9.4e-08
+growth p=1.0 ticks=30: first boundary contact=None, cross-face neighbor proposals=0; periodic-box diagnostic
+growth p=0.05 ticks=300: first boundary contact=262, cross-face neighbor proposals=3404; periodic-box diagnostic
+[PASS] finite periodic growth extents: deterministic diamond fixture and seeded p=.05 torus ratio, with boundary diagnostics  body/axis 0.579 (p=1), 0.978 (p=0.05); axis speed 1.00 vs 0.134 sites/tick
+per_element: neutralized finite Green equations and segment matrix entries retain their explicit normalization and sources.
+per_site: finite Dirichlet source clusters and seeded update masks are checked; physical record-to-stress identification is untested.
+per_mode: segment rank, complex momentum pairing and the specified propagator are checked at the declared finite fixtures.
+per_block: plain and checkerboard two-site block means are compared on one fixed periodic Green-function box.
+lattice_wide: periodic finite boxes only; unbounded growth, general asynchronous integrators and physical clock laws are untested.
+
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

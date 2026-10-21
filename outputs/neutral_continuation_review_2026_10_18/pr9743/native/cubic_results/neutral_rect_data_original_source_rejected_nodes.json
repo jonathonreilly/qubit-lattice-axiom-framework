@@ -1,0 +1,45 @@
+{
+  "source": "original Cz=sumZ_r Z_r+2z",
+  "mean": 12.859824288433577,
+  "variance": 115.46267316194994,
+  "peaks": [
+    {
+      "gap": 4.428989279112663,
+      "residual": 0.04929910593700182,
+      "source_weight": 25.127188004970993,
+      "accepted": false
+    },
+    {
+      "gap": 3.8614885652800197,
+      "residual": 0.01303180702238647,
+      "source_weight": 18.792392507808675,
+      "accepted": false
+    },
+    {
+      "gap": 4.121073485798362,
+      "residual": 0.04266675754635531,
+      "source_weight": 10.93061480850091,
+      "accepted": false
+    },
+    {
+      "gap": 5.906115484754238,
+      "residual": 1.0371697547193888,
+      "source_weight": 8.127491783521062,
+      "accepted": false
+    },
+    {
+      "gap": 0.8807681574284345,
+      "residual": 6.38285224109313e-12,
+      "source_weight": 4.829390731420217,
+      "accepted": true
+    },
+    {
+      "gap": 8.866279113880907,
+      "residual": 0.9430790759437672,
+      "source_weight": 4.105314712132803,
+      "accepted": false
+    }
+  ],
+  "seconds": 645.857923746109,
+  "scope": "Finite3x3x4 nativeH selectedplane+/q0; givenoriginalreadout, noempiricalidentification"
+}

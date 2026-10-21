@@ -1,0 +1,19 @@
+{
+  "shape": [
+    5,
+    5,
+    9
+  ],
+  "physical_spins": 225,
+  "orbit_norm2": 0.9999999999999996,
+  "source_norm2": 2.0,
+  "errors": {
+    "host_plus_interval": 0.0,
+    "interval_2": 0.0,
+    "interval_3": 0.0,
+    "frozen_separated": 0.0,
+    "physical_source": 0.0
+  },
+  "source_coefficient": "-sqrt(2) lambda",
+  "K1_hopping": -2
+}

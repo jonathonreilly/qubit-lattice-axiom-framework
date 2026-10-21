@@ -1,0 +1,158 @@
+===== runner cache v1 =====
+runner: scripts/native_assisted_hop.py
+runner_sha256: b434b6c236b556561288817e90de42ba15a9df0c611b820d1bb4b0ab997cb7cf
+input_fingerprint_sha256: 537b5d1ffc6a20a8be1e04aa211aabf82dff28f165f23361ce3b9bcd95a92805
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_assisted_hop-vxm1zzn9
+[PASS] P9793:C001
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_assisted_hop-vxm1zzn9/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_third_order_symbolic.py', '6']
+{
+  "status": "pass",
+  "all_background_symbolic": true,
+  "rows": [
+    {
+      "axis": "x",
+      "background_changed": false,
+      "result": {
+        "0": "1/8"
+      },
+      "raw": {
+        "0": "-299/64",
+        "195": "1/64",
+        "2145": "1/64"
+      },
+      "fold": {
+        "0": "-307/64",
+        "195": "1/64",
+        "2145": "1/64"
+      }
+    },
+    {
+      "axis": "x",
+      "background_changed": true,
+      "result": {
+        "0": "-1/4"
+      },
+      "raw": {
+        "0": "-1/4"
+      },
+      "fold": {}
+    },
+    {
+      "axis": "y",
+      "background_changed": false,
+      "result": {
+        "3": "1/8"
+      },
+      "raw": {
+        "3": "-299/64",
+        "192": "1/64",
+        "3221225472": "1/64"
+      },
+      "fold": {
+        "3": "-307/64",
+        "192": "1/64",
+        "3221225472": "1/64"
+      }
+    },
+    {
+      "axis": "y",
+      "background_changed": true,
+      "result": {
+        "3": "1/4"
+      },
+      "raw": {
+        "3": "1/4"
+      },
+      "fold": {}
+    }
+  ]
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_assisted_hop-vxm1zzn9/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_third_order_symbolic.py', '6']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_assisted_hop-vxm1zzn9/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_third_order_symbolic.py', '6']
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_assisted_hop-vxm1zzn9/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_third_order_symbolic.py', '7']
+{
+  "status": "pass",
+  "all_background_symbolic": true,
+  "rows": [
+    {
+      "axis": "x",
+      "background_changed": false,
+      "result": {
+        "0": "1/8"
+      },
+      "raw": {
+        "0": "-403/64",
+        "387": "1/64",
+        "8385": "1/64"
+      },
+      "fold": {
+        "0": "-411/64",
+        "387": "1/64",
+        "8385": "1/64"
+      }
+    },
+    {
+      "axis": "x",
+      "background_changed": true,
+      "result": {
+        "0": "-1/4"
+      },
+      "raw": {
+        "0": "-1/4"
+      },
+      "fold": {}
+    },
+    {
+      "axis": "y",
+      "background_changed": false,
+      "result": {
+        "3": "1/8"
+      },
+      "raw": {
+        "3": "-403/64",
+        "384": "1/64",
+        "13194139533312": "1/64"
+      },
+      "fold": {
+        "3": "-411/64",
+        "384": "1/64",
+        "13194139533312": "1/64"
+      }
+    },
+    {
+      "axis": "y",
+      "background_changed": true,
+      "result": {
+        "3": "1/4"
+      },
+      "raw": {
+        "3": "1/4"
+      },
+      "fold": {}
+    }
+  ]
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_assisted_hop-vxm1zzn9/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_third_order_symbolic.py', '7']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_assisted_hop-vxm1zzn9/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_third_order_symbolic.py', '7']
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_assisted_hop-vxm1zzn9/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_complementary_hop.py']
+{"status": "pass", "cases": [{"axis": "x", "si": -1, "sj": -1, "z": 0, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "x", "si": -1, "sj": -1, "z": 1, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"]}, {"axis": "x", "si": -1, "sj": -1, "z": 2, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"]}, {"axis": "x", "si": -1, "sj": -1, "z": 3, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "x", "si": -1, "sj": 1, "z": 0, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "x", "si": -1, "sj": 1, "z": 1, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"]}, {"axis": "x", "si": -1, "sj": 1, "z": 2, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"]}, {"axis": "x", "si": -1, "sj": 1, "z": 3, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "x", "si": 1, "sj": -1, "z": 0, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "x", "si": 1, "sj": -1, "z": 1, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"]}, {"axis": "x", "si": 1, "sj": -1, "z": 2, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"]}, {"axis": "x", "si": 1, "sj": -1, "z": 3, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "x", "si": 1, "sj": 1, "z": 0, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "x", "si": 1, "sj": 1, "z": 1, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"]}, {"axis": "x", "si": 1, "sj": 1, "z": 2, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"]}, {"axis": "x", "si": 1, "sj": 1, "z": 3, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "y", "si": -1, "sj": -1, "z": 0, "amplitude": "1/4", "path_terms": ["1/16", "1/32", "1/32", "1/32", "1/32", "1/16"]}, {"axis": "y", "si": -1, "sj": -1, "z": 1, "amplitude": "1/4", "path_terms": ["1/32", "1/16", "1/32", "1/16", "1/32", "1/32"]}, {"axis": "y", "si": -1, "sj": -1, "z": 2, "amplitude": "1/4", "path_terms": ["1/32", "1/32", "1/16", "1/32", "1/16", "1/32"]}, {"axis": "y", "si": -1, "sj": -1, "z": 3, "amplitude": "1/4", "path_terms": ["1/16", "1/32", "1/32", "1/32", "1/32", "1/16"]}, {"axis": "y", "si": -1, "sj": 1, "z": 0, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "y", "si": -1, "sj": 1, "z": 1, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"]}, {"axis": "y", "si": -1, "sj": 1, "z": 2, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"]}, {"axis": "y", "si": -1, "sj": 1, "z": 3, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "y", "si": 1, "sj": -1, "z": 0, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "y", "si": 1, "sj": -1, "z": 1, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"]}, {"axis": "y", "si": 1, "sj": -1, "z": 2, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"]}, {"axis": "y", "si": 1, "sj": -1, "z": 3, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "y", "si": 1, "sj": 1, "z": 0, "amplitude": "1/4", "path_terms": ["1/16", "1/32", "1/32", "1/32", "1/32", "1/16"]}, {"axis": "y", "si": 1, "sj": 1, "z": 1, "amplitude": "1/4", "path_terms": ["1/32", "1/16", "1/32", "1/16", "1/32", "1/32"]}, {"axis": "y", "si": 1, "sj": 1, "z": 2, "amplitude": "1/4", "path_terms": ["1/32", "1/32", "1/16", "1/32", "1/16", "1/32"]}, {"axis": "y", "si": 1, "sj": 1, "z": 3, "amplitude": "1/4", "path_terms": ["1/16", "1/32", "1/32", "1/32", "1/32", "1/16"]}], "scope": "exact complementary-layer native three-hop path; not complete D3"}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_assisted_hop-vxm1zzn9/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_complementary_hop.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_assisted_hop-vxm1zzn9/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_complementary_hop.py']
+{"status": "bounded-support", "symbolic_R6": {"status": "pass", "all_background_symbolic": true, "rows": [{"axis": "x", "background_changed": false, "result": {"0": "1/8"}, "raw": {"0": "-299/64", "195": "1/64", "2145": "1/64"}, "fold": {"0": "-307/64", "195": "1/64", "2145": "1/64"}}, {"axis": "x", "background_changed": true, "result": {"0": "-1/4"}, "raw": {"0": "-1/4"}, "fold": {}}, {"axis": "y", "background_changed": false, "result": {"3": "1/8"}, "raw": {"3": "-299/64", "192": "1/64", "3221225472": "1/64"}, "fold": {"3": "-307/64", "192": "1/64", "3221225472": "1/64"}}, {"axis": "y", "background_changed": true, "result": {"3": "1/4"}, "raw": {"3": "1/4"}, "fold": {}}]}, "symbolic_R7": {"status": "pass", "all_background_symbolic": true, "rows": [{"axis": "x", "background_changed": false, "result": {"0": "1/8"}, "raw": {"0": "-403/64", "387": "1/64", "8385": "1/64"}, "fold": {"0": "-411/64", "387": "1/64", "8385": "1/64"}}, {"axis": "x", "background_changed": true, "result": {"0": "-1/4"}, "raw": {"0": "-1/4"}, "fold": {}}, {"axis": "y", "background_changed": false, "result": {"3": "1/8"}, "raw": {"3": "-403/64", "384": "1/64", "13194139533312": "1/64"}, "fold": {"3": "-411/64", "384": "1/64", "13194139533312": "1/64"}}, {"axis": "y", "background_changed": true, "result": {"3": "1/4"}, "raw": {"3": "1/4"}, "fold": {}}]}, "complementary": {"status": "pass", "cases": [{"axis": "x", "si": -1, "sj": -1, "z": 0, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "x", "si": -1, "sj": -1, "z": 1, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"]}, {"axis": "x", "si": -1, "sj": -1, "z": 2, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"]}, {"axis": "x", "si": -1, "sj": -1, "z": 3, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "x", "si": -1, "sj": 1, "z": 0, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "x", "si": -1, "sj": 1, "z": 1, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"]}, {"axis": "x", "si": -1, "sj": 1, "z": 2, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"]}, {"axis": "x", "si": -1, "sj": 1, "z": 3, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "x", "si": 1, "sj": -1, "z": 0, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "x", "si": 1, "sj": -1, "z": 1, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"]}, {"axis": "x", "si": 1, "sj": -1, "z": 2, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"]}, {"axis": "x", "si": 1, "sj": -1, "z": 3, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "x", "si": 1, "sj": 1, "z": 0, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "x", "si": 1, "sj": 1, "z": 1, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"]}, {"axis": "x", "si": 1, "sj": 1, "z": 2, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"]}, {"axis": "x", "si": 1, "sj": 1, "z": 3, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "y", "si": -1, "sj": -1, "z": 0, "amplitude": "1/4", "path_terms": ["1/16", "1/32", "1/32", "1/32", "1/32", "1/16"]}, {"axis": "y", "si": -1, "sj": -1, "z": 1, "amplitude": "1/4", "path_terms": ["1/32", "1/16", "1/32", "1/16", "1/32", "1/32"]}, {"axis": "y", "si": -1, "sj": -1, "z": 2, "amplitude": "1/4", "path_terms": ["1/32", "1/32", "1/16", "1/32", "1/16", "1/32"]}, {"axis": "y", "si": -1, "sj": -1, "z": 3, "amplitude": "1/4", "path_terms": ["1/16", "1/32", "1/32", "1/32", "1/32", "1/16"]}, {"axis": "y", "si": -1, "sj": 1, "z": 0, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "y", "si": -1, "sj": 1, "z": 1, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"]}, {"axis": "y", "si": -1, "sj": 1, "z": 2, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"]}, {"axis": "y", "si": -1, "sj": 1, "z": 3, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "y", "si": 1, "sj": -1, "z": 0, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "y", "si": 1, "sj": -1, "z": 1, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"]}, {"axis": "y", "si": 1, "sj": -1, "z": 2, "amplitude": "-1/4", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"]}, {"axis": "y", "si": 1, "sj": -1, "z": 3, "amplitude": "-1/4", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"]}, {"axis": "y", "si": 1, "sj": 1, "z": 0, "amplitude": "1/4", "path_terms": ["1/16", "1/32", "1/32", "1/32", "1/32", "1/16"]}, {"axis": "y", "si": 1, "sj": 1, "z": 1, "amplitude": "1/4", "path_terms": ["1/32", "1/16", "1/32", "1/16", "1/32", "1/32"]}, {"axis": "y", "si": 1, "sj": 1, "z": 2, "amplitude": "1/4", "path_terms": ["1/32", "1/32", "1/16", "1/32", "1/16", "1/32"]}, {"axis": "y", "si": 1, "sj": 1, "z": 3, "amplitude": "1/4", "path_terms": ["1/16", "1/32", "1/32", "1/32", "1/32", "1/16"]}], "scope": "exact complementary-layer native three-hop path; not complete D3"}, "variance_lower": 0.002487577582194596, "vertex_weight_coefficient_lower": 0.00015547359888716224, "scope": "Canonical native nearest-hop vertex; matched dressed prepared channel, not relaxed emission rate"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_assisted_hop-vxm1zzn9/outputs/native_assisted_hop/result.json sha256=b08d752153d31dd82b0639d92a4d24737af3426673a3cf77c2a38306e87dad04
+{"complementary": {"cases": [{"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"], "si": -1, "sj": -1, "z": 0}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"], "si": -1, "sj": -1, "z": 1}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"], "si": -1, "sj": -1, "z": 2}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"], "si": -1, "sj": -1, "z": 3}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"], "si": -1, "sj": 1, "z": 0}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"], "si": -1, "sj": 1, "z": 1}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"], "si": -1, "sj": 1, "z": 2}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"], "si": -1, "sj": 1, "z": 3}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"], "si": 1, "sj": -1, "z": 0}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"], "si": 1, "sj": -1, "z": 1}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"], "si": 1, "sj": -1, "z": 2}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"], "si": 1, "sj": -1, "z": 3}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"], "si": 1, "sj": 1, "z": 0}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"], "si": 1, "sj": 1, "z": 1}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"], "si": 1, "sj": 1, "z": 2}, {"amplitude": "-1/4", "axis": "x", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"], "si": 1, "sj": 1, "z": 3}, {"amplitude": "1/4", "axis": "y", "path_terms": ["1/16", "1/32", "1/32", "1/32", "1/32", "1/16"], "si": -1, "sj": -1, "z": 0}, {"amplitude": "1/4", "axis": "y", "path_terms": ["1/32", "1/16", "1/32", "1/16", "1/32", "1/32"], "si": -1, "sj": -1, "z": 1}, {"amplitude": "1/4", "axis": "y", "path_terms": ["1/32", "1/32", "1/16", "1/32", "1/16", "1/32"], "si": -1, "sj": -1, "z": 2}, {"amplitude": "1/4", "axis": "y", "path_terms": ["1/16", "1/32", "1/32", "1/32", "1/32", "1/16"], "si": -1, "sj": -1, "z": 3}, {"amplitude": "-1/4", "axis": "y", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"], "si": -1, "sj": 1, "z": 0}, {"amplitude": "-1/4", "axis": "y", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"], "si": -1, "sj": 1, "z": 1}, {"amplitude": "-1/4", "axis": "y", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"], "si": -1, "sj": 1, "z": 2}, {"amplitude": "-1/4", "axis": "y", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"], "si": -1, "sj": 1, "z": 3}, {"amplitude": "-1/4", "axis": "y", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"], "si": 1, "sj": -1, "z": 0}, {"amplitude": "-1/4", "axis": "y", "path_terms": ["-1/32", "-1/16", "-1/32", "-1/16", "-1/32", "-1/32"], "si": 1, "sj": -1, "z": 1}, {"amplitude": "-1/4", "axis": "y", "path_terms": ["-1/32", "-1/32", "-1/16", "-1/32", "-1/16", "-1/32"], "si": 1, "sj": -1, "z": 2}, {"amplitude": "-1/4", "axis": "y", "path_terms": ["-1/16", "-1/32", "-1/32", "-1/32", "-1/32", "-1/16"], "si": 1, "sj": -1, "z": 3}, {"amplitude": "1/4", "axis": "y", "path_terms": ["1/16", "1/32", "1/32", "1/32", "1/32", "1/16"], "si": 1, "sj": 1, "z": 0}, {"amplitude": "1/4", "axis": "y", "path_terms": ["1/32", "1/16", "1/32", "1/16", "1/32", "1/32"], "si": 1, "sj": 1, "z": 1}, {"amplitude": "1/4", "axis": "y", "path_terms": ["1/32", "1/32", "1/16", "1/32", "1/16", "1/32"], "si": 1, "sj": 1, "z": 2}, {"amplitude": "1/4", "axis": "y", "path_terms": ["1/16", "1/32", "1/32", "1/32", "1/32", "1/16"], "si": 1, "sj": 1, "z": 3}], "scope": "exact complementary-layer native three-hop path; not complete D3", "status": "pass"}, "scope": "Canonical native nearest-hop vertex; matched dressed prepared channel, not relaxed emission rate", "status": "bounded-support", "symbolic_R6": {"all_background_symbolic": true, "rows": [{"axis": "x", "background_changed": false, "fold": {"0": "-307/64", "195": "1/64", "2145": "1/64"}, "raw": {"0": "-299/64", "195": "1/64", "2145": "1/64"}, "result": {"0": "1/8"}}, {"axis": "x", "background_changed": true, "fold": {}, "raw": {"0": "-1/4"}, "result": {"0": "-1/4"}}, {"axis": "y", "background_changed": false, "fold": {"192": "1/64", "3": "-307/64", "3221225472": "1/64"}, "raw": {"192": "1/64", "3": "-299/64", "3221225472": "1/64"}, "result": {"3": "1/8"}}, {"axis": "y", "background_changed": true, "fold": {}, "raw": {"3": "1/4"}, "result": {"3": "1/4"}}], "status": "pass"}, "symbolic_R7": {"all_background_symbolic": true, "rows": [{"axis": "x", "background_changed": false, "fold": {"0": "-411/64", "387": "1/64", "8385": "1/64"}, "raw": {"0": "-403/64", "387": "1/64", "8385": "1/64"}, "result": {"0": "1/8"}}, {"axis": "x", "background_changed": true, "fold": {}, "raw": {"0": "-1/4"}, "result": {"0": "-1/4"}}, {"axis": "y", "background_changed": false, "fold": {"13194139533312": "1/64", "3": "-411/64", "384": "1/64"}, "raw": {"13194139533312": "1/64", "3": "-403/64", "384": "1/64"}, "result": {"3": "1/8"}}, {"axis": "y", "background_changed": true, "fold": {}, "raw": {"3": "1/4"}, "result": {"3": "1/4"}}], "status": "pass"}, "variance_lower": 0.002487577582194596, "vertex_weight_coefficient_lower": 0.00015547359888716224}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_assisted_hop-vxm1zzn9 elapsed_seconds= 0.25188720785081387
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

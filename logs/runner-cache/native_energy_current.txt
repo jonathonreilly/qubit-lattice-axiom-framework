@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/native_energy_current.py
+runner_sha256: 1e5346ef99196653a2b153266c7eee6b8268995c2bb9315aa613b1439d7028ef
+input_fingerprint_sha256: cf34bc24d93de12ec377efd4cc8c02f031b7790e2eed8046793be677214b64eb
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_energy_current-_cuasjzq
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_energy_current-_cuasjzq/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_energy_current_control.py']
+{"sites": 8, "bonds": 12, "continuity": [{"q": [0.0, 0.0, 0.0], "operator_residual": 2.806464371691559e-16, "spectral_residual": 5.766863552976027e-15}, {"q": [0.31, 0.47, 0.83], "operator_residual": 3.140003073086225e-15, "spectral_residual": 5.427853360637675e-15}, {"q": [0.7, -0.2, 0.11], "operator_residual": 3.413906271511089e-15, "spectral_residual": 5.448544377477854e-15}], "hermitian_source_susceptibility": 0.0001983444753708904, "finite_field_ground_curvature": 0.00019835333375795017}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_energy_current-_cuasjzq/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_energy_current_control.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_energy_current-_cuasjzq/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_energy_current_control.py']
+[PASS] native_energy_current:C001
+[PASS] native_energy_current:C002
+{"status": "bounded-support", "scope": "Native energy continuity and pole Ward relation; finite control is not an L10 pole or observation test", "control": {"sites": 8, "bonds": 12, "continuity": [{"q": [0.0, 0.0, 0.0], "operator_residual": 2.806464371691559e-16, "spectral_residual": 5.766863552976027e-15}, {"q": [0.31, 0.47, 0.83], "operator_residual": 3.140003073086225e-15, "spectral_residual": 5.427853360637675e-15}, {"q": [0.7, -0.2, 0.11], "operator_residual": 3.413906271511089e-15, "spectral_residual": 5.448544377477854e-15}], "hermitian_source_susceptibility": 0.0001983444753708904, "finite_field_ground_curvature": 0.00019835333375795017}}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_energy_current-_cuasjzq/outputs/native_energy_current/result.json sha256=3d604018cbc399542639032407e4bbe7ae33e2fc46e776ca660dadb410ac933f
+{"control": {"bonds": 12, "continuity": [{"operator_residual": 2.806464371691559e-16, "q": [0.0, 0.0, 0.0], "spectral_residual": 5.766863552976027e-15}, {"operator_residual": 3.140003073086225e-15, "q": [0.31, 0.47, 0.83], "spectral_residual": 5.427853360637675e-15}, {"operator_residual": 3.413906271511089e-15, "q": [0.7, -0.2, 0.11], "spectral_residual": 5.448544377477854e-15}], "finite_field_ground_curvature": 0.00019835333375795017, "hermitian_source_susceptibility": 0.0001983444753708904, "sites": 8}, "scope": "Native energy continuity and pole Ward relation; finite control is not an L10 pole or observation test", "status": "bounded-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_energy_current-_cuasjzq elapsed_seconds= 0.37701870780438185
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

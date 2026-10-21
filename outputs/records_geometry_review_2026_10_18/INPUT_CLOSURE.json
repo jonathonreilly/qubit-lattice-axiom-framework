@@ -1,0 +1,27 @@
+{
+  "current_main": "371ca83a7f43aa0453dc7cf64f49095e7412deb1",
+  "original_head": "1aeba75180241364ab3661c3ec90f432dbf55f92",
+  "premises": [
+    {
+      "path": "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+      "sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
+      "unchanged_current_main": true,
+      "role": "constant-inventory provenance only; not dynamically imported"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "unchanged_current_main": true,
+      "role": "framework authority boundary; no supplied toy dynamics"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "unchanged_current_main": true,
+      "role": "framework authority boundary; no supplied toy dynamics"
+    }
+  ],
+  "dynamic_repository_imports": [],
+  "constant_inventory": "DIRS15/HCOMPS copied exactly from bound helper definitions, no action/Hessian theorem imported",
+  "scientific_inputs": "All supplied grid sizes, seeds, coefficients, clocks, sources and tolerances explicit in primary/note. No external scientific data."
+}

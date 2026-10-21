@@ -1,0 +1,176 @@
+{
+  "schema_version": 2,
+  "base_revision": "9780dafb34420085c70da9318188232497ce8d29",
+  "base_pr": 9761,
+  "main_revision": "584755767deb8dfb670f07211d8446873fd0999b",
+  "packet_destination": "outputs/real_two_body_gap_mediation_2026_10_18",
+  "source_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934",
+  "status": "Selectively checked conditional mediation and complete finite-window literal gate; no halt or native identification",
+  "files": [
+    {
+      "path": "counterterm_free_gap_mediation/ALL_MEDIATOR_INPUTS.md",
+      "destination": "source_checks/counterterm_free_gap_mediation/ALL_MEDIATOR_INPUTS.md",
+      "sha256": "206d91616f9b66da958c73caf2b723733fe850fa03ca7b16b83fd78e955290e9",
+      "bytes": 7730,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation/ALL_MEDIATOR_INPUTS.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation/BACKGROUND.md",
+      "destination": "source_checks/counterterm_free_gap_mediation/BACKGROUND.md",
+      "sha256": "20e79f3fdb1243975efb2165301940eef886d3e75f333ab1f137806c1f3f4c35",
+      "bytes": 6984,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation/BACKGROUND.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation/CLOCK_RETURN.md",
+      "destination": "source_checks/counterterm_free_gap_mediation/CLOCK_RETURN.md",
+      "sha256": "4aff7c09f875daebe5d5f22e8682ab6225c9882e1cec5a61afd5c1f75d8dc027",
+      "bytes": 9589,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation/CLOCK_RETURN.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation/EXACT_ALL_TIME.md",
+      "destination": "source_checks/counterterm_free_gap_mediation/EXACT_ALL_TIME.md",
+      "sha256": "37e2cf2c776d6425c93b113b92bc114b8e478db779d1dc6f0d28cc33a925ca34",
+      "bytes": 11261,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation/EXACT_ALL_TIME.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation/PROPOSAL.md",
+      "destination": "source_checks/counterterm_free_gap_mediation/PROPOSAL.md",
+      "sha256": "739a1961076d52b0e26364bd858f957a89a233bfa72aa652efa193ef54ac2cdd",
+      "bytes": 8977,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation/PROPOSAL.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation_check/ALL_MEDIATOR_INPUTS_REVIEW.md",
+      "destination": "source_checks/counterterm_free_gap_mediation_check/ALL_MEDIATOR_INPUTS_REVIEW.md",
+      "sha256": "0fbd9c739d0896429f093dee5fe5c897453a7680c1a357da25bf82fe2f0d68cc",
+      "bytes": 9908,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation_check/ALL_MEDIATOR_INPUTS_REVIEW.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation_check/BACKGROUND_REVIEW.md",
+      "destination": "source_checks/counterterm_free_gap_mediation_check/BACKGROUND_REVIEW.md",
+      "sha256": "346d95c179ff2ffc08d134d5374656c602adcd267448fafc27d8ea83f046288e",
+      "bytes": 9009,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation_check/BACKGROUND_REVIEW.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation_check/CLOCK_RETURN_REVIEW.md",
+      "destination": "source_checks/counterterm_free_gap_mediation_check/CLOCK_RETURN_REVIEW.md",
+      "sha256": "a5cefc254ee147172d7e6006862e66133433df21642ec23f6ee6522de0627acc",
+      "bytes": 11561,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation_check/CLOCK_RETURN_REVIEW.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation_check/EXACT_ALL_TIME_REVIEW.md",
+      "destination": "source_checks/counterterm_free_gap_mediation_check/EXACT_ALL_TIME_REVIEW.md",
+      "sha256": "80c09db471dea4542ccfe9b236b91ccd2cd285502ce4b091d59cbcfbfa7e1e70",
+      "bytes": 13928,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation_check/EXACT_ALL_TIME_REVIEW.md"
+    },
+    {
+      "path": "counterterm_free_gap_mediation_check/REVIEW.md",
+      "destination": "source_checks/counterterm_free_gap_mediation_check/REVIEW.md",
+      "sha256": "801093a81940a4649a4062a4e5af96bb67734a806b4e56d086d6dadaeb2217c2",
+      "bytes": 12315,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/counterterm_free_gap_mediation_check/REVIEW.md"
+    },
+    {
+      "path": "real_two_body_gap_mediation_check/ADDENDUM_REVIEW.md",
+      "destination": "source_checks/real_two_body_gap_mediation_check/ADDENDUM_REVIEW.md",
+      "sha256": "7819401a01a914a1e59775e30d596f311e0796456914fa03654a0ba6394edf40",
+      "bytes": 7993,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_body_gap_mediation_check/ADDENDUM_REVIEW.md"
+    },
+    {
+      "path": "real_two_body_gap_mediation_check/REVIEW.md",
+      "destination": "source_checks/real_two_body_gap_mediation_check/REVIEW.md",
+      "sha256": "38ecd127adacb06f65ca6f827821f472969b677a737007173bb383c207b30947",
+      "bytes": 11915,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_body_gap_mediation_check/REVIEW.md"
+    },
+    {
+      "path": "real_two_body_gap_mediation_check/UNEQUAL_REVIEW.md",
+      "destination": "source_checks/real_two_body_gap_mediation_check/UNEQUAL_REVIEW.md",
+      "sha256": "e3310c2c5d75da2a4b8273656f8840f07d8e2e1045ecb3dbe2ead7979f3cd39f",
+      "bytes": 10562,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_body_gap_mediation_check/UNEQUAL_REVIEW.md"
+    },
+    {
+      "path": "real_two_body_gap_mediation_probe/ADDENDUM.md",
+      "destination": "source_checks/real_two_body_gap_mediation_probe/ADDENDUM.md",
+      "sha256": "eb61571fc02140def4058ddc71cf55e3b9329dde25452fb4fadc07b6bef4d651",
+      "bytes": 5645,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_body_gap_mediation_probe/ADDENDUM.md"
+    },
+    {
+      "path": "real_two_body_gap_mediation_probe/PROPOSAL.md",
+      "destination": "source_checks/real_two_body_gap_mediation_probe/PROPOSAL.md",
+      "sha256": "d683b07790c9da2d9bf5a27d8045fa19309b918877e31e15431daa74f43d7258",
+      "bytes": 9250,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_body_gap_mediation_probe/PROPOSAL.md"
+    },
+    {
+      "path": "real_two_body_gap_mediation_probe/UNEQUAL_COUPLINGS.md",
+      "destination": "source_checks/real_two_body_gap_mediation_probe/UNEQUAL_COUPLINGS.md",
+      "sha256": "84ddf7968a0f75de54b36d8ac48a2c0917ba7fa49933191c74a92298ebd9c7f5",
+      "bytes": 6121,
+      "original_absolute_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_body_gap_mediation_probe/UNEQUAL_COUPLINGS.md"
+    }
+  ],
+  "inherited": [
+    {
+      "path": "docs/LITERAL_DIRECT_GENERATOR_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "1ba5a1d12cc728172144cd0c2b0f563523f009770f11cbe12db09fecef182bbc",
+      "scope": "K/W convention only"
+    }
+  ],
+  "note_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_body_gap_mediation_publication/FINAL_NOTE.md",
+      "destination": "docs/REAL_TWO_BODY_GAP_MEDIATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "a4c9869efd9728e78e33ec164583fcdc7a310b113a5fdc254de0ef5564440014"
+    }
+  ],
+  "provenance": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_body_gap_mediation_publication/AUTHOR_NOTE.md",
+      "destination": "AUTHOR_NOTE.md",
+      "sha256": "b0455d70ab5d8e2be293590b14c4d69ab993c4a9dba4fbe4f618b2065eb876bd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_body_gap_mediation_publication/AUTHOR_EXACT_MEDIATOR.md",
+      "destination": "AUTHOR_EXACT_MEDIATOR.md",
+      "sha256": "947473a21de101e2eec0039225533f70ad4b71ad134c9db4fc1245249b02767c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_body_gap_mediation_publication/AUTHOR_CLOCK_RETURN.md",
+      "destination": "AUTHOR_CLOCK_RETURN.md",
+      "sha256": "67df0832f6831b6bd5ba2d6d18f50a3ae63379f3b3b80a0ea62cada936848e73"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_body_gap_mediation_publication/AUTHOR_SELECTED_MEDIATOR_HISTORY.md",
+      "destination": "AUTHOR_SELECTED_MEDIATOR_HISTORY.md",
+      "sha256": "f6d4ad5ad5df91797e642d2a874dbd421be62db69de4aad53284f549ed0489b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_body_gap_mediation_publication/INTEGRATION_RECORD.md",
+      "destination": "INTEGRATION_RECORD.md",
+      "sha256": "012ed1f42a10c4ddfa12ed4c4be95278aa5f31b03d3e00b50b88d17ccddf4ca2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_body_gap_mediation_publication/PUBLICATION_CHECK.md",
+      "destination": "PUBLICATION_CHECK.md",
+      "sha256": "835697dd3b5357b7b9484d3acf4d39d720366fb57911aaf5089dc28a33952aea"
+    }
+  ],
+  "limits": [
+    "Same-model source-exposed analytical checks; shared design, not blind or retained audit.",
+    "Different four-qubit and five-qubit calibrations; no retroactive transfer.",
+    "Exact general real clock block, coupling relations, old K, gap and clock product seed supplied.",
+    "Effective mediator aging retained; no bare-aging or reset inference.",
+    "Finite gate window with shrinking relative width; second cycle applies W squared, not permanent halt."
+  ]
+}

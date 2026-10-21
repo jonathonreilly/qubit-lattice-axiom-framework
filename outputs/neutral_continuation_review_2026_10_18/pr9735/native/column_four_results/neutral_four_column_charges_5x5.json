@@ -1,0 +1,101 @@
+{
+  "nx": 5,
+  "ny": 5,
+  "dimension": 65536,
+  "rows": [
+    {
+      "sector": "vacuum",
+      "sites": [],
+      "energy": -46.24278009824589,
+      "gap": 0.0,
+      "residual": 5.240085810473925e-13,
+      "source_overlap2": 1.0000000000000164,
+      "plaquette_mean": 3.699796253952684,
+      "plaquette_difference": 0.0,
+      "native_readout_charge_over_lambda4": 0.0,
+      "native_readout_charge_over_mass_Jz": null
+    },
+    {
+      "sector": "single",
+      "sites": [
+        [
+          4,
+          4
+        ]
+      ],
+      "energy": -39.653872143691586,
+      "gap": 6.588907954554301,
+      "residual": 2.3033112971528635e-11,
+      "source_overlap2": 0.9686295148977431,
+      "plaquette_mean": 4.904493748699132,
+      "plaquette_difference": 1.2046974947464477,
+      "native_readout_charge_over_lambda4": 2.8079306408607154,
+      "native_readout_charge_over_mass_Jz": 3.0304728670025343
+    },
+    {
+      "sector": "vertical_dipole",
+      "sites": [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "energy": -38.16355204543973,
+      "gap": 8.079228052806158,
+      "residual": 2.551989697100192e-12,
+      "source_overlap2": 0.26547139094308114,
+      "plaquette_mean": 7.045401244320182,
+      "plaquette_difference": 3.345604990367498,
+      "native_readout_charge_over_lambda4": 3.486836951739336,
+      "native_readout_charge_over_mass_Jz": 3.0690165976357413
+    },
+    {
+      "sector": "separated_vertical",
+      "sites": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "energy": -34.626103826795394,
+      "gap": 11.616676271450494,
+      "residual": 5.336532041089322e-13,
+      "source_overlap2": 0.16367320955956605,
+      "plaquette_mean": 9.291061220372924,
+      "plaquette_difference": 5.5912649664202405,
+      "native_readout_charge_over_lambda4": 5.031830574668652,
+      "native_readout_charge_over_mass_Jz": 3.080218943235389
+    },
+    {
+      "sector": "horizontal_dipole",
+      "sites": [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "energy": -38.16355204543967,
+      "gap": 8.079228052806215,
+      "residual": 2.5470300114731873e-12,
+      "source_overlap2": 0.26547139094308086,
+      "plaquette_mean": 7.045401244320157,
+      "plaquette_difference": 3.345604990367473,
+      "native_readout_charge_over_lambda4": 3.4868369517393596,
+      "native_readout_charge_over_mass_Jz": 3.0690165976357404
+    }
+  ],
+  "elapsed": 0.4855518341064453,
+  "scope": "Selected subsystem-charge sectors of leading coefficient model; no full native pole or particle statistics identification"
+}

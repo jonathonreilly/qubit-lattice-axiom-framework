@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_d4_cone_common_cone_spins_zero_one_two_2026_10_18.py
+runner_sha256: 3d49544816ed318edf3fc56239db768c503eb73296a16c735fc2c6fa703ac5a6
+input_fingerprint_sha256: 94d3d4bbdd4ec3021d2413ff5cfe84ec5293f3bd154876f1ddca011d62b877d4
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 66.78
+status: ok
+----- stdout -----
+[PASS] H1 finite supplied-model control; fixture and predicate specified in source  exactness 1e-15; |L f| = 0.75, 0.69, 0.69
+[PASS] H2 finite supplied-model control; fixture and predicate specified in source  nullity 8, gauge rank 8, |QG| 2e-15; leading deviation 3.1e-08
+[PASS] H3 finite supplied-model control; fixture and predicate specified in source  massless count 3; first massive 1.691
+[PASS] H4 finite supplied-model control; fixture and predicate specified in source  nullities [10, 10, 10, 10]; alpha -1.4e-09, -3.3e-07, -3.8e-07, -3.1e-07
+[PASS] H5 finite supplied-model control; fixture and predicate specified in source  scalar -0.00001 photon -0.00000; scalar +0.00052 photon -0.00013; scalar +0.00062 photon -0.00015; scalar +0.00049 photon -0.00012
+per_element: explicit simplex geometry and local matrix entries are computed on the supplied finite carrier; no microscopic interaction supplier is derived
+per_site: listed vertex types and periodic-cell incidences are included; arbitrary lattice defects and unspecified site models are untested
+per_mode: only the literal momentum fixtures, thresholds and finite scans above are tested; no complete zero-set or spectrum census is certified
+per_block: the displayed cell operators and source or covariance contractions are evaluated; numerical pass labels do not supply an interacting physical theory
+lattice_wide: finite periodic-symbol diagnostics and explicitly stated constructive identities only; thermodynamic limits, all-volume OS positivity and physical reconstruction remain deferred
+
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

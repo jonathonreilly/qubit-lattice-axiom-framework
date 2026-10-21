@@ -1,0 +1,39 @@
+== (A) tadpole contractions (exact generator sums, w=1) ==
+PASS: SU(2) generator Gram = 1/2
+PASS: SU(2) <trX^4>_qq/(w trB^2) = (2N^2-3)/N = 2.500000 got 2.5000000000
+PASS: SU(2) <(trX^2)^2>_qq/(w trB^2) = N^2+1 = 5 got 5.0000000000
+PASS: SU(3) generator Gram = 1/2
+PASS: SU(3) <trX^4>_qq/(w trB^2) = (2N^2-3)/N = 5.000000 got 5.0000000000
+PASS: SU(3) <(trX^2)^2>_qq/(w trB^2) = N^2+1 = 10 got 10.0000000000
+PASS: SU(4) generator Gram = 1/2
+PASS: SU(4) <trX^4>_qq/(w trB^2) = (2N^2-3)/N = 7.250000 got 7.2500000000
+PASS: SU(4) <(trX^2)^2>_qq/(w trB^2) = N^2+1 = 17 got 17.0000000000
+== (B) heat kernel: log K + trX^2/(2tau) - sum log(th/sin th) is X-independent ==
+PASS: SU(2) tau=0.05: closed form exact (=> c4=c22=0 at O(1/g^2), e2=-N/24) spread=8.88e-16
+PASS: SU(3) tau=0.08: closed form exact (=> c4=c22=0 at O(1/g^2), e2=-N/24) spread=6.22e-14
+PASS: SU(3) tau=0.04: closed form exact (=> c4=c22=0 at O(1/g^2), e2=-N/24) spread=2.14e-12
+PASS: sum_{i<j} theta_ij^2/6 = N trX^2/24 (SU(3))
+== (C) d=2 / single plaquette: exact Bessel-determinant matching vs c(2) ==
+PASS: SU(2) d=2 k = -2N c(2) = (N^2-2)/4 = 0.5000 raw k(800)=0.50016 richardson=0.500000
+PASS: SU(3) d=2 k = -2N c(2) = (N^2-2)/4 = 1.7500 raw k(800)=1.75407 richardson=1.750000
+PASS: SU(4) d=2 k = -2N c(2) = (N^2-2)/4 = 3.5000 raw k(800)=3.51837 richardson=3.500000
+== (D) tadpole weights ==
+PASS: d=4 plaquette tadpole w/g^2 = 2/d = 1/2 (L=16, zero mode removed) got 0.500000000000
+PASS: Hamiltonian |khat| integral converged I=2.3876022
+   w_s/g^2 (spatial plaquette, Hamiltonian) = 0.795867
+== (E) coupling shift and Lambda ratio ==
+PASS: SU(2) c(4) = (3-N^2)/(24N) = -0.020833
+PASS: SU(2) Lambda_HK/Lambda_W = exp(pi^2 (N^2-3)/(11 N^2)) = 1.25146 (c=-0.020833, delta beta_HK-beta_W = 2N c = -0.0833)
+   SU(2) Hamiltonian-limit (magnetic f only): c_H = -0.041236, Lambda_H,HK/Lambda_H,W = 1.5589; one-loop speed-of-light shift v^2-1 = g^2 x -0.08247 (must be retuned)
+PASS: SU(3) c(4) = (3-N^2)/(24N) = -0.083333
+PASS: SU(3) Lambda_HK/Lambda_W = exp(pi^2 (N^2-3)/(11 N^2)) = 1.81877 (c=-0.083333, delta beta_HK-beta_W = 2N c = -0.5000)
+   SU(3) Hamiltonian-limit (magnetic f only): c_H = -0.103306, Lambda_H,HK/Lambda_H,W = 2.0991; one-loop speed-of-light shift v^2-1 = g^2 x -0.20661 (must be retuned)
+== (F) reconciliation: -7Q/4 in repo W2 is the probe's 7/4 = d=2 shift ==
+PASS: exp(-C2 * 21/(4 beta^2)) = 1 - (7/4) Q/beta + O(beta^-2) at fixed Q got -7*Q/4
+   Q^2/4 term = non-Casimir residue kappa C2^2/beta^3 with kappa=9/4 -> beta^3 r_lam -> (9/4)(C2^2 - C2 C_F):
+     r[8] beta^3 -> 11.250
+     r[6] beta^3 -> 15.000
+     r[10] beta^3 -> 63.000
+     r[27] beta^3 -> 120.000
+
+SUMMARY: ALL PASS

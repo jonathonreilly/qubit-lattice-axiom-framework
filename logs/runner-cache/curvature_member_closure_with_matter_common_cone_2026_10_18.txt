@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/curvature_member_closure_with_matter_common_cone_2026_10_18.py
+runner_sha256: 03e72a41a34c923aa5b733a405b81c77223c926217f3e8af6d83ca8ee56f33af
+input_fingerprint_sha256: be71f7b8383fb404e8065e2c75b53fea59fed1d20ec74d84b6caf5dda76a3466
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 29.97
+status: ok
+----- stdout -----
+Execution scope: default and explicitly requested optional branches only; historical totals are not fresh evidence.
+per_element: algebraic entries and numerical fixtures below have their stated exact or floating arithmetic scope.
+per_site: only the explicitly supplied local sites and translation rules are exercised; no physical site law is inferred.
+per_mode: only displayed momentum, representation and coefficient sectors are checked; untested sectors remain unverified.
+per_block: finite matrix, graph and ansatz blocks below use their declared dimensions; optional blocks require explicit flags.
+lattice_wide: finite tori and written conditional proofs have distinct scope; numerical scans do not certify all sizes.
+
+=== Part A: lattice order eps of {C(N),C(M)}, L = 3 (exact rationals) ===
+[PASS] A1 (L=3) gravity alone  {kin(N)+sK R1(N), kin(M)+sK R1(M)} = G_g[(sK/(4alpha)) xi~] exactly for s = -1 and s = +1, xi~_b = N_(x+e)M_x - N_x M_(x+e) (09-24 T1 closes for either sign; the 09-24 runner's closing field +K/(4alpha) is s = +1)
+[PASS] A2 (L=3) matter bracket  {H_m(N), H_m(M)} = G_m[-c xi~] exactly (mass term cancels; endpoint-mean bond lapse, symmetric G_m)
+[PASS] A3 (L=3) bond timing is paired with G_m  one-endpoint lapse N_x on the bond term: bracket NOT in span of symmetric G_m (True) but EQUAL to the one-sided relabelling sum_b (-c xi~_b)(Delta_b phi) pi_(x+e) (True): the timing is fixed only relative to the supplied G_m
+[PASS] A4 (L=3) total closure iff c = -sK/(4alpha)  table {(s, c/kappa): closes into one G_g[xi]+G_m[xi]} = {(-1, '1'): True, (-1, '2'): False, (-1, '1/3'): False, (-1, '-1'): False, (1, '1'): False, (1, '2'): False, (1, '1/3'): False, (1, '-1'): True}; with c > 0 only s = -1 (C = kin - K R1 + H_m) closes; the 09-24 runner's s = +1 closes only with c = -kappa < 0
+[PASS] A5 (L=3) one common cone  two scalars, s = -1, c_phi = kappa: closes iff c_chi = kappa = K/(4alpha); {c_chi/kappa: closes} = {'1': True, '2': False, '1/3': False}
+
+=== Part A: lattice order eps of {C(N),C(M)}, L = 4 (exact rationals) ===
+[PASS] A1 (L=4) gravity alone  {kin(N)+sK R1(N), kin(M)+sK R1(M)} = G_g[(sK/(4alpha)) xi~] exactly for s = -1 and s = +1, xi~_b = N_(x+e)M_x - N_x M_(x+e) (09-24 T1 closes for either sign; the 09-24 runner's closing field +K/(4alpha) is s = +1)
+[PASS] A2 (L=4) matter bracket  {H_m(N), H_m(M)} = G_m[-c xi~] exactly (mass term cancels; endpoint-mean bond lapse, symmetric G_m)
+[PASS] A3 (L=4) bond timing is paired with G_m  one-endpoint lapse N_x on the bond term: bracket NOT in span of symmetric G_m (True) but EQUAL to the one-sided relabelling sum_b (-c xi~_b)(Delta_b phi) pi_(x+e) (True): the timing is fixed only relative to the supplied G_m
+[PASS] A4 (L=4) total closure iff c = -sK/(4alpha)  table {(s, c/kappa): closes into one G_g[xi]+G_m[xi]} = {(-1, '1'): True, (-1, '2'): False, (-1, '1/3'): False, (-1, '-1'): False, (1, '1'): False, (1, '2'): False, (1, '1/3'): False, (1, '-1'): True}; with c > 0 only s = -1 (C = kin - K R1 + H_m) closes; the 09-24 runner's s = +1 closes only with c = -kappa < 0
+[PASS] A5 (L=4) one common cone  two scalars, s = -1, c_phi = kappa: closes iff c_chi = kappa = K/(4alpha); {c_chi/kappa: closes} = {'1': True, '2': False, '1/3': False}
+[PASS] A6 (L=3) second implementation  matrix-form brackets, independently built R1, alpha=2/5, K=7/3, mu=5/2: closure table {(1, '1'): False, (1, '-1'): True, (1, '2'): False, (1, '1/2'): False, (-1, '1'): True, (-1, '-1'): False, (-1, '2'): False, (-1, '1/2'): False}; two species {'1': True, '2': False, '1/3': False}
+
+=== Part B: the curvature-term sign of block 101's action ===
+[PASS] B1 R1 is the linearised scalar curvature  for g = delta + eps h: R(g) = eps (d_i d_j h_ij - lap tr h) + O(eps^2) = eps R1 (block 62's symbol p^2 tr h - p.h.p); so with N = 1 + u the O(u h) part of K wbar N sqrt(g) R - N rho is K wbar u R1 - e u, the sign of block 101's u-coupling (its R2 is not re-derived here)
+[PASS] B2 Hamiltonian carries -K R1  H = P qdot - L for L = kin + K wbar (u R1 + R2) - e u gives dH/du = -K*R1*wbar + e: the lapse constraint is kin - K R1 + e, i.e. s = -1; the 09-24 runner's +K R1 (s = +1) is opposite to its own action (harmless for gravity alone, A1)
+
+=== Part C: order phi^2 of {G[xi], C(N)}, pi-pi sector, exact rank certificates ===
+[PASS] C0 obstruction monomial  per bond, (xi_b/2)(pi_x+pi_y)(N_y pi_y - N_x pi_x) = [diagonal pi_z^2 terms] + ob, with ob = (xi_b/2)(N_y-N_x)[pi_x pi_y - (pi_x^2+pi_y^2)/2] = -(1/4) xi_b (N_(x+e)-N_x)(pi_(x+e)-pi_x)^2 (the pi_x pi_(x+e) xi_b (N_(x+e)-N_x) cross term; two differences, O(a^2) relative to xi.grad N pi^2)
+[PASS] C1 (L=3) closes  positive control, ansatz A (matched timing), obstruction removed: 114 coupling ops, 809 eqs, GF(p) ranks A = 162, [A|b] = 162; certificate: exact solution x with A x = b verified over Q on the sampled configurations (0s)
+[PASS] C2 (L=3) no closure  ansatz A (matched timing: site lapse on h_jj, four-corner mean on h_ij; 7-point star / face-corner pi pairs): 114 coupling ops, 809 eqs, GF(p) ranks A = 162, [A|b] = 163; certificate: exact left vector y with y^T A = 0, y^T b != 0 verified over Q (0s)
+[PASS] C3 (L=3) no closure  ansatz C (lapse placement free per term within star / face corners): 708 coupling ops, 810 eqs, GF(p) ranks A = 585, [A|b] = 586; certificate: exact left vector y with y^T A = 0, y^T b != 0 verified over Q (11s)
+[PASS] C4 (L=3) no closure  ansatz B (longer range: 19-point diag pairs, 12-point face pairs): 804 coupling ops, 1134 eqs, GF(p) ranks A = 678, [A|b] = 679; certificate: exact left vector y with y^T A = 0, y^T b != 0 verified over Q (12s)
+[PASS] C5 (L=4) closes  positive control, ansatz A, L = 4: 114 coupling ops, 2203 eqs, GF(p) ranks A = 273, [A|b] = 273; certificate: exact solution x with A x = b verified over Q on the sampled configurations (2s)
+[PASS] C6 (L=4) no closure  ansatz A, L = 4: 114 coupling ops, 2203 eqs, GF(p) ranks A = 273, [A|b] = 274; certificate: exact left vector y with y^T A = 0, y^T b != 0 verified over Q (0s)
+
+=== Part D: continuum leading order (sympy jet calculus) ===
+[PASS] D0 comparator stress  O(h) part of pi^2/(2 sqrt g) + sqrt g (c g^ij d phi d phi + mu phi^2)/2: T_jj = -pi^2/4 + c|grad phi|^2/4 - c(d_j phi)^2/2 + mu phi^2/4, U_ij = -c d_i phi d_j phi
+[PASS] D1 continuum cone  {C(N),C(M)} = G_g[xi0] + G_m[xi0], xi0 here is unscaled N grad M - M grad N; both G arguments are kappa*xi0, C = kin - K R1 + H_m: solve -> [{c: K/(4*alpha)}]
+[PASS] D2 {G,C} selects the metric-variational stress  {G_g[xi]+G_m[xi], H_m(N) + int N h.T} at O(phi^2) = H_m(s1 xi.grad N + s2 N div xi): the 9-coefficient ansatz has the one-parameter solution T = metric-variational stress of H_m(g) + lam delta_ij (H_m density), s1 = 1, s2 = -2 lam
+[PASS] D3 {C,C} alone does not fix the coupling  T = 0 with xi' = 0 solves the O(h phi pi) part of {C,C}: the source is selected by {G,C}, not by {C,C}
+[PASS] D4 scalar lapse: unique coupling, GR structure function  s2 = 0 (scalar-lapse rule, supplied): unique solution [{A1: -1/4, A2: K/(16*alpha), A3: -K/(8*alpha), A4: mu/4, A5: 0, A6: 0, A7: 0, B1: -K/(4*alpha), B2: 0, r1: -1, r2: 0, s1: 1}]; coupling = metric-variational stress at c = K/(4alpha), xi'_i = -kappa h_ij xi0_j (g^ij = delta^ij - h^ij)
+[PASS] D5 trace weight shifts the structure function  with T = T_metric + lam delta H and s2 = -2 lam the structure-function trace is r2 = 2*lam: species with different lam cannot share one xi', so lam is common
+
+elapsed 30s
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,290 @@
+===== runner cache v1 =====
+runner: scripts/native_frozen_arm_control.py
+runner_sha256: 80b23ff040dd2836aa4a151382feab389a2dcfebd593de9acb3a199b3e59cc58
+input_fingerprint_sha256: 4af0e454a66b5814090e0bb3e239eaa0e1d21909d75ed3f2e6ce5394ed648fc9
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 4.04
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_frozen_arm_control-x_51tmeg
+{
+  "ell": 3,
+  "rx": 1,
+  "ry": 1,
+  "edges": 873,
+  "rows": [
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          1,
+          1,
+          [
+            0,
+            1,
+            2
+          ]
+        ]
+      ],
+      "coefficient": "-4"
+    }
+  ],
+  "elapsed": 0.46979308128356934,
+  "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+}
+[PASS] P9753:native_frozen_arm_control:C001
+[PASS] P9753:native_frozen_arm_control:C002
+{
+  "ell": 5,
+  "rx": 1,
+  "ry": 1,
+  "edges": 1067,
+  "rows": [
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        [
+          1,
+          1,
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ]
+      ],
+      "coefficient": "-4"
+    }
+  ],
+  "elapsed": 0.6875410079956055,
+  "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+}
+{
+  "ell": 3,
+  "rx": 3,
+  "ry": 0,
+  "edges": 873,
+  "rows": [
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          3,
+          0,
+          [
+            0,
+            1,
+            2
+          ]
+        ]
+      ],
+      "coefficient": "-4"
+    }
+  ],
+  "elapsed": 0.4574239253997803,
+  "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+}
+{
+  "ell": 5,
+  "rx": 3,
+  "ry": 0,
+  "edges": 1067,
+  "rows": [
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        [
+          3,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ]
+      ],
+      "coefficient": "-4"
+    }
+  ],
+  "elapsed": 0.6797471046447754,
+  "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+}
+{
+  "ell": 4,
+  "rx": 2,
+  "ry": 1,
+  "edges": 970,
+  "rows": [
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        [
+          2,
+          1,
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ]
+      ],
+      "coefficient": "-4"
+    }
+  ],
+  "elapsed": 0.8019099235534668,
+  "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+}
+{
+  "ell": 6,
+  "rx": 3,
+  "ry": 2,
+  "edges": 1164,
+  "rows": [
+    {
+      "sites": [
+        [
+          0,
+          0,
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        [
+          3,
+          2,
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      ],
+      "coefficient": "-4"
+    }
+  ],
+  "elapsed": 0.808265209197998,
+  "scope": "Exact second-order projection at E8; finite local box with aligned external longitudinal neighbors; vacuum diagonal subtracted"
+}
+[PASS] P9753:native_frozen_arm_control:C003
+{
+  "status": "PASS",
+  "K2_controls": [
+    {
+      "ell": 3,
+      "rx": 1,
+      "ry": 1,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 5,
+      "rx": 1,
+      "ry": 1,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 3,
+      "rx": 3,
+      "ry": 0,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 5,
+      "rx": 3,
+      "ry": 0,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 4,
+      "rx": 2,
+      "ry": 1,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    },
+    {
+      "ell": 6,
+      "rx": 3,
+      "ry": 2,
+      "diagonal": "-4",
+      "offdiagonal_count": 0
+    }
+  ],
+  "minimum_changed_plaquettes": 6,
+  "minimum_tension_coefficient": 0.09375,
+  "scope": "Finite exact examples supplement all-length/locality proof. No explicit fixed-order small-lambda threshold, full-H pole or unconditional retained-host stability."
+}
+Assertion evaluations: 124 ; PASS counts distinct primary assertion groups; helper assertions are additional uncounted checks.
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_frozen_arm_control-x_51tmeg/outputs/native_frozen_arm_control/result.json sha256=246a4252c76954c8a8b41ef193a145619be81e0a518a11081fd8abb2a307d855
+{"K2_controls": [{"diagonal": "-4", "ell": 3, "offdiagonal_count": 0, "rx": 1, "ry": 1}, {"diagonal": "-4", "ell": 5, "offdiagonal_count": 0, "rx": 1, "ry": 1}, {"diagonal": "-4", "ell": 3, "offdiagonal_count": 0, "rx": 3, "ry": 0}, {"diagonal": "-4", "ell": 5, "offdiagonal_count": 0, "rx": 3, "ry": 0}, {"diagonal": "-4", "ell": 4, "offdiagonal_count": 0, "rx": 2, "ry": 1}, {"diagonal": "-4", "ell": 6, "offdiagonal_count": 0, "rx": 3, "ry": 2}], "minimum_changed_plaquettes": 6, "minimum_tension_coefficient": 0.09375, "scope": "Finite exact examples supplement all-length/locality proof. No explicit fixed-order small-lambda threshold, full-H pole or unconditional retained-host stability.", "status": "PASS"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion groups, not loop iterations; helper assertions fail closed but are additional uncounted checks.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; no microscopic pole, universal force or empirical identification is established.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_frozen_arm_control-x_51tmeg elapsed_seconds= 3.957456999924034
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

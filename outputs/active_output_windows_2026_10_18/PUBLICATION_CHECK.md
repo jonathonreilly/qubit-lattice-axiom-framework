@@ -1,0 +1,9 @@
+> Historical exposition/integration record. Mathematical arguments remain inspectable; historical status and execution assertions are not fresh evidence. Exact original recovery: `archive/product_continuation_four_review_2026_10_18/MANIFEST.json`.
+
+# Scope and verification limits
+
+Both endpoint and moving-output source/review pairs were fully read by ROOT. The exact scalar binomial law, endpoint displacement, full time-zero norm integral, normalized moving profile with spatial i^x, continuing contact, closed-window budgets, positive caps, counts and geometry were reconstructed by the disclosed source-exposed distinct checks. Shared campaign and inherited-author exposure is explicit. No scientific executable, physical validation or retained audit was performed.
+
+The comparator is freely aged exp(-it omega nP) Uf, including its center phase. This is not fixed Uf, only post-transfer aging, or old-P-before-transfer aging. Unknown-time averaging does not yield a fixed logical channel. The reference/seed, exact positive matrix families and indexed couplings remain supplied; no native preparation, arbitrary old H_PE, capture, permanent halt or reset/reuse follows. No weighted or gap-tolerance theorem is imported. Mechanical checks verify hashes, links and unchanged citation topology only. No editable prompt changed.
+
+Frozen-source whitespace exception: source_checks/active_energy_output_ray_check/REVIEW.md line86 retains a trailing TeX spacing token to preserve exact reviewer SHA2567b6a72abad53395b2fd938e48cfe3ccc76cb6aac3eb1e67046caf0ad644b2bf4. The complete staged whitespace check reports this one historical source line. All other staged content is required to pass.

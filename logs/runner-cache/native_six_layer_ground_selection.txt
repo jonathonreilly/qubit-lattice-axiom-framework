@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/native_six_layer_ground_selection.py
+runner_sha256: fb884d9d655550039012dc72dc0b028831ba6400a9d5deb3aab96f3648add00c
+input_fingerprint_sha256: 537b5d1ffc6a20a8be1e04aa211aabf82dff28f165f23361ce3b9bcd95a92805
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_ground_selection-bnkrl8wc
+[PASS] P9799:C001
+[PASS] P9799:C002
+[PASS] P9799:C003
+{"status": "conditional-support", "matching_controls": [{"R": 8, "ordering_sum": "20", "t_R": "2917215/1099511627776", "leading_power": 12}, {"R": 10, "ordering_sum": "70", "t_R": "428830605/2251799813685248", "leading_power": 14}, {"R": 12, "ordering_sum": "252", "t_R": "16209796869/1152921504606846976", "leading_power": 16}, {"R": 14, "ordering_sum": "924", "t_R": "1248154358913/1180591620717411303424", "leading_power": 18}, {"R": 16, "ordering_sum": "3432", "t_R": "48678019997607/604462909807314587353088", "leading_power": 20}, {"R": 18, "ordering_sum": "12870", "t_R": "15333576299246205/2475880078570760549798248448", "leading_power": 22}, {"R": 20, "ordering_sum": "48620", "t_R": "608231859870099465/1267650600228229401496703205376", "leading_power": 24}, {"R": 22, "ordering_sum": "184756", "t_R": "48536902417633937307/1298074214633706907132624082305024", "leading_power": 26}, {"R": 24, "ordering_sum": "705432", "t_R": "1945888542379687850217/664613997892457936451903530140172288", "leading_power": 28}], "flat_controls": [{"R": 4, "min_nonzero_weight": 4, "minimizers": 8}, {"R": 6, "min_nonzero_weight": 6, "minimizers": 12}, {"R": 8, "min_nonzero_weight": 8, "minimizers": 16}], "scope": "Fixed-R sufficiently weak coupling; no uniform size threshold. Finite checks corroborate the analytic proof, not replace it."}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_ground_selection-bnkrl8wc/outputs/native_six_layer_ground_selection/result.json sha256=546e3ae863078acd8fd803ca4d7a8650356c30ec8bf530cef16d581e04767a37
+{"flat_controls": [{"R": 4, "min_nonzero_weight": 4, "minimizers": 8}, {"R": 6, "min_nonzero_weight": 6, "minimizers": 12}, {"R": 8, "min_nonzero_weight": 8, "minimizers": 16}], "matching_controls": [{"R": 8, "leading_power": 12, "ordering_sum": "20", "t_R": "2917215/1099511627776"}, {"R": 10, "leading_power": 14, "ordering_sum": "70", "t_R": "428830605/2251799813685248"}, {"R": 12, "leading_power": 16, "ordering_sum": "252", "t_R": "16209796869/1152921504606846976"}, {"R": 14, "leading_power": 18, "ordering_sum": "924", "t_R": "1248154358913/1180591620717411303424"}, {"R": 16, "leading_power": 20, "ordering_sum": "3432", "t_R": "48678019997607/604462909807314587353088"}, {"R": 18, "leading_power": 22, "ordering_sum": "12870", "t_R": "15333576299246205/2475880078570760549798248448"}, {"R": 20, "leading_power": 24, "ordering_sum": "48620", "t_R": "608231859870099465/1267650600228229401496703205376"}, {"R": 22, "leading_power": 26, "ordering_sum": "184756", "t_R": "48536902417633937307/1298074214633706907132624082305024"}, {"R": 24, "leading_power": 28, "ordering_sum": "705432", "t_R": "1945888542379687850217/664613997892457936451903530140172288"}], "scope": "Fixed-R sufficiently weak coupling; no uniform size threshold. Finite checks corroborate the analytic proof, not replace it.", "status": "conditional-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_six_layer_ground_selection-bnkrl8wc elapsed_seconds= 0.08633862482383847
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

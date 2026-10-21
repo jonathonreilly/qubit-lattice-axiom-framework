@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_orthoscheme_zero_action_curvature_2026_10_18.py
+runner_sha256: 9edfd388302fd8ff18d7c7b960382c3e46dc34e7f30dee82a26b0141172c6e90
+input_fingerprint_sha256: e80114e6070657c1e093c05a14d287fe7a0dc0287146325b808b40ebb3aaa24d
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 36.32
+status: ok
+----- stdout -----
+[PASS] G0 finite supplied-model control; fixture and predicate specified in source  max deviation 1.3e-08; 15 edges, 50 hinge classes
+[PASS] G1 finite supplied-model control; fixture and predicate specified in source  (nullity, rank D) = [(5, np.int64(11)), (5, np.int64(11)), (5, np.int64(11))]; |D x|/|D| >= 0.59; vertex displacements flat to 2e-10
+[PASS] G2 finite supplied-model control; fixture and predicate specified in source  nullity 80, gap 6e+06, min |Dx|/|D| 0.32, extras with metric share > 0.2: 5; nullity 80, gap 1e+07, min |Dx|/|D| 0.32, extras with metric share > 0.2: 4
+[PASS] G3 finite supplied-model control; fixture and predicate specified in source  deviation 1.4e-15; max |Re k_t| 8.5e-17 (|k| = 0.2, 0.8, 1.5)
+[PASS] G4 finite supplied-model control; fixture and predicate specified in source  Re k_t/|k| = 0.2695, 0.2711 at |k| = 0.1, 0.05
+[PASS] G5 finite supplied-model control; fixture and predicate specified in source  c=0.2: 5th sv 1.1e-03, eliminated eigenvalue >= 11.9, halving ratio 3.99; c=0.05: 5th sv 1.6e-03, eliminated eigenvalue >= 2.6, halving ratio 3.99
+[PASS] G6 finite supplied-model control; fixture and predicate specified in source  coefficient -0.316228 vs -0.316228; misfit 3.2e-08
+[PASS] G7 finite supplied-model control; fixture and predicate specified in source  96 simplices, volume 1.000000000000, 72 edges, 8 vertex types; orthoschemes 0
+[PASS] G8 finite supplied-model control; fixture and predicate specified in source  nullity 32, gauge rank 32, gap 2e+08; nullity 32, gauge rank 32, gap 7e+07; nullity 32, gauge rank 32, gap 4e+08
+[PASS] G9 finite supplied-model control; fixture and predicate specified in source  coefficient -0.250000; misfit 2.7e-05 (Richardson from |k| = 0.02, 0.01)
+[PASS] G10 finite supplied-model control; fixture and predicate specified in source  max |Re k_t| 4e-16; max |alpha| 2.5e-05
+[PASS] G11 finite supplied-model control; fixture and predicate specified in source  axis: alpha -0.0831 nullity 34, alpha +0.0834 nullity 34; face: alpha -0.0623 nullity 34, alpha +0.0624 nullity 34; body: alpha +0.0005 nullity 35
+[PASS] G12 finite supplied-model control; fixture and predicate specified in source  left/right residuals [np.float64(2.4496692923927567e-15), np.float64(9.939849276400876e-16)]; two-scale soft count 8; bilinear overlap diagnostic (no scaling predicate) 2.85e-03 -> 1.39e-03 on halving
+[PASS] G13 analytic left/right source residuals and three finite D4 displacement fractions  residuals [(np.float64(9.198929641154965e-16), np.float64(7.738299454441196e-16)), (np.float64(8.636837117919544e-16), np.float64(8.712651751596112e-16)), (np.float64(1.2672205424959299e-15), np.float64(2.1968330339686106e-15))]; (all, uniform) [(np.float64(1.5990070555423287e-05), np.float64(2.2588028613135266e-05)), (np.float64(1.999453657597057e-06), np.float64(2.8268619913288367e-06)), (np.float64(2.499315986873197e-07), np.float64(3.534317467727792e-07))]
+[PASS] G14 finite supplied-model control; fixture and predicate specified in source  |L G_nonsite| 2e-16; |L M(0) - 1| 3e-18
+[PASS] G15 finite supplied-model control; fixture and predicate specified in source  overlap 0e+00, graviton -2.0003 (h_xx/h_tt -0.9999), partner -0.6667 (pattern dev 2e-05), total h_xx/h_tt -0.5000; overlap 0e+00, graviton -2.0002 (h_xx/h_tt -1.0000), partner -0.6667 (pattern dev 6e-06), total h_xx/h_tt -0.5000
+[PASS] G16 finite supplied-model control; fixture and predicate specified in source  |L G_nonsite| 8e-17; |L M(0) - 1| 9e-16
+[PASS] G17 finite supplied-model control; fixture and predicate specified in source  |L partner| 5.8e-03, h_tt k^2 -2.00026, h_xx/h_tt -0.99989; |L partner| 2.9e-03, h_tt k^2 -2.00008, h_xx/h_tt -0.99997; |L partner| 2.2e-03, h_tt k^2 -2.00005, h_xx/h_tt -0.99998
+per_element: explicit simplex geometry and local matrix entries are computed on the supplied finite carrier; no microscopic interaction supplier is derived
+per_site: listed vertex types and periodic-cell incidences are included; arbitrary lattice defects and unspecified site models are untested
+per_mode: only the literal momentum fixtures, thresholds and finite scans above are tested; no complete zero-set or spectrum census is certified
+per_block: the displayed cell operators and source or covariance contractions are evaluated; numerical pass labels do not supply an interacting physical theory
+lattice_wide: finite periodic-symbol diagnostics and explicitly stated constructive identities only; thermodynamic limits, all-volume OS positivity and physical reconstruction remain deferred
+
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

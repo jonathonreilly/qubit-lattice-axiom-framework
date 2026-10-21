@@ -1,0 +1,5 @@
+exec(open('/tmp/claude-0/-home-user-qubit-lattice-axiom-framework/b589b2bf-7a67-5c50-b4cf-6f5868f1e728/scratchpad/qca/walklib.py').read())
+print("Lam hermitian", np.allclose(Lam,Lam.conj().T), "spec", np.round(np.linalg.eigvalsh(Lam),4))
+print("[Lam,Hon]=0?", np.allclose(Lam@Hon0,Hon0@Lam))
+SL=msign(Lam)
+analyse(lambda k: RL(k)@SL, "W = R_link sign(Lam)")

@@ -1,0 +1,2399 @@
+===== runner cache v1 =====
+runner: scripts/native_zone_boundary_composite.py
+runner_sha256: 243bda277c202fd0fc18836e4dcf64b915cdca90fb28d7a9175ce0c8cfae1ac5
+input_fingerprint_sha256: 5b90c6d9d2b30a7a018e8b7e52cd6497934c95fa7f17978bc0abdef1e150417c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 46.35
+status: ok
+----- stdout -----
+BEGIN_PROBE neutral_zone_boundary
+{'L': 6, 'labels': [['edge', 1], ['edge', 2], ['diagonal', 2]], 'H1norm': 1.7926947684481243e-15, 'H3norm': 1.3067192981873881e-15, 'H2': [[0.5, 0.0, 0.0], [0.0, -0.75, -1.414213562373], [0.0, -1.414213562373, -2.0]], 'imaginary_error': 1.1832913578315177e-30, 'reflection_checkerboard_error': 2.000957310988403e-15, 'energies': [-2.921164609606623, 0.17116460960662602, 0.5000000000000013], 'source_weights': [0.0, 0.0, 1.0]}
+{'L': 8, 'labels': [['edge', 1], ['edge', 2], ['edge', 3], ['edge', 4], ['diagonal', 2], ['diagonal', 4]], 'H1norm': 3.846998857166836e-15, 'H3norm': 2.2732865041637248e-15, 'H2': [[0.5, 0.0, 0.25, 0.0, 0.0, 0.0], [0.0, -0.5, 0.0, 0.353553390593, -1.414213562373, 0.0], [0.25, 0.0, -0.25, 0.0, 0.0, 0.0], [0.0, 0.353553390593, 0.0, -0.5, 0.0, 0.0], [0.0, -1.414213562373, 0.0, 0.0, -2.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, -2.0]], 'imaginary_error': 6.598287728336319e-17, 'reflection_checkerboard_error': 3.513035822242951e-15, 'energies': [-2.8649980653902545, -2.0, -0.5835791223046375, -0.32569390943299864, 0.4485771876948924, 0.5756939094329987], 'source_weights': [0.0, 0.0, 0.0, 0.08397485283107814, 0.0, 0.9160251471689219]}
+{'L': 10, 'labels': [['edge', 1], ['edge', 2], ['edge', 3], ['edge', 4], ['diagonal', 2], ['diagonal', 4]], 'H1norm': 5.278028631759884e-15, 'H3norm': 2.8005388700726373e-15, 'H2': [[0.5, 0.0, 0.25, 0.0, 0.0, 0.0], [0.0, -0.5, 0.0, 0.25, -1.414213562373, 0.0], [0.25, 0.0, -0.5, 0.0, 0.0, 0.0], [0.0, 0.25, 0.0, -0.75, 0.0, 0.0], [0.0, -1.414213562373, 0.0, 0.0, -2.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, -2.0]], 'imaginary_error': 4.7488732231679196e-17, 'reflection_checkerboard_error': 4.295802431389899e-15, 'energies': [-2.8587110684594768, -1.999999999999995, -0.782465355435148, -0.5590169943749507, 0.39117642389463103, 0.5590169943749507], 'source_weights': [0.0, 0.0, 0.0, 0.05278640450004204, 0.0, 0.9472135954999578]}
+{'L': 12, 'labels': [['edge', 1], ['edge', 2], ['edge', 3], ['edge', 4], ['edge', 5], ['edge', 6], ['diagonal', 2], ['diagonal', 4], ['diagonal', 6]], 'H1norm': 7.841067786687415e-15, 'H3norm': 3.809389859204085e-15, 'H2': [[0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.5, 0.0, 0.25, 0.0, 0.0, -1.414213562373, 0.0, 0.0], [0.25, 0.0, -0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0], [0.0, 0.25, 0.0, -0.5, 0.0, 0.353553390593, 0.0, 0.0, 0.0], [0.0, 0.0, 0.25, 0.0, -0.25, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.353553390593, 0.0, -0.5, 0.0, 0.0, 0.0], [0.0, -1.414213562373, 0.0, 0.0, 0.0, 0.0, -2.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2.0]], 'imaginary_error': 1.5496805354954713e-16, 'reflection_checkerboard_error': 7.526030268762237e-15, 'energies': [-2.8580314929404853, -2.0000000000000053, -1.9999999999999971, -0.8684859037360679, -0.6933468529126565, -0.18400646517198552, -0.12000765698430176, 0.4105238618485373, 0.5633545098969598], 'source_weights': [0.0, 0.0, 0.0, 0.0, 0.03222650706113798, 0.0, 0.03344553687972609, 0.0, 0.9343279560591359]}
+{'L': 14, 'labels': [['edge', 1], ['edge', 2], ['edge', 3], ['edge', 4], ['edge', 5], ['edge', 6], ['diagonal', 2], ['diagonal', 4], ['diagonal', 6]], 'H1norm': 9.22000917844071e-15, 'H3norm': 4.189163697472178e-15, 'H2': [[0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.5, 0.0, 0.25, 0.0, 0.0, -1.414213562373, 0.0, 0.0], [0.25, 0.0, -0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0], [0.0, 0.25, 0.0, -0.5, 0.0, 0.25, 0.0, 0.0, 0.0], [0.0, 0.0, 0.25, 0.0, -0.5, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.25, 0.0, -0.75, 0.0, 0.0, 0.0], [0.0, -1.414213562373, 0.0, 0.0, 0.0, 0.0, -2.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2.0]], 'imaginary_error': 1.6535574058233206e-16, 'reflection_checkerboard_error': 8.137416655914546e-15, 'energies': [-2.8579585267059198, -1.9999999999999953, -1.9999999999999953, -0.9124628487922285, -0.7756937622741676, -0.38461591527702294, -0.2865913722582297, 0.4050372907751718, 0.5622851345323925], 'source_weights': [0.0, 0.0, 0.0, 0.0, 0.020640084778401874, 0.0, 0.040841201745189945, 0.0, 0.9385187134764083]}
+{'L': 16, 'labels': [['edge', 1], ['edge', 2], ['edge', 3], ['edge', 4], ['edge', 5], ['edge', 6], ['edge', 7], ['edge', 8], ['diagonal', 2], ['diagonal', 4], ['diagonal', 6], ['diagonal', 8]], 'H1norm': 1.0720750507070669e-14, 'H3norm': 4.8306156638778355e-15, 'H2': [[0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, -1.414213562373, 0.0, 0.0, 0.0], [0.25, 0.0, -0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.25, 0.0, -0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.25, 0.0, -0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.25, 0.0, -0.5, 0.0, 0.353553390593, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.25, 0.0, -0.25, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.353553390593, 0.0, -0.5, 0.0, 0.0, 0.0, 0.0], [0.0, -1.414213562373, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2.0]], 'imaginary_error': 1.0886936671029491e-16, 'reflection_checkerboard_error': 1.0199603104609712e-14, 'energies': [-2.8579507002697087, -2.0, -2.0, -1.9999999999999998, -0.9377190838368802, -0.8292990096810617, -0.5298967973765497, -0.42401297358604806, -0.08115655766046061, -0.05924163984873191, 0.40672313914359937, 0.5625536231158417], 'source_weights': [0.0, 0.0, 0.0, 0.0, 0.0, 0.013882873442992634, 0.0, 0.035117165439963294, 0.0, 0.013807256633914895, 0.0, 0.9371927044831289]}
+{'L': 20, 'labels': [['edge', 1], ['edge', 2], ['edge', 3], ['edge', 4], ['edge', 5], ['edge', 6], ['edge', 7], ['edge', 8], ['edge', 9], ['edge', 10], ['diagonal', 2], ['diagonal', 4], ['diagonal', 6], ['diagonal', 8], ['diagonal', 10]], 'H1norm': 1.4007814398945764e-14, 'H3norm': 5.789947708075736e-15, 'H2': [[0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.414213562373, 0.0, 0.0, 0.0, 0.0], [0.25, 0.0, -0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.25, 0.0, -0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.25, 0.0, -0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.25, 0.0, -0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.25, 0.0, -0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, -0.5, 0.0, 0.353553390593, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, -0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.353553390593, 0.0, -0.5, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -1.414213562373, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2.0]], 'imaginary_error': 2.680552082551884e-16, 'reflection_checkerboard_error': 1.2738061676426779e-14, 'energies': [-2.8579497709001864, -2.0000000000000115, -2.0000000000000115, -2.0000000000000115, -1.999999999999995, -0.9639728968226614, -0.8920763951297552, -0.7070499537967856, -0.611526586719541, -0.33293294588117717, -0.27406456099679033, -0.04446633453047517, -0.03483580980889074, 0.4063719019312518, 0.5625033526549645], 'source_weights': [1.038613022560378e-42, 0.0, 0.0, 0.0, 0.0, 6.887621731473081e-38, 0.007074826056183605, 9.972187959442334e-36, 0.021990833030649286, 1.6606172906643232e-34, 0.026783693784280305, 9.956243963946429e-34, 0.006676573388080362, 8.476566205846225e-36, 0.9374740737408065]}
+END_PROBE neutral_zone_boundary completed
+reproduced neutral_zone_boundary
+BEGIN_PROBE neutral_zone_local_second
+18 edge 1 [{'kind': 'edge', 'ell': 1, 'start': 0, 'unnormalized_coefficient': '1/4', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 1, 'start': 1, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 1, 'start': 17, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 3, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 3, 'start': 16, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}]
+18 edge 2 [{'kind': 'edge', 'ell': 2, 'start': 0, 'unnormalized_coefficient': '-1/2', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 4, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 4, 'start': 16, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'diagonal', 'ell': 2, 'start': 0, 'unnormalized_coefficient': '-2', 'source_norm': 32, 'target_norm': 16}]
+18 edge 3 [{'kind': 'edge', 'ell': 1, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 1, 'start': 2, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 3, 'start': 0, 'unnormalized_coefficient': '-1/2', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 5, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 5, 'start': 16, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}]
+18 edge 4 [{'kind': 'edge', 'ell': 2, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 2, 'start': 2, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 4, 'start': 0, 'unnormalized_coefficient': '-1/2', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 6, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 6, 'start': 16, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}]
+18 edge 5 [{'kind': 'edge', 'ell': 3, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 3, 'start': 2, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 5, 'start': 0, 'unnormalized_coefficient': '-1/2', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 7, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 7, 'start': 16, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}]
+18 edge 6 [{'kind': 'edge', 'ell': 4, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 4, 'start': 2, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 6, 'start': 0, 'unnormalized_coefficient': '-1/2', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 8, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 8, 'start': 16, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}]
+18 diagonal 2 [{'kind': 'edge', 'ell': 2, 'start': 0, 'unnormalized_coefficient': '-1', 'source_norm': 16, 'target_norm': 32}, {'kind': 'diagonal', 'ell': 2, 'start': 0, 'unnormalized_coefficient': '-2', 'source_norm': 16, 'target_norm': 16}]
+18 diagonal 4 [{'kind': 'diagonal', 'ell': 4, 'start': 0, 'unnormalized_coefficient': '-2', 'source_norm': 16, 'target_norm': 16}]
+18 diagonal 6 [{'kind': 'diagonal', 'ell': 6, 'start': 0, 'unnormalized_coefficient': '-2', 'source_norm': 16, 'target_norm': 16}]
+20 edge 1 [{'kind': 'edge', 'ell': 1, 'start': 0, 'unnormalized_coefficient': '1/4', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 1, 'start': 1, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 1, 'start': 19, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 3, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 3, 'start': 18, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}]
+20 edge 2 [{'kind': 'edge', 'ell': 2, 'start': 0, 'unnormalized_coefficient': '-1/2', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 4, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 4, 'start': 18, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'diagonal', 'ell': 2, 'start': 0, 'unnormalized_coefficient': '-2', 'source_norm': 32, 'target_norm': 16}]
+20 edge 3 [{'kind': 'edge', 'ell': 1, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 1, 'start': 2, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 3, 'start': 0, 'unnormalized_coefficient': '-1/2', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 5, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 5, 'start': 18, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}]
+20 edge 4 [{'kind': 'edge', 'ell': 2, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 2, 'start': 2, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 4, 'start': 0, 'unnormalized_coefficient': '-1/2', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 6, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 6, 'start': 18, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}]
+20 edge 5 [{'kind': 'edge', 'ell': 3, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 3, 'start': 2, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 5, 'start': 0, 'unnormalized_coefficient': '-1/2', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 7, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 7, 'start': 18, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}]
+20 edge 6 [{'kind': 'edge', 'ell': 4, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 4, 'start': 2, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 6, 'start': 0, 'unnormalized_coefficient': '-1/2', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 8, 'start': 0, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}, {'kind': 'edge', 'ell': 8, 'start': 18, 'unnormalized_coefficient': '-1/8', 'source_norm': 32, 'target_norm': 32}]
+20 diagonal 2 [{'kind': 'edge', 'ell': 2, 'start': 0, 'unnormalized_coefficient': '-1', 'source_norm': 16, 'target_norm': 32}, {'kind': 'diagonal', 'ell': 2, 'start': 0, 'unnormalized_coefficient': '-2', 'source_norm': 16, 'target_norm': 16}]
+20 diagonal 4 [{'kind': 'diagonal', 'ell': 4, 'start': 0, 'unnormalized_coefficient': '-2', 'source_norm': 16, 'target_norm': 16}]
+20 diagonal 6 [{'kind': 'diagonal', 'ell': 6, 'start': 0, 'unnormalized_coefficient': '-2', 'source_norm': 16, 'target_norm': 16}]
+END_PROBE neutral_zone_local_second completed
+reproduced neutral_zone_local_second
+BEGIN_PROBE neutral_zone_exact_math
+{'threshold_polynomial': '16*r**4 + 92*r**3 + 39*r**2 - 2*r - 1', 'admissible_r': [-0.45526822471623574, -0.16626222811877095], 'thresholds': [0.16294389268477505, 1.0452143582559714], 'odd_energy': '9/16', 'odd_boundary_weight': '15/16', 'odd_source_weight_coefficient': '15/4', 'upper_curvature': '208/27', 'side_bound_energies': ['-38/31 + 16*sqrt(10)/31', '-16*sqrt(10)/31 - 38/31'], 'finite_controls': [{'kappa': 0, 'top_values': [-9.678250273998955e-05, 0.4063368568610991, 0.5624999999999999], 'finite_count': 2, 'continuum_upper': 0}, {'kappa': 0.1, 'top_values': [0.19989307810860882, 0.3602511101989204, 0.6211496421674416], 'finite_count': 2, 'continuum_upper': 0.2}, {'kappa': 0.3, 'top_values': [0.5994938962509749, 0.5998734627688854, 0.8554246826239743], 'finite_count': 1, 'continuum_upper': 0.6}, {'kappa': 0.7, 'top_values': [1.3993237180122668, 1.3998308996852593, 1.4554208063978322], 'finite_count': 1, 'continuum_upper': 1.4}, {'kappa': 1.2, 'top_values': [2.398245603986269, 2.3992218239230465, 2.3998057070598473], 'finite_count': 0, 'continuum_upper': 2.4}, {'kappa': 2, 'top_values': [3.997447694848872, 3.9988655721347177, 3.999716382539079], 'finite_count': 0, 'continuum_upper': 4}], 'scope': 'Exact algebra and conditional halfline proof controls, not native uniform-limit theorem'}
+END_PROBE neutral_zone_exact_math completed
+reproduced neutral_zone_exact_math
+BEGIN_PROBE neutral_zone_large_feature
+{
+  "kappa_critical": "1.04521435825597128836989710291531597484665393177017281880879",
+  "short_root": "-0.166262228118770949586722095809996054074333881936574267847897",
+  "beta_slope": "0.481280830410805705421572285439635948728995949535393118636099",
+  "threshold_B_over_A": "-0.167993376787152010593199678680083394997258902229306168297529",
+  "residue_times_mean_limit": "0.692235021070046002802687683747914816140393704470084567178733",
+  "binding_quadratic": "0.473735533207416932503995931160720046905829558079947817951569",
+  "rows": [
+    {
+      "delta": 0.01,
+      "beta": 0.004823241163476465,
+      "beta_over_delta": 0.4823241163476465,
+      "binding_over_delta2": 0.4734675242270763,
+      "residue": 0.006645968179693401,
+      "mean_host_index": 103.29806649855033,
+      "residue_times_mean": 0.6865156629732184
+    },
+    {
+      "delta": 0.003,
+      "beta": 0.0014447795810771634,
+      "beta_over_delta": 0.4815931936923878,
+      "binding_over_delta2": 0.473655072563312,
+      "residue": 0.001997402879869357,
+      "mean_host_index": 345.70648362375624,
+      "residue_times_mean": 0.6905151259795995
+    },
+    {
+      "delta": 0.001,
+      "beta": 0.0004813848923667051,
+      "beta_over_delta": 0.4813848923667051,
+      "binding_over_delta2": 0.4737087075546755,
+      "residue": 0.0006661461236550347,
+      "mean_host_index": 1038.3027213931612,
+      "residue_times_mean": 0.6916613330365278
+    },
+    {
+      "delta": 0.0003,
+      "beta": 0.00014439361283781973,
+      "beta_over_delta": 0.4813120427927324,
+      "binding_over_delta2": 0.4737274849431335,
+      "residue": 0.0001998801144557696,
+      "mean_host_index": 3462.389821105353,
+      "residue_times_mean": 0.6920628737330295
+    },
+    {
+      "delta": 0.0001,
+      "beta": 4.812912339473245e-05,
+      "beta_over_delta": 0.4812912339473245,
+      "binding_over_delta2": 0.4737328503985969,
+      "residue": 6.663016091976684e-05,
+      "mean_host_index": 10388.353039694593,
+      "residue_times_mean": 0.6921776347261998
+    }
+  ],
+  "scope": "Conditional effective operator only; feature size diverges by momentum approach to threshold, no parameter-free physical large feature"
+}
+END_PROBE neutral_zone_large_feature completed
+reproduced neutral_zone_large_feature
+RESULT_JSON {
+  "inputs": {
+    "archive/neutral_composite_continuation_review_2026_10_18/MANIFEST.json": "6b4779cb5b8414b5c915833c99a48d364cfb204125e6fa20e46675a597c11abb",
+    "docs/NATIVE_COLUMN_COLLECTIVE_MODE_NOTE_2026-10-18.md": "8851c4ec44c555eb7bf6da9f43fab2fd40947278f7c48b407b082c920b23c1db",
+    "docs/NATIVE_COLUMN_PLAQUETTE_SELECTION_NOTE_2026-10-18.md": "ee1e194b55505c5991dd7fe5466868491f5cedaa48b5637096265257b227493a",
+    "docs/NATIVE_DERIVED_COLLECTIVE_INTERACTION_NOTE_2026-10-18.md": "4ce6d968a21610a1cb17ad175c1329a4a4b222f811e584af7ad560554beaaf7e",
+    "docs/NATIVE_INFRARED_READOUT_NOTE_2026-10-18.md": "6c35a1d389419a7474b91425cceb4c4d27db07b8bb05d729b024fb127cc741ca",
+    "docs/NATIVE_LARGE_COLUMN_DYNAMICS_NOTE_2026-10-18.md": "3b9abe4bc6b63a53d3268dc8cfaf26103d8e69ec44dfea983487ed38bf5278b1",
+    "docs/NATIVE_LOCAL_NORMAL_FORM_NOTE_2026-10-18.md": "f7a21feeee63c90fd36024b292362c5a1b542689d2bb6a554433a59a7b1908ec",
+    "docs/NATIVE_NEUTRAL_DOMAIN_RESONANCE_NOTE_2026-10-18.md": "07c1d1cee2e5d9166ee5c5111cf4fd40281236de15ffca78a40647a6a2b285f3",
+    "docs/NATIVE_SCALAR_BAND_LOCAL_PROOF_NOTE_2026-10-18.md": "1f7fd979178a307cf94967e40a515f02e4fd770ccd70d4144459607ccbd1884a",
+    "docs/NATIVE_ZONE_BOUNDARY_COMPOSITE_NOTE_2026-10-18.md": "2b93dd1734f8ab3b6bc90c63594e108b41ab6fc810bcd7dc31067462956b50ee",
+    "docs/work_history/repo/review_feedback/NEUTRAL_CONTINUATION_BOUNDARIES_2026-10-18.md": "7f996bba4dd3089083bb6fb25167d3edc8cfd423c99287ad25d5b422e6c0e2b3",
+    "outputs/neutral_composite_continuation_review_2026_10_18/INPUT_CLOSURE.json": "759e83c41f9a2ac11ace61240389e14fde3abe79504cda33047665cc6ec8ae5b",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_boundary_vertex.py": "37452d09ab01bf6a8a76352c367351069ab6a95622393ef647cfe306328e0ee7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_effective.py": "f789866be82331c5d06b9115950c6a28006aa1cba1027359186e7a576df167a1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_fourth.py": "a3769e366bc7286ddeb2f178e6ca6824a10a91fc303cab77756c67fb83e16204",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_linked_fourth.py": "1b9de9a6d805b8c1c863df694f665f182147e579b5ac39d3db4ae49a098a232b",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_sixth.py": "b1ef959a9fa4e1280a418c15b9646dade2d0fd4d8a63e25a14ffc3e9b5ae5b8a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_sixth_exact.py": "c6731fddbcbbbcfe91d8c2a9e87786de99dae3d1f571a92c6ea28bc0944daba2",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_rung_u1_probe.py": "edd50df2b5e01fe786434fe5477fd2089fa0b9265cdfec27bfe8b623d02812bd",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9717/neutral_tube_rung_control.py": "7cc12711321e26089016c3096bfc8294ec3090d02e98202f275a04161a739043",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_anisotropy_comparison.py": "f487c38663301cc8fb23f711e8e6a726f4d80377485662f2dcb8f738b48f79b9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_open_xy_comparison.py": "afae3959c5b4f0cf6c43659123c1a6936014fd2429ec39f63c39982bc186101c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_rung_discrete_symmetry.py": "134c049afcdb5a1f776663e7247bd7c693947fddfd8c8ab02ab28643a7bdc04e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9720/neutral_xy_readout.py": "3be0418e459ec56569621fad2730203333f0989aeb7d9bd71547a59bb633f366",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_exact_internal_factor.py": "e330a678e8a84a40acaf8cdf4e6dd5fcb45d342487bbedc1e66d7f1d1ff362c0",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_spectrum.py": "4fb0a54b26c387eff517b35bf959e88042b741e4fbadcd27fcf061cb2d0f7636",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_symmetry.py": "768726d6736a5d9b2cb5b437c1daafb85715b9040d041c9a222a31f141d0d187",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9722/neutral_strong_tunnel.py": "f7e6f7865c6ba6e942db3311b5dc6b4287e7ed67e3cc2986aee002c94bfbfd5d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_dark_bound_math.py": "cd821809563dbf58bc94cf19b6c304eaf06685f06460e7b53e92b16aef5cb6b2",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_fourth_action.py": "08c2bbde3e51f48168afa5587eec4564115de1bcacaf823a67b919d01d6acb7a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_fourth_diagonal.py": "2fee020468cad24902e2659d22b77e45b920852cca30fd34b2c55b3b3130e0a4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_rational.py": "0516f65706926fd5235d7b23a297fa3b038cde4b0cd1f176e8c5d62bea5e896f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_resonance.py": "cd14169b2b9d5a0ff5f93d3c88cbaa1a29bd96876b03ad5ce2d3e4ce0b411193",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_dark_third.py": "cc0afa75619e9abee8d65cb780fb1da9809460493fea4ebd7e551fb21571cff4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_fourth_overlap.py": "ce2abe5f6441e85cf431034fbea7241e6d01f58a86c70618bbf9f5d77b790bac",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_fourth_rational.py": "d6c8af36a836d1eb1fdd65e489ea7a6bb8ca02f92b8cdef58c0be53305afb9c4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_full_third_check.py": "bf31f58d4b47efeba270c3aac658d598ef3919d43b5df772feb24ecb3e4f995b",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_physical_q_source.py": "1e34c264518527172fe81070b4bd9f0c622f8aae3756fbf581b80c70abe4a6f1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_q_certificate.py": "7117d45884550d9e91291f663b204c5a45f8d3bfdda85eaf3ade38b54f46a540",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_kink_source_dressing.py": "7676ef18c16301fcb9eb33983b5a949bddab7091e6bac37ce43cca380d647b9d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9724/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_band_scalar_reflection_sector.py": "c0a731c4b75ada19bfb344d062c6585d0d97498652afc87f5f1e8d9d46e62869",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_domain_boundary_local.py": "a64c6085f6998e5d2fe7d7b56a7eadada6032631ea3713785ff2901d2ea5d5d4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_scalar_explicit_basis.py": "638b21aba1240d49871bbd6574f16e2ddda099b230dc0b8321d99f819d20e5d9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_wall_connected.py": "a12994a5231b55f119c50b9c687b40ec9586ee90ddc991df9c79390669a0a802",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9726/neutral_wall_full_kernel.py": "f447dab9fb716b0c1ece4b5b59eedcc44dc0a7a7a77fdc8d09017641d4d69a20",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_scalar_explicit_basis.py": "638b21aba1240d49871bbd6574f16e2ddda099b230dc0b8321d99f819d20e5d9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_boundary.py": "6cb5c73f7b785b581c2c0bb7f8fdefa3b579e54820ad4bebfa55f5dd39153f69",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_exact_math.py": "47b6ba85b485650c6603f5b2febe447feaba6a43ba569220283b11a5de527632",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_large_feature.py": "2e24443e2125f13a664f03c87a96f951a14829b5ac98d3d4ca9cd69f720f6f65",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9727/neutral_zone_local_second.py": "971a7b17e341a7324fd1a9fb524957ee7a173075f20d0af13a6014012c3feb75",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_kink_core.py": "6b944a3b605b4be4f7087d067e49ead93bb57b5a30ef4c341b7d3da9b6bbb19f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_local_normal_form.py": "d7f22b3537c28647afb5b78b94d9d8ca4a23f33e1d2b48096620ac0882d82848",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_packet_control.py": "26c4f6e01a85ed00374eb91c7e9e9f911f63052233b643e325b81c80cf4396cc",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9728/neutral_rung_model.py": "c14c817d4067501b136a9818d436550af99f8445f220129152b0e37eebdd095d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9730/neutral_column_parity_native.py": "2b6e8560fd6c2cf15d83448b3746358bef937aa88c366e5293d7c47ce0ee5049",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9730/neutral_column_plaquette.py": "94aaba329f92a322e6cc52c98138670e5edf4a35e571989a461ae63803361a93",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_column_six_mode.py": "139716946d77aea3947332b8345849e1a0990db870e931b7b56d48c19a56c01e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_column_source_derivative.py": "171ee42c797ed3b41caca0543d3928f006a7bf76548da10d0069a8963f6ba1a3",
+    "outputs/neutral_composite_continuation_review_2026_10_18/helpers/pr9732/neutral_rectangle_six.py": "1719b71435e78ade10338820dd32e1688a1dd588198e295b80505bbd92a379c8",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9717/tube_4.json": "47311399341ad594d1438eb1da0fb382ea9e68df234de16fd9086f6b5fccd7e8",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9720/neutral_tube_anisotropy.json": "27f1fe81178acb1b990d0a7beb07dcad2b9963a4be7e605650169b1d9876b68a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9724/neutral_kink_dark_fourth_action.json": "4a162174f1c3db2d9619aff9ba1f6503aa8cce4976a68448bfb9ea8b9b43f63b",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9724/neutral_kink_fourth_overlap.json": "aa18eb4c162be11a20436e9fdfb9ff4b7c4cebf8aa9a651234ad5b7f4b6f7fbb",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9726/neutral_native_periodic_pole.json": "b72485e438609cecd638ff703bc9ece8e934e5a4cbaef75ffa85a4bda9afd8dd",
+    "outputs/neutral_composite_continuation_review_2026_10_18/inputs/pr9727/neutral_native_periodic_pi_pole.json": "57c6f13b35ac717897c75581c4066602bbd1baa1757b31a7e3bb608763ec47b9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/DEFERRED_TERMINAL_PROMOTION.md": "8f860d706b5da679553d32c0fcb461ea23a81eb07bb6128b194a255cb099f9f6",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/DERIVED_RUNG_COLLECTIVE.md": "e575dc62726b3e5b71c6d64374935c1cf0061c2c8a5e4f987e06e4486df07d0f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_BOUNDARY_VERTEX_CHECK.md": "15503895f71fb0dc2e3a05e12e29dfffb492f845e8540316fde6a4acfcd85b0f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_DERIVED_COLLECTIVE_REVIEW.md": "8b90f8bd4ee5b737e1b43098a55575866422884169a27fdfa7bfcd14c88b12a1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_RUNG_EFFECTIVE_CHECK.md": "530ca8bb4889850014e77018c6e988e95b47a02e32842406288d256ce43336c9",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_RUNG_HIGHER_CHECK.md": "37fa4ca4cd9045614589afa10b1f9e04cf573ea4f2eb058f9f52cf7d6e6f1534",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_SIXTH_CHARGE_CHECK.md": "a1cb524ec80bf85051a0c647e0363130ef8953a82e09319c8d99c6a1755f7d0d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/INDEPENDENT_TUBE_RUNG_CHECK.md": "79d8b6154242c54e609520283a3f6780e0ff9230c5b7997437ecae4f61771c29",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/NATIVE_BOUNDARY_VERTEX.md": "924f5a86a06e31bd32c649791d30ae19d4c6ab16adeda893dc701296c18f5713",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/SIXTH_ORDER_COLLECTIVE_PROCESS.md": "c8182c4cee5440404942856653e98ae9864da539964b20f2b4af6f0ee8f2a62e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9717/TUBE_RUNG_REDUCTION.md": "1da0424f2b0cfc1aef429f58ef02577e01c608c81e72883cedaac6f208a8fa26",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/DEFERRED_TERMINAL_PROMOTION.md": "847e7098026ed75152de1fed0df4a4aafd7e2ab3c13ba6f3b5fce3dce83b6ddc",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/DERIVED_INFRARED_ROUTE.md": "32322347ddb6c8fdbae6121af7c072c2d77a5654e64a3f60f518d1ee43ee9b64",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_ANISOTROPY_CHECK.md": "ea587203f8bdff6f39d294f99668d812d4b215a22ae292342cc5d5c5de26de70",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_DISCRETE_INFRARED_CHECK.md": "34ef05b5605dd6c16b9bb884014b01136f83b892d245eefe08ad659a5efa91f8",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_INFRARED_FINAL_REVIEW.md": "43e0da90813f1a1ea4ca2c119e249b35126e3a5ceeeffcb27b4a34a9c45585a7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9720/INDEPENDENT_XY_READOUT_CHECK.md": "a05c740cae85adf9efcf2ccd796ce0de7402872a2f1b26e76bc35fb7007dac07",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/DEFERRED_TERMINAL_PROMOTION.md": "16a3129fd3345ca0df3e04bc31fa1ce38f21d3fec5d8710c312a3286138b56f4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/EXACT_INTERNAL_FACTOR.md": "d906c2bf12a1c73d1e8023056a3d48cbdf0c0aec45dcfa697986c617803cd4fd",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_EXACT_INTERNAL_FACTOR_CHECK.md": "1766683ad2f096e02731fc7bc9bdbde0ecb037725fd5980a3f6036616a3f626f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_LARGE_COLUMN_AUX_CHECK.md": "79a880d0c169a8f959b447637d93888fab1a495108fc9b9b512be4f1ba3e90c0",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_LARGE_COLUMN_FINAL_REVIEW.md": "71beb7ed4598c2a185ac9ab69818e4cb41dabe9c3952eaadbf150130ab47bcc7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_STRONG_READOUT_CHECK.md": "006cce2a1d7ab9be9b43717a7b5fc8b53319eead2a8e96176737dcb2d79e04f5",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/INDEPENDENT_STRONG_TUNNEL_CHECK.md": "fa73dcc0c5b5da75f449ec1ba68d46a4e25fce7b51966378e8c46ca36624a5c0",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9722/STRONG_COLUMN_FEATURE.md": "7dbfd13f194ffeb1eb658e96348f8d08f1eb89c7818b1c759df6601ced344b23",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DARK_BOUND_CHECK.md": "8e62b8ac2bd748604f621a5818afce3c3e603bc7c358bef1d6f7e73a63a69fe1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DARK_FOURTH_CHECK.md": "68cef4611a5aea9299f1ef21a095b3b7b5ec45c3fc044dd2774174bcdc185759",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_DOMAIN_RESONANCE_FINAL_REVIEW.md": "2e31d833d07928d527281d3f2b1dd6e30929e4505f62d9c8be3c1d30835dd7ff",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_FOURTH_CHECK.md": "15e2e293a38470f35c77ce010120ea1004977cddab90722b1c406ab077d8bd83",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_MOMENTUM_CHECK.md": "302cbc8505f2db6e49a2dd5ee5920a0259dbc5b57677a09fc8b5977b45d725c4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_RESONANCE_CHECK.md": "10544bcf1262c27c674711f135badfa9a17f8f9c448a4472b7d2701e4c152042",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_SECOND_CHECK.md": "aa7bea68d4dcb14aabe72ebb542541d122786f7ca11ebbee03d9a06e52fda59c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9724/INDEPENDENT_KINK_THIRD_CHECK.md": "e86139e1ccc07bfb8cbc132d7013d0f14a1a766d8dfed6e251253f838759e5ad",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_LOCAL_BOUNDARY_CHECK.md": "c29312e26b0d2d3a069bb0b68b6ff6fa9f21d223587c24389f4a669cd2ff8c72",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_LOCAL_WALL_CHECK.md": "a987c2748c911243ffe47aa98acaba11cfc7ef6e97b31ad37b09cfdd74d4346f",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_NATIVE_PERIODIC_POLE_CHECK.md": "51b8fb114c0b49b6aa97957c3414c51b1dd4a20de38af2f99ec28b82eb634709",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/INDEPENDENT_SCALAR_BAND_CHECK.md": "a8a7f171cb8441ed835a1a25781be574b77504926cd31fde93973cf0563b0822",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9726/LOCAL_PROOF_FINAL_REVIEW.md": "5804aa9df1eb21eba664f097b555a7f2fdd8d19e69cc34423832cfe325056c01",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/DEFERRED_TERMINAL_PROMOTION.md": "b0ad74b2b5e10139c41e5bf52d340a9b842ea9887759bec7dba511a0b00db71e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_NATIVE_PI_POLE_CHECK.md": "c8e9034b56b61a2f6fd73df2e7efc6754e3d125f7adb0e13aeab3b937a1c0ae1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_BOUNDARY_CHECK.md": "917c92a074fd71c3ce48b608a8a9d721a5bd4ee9cff74ec363caa31c73ff1487",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_CROSSOVER_CHECK.md": "64c26afee7665e1081466b133d223a245e94346fdd1acec8dac9532deb402a3d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_LARGE_FEATURE_CHECK.md": "d3a62e6e814b3dbb2c0e040632a95ce6a973139d69dd2c53e357baf5b2d1b885",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/INDEPENDENT_ZONE_LOCAL_SECOND_CHECK.md": "9b65eda2f5c6e50e5386db05f80dfdfb3ee41c0a28a3d37badd722821c9dbcad",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9727/ZONE_BOUNDARY_FINAL_REVIEW.md": "5d17e46e71561ee2e508bc1a1ede853f113042beefed7e90144067a166c133f4",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_PACKET_FILTER_CHECK.md": "c246d5006d2c39fbaa206c18a8783f0b6d8040bff17511aee34ed53a2215541e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_SOURCE_GRAM_FIBER_CHECK.md": "68afe5d8e0225eb3d5c07826134ee217264f0a6967fb281833f71bd65f04d0e2",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/INDEPENDENT_UNIFORM_NORMAL_FORM_CHECK.md": "f176d9852cee9b58809e760cf2f106a40c6637daa23e49a9a050d21c2896ce68",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9728/NORMAL_FORM_FINAL_REVIEW.md": "3ff4aa1a356a219cf38d6b3f66779d416d62ac3f7b0bc0fa44a207f06252d09a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/COLUMN_PLAQUETTE_FINAL_REVIEW.md": "e444b36fa4fc2fafb9ca688930f0fea2e83cf51b08a3438958bfe8414b34997c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/INDEPENDENT_COLUMN_PLAQUETTE_CHECK.md": "3226fe3119ca908b5a19d5f11250e2d839846fc18f4ec429ef2120eb69a6234d",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9730/INDEPENDENT_COLUMN_READOUT_CHECK.md": "afd9dc9fbe284e95d4cc0432bcf92c666e66b1e7d8a793888499ccb1c0d53466",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/COLUMN_COLLECTIVE_FINAL_REVIEW.md": "7f2eabb1710a9a987b01137ee19463a4d5fe03b571862cf02b79e86ad2b3d595",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/DEFERRED_TERMINAL_PROMOTION.md": "59482b9881e8c3637bef6e53000b70323b270bd5a7045e194aec7b05b4f10855",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_COLUMN_SOURCE_CHECK.md": "9f6d1ded1f717bffe80bb8f7683f49a518044eb395d31f258d8c7670f11dafb7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_COLUMN_STAR_CHECK.md": "bc09200504eb37f3934bb46e097892b62bae67302e3288718d053fee6fb0e1ae",
+    "outputs/neutral_composite_continuation_review_2026_10_18/proofs/pr9732/INDEPENDENT_SIX_LOOP_CHECK.md": "9e2861d6adeac6a9f62cbbd63c83873a71c85073c5b22331164a62eb08d9783c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9720/neutral_tube_anisotropy.py": "73f488ad7e8029834bccbd755effdf20563ef20d2124a971ddda4510df35c41a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/compass_sector_solve.py": "617a143fbd5112cee5d818512b72e9d49abd09970660a07e3a44e6f51b05c3b1",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_extra_sector.py": "39838305b41d3b58515a7d7a424c7b62290bd0886fadab95cde38c7f03913318",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_internal_occupation.json": "2d609402878fe5a327b6158e3eed9e0eefb4e735eecb2666cf2893551473c16e",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/neutral_internal_occupation.py": "f687fd8e24bc4a1f7c221c068c7727ceb2df26a0e4dcb66bc77135eb67167bb3",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9722/stationary_2x2x8_plus.json": "056ec68a0ece08943d0dd1ed4daa549634a3288bdae75c6c957f9e89697c759c",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9726/LOCAL_PROOF_PROVENANCE.md": "d66ba8edf4672b901755a1a3214638a2966e1dbae7ed34ae148f298827b4e8f7",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9726/neutral_native_periodic_pole.py": "1e8db854d23891aa9c561d918308a13d0aa5325c2fdc9e5c0f3ea82fa30a945a",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9727/ZONE_BOUNDARY_PROVENANCE.md": "8bb5d9128e7fece1798e1f1a8bcb14a550c9c39a49f4f4356637cd94794ea153",
+    "outputs/neutral_composite_continuation_review_2026_10_18/provenance/pr9727/neutral_native_periodic_pi_pole.py": "7f8fceaca39d26fbabda3342c1eb7a41d4f8c96c5feeefbd8cbf4a04e5c359a5"
+  },
+  "results": {
+    "neutral_zone_boundary": [
+      {
+        "L": 6,
+        "labels": [
+          [
+            "edge",
+            1
+          ],
+          [
+            "edge",
+            2
+          ],
+          [
+            "diagonal",
+            2
+          ]
+        ],
+        "H1norm": 1.7926947684481243e-15,
+        "H3norm": 1.3067192981873881e-15,
+        "H2": [
+          [
+            0.5,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.75,
+            -1.414213562373
+          ],
+          [
+            0.0,
+            -1.414213562373,
+            -2.0
+          ]
+        ],
+        "imaginary_error": 1.1832913578315177e-30,
+        "reflection_checkerboard_error": 2.000957310988403e-15,
+        "energies": [
+          -2.921164609606623,
+          0.17116460960662602,
+          0.5000000000000013
+        ],
+        "source_weights": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "L": 8,
+        "labels": [
+          [
+            "edge",
+            1
+          ],
+          [
+            "edge",
+            2
+          ],
+          [
+            "edge",
+            3
+          ],
+          [
+            "edge",
+            4
+          ],
+          [
+            "diagonal",
+            2
+          ],
+          [
+            "diagonal",
+            4
+          ]
+        ],
+        "H1norm": 3.846998857166836e-15,
+        "H3norm": 2.2732865041637248e-15,
+        "H2": [
+          [
+            0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.353553390593,
+            -1.414213562373,
+            0.0
+          ],
+          [
+            0.25,
+            0.0,
+            -0.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.353553390593,
+            0.0,
+            -0.5,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            -2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0
+          ]
+        ],
+        "imaginary_error": 6.598287728336319e-17,
+        "reflection_checkerboard_error": 3.513035822242951e-15,
+        "energies": [
+          -2.8649980653902545,
+          -2.0,
+          -0.5835791223046375,
+          -0.32569390943299864,
+          0.4485771876948924,
+          0.5756939094329987
+        ],
+        "source_weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.08397485283107814,
+          0.0,
+          0.9160251471689219
+        ]
+      },
+      {
+        "L": 10,
+        "labels": [
+          [
+            "edge",
+            1
+          ],
+          [
+            "edge",
+            2
+          ],
+          [
+            "edge",
+            3
+          ],
+          [
+            "edge",
+            4
+          ],
+          [
+            "diagonal",
+            2
+          ],
+          [
+            "diagonal",
+            4
+          ]
+        ],
+        "H1norm": 5.278028631759884e-15,
+        "H3norm": 2.8005388700726373e-15,
+        "H2": [
+          [
+            0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            -1.414213562373,
+            0.0
+          ],
+          [
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.0,
+            -0.75,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            -2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0
+          ]
+        ],
+        "imaginary_error": 4.7488732231679196e-17,
+        "reflection_checkerboard_error": 4.295802431389899e-15,
+        "energies": [
+          -2.8587110684594768,
+          -1.999999999999995,
+          -0.782465355435148,
+          -0.5590169943749507,
+          0.39117642389463103,
+          0.5590169943749507
+        ],
+        "source_weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.05278640450004204,
+          0.0,
+          0.9472135954999578
+        ]
+      },
+      {
+        "L": 12,
+        "labels": [
+          [
+            "edge",
+            1
+          ],
+          [
+            "edge",
+            2
+          ],
+          [
+            "edge",
+            3
+          ],
+          [
+            "edge",
+            4
+          ],
+          [
+            "edge",
+            5
+          ],
+          [
+            "edge",
+            6
+          ],
+          [
+            "diagonal",
+            2
+          ],
+          [
+            "diagonal",
+            4
+          ],
+          [
+            "diagonal",
+            6
+          ]
+        ],
+        "H1norm": 7.841067786687415e-15,
+        "H3norm": 3.809389859204085e-15,
+        "H2": [
+          [
+            0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.353553390593,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.353553390593,
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0
+          ]
+        ],
+        "imaginary_error": 1.5496805354954713e-16,
+        "reflection_checkerboard_error": 7.526030268762237e-15,
+        "energies": [
+          -2.8580314929404853,
+          -2.0000000000000053,
+          -1.9999999999999971,
+          -0.8684859037360679,
+          -0.6933468529126565,
+          -0.18400646517198552,
+          -0.12000765698430176,
+          0.4105238618485373,
+          0.5633545098969598
+        ],
+        "source_weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.03222650706113798,
+          0.0,
+          0.03344553687972609,
+          0.0,
+          0.9343279560591359
+        ]
+      },
+      {
+        "L": 14,
+        "labels": [
+          [
+            "edge",
+            1
+          ],
+          [
+            "edge",
+            2
+          ],
+          [
+            "edge",
+            3
+          ],
+          [
+            "edge",
+            4
+          ],
+          [
+            "edge",
+            5
+          ],
+          [
+            "edge",
+            6
+          ],
+          [
+            "diagonal",
+            2
+          ],
+          [
+            "diagonal",
+            4
+          ],
+          [
+            "diagonal",
+            6
+          ]
+        ],
+        "H1norm": 9.22000917844071e-15,
+        "H3norm": 4.189163697472178e-15,
+        "H2": [
+          [
+            0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.75,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0
+          ]
+        ],
+        "imaginary_error": 1.6535574058233206e-16,
+        "reflection_checkerboard_error": 8.137416655914546e-15,
+        "energies": [
+          -2.8579585267059198,
+          -1.9999999999999953,
+          -1.9999999999999953,
+          -0.9124628487922285,
+          -0.7756937622741676,
+          -0.38461591527702294,
+          -0.2865913722582297,
+          0.4050372907751718,
+          0.5622851345323925
+        ],
+        "source_weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.020640084778401874,
+          0.0,
+          0.040841201745189945,
+          0.0,
+          0.9385187134764083
+        ]
+      },
+      {
+        "L": 16,
+        "labels": [
+          [
+            "edge",
+            1
+          ],
+          [
+            "edge",
+            2
+          ],
+          [
+            "edge",
+            3
+          ],
+          [
+            "edge",
+            4
+          ],
+          [
+            "edge",
+            5
+          ],
+          [
+            "edge",
+            6
+          ],
+          [
+            "edge",
+            7
+          ],
+          [
+            "edge",
+            8
+          ],
+          [
+            "diagonal",
+            2
+          ],
+          [
+            "diagonal",
+            4
+          ],
+          [
+            "diagonal",
+            6
+          ],
+          [
+            "diagonal",
+            8
+          ]
+        ],
+        "H1norm": 1.0720750507070669e-14,
+        "H3norm": 4.8306156638778355e-15,
+        "H2": [
+          [
+            0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.353553390593,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.353553390593,
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0
+          ]
+        ],
+        "imaginary_error": 1.0886936671029491e-16,
+        "reflection_checkerboard_error": 1.0199603104609712e-14,
+        "energies": [
+          -2.8579507002697087,
+          -2.0,
+          -2.0,
+          -1.9999999999999998,
+          -0.9377190838368802,
+          -0.8292990096810617,
+          -0.5298967973765497,
+          -0.42401297358604806,
+          -0.08115655766046061,
+          -0.05924163984873191,
+          0.40672313914359937,
+          0.5625536231158417
+        ],
+        "source_weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.013882873442992634,
+          0.0,
+          0.035117165439963294,
+          0.0,
+          0.013807256633914895,
+          0.0,
+          0.9371927044831289
+        ]
+      },
+      {
+        "L": 20,
+        "labels": [
+          [
+            "edge",
+            1
+          ],
+          [
+            "edge",
+            2
+          ],
+          [
+            "edge",
+            3
+          ],
+          [
+            "edge",
+            4
+          ],
+          [
+            "edge",
+            5
+          ],
+          [
+            "edge",
+            6
+          ],
+          [
+            "edge",
+            7
+          ],
+          [
+            "edge",
+            8
+          ],
+          [
+            "edge",
+            9
+          ],
+          [
+            "edge",
+            10
+          ],
+          [
+            "diagonal",
+            2
+          ],
+          [
+            "diagonal",
+            4
+          ],
+          [
+            "diagonal",
+            6
+          ],
+          [
+            "diagonal",
+            8
+          ],
+          [
+            "diagonal",
+            10
+          ]
+        ],
+        "H1norm": 1.4007814398945764e-14,
+        "H3norm": 5.789947708075736e-15,
+        "H2": [
+          [
+            0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.5,
+            0.0,
+            0.353553390593,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.353553390593,
+            0.0,
+            -0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.414213562373,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0
+          ]
+        ],
+        "imaginary_error": 2.680552082551884e-16,
+        "reflection_checkerboard_error": 1.2738061676426779e-14,
+        "energies": [
+          -2.8579497709001864,
+          -2.0000000000000115,
+          -2.0000000000000115,
+          -2.0000000000000115,
+          -1.999999999999995,
+          -0.9639728968226614,
+          -0.8920763951297552,
+          -0.7070499537967856,
+          -0.611526586719541,
+          -0.33293294588117717,
+          -0.27406456099679033,
+          -0.04446633453047517,
+          -0.03483580980889074,
+          0.4063719019312518,
+          0.5625033526549645
+        ],
+        "source_weights": [
+          1.038613022560378e-42,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          6.887621731473081e-38,
+          0.007074826056183605,
+          9.972187959442334e-36,
+          0.021990833030649286,
+          1.6606172906643232e-34,
+          0.026783693784280305,
+          9.956243963946429e-34,
+          0.006676573388080362,
+          8.476566205846225e-36,
+          0.9374740737408065
+        ]
+      }
+    ],
+    "neutral_zone_local_second": [
+      {
+        "L": 18,
+        "kind": "edge",
+        "ell": 1,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 0,
+            "unnormalized_coefficient": "1/4",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 1,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 17,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 16,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "edge",
+        "ell": 2,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 16,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "diagonal",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 32,
+            "target_norm": 16
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "edge",
+        "ell": 3,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 5,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 5,
+            "start": 16,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "edge",
+        "ell": 4,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 6,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 6,
+            "start": 16,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "edge",
+        "ell": 5,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 5,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 7,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 7,
+            "start": 16,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "edge",
+        "ell": 6,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 6,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 8,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 8,
+            "start": 16,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "diagonal",
+        "ell": 2,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-1",
+            "source_norm": 16,
+            "target_norm": 32
+          },
+          {
+            "kind": "diagonal",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 16,
+            "target_norm": 16
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "diagonal",
+        "ell": 4,
+        "kernels": [
+          {
+            "kind": "diagonal",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 16,
+            "target_norm": 16
+          }
+        ]
+      },
+      {
+        "L": 18,
+        "kind": "diagonal",
+        "ell": 6,
+        "kernels": [
+          {
+            "kind": "diagonal",
+            "ell": 6,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 16,
+            "target_norm": 16
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "edge",
+        "ell": 1,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 0,
+            "unnormalized_coefficient": "1/4",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 1,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 19,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 18,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "edge",
+        "ell": 2,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 18,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "diagonal",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 32,
+            "target_norm": 16
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "edge",
+        "ell": 3,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 1,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 5,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 5,
+            "start": 18,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "edge",
+        "ell": 4,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 6,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 6,
+            "start": 18,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "edge",
+        "ell": 5,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 3,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 5,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 7,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 7,
+            "start": 18,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "edge",
+        "ell": 6,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 4,
+            "start": 2,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 6,
+            "start": 0,
+            "unnormalized_coefficient": "-1/2",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 8,
+            "start": 0,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          },
+          {
+            "kind": "edge",
+            "ell": 8,
+            "start": 18,
+            "unnormalized_coefficient": "-1/8",
+            "source_norm": 32,
+            "target_norm": 32
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "diagonal",
+        "ell": 2,
+        "kernels": [
+          {
+            "kind": "edge",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-1",
+            "source_norm": 16,
+            "target_norm": 32
+          },
+          {
+            "kind": "diagonal",
+            "ell": 2,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 16,
+            "target_norm": 16
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "diagonal",
+        "ell": 4,
+        "kernels": [
+          {
+            "kind": "diagonal",
+            "ell": 4,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 16,
+            "target_norm": 16
+          }
+        ]
+      },
+      {
+        "L": 20,
+        "kind": "diagonal",
+        "ell": 6,
+        "kernels": [
+          {
+            "kind": "diagonal",
+            "ell": 6,
+            "start": 0,
+            "unnormalized_coefficient": "-2",
+            "source_norm": 16,
+            "target_norm": 16
+          }
+        ]
+      }
+    ],
+    "neutral_zone_exact_math": {
+      "threshold_polynomial": "16*r**4 + 92*r**3 + 39*r**2 - 2*r - 1",
+      "admissible_r": [
+        -0.45526822471623574,
+        -0.16626222811877095
+      ],
+      "thresholds": [
+        0.16294389268477505,
+        1.0452143582559714
+      ],
+      "odd_energy": "9/16",
+      "odd_boundary_weight": "15/16",
+      "odd_source_weight_coefficient": "15/4",
+      "upper_curvature": "208/27",
+      "side_bound_energies": [
+        "-38/31 + 16*sqrt(10)/31",
+        "-16*sqrt(10)/31 - 38/31"
+      ],
+      "finite_controls": [
+        {
+          "kappa": 0,
+          "top_values": [
+            -9.678250273998955e-05,
+            0.4063368568610991,
+            0.5624999999999999
+          ],
+          "finite_count": 2,
+          "continuum_upper": 0
+        },
+        {
+          "kappa": 0.1,
+          "top_values": [
+            0.19989307810860882,
+            0.3602511101989204,
+            0.6211496421674416
+          ],
+          "finite_count": 2,
+          "continuum_upper": 0.2
+        },
+        {
+          "kappa": 0.3,
+          "top_values": [
+            0.5994938962509749,
+            0.5998734627688854,
+            0.8554246826239743
+          ],
+          "finite_count": 1,
+          "continuum_upper": 0.6
+        },
+        {
+          "kappa": 0.7,
+          "top_values": [
+            1.3993237180122668,
+            1.3998308996852593,
+            1.4554208063978322
+          ],
+          "finite_count": 1,
+          "continuum_upper": 1.4
+        },
+        {
+          "kappa": 1.2,
+          "top_values": [
+            2.398245603986269,
+            2.3992218239230465,
+            2.3998057070598473
+          ],
+          "finite_count": 0,
+          "continuum_upper": 2.4
+        },
+        {
+          "kappa": 2,
+          "top_values": [
+            3.997447694848872,
+            3.9988655721347177,
+            3.999716382539079
+          ],
+          "finite_count": 0,
+          "continuum_upper": 4
+        }
+      ],
+      "scope": "Exact algebra and conditional halfline proof controls, not native uniform-limit theorem"
+    },
+    "neutral_zone_large_feature": {
+      "kappa_critical": "1.04521435825597128836989710291531597484665393177017281880879",
+      "short_root": "-0.166262228118770949586722095809996054074333881936574267847897",
+      "beta_slope": "0.481280830410805705421572285439635948728995949535393118636099",
+      "threshold_B_over_A": "-0.167993376787152010593199678680083394997258902229306168297529",
+      "residue_times_mean_limit": "0.692235021070046002802687683747914816140393704470084567178733",
+      "binding_quadratic": "0.473735533207416932503995931160720046905829558079947817951569",
+      "rows": [
+        {
+          "delta": 0.01,
+          "beta": 0.004823241163476465,
+          "beta_over_delta": 0.4823241163476465,
+          "binding_over_delta2": 0.4734675242270763,
+          "residue": 0.006645968179693401,
+          "mean_host_index": 103.29806649855033,
+          "residue_times_mean": 0.6865156629732184
+        },
+        {
+          "delta": 0.003,
+          "beta": 0.0014447795810771634,
+          "beta_over_delta": 0.4815931936923878,
+          "binding_over_delta2": 0.473655072563312,
+          "residue": 0.001997402879869357,
+          "mean_host_index": 345.70648362375624,
+          "residue_times_mean": 0.6905151259795995
+        },
+        {
+          "delta": 0.001,
+          "beta": 0.0004813848923667051,
+          "beta_over_delta": 0.4813848923667051,
+          "binding_over_delta2": 0.4737087075546755,
+          "residue": 0.0006661461236550347,
+          "mean_host_index": 1038.3027213931612,
+          "residue_times_mean": 0.6916613330365278
+        },
+        {
+          "delta": 0.0003,
+          "beta": 0.00014439361283781973,
+          "beta_over_delta": 0.4813120427927324,
+          "binding_over_delta2": 0.4737274849431335,
+          "residue": 0.0001998801144557696,
+          "mean_host_index": 3462.389821105353,
+          "residue_times_mean": 0.6920628737330295
+        },
+        {
+          "delta": 0.0001,
+          "beta": 4.812912339473245e-05,
+          "beta_over_delta": 0.4812912339473245,
+          "binding_over_delta2": 0.4737328503985969,
+          "residue": 6.663016091976684e-05,
+          "mean_host_index": 10388.353039694593,
+          "residue_times_mean": 0.6921776347261998
+        }
+      ],
+      "scope": "Conditional effective operator only; feature size diverges by momentum approach to threshold, no parameter-free physical large feature"
+    },
+    "neutral_native_periodic_pi_pole": [
+      {
+        "L": 8,
+        "lambda_perp": 0.1,
+        "dimension": 2097152,
+        "ground_energy": -32.04000833864916,
+        "ground_residual": 2.1521151833356822e-13,
+        "source_weight": 0.039951018763217896,
+        "prediction_energy": 8.00575693909433,
+        "prediction_shift": 0.5756939094329987,
+        "prediction_weight_coefficient": 3.6641005886756877,
+        "candidates": [
+          {
+            "quadrature_node": 8.005737479158139,
+            "energy": 8.005737479158025,
+            "residual": 6.264239838198427e-13,
+            "source_weight": 0.03668523573910296,
+            "ritz_norm": 0.9999999999998707,
+            "weight_over_lambda2": 3.6685235739102957
+          },
+          {
+            "quadrature_node": 7.998587868073282,
+            "energy": 7.998587868073251,
+            "residual": 0.11326960841866704,
+            "source_weight": 0.0015518865976983007,
+            "ritz_norm": 1.0000000000112885,
+            "weight_over_lambda2": 0.15518865976983004
+          },
+          {
+            "quadrature_node": 7.9966831907370635,
+            "energy": 7.996683190737173,
+            "residual": 2.0498515530701498e-12,
+            "source_weight": 0.003256374126066383,
+            "ritz_norm": 1.0000000000014981,
+            "weight_over_lambda2": 0.3256374126066382
+          },
+          {
+            "quadrature_node": 7.995128946751279,
+            "energy": 7.995128946751159,
+            "residual": 0.11297798959879983,
+            "source_weight": 0.0015613556167457826,
+            "ritz_norm": 0.9999999999874102,
+            "weight_over_lambda2": 0.15613556167457823
+          },
+          {
+            "quadrature_node": 8.07519112932455,
+            "energy": 8.075191129324473,
+            "residual": 0.08387986772937009,
+            "source_weight": 7.743720274276952e-08,
+            "ritz_norm": 1.0000000000005331,
+            "weight_over_lambda2": 7.74372027427695e-06
+          },
+          {
+            "quadrature_node": 7.9196519623458155,
+            "energy": 7.919651962345785,
+            "residual": 0.045381176952444376,
+            "source_weight": 3.739416375316798e-08,
+            "ritz_norm": 0.999999999999663,
+            "weight_over_lambda2": 3.739416375316797e-06
+          }
+        ],
+        "seconds": 105.57673354074359,
+        "calls": 318,
+        "scope": "Selected symmetry sector, finite periodic32site full-H eigenvector tests; no continuum decay or physical scalar claim"
+      },
+      {
+        "L": 8,
+        "lambda_perp": 0.2,
+        "dimension": 2097152,
+        "ground_energy": -32.160133687120236,
+        "ground_residual": 9.798540293388804e-13,
+        "source_weight": 0.1592152235592351,
+        "prediction_energy": 8.02302775637732,
+        "prediction_shift": 0.5756939094329987,
+        "prediction_weight_coefficient": 3.6641005886756877,
+        "candidates": [
+          {
+            "quadrature_node": 8.02271976413525,
+            "energy": 8.022719764135115,
+            "residual": 1.1676685198656539e-13,
+            "source_weight": 0.14722292667036643,
+            "ritz_norm": 1.0000000000011786,
+            "weight_over_lambda2": 3.68057316675916
+          },
+          {
+            "quadrature_node": 8.022661060035228,
+            "energy": 8.022661060035158,
+            "residual": 0.00796566068912193,
+            "source_weight": 0.14724790325337417,
+            "ritz_norm": 0.9999999999981426,
+            "weight_over_lambda2": 3.6811975813343536
+          },
+          {
+            "quadrature_node": 7.985996763070128,
+            "energy": 7.985996763070133,
+            "residual": 3.1412984683235934e-14,
+            "source_weight": 0.011839926136385175,
+            "ritz_norm": 1.0000000000007896,
+            "weight_over_lambda2": 0.2959981534096293
+          },
+          {
+            "quadrature_node": 7.9267302132025925,
+            "energy": 7.926730213202603,
+            "residual": 0.1305605679936895,
+            "source_weight": 8.812297921341452e-06,
+            "ritz_norm": 1.0000000000002687,
+            "weight_over_lambda2": 0.00022030744803353626
+          },
+          {
+            "quadrature_node": 8.129151584790204,
+            "energy": 8.12915158479014,
+            "residual": 0.18876607192062342,
+            "source_weight": 8.674088267496877e-07,
+            "ritz_norm": 0.9999999999997833,
+            "weight_over_lambda2": 2.1685220668742187e-05
+          },
+          {
+            "quadrature_node": 8.20501711540511,
+            "energy": 8.205017115405145,
+            "residual": 0.025319992102100324,
+            "source_weight": 1.209792057861575e-09,
+            "ritz_norm": 0.9999999999999187,
+            "weight_over_lambda2": 3.024480144653937e-08
+          }
+        ],
+        "seconds": 113.30411537503824,
+        "calls": 318,
+        "scope": "Selected symmetry sector, finite periodic32site full-H eigenvector tests; no continuum decay or physical scalar claim"
+      }
+    ]
+  },
+  "frozen_auxiliary": [
+    "neutral_native_periodic_pi_pole"
+  ],
+  "scope": "Native formal local coefficients; conditional halfline bound-mode, crossover and size/readout relation; finite full-H evidence; no uniform native or physical scalar theorem"
+}
+
+per_element: Local signed kernels and reflection/checkerboard coefficient identities are tested.
+per_site: Existing parity coordinates and centered source conventions remain explicit.
+per_mode: Conditional recurrence roots, curvature and source residue are computed for the displayed operator.
+per_block: Finite frozen native residuals remain separate from infinite-chain spectral promotion.
+lattice_wide: Infinite native spectra, physical state/readout supply and observational identification remain outside these finite controls.
+Count unit: completed finite probe groups; aggregate predicates and child assertions must all succeed.
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

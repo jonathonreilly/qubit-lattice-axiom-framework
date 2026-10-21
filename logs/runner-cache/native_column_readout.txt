@@ -1,0 +1,189 @@
+===== runner cache v1 =====
+runner: scripts/native_column_readout.py
+runner_sha256: 4c191f71132882f3d318e9a8ab003640061468028b1799202433080bfc27ddee
+input_fingerprint_sha256: 537b5d1ffc6a20a8be1e04aa211aabf82dff28f165f23361ce3b9bcd95a92805
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.58
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_column_readout-m25y443b
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_column_readout-m25y443b/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_column_readout_control.py']
+{
+  "winding": [
+    {
+      "L": 4,
+      "A": "36/5"
+    },
+    {
+      "L": 6,
+      "A": "40/3"
+    },
+    {
+      "L": 8,
+      "A": "252/13"
+    },
+    {
+      "L": 10,
+      "A": "432/17"
+    },
+    {
+      "L": 12,
+      "A": "220/7"
+    },
+    {
+      "L": 14,
+      "A": "936/25"
+    },
+    {
+      "L": 16,
+      "A": "1260/29"
+    }
+  ],
+  "square": [
+    {
+      "reference": 0,
+      "energy": "-1/128",
+      "source": "-3/128"
+    },
+    {
+      "reference": 1,
+      "energy": "1/128",
+      "source": "3/128"
+    },
+    {
+      "reference": 2,
+      "energy": "1/128",
+      "source": "3/128"
+    },
+    {
+      "reference": 3,
+      "energy": "-1/128",
+      "source": "-3/128"
+    },
+    {
+      "reference": 4,
+      "energy": "1/128",
+      "source": "3/128"
+    },
+    {
+      "reference": 5,
+      "energy": "-1/128",
+      "source": "-3/128"
+    },
+    {
+      "reference": 6,
+      "energy": "-1/128",
+      "source": "-3/128"
+    },
+    {
+      "reference": 7,
+      "energy": "1/128",
+      "source": "3/128"
+    },
+    {
+      "reference": 8,
+      "energy": "1/128",
+      "source": "3/128"
+    },
+    {
+      "reference": 9,
+      "energy": "-1/128",
+      "source": "-3/128"
+    },
+    {
+      "reference": 10,
+      "energy": "-1/128",
+      "source": "-3/128"
+    },
+    {
+      "reference": 11,
+      "energy": "1/128",
+      "source": "3/128"
+    },
+    {
+      "reference": 12,
+      "energy": "-1/128",
+      "source": "-3/128"
+    },
+    {
+      "reference": 13,
+      "energy": "1/128",
+      "source": "3/128"
+    },
+    {
+      "reference": 14,
+      "energy": "1/128",
+      "source": "3/128"
+    },
+    {
+      "reference": 15,
+      "energy": "-1/128",
+      "source": "-3/128"
+    }
+  ],
+  "virtual_dressing": [
+    {
+      "L": 4,
+      "lam": 0.3,
+      "source_offdiag": -0.0011260993820112475,
+      "predicted": -0.0011390624999999999,
+      "ratio": 0.9886194848932763
+    },
+    {
+      "L": 4,
+      "lam": 0.2,
+      "source_offdiag": -0.00022386920841244162,
+      "predicted": -0.00022500000000000008,
+      "ratio": 0.9949742596108513
+    },
+    {
+      "L": 4,
+      "lam": 0.15,
+      "source_offdiag": -7.099060102522259e-05,
+      "predicted": -7.119140624999999e-05,
+      "ratio": 0.9971793614516864
+    },
+    {
+      "L": 6,
+      "lam": 0.3,
+      "source_offdiag": -3.700336160772366e-05,
+      "predicted": -3.737548828124999e-05,
+      "ratio": 0.9900435635589272
+    },
+    {
+      "L": 6,
+      "lam": 0.2,
+      "source_offdiag": -3.2668219098752616e-06,
+      "predicted": -3.281250000000002e-06,
+      "ratio": 0.9956028677715077
+    },
+    {
+      "L": 6,
+      "lam": 0.15,
+      "source_offdiag": -5.825507534140684e-07,
+      "predicted": -5.839920043945311e-07,
+      "ratio": 0.9975320706968293
+    }
+  ],
+  "scope": "Fixed coefficient controls with J=sqrtV=1; restricted winding subproblem is not full lattice dynamics"
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_column_readout-m25y443b/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_column_readout_control.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_column_readout-m25y443b/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_column_readout_control.py']
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_column_readout-m25y443b/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_square_local_source.py']
+16 reference patterns, four independently marked vertices each PASS: -3P/512
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_column_readout-m25y443b/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_square_local_source.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_column_readout-m25y443b/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_square_local_source.py']
+{"status": "bounded-support", "checks": {"neutral_column_readout_control.py": "{\n  \"winding\": [\n    {\n      \"L\": 4,\n      \"A\": \"36/5\"\n    },\n    {\n      \"L\": 6,\n      \"A\": \"40/3\"\n    },\n    {\n      \"L\": 8,\n      \"A\": \"252/13\"\n    },\n    {\n      \"L\": 10,\n      \"A\": \"432/17\"\n    },\n    {\n      \"L\": 12,\n      \"A\": \"220/7\"\n    },\n    {\n      \"L\": 14,\n      \"A\": \"936/25\"\n    },\n    {\n      \"L\": 16,\n      \"A\": \"1260/29\"\n    }\n  ],\n  \"square\": [\n    {\n      \"reference\": 0,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    },\n    {\n      \"reference\": 1,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 2,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 3,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    },\n    {\n      \"reference\": 4,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 5,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    },\n    {\n      \"reference\": 6,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    },\n    {\n      \"reference\": 7,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 8,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 9,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    },\n    {\n      \"reference\": 10,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    },\n    {\n      \"reference\": 11,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 12,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    },\n    {\n      \"reference\": 13,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 14,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 15,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    }\n  ],\n  \"virtual_dressing\": [\n    {\n      \"L\": 4,\n      \"lam\": 0.3,\n      \"source_offdiag\": -0.0011260993820112475,\n      \"predicted\": -0.0011390624999999999,\n      \"ratio\": 0.9886194848932763\n    },\n    {\n      \"L\": 4,\n      \"lam\": 0.2,\n      \"source_offdiag\": -0.00022386920841244162,\n      \"predicted\": -0.00022500000000000008,\n      \"ratio\": 0.9949742596108513\n    },\n    {\n      \"L\": 4,\n      \"lam\": 0.15,\n      \"source_offdiag\": -7.099060102522259e-05,\n      \"predicted\": -7.119140624999999e-05,\n      \"ratio\": 0.9971793614516864\n    },\n    {\n      \"L\": 6,\n      \"lam\": 0.3,\n      \"source_offdiag\": -3.700336160772366e-05,\n      \"predicted\": -3.737548828124999e-05,\n      \"ratio\": 0.9900435635589272\n    },\n    {\n      \"L\": 6,\n      \"lam\": 0.2,\n      \"source_offdiag\": -3.2668219098752616e-06,\n      \"predicted\": -3.281250000000002e-06,\n      \"ratio\": 0.9956028677715077\n    },\n    {\n      \"L\": 6,\n      \"lam\": 0.15,\n      \"source_offdiag\": -5.825507534140684e-07,\n      \"predicted\": -5.839920043945311e-07,\n      \"ratio\": 0.9975320706968293\n    }\n  ],\n  \"scope\": \"Fixed coefficient controls with J=sqrtV=1; restricted winding subproblem is not full lattice dynamics\"\n}", "neutral_square_local_source.py": "16 reference patterns, four independently marked vertices each PASS: -3P/512"}, "scope": "Exact coefficient and virtual-dressing controls; actual asymptotic feature contrast is analytic, not full-H numerical or empirical validation"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_column_readout-m25y443b/outputs/native_column_readout/result.json sha256=2b4252687d5926ccb45dbf8cd6aacbd237f3810cae1d74f4154c3705f941e990
+{"checks": {"neutral_column_readout_control.py": "{\n  \"winding\": [\n    {\n      \"L\": 4,\n      \"A\": \"36/5\"\n    },\n    {\n      \"L\": 6,\n      \"A\": \"40/3\"\n    },\n    {\n      \"L\": 8,\n      \"A\": \"252/13\"\n    },\n    {\n      \"L\": 10,\n      \"A\": \"432/17\"\n    },\n    {\n      \"L\": 12,\n      \"A\": \"220/7\"\n    },\n    {\n      \"L\": 14,\n      \"A\": \"936/25\"\n    },\n    {\n      \"L\": 16,\n      \"A\": \"1260/29\"\n    }\n  ],\n  \"square\": [\n    {\n      \"reference\": 0,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    },\n    {\n      \"reference\": 1,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 2,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 3,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    },\n    {\n      \"reference\": 4,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 5,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    },\n    {\n      \"reference\": 6,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    },\n    {\n      \"reference\": 7,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 8,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 9,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    },\n    {\n      \"reference\": 10,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    },\n    {\n      \"reference\": 11,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 12,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    },\n    {\n      \"reference\": 13,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 14,\n      \"energy\": \"1/128\",\n      \"source\": \"3/128\"\n    },\n    {\n      \"reference\": 15,\n      \"energy\": \"-1/128\",\n      \"source\": \"-3/128\"\n    }\n  ],\n  \"virtual_dressing\": [\n    {\n      \"L\": 4,\n      \"lam\": 0.3,\n      \"source_offdiag\": -0.0011260993820112475,\n      \"predicted\": -0.0011390624999999999,\n      \"ratio\": 0.9886194848932763\n    },\n    {\n      \"L\": 4,\n      \"lam\": 0.2,\n      \"source_offdiag\": -0.00022386920841244162,\n      \"predicted\": -0.00022500000000000008,\n      \"ratio\": 0.9949742596108513\n    },\n    {\n      \"L\": 4,\n      \"lam\": 0.15,\n      \"source_offdiag\": -7.099060102522259e-05,\n      \"predicted\": -7.119140624999999e-05,\n      \"ratio\": 0.9971793614516864\n    },\n    {\n      \"L\": 6,\n      \"lam\": 0.3,\n      \"source_offdiag\": -3.700336160772366e-05,\n      \"predicted\": -3.737548828124999e-05,\n      \"ratio\": 0.9900435635589272\n    },\n    {\n      \"L\": 6,\n      \"lam\": 0.2,\n      \"source_offdiag\": -3.2668219098752616e-06,\n      \"predicted\": -3.281250000000002e-06,\n      \"ratio\": 0.9956028677715077\n    },\n    {\n      \"L\": 6,\n      \"lam\": 0.15,\n      \"source_offdiag\": -5.825507534140684e-07,\n      \"predicted\": -5.839920043945311e-07,\n      \"ratio\": 0.9975320706968293\n    }\n  ],\n  \"scope\": \"Fixed coefficient controls with J=sqrtV=1; restricted winding subproblem is not full lattice dynamics\"\n}", "neutral_square_local_source.py": "16 reference patterns, four independently marked vertices each PASS: -3P/512"}, "scope": "Exact coefficient and virtual-dressing controls; actual asymptotic feature contrast is analytic, not full-H numerical or empirical validation", "status": "bounded-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_column_readout-m25y443b elapsed_seconds= 1.5137399579398334
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,188 @@
+{
+  "source_role": "Historical source for inspection only; all copies exact except the explicitly marked EOF-normalized source. Exact original bytes remain in original-recovery.tar.gz. No original verdict adopted and no executable imported. Mathematical claims are the bounded canonical notes and live proof texts.",
+  "sources": [
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/NT2/t22lib.py",
+      "original_sha256": "69327747d9f1a2bcc21ce415f8dfcd28e4b3a8317df60cd9459b622540777c97",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/NT2/t22lib.py.source",
+      "sha256": "69327747d9f1a2bcc21ce415f8dfcd28e4b3a8317df60cd9459b622540777c97",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/NT2/v2_exact_witness.py",
+      "original_sha256": "b583fcd7584b81ecffc5bd017337ed897d0cbe3b6452710329fa4c23c9ae9f8f",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/NT2/v2_exact_witness.py.source",
+      "sha256": "b583fcd7584b81ecffc5bd017337ed897d0cbe3b6452710329fa4c23c9ae9f8f",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/NT2/v2b_exact_vector.py",
+      "original_sha256": "a275f7e554036c0c58381fa5249acc08c80f1107e418a96f3023ab844babb085",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/NT2/v2b_exact_vector.py.source",
+      "sha256": "a275f7e554036c0c58381fa5249acc08c80f1107e418a96f3023ab844babb085",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/NT2/v3_o12_exact.py",
+      "original_sha256": "54f16a2601d277d6ca932fed505df7a3960907e1fee9479e2b0c281e4f465964",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/NT2/v3_o12_exact.py.source",
+      "sha256": "54f16a2601d277d6ca932fed505df7a3960907e1fee9479e2b0c281e4f465964",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/NT2/o12.py",
+      "original_sha256": "8b3126099eb37a780417c456c523f0e136b75e4af8440bf13251a91d7450e458",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/NT2/o12.py.source",
+      "sha256": "8b3126099eb37a780417c456c523f0e136b75e4af8440bf13251a91d7450e458",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/COL1/parse_lemma.py",
+      "original_sha256": "53b98a632649356a8a5df78cdacc2240ed1291527cf1ac901110c8b4b75a5449",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/COL1/parse_lemma.py.source",
+      "sha256": "53b98a632649356a8a5df78cdacc2240ed1291527cf1ac901110c8b4b75a5449",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/COL1/su3common.py",
+      "original_sha256": "50a0b5a4381e0dbb5000a591b54ce49f726c9b649cde0bb9bb0b76956f0c93fa",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/COL1/su3common.py.source",
+      "sha256": "50a0b5a4381e0dbb5000a591b54ce49f726c9b649cde0bb9bb0b76956f0c93fa",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/COL1/col1_tokens_z1_full.py",
+      "original_sha256": "a0b04a85d101d42567047e6622e230be30eefd254bc1d077b377c3ea9d95ff50",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/COL1/col1_tokens_z1_full.py.source",
+      "sha256": "a0b04a85d101d42567047e6622e230be30eefd254bc1d077b377c3ea9d95ff50",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/COL1/col1_tokens_z1_links.py",
+      "original_sha256": "8b7f01631215f4657fecac79c827138ff7a3133a536f8553be6e5f5170a1eeed",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/COL1/col1_tokens_z1_links.py.source",
+      "sha256": "8b7f01631215f4657fecac79c827138ff7a3133a536f8553be6e5f5170a1eeed",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/COL1/col1_z3_lowmem.py",
+      "original_sha256": "6031a01ea7c995b20c60ecb5d7ba0c3fd5941ba706e30766327ea57e96385d77",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/COL1/col1_z3_lowmem.py.source",
+      "sha256": "6031a01ea7c995b20c60ecb5d7ba0c3fd5941ba706e30766327ea57e96385d77",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/COL1/col1_z3.py",
+      "original_sha256": "58ecdf89c070a1fcd0208108fb6e24a1bab1c0b7aa23a4f3eac642edc9573ba4",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/COL1/col1_z3.py.source",
+      "sha256": "58ecdf89c070a1fcd0208108fb6e24a1bab1c0b7aa23a4f3eac642edc9573ba4",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/X2/x2_cert.py",
+      "original_sha256": "0dd8ea359ee2842b76a2238a1806b5996f66b145cb3788c963b8801a9b257338",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/X2/x2_cert.py.source",
+      "sha256": "0dd8ea359ee2842b76a2238a1806b5996f66b145cb3788c963b8801a9b257338",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/SIGN1/common.py",
+      "original_sha256": "e89574240345436773270368e57c95be9b4e4ab1aa390d0849cf7682275d783a",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/SIGN1/common.py.source",
+      "sha256": "e89574240345436773270368e57c95be9b4e4ab1aa390d0849cf7682275d783a",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/SIGN1/kramers_fams.py",
+      "original_sha256": "a250b757f05985792f1c380ab84471407b7ad943601274c81cd9e355639157b1",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/SIGN1/kramers_fams.py.source",
+      "sha256": "a250b757f05985792f1c380ab84471407b7ad943601274c81cd9e355639157b1",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/SIGN1/p6_fierz_lambda1_zero.py",
+      "original_sha256": "edeff856e1f2a0b95ab46a6a2cc0be12bfa451046ee60cc67db0b20ec28b6336",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/SIGN1/p6_fierz_lambda1_zero.py.source",
+      "sha256": "edeff856e1f2a0b95ab46a6a2cc0be12bfa451046ee60cc67db0b20ec28b6336",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/SIGN1/pair_kramers_u1c.py",
+      "original_sha256": "70027609f2eec9e5d4f16acdddfd9dfb69a1ab7c2112f6ba4f64db680c88187c",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/SIGN1/pair_kramers_u1c.py.source",
+      "sha256": "dbdb0218e0656b48001a3b6543520b7708b19ee6eaf7aea5ce06879f47468ee2",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs.",
+      "normalization": "Only extra EOF blank lines removed for repository whitespace hygiene; original_sha256 and complete original recovery unchanged."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/campaign/QMC1/scripts/x2model.py",
+      "original_sha256": "f20b34d3668328871576e33735e6f75656bb933f534ec9d582d3bea4d5510549",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/campaign/QMC1/scripts/x2model.py.source",
+      "sha256": "f20b34d3668328871576e33735e6f75656bb933f534ec9d582d3bea4d5510549",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/campaign/CLS1/scripts/cls1_core.py",
+      "original_sha256": "85592ce77f7167b42be2c3bd2e5ab19238e1f9cbb1258475ac4a56b0409966d1",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/campaign/CLS1/scripts/cls1_core.py.source",
+      "sha256": "85592ce77f7167b42be2c3bd2e5ab19238e1f9cbb1258475ac4a56b0409966d1",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/campaign/CLS1/scripts/cls1_count.py",
+      "original_sha256": "c561752ecb91e90eb07fd93eceefac3c316ccf98ca8c1b8e1cced79cbf66b5f5",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/campaign/CLS1/scripts/cls1_count.py.source",
+      "sha256": "c561752ecb91e90eb07fd93eceefac3c316ccf98ca8c1b8e1cced79cbf66b5f5",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/campaign/CLS1/scripts/cls1_labels.py",
+      "original_sha256": "fcbd50f3baac53cce1e32357e29d16651031a12237968603d2995a5dbb3d13d6",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/campaign/CLS1/scripts/cls1_labels.py.source",
+      "sha256": "fcbd50f3baac53cce1e32357e29d16651031a12237968603d2995a5dbb3d13d6",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/campaign/OBS3/scripts/obs3_core.py",
+      "original_sha256": "12836e8903806cd77159128d5940bd920fceacc9300e739c1da8f138331a4479",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/campaign/OBS3/scripts/obs3_core.py.source",
+      "sha256": "12836e8903806cd77159128d5940bd920fceacc9300e739c1da8f138331a4479",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/campaign/OBS3/scripts/univ.py",
+      "original_sha256": "72d85c963a9be17d92f8a152bcf8326ca7fe472fea10dcecf8eea6d5722fded9",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/campaign/OBS3/scripts/univ.py.source",
+      "sha256": "72d85c963a9be17d92f8a152bcf8326ca7fe472fea10dcecf8eea6d5722fded9",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/BLEAK1/b1_core.py",
+      "original_sha256": "bb166458d5f96477c495a15416c3e2f9de4b422c7a87e8591a989813611ed1e1",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/BLEAK1/b1_core.py.source",
+      "sha256": "bb166458d5f96477c495a15416c3e2f9de4b422c7a87e8591a989813611ed1e1",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/BLEAK1/b1_semi.py",
+      "original_sha256": "7554322f787948120583aff39c33a532eabdfa1bad4ef504c01e16cd85fd6a50",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/BLEAK1/b1_semi.py.source",
+      "sha256": "7554322f787948120583aff39c33a532eabdfa1bad4ef504c01e16cd85fd6a50",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/X3/tx3_overlap_transfer.py",
+      "original_sha256": "118ae83ec9aa59b88000026fa9ea6fb6ed1dde9240743c169cc289be9877dcd1",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/X3/tx3_overlap_transfer.py.source",
+      "sha256": "118ae83ec9aa59b88000026fa9ea6fb6ed1dde9240743c169cc289be9877dcd1",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    },
+    {
+      "original_path": ".claude/science/exercises/chirality-grid-20261014/scripts/K2/k2t1_free_transfer_4d.py",
+      "original_sha256": "cb76b684d5eca4178e33a13c3b025cbb3a6c763d964785fe04a86830df713339",
+      "path": "outputs/chirality_exact_review_2026_10_18/provenance/scripts/K2/k2t1_free_transfer_4d.py.source",
+      "sha256": "cb76b684d5eca4178e33a13c3b025cbb3a6c763d964785fe04a86830df713339",
+      "role": "Exact source provenance, not executed or imported; original printed claims are governed by correction register and live proofs."
+    }
+  ]
+}

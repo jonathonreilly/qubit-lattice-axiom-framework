@@ -1,0 +1,150 @@
+===== runner cache v1 =====
+runner: scripts/native_fixed_occupation_ladder.py
+runner_sha256: 0aee974f9fac8770fcdf10230163201121175273f6179ae019edee5d4232cc24
+input_fingerprint_sha256: 537b5d1ffc6a20a8be1e04aa211aabf82dff28f165f23361ce3b9bcd95a92805
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_fixed_occupation_ladder-dhqhxzil
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_fixed_occupation_ladder-dhqhxzil/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_fixed_ladder_control.py']
+{
+  "status": "bounded-support",
+  "random_pair_controls": [
+    {
+      "m": 1,
+      "boson_norm": 0.9999999999999999,
+      "spin_norm": 0.9999999999999999,
+      "norm_identity_error": 1.110893245172114e-16,
+      "mixed_identity_error": 1.3877787807814457e-17,
+      "hardcore_projection_error": 0.0
+    },
+    {
+      "m": 2,
+      "boson_norm": 3.6640824089229684,
+      "spin_norm": 0.9679233971176929,
+      "norm_identity_error": 1.3322696574543554e-15,
+      "mixed_identity_error": 2.2887833992611187e-16,
+      "hardcore_projection_error": 0.0
+    },
+    {
+      "m": 3,
+      "boson_norm": 31.66934081703997,
+      "spin_norm": 0.23912262474875937,
+      "norm_identity_error": 3.197448252872984e-14,
+      "mixed_identity_error": 3.2652638748082423e-15,
+      "hardcore_projection_error": 0.0
+    },
+    {
+      "m": 4,
+      "boson_norm": 512.4494197739168,
+      "spin_norm": 0.0,
+      "norm_identity_error": 6.821210280195865e-13,
+      "mixed_identity_error": 5.685902922862834e-14,
+      "hardcore_projection_error": 0.0
+    }
+  ],
+  "disjoint_pair_algebra_only": [
+    {
+      "pairs": 8,
+      "m": 2,
+      "norm": 1.75,
+      "vertex": 1.3228756555322954,
+      "relative_vertex": 0.9354143466934853
+    },
+    {
+      "pairs": 8,
+      "m": 3,
+      "norm": 3.9375,
+      "vertex": 1.5,
+      "relative_vertex": 0.8660254037844387
+    },
+    {
+      "pairs": 8,
+      "m": 4,
+      "norm": 9.84375,
+      "vertex": 1.5811388300841898,
+      "relative_vertex": 0.7905694150420949
+    },
+    {
+      "pairs": 32,
+      "m": 2,
+      "norm": 1.9375,
+      "vertex": 1.3919410907075054,
+      "relative_vertex": 0.9842509842514763
+    },
+    {
+      "pairs": 32,
+      "m": 3,
+      "norm": 5.44921875,
+      "vertex": 1.6770509831248424,
+      "relative_vertex": 0.9682458365518544
+    },
+    {
+      "pairs": 32,
+      "m": 4,
+      "norm": 19.75341796875,
+      "vertex": 1.9039432764659772,
+      "relative_vertex": 0.9519716382329886
+    },
+    {
+      "pairs": 128,
+      "m": 2,
+      "norm": 1.984375,
+      "vertex": 1.4086784586980805,
+      "relative_vertex": 0.9960860906568265
+    },
+    {
+      "pairs": 128,
+      "m": 3,
+      "norm": 5.860107421875,
+      "vertex": 1.71846588560844,
+      "relative_vertex": 0.9921567416492215
+    },
+    {
+      "pairs": 128,
+      "m": 4,
+      "norm": 22.89104461669922,
+      "vertex": 1.976423537605237,
+      "relative_vertex": 0.9882117688026185
+    },
+    {
+      "pairs": 512,
+      "m": 2,
+      "norm": 1.99609375,
+      "vertex": 1.4128318194321643,
+      "relative_vertex": 0.9990229601966112
+    },
+    {
+      "pairs": 512,
+      "m": 3,
+      "norm": 5.9648895263671875,
+      "vertex": 1.7286645857424163,
+      "relative_vertex": 0.9980449639169571
+    },
+    {
+      "pairs": 512,
+      "m": 4,
+      "norm": 23.71975600719452,
+      "vertex": 1.994132016692977,
+      "relative_vertex": 0.9970660083464885
+    }
+  ],
+  "scope": "Algebra device only; no additional physical site modes or native many-particle numerical spectrum"
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_fixed_occupation_ladder-dhqhxzil/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_fixed_ladder_control.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_fixed_occupation_ladder-dhqhxzil/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_fixed_ladder_control.py']
+{"status": "bounded-support", "algebra_controls": {"status": "bounded-support", "random_pair_controls": [{"m": 1, "boson_norm": 0.9999999999999999, "spin_norm": 0.9999999999999999, "norm_identity_error": 1.110893245172114e-16, "mixed_identity_error": 1.3877787807814457e-17, "hardcore_projection_error": 0.0}, {"m": 2, "boson_norm": 3.6640824089229684, "spin_norm": 0.9679233971176929, "norm_identity_error": 1.3322696574543554e-15, "mixed_identity_error": 2.2887833992611187e-16, "hardcore_projection_error": 0.0}, {"m": 3, "boson_norm": 31.66934081703997, "spin_norm": 0.23912262474875937, "norm_identity_error": 3.197448252872984e-14, "mixed_identity_error": 3.2652638748082423e-15, "hardcore_projection_error": 0.0}, {"m": 4, "boson_norm": 512.4494197739168, "spin_norm": 0.0, "norm_identity_error": 6.821210280195865e-13, "mixed_identity_error": 5.685902922862834e-14, "hardcore_projection_error": 0.0}], "disjoint_pair_algebra_only": [{"pairs": 8, "m": 2, "norm": 1.75, "vertex": 1.3228756555322954, "relative_vertex": 0.9354143466934853}, {"pairs": 8, "m": 3, "norm": 3.9375, "vertex": 1.5, "relative_vertex": 0.8660254037844387}, {"pairs": 8, "m": 4, "norm": 9.84375, "vertex": 1.5811388300841898, "relative_vertex": 0.7905694150420949}, {"pairs": 32, "m": 2, "norm": 1.9375, "vertex": 1.3919410907075054, "relative_vertex": 0.9842509842514763}, {"pairs": 32, "m": 3, "norm": 5.44921875, "vertex": 1.6770509831248424, "relative_vertex": 0.9682458365518544}, {"pairs": 32, "m": 4, "norm": 19.75341796875, "vertex": 1.9039432764659772, "relative_vertex": 0.9519716382329886}, {"pairs": 128, "m": 2, "norm": 1.984375, "vertex": 1.4086784586980805, "relative_vertex": 0.9960860906568265}, {"pairs": 128, "m": 3, "norm": 5.860107421875, "vertex": 1.71846588560844, "relative_vertex": 0.9921567416492215}, {"pairs": 128, "m": 4, "norm": 22.89104461669922, "vertex": 1.976423537605237, "relative_vertex": 0.9882117688026185}, {"pairs": 512, "m": 2, "norm": 1.99609375, "vertex": 1.4128318194321643, "relative_vertex": 0.9990229601966112}, {"pairs": 512, "m": 3, "norm": 5.9648895263671875, "vertex": 1.7286645857424163, "relative_vertex": 0.9980449639169571}, {"pairs": 512, "m": 4, "norm": 23.71975600719452, "vertex": 1.994132016692977, "relative_vertex": 0.9970660083464885}], "scope": "Algebra device only; no additional physical site modes or native many-particle numerical spectrum"}, "scope": "Every fixed finite occupation under inherited native normal-form bounds; numerical controls check algebra, not the microscopic many-body spectrum or observations"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_fixed_occupation_ladder-dhqhxzil/outputs/native_fixed_occupation_ladder/result.json sha256=34e76c1ac4a630fcc9559e66c8cb5799079d42d55853da0e8edd0bc313753638
+{"algebra_controls": {"disjoint_pair_algebra_only": [{"m": 2, "norm": 1.75, "pairs": 8, "relative_vertex": 0.9354143466934853, "vertex": 1.3228756555322954}, {"m": 3, "norm": 3.9375, "pairs": 8, "relative_vertex": 0.8660254037844387, "vertex": 1.5}, {"m": 4, "norm": 9.84375, "pairs": 8, "relative_vertex": 0.7905694150420949, "vertex": 1.5811388300841898}, {"m": 2, "norm": 1.9375, "pairs": 32, "relative_vertex": 0.9842509842514763, "vertex": 1.3919410907075054}, {"m": 3, "norm": 5.44921875, "pairs": 32, "relative_vertex": 0.9682458365518544, "vertex": 1.6770509831248424}, {"m": 4, "norm": 19.75341796875, "pairs": 32, "relative_vertex": 0.9519716382329886, "vertex": 1.9039432764659772}, {"m": 2, "norm": 1.984375, "pairs": 128, "relative_vertex": 0.9960860906568265, "vertex": 1.4086784586980805}, {"m": 3, "norm": 5.860107421875, "pairs": 128, "relative_vertex": 0.9921567416492215, "vertex": 1.71846588560844}, {"m": 4, "norm": 22.89104461669922, "pairs": 128, "relative_vertex": 0.9882117688026185, "vertex": 1.976423537605237}, {"m": 2, "norm": 1.99609375, "pairs": 512, "relative_vertex": 0.9990229601966112, "vertex": 1.4128318194321643}, {"m": 3, "norm": 5.9648895263671875, "pairs": 512, "relative_vertex": 0.9980449639169571, "vertex": 1.7286645857424163}, {"m": 4, "norm": 23.71975600719452, "pairs": 512, "relative_vertex": 0.9970660083464885, "vertex": 1.994132016692977}], "random_pair_controls": [{"boson_norm": 0.9999999999999999, "hardcore_projection_error": 0.0, "m": 1, "mixed_identity_error": 1.3877787807814457e-17, "norm_identity_error": 1.110893245172114e-16, "spin_norm": 0.9999999999999999}, {"boson_norm": 3.6640824089229684, "hardcore_projection_error": 0.0, "m": 2, "mixed_identity_error": 2.2887833992611187e-16, "norm_identity_error": 1.3322696574543554e-15, "spin_norm": 0.9679233971176929}, {"boson_norm": 31.66934081703997, "hardcore_projection_error": 0.0, "m": 3, "mixed_identity_error": 3.2652638748082423e-15, "norm_identity_error": 3.197448252872984e-14, "spin_norm": 0.23912262474875937}, {"boson_norm": 512.4494197739168, "hardcore_projection_error": 0.0, "m": 4, "mixed_identity_error": 5.685902922862834e-14, "norm_identity_error": 6.821210280195865e-13, "spin_norm": 0.0}], "scope": "Algebra device only; no additional physical site modes or native many-particle numerical spectrum", "status": "bounded-support"}, "scope": "Every fixed finite occupation under inherited native normal-form bounds; numerical controls check algebra, not the microscopic many-body spectrum or observations", "status": "bounded-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_fixed_occupation_ladder-dhqhxzil elapsed_seconds= 0.2027862910181284
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

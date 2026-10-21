@@ -1,0 +1,138 @@
+===== runner cache v1 =====
+runner: scripts/native_range_two_airy.py
+runner_sha256: ed7e0e1e13355e63e514cd0413c9d4a2e641adb7e600fa5f9f342218e0ad6e23
+input_fingerprint_sha256: 4af0e454a66b5814090e0bb3e239eaa0e1d21909d75ed3f2e6ce5394ed648fc9
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.90
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_range_two_airy-jo56curm
+[PASS] P9753:native_range_two_airy:C001
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "lam": 0.2,
+      "N": 143,
+      "coefficient": [
+        1.3408347576956636,
+        -0.05816900140221366
+      ],
+      "predicted": [
+        1.3504601500297404,
+        -0.05680395610005136
+      ],
+      "coefficient_error": 0.009721703876474502,
+      "error_over_lambda_two_thirds": 0.028426434580464222,
+      "schur_residual": 2.2056324033266752e-14,
+      "width_coefficient": 0.11633800280442733,
+      "predicted_width": 0.11360791220010272,
+      "cutoff_coefficient_difference": 0.0
+    },
+    {
+      "lam": 0.1,
+      "N": 253,
+      "coefficient": [
+        1.3465162775357216,
+        -0.05695485384454775
+      ],
+      "predicted": [
+        1.3504601500297404,
+        -0.05680395610005136
+      ],
+      "coefficient_error": 0.00394675821128841,
+      "error_over_lambda_two_thirds": 0.018319228842485828,
+      "schur_residual": 3.625264947627759e-15,
+      "width_coefficient": 0.1139097076890955,
+      "predicted_width": 0.11360791220010272,
+      "cutoff_coefficient_difference": 0.0
+    },
+    {
+      "lam": 0.05,
+      "N": 442,
+      "coefficient": [
+        1.3486758885952848,
+        -0.05678167979023395
+      ],
+      "predicted": [
+        1.3504601500297404,
+        -0.05680395610005136
+      ],
+      "coefficient_error": 0.001784400487689018,
+      "error_over_lambda_two_thirds": 0.013147575205671218,
+      "schur_residual": 1.505573050723803e-14,
+      "width_coefficient": 0.1135633595804679,
+      "predicted_width": 0.11360791220010272,
+      "cutoff_coefficient_difference": 0.0
+    },
+    {
+      "lam": 0.02,
+      "N": 914,
+      "coefficient": [
+        1.3497563082542134,
+        -0.05677970844172393
+      ],
+      "predicted": [
+        1.3504601500297404,
+        -0.05680395610005136
+      ],
+      "coefficient_error": 0.000704259322914014,
+      "error_over_lambda_two_thirds": 0.009558269563845001,
+      "schur_residual": 1.2182642724234628e-14,
+      "width_coefficient": 0.11355941688344787,
+      "predicted_width": 0.11360791220010272,
+      "cutoff_coefficient_difference": 0.0
+    },
+    {
+      "lam": 0.01,
+      "N": 1570,
+      "coefficient": [
+        1.3500853182335277,
+        -0.05679131908203087
+      ],
+      "predicted": [
+        1.3504601500297404,
+        -0.05680395610005136
+      ],
+      "coefficient_error": 0.0003750447568977171,
+      "error_over_lambda_two_thirds": 0.008080094345750162,
+      "schur_residual": 5.639091320735056e-12,
+      "width_coefficient": 0.11358263816406174,
+      "predicted_width": 0.11360791220010272,
+      "cutoff_coefficient_difference": 0.0
+    },
+    {
+      "lam": 0.005,
+      "N": 2681,
+      "coefficient": [
+        1.3502503464070232,
+        -0.05679819274701445
+      ],
+      "predicted": [
+        1.3504601500297404,
+        -0.05680395610005136
+      ],
+      "coefficient_error": 0.0002098827680956066,
+      "error_over_lambda_two_thirds": 0.007177889701308209,
+      "schur_residual": 4.147798119661858e-12,
+      "width_coefficient": 0.1135963854940289,
+      "predicted_width": 0.11360791220010272,
+      "cutoff_coefficient_difference": 0.0
+    }
+  ],
+  "scope": "Specified slowK4+outgoinghost only. Uniform infinite-arm asymptotic proof is separate; Schur residual is not a certified pole error. No full-H pole or original-source residue theorem."
+}
+Assertion evaluations: 6 ; PASS counts distinct primary assertion groups; helper assertions are additional uncounted checks.
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_range_two_airy-jo56curm/outputs/native_range_two_airy/result.json sha256=eff8e9b0d9735955a811128f55299e87fc710fd54d51bcaa3373674f4687fe17
+{"rows": [{"N": 143, "coefficient": [1.3408347576956636, -0.05816900140221366], "coefficient_error": 0.009721703876474502, "cutoff_coefficient_difference": 0.0, "error_over_lambda_two_thirds": 0.028426434580464222, "lam": 0.2, "predicted": [1.3504601500297404, -0.05680395610005136], "predicted_width": 0.11360791220010272, "schur_residual": 2.2056324033266752e-14, "width_coefficient": 0.11633800280442733}, {"N": 253, "coefficient": [1.3465162775357216, -0.05695485384454775], "coefficient_error": 0.00394675821128841, "cutoff_coefficient_difference": 0.0, "error_over_lambda_two_thirds": 0.018319228842485828, "lam": 0.1, "predicted": [1.3504601500297404, -0.05680395610005136], "predicted_width": 0.11360791220010272, "schur_residual": 3.625264947627759e-15, "width_coefficient": 0.1139097076890955}, {"N": 442, "coefficient": [1.3486758885952848, -0.05678167979023395], "coefficient_error": 0.001784400487689018, "cutoff_coefficient_difference": 0.0, "error_over_lambda_two_thirds": 0.013147575205671218, "lam": 0.05, "predicted": [1.3504601500297404, -0.05680395610005136], "predicted_width": 0.11360791220010272, "schur_residual": 1.505573050723803e-14, "width_coefficient": 0.1135633595804679}, {"N": 914, "coefficient": [1.3497563082542134, -0.05677970844172393], "coefficient_error": 0.000704259322914014, "cutoff_coefficient_difference": 0.0, "error_over_lambda_two_thirds": 0.009558269563845001, "lam": 0.02, "predicted": [1.3504601500297404, -0.05680395610005136], "predicted_width": 0.11360791220010272, "schur_residual": 1.2182642724234628e-14, "width_coefficient": 0.11355941688344787}, {"N": 1570, "coefficient": [1.3500853182335277, -0.05679131908203087], "coefficient_error": 0.0003750447568977171, "cutoff_coefficient_difference": 0.0, "error_over_lambda_two_thirds": 0.008080094345750162, "lam": 0.01, "predicted": [1.3504601500297404, -0.05680395610005136], "predicted_width": 0.11360791220010272, "schur_residual": 5.639091320735056e-12, "width_coefficient": 0.11358263816406174}, {"N": 2681, "coefficient": [1.3502503464070232, -0.05679819274701445], "coefficient_error": 0.0002098827680956066, "cutoff_coefficient_difference": 0.0, "error_over_lambda_two_thirds": 0.007177889701308209, "lam": 0.005, "predicted": [1.3504601500297404, -0.05680395610005136], "predicted_width": 0.11360791220010272, "schur_residual": 4.147798119661858e-12, "width_coefficient": 0.1135963854940289}], "scope": "Specified slowK4+outgoinghost only. Uniform infinite-arm asymptotic proof is separate; Schur residual is not a certified pole error. No full-H pole or original-source residue theorem.", "status": "PASS"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion groups, not loop iterations; helper assertions fail closed but are additional uncounted checks.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; no microscopic pole, universal force or empirical identification is established.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_range_two_airy-jo56curm elapsed_seconds= 0.8205529577098787
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

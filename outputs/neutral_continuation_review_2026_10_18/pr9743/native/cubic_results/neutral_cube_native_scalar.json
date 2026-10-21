@@ -1,0 +1,54 @@
+{
+  "ground": -38.19164989239814,
+  "ground_residual": 1.1501295466829956e-11,
+  "operator": "Q=sum_a [H_a,[H,H_a]]",
+  "terms": 1053,
+  "sequential_error": 1.713404841378057e-11,
+  "mean": 2327.4755441215157,
+  "variance": 84384.28670714726,
+  "peaks": [
+    {
+      "gap": 6.797207494806095,
+      "residual": 3.148261102313327e-12,
+      "weight": 17383.33991660924,
+      "plaquette_weight": 13.798134211397187,
+      "accepted": true
+    },
+    {
+      "gap": 9.418048671572059,
+      "residual": 2.164377385657001e-12,
+      "weight": 12476.144798880168,
+      "plaquette_weight": 0.6620729209421636,
+      "accepted": true
+    },
+    {
+      "gap": 10.433910059526433,
+      "residual": 1.8634263289561165e-11,
+      "weight": 12135.298472708773,
+      "plaquette_weight": 0.9834768066269648,
+      "accepted": true
+    },
+    {
+      "gap": 17.206804369773213,
+      "residual": 0.5170232283897834,
+      "weight": 7430.551640355907,
+      "plaquette_weight": 5.345071477494989,
+      "accepted": false
+    },
+    {
+      "gap": 3.763565915969515,
+      "residual": 3.949290030258879e-12,
+      "weight": 7094.981094945618,
+      "plaquette_weight": 58.33658731179345,
+      "accepted": true
+    },
+    {
+      "gap": 17.384493275926417,
+      "residual": 0.6987321501946543,
+      "weight": 3324.2053977507585,
+      "plaquette_weight": 0.940651306066378,
+      "accepted": false
+    }
+  ],
+  "scope": "Chosen native-derived diagnostic, no new Hamiltonian term; finite27sites"
+}

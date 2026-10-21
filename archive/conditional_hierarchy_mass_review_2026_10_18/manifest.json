@@ -1,0 +1,3444 @@
+{
+  "versions": [
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H1/PREREG.md",
+      "sha256": "e572e804a863f1c51e137e216724a379e0434f72c330207acfb92a72e64ba658",
+      "bytes": 6186,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/e572e804a863f1c51e137e216724a379e0434f72c330207acfb92a72e64ba658.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H1/REFEREE_SF.md",
+      "sha256": "cf4568840b5842d3c381bb778252d6a1af16375e444ab3e1ec4214ca30cc69b2",
+      "bytes": 7588,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/cf4568840b5842d3c381bb778252d6a1af16375e444ab3e1ec4214ca30cc69b2.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H1/REPORT.md",
+      "sha256": "3c62429cdec1e7f4b359883bdfd94447a0cde0110bbb0ea06e08f8f67da964a9",
+      "bytes": 9454,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/3c62429cdec1e7f4b359883bdfd94447a0cde0110bbb0ea06e08f8f67da964a9.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H1/r1.log",
+      "sha256": "ae2ee3853c3ad07b16b3672c93328a27f3e5c00dd67432003d3c8cf84ce56d5f",
+      "bytes": 2693,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/ae2ee3853c3ad07b16b3672c93328a27f3e5c00dd67432003d3c8cf84ce56d5f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H1/r1_species_invariants.py",
+      "sha256": "d10caa1291d4191736c8559a2cd6459478f8aac834bd6bcfd32b35e5e77f2545",
+      "bytes": 8172,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d10caa1291d4191736c8559a2cd6459478f8aac834bd6bcfd32b35e5e77f2545.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H1/r1b.log",
+      "sha256": "84a44f78c58a01102270dc5789dbd32963123764a5194914f3191f1c9e7d15cc",
+      "bytes": 503,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/84a44f78c58a01102270dc5789dbd32963123764a5194914f3191f1c9e7d15cc.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H1/r1b_slogdet_sanity.py",
+      "sha256": "cc1f8bd1d96a6e7a76770b30498163079426096826401c50c6104906feb2f465",
+      "bytes": 1020,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/cc1f8bd1d96a6e7a76770b30498163079426096826401c50c6104906feb2f465.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H1/r2.log",
+      "sha256": "679e9f91c75e289f3167387b49b8c6b5748eed8bfee4b8c462881e4c4114937d",
+      "bytes": 2256,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/679e9f91c75e289f3167387b49b8c6b5748eed8bfee4b8c462881e4c4114937d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H1/r2_dt_scan.py",
+      "sha256": "87b0f93380cdcf1e7ca1e2471351bf6b08e6f0ef7ca9ca496d5233af9f57385d",
+      "bytes": 4441,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/87b0f93380cdcf1e7ca1e2471351bf6b08e6f0ef7ca9ca496d5233af9f57385d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H1/r3.log",
+      "sha256": "e8a7fa41e784a3799cd83f5b7e87566251c0a0dade55a596ab1545cb47a268f0",
+      "bytes": 1102,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/e8a7fa41e784a3799cd83f5b7e87566251c0a0dade55a596ab1545cb47a268f0.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H1/r3_closure_mass.py",
+      "sha256": "36adc0c93c6341b487e78ed4758764f13f608176b168b46768703213fac0f8c3",
+      "bytes": 4209,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/36adc0c93c6341b487e78ed4758764f13f608176b168b46768703213fac0f8c3.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H1/r4.log",
+      "sha256": "bab93d4ba747da23064487a46bdf4c4d8c9105f83d6db277852d97e1fcaddc9e",
+      "bytes": 951,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/bab93d4ba747da23064487a46bdf4c4d8c9105f83d6db277852d97e1fcaddc9e.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H1/r4_hyperbolic_bound.py",
+      "sha256": "8f0003538764b2708390a4cc86b54d63c9f5c2c912ccbddb254e8986f753c0e7",
+      "bytes": 4802,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8f0003538764b2708390a4cc86b54d63c9f5c2c912ccbddb254e8986f753c0e7.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H1/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/PREREG.md",
+      "sha256": "a6227b0e2e23941ccd78b1708ab3b9e3fe07e569b937473b5fec28197e6fb0cb",
+      "bytes": 8679,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/a6227b0e2e23941ccd78b1708ab3b9e3fe07e569b937473b5fec28197e6fb0cb.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/PREREG_FOLLOWUP_2026-10-18.md",
+      "sha256": "2bbc4b7156b0604e2db31ee171f173be22accd8b877cef736cf13a5d94106f37",
+      "bytes": 2912,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/2bbc4b7156b0604e2db31ee171f173be22accd8b877cef736cf13a5d94106f37.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/REFEREE_SF.md",
+      "sha256": "821df35669c4b4f8fc8374cc0404d566995f5ecdef7f262a292077412c83a7df",
+      "bytes": 6295,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/821df35669c4b4f8fc8374cc0404d566995f5ecdef7f262a292077412c83a7df.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/REPORT.md",
+      "sha256": "6e048a2dfb7edd7b036d2404f69f4b8bbde796a6eb9c5dca224006a5958411a8",
+      "bytes": 10568,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/6e048a2dfb7edd7b036d2404f69f4b8bbde796a6eb9c5dca224006a5958411a8.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/ref/pr9702_runner.py",
+      "sha256": "682f1cafe7252791f1bbe3ef3a32ed2b57d1ac512c72e48757adcd8c8893ae3a",
+      "bytes": 33048,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/682f1cafe7252791f1bbe3ef3a32ed2b57d1ac512c72e48757adcd8c8893ae3a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/check_saturation.out",
+      "sha256": "546d141ab227c752dab0cc9e7ebc7a2e8019078409ceec9912cff572dbb081f9",
+      "bytes": 869,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/546d141ab227c752dab0cc9e7ebc7a2e8019078409ceec9912cff572dbb081f9.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/check_saturation.py",
+      "sha256": "b68d24bf1988d1daa8ea675ee884cc1e4ce74fbbe2d006758a3d24958b294b10",
+      "bytes": 8432,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/b68d24bf1988d1daa8ea675ee884cc1e4ce74fbbe2d006758a3d24958b294b10.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/fit_control.out",
+      "sha256": "589052820b9e9858b0e74c469fcfd671e25671627e0353ca079fde96279059a6",
+      "bytes": 4740,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/589052820b9e9858b0e74c469fcfd671e25671627e0353ca079fde96279059a6.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/fit_control.py",
+      "sha256": "89ad35abc75b8be68797140a14823d0bdcbc370a9e35fc7113f0094a2ba74188",
+      "bytes": 6190,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/89ad35abc75b8be68797140a14823d0bdcbc370a9e35fc7113f0094a2ba74188.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/fit_twolevel.out",
+      "sha256": "5b7c4cc9eaa6bde9d2de6717daa5490be9182507fb494ef9bc1fcc4131b87fc3",
+      "bytes": 1329,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/5b7c4cc9eaa6bde9d2de6717daa5490be9182507fb494ef9bc1fcc4131b87fc3.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/fit_twolevel.py",
+      "sha256": "fb654c051c7a733d06741f207a170e40fa014c0f336ec82cbf6702228cecdc32",
+      "bytes": 2142,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/fb654c051c7a733d06741f207a170e40fa014c0f336ec82cbf6702228cecdc32.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/orders_A1-A1.out",
+      "sha256": "1892474ff42bd2cbe13f7990604d11620dae3636c48095fd01b78092ffc3daab",
+      "bytes": 31333,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/1892474ff42bd2cbe13f7990604d11620dae3636c48095fd01b78092ffc3daab.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/orders_A1-A2.out",
+      "sha256": "049c1e49012cd59a2c79db57727de44ce8efa3ca87dd386f8138eaca49cec71f",
+      "bytes": 31333,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/049c1e49012cd59a2c79db57727de44ce8efa3ca87dd386f8138eaca49cec71f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/orders_A1-B1.out",
+      "sha256": "cbd905810b408e42bfb5b4bb00d3c9776551616c5b85dbb2705c6f75145a3aab",
+      "bytes": 31333,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/cbd905810b408e42bfb5b4bb00d3c9776551616c5b85dbb2705c6f75145a3aab.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/orders_A1-B2.out",
+      "sha256": "3c75ebc8d7c2d4b0211de9fd1930de74f3b7eb1b91f30dc8ad17c2131b3c3798",
+      "bytes": 31333,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/3c75ebc8d7c2d4b0211de9fd1930de74f3b7eb1b91f30dc8ad17c2131b3c3798.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/orders_A2-A1.out",
+      "sha256": "48517a44daba2327404f49d68cbbc55552474d048e2fe14b5fa8d4559e95d6bc",
+      "bytes": 31333,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/48517a44daba2327404f49d68cbbc55552474d048e2fe14b5fa8d4559e95d6bc.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/orders_A2-A2.out",
+      "sha256": "705b2fd71b72f6cb2e327ea64f478f5e29a0fb078d7fcad54bedb42d95f46eeb",
+      "bytes": 31333,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/705b2fd71b72f6cb2e327ea64f478f5e29a0fb078d7fcad54bedb42d95f46eeb.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/orders_A2-B1.out",
+      "sha256": "365b6e61971c9248de738484b8c3195fded00b13c6fc21a1d83ebd53cd59debf",
+      "bytes": 31333,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/365b6e61971c9248de738484b8c3195fded00b13c6fc21a1d83ebd53cd59debf.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/orders_A2-B2.out",
+      "sha256": "a1a41ec831f6590e571fd915f8311a3be4b8f481f303f2eb943810cdfa064ae5",
+      "bytes": 31333,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/a1a41ec831f6590e571fd915f8311a3be4b8f481f303f2eb943810cdfa064ae5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/orders_group.py",
+      "sha256": "4ea0b597f5259c5c2d157ce10f306e4726295e6e4572f9972b9c1f956de0bf2a",
+      "bytes": 18598,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/4ea0b597f5259c5c2d157ce10f306e4726295e6e4572f9972b9c1f956de0bf2a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/orders_naive.out",
+      "sha256": "8d07c2896d70102453a96728b49408739034ea754cdc0bc9dcf37a6b4753d83a",
+      "bytes": 31333,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8d07c2896d70102453a96728b49408739034ea754cdc0bc9dcf37a6b4753d83a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/orders_twist.out",
+      "sha256": "9f66be39f68776fbf1356aaf567736d274c061923632d6a6584dc7568ebba56f",
+      "bytes": 31333,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/9f66be39f68776fbf1356aaf567736d274c061923632d6a6584dc7568ebba56f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/parse_variants.out",
+      "sha256": "175aaed58c9c8c9a6796b86ebb00628be01821631232ff92af4b328c011aca1b",
+      "bytes": 6731,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/175aaed58c9c8c9a6796b86ebb00628be01821631232ff92af4b328c011aca1b.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/parse_variants.py",
+      "sha256": "de0444f2782b9fe9e2e19711ccbbfd662360b7c9369ce99f2e216640f7123f10",
+      "bytes": 1601,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/de0444f2782b9fe9e2e19711ccbbfd662360b7c9369ce99f2e216640f7123f10.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/run_variants.log",
+      "sha256": "dcd2437ab8ef14d52733f94c46e7905b88514ee6c6594c5bbc26874db089c8a3",
+      "bytes": 304,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/dcd2437ab8ef14d52733f94c46e7905b88514ee6c6594c5bbc26874db089c8a3.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H2/scripts/run_variants.sh",
+      "sha256": "63fee6efa1cb0479bcc90448cde7a02c8d6c7a2bdc2d59aa26c09fa57e7c508e",
+      "bytes": 380,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/63fee6efa1cb0479bcc90448cde7a02c8d6c7a2bdc2d59aa26c09fa57e7c508e.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/PREREG.md",
+      "sha256": "26f8bc50a0ef8272ffca23f35a0ecfff924e561d9c14c3df5035b486159bad0e",
+      "bytes": 10105,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/26f8bc50a0ef8272ffca23f35a0ecfff924e561d9c14c3df5035b486159bad0e.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/REFEREE_SF.md",
+      "sha256": "d1c0a5162018b8e0105e8f39b8b974913716b80f505377993a8c83ed4b143247",
+      "bytes": 6619,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d1c0a5162018b8e0105e8f39b8b974913716b80f505377993a8c83ed4b143247.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/REPORT.md",
+      "sha256": "f9b546f95fdf430426d7b732fc53dea43dd6d6c92d5be68fb9238dd18ac901b0",
+      "bytes": 10071,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f9b546f95fdf430426d7b732fc53dea43dd6d6c92d5be68fb9238dd18ac901b0.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/r1.log",
+      "sha256": "18873ff4b7a65e770bcf7a16093dacb7a9f63cce262c0656ab4f9a1a537efdf9",
+      "bytes": 9014,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/18873ff4b7a65e770bcf7a16093dacb7a9f63cce262c0656ab4f9a1a537efdf9.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/r1_v1.log",
+      "sha256": "ab60943ca22c441dabca4edaa2ed3f139efd991b5a74720f324a1ca55b78768f",
+      "bytes": 10330,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/ab60943ca22c441dabca4edaa2ed3f139efd991b5a74720f324a1ca55b78768f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/r1_window.py",
+      "sha256": "d7ddfed3af8c2e854a9a022af00b9c8ca83b73cc245bbe5829a279dae073d1fe",
+      "bytes": 8411,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d7ddfed3af8c2e854a9a022af00b9c8ca83b73cc245bbe5829a279dae073d1fe.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/r2.log",
+      "sha256": "b692915f953c228388247154419329394beab0bda82c180d62693b9f13347951",
+      "bytes": 4495,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/b692915f953c228388247154419329394beab0bda82c180d62693b9f13347951.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/r2_candidates.py",
+      "sha256": "c3a5b804516db01fbd0955ff4737ccc145d9edc56520d36fb12a488ce0bd2a45",
+      "bytes": 7027,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c3a5b804516db01fbd0955ff4737ccc145d9edc56520d36fb12a488ce0bd2a45.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/r3.log",
+      "sha256": "8844e6792c5d5964251c557a2f6ced4c222707a41a4c893866f79ce3861edc16",
+      "bytes": 2403,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8844e6792c5d5964251c557a2f6ced4c222707a41a4c893866f79ce3861edc16.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/r3_truncated_plaquette.py",
+      "sha256": "8d1e512545c4a3d513a4c054840f82d6fbf28c46c7183a14d9dc704456e23f69",
+      "bytes": 6223,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8d1e512545c4a3d513a4c054840f82d6fbf28c46c7183a14d9dc704456e23f69.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/r4.log",
+      "sha256": "029fc85673aa61fd18db498a04ab5b12bfa34a1e7dae866e93741c7e914b1a76",
+      "bytes": 807,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/029fc85673aa61fd18db498a04ab5b12bfa34a1e7dae866e93741c7e914b1a76.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/r4_scheme_direction.py",
+      "sha256": "e3b4562984f730766ec54adb7988aa7103b29708a637a3142ea8076f39609359",
+      "bytes": 2403,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/e3b4562984f730766ec54adb7988aa7103b29708a637a3142ea8076f39609359.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/r4_v1.log",
+      "sha256": "82ff1fe5c8d2c746674f491b45be1cfc37e08ce8e12236d7d9738c557b223b7c",
+      "bytes": 2503,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/82ff1fe5c8d2c746674f491b45be1cfc37e08ce8e12236d7d9738c557b223b7c.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/rgcommon.py",
+      "sha256": "d82a0f3dc0b21d63de7337f468c408f09a9a82540b58c7680fc3dc3e8573bdac",
+      "bytes": 5438,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d82a0f3dc0b21d63de7337f468c408f09a9a82540b58c7680fc3dc3e8573bdac.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/H3/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/SUMMARY.md",
+      "sha256": "2f755ae94fe491de649f93b1dde7a4bf600754c04d23cd6f9ec08716e1350f9a",
+      "bytes": 3483,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/2f755ae94fe491de649f93b1dde7a4bf600754c04d23cd6f9ec08716e1350f9a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/SUPERVISOR_PREDICTION.md",
+      "sha256": "c338e97a9eb1deec1f099e726a92cb5082fce8b461c00521ddefc3551a832f86",
+      "bytes": 1382,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c338e97a9eb1deec1f099e726a92cb5082fce8b461c00521ddefc3551a832f86.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/TESTS.md",
+      "sha256": "f033fc19bac78a7c525fd5725ecaadeaade1321d309de541869d481dd065b8ae",
+      "bytes": 13021,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f033fc19bac78a7c525fd5725ecaadeaade1321d309de541869d481dd065b8ae.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H1/x1.log",
+      "sha256": "ba622f25221f479b02e2c41cc24f36469ad8ca10d53dd50a7e603183ea5015af",
+      "bytes": 1185,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/ba622f25221f479b02e2c41cc24f36469ad8ca10d53dd50a7e603183ea5015af.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H1/x1_ks_shift_nn.py",
+      "sha256": "565a5378c1dfd6a14bdb4fc6fede9870e2c07069855f8c60247699836192bcc1",
+      "bytes": 3792,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/565a5378c1dfd6a14bdb4fc6fede9870e2c07069855f8c60247699836192bcc1.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H1/x2.log",
+      "sha256": "8894578cd1ac0049a79a44938ce2ea9d24244138cf6f90f8360055f67ccdc91e",
+      "bytes": 596,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8894578cd1ac0049a79a44938ce2ea9d24244138cf6f90f8360055f67ccdc91e.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H1/x2_lemma_closure.py",
+      "sha256": "f4c10d9f66d4b853064c467662678daa703a212c6dc9bf39ab02103f25534e6b",
+      "bytes": 1473,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f4c10d9f66d4b853064c467662678daa703a212c6dc9bf39ab02103f25534e6b.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H2/capped300.sh",
+      "sha256": "d9c4e549499206953a7dc69f84ae28c707dc870f9c9e85f6faa1e68447f7d91d",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d9c4e549499206953a7dc69f84ae28c707dc870f9c9e85f6faa1e68447f7d91d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H2/ref_check3.out",
+      "sha256": "cddcf5789eeb9c10c679f31fa92b1a3be0ce00046e9f66ccc7138cb8bd1adebb",
+      "bytes": 2725,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/cddcf5789eeb9c10c679f31fa92b1a3be0ce00046e9f66ccc7138cb8bd1adebb.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H2/ref_check3.py",
+      "sha256": "180dda06cdc21a3db466d7d26fca0c34cc256b43161329d73562b18c44644d4f",
+      "bytes": 3160,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/180dda06cdc21a3db466d7d26fca0c34cc256b43161329d73562b18c44644d4f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H2/ref_check4.out",
+      "sha256": "ea6fdb81fae047b79ee2906ee17120ba6d992da4e2a2ff91c4f4b10f5d93fabe",
+      "bytes": 4836,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/ea6fdb81fae047b79ee2906ee17120ba6d992da4e2a2ff91c4f4b10f5d93fabe.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H2/ref_check4.py",
+      "sha256": "0f8ab66ff254bb2582ec275d18ccb1c13bd9fbceae9a43368d086cd5f765cb24",
+      "bytes": 2707,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/0f8ab66ff254bb2582ec275d18ccb1c13bd9fbceae9a43368d086cd5f765cb24.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H2/ref_check5.out",
+      "sha256": "f0f1bca9f3471c3a681f39e3b822aedc7e96b22590e560dcca09d8ab0c848ca2",
+      "bytes": 5964,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f0f1bca9f3471c3a681f39e3b822aedc7e96b22590e560dcca09d8ab0c848ca2.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H2/ref_check5.py",
+      "sha256": "944b201cfb5c483634ec26ccd88042d5cfddbe95048f0f0a8db2cbb39a6c0456",
+      "bytes": 4516,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/944b201cfb5c483634ec26ccd88042d5cfddbe95048f0f0a8db2cbb39a6c0456.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H2/ref_checks.py",
+      "sha256": "33e1307aadfbeee77e26ac45753c827719697656ffd799896db86d92c9c28b11",
+      "bytes": 6865,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/33e1307aadfbeee77e26ac45753c827719697656ffd799896db86d92c9c28b11.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H2/ref_checks2.py",
+      "sha256": "0927bb8842088204e9ec48612a885719a6da067cfc56ac0dca54b0745c5e83a3",
+      "bytes": 4861,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/0927bb8842088204e9ec48612a885719a6da067cfc56ac0dca54b0745c5e83a3.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H2/ref_checks2_A1-A1.out",
+      "sha256": "176165ca6a52abcde01b9a0bf2bff288323211838c3377d127bb2f5371c9cbfe",
+      "bytes": 23490,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/176165ca6a52abcde01b9a0bf2bff288323211838c3377d127bb2f5371c9cbfe.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H2/ref_checks_A1-A1.out",
+      "sha256": "0d1222dca972d6820733fcd81f79ed6bf64afb7c7edf46d4db09704dff234ce0",
+      "bytes": 15188,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/0d1222dca972d6820733fcd81f79ed6bf64afb7c7edf46d4db09704dff234ce0.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-scale-ladder-20261018/ref_H3/chk.py",
+      "sha256": "85135aea77dfdf563824a9980fbc8c05ea1fd9d557e04e245d58480f236efae4",
+      "bytes": 2721,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/85135aea77dfdf563824a9980fbc8c05ea1fd9d557e04e245d58480f236efae4.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/K/REPORT.md",
+      "sha256": "4edb39d45ddd2a01da1849374979c7f6e1e709cba32c9a28a4ec7f95adb5f62c",
+      "bytes": 8998,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/4edb39d45ddd2a01da1849374979c7f6e1e709cba32c9a28a4ec7f95adb5f62c.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/K/k5_spiral.out",
+      "sha256": "6e91f0d7055c46ee2a439796eb9d506f5ea27ee99ee0012567f0a95dd51ef259",
+      "bytes": 453,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/6e91f0d7055c46ee2a439796eb9d506f5ea27ee99ee0012567f0a95dd51ef259.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/K/k5_spiral.py",
+      "sha256": "8ac30341716bd5820b9cdbbaeb31fce2def6135095da078857310700ac3824ad",
+      "bytes": 1077,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8ac30341716bd5820b9cdbbaeb31fce2def6135095da078857310700ac3824ad.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/K/k5b_spiral.out",
+      "sha256": "8027d0c1b9df9778c0cf1db2255dcfdade094491b7d0e14d3754ea1d84f0ce55",
+      "bytes": 496,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8027d0c1b9df9778c0cf1db2255dcfdade094491b7d0e14d3754ea1d84f0ce55.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/K/k5b_spiral.py",
+      "sha256": "a363c4b72595d3e4736236e10fccbd2ecc329959fd6fe39b5687e00d0c47c831",
+      "bytes": 1063,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/a363c4b72595d3e4736236e10fccbd2ecc329959fd6fe39b5687e00d0c47c831.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/K/kill_checks.out",
+      "sha256": "c4107847d76a312115131f53d0bcd76ae3d3c7127a39149321b55377dcb751f7",
+      "bytes": 1637,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c4107847d76a312115131f53d0bcd76ae3d3c7127a39149321b55377dcb751f7.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/K/kill_checks.py",
+      "sha256": "f1a912be7089824736b713d1c360d80143b44eb0314ea9ef343b43ee0f04a400",
+      "bytes": 5976,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f1a912be7089824736b713d1c360d80143b44eb0314ea9ef343b43ee0f04a400.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/K/kill_checks_K1-K4.out",
+      "sha256": "c4107847d76a312115131f53d0bcd76ae3d3c7127a39149321b55377dcb751f7",
+      "bytes": 1637,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c4107847d76a312115131f53d0bcd76ae3d3c7127a39149321b55377dcb751f7.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/K/scripts/capped.sh",
+      "sha256": "3fff8c28feb9f9165b1a35a7e6a950f48565ae86bccbe7032df6d5b5a055af27",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/3fff8c28feb9f9165b1a35a7e6a950f48565ae86bccbe7032df6d5b5a055af27.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/LEE/PREREG.md",
+      "sha256": "d8721c7394e406dc7c66ea5ceb1754b7acd12879982ca50fac96c070e6457b09",
+      "bytes": 6491,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d8721c7394e406dc7c66ea5ceb1754b7acd12879982ca50fac96c070e6457b09.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/LEE/PREREG.sha",
+      "sha256": "12cab9ac3cfae2c0054a0157dd8903643a228351ec79701a5d5ebe3eaa09c630",
+      "bytes": 281,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/12cab9ac3cfae2c0054a0157dd8903643a228351ec79701a5d5ebe3eaa09c630.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/LEE/REPORT.md",
+      "sha256": "4808506c82bbcd52f3ed5830abb1d33c17f68b4faf4a2f2cce55133f7e64b10a",
+      "bytes": 6516,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/4808506c82bbcd52f3ed5830abb1d33c17f68b4faf4a2f2cce55133f7e64b10a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/LEE/lee_family.out",
+      "sha256": "ff2ebc2521cbe056b60526f2c02863eec2a06912f5b3f5c8d98f6a6cbc19a30a",
+      "bytes": 5198,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/ff2ebc2521cbe056b60526f2c02863eec2a06912f5b3f5c8d98f6a6cbc19a30a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/LEE/lee_inputs.out",
+      "sha256": "4f003f6b55aaba4dbf223ad47d99ccff81c49b38573ce1d3dbfe2ef2086e6e51",
+      "bytes": 3269,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/4f003f6b55aaba4dbf223ad47d99ccff81c49b38573ce1d3dbfe2ef2086e6e51.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/LEE/lee_range.out",
+      "sha256": "580db92438be87baf917361a97e664fef8b89efd712da3fbcd58fc5d08915414",
+      "bytes": 243,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/580db92438be87baf917361a97e664fef8b89efd712da3fbcd58fc5d08915414.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/LEE/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/LEE/scripts/lee_family.py",
+      "sha256": "c5158984dbd3ab445d8e87896140ec74271bad192a87b1b80adc8f42f7298076",
+      "bytes": 4497,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c5158984dbd3ab445d8e87896140ec74271bad192a87b1b80adc8f42f7298076.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/LEE/scripts/lee_inputs.py",
+      "sha256": "64a3c11a46eaadd3524884fcf29c699adfa43c894c3c5803ee36eaaef61033dd",
+      "bytes": 3324,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/64a3c11a46eaadd3524884fcf29c699adfa43c894c3c5803ee36eaaef61033dd.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/LEE/scripts/lee_range.py",
+      "sha256": "a5c5e011e4e000d30cfa434d9f1aca309ac0400cb52ea5d207c6babee82ec857",
+      "bytes": 477,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/a5c5e011e4e000d30cfa434d9f1aca309ac0400cb52ea5d207c6babee82ec857.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R1/PREREG.md",
+      "sha256": "0fe29515b5253901a92f27b9b0dbdbbefa53e3204bf81f796ed349d7e6dab936",
+      "bytes": 2041,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/0fe29515b5253901a92f27b9b0dbdbbefa53e3204bf81f796ed349d7e6dab936.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R1/REPORT.md",
+      "sha256": "125b0aa1ba26a8b3edef4ec5281a133548693551f02d73946dbb059b90dda5dc",
+      "bytes": 9187,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/125b0aa1ba26a8b3edef4ec5281a133548693551f02d73946dbb059b90dda5dc.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R1/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R1/t1.log",
+      "sha256": "d4a31e66d05c9543f42a12dc30a546b1b0f8481cba545d6a442d7e7326853caf",
+      "bytes": 2248,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d4a31e66d05c9543f42a12dc30a546b1b0f8481cba545d6a442d7e7326853caf.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R1/t1_localisation.py",
+      "sha256": "f32aff2d2cf6abf7590025edd44ffe9bd705e67f92142acb620518c3ad5c6901",
+      "bytes": 8695,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f32aff2d2cf6abf7590025edd44ffe9bd705e67f92142acb620518c3ad5c6901.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R1/t2.log",
+      "sha256": "2dbb17c6fe528bed372cd828dcc93d8fc15731dc43a8f28247ee636b932ecaec",
+      "bytes": 3106,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/2dbb17c6fe528bed372cd828dcc93d8fc15731dc43a8f28247ee636b932ecaec.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R1/t2_relaxion_toy.py",
+      "sha256": "8ec8f8ee619ab8e0abc34204a0fb36dd4ca991cf2bde57307893ff0bf802a273",
+      "bytes": 1944,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8ec8f8ee619ab8e0abc34204a0fb36dd4ca991cf2bde57307893ff0bf802a273.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/REPORT.md",
+      "sha256": "26d66bcf8e6af4b8eebfe4735e15a7919819be7957acc0bd51c7cebde839adbb",
+      "bytes": 7861,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/26d66bcf8e6af4b8eebfe4735e15a7919819be7957acc0bd51c7cebde839adbb.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/PREREG.txt",
+      "sha256": "021eaec16b28762793351d4ce7b974eb021c05ae01be29c4aa12cf83d71130fb",
+      "bytes": 1765,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/021eaec16b28762793351d4ce7b974eb021c05ae01be29c4aa12cf83d71130fb.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t1_all_b5.out",
+      "sha256": "883090e717405718d2dfde278ad61d0bba0ba8acc86e58bca912b2918813a5f9",
+      "bytes": 19655,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/883090e717405718d2dfde278ad61d0bba0ba8acc86e58bca912b2918813a5f9.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t1_minflip.py",
+      "sha256": "3f2e8cfa6c8705ce798fcf49e02b0d13715ca4b8a76b77a45e8015bbcc88a527",
+      "bytes": 9143,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/3f2e8cfa6c8705ce798fcf49e02b0d13715ca4b8a76b77a45e8015bbcc88a527.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t1_uniform_b4.out",
+      "sha256": "f5a5d303b16a2b4deb692c56851b015b62258d2e0ccdb0f20b435e3a2e20834d",
+      "bytes": 453,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f5a5d303b16a2b4deb692c56851b015b62258d2e0ccdb0f20b435e3a2e20834d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t1b_boxstab.py",
+      "sha256": "bccedb20657751c604cb8159f13eb051e01df733c6d51ce1425fff215c4d403d",
+      "bytes": 7564,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/bccedb20657751c604cb8159f13eb051e01df733c6d51ce1425fff215c4d403d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t1b_stab_b6.out",
+      "sha256": "609440cad8817e05356708d8d5f7c8637660e5810bb03320892fdafcf9631606",
+      "bytes": 764,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/609440cad8817e05356708d8d5f7c8637660e5810bb03320892fdafcf9631606.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t1c_neel.out",
+      "sha256": "f21207593832e3e99c0bf450c7b12692b16485230dbf9ec5a93eeb59031f7205",
+      "bytes": 124,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f21207593832e3e99c0bf450c7b12692b16485230dbf9ec5a93eeb59031f7205.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t1c_neel.py",
+      "sha256": "1e1b4d343fbb227e52a93f8a43a0a493bdaab3ac57bec2a51ff0e3793ac9179d",
+      "bytes": 678,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/1e1b4d343fbb227e52a93f8a43a0a493bdaab3ac57bec2a51ff0e3793ac9179d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t1d_faithful_b5.out",
+      "sha256": "288d4ba54c4d013aa3d21a7d0061e0ec2e59c0dfafa694b24d3179e07ddbe41e",
+      "bytes": 11023,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/288d4ba54c4d013aa3d21a7d0061e0ec2e59c0dfafa694b24d3179e07ddbe41e.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t1e_faithful18.out",
+      "sha256": "1cd44cdddb01011c2804f858e716d4ba7b6dffed439a0d3e46e1144fbea49994",
+      "bytes": 188,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/1cd44cdddb01011c2804f858e716d4ba7b6dffed439a0d3e46e1144fbea49994.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t1e_faithful18.py",
+      "sha256": "15a0e50c0350ac532f0e481dbaefab88e06ea65cf6ffae809223ce897c6af5f7",
+      "bytes": 878,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/15a0e50c0350ac532f0e481dbaefab88e06ea65cf6ffae809223ce897c6af5f7.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t2_pathsum.out",
+      "sha256": "e8f66ff3455818e9004fb3e6fc68159ecb9857f44a9007b12a90cf5b713fffba",
+      "bytes": 1257,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/e8f66ff3455818e9004fb3e6fc68159ecb9857f44a9007b12a90cf5b713fffba.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t2_pathsum.py",
+      "sha256": "9ba2eb1595e5c4dfac89568134f657cc6ef1c6d8911fc4b11d3cb1c83c00a89c",
+      "bytes": 6437,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/9ba2eb1595e5c4dfac89568134f657cc6ef1c6d8911fc4b11d3cb1c83c00a89c.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t3_L4.out",
+      "sha256": "4bd6e84d77a9b313117a910ee7c1c48176bd1dd958a7488fa8fc043673cda971",
+      "bytes": 301,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/4bd6e84d77a9b313117a910ee7c1c48176bd1dd958a7488fa8fc043673cda971.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t3_L6.out",
+      "sha256": "2006149c46b704fa7c5eb0595977110a5ec4b33592217cc26d207435509f5560",
+      "bytes": 204,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/2006149c46b704fa7c5eb0595977110a5ec4b33592217cc26d207435509f5560.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R2/tests/t3_chamon_distance.py",
+      "sha256": "d334af362ee932604858fd57e48d704127fd2cff895c9a038b6a24ac069645d8",
+      "bytes": 4144,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d334af362ee932604858fd57e48d704127fd2cff895c9a038b6a24ac069645d8.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R3/REPORT.md",
+      "sha256": "fe96f74668d0ecdf6925d299887e3e3f3a3d514b6d2d1057ac0dacd79d41e8fe",
+      "bytes": 8281,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/fe96f74668d0ecdf6925d299887e3e3f3a3d514b6d2d1057ac0dacd79d41e8fe.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R3/count_route_test.out",
+      "sha256": "bc1e60a130d59d26e81709b10c5f5f5cbf7ed42363d976885ac89db1ddc0f725",
+      "bytes": 3827,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/bc1e60a130d59d26e81709b10c5f5f5cbf7ed42363d976885ac89db1ddc0f725.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R3/count_route_test.py",
+      "sha256": "6fadadbe0653359d5c09c3b3ddf77678c1557faf10897b549ae720619fd9aff3",
+      "bytes": 9124,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/6fadadbe0653359d5c09c3b3ddf77678c1557faf10897b549ae720619fd9aff3.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R3/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R4/PREREG.md",
+      "sha256": "ddcefa99e5f19c0fba68f2da902fced197380fb467ee3d6a56c086513491eb32",
+      "bytes": 2063,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/ddcefa99e5f19c0fba68f2da902fced197380fb467ee3d6a56c086513491eb32.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R4/REPORT.md",
+      "sha256": "c0d0fdcd27af04f6630f7f0adb00d30a5f7fb01d62e20c3450933f6d94ab9509",
+      "bytes": 8231,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c0d0fdcd27af04f6630f7f0adb00d30a5f7fb01d62e20c3450933f6d94ab9509.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R4/a_integer_balance.out",
+      "sha256": "d600ee512bb49d8b684506f818bd52a4511ac5b26b6b047825685be274fe2fc9",
+      "bytes": 1223,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d600ee512bb49d8b684506f818bd52a4511ac5b26b6b047825685be274fe2fc9.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R4/a_integer_balance.py",
+      "sha256": "e15a3a1a74b120d3f6d322719c19d4bf8613a5ae41ad5cfbc3d1c8e023310440",
+      "bytes": 5013,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/e15a3a1a74b120d3f6d322719c19d4bf8613a5ae41ad5cfbc3d1c8e023310440.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R4/b_slow_passage.out",
+      "sha256": "3747d85c1f9f7a58a5b3d95cd94e3eeaeb0f86aa19be68814428f4c3f9f0b24d",
+      "bytes": 2611,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/3747d85c1f9f7a58a5b3d95cd94e3eeaeb0f86aa19be68814428f4c3f9f0b24d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R4/b_slow_passage.py",
+      "sha256": "77b3aefb7fd3923699c8f7f85c7ff3cdd2deebfe9b08823a082ef1ee7881b009",
+      "bytes": 4748,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/77b3aefb7fd3923699c8f7f85c7ff3cdd2deebfe9b08823a082ef1ee7881b009.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R4/b_spiral_inspect.out",
+      "sha256": "8773cd663a666ab7853f46d19004e4e5538f6551f0425067f6d75c0bad9fdbed",
+      "bytes": 912,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8773cd663a666ab7853f46d19004e4e5538f6551f0425067f6d75c0bad9fdbed.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R4/b_spiral_inspect.py",
+      "sha256": "78a5efcfb5dd7282fa65bf400c3fb8085c04596549aefea5ad9b450d4ee7af0f",
+      "bytes": 2540,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/78a5efcfb5dd7282fa65bf400c3fb8085c04596549aefea5ad9b450d4ee7af0f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/R4/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/SUMMARY.md",
+      "sha256": "fb1cd97d60df9a49b1cbb523e07bdb62e24fb64223772f30a906141dd980ff51",
+      "bytes": 4047,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/fb1cd97d60df9a49b1cbb523e07bdb62e24fb64223772f30a906141dd980ff51.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/PREREG.md",
+      "sha256": "e753e0a84f7d2e67ba2e33247f0c0f062308e1d467609330ec3a865381437482",
+      "bytes": 5232,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/e753e0a84f7d2e67ba2e33247f0c0f062308e1d467609330ec3a865381437482.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/REPORT.md",
+      "sha256": "3816ed614a1c40c0397fd27f684c64770ce1c33d11d8d750606ea11e5f1fd6e6",
+      "bytes": 8546,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/3816ed614a1c40c0397fd27f684c64770ce1c33d11d8d750606ea11e5f1fd6e6.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/an_d2_b2.out",
+      "sha256": "c8fbaf78dcde369b459f149c9a773f21a933c147e4bb6901d7493b90b3d0f3ee",
+      "bytes": 3795,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c8fbaf78dcde369b459f149c9a773f21a933c147e4bb6901d7493b90b3d0f3ee.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/an_d2_b3.out",
+      "sha256": "056bcb87223aa079b6499cddd8908fbcdfb0cd556fd90383aa023edd5984151f",
+      "bytes": 9744,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/056bcb87223aa079b6499cddd8908fbcdfb0cd556fd90383aa023edd5984151f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/an_d3.out",
+      "sha256": "abef07b041bdf3c747c442471e7514a29ff90fc93be76ef7db2fe114c696d350",
+      "bytes": 9386,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/abef07b041bdf3c747c442471e7514a29ff90fc93be76ef7db2fe114c696d350.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/analysis.py",
+      "sha256": "588ec12e34f54c952414d0ba05e0d5af6bf7e3b8ea4e8a6d19b8f3f03ff133d5",
+      "bytes": 7314,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/588ec12e34f54c952414d0ba05e0d5af6bf7e3b8ea4e8a6d19b8f3f03ff133d5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/check.out",
+      "sha256": "bf2b67719a93369fb5d1df09015885dae9b93832737dc5ae143bceb11d261ad2",
+      "bytes": 786,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/bf2b67719a93369fb5d1df09015885dae9b93832737dc5ae143bceb11d261ad2.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/check.py",
+      "sha256": "bb651ae80ba3f72cd2ffb25815d83e6a26f078c93d50f445a0383c8d81400ab6",
+      "bytes": 1764,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/bb651ae80ba3f72cd2ffb25815d83e6a26f078c93d50f445a0383c8d81400ab6.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/d2_b2.npz",
+      "sha256": "c8495424405f6a801a805b6ce22843dfaf7ddb6e8f7d549ed36a6339306b0fa8",
+      "bytes": 116118,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c8495424405f6a801a805b6ce22843dfaf7ddb6e8f7d549ed36a6339306b0fa8.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/d2_b3.npz",
+      "sha256": "2d0075017855a9e6a1894ff69dc1d3f784105ad3517c2e6330219db45b2bb403",
+      "bytes": 116118,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/2d0075017855a9e6a1894ff69dc1d3f784105ad3517c2e6330219db45b2bb403.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/d3_b2.npz",
+      "sha256": "7a3ec987f4f70bd1e81216895b03a5414dd1c7e33ff8cab627dd58b85336cbf2",
+      "bytes": 116118,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/7a3ec987f4f70bd1e81216895b03a5414dd1c7e33ff8cab627dd58b85336cbf2.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/d3_b3.npz",
+      "sha256": "d5b7ef3e3d3e2f03ab5fef68a3c138afb65b7684262c4f8760aac51e92e9b088",
+      "bytes": 68858,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d5b7ef3e3d3e2f03ab5fef68a3c138afb65b7684262c4f8760aac51e92e9b088.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/ext.out",
+      "sha256": "1814fd43c1dbba44a1c5d19650e28a844f10ca14e4e0b054417aa02a09d37750",
+      "bytes": 1589,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/1814fd43c1dbba44a1c5d19650e28a844f10ca14e4e0b054417aa02a09d37750.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/ext.py",
+      "sha256": "c0d182e1591c450bc171d21fb521517cc31179a22bab05649469f21955d3f6f7",
+      "bytes": 1683,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c0d182e1591c450bc171d21fb521517cc31179a22bab05649469f21955d3f6f7.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/ext2.out",
+      "sha256": "587cd77dafc75cebc00f6fa6826182bc36056c10ef8124d6dbe8eabf944401ad",
+      "bytes": 1614,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/587cd77dafc75cebc00f6fa6826182bc36056c10ef8124d6dbe8eabf944401ad.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/ext2.py",
+      "sha256": "3fdf8fa11625632c701d824524785fcf9f0d318b84060379dc391ef2f045e036",
+      "bytes": 1747,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/3fdf8fa11625632c701d824524785fcf9f0d318b84060379dc391ef2f045e036.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/quick.out",
+      "sha256": "644f5b9e4c58eb0e869e49ec5a15018c31f211aba725accea2d919f4eabe23b5",
+      "bytes": 162,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/644f5b9e4c58eb0e869e49ec5a15018c31f211aba725accea2d919f4eabe23b5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/run_d2_b2.out",
+      "sha256": "d33b1ce97f450f184e08f94124d25107566f4c016a0fc195b4080f67f4998dae",
+      "bytes": 4555,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d33b1ce97f450f184e08f94124d25107566f4c016a0fc195b4080f67f4998dae.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/run_d2_b3.out",
+      "sha256": "44f9b1e4142e560fb403905dcdbc07348a7dc6c7fc66062d4da2d5423ed7721e",
+      "bytes": 4519,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/44f9b1e4142e560fb403905dcdbc07348a7dc6c7fc66062d4da2d5423ed7721e.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/run_d3_b2.out",
+      "sha256": "cf9a7d57b9b4a12d74957f44dedcae9b8a646ee8c99c55ec503cc9d1d21ab61a",
+      "bytes": 4521,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/cf9a7d57b9b4a12d74957f44dedcae9b8a646ee8c99c55ec503cc9d1d21ab61a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/run_d3_b3.out",
+      "sha256": "8484cba1776aaec4350b8ce6c0076ebeaf0a3117aa206fa5a8e892b0610eaef5",
+      "bytes": 4509,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8484cba1776aaec4350b8ce6c0076ebeaf0a3117aa206fa5a8e892b0610eaef5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/runall.done",
+      "sha256": "5c91bc5fb3c4c9ab3cc8ceee39df4d1ff7bb892e5eb34ed8f809873d8f1dd969",
+      "bytes": 8,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/5c91bc5fb3c4c9ab3cc8ceee39df4d1ff7bb892e5eb34ed8f809873d8f1dd969.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/runall.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/runall.sh",
+      "sha256": "5d3ba816a3b322f77ec863c1b39909eba9e1433be40e25f683e7f8337cd3d0be",
+      "bytes": 367,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/5d3ba816a3b322f77ec863c1b39909eba9e1433be40e25f683e7f8337cd3d0be.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/sim.py",
+      "sha256": "732f5f8dbf13eaec90a42f0dc1eee8365552972136741ee01543764c4bd4fd41",
+      "bytes": 7976,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/732f5f8dbf13eaec90a42f0dc1eee8365552972136741ee01543764c4bd4fd41.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/xi.out",
+      "sha256": "664d0cc0de3fc75c5135e34a514670e85e6acce212712bbaeec14cdd4a50e474",
+      "bytes": 2419,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/664d0cc0de3fc75c5135e34a514670e85e6acce212712bbaeec14cdd4a50e474.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/xi_check.out",
+      "sha256": "bb6b3f4b6e7826ed781866d38857d2c5d5104a407cf8f643d9fcc406126a46be",
+      "bytes": 467,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/bb6b3f4b6e7826ed781866d38857d2c5d5104a407cf8f643d9fcc406126a46be.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/xi_check.py",
+      "sha256": "609fefbab93897f9d7c7f6ce365e088edc5e11d9c253285b8a2b576742c65382",
+      "bytes": 1080,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/609fefbab93897f9d7c7f6ce365e088edc5e11d9c253285b8a2b576742c65382.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/xi_check_part1.out",
+      "sha256": "7d87b64eb84eaed501427add84561c80da9d786a065e5cc48095d11117a8cbcd",
+      "bytes": 212,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/7d87b64eb84eaed501427add84561c80da9d786a065e5cc48095d11117a8cbcd.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T/xi_fit.py",
+      "sha256": "a5fd0336565a2843d1ba12759b9b2eb2f1b3a8f4771569e0e8f3ebd12750fa78",
+      "bytes": 1200,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/a5fd0336565a2843d1ba12759b9b2eb2f1b3a8f4771569e0e8f3ebd12750fa78.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/PREREG.md",
+      "sha256": "2fb170cf1b823110da28b9a6132af226132ac476b3765cde6d30390d51e68b09",
+      "bytes": 6652,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/2fb170cf1b823110da28b9a6132af226132ac476b3765cde6d30390d51e68b09.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/REPORT.md",
+      "sha256": "d59fb4b68e7de5da70bb957c8c11300e013cf28a47031d340051a0e731847b9e",
+      "bytes": 7565,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d59fb4b68e7de5da70bb957c8c11300e013cf28a47031d340051a0e731847b9e.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/fss.out",
+      "sha256": "2e89e325c37f25112e643da4d3b193abc83743cd3225a353aa632be614223708",
+      "bytes": 2631,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/2e89e325c37f25112e643da4d3b193abc83743cd3225a353aa632be614223708.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/fss.py",
+      "sha256": "8faecc908aa18eca5e303cfe421204707bd6410bad071f3baf67d3be714dc7c4",
+      "bytes": 3412,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8faecc908aa18eca5e303cfe421204707bd6410bad071f3baf67d3be714dc7c4.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/lc",
+      "sha256": "13bc75e36dd3eca81446b954cf4f4e4d9082714ac1922a12dfcca87f26a7ea00",
+      "bytes": 34560,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/13bc75e36dd3eca81446b954cf4f4e4d9082714ac1922a12dfcca87f26a7ea00.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/lc.c",
+      "sha256": "e61813e781a998bdd628e330992f7dd8b05cb1224a70418bd205612987baf06f",
+      "bytes": 10717,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/e61813e781a998bdd628e330992f7dd8b05cb1224a70418bd205612987baf06f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/m0.out",
+      "sha256": "b353f28fb2e330f03e50bda3221c12807882182444882d97c16f483b9700e508",
+      "bytes": 418,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/b353f28fb2e330f03e50bda3221c12807882182444882d97c16f483b9700e508.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/m0.py",
+      "sha256": "12c9029978680fb587c5d6530a691a395f05b973f58b46a306c258279e5d24d6",
+      "bytes": 733,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/12c9029978680fb587c5d6530a691a395f05b973f58b46a306c258279e5d24d6.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/m3.out",
+      "sha256": "aebc48e2d8431f700e3709560605383751c64e37dc3a529ad13634dfd58fc1e0",
+      "bytes": 353,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/aebc48e2d8431f700e3709560605383751c64e37dc3a529ad13634dfd58fc1e0.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/m3.py",
+      "sha256": "eee09391985bbe0d8c396052760fb11531b4239ce01dbb4d114404612489b7af",
+      "bytes": 1355,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/eee09391985bbe0d8c396052760fb11531b4239ce01dbb4d114404612489b7af.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/mcrg.out",
+      "sha256": "42035cd237de7c6e2f511cb46624e9096b65b6ea221e0ce68c2ec35e86228845",
+      "bytes": 14732,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/42035cd237de7c6e2f511cb46624e9096b65b6ea221e0ce68c2ec35e86228845.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/mcrg.py",
+      "sha256": "59fab634f3fd18e83c735749c781d80341b10af621ef9db8e35d291fb7b1440f",
+      "bytes": 2089,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/59fab634f3fd18e83c735749c781d80341b10af621ef9db8e35d291fb7b1440f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/mcrg128.out",
+      "sha256": "61cb12a9c39ae959aadd3fc41205dd7df95f0fa4ac334243a4886b2239a988bf",
+      "bytes": 3295,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/61cb12a9c39ae959aadd3fc41205dd7df95f0fa4ac334243a4886b2239a988bf.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/mcrg128.py",
+      "sha256": "3b035fe148b7f209090de615e38c552588438192938a8adb8336c0bff382605b",
+      "bytes": 368,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/3b035fe148b7f209090de615e38c552588438192938a8adb8336c0bff382605b.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/mcrg_summary.out",
+      "sha256": "2f438e0d747910e0375cd6ef6a02298d98ed74d73c991c6b6ad76de8279bf1aa",
+      "bytes": 7953,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/2f438e0d747910e0375cd6ef6a02298d98ed74d73c991c6b6ad76de8279bf1aa.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/mcrg_summary.py",
+      "sha256": "886d6c91b5860b6d2bd9b9fd798888b9c647511bab5389a01408305b7d503dc8",
+      "bytes": 1797,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/886d6c91b5860b6d2bd9b9fd798888b9c647511bab5389a01408305b7d503dc8.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/omega.out",
+      "sha256": "37164ea1e010b59919af5a3e1243316d42924e0ba1a95670a56af1e6b2b3cc64",
+      "bytes": 857,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/37164ea1e010b59919af5a3e1243316d42924e0ba1a95670a56af1e6b2b3cc64.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/omega.py",
+      "sha256": "0a0cea0997b7212945d5a15d27255f78e307f666d8cbf30d01542fbea0ffcf29",
+      "bytes": 1978,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/0a0cea0997b7212945d5a15d27255f78e307f666d8cbf30d01542fbea0ffcf29.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/rbar.out",
+      "sha256": "b6cc7f5811dba45e1a59e9d76c3e5b8d7e0157f4fce5f6d1ee83dbe20e472a55",
+      "bytes": 1821,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/b6cc7f5811dba45e1a59e9d76c3e5b8d7e0157f4fce5f6d1ee83dbe20e472a55.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/rbar.py",
+      "sha256": "04c53a1a9d5c26969b4471df7d2b789555c0baf5b5a85cb9c831f4fdb96e777d",
+      "bytes": 1753,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/04c53a1a9d5c26969b4471df7d2b789555c0baf5b5a85cb9c831f4fdb96e777d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/scan.py",
+      "sha256": "5b22197cc1693f1b9b681a67b7a6bab255e5937698b0ecfb5df20474be9e080c",
+      "bytes": 472,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/5b22197cc1693f1b9b681a67b7a6bab255e5937698b0ecfb5df20474be9e080c.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/stage1.sh",
+      "sha256": "5baceaff484a9f6129e0db69fc861dc5eefecf1be05f6d370005f44a27889fab",
+      "bytes": 604,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/5baceaff484a9f6129e0db69fc861dc5eefecf1be05f6d370005f44a27889fab.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/stage2.sh",
+      "sha256": "cdc2742404cb21326bb82c6edb8986eb34753a92cf211101603bf13df7f75a6e",
+      "bytes": 613,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/cdc2742404cb21326bb82c6edb8986eb34753a92cf211101603bf13df7f75a6e.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/T2/stage3.sh",
+      "sha256": "c6cbd99bf1882e932b517c6f80c5a91426460e6bc550ac2b780fd35e40da0bff",
+      "bytes": 422,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c6cbd99bf1882e932b517c6f80c5a91426460e6bc550ac2b780fd35e40da0bff.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/TESTS.md",
+      "sha256": "aeaccf0222b9e757d467bbfa6c461722e25e1f676fdee47cd074722f3db06904",
+      "bytes": 7472,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/aeaccf0222b9e757d467bbfa6c461722e25e1f676fdee47cd074722f3db06904.gz"
+    },
+    {
+      "path": ".claude/science/exercises/hierarchy-wall-20261018/WALL.md",
+      "sha256": "12e6430941bf66d582f422de6e4643f750f4c8e42c6cf4c4e2b49d91344e82cb",
+      "bytes": 2221,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/12e6430941bf66d582f422de6e4643f750f4c8e42c6cf4c4e2b49d91344e82cb.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/FP/PROTOCOL.md",
+      "sha256": "659f2e36a5743fefc5c35c24027624620af1a5fb1568db0d32f535f0e76f9aef",
+      "bytes": 2081,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/659f2e36a5743fefc5c35c24027624620af1a5fb1568db0d32f535f0e76f9aef.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/FP/derivations/generations-from-lattice-symmetry-2026-10-18.md",
+      "sha256": "aff3ca02d1a09189b46ae77e796a22fbf761d179239cf8880e65b951cdc9125f",
+      "bytes": 9586,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/aff3ca02d1a09189b46ae77e796a22fbf761d179239cf8880e65b951cdc9125f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/FP/out/s1.out",
+      "sha256": "f8c0abda0eb551c43da21c1320d31ef9cc1db0f330ac078ba3eca0cc6fce4882",
+      "bytes": 909,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f8c0abda0eb551c43da21c1320d31ef9cc1db0f330ac078ba3eca0cc6fce4882.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/FP/out/s2.out",
+      "sha256": "2e3b60099ce6a4bf0b72927f0c029a07cf501e360b5a34bcacc0ecbf44e0b663",
+      "bytes": 791,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/2e3b60099ce6a4bf0b72927f0c029a07cf501e360b5a34bcacc0ecbf44e0b663.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/FP/out/s3.out",
+      "sha256": "592fb593ee986fed2fed0ba0c9541f4a7936f3e1ac7417d8aa8a380ba6d36321",
+      "bytes": 2700,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/592fb593ee986fed2fed0ba0c9541f4a7936f3e1ac7417d8aa8a380ba6d36321.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/FP/out/s4.out",
+      "sha256": "312b3b011dc852846841899d7ffbb46000f6b69d701ca23f7d5201a1f269bee3",
+      "bytes": 505,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/312b3b011dc852846841899d7ffbb46000f6b69d701ca23f7d5201a1f269bee3.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/FP/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/FP/scripts/s1_group.py",
+      "sha256": "d96b10009d91f8d88627e485bc9aecee79fba566967507945f86036ad663ea75",
+      "bytes": 3574,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d96b10009d91f8d88627e485bc9aecee79fba566967507945f86036ad663ea75.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/FP/scripts/s2_checks.py",
+      "sha256": "bc7e4c6bec186d672a6915b10542b33c2c28a160d19e25b96da0d61af2c25917",
+      "bytes": 4862,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/bc7e4c6bec186d672a6915b10542b33c2c28a160d19e25b96da0d61af2c25917.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/FP/scripts/s3_menu.py",
+      "sha256": "f926785466eef66e825df78ea3b1e7c1565d53f4144bbab8e823ad7be9037f06",
+      "bytes": 5423,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f926785466eef66e825df78ea3b1e7c1565d53f4144bbab8e823ad7be9037f06.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/FP/scripts/s4_tm1.py",
+      "sha256": "8f04f18a063e85253dd33e008881ebc686c7c0e36df86a4904ab382ab06f5339",
+      "bytes": 1460,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8f04f18a063e85253dd33e008881ebc686c7c0e36df86a4904ab382ab06f5339.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/FP/scripts/scan.py",
+      "sha256": "0cc9728b45d8352878ea81b6c88f0061a315488a78839543ee03c5b298b6604d",
+      "bytes": 716,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/0cc9728b45d8352878ea81b6c88f0061a315488a78839543ee03c5b298b6604d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/K/REPORT.md",
+      "sha256": "8d5ae799860da55f1a9e208dd459dd8d89de6151bdec8ebf96126f1b55b5f939",
+      "bytes": 7216,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8d5ae799860da55f1a9e208dd459dd8d89de6151bdec8ebf96126f1b55b5f939.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/K/k1.out",
+      "sha256": "3944ee29a6a515010bd2cebd848eeb01da7435559a5f63105f4754ba97ffa159",
+      "bytes": 643,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/3944ee29a6a515010bd2cebd848eeb01da7435559a5f63105f4754ba97ffa159.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/K/k3.out",
+      "sha256": "96c17adebb6738b4df645f200d10e56fb0b5a699cde70f0ef8a42bd4287193bc",
+      "bytes": 2243,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/96c17adebb6738b4df645f200d10e56fb0b5a699cde70f0ef8a42bd4287193bc.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/K/k4.out",
+      "sha256": "381508c56582cf798cea333b7046ac414e1512218e9e939625d50af42c897739",
+      "bytes": 793,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/381508c56582cf798cea333b7046ac414e1512218e9e939625d50af42c897739.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/K/k5.out",
+      "sha256": "a8630056503a1c0bd6b04ae79c387b01b906abf7b3448077c673e458ac628594",
+      "bytes": 227,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/a8630056503a1c0bd6b04ae79c387b01b906abf7b3448077c673e458ac628594.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/K/scripts/capped.sh",
+      "sha256": "fc9349c7101c0e6078eaa04dfde668de5261d9531a3b7d1d8b5648aa95035ea8",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/fc9349c7101c0e6078eaa04dfde668de5261d9531a3b7d1d8b5648aa95035ea8.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/K/scripts/k1_eg_landau.py",
+      "sha256": "fdf1d0dfe7e497eb7b812a7689038a022b5207950cb53933b829e9d34f1a165c",
+      "bytes": 2487,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/fdf1d0dfe7e497eb7b812a7689038a022b5207950cb53933b829e9d34f1a165c.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/K/scripts/k3_ckm_nongauss.py",
+      "sha256": "9baf23231e7b901016ea6af7b82bd94cae4588afdf2d5eba25751e6436566341",
+      "bytes": 3563,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/9baf23231e7b901016ea6af7b82bd94cae4588afdf2d5eba25751e6436566341.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/K/scripts/k4_koide_conditional.py",
+      "sha256": "185fb05d3651e90d9dd9e46b6c944b5c194a829a2d8b6056797351318426af62",
+      "bytes": 2540,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/185fb05d3651e90d9dd9e46b6c944b5c194a829a2d8b6056797351318426af62.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/K/scripts/k5_koide_sector_blind.py",
+      "sha256": "a1443111434c0a2ff441beb41dd3e28d29db8a96bb7dc2ad9676aef4281644c4",
+      "bytes": 981,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/a1443111434c0a2ff441beb41dd3e28d29db8a96bb7dc2ad9676aef4281644c4.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R1/REPORT.md",
+      "sha256": "ac276b607c78cf8a251a61f17ddfaa6b13f596c17cedfb46d21d3909df7aa472",
+      "bytes": 9540,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/ac276b607c78cf8a251a61f17ddfaa6b13f596c17cedfb46d21d3909df7aa472.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R1/chiralL_detail.out",
+      "sha256": "f7cecbcc11bd79931736832d60c868ccea1dea5a34f77ddde4a2df66196dc9b4",
+      "bytes": 1003,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f7cecbcc11bd79931736832d60c868ccea1dea5a34f77ddde4a2df66196dc9b4.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R1/native_fit.out",
+      "sha256": "47d4cc655fa45ff56d7119a18ca427e648ba89f3b6c28d402b5c5894ece0bdd5",
+      "bytes": 8860,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/47d4cc655fa45ff56d7119a18ca427e648ba89f3b6c28d402b5c5894ece0bdd5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R1/native_fit2.out",
+      "sha256": "d81d581ff910ffbcc03bfc1bd0659c7c26f1360ffa5cbd5e7dd695aacdaf4818",
+      "bytes": 9704,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d81d581ff910ffbcc03bfc1bd0659c7c26f1360ffa5cbd5e7dd695aacdaf4818.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R1/native_fit_blind.out",
+      "sha256": "b32bb0498274b5c9018c25c6bf47d4327ce7daa4aeb2da93bf66862588f48b6d",
+      "bytes": 585,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/b32bb0498274b5c9018c25c6bf47d4327ce7daa4aeb2da93bf66862588f48b6d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R1/native_menu.out",
+      "sha256": "a864c812b72aaedef709af35c1e6a8af833b610fe03bb5c775b14a2ec90d883e",
+      "bytes": 150651,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/a864c812b72aaedef709af35c1e6a8af833b610fe03bb5c775b14a2ec90d883e.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R1/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R1/scripts/chiralL_detail.py",
+      "sha256": "6ce7a66e00d104ce682d043b22e3799ecbed32646e1a5798503e24feaf62571d",
+      "bytes": 2419,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/6ce7a66e00d104ce682d043b22e3799ecbed32646e1a5798503e24feaf62571d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R1/scripts/lemmas_check.py",
+      "sha256": "1e118f01899c83a39b6c7d3d16c0374bf5c0fdc6b57a21f08d6a1b9ed50f3ba5",
+      "bytes": 2525,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/1e118f01899c83a39b6c7d3d16c0374bf5c0fdc6b57a21f08d6a1b9ed50f3ba5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R1/scripts/native_fit.py",
+      "sha256": "78fbaf10888a6a1a1cd440867847c24830249b43817c7ec00022d5902eddbf92",
+      "bytes": 7890,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/78fbaf10888a6a1a1cd440867847c24830249b43817c7ec00022d5902eddbf92.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R1/scripts/native_fit_blind.py",
+      "sha256": "d045328a93cb3e24912f58d9dc212bbaac956a5e00176a5b32757425cc33c25f",
+      "bytes": 2813,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d045328a93cb3e24912f58d9dc212bbaac956a5e00176a5b32757425cc33c25f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R1/scripts/native_menu.py",
+      "sha256": "7478b6e6afeec9415bc75406e6c856b35c23f57e76bce3396ee1bba17b77d354",
+      "bytes": 10781,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/7478b6e6afeec9415bc75406e6c856b35c23f57e76bce3396ee1bba17b77d354.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R1/scripts/sin3theta_check.py",
+      "sha256": "77222890da34482380e7c2bafefec152dd5d0927a343e86e0cce99cffcd15a1e",
+      "bytes": 1018,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/77222890da34482380e7c2bafefec152dd5d0927a343e86e0cce99cffcd15a1e.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R2/REPORT.md",
+      "sha256": "90226581a36723802b5b41df6a810a1b2da270920f793d40f13e831befe2f814",
+      "bytes": 9684,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/90226581a36723802b5b41df6a810a1b2da270920f793d40f13e831befe2f814.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R2/l1.out",
+      "sha256": "f2855da178906edd66f2439c914161d8bf585972f32ed83f1b8c52bfb0507e09",
+      "bytes": 1356,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2855da178906edd66f2439c914161d8bf585972f32ed83f1b8c52bfb0507e09.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R2/l2.out",
+      "sha256": "a3c809f2016c7028d88993621cce0e1f05df01481b1a465849799354ee3a9f63",
+      "bytes": 2503,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/a3c809f2016c7028d88993621cce0e1f05df01481b1a465849799354ee3a9f63.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R2/l3.out",
+      "sha256": "afb3140efb00ea78f6fbc30df3710fe10d9e4e1e092d8e65596319c4bf92542a",
+      "bytes": 2086,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/afb3140efb00ea78f6fbc30df3710fe10d9e4e1e092d8e65596319c4bf92542a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R2/l4.out",
+      "sha256": "de1420d32d5cab1eef3106159b84d2ec4255e0261308b3cc4a413be88f59f7aa",
+      "bytes": 574,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/de1420d32d5cab1eef3106159b84d2ec4255e0261308b3cc4a413be88f59f7aa.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R2/l5.out",
+      "sha256": "b456ad1859c4c45f2dd8e08d7bfcea899ade68a5555fde7993cccfaab68d1908",
+      "bytes": 387,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/b456ad1859c4c45f2dd8e08d7bfcea899ade68a5555fde7993cccfaab68d1908.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R2/l5b.out",
+      "sha256": "68c7d9c1a3dfecc0a034c68c5695ba0a82c43c2ec22b62e3c3a102e6bfbe54df",
+      "bytes": 372,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/68c7d9c1a3dfecc0a034c68c5695ba0a82c43c2ec22b62e3c3a102e6bfbe54df.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R2/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R2/scripts/l1_symmetric_overlaps.py",
+      "sha256": "f480bf29193b1d5819763b5d0ee269c7247ba5a9c2e8f6ef0af537e38f653bbd",
+      "bytes": 6523,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f480bf29193b1d5819763b5d0ee269c7247ba5a9c2e8f6ef0af537e38f653bbd.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R2/scripts/l2_cluster_overlaps.py",
+      "sha256": "127d6a287712f3d4e05244635553609c465b7c6349a68a72952951c087e8ee81",
+      "bytes": 5399,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/127d6a287712f3d4e05244635553609c465b7c6349a68a72952951c087e8ee81.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R2/scripts/l3_ckm_lyapunov.py",
+      "sha256": "6577de96cccceb6b3d0b5da15a6737628e0076207a848a9ddbdf48ddf1a734e0",
+      "bytes": 4773,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/6577de96cccceb6b3d0b5da15a6737628e0076207a848a9ddbdf48ddf1a734e0.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R2/scripts/l4_lyapunov_ckm.py",
+      "sha256": "c753c308dcffd9a267076d9a43cb1f74a5f27360e5c3eabf2e5b9a701f3b425d",
+      "bytes": 1263,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c753c308dcffd9a267076d9a43cb1f74a5f27360e5c3eabf2e5b9a701f3b425d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R2/scripts/l5_kink_profiles.py",
+      "sha256": "381eed4ca861651d3685dc81e17204426cd7221d3e90afaa1921a85e55380e87",
+      "bytes": 1610,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/381eed4ca861651d3685dc81e17204426cd7221d3e90afaa1921a85e55380e87.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R2/scripts/l5b_kink_scan.py",
+      "sha256": "67ae86742cb5fb8e87ba84eaee50b2b8f02dfac8852b080b38010671898c786a",
+      "bytes": 1554,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/67ae86742cb5fb8e87ba84eaee50b2b8f02dfac8852b080b38010671898c786a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R3/PREREG.txt",
+      "sha256": "f74ecdc247c2b0528ceb690e663233ea08ae563518e87099f319210f242dabd4",
+      "bytes": 1364,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f74ecdc247c2b0528ceb690e663233ea08ae563518e87099f319210f242dabd4.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R3/REPORT.md",
+      "sha256": "96c071dd3cf8fb911f61887402278962a3f340bd28374c908269861f90632662",
+      "bytes": 8578,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/96c071dd3cf8fb911f61887402278962a3f340bd28374c908269861f90632662.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R3/r1.log",
+      "sha256": "283b655fab15031cb888784c7588c08e0a46221fdc533f160df2d43a6ef2c952",
+      "bytes": 3415,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/283b655fab15031cb888784c7588c08e0a46221fdc533f160df2d43a6ef2c952.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R3/r2.log",
+      "sha256": "f9d25bd55af6ca43eb2968ff09b408be2ccfc9dd4d3db56f29bdd10dd0e60910",
+      "bytes": 3471,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f9d25bd55af6ca43eb2968ff09b408be2ccfc9dd4d3db56f29bdd10dd0e60910.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R3/r3.log",
+      "sha256": "30d8f691f3fc2de87b3ebd19a180ffe6dfdf1a3c1d6a3fee4ab4541a2035223b",
+      "bytes": 2450,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/30d8f691f3fc2de87b3ebd19a180ffe6dfdf1a3c1d6a3fee4ab4541a2035223b.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R3/r4.log",
+      "sha256": "d46c88f96fb07f16c08bb38e5fd428755f06b07ea8f36bbbe83148e28afff8b3",
+      "bytes": 2641,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d46c88f96fb07f16c08bb38e5fd428755f06b07ea8f36bbbe83148e28afff8b3.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R3/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R3/scripts/r1_window_and_data.py",
+      "sha256": "36565288a90907f9701ee7df37df7ad139c5805fcf6bb6f06235518d8dc722ed",
+      "bytes": 4648,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/36565288a90907f9701ee7df37df7ad139c5805fcf6bb6f06235518d8dc722ed.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R3/scripts/r2_sm_yukawa_flow.py",
+      "sha256": "7d0cb5ea4cf4ad4078c742d2d6fa8a79bf2f9fdd6dcc4cfcc4e67a38c378ca0d",
+      "bytes": 4846,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/7d0cb5ea4cf4ad4078c742d2d6fa8a79bf2f9fdd6dcc4cfcc4e67a38c378ca0d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R3/scripts/r3_schur_and_grading.py",
+      "sha256": "88a421761949acecce45e9c69ba5f2710684ee69dc86747458e7d834b63e1dde",
+      "bytes": 7446,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/88a421761949acecce45e9c69ba5f2710684ee69dc86747458e7d834b63e1dde.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R3/scripts/r4_cascade_residual_z2.py",
+      "sha256": "2022c14f007685c8b052d69ec230626f7ed7296bc6c7719a8be6e27314adcec9",
+      "bytes": 3124,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/2022c14f007685c8b052d69ec230626f7ed7296bc6c7719a8be6e27314adcec9.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/PREREG.md",
+      "sha256": "bd707b8aa659f6c094582d631716ad696c66f5295c5af56d8cb45ece727e2826",
+      "bytes": 3338,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/bd707b8aa659f6c094582d631716ad696c66f5295c5af56d8cb45ece727e2826.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/REPORT.md",
+      "sha256": "503ecbb4cad08453c9365f3ae6fc66dd2a320394108f89e10ddb3e2e2f3f1829",
+      "bytes": 8936,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/503ecbb4cad08453c9365f3ae6fc66dd2a320394108f89e10ddb3e2e2f3f1829.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/scripts/common.py",
+      "sha256": "0ae74b5258de33ec693f070966ee3b2b2ef5b363f0fa9947b2a254e3a13691b0",
+      "bytes": 1504,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/0ae74b5258de33ec693f070966ee3b2b2ef5b363f0fa9947b2a254e3a13691b0.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/scripts/t0_spectral.py",
+      "sha256": "d592125d67e6eac5aa1d65ef1c7ebbf9ad5e7099f89cd92681171f9d692b4831",
+      "bytes": 1445,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d592125d67e6eac5aa1d65ef1c7ebbf9ad5e7099f89cd92681171f9d692b4831.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/scripts/t1a_ladders.py",
+      "sha256": "f79b99b79ae5d6e024b3e6cbe2904ad2394415f8b59d5eda2b1034372552589c",
+      "bytes": 5104,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f79b99b79ae5d6e024b3e6cbe2904ad2394415f8b59d5eda2b1034372552589c.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/scripts/t1b_area_texture.py",
+      "sha256": "f4bbfd2b320558e7f63916cd3489e3a1b63b25e5d949cf9712dc44325fe17140",
+      "bytes": 5323,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f4bbfd2b320558e7f63916cd3489e3a1b63b25e5d949cf9712dc44325fe17140.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/scripts/t1b_check.py",
+      "sha256": "f409e903424108717eb8f81567669e9e8d9d65fb33205cde51163f61bc2f4658",
+      "bytes": 1032,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f409e903424108717eb8f81567669e9e8d9d65fb33205cde51163f61bc2f4658.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/scripts/t1c_symmetric_placements.py",
+      "sha256": "0680a9ae25a0d3d9aedb8b3e53b0a4d9f13c3e42e174d1a2084fa167a6005639",
+      "bytes": 3374,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/0680a9ae25a0d3d9aedb8b3e53b0a4d9f13c3e42e174d1a2084fa167a6005639.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/scripts/t1d_misaligned_z2.py",
+      "sha256": "b6029643ef4d399e63d87f49da8cf7a6351bc7273d2e84ee6a8beae90587abec",
+      "bytes": 1420,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/b6029643ef4d399e63d87f49da8cf7a6351bc7273d2e84ee6a8beae90587abec.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/scripts/t1e_posthoc_upsplit.py",
+      "sha256": "89bc349632de94ebff7abbe40a7abdec92213e29cf538e5d769261cb03927db1",
+      "bytes": 2988,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/89bc349632de94ebff7abbe40a7abdec92213e29cf538e5d769261cb03927db1.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/scripts/t2_koide.py",
+      "sha256": "66299d6468fe87d8f4604ecadbdd14b783578e959519ba592e844fa27ed4e5d0",
+      "bytes": 4092,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/66299d6468fe87d8f4604ecadbdd14b783578e959519ba592e844fa27ed4e5d0.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/scripts/t3_grammar.py",
+      "sha256": "6b9000b1ec8f3fe0cf63e0dca70ee7f462dca394cc0cadf8de542a2d6b81f25a",
+      "bytes": 1717,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/6b9000b1ec8f3fe0cf63e0dca70ee7f462dca394cc0cadf8de542a2d6b81f25a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/t0.out",
+      "sha256": "f862f6bc9d25c7028ceb4b13a8b08ad00f03019e91fe25fd42bedc1b4a80cce1",
+      "bytes": 765,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f862f6bc9d25c7028ceb4b13a8b08ad00f03019e91fe25fd42bedc1b4a80cce1.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/t1a.out",
+      "sha256": "2dde2df47a67a9699a2e861aef7b06c0732c420819e1819ac3579c59e741c4c5",
+      "bytes": 2372,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/2dde2df47a67a9699a2e861aef7b06c0732c420819e1819ac3579c59e741c4c5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/t1b.out",
+      "sha256": "42978e6d5dfd68c62c45fbf7cf0ed4ad4c8ba1ba58b4001e6870d9c187cf7627",
+      "bytes": 1633,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/42978e6d5dfd68c62c45fbf7cf0ed4ad4c8ba1ba58b4001e6870d9c187cf7627.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/t1b_check.out",
+      "sha256": "57da1990232eb54e321f45f348310aa819ef96f420e6bdd776086b06c6481159",
+      "bytes": 275,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/57da1990232eb54e321f45f348310aa819ef96f420e6bdd776086b06c6481159.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/t1c.out",
+      "sha256": "d17931d9bd35afdccb5f299e96eec888b3c0f4f68ace3c9321663b67679097ae",
+      "bytes": 1010,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d17931d9bd35afdccb5f299e96eec888b3c0f4f68ace3c9321663b67679097ae.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/t1d.out",
+      "sha256": "10200202d1dff16304b718b66052c52ef8ab8c742ff74b77371a5a0851d32a6a",
+      "bytes": 1329,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/10200202d1dff16304b718b66052c52ef8ab8c742ff74b77371a5a0851d32a6a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/t1e.out",
+      "sha256": "636ef17523002b19e09c58dbfb883d0b115f5e60bcfdf8a8d1ae1ae1c93465b5",
+      "bytes": 3621,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/636ef17523002b19e09c58dbfb883d0b115f5e60bcfdf8a8d1ae1ae1c93465b5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/t2.out",
+      "sha256": "4c1e5dc9510dcef61194a6f7ff9d66ae83dfa0aeab45a4cadd378b630d3d6439",
+      "bytes": 1314,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/4c1e5dc9510dcef61194a6f7ff9d66ae83dfa0aeab45a4cadd378b630d3d6439.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R4/t3.out",
+      "sha256": "feb0a84ccb7c56337bef0de12122d1f51af33cec4a5a2f13a0d800e417cc59a4",
+      "bytes": 583,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/feb0a84ccb7c56337bef0de12122d1f51af33cec4a5a2f13a0d800e417cc59a4.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R5/PREREG.md",
+      "sha256": "1cfe0d62f627bbd024dacf1ffdcaf293693cfacac7994111ea809b21d58b2e8d",
+      "bytes": 3905,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/1cfe0d62f627bbd024dacf1ffdcaf293693cfacac7994111ea809b21d58b2e8d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R5/REPORT.md",
+      "sha256": "630c9c2e59c01f95b6cff3a04a52c994e14da720380ec01c3ce73335e7ba32b2",
+      "bytes": 9398,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/630c9c2e59c01f95b6cff3a04a52c994e14da720380ec01c3ce73335e7ba32b2.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R5/pr9702_note.md",
+      "sha256": "db15678417149efe450fb98eab1d1fc5d72bcf974b5e1919408acff6aba69775",
+      "bytes": 78888,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/db15678417149efe450fb98eab1d1fc5d72bcf974b5e1919408acff6aba69775.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R5/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R5/t1_leakage.out",
+      "sha256": "b6dda5f30e22decd0955cf94838661d5d5ed25af2ef8448b71945574e3742bda",
+      "bytes": 1591,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/b6dda5f30e22decd0955cf94838661d5d5ed25af2ef8448b71945574e3742bda.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R5/t1_leakage.py",
+      "sha256": "d85cf4c1e5affff6b8709878bfa5c30d360379316abb8abbab7f381c5a1376a2",
+      "bytes": 8017,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d85cf4c1e5affff6b8709878bfa5c30d360379316abb8abbab7f381c5a1376a2.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R5/t2_data.out",
+      "sha256": "f8df52c7413ddd175aaf1aefe32f4888824b403c3cf807e170a83b63b4cc37bb",
+      "bytes": 2963,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f8df52c7413ddd175aaf1aefe32f4888824b403c3cf807e170a83b63b4cc37bb.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R5/t2_data.py",
+      "sha256": "456294a1cb297ff9d3484d70139e6e5befe96761743a8f7b94ee6f0e2846aee6",
+      "bytes": 5505,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/456294a1cb297ff9d3484d70139e6e5befe96761743a8f7b94ee6f0e2846aee6.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R5/t2b_ckm_split.out",
+      "sha256": "63f9c6714de6c4043cca22cf17fcda3372465fa88db4fb1da35698716987606a",
+      "bytes": 806,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/63f9c6714de6c4043cca22cf17fcda3372465fa88db4fb1da35698716987606a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R5/t2b_ckm_split.py",
+      "sha256": "1afafc52bb2e4988a580417d0c4977f047de71c367b1d6e5bb4ef8539fd0ad38",
+      "bytes": 1189,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/1afafc52bb2e4988a580417d0c4977f047de71c367b1d6e5bb4ef8539fd0ad38.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R5/t3_dpi.out",
+      "sha256": "82e20336ed1a671644d00d173278eb3ef469f695f87daba1700f2f767d73222a",
+      "bytes": 644,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/82e20336ed1a671644d00d173278eb3ef469f695f87daba1700f2f767d73222a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/R5/t3_dpi.py",
+      "sha256": "821220c4cba69c97e21eebe31d0273f08f84e8519dc8414d701b62f1c400bd45",
+      "bytes": 3273,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/821220c4cba69c97e21eebe31d0273f08f84e8519dc8414d701b62f1c400bd45.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/SUMMARY.md",
+      "sha256": "7132605192c6df406f4219b1e2e031b210a94edb74769258452edf0cae39d9ae",
+      "bytes": 3111,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/7132605192c6df406f4219b1e2e031b210a94edb74769258452edf0cae39d9ae.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T/PREREG.md",
+      "sha256": "66f182213362fe860a6186724be553217942930f43c5a1645da36f3ce4b8c559",
+      "bytes": 5153,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/66f182213362fe860a6186724be553217942930f43c5a1645da36f3ce4b8c559.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T/REPORT.md",
+      "sha256": "c752e06880dec42a0f5927bf7220fb5b71573a6919cd9fc7eff1599d88a12b02",
+      "bytes": 6652,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c752e06880dec42a0f5927bf7220fb5b71573a6919cd9fc7eff1599d88a12b02.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T/scripts/t2amp.py",
+      "sha256": "49c9a72947207c533f22303e374748bec95883d8e13830c707efc3fe3353de68",
+      "bytes": 13256,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/49c9a72947207c533f22303e374748bec95883d8e13830c707efc3fe3353de68.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T/t2amp.out",
+      "sha256": "2b2473e5f8b1f40deea2e7f1618c5dcc6345789ef0ccc3b0bf6771ff24f27de1",
+      "bytes": 24652,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/2b2473e5f8b1f40deea2e7f1618c5dcc6345789ef0ccc3b0bf6771ff24f27de1.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T/t2amp_v2.out",
+      "sha256": "d8fe7156cfeaad935d6dfdca4369bf2f88d10d73960e4b2237592c4ffc93cdd5",
+      "bytes": 26399,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d8fe7156cfeaad935d6dfdca4369bf2f88d10d73960e4b2237592c4ffc93cdd5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/PREREG.md",
+      "sha256": "50daabfd6cf2fd8d2f3416df0f3076162c915907927f5d51f27006eb327e5a66",
+      "bytes": 6478,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/50daabfd6cf2fd8d2f3416df0f3076162c915907927f5d51f27006eb327e5a66.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/REPORT.md",
+      "sha256": "ad180aac15fc48768450a84ec17916c4db01d4632e8d30ef8b3db6303d1baed0",
+      "bytes": 6798,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/ad180aac15fc48768450a84ec17916c4db01d4632e8d30ef8b3db6303d1baed0.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/scripts/smoke.out",
+      "sha256": "60c1c40a233a108c8d983432a65e009fa0f823a3c26aea1c2ed8c97800fe1e7d",
+      "bytes": 1742,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/60c1c40a233a108c8d983432a65e009fa0f823a3c26aea1c2ed8c97800fe1e7d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/scripts/smoke.py",
+      "sha256": "aea2dffada10e2f1079bb8e99d9dce0c5b2c2dcd1aa3001067b3b8c6d052217f",
+      "bytes": 734,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/aea2dffada10e2f1079bb8e99d9dce0c5b2c2dcd1aa3001067b3b8c6d052217f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/scripts/t3_bcomplex.py",
+      "sha256": "41474c9b7daa7d03aa94d9a328d0de0a1277a912144d18a0413e733878a40d00",
+      "bytes": 1738,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/41474c9b7daa7d03aa94d9a328d0de0a1277a912144d18a0413e733878a40d00.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/scripts/t3_bflat.py",
+      "sha256": "245b6ea8d3f1697779c1d4048be1becdde876d8c59d48f42a52e406113c2e2a3",
+      "bytes": 841,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/245b6ea8d3f1697779c1d4048be1becdde876d8c59d48f42a52e406113c2e2a3.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/scripts/t3_detail.py",
+      "sha256": "a822ddab3e35e330258889875e7a4adad88c351624186a5cd8581ed951203be1",
+      "bytes": 3131,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/a822ddab3e35e330258889875e7a4adad88c351624186a5cd8581ed951203be1.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/scripts/t3_hs_check.py",
+      "sha256": "33fc31106b2ce28e4e337dc07d2172582edd7ea4d9be1e41f6a1f8fdbae6c3c5",
+      "bytes": 905,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/33fc31106b2ce28e4e337dc07d2172582edd7ea4d9be1e41f6a1f8fdbae6c3c5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/scripts/t3_landau.py",
+      "sha256": "02c3b2f2989bc376a37571a6dc2c391dc841dfe48a32150ece81f40de45a2849",
+      "bytes": 12049,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/02c3b2f2989bc376a37571a6dc2c391dc841dfe48a32150ece81f40de45a2849.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/scripts/t3_masses.py",
+      "sha256": "249fce170208582f0ce87243c1f980807ff113507a1c8b85dc70eaee5c8a361d",
+      "bytes": 4181,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/249fce170208582f0ce87243c1f980807ff113507a1c8b85dc70eaee5c8a361d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/scripts/t3_scaling.py",
+      "sha256": "96f1c44c67c29a612aebb5fd64b979df2b51184b5c50a82132f79016b1fff059",
+      "bytes": 1099,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/96f1c44c67c29a612aebb5fd64b979df2b51184b5c50a82132f79016b1fff059.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/t3_A-N_details.npy",
+      "sha256": "2edb38f279a7c90cd46f3442a3498dc23c2470515f007e2dc0b0e84e720cca99",
+      "bytes": 2218,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/2edb38f279a7c90cd46f3442a3498dc23c2470515f007e2dc0b0e84e720cca99.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/t3_A-W_details.npy",
+      "sha256": "b20fcd048fbc735b3ff446e8549d8c53a4817795d2b6a7f25619196bde8054fb",
+      "bytes": 1718,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/b20fcd048fbc735b3ff446e8549d8c53a4817795d2b6a7f25619196bde8054fb.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/t3_AN.out",
+      "sha256": "6e93fda159022193d36d26d1cbc010091fe0b793275288ca29dd880580ec2e4f",
+      "bytes": 7818,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/6e93fda159022193d36d26d1cbc010091fe0b793275288ca29dd880580ec2e4f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/t3_AN_detail.out",
+      "sha256": "6ac14e3fa5754ab0d8239111b97909efc80703d809a58b5b55ab575022c3cf97",
+      "bytes": 4284,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/6ac14e3fa5754ab0d8239111b97909efc80703d809a58b5b55ab575022c3cf97.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/t3_AW.out",
+      "sha256": "c0a93404304702ad62d381ed7a4962a44b0ea861329229d0bad3f03a62c0a20f",
+      "bytes": 7064,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c0a93404304702ad62d381ed7a4962a44b0ea861329229d0bad3f03a62c0a20f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/t3_AW_detail.out",
+      "sha256": "fec2076afadc748ff000eeb191307669de66fb8be47bc1f00dc9c9aac2e51c22",
+      "bytes": 4089,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/fec2076afadc748ff000eeb191307669de66fb8be47bc1f00dc9c9aac2e51c22.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/t3_B.out",
+      "sha256": "8e2e9bd4ba74050270d5598a7539ab4e80f87e5d723dba0ac888a644bc541e91",
+      "bytes": 102304,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8e2e9bd4ba74050270d5598a7539ab4e80f87e5d723dba0ac888a644bc541e91.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/t3_bcomplex.out",
+      "sha256": "25839f1a449dbcfc815498fbb3041f905256e69ecab1a81a5ec1e0be317c6ba6",
+      "bytes": 154,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/25839f1a449dbcfc815498fbb3041f905256e69ecab1a81a5ec1e0be317c6ba6.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/t3_bflat.out",
+      "sha256": "6ab78f8935b14a93e5e07cf1f1ac57a78f42395390a9c3d41efc42def303a7a1",
+      "bytes": 2671,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/6ab78f8935b14a93e5e07cf1f1ac57a78f42395390a9c3d41efc42def303a7a1.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/t3_hs_check.out",
+      "sha256": "1a45f1d60ab97f7eb3ce436b654e1ca9114873de596a406ed44893a3d4e04653",
+      "bytes": 260,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/1a45f1d60ab97f7eb3ce436b654e1ca9114873de596a406ed44893a3d4e04653.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/t3_masses.out",
+      "sha256": "6bae603cc84275a0488d6ca4192453530339c1478181e00458085c54022e9181",
+      "bytes": 1335,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/6bae603cc84275a0488d6ca4192453530339c1478181e00458085c54022e9181.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T3/t3_scaling.out",
+      "sha256": "a1e49712a66f3d7c2ad7eff39c15097ce955665cae852d26ffd992ddc8ddd587",
+      "bytes": 2106,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/a1e49712a66f3d7c2ad7eff39c15097ce955665cae852d26ffd992ddc8ddd587.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/PREREG_NOTES.md",
+      "sha256": "029dacf9e9201b607d46ea117f334d5bd77b6e37a62cddb5237e3f015095bf14",
+      "bytes": 5351,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/029dacf9e9201b607d46ea117f334d5bd77b6e37a62cddb5237e3f015095bf14.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/REPORT.md",
+      "sha256": "a2ce987cb8eade6de66aa1cb6552ea5852c8fb616008b72eec1ac38eab87b59b",
+      "bytes": 12639,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/a2ce987cb8eade6de66aa1cb6552ea5852c8fb616008b72eec1ac38eab87b59b.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/run_A.done",
+      "sha256": "8221ac66be71558c921fb44cfb66f7997699aea754d917763882d6d9eddc836e",
+      "bytes": 5,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/8221ac66be71558c921fb44cfb66f7997699aea754d917763882d6d9eddc836e.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/run_A.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/run_all.done",
+      "sha256": "5c91bc5fb3c4c9ab3cc8ceee39df4d1ff7bb892e5eb34ed8f809873d8f1dd969",
+      "bytes": 8,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/5c91bc5fb3c4c9ab3cc8ceee39df4d1ff7bb892e5eb34ed8f809873d8f1dd969.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/run_all.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/scripts/capped.sh",
+      "sha256": "f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5",
+      "bytes": 659,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f2e1a42e1d149feb3a863c3af15f39fdbc335453c9f1393a00642acc95047ad5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/scripts/run_A.sh",
+      "sha256": "c9c9e437b8ceb3b73e5284a32f4c7a5a7ff4f20c384c727f43627cadc34a3ddb",
+      "bytes": 165,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c9c9e437b8ceb3b73e5284a32f4c7a5a7ff4f20c384c727f43627cadc34a3ddb.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/scripts/run_all.sh",
+      "sha256": "40841a5b77f2c2635c3ebb322e6045fe12625f3818444351c08b19cef32288cb",
+      "bytes": 473,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/40841a5b77f2c2635c3ebb322e6045fe12625f3818444351c08b19cef32288cb.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/scripts/t4_axis.py",
+      "sha256": "c842ab0c8dce02eb02003186fa44e716248a411f4d19e53b1fe11e72f7b83293",
+      "bytes": 996,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c842ab0c8dce02eb02003186fa44e716248a411f4d19e53b1fe11e72f7b83293.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/scripts/t4_core.py",
+      "sha256": "b1e49c3b70b4bf2efbbdc95de381fed410e79b99690c8b2e527ea99d2eefc8d5",
+      "bytes": 5955,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/b1e49c3b70b4bf2efbbdc95de381fed410e79b99690c8b2e527ea99d2eefc8d5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/scripts/t4_count.py",
+      "sha256": "310a85fcc80061de44877f582979de956e8024595bd48fba09af0ae6e3da2473",
+      "bytes": 1845,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/310a85fcc80061de44877f582979de956e8024595bd48fba09af0ae6e3da2473.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/scripts/t4_group.py",
+      "sha256": "f79f40daf61ac91746d0766e72a2e40c3880b75b493f6e43fbdce67f94c5bf9f",
+      "bytes": 8681,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f79f40daf61ac91746d0766e72a2e40c3880b75b493f6e43fbdce67f94c5bf9f.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/scripts/t4_inv.py",
+      "sha256": "875e0c82b6f2950defb038ac973a5e2fc1b85917995c1a4020d3467caa74b0a9",
+      "bytes": 5350,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/875e0c82b6f2950defb038ac973a5e2fc1b85917995c1a4020d3467caa74b0a9.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/scripts/t4_leak.py",
+      "sha256": "d21744007ffc5fcff4c2bd8ca7c0fb1a20454275a93f70002ac547fca71ed69e",
+      "bytes": 7899,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d21744007ffc5fcff4c2bd8ca7c0fb1a20454275a93f70002ac547fca71ed69e.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/scripts/t4_vacA2.py",
+      "sha256": "f6dd0fce1d54fc4e1d2aa6035e70e2c1d2539c7abb535ca5c67488356a6cedee",
+      "bytes": 16640,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/f6dd0fce1d54fc4e1d2aa6035e70e2c1d2539c7abb535ca5c67488356a6cedee.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/scripts/t4_vacuum.py",
+      "sha256": "2fa3660acabd7b0c0b1ba919840d19f218f70ccd2e734da6a6c9d533c7d3ed28",
+      "bytes": 15785,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/2fa3660acabd7b0c0b1ba919840d19f218f70ccd2e734da6a6c9d533c7d3ed28.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/scripts/t4_vacuumB_rows.npy",
+      "sha256": "d199e49a0bda69046262fc652eeaaf49fa5f0e052399d6a9dee30842412987e1",
+      "bytes": 21048,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d199e49a0bda69046262fc652eeaaf49fa5f0e052399d6a9dee30842412987e1.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/scripts/t4_z0.npy",
+      "sha256": "5e3b72cf41bdf647e2e0515740844a1c5f86edda9cb39bcdd067b77bc3390939",
+      "bytes": 320,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/5e3b72cf41bdf647e2e0515740844a1c5f86edda9cb39bcdd067b77bc3390939.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/t4_axis.out",
+      "sha256": "59f06dcf8f30d49752254188bf202b0b87a968ce6ddb0807a1ae2d12f6c993f4",
+      "bytes": 1332,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/59f06dcf8f30d49752254188bf202b0b87a968ce6ddb0807a1ae2d12f6c993f4.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/t4_count.out",
+      "sha256": "0687c575ddcfb4ecbe9e1e8db97031247b2fe5b27c1fc0332788a255dcac7d6a",
+      "bytes": 429,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/0687c575ddcfb4ecbe9e1e8db97031247b2fe5b27c1fc0332788a255dcac7d6a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/t4_group.out",
+      "sha256": "6a01f38479c79643c0d445bba962fc1f3eb2d2eb107c3678c4a9450a3553976a",
+      "bytes": 4341,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/6a01f38479c79643c0d445bba962fc1f3eb2d2eb107c3678c4a9450a3553976a.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/t4_leak_IO_min.out",
+      "sha256": "c6437cf955e1735bf608e4675335d37a889417e8b2a0798834029ec388d0ed91",
+      "bytes": 2068,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/c6437cf955e1735bf608e4675335d37a889417e8b2a0798834029ec388d0ed91.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/t4_leak_NO0_min.out",
+      "sha256": "b599f5c664440c7cc4f475c88e0da193d068543a2df4a3c609d29be49fd1d6d0",
+      "bytes": 2096,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/b599f5c664440c7cc4f475c88e0da193d068543a2df4a3c609d29be49fd1d6d0.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/t4_leak_NO_count.out",
+      "sha256": "76acd4acf2441ab34570b2028dab699aa3035308a8056fccdbb0d975f304f0a5",
+      "bytes": 2110,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/76acd4acf2441ab34570b2028dab699aa3035308a8056fccdbb0d975f304f0a5.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/t4_leak_NO_min.out",
+      "sha256": "6a361ae95da3f4f51055a47ffb414681bbf5fb1714e75bc24bf99138043fc4e2",
+      "bytes": 2089,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/6a361ae95da3f4f51055a47ffb414681bbf5fb1714e75bc24bf99138043fc4e2.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/t4_leak_smoke.out",
+      "sha256": "ecf2eb26c945dbc45347aa25cf40d2f20877d433f7f61b9417ed1cdef10520f7",
+      "bytes": 2044,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/ecf2eb26c945dbc45347aa25cf40d2f20877d433f7f61b9417ed1cdef10520f7.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/t4_leak_smoke2.out",
+      "sha256": "d518474ab9ce219a6ecfb7c844fe55bb86e6b8fa5001e052ff58ad27691330b0",
+      "bytes": 2068,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/d518474ab9ce219a6ecfb7c844fe55bb86e6b8fa5001e052ff58ad27691330b0.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/t4_vacA.out",
+      "sha256": "e4d9b2e3f37debf0e2e0d0bbbabe8dc74d4c3791599d1b1dff953935654b4a37",
+      "bytes": 924,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/e4d9b2e3f37debf0e2e0d0bbbabe8dc74d4c3791599d1b1dff953935654b4a37.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/t4_vacA2.out",
+      "sha256": "a55059f2a18bdaa3cee0d8d746bdb13d68b97a91bd9c394b2bec344a2ab245c4",
+      "bytes": 3196,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/a55059f2a18bdaa3cee0d8d746bdb13d68b97a91bd9c394b2bec344a2ab245c4.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/t4_vacB.out",
+      "sha256": "531f76324f5afefcfa97f5c47ed0219c777fc3054c7a24b1db5f9773054ae52d",
+      "bytes": 2696,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/531f76324f5afefcfa97f5c47ed0219c777fc3054c7a24b1db5f9773054ae52d.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/T4/t4_vacB_smoke.out",
+      "sha256": "38c9b9306562d87d12a83de231e4b12d63ad0b76f61277d326e57ea855051fbd",
+      "bytes": 2692,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/38c9b9306562d87d12a83de231e4b12d63ad0b76f61277d326e57ea855051fbd.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/TESTS.md",
+      "sha256": "67ca60d4e481f4f429b1d0422f2159c187025bff45b9ec6ced28b67ba20580e1",
+      "bytes": 2170,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/67ca60d4e481f4f429b1d0422f2159c187025bff45b9ec6ced28b67ba20580e1.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/TESTS.md",
+      "sha256": "a6b43008b5936499896d2e5329ef6e0e7232f601c0662580856f2e3975620d06",
+      "bytes": 8261,
+      "heads": [
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/a6b43008b5936499896d2e5329ef6e0e7232f601c0662580856f2e3975620d06.gz"
+    },
+    {
+      "path": ".claude/science/exercises/mass-hierarchy-wall-20261018/WALL.md",
+      "sha256": "632ecc4bfc6080df83a5f56c77327d42d3f303391f64e873d62aa81e6bc42205",
+      "bytes": 2677,
+      "heads": [
+        "1cbe01d745fb23cdf4f74a0920ca774f8f2047f4",
+        "b84e3d582b5de0b7c0ac0935f50cd4e270c90e31"
+      ],
+      "recovery": "archive/conditional_hierarchy_mass_review_2026_10_18/originals/632ecc4bfc6080df83a5f56c77327d42d3f303391f64e873d62aa81e6bc42205.gz"
+    }
+  ]
+}

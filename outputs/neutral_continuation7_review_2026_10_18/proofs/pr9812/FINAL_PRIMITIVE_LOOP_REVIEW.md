@@ -1,0 +1,16 @@
+<!-- Original PR9812 source SHA256 0e2184667545198afe00df98c05788f9f78292993e70be265de57cc6d55fd103. -->
+**Source boundary:** Complete mathematical source follows. Historical verdicts, replay narratives and workflow instructions are provenance only. Mathematical identities and constructive arguments retain their explicit hypotheses; an old status supplies no current certification. Earlier exploratory statements must be read with the later corrections in this unit.
+
+# Primitive-loop interaction law: final focused review
+
+PASS after the applied even-R>=8 boundary correction. No further material correction requested. Ordinary scoped review, not formal audit; no repository edits made.
+
+Read the proof, note, runner, both independent primitive/directional reports, and both literal controls. Replayed subset recursion and independent Feshbach enumeration to /tmp/neutral-loop-law-{subset,feshbach}-replay.json; cross-comparison and every runner predicate pass.
+
+The primitive coefficient is correctly restricted to a simple nonwrapping, single-layer, distinct-edge monomial. Each spin is inserted twice, and any proper edge subset leaves an odd-degree vertex, so connected cumulant subtractions and proper vacuum returns vanish for this monomial alone. The auxiliary independent-spin denominators are exact for this restricted word, without a Gaussian assumption. Mixed XX/YY correlations produce the stated axis-change sign; no extra traversal factor is justified. The beta/Gamma integral, rectangle recurrence and asymptotic agree, including positive six-turn loops.
+
+The directional order-eight claim goes beyond the primitive law and includes the required overlapping two-square terms. The three simple cycles for (2,2), physical vertical shared-column costs, and layer offsets 0,+1,−1 give the stated connected result. Feshbach folds have the correct sign and reproduce exact cancellation at separated layers. Explicit arithmetic gives 4[1/262144+3/65536−2(127/10616832)]=545/5308416. Each corner product contains both target columns once, fixing the contrast factor four. For (3,0), two rectangles give −9/32768; two-square supports are disconnected. The operation-budget completeness argument excludes repeated shorter graphs from carrying both sign labels and allows no spare connector between two squares.
+
+The original even-R>=6 wording would have admitted an axial wrapping alias at R6, where distance three also has a length-three route in the negative direction. The current proof now says even R>=8; confirmed from disk. This removes the only finite-size issue identified. Fixed L10 also keeps these calculations below the first nontrivial N0 winding, so scalar fixed-background recursion is legitimate at order eight.
+
+The proof does not promote the primitive formula to a complete arbitrary-order corner coefficient. It expressly excludes repeated-edge and multicycle renormalization, winding-sector gauge issues, convergence, an isolated new band, scattering, universal coupling and a long-range force. The local O(lambda10) remainder is not presented as a volume-uniform spectral bound. The note and runner preserve these scope boundaries and label controls as model development. Input binding covers the executed helpers, canonical proof and cited column source premise.

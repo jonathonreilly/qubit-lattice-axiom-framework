@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/native_composite_transport.py
+runner_sha256: 3a59057125949b2bd49c57c28b08389b7610755369dd8a0770c0e00b84d1bf4b
+input_fingerprint_sha256: 4260af3ead0fad18d25635932c167272bb1a817a7d6b91cce63321cfdc99a76e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.46
+status: ok
+----- stdout -----
+{"derivative_order": 0, "pauli_terms": 3, "local_norm_squared": 3, "translation_overlaps": [{"displacement": [0, 0, 0], "value": 3}], "uniform_moment": 1.0}
+{"derivative_order": 1, "pauli_terms": 24, "local_norm_squared": 96, "translation_overlaps": [{"displacement": [0, 0, 0], "value": 96}], "uniform_moment": 32.0}
+{"derivative_order": 2, "pauli_terms": 207, "local_norm_squared": 9216, "translation_overlaps": [{"displacement": [0, 0, 0], "value": 9216}], "uniform_moment": 3072.0}
+{"derivative_order": 3, "pauli_terms": 1704, "local_norm_squared": 1499136, "translation_overlaps": [{"displacement": [0, 0, 0], "value": 1499136}], "uniform_moment": 499712.0}
+{"derivative_order": 4, "pauli_terms": 14427, "local_norm_squared": 352124928, "translation_overlaps": [{"displacement": [-1, -1, 0], "value": 16896}, {"displacement": [-1, 0, -1], "value": 16896}, {"displacement": [-1, 0, 0], "value": 247808}, {"displacement": [-1, 0, 1], "value": 16896}, {"displacement": [-1, 1, 0], "value": 16896}, {"displacement": [0, -1, -1], "value": 16896}, {"displacement": [0, -1, 0], "value": 247808}, {"displacement": [0, -1, 1], "value": 16896}, {"displacement": [0, 0, -1], "value": 247808}, {"displacement": [0, 0, 0], "value": 352124928}, {"displacement": [0, 0, 1], "value": 247808}, {"displacement": [0, 1, -1], "value": 16896}, {"displacement": [0, 1, 0], "value": 247808}, {"displacement": [0, 1, 1], "value": 16896}, {"displacement": [1, -1, 0], "value": 16896}, {"displacement": [1, 0, -1], "value": 16896}, {"displacement": [1, 0, 0], "value": 247808}, {"displacement": [1, 0, 1], "value": 16896}, {"displacement": [1, 1, 0], "value": 16896}], "uniform_moment": 117938176.0}
+{'n': 0, 'terms': 3, 'norm2': 3, 'correlations': {'(0, 0, 0)': 3}}
+{'n': 1, 'terms': 24, 'norm2': 96, 'correlations': {'(0, 0, 0)': 96}}
+{'n': 2, 'terms': 207, 'norm2': 9216, 'correlations': {'(0, 0, 0)': 9216}}
+{'n': 3, 'terms': 1704, 'norm2': 1499136, 'correlations': {'(0, 0, 0)': 1499136}}
+{'n': 4, 'terms': 14427, 'norm2': 352124928, 'correlations': {'(-1, -1, 0)': 16896, '(-1, 0, -1)': 16896, '(-1, 0, 0)': 247808, '(-1, 0, 1)': 16896, '(-1, 1, 0)': 16896, '(0, -1, -1)': 16896, '(0, -1, 0)': 247808, '(0, -1, 1)': 16896, '(0, 0, -1)': 247808, '(0, 0, 0)': 352124928, '(0, 0, 1)': 247808, '(0, 1, -1)': 16896, '(0, 1, 0)': 247808, '(0, 1, 1)': 16896, '(1, -1, 0)': 16896, '(1, 0, -1)': 16896, '(1, 0, 0)': 247808, '(1, 0, 1)': 16896, '(1, 1, 0)': 16896}}
+per_element: independent exact integer Pauli products agree
+per_site: one physical qubit, infinite integer coordinates, local support enumerated
+per_mode: Fourier moment coefficients follow exact translation overlaps; pole not derived
+per_block: local composite and derivative hierarchy through order4 checked
+lattice_wide: coefficients hold on infinite cubic lattice by locality, not a finite torus extrapolation
+physical scalar derived: false; matter coupling derived: false
+
+----- stderr -----
+

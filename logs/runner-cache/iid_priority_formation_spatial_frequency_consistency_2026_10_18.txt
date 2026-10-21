@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/iid_priority_formation_spatial_frequency_consistency_2026_10_18.py
+runner_sha256: 2ed39a71fb8501de02e663b0f6f667cb90fd2b68c78f8599bfde71758a71d299
+input_fingerprint_sha256: 572fab0d2e3b3fb85581760f680779c16aa93da094ee22555305a71af6decf98
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 13.69
+status: ok
+----- stdout -----
+Execution scope: default and explicitly requested optional branches only; historical totals are not fresh evidence.
+per_element: algebraic entries and numerical fixtures below have their stated exact or floating arithmetic scope.
+per_site: only the explicitly supplied local sites and translation rules are exercised; no physical site law is inferred.
+per_mode: only displayed momentum, representation and coefficient sectors are checked; untested sectors remain unverified.
+per_block: finite matrix, graph and ansatz blocks below use their declared dimensions; optional blocks require explicit flags.
+lattice_wide: finite tori and written conditional proofs have distinct scope; numerical scans do not certify all sizes.
+[PASS] X1 repo counterexample B~Bern(1/4), X_i=B: Var(F_4)=3/16 vs IID 3/64 (exact)
+[PASS] X2 counterexample: Cov(X_i,X_j)=p(1-p)=3/16 for all i!=j, so sum_z|C(z)| diverges and n Var(F_n) = 3n/16 grows linearly
+X: finite floating truncation of the single-site covariance ceiling on Z^3 (not a certified upper bound): sum = 4068.7
+   Theorem B, |S|=1, eps=0.1: m=13, k_m=|B(2m)|=24857, P(|F_n-p|>=eps) <= 3 exp(-n/1.99e+07)
+   Theorem B, |S|=1, eps=0.05: m=14, k_m=|B(2m)|=30913, P(|F_n-p|>=eps) <= 3 exp(-n/9.89e+07)
+   Theorem B, |S|=1, eps=0.01: m=15, k_m=|B(2m)|=37881, P(|F_n-p|>=eps) <= 3 exp(-n/3.03e+09)
+[PASS] X3 finite truncation is finite and the d=119 term is small (not an omitted-tail enclosure) :: chi_bd=4068.7
+O: 300 tori L=24, chiral-pair rule; class freq mean range [0.08323,0.08352], max |z|=1.31
+[PASS] O1 all 12 class frequencies -> 1/12 (|z| < 4)
+[PASS] O1b every single torus: max_a |F(a) - 1/12| <= 6 sqrt(chi/n) with exact chi=p(1-p) :: max dev 0.0093 vs 0.0141
+   exact rule weights: one-nbr context [0.125, 0.041666666666666664]; two-nbr context [0.125, 0.041666666666666664, 0.08333333333333333]
+   context1 target0: freq 0.12472 vs r(a|eta) 0.12500  z=-0.51  (pooled context count 345444)
+   context1 target1: freq 0.04167 vs r(a|eta) 0.04167  z=-0.00  (pooled context count 345444)
+   context2 target0: freq 0.12545 vs r(a|eta) 0.12500  z=+0.24  (pooled context count 28618)
+   context2 target1: freq 0.04322 vs r(a|eta) 0.04167  z=+1.27  (pooled context count 28618)
+   context2 target2: freq 0.08390 vs r(a|eta) 0.08333  z=+0.33  (pooled context count 28618)
+[PASS] O2 conditional frequencies given 1- and 2-neighbour Record contexts -> exact r(a|eta) (|z|<4)
+   l   replicas  n Var(box mean h)  exact 1/3+(1/36)(l-1)/l   z
+   1   518400   0.3324 +- 0.0007     0.3333               -1.41
+   2   153600   0.3466 +- 0.0013     0.3472               -0.51
+   4    19200   0.3529 +- 0.0036     0.3542               -0.34
+   8     2400   0.3535 +- 0.0106     0.3576               -0.39
+  11     2400   0.3584 +- 0.0104     0.3586               -0.02
+[PASS] O3 n Var(box mean) equals the exact 1-dependent value for every box size (|z|<4); O(1/n) law
+   n     #x-bonds  n Var(F_n) along fixed sequence   exact          z
+     50       0   0.3126 +- 0.0234                0.3333       -0.89
+    500      16   0.3768 +- 0.0283                0.3342       +1.50
+   5000    1802   0.3383 +- 0.0274                0.3433       -0.18
+  13824   13824   0.3947 +- 0.0308                0.3611       +1.09
+[PASS] O4 fixed deterministic site sequence: mean -> 0 and n Var(F_n) = exact prediction (|z|<4)
+F: ferro(20,1,1), 120 tori L=32
+[PASS] F1 label-0 frequency -> 1/6 (label symmetry), |z|<4 :: mean 0.16679 +- 0.00073, z=+0.17
+   [F] chi_hat = sum_(|z|<=6) |C(z)| = 1.7062 (signed 1.7021); p(1-p)=0.1389
+   [F] l= 1 replicas=25920  n Var(F_l)=0.1390 +- 0.0015   from C(z): 0.1389
+   [F] l= 2 replicas=15000  n Var(F_l)=0.4210 +- 0.0067   from C(z): 0.4191
+   [F] l= 4 replicas= 7680  n Var(F_l)=0.8507 +- 0.0161   from C(z): 0.8779
+   [F] l= 8 replicas=  960  n Var(F_l)=1.3474 +- 0.0621   from C(z): 1.2439
+   [F] l=12 replicas=  960  n Var(F_l)=1.4014 +- 0.0662   from C(z): 1.3858
+[PASS] F2a n Var(F_l) <= chi_hat (+4 SE) for all box sizes (Var = O(1/n))
+[PASS] F2b direct box variance matches sum_z C(z)(overlap weight) (+4 SE, 2%)
+[PASS] F3 formation-time context (only +x formed earlier, holding 0): freq(0) -> 20/25, freq(1) -> 1/25 (|z|<4) :: freq(0)=0.8043+-0.0034 (z=+1.28), freq(1)=0.0395 (z=-0.30), pooled context count 15661
+[PASS] F4 final-Record context (+x neighbour holds 0): freq(0) differs from rule weight 0.8 by > 6 SE :: freq(0 | X_+x=0) = 0.5125 +- 0.0009, z vs 0.8 = -305.6
+C: copy-unanimous, 60 tori L=32
+[PASS] C1 label-0 frequency -> 1/6 (label symmetry), |z|<4 :: mean 0.16723 +- 0.00039, z=+1.45
+   [C] chi_hat = sum_(|z|<=6) |C(z)| = 0.2949 (signed 0.2792); p(1-p)=0.1389
+   [C] l= 1 replicas=12960  n Var(F_l)=0.1416 +- 0.0022   from C(z): 0.1393
+   [C] l= 2 replicas= 7500  n Var(F_l)=0.1770 +- 0.0033   from C(z): 0.1809
+   [C] l= 4 replicas= 3840  n Var(F_l)=0.2150 +- 0.0055   from C(z): 0.2215
+   [C] l= 8 replicas=  480  n Var(F_l)=0.2698 +- 0.0183   from C(z): 0.2482
+   [C] l=12 replicas=  480  n Var(F_l)=0.2538 +- 0.0186   from C(z): 0.2580
+[PASS] C2a n Var(F_l) <= chi_hat (+4 SE) for all box sizes (Var = O(1/n))
+[PASS] C2b direct box variance matches sum_z C(z)(overlap weight) (+4 SE, 2%)
+R: x-bond agreement freq: ferro 0.5129+-0.0032, native 0.2446+-0.0022; mixture between-torus SD 0.1350 vs within-rule SD 0.0027
+[PASS] R1 rule-mixture (stationary, non-ergodic): frequency stays bimodal; mixture SD > 20x pure-rule SD at n=32768
+TOTAL: PASS=17 FAIL=0  (14 s, seed 20261018, quick=False)
+
+----- stderr -----
+

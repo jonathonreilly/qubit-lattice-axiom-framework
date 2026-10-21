@@ -1,0 +1,307 @@
+===== runner cache v1 =====
+runner: scripts/native_polynomial_grid_pole.py
+runner_sha256: 7a7bd9cdc2a3c5aaa39cafbbeba878108b180944632bf10c99a346d2e3755f54
+input_fingerprint_sha256: cf34bc24d93de12ec377efd4cc8c02f031b7790e2eed8046793be677214b64eb
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_polynomial_grid_pole-sb2ika1x
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_polynomial_grid_pole-sb2ika1x/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_flux_connected_row.py']
+{
+  "rows": [
+    {
+      "R": 10,
+      "nonzero": 33,
+      "diagonal": "-7/2",
+      "row_l1": "35/2",
+      "far_transition": "0",
+      "values": [
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-5/4",
+        "-5/4",
+        "-7/2",
+        "1/4",
+        "1/4"
+      ]
+    },
+    {
+      "R": 12,
+      "nonzero": 33,
+      "diagonal": "-7/2",
+      "row_l1": "35/2",
+      "far_transition": "0",
+      "values": [
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-5/4",
+        "-5/4",
+        "-7/2",
+        "1/4",
+        "1/4"
+      ]
+    },
+    {
+      "R": 16,
+      "nonzero": 33,
+      "diagonal": "-7/2",
+      "row_l1": "35/2",
+      "far_transition": "0",
+      "values": [
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-5/4",
+        "-5/4",
+        "-7/2",
+        "1/4",
+        "1/4"
+      ]
+    },
+    {
+      "R": 20,
+      "nonzero": 33,
+      "diagonal": "-7/2",
+      "row_l1": "35/2",
+      "far_transition": "0",
+      "values": [
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-3/4",
+        "-5/4",
+        "-5/4",
+        "-7/2",
+        "1/4",
+        "1/4"
+      ]
+    }
+  ],
+  "scope": "Exact second-order Q4 charge-block row after vacuum subtraction; no microscopic finite-lambda test"
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_polynomial_grid_pole-sb2ika1x/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_flux_connected_row.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_polynomial_grid_pole-sb2ika1x/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_flux_connected_row.py']
+CHILD_START ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_polynomial_grid_pole-sb2ika1x/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_polynomial_dispersion.py']
+{
+  "kappa": 0.00019110742464868558,
+  "eta": 1.7916321060814273e-05,
+  "rows": [
+    {
+      "lam": "1e-2",
+      "n": [
+        1,
+        0
+      ],
+      "q_over_lambda": 0.6270644019141304,
+      "dispersion_ratio": 0.3689722186813028,
+      "relative_error": 0.6310277813186972
+    },
+    {
+      "lam": "1e-2",
+      "n": [
+        1,
+        1
+      ],
+      "q_over_lambda": 0.8868029816683366,
+      "dispersion_ratio": 0.999989236818899,
+      "relative_error": 1.0763181101028178e-05
+    },
+    {
+      "lam": "1e-2",
+      "n": [
+        2,
+        1
+      ],
+      "q_over_lambda": 1.4021586289502448,
+      "dispersion_ratio": 0.4878314957292589,
+      "relative_error": 0.5121685042707411
+    },
+    {
+      "lam": "1e-4",
+      "n": [
+        1,
+        0
+      ],
+      "q_over_lambda": 0.06283172740834105,
+      "dispersion_ratio": 0.9894736308016583,
+      "relative_error": 0.010526369198341717
+    },
+    {
+      "lam": "1e-4",
+      "n": [
+        1,
+        1
+      ],
+      "q_over_lambda": 0.08885748104820523,
+      "dispersion_ratio": 1.0000000002212155,
+      "relative_error": 2.212155801022446e-10
+    },
+    {
+      "lam": "1e-4",
+      "n": [
+        2,
+        1
+      ],
+      "q_over_lambda": 0.14049601362878728,
+      "dispersion_ratio": 0.9810692993805726,
+      "relative_error": 0.01893070061942738
+    },
+    {
+      "lam": "1e-8",
+      "n": [
+        1,
+        0
+      ],
+      "q_over_lambda": 0.0006283185307179586,
+      "dispersion_ratio": 0.9999989472421972,
+      "relative_error": 1.0527578027793545e-06
+    },
+    {
+      "lam": "1e-8",
+      "n": [
+        1,
+        1
+      ],
+      "q_over_lambda": 0.0008885765876316732,
+      "dispersion_ratio": 1.0,
+      "relative_error": 2.3437368405274652e-18
+    },
+    {
+      "lam": "1e-8",
+      "n": [
+        2,
+        1
+      ],
+      "q_over_lambda": 0.0014049629462081453,
+      "dispersion_ratio": 0.999998105035955,
+      "relative_error": 1.8949640449879115e-06
+    }
+  ],
+  "powers": {
+    "leading": "15",
+    "orientation_correction": "16",
+    "global_tail": "37",
+    "source_error": "43/2"
+  },
+  "scope": "Leading native two-orientation coefficient control; analytic proof supplies microscopic transfer"
+}
+CHILD_EXIT 0 ['/usr/local/bin/python3', '/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_polynomial_grid_pole-sb2ika1x/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_polynomial_dispersion.py']
+[PASS] child:['/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_polynomial_grid_pole-sb2ika1x/.claude/science/physics-loops/neutral-composite-24h-20261018/native/neutral_polynomial_dispersion.py']
+[PASS] native_polynomial_grid_pole:C001
+[PASS] native_polynomial_grid_pole:C002
+{"status": "conditional-support", "controls": {"neutral_flux_connected_row.py": {"rows": [{"R": 10, "nonzero": 33, "diagonal": "-7/2", "row_l1": "35/2", "far_transition": "0", "values": ["-1/2", "-1/2", "-1/2", "-1/2", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-5/4", "-5/4", "-7/2", "1/4", "1/4"]}, {"R": 12, "nonzero": 33, "diagonal": "-7/2", "row_l1": "35/2", "far_transition": "0", "values": ["-1/2", "-1/2", "-1/2", "-1/2", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-5/4", "-5/4", "-7/2", "1/4", "1/4"]}, {"R": 16, "nonzero": 33, "diagonal": "-7/2", "row_l1": "35/2", "far_transition": "0", "values": ["-1/2", "-1/2", "-1/2", "-1/2", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-5/4", "-5/4", "-7/2", "1/4", "1/4"]}, {"R": 20, "nonzero": 33, "diagonal": "-7/2", "row_l1": "35/2", "far_transition": "0", "values": ["-1/2", "-1/2", "-1/2", "-1/2", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-5/4", "-5/4", "-7/2", "1/4", "1/4"]}], "scope": "Exact second-order Q4 charge-block row after vacuum subtraction; no microscopic finite-lambda test"}, "neutral_polynomial_dispersion.py": {"kappa": 0.00019110742464868558, "eta": 1.7916321060814273e-05, "rows": [{"lam": "1e-2", "n": [1, 0], "q_over_lambda": 0.6270644019141304, "dispersion_ratio": 0.3689722186813028, "relative_error": 0.6310277813186972}, {"lam": "1e-2", "n": [1, 1], "q_over_lambda": 0.8868029816683366, "dispersion_ratio": 0.999989236818899, "relative_error": 1.0763181101028178e-05}, {"lam": "1e-2", "n": [2, 1], "q_over_lambda": 1.4021586289502448, "dispersion_ratio": 0.4878314957292589, "relative_error": 0.5121685042707411}, {"lam": "1e-4", "n": [1, 0], "q_over_lambda": 0.06283172740834105, "dispersion_ratio": 0.9894736308016583, "relative_error": 0.010526369198341717}, {"lam": "1e-4", "n": [1, 1], "q_over_lambda": 0.08885748104820523, "dispersion_ratio": 1.0000000002212155, "relative_error": 2.212155801022446e-10}, {"lam": "1e-4", "n": [2, 1], "q_over_lambda": 0.14049601362878728, "dispersion_ratio": 0.9810692993805726, "relative_error": 0.01893070061942738}, {"lam": "1e-8", "n": [1, 0], "q_over_lambda": 0.0006283185307179586, "dispersion_ratio": 0.9999989472421972, "relative_error": 1.0527578027793545e-06}, {"lam": "1e-8", "n": [1, 1], "q_over_lambda": 0.0008885765876316732, "dispersion_ratio": 1.0, "relative_error": 2.3437368405274652e-18}, {"lam": "1e-8", "n": [2, 1], "q_over_lambda": 0.0014049629462081453, "dispersion_ratio": 0.999998105035955, "relative_error": 1.8949640449879115e-06}], "powers": {"leading": "15", "orientation_correction": "16", "global_tail": "37", "source_error": "43/2"}, "scope": "Leading native two-orientation coefficient control; analytic proof supplies microscopic transfer"}}, "scope": "Analytic selected-fibre microscopic transfer; numerical controls of connected coefficients, not full-grid diagonalization"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_polynomial_grid_pole-sb2ika1x/outputs/native_polynomial_grid_pole/result.json sha256=5651a634d39e361f959fca9ada4c915bda6dd94b97e2e7b10e023d0a7fd2501a
+{"controls": {"neutral_flux_connected_row.py": {"rows": [{"R": 10, "diagonal": "-7/2", "far_transition": "0", "nonzero": 33, "row_l1": "35/2", "values": ["-1/2", "-1/2", "-1/2", "-1/2", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-5/4", "-5/4", "-7/2", "1/4", "1/4"]}, {"R": 12, "diagonal": "-7/2", "far_transition": "0", "nonzero": 33, "row_l1": "35/2", "values": ["-1/2", "-1/2", "-1/2", "-1/2", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-5/4", "-5/4", "-7/2", "1/4", "1/4"]}, {"R": 16, "diagonal": "-7/2", "far_transition": "0", "nonzero": 33, "row_l1": "35/2", "values": ["-1/2", "-1/2", "-1/2", "-1/2", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-5/4", "-5/4", "-7/2", "1/4", "1/4"]}, {"R": 20, "diagonal": "-7/2", "far_transition": "0", "nonzero": 33, "row_l1": "35/2", "values": ["-1/2", "-1/2", "-1/2", "-1/2", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-1/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-3/4", "-5/4", "-5/4", "-7/2", "1/4", "1/4"]}], "scope": "Exact second-order Q4 charge-block row after vacuum subtraction; no microscopic finite-lambda test"}, "neutral_polynomial_dispersion.py": {"eta": 1.7916321060814273e-05, "kappa": 0.00019110742464868558, "powers": {"global_tail": "37", "leading": "15", "orientation_correction": "16", "source_error": "43/2"}, "rows": [{"dispersion_ratio": 0.3689722186813028, "lam": "1e-2", "n": [1, 0], "q_over_lambda": 0.6270644019141304, "relative_error": 0.6310277813186972}, {"dispersion_ratio": 0.999989236818899, "lam": "1e-2", "n": [1, 1], "q_over_lambda": 0.8868029816683366, "relative_error": 1.0763181101028178e-05}, {"dispersion_ratio": 0.4878314957292589, "lam": "1e-2", "n": [2, 1], "q_over_lambda": 1.4021586289502448, "relative_error": 0.5121685042707411}, {"dispersion_ratio": 0.9894736308016583, "lam": "1e-4", "n": [1, 0], "q_over_lambda": 0.06283172740834105, "relative_error": 0.010526369198341717}, {"dispersion_ratio": 1.0000000002212155, "lam": "1e-4", "n": [1, 1], "q_over_lambda": 0.08885748104820523, "relative_error": 2.212155801022446e-10}, {"dispersion_ratio": 0.9810692993805726, "lam": "1e-4", "n": [2, 1], "q_over_lambda": 0.14049601362878728, "relative_error": 0.01893070061942738}, {"dispersion_ratio": 0.9999989472421972, "lam": "1e-8", "n": [1, 0], "q_over_lambda": 0.0006283185307179586, "relative_error": 1.0527578027793545e-06}, {"dispersion_ratio": 1.0, "lam": "1e-8", "n": [1, 1], "q_over_lambda": 0.0008885765876316732, "relative_error": 2.3437368405274652e-18}, {"dispersion_ratio": 0.999998105035955, "lam": "1e-8", "n": [2, 1], "q_over_lambda": 0.0014049629462081453, "relative_error": 1.8949640449879115e-06}], "scope": "Leading native two-orientation coefficient control; analytic proof supplies microscopic transfer"}}, "scope": "Analytic selected-fibre microscopic transfer; numerical controls of connected coefficients, not full-grid diagonalization", "status": "conditional-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; finite controls do not themselves prove the separate analytic microscopic-pole theorems or empirical identification.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_polynomial_grid_pole-sb2ika1x elapsed_seconds= 0.21179491700604558
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/native_large_feature_microscopic_window.py
+runner_sha256: 9c7afbc4211a7ea4dab26cd4d5c8359cb99f70f687f62364dc96149f44912505
+input_fingerprint_sha256: 988888c92161c56ae009bbaf807f8aa14ac2dc4a1f574c624a3e0c0d1461bba5
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+Fresh execution evidence directory: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_large_feature_microscopic_window-bvn6v2ai
+[PASS] P9777:C001
+{"status": "bounded-support", "physical_bit_controls": {"physical_qubits": 128, "backgrounds": 128, "seed_and_symmetry_checks": 384, "disjoint_seed_residual_configurations": 3200, "scope": "Exact physical-bit N4 K1/plane/source covariance and disjoint short-interval background supports; not128-qubit diagonalization or a finite-lambda full-H spectral test"}, "scope": "Exact symmetry/orbit controls supporting analytic uniform local bounds and spectral-window inequality; no finite-lambda full-H spectrum or empirical data"}
+FRESH_RESULT /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_large_feature_microscopic_window-bvn6v2ai/outputs/native_large_feature_microscopic_window/result.json sha256=968fa619b9904a4533448434b5f20f1009bd5e6e76fb987e56bcab3730e6077f
+{"physical_bit_controls": {"backgrounds": 128, "disjoint_seed_residual_configurations": 3200, "physical_qubits": 128, "scope": "Exact physical-bit N4 K1/plane/source covariance and disjoint short-interval background supports; not128-qubit diagonalization or a finite-lambda full-H spectral test", "seed_and_symmetry_checks": 384}, "scope": "Exact symmetry/orbit controls supporting analytic uniform local bounds and spectral-window inequality; no finite-lambda full-H spectrum or empirical data", "status": "bounded-support"}
+per_element: original and added finite coefficient, identity and residual predicates execute; frozen coefficient tables are read-only provenance inputs.
+per_site: supplied spin geometries, projected column models and artificial matrix controls remain distinct; no full-spin diagonalization is inferred.
+per_mode: only declared finite momenta, cutoffs, source channels and symmetry sectors are tested; no untested continuum or pole dominance follows.
+per_block: TOTAL counts distinct completed primary assertion or child control groups, not loop iterations; successful child groups require every child assertion to pass; imported helper assertions are otherwise uncounted.
+lattice_wide: analytical arguments retain their stated finite-size, state, fixed-order and outgoing-continuation hypotheses; no microscopic pole, universal force or empirical identification is established.
+Evidence preserved: /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native_large_feature_microscopic_window-bvn6v2ai elapsed_seconds= 0.13653279095888138
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

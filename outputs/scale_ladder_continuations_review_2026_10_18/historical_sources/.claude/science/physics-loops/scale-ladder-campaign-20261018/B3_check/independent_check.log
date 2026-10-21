@@ -1,0 +1,36 @@
+n=1: E#=1.9982 vs 2.0000, P(L>=n)=8.01e-01
+n=2: E#=1.9943 vs 2.0000, P(L>=n)=5.97e-01
+n=3: E#=1.4944 vs 1.5000, P(L>=n)=4.24e-01
+n=4: E#=0.8286 vs 0.8333, P(L>=n)=2.59e-01
+n=5: E#=0.3975 vs 0.3944, P(L>=n)=1.41e-01
+n=6: E#=0.1557 vs 0.1548, P(L>=n)=6.29e-02
+n=7: E#=0.0548 vs 0.0539, P(L>=n)=2.42e-02
+n=8: E#=0.0170 vs 0.0163, P(L>=n)=7.98e-03
+n=9: E#=0.0045 vs 0.0045, P(L>=n)=2.18e-03
+PASS 1a Z^2: E[#decreasing paths of length n] = c_n/(n+1)! (|z|<4), n=1..9
+PASS 1b Z^2: P(L>=n) <= c_n/(n+1)!
+PASS 2 Prop 4: P(T_v0>...>T_v4) = prod lam_k/sum_{j<=k} lam_j and <= bound  | emp 0.00493 exact 0.00481; (rho^n)/(n+1)! = 10.8000 (note uses rho^(n+1), looser)
+PASS 3 [race(3,1,2)] X_x invariant under resampling outside K_x (12 full recomputes)
+PASS 3 [race(3,1,2)] X_x invariant under resampling outside B(x, L_x+1)
+PASS 3 [race(3,1,2)] control: perturbing inside K_x changes X_x sometimes  | 5/12
+PASS 3 [race-ferro(20,1,1)] X_x invariant under resampling outside K_x (12 full recomputes)
+PASS 3 [race-ferro(20,1,1)] X_x invariant under resampling outside B(x, L_x+1)
+PASS 3 [race-ferro(20,1,1)] control: perturbing inside K_x changes X_x sometimes  | 10/12
+PASS 3 [adversarial] X_x invariant under resampling outside K_x (12 full recomputes)
+PASS 3 [adversarial] X_x invariant under resampling outside B(x, L_x+1)
+PASS 3 [adversarial] control: perturbing inside K_x changes X_x sometimes  | 6/12
+[race-ferro(20,1,1)] Cov(1{X=0}_0, 1{X=0}_d): 0:+1.39e-01 1:+5.78e-02 2:+1.72e-02 3:+3.76e-03 4:+8.02e-04 5:+8.90e-05 6:-1.39e-04 7:-8.04e-05 8:+1.16e-04
+[adversarial] Cov(1{X=0}_0, 1{X=0}_d): 0:+1.11e-01 1:+1.75e-02 2:+2.26e-03 3:+1.61e-04 4:-4.73e-06 5:-5.30e-05 6:-9.94e-05 7:+1.06e-04 8:+3.14e-04
+two-copy P(K_0 meets K'_d): 1:1.00e+00 2:1.00e+00 3:8.19e-01 4:5.35e-01 5:2.90e-01 6:1.29e-01 7:5.13e-02 8:1.97e-02 9:4.00e-03 10:6.67e-04 11:0.00e+00
+PASS 4 |Cov(1{X=0}_0,1{X=0}_d)| <= (1/2) P(K_0 meets K'_d) (+tol), both rules, d=1..11
+analytic (osc=1, single sites): d: 0.5*Gamma_crude(d), 0.5*2*ball-form
+  d=10: two-copy 3.44e+02  ball 6.25e+00
+  d=15: two-copy 5.29e+01  ball 2.33e+00
+  d=20: two-copy 2.19e+00  ball 6.46e-01
+  d=22: two-copy 4.44e-01  ball 2.94e-01
+  d=25: two-copy 2.98e-02  ball 4.70e-02
+  d=30: two-copy 1.59e-04  ball 5.60e-03
+  d=40: two-copy 4.66e-10  ball 9.41e-06
+PASS 5 identity sum_{j+j'=N} 1/((j+1)!(j'+1)!) = (2^{N+2}-2)/(N+2)!
+PASS 5 tail estimate sum_{N>=d-2} 10^N/(N+2)! <= 10^{d-2}/d! (d+1)/(d-9), d>=10
+TOTAL 15/15 PASS (seed 7)

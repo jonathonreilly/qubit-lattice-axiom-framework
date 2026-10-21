@@ -1,0 +1,31 @@
+[PASS] P1a own SAW enumeration c_0..c_8 equals OEIS A001412  :: [1, 6, 30, 150, 726, 3534, 16926, 81390, 387966]
+   own rigorous chi bound (exact c to 15): 4027.7; last-term 4.07e-171
+[PASS] P1b Lemma 0 single-site chi bound finite and <= 4069 (draft value 4068.7)  :: 4027.7
+   chi bound with crude c_n<=6*5^(n-1): 4364.8
+   eps=0.1: m(exact c)=13, m(crude)=13, k_m(crude m)=24857, rate n/1.99e+07
+   eps=0.05: m(exact c)=13, m(crude)=14, k_m(crude m)=30913, rate n/9.89e+07
+   eps=0.01: m(exact c)=15, m(crude)=15, k_m(crude m)=37881, rate n/3.03e+09
+[PASS] P1c Theorem B example: m=14 valid at eps=0.05 and k_14=30913  :: c_14/15! = 0.003417; note exact c gives m=13 (0.01083)
+[PASS] P1d Theorem B final constant combination 2e^{-ne^2/2k}+e^{-ne^2/8k} <= 3e^{-ne^2/8k}
+[PASS] P1e Theorem C ratio lemma: |a/b - r/q| < eps on the good event (random search)  :: max ratio 0.889
+   ferro: chi_hat=sum_(|z|<=6)|C| = 1.692; tau_hat(3) = 0.7443; p(1-p)=0.1389
+   seq A n=    24: mean 0.17125 (z +0.78)  n Var F_n = 0.3312 +- 0.0234
+   seq A n=   216: mean 0.16692 (z +0.09)  n Var F_n = 0.6522 +- 0.0462
+   seq A n=  1728: mean 0.16808 (z +1.08)  n Var F_n = 1.1951 +- 0.0846
+   seq A n= 13824: mean 0.16638 (z -0.54)  n Var F_n = 1.5807 +- 0.1119
+   seq B n=     8: mean 0.16937 (z +0.40)  n Var F_n = 0.1477 +- 0.0105
+   seq B n=    64: mean 0.16625 (z -0.17)  n Var F_n = 0.1527 +- 0.0108
+   seq B n=   512: mean 0.16516 (z -1.68)  n Var F_n = 0.1638 +- 0.0116
+   seq C n=    24: mean 0.16917 (z +0.63)  n Var F_n = 0.1494 +- 0.0106
+   seq C n=   216: mean 0.16634 (z -0.25)  n Var F_n = 0.1408 +- 0.0100
+   seq C n=  1728: mean 0.16666 (z -0.02)  n Var F_n = 0.2803 +- 0.0198
+   seq C n= 13824: mean 0.16638 (z -0.54)  n Var F_n = 1.5807 +- 0.1119
+[PASS] M1 E F_n = p and n Var F_n <= chi_hat (+4SE) on 3 sequences; separated seq gives p(1-p)+tau(3)
+   n Var F_n vs geometry prediction: A24: 0.331 vs 0.296; A216: 0.652 vs 0.630; A1728: 1.195 vs 1.246; A13824: 1.581 vs 1.682; B8: 0.148 vs 0.146; B64: 0.153 vs 0.153; B512: 0.164 vs 0.160; C24: 0.149 vs 0.141; C216: 0.141 vs 0.161; C1728: 0.280 vs 0.333; C13824: 1.581 vs 1.682
+[PASS] M2 n Var F_n equals the variance identity sum_z C(z)A_n(z)/n for all 3 sequences (4SE+0.03)
+   pooled: P(X0=0|X_+x=0) = 0.5122 (rule weight 0.8);  formation-time context: 0.8009
+   across-torus SD of conditional freq at n=N/8,N/2,N: Record ctx [0.0483 0.0229 0.0151], formation ctx [0.1788 0.0792 0.0593]
+[PASS] M3 Record-context conditional freq converges to a non-0.8 value (|z vs 0.8| > 20)  :: 0.5115 +- 0.0008
+[PASS] M4 formation-time-context conditional freq -> rule weight 0.8 (|z|<4)  :: 0.8004 +- 0.0030
+[PASS] M5 conditional-frequency SD shrinks ~ n^{-1/2} (N/8 -> N: ratio near sqrt 8=2.83, within [2,3.8])  :: Record ctx ratio 3.20, formation ctx ratio 3.02
+TOTAL PASS=10 FAIL=0 (38s, R=400, L=24)

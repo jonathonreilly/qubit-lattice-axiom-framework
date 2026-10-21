@@ -90,6 +90,7 @@ top-level field remains present as `null`.
   "negative_assertion_classes": null,
   "decoration_parent_claim_id": null,
   "open_dependency_paths": null,
+  "premises_used": null,
   "auditor_confidence": null,
   "notes_for_re_audit_if_any": null,
   "no_go_discipline": null
@@ -473,11 +474,22 @@ Return a single JSON object with exactly these fields. No other prose.
   "negative_assertion_classes": ["<REQUIRED, possibly empty. After reading the full note, list every no-go-discipline policy class the artifact ASSERTS: no_go_result, stretch_attempt_negative, bounded_with_named_walls, derived_no_go_boundary, conditional_wall_rationale. This is your semantic judgment and is independent of any mechanical trigger; honest coverage routing (this note does not derive X - the parent row carries it) is not an assertion and declares nothing. A non-empty declaration requires the full no_go_discipline packet for an audited_clean verdict, any verdict on a no_go row, and forensic runs; on a development-tier non-clean verdict the declaration stands with the rationale prose.>"],
   "decoration_parent_claim_id": "<claim_id of the upstream parent if verdict = audited_decoration, else null>",
   "open_dependency_paths": ["<note path of any cited authority that is itself support / open / conditional>"],
+  "premises_used": ["<REQUIRED, possibly empty. Every premise unit, from the list after this block, whose content the audited argument relies on>"],
   "auditor_confidence": "<low | medium | high>",
   "notes_for_re_audit_if_any": "<for audited_conditional and audited_renaming, prefix exactly one repair class from missing_dependency_edge, dependency_not_retained, missing_bridge_theorem, scope_too_broad, runner_artifact_issue, compute_required, other, then name the cheapest next repair action; if that action is dependent-side (for example narrowing downstream citing sentences), it must also name adding a dated downstream-hygiene line to this note's own boundary, because only this note's own hash drift (or a dispatcher sidecar) re-enters the row into the audit queue; otherwise short note flagging anything a second auditor should re-check, or empty>",
   "no_go_discipline": null
 }
 ```
+
+`premises_used` names the axiom and approved-primitive units that the audited
+argument itself relies on: every unit whose content a step of the argument
+uses, restates, or applies. Each unit's text is in the premise context of
+section 4. When you are unsure whether a step uses a unit, include it. Return
+an empty list only when no step uses any axiom or approved primitive. This
+declaration is informational while scoped fingerprints are unactivated;
+current judgments retain whole-premise binding. Valid units:
+
+{{PREMISE_UNITS}}
 
 Use `null` when the structured packet is not required and you do not choose to
 supply it. Otherwise replace it with:
@@ -884,7 +896,12 @@ caught downstream.
 
 - The wrapping script substitutes the variables, sends the prompt to the
   current best full Codex GPT model in a fresh session, captures the JSON
-  response, and validates it against the schema.
+  response, and validates it against the schema. The proposed Claude backend
+  refuses activation and does not provide an alternative authorized seat.
+- The section 5 list of valid premise units is rendered from
+  `axiom_premise_nodes.json` and `premise_clause_map.json`. A validated
+  `premises_used` declaration is informational until separately governed
+  activation. Current judgments retain v2 whole-premise binding.
 - If JSON parsing fails, required fields are missing, or the verdict/type
   tuple is semantically incompatible, the delivery is rejected before apply.
   The top-level campaign records the exact validator error, quarantines a row

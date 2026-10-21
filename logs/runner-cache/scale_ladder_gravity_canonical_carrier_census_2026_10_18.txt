@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_canonical_carrier_census_2026_10_18.py
+runner_sha256: c59ca74b54274e95c74ced045ea12c45b407dc2172f2bf44d848c603c34bf752
+input_fingerprint_sha256: 340ca98903d535c9b4f436b075bab9de0d5670c7d6fa69817d2636bca36a30a6
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 129.31
+status: ok
+----- stdout -----
+[PASS] K1 finite supplied-model control; fixture and predicate specified in source  96 simplices, 8 vertex types, 72 edges, volume 1.000000
+[PASS] K2 finite supplied-model control; fixture and predicate specified in source  {}: hidden 1, partners 0, B4 True; {1}: hidden 0, partners 0, B4 True; {2}: hidden 0, partners 2, B4 True; {3}: hidden 0, partners 0, B4 True; {4}: hidden 0, partners 2, B4 True
+[PASS] K3 finite supplied-model control; fixture and predicate specified in source  {4}: 1.0e-06; {2}: 2.3e-06; {1}: 3.1e-02; {3}: 5.7e-03
+[PASS] K4 finite supplied-model control; fixture and predicate specified in source  -2.0000/-1.0000; -2.0000/-1.0000; -2.0000/-1.0000; -2.0000/-1.0000
+[PASS] K5 finite supplied-model control; fixture and predicate specified in source  min/max eigenvalue -2.1e-16
+[PASS] K6 finite supplied-model control; fixture and predicate specified in source  link-midpoint carrier: zoom 2, 16 of 16 residues; D4 cone: zoom 2, 8 of 16
+[PASS] K7 finite supplied-model control; fixture and predicate specified in source  left/right residuals [(np.float64(2.620034145700337e-15), np.float64(1.9627729067540886e-15)), (np.float64(1.931840539982457e-15), np.float64(2.0998145099841503e-15)), (np.float64(1.4783329199236118e-15), np.float64(9.937397691713664e-16))]; (all, uniform) [(np.float64(1.2123842142217598e-05), np.float64(1.94075841541038e-05)), (np.float64(1.5107989446192245e-06), np.float64(2.4221256111284914e-06)), (np.float64(1.885459507662206e-07), np.float64(3.024704203290727e-07))]
+per_element: explicit simplex geometry and local matrix entries are computed on the supplied finite carrier; no microscopic interaction supplier is derived
+per_site: listed vertex types and periodic-cell incidences are included; arbitrary lattice defects and unspecified site models are untested
+per_mode: only the literal momentum fixtures, thresholds and finite scans above are tested; no complete zero-set or spectrum census is certified
+per_block: the displayed cell operators and source or covariance contractions are evaluated; numerical pass labels do not supply an interacting physical theory
+lattice_wide: finite periodic-symbol diagnostics and explicitly stated constructive identities only; thermodynamic limits, all-volume OS positivity and physical reconstruction remain deferred
+
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

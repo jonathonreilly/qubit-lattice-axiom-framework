@@ -1,0 +1,21 @@
+{
+  "kind": "metadata_closure_verification_not_independent_science_check",
+  "validated_at_utc": "2026-10-17T23:39:22.683011+00:00",
+  "source_identity_count": 43,
+  "actual_scientific_run_count": 1,
+  "preserved_scientific_failure_count": 0,
+  "gate_comparisons_rechecked_from_saved_rationals": 50,
+  "source_capture_and_stream_pins_verified": true,
+  "scientific_program_imported_or_rerun_by_this_validator": false,
+  "independent_mathematical_review": null,
+  "proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_finite_point_candidate/PROPOSAL.md",
+    "bytes": 28224,
+    "sha256": "243c172226f2a509ce9ba11686763ebc2e754f52a8b5a4e98d6ab4424c0ca20d"
+  },
+  "calculation_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_finite_point_candidate/runs/calculation_001/EXECUTION.json",
+    "bytes": 3801,
+    "sha256": "c970c217b29b5aca6eab7925691568430a21927260925f89dd0f93630b1affa0"
+  }
+}

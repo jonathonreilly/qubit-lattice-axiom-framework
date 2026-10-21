@@ -25,13 +25,13 @@
   "deps": [
     "real_endpoint_autonomous_output_bounded_theorem_note_2026-10-17"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.7,
+  "load_bearing_score": 5.959,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -52,6 +52,6 @@
   },
   "runner_path": "scripts/control_output_family_2026_10_17.py",
   "title": "Weighted finite-output transfer with exact internal dynamics",
-  "transitive_descendants": 12,
+  "transitive_descendants": 21,
   "verdict_rationale": null
 }

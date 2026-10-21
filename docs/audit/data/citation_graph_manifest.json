@@ -1,5 +1,5 @@
 {
- "edge_count": 16355,
+ "edge_count": 16358,
  "node_count": 7408,
  "nodes": {
   "3d_correction_master_note": {
@@ -19735,8 +19735,8 @@
    "out_degree": 3
   },
   "review_evidence.dm-canonical-failures-2026-10-21.no_go_discipline_checklist": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "9bdf3bca339e",
+   "out_degree": 3
   },
   "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17": {
    "deps_hash": "b4b201521fbe",

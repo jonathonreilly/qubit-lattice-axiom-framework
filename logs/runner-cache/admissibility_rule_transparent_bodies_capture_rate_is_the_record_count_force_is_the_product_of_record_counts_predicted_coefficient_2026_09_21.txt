@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_transparent_bodies_capture_rate_is_the_record_count_force_is_the_product_of_record_counts_predicted_coefficient_2026_09_21.py
-runner_sha256: 6d64968568843d7b6316de3dbec195e2253702774b5c028d5110267de253a2d0
-input_fingerprint_sha256: 136ed40c0261caee94e5496a8cedd02d8ace608b6d259a19f9f4bf00e323d073
+runner_sha256: 1fc2485a8f83ba6b798cec021fc1a1007ff316cacc05d6d27cc9d14b32c60331
+input_fingerprint_sha256: 2e1025d76ba4132d4341d56076f92a3107fb84f8aeaf1fcedee155aa8d10fddb
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -27,7 +27,7 @@ per_mode: not applicable — this note checks kinetic surface expectations and c
 per_block: executed — the coefficient (4 pi G)^2 = 27 rho^2/(16 (1 - rho)^2) at three densities
 lattice_wide: T1 and T2 are exact expectations in the uniform product state, which neglects the depletion a capturing body causes; T3 is coefficient algebra conditional on isotropic inflow, first-harmonic wind and balanced capture faces; the capture rates and the forces of transparent bodies are executed, not proved
 PASS: G1 the five N5 resolution lines are printed
-scope: transparent bodies in the inertial record gas — kinetic capture rate (sqrt 3/2) rho per site, capture by exposed faces, and the coefficient G = 3 sqrt3 rho/(16 pi (1 - rho)) of the force N1 N2/r^2; exact expectations in the product state
+scope: transparent bodies in the inertial record gas — kinetic capture rate (sqrt 3/2) rho per site, capture by exposed faces, and the coefficient G = 3 sqrt3 rho/(16 pi (1 - rho)) of the force N1 N2/r^2 conditional on isotropic inflow, first harmonic and balanced geometry; exact capture expectations in the product state, not all-direction gas dynamics
 TOTAL: PASS=12 FAIL=0
 
 ----- stderr -----

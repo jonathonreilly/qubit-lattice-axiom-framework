@@ -445,6 +445,116 @@
       "source_sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
       "timeout_sec": 300,
       "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
+    },
+    "scripts/alternative_coupled_field_probe.py": {
+      "timeout_sec": 300,
+      "source_sha256": "9d9a0cb2d1eb4a3fd06b26e7e7d04861b86c27f70436414238228b6ac9472ee8",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/audit_companion_fs_rotation_exchange_discrete_insufficiency_2026_05_28.py": {
+      "timeout_sec": 300,
+      "source_sha256": "cfe698b2f0529daefd983d92b685de39168877e858f5fc5d26f38255682642b9",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/audit_companion_fs_rotation_exchange_record_axiom_invariance_2026_06_04.py": {
+      "timeout_sec": 300,
+      "source_sha256": "5bc03b46025ef5e22857d0f215108eafc6b4e586a875c610f87ee5b095def19a",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/axiom_first_sm_anomaly_cancellation_complete_check.py": {
+      "timeout_sec": 300,
+      "source_sha256": "7044360ef969178da85e53cdab65e331ca921576c6deadf5f3237454fefd54a0",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/axiom_first_stefan_boltzmann_check.py": {
+      "timeout_sec": 300,
+      "source_sha256": "8968d1247ac56cdd5bc4c45471a6244c1fce4d509285ca9fa5cf8cea3a25f022",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/cl3_closure_c_l1a_2026_05_10_cL1a.py": {
+      "timeout_sec": 300,
+      "source_sha256": "bf7e2f7656d4aa085def623002f473bc240ba2fe59ac142b8beecf78ca118deb",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/cl3_closure_t1_z10_z20_2026_05_10_t1z10z20.py": {
+      "timeout_sec": 300,
+      "source_sha256": "15ed0a72a2a8fb5bec7c426ec878999716c6a37f2c17bf230c201c8b854d9ae8",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/cpt_particle_antiparticle_mass_equality_check.py": {
+      "timeout_sec": 300,
+      "source_sha256": "5a3b1aa4bb01ffbf567083e9640114c1e0db6e11186a348388eee0a3f11ff33f",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/electrostatics_card.py": {
+      "timeout_sec": 300,
+      "source_sha256": "77d17947b5cb3c7929e84403cc84ccfaa9ff3b6b99c05bd6c6aabb864fd1735c",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/eta_spin2_affine_model_2026_09_09.py": {
+      "timeout_sec": 300,
+      "source_sha256": "0789cfa7c64d91a7fcc1ecd22bf98f61f97edcb942e7692f3106c9f948a351d4",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/eta_spin2_finite_checks_2026_09_09.py": {
+      "timeout_sec": 300,
+      "source_sha256": "448eedc3cfc5804caa91e2928f1e8003e9303d4167414f1f148158faae33b135",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/eta_spin2_joint_model_2026_09_09.py": {
+      "timeout_sec": 300,
+      "source_sha256": "f6d0bfb9462d02230dc339d933f5fdf248d0a0c0cfa8f56a3fbc2500a6e00542",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/eta_spin2_native_model_2026_09_09.py": {
+      "timeout_sec": 300,
+      "source_sha256": "3753f33054d72c2724b4ac6ff6473acff44741f42f7a941eeec101bc78818a10",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/eta_spin2_nondisturbance_model_2026_09_09.py": {
+      "timeout_sec": 300,
+      "source_sha256": "106766acd78ddbfe0cfb239370b6f82a27e142adb8877e8376a98f66c768c96c",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/eta_spin2_quadrupole_model_2026_09_09.py": {
+      "timeout_sec": 300,
+      "source_sha256": "51d0bb9794c5993bc3c955fd1b7ba4d8bede0ec3b2a79e756c50373fcffcd44f",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/frontier_beyond_lattice_qcd.py": {
+      "timeout_sec": 300,
+      "source_sha256": "213fb7242ae8d4ee2a1c2c878b58cf5b296932903c90f9e7313c0458825249ab",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/frontier_dark_energy_eos_retained_corollary.py": {
+      "timeout_sec": 300,
+      "source_sha256": "ccfd579b17ee2710eb27f29334e62061ef179bbc5556b3fbb09b4abf3753ee5d",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/frontier_dt1_time_dimension_proof_walk_downstream_fix.py": {
+      "timeout_sec": 300,
+      "source_sha256": "aee29161e362c9984bef75640622e519deed2e03e18e8e8ca6db96dacfca8225",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/frontier_dt1_time_dimension_proof_walk_lattice_independence.py": {
+      "timeout_sec": 300,
+      "source_sha256": "78d091aed423c666a17a6f9ba8361bc1fd3d46e658cb5b371f49706c577768a7",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/frontier_emergent_lorentz_invariance.py": {
+      "timeout_sec": 300,
+      "source_sha256": "56288145915d4c69124d86ceda146404498c2459462ee83b574f95fb1d040d79",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/minimal_source_driven_field_probe.py": {
+      "timeout_sec": 300,
+      "source_sha256": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/two_body_momentum_harness.py": {
+      "timeout_sec": 300,
+      "source_sha256": "7cd4c698f5873b49f9a16183e78d57a0e63f83f90fa8a3fd537d4bc9ef486c24",
+      "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
     }
   }
 }

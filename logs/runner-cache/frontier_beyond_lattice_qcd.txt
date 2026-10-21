@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beyond_lattice_qcd.py
-runner_sha256: 9753c95dd32859f334d4f049f619fc87c3cc33de0684c092830d600dc87c21ec
-timeout_sec: 120
+runner_sha256: 213fb7242ae8d4ee2a1c2c878b58cf5b296932903c90f9e7313c0458825249ab
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 4.91
+elapsed_sec: 4.90
 status: ok
 ----- stdout -----
 ========================================================================
@@ -25,33 +25,33 @@ Grid: 32^3,  k=6.0,  mass_strength=8.0
 Source: (1, 16, 16),  Mass: (16, 20, 16)
 
   Case A (free, f=0):        0.2s
-  Case C (with gravity):     2.1s
-  Case D (self-consistent):  2.1s
+  Case C (with gravity):     2.0s
+  Case D (one feedback step):  2.4s
 
   Measure 1: Y-centroid at detector plane (deflection)
     Free:            15.9925
     With gravity:    19.9475  (shift = +3.9550)
-    Self-consistent: 20.0509  (shift = +4.0584)
+    One feedback step: 20.0509  (shift = +4.0584)
 
-  Measure 2: Profile shape difference (centroid-aligned)
-    |profile_grav - profile_free|_2 = 0.352322
-    |profile_sc   - profile_free|_2 = 0.326312
+  Measure 2: Profile shape difference (centroid-shifted; finite-window interpolation)
+    |profile_grav - profile_free|_2 = 0.149715
+    |profile_sc   - profile_free|_2 = 0.113870
     -> Gravity changes the SHAPE, not just the position.
-    -> The gravitational field modifies quantum coherence.
+    -> This density diagnostic does not measure quantum coherence.
 
   Measure 3: Y-spread (RMS width) at detector
     Free:            4.5161
     With gravity:    2.8464  (change = -1.6697)
-    Self-consistent: 3.3970  (change = -1.1191)
+    One feedback step: 3.3970  (change = -1.1191)
 
-  Measure 4: Fringe visibility (central region)
+  Measure 4: Density contrast (central region)
     Free:            0.290439
     With gravity:    0.979052  (change = +0.688613)
-    Self-consistent: 0.954936  (change = +0.664497)
+    One feedback step: 0.954936  (change = +0.664497)
 
   SUMMARY:
   [PASS] Gravity modifies the propagator's quantum structure.
-         The coupled field changes deflection, coherence, and spread.
+         At least one centroid, shifted-profile, or spread threshold is exceeded.
          Physical graph-gravity identification remains a separate bridge.
 
 ========================================================================
@@ -59,7 +59,7 @@ RESULT 2: SORKIN PAIRWISE-INTERFERENCE DIAGNOSTIC (I_3 = 0)
 ========================================================================
 
 Reference contrast: the quadratic probability readout is an input.
-Runner surface: linear path-sum should give vanishing Sorkin I_3.
+Runner surface: common linear transfer, additive slit masks, quadratic readout.
 Test: Sorkin three-slit parameter I_3 vanishes numerically.
 
   Three-slit geometry: 20 x 21 lattice, k = 4.0
@@ -102,9 +102,9 @@ FINAL ASSESSMENT
 Result 1 (Gravity-QM inseparability):
   The gravitational field changes quantum propagation:
     - Centroid shift:     +3.9550
-    - Shape difference:   0.352322
+    - Shape difference:   0.149715
     - Spread change:      -1.6697
-    - Visibility change:  +0.688613
+    - Density contrast change:  +0.688613
   This is a runner diagnostic on the coupled graph-field surface.
   A framework-vs-lattice-QCD theorem is not claimed here.
 
@@ -120,7 +120,7 @@ Concrete answer to 'how is this different from lattice QCD?':
   2. The linear path-sum satisfies the Sorkin I_3 diagnostic.
      A full probability/readout theorem needs a separate bridge.
 
-Total runtime: 4.4s
+Total runtime: 4.6s
 
 ----- stderr -----
 

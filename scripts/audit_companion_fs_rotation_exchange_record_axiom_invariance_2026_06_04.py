@@ -1,69 +1,18 @@
 #!/usr/bin/env python3
-"""Audit-companion runner for the FS rotation-exchange discrete-insufficiency
-narrow no-go parent note
-`FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md`
-recording Record-axiom invariance after the 2026-06-04 framework axiom
-adoption.
+"""Finite matrix checks plus documentary guards for the corrected FS note.
 
-Companion source note:
-  docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
-
-Parent ledger row:
-  `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28`.
-
-Companion role:
-  - Meta audit-companion evidence only.
-  - Not a theorem claim or status promotion (the audit lane sets
-    claim_type and audit_status independently).
-  - Provides audit-friendly evidence that the parent's load-bearing
-    finite-dimensional facts (F1)-(F5) are independent of the Record
-    axiom adopted in `MINIMAL_AXIOMS_2026-06-04.md`. This does not
-    re-apply any prior audit treatment; it gives the audit lane a
-    machine-checkable basis for deciding whether the arithmetic needs
-    fresh review after the premise-hash change.
-
-The runner verifies the load-bearing facts block-by-block under
-"Record axiom is asserted" and "Record axiom is not asserted" outer
-scopes, confirms identical symbolic outputs in both scopes, and
-performs a static-source scan of the parent note's load-bearing
-sections to confirm zero Record-axiom usage in the auditable core.
-
-Every load-bearing check uses only:
-  (i)   the one-qubit Quantum local algebra M_2(C) (Pauli matrices,
-        sigma_+, sigma_-, sigma_3, sigma_3/2);
-  (ii)  the Lattice two-site tensor structure on C^2 (x) C^2 ~= C^4;
-  (iii) standard finite-dimensional complex linear algebra and exact
-        matrix exponentials over Q[i, sqrt(pi)] (via sympy);
-  (iv)  the Jordan-Wigner construction as a representation tool only.
-
-No Record-axiom content (additive scalar record-readout functional
-I(.)) enters any block.
-
-Block plan:
-  Block 1  : On-site U_2pi = exp(2 pi i sigma_3/2) = -I_2, U_4pi = +I_2.
-  Block 2  : Two-site lifts U_2pi (x) I = I (x) U_2pi = -I_4.
-  Block 3  : Tensor swap P, P^2 = I_4, spectrum {+1 (3), -1 (1)}.
-  Block 4  : On-site 2pi acts as -1 on BOTH symmetric and antisymmetric
-             sectors.
-  Block 5  : Algebra dim <U_2pi(x)I, I(x)U_2pi> = 1 (scalars only); P
-             not in it.
-  Block 6  : Bare ladder cross-site commutators: bosonic ungraded.
-  Block 7  : On-site nilpotency (sigma_+)^2 = 0.
-  Block 8  : Jordan-Wigner dressed CAR: fermionic graded.
-  Block 9  : Equal full algebra dim: <hcb gens> = <JW gens> = M_4(C),
-             dim 16.
-  Block 10 : Static-source scan of parent note: zero Record-axiom tokens.
-  Block 11 : Record-axiom counterfactual: identical symbolic outputs in
-             both "asserted" / "not asserted" outer scopes.
-  Block 12 : Quantum/Lattice content preservation across the historical
-             2026-05-20 and current 2026-06-04 minimal-axioms memos.
-  Block 13 : Route-wall preservation: parent's N1 walls R1-R6 remain
-             valid.
-
-The exact PASS/FAIL count is printed at runtime.
+Blocks1–9 and13 test supplied two-qubit matrices. Block10 checks current
+source scope text; tokens cannot establish premise independence. Block11
+repeats the same calculation: labels are not distinct physical models and
+this is not independent evidence. Block12 inspects historical May20/June4
+memos, not current premise authority. No mathematical threshold is relaxed.
+No broad topology, spin-statistics route or audit-status verdict is supplied.
 """
 
 from __future__ import annotations
+
+# Bind actual documentary reads/existence checks to cache identity.
+AUDIT_INPUT_PATHS = ['docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md', 'docs/MINIMAL_AXIOMS_2026-05-20.md', 'docs/MINIMAL_AXIOMS_2026-06-04.md']
 
 import sys
 from pathlib import Path
@@ -411,53 +360,20 @@ def block10(parent_note_path: Path) -> None:
 
     text = parent_note_path.read_text()
 
-    # Identify load-bearing sections: §1 Claim scope (F1-F5) and §5 Proof.
-    start1 = text.find("## 1. Claim scope")
-    end1 = text.find("## 2. Why this note exists")
-    start5 = text.find("## 5. Proof")
-    end5 = text.find("## 5.1 No-Go Discipline Gate")
-    record("scope_section_1_found", start1 >= 0 and end1 > start1,
-           f"§1 indices [{start1}, {end1}]")
-    record("proof_section_5_found", start5 >= 0 and end5 > start5,
-           f"§5 indices [{start5}, {end5}]")
-
-    sec1 = text[start1:end1] if (start1 >= 0 and end1 > start1) else ""
-    sec5 = text[start5:end5] if (start5 >= 0 and end5 > start5) else ""
-    load_bearing = sec1 + "\n" + sec5
-
-    # Tokens that would indicate Record-axiom usage
-    record_tokens = [
-        "I(R_1",
-        "I(R)",
-        "scalar record",
-        "record functional",
-        "record-readout",
-        "additive record",
-        "additive scalar record",
-        "MINIMAL_AXIOMS_2026-06-04",
-    ]
-    found = [tok for tok in record_tokens if tok in load_bearing]
-    record("zero_record_axiom_tokens_in_load_bearing_sections",
-           len(found) == 0,
-           f"matches = {found}")
-
-    # Confirm Quantum/Lattice structural tokens ARE used in the parent's
-    # load-bearing sections.
-    qlat_tokens = [
-        "one-qubit",
-        "`C^2`",
-        "Z^3",
-        "U_2pi",
-        "sigma_3",
-        "(F1)",
-        "(F4)",
-        "JW",
-        "Jordan-Wigner",
-    ]
-    found_q = [tok for tok in qlat_tokens if tok in load_bearing]
-    record("quantum_lattice_content_present_in_load_bearing_sections",
-           len(found_q) >= 4,
-           f"matches (>=4 expected): {found_q}")
+    # Documentary guards: the current finite argument has different headings.
+    # Presence checks cannot establish theorem truth or dependency independence.
+    start = text.find("## Supplied premises and exact claim")
+    end = text.find("## Related work and dependencies")
+    record("DOCUMENTARY_current_finite_sections_found", start >= 0 and end > start)
+    core = text[start:end] if start >= 0 and end > start else ""
+    required = ["representation assumption", "scalar algebra", "not canonical bosonic CCR",
+                "Jordan–Wigner", "not equivalent", "additional data"]
+    for token in required:
+        record("DOCUMENTARY_scope_" + token, token in core)
+    record_tokens = ["I(R_1", "I(R)", "record-readout", "additive scalar record"]
+    found = [tok for tok in record_tokens if tok in core]
+    record("DOCUMENTARY_no_record_functional_tokens", bool(core) and not found,
+           f"matches={found}; lexical check only, not proof of independence")
 
 
 # -----------------------------------------------------------
@@ -492,7 +408,7 @@ def _core_values():
 
 
 def block11() -> None:
-    header("BLOCK 11: Record-axiom counterfactual: identical symbolic output")
+    header("BLOCK 11: Repeated finite calculation, not independent evidence")
     log("  Re-evaluating the core under 'Record axiom asserted' and 'not")
     log("  asserted' outer scopes. The symbolic algebra makes no reference")
     log("  to a record-readout functional I(.); the outer scope is a")
@@ -504,9 +420,7 @@ def block11() -> None:
     outer_scope_labels = ("Record axiom asserted", "Record axiom not asserted")
     with_vals = _core_values()
     without_vals = _core_values()
-    record("counterfactual_scope_labels_are_noncomputational",
-           len(outer_scope_labels) == 2,
-           "scope labels do not enter _core_values()")
+    log("  Scope labels are metadata only; no PASS awarded for their count.")
 
     target_minus1 = sp.Integer(-1)
     target_plus3 = sp.Integer(3)
@@ -553,7 +467,7 @@ def block11() -> None:
 # -----------------------------------------------------------
 
 def block12(repo_root: Path) -> None:
-    header("BLOCK 12: Quantum/Lattice content preserved across memos")
+    header("BLOCK 12: DOCUMENTARY historical May20/June4 memo tokens")
     old_memo = repo_root / "docs" / "MINIMAL_AXIOMS_2026-05-20.md"
     new_memo = repo_root / "docs" / "MINIMAL_AXIOMS_2026-06-04.md"
     record("old_memo_present", old_memo.exists(), str(old_memo))
@@ -623,8 +537,8 @@ def block12(repo_root: Path) -> None:
 # -----------------------------------------------------------
 
 def block13() -> None:
-    header("BLOCK 13: Parent N1 walls R1-R6 remain valid")
-    log("  Each wall is re-checked using only the finite-dim facts above.")
+    header("BLOCK 13: Finite matrix consequences only; no route-exhaustion claim")
+    log("  These predicates check supplied matrices, not continuum or topology routes.")
     log("  No Record-axiom content used.")
 
     # R1: on-site 2pi sign cannot equal exchange sign.
@@ -645,9 +559,9 @@ def block13() -> None:
     record("R2_algebraic_generation_of_P_fails", r2_ok,
            f"on-site algebra dim = {d}; P non-scalar")
 
-    # R3/R4: continuous-rotation routes need continuous SO(3)/Poincare;
-    # the lattice retains only discrete 2O. Literature-context wall; we
-    # record the SHADOW algebraic statement: the on-site algebra is
+    # This tests powers of one specified element, not arbitrary rotations.
+    # It is not a statement about continuous or emergent symmetry.
+    # The checked algebraic statement: the on-site algebra is
     # generated by a SINGLE matrix exp value U_2pi = -I_2, not by a
     # continuous family that could realize Z_2 < pi_1(SO(3)).
     # Concretely the {U_2pi^k : k in Z} group is just {+I, -I} = Z_2 < SU(2).
@@ -655,15 +569,14 @@ def block13() -> None:
     # Set membership compares sympy matrices structurally; collapse to scalars
     scalars = {is_scalar_matrix(m) for m in sub}
     r3_ok = scalars <= {sp.Integer(1), sp.Integer(-1)}
-    record("R3_R4_only_discrete_Z2_realized_by_on_site_rotation",
+    record("powers_of_specified_2pi_element_are_scalar_signs",
            r3_ok,
            f"on-site 2pi powers realize only scalars in {scalars}")
 
-    # R5: retained Lieb-Robinson locality is UNGRADED (commuting),
-    # which is the bosonic-type signal, opposite to CAR.
+    # Bare tensor ladders commute. No Lieb-Robinson theorem is tested here.
     a0 = kron(SP, I2); a1 = kron(I2, SP)
     r5_ok = is_zero(comm(a0, a1)) and not is_zero(anticomm(a0, a1))
-    record("R5_retained_locality_is_ungraded_bosonic",
+    record("bare_tensor_ladders_commute_not_CAR",
            r5_ok,
            "[a0, a1] = 0 (commute) and {a0, a1} != 0 (NOT CAR)")
 
@@ -699,12 +612,8 @@ def main() -> int:
     log("Companion source note: docs/FS_ROTATION_EXCHANGE_DISCRETE_"
         "INSUFFICIENCY_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md")
     log("")
-    log("Goal: verify the parent's load-bearing finite-dimensional facts")
-    log("      (F1)-(F5) are invariant under the 2026-06-04 Record-axiom")
-    log("      adoption (MINIMAL_AXIOMS_2026-06-04.md).")
-    log("")
-    log("Scope: pure audit-companion evidence; no theorem claim,")
-    log("       no status promotion, no Record-axiom content asserted.")
+    log("Scope: supplied finite matrices and separately labeled documentary guards.")
+    log("No broad spin-statistics, topology, current-premise or audit-status conclusion.")
 
     block1()
     block2()
@@ -726,22 +635,9 @@ def main() -> int:
     log(f"TOTAL FAIL: {FAIL}")
     log("=" * 72)
     log("")
-    log("Companion conclusion (audit-friendly evidence only):")
-    log("  The load-bearing finite-dimensional facts (F1)-(F5) of the parent")
-    log("  no-go use ONLY Quantum + Lattice axiom content plus standard")
-    log("  finite-dimensional complex linear algebra (Pauli, tensor")
-    log("  products, Jordan-Wigner, swap, M_4(C) dimension count).")
-    log("  The Record axiom (additive scalar record-readout functional)")
-    log("  is neither used nor invoked. All symbolic outputs are identical")
-    log("  under both 'Record axiom asserted' and 'Record axiom not")
-    log("  asserted' outer scopes. The parent's N1 walls R1-R6 remain")
-    log("  valid on the verified facts alone. This runner does not")
-    log("  re-apply any prior audit treatment; it records that the")
-    log("  arithmetic checked here is unchanged by the 2026-06-04")
-    log("  axiom-set adoption.")
-    log("")
-    log("The audit lane decides whether to honor or re-test the parent")
-    log("treatment on the new minimal_axioms premise hash.")
+    log("Finite predicates and documentary checks are reported above.")
+    log("Repeated evaluations are not independent evidence; text scans are not proofs.")
+    log("No physical spin/exchange assignment or broad no-go is established.")
 
     return 1 if FAIL > 0 else 0
 

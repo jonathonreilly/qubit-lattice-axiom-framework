@@ -1,9 +1,9 @@
-# Axiom-First SM Anomaly Cancellation Complete on Cl(3)/Z³ Left-Handed Surface
+# SM anomaly consistency on a supplied matter-content surface
 
 **Date:** 2026-05-03
 **Type:** positive_theorem
-**Claim type:** synthesis-aggregator anomaly-cancellation theorem (assembles four exact gauge-anomaly trace identities plus the nonperturbative SU(2) Witten Z_2 parity into a single closure statement on the retained Cl(3)/Z³ left-handed-frame matter content)
-**Claim scope:** the four perturbative gauge-anomaly traces `(SU(3)^3, SU(2)^2 U(1)_Y, grav^2 U(1)_Y, U(1)_Y^3)` and the nonperturbative `SU(2)` Witten Z_2 parity all vanish exactly on the retained Cl(3)/Z³ left-handed-frame Standard-Model fermion content with the retained `N_c = 3` graph-first colour, retained native `SU(2)_L` gauge structure, retained three-generation structure, retained left-handed `Q_L`, `L_L` content, and retained one-generation right-handed completion (`u_R`, `d_R`, `e_R`, `nu_R`). All five cancellations are exact-Fraction or integer-parity statements; none uses an observed mass, mixing angle, or cross-section.
+**Claim type:** bounded_theorem — synthesis-aggregator anomaly-cancellation theorem (assembles five exact perturbative anomaly trace identities plus the nonperturbative SU(2) Witten Z_2 parity into a single closure statement on the supplied Cl(3)/Z³ left-handed-frame matter content)
+**Claim scope:** the five perturbative anomaly traces `(SU(3)^3, SU(2)^2 U(1)_Y, SU(3)^2 U(1)_Y, grav^2 U(1)_Y, U(1)_Y^3)` and the nonperturbative `SU(2)` Witten Z_2 parity all vanish exactly on the supplied Cl(3)/Z³ left-handed-frame Standard-Model fermion content with the supplied `N_c = 3` graph-first colour, supplied native `SU(2)_L` gauge structure, supplied three-generation structure, supplied left-handed `Q_L`, `L_L` content, and supplied one-generation right-handed completion (`u_R`, `d_R`, `e_R`, `nu_R`). These cancellations are exact-Fraction or integer-parity statements; none uses an observed mass, mixing angle, or cross-section.
 **Status:** awaiting independent audit. Under the scope-aware classification framework, ratified status is computed by the audit pipeline from audit-lane data; no author-side retained tier is asserted in source.
 **Loop:** `anomaly-cancellation-full-closure-2026-05-03`
 **Cycle:** 1 (Block 01)
@@ -13,7 +13,7 @@
 ## 0. Synthesis Statement
 
 **Theorem (SM anomaly cancellation complete on Cl(3)/Z³ LH-frame surface).**
-On the retained Cl(3)/Z³ left-handed-frame Standard-Model fermion content (one
+On the supplied Cl(3)/Z³ left-handed-frame Standard-Model fermion content (one
 generation replicated three times),
 
 | Field | `SU(3)` | `SU(2)` | colour | weak | LH count | `Y` |
@@ -43,16 +43,16 @@ The pure `SU(2)^3` cubic gauge anomaly vanishes group-theoretically because
 the symmetric `d^{abc}` tensor for `SU(2)` is identically zero; this is not a
 matter-content condition and is included for completeness as `(A0)`.
 
-## 1. Retained inputs
+## 1. Supplied inputs
 
 | Ingredient | Authority |
 |---|---|
 | Cl(3)/Z³ native cubic SU(2) gauge structure | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md) |
 | Graph-first SU(3) integration with `N_c = 3` colour count | [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) |
 | Three-generation observable structure | [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md), [`THREE_GENERATION_STRUCTURE_NOTE.md`](THREE_GENERATION_STRUCTURE_NOTE.md) |
-| Retained left-handed `Q_L`, `L_L` content with `Y(Q_L) = +1/3`, `Y(L_L) = -1` | [`LEFT_HANDED_CHARGE_MATCHING_NOTE.md`](LEFT_HANDED_CHARGE_MATCHING_NOTE.md), [`HYPERCHARGE_IDENTIFICATION_NOTE.md`](HYPERCHARGE_IDENTIFICATION_NOTE.md) |
-| Retained one-generation RH completion `(u_R, d_R, e_R, nu_R)` | [`ONE_GENERATION_MATTER_CLOSURE_NOTE.md`](ONE_GENERATION_MATTER_CLOSURE_NOTE.md) |
-| Retained RH hypercharges `(+4/3, -2/3, -2, 0)` | [`STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md) |
+| Supplied left-handed `Q_L`, `L_L` content with `Y(Q_L) = +1/3`, `Y(L_L) = -1` | [`LEFT_HANDED_CHARGE_MATCHING_NOTE.md`](LEFT_HANDED_CHARGE_MATCHING_NOTE.md), [`HYPERCHARGE_IDENTIFICATION_NOTE.md`](HYPERCHARGE_IDENTIFICATION_NOTE.md) |
+| Supplied one-generation RH completion `(u_R, d_R, e_R, nu_R)` | [`ONE_GENERATION_MATTER_CLOSURE_NOTE.md`](ONE_GENERATION_MATTER_CLOSURE_NOTE.md) |
+| Supplied RH hypercharges `(+4/3, -2/3, -2, 0)` | [`STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md) |
 | Standard ABJ trace formulae and Dynkin indices `T(3) = T(2) = 1/2` | textbook QFT input |
 | Witten (1982) homotopy fact `pi_4(SU(2)) = Z_2` | textbook nonperturbative-anomaly input |
 | Standard SU(3) cubic anomaly indices `A(3) = +1, A(3bar) = -1` | textbook Lie-algebra input |
@@ -61,13 +61,13 @@ The three load-bearing **previously-existing source theorems** providing the
 component cancellations are:
 
 1. [`SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md`](SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md)
-   — cancels `(A1)` exactly on retained `Q_L + u_R^c + d_R^c`.
+   — cancels `(A1)` exactly on supplied `Q_L + u_R^c + d_R^c`.
 2. [`LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md`](LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md)
    — supplies the LH-only trace values that appear as the rational
    right-hand-side targets of the RH-side cancellation equations for `(A2)`,
    `(A3)`, `(A4)`.
 3. [`SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md`](SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md)
-   — cancels `(A5)` parity-exactly on retained three-generation content.
+   — cancels `(A5)` parity-exactly on supplied three-generation content.
 
 The full perturbative `(A2)+(A3)+(A4)` closure on the LH+RH content with the
 SM RH hypercharges is independently packaged in:
@@ -82,13 +82,13 @@ SM RH hypercharges is independently packaged in:
 
 The synthesis here cites these as load-bearing inputs and verifies that the
 five anomaly-closure statements `(A1)–(A5)` are simultaneously consistent on
-**one** matter-content surface (the retained Cl(3)/Z³ LH-frame SM
+**one** matter-content surface (the supplied Cl(3)/Z³ LH-frame SM
 one-generation content × n_gen = 3).
 
 No observed mass, charge, mixing angle, cross-section, or proton-decay datum
-enters the synthesis. All arithmetic uses standard-library `fractions.Fraction`.
+enters the synthesis. Matter traces use standard-library `fractions.Fraction`; the explicit Pauli trace check uses exact SymPy matrices.
 
-## 2. Proof On The Retained Cl(3)/Z³ LH-Frame Surface
+## 2. Proof On The Supplied Cl(3)/Z³ LH-Frame Surface
 
 ### 2.1 (A1) SU(3)^3 cubic gauge anomaly
 
@@ -105,7 +105,7 @@ A_SU3^3
 ```
 
 This is the result of [`SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md`](SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md);
-it relies on retained `N_c = 3` colour count and on the retained right-handed
+it relies on supplied `N_c = 3` colour count and on the supplied right-handed
 colour-anti-triplet completion `u_R^c, d_R^c`.
 
 ### 2.2 (A2) Mixed SU(2)^2 × U(1)_Y anomaly
@@ -192,7 +192,7 @@ N_D(total) mod 2 = 0.
 ```
 
 This is the result of [`SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md`](SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md);
-it depends on the retained `N_c = 3` colour count and the retained
+it depends on the supplied `N_c = 3` colour count and the supplied
 three-generation structure.
 
 ### 2.6 (A0) Pure SU(2)^3 cubic gauge anomaly
@@ -209,9 +209,15 @@ A_SU2^3 = 0  identically,
 regardless of matter content. This is recorded for completeness, not as a
 matter-content cancellation.
 
+### Mixed SU(3)² U(1) trace
+
+For the supplied assignment, the omitted mixed colour trace also vanishes:
+`T(3) [2 Y(Q_L)-Y(u_R)-Y(d_R)] = (1/2)[2/3-4/3+2/3]=0`.
+Together with the displayed slots this completes the conventional anomaly list for the specified representations. Solving some of these equations upstream and substituting the solution back is a consistency check, not an independent prediction of those charges.
+
 ### 2.7 Closure on the synthesis surface
 
-The five cancellations `(A1)–(A5)` plus the group-theoretic `(A0)` exhaust
+The five cancellations `(A1)–(A5)`, the mixed colour trace above, and the group-theoretic `(A0)` exhaust
 the gauge-anomaly conditions for a quantum-consistent
 `SU(3) × SU(2) × U(1)_Y` gauge theory coupled to gravity:
 
@@ -223,8 +229,9 @@ the gauge-anomaly conditions for a quantum-consistent
 | `(A3)` grav^2 Y | LH+RH `Y` sum | `0` exact | yes (LH+RH) |
 | `(A4)` Y^3 | LH+RH `Y^3` sum | `-16/9 + 16/9 = 0` exact | yes (LH+RH) |
 | `(A5)` SU(2) Witten Z_2 | LH-doublet parity | `N_D mod 2 = 0` integer | yes (parity) |
+| mixed colour | SU(3)^2 Y | `(1/2)(2/3-4/3+2/3)=0` exact | yes |
 
-All six slots simultaneously hold on **one and the same** retained Cl(3)/Z³
+All seven slots simultaneously hold on **one and the same** supplied Cl(3)/Z³
 LH-frame matter content. This is the synthesis statement.
 
 ## 3. What This Synthesis Does Not Claim
@@ -249,7 +256,7 @@ This synthesis does **not** claim:
   matter content can also pass these tests, as recorded in the individual
   scope sections of each component theorem.
 
-The synthesis is a **closure aggregator**: given retained inputs, all five
+The synthesis is a **closure aggregator**: given supplied inputs, the displayed
 anomaly conditions cancel simultaneously on one surface. It does not promote
 the Cl(3)/Z³ LH-content surface to retained on its own.
 
@@ -269,14 +276,13 @@ The runner verifies, classified by anomaly slot:
 
 - `(A0)` SU(2)^3 cubic identically zero by group theory;
 - `(A1)` SU(3)^3 cubic = `+2 - 1 - 1 = 0` exact Fraction equality on the
-  retained content; nonzero `d^{abc}` for SU(3);
+  supplied content; nonzero `d^{abc}` for SU(3);
 - `(A2)` SU(2)^2 Y = `(1/2)(3*(1/3) + 1*(-1)) = 0` exact LH-only;
 - `(A3)` grav^2 Y ≡ Tr[Y]_one-gen = `2 - 2 - 4 + 2 + 2 + 0 = 0` exact LH+RH;
 - `(A4)` Y^3 = `-16/9 + 16/9 = 0` exact LH+RH;
 - `(A5)` SU(2) Witten N_D = `12`, `mod 2 = 0`.
 
-The runner uses the Python standard library only and operates entirely on
-exact `fractions.Fraction` arithmetic.
+The runner uses `fractions.Fraction` for matter traces and SymPy for the exact Pauli-matrix cubic trace. It reads no data files; the representations, charges and multiplicities are supplied literals.
 
 ## 5. Cross-references
 
@@ -296,13 +302,13 @@ exact `fractions.Fraction` arithmetic.
 - [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md)
   — parent framework using these anomaly identities upstream.
 - [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md)
-  — retained native cubic SU(2) gauge structure on Cl(3)/Z³.
+  — supplied native cubic SU(2) gauge structure on Cl(3)/Z³.
 - [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
-  — retained SU(3) integration with `N_c = 3`.
+  — supplied SU(3) integration with `N_c = 3`.
 - [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
-  — retained three-generation structure.
+  — supplied three-generation structure.
 - [`ONE_GENERATION_MATTER_CLOSURE_NOTE.md`](ONE_GENERATION_MATTER_CLOSURE_NOTE.md)
-  — retained one-generation completion.
+  — supplied one-generation completion.
 
 ## 6. Honest claim-status
 
@@ -310,7 +316,7 @@ exact `fractions.Fraction` arithmetic.
 proposed_claim_type: positive_theorem
 status_authority: independent audit lane only
 audit_required_before_effective_retained: true
-actual_current_surface_status: synthesis-aggregator anomaly-cancellation theorem assembling four exact gauge-anomaly trace identities plus the SU(2) Witten Z_2 parity into a single closure statement on the retained Cl(3)/Z³ LH-frame matter content
+actual_current_surface_status: synthesis-aggregator anomaly-cancellation theorem assembling five exact perturbative anomaly trace identities plus the SU(2) Witten Z_2 parity into a single closure statement on the supplied Cl(3)/Z³ LH-frame matter content
 conditional_surface_status: full SM gauge-anomaly closure (A1)-(A5) holds simultaneously on one tier-mixed matter-content surface; conditional on the actual mix of upstream audit tiers (see Upstream-tier accounting (2026-05-17) below) and on the three component anomaly theorems whose own audit statuses are likewise tier-mixed.
 hypothetical_axiom_status: null
 admitted_observation_status: "Standard ABJ anomaly-trace formulae, Dynkin-index normalization T(3) = T(2) = 1/2, standard SU(3) cubic anomaly indices A(3) = +1, A(3bar) = -1, Witten (1982) homotopy fact pi_4(SU(2)) = Z_2 admitted as universal QFT/topology input."

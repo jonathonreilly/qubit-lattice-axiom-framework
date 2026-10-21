@@ -5,6 +5,8 @@
 **Type:** meta (axiom-presentation sharpening, no content change)
 **Concerns:** `MINIMAL_AXIOMS_2026-05-03.md` A1 statement
 
+**Historical scope (2026-10-21 clarification).** This is a dated May presentation proposal, not the current axiom inventory or prediction-status authority. The [current axiom memo](MINIMAL_AXIOMS_2026-06-29.md) now names Lattice, Qubit, Admissibility and Record and states the same real-algebra identification. Retained labels below report the proposal’s historical status assertions; they do not confer current status on numerical predictions.
+
 ## What this note proposes
 
 This note proposes sharpening the framework's statement of **A1**
@@ -171,8 +173,7 @@ generalized-probability-theoretic."
   above. Adopting the qubit framing as the primary statement of A1
   changes the presentation, not the retained local algebra.
 - **No predicted observable changes.** `α_s(M_Z) = 0.1181`,
-  `v = 246.282818290129 GeV`, the CKM atlas, Koide `Q = 2/3`, and all
-  other retained quantitative predictions are unchanged.
+  `v = 246.282818290129 GeV`, the CKM atlas, Koide `Q = 2/3`, and other quantitative claims listed by the historical proposal are unchanged by an algebraic rephrasing. Their validity and present status require their own source and audit evidence.
 - **No open-gate status changes.** The Grassmann staggered-Dirac
   realization gate and the `g_bare = 1` derivation gate remain open
   in the same form.

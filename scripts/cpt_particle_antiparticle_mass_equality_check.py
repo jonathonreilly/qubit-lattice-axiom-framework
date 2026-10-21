@@ -1,11 +1,11 @@
-"""Particle/antiparticle mass equality from retained CPT.
+"""Energy equality for supplied antiunitary-exchanged blocks.
 
 Verifies (M1)-(M3) of CPT_PARTICLE_ANTIPARTICLE_MASS_EQUALITY_THEOREM_-
-NOTE_2026-05-02.md on a small explicit CPT-symmetric fermionic
+NOTE_2026-05-02.md on a small explicit antiunitary-symmetric block
 Hamiltonian.
 
 Setup:
-  4-mode fermionic Fock space (2 particle modes labeled 'p_0', 'p_1' and
+  4-dimensional single-particle block space (2 particle modes labeled 'p_0', 'p_1' and
   2 antiparticle modes labeled 'a_0', 'a_1'). CPT acts as the
   antiunitary swap p_i <-> a_i with complex conjugation. We construct
   random Hamiltonians H that satisfy [CPT, H] = 0 by construction
@@ -18,7 +18,7 @@ Tests:
   T3: spectrum of particle block equals spectrum of antiparticle block
       (M1, M2).
   T4: 5 random CPT-symmetric Hamiltonians all show identical spectra
-      (M3 universality).
+      (finite diagnostics, not a universality proof).
 """
 from __future__ import annotations
 
@@ -71,7 +71,7 @@ def cpt_operator(n_modes: int = 2) -> tuple[np.ndarray, callable]:
 
 def main() -> None:
     print("=" * 72)
-    print("CPT PARTICLE/ANTIPARTICLE MASS EQUALITY CHECK")
+    print("SUPPLIED ANTIUNITARY BLOCK ENERGY EQUALITY CHECK")
     print("=" * 72)
     print()
     print("Setup:")
@@ -110,7 +110,7 @@ def main() -> None:
     # ----- Test 3: particle / antiparticle eigenvalue equality -----
     print("-" * 72)
     print("TEST 3 (M1, M2): particle and antiparticle blocks have")
-    print("                 identical spectrum (mass equality)")
+    print("                 identical spectrum (physical rest-mass interpretation not checked)")
     print("-" * 72)
     eigs_p = np.sort(np.linalg.eigvalsh(H_p))
     eigs_a = np.sort(np.linalg.eigvalsh(H_a))
@@ -124,7 +124,7 @@ def main() -> None:
 
     # ----- Test 4: 5 random CPT-symmetric H all show identical spectra -----
     print("-" * 72)
-    print("TEST 4 (M3): universality — 5 random CPT-symmetric H all show")
+    print("TEST 4 (M3): finite diagnostics — 5 random CPT-symmetric H all show")
     print("            identical particle/antiparticle spectra")
     print("-" * 72)
     n_trials = 5
@@ -145,7 +145,7 @@ def main() -> None:
     # ----- Test 5: counter-example (negative control) -----
     print("-" * 72)
     print("TEST 5 (negative control): a non-CPT-symmetric H DOES break")
-    print("                            particle/antiparticle mass equality")
+    print("                            block spectrum equality")
     print("-" * 72)
     # Build H with intentionally different particle and antiparticle blocks
     rng = np.random.default_rng(2026)
@@ -162,8 +162,8 @@ def main() -> None:
     eigs_a_bad = np.sort(np.linalg.eigvalsh(H_a_bad))
     eigs_diff = np.linalg.norm(eigs_p_bad - eigs_a_bad)
     print(f"  ||CPT H_bad CPT^{{-1}} - H_bad|| = {cpt_break:.3e}  (CPT broken)")
-    print(f"  ||eigs_p - eigs_a||              = {eigs_diff:.3e}  (mass equality broken)")
-    print(f"  → without CPT, particle/antiparticle spectra differ.")
+    print(f"  ||eigs_p - eigs_a||              = {eigs_diff:.3e}  (block spectra differ)")
+    print(f"  → this CPT-breaking control has different block spectra.")
     t5_ok = cpt_break > 0.1 and eigs_diff > 0.1
     print(f"  STATUS: {'PASS' if t5_ok else 'FAIL'}")
     print()
@@ -175,17 +175,17 @@ def main() -> None:
     print(f"  Test 1 (Hermiticity sanity):                {'PASS' if t1_ok else 'FAIL'}")
     print(f"  Test 2 ([CPT, H] = 0):                      {'PASS' if t2_ok else 'FAIL'}")
     print(f"  Test 3 (M1, M2: identical spectra):         {'PASS' if t3_ok else 'FAIL'}")
-    print(f"  Test 4 (M3: universality, 5 trials):        {'PASS' if t4_ok else 'FAIL'}")
+    print(f"  Test 4 (M3: finite diagnostics, 5 trials):        {'PASS' if t4_ok else 'FAIL'}")
     print(f"  Test 5 (negative control: no-CPT breaks):   {'PASS' if t5_ok else 'FAIL'}")
     print()
     all_ok = t1_ok and t2_ok and t3_ok and t4_ok and t5_ok
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     print()
     print("Note: this runner verifies the energy-equality consequence of CPT")
-    print("invariance on a 4-mode toy fermionic block-Hamiltonian. The proof")
+    print("invariance on a 4-dimensional toy block-Hamiltonian. The proof")
     print("in the companion theorem note is dimension-independent: it uses")
-    print("only [CPT, H] = 0 from the declared cpt_exact_note dependency plus")
-    print("the convention that particle/antiparticle sectors are exchanged by")
+    print("only a supplied commuting antiunitary symmetry plus")
+    print("the supplied condition that the two sectors are exchanged by")
     print("the CPT operator. The toy here is a structural witness; concrete")
     print("species-level bookkeeping is left outside this runner's scope.")
     if not all_ok:

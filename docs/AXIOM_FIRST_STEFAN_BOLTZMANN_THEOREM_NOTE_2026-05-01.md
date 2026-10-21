@@ -1,317 +1,91 @@
-# Axiom-First Stefan-Boltzmann Law from KMS + Framework Photon Spectrum
+# Stefan–Boltzmann law on a supplied continuum photon model
 
-**Date:** 2026-05-01
+**Date:** 2026-05-01; scope corrected 2026-10-21
 **Type:** positive_theorem
-**Claim scope:** for blackbody photon radiation in thermal equilibrium at temperature T on the framework's cited EW + emergent Lorentz + Block 01 KMS surface (per 2026-05-17 ledger, all cited upstreams are currently `unaudited` rather than retained-grade; see §Upstream-tier accounting (2026-05-17) and fix record below), the energy density is u(T) = (π²/15) (k_B T)⁴ / (ℏc)³ (SB1)-(SB4); equivalently the Planck distribution n(ω, T) = 1/(e^(βω) - 1) and the Stefan-Boltzmann constant σ_SB = (π²/60) k_B⁴/(ℏ³c²) follow.
-**Status:** awaiting independent audit. Under the scope-aware classification framework (audit-lane proposal #291), `effective_status` is computed by the audit pipeline.
-**Loop:** `24h-axiom-first-derivations-20260501`
-**Cycle:** 6 (Block 06; stacked on Block 01 (KMS))
-**Branch:** `physics-loop/24h-axiom-first-block06-stefanboltzmann-20260501`
-**Stacked PR base:** `physics-loop/24h-axiom-first-block01-kms-20260501`
+**Claim scope:** the standard Planck and Stefan–Boltzmann formulas follow for a supplied continuum gas of independent bosonic harmonic-oscillator modes, with two polarizations, dispersion omega=c|k|, zero chemical potential and a Gibbs state. This does not derive that photon model from the framework axioms.
+**Status authority:** independent audit lane only; no retention is asserted here.
 **Runner:** `scripts/axiom_first_stefan_boltzmann_check.py`
-**Log:** `outputs/axiom_first_stefan_boltzmann_check_2026-05-01.txt`
+**Historical log:** `outputs/axiom_first_stefan_boltzmann_check_2026-05-01.txt`
 
-## Scope
+## Premises and scope
 
-This note proves the **Stefan-Boltzmann law** for blackbody photon
-radiation on the framework's cited emergent-spacetime surface (tier
-inherited from the cited companions; see §Upstream-tier accounting
-(2026-05-17) below):
+The calculation recovers a standard continuum result. It is not a new numerical thermodynamic prediction of the lattice axioms. The named physical bridges remain supplied:
 
-```text
-    u(T)  =  (π² / 15) · (k_B T)⁴ / (ℏ c)³                                   (1)
-```
+- Independent bosonic oscillator modes with levels `n hbar omega`, `n=0,1,...`, after vacuum subtraction. Positivity of H alone does not supply these levels or Bose statistics. The cited spin-statistics note now retains only a finite-dimensional CCR obstruction, not a physical statistics selector.
+- A Gibbs state with `beta=1/(k_B T)`, `T>0`, and zero chemical potential. KMS/Gibbs reasoning gives the geometric occupation sum only after the oscillator spectrum is specified.
+- A continuum three-dimensional momentum measure, two transverse polarizations and `omega=c|k|` at all frequencies in the continuum model.
+- For emitted power, an isotropic photon distribution with propagation speed c.
 
-where `u(T)` is the photon energy density at thermal equilibrium at
-temperature `T`. In natural units `ℏ = c = k_B = 1`,
+The current [axiom memo](MINIMAL_AXIOMS_2026-06-29.md) supplies the spatial Z³ substrate, not these dynamics or physical photon identification. The cited [Lorentz note](EMERGENT_LORENTZ_INVARIANCE_NOTE.md) establishes a leading long-wavelength dispersion on its supplied free model, with lattice corrections. That leading term cannot justify extending an exact linear dispersion to infinite frequency on a finite-spacing lattice.
 
-```text
-    u(T)  =  (π² / 15) T⁴                                                    (2)
-```
+For a lattice realization, the continuum expression can serve as a leading low-temperature approximation only with matching low-energy mode content and control of the remaining bands and dispersion corrections. No error bound, finite-temperature correction or all-temperature lattice law is derived here. Exactness below belongs to the ideal continuum model.
 
-The proof composes:
+## Conditional theorem and proof
 
-- **Block 01 KMS support theorem** (Gibbs state on harmonic oscillator
-  reconstructed Hamiltonian gives Planck distribution);
-- the framework's cited U(1) photon (from SM hypercharge uniqueness
-  + EW package, which admit a massless photon mode; companion currently
-  `unaudited`);
-- the framework's cited emergent Lorentz invariance (which gives
-  the standard 3D density of states and dispersion relation
-  `ω = c k` in the smooth-limit regime; companion currently `unaudited`);
-- standard counting of Bose-Einstein modes (admitted-context).
-
-**Tier accounting note:** the "retained" descriptor used elsewhere in
-this note (prior wording) was tier-loose; per the 2026-05-17 ledger
-the cited companions are not at `retained_bounded`. The proof
-arithmetic itself (`(SB1)-(SB4)`) is unaffected; only the
-upstream-tier qualifier is corrected. See §Upstream-tier accounting
-(2026-05-17) and the fix-record section near the end of the note.
-
-This is the framework's **first numerical thermodynamic prediction**
-that goes beyond structural identity: given temperature `T`, the
-photon energy density is fixed at value (1) on the framework retained
-surface (modulo the upstream support classification).
-
-## Cited inputs (tier inherited; see §Upstream-tier accounting (2026-05-17))
-
-(Section heading changed 2026-05-17 from "Retained inputs"; per the
-2026-05-17 ledger snapshot, all named companions are currently
-`unaudited` rather than `retained_bounded`. The proof structure below
-is unchanged; only the tier descriptors are corrected.)
-
-- **Block 01 KMS support theorem.** Gibbs state on `H_phys` at
-  inverse temperature `β_th = 1 / T` is Planck-distributed for any
-  harmonic-oscillator subsector. (Companion
-  `axiom_first_kms_condition_theorem_note_2026-05-01` currently
-  `unaudited`.)
-- **Cited emergent Lorentz invariance.** From
-  [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md) and
-  [`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md), the framework's
-  long-wavelength photon modes have dispersion `ω = c k` to leading
-  order, with `c` the emergent speed of light. The leading
-  anisotropic correction is at dimension 6 with cubic-harmonic
-  `ell = 4` fingerprint, irrelevant for the `T^4` law. (Both
-  companions currently `unaudited`.)
-- **Cited anomaly-forced 3+1 dimensions** (from the cited
-  [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md)): the spatial substrate is
-  `Z^3`, so the photon density of states is the standard 3D form.
-  (Parent companion currently `unaudited`; admissions (i)-(iv) and
-  upstream [F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md)
-  apply via tier inheritance, not as load-bearing proof steps in
-  `(SB1)-(SB4)`.)
-- **Cited U(1) photon.** From the cited
-  [`STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)
-  + EW package, the framework has a massless U(1)
-  electromagnetic photon with two transverse polarizations. (Companion
-  currently `unaudited`.)
-- **Spectrum condition** (from cited
-  [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md);
-  companion currently `unaudited`): photon Hamiltonian is bounded below.
-
-## Admitted-context inputs
-
-- **Standard 3D photon density of states:** `g(ω) dω = (V/π²c³) ω² dω`
-  (two polarizations × `4π k² dk / (2π)³` with `ω = ck`). This is
-  basic 3D mode-counting on the framework's retained `Z^3` substrate
-  in the smooth-limit regime.
-- **Bose-Einstein statistics for photons:** photons are bosons (spin 1
-  vector field). This is consistent with the retained
-  [`AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md).
-- **Standard integral identity:**
-  `∫_0^∞ x^{s-1} / (e^x - 1) dx = Γ(s) ζ(s)`. For `s = 4`:
-  `Γ(4) ζ(4) = 6 · π⁴/90 = π⁴/15`. Pure mathematical identity.
-
-These are basic counting / mathematical inputs, all consistent with
-or implied by the retained framework structure.
-
-## Statement
-
-Let `H_phys` be the RP-reconstructed physical Hilbert space restricted
-to the retained U(1) photon sector (massless gauge boson with two
-transverse polarizations). Let `T > 0` be the thermal temperature
-parameter, with Gibbs state `ρ_β = e^{-β H_γ} / Z_γ` where `β = 1/T`
-and `H_γ` the photon Hamiltonian. Then on `A_min` plus the retained
-inputs above:
-
-**(SB1) Planck distribution from KMS.** For each photon mode of
-frequency `ω`, the mean occupation number in the Gibbs state is
+**SB1 — Occupation.** For one supplied oscillator put `q=exp(-beta hbar omega)`, with `omega>0`. Then
 
 ```text
-    n(ω, T)  =  1 / (e^{β ω} - 1)                                            (3)
+Z = sum_{n>=0} q^n = 1/(1-q),
+<n> = (sum_{n>=0} n q^n)/Z = q/(1-q)
+    = 1/(exp(beta hbar omega)-1).
 ```
 
-This is the **Planck distribution** for bosons. The proof uses Block
-01 (K1)–(K2) on the harmonic-oscillator subsector with creation /
-annihilation operators `a^†, a` satisfying `[a, a^†] = 1`,
-`H_osc = ω (a^† a + 1/2)`.
+The zero-point term cancels in the occupation average; the thermal energy below excludes the vacuum energy.
 
-**(SB2) Photon energy density.** Integrating `ℏ ω · n(ω, T)` against
-the framework's standard 3D density of states (two polarizations):
+**SB2 — Density of states.** The supplied continuum measure gives
 
 ```text
-    u(T)  =  ∫_0^∞ dω · ℏ ω · n(ω, T) · g(ω) / V
-          =  ∫_0^∞ dω · ℏ ω / (e^{β ω} - 1) · (1 / π² c³) ω²              (4)
-          =  (ℏ / π² c³) ∫_0^∞ ω³ / (e^{β ℏ ω} - 1) dω                     (5)
+g(omega)/V = 2 * 4 pi k²/(2 pi)³ * dk/domega
+           = omega²/(pi² c³).
 ```
 
-**(SB3) Stefan-Boltzmann formula.** Substituting `x := β ℏ ω`:
+This is a continuum counting identity, not an exact Brillouin-zone density of states.
+
+**SB3 — Energy density.** Combining the two identities and writing `x=beta hbar omega` gives
 
 ```text
-    u(T)  =  (ℏ / π² c³) (T / ℏ)⁴ ∫_0^∞ x³ / (e^x - 1) dx                   (6)
-          =  (T⁴ / π² c³ ℏ³) · Γ(4) · ζ(4)                                  (7)
-          =  (T⁴ / π² c³ ℏ³) · 6 · π⁴ / 90                                  (8)
-          =  (π² / 15) · T⁴ / (c³ ℏ³)                                        (9)
+u(T) = hbar/(pi² c³) integral_0^infty omega³/(exp(beta hbar omega)-1) d omega
+     = (k_B T)^4/(pi² hbar³ c³) integral_0^infty x³/(exp(x)-1) dx
+     = (pi²/15) (k_B T)^4/(hbar c)³.
 ```
 
-In SI units restoring `k_B`, this is `u = (π² k_B⁴ / 15 ℏ³ c³) T⁴`,
-the **Stefan-Boltzmann law**.
+The last equality is the standard integral `Gamma(4) zeta(4)=pi^4/15`. In natural units, `u=(pi²/15)T^4`.
 
-**(SB4) Stefan-Boltzmann constant.** From (SB3) the Stefan-Boltzmann
-constant in SI units is
+**SB4 — Emitted flux.** Integrating an isotropic energy density over the outward hemisphere gives flux `F=c u/4`. Hence
 
 ```text
-    σ_SB  :=  (π²/60) k_B⁴ / (ℏ³ c²)                                         (10)
-          =  5.670374419 × 10⁻⁸  W m⁻² K⁻⁴                                  (11)
+sigma_SB = F/T^4 = (pi²/60) k_B^4/(hbar³ c²)
+         ≈ 5.670374419e-8 W m^-2 K^-4.
 ```
 
-(`c` rather than `c³` because radiance per solid angle differs from
-energy density by a factor of `c/4`).
+The denominator is c² rather than c³ because the flux gains a factor c. Flux per unit area is not radiance per solid angle. The SI number uses the supplied unit constants; it is not an independent fit or framework prediction.
 
-Statements (SB1)–(SB4) constitute the Stefan-Boltzmann law on the
-framework retained surface plus Block 01 KMS support.
+## Conditional consequences and limits
 
-## Proof
+The continuum spectral maximum obeys `x=3(1-exp(-x))`, with the positive root `x≈2.821439372` and `omega_max=x k_B T/hbar`. The isotropic continuum photon pressure is `u/3`.
 
-### Step 1 — Planck distribution from KMS (proves SB1)
+At the externally supplied temperature `T=2.7255 K`, the same formula evaluates to approximately `4.17e-14 J/m³`. This numerical substitution is not a new measurement or a part-per-million comparison with an observed spectrum. Other radiation species and their effective degree counts require separate inputs.
 
-Consider a single harmonic oscillator mode `H_osc = ω a† a` (zero-
-point energy absorbed into vacuum subtraction; consistent with
-spectrum condition `H ≥ 0` and zero ground state). The number-basis
-states are `|n⟩` with `H_osc |n⟩ = nω |n⟩`.
-
-Apply Block 01 (K1)–(K2) on this subsector. The Gibbs trace is
-
-```text
-    Z_osc(β)  =  Σ_{n=0}^∞ e^{-β n ω}  =  1 / (1 - e^{-β ω})                (12)
-```
-
-The mean occupation:
-
-```text
-    n(ω, T)  :=  <a† a>_β  =  (1/Z) Σ_n n e^{-β n ω}
-              =  e^{-β ω} / (1 - e^{-β ω})  =  1 / (e^{β ω} - 1)             (13)
-```
-
-This is the Planck distribution. ∎
-
-### Step 2 — 3D density of states (used in SB2)
-
-On the framework's retained 3D spatial substrate (`Z^3` with
-emergent Lorentz `ω = c k` to leading order), the number of photon
-modes per unit volume in `(ω, ω + dω)` is
-
-```text
-    g(ω) dω / V  =  2 · (1 / (2π)³) · 4π k² dk
-                =  (k² / π²) dk
-                =  (ω² / π² c³) dω                                            (14)
-```
-
-The factor of `2` accounts for the two transverse polarizations.
-This is standard 3D mode-counting; on the framework's retained surface
-it is consistent with native U(1) + emergent Lorentz at long
-wavelengths.
-
-### Step 3 — Energy density integral (proves SB2, SB3)
-
-Combine (3) and (14):
-
-```text
-    u(T)  =  ∫_0^∞ dω · ℏ ω · n(ω, T) · g(ω) / V
-          =  ∫_0^∞ (ℏ ω³) / (π² c³ (e^{β ℏ ω} - 1)) dω                      (15)
-```
-
-Substitute `x := β ℏ ω`, `dω = dx / (β ℏ)`:
-
-```text
-    u(T)  =  ℏ / (π² c³) · ∫_0^∞ (x / β ℏ)³ · 1/(e^x - 1) · dx / (β ℏ)
-          =  (ℏ / π² c³) · (1 / β⁴ ℏ⁴) · ∫_0^∞ x³ / (e^x - 1) dx             (16)
-          =  (T⁴ / π² ℏ³ c³) · Γ(4) ζ(4)                                    (17)
-```
-
-Using `Γ(4) = 3! = 6` and `ζ(4) = π⁴ / 90`:
-
-```text
-    u(T)  =  (T⁴ / π² ℏ³ c³) · 6 · π⁴ / 90  =  (π² / 15) · T⁴ / (ℏ³ c³)    (18)
-```
-
-This is (1)/(2). ∎
-
-### Step 4 — Stefan-Boltzmann constant (proves SB4)
-
-The Stefan-Boltzmann constant is conventionally defined for the
-radiated power per unit area per unit `T⁴` rather than the energy
-density:
-
-```text
-    σ_SB  =  (c/4) · u(T) / T⁴  =  (c/4) · (π² / 15) · 1 / (ℏ³ c³)
-          =  (π² / 60) · k_B⁴ / (ℏ³ c²)  (with k_B = 1 absorbed)              (19)
-```
-
-Numerically: `(π² / 60) (1.380649 × 10⁻²³)⁴ / ((1.054571817 × 10⁻³⁴)³ × (2.99792458 × 10⁸)²)`
-`= 5.670374419 × 10⁻⁸ W m⁻² K⁻⁴`. ∎
-
-## Hypothesis set used
-
-- Retained emergent Lorentz invariance (gives ω = c k dispersion).
-- Retained anomaly-forced 3+1 dimensions (gives 3D density of states).
-- Retained U(1) photon (massless gauge boson with two polarizations).
-- Retained spectrum condition (H ≥ 0 ⇒ harmonic oscillator levels at
-  nω, n = 0, 1, ...).
-- Retained spin-statistics theorem (photons are bosons).
-- Block 01 KMS support theorem (Gibbs state ↔ Planck distribution).
-- Standard 3D mode-counting (admitted-context).
-- Standard `Γ(4) ζ(4) = π⁴/15` (pure math).
-
-No fitted parameters. No observed values used as proof inputs.
-
-## Corollaries
-
-C1. **Wien displacement law.** From the spectral energy density
-`du/dω = ℏ ω³ / (π² c³ (e^{βℏω} - 1))`, maximizing in ω gives
-`ω_max ≈ 2.821 T / ℏ`, the Wien displacement law. This is a direct
-corollary of (SB2).
-
-C2. **CMB blackbody.** At `T_CMB = 2.7255 K`, the photon energy
-density is `u(T_CMB) = 4.17 × 10⁻¹⁴ J m⁻³`, matching the observed
-CMB blackbody spectrum to better than 1 part per million. The
-framework `T_CMB` is currently an external input
-(`docs/publication/ci3_z3/PREDICTION_SURFACE_2026-04-15.md`); this
-note shows that *given* `T_CMB`, the framework's retained surface
-predicts the CMB energy density consistent with observation.
-
-C3. **Photon-gas equation of state:** `p_γ = u / 3`. Follows directly
-from photon dispersion `ω = c k` and the same Bose-Einstein integral.
-Used in early-universe cosmology.
-
-C4. **Cosmological consistency:** the retained
-`N_eff = 3.046` ([`N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md`](N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md))
-plus this Stefan-Boltzmann formula give the standard
-`ρ_radiation,eq = (π²/30) g_*  T⁴` formula with photon contribution
-exactly (1).
-
-## Honest status
-
-**Branch-local theorem on retained framework EW + Lorentz package +
-Block 01 KMS support.** (SB1)–(SB4) follow by direct composition.
-The runner verifies (SB1) via direct Planck-formula evaluation,
-(SB2)–(SB3) via numerical integration of the Planck spectrum, and
-(SB4) via the standard SI conversion to `σ_SB ≈ 5.67 × 10⁻⁸`.
-
-**Honest claim-status fields:**
+The runner checks Gibbs sums, continuum quadrature, scaling, the integral, Wien's root and SI conversion. Its checks do not supply the photon sector, prove a lattice continuum limit or establish an empirical accuracy. It also checks two counterexamples to the withdrawn inferences: a positive two-level Hamiltonian does not have oscillator occupation, and truncating the continuum spectrum changes u/T^4 at finite temperature.
 
 ```yaml
 actual_current_surface_status: support
-conditional_surface_status: derived support theorem on retained framework EW + Lorentz package + Block 01 KMS support
+conditional_surface_status: standard continuum photon calculation with supplied bosonic oscillator spectrum, Gibbs state, dispersion and mode measure
 hypothetical_axiom_status: null
-admitted_observation_status: null
+admitted_observation_status: external temperature used only in an illustrative substitution
 proposal_allowed: false
-proposal_allowed_reason: "Inherits Block 01 KMS upstream support classification, which depends on retained-but-audit-pending RP and spectrum-condition support notes. Per physics-loop SKILL retained-proposal certificate item 4, a chain of support cannot promote to proposed_retained until upstream is ratified retained."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-**Not in scope.**
+## Historical accounting
 
-- Independent derivation via the photon worldline path integral on
-  the framework lattice (would give the same result via different
-  technical route).
-- Promotion to retained / Nature-grade.
+The dated records below preserve the earlier review and tier discussion. Their references to the earlier proof wording do not override the corrected supplied-model scope above.
 
 ## Citations
 
-- A_min: [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
-- retained EW package: [`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md),
+- Historical axiom reference: [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
+- Supplied photon-sector context: [`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md),
   [`STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)
 - cited anomaly-forced 3+1: [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md) (currently `unaudited`)
 - cited emergent Lorentz: [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md),

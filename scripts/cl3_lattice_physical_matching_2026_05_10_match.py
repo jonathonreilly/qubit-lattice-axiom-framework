@@ -450,6 +450,12 @@ for r in [
 
 
 # ----------------------------------------------------------------------
+print('Resolution scope and limits (not physical bridge or no-go certificates):')
+print('per_element: scalar arithmetic with supplied plaquette/scale values and documentary note guards; no elementwise physical operator calculation.')
+print('per_block: supplied uniform taste-count 16 enters one scalar formula; individual physical blocks are not resolved.')
+print('per_mode: no mode-resolved determinant, physical spectrum or generation selection calculated.')
+print('per_site: no site-resolved field or lattice evolution calculated.')
+print('lattice_wide: no new lattice simulation, continuum matching proof or universal exclusion; inherited physical and authority claims are not certified by these labels.')
 print(f"\n{'=' * 88}")
 print(f"  TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
 print(f"{'=' * 88}")

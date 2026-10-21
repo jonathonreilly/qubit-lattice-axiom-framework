@@ -1,0 +1,5 @@
+[21:39:32] brute force signf: 2^10 elements, symplectic=16 (reviewer QF-enumerator gave 16)
+[21:39:32] brute force axis: 2^7 elements, symplectic=1 (reviewer QF-enumerator gave 1)
+[21:39:32] brute force full: 2^7 elements, symplectic=1 (reviewer QF-enumerator gave 1)
+[21:39:52] brute force trivial: 2^16 elements, symplectic=132 (reviewer QF-enumerator gave 132)
+TOTAL: PASS=4 FAIL=0

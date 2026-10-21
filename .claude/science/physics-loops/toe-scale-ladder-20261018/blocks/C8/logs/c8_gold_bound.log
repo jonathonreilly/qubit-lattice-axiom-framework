@@ -1,0 +1,4 @@
+PASS [numerical] gold theta=0.0: max |rho g| over 220k samples (incl. near X) = 3.141564 <= pi
+PASS [numerical] gold theta=0.05: max |rho g| over 220k samples (incl. near X) = 2.849998 <= pi
+PASS [numerical] gold theta=0.2: max |rho g| over 220k samples (incl. near X) = 2.452482 <= pi
+TOTAL: PASS=3 FAIL=0

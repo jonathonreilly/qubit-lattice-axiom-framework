@@ -1,0 +1,70 @@
+--- T2L: L=[4, 6, 8, 10, 12]
+   C   p=[2.6218] err=[0.2255] chi2=3.89/4  p-value=0.422
+[PASS] NOTE fit reproduced: T2L model C :: own [2.6218]+-[0.2255] chi2 3.89 vs NOTE (2.62, 0.23, None, 3.9)
+   S   p=[2.8529, -0.0104] err=[0.4003, 0.0149] chi2=3.40/3  p-value=0.334
+[PASS] NOTE fit reproduced: T2L model S :: own [2.8529, -0.0104]+-[0.4003, 0.0149] chi2 3.40 vs NOTE (None, None, (-0.01, 0.015), 3.4)
+   Str p=[0.0773] err=[0.0084] chi2=54.20/4  p-value=4.79e-11
+[PASS] NOTE fit reproduced: T2L model Str :: own [0.0773]+-[0.0084] chi2 54.20 vs NOTE (None, None, None, 54.5)
+   Q   p=[11.1823] err=[0.9637] chi2=4.43/4  p-value=0.351
+[PASS] NOTE fit reproduced: T2L model Q :: own [11.1823]+-[0.9637] chi2 4.43 vs NOTE (None, None, None, 4.4)
+   K   p=[0.527] err=[0.0479] chi2=17.84/4  p-value=0.00132
+[PASS] NOTE fit reproduced: T2L model K :: own [0.527]+-[0.0479] chi2 17.84 vs NOTE (None, None, None, 17.9)
+--- TMAX: L=[4, 6, 8, 10, 12]
+   C   p=[2.7025] err=[0.2289] chi2=1.59/4  p-value=0.811
+[PASS] NOTE fit reproduced: TMAX model C :: own [2.7025]+-[0.2289] chi2 1.59 vs NOTE (2.7, 0.23, None, 1.6)
+   S   p=[2.5509, 0.0073] err=[0.4304, 0.0175] chi2=1.41/3  p-value=0.702
+[PASS] NOTE fit reproduced: TMAX model S :: own [2.5509, 0.0073]+-[0.4304, 0.0175] chi2 1.41 vs NOTE (None, None, (0.007, 0.018), 1.4)
+   Str p=[0.095] err=[0.0093] chi2=36.54/4  p-value=2.24e-07
+[PASS] NOTE fit reproduced: TMAX model Str :: own [0.095]+-[0.0093] chi2 36.54 vs NOTE (None, None, None, 36.7)
+   Q   p=[11.2767] err=[0.9677] chi2=5.18/4  p-value=0.269
+[PASS] NOTE fit reproduced: TMAX model Q :: own [11.2767]+-[0.9677] chi2 5.18 vs NOTE (None, None, None, 5.2)
+   K   p=[0.5786] err=[0.0501] chi2=7.78/4  p-value=0.0999
+[PASS] NOTE fit reproduced: TMAX model K :: own [0.5786]+-[0.0501] chi2 7.78 vs NOTE (None, None, None, 7.8)
+--- REPO: L=[4, 6, 8]
+   C   p=[2.8611] err=[0.0322] chi2=51.14/2  p-value=7.87e-12
+[PASS] NOTE fit reproduced: REPO model C :: own [2.8611]+-[0.0322] chi2 51.14 vs NOTE (None, None, None, 51)
+   S   p=[3.4744, -0.0343] err=[0.0917, 0.0048] chi2=0.07/1  p-value=0.797
+[PASS] NOTE fit reproduced: REPO model S :: own [3.4744, -0.0343]+-[0.0917, 0.0048] chi2 0.07 vs NOTE (None, None, (-0.034, 0.005), 0.07)
+   Str p=[0.1362] err=[0.0017] chi2=1436.67/2  p-value=0
+   Q   p=[11.7572] err=[0.1319] chi2=5.06/2  p-value=0.0797
+[PASS] NOTE fit reproduced: REPO model Q :: own [11.7572]+-[0.1319] chi2 5.06 vs NOTE (None, None, None, 5.1)
+   K   p=[0.6613] err=[0.0076] chi2=410.18/2  p-value=0
+--- V05: L=[4, 6, 8]
+   C   p=[0.7876] err=[0.1439] chi2=2.66/2  p-value=0.264
+   S   p=[0.6564, 0.0071] err=[0.3683, 0.0184] chi2=2.51/1  p-value=0.113
+   Str p=[0.0372] err=[0.0072] chi2=5.69/2  p-value=0.0581
+   Q   p=[3.1788] err=[0.5938] chi2=3.96/2  p-value=0.138
+   K   p=[0.1837] err=[0.0335] chi2=2.53/2  p-value=0.282
+--- V09: L=[4, 6, 8]
+   C   p=[0.2311] err=[0.0383] chi2=18.48/2  p-value=9.73e-05
+   S   p=[0.6313, -0.0222] err=[0.1023, 0.0053] chi2=0.70/1  p-value=0.404
+   Str p=[0.0079] err=[0.002] chi2=38.75/2  p-value=3.86e-09
+   Q   p=[1.006] err=[0.1571] chi2=13.87/2  p-value=0.000971
+   K   p=[0.0479] err=[0.009] chi2=26.67/2  p-value=1.61e-06
+[INFO] T2L: sigma 2-sigma upper bound = 0.0194; 2-sigma lower bound -0.0402
+[INFO] TMAX: sigma 2-sigma upper bound = 0.0422; 2-sigma lower bound -0.0277
+[PASS] NOTE 'sigma <~ 0.04 g (2 sigma)' is the max of the two 2-sigma upper bounds :: 0.0422
+[INFO] sensitivity T2L drop L=4: C: p=[2.2916]+-[0.505] chi2 3.35/3 | S: p=[2.505, -0.0045]+-[1.3275, 0.0261] chi2 3.32/2 | Str: p=[0.041]+-[0.0099] chi2 6.88/3 | Q: p=[15.0753]+-[3.286] chi2 2.90/3
+[INFO] sensitivity T2L drop L=12: C: p=[2.6069]+-[0.2258] chi2 2.35/3 | S: p=[3.0978, -0.0225]+-[0.4253, 0.0165] chi2 0.50/2 | Str: p=[0.0793]+-[0.0088] chi2 53.55/3 | Q: p=[11.1524]+-[0.9639] chi2 1.76/3
+[INFO] sensitivity T2L L=4..8 only: C: p=[2.6165]+-[0.2264] chi2 2.04/2 | S: p=[3.1017, -0.0227]+-[0.4519, 0.0183] chi2 0.50/1 | Str: p=[0.0858]+-[0.0092] chi2 47.61/2 | Q: p=[11.1544]+-[0.9643] chi2 1.75/2
+[INFO] sensitivity TMAX drop L=4: C: p=[2.6952]+-[0.5472] chi2 1.59/3 | S: p=[1.7733, 0.0211]+-[1.3952, 0.0294] chi2 1.07/2 | Str: p=[0.0555]+-[0.0115] chi2 2.69/3 | Q: p=[16.6887]+-[3.455] chi2 2.52/3
+[INFO] sensitivity TMAX drop L=12: C: p=[2.6874]+-[0.2292] chi2 0.10/3 | S: p=[2.7866, -0.0048]+-[0.4752, 0.0203] chi2 0.04/2 | Str: p=[0.0995]+-[0.0098] chi2 34.43/3 | Q: p=[11.2466]+-[0.9678] chi2 2.51/3
+[INFO] sensitivity TMAX L=4..8 only: C: p=[2.6913]+-[0.2296] chi2 0.02/2 | S: p=[2.7497, -0.0029]+-[0.5073, 0.0224] chi2 0.00/1 | Str: p=[0.1053]+-[0.0101] chi2 29.38/2 | Q: p=[11.2437]+-[0.9681] chi2 2.50/2
+[INFO] repo L=4..8 + block L=10,12 (T max): C p=[2.8613]+-[0.0322] chi2 52.64/4
+[INFO] repo L=4..8 + block L=10,12 (T max): S p=[3.4454, -0.0327]+-[0.0905, 0.0047] chi2 4.95/3
+[INFO] repo L=4..8 + block L=10,12 (T max): Q p=[11.7578]+-[0.1319] chi2 7.71/4
+[INFO] dE L=4: block 0.676(0.063) vs repo 0.7315(0.0084): -0.87 sigma
+[INFO] dE L=6: block 0.44(0.102) vs repo 0.3699(0.0198): +0.67 sigma
+[INFO] dE L=8: block 0.322(0.169) vs repo 0.1685(0.0443): +0.88 sigma
+[PASS] NOTE 3.2 sigma for E(W=0,L=8): repo -443.3635(311) vs block T=32 -443.828(140) :: 3.24 sigma
+[INFO] same comparison against block T=16 -443.734(77): 4.46 sigma (NOT quoted in NOTE); size of the disagreement 0.37-0.46 exceeds dE(L=8) itself (0.16-0.32)
+[INFO] E(W=0) L=4: repo -56.282 block -56.253: -0.64 sigma; per plaquette repo -0.29314 block -0.29298
+[INFO] E(W=0) L=6: repo -187.4349 block -187.455: +0.26 sigma; per plaquette repo -0.28925 block -0.28928
+[INFO] E(W=0) L=8: repo -443.3635 block -443.828: +3.24 sigma; per plaquette repo -0.28865 block -0.28895
+[INFO] projection audit W=0 L=4: T=8 -56.253(45) vs T=16 -56.303(0.028): -0.95 sigma
+[INFO] projection audit W=0 L=6: T=12 -187.455(76) vs T=18 (1 chain) -187.278(0.071): +1.69 sigma (E_mix must DEcrease with T in expectation)
+[INFO] W=1 energies exist at a single T for L=4, 6, 12: the dE projection rule is testable only at L=8, 10
+[INFO] V=0.9 L=4: dE/sigma = +6.80
+[INFO] V=0.9 L=6: dE/sigma = -0.58
+[INFO] V=0.9 L=8: dE/sigma = -2.88
+TOTAL: PASS=15 FAIL=0

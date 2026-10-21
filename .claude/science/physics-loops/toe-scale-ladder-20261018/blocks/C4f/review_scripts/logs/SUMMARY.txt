@@ -1,0 +1,13 @@
+rA_onsite_action: TOTAL: PASS=49 FAIL=0
+structure: TOTAL: PASS=3 FAIL=0   [0s]
+pairs: TOTAL: PASS=12 FAIL=0   [39s]
+sym_random: TOTAL: PASS=3 FAIL=0   [31s]
+sym_planted: TOTAL: PASS=2 FAIL=0   [24s]
+radius: TOTAL: PASS=3 FAIL=0   [14s]
+influence: TOTAL: PASS=1 FAIL=0   [74s]
+sectors: TOTAL: PASS=6 FAIL=0   [228s]
+inv: TOTAL: PASS=8 FAIL=1   [30s]
+inv_more: TOTAL: PASS=3 FAIL=0   [9s]
+rC_pairmoves: TOTAL: PASS=6 FAIL=0
+rC_variants: informational (no pass/fail criterion)
+TOTAL: PASS=96 FAIL=1  (the 1 FAIL = inv.log L=8 coverage threshold, crossings 25<50; superseded-in-coverage by inv_more.log, kept unmodified)

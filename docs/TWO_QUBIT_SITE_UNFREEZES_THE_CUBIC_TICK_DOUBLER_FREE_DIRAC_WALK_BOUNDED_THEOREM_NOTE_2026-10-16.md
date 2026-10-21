@@ -238,7 +238,7 @@ therefore vanishes exactly on the plane b_0 = b_1 + 2 b_2. On that plane
 s = 3(b_1 + b_2), and the coefficients that survive depend on s alone:
 
     omega^2 = s^2 |k|^2 - s^2 (1 - s^2) |k|^4 / 12
-              + s^2 (8 s^4 - 5 s^2 + 2) |k|^6 / 360 - (s^2/360) |k|^2 sum_a k_a^4
+              + s^2 (4 s^4 - 5 s^2 + 2) |k|^6 / 360 - (s^2/360) |k|^2 sum_a k_a^4
               + z(b) k_1^2 k_2^2 k_3^2 + O(k^8).
 
 The three sextic structures are linearly independent, so the coefficient
@@ -269,6 +269,15 @@ cos theta_X = -1/3 and cos theta_M = -7/9 (exact), the corner doublers at
 no doublers (numerical). At |k| = 1 its directional spread of omega is about
 0.1%, against about 1.6% for the light-speed member. ∎
 
+*Correction (2026-10-18).* The isotropic |k|^6 coefficient above previously read
+s^2 (8 s^4 - 5 s^2 + 2)/360. The runner's series for arccos(1 - u)^2 used 8u^3/45
+where the correct coefficient is 4/45. The corrected value is s^2 (4 s^4 - 5 s^2 + 2)/360,
+which is 1/1215 at b_iso (it was 1/243). The anisotropic -s^2/360, z, the order-k^4
+results and the conclusions of this theorem are unchanged. The runner now checks the
+series against sympy and the b_iso sextic against a direct 50-digit evaluation. Found
+in campaign block C7 and confirmed by its independent review:
+`.claude/science/physics-loops/toe-scale-ladder-20261018/blocks/C7/REVIEW.md`.
+
 *Independent check.* A fresh agent context was given only the problem, not
 this note or its runner. It derived G(b), the massless band, alpha, beta and
 the sextic coefficients itself. It proved the bound by a different
@@ -276,7 +285,9 @@ maximisation argument: on the plane the walk region is compact, its maximiser
 satisfies P = dP/dt = 0, and lex elimination leaves the real roots
 sigma = 0, +-sqrt(2/27). It then made exact sign checks of e1, e2, e3 at
 b_iso. Its results agree, including y = -s^2/360 on the plane and the
-uniqueness of +-b_iso. Its scripts are in
+uniqueness of +-b_iso. (Correction 2026-10-18: its agreement on the sextic
+coefficients is limited to y and z; the isotropic x shared the series error
+corrected above.) Its scripts are in
 `.claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/`.
 
 Reading: on the two-qubit site, cubic lattice anisotropy can be tuned away at

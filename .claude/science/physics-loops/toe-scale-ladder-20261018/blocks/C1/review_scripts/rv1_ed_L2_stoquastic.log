@@ -1,0 +1,46 @@
+[PASS] L=2: plaquette link sets distinct, block Lambda meets every plaquette an odd number of times :: 24 plaquettes, counts [1, 3]
+[PASS] L=3: plaquette link sets distinct
+[PASS] L=4: plaquette link sets distinct, block Lambda meets every plaquette an odd number of times :: 192 plaquettes, counts [1, 3]
+[PASS] L=5: plaquette link sets distinct
+[PASS] L=6: plaquette link sets distinct, block Lambda meets every plaquette an odd number of times :: 648 plaquettes, counts [1, 3]
+[PASS] L=7: plaquette link sets distinct
+[PASS] L=8: plaquette link sets distinct, block Lambda meets every plaquette an odd number of times :: 1536 plaquettes, counts [1, 3]
+[PASS] L=9: plaquette link sets distinct
+[PASS] L=10: plaquette link sets distinct, block Lambda meets every plaquette an odd number of times :: 3000 plaquettes, counts [1, 3]
+[PASS] L=11: plaquette link sets distinct
+[PASS] L=12: plaquette link sets distinct, block Lambda meets every plaquette an odd number of times :: 5184 plaquettes, counts [1, 3]
+[PASS] L=13: plaquette link sets distinct
+[PASS] L=14: plaquette link sets distinct, block Lambda meets every plaquette an odd number of times :: 8232 plaquettes, counts [1, 3]
+[PASS] L=15: plaquette link sets distinct
+[PASS] L=16: plaquette link sets distinct, block Lambda meets every plaquette an odd number of times :: 12288 plaquettes, counts [1, 3]
+[PASS] L=2: independent GF(2) solve of delta(Lambda)=1 succeeds (even L) :: rank 14
+[PASS] L=3: GF(2) delta(Lambda)=1 has no solution (odd L) :: rank 52
+[PASS] L=4: independent GF(2) solve of delta(Lambda)=1 succeeds (even L) :: rank 126
+[PASS] L=5: GF(2) delta(Lambda)=1 has no solution (odd L) :: rank 248
+[PASS] L=6: independent GF(2) solve of delta(Lambda)=1 succeeds (even L) :: rank 430
+[PASS] L=7: GF(2) delta(Lambda)=1 has no solution (odd L) :: rank 684
+[PASS] L=2 rho=0: census :: 9600 Gauss states, 937 flip components, largest 864, 125 winding sectors (sigma-flux)
+[PASS] L=2 rho=0: adjacency entries in {0,1} (no multiplicity), symmetric, no diagonal :: values [1.0]
+[PASS] L=2 rho=0: winding constant on every flip component
+[PASS] L=2 rho=0 block Lambda V=0.0: H(+1) off-diag <= 0; H(-1) ungauged has max off-diag +1 but D H(-1) D has all off-diag <= 0; D H(g) D == H(-g) exactly; spectra of H(g), DH(g)D, H(-g) equal per component and per winding sector :: max off-diag: H(+1) -1.0, DH(-1)D -1.0, [DH(+1)D 1.0]; max|DHD-H(-g)| 0.0; max |dE| 1.7e-14
+[PASS] L=2 rho=0 block Lambda V=0.5: H(+1) off-diag <= 0; H(-1) ungauged has max off-diag +1 but D H(-1) D has all off-diag <= 0; D H(g) D == H(-g) exactly; spectra of H(g), DH(g)D, H(-g) equal per component and per winding sector :: max off-diag: H(+1) -1.0, DH(-1)D -1.0, [DH(+1)D 1.0]; max|DHD-H(-g)| 0.0; max |dE| 3.7e-14
+[PASS] L=2 rho=0 block Lambda V=0.9: H(+1) off-diag <= 0; H(-1) ungauged has max off-diag +1 but D H(-1) D has all off-diag <= 0; D H(g) D == H(-g) exactly; spectra of H(g), DH(g)D, H(-g) equal per component and per winding sector :: max off-diag: H(+1) -1.0, DH(-1)D -1.0, [DH(+1)D 1.0]; max|DHD-H(-g)| 0.0; max |dE| 3.2e-14
+[PASS] L=2 rho=0 own GF(2) Lambda V=0.0: H(+1) off-diag <= 0; H(-1) ungauged has max off-diag +1 but D H(-1) D has all off-diag <= 0; D H(g) D == H(-g) exactly; spectra of H(g), DH(g)D, H(-g) equal per component and per winding sector :: max off-diag: H(+1) -1.0, DH(-1)D -1.0, [DH(+1)D 1.0]; max|DHD-H(-g)| 0.0; max |dE| 1.7e-14
+[PASS] L=2 rho=0 own GF(2) Lambda V=0.5: H(+1) off-diag <= 0; H(-1) ungauged has max off-diag +1 but D H(-1) D has all off-diag <= 0; D H(g) D == H(-g) exactly; spectra of H(g), DH(g)D, H(-g) equal per component and per winding sector :: max off-diag: H(+1) -1.0, DH(-1)D -1.0, [DH(+1)D 1.0]; max|DHD-H(-g)| 0.0; max |dE| 3.7e-14
+[PASS] L=2 rho=0 own GF(2) Lambda V=0.9: H(+1) off-diag <= 0; H(-1) ungauged has max off-diag +1 but D H(-1) D has all off-diag <= 0; D H(g) D == H(-g) exactly; spectra of H(g), DH(g)D, H(-g) equal per component and per winding sector :: max off-diag: H(+1) -1.0, DH(-1)D -1.0, [DH(+1)D 1.0]; max|DHD-H(-g)| 0.0; max |dE| 3.2e-14
+[INFO] V=0.0: canonical comp size 864 W=(np.int64(0), np.int64(0), np.int64(0)) E0=-9.0267209135; line-reversed comp size 464 W=(np.int64(-2), np.int64(0), np.int64(0)) E0=-7.3991109799; dE=1.6276099336; whole W=0 sector (880 states) E0=-9.0267209135
+[INFO] V=0.5: canonical comp size 864 W=(np.int64(0), np.int64(0), np.int64(0)) E0=-4.2558112626; line-reversed comp size 464 W=(np.int64(-2), np.int64(0), np.int64(0)) E0=-3.5243535036; dE=0.7314577591; whole W=0 sector (880 states) E0=-4.2558112626
+[INFO] V=0.9: canonical comp size 864 W=(np.int64(0), np.int64(0), np.int64(0)) E0=-0.8108224119; line-reversed comp size 464 W=(np.int64(-2), np.int64(0), np.int64(0)) E0=-0.6641014430; dE=0.1467209690; whole W=0 sector (880 states) E0=-0.8108224119
+[PASS] L=2 rho=0: canonical component 864 states, E0(V=0) = -9.0267209135; W=1 component 464, E0 = -7.3991109799
+[PASS] L=2 rho=0: exact dE(V=0.5) = 0.7314577591 (block value)
+[PASS] L=2 staggered rho=(-1)^(x+y+z): census :: 3273 Gauss states, 165 flip components, largest 405, 93 winding sectors (sigma-flux)
+[PASS] L=2 staggered rho=(-1)^(x+y+z): adjacency entries in {0,1} (no multiplicity), symmetric, no diagonal :: values [1.0]
+[PASS] L=2 staggered rho=(-1)^(x+y+z): winding constant on every flip component
+[PASS] L=2 staggered rho=(-1)^(x+y+z) block Lambda V=0.0: H(+1) off-diag <= 0; H(-1) ungauged has max off-diag +1 but D H(-1) D has all off-diag <= 0; D H(g) D == H(-g) exactly; spectra of H(g), DH(g)D, H(-g) equal per component and per winding sector :: max off-diag: H(+1) -1.0, DH(-1)D -1.0, [DH(+1)D 1.0]; max|DHD-H(-g)| 0.0; max |dE| 2.4e-14
+[PASS] L=2 staggered rho=(-1)^(x+y+z) block Lambda V=0.5: H(+1) off-diag <= 0; H(-1) ungauged has max off-diag +1 but D H(-1) D has all off-diag <= 0; D H(g) D == H(-g) exactly; spectra of H(g), DH(g)D, H(-g) equal per component and per winding sector :: max off-diag: H(+1) -1.0, DH(-1)D -1.0, [DH(+1)D 1.0]; max|DHD-H(-g)| 0.0; max |dE| 2.5e-14
+[PASS] L=2 staggered rho=(-1)^(x+y+z) block Lambda V=0.9: H(+1) off-diag <= 0; H(-1) ungauged has max off-diag +1 but D H(-1) D has all off-diag <= 0; D H(g) D == H(-g) exactly; spectra of H(g), DH(g)D, H(-g) equal per component and per winding sector :: max off-diag: H(+1) -1.0, DH(-1)D -1.0, [DH(+1)D 1.0]; max|DHD-H(-g)| 0.0; max |dE| 5.0e-14
+[PASS] L=2 staggered rho=(-1)^(x+y+z) own GF(2) Lambda V=0.0: H(+1) off-diag <= 0; H(-1) ungauged has max off-diag +1 but D H(-1) D has all off-diag <= 0; D H(g) D == H(-g) exactly; spectra of H(g), DH(g)D, H(-g) equal per component and per winding sector :: max off-diag: H(+1) -1.0, DH(-1)D -1.0, [DH(+1)D 1.0]; max|DHD-H(-g)| 0.0; max |dE| 2.4e-14
+[PASS] L=2 staggered rho=(-1)^(x+y+z) own GF(2) Lambda V=0.5: H(+1) off-diag <= 0; H(-1) ungauged has max off-diag +1 but D H(-1) D has all off-diag <= 0; D H(g) D == H(-g) exactly; spectra of H(g), DH(g)D, H(-g) equal per component and per winding sector :: max off-diag: H(+1) -1.0, DH(-1)D -1.0, [DH(+1)D 1.0]; max|DHD-H(-g)| 0.0; max |dE| 2.5e-14
+[PASS] L=2 staggered rho=(-1)^(x+y+z) own GF(2) Lambda V=0.9: H(+1) off-diag <= 0; H(-1) ungauged has max off-diag +1 but D H(-1) D has all off-diag <= 0; D H(g) D == H(-g) exactly; spectra of H(g), DH(g)D, H(-g) equal per component and per winding sector :: max off-diag: H(+1) -1.0, DH(-1)D -1.0, [DH(+1)D 1.0]; max|DHD-H(-g)| 0.0; max |dE| 5.0e-14
+elapsed 23.1s
+TOTAL: PASS=41 FAIL=0

@@ -1,0 +1,8 @@
+penalty w=  3.0e-01: defect 1.558e-01  sup||U-V2|| 0.088  min|det| 0.8429  W3(N=40,56) -1.000000 -1.000000
+penalty w=  3.0e+00: defect 2.790e-02  sup||U-V2|| 0.145  min|det| 0.9719  W3(N=40,56) -1.000000 -1.000000
+penalty w=  3.0e+01: defect 3.017e-03  sup||U-V2|| 0.215  min|det| 0.9981  W3(N=40,56) -1.000000 -1.000000
+penalty w=  3.0e+02: defect 3.709e-04  sup||U-V2|| 0.306  min|det| 0.9996  W3(N=40,56) -1.000000 -1.000000
+penalty w=  3.0e+03: defect 6.794e-05  sup||U-V2|| 0.338  min|det| 0.9999  W3(N=40,56) -1.000000 -1.000000
+penalty w=  3.0e+04: defect 1.325e-05  sup||U-V2|| 0.471  min|det| 1.0000  W3(N=40,56) -1.000000 -1.000000
+penalty w=  3.0e+05: defect 3.882e-06  sup||U-V2|| 0.545  min|det| 1.0000  W3(N=40,56) -1.000000 -1.000000
+penalty w=  3.0e+06: defect 3.478e-06  sup||U-V2|| 0.549  min|det| 1.0000  W3(N=40,56) -1.000000 -1.000000

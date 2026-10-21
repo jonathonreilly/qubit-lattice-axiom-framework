@@ -1,0 +1,18 @@
+PASS v^T G v = 1 - s^2 (so s^2 = 1 and G >= 0 force G v = 0)
+PASS w^T G w = s^2 and v^T G w = 0
+univariate element(s) in b0: [(19*b0**2 - 5*b0 - 5)*(19*b0**2 + 5*b0 - 5)]
+4 solutions, 4 real
+PASS G(b) v = 0 has exactly 4 real solutions (zero-dimensional ideal)
+  b = [0.3980160999, 0.2200178888, 0.1619481224]  s = 1.00000000000  eig = [-0.        0.000771  0.043204  0.691646]
+  b = [-0.3980160999, -0.2200178888, -0.1619481224]  s = -1.00000000000  eig = [-0.        0.000771  0.043204  0.691646]
+  b = [0.6611739947, 0.9568599941, -3.574893983]  s = -1.00000000000  eig = [-14.377382  -4.511352  -0.        44.574167]
+  b = [-0.6611739947, -0.9568599941, 3.574893983]  s = 1.00000000000  eig = [-14.377382  -4.511352  -0.        44.574167]
+PASS PSD ones are exactly +-b_gold (s = +1 at +b_gold, s = -1 at -b_gold)
+PASS cos omega(0) = 1 (phi0^T G phi0 = 1.000000000000000)
+PASS b_gold Gamma cone speed axis 1.0000000 diag 1.0000000 = 1
+PASS b_gold: cos omega(X) = -1.000000000000 = -1 (pi-mode at the axis doubler)
+PASS pi-mode cone at X: v_par = 1.0000000, v_perp = 0.2360680; sqrt5-2 = 0.2360680
+PASS two-tick clock: X modes at quasienergy -2.4e-16 with transverse speed 0.236068 per tick
+PASS beta_t = beta_s <=> rho = 1/(sqrt(K)*sqrt(U))
+PASS speed sqrt(beta_s/beta_t) = sqrt(UK) rho; 1/1.025 = 0.9756 = 0.9756
+TOTAL: PASS=11 FAIL=0

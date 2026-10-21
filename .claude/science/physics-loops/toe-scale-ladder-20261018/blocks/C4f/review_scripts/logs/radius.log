@@ -1,0 +1,5 @@
+PASS L1: exact structural dependency radius = 3 (claim 3)
+PASS L2: exact structural dependency radius = 3 (claim 3)
+empirical single-flip influence (150 trials, packed): {'L1': 2, 'L2': 3, 'U': 3}
+PASS empirical influence within proved bounds (L1,L2 <= 3, U <= 6)
+TOTAL: PASS=3 FAIL=0   [14s]

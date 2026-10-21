@@ -1,0 +1,19 @@
+   F1 ord(4,0,5,2,3,1) plane normal 0: motif phase p=2, #odd-overlap offsets=2; direct Q(m=5..) [0, 0, 0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+   F1 ord(4,0,5,2,3,1) plane normal 1: motif phase p=2, #odd-overlap offsets=2; direct Q(m=5..) [0, 0, 0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+   F1 ord(4,0,5,2,3,1) plane normal 2: motif phase p=2, #odd-overlap offsets=2; direct Q(m=5..) [0, 0, 0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+   F1 ord(2,5,1,3,0,4) plane normal 0: motif phase p=2, #odd-overlap offsets=2; direct Q(m=5..) [0, 0, 0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+   F1 ord(2,5,1,3,0,4) plane normal 1: motif phase p=2, #odd-overlap offsets=2; direct Q(m=5..) [0, 0, 0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+   F1 ord(2,5,1,3,0,4) plane normal 2: motif phase p=2, #odd-overlap offsets=2; direct Q(m=5..) [0, 0, 0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+   F1 ord(5,3,1,4,2,0) plane normal 0: motif phase p=2, #odd-overlap offsets=2; direct Q(m=5..) [0, 0, 0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+   F1 ord(5,3,1,4,2,0) plane normal 1: motif phase p=0, #odd-overlap offsets=4; direct Q(m=5..) [0, 0, 0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+   F1 ord(5,3,1,4,2,0) plane normal 2: motif phase p=2, #odd-overlap offsets=2; direct Q(m=5..) [0, 0, 0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+   F3 plane normal 0: motif phase p=0, #odd-overlap offsets=4; direct Q(m=5..) [0, 0, 0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+   F3 plane normal 1: motif phase p=0, #odd-overlap offsets=4; direct Q(m=5..) [0, 0, 0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+   F3 plane normal 2: motif phase p=0, #odd-overlap offsets=4; direct Q(m=5..) [0, 0, 0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+   F4 plane normal 0: motif phase p=0, #odd-overlap offsets=4; direct Q(m=5..) [0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+   F4 plane normal 1: motif phase p=0, #odd-overlap offsets=4; direct Q(m=5..) [0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+   F4 plane normal 2: motif phase p=0, #odd-overlap offsets=4; direct Q(m=5..) [0, 0, 0, 0]; closed-form Q(m=5..60) all 0: True
+[PASS] overlap window large enough (no support overlap at offset R)
+[PASS] closed-form Q(m) equals the direct product at m = 5..10 (m >= 2s-1 = 5)
+[PASS] flux-0 plane sign is + for every m = 5..60 by the closed form (period divides 4 -> all m >= 5)
+TOTAL: PASS=3 FAIL=0

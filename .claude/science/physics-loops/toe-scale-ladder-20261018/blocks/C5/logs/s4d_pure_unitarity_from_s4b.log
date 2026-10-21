@@ -1,0 +1,8 @@
+start (s4b endpoint w=3e6): defect 3.320e-06  sup||U-V2|| 0.549  min|det| 1.0000  W3 -1.000000
+pure-unitarity stage 0: cost 7.871e-13  defect 2.587e-06  sup||U-V2|| 0.553  min|det| 1.0000  W3 -1.000000 -1.000000
+pure-unitarity stage 1: cost 5.752e-13  defect 2.245e-06  sup||U-V2|| 0.552  min|det| 1.0000  W3 -1.000000 -1.000000
+pure-unitarity stage 2: cost 3.989e-13  defect 1.846e-06  sup||U-V2|| 0.561  min|det| 1.0000  W3 -1.000000 -1.000000
+pure-unitarity stage 3: cost 3.293e-13  defect 1.821e-06  sup||U-V2|| 0.567  min|det| 1.0000  W3 -1.000000 -1.000000
+PASS: Theorem K consistency at r=2: no matrix with defect < 1e-10, W3 = -1, min|det| > 0.5 (final defect 1.82e-06, W3 -1.0000, min|det| 1.000)
+PASS: all W3 values integer to 1e-6
+TOTAL: PASS=2 FAIL=0

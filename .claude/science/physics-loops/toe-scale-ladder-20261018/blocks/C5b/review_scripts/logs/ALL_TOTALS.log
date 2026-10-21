@@ -1,0 +1,4 @@
+r1_lemmas.log: TOTAL: PASS=15 FAIL=0
+r2_models.log: TOTAL: PASS=18 FAIL=0
+r3_witness.log: TOTAL: PASS=13 FAIL=0
+TOTAL: PASS=46 FAIL=0

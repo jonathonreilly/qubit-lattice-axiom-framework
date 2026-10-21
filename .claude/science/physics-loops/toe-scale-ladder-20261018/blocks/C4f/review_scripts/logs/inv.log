@@ -1,0 +1,13 @@
+PASS L=8: L1^2=L2^2=id, U^-1 U=id, N conserved on 228 configs (random densities + packed stress); crossings {'L1': 83, 'B': 25, 'A': 25}
+FAIL L=8: both L2 kinds and L1 actually crossed (>=50 each)
+PASS L=8: U^-6 U^6 = id on 33 configs
+  [t=5s]
+PASS L=10: L1^2=L2^2=id, U^-1 U=id, N conserved on 228 configs (random densities + packed stress); crossings {'L1': 346, 'B': 95, 'A': 80}
+PASS L=10: both L2 kinds and L1 actually crossed (>=50 each)
+PASS L=10: U^-6 U^6 = id on 33 configs
+  [t=15s]
+PASS L=12: L1^2=L2^2=id, U^-1 U=id, N conserved on 228 configs (random densities + packed stress); crossings {'L1': 786, 'B': 231, 'A': 190}
+PASS L=12: both L2 kinds and L1 actually crossed (>=50 each)
+PASS L=12: U^-6 U^6 = id on 33 configs
+  [t=30s]
+TOTAL: PASS=8 FAIL=1   [30s]

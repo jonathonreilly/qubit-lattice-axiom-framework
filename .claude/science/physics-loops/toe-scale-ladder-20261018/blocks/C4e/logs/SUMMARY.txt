@@ -1,0 +1,9 @@
+c4e_02_k3_matching_s-1.txt: TOTAL: PASS=4 FAIL=0
+c4e_04_verify_construction.txt: TOTAL: PASS=11 FAIL=0
+c4e_05_clusters.txt: TOTAL: PASS=4 FAIL=0
+c4e_06_independent_check.txt: TOTAL: PASS=5 FAIL=0
+c4e_07_stress.txt: TOTAL: PASS=1 FAIL=0
+c4e_04_first_run_FAIL.txt (superseded run, kept): TOTAL: PASS=10 FAIL=1
+c4e_01_sat1d.txt: descriptive 1D probe, no PASS/FAIL lines
+Including the superseded first run of c4e_04 (kept): PASS=35 FAIL=1
+TOTAL: PASS=25 FAIL=0

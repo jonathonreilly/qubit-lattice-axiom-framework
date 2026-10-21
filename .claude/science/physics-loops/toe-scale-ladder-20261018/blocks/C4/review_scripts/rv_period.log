@@ -1,0 +1,5 @@
+PASS solution 0 (|supp X-image|=1): alpha^2 = id with phases
+PASS solution 1 (|supp X-image|=33): alpha^2 = id with phases
+PASS solution 2 (|supp X-image|=17): alpha^2 = id with phases
+PASS solution 3 (|supp X-image|=73): alpha^2 = id with phases
+TOTAL: PASS=4 FAIL=0

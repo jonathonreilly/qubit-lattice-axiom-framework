@@ -1,0 +1,24 @@
+c4d_01_spectator_toy.txt: PASS=7 FAIL=0
+c4d_02_range1_monomial.txt: PASS=3 FAIL=0
+c4d_04_range1_quantum_search.txt: PASS=2 FAIL=1
+c4d_05_range1_exact_C1.txt: PASS=3 FAIL=2
+c4d_05_range1_exact_O.txt: PASS=5 FAIL=0
+c4d_05_range1_exact_T.txt: PASS=5 FAIL=0
+c4d_06_range2_glider.txt: PASS=2 FAIL=0
+c4d_07_clique_k2_T.txt: PASS=2 FAIL=0
+c4d_07_clique_k3_T.txt: PASS=1 FAIL=1
+c4d_08_clique_numeric_k3.txt: PASS=1 FAIL=0
+c4d_09_shell_nogo.txt: PASS=2 FAIL=0
+c4d_10_clique3_solution.txt: PASS=2 FAIL=0
+c4d_10_clique3_solution_long.txt: PASS=2 FAIL=0
+Per-log counts use each log's LAST TOTAL line (c4d_08/c4d_10 logs embed a re-run of c4d_07 k=3,
+whose FAIL is the same one already counted in c4d_07_clique_k3_T.txt).
+FAIL lines kept on purpose (see NOTE 'Logged FAILs'):
+  c4d_04_range1_quantum_search.txt: FAIL mu>0: no near-solution with moving weight found (best cost >= 1e-4 for all mu>0) :: {0.0: 4.73821554722598e-22, 0.02: 5.555653347064335e-05, 0.1:
+  c4d_05_range1_exact_C1.txt: FAIL [C1] every non-stay amplitude is forced to zero (W diagonal)
+  c4d_05_range1_exact_C1.txt: FAIL [C1] independent route: all amplitudes except the 'stay' ones vanish
+  c4d_07_clique_k3_T.txt: FAIL [k=3,T] every non-stay amplitude of W_k is forced to zero (W_k diagonal) :: 159 non-stay survivors
+  c4d_08_clique_numeric_k3.txt: FAIL [k=3,T] every non-stay amplitude of W_k is forced to zero (W_k diagonal) :: 159 non-stay survivors
+  c4d_10_clique3_solution.txt: FAIL [k=3,T] every non-stay amplitude of W_k is forced to zero (W_k diagonal) :: 159 non-stay survivors
+  c4d_10_clique3_solution_long.txt: FAIL [k=3,T] every non-stay amplitude of W_k is forced to zero (W_k diagonal) :: 159 non-stay survivors
+TOTAL: PASS=37 FAIL=4

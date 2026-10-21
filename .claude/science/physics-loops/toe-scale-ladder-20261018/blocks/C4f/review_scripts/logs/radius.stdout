@@ -1,0 +1,55 @@
+PASS lift reproduces rho for g with perm sign 1
+PASS T element: diagonal in n basis, relative phase ratio^3=1 (got (1-0j))
+PASS lift reproduces rho for g with perm sign 1
+PASS T element: diagonal in n basis, relative phase ratio^3=1 (got (1-0j))
+PASS lift reproduces rho for g with perm sign 1
+PASS T element: diagonal in n basis, relative phase ratio^3=1 (got (1-0j))
+PASS lift reproduces rho for g with perm sign 1
+PASS T element: diagonal in n basis, relative phase ratio^3=1 (got (1-0j))
+PASS lift reproduces rho for g with perm sign -1
+PASS odd element: off-diagonal (particle-hole) in n basis, phase ratio (0.5+0.866j); ratio^3 = const
+PASS lift reproduces rho for g with perm sign -1
+PASS odd element: off-diagonal (particle-hole) in n basis, phase ratio (0.5+0.866j); ratio^3 = const
+PASS lift reproduces rho for g with perm sign -1
+PASS odd element: off-diagonal (particle-hole) in n basis, phase ratio (0.5+0.866j); ratio^3 = const
+PASS lift reproduces rho for g with perm sign -1
+PASS odd element: off-diagonal (particle-hole) in n basis, phase ratio (0.5+0.866j); ratio^3 = const
+PASS lift reproduces rho for g with perm sign -1
+PASS odd element: off-diagonal (particle-hole) in n basis, phase ratio (-1+0j); ratio^3 = const
+PASS lift reproduces rho for g with perm sign -1
+PASS odd element: off-diagonal (particle-hole) in n basis, phase ratio (-1+0j); ratio^3 = const
+PASS lift reproduces rho for g with perm sign -1
+PASS odd element: off-diagonal (particle-hole) in n basis, phase ratio (-1+0j); ratio^3 = const
+PASS lift reproduces rho for g with perm sign -1
+PASS odd element: off-diagonal (particle-hole) in n basis, phase ratio (-1+0j); ratio^3 = const
+PASS lift reproduces rho for g with perm sign 1
+PASS T element: diagonal in n basis, relative phase ratio^3=1 (got (-0.5+0.866j))
+PASS lift reproduces rho for g with perm sign 1
+PASS T element: diagonal in n basis, relative phase ratio^3=1 (got (-0.5+0.866j))
+PASS lift reproduces rho for g with perm sign 1
+PASS T element: diagonal in n basis, relative phase ratio^3=1 (got (-0.5+0.866j))
+PASS lift reproduces rho for g with perm sign 1
+PASS T element: diagonal in n basis, relative phase ratio^3=1 (got (-0.5+0.866j))
+PASS lift reproduces rho for g with perm sign 1
+PASS T element: diagonal in n basis, relative phase ratio^3=1 (got (-0.5-0.866j))
+PASS lift reproduces rho for g with perm sign 1
+PASS T element: diagonal in n basis, relative phase ratio^3=1 (got (-0.5-0.866j))
+PASS lift reproduces rho for g with perm sign 1
+PASS T element: diagonal in n basis, relative phase ratio^3=1 (got (-0.5-0.866j))
+PASS lift reproduces rho for g with perm sign 1
+PASS T element: diagonal in n basis, relative phase ratio^3=1 (got (-0.5-0.866j))
+PASS lift reproduces rho for g with perm sign -1
+PASS odd element: off-diagonal (particle-hole) in n basis, phase ratio (0.5-0.866j); ratio^3 = const
+PASS lift reproduces rho for g with perm sign -1
+PASS odd element: off-diagonal (particle-hole) in n basis, phase ratio (0.5-0.866j); ratio^3 = const
+PASS lift reproduces rho for g with perm sign -1
+PASS odd element: off-diagonal (particle-hole) in n basis, phase ratio (0.5-0.866j); ratio^3 = const
+PASS lift reproduces rho for g with perm sign -1
+PASS odd element: off-diagonal (particle-hole) in n basis, phase ratio (0.5-0.866j); ratio^3 = const
+PASS odd off-diagonal phase ratios take values in one coset c*{1,w,w^2}
+TOTAL: PASS=49 FAIL=0
+PASS L1: exact structural dependency radius = 3 (claim 3)
+PASS L2: exact structural dependency radius = 3 (claim 3)
+empirical single-flip influence (150 trials, packed): {'L1': 2, 'L2': 3, 'U': 3}
+PASS empirical influence within proved bounds (L1,L2 <= 3, U <= 6)
+TOTAL: PASS=3 FAIL=0   [14s]

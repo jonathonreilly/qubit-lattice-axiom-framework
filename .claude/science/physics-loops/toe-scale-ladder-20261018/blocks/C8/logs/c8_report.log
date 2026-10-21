@@ -1,0 +1,118 @@
+====================================================================================================
+C8 lattice Sakharov coefficient c_G = a^2/(16 pi G_ind) per walk (one IR Dirac fermion), c = 1 units
+channels: z = q||(001), f = q||(110), d = q||(111), g = q||(123); A/B = the two TT polarisations
+====================================================================================================
+bstar  M1: zA 8.6101511e-03(+-2e-10)  zB 8.3076469e-03(+-1e-09)  fA 7.2418805e-03(+-4e-10)  fB 6.9339064e-03(+-1e-09)  dA 6.6489129e-03(+-8e-10)  dB 6.6489129e-03(+-7e-10)  gA 7.0825243e-03(+-7e-10)  gB 7.1060298e-03(+-7e-10)
+        cubic fit: A=1.143378e-02 B=5.484022e-03 C=9.731517e-04;  isotropic average c_G = 7.3667286e-03 (+-4e-09)
+        anisotropy: polarisation-summed K over z,f,d spans 24.6% of 2 c_G^iso
+PASS [numerical] bstar M1: O_h cubic form fitted on z, (110), (111) predicts the generic (123) direction: pred 1.41885541e-02 vs computed 1.41885541e-02 (rel 9.3e-15 < 2e-5)
+bstar  M2: zA 3.7956189e-03(+-2e-10)  zB 3.7250900e-03(+-1e-09)  fA 3.5940561e-03(+-4e-10)  fB 3.5354403e-03(+-9e-10)  dA 3.5008170e-03(+-6e-10)  dB 3.5008170e-03(+-6e-10)
+        cubic fit: A=6.738284e-03 B=7.824251e-04 C=6.862860e-05;  isotropic average c_G = 3.6041963e-03 (+-4e-09)
+        anisotropy: polarisation-summed K over z,f,d spans 7.2% of 2 c_G^iso
+bstar  M3: zA 1.0213445e-02(+-2e-10)  zB 8.3631930e-03(+-1e-09)  fA 7.9572932e-03(+-3e-10)  fB 5.0071095e-03(+-9e-10)  dA 5.8940496e-03(+-6e-10)  dB 5.8940496e-03(+-6e-10)
+        cubic fit: A=7.352167e-03 B=1.122447e-02 C=1.874993e-02;  isotropic average c_G = 7.1327103e-03 (+-4e-09)
+        anisotropy: polarisation-summed K over z,f,d spans 47.6% of 2 c_G^iso
+bstar  M4: zA 7.6975002e-03(+-3e-10)  zB 1.0238562e-02(+-1e-09)  fA 8.7000961e-03(+-4e-10)  fB 1.0631849e-02(+-8e-10)  dA 9.8928517e-03(+-6e-10)  dB 9.8928517e-03(+-6e-10)
+        cubic fit: A=2.072783e-02 B=-2.791767e-03 C=-3.114846e-04;  isotropic average c_G = 9.5249011e-03 (+-4e-09)
+        anisotropy: polarisation-summed K over z,f,d spans 9.7% of 2 c_G^iso
+PASS [numerical] bstar M1: (111) TT polarisations degenerate (C3 symmetry), rel 8.8e-14 < 1e-9
+PASS [numerical] bstar M1 zA: error certificate over 4 resolutions (N=96/128, kap=1/1.4, inner 96/128 radial) rel 2.5e-08 < 1e-6
+PASS [numerical] bstar M1 zB: error certificate over 4 resolutions (N=96/128, kap=1/1.4, inner 96/128 radial) rel 1.7e-07 < 1e-6
+PASS [numerical] bstar M1 dA: error certificate over 4 resolutions (N=96/128, kap=1/1.4, inner 96/128 radial) rel 1.2e-07 < 1e-6
+iso    M1: zA 9.2143017e-03(+-2e-10)  zB 8.6202488e-03(+-1e-09)  fA 6.6936758e-03(+-4e-10)  fB 5.2982531e-03(+-1e-09)  dA 5.2332793e-03(+-8e-10)  dB 5.2332793e-03(+-7e-10)  gA 6.0405111e-03(+-7e-10)  gB 6.1009620e-03(+-7e-10)
+        cubic fit: A=6.149307e-03 B=1.168524e-02 C=1.139860e-02;  isotropic average c_G = 6.6345056e-03 (+-4e-09)
+        anisotropy: polarisation-summed K over z,f,d spans 55.5% of 2 c_G^iso
+PASS [numerical] iso M1: O_h cubic form fitted on z, (110), (111) predicts the generic (123) direction: pred 1.21414732e-02 vs computed 1.21414732e-02 (rel 2.4e-14 < 2e-5)
+iso    M2: zA 4.2254786e-03(+-2e-10)  zB 4.0047880e-03(+-1e-09)  fA 3.6305964e-03(+-4e-10)  fB 3.3765081e-03(+-9e-10)  dA 3.3193742e-03(+-7e-10)  dB 3.3193742e-03(+-7e-10)
+        cubic fit: A=5.783942e-03 B=2.446324e-03 C=1.062844e-03;  isotropic average c_G = 3.6309296e-03 (+-4e-09)
+        anisotropy: polarisation-summed K over z,f,d spans 21.9% of 2 c_G^iso
+iso    M3: zA 8.9583321e-03(+-2e-10)  zB 7.7254584e-03(+-1e-09)  fA 6.6131050e-03(+-3e-10)  fB 3.9887167e-03(+-9e-10)  dA 4.6649678e-03(+-6e-10)  dB 4.6649678e-03(+-6e-10)
+        cubic fit: A=4.519853e-03 B=1.216394e-02 C=2.039680e-02;  isotropic average c_G = 6.0062353e-03 (+-4e-09)
+        anisotropy: polarisation-summed K over z,f,d spans 61.2% of 2 c_G^iso
+iso    M4: zA 7.0151156e-03(+-3e-10)  zB 9.4653344e-03(+-1e-09)  fA 7.8210861e-03(+-4e-10)  fB 9.9854422e-03(+-8e-10)  dA 9.0516790e-03(+-7e-10)  dB 9.0516790e-03(+-7e-10)
+        cubic fit: A=1.913261e-02 B=-2.652157e-03 C=-3.920304e-03;  isotropic average c_G = 8.7519882e-03 (+-4e-09)
+        anisotropy: polarisation-summed K over z,f,d spans 9.3% of 2 c_G^iso
+PASS [numerical] iso M1: (111) TT polarisations degenerate (C3 symmetry), rel 1.1e-13 < 1e-9
+PASS [numerical] iso M1 zA: error certificate over 4 resolutions (N=96/128, kap=1/1.4, inner 96/128 radial) rel 2.5e-08 < 1e-6
+PASS [numerical] iso M1 zB: error certificate over 4 resolutions (N=96/128, kap=1/1.4, inner 96/128 radial) rel 1.6e-07 < 1e-6
+PASS [numerical] iso M1 dA: error certificate over 4 resolutions (N=96/128, kap=1/1.4, inner 96/128 radial) rel 1.6e-07 < 1e-6
+PASS [numerical] SIGN (pre-registered, decisive): c_G > 0 in every TT channel, every coupling M1-M4, at b* and b_iso
+----------------------------------------------------------------------------------------------------
+Lapse diagnostic (covariance predicts zero O(q^2) lapse stiffness; NOTE Lemma L proves it exactly)
+  bstar L1 q||z: c_N = -9.796e-13   (q^0 part 9.620e-17)
+PASS [numerical] bstar L1 q||z: lapse O(q^2) stiffness vanishes (|c_N| < 1e-10)
+  bstar L1 q||d: c_N = -1.135e-12   (q^0 part 9.620e-17)
+PASS [numerical] bstar L1 q||d: lapse O(q^2) stiffness vanishes (|c_N| < 1e-10)
+  bstar L2 q||z: c_N = -7.945e-13   (q^0 part 9.620e-17)
+PASS [numerical] bstar L2 q||z: lapse O(q^2) stiffness vanishes (|c_N| < 1e-10)
+  bstar L2 q||d: c_N = -9.000e-13   (q^0 part 9.620e-17)
+PASS [numerical] bstar L2 q||d: lapse O(q^2) stiffness vanishes (|c_N| < 1e-10)
+  iso L1 q||z: c_N = -1.087e-12   (q^0 part 8.979e-17)
+PASS [numerical] iso L1 q||z: lapse O(q^2) stiffness vanishes (|c_N| < 1e-10)
+  iso L1 q||d: c_N = -1.172e-12   (q^0 part 8.979e-17)
+PASS [numerical] iso L1 q||d: lapse O(q^2) stiffness vanishes (|c_N| < 1e-10)
+  iso L2 q||z: c_N = -1.024e-12   (q^0 part 8.979e-17)
+PASS [numerical] iso L2 q||z: lapse O(q^2) stiffness vanishes (|c_N| < 1e-10)
+  iso L2 q||d: c_N = -1.004e-12   (q^0 part 8.979e-17)
+PASS [numerical] iso L2 q||d: lapse O(q^2) stiffness vanishes (|c_N| < 1e-10)
+----------------------------------------------------------------------------------------------------
+Mass dependence (M1, theta = m a) at b*, b_iso; IR stability of the massless value
+  bstar chi=0.00 zA: theta=0: 8.6101511e-03; theta=0.2: 7.7178546e-03; theta=0.1: 8.0933094e-03; theta=0.05: 8.3328229e-03
+      [reported, not asserted] slope dc_G/dtheta ~ -4.790e-03; linear extrapolation 2c(0.05)-c(0.1) = 8.5723364e-03 vs massless 8.6101511e-03 (rel 4.4e-03)
+  bstar chi=0.00 zB: theta=0: 8.3076469e-03; theta=0.2: 7.4583781e-03; theta=0.1: 7.8156481e-03; theta=0.05: 8.0437265e-03
+      [reported, not asserted] slope dc_G/dtheta ~ -4.562e-03; linear extrapolation 2c(0.05)-c(0.1) = 8.2718050e-03 vs massless 8.3076469e-03 (rel 4.3e-03)
+  bstar chi=0.00 dA: theta=0: 6.6489129e-03; theta=0.2: 6.4018999e-03; theta=0.1: 6.5111503e-03; theta=0.05: 6.5782604e-03
+      [reported, not asserted] slope dc_G/dtheta ~ -1.342e-03; linear extrapolation 2c(0.05)-c(0.1) = 6.6453705e-03 vs massless 6.6489129e-03 (rel 5.3e-04)
+  bstar chi=1.57 zA: theta=0: 8.6101511e-03; theta=0.2: 8.8224108e-03; theta=0.1: 8.7449901e-03; theta=0.05: 8.6875938e-03
+      [reported, not asserted] slope dc_G/dtheta ~ +1.148e-03; linear extrapolation 2c(0.05)-c(0.1) = 8.6301974e-03 vs massless 8.6101511e-03 (rel 2.3e-03)
+  bstar chi=1.57 zB: theta=0: 8.3076469e-03; theta=0.2: 8.4991234e-03; theta=0.1: 8.4293650e-03; theta=0.05: 8.3779201e-03
+      [reported, not asserted] slope dc_G/dtheta ~ +1.029e-03; linear extrapolation 2c(0.05)-c(0.1) = 8.3264752e-03 vs massless 8.3076469e-03 (rel 2.3e-03)
+  bstar chi=1.57 dA: theta=0: 6.6489129e-03; theta=0.2: 6.6603906e-03; theta=0.1: 6.6673433e-03; theta=0.05: 6.6646215e-03
+      [reported, not asserted] slope dc_G/dtheta ~ +5.443e-05; linear extrapolation 2c(0.05)-c(0.1) = 6.6618998e-03 vs massless 6.6489129e-03 (rel 2.0e-03)
+  iso chi=0.00 zA: theta=0: 9.2143017e-03; theta=0.2: 8.3505830e-03; theta=0.1: 8.6728301e-03; theta=0.05: 8.9105996e-03
+      [reported, not asserted] slope dc_G/dtheta ~ -4.755e-03; linear extrapolation 2c(0.05)-c(0.1) = 9.1483691e-03 vs massless 9.2143017e-03 (rel 7.2e-03)
+  iso chi=0.00 zB: theta=0: 8.6202488e-03; theta=0.2: 7.6962814e-03; theta=0.1: 8.0378727e-03; theta=0.05: 8.2925253e-03
+      [reported, not asserted] slope dc_G/dtheta ~ -5.093e-03; linear extrapolation 2c(0.05)-c(0.1) = 8.5471779e-03 vs massless 8.6202488e-03 (rel 8.5e-03)
+  iso chi=0.00 dA: theta=0: 5.2332793e-03; theta=0.2: 5.3635456e-03; theta=0.1: 5.2947718e-03; theta=0.05: 5.2645466e-03
+      [reported, not asserted] slope dc_G/dtheta ~ +6.045e-04; linear extrapolation 2c(0.05)-c(0.1) = 5.2343214e-03 vs massless 5.2332793e-03 (rel 2.0e-04)
+  iso chi=1.57 zA: theta=0: 9.2143017e-03; theta=0.2: 9.0572250e-03; theta=0.1: 9.1618941e-03; theta=0.05: 9.1991834e-03
+      [reported, not asserted] slope dc_G/dtheta ~ -7.458e-04; linear extrapolation 2c(0.05)-c(0.1) = 9.2364727e-03 vs massless 9.2143017e-03 (rel 2.4e-03)
+  iso chi=1.57 zB: theta=0: 8.6202488e-03; theta=0.2: 8.4204573e-03; theta=0.1: 8.5503977e-03; theta=0.05: 8.5976885e-03
+      [reported, not asserted] slope dc_G/dtheta ~ -9.458e-04; linear extrapolation 2c(0.05)-c(0.1) = 8.6449793e-03 vs massless 8.6202488e-03 (rel 2.9e-03)
+  iso chi=1.57 dA: theta=0: 5.2332793e-03; theta=0.2: 5.1677472e-03; theta=0.1: 5.2097388e-03; theta=0.05: 5.2279684e-03
+      [reported, not asserted] slope dc_G/dtheta ~ -3.646e-04; linear extrapolation 2c(0.05)-c(0.1) = 5.2461981e-03 vs massless 5.2332793e-03 (rel 2.5e-03)
+----------------------------------------------------------------------------------------------------
+b_gold (massless pi-modes at X; computed at theta > 0 with partition-of-unity balls at Gamma and the three X)
+  theta=0.4: zA 1.469502e-02(+-5e-10)  zB 1.433217e-02(+-1e-09)  fA 1.121712e-02(+-5e-10)  fB 1.153547e-02(+-1e-09)  dA 1.019931e-02(+-8e-10)  dB 1.019931e-02(+-8e-10)
+     isotropic average c_G = 1.197001e-02 (+-5e-09)
+  theta=0.2: zA 2.377692e-02(+-2e-09)  zB 2.293741e-02(+-4e-09)  fA 1.504939e-02(+-1e-09)  fB 1.540415e-02(+-3e-09)  dA 1.229788e-02(+-2e-09)  dB 1.229788e-02(+-2e-09)
+     isotropic average c_G = 1.679660e-02 (+-1e-08)
+  theta=0.1: zA 3.621790e-02(+-1e-08)  zB 3.470414e-02(+-1e-08)  fA 2.009680e-02(+-3e-09)  fB 2.007650e-02(+-5e-09)  dA 1.471408e-02(+-4e-09)  dB 1.471408e-02(+-2e-09)
+     isotropic average c_G = 2.309781e-02 (+-5e-08)
+  theta=0.05: zA 4.826530e-02(+-3e-08)  zB 4.617713e-02(+-3e-08)  fA 2.488160e-02(+-7e-09)  fB 2.431321e-02(+-9e-09)  dA 1.683443e-02(+-3e-08)  dB 1.683435e-02(+-5e-09)
+     isotropic average c_G = 2.906515e-02 (+-1e-07)
+  theta=0.0125: zA 6.249303e-02(+-1e-08)  zB 5.986360e-02(+-2e-09)  fA 3.032681e-02(+-8e-09)  fB 2.907493e-02(+-3e-08)  dA 1.904872e-02(+-2e-08)  dB 1.904748e-02(+-2e-08)
+     isotropic average c_G = 3.595514e-02 (+-7e-08)
+  theta=0.0: zA 6.870548e-02(+-8e-10)  zB 6.588840e-02(+-2e-08)  fA 3.259936e-02(+-6e-09)  fB 3.107318e-02(+-4e-08)  dA 1.988672e-02(+-2e-08)  dB 1.988366e-02(+-2e-08)
+     isotropic average c_G = 3.889476e-02 (+-1e-07)
+----------------------------------------------------------------------------------------------------
+Comparison with the continuum (pre-registered criterion 2)
+  heat kernel (proper time, one Dirac): c_G = (Lambda a)^2/(96 pi^2): Lambda = 1/a -> 1.055429e-03; Lambda = pi/a -> 1.041667e-02
+  same bubble in the continuum, sharp |k| < Lambda: c_G = 1.568066e-03 (Lambda a)^2  [= 13/(840 pi^2) = 1.568066e-03]
+  ('bstar', 'M1')   : c_G^iso = 7.366729e-03; Lambda_eff a (heat-kernel equivalent) = 2.6419 = 0.8410 pi;  a/l_P = sqrt(16 pi c_G N_f) = 0.6085 sqrt(N_f)
+  ('bstar', 'M2')   : c_G^iso = 3.604196e-03; Lambda_eff a (heat-kernel equivalent) = 1.8479 = 0.5882 pi;  a/l_P = sqrt(16 pi c_G N_f) = 0.4256 sqrt(N_f)
+  ('bstar', 'M3')   : c_G^iso = 7.132710e-03; Lambda_eff a (heat-kernel equivalent) = 2.5996 = 0.8275 pi;  a/l_P = sqrt(16 pi c_G N_f) = 0.5988 sqrt(N_f)
+  ('bstar', 'M4')   : c_G^iso = 9.524901e-03; Lambda_eff a (heat-kernel equivalent) = 3.0041 = 0.9562 pi;  a/l_P = sqrt(16 pi c_G N_f) = 0.6919 sqrt(N_f)
+  ('iso', 'M1')     : c_G^iso = 6.634506e-03; Lambda_eff a (heat-kernel equivalent) = 2.5072 = 0.7981 pi;  a/l_P = sqrt(16 pi c_G N_f) = 0.5775 sqrt(N_f)
+  ('iso', 'M2')     : c_G^iso = 3.630930e-03; Lambda_eff a (heat-kernel equivalent) = 1.8548 = 0.5904 pi;  a/l_P = sqrt(16 pi c_G N_f) = 0.4272 sqrt(N_f)
+  ('iso', 'M3')     : c_G^iso = 6.006235e-03; Lambda_eff a (heat-kernel equivalent) = 2.3855 = 0.7593 pi;  a/l_P = sqrt(16 pi c_G N_f) = 0.5495 sqrt(N_f)
+  ('iso', 'M4')     : c_G^iso = 8.751988e-03; Lambda_eff a (heat-kernel equivalent) = 2.8796 = 0.9166 pi;  a/l_P = sqrt(16 pi c_G N_f) = 0.6633 sqrt(N_f)
+  ('gold', 0.4)     : c_G^iso = 1.197001e-02; Lambda_eff a (heat-kernel equivalent) = 3.3677 = 1.0720 pi;  a/l_P = sqrt(16 pi c_G N_f) = 0.7757 sqrt(N_f)
+  ('gold', 0.2)     : c_G^iso = 1.679660e-02; Lambda_eff a (heat-kernel equivalent) = 3.9893 = 1.2698 pi;  a/l_P = sqrt(16 pi c_G N_f) = 0.9189 sqrt(N_f)
+  ('gold', 0.1)     : c_G^iso = 2.309781e-02; Lambda_eff a (heat-kernel equivalent) = 4.6781 = 1.4891 pi;  a/l_P = sqrt(16 pi c_G N_f) = 1.0775 sqrt(N_f)
+  ('gold', 0.05)    : c_G^iso = 2.906515e-02; Lambda_eff a (heat-kernel equivalent) = 5.2477 = 1.6704 pi;  a/l_P = sqrt(16 pi c_G N_f) = 1.2087 sqrt(N_f)
+  ('gold', 0.0125)  : c_G^iso = 3.595514e-02; Lambda_eff a (heat-kernel equivalent) = 5.8367 = 1.8579 pi;  a/l_P = sqrt(16 pi c_G N_f) = 1.3444 sqrt(N_f)
+  ('gold', 0.0)     : c_G^iso = 3.889476e-02; Lambda_eff a (heat-kernel equivalent) = 6.0706 = 1.9323 pi;  a/l_P = sqrt(16 pi c_G N_f) = 1.3982 sqrt(N_f)
+PASS [numerical] bstar M1: Lambda_eff/(pi/a) = 0.841 lies in the pre-declared "same order" window [0.1, 10]
+PASS [numerical] iso M1: Lambda_eff/(pi/a) = 0.798 lies in the pre-declared "same order" window [0.1, 10]
+TOTAL: PASS=21 FAIL=0

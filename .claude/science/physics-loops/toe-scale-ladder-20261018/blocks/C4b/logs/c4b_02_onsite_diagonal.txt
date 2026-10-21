@@ -1,0 +1,16 @@
+[a] action=trivial: real commutant dim = 9
+[a] action=sign: real commutant dim = 5
+    sign action: commutant dim 5 (contains all rotations about x)
+[a] action=axis: real commutant dim = 2
+PASS axis: commutant = span{P_n, P_E} (dim 2)
+PASS axis: covariant on-site automorphisms = {id, Ad(sigma_n)} (pi about n)
+[a] action=full: real commutant dim = 1
+PASS full: commutant of Q(O) is scalars (only identity in SO(3))
+[b] axis: min span over random m = 3; span(orbit of (1,1,1)) = 1; axes {(1, 0, 0): np.int64(3), (1, 1, 0): np.int64(3), (1, -1, 0): np.int64(2), (1, 1, 1): np.int64(1)}
+PASS axis: only m = +-n has a 1-dim orbit; every other m has orbit span >= 2
+[b] full: min span over random m = 3; span(orbit of (1,1,1)) = 3; axes {(1, 0, 0): np.int64(3), (1, 1, 0): np.int64(3), (1, -1, 0): np.int64(3), (1, 1, 1): np.int64(3)}
+PASS full: every direction m has O-orbit spanning R^3 => a covariant QCA fixing all sigma_m is the identity
+PASS axis: Ad(exp(i phi sum s_n s_n)) (face bonds, phi=0.3) is O-covariant on the star local rule :: max err 2.28e-15
+PASS axis diagonal example is entangling (alpha(X_0) is not a single-site operator)
+PASS axis diagonal example is not a Clifford image (alpha(X_0) has > 1 Pauli component on {0,e}) :: 9 Pauli components
+TOTAL: PASS=8 FAIL=0

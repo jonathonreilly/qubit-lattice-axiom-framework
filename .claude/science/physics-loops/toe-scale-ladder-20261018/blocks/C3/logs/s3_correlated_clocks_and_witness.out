@@ -1,0 +1,27 @@
+[PASS] (a) n=1: P(strict decrease)=1/3 <= 1/1! = 1 :: iid value 1/(n+1)!=1/2
+[PASS] (a) n=2: P(strict decrease)=1/12 <= 1/1! = 1 :: iid value 1/(n+1)!=1/6
+[PASS] (a) n=3: P(strict decrease)=1/60 <= 1/2! = 1/2 :: iid value 1/(n+1)!=1/24
+[PASS] (a) n=4: P(strict decrease)=1/360 <= 1/2! = 1/2 :: iid value 1/(n+1)!=1/120
+[PASS] (a) n=5: P(strict decrease)=1/2520 <= 1/2! = 1/2 :: iid value 1/(n+1)!=1/720
+[PASS] (a) n=6: P(strict decrease)=1/20160 <= 1/3! = 1/6 :: iid value 1/(n+1)!=1/5040
+[PASS] (a) n=7: P(strict decrease)=1/181440 <= 1/3! = 1/6 :: iid value 1/(n+1)!=1/40320
+[PASS] (b) straight_e1 n=6: P=0.00178+-0.00013 <= 1/3!=0.16667
+[PASS] (b) straight_e2 n=6: P=0.00021+-0.00005 <= 1/3!=0.16667
+[PASS] (b) staircase n=6: P=0.00046+-0.00007 <= 1/3!=0.16667
+[PASS] (b) U_turn n=6: P=0.00138+-0.00012 <= 1/3!=0.16667
+  (c) iid-clock copy rule on Z^1:
+   r=1: Cov=+0.1676 bound=9.450e+00
+   r=2: Cov=+0.0911 bound=7.690e+00
+   r=3: Cov=+0.0392 bound=5.737e+00
+   r=4: Cov=+0.0142 bound=3.745e+00
+   r=5: Cov=+0.0036 bound=1.746e+00
+   r=6: Cov=+0.0006 bound=6.351e-01
+   r=7: Cov=+0.0008 bound=1.907e-01
+   r=8: Cov=+0.0013 bound=4.903e-02
+[PASS] (c) |Cov(xi_0,xi_r)| <= Theorem B bound (+4SE) for r=1..8
+[PASS] (c) Theorem B bound is superexponentially small: bound(40) < 1e-30 :: bound(40)=1.078e-35
+[PASS] (d) mixture witness: Cov(1{v_0=b},1{v_x=b}) >= 124991/900000 = 0.138879 > 0 uniformly in x
+[PASS] (d) |O_h|=48 acts transitively on the 6 axes with stabiliser of order 8
+[PASS] (e) level clock: the 30-step backward staircase is strictly decreasing deterministically (tail = 1, no factorial decay)
+[PASS] (f) tied-exchangeable witness: Cov(xi_0,xi_3) = 1/9 = 1/9 (for every r>=3 by disjointness): LRO outside A' (ties)
+s3: PASS=17 FAIL=0

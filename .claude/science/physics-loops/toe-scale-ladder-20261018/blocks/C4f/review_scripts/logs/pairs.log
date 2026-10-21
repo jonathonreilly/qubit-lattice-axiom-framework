@@ -1,0 +1,16 @@
+PASS L=8: single magnon fixed by U and U^-1
+PASS L=8: single hole fixed by U and U^-1
+PASS L=8: all 511 magnon pairs: 12 face relative vectors (= 6 unordered face-pair orientations x 2 labelings) glide by v=rho_b rho_c e_a at 1 site/tick for 3 ticks, rest static; 0 mismatches
+PASS L=8: all 511 hole pairs: 12 face relative vectors glide by -v, rest static; 0 mismatches
+  [t=5s]
+PASS L=10: single magnon fixed by U and U^-1
+PASS L=10: single hole fixed by U and U^-1
+PASS L=10: all 728 magnon pairs: 12 face relative vectors (= 6 unordered face-pair orientations x 2 labelings) glide by v=rho_b rho_c e_a at 1 site/tick for 3 ticks, rest static; 0 mismatches
+PASS L=10: all 728 hole pairs: 12 face relative vectors glide by -v, rest static; 0 mismatches
+  [t=16s]
+PASS L=12: single magnon fixed by U and U^-1
+PASS L=12: single hole fixed by U and U^-1
+PASS L=12: all 1330 magnon pairs: 12 face relative vectors (= 6 unordered face-pair orientations x 2 labelings) glide by v=rho_b rho_c e_a at 1 site/tick for 3 ticks, rest static; 0 mismatches
+PASS L=12: all 1330 hole pairs: 12 face relative vectors glide by -v, rest static; 0 mismatches
+  [t=39s]
+TOTAL: PASS=12 FAIL=0   [39s]

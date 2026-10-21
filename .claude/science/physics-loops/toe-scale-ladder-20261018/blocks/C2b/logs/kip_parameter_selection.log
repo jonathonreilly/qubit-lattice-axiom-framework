@@ -1,0 +1,31 @@
+PASS [exact] Gram identity phi^T G(b) phi + |g|^2 = 1 holds identically in (b, cos k) (unitarity of the family)
+PASS [exact] b_gold has s = b0 + 2 b1 + b2 = 1 exactly
+PASS [exact] det G(b_gold) = 0 exactly (rank <= 3)
+PASS [numerical] G(b_gold) PSD of rank 3 (eigenvalues [-0.        0.000771  0.043204  0.691646])
+PASS [exact] massless member: cos theta_X = phi0^T G phi(X) = 1 - 2 s^2 identically in b, hence s^2 <= 1 on the family
+  G(b)(phi0 + phi(X)) = 0: 4 solutions, 4 real and isolated
+     b = (0.39801610, 0.22001789, 0.16194812), s = 1.000000000, eig G = [-0.        0.000771  0.043204  0.691646]
+     b = (-0.39801610, -0.22001789, -0.16194812), s = -1.000000000, eig G = [-0.        0.000771  0.043204  0.691646]
+     b = (0.66117399, 0.95685999, -3.5748940), s = -1.000000000, eig G = [-14.377382  -4.511352  -0.        44.574167]
+     b = (-0.66117399, -0.95685999, 3.5748940), s = 1.000000000, eig G = [-14.377382  -4.511352  -0.        44.574167]
+PASS [exact] s^2 = 1 with G(b) PSD has exactly the two solutions +-b_gold (exact solve of G(b)(phi0 + phi(X)) = 0, then PSD test)
+PASS [numerical] b*: Gamma cone speed from spectra (axis 0.914422, diagonal 0.914422) = s(b) = 0.914422
+PASS [numerical] b*: walk unitary to 5.7e-16
+PASS [numerical] b_iso: Gamma cone speed from spectra (axis 0.816497, diagonal 0.816497) = s(b) = 0.816497
+PASS [numerical] b_iso: walk unitary to 2.8e-15
+PASS [numerical] b_gold: Gamma cone speed from spectra (axis 1.000000, diagonal 1.000000) = s(b) = 1.000000
+PASS [numerical] b_gold: walk unitary to 1.3e-15
+PASS [exact] KI+_tick (cone = 1 edge per tick) holds at b_gold and fails at b* and b_iso
+PASS [numerical] b_gold: U(X) = -1 (massless pi-mode at the axis doubler X)
+  b_gold pi-mode cone at X=(pi,0,0): velocities along x, y, z = [1.         0.23606798 0.23606798]  (sqrt5 - 2 = 0.23606798)
+PASS [numerical] b_gold: the X pi-mode cone is uniaxial with velocities (1 along the X axis, sqrt5 - 2 transverse)
+PASS [numerical] b_gold, two-tick clock U^2: the X modes sit at quasienergy 0 with transverse speed 0.236068 per tick != 1 (an IR sector violating KI+_tick)
+PASS [exact] comparator on a tick rho: small-k speed per tick = sqrt(K)*sqrt(U)*rho = sqrt(U K) rho
+PASS [exact] B4 on the gauge sector (beta_t = beta_s) <=> rho = [1/(sqrt(K)*sqrt(U))] = 1/sqrt(UK), and then the speed is 1 edge per tick
+  landed reading sqrt(UK) = 1.025 (cited): KI+_tick fixes rho = 1/sqrt(UK) = 0.9756 Hamiltonian time per tick
+  KI+_w (common cone, value free) instead gives the one-parameter relation rho = s(b)/sqrt(UK):
+     b*: rho = 0.8921
+     b_iso: rho = 0.7966
+     b_gold: rho = 0.9756
+PASS [exact] KI+_w imposes one relation on (b, rho): every admissible b has a solution rho > 0 (no selection of b)
+TOTAL: PASS=19 FAIL=0

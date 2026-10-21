@@ -1,0 +1,10 @@
+logs/c4b_01_index_sanity.txt: TOTAL: PASS=10 FAIL=0
+logs/c4b_02_onsite_diagonal.txt: TOTAL: PASS=8 FAIL=0
+logs/c4b_03_margolus_symmetry.txt: TOTAL: PASS=5 FAIL=0
+logs/c4b_04_margolus_magnons.txt: TOTAL: PASS=19 FAIL=0
+logs/c4b_05_commuting_layers.txt: TOTAL: PASS=10 FAIL=0
+logs/c4b_06_margolus_kbody_survey.txt: TOTAL: PASS=1 FAIL=1
+logs/c4b_07_margolus_4body.txt: TOTAL: PASS=0 FAIL=2
+logs/c4b_08_tau_laurent.txt: TOTAL: PASS=7 FAIL=0
+FAIL lines (all genuine; kept): c4b_06 k=4 'all reachable sets closed' (falsified); c4b_07 two 'mobile 4-cluster' predictions (falsified)
+TOTAL: PASS=60 FAIL=3

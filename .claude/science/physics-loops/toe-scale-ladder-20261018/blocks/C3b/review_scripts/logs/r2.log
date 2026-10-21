@@ -1,0 +1,35 @@
+PASS  a1 AR(1) rho=0.9: 1/Q_cc = closed form = 1/mean(1/f)  0.1049723757 0.1049723757 0.1049723757
+PASS  a2 AR(1) rho=0.9: det Cov(T_S|T_0)^(1/|S|) >= v (300 random S)  min log-margin 0.5933
+PASS  a1 AR(1) rho=0.5: 1/Q_cc = closed form = 1/mean(1/f)  2.4000000000 2.4000000000 2.4000000000
+PASS  a2 AR(1) rho=0.5: det Cov(T_S|T_0)^(1/|S|) >= v (300 random S)  min log-margin 0.3670
+PASS  a1 AR(1) rho=-0.7: 1/Q_cc = closed form = 1/mean(1/f)  0.3422818792 0.3422818792 0.3422818792
+PASS  a2 AR(1) rho=-0.7: det Cov(T_S|T_0)^(1/|S|) >= v (300 random S)  min log-margin 0.3988
+PASS  b1 beta=0.15: P(L(0)>=n) <= c_n(KM)^n/n! + psi_n(M) for n=1..10, 24 values of M (T1 non-stationary)  n=1:P=0.802,minbound=1.47; n=4:P=0.285,minbound=0.956; n=7:P=0.0396,minbound=0.904; n=10:P=0.00248,minbound=0.77
+PASS  b1 beta=1.5: P(L(0)>=n) <= c_n(KM)^n/n! + psi_n(M) for n=1..10, 24 values of M (T1 non-stationary)  n=1:P=0.947,minbound=1.69; n=4:P=0.913,minbound=1.01; n=7:P=0.908,minbound=1; n=10:P=0.907,minbound=1
+PASS  c1 c_n (K eta n)^n/n! <= (D/(D-1)) (e(D-1)K eta)^n on a grid  
+PASS  d1 H=0.5: f_H - 8^-(1+H) >= 0 off the zero mode (white-noise component of variance 8^-(1+H) exists)  min residual 0.000e+00
+/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/toe-scale-ladder-20261018/blocks/C3b/review_scripts/r2_theorem_H.py:146: IntegrationWarning: The maximum number of subdivisions (400) has been achieved.
+  If increasing the limit yields no improvement it is advised to analyze 
+  the integrand in order to determine the difficulties.  If the position of a 
+  local difficulty can be determined (singularity, discontinuity) one will 
+  probably gain from splitting up the interval and calling the integrator 
+  on the subranges.  Perhaps a special-purpose integrator should be used.
+  I2 = quad(lambda u: (1 - j0(u)) * u ** (-1 - 2 * H), 50, np.inf, limit=400)[0] if H < 0.9 else \
+PASS  d2 H=0.5: continuum increment constant A_H (Bessel quadrature) equals s3b's closed form  0.31831 vs 0.31831
+  INFO H=0.5: Var_torus(r=8)/(A_H 8^2H) for L=64,128,256,512,2048: 0.892 0.953 0.984 0.999 1.010
+PASS  d3 H=0.5: torus increment variance increases monotonically with box size (IR cutoff)  
+PASS  d1 H=0.8: f_H - 8^-(1+H) >= 0 off the zero mode (white-noise component of variance 8^-(1+H) exists)  min residual 0.000e+00
+PASS  d2 H=0.8: continuum increment constant A_H (Bessel quadrature) equals s3b's closed form  0.32348 vs 0.32348
+  INFO H=0.8: Var_torus(r=8)/(A_H 8^2H) for L=64,128,256,512,2048: 0.542 0.656 0.742 0.807 0.894
+PASS  d3 H=0.8: torus increment variance increases monotonically with box size (IR cutoff)  
+PASS  d1 H=0.95: f_H - 8^-(1+H) >= 0 off the zero mode (white-noise component of variance 8^-(1+H) exists)  min residual 0.000e+00
+PASS  d2 H=0.95: continuum increment constant A_H (Bessel quadrature) equals s3b's closed form  0.89194 vs 0.89194
+  INFO H=0.95: Var_torus(r=8)/(A_H 8^2H) for L=64,128,256,512,2048: 0.168 0.223 0.276 0.324 0.412
+PASS  d3 H=0.95: torus increment variance increases monotonically with box size (IR cutoff)  
+  INFO H=0.5: shape Var(32)/Var(1) on torus L=64..512, relative to L=2048: 0.522 0.773 0.895 0.955
+  INFO H=0.8: shape Var(32)/Var(1) on torus L=64..512, relative to L=2048: 0.280 0.531 0.711 0.839
+  INFO H=0.95: shape Var(32)/Var(1) on torus L=64..512, relative to L=2048: 0.214 0.449 0.636 0.784
+PASS  d4 at L=512 the clock's large/small-scale shape is still far from converged for H=0.95, not for H=0.5  shape deficit H=0.95: 0.216, H=0.5: 0.045
+PASS  e1 T = W - W(.+e1): interpolation variance v -> 0 under refinement (int 1/f_T = inf, so (H1) via Gaussian route fails)  4.890e-02 1.240e-02 3.112e-03
+PASS  e2 that clock has power-law covariance along e2 (|C_T(r)| ~ r^-p, p finite, fitted)  exponent -3.02
+TOTAL: PASS=21 FAIL=0

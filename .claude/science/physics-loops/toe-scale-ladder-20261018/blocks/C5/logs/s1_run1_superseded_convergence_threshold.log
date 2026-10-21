@@ -1,0 +1,36 @@
+PASS: proper cubic group has 24 elements
+PASS: spin-1/2 lifts satisfy D sigma_a D^dag = sum_b R_ba sigma_b for all 24 R
+PASS: V_M is exactly O-covariant with the full-soldered action (max dev 5.0e-16 on 200 samples)
+M= 3.50: W3(N=16,32,64) = -0.002625029519-3.0e-19i, -0.000004686644+3.3e-19i, -0.000000000011-1.4e-19i
+M= 2.00: W3(N=16,32,64) = -0.999858710612+3.0e-18i, -0.999999997860+3.7e-19i, -1.000000000000-1.1e-19i
+M= 0.50: W3(N=16,32,64) = +1.991820447917+1.2e-18i, +1.999987874186+9.7e-19i, +1.999999999972-2.6e-19i
+M=-2.00: W3(N=16,32,64) = -0.999858710612+1.5e-18i, -0.999999997860-8.0e-19i, -1.000000000000+1.0e-19i
+M=-3.50: W3(N=16,32,64) = -0.002625029519-1.1e-18i, -0.000004686644-4.6e-19i, -0.000000000011+1.0e-20i
+global convention sign c = -1 (fixed from M=2 only)
+PASS: M=3.5: W3 = c*0 (|W3 - c n| = 1.1e-11 at N=64; imag 1.4e-19)
+FAIL: M=3.5: grid convergence |W3(64) - W3(32)| = 4.7e-06 < 1e-6
+PASS: M=2.0: W3 = c*1 (|W3 - c n| = 3.3e-16 at N=64; imag 1.1e-19)
+PASS: M=2.0: grid convergence |W3(64) - W3(32)| = 2.1e-09 < 1e-6
+PASS: M=0.5: W3 = c*-2 (|W3 - c n| = 2.8e-11 at N=64; imag 2.6e-19)
+FAIL: M=0.5: grid convergence |W3(64) - W3(32)| = 1.2e-05 < 1e-6
+PASS: M=-2.0: W3 = c*1 (|W3 - c n| = 1.0e-19 at N=64; imag 1.0e-19)
+PASS: M=-2.0: grid convergence |W3(64) - W3(32)| = 2.1e-09 < 1e-6
+PASS: M=-3.5: W3 = c*0 (|W3 - c n| = 1.1e-11 at N=64; imag 1.0e-20)
+FAIL: M=-3.5: grid convergence |W3(64) - W3(32)| = 4.7e-06 < 1e-6
+PASS: additivity with a one-variable Laurent factor: W3[V_2 e^(i k1 sx) C] = W3[V_2] (got -1.0000000000)
+PASS: proper rotation + coin conjugation preserve W3 (-1.0000000000)
+PASS: inversion k -> -k flips the sign of W3 (+1.0000000000)
+PASS: scalar phase e^(i(k1+2k3)) (det winding) leaves W3 unchanged (-1.0000000000)
+PASS: Polyakov-Wiegmann additivity: W3[V_2 V_0.5] = c(1-2) (got +1.0000000000)
+Nodes of V_2 (quasienergy 0 if V=+1, pi if V=-1); chi = sign det(dg/dk) = prod sign cos p_a:
+  p=(0, 0, 0)pi  f=-1  quasienergy pi  chi=+1
+  p=(0, 0, 1)pi  f=+1  quasienergy  0  chi=-1
+  p=(0, 1, 0)pi  f=+1  quasienergy  0  chi=-1
+  p=(0, 1, 1)pi  f=+3  quasienergy  0  chi=+1
+  p=(1, 0, 0)pi  f=+1  quasienergy  0  chi=-1
+  p=(1, 0, 1)pi  f=+3  quasienergy  0  chi=+1
+  p=(1, 1, 0)pi  f=+3  quasienergy  0  chi=+1
+  p=(1, 1, 1)pi  f=+5  quasienergy  0  chi=-1
+  sum chi at quasienergy pi = +1, at 0 = -1
+PASS: V_2: the pi-sheet node chirality sum equals c*W3 and the 0-sheet sum equals -c*W3 (unbalanced per sheet)
+TOTAL: PASS=16 FAIL=3

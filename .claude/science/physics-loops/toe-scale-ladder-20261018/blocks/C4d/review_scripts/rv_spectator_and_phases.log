@@ -1,0 +1,6 @@
+PASS: single magnons frozen  5.6e-16
+PASS: pairs move (toy is non-trivial)  max 1-|<xy|U|xy>| = 0.559
+PASS: Lemma S (U and U^dag) holds for every dist(w,C) > r=3  163/163
+PASS: identity fails for many dist <= 3 cases (test discriminates)  989/1082 fail
+PASS: T under the axis action acts on-site by rotations about n (diagonal in n-basis)  max offdiag 1.4e-16; hence phase depends only on magnon number -> pure permutation within each sector
+TOTAL: PASS=5 FAIL=0

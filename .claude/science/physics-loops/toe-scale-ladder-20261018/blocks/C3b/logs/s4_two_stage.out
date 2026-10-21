@@ -1,0 +1,31 @@
+control open box level clock Lb=16: |m_late| = 0.938+-0.008
+control open box level clock Lb=32: |m_late| = 0.829+-0.072
+control open box level clock Lb=48: |m_late| = 0.710+-0.092
+  elapsed 1s
+ell=4 A=0.0 s=0.0 delta=0.0 L=24 ns=400: chi_L=65.01+-4.38 xi=1.97 C(ell)=0.083 C(L/2)=-0.0040+-0.0013 <L(x)>=5.55 maxL=16.9
+ell=4 A=0.0 s=0.0 delta=0.0 L=48 ns=180: chi_L=89.37+-8.78 xi=1.97 C(ell)=0.086 C(L/2)=-0.0004+-0.0007 <L(x)>=5.56 maxL=18.8
+ell=4 A=0.0 s=0.0 delta=0.0 L=72 ns=53: chi_L=87.58+-17.69 xi=1.97 C(ell)=0.085 C(L/2)=-0.0007+-0.0007 <L(x)>=5.56 maxL=19.5
+PASS  s4 ell=4 s=0.0 delta=0.0: chi_L slope |.|<1 (no LRO; LRO->3)  slope=0.379+-0.140
+  elapsed 87s
+ell=8 A=0.0 s=0.0 delta=0.0 L=24 ns=400: chi_L=350.35+-25.95 xi=2.94 C(ell)=0.021 C(L/2)=-0.0122+-0.0020 <L(x)>=11.13 maxL=28.7
+ell=8 A=0.0 s=0.0 delta=0.0 L=48 ns=180: chi_L=275.30+-26.38 xi=3.03 C(ell)=0.040 C(L/2)=-0.0013+-0.0014 <L(x)>=11.11 maxL=32.5
+ell=8 A=0.0 s=0.0 delta=0.0 L=72 ns=53: chi_L=441.84+-94.52 xi=3.04 C(ell)=0.042 C(L/2)=-0.0004+-0.0014 <L(x)>=11.14 maxL=34.1
+PASS  s4 ell=8 s=0.0 delta=0.0: chi_L slope |.|<1 (no LRO; LRO->3)  slope=-0.125+-0.337
+  elapsed 151s
+ell=8 A=0.0 s=0.0 delta=0.02 L=24 ns=400: chi_L=288.91+-18.63 xi=2.74 C(ell)=0.014 C(L/2)=-0.0104+-0.0018 <L(x)>=11.07 maxL=28.6
+ell=8 A=0.0 s=0.0 delta=0.02 L=48 ns=180: chi_L=334.74+-38.74 xi=2.82 C(ell)=0.032 C(L/2)=-0.0005+-0.0013 <L(x)>=11.11 maxL=32.5
+ell=8 A=0.0 s=0.0 delta=0.02 L=72 ns=53: chi_L=242.14+-47.14 xi=2.83 C(ell)=0.034 C(L/2)=-0.0027+-0.0013 <L(x)>=11.11 maxL=34.3
+PASS  s4 ell=8 s=0.0 delta=0.02: chi_L slope |.|<1 (no LRO; LRO->3)  slope=0.021+-0.218
+  elapsed 215s
+ell=8 A=0.0 s=0.3 delta=0.02 L=24 ns=400: chi_L=317.19+-23.68 xi=2.73 C(ell)=0.014 C(L/2)=-0.0121+-0.0018 <L(x)>=13.91 maxL=39.8
+ell=8 A=0.0 s=0.3 delta=0.02 L=48 ns=180: chi_L=296.60+-29.01 xi=2.79 C(ell)=0.031 C(L/2)=-0.0027+-0.0012 <L(x)>=13.84 maxL=45.0
+ell=8 A=0.0 s=0.3 delta=0.02 L=72 ns=53: chi_L=261.54+-42.89 xi=2.82 C(ell)=0.034 C(L/2)=-0.0007+-0.0013 <L(x)>=13.98 maxL=48.4
+PASS  s4 ell=8 s=0.3 delta=0.02: chi_L slope |.|<1 (no LRO; LRO->3)  slope=-0.140+-0.135
+  elapsed 285s
+ell=12 A=0.0 s=0.0 delta=0.02 L=36 ns=400: chi_L=775.38+-51.83 xi=3.64 C(ell)=0.007 C(L/2)=-0.0118+-0.0016 <L(x)>=16.76 maxL=43.1
+ell=12 A=0.0 s=0.0 delta=0.02 L=72 ns=53: chi_L=630.53+-114.15 xi=3.75 C(ell)=0.024 C(L/2)=-0.0022+-0.0020 <L(x)>=16.93 maxL=49.0
+ell=12 A=0.0 s=0.0 delta=0.02 L=96 ns=24: chi_L=614.20+-157.13 xi=3.73 C(ell)=0.024 C(L/2)=-0.0001+-0.0014 <L(x)>=16.86 maxL=51.1
+PASS  s4 ell=12 s=0.0 delta=0.02: chi_L slope |.|<1 (no LRO; LRO->3)  slope=-0.267+-0.202
+  elapsed 367s
+NUMERICAL: xi/ell at delta=0.02: ell=8 -> 0.354, ell=12 -> 0.311
+TOTAL: PASS=5 FAIL=0

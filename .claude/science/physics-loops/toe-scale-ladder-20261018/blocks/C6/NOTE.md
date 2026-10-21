@@ -1,0 +1,220 @@
+# C6: the emergent-fermion Z2 codes satisfy the BHM hypotheses; stability, topological data, and a scoped no-photon corollary
+
+**Date:** 2026-10-18 · **Block:** C6 of `toe-scale-ladder-20261018` · **Status:** Independently reviewed (REVIEW.md: ready for F1-F4; F5 conditional); unaudited. The reviewer is the same model family, so this is not an independent human check; see "Review dispositions" at the end.
+**Claim types used below:** `EXACT-PROOF` (a proof valid for all L), `EXACT-CERT` (exact finite GF(2)/Pauli-phase computation at the stated L), `CITED` (a published theorem that is applied, not re-proved here), `CONDITIONAL` (a proved implication from named premises), `POST-HOC` (seen in output first, explained afterwards).
+**Novelty:** low. The BHM stability theorem is textbook, and the stabilizer-code TQO conditions are standard. What this block adds is a check of the hypotheses for these specific supplied codes: one homological lemma that covers all five families for every L, exact certificates, and a scoped corollary.
+
+## 0. Supplied codes (named premises; nothing is adopted)
+
+Definitions come from the 2026-10-17 notes and runners. `c6_lib.py` transcribes them, and the corner builder copies the repo runner's code line by line.
+
+| tag | source note (docs/) | qubits/site | generators |
+|---|---|---|---|
+| F1 | `BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_…` and `…BARE_PERMUTATION…` | 3 (edges) | B_v = Z on the 6 edges at v; S_p = ±A A A A, where A_(v,a) = X_e · Z(edges at v ordered before +a) · Z(edges at v+e_a ordered before −a); 720 orderings and 8 sign sectors |
+| F2 | `BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_…` | 6 (half-edges) | B_v, R_(v,a) = Z Z, and S_p with A = X X · Z-tails |
+| F3 | `MAJORANA_PER_DIRECTION_…` | 3 (6 Majoranas γ_{v,d}) | B_v = (−i)^3 γ_0…γ_5; S_p = ± ∏ of A_(v,a) = γ_{v,+a} γ_{v+e_a,−a}; 8 sign sectors |
+| F4 | `SPINFUL_MAJORANA_PER_DIRECTION_…` | 5 (6 link + 4 matter Majoranas) | D_v (total parity), P_up, P_dn, and W_p = ± ∏ u_e |
+| F5 | `CORNER_FERMION_QUBIT_CODE_GENUINE_CUBE_ROTATION_ACTION_…` | 48 | B_q, R = ZZ, and loops i^n F ∏A on squares, triangles, tubes and plaquettes; 16 uniform flux patterns |
+
+Conventions: the on-site Jordan–Wigner choice (F3, F4) and the sign labels of the 8 sectors may differ from the repo runners by an on-site Clifford or a relabeling. Those changes preserve supports, so they do not affect TQO, k or statistics. Hamiltonian: H0 = Σ_g (1 − g)/2 over the listed generators. It is a sum of commuting projectors with gap 1.
+
+## 1. Results
+
+| # | statement | type |
+|---|---|---|
+| R1 | **Lemma 1 (homological TQO).** For every family, every cube B whose W-enlargement does not wrap the torus, and every L: a Pauli operator supported in B that commutes with all generators is, up to phase, a product of generators supported in B+W. W counts lattice sites: W = 2 for F3–F5 and W = 3 for F1–F2. R1 **implies** BHM's TQO-1 and TQO-2 for these stabilizer codes (§4); it is not literally the same statement. | EXACT-PROOF (§2); EXACT-CERT for cube sides 1–4 (1–3 for corner), 23 cases |
+| R2 | **TQO-1 on the torus.** No nontrivial logical operator is supported in any cube of side ≤ L−1. The full torus carries all 2k independent logicals. | EXACT-CERT, L = 2..6, all five families, 30 cases (cleaning-lemma count); EXACT-PROOF via R1 for side ≤ L − 2W − 1 |
+| R3 | **GSD(L).** k = log2 GSD = 3 for F1, F2 and F5 at every L tested, and for F3 and F4 at even L. F3 and F4 have k = 2 at odd L. **The GSD does not grow with L, so there is no fracton behaviour.** The L-parity dependence for F3/F4 is a translation-enrichment ("weak") effect, so "GSD 8 on T^3" is not an L-independent invariant for those encodings. | EXACT-PROOF for k ≤ 3 at every L, and for k ≤ 2 for F3/F4 at odd L (§3); EXACT-CERT for equality in 422 (code, L) cases, L = 2..8 (corner 2..6). The odd-L value was a POST-HOC discovery whose bound was then proved. |
+| R4 | **Frustration-freeness** (−I ∉ S, phase-tracked). **Theorem (F1–F4, every L ≥ 2, all 720 orderings, all 8 sectors f):** the code is frustration-free iff f_c·L² is even for every c, i.e. iff L is even or f = 0. Corner code (F5): every flux pattern is FF at even L ≤ 6 (all 16 patterns at L ≤ 4); at L = 3 only the patterns with square = plaquette flux are FF. | F1–F4: EXACT-PROOF via the relation-basis reduction (§3a; the basis is from the reviewer's derivation) plus an eventual-periodicity argument with a full-period exact check (`c6_ff_general_L.py`, 6/6). The periodicity step is argued, so give it an independent read. F5: EXACT-CERT only; general L open. |
+| R5 | **Logical algebra (even L).** Three straight strings (products of A along noncontractible lines) and three membranes commute with S, are independent, and pair as the identity matrix. Translates of each are equivalent mod S. The distance bound **d ≥ L** for F1–F4 at even L ≥ 4 is **argued but unverified** (support-disjointness of the translates is not machine-checked; the reviewer did not re-run it). BHM does not need it. | logical algebra: EXACT-CERT at L = 4, 6; distance: UNVERIFIED argument (§3) |
+| R6 | **Point-charge self-statistics.** For F1, F2, F3 and F4, the Kitaev hopping test (single hops) and the straight-leg Levin–Wen T-junction (legs of length 3) give exchange sign −1 for all 20 direction triples. All 720 F1 orderings give −1. The corner code gives −1 in all 240 (corner, triple) cases. The sign is unchanged under random stabilizer dressing of the legs. The untwisted toric-code control gives +1. **The charge is a fermion.** | EXACT-CERT |
+| R7 | **BHM stability** (§4). Take any finite-range qubit perturbation V of strength J ≤ J0, where J0 does not depend on L. Along any sequence of L on which FF holds (F1–F4: all even L in every sector, or all L in flux 0; F5: CONDITIONAL, since FF is certified only for L ≤ 6 and no infinite FF sequence is proved), the spectral gap stays ≥ 1/2 uniformly over the sequence. The 2^k ground states split by an amount exponentially small in L, as in the BHM theorem. The precise bound, and the case of exponentially decaying V, must be checked against the paper; its wording is recalled, since there was no network. No cubic covariance is needed. | CITED theorem (recalled) + R1–R4 → CONDITIONAL |
+| R8 | **Persistence of topological data.** Inside the stable region the phase is a 3D Z2 gauge theory with an emergent fermionic point charge, a Z2 flux loop, mutual braiding −1, and GSD 8 on T^3 at even L (F3/F4: 4 at odd L; see R3). | Quasi-adiabatic continuation is CITED: it supplies a locality-preserving unitary. That such a unitary preserves 3D exchange statistics is a standard expectation and is **not proved here**; neither Hastings–Wen nor BMNS prove it themselves. |
+| R9 | **Corollary (scoped no-go).** For J ≤ J0 on periodic tori (bulk only; boundaries and defects are not covered), H0 + V has no gapless excitation, where V is a qubit-local perturbation. In particular there is no emergent photon and no massless fermion. J0 is not computed and may be tiny. | CONDITIONAL on R7 (§5, No-Go Discipline Gate) |
+
+Certificates: `logs/c6_tqo_runner_full.log` (`TOTAL: PASS=18 FAIL=0`), `logs/c6_complex_homology_check.log` (`TOTAL: PASS=3 FAIL=0`), `logs/c6_ff_general_L.log` (`TOTAL: PASS=6 FAIL=0`), and the combined `logs/C6_SUMMARY.log`. Reviewer's independent code: `review_scripts/` (`TOTAL: PASS=16 FAIL=0`).
+
+## 2. Lemma 1 and its proof (valid for every L and every cube size)
+
+Notation: a Pauli is identified, up to phase, with its GF(2) vector; ω is the symplectic form. For a cell complex X with vertices V, edges E and 2-cells F, ∂ and δ are the boundary and coboundary maps over GF(2).
+
+**Topological input (T).** For X the cubic complex of Z^3, or the corner complex (§2.3), and any cube B:
+- (T1) every 1-cycle supported in B is ∂ of a 2-chain supported in B+1;
+- (T2) every 1-cochain supported in B that is closed (vanishes on every ∂f) equals δφ for a vertex function φ supported in B+1.
+
+The same holds on the torus whenever B+1 does not wrap.
+
+### 2.1 Edge-type codes (F1; F2 and F5 with repetition halves)
+
+Hypotheses, which hold by construction (see the builder code):
+- (H1) one qubit per edge;
+- (H2) B_v = Z on the edges at v;
+- (H3) A_e = X_e · Z(t_e), with any Z-tail t_e;
+- (H4) each loop stabilizer has GF(2) vector Σ_{e∈∂f} vec(A_e).
+
+Let x be supported in B and commute with all generators.
+1. Write x = A(a)·Z(b′), where a is the X-part of x. This is possible because A_e carries X exactly on e.
+2. ω(x, B_v) = |a ∩ star(v)|, so ∂a = 0. By (T1), a = ∂c with c in B+1.
+3. Then x′ = x · ∏_{f∈c} S_f is a pure Z(b) supported in B+1, with tails at most one site out.
+4. ω(Z(b), S_f) = Σ_{e∈∂f} b_e, so b is closed. By (T2), b = δφ.
+5. Then Z(b) = ∏_v B_v^{φ_v}, with φ supported in B+2.
+
+So x ∈ ⟨generators in B+W⟩. Every step is linear and local; no ordering or twist was used. The twist only fixes signs and statistics.
+
+**Repetition halves (F2, F5).** R_e = Z_{h1} Z_{h2}, and A_e has X on both halves. Commuting with R forces equal X on both halves, so the X-part is again some A(a). In step 4, the closed cochain is b_e = b_{h1} + b_{h2}. After dividing by ∏B^φ, what remains has b_{h1} = b_{h2} on links and b = 0 on single-qubit edges, so it is a product of R's.
+
+### 2.2 Majorana-type codes (F3, F4)
+
+Per site, 3 qubits ≅ 6 Majoranas. The Pauli group mod phase is F2^{6/site}, with ω(x, y) = Σ_v (|x_v||y_v| + x_v·y_v). Then:
+- ω(x, B_v) = |x_v| (because 6 is even), so every site of x is even;
+- for site-even x, ω(x, A_(v,a)) = x_{v,+a} + x_{v+a,−a} =: y_e.
+
+Proof:
+1. Commuting with every S_p means δy = 0. By (T2), y = δφ.
+2. x + Σ φ_v B_v has y = 0, so it equals Σ z_e A_e. Site-evenness gives ∂z = 0.
+3. By (T1), z = ∂c, so x ∈ span{B, S} inside B+1.
+
+**F4.** Commuting with P_up and P_dn forces matter bits to come in pairs. Dividing by P's removes the matter content, and D_v plays the role of B_v. The argument then reduces to F3.
+
+### 2.3 Topological input (T) for the corner complex (proof for all sizes)
+
+The complex: each site carries a cuboctahedron (12 corners, 24 edges, all 14 faces filled: 6 squares and 8 triangles). Each lattice edge carries a "tube" of 4 rectangles, each made of 2 links and 2 on-site edges. Each lattice plaquette carries a 4-link cell.
+
+**(T1).** Let z be a cycle in B.
+1. Using the tube rectangles, slide all links on a tube onto one representative link. The coefficient left on that link is the tube's link parity n_e.
+2. n is a cubic 1-cycle, since the link endpoints must close up at each site. So n = ∂c in the cubic complex.
+3. Subtract the corner plaquette cells of c. Each covers its 4 tubes once. Re-slide; now every tube carries an even number of links, and these cancel.
+4. What remains lies on single sites. It is a cycle on the cuboctahedron, i.e. on a 2-sphere with all faces filled, so it is a boundary.
+
+All moves stay inside B+1.
+
+**(T2).** By (T1), b sums to zero around every closed loop in a contractible neighbourhood U ⊇ B+1. So φ(q) = Σ b along any path from a base point outside B is well-defined, and φ is constant (choose 0) on the connected set U∖(B+1).
+
+Implementation note: the cycle list (`cycles()`, copied from the repo runner) builds each tube from both end sites, so every tube rectangle appears twice. This is harmless: duplicate cells do not change spans. The reviewer's build, with one tube per edge, gives the same homology and TQO counts.
+
+The block's own script reproduces both properties by direct GF(2) homology (cubic sides 1–5, corner sides 1–4). This is a different computation from the Pauli-rank counting (`c6_complex_homology_check.py`).
+
+## 3. Consequences on the torus T^3_L
+
+- **TQO-1.** A cube of side r with r + 2W + 1 ≤ L sits in a non-wrapping neighbourhood, so R1 makes every commuting Pauli on it a stabilizer. This holds for all L: TQO-1 with L* = L − 2W − 1 = Θ(L). The exact count (cleaning lemma: dim logicals in M = 2|M| − dim S|_M − dim S + dim S|_{M^c}) is sharper, giving L* = L − 1 for every case with L ≤ 6.
+- **Bound on k.** Running the proof globally, x ↦ ([z], [y]) ∈ H_1(T^3) ⊕ H^1(T^3) is injective on C(S)/S, and the B-shift ambiguity is accounted for below. So k ≤ 3 for every L. Strings realize all of H_1 and membranes all of H^1 at even L, which gives k = 3 there. The certificates confirm this.
+- **Odd L for F3/F4 (POST-HOC discovery; the bound k ≤ 2 is proved).** The output k = 2 was seen first. The following argument proves k ≤ 2 at odd L, and the certificates give equality: Σ_e y_e = Σ_v |x_v| = 0 for site-even x, and the parity of y is a class invariant (each vertex has degree 6). So only even-parity H^1 classes are realized; at odd L the plane-dual class has parity L^2 ≡ 1. Dually, Σ_v B_v = Σ_e A_e makes s_x s_y s_z trivial. This leaves a 2+2-dimensional logical group, so k = 2. **The GSD is bounded in L in every case (8 or 4); none of these codes is fracton-like.**
+- **Distance (even L; UNVERIFIED argument, not load-bearing).** Every nontrivial logical anticommutes with some string or membrane, because the pairing is the identity. Then it anticommutes with all translates, which are equivalent mod S. For F1–F4, membranes in different planes have disjoint supports, which gives L of them. Strings ≥ 2 apart transversely are disjoint, which gives ⌊L/2⌋² ≥ L. Hence d ≥ L. The equivalence of translates is certified at L = 4, 6. For general even L it follows from injectivity of the class map, because a translation preserves homology classes; this step is argued, not machine-checked. The corner code's distance is not bounded separately; R2 is what BHM needs.
+
+### 3a. Frustration-freeness for every L (F1–F4)
+
+1. **Relation basis** (from the reviewer's derivation; every L ≥ 2).
+   - Write a relation as Σ φ_v B_v + Σ c_p S_p (+ Σ ρ R) = 0.
+   - F1/F2: the X-parts force ∂c = 0, so c ∈ Z_2(T^3). A 2-cycle's S-product has zero vector, so then φ = const (and ρ = φ). The relations are: the cube boundaries (dim L³ − 1), 3 planes, and the pure-Z all-B (all-B·all-R) relation, whose sign is +.
+   - F3/F4: comparing Majorana by Majorana gives φ_v = (∂c)_e at both ends of every edge. So φ is constant, and φ = 1 needs ∂c = all edges, which is solvable iff L is even. The relations are: cubes, 3 planes, and, when L is even, one all-B relation with c = {xy at even y} ∪ {yz at even z} ∪ {zx at even x}.
+   - The dimension prediction matches #gens − rank at L = 2..6 for all four families.
+2. **Signs.** The generators commute and square to I, so the relation sign is a homomorphism. Therefore FF holds iff all basis signs are +.
+3. **Eventual periodicity (argued).** Each basis relation is an ordered (lex) product of translates of one fixed motif over Z_m^D: planes with m = L, D = 2; all-B with m = L/2 over 2×2×2 blocks, D = 3.
+   - Its phase is N·p + 2Σ_{i<j}|z_i ∧ x_j| mod 4.
+   - Once m ≥ 2s − 1 (s = motif support side), each pair count is an integer polynomial in m. So the sign is periodic in m with period dividing 4.
+   - A conservative threshold was used (s ≤ 5 sites for the F1/F2 planes, so m ≥ 9). The script checks L = 2..12 for all 720 orderings of F1 and of F2, and planes L = 2..12 and all-B for even L = 2..16 for F3/F4. Each check covers all m below the threshold and one full period above it.
+4. **Results and sector factor.**
+   - In flux 0 every basis sign is +.
+   - In sector f, the cube sign picks up a factor +, the plane-c sign (−1)^{f_c L²}, and the all-B sign + (even L). Each factor was checked directly in 8 sectors for L = 3..6.
+   - Cross-check against the direct phase-tracked FF computation on full groups: 128 cases, all agree.
+5. **Theorem.** FF ⇔ L even or f = 0.
+
+The odd-L π-sector frustration is a boundary-condition artefact: flipping one plaquette sign per plane (a twist) restores FF, and bulk terms are unchanged. The corner code's general-L FF is open (certified to L = 6).
+
+## 4. Applying Bravyi–Hastings–Michalakis
+
+**Cited theorem (wording RECALLED; no network in this session or the review; constants and decay class not re-read).** Bravyi, Hastings and Michalakis, J. Math. Phys. 51, 093512 (2010); with Bravyi–Hastings, CMP 307, 609 (2011); and Michalakis–Zwolak, CMP 322, 277 (2013) for the frustration-free / local-gap generalization. The theorem is stated here from memory, because there was no network access in this session; its exact constants were not re-read. Setting:
+- H0 = Σ Q_A, a sum of commuting projectors of bounded range on a D-dimensional torus, frustration-free with gap 1;
+- H0 satisfies TQO-1 (P O_A P = c(O_A) P for O_A on cubes of side ≤ L* with L* ≥ L^α) and TQO-2 (the same statement with the local ground projector of A's enlargement).
+
+Conclusion: there exist J0 > 0 and c > 0, depending on D, range, α and the decay rate but not on L, such that for any V = Σ V_{x,r} with ‖V_{x,r}‖ ≤ J e^{−μ r} and J ≤ J0:
+- the spectrum of H0 + V splits into a band of 2^k levels of width exponentially small in L* (for strictly finite-range V). For exponentially decaying V the form of the bound, possibly stretched-exponential, must be checked against the paper;
+- the rest of the spectrum lies a gap ≥ 1/2 above that band.
+
+**Checked hypotheses.**
+
+| hypothesis | where it is checked |
+|---|---|
+| commuting projectors, bounded range | §0; R4 commutation check over all generator pairs sharing a qubit |
+| frustration-free | R4, for the stated (sector, L) |
+| TQO-1 | R1/R2, with L* = Θ(L) (α = 1) |
+| TQO-2 | R1 **implies** it. For stabilizer codes, Tr_{Ā}P and Tr_{Ā}P_{B+W} are proportional to the code projectors of S ∩ P_A and S_{B+W} ∩ P_A; R1 makes these groups equal. |
+
+BHM's unit enlargement is reached by coarse-graining into blocks of W sites, which is standard.
+
+**Conclusion (CONDITIONAL on FF(L) along the sequence of L used).** For F1–F4, §3a proves FF for all even L in every sector and for all L in flux 0. A finite-volume statement uniform over *all* L fails in the π sectors at odd L, because their ground band contains forced excitations. BHM is a per-L statement with L-independent constants, so any infinite FF sequence gives the thermodynamic statement. For F1–F4, along these FF sequences, the code has a uniform gap under every sufficiently small finite-range qubit perturbation, with a ground-space splitting exponentially small in L. The precise form of that bound (e.g. poly(L)·e^{−cL}), and whether exponentially decaying perturbations are covered, are CONDITIONAL on the BHM paper's wording, which is recalled and not checked. **F5 (corner code) is CONDITIONAL:** FF is certified only for L ≤ 6, and no infinite FF sequence has been proved, so no uniform-in-L statement is made for it. The perturbation may break cubic, translation and fermion-parity symmetry. J0 is not computed; BHM's constants are not explicit enough to quote.
+
+**Topological data that persist** (R8; CITED, conditional). Hastings–Wen quasi-adiabatic continuation (PRB 72, 045141 (2005)) and Bachmann–Michalakis–Nachtergaele–Sims (CMP 309, 835 (2012)) give a locality-preserving unitary from the unperturbed to the perturbed ground band. Such a map preserves superselection sectors, fusion, the exchange statistics of point particles, and charge–loop braiding. So the persisting data are those of R5/R6:
+- a Z2 point charge with θ = π (a fermion);
+- a Z2 flux loop;
+- mutual braiding −1;
+- GSD 8 on T^3 at even L (4 for F3/F4 at odd L).
+
+This is the 3D Z2 gauge theory with a fermionic charge, distinct from the bosonic 3D toric code. The statement that the perturbed charge stays a fermion uses the expected invariance of exchange statistics under locality-preserving unitaries. That invariance is standard but **not proved here**, and the cited continuation papers do not prove it.
+
+## 5. Corollary and No-Go Discipline Gate
+
+**Corollary (CONDITIONAL on R7).** Scope: periodic tori only. This is a bulk statement; open boundaries and defects can host gapless modes that this argument does not exclude. Perturbations are qubit-local: for F3/F4, Majoranas on different sites commute, so these are not physical lattice fermions. J0 is not computed and may be tiny. Fix any code in §0 and any (sector, L-sequence) where FF holds. For every Hermitian qubit perturbation V of range ≤ r0 and strength J ≤ J0(code, r0), uniform in L, the spectrum of H0 + V above the 2^k-level ground band has a gap ≥ 1/2. Hence there is no gapless excitation in this region: no emergent U(1) photon, no massless (Dirac or Weyl) fermion, and no gapless gauge mode.
+
+**Route pruned.** The route is: "start from one of these Z2-fermion codes, add small local terms, and obtain QED (photon plus massless charged fermion) in the same phase". It is closed for the family {H0 + V : ‖V‖_local ≤ J0}. Any route to QED from these codes must cross a phase boundary, where the gap closes (in the thermodynamic limit, for some J > J0), or change the premises (§N7).
+
+**Remark on the corner Dirac-pair notes (interpretation).** `CORNER_FERMION_MASSLESS_DIRAC_PAIR_…` and `CORNER_FERMION_LONG_WAVELENGTH_…` study one-fermion band structures with hopping t ~ 1. A linear crossing in a one-particle band is not a gapless many-body excitation, as long as the charge creation cost exceeds the band's depth below its own zero. Inside the BHM region the emergent fermion is massive in the many-body sense. A massless Dirac excitation of the many-body system requires leaving that region. It is not computed here whether the notes' parameters lie inside J0; they are O(1) and not small.
+
+### No-Go Discipline Gate (N1–N8)
+
+- **N1 — routes to QED that this corollary addresses or excludes:**
+  1. Small local perturbation of H0. ATTEMPTED: excluded by R7.
+  2. Small perturbation that breaks every symmetry (cubic, translation, fermion parity). ATTEMPTED: excluded, since BHM needs no symmetry.
+  3. Exponentially decaying rather than finite-range terms. Excluded only CONDITIONALLY on the BHM decay class as recalled (unchecked). If the paper does not cover it, this route stays open.
+  4. Driving the fermion band to a node at zero energy by hopping. Not in the small-J region unless the hopping is below J0, in which case the gap stays. Outside J0: not covered.
+  5. Emergent U(1) from Z2 by enlarging the gauge group at small J. Excluded by the gap R7 alone: a photon is gapless. This does not lean on R8.
+
+  These are five normalized families with distinct mechanisms. Routes **not** excluded:
+  - large J or a phase transition;
+  - perturbations whose strength grows with L, or which are non-local;
+  - adding degrees of freedom (an enlarged Hilbert space, e.g. rotor/U(1) link variables);
+  - changing H0 itself (another supplied code);
+  - Floquet/QCA dynamics, which are not of the form H0 + V;
+  - open boundaries or defects;
+  - fermionic (non-qubit-local) UV perturbations.
+- **N2 — walls.** One wall: J ≤ J0. FF(L) is a hypothesis on the L-sequence, not an independent wall on the conclusion. The two are independent: neither implies the other.
+- **N3 — hidden conditions.** "As is standard": the coarse-graining in TQO-2 is non-load-bearing, since BHM allow any fixed range. The BHM constants were cited from memory, which is flagged in §4. "By construction" (H1–H4) is checked in code.
+- **N4 — residual matching.** BHM's residual is the stability of a gap for commuting TQO Hamiltonians. The residual claimed here is the absence of gapless modes in H0 + small V. They match. Quasi-adiabatic invariance is used only for R8, not for R9.
+- **N5 — resolution.** "No gapless excitation" is a statement about the spectrum of the many-body Hamiltonian (lattice-wide). It is not a statement about one-particle bands (per-mode), which the runner does not compute. Runner certificate lines: per_element/per_site/per_block/lattice_wide are given; per_mode is "checked and not executed".
+- **N6 — reframes.** None. No new axiom; the codes stay supplied premises.
+- **N7 — steelman.** "Emergent photons do exist in 3D lattice models, e.g. quantum spin ice (Hermele–Fisher–Balents 2004), and Z2-to-U(1) transitions are known. A Hamiltonian near the transition might give QED." Correct, but that point is outside the J ≤ J0 domain; the corollary explicitly concedes it. A second objection: "J0 may be so small that the region is physically irrelevant." Also concedes nothing within scope: J0 is not quantified.
+- **N8 — earlier claims.** Consistent with the 2026-10-17 notes, which list "gap stability" as not claimed. This block now supplies it, conditionally. No prior wall is contradicted.
+
+Gate status: PASS for the scoped corollary as stated (domain: J ≤ J0, FF along the sequence of L). There are no failure conditions within that domain.
+
+## 6. What needs independent checking (load-bearing)
+
+1. **Lemma 1 / topological input (T) for the corner complex (§2.3).** This is the only step that gives TQO for all L and all cube sizes. The certificates test cube sides up to 4. A reviewer should re-derive the tube-sliding argument and check that the runner's cycle list (cell families) matches §2.3.
+2. **The BHM statement (§4), cited from memory.** It needs checking against the paper, including whether TQO-2 is required in the "local ground projector" form verified here.
+3. **§3a, step 3.** The eventual-periodicity argument (polynomial pair counts with a full-period check) is what closes FF for all L in F1–F4. Corner FF for general L remains open.
+
+## Reproduce
+
+```bash
+cd .claude/science/physics-loops/toe-scale-ladder-20261018/blocks/C6
+python3 scripts/c6_tqo_runner.py           # about 80 s; TOTAL: PASS=18 FAIL=0
+python3 scripts/c6_complex_homology_check.py  # about 4 s; TOTAL: PASS=3 FAIL=0
+python3 scripts/c6_ff_general_L.py           # about 140 s; TOTAL: PASS=6 FAIL=0
+```
+
+## Review dispositions (REVIEW.md, 2026-10-18)
+
+| reviewer finding | disposition |
+|---|---|
+| R1: state duplicate tubes; say W counts lattice sites | Applied (§2.3 note; R1 row). |
+| R1 "is exactly" TQO-2 → "implies" | Applied (R1 row; §4 table, with the stabilizer reduction). |
+| R3: the odd-L argument proves k ≤ 2; L-parity GSD is a weak-enrichment effect, so "GSD 8" is not an L-independent invariant | Applied (R3 and R8 rows; §3). |
+| R4: relation-basis reduction (cube, 3 planes, all-B), certified to L = 12 | Adopted and extended. The closed-form evaluation is done by an eventual-periodicity argument plus a full-period exact check over all 720 orderings (F1, F2) and F3/F4 (`c6_ff_general_L.py`, 6/6, with a cross-check against direct FF in 128 cases). Result: F1–F4 are FF iff L even or f = 0, for every L. The periodicity step is argued and flagged for independent reading. The corner code is still certificate-only. |
+| R5 distance unverified | Applied: marked UNVERIFIED argument, not load-bearing. |
+| R7 (a) implies; (b) exp-decaying-V splitting bound to be checked against the paper, BHM wording recalled; (c) "uniform in L" → along FF sequences, with even-L/flux-0 justification | Applied (R7 row; §4). |
+| R8: Hastings–Wen/BMNS do not prove invariance of statistics | Applied: marked standard but not proved here. |
+| R9: periodic tori only; J0 unquantified; qubit-local perturbations; N1 route 5 from R7 alone | Applied (R9 row; §5 corollary scope; N1). |
+| Provenance: the reviewer is the same model family | Recorded in the Status line. |
+| Confirmation N-2: §4 overclaimed a uniform gap for every code | Applied. §4 now restricts the uniform-gap claim to F1–F4. F5 is conditional: FF is certified only for L ≤ 6, and no infinite FF sequence is proved. |
+| Confirmation N-1: the poly(L)e^{−cL} bound, exp-decaying V, and N1 route 3 rest on recalled BHM wording | Applied: all three are marked conditional on the unchecked paper wording. |
+| Status line | Set to "Independently reviewed (REVIEW.md: ready for F1-F4; F5 conditional); unaudited." |

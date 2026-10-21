@@ -1,0 +1,10 @@
+PASS loaded 478 matched source orbits
+PASS C3 table: 478 distinct orbit keys, stabiliser-consistent images (Stab(src) fixes img) : True
+INFO enumerated 125596 classes (k=1..3, diam<=5) in 0s
+PASS (a) pi is radius-2 local on all 125596 classes: 325500 distinct multi-magnon windows, no conflict; errors []
+PASS (b) pi^-1 is radius-2 local (image windows): 325500 distinct windows, no conflict; errors []
+PASS (c) injective on translation classes (diam<=5): collisions 0
+PASS (c) every one of the 37466 3-magnon classes of diam<=4 has a preimage of diam<=5; missing []
+PASS (d) T-equivariance of the assembled pi on 3000 random classes
+INFO wall 28s
+TOTAL: PASS=7 FAIL=0

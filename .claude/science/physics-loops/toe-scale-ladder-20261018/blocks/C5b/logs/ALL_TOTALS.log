@@ -1,0 +1,5 @@
+s0_sign_lemmas.log: TOTAL: PASS=17 FAIL=0
+s1_localization_controls.log: TOTAL: PASS=36 FAIL=0
+s2_finite_range_battery.log: TOTAL: PASS=69 FAIL=0
+s3_sheet_witness.log: TOTAL: PASS=13 FAIL=0
+TOTAL: PASS=135 FAIL=0

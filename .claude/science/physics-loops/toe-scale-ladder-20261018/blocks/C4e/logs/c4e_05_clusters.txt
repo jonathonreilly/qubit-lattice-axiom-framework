@@ -1,0 +1,23 @@
+connected 3-magnon orbits: 478
+classification of connected triples (T_MAX=60): {'static': 403, 'periodic': 6, 'rigid mover': 0, 'splits': 69, 'other': 0}
+   e.g. static      [(0, 0, 0), (0, 0, 1), (0, 0, 2)]
+   e.g. periodic    [(0, 0, 0), (0, 0, 1), (0, 1, -1)]
+   e.g. splits      [(0, 0, 0), (0, 0, 1), (1, -1, 1)]
+PASS: every connected triple is classified (no "other")
+PASS: no rigidly moving bound triple among connected triples  (a statement about these 478 orbits only)
+pair {0,e1+e2} (moving +e3) hitting a single at (a,b,3), a,b in [-3,4]: outcome classes after 30 steps
+   single shift (0, 0, 0), pair height lag 0, pair rho (1, 1, 0) : 48 cases, e.g. (a,b)=(-3, -3)
+   single shift (0, 0, 0), pair height lag -57, pair rho (1, -1, 0) : 6 cases, e.g. (a,b)=(-1, 0)
+   single shift (0, 0, 0), pair height lag -56, pair rho (1, -1, 0) : 6 cases, e.g. (a,b)=(-1, 1)
+   single shift (0, 0, 0), pair height lag -55, pair rho (1, -1, 0) : 2 cases, e.g. (a,b)=(-1, -1)
+   single shift (0, 0, 0), pair height lag -54, pair rho (1, -1, 0) : 2 cases, e.g. (a,b)=(-1, 2)
+PASS: pair-single: in every case one face pair and one single remain after 30 steps
+   head-on pair-pair, lateral offset (a,b), gap h: two free pairs: [('down', (1, -1, 0)), ('up', (1, 1, 0))]; heights [-34, 40] (free: -34, 40) : 12 of 50, e.g. (-2, -2, 6)
+   head-on pair-pair, lateral offset (a,b), gap h: two free pairs: [('down', (1, -1, 0)), ('up', (1, 1, 0))]; heights [-36, 41] (free: -35, 40) : 12 of 50, e.g. (-2, -1, 5)
+   head-on pair-pair, lateral offset (a,b), gap h: two free pairs: [('down', (1, -1, 0)), ('up', (1, 1, 0))]; heights [-35, 41] (free: -34, 40) : 12 of 50, e.g. (-2, -1, 6)
+   head-on pair-pair, lateral offset (a,b), gap h: two free pairs: [('down', (1, -1, 0)), ('up', (1, 1, 0))]; heights [-37, 42] (free: -35, 40) : 9 of 50, e.g. (-2, 0, 5)
+   head-on pair-pair, lateral offset (a,b), gap h: two free pairs: [('down', (1, -1, 0)), ('up', (1, 1, 0))]; heights [-35, 40] (free: -35, 40) : 4 of 50, e.g. (-2, -2, 5)
+   head-on pair-pair, lateral offset (a,b), gap h: pass, no delay : 1 of 50, e.g. (0, 0, 6)
+PASS: head-on pair-pair: every case ends as two free face pairs (no bound pair-pair state)
+elapsed 13s
+TOTAL: PASS=4 FAIL=0

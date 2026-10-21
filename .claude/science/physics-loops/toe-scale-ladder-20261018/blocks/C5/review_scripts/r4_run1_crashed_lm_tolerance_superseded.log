@@ -1,0 +1,22 @@
+loaded params: max|coef| 0.751; sup defect (operator norm, dense+local max) 1.989e-06; W3 at N=40,56,72: [np.float64(-1.0), np.float64(-1.0), np.float64(-1.0)]; min|det| [np.float64(0.999998), np.float64(0.999998), np.float64(0.999998)]
+PASS: worker defect figure reproduced to within a factor 2 (own sup 1.99e-06 vs reported 1.82e-6)
+PASS: W3 = -1 converged on three independent grids (|W3+1| < 1e-6)
+PASS: own analytic Jacobian matches finite difference
+/usr/local/lib/python3.13/dist-packages/scipy/optimize/_lsq/least_squares.py:905: UserWarning: Setting `ftol` below the machine epsilon (2.22e-16) effectively disables the corresponding termination condition.
+  ftol, xtol, gtol = check_tolerance(ftol, xtol, gtol, method)
+/usr/local/lib/python3.13/dist-packages/scipy/optimize/_lsq/least_squares.py:905: UserWarning: Setting `xtol` below the machine epsilon (2.22e-16) effectively disables the corresponding termination condition.
+  ftol, xtol, gtol = check_tolerance(ftol, xtol, gtol, method)
+/usr/local/lib/python3.13/dist-packages/scipy/optimize/_lsq/least_squares.py:905: UserWarning: Setting `gtol` below the machine epsilon (2.22e-16) effectively disables the corresponding termination condition.
+  ftol, xtol, gtol = check_tolerance(ftol, xtol, gtol, method)
+Traceback (most recent call last):
+  File "/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/toe-scale-ladder-20261018/blocks/C5/review_scripts/r4_defect_floor.py", line 62, in <module>
+    sol = least_squares(res, q, jac=jac, method='lm', max_nfev=200, xtol=1e-16, ftol=1e-16, gtol=1e-16)
+  File "/usr/local/lib/python3.13/dist-packages/scipy/_lib/_util.py", line 662, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/scipy/optimize/_lsq/least_squares.py", line 905, in least_squares
+    ftol, xtol, gtol = check_tolerance(ftol, xtol, gtol, method)
+                       ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/scipy/optimize/_lsq/least_squares.py", line 128, in check_tolerance
+    raise ValueError("All tolerances must be higher than machine epsilon "
+                     f"({EPS:.2e}) for method 'lm'.")
+ValueError: All tolerances must be higher than machine epsilon (2.22e-16) for method 'lm'.

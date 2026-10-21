@@ -1,0 +1,32 @@
+nvar=62 residual rows=8452 build 8.3s
+PASS identity W solves the system exactly
+mu=0.0 trial=0 cost=4.269e-21 moving_weight=6.521e-12
+mu=0.0 trial=1 cost=7.917e-21 moving_weight=8.353e-12
+mu=0.0 trial=2 cost=4.738e-22 moving_weight=1.975e-12
+mu=0.0 trial=3 cost=3.198e-21 moving_weight=5.401e-12
+mu=0.0 trial=4 cost=9.769e-22 moving_weight=2.840e-12
+mu=0.0 trial=5 cost=1.594e-21 moving_weight=3.663e-12
+mu=0.02 trial=0 cost=5.556e-05 moving_weight=1.997e-02
+mu=0.02 trial=1 cost=5.556e-05 moving_weight=1.997e-02
+mu=0.02 trial=2 cost=5.556e-05 moving_weight=1.997e-02
+mu=0.02 trial=3 cost=5.556e-05 moving_weight=1.997e-02
+mu=0.02 trial=4 cost=5.556e-05 moving_weight=1.997e-02
+mu=0.02 trial=5 cost=5.556e-05 moving_weight=1.997e-02
+mu=0.1 trial=0 cost=1.397e-03 moving_weight=9.986e-02
+mu=0.1 trial=1 cost=1.397e-03 moving_weight=9.986e-02
+mu=0.1 trial=2 cost=1.397e-03 moving_weight=9.986e-02
+mu=0.1 trial=3 cost=1.397e-03 moving_weight=9.986e-02
+mu=0.1 trial=4 cost=1.397e-03 moving_weight=9.986e-02
+mu=0.1 trial=5 cost=1.397e-03 moving_weight=9.986e-02
+mu=0.3 trial=0 cost=1.282e-02 moving_weight=2.996e-01
+mu=0.3 trial=1 cost=1.282e-02 moving_weight=2.996e-01
+mu=0.3 trial=2 cost=1.282e-02 moving_weight=2.996e-01
+mu=0.3 trial=3 cost=1.282e-02 moving_weight=2.996e-01
+mu=0.3 trial=4 cost=1.282e-02 moving_weight=2.996e-01
+mu=0.3 trial=5 cost=1.282e-02 moving_weight=2.996e-01
+PASS mu=0: optimiser reaches an exact solution (sanity) :: (4.73821554722598e-22, 1.9752936645645106e-12)
+mu=0.02: best cost 5.556e-05
+mu=0.1: best cost 1.397e-03
+mu=0.3: best cost 1.282e-02
+FAIL mu>0: no near-solution with moving weight found (best cost >= 1e-4 for all mu>0) :: {0.0: 4.73821554722598e-22, 0.02: 5.555653347064335e-05, 0.1: 0.0013974772896707627, 0.3: 0.012817955274592388}
+TOTAL: PASS=2 FAIL=1

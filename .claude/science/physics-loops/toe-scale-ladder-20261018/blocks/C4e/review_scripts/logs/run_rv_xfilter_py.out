@@ -1,0 +1,18 @@
+PASS loaded 478 matched source orbits
+PASS C3 table: 478 distinct orbit keys, stabiliser-consistent images (Stab(src) fixes img) : True
+INFO enumerated 125596 classes (k=1..3, diam<=5) in 0s
+PASS (a) pi is radius-2 local on all 125596 classes: 325500 distinct multi-magnon windows, no conflict; errors []
+PASS (b) pi^-1 is radius-2 local (image windows): 325500 distinct windows, no conflict; errors []
+PASS (c) injective on translation classes (diam<=5): collisions 0
+PASS (c) every one of the 37466 3-magnon classes of diam<=4 has a preimage of diam<=5; missing []
+PASS (d) T-equivariance of the assembled pi on 3000 random classes
+INFO wall 28s
+TOTAL: PASS=7 FAIL=0
+INFO 478 sources, 391669 admissible candidate images (author filter), 3s
+PASS forced X-table: 2545227 forced transitions, 442 keys, internal conflicts/out-of-ball 0 (0 = forced data alone are X-local)
+INFO candidates surviving X-local unary filter: 388024 of 391669; orbit edges 6142; 32s
+INFO sources with no surviving candidate: 0; e.g. []
+INFO maximum matching with X-local unary filter: 478 of 478
+INFO wrote logs/matching_xfiltered_s-1.json (check full X-locality with MATCHING_JSON=... rv_xlocal.py)
+PASS filter + matching computation completed
+TOTAL: PASS=2 FAIL=0

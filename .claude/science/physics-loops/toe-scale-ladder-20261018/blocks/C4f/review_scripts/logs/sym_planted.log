@@ -1,0 +1,5 @@
+PASS L=8: covariance under all 24 g (site+cube centred, phases) on planted configs (1152 pairs; crossings {'L1': 171, 'B': 80, 'A': 78})
+  [t=8s]
+PASS L=12: covariance under all 24 g (site+cube centred, phases) on planted configs (384 pairs; crossings {'L1': 212, 'B': 86, 'A': 108})
+  [t=24s]
+TOTAL: PASS=2 FAIL=0   [24s]

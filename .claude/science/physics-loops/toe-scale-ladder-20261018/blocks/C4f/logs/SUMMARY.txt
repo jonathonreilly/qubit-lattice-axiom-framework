@@ -1,0 +1,9 @@
+logs/c4f_01_axis_action.txt: TOTAL: PASS=10 FAIL=0
+logs/c4f_02_inv_dense.txt: TOTAL: PASS=6 FAIL=0
+logs/c4f_02_inv_sparse.txt: TOTAL: PASS=1 FAIL=0
+logs/c4f_02_radius.txt: TOTAL: PASS=2 FAIL=0
+logs/c4f_02_sectors.txt: TOTAL: PASS=5 FAIL=0
+logs/c4f_02_sym.txt: TOTAL: PASS=7 FAIL=0
+logs/c4f_03_interface.txt: TOTAL: PASS=2 FAIL=0
+logs/c4f_04_stress.txt: TOTAL: PASS=4 FAIL=0
+TOTAL: PASS=37 FAIL=0

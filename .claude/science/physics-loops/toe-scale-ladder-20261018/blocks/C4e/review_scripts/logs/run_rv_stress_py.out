@@ -1,0 +1,4 @@
+PASS (1) exhaustive two face pairs, offsets [-7,7]^3: 121362 configs, L1^2=L2^2=id; configs with 2 simultaneously active units: L1 118968, L2 119520; 252s
+PASS (2) two face pairs + one magnon, 60000 random configs: involutions and U^-1U = id; layer applications with >=2 active units: 106957; 212s
+PASS (3) 400 packed face-pair configs: L_i^2 = id at every step and U^-8 U^8 = id; active-unit crossings 30140; 28s
+TOTAL: PASS=3 FAIL=0

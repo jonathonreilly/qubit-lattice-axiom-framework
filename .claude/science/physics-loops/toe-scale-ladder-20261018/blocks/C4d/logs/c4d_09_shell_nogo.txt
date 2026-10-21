@@ -1,0 +1,18 @@
+tetra shell r=1: |A|=60: non-commuting translate pair found = True  (t, c) = ((-2, -2, -1), [(-2, -2, -1), (-2, -1, 0), (1, 0, 1), (1, 1, 0)])
+tetra shell r=2: |A|=212: non-commuting translate pair found = True  (t, c) = ((3, 3, 2), [(0, 0, 0), (0, 1, 1), (4, 3, 3), (4, 4, 2)])
+tetra shell r=3: |A|=508: non-commuting translate pair found = True  (t, c) = ((-3, -4, 4), [(-3, -4, 4), (-3, -3, 5), (0, 0, 0), (1, 1, 0)])
+random T-sym shell #0: |A|=172: non-commuting translate pair found = True  (t, c) = ((-2, -3, -4), [(-1, -3, -3), (-1, -2, -4), (0, 0, 0), (0, 1, 1)])
+random T-sym shell #1: |A|=140: non-commuting translate pair found = True  (t, c) = ((4, -3, -3), [(1, 0, 1), (1, 1, 0), (5, -3, -2), (5, -2, -3)])
+random T-sym shell #2: |A|=336: non-commuting translate pair found = True  (t, c) = ((-4, 0, 4), [(-4, 0, 4), (-4, 1, 5), (1, 0, 1), (1, 1, 0)])
+random T-sym shell #3: |A|=296: non-commuting translate pair found = True  (t, c) = ((-1, -4, -4), [(0, -4, -3), (0, -3, -4), (1, 0, 1), (1, 1, 0)])
+random T-sym shell #4: |A|=380: non-commuting translate pair found = True  (t, c) = ((3, 4, -4), [(0, 0, 0), (0, 1, 1), (3, 4, -4), (4, 5, -4)])
+random T-sym shell #5: |A|=388: non-commuting translate pair found = True  (t, c) = ((4, -4, -3), [(1, 0, 1), (1, 1, 0), (5, -4, -2), (5, -3, -3)])
+random T-sym shell #6: |A|=172: non-commuting translate pair found = True  (t, c) = ((0, 4, -4), [(0, 0, 0), (0, 1, 1), (0, 4, -4), (1, 5, -4)])
+random T-sym shell #7: |A|=236: non-commuting translate pair found = True  (t, c) = ((-4, 4, -3), [(-4, 4, -3), (-3, 5, -3), (1, 0, 1), (1, 1, 0)])
+random T-sym shell #8: |A|=380: non-commuting translate pair found = True  (t, c) = ((-4, -4, 4), [(-4, -4, 4), (-4, -3, 5), (1, 0, 1), (1, 1, 0)])
+random T-sym shell #9: |A|=272: non-commuting translate pair found = True  (t, c) = ((-4, -4, 3), [(-4, -4, 3), (-4, -3, 4), (1, 0, 1), (1, 1, 0)])
+random T-sym shell #10: |A|=288: non-commuting translate pair found = True  (t, c) = ((-4, -3, 4), [(-4, -3, 4), (-4, -2, 5), (1, 0, 1), (1, 1, 0)])
+random T-sym shell #11: |A|=104: non-commuting translate pair found = True  (t, c) = ((-4, -2, -4), [(-4, -2, -4), (-3, -1, -4), (1, 0, 1), (1, 1, 0)])
+PASS Prop. E witness (explicit non-commuting translates) found for every tested shell :: 15 gates
+PASS control: for the inchworm gate (end partner never toggled) the Prop. E witness never applies :: 40/40 generic ell give no witness
+TOTAL: PASS=2 FAIL=0

@@ -1,0 +1,12 @@
+family par   v      K      n*  (P(L>=n*)<=1/2 by Theorem H; 'None' = beyond 1e15)
+  P   0.25  0.3142 0.7117  47
+  P    1.0  0.5328 0.5466  30
+  F    0.5  0.1138 1.1825  954
+  F    0.8  0.0697 1.5107  1230694473
+  F   0.95  0.0544 1.7111  None
+PASS  s3b.1 Theorem H scale n* is finite (<=1e15) for P0.25, P1.0, F0.5  
+Box sizes used in s3 are 64..256; for F0.8/F0.95 n* exceeds them, so s3's box-size dependence of L(x) is not in tension with Theorem H (which is an a.s.-finiteness statement, with this effective scale).
+F0.8 L=512 ns=40: <L(x)>=13.338+-0.187  max_box L=133.8  chi_L=54.08+-8.87
+F0.95 L=512 ns=40: <L(x)>=31.231+-0.865  max_box L=254.7  chi_L=131.36+-20.74
+elapsed 156s
+TOTAL: PASS=1 FAIL=0

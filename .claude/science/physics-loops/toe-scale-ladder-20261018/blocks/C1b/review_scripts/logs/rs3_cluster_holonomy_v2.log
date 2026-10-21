@@ -1,0 +1,11 @@
+[INFO] L=2: 24 plaquettes, dim Z(mod2 2-cycles) = 10, rank(cubes+planes) = 10
+[INFO] S-graph components over all 2^24 S(0): 2272258; dim span(holonomies) = 9; dim span(planes) = 6
+[PASS] every holonomy is a 2-cycle (sanity)
+[PASS] dim span(cubes+planes) == dim Z (sanity)
+[PASS] no single elementary cube boundary lies in the cluster holonomy span (claim 0.2a, mod 2)
+[INFO] span(H) within span(planes): False (reviewer conjecture, not a C1b claim)
+[PASS] dim span(H) = dim Z - 1 (a single Z2 obstruction)
+[PASS] every sum of two distinct cubes lies in span(H) (obstruction = parity of cube number)
+[PASS] all 6 plane classes lie in span(H) (plane classes reachable, as NOTE 3.2 says)
+[INFO] single cubes in span(planes): 0 of 8
+TOTAL: PASS=6 FAIL=0

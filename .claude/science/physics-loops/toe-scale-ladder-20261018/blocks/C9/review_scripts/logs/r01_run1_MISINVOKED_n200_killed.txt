@@ -1,0 +1,4 @@
+r01 sigma-image search; n=200 starts=3 budget=600.0s seed=11
+PASS A Lemma B: 30 random generic invariant pairs with one-site overlap never commute (min rel ||[g,h]|| = 7.354e-02)
+PASS A converse: trivial vector channel at overlap => commute
+PASS A Heisenberg bonds sharing one site do not commute

@@ -1,0 +1,18 @@
+PASS B4 has 384 elements
+  invariants (rank-2 tensors, quadratic forms on F): B4 (np.float64(1.0), np.float64(1.0)), proper B4 (np.float64(1.0), np.float64(2.0)), O_h x Z2(t) (np.float64(2.0), np.float64(2.0))
+PASS B4: one invariant rank-2 tensor (delta) -> fermion c_t = c_s forced
+PASS B4: one invariant quadratic form on F_{mu nu} (F.F) -> photon E^2/B^2 ratio forced
+PASS proper B4 (det +1): rank-2 still 1; F-forms 2 (F.F and the topological F.Ftilde, which carries no velocity)
+PASS spatial cubic x time reflection only: 2 rank-2 invariants (c_t, c_s) and 2 F-forms (E^2, B^2)
+  proper cubic O only (order 24): (np.float64(2.0), np.float64(3.0))
+PASS proper cubic O only (Lattice axiom, no time reflection): 2 rank-2 invariants; 3 F-forms (E^2, B^2, E.B; E.B carries no velocity)
+PASS fermion: E(k) = k/zeta0 + O(k^3): c_psi = 1/zeta0 (=1 on the isotropic B4 action)
+PASS gauge: transverse mode A_2 at k=(k0,kx,0,0) has kernel beta_t s0^2 + beta_s s1^2
+PASS gauge: pure-gauge vector shat is a zero mode (gauge invariance of the kernel)
+PASS gauge: E(k) = sqrt(beta_s/beta_t) k + O(k^3): c_gamma = sqrt(beta_s/beta_t)
+PASS gauge model B (beta_s/beta_t=36/25): exact pole residual at k=0.01 is 0  [E/k=1.199988]
+PASS gauge model B (beta_s/beta_t=36/25): exact pole residual at k=0.3 is 0  [E/k=1.189189]
+PASS model A plaquette weights (beta_t=beta_s) B4-invariant; model B (beta_t/beta_s=25/36) not B4- but O_h x Z2(t)-invariant
+  tree-level IR ratio c_gamma/c_psi: model A = 1, model B = 1.2
+PASS W2 witness pair: same premises (matter-only kinetic isotropy, cubic covariance, one tick a_tau=a), ratios 1 vs 6/5
+TOTAL: PASS=14 FAIL=0

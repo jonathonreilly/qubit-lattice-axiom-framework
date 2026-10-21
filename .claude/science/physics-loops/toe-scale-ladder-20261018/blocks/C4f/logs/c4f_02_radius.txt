@@ -1,0 +1,6 @@
+L1: exact dependency radius (sites read to decide site 0) = 3
+L2: exact dependency radius (sites read to decide site 0) = 3
+PASS per-layer dependency radius computed (L1 = 3 as in C4e) [L1 3, L2 3]
+empirical single-flip influence radius: {'L1': 3, 'L2': 3, 'U': 5}
+PASS empirical influence within proved bounds (L_i <= exact radius, U <= R_L1 + R_L2) 
+TOTAL: PASS=2 FAIL=0

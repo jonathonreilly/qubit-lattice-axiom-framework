@@ -1,0 +1,74 @@
+gold|th=0.2|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(1, 1, 1) 25s
+gold|th=0.2|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(1, 1, -1) 25s
+gold|th=0.2|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(1, -1, 1) 25s
+gold|th=0.2|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(1, -1, -1) 25s
+gold|th=0.2|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(-1, 1, 1) 25s
+gold|th=0.2|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(-1, 1, -1) 24s
+gold|th=0.2|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(-1, -1, 1) 24s
+gold|th=0.2|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(-1, -1, -1) 24s
+author 0.2 48 {'dA': '1.229789e-02', 'dB': '1.229789e-02', 'fA': '1.504939e-02', 'fB': '1.540415e-02', 'wA': '1.644715e-02', 'wB': '1.648368e-02', 'zA': '2.377692e-02', 'zB': '2.293742e-02'}
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(1, 1, 1) 24s
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(1, 1, -1) 25s
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(1, -1, 1) 25s
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(1, -1, -1) 24s
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(-1, 1, 1) 24s
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(-1, 1, -1) 24s
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(-1, -1, 1) 24s
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=author|oct=(-1, -1, -1) 26s
+author 0.05 48 {'dA': '1.683438e-02', 'dB': '1.683438e-02', 'fA': '2.488155e-02', 'fB': '2.431323e-02', 'wA': '2.785489e-02', 'wB': '2.846344e-02', 'zA': '4.826530e-02', 'zB': '4.617713e-02'}
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, 1, 1) 25s
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, 1, -1) 25s
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, -1, 1) 24s
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, -1, -1) 25s
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, 1, 1) 25s
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, 1, -1) 24s
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, -1, 1) 25s
+gold|th=0.05|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, -1, -1) 24s
+own 0.05 48 {'dA': '1.683520e-02', 'dB': '1.683520e-02', 'fA': '2.488336e-02', 'fB': '2.431541e-02', 'wA': '2.785720e-02', 'wB': '2.846584e-02', 'zA': '4.827058e-02', 'zB': '4.618130e-02'}
+gold|th=0.0125|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, 1, 1) 24s
+gold|th=0.0125|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, 1, -1) 25s
+gold|th=0.0125|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, -1, 1) 24s
+gold|th=0.0125|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, -1, -1) 24s
+gold|th=0.0125|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, 1, 1) 24s
+gold|th=0.0125|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, 1, -1) 23s
+gold|th=0.0125|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, -1, 1) 24s
+gold|th=0.0125|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, -1, -1) 24s
+own 0.0125 48 {'dA': '1.904843e-02', 'dB': '1.904843e-02', 'fA': '3.032705e-02', 'fB': '2.907597e-02', 'wA': '3.422270e-02', 'wB': '3.518011e-02', 'zA': '6.249481e-02', 'zB': '5.986508e-02'}
+gold|th=0.003|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, 1, 1) 25s
+gold|th=0.003|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, 1, -1) 23s
+gold|th=0.003|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, -1, 1) 24s
+gold|th=0.003|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, -1, -1) 25s
+gold|th=0.003|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, 1, 1) 24s
+gold|th=0.003|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, 1, -1) 24s
+gold|th=0.003|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, -1, 1) 24s
+gold|th=0.003|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, -1, -1) 24s
+own 0.003 48 {'dA': '1.968271e-02', 'dB': '1.968271e-02', 'fA': '3.203156e-02', 'fB': '3.057327e-02', 'wA': '3.625503e-02', 'wB': '3.731417e-02', 'zA': '6.713373e-02', 'zB': '6.436102e-02'}
+gold|th=0.0|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, 1, 1) 23s
+gold|th=0.0|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, 1, -1) 24s
+gold|th=0.0|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, -1, 1) 23s
+gold|th=0.0|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(1, -1, -1) 22s
+gold|th=0.0|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, 1, 1) 23s
+gold|th=0.0|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, 1, -1) 24s
+gold|th=0.0|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, -1, 1) 23s
+gold|th=0.0|hang=1.5708|M1|n=48|T=3.0|Fh=own|oct=(-1, -1, -1) 24s
+own 0.0 48 {'dA': '1.988530e-02', 'dB': '1.988530e-02', 'fA': '3.259844e-02', 'fB': '3.107359e-02', 'wA': '3.693699e-02', 'wB': '3.802888e-02', 'zA': '6.870475e-02', 'zB': '6.588567e-02'}
+QUEUE_DONE
+gold|th=0.0|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(1, 1, 1) 53s
+gold|th=0.0|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(1, 1, -1) 54s
+gold|th=0.0|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(1, -1, 1) 54s
+gold|th=0.0|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(1, -1, -1) 54s
+gold|th=0.0|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(-1, 1, 1) 53s
+gold|th=0.0|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(-1, 1, -1) 53s
+gold|th=0.0|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(-1, -1, 1) 53s
+gold|th=0.0|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(-1, -1, -1) 53s
+own 0.0 64 {'dA': '1.988535e-02', 'dB': '1.988535e-02', 'fA': '3.259832e-02', 'fB': '3.107350e-02', 'wA': '3.693720e-02', 'wB': '3.802874e-02', 'zA': '6.870414e-02', 'zB': '6.588678e-02'}
+gold|th=0.003|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(1, 1, 1) 56s
+gold|th=0.003|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(1, 1, -1) 57s
+gold|th=0.003|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(1, -1, 1) 57s
+gold|th=0.003|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(1, -1, -1) 60s
+gold|th=0.003|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(-1, 1, 1) 59s
+gold|th=0.003|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(-1, 1, -1) 57s
+gold|th=0.003|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(-1, -1, 1) 56s
+gold|th=0.003|hang=1.5708|M1|n=64|T=3.0|Fh=own|oct=(-1, -1, -1) 55s
+own 0.003 64 {'dA': '1.968262e-02', 'dB': '1.968262e-02', 'fA': '3.203138e-02', 'fB': '3.057330e-02', 'wA': '3.625501e-02', 'wB': '3.731403e-02', 'zA': '6.713355e-02', 'zB': '6.436104e-02'}
+QUEUE2_DONE

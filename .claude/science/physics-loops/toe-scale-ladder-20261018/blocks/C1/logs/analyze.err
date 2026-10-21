@@ -1,0 +1,2 @@
+/home/user/qubit-lattice-axiom-framework/.claude/science/physics-loops/toe-scale-ladder-20261018/blocks/C1/scripts/analyze.py:19: RuntimeWarning: invalid value encountered in scalar divide
+  return float(x.mean()), float(max(se64, se16)), float(se16 / se64)

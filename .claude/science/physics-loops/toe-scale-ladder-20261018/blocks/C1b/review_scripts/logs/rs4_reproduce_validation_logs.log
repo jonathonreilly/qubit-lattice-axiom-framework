@@ -1,0 +1,3 @@
+[PASS] validate_L2_val2.log: 25 rows recomputed from raw files match the log (recomputed FAIL count 9)
+[PASS] validate_L2_val3.log: 25 rows recomputed from raw files match the log (recomputed FAIL count 0)
+TOTAL: PASS=2 FAIL=0

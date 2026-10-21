@@ -1,0 +1,7 @@
+PASS torus L=10: L1^2 = L2^2 = id on 342 configs (random p in [0.02,0.98] + stress on empty/full/half/slab/rand backgrounds) [1002 active-unit crossings, of which L2: 199 B-type, 176 A-type; 10s]
+PASS torus L=10: stress exercises both L2 kinds (>=100 crossings each) 
+PASS torus L=10: sparse (c4f_core) == dense (c4f_dense) on 40 stress configs 
+PASS torus L=12: L1^2 = L2^2 = id on 146 configs (random p in [0.02,0.98] + stress on empty/full/half/slab/rand backgrounds) [748 active-unit crossings, of which L2: 149 B-type, 138 A-type; 8s]
+PASS torus L=12: stress exercises both L2 kinds (>=100 crossings each) 
+PASS torus L=12: sparse (c4f_core) == dense (c4f_dense) on 15 stress configs 
+TOTAL: PASS=6 FAIL=0

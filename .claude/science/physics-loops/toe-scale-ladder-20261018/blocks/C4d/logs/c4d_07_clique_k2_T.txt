@@ -1,0 +1,11 @@
+[k=2,T] clique translation classes: 13
+[k=2,T] unknowns (orbit-keyed amplitudes): 62, stay: 3
+[k=2,T] unitarity constraints: 6552  (8s)
+[k=2,T] spectator constraints: 579336  (36s)
+[k=2,T] forced zeros: 59; surviving: 3  (41s)
+PASS [k=2,T] no stay amplitude is forced to zero (diagonal W_k stays allowed)
+PASS [k=2,T] every non-stay amplitude of W_k is forced to zero (W_k diagonal) :: 0 non-stay survivors
+   e.g. (((0, 0, 0), (0, 0, 1)), ((-1, -1, 0), (-1, -1, 1))) <- U [(0, 0, 0), (0, 0, 1)] [(-2, -2, 0), (-2, -2, 1)]
+   e.g. (((0, 0, 0), (0, 1, -1)), ((1, 0, -1), (1, 0, 0))) <- U [(0, 0, 0), (0, 1, -1)] [(2, -1, -1), (2, 0, 0)]
+   e.g. (((0, 0, 0), (0, 1, -1)), ((-1, 0, -1), (-1, 0, 0))) <- U [(0, 0, 0), (0, 1, -1)] [(-2, 1, -1), (-2, 2, 0)]
+TOTAL: PASS=2 FAIL=0

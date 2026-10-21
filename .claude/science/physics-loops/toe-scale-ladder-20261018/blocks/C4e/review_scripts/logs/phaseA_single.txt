@@ -1,0 +1,5 @@
+PASS (v) single magnons fixed by U and U^-1 (sparse)
+PASS (v) single magnons fixed at all 512 sites, torus L=8
+PASS (v-aux) single holes in full background fixed
+INFO section single wall time 9s
+TOTAL: PASS=3 FAIL=0

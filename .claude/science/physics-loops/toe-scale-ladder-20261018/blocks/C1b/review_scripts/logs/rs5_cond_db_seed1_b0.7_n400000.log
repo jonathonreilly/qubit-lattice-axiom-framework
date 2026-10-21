@@ -1,0 +1,5 @@
+[INFO] L=2 beta=0.7 seed=1: frozen vertices nF+nP = 4+6 = 10
+[INFO] visited configurations: 256; tested (expected count > 200): 160; distinct Ibar values: 93
+[PASS] occupancy vs exp(-g beta Ibar) on the visited set: chi2=155.3 dof=159 p=0.567 max|z|=3.25
+[INFO] control vs uniform: chi2=389092.9 dof=159
+TOTAL: PASS=1 FAIL=0

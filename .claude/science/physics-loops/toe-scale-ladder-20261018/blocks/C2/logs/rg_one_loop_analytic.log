@@ -1,0 +1,38 @@
+PASS d ln c_psi/dl = e^2 [eta - 4/(1+eta)^2]/(6 pi^2), eta = c_gamma/c_psi (exact integral)  [sympy result: (eta**3 + 2*eta**2 + eta - 4)/(6*pi**2*(eta**2 + 2*eta + 1))]
+PASS fermion flow depends on c_gamma/c_psi only (time-rescaling invariance)
+PASS Lorentz point eta=1 is fixed: F_psi(1)=0
+PASS instantaneous-Coulomb limit eta->inf: d ln c_psi/dl -> 2 alpha_C/(3 pi), alpha_C = e^2 c_gamma/(4 pi c_psi)
+PASS fermion loop adds (l/6pi^2)(1/2)(E^2/c_psi - c_psi B^2): d eps = 1/(6pi^2 c), d(1/mu) = c/(6pi^2)
+PASS d ln c_gamma/dl = (e^2/12 pi^2)(1/eta - eta)
+PASS d(1/e^2)/dl = (eta + 1/eta)/(12 pi^2) -> 1/(6 pi^2) at eta=1 (standard QED, d(1/alpha)/dl = 2/(3 pi))
+PASS d ln eta/dl = (e^2/12pi^2)[1/eta - 3 eta + 8/(1+eta)^2]
+PASS linearised: d delta/dl = -(e^2/2pi^2) delta = -(2 alpha/pi) delta, delta = ln eta
+PASS attractive globally on (0.05,20): sign d ln eta/dl = -sign(ln eta)
+PASS d ln(c_gamma^2 c_psi)/dl = (e^2/6pi^2)[1/eta - 4/(1+eta)^2] = O((eta-1)^2)
+PASS N_f: d delta/dl = -(2 alpha/3pi)(N_f + 2) delta; equals -(2alpha/pi) at N_f=1
+  closed form: delta(l)/delta(0) = (alpha(l)/alpha(0))^((N_f+2)/N_f)  [linearised, one loop]
+
+  declared: alpha(m_e) = 1/137.036, l = ln(M/m_e); one Dirac species unless stated
+  l = 51.000
+    eta_UV=1.001000  ->  eta_IR=1.000781   ln eta_IR/ln eta_UV = 0.7813   (alpha_UV=1/126.213)
+    eta_UV=1.120954  ->  eta_IR=1.093089   ln eta_IR/ln eta_UV = 0.7795   (alpha_UV=1/126.213)
+    eta_UV=1.200000  ->  eta_IR=1.152478   ln eta_IR/ln eta_UV = 0.7784   (alpha_UV=1/126.213)
+    eta_UV=2.000000  ->  eta_IR=1.700558   ln eta_IR/ln eta_UV = 0.7660   (alpha_UV=1/126.213)
+  l = 51.528
+    eta_UV=1.001000  ->  eta_IR=1.000779   ln eta_IR/ln eta_UV = 0.7792   (alpha_UV=1/126.101)
+    eta_UV=1.120954  ->  eta_IR=1.092829   ln eta_IR/ln eta_UV = 0.7775   (alpha_UV=1/126.101)
+    eta_UV=1.200000  ->  eta_IR=1.152037   ln eta_IR/ln eta_UV = 0.7763   (alpha_UV=1/126.101)
+    eta_UV=2.000000  ->  eta_IR=1.698023   ln eta_IR/ln eta_UV = 0.7639   (alpha_UV=1/126.101)
+  l = 49.916
+    eta_UV=1.001000  ->  eta_IR=1.000785   ln eta_IR/ln eta_UV = 0.7856   (alpha_UV=1/126.444)
+    eta_UV=1.120954  ->  eta_IR=1.093627   ln eta_IR/ln eta_UV = 0.7838   (alpha_UV=1/126.444)
+    eta_UV=1.200000  ->  eta_IR=1.153386   ln eta_IR/ln eta_UV = 0.7827   (alpha_UV=1/126.444)
+    eta_UV=2.000000  ->  eta_IR=1.705797   ln eta_IR/ln eta_UV = 0.7704   (alpha_UV=1/126.444)
+PASS l=51, N_f=1, small mismatch: numerical residual ratio = (alpha_IR/alpha_UV)^3 (closed form)  [num=0.78129, closed=0.78129]
+PASS the IR mismatch retains >70% of its UV value over l=51 (N_f=1)
+  N_f=1 (unit charges, common speed; illustrative): alpha_UV=1/126.21, residual factor (alpha_IR/alpha_UV)^((N+2)/N) = 0.7813
+  N_f=3 (unit charges, common speed; illustrative): alpha_UV=1/104.57, residual factor (alpha_IR/alpha_UV)^((N+2)/N) = 0.6372
+  N_f=8 (unit charges, common speed; illustrative): alpha_UV=1/50.46, residual factor (alpha_IR/alpha_UV)^((N+2)/N) = 0.2868
+  |delta_IR| < 1e-15  requires |delta_UV| < 1.28e-15 (N_f=1, l=51)
+  |delta_IR| < 1e-20  requires |delta_UV| < 1.28e-20 (N_f=1, l=51)
+TOTAL: PASS=14 FAIL=0

@@ -1,0 +1,34 @@
+PASS Lemma 1: O (order 24) is a group fixing no nonzero vector (f = R f => f = 0) ::fixed dim 0
+PASS Lemma 1: T (order 12) is a group fixing no nonzero vector (f = R f => f = 0) ::fixed dim 0
+PASS Lemma 1: D4 (order 8) is a group fixing no nonzero vector (f = R f => f = 0) ::fixed dim 0
+PASS Lemma 1: D3 (order 6) is a group fixing no nonzero vector (f = R f => f = 0) ::fixed dim 0
+PASS Lemma 1: D2 (order 4) is a group fixing no nonzero vector (f = R f => f = 0) ::fixed dim 0
+PASS Lemma 1: R maps the e_i-transverse plane onto the e_j-transverse plane (cell-wise relabelling) 
+[axis] orbit-span ranks: (np.int64(1), np.int64(0), np.int64(0)):3, (np.int64(1), np.int64(1), np.int64(0)):3, (np.int64(1), np.int64(-1), np.int64(0)):2, (np.int64(1), np.int64(1), np.int64(1)):1, (np.int64(2), np.int64(-1), np.int64(-1)):2
+PASS Lemma 2(a) axis: only m = +-n has a 1-dim orbit span (perp-to-n m span 2 -> still SU(2)) 
+[full] orbit-span ranks: (np.int64(1), np.int64(0), np.int64(0)):3, (np.int64(1), np.int64(1), np.int64(0)):3, (np.int64(1), np.int64(-1), np.int64(0)):3, (np.int64(1), np.int64(1), np.int64(1)):3, (np.int64(2), np.int64(-1), np.int64(-1)):3
+PASS Lemma 2(a) full: every tested m has O-orbit spanning R^3 (irreducible T1) 
+PASS Lemma 2(b) axis: H_n = {R : Q(R) n = n} = T exactly (order 12) 
+PASS Lemma 2(b) axis: odd R send n -> -n (vacuum -> fully polarised anti-vacuum; not in H_n) 
+PASS Lemma 2(b) axis: T acts on-site by rotations about n (Q(R) n = n, Q(R) in SO(3)) 
+PASS Lemma 2(b) step 5 axis: for R in T, D(Q(R)) sigma^+_n D^dag = e^{i psi_R} sigma^+_n (site-independent phase) 
+PASS Lemma 2(b) step 6: T fixes no nonzero vector => t0 = 0 
+PASS sign action: kernel of s is T and acts trivially on-site 
+PASS Lemma 3: d_r = ((2r+1)^3-1)/2 unordered near-pair relative positions, r=1 ::13
+PASS Lemma 3: d_r = ((2r+1)^3-1)/2 unordered near-pair relative positions, r=2 ::62
+13-dim near-pair permutation rep orbit sizes: O [3, 4, 6]  T [3, 4, 6]
+PASS Lemma 3: 13 = 3 + 4 + 6 (face, corner, edge orbits) under both O and T 
+PASS Lemma 4(a): real commutant of Q(O), axis: dim 2 ::2
+PASS Lemma 4(a): real commutant of Q(O), full: dim 1 ::1
+PASS Lemma 4(a): real commutant of Q(O), sign: dim 5 ::5
+PASS Lemma 4(a): real commutant of Q(O), trivial: dim 9 ::9
+PASS Lemma 4(a) axis: SO(3) elements of span{P_n,P_E} = {1, pi-rotation about n} ::[(1, 1), (1, -1)]
+PASS Lemma 4(c): axis beta_R maps sigma_n -> s(R) sigma_n, so face-bond sigma_n sigma_n terms are invariant 
+PASS Margolus: exactly one t mod 2 per R preserves P0 (and then P1) => stabiliser 2Z^3 x| O_c ::24
+PASS Margolus: every P0-preserving element also preserves P1 
+PASS Margolus: t = 0 survivors = C3 about (1,1,1) (order 3) 
+PASS Margolus: pure translations preserving: only t = 0 mod 2 
+PASS Margolus: (1,1,1) swaps the partitions 
+PASS Margolus: index of 2Z^3 in Z^3 is 8 
+PASS Lemma 5: distinct sites of a P0 cube lie in distinct P1 cubes (and vice versa by symmetry) 
+TOTAL: PASS=30 FAIL=0

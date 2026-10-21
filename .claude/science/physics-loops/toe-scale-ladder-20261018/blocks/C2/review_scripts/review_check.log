@@ -1,0 +1,36 @@
+PASS clifford 
+PASS transverse contraction = -2g0q0-2(khat.q)g.khat 
+PASS g0 qslash g0 = g0q0 - g.q 
+PASS I1,I2 closed forms vs quadrature eta=0.4 
+PASS I1,I2 closed forms vs quadrature eta=2.5 
+PASS Coulomb-gauge dlnc/dl / e^2 at eta=1/3 mine=-0.0323664892191 author=-0.0323664892191
+PASS Coulomb-gauge dlnc/dl / e^2 at eta=1/2 mine=-0.0215776594794 author=-0.0215776594794
+PASS Coulomb-gauge dlnc/dl / e^2 at eta=1 mine=0 author=0
+PASS Coulomb-gauge dlnc/dl / e^2 at eta=2 mine=0.0262684550184 author=0.0262684550184
+PASS Coulomb-gauge dlnc/dl / e^2 at eta=5 mine=0.0825580014863 author=0.0825580014863
+PASS closed form equal symbolically (eta - 1)*(eta**2 + 3*eta + 4)/(6*pi**2*(eta + 1)**2)
+PASS Coulomb limit: dlnc/dl -> e^2 eta/(6pi^2) = 2 alpha_C/(3pi) 
+PASS eta=1: Z0 = Zs (= e^2/8pi^2) 
+PASS d eps/dl ∝ 1/c, d(1/mu)/dl ∝ c 
+PASS linearised d delta/dl = -(2alpha/3pi)(Nf+2) -2*alpha*(N_f + 2)/(3*pi)
+PASS d(dln eta/dl)/d eta <0 on (0.02,50): unique attractive fixed point eta=1 
+PASS d ln(c_g^2 c_psi)/dl vanishes at O(delta), nonzero O(delta^2) d**2*e2/(24*pi**2)
+PASS N_f=1,l=51 factor 0.781 0.78129, 1/alpha_UV=126.213
+PASS N_f=3 0.637, N_f=8 0.287 0.6372 0.2868
+PASS ln(M_Pl/m_e) = 51.53 51.527
+PASS cutoff mismatch 1e-15/0.781=1.28e-15 
+PASS RK4 eta_UV=1.2 -> eta_IR≈1.1525 (author 1.152478) 1.152478
+PASS |B4|=384 
+PASS B4 invariant rank-2 tensors = 1 
+PASS O_h x Z2(t) invariant rank-2 tensors = 2 
+PASS B4 invariant quadratic forms on Lambda^2 = 1 
+PASS proper B4 invariant quadratic forms on Lambda^2 = 2 (F^2, F Ftilde) 
+PASS O_h x Z2(t) invariant quadratic forms on Lambda^2 = 2 (E^2,B^2) 
+PASS |cub| = 96 
+PASS |O|=24 
+PASS O (proper, no T) rank-2 tensors = 2 
+PASS O (proper, no T) quadratic forms on Lambda^2 = 3 (E^2,B^2,E.B) 
+PASS O x Z2(t) quadratic forms on Lambda^2 = 2 
+PASS W2 gauge pole: c_gamma = sqrt(beta_s/beta_t)=xi 1.1999999
+PASS W2 fermion pole zeta0=1: c_psi=1 
+TOTAL: PASS=35 FAIL=0

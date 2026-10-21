@@ -1,0 +1,5 @@
+PASS alpha fixes s_n(0) 
+PASS alpha(X_0) supported on all 7 star sites (entangling) ::[0, 1, 2, 3, 4, 5, 6]
+PASS alpha(X_0) has > 1 Pauli component (non-Clifford) ::10272 components on the star
+PASS alpha(s^+_0) = s^+_0 f, f = exp(2i phi sum_e s_n(e)), and alpha^2(s^+_0) = s^+_0 f^2 (Lemma 4(c) freeze form) 
+TOTAL: PASS=4 FAIL=0

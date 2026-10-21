@@ -2,10 +2,28 @@
 
 **Date:** 2026-04-20 (originally); 2026-05-03 (review-loop runner repair via PR #485)
 **Lane:** DM A-BCC / remaining open import `I5`
-**Status:** honest no-go on the current theorem stack; runner PASS=12/0 after PR #485 register-check repair
+**Status:** historical no-go claim; the old runner PASS=12/0 after PR #485 is a historical result. The 2026-10-21 documentary repair below does not independently certify that claim.
 **Claim type:** no_go
 **Primary runner:**
 `scripts/frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py`
+
+## Documentary compatibility correction (2026-10-21)
+
+The May 3 narrative and its 12/0 result below are historical. In the campaign
+combined candidate, the local-selector input note withdraws its global exclusion
+claim and removes the
+literal `I5 is still open positively`. A combined replay returned 11/1 solely
+because the consumer still scored that obsolete source-authority phrase.
+That failed replay is preserved in the campaign evidence.
+
+The current repair removes only that authority score and reports the input's
+finite-diagnostic/open-obligation text presence without scoring it. The
+remaining 11 checks, numerical thresholds, searches and failure exit are
+unchanged. A future 11/0 result is a different score universe; it does not
+mean the original authority check passed. Text presence is not proof or audit
+authority. This correction does not independently establish exact solutions,
+rank on a full neighborhood, global two-sheet exhaustiveness, a new no-go,
+physical source selection, or closure of I5/I12.
 
 ## Review-loop repair (2026-05-03)
 
@@ -219,11 +237,14 @@ not as the closeout of `I5`.
 PYTHONPATH=scripts python3 scripts/frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py
 ```
 
-Expected:
+Historical expected result (May 3; obsolete authority score included):
 
 ```text
 PASS=12 FAIL=0
 ```
+
+Current runner has 11 scored checks plus an unscored documentary report.
+No new execution result is asserted by this annotation.
 
 ## Audit dependency repair links
 

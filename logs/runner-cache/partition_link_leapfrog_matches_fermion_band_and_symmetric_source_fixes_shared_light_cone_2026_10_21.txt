@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/partition_link_leapfrog_matches_fermion_band_and_symmetric_source_fixes_shared_light_cone_2026_10_21.py
+runner_sha256: 79bab74fcc9ca973129ba4dfd0d44bdc000613d352e0d99778ef4be8bc6eeb04
+input_fingerprint_sha256: e2038e3d59254d7312aef7e72526b60787403e0c6d23594a54b681916dda87da
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+== 0. fermion tick (CL-2, mu = 0)
+[PASS] W Hermitian, W^2 = 1; all 8 bands obey cos w = S(K) (2000 K)  1.0e-15
+[PASS] fermion axis (A4=1.000): c = 1/sqrt3, phase-velocity coefficient (3A4-1)/24  c=0.57735027, b=+0.083334
+[PASS] fermion face (A4=0.500): c = 1/sqrt3, phase-velocity coefficient (3A4-1)/24  c=0.57735027, b=+0.020834
+[PASS] fermion body (A4=0.333): c = 1/sqrt3, phase-velocity coefficient (3A4-1)/24  c=0.57735027, b=+0.000000
+== 1. links on the two partitions: E on even-block links, B on odd-block (dual) links, alternate half-ticks
+[PASS] C = 1/sqrt3: both transverse polarisations have exactly the fermion band w(K) at every K (2000 K)  max |w_link - w_fermion| = 1.2e-14, polarisation splitting 9.3e-15
+[PASS] longitudinal (Gauss) modes are static: eigenvalue 1  2.4e-15
+[PASS] zone corner K = pi(1,1,1): (M+1)^2(M-1) = 0 but (M+1)(M-1) != 0 (transverse Jordan block: no link vacuum at that K)  1.8e-14, 11.31
+[PASS] stability edge is C = 1/sqrt3: |eig| = 1 just below, > 1 just above  1.000000000000, 1.0935
+[PASS] C = 0.5: link speed = C (not 1/sqrt3), so leading-order cone differs from the fermion  c = 0.500000
+[PASS] C = 0.55: link speed = C (not 1/sqrt3), so leading-order cone differs from the fermion  c = 0.550000
+== 2. links on the individual site hops W uses (site spacing = 1/2 block)
+[PASS] one leapfrog per tick on site hops: matching the fermion needs Courant 2/sqrt3 > 1/sqrt3, unstable  max |eig| = 13.72
+[PASS] axis: half-tick site Yee c = 1/sqrt3, coefficient (3A4-1)/96 = fermion/4; continuous-time coefficient 3A4/24  site +0.020833, cont +0.125000, fermion +0.083334
+[PASS] face: half-tick site Yee c = 1/sqrt3, coefficient (3A4-1)/96 = fermion/4; continuous-time coefficient 3A4/24  site +0.005209, cont +0.062500, fermion +0.020834
+[PASS] body: half-tick site Yee c = 1/sqrt3, coefficient (3A4-1)/96 = fermion/4; continuous-time coefficient 3A4/24  site +0.000001, cont +0.041667, fermion +0.000000
+   (v_link - v_fermion)/c in units of w^2: site half-tick {'axis': 0.0625, 'face': 0.01562, 'body': -0.0} ; continuous time {'axis': -0.04167, 'face': -0.04167, 'body': -0.04167}
+[PASS] half-tick site links are faster than fermions by (3A4-1)/32 w^2 (0 to 1/16); continuous-time links slower by w^2/24 in every direction
+== 3. gauge-covariant W from link phases on its hops
+[PASS] random face flux: W'^2 != 1 and cos(mu/2)W' + i sin(mu/2) is not unitary; pure gauge keeps both  |UU^+ - 1| = 0.498 (flux), 5.9e-15 (gauge)
+[PASS] polar part sign(W') is unitary, squares to 1, gauge covariant, and reduces to W at zero flux
+   (the link phases enter only the fermion update; the link kinetic term and its Courant number are not fixed by W)
+== 4. geometry: symmetric source in g = diag(-alpha,1,1,1) needs alpha = (energy flux)/(momentum density) = d(w^2)/d(K^2)
+[PASS] fermion and partition links: flux/momentum -> 1/3 at long wavelength, so alpha = 1/3 (block, tick)  0.33333332, 0.33333332
+[PASS] the two ratios agree at every K too (identical bands); for a single band they vary with K at O(K^2)  max diff 8.8e-12; fermion axis ratio at K=0.8: 0.30940
+[PASS] mu = 0.1: rest-frame ratio = (1/3)(mu/2)cot(mu/2) (massive limiting speed below the cone by mu^2/24)  0.33305547 vs 0.33305551
+[PASS] mu = 0.5: rest-frame ratio = (1/3)(mu/2)cot(mu/2) (massive limiting speed below the cone by mu^2/24)  0.32635975 vs 0.32635978
+   alpha = 0.3333: TT cone w = sqrt(alpha) K, c_grav/c_fermion = 1.000000
+   alpha = 0.6000: TT cone w = sqrt(alpha) K, c_grav/c_fermion = 1.341641
+   alpha = 1.0000: TT cone w = sqrt(alpha) K, c_grav/c_fermion = 1.732051
+[PASS] alpha = 1/3: c_grav = c_fermion exactly at leading order; the supplied alpha = 0.6 gives 1.3416
+== 5. measured comparisons; w = E tau, tau = L_block/(sqrt3 c); a = sqrt(8 pi) l_P
+   [block = 2a = 10.03 l_P] w(1e20 eV) = 4.74e-08; proton Cherenkov needs (v_p - v_link) < 4.4e-23
+[PASS] [block = 2a] continuous-time links: fermions faster by 9.4e-17 at 1e20 eV, above the proton Cherenkov threshold (excluded if protons carry the fermion O(k^2))  ratio 2.1e+06
+[PASS] [block = 2a] half-tick site links: photon faster by <= 2.8e-26 at 1.4 PeV, below the photon-decay threshold 2.7e-19 (allowed)  margin 9.7e+06
+   [block = 2a] massive limiting-speed offset mu^2/24: proton 8.2e-39, top 2.8e-34
+   [block = a = 5.01 l_P] w(1e20 eV) = 2.37e-08; proton Cherenkov needs (v_p - v_link) < 4.4e-23
+[PASS] [block = a] continuous-time links: fermions faster by 2.3e-17 at 1e20 eV, above the proton Cherenkov threshold (excluded if protons carry the fermion O(k^2))  ratio 5.3e+05
+[PASS] [block = a] half-tick site links: photon faster by <= 6.9e-27 at 1.4 PeV, below the photon-decay threshold 2.7e-19 (allowed)  margin 3.9e+07
+   [block = a] massive limiting-speed offset mu^2/24: proton 2.1e-39, top 7.0e-35
+[PASS] GW170817 (|c_g - c|/c < ~1e-15): alpha = 1/3 passes; alpha = 0.6 would miss by 3e14
+supplied: discretisations and their placement, tick as time step, a = sqrt(8 pi) l_P, energy-flux reading of the source.
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

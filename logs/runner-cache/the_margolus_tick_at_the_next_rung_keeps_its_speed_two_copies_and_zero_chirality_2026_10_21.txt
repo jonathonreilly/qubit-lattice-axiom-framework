@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/the_margolus_tick_at_the_next_rung_keeps_its_speed_two_copies_and_zero_chirality_2026_10_21.py
+runner_sha256: 6bc291018bea8b103d02d9ab1aa7cc8bc3d43e2d1e9973cfa62967f3586b0f69
+input_fingerprint_sha256: 3d9b4b62991554c9019faded52cb1915372d99e934c3b2d42fedee52c618a358
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 23.55
+status: ok
+----- stdout -----
+== 1. exact folding at the next rung (4^3 cells, 64 modes)
+[PASS] 64-band rung-1 tick = direct sum of the 8 fine bands at K=(Q+2pi n)/2; all obey cos w = A S(K) - B  2.6e-15
+   Q=0 levels |w|: {'Gamma': np.float64(0.13), 'X(3)': np.float64(1.206086), 'M(3)': np.float64(1.852721), 'R': np.float64(2.721593)} dims {'Gamma': 8, 'X(3)': 24, 'M(3)': 24, 'R': 8}
+[PASS] Q=0 splits 1+1+3+3 stars: Gamma (|w|=mu) 8, X 24, M 24, R (|w|=pi-2b) 8
+   rotation content (E1/2, E5/2, G3/2): {'Gamma': (0, 0, 2), 'X(3)': (2, 2, 4), 'M(3)': (2, 2, 4), 'R': (0, 0, 2)}  whole cell (4, 4, 12)  rung-0 cube (0, 0, 2)
+[PASS] cell = 4E1/2+4E5/2+12G3/2; Gamma and R = 2G3/2; X and M = 2E1/2+2E5/2+4G3/2; rung-0 cube = 2G3/2 only
+[PASS] the fine tick commutes with the 24 spin-3/2 rotations about the rung-1 cell centre (a fine odd-block centre)
+== 2. is the composite a rung-1 Margolus circuit? (8^3 torus, blocks 4^3, partitions offset (2,2,2))
+[PASS] one fine tick: no alignment of the rung-1 partitions factorises it as V_odd V_even (needs 64 per block)  best 16/64
+[PASS] two fine ticks: no alignment of the rung-1 partitions factorises it as V_odd V_even (needs 64 per block)  best 0/64
+== 3. light-sector flow under the x2 zoom (Wilsonian: light states only, two ticks per rung tick)
+[PASS] mu=0.1, b=0.300: rung-1 light mass = 2 mu and c^2 unchanged = A mu/(3 sin mu) = 0.303896  rung0 0.303896, rung1 0.303896
+[PASS] mu=0.05, b=1.321: rung-1 light mass = 2 mu and c^2 unchanged = A mu/(3 sin mu) = 0.020203  rung0 0.020203, rung1 0.020203
+[PASS] cubic anisotropy w^2(q x) - w^2(q n111) = -c^2 q^4/(18 * 4^n) at rung n (irrelevant: isotropy emerges)  ratios 1.0000 0.2500 0.0625 0.0156
+[PASS] a CL-3 member (2mu, b') with the same c exists iff 2b >= mu; cos 2b' = cos2b cos mu + sin^2 mu
+[PASS] rung-n matching needs 3c^2 <= (mu_n/2)cot(mu_n/2): fails at the first rung for b=0; for the CL-6 b it holds up to mu_n = 3.0617 > pi - 1/2
+== 4. the pi-cone under the exact (stroboscopic) zoom
+[PASS] mu=0.3, b=0.050: two-tick rung-1 tick at Q=0 has 8 states at |w|=0.2000 = |2(pi-2b)| mod 2pi (fine R states aliased to the coarse centre)
+[PASS] mu=0.05, b=1.321: two-tick rung-1 tick at Q=0 has 8 states at |w|=1.0000 = |2(pi-2b)| mod 2pi (fine R states aliased to the coarse centre)
+[PASS] aliased doubler: mass 4b per rung-1 tick, c_D^2 = (A/3)(2b/sin2b) = 0.32560 vs light c^2 = 0.32998 (equal only if 2b = mu)  fit 0.32560
+[PASS] band aliasing: CL-6 b, band [mu, 1/2]; at rung n*=4 (U^16) states with |K| >= 0.5 alias to quasi-energy 0  rung0 min 0.087, rung 4 min 1.5e-05
+== 5. chirality at rung 1
+[PASS] rung-1 massless light node and aliased massless doubler node: zero Berry flux (not net-chiral)  -1.1e-16, -1.0e-15
+== 6. copies
+[PASS] every rung-1 (two-tick) level is fourfold at generic Q: the two light copies persist at every rung  3.6e-15
+[PASS] rung 0: the 8-mode cube has no E1/2 or E5/2, so no covariant rung-0 tick has a 2-dim rest level (single Dirac impossible)
+== 7. SUPPLIED rung-1 block unitary with one Dirac copy (existence check, not a law)
+   W1 = P_a - P_b + i exp(i 0.3 h_rest) on the rest; P_a, P_b = E1/2 copies (e_max +- e_min)/sqrt2 of the reduced z-position (eigenvalues [-0.18162 -0.13819  0.13819  0.18162] ); h = in-cell pi-flux edge hop
+[PASS] W1 unitary and commutes with the 24 rotations about the cell centre
+[PASS] Q=0: exactly 4 states at w=0, carrying E1/2 + E1/2; the other 60 at |w| >= 1.460
+[PASS] one isotropic Dirac cone: +-c1|Q|, each twofold, c1 = 0.5745 rung-1 blocks per tick
+[PASS] no other light states: min |w| over |Q| >= 0.3 is the cone itself at |Q| = 0.3  min 0.1714, cone at 0.3 0.1713
+[PASS] the light band is isolated (5th level >= 1 over the zone) and the in-cell hop removes the flat pile-up at pi (mean states within 0.2 of pi: 1.0, vs 56.1 without it)
+[PASS] mass: W1(m) = e^{im/2}P_a - e^{-im/2}P_b + i(rest) gives |w| = sqrt(m^2 + c1^2 Q^2) (|Q| = 0.02)  0.100736
+[PASS] zero Berry flux through the upper cone (Dirac, not Weyl)  +1.4e-16
+[PASS] 8^3 lattice: the rung-1 tick commutes with the 24 rotations about both partitions' block centres  1.3e-15
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

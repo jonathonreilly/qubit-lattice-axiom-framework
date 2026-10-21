@@ -1,34 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py
-runner_sha256: 3c8b9e2ea3f2317e778bea38bc37d668b9076d302a3f309fe8ad986100aec063
-input_fingerprint_sha256: d5f3bf9d46bd3b1776242b48b0ede7b9552760c2bf84df3834a30594f3558451
-timeout_sec: 300
-exit_code: 1
-elapsed_sec: 0.65
-status: nonzero_exit
+runner_sha256: b808cb62a1bd6bba00da5e3133131ab269da29c4b8f81f0eceaacc0af4c0ba17
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
 ----- stdout -----
-========================================================================================
-DM LEPTOGENESIS PMNS SELECTOR-BANK CP-SHEET BLINDNESS THEOREM
-========================================================================================
-
-Question:
-  Do any of the current PMNS-side selector laws or positive closure
-  candidates on this branch already fix the constructive mainline CP sheet?
-
-========================================================================================
-PART 1: CURRENT EXACT CLOSURE LAWS ARE CP-SHEET BLIND
-========================================================================================
-Traceback (most recent call last):
-  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py", line 256, in <module>
-    sys.exit(main())
-             ~~~~^^
-  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py", line 238, in main
-    part1_current_exact_closure_laws_are_cp_sheet_blind()
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py", line 87, in part1_current_exact_closure_laws_are_cp_sheet_blind
-    i_star, extremal_params = quiet_call(minlaw.part1_transport_extremality_fixes_the_favored_column)
-                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: module 'frontier_dm_leptogenesis_pmns_mininfo_source_law' has no attribute 'part1_transport_extremality_fixes_the_favored_column'
+[PASS] gamma is odd
+[PASS] E1 is even
+[PASS] E2 is even
+[PASS] cp1 is odd
+[PASS] cp2 is odd
+[PASS] phase information cost is even
+[PASS] H(-d)=conjugate(H(d))
+[PASS] even-data ambiguity does not imply target-sign impossibility
+Scope: reflected domain/constraints must be supplied; nonzero odd data give distinct sign partners.
+Eigenvector-modulus packets additionally require simple eigenvalues and consistent ordering.
+No stationarity, branch count, physical admissibility or transport closure is proved here.
+PASS=8 FAIL=0
 
 ----- stderr -----
 

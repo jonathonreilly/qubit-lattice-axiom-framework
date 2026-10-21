@@ -1,43 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py
-runner_sha256: 1c66ec1ffc15e7a8a37514f64582da2594ac2ec790a41615bfeec3e8c2edbf59
-input_fingerprint_sha256: e9b891128cb0eab281109d1f5c57e9df5dfac2febc8f84b8312ca7a17966c539
+runner_sha256: a6fd887a2a20fc58608a4f6e1cb9c63b2ff815b1ca27d5843c954f969bb2b7cb
 timeout_sec: 600
-exit_code: 1
-elapsed_sec: 64.19
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
 ----- stdout -----
-========================================================================================
-DM LEPTOGENESIS PMNS STATIONARY CP INCOMPATIBILITY THEOREM
-========================================================================================
-
-Question:
-  Can the current exact PMNS selector families on the fixed native N_e
-  seed surface serve as constructive witnesses for the source-oriented
-  mainline CP branch?
-
-========================================================================================
-PART 1: CURRENT STATIONARY SELECTOR FAMILIES ARE PARITY-EVEN
-========================================================================================
-Traceback (most recent call last):
-  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py", line 235, in <module>
-    sys.exit(main())
-             ~~~~^^
-  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py", line 216, in main
-    part1_current_stationary_selector_families_are_parity_even_and_cp_sheet_ambiguous()
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py", line 85, in part1_current_stationary_selector_families_are_parity_even_and_cp_sheet_ambiguous
-    i_star, branches = quiet_call(selector.part1_enumerate_stationary_branches)
-                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py", line 73, in quiet_call
-    return fn(*args, **kwargs)
-  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py", line 142, in part1_enumerate_stationary_branches
-    branches = cluster_solutions(sols, i_star)
-  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py", line 114, in cluster_solutions
-    rep = constrained_refine(rep, i_star)
-  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py", line 74, in constrained_refine
-    raise RuntimeError("constrained refinement failed")
-RuntimeError: constrained refinement failed
+[PASS] gamma is odd
+[PASS] E1 is even
+[PASS] E2 is even
+[PASS] cp1 is odd
+[PASS] cp2 is odd
+[PASS] phase information cost is even
+[PASS] H(-d)=conjugate(H(d))
+[PASS] even-data ambiguity does not imply target-sign impossibility
+Scope: reflected domain/constraints must be supplied; nonzero odd data give distinct sign partners.
+Eigenvector-modulus packets additionally require simple eigenvalues and consistent ordering.
+No stationarity, branch count, physical admissibility or transport closure is proved here.
+PASS=8 FAIL=0
 
 ----- stderr -----
 

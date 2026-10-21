@@ -23,6 +23,8 @@ Answer:
 
 from __future__ import annotations
 
+AUDIT_INPUT_PATHS = ['docs/DM_PMNS_NE_SEED_SURFACE_EXACT_SOURCE_MANIFOLD_THEOREM_NOTE_2026-04-20.md']
+
 import math
 import sys
 from dataclasses import dataclass

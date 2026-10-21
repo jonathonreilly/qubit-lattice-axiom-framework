@@ -19,6 +19,8 @@ Answer:
 
 from __future__ import annotations
 
+AUDIT_INPUT_PATHS = ['docs/DM_LEPTOGENESIS_PMNS_SELECTOR_BANK_CP_SHEET_BLINDNESS_THEOREM_NOTE_2026-04-16.md']
+
 import contextlib
 import io
 import sys

@@ -19,6 +19,8 @@ Answer:
 
 from __future__ import annotations
 
+AUDIT_INPUT_PATHS = ['docs/DM_LEPTOGENESIS_PMNS_MINIMAL_A13_SHEET_SELECTOR_THEOREM_NOTE_2026-04-16.md']
+
 import math
 import sys
 from pathlib import Path

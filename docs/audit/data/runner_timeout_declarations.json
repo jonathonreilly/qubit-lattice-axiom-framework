@@ -447,12 +447,12 @@
       "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
     },
     "scripts/frontier_dm_eta_nsites_v_structural_support_lift.py": {
-      "source_sha256": "c3ecbbaa3c83125c137b8228d2b31edca000bf5feb82715db93fb9e184973c2e",
+      "source_sha256": "d0ec702b58351ea33c5995f591dd3eaeecacbfe7c90b222c3c84024db801e0d2",
       "timeout_sec": 300,
       "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
     },
     "scripts/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.py": {
-      "source_sha256": "61913a7f27f6acaf4a5c1732073aa10bb1745e6b42511d8b33d4fccf2779d054",
+      "source_sha256": "b63205467a61046dc09437f741b2b60a10ee2b4316b8f179166032a3773fab4c",
       "timeout_sec": 300,
       "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
     },
@@ -607,12 +607,12 @@
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },
     "scripts/frontier_dm_leptogenesis_pmns_microscopic_selector_reduction_theorem.py": {
-      "source_sha256": "1b75baf840718f74a4c2769d346f72ecee2300b1c456037893e6d6955240ccbc",
+      "source_sha256": "bf1db87a88df16614655bb5915f06a8691c86bea993937865e15e3740e3e2718",
       "timeout_sec": 300,
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },
     "scripts/frontier_dm_leptogenesis_pmns_minimal_a13_sheet_selector_theorem.py": {
-      "source_sha256": "7fae44e5a404f59d2c25d801fdf21efe6f1f9d42cedd024464010859fb6b7502",
+      "source_sha256": "0ba25bce88ee30b9d83aa53170addf4bfbf91da5a255abca31352a4e1b1d1437",
       "timeout_sec": 300,
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },
@@ -622,12 +622,12 @@
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },
     "scripts/frontier_dm_leptogenesis_pmns_oriented_phase_sheet_selector_theorem.py": {
-      "source_sha256": "e4299fe226d5a51a1fca51e5ac7137df1751282b65a6c6cff3343ff01f8d683f",
+      "source_sha256": "74cd139f10418f921ab1fb6924a2c17dc28478abd14b6bad24d5629173ee61f5",
       "timeout_sec": 300,
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },
     "scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py": {
-      "source_sha256": "efefef2c830ed90d58fd4ce9cda8f43815f62ddbb983c8be2d8000ba7818a508",
+      "source_sha256": "3c8b9e2ea3f2317e778bea38bc37d668b9076d302a3f309fe8ad986100aec063",
       "timeout_sec": 300,
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },
@@ -642,12 +642,12 @@
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },
     "scripts/frontier_dm_pmns_ne_seed_surface_exact_source_manifold_theorem_2026_04_20.py": {
-      "source_sha256": "2c36679d58caa88295d48d0a22facf77d660d5d38f97f2bf00f8480b99cb2872",
+      "source_sha256": "f188441ffa1e5ade9ecb4a86c55d532e5dc04974fcdada2184982f70892da072",
       "timeout_sec": 300,
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },
     "scripts/frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py": {
-      "source_sha256": "5a76749fb76050e04b3c02de32048e7842c172d1d87d716f85194d8e2a6d7d55",
+      "source_sha256": "eec17b671ca04df0872ec11f602283fa851121097052c0fe50bba6f69b4064af",
       "timeout_sec": 300,
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },

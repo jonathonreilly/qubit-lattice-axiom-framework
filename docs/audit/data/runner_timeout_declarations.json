@@ -469,6 +469,11 @@
       "source_sha256": "2bfe5518f2b8360c16065f22f696a3f7935b453773c46792b4e0da021474782f",
       "timeout_sec": 1800,
       "reason": "Bounded execution envelope for PR9839 repaired source. Frozen-star replay and full Koide batch remain unexecuted; cap is not evidence of success."
+    },
+    "scripts/frontier_gw_echo_derived.py": {
+      "source_sha256": "52252f3863d58aecc22a2a86205aa697fd1979970f0c8a1471ff30666693cfba",
+      "timeout_sec": 120,
+      "reason": "Bounded historical formula consumer after PR9839 attribution correction. Execution checks numerical formulas, not withdrawn physical derivation."
     }
   }
 }

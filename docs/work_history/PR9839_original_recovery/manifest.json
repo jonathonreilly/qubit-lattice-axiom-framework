@@ -131,6 +131,16 @@
     "scripts/frontier_hubble_lane5_c1_cl4c_conditional_derivation_chain_construction.py": {
       "sha256": "6e05d4dd6a407bf7affdc4c16c7e665c27f7e01e91ea9c7ea035a6d4d1a1c516",
       "archive": "docs/work_history/PR9839_original_recovery/scripts/frontier_hubble_lane5_c1_cl4c_conditional_derivation_chain_construction.py.gz"
+    },
+    "scripts/frontier_gw_echo_derived.py": {
+      "sha256": "eb9cad38ee8ce5b6975608409332032276c3dbc5b955a7d4df5e0cf91ea2b05a",
+      "archive": "docs/work_history/PR9839_original_recovery/scripts/frontier_gw_echo_derived.py.gz",
+      "provenance": "Pre-attribution-repair consumer at frozen base f24d17d97d372df977476e4a69674577f31af575; not part of original 31 paths."
+    },
+    "logs/runner-cache/frontier_gw_echo_derived.txt": {
+      "sha256": "1a73ae8e11b22dabbca616f09ea0fab5efb7ed636781ebb6839d83520b0f5ce9",
+      "archive": "docs/work_history/PR9839_original_recovery/logs/runner-cache/frontier_gw_echo_derived.txt.gz",
+      "provenance": "Pre-attribution-repair consumer at frozen base f24d17d97d372df977476e4a69674577f31af575; not part of original 31 paths."
     }
   }
 }

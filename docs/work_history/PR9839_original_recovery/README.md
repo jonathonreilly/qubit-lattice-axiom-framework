@@ -2,8 +2,8 @@
 
 These gzip files preserve all 31 original changed paths at head
 f78abbde6e5003b71d91cd31394c6f850234b8bc exactly; manifest.json records their
-uncompressed SHA-256 values. The additional original Hubble companion is
-context, not a 32nd original PR path. Decode with Python gzip.decompress.
+uncompressed SHA-256 values. The additional original Hubble companion and pre-repair GW echo consumer/source
+cache are context, not additional original PR paths. Decode with Python gzip.decompress.
 
 These are historical sources and outputs, not live claims, current audit
 verdicts or fresh canonical caches. The original frozen-star output retains

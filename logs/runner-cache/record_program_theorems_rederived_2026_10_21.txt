@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/record_program_theorems_rederived_2026_10_21.py
+runner_sha256: c026a274b95f3326f7bbe6f6679131a081082af8e65d357449c95544b70f07cc
+input_fingerprint_sha256: b21d6ff3ff3fdd473ea5ecc1724b033d7b78a5c5d86475c378572d64c43105d6
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 2.00
+status: ok
+----- stdout -----
+[PASS] (1a) divergence vanishing for every field fixes b=-a, d=a, c=-e (one free parameter beyond scale)  [{b: -a, c: -e, d: a}]
+[PASS] (1b) self-adjointness then fixes e=-1: the linearised Einstein operator  [{e: -1}]
+[PASS] (1c) pure-gauge fields k_m xi_n + k_n xi_m are annihilated
+[PASS] (1d) a Fierz-Pauli mass term makes the divergence nonzero for generic fields
+[PASS] (2) coupled species: divergence of kappa1 T1 + kappa2 T2 is (kappa1 - kappa2) J, zero for J != 0 only if kappa1 = kappa2  divergence = J*(kappa1 - kappa2)
+[PASS] (3a) static source: h_ij = h_00 delta_ij and h_0i = 0  h_00 = -M/(2*k1**2 + 2*k2**2 + 2*k3**2)
+[PASS] (3b) ray deflection matches (2M/b)(1/v^2 + gamma) within 0.1% (finite path); light gets 4M/b for gamma=1 and 2M/b for gamma=0  gamma=1 v=1.0: 4.0013e-04 vs 4.0000e-04; gamma=1 v=0.5: 1.0005e-03 vs 1.0000e-03; gamma=1 v=0.2: 5.2031e-03 vs 5.2000e-03; gamma=0 v=1.0: 2.0006e-04 vs 2.0000e-04; gamma=0 v=0.5: 8.0025e-04 vs 8.0000e-04; gamma=0 v=0.2: 5.0016e-03 vs 5.0000e-03
+[PASS] (4) path markers: D^2 + V^2 = 1 for pure markers and <= 1 for mixed (V bounded by the fidelity)  pure max |D^2+V^2-1| 1.6e-15; mixed max D^2+V^2-1 -0.001
+[PASS] (5) on the positive-energy subspace beta = m/E exactly, so psibar psi / psi^dag psi = m/E for every spin
+[PASS] (6) H(X) = sum p(r) H(X|r) + H(R) for a record that is a function of X, and the record qubit carries H(R) as entanglement  H(X) 5.089997 = 5.089997; record entropy 0.276253
+per_site: the operator ansatz (local, covariant, second order, symmetric tensor), metric form, ray setup and random seeds are supplied choices.
+lattice_wide: no physical field equation, coupling value, extra-scalar exclusion or empirical identification is established.
+elapsed_seconds 1.8
+
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

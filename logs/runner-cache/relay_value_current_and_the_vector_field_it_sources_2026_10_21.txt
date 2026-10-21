@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/relay_value_current_and_the_vector_field_it_sources_2026_10_21.py
+runner_sha256: a85f3b82395dd5d4cfd79dd5975f384eef6c9cf5b8f568f60ba4aaa56c79f8a0
+input_fingerprint_sha256: fbeef8d5d7ad1adea7a5d2c0f19b52158a494791ec533213219228703676732e
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.95
+status: ok
+----- stdout -----
+[PASS] (1) relay value current: rho(t+1) - rho(t) = inflow - outflow on every site and tick, to rounding  max violation 3.5e-18 over 6 ticks on 24^3
+[PASS] (2) divergence vanishing for every A forces b = -a (Maxwell); pure gauge k xi is annihilated; a mass term spoils the identity  [{b: -a}]
+[PASS] (3) static charge: A_0 = -q / |k|^2 (Coulomb), A_i = 0  A_0 = -q/(k1**2 + k2**2 + k3**2)
+[PASS] (4) if two species exchange a value at rate J, couplings e1, e2 give source divergence (e1 - e2) J: the field must couple to the value, not to the species
+per_site: the walk, packet, value assignment and the vector-field ansatz (local, covariant, second order) are supplied choices.
+lattice_wide: no gauge group beyond one conserved value, charge value, field dynamics on the lattice or empirical identification is established.
+elapsed_seconds 0.8
+
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

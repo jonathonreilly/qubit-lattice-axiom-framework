@@ -1,5 +1,8 @@
 # Hadron Lane 1 B2 Dynamical Screening Boundary
 
+**Type:** bounded_theorem
+**Review scope:** affected diagnostic consumer only. Supplied toy arithmetic, source-phrase checks, and stipulated gate bits do not independently establish a physical no-go or current audit authority.
+
 **Date:** 2026-04-29
 **Status:** no-go / bounded-support boundary for the current B2 route; no
 `sqrt(sigma)` status upgrade and no hadron-mass claim.

@@ -7,9 +7,9 @@
       "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
     },
     "scripts/canonical_plaquette_surface.py": {
+      "timeout_sec": 300,
       "source_sha256": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
+      "rationale": "Bounded prediction-inventory review cap; preserve all mathematical and documentary failures."
     },
     "scripts/dm_leptogenesis_exact_common.py": {
       "source_sha256": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41",
@@ -57,9 +57,9 @@
       "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
     },
     "scripts/frontier_complete_prediction_chain.py": {
-      "source_sha256": "e5abb0dd1735111a5ed5cd8ac3069ba66a3c6c59715ec59b4565b1c7ef87f446",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
+      "timeout_sec": 300,
+      "source_sha256": "f4442c2ed3a58aa93ea00e12cb4aa60bff2d7f3218cddaec231aed9047311536",
+      "rationale": "Bounded prediction-inventory review cap; preserve all mathematical and documentary failures."
     },
     "scripts/frontier_cosmology_from_mass_spectrum.py": {
       "source_sha256": "0935d6144172aec8a209ec8513a6b5976160ea0de290068834caa3c9a415f4e1",
@@ -445,6 +445,16 @@
       "source_sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
       "timeout_sec": 300,
       "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
+    },
+    "scripts/frontier_hadron_lane1_b2_dynamical_screening_boundary.py": {
+      "timeout_sec": 300,
+      "source_sha256": "732f4fcc5b29b9a925be1c157e4f724a48b35069d7a716d63451e96446a4e928",
+      "rationale": "Bounded prediction-inventory review cap; preserve all mathematical and documentary failures."
+    },
+    "scripts/frontier_hadron_lane1_sqrt_sigma_b5_framework_link_audit.py": {
+      "timeout_sec": 300,
+      "source_sha256": "48779d313455b5eec344123fa9e68747ce9e19828c4063a827aab04dbe09e0a2",
+      "rationale": "Bounded prediction-inventory review cap; preserve all mathematical and documentary failures."
     }
   }
 }

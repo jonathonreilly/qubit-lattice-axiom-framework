@@ -1,5 +1,8 @@
 # Lane 1 `sqrt(sigma)` B5 Framework-Link Audit
 
+**Type:** bounded_theorem
+**Review scope:** affected diagnostic consumer only. Supplied toy arithmetic, source-phrase checks, and stipulated gate bits do not independently establish a physical no-go or current audit authority.
+
 **Date:** 2026-04-30
 **Status:** support / current-surface no-go; no theorem or claim
 promotion. This note audits whether the current repo surface closes the

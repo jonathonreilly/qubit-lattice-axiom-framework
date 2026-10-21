@@ -1,5 +1,9 @@
 # CP-Asymmetry Product as Cross-Sector alpha_s(v) Extraction Theorem
 
+**Type:** bounded_theorem
+**Review scope:** conditional supplied algebra and the specifically reviewed comparisons;
+physical interpretation, inherited authority checks, and audit status are not certified.
+
 **Date:** 2026-04-25
 
 **Status:** proposed_retained atlas-leading structural theorem on `main`. This
@@ -43,7 +47,7 @@ The cross-system Thales theorem
 established the ratio identity
 `sin(2 beta_s) / sin(2 beta_d) = lambda^2 = alpha_s(v)/2`. This
 theorem is its **product-form companion**: combined, the ratio and
-the product completely determine both `sin(2 beta_d)` and
+the product, with the supplied positive sign branch, determine both `sin(2 beta_d)` and
 `sin(2 beta_s)` from `alpha_s(v)` alone, providing twin atlas-LO
 predictions and a new route to estimate the canonical coupling from
 CP-observable data.
@@ -66,7 +70,8 @@ On the retained CKM atlas surface,
 (P4)  sin(2 beta_d,0) * sin(2 beta_s,0)  =  4 sqrt(5) * J / alpha_s(v)^2,
 ```
 
-where `J = alpha_s(v)^3 sqrt(5)/72` is the retained Jarlskog invariant.
+where `J = alpha_s(v)^3 sqrt(5)/72` denotes the supplied leading-order
+Jarlskog expression, not the exact all-orders invariant. Here alpha_s>0.
 
 Identity `(P1)` is the pure-framework CP-asymmetry product identity.
 Identity `(P2)` is the equivalent estimator route, treating
@@ -170,10 +175,25 @@ deviation               = -0.09 sigma
 The CP-product estimator matches the canonical CMT value at
 `0.09 sigma` under this comparator baseline.
 
+The propagated error uses first-order, independent-input error propagation
+and the small-angle approximation sin(2 beta_s)≈−phi_s. Correlations and
+theory uncertainty are not included; the quoted residual is descriptive.
+
+The quoted inputs above are this note's historical comparator baseline,
+not a claim to reproduce the current PDG fit. The product's broad error
+must not conceal its factors: `sqrt(5)/3 = 0.745356` differs from the
+quoted `0.706 +/- 0.011` by 3.58 quoted experimental errors. This is a
+descriptive residual, not a calibrated exclusion: omitted Wolfenstein
+terms and theory covariance have no quantified uncertainty budget here.
+The product uncertainty is about 57%; its small residual does not establish
+precision agreement of the individual CP predictions. The lattice coupling
+is a supplied model parameter; matching it to a continuum renormalization
+scheme requires a separate calculation.
+
 ## Why This Pushes the Framework Forward
 
 The canonical `alpha_s(v) = 0.10330381612...` is retained from the
-plaquette/CMT gauge-vacuum surface -- a pure-QCD determination. This
+plaquette/CMT gauge-vacuum surface -- a supplied lattice-model determination. This
 note proves that the same coupling is structurally encoded in
 B-meson CP-asymmetry observables that have **no QCD running content
 in their leading-order Wolfenstein form**.
@@ -188,8 +208,8 @@ This opens a **new sector** of alpha_s(v) consistency tests:
    `alpha_s(v) = 18/5 * sin(2 beta_d) * sin(2 beta_s)`.
 
 These two sectors probe different observables. Their agreement at the
-repo's PDG/LHCb 2024 precision baseline provides a non-trivial
-consistency check on the framework's canonical coupling.
+repo's PDG/LHCb 2024 precision baseline is a weak product-level comparison, not validation of the individual
+CP factors or a continuum coupling extraction.
 
 The structural mechanism is the same Thales geometry that drives
 the cross-system ratio theorem: `eta^2 = rho(1 - rho)` forces
@@ -206,7 +226,7 @@ plaquette/CMT value.
 ## Falsification
 
 The PDG/LHCb 2024 baseline uncertainty is dominated by
-`sigma(phi_s) = 0.022 rad`. Projected improvements:
+`sigma(phi_s) = 0.022 rad`. The following historical forecast scenarios are illustrative, not updated schedules:
 
 | Era | `sigma(phi_s)` | `sigma(alpha_s)_CP` | Comparison |
 | --- | --- | ---: | --- |
@@ -215,14 +235,15 @@ The PDG/LHCb 2024 baseline uncertainty is dominated by
 | HL-LHC | `+/- 0.002 rad` | `+/- 0.005` | precision test |
 
 By the HL-LHC era, the CP-product estimator may resolve `alpha_s(v)` to
-roughly `+/- 0.005`, comparable to the canonical CMT precision.
-A non-zero deviation between the estimator and the canonical value would
-falsify the framework's atlas-LO Wolfenstein structure or its canonical
-`alpha_s(v)` value.
+roughly `+/- 0.005` under the stated illustrative errors. No uncertainty
+for the canonical lattice value has been derived in this note.
+Testing a deviation requires the omitted-order and comparator covariance
+budget; a nonzero central residual alone is not a falsification.
 
-The atlas-LO identity carries `O(lambda^2) ~ 5%` Wolfenstein
-corrections, which at the PDG/LHCb 2024 precision baseline are smaller than the
-`sin(2 beta_s)` measurement uncertainty (28% relative). At LHCb
+Power counting suggests relative `O(lambda^2)` corrections; lambda²≈5%
+is not an error bound because coefficients have not been computed here.
+The historical baseline has
+`sin(2 beta_s)` measurement uncertainty (57% relative: 0.022/0.0386). At LHCb
 precision the NLO Wolfenstein will need to be incorporated.
 
 ## What This Claims
@@ -235,7 +256,7 @@ precision the NLO Wolfenstein will need to be incorporated.
   `sin(2 beta_d,0) * sin(2 beta_s,0) = 4 sqrt(5) J / alpha_s(v)^2`.
 - The CP-product estimator agrees with the canonical CMT/plaquette
   `alpha_s(v) = 0.10330` at `0.09 sigma` against the PDG/LHCb 2024
-  baseline, providing a non-trivial cross-sector consistency check.
+  baseline; this loose comparison does not establish precision consistency.
 
 ## What This Does Not Claim
 
@@ -244,7 +265,8 @@ precision the NLO Wolfenstein will need to be incorporated.
   estimator and comparator.
 - It does not promote the CP-product estimator as a competitive `alpha_s`
   measurement at the PDG/LHCb 2024 precision baseline; the LHCb `phi_s`
-  uncertainty is the dominant systematic.
+  quoted uncertainty dominates the propagated product error; no
+  statistical/systematic decomposition is established here.
 - It does not modify the atlas-leading B_s mixing-phase derivation;
   the parent `phi_s = -alpha_s(v) sqrt(5)/6` identity is preserved.
 - It does not promote any BSM contribution to either CP asymmetry.
@@ -260,7 +282,7 @@ python3 scripts/frontier_ckm_cp_product_alpha_s_cross_sector_extraction.py
 Expected result:
 
 ```text
-TOTAL: PASS=28, FAIL=0
+TOTAL: PASS=25, FAIL=0
 ```
 
 The runner uses the Python standard library plus the canonical

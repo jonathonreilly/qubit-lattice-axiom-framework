@@ -1,5 +1,9 @@
 # CKM Second-Row Magnitudes Structural Identities Theorem
 
+**Type:** bounded_theorem
+**Review scope:** conditional supplied algebra and the specifically reviewed comparisons;
+physical interpretation, inherited authority checks, and audit status are not certified.
+
 **Date:** 2026-04-25
 
 **Status:** proposed_retained structural-identity subtheorem of the proposed_promoted CKM
@@ -77,7 +81,7 @@ Together with the retained first-row and third-row companions:
 ```
 
 These are leading-Wolfenstein equivalences only. Higher-order corrections
-distinguish `|V_cd|` from `|V_us|` at `O(lambda^4)` and `|V_cb|` from
+distinguish `|V_cd|` from `|V_us|` at `O(lambda^5)` and `|V_cb|` from
 `|V_ts|` at `O(lambda^4)`, but those corrections lie outside the retained
 leading-Wolfenstein scope.
 
@@ -94,13 +98,15 @@ With the canonical `alpha_s(v) = 0.103303816...`:
 | `|V_cs|^2` | `1 - alpha_s(v)/2 - alpha_s(v)^2/6` | `0.946570` |
 | `|V_cs|` | sqrt of above | `0.972918` |
 
-Cross-check against PDG 2024:
+Post-derivation comparisons (mixed vintages; only the direct V_cs entry is updated here):
 
-| Quantity | Framework | PDG 2024 | Deviation |
+| Quantity | Framework | Comparator | Deviation |
 | --- | ---: | ---: | ---: |
 | `|V_cd|` | `0.22727` | `0.22500 +/- 0.00400` | `+1.0%` |
-| `|V_cs|` | `0.97292` | `0.99700 +/- 0.01100` | `-2.4%` |
+| `|V_cs|` | `0.97292` | `0.975 +/- 0.006` (PDG 2025 direct) | `-0.21%` |
 | `|V_cb|` | `0.04217` | `0.04100 +/- 0.00140` | `+2.9%` |
+
+The direct `|V_cs|` value comes from [PDG 2025, Eq. (12.10)](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-ckm-matrix.pdf), combining leptonic and semileptonic determinations. The model residual is -0.35 quoted comparator uncertainties. This is not the unitarity-constrained global-fit value; the other two entries retain the note's historical comparator inputs. No theory-error budget is supplied.
 
 The `|V_cs|` line is a post-derivation direct-extraction comparator, not an
 input. The retained theorem is the atlas-leading row-unitarity identity; it
@@ -126,8 +132,10 @@ retained atlas surface is now packaged:
 | `|V_tb|^2` | `1 - alpha_s^2/6 - 5 alpha_s^3/72` | leading 1 |
 
 Each listed atlas-leading squared magnitude is a rational coefficient times an
-integer power of `alpha_s(v)`. Each packaged row sum is forced to one by exact
-CKM unitarity.
+integer power of `alpha_s(v)`. Each packaged row sum is normalized to one. This does not establish a
+single exact unitary matrix with all nine truncated entries: for example,
+the first column sums to 1+alpha_s^3/18, not one. M3 is the residual
+completion of the supplied leading M1/M2, not an exact all-orders prediction.
 
 ## Scope
 
@@ -138,8 +146,8 @@ This note claims:
 - the Cabibbo and third-row equivalences `|V_cd|^2 = |V_us|^2` and
   `|V_cb|^2 = |V_ts|^2` at leading Wolfenstein order;
 - the canonical numerical readout once the retained `alpha_s(v)` is supplied;
-- consistency of the framework second-row values with the listed PDG
-  comparators at the few-percent leading-Wolfenstein-truncation level.
+- descriptive residuals against the listed comparators; no quantified
+  theory truncation uncertainty or statistical acceptance claim.
 
 This note does not claim:
 
@@ -159,7 +167,7 @@ python3 scripts/frontier_ckm_second_row_magnitudes.py
 Expected result:
 
 ```text
-TOTAL: PASS=25, FAIL=0
+TOTAL: PASS=17, FAIL=0
 ```
 
 The runner uses the Python standard library plus the already-mainline

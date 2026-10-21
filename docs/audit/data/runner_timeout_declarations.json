@@ -445,6 +445,21 @@
       "source_sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
       "timeout_sec": 300,
       "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
+    },
+    "scripts/frontier_ckm_compound_magnitudes_circumradius_bridge.py": {
+      "source_sha256": "5c4c52617c562d728685a7f21024bc689406f501c6e2efafef7ae212d75fb020",
+      "timeout_sec": 300,
+      "reason": "Bounded CKM scoped-source replay cap; inherited authority failures remain diagnostic, no physics certification. Source changes invalidate this cap."
+    },
+    "scripts/frontier_ckm_cp_product_alpha_s_cross_sector_extraction.py": {
+      "source_sha256": "789f64aa920bf29d35ff9330b8f6324df6500594a960a1a43406c7804cc97220",
+      "timeout_sec": 300,
+      "reason": "Bounded CKM scoped-source replay cap; inherited authority failures remain diagnostic, no physics certification. Source changes invalidate this cap."
+    },
+    "scripts/frontier_ckm_second_row_magnitudes.py": {
+      "source_sha256": "e3cc4a6c3449fbb28cb3153cbf8c075826336261ffe8d89c309ad27f4e32e255",
+      "timeout_sec": 300,
+      "reason": "Bounded CKM scoped-source replay cap; inherited authority failures remain diagnostic, no physics certification. Source changes invalidate this cap."
     }
   }
 }

@@ -12,8 +12,8 @@
     "finite_k_bridge_cache": "logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt"
   },
   "summary": {
-    "pass": 57,
-    "fail": 0
+    "pass": 52,
+    "fail": 5
   },
   "results": [
     {
@@ -159,7 +159,7 @@
     {
       "name": "source_full_length:finite_k_bridge_runner",
       "pass": true,
-      "detail": "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py has 14139 bytes"
+      "detail": "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py has 16376 bytes"
     },
     {
       "name": "source_contains:finite_k_bridge_runner:def finite_k_centroid_derivative",
@@ -193,17 +193,17 @@
     },
     {
       "name": "cache_exit_ok:parent_cache",
-      "pass": true,
-      "detail": "exit_code=0 status=ok"
+      "pass": false,
+      "detail": "exit_code=1 status=nonzero_exit"
     },
     {
       "name": "cache_snippet_present:parent_cache:SUMMARY: PASS=27 FAIL=0",
-      "pass": true,
+      "pass": false,
       "detail": "SUMMARY: PASS=27 FAIL=0"
     },
     {
       "name": "cache_snippet_present:parent_cache:COMPANION_PACKET: PASS",
-      "pass": true,
+      "pass": false,
       "detail": "COMPANION_PACKET: PASS"
     },
     {
@@ -269,7 +269,7 @@
     {
       "name": "cache_sha_fresh:finite_k_bridge_cache",
       "pass": true,
-      "detail": "121cc5d53af922dafce2acf8633624bea896795eb7103d83091043cd4f492ade == 121cc5d53af922dafce2acf8633624bea896795eb7103d83091043cd4f492ade"
+      "detail": "9cd088d0549d36eb03dc528e5d22b48fe7cf20a03a606e927ea537132a006fa8 == 9cd088d0549d36eb03dc528e5d22b48fe7cf20a03a606e927ea537132a006fa8"
     },
     {
       "name": "cache_exit_ok:finite_k_bridge_cache",
@@ -278,7 +278,7 @@
     },
     {
       "name": "cache_snippet_present:finite_k_bridge_cache:SUMMARY: PASS=56 FAIL=0",
-      "pass": true,
+      "pass": false,
       "detail": "SUMMARY: PASS=56 FAIL=0"
     },
     {
@@ -298,8 +298,8 @@
     },
     {
       "name": "bridge_json_pass_count_56",
-      "pass": true,
-      "detail": "56"
+      "pass": false,
+      "detail": "70"
     }
   ],
   "audit_status_provenance": "independent audit handling only"

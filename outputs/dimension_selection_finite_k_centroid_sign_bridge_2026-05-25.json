@@ -1,5 +1,27 @@
 {
-  "claim": "For the finite runner geometry and k=6.0, the exact first derivative of the layer-normalized detector centroid is negative for d<=2 and positive for d>=3; the parent finite-M sign matches.",
+  "attractive_control": {
+    "1": {
+      "derivative": 6178.064177806486,
+      "finite_probe_delta": 1.9710081316590014
+    },
+    "2": {
+      "derivative": 693.5367985302938,
+      "finite_probe_delta": 2.8083165914113692
+    },
+    "3": {
+      "derivative": 137.43355955069325,
+      "finite_probe_delta": 0.727197696589517
+    },
+    "4": {
+      "derivative": 119.62276629484603,
+      "finite_probe_delta": 0.6596476486924026
+    },
+    "5": {
+      "derivative": 145.12754503252833,
+      "finite_probe_delta": 0.8307846749345735
+    }
+  },
+  "claim": "For the finite runner geometry and k=6.0, the exact first derivative of the layer-normalized detector centroid is negative for d<=2 and positive for d>=3 under the historical potential; the attractive continuation has positive first derivatives for every tested d.",
   "fail_count": 0,
   "finite_difference_check": {
     "1": -6177.98825517409,
@@ -57,16 +79,23 @@
       "raw_delta_M_0p005": 0.8307846758016488
     }
   },
-  "pass_count": 56,
+  "pass_count": 70,
   "proposal_allowed": false,
-  "proposal_allowed_reason": "This retires the WKB load-bearing sign step for the lower-bound runner, but it is runner-specific and does not close all-d potential source derivation or the upper-bound dimension-selection chain.",
+  "proposal_allowed_reason": "The historical d<=2 repulsion is a potential-sign choice, not a lower bound. The check is runner-specific and does not close all-d potential source derivation or the upper-bound dimension-selection chain.",
   "review_surface": [
     "docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md",
     "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py",
     "outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json"
   ],
-  "status": "bounded support: exact finite-k runner sign bridge",
+  "status": "historical runner replay plus attractive-sign control",
   "upstream_statuses": {
+    "historical_plan": {
+      "available": false,
+      "content_verified": false,
+      "original_missing_artifact_failure_preserved": true,
+      "path": "docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md",
+      "role": "historical documentary anchor; not a calculation input"
+    },
     "lower_bound_v2_status": "unaudited",
     "parent_status": "unaudited"
   }

@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/one_qubit_tick_update_covariance_limits_2026_10_21.py
+runner_sha256: 2e56689ae96e39c169f8cbda4350830195bb8805a4f6bfa3274aced89372bc44
+input_fingerprint_sha256: e9706104868e584d2bcc292cca90d2e512269db045574497e6c1604e040c9340
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.91
+status: ok
+----- stdout -----
+[PASS] (1) supplied polynomial: mixed and diagonal quadratic coefficients match expansion  c_x c_y coefficient 8*(bi**2 + br**2); c_x^2 coefficient 4*(bi**2 + br**2 - ci**2 - cr**2)
+[PASS] (1b) supplied ansatz: seeded complex coefficients pass all 24 rotations at 20 momenta  24/24
+[PASS] (2) fixed sampled split-step comparisons: 12 spectral and 4 operator symmetries  spectrum 12/24, operator 4/24
+[PASS] (3) point eigenphase distances at theta=.1: origin .1 and corner zero  origin distance 0.10000; corner distance 9.2e-19
+[PASS] axis t=theta has an exact zero-phase eigenvalue for the supplied mixing  axis minimum eigenphase distance 2.776e-17
+[PASS] axis factorization and commuting generators
+[PASS] onsite scalar phase moves the corner zero without mixing momentum  corner distance after scalar phase 0.23000; pointwise only
+[PASS] forward and reverse blocks have the same origin derivative determinant sign
+[PASS] quarter-turn factor order matches reverse trace but not reverse matrix at a generic point
+per_element: supplied polynomial coefficients are expanded symbolically; no general exclusion is concluded.
+per_site: the supplied linear single-particle carrier and spin action are choices, not framework record dynamics.
+per_mode: covariance is sampled at 20 momenta; axis/corner/scalar-shift identities have explicit point controls.
+per_block: forward/reverse 2x2 blocks and one 4x4 mixing are checked; a physical mass class is not classified.
+lattice_wide: checked and not executed — no many-body realization, global gap proof or universal mass prescription is supplied.
+elapsed_seconds 0.8
+
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

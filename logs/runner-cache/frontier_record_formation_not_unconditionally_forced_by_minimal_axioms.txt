@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py
-runner_sha256: 59a7d9f134081124cdaaafe9c71988afab319434a21f35314d25fd54f659889b
+runner_sha256: 3fbee249d5a636284a2eda050a4f9f06ce3841e520f44de1143b403a10b986a9
 input_fingerprint_sha256: 0508bab90e8d90e7f18431b9290c97639b302bb3816dd774ce2ca11266eb0c7e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.31
+elapsed_sec: 0.54
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -25,6 +25,11 @@ Finite unitary controls and current-premise inventory; no general no-go
 
 ==============================================================================
 TOTAL: PASS=6 FAIL=0
+per_element: In the supplied H=0 finite model, identity evolution fixes every state amplitude and density-matrix entry; this is not a framework Record-event criterion.
+per_site: Partial traces of that unchanged finite state are unchanged at each of its four sites; the model supplies no formation-site distribution.
+per_mode: A supplied eigenstate evolves by a global phase, leaving its density matrix stationary; this does not exclude formation mechanisms outside this unitary fixture.
+per_block: The supplied decoupled system/environment Hamiltonian factorizes its evolution; the tested local eigenstate retains coherence without deriving a Record process.
+lattice_wide: These controls concern one four-qubit tensor-product fixture only; no infinite-lattice, all-admissible-model, or full-framework formation/no-formation conclusion is established.
 Scope: four finite unitary controls and two documentary checks pass. These are not full framework countermodels or a physical formation theorem.
 
 ----- stderr -----

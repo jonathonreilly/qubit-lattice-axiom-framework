@@ -112,6 +112,11 @@ def main() -> int:
     if FAIL:
         print("VERDICT: finite control or source-consistency check failed.")
         return 1
+    print("per_element: In the supplied H=0 finite model, identity evolution fixes every state amplitude and density-matrix entry; this is not a framework Record-event criterion.")
+    print("per_site: Partial traces of that unchanged finite state are unchanged at each of its four sites; the model supplies no formation-site distribution.")
+    print("per_mode: A supplied eigenstate evolves by a global phase, leaving its density matrix stationary; this does not exclude formation mechanisms outside this unitary fixture.")
+    print("per_block: The supplied decoupled system/environment Hamiltonian factorizes its evolution; the tested local eigenstate retains coherence without deriving a Record process.")
+    print("lattice_wide: These controls concern one four-qubit tensor-product fixture only; no infinite-lattice, all-admissible-model, or full-framework formation/no-formation conclusion is established.")
     print("Scope: four finite unitary controls and two documentary checks pass. "
           "These are not full framework countermodels or a physical formation theorem.")
     return 0

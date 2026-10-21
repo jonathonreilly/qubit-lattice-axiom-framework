@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/candidate_laws_leave_only_a_link_free_species_as_dark_matter_slot_2026_10_21.py
+runner_sha256: c4d81911f1a61d920eace1d9a2c7bf8c6f08f2c1f610bfc704ea020b4ed7fa84
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 10.85
+status: ok
+----- stdout -----
+== A. the second copy: can a covariant charge leave one copy photon-dark?
+[PASS] A1 staggered K=0 tick U(0) = cos mu + i sin mu W; rotations commute with W
+[PASS] A2 each 4-dim rest space (W = +1, the two copies of one frequency) is irreducible under the 24 rotations: mean |chi|^2 = 1  mean |chi|^2 = 1.000000, |chi| by element [np.float64(0.0), np.float64(1.0), np.float64(4.0)]
+[PASS] A3 Schur: every operator commuting with U(0) and the 24 rotations (local or not) is a scalar on that rest space -> both copies carry the same value of ANY covariant charge  commutant dim 2, non-scalar part 2.5e-16
+[PASS] A4 every rung n = 1, 2, 3: the coarse K=0 eigenvalue e^{i mu} comes only from fine K = 0 (S = 1 only there), so A2-A3 hold at every rung  min |w - mu| over folded points 0.935, 0.573, 0.228
+[PASS] A5 massless U(1)_eps: Q = a + c eps gives each copy the charges {a+c, a-c} (chirality swapped); a copy is neutral only if Q = 0  copy spectra differ by 3.2e-13
+[PASS] A6 a 90 deg rotation sends the copy label sigma3 to -sigma3: the copies are not a rotation-invariant label  tr(L s3 L^+ s3)/8 by trace class {-1: {1.0, -1.0}, 0: {1.0}, 1: {-1.0}, 3: {1.0}}
+== B. the pi-cone sector (K = R = pi(1,1,1)) of the staggered tick
+[PASS] B0 staggered tick: the K-independent block-local commutant is the scalars, so the only link charge is the species number, which counts a pi-cone mode exactly like a light one  dims [1, 1]
+[PASS] B1 (mu,b)=(0.3,0.600): w(R) = pi-2b = 1.9416 is the band TOP (curvature -A/(3 sin2b) = -0.2356); K=0 is the bottom (+0.743)  measured -0.2356, 0.743
+[PASS] B2 (mu,b)=(0.3,0.600): no decay at total momentum R: f->f+gamma has final-initial > 0 off the trivial point; min 3-body (f f fbar) > w(R); min f+2gamma >= w(R)  min D(S>-1) 1.4e-02; fff 2.5416, f+2g 1.9423 vs w(R) 1.9416
+[PASS] B1 (mu,b)=(0.05,1.321): w(R) = pi-2b = 0.5000 is the band TOP (curvature -A/(3 sin2b) = -0.0421); K=0 is the bottom (+0.404)  measured -0.0421, 0.404
+[PASS] B2 (mu,b)=(0.05,1.321): no decay at total momentum R: f->f+gamma has final-initial > 0 off the trivial point; min 3-body (f f fbar) > w(R); min f+2gamma >= w(R)  min D(S>-1) 1.4e-02; fff 0.6000, f+2g 0.5001 vs w(R) 0.5000
+[PASS] B1 (mu,b)=(0.05,0.100): w(R) = pi-2b = 2.9416 is the band TOP (curvature -A/(3 sin2b) = -1.6601); K=0 is the bottom (+6.599)  measured -1.6601, 6.599
+[PASS] B2 (mu,b)=(0.05,0.100): no decay at total momentum R: f->f+gamma has final-initial > 0 off the trivial point; min 3-body (f f fbar) > w(R); min f+2gamma >= w(R)  min D(S>-1) 1.4e-02; fff 3.0416, f+2g 2.9502 vs w(R) 2.9416
+[PASS] B3 (mu,b)=(0.3,0.600) packets in a weak well (lapse coupling, 0-reading): the light packet falls in, the pi-cone packet falls OUT, both at the semiclassical rate -w w'' grad phi  Schur off-diag 1e-14; a_light -4.087e-04 (pred -4.177e-04), a_pi 8.696e-04 (pred 8.710e-04); ratio -2.128, rest-point formula -2.052
+[PASS] B3 (mu,b)=(0.3,1.321) packets in a weak well (lapse coupling, 0-reading): the light packet falls in, the pi-cone packet falls OUT, both at the semiclassical rate -w w'' grad phi  Schur off-diag 2e-14; a_light -1.250e-04 (pred -1.253e-04), a_pi 1.286e-04 (pred 1.289e-04); ratio -1.029, rest-point formula -1.027
+[PASS] B4 w(R) = pi - 2b is the global band maximum, so with H = w(K)(1+phi) conserved a pi-cone state at rest can never enter lower phi (0-reading); in the pi-reading E = w - pi = -2b < 0 at R: it falls in but sources negative energy  max_K w(K) - w(R) = -1.4e-04 over 1e5 K, 3 (mu,b)
+== C. a species with no link and no interaction term (gravity only)
+[PASS] C1 any number-conserving tick (geometry-dressed hops, number-conserving interactions) keeps the species number exactly: its lightest state is absolutely stable  [N,U] = 0.0e+00
+[PASS] C2 a pairing (number-changing) term breaks it; fermion parity survives every even term  [N,U_pair] = 0.22, [P,U_pair] = 0.0e+00
+== D. conditional source and records
+[PASS] D1 law of total expectation: Born mean of A's conditional source = tr(rho_A T_A) + <V>/2 (no extra mean mass; binding counted once)  -0.462433 vs -0.462433
+[PASS] D2 records: CL-6's phase has no record term, so the permanent record set sources nothing; a record mass would grow per comoving volume ~ t, i.e. x3.6e4 from recombination to now, against a CMB-to-today DM consistency of a few percent  t0/t_rec = 3.63e+04
+== E. measured-reality arithmetic
+   Planck 2018: Omega_c h^2 = 0.1200 +- 0.0012, h = 0.6736 -> Omega_c = 0.2645; Omega_c/Omega_b = 5.36
+   rad/tick = 2.109e+18 GeV; pi-cone at b=(pi-1/2)/2: 0.5 rad/tick = 1.05e+18 GeV (0-reading); pi-reading mass 2b = 5.57e+18 GeV
+   local DM 0.4 GeV/cm^3 as 1.1e+18 GeV particles: n = 3.8e-19 /cm^3, flux 2.8 per m^2 per year
+[PASS] E1 gravity alone never thermalises a species inside the lattice domain (|w| <= 1/2): Gamma/H ~ (T/M_P)^3/(1.66 sqrt g*) << 1, so its relic is the supplied initial odds  Gamma/H at T = 1.1e+18 GeV: 3.8e-05
+   gravitational self-scattering, m = 1.0e+02 GeV, v = 1000 km/s: sigma/m ~ 3.0e-66 cm^2/g (bound ~1)
+   gravitational self-scattering, m = 1.1e+18 GeV, v = 1000 km/s: sigma/m ~ 3.2e-50 cm^2/g (bound ~1)
+[PASS] E2 register singlet nu^c (empty Lambda(C^5) register, Q = Y = 0): with a Yukawa it radiates nu gamma at one loop; 7 keV, sin^2 2theta = 1e-11 lives >> the age  tau = 4.4e+28 s vs age 4.35e17 s
+supplied: CL-3 tick, b and mu, the 0-/pi-reading of quasi-energy, the lapse coupling H(1+phi) in the weak static limit, the photon band cos w = S,
+  the unit map, the register reading of nu^c, sterile-neutrino decay formula (Pal-Wolfenstein), all measured numbers.
+elapsed_seconds 10.1
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

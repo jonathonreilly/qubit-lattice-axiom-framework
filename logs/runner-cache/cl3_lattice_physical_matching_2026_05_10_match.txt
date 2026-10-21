@@ -1,11 +1,11 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_lattice_physical_matching_2026_05_10_match.py
-runner_sha256: d2acad82b75174ee9f3206044745cd18b8722cb429022bcdd1596164f58a207f
+runner_sha256: 58868f40e6df3f6075b771c6a30ca3e6e840614bc8a6aba2019a8ebbf06b4254
 input_fingerprint_sha256: 33cb8aff081fd89108df199be93b33ebc410b9ce31fec03289033b93096fc4d8
 timeout_sec: 300
-exit_code: 1
-elapsed_sec: 0.13
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
@@ -37,18 +37,18 @@ Part 1: source note structural shape
   [PASS] theorem label: **(T4)  ()
   [PASS] theorem label: **(T5)  ()
   [PASS] theorem label: **(T6)  ()
-  [FAIL] sister/parent cite: YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02  ()
-  [FAIL] sister/parent cite: GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_IMPLICIT_FLOW_THEOREM_NOTE_2026-05-03  ()
-  [PASS] sister/parent cite: GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03  ()
-  [PASS] sister/parent cite: LATTICE_PHYSICAL_MATCHING_CLUSTER_OBSTRUCTION_NOTE_2026-05-02  ()
-  [PASS] sister/parent cite: BRIDGE_LANES_PROMOTION_PROPOSAL_NOTE_2026-05-10_lanes  ()
-  [PASS] sister/parent cite: HIGGS_MASS_FROM_AXIOM_NOTE  ()
-  [PASS] sister/parent cite: HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02  ()
-  [PASS] sister/parent cite: HIGGS_MASS_HIERARCHY_CORRECTION_NOTE  ()
-  [PASS] sister/parent cite: C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo  ()
-  [PASS] sister/parent cite: EXACT_TIER_EWITNESS_BOUNDED_NOTE_2026-05-07_ewitness  ()
-  [PASS] sister/parent cite: STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac  ()
-  [PASS] sister/parent cite: COMPLETE_PREDICTION_CHAIN_2026_04_15  ()
+  [PASS] documentary citation name present: YT_EW_MATCHING_RULE_M_NOTE_2026-05-02  ()
+  [PASS] documentary citation name present: GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE  ()
+  [PASS] documentary citation name present: GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03  ()
+  [PASS] documentary citation name present: LATTICE_PHYSICAL_MATCHING_CLUSTER_OBSTRUCTION_NOTE_2026-05-02  ()
+  [PASS] documentary citation name present: BRIDGE_LANES_PROMOTION_PROPOSAL_NOTE_2026-05-10_lanes  ()
+  [PASS] documentary citation name present: HIGGS_MASS_FROM_AXIOM_NOTE  ()
+  [PASS] documentary citation name present: HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02  ()
+  [PASS] documentary citation name present: HIGGS_MASS_HIERARCHY_CORRECTION_NOTE  ()
+  [PASS] documentary citation name present: C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo  ()
+  [PASS] documentary citation name present: EXACT_TIER_EWITNESS_BOUNDED_NOTE_2026-05-07_ewitness  ()
+  [PASS] documentary citation name present: STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac  ()
+  [PASS] documentary citation name present: COMPLETE_PREDICTION_CHAIN_2026_04_15  ()
   [PASS] audit-readable scope: proposed_claim_type: bounded_theorem  ()
   [PASS] audit-readable scope: lattice_curvature_to_physical_m_h_v_squared_matching_theorem  ()
   [PASS] audit-readable scope: tree_level_mean_field_readout_to_post_ewsb_mass_identification  ()
@@ -129,7 +129,7 @@ Part 8: honest verdict summary
   [PASS] resolution-route language: engineering  ()
 
 ========================================================================================
-  TOTAL: PASS=86, FAIL=2
+  TOTAL: PASS=88, FAIL=0
 ========================================================================================
 
 ----- stderr -----

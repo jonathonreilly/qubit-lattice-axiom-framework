@@ -479,6 +479,16 @@
       "source_sha256": "9f72408b42e050f1e70aa032758cd78bf2f27a786991660a05b8802eb961cd13",
       "timeout_sec": 120,
       "reason": "Bounded text-consistency and supplied finite-checklist consumer; no gauge ensemble or large-volume validation."
+    },
+    "scripts/frontier_ckm_brocard_polynomial_vieta_structural_integers.py": {
+      "source_sha256": "05e5926135a89aed9b7ee54b6b71d43f4821d41b3da28016b15218a772965b8f",
+      "timeout_sec": 300,
+      "reason": "Bounded CKM scoped-source replay cap; inherited authority failures remain diagnostic, no physics certification. Source changes invalidate this cap."
+    },
+    "scripts/frontier_ckm_brocard_q_polynomial_perfect_square_decomposition.py": {
+      "source_sha256": "906c270362ac7fc4392b1c3f6d279b85c00adca02234882f4b843389e7019f7e",
+      "timeout_sec": 300,
+      "reason": "Bounded CKM scoped-source replay cap; inherited authority failures remain diagnostic, no physics certification. Source changes invalidate this cap."
     }
   }
 }

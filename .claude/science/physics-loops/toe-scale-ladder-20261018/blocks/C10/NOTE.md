@@ -1,7 +1,7 @@
 # C10: burn-and-turn source tensor on the C7 two-qubit Dirac walk vs the C8 metric couplings
 
 **Block:** C10 of `toe-scale-ladder-20261018` (cross-thread target (d)).
-**Status:** worker note. Not reviewed, unaudited.
+**Status:** Reviewed in a separate agent context (same model as the author); unaudited. Review: `REVIEW.md`; dispositions at the end.
 **Runners:** `scripts/c10_exact.py` (sympy) and `scripts/c10_numeric.py` (numpy; explicit 4×4
 matrices). `scripts/run_all.sh` writes `logs/c10_exact.log` (15/0), `logs/c10_numeric.log` (35/0)
 and `logs/run_all.log`, which ends `TOTAL: PASS=50 FAIL=0`. The pre-registration, two debug runs
@@ -9,11 +9,24 @@ and the check revisions they caused are recorded in `WORKLOG.md`.
 
 ## Result
 
+**Headline (attribution).** BT as defined selects nothing: the C7 walk is outside its domain. With
+weak-value odds, BT's plane-wave tensor reduces to the dust tensor ε v v. Any rule whose mean step
+equals v gives the same tensor, and the turn mechanics add nothing. The M1 agreement at massless
+b_iso therefore tests a property of the walk, v = s⟨α⟩ through O(a²) iff β = 0, not a property of
+the turn rule. The agreement also rests on four choices: the 1/s² rescaling (as given, nothing
+agrees unless s = 1), the candidate set M1–M4, q = 0 plane waves, and fixing the constant at
+continuum order. A constant ∝ sin ω/ω would tie M2.
+
 1. **The burn-and-turn (BT) rule is not defined on the C7 walk.** BT assumes the shift-coin form
-   U(k) = diag(e^{−ik·d}) C: components labelled by unit steps, each moving one link per tick. The
+   U(k) = diag(e^{−ik·d}) C: each component label carries one hop vector d, which need not have unit
+   length (BT's own eight-direction walk uses √3 body diagonals), and the walk moves one link per
+   tick. Equivalently, A_n = Π_n C with orthogonal Π_n: the ranks sum to 4 and A_nA_m† = 0. The
    C7 walk has 27 nonzero hop matrices A_n on the 27-point cell, with total rank 92 and overlapping
-   ranges (max |A_n A_m†| ≈ 0.16–0.23). No choice of internal basis brings it to that form
-   (exact hop decomposition; all three points, massless and massive). So "BT exactly as defined"
+   ranges. The basis-free overlap max‖A_nA_m†‖₂ is 0.23–0.25, θ-independent (reviewer). The 0.16–0.23
+   in my log is a basis-dependent max-element measure. No choice of internal basis brings the walk to
+   this form (exact hop decomposition; all three points, massless and massive). The reviewer adds a
+   basis-free certificate: ‖[U(k)U(0)†, U(k′)U(0)†]‖ ≈ 1.9 ≠ 0. **Untested:** whether U factors into
+   shift-coin sub-ticks. That would be a different tick, outside BT as defined. So "BT exactly as defined"
    has no value here. All later statements use one of two **declared extensions**. Each one
    reduces to BT's Born odds on BT's own walks (checked on BT's 1D and six-direction walks).
    - **E-K (which-hop odds)** P_n = ‖A_n u‖². These are real, non-negative and sum to 1. Their
@@ -50,17 +63,19 @@ and the check revisions they caused are recorded in `WORKLOG.md`.
    Then at b_iso M1 agrees through O(a²) for massive members too (residual O(a³) when
    Wilson-aligned, O(a⁴) at maximal twist). M2–M4 still mismatch at O(a²) or O(a).
 4. **Clock** (target 3): **fails, and the failure is not caused by C7's O(a²) anisotropy.** At rest
-   the E-K turn action is θ·⟨|n|²⟩_K, with ⟨|n|²⟩_K = 0.539 (b\*), 0.519 (b_iso) and 0.640 (b_gold);
-   it is band- and θ-independent. The E-W action is θ(3s² − 3iĥ·W) exactly (E6). Both differ from
+   the E-K turn action is θ(⟨|n|²⟩_K − |m_K|²), with ⟨|n|²⟩_K = 0.539 (b\*), 0.519 (b_iso) and
+   0.640 (b_gold), band- and θ-independent. The E-K rest mean step is not zero (|m_K| ≤ 0.048, a
+   spurious rest drift). So action/θ = 0.537 (b\*), 0.518–0.520 (b_iso) and 0.638–0.640 (b_gold). The E-W action is θ(3s² − 3iĥ·W) exactly (E6). Both differ from
    m²/ε = θ at k = 0. From k = 0 to |k| = 0.2 both actions **rise** while m²/ε falls, so the
    rule is not a clock even up to normalisation. The direction dependence of the action at
    |k| = 0.2 is only 5×10⁻⁵–6×10⁻⁴ relative, smallest at b_iso, where β = 0. That is consistent with
    the anisotropy being a sub-leading effect on top of an O(1) failure. As in BT's six-direction case,
    the cause is that the steps' |n|² (here n ∈ {−1,0,1}³, with |n|² from 0 to 3) is unrelated to the
    light speed s.
-5. **Selected coupling** (target 4): the selection is of **M1 at b_iso**, massless, in the E-W
-   continuation and at shape level. C8 gives **c_G^iso(M1, b_iso) = 6.63451×10⁻³** and
-   **a/l_P = 0.5775 √N_f** (with C8's caveats: anisotropic TT stiffness of 55% at b_iso, the q⁰
+5. **Coupling** (target 4): BT as defined selects nothing. The plane-wave dust tensor, which equals
+   the E-W continuation of BT, agrees with M1 through O(a²) iff β = 0, that is, at massless b_iso,
+   at shape level. This does not depend on the turn rule. If M1 is adopted, C8 gives
+   c_G^iso(M1, b_iso) = 6.63451×10⁻³ and a/l_P = 0.5775 √N_f (with C8's caveats: anisotropic TT stiffness of 55% at b_iso, the q⁰
    sector, the conformal channel not computed). No new fitting was done. At b\* (c_G = 7.36673×10⁻³)
    nothing is selected.
 
@@ -69,8 +84,9 @@ and the check revisions they caused are recorded in `WORKLOG.md`.
 - *E-K extension:* incompatibility at continuum order.
 - *E-W continuation, constant as given:* incompatibility at s ≠ 1, non-selection at b_gold
   (continuum order), incompatibility at O(a²).
-- *E-W, shape:* non-selection at continuum order; **selection of M1 at O(a²) at massless b_iso
-  only**; incompatibility at O(a²) at b\* and b_gold and, at the registered constant, for massive
+- *E-W, shape:* non-selection at continuum order. M1 is the only coupling that agrees at O(a²),
+  and only at massless b_iso. This is a walk-kinematic match (v = s⟨α⟩), not a selection by the
+  turn rule; incompatibility at O(a²) at b\* and b_gold and, at the registered constant, for massive
   members.
 
 ## 0. Premises
@@ -156,3 +172,16 @@ I classify it as a continuation, not the rule.
 Ehrenfest-type relations v = c⟨α⟩ hold in the continuum. As far as I know (from memory, not
 searched), the lattice statement (massless members, generic direction) "the group velocity equals s⟨α⟩ through O(a²) iff the k⁴ cubic
 anisotropy vanishes" for this family is new. It is specific to the C7/parent family.
+
+## Review dispositions (REVIEW.md)
+
+| item | verdict | disposition |
+|---|---|---|
+| 1a domain stated as "unit-length" | correct with fix | **applied**: shift-coin form with arbitrary hop vectors; sub-tick factorisation listed as untested |
+| 1c overlap 0.16–0.23 basis-dependent | correct with fix | **applied**: basis-free 0.23–0.25 quoted; the reviewer's commutator certificate cited |
+| 2, 3, 4a, 4b extensions, identities, comparison numbers | correct (independent 50-digit eigen-route) | none needed |
+| 4c "selects M1 at b_iso" attributed to BT | correct with fix (moderate) | **applied**: headline, Result 5 and Outcome reworded. The match is a dust-tensor/walk property (v = s⟨α⟩); it rests on the 1/s² rescaling, the M1–M4 set and q = 0; c_G is quoted only "if M1 is adopted" |
+| 5 clock rest formula | correct with fix (minor) | **applied**: action = θ(⟨\|n\|²⟩ − \|m\|²), \|m_K\| ≤ 0.048, b\* value 0.537 |
+
+Logs and runners are unchanged. The runner message "≤ 4 unit-length hops" in `logs/c10_numeric.log`
+is superseded by the condition stated above. Its pass/fail outcome does not depend on the unit length.

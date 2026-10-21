@@ -23,5 +23,3 @@ The earlier N1–N8 PASS declaration is withdrawn: permutations and the two phas
 ## Provenance
 
 Prior text is recoverable at Git `f24d17d97d372df977476e4a69674577f31af575` under this path. Related definitions/context (no blanket status endorsement):
-
-

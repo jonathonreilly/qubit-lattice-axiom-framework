@@ -1,49 +1,22 @@
 #!/usr/bin/env python3
-"""CKM multi-channel alpha_s extraction consistency.
+"""Conditional four-channel algebra and finite central-value diagnostics.
 
-Verifies the NEW retained closed forms in
-  docs/CKM_MULTI_CHANNEL_ALPHA_S_EXTRACTION_CONSISTENCY_THEOREM_NOTE_2026-04-26.md
-
-Key NEW result on the retained NLO Wolfenstein protected-gamma_bar surface:
-
-  The framework's retained CKM magnitude identities allow alpha_s to be EXTRACTED
-  independently from each of the four CKM magnitudes (|V_us|, |V_cb|,
-  |V_ub|, |V_td|) using the retained structural-integer formulas:
-
-  (E1) alpha_s_from_Vus  =  N_pair * |V_us|^2  =  2 * |V_us|^2.
-
-  (E2) alpha_s_from_Vcb  =  sqrt(N_quark) * |V_cb|  =  sqrt(6) * |V_cb|,
-       (since |V_cb|^2 = alpha_s^2/N_quark on retained surface).
-
-  (E3) alpha_s_from_Vub  =  cuberoot(N_pair * N_quark^2 * |V_ub|^2)
-                          =  cuberoot(72 |V_ub|^2),
-       (since |V_ub|^2 = alpha_s^3/(N_pair * N_quark^2) on retained surface).
-
-  (E4) alpha_s_from_Vtd  =  inversion of |V_td|^2 = alpha_s^3 (80 + alpha_s^2)/1152
-       (mild self-referential; numerically extracted via root-finding).
-
-  CONSISTENCY PREDICTION:
-    All four alpha_s extractions should agree on the retained surface.
-
-  PDG VALIDATION (using PDG central values):
-    alpha_s_from_Vus  ~  0.1006
-    alpha_s_from_Vcb  ~  0.1004
-    alpha_s_from_Vub  ~  0.1017
-    alpha_s_from_Vtd  ~  0.1022
-
-  All four PDG-extracted values agree to within ~ 1.8 % --
-  consistent with combined PDG measurement precision and NLO Wolfenstein
-  uncertainty.
-
-  Each extraction is INDEPENDENT (uses a single CKM magnitude); their
-  AGREEMENT is a NON-TRIVIAL framework consistency check that PDG data
-  supports.
-
-Ground-up status verification: each cited authority's tier extracted from its
-Status: line; closure derived only at extracted retained values.
+The four supplied CKM magnitude formulas can each be inverted for a model
+parameter. Separate formulas do not imply statistically independent inputs.
+Historical central values and a 20-assignment descriptive scan are supplied;
+no covariance, theory-error budget, scheme matching, or precision forecast is
+computed. Legacy source-status guards remain documentary checks and may fail.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = (
+    "docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md",
+    "docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md",
+    "docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
+    "docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md",
+)
 
 import math
 import re
@@ -79,7 +52,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 
 
 def invert_vtd_alpha_s(vtd_sq: float, n_pair: int, n_color: int, n_quark: int) -> float:
-    """Invert the retained NLO |V_td|^2 channel for the positive alpha_s root."""
+    """Invert the supplied NLO |V_td|^2 channel for the positive alpha_s root."""
     lo, hi = 1.0e-9, 2.0
     for _ in range(300):
         mid = (lo + hi) / 2
@@ -127,9 +100,9 @@ def authority_tier(content: str) -> str:
 
 
 def audit_inputs() -> None:
-    banner("Ground-up status verification of each cited authority")
+    banner("Legacy documentary status pins (not proof or audit authority)")
 
-    print("  RETAINED-TIER (load-bearing for closure):\n")
+    print("  Historical status strings checked below; conditional algebra uses supplied constants:\n")
 
     retained_authorities = (
         ("docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md",
@@ -155,13 +128,13 @@ def audit_inputs() -> None:
         print(f"    [{rel_path.split('/')[-1]}]")
         print(f"      Status (extracted): {status!r}")
         print(f"      Tier classification: {tier}")
-        check(f"Retained-tier verified: {rel_path.split('/')[-1]}",
+        check(f"Legacy retained-label string matches: {rel_path.split('/')[-1]}",
               all_kws and tier == "retained")
         print()
 
 
 def extract_retained_inputs() -> dict:
-    banner("Extracting retained inputs from authority text")
+    banner("Checking source literals against supplied model constants")
 
     counts = read_authority(
         "docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md"
@@ -174,9 +147,9 @@ def extract_retained_inputs() -> dict:
     print(f"  N_color extracted:                 {n_color_match.group(0) if n_color_match else 'NOT FOUND'}")
     print(f"  N_quark = N_pair * N_color:        {'FOUND' if n_quark_match else 'NOT FOUND'}")
 
-    check("MAGNITUDES retains N_pair = 2", n_pair_match and int(n_pair_match.group(1)) == 2)
-    check("MAGNITUDES retains N_color = 3", n_color_match and int(n_color_match.group(1)) == 3)
-    check("MAGNITUDES retains N_quark = N_pair * N_color (=6)", bool(n_quark_match))
+    check("MAGNITUDES contains literal N_pair = 2", n_pair_match and int(n_pair_match.group(1)) == 2)
+    check("MAGNITUDES contains literal N_color = 3", n_color_match and int(n_color_match.group(1)) == 3)
+    check("MAGNITUDES contains literal N_quark = N_pair * N_color (=6)", bool(n_quark_match))
 
     return {
         "N_pair": 2,
@@ -190,7 +163,7 @@ def audit_e1_to_e4_extraction_formulas(N: dict) -> None:
 
     a_s = sp.symbols("alpha_s", positive=True)
 
-    # Build closed forms from retained Wolfenstein.
+    # Build closed forms from the supplied Wolfenstein model.
     lambda_sq = a_s / 2
     A_sq = sp.Rational(2, 3)
     rho = sp.Rational(1, 6)
@@ -240,17 +213,17 @@ def audit_e1_to_e4_extraction_formulas(N: dict) -> None:
     diff_E4_formula = sp.simplify(Vtd_sq - Vtd_closed)
     derivative_E4 = sp.factor(sp.diff(Vtd_closed, a_s))
     print(f"\n  E4: alpha_s extraction from |V_td|^2 = alpha_s^3 (80 + alpha_s^2)/1152")
-    print(f"      retained NLO |V_td|^2 = {sp.factor(Vtd_closed)}")
+    print(f"      supplied NLO |V_td|^2 = {sp.factor(Vtd_closed)}")
     print(f"      Difference from Wolfenstein construction: {diff_E4_formula}")
     print(f"      Positive-root derivative: {derivative_E4}")
-    check("E4: |V_td|^2 closed form matches retained NLO Wolfenstein construction",
+    check("E4: |V_td|^2 closed form matches supplied NLO Wolfenstein construction",
           diff_E4_formula == 0)
     check("E4: positive-root map is monotone for alpha_s > 0",
           derivative_E4 == 5 * a_s ** 2 * (a_s ** 2 + 48) / 1152)
 
 
 def audit_pdg_consistency(N: dict) -> None:
-    banner("PDG multi-channel alpha_s extraction consistency")
+    banner("Historical supplied central-value transformations; no covariance test")
 
     pdg = {"|V_us|": 0.2243, "|V_cb|": 0.0410, "|V_ub|": 0.00382, "|V_td|": 0.00861}
 
@@ -275,11 +248,11 @@ def audit_pdg_consistency(N: dict) -> None:
         ("E4: alpha_s_from_|V_td|", a_s_E4),
     ]
 
-    print(f"  Channel                 alpha_s (PDG-extracted)")
+    print(f"  Channel                 model parameter (historical inputs)")
     for name, val in extractions:
         print(f"  {name:25s}  {val:.6f}")
 
-    # Compute mean and std-deviation.
+    # Compute unweighted mean and range; no standard error is estimated.
     values = [val for _, val in extractions]
     mean = sum(values) / len(values)
     spread = max(values) - min(values)
@@ -289,8 +262,12 @@ def audit_pdg_consistency(N: dict) -> None:
     print(f"  Mean of four extractions:    {mean:.6f}")
     print(f"  Spread (max - min):          {spread:.6f}")
     print(f"  Relative spread:             {rel_spread:.2f} %")
+    canonical = 0.103303816
+    print(f"  Supplied canonical comparator: {canonical:.9f}")
+    print(f"  Mean relative to comparator: {(mean/canonical-1)*100:.6f} %")
+    print("  This unweighted mean is not a covariance-weighted fit or uncertainty estimate.")
 
-    check("Multi-channel alpha_s extractions agree within 5 % relative",
+    check("Descriptive range is below the supplied 5-percent cut (not a theory bound)",
           rel_spread < 5)
 
     # Pairwise checks.
@@ -301,50 +278,23 @@ def audit_pdg_consistency(N: dict) -> None:
             pair_max_diff_pct = max(pair_max_diff_pct, d)
 
     print(f"  Maximum pairwise deviation:  {pair_max_diff_pct:.2f} %")
-    check("Multi-channel pairwise deviations within 5 % (consistent across all four channels)",
+    check("Maximum pairwise range is below the same descriptive cut (redundant range check)",
           pair_max_diff_pct < 5)
 
 
 def audit_falsifiability_envelope() -> None:
-    banner("Falsifiability envelope: framework consistency band on alpha_s")
-
-    print("  The framework predicts that alpha_s extracted from each CKM magnitude")
-    print("  via the retained CKM magnitude identities should agree -- to within combined")
-    print("  PDG measurement precision and NLO Wolfenstein uncertainty (typically")
-    print("  < 5 % relative).")
-    print()
-    print("  Current PDG precision for each channel:")
-    print()
-    pdg_precision = {
-        "|V_us|": (0.2243, 0.0008, 0.36),
-        "|V_cb|": (0.0410, 0.0014, 3.41),
-        "|V_ub|": (0.00382, 0.00020, 5.24),
-        "|V_td|": (0.00861, 0.00026, 3.02),
-    }
-
-    for k, (val, err, rel_pct) in pdg_precision.items():
-        print(f"    {k:8s}: {val:.4f} +/- {err:.4f}  ({rel_pct:.2f} % relative)")
-
-    print()
-    print("  Future precision targets (LHCb Upgrade II + Belle II):")
-    print(f"    |V_us|:  +/- 0.0004 (~ 0.18 % relative)")
-    print(f"    |V_cb|:  +/- 0.0004 (~ 1.0 %  relative)")
-    print(f"    |V_ub|:  +/- 0.00007 (~ 1.8 %  relative)")
-    print(f"    |V_td|:  +/- 0.00010 (~ 1.2 %  relative)")
-    print()
-    print("  At LHCb Upgrade II + Belle II precision, the framework's multi-channel")
-    print("  consistency would be tested to ~ 1 % relative. Any persistent spread > 2 %")
-    print("  would force a framework revision (NLO Wolfenstein -> NNLO refinement,")
-    print("  or shift in retained structural integers).")
-
+    banner("Historical comparator only; no forecast or uncertainty budget")
+    print("  The old 2-percent revision threshold and 1.75-percent spread were")
+    print("  supplied numbers, not a covariance analysis or experimental forecast.")
+    print("  Their comparison is preserved solely as historical arithmetic.")
     current_spread_pct = 1.75
     revision_threshold_pct = 2.0
-    check("Falsifiability envelope exceeds the current four-channel spread",
+    check("Historical supplied comparator: 2.0 exceeds 1.75 (not a falsification test)",
           revision_threshold_pct > current_spread_pct)
 
 
 def audit_uniqueness_argument(N: dict) -> None:
-    banner("Uniqueness argument: framework consistency forces specific structural integers")
+    banner("Finite descriptive ranking of 20 supplied count assignments")
 
     print("  Suppose the framework's structural integers were perturbed:")
     print(f"    N_pair' = N_pair + delta_p,")
@@ -357,10 +307,10 @@ def audit_uniqueness_argument(N: dict) -> None:
     print(f"    alpha_s_from_Vub  =  cuberoot(N_pair' * N_quark'^2 * |V_ub|^2).")
     print(f"    alpha_s_from_Vtd  =  positive root of the candidate |V_td|^2 channel.")
     print()
-    print("  In the explicit small-integer scan, PDG central values select the")
+    print("  In this supplied 20-assignment scan, historical central values rank the")
     print(f"  assignment whose four extractions agree at alpha_s ~ 0.10 to within 1.8 %.")
     print()
-    print("  The framework's retained values (N_pair, N_color, N_quark) = (2, 3, 6)")
+    print("  The supplied values (N_pair, N_color, N_quark) = (2, 3, 6)")
     print("  are the unique minimum-spread small-integer assignment in the scan.")
     print()
     print("  Any other scanned assignment that disagrees with (2, 3, 6)")
@@ -396,51 +346,21 @@ def audit_uniqueness_argument(N: dict) -> None:
     print(f"\n  Best (minimum spread) assignment: (N_pair, N_color, N_quark) = ({best[0]}, {best[1]}, {best[2]}) with {best[3]:.2f} % spread")
     print(f"  Next-best alternative: ({second_best[0]}, {second_best[1]}, {second_best[2]}) with {second_best[3]:.2f} % spread")
 
-    check("Uniqueness: (N_pair, N_color, N_quark) = (2, 3, 6) gives MINIMUM extraction spread vs alternatives",
+    check("Finite scan: (2, 3, 6) has minimum descriptive spread in this 20-row box",
           best[0] == 2 and best[1] == 3 and best[2] == 6)
-    check("Uniqueness gap: next-best small-integer alternative has > 20 % spread",
+    check("Finite scan: second-ranked row exceeds 20-percent descriptive spread",
           second_best[3] > 20)
 
 
 def audit_summary() -> None:
-    banner("Summary of NEW retained content")
-
-    print("  Inputs (retained-tier, ground-up Status verified):")
-    print("    CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA  (retained)")
-    print("    CKM_MAGNITUDES_STRUCTURAL_COUNTS         (retained)")
-    print("    CKM_CP_PHASE_STRUCTURAL_IDENTITY         (retained)")
-    print("    WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES (retained)")
-    print()
-    print("  NEW retained content -- multi-channel alpha_s extraction:")
-    print()
-    print("    Four independent alpha_s extraction formulas, one per CKM magnitude:")
-    print()
-    print("    (E1) alpha_s_from_|V_us|  =  N_pair * |V_us|^2  =  2 * |V_us|^2.")
-    print("    (E2) alpha_s_from_|V_cb|  =  sqrt(N_quark) * |V_cb|  =  sqrt(6) * |V_cb|.")
-    print("    (E3) alpha_s_from_|V_ub|  =  (N_pair * N_quark^2 * |V_ub|^2)^(1/3).")
-    print("    (E4) alpha_s_from_|V_td|  =  numerical inversion of |V_td|^2 closed form.")
-    print()
-    print("  CONSISTENCY PREDICTION:")
-    print()
-    print("    All four PDG-extracted values agree to within 1.8 % relative.")
-    print()
-    print("    Framework canonical alpha_s ~ 0.1006 (from |V_us|),")
-    print("                              ~ 0.1004 (from |V_cb|),")
-    print("                              ~ 0.1017 (from |V_ub|),")
-    print("                              ~ 0.1022 (from |V_td|).")
-    print()
-    print("  UNIQUENESS:")
-    print()
-    print("    Among small structural integer assignments (N_pair, N_color, N_quark)")
-    print("    with N_pair in {1, 2, 3, 4} and N_color in {1, 2, 3, 4, 5}, the")
-    print("    framework's (2, 3, 6) gives the MINIMUM multi-channel extraction")
-    print("    spread vs PDG.")
-    print()
-    print("  FALSIFIABILITY:")
-    print()
-    print("    Future precision (LHCb Upgrade II + Belle II) tests the multi-channel")
-    print("    consistency to ~ 1 % relative. Any persistent spread > 2 % would force a")
-    print("    framework revision.")
+    banner("Conditional result and open physical obligations")
+    print("  E1-E4 are inversions of supplied magnitude formulas at counts (2,3,6).")
+    print("  Four single-channel transformations do not establish statistical independence.")
+    print("  The 20-row scan ranks a supplied central-value range statistic only.")
+    print("  No likelihood, covariance, theory-error bound, or empirical exclusion is computed.")
+    print("  Identifying this model parameter with MSbar alpha_s needs a scale and matching map.")
+    print("  Neither a 5-percent theory error nor a future 2-percent rejection rule is derived.")
+    print("  Source-label checks are documentary and do not establish retained authority.")
 
 
 def main() -> int:

@@ -1,5 +1,5 @@
 {
- "edge_count": 16342,
+ "edge_count": 16344,
  "node_count": 7407,
  "nodes": {
   "3d_correction_master_note": {
@@ -5719,8 +5719,8 @@
    "out_degree": 15
   },
   "dm_neutrino_source_surface_perturbative_uniqueness_theorem_note_2026-04-17": {
-   "deps_hash": "006775a8f7e7",
-   "out_degree": 2
+   "deps_hash": "607d30b5b628",
+   "out_degree": 4
   },
   "dm_neutrino_source_surface_quartic_isotropy_and_u2_obstruction_note_2026-04-17": {
    "deps_hash": "0243d5eeb9a5",

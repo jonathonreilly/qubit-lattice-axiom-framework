@@ -1,5 +1,20 @@
 # SU(3) NNLO Convention C-iso Rational-Identification Support — Bounded Note
 
+## NLO proof obligation correction (2026-10-21)
+
+The [NLO source](C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md)
+now records its analytic derivation artifact as absent. Its Wilson coefficient
+`c_2 = -1` is a supplied hypothesis with finite numerical fit support, not a
+verified exact derivation. Every use below of that coefficient, `7/9`, or
+`7/12`, and every inherited “analytic” or “retained NLO” description, is governed
+by this qualification. Agreement of a finite quadrature/refit with `-1` does not
+prove the exact coefficient, asymptotic remainder or a certified error bound.
+The finite calculations and supplied-scenario tables are unchanged; any exact
+Wilson-series or physical error-bound conclusion requiring the missing proof
+remains open. This annotation neither certifies the other inherited coefficients
+nor promotes their rational identification into an exact theorem. The earlier
+ensemble-provenance and single-to-multiplaquette transfer qualifications remain.
+
 ## Dependency correction (2026-10-21)
 
 The corrected EXACT_TIER_EWITNESS note does not establish the imported
@@ -39,9 +54,9 @@ when rerun; the cached text output is the committed audit-support artifact.
 
 ## 0. Audit context
 
-The retained SU(3) NLO C-iso closure note
+The SU(3) NLO conditional-coefficient diagnostic note
 [`C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md`](C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md)
-gave the closed forms
+records the following heat-kernel expression and supplied Wilson-series hypothesis
 
 ```
 <P>_HK_SU(3)(s_t) = 1 - exp(-(4/3) s_t)
@@ -125,7 +140,7 @@ numerically identified within the runner's bounded scope:
 3. **(Convention C-iso single-plaquette discrepancy at NLO/NNLO/NNNLO/N4LO.)**
 
    ```
-   (P_W - P_HK)_SU(3)(s_t) = + (7/9) s_t²              ← NLO  [retained]
+   (P_W - P_HK)_SU(3)(s_t) = + (7/9) s_t²              ← NLO  [conditional on supplied Wilson coefficient]
                             + (−5/9) s_t³              ← NNLO **THIS WORK**
                             + (−47/486) s_t⁴           ← NNNLO **THIS WORK**
                             + (−16891/43740) s_t⁵      ← N4LO **THIS WORK**
@@ -136,7 +151,7 @@ numerically identified within the runner's bounded scope:
 
    | order | (P_W − P_HK) coefficient | decimal |
    |---|---|---|
-   | s_t² | +7/9         | +0.7778 (NLO, retained) |
+   | s_t² | +7/9         | +0.7778 (NLO, conditional) |
    | s_t³ | −5/9         | −0.5556 (NNLO, this work) |
    | s_t⁴ | −47/486      | −0.0967 (NNNLO, this work) |
    | s_t⁵ | −16891/43740 | −0.3862 (N4LO, this work) |

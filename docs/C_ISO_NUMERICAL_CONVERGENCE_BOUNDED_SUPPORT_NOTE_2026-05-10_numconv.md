@@ -1,5 +1,20 @@
 # C-iso Numerical Convergence Bounded Support Note
 
+## NLO proof obligation correction (2026-10-21)
+
+The [NLO source](C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md)
+now records its analytic derivation artifact as absent. Its Wilson coefficient
+`c_2 = -1` is a supplied hypothesis with finite numerical fit support, not a
+verified exact derivation. Every use below of that coefficient, `7/9`, or
+`7/12`, and every inherited “analytic” or “retained NLO” description, is governed
+by this qualification. Agreement of a finite quadrature/refit with `-1` does not
+prove the exact coefficient, asymptotic remainder or a certified error bound.
+The finite calculations and supplied-scenario tables are unchanged; any exact
+Wilson-series or physical error-bound conclusion requiring the missing proof
+remains open. This annotation neither certifies the other inherited coefficients
+nor promotes their rational identification into an exact theorem. The earlier
+ensemble-provenance and single-to-multiplaquette transfer qualifications remain.
+
 ## Dependency correction (2026-10-21)
 
 The corrected EXACT_TIER_EWITNESS note does not establish the imported
@@ -44,8 +59,8 @@ The path-integral epsilon-witness source note
 left the C-iso contribution at xi=4 as a large engineering systematic. The
 SU(3) single-plaquette correction note
 [`C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md`](C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md)
-gave analytic and numerical control of the single-plaquette Wilson/heat-kernel
-ratio.
+supplies finite numerical comparisons and a conditional Wilson-series hypothesis;
+its exact analytic coefficient derivation remains open.
 
 The bounded question here is narrower:
 

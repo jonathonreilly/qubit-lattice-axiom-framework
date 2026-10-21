@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/record_source_as_edge_deposits_2026_10_21.py
+runner_sha256: 79b0ac2a9a6f30a27d102e388e61e927db505bb0cc62d6b57a20f4295e06326f
+input_fingerprint_sha256: 508ae92982bfcd7f37b4598c193092058b42a1645b22f110e429d8e6cf7fac55
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+[PASS] step and chord deposits sum to eps u u with u = (1, v), energy and momentum included; steps alone do not  max error 2.2e-11; steps alone off by >= 1.1e-01; k along (1, 1, 0): T00 0.33456, T0x +0.05036, Txy +0.00758; k along (2, 1, 0): T00 0.32821, T0x +0.03247, Txy +0.00623; k along (1, 1, 1): T00 0.34510, T0x +0.05599, Txy +0.00908
+[PASS] the outer products of the 24 D4-carrier edge vectors span all symmetric 4x4 tensors  rank 10 of 10
+per_site: the walk, coin, band selection and the identification of a tick step with the spacetime vector (1, d) are supplied choices.
+lattice_wide: no gravity field equation, edge-length dynamics, coupling value or physical identification is established.
+elapsed_seconds 0.6
+
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

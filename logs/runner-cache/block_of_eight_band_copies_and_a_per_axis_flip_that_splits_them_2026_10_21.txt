@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/block_of_eight_band_copies_and_a_per_axis_flip_that_splits_them_2026_10_21.py
+runner_sha256: bc402be440c8b2ac83bfd9032dffb3c4cbcde00c9885d33c2e147db7f04c3b6f
+input_fingerprint_sha256: 914853b50feaeb151b9906ec43c8cedff01f18bdfa16e5e05574ac5c34c6d6db
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 8.23
+status: ok
+----- stdout -----
+[PASS] base tick: U(K+G) = U(K) for G = pi(1,1,0), pi(1,0,1), pi(0,1,1), and U(K+pi(1,1,1)) = -U(K)  max dev 5.3e-16
+[PASS] base tick: every block step lies in the lattice x=y=z mod 2, so the four cosets never exchange amplitude  8 steps, all (+-1,+-1,+-1)
+[PASS] proposal at theta = 0 is the base tick  max dev 0.0e+00
+[PASS] proposal is unitary with block steps in {-1,0,1}^3, and some steps leave the coset lattice  27 steps, 18 cross cosets
+[PASS] proposal has a rest step (displacement 0) of operator norm sin(theta)^3, so CL-4 as written does not cover it  norm 7.261e-04 vs sin^3 7.261e-04
+[PASS] corner theorem: at each zone corner the spectrum is {+-mu, pi+-mu} twice, mu = m + theta(3 - 2n), n = number of pi components, for any M and axis order  max dev 1.1e-15 (25 random draws)
+[PASS] P1 (m = 0, theta replaces m): band minimum at each corner equals |mu|, and the zone minimum equals the lightest  masses [0.09, 0.09, 0.09, 0.09, 0.09, 0.09, 0.27, 0.27]; zone min 0.0900
+[PASS] P2 (m = .1, theta = .09): band minimum at each corner equals |mu|, and the zone minimum equals the lightest  masses [0.01, 0.01, 0.01, 0.17, 0.19, 0.19, 0.19, 0.37]; zone min 0.0100
+[PASS] copy symmetry: translations and rotations act on the four copies as S4 (order 24); commutant dims transl+rot 2, transl+C3[111] 2, transl+D2 4, rotations only 5, C3 only 6  order 24, dims (2, 2, 4, 5, 6)
+[PASS] one-block translations commute with both ticks (Bloch form); the eight corners carry eight distinct joint characters, the n=1 triplet the diag triple of the three-generation observable note  n=1 characters [(-1, 1, 1), (1, -1, 1), (1, 1, -1)]
+[PASS] axis-dependent angles theta_k split the n=2 triplet as m - sum(theta) + 2 theta_k; equal angles keep it exactly degenerate  max dev 8.3e-17
+[PASS] proposal, light band near k=0 and near pi(1,1,0): mean block step per axis equals the group velocity  max |mean step - v| 8.4e-10
+[PASS] spectral rotation covariance: base 24 of 24; proposal 8 of 24 (the D4 about the middle axis of the substep order)  base 24, proposal 8
+koide_structural: covariant rules give b = 0 on the triplet, Q = 1/3; a C3 circulant needs a coset-privileging term and loss of the 2-fold axes (C3-only commutant dim 6).
+per_site: one fermion mode per site, mode assignment, substep order, M and theta are supplied; light-triplet branch theta = m is a tuning.
+lattice_wide: no generation, species, chirality or physical mass reading is established; exact cubic covariance of the proposal is not.
+elapsed_seconds 8.2
+
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

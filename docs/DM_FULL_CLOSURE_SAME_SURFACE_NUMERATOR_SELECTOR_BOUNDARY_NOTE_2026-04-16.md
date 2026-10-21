@@ -59,7 +59,7 @@ alpha_bare = 0.079577471545948
 ```
 
 and numerical-support interval outputs (no certified rounding enclosure; see
-the October 4 boundary in `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md`):
+the October 4 boundary in [DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md](DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md)):
 
 ```text
 R(alpha_lo) in [5.442019867867, 5.442019867931]

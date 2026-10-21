@@ -1,5 +1,7 @@
 # DM split-2 numerical two-box dominance support
 
+**Type:** open_gate
+
 **Date:** 2026-04-21; correction 2026-10-21
 **Status:** support - structural or confirmatory support note
 **Primary runner:** `scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py`

@@ -1,5 +1,7 @@
 # DM Flagship Gate — Open-Gate Review
 
+**Type:** open_gate
+
 **Date:** 2026-04-17 (2026-04-18 P3 Sylvester update applied)
 **Status:** **OPEN flagship lane.** On the live DM-neutrino source-oriented
 sheet the old pointwise P3 branch-choice rule is no longer merely imposed:

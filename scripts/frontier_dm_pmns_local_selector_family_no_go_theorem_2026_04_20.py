@@ -1,69 +1,11 @@
 #!/usr/bin/env python3
-"""
-DM PMNS local-selector-family no-go theorem for the remaining angle pin.
-
-Question:
-  Can the current exact LOCAL selector families on the DM neutrino
-  source surface close the PMNS angle pin, i.e. force the physical
-  triple
-
-      (sin^2 theta_12, sin^2 theta_13, sin^2 theta_23)
-        = (0.307, 0.0218, 0.545)
-
-  without importing the observational chamber pin?
-
-Answer:
-  No.
-
-  The strongest exact local selector families already on land reduce to the
-  same one-real selected line:
-
-      delta = q_+ = sqrt(6) / 3.
-
-  This is the exact output of:
-    - the parity-compatible observable-selector theorem on D = diag(A,B,B),
-    - and the broader 23-symmetric active-curvature theorem on
-      D = diag(A,B,B) with arbitrary A,B > 0.
-
-  On that selected line, the retained PMNS map never reaches the physical
-  angle triple. More sharply:
-
-    1. s12^2(m, sqrt(6)/3, sqrt(6)/3) has exactly two stationary points on a
-       wide interval [-2000, 2000]. The global minimum occurs at
-       m ~= 4.36500535 and equals
-
-         s12^2_min = 0.331582718643... > 0.307.
-
-       So the physical solar angle is excluded on the entire line.
-
-    2. The full three-angle distance
-
-         chi^2_line(m)
-           = (s12^2 - 0.307)^2 + (s13^2 - 0.0218)^2 + (s23^2 - 0.545)^2
-
-       has a unique stationary point on [-200, 200], at
-       m ~= 1.27832212, with
-
-         chi^2_line,min = 0.011428083950...
-
-       and best-fit triple
-
-         (0.37920275, 0.05563746, 0.47379695).
-
-    3. The explicit current candidate points
-       {Schur-Q, det-crit, Tr(H^2)-boundary, K12-character, F1 parity-mixing}
-       all miss the physical PMNS triple by visible margins.
-
-  Therefore the remaining PMNS angle-pin task is NOT closable by the current
-  exact local selector families. The missing ingredient must be a nonlocal
-  point-selection law on the live branch, not another local parity-compatible
-  / 23-symmetric / microscopic-polynomial selector.
+"""Finite Schur-line root-search and supplied-candidate PMNS diagnostics.
+No exhaustive root, global line exclusion or necessity-of-nonlocality proof.
 """
 
 from __future__ import annotations
 
 import math
-from pathlib import Path
 
 import numpy as np
 from scipy.optimize import brentq
@@ -84,8 +26,7 @@ from frontier_pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem imp
 )
 
 
-ROOT = Path(__file__).resolve().parents[1]
-NOTE_PATH = ROOT / "docs/DM_PMNS_LOCAL_SELECTOR_FAMILY_NO_GO_THEOREM_NOTE_2026-04-20.md"
+AUDIT_TIMEOUT_SEC = 300
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -118,10 +59,6 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
         msg += f"  ({detail})"
     print(msg)
     return condition
-
-
-def read_note() -> str:
-    return NOTE_PATH.read_text(encoding="utf-8")
 
 
 def schur_obs(m: float) -> dict[str, float]:
@@ -163,38 +100,33 @@ def find_stationary_points(fn, lo: float, hi: float, *, h: float, num: int) -> l
 
 def part1_local_families_reduce_to_the_same_selected_line() -> None:
     print("\n" + "=" * 88)
-    print("PART 1: CURRENT EXACT LOCAL SELECTOR FAMILIES REDUCE TO THE SAME SELECTED LINE")
+    print("PART 1: IMPORTED SELECTED-LINE VALUES AGREE")
     print("=" * 88)
 
-    note = read_note()
     d_parity = parity_delta_star()
     q_parity = parity_q_star()
     d_curv = curvature_delta_star()
     q_curv = curvature_q_star()
 
     check(
-        "Parity-compatible selector theorem fixes delta_* = q_+* = sqrt(6)/3",
+        "Imported parity selector returns delta_* = q_+* = sqrt(6)/3",
         abs(d_parity - SCHUR_S) < 1.0e-12 and abs(q_parity - SCHUR_S) < 1.0e-12,
         f"(delta_*,q_+*)=({d_parity:.12f},{q_parity:.12f})",
     )
     check(
-        "23-symmetric active-curvature theorem fixes the same line for all D = diag(A,B,B)",
+        "Imported curvature selector returns the same line",
         abs(d_curv - SCHUR_S) < 1.0e-12 and abs(q_curv - SCHUR_S) < 1.0e-12,
         f"(delta_*,q_+*)=({d_curv:.12f},{q_curv:.12f})",
     )
     check(
-        "The two exact local families agree on one selected line delta = q_+ = sqrt(6)/3",
+        "The two imported value functions agree on one selected line delta = q_+ = sqrt(6)/3",
         abs(d_parity - d_curv) < 1.0e-12 and abs(q_parity - q_curv) < 1.0e-12,
-    )
-    check(
-        "The note records the local-family reduction to the Schur line",
-        "delta = q_+ = sqrt(6)/3" in note and "current exact local selector families" in note,
     )
 
 
 def part2_schur_line_has_a_hard_solar_angle_floor() -> None:
     print("\n" + "=" * 88)
-    print("PART 2: THE SCHUR LINE HAS A HARD SOLAR-ANGLE FLOOR")
+    print("PART 2: FINITE SCHUR-LINE STATIONARY-ROOT SEARCH")
     print("=" * 88)
 
     roots = find_stationary_points(s12_on_schur, -2000.0, 2000.0, h=1.0e-4, num=4001)
@@ -211,24 +143,24 @@ def part2_schur_line_has_a_hard_solar_angle_floor() -> None:
     print(f" endpoint values: s12^2(-2000) = {left_value:.12f}, s12^2(2000) = {right_value:.12f}")
 
     check(
-        "s12^2 on the Schur line has exactly two stationary points on the wide scan",
+        "s12^2 on the Schur line search locates two stationary candidates on the finite grid",
         len(roots) == 2,
         f"roots={roots}",
     )
     check(
-        "The lower stationary point sits at positive m ~= 4.365 and is the line minimum on the wide scan",
+        "The lower stationary point sits at positive m ~= 4.365 and is below the tested endpoints",
         abs(min_root - 4.365005345285525) < 1.0e-6
         and min_value < left_value
         and min_value < right_value,
         f"m_min={min_root:.12f}, s12^2_min={min_value:.12f}",
     )
     check(
-        "The Schur-line solar-angle floor stays strictly above the physical target 0.307",
+        "The lowest located solar stationary candidate stays above the physical target 0.307",
         min_value > TARGET_S12SQ + 2.0e-2,
         f"s12^2_min - 0.307 = {min_value - TARGET_S12SQ:.12f}",
     )
     check(
-        "Therefore no point on delta = q_+ = sqrt(6)/3 can realize the physical PMNS triple",
+        "Located candidate value exceeds the target; no exhaustive exclusion inferred",
         min_value > TARGET_S12SQ,
         f"s12^2_min={min_value:.12f}",
     )
@@ -256,12 +188,12 @@ def part3_best_full_three_angle_fit_on_the_schur_line_still_misses() -> None:
     print(f" endpoint chi^2 values: chi^2(-200) = {left:.12f}, chi^2(200) = {right:.12f}")
 
     check(
-        "The Schur-line three-angle distance has a unique stationary point on the wide scan",
+        "The Schur-line three-angle distance search locates one stationary candidate on the finite grid",
         len(roots) == 1,
         f"roots={roots}",
     )
     check(
-        "The unique best-fit point is near m ~= 1.27832212",
+        "The located fit candidate is near m ~= 1.27832212",
         abs(best_root - 1.278322119585464) < 1.0e-6,
         f"m_best={best_root:.12f}",
     )
@@ -302,69 +234,17 @@ def part4_all_current_explicit_candidate_points_miss() -> None:
     )
 
 
-def part5_the_note_states_the_correct_i5_consequence() -> None:
-    print("\n" + "=" * 88)
-    print("PART 5: THE NOTE STATES THE CORRECT I5 CONSEQUENCE")
-    print("=" * 88)
-
-    note = read_note()
-    check(
-        "The note records the hard Schur-line solar-angle floor",
-        "0.331582718643" in note and "0.307" in note,
-    )
-    check(
-        "The note records that the missing ingredient is nonlocal point selection, not another local family",
-        "nonlocal point-selection law" in note
-        and "not another local parity-compatible" in note,
-    )
-
-
 def part6_n5_execution_certificate() -> None:
-    print("\n" + "=" * 88)
-    print("PART 6: N5 EXECUTION CERTIFICATE -- WHAT THIS RUNNER RESOLVES")
-    print("=" * 88)
-
-    print(
-        "  per_element: checked -- the five explicit selector candidates A Schur-Q, "
-        "B det-crit, C Tr(H^2)-bdy, D K12 char and E par-mix F1 are each evaluated and "
-        "reported on their own row with their own chi^2 and max|angle error|, and each "
-        "stationary root is isolated individually by brentq with a 1e-3 separation "
-        "guard rather than being summarized into a single count."
-    )
-    print(
-        "  per_site: checked and not executed -- nothing in the selector no-go is indexed "
-        "by position. H(m, delta, q_+) is a single 3x3 source Hermitian evaluated at one "
-        "point of a three-dial parameter space, and its indices are lepton generation "
-        "labels, so the family being ruled out has no site-resolved degree of freedom "
-        "that a sweep could expose."
-    )
-    print(
-        "  per_mode: checked -- the three PMNS mixing observables are resolved "
-        "separately rather than only in aggregate. Part 2 rests on the solar mode "
-        "s12^2 alone, whose Schur-line floor 0.331582718643 exceeds the target 0.307, "
-        "so the no-go already holds on that single mode; Part 3 then combines all three "
-        "modes into chi^2_line and still misses at 0.011428083950."
-    )
-    print(
-        "  per_block: checked in a limited sense -- the block form is the premise of "
-        "the two imported theorems, not something this runner rebuilds. What is "
-        "executed here is that the parity-compatible family on D = diag(A,B,B) and the "
-        "broader 23-symmetric active-curvature family on the same singlet-plus-"
-        "degenerate-doublet block return the identical selected line "
-        "delta_* = q_+* = sqrt(6)/3 to 1e-12."
-    )
-    print(
-        "  lattice_wide: checked and not executed -- there is no lattice and no "
-        "asymptotic limit. The widest thing executed is a one-dimensional dial scan "
-        "over m on [-2000,2000] (4001 samples) and [-200,200] (8001 samples) with "
-        "endpoint comparison, which bounds the selected line's behaviour on those "
-        "intervals only and is parameter extent, not lattice extent."
-    )
+    print("per_element: five supplied candidates and numerically located roots")
+    print("per_block: imported selected-line constants; no family proof here")
+    print("per_site: no site-resolved calculation")
+    print("per_mode: three angle coordinates evaluated")
+    print("lattice_wide: no lattice calculation; finite parameter scans only")
 
 
 def main() -> int:
     print("=" * 88)
-    print("DM PMNS LOCAL-SELECTOR-FAMILY NO-GO THEOREM")
+    print("DM PMNS FINITE LOCAL-SELECTOR DIAGNOSTICS")
     print("=" * 88)
     print()
     print("Question:")
@@ -375,16 +255,15 @@ def main() -> int:
     part2_schur_line_has_a_hard_solar_angle_floor()
     part3_best_full_three_angle_fit_on_the_schur_line_still_misses()
     part4_all_current_explicit_candidate_points_miss()
-    part5_the_note_states_the_correct_i5_consequence()
     part6_n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Current exact local selector families do NOT close the PMNS angle pin.")
-    print("  The strongest exact local route fixes delta = q_+ = sqrt(6)/3,")
-    print("  but the entire selected line misses the physical PMNS triple.")
-    print("  Remaining target: a nonlocal point-selection law on the live branch.")
+    print("  The finite tested candidates miss the supplied target.")
+    print("  The tested line fixes delta = q_+ = sqrt(6)/3,")
+    print("  but exhaustive coverage of that line remains unproved.")
+    print("  No necessity of nonlocal point selection is established.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1

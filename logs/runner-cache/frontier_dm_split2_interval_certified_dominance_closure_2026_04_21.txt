@@ -1,80 +1,63 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py
-runner_sha256: d3b97172bb66372369e12701b22d879f56549ece2a878e7f208c4a5409037def
-timeout_sec: 120
+runner_sha256: 8a4b62f3005dbe756d3e0564bbc9334b3d068bd33e35a2c4398dfb1ee24cb9f2
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 1.11
+elapsed_sec: 0.97
 status: ok
 ----- stdout -----
 ========================================================================================
-DM SPLIT-2 INTERVAL-CERTIFIED DOMINANCE CLOSURE
+DM SPLIT-2 NUMERICAL TWO-BOX SUPPORT
 ========================================================================================
 
 ========================================================================================
 PART 1: WEYL EIGENVALUE BOXES ON THE TWO RESIDUAL SPLIT-2 NEIGHBORHOODS
 ========================================================================================
-  [PASS] The split-2 affine generators have exact operator norms 1, sqrt(3), 2  ((L_m,L_delta,L_slack)=(1.000000000000,1.732050807569,2.000000000000))
-  [PASS] CAP_BOX Weyl control gives three disjoint eigenvalue intervals for H(m,delta,s)  (intervals=[(-1.6095297294418491, -1.5672092213661604), (-0.3472026455414059, -0.30488213746571713), (1.750751612869722, 1.7930721209454108)])
-  [PASS] ENDPOINT_BOX Weyl control gives three disjoint eigenvalue intervals for H(m,delta,s)  (intervals=[(-1.5983455404846443, -1.5745120813660427), (-0.33643276901675373, -0.31259930989815227), (1.756528120823496, 1.7803615799420975)])
-  [PASS] The CAP_BOX Weyl radius is small compared with the spectral gaps at the box center  (radius=0.021160254038, center_evals=[-1.58836948 -0.32604239  1.77191187])
-  [PASS] The ENDPOINT_BOX Weyl radius is even smaller than the CAP_BOX radius  ((r_cap,r_endpoint)=(0.021160254038,0.011916729559))
+  [PASS] The split-2 affine generators have operator norms 1, 1+sqrt(3), 2 in (m,delta,slack)  ((L_m,L_delta,L_slack)=(1.000000000000,2.732050807569,2.000000000000))
+  [PASS] CAP_BOX Weyl control gives three disjoint eigenvalue intervals for H(m,delta,s)  (intervals=[(-1.6145297294418492, -1.5622092213661602), (-0.3522026455414059, -0.2998821374657171), (1.7457516128697224, 1.798072120945411)])
+  [PASS] ENDPOINT_BOX Weyl control gives three disjoint eigenvalue intervals for H(m,delta,s)  (intervals=[(-1.6008955404846443, -1.5719620813660427), (-0.3389827690167538, -0.3100493098981522), (1.753978120823496, 1.7829115799420976)])
+  [PASS] The CAP_BOX Weyl radius is small compared with the spectral gaps at the box center  (radius=0.026160254038, center_evals=[-1.588369 -0.326042  1.771912])
+  [PASS] The ENDPOINT_BOX Weyl radius is even smaller than the CAP_BOX radius  ((r_cap,r_endpoint)=(0.026160254038,0.014466729559))
 
-  CAP_BOX center eigenvalues = [-1.58836948 -0.32604239  1.77191187]
-  CAP_BOX Weyl radius        = 0.021160254038
-  CAP_BOX eigenvalue boxes   = [(-1.6095297294418491, -1.5672092213661604), (-0.3472026455414059, -0.30488213746571713), (1.750751612869722, 1.7930721209454108)]
+  CAP_BOX center eigenvalues = [-1.588369 -0.326042  1.771912]
+  CAP_BOX Weyl radius        = 0.026160254038
+  CAP_BOX eigenvalue boxes   = [(-1.6145297294418492, -1.5622092213661602), (-0.3522026455414059, -0.2998821374657171), (1.7457516128697224, 1.798072120945411)]
 
-  ENDPOINT_BOX center eigenvalues = [-1.58642881 -0.32451604  1.76844485]
-  ENDPOINT_BOX Weyl radius        = 0.011916729559
-  ENDPOINT_BOX eigenvalue boxes   = [(-1.5983455404846443, -1.5745120813660427), (-0.33643276901675373, -0.31259930989815227), (1.756528120823496, 1.7803615799420975)]
-
-========================================================================================
-PART 2: EXACT PROJECTOR-ROW INTERVALS FROM COFACTOR FORMULAS
-========================================================================================
-  [PASS] Every CAP_BOX row entry interval stays inside [0,1]  (rows=[[(0.1419130581458463, 0.2023889019050902), (0.5911889103047634, 0.6911044691760553), (0.17012920020139125, 0.21168184260716064)], [(0.06327551905471068, 0.09285059976008961), (0.1374919115375737, 0.17334284807355418), (0.7274066081835655, 0.8119598195873265)], [(0.689146596775759, 0.8203734743829535), (0.17157160952437175, 0.24517107344555564), (0.027572580335862552, 0.05616541797889321)]])
-  [PASS] Every ENDPOINT_BOX row entry interval stays inside [0,1]  (rows=[[(0.1498260689565148, 0.18375089745270767), (0.6186355531823415, 0.6755170105051325), (0.17577827264777762, 0.199175194834462)], [(0.06930434921423251, 0.08593523348284852), (0.14404255929266938, 0.1648013370230969), (0.7447649134834847, 0.793212381281246)], [(0.7199177517466736, 0.7944520289810629), (0.1796237092606197, 0.2205268415410405), (0.036435469783642455, 0.05221508969860557)]])
-  [PASS] The CAP_BOX row-3 packet interval already stays close to the sampled winning row  (row3=[(0.689146596775759, 0.8203734743829535), (0.17157160952437175, 0.24517107344555564), (0.027572580335862552, 0.05616541797889321)])
-  [PASS] The ENDPOINT_BOX row-3 packet interval is even tighter than the CAP_BOX row-3 packet interval  (row3=[(0.7199177517466736, 0.7944520289810629), (0.1796237092606197, 0.2205268415410405), (0.036435469783642455, 0.05221508969860557)])
-
-  CAP_BOX row intervals      = [[(0.1419130581458463, 0.2023889019050902), (0.5911889103047634, 0.6911044691760553), (0.17012920020139125, 0.21168184260716064)], [(0.06327551905471068, 0.09285059976008961), (0.1374919115375737, 0.17334284807355418), (0.7274066081835655, 0.8119598195873265)], [(0.689146596775759, 0.8203734743829535), (0.17157160952437175, 0.24517107344555564), (0.027572580335862552, 0.05616541797889321)]]
-  ENDPOINT_BOX row intervals = [[(0.1498260689565148, 0.18375089745270767), (0.6186355531823415, 0.6755170105051325), (0.17577827264777762, 0.199175194834462)], [(0.06930434921423251, 0.08593523348284852), (0.14404255929266938, 0.1648013370230969), (0.7447649134834847, 0.793212381281246)], [(0.7199177517466736, 0.7944520289810629), (0.1796237092606197, 0.2205268415410405), (0.036435469783642455, 0.05221508969860557)]]
+  ENDPOINT_BOX center eigenvalues = [-1.586429 -0.324516  1.768445]
+  ENDPOINT_BOX Weyl radius        = 0.014466729559
+  ENDPOINT_BOX eigenvalue boxes   = [(-1.6008955404846443, -1.5719620813660427), (-0.3389827690167538, -0.3100493098981522), (1.753978120823496, 1.7829115799420976)]
 
 ========================================================================================
-PART 3: BOXWISE TRANSPORT UPPER BOUNDS
+PART 2: FLOAT PROJECTOR-ROW INTERVAL ESTIMATES FROM COFACTOR FORMULAS
+========================================================================================
+  [PASS] Every CAP_BOX row entry interval stays inside [0,1]  (rows=[[(0.1369331989035871, 0.2087058102682823), (0.5827264470298831, 0.7014440354471759), (0.16645933585618466, 0.21601315821548717)], [(0.06061424513756046, 0.09627508785022924), (0.134058363919399, 0.17785348150282984), (0.7186178742714016, 0.8220380965977384)], [(0.6772553861940839, 0.8349972803780507), (0.16637424357465153, 0.2517251007153042), (0.025699314021926545, 0.05849673094569381)]])
+  [PASS] Every ENDPOINT_BOX row entry interval stays inside [0,1]  (rows=[[(0.14717230463912903, 0.18678325590544573), (0.6140815636291771, 0.6806110996168834), (0.17384474149918905, 0.20129711443273676)], [(0.06786838096575737, 0.08758914628098799), (0.14218598570628177, 0.16696943724054664), (0.7401381306735973, 0.7982107793734219)], [(0.7135492749525306, 0.8016030644989157), (0.17687861025122031, 0.22365104107562075), (0.03541891197614877, 0.05336207215517335)]])
+
+  CAP_BOX row intervals      = [[(0.1369331989035871, 0.2087058102682823), (0.5827264470298831, 0.7014440354471759), (0.16645933585618466, 0.21601315821548717)], [(0.06061424513756046, 0.09627508785022924), (0.134058363919399, 0.17785348150282984), (0.7186178742714016, 0.8220380965977384)], [(0.6772553861940839, 0.8349972803780507), (0.16637424357465153, 0.2517251007153042), (0.025699314021926545, 0.05849673094569381)]]
+  ENDPOINT_BOX row intervals = [[(0.14717230463912903, 0.18678325590544573), (0.6140815636291771, 0.6806110996168834), (0.17384474149918905, 0.20129711443273676)], [(0.06786838096575737, 0.08758914628098799), (0.14218598570628177, 0.16696943724054664), (0.7401381306735973, 0.7982107793734219)], [(0.7135492749525306, 0.8016030644989157), (0.17687861025122031, 0.22365104107562075), (0.03541891197614877, 0.05336207215517335)]]
+
+========================================================================================
+PART 3: NUMERICAL BOXWISE TRANSPORT UPPER ESTIMATES
 ========================================================================================
   [PASS] The one-variable transport kernel still has its small-leakage peak inside [0,0.05]  ((q_star,psi_star)=(0.035493877259706,0.011015495595788))
-  [PASS] All three CAP_BOX rowwise eta upper bounds stay strictly below transport closure  (eta upper bounds=[0.76920972 0.88068906 0.90419742])
-  [PASS] All three ENDPOINT_BOX rowwise eta upper bounds stay strictly below transport closure  (eta upper bounds=[0.75987683 0.86362766 0.89898279])
-  [PASS] The CAP_BOX theorem-grade interval margin is still comfortably above 0.09  (margin=0.095802577203)
-  [PASS] The ENDPOINT_BOX theorem-grade interval margin is still comfortably above 0.10  (margin=0.101017210975)
+  [PASS] All three CAP_BOX rowwise eta upper estimates stay strictly below transport closure  (eta upper estimates=[0.774997 0.888906 0.90731 ])
+  [PASS] All three ENDPOINT_BOX rowwise eta upper estimates stay strictly below transport closure  (eta upper estimates=[0.762657 0.867835 0.900579])
+  Estimated margins: CAP=0.092689940147, ENDPOINT=0.099420823381
 
-  q_star <= 0.035493877259706
-  CAP_BOX rowwise eta upper bounds      = [0.76920972 0.88068906 0.90419742]
-  ENDPOINT_BOX rowwise eta upper bounds = [0.75987683 0.86362766 0.89898279]
-
-========================================================================================
-PART 4: CLOSURE ASSEMBLY
-========================================================================================
-  [PASS] The carried branch-local reduction really had already localized the residual pressure to CAP_BOX and ENDPOINT_BOX
-  [PASS] The superseded dense-grid note records the same two boxes now being certified theorem-grade
-  [PASS] So the residual split-2 carrier item now closes on the current review surface  ((cap_max,endpoint_max)=(0.904197422797,0.898982789025))
-
-  Closure read:
-    - prior branch science had already reduced the residual split-2 pressure
-      to CAP_BOX and ENDPOINT_BOX
-    - this runner certifies eta/eta_obs < 1 on both whole boxes
-    - therefore interval-certified exact-carrier dominance/completeness
-      closes on the residual split-2 selector branch
+  q_star estimate = 0.035493877259706
+  CAP_BOX rowwise eta upper estimates      = [0.774997 0.888906 0.90731 ]
+  ENDPOINT_BOX rowwise eta upper estimates = [0.762657 0.867835 0.900579]
+Numerical support on CAP_BOX and ENDPOINT_BOX only.
+Open: outward rounding, certified kernel integration and global peak control,
+plus a separate proof that these boxes cover every relevant branch point.
+Text matches in prior notes do not establish that coverage.
 
 ========================================================================================
 RESULT
 ========================================================================================
-  The residual split-2 carrier-side item is closed on the current review surface.
-  What remains open on the DM flagship gate is not carrier-side dominance.
-  It is the physical branch-choice / selector side:
-    - A-BCC as an axiom-native branch-choice law
-    - the finer right-sensitive microscopic selector law
-
-SUMMARY: PASS=17 FAIL=0
+  Estimated local margins remain positive; rigorous exclusion and global
+  carrier completeness are not established by this runner.
+SUMMARY: PASS=10 FAIL=0
 
 ----- stderr -----
 

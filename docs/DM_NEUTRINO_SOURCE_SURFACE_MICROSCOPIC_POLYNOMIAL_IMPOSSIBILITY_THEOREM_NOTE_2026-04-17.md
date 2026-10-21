@@ -1,5 +1,7 @@
 # Source-only spectral reflection and the full-affine boundary
 
+**Type:** bounded_theorem
+
 **Date:** 2026-04-17; scope correction 2026-10-21
 **Scope:** exact source-only similarity; no general selector-impossibility claim
 **Script:** `scripts/frontier_dm_neutrino_source_surface_microscopic_polynomial_impossibility_theorem.py`

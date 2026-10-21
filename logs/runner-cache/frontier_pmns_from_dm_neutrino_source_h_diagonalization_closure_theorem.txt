@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem.py
-runner_sha256: f653e00082a586886ed501e3c1b2b138a989c537e5e644d34370990530c78903
-timeout_sec: 120
+runner_sha256: f6612bde7432275d861fe8ea55a13b774cc4c81be9ccc779061c0d6962451837
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 1.78
+elapsed_sec: 1.21
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -54,9 +54,9 @@ Part 2: PMNS angles as f(H) vary across the chamber
  [PASS (D)] sin^2 theta_23 varies on chamber (spread > 0.01) (spread=0.1998)
 
 ========================================================================================
-Part 3: unique chamber solution (m_*, delta_*, q_+*) via multi-start
+Part 3: numerical chamber candidate (m_*, delta_*, q_+*) via multi-start
 ========================================================================================
- [PASS (D)] random-start multi-start converges to unique chamber solution (1 distinct minima; ~60 accepted)
+ [PASS (D)] accepted random starts converge to one rounded chamber solution (1 distinct minima; ~60 accepted)
  pinned (m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042)
  fsolve-sharpened  = (0.657061342210, 0.933806343759, 0.715042329587)
  [PASS (D)] pinned s12^2 = 0.307 (machine-precise) (val=0.307000000000)
@@ -86,7 +86,8 @@ Part 5: delta_CP prediction and Jarlskog at pinned chamber point
 ========================================================================================
  J (Jarlskog)  = -0.032755
  sin(delta_CP)  = -0.9874
- delta_CP (deg) = -80.88 (or complement +260.88 deg)
+ cos(delta_CP)  = -0.1585
+ delta_CP (deg, atan2) = 260.88
  [PASS (D)] |Jarlskog| consistent with observed ~0.03 (|J|=0.0328)
  [PASS (D)] sin(delta_CP) negative (i.e. delta_CP in (180, 360) deg), matching T2K-preferred octant
 
@@ -117,7 +118,7 @@ Part 7: closed-form of the frozen singlet-doublet slots a_*, b_*
 
 Summary:
  Pinned chamber point (m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042)
- Predicted delta_CP = -80.88 deg (sin = -0.9874)
+ Predicted delta_CP = +260.88 deg (sin = -0.9874)
  Jarlskog J     = -0.032755
  selector closure status: BOUNDED on chamber, with A-BCC and sigma_hier open.
 

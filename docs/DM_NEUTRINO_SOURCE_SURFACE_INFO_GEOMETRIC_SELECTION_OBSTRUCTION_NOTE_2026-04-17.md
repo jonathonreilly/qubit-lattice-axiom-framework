@@ -1,5 +1,7 @@
 # Scalar-baseline information geometry: local expansion and domain boundary
 
+**Type:** bounded_theorem
+
 **Date:** 2026-04-17; calculation correction 2026-10-21
 **Scope:** conditional local calculation; physical selector remains open
 **Script:** `scripts/frontier_dm_neutrino_source_surface_info_geometric_selection_obstruction.py`

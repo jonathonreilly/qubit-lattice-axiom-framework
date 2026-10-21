@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/record_information_accounting_lossless_odds_and_read_once_records_2026_10_21.py
+runner_sha256: 2b2a36340389e9d25ad4890bbceb3c2b71915fa67cce84342aa0fdcafd22e1df
+input_fingerprint_sha256: 8ca95d05f81150c2e6a1f3b87472f62c512677897e515339242985f8badf3807
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+[PASS] supplied unitary ticks keep the state normalised and pure, while the position Shannon entropy changes  norm error 5.8e-15, purity error 1.2e-14; position entropy 4.5471 -> 5.2036 bits over 60 ticks
+[PASS] a site record: position Shannon uncertainty falls on average by the record entropy (chain rule for conditioning)  site 150: H(X) 5.203569 = 5.203569, record entropy 0.3128 bits; site 157: H(X) 5.203569 = 5.203569, record entropy 0.1982 bits; site 135: H(X) 5.203569 = 5.203569, record entropy 0.0298 bits
+[PASS] purified record: the joint pure state stays normalised and the record qubit carries the record entropy as entanglement  joint pure-state purity 1.000000000000; record-qubit entropy 0.312813 vs H(R) 0.312813 bits
+per_site: the walk, packet, record sites and the controlled-flip purification are supplied choices.
+lattice_wide: the identities are standard (unitarity, the conditioning chain rule, Schmidt decomposition); no physical information law is established.
+elapsed_seconds 0.1
+
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

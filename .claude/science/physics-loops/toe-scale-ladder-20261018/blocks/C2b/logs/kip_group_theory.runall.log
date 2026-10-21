@@ -1,0 +1,20 @@
+PASS [exact] |O| = 24 (proper cubic rotations on the spatial axes, time fixed)
+subgroups of B4 containing O: 7; orders [24, 48, 48, 48, 96, 192, 384]
+PASS [exact] B4 itself is among them, order 384
+  |G|= 24 proper=True  mixes t with space=False contains t->-t=False  n_S=2 n_A=0 n_F=3  KI+-sufficient=False
+  |G|= 48 proper=False mixes t with space=False contains t->-t=True   n_S=2 n_A=0 n_F=2  KI+-sufficient=False
+  |G|= 48 proper=False mixes t with space=False contains t->-t=False  n_S=2 n_A=0 n_F=2  KI+-sufficient=False
+  |G|= 48 proper=True  mixes t with space=False contains t->-t=True   n_S=2 n_A=0 n_F=3  KI+-sufficient=False
+  |G|= 96 proper=False mixes t with space=False contains t->-t=True   n_S=2 n_A=0 n_F=2  KI+-sufficient=False
+  |G|=192 proper=True  mixes t with space=True  contains t->-t=True   n_S=1 n_A=0 n_F=2  KI+-sufficient=True
+  |G|=384 proper=False mixes t with space=True  contains t->-t=True   n_S=1 n_A=0 n_F=1  KI+-sufficient=True
+minimal KI+-sufficient order: 192; number of such groups: 1
+PASS [exact] O alone gives n_S = 2 (c_t, c_s free) -- reproduces C2 count
+PASS [exact] O alone gives n_F = 3 (E^2, B^2, E.B) -- reproduces C2 review count
+PASS [exact] every KI+-sufficient group mixes time with space
+PASS [exact] a proper (det = +1) KI+-sufficient group exists, so time reflection is not needed
+a minimal group: proper = True , contains time reversal = True
+orders of time-mixing elements in that minimal group: {2: 24, 4: 24, 3: 24, 6: 24, 8: 48}
+<O, 4-cycle t->x->y->z->t>: order 384, counts (Fraction(1, 1), Fraction(0, 1), Fraction(1, 1));  <O, 90deg (t,x) rotation>: order 192, counts (Fraction(1, 1), Fraction(0, 1), Fraction(2, 1))
+PASS [exact] <O, 90-degree (t,x) rotation> is KI+-sufficient
+TOTAL: PASS=7 FAIL=0

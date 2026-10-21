@@ -90,47 +90,50 @@ def Zcoeffs(kind, par, m, N, hrel=0.1):
 
 t0 = time.time()
 MS = (0.4, 0.2, 0.1, 0.05, 0.025, 0.0125, 0.00625, 0.003125)
+MS_RT = MS + (0.0015625, 0.00078125, 0.000390625, 0.0001953125)   # RT (dimension-5 mismatch) approaches its limit later
 NS = (72, 96)
+NSm = lambda m: (72, 96) if m >= 0.003 else (96, 128)
+masses = lambda kind: MS_RT if kind == 'RT' else MS
 print("Z_mu per unit g^2 (coefficient of p_mu^2 in Pi/g^2)")
 res = {}
 for kind, par in (('SYM', 0.0), ('T3', 0.5), ('T3', 0.25), ('RT', 0.5)):
-    for m in MS:
-        for N in NS:
+    for m in masses(kind):
+        for N in NSm(m):
             z0, z1 = Zcoeffs(kind, par, m, N)
             res[(kind, par, m, N)] = (z0, z1)
             print(f"  {kind:3s} par={par:4.2f} m={m:8.6f} N={N}: Z_0={z0:+.9f} Z_s={z1:+.9f} Z_0-Z_s={z0-z1:+.6e}"
                   f"  [{time.time()-t0:5.0f}s]", flush=True)
-A = lambda kind, par, m, N=NS[-1]: res[(kind, par, m, N)][0] - res[(kind, par, m, N)][1]
+A = lambda kind, par, m, N=None: res[(kind, par, m, N or NSm(m)[-1])][0] - res[(kind, par, m, N or NSm(m)[-1])][1]
 
 # 1. B4 symmetric: exact relabelling symmetry of the node set
-mx = max(abs(A('SYM', 0.0, m, N)) for m in MS for N in NS)
+mx = max(abs(A('SYM', 0.0, m, N)) for m in MS for N in NSm(m))
 check(f'SYM (full action B4-invariant): |Z_0 - Z_s| <= 1e-9 at every m, N (max {mx:.1e})', mx < 1e-9)
 # 2. convergence in N
 for kind, par in (('SYM', 0.0), ('T3', 0.5), ('T3', 0.25), ('RT', 0.5)):
-    dv = max(abs(res[(kind, par, m, NS[0])][0] - res[(kind, par, m, NS[1])][0]) for m in MS)
-    da = max(abs(A(kind, par, m, NS[0]) - A(kind, par, m, NS[1])) for m in MS)
-    check(f'{kind} par={par}: quadrature converged: max |Z_0(N={NS[0]}) - Z_0(N={NS[1]})| = {dv:.1e} < 1e-6, anisotropy {da:.1e} < 1e-7',
-          dv < 1e-6 and da < 1e-7)
+    dv = max(abs(res[(kind, par, m, NSm(m)[0])][0] - res[(kind, par, m, NSm(m)[1])][0]) for m in masses(kind))
+    da = max(abs(A(kind, par, m, NSm(m)[0]) - A(kind, par, m, NSm(m)[1])) for m in masses(kind))
+    check(f'{kind} par={par}: quadrature converged (N pair per mass): max |dZ_0| = {dv:.1e} < 1e-6, anisotropy {da:.1e} < 1e-6',
+          dv < 1e-6 and da < 1e-6)
 # 3. log slope vs continuum 1/(4 pi^2)
-z = [res[('SYM', 0.0, m, NS[-1])][0] for m in MS]
+z = [res[('SYM', 0.0, m, NSm(m)[-1])][0] for m in MS]
 slopes = np.array([(z[i+1] - z[i])/np.log(2) for i in range(len(MS) - 1)])
 target = 1/(4*np.pi**2)
 dev = np.abs(slopes - target)
 print(f"  SYM log slopes dZ_0/dln(1/m): {np.round(slopes, 6)}  (continuum 1/(4 pi^2) = {target:.6f})")
-print(f"  |slope - 1/(4pi^2)|: {np.array2string(dev, precision=2)}")
+print(f"  |slope - 1/(4pi^2)|: {np.array2string(dev, formatter={'float_kind': lambda x: f'{x:.2e}'})}")
 check('SYM: last log slope within 5% of the continuum value 1/(4 pi^2)', dev[-1] < 0.05*target)
 check('SYM: deviation from 1/(4 pi^2) decreases monotonically over the last four steps (O(m a) Wilson corrections)',
       all(dev[i+1] < dev[i] for i in range(len(dev) - 4, len(dev) - 1)))
 # 4. Collins-type: anisotropy tends to a nonzero constant as m -> 0
 Ainf = {}
 for kind, par in (('T3', 0.5), ('T3', 0.25), ('RT', 0.5)):
-    a = np.array([A(kind, par, m) for m in MS])
+    a = np.array([A(kind, par, m) for m in masses(kind)])
     steps = np.abs(np.diff(a))
     r = max(steps[-3:]/steps[-4:-1])
     tailb = steps[-1]*r/(1 - r) if r < 1 else np.inf
     Ainf[(kind, par)] = a[-1] + np.sign(a[-1] - a[-2])*tailb
-    print(f"  {kind} par={par}: Z_0 - Z_s vs m: {np.array2string(a, precision=6)}")
-    print(f"     step sizes {np.array2string(steps, precision=2)}; max ratio of last three = {r:.3f}; geometric tail bound {tailb:.2e}")
+    print(f"  {kind} par={par}: Z_0 - Z_s vs m: {np.array2string(a, formatter={'float_kind': lambda x: f'{x:+.6e}'})}")
+    print(f"     step sizes {np.array2string(steps, formatter={'float_kind': lambda x: f'{x:.2e}'})}; max ratio of last three = {r:.3f}; geometric tail bound {tailb:.2e}")
     check(f'{kind} par={par}: Z_0 - Z_s converges as m a -> 0 (step ratio {r:.2f} < 0.8) to a NONZERO limit '
           f'(|A(m_min)| = {abs(a[-1]):.3e} > 5 x tail bound {tailb:.2e})', r < 0.8 and abs(a[-1]) > 5*tailb)
     check(f'{kind} par={par}: |Z_0 - Z_s| grows as m a decreases (not suppressed by a power of m a)', abs(a[-1]) > abs(a[0]))

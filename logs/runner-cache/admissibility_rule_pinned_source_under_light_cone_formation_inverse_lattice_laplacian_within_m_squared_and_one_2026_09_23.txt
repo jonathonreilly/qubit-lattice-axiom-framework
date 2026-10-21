@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_pinned_source_under_light_cone_formation_inverse_lattice_laplacian_within_m_squared_and_one_2026_09_23.py
 runner_sha256: 50a41f8fffa87062f5c78ae3629793430de2d73ec4609792402bda0d89a48511
-input_fingerprint_sha256: 87ec29f4c519722ff97d61b40098e7a743f7e0c87fb0af9f915716d0d08eb6b7
+input_fingerprint_sha256: 1cb94e02ce5a4e995042f24d910218c64632aaae56c97cade7563b186c5fbf88
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 2.91
+elapsed_sec: 3.49
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

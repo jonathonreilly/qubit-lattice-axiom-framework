@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/cpt_particle_antiparticle_mass_equality_check.py
-runner_sha256: b13365692a13f80ee9eb7125d951efa4e8cc6842622312cca106fcd063c7b6a1
-timeout_sec: 120
+runner_sha256: 5a3b1aa4bb01ffbf567083e9640114c1e0db6e11186a348388eee0a3f11ff33f
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================
-CPT PARTICLE/ANTIPARTICLE MASS EQUALITY CHECK
+SUPPLIED ANTIUNITARY BLOCK ENERGY EQUALITY CHECK
 ========================================================================
 
 Setup:
@@ -29,7 +29,7 @@ TEST 2: [CPT, H] = 0  (i.e. (CPT) H (CPT)^{-1} = H)
 
 ------------------------------------------------------------------------
 TEST 3 (M1, M2): particle and antiparticle blocks have
-                 identical spectrum (mass equality)
+                 identical spectrum (physical rest-mass interpretation not checked)
 ------------------------------------------------------------------------
   particle block eigenvalues:     [-0.55168895  1.42183679]
   antiparticle block eigenvalues: [-0.55168895  1.42183679]
@@ -37,7 +37,7 @@ TEST 3 (M1, M2): particle and antiparticle blocks have
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 4 (M3): universality — 5 random CPT-symmetric H all show
+TEST 4 (M3): finite diagnostics — 5 random CPT-symmetric H all show
             identical particle/antiparticle spectra
 ------------------------------------------------------------------------
   trial 0: particle eigs = [-1.8807  1.6506], antiparticle eigs = [-1.8807  1.6506], |diff| = 0.00e+00
@@ -51,11 +51,11 @@ TEST 4 (M3): universality — 5 random CPT-symmetric H all show
 
 ------------------------------------------------------------------------
 TEST 5 (negative control): a non-CPT-symmetric H DOES break
-                            particle/antiparticle mass equality
+                            block spectrum equality
 ------------------------------------------------------------------------
   ||CPT H_bad CPT^{-1} - H_bad|| = 2.603e+00  (CPT broken)
-  ||eigs_p - eigs_a||              = 1.288e+00  (mass equality broken)
-  → without CPT, particle/antiparticle spectra differ.
+  ||eigs_p - eigs_a||              = 1.288e+00  (block spectra differ)
+  → this CPT-breaking control has different block spectra.
   STATUS: PASS
 
 ========================================================================
@@ -64,16 +64,16 @@ SUMMARY
   Test 1 (Hermiticity sanity):                PASS
   Test 2 ([CPT, H] = 0):                      PASS
   Test 3 (M1, M2: identical spectra):         PASS
-  Test 4 (M3: universality, 5 trials):        PASS
+  Test 4 (M3: finite diagnostics, 5 trials):        PASS
   Test 5 (negative control: no-CPT breaks):   PASS
 
   OVERALL: PASS
 
 Note: this runner verifies the energy-equality consequence of CPT
-invariance on a 4-mode toy fermionic block-Hamiltonian. The proof
+invariance on a 4-dimensional toy block-Hamiltonian. The proof
 in the companion theorem note is dimension-independent: it uses
-only [CPT, H] = 0 from the declared cpt_exact_note dependency plus
-the convention that particle/antiparticle sectors are exchanged by
+only a supplied commuting antiunitary symmetry plus
+the supplied condition that the two sectors are exchanged by
 the CPT operator. The toy here is a structural witness; concrete
 species-level bookkeeping is left outside this runner's scope.
 

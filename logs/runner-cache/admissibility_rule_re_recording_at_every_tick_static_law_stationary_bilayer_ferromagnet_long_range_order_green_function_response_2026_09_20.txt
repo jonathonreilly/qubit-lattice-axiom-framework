@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_re_recording_at_every_tick_static_law_stationary_bilayer_ferromagnet_long_range_order_green_function_response_2026_09_20.py
-runner_sha256: a417c0e5cb0717e04fbc0824e3e3ce1702735e3111b2cf4eb40e8e4979a9df94
-input_fingerprint_sha256: bf01d2303c114298b80321c0a580b45a1f5708b72f8d75a0d97f8a94105cdece
+runner_sha256: 40f24f4cf691aeb4bb6475fbad46b1807b02aea32c69137af7ff98dff783e51c
+input_fingerprint_sha256: 0832beb1edf4146b05d31c48473509c49f42ce7aee7718545db0d8a83a04eaba
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 2.13
+elapsed_sec: 2.36
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -40,7 +40,7 @@ per_mode: executed — the infrared bound for every nonzero mode of both bands o
 per_block: executed — the doubled graph onto the bilayer for L = 4 and 6, edge for edge; every reflection's crossing edges; the cover of all edges
 lattice_wide: T1-T4 are proved for every even torus under the supplied clause; the ordering coupling is below 5914/10000 given block 22's bracket; the nonlinear law's memory and its potential around a source are executed in the controls and not claimed; the clause itself contradicts the axioms memo and is not adopted
 PASS: G1 the five N5 resolution lines are printed
-scope: re-recording at every tick (a clause the axioms memo excludes) — the static law is stationary for the axioms' rule; the seven-site stencil is one layer of a bilayer pair ferromagnet; the infrared bound and the ordering coupling; the Green-function response; exact
+scope: re-recording at every tick (a clause the axioms memo excludes) — the static law is stationary for the axioms' rule; the seven-site stencil is one layer of a bilayer pair ferromagnet; the infrared bound and the ordering coupling; the supplied gain-one recurrence Green-function response; not the nonlinear transverse response
 TOTAL: PASS=24 FAIL=0
 
 ----- stderr -----

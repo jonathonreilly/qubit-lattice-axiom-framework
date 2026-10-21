@@ -1,5 +1,6 @@
 # Dark-energy EOS on a supplied stationary vacuum sector
 
+**Claim type:** bounded_theorem (supplied conditional scope; no audit status change)
 **Date:** 2026-04-18; source scope corrected 2026-10-21
 **Status:** conditional source corollary; audit status is owned by the independent audit pipeline.
 **Script:** `scripts/frontier_dark_energy_eos_retained_corollary.py`

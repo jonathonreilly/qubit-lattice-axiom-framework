@@ -1,7 +1,7 @@
 # Closure C-L1a: conditional finite-coupling conversion through three loops
 
 **Date:** 2026-05-10; source correction 2026-10-21.
-**Claim type:** conditional algebraic theorem, with an open physical matching bridge.
+**Claim type:** bounded_theorem — conditional algebraic theorem, with an open physical matching bridge.
 **Status authority:** independent audit lane only. This source correction does not
 promote a claim or add a framework premise.
 **Primary runner:** [cl3_closure_c_l1a_2026_05_10_cL1a.py](../scripts/cl3_closure_c_l1a_2026_05_10_cL1a.py).

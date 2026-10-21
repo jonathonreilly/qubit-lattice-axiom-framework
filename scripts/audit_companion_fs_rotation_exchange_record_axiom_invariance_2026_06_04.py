@@ -11,6 +11,9 @@ No broad topology, spin-statistics route or audit-status verdict is supplied.
 
 from __future__ import annotations
 
+# Bind actual documentary reads/existence checks to cache identity.
+AUDIT_INPUT_PATHS = ['docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md', 'docs/MINIMAL_AXIOMS_2026-05-20.md', 'docs/MINIMAL_AXIOMS_2026-06-04.md']
+
 import sys
 from pathlib import Path
 

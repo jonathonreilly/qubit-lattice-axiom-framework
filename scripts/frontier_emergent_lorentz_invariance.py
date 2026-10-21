@@ -7,6 +7,9 @@ Planck-scale numbers are conditional angular-average estimates.
 
 from __future__ import annotations
 
+# Bind actual documentary reads/existence checks to cache identity.
+AUDIT_INPUT_PATHS = ['docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md', 'docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md']
+
 import sys
 import numpy as np
 try:

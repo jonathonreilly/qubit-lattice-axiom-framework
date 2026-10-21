@@ -1,7 +1,7 @@
 # On-site rotation sign does not select cross-site CAR
 
 **Date:** 2026-05-28; source correction 2026-10-21.
-**Claim type:** narrow finite algebra insufficiency result.
+**Claim type:** no_go — narrow finite algebra insufficiency result.
 **Status authority:** independent audit lane only. This source correction sets no audit status and admits no new framework premise.
 **Runner:** [finite matrix companion](../scripts/audit_companion_fs_rotation_exchange_discrete_insufficiency_2026_05_28.py).
 

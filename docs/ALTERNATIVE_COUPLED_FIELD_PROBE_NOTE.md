@@ -1,5 +1,6 @@
 # Alternative Coupled-Field Probe
 
+**Claim type:** bounded_theorem (supplied conditional scope; no audit status change)
 **Date:** 2026-04-05  
 **Status:** bounded positive for an edge-carried minimal coupled-field architecture on the exact 3D lattice
 

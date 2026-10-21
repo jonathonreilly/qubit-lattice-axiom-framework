@@ -1,7 +1,7 @@
 # Closure T1 — Supplied Wilson integral and conditional coupling-map algebra
 
 **Date:** 2026-05-10
-**Claim type:** conditional formal identities and finite numerical diagnostic (SU(3), N_f=0)
+**Claim type:** bounded_theorem — conditional formal identities and finite numerical diagnostic (SU(3), N_f=0)
 **Sub-gate:** Lane 1 (alpha_s) --- L1 channel-weight admission sub-piece (a),
 HK <-> MSbar 3-loop scheme conversion at SU(3) (children of PR #1059).
 **Status authority:** independent audit lane only; effective status is

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_light_cone_formation_keeps_memory_in_3plus1_stationary_law_one_layer_of_a_reflection_positive_bilayer_2026_09_23.py
 runner_sha256: a1e5aff51dca03acdb32dc3df8eef0a3ca0f8c3746ad7ad5a5a413e6071199cc
-input_fingerprint_sha256: f5730771e7fe43296b845cccc97604f10337e957bee9f61c3e9baeb497542d44
+input_fingerprint_sha256: 1b4bcd141c541e238c1002b25d4908c46d1a34ac640201c256c4cdf2abaa5e06
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.75
+elapsed_sec: 0.89
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

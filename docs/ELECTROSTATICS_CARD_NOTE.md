@@ -1,5 +1,6 @@
 # Electrostatics Card Note
 
+**Claim type:** bounded_theorem (supplied conditional scope; no audit status change)
 **Date:** 2026-04-05  
 **Status:** conditional scalar electrostatic-like diagnostic on the ordered 3D family; independent audit required
 

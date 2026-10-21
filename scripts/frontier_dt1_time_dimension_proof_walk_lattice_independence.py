@@ -7,6 +7,9 @@ Metadata checks concern source identity/presence only.
 
 from __future__ import annotations
 
+# Bind actual documentary reads/existence checks to cache identity.
+AUDIT_INPUT_PATHS = ['docs/DT1_TIME_DIMENSION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-08.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/ANOMALY_FORCES_TIME_THEOREM.md', 'docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md', 'docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md', 'docs/LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md', 'docs/ONE_TIME_DIMENSION_DT1_REDUCES_TO_EMERGENT_DYNAMICS_GATE_OPEN_GATE_NOTE_2026-06-17.md', 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md']
+
 from fractions import Fraction
 from pathlib import Path
 import re

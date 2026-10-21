@@ -6,6 +6,9 @@ prove the anomaly, Clifford, reconstruction or clock claims, and it does not
 check or set audit status. The historical May17 prose layout is no longer the
 current argument. Mathematical checks live in the named primary runner.
 """
+
+# Bind actual documentary reads/existence checks to cache identity.
+AUDIT_INPUT_PATHS = ['docs/DT1_TIME_DIMENSION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-08.md']
 from pathlib import Path
 import sys
 ROOT=Path(__file__).resolve().parents[1]

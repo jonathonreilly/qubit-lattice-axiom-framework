@@ -13,7 +13,7 @@ runner: scripts/scale_ladder_gravity_burn_and_turn_source_tensor_2026_10_21.py
 Claim type: bounded_theorem.
 Primary runner: `scripts/scale_ladder_gravity_burn_and_turn_source_tensor_2026_10_21.py`.
 
-The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose none of the walks, coins, front rules or tensor assignments below. The terms burn and relay are as defined in the [candidate-law register](CANDIDATE_LAWS.md), which has zero premise weight. This note reports what follows from explicitly supplied choices.
+The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose none of the walks, coins, front rules or tensor assignments below. Here a burn is the record a front forms at each site it steps onto, and a relay is the chain of such burns along one front. The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. This note reports what follows from explicitly supplied choices.
 
 ## Supplied model
 

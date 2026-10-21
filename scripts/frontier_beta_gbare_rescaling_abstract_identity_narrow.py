@@ -33,6 +33,8 @@ theorem here drops the upstream graph-first SU(N_c) and Wilson-action
 dependencies entirely by stating only the abstract algebraic identity.
 """
 
+AUDIT_INPUT_PATHS = ["docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md"]
+
 from fractions import Fraction
 from pathlib import Path
 import sys

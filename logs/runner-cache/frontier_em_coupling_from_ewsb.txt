@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_em_coupling_from_ewsb.py
-runner_sha256: c8f03f98101b56cdf31761b287dd1fbe583cfd329667bf79e49dc2b42ef12ee2
-timeout_sec: 120
+runner_sha256: bd456411cd31e6064fc292a0a1dcf7efc72ba12eb94ffdc1138fa2050ce2a653
+input_fingerprint_sha256: 8f4554f35f1149c2985acdf693e1f98dffd3e0b7b532ae39606cdb057425f7ab
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 

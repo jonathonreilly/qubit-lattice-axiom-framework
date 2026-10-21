@@ -455,6 +455,26 @@
       "source_sha256": "05a38516a9454a46c8c4fa5624720510af624a29fbb6c4676f49befa8ae94b34",
       "timeout_sec": 300,
       "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_parity_mixing_selection_obstruction.py": {
+      "source_sha256": "ff894f0fa270ad57a67240c340157334a6a1c71ceff42b9ec9b5bed5dba396e2",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_cubic_coxeter_regge_deficit_vanishing_narrow.py": {
+      "source_sha256": "d52dd290e31a034499a8c0200eef795b10e244c4856aea180febfc62d6da9101",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_em_coupling_from_ewsb.py": {
+      "source_sha256": "bd456411cd31e6064fc292a0a1dcf7efc72ba12eb94ffdc1138fa2050ce2a653",
+      "timeout_sec": 300,
+      "reason": "Bounded source repair execution cap; source change invalidates declaration; no scientific certification."
+    },
+    "scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py": {
+      "source_sha256": "8f91506b742194f4867c6af014bbd9537404c249261271f02ec58cddd198c94b",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
     }
   }
 }

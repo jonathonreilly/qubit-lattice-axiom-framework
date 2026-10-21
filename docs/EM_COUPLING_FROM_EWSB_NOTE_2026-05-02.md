@@ -1,5 +1,7 @@
 # Electromagnetic Coupling e = g sin(θ_W) = g' cos(θ_W) from EWSB Pattern
 
+**Type:** bounded_theorem
+
 **Date:** 2026-05-02
 **Status:** exact algebraic identity / support theorem on cycle 18 (EWSB
 pattern Q = T_3 + Y/2). NOT proposed_retained.

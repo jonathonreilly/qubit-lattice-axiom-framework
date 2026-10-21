@@ -1,5 +1,23 @@
 # Color `MR_color` Carrier/Routing Split
 
+## Dependency correction (2026-10-21)
+
+The corrected record-invariance bridge checks two supplied actions.
+Sym²(C²) is a three-dimensional carrier whose inherited diagonal SU(2)
+action is spin one; an independent fundamental SU(3) action is an added
+choice. Singlet-projector invariance does not uniquely recover SU(3): scalar
+U(3) phases fix both meson and baryon projectors. Fixing the alternating
+tensor itself inside U(3) would additionally impose determinant one.
+Any gauge-from-records identification or positive commutant-converse claim
+below is withdrawn unless that extra reconstruction hypothesis is supplied.
+The conditional carrier/routing bookkeeping remains useful; physical matter,
+records, link assignment and group reconstruction remain open. Other source
+chains listed below are not independently certified by this correction.
+
+This correction governs the affected assertions in the preserved discussion
+below; it is a source correction, not an audit-status change. Original recovery:
+`f24d17d97d372df977476e4a69674577f31af575:docs/COLOR_MR_CARRIER_ROUTING_SPLIT_2026-06-05.md`.
+
 **Date:** 2026-06-05
 **Claim type:** meta
 **Trace class:** upstream support map.

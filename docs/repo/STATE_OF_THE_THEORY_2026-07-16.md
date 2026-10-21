@@ -1,5 +1,23 @@
 # State of the Theory — 2026-07-16
 
+## Dependency correction (2026-10-21)
+
+The corrected record-invariance bridge checks two supplied actions.
+Sym²(C²) is a three-dimensional carrier whose inherited diagonal SU(2)
+action is spin one; an independent fundamental SU(3) action is an added
+choice. Singlet-projector invariance does not uniquely recover SU(3): scalar
+U(3) phases fix both meson and baryon projectors. Fixing the alternating
+tensor itself inside U(3) would additionally impose determinant one.
+Any gauge-from-records identification or positive commutant-converse claim
+below is withdrawn unless that extra reconstruction hypothesis is supplied.
+The conditional carrier/routing bookkeeping remains useful; physical matter,
+records, link assignment and group reconstruction remain open. Other source
+chains listed below are not independently certified by this correction.
+
+This correction governs the affected assertions in the preserved discussion
+below; it is a source correction, not an audit-status change. Original recovery:
+`f24d17d97d372df977476e4a69674577f31af575:docs/repo/STATE_OF_THE_THEORY_2026-07-16.md`.
+
 **Class:** F orientation memo (no premise or interpretive weight), registered in
 [`docs/audit/data/doc_authority_registry.json`](../audit/data/doc_authority_registry.json).
 This memo is citable for orientation and scope discipline only.
@@ -117,8 +135,8 @@ one who reads only the retained list will underestimate it.
   and `N_f` still imported:
   [`UNIVERSAL_GR_SAKHAROV_GNEWTON_INDUCED_RESIDUAL_IS_METRIC_DOF_POSIT_NARROW_THEOREM_NOTE_2026-06-17.md`](../UNIVERSAL_GR_SAKHAROV_GNEWTON_INDUCED_RESIDUAL_IS_METRIC_DOF_POSIT_NARROW_THEOREM_NOTE_2026-06-17.md).
   A *reduction with named imports*, not "Einstein derived."
-- **Color SU(3), partially pinned.** On a supplied `C^8` carrier, record
-  invariance pins the symmetric-base algebra; the matter
+- **Color SU(3), supplied action.** On a supplied `C^8` carrier, singlet
+  projector invariance is checked but does not reconstruct a unique group; the matter
   realization/subsystem and the link-index assignment remain open:
   [`COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md`](../COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md).
 - **The CKM atlas.** A conditional mechanism chain through the taste

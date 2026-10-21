@@ -33,6 +33,9 @@ PDG values appear only as falsifiability anchors via display labels in
 the sanity-check section, not as inputs to the matching identification.
 """
 
+# Cache identity includes actual note reads and existence checks.
+AUDIT_INPUT_PATHS = ['docs/LATTICE_PHYSICAL_MATCHING_THEOREM_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_match.md']
+
 from pathlib import Path
 import sys
 import math

@@ -1,5 +1,27 @@
 # C-iso Numerical Convergence Bounded Support Note
 
+## Dependency correction (2026-10-21)
+
+The corrected EXACT_TIER_EWITNESS note does not establish the imported
+Hamilton-limit value 0.4410 ± 0.0006, the quoted 1500-sweep/three-volume
+provenance, T=16 convergence, or an SU(3) multiplaquette error from its SU(2)
+proxy. Its preserved fast JSON instead reports 400 sweeps and
+0.4434036474783343 ± 0.00042693896349384414 at finite 4³×16, ξ=4.
+Consequently all uses below of the former value, its error budget, and its
+claimed convergence are supplied historical scenario inputs, not validated
+Hamilton-limit results. Any epsilon-witness closure, projected error budget
+or physical exclusion that relies on them is withdrawn pending provenance
+and a justified multiplaquette/limit comparison. Single-plaquette formulas,
+conditional fit arithmetic and the derivative d(P^(1/4))/dP remain separate
+questions; this correction does not certify their full inherited derivations.
+The numerical-convergence runner's successful arithmetic cannot supply the
+missing ensemble provenance or justify applying a one-plaquette correction
+to a multiplaquette Hamilton observable.
+
+This correction governs the affected assertions in the preserved discussion
+below; it is a source correction, not an audit-status change. Original recovery:
+`f24d17d97d372df977476e4a69674577f31af575:docs/C_ISO_NUMERICAL_CONVERGENCE_BOUNDED_SUPPORT_NOTE_2026-05-10_numconv.md`.
+
 **Date:** 2026-05-10
 **Claim type:** bounded_theorem
 **Scope:** bounded numerical support for the Convention C-iso engineering

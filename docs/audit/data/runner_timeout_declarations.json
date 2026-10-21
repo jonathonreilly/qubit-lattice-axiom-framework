@@ -445,6 +445,56 @@
       "source_sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
       "timeout_sec": 300,
       "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
+    },
+    "scripts/cl3_a3_r4_hostile_review_2026_05_08_r4hr.py": {
+      "source_sha256": "de31e7b20024317a5ab6c1119251521776c3f60f57f537636477573b4ece556b",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/frontier_c3_symmetry_preserved_interpretation.py": {
+      "source_sha256": "e5e02b4f19e1f1109095923c85957e76255cccee3ef8a0f2da02da9d2ac090dc",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/frontier_color_mr_carrier_routing_split_2026_06_05.py": {
+      "source_sha256": "a3f2301200d9b7ff5dcb368944d887d31f97a4c77ec86b11205fdb2c10f2032e",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/frontier_color_su3_matter_realization_residual_map_2026_06_05.py": {
+      "source_sha256": "c605a1a17f79c38b0df8852568372acc5c08f9ff079aee9dee2903462b91c348",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/cl3_c_iso_numerical_convergence_2026_05_10_numconv.py": {
+      "source_sha256": "097610408a356dde37b484c0b9b6125df46dbc2d4d723edc34f6f295ca8bc106",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/cl3_c_iso_su3_nlo_2026_05_08_su3nlo.py": {
+      "source_sha256": "4226676cecb16de88a3a405816f47b7f7c8ad381078a6d412431fb9cb41cb8d0",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/cl3_c_iso_su3_nnlo_2026_05_10_su3nnlo.py": {
+      "source_sha256": "f50c4977585441bb078145dcdf5a90898e6afe6610d83d9f20f808753086ed70",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/cl3_higgs_mass_wilson_loop_spectroscopy_2026_05_10_higgsH3.py": {
+      "source_sha256": "cdfda9920de89dbac005410477f340b1f0a05fb308e248d8e390d712a50b8112",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/cl3_lattice_physical_matching_2026_05_10_match.py": {
+      "source_sha256": "d2acad82b75174ee9f3206044745cd18b8722cb429022bcdd1596164f58a207f",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py": {
+      "source_sha256": "a4724ad103bf0004e9bf23579c6d19cc6e6a3cf8791d88d7434a8e908ef02d7e",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
     }
   }
 }

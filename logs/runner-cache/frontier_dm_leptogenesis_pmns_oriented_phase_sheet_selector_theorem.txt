@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_oriented_phase_sheet_selector_theorem.py
-runner_sha256: e4299fe226d5a51a1fca51e5ac7137df1751282b65a6c6cff3343ff01f8d683f
-timeout_sec: 120
+runner_sha256: 74cd139f10418f921ab1fb6924a2c17dc28478abd14b6bad24d5629173ee61f5
+input_fingerprint_sha256: 72aff59a34405cbd0cfb3519e63f265f7bcfe7213adb56358439f089b8c6ca6b
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 1.39
+elapsed_sec: 0.81
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -18,8 +19,8 @@ Question:
 ========================================================================================
 PART 1: THE ACTIVE WITNESS PAIR DIFFERS ONLY BY ORIENTED PHASE
 ========================================================================================
-  [PASS] The constructive witness and its CP-flipped partner share the same active magnitudes x and y  (x=[1.17416156 0.46254435 0.05329409], y=[0.75874142 0.0269043  0.13435428])
-  [PASS] They sit on the same fixed native seed surface with the same off-seed xi and eta data  (xi=[ 0.61082823 -0.10078899 -0.51003924], eta=[ 0.45207475 -0.27976237 -0.17231238])
+  [PASS] The constructive witness and its CP-flipped partner share the same active magnitudes x and y  (x=[1.174162 0.462544 0.053294], y=[0.758741 0.026904 0.134354])
+  [PASS] They sit on the same fixed native seed surface with the same off-seed xi and eta data  (xi=[ 0.610828 -0.100789 -0.510039], eta=[ 0.452075 -0.279762 -0.172312])
   [PASS] So the only active-family difference is the sign of the oriented phase delta  ((delta+,delta-)=(1.882595756164,-1.882595756164))
 
 ========================================================================================
@@ -33,7 +34,7 @@ PART 2: THE ODD PROJECTED-SOURCE BIT IS EXACTLY SIGN OF SIN(DELTA)
 PART 3: ALL CURRENT EVEN ACTIVE DATA AGREE ON THE WITNESS PAIR
 ========================================================================================
   [PASS] The current exact even active data give the same E1 and E2 on the witness pair  ((E1,E2)=(0.296562850784,1.986407435174))
-  [PASS] They also give the same exact flavored transport values  (eta=[0.92932093 1.05222031 0.80149003])
+  [PASS] They also give the same exact flavored transport values  (eta=[0.929321 1.05222  0.80149 ])
   [PASS] And the current exact even selector objectives still agree on the pair  ((ΔI,ΔS)=(0.000e+00,0.000e+00))
   [PASS] So the residual upstream selector object is only the oriented-phase bit sign(sin(delta))  (all current exact even active data are already quotiented out)
 

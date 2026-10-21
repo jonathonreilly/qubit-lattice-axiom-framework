@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_minimal_a13_sheet_selector_theorem.py
-runner_sha256: 7fae44e5a404f59d2c25d801fdf21efe6f1f9d42cedd024464010859fb6b7502
-timeout_sec: 120
+runner_sha256: 0ba25bce88ee30b9d83aa53170addf4bfbf91da5a255abca31352a4e1b1d1437
+input_fingerprint_sha256: 5e81d179b301602c1a20abed6057645ad9fbbcd797be7a352909583e60591f8f
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 1.56
+elapsed_sec: 0.82
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -26,7 +27,7 @@ PART 1: A13 IS EXACTLY THE ODD PROJECTED-SOURCE SLOT
 PART 2: THE CURRENT EXACT EVEN DATA AGREE ON THE WITNESS PAIR
 ========================================================================================
   [PASS] The constructive witness and its CP-flipped partner have the same even projected-source channels E1 and E2  ((E1,E2)=(0.296562850784,1.986407435174))
-  [PASS] They also have the same exact flavored transport outputs  (eta=[0.92932093 1.05222031 0.80149003])
+  [PASS] They also have the same exact flavored transport outputs  (eta=[0.929321 1.05222  0.80149 ])
   [PASS] And the current exact even selector objectives still agree on that pair  ((ΔI,ΔS)=(0.000e+00,0.000e+00))
   [PASS] But the intrinsic CP pair flips sign because only the odd slot changes sign  ((cp+,cp-) = (-0.029685396610,0.198835735450) / (0.029685396610,-0.198835735450))
 

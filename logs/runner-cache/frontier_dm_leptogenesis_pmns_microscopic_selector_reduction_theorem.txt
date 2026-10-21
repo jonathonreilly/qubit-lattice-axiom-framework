@@ -1,10 +1,11 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_microscopic_selector_reduction_theorem.py
-runner_sha256: 1b75baf840718f74a4c2769d346f72ecee2300b1c456037893e6d6955240ccbc
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 1.53
-status: ok
+runner_sha256: bf1db87a88df16614655bb5915f06a8691c86bea993937865e15e3740e3e2718
+input_fingerprint_sha256: ca442602f9a69bfa5dcb17d3f0eeb327cbd32766a18d551a7d36a5b377ae14ef
+timeout_sec: 300
+exit_code: 1
+elapsed_sec: 0.82
+status: nonzero_exit
 ----- stdout -----
 ========================================================================================
 DM LEPTOGENESIS PMNS MICROSCOPIC SELECTOR REDUCTION THEOREM
@@ -55,7 +56,7 @@ PART 5: H-ONLY DATA CANNOT SUPPLY THAT SELECTOR
 ========================================================================================
 PART 6: THE NOTES RECORD THE SAME LAST-MILE OBJECT
 ========================================================================================
-  [PASS (B)] The charged-source reduction note records dW_e^H as the exact Schur pushforward and remaining transport-facing target
+  [FAIL (B)] The charged-source reduction note records dW_e^H as the exact Schur pushforward and remaining transport-facing target
   [PASS (B)] The selector-bank blindness note records the remaining PMNS problem as a D_- / dW_e^H sign-law problem
   [PASS (B)] The Z3 full-closure boundary note records the remaining source object as the right-sensitive 2-real doublet-block law
   [PASS (B)] The new note records the unified last-mile reduction to a right-sensitive microscopic selector on dW_e^H / the Z3 doublet block
@@ -74,7 +75,7 @@ RESULT
       selector law on dW_e^H = Schur_Ee(D_-), equivalently the intrinsic
       Z3 doublet-block point-selection law
 
-PASS=21 FAIL=0
+PASS=20 FAIL=1
 
 ----- stderr -----
 

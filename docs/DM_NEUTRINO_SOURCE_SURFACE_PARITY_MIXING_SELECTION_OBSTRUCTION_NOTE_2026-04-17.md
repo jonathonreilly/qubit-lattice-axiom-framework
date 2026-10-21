@@ -9,9 +9,10 @@
 
 ## Scope and discipline
 
-The info-geometric, Z_3-cubic, and Z_3-parity-split obstructions each
-produced an obstruction theorem for the right-sensitive 2-real selector
-law on `(delta, q_+)`. The Z_3 parity-split theorem in particular showed
+The corrected information-geometric note compares four specified local
+quadratic expansions; it does not prove a universal or global selector
+obstruction. The separate Z_3-cubic and Z_3-parity-split constructions retain
+their own conditional scopes. The Z_3 parity-split theorem in particular showed
 that `T_q` is purely Z_3-circulant and `T_delta` is purely Z_3-anti-
 circulant, and consequently that **any Z_3-parity-DEFINITE scalar
 functional constrains at most one of the active coordinates at fixed m**.
@@ -122,7 +123,7 @@ No new axiom.
 
 ## Theorem (Closed-Form Parity-Mixing F1-Minimizer)
 
-**Theorem (retained-atlas-native).** Under the Schur-forced baseline
+**Theorem (retained-atlas-native).** Under the supplied scalar baseline
 `D = m I_3`, on the chamber boundary `q_+ = sqrt(8/3) − delta`, the
 parity-mixing functional `F1(m, delta, q_+) := ||K_doublet||_F^2` has a
 unique m-independent chamber-boundary minimizer
@@ -181,11 +182,13 @@ F2 = det K_doublet (boundary max) -> boundary max at delta ≈ 0.9736
 F3 = ||K_doublet - (TrK/2)I||_F^2 -> degenerate in q_+ (K11 - K22 const)
 ```
 
-This is the **parity-mixing analog of the info-geometric Cubic Splitting
-Obstruction (Theorem B)**. The info-geometric Quadratic Unanimity Theorem
-from the info-geometric selection obstruction note states that all natural info-geometric functionals agree at
-`(sqrt(6)/3, sqrt(6)/3)` at leading quadratic order; the parity-mixing
-analog **FAILS**: there is no parity-mixing unanimity.
+For comparison, the corrected information-geometric note gives four
+specified local quadratic expansions with coefficients `(3,3,6,6)` and
+the same polynomial boundary minimizer `(sqrt(6)/3, sqrt(6)/3)`. Its cubic
+coefficient differences do not prove differing global minima. Here the
+displayed parity-mixing functions have distinct or degenerate stationary
+behavior; this comparison concerns those functions, not every possible
+information-geometric or parity-mixing selector.
 
 **Consequence.** Selecting F1 as the canonical parity-mixing functional
 requires an additional axiom-native selection rule (analog of `(G-Var)`).
@@ -198,7 +201,7 @@ requires a canonical-functional selection axiom to close the selector gate.
 
 **Classification of all parity-mixing candidates:**
 
-- **SUFFICIENT (passes all three info-geometric / cubic-variational / parity-split obstructions, produces a
+- **CANDIDATE (has explicit parity-mixing dependence and produces a
  unique m-independent closed-form minimizer):** F1 `= ||K_doublet||_F^2`
  alone, provided a min-selection axiom is available.
 - **INSUFFICIENT:** det K_doublet (saddle, unconstrained crit outside
@@ -253,10 +256,10 @@ discipline requirement** for Physics-Validation.
 
 ## Narrowed-gap statement
 
-**Before this note (after the info-geometric / Z_3-cubic / parity-split obstructions):**
+**Comparison with the specified local-expansion and Z_3 candidate calculations:**
 ```
 (G-Var) variational selection axiom unclosed; info-geom
-  functionals agree at sqrt(6)/3 at LEADING QUADRATIC only
+  four displayed quadratics agree at sqrt(6)/3; no global conclusion
 (G-Non-Var) non-variational obstructed along Z_3-parity-definite;
   mixed-invariant candidates disagree with sqrt(6)/3
 parity-mixing sub-class: untested
@@ -273,11 +276,13 @@ parity-mixing sub-class: untested
   - parity-mixing sub-route ALSO needs canonical-functional axiom
 ```
 
-All three classes (info-geom, cubic, parity-mixing) produce inequivalent
-candidate points; each requires an additional selection axiom. The selector gate
+The displayed cubic and parity-mixing examples can produce different
+candidate points from the common local-quadratic point. These comparisons
+do not exhaust information functionals; physical extremum selection remains
+an additional obligation. The selector gate
 gap is strictly narrower than before: the parity-mixing class is no
 longer open. It is now classified as "narrower-gap via functional-
-selection ambiguity", matching the sibling status of the information-geometric selection obstruction `(G-Var)`.
+selection ambiguity", consistent with the corrected information-geometric note's open physical-selection obligation.
 
 ## Atlas inputs used
 
@@ -292,10 +297,12 @@ All retained / theorem-grade on the integration branch:
 - [DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md](./DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md)
  — chamber `q_+ >= sqrt(8/3) - delta`
 - [DM_NEUTRINO_SOURCE_SURFACE_SCHUR_SCALAR_BASELINE_THEOREM_NOTE_2026-04-17.md](./DM_NEUTRINO_SOURCE_SURFACE_SCHUR_SCALAR_BASELINE_THEOREM_NOTE_2026-04-17.md)
- — Schur baseline D = m I_3 and commutant-class reference curvature Q
+ — conditional commutation/Schur argument; scalar baseline D = m I_3
+ is supplied here, not established as the physical live-sheet baseline
 - [DM_NEUTRINO_SOURCE_SURFACE_INFO_GEOMETRIC_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md](./DM_NEUTRINO_SOURCE_SURFACE_INFO_GEOMETRIC_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md)
- — Quadratic Unanimity, Cubic Splitting Obstruction, Structural
- Obstruction, narrowed-gap (G-Var)/(G-Non-Var) split
+ — four specified local quadratic expansions, differing cubic coefficients,
+ Gaussian positive-definiteness domain boundary, and open physical selection;
+ no global information-geometric obstruction is imported
 - [DM_NEUTRINO_SOURCE_SURFACE_CUBIC_VARIATIONAL_OBSTRUCTION_NOTE_2026-04-17.md](./DM_NEUTRINO_SOURCE_SURFACE_CUBIC_VARIATIONAL_OBSTRUCTION_NOTE_2026-04-17.md)
  — cubic obstruction theorem
 - [DM_NEUTRINO_SOURCE_SURFACE_Z3_PARITY_SPLIT_THEOREM_NOTE_2026-04-17.md](./DM_NEUTRINO_SOURCE_SURFACE_Z3_PARITY_SPLIT_THEOREM_NOTE_2026-04-17.md)
@@ -325,8 +332,8 @@ No new axioms are introduced.
 This note is **not** publication-grade on its own. It is a claim-surface
 advance on the selector gap structure: the parity-mixing class is no longer
 classified as "untested" — it is now classified as "narrower-gap via
-functional-selection ambiguity", matching the sibling status of the information-geometric selection obstruction
-`(G-Var)`.
+functional-selection ambiguity", consistent with the corrected information-geometric note's open
+physical-selection obligation.
 
 Appropriate placement:
 

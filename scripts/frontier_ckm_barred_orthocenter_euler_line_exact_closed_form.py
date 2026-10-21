@@ -1,32 +1,15 @@
 #!/usr/bin/env python3
-"""Barred unitarity triangle orthocenter and Euler line EXACT closed-form audit.
+"""Supplied-value conditional identities and finite diagnostics.
 
-Verifies the new identities in
-  docs/CKM_BARRED_ORTHOCENTER_EULER_LINE_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md
-
-  (O1) Orthocenter: H = (rho_bar, (20+alpha_s)/(24 sqrt(5)))                [EXACT linear]
-  (O2) H - V_3 = (0, alpha_s sqrt(5)/20)                                     [EXACT, pure y]
-  (O3) Centroid: G = ((28-alpha_s)/72, sqrt(5)(4-alpha_s)/72)                [EXACT linear]
-  (O4) Circumcenter: O = (1/2, -alpha_s sqrt(5)/40) (re-derived from N1,N2,N3) [EXACT]
-  (O5) Euler line: H = 3G - 2O                                                [EXACT identity]
-  (O6) Anti-relation: H - V_3 = -2 (O - M) where M = (1/2, 0)                [EXACT]
-  (O7) Slope: (H_y - V_3_y)/alpha_s = sqrt(5)/20 = retained N7 slope         [EXACT]
-  (O8) Selection rule: H, G degree-1 polys in alpha_s; O_x indep, O_y linear
-  (O9) Atlas-LO: H_0 = V_3_0 (orthocenter coincides with apex at right-angle)
-
-ALL INPUTS RETAINED on current main:
-- canonical alpha_s(v) (ALPHA_S_DERIVED_NOTE)
-- atlas alpha_0=pi/2, right-angle-vertex-orthocenter coincidence
-  (CKM_ATLAS_TRIANGLE_RIGHT_ANGLE)
-- N1 rho_bar, N2 eta_bar, N3 R_b_bar^2, N7 slope
-  (CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA)
-- N_pair=2, N_color=3, N_quark=6 (CKM_MAGNITUDES_STRUCTURAL_COUNTS)
-
-NO SUPPORT-tier or open inputs (Koide Q_l, bare-coupling ratios,
-dimension-color quadratic) used.
+The accompanying note states domains and open physical premises. Source labels,
+file presence and canonical audit-status checks are distinct from mathematical
+proof. Preserve actual failures; this runner does not grant retained status.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/ALPHA_S_DERIVED_NOTE.md', 'docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md', 'docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md', 'docs/CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md', 'docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md', 'docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md']
 
 import math
 import sys
@@ -77,11 +60,11 @@ N7_SLOPE = math.sqrt(5) / 20                                    # N7 leading slo
 
 
 def audit_inputs() -> None:
-    banner("Retained inputs on current main")
+    banner("Supplied model inputs")
 
     print(f"  alpha_s(v)                   = {ALPHA_S_V:.15f}")
-    print(f"  N_pair                       = {N_PAIR}  (retained)")
-    print(f"  N_color                      = {N_COLOR}  (retained)")
+    print(f"  N_pair                       = {N_PAIR}  (supplied)")
+    print(f"  N_color                      = {N_COLOR}  (supplied)")
     print(f"  N_quark = N_pair x N_color    = {N_QUARK}")
     print()
     print(f"  N1: rho_bar                  = {RHO_BAR:.15f}")
@@ -90,16 +73,16 @@ def audit_inputs() -> None:
     print(f"  N7 slope = sqrt(5)/20         = {N7_SLOPE:.15f}")
 
     check("alpha_s(v) > 0", ALPHA_S_V > 0)
-    check("N_pair = 2 (retained)", N_PAIR == 2)
-    check("N_color = 3 (retained)", N_COLOR == 3)
-    check("N_quark = 6 (retained)", N_QUARK == 6)
-    check("N1: rho_bar = (4-a)/24 (retained)",
+    check("N_pair = 2 (supplied)", N_PAIR == 2)
+    check("N_color = 3 (supplied)", N_COLOR == 3)
+    check("N_quark = 6 (supplied)", N_QUARK == 6)
+    check("N1: rho_bar = (4-a)/24 (supplied)",
           close(RHO_BAR, (4 - ALPHA_S_V) / 24))
-    check("N2: eta_bar = sqrt(5)(4-a)/24 (retained)",
+    check("N2: eta_bar = sqrt(5)(4-a)/24 (supplied)",
           close(ETA_BAR, math.sqrt(5) * (4 - ALPHA_S_V) / 24))
-    check("N3: R_b_bar^2 = (4-a)^2/96 (retained)",
+    check("N3: R_b_bar^2 = (4-a)^2/96 (supplied)",
           close(R_B_BAR_SQ, (4 - ALPHA_S_V) ** 2 / 96))
-    check("N7 slope = sqrt(5)/20 (retained)",
+    check("N7 slope = sqrt(5)/20 (supplied)",
           close(N7_SLOPE, math.sqrt(5) / 20))
 
     repo_root = Path(__file__).resolve().parents[1]
@@ -113,7 +96,7 @@ def audit_inputs() -> None:
     )
     for rel in upstream_retained:
         path = repo_root / rel
-        check(f"retained on main: {rel}", path.exists())
+        check(f"Source file exists: {rel}", path.exists())
 
 
 def audit_o1_orthocenter() -> None:
@@ -261,7 +244,7 @@ def audit_o5_euler_line() -> None:
 
 
 def audit_o6_anti_relation() -> None:
-    banner("(O6) NEW EXACT: H - V_3 = -2 (O - M) where M = (1/2, 0) is hypotenuse midpoint")
+    banner("(O6) NEW EXACT: H - V_3 = -2 (O - M) where M = (1/2, 0) is base midpoint (hypotenuse only at LO)")
 
     H = (RHO_BAR, (20 + ALPHA_S_V) / (24 * math.sqrt(5)))
     V3 = (RHO_BAR, ETA_BAR)
@@ -283,7 +266,7 @@ def audit_o6_anti_relation() -> None:
 
 
 def audit_o7_slope_n7() -> None:
-    banner("(O7) NEW: (H_y - V_3_y)/alpha_s = sqrt(5)/20 = retained N7 slope")
+    banner("(O7) NEW: (H_y - V_3_y)/alpha_s = sqrt(5)/20 = supplied N7 slope")
 
     H_y = (20 + ALPHA_S_V) / (24 * math.sqrt(5))
     V3_y = ETA_BAR
@@ -292,11 +275,11 @@ def audit_o7_slope_n7() -> None:
     n7_slope = math.sqrt(5) / 20
 
     print(f"  (H_y - V_3_y) / alpha_s             = {slope:.15f}")
-    print(f"  Retained N7 slope sqrt(5)/20        = {n7_slope:.15f}")
+    print(f"  Supplied N7 slope sqrt(5)/20        = {n7_slope:.15f}")
     print(f"  Structural 1/(N_pair^2 sqrt(N_quark - 1)) = "
           f"{1 / (N_PAIR ** 2 * math.sqrt(N_QUARK - 1)):.15f}")
 
-    check("(O7) apex-orthocenter slope = retained N7 slope = sqrt(5)/20",
+    check("(O7) apex-orthocenter slope = supplied N7 slope = sqrt(5)/20",
           close(slope, n7_slope))
     check("(O7) slope = 1/(N_pair^2 sqrt(N_quark - 1))",
           close(slope, 1 / (N_PAIR ** 2 * math.sqrt(N_QUARK - 1))))
@@ -377,9 +360,9 @@ def audit_o9_atlas_lo_recovery() -> None:
 
 
 def audit_alpha_s_independence() -> None:
-    banner("EXACT-status verification: closed forms hold at multiple alpha_s")
+    banner("Finite floating-point verification at multiple alpha_s")
 
-    print("  Verifying (O1)-(O6) hold EXACTLY at six alpha_s values:")
+    print("  Verifying (O1)-(O6) agree within tolerance at six supplied alpha_s values:")
 
     all_pass = True
     for alpha_s in [0.05, 0.10, 0.103303816, 0.15, 0.20, 0.30]:
@@ -425,7 +408,7 @@ def audit_alpha_s_independence() -> None:
         print(f"    alpha_s = {alpha_s:.9f}: O1={o1_ok}, O3={o3_ok}, O4={o4_ok}, "
               f"O5={o5_ok}, O6={o6_ok}  ({'OK' if all_ok else 'FAIL'})")
 
-    check("EXACT closed forms hold at ALL tested alpha_s (no leading-order drift)",
+    check("Displayed model forms agree within tolerance at all tested alpha_s",
           all_pass)
 
 
@@ -449,10 +432,12 @@ def audit_summary() -> None:
     print(f"    V_3 = ({RHO_BAR:.6f}, {ETA_BAR:.6f})")
     print(f"    H - V_3 = (0, {(20+ALPHA_S_V)/(24*math.sqrt(5)) - ETA_BAR:.6f})")
     print()
-    print("  All inputs retained on main; no SUPPORT-tier or open inputs used.")
+    print("  Supplied constants and file-existence checks do not establish physical or audit closure.")
 
 
 def main() -> int:
+    print("  Conditional supplied-model identities only; no physical parameter selection is certified.")
+    print("  Inspect all failures below; source/ledger status checks are not mathematical proof.")
     print("=" * 88)
     print("Barred unitarity triangle orthocenter and Euler line EXACT closed-form audit")
     print("See docs/CKM_BARRED_ORTHOCENTER_EULER_LINE_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md")

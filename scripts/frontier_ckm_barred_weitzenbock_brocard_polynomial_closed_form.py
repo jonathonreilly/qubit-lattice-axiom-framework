@@ -1,56 +1,15 @@
 #!/usr/bin/env python3
-"""Barred unitarity-triangle Weitzenbock inequality + Brocard-polynomial unification.
+"""Supplied-value conditional identities and finite diagnostics.
 
-Verifies the NEW retained closed forms in
-  docs/CKM_BARRED_WEITZENBOCK_BROCARD_POLYNOMIAL_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md
-
-Key NEW identities on the retained NLO Wolfenstein protected-gamma_bar surface:
-
-  (W1) Weitzenbock inequality: a^2 + b^2 + c^2 >= 4 sqrt(3) Area.
-
-  (W2) Weitzenbock sum:
-        W_+ = (a^2 + b^2 + c^2) + 4 sqrt(3) Area
-            = ((alpha_s^2 - 4 alpha_s + 96) + 4 sqrt(15)(4 - alpha_s)) / 48.
-
-  (W3) Weitzenbock gap (deficit from equilateral):
-        W_- = (a^2 + b^2 + c^2) - 4 sqrt(3) Area
-            = ((alpha_s^2 - 4 alpha_s + 96) - 4 sqrt(15)(4 - alpha_s)) / 48.
-
-  (W4) Product factorization:  W_+ * W_- = P(alpha_s) / 2304,
-       where P(alpha_s) = (alpha_s^2 - 4 alpha_s + 96)^2 - 240 (4 - alpha_s)^2
-                        = (a^2+b^2+c^2)^2  -  48 Area^2  (* 2304).
-
-  (W5) LO recovery:
-        W_+ | LO  =  (N_quark + sqrt(N_color (N_quark - 1))) / N_color  =  (6 + sqrt(15))/3,
-        W_- | LO  =  (N_quark - sqrt(N_color (N_quark - 1))) / N_color  =  (6 - sqrt(15))/3,
-        W_+ | LO * W_- | LO  =  (N_quark + 1) / N_color  =  7/3.
-
-  (W6) Squared-form identity (Weitzenbock excess squared):
-        ((perim_sq)^2 - 48 Area^2)  =  P(alpha_s) / 2304
-                                     =  P(alpha_s) / (N_pair^8 N_color^2).
-
-  (W7) Five-form unification: P(alpha_s) admits FIVE distinct closed-form
-       representations as the universal equilateral excess polynomial:
-
-         (a) Raw:        P(alpha_s) = (alpha_s^2 - 4 alpha_s + 96)^2 - 240 (4 - alpha_s)^2.
-         (b) Brocard:    P(alpha_s) = 80 (4 - alpha_s)^2 * (cot^2(omega_bar) - 3).
-         (c) Weitzenbock: P(alpha_s) = 2304 * ((perim_sq)^2 - 48 Area^2).            [NEW]
-         (d) Steiner:    P(alpha_s) = 746496 * (S'^2 - 4 P').
-         (e) Marden:     P(alpha_s) = 9216 * |V_3^2 - V_3 + 1|^2.
-
-       All five are equivalent on the retained surface; each encodes a
-       different classical equilateral condition.
-
-  (W8) Brocard-Weitzenbock algebraic equivalence:
-        cot(omega_bar)  =  (a^2 + b^2 + c^2) / (4 Area),
-        cot(omega_bar)/sqrt(3)  =  (a^2 + b^2 + c^2)/(4 sqrt(3) Area)  =  Weitzenbock ratio,
-        cot^2(omega_bar) >= 3   <=>   (a^2 + b^2 + c^2)^2 >= 48 Area^2.
-
-Ground-up status verification: each cited authority's tier extracted from its
-Status: line; closure derived only at extracted retained values.
+The accompanying note states domains and open physical premises. Source labels,
+file presence and canonical audit-status checks are distinct from mathematical
+proof. Preserve actual failures; this runner does not grant retained status.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md', 'docs/CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md', 'docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md', 'docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md']
 
 import math
 import re
@@ -120,9 +79,9 @@ def authority_tier(content: str) -> str:
 
 
 def audit_inputs() -> None:
-    banner("Ground-up status verification of each cited authority")
+    banner("Documentary source-label checks; not mathematical proof")
 
-    print("  RETAINED-TIER (load-bearing for closure):\n")
+    print("  Supplied model inputs; source labels below are documentary:\n")
 
     retained_authorities = (
         ("docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md",
@@ -148,13 +107,13 @@ def audit_inputs() -> None:
         print(f"    [{rel_path.split('/')[-1]}]")
         print(f"      Status (extracted): {status!r}")
         print(f"      Tier classification: {tier}")
-        check(f"Retained-tier verified: {rel_path.split('/')[-1]}",
+        check(f"Legacy retained-label string matches: {rel_path.split('/')[-1]}",
               all_kws and tier == "retained")
         print()
 
 
 def extract_retained_inputs() -> dict:
-    banner("Extracting retained inputs from authority text")
+    banner("Checking source phrases/count literals; symbolic values remain supplied")
 
     nlo = read_authority(
         "docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md"
@@ -180,14 +139,14 @@ def extract_retained_inputs() -> dict:
     print(f"  N_pair extracted:                  {n_pair_match.group(0) if n_pair_match else 'NOT FOUND'}")
     print(f"  N_color extracted:                 {n_color_match.group(0) if n_color_match else 'NOT FOUND'}")
     print(f"  N_quark = N_pair * N_color:        {'FOUND' if n_quark_match else 'NOT FOUND'}")
-    print(f"  Jarlskog retained closed form:     {'FOUND' if has_jarlskog else 'NOT FOUND'}")
+    print(f"  Jarlskog supplied closed form:     {'FOUND' if has_jarlskog else 'NOT FOUND'}")
 
-    check("NLO retains rho_bar = (4 - alpha_s)/24", has_rho_bar)
-    check("NLO retains eta_bar = sqrt(5)(4 - alpha_s)/24", has_eta_bar)
-    check("MAGNITUDES retains N_pair = 2", n_pair_match and int(n_pair_match.group(1)) == 2)
-    check("MAGNITUDES retains N_color = 3", n_color_match and int(n_color_match.group(1)) == 3)
-    check("MAGNITUDES retains N_quark = N_pair * N_color (=6)", bool(n_quark_match))
-    check("Jarlskog retained authority cited", has_jarlskog)
+    check("NLO contains the supplied literal rho_bar = (4 - alpha_s)/24", has_rho_bar)
+    check("NLO contains the supplied literal eta_bar = sqrt(5)(4 - alpha_s)/24", has_eta_bar)
+    check("MAGNITUDES contains the supplied literal N_pair = 2", n_pair_match and int(n_pair_match.group(1)) == 2)
+    check("MAGNITUDES contains the supplied literal N_color = 3", n_color_match and int(n_color_match.group(1)) == 3)
+    check("MAGNITUDES contains the supplied literal N_quark = N_pair * N_color (=6)", bool(n_quark_match))
+    check("Jarlskog supplied authority cited", has_jarlskog)
 
     return {
         "N_pair": 2,
@@ -223,7 +182,7 @@ def setup_symbolic(N: dict):
 
 
 def audit_w1_weitzenbock_inequality(N: dict, S: dict) -> None:
-    banner("W1: Weitzenbock inequality on retained surface")
+    banner("W1: Weitzenbock inequality on supplied surface")
 
     a_s = S["a_s"]
     perim_sq = S["perim_sq"]
@@ -426,7 +385,7 @@ def audit_w7_five_form_unification(N: dict, S: dict) -> None:
           diff_marden == 0)
 
     print()
-    print("  All FIVE forms equal P(alpha_s) on the retained surface.")
+    print("  All FIVE forms equal P(alpha_s) on the supplied surface.")
     print("  Each encodes a different classical equilateral condition:")
     print("    (a) Raw polynomial in alpha_s.")
     print("    (b) Brocard inequality cot^2(omega_bar) >= 3.")
@@ -499,22 +458,22 @@ def audit_p_polynomial_root_structure(N: dict, S: dict) -> None:
     check("Root structure: both quadratic factors have negative discriminant (no real roots)",
           disc_plus_num < 0 and disc_minus_num < 0)
     print()
-    print("  => P(alpha_s) > 0 for ALL real alpha_s on the retained surface.")
-    print("     The unitarity triangle never reaches equilateral.")
+    print("  => P(alpha_s) > 0 for ALL real alpha_s on the supplied surface.")
+    print("     The nondegenerate supplied triangles never reach equilateral.")
 
 
 def audit_summary() -> None:
-    banner("Summary of NEW retained content")
+    banner("Summary of NEW supplied content")
 
-    print("  Inputs (retained-tier, ground-up Status verified):")
-    print("    CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA  (retained)")
-    print("    CKM_MAGNITUDES_STRUCTURAL_COUNTS         (retained)")
-    print("    CKM_CP_PHASE_STRUCTURAL_IDENTITY         (retained)")
-    print("    CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM       (retained)")
+    print("  Inputs (supplied constants; inspect documentary status failures below):")
+    print("    CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA  (supplied)")
+    print("    CKM_MAGNITUDES_STRUCTURAL_COUNTS         (supplied)")
+    print("    CKM_CP_PHASE_STRUCTURAL_IDENTITY         (supplied)")
+    print("    CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM       (supplied)")
     print()
-    print("  NEW retained closed forms:")
+    print("  NEW supplied closed forms:")
     print()
-    print("    (W1) Weitzenbock inequality on the retained CKM unitarity triangle:")
+    print("    (W1) Weitzenbock inequality on the supplied CKM unitarity triangle:")
     print("         a^2 + b^2 + c^2 >= 4 sqrt(3) Area_triangle.")
     print()
     print("    (W2/W3) Weitzenbock sum and gap closed forms:")
@@ -542,14 +501,16 @@ def audit_summary() -> None:
     print()
     print("    Root structure (NEW): P(alpha_s) factors over Q[sqrt(15)] as a product")
     print("    of two quadratics, each with NEGATIVE discriminant. So P(alpha_s) > 0")
-    print("    for ALL real alpha_s -- the retained unitarity triangle never reaches")
-    print("    equilateral on any alpha_s deformation.")
+    print("    for ALL real alpha_s; triangle statements exclude the degenerate a=4 case,")
+    print("    and use unsigned area or the stated a<4 oriented-area domain.")
     print()
-    print("    sqrt(15) = sqrt(N_color (N_quark - 1)) is the natural irrationality")
-    print("    of the retained surface.")
+    print("    sqrt(15) = sqrt(N_color (N_quark - 1)) is the irrationality of this factorization")
+    print("    only; it is not the whole coordinate or splitting field.")
 
 
 def main() -> int:
+    print("  Conditional supplied-model identities only; no physical parameter selection is certified.")
+    print("  Inspect all failures below; source/ledger status checks are not mathematical proof.")
     print("=" * 88)
     print("Barred unitarity-triangle Weitzenbock + Brocard polynomial unification audit")
     print("See docs/CKM_BARRED_WEITZENBOCK_BROCARD_POLYNOMIAL_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md")

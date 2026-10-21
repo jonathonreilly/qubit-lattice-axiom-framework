@@ -1,27 +1,15 @@
 #!/usr/bin/env python3
-"""CKM Wolfenstein eta^2 inverse-square structural reading.
+"""Supplied-value conditional identities and finite diagnostics.
 
-Retained CKM-structure corollary on current main:
-
-  W1: eta^2 = 1/N_pair^2 - 1/N_color^2
-      = 1/(dim_SU2(Q_L))^2 - 1/(dim_SU3(Q_L))^2
-      = 5/36
-
-with companion exact identities
-
-  W2: rho A^2 = 1/N_color^2
-  W3: eta^2 + rho A^2 = 1/N_pair^2
-  W4: eta^2 + 2 rho A^2 = 1/N_pair^2 + 1/N_color^2
-  W5: rho = 1/(N_pair N_color)
-  W6: eta^2 = (N_color^2 - N_pair^2)/N_quark^2
-
-The runner extracts Q_L:(a,b) from retained docs by regex, verifies cited
-status lines from disk, derives the identities by exact Fraction arithmetic,
-and explicitly audits that W2 is a generic count-surface factorization rather
-than an SM-uniqueness claim.
+The accompanying note states domains and open physical premises. Source labels,
+file presence and canonical audit-status checks are distinct from mathematical
+proof. Preserve actual failures; this runner does not grant retained status.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md', 'docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md', 'docs/CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md', 'docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md', 'docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md', 'docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md', 'docs/CKM_MULTI_PROJECTION_BERNOULLI_FAMILY_THEOREM_NOTE_2026-04-25.md', 'docs/audit/data/ledger/le/left_handed_charge_matching_note.json', 'docs/audit/data/ledger/on/one_generation_matter_closure_note.json', 'docs/audit/data/ledger/ck/ckm_a_squared_below_w2_y_quantum_closure_theorem_note_2026-04-25.json', 'docs/audit/data/ledger/wo/wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24.json', 'docs/audit/data/ledger/ck/ckm_cp_phase_structural_identity_theorem_note_2026-04-24.json', 'docs/audit/data/ledger/ck/ckm_magnitudes_structural_counts_theorem_note_2026-04-25.json', 'docs/audit/data/ledger/ck/ckm_multi_projection_bernoulli_family_theorem_note_2026-04-25.json', 'docs/audit/scripts/ledger_io.py']
 
 import json
 import re
@@ -33,7 +21,10 @@ from pathlib import Path
 PASS_COUNT = 0
 FAIL_COUNT = 0
 REPO_ROOT = Path(__file__).resolve().parents[1]
-LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
+from ledger_io import shard_path
+
+LEDGER_CLAIM_IDS = ('left_handed_charge_matching_note', 'one_generation_matter_closure_note', 'ckm_a_squared_below_w2_y_quantum_closure_theorem_note_2026-04-25', 'wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24', 'ckm_cp_phase_structural_identity_theorem_note_2026-04-24', 'ckm_magnitudes_structural_counts_theorem_note_2026-04-25', 'ckm_multi_projection_bernoulli_family_theorem_note_2026-04-25')
 
 
 def check(name: str, condition: bool, detail: str = "", cls: str = "D") -> None:
@@ -68,7 +59,7 @@ def extract_status_line(content: str) -> str:
     retag, author-side prose deliberately does NOT carry the audit verdict
     (e.g. it now reads `**Status authority:** independent audit lane only`).
     The load-bearing status check is `ledger_effective_status` against the
-    canonical `audit_ledger.json` row; this helper is no longer load-bearing.
+    canonical tracked ledger row; this helper is no longer load-bearing.
     """
     if not content:
         return ""
@@ -86,12 +77,21 @@ _LEDGER_CACHE: dict | None = None
 
 
 def _load_ledger() -> dict:
+    """Read only the seven tracked authority rows; never materialize a cache."""
     global _LEDGER_CACHE
     if _LEDGER_CACHE is None:
-        try:
-            _LEDGER_CACHE = json.loads(LEDGER_PATH.read_text())
-        except OSError:
-            _LEDGER_CACHE = {"rows": {}}
+        rows = {}
+        for claim_id in LEDGER_CLAIM_IDS:
+            path = shard_path(claim_id)
+            try:
+                row = json.loads(path.read_text())
+            except OSError:
+                # Missing authority remains a failing status predicate.
+                continue
+            if not isinstance(row, dict) or row.get("claim_id") != claim_id:
+                raise ValueError(f"ledger shard identity mismatch: {path}")
+            rows[claim_id] = row
+        _LEDGER_CACHE = {"rows": rows}
     return _LEDGER_CACHE
 
 
@@ -136,7 +136,7 @@ def audit_authority_status_lines() -> None:
 
     print("  Status check is now structural: the runner looks up the canonical")
     print("  `effective_status` for each authority in")
-    print("  docs/audit/data/audit_ledger.json (the per-row audit verdict).")
+    print("  docs/audit/data/ledger/ tracked rows (the per-row audit verdict).")
     print("  Author-side note prose is shown for transparency only.")
     print()
 
@@ -176,16 +176,16 @@ def audit_authority_status_lines() -> None:
         print(f"    Status (note prose): {status_text!r}")
         print(f"    Effective status:    {eff_status!r}")
         print(f"    Verified retained?   {ok}")
-        check(f"Retained-tier verified for {rel_path.split('/')[-1]}", ok)
+        check(f"Canonical retained-grade status check for {rel_path.split('/')[-1]}", ok)
         print()
 
 
 def audit_source_extraction() -> tuple[int, int, int]:
-    banner("S1 source extraction from retained matter-content literal")
+    banner("S1 source extraction from supplied matter-content literal")
 
     ql_content = read_authority("docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md")
     ql_rep = extract_rep_literal(ql_content, "Q_L")
-    check("Extract Q_L:(a,b) from retained doc", ql_rep is not None)
+    check("Extract Q_L:(a,b) from supplied doc", ql_rep is not None)
     if ql_rep is None:
         print("FATAL: could not extract Q_L literal.")
         sys.exit(1)
@@ -193,8 +193,8 @@ def audit_source_extraction() -> tuple[int, int, int]:
     ur_content = read_authority("docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md")
     ur_rep = extract_rep_literal(ur_content, "u_R")
     dr_rep = extract_rep_literal(ur_content, "d_R")
-    check("Extract u_R:(1,3) from retained doc", ur_rep is not None)
-    check("Extract d_R:(1,3) from retained doc", dr_rep is not None)
+    check("Extract u_R:(1,3) from supplied doc", ur_rep is not None)
+    check("Extract d_R:(1,3) from supplied doc", dr_rep is not None)
 
     n_pair, n_color = ql_rep
     n_quark = n_pair * n_color
@@ -210,7 +210,7 @@ def audit_source_extraction() -> tuple[int, int, int]:
 
 
 def audit_retained_ckm_package(n_pair: int, n_color: int, n_quark: int) -> tuple[Fraction, Fraction, Fraction]:
-    banner("Retained CKM package values")
+    banner("Supplied CKM package values")
 
     rho = Fraction(1, n_quark)
     eta_sq = Fraction(n_quark - 1, n_quark ** 2)
@@ -220,9 +220,9 @@ def audit_retained_ckm_package(n_pair: int, n_color: int, n_quark: int) -> tuple
     print(f"  eta^2 = ({n_quark}-1)/{n_quark}^2 = {eta_sq}")
     print(f"  A^2   = {n_pair}/{n_color} = {a_sq}")
 
-    check("Retained rho = 1/6", rho == Fraction(1, 6))
-    check("Retained eta^2 = 5/36", eta_sq == Fraction(5, 36))
-    check("Retained A^2 = 2/3", a_sq == Fraction(2, 3))
+    check("Supplied rho = 1/6", rho == Fraction(1, 6))
+    check("Supplied eta^2 = 5/36", eta_sq == Fraction(5, 36))
+    check("Supplied A^2 = 2/3", a_sq == Fraction(2, 3))
 
     return rho, eta_sq, a_sq
 
@@ -237,10 +237,10 @@ def audit_w1_inverse_square_gap(n_pair: int, n_color: int, eta_sq: Fraction) -> 
     print(f"  1/N_pair^2  = {inv_pair_sq}")
     print(f"  1/N_color^2 = {inv_color_sq}")
     print(f"  W1 value     = {eta_sq_w1}")
-    print(f"  Retained eta^2 = {eta_sq}")
+    print(f"  Supplied eta^2 = {eta_sq}")
 
     check("W1 gives 5/36", eta_sq_w1 == Fraction(5, 36))
-    check("W1 matches retained eta^2", eta_sq_w1 == eta_sq)
+    check("W1 matches supplied eta^2", eta_sq_w1 == eta_sq)
     return eta_sq_w1
 
 
@@ -327,10 +327,10 @@ def audit_w2_is_not_sm_unique() -> None:
 
 def audit_framing() -> None:
     banner("Framing audit")
-    print("  This theorem is a retained structural reading of eta^2 on the sourced")
+    print("  This theorem is a supplied structural reading of eta^2 on the sourced")
     print("  Q_L:(2,3) surface. It does not claim a new below-Wn closure.")
     print("  It also does not claim W2 is SM-unique.")
-    check("Framing remains within retained-reading scope", True)
+    check("Framing declaration only (literal True, not an independent test)", True)
 
 
 def audit_summary(n_pair: int, n_color: int, n_quark: int,
@@ -347,10 +347,12 @@ def audit_summary(n_pair: int, n_color: int, n_quark: int,
     print(f"  W6: eta^2 = ({n_color**2}-{n_pair**2})/{n_quark**2} = {eta_sq}")
     print()
     print(f"  ETA_SQ_INVERSE_SQUARE_GAP_VERIFIED = {eta_sq == Fraction(5, 36)}")
-    print(f"  W2_GENERIC_FACTORIZATION_VERIFIED  = {True}")
+    print(f"  HISTORICAL_W2_FRAMING_FLAG_LITERAL_TRUE = {True}")
 
 
 def main() -> int:
+    print("  Conditional supplied-model identities only; no physical parameter selection is certified.")
+    print("  Inspect all failures below; source/ledger status checks are not mathematical proof.")
     print("=" * 88)
     print("CKM Wolfenstein eta^2 inverse-square structural reading")
     print("See docs/CKM_WOLFENSTEIN_ETA_INVERSE_SQUARE_GAP_THEOREM_NOTE_2026-04-26.md")

@@ -2,11 +2,11 @@
 
 **Date:** 2026-04-25
 
-**Status:** proposed_retained CKM-structure corollary on the proposed_promoted CKM atlas
-+ NLO Wolfenstein protected-γ̄ surfaces. This note derives **EXACT
-all-orders-in-α_s closed forms** for the **orthocenter** `H`, the
+**Claim type:** bounded_theorem
+**Status:** conditional classical geometry on a supplied NLO apex surface. This note derives **EXACT
+closed forms within the supplied affine-in-α_s model** for the **orthocenter** `H`, the
 **centroid** `G`, and the **Euler line** of the barred unitarity
-triangle on the retained NLO Wolfenstein protected-γ̄ surface.
+triangle on the supplied NLO Wolfenstein protected-γ̄ surface.
 
 The headline identity is striking in its simplicity:
 
@@ -26,10 +26,10 @@ H  -  V_3  =  ( 0,  alpha_s(v) / [N_pair^2 sqrt(N_quark - 1)] )
 ```
 
 This is a **pure y-direction** offset — the orthocenter "lifts" the
-apex by exactly `α_s √5/20 = (retained N7 slope) × α_s`. The slope
-**equals** the retained N7 leading coefficient — a sharp algebraic
-coincidence that gives the apex-orthocenter offset a direct
-interpretation as the apex-angle deviation.
+apex by exactly `α_s √5/20 = (supplied N7 slope) × α_s`. The slope
+**equals** the supplied N7 leading coefficient — a sharp algebraic
+coincidence: the offset equals the leading LO term of the apex-angle
+deviation, not its finite-parameter value.
 
 **Connection to circumcenter**:
 
@@ -37,24 +37,31 @@ interpretation as the apex-angle deviation.
 H  -  V_3  =  -2 (O - M)                             [EXACT signed identity]
 
   where O = (1/2, -alpha_s sqrt(5)/40) is the circumcenter (re-derivable from
-  retained N1, N2, N3) and M = (1/2, 0) is the hypotenuse midpoint.
+  supplied N1, N2, N3) and M = (1/2, 0) is the base midpoint.
 ```
 
 In words: **the orthocenter "lifts" the apex by exactly twice the
-amount the circumcenter "drops" below the hypotenuse**. Equivalently,
+amount the circumcenter "drops" below the base**. Equivalently,
 `H_y - V_3_y = -2 y_cc` EXACTLY.
 
 The **Euler line** `H = 3G - 2O` is preserved on the protected-γ̄
-surface (a property of every Euclidean triangle, but with all four
-points — H, G, O, and the centroid relation 3G = V_1 + V_2 + V_3 —
-having α_s-explicit closed forms here).
+surface (a property of every nondegenerate Euclidean triangle), with
+the three centers H, G, O and the centroid relation
+3G = V_1 + V_2 + V_3 having α_s-explicit closed forms here.
 
 **Primary runner:**
 `scripts/frontier_ckm_barred_orthocenter_euler_line_exact_closed_form.py`
 
+**Domain and authority boundary.** The geometric statements use real
+`alpha_s != 4`, so `eta_bar != 0`; at 4 the triangle degenerates and
+cancelled polynomial expressions are only continuations, not unique centers.
+The slope quotient O7 also requires `alpha_s != 0`; its value at 0 means
+its continuous limit. The base V1V2 is a hypotenuse only at the right-angle
+LO point. No physical NNLO exactness or upstream audit status follows here.
+
 ## Statement
 
-On the NLO Wolfenstein protected-γ̄ surface (where retained `(N1)`-`(N6)`
+On the NLO Wolfenstein protected-γ̄ surface (where supplied `(N1)`-`(N6)`
 hold):
 
 ```text
@@ -70,26 +77,26 @@ hold):
       G  =  ( (28 - alpha_s)/72, sqrt(5)(4 - alpha_s)/72 )                    [EXACT, both linear]
          =  ( (V_1 + V_2 + V_3)/3 )
 
-(O4)  Circumcenter (re-derived from retained N1, N2, N3):
+(O4)  Circumcenter (re-derived from supplied N1, N2, N3):
       O  =  ( 1/2, -alpha_s / [N_pair^3 sqrt(N_quark - 1)] )                  [EXACT, linear]
          =  ( 1/2, -alpha_s sqrt(5)/40 )
 
 (O5)  Euler line:
-      H  =  3 G  -  2 O                                                        [EXACT, all alpha_s]
+      H  =  3 G  -  2 O                                                        [EXACT, alpha_s != 4]
       H, G, O are collinear, with HG = 2 GO (the standard Euler line ratio).
 
-(O6)  Apex-orthocenter / circumcenter-hypotenuse anti-relation:
-      H - V_3  =  -2 (O - M)        where M = (1/2, 0) = hypotenuse midpoint  [EXACT]
+(O6)  Apex-orthocenter / circumcenter-base anti-relation:
+      H - V_3  =  -2 (O - M)        where M = (1/2, 0) = base midpoint  [EXACT]
       H_y - V_3_y  =  -2 y_cc                                                  [EXACT signed]
       |H - V_3|    =   2 |O - M|                                               [EXACT |.|]
 
-(O7)  Apex-orthocenter slope = retained N7 slope:
-      (H_y - V_3_y)/alpha_s  =  sqrt(5)/20  =  retained N7 slope                [EXACT]
+(O7)  Apex-orthocenter slope = supplied N7 slope:
+      (H_y - V_3_y)/alpha_s  =  sqrt(5)/20  =  supplied N7 slope                [EXACT]
 
 (O8)  Selection rule:
       H_x, H_y, G_x, G_y are EXACTLY DEGREE-1 polynomials in alpha_s.
       O_x is alpha_s-INDEPENDENT.  O_y is exactly LINEAR in alpha_s.
-      All four classical centers have at most LINEAR alpha_s-dependence
+      The three displayed centers H, G, O have at most LINEAR alpha_s-dependence
       on the protected-γ̄ surface.
 
 (O9)  Atlas-LO recovery:
@@ -98,19 +105,19 @@ hold):
       G_0  =  ((1 + rho)/3, eta/3)  =  (7/18, sqrt(5)/18).
       O_0  =  (1/N_pair, 0)         =  (1/2, 0).
       At alpha_s = 0 (right-angle), the orthocenter coincides with the
-      apex (the right-angle vertex IS its own altitude foot), and the
+      apex (the two leg-altitudes meet at the right-angle vertex), and the
       circumcenter sits at the midpoint of the hypotenuse (hypotenuse-
       as-diameter).
 ```
 
-`(O1)` through `(O9)` are NEW. The retained NLO theorem packages
+`(O1)` through `(O9)` are NEW. The supplied NLO theorem packages
 `(N1)`-`(N9)` for the apex coordinates, side lengths, and angles, but
 does **not** package the orthocenter, the centroid, the circumcenter,
 or the Euler line. This note packages all four with EXACT closed forms.
 
-## Retained Inputs
+## Supplied Inputs
 
-All inputs below are retained on current `main`:
+All inputs below are supplied for the conditional calculation; source labels do not establish audit authority:
 
 | Input | Authority on `main` |
 | --- | --- |
@@ -124,15 +131,13 @@ All inputs below are retained on current `main`:
 | `(N7)` slope `sqrt(5)/20` for apex angle deviation | same, N7 |
 | `N_quark = 6`, `N_pair = 2`, `N_color = 3` | [`CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md`](CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md) |
 
-No PDG observable enters as a derivation input. No SUPPORT-tier or
-open inputs (Koide `Q_l`, bare-coupling ratios, dimension-color
-quadratic) are used.
+The symbolic geometry uses the displayed apex and supplied counts. The numerical coupling is an admitted canonical comparison/reuse input, not derived by this note; its physical matching and upstream scope remain open.
 
 ## Derivation
 
 The triangle has vertices `V_1 = (0, 0)`, `V_2 = (1, 0)`, `V_3 = (ρ̄, η̄)`
 in the `(ρ̄, η̄)` plane. We derive the orthocenter, centroid, and
-circumcenter directly from the retained closed forms `(N1)`, `(N2)`,
+circumcenter directly from the supplied closed forms `(N1)`, `(N2)`,
 `(N3)`.
 
 ### Step 1: Centroid `(O3)`
@@ -145,7 +150,7 @@ G  =  (V_1 + V_2 + V_3) / 3
    =  ( (1 + rho_bar)/3,  eta_bar/3 ).
 ```
 
-Substituting retained `(N1)`, `(N2)`:
+Substituting supplied `(N1)`, `(N2)`:
 
 ```text
 1 + rho_bar  =  1 + (4 - alpha_s)/24  =  (24 + 4 - alpha_s)/24  =  (28 - alpha_s)/24.
@@ -158,7 +163,7 @@ Both are EXACTLY linear in `α_s`.
 
 ### Step 2: Orthocenter `(O1)`
 
-The hypotenuse `V_1 V_2` lies on the x-axis, so the altitude from `V_3`
+The base `V_1 V_2` lies on the x-axis, so the altitude from `V_3`
 is the vertical line `x = ρ̄`. Hence `H_x = ρ̄`.
 
 For `H_y`, use the altitude from `V_1` perpendicular to `V_2 V_3`. The
@@ -175,7 +180,7 @@ Setting `x = H_x = ρ̄`:
 H_y  =  rho_bar (1 - rho_bar) / eta_bar.
 ```
 
-Substituting retained `(N1)`, `(N2)`:
+Substituting supplied `(N1)`, `(N2)`:
 
 ```text
 1 - rho_bar       =  (20 + alpha_s)/24.
@@ -224,9 +229,9 @@ H  -  V_3  =  (0, alpha_s sqrt(5)/20)  =  (0, alpha_s/[N_pair^2 sqrt(N_quark - 1
 ```
 
 The numerical coefficient `√5/20 = 1/(N_pair² √(N_quark - 1))` is the
-**retained N7 slope** itself.
+**supplied N7 slope** itself.
 
-### Step 4: Circumcenter `(O4)` — re-derivation from retained N1, N2, N3
+### Step 4: Circumcenter `(O4)` — re-derivation from supplied N1, N2, N3
 
 The circumcenter is equidistant from all three vertices. The
 perpendicular bisector of `V_1 V_2` is `x = 1/2`, so `O_x = 1/2`.
@@ -241,7 +246,7 @@ O_x^2 + O_y^2  =  (O_x - rho_bar)^2 + (O_y - eta_bar)^2
 O_y            =  (R_b_bar^2 - rho_bar) / (2 eta_bar).
 ```
 
-Compute `R_b_bar^2 - ρ̄` from retained `(N1)`, `(N3)`:
+Compute `R_b_bar^2 - ρ̄` from supplied `(N1)`, `(N3)`:
 
 ```text
 R_b_bar^2 - rho_bar  =  (4 - alpha_s)^2/96  -  (4 - alpha_s)/24
@@ -297,7 +302,7 @@ algebraically on the protected-γ̄ surface.
 
 ### Step 6: Anti-relation `(O6)`
 
-The hypotenuse midpoint `M = (1/2, 0)`. Then
+The base midpoint `M = (1/2, 0)`. Then
 
 ```text
 M - O  =  (1/2, 0)  -  (1/2, -alpha_s sqrt(5)/40)  =  (0,  alpha_s sqrt(5)/40).
@@ -314,7 +319,7 @@ H_y - V_3_y  =  -2 y_cc        (using y_cc = O_y)
 ```
 
 This is `(O6)`. The orthocenter "lifts" the apex by **exactly twice**
-the amount the circumcenter "drops" below the hypotenuse.
+the amount the circumcenter "drops" below the base.
 
 ### Step 7: Apex-orthocenter slope = N7 slope `(O7)`
 
@@ -324,11 +329,11 @@ From `(O2)`,
 (H_y - V_3_y) / alpha_s  =  sqrt(5)/20.
 ```
 
-The retained `(N7)` is `α̅ - π/2 = (√5/20) α_s + O(α_s²)`, with leading
+The supplied `(N7)` is `α̅ - π/2 = (√5/20) α_s + O(α_s²)`, with leading
 coefficient `√5/20`. So
 
 ```text
-(H_y - V_3_y) / alpha_s  =  retained N7 leading slope.
+(H_y - V_3_y) / alpha_s  =  supplied N7 leading slope.
 ```
 
 This is `(O7)`. The orthocenter offset's slope **equals** the apex-
@@ -358,9 +363,9 @@ values of `α_s ∈ {0.05, 0.10, 0.103303816, 0.15, 0.20, 0.30}`.
 
 ### What this lets the framework predict that it could not before
 
-The retained NLO theorem packages closed forms for the **apex
+The supplied NLO theorem packages closed forms for the **apex
 coordinates** (N1, N2), the **side R_b̄²** (N3), and the **angles**
-(N4-N9), but **not** any of the four classical triangle centers nor
+(N4-N9), but **not** the three centers displayed here nor
 the Euler line. This note delivers EXACT closed forms for:
 
 - The **orthocenter** `H` with both coordinates EXACTLY linear in α_s.
@@ -369,7 +374,7 @@ the Euler line. This note delivers EXACT closed forms for:
   α_s-independent).
 - The **Euler line** identity `H = 3G - 2O` algebraically verified.
 
-All from retained inputs, no SUPPORT-tier inputs, and no truncation.
+Exact algebra on the supplied NLO-truncated apex model; this does not remove the truncation of its physical interpretation.
 
 ### The orthocenter is a degree-1 polynomial in α_s
 
@@ -382,7 +387,7 @@ linear corrections — is realized by the orthocenter on this surface.
 The same holds for the centroid (linear, but trivially since both are
 arithmetic combinations of α_s-linear apex coordinates).
 
-### The orthocenter slope = retained N7 slope (O7)
+### The orthocenter slope = supplied N7 slope (O7)
 
 The apex-orthocenter offset is
 
@@ -390,9 +395,9 @@ The apex-orthocenter offset is
 H - V_3  =  (0, alpha_s × sqrt(5)/20).
 ```
 
-The slope `√5/20` is **identical** to the retained N7 leading slope
+The slope `√5/20` is **identical** to the supplied N7 leading slope
 of the apex-angle deviation. So the orthocenter trajectory provides a
-direct geometric realization of the N7 deviation theorem: as α_s ramps
+geometric realization of the leading LO term of N7: as α_s ramps
 up from zero, the orthocenter slides upward (in y) along the line
 `x = ρ̄`, with slope exactly the N7 slope.
 
@@ -402,16 +407,16 @@ This is striking because N7 is an **angular** statement (rate at which
 factor `1/(2 sin(γ̄)) × 2 sin(α̅)/... ≈ 1` at LO, but the EXACT
 identity `√5/20` in both is the new content.
 
-### Apex-orthocenter / circumcenter-hypotenuse anti-relation (O6)
+### Apex-orthocenter / circumcenter-base anti-relation (O6)
 
 ```text
 H - V_3  =  -2 (O - M)        EXACT
 ```
 
-where `M = (1/2, 0)` is the hypotenuse midpoint. In words: **the
+where `M = (1/2, 0)` is the base midpoint. In words: **the
 orthocenter "lifts" the apex by exactly twice the amount the
-circumcenter "drops" below the hypotenuse**, on the protected-γ̄
-surface, all α_s.
+circumcenter "drops" below the base**, on the protected-γ̄
+surface, for α_s != 4.
 
 This is a sharp geometric statement tying the orthocenter and
 circumcenter on this surface. While the factor-of-2 ratio between
@@ -419,19 +424,18 @@ HV_3 and OM is a general triangle property (apex-orthocenter distance
 = 2R cos(α̅), and OM = R cos(central angle/2) etc.), the **EXACT
 linear-in-α_s** form on this surface is new content.
 
-### Selection rule (O8): all four centers have at most linear α_s-dependence
+### Selection rule (O8): the three displayed centers H, G, O have at most linear α_s-dependence
 
 ```text
 H, G:    both coordinates EXACTLY DEGREE-1 polynomials in alpha_s
 O:       x INDEPENDENT of alpha_s, y LINEAR in alpha_s
-V_1, V_2: hypotenuse vertices, alpha_s-INDEPENDENT
+V_1, V_2: base vertices, alpha_s-INDEPENDENT
 V_3:     LINEAR in alpha_s in both coordinates (from N1, N2)
 ```
 
 So **all six points** (V_1, V_2, V_3, H, G, O) have at most linear
 α_s-dependence on the protected-γ̄ surface. The protected-γ̄ surface
-is the **maximal-symmetry surface** in this sense: classical triangle
-geometry on it is captured by linear-in-α_s expressions throughout.
+makes these six displayed points affine in α_s. No claim about all triangle invariants or the incenter follows.
 
 ### Atlas-LO recovery: H = V_3 at right-angle (O9)
 
@@ -442,48 +446,30 @@ H_0  =  V_3_0  =  (1/N_quark, sqrt(N_quark - 1)/N_quark)  =  (1/6, sqrt(5)/6).
 ```
 
 The orthocenter coincides with the apex at the right-angle, because
-**the right-angle vertex is its own altitude foot**: the altitude
-from V_3 (the right-angle vertex) hits V_1 V_2 at V_3 itself.
+the altitudes from V_1 and V_2 lie along the two legs and intersect at V_3. The altitude from V_3 meets the opposite base at a different foot.
 
 This is a sharp atlas-LO consistency check: any closed form for H
 must give H = V_3 at α_s = 0, and `(O1)` does so cleanly.
 
-### Falsifiable NNLO predictions
+### Conditional linearity, not a physical NNLO prediction
 
-The framework predicts:
-
-```text
-NO alpha_s^2, alpha_s^3, ... corrections to H_x or H_y on the protected-γ̄ surface.
-H is EXACTLY a degree-1 polynomial in alpha_s.
-
-Equivalently: the orthocenter trajectory in the (rho_bar, eta_bar) plane
-is EXACTLY a STRAIGHT LINE parametrized linearly by alpha_s.
-```
-
-If a future NNLO Wolfenstein analysis on the protected-γ̄ surface
-produces an `α_s²` correction to `H_x` or `H_y`, then either:
-
-- the retained closed forms `(N1)`, `(N2)` themselves break at NNLO,
-- the altitude/orthocenter geometry fails (which it does not in
-  Euclidean space).
-
-So the linearity of `H` in α_s is a **sharp** test of the NLO
-protected-γ̄ surface's integrity.
+Substitution of the supplied affine apex into the altitude equations gives
+exactly linear H coordinates on this model. A higher-order correction to
+that apex can produce higher-order H corrections without violating classical
+geometry. For example, replace rho_bar by `(4-alpha_s)/24 + alpha_s**2`
+while retaining the displayed eta_bar: the altitude formula still holds,
+but H_x now contains alpha_s**2. This note supplies no reason to exclude it
+in a physical NNLO completion.
 
 ### Phenomenological connection: the orthocenter as a UTfit handle
 
 The orthocenter of a triangle is determined by the three side
 directions and the three altitude lines — every joint UTfit /
 CKMfitter constraint that determines `(ρ̄, η̄)` and the side lengths
-implicitly determines the orthocenter via the closed form
-
-```text
-H  =  ((4 - alpha_s)/24, (20 + alpha_s)/(24 sqrt(5))).
-```
+determines the orthocenter through `H=(rho_bar,rho_bar*(1-rho_bar)/eta_bar)` for nonzero eta_bar. The displayed alpha_s closed form requires the additional supplied apex model.
 
 A direct test: extract `H` from a global fit, verify it lies on the
-straight line in `(ρ̄, η̄)` space parametrized by α_s. The framework
-predicts:
+straight line in `(ρ̄, η̄)` space parametrized by α_s. The supplied model gives:
 
 | α_s | `H` |
 |---:|---:|
@@ -493,8 +479,7 @@ predicts:
 | 0.20 | `(0.1583, 0.3776)` |
 
 The orthocenter trajectory in `(ρ̄, η̄)` space is a straight line
-with negative x-slope and positive y-slope. Any joint fit deviating
-from this linearity would falsify the protected-γ̄ surface.
+with negative x-slope and positive y-slope. A comparison with a joint fit tests the supplied apex model, with the fit covariance and model truncation carried through; it is not an independent NNLO prediction.
 
 ### Why this counts as pushing the science forward
 
@@ -506,23 +491,21 @@ Three layers of new content beyond the parent NLO theorem:
 
 2. **Anti-relation between orthocenter and circumcenter.** The exact
    identity `H - V_3 = -2(O - M)` ties the orthocenter's lift above
-   the apex to the circumcenter's depression below the hypotenuse
+   the apex to the circumcenter's depression below the base
    by a sharp factor 2.
 
-3. **Slope identification with N7.** The retained N7 slope `√5/20`
+3. **Slope identification with N7.** The supplied N7 slope `√5/20`
    appears EXACTLY as the slope of the orthocenter offset from the
    apex. Connects the angular N7 theorem to a positional statement.
 
-These are propositions about the protected-γ̄ surface's classical
-triangle geometry that were not derivable from `(N1)`-`(N9)` alone
-without the explicit construction.
+These are classical geometric consequences of `(N1)`-`(N3)` with the supplied N7 comparison, not independent physical information beyond those inputs.
 
 ## What This Claims
 
 - `(O1)` NEW EXACT orthocenter `H = (ρ̄, (20+α_s)/(24√5))`.
 - `(O2)` NEW EXACT apex-orthocenter offset `H - V_3 = (0, α_s √5/20)`.
 - `(O3)` NEW EXACT centroid `G = ((28-α_s)/72, √5(4-α_s)/72)`.
-- `(O4)` Re-derived circumcenter `O = (1/2, -α_s √5/40)` from retained
+- `(O4)` Re-derived circumcenter `O = (1/2, -α_s √5/40)` from supplied
   N1, N2, N3 (consistent with previously derived form on the
   pending circumradius branch but here re-derived independently).
 - `(O5)` NEW Euler line identity `H = 3G - 2O` verified algebraically.
@@ -535,9 +518,9 @@ without the explicit construction.
 
 - It does not extend the protected-γ̄ surface to NNLO Wolfenstein. The
   closed forms are EXACT on the NLO protected-γ̄ surface.
-- It does not modify any retained CKM atlas, Wolfenstein, CP-phase,
+- It does not modify any supplied CKM atlas, Wolfenstein, CP-phase,
   right-angle, NLO-protected-γ̄, or magnitudes structural counts theorem.
-- It does not use any SUPPORT-tier or open input.
+- It does not establish physical matching, upstream premise closure or audit retention.
 - It does not predict the orthocenter to better experimental precision
   than currently available; the orthocenter is implicit in joint UTfit
   constraints at current sensitivity.

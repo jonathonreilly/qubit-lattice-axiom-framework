@@ -600,6 +600,11 @@
       "source_sha256": "f6612bde7432275d861fe8ea55a13b774cc4c81be9ccc779061c0d6962451837",
       "timeout_sec": 300,
       "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_yt_declared_anchor_bounded_subchain.py": {
+      "source_sha256": "814a20b1826ad9b2945d1749a39ad924687885663d08976f882caf17a0327bec",
+      "timeout_sec": 300,
+      "reason": "Bounded reviewed-unit execution cap; no execution or science assertion."
     }
   }
 }

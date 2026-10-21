@@ -1,0 +1,22 @@
+========================================================================================
+DM LEPTOGENESIS PMNS SELECTOR-BANK CP-SHEET BLINDNESS THEOREM
+========================================================================================
+
+Question:
+  Do any of the current PMNS-side selector laws or positive closure
+  candidates on this branch already fix the constructive mainline CP sheet?
+
+========================================================================================
+PART 1: CURRENT EXACT CLOSURE LAWS ARE CP-SHEET BLIND
+========================================================================================
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py", line 256, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py", line 238, in main
+    part1_current_exact_closure_laws_are_cp_sheet_blind()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/grok-review-20261021/runner-worktree/scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py", line 87, in part1_current_exact_closure_laws_are_cp_sheet_blind
+    i_star, extremal_params = quiet_call(minlaw.part1_transport_extremality_fixes_the_favored_column)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'frontier_dm_leptogenesis_pmns_mininfo_source_law' has no attribute 'part1_transport_extremality_fixes_the_favored_column'

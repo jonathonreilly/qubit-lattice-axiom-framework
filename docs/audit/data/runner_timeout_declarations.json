@@ -607,7 +607,7 @@
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },
     "scripts/frontier_dm_leptogenesis_pmns_microscopic_selector_reduction_theorem.py": {
-      "source_sha256": "bf1db87a88df16614655bb5915f06a8691c86bea993937865e15e3740e3e2718",
+      "source_sha256": "647f2bc42f57de5ba496b784332c94dd0f691a767d40568d82ee963eaa4f2301",
       "timeout_sec": 300,
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },
@@ -627,7 +627,7 @@
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },
     "scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py": {
-      "source_sha256": "3c8b9e2ea3f2317e778bea38bc37d668b9076d302a3f309fe8ad986100aec063",
+      "source_sha256": "b808cb62a1bd6bba00da5e3133131ab269da29c4b8f81f0eceaacc0af4c0ba17",
       "timeout_sec": 300,
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },

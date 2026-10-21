@@ -1,0 +1,11 @@
+{
+  "recovery_source": "5cdc3053ebe202748c218fccee1d9d798ece5c92",
+  "meaning": "Historical failed full-command stdout, not results of replacement bounded primaries. Raw JSON stderr for CP errors retained below.",
+  "stdout_sha256": {
+    "frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.log": "dcbdff97c0db594370a89b3f707fe1e9bbe7a35850bc9dbe697d2e23cb64745c",
+    "frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.log": "18fde9142fa45eb88dfb3cf6d47a7a3955f7fdb1539661dd053887ed190e9dae",
+    "frontier_dm_leptogenesis_pmns_microscopic_selector_reduction_theorem.log": "6859bdd93057e5e11257fb1604cb310953d70be3b02c594ce3c071d0193b68d9",
+    "frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.log": "b8db1ceb944894c1301997808d1f799b13a21f55fba22cdda2b888bfa9ba4d6c",
+    "frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.log": "f25b0ffcd94edd67b54016c8ed604980aa56ecf3098898484756271be9e8e6fb"
+  }
+}

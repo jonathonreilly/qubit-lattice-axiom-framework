@@ -285,6 +285,11 @@ def main() -> int:
   print("Local Taylor coefficients differ at cubic order; this does not prove")
   print("different global minima or impossibility of a source selector.")
   print("The physical selection principle remains an open obligation.")
+  print("per_element: numerical entries and trace contractions checked for the supplied three-dimensional generators; no sitewise physical law inferred.")
+  print("per_site: checked and not executed — no spatial lattice sites or site-dependent dynamics are represented in this finite matrix calculation.")
+  print("per_mode: checked and not executed — no physical mode expansion or mode-dependent selector is constructed by these local Taylor checks.")
+  print("per_block: supplied 3x3 scalar-baseline source block and Gaussian positive-definite domain tested; no other block family is certified.")
+  print("lattice_wide: checked and not executed — no infinite-lattice limit, global selector existence or physical source realization is established.")
   print(f"TOTAL: PASS = {PASS_COUNT}, FAIL = {FAIL_COUNT}")
   return 1 if FAIL_COUNT else 0
 

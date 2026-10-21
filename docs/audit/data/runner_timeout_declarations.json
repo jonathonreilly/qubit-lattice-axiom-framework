@@ -557,7 +557,7 @@
       "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
     },
     "scripts/frontier_dm_neutrino_source_surface_info_geometric_selection_obstruction.py": {
-      "source_sha256": "da9dc84e281ae271f642e08375066df2c44749b333fab0e61bccc5e217a8d5f3",
+      "source_sha256": "78ff20426d3e3addc204551cdf93e66e5bb51999333ee42386955f2ea5def867",
       "timeout_sec": 300,
       "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
     },

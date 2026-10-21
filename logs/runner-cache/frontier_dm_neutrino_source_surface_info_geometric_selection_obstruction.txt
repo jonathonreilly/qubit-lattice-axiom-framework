@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_info_geometric_selection_obstruction.py
-runner_sha256: da9dc84e281ae271f642e08375066df2c44749b333fab0e61bccc5e217a8d5f3
+runner_sha256: 78ff20426d3e3addc204551cdf93e66e5bb51999333ee42386955f2ea5def867
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.44
+elapsed_sec: 0.89
 status: ok
 ----- stdout -----
 
@@ -35,6 +35,11 @@ No Gaussian full-boundary minimizer comparison is made.
 Local Taylor coefficients differ at cubic order; this does not prove
 different global minima or impossibility of a source selector.
 The physical selection principle remains an open obligation.
+per_element: numerical entries and trace contractions checked for the supplied three-dimensional generators; no sitewise physical law inferred.
+per_site: checked and not executed — no spatial lattice sites or site-dependent dynamics are represented in this finite matrix calculation.
+per_mode: checked and not executed — no physical mode expansion or mode-dependent selector is constructed by these local Taylor checks.
+per_block: supplied 3x3 scalar-baseline source block and Gaussian positive-definite domain tested; no other block family is certified.
+lattice_wide: checked and not executed — no infinite-lattice limit, global selector existence or physical source realization is established.
 TOTAL: PASS = 17, FAIL = 0
 
 ----- stderr -----

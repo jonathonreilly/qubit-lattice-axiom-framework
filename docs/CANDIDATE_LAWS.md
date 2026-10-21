@@ -1,7 +1,7 @@
 ---
 claim_id: candidate_laws
 claim_type: meta
-claim_scope: "Register of the current working candidate laws CL-1 to CL-8 and their open dependencies; zero premise weight. Results that use a candidate law are conditional on it."
+claim_scope: "Register of the current working candidate laws CL-1 to CL-7 and their open dependencies; zero premise weight. Results that use a candidate law are conditional on it."
 ---
 
 # Candidate laws
@@ -38,37 +38,35 @@ The axioms say only records are readable but not how many times. CL-3 limits rea
 
 ## CL-4: a relay steps every tick
 
-> "Each tick a relay forms its next record in a neighbouring block, in its direction, at an unburnt site of that block chosen with equal probability. If that block has no unburnt site, the relay takes its direction afresh from its block's odds, restricted to directions whose neighbouring block has one."
+> "Each tick a relay forms its next record in the neighbouring block in its direction, at an unburnt site of that block chosen with equal probability. If that block is used up, the relay takes its direction afresh from its block's odds among directions whose block is not."
 
-Relays therefore always move one block per tick. A block of n sites can take n visits, so a relay may return to a block until the block is used up.
+Relays therefore always move one block per tick. A block of n sites can take n visits.
 
-## CL-5: relays follow the odds
-
-> "The probability that a relay is in a given block travelling in a given direction equals the odds of that block and direction."
-
-This ties where relays are, and which way they go, to the amplitudes, so a relay's step statistics follow the squared amplitudes at every tick. Its domain is blocks with an unburnt site, since CL-4 keeps relays out of used-up blocks.
-
-## CL-6: a relay's energy
+## CL-5: a relay's energy
 
 > "A relay's energy is the mean phase advanced in one tick by its block's direction amplitudes, weighted by their odds."
 
-The phase advance of an amplitude is minus the argument of its value after the tick times the conjugate of its value before, at the same block. Energy is measured in radians per tick. For a mode of definite frequency it is that frequency.
+The phase advance of an amplitude is minus the argument of its value after the tick times the conjugate of its value before, at the same block. Energy is in radians per tick. For a mode of definite frequency it is that frequency.
 
-## CL-7: turning
+## CL-6: relays follow the odds
 
-> "Each tick, with probability twice its energy, a relay takes its direction afresh from its block's odds. Then, if the tick update has changed the odds, a relay in a direction now holding more than its odds switches, with probability equal to that direction's excess fraction, to a direction holding less, chosen in proportion to the shortfalls."
+> "Relays are distributed as the odds of block and direction. Each tick, with probability twice its energy, a relay takes its direction afresh from its block's odds; where the tick update has changed the odds, relays in directions over their odds then switch to directions under them, in proportion to the shortfalls."
 
-Its domain is relays whose energy is at most one half radian per tick. For a mode of definite frequency the odds do not change, so only the first sentence acts, and it keeps CL-5.
+The first sentence is what the second maintains: once relays start distributed as the odds, the switching keeps them so at every tick. Its domain is relays whose energy is at most one half radian per tick, and blocks that are not used up.
 
-## CL-8: the record source
+## CL-7: the record source
 
 > "Each step of a relay in direction d adds its energy times d d to the record source. Each turn from d to d' adds -(d'-d)(d'-d)/4."
 
-For a mode of definite frequency of a tick update that moves each direction amplitude one block along its direction, CL-5 to CL-8 give a source equal to energy times v v, shear included, where v is the group velocity. For packets the momentum balance closes up to a residual that falls with packet width. Evidence: `docs/SCALE_LADDER_GRAVITY_BURN_AND_TURN_SOURCE_TENSOR_BOUNDED_THEOREM_NOTE_2026-10-21.md` and `docs/RELAY_ENERGY_AS_LOCAL_ODDS_FREQUENCY_BOUNDED_THEOREM_NOTE_2026-10-21.md`.
+For a mode of definite frequency, of a tick update that moves each direction amplitude one block along its direction, CL-5 to CL-7 give a source equal to energy times v v, shear included, where v is the group velocity. For packets the momentum balance closes up to a residual that falls with packet width. Evidence: `docs/SCALE_LADDER_GRAVITY_BURN_AND_TURN_SOURCE_TENSOR_BOUNDED_THEOREM_NOTE_2026-10-21.md` and `docs/RELAY_ENERGY_AS_LOCAL_ODDS_FREQUENCY_BOUNDED_THEOREM_NOTE_2026-10-21.md`.
+
+## What follows without a further law
+
+Suppose geometry responds to the record source through a symmetric tensor field, linearly and without loss (CL-1). Then the response operator is the linearised Einstein operator, the field is massless, and every species couples with the same strength. A static source then has equal time and space potentials, so light is deflected twice as much as by the time potential alone. These steps are rederived in `docs/RECORD_PROGRAM_THEOREMS_REDERIVED_BOUNDED_THEOREM_NOTE_2026-10-21.md`.
 
 ## Open dependencies
 
-- **The tick update of the odds.** CL-5 to CL-8 use it, but no law here fixes it. This includes how a block's possibilities split into step directions, and each species' mixing strength (its mass). One candidate uses one qubit per site and three nearest-neighbour substeps, with step directions given by the qubit's own Pauli outcomes. It satisfies CL-5 to CL-8 exactly for plane waves (`docs/ONE_QUBIT_SPLIT_STEP_WALK_RELAY_SOURCE_AND_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md`). It is not adopted, because its fixed substep order breaks exact cubic covariance, its massless fermions come with opposite-chirality doublers, and a mass term needs a further rule.
-- **Reading squared amplitudes as probabilities.** The Terms take the squared magnitudes of the odds as probabilities; the axioms give a per-site distribution but not this identification for block-direction amplitudes.
-- **The field equation.** Nothing here says how geometry responds to the record source, or fixes its coupling.
-- **Proper time.** On cubic walks in 3D the turn count is not a relativistic clock. Flips set by the chirality coherence converge to one in a supplied spin-1/2 walk, but they need signed ticks where packets interfere, so no clock law is listed.
+- **The tick update of the odds.** CL-5 to CL-7 use it, but no law here fixes it. That includes how a block's possibilities split into step directions, and each species' mixing strength, i.e. its mass. One candidate uses one qubit per site and three nearest-neighbour substeps, with step directions given by the qubit's own Pauli outcomes. It satisfies CL-5 to CL-7 exactly for plane waves (`docs/ONE_QUBIT_SPLIT_STEP_WALK_RELAY_SOURCE_AND_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md`). It is not adopted, for three reasons. Its fixed substep order breaks exact cubic covariance, its massless fermions come with opposite-chirality doublers, and a mass term needs a further rule.
+- **Reading squared amplitudes as probabilities.** The axioms give a per-site distribution, but not this reading of block-direction amplitudes.
+- **The gravitational response.** The derivation above needs two inputs no law here supplies: that geometry responds through a symmetric tensor field, and the strength of the coupling.
+- **Proper time.** Flips set by the chirality coherence tick at m psibar psi / psi^dag psi, which equals m^2/E exactly on positive-energy states. The coherence is negative where packets interfere, though, so a counted clock would need signed ticks. No clock law is listed.

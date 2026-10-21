@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/relay_number_change_by_switching_confined_to_tick_connected_configurations_2026_10_21.py
+runner_sha256: 64d265ac5d23a77b6dfd529149dac841dd50b74b058f6bd11149e43f3d749810
+input_fingerprint_sha256: ad52b504e710bdc6e76f9e71eee7e920916505050ef79e41db319eee612bac1f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.15
+status: ok
+----- stdout -----
+[PASS] M1 tick conserves value Q = n_a - n_b exactly; relay number N = n_a + n_b is not conserved  |[Q,U]| = 0.0e+00, |[N,U]| = 0.41
+[PASS] vacuum stability: with the coupling off, relay number commutes with the tick
+[PASS] sea picture: spectrum of H_A + eps equals pair-picture spectrum H_B; B vacuum <-> filled lower mode (A ground config)  max spectral gap 1.1e-15
+[PASS] M1 Born: class odds conserved by the tick (equivariance hypothesis) and 20000 trajectories follow |psi|^2 over 40 ticks  class-total drift 8.9e-16, max deviation 2.27 sigma
+[PASS] M1: relays are created and end in pairs; every jump keeps Q  39971 creations, 20110 endings
+[PASS] M1 resonant: relay deposits + link-quantum deposits are unchanged by every jump; relay deposits alone jump by 2 eps  max |d(full)| = 0.0e+00, max |d(relays only)| = 0.60
+[PASS] switching confined to tick-connected classes keeps per-jump energy; unconfined shortfall makes energy-violating jumps (control)  violating jumps: confined 0, unconfined 4330
+[PASS] tick-energy is conserved only mod 2 pi per tick: Om = 2 eps + 2 pi converts as fully as resonance; Om = 2 eps + 1 does not  max pair odds 1.000, 1.000, 0.059
+[PASS] dressed state: joint phase advance is the same in every configuration (= quasienergy), bare deposits differ by the binding share  quasienergy 0.4800, bare deposits 0.6000, binding -0.1200
+[PASS] fermionic shift implements c_i -> c_pi(i) on Fock space (every relay steps one block, CL-4)  max 0.0e+00
+[PASS] M2 tick commutes with ring translation (no block privileged)
+[PASS] M2 vacuum stability: with the pulse off the empty state stays empty
+[PASS] M2 Born: block-class odds conserved by each coin, and 6000 trajectories reproduce mode occupations and relay-number odds  class drift 8.9e-16; P(N=1,3,5) exact 0.844,0.150,0.006 vs sampled 0.839,0.155,0.006; max 1.64 sigma
+[PASS] M2: the pulse creates relays (relay number changes) and every coin event keeps each block value  P(N>1) = 0.156, block-value violations 0
+[PASS] controls: joint switching over the whole configuration (same total value) moves value between blocks; a same-value pair coin breaks block value  violating trajectory-ticks: global 4931, same-value coin 2669
+[PASS] records on 400 trajectories: one record per site, none read twice, an ended relay's last record never read, record value per tick = total value  twice-read 0, last-record reads 0, value mismatches 0, full blocks 0
+[PASS] relays begin and end only in opposite-value pairs in one block  796 pairs begun, 715 pairs ended, unpaired events 0
+supplied: one fermion mode per block mode; value labels; the vacuum (empty modes = filled lower band); the link mode and its energy deposit; coin, pulse and coupling; relay-identity matching at switches; site choice.
+elapsed_seconds 2.9
+
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

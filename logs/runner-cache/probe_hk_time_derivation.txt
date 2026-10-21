@@ -1,30 +1,36 @@
 ===== runner cache v1 =====
 runner: scripts/probe_hk_time_derivation.py
-runner_sha256: bd38846f35d4a83ce3076e5e0e92e6108fb3ed8d6395b4ff8e7a3798b8aa543d
-timeout_sec: 120
+runner_sha256: 870f661b906ed7b98d9313d329a22f4a2203a50ab18bae9d010293fe6a5fff73
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 1.03
+elapsed_sec: 0.60
 status: ok
 ----- stdout -----
 ========================================================================
-Block 01 R1.A — Exact-Arithmetic Verification of Theorem (T1)
+Block 01 R1.A — Conditional Gaussian matching and trace identities
 Companion: docs/BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md
 ========================================================================
 
+SUPPLIED t=1 character expectation preview (not a new check): ⟨P⟩_HK,1plaq(t=1) = exp(-2/3) = 0.513417119032592
+NUMERICAL t1 Hessian coefficient, p,q<=8: 0.4374978076958692
+NUMERICAL t1 Hessian coefficient, p,q<=12: 0.437499999999294
+NUMERICAL t1 Hessian coefficient, p,q<=20: 0.4375000000000003
+NUMERICAL t1 Hessian coefficient, p,q<=30: 0.4375000000000003
 [PASS] K1 canonical Tr-form: Tr(T_a T_b) = δ_{ab}/2 verified for all 8×8=64 pairs
 [PASS] K2 orthonormal basis: {T_a} orthonormal under ⟨X,Y⟩ = 2·Tr(XY): all 64 inner products correct
 [PASS] K3 Wilson small-U expansion: Re Tr exp(iX) = N_c - (1/2)Tr(X²) verified: re_tr_U = 3 - eps**2/4
 [PASS] K4 Tr(X²) → (1/2) |X|²: Tr(X²) = (1/2) Σ_a (X^a)² verified symbolically
-[PASS] K5 derived t(β=6) = 1: t(β) = 6/beta = 2·N_c/β; t(6) = 1 (expected 1)
-[PASS] K6 t = g_bare² (canonical): t = 2·N_c/β = g_bare**2; expected g_bare² = g_bare**2
-[PASS] K7 ⟨P⟩_HK,1plaq preview: ⟨P⟩_HK,1plaq(t=1) = exp(-2/3) = 0.513417119032592
+[PASS] K5 formal Gaussian parameter at beta6 = 1: t(β) = 6/beta = 2·N_c/β; t(6) = 1 (expected 1)
+[PASS] K6 formal Gaussian parameter = supplied g_bare²: t = 2·N_c/β = g_bare**2; expected g_bare² = g_bare**2
+[PASS] K8 finite-cutoff Hessian sums stabilize: No infinite-tail certificate
+[PASS] K9 fixed-time Gaussian negative control: Numerical discrepancy from assumed0.5
 
-SUMMARY: PASS=7 FAIL=0
+SUMMARY: PASS=8 FAIL=0
 
-Theorem (T1) verified at canonical normalization: t = 2 N_c / β = g_bare²
-At framework β = 6, g_bare = 1: t(6) = 1 (exact rational).
+Conditional leading Gaussian coefficient identity: t_leading = 2 N_c / beta.
+At supplied beta6 the formal substitution is1; exact finite-time matching is not proved.
 
-Block 02 preview: ⟨P⟩_HK,1plaq(6) = exp(-2/3) ≈ 0.5134171190
+Supplied t=1 preview: ⟨P⟩_HK,1plaq(t=1) = exp(-2/3) ≈ 0.5134171190
 
 ----- stderr -----
 

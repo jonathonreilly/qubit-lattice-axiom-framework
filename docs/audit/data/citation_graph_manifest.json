@@ -1,5 +1,5 @@
 {
- "edge_count": 16342,
+ "edge_count": 16326,
  "node_count": 7407,
  "nodes": {
   "3d_correction_master_note": {
@@ -2675,8 +2675,8 @@
    "out_degree": 5
   },
   "bridge_gap_hk_time_derivation_note_2026-05-06": {
-   "deps_hash": "b121cd97f6dd",
-   "out_degree": 4
+   "deps_hash": "4d107a680217",
+   "out_degree": 2
   },
   "broad_gravity_derivation_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3027,8 +3027,8 @@
    "out_degree": 0
   },
   "charged_lepton_y_tau_ward_combined_no_go_note_2026-05-10": {
-   "deps_hash": "021db6d17889",
-   "out_degree": 6
+   "deps_hash": "5f7f6190189b",
+   "out_degree": 4
   },
   "charged_lepton_y_tau_ward_identity_su2_anchor_note_2026-04-28": {
    "deps_hash": "6e5f0cf0e48f",
@@ -9243,8 +9243,8 @@
    "out_degree": 6
   },
   "hierarchy_heat_kernel_d4_compression_bounded_theorem_note_2026-05-10": {
-   "deps_hash": "264cda678920",
-   "out_degree": 8
+   "deps_hash": "cd45021262dd",
+   "out_degree": 2
   },
   "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
@@ -9375,8 +9375,8 @@
    "out_degree": 13
   },
   "higgs_mass_wilson_chain_partial_progress_note_2026-05-10_higgsh1": {
-   "deps_hash": "5009b0d301c1",
-   "out_degree": 8
+   "deps_hash": "529143163903",
+   "out_degree": 2
   },
   "higgs_mass_wilson_loop_spectroscopy_bounded_note_2026-05-10_higgsh3": {
    "deps_hash": "3f48d6429b21",

@@ -5,9 +5,10 @@ Canonical plaquette-derived quantities on the bounded SU(3) beta=6 surface.
 Authority:
   docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md
 
-These values are bounded same-surface evaluated constants of the current
-plaquette lane.
-They are not experimental imports and not free parameters.
+These constants use the declared pure-gauge beta=6 plaquette comparison/reuse
+input 0.5934. This module does not derive or certify that input. See the current
+boundary-input and reproduction scopes in docs/ALPHA_S_DERIVED_NOTE.md and
+docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md.
 """
 
 from __future__ import annotations

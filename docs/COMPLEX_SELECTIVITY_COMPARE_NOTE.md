@@ -46,14 +46,14 @@ below.
 
 ## Artifact Chain
 
-- [`scripts/COMPLEX_SELECTIVITY_COMPARE.py`](/Users/jonreilly/Projects/Physics/scripts/COMPLEX_SELECTIVITY_COMPARE.py)
-- [`logs/2026-04-06-complex-selectivity-compare.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-complex-selectivity-compare.txt)
+- [`scripts/COMPLEX_SELECTIVITY_COMPARE.py`](../scripts/COMPLEX_SELECTIVITY_COMPARE.py)
+- [`logs/2026-04-06-complex-selectivity-compare.txt`](../logs/2026-04-06-complex-selectivity-compare.txt)
 - retained family cards:
-  - [`archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md)
-  - [`docs/SECOND_GROWN_FAMILY_COMPLEX_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SECOND_GROWN_FAMILY_COMPLEX_NOTE.md)
-  - [`docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md)
-  - [`docs/THIRD_GROWN_FAMILY_SIGN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/THIRD_GROWN_FAMILY_SIGN_NOTE.md)
-  - [`docs/FOURTH_FAMILY_QUADRANT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/FOURTH_FAMILY_QUADRANT_NOTE.md)
+  - [`archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md`](../archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md)
+  - [`docs/SECOND_GROWN_FAMILY_COMPLEX_NOTE.md`](SECOND_GROWN_FAMILY_COMPLEX_NOTE.md)
+  - [`docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md`](ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md)
+  - [`docs/THIRD_GROWN_FAMILY_SIGN_NOTE.md`](THIRD_GROWN_FAMILY_SIGN_NOTE.md)
+  - [`docs/FOURTH_FAMILY_QUADRANT_NOTE.md`](FOURTH_FAMILY_QUADRANT_NOTE.md)
 
 ## Question
 
@@ -87,7 +87,7 @@ failure (`ALT_CONNECTIVITY_FAMILY_COMPLEX_FAILURE_NOTE.md`), and second-family
 boundary (`SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md`) — carry the narrowed
 selectivity split. Re-audit applies to the narrowed split only.
 
-## Safe Read
+## Historical interpretation (subject to the narrowed comparison above)
 
 - signed-source transfer is the portable feature: exact zero / neutral controls survive on several distinct structured families
 - weak-field linearity survives with the signed-source package across the retained grown, alt, third, and fourth family slices
@@ -99,9 +99,9 @@ selectivity split. Re-audit applies to the narrowed split only.
 - the complex-action branch does not share that same surface; it lives on a more constrained `gamma` baseline plus crossover test
 - the result is not a universal family theorem; it is a selectivity split between portable sign-law and basin-local complex action
 
-## Final Verdict
+## Current comparison boundary
 
-**retained selectivity split: signed-source is family-portable, while complex-action is anchor-local and boundary-sensitive**
+**Finite supplied-row comparison only. The renderer performs no independent physics calculation or current audit-status lookup. The original grown-basin signed-source half-row remains historical and outside the narrowed comparison.**
 
 ## Citation chain and audit-stated repair path (2026-05-10)
 

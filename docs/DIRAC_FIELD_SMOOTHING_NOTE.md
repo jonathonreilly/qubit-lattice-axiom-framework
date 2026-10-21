@@ -79,10 +79,12 @@ This note records the source-field broadening scan in
 - TOWARD count: `5/5`
 - offset power law: `alpha = 3.053`, `R^2 = 0.8098`
 
-## Nearby Mass Checks
+## Nearby Mass Checks — historical, outside binding scope
+
+No completed logs for these masses are registered. The following is an unverified historical observation, not evidence for the binding result at `m0 = 0.10`.
 
 Spot checks at `m0 = 0.08` and `m0 = 0.12` did not restore N monotonicity. In both cases, the Gaussian profile remained the best offset-law candidate, reaching `5/5` TOWARD offsets, while the localized profile still failed the N trend.
 
 ## Interpretation
 
-Broadening the source field helps the offset-distance law, and the Gaussian control is clearly better than the current localized profile on that metric. It does not fix the N-monotonicity failure, though, and the nearby mass spot checks did not reveal a better local operating point that changes that conclusion.
+Broadening the source field helps the offset-distance law, and the Gaussian control is clearly better than the current localized profile on that metric. It does not fix the N-monotonicity failure, though, and no robustness conclusion at nearby masses is established by the unlogged historical spot checks.

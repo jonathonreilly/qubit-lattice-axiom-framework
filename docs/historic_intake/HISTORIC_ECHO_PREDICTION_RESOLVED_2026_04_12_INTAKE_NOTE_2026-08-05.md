@@ -18,6 +18,20 @@ required before any effective status.
 
 Four independent lanes explain the null echo search: the action S = L(1-f) absorbs at f > 1, thermal reflectivity gives R ~ 10^-4 to 10^-6 with a mass-independent ratio 8 pi f_1 ~ 9-13, there is no frequency shift, and decisively the evanescent barrier over ~10^38 sites gives tunneling T ~ exp(-10^38 x 88) ~ 10^(-4.6e41), i.e. exactly zero.
 
+## Correction recorded 2026-10-21
+
+The model revision followed the reported 48-event null search. That same
+sample therefore provides no independent validation of the revised prediction.
+The earlier 24.5% amplitude was conditional on hard-wall reflectivity R = 1,
+not an unconditional prediction with reflectivity left free.
+
+For the printed finite exponent, exp(-88 × 10^38) is strictly positive and
+its base-ten form is approximately 10^(-3.821791440748616 × 10^39), not
+10^(-4.6 × 10^41). “Exactly zero” in the historical summary is incorrect.
+This arithmetic correction does not independently validate the search,
+the barrier model, or the asserted independence of its four mechanisms.
+The pinned original remains unchanged.
+
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -36,7 +50,7 @@ The echo lane's post-hoc immunization ON THE RECORD: the falsifiable 24.5% echo 
 
 ## Attached evidence (registered with, not as, this claim)
 
-- none
+- [Finite correction recomputation](../review_evidence/historical-finite-corrections-2026-10-21/recompute.py), [results](../review_evidence/historical-finite-corrections-2026-10-21/results.json), and [source hashes/scope](../review_evidence/historical-finite-corrections-2026-10-21/manifest.json) support only the 2026-10-21 correction. They do not validate the historical echo model, observational search, Higgs chain, or unrelated Kasteleyn claims.
 
 ## Triage extraction notes (2026-08-05/08, not from the original)
 

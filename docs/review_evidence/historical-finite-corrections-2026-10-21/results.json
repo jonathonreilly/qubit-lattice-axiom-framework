@@ -1,0 +1,47 @@
+{
+  "scope": "finite combinatorics and exponential arithmetic only; no echo-model, search or Higgs-chain validation",
+  "kasteleyn": [
+    {
+      "dimensions": [
+        4,
+        3,
+        2
+      ],
+      "sites": 24,
+      "det_exact_bareiss": 1805,
+      "det_exact_signed_dp": 1805,
+      "abs_det": 1805,
+      "perfect_matchings_unsigned_graph_recursion": 1845,
+      "defects": []
+    },
+    {
+      "dimensions": [
+        2,
+        3,
+        3
+      ],
+      "sites": 18,
+      "det_exact_bareiss": 225,
+      "det_exact_signed_dp": 225,
+      "abs_det": 225,
+      "perfect_matchings_unsigned_graph_recursion": 229,
+      "defects": []
+    },
+    {
+      "dimensions": [
+        4,
+        3,
+        3
+      ],
+      "sites": 36,
+      "det_exact_bareiss": 101761,
+      "det_exact_signed_dp": 101761,
+      "abs_det": 101761,
+      "perfect_matchings_unsigned_graph_recursion": 117805,
+      "defects": []
+    }
+  ],
+  "echo_log10_transmission": "-3821791440748616083329934486466124724190.6936510722",
+  "finite_exponential_strictly_positive": "exp(x)>0 for every finite real x; numerical underflow is not exact zero",
+  "checks": "three finite determinant/matching inequalities and decimal logarithm conversion passed"
+}

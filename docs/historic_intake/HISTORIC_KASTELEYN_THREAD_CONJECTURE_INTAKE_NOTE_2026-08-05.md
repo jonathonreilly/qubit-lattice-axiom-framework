@@ -18,6 +18,26 @@ required before any effective status.
 
 Empirical Singleton Hypothesis: for a Z^3 cuboid minus a defect set D, the K3 staggered phases are Pfaffian-optimal (|det B| = #PM) if and only if the truncated graph is contractible (Euler chi = 1) AND D contains no isolated singleton components — 15+ confirming data points, 0 counterexamples, across sizes (3,3,2), (4,3,2), (4,4,2).
 
+## Correction recorded 2026-10-21
+
+The historical “0 counterexamples” statement above is superseded. For the
+original's filled-cuboid interpretation of contractibility, defect-free cuboids
+already refute the sufficient direction of its singleton biconditional:
+
+| Cuboid dimensions | Absolute signed determinant | Perfect matchings |
+| --- | ---: | ---: |
+| (4, 3, 2) | 1805 | 1845 |
+| (2, 3, 3) | 225 | 229 |
+| (4, 3, 3) | 101761 | 117805 |
+
+The empty defect set has no singleton components. Determinants were checked
+by fraction-free elimination and signed permutation dynamic programming;
+matching counts used a separate unsigned-graph recursion. These finite
+counterexamples do not adjudicate the separate reflection-degeneracy claim.
+A graph regarded only as a one-dimensional complex is not the filled cuboid;
+that alternative interpretation must not be conflated with the original's
+examples. The pinned original is preserved as historical evidence.
+
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -36,7 +56,7 @@ The Kasteleyn thread conjecture: Pfaffian-optimality iff contractibility, consol
 
 ## Attached evidence (registered with, not as, this claim)
 
-- none
+- [Finite correction recomputation](../review_evidence/historical-finite-corrections-2026-10-21/recompute.py), [results](../review_evidence/historical-finite-corrections-2026-10-21/results.json), and [source hashes/scope](../review_evidence/historical-finite-corrections-2026-10-21/manifest.json) support only the 2026-10-21 correction. They do not validate the historical echo model, observational search, Higgs chain, or unrelated Kasteleyn claims.
 
 ## Triage extraction notes (2026-08-05/08, not from the original)
 

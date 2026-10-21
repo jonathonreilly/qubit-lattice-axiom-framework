@@ -48,6 +48,15 @@ current Ward-primary YT residual budget**. The remaining Higgs blocker is no
 longer “missing framework-native 3-loop implementation,” and it is no longer a
 separate Higgs-native closure failure either.
 
+## Route-comparison limitation
+
+The displayed two-loop and full-three-loop routes differ by 5.3 GeV
+(5.33 GeV at the snapshot precision). The lower route lies outside the quoted
+121.1–129.2 GeV inherited YT band. This note does not demonstrate that the
+band covers this route discrepancy or supply a common-input truncation-error
+analysis. The numerical separation alone does not identify which calculation,
+input choice, or approximation accounts for it.
+
 ## Component Structure
 
 1. The direct taste-sector Higgs formula gives the auxiliary lattice-scale

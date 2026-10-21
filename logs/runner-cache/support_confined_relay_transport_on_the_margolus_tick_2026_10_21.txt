@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/support_confined_relay_transport_on_the_margolus_tick_2026_10_21.py
+runner_sha256: 54fcd513a8cedd93a67f98b02ab5d6d0f0ef4e47fa87c3900e486b2e2ae8a029
+input_fingerprint_sha256: 9063f3912adeb49c22e818748cafd7f4ffe443ceeb6612acfd6e68f46b3188a3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 16.98
+status: ok
+----- stdout -----
+A. one Margolus block (8 sites): existence, and the two earlier rules
+[PASS] A1 W is Hermitian with W^2 = 1, face holonomy -1
+[PASS] A2 Hall condition q(S) <= p(N^-1 S) for all 254 target sets (P_S U = P_S U P_N^-1(S), U unitary): a support transport exists  max excess 5.6e-16 (mu = 0, 0.3; 300 states)
+[PASS] A3 earlier rule 1 (proportional shortfall switching restricted to connected targets) does not keep Born  max inflow error 0.317
+[PASS] A4 earlier rule 2 (margolus-relays straight-pairing minimal switching) keeps Born only by using transitions along ZERO elements of W  mass on zero elements per half-tick: min 0.317, mean 0.679
+[PASS] A5 a distribution |psi|^(2a), a != 1, has no support transport at mu = 0 for any tested state (W maps even sites onto odd sites)  infeasible of 150: a=0.5 mu=0.0: 150, a=0.5 mu=0.3: 0, a=2.0 mu=0.0: 150, a=2.0 mu=0.3: 79
+      [1 s]
+B. does "leaves the most in place" give one answer?
+[PASS] B1 the max-stay plan is never unique: optimal-face dimension 10 at mu = 0 (no stays allowed), >= 1 at mu = 0.3  mu=0: 10..10; mu=0.3: 5..5 (60 states each)
+[PASS] B2 an LP vertex privileges labels: relabelling the configurations changes the plan  changed in 0.95 of cases, max 0.249
+[PASS] B3 max-entropy tie-break: one plan (strictly concave), relabelling-equivariant, continuous  relabel error 1.7e-16; max |dJ|/|dpsi| 0.72
+[PASS] B4 the least-squares tie-break is also unique and equivariant but gives a different plan  median |J_L2 - J_maxent| 0.015
+[PASS] B5 counting the configuration as one thing correlates independent relays; counting relays (modes) left in place does not  A's plan shift by unentangled B: identity cost 0.077 (joint stay exceeds product by up to 0.198), modes cost 7.5e-16
+[PASS] B6 with the modes cost, max entropy moves independent relays independently; least squares does not  A-plan shift by unentangled B: max-entropy 1.9e-15, least-squares 5.4e-03 (dense 4-config half-ticks)
+[PASS] B7 the step is load-bearing: one transport per half-tick differs from two block-by-block transports of the same unitary  max plan difference 0.045; slicing moves 0.37..0.67 more modes (2 entangled relays)
+      [5 s]
+C. one relay on the lattice
+[PASS] C1 mu=0.3: packet on 12^3, 16 half-ticks: distribution stays the odds; 20000 samples match  max |rho - |psi|^2| 1.8e-17, chi2/dof 1.02, jump/half-tick 0.575; revisit 0.445; drift max-entropy 0.3826 = LP vertex 0.3826 site/tick
+[PASS] C1 mu=0.0: packet on 12^3, 16 half-ticks: distribution stays the odds; 20000 samples match  max |rho - |psi|^2| 7.4e-18, chi2/dof 0.93, jump/half-tick 1.000; revisit 0.023; drift max-entropy 0.8042 = LP vertex 0.8042 site/tick
+[PASS] C6 FINDING: F5 relays return to sites they already burnt (stays, zigzags); one record per site forbids it  half-ticks landing on an own burnt site: mu=0.3 0.445, mu=0 0.023
+[PASS] C2 plane waves: exact mean drift = group velocity 2 grad w site/tick (any block-confined transport)  mu 0.3 K~(1, 0, 0): |v|=0.839 err 3e-11, mu 0.3 K~(1, 1, 0): |v|=0.967 err 5e-11, mu 0.0 K~(1, 0, 0): |v|=0.894 err 1e-10, mu 0.6 K~(1, 1, 1): |v|=1.058 err 8e-12
+[PASS] C3 relays jump at most half-ticks (all at mu = 0: <s|W|s> = 0); paths zigzag  mu 0.3: jump 0.53, path 1.07/tick, net/path 0.81; mu 0.3: jump 0.68, path 1.37/tick, net/path 0.75; mu 0.0: jump 1.00, path 2.00/tick, net/path 0.48; mu 0.6: jump 0.92, path 1.83/tick, net/path 0.62
+[PASS] C5 FINDING: for some plane waves the relays split into two sublattice streams that never mix, moving at different velocities (Born mean = v_g)  split polarisations of 8: mu 0.3 K~(1, 0, 0): 5, mu 0.3 K~(1, 1, 0): 4, mu 0.0 K~(1, 0, 0): 0, mu 0.6 K~(1, 1, 1): 0; e.g. streams [1.507 0.    0.   ] (weight 0.27) and [0.513 0.    0.   ] vs v_g [0.839 0.    0.   ]
+[PASS] C4 no block privileged: translating the state by one block translates the plan  2.6e-18
+      [11 s]
+D. two entangled fermion relays on 4^3 (2016 pair configurations, cost = relays moved)
+[PASS] D1 joint F5 keeps the joint odds of two entangled relays exactly; 20000 sampled pairs match  max TV 3.4e-16, chi2/dof 0.98
+[PASS] D2 control: each relay moved by its own one-relay F5 kernel does not keep the joint odds  TV 0.343
+      per half-tick: both stay 0.323, one moves 0.511, both move 0.165
+      [12 s]
+E. relay number free: ring of 3 blocks x 4 fermion modes (4096 occupations), shift + pair-pulse coins (relay-number model)
+[PASS] E1 F5 on whole half-ticks of occupation configurations keeps Born while relays are created and end; each event keeps every block value  max TV 7.4e-11 (Sinkhorn 1e-10); P(N=1,3,5) 0.844,0.150,0.006 vs 0.852,0.142,0.006; block-value violations 0
+      coin events per relay-tick: stay 0.563, switch 0.258, pair begun 0.091, pair ended 0.088
+      [15 s]
+F. readers and CHSH (relays on two Margolus blocks; supplied basis rotations and pointer couplings)
+[PASS] F1 CHSH: sampled relay outcomes reach the quantum value, settings applied in one half-tick or one after the other  exact 2.828427; relays 2.836 (same half-tick), 2.821 (B first)
+[PASS] F2 support: a later step acting on A alone never moves B, so B's recorded outcome stands  B moves 0 of 160000
+      untested prediction: same-half-tick settings shift B's own turn odds by 0.0366 between a = 0 and pi/2 (B's outcome odds unchanged)
+[PASS] F3 two readers of one system: joint F5 gives Born reading odds and never-disagreeing readers; later system steps never move pointers  ballistic pointers: P(read) 0.3017 vs 0.3, disagreement 0.0000; massive pointers: disagreement 0.2341 vs Born 0.2339
+[PASS] F4 control: pointers moved by their own marginal odds disagree (2p(1-p) = 0.42 when Born says 0)  0.4182; massive 0.4545 vs Born 0.2339
+      [16 s]
+supplied: configuration space; cost (modes moved); max-entropy tie-break; the half-tick as the step; gates, coins, pulse; states.
+
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

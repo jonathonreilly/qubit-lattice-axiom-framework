@@ -1,5 +1,7 @@
 # DM PMNS Fixed `N_e` Seed-Surface Exact Source-Manifold Theorem
 
+**Type:** bounded_theorem
+
 **Date:** 2026-04-20  
 **Lane:** PMNS / `I5` remaining angle-pin task  
 **Status:** support - structural or confirmatory support note

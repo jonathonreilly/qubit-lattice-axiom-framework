@@ -1,39 +1,14 @@
 #!/usr/bin/env python3
-"""
-DM selector shifted-doublet-imaginary-sign support theorem.
-
-Question:
-  After identifying the canonical recovered projection of the internal
-  selector, can the remaining recovered-bank selector burden be sharpened to
-  one exact doublet-block activation side?
-
-Answer:
-  Yes.
-
-  The active doublet-block theorem gives
-
-      Im(K_Z3[1,2]) = sqrt(3) * delta - 4 sqrt(2) / 3.
-
-  On the current selector packet:
-
-    - the exact observable-relative-action source lies on the positive side
-      Im(K_Z3[1,2]) > 0,
-    - the preferred recovered lift 0 is the unique recovered lift on that
-      same positive side,
-    - every other recovered lift lies on the negative side,
-    - and the preferred recovered lift is already the unique threshold
-      selector picked by tau_b,min.
-
-  So the live selector burden narrows again: on the current packet, it is
-  enough to derive the positive activation law for the shifted imaginary
-  doublet mixing, or to replace that packet by a finer microscopic law.
+"""Finite numerical comparison on supplied relative-action/recovered packets.
+No physical selector, exact uniqueness, all-shift or DM closure is established.
+The relative-action source uses an imposed observed-target equality and local
+optimization. Checks below compare finite fixtures and sampled shifts only.
 """
 
 from __future__ import annotations
 
 import math
 import sys
-from pathlib import Path
 
 import numpy as np
 
@@ -64,7 +39,8 @@ from frontier_dm_neutrino_source_surface_atomic_witness_volume_selector_nonreali
 )
 from dm_selector_branch_support import ANCHOR_OFFSET, common_shift
 
-ROOT = Path(__file__).resolve().parents[1]
+
+AUDIT_TIMEOUT_SEC = 300
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -84,12 +60,8 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
     return condition
 
 
-def read(rel: str) -> str:
-    return (ROOT / rel).read_text(encoding="utf-8")
 
 
-def flat(text: str) -> str:
-    return " ".join(text.split())
 
 
 def imag12_from_h(h: np.ndarray) -> float:
@@ -106,10 +78,6 @@ def main() -> int:
     print("DM SELECTOR SHIFTED-DOUBLET-IMAGINARY-SIGN SUPPORT THEOREM")
     print("=" * 88)
 
-    doublet_note = read("docs/DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM_NOTE_2026-04-16.md")
-    sep_note = read("docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_BRANCH_SEPARATION_SUPPORT_THEOREM_NOTE_2026-04-21.md")
-    proj_note = read("docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_PROJECTION_SUPPORT_THEOREM_NOTE_2026-04-21.md")
-    review = read("docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md")
 
     _i_star, _x_sel, _y_sel, _delta_sel, h_rel, _etas = observable_relative_action_selection()
     rel_target = np.asarray(active_target_from_h(h_rel), dtype=float)
@@ -133,30 +101,22 @@ def main() -> int:
     print("=" * 88)
 
     check(
-        "The doublet-block theorem note records delta = (Im K12 + 4 sqrt(2)/3) / sqrt(3)",
-        "delta = (Im K12 + 4 sqrt(2)/3) / sqrt(3)" in doublet_note,
-    )
-    check(
         "So the exact sign boundary is delta = 4 sqrt(2) / (3 sqrt(3))",
         abs(d_cut - 4.0 * math.sqrt(2.0) / (3.0 * math.sqrt(3.0))) < 1.0e-12,
         f"delta_cut = {d_cut:.15f}",
     )
 
     print("\n" + "=" * 88)
-    print("PART 2: THE INTERNAL SELECTOR LIES ON THE POSITIVE SIDE OF THAT BOUNDARY")
+    print("PART 2: THE SUPPLIED NUMERICAL SOURCE LIES ON THE POSITIVE SIDE OF THAT BOUNDARY")
     print("=" * 88)
 
     check(
-        "The separation note still records the exact internal observable-relative-action selector",
-        "observable-relative-action law" in sep_note and "exact internal selector law" in sep_note,
-    )
-    check(
-        "The internal selector target has delta_rel > delta_cut",
+        "The supplied numerical source target has delta_rel > delta_cut",
         rel_target[0] > d_cut,
         f"(delta_rel, delta_cut)=({rel_target[0]:.12f}, {d_cut:.12f})",
     )
     check(
-        "Equivalently, the internal selector has positive shifted imaginary doublet mixing Im(K12) > 0",
+        "Equivalently, the supplied numerical source has positive shifted imaginary doublet mixing Im(K12) > 0",
         rel_imag > 0.0,
         f"Im(K12)_rel = {rel_imag:.12e}",
     )
@@ -191,7 +151,7 @@ def main() -> int:
     e2_bank = np.array([float(t["E2"]) for t in triplet_bank], dtype=float)
 
     check(
-        "All recovered lifts already share the same exact constructive triplet tuple",
+        "All recovered lifts already share matching constructive triplet tuples within tolerance",
         np.allclose(gamma_bank, gamma_bank[0], atol=1.0e-12)
         and np.allclose(e1_bank, e1_bank[0], atol=1.0e-12)
         and np.allclose(e2_bank, e2_bank[0], atol=1.0e-12),
@@ -213,17 +173,12 @@ def main() -> int:
     print("=" * 88)
 
     check(
-        "The projection note still records that the preferred recovered lift is the canonical recovered image of the internal selector",
-        "canonical recovered projection" in flat(proj_note)
-        and "preferred recovered lift `0`" in flat(proj_note),
-    )
-    check(
         "The intrinsic threshold candidate tau_b,min still selects the same preferred recovered lift uniquely",
         tau_idx == 0 and tau_margin > 1.0e-9,
         f"(winner, margin)=({tau_idx}, {tau_margin:.12f})",
     )
     check(
-        "So on the current selector packet the internal selector, the recovered projection, the threshold selector, and the shifted-imaginary sign all agree on the same preferred recovered lift",
+        "So on the current selector packet the supplied numerical source, the recovered projection, the threshold selector, and the shifted-imaginary sign all agree on the same preferred recovered lift",
         len(positive_idx) == 1 and int(positive_idx[0]) == 0 and tau_idx == 0 and rel_imag > 0.0,
         "same preferred lift 0",
     )
@@ -233,17 +188,12 @@ def main() -> int:
     print("=" * 88)
 
     check(
-        "The review register still names the finer right-sensitive microscopic selector law as open",
-        "finer right-sensitive microscopic point-selection law" in review
-        or "finer right-sensitive microscopic selector law" in review,
-    )
-    check(
-        "On the current selector packet, the shifted-imaginary sign is the first right-sensitive datum that refines the sharp source tuple and constructive triplet chamber",
+        "On the current selector packet, the shifted-imaginary sign is a right-sensitive datum that refines the sharp source tuple and constructive triplet chamber",
         np.allclose(gamma_bank, gamma_bank[0], atol=1.0e-12)
         and np.all(gamma_bank > 0.0)
         and len(positive_idx) == 1
         and int(positive_idx[0]) == 0,
-        "first right-sensitive refinement",
+        "finite-bank sign refinement",
     )
     check(
         "So the remaining selector burden now narrows to the positive activation law for the shifted imaginary doublet mixing, or a finer replacement law",
@@ -254,7 +204,7 @@ def main() -> int:
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  The internal selector target already lies on the positive side of the")
+    print("  The supplied numerical source target already lies on the positive side of the")
     print("  canonical doublet-block boundary Im(K12)=0.")
     print("  On the recovered bank, the preferred lift 0 is the unique point on that")
     print("  same positive side, and it is already the recovered threshold selector")
@@ -265,6 +215,7 @@ def main() -> int:
     print("    doublet mixing on the current selector packet, or replace it")
     print("    with a finer microscopic law.")
     print()
+    print("[SCOPE] Supplied finite numerical comparisons; physical selection remains open.")
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1
 

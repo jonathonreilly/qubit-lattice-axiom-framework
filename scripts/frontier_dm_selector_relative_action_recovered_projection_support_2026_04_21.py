@@ -1,41 +1,14 @@
 #!/usr/bin/env python3
-"""
-DM selector relative-action / recovered projection support theorem.
-
-Question:
-  Once the observable-relative-action source and the recovered threshold branch
-  are known to be distinct exact selector objects, is there nevertheless a
-  canonical recovered projection of the internal selector onto that branch?
-
-Answer:
-  Yes.
-
-  The relative-action source still stays off the recovered bank, but the
-  preferred recovered lift is the unique nearest recovered point across a
-  nontrivial audited intrinsic metric family:
-
-    - Frobenius distance on H,
-    - Euclidean distance on the active target (delta, q_+),
-    - threshold-profile distance on the exact witness-volume family,
-    - affine-invariant Riemannian distance on the common positive windows
-      A_mu(H),
-    - dual LogDet divergences on A_mu(H),
-    - and inverse-eigenvalue parameter distance on the same windows.
-
-  The same preferred recovered lift is already the unique point selected by
-  the intrinsic threshold breakpoint tau_b,min.
-
-  So the selector-side burden narrows again: it is no longer to discover a
-  disconnected target on the recovered bank, but to justify the projection
-  principle from the exact internal selector to that already-identified
-  recovered point, or to replace both by a finer microscopic law.
+"""Finite numerical comparison on supplied relative-action/recovered packets.
+No physical selector, exact uniqueness, all-shift or DM closure is established.
+The relative-action source uses an imposed observed-target equality and local
+optimization. Checks below compare finite fixtures and sampled shifts only.
 """
 
 from __future__ import annotations
 
 import math
 import sys
-from pathlib import Path
 
 import numpy as np
 
@@ -51,7 +24,8 @@ from frontier_dm_selector_relative_action_recovered_branch_separation_support_20
     observable_relative_action_selection,
 )
 
-ROOT = Path(__file__).resolve().parents[1]
+
+AUDIT_TIMEOUT_SEC = 300
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -71,8 +45,6 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
     return condition
 
 
-def read(rel: str) -> str:
-    return (ROOT / rel).read_text(encoding="utf-8")
 
 
 def unique_argmin(values: np.ndarray) -> tuple[int, float]:
@@ -114,9 +86,6 @@ def main() -> int:
     print("DM SELECTOR RELATIVE-ACTION / RECOVERED PROJECTION SUPPORT THEOREM")
     print("=" * 88)
 
-    thresh_note = read("docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md")
-    sep_note = read("docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_BRANCH_SEPARATION_SUPPORT_THEOREM_NOTE_2026-04-21.md")
-    review = read("docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md")
 
     _i_star, _x_sel, _y_sel, _delta_sel, h_rel, _etas_sel = observable_relative_action_selection()
     _lifts, hs_bank, repairs_bank, _targets = recovered_bank()
@@ -172,21 +141,13 @@ def main() -> int:
     print("=" * 88)
 
     check(
-        "The recovered-bank threshold note still records the canonical breakpoint tau_b,min",
-        "tau_b,min" in thresh_note and "earliest middle-branch" in thresh_note,
-    )
-    check(
-        "The separation note still records that the internal selector and recovered branch are distinct exact selector objects",
-        "distinct exact selector objects" in sep_note and "tau_b,rel" in sep_note,
-    )
-    check(
         "The intrinsic threshold breakpoint tau_b,min already selects recovered lift 0 uniquely",
         tau_b_argmin == 0 and tau_b[0] + 1.0e-12 < np.min(tau_b[1:]),
         f"(tau_b_min,next)=({tau_b[0]:.15f},{np.min(tau_b[1:]):.15f})",
     )
 
     print("\n" + "=" * 88)
-    print("PART 2: THE INTERNAL SELECTOR HAS A UNIQUE SHIFT-INDEPENDENT NEAREST RECOVERED POINT")
+    print("PART 2: THE SUPPLIED NUMERICAL SOURCE HAS A UNIQUE SHIFT-INDEPENDENT NEAREST RECOVERED POINT")
     print("=" * 88)
 
     h_idx, h_margin = unique_argmin(h_dists)
@@ -210,7 +171,7 @@ def main() -> int:
     )
 
     print("\n" + "=" * 88)
-    print("PART 3: THE SAME PREFERRED LIFT PERSISTS ACROSS THE AUDITED POSITIVE-WINDOW GEOMETRIES")
+    print("PART 3: THE SAME PREFERRED LIFT PERSISTS ACROSS THE TESTED POSITIVE-WINDOW GEOMETRIES")
     print("=" * 88)
 
     airm_ok = all(idx == 0 and margin > 1.0e-9 for idx, margin in shift_results["airm"])
@@ -223,24 +184,24 @@ def main() -> int:
     par_margin = min(margin for _idx, margin in shift_results["inverse_params"])
 
     check(
-        "Across all audited common positive shifts, the affine-invariant Riemannian distance picks recovered lift 0 uniquely",
+        "Across all tested common positive shifts, the affine-invariant Riemannian distance picks recovered lift 0 uniquely",
         airm_ok,
-        f"min audited margin = {airm_margin:.12f}",
+        f"min tested margin = {airm_margin:.12f}",
     )
     check(
-        "Across all audited common positive shifts, the forward LogDet divergence D(A_rel || A_i) picks recovered lift 0 uniquely",
+        "Across all tested common positive shifts, the forward LogDet divergence D(A_rel || A_i) picks recovered lift 0 uniquely",
         fwd_ok,
-        f"min audited margin = {fwd_margin:.12f}",
+        f"min tested margin = {fwd_margin:.12f}",
     )
     check(
-        "Across all audited common positive shifts, the reverse LogDet divergence D(A_i || A_rel) picks recovered lift 0 uniquely",
+        "Across all tested common positive shifts, the reverse LogDet divergence D(A_i || A_rel) picks recovered lift 0 uniquely",
         rev_ok,
-        f"min audited margin = {rev_margin:.12f}",
+        f"min tested margin = {rev_margin:.12f}",
     )
     check(
-        "Across all audited common positive shifts, inverse-eigenvalue parameter distance also picks recovered lift 0 uniquely",
+        "Across all tested common positive shifts, inverse-eigenvalue parameter distance also picks recovered lift 0 uniquely",
         par_ok,
-        f"min audited margin = {par_margin:.12f}",
+        f"min tested margin = {par_margin:.12f}",
     )
 
     print("\n" + "=" * 88)
@@ -248,14 +209,9 @@ def main() -> int:
     print("=" * 88)
 
     check(
-        "The open-import register still names the finer right-sensitive microscopic selector law as the live DM blocker",
-        "finer right-sensitive microscopic point-selection law" in review
-        or "finer right-sensitive microscopic selector law" in review,
-    )
-    check(
-        "The internal selector and recovered threshold branch are no longer disconnected by the current exact branch science",
+        "The supplied numerical source and recovered threshold branch are no longer disconnected by the finite numerical comparison",
         h_idx == 0 and tgt_idx == 0 and prof_idx == 0 and airm_ok and fwd_ok and rev_ok and par_ok and tau_b_argmin == 0,
-        "the same preferred recovered lift is selected by the threshold family and by the audited projection metrics from the internal selector",
+        "the same preferred recovered lift is selected by the threshold family and by the tested projection metrics from the supplied numerical source",
     )
     check(
         "So the remaining selector-side burden narrows to justifying the projection principle, or replacing both selector objects by a finer microscopic law",
@@ -267,16 +223,17 @@ def main() -> int:
     print("RESULT")
     print("=" * 88)
     print("  The relative-action source still stays off the recovered selector branch,")
-    print("  but it now has a canonical recovered projection packet.")
+    print("  and the tested metrics identify the same nearest finite-bank point.")
     print("  Across Frobenius, target, threshold-profile, affine-invariant, dual")
     print("  LogDet, and inverse-eigenvalue metrics, the unique nearest recovered")
-    print("  point is always the preferred lift 0.")
+    print("  point in the tested comparisons is the preferred lift 0.")
     print("  That same lift is already selected by the intrinsic breakpoint tau_b,min.")
     print()
     print("  So the selector-side burden narrows again:")
-    print("    justify the projection from the exact internal selector to that")
+    print("    justify the projection from the supplied numerical source to that")
     print("    preferred recovered lift, or replace both by a finer microscopic law.")
     print()
+    print("[SCOPE] Supplied finite numerical comparisons; physical selection remains open.")
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1
 

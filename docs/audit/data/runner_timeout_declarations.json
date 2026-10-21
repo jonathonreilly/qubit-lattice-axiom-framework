@@ -590,6 +590,116 @@
       "source_sha256": "4c9d592a7e85565d8af0220686451ebe5c38a553a0888807474c5ce8a1350e26",
       "timeout_sec": 300,
       "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_breaking_triplet_source_law.py": {
+      "source_sha256": "21ca05d0e65195425b1f0e7684b896620a86d428aef108042cba12fdbf7a569a",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_constructive_continuity_closure_theorem.py": {
+      "source_sha256": "58b246b88e4fa67f11fa6cbb22ed1a7d5be654474dacd418e099875415482d4a",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_even_response_sole_axiom_boundary.py": {
+      "source_sha256": "10deb6746dc164769023dc25ea4f465359cd6bccb95e8a509b81da22fd426c38",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_microscopic_selector_reduction_theorem.py": {
+      "source_sha256": "1b75baf840718f74a4c2769d346f72ecee2300b1c456037893e6d6955240ccbc",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_minimal_a13_sheet_selector_theorem.py": {
+      "source_sha256": "7fae44e5a404f59d2c25d801fdf21efe6f1f9d42cedd024464010859fb6b7502",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py": {
+      "source_sha256": "9d8f4622ae22e5a609d7786aa22de8e9e77836e44d91131cbeed131bcf7f2f5b",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_oriented_phase_sheet_selector_theorem.py": {
+      "source_sha256": "e4299fe226d5a51a1fca51e5ac7137df1751282b65a6c6cff3343ff01f8d683f",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py": {
+      "source_sha256": "efefef2c830ed90d58fd4ce9cda8f43815f62ddbb983c8be2d8000ba7818a508",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_neutrino_postcanonical_right_frame_obstruction.py": {
+      "source_sha256": "2f314c0a9625f06f34d1114b06ec8f8fe5b29a3560a6d8272158bb33f61dc6d6",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_full_closure_boundary.py": {
+      "source_sha256": "189bbb9241b0402ed1b21928b65c2ef944ca6f7c39a9da6711651dd389efd800",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_pmns_ne_seed_surface_exact_source_manifold_theorem_2026_04_20.py": {
+      "source_sha256": "2c36679d58caa88295d48d0a22facf77d660d5d38f97f2bf00f8480b99cb2872",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py": {
+      "source_sha256": "5a76749fb76050e04b3c02de32048e7842c172d1d87d716f85194d8e2a6d7d55",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py": {
+      "source_sha256": "08c7ae1063e4b211cf34086b6c94614358c4dd7ce9b5b0e4bc0155b474f18b86",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_2026_04_19.py": {
+      "source_sha256": "c9cfcf4bc0331919b66f837dcb07fdb737e4e5bd58e1ceb0d37ca271d3c30058",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_wilson_direct_descendant_canonical_fiber_mixed_spectral_branch_weight_no_go_2026_04_19.py": {
+      "source_sha256": "731bc32667bca81bf3151f3b2d5bf63ed0ec499e706c3caafdc42adae2e01aaf",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_wilson_direct_descendant_canonical_fiber_schur_entropy_candidate_no_go_2026_04_19.py": {
+      "source_sha256": "c95003919e8fecb6ccc9ef82bdd613d5015d93060b299e718e7c722f2ca8d103",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_2026_04_19.py": {
+      "source_sha256": "fb09af2093f2b4a92e4c0b00003d4f7d0d121346d6b50cfbc90c4a2b3660b03e",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_j_iso_derivation_and_schur_isotropy_no_go_2026_04_19.py": {
+      "source_sha256": "16cba010e0f2b2e4006212ed9386e79ce8821700234f3d400ff767f73f832542",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_observable_affine_no_go_2026_04_19.py": {
+      "source_sha256": "d45d4599d0de21fdd8ec3ef80cddf50dc40c8cff47953efffdd44b4a68c94af3",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_wilson_direct_descendant_local_observable_coordinate_theorem_2026_04_19.py": {
+      "source_sha256": "15046b0bb9d2ed1c5b8477197f5defc64215dd2bae52226f2da92179241357cb",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_wilson_direct_descendant_transport_fiber_minimal_local_spectral_law_no_go_2026_04_19.py": {
+      "source_sha256": "64b76bc453f55c5661fcffc12e76e5adbd461721a136438dd5ba7b8eecbe41f0",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_wilson_direct_descendant_transport_fiber_spectral_completion_theorem_2026_04_19.py": {
+      "source_sha256": "e42e2da6fd1e8046980696c5e7581f8268e42f23f30bfb7a99211f26d7f8ea7f",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     }
   }
 }

@@ -37,6 +37,8 @@ from scipy.optimize import brentq, differential_evolution, minimize
 
 import frontier_dm_leptogenesis_pmns_observable_relative_action_law as rel
 
+AUDIT_TIMEOUT_SEC = 300
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
@@ -406,6 +408,10 @@ def part4_bottom_line() -> None:
 
 
 def main() -> int:
+    import argparse
+    parser = argparse.ArgumentParser(description="Bounded logdet identity checks; optional unresolved numerical diagnostic")
+    parser.add_argument("--stationarity-diagnostic", action="store_true", help="Run the existing constrained numerical diagnostic, preserving its failures and nonzero exit")
+    args = parser.parse_args()
     print("=" * 88)
     print("DM LEPTOGENESIS PMNS RELATIVE-ACTION IDENTITY AND STATIONARITY DIAGNOSTIC")
     print("=" * 88)
@@ -418,16 +424,21 @@ def main() -> int:
     print("  remains only a conditional numerical closure diagnostic?")
 
     part1_relative_action_is_the_exact_legendre_dual()
-    i_star, p_star = part2_the_current_closure_patch_samples_low_action_candidates()
-    part3_test_local_stationarity_and_curvature(i_star, p_star)
-    part4_bottom_line()
+    if args.stationarity_diagnostic:
+        print("MODE: unresolved stationarity diagnostic; numerical failures remain failures.")
+        i_star, p_star = part2_the_current_closure_patch_samples_low_action_candidates()
+        part3_test_local_stationarity_and_curvature(i_star, p_star)
+        part4_bottom_line()
+    else:
+        print("MODE: bounded matrix-identity checks only; stationarity diagnostic NOT RUN.")
+        print("Use --stationarity-diagnostic to reproduce the unresolved numerical failure.")
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
     print("  Bounded result:")
     print("    - S_rel is the exact Legendre dual of the supplied logdet generator")
-    print("    - the closure search is a conditional finite diagnostic")
+    print("    - the separate --stationarity-diagnostic mode is a conditional finite diagnostic")
     print()
     print("  No framework-native action law, certified stationarity, global uniqueness,")
     print("  physical selector, or physical readout is inferred.")

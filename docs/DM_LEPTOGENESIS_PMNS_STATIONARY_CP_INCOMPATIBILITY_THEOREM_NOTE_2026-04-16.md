@@ -1,5 +1,7 @@
 # DM Leptogenesis PMNS Stationary CP Incompatibility Theorem
 
+**Type:** bounded_theorem
+
 **Date:** 2026-04-16  
 **Status:** support - structural or confirmatory support note
 as constructive witnesses for the source-oriented mainline leptogenesis branch  

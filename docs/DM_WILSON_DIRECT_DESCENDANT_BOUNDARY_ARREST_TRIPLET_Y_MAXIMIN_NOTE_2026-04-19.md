@@ -1,5 +1,7 @@
 # DM Wilson Direct-Descendant Boundary-Arrest Triplet/Y Maximin Note
 
+**Type:** bounded_theorem
+
 **Date:** 2026-04-19  
 **Status:** support - structural or confirmatory support note
 boundary-drift lane downstream of the same-day spectral completion and

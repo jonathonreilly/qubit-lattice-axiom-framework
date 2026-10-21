@@ -1,5 +1,7 @@
 # DM Wilson Direct-Descendant Canonical Path Selector Status Note
 
+**Type:** bounded_theorem
+
 **Date:** 2026-04-19  
 **Status:** support-level candidate only — the path is still chosen, not
 derived from retained physics  

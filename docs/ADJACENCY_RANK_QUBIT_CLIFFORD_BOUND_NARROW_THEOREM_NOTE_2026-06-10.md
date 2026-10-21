@@ -2,24 +2,34 @@
 
 **Date:** 2026-06-10
 **Claim type:** bounded_theorem (exact algebra: the Dirac-square carrier bound
-`d <= 3` from the Quantum axiom, with `Z^3` the saturating case; the
-saturation reading is a named residual)
+`d <= 3` within a supplied Hermitian central-difference carrier on M_2(C);
+physical carrier realization and saturation remain open)
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
 set, predict, promote, or demote any audit outcome.
 **Primary runner:**
 [`scripts/adjacency_rank_qubit_clifford_bound_2026_06_10.py`](../scripts/adjacency_rank_qubit_clifford_bound_2026_06_10.py)
-(SCORECARD: PASS=18, FAIL=0; cached:
+(SCORECARD: PASS=19, FAIL=0; cached:
 [`logs/runner-cache/adjacency_rank_qubit_clifford_bound_2026_06_10.txt`](../logs/runner-cache/adjacency_rank_qubit_clifford_bound_2026_06_10.txt))
 
 ---
+
+## Current-premise boundary
+
+The algebra below concerns a supplied Hermitian central-difference carrier.
+Current Lattice/Qubit premises provide the lattice and one-site algebra;
+Admissibility does not select this kinetic operator. The formal model space
+is C^2 tensor ell^2(Z^d); the actual Lattice axiom already supplies Z^3, so
+no physical dimension is derived here. Physical realization
+and saturation remain conditional/open. The June carrier comparisons below
+are not upgraded to current physical derivations by this correction.
 
 ## The coincidence this addresses
 
 The axiom set states the number 3 twice:
 
 - the **Lattice** axiom posits `Z^3`;
-- the **Quantum** axiom's one qubit per site carries `M_2(C) ~= Cl(3,0)`,
+- the **Qubit** axiom's one-site algebra carries `M_2(C) ~= Cl(3,0)`,
   whose maximal mutually anticommuting self-adjoint-unitary family has
   exactly three members (the Pauli frame).
 
@@ -43,21 +53,28 @@ extension system `{X, sigma_a} = 0, a = 1,2,3` has nullspace exactly zero —
 there is no 4th anticommuting element of `M_2(C)`, even non-unitary
 (runner Parts A, B, D).
 
-**(T2) Cross-term forcing.** A translation-covariant nearest-neighbor
-first-order hopping operator `D = sum_mu gamma_mu (x) nabla_mu` on `Z^d`
+**(T2) Cross-term forcing within the supplied Hermitian class.** Let
+`nabla_mu=(S_mu-S_mu^-1)/2` be the central differences on the infinite
+lattice `Z^d`, and let each constant `gamma_mu` be Hermitian. For
+`D = sum_mu gamma_mu (x) nabla_mu`, define `Laplacian=sum_mu nabla_mu^2`
+(the central-difference square, not the one-step graph Laplacian). Then D
 satisfies the Dirac-square condition
 
 ```text
     D^2 = I (x) Laplacian        (no spin-lattice cross terms)
 ```
 
-iff the per-site coefficients `gamma_mu` are mutually anticommuting
-self-adjoint unitaries. The hostile witness `gamma_2' = (sigma_1 +
+iff the supplied Hermitian coefficients square to identity and pairwise
+anticommute. Independence of the Fourier monomials `sin(p_mu)^2` and
+`sin(p_mu)sin(p_nu)` gives these coefficient equations. Hermiticity is a
+hypothesis, not a consequence of D squared: simultaneous similarity by
+`diag(2,1)` preserves Pauli squares and anticommutators but produces
+non-Hermitian coefficients. The hostile witness `gamma_2' = (sigma_1 +
 sigma_2)/sqrt(2)` — itself a self-adjoint unitary — grows cross terms
 (runner Part C).
 
-**(T3) The bound.** Hence on the one-qubit-per-site lattice, a Dirac-square
-NN carrier exists iff `d <= 3`. `Z^3` is the **saturating** case, and the
+**(T3) The bound.** Within the supplied Hermitian central-difference model,
+a Dirac-square carrier exists iff `d <= 3`. `Z^3` is the **saturating** case, and the
 saturating family is the Pauli frame up to the fixed-sign uniqueness
 ([`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)).
 
@@ -71,9 +88,9 @@ staggered operator**:
     eta_1 = 1,  eta_2 = (-1)^{x1},  eta_3 = (-1)^{x1+x2},   EXACTLY
 ```
 
-(runner Part E, `Z_4^3`, every site and direction). The theorem's carrier
-class is the framework's realized carrier — the landed staggered surface —
-not an analogy.
+(runner Part E, `Z_4^3`, every site and direction). This is an identity between supplied operators. Their identification
+with a physically realized kinetic carrier remains an additional bridge;
+the current axioms do not supply it.
 
 **(T5) Chirality coherence.** The on-site extension to a 4th anticommuting
 element is exactly zero (T1), while on a doubled space `C^2 (x) C^2` the
@@ -95,30 +112,31 @@ sharper:
 
 ```text
   before:  d = 3            (choice; qubit link = matched-pair consistency)
-  after:   d <= 3 FORCED    (by the Quantum axiom, within the Dirac-square
+  after:   d <= 3          (conditional on the M_2(C) Hermitian Dirac-square
                              carrier class: T1 + T2)
            d  = 3 = saturation of the qubit's anticommuting capacity (T3),
-                    realized by exactly the landed staggered carrier (T4)
+                    equivalent to two supplied staggered copies (T4)
   residual: the SATURATION READING -- why the realized lattice uses the full
             capacity -- and the carrier-class reading (below).
 ```
 
-The two threes are no longer independent premises that happen to agree: one
-bounds the other, and equality is saturation. What remains unforced is
-narrower than what was unforced before.
+The model exhibits algebraic compatibility between the supplied one-site
+algebra and the separately supplied cubic lattice. It neither removes a
+primitive nor derives physical saturation or a kinetic branch.
 
 ## Named residuals (each graded honestly)
 
 - **Saturation reading** — sub-saturating dimensions exist: the `d = 1, 2`
   Dirac-square carriers are exhibited by the runner (Part F). Nothing here
-  selects `d = 3` over `d < 3`; the theorem converts "why 3?" into "why
-  saturate?", which is a strictly narrower question but an open one.
+  selects `d = 3` over `d < 3` in that model. The physical lattice axiom
+  already supplies Z^3; the calculation does not derive that choice.
 - **Carrier-class reading** — the bound binds the Dirac-square NN carrier
-  class. That the framework's realized kinetic carrier is in this class is
-  the landed staggered realization surface
+  class. Physical identification with a realized kinetic carrier remains
+  open; the older realization proposals are separate conditional context
   ([`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md),
   [`STAGGERED_SCHEME_FORCED_BY_ONE_QUBIT_PER_SITE_LOCALITY_NARROW_THEOREM_NOTE_2026-06-06.md`](STAGGERED_SCHEME_FORCED_BY_ONE_QUBIT_PER_SITE_LOCALITY_NARROW_THEOREM_NOTE_2026-06-06.md));
-  landed-but-unaudited conditionality is inherited through T4.
+  T4 supplies only operator equivalence and does not discharge the
+  physical identification obligations of these proposals.
 - **No axiom change** — this note changes no axiom memo. If the owner later
   chooses to cite this theorem in a consolidation rewording of the Lattice
   axiom, that is a separate owner-approved, audit-decided step (the
@@ -148,8 +166,8 @@ narrower than what was unforced before.
 ## Falsifiers
 
 - A 4th element of `M_2(C)` anticommuting with the Pauli frame (would refute
-  T1; the runner's nullspace computation would show rank < 12).
-- A non-anticommuting coefficient family satisfying the Dirac-square
+  T1; the runner's 12-by-4 complex constraint matrix would have rank < 4).
+- A non-anticommuting constant Hermitian coefficient family satisfying the specified Dirac-square
   condition (would refute T2).
 - A failure of the Kawamoto-Smit conjugation identity at any site/direction
   (would refute T4 and cut the realization tie).
@@ -159,8 +177,11 @@ narrower than what was unforced before.
 
 ## Dependencies
 
-- [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md) — the Lattice
-  and Quantum axioms whose two 3s this note links.
+- [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md) — current
+  Lattice and Qubit premises supply Z^3 and M_2(C), respectively. They do
+  not supply the Hermitian Dirac-square kinetic ansatz or a realized
+  staggered dynamics. `docs/MINIMAL_AXIOMS_2026-06-05.md` is historical
+  provenance for this note's original Lattice/Quantum terminology only.
 - [AXIOM_REDUCTION_NOTE.md](AXIOM_REDUCTION_NOTE.md) — the C1 status this
   note sharpens; meta surface, cited for the C1 record only.
 - [CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
@@ -187,7 +208,7 @@ primitive. The independent audit lane is the only status authority.
 
 ```yaml
 claim_type_author_hint: bounded_theorem
-claim_scope: "Within the translation-covariant nearest-neighbor Dirac-square carrier class over one qubit per site, M_2(C)'s anticommuting self-adjoint-unitary capacity forces d <= 3; Z^3 is the saturating case, and the saturating matrix carrier is Kawamoto-Smit conjugate to the eta-phase staggered carrier. The saturation reading and carrier-class reading remain named residuals; no axiom, primitive, or audit status is changed."
+claim_scope: "Within the supplied translation-covariant Hermitian central-difference Dirac-square carrier class on C^2 tensor ell^2(Z^d), M_2(C)'s anticommuting self-adjoint-unitary capacity forces d <= 3; Z^3 is the saturating case, and the saturating matrix carrier is Kawamoto-Smit conjugate to the eta-phase staggered carrier. The saturation reading and carrier-class reading remain named residuals; no axiom, primitive, or audit status is changed."
 upstream_dependencies:
   - minimal_axioms
   - axiom_reduction_note

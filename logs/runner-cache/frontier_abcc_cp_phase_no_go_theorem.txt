@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_abcc_cp_phase_no_go_theorem.py
-runner_sha256: b4282c3d29514a7bee500102a6066fc49e487478336fa61caec360433b9012cf
+runner_sha256: efd44381071e4fb9134f480113fdac87487bd9c57220cfd40cd0adc8111a26c7
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 1.04
+elapsed_sec: 1.38
 status: ok
 ----- stdout -----
 Pairing (2,1,0), angle targets, magnitude bands and 0.247 cut are supplied historical comparators, not revalidated experimental bounds.
@@ -18,6 +18,11 @@ Basin 2 0.5543869828864004 -70537.23275501192
 Basin X under supplied pairing 0.4187825329648102 -20296.10558347677
 Conjugate control is for Hermitian matrices generally; fixed positive-gamma chart membership is not claimed.
 No all-basin exclusion, observational confidence level, or framework falsification follows.
+per_element: supplied matrix entries and eigenvector quartet checked; no entrywise physical selection rule derived.
+per_site: not executed; no spatial sites or site-dependent dynamics are represented in this finite chart comparison.
+per_mode: not executed; no physical mode decomposition or mode-dependent CP selector is constructed.
+per_block: the supplied three-dimensional pin, two fitted candidates and conjugate matrix are checked; no exhaustive block family certified.
+lattice_wide: not executed; no lattice limit, all-basin exclusion or physical source-selection theorem is established.
 PASS=6 FAIL=0
 
 ----- stderr -----

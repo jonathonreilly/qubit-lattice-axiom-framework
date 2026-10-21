@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/burnt_site_capacity_bounds_relay_life_and_odds_following_2026_10_21.py
+runner_sha256: e8401c6835ea8ea64df1adef59f5a5cb821c31f212b580f721c6991c7fd1913a
+input_fingerprint_sha256: 662db9df60eb3cb682ec87a6594f52aab57a6ba650e9d122cf781c0cee49dfed
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.45
+status: ok
+----- stdout -----
+T. exact counting (Record + CL-4): lifetime and capacity bounds
+[PASS] T1 pigeonhole: no world records more than nL-1 times after its start (nL=64), and records = burnt sites  max life 63, records 127950, burnt 127950, double 0
+[PASS] T2 standing wave odds are stationary and non-uniform; capacity time n/max P < nL  stationarity 1.5e-16, max P 0.0895 (uniform 0.0625), T_cap 44.7 (nL 64)
+[PASS] T3 counting at coarser rungs: capacity time rises from n/maxP towards nL = sites/relays, never above it  rung 0..4: 44.7, 46.7, 57.8, 64.0, 64.0
+R. ring L=16, one relay per world; rules for "every neighbouring block used up"
+[PASS] R1 n=4: CL-4 alone strands relays with unburnt sites left elsewhere on the ring  median life 56 of nL-1=63; stuck with only own block fresh: 0.222
+[PASS] R2 n=4 ladder: no site records twice; a relay stops only when every unburnt site is in its own block  median life 63; reach >= nL-n: 1.000; fallbacks/world 2.4; jump mean 3.50 max 8
+[PASS] R2 n=4 doubling: no site records twice; a relay stops only when every unburnt site is in its own block  median life 63; reach >= nL-n: 1.000; fallbacks/world 2.3; jump mean 3.29 max 8
+[PASS] R2 n=4 nearest: no site records twice; a relay stops only when every unburnt site is in its own block  median life 63; reach >= nL-n: 1.000; fallbacks/world 2.2; jump mean 2.92 max 8
+[PASS] R3 n=4: nearest-fresh jumps are never longer than the other fallbacks (it minimises the displacement)  ladder: mean |jump| 3.50, doubling: mean |jump| 3.29, nearest: mean |jump| 2.92
+[PASS] R4 n=4: until the first used-up target, the realised current follows the odds (all rules identical there)  current/odds before first hit 0.995
+[PASS] R1 n=16: CL-4 alone strands relays with unburnt sites left elsewhere on the ring  median life 238 of nL-1=255; stuck with only own block fresh: 0.121
+[PASS] R2 n=16 ladder: no site records twice; a relay stops only when every unburnt site is in its own block  median life 255; reach >= nL-n: 1.000; fallbacks/world 3.3; jump mean 3.36 max 8
+[PASS] R2 n=16 doubling: no site records twice; a relay stops only when every unburnt site is in its own block  median life 255; reach >= nL-n: 1.000; fallbacks/world 3.3; jump mean 3.43 max 8
+[PASS] R2 n=16 nearest: no site records twice; a relay stops only when every unburnt site is in its own block  median life 255; reach >= nL-n: 1.000; fallbacks/world 3.1; jump mean 2.95 max 8
+[PASS] R3 n=16: nearest-fresh jumps are never longer than the other fallbacks (it minimises the displacement)  ladder: mean |jump| 3.36, doubling: mean |jump| 3.43, nearest: mean |jump| 2.95
+[PASS] R4 n=16: until the first used-up target, the realised current follows the odds (all rules identical there)  current/odds before first hit 0.999
+[PASS] R5 block-translation covariance (shift by one block, same random stream): doubling and nearest exact; fixed-partition ladder is not (it privileges partition boundaries)  ladder: worlds differing 0.595, doubling: worlds differing 0.000, nearest: worlds differing 0.000
+[PASS] R6 standing wave: with ample capacity the occupation stays at the odds; at n=4 it leaves them, first through used-up targets (CL-4 clause 2) and by T_cap=45 necessarily (T2)  n=200 TV 0.028/0.028 (sampling noise ~0.03); n=4 cl4: TV ticks<18 0.069 (worlds hit by 18: 0.64), after T_cap 0.237; n=4 nearest: TV ticks<18 0.069 (worlds hit by 18: 0.64), after T_cap 0.231
+[PASS] R7 drifting packet (v~0.88): nearest rule never strands a relay; fallbacks rarer than first-clause hits  n=1: hit 1.000, fallbacks/relay 0.000, cur/odds 1.000; n=2: hit 0.794, fallbacks/relay 2.806, cur/odds 0.466; n=4: hit 0.104, fallbacks/relay 0.102, cur/odds 0.969; n=8: hit 0.004, fallbacks/relay 0.001, cur/odds 0.999
+D. 3D relay paths (supplied persistent walk, uniform odds): how often each CL-4 clause acts
+[PASS] D1 3D: with n=8 a used-up target is rare and an all-used-up neighbourhood is not seen; only n=1 needs the fallback; no site records twice  n=1,q=1.0: target used up 2.4e-01/step, fallback 2.5e-04/step, max jump 2; n=2,q=1.0: target used up 7.2e-02/step, fallback 0.0e+00/step, max jump 0; n=8,q=1.0: target used up 6.0e-05/step, fallback 0.0e+00/step, max jump 0; n=8,q=0.1: target used up 0.0e+00/step, fallback 0.0e+00/step, max jump 0
+P. burnt fraction beta = relays/site x ticks; a = lam l_P, block b = 2a (n = 8), tick tau = b/c
+[PASS] P1 Sun core, 4.6 Gyr, static in the lattice frame: beta far below 1  beta 7.5e-12 (lam=2); first-clause used-up blocks need ~8 visits on one 8-site block
+[PASS] P2 a proton held fixed: its own volume lasts ~1e8 yr; spread over its thermal wavelength in the Sun, >1e13 yr  pinned 1.67e+08 yr; thermal packet (4.4e-13 m) 5.7e+15 yr
+[PASS] P3 white dwarf core (1e9 kg/m^3), 10 Gyr static: beta < 1e-5  beta 1.0e-07
+[PASS] P4 neutron star core (3 n0), 10 Gyr, static in the lattice frame: beta > 1 (sites would run out)  beta 71; static life 1.4e+08 yr; beta=1 at lam=0.24
+[PASS] P5 same star moving at 100 km/s through the lattice: trailing-edge beta < 1e-15  beta_trail 5.4e-17; needs |v| < 5.4e-12 m/s to exhaust
+[PASS] P6 BBN (T=1 MeV) and recombination: beta < 1e-20  BBN 2.7e-23 (t=0.74 s), recombination 8.2e-31; T=1e16 GeV (unmeasured) 7.8e-04
+[PASS] P7 black holes, static site count inside r_s (conditional on sites ~ coordinate volume): life ~ M^2  10 Msun 6.1e+08 yr; 33 Msun 6.6e+09 yr; 6.5e+09 Msun 2.6e+26 yr; a core moving at 300 km/s needs radius > 0.14 mm
+
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

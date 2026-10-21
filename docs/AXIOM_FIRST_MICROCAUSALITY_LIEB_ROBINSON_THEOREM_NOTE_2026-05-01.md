@@ -7,6 +7,12 @@
 **Runner:** `scripts/axiom_first_microcausality_check.py`
 **Cache:** `logs/runner-cache/axiom_first_microcausality_check.txt`
 
+**Historical-premise boundary (2026-10-21):** The June 5 memo and its
+"Quantum" terminology are the historical baseline of this argument. The
+finite-block tensor-product structure is supplied here; this note does not
+establish its derivation from the current June 29 axiom memo. The stated
+sector, locality and Lorentz-scaling conditions remain explicit hypotheses.
+
 ## Scope
 
 This note packages the lattice microcausality statements that currently close
@@ -16,7 +22,7 @@ three parts:
 **(M1) Equal-time strict locality.** For any two distinct lattice
 sites `x ≠ y` and any operators `O_x, O_y` supported at those sites,
 `[O_x, O_y] = 0` strictly. This is a one-line consequence of the Quantum
-axiom's tensor product structure.
+baseline's supplied tensor-product structure.
 
 **(M2) Lieb-Robinson lightcone.** For operators `O_x, O_y` at sites
 `x, y`, two sector-scoped finite-velocity statements are now supplied:
@@ -54,9 +60,9 @@ exact-log frontier.
 
 - **Lattice.** Supplies the `Z^3` nearest-neighbor graph metric
   `d(x, y)`.
-- **Quantum.** Supplies the finite one-qubit operator algebra at each site,
+- **Historical Quantum baseline (supplied here).** Supplies the finite one-qubit operator algebra at each site,
   equivalently `M_2(C) ~= Cl(3,0)`, and the finite-block tensor product.
-  This is the only baseline axiom used in (M1).
+  This is the supplied tensor-structure premise used in (M1).
 - **Record.** Not used. No readout context, central-sector decomposition,
   weighting, normalization, probability rule, measurement dynamics, or
   recorded outcome enters this row.
@@ -370,7 +376,7 @@ bare_retained_allowed: false
 
 ## Citations
 
-- current minimal axioms: [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+- historical June 5 baseline (not current axiom authority): [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
 - RP support note:
   [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
 - spectrum-condition support note:

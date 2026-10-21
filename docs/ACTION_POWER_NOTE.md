@@ -1,5 +1,7 @@
 # Action Power Branch: Honest Status
 
+**Type:** bounded_theorem
+
 **Date:** 2026-04-04
 **Status:** bounded axiom-fork branch with a proposed_retained 3D barrier card, a proposed_retained 3D no-barrier law companion, and a bounded negative on 3D barrier attraction for the current ordered family
 
@@ -130,7 +132,7 @@ Newtonian closure.
 
 ## Artifact chain
 
-- [`scripts/action_power_canonical_harness.py`](/Users/jonreilly/Projects/Physics/scripts/action_power_canonical_harness.py)
-- [`logs/2026-04-04-action-power-canonical-harness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-action-power-canonical-harness.txt)
-- [`scripts/action_power_3d_gravity_sign_closure.py`](/Users/jonreilly/Projects/Physics/scripts/action_power_3d_gravity_sign_closure.py)
-- [`logs/2026-04-04-action-power-3d-gravity-sign-closure.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-action-power-3d-gravity-sign-closure.txt)
+- [`scripts/action_power_canonical_harness.py`](../scripts/action_power_canonical_harness.py)
+- [`logs/2026-04-04-action-power-canonical-harness.txt`](../logs/2026-04-04-action-power-canonical-harness.txt)
+- [`scripts/action_power_3d_gravity_sign_closure.py`](../scripts/action_power_3d_gravity_sign_closure.py)
+- [`logs/2026-04-04-action-power-3d-gravity-sign-closure.txt`](../logs/2026-04-04-action-power-3d-gravity-sign-closure.txt)

@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/site_phase_connection_projects_to_partition_links_and_stress_clause_fixes_link_speed_2026_10_21.py
+runner_sha256: bf45b37f15207be080fc3db4581586896a4d215b0f9ed934b16fe7f61d181f02
+input_fingerprint_sha256: 4cfc7f3e204ce88bb5d6eef1e7225a1b24b97d7c4e6a0027664d1a61805597ad
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.76
+status: ok
+----- stdout -----
+== G. sites, partition links and mixed plaquettes in one complex
+[PASS] G1 every site is the midpoint of the bond from its even to its odd block centre (offset in {+-1}^3); each even centre has 8 distinct odd neighbours
+[PASS] G2 each mixed plaquette spans 2 even + 2 odd blocks and is a tetrahedron whose free edges are one even link (axis a) and one odd link (axis b != a); 12 per cell  12 per cell; per cell V,E,F,T = 2, 8+3+3, 24, 12 -> Euler 0
+== P. exact relation chi -> partition-lattice connection
+[PASS] P1 Pi is gauge covariant: odd-block phases drop out, even-block phases enter as the even-lattice gradient
+[PASS] P2 per cell: chi has 8 - 2 = 6 gauge-invariant values; Pi has rank 3 and maps the gauge plane to one gradient, so Pi(chi) carries 2 and ker Pi carries 5 - 1 = 4; the 12-rhombus magnetic form reproduces what-is-a-link (2 gauge zeros; k=0: 0,0,0,0,8,8,8,24)  dim ker Pi = 5, rank Pi(gauge) = 1
+[PASS] P3 at k = 0 ker Pi = exactly the four gapped branches; the zero modes are uniform A (3) + gauge (1)
+[PASS] P4 the massless pair is Pi-visible (|Pi v|/|v| ~ 0.7) and transverse; omega^2/k^2 -> 1/2 (unit couplings)  |Pi v|/|v| in [0.707,0.707], longitudinal <= 2.0e-03
+== N1/N2. what a Margolus link update can be
+[PASS] N1 inside one block the 8 sites lie in 8 different opposite-partition blocks, so block phases shift each chi independently; the commutant of independent shifts (Z_5, 2 registers) is N^2 = 25-dim = functions of e only. Mixed plaquettes are never block-local (G2)
+[PASS] N2 rotations about cube centres act on CL-2-hopped registers with class invariant l_a^3 l_b^4 / l_ab^6 = -1 (double-valued); control flux-0 hop gives +1. A W-hopped quantum has half-integer helicity: a fermion cannot emit one singly  CL-2 -1.000000, control +1.000000
+== S. what fixes the link speed
+[PASS] S1 symmetric stress in g = diag(-alpha,1,1,1) needs alpha = (energy flux)/(momentum) = v_g v_p; fermion alpha = 1/3, so a link source in the same flat metric needs c_link^2 = 1/3: g_E g_B tau^2 = 2/3 (chi law), C = 1/sqrt3 (Yee)  alpha_f = 0.33333330
+[PASS] S2 Yee at C = 1/sqrt3: cos w = 1 - 3C^2 + C^2 sum cos K equals the fermion band at every K (500 K)  5.3e-15
+   axis: c = 0.577350 0.577350 0.577350; w/K = c(1 - b w^2): b_fermion +0.08333, b_chi(cont) +0.03125, b_chi(leapfrog) -0.01042
+   face: c = 0.577350 0.577350 0.577350; w/K = c(1 - b w^2): b_fermion +0.02083, b_chi(cont) +0.06250, b_chi(leapfrog) +0.02083
+   body: c = 0.577350 0.577350 0.577350; w/K = c(1 - b w^2): b_fermion +0.00000, b_chi(cont) +0.03125, b_chi(leapfrog) -0.01042
+[PASS] S3 with the stress-fixed product the chi law has the fermion speed at leading order in every direction
+   (v_link - v_fermion)/c per w^2 over 123 directions: continuous-time chi [-0.0417, +0.0521], leapfrog chi [-0.0000, +0.0937]
+[PASS] S4 continuous-time chi law: links slower than fermions in some directions by 0.042 w^2 = 9.4e-17 at 1e20 eV > 4.4e-23: proton vacuum Cherenkov excludes it if protons carry the fermion O(K^2)
+[PASS] S5 leapfrog chi law (electric and magnetic half-ticks): never slower (min -6.6e-09, equal along face diagonals), faster by <= 0.094 w^2 = 4.1e-26 at 1.4 PeV < photon-decay threshold 2.7e-19: allowed; Yee at C = 1/sqrt3 has no offset
+== Z. can coarse cells of one-mode sites carry the connection?
+[PASS] Z1 site subsets with conserved number under the tick: massless 2 (the two sublattice sectors, swapped by 90-degree rotations); massive 1 (none proper). A carrier subset with its own number constraint is not supplied by CL-3  massless 2, massive 1
+[PASS] Z2 collective (pair) modes of the free tick at fixed total K form a continuum, not a two-helicity pole: lowest pair energy >= w(K) (edge reached as one partner -> 0), spread of order 1  w(K) = 0.2639, pair energies in [0.3206, 5.8443]
+   quantum-link budget (N = 5 levels per link = 2 x 4 fermion rishon modes; 8 links per coarse cell): rung 1: 8 modes vs 64 for links, rung 2: 64 modes vs 64 for links, rung 3: 216 modes vs 64 for links
+[PASS] Z3 counting alone allows one-mode carriers from rung 3 (216 modes vs 64 for N = 5 links + matter); rung 1 cannot (8 vs 64)
+supplied: CL-2 coin; partitions; minimal coupling as site phases; quadratic chi/Yee laws; CL-6 stress clause; Planck block 2a. Literature, not rederived: Coulomb phase of Z_N (N >= 5) and U(1) lattice gauge theory.
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

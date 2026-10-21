@@ -19,7 +19,7 @@ targets (7D–7E) are Tier C and gated by Lane 2.
 record-ensemble for a closed lattice region; temperature as a derived intensive
 parameter conjugate to the supplied additive record readout; an H-theorem-style monotone
 approach to that equilibrium for a lattice-excitation gas; and pressure as a
-finitely-supplied additive record readout over wall-collision records.
+supplied finitely additive record readout over wall-collision records.
 **First parallel-worker target:** on an explicit small closed lattice region
 (mirroring the 6-qubit exact construction in
 `ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`),
@@ -170,8 +170,8 @@ law: transitivity of equilibrium across a shared boundary).
 
 ### 7D. Pressure as additive wall-collision record readout (the Feynman gas)
 
-**Target:** for a confined excitation gas, identify pressure as the finitely-
-supplied additive record readout `I` over wall-collision records, yielding an
+**Target:** for a confined excitation gas, identify pressure as the supplied finitely additive
+record readout `I` over wall-collision records, yielding an
 ideal-gas-law-shaped relation `PV ∝ (energy content)`. This is the literal
 Feynman Lecture 1 target: atoms drumming on the container wall.
 
@@ -294,7 +294,7 @@ claim to remove it.
 2. Should 7F remain only a named open residual, or should a future
    owner-approved proposal attempt to register it? No approval is granted by
    this lane.
-3. Is "pressure = finitely-supplied additive record readout over wall-collision records"
+3. Is "pressure = supplied finitely additive record readout over wall-collision records"
    (7D) the right operationalization of the supplied additive functional, or is
    there a cleaner extensivity→intensivity bridge for temperature/pressure?
 4. Should this be Lane 7 in the active package, or a deferred follow-on, given

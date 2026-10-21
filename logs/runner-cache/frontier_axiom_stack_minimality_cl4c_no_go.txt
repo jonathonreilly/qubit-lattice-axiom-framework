@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_axiom_stack_minimality_cl4c_no_go.py
-runner_sha256: 1b876591eb8a558de6cdfa7061d424af85a01e5fa15ec293cf3d2cb22536709d
+runner_sha256: aac3537fea024935e49b296a6608aa3e60fe4cbaa17da5e7b7efba8dc024d7f6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.23
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 PASS: CAR 0,0
@@ -46,6 +46,12 @@ PASS: Hermitian Clifford generators
 PASS: all Clifford anticommutators
 SUMMARY: PASS=38 FAIL=0
 Scope: supplied CAR countermodel; physical selection remains unproved.
+Resolution scope and limits (not physical bridge certificates):
+per_element: checked all sixteen supplied matrix units and their products.
+per_block: checked only the supplied four-dimensional one-particle block.
+per_mode: checked the algebra of four supplied CAR modes; their physical selection is unproved.
+per_site: no physical site assignment or local realization is proved here.
+lattice_wide: no lattice embedding, physical selector, or global construction is proved here.
 
 ----- stderr -----
 

@@ -13,8 +13,8 @@ Subcomponent provenance:
   - R_conn, g_1(v), g_2(v), sin^2(theta_W), 1/alpha_EM: color projection stack
   - y_t(v), m_t(pole): Ward + color-singlet projection stack
   - m_H (2-loop): corrected-y_t stability boundary
-  - m_H (full 3-loop): direct framework-side 3-loop Higgs route
-  - vacuum stability: inherited-systematic Higgs/vacuum route
+  - m_H historical 125.10: supplied inventory literal, not a fresh 3-loop calculation
+  - vacuum stability: historical sampled truncated-flow diagnostic only
 """
 
 from __future__ import annotations
@@ -55,7 +55,7 @@ MT_POLE_3L = 173.10
 # Current Higgs / vacuum support-inventory values.
 MH_2L = 119.77
 MH_3L = 125.10
-VACUUM_READOUT = "Qualitatively favorable"
+VACUUM_READOUT = "Sampled-flow diagnostic; no all-scale proof"
 
 
 def pct(pred: float, obs: float) -> float:
@@ -77,7 +77,13 @@ def main() -> None:
     print(f"  R_conn          = {R_CONN:.6f}")
     print(f"  taste_weight    = {TASTE_WEIGHT:.6f} (= 7/18)")
     print()
-    print("Support inventory quantitative package")
+    print("Conditional historical support inventory; most rows below are supplied literals")
+    print("INPUT_SCOPE: declared pure-gauge plaquette, M_Pl, Ward/threshold/readout conventions")
+    print("MATCHING_SCOPE: kappa_EW=0 and kappa_Y=0 are supplied specializations")
+    print("HIGGS_SCOPE: 125.10 is not derived here; displayed calibration inputs give the value below")
+    calibration_check = 129.6 + 1.5 * (MT_POLE_2L - 173.34) / 0.76 - 0.5 * (0.1181 - 0.1184) / 0.0007
+    print(f"  Supplied calibration formula at mt=172.57, alpha_s=0.1181: {calibration_check:.4f} GeV")
+    print("This arithmetic is not a full RGE execution or a physical Higgs prediction")
     rows = [
         ("v [GeV]", V, 246.22),
         ("alpha_s(M_Z)", 0.118066, 0.1179),
@@ -89,7 +95,7 @@ def main() -> None:
         ("m_t(pole, 2-loop) [GeV]", MT_POLE_2L, 172.69),
         ("m_t(pole, 3-loop) [GeV]", MT_POLE_3L, 172.69),
         ("m_H(2-loop) [GeV]", MH_2L, 125.25),
-        ("m_H(full 3-loop) [GeV]", MH_3L, 125.25),
+        ("m_H(historical literal) [GeV]", MH_3L, 125.25),
     ]
     for label, pred, obs in rows:
         print(f"  {label:<28} {pred:>10.4f}   obs {obs:>10.4f}   dev {pct(pred, obs):>+7.3f}%")

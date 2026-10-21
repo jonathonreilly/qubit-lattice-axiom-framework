@@ -148,37 +148,36 @@ the open primitives P1 to P4.
 
 ## 1. Framework Statement
 
-We take Cl(3) on Z^3 as the physical theory. Everything else is derived.
+This inventory starts from the proposed Cl(3) on Z^3 framework and records
+conditional readouts. It also uses the admitted scales, normalizations,
+readout coefficients, matter realization, schemes and thresholds listed below;
+this inventory does not derive those inputs from that starting statement.
 
 ---
 
-## 2. The Single Computed Input
+## 2. The Supplied Plaquette Surface
 
-The framework has ONE number that must be computed numerically from the axiom:
+The package uses `<P> = 0.5934`, the declared pure-gauge Wilson beta=6 reuse
+value. It is not a certified new Monte Carlo determination or the unique
+output of a physical matter-inclusive measure. The September30 and October4
+corrections above preserve the independent ensemble comparisons and the
+unverified campaign boundary. Subsequent arithmetic is conditional on this
+value and on the separately supplied inputs; it does not establish the
+physical VEV match.
 
-    <P> = 0.5934       SU(3) plaquette expectation value at beta = 6
-
-This is evaluated by standard lattice Monte Carlo on the SU(3) gauge theory
-that Cl(3) on Z^3 generates. It is not imported from experiment. It is not
-a free parameter. It is the unique output of the axiom's own dynamics.
-
-From this single number, the entire prediction chain unfolds.
-
----
-
-## 3. Derived Infrastructure
+## 3. Conditional Infrastructure
 
 ### 3.1 From the plaquette
 
 | Quantity | Formula | Value | Status |
 |----------|---------|-------|--------|
-| u_0 | <P>^{1/4} | 0.8776 | DERIVED |
-| alpha_LM | alpha_bare / u_0 | 0.09066 | DERIVED |
-| alpha_s(v) | alpha_bare / u_0^2 (CMT, n_link = 2) | 0.1033 | DERIVED |
-| alpha_LM^2 | alpha_bare alpha_s(v) | 0.00822066 | RETAINED IDENTITY |
+| u_0 | <P>^{1/4} | 0.8776 | Algebra on supplied P |
+| alpha_LM | alpha_bare / u_0 | 0.09066 | Supplied coupling-map convention |
+| alpha_s(v) | alpha_bare / u_0^2 (CMT, n_link = 2) | 0.1033 | Conditional n_link=2 physical map |
+| alpha_LM^2 | alpha_bare alpha_s(v) | 0.00822066 | Exact identity under supplied definitions |
 
-The Coupling Map Theorem (CMT) establishes that the bare coupling g_bare = 1
-maps to the physical coupling at scale v through n_link mean-field factors.
+The package imports the CMT mean-field map and declares g_bare = 1. Its
+identification with a physical coupling at scale v is an upstream premise.
 With n_link = 2 (one gauge link per vertex leg): alpha_s(v) = 1/(4 pi u_0^2).
 The intermediate coupling is therefore the exact geometric mean:
 alpha_LM^2 = alpha_bare alpha_s(v).
@@ -187,19 +186,19 @@ alpha_LM^2 = alpha_bare alpha_s(v).
 
 | Quantity | Value | Origin | Status |
 |----------|-------|--------|--------|
-| Gauge group | SU(3) x SU(2) x U(1) | Z_3 clock-shift, Z_2 bipartite, edge phases | DERIVED |
-| Generations | 3 | BZ orbit decomposition: 8 = 1+1+3+3 | DERIVED |
-| g_3^2(bare) | 1 | Z_3 clock-shift algebra | DERIVED |
-| g_2^2(bare) | 1/(d+1) = 1/4 | Z_2 bipartite in d=3 spatial dimensions | DERIVED |
-| g_Y^2(bare) | 1/(d+2) = 1/5 | Chirality sector | DERIVED |
-| N_taste | 16 | 2^4 BZ corners in 4D (staggered) | DERIVED |
-| beta coefficients | b_1 = 41/10, b_2 = -19/6, b_3 = -7 | Group theory of derived gauge + matter content | DERIVED |
+| Gauge group | SU(3) x SU(2) x U(1) | Z_3 clock-shift, Z_2 bipartite, edge phases | Upstream structural premise; not independently closed here |
+| Generations | 3 | BZ orbit decomposition: 8 = 1+1+3+3 | Upstream structural premise; not independently closed here |
+| g_3^2(bare) | 1 | Z_3 clock-shift algebra | Upstream structural premise; not independently closed here |
+| g_2^2(bare) | 1/(d+1) = 1/4 | Supplied upstream normalization at d=3 | Conditional input |
+| g_Y^2(bare) | 1/(d+2) = 1/5 | Supplied upstream normalization at d=3 | Conditional input |
+| N_taste | 16 | 2^4 BZ corners in 4D (staggered) | Upstream structural premise; not independently closed here |
+| beta coefficients | b_1 = 41/10, b_2 = -19/6, b_3 = -7 | Group theory of derived gauge + matter content | Upstream structural premise; not independently closed here |
 | v | M_Pl * (7/8)^{1/4} * alpha_LM^16 = 246.28 GeV | Hierarchy formula (taste-determinant route) | BOUNDED NUMERICAL MATCH |
 
 The hierarchy formula carries the same-surface plaquette/coupling-chain
 match between `M_Pl × (7/8)^{1/4} × α_LM^{16}` and PDG `v_obs = 246.22 GeV`
-at relative deviation `+0.0255 %`. The match is real and robust on the
-canonical surface, but the underlying formula carries four named
+at relative deviation `+0.0255 %`. The residual is arithmetic at the declared pure-gauge reuse value (and
+changes under the plaquette alternatives above); the underlying formula carries four named
 load-bearing primitives (M_Pl import; Wick rotation Z³ → Z⁴ for the 4D
 taste count `2^4 = 16`; the algebraic substitution `u_0^{16} → α_LM^{16}`;
 EWSB observable identification) that have not been derived from the
@@ -222,42 +221,44 @@ closure path open.
 
 ## 4. The Color Projection (R_conn = 8/9)
 
-### 4.1 Derivation from the 1/N_c expansion
+### 4.1 Exact channel fraction and open physical matching
 
-R_conn = (N_c^2 - 1)/N_c^2 = 8/9 is DERIVED from the 't Hooft topological
-expansion of SU(N_c) gauge theory:
+`F_adj = (N_c^2-1)/N_c^2 = 8/9` is the exact dimension fraction in
+`N_c tensor conjugate(N_c) = 1 + adj` at N_c=3. Under the separately stated
+isotropic/gauge-orbit averaging prescription it also appears as a normalized
+channel average. Neither fact fixes the channel weight of an arbitrary
+physical correlator. Large-N counting or OZI suppression does not select an
+exact disconnected-channel coefficient at N_c=3.
 
-1. **Planar diagrams (genus 0)** dominate the q-qbar propagator. These populate
-   the adjoint channel: all N_c^2 - 1 generators explored democratically.
-2. **Non-planar diagrams (genus >= 1)** populate the singlet channel. These are
-   suppressed by 1/N_c^2 relative to planar.
-3. **Fierz identity** (exact): N_c x N_c-bar = 1 (singlet) + (N_c^2 - 1) (adjoint).
-4. **Result:** R_conn = (N_c^2 - 1)/N_c^2 + O(1/N_c^4) = 8/9 + O(1/81).
+The supplied physical readout families are
+`K_EW(kappa_EW)=1/(8/9+kappa_EW/9)` and
+`K_Y(kappa_Y)=8/9+kappa_Y/9`. The choices kappa=0 and kappa=1 share the
+channel arithmetic but give different normalizations. Thus the packet does
+not select either physical coefficient. See the explicit boundaries in
+RCONN_DERIVED_NOTE and YT_COLOR_PROJECTION_CORRECTION_NOTE; no new selector
+or error bound is supplied here.
 
-The correction is O(1/81) ~ 1.2%, bounded by MC measurement to |c_2| < 0.8.
-The 1/N_c expansion is topological (coupling-independent) and holds at any beta.
-
-### 4.2 MC verification
+### 4.2 Historical connected-trace consistency check
 
     R_conn(MC) = 0.887 +/- 0.008
     R_conn(derived) = 8/9 = 0.88889
     Agreement: 0.2% (within 0.9% statistical error)
 
-Script: `scripts/frontier_color_projection_mc.py` (4^4 lattice, 100 configs, Cabibbo-Marinari).
+Script: `scripts/frontier_color_projection_mc.py` (4^4 lattice, 100 configs, Cabibbo-Marinari). This reported comparison does not derive a physical selector or certify a general 1/N_c remainder bound.
 
 ### 4.3 What R_conn corrects
 
-R_conn enters with opposite sign in two independent channels:
+The historical specializations rescale two supplied readouts:
 
 | Coupling | Color channel | Correction | Direction | Physics |
 |----------|---------------|------------|-----------|---------|
 | g_EW (g_1, g_2) | Adjoint | * sqrt(K_EW(kappa_EW)); `sqrt(9/8)` only at `kappa_EW=0` | UP at connected-trace specialization | EW vacuum polarization readout depends on named `kappa_EW` coefficient |
-| y_t | Singlet | * sqrt(8/9) = 0.9428 | DOWN | Scalar Z_phi probes singlet wave function |
+| y_t | Supplied scalar readout | * sqrt(K_Y(kappa_Y)); sqrt(8/9) at kappa_Y=0 | DOWN at kappa_Y=0 | Scalar matching coefficient remains open |
 
-The direction is determined by color structure, not by fitting. Both corrections
-use the SAME group-theory number applied to different channels of the Fierz
-decomposition. sin^2(theta_W) is preserved exactly (universal factor cancels
-in the ratio).
+At the stated specializations the factors have the displayed directions.
+Color dimensions alone do not select those specializations. A common
+multiplicative factor on both EW couplings cancels exactly from
+sin^2(theta_W); that cancellation does not fix the absolute normalization.
 
 ### 4.4 What R_conn = 8/9 unlocks
 
@@ -265,11 +266,12 @@ in the ratio).
 |------------|-------------------|--------|
 | g_1(v), g_2(v) | `sqrt(K_EW(kappa_EW))` on EW couplings; `sqrt(9/8)` only at `kappa_EW=0` | Conditional absolute normalization |
 | sin^2(theta_W) | Ratio invariant (cancels) | Preserved exactly |
-| y_t(physical) | sqrt(8/9) on Ward y_t | The correction that delivers sub-percent m_t |
+| y_t conditional readout | sqrt(K_Y(0)) on Ward y_t | Historical kappa_Y=0 comparator |
 | taste_weight | 7/18 = (7/8) * T_F * (8/9) | Enters taste threshold running |
 | m_H | Through corrected y_t in CW stability prediction | Shifts m_H by ~25 GeV |
 
-All quantities that depend on R_conn are DERIVED from the 1/N_c expansion.
+Downstream values depend on the supplied readout choices and transport
+premises; the exact channel fraction does not derive those choices.
 
 ---
 
@@ -277,7 +279,7 @@ All quantities that depend on R_conn are DERIVED from the 1/N_c expansion.
 
 ### 5.1 EW coupling derivation
 
-The bare couplings g_2^2 = 1/4, g_Y^2 = 1/5 are run from M_Pl to v through
+The supplied bare normalizations g_2^2 = 1/4, g_Y^2 = 1/5 are run from M_Pl to v through
 the taste threshold staircase:
 
 - 16 BZ corner tastes with Hamming weight k = 0,...,4 decouple at
@@ -300,9 +302,9 @@ factor is the connected-trace specialization `kappa_EW=0`.
 | g_1(v) | staircase + connected-trace `sqrt(K_EW(0)) = sqrt(9/8)` specialization | 0.4644 at `kappa_EW=0` | 0.4640 | +0.08% |
 | g_2(v) | staircase + connected-trace `sqrt(K_EW(0)) = sqrt(9/8)` specialization | 0.6480 at `kappa_EW=0` | 0.6463 | +0.26% |
 
-All four primary predictions (v, alpha_s, sin^2, 1/alpha_EM) pass their
-thresholds. The EW couplings agree with the color projection factor to
-0.17% average.
+These are historical comparator readouts on the declared package, including
+kappa_EW=0. Agreement thresholds do not verify the missing physical maps,
+selectors or the matter-inclusive VEV; no fresh execution is asserted here.
 
 ---
 
@@ -328,9 +330,9 @@ current 2-loop level of the backward Ward scan.
 **Step 3: Backward Ward scan.**
 
 2-loop SM RGE from v to M_Pl, matching the Ward boundary condition:
-y_t(v) such that y_t(M_Pl) = 0.4358. The QFP insensitivity theorem
-guarantees robustness: a 10% change in y_t(M_Pl) produces less than 0.5%
-change in y_t(v). Result:
+y_t(v) such that y_t(M_Pl) = 0.4358. The reported QFP scan is a
+UV-boundary sensitivity diagnostic on its supplied flow, not a general
+higher-order error bound. Historical result:
 
     y_t(v) [Ward, uncorrected] = 0.9732
 
@@ -338,9 +340,9 @@ change in y_t(v). Result:
 
     y_t(physical) = y_t(Ward) * sqrt(8/9) = 0.9732 * 0.9428 = 0.9176
 
-The sqrt(8/9) arises from the color-singlet wave function renormalization
-of the composite scalar (Higgs = taste condensate). The Yukawa vertex has
-one scalar leg; the correction is sqrt(R_conn), not R_conn.
+This line assumes kappa_Y=0 in y_t(Ward)*sqrt(K_Y(kappa_Y)).
+The physical scalar normalization/selector is not derived by the channel
+fraction. The square-root power is part of the supplied one-leg readout.
 
 **Step 5: MSbar-to-pole conversion.**
 
@@ -359,13 +361,11 @@ one scalar leg; the correction is sqrt(R_conn), not R_conn.
 | m_t(pole, 2-loop) | 172.57 GeV | 172.69 GeV | -0.07% |
 | m_t(pole, 3-loop) | 173.10 GeV | 172.69 GeV | +0.24% |
 
-**y_t gate closure:** y_t(v) = 0.918 is a zero-import prediction from
-the axiom. The SM extraction of y_t from the observed top mass gives
-~0.917. The 0.1% agreement closes the y_t gate. This is the central
-claim under review.
-
-The 2-loop and 3-loop pole masses bracket the observed value. The central
-prediction (average) is 172.8 GeV, within 0.1% of the world average.
+**Conditional y_t comparison.** The displayed0.9176 and pole-mass values use
+the supplied Ward boundary, running/matching choices and kappa_Y=0. Their
+proximity to the supplied experimental comparators does not close the
+physical Yukawa matching gate. Averaging different loop orders is not an
+independent uncertainty estimate.
 
 ### 6.3 Improvement from color projection
 
@@ -374,9 +374,9 @@ prediction (average) is 172.8 GeV, within 0.1% of the world average.
 | m_t(pole, 2-loop) deviation | +5.52% | -0.07% | +5.45 pp |
 | m_H(2-loop) deviation | +13.08% | -4.37% | +8.71 pp |
 
-The color projection correction transforms a 5.5% overshoot into a
-sub-0.1% match. This is not a fit -- it is a group-theory factor applied
-in the algebraically determined direction.
+The table records the reported effect of the chosen kappa_Y=0
+specialization. It does not establish its physical selection, independence
+from comparator-informed choices, or a certified error budget.
 
 ---
 
@@ -384,17 +384,18 @@ in the algebraically determined direction.
 
 ### 7.1 Derivation chain
 
-**Step 1: Composite Higgs.** The Higgs field is the taste condensate
-(psi-bar psi projected onto the color singlet). It is not an elementary
-scalar. There is no tree-level quartic: lambda(M_Pl) = 0.
+**Step 1: Supplied Higgs-sector identification.** The package identifies
+the physical Higgs with a color-singlet taste condensate and adopts no
+tree-level quartic. That physical identification is an open premise here.
 
 **Step 2: Coleman-Weinberg boundary condition.** lambda(M_Pl) = 0 is the
 CW boundary condition: the Higgs potential is purely radiative in origin.
-This is a prediction, not an assumption -- the taste condensate has no
-bare quartic coupling.
+Here lambda(M_Pl)=0 is a supplied boundary condition. The identification
+of a taste-condensate model with the physical Higgs sector is not established
+by this inventory.
 
-**Step 3: SM RGE running.** With the corrected y_t = 0.918 and derived
-EW couplings, run lambda from M_Pl to v using 2-loop (and dominant 3-loop)
+**Step 3: Conditional SM RGE running.** With the supplied y_t = 0.918 and
+EW readouts, run lambda from M_Pl to v using 2-loop (and dominant 3-loop)
 SM beta functions. lambda(v) is determined by the running, yielding
 m_H = sqrt(2 lambda) * v.
 
@@ -405,46 +406,34 @@ m_H = sqrt(2 lambda) * v.
 | 1-loop | 127.95 | +2.2% |
 | 2-loop | 119.77 | -4.4% |
 | 2+3-loop (partial) | 120.30 | -4.0% |
-| Full 3-loop (Buttazzo calibration) | 125.10 | -0.12% |
+| Historical full-3-loop label (not reproduced; §7.3) | 125.10 | Historical -0.12% |
 
-The partial 3-loop code (our implementation, ~200 terms missing) gives
-119.9 GeV. The Buttazzo parametric formula -- which encodes the full
-3-loop+NNLO result -- gives 125.10 GeV with our framework-derived inputs
-(m_t(pole) = 172.57, alpha_s(M_Z) = 0.1181).
+The partial three-loop implementation omits terms and is not a complete
+three-loop calculation. The historical 125.10 GeV entry is hardcoded in the
+synthesis runner, not recomputed there.
 
-### 7.3 The runner-aligned support value and the stability boundary
+### 7.3 Calibration consistency and supplied boundary
 
-The current support runner reports `m_H = 125.10 GeV`. The SM has no
-prediction for `m_H` -- it is a free parameter. The 0.12% deviation from
-the observed 125.25 GeV is a candidate prediction-chain readout, not a fit
-residual; retained-grade reuse still depends on the upstream audit chain.
+The cited calibration runner prints
+`129.6 + 1.5*(m_t-173.34)/0.76 - 0.5*(alpha_s-0.1184)/0.0007` GeV.
+Substitution of this note's 172.57 GeV and 0.1181 gives 128.2945 GeV,
+not 125.10 GeV. This arithmetic does not run the full RGE or establish which
+historical input set produced 125.10. That value and its old 0.12% comparison
+are retained above as history, not as a reproduced full-three-loop result.
+The parametric stability-boundary fit is an imported calibration conditional
+on its boundary, matching conventions and input values; imposing a related
+boundary in the SM is not an independent framework prediction.
 
-Structurally, the 125.10 GeV support value sits at the vacuum stability
-boundary. In the SM itself, the lambda(M_Pl) = 0 boundary condition
-with the OBSERVED m_t and alpha_s gives m_H near the observed value. The
-framework-side support chain tracks this structural feature, pending
-upstream audit closure.
+### 7.4 Sampled vacuum-stability diagnostic
 
-### 7.4 Prediction: absolute vacuum stability
-
-The framework predicts that the electroweak vacuum is **absolutely
-stable**. With the derived y_t(v) = 0.918 (slightly below the SM
-value of ~0.935 at mu = m_t), the quartic coupling lambda remains
-positive at ALL scales from M_Pl down to v:
-
-    lambda(mu) > 0   for all  v < mu < M_Pl
-
-This contrasts with the SM, where the observed couplings give lambda
-crossing zero at mu ~ 10^{6.4} GeV (vacuum metastability). The
-framework resolves this: the slightly lower y_t keeps lambda positive
-throughout the full running range.
-
-This is a falsifiable prediction. If future measurements shift
-y_t upward (or m_t upward), the framework's stability prediction
-could be tested against the SM's metastability.
-
-The lambda running profile is computed in `scripts/frontier_higgs_mass_stability.py`
-and saved to `scripts/lambda_running_profile.dat`.
+The cited runner samples 2000 points of a numerically integrated, truncated
+RGE trajectory with supplied initial data, thresholds and the boundary
+lambda(M_Pl)=0. Positivity on those sampled points, when obtained, is a
+property of that diagnostic. It is not a certified all-scale bound or a
+physical absolute-stability theorem. Changes in matching, missing terms,
+Yukawa normalization and inputs remain material uncertainties. The historical
+SM crossing-scale comparison likewise belongs to that supplied truncated
+trajectory, not a universal assertion about the SM.
 
 ### 7.5 Alternative route: direct formula
 
@@ -452,14 +441,11 @@ From the taste-sector generating functional (HIGGS_MASS_FROM_AXIOM_NOTE):
 
     m_H = v / (2 u_0) = 246.22 / (2 * 0.8776) = 140.3 GeV  (+12.0%)
 
-This 1-loop formula has no free parameters. N_c cancels exactly (the 8/9
-does NOT enter m_H). The 12% gap closes through 2-loop CW corrections,
-lattice spacing convergence (m_H/m_W decreases with a), and taste-breaking
-effects (Wilson term). The m_H/m_W ratio converges monotonically toward
-the SM value: 1.91 (a=1), 1.78 (a=0.75), 1.64 (a=0.5), approaching
-1.56 (SM) as a approaches zero.
-
----
+The parent HIGGS_MASS_FROM_AXIOM_NOTE defines this as a symmetric-point
+curvature readout, not the broken-phase Higgs pole. The supplied external v,
+channel assignment and physical matching remain explicit. Historical finite
+spacing comparisons do not prove continuum convergence to the Higgs mass or
+that the 12% gap is closed.
 
 ## 8. Import Audit
 
@@ -475,16 +461,16 @@ Every ingredient in the prediction chain, with its status:
 | M_Pl | 1.221 x 10^19 GeV | Framework UV cutoff |
 | g_bare = 1 | 1.0 | Cl(3) canonical normalization |
 
-### 8.2 Computed (lattice MC from axiom)
+### 8.2 Declared pure-gauge reuse input
 
 | Ingredient | Value | Source |
 |------------|-------|--------|
 | <P> | 0.5934 | SU(3) plaquette at beta = 6 |
 
-This is the ONE number computed from the axiom. R_conn = 8/9 is analytically
-derived from the 1/N_c expansion (not a second MC input).
+The 0.5934 value is the admitted reuse input described in the corrigendum.
+F_adj=8/9 is channel arithmetic; physical readout weights remain separate.
 
-### 8.3 Derived (algebra + running from axiom + computed)
+### 8.3 Conditional algebra and reported running readouts
 
 | Ingredient | Value | Source |
 |------------|-------|--------|
@@ -493,12 +479,12 @@ derived from the 1/N_c expansion (not a second MC input).
 | alpha_s(v) | 0.1033 | CMT: alpha_bare / u_0^2 |
 | alpha_LM^2 | 0.00822066 | alpha_bare alpha_s(v) |
 | v | 246.28 GeV | Hierarchy formula (BOUNDED NUMERICAL MATCH; HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10) |
-| R_conn | 8/9 | 1/N_c expansion (RCONN_DERIVED_NOTE) |
+| F_adj | 8/9 | Exact channel dimension fraction; physical matching separate |
 | SU(3) x SU(2) x U(1) | -- | Cl(3) algebra |
 | 3 generations | -- | BZ orbit decomposition |
 | g_3^2(bare) = 1 | 1.0 | Z_3 clock-shift |
-| g_2^2(bare) = 1/4 | 0.25 | Z_2 bipartite |
-| g_Y^2(bare) = 1/5 | 0.20 | Chirality sector |
+| g_2^2(bare) = 1/4 | 0.25 | Supplied upstream normalization |
+| g_Y^2(bare) = 1/5 | 0.20 | Supplied upstream normalization |
 | taste_weight | 7/18 | (7/8) * T_F * R_conn |
 | g_1(v) | 0.4644 | Bare + taste staircase + color projection |
 | g_2(v) | 0.6480 | Bare + taste staircase + color projection |
@@ -507,7 +493,7 @@ derived from the 1/N_c expansion (not a second MC input).
 | beta_lambda coefficients | -- | Gauge + Yukawa group theory |
 | Ward BC: y_t(M_Pl) | 0.4358 | g_lattice / sqrt(6) |
 | y_t(v) [Ward] | 0.9732 | Backward Ward + 2-loop RGE |
-| y_t(v) [physical] | 0.9176 | Ward * sqrt(8/9) |
+| y_t(v) [conditional] | 0.9176 | Ward * sqrt(K_Y(0)); selector open |
 | lambda(v) [CW] | CW-determined | lambda(M_Pl) = 0 + RGE running |
 | m_t(pole, 2-loop) | 172.57 GeV | MSbar-to-pole conversion |
 | m_t(pole, 3-loop) | 173.10 GeV | MSbar-to-pole conversion |
@@ -515,7 +501,7 @@ derived from the 1/N_c expansion (not a second MC input).
 | sin^2(theta_W)(M_Z) | 0.2306 | EW running from v |
 | 1/alpha_EM(M_Z) | 127.67 | EW running from v |
 | m_H (2-loop) | 119.8 GeV | lambda(M_Pl) = 0 + 2-loop RGE |
-| m_H (full 3-loop) | 125.10 GeV | Buttazzo parametric with derived inputs |
+| m_H (historical label: full 3-loop) | 125.10 GeV | Not reproduced by displayed calibration inputs; see §7.3 |
 
 ### 8.4 Infrastructure (threshold matching only)
 
@@ -532,9 +518,9 @@ conventional running between v and M_Z.
 
 ### 8.5 Status summary
 
-Every v-scale quantity is computed from the axiom plus the single
-computed plaquette. The INFRASTRUCTURE items affect only the cross-check
-running from v to M_Z, not the core predictions.
+The v-scale package already depends on supplied normalizations, Ward/readout
+and hierarchy premises. Threshold masses additionally enter the stated
+transfer calculations; this inventory supplies no zero-import closure.
 
 **Honest qualifier on `v` itself.** The hierarchy formula
 `v = M_Pl × (7/8)^{1/4} × α_LM^{16} = 246.28 GeV` is a **bounded
@@ -546,23 +532,23 @@ import; the framework anchors `M_Pl` via Wald-Noether matching, itself
 taste count `2^4 = 16` not derived from the Z^3 spatial substrate, on
 the algebraic substitution `u_0^{16} → α_LM^{16}` not derived as a
 determinant identity, and on the lattice → SM-Higgs-VEV observable
-identification. Within those qualifiers, the +0.0255 % match is real and
-robust on the canonical surface; outside them, this package does not
+identification. The +0.0255 % is a residual at the declared reuse value,
+not a certified physical agreement; this package does not
 supply a framework derivation of `v = Λ × α^N` for integer `N`.
 
 ---
 
 ## 9. The Key Theorems
 
-**Coupling Map Theorem (CMT).** The bare coupling maps to the physical
-coupling at scale v through mean-field factors: alpha_s(v) = alpha_bare / u_0^{n_link}.
+**Supplied Coupling Map (CMT).** The package adopts the mean-field map
+and its physical identification at scale v: alpha_s(v) = alpha_bare / u_0^{n_link}.
 With n_link = 2, this gives alpha_s(v) = 0.1033.
 
 **Hierarchy Formula (bounded numerical match; closure path open).**
 `v = M_Pl × (7/8)^{1/4} × α_LM^{16} = 246.28 GeV` matches PDG
 `v_obs = 246.22 GeV` to `+0.0255 %` on the same-surface plaquette /
-coupling chain. The match is real and robust on the canonical surface
-but rides on four named load-bearing primitives that have not been
+coupling chain at the declared reuse value. It is not a physical VEV
+agreement and rides on four named load-bearing primitives that have not been
 derived from the physical Cl(3) local algebra plus Z^3 spatial substrate:
 (P1) `M_Pl` import via the Planck lane's
 Wald-Noether matching; (P2) Wick rotation `Z^3 → Z^4` to obtain the
@@ -582,31 +568,30 @@ Most defensible closure route: per-step Wilsonian transport on the
 §5), still non-perturbative at canonical coupling per
 [YT_P2_TASTE_STAIRCASE_BETA_FUNCTIONS_NOTE_2026-04-17.md](YT_P2_TASTE_STAIRCASE_BETA_FUNCTIONS_NOTE_2026-04-17.md).
 
-**Boundary Selection Theorem.** The lattice Ward identity fixes
-y_t/g_s = 1/sqrt(6) at M_Pl. This selects the Yukawa coupling from the
-gauge sector via SU(3) color-flavor locking.
+**Supplied Ward boundary.** The package adopts y_t/g_s=1/sqrt(6) at M_Pl
+from the cited Ward/color-flavor route. Its physical identification and
+transport are upstream premises, not established by this inventory.
 
 **QFP Insensitivity Theorem.** The top Yukawa has an infrared quasi-fixed
 point (Pendleton-Ross focusing): y_t(v) is insensitive to the UV BC.
 A 10% change in y_t(M_Pl) produces less than 0.5% change in y_t(v).
-This makes the prediction robust against higher-order corrections to
-the Ward identity. (14/14 PASS, `scripts/frontier_yt_qfp_insensitivity.py`.)
+This reported sensitivity does not bound missing beta-function terms,
+physical matching or arbitrary changes to the flow. The historical 14/14
+score in `scripts/frontier_yt_qfp_insensitivity.py` is not a fresh result here.
 
-**Color-Singlet Projection Theorem.** R_conn = (N_c^2-1)/N_c^2 = 8/9
-from the 1/N_c expansion. The EW use is now written as
-`sqrt(K_EW(kappa_EW))`, with `sqrt(9/8)` only at the connected-trace
-specialization `kappa_EW=0`; the Yukawa use remains `sqrt(8/9)` on y_t
-(singlet channel). Directions are determined by color structure, while the
-physical EW readout coefficient remains named explicitly.
-
----
+**Conditional color readouts.** F_adj=8/9 is exact channel arithmetic.
+The EW and Yukawa families K_EW(kappa_EW) and K_Y(kappa_Y) retain their
+independent open physical matching coefficients. The historical package
+chooses both zero; color dimensions and comparator agreement do not derive
+those choices.
 
 ## 10. Superseded Documents
 
 This document is the support inventory for the Cl(3) on Z^3 prediction
 chain. It is not retained-status authority independent of the audit ledger.
-The following earlier notes are superseded as route-local summaries
-(historical record only; do not cite for current status):
+The following route-local notes are provenance pointers. This inventory
+does not supersede their current corrigenda or stronger scope boundaries;
+current audit authority remains with the ledger. Older summaries are historical:
 
 ### y_t chain (all absorbed here)
 - `YT_ZERO_IMPORT_CHAIN_NOTE.md` -- zero-import chain (pre-color-projection y_t)
@@ -635,30 +620,30 @@ The following earlier notes are superseded as route-local summaries
 
 ## 11. Remaining Open Questions
 
-### 11.1 Higgs mass: the 3.5% offset
+### 11.1 Higgs readout and calibration gap
 
-The full 3-loop prediction gives 125.10 GeV, 0.12% below 125.25 GeV. This
-offset matches the SM stability boundary prediction exactly. It is a
-property of the perturbative series, not a framework-specific deficiency.
-Closing this requires either (a) the complete 4-loop beta functions, or
-(b) non-perturbative lattice CW computation at physical lattice spacing.
-The direct formula m_H = v/(2 u_0) = 140.3 GeV converges toward 125 GeV
-as the lattice spacing decreases.
+The 125.10 GeV historical package label is not reproduced by the displayed
+calibration inputs (§7.3). No numerical gap is closed here. Complete running,
+matching and a physical Higgs-pole identification remain needed; the 140.3 GeV
+curvature readout is a distinct diagnostic.
 
 ### 11.2 Dark matter
 
-The relic density ratio R = Omega_DM / Omega_b = 5.48 is derived given
-one cosmological boundary condition (eta = 6.12 x 10^{-10}). The
-Boltzmann infrastructure is theorem-grade. Full closure (deriving eta
-itself) needs the EWPT sphaleron transport chain, which requires
-non-perturbative MC computation. Status: BOUNDED.
+The old R=5.48 agreement is superseded by the September30 corrigendum in
+[G_BARE_DERIVATION_NOTE.md](G_BARE_DERIVATION_NOTE.md). With its corrected
+relative-speed Sommerfeld kernel the supplied model gives approximately 8.07,
+not 5.48, at alpha_plaq=0.0923. This remains a conditional mismatch, not a
+derivation of the cosmological boundary condition or evidence for g_bare=1.
+No new Boltzmann calculation is claimed here.
 
 ### 11.3 CKM matrix
 
 The structural machinery is strong:
 - V_us = sqrt(m_d/m_s) to 0.31% (Gatto-Sartori-Tonin relation)
-- bounded `5/6` bridge support gives `V_cb = (m_s/m_b)^{5/6}` to `0.23%` on
-  the threshold-local self-scale comparator; full bridge/scale closure remains open
+- **Superseded comparison:** the historical `0.23%` for
+  `V_cb = (m_s/m_b)^{5/6}` used mixed scales. The October4 correction above
+  reports about 19% mismatch on its common-scale mixed-truncation diagnostic,
+  with no 16-sigma inference; physical bridge closure remains open
 - delta_CP = 2pi/3 (exact, from Z_3)
 - Schur cascade: c_13 = c_12 * c_23 (exact, from NNI structure)
 
@@ -668,19 +653,16 @@ computable from the framework). Status: BOUNDED, viable route identified.
 
 ### 11.4 The plaquette
 
-<P> = 0.5934 remains the one COMPUTED input. It is computed from the
-axiom by lattice MC, not imported from experiment. An analytical derivation
-of the plaquette (strong-coupling expansion or other non-perturbative
-method) would promote it to DERIVED, but this is not required for the
-prediction chain -- it is already an output of the axiom.
+<P>=0.5934 is the declared pure-gauge reuse value, not a newly certified
+Monte Carlo determination. Its ensemble uncertainty, action/measure matching
+and physical matter-inclusive replacement remain open as described above.
 
 ### 11.5 Perturbative truncation
 
-The backward Ward scan uses 2-loop SM RGE. The QFP insensitivity theorem
-bounds the error from higher-order corrections at ~3%, dominated by the
-2-loop truncation uncertainty. Full 3-loop RGE implementation (all ~200
-terms from Chetyrkin-Zoller 2012) would refine the central values but
-is not expected to change any prediction by more than 1%.
+The backward Ward scan uses 2-loop SM RGE. The reported UV sensitivity does not
+bound the omitted terms or matching errors. The old ~3% and <1% estimates
+are not certified error bounds; a complete higher-order implementation and
+systematic analysis are needed.
 
 ### 11.6 Hierarchy formula primitives (P1-P4)
 
@@ -722,21 +704,21 @@ search context.
 
 ## 12. Summary Table
 
-The complete prediction set from one axiom (Cl(3) on Z^3) and one
-computed number (<P> = 0.5934):
+Historical package values under the supplied premises above. These entries
+are not independent predictions or a current uncertainty-certified scorecard:
 
 | Observable | Predicted | Observed | Deviation | Status |
 |-----------|-----------|----------|-----------|--------|
 | v [GeV] | 246.28 | 246.22 | +0.03% | BOUNDED [^v-status] |
-| alpha_s(M_Z) | 0.1181 | 0.1179 | +0.14% | DERIVED |
-| sin^2(theta_W)(M_Z) | 0.2306 | 0.2312 | -0.26% | DERIVED |
-| 1/alpha_EM(M_Z) | 127.67 | 127.95 | -0.22% | DERIVED |
-| m_t(pole, 2-loop) [GeV] | 172.57 | 172.69 | -0.07% | DERIVED |
-| m_t(pole, 3-loop) [GeV] | 173.10 | 172.69 | +0.24% | DERIVED |
-| y_t(v) | 0.9176 | ~0.917 | +0.06% | DERIVED |
-| m_H (2-loop) [GeV] | 119.8 | 125.25 | -4.4% | DERIVED |
-| m_H (full 3-loop) [GeV] | 125.10 | 125.25 | -0.12% | DERIVED |
-| Vacuum stability | Absolutely stable | (metastable in SM) | PREDICTION | DERIVED |
+| alpha_s(M_Z) | 0.1181 | 0.1179 | +0.14% | Conditional supplied-input readout |
+| sin^2(theta_W)(M_Z) | 0.2306 | 0.2312 | -0.26% | Conditional supplied-input readout |
+| 1/alpha_EM(M_Z) | 127.67 | 127.95 | -0.22% | Conditional supplied-input readout |
+| m_t(pole, 2-loop) [GeV] | 172.57 | 172.69 | -0.07% | Conditional supplied-input readout |
+| m_t(pole, 3-loop) [GeV] | 173.10 | 172.69 | +0.24% | Conditional supplied-input readout |
+| y_t(v) | 0.9176 | ~0.917 | +0.06% | Conditional supplied-input readout |
+| m_H (2-loop) [GeV] | 119.8 | 125.25 | -4.4% | Conditional supplied-input readout |
+| m_H (historical full-3-loop label) [GeV] | 125.10 | 125.25 | Historical -0.12% | Calibration-input mismatch; §7.3 |
+| Vacuum stability | Historical sampled trajectory | Supplied truncated SM trajectory | No all-scale conclusion | Diagnostic only |
 
 [^v-status]: Bounded numerical match on the same-surface
 plaquette/coupling chain at `+0.0255 %`. The hierarchy formula
@@ -746,19 +728,11 @@ P1-P4 (M_Pl import; Wick rotation `Z^3 → Z^4` for 4D taste count;
 identification); see §11.6 above and
 [HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md).
 
-Seven independent observables (v, alpha_s, sin^2(theta_W), 1/alpha_EM,
-y_t, m_t, m_H) plus one qualitative prediction (vacuum stability)
-from one axiom and one computed number.
-m_t and m_H are each shown at two loop orders bracketing the observed value.
-All within 4% of experiment, five within 0.3%.
+The table preserves historical reported values and comparators, including
+correlated outputs of common inputs. Neither agreement percentages nor
+different loop-order values establish independence, physical matching or an
+uncertainty bound. The Higgs calibration and vacuum-stability limits are
+stated in §7.3–7.4.
 
-The SM has no prediction for m_H (it is a free parameter). The current
-support inventory reports `m_H = 125.10 GeV` through the runner-aligned
-chain. The 0.12% deviation is a candidate prediction-chain readout whose
-retained reuse depends on upstream audit closure.
-
-The framework also predicts absolute vacuum stability (lambda > 0 at all
-scales), contrasting with the SM's metastability. This is a qualitative
-prediction testable by precision measurements of m_t and alpha_s.
-
-No free parameters. No fits. No imports.
+Conditional support inventory with the listed admitted and supplied inputs;
+no independent closure is asserted.

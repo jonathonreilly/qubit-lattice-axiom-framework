@@ -445,6 +445,51 @@
       "source_sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
       "timeout_sec": 300,
       "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
+    },
+    "scripts/axiom_first_first_law_bh_mechanics_check.py": {
+      "timeout_sec": 300,
+      "source_sha256": "c727c68bd1ecacae1823564716ce4d8dbf560b1c1218b13d47308c023126556e",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/axiom_first_hawking_temperature_check.py": {
+      "timeout_sec": 300,
+      "source_sha256": "5315451bd3a43c072a5dd0acf4c3f90c07a587363b2de3612ce21538a22fd007",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/frontier_bh_quarter_wald_noether_framework_carrier.py": {
+      "timeout_sec": 300,
+      "source_sha256": "8d4c7a6176a1508f2c09d2cea1d47ad3e58aa6b8f98ab4124fb3c72d458ccd52",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/frontier_cosmological_constant_spectral_gap.py": {
+      "timeout_sec": 300,
+      "source_sha256": "6306b1ce4d690e8d7a50ca37eb656ca154a97e5ce121890965134a609a6fc0c1",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/frontier_cosmological_constant_spectral_gap_identity.py": {
+      "timeout_sec": 300,
+      "source_sha256": "c02e68d792c74fc7191313149f77873e018f7012d329c3e709e98e9ada8727c7",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/frontier_graviton_spectral_tower.py": {
+      "timeout_sec": 300,
+      "source_sha256": "edaf1eb83df3160627b7e5deb9dbcd079a1d40ac4e7d2a763605092cee96cb6f",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/cl3_g_newton_self_consistency_2026_05_10_planckP4.py": {
+      "timeout_sec": 300,
+      "source_sha256": "a443ce1042df6db69514171a0a3b53c18eb082f0074008560acceb18b3604734",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/cl3_koide_a1_probe_gravity_phase_2026_05_08_probe3.py": {
+      "timeout_sec": 300,
+      "source_sha256": "4d409c71db99698cd82c1191eb5d745ac7890dbd32b0bdc9b86993959a2cec52",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/frontier_universal_gr_discrete_global_closure.py": {
+      "timeout_sec": 300,
+      "source_sha256": "2924504ba7b661cb4e26a647f520eeb6ad94daea103fa51755a3a6ec54c855c2",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
     }
   }
 }

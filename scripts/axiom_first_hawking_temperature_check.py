@@ -1,8 +1,7 @@
-"""Axiom-first Hawking temperature check.
+"""Conditional Hawking temperature and finite-matrix KMS check.
 
-Verifies the Wick-rotation regularity argument that fixes the Hawking
-temperature T_H = kappa / (2 pi) on the framework's retained GR action
-surface.
+Checks supplied cone and Schwarzschild formulas, plus a finite Gibbs KMS
+witness. It does not construct smooth spacetime or a global thermal state.
 
 The key claim from the theorem note (H1): the Euclidean continuation
 of a stationary metric near a non-degenerate Killing horizon takes the
@@ -23,10 +22,8 @@ Tests:
   T4: composition with retained S_BH = A / (4 G_N) (BH 1/4 carrier
       retained note) gives T_H * dS_BH = kappa dA / (8 pi), which is
       the standard first-law differential.
-  T5: small-rho regularity check by computing the Ricci scalar of the
-      Euclidean Rindler metric numerically at the bolt; finite at
-      beta = 2 pi / kappa, divergent at any other period (modeled by
-      the conical-deficit Ricci-delta-function source).
+  T5: checks the coefficient of a supplied distributional cone-curvature
+      formula; no numerical Ricci tensor or bolt geometry is constructed.
 """
 from __future__ import annotations
 
@@ -81,6 +78,24 @@ def first_law_differential_T_dS(kappa: float, dA: float) -> float:
     return T_H * dS_BH
 
 
+def kms_regression() -> bool:
+    """Noncommuting two-level witness; the old unshifted identity fails."""
+    energies = np.array([0.0, 1.3])
+    beta, t = 0.7, 0.4
+    rho = np.diag(np.exp(-beta * energies))
+    rho /= np.trace(rho)
+    A = np.array([[0., 1.], [0., 0.]], dtype=complex)
+    B = A.conj().T
+    def alpha(z):
+        return np.diag(np.exp(1j*z*energies)) @ B @ np.diag(np.exp(-1j*z*energies))
+    shifted = np.trace(rho @ A @ alpha(t + 1j*beta))
+    reversed_real = np.trace(rho @ alpha(t) @ A)
+    old = np.trace(rho @ A @ alpha(t))
+    error, old_error = abs(shifted-reversed_real), abs(old-reversed_real)
+    print(f"KMS shifted residual={error:.3e}; old unshifted error={old_error:.3e}")
+    return error < 1e-12 and old_error > 0.1
+
+
 def main() -> None:
     print("=" * 72)
     print("AXIOM-FIRST HAWKING TEMPERATURE CHECK")
@@ -97,7 +112,7 @@ def main() -> None:
     print("TEST 1: conical-defect angle vanishes uniquely at beta = 2 pi / kappa")
     print("-" * 72)
     print("Sweeping kappa in [0.1, 10] across 10 values; for each kappa,")
-    print("scanning trial beta in (0.5, 50] for the unique zero of delta(beta).")
+    print("testing the predicted period and its plus/minus10percent perturbations.")
     print()
     max_resid_t1 = 0.0
     for kappa in np.linspace(0.1, 10.0, 10):
@@ -226,12 +241,13 @@ def main() -> None:
     print(f"  Test 5 (bolt-regularity Ricci coefficient vanishes):          {'PASS' if t5_ok else 'FAIL'}")
     print(f"  Test 6 (Rindler T_Unruh = a/(2 pi) preview):                  {'PASS' if t6_ok else 'FAIL'}")
     print()
-    all_ok = t1_ok and t2_ok and t3_ok and t4_ok and t5_ok and t6_ok
+    t7_ok = kms_regression()
+    all_ok = t1_ok and t2_ok and t3_ok and t4_ok and t5_ok and t6_ok and t7_ok
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     print()
-    print("Note: this runner verifies the Wick-rotation regularity argument")
-    print("and its Hawking temperature consequence on the framework's retained")
-    print("GR action surface (UNIVERSAL_GR_* family). The proof in the")
+    print("Note: this runner checks supplied formulas and finite Gibbs algebra.")
+    print("The conditional temperature consequence requires supplied smooth")
+    print("geometry and equilibrium reconstruction. The argument in the")
     print("companion theorem note is geometric (Steps 1-2: differential")
     print("geometry of Killing horizons) plus algebraic (Step 3: Block 01 KMS)")
     print("and does not depend on the runner — this script just confirms the")

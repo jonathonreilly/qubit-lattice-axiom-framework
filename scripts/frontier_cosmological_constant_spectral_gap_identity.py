@@ -1,42 +1,10 @@
 #!/usr/bin/env python3
-"""
-Spectral-Gap Cosmological-Constant Identity Theorem
-====================================================
+"""Conditional de Sitter / comparison-sphere consistency checks.
 
-STATUS: retained structural identity theorem
-
-This runner verifies the narrow identity statement in
-  docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md
-
-Theorem (restated):
-  On the retained direct-universal GR closure on PL S^3 x R, with retained
-  smooth global gravitational stationary/Gaussian solution class and retained
-  S^3 spatial topology with round metric of radius R, the cosmological-
-  constant scale Lambda_vac and the scalar-Laplacian first nonzero eigenvalue
-  lambda_1(S^3_R) satisfy the exact function identity
-
-      Lambda_vac  =  lambda_1(S^3_R)  =  3 / R^2
-
-  for every R > 0. The identity is retained; the numerical value of R
-  remains bounded.
-
-The runner has two independent legs that meet at the identity:
-
-  Leg A (Einstein side): solve the vacuum Einstein equations with
-    cosmological-constant parameter on 4D FRW with constant-R S^3 spatial
-    slicing; confirm Lambda = 3/R^2.
-
-  Leg B (spectral side): confirm the scalar Laplacian on round S^3 of
-    radius R has spectrum n(n+2)/R^2 and first nonzero eigenvalue 3/R^2
-    (Lichnerowicz-Obata equality for n = 3).
-
-Then the runner confirms that both legs produce the same R-dependent
-function, so the identity Lambda = lambda_1 is an R-independent structural
-statement (not a coincidence at a particular scale).
-
-Self-contained: numpy + scipy.
-
-PStack experiment: frontier-cosmological-constant-spectral-gap-identity
+The radius R in the algebraic comparison denotes the de Sitter curvature
+radius ell, not the time-dependent global spatial radius a(t). This runner
+checks supplied formulas, not derivation of Lambda from a spatial spectrum.
+The finite graph positivity check does not certify continuum eigenvalues.
 """
 
 from __future__ import annotations
@@ -70,7 +38,7 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
 # ---------------------------------------------------------------------------
 def leg_a_einstein_vacuum() -> None:
     """Trace contraction of the vacuum Einstein equations with cosmological
-    constant Lambda, in D = 4 spacetime dimensions, closed-under-S^3-throat.
+    constant Lambda, in D = 4 spacetime dimensions; R denotes supplied ell.
 
     Action: S = (1/(16 pi G)) integral (R_4d - 2 Lambda) sqrt(-g) d^4x
     EOMs:   R_{mu nu} - (1/2) g_{mu nu} R_4d + Lambda g_{mu nu} = 0
@@ -86,8 +54,8 @@ def leg_a_einstein_vacuum() -> None:
                 = (2 Lambda - Lambda) g_{mu nu}
                 = Lambda g_{mu nu}.
 
-    For the de Sitter stationary vacuum with S^3 spatial throat of radius R,
-    the induced 4D Ricci is R_{mu nu} = (3/R^2) g_{mu nu} on the throat.
+    For supplied de Sitter curvature radius R=ell,
+    the 4D Ricci is R_{mu nu} = (3/ell^2) g_{mu nu}.
     Equating:
       (3 / R^2) g_{mu nu}  =  Lambda g_{mu nu}   =>   Lambda = 3/R^2.
     """
@@ -124,16 +92,17 @@ def leg_a_einstein_vacuum() -> None:
 # Leg B: Lichnerowicz-Obata equality on round S^3
 # ---------------------------------------------------------------------------
 def leg_b_obata_spectrum() -> None:
-    """On round S^n of sectional curvature 1/R^2, the scalar Laplacian has
-    spectrum lambda_n = n(n+2)/R^2 (mode index n), and the first nonzero
+    """On round S^d of sectional curvature 1/R^2, the scalar Laplacian has
+    spectrum lambda_l = l(l+d-1)/R^2 (mode index l), and the first nonzero
     eigenvalue is
 
-        lambda_1(S^n_R) = n / R^2
+        lambda_1(S^d_R) = d / R^2
 
-    (Lichnerowicz-Obata equality for spheres). For S^3, n = 3, so
+    (Lichnerowicz-Obata equality for spheres). For S^3, d = 3, so
     lambda_1(S^3_R) = 3/R^2.
 
-    We verify the mode formula and spot-check a discrete approximation.
+    We substitute a supplied mode formula and inspect a finite graph;
+    no continuum spectral convergence is established.
     """
     # Mode-index formula for round S^3
     def lambda_mode(mode: int, R: float) -> float:
@@ -198,12 +167,12 @@ def leg_b_obata_spectrum() -> None:
         n_per_dim = 10
         pts = sample_s3(n_per_dim)
         lap = graph_laplacian(pts, k_nn=8)
-        evals = np.sort(np.abs(eigsh(lap, k=6, which="SM",
-                                     return_eigenvectors=False)))
+        evals = np.sort(eigsh(lap, k=6, which="SM",
+                              return_eigenvectors=False))
         nonzero = evals[evals > 1e-8]
         lam_1_graph = float(nonzero[0]) if nonzero.size else float("nan")
         check("discrete S^3 graph Laplacian admits a nonzero first eigenvalue",
-              np.isfinite(lam_1_graph) and lam_1_graph > 0,
+              np.isfinite(lam_1_graph) and lam_1_graph > 0 and np.min(evals) >= -1e-8,
               f"lam_1_graph = {lam_1_graph:.4f} "
               f"(coarse discretization; continuum value is 3 at R=1)")
 
@@ -279,19 +248,40 @@ def numerical_value_is_not_fixed() -> None:
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+def global_slicing_controls():
+    """Independent components of closed-FRW Einstein equations and slice gap."""
+    for ell in (0.5, 1., 3.):
+        for u in (0., .4, 1.2):
+            a = ell * math.cosh(u)
+            adot = math.sinh(u)
+            addot = math.cosh(u)/ell
+            ric00 = -3*addot/a
+            ricspace = addot/a + 2*(adot/a)**2 + 2/a**2
+            target = 3/ell**2
+            check(f"global de Sitter ell={ell}, t/ell={u}: both Ricci components",
+                  abs(ric00+target)<1e-12 and abs(ricspace-target)<1e-12)
+            gap_ratio = (3/a**2)/target
+            check(f"slice gap / Lambda at t/ell={u}",
+                  abs(gap_ratio-1/math.cosh(u)**2)<1e-12 and (u==0 or gap_ratio<1),
+                  f"ratio={gap_ratio:.12g}")
+        # Static product has incompatible temporal and spatial Lambda values.
+        check(f"static S3 product at R={ell} is not positive-Lambda vacuum",
+              0.0 != 2/ell**2, f"Lambda from 00=0, from ij={2/ell**2}")
+
+
 def main() -> int:
     print("=" * 72)
     print("Spectral-Gap Cosmological-Constant Identity Theorem")
     print("=" * 72)
     print()
-    print("Theorem: on the retained direct-universal GR de Sitter stationary")
-    print("         vacuum sector with retained S^3 spatial topology,")
+    print("Conditional comparison: supplied de Sitter vacuum and round sphere,")
     print("         Lambda_vac = lambda_1(S^3_R) = 3 / R^2 for every R > 0.")
-    print("         The identity is retained; R's numerical value is not.")
+    print("         Conditional on R=ell; not an identity on all spatial slices.")
     print()
 
     print("[A] Leg A: vacuum Einstein equations force Lambda = 3/R^2 --------")
     leg_a_einstein_vacuum()
+    global_slicing_controls()
     print()
 
     print("[B] Leg B: Lichnerowicz-Obata gives lambda_1(S^3_R) = 3/R^2 ------")
@@ -310,9 +300,9 @@ def main() -> int:
     print(f"SUMMARY: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     print("=" * 72)
     print()
-    print("Retained structural identity theorem:")
+    print("Conditional consistency identity, with R=ell:")
     print("  Lambda_vac = lambda_1(S^3_R) = 3 / R^2 for every R > 0,")
-    print("  on the retained de Sitter stationary vacuum with S^3 topology.")
+    print("  on a comparison sphere; spatial a(t)=ell*cosh(t/ell) varies.")
     print()
     print("NOT upgraded:")
     print("  the numerical value of R / R_Lambda / Lambda remains the")

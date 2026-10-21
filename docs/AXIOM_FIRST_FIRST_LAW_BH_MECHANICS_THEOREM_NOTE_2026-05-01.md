@@ -1,8 +1,8 @@
-# Axiom-First First Law of Black Hole Mechanics
+# Conditional First Law of Black Hole Mechanics
 
 **Date:** 2026-05-01
 **Type:** bounded_theorem
-**Claim scope:** for stationary axially-symmetric solutions of the framework's GR action with non-degenerate Killing horizon, the first law dM = T_H dS_BH + Ω_H dJ + Φ_H dQ holds (F1)-(F2); equivalently the Smarr formula M = 2 T_H S_BH + 2 Ω_H J + Φ_H Q (F3); Schwarzschild specialization dM = (κ/8πG) dA recovered exactly (F4). Conditional on retained BH 1/4 carrier (Wald-Noether admitted) plus Block 02 Hawking T_H plus Bardeen-Carter-Hawking 1973 integrability admitted-context.
+**Claim scope:** for stationary axially-symmetric solutions of the framework's GR action with non-degenerate Killing horizon, the first law dM = T_H dS_BH + Ω_H dJ + Φ_H dQ holds (F1)-(F2); with the additional scale-homogeneity assumption, the Smarr formula M = 2 T_H S_BH + 2 Ω_H J + Φ_H Q (F3); Schwarzschild specialization dM = (κ/8πG) dA recovered exactly (F4). Conditional on retained BH 1/4 carrier (Wald-Noether admitted) plus Block 02 Hawking T_H plus Bardeen-Carter-Hawking 1973 integrability admitted-context.
 **Status:** awaiting independent audit. Under the scope-aware classification framework (audit-lane proposal #291), `effective_status` is computed by the audit pipeline.
 **Loop:** `24h-axiom-first-derivations-20260501`
 **Cycle:** 5 (Block 05; stacked on Block 02 (Hawking))
@@ -12,6 +12,13 @@
 **Log:** `outputs/axiom_first_first_law_bh_mechanics_check_2026-05-01.txt`
 
 ## Scope
+
+**Scientific scope correction (2026-10-21).** This is a composition with the
+imported continuum variational first-law theorem, on smooth asymptotically
+flat four-dimensional Einstein-Maxwell solutions with fixed couplings and
+no cosmological constant. Perturbations satisfy the linearized equations
+and the required horizon/asymptotic boundary conditions. The framework-to-
+continuum identification remains a premise; this packet does not derive it.
 
 This note proves the **first law of black hole mechanics** on the
 framework's retained discrete GR action surface plus retained BH 1/4
@@ -54,10 +61,10 @@ gravity surface.
 - **BH 1/4 carrier composition.** From the retained
   [`BH_QUARTER_WALD_NOETHER_FRAMEWORK_CARRIER_THEOREM_NOTE_2026-04-29.md`](BH_QUARTER_WALD_NOETHER_FRAMEWORK_CARRIER_THEOREM_NOTE_2026-04-29.md),
   `S_BH = A · c_cell = A / (4 G_Newton,lat)`.
-- **Wald-Noether identity** (already admitted by upstream BH 1/4
-  carrier): for a stationary Killing horizon with Killing vector `ξ`,
-  the Noether charge `Q_ξ` integrated over a horizon cross-section
-  equals `(κ / 2π) S_Wald + Ω_H J + Φ_H Q + ...`.
+- **Wald-Noether variational identity** (admitted): for a fixed background
+  horizon generator and on-shell linearized perturbation, the closed surface
+  form is `k_ξ = δQ_ξ - ξ·θ`. Its boundary integrals, not the ordinary
+  differential of a product `T S`, provide the first law.
 - **Block 02 Hawking temperature.** From the Block 02 support
   theorem, `T_H = κ/(2π)` for any non-degenerate Killing horizon on
   the framework's GR surface.
@@ -80,7 +87,7 @@ Wald-Noether composition.
 
 ## Statement
 
-Let `(M, g)` be a one-parameter family of stationary, axisymmetric
+Let `(mathcal M, g)` be a smooth family of stationary, axisymmetric
 solutions of the framework's GR action, parametrized by `(M, J, Q)`
 with non-degenerate Killing horizons. Then:
 
@@ -123,79 +130,52 @@ mass formula reads
 
 an identity, confirming consistency.
 
-**(F5) Universal thermodynamic interpretation.** (F1)-(F4) imply
-that on the framework's retained GR surface, BHs satisfy the
-standard four laws of thermodynamics (zeroth, first, second, third)
-with the identifications `T ↔ T_H`, `S ↔ S_BH`. This is the
-"Black Holes are thermodynamic" statement of Bardeen-Carter-Hawking
-1973 / Hawking 1975, now derived (modulo the upstream chain) on the
-framework's GR surface.
+**(F5) Interpretation boundary.** F1–F4 establish only the conditional
+first-law and Smarr relations. Zeroth-, second-, and third-law statements
+require their own hypotheses and proofs; they do not follow from F1–F4.
 
 ## Proof
 
-### Step 1 — Wald-Noether form identity
+### Steps 1–2 — Imported variational identity, not product differentiation
 
-By the Wald-Noether identity (already admitted by retained BH 1/4
-carrier composition), the variation of the Iyer-Wald Noether charge
-`Q_ξ[g]` on a horizon cross-section `Σ_H` for a stationary Killing
-vector `ξ` satisfies
+For a stationary solution and a perturbation satisfying the linearized field
+equations, with the background Killing generator held fixed,
 
 ```text
-    δQ_ξ  -  ξ · θ[g, δg]  =  d(...)                                        (7)
+k_ξ = δQ_ξ - ξ·θ,        d k_ξ = 0.
 ```
 
-Integrating (7) between the horizon `Σ_H` and spatial infinity gives
+Thus its integrals at infinity and at the bifurcation surface agree. For
+uncharged Einstein gravity their evaluated values are
 
 ```text
-    δH_∞[ξ]  -  δH_H[ξ]  =  0                                                (8)
+integral_infinity k_ξ = δM - Ω_H δJ,
+integral_horizon  k_ξ = (κ/2π) δS_Wald = κ δA/(8πG).
 ```
 
-where `H_∞[ξ]` is the asymptotic Hamiltonian (= ADM mass for the
-asymptotic time translation) and `H_H[ξ]` is the horizon Hamiltonian.
-This is the **Iyer-Wald identity**.
-
-For the asymptotic time-translation Killing vector `ξ_t` normalized
-at infinity:
+This boundary evaluation is the admitted Iyer-Wald theorem, not derived by
+BCH algebra in this note. See [Iyer and Wald (1994), §6, equations 76–77 and
+92–95](https://arxiv.org/html/gr-qc/9403028). For the Einstein-Maxwell
+Kerr-Newman extension, the consistently gauge-fixed electromagnetic boundary
+term supplies `Φ_H δQ`; that extension is an additional admitted standard
+first-law input here. With `T_H=κ/(2π)` and `S_BH=A/(4G)`, the result is
 
 ```text
-    H_∞[ξ_t]  =  M  (ADM mass)                                              (9)
+δM = T_H δS_BH + Ω_H δJ + Φ_H δQ.                         (12)
 ```
 
-For the horizon Killing vector `ξ_H = ξ_t + Ω_H ϕ + ...`:
-
-```text
-    H_H[ξ_H]  =  T_H · S_BH  +  Ω_H · J  +  Φ_H · Q                        (10)
-```
-
-(this is the form computed by Wald 1993; the temperature factor comes
-from the surface gravity `κ` via Block 02's `T_H = κ/(2π)` and the
-entropy from the retained BH 1/4 carrier).
-
-### Step 2 — First law
-
-Differentiating (8) along the family parameter `(M, J, Q)` and using
-(9), (10):
-
-```text
-    dM  =  d(T_H S_BH)  +  d(Ω_H J)  +  d(Φ_H Q)                           (11)
-```
-
-But the family is parameterized by `(M, J, Q)` with Killing-horizon
-preservation, so the parameters `T_H, Ω_H, Φ_H` are themselves
-functions of `(M, J, Q)`. The Bardeen-Carter-Hawking integrability
-argument shows the differential simplifies:
-
-```text
-    dM  =  T_H  dS_BH  +  Ω_H dJ  +  Φ_H dQ                               (12)
-```
-
-establishing (F2) and hence (F1) as the `J = Q = 0` specialization. ∎
+The previous equations (10)–(11), which identified a horizon Hamiltonian
+with `T_H S_BH + Ω_H J + Φ_H Q` and then dropped product-rule terms, are
+withdrawn. Already for Schwarzschild, `T_H S_BH=M/2`, so
+`d(T_H S_BH)=dM/2`, whereas `T_H dS_BH=dM`. The terms do not cancel by
+“integrability.” Holding the background generator fixed in the variational
+identity is not the assertion that temperature is constant along the family.
 
 ### Step 3 — Smarr formula by Euler scaling
 
 By Euler's theorem on homogeneous functions: `M(λ²S_BH, λ²J, λQ) =
-λ M(S_BH, J, Q)` (since `M, S_BH, J` scale as length squared and `Q`
-as length, in natural units). Differentiating in `λ` at `λ = 1`:
+λ M(S_BH, J, Q)` (at fixed G, `M` and `Q` have scale weight one, while `S_BH` and
+`J` have weight two in geometrized units). Differentiating in `λ` at `λ = 1`:
 
 ```text
     M  =  2 (∂M/∂S_BH) S_BH  +  2 (∂M/∂J) J  +  (∂M/∂Q) Q                (13)
@@ -231,11 +211,9 @@ No fitted parameters. No observed values used as proof inputs.
 
 ## Corollaries
 
-C1. **Universal BH thermodynamics.** With the zeroth law (`κ`
-constant on Killing horizon), first law (F2), second law (`δA ≥ 0`,
-Hawking 1971), and third law (no `T_H = 0` extremal limit reachable
-in finite steps), BHs on the framework retained surface satisfy all
-four laws of thermodynamics.
+C1. **Thermodynamic scope.** This conditional first law supplies no proof
+of the area theorem, GSL, or third law. Their distinct hypotheses remain open
+in this packet.
 
 C2. **Smarr formula.** (F3) is a useful diagnostic: any candidate
 solution that violates `M = 2 T_H S_BH + 2 Ω_H J + Φ_H Q` cannot be
@@ -247,14 +225,14 @@ heat — adding mass *cools* the BH. This is the standard result and
 is consistent with thermodynamic instability of asymptotically flat
 Schwarzschild.
 
-C4. **GSL cornerstone.** Combined with Block 01 KMS monotonicity
-and the second law `δA ≥ 0`, (F1) gives the Generalized Second Law
-`δ(S_BH + S_matter) ≥ 0` (Block 09).
+C4. **GSL input only.** The first law can enter a separately justified GSL
+argument; adding an area theorem to KMS does not establish exterior entropy
+monotonicity.
 
 ## Honest status
 
 **Branch-local theorem on retained framework GR + retained BH 1/4
-carrier + Block 02 Hawking T_H support.** (F1)–(F5) are derived from
+carrier + Block 02 Hawking T_H support.** (F1)–(F4) are conditional consequences of
 the upstream chain plus the standard Wald-Noether form identity and
 Bardeen-Carter-Hawking 1973 integrability argument.
 

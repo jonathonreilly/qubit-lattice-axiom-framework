@@ -1,19 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cosmological_constant_spectral_gap_identity.py
-runner_sha256: bcb106badfbb072ca82ab7123e7859e185a5d2335b84fbcdd0cd639dc36ca5ad
-timeout_sec: 120
+runner_sha256: c02e68d792c74fc7191313149f77873e018f7012d329c3e709e98e9ada8727c7
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.70
 status: ok
 ----- stdout -----
 ========================================================================
 Spectral-Gap Cosmological-Constant Identity Theorem
 ========================================================================
 
-Theorem: on the retained direct-universal GR de Sitter stationary
-         vacuum sector with retained S^3 spatial topology,
+Conditional comparison: supplied de Sitter vacuum and round sphere,
          Lambda_vac = lambda_1(S^3_R) = 3 / R^2 for every R > 0.
-         The identity is retained; R's numerical value is not.
+         Conditional on R=ell; not an identity on all spatial slices.
 
 [A] Leg A: vacuum Einstein equations force Lambda = 3/R^2 --------
   [PASS] trace-contracted vacuum Einstein gives R_4d = 4 Lambda in D = 4  (R_4d / Lambda = 4.0)
@@ -24,6 +23,27 @@ Theorem: on the retained direct-universal GR de Sitter stationary
   [PASS] de Sitter Ricci throat at R = 3.142e+00 forces Lambda = 3/R^2  (Lambda = 3.039621e-01,  expected 3.039621e-01)
   [PASS] de Sitter Ricci throat at R = 1.000e+06 forces Lambda = 3/R^2  (Lambda = 3.000000e-12,  expected 3.000000e-12)
   [PASS] de Sitter Ricci throat at R = 1.000e+26 forces Lambda = 3/R^2  (Lambda = 3.000000e-52,  expected 3.000000e-52)
+  [PASS] global de Sitter ell=0.5, t/ell=0.0: both Ricci components
+  [PASS] slice gap / Lambda at t/ell=0.0  (ratio=1)
+  [PASS] global de Sitter ell=0.5, t/ell=0.4: both Ricci components
+  [PASS] slice gap / Lambda at t/ell=0.4  (ratio=0.855638786081)
+  [PASS] global de Sitter ell=0.5, t/ell=1.2: both Ricci components
+  [PASS] slice gap / Lambda at t/ell=1.2  (ratio=0.305019996207)
+  [PASS] static S3 product at R=0.5 is not positive-Lambda vacuum  (Lambda from 00=0, from ij=8.0)
+  [PASS] global de Sitter ell=1.0, t/ell=0.0: both Ricci components
+  [PASS] slice gap / Lambda at t/ell=0.0  (ratio=1)
+  [PASS] global de Sitter ell=1.0, t/ell=0.4: both Ricci components
+  [PASS] slice gap / Lambda at t/ell=0.4  (ratio=0.855638786081)
+  [PASS] global de Sitter ell=1.0, t/ell=1.2: both Ricci components
+  [PASS] slice gap / Lambda at t/ell=1.2  (ratio=0.305019996207)
+  [PASS] static S3 product at R=1.0 is not positive-Lambda vacuum  (Lambda from 00=0, from ij=2.0)
+  [PASS] global de Sitter ell=3.0, t/ell=0.0: both Ricci components
+  [PASS] slice gap / Lambda at t/ell=0.0  (ratio=1)
+  [PASS] global de Sitter ell=3.0, t/ell=0.4: both Ricci components
+  [PASS] slice gap / Lambda at t/ell=0.4  (ratio=0.855638786081)
+  [PASS] global de Sitter ell=3.0, t/ell=1.2: both Ricci components
+  [PASS] slice gap / Lambda at t/ell=1.2  (ratio=0.305019996207)
+  [PASS] static S3 product at R=3.0 is not positive-Lambda vacuum  (Lambda from 00=0, from ij=0.2222222222222222)
 
 [B] Leg B: Lichnerowicz-Obata gives lambda_1(S^3_R) = 3/R^2 ------
   [PASS] Obata equality on S^3_R at R = 5.000e-01 gives lambda_1 = 3/R^2  (lambda_1 = 1.200000e+01,  expected 1.200000e+01)
@@ -46,12 +66,12 @@ Theorem: on the retained direct-universal GR de Sitter stationary
   [PASS] identity Lambda = lambda_1 holds at each R, regardless of value  (max residual = 0.00e+00)
 
 ========================================================================
-SUMMARY: PASS=22  FAIL=0
+SUMMARY: PASS=43  FAIL=0
 ========================================================================
 
-Retained structural identity theorem:
+Conditional consistency identity, with R=ell:
   Lambda_vac = lambda_1(S^3_R) = 3 / R^2 for every R > 0,
-  on the retained de Sitter stationary vacuum with S^3 topology.
+  on a comparison sphere; spatial a(t)=ell*cosh(t/ell) varies.
 
 NOT upgraded:
   the numerical value of R / R_Lambda / Lambda remains the

@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cosmological_constant_spectral_gap.py
+runner_sha256: 6306b1ce4d690e8d7a50ca37eb656ca154a97e5ce121890965134a609a6fc0c1
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Cosmological Constant from the S^3 Spectral Gap
+========================================================================
+H_0                = 67.4 km/s/Mpc
+H_0 (SI)           = 2.184285e-18 s^-1
+R_Hubble           = 1.372497e+26 m
+Lambda_pred        = 1.592570e-52 m^-2
+Lambda_obs         = 1.105600e-52 m^-2
+Lambda_pred/obs    = 1.440458
+1/Omega_Lambda(obs)= 1.459854
+R_obs/R_Hubble     = 1.200191
+
+[PASS] d=3 coefficient: lambda_1(S^3) uses the exact d/R^2 coefficient with d=3
+[PASS] Hubble-radius form: the pure de Sitter present-epoch comparison satisfies Lambda_pred = 3/R_H^2 = 3 H_0^2 / c^2 exactly
+[PASS] positive finite prediction: the spectral-gap cosmological constant is positive and finite
+[PASS] O(1) observational ratio: the bounded prediction lands at O(1) relative to observation, not 10^122
+[PASS] Omega-Lambda relation: Lambda_pred/Lambda_obs tracks the same O(1) matter-factor as 1/Omega_Lambda(obs)
+[PASS] observed-radius relation: the observed de Sitter radius differs from R_H only by the same O(1) matter-factor
+
+Interpretation
+- Exact internal step: on retained S^3, lambda_1 = 3/R^2.
+- Present-epoch comparison step: compare the fixed vacuum scale to H_0.
+- The remaining O(1) factor is the same matter-fraction issue seen in Omega_Lambda.
+- This runner is the canonical positive spectral-gap companion, not the vacuum-energy audit.
+
+SUMMARY: PASS=6 FAIL=0
+
+----- stderr -----
+

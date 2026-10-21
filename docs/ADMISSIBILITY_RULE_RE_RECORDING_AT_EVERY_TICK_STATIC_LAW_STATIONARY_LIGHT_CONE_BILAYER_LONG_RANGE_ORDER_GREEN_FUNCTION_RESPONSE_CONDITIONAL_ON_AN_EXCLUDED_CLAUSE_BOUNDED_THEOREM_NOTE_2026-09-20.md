@@ -38,7 +38,7 @@ target_blocker_text: "block 35 (PR #8180): under the axioms' write-once formatio
 source_of_blocker_text: handoff
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "what a record-per-tick clause would give, exactly: the comparator as the stationary law of the axioms' own rule, a bilayer ferromagnet with long-range order above beta_0 < 5914/10000 for the light-cone variant, and a Green-function potential around a persistent source. Next: the owner's decision on the clause (an axiom change, not this campaign's); if wanted, the six-axis menu's ordered side for pi, the uniqueness region, and the infinite-volume states"
+next_trace_action: "what a record-per-tick clause would give, exactly: the comparator as the stationary law of the axioms' own rule, a bilayer ferromagnet with long-range order above beta_0 < 5914/10000 for the light-cone variant, and a Green-function response only for the separately supplied gain-one recurrence. Next: the owner's decision on the clause (an axiom change, not this campaign's); if wanted, the six-axis menu's ordered side for pi, the uniqueness region, and the infinite-volume states"
 conditional_surface_status: "T1-T4 proved on finite even tori under the supplied clause, which contradicts the axioms memo as written and is not adopted; T3's numerical bound on beta_0 uses the current cubic-walk note's scalar bound, explicitly imported; the nonlinear executed numbers are in the controls and not claimed; the standard mathematical imports named at definition level"
 hypothetical_axiom_status: "the clause 'a record at every site at every tick' replaces the memo's 'a site never carries more than one record'; stated as a hypothesis only"
 admitted_observation_status: null

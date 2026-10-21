@@ -41,7 +41,7 @@ target_blocker_text: "owner, 2026-09-20: 'ok lets define what a source is and go
 source_of_blocker_text: handoff
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "the source is defined (record count) and its three channels are worked out: nothing across empty sites, a field of short range through a medium, no charge in the tilt channel; the transit Laplacian is sourced by production. Next: the halo around a lump of agreeing records under formation and transit (profile, strength against the lump's record count), and what a second lump does inside it (accretion on the near side; drift where records bind); both are loaded on ai/probes as computations"
+next_trace_action: "Finite source identities under supplied hypotheses: fixed-occupancy component factorization, conditional equilibrium response and a formal transit source. Physical mass, force and general screening remain open."
 conditional_surface_status: "T1, T2, the symmetry part of T4 and the closure of T5 proved for every finite window and every positive six-axis triple of the declared isotropic class; the quadratic model of T4 is a declared stand-in; the executed ranges (one seed, side 16, 3000 sweeps) are in the controls and not claimed"
 hypothetical_axiom_status: "the moving-records clause of block 39; where the neutral scale is used, the value c = c_0 of block 40; hypotheses only"
 admitted_observation_status: null
@@ -75,7 +75,7 @@ Let `m` assign a number `m(s) ≥ 0` to a record of content `s` and `0` to an em
 
 This is the record-layer counterpart of the gravity lane's source readout: there the requirements single out one density of the amplitude, here they single out the occupancy.
 
-## Theorem T2 — no action across empty sites
+## Theorem T2 — fixed-occupancy component factorization
 
 In the law with vacancies the weight of an arrangement is `z^{|η|}` times the product over bonds with both ends occupied. A bond with an empty end contributes `1`, so if the occupied set splits into components `A₁, …, A_m` with no bond between different components, the weight is `Π_i w(A_i)` with `w(A)` the weight of `A` alone: summed over contents, `Π_i Σ w(A_i)`, and given the occupancy the contents of different components are independent. The factorization holds for every scale c, although each component weight depends on c. Translating separated components without changing their internal bonds does not change their weight. The rates read local neighborhoods; repeated updates can transmit influence. Conditioning on fixed global content counts generally couples the components. ∎
 

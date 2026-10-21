@@ -9,7 +9,7 @@ pi(s) = prod_x Z_x(s), pi is one layer of the pair ferromagnet on the doubled gr
 (x, a) -> (x, a + |x| mod 2) carries Gamma onto the bilayer (Z/L)^3 x K_2, whose bond-plane reflections and layer swap have crossing
 edges of the form {u, theta u} and together cross every edge.  T3: the Laplacian of Gamma has the bands E(k) and 14 - E(k); the
 infrared bound and the sum rule give <|m_0|^2> >= 1 - (3/(2 beta))(G_L + H_L); the bound is verified exactly on a one-dimensional
-two-valued instance; the constants I_0, I_2 are bracketed by exact series.  T4: the linearized law has static response 7/E(k) (the
+two-valued instance; the constants I_0, I_2 are bracketed by exact series.  T4: the separately supplied gain-one recurrence has static response 7/E(k) (the
 lattice Green function) and equal-tick covariance (7 sigma^2/2)(1/E + 1/(14 - E)), verified symbolically and exactly on the 3^3 torus.
 Exact arithmetic only (integers, Fractions and sympy); the runner scans its own source for floating-point literals.
 """
@@ -391,7 +391,7 @@ def family_d(checks: Checks) -> None:
     checks.check("D4", g > 0 and h > 0 and g + h < Fraction(1, 2), f"T3: the torus sums at L = 4 are G = {g} and H = {h}; the bound 1 - (3/(2 beta))(G + H) is positive there for beta > {Fraction(3, 2) * (g + h)}")
 
 
-# ============================================================================================ family E (the linearized law: response and covariance)
+# ============================================================================================ family E (supplied gain-one recurrence: response and covariance)
 def family_e(checks: Checks) -> None:
     k1, k2, k3, s2 = sp.symbols("k1 k2 k3 sigma2", real=True)
     E = 6 - 2 * (sp.cos(k1) + sp.cos(k2) + sp.cos(k3))
@@ -518,7 +518,7 @@ def main(argv) -> int:
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print("scope: re-recording at every tick (a clause the axioms memo excludes) — the static law is stationary for the axioms' rule; the seven-site stencil is one layer of a bilayer pair ferromagnet; the infrared bound and the ordering coupling; the Green-function response; exact")
+    print("scope: re-recording at every tick (a clause the axioms memo excludes) — the static law is stationary for the axioms' rule; the seven-site stencil is one layer of a bilayer pair ferromagnet; the infrared bound and the ordering coupling; the supplied gain-one recurrence Green-function response; not the nonlinear transverse response")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

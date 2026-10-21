@@ -1,16 +1,18 @@
 # Electrostatics Card Note
 
 **Date:** 2026-04-05  
-**Status:** proposed_retained scalar electrostatic-like sign law on the ordered 3D family
+**Status:** conditional scalar electrostatic-like diagnostic on the ordered 3D family; independent audit required
 
 ## Artifact chain
 
 - [`scripts/electrostatics_card.py`](/Users/jonreilly/Projects/Physics/scripts/electrostatics_card.py)
 - [`logs/2026-04-05-electrostatics-card.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-electrostatics-card.txt)
 
+The signed source and response are supplied: the runner uses a softened `q_source/r` field and the action `S=L(1+q_test*f)`. Charge-product dependence enters through these definitions. The measured centroid signs and scaling are finite diagnostics of that model, not a derivation of physical charge or Maxwell dynamics.
+
 ## Question
 
-Can the retained ordered-lattice machinery support a review-safe
+Can the supplied ordered-lattice machinery support a review-safe
 electrostatics-style sign law, without claiming full electromagnetism?
 
 This card stays deliberately narrow:
@@ -68,4 +70,4 @@ The narrow, review-safe statement is:
 
 ## Final Verdict
 
-**retained electrostatics card**
+**conditional electrostatic-like diagnostic**

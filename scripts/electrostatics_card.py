@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Electrostatics card on the retained 3D ordered family.
+"""Electrostatics card on a supplied 3D ordered comparator.
 
 This is a narrow electrostatic-like sign-law probe, not a full EM theory.
 
@@ -277,8 +277,9 @@ def main() -> None:
     print(f"  screened |delta|:  {screened_delta:.8e}")
     print(f"  screening ratio:   {ratio:.3f}")
 
-    print("\nSAFE READ")
-    print("  - Like and unlike charges produce opposite-sign shifts on this retained family.")
+    print("\nSUPPLIED PREMISES: softened signed q/r field and S=L(1+q_test*f).")
+    print("SAFE READ")
+    print("  - Like and unlike charges produce opposite-sign shifts on this supplied family.")
     print("  - Equal and opposite sources cancel exactly when superposed at the same node.")
     print("  - The dipole orientation flips the sign of the response.")
     print("  - Charge response is close to linear over the tested magnitude range.")

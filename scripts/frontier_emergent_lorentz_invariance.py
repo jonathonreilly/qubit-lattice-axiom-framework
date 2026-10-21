@@ -1,46 +1,8 @@
 #!/usr/bin/env python3
-"""
-Emergent Lorentz Invariance from the Cubic Z³ Lattice
-======================================================
+"""Free cubic dispersion and angular mathematics on supplied symbols.
 
-STATUS: bounded conditional structural-dispersion support. The hierarchy
-scale, CPT/SME lift, and parity operator-basis closure are bridge
-premises controlled by their own source/audit lanes.
-
-BOUNDED CLAIM (Emergent Lorentz Invariance Support):
-  On the cubic Cl(3)/Z³ lattice, the infrared dispersion is isotropic at
-  leading order. The first non-isotropic correction is a CPT-even,
-  parity-even, dimension-6 operator with unique cubic-harmonic angular
-  signature. If the hierarchy-scale pin a ~ 1/M_Planck is supplied, this
-  gives Planck-suppressed Lorentz-violation estimates at currently
-  accessible precision.
-
-MECHANISM:
-  1. The cubic lattice Z³ has octahedral symmetry O_h (48 elements),
-     not the full Lorentz group SO(3,1).
-  2. The staggered dispersion relation is:
-       E² = m² + (1/a²) Σ_i sin²(p_i a)
-          = m² + p² − (a²/3) Σ_i p_i⁴ + O(a⁴ p⁶)
-  3. The leading LV correction is −(a²/3) Σ_i p_i⁴ (dimension-6).
-  4. At a = ℓ_Planck: |δE²|/E² ~ (1/3)(E/E_Planck)² ~ 10⁻³⁹ at 1 GeV.
-  5. CPT exactness is a bridge premise; this runner checks the free
-     staggered-H algebraic CPT support directly.
-  6. P exactness at tree level is a bridge premise; this runner checks
-     the dispersion-side parity support directly.
-  7. The angular structure of Σ_i n_i⁴ is the unique cubic harmonic
-     at ℓ=4: K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄).
-
-CONDITIONAL PREDICTION:
-  Lorentz invariance emerges at low energies with corrections at
-  (E/M_Planck)² — unobservable at current experiments (all SME bounds
-  exceeded by ≥7 orders of magnitude).  A positive detection of the
-  ℓ=4 cubic harmonic pattern would be a smoking gun for cubic lattice
-  substructure.
-
-PStack experiment: frontier-emergent-lorentz-invariance
-Self-contained: numpy + scipy.special. (sympy is used only as an OPTIONAL
-extra symbolic confirmation of the exact cubic-harmonic coefficient in
-Part 3; it degrades gracefully to the numeric check if sympy is absent.)
+No physical Lorentz/CPT/SME identification or all-operator exclusion is proved.
+Planck-scale numbers are conditional angular-average estimates.
 """
 
 from __future__ import annotations
@@ -228,14 +190,10 @@ def test_lv_coefficient():
           f"c₄_numerical = {c4_bos_num:.6f}, c₄_exact = {c4_bos_exact:.6f}")
 
     # Both are dimension-6 (proportional to a² p⁴ / E²)
-    check("Leading LV is dimension-6 (a² p⁴ correction)",
-          True,
-          "no dimension-4 (mass) or dimension-5 (a p³) corrections")
+    info("No additional mathematical check: operator classification/physical bridge is outside this runner.")
 
     # No dimension-5: P symmetry forbids odd powers of p
-    check("No dimension-5 LV operators (P symmetry exact on even Z³)",
-          True,
-          "P: x → −x is exact symmetry → odd-power corrections vanish")
+    info("No additional mathematical check: operator classification/physical bridge is outside this runner.")
 
     return True
 
@@ -285,7 +243,7 @@ def test_cubic_harmonic():
     # Anisotropy factor: axis/diagonal = 1/(1/3) = 3
     check("Anisotropy factor: [100]/[111] = 3 (factor-of-3 cubic signature)",
           abs(1.0 / (1.0 / 3) - 3.0) < 1e-12,
-          "unique observable if experimental sensitivity reaches (E/M_Pl)²")
+          "geometric axis/diagonal ratio, not a unique microscopic identifier")
 
     # Verify decomposition: Σ n_i⁴ = 3/5 + (4√π/15) K₄ (normalized Y_lm)
     # Isotropic part: average of Σ n_i⁴ over the sphere = 3/5
@@ -412,29 +370,7 @@ def test_cubic_harmonic():
 # =============================================================================
 
 def test_cpt_protection():
-    """Verify the checked CPT/P support surface removes odd-dimension LV."""
-    print("\n=== Part 4: CPT protection ===\n")
-
-    check("CPT support premise is explicit for the even periodic Z³ runner",
-          True,
-          "[CP,H] is checked directly below; physical SME lift remains upstream")
-
-    check("CPT-odd part vanishes on the checked free-H support surface",
-          True,
-          "free-H CPT-odd component is checked directly in Part 6b")
-
-    check("CPT-odd LV requires odd-dimension operators on the bridge premise",
-          True,
-          "under the CPT bridge, dimension-3 and dimension-5 LV are absent")
-
-    check("Dimension-5 LV also forbidden by P symmetry",
-          True,
-          "P: x → −x support check ⇒ no odd-power momentum corrections")
-
-    check("Leading checked LV operator is dimension-6 before any Planck pin",
-          True,
-          "Planck-suppressed readout is conditional on a separate unit-map lane")
-
+    info("No physical CPT or SME operator-basis exclusion is proved by this free-symbol runner.")
     return True
 
 
@@ -460,32 +396,12 @@ def test_planck_suppression():
     #   a ~ 1/M_Planck
     # So the Planck suppression is conditional on that pin.
 
-    # At E = 1 GeV:
-    lv_1gev = (1.0 / 5) * (1.0 / E_PLANCK) ** 2
-    check("LV at 1 GeV: |δE²/E²| = (1/5)(E/M_Pl)² ≈ {:.1e}".format(lv_1gev),
-          lv_1gev < 1e-37,
-          f"|δE²/E²| = {lv_1gev:.2e}")
-
-    # At E = 1 TeV (LHC):
-    lv_1tev = (1.0 / 5) * (1000.0 / E_PLANCK) ** 2
-    check("LV at 1 TeV: |δE²/E²| ≈ {:.1e}".format(lv_1tev),
-          lv_1tev < 1e-31,
-          f"|δE²/E²| = {lv_1tev:.2e}")
-
-    # At E = 10²⁰ eV (UHECR):
-    e_uhecr = 1e20 * 1e-9  # convert eV to GeV = 1e11 GeV
-    lv_uhecr = (1.0 / 5) * (e_uhecr / E_PLANCK) ** 2
-    check("LV at 10²⁰ eV (UHECR): |δE²/E²| ≈ {:.1e}".format(lv_uhecr),
-          lv_uhecr < 1e-15,
-          f"|δE²/E²| = {lv_uhecr:.2e}")
-
-    # Context: comparison with current experimental sensitivity
-    # (not part of the theorem — included for reviewer orientation)
-    print("\n  --- Experimental context (conditional on the Planck pin) ---")
-    print("  Framework LV coefficient ~ 1/M_Pl² ~ 6.7e-39 GeV⁻²")
-    print("  Tightest CPT-even bound: ~10⁻³² GeV⁻² (GRB birefringence)")
-    print("  Ratio: ~10⁻⁷ (7 orders below current sensitivity)")
-    print("  CPT-odd bounds: this support surface predicts zero under the CPT bridge")
+    for energy_gev in (1.0, 1000.0, 1e11):
+        estimate = (energy_gev/E_PLANCK)**2/5
+        print(f"INFO: conditional dimensionless dispersion estimate at {energy_gev:g} GeV: {estimate:.6e}")
+    check("conditional quadratic scaling over factor 1000 in energy",
+          np.isclose(((1000/E_PLANCK)**2/5)/((1/E_PLANCK)**2/5), 1e6))
+    print("INFO: no matched experimental operator/sector/unit map; no safety margin inferred.")
 
     return True
 
@@ -495,8 +411,7 @@ def test_planck_suppression():
 # =============================================================================
 
 def build_staggered_hamiltonian_momentum(L):
-    """Build the staggered Hamiltonian and compute the dispersion relation
-    by diagonalizing in position space, then mapping eigenvalues to momenta."""
+    """Build the real anti-Hermitian staggered hopping D; Hermitian lift is iD."""
     N = L ** 3
 
     def idx(x, y, z):
@@ -533,7 +448,7 @@ def test_finite_lattice():
     H = build_staggered_hamiltonian_momentum(L)
 
     # H is anti-Hermitian (real antisymmetric)
-    check(f"L={L}: H is antisymmetric",
+    check(f"L={L}: D (legacy local variable H) is antisymmetric",
           np.allclose(H, -H.T, atol=1e-14),
           f"max |H + Hᵀ| = {np.max(np.abs(H + H.T)):.2e}")
 
@@ -651,92 +566,28 @@ def build_spatial_parity(L):
 
 
 def test_cpt_bridge_on_runner_H():
-    """Bounded CPT support: verify algebraic CPT on the runner's free H.
-
-    This supplies runner-local support for the bridge premise by direct
-    check rather than by assertion.  The CPT operator is C * P * T where
-    T = complex conjugation acts trivially on the real H built in Part 6.
-
-    Checked identity: CPT * H * (CPT)^{-1} = (CP) H (CP)^{-1} = H exactly.
-    Equivalently: C H C = -H, P H P = -H, so (CP) H (CP) = +H, and T H T = H.
-    """
-    print("\n=== Part 6b: CPT support — direct verification on runner's free H ===\n")
-
-    L = 8  # even, required for spatial parity to be well defined
-    H = build_staggered_hamiltonian_momentum(L)
-    C = build_charge_conjugation(L)
-    P = build_spatial_parity(L)
-
-    # Sanity: C and P are involutions
-    check(f"L={L}: C^2 = I (sublattice-parity involution)",
-          np.allclose(C @ C, np.eye(L ** 3), atol=1e-14),
-          f"||C^2 - I||_max = {np.max(np.abs(C @ C - np.eye(L ** 3))):.2e}")
-    check(f"L={L}: P^2 = I (spatial-parity involution)",
-          np.allclose(P @ P, np.eye(L ** 3), atol=1e-14),
-          f"||P^2 - I||_max = {np.max(np.abs(P @ P - np.eye(L ** 3))):.2e}")
-
-    # H is real ⇒ T (complex conjugation) acts trivially: T H T^{-1} = H* = H
-    check(f"L={L}: T-symmetry — H is real, so T H T^{{-1}} = H",
-          np.max(np.abs(H.imag)) < 1e-14,
-          f"max|Im H| = {np.max(np.abs(H.imag)):.2e}")
-
-    # C-action: C H C = -H (sublattice-parity spectral flip)
-    CHC = C @ H @ C
-    check(f"L={L}: C H C = -H (sublattice-parity flip, CPT_EXACT_NOTE Step 1)",
-          np.max(np.abs(CHC + H)) < 1e-14,
-          f"||C H C + H||_max = {np.max(np.abs(CHC + H)):.2e}")
-
-    # P-action: P H P = -H on the even periodic torus
-    PHP = P @ H @ P
-    check(f"L={L}: P H P = -H (spatial-parity flip, CPT_EXACT_NOTE Step 2)",
-          np.max(np.abs(PHP + H)) < 1e-14,
-          f"||P H P + H||_max = {np.max(np.abs(PHP + H)):.2e}")
-
-    # CP combined: (CP) H (CP) = +H
-    CP = C @ P
-    CPH = CP @ H @ CP
-    check(f"L={L}: (CP) H (CP) = +H (CP-symmetry on the free staggered H)",
-          np.max(np.abs(CPH - H)) < 1e-14,
-          f"||CP H CP - H||_max = {np.max(np.abs(CPH - H)):.2e}")
-
-    # CPT: T trivial on real H; CPT * H * (CPT)^{-1} = (CP) H (CP) = H
-    # Therefore [CPT, H] = 0 to machine precision.
-    check(f"L={L}: [CPT, H] = 0 (free-H CPT support checked on runner H)",
-          np.max(np.abs(CPH - H)) < 1e-14,
-          f"||(CPT) H (CPT)^{{-1}} - H||_max = {np.max(np.abs(CPH - H)):.2e}")
-
-    # CPT-odd part of H vanishes identically (SME a_mu, b_mu, ... = 0)
-    H_odd = (H - CPH) / 2.0
-    check(f"L={L}: CPT-odd part of the free runner H vanishes",
-          np.max(np.abs(H_odd)) < 1e-14,
-          f"||H_odd||_max = {np.max(np.abs(H_odd)):.2e}")
-
-    print("\n  --- Bridge citation ---")
-    print("  Direct CPT verification above corresponds 1:1 to")
-    print("  CPT_EXACT_NOTE.md Steps 1-4 on the same operator family.")
-    print("  Hermitian-Hamiltonian/SME extension is carried by the")
-    print("  PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md")
-    print("  bridge note. The free-field CPT step used by this runner is")
-    print("  verified here directly; the physical-observable SME lift is upstream.")
+    """Check finite antiunitary algebra, without a physical CPT identification."""
+    L=8
+    D=build_staggered_hamiltonian_momentum(L)
+    H=1j*D
+    C=build_charge_conjugation(L)
+    P=build_spatial_parity(L)
+    CP=C@P
+    check("D real antisymmetric", np.max(np.abs(D+D.T)) < 1e-14)
+    check("H=iD Hermitian", np.max(np.abs(H-H.conj().T)) < 1e-14)
+    check("C squared identity",np.max(np.abs(C@C-np.eye(L**3))) < 1e-14)
+    check("P squared identity",np.max(np.abs(P@P-np.eye(L**3))) < 1e-14)
+    check("C H C = -H",np.max(np.abs(C@H@C+H)) < 1e-14)
+    check("P H P = -H",np.max(np.abs(P@H@P+H)) < 1e-14)
+    check("PK preserves H=iD",np.max(np.abs(P@H.conj()@P-H)) < 1e-14)
+    check("CPK flips H=iD",np.max(np.abs(CP@H.conj()@CP+H)) < 1e-14)
+    check("CPK is not a symmetry of this nonzero H",np.max(np.abs(CP@H.conj()@CP-H)) > .1)
+    info("C, P and PK are declared matrices; no physical charge/CPT or SME identification follows.")
     return True
 
 
 def test_parity_protection_bridge():
-    """Bounded parity support: verify P forbids odd-power dispersion terms.
-
-    Theorem: under x -> -x mod L the staggered dispersion satisfies
-        E^2(-p) = E^2(p)    (P-symmetric)
-    Hence the Taylor expansion of E^2(p) contains only even powers of
-    each p_i.  In particular, all dimension-5 LV operators (one unpaired
-    spatial derivative on a fermion bilinear) carry odd parity weight,
-    and their parity-symmetric coefficient must vanish on this enumerated
-    support surface.
-
-    This is the dispersion-side incarnation of
-    PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md
-    Steps 2-4: every dim-5 LV piece is P-odd, so its symmetric coefficient
-    is zero.
-    """
+    """Check even momentum dependence; no general EFT operator classification."""
     print("\n=== Part 6c: Parity bridge — direct verification on dispersion ===\n")
 
     a = 1.0
@@ -775,34 +626,12 @@ def test_parity_protection_bridge():
         # Normalize by a*p^3 (the dim-5 magnitude)
         if np.linalg.norm(pvec) > 0:
             odd_coefs.append(abs(odd_part) / (a * np.linalg.norm(pvec) ** 3 + 1e-30))
-    check("Dim-5 LV coefficient (a p^3 part of E^2) vanishes identically",
+    check("Odd a p^3 contribution to this E^2 vanishes",
           max(odd_coefs) < 1e-10,
           f"max |odd_coef| = {max(odd_coefs):.2e}")
 
-    # On the dim-5 SME-style fermion-bilinear basis (4 candidate Dirac
-    # structures), parity protection forbids each.  This is the exhaustive
-    # enumeration in PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE.
-    candidates = [
-        ("gamma^mu partial_nu partial_rho",  -1, "Dirac-weight or deriv-weight is -1"),
-        ("partial_mu partial_nu (unit Clifford)", -1, "one unpaired spatial derivative"),
-        ("gamma_5 gamma^mu partial_nu",     -1, "gamma_5 * spatial-derivative weight"),
-        ("sigma^{mu nu} partial_rho",       -1, "partial_rho is parity-odd"),
-    ]
-    for name, weight, detail in candidates:
-        check(f"Dim-5 SME basis '{name}' has P-weight = -1",
-              weight == -1, detail)
+    info("Evenness of this scalar dispersion does not classify all dimension-five fermion bilinears.")
 
-    all_candidates_p_odd = all(weight == -1 for _, weight, _ in candidates)
-    check("Enumerated dim-5 candidate list is P-odd on this support surface",
-          all_candidates_p_odd,
-          "all listed dim-5 LV candidates carry P-weight -1")
-
-    print("\n  --- Bridge citation ---")
-    print("  Direct verification above is the dispersion-side incarnation of")
-    print("  PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md")
-    print("  Steps 2-4. The runner here verifies P-symmetry of the staggered")
-    print("  dispersion E^2(-p) = E^2(p) directly; the no-go note completes")
-    print("  the operator-basis enumeration on the SME dim-5 Dirac basis.")
     return True
 
 
@@ -836,9 +665,7 @@ def report_planck_pin_bridge_context():
          "context only; not promoted by this runner",
          "a/l_P" in bridge_text or "a / l_P" in bridge_text)
 
-    check("Structural dispersion checks do not derive or require a/l_P = 1",
-          True,
-          "Planck readout remains conditional on a separately audited unit-map lane")
+    info("No additional mathematical check: operator classification/physical bridge is outside this runner.")
 
     print("\n  --- Bridge citation ---")
     print("  The Planck-pin bridge is non-load-bearing context in this note.")
@@ -851,37 +678,8 @@ def report_planck_pin_bridge_context():
 # =============================================================================
 
 def test_combined():
-    """State the combined result."""
-    print("\n=== Part 7: Emergent Lorentz invariance ===\n")
-
-    check("Z³ lattice has octahedral symmetry O_h (48 elements), not SO(3,1)",
-          True,
-          "O_h ⊂ SO(3) ⊂ SO(3,1); broken at the lattice scale")
-
-    check("Staggered dispersion: E² = p² − (a²/3)Σp_i⁴ + O(a⁴)",
-          True,
-          "leading correction is O(a²p⁴), dimension-6")
-
-    check("Checked CPT/P bridge premises remove dim-3, -4, and -5 LV on this support surface",
-          True,
-          "leading structural LV operator is dimension-6")
-
-    check("Angular structure: unique cubic harmonic K₄ at ℓ=4",
-          True,
-          "Σn_i⁴ = 3/5 + (4√π/15)K₄ (normalized Y_lm); factor-of-3 anisotropy axis vs diagonal")
-
-    check("Conditional Planck-pin arithmetic gives |δE/E| < 10⁻¹⁹ at highest observable energies",
-          True,
-          "if a ~ 1/M_Pl is supplied, suppression follows")
-
-    check("CONDITIONAL SUPPORT: Lorentz-violation estimate is Planck-suppressed at E ≪ M_Planck",
-          True,
-          "O_h + supplied Planck pin gives (E/M_Pl)² support estimate")
-
-    check("PREDICTION: cubic harmonic ℓ=4 signature if LV ever detected",
-          True,
-          "smoking gun for lattice substructure; testable angular pattern")
-
+    info("Supplied free symbols: isotropic quadratic term, quartic cubic correction and even momentum dependence.")
+    info("Physical operator selection, Lorentz symmetry, SME matching and experimental reach remain open.")
     return True
 
 
@@ -921,7 +719,7 @@ def main():
         sys.exit(1)
     else:
         print("\nAll bounded checks passed for the conditional support surface.")
-        print("Leading checked LV support: dimension-6, (E/M_Pl)^2 under the Planck pin, cubic harmonic l=4.")
+        print("Checked free-symbol quartic correction and l=4 angular component; physical mapping remains supplied.")
         sys.exit(0)
 
 

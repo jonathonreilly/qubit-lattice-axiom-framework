@@ -33,7 +33,7 @@ target_blocker_text: "owner, 2026-09-20: 'ok lets define what a source is and go
 source_of_blocker_text: handoff
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "for transparent bodies the wind law's source is the record count and the executed force is N1 N2/r^2 with the predicted coefficient; next: the same at other densities and scattering rates, the opacity at which additivity fails as a function of the body's column density, and growth and drag against the attraction; queued on ai/probes"
+next_trace_action: "for transparent bodies the wind law's source is the record count and the isotropic free-streaming comparator has conditional force N1 N2/r^2; historical executions are diagnostics; next: the same at other densities and scattering rates, the opacity at which additivity fails as a function of the body's column density, and growth and drag against the attraction; queued on ai/probes"
 conditional_surface_status: "T1, T2 exact expectations in the uniform product state (depletion by the capturing body neglected); T3 combines them with block 45's free-streaming coefficient; capture rates and forces (floating point; side 96; one to four seeds) are in the controls and not claimed"
 hypothetical_axiom_status: "the inertial clause of block 44 (its scattering re-draws contents) and the capture of records by bodies; hypotheses only"
 admitted_observation_status: null
@@ -94,9 +94,11 @@ Pairs at separation 16, 10000 ticks each (mean and standard error over runs):
 | `f = 0.02` both | 4 | 15–29 | `0.057 ± 0.006` | `0.675 ± 0.042` | `(1.44 ± 0.10)·10⁻⁴` |
 | `f = 0.02` against `0.05` | 3 | 15–20, 47–50 | `0.083 ± 0.007` | `0.530 ± 0.015` | `(1.03 ± 0.04)·10⁻⁴` |
 | `f = 0.05` both | 2 | 35–48 | `0.186 ± 0.023` | `0.555 ± 0.001` | `0.98·10⁻⁴` |
-| prediction `G/r²` | | | | `K₀ = 0.67` | `1.65·10⁻⁴` (kinetic `q₁`), `1.46·10⁻⁴` (executed `q₁`) |
+| isotropic comparator `G/r²` | | | | `K₀ = 0.67` | `1.65·10⁻⁴` (kinetic `q₁`), `1.46·10⁻⁴` (executed `q₁`) |
 
 Solid balls (block 45's controls, PR #8553): capture rates `3.17, 7.8, 13.2, 21.8` at radius `2, 3, 4, 5`, that is `0.041, 0.045, 0.045, 0.045` per exposed face, against the kinetic `0.042`.
+
+The anisotropic cubic-wind companion blocks interpreting this isotropic comparator as an all-direction gas prediction; its hydrodynamic and off-axis physical bridges remain open.
 
 ## No-Go Discipline Gate
 
@@ -123,7 +125,7 @@ The product-state expectation neglects the depletion caused by the body; declare
 ### N5 — Resolution audit
 | Claim | per_element | per_site | per_mode | per_block | lattice_wide |
 |---|---|---|---|---|---|
-| "a site captures `(√3/2)ρ`; a body captures through its exposed faces; transparent bodies attract with `G N₁N₂/r²`" | executed: the half-sphere moment `1/4`; the six-axis neighbour count | executed: exposed faces of sites, pairs, a cube and four balls | not applicable | executed: the coefficient at three densities | T1, T2 exact expectations in the uniform product state; T3 a combination with block 45's free-streaming force; capture rates and forces executed only |
+| "a site captures `(√3/2)ρ`; a body captures through its exposed faces; transparent bodies attract with `G N₁N₂/r²`" | executed: the half-sphere moment `1/4`; the six-axis neighbour count | executed: exposed faces of sites, pairs, a cube and four balls | not applicable | executed: the coefficient at three densities | T1, T2 exact expectations in the uniform product state; T3 conditional on isotropic inflow, first harmonic and balanced geometry; capture rates and forces executed only |
 
 ### N6 — Partial-closure paths and primitive scan
 The registered primitives supply neither an update law nor a capture clause. Nothing is proposed for registration.

@@ -17,106 +17,63 @@ with repair: *"missing_bridge_theorem — derive the probability/readout map and
 Supplying the named retained authority/bridge is substantive new work, out of
 scope for this repair. This revision takes the **split path**:
 
-- **Load-bearing (in scope):** The runner-computed finite numerical results are exactly produced: the gravity-QM coupling produces measurable changes in Y-centroid, RMS spread, fringe visibility, and profile shape on a `32^3` lattice, and the Sorkin `I_3` parameter is `0` to machine precision (`~10^-16`) across tested wavenumbers and slit spacings, confirming that linear path-sum superposition enforces pairwise-only interference numerically.
+- **Load-bearing (in scope):** The supplied field changes finite detector-density diagnostics on a `32^3` lattice. In the separate slit model, a common linear transfer with one additive slit mask and the supplied quadratic readout gives vanishing Sorkin `I_3` up to floating-point error. These are conditional model calculations.
 - **NON-load-bearing (split off / admitted):** The interpretation that `I_3 = 0` constitutes a derivation of the Born rule from graph structure — rather than a consequence of the `np.abs(psi)**2` readout assumed in the runner — depends on a readout-map bridge (connecting graph-path amplitudes to probabilities without pre-assuming Born) that is not supplied; that identification of the Sorkin test result with a derived Born rule is admitted as a not-derived relabeling of the numerical output.
 
 No new axiom, import, or retained bridge is introduced. The runner-verified
 core is the load-bearing content; the named bridge stays an admitted,
 non-load-bearing input until a retained authority for it lands.
 
-## The honest overlap
+## Supplied field and density diagnostic
 
-Both lattice gauge theory and this graph-first framework use graphs,
-Laplacians, path integrals, and gauge phases. This overlap is real and
-must be acknowledged. The distinction is NOT merely "derivation direction"
-(a framing argument that a reviewer would rightly dismiss). The distinction
-is two concrete, testable results.
+The runner solves a finite Dirichlet Poisson equation and propagates complex
+amplitudes with the supplied edge phase `exp(i k L(1-f))/L`. Its density is
+`abs(psi)**2`, normalized in the implementation. Neither the action nor the
+quadratic readout is derived here. A point-source field and one additional
+feedback step sourced by the first propagated density are compared with the
+zero-field case. The feedback calculation is not a converged self-consistent
+solution.
 
-## Result 1: Gravity-QM inseparability
+The inputs are `N=32`, source `(1,16,16)`, point mass `(16,20,16)` of strength
+8 in the runner's Poisson convention, `k=6`, transverse Gaussian width 2.5,
+and detector plane `x=30`. The feedback source coefficient is 2. The field
+changes detector centroid and RMS spread. A finite-window profile is shifted
+by **free centroid minus field centroid** before its L2 difference is measured;
+interpolation, boundary cropping and renormalization mean this is only an
+approximate translation alignment. The previous sign moved the profile away
+from the reference and its reported 0.352 value is withdrawn.
 
-**Runner diagnostic:** The gravitational field proxy (Poisson potential sourced by
-|psi|^2) modifies the propagator's quantum structure in ways that go
-beyond simple deflection. Specifically, on a 32^3 lattice:
+The central-window `(max-min)/(max+min)` is a density contrast. An envelope
+change can change it; it is not a measurement of quantum coherence or a
+fringe-specific visibility. The runner's diagnostic predicate is a disjunction
+of centroid, shifted-profile and spread thresholds, not a proof that each
+observable changes in every parameter regime.
 
-| Measure | Free (f=0) | With gravity | Change |
-|---------|-----------|-------------|--------|
-| Y-centroid at detector | 15.99 | 19.95 | +3.96 (deflection) |
-| Profile shape diff (L2, centroid-aligned) | -- | 0.352 | Nonzero |
-| RMS spread | 4.52 | 2.85 | -1.67 (focusing) |
-| Fringe visibility | 0.29 | 0.98 | +0.69 (coherence change) |
+Standard lattice methods can also be supplied with external fields. This
+finite calculation establishes no impossibility or superiority theorem about
+lattice QCD and no physical graph-gravity identification.
 
-The shape difference after centroid alignment is 0.35 -- gravity does not
-merely shift the propagator, it changes its coherence structure.
+## Pairwise interference under explicit readout premises
 
-**Why lattice QCD cannot do this:** In lattice QCD, the lattice is a fixed
-computational scaffold. The lattice spacing `a` is a UV regulator that gets
-sent to zero in the continuum limit. The lattice itself has no gravitational
-content -- it cannot lens, focus, or modify quantum coherence. Quantum fields
-live ON the lattice, but the lattice is inert.
+In a separate `20 x 21` forward-transfer graph, one barrier mask selects
+slits. The transfer before and after the barrier is fixed across all slit
+subsets. Hence `psi_ABC = psi_A + psi_B + psi_C` and likewise for pairs.
+With the supplied `P_S = abs(psi_S)**2`, expanding the squares gives exactly
 
-In this runner surface, the action S = L(1-f) couples the quantum phase
-directly to the Poisson potential. Treating that as a physical graph-gravity
-identification requires a separate bridge and is not claimed here.
+`I3 = P_ABC - P_AB - P_AC - P_BC + P_A + P_B + P_C = 0`.
 
-**Bounded claim:** The runner exhibits a gravity-coupled propagator diagnostic
-on the graph-first surface. It does not prove a framework-vs-lattice-QCD
-physical comparison theorem.
+This algebra holds pointwise; the runner checks finite floating-point
+instances at `k=2,4,6,8,10,15,20` and spacings `2,3,4,5`, with relative
+threshold `1e-12`. Both additive amplitudes and quadratic readout are needed.
+Linearity alone does not derive the readout; nor does it ensure the identity
+when the transfer itself changes between slit configurations.
 
-## Result 2: Structural Born rule (Sorkin I_3 = 0)
+The comparison control uses slit-dependent layer normalization and a cubic
+amplitude update. Both can break amplitude additivity. A nonzero `I3` in that
+control is not an isolated test of the cubic term and is not a violation of
+the quadratic readout, which the control still uses. It demonstrates that the
+diagnostic can detect the resulting failure of the additive-amplitude model.
 
-**Runner diagnostic:** The path-sum propagator on the graph produces Sorkin
-parameter I_3 = 0 to machine precision (~10^-16) across all tested
-wavenumbers (k = 2 to 20) and slit spacings (2 to 5).
-
-The Sorkin parameter measures third-order interference:
-I_3 = P_ABC - P_AB - P_AC - P_BC + P_A + P_B + P_C
-
-I_3 = 0 means all tested interference is pairwise. On a supplied quadratic
-probability readout this is the Born-rule interference signature; the readout
-bridge itself is not derived by this runner.
-
-A nonlinear (cubic) propagator gives I_3/P = 0.16, confirming the test
-has discriminating power -- it can detect violations of the Born rule
-when they are present.
-
-**Why this differs from lattice QCD:** In lattice QCD (and all standard QFT),
-the Born rule is an axiom of quantum mechanics. The path integral computes
-amplitudes; the postulate that probabilities = |amplitudes|^2 is separate.
-Lattice QCD does not derive the Born rule -- it assumes it.
-
-In this runner, the path-sum propagator is a linear superposition of complex
-amplitudes over graph paths. The linearity of this sum forces the tested
-Sorkin `I_3 = 0` diagnostic. A full Born-rule theorem still requires the
-separate probability/readout bridge.
-
-**Bounded claim:** The runner confirms the linear path-sum pairwise
-interference diagnostic. It does not by itself derive the probability rule.
-
-## What this does NOT claim
-
-- We do not claim lattice QCD is wrong or that its results are invalid.
-- We do not claim this framework can reproduce lattice QCD's precision
-  predictions for hadron spectra, quark confinement, etc.
-- We do not claim the dimension emergence result (d_s = 3 special) is
-  unique to this framework -- that result depends on lattice topology
-  and could be obtained in other graph-based approaches.
-
-## Reviewer FAQ
-
-**Q: Isn't the gravity-QM coupling just a semiclassical approximation?**
-A: The coupling S = L(1-f) with f sourced by |psi|^2 is indeed
-semiclassical. But the point is that this coupling is built into the
-graph structure -- it is not an add-on. Lattice QCD has no analogous
-coupling at any level of approximation.
-
-**Q: Isn't the Born rule result just Feynman's path integral argument?**
-A: Partially. Feynman showed that linear superposition of amplitudes controls
-interference structure. This row shows the Sorkin diagnostic concretely on a
-graph propagator; it does not close the full probability/readout theorem or a
-framework-vs-lattice-QCD comparison.
-
-**Q: Can't you just add gravity to a lattice?**
-A: Not in the same way. Lattice quantum gravity is a separate research
-program (e.g., causal dynamical triangulations, Regge calculus). It uses
-different lattices with different purposes than lattice QCD. The point is
-that this framework gets both from the SAME structure.
+Physical gravity, a derived probability map, and comparison with other
+frameworks remain separate open bridges. The script is a diagnostic reporting
+program; its process exit code alone is not a fail-closed theorem gate.

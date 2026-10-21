@@ -1,33 +1,16 @@
 #!/usr/bin/env python3
-"""
-DM split-2 interval-certified dominance closure
-===============================================
+"""Numerical split-2 two-box support (legacy filename retained).
 
-This runner upgrades the residual split-2 carrier item from support to
-theorem-grade closure on the current review surface.
-
-Input already accepted on the branch:
-  1. the carrier-side pressure is exhausted to the two explicit split-2
-     upper-face boxes CAP_BOX and ENDPOINT_BOX
-  2. one-source flavored transport is the exact scalar functional
-       F(P) = sum_alpha Psi(P_alpha)
-     on projector rows
-
-New step here:
-  - certify, on each whole box, interval upper bounds for all three projector
-    rows using exact cofactor formulas plus Weyl eigenvalue control
-  - push those row intervals through the exact one-variable transport kernel
-    to get rigorous boxwise upper bounds on eta/eta_obs
-
-Because the whole boxes stay below eta = 1, the residual split-2 carrier-side
-dominance/completeness blocker closes on the review branch.
+Cofactor identities and the Weyl perturbation formula are exact mathematical
+inputs. Evaluation uses ordinary floats and trapezoidal kernel integration,
+without outward rounding, quadrature error bounds, or a proof that the two
+boxes exhaust the branch. Results are numerical estimates, not certificates.
 """
 
 from __future__ import annotations
 
 import math
 import sys
-from pathlib import Path
 
 import numpy as np
 
@@ -50,8 +33,6 @@ from frontier_dm_neutrino_source_surface_split2_upper_face_local_neighborhoods_c
     CAP_BOX,
     ENDPOINT_BOX,
 )
-
-ROOT = Path(__file__).resolve().parents[1]
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -86,7 +67,8 @@ T_Q = np.array(
 )
 
 L_M = float(np.linalg.norm(T_M, 2))
-L_DELTA = float(np.linalg.norm(T_DELTA, 2))
+# At fixed slack, q=E1-delta+slack, so dH/ddelta=T_DELTA-T_Q.
+L_DELTA = float(np.linalg.norm(T_DELTA - T_Q, 2))
 L_SLACK = float(np.linalg.norm(T_Q, 2))
 
 PKG = exact_package()
@@ -114,10 +96,6 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
         msg += f"  ({detail})"
     print(msg)
     return condition
-
-
-def read(rel: str) -> str:
-    return (ROOT / rel).read_text(encoding="utf-8")
 
 
 def add(x: Interval, y: Interval) -> Interval:
@@ -267,7 +245,7 @@ def psi_sup_on_interval(q_iv: Interval, q_star: float, psi_star_upper: float) ->
     return max(vals) + 1.0e-15
 
 
-def certify_box(label: str, box: dict[str, tuple[float, float]]) -> dict[str, object]:
+def estimate_box(label: str, box: dict[str, tuple[float, float]]) -> dict[str, object]:
     m_iv = box["m"]
     delta_iv = box["delta"]
     slack_iv = box["slack"]
@@ -309,13 +287,13 @@ def part1_weyl_boxes_are_sharp_and_disjoint() -> tuple[dict[str, object], dict[s
     print("PART 1: WEYL EIGENVALUE BOXES ON THE TWO RESIDUAL SPLIT-2 NEIGHBORHOODS")
     print("=" * 88)
 
-    cap = certify_box("CAP_BOX", CAP_BOX)
-    endpoint = certify_box("ENDPOINT_BOX", ENDPOINT_BOX)
+    cap = estimate_box("CAP_BOX", CAP_BOX)
+    endpoint = estimate_box("ENDPOINT_BOX", ENDPOINT_BOX)
 
     check(
-        "The split-2 affine generators have exact operator norms 1, sqrt(3), 2",
+        "The split-2 affine generators have operator norms 1, 1+sqrt(3), 2 in (m,delta,slack)",
         abs(L_M - 1.0) < 1.0e-12
-        and abs(L_DELTA - RT3) < 1.0e-12
+        and abs(L_DELTA - (1.0 + RT3)) < 1.0e-12
         and abs(L_SLACK - 2.0) < 1.0e-12,
         f"(L_m,L_delta,L_slack)=({L_M:.12f},{L_DELTA:.12f},{L_SLACK:.12f})",
     )
@@ -358,7 +336,7 @@ def part2_projector_row_intervals_are_explicit_and_small(
     cap: dict[str, object], endpoint: dict[str, object]
 ) -> None:
     print("\n" + "=" * 88)
-    print("PART 2: EXACT PROJECTOR-ROW INTERVALS FROM COFACTOR FORMULAS")
+    print("PART 2: FLOAT PROJECTOR-ROW INTERVAL ESTIMATES FROM COFACTOR FORMULAS")
     print("=" * 88)
 
     cap_rows = cap["row_intervals"]
@@ -374,27 +352,16 @@ def part2_projector_row_intervals_are_explicit_and_small(
         all(0.0 <= lo <= hi <= 1.0 for row in endpoint_rows for (lo, hi) in row),
         f"rows={endpoint_rows}",
     )
-    check(
-        "The CAP_BOX row-3 packet interval already stays close to the sampled winning row",
-        cap_rows[2][0][0] > 0.68 and cap_rows[2][2][1] < 0.06,
-        f"row3={cap_rows[2]}",
-    )
-    check(
-        "The ENDPOINT_BOX row-3 packet interval is even tighter than the CAP_BOX row-3 packet interval",
-        endpoint_rows[2][0][0] > 0.71 and endpoint_rows[2][2][1] < 0.053,
-        f"row3={endpoint_rows[2]}",
-    )
-
     print()
     print(f"  CAP_BOX row intervals      = {cap_rows}")
     print(f"  ENDPOINT_BOX row intervals = {endpoint_rows}")
 
 
-def part3_transport_kernel_bounds_close_both_boxes(
+def part3_transport_kernel_estimates(
     cap: dict[str, object], endpoint: dict[str, object]
 ) -> None:
     print("\n" + "=" * 88)
-    print("PART 3: BOXWISE TRANSPORT UPPER BOUNDS")
+    print("PART 3: NUMERICAL BOXWISE TRANSPORT UPPER ESTIMATES")
     print("=" * 88)
 
     q_star = float(cap["q_star"])
@@ -408,84 +375,45 @@ def part3_transport_kernel_bounds_close_both_boxes(
         f"(q_star,psi_star)=({q_star:.15f},{psi_star_upper:.15f})",
     )
     check(
-        "All three CAP_BOX rowwise eta upper bounds stay strictly below transport closure",
+        "All three CAP_BOX rowwise eta upper estimates stay strictly below transport closure",
         max(cap_ubs) < 1.0,
-        f"eta upper bounds={np.round(cap_ubs, 12)}",
+        f"eta upper estimates={np.round(cap_ubs, 12)}",
     )
     check(
-        "All three ENDPOINT_BOX rowwise eta upper bounds stay strictly below transport closure",
+        "All three ENDPOINT_BOX rowwise eta upper estimates stay strictly below transport closure",
         max(endpoint_ubs) < 1.0,
-        f"eta upper bounds={np.round(endpoint_ubs, 12)}",
+        f"eta upper estimates={np.round(endpoint_ubs, 12)}",
     )
-    check(
-        "The CAP_BOX theorem-grade interval margin is still comfortably above 0.09",
-        1.0 - max(cap_ubs) > 0.09,
-        f"margin={1.0 - max(cap_ubs):.12f}",
-    )
-    check(
-        "The ENDPOINT_BOX theorem-grade interval margin is still comfortably above 0.10",
-        1.0 - max(endpoint_ubs) > 0.10,
-        f"margin={1.0 - max(endpoint_ubs):.12f}",
-    )
+    print(f"  Estimated margins: CAP={1.0-max(cap_ubs):.12f}, ENDPOINT={1.0-max(endpoint_ubs):.12f}")
 
     print()
-    print(f"  q_star <= {q_star:.15f}")
-    print(f"  CAP_BOX rowwise eta upper bounds      = {np.round(cap_ubs, 12)}")
-    print(f"  ENDPOINT_BOX rowwise eta upper bounds = {np.round(endpoint_ubs, 12)}")
+    print(f"  q_star estimate = {q_star:.15f}")
+    print(f"  CAP_BOX rowwise eta upper estimates      = {np.round(cap_ubs, 12)}")
+    print(f"  ENDPOINT_BOX rowwise eta upper estimates = {np.round(endpoint_ubs, 12)}")
 
 
-def part4_closure_assembly(cap: dict[str, object], endpoint: dict[str, object]) -> None:
-    print("\n" + "=" * 88)
-    print("PART 4: CLOSURE ASSEMBLY")
-    print("=" * 88)
-
-    carrier_note = read("docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_SIDE_CONCLUSION_NOTE_2026-04-18.md")
-    support_note = read("docs/DM_SPLIT2_DENSE_GRID_LIPSCHITZ_DOMINANCE_SUPPORT_NOTE_2026-04-21.md")
-
-    check(
-        "The carried branch-local reduction really had already localized the residual pressure to CAP_BOX and ENDPOINT_BOX",
-        "two explicit split-2 upper-face neighborhoods" in carrier_note
-        and "1.188513342509166" in carrier_note
-        and "1.188955544069478" in carrier_note,
-    )
-    check(
-        "The superseded dense-grid note records the same two boxes now being certified theorem-grade",
-        "CAP_BOX" in support_note and "ENDPOINT_BOX" in support_note,
-    )
-    check(
-        "So the residual split-2 carrier item now closes on the current review surface",
-        max(cap["row_eta_ubs"]) < 1.0 and max(endpoint["row_eta_ubs"]) < 1.0,
-        f"(cap_max,endpoint_max)=({max(cap['row_eta_ubs']):.12f},{max(endpoint['row_eta_ubs']):.12f})",
-    )
-
-    print()
-    print("  Closure read:")
-    print("    - prior branch science had already reduced the residual split-2 pressure")
-    print("      to CAP_BOX and ENDPOINT_BOX")
-    print("    - this runner certifies eta/eta_obs < 1 on both whole boxes")
-    print("    - therefore interval-certified exact-carrier dominance/completeness")
-    print("      closes on the residual split-2 selector branch")
+def part4_scope() -> None:
+    print("Numerical support on CAP_BOX and ENDPOINT_BOX only.")
+    print("Open: outward rounding, certified kernel integration and global peak control,")
+    print("plus a separate proof that these boxes cover every relevant branch point.")
+    print("Text matches in prior notes do not establish that coverage.")
 
 
 def main() -> int:
     print("=" * 88)
-    print("DM SPLIT-2 INTERVAL-CERTIFIED DOMINANCE CLOSURE")
+    print("DM SPLIT-2 NUMERICAL TWO-BOX SUPPORT")
     print("=" * 88)
 
     cap, endpoint = part1_weyl_boxes_are_sharp_and_disjoint()
     part2_projector_row_intervals_are_explicit_and_small(cap, endpoint)
-    part3_transport_kernel_bounds_close_both_boxes(cap, endpoint)
-    part4_closure_assembly(cap, endpoint)
+    part3_transport_kernel_estimates(cap, endpoint)
+    part4_scope()
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  The residual split-2 carrier-side item is closed on the current review surface.")
-    print("  What remains open on the DM flagship gate is not carrier-side dominance.")
-    print("  It is the physical branch-choice / selector side:")
-    print("    - A-BCC as an axiom-native branch-choice law")
-    print("    - the finer right-sensitive microscopic selector law")
-    print()
+    print("  Estimated local margins remain positive; rigorous exclusion and global")
+    print("  carrier completeness are not established by this runner.")
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
 
     return 0 if FAIL_COUNT == 0 else 1

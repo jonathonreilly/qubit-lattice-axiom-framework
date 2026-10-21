@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_front_clocks_spin_half_walk_2026_10_21.py
+runner_sha256: b3de81b0ddf91f43de13900e90024176445cbf5db2fe48bc99b977b625b7a250
+input_fingerprint_sha256: 73156939ad764e7fb81fc70498b62c7fc941d88d8f57433ec0c37d1126f04591
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 3.06
+status: ok
+----- stdout -----
+[PASS] coherent and phase finite errors decrease toward m^2/eps over three th values (k = 1 th along [0.71 0.71 0.  ])  th=0.05: |v| 0.680, coherent error 2.58%, phase error 0.021%; th=0.025: |v| 0.694, coherent error 1.27%, phase error 0.005%; th=0.0125: |v| 0.700, coherent error 0.63%, phase error 0.001%
+[PASS] coherent and phase finite errors decrease toward m^2/eps over three th values (k = 2 th along [0.58 0.58 0.58])  th=0.05: |v| 0.845, coherent error 9.93%, phase error 4.697%; th=0.025: |v| 0.870, coherent error 4.89%, phase error 2.244%; th=0.0125: |v| 0.883, coherent error 2.42%, phase error 1.095%
+[PASS] coherent and phase finite errors decrease toward m^2/eps over three th values (k = 2 th along [0.89 0.45 0.  ])  th=0.05: |v| 0.872, coherent error 8.33%, phase error 0.213%; th=0.025: |v| 0.883, coherent error 4.08%, phase error 0.053%; th=0.0125: |v| 0.889, coherent error 2.02%, phase error 0.013%
+[PASS] on the axis the two positive bands are degenerate: occupation counts vary with the spin state, the coherent rate does not  spread over six spin states: product 2.65e-02, geometric 1.05e-02, coherent 1.4e-16
+[PASS] packets: the signed coherent clock is within 3% of the packet-averaged m^2/eps  at rest: signed 0.07600 vs 0.07621; moving along (1,1,0): signed 0.05974 vs 0.05829; two crossing: signed 0.05958 vs 0.06006
+[PASS] packets: the overlap is negative on part of the packet weight, and an unsigned count overshoots where packets cross  at rest: negative weight 0.00%, unsigned 0.07600; moving along (1,1,0): negative weight 3.03%, unsigned 0.06150; two crossing: negative weight 6.86%, unsigned 0.06188
+per_site: the walk, coin angle, mid-coin evaluation, band selection and packet construction are supplied choices.
+per_block: momenta, angles, lattice size, packet width and seeds are fixed in this source.
+lattice_wide: no physical clock law, redshift, flip-rule derivation or empirical identification is established.
+elapsed_seconds 3.0
+
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

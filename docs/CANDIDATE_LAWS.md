@@ -91,6 +91,7 @@ Evidence:
   - A fact many readers share needs many records.
   - Readable trails cannot give which-way knowledge together with fringes, which matches complementarity (`docs/CANDIDATE_LAW_CL3_READ_ONCE_RECORDS_EVIDENCE_BOUNDED_THEOREM_NOTE_2026-10-19.md`).
 - **Proper time.** A clock's odds advance in phase at m/gamma, so moving clocks run slow.
+- **Magnetic moment.** In any coupling that keeps both half-tick hops reflections, mu and b enter every level the same way, so no Pauli term arises and g = 2 at tree level. Lattice corrections to g - 2 and to the hydrogen 1S-2S line are below 1e-44, far under the measured precision.
 - **Photons.** A link quantum is registered only by the record of a site whose odds it changes. That gives photon-counting statistics, bunching and antibunching, complementarity and non-demolition counting.
 - **The arrow.** The record set only grows, while the update is reversible.
 - **Information.** Between records nothing is lost. At a record the odds lose on average exactly the record's entropy (`docs/RECORD_INFORMATION_ACCOUNTING_LOSSLESS_ODDS_AND_READ_ONCE_RECORDS_BOUNDED_THEOREM_NOTE_2026-10-21.md`).
@@ -105,10 +106,10 @@ Evidence:
 ## Where the rules are wrong or incomplete
 
 - **Chirality.** A finite-range update gives no net chirality, so parity violation is not reproduced. The charge rule of CL-6 needs chiral content. Interactions that gap mirror fermions without breaking the gauge symmetry are under study.
-- **The two copies.** No covariant term splits them, so as they stand they conflict with the measured electron g-2 and the three light neutrinos.
+- **The two copies.** No covariant term splits them, and Schur's lemma gives both the same value of every covariant charge. A second light electron copy would add 8.5e-8 to the electron's g - 2 at one loop, 6.5e5 times the measured precision. On 2^3 cubes two copies are forced for every site action. On 4^3 cells a covariant tick with one light copy exists, but its mass has to be tuned to a critical value.
 - **Gauge groups and generations.** No law selects SU(3) x SU(2) x U(1) or three generations.
-- **Masses.** mu and b are given per species, and no law predicts a mass ratio.
-- **Vacuum energy and dark matter.** No law gives the cosmological constant or a dark sector. Counting records as 4-volume fails: a half-filled sea's configuration is frozen under CL-5, so its record count does not fluctuate as Poisson, and an imported Poisson count matches the size of the constant but its measured equation of state excludes the resulting drift.
+- **Masses.** mu and b are given per species, and no law predicts a mass ratio. A species' limiting speed is cos(b)/sqrt(3), so the absence of photon decay at 1.4 PeV requires b < 7e-10 for the electron.
+- **Vacuum energy and dark matter.** No law gives the cosmological constant or a dark sector. The second copy, the cone partners at quasi-energy pi (charged, with inverted inertia) and records are each excluded as dark matter. The remaining slot is a species with no link, whose mass and abundance only the initial odds would fix, and no law gives the initial odds. Counting records as 4-volume fails: a half-filled sea's configuration is frozen under CL-5, so its record count does not fluctuate as Poisson, and an imported Poisson count matches the size of the constant but its measured equation of state excludes the resulting drift.
 - **Supplied pieces.**
   - the rung that sets G and the radian-for-radian unit;
   - the positive/negative frequency branch;

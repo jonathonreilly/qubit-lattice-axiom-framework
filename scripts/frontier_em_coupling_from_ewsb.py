@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Verify e = g sin(θ_W) = g' cos(θ_W) from EWSB pattern."""
 
+AUDIT_INPUT_PATHS = ["docs/EM_COUPLING_FROM_EWSB_NOTE_2026-05-02.md"]
+
 from fractions import Fraction
 from pathlib import Path
 import sys

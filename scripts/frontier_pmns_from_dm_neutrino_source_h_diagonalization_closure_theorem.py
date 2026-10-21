@@ -35,19 +35,19 @@ Deliverables verified here:
   (chamber-blindness of the singlet-doublet slot coupling).
 3. Chamber-variation of PMNS angles verified across candidate points
   A, B, C, D, E from the the observable-bank exhaustion theorem atlas.
-4. Unique chamber solution (m_*, delta_*, q_+*) = (0.6571, 0.9338, 0.7150)
+4. One chamber solution found in the stated search (m_*, delta_*, q_+*) = (0.6571, 0.9338, 0.7150)
   that reproduces the PDG 2024 central values
     sin^2 theta_12 = 0.307, sin^2 theta_13 = 0.0218, sin^2 theta_23 = 0.545
   to machine precision, pinned from 38 independent random starts.
-5. delta_CP prediction: sin(delta_CP) = -0.9874, delta_CP = -80.88 deg
-  (equivalently 279.12 deg). Consistent with T2K preferred region.
+5. delta_CP prediction: sin(delta_CP) = -0.9874, delta_CP = 260.88 deg
+  from both rephasing-invariant sine and cosine (conditional on the pin).
 6. Jarlskog |J| = 0.0328, consistent with experimental |J| ~ 0.032-0.033.
 7. PDG range check: all nine |U_PMNS|_{ij} entries lie within the
   experimental NuFit 5.3 NO 3-sigma ranges at the pinned chamber point.
 
-If every check passes, the P3 lane is realized, the selector gate closes at
-(delta_*, q_+*), and PMNS is promoted to retained on the chamber by
-level-set of the observational values through the derived map.
+These checks evaluate a conditional three-angle fit and its phase output.
+They do not derive the branch/hierarchy pairing, prove global uniqueness,
+or grant retained status.
 
 Framework convention: "axiom" means only the single framework axiom
 Cl(3) on Z^3.
@@ -141,6 +141,11 @@ def pmns_matrix(m: float, delta: float, q_plus: float) -> tuple[np.ndarray, np.n
 
 def pmns_observables(m: float, delta: float, q_plus: float) -> dict:
   w, P = pmns_matrix(m, delta, q_plus)
+  return observables_from_pmns(P, w)
+
+
+def observables_from_pmns(P: np.ndarray, w: np.ndarray | None = None) -> dict:
+  """Extract PDG invariants from a supplied unitary with the chosen ordering."""
   s13sq = abs(P[0, 2]) ** 2
   c13sq = max(1.0 - s13sq, 1e-18)
   s12sq = abs(P[0, 1]) ** 2 / c13sq
@@ -156,6 +161,16 @@ def pmns_observables(m: float, delta: float, q_plus: float) -> dict:
   denom = s12 * c12 * s23 * c23 * s13 * c13 * c13
   sin_dcp = J / denom if denom > 1e-18 else 0.0
   sin_dcp = max(-1.0, min(1.0, sin_dcp))
+  # PDG modulus identity fixes the quadrant that asin(J/denom) loses.
+  cos_denom = 2.0 * s12 * c12 * s23 * c23 * s13
+  if cos_denom > 1e-18 and denom > 1e-18:
+    cos_dcp = (abs(P[1, 0]) ** 2 - s12sq * c23**2
+               - c12**2 * s23sq * s13sq) / cos_denom
+    cos_dcp = max(-1.0, min(1.0, cos_dcp))
+    dcp_deg = math.degrees(math.atan2(sin_dcp, cos_dcp)) % 360.0
+  else:
+    # The Dirac phase is unidentifiable at a vanishing mixing denominator.
+    cos_dcp = dcp_deg = float("nan")
   return {
     "eigvals": w,
     "PMNS": P,
@@ -168,7 +183,8 @@ def pmns_observables(m: float, delta: float, q_plus: float) -> dict:
     "sin2_2t23": 4.0 * s23sq * (1.0 - s23sq),
     "J": J,
     "sin_dcp": sin_dcp,
-    "dcp_deg": math.degrees(math.asin(sin_dcp)),
+    "cos_dcp": cos_dcp,
+    "dcp_deg": dcp_deg,
   }
 
 
@@ -281,7 +297,7 @@ def part2_pmns_varies_on_chamber() -> None:
 
 
 # ---------------------------------------------------------------------------
-# Part 3: unique chamber-minimum solution pinning (m_*, delta_*, q_+*)
+# Part 3: finite multistart fitted candidate (m_*, delta_*, q_+*)
 # ---------------------------------------------------------------------------
 
 TARGET_S12SQ = 0.307  # PDG 2024 central (NO, compatible with NuFit 5.3 & global fits)
@@ -304,7 +320,7 @@ def chi2_chamber(m: float, delta: float, q_plus: float) -> float:
 def part3_unique_chamber_solution() -> tuple[float, float, float]:
   print()
   print("=" * 88)
-  print("Part 3: unique chamber solution (m_*, delta_*, q_+*) via multi-start")
+  print("Part 3: numerical chamber candidate (m_*, delta_*, q_+*) via multi-start")
   print("=" * 88)
 
   try:
@@ -347,7 +363,7 @@ def part3_unique_chamber_solution() -> tuple[float, float, float]:
 
   unique = set(minima)
   check(
-    f"random-start multi-start converges to unique chamber solution",
+    f"accepted random starts converge to one rounded chamber solution",
     len(unique) == 1,
     f"{len(unique)} distinct minima; ~{len(minima)} accepted",
   )
@@ -476,7 +492,8 @@ def part5_delta_cp(m_star: float, d_star: float, q_star: float) -> None:
   obs = pmns_observables(m_star, d_star, q_star)
   print(f" J (Jarlskog)  = {obs['J']:+.6f}")
   print(f" sin(delta_CP)  = {obs['sin_dcp']:+.4f}")
-  print(f" delta_CP (deg) = {obs['dcp_deg']:+.2f} (or complement {180.0 - obs['dcp_deg']:+.2f} deg)")
+  print(f" cos(delta_CP)  = {obs['cos_dcp']:+.4f}")
+  print(f" delta_CP (deg, atan2) = {obs['dcp_deg']:.2f}")
 
   # Experimental |J| ~ 0.032-0.033 (1-sigma from PDG/T2K)
   check(

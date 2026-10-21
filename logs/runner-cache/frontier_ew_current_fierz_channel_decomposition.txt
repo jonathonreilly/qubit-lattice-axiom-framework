@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ew_current_fierz_channel_decomposition.py
-runner_sha256: c3ff0f82219906a3522e385cc48ef3527808a647728b0fc843d40aa3a308d4ef
-timeout_sec: 120
+runner_sha256: c4e36ddf15af9211ec209f7abb3f71ce6461a0369d040db047979f0073a83b6b
+input_fingerprint_sha256: 5fa29edda0caac239d6e0ebcef255c8365fd3c75ba0e3950f2b5914bbf53cfb5
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 
@@ -71,7 +72,15 @@ Part 7: forbidden-imports clause and import-roles table present
   [PASS] no atomic / numerical observable is used to tune a framework parameter
 
 ----------------------------------------------------------------------------------------
-PASS=31 FAIL=0
+Part 8: reflection sign and dimension-versus-amplitude controls
+----------------------------------------------------------------------------------------
+  [PASS] N=2, identity: raw trace=p*T, C/T=0.0, not dimension fraction
+  [PASS] N=2, traceless: raw trace=p*T, C/T=1.0, not dimension fraction
+  [PASS] N=3, identity: raw trace=p*T, C/T=0.0, not dimension fraction
+  [PASS] N=3, traceless: raw trace=p*T, C/T=1.0, not dimension fraction
+
+----------------------------------------------------------------------------------------
+PASS=35 FAIL=0
 ----------------------------------------------------------------------------------------
 
 ----- stderr -----

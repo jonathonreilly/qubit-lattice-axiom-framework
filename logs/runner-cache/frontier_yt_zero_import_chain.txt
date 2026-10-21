@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_zero_import_chain.py
-runner_sha256: 21edd61bef97f369083bf205ad7e0bef82035c1b0c10b7761c8969835c6f73bc
+runner_sha256: ede58d7a6e5fd0af4dace29270dbda66fa5933b68cd23e5210185fadfa40800d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.69
+elapsed_sec: 4.87
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -119,7 +119,7 @@ PART 3: BACKWARD WARD SCAN (m_t derivation)
     2. Scan y_t(v) from 0.5 to 1.3
     3. For each trial, run 2-loop SM RGE from v to M_Pl
     4. Find y_t(v) such that y_t(M_Pl) = g_lattice/sqrt(6) = Ward BC
-    5. m_t = y_t(v) * v / sqrt(2)
+    5. m_run(v) = y_t(v) * v / sqrt(2), before mass-scheme matching
 
   Boundary conditions at v = 246.28 GeV:
     g_1(v) = 0.464376  [DERIVED: bare + taste + color projection]
@@ -141,16 +141,15 @@ PART 3: BACKWARD WARD SCAN (m_t derivation)
     lambda(v)  = 0.190837  (full 1-loop CW, DERIVED)
     m_H/m_W    = 1.9067
     m_H        = 152.15 GeV  (framework PREDICTION)
-    m_t = y_t(v) * v / sqrt(2)
+    m_run(mu=v) = y_t(v) * v / sqrt(2), running-parameter readout
         = 0.973394 * 246.28 / 1.414214
         = 169.51 GeV
-    Observed: 172.69 GeV
-    Deviation: -1.84%
+    Pole threshold input: 172.69 GeV (not a running-mass comparator)
+    UNRESOLVED: no same-scale mass matching or pole conversion supplied.
 
   [PASS] y_t(v) found by backward Ward scan
          y_t(v) = 0.973394
-  [PASS] m_t within 5% of observed
-         m_t = 169.51 GeV (-1.84%)
+  SCOPE: top-mass agreement is not tested; the former running/pole PASS is withdrawn.
   Ward BC verification at M_Pl:
     y_t(M_Pl) (evolved up from v) = 0.435769
     Ward partner = g_lattice/sqrt(6) = 0.435769  (lattice-bare)
@@ -237,7 +236,7 @@ PART 6: FINAL SUMMARY
 
   Prediction                           Value      Observed   Deviation    Status
   ----------------------------  ------------  ------------  ----------  --------
-  m_t [GeV]                           169.51        172.69      -1.84%      PASS
+  m_run(mu=v) [GeV]                   169.51     unmatched         n/a      OPEN
   alpha_s(M_Z)                        0.1181        0.1179      +0.14%      PASS
   sin^2(theta_W)(M_Z)                0.23061       0.23122     -0.263%      PASS
   v [GeV]                             246.28        246.22      +0.03%      PASS
@@ -245,7 +244,7 @@ PART 6: FINAL SUMMARY
   m_H [GeV] (CW DERIVED)              152.15        125.25     +21.48%      PRED
 
   PASS/FAIL THRESHOLDS:
-    m_t within 5% of observed:          PASS
+    Top pole-mass agreement: OPEN (mass scheme/scale matching absent)
     alpha_s(M_Z) within 2% of observed: PASS
     sin^2(theta_W) within 1%:           PASS
     v within 1% of observed:            PASS
@@ -259,8 +258,8 @@ PART 6: FINAL SUMMARY
     Threshold matching (m_b, m_c): affects v->M_Z, not v-scale prediction
 
 ==============================================================================
-  Total PASS: 14   Total FAIL: 0
-  Elapsed: 4.1s
+  Total PASS: 13   Total FAIL: 0
+  Elapsed: 3.9s
 ==============================================================================
 
 ----- stderr -----

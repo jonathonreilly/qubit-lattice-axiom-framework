@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta_gbare_rescaling_abstract_identity_narrow.py
-runner_sha256: a8539bff008192e0e8bef6cebcd11d7c910203fbbaf1cf9ce7324cb2dd91f03a
+runner_sha256: b1c68dc7917884a9ca89eea7bc921887171dced6ec3d2ccb0ec1242ca245c2a8
+input_fingerprint_sha256: 3b36f31e361801421ada769929cc087d7a84de65eb8398b83fdc5ade431d0627
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 
@@ -75,6 +76,8 @@ Part 7: independence from any lattice / Cl(3) / SU(N_c) input
 ----------------------------------------------------------------------------------------
   [PASS (A)] non-physical instance N=0 still satisfies identity (trivially)  (both sides = 0 when N=0)
   [PASS (A)] identity holds at fully symbolic (g, N, c) with no numerical values  (residual at fully symbolic = 0)
+  [PASS (A)] N=1, beta=1 has no rational g  ()
+  [PASS (A)] N=1, beta=2 has unique positive rational g=1  ()
 
 ----------------------------------------------------------------------------------------
 Part 8: note structure and narrow-scope discipline
@@ -101,7 +104,7 @@ Narrow theorem summary
 
   HYPOTHESIS:
     Let (g, c, N) be abstract symbolic variables with g > 0, c > 0, and
-    N arbitrary in any field of characteristic zero. Define
+    N arbitrary in an ordered field of characteristic zero. Define
 
         beta(g, N)  :=  2 N / g^2.
 
@@ -114,7 +117,8 @@ Narrow theorem summary
     the joint rescaling (g, beta) -> (g/c, c^2 * beta).              (T2)
 
     The orbit of any positive g under sigma_c is the entire positive
-    ray, and the beta-fiber over each value is a single point in g.   (T3)
+    rational ray. For N>0 each attained beta has one rational g;
+    other positive rational beta values may have empty fibers.       (T3)
 
   Audit-lane class:
     (A) -- pure polynomial algebra over Q. No external numerical,
@@ -129,7 +133,7 @@ Narrow theorem summary
 
 
 ========================================================================================
-  TOTAL: PASS=43, FAIL=0
+  TOTAL: PASS=45, FAIL=0
 ========================================================================================
 
 ----- stderr -----

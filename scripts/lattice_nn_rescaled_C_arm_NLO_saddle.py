@@ -16,17 +16,16 @@ Companion work:
     h in {0.25, 0.125, 0.0625, 0.03125}.
 
 The leading saddle has alpha = 1/2 in the LO model. The empirical alpha-residual
-0.5256 - 0.5 = 0.026 must come from a sub-leading (O(h^p)) correction that is
-non-negligible in the fit window but vanishes as h -> 0. The data confirm
-this: sigma^2 / h is a decreasing function of h that asymptotes to ~6.20
-(matching C_LO^2 = 6.178) at the smallest h.
+0.5256 - 0.5 = 0.026 motivates testing corrections to the LO model.
+The measured sigma^2/h decreases as h shrinks through the four fit points,
+consistent with approach to C_LO^2=6.178; these finite data do not prove a limit.
 
 This script computes the closed-form NLO correction analytically and tests
 two natural sources:
 
   (a) PHASE NLO: the leading-order saddle uses Re(a_pm * conj(a_0)), but
       a_pm * conj(a_0) carries an h-dependent phase exp(i k h (sqrt(2) - 1)).
-      Expanding the cosine gives a +O(h^2) correction to the variance.
+      Expanding the cosine gives a relative O(h^2) correction (absolute O(h^3)).
 
   (b) SADDLE NLO: the leading saddle keeps only the q^2 term in
       log g(q; h)/g(0). The next term is q^4, contributing an O(h^2)
@@ -358,8 +357,12 @@ def report() -> int:
               f"{ratio_b:10.4%}  {s2_a:10.6f}  {s2_ab:11.6f}")
     print()
     print("  Observation: delta_a(h) ~ d2_phase * h^2 to high accuracy on this")
-    print("  h range; the q^4 saddle correction (candidate b) is < 0.4% of the")
-    print("  phase correction at h <= 0.25. Candidate (a) DOMINATES.")
+    print("  h range; q^4 contributes < 1% of the full phase-corrected variance")
+    print("  on the fit window, not < 1% of the phase increment.")
+    print("  q^4 / phase increment on the fit window:")
+    for h in FIT_HS:
+        phase_increment = sigma_sq_pred_a(h) - C_LO_sq() * h
+        print(f"    h={h:.5f}: {candidate_b_dV(h)[1] / phase_increment:.4%}")
     print()
 
     # ------------------------------------------------------------------
@@ -430,9 +433,9 @@ def report() -> int:
     print("VERDICT")
     print("-" * 78)
     print()
-    print("  Closed-form NLO leading correction: delta(h) = d2 * h^2,")
+    print("  Leading phase correction: delta_a(h) ~ d2 * h^2,")
     print(f"     d2 = (A / (A + B)) * [k (sqrt(2) - 1)]^2 / 2 = {d2:.4f}")
-    print(f"     This shifts alpha_eff (LSQ on 4-point window) from 0.5000 to {al_ab:.4f}.")
+    print(f"     With q^4, alpha_eff (LSQ on 4-point window) shifts from 0.5000 to {al_ab:.4f}.")
     print()
     gap_alpha = abs(al_ab - 0.5256)
     print(f"  Empirical alpha_eff = 0.5256.  Predicted alpha_eff = {al_ab:.4f}.")
@@ -442,9 +445,9 @@ def report() -> int:
         print("  STRONG CLOSURE: NLO saddle matches alpha to within +/- 0.005.")
         verdict = "strong"
     elif gap_alpha <= 0.020 and al_ab > 0.5000:
-        print("  BOUNDED THEOREM: NLO saddle has the right sign and ~5% magnitude")
-        print("  but does not fully close the alpha gap. Residual O(h^4) phase or")
-        print("  finite-slit-aperture corrections remain unaccounted for.")
+        print("  BOUNDED THEOREM: NLO saddle recovers about 67% of the alpha shift")
+        print("  but does not fully close the alpha gap. Exact cosine already")
+        print("  includes higher phase orders; finite-aperture effects remain separate.")
         verdict = "bounded"
     else:
         print("  SHARP NULL: NLO saddle does not explain the alpha residual.")
@@ -462,7 +465,7 @@ def report() -> int:
             gap_alpha <= 0.020,
         "max per-h sigma^2 residual <= 5%":
             max_abs_res <= 0.05,
-        "candidate (a) dominates (b): max dV/sig^2 < 1% on fit window":
+        "q^4 / full phase-corrected variance < 1% on fit window":
             all(abs(candidate_b_dV(h)[1] / candidate_b_dV(h)[0]) < 0.01 for h in FIT_HS),
         "h -> 0 limit recovers C_LO^2 = 6.178":
             math.isclose(sigma_sq_pred_ab(1e-6) / 1e-6, C_LO_sq(), rel_tol=1e-3),

@@ -445,6 +445,166 @@
       "source_sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
       "timeout_sec": 300,
       "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
+    },
+    "scripts/lattice_nn_rescaled_C_arm_NLO_saddle.py": {
+      "source_sha256": "3e04a84b91e997f80339acfb1fb29a9dc4c10726aa919005dce286b820526ecc",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/lattice_nn_rescaled_C_arm_NNLO_saddle.py": {
+      "source_sha256": "05a38516a9454a46c8c4fa5624720510af624a29fbb6c4676f49befa8ae94b34",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_parity_mixing_selection_obstruction.py": {
+      "source_sha256": "ff894f0fa270ad57a67240c340157334a6a1c71ceff42b9ec9b5bed5dba396e2",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_cubic_coxeter_regge_deficit_vanishing_narrow.py": {
+      "source_sha256": "d52dd290e31a034499a8c0200eef795b10e244c4856aea180febfc62d6da9101",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_em_coupling_from_ewsb.py": {
+      "source_sha256": "bd456411cd31e6064fc292a0a1dcf7efc72ba12eb94ffdc1138fa2050ce2a653",
+      "timeout_sec": 300,
+      "reason": "Bounded source repair execution cap; source change invalidates declaration; no scientific certification."
+    },
+    "scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py": {
+      "source_sha256": "8f91506b742194f4867c6af014bbd9537404c249261271f02ec58cddd198c94b",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_parity_compatible_observable_selector_theorem.py": {
+      "source_sha256": "73609704ad7b2e136a76d3b5928c2ec3af798559556c9f15236d0fc36db6ba71",
+      "timeout_sec": 300,
+      "reason": "Bounded source repair execution cap; source change invalidates declaration; no scientific certification."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_split2_upper_face_local_neighborhoods_candidate.py": {
+      "source_sha256": "4b413c5b99dbd172937b2b5e27192496e07a08e22ad1a66f224ddaf01f0d1b72",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py": {
+      "source_sha256": "3467693b9aadc4f1a06b41424442a4701a6c02c97603267be4ff0874c437f765",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py": {
+      "source_sha256": "26be65c14f41b944294a8c6636324cdf865df7ab08580565c4783c589dd7381c",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_leptogenesis_ne_charged_source_response_reduction.py": {
+      "source_sha256": "1e0b985ea845172b30e43cdf6330a4dec829ff62f56545eb286f2b12a40bca71",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py": {
+      "source_sha256": "83d978eacf3c919b0153a8268e3881f5cc266619e8afa26da61cba533c2d09d0",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py": {
+      "source_sha256": "09dac7696be306d36073b01186ca238cd03cacaec9193808dae06cc3b1cd080a",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py": {
+      "source_sha256": "e5d9e25e456dd9540e892e97a75c2faf1b0bebe0a5647c4200ccb553077a3819",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/dm_selector_branch_support.py": {
+      "source_sha256": "4dedef2c46b532406d97bee9e8eed88babac7fa9a53934697a62b57073c37d08",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py": {
+      "source_sha256": "f539b4aa3f6da7cc83bb653316a9e98981f89f23cec7cdc00a40a0d98ec33612",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_active_curvature_23_symmetric_baseline_boundary.py": {
+      "source_sha256": "56b657e528fcfb7bd31555b52a4f6885c63c2e874763ae8241c33292ab43cb0e",
+      "timeout_sec": 300,
+      "reason": "Bounded source repair execution cap; source change invalidates declaration; no scientific certification."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py": {
+      "source_sha256": "30862b9810bd34a9ba4a0848f03f9207c463a79fcde3b6c8e0a193b8e1a6c2b1",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py": {
+      "source_sha256": "7c6c379d4b6e70ad78607eb3c5655d241a9a0cb42a6a1dc54607b16afc529c22",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py": {
+      "source_sha256": "9f8a4b93731a23370861ec9f07f06ea8fc4f5cdcd926cdd24cdf8e382beb3695",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py": {
+      "source_sha256": "8a4b62f3005dbe756d3e0564bbc9334b3d068bd33e35a2c4398dfb1ee24cb9f2",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py": {
+      "source_sha256": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_info_geometric_selection_obstruction.py": {
+      "source_sha256": "78ff20426d3e3addc204551cdf93e66e5bb51999333ee42386955f2ea5def867",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py": {
+      "source_sha256": "10061fd219064353a68bef3c0c348bf84e9a83ead67c9783da9f4ad2de5d646e",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_postcanonical_polar_section.py": {
+      "source_sha256": "6c09503cbccf1b3a109332c965041248a79fa025fa36bcb8f755b851efe0c113",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py": {
+      "source_sha256": "4694e84fb6e82dc704f2c39e4a7e70016850feb2becfd9a89128672da5445c70",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_microscopic_polynomial_impossibility_theorem.py": {
+      "source_sha256": "b079a03b773185c755ec062a0892d0bc7680bc08eb2b59a5d815559b0934f8bc",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_split2_low_slack_transport_incompatibility_candidate.py": {
+      "source_sha256": "b0fe23daef5d2e3b082ecf062bdb5946b6e2733f7c657e368dae3bef932a68f5",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_split2_edge_profile_transition_candidate.py": {
+      "source_sha256": "93bc2903518f24d467659f4fbd469656c370ff18feac25656a20ce43136d09fc",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py": {
+      "source_sha256": "11ee73d73372c30698e05decdeee3cf8d101b4805b44026f34fbd07f145509cd",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem.py": {
+      "source_sha256": "f6612bde7432275d861fe8ea55a13b774cc4c81be9ccc779061c0d6962451837",
+      "timeout_sec": 300,
+      "reason": "Bounded execution cap for Grok feedback source repair; source-hash change invalidates this declaration. Imported helpers are not thereby standalone proof executions."
+    },
+    "scripts/frontier_yt_declared_anchor_bounded_subchain.py": {
+      "source_sha256": "814a20b1826ad9b2945d1749a39ad924687885663d08976f882caf17a0327bec",
+      "timeout_sec": 300,
+      "reason": "Bounded reviewed-unit execution cap; no execution or science assertion."
     }
   }
 }

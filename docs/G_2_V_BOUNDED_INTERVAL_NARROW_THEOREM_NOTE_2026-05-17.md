@@ -113,7 +113,8 @@ status for the integrated RGE algebra and scale-log arithmetic.
 
 Let `(u_0, b_2, L) ∈ R^+ × R^+ × R^+` be abstract positive reals, with
 `u_0` constrained to an interval `[u_lo, u_hi]` with `0 < u_lo ≤ u_hi`,
-and define the SU(2)_L 1-loop running surface
+and require `16 π u_lo² - (b_2/(2 π)) L > 0`. This ensures
+a positive denominator throughout the interval. Define the SU(2)_L 1-loop running surface
 
 ```text
 1 / α_2(v)  :=  16 π u_0²  -  (b_2 / (2 π)) · L,                          (R1)
@@ -298,7 +299,16 @@ d/du_0 [1 / α_2(v)]  =  32 π u_0  >  0  for u_0 > 0,                      (M1)
 ```
 
 so `α_2(v)` is strictly decreasing in `u_0` and `g_2(v)` is strictly
-decreasing in `u_0` on the positive reals.
+decreasing in `u_0` on the stated positive-denominator domain.
+
+## Comparator exclusion (not a premise)
+
+The cited comparator `g_2(v)=0.646` is **below** the entire supplied
+one-loop interval `[0.659392836187, 0.682834304554]`. The lower endpoint
+is about `2.0732%` above that comparator. This is a comparator miss,
+not an observational-success interval or a physical uncertainty band.
+The conditional endpoint substitution theorem remains valid; no comparator
+value was used to select its interval or alter its endpoints.
 
 ## Proof
 

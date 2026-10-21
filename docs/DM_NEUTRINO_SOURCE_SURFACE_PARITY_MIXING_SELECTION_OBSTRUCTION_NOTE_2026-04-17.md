@@ -1,26 +1,28 @@
-# Parity-Mixing Selector Law — Narrower-Gap + Closure-Candidate-Pending-Physics-Cross-Check
+# Displayed parity-mixing candidates and open physical selection
 
 **Claim type:** open_gate
 
 **Date:** 2026-04-17
-**Status:** narrower-gap + closure-candidate-pending-physics-cross-check
+**Status:** conditional candidate calculations; physical selection remains open
 **Script:** `scripts/frontier_dm_neutrino_source_surface_parity_mixing_selection_obstruction.py`
-**Framework convention:** "axiom" means only the single framework axiom `Cl(3)` on `Z^3`.
+**Premise boundary:** the displayed source chart and functionals are supplied.
+No derivation of their physical selection from the current framework axioms is claimed.
 
 ## Scope and discipline
 
-The info-geometric, Z_3-cubic, and Z_3-parity-split obstructions each
-produced an obstruction theorem for the right-sensitive 2-real selector
-law on `(delta, q_+)`. The Z_3 parity-split theorem in particular showed
+The corrected information-geometric note compares four specified local
+quadratic expansions; it does not prove a universal or global selector
+obstruction. The separate Z_3-cubic and Z_3-parity-split constructions retain
+their own conditional scopes. The Z_3 parity-split theorem in particular showed
 that `T_q` is purely Z_3-circulant and `T_delta` is purely Z_3-anti-
 circulant, and consequently that **any Z_3-parity-DEFINITE scalar
 functional constrains at most one of the active coordinates at fixed m**.
 
-The remaining untested class is Z_3-parity-MIXING functionals. This note:
+This note tests the following Z_3-parity-MIXING examples:
 
 1. surveys the retained atlas for genuine parity-mixing ingredients,
-2. identifies the strongest retained-atlas-native parity-mixing candidate,
-3. attempts a sole-axiom derivation of the `(delta, q_+)` selector point,
+2. studies one explicit parity-mixing candidate,
+3. computes its conditional `(delta, q_+)` minimizer,
 4. records the obstruction that remains, and
 5. produces a new closure-candidate point for Physics-Validation
  cross-check.
@@ -30,8 +32,8 @@ Nothing in this note is promoted to theorem-grade beyond the retained
 atlas. The parity-mixing route produces a **new candidate selector
 point** that is strictly inequivalent to every previously-tested
 candidate; cross-confirmation via the retained transport chain
-(`eta / eta_obs`) is chamber-blind. The integrated closure of the DM
-flagship lane is the downstream PMNS-as-f(H) closure.
+(`eta / eta_obs`) is chamber-blind. The downstream PMNS-as-f(H) construction is a supplied-chart numerical
+fit; it does not close the physical selector gate.
 
 ## Survey of retained-atlas parity-mixing candidates
 
@@ -42,7 +44,8 @@ sym(T_q) = T_q, anti(T_q) = 0
 sym(T_delta) = 0, anti(T_delta) = T_delta
 ```
 Hence any Z_3-parity-definite scalar sees at most one of `(delta, q_+)`
-at fixed `m`. Parity-mixing invariants are the only remaining class.
+at fixed `m` under that stated premise. This motivates the displayed
+parity-mixing candidates; it does not exhaust possible selector constructions.
 
 | # | Candidate | Atlas status | Parity structure | Fix (δ, q_+)? |
 |---|-----------|--------------|------------------|---------------|
@@ -60,13 +63,12 @@ at fixed `m`. Parity-mixing invariants are the only remaining class.
 | 12 | Cubic `Tr(J_act³) = 12 Re(w³)` | retained structural lemma | genuine parity-mixing | already obstructed by the cubic variational route — m-dependent boundary extremum, joint CPs singular |
 | 13 | PMNS selector class `S_cls` ([unique amplitude slot](./PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md)) | retained reduced-form theorem | structural framing | **Not usable** — one-amplitude slot, no delta/q_+ coupling |
 
-**Classification summary:**
+**Summary of the displayed candidates:**
 - **Sufficient (parity-mixing + evades the parity-split theorem + couples both δ and q_+):** candidates 4, 5 (and 12 in cubic-variational-obstructed sense).
 - **Insufficient (parity-definite or already-obstructed):** 1, 2, 3, 6, 7 on active sheet, 12 (already cubic-variational-obstructed).
 - **Not usable (post-axiom, necessary-only, or in different carrier space):** 8, 9, 10, 11, 13.
 
-Candidate 5 (`||K_doublet||_F^2`) emerges as the strongest retained-atlas-native
-parity-mixing invariant because:
+Candidate 5 (`||K_doublet||_F^2`) is a concrete conditional example because:
 - it is positive-definite, so "minimum" is well-defined,
 - it is m-independent in its chamber-boundary minimizer,
 - its minimizer is a closed-form retained-atlas expression, and
@@ -122,7 +124,7 @@ No new axiom.
 
 ## Theorem (Closed-Form Parity-Mixing F1-Minimizer)
 
-**Theorem (retained-atlas-native).** Under the Schur-forced baseline
+**Theorem (retained-atlas-native).** Under the supplied scalar baseline
 `D = m I_3`, on the chamber boundary `q_+ = sqrt(8/3) − delta`, the
 parity-mixing functional `F1(m, delta, q_+) := ||K_doublet||_F^2` has a
 unique m-independent chamber-boundary minimizer
@@ -145,7 +147,7 @@ K11^2 + K22^2 = (K11+K22)^2/2 + (K11-K22)^2/2
 ```
 Then `d F1 / d delta = 0` gives
 ```
-2 [2 delta - 2 sqrt(8/3) + 4 sqrt(2)/9] · 2 + 4 sqrt(3) (sqrt(3) delta - 4 sqrt(2)/3) = 0
+[2 delta - 2 sqrt(8/3) + 4 sqrt(2)/9] · 2 + 4 sqrt(3) (sqrt(3) delta - 4 sqrt(2)/3) = 0
 ```
 Simplifying:
 ```
@@ -181,26 +183,29 @@ F2 = det K_doublet (boundary max) -> boundary max at delta ≈ 0.9736
 F3 = ||K_doublet - (TrK/2)I||_F^2 -> degenerate in q_+ (K11 - K22 const)
 ```
 
-This is the **parity-mixing analog of the info-geometric Cubic Splitting
-Obstruction (Theorem B)**. The info-geometric Quadratic Unanimity Theorem
-from the info-geometric selection obstruction note states that all natural info-geometric functionals agree at
-`(sqrt(6)/3, sqrt(6)/3)` at leading quadratic order; the parity-mixing
-analog **FAILS**: there is no parity-mixing unanimity.
+For comparison, the corrected information-geometric note gives four
+specified local quadratic expansions with coefficients `(3,3,6,6)` and
+the same polynomial boundary minimizer `(sqrt(6)/3, sqrt(6)/3)`. Its cubic
+coefficient differences do not prove differing global minima. Here the
+displayed parity-mixing functions have distinct or degenerate stationary
+behavior; this comparison concerns those functions, not every possible
+information-geometric or parity-mixing selector.
 
-**Consequence.** Selecting F1 as the canonical parity-mixing functional
-requires an additional axiom-native selection rule (analog of `(G-Var)`).
-The retained atlas does not supply one.
+**Consequence.** The displayed extrema do not by themselves identify F1
+as the physical functional. A justified selection rule remains to be established;
+it might follow from existing axioms. No necessity of a new axiom is proved.
 
-**Claim label.** *Obstruction / narrower-gap.* Parity-mixing class also
-requires a canonical-functional selection axiom to close the selector gate.
+**Claim boundary.** These displayed functions exhibit selection ambiguity.
+The physical selection problem remains open; the full parity-mixing class is
+not excluded or classified by this finite comparison.
 
 ## Verdict
 
-**Classification of all parity-mixing candidates:**
+**Comparison of the displayed parity-mixing candidates:**
 
-- **SUFFICIENT (passes all three info-geometric / cubic-variational / parity-split obstructions, produces a
+- **CANDIDATE (has explicit parity-mixing dependence and produces a
  unique m-independent closed-form minimizer):** F1 `= ||K_doublet||_F^2`
- alone, provided a min-selection axiom is available.
+ alone, if minimizing this supplied functional is justified.
 - **INSUFFICIENT:** det K_doublet (saddle, unconstrained crit outside
  chamber); traceless-Frob (degenerate in q_+); cubic Tr(J^3) (already
  cubic-variational-obstructed); coordinate polynomial
@@ -211,17 +216,17 @@ requires a canonical-functional selection axiom to close the selector gate.
  phase-lift mixed bridge, odd-mixed-bridge extension, CP-kernel
  deformation necessity, PMNS selector amplitude slot.
 
-**Overall verdict:** **narrower-gap + closure-candidate-pending-physics-cross-check.**
+**Overall verdict:** **conditional candidate calculations; physical selection open.**
 Not a theorem-grade closure.
 
-The parity-mixing class:
+The displayed parity-mixing examples:
 - produces a **new candidate selector point**
  `(delta_F1, q_+F1) = (sqrt(6)/2 − sqrt(2)/18, sqrt(6)/6 + sqrt(2)/18)`,
 - evades the parity-split theorem (single-parity obstruction) by construction,
 - is **inequivalent** to Schur-Q `(sqrt(6)/3, sqrt(6)/3)` and to every
  the parity-split mixed invariant,
 - **but** exhibits parity-mixing functional-selection ambiguity,
- requiring a canonical-functional axiom.
+ leaving the physical choice of functional unresolved.
 
 ## Physics-Validation discipline
 
@@ -241,9 +246,8 @@ DM transport chain at each of the five candidate points. If one lands at
 `eta / eta_obs = 1`, it is a compelling candidate closure for selector that
 deserves theorem-grade pursuit in its own right, with a sharpened
 obligation to explain why the other four candidates miss the physical
-point. If none lands at `1`, the selector gate is obstructed across all
-currently-tested microscopic classes (info-geom, cubic, parity-definite,
-parity-mixing).
+point. If none lands at `1`, those tested points miss that target; no exclusion
+of their entire functional classes follows.
 
 At least one candidate (Schur-Q) is known to give
 `eta / eta_obs ≈ 0.189` at the current theorem-native radiation branch;
@@ -253,10 +257,10 @@ discipline requirement** for Physics-Validation.
 
 ## Narrowed-gap statement
 
-**Before this note (after the info-geometric / Z_3-cubic / parity-split obstructions):**
+**Comparison with the specified local-expansion and Z_3 candidate calculations:**
 ```
-(G-Var) variational selection axiom unclosed; info-geom
-  functionals agree at sqrt(6)/3 at LEADING QUADRATIC only
+(G-Var) physical variational-selection justification open; info-geom
+  four displayed quadratics agree at sqrt(6)/3; no global conclusion
 (G-Non-Var) non-variational obstructed along Z_3-parity-definite;
   mixed-invariant candidates disagree with sqrt(6)/3
 parity-mixing sub-class: untested
@@ -264,24 +268,27 @@ parity-mixing sub-class: untested
 
 **After this note:**
 ```
-(G-Var) unchanged -- still requires selection axiom
+(G-Var) unchanged -- physical selection remains unjustified here
 (G-Non-Var) parity-mixing sub-route TESTED:
   - evades parity-split Theorem 2 by sum-of-parity-definite construction
   - produces NEW candidate point
    (sqrt(6)/2 - sqrt(2)/18, sqrt(6)/6 + sqrt(2)/18)
   - parity-mixing unanimity FAILS (F1, F2, F3 disagree)
-  - parity-mixing sub-route ALSO needs canonical-functional axiom
+  - displayed candidates do not establish which functional is physical
 ```
 
-All three classes (info-geom, cubic, parity-mixing) produce inequivalent
-candidate points; each requires an additional selection axiom. The selector gate
-gap is strictly narrower than before: the parity-mixing class is no
-longer open. It is now classified as "narrower-gap via functional-
-selection ambiguity", matching the sibling status of the information-geometric selection obstruction `(G-Var)`.
+The displayed cubic and parity-mixing examples can produce different
+candidate points from the common local-quadratic point. These comparisons
+do not exhaust information functionals; physical extremum selection remains
+an open obligation. These calculations add explicit examples, but neither
+close nor exhaust the parity-mixing selection problem. This is consistent
+with the corrected information-geometric note's open physical-selection obligation.
 
 ## Atlas inputs used
 
-All retained / theorem-grade on the integration branch:
+Repository construction inputs and comparison references are listed below.
+Their historical labels do not supply a new retained-status certification.
+The algebra here is conditional on the displayed formulas and domains:
 
 - [DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM_NOTE_2026-04-16.md](./DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM_NOTE_2026-04-16.md)
  — exact closed forms for K_11, K_22, K_12
@@ -292,10 +299,12 @@ All retained / theorem-grade on the integration branch:
 - [DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md](./DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md)
  — chamber `q_+ >= sqrt(8/3) - delta`
 - [DM_NEUTRINO_SOURCE_SURFACE_SCHUR_SCALAR_BASELINE_THEOREM_NOTE_2026-04-17.md](./DM_NEUTRINO_SOURCE_SURFACE_SCHUR_SCALAR_BASELINE_THEOREM_NOTE_2026-04-17.md)
- — Schur baseline D = m I_3 and commutant-class reference curvature Q
+ — conditional commutation/Schur argument; scalar baseline D = m I_3
+ is supplied here, not established as the physical live-sheet baseline
 - [DM_NEUTRINO_SOURCE_SURFACE_INFO_GEOMETRIC_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md](./DM_NEUTRINO_SOURCE_SURFACE_INFO_GEOMETRIC_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md)
- — Quadratic Unanimity, Cubic Splitting Obstruction, Structural
- Obstruction, narrowed-gap (G-Var)/(G-Non-Var) split
+ — four specified local quadratic expansions, differing cubic coefficients,
+ Gaussian positive-definiteness domain boundary, and open physical selection;
+ no global information-geometric obstruction is imported
 - [DM_NEUTRINO_SOURCE_SURFACE_CUBIC_VARIATIONAL_OBSTRUCTION_NOTE_2026-04-17.md](./DM_NEUTRINO_SOURCE_SURFACE_CUBIC_VARIATIONAL_OBSTRUCTION_NOTE_2026-04-17.md)
  — cubic obstruction theorem
 - [DM_NEUTRINO_SOURCE_SURFACE_Z3_PARITY_SPLIT_THEOREM_NOTE_2026-04-17.md](./DM_NEUTRINO_SOURCE_SURFACE_Z3_PARITY_SPLIT_THEOREM_NOTE_2026-04-17.md)
@@ -322,11 +331,9 @@ No new axioms are introduced.
 
 ## Position on publication surface
 
-This note is **not** publication-grade on its own. It is a claim-surface
-advance on the selector gap structure: the parity-mixing class is no longer
-classified as "untested" — it is now classified as "narrower-gap via
-functional-selection ambiguity", matching the sibling status of the information-geometric selection obstruction
-`(G-Var)`.
+This note supplies conditional algebraic examples, not a complete
+classification of parity-mixing selectors. Physical source selection remains
+open, consistent with the corrected information-geometric note.
 
 Appropriate placement:
 
@@ -337,8 +344,8 @@ Appropriate placement:
 - **do NOT** use to "justify" the Schur-Q variational candidate — this
  note actively produces a competing candidate
 - **do NOT** promote the parity-mixing F1-min candidate to theorem-grade
- without a sole-axiom derivation of the functional-selection axiom and
- a Physics-Validation cross-check via eta/eta_obs = 1
+ without a justified physical selection rule and a valid physical
+ comparison; agreement with eta/eta_obs = 1 alone would not prove selection
 
 ## Command
 
@@ -355,8 +362,7 @@ Current expected: `PASS = 27, FAIL = 0`.
 - that the parity-mixing F1-min candidate is the physical `(delta_*, q_+*)`
  (it is a closure-candidate-pending-physics-cross-check, not a selector
  theorem)
-- that the parity-mixing class is closed (it is obstructed by functional-
- selection ambiguity; a canonical-functional axiom is still missing)
+- that the parity-mixing class is closed (the displayed functions leave physical selection unresolved)
 - that the Schur-Q candidate has been ruled out (it remains one of five
  inequivalent candidates)
 - that the Z_3 phase-lift mixed-bridge family has been promoted from
@@ -364,7 +370,6 @@ Current expected: `PASS = 27, FAIL = 0`.
 
 If any future revision of this note tightens those boundaries, it must
 cite a new source on the live retained/promoted surface. Until then, the
-safe read is: **parity-mixing class narrower-gap + closure-candidate-
-pending-physics-cross-check at this note's scope; five inequivalent
-candidate points are on record. The integrated closure of the DM
-flagship lane is the downstream PMNS-as-f(H) closure**.
+safe read is: **five explicit candidate points are on record;
+physical selection and the broader parity-mixing class remain open. The downstream PMNS-as-f(H) construction is a conditional numerical
+fit, not physical selector closure**.

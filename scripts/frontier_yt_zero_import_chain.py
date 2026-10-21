@@ -24,7 +24,7 @@ DERIVED (algebra + running):
   g_1(v), g_2(v): bare + 1-loop running + taste thresholds + color projection
   y_t(M_Pl)   = g_lattice / sqrt(6)        (Ward identity)
   y_t(v)       : backward Ward scan via 2-loop SM RGE
-  m_t          = y_t(v) * v / sqrt(2)
+  m_run(v)     = y_t(v) * v / sqrt(2)     (running-parameter readout, not pole mass)
 
 DERIVED (full 1-loop CW on the lattice):
   lambda(v)    = m_H^2 / (2 v^2)            (full CW, all derived couplings)
@@ -32,6 +32,13 @@ DERIVED (full 1-loop CW on the lattice):
 STANDARD INFRASTRUCTURE (threshold matching below v, does not affect v-scale
 predictions -- only the cross-check running from v to M_Z):
   m_b = 4.18 GeV, m_c = 1.27 GeV, m_t(pole) = 172.69 GeV
+
+Mass-comparison boundary: y_t(v)*v/sqrt(2) is a running-parameter mass
+readout at the supplied v scale. No running-VEV convention, finite EW matching,
+or conversion to a self-consistent pole mass is implemented here. The pole
+threshold value below is not a same-scheme comparator. This repair leaves
+other legacy derivation/import labels unevaluated; their PASS lines do not
+certify physical matching or primitive selection.
 
 Self-contained: numpy + scipy only.
 PStack experiment: yt-zero-import-chain
@@ -151,7 +158,6 @@ M_Z = 91.1876       # GeV
 
 # -- Observational values (COMPARISON ONLY, never used as inputs) --
 V_OBS = 246.22
-M_T_OBS = 172.69
 ALPHA_S_MZ_OBS = 0.1179
 SIN2_TW_OBS = 0.23122
 ALPHA_EM_MZ_OBS = 1.0 / 127.951
@@ -444,7 +450,7 @@ log("    1. Fix alpha_s(v) = 0.1033 (CMT), g_1(v), g_2(v) (derived above)")
 log("    2. Scan y_t(v) from 0.5 to 1.3")
 log("    3. For each trial, run 2-loop SM RGE from v to M_Pl")
 log("    4. Find y_t(v) such that y_t(M_Pl) = g_lattice/sqrt(6) = Ward BC")
-log("    5. m_t = y_t(v) * v / sqrt(2)")
+log("    5. m_run(v) = y_t(v) * v / sqrt(2), before mass-scheme matching")
 log()
 
 
@@ -750,8 +756,7 @@ if yt_v_result is None:
 
 # Final results from self-consistent CW + backward Ward
 lam_cw_final = lam_iter
-mt_pred = yt_v_result * V_DERIVED / np.sqrt(2.0)
-mt_dev = (mt_pred - M_T_OBS) / M_T_OBS * 100
+mt_running_v = yt_v_result * V_DERIVED / np.sqrt(2.0)
 mH_pred = np.sqrt(2.0 * lam_cw_final) * V_DERIVED
 
 log()
@@ -760,20 +765,18 @@ log(f"    y_t(v)     = {yt_v_result:.6f}")
 log(f"    lambda(v)  = {lam_cw_final:.6f}  (full 1-loop CW, DERIVED)")
 log(f"    m_H/m_W    = {mH_over_mW:.4f}")
 log(f"    m_H        = {mH_pred:.2f} GeV  (framework PREDICTION)")
-log(f"    m_t = y_t(v) * v / sqrt(2)")
+log(f"    m_run(mu=v) = y_t(v) * v / sqrt(2), running-parameter readout")
 log(f"        = {yt_v_result:.6f} * {V_DERIVED:.2f} / {np.sqrt(2.0):.6f}")
-log(f"        = {mt_pred:.2f} GeV")
-log(f"    Observed: {M_T_OBS:.2f} GeV")
-log(f"    Deviation: {mt_dev:+.2f}%")
+log(f"        = {mt_running_v:.2f} GeV")
+log(f"    Pole threshold input: {M_T_POLE:.2f} GeV (not a running-mass comparator)")
+log("    UNRESOLVED: no same-scale mass matching or pole conversion supplied.")
 log()
 
 check("y_t(v) found by backward Ward scan",
       yt_v_result is not None and 0.5 < yt_v_result < 1.5,
       f"y_t(v) = {yt_v_result:.6f}")
 
-check("m_t within 5% of observed",
-      abs(mt_dev) < 5.0,
-      f"m_t = {mt_pred:.2f} GeV ({mt_dev:+.2f}%)")
+log("  SCOPE: top-mass agreement is not tested; the former running/pole PASS is withdrawn.")
 
 # Verify Ward BC is actually matched.
 #
@@ -937,7 +940,7 @@ mh_dev = (mH_pred - mh_obs) / mh_obs * 100
 
 log(f"  {'Prediction':<28s}  {'Value':>12s}  {'Observed':>12s}  {'Deviation':>10s}  {'Status':>8s}")
 log(f"  {'-'*28}  {'-'*12}  {'-'*12}  {'-'*10}  {'-'*8}")
-log(f"  {'m_t [GeV]':<28s}  {mt_pred:12.2f}  {M_T_OBS:12.2f}  {mt_dev:+9.2f}%  {'PASS' if abs(mt_dev) < 5 else 'FAIL':>8s}")
+log(f"  {'m_run(mu=v) [GeV]':<28s}  {mt_running_v:12.2f}  {'unmatched':>12s}  {'n/a':>10s}  {'OPEN':>8s}")
 log(f"  {'alpha_s(M_Z)':<28s}  {alpha_s_mz_pred:12.4f}  {ALPHA_S_MZ_OBS:12.4f}  {alpha_s_dev:+9.2f}%  {'PASS' if abs(alpha_s_dev) < 2 else 'FAIL':>8s}")
 log(f"  {'sin^2(theta_W)(M_Z)':<28s}  {sin2_mz_f:12.5f}  {SIN2_TW_OBS:12.5f}  {sin2_mz_dev:+9.3f}%  {'PASS' if abs(sin2_mz_dev) < 1 else 'FAIL':>8s}")
 log(f"  {'v [GeV]':<28s}  {V_DERIVED:12.2f}  {V_OBS:12.2f}  {(V_DERIVED-V_OBS)/V_OBS*100:+9.2f}%  {'PASS' if abs((V_DERIVED-V_OBS)/V_OBS*100) < 1 else 'FAIL':>8s}")
@@ -947,7 +950,7 @@ log()
 
 # PASS/FAIL summary
 log("  PASS/FAIL THRESHOLDS:")
-log(f"    m_t within 5% of observed:          {'PASS' if abs(mt_dev) < 5 else 'FAIL'}")
+log("    Top pole-mass agreement: OPEN (mass scheme/scale matching absent)")
 log(f"    alpha_s(M_Z) within 2% of observed: {'PASS' if abs(alpha_s_dev) < 2 else 'FAIL'}")
 log(f"    sin^2(theta_W) within 1%:           {'PASS' if abs(sin2_mz_dev) < 1 else 'FAIL'}")
 log(f"    v within 1% of observed:            {'PASS' if abs((V_DERIVED-V_OBS)/V_OBS*100) < 1 else 'FAIL'}")

@@ -27,6 +27,18 @@ them.
 
 Current science/open-lane follow-ups:
 
+- `2026-10-21-ckm-brocard-canonical-evidence-pr9859`
+  Scope: [Vieta structural integers](../CKM_BROCARD_POLYNOMIAL_VIETA_STRUCTURAL_INTEGERS_THEOREM_NOTE_2026-04-25.md)
+  and [Q square decomposition](../CKM_BROCARD_Q_POLYNOMIAL_PERFECT_SQUARE_DECOMPOSITION_THEOREM_NOTE_2026-04-25.md).
+  Finding: both notes remain `open_gate`; their refreshed runners preserve
+  historical documentary diagnostics (28 PASS / 3 FAIL and 25 PASS / 3 FAIL).
+  The conditional algebra does not establish the physical input identification.
+  Next action: separate canonical conditional-algebra evidence from historical
+  status diagnostics, preserving the failed evidence and independently checking
+  any changed predicates. Resolve the physical bridge separately; no status
+  promotion or inherited audit authority follows from this source repair.
+
+
 - `2026-10-18-source-repair-candidates-pr9698`
   Scope: dated relic/gravity/axiom/CKM/citation and runner retrieval leads.
   Finding: review confirmed representative stale live axiom/status prose;

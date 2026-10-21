@@ -489,6 +489,11 @@
       "source_sha256": "906c270362ac7fc4392b1c3f6d279b85c00adca02234882f4b843389e7019f7e",
       "timeout_sec": 300,
       "reason": "Bounded CKM scoped-source replay cap; inherited authority failures remain diagnostic, no physics certification. Source changes invalidate this cap."
+    },
+    "scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py": {
+      "source_sha256": "319d534873ad6c905d9c5467873d9fa2dac1e39ab6d8e8636336b9e7409bab8d",
+      "timeout_sec": 60,
+      "reason": "Bounded read-only D3 metadata diagnostic after unrelated review-queue insertion; existing status failures remain evidence, not repaired or certified. Source changes invalidate this declaration."
     }
   }
 }

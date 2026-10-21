@@ -50,9 +50,9 @@ Equivalently: tan(θ_W) = g'/g (consistent with cycle 19 sin²θ_W^GUT = 3/8 and
 
 The Z-coupling from the same calculation:
 ```text
-g_Z  =  g cos(θ_W) − g' sin(θ_W)·(Y/2 / T_3)  ...
+Z_μ coefficient = g T_3 cos(θ_W) − g' (Y/2) sin(θ_W)
 ```
-After grouping, the standard result is:
+For `cos(θ_W) != 0`, using the matching relations above, grouping gives:
 ```text
 Z_μ coupling  =  (g/cos(θ_W)) (T_3 − Q sin²(θ_W))
 ```

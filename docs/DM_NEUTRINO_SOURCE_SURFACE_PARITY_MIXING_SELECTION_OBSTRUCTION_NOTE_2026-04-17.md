@@ -30,8 +30,8 @@ Nothing in this note is promoted to theorem-grade beyond the retained
 atlas. The parity-mixing route produces a **new candidate selector
 point** that is strictly inequivalent to every previously-tested
 candidate; cross-confirmation via the retained transport chain
-(`eta / eta_obs`) is chamber-blind. The integrated closure of the DM
-flagship lane is the downstream PMNS-as-f(H) closure.
+(`eta / eta_obs`) is chamber-blind. The downstream PMNS-as-f(H) construction is a supplied-chart numerical
+fit; it does not close the physical selector gate.
 
 ## Survey of retained-atlas parity-mixing candidates
 
@@ -145,7 +145,7 @@ K11^2 + K22^2 = (K11+K22)^2/2 + (K11-K22)^2/2
 ```
 Then `d F1 / d delta = 0` gives
 ```
-2 [2 delta - 2 sqrt(8/3) + 4 sqrt(2)/9] · 2 + 4 sqrt(3) (sqrt(3) delta - 4 sqrt(2)/3) = 0
+[2 delta - 2 sqrt(8/3) + 4 sqrt(2)/9] · 2 + 4 sqrt(3) (sqrt(3) delta - 4 sqrt(2)/3) = 0
 ```
 Simplifying:
 ```
@@ -366,5 +366,5 @@ If any future revision of this note tightens those boundaries, it must
 cite a new source on the live retained/promoted surface. Until then, the
 safe read is: **parity-mixing class narrower-gap + closure-candidate-
 pending-physics-cross-check at this note's scope; five inequivalent
-candidate points are on record. The integrated closure of the DM
-flagship lane is the downstream PMNS-as-f(H) closure**.
+candidate points are on record. The downstream PMNS-as-f(H) construction is a conditional numerical
+fit, not physical selector closure**.

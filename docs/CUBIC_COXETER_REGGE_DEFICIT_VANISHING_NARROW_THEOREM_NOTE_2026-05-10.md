@@ -51,7 +51,8 @@ to `Z^3`: every translate of `Q` by an integer vector is triangulated by
 the same scheme, yielding a global simplicial complex covering `R^3`.
 
 Each interior 1-simplex (edge) of `T(Z^3)` belongs to exactly one of
-**three classes** under the cubic symmetry group `O_h`:
+**three ambient cubic length classes** (the `O_h` classes of lattice
+directions; this does not assert full `O_h` invariance of the chosen complex):
 
 ```text
 (C_axis)   cube-axis edge,         e.g. (v_0, v_1),    L = 1;
@@ -208,8 +209,10 @@ n_6  =  (0, 1, 1) - (1)(0, 1, 0)    =  (0, 0, 1),
 `n_0 . n_6 = 0`, so `alpha_{T_1}(v_1, v_2) = pi / 2`.
 
 This proves `(T1)`. The five remaining tets `T_2, ..., T_6` are obtained
-from `T_1` by orientation-preserving rotations around the body-diagonal
-axis `(v_0, v_6)` by multiples of `pi / 3`, hence inherit the same
+from `T_1` by permutations of the three coordinate axes fixing the
+body-diagonal `(v_0, v_6)`. The even permutations are rotations by
+`0`, `2 pi / 3`, or `4 pi / 3`; the odd permutations are reflections.
+All six are Euclidean isometries, hence the tetrahedra inherit the same
 dihedral-angle table on the corresponding labelled edges. The runner
 verifies this by direct symbolic computation of all six tets' dihedrals.
 
@@ -251,7 +254,7 @@ cubes (the four cubes meeting along that edge: `Q, Q + (0, -1, 0), Q +
 > sharing an interior axis edge the actual enumeration mix is two cubes
 > presenting the edge in **two** tets at `pi/4` and two cubes
 > presenting it in **one** tet at `pi/2` (or equivalent permutations
-> consistent with `O_h`-orbit constraints), yielding a finite
+> consistent with coordinate-permutation symmetry), yielding a finite
 > edge-star with **6** contributing tets rather than 8 (see the runner
 > printout below). The sum still equals `2 pi`:
 >
@@ -334,8 +337,12 @@ pairwise intersections having zero 3-volume. ∎
 - Does **not** claim the cubic-Coxeter triangulation is the unique
   simplicial subdivision of `Z^3`. Other triangulations exist (e.g.,
   Kuhn-style chain, Freudenthal six-tet on alternating diagonals); the
-  conclusion is stated for the canonical body-diagonal chain that
-  preserves the cubic-symmetry orbit class structure on `O_h`.
+  conclusion is stated for the chosen translation-periodic body-diagonal
+  chain. Its edge lengths belong to the ambient cubic `O_h` length classes,
+  but the triangulation itself is not invariant under all of `O_h`: a single
+  coordinate reflection sends its positive body diagonal to a missing diagonal.
+  Coordinate permutations, translations and simultaneous inversion preserve
+  this triangulation; full cubic symmetry is not needed for the flat metric.
 - Does **not** consume any external numerical target, literature numerical
   comparison, fitted selector, or unit-convention import.
 

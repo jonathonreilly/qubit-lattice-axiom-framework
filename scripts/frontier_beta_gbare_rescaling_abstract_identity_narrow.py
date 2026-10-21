@@ -4,7 +4,7 @@
 Verifies the standalone polynomial-algebra identity:
 
   Let (g, c, N) be abstract symbolic variables with g > 0, c > 0, and
-  N arbitrary in any field of characteristic zero. Define
+  N arbitrary in an ordered field of characteristic zero. Define
 
       beta(g, N)  :=  2 N / g^2.                                   (1)
 
@@ -46,6 +46,8 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parent.parent
 NOTE_PATH = ROOT / "docs" / "BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md"
+
+AUDIT_TIMEOUT_SEC = 120
 
 PASS = 0
 FAIL = 0
@@ -223,6 +225,10 @@ check("identity holds at fully symbolic (g, N, c) with no numerical values",
       detail=f"residual at fully symbolic = {symbolic_residual}")
 
 
+# Rational fibers need not exist at every positive rational beta.
+check("N=1, beta=1 has no rational g", sympy.sqrt(2).is_rational is False)
+check("N=1, beta=2 has unique positive rational g=1", sympy.sqrt(2 / Rational(2)) == 1)
+
 # ----------------------------------------------------------------------------
 section("Part 8: note structure and narrow-scope discipline")
 # ----------------------------------------------------------------------------
@@ -261,7 +267,7 @@ print("""
 
   HYPOTHESIS:
     Let (g, c, N) be abstract symbolic variables with g > 0, c > 0, and
-    N arbitrary in any field of characteristic zero. Define
+    N arbitrary in an ordered field of characteristic zero. Define
 
         beta(g, N)  :=  2 N / g^2.
 
@@ -274,7 +280,8 @@ print("""
     the joint rescaling (g, beta) -> (g/c, c^2 * beta).              (T2)
 
     The orbit of any positive g under sigma_c is the entire positive
-    ray, and the beta-fiber over each value is a single point in g.   (T3)
+    rational ray. For N>0 each attained beta has one rational g;
+    other positive rational beta values may have empty fibers.       (T3)
 
   Audit-lane class:
     (A) -- pure polynomial algebra over Q. No external numerical,

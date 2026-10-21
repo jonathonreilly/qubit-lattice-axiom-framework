@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/candidate_law_cl3_read_once_records_evidence_2026_10_19.py
 runner_sha256: f6a9ef7b45580a66ac64a4a1f3a1355244091b87aa96eaffe36b87d719895611
-input_fingerprint_sha256: 2b9d3f397cd634f0779a96a93f41a458708a16c3ddfe4e8b732bfad35b835418
+input_fingerprint_sha256: 3cf67786f672c77677844bef71b4fe3559dc4ef1d64210dcdb88ddfd0f645e4a
 timeout_sec: 1500
 exit_code: 0
-elapsed_sec: 14.89
+elapsed_sec: 15.46
 status: ok
 ----- stdout -----
 [PASS] A1 unrecorded walk keeps its group speed  group speed 0.7678; measured 0.7671 (ticks 0-100), 0.7671 (ticks 500-600)
@@ -18,7 +18,7 @@ A-note: the record lifetime does not enter this update. Keeping the conditioned 
 per_site: the coin angle, record rule, jump rates and no-revisit constraint are supplied choices.
 per_block: geometries, seeds, packet parameters, bins and contrast windows are fixed in this source.
 lattice_wide: no physical record dynamics, interpretation of the Englert bound beyond this model, or derivation of the clause is established.
-elapsed_seconds 14.8
+elapsed_seconds 15.4
 
 TOTAL: PASS=6 FAIL=0
 

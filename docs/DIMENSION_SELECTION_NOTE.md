@@ -1,4 +1,4 @@
-# Dimension Selection Lower-Bound Finite-k Repair
+# Dimension Selection: Historical Lower-Bound Packet and Sign Correction
 
 **Date:** original dimension-selection note; 2026-05-27 lower-bound scope
 repair.
@@ -9,7 +9,34 @@ repair.
 **Source packet verifier cache:** `logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt`
 **Source packet verifier output:** `outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json`
 
-## 2026-05-27 Scope Repair
+## Current correction boundary (2026-10-21)
+
+The lower-bound interpretation in the historical packet below is superseded.
+The finite-k bridge's supplied potentials `phi=-Mr` and `phi=-M log(r)` have
+outward radial force for positive M and r; their away-centroid response does
+not exclude attractive gravity in dimensions 1 and 2. The force-consistent
+continuation `phi=+Mr`, `phi=+M log(r)` reverses the infinitesimal derivatives,
+which are toward for all five tested dimensions. This is a finite-geometry
+counterexample to the old sign-based exclusion, not a dimension selector.
+The historical beta and I_3 table is preserved; those values have not been
+recomputed under the corrected attractive continuation and cannot restore the
+withdrawn exclusion by themselves.
+
+The absent `docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md` was an existence
+anchor in the bridge runner, not a content input or proof premise here. Its
+historical missing-artifact failure remains unverified documentary evidence.
+The current bridge separates that availability report from its required
+checks; no missing artifact is counted as PASS.
+
+Everything below this boundary records the earlier packet and its claimed
+checks, not a current lower-bound proof or current audit-status certification.
+In particular, old expected cache counts and source-packet freshness claims
+are historical expectations. The unchanged parent/manifest diagnostics still
+require those old cache signatures and may fail after the corrected bridge;
+such failures must be retained, not interpreted as failed derivative algebra
+or silently repinned to manufacture packet closure.
+
+## Historical 2026-05-27 Scope Repair (superseded lower-bound interpretation)
 
 The prior note mixed two statements:
 

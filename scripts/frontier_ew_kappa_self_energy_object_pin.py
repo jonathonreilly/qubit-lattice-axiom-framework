@@ -14,6 +14,8 @@ not establish either formal readout as an admissible physical scheme.
 Self-contained: numpy + sympy; no repository or experimental inputs.
 """
 
+AUDIT_TIMEOUT_SEC = 300
+
 import numpy as np
 import sympy as sp
 

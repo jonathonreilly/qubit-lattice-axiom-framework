@@ -64,11 +64,24 @@ primitives that is not actually derived from retained primitives.
 
 ---
 
+## Current mass-comparison boundary (2026-10-21)
+
+The historical full-chain runner computes the running parameter
+`y_t(v) v / sqrt(2) ~= 169.51 GeV`. It does not perform the mass-scheme and
+scale matching needed to predict a top pole mass. Therefore the historical
+1.84% comparison, PASS label, and explanations of that difference below are
+superseded; they are not an error budget or test against a pole observable.
+The declared-anchor primary and its numerical predicates are unchanged.
+The Fierz 8/9 input is a dimension fraction; a physical amplitude/readout
+requires a separate channel-weight condition as well as the stated matching
+rule. The legacy claim of exactly two remaining physical inputs is not
+re-established by this arithmetic correction.
+
 ## 1. Historical Full-Chain Result (Out Of Current Audit Scope)
 
 | Prediction             | Value    | Observed | Deviation | Status  |
 |------------------------|----------|----------|-----------|---------|
-| m_t [GeV]              | 169.51   | 172.69   | -1.84%    | PASS    |
+| running parameter y_t(v)v/sqrt(2) [GeV] | 169.51 | pole comparator 172.69 | not matched | no pole test |
 | alpha_s(M_Z)           | 0.1181   | 0.1179   | +0.14%    | PASS    |
 | sin^2(theta_W)(M_Z)    | 0.23061  | 0.23122  | -0.263%   | PASS    |
 | v [GeV]                | 246.28   | 246.22   | +0.03%    | PASS    |
@@ -197,7 +210,7 @@ not derived from the current retained primitives.
 
 **Total systematic uncertainty on m_t: ~0.6% (dominated by 2-loop truncation).**
 
-The observed deviation of -1.84% exceeds the estimated systematic by about 1.2%.  This is consistent with the expected size of 3-loop corrections and the approximation of the taste-threshold running as a 1-loop staircase.
+The historical pole comparison is superseded by the mass-comparison boundary above; no missing-loop explanation follows before mass-scheme matching.
 
 ---
 
@@ -227,7 +240,7 @@ Historical full-chain outputs retained for context:
 The full 1-loop CW potential on the lattice BZ (L=24, a=1) with all derived couplings (y_t, g_2, g_Y) gives m_H/m_W = 1.907, hence m_H = 152.2 GeV at the physical lattice spacing a = l_Planck.  This is 21.5% above the observed 125.25 GeV.  The ratio m_H/m_W decreases systematically with lattice spacing: 1.91 (a=1), 1.78 (a=0.75), 1.68 (a=0.5), converging toward the SM value 1.56 as a -> 0.  The +21.5% deviation is a lattice artifact of the same order as expected from O(a^2) corrections to the CW potential.
 
 **Honest gap:**
-The 1.84% deficit in m_t could indicate (a) missing 3-loop corrections in the backward Ward running, (b) refinement needed in the taste threshold treatment at 2-loop, or (c) genuine new physics beyond the leading-order framework.  At the current level of precision, all three explanations are compatible with the data.
+Mass-scheme and scale matching are missing. No inference about higher loops or new physics is made from the unmatched 169.51 GeV running parameter.
 
 ---
 

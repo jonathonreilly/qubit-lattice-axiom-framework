@@ -1,5 +1,7 @@
 # EW Current Fierz-Channel Decomposition: Exact Group-Theory Derivation of `(N_c^2 - 1)/N_c^2`
 
+**Type:** bounded_theorem
+
 **Date:** 2026-05-01
 **Status:** support / exact group-theory derivation (cycle-breaking artifact). The exact (N_c^2 - 1)/N_c^2 ratio is derived inline from the SU(N_c) Fierz identity and Hilbert-space dimension counting — both are textbook group theory, no 1/N_c expansion. The remaining matching rule (which channel the physical EW current couples to) is named explicitly as a structural input from the framework's already-audited lattice gauge surface.
 **Primary runner:** `scripts/frontier_ew_current_fierz_channel_decomposition.py`

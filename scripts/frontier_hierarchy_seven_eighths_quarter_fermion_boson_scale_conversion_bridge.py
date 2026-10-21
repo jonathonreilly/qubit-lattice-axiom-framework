@@ -15,6 +15,8 @@ Carlo, no observational comparator is load-bearing.
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 300
+
 import math
 import sys
 from fractions import Fraction

@@ -22,6 +22,9 @@ Dimension counting does not supply a physical amplitude or matching weight.
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md']
+
 import math
 import sys
 from pathlib import Path

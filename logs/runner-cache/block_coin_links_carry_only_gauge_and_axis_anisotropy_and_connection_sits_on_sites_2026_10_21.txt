@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/block_coin_links_carry_only_gauge_and_axis_anisotropy_and_connection_sits_on_sites_2026_10_21.py
+runner_sha256: 6ada70fed737a53e69ad3b1ec44140761f612052fe7cd8ff59b50fb301c2643f
+input_fingerprint_sha256: 90b3561ea1e93f163c0ec5525c6a0f5c1966337df761b6c08bcadf3b11ace0a7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.48
+status: ok
+----- stdout -----
+== A. the link inside the coin
+[PASS] A1 CL-2 coin (spin-3/2 overlap phases on the 12 edges) is a Hermitian involution with flux pi on all six faces
+[PASS] A2 the unitary edge-coin family has tangent dimension 9 at CL-2 = 7 site rephasings + 2 axis anisotropies  Jacobian rank 15 of 24
+[PASS] A3 only if: every solution of W^2 = 1 found from random starts with all edges open has per-axis moduli, sum m_a^2 = 1 and flux pi on every face  38 open solutions (+2 with a closed edge); max spread 3e-16, |sum-1| 2e-16, |flux-pi| 9e-15
+[PASS] A4 if: any per-axis moduli on the unit sphere with any site rephasing give W^2 = 1  20/20
+[PASS] A5 field strength inside a block breaks unitarity: one link phase d gives ||W^2-1|| = d/3; for general (non-Hermitian) unitary edge coins a random U(1) dressing breaks W^dag W = 1 while pure gauge keeps it  d/3 ratios [0.3333, 0.3333, 0.3332]; 19 non-Hermitian coins, min break 0.056
+[PASS] A6 polar part of a dressed edge hop is a gauge-covariant Hermitian involution; its extra weight is all on U-turns (body diagonals), none on face diagonals, and vanishes at flux pi  U-turn weight at dressing 0, 0.2, 0.6: [0.0, 0.0896, 0.2452]
+== B. metric content of the link moduli
+[PASS] B1 per-axis moduli c (even) and c' (odd): exactly cos w = sum_a c_a c'_a cos K_a, and W(c)^2 = 1 iff |c| = 1. The massless quadratic form is diag(c_a c'_a): no shear terms, trace fixed by unitarity, c != c' opens a gap  band error 3e-15; |c|^2 = 0.93 gives ||W^2-1|| = 0.07
+[PASS] B2 under the 24 rotations the three axis moduli span A1+E, the six metric components A1+E+T2; unitarity removes A1, so link moduli carry E only (2 of 6): neither the trace (the light-bending part) nor the T2 shear
+== C. the connection lives on sites
+[PASS] C1 the tick is a product of two reflections: U + U^dag = H^2 - 2 with H = W_even + W_odd, and the 4^3 torus has the CL-2 bands
+[PASS] C2 every plaquette of Z^3 carries flux pi in CL-2: the faces of blocks and the mixed plaquettes whose edges lie in four blocks  {'intra': 96, 'mixed': 96}
+[PASS] C3 CL-2's hop is the incidence operator d + d^T of the coarse cell complex (sites with 0,1,2,3 odd coordinates = vertices, edges, faces, cubes), up to site phases on the 8^3 torus; d^2 = 0 is what puts pi through every plaquette  max deviation 7e-15 on 3072 entries
+[PASS] C4 link phases that keep every block coin unitary (pure gauge inside each block) are a site phase chi = phi_e - phi_o applied between the half-ticks; they leave block faces at pi and change mixed fluxes by the alternating sum of chi
+[PASS] C5 U(chi) = Theta^dag W_odd Theta W_even is unitary and covariant under independent phases on every even and odd block; without chi the bare tick has no such local symmetry (only the global phase)  bare tick changed by block phases: 0.66
+[PASS] C6 each half-tick keeps every block's odds inside the block, so all transport between blocks passes through sites: a site is the link of the block lattice joining its even and odd block
+== D. a supplied quadratic law for chi on the block lattice (electric sum E^2/2, magnetic sum over mixed plaquettes)
+[PASS] D1 12 mixed plaquettes per 2x2x2 cell; block phases are exact zero modes and the only ones away from k = 0; at k = 0 four zeros (gauge + uniform connection) and gapped 8, 8, 8, 24
+[PASS] D2 one isotropic massless pair, omega^2 = k^2/2 (cell units, unit couplings) in four directions; no second massless point (third eigenvalue / 2 sum(1 - cos k) stays bounded below over the zone; zone corners gapped)  omega^2/k^2 in [0.49995, 0.50000], min ratio over zone 0.500, corners [4.0, 4.0, 8.0]
+   speed: the coin gives c = 0.5773 = 1/sqrt3 cell per tick; chi with per-tick angles tau*g_E, tau*g_B gives c = tau sqrt(g_E g_B / 2): equal only if tau^2 g_E g_B = 2/3, a supplied tuning
+== E. Admissibility form on the triangle-free block graph (8 binary sites)
+[PASS] E1 a positive law with site and edge factors is nearest-neighbour Markov (each site's conditional ignores non-neighbours); adding one four-site face ring makes a corner's conditional depend on its face-diagonal partner  dependence on non-neighbours: 1e-15 without ring, 0.604 with ring
+== measured-reality arithmetic
+   lattice energy hbar c / a = 2.44e+27 eV for a = sqrt(8 pi) l_P; photon mass < 1e-18 eV (PDG) is 4e-46 of it: an unprotected composite needs that tuning
+   speed ties: |c_e - c_gamma| < ~1e-11 (LEP/Tevatron, Hohensee et al. 2009), 1e-16..1e-21 (Crab, model-dependent); GW170817 (c_g - c_gamma)/c in [-3e-15, +7e-16]; so tau^2 g_E g_B must equal 2/3 to ~2e-11 or better
+   Cassini: gamma - 1 = (2.1 +- 2.3)e-5; the trace of the spatial metric cannot ride on link moduli (B1, B2)
+supplied: CL-2 coin and partitions; all edges open; minimal coupling as hop or site phases; the quadratic chi law and its couplings; positivity and a joint law in E. Not derived: a carrier for chi, photon speed, Coulomb phase, any physical identification.
+elapsed_seconds 4.1
+
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

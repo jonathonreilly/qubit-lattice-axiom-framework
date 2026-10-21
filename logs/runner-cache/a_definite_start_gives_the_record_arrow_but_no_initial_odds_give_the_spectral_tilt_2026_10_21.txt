@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/a_definite_start_gives_the_record_arrow_but_no_initial_odds_give_the_spectral_tilt_2026_10_21.py
+runner_sha256: d6a526bb2cd3566d9de36e167f96788742ce22915e3c47df115b8967138fdfc7
+input_fingerprint_sha256: 881616271b91b8599b3f660dd3836d97b2c3e8b1aec89d4b1fca07925ace9e47
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 18.63
+status: ok
+----- stdout -----
+== A. theorems (proofs in the note; numerical checks in B-D)
+   T1 stationary odds freeze CL-5; T2 strict cone; T3 analytic S(q) for finite-range starts (index 0 or >= 2)
+== B. 16-site torus 4x2x2, exact many-body odds in the 2^16 Fock space (mu, b) = (0.4, 0.3)
+[PASS] Fock-space cube operators (with fermion reordering signs) reproduce the exact Slater odds of a definite start  max odds error 1.5e-16 over 6 half-ticks, 12870 configurations
+   (a) empty                  S(p)/ln D: t=0 -0.000, t=2 -0.000, late mean 0.000; move rate >= TV: first 0.000, late mean 0.000
+   (b) half-filled sea        S(p)/ln D: t=0 0.940, t=2 0.940, late mean 0.940; move rate >= TV: first 0.000, late mean 0.000
+   (d) a tick eigenstate      S(p)/ln D: t=0 0.872, t=2 0.872, late mean 0.886; move rate >= TV: first 0.669, late mean 0.669
+   (c) Haar-typical           S(p)/ln D: t=0 0.955, t=2 0.955, late mean 0.955; move rate >= TV: first 0.499, late mean 0.500
+   (e1) definite, uniform     S(p)/ln D: t=0 -0.000, t=2 0.795, late mean 0.670; move rate >= TV: first 0.973, late mean 0.788
+   (e2) definite, sea-read    S(p)/ln D: t=0 -0.000, t=2 0.793, late mean 0.725; move rate >= TV: first 0.997, late mean 0.803
+[PASS] T1: (a) and (b) are frozen: odds identical at every half-tick, so CL-5 moves nothing and every record repeats  max TV 2.5e-15
+[PASS] (d) a stationary (tick-eigen) start: odds return every tick, so the configuration at most oscillates with period one tick  half-tick TV 0.669, return error 7.1e-13
+[PASS] (c) a typical start has near-maximal odds entropy at t = 0 and no growth: no arrow (equilibrium from the first half-tick)  S/lnD 0.955 -> mean 0.955
+[PASS] (e) a definite start has zero odds entropy and the largest possible growth: the arrow, with P(move) >= TV > 0 at every late half-tick  S/lnD 0 -> 0.670 (e1), 0.725 (e2)
+[PASS] a definite start that privileges no site is all-empty or all-full (the 8 corners fall in 4 classes mod (1,1,1), permuted transitively by the rotations); both are frozen, so a definite start must leave WHICH configuration to a measure
+== C. 8^3 torus (512 sites), exact Gaussian evolution
+[PASS] T2: the support after T half-ticks reaches exactly L-infinity distance T (strict cone; up to 3x the light speed 1/sqrt3 site per half-tick along a body diagonal)  reach [1, 2, 3]
+   12^3 torus (1728 sites); 4^3-block entropy per site; the sea (b) is constant at 0.397; t = 0,4,..,48:
+   (e1) uniform   N =  847: 0.00 0.44 0.62 0.66 0.67 0.66 0.63 0.62 0.65 0.66 0.66 0.67 0.66
+   (e2) sea-read  N =  864: 0.00 0.45 0.63 0.67 0.67 0.66 0.64 0.63 0.65 0.66 0.66 0.66 0.66
+[PASS] arrow: a definite start rises from zero block entropy to a volume law and stays far from zero (finite-torus revivals only)  after t >= 4: e1 min 0.438 mean 0.634; e2 min 0.452 mean 0.637 (ln2 = 0.693)
+[PASS] (e2) reads exactly half filling (the sea is an N eigenstate), so its net charge has zero fluctuation  N = 864
+[PASS] (e1) occupies every tick mode about equally (infinite-temperature start): mode occupation independent of quasi-energy  mean 0.541, sd 0.024, corr with omega -0.000
+== D. structure-factor index at small q: Bloch construction checked against real space, then 80^3 sites
+[PASS] Bloch construction: range-1 blocks, spectrum and S(q) agree with the real-space 512-site tick  S(q): 0.091754 vs 0.091754
+   80^3 sites, q = pi m/40 (m = 1..6), 3 directions. local index n from m = 1,2; linear share A q1/S(q1) from S = Aq + Bq^2 + Cq^3:
+     gapped sea (mu, b) = (0.4, 0.3)  filling 0.500: n = 1.991, linear share -0.067
+     massless sea (0, 0.3)            filling 0.500: n = 1.969, linear share -0.024
+     doped sea (Fermi surface)        filling 0.560: n = 1.177, linear share +0.854
+[PASS] T3 illustrated: gapped and massless half-filled seas give index 2 with no linear term (analytic S); the uniform start is white (index 0, exact since its ensemble is rho ~ 1)
+[PASS] a Fermi surface gives a dominant |q| term (index -> 1): the free-fermion form of the scale-invariant (Harrison-Zeldovich) shape  n = 1.177, linear share 0.854
+== E. measured-reality arithmetic
+   Planck 2018 n_s = 0.9649 +- 0.0042: index 1 at 8.4 sigma; index 0 at 230 sigma; index 2 at 246 sigma
+[PASS] no candidate gives the measured tilt: (a,b,d) freeze, (c,e1) white, (b,e2) index 2, a doped Fermi sea index 1 (8.4 sigma off)
+[PASS] baryon asymmetry: every CL rule conserves each species number, so eta is the start's; (e1) gives <eta> = 0 with |eta| ~ N^-1/2 and lattice-scale sign domains (excluded: no antimatter domains below ~Gpc, Cohen-De Rujula-Glashow 1998); (e2) gives exactly 0  N_sites in today's horizon 6.7e+182, |eta| ~ 4e-92 vs measured 6.1e-10
+   Omega_c/Omega_b = 5.364 +- 0.065; m_c (n_c/s) = 0.437 eV; (e1) late entropy per mode kappa ln2, kappa = 0.914
+[PASS] (e1) fills a never-thermalised link-free species at 1/2 per mode: n_c/s = f/(2 kappa ln2) with f its mode fraction relative to the visible sector, so m_c = 0.61 kappa/f eV; hot (excluded, Lyman-alpha m > 5.3 keV) unless f < ~1e-4  f = 1: 0.55 eV; f = 1/16: 8.9 eV; f = 1e-4: 5.5 keV
+[PASS] counting numerology: the mass-density ratio needs m_c/m_b, which no law supplies; fractions with q <= 8 inside 1 sigma are expected by chance, so a counting match is not evidence  hits 16/3, 27/5, 38/7, 43/8; expected by chance 2.8
+supplied: the CL-3 tick with (mu, b) = (0.4, 0.3) and (0, 0.3); the negative-quasi-energy branch for "the sea"; the
+  identification of matter density with site occupation and P_delta(k) ~ k^n_s at fixed time; the unit map a = sqrt(8 pi) l_P;
+  standard adiabatic expansion for n_c/s; the uniform measure in (e1); all measured numbers.
+elapsed_seconds 18.3
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

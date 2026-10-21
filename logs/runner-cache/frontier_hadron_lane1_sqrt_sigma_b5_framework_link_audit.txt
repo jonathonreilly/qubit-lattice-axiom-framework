@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hadron_lane1_sqrt_sigma_b5_framework_link_audit.py
 runner_sha256: 48779d313455b5eec344123fa9e68747ce9e19828c4063a827aab04dbe09e0a2
-input_fingerprint_sha256: 37df59da0b36cac1f87d54ad65412d726a5207686d74ffdd3e61f710d10e964d
+input_fingerprint_sha256: de1b20b1ec88886c9e532e5593f7d63e8c22677f5ecf4b13f05877a6da93400c
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 ========================================================================================

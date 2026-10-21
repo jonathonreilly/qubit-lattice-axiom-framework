@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/ac_phi_lambda_c3_equivariance_schur_diagnostic_2026_05_10.py
-runner_sha256: 54a0cb443958436fec1d46875fc572c5809fadd23b926045dc701521e4bf81d6
+runner_sha256: ac3fcb44ef5260095a61e02e2e924d6bed1ecf72e77935c852f6fe1676abfafa
+input_fingerprint_sha256: ee0d65aa868732243ddff12d56531b28f3ffd0e005e651268cc9bc23b2e69d58
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 1.13
 status: ok
 ----- stdout -----
 AC_phi_lambda preserved-C_3 structural foreclosure diagnostic

@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_color_su3_bridge_from_record_2026_06_05.py
-runner_sha256: b81cb5d4b29ccb54c8ee5574bd2775e664b02228cbe191192d07dcb37135e88f
+runner_sha256: 557be1690a3cbd6fad1b449b8c0691135fc604c7dd30f7ea287d98f0f5addb78
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.86
 status: ok
 ----- stdout -----
 ====================================================================================
-FRONTIER: SU(3)_c symmetric-base -> physical-color bridge from the
-record-gauge principle (#2667 +#2711). HONEST IS/IS-NOT probe.
-Carrier: C^8 = C^4_base (x) C^2_fiber.  Exact sympy + numpy.
+FINITE MODEL: supplied symmetric-base SU(3) and fiber SU(2)
+Invariant tensor/projector checks; physical color assignment remains open.
+Carrier: C^8 = C^4_base (x) C^2_fiber. Symbolic and floating-point checks.
 ====================================================================================
 
 ------------------------------------------------------------------------------------
@@ -38,117 +38,46 @@ PART 1b: explicit base-SU(3) color singlets (eps_qqq, qqbar) -- the records
      STRUCTURALLY DISTINCT from the SU(2) weak-singlet record algebra.
 
 ------------------------------------------------------------------------------------
-PART 2: #2667 converse -> 'records = color singlets' picks base SU(3)
+PART 2: invariant projectors do not uniquely reconstruct SU(3)
 ------------------------------------------------------------------------------------
-#2667 (converse): gauge group = the local symmetry whose invariants
-are the records. We test: do the SU(3) color singlets sit in the
+We test the invariant projectors of two supplied group actions;
+the singlets sit in the commutant on their tensor representations,
 commutant of the base-SU(3) generators (=their invariant algebra),
-and is base SU(3) -- not fiber SU(2) -- the symmetry that fixes them?
+without asserting that these projectors reconstruct a unique group.
 
   [PASS] color-singlet projector P_meson IN commutant of base-SU(3) action
   [PASS] color-singlet projector P_baryon IN commutant of base-SU(3) action
-  CONDITIONAL identification (the #2667 'half'): IF the physical
-  records are the color singlets, THEN by 'gauge = invariance-
-  commutant', the gauged group is the base SU(3). This is an
-  algebraic identity GIVEN the antecedent 'records = color singlets'.
-  [PASS] #2667 half: 'records=color singlets' => gauge group = base SU(3) (commutant identity holds)
+  [PASS] U(3) phase counterexample: baryon projector invariant
+  [PASS] same phase does not fix baryon vector
+Projector invariance proves inclusion only, not unique group reconstruction.
+Fixing the alternating tensor itself within a supplied U(3) action adds det=1.
 
 ------------------------------------------------------------------------------------
-PART 3: THE CRUX -- is base-SU(3)-gauged (not fiber-SU(2)) FORCED or OPEN?
+PART 3: two supplied finite link models
 ------------------------------------------------------------------------------------
-Test the only structural discriminator the framework offers:
-the gauge connection lives on LINKS (Gauss law / Wilson, #2711);
-the fiber is matter spin. Does locality+links FORCE the base SU(3)
-(color) onto the links rather than the fiber SU(2)?
-
-Minimal two-endpoint model (mirrors TWO_ENDPOINT_GAUSS_LAW note):
-a link with two endpoints; at each endpoint a matter dof and a
-link-end dof. We can write a Gauss law for EITHER symmetry.
-
   [PASS] SU(2): bare link-end transport variant at A
   [PASS] SU(2): bare link-end transport invariant at B
   [PASS] SU(3): bare color link-end transport variant at endpoint A
   [PASS] SU(3): dressed color singlet invariant at endpoint A (Wilson-type)
 
-  RESULT: a fiber-SU(2) Gauss law (two-endpoint qubit carrier) and a
-  base-SU(3) Gauss law (endpoint C^3 (x) link-end C^3 carrier) each admit
-  the same bare-transport-variant / dressed-singlet-invariant structure
-  on their own carrier (the SU(3) case is verified at the matched
-  endpoint A; the two carriers are not identified). So records + locality
-  + the link/Gauss-law structure do NOT by themselves discriminate base
-  SU(3) from fiber SU(2): whichever generator is PLACED on the link end
-  is the one whose singlets become the records.
-  [PASS] CRUX: base-SU(3)-vs-fiber-SU(2) gauging is NOT forced by records/locality/links  (each symmetry admits the tested variant/invariant structure on its own link carrier)
-
-  SHARPENING (the asymmetry makes the color residual MORE specific):
-  - a single qubit link-end (Qubit axiom, M_2(C)) carries SU(2)
-    intrinsically (Aut(M_2(C)) = SO(3)); fiber-SU(2) needs no extra dof.
-  - the framework's color-3 is Sym^2(C^2) of the (b1,b2) base PAIR;
-    gauging it on links requires the connection to carry the base-pair
-    SYMMETRIC color index = a specific 2-qubit assignment.
-  [PASS] framework color-3 = Sym^2(C^2) of base pair (dim 3 = N_c), not a single qubit (dim 2)  (color index lives in the symmetric square of two base qubits)
-  => the matter-realization residual is therefore not merely a 'pick a
-     symmetry' coin flip; for COLOR it specifically requires assigning
-     quarks to the base-pair symmetric block AND routing that color
-     index onto the links -- a structured matter+connection choice that
-     records + locality + the link/Gauss-law structure do not supply
-     (cf. #2679: a bare qubit link gives su(2), not su(3)).
-
-  The remaining selector is the ASSIGNMENT 'quarks occupy the 3D
-  symmetric base block as the fundamental 3 (color), and the gauge
-  connection carries that color index on the links'. That assignment
-  is the matter-realization residual (which subsystem the matter
-  occupies). It is NOT delivered by records + locality + the links.
-
-  (narration, not scored) per the axiom memo: Qubit supplies no gauge
-  group and Record supplies no arbitrary observable identification, so
-  the matter-realization residual is not supplied by records+locality.
+Two chosen carriers admit the tested endpoint-invariance profiles.
+  [PASS] two supplied carriers admit the tested variant/invariant profile  (each symmetry admits the tested variant/invariant structure on its own link carrier)
 
 ------------------------------------------------------------------------------------
-PART 4: residual ledger -- the bridge = [#2667 half] + [named residual]
+SCOPE
 ------------------------------------------------------------------------------------
-Bridge('symmetric-base -> physical-color') decomposes as:
-
-  (a) #2667 HALF (genuine algebraic identity, verified above):
-      gauge group = commutant of the record-invariance generators.
-      GIVEN 'the records are the color singlets', the gauged group is
-      the base SU(3). [Parts 1b, 2 PASS.]
-
-  (b) RESIDUAL (open, NOT supplied by the record axiom):
-      WHICH local symmetry's singlets are the physical records, i.e.
-      the assignment of quarks to the 3D-symmetric-base fundamental 3
-      with the color index living on the links. = the MATTER
-      REALIZATION residual. [Part 3 CRUX: not forced.]
-
-  Reconciliation with the flagged boundary: the framework's notes
-  (CL3_COLOR_AUTOMORPHISM, CL3_SU3_SYMMETRIC_BASE..., baryon/meson
-  singlet notes) all defer EXACTLY (b) -- 'the identification of the
-  3D symmetric base with physical SM color SU(3)_c'. #2667 supplies
-  (a) but NOT (b); the deferred bridge IS the residual (b).
-  [PASS] (a) verified: commutant identity holds for the color singlets
-  [PASS] (b) named: residual = matter realization (which symmetry's singlets are records)
-
-  (narration, not scored) the framework's color notes defer
-  'symmetric-base = physical color', i.e. residual (b), not (a).
-
-------------------------------------------------------------------------------------
-VERDICT
-------------------------------------------------------------------------------------
-Record axiom (#2667 +#2711) supplies the gauge-from-record-invariance
-HALF of the symmetric-base -> physical-color bridge (a genuine
-algebraic identity on the explicit C^8 carrier), but NOT the full
-bridge: the residual -- WHICH local symmetry is gauged / quarks in the
-fundamental-3 / the matter-realization residual -- is open,
-not forced. base-SU(3)-vs-fiber-SU(2) gauging is NOT discriminated by
-records/locality/links. This is PARTIAL-PINNING, not a derivation of
-color. The framework's 'the bridge is the load-bearing boundary' flag
-is the residual (b); #2667 reduces the bridge to it but does not close it.
+Supplied base SU(3) and fiber SU(2) have different commutants.
+Meson and baryon projectors are invariant under the supplied color action.
+These projectors also admit scalar U(3) phases: no unique gauge-group converse.
+Sym^2(C^2) is a vector-space carrier; its inherited SU(2) action is spin one.
+An additional SU(3) action and its physical color interpretation remain choices.
+Link tests concern two chosen models, not all theories satisfying axioms.
 
 ------------------------------------------------------------------------------------
 SELF-CHECK SUMMARY
 ------------------------------------------------------------------------------------
-  peak RSS (best-effort): 67.5 MB  (cap 2048 MB)
-  SUMMARY: PASS=21 FAIL=0
+  peak RSS (best-effort): 59.5 MB  (cap 2048 MB)
+  SUMMARY: PASS=19 FAIL=0
 
 ----- stderr -----
 

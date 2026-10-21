@@ -226,6 +226,9 @@ def main():
                 e4 = max(e4, abs(Dm - pred).max())
     check('E4 closed form D_theta = lam s g + sin k [E1 (x+x) + E2 x x] reproduced by eigenphase finite differences of the explicit 4x4 U',
           e4 < 1e-8, f'max abs dev {e4:.1e} (random k, 3 points x 4 mass settings)')
+    Wi = W4('iso'); rowp = np.array([-np.sin(0.0 + np.arctan2(Wi.w.W[1], Wi.w.W[0])), np.cos(np.arctan2(Wi.w.W[1], Wi.w.W[0]))]) @ Wi.w.F[1:]
+    par = abs(abs(rowp @ np.array([-1, 1, -1, 1.0])) / (2 * np.linalg.norm(rowp)) - 1)
+    check('b_iso: the h row orthogonal to W is parallel to (-1,1,-1,1) (so hperp.h0 = O(k^6))', par < 1e-10, f'|cos - 1| = {par:.1e}, |row| = {np.linalg.norm(rowp):.5f}')
     # ------------------------------------------------------------------ continuum and O(a^2) scaling (numerical)
     print('   scaling: k = kappa n, theta = kappa mu; D_X = max_ij |T^BT/c - T^X| / max|T^X|, c = s^2 (registered) or lam^2 s^2 (secondary);')
     print('   slope = d log D / d log kappa on kappa in {0.08, 0.04, 0.02, 0.01}')

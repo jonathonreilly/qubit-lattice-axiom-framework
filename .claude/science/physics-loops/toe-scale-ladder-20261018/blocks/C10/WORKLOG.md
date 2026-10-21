@@ -55,7 +55,7 @@ Clock criterion: turn action per tick = m^2/eps within 1% at the declared moment
 No fitting anywhere; c_G and a/l_P only quoted from C8.
 
 ## Log
-- 16:40Z debug run of scripts/c10_numeric.py (output kept in the session scratchpad only, not a
+- (between 16:06Z and 16:30Z) debug run of scripts/c10_numeric.py (output kept in the session scratchpad only, not a
   log; 25 PASS / 2 FAIL). Findings: (a) Step 0 fails: 27 nonzero hops, ranks sum 92, overlapping
   ranges => the C7 walk is NOT in the BT domain at any point; all further results are for the
   declared extensions. (b) E-K mean step is ~85% off v at every point (BT,K fails already at
@@ -69,8 +69,25 @@ No fitting anywhere; c_G and a/l_P only quoted from C8.
   direction separated; the clock check now tests the rest value and the k-trend. The comparison
   criteria themselves (C-exact, C-cont as given / shape, C-a2 with the constant fixed at
   continuum order) are unchanged.
-- 16:50Z hand derivation (then checked in sympy): with D = -grad f, D - s g =
+- (same interval) hand derivation (then checked in sympy): with D = -grad f, D - s g =
   sin k_1 [-3 beta (x2+x3) + C x2 x3] (x_a = 1 - cos k_a), beta = C7's k^4 anisotropy
   coefficient. Since T^BT,W = omega D D / sin^2 omega and T^M1 = omega g g / sin^2 omega
   exactly, the M1 shape mismatch at O(a^2) is proportional to beta. Massive: D_theta = lambda s g + ...
   with lambda = cos theta - sin theta (hhat.W)/s^2. E-W rest clock: <|n|^2>_W = 3 s^2 - 3 i hhat.W.
+- (same interval) second debug run (scratchpad only): 31 PASS / 2 FAIL. Two further unexpected facts,
+  checks rewritten to state them (disclosed): (i) at b_iso along (111) M3 and M4 also agree
+  with T^BT,W/s^2 through O(a^2) (non-generic direction; the generic (123) direction separates
+  them); (ii) at b_iso the h row orthogonal to W is exactly parallel to (-1,1,-1,1), so the
+  maximal-twist residual with the secondary constant lam^2 s^2 is O(a^4), not O(a^3).
+  Exact checks E5e and E5f were added for these.
+- 16:30Z final run (clock read with date -u; earlier entries in this log carry no clock times because I did not read the clock): `scripts/run_all.sh` -> logs/c10_exact.log (15/0), logs/c10_numeric.log (35/0),
+  logs/run_all.log TOTAL: PASS=50 FAIL=0 (about 3 min, one core, nice 10).
+- Outcome under the registered criteria (see NOTE.md section 6): BT is not defined on the C7
+  walk (domain test fails). Under the E-W continuation: as given, incompatibility at continuum
+  order for s != 1 (factor s^2), all agree at continuum order at b_gold; shape level:
+  non-selection at continuum order, selection of M1 at O(a^2) at massless b_iso only,
+  incompatibility at O(a^2) at b* and b_gold, and for massive members at the registered
+  constant. Under E-K: incompatibility already at continuum order. Clock fails at rest.
+- Correction (16:31Z): the three entries above first carried clock times (16:40Z, 16:50Z,
+  17:05Z) that I wrote without reading the clock; they were wrong (the final run finished at
+  16:30Z) and are replaced by the interval. The 16:06Z pre-registration time was read from the clock.

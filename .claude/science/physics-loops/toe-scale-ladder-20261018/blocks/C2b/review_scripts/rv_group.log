@@ -1,0 +1,20 @@
+PASS |B4| = 384
+PASS |O| = 24
+PASS 16 cosets
+orders: [24, 48, 48, 48, 96, 192, 384]
+PASS exactly 7 subgroups contain O
+|H|= 24 proper=True mixes_t=False has_T=diag(-1,1,1,1):False some t->-t:False nS=2 nA=0 nF=3 F2inv=True FFt_inv=True sufficient=False
+|H|= 48 proper=False mixes_t=False has_T=diag(-1,1,1,1):False some t->-t:False nS=2 nA=0 nF=2 F2inv=True FFt_inv=False sufficient=False
+|H|= 48 proper=False mixes_t=False has_T=diag(-1,1,1,1):True some t->-t:True nS=2 nA=0 nF=2 F2inv=True FFt_inv=False sufficient=False
+|H|= 48 proper=True mixes_t=False has_T=diag(-1,1,1,1):False some t->-t:True nS=2 nA=0 nF=3 F2inv=True FFt_inv=True sufficient=False
+|H|= 96 proper=False mixes_t=False has_T=diag(-1,1,1,1):True some t->-t:True nS=2 nA=0 nF=2 F2inv=True FFt_inv=False sufficient=False
+|H|=192 proper=True mixes_t=True has_T=diag(-1,1,1,1):False some t->-t:True nS=1 nA=0 nF=2 F2inv=True FFt_inv=True sufficient=True
+|H|=384 proper=False mixes_t=True has_T=diag(-1,1,1,1):True some t->-t:True nS=1 nA=0 nF=1 F2inv=True FFt_inv=False sufficient=True
+PASS sufficient groups are exactly orders 192 and 384
+PASS order-192 group = det(+1) subgroup of B4 (proper hypercubic B4+)
+PASS <O, R_tx> = B4+ (order 192)
+PASS B4+ contains no pure time reflection diag(-1,1,1,1)
+PASS B4+ does contain t -> -t combined with a spatial flip (R_tx^2 = diag(-1,-1,1,1))
+PASS under B4+: F^2 and F Ftilde are the 2 invariants; nS=1, nA=0
+PASS no proper group of order < 192 has nS = 1
+TOTAL: PASS=11 FAIL=0

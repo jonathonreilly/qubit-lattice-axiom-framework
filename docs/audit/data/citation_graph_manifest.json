@@ -1,5 +1,5 @@
 {
- "edge_count": 16342,
+ "edge_count": 16333,
  "node_count": 7407,
  "nodes": {
   "3d_correction_master_note": {
@@ -9367,8 +9367,8 @@
    "out_degree": 11
   },
   "higgs_mass_s4_born_extension_bounded_note_2026-05-10_higgss4": {
-   "deps_hash": "26b747fca1c5",
-   "out_degree": 12
+   "deps_hash": "eee75613d48f",
+   "out_degree": 3
   },
   "higgs_mass_s4b_ewsb_selection_bounded_note_2026-05-10_s4bewsb": {
    "deps_hash": "1b276e1d4a2b",

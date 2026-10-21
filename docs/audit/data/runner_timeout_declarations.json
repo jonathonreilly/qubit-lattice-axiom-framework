@@ -1,450 +1,615 @@
 {
-  "schema_version": 1,
   "runners": {
-    "scripts/_frontier_loader.py": {
-      "source_sha256": "64ab743a7888d6eb32ff2d72ddab846633f49a818080f9c2d88330961c96d86f",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/canonical_plaquette_surface.py": {
-      "source_sha256": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/dm_leptogenesis_exact_common.py": {
-      "source_sha256": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/dm_thermal_average_sommerfeld_normalization.py": {
-      "source_sha256": "6f0cdf06535212b7eff5609cd5c1143a14f8b2690b91b68c52aa27c4e25d17b8",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_alpha_s_derived_bounded_chain.py": {
-      "source_sha256": "4d573811f07f392dd17f5ad4a84c4c0d131eeacd17caf5dcd742f6c810686276",
-      "timeout_sec": 900,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_bh_entropy_derived.py": {
-      "source_sha256": "9fe449b1e20ff2b6455cd1a592773fe80b58c813cb35724f0ce4e09e4ed679c4",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_bougerol_lacroix_staggered_blocking_lyapunov_bridge_no_go.py": {
-      "source_sha256": "5e7c79f0b4987156ffc0525590f8809d23eb6573256615c7a4490e86c27df79f",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.py": {
-      "source_sha256": "bb7a810dece37fb661d2c2274171ff01d8277c2b824d06375cb6a647656130c4",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_ckm_down_type_scale_convention_support.py": {
-      "source_sha256": "3d922cc99109cbd5426f66c50d24b422a5446519c8bcd5bb49d9c0423acfaf38",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_ckm_five_sixths_bridge_support.py": {
-      "source_sha256": "261772bf8b7406ab2347a47f7a6a590b494df6e74b067b5d0297a07478d135bb",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_coarse_grained_exterior_law.py": {
-      "source_sha256": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_complete_prediction_chain.py": {
-      "source_sha256": "e5abb0dd1735111a5ed5cd8ac3069ba66a3c6c59715ec59b4565b1c7ef87f446",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_cosmology_from_mass_spectrum.py": {
-      "source_sha256": "0935d6144172aec8a209ec8513a6b5976160ea0de290068834caa3c9a415f4e1",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_discrete_dtn_shell_kernel.py": {
-      "source_sha256": "31cb89f1b161de258503a6a91f5c2334d041099f0f135df0aeb7078520bc0d31",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_dm_eta_freezeout_bypass_quantitative_theorem.py": {
-      "source_sha256": "280cf0c11826eb37fbc8931cd450b5a13d90bcfce2f588392cc820988b51baf4",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_dm_live_constants_canonical_edge_2026_06_18.py": {
-      "source_sha256": "a3ffc6a4188f5b89d280718131a0649effc63aa26fae4f11dcea33e5e0d7b48d",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_dm_su3_gauge_loop_derivation_attempt.py": {
-      "source_sha256": "78637ad32e0e8879d1d739b2883d67f078e437d994681f83f972b2bbdc7778df",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_finite_rank_gravity_residual.py": {
-      "source_sha256": "29879ef1f2407e7916522a2ad9f5409dce7d5acdc0692b2d5f98fcc42c513f7d",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_flux_fixed_matching_theorem.py": {
-      "source_sha256": "3ea379ef8f2642858772e3017e06a90784651f0ceb27d540d06622e5940df95d",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_g_bare_derivation.py": {
-      "source_sha256": "4dad4b220fc4e40cb0babe324be9313b91e0aa3b60ebb6347809eba38bd91828",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_hierarchy_ew_vev_observable_identification_bridge.py": {
-      "source_sha256": "3cda6c27d952d64b7fc84ac65d33f42231b4d18eea060e676062eb710ac5e0b5",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_hierarchy_formula_honest_status.py": {
-      "source_sha256": "9907401d908e18ec696b66b6cd4e6e8340a74c292c156ff370c208838b46ab48",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py": {
-      "source_sha256": "eef1f16c506c9b5a132db51fb251978e35e0fe50aee8c5664384836166dc64b7",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py": {
-      "source_sha256": "a5cedba72987cc5090801ef105ebbb9a138138a2a367a1360b7e4b1f0413977e",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_mass_ratio_ckm_dual.py": {
-      "source_sha256": "631fa51e583ff084b03610176a994e04c373bdd547db00d088f283729278f588",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_mass_ratio_up_sector.py": {
-      "source_sha256": "4f8907237a1c0e38a30eed57d43b5f1cad2028068744967f4cf9077ab9c9733c",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_microscopic_dirichlet_bridge_principle.py": {
-      "source_sha256": "18ebfab7a135966a29a2df9ca62378203224a8c2fec6c854e58beb702f954b4e",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_oh_schur_boundary_action.py": {
-      "source_sha256": "e8e375a14f750162e6bbed56c51bf91473538b428dd333f5d491a16f9753c891",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_one_parameter_reduced_shell_law.py": {
-      "source_sha256": "d6e71ec16da2c52c9515360c136c724d75029ca212171922a40fbc014e05e40e",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py": {
-      "source_sha256": "55020114ec83ccf1b61e6d167aaaed0b67dda356542fa363d79f5b2b4f81c791",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_plaquette_self_consistency_finite_mc_repair.py": {
-      "source_sha256": "37344fb91b19020e08adbc1319a6f69aa451e1d9f1fc832dc9f16230677fca7e",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_pmns_tm2_column_site_basis_kcpt_predicate.py": {
-      "source_sha256": "a5bf14b2a6503b321f8f7e8060e1e9271aec2ec04f2c70f73ff487af81f98b8a",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_quark_endpoint_readout_constraints.py": {
-      "source_sha256": "c14fdbb559c280b35bdd0ee8cb6b61d67ecbd8c60039015691ffa987cea4673e",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_quark_five_sixths_scale_selection_boundary.py": {
-      "source_sha256": "0380f599cee1f118358dae43d1b619d8dd486c6ad8303c3004184cb9798022b3",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_quark_generation_stratified_ward_free_matrix_no_go.py": {
-      "source_sha256": "811cef980de177a55ff6f8d25c3d5b32477afbb546554b5ef04bee67d2209702",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_quark_mass_ratios_taste_staircase_support.py": {
-      "source_sha256": "edba53e97b2d3e9b5eb63becf3de28e97356ea541d32b106937ff1c725688046",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_quark_route2_exact_readout_map.py": {
-      "source_sha256": "e4356c7079bca9a0ded2259d0f49cf9461bc16ba7e09cf688c78de3a56e2328a",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_quark_route2_honest_gravity_metric_rhoe_characterization.py": {
-      "source_sha256": "f9ff0cde85dd76d143dffeff15b40d8982bf4faced37959bf01872876fff699a",
-      "timeout_sec": 600,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_quark_route2_rhoe_floor_family_size_parametrized_ladder.py": {
-      "source_sha256": "d3389a6b68859b44d1fe0f7ef8817045ab8a040074fb90b3896d51c7d3c5d707",
-      "timeout_sec": 600,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_radial_shell_matching_law.py": {
-      "source_sha256": "0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_s3_time_theta_to_slice_coupling.py": {
-      "source_sha256": "f70fef79df8b93e0f472e85f3377ed12ba273c9d32dc82692c69b700e3a54a22",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_same_source_metric_ansatz_scan.py": {
-      "source_sha256": "cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_sewing_shell_source.py": {
-      "source_sha256": "982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_sigma_hier_uniqueness_theorem.py": {
-      "source_sha256": "fa68d56412f3e244bca4f2f49705a40bd4591285d9b4cd21da41197d0271f5e0",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_star_shell_projector.py": {
-      "source_sha256": "843aadd321c8795087a75fc4c9fd439ad7040c7c4d65e14be9d1a90658b5d952",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_tensor_boundary_drive_two_channel.py": {
-      "source_sha256": "966053ec7eef614d46776a72f70da1c9c9a7b9188942340ed1bfaf6f1d4d6721",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_tensor_universal_kernel.py": {
-      "source_sha256": "6633ff45feebad69a60a4da2e652432b2d8a0286dc29004cf23bd65cb75ca07b",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_tensorial_einstein_regge_completion.py": {
-      "source_sha256": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_universal_shell_profile.py": {
-      "source_sha256": "34d892020e314f3edb0e7d10bc515fccfb2dbb2bf90f7c7421324c09dcc16d15",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/frontier_yt_bottom_yukawa_retention.py": {
-      "source_sha256": "388598df7554ac08603b90be8b9bdb16c631f87792d5b867118511dae04b1846",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/koide_circulant_character_derivation_check_2026_06_09.py": {
-      "source_sha256": "0920711f580406efabc10d054fc63918a27dbfdb499aa311c18e19cfa67cd54b",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/lepton_brannen_boundary_checks_2026_06_13.py": {
-      "source_sha256": "d016e0e77651b3803adaae76644ce1a2e38f2e1525ffaf421f2b51126b766cdf",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/pmns_tm2_magic_residual_dynamical_generator_runner.py": {
-      "source_sha256": "396d64b36468b95010ae1c1c4ca55981883f82b647a2c3556a74c0fb9fc649f5",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/pmns_tm2_trimaximal_from_record_central_sector_runner.py": {
-      "source_sha256": "900746c3fbc549f765e636b199ca5b67df2fbf1f02c055aee47b778fc2453128",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
-    "scripts/theta13_is_c3_doublet_breaking_sqrt2_charged_lepton_runner.py": {
-      "source_sha256": "0f7e39ac75165280d7de925e99caf18d2db2459ad1ede891aa17d7ac0ede5960",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
-    },
     "scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py": {
+      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science.",
       "source_sha256": "539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091",
-      "timeout_sec": 120,
-      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science."
+      "timeout_sec": 120
     },
     "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py": {
+      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science.",
       "source_sha256": "3b9111df0ce6dc81dfd1002cfb5097e84f7c3bb68e593d21530b68a08c9d44ab",
-      "timeout_sec": 120,
-      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science."
+      "timeout_sec": 120
     },
     "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py": {
+      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science.",
       "source_sha256": "551c91c17688b785c9bf8d26f05a1bf977e4edd831b00402ad3150b8369c0b9e",
-      "timeout_sec": 120,
-      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science."
+      "timeout_sec": 120
+    },
+    "scripts/_frontier_loader.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "64ab743a7888d6eb32ff2d72ddab846633f49a818080f9c2d88330961c96d86f",
+      "timeout_sec": 120
+    },
+    "scripts/canonical_plaquette_surface.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
+      "timeout_sec": 120
     },
     "scripts/codex_audit_runner.py": {
+      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science.",
       "source_sha256": "919a0b8f8526c92d0d9527aed929e1af99a7dd5106fb4d8137aefba112400c7a",
-      "timeout_sec": 120,
-      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science."
+      "timeout_sec": 120
     },
-    "scripts/frontier_lensing_exponent_is_dipole_crossover.py": {
-      "source_sha256": "c74642de0751b1b3a4d9ac6add804d2d0805340cf07498adb4dd40c973262e62",
-      "timeout_sec": 120,
-      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science."
+    "scripts/dm_leptogenesis_exact_common.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41",
+      "timeout_sec": 120
     },
-    "scripts/frontier_lensing_h025_source_packet_manifest_2026_06_09.py": {
-      "source_sha256": "4b45340a4fd85c2f231b67c71eee1cf86c19cd1301de4fc7cf7137bcde11f020",
-      "timeout_sec": 120,
-      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science."
+    "scripts/dm_thermal_average_sommerfeld_normalization.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "6f0cdf06535212b7eff5609cd5c1143a14f8b2690b91b68c52aa27c4e25d17b8",
+      "timeout_sec": 120
     },
-    "scripts/gate_b_nonlabel_connectivity_v1.py": {
-      "source_sha256": "3b4279cc1e3c8121c3cfb60663e276d509f292d06420a2eeb6014bfcd5d70e5f",
-      "timeout_sec": 120,
-      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science."
+    "scripts/frontier_alpha_s_derived_bounded_chain.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "4d573811f07f392dd17f5ad4a84c4c0d131eeacd17caf5dcd742f6c810686276",
+      "timeout_sec": 900
     },
-    "scripts/lensing_adjoint_kernel_reduced_model.py": {
-      "source_sha256": "d9ff59274d5fad3e94d82029239463fe034eeb66725702911224051e62354566",
-      "timeout_sec": 120,
-      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science."
+    "scripts/frontier_bh_entropy_derived.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "9fe449b1e20ff2b6455cd1a592773fe80b58c813cb35724f0ce4e09e4ed679c4",
+      "timeout_sec": 120
     },
-    "scripts/runner_cache.py": {
-      "source_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
-      "timeout_sec": 120,
-      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science."
+    "scripts/frontier_bougerol_lacroix_staggered_blocking_lyapunov_bridge_no_go.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "5e7c79f0b4987156ffc0525590f8809d23eb6573256615c7a4490e86c27df79f",
+      "timeout_sec": 120
     },
-    "scripts/ring_matched_population_kernel_2026_09_27.py": {
-      "source_sha256": "b0acac7225015e3d93f90216ee2942d578e644f28bff3656454d94f9d8108b0e",
-      "timeout_sec": 120,
-      "reason": "Explicit bounded invocation cap for the imported matched-population kernel helper. The full numerical experiment is executed only by its separately declared 14400-second primary; source changes invalidate this helper declaration."
+    "scripts/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "bb7a810dece37fb661d2c2274171ff01d8277c2b824d06375cb6a647656130c4",
+      "timeout_sec": 120
     },
-    "scripts/scalar_dynamical_covariance.py": {
-      "source_sha256": "af688b94f90de2532df5a3544bbacce25b72e474ebc59465b15d6ebb26db4707",
-      "timeout_sec": 180,
-      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    "scripts/frontier_ckm_down_type_scale_convention_support.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "3d922cc99109cbd5426f66c50d24b422a5446519c8bcd5bb49d9c0423acfaf38",
+      "timeout_sec": 120
     },
-    "scripts/scalar_dynamical_domains.py": {
-      "source_sha256": "bafe3ab7ef0018206d7d9c5718f8742ef9bd96034460c160b75b2218425cd25f",
-      "timeout_sec": 180,
-      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    "scripts/frontier_ckm_five_sixths_bridge_support.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "261772bf8b7406ab2347a47f7a6a590b494df6e74b067b5d0297a07478d135bb",
+      "timeout_sec": 120
     },
-    "scripts/scalar_dynamical_extensions.py": {
-      "source_sha256": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a",
-      "timeout_sec": 180,
-      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    "scripts/frontier_coarse_grained_exterior_law.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+      "timeout_sec": 120
     },
-    "scripts/scalar_dynamical_forward.py": {
-      "source_sha256": "82af18303934e233162a69ff22110ec1d4fc0c705db1b07cda6ca1c5100916d4",
-      "timeout_sec": 180,
-      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    "scripts/frontier_complete_prediction_chain.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "e5abb0dd1735111a5ed5cd8ac3069ba66a3c6c59715ec59b4565b1c7ef87f446",
+      "timeout_sec": 120
     },
-    "scripts/scalar_dynamical_geometry.py": {
-      "source_sha256": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
-      "timeout_sec": 180,
-      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
-    },
-    "scripts/scalar_projected_forward.py": {
-      "source_sha256": "83761632bef726dd562bb8f323f8d14714487862dfa3bdf702e59835dbd56b08",
-      "timeout_sec": 180,
-      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
-    },
-    "scripts/scalar_projected_geometry.py": {
-      "source_sha256": "2fbd617ee2fc1609a690b5beeaa46411935f915469aa45053e4bb030e87515ac",
-      "timeout_sec": 180,
-      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
-    },
-    "scripts/scalar_projected_weak.py": {
-      "source_sha256": "c17b18247147d6962a06f3160715413c622c00961e91ff44761a82919d04d227",
-      "timeout_sec": 180,
-      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
-    },
-    "scripts/scalar_unequal_geometry.py": {
-      "source_sha256": "fcc8997fed4d410dd5ccb711ad8f7d3654be7fc80789b403c965a48e191a273e",
-      "timeout_sec": 180,
-      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
-    },
-    "scripts/scalar_unequal_sampling.py": {
-      "source_sha256": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a",
-      "timeout_sec": 180,
-      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
-    },
-    "scripts/scalar_physical_curvature_action.py": {
-      "source_sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
-      "timeout_sec": 180,
-      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
-    },
-    "scripts/scalar_physical_curvature_geometry.py": {
-      "source_sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768",
-      "timeout_sec": 180,
-      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
-    },
-    "scripts/scalar_physical_lapse.py": {
-      "source_sha256": "b7e4d8e64d1f92d38e3faa418c3604a52c144cf9ab8867fc097984f5b8f89efa",
-      "timeout_sec": 180,
-      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
-    },
-    "scripts/scalar_full_field_metric.py": {
-      "source_sha256": "63ac20cfe19f3e0e681ace4714434f58fef50c82fe5ad95a282d0a9e79268a21",
-      "timeout_sec": 120,
-      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration."
-    },
-    "scripts/scalar_vacuum_metric_weak.py": {
-      "source_sha256": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583",
-      "timeout_sec": 180,
-      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration."
-    },
-    "scripts/scalar_vacuum_metric_inverse.py": {
-      "source_sha256": "696e8e3dbf2481446563a1f313b24a35ea1b72c6d869953c64beca99cb8d07c4",
-      "timeout_sec": 180,
-      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration."
-    },
-    "scripts/scalar_observation_inverse_math.py": {
-      "source_sha256": "6c363eb9087e84f932c5ec12964257cb92470daaa51b107f4f0c0d35a2b30c44",
-      "timeout_sec": 120,
-      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration."
-    },
-    "scripts/ringdown_action_math.py": {
-      "source_sha256": "834c82d633c4653a7feb6b05ecb28871e9c70364f5a7203f31accf7167f786df",
-      "timeout_sec": 120,
-      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration."
-    },
-    "scripts/scalar_history_inverse_math.py": {
-      "source_sha256": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b",
-      "timeout_sec": 120,
-      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration."
-    },
-    "scripts/structural_coefficient_box_check_2026_10_17.py": {
-      "source_sha256": "b112819693da02966e23f153f4d2725e4fa472021b2af606a8ea709ed605e1df",
-      "timeout_sec": 60,
-      "reason": "Explicit 60-second helper cap, matching preserved historical child wall limits (weighted helper includes independent 60-second check); shared primary remains subject to its own cap. Hash-bound sidecar preserves original helper bytes."
-    },
-    "scripts/product_seed_emitter_installed_2026_10_17.py": {
-      "source_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
-      "timeout_sec": 60,
-      "reason": "Explicit 60-second helper cap, matching preserved historical child wall limits (weighted helper includes independent 60-second check); shared primary remains subject to its own cap. Hash-bound sidecar preserves original helper bytes."
-    },
-    "scripts/product_seed_emitter_local_2026_10_17.py": {
-      "source_sha256": "c567cfeaaddff24d9f59d70e99a7d59cb324e389a10d18db04e46a173407f25e",
-      "timeout_sec": 60,
-      "reason": "Explicit 60-second helper cap, matching preserved historical child wall limits (weighted helper includes independent 60-second check); shared primary remains subject to its own cap. Hash-bound sidecar preserves original helper bytes."
-    },
-    "scripts/product_seed_emitter_weighted_2026_10_17.py": {
-      "source_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
-      "timeout_sec": 60,
-      "reason": "Explicit 60-second helper cap, matching preserved historical child wall limits (weighted helper includes independent 60-second check); shared primary remains subject to its own cap. Hash-bound sidecar preserves original helper bytes."
+    "scripts/frontier_cosmology_from_mass_spectrum.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "0935d6144172aec8a209ec8513a6b5976160ea0de290068834caa3c9a415f4e1",
+      "timeout_sec": 120
     },
     "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py": {
+      "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change.",
       "source_sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
-      "timeout_sec": 300,
-      "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
+      "timeout_sec": 300
+    },
+    "scripts/frontier_discrete_dtn_shell_kernel.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "31cb89f1b161de258503a6a91f5c2334d041099f0f135df0aeb7078520bc0d31",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_dm_eta_freezeout_bypass_quantitative_theorem.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "280cf0c11826eb37fbc8931cd450b5a13d90bcfce2f588392cc820988b51baf4",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_live_constants_canonical_edge_2026_06_18.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "a3ffc6a4188f5b89d280718131a0649effc63aa26fae4f11dcea33e5e0d7b48d",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "26be65c14f41b944294a8c6636324cdf865df7ab08580565c4783c589dd7381c",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "10061fd219064353a68bef3c0c348bf84e9a83ead67c9783da9f4ad2de5d646e",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "83d978eacf3c919b0153a8268e3881f5cc266619e8afa26da61cba533c2d09d0",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "11ee73d73372c30698e05decdeee3cf8d101b4805b44026f34fbd07f145509cd",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_neutrino_postcanonical_polar_section.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "6c09503cbccf1b3a109332c965041248a79fa025fa36bcb8f755b851efe0c113",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "09dac7696be306d36073b01186ca238cd03cacaec9193808dae06cc3b1cd080a",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "f539b4aa3f6da7cc83bb653316a9e98981f89f23cec7cdc00a40a0d98ec33612",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "30862b9810bd34a9ba4a0848f03f9207c463a79fcde3b6c8e0a193b8e1a6c2b1",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "4694e84fb6e82dc704f2c39e4a7e70016850feb2becfd9a89128672da5445c70",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "3467693b9aadc4f1a06b41424442a4701a6c02c97603267be4ff0874c437f765",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_pmns_graph_first_ordered_chain_nonzero_current_closure_2026_04_21.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "f67bb82016ab682a96b04d91152f40fccea85cb63ac51741a6512a68a5199aa0",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_pmns_upper_octant_source_cubic_selector_theorem_2026_04_20.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "9b3931063a84ff2ee2edb6eb9bc20296a1ec1dfbe65af841f96cf445110cf364",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_su3_gauge_loop_derivation_attempt.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "78637ad32e0e8879d1d739b2883d67f078e437d994681f83f972b2bbdc7778df",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_dm_wilson_direct_descendant_projected_source_branch_discriminant_theorem_2026_04_18.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "8a1a9ec84159c97ddb9a73cbce44288bdf61e5fe5cf72689c9e47e24cc689d49",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "e4504c7a25e82ffab2224ddeedf50b3ca98caabe5de4f395694198ce6255514b",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_finite_rank_gravity_residual.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "29879ef1f2407e7916522a2ad9f5409dce7d5acdc0692b2d5f98fcc42c513f7d",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_flux_fixed_matching_theorem.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "3ea379ef8f2642858772e3017e06a90784651f0ceb27d540d06622e5940df95d",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_g_bare_derivation.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "4dad4b220fc4e40cb0babe324be9313b91e0aa3b60ebb6347809eba38bd91828",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_graph_first_selector_derivation.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "81437e80194eecc2aedac1cf541a29c464dc0edfc4c2452fda5b86cad313fc98",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_graph_first_su3_integration.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "d6a4d0a631b91dca9350689476b8e180b0f8d32033564c4da239ad2b8557ff58",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_hierarchy_ew_vev_observable_identification_bridge.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "3cda6c27d952d64b7fc84ac65d33f42231b4d18eea060e676062eb710ac5e0b5",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_hierarchy_formula_honest_status.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "9907401d908e18ec696b66b6cd4e6e8340a74c292c156ff370c208838b46ab48",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "eef1f16c506c9b5a132db51fb251978e35e0fe50aee8c5664384836166dc64b7",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_lensing_exponent_is_dipole_crossover.py": {
+      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science.",
+      "source_sha256": "c74642de0751b1b3a4d9ac6add804d2d0805340cf07498adb4dd40c973262e62",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_lensing_h025_source_packet_manifest_2026_06_09.py": {
+      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science.",
+      "source_sha256": "4b45340a4fd85c2f231b67c71eee1cf86c19cd1301de4fc7cf7137bcde11f020",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "a5cedba72987cc5090801ef105ebbb9a138138a2a367a1360b7e4b1f0413977e",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_mass_ratio_ckm_dual.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "631fa51e583ff084b03610176a994e04c373bdd547db00d088f283729278f588",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_mass_ratio_up_sector.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "4f8907237a1c0e38a30eed57d43b5f1cad2028068744967f4cf9077ab9c9733c",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_microscopic_dirichlet_bridge_principle.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "18ebfab7a135966a29a2df9ca62378203224a8c2fec6c854e58beb702f954b4e",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_oh_schur_boundary_action.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "e8e375a14f750162e6bbed56c51bf91473538b428dd333f5d491a16f9753c891",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_one_parameter_reduced_shell_law.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "d6e71ec16da2c52c9515360c136c724d75029ca212171922a40fbc014e05e40e",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "55020114ec83ccf1b61e6d167aaaed0b67dda356542fa363d79f5b2b4f81c791",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_plaquette_self_consistency_finite_mc_repair.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "37344fb91b19020e08adbc1319a6f69aa451e1d9f1fc832dc9f16230677fca7e",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_pmns_active_four_real_source_from_transport.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "4142d1a974e63b4fdf54d17f681cd13962cca9879dddd6d7929b37b961a65d7c",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_c3_character_holonomy_closure.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "4dd04278f97f2c7aeda15dd40feb3b2fbf364d7f90625c62c00e35dc8f639386",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_c3_character_mode_reduction.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "54e5995ee6954dbe50e8d98a337d05a86981faa691a0937882569f977fb060eb",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_c3_nontrivial_current_boundary.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "c99b06838c5895163c35dbfcb74ed710d0f1d6324ecf307c0b5b1f0515f27fda",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_current_bank_value_selection_nogo.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "32b86d7a76453cae5b8aaa79dbe3a25df62450b1b74f703aad5032e4be502ed0",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_graph_first_cycle_frame_support.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "6bab808d772216952c6038347f5fefd6f506f49918b98b4a50422cec19a24e9f",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_lower_level_end_to_end_closure.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "b02c46d593c30a3a667ac3c0467dba8893c5809d462fc7bb26853ba595d0c21e",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_oriented_cycle_channel_value_law.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "5a4c932c7b4112d20f04f1bfc66d9e703291c50ad885bba7bfd5dce4104e5765",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_oriented_cycle_reduced_channel_nonselection.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "163a57a9c3bc678bac88804f16a93aeba88ae19d89f4ebc347624f1261e7321c",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_oriented_cycle_selection_structure.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "7282c4adc33a2fa6a066b092b439465a8fd495c7eacfe3d382ab2837ff2b4bc9",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_sole_axiom_hw1_source_transfer_boundary.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "88427fc40716fec12b2cd5c051062cf28c483752de26f6344226a0041db0c5d4",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_theta23_upper_octant_chamber_closure_prediction.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "33d21b7393da80aad6813e31cde4802c6b96ede06779bdfca87a86d4367ed7e7",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_three_flux_holonomy_closure.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "7799f1478490913678be00c4e04ecd0374c7e087d4cafdca831d6dcbc1c940b4",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_tm2_column_site_basis_kcpt_predicate.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "a5bf14b2a6503b321f8f7e8060e1e9271aec2ec04f2c70f73ff487af81f98b8a",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "3d3b48a5974cfe452e92a60e6a66c25f7a852e8cff301d9f494a671959a7f47b",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_uniform_scalar_deformation_boundary.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "85a3244903d20e287a2ed493c58f249a0f6eaa2d43b789a6fa0b1e3e901e0d9f",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_quark_endpoint_readout_constraints.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "c14fdbb559c280b35bdd0ee8cb6b61d67ecbd8c60039015691ffa987cea4673e",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_quark_five_sixths_scale_selection_boundary.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "0380f599cee1f118358dae43d1b619d8dd486c6ad8303c3004184cb9798022b3",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_quark_generation_stratified_ward_free_matrix_no_go.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "811cef980de177a55ff6f8d25c3d5b32477afbb546554b5ef04bee67d2209702",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_quark_mass_ratios_taste_staircase_support.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "edba53e97b2d3e9b5eb63becf3de28e97356ea541d32b106937ff1c725688046",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_quark_route2_exact_readout_map.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "e4356c7079bca9a0ded2259d0f49cf9461bc16ba7e09cf688c78de3a56e2328a",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_quark_route2_honest_gravity_metric_rhoe_characterization.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "f9ff0cde85dd76d143dffeff15b40d8982bf4faced37959bf01872876fff699a",
+      "timeout_sec": 600
+    },
+    "scripts/frontier_quark_route2_rhoe_floor_family_size_parametrized_ladder.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "d3389a6b68859b44d1fe0f7ef8817045ab8a040074fb90b3896d51c7d3c5d707",
+      "timeout_sec": 600
+    },
+    "scripts/frontier_radial_shell_matching_law.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_s3_time_theta_to_slice_coupling.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "f70fef79df8b93e0f472e85f3377ed12ba273c9d32dc82692c69b700e3a54a22",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_same_source_metric_ansatz_scan.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_sewing_shell_source.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_sigma_hier_uniqueness_theorem.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "fa68d56412f3e244bca4f2f49705a40bd4591285d9b4cd21da41197d0271f5e0",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_star_shell_projector.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "843aadd321c8795087a75fc4c9fd439ad7040c7c4d65e14be9d1a90658b5d952",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_tensor_boundary_drive_two_channel.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "966053ec7eef614d46776a72f70da1c9c9a7b9188942340ed1bfaf6f1d4d6721",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_tensor_universal_kernel.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "6633ff45feebad69a60a4da2e652432b2d8a0286dc29004cf23bd65cb75ca07b",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_tensorial_einstein_regge_completion.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_universal_shell_profile.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "34d892020e314f3edb0e7d10bc515fccfb2dbb2bf90f7c7421324c09dcc16d15",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_yt_bottom_yukawa_retention.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "388598df7554ac08603b90be8b9bdb16c631f87792d5b867118511dae04b1846",
+      "timeout_sec": 120
+    },
+    "scripts/gate_b_nonlabel_connectivity_v1.py": {
+      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science.",
+      "source_sha256": "3b4279cc1e3c8121c3cfb60663e276d509f292d06420a2eeb6014bfcd5d70e5f",
+      "timeout_sec": 120
+    },
+    "scripts/koide_circulant_character_derivation_check_2026_06_09.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "0920711f580406efabc10d054fc63918a27dbfdb499aa311c18e19cfa67cd54b",
+      "timeout_sec": 120
+    },
+    "scripts/lensing_adjoint_kernel_reduced_model.py": {
+      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science.",
+      "source_sha256": "d9ff59274d5fad3e94d82029239463fe034eeb66725702911224051e62354566",
+      "timeout_sec": 120
+    },
+    "scripts/lepton_brannen_boundary_checks_2026_06_13.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "d016e0e77651b3803adaae76644ce1a2e38f2e1525ffaf421f2b51126b766cdf",
+      "timeout_sec": 120
+    },
+    "scripts/pmns_lower_level_utils.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "173bc6d96d2640f742e13fa915d5db141adccd5c4819d10833868f042846a583",
+      "timeout_sec": 300
+    },
+    "scripts/pmns_tm2_magic_residual_dynamical_generator_runner.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "396d64b36468b95010ae1c1c4ca55981883f82b647a2c3556a74c0fb9fc649f5",
+      "timeout_sec": 120
+    },
+    "scripts/pmns_tm2_trimaximal_from_record_central_sector_runner.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "900746c3fbc549f765e636b199ca5b67df2fbf1f02c055aee47b778fc2453128",
+      "timeout_sec": 120
+    },
+    "scripts/product_seed_emitter_installed_2026_10_17.py": {
+      "reason": "Explicit 60-second helper cap, matching preserved historical child wall limits (weighted helper includes independent 60-second check); shared primary remains subject to its own cap. Hash-bound sidecar preserves original helper bytes.",
+      "source_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+      "timeout_sec": 60
+    },
+    "scripts/product_seed_emitter_local_2026_10_17.py": {
+      "reason": "Explicit 60-second helper cap, matching preserved historical child wall limits (weighted helper includes independent 60-second check); shared primary remains subject to its own cap. Hash-bound sidecar preserves original helper bytes.",
+      "source_sha256": "c567cfeaaddff24d9f59d70e99a7d59cb324e389a10d18db04e46a173407f25e",
+      "timeout_sec": 60
+    },
+    "scripts/product_seed_emitter_weighted_2026_10_17.py": {
+      "reason": "Explicit 60-second helper cap, matching preserved historical child wall limits (weighted helper includes independent 60-second check); shared primary remains subject to its own cap. Hash-bound sidecar preserves original helper bytes.",
+      "source_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
+      "timeout_sec": 60
+    },
+    "scripts/ring_matched_population_kernel_2026_09_27.py": {
+      "reason": "Explicit bounded invocation cap for the imported matched-population kernel helper. The full numerical experiment is executed only by its separately declared 14400-second primary; source changes invalidate this helper declaration.",
+      "source_sha256": "b0acac7225015e3d93f90216ee2942d578e644f28bff3656454d94f9d8108b0e",
+      "timeout_sec": 120
+    },
+    "scripts/ringdown_action_math.py": {
+      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration.",
+      "source_sha256": "834c82d633c4653a7feb6b05ecb28871e9c70364f5a7203f31accf7167f786df",
+      "timeout_sec": 120
+    },
+    "scripts/runner_cache.py": {
+      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science.",
+      "source_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "timeout_sec": 120
+    },
+    "scripts/scalar_dynamical_covariance.py": {
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration.",
+      "source_sha256": "af688b94f90de2532df5a3544bbacce25b72e474ebc59465b15d6ebb26db4707",
+      "timeout_sec": 180
+    },
+    "scripts/scalar_dynamical_domains.py": {
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration.",
+      "source_sha256": "bafe3ab7ef0018206d7d9c5718f8742ef9bd96034460c160b75b2218425cd25f",
+      "timeout_sec": 180
+    },
+    "scripts/scalar_dynamical_extensions.py": {
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration.",
+      "source_sha256": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a",
+      "timeout_sec": 180
+    },
+    "scripts/scalar_dynamical_forward.py": {
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration.",
+      "source_sha256": "82af18303934e233162a69ff22110ec1d4fc0c705db1b07cda6ca1c5100916d4",
+      "timeout_sec": 180
+    },
+    "scripts/scalar_dynamical_geometry.py": {
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration.",
+      "source_sha256": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+      "timeout_sec": 180
+    },
+    "scripts/scalar_full_field_metric.py": {
+      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration.",
+      "source_sha256": "63ac20cfe19f3e0e681ace4714434f58fef50c82fe5ad95a282d0a9e79268a21",
+      "timeout_sec": 120
+    },
+    "scripts/scalar_history_inverse_math.py": {
+      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration.",
+      "source_sha256": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b",
+      "timeout_sec": 120
+    },
+    "scripts/scalar_observation_inverse_math.py": {
+      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration.",
+      "source_sha256": "6c363eb9087e84f932c5ec12964257cb92470daaa51b107f4f0c0d35a2b30c44",
+      "timeout_sec": 120
+    },
+    "scripts/scalar_physical_curvature_action.py": {
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration.",
+      "source_sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "timeout_sec": 180
+    },
+    "scripts/scalar_physical_curvature_geometry.py": {
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration.",
+      "source_sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768",
+      "timeout_sec": 180
+    },
+    "scripts/scalar_physical_lapse.py": {
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration.",
+      "source_sha256": "b7e4d8e64d1f92d38e3faa418c3604a52c144cf9ab8867fc097984f5b8f89efa",
+      "timeout_sec": 180
+    },
+    "scripts/scalar_projected_forward.py": {
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration.",
+      "source_sha256": "83761632bef726dd562bb8f323f8d14714487862dfa3bdf702e59835dbd56b08",
+      "timeout_sec": 180
+    },
+    "scripts/scalar_projected_geometry.py": {
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration.",
+      "source_sha256": "2fbd617ee2fc1609a690b5beeaa46411935f915469aa45053e4bb030e87515ac",
+      "timeout_sec": 180
+    },
+    "scripts/scalar_projected_weak.py": {
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration.",
+      "source_sha256": "c17b18247147d6962a06f3160715413c622c00961e91ff44761a82919d04d227",
+      "timeout_sec": 180
+    },
+    "scripts/scalar_unequal_geometry.py": {
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration.",
+      "source_sha256": "fcc8997fed4d410dd5ccb711ad8f7d3654be7fc80789b403c965a48e191a273e",
+      "timeout_sec": 180
+    },
+    "scripts/scalar_unequal_sampling.py": {
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration.",
+      "source_sha256": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a",
+      "timeout_sec": 180
+    },
+    "scripts/scalar_vacuum_metric_inverse.py": {
+      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration.",
+      "source_sha256": "696e8e3dbf2481446563a1f313b24a35ea1b72c6d869953c64beca99cb8d07c4",
+      "timeout_sec": 180
+    },
+    "scripts/scalar_vacuum_metric_weak.py": {
+      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration.",
+      "source_sha256": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583",
+      "timeout_sec": 180
+    },
+    "scripts/structural_coefficient_box_check_2026_10_17.py": {
+      "reason": "Explicit 60-second helper cap, matching preserved historical child wall limits (weighted helper includes independent 60-second check); shared primary remains subject to its own cap. Hash-bound sidecar preserves original helper bytes.",
+      "source_sha256": "b112819693da02966e23f153f4d2725e4fa472021b2af606a8ea709ed605e1df",
+      "timeout_sec": 60
+    },
+    "scripts/theta13_is_c3_doublet_breaking_sqrt2_charged_lepton_runner.py": {
+      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+      "source_sha256": "0f7e39ac75165280d7de925e99caf18d2db2459ad1ede891aa17d7ac0ede5960",
+      "timeout_sec": 120
     }
-  }
+  },
+  "schema_version": 1
 }

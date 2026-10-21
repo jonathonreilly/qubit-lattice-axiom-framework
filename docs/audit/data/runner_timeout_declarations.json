@@ -472,7 +472,7 @@
       "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
     },
     "scripts/cl3_c_iso_su3_nlo_2026_05_08_su3nlo.py": {
-      "source_sha256": "4226676cecb16de88a3a405816f47b7f7c8ad381078a6d412431fb9cb41cb8d0",
+      "source_sha256": "ee5d8f35090eab421798f5754808d143e06608b9282373c59c1d7078a2a8e306",
       "timeout_sec": 300,
       "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
     },

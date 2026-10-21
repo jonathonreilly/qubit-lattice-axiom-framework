@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/one_qubit_tick_update_covariance_limits_2026_10_21.py
+runner_sha256: 2bdfd6a92af2f315ec248568b1da63eaa524471aaf89996077a61e5994ccc539
+input_fingerprint_sha256: a7812fa1b67470985fc883a94c85007d6cb97548fce0dffe37188738bbf211e1
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.02
+status: ok
+----- stdout -----
+[PASS] (1) unitarity of the covariant nearest-neighbour ansatz: the c_x c_y coefficient 8|b|^2 and the c_x^2 coefficient 4|b|^2 - 4|c|^2 must vanish, so b = c = 0  c_x c_y coefficient 8*(bi**2 + br**2); c_x^2 coefficient 4*(bi**2 + br**2 - ci**2 - cr**2)
+[PASS] (1b) the ansatz is covariant under all 24 rotations for arbitrary complex a, b, c  24/24
+[PASS] (2) split-step update: spectrum invariant under 12 of 24 rotations, operator covariant under 4  spectrum 12/24, operator 4/24
+[PASS] (3) a same-site chirality mass gaps k=0 but not the cone at k=(pi/2)(1,1,1)  gap at 0: 0.10000; at (pi/2)(1,1,1): 9.2e-19
+per_site: one qubit per site, translation invariance, nearest-neighbour range (for 1), the spin-1/2 rotation action and the substep order are the stated hypotheses.
+lattice_wide: no no-go beyond these hypotheses, matter content or physical identification is established.
+elapsed_seconds 0.9
+
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

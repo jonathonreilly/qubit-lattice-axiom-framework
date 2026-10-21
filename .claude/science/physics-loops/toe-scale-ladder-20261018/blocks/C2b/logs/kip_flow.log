@@ -1,0 +1,10 @@
+PASS [exact] beta_eta(eta = 1) = 0 identically in e: the KI+ point is an exact fixed point of the one-loop flow
+PASS [exact] linearisation d delta/dl = -e**2/(2*pi**2) delta = -(2 alpha/pi) delta (C2 value, alpha = e^2/4pi)
+PASS [numerical] delta_UV = 0 (KI+ at the cutoff) stays 0 over l = 51.0: delta_IR = 0.0e+00
+  delta_UV = 1e-06 -> delta_IR = 7.8129e-07, ratio 0.78129
+  delta_UV = 1e-03 -> delta_IR = 7.8128e-04, ratio 0.78128
+PASS [numerical] small-mismatch IR/UV ratio 0.7813 matches C2 value 0.781 to 1e-3
+  illustrative KI+_w threshold: C = 0.3, eps = 0.05: delta_th ~ 8.7e-06 -> delta_IR ~ 6.8e-06  (vs illustrative bound 1e-15: excess factor 7e+09)
+  illustrative KI+_w threshold: C = 0.3, eps = 1.0: delta_th ~ 1.7e-04 -> delta_IR ~ 1.4e-04  (vs illustrative bound 1e-15: excess factor 1e+11)
+PASS [numerical (illustrative)] a KI+_w-only threshold of the toy size exceeds a 1e-15 bound by > 1e8 even for eps = 0.05
+TOTAL: PASS=5 FAIL=0

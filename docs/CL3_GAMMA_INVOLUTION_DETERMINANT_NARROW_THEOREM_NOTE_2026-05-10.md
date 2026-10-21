@@ -31,14 +31,18 @@ Then:
   (so `M · γ(M) = γ(M) · M = det(M) · I_2`).
 
 - **Gamma-norm determinant identity.** For all `M ∈ M_2(C)`,
-  the scalar (grade-0 / identity-coefficient) component of `M · γ(M)`
+  the complex central coefficient of `M · γ(M)`
   is `det(M)`:
 
   ```text
-  ⟨M · γ(M)⟩_0  =  det(M)         (so |M · γ(M)| = det(M) · I_2).
+  c(M · γ(M))  =  det(M)
   ```
 
-  Equivalently, the **γ-norm** `|M|_γ := √|⟨M · γ(M)⟩_0|` satisfies
+  Here `c(z I_2) := z`. In the real Clifford grading, the grade-zero
+  component is instead `Re(det(M))`; the imaginary component multiplies
+  the pseudoscalar `ω = i I_2`.
+
+  Equivalently, the **γ-norm** `|M|_γ := √|c(M · γ(M))|` satisfies
 
   ```text
   |M|_γ  =  √|det(M)|.
@@ -47,29 +51,24 @@ Then:
 - **Gamma grade-action identity.** In the
   positive-chirality Pauli realisation
   `(I_2, σ_1, σ_2, σ_3, σ_1σ_2, σ_1σ_3, σ_2σ_3, ω = σ_1σ_2σ_3 = i I_2)`
-  of `Cl(3,0) ⊗_R C`, the γ-involution `γ(M) = σ_2 M^T σ_2` acts as
+  of the real algebra `Cl(3,0)`, the γ-involution `γ(M) = σ_2 M^T σ_2` acts as
   `+id` on `I_2` and `ω`, and as `-id` on the vector and bivector
   grades: `γ(σ_i) = -σ_i` (`i = 1, 2, 3`) and `γ(σ_iσ_j) = -σ_iσ_j`
-  (`i ≠ j`). This grade pattern is the **antiautomorphic transpose**
-  of the standard reversion: reversion preserves identity and vector
+  (`i ≠ j`). This is **Clifford conjugation**, the composition of grade involution
+  with reversion: reversion preserves identity and vector
   grades and flips bivector and pseudoscalar grades, while γ
   preserves identity and pseudoscalar grades and flips vector and
-  bivector grades. Either is a valid `M_2(C)` involution; this note
-  records the specific γ-involution `γ(M) = σ_2 M^T σ_2`.
+  bivector grades. Reversion corresponds to Hermitian conjugation in this real Pauli
+  algebra and is conjugate-linear over its complex center. It does not
+  satisfy the adjugate determinant identity.
 
-- **Full-lattice determinant-readout boundary.**
-  The γ-norm determinant identity gives the γ-norm of a **single**
-  `Cl(3) ≅ M_2(C)`
-  element as the square root of its determinant. It is **NOT** an
-  identity for the framework's full staggered-Dirac determinant
-  `|det(D + J)|`, which is a determinant of a `2 N_taste L_t L_s³ × 2
-  N_taste L_t L_s³` matrix acting on the lattice tensor-product space
-  `(Cl(3))^{⊗ sites} ⊗ Z⁴`. The per-determinant geometric-mean readout
-  `v(L_t) ∝ |det(D + J)|^{1/(N_taste · L_t)}` admitted by
-  `HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md`
-  §4.3 is **not** derived from the per-element identity. The relation between the
-  per-element γ-norm and the lattice determinant readout is recorded
-  here only as a boundary statement, not as a closure.
+- **Full-lattice determinant-readout boundary.** For an N by N matrix A,
+  det(t A) = t^N det(A). Thus |det(A)|^(1/N) has degree one under positive
+  rescaling, whereas the supplied exponent 1/(N_taste L_t) has degree
+  N/(N_taste L_t). For N = 2 N_taste L_t L_s^3 this is 2 L_s^3,
+  not one. A reduced determinant or additional normalization would need
+  to be specified and justified. The single-particle carrier is a direct
+  sum of internal fibers over sites, not the many-qubit tensor product.
 
 The three identities above are abstract finite-dimensional complex
 matrix-algebra statements about `M_2(C) ≅ Cl(3,0)`. The final item is
@@ -140,16 +139,18 @@ then gives `M · γ(M) = γ(M) · M = det(M) · I_2`. ∎
 
 ### 5.2 Gamma-norm determinant identity
 
-From the cofactor identity, `M · γ(M) = det(M) · I_2`, so the scalar
-(identity-coefficient) part is `⟨M · γ(M)⟩_0 = det(M)`. The γ-norm
-defined as `|M|_γ := √|⟨M · γ(M)⟩_0|` is therefore
+From the cofactor identity, `M · γ(M) = det(M) · I_2`, so the complex central
+coefficient is `c(M · γ(M)) = det(M)`. The γ-norm
+defined as `|M|_γ := √|c(M · γ(M))|` is therefore
 
 ```text
 |M|_γ  =  √|det(M)|.
 ```
 
-For `M = c · I_2` (scalar in the identity grade), `det(M) = c²`, so
-`|M|_γ = |c|`. For invertible `M`, `|M|_γ > 0`. ∎
+For `M = c · I_2` (a complex central element), `det(M) = c²`, so
+`|M|_γ = |c|`. For invertible `M`, `|M|_γ > 0`. The term “γ-norm” names this
+readout only: it is not a vector-space norm, since it vanishes on
+nonzero singular matrices. ∎
 
 ### 5.3 Gamma action by grade on the Pauli realisation
 
@@ -176,8 +177,8 @@ for `i = 1, 3`). `σ_2` is purely imaginary and anti-symmetric:
 ```
 
 Hence `γ(σ_i) = -σ_i` for `i = 1, 2, 3` and `γ(I_2) = I_2`. By
-linearity over `C`, `γ` acts as `-id` on the vector grade
-`Span_C(σ_1, σ_2, σ_3)` and as `+id` on the identity grade. For
+real linearity, `γ` acts as `-id` on the vector grade
+`Span_R(σ_1, σ_2, σ_3)` and as `+id` on the identity grade. For
 bivectors with `i ≠ j`, use the antiautomorphic property of γ
 (from the transpose):
 
@@ -211,60 +212,30 @@ In summary, on the 8-element Cl(3) basis
 `(I_2, σ_1, σ_2, σ_3, σ_1σ_2, σ_1σ_3, σ_2σ_3, ω)`, γ acts with
 signs `(+, -, -, -, -, -, -, +)`, preserving identity and
 pseudoscalar grades and flipping vector and bivector grades. This
-is the **antiautomorphic transpose involution** restricted to the
-Pauli realisation. It differs from reversion (which preserves
+is **Clifford conjugation** in the real Pauli algebra. It differs from reversion (which preserves
 identity and vector grades and flips bivector and pseudoscalar
-grades) in the grading pattern; both are valid `M_2(C)` involutions
-with `|M|_γ² = det(M)` (this norm-identity follows from the
-symplectic-adjoint identity and is independent of the per-grade sign
-pattern). ∎
+grades). The determinant identity is specific to γ; its nonnegative
+readout satisfies `|M|_γ² = |det(M)|`. For example, reversion fixes
+`M = I_2 + σ_3 = diag(2,0)`, so `M rev(M) = diag(4,0)` whereas
+`det(M) I_2 = 0`. Also `M = (1+i)I_2` gives determinant `2i`: its
+real grade-zero product component is zero, while its complex central
+coefficient is `2i`. ∎
 
-### 5.4 Per-element vs full-lattice readout boundary
+### 5.4 Full determinant homogeneity and carrier boundary
 
-The γ-norm determinant identity gives the γ-norm of a single
-`Cl(3) ≅ M_2(C)`
-element. The framework's per-determinant geometric-mean readout
+Let A be an N by N matrix whose entries scale as mass, and t > 0. By
+multilinearity in the N columns, det(t A)=t^N det(A), including singular A.
+Hence |det(A)|^(1/N) scales as mass. Likewise det(A†A)^(1/(2N)) has degree
+one. This elementary scaling identity does not select either observable.
 
-```text
-v(L_t)  ∝  |det(D + J)|^{1/(N_taste · L_t)}
-```
-
-(admitted by
-`HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md`
-§4.3) extracts a mass-dim-1 scale from a high-dimensional lattice
-determinant of `D + J : (C²)^{⊗ N_sites} ⊗ C^{taste} ⊗ C^{spinor}
-→ (C²)^{⊗ N_sites} ⊗ C^{taste} ⊗ C^{spinor}`. The exponent
-`1/(N_taste · L_t)` is the **reciprocal of the per-spatial-corner
-mode count**, not the `1/2` factor produced by the per-element
-γ-norm.
-
-Specifically, three structurally distinct factors enter this readout:
-
-1. **mass-dim conversion.** `|det(D + J)|` has mass-dim equal to the
-   total dimension of `D` (each eigenvalue has mass-dim 1); to read a
-   mass-dim-1 scale, one takes the geometric-mean reciprocal power.
-2. **mode count.** The exponent `1/(N_taste · L_t)` is the reciprocal
-   of the per-spatial-corner mode count at `L_s = 2`. This count is a
-   lattice-block fact, not a Cl(3)-algebra fact.
-3. **square-root sub-choice.** Whether to read eigenvalues of `D` or
-   eigenvalues of `D†D` (giving a `1/2` factor) is a separate
-   convention (heat-kernel note §4.3 discusses both choices and
-   notes the framework's bilinear-selector closure uses the
-   `D`-eigenvalue convention; cf. eq (10) of that note).
-
-None of (1)-(3) is forced by the per-element γ-norm identity.
-The Cl(3) γ-involution structure provides the `√det` identity on
-single `Cl(3) ≅ M_2(C)` elements, but the lattice determinant
-`|det(D + J)|` is a determinant on a **tensor-product** space, and
-its `1/(N_taste · L_t)`-th power is a per-mode geometric-mean readout
-governed by lattice-block dimensional analysis, not by per-element
-γ-norm.
-
-This is the boundary of the γ-norm identity's applicability. The
-boundary records it explicitly so that the per-determinant readout
-admission in the heat-kernel note is **not** mis-read as following
-from the per-element identity.
-∎
+For a single-particle lattice operator, the carrier is ⊕_sites C^d,
+equivalently C^(N_sites) ⊗ C^d, with N=d N_sites. It is distinct from the
+many-body tensor product ⊗_sites C^d of dimension d^(N_sites). A Fock lift
+requires its own definition. For the stated N=2 N_taste L_t L_s^3,
+|det(A)|^(1/(N_taste L_t)) has degree 2 L_s^3. It is not a mass-dimension-one
+geometric mean of the full determinant. The supplied readout in the linked
+heat-kernel note needs an explicit reduced determinant or normalization;
+that bridge is open and is not implied by the 2 by 2 gamma identity.
 
 ## 6. What this note does NOT claim
 
@@ -308,23 +279,11 @@ from the per-element identity.
 
 ## 8. Open derivation gap
 
-The step from the per-element γ-norm identity `|M|_γ = √|det(M)|` on
-`M_2(C)` to "the framework's per-determinant geometric-mean readout
-`v(L_t) ∝ |det(D + J)|^{1/(N_taste · L_t)}` is forced by Cl(3) γ-norm
-structure" is **not** closed by this note. The boundary records this
-explicitly. The gap is `(1)` the mass-dim conversion from a tensor-
-product lattice determinant to a per-mode geometric-mean scale, and
-`(2)` the reciprocal-mode-count exponent `1/(N_taste · L_t)`, neither
-of which is a per-element `Cl(3)` algebra fact.
-
-Closing this gap (i.e., retiring the per-determinant geometric-mean
-readout admission in the heat-kernel note) is the open work of a
-future bounded theorem; possible paths include zeta-regularization on
-the tensor-product space, structural derivation of `N_taste = 2^D`
-from the staggered-Dirac realization gate, or an independent
-heat-kernel argument tighter than the current
-Stefan-Boltzmann-source-lineage support. None of these is undertaken
-here.
+A physical readout, a specific single-particle operator, its determinant
+normalization and any reduction of mode count must be supplied or derived
+separately. The full determinant scaling in §5.4 already fixes its degree;
+it cannot be changed by naming the supplied exponent a geometric mean.
+The exact 2 by 2 identity establishes no physical mass or hierarchy closure.
 
 ## 9. Validation
 
@@ -337,7 +296,7 @@ matrices:
    `σ_2 · M^T · σ_2 = adj(M)` entrywise.
 2. **Gamma-norm determinant identity.** For symbolic `M`,
    `M · γ(M) = det(M) · I_2` entrywise and
-   `⟨M · γ(M)⟩_0 = det(M)`.
+   `c(M · γ(M)) = det(M)`.
 3. **Numerical γ-norm.** For ten random `M ∈ M_2(C)` (rational + i ·
    rational entries), verify `|M|_γ = √|det(M)|` exactly.
 4. **Vector-grade action.** `γ(σ_i) = -σ_i` for `i = 1, 2, 3`
@@ -348,16 +307,21 @@ matrices:
    `ω = σ_1 σ_2 σ_3 = i · I_2` in the positive-chirality realisation.
 7. **Full-lattice readout boundary.** Construct a `4 × 4` block-diagonal "lattice"
    matrix `D_lat = M_1 ⊕ M_2` with two `M_i ∈ M_2(C)`. Show that
-   `|det(D_lat)|^{1/2}` (the "geometric-mean readout at `N_modes = 2`")
+   `|det(D_lat)|^{1/2}` (a degree-two product, not a degree-one full geometric mean)
    equals `|det(M_1) · det(M_2)|^{1/2}` (a per-element-product fact),
-   which is NOT the same as `|M_1|_γ + |M_2|_γ` or any other per-element
-   γ-norm combination. This is a numerical witness that per-element
-   γ-norm does not produce the per-determinant readout.
-8. **γ-involution as composition.** Verify the equivalent
-   reversion-and-grading-automorphism decomposition on the Cl(3) basis
+   which equals the product `|M_1|_γ |M_2|_γ`. A separate coupled-block
+   example shows that this factorization need not hold when hopping is
+   present; neither example selects a physical determinant exponent.
+8. **γ grade signs.** Verify the Clifford-conjugation signs on the real Cl(3) basis
    `(I_2, σ_1, σ_2, σ_3, σ_1σ_2, σ_1σ_3, σ_2σ_3, ω)`.
 
-Expected output: `PASS=N FAIL=0` with `N ≥ 30`.
+10. **General scaling controls.** Exact N by N determinant homogeneity for N=2,3,4, including a coupled and a singular matrix, and the false degree-one square-root counterexample at N=4.
+
+9. **Distinguishing counterexamples.** Check reversion versus adjugate,
+   and complex central coefficient versus real grade-zero component.
+
+The summary counts test groups, not individual identities; successful
+execution reports `FAIL=0` and exits zero.
 
 ## 10. Cross-references
 

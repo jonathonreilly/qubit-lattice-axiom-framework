@@ -17,9 +17,9 @@ Tier B-C on existing record-dynamics scaffolding; the literal atomic-gas
 targets (7D–7E) are Tier C and gated by Lane 2.
 **Primary closure targets:** a derived equilibrium (Gibbs / maximum-entropy)
 record-ensemble for a closed lattice region; temperature as a derived intensive
-parameter conjugate to the additive Record readout; an H-theorem-style monotone
+parameter conjugate to the supplied additive record readout; an H-theorem-style monotone
 approach to that equilibrium for a lattice-excitation gas; and pressure as a
-finitely-additive Record readout over wall-collision records.
+finitely-supplied additive record readout over wall-collision records.
 **First parallel-worker target:** on an explicit small closed lattice region
 (mirroring the 6-qubit exact construction in
 `ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`),
@@ -27,11 +27,13 @@ identify the stationary record-ensemble and test whether it is the
 maximum-entropy state subject to the additive readout `I`, with temperature
 read off as the conjugate Lagrange multiplier.
 **Non-claim boundary:** this lane does NOT derive the past hypothesis, does NOT
-derive record-production dynamics from the three axioms, and does NOT promote
+derive record-production dynamics from the four axioms (Lattice, Qubit, Admissibility, Record), and does NOT promote
 any imported thermal bridge (Sommerfeld average, Stefan–Boltzmann `g*` bridge)
 beyond its existing bounded status. The low-record/low-entropy boundary remains
 a named open residual, not an approved admission, Tier-A item, primitive,
 axiom, or accepted premise.
+
+**Premise boundary:** Finite additivity is a supplied model condition on the readout functional, absent from the current Record axiom. Deriving a physical extensive functional remains open. Historical milestone labels below do not change current audit status.
 
 ## 1. Missing-science framing
 
@@ -86,9 +88,8 @@ is the framework-side work.
   of the initial condition.
 - Born rule / `I_3 = 0` — DERIVED (supplies the within-sector outcome weights
   the equilibrium ensemble needs).
-- `AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01` — a matter
-  second law `δS_matter ≥ 0` under unital evolution, *direction-relative* to
-  the low-entropy initial.
+- `AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01` — corrected conditional
+  entropy bookkeeping; its former exterior-entropy/GSL proof is withdrawn.
 - `dispersion_relation_note` (retained_bounded) — free propagation / kinetic
   energy of a lattice excitation.
 
@@ -137,17 +138,18 @@ is the framework-side work.
 
 **Target:** show that the stationary record-ensemble of a closed lattice region
 under record-forming dynamics is the maximum-entropy (Gibbs) state subject to
-the additive Record readout `I`. Use the nonselective ensemble object
+the supplied additive record readout `I`. Use the nonselective ensemble object
 `sum_r K_r ρ K_r^*` from the classicalization firewall (§4) as the ensemble
-layer, and the generalized-second-law monotonicity to identify the stationary
-point as the entropy maximizer.
+layer. Establish appropriate dynamics and a monotone functional before
+identifying a stationary point as an entropy maximizer; the corrected GSL
+note supplies no such theorem.
 
 **Approachability:** Tier B-C. Tractable first on the explicit small-region
 construction; the general-region statement is Tier C.
 
 ### 7B. H-theorem / monotone approach to equilibrium
 
-**Target:** strengthen the *direction-relative* `δS_matter ≥ 0` into a
+**Target:** derive, for an explicitly specified dynamics and state class,
 quantitative monotone relaxation of a free / weakly-interacting lattice-
 excitation gas toward the 7A equilibrium, with an explicit relaxation
 functional. Must remain modulo the past-hypothesis boundary (7F).
@@ -159,7 +161,7 @@ functional. Must remain modulo the past-hypothesis boundary (7F).
 **Target:** define temperature as the parameter conjugate to the additive
 Record readout `I` (energy-count) at the 7A maximum-entropy state — the
 Lagrange multiplier of the constrained entropy maximization. This is where the
-**Record axiom's finite additivity (extensivity) meets an intensive
+**supplied finite additivity (extensivity), which is not a Record-axiom consequence, meets an intensive
 equilibrium parameter**: `I` is extensive over disjoint record collections, and
 its conjugate is intensive. Verify it behaves as a thermometer reading (zeroth
 law: transitivity of equilibrium across a shared boundary).
@@ -169,7 +171,7 @@ law: transitivity of equilibrium across a shared boundary).
 ### 7D. Pressure as additive wall-collision record readout (the Feynman gas)
 
 **Target:** for a confined excitation gas, identify pressure as the finitely-
-additive Record readout `I` over wall-collision records, yielding an
+supplied additive record readout `I` over wall-collision records, yielding an
 ideal-gas-law-shaped relation `PV ∝ (energy content)`. This is the literal
 Feynman Lecture 1 target: atoms drumming on the container wall.
 
@@ -215,7 +217,7 @@ claim to remove it.
   (bounded_theorem) — pre-/record/post-record typed surfaces; ensemble vs.
   realized-record distinction; unbounded recorded history.
 - [AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01.md](../../AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01.md)
-  — `δS_matter ≥ 0` under unital evolution (direction-relative).
+  — conditional entropy bookkeeping, not a derived relaxation theorem.
 - `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   — comparison only for how accepted inputs are governed; this lane does not
   register the past hypothesis there.
@@ -257,7 +259,7 @@ claim to remove it.
 - This lane does NOT derive the past hypothesis or a preferred low-entropy
   initial condition; the residual remains open (7F is a firewall, not a
   derivation or admission).
-- This lane does NOT derive record-production dynamics from the three axioms;
+- This lane does NOT derive record-production dynamics from the four axioms (Lattice, Qubit, Admissibility, Record);
   like the arrow note, it uses explicit record-forming models as stand-ins and
   keeps that gate open.
 - This lane does NOT claim to replace standard statistical mechanics; it aims to
@@ -272,7 +274,8 @@ claim to remove it.
 ## 7. Cross-references
 
 - Depends on: Born rule (derived), arrow-from-record (retained_bounded),
-  generalized second law, the classicalization firewall, decoherence Gate A.
+  the classicalization firewall, decoherence Gate A. The corrected generalized
+  entropy note is context only, not an available monotonicity theorem.
 - Gated by: Lane 2 (atomic scale) for the literal gas/pressure targets (7D–7E);
   Lane 2 in turn depends on Lanes 6 and 1.
 - Connects to: DM/cosmology thermal bridge rows (`g*`, leptogenesis thermal
@@ -291,8 +294,8 @@ claim to remove it.
 2. Should 7F remain only a named open residual, or should a future
    owner-approved proposal attempt to register it? No approval is granted by
    this lane.
-3. Is "pressure = finitely-additive Record readout over wall-collision records"
-   (7D) the right operationalization of the Record axiom's additivity, or is
+3. Is "pressure = finitely-supplied additive record readout over wall-collision records"
+   (7D) the right operationalization of the supplied additive functional, or is
    there a cleaner extensivity→intensivity bridge for temperature/pressure?
 4. Should this be Lane 7 in the active package, or a deferred follow-on, given
    it post-dates the original six-lane selection and its core (7A–7C) is

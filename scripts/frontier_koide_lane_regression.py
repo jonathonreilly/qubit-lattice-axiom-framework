@@ -80,6 +80,11 @@ def main() -> int:
             text=True,
             timeout=600,
         )
+        if result.returncode != 0:
+            print(f"  [FAIL] {script:<{max_name_len}}  (exit code {result.returncode})")
+            all_ok = False
+            continue
+
         # Extract "PASSED: X/Y" line
         passed_line = None
         for line in result.stdout.splitlines():
@@ -113,43 +118,8 @@ def main() -> int:
     print(f"TOTAL: {actual_total}/{EXPECTED_TOTAL}")
     if all_ok and actual_total == EXPECTED_TOTAL:
         print("VERDICT: all Koide-lane support runners pass. Support batch verified.")
-        print()
-        print("Support-batch summary:")
-        print("  - M_Pl, α_LM      : retained primitives")
-        print("  - (7/8)^(1/4)      : Stefan-Boltzmann fermion/boson (textbook)")
-        print("  - 16 = 2^4         : taste doublers in 4D staggered (structural)")
-        print("  - v_EW             : M_Pl · (7/8)^(1/4) · α_LM^16, PDG match 0.025%")
-        print("  - Z_3 (1, 2)       : structurally unique on V_3")
-        print("  - |η_AS| = 2/9     : ambient APS value fixed exactly")
-        print("  - zero-mode / APS  : strengthened candidate bridge to physical δ")
-        print("  - Brannen geometry : exact selected-line rotation / octahedral-domain")
-        print("                      support on the retained first branch")
-        print("  - finite-lattice   : explicit L=3 Wilson-Dirac descent illustration")
-        print("                      for the ambient 2/9 value")
-        print("  - C_τ = 1 route    : explicit radiative/Yukawa support calculation")
-        print("  - Q = 2/3 support  : exact identities, A1 audits, bridge candidates")
-        print("  - positive-parent, selected-line, and set-equality tools")
-        print("                      : added as support diagnostics and atlas tools")
-        print("  - pointed-origin    : exhaustion theorem shows origin-free retained data")
-        print("                      cannot select the closing representative")
-        print("  - objection review  : source-domain closure demoted to conditional")
-        print("                      support with explicit Q and delta residuals")
-        print("  - Q Z-erasure       : exact criterion K=0 <=> Z-erasure <=> Q=2/3")
-        print("                      on the admitted reduced carrier")
-        print("  - Q source domain   : onsite C3 scalar sources erase Z conditionally,")
-        print("                      but retained commutant/projected sources still admit Z")
-        print("  - Q descent         : unique trace-preserving onsite descent is diagonal")
-        print("                      compression and erases reduced Z modulo common scalar")
-        print("  - Q SO(2) erasure   : Brannen carrier gives Q=(c^2+2)/6,")
-        print("                      independent of scale and phase; support only")
-        print("  - A1/radian audit   : retained phase sources remain q*pi; Type-B")
-        print("                      rational-to-radian readout remains primitive")
-        print()
-        print("Open package status is unchanged:")
-        print("  - physical source-domain / source-free reduced-carrier selection behind Q = 2/3 remains open")
-        print("  - selected-line local boundary source plus based endpoint behind δ = 2/9 remains open")
-        print("  - Type-B rational-to-radian readout behind δ = 2/9 remains open")
-        print("  - overall scale lane v_0 remains separate support")
+        print("Each listed child exited zero and reported its expected PASSED count.")
+        print("These are subprocess outcomes; no physics claim, primitive, or audit status follows.")
         return 0
     else:
         print("VERDICT: regression has FAILs. Investigate specific runner(s) above.")

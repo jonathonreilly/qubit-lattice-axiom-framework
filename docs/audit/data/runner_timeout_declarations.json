@@ -445,6 +445,30 @@
       "source_sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
       "timeout_sec": 300,
       "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
+    },
+    "scripts/frontier_arrow_from_record_formation_2026_06_05.py": {
+      "source_sha256": "d1306f32dc634dded2c9263152084ffd2533cf3d0cb7bf7c29d635532de5b2a9",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_hubble_lane5_c1_cl4c_conditional_derivation_chain_construction.py": {
+      "source_sha256": "aeee7140fef69da6e5a6874a6d0b8985beea37d92f4136bb14a9ccb52cd7f6db",
+      "timeout_sec": 120,
+      "reason": "Bounded execution envelope for PR9839 repaired source. Frozen-star replay and full Koide batch remain unexecuted; cap is not evidence of success."
+    },
+    "scripts/frontier_cl3_gamma_involution_determinant_narrow.py": {
+      "source_sha256": "ed89fb465094f62b93c4c6d39ba44f2c22c226c8ed4bb488a79da1b572268205",
+      "timeout_sec": 120,
+      "reason": "Bounded execution envelope for PR9839 repaired source. Frozen-star replay and full Koide batch remain unexecuted; cap is not evidence of success."
+    },
+    "scripts/frontier_frozen_stars_rigorous.py": {
+      "source_sha256": "3907447780a9ec4593c45219337e5be4e6874b74d2bc799dfad9985b1ce7ea2e",
+      "timeout_sec": 1800,
+      "reason": "Bounded execution envelope for PR9839 repaired source. Frozen-star replay and full Koide batch remain unexecuted; cap is not evidence of success."
+    },
+    "scripts/frontier_koide_lane_regression.py": {
+      "source_sha256": "2bfe5518f2b8360c16065f22f696a3f7935b453773c46792b4e0da021474782f",
+      "timeout_sec": 1800,
+      "reason": "Bounded execution envelope for PR9839 repaired source. Frozen-star replay and full Koide batch remain unexecuted; cap is not evidence of success."
     }
   }
 }

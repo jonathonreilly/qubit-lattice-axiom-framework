@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26.py
-runner_sha256: 4105731d3bc78c486346d56001ba3a278218e6b0843c59cf961b2e0f214e944b
+runner_sha256: 7ce2734ae017bc69af1a80a1548409dbb64f5e3e07a030996c450ec990d79e8a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -176,10 +176,26 @@ Part 15: (C3-sanity) Volume element ω = Γ_1 Γ_2 Γ_3 Γ_4 properties
   [PASS (A)] (C3-sanity) {ω, Γ_4} = 0 (volume element anticommutes at n even)  (parity rule for even n)
 
 ----------------------------------------------------------------------------------------
+Even subalgebra: Cl^0(3,1) = Cl(3,0)
+----------------------------------------------------------------------------------------
+  [PASS (A)] even generators anticommutator (0,0)
+  [PASS (A)] even generators anticommutator (0,1)
+  [PASS (A)] even generators anticommutator (0,2)
+  [PASS (A)] even generators anticommutator (1,0)
+  [PASS (A)] even generators anticommutator (1,1)
+  [PASS (A)] even generators anticommutator (1,2)
+  [PASS (A)] even generators anticommutator (2,0)
+  [PASS (A)] even generators anticommutator (2,1)
+  [PASS (A)] even generators anticommutator (2,2)
+  [PASS (A)] even monomials have real rank 8
+  [PASS (A)] volume commutes with every even monomial
+  [PASS (A)] even complex structure squares to minus identity
+
+----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
 
-  PASS = 100
+  PASS = 112
   FAIL = 0
 
   Note path: CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26.md

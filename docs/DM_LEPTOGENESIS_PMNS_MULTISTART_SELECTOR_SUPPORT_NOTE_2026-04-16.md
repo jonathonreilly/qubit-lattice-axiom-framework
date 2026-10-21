@@ -161,3 +161,11 @@ sampled-multistart runner diagnostic only.
 ```bash
 python3 scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py
 ```
+
+## Explicit supplied dependency references (2026-10-21)
+
+These are the construction/diagnostic premises already named by this note,
+not new retained authorities. Numerical or failed diagnostics in them remain
+conditional; their status is not promoted by these links.
+
+- [DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md)

@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/block_tick_has_no_exact_copy_su2_and_only_a_sublattice_axial_remnant_2026_10_21.py
+runner_sha256: 0d2fefe8feedab30ee9f3a3ec2e233e4dc487bf426ebdc663087cd2b11d1609d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.84
+status: ok
+----- stdout -----
+== 0. supplied tick
+[PASS] Bloch form U(K) = D^dag W D W reproduces the 6^3 lattice spectrum (mu = 0.3)  8.9e-16
+== 1. Clifford structure and the block-local commutant
+[PASS] Gamma_1..6 = (gamma_a, i gamma_a tau_a), gamma_a = sqrt3 W_a: six anticommuting Hermitian involutions on C^8  7.3e-15
+[PASS] D(K)^dag gamma_a D(K) = cos K_a Gamma_a + sin K_a Gamma_(a+3): the tick is a product of two unit 6-vectors  8.5e-16
+[PASS] Gamma_1...Gamma_6 = i s eps, eps = (-1)^(x+y+z) sublattice parity, s = +-1  s = -1
+[PASS] mu = 0: K-independent commutant of {U(K)} has dim 2, = span{1, eps}  -> U(1)_V x U(1)_eps  dim 2
+[PASS] mu = 0.05, 0.3, 1.0: K-independent commutant = scalars  -> U(1)_V only  dims [1, 1, 1]
+[PASS] eps anticommutes with W and with the mass-free hop; eps W(mu) eps = -W(-mu)
+[PASS] rotations: L eps L^dag = +eps for E, C2face, C3 and -eps for C4, C2edge, so the commutant with rotations is scalars only  dim 1
+[PASS] pointwise commutant at one generic K is 32 = 16 + 16 (U(4) x U(4) on the two fourfold bands)  32
+[PASS] finite range: X_Y = sin^2(w) Y - (U - U^+) Y (U - U^+)/4 commutes for any block-local Y (range-1 conserved bilinears, no group)  1.3e-14
+== 2. continuum Dirac algebra read from the tick
+[PASS] U(0) = exp(i mu beta) with beta = (Gamma_1+Gamma_2+Gamma_3)/sqrt3 = W
+[PASS] alpha_a = sqrt3 dH/dK_a = i Gamma_(a+3) beta (speed 1/sqrt3)  8.3e-11
+[PASS] {alpha_a, alpha_b} = 2 delta, {alpha_a, beta} = 0: Dirac Clifford algebra Cl_4 = M_4
+[PASS] gamma5 = i alpha_1 alpha_2 alpha_3: Hermitian involution, commutes with alpha, anticommutes with beta
+[PASS] copy algebra = commutant of {beta, alpha}: dim 4 (= M_2)  -> C^8 = Dirac(4) x copy(2), emergent U(2)  dim 4
+[PASS] sigma3 := eps gamma5 lies in the copy algebra, s3^2 = 1, traceless
+[PASS] sigma1, sigma2, sigma3 obey the Pauli algebra and commute with beta, alpha  2.2e-15
+[PASS] massless continuum: commutant of {alpha} has dim 8 (= M_2 + M_2)  -> U(2)_L x U(2)_R on the copies  dim 8
+[PASS] lattice remnant eps = gamma5 sigma3: +1 on (L,copy+) and (R,copy-), -1 on (L,copy-) and (R,copy+): copy-nonsinglet axial
+== 3. how the lattice breaks the emergent copy symmetry
+   [sigma1, U(k)] mu=0.3: |k|=.02 8.29e-05, slope 2.00
+   [sigma2, U(k)] mu=0.3: |k|=.02 1.01e-04, slope 2.00
+   [sigma3, U(k)] mu=0.3: |k|=.02 1.44e-04, slope 2.00
+   [sigma3, U(k)] mu=0.0: |k|=.02 1.47e-04, slope 2.00
+   [P_L sigma1, U(k)] mu=0.0: |k|=.02 5.19e-05, slope 2.00
+   [P_L sigma3, U(k)] mu=0.0: |k|=.02 7.34e-05, slope 2.00
+   [P_L sigma1, U(k)] mu=0.3: |k|=.02 2.13e-01, slope -0.00
+[PASS] massive: copy generators sigma_1,2,3 are broken at O(k^2) (block-local; not exact)
+[PASS] massless: sigma3 is broken at O(k^2), while eps = gamma5 sigma3 is exact
+[PASS] massless: chiral generators P_L sigma_i are broken at O(k^2); massive: P_L sigma1 is broken at O(mu) (k -> 0 limit finite)  0.213
+[PASS] ||[P_L sigma1, U(0)]|| = sin(mu): the Dirac mass breaks SU(2)_L x SU(2)_R to SU(2)_V and breaks U(1)_eps  0.296
+== 4. rotations, inversion, particle-hole, species
+[PASS] L(R) U(K) L(R)^dag = U(RK) for the 24 spin-3/2 corner actions  3.6e-15
+[PASS] each rotation factorises as L(R) = S_spin1/2(R) rho(R), rho(R) in the copy U(2)
+   |tr rho| by class: {'E': [np.float64(2.0)], 'C2face': [np.float64(2.0)], 'C4': [np.float64(0.0)], 'C2edge': [np.float64(0.0)], 'C3': [np.float64(1.0)]}
+[PASS] copy doublet carries |chi| = (2, 2, 0, 1, 0) on (E, C2face, C4, C3, C2edge): the E irrep of O (factor S3 = axis permutations)
+[PASS] rho is irreducible: only scalars in the copy U(2) commute with all 24 rotations  dim 1
+[PASS] inversion: P U(K) = U(-K) P has a 1-dim block-local solution, |P| = corner inversion s -> 1-s  dim 1
+[PASS] P flips chirality (P gamma5 P^-1 = -gamma5) and eps: the matter content is L-R symmetric (vector-like)
+   particle-hole M U(K) = U(-K)^* M: solution dims mu=0: 2, mu=0.3: 1
+[PASS] particle-hole (Fock-space unitary c -> M c^dag): block-local M exists at mu = 0 and mu = 0.3  2, 1
+[PASS] species: w = 0 sector gapped by mu at K = 0 (2 Dirac copies); w = pi sector massless at K = pi(1,1,1), speed cos(mu/2)/sqrt3  0.5709
+[PASS] every band is exactly fourfold (no threefold degeneracy anywhere sampled)
+TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

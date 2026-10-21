@@ -115,4 +115,4 @@ Evidence:
   - the rung that sets G and the radian-for-radian unit;
   - the positive/negative frequency branch;
   - quantised bosonic links, which are forced by measured antibunching but not by the laws;
-  - the site carrier of the link phase, which needs Z_N with N >= 5 or a U(1) rotor beyond the one qubit. Zooming moves this cost into CL-3 as role-assigned sites but does not remove it.
+  - the site carrier of the link phase, which needs Z_N with N >= 5 or a U(1) rotor beyond the one qubit if the qubit stays the fermion mode. Read as flux instead, the qubits can carry an emergent Coulomb photon, but then a fermion is a neutral dipole rather than a charge. Zooming moves this cost into CL-3 as role-assigned sites but does not remove it.

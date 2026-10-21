@@ -1,85 +1,11 @@
 #!/usr/bin/env python3
-"""
-Selector the perturbative-uniqueness theorem: Perturbative-regime uniqueness theorem for the PMNS-as-f(H)
-chamber closure.
+"""Finite PMNS affine-matrix searches under supplied targets and inertia filter.
 
-Branch: (off ).
-
-Companion runner to the PMNS-closure theorem. the PMNS-closure theorem claimed the closure pin was a
-"unique chamber solution" under the hierarchy-pairing row permutation
-sigma_hier = (2, 1, 0). Adversarial scrutiny surfaced two issues:
-
- (Critical 1) A second in-chamber basin exists for sigma=(2,1,0) at
-        (m, delta, q_+) ~ (28.0, 20.7, 5.0), which also reproduces
-        the three observational angles at chi^2 < 1e-20 but gives
-        sin(delta_CP) = +0.554 (opposite sign to Basin 1).
-
- (Critical 2) A second hierarchy permutation sigma=(2,0,1) also admits an
-        in-chamber chi^2 = 0 basin at (m, delta, q_+) ~ (21, 12.7,
-        2.1) with sin(delta_CP) = -0.419, another opposite sign
-        prediction.
-
- (Serious 3) The chamber constraint q_+ + delta >= sqrt(8/3) fails for
-        certain values of sin^2 theta_23; in particular the lower
-        NuFit octant best-fit s23^2 ~= 0.445 falls OUTSIDE the
-        chamber. The closure is conditional on theta_23 upper
-        octant. This is a falsifiable retained structural
-        prediction, testable at JUNO / DUNE / Hyper-K.
-
-This runner tightens the PMNS-closure uniqueness story by:
-
- A. Demonstrating that IF one imposes the branch-choice admissibility rule
-   "the physical closure lies on the baseline-connected non-caustic
-   component of W[J] = log|det(H_base + J)|" (equivalently, Sylvester-
-   inertia preservation signature(H_base + J) = signature(H_base)),
-   THEN exactly one in-chamber chi^2=0 basin — Basin 1 at sigma=(2,1,0)
-   — is admissible.
-
- B. HONESTLY LABELLING that admissibility rule as an imposed branch-choice
-   principle, NOT a retained theorem. The function
-   W[J] = log|det(H_base + J)| is equally well-defined on any non-caustic
-   component of J-space; the statement that the physical closure must
-   stay on the baseline-connected component is NOT derived from retained
-   framework structure on this branch tip. It is flagged as an Option B
-   open item.
-
- C. Measuring the sharp s23^2 chamber-boundary threshold — the value
-   below which no chamber solution exists at the PDG central
-   (s12^2, s13^2).
-
- D. Locking the hierarchy-pairing + branch-choice combination as a
-   conditional admissibility rule pinned in place, not a retained
-   theorem-level uniqueness selector.
-
-Option-A honest-label revision after reviewer pass 5c70c15d: the earlier
-"retained inertia-preservation theorem" headline has been withdrawn; the
-selector statement is rewritten as a conditional admissibility principle.
-
-Retained inputs (all on ):
-
- - DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE
-  — exact affine chart H(m, delta, q_+) = H_base + m T_m + delta T_delta
-   + q_+ T_q
- - DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE
-  — the chamber q_+ >= sqrt(8/3) - delta
- - OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE
-  — scalar generator W[J] = log|det(D+J)| - log|det(D)| forced by
-   Grassmann additivity + CPT-even scalar bosonic observables
- - NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE
-  — q_H = 0 branch forces diagonal Y_e support in axis basis;
-   closes the U_e = I chain without going through the
-   second-order-effective Yukawa normalisation residual
- - PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17
-  — the closure being tightened
-
-Honest scope: the branch-choice admissibility principle used in Part 3 is
-an imposed rule, not a retained theorem. Parts 1, 2, 4, 5 are unaffected
-by this honest label — they record observational chamber data, record the
-s23^2 chamber-boundary threshold, and tabulate the in-chamber chi^2=0
-basins. The admissibility rule is used only to pick among those basins.
-
-Framework convention: "axiom" means only the single framework axiom
-Cl(3) on Z^3.
+The numerical scan and its original predicates are preserved. It searches all
+six permutations but finitely many starts; optimizer failure is not proof of
+nonexistence. The imposed same-inertia filter is not a derived physical rule
+or a certificate of connectedness in this restricted affine surface. Legacy
+43/46 counts must be replaced only by the actual capped-run outcome.
 """
 
 from __future__ import annotations
@@ -160,7 +86,7 @@ def inertia(M, tol=1e-9):
 
   Signature is the Sylvester inertia triple of the real eigenvalue spectrum.
   Retained congruence-invariant of a Hermitian form; used as the primary
-  source-branch discriminator (retained inertia-preservation theorem)."""
+  source-branch discriminator (imposed same-inertia filter)."""
   w = np.real(np.linalg.eigvalsh(M))
   sig = (
     int((w < -tol).sum()),
@@ -210,64 +136,17 @@ def norms_of(m, d, q):
 
 
 # ---------------------------------------------------------------------------
-# Part 1. State and verify the retained perturbative criterion.
+# Part 1. Baseline and supplied diagnostic scales.
 # ---------------------------------------------------------------------------
 
 
 def part1_perturbative_criterion_axiom_native():
-  print()
-  print("=" * 88)
-  print("Part 1: retained perturbative-scale criterion (axiom-native)")
-  print("=" * 88)
-  print()
-  print("Lemma (Perturbative-Scale Criterion, retained).")
-  print(" On the retained source-oriented sheet the axiom-native scalar")
-  print(" generator W[J] = log|det(D + J)| - log|det D| (retained by")
-  print(" OBSERVABLE_PRINCIPLE_FROM_AXIOM) is a response-expansion of the")
-  print(" baseline D = H_base to the source J = m T_m + delta T_delta")
-  print(" + q_+ T_q. The retained discipline requires that the")
-  print(" source be scale-bounded by the baseline in the natural L^2")
-  print(" inner-product norm induced by W's quadratic curvature:")
-  print("")
-  print("   ||J||_F <= ||H_base||_F     (F-perturbative scale)")
-  print("   ||J||_op <= ||H_base||_op     (operator-norm scale)")
-  print("")
-  print(" Both are natural certificates that the source has not left the")
-  print(" neighbourhood of the baseline on which W[J] is a meaningful")
-  print(" perturbative response generator. A closure point that violates")
-  print(" either certificate places the source at a scale comparable to or")
-  print(" larger than the baseline itself; the physical interpretation as")
-  print(" a SOURCE PERTURBING the baseline no longer applies at such a")
-  print(" point.")
-  print()
-  print("Mathematical basis (retained).")
-  print(" log det(D + J) = log det(D) + log det(I + D^{-1} J). The Taylor")
-  print(" series log det(I + X) = Sum_{n>=1} (-1)^{n+1}/n Tr(X^n) has")
-  print(" radius of convergence 1/rho(X) where rho is the spectral radius.")
-  print(" For the series around D = H_base at source scale parameter z,")
-  print(" log det(D + z J), the physical closure point z = 1 lies inside")
-  print(" the convergence disk iff rho(H_base^{-1} J) < 1. Beyond this")
-  print(" disk W[J] is still well-defined as an analytic continuation but")
-  print(" no longer admits a convergent source-response Taylor expansion")
-  print(" around H_base. The weaker scale criterion ||J||_{F,op} <=")
-  print(" ||H_base||_{F,op} is the natural retained discipline for")
-  print(" PERTURBATIVE INTERPRETATION of the closure point: it asks that")
-  print(" the source magnitude be no larger than the baseline magnitude,")
-  print(" measured in the L^2 inner-product norm natural to the retained")
-  print(" curvature partial^2 W, or in the retained operator norm.")
-  print()
-  print("Discipline boundary (honestly flagged).")
-  print(" The strong Taylor-convergence criterion rho(H_base^{-1} J) < 1")
-  print(" is the SUFFICIENT condition for log-det series convergence at")
-  print(" the physical source amplitude; the weak scale criterion")
-  print(" ||J|| <= ||H_base|| is the natural retained NECESSARY condition")
-  print(" that 'source is not larger than baseline'. The strong criterion")
-  print(" is not met by any of the three in-chamber basins; the weak")
-  print(" criterion is met only by Basin 1. The uniqueness claim in this")
-  print(" note is therefore the retained SCALE uniqueness, which is the")
-  print(" sharpest statement available without importing a post-axiom")
-  print(" variational principle. See Part 3 for the numerical proof.")
-  print()
+  print('Part 1: supplied baseline and finite norm diagnostics.')
+  print('For invertible D, rho(D^-1 J)<1 suffices for the log-det Taylor expansion at source amplitude1.')
+  print('W[J]=log|det(D+J)|-log|det(D)| is also defined outside that Taylor domain whenever det(D+J) is nonzero.')
+  print('Neither ||J||F<=||D||F nor ||J||op<=||D||op is a necessary or sufficient Taylor-convergence criterion.')
+  print('These are supplied size cuts, not an axiom-derived physical selection principle.')
+  print('Positive determinant alone does not determine inertia; inertia alone need not determine connectedness within an affine restriction.')
   # Numerical certificate that the three reference norms agree in ordering
   print("Numerical reference:")
   print(f" ||H_base||_F = {H_BASE_F:.6f}")
@@ -279,22 +158,17 @@ def part1_perturbative_criterion_axiom_native():
   print("Retained inertia invariants of H_base (Sylvester-inertia lemma):")
   print(f" signature(H_base) = {H_BASE_SIG}  (n_-, n_0, n_+)")
   print(f" det(H_base)       = {H_BASE_DET:+.6f}")
-  print(" These are retained algebraic invariants of the retained Hermitian")
-  print(" curvature H_base. The source-branch domain of the log-det observable")
-  print(" W[J] = log|det(H_base + J)| is characterized by signature(H) = (2, 0, 1)")
-  print(" (equivalently sgn det(H_base + J) = sgn det(H_base) = +). This is")
-  print(" the retained selector used in Part 3 to resolve the basin set.")
   check(
     "H_base has no zero eigenvalue (so D^{-1} exists; Taylor series well posed)",
     min(abs(np.linalg.eigvalsh(H_BASE))) > 1e-6,
   )
   check(
-    "Retained signature(H_base) = (2, 0, 1)",
+    "Supplied baseline signature(H_base) = (2, 0, 1)",
     H_BASE_SIG == (2, 0, 1),
     f"got {H_BASE_SIG}",
   )
   check(
-    "Retained det(H_base) > 0",
+    "Supplied baseline det(H_base) > 0",
     H_BASE_DET > 0,
     f"got {H_BASE_DET:+.6f}",
   )
@@ -311,14 +185,14 @@ def part1_perturbative_criterion_axiom_native():
 
 
 # ---------------------------------------------------------------------------
-# Part 2. Exhaustive all-permutation chamber scan.
+# Part 2. Finite multistart scan of all six permutations.
 # ---------------------------------------------------------------------------
 
 
 def multistart_chamber(perm, n_starts=60, box=(-5.0, 10.0), seed=2026_04_17,
             target=(TARGET_S12SQ, TARGET_S13SQ, TARGET_S23SQ),
             tol=1e-8):
-  """Return list of distinct chi^2=0 basins inside the chamber."""
+  """Return finite clusters with residual sum of squares below tol inside the chamber."""
   from scipy.optimize import minimize
   rng = np.random.default_rng(seed)
 
@@ -363,10 +237,10 @@ def multistart_chamber(perm, n_starts=60, box=(-5.0, 10.0), seed=2026_04_17,
 def part2_exhaustive_perm_scan():
   print()
   print("=" * 88)
-  print("Part 2: exhaustive permutation + wide-box chamber scan")
+  print("Part 2: finite multistart scan across all six permutations")
   print("=" * 88)
   print()
-  print("Box: [-5, 10]^3, n_starts = 60/perm, chamber constraint enforced.")
+  print("Initial starts: [-5,10]^3,60/perm; Nelder-Mead iterates are not box-constrained.")
   print()
 
   basin_records = []
@@ -400,33 +274,11 @@ def part2_exhaustive_perm_scan():
 
 
 def part3_perturbative_selects_basin1(basins):
-  print()
-  print("=" * 88)
-  print("Part 3: conditional branch-choice admissibility rule picks Basin 1")
-  print("    (NOT a retained theorem; Option B open item)")
-  print("=" * 88)
-  print()
-  print("Branch-choice admissibility rule (IMPOSED; NOT a retained theorem).")
-  print(" Let H_base be the baseline Hermitian on the source-oriented sheet.")
-  print(" The observable W[J] = log|det(H_base + J)| is well-defined exactly")
-  print(" where det(H_base + J) != 0, and is equally well-defined on every")
-  print(" connected component of that complement. We IMPOSE the rule that the")
-  print(" physical closure lies on the component containing J = 0 — equivalently")
-  print(" the baseline-connected component")
-  print("   B_src = { J : signature(H_base + J) = signature(H_base) }")
-  print("         = { J : sgn det(H_base + J) = sgn det(H_base) }  (Hermitian case).")
-  print(" Sylvester's law of inertia shows signature is a congruence-invariant,")
-  print(" so the imposed rule is algebraically clean. HONEST LABEL: this rule is")
-  print(" an admissibility / branch-choice principle, NOT a derived retained")
-  print(" selector. The alternative non-caustic components are equally")
-  print(" admissible from the retained framework point of view.")
-  print()
-  print(" Consequence under the imposed rule: among the in-chamber chi^2=0")
-  print(" basins of Parts 2 and 4, exactly one lies on B_src; it is Basin 1")
-  print(" at permutation sigma=(2,1,0). The competing basins flip signature to")
-  print(" (1,0,2); under the imposed rule they are excluded.")
-  print()
-
+  print('Part 3: imposed same-inertia filter applied only to clusters found by this finite search.')
+  print('The filter is signature(H_base+J)=signature(H_base)=(2,0,1). It is not derived physical admissibility.')
+  print('The positive-determinant test is redundant for this inertia but is not equivalent to it in general.')
+  print('Any continuous nonsingular path preserves inertia. The converse need not hold on this restricted affine surface.')
+  print('No path-connectivity certificate or exhaustive solution count is computed.')
   # Inertia of H_base + J at each basin
   def basin_inertia(b):
     Hm = H(*b["x"])
@@ -453,8 +305,8 @@ def part3_perturbative_selects_basin1(basins):
     return float(max(abs(np.linalg.eigvals(M))))
   pert_rho = [b for b in basins if rho_DinvJ(b) < 1.0]
 
-  print(f" Total in-chamber chi^2=0 basins across all permutations: {len(basins)}")
-  print(f" Basin inventory (with retained inertia at H_base + J):")
+  print(f" Found in-chamber clusters with residual below tolerance across six permutations: {len(basins)}")
+  print(f" Found-cluster inventory (numerical inertia at H_base + J):")
   for rec in on_branch + off_branch:
     b = rec["b"]
     x = b["x"]
@@ -466,31 +318,25 @@ def part3_perturbative_selects_basin1(basins):
       f"{'[ON BRANCH]' if rec in on_branch else '[off branch]'}"
     )
   print()
-  print(f" On baseline-connected component (under imposed rule): {len(on_branch)} basin(s)")
-  print(f" Off baseline-connected component (signature flipped): {len(off_branch)} basin(s)")
+  print(f" Found clusters passing the imposed same-inertia filter: {len(on_branch)} basin(s)")
+  print(f" Found clusters failing the imposed same-inertia filter: {len(off_branch)} basin(s)")
   print()
   print(" Consistency diagnostics (non-selector):")
   print(f"  Frobenius scale (|J|_F <= |H|_F):       {len(pert_F)} basin(s)")
   print(f"  Operator-norm scale (|J|_op <= |H|_op): {len(pert_op)} basin(s)")
   print(f"  Taylor convergence (rho(D^{{-1}}J) < 1):   {len(pert_rho)} basin(s)")
   print()
-  print(" Primary selector under the imposed branch-choice admissibility rule:")
-  print(" Sylvester-inertia preservation. The rule itself is NOT a retained")
-  print(" theorem on this branch (Option B open item). Scale diagnostics")
-  print(" (Frobenius, operator norm) agree with it here as consistency checks.")
-  print(" Taylor-convergence criterion rho < 1 is honestly flagged as NOT met")
-  print(" at any basin — documented as a boundary of the SERIES-expansion")
-  print(" domain, not of the log-det observable itself.")
-  print()
+  print("Scale cuts are diagnostics on found clusters; rho<1 is checked separately.")
+  print("No retained authority, global uniqueness, or physical selector is established.")
 
   # ---- PRIMARY under the imposed rule: signature-preserving selector ----
   check(
-    "Under imposed branch-choice rule: exactly one in-chamber basin is admissible",
+    "Finite search: exactly one found cluster passes imposed same-inertia filter",
     len(on_branch) == 1,
     f"admissible={len(on_branch)}",
   )
   check(
-    "At least one in-chamber basin is off the baseline-connected component (rule is non-trivial)",
+    "At least one found cluster fails the same-inertia filter",
     len(off_branch) >= 1,
     f"off-branch count={len(off_branch)}",
   )
@@ -537,7 +383,7 @@ def part3_perturbative_selects_basin1(basins):
       f"sig={rec['sig']}",
     )
     check(
-      f"Off-branch basin at perm={b['perm']} has det < 0 (confirming caustic crossed)",
+      f"Off-branch basin at perm={b['perm']} has det < 0 (any nonsingular path to positive-det baseline is impossible)",
       rec["det"] < 0,
       f"det={rec['det']:+.3f}",
     )
@@ -568,12 +414,12 @@ def part3_perturbative_selects_basin1(basins):
   # ---- Honest flag: Taylor convergence is NOT a selector here ----
   all_rhos = sorted([(rho_DinvJ(b), b) for b in basins])
   check(
-    "Honest flag: Taylor-convergence rho(D^{-1}J) < 1 fails at every in-chamber basin",
+    "Finite inventory: rho(D^{-1}J) < 1 fails at every found cluster",
     len(pert_rho) == 0,
     f"min rho over basins = {all_rhos[0][0]:.3f}",
   )
   check(
-    "Among all basins, the source-branch basin minimises rho(D^{-1} J) (closest to series disk)",
+    "Among found clusters, the same-inertia cluster minimises rho(D^{-1} J) (closest to series disk)",
     len(on_branch) == 1 and all_rhos[0][1]["x"] == on_branch[0]["b"]["x"],
     f"smallest rho={all_rhos[0][0]:.3f} at x={all_rhos[0][1]['x']}",
   )
@@ -630,7 +476,7 @@ def part4_three_advertised_basins():
       check(f"{label}: |J|_op / |H|_op < 1 (scale-perturbative, operator)",
          nrms["op"] / H_BASE_OP < 1.0)
     else:
-      check(f"{label}: inside chamber (is a live basin)", in_chamber)
+      check(f"{label}: returned iterate inside chamber; convergence/residual not certified", in_chamber)
       check(f"{label}: |J|_F / |H|_F > 1 (non-scale-perturbative, Frobenius)",
          nrms["fro"] / H_BASE_F > 1.0)
       check(f"{label}: |J|_op / |H|_op > 1 (non-scale-perturbative, operator)",
@@ -647,7 +493,7 @@ def part4_three_advertised_basins():
 def part5_theta23_chamber_threshold():
   print()
   print("=" * 88)
-  print("Part 5: theta_23 chamber-closure threshold (falsifiable octant prediction)")
+  print("Part 5: finite-search target transition diagnostic")
   print("=" * 88)
   print()
 
@@ -689,16 +535,16 @@ def part5_theta23_chamber_threshold():
     r = find_closure(s23)
     has_closure = r is not None
     print(f" {label}: s23^2 = {s23} => "
-       f"{'IN' if has_closure else 'OUT of'} chamber "
-       f"(expect {'IN' if expect_chamber else 'OUT of'} chamber)")
+       f"{'point found' if has_closure else 'no point found'} by finite search "
+       f"(expected search success={expect_chamber})")
     check(
-      f"s23^2 = {s23}: chamber closure = {expect_chamber}",
+      f"s23^2 = {s23}: finite-search success = {expect_chamber}",
       has_closure == expect_chamber,
     )
 
   # Binary search threshold
   print()
-  print(" Binary search for the sharp chamber-closure threshold in s23^2...")
+  print(" Binary search using a finite optimizer-success indicator (not a certified existence oracle)...")
   lo, hi = 0.540, 0.545
   for _ in range(24):
     mid = 0.5 * (lo + hi)
@@ -712,25 +558,25 @@ def part5_theta23_chamber_threshold():
   threshold = 0.5 * (lo + hi)
   print(f"  s23^2_threshold = {threshold:.6f} (bracket [{lo:.6f}, {hi:.6f}])")
   check(
-    "s23^2 chamber-closure threshold is sharp and lies in [0.540, 0.542]",
+    "Finite-search transition estimate lies in [0.540, 0.542]",
     0.540 <= threshold <= 0.542,
     f"threshold={threshold:.6f}",
   )
   check(
-    "s23^2 threshold is strictly above 0.5 (maximal-mixing is outside chamber)",
+    "Finite-search transition estimate exceeds supplied comparator0.5",
     threshold > 0.5,
     f"threshold={threshold:.6f}",
   )
   check(
-    "s23^2 threshold is strictly above 0.527 (NuFit 1-sigma upper edge)",
+    "Finite-search transition estimate exceeds historical comparator0.527",
     threshold > 0.527,
     f"threshold={threshold:.6f}",
   )
   print()
-  print(" ==> STRUCTURAL PREDICTION: theta_23 must lie in the UPPER OCTANT,")
-  print(f"   specifically s23^2 > {threshold:.4f} for the PMNS-as-f(H) closure")
-  print("   to realise a chamber pin at the PDG central (s12^2, s13^2).")
-  print("   Falsifiable at JUNO / DUNE / Hyper-K via precision theta_23.")
+  print(" ==> This search reports an upper-octant transition estimate,")
+  print(f"   near s23^2 = {threshold:.4f} for this supplied map and search,")
+  print("   at the supplied historical (s12^2,s13^2) targets.")
+  print("   No global lower-octant exclusion or experimental significance is established.")
 
 
 # ---------------------------------------------------------------------------
@@ -739,40 +585,10 @@ def part5_theta23_chamber_threshold():
 
 
 def part6_trichotomy_route_for_Ue_identity():
-  print()
-  print("=" * 88)
-  print("Part 6: Z_3 trichotomy + q_H gauge-redundancy route for U_e = I")
-  print("=" * 88)
-  print()
-  print("Theorem (U_e = I via the Z_3 trichotomy; q_H = 0 as canonical gauge representative).")
-  print(" By NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE, if the retained")
-  print(" Higgs doublet carries definite Z_3 charge q_H in Z_3, then the")
-  print(" support of the charged-lepton Dirac Yukawa Y_e is one of three")
-  print(" permutation patterns:")
-  print("   q_H = 0 : diagonal support (1,1), (2,2), (3,3)")
-  print("   q_H = +1: forward cyclic (1,2), (2,3), (3,1)")
-  print("   q_H = -1: backward cyclic (1,3), (2,1), (3,2)")
-  print(" On the canonical gauge representative q_H = 0, Y_e is diagonal in the")
-  print(" Z_3 generation-axis basis, and hence the charged-lepton mass")
-  print(" basis coincides with the axis basis: U_e = I.")
-  print()
-  print("Contrast with the Dirac-bridge chain (DM_NEUTRINO_DIRAC_BRIDGE).")
-  print(" The Dirac-bridge route reaches U_e = I via the reduction of the")
-  print(" effective second-order neutrino Dirac Yukawa to Gamma_1. That")
-  print(" chain flags a STILL-OPEN ingredient: 'derive normalization /")
-  print(" suppression theorem for effective neutrino Dirac Yukawa'. The")
-  print(" trichotomy route replaces that open ingredient with the")
-  print(" axiom-native Z_3-selection rule plus the Higgs q_H gauge-")
-  print(" redundancy theorem, so PMNS observables no longer carry a")
-  print(" separate q_H conditional on this branch.")
-  print()
-  print("Gauge status. q_H = 0 is the canonical gauge representative and")
-  print(" is compatible with retained Z_3 charges (q_L = (0,+1,-1),")
-  print(" q_R = (0,-1,+1)). The Higgs Z_3 gauge-redundancy theorem shows")
-  print(" q_H = ±1 differ only by right-handed basis relabeling, so PMNS")
-  print(" observables do not see the q_H choice. q_H is therefore GAUGE")
-  print(" retained on this branch, not a separate open conditional.")
-  print()
+  print('Part 6: finite support enumeration for supplied Z3 charges.')
+  print('Assuming qL=(0,1,-1), qR=(0,-1,1) and neutrality modulo3 gives the listed permutation supports.')
+  print('For the supplied diagonal example YeYe^dagger is diagonal; a left basis with no mixing can be chosen.')
+  print('This does not derive the physical charge assignment, nondegenerate charged-lepton spectrum, or equivalence of full theories under right-handed relabeling.')
   # Verify the three branches give the claimed support pattern (structural)
   q_H_to_support = {
     0: [(0, 0), (1, 1), (2, 2)],
@@ -818,31 +634,11 @@ def part6_trichotomy_route_for_Ue_identity():
 
 
 def part7_dcp_framing():
-  print()
-  print("=" * 88)
-  print("Part 7: delta_CP framing — falsifiable consequence of the construction")
-  print("=" * 88)
-  print()
-  print("Lemma (Dimensional framing of the PMNS-as-f(H) map).")
-  print(" The retained map")
-  print("   F : R^3 -> R^4, (m, delta, q_+) |-> (s12^2, s13^2, s23^2, delta_CP)")
-  print(" has generically 3-dimensional image because its domain is 3-")
-  print(" dimensional and its Jacobian has rank 3 on the chamber (verified")
-  print(" below). Its image is therefore a smooth 3-manifold M_F inside R^4.")
-  print()
-  print(" Pinning 3 observational angles (s12^2_obs, s13^2_obs, s23^2_obs)")
-  print(" supplies 3 constraints inside R^4. These constraints select an")
-  print(" isolated point on M_F (generically, modulo finitely many")
-  print(" discrete basins which are controlled by the perturbative criterion")
-  print(" in Parts 1-4), and the 4th coordinate delta_CP at that point is")
-  print(" the CONSEQUENT delta_CP-value on the manifold.")
-  print()
-  print(" This is the correct framing:")
-  print("   * the map is 'R^3 -> 3-manifold in R^4'")
-  print("   * delta_CP is a FALSIFIABLE CONSEQUENCE of the construction,")
-  print("    not an over-determined consistency check of a 3-to-4 map")
-  print("    (the map has a 3-dim image, not a 4-dim image).")
-  print()
+  print('Part 7: local finite-difference Jacobian diagnostic at the supplied basin.')
+  print('The fourth computed coordinate is sin(delta_CP), not delta_CP itself.')
+  print('Rank3 at one numerical point is not a global embedded-manifold or injectivity theorem.')
+  print('If the exact angle Jacobian is nonsingular on a smooth eigenvector branch, the inverse-function theorem gives local angle coordinates.')
+  print('The finite-difference calculation below supports that local hypothesis numerically; it does not prove it with interval bounds.')
   # Numerical verification: Jacobian rank = 3 at Basin 1
   from scipy.optimize import fsolve
   def eqs(x, perm=(2, 1, 0)):
@@ -868,7 +664,7 @@ def part7_dcp_framing():
   rank = np.linalg.matrix_rank(J4, tol=1e-5)
   print(f" Numerical Jacobian rank at Basin 1 = {rank} (expected 3)")
   check(
-    "rank(J4) = 3: image is exactly a 3-manifold in R^4",
+    "Finite-difference J4 has numerical rank3 at this point and tolerance",
     rank == 3,
   )
   # Verify the row corresponding to delta_CP is a linear combination of the other 3 rows
@@ -880,7 +676,7 @@ def part7_dcp_framing():
   except Exception:
     residual = float('inf')
   check(
-    "d(delta_CP)/dx_k is a linear combination of d(s_ij^2)/dx_k (3-manifold constraint)",
+    "Numerical derivative row of sin(delta_CP) lies in the span of the three angle rows",
     residual < 1e-4,
     f"residual={residual:.2e}",
   )
@@ -894,23 +690,15 @@ def part7_dcp_framing():
 def part8_no_other_perturbative_basin():
   print()
   print("=" * 88)
-  print("Part 8: no other perturbative chamber basin in a wide scan")
+  print("Part 8: finite norm-cut chamber search")
   print("=" * 88)
   print()
 
-  # Use a perturbative-only box: each component bounded such that
-  # ||J||_F <= ||H_base||_F. Since ||J||_F^2 = 3 m^2 + 4 delta^2 + 6 q^2
-  # for the retained (T_m, T_delta, T_q), the perturbative ball is an
-  # ellipsoid with axes (|H|_F/sqrt(3), |H|_F/2, |H|_F/sqrt(6)) ~
-  # (2.08, 1.80, 1.47).
-  # (We verify the coefficients numerically.)
-  # Just compute ||T_m||_F^2, ||T_delta||_F^2, ||T_q||_F^2 (they are 2, 6, 6
-  # respectively for the retained generators); cross terms vanish.
-  # ==> the ellipsoid is m in [-|H|_F/sqrt(2), +|H|_F/sqrt(2)],
-  #   delta in [-|H|_F/sqrt(6), +|H|_F/sqrt(6)], q in [-|H|_F/sqrt(6), +|H|_F/sqrt(6)]
-  # when the others are zero. We box the full perturbative search within the
-  # bounding cube of radius |H|_F (conservative upper bound) and REJECT
-  # post-hoc any basin violating ||J||_F <= |H|_F.
+  # Exact Frobenius Gram matrix for (T_M,T_DELTA,T_Q) is
+  # [[3,0,2],[0,6,0],[2,0,6]], hence ||J||F^2=3m^2+6d^2+6q^2+4mq.
+  # The optimizer already evaluates the actual matrix norm; the old diagonal
+  # ellipsoid comments were wrong. Keep its starts, penalties and acceptance
+  # thresholds unchanged. These finitely many starts are not an exhaustion.
 
   from scipy.optimize import minimize
   import itertools as it
@@ -955,7 +743,7 @@ def part8_no_other_perturbative_basin():
     if not placed:
       clusters.append({"perm": perm, "rep": x, "pts": [x]})
 
-  print(f" Total perturbative-and-in-chamber chi^2=0 basins across ALL permutations: {len(clusters)}")
+  print(f" Found norm-cut chamber clusters below residual tolerance across six permutations: {len(clusters)}")
   for c in clusters:
     x = c["rep"]
     obs = pmns_map(*x, perm=c["perm"])
@@ -963,18 +751,18 @@ def part8_no_other_perturbative_basin():
     print(f"  perm={c['perm']} @ (m,d,q)=({x[0]:.4f},{x[1]:.4f},{x[2]:.4f}) "
        f"|J|_F/|H|_F={nrms['fro']/H_BASE_F:.3f} sin(dcp)={obs['sin_dcp']:+.4f}")
   check(
-    "exactly one perturbative-and-in-chamber chi^2=0 basin in the wide scan",
+    "Finite search finds exactly one norm-cut chamber cluster",
     len(clusters) == 1,
     f"count={len(clusters)}",
   )
   if clusters:
     c = clusters[0]
     check(
-      "the unique perturbative basin is at sigma = (2, 1, 0)",
+      "the sole found norm-cut cluster is at sigma = (2, 1, 0)",
       c["perm"] == (2, 1, 0),
     )
     check(
-      "the unique perturbative basin is the PMNS-closure theorem Basin 1",
+      "the sole found norm-cut cluster is the PMNS-closure theorem Basin 1",
       (abs(c["rep"][0] - 0.657061) < 5e-3
        and abs(c["rep"][1] - 0.933806) < 5e-3
        and abs(c["rep"][2] - 0.715042) < 5e-3),
@@ -988,13 +776,11 @@ def part8_no_other_perturbative_basin():
 
 def main() -> int:
   print("=" * 88)
-  print("G1 PHYSICIST-J — Perturbative-Regime Uniqueness Tightening of selector Closure")
+  print("Finite PMNS affine-surface diagnostics with an imposed inertia filter")
   print("=" * 88)
   print()
-  print("Objective: prove that the the PMNS-closure theorem PMNS-as-f(H) chamber closure")
-  print("is UNIQUELY selected by the retained perturbative criterion over")
-  print("all other numerical in-chamber basins, across all hierarchy-")
-  print("pairing row permutations.")
+  print("Objective: reproduce finite search diagnostics with original predicates and thresholds.")
+  print("No global uniqueness, physical admissibility, or retained-theorem certification follows.")
 
   part1_perturbative_criterion_axiom_native()
   basins = part2_exhaustive_perm_scan()
@@ -1012,13 +798,8 @@ def main() -> int:
   print("=" * 88)
   if FAIL_COUNT == 0:
     print()
-    print("G1 the perturbative-uniqueness theorem TIGHTENING PASS.")
-    print(" (i) Uniqueness of the the PMNS-closure theorem closure established under the")
-    print("   retained perturbative criterion on W[J] = log|det(D+J)|.")
-    print(" (ii) s23^2 chamber-boundary threshold pinned (falsifiable octant).")
-    print(" (iii) U_e = I established through the Z_3 trichotomy q_H = 0 route")
-    print("    (no open effective-Yukawa normalisation dependency).")
-    print(" (iv) delta_CP reframed as falsifiable consequence on a 3-manifold.")
+    print("All implemented finite diagnostic predicates passed in this run.")
+    print("This is not an exhaustion proof or an independently established physical prediction.")
   return 0 if FAIL_COUNT == 0 else 1
 
 

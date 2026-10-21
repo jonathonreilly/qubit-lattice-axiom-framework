@@ -39,10 +39,16 @@ explicit user request) — ready body in `PR_BACKLOG.md`.
   chirality at low energy? Relate to anomaly / symmetric-mass-generation literature.
 - **Moving excitations:** C4e/C4f pair glider has range ≤ 18; range 2 open (necessary
   k ≤ 3 conditions satisfiable). Single excitations cannot move with U(1) (C4b Lemma 2).
-- **Owner decisions:** (a) extend kinetic isotropy to the gauge sector (ties light cones,
-  C2 T_tie)? (b) accept the two repairs above via a PR? (c) C1b's 42 MB raw data on the
+- **Owner decisions:** (a) adopt the reviewed candidate KI+_G (C2b) into the premise
+  registry? It ties light cones, survives renormalization, and selects ±b_gold. (b) accept the two repairs above via a PR? (c) C1b's 42 MB raw data on the
   branch — keep or strip before a PR?
 
 ## Resume
 Read `STATE.yaml`, then this file, then `RESULTS.md`. Lock: `scripts/automation_lock.py`
 (owner physics-loop) — release at stop.
+
+## Follow-up (2026-10-21)
+- PR opened: jonathonreilly/qubit-lattice-axiom-framework#9831.
+- C2b (KI+ candidate extension) and C10 (burn/turn on the Dirac walk) added, both reviewed.
+- Cross-thread links with the burn/turn thread and recent main landings: `CROSS_THREAD_LINKS.md`
+  (no conflicts; joint targets ranked there).

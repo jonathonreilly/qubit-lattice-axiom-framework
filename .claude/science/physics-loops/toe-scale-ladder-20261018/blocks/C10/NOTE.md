@@ -15,7 +15,7 @@ equals v gives the same tensor, and the turn mechanics add nothing. The M1 agree
 b_iso therefore tests a property of the walk, v = s⟨α⟩ through O(a²) iff β = 0, not a property of
 the turn rule. The agreement also rests on four choices: the 1/s² rescaling (as given, nothing
 agrees unless s = 1), the candidate set M1–M4, q = 0 plane waves, and fixing the constant at
-continuum order. A constant ∝ sin ω/ω would tie M2.
+continuum order. An energy-dependent factor ∝ sin ω/ω (not a constant) would tie M2.
 
 1. **The burn-and-turn (BT) rule is not defined on the C7 walk.** BT assumes the shift-coin form
    U(k) = diag(e^{−ik·d}) C: each component label carries one hop vector d, which need not have unit
@@ -161,7 +161,7 @@ The as-given continuum deviation equals 1 − s² to 2×10⁻³ (0.1638 and 0.33
 ## 6. Load-bearing step for independent check
 
 The identity **D − λ s g = sin k_a[E₁(x_b + x_c) + E₂ x_b x_c] with E₁|_{θ=0} = −3β**, together
-with **⟨α_i⟩ = g_i/sin ω** on the band. The selection of M1 at b_iso rests on these two facts. A
+with **⟨α_i⟩ = g_i/sin ω** on the band. The M1 match at b_iso (a walk property, not a turn-rule selection) rests on these two facts. A
 reviewer should re-derive v·sin ω from the walk by a different route (for example from the
 eigenvalue of the explicit U at a generic k with exact arithmetic), and should check that β is C7's
 anisotropy coefficient. Second item: whether E-W (complex weights) may count as "applying BT" at all.

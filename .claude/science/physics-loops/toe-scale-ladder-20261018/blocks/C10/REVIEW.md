@@ -114,3 +114,18 @@ not θ⟨|n|²⟩_K. The difference is ≤ 0.3%, and the runner's printed range 
 The load-bearing identities and numbers reproduce by an independent construction. The domain verdict holds; the
 fix is to drop "unit-length". The open issue is one of attribution: the M1-at-b_iso result belongs to the dust
 tensor, i.e. to the walk's kinematics, not to burn-and-turn. **Ready after the minor fixes and the 4c rewording.**
+
+## Correction confirmation
+
+I read the corrected NOTE.md in full, by the same reviewer as above.
+
+- **1a: resolved.** The domain is now stated as shift-coin form with arbitrary hop vectors, and the BT √3 walk is cited. The sub-tick factorisation is listed as untested.
+- **1c: resolved.** The basis-free overlap of 0.23–0.25 is quoted, the basis-dependent measure is labelled, and the commutator certificate is cited.
+- **4c: resolved.** The new headline, Result 5 and Outcome say that BT as defined selects nothing. They say the M1 match at massless b_iso is a property of the dust tensor and the walk (v = s⟨α⟩) and does not depend on the turn rule. They list its dependence on the 1/s² rescaling, the M1–M4 set, q = 0 and fixing the constant at continuum order. c_G and a/l_P are quoted only "if M1 is adopted". This matches the requested rewording.
+- **5: resolved.** The action is now θ(⟨|n|²⟩_K − |m_K|²), the rest drift |m_K| ≤ 0.048 is stated, and the values 0.537 / 0.518–0.520 / 0.638–0.640 agree with `r10_review.log`.
+- **New defects: none of substance.** Two cosmetic nits, optional:
+  - "A constant ∝ sin ω/ω would tie M2": that quantity is an energy-dependent factor, not a constant. Suggested wording: "an energy-dependent factor sin ω/ω".
+  - §6 still says "the selection of M1 at b_iso". It could say "the M1 match".
+- The logs are unchanged, and the stale "unit-length" runner message is disclosed as superseded. The pass/fail outcome of that check does not depend on it.
+
+**Final verdict: ready.**

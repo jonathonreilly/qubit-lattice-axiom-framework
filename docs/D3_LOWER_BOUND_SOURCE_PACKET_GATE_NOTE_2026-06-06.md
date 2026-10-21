@@ -4,7 +4,7 @@
 **Claim type:** meta
 **Runner:** [`scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py`](../scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py)
 **Cached output:** [`logs/runner-cache/frontier_d3_lower_bound_source_packet_gate_2026_06_06.txt`](../logs/runner-cache/frontier_d3_lower_bound_source_packet_gate_2026_06_06.txt)
-(`SCORECARD: PASS=58 FAIL=0`)
+(historical expected `SCORECARD: PASS=58 FAIL=0`, not a fresh result)
 
 ```yaml
 actual_current_surface_status: exact-support
@@ -19,7 +19,26 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-## Scope
+## Current correction boundary (2026-10-21)
+
+This is a historical source-packet gate, not current evidence that the physical
+sign issue is closed. The finite-k bridge now distinguishes its historical
+repulsive d=1,2 potential convention from an attractive continuation. The latter
+has toward infinitesimal centroid response for all five tested dimensions at
+the baseline geometry, so the old sign-based lower-dimensional exclusion is
+not supported. No new dimension-selection or physical upper-bound theorem is
+supplied.
+
+The status labels, cache counts, and completion statements below describe the
+June packet and its acceptance criteria, not a fresh status lookup or a new
+successful execution. The unchanged gate reads current ledger rows and caches;
+its actual failures must be preserved. Source/cache presence and old scorecards
+cannot override the attractive-sign counterexample. The bridge's absent
+historical D3 retention-plan file supplied no content input to this gate or
+its finite calculation; separating that availability diagnostic does not
+recover the missing artifact or turn its earlier failure into a PASS.
+
+## Historical Scope (superseded completion interpretation)
 
 The active review queue still carries
 `2026-05-20-d3-lower-bound-bridge-sign`, whose original finding was that the

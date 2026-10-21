@@ -445,6 +445,31 @@
       "source_sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
       "timeout_sec": 300,
       "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
+    },
+    "scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py": {
+      "timeout_sec": 300,
+      "source_sha256": "1cc8d647ef326aad60a78166d8edc712b82acfcffb9dd73ace29466042338282",
+      "rationale": "Bounded dimension diagnostic review cap; preserve all mathematical and documentary failures."
+    },
+    "scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py": {
+      "timeout_sec": 300,
+      "source_sha256": "319d534873ad6c905d9c5467873d9fa2dac1e39ab6d8e8636336b9e7409bab8d",
+      "rationale": "Bounded dimension diagnostic review cap; preserve all mathematical and documentary failures."
+    },
+    "scripts/frontier_dimension_selection.py": {
+      "timeout_sec": 300,
+      "source_sha256": "48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83",
+      "rationale": "Bounded dimension diagnostic review cap; preserve all mathematical and documentary failures."
+    },
+    "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py": {
+      "timeout_sec": 300,
+      "source_sha256": "9cd088d0549d36eb03dc528e5d22b48fe7cf20a03a606e927ea537132a006fa8",
+      "rationale": "Bounded dimension diagnostic review cap; preserve all mathematical and documentary failures."
+    },
+    "scripts/frontier_dimension_selection_lower_bound_parent_repair.py": {
+      "timeout_sec": 300,
+      "source_sha256": "aa55dabfb5095c4a1799f69a209b2c749de4ea30eed186df5c28230af058dbfb",
+      "rationale": "Bounded dimension diagnostic review cap; preserve all mathematical and documentary failures."
     }
   }
 }

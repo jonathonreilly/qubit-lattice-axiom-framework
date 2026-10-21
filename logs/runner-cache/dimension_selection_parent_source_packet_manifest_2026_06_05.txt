@@ -1,11 +1,11 @@
 ===== runner cache v1 =====
 runner: scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
 runner_sha256: 1cc8d647ef326aad60a78166d8edc712b82acfcffb9dd73ace29466042338282
-input_fingerprint_sha256: b639459d1581c74090d8a19dce3586a7aca3114660c702762a5a74b0acf496b3
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.04
-status: ok
+input_fingerprint_sha256: 8e1544f561de936e230817fa22b349673d6f68a55a746c8025ae9318386b40c6
+timeout_sec: 300
+exit_code: 1
+elapsed_sec: 0.08
+status: nonzero_exit
 ----- stdout -----
 ========================================================================================
 DIMENSION SELECTION PARENT: SOURCE PACKET MANIFEST
@@ -38,16 +38,16 @@ DIMENSION SELECTION PARENT: SOURCE PACKET MANIFEST
 [PASS] source_contains:original_runner:SUMMARY TABLE: SUMMARY TABLE present
 [PASS] source_contains:original_runner:beta: beta present
 [PASS] source_contains:original_runner:I_3: I_3 present
-[PASS] source_full_length:finite_k_bridge_runner: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py has 14139 bytes
+[PASS] source_full_length:finite_k_bridge_runner: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py has 16376 bytes
 [PASS] source_contains:finite_k_bridge_runner:def finite_k_centroid_derivative: def finite_k_centroid_derivative present
 [PASS] source_contains:finite_k_bridge_runner:def propagate_centroid_for_mass: def propagate_centroid_for_mass present
 [PASS] source_contains:finite_k_bridge_runner:def part3_finite_difference: def part3_finite_difference present
 [PASS] source_contains:finite_k_bridge_runner:SUMMARY: PASS=: SUMMARY: PASS= present
 [PASS] cache_runner_matches:parent_cache: scripts/frontier_dimension_selection_lower_bound_parent_repair.py == scripts/frontier_dimension_selection_lower_bound_parent_repair.py
 [PASS] cache_sha_fresh:parent_cache: aa55dabfb5095c4a1799f69a209b2c749de4ea30eed186df5c28230af058dbfb == aa55dabfb5095c4a1799f69a209b2c749de4ea30eed186df5c28230af058dbfb
-[PASS] cache_exit_ok:parent_cache: exit_code=0 status=ok
-[PASS] cache_snippet_present:parent_cache:SUMMARY: PASS=27 FAIL=0: SUMMARY: PASS=27 FAIL=0
-[PASS] cache_snippet_present:parent_cache:COMPANION_PACKET: PASS: COMPANION_PACKET: PASS
+[FAIL] cache_exit_ok:parent_cache: exit_code=1 status=nonzero_exit
+[FAIL] cache_snippet_present:parent_cache:SUMMARY: PASS=27 FAIL=0: SUMMARY: PASS=27 FAIL=0
+[FAIL] cache_snippet_present:parent_cache:COMPANION_PACKET: PASS: COMPANION_PACKET: PASS
 [PASS] cache_snippet_present:parent_cache:finite-k lower-bound pass set is d=3,4,5: finite-k lower-bound pass set is d=3,4,5
 [PASS] cache_snippet_present:parent_cache:finite-k lower-bound fail set is d=1,2: finite-k lower-bound fail set is d=1,2
 [PASS] cache_runner_matches:original_cache: scripts/frontier_dimension_selection.py == scripts/frontier_dimension_selection.py
@@ -60,15 +60,15 @@ DIMENSION SELECTION PARENT: SOURCE PACKET MANIFEST
 [PASS] cache_snippet_present:original_cache:  4 |       Yes |    Yes |     Yes |    1.05:   4 |       Yes |    Yes |     Yes |    1.05
 [PASS] cache_snippet_present:original_cache:  5 |       Yes |    Yes |     Yes |    1.03:   5 |       Yes |    Yes |     Yes |    1.03
 [PASS] cache_runner_matches:finite_k_bridge_cache: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py == scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
-[PASS] cache_sha_fresh:finite_k_bridge_cache: 121cc5d53af922dafce2acf8633624bea896795eb7103d83091043cd4f492ade == 121cc5d53af922dafce2acf8633624bea896795eb7103d83091043cd4f492ade
+[PASS] cache_sha_fresh:finite_k_bridge_cache: 9cd088d0549d36eb03dc528e5d22b48fe7cf20a03a606e927ea537132a006fa8 == 9cd088d0549d36eb03dc528e5d22b48fe7cf20a03a606e927ea537132a006fa8
 [PASS] cache_exit_ok:finite_k_bridge_cache: exit_code=0 status=ok
-[PASS] cache_snippet_present:finite_k_bridge_cache:SUMMARY: PASS=56 FAIL=0: SUMMARY: PASS=56 FAIL=0
+[FAIL] cache_snippet_present:finite_k_bridge_cache:SUMMARY: PASS=56 FAIL=0: SUMMARY: PASS=56 FAIL=0
 [PASS] cache_snippet_present:finite_k_bridge_cache:d=1 derivative has expected sign: d=1 derivative has expected sign
 [PASS] cache_snippet_present:finite_k_bridge_cache:d=5 parent raw_delta sign matches lower-bound sign: d=5 parent raw_delta sign matches lower-bound sign
 [PASS] bridge_json_fail_count_zero: 0
-[PASS] bridge_json_pass_count_56: 56
+[FAIL] bridge_json_pass_count_56: 70
 ========================================================================================
-SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=57 FAIL=0
+SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=52 FAIL=5
 ========================================================================================
 Output written: outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json
 

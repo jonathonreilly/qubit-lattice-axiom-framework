@@ -32,6 +32,9 @@ monopole-suppressed susceptibility, not the geometric ray deflection.
 prints TOTAL: PASS=N FAIL=0
 """
 
+# Actual cache/data and child freshness-identity reads.
+AUDIT_INPUT_PATHS = ('logs/runner-cache/frontier_lensing_h025_edge_kernel_certificate_2026_06_08.txt', 'logs/runner-cache/frontier_lensing_h025_source_packet_manifest_2026_06_09.txt', 'outputs/lensing_h025_edge_kernel_certificate_2026_06_08.json', 'scripts/frontier_lensing_h025_edge_kernel_certificate_2026_06_08.py', 'scripts/frontier_lensing_h025_source_packet_manifest_2026_06_09.py')
+
 import os
 import json
 from pathlib import Path

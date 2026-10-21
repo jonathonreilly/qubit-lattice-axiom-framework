@@ -14,6 +14,9 @@ the boundary honest.
 
 from __future__ import annotations
 
+# Actual cache/data and child freshness-identity reads.
+AUDIT_INPUT_PATHS = ('archive_unlanded/grown-family-missing-artifacts-2026-04-30/SECOND_GROWN_FAMILY_NOTE.md', 'logs/runner-cache/DISTANCE_LAW_BREAKPOINT_COMPARE.txt', 'logs/runner-cache/SECOND_GROWN_FAMILY_COMPLEX.txt', 'logs/runner-cache/SECOND_GROWN_FAMILY_COMPLEX_QUICK.txt', 'logs/runner-cache/SECOND_GROWN_FAMILY_SIGN_SWEEP.txt', 'logs/runner-cache/impact_parameter_portability_probe.txt', 'scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py', 'scripts/SECOND_GROWN_FAMILY_COMPLEX.py', 'scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py', 'scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py', 'scripts/impact_parameter_portability_probe.py')
+
 import hashlib
 import sys
 from pathlib import Path

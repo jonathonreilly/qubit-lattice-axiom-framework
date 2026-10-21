@@ -1,6 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/second_grown_family_battery.py
-runner_sha256: cb5565fb38d82dc32a13bf39689d7a48c4fdacbfa588abf419adbe1fa8d10548
+runner_sha256: c7b3fa749fac0da1ab6833085a09a0d2114d8477158a638d05a9750ae6510856
+input_fingerprint_sha256: c22b0b553e1cea2dc54361434c3e9ee8f780f3362eb24660f941a3108a3363ad
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_local_selector_family_no_go_theorem_2026_04_20.py
-runner_sha256: 0b6bdcf7dc05de6d7efc0a653b680b91c2c80223499ee63c15cc6067724ea9c7
+runner_sha256: 4bc456b301ef0496a0fcf0e3efbefc7d7e30ca905890b4760d6ec0bcf4b27d10
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.97
+elapsed_sec: 0.94
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -57,7 +57,7 @@ PART 4: ALL CURRENT EXPLICIT CANDIDATE POINTS MISS THE PMNS TRIPLE
   [PASS] Every current explicit selector candidate has chi^2 > 0.03  (rows=[('A Schur-Q', 0.06279697767843932, 0.2505706482474967), ('B det-crit', 0.031125817754230716, 0.1554380928816435), ('C Tr(H^2)-bdy', 0.08695805283008462, 0.21847814895377254), ('D K12 char', 0.257190397213588, 0.5045696823261516), ('E par-mix F1', 0.04655401328321692, 0.20500401544416808)])
 per_element: five supplied candidates and numerically located roots
 per_block: imported selected-line constants; no family proof here
-per_site: no site-resolved calculation
+per_site: not executed — this runner has no lattice-site index; it evaluates a supplied finite-dimensional 3x3 Hermitian matrix map at scalar m values and five named candidate triples.
 per_mode: three angle coordinates evaluated
 lattice_wide: no lattice calculation; finite parameter scans only
 

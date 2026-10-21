@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_burn_and_turn_source_tensor_2026_10_21.py
+runner_sha256: e7190ade8dd0e7f172afbe0aa3a49f04de4e355a08fafb9d0ae0ed21f23fca84
+input_fingerprint_sha256: 1e961927bcbe2c8507c5711f741e3022934eb844a6d69132315a69b6e5e34113
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 2.35
+status: ok
+----- stdout -----
+[PASS] 1D plane waves: burns + turns equal eps v^2; burns alone do not  v=0.000: burns 0.05000, burns+turns 0.00000, eps v^2 0.00000; v=0.514: burns 0.05830, burns+turns 0.01541, eps v^2 0.01541; v=0.768: burns 0.07808, burns+turns 0.04603, eps v^2 0.04603; v=0.923: burns 0.12995, burns+turns 0.11062, eps v^2 0.11062
+[PASS] 1D clock: turn action per tick equals m^2/eps (m/gamma, m = th) within 1%  v=0.000: action 0.05000, m^2/eps 0.05000; v=0.514: action 0.04289, m^2/eps 0.04288; v=0.768: action 0.03206, m^2/eps 0.03202; v=0.923: action 0.01933, m^2/eps 0.01924
+[PASS] 1D packets: with the turn stress the momentum residual falls with width; the turn impulse alone does not  width 30: impulse 0.440, residual 0.0802 (relative to |d_x burn stress|); width 60: impulse 0.427, residual 0.0409 (relative to |d_x burn stress|); width 120: impulse 0.415, residual 0.0191 (relative to |d_x burn stress|)
+[PASS] six-direction walk plane waves: mean step equals group velocity and burns + turns equal eps v v including shear  max |burns+turns - eps v v| 7.1e-12; burns alone >= 1.1e-01; k along (1, 1, 0): |v| 0.213, shear xy +0.00758 vs eps v_x v_y +0.00758; k along (2, 1, 0): |v| 0.216, shear xy +0.00623 vs eps v_x v_y +0.00623; k along (1, 1, 1): |v| 0.281, shear xy +0.00908 vs eps v_x v_y +0.00908
+[PASS] eight-diagonal walk plane waves: mean step equals group velocity and burns + turns equal eps v v including shear  max |burns+turns - eps v v| 1.5e-10; burns alone >= 2.1e-01; k along (1, 1, 0): |v| 0.176, shear xy +0.00431 vs eps v_x v_y +0.00431; k along (1, 1, 1): |v| 0.002, shear xy +0.00000 vs eps v_x v_y +0.00000; k along (2, 1, 0): |v| 1.044, shear xy -0.09960 vs eps v_x v_y -0.09960
+[PASS] six-direction packets moving along (1,1,0): with the turn stress the residual falls with width; the impulse alone does not  width 3: impulse 0.922, residual 0.284 (relative to |div burn stress|); width 5: impulse 0.933, residual 0.188 (relative to |div burn stress|); width 8: impulse 0.943, residual 0.115 (relative to |div burn stress|)
+[PASS] six-direction walk: turn action per tick differs from m^2/eps by more than 5% (the 1D clock identity does not carry over)  k along (1, 1, 0): turn action 0.3194 (identity eps(1-v^2) 0.3194), m^2/eps 0.2690; k along (1, 1, 1): turn action 0.3179 (identity eps(1-v^2) 0.3179), m^2/eps 0.2608
+per_site: coin angles, coins, the exchange rule, the per-turn stress and eps = band frequency are supplied choices.
+per_block: lattice sizes, packet widths, momenta, smoothing widths and tick windows are fixed in this source.
+lattice_wide: no physical source identification, derivation of the turning rule, gravity field equation or clock law is established.
+elapsed_seconds 2.3
+
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

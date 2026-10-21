@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/the_staggered_margolus_term_is_a_universal_time_step_2026_10_21.py
+runner_sha256: 1d8ee1f503a2031ca271afc500fced5e1d69fbf6a5854274fe7bde4ffef3191b
+input_fingerprint_sha256: c320130a6d772e6ef6af05810bb408039c286054ab9444398a923b3101c9c90d
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+== 1. the limiting-speed claim
+[PASS] 1a all 8 bands obey cos w = A S - (cos2b - cos mu)/2, A = (cos2b + cos mu)/2 (rederived: two-reflection 2x2 blocks, det = 1)  2.2e-15
+[PASS] 1b c^2 = d(w^2)/d(K^2) at K = 0 equals (A/3)(mu/sin mu) on axis/face/body; mu -> 0 gives c = cos(b)/sqrt3 (precision-qed claim confirmed)  max rel dev 2.5e-09; c(b=0.3)/c(0) = 0.955336
+== 2. exact rewrite of the staggered half-ticks as one step eps = pi/2 - b
+[PASS] 2a V(mu/2+b) = i exp(-i(eps-mu/2)W) and V(mu/2-b) = -i exp(+i(eps+mu/2)W): the tick is exactly exp(+i delta_o W_o) exp(-i delta_e W_e)  2.2e-15
+[PASS] 2b b -> pi/2 is the continuous-time limit: quasi-energies -> eigenvalues of eps(W_e - W_o) - (mu/2)(W_e + W_o) (error O(eps^2))  max dev 8.7e-13 at eps = 0.001
+[PASS] 2c band top at R is pi - 2b = 2 eps for every b: the step eps sets the bandwidth  1.8e-15
+== 3. links: can the link update carry b?
+[PASS] 3a Yee leapfrog bands: sin^2(w/2) = C^2 sum sin^2(K_i/2) = (3C^2/2)(1 - S) (both transverse polarisations)  5.3e-15
+[PASS] 3b with C = cos(b)/sqrt3 the photon has EXACTLY the (mu = 0, b) fermion band at every K: one universal b is carried by the Courant number  1.2e-14 over 800 K x 3 b
+[PASS] 3c b = 0 photon (C = 1/sqrt3) is a Jordan block at R (norm grows linearly in ticks); any b > 0 makes it diagonalisable and bounded  |M^1000|/|M^100| = 10.00 (b=0); max_n |M^n|/|M| = 1.352 (b=0.3)
+[PASS] 3d identity at the same K: 1 - cos w_e = (1 - cos w_gamma) + (1 - cos mu)(1 + S)/2 (mass is the only difference)  8.9e-16
+[PASS] 3e universal b: gamma -> f fbar is closed (min over 60k K, splits; margin > 0) for b = 0.3, 0.9, 1.3  min rel margin 1.5e-04, 6.3e-04, 1.8e-03
+[PASS] 3f per-species b (fermion b = 0.3, photon b = 0): gamma -> f fbar opens (negative margin)  min rel margin -0.045
+== 4. the symmetric-stress clause of CL-6
+[PASS] 4a species with b = 0 and b = 0.3: massless stresses are symmetric in metrics alpha = 1/3 and cos^2(0.3)/3: no common metric  alpha spread 0.0291
+[PASS] 4b universal b: the only spread is (alpha_s/alpha_gamma - 1) = mu^2 (1/6 - 1/(4cos^2 b)) + O(mu^4): the clause is exact only for massless sources  -5.009e-04 vs -5.009e-04
+== 5. quasi-energy arcs and the pi-cone
+[PASS] 5a b = 0: all 8 states at R sit at quasi-energy pi for every mu (massless pi-cone; charge = species number, so it is charged)
+[PASS] 5b upper band fills [mu, pi - 2b] with its global TOP at R; a particle-hole pair at R has quasi-energy 2(pi-2b) = -4b mod 2pi  b=0.3: pi-pair -1.2000 = -4b; b=1.0: pi-pair -4.0000 = -4b; b=0.0073: pi-pair -0.0292 = -4b
+   theorem: one gap at 0 and one at pi bound the same two arcs; filling either arc leaves filled states BELOW the 0-gap and ABOVE
+   the pi-gap (or the reverse). Excitations: [2mu, 2pi - 4b] mod 2pi, i.e. the 0-cone at +2mu.. and the pi-cone at -4b.. sit on
+   opposite sides of 0. Quasi-energy is conserved only mod 2pi, so a light excitation of 4b + kin and a pi-pair balance.
+[PASS] 5c m band-top pairs at R (total momentum 0) wrap to 2pi iff 2m(pi - 2b) >= 2pi: two pairs suffice iff b <= pi/4  m_min b=0:1, b=7.3e-10:2, b=0.393:2, b=0.785:2, b=0.786:3, b=1:3, b=1.32:7, b=1.53:43
+== 6. clauses of CL-1 and CL-3 that are theorems
+[PASS] 6a every nearest-neighbour bond lies in exactly one cube of exactly one partition (6^3 torus): CL-1 sentence 2 is a theorem
+[PASS] 6b translations preserving the pair: 2Z^3 and (1,1,1)+2Z^3 only; a 90 deg turn about a cube centre preserves it, about a site does not  translations mod 2: [(0, 0, 0), (1, 1, 1)]
+[PASS] 6c an equal-edge Hermitian hop squares to 1 iff every face carries phase -1; the spin-3/2 W has it (so the CL-3 phase follows from unitarity, up to gauge)  W face |flux| - pi: 6.7e-15; 300 random hops consistent
+== 7. arithmetic with measured numbers (ESTIMATES, not theorems)
+   per-species b, photon at 1/sqrt3: LHAASO 1.4 PeV gamma survives => 1 - cos b_e < 2.66e-19 => b_e < 7.30e-10; pi-reading partner 2b hbar/tau < 3.08e+09 GeV
+   same for muon (gamma -> mu mu): b_mu < 1.5e-07; proton: b_p < 1.3e-06
+   universal b: the bound is gone (3b,3e); residual speed offset ~ mu^2/24 = 2.4e-45 (electron)
+   per-species small b (0-reading): e e -> e e + pi-pair + 6.2e+09 GeV of light quanta is open at any energy; sigma ~ alpha^3/M^2 ~ 4.0e-54 cm^2;
+   solar core (n_e 1e26/cc, v 1e9 cm/s, 2.2e31 cc): ~9e+38/s x 6e+09 GeV = 9e+45 erg/s vs L_sun 3.8e33 (needs quantised links)
+   wrap events inject 2pi hbar/tau = 1.33e+19 GeV each; keeping the injected density below rho_crit over the age needs
+   a rate < 1e-180 per cell-tick; at ~alpha per quantum and unit phase space that asks pi/eps >~ 84 quanta, eps <~ 0.037
+   b = (pi - 1/2)/2 (eps = 0.25, the |w| <= 1/2 setting): pi/eps = 12.6 -> rate ~ alpha^13 ~ 2e-28 per cell-tick: fails the crude bound
+   universal small eps: band-top (pi-cone) states at 2 eps hbar/tau = 4.22e+18 GeV (eps-independent); Boltzmann at T = 1.6e16 GeV (r < 0.036 inflation scale): exp(-264)
+   normal-orientation thermal relic at M = 3.1e+09 GeV: sigma v ~ pi alpha^2/M^2 = 2.1e-40 cm^3/s -> Omega h^2 ~ 1e+13 if T_RH > M/25
+supplied: CL-3 tick and its b, mu; Yee placement of links; Fock filling of one arc (0-reading); quasi-energy = energy x tau; unit map
+          a = sqrt(8 pi) l_P; quantised links for the rate estimates; all measured numbers. Rates in section 7 are order-of-magnitude only.
+elapsed_seconds 0.2
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

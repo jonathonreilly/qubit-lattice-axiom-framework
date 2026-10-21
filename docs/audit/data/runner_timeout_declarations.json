@@ -750,7 +750,7 @@
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },
     "scripts/frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py": {
-      "source_sha256": "eec17b671ca04df0872ec11f602283fa851121097052c0fe50bba6f69b4064af",
+      "source_sha256": "b258aaf612da4603ac97ce3d320f6d6a693687b0a78b117ae00fc6b732555423",
       "timeout_sec": 300,
       "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
     },

@@ -237,7 +237,7 @@ def part4_all_current_explicit_candidate_points_miss() -> None:
 def part6_n5_execution_certificate() -> None:
     print("per_element: five supplied candidates and numerically located roots")
     print("per_block: imported selected-line constants; no family proof here")
-    print("per_site: no site-resolved calculation")
+    print("per_site: not executed — this runner has no lattice-site index; it evaluates a supplied finite-dimensional 3x3 Hermitian matrix map at scalar m values and five named candidate triples.")
     print("per_mode: three angle coordinates evaluated")
     print("lattice_wide: no lattice calculation; finite parameter scans only")
 

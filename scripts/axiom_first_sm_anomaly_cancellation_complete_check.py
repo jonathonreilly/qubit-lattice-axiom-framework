@@ -4,9 +4,9 @@
 Synthesis runner for
   docs/AXIOM_FIRST_SM_ANOMALY_CANCELLATION_COMPLETE_THEOREM_NOTE_2026-05-03.md
 
-Verifies, in classified PASS lines, that the four perturbative gauge-anomaly
+Verifies, in classified PASS lines, that the five perturbative anomaly
 traces and the nonperturbative SU(2) Witten Z_2 parity all cancel
-simultaneously on the retained Cl(3)/Z^3 left-handed-frame Standard-Model
+simultaneously on the supplied Cl(3)/Z^3 left-handed-frame Standard-Model
 matter content (one generation x n_gen = 3):
 
   (A0)  SU(2)^3                   identically zero by group theory
@@ -34,7 +34,7 @@ FAIL_COUNT = 0
 
 
 # ---------------------------------------------------------------------------
-# Retained Cl(3)/Z^3 LH-frame one-generation Standard-Model content.
+# Supplied Cl(3)/Z^3 LH-frame one-generation Standard-Model content.
 # Doubled-hypercharge convention: Q = T_3 + Y/2.
 # ---------------------------------------------------------------------------
 
@@ -68,7 +68,7 @@ class Field:
 
 # All fields in the LH-conjugate frame (RH species written as LH conjugates).
 # Multiplicities are colour x weak; hypercharges Y satisfy Q = T_3 + Y/2 with
-# the convention used by the retained anomaly notes.
+# the convention used by the supplied anomaly notes.
 ONE_GEN_LH_FRAME = [
     Field("Q_L",    su3_dim=3, su3_anti=False, su2_dim=2, color_mult=3, weak_mult=2, hypercharge=Fraction(1, 3)),
     Field("L_L",    su3_dim=1, su3_anti=False, su2_dim=2, color_mult=1, weak_mult=2, hypercharge=Fraction(-1, 1)),
@@ -117,10 +117,13 @@ def su2_cubic_dabc_norm() -> Fraction:
     """For SU(2), the symmetric d^{abc} = 2 Tr({T^a, T^b} T^c) over the
     fundamental vanishes identically. Compute the norm explicitly using
     Pauli-matrix anti-commutators {sigma_i, sigma_j}/2 = delta_ij * I."""
-    # Explicit: d^{abc} for SU(2) on the fundamental is zero because
-    # {T^a, T^b} = (1/2) delta^{ab} I has no T^c component.
-    # We return a sentinel zero.
-    return Fraction(0, 1)
+    import sympy as sp
+    matrices = [sp.Matrix([[0,1],[1,0]])/2,
+                sp.Matrix([[0,-sp.I],[sp.I,0]])/2,
+                sp.diag(1,-1)/2]
+    components = [2*sp.trace((a*b+b*a)*c)
+                  for a in matrices for b in matrices for c in matrices]
+    return sum(abs(x)**2 for x in components)
 
 
 def check_A0_su2_cubic() -> None:
@@ -132,22 +135,17 @@ def check_A0_su2_cubic() -> None:
         f"d^{{abc}} norm = {val}",
         cls="A0",
     )
-    check(
-        "SU(2) fundamental has {T^a, T^b} = (1/2) delta^{ab} I, no T^c term",
-        True,
-        "anti-commutator closes on identity matrix",
-        cls="A0",
-    )
+    print('INFO: SU(2) fundamental has {T^a, T^b} = (1/2) delta^{ab} I, no T^c term')
 
 
 # ---------------------------------------------------------------------------
-# (A1) SU(3)^3 cubic gauge anomaly: matter-content zero on retained content.
+# (A1) SU(3)^3 cubic gauge anomaly: matter-content zero on supplied content.
 # Source: SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md
 # ---------------------------------------------------------------------------
 
 
 def su3_cubic_anomaly() -> Fraction:
-    """Sum_i m_i A(R_i) over SU(3)-charged retained content."""
+    """Sum_i m_i A(R_i) over SU(3)-charged supplied content."""
     total = Fraction(0)
     for f in ONE_GEN_LH_FRAME:
         if f.su3_dim == 1:
@@ -160,7 +158,7 @@ def su3_cubic_anomaly() -> Fraction:
 
 
 def check_A1_su3_cubic() -> None:
-    banner("(A1) SU(3)^3 cubic gauge anomaly on retained content")
+    banner("(A1) SU(3)^3 cubic gauge anomaly on supplied content")
     print("  Source: SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24")
     val = su3_cubic_anomaly()
     check(
@@ -178,23 +176,14 @@ def check_A1_su3_cubic() -> None:
         Fraction(1) * A_SU3[("3", True)] == Fraction(-1),
         cls="A1",
     )
-    check(
-        "L_L, e_R^c, nu_R^c (SU(3) singlets): contribution = 0",
-        True,
-        cls="A1",
-    )
+    print('INFO: L_L, e_R^c, nu_R^c (SU(3) singlets): contribution = 0')
     check(
         "A_SU3^3 = +2 - 1 - 1 = 0 (exact Fraction)",
         val == Fraction(0),
         f"value = {val}",
         cls="A1",
     )
-    check(
-        "SU(3)^3 cancellation is a real matter-content condition (d^{abc} != 0 for SU(3))",
-        True,
-        "anti-fundamental indices A(3bar) = -1 balance fundamentals A(3) = +1",
-        cls="A1",
-    )
+    print('INFO: SU(3)^3 cancellation is a real matter-content condition (d^{abc} != 0 for SU(3))')
 
 
 # ---------------------------------------------------------------------------
@@ -430,7 +419,7 @@ def check_cross_su3_squared_y() -> None:
 
 
 def check_synthesis_closure() -> None:
-    banner("Synthesis closure: all six anomaly slots vanish on the same retained surface")
+    banner("Synthesis closure: all seven anomaly slots vanish on the same supplied surface")
     A0 = su2_cubic_dabc_norm()
     A1 = su3_cubic_anomaly()
     A2 = su2_squared_y_anomaly()
@@ -474,7 +463,7 @@ def check_synthesis_closure() -> None:
         cls="closure",
     )
     check(
-        "All six anomaly slots vanish simultaneously on the same retained Cl(3)/Z^3 LH-frame matter content",
+        "All seven anomaly slots vanish simultaneously on the same supplied Cl(3)/Z^3 LH-frame matter content",
         all([
             A0 == Fraction(0),
             A1 == Fraction(0),
@@ -482,77 +471,20 @@ def check_synthesis_closure() -> None:
             A3 == Fraction(0),
             A4 == Fraction(0),
             A5 == 0,
+            su3_squared_y_trace() == 0,
         ]),
         cls="closure",
     )
 
 
 # ---------------------------------------------------------------------------
-# Retained-input audit.
+# Supplied-input audit.
 # ---------------------------------------------------------------------------
 
 
-def check_retained_inputs() -> None:
-    banner("Retained inputs audit (load-bearing source theorems and upstream notes)")
-    check(
-        "Component theorem 1 (A1): SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24",
-        True,
-        "post-PR-iter1 hygiene applied",
-        cls="audit",
-    )
-    check(
-        "Component theorem 2 (A2/A3/A4 LH side): LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25",
-        True,
-        "post-PR-iter1 hygiene applied",
-        cls="audit",
-    )
-    check(
-        "Component theorem 3 (A5): SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24",
-        True,
-        "post-PR-iter1 hygiene applied",
-        cls="audit",
-    )
-    check(
-        "Companion: STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24 (RH solve)",
-        True,
-        cls="audit",
-    )
-    check(
-        "Companion: RH_SECTOR_ANOMALY_CANCELLATION_IDENTITIES_NOTE_2026-05-02 (LH+RH explicit)",
-        True,
-        cls="audit",
-    )
-    check(
-        "Upstream: NATIVE_GAUGE_CLOSURE_NOTE (native cubic SU(2) on Cl(3)/Z^3)",
-        True,
-        cls="audit",
-    )
-    check(
-        "Upstream: GRAPH_FIRST_SU3_INTEGRATION_NOTE (N_c = 3 colour count)",
-        True,
-        cls="audit",
-    )
-    check(
-        "Upstream: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE (n_gen = 3)",
-        True,
-        cls="audit",
-    )
-    check(
-        "Upstream: LEFT_HANDED_CHARGE_MATCHING_NOTE (Q_L, L_L content + Y values)",
-        True,
-        cls="audit",
-    )
-    check(
-        "Upstream: ONE_GENERATION_MATTER_CLOSURE_NOTE (RH completion)",
-        True,
-        cls="audit",
-    )
-    check(
-        "No observed mass, charge, mixing angle, or cross-section enters synthesis",
-        True,
-        "all arithmetic is exact rational/integer",
-        cls="audit",
-    )
+def check_supplied_inputs() -> None:
+    print("INFO: matter representations, hypercharges, three generations and group indices are supplied.")
+    print("INFO: rational cancellation checks do not derive this assignment or audit its sources.")
 
 
 # ---------------------------------------------------------------------------
@@ -562,15 +494,15 @@ def check_retained_inputs() -> None:
 
 def main() -> int:
     print("=" * 80)
-    print("AXIOM-FIRST SM ANOMALY CANCELLATION COMPLETE CHECK")
+    print("SUPPLIED SM ASSIGNMENT: ANOMALY CONSISTENCY CHECK")
     print("=" * 80)
     print()
-    print("Synthesis: four perturbative gauge-anomaly traces (A1)-(A4)")
+    print("Synthesis: five perturbative traces (A1)-(A4) plus mixed SU(3)^2 Y")
     print("           plus nonperturbative SU(2) Witten Z_2 parity (A5)")
     print("           plus group-theoretic SU(2)^3 zero (A0)")
-    print("           on retained Cl(3)/Z^3 LH-frame SM matter content.")
+    print("           on supplied Cl(3)/Z^3 LH-frame SM matter content.")
     print()
-    print("Retained matter content (LH-conjugate frame, doubled-Y convention):")
+    print("Supplied matter content (LH-conjugate frame, doubled-Y convention):")
     for f in ONE_GEN_LH_FRAME:
         print(
             f"  {f.name:8s} SU(3)={'3bar' if f.su3_anti else f.su3_dim:>4} "
@@ -586,7 +518,7 @@ def main() -> int:
     check_A5_witten_z2()
     check_cross_su3_squared_y()
     check_synthesis_closure()
-    check_retained_inputs()
+    check_supplied_inputs()
 
     print()
     print("=" * 80)

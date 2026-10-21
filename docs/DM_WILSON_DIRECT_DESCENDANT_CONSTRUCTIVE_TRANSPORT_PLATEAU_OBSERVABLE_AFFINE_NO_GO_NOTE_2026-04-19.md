@@ -1,5 +1,7 @@
 # DM Wilson Direct-Descendant Constructive Transport Plateau Observable-Affine No-Go
 
+**Type:** no_go
+
 **Date:** 2026-04-19  
 **Status:** exact no-go theorem for a named source-side plateau-breaker family.
 On the current constructive transport plateau, exact affine laws in the

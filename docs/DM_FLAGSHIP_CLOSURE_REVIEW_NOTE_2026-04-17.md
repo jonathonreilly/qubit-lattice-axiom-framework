@@ -1,5 +1,7 @@
 # DM Flagship Gate — Open-Gate Review
 
+**Type:** open_gate
+
 **Date:** 2026-04-17 (2026-04-18 P3 Sylvester update applied)
 **Status:** **OPEN flagship lane.** On the live DM-neutrino source-oriented
 sheet the old pointwise P3 branch-choice rule is no longer merely imposed:
@@ -19,7 +21,7 @@ review-facing current-bank quantitative mapping item is now closed by
 previously-listed `q_H = 0` conditional has been discharged as GAUGE
 (retained)** via the Higgs `Z_3`-charge gauge-redundancy theorem.
 **Framework convention:** "axiom" means only the single framework axiom `Cl(3)` on `Z^3`.
-**Runner coverage:** 16 frontier runners, **PASS = 513, FAIL = 0**. This now
+**Historical runner coverage:** 16 frontier runners, **PASS = 513, FAIL = 0**. This record
 includes the dedicated P3 Sylvester linear-path signature theorem runner
 (`PASS = 11, FAIL = 0`). The integrated table below is preserved as the
 pre-2026-04-18 route record; its older row labels should be read in that
@@ -46,33 +48,21 @@ The story has four movements:
    what follows as a **conditional reference** (the scalar-commutant class),
    NOT as theorem-native live-sheet curvature.
 
-2. **Systematic obstruction tour.** Ten independent runners prove that no
-   sole-axiom functional on the retained atlas can pin `(δ, q_+)` at the
-   local-polynomial microscopic level. Each obstruction is a new retained
-   theorem in its own right.
+2. **Scoped selector investigations.** The runner collection explores
+   particular selector candidates. The corrected Gaussian and source-only
+   polynomial calculations do not exhaust or rule out all local selectors.
 
-3. **Closure via observational promotion.** Direct diagonalization of the
-   retained affine Hermitian `H(m, δ, q_+)` on `H_hw=1`, with the charged-
-   lepton mass basis fixed via the `q_H = 0` branch of the Z_3 trichotomy,
-   yields an explicit retained map
-    ```
-    (m, δ, q_+) ↦ (sin²θ_12, sin²θ_13, sin²θ_23, δ_CP)
-    ```
-   on the chamber `q_+ ≥ √(8/3) − δ`. Observational PMNS (PDG 2024 / NuFit
-   5.3 NO central) pins the unique perturbative-regime chamber solution
-    ```
-    (m_*, δ_*, q_+*) = (0.657061, 0.933806, 0.715042).
-    ```
+3. **Conditional numerical P3 candidate.** The supplied affine Hermitian
+   chart, charged-lepton basis and row pairing define mixing observables on
+   the nondegenerate, nonzero-angle-denominator domain. Fitting the three
+   supplied historical angles gives `(0.657061,0.933806,0.715042)` in the
+   finite search. Neither global uniqueness nor physical branch selection
+   follows from the multistart calculation.
 
-4. **Downstream unlock + falsifiable consequences.** PMNS is promoted from
-   atlas-open to a retained `f(H)` map on the chamber, unlocking flavor /
-   cosmology / leptogenesis downstream. The conditional/support chamber pin
-   produces two independent falsifiable consequences:
-    ```
-    sin(δ_CP) = −0.9874,   δ_CP ≈ −81° (= 279°),   |J| = 0.0328
-    s_23² ≥ 0.5410    (upper octant required for chamber closure)
-    ```
-   both falsifiable at DUNE / JUNO / Hyper-Kamiokande.
+4. **Conditional downstream evaluation.** The candidate gives
+   `sin(delta_CP)=-0.9874`, `cos(delta_CP)=-0.15849` and
+   `delta_CP=260.88°`. It can be evaluated with its supplied premises;
+   this does not promote PMNS or close the downstream physics gates.
 
 ## Why this matters
 
@@ -90,14 +80,14 @@ attack-and-closure runs. Each runner is self-contained with PASS/FAIL harness.
 | # | Role | Runner | PASS | Result |
 |---|------|--------|-----:|--------|
 | 1 | baseline (commutant-class lemma only) | `frontier_dm_neutrino_source_surface_schur_scalar_baseline_theorem.py` | 26 | Conditional commutant-class Schur lemma: `D = m I_3` _if_ `D` commutes with the retained algebra on `H_hw=1`. Part 6 live-sheet witness: `H_live` at the closure pin does NOT commute with retained generators (`‖[H_live, C_3]‖_F ≈ 3.96`; `‖[H_live, P_i]‖_F ≠ 0` for `i=1,2,3`). Live-sheet commutation premise is NOT derived here. |
-| 2 | obstruction | `frontier_dm_neutrino_source_surface_info_geometric_selection_obstruction.py` | 26 | Quadratic Unanimity + Cubic Splitting |
+| 2 | obstruction | `frontier_dm_neutrino_source_surface_info_geometric_selection_obstruction.py` | historical 26 | Superseded by local expansion and Gaussian domain correction |
 | 3 | obstruction | `frontier_dm_neutrino_source_surface_cubic_variational_obstruction.py` | 26 | Z_3 cubic variational obstruction |
 | 4 | obstruction | `frontier_dm_neutrino_source_surface_z3_parity_split_theorem.py` | 22 | Z_3 parity-split: parity-definite scalars are 1-D on `(δ, q_+)` |
 | 5 | obstruction | `frontier_dm_neutrino_transport_chamber_blindness_theorem.py` | 16 | Transport chain blind to chamber motion |
 | 6 | obstruction | `frontier_dm_neutrino_source_surface_parity_mixing_selection_obstruction.py` | 27 | Parity-mixing candidate + selection ambiguity |
 | 7 | obstruction | `frontier_dm_neutrino_observable_bank_exhaustion_theorem.py` | 36 | Retained observable bank exhausted; P1/P2/P3 stratification |
 | 8 | obstruction | `frontier_dm_neutrino_source_surface_quartic_isotropy_and_u2_obstruction.py` | 18 | U(2)-invariance obstruction + quartic-isotropy identity `Tr(J⁴) = ½[Tr(J²)]²` |
-| 9 | obstruction | `frontier_dm_neutrino_source_surface_microscopic_polynomial_impossibility_theorem.py` | 35 | Microscopic-polynomial impossibility on `(δ, q_+)` |
+| 9 | obstruction | `frontier_dm_neutrino_source_surface_microscopic_polynomial_impossibility_theorem.py` | historical 35 | Superseded by source-only reflection and full-affine counterexample |
 | 10 | obstruction | `frontier_dm_neutrino_source_surface_bifundamental_invariance_obstruction_theorem.py` | 37 | K_doublet is Hermitian ⇒ only U(2) adjoint, not bifundamental |
 | 11 | branch-choice rule (conditional admissibility) | `frontier_dm_neutrino_source_surface_perturbative_uniqueness_theorem.py` | 46 | Sylvester inertia preservation on the baseline-connected component picks Basin 1 _given_ the imposed branch-choice admissibility rule. The rule itself is NOT a retained theorem on this branch (Option B open item). |
 | 12 | tightening | `frontier_pmns_theta23_upper_octant_chamber_closure_prediction.py` | 31 | θ_23 upper-octant conditional/support consequence; threshold `s_23²_min = 0.5410` |
@@ -145,16 +135,17 @@ see Option B note in the *Still open* section.
 
 ## The obstruction tour
 
-Nine independent obstruction theorems prove that no sole-axiom functional on
-the retained atlas pins `(δ, q_+)` at the local-polynomial microscopic level.
+These investigations concern specified candidate families. Their number and
+PASS receipts do not establish independence or an exhaustive no-go.
 
 ### Info-geometric selection obstruction
 → [DM_NEUTRINO_SOURCE_SURFACE_INFO_GEOMETRIC_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md](./DM_NEUTRINO_SOURCE_SURFACE_INFO_GEOMETRIC_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md)
 
-Quadratic Unanimity Theorem — natural info-geometric functionals (minus-W,
-KL, Fisher, Frobenius) are isotropic at quadratic order and share the
-`(√6/3, √6/3)` chamber minimum. Cubic Splitting Obstruction — at cubic order
-they split by O(1); no axiom-native tiebreaker.
+The four displayed scalar-baseline quadratics share the formal boundary
+minimum `(√6/3, √6/3)`. The corrected Gaussian coefficient is 3 and its
+Hessian is 6 times the identity at m=1. The entire m=1 boundary lies outside
+the positive covariance domain, so the former full-KL minimizer comparison
+is withdrawn. Local cubic coefficients do not prove a global selector no-go.
 
 ### Cubic variational selection obstruction
 → [DM_NEUTRINO_SOURCE_SURFACE_CUBIC_VARIATIONAL_OBSTRUCTION_NOTE_2026-04-17.md](./DM_NEUTRINO_SOURCE_SURFACE_CUBIC_VARIATIONAL_OBSTRUCTION_NOTE_2026-04-17.md)
@@ -205,15 +196,14 @@ different minimizers. Full-W fixed-m argmax is m-dependent at all 9 tested m
 values. New identity: `Tr(J⁴) = (1/2)[Tr(J²)]²` at scalar baseline — no new
 parity-mixing information at quartic order.
 
-### Microscopic-polynomial impossibility theorem
+### Source-only spectral reflection (corrected scope)
 → [DM_NEUTRINO_SOURCE_SURFACE_MICROSCOPIC_POLYNOMIAL_IMPOSSIBILITY_THEOREM_NOTE_2026-04-17.md](./DM_NEUTRINO_SOURCE_SURFACE_MICROSCOPIC_POLYNOMIAL_IMPOSSIBILITY_THEOREM_NOTE_2026-04-17.md)
 
-Every retained polynomial microscopic functional of `H` (trace moments,
-`det(H)`, heat kernel, spectral gap, Ward identities, Cl(3) bivector
-invariants) is EVEN in δ and depends on `(δ, q_+)` only through `(δ², q_+)`.
-The axiom is GENUINELY SILENT on `(δ, q_+)` at the local-polynomial level.
-Closure requires a nonlocal / observational ingredient — which forces the P3
-lane below.
+The source-only family has an exact reflection similarity under δ→−δ.
+This proves spectral sign blindness only for that family. For full affine H,
+`tr(H(δ)^2)-tr(H(−δ)^2)=-32√6 δ/3`, so the previous extension is false.
+Even source-only evenness does not exclude a unique minimum on δ≥0.
+The claim that local microscopic selection is impossible is withdrawn.
 
 ### Bifundamental-invariance obstruction theorem
 → [DM_NEUTRINO_SOURCE_SURFACE_BIFUNDAMENTAL_INVARIANCE_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md](./DM_NEUTRINO_SOURCE_SURFACE_BIFUNDAMENTAL_INVARIANCE_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md)
@@ -236,7 +226,9 @@ package surfaced five issues. Three dedicated theorems close them.
 The retained observable `W[J] = log|det(H_base + J)|` is well-defined on
 the complement of the caustic `det(H_base + J) = 0`. Its natural domain on
 the source-oriented sheet is the connected component containing `J = 0`,
-equivalently the set of `J` preserving the retained signature
+which necessarily preserves the signature below. The converse is not
+established on this restricted affine chart: equal inertia need not prove
+connectedness. The signature is
 
 $$
 \operatorname{signature}(H_{\text{base}} + J) = \operatorname{signature}(H_{\text{base}}) = (2, 0, 1).
@@ -245,7 +237,8 @@ $$
 Signature is a Sylvester congruence-invariant of Hermitian forms. What we
 use this for is a **branch-choice admissibility rule**: if the physical PMNS
 closure is required to live on the baseline-connected non-caustic component,
-then exactly one of the χ²=0 chamber basins is admissible.
+the two sampled opposite-signature basins are excluded. This does not
+prove exhaustive enumeration or uniqueness of the remaining component.
 
 **Important honest label.** The statement "the physical PMNS closure must
 remain on the baseline-connected non-caustic component" is NOT a retained
@@ -257,16 +250,16 @@ but it remains a branch-choice rule rather than a derived selector.
 
 Consequence for the chamber χ²=0 basins:
 
-| Branch | `(m, δ, q_+)` | sin(δ_CP) | `signature(H)` | `det(H)` | baseline-connected? |
+| Branch | `(m, δ, q_+)` | sin(δ_CP) | `signature(H)` | `det(H)` | same baseline signature? |
 |---|---|---:|---|---:|---|
 | Basin 1, σ=(2,1,0) | (0.657, 0.934, 0.715) | −0.987 | **(2, 0, 1)** | **+0.959** | **YES** |
 | Basin 2, σ=(2,1,0) | (28, 21, 5) | +0.554 | (1, 0, 2) | −70377 | no (signature flipped) |
 | σ=(2,0,1) cluster | (21, 13, 2) | −0.419 | (1, 0, 2) | −20295 | no (signature flipped) |
 
-*Given* the imposed branch-choice rule, the competing basins are excluded by
-signature flip across the caustic and Basin 1 is the unique baseline-connected
-chamber closure. *Without* the branch-choice rule the basin-uniqueness claim
-is not established.
+The two sampled opposite-signature basins cannot be joined to the baseline
+without crossing a zero eigenvalue. The sampled Basin 1 passes the inertia
+comparison. Neither that comparison nor multistart proves global uniqueness
+or connectedness of every point with the same inertia.
 
 Scale diagnostics remain recorded for transparency: `‖J‖_F / ‖H_base‖_F`
 is 0.94 at Basin 1 vs 20.9 and 13.9 at the competing basins; the scale
@@ -311,77 +304,38 @@ Dirac-bridge theorem's open `C^16 → 3×3` normalization step.
 
 → [PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md](./PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md)
 
-With sole-axiom variational routes exhausted (microscopic-polynomial
-impossibility + bifundamental obstruction + parity-split + info-geometric
-splitting), closure proceeds through the observational-promotion P3 lane.
+The following observational P3 construction is a conditional candidate.
+The preceding investigations do not prove that all sole-axiom or local
+variational routes are exhausted.
 
-**Main theorem (retained-grade map).** Direct diagonalization of the
-retained affine Hermitian `H(m, δ, q_+)` on `H_hw=1`, with the charged-
-lepton mass basis fixed to the axis basis by the Z_3 trichotomy `q_H = 0`
-branch and row-permuted by the hierarchy pairing `σ = (2, 1, 0)`, yields
-an explicit retained map
+**Conditional map.** With the affine chart, charged-lepton basis and row
+pairing supplied, sorted eigenvectors define the PMNS invariants wherever the
+spectrum is nondegenerate and the angle denominators are nonzero. No global
+smooth map across degeneracies is asserted.
 
-$$
-(m, \delta, q_+) \;\longmapsto\; (\sin^2\theta_{12},\ \sin^2\theta_{13},\ \sin^2\theta_{23},\ \delta_{CP})
-$$
+**Numerical fitted candidate.** With supplied values
+`(s12²,s13²,s23²)=(0.307,0.0218,0.545)`, finite multistart search and local
+refinement produce `(m,delta,q_+)=(0.657061,0.933806,0.715042)`. This is not
+an exhaustive uniqueness certificate or proof of Jacobian nonsingularity.
+Inertia preservation is necessary along a non-caustic connected path; equal
+inertia alone does not identify a connected component of this affine slice.
 
-on the chamber `q_+ ≥ √(8/3) − δ`.
+At this candidate both phase invariants give `delta_CP=260.88°`, with
+`sin(delta_CP)=-0.9874`, `cos(delta_CP)=-0.15849` and `|J|≈0.0328`.
+The three angles are fitted inputs; the phase is conditional on those inputs,
+the chart and the pairing. The nine modulus comparisons use the runner's
+supplied historical NuFit 5.3 intervals, not a current experimental likelihood.
 
-**Pinning statement (unique baseline-connected chamber solution under the
-imposed branch-choice rule).** Requiring the map to reproduce PDG 2024
-central observational values `(sin²θ_12, sin²θ_13, sin²θ_23) = (0.307,
-0.0218, 0.545)`, *subject to the imposed admissibility rule that the closure
-lies on the baseline-connected (signature-preserving) non-caustic component*,
-has a unique chamber solution
+## Claim boundary
 
-$$
-\boxed{(m_*,\ \delta_*,\ q_+^*) \;=\; (0.657061,\ 0.933806,\ 0.715042)}
-$$
+### What is claimed
 
-verified by multi-start Nelder-Mead + fsolve sharpening to machine
-precision. The two competing in-chamber χ²=0 basins sit on the
-`signature = (1, 0, 2)` component with `det(H_base + J) < 0`; they are
-excluded *if and only if* the branch-choice rule is imposed. Without that
-rule the three basins are all admissible.
-
-**Falsifiable δ_CP consequence.** The map sends `R^3` to a 3-dim submanifold
-of `R^4`; three observational inputs pin `(m, δ, q_+)`, and δ_CP is the
-forced geometric consequence:
-
-$$
-\boxed{\sin\delta_{CP} = -0.9874, \quad \delta_{CP} \approx -81° \;(\equiv 279°), \quad |J| = 0.0328}
-$$
-
-in the T2K-preferred lower octant. Disagreement with future measurements at
-DUNE / Hyper-Kamiokande falsifies the construction (not just the pin).
-
-**Observational consistency.** All nine entries of `|U_PMNS|` at the pinned
-point lie inside the NuFit 5.3 NO 3σ ranges (9/9 PASS).
-
-## Claim boundary (non-negotiable, Option A honest labels)
-
-### What is claimed (conditional / support)
-
-1. **Retained map construction.** `(m, δ, q_+) → (θ_ij, δ_CP)` is a
-   retained-grade map on the chamber constructed from retained inputs
-   only (affine chart + chamber + three-generation observable theorem +
-   Z_3 trichotomy gauge-redundancy `q_H = 0` [retained], plus the
-   scalar-commutant-class Schur reference used as a structural lemma
-   only).
-2. **Conditional / support closure via P3 lane.** Retained map + PDG PMNS
-   data + imposed branch-choice admissibility rule (baseline-connected
-   non-caustic component, i.e. signature preservation) → unique chamber pin.
-   This is a **conditional / support closure**, NOT a retained-grade sole-axiom
-   closure and NOT a retained-grade selector closure. The imposed branch-choice
-   admissibility principle is load-bearing and is not itself derived from
-   retained framework structure.
-3. **Falsifiable predictions (given the conditional selector).**
-   `sin δ_CP = −0.9874` (CP phase) and `s_23² ≥ 0.5410` (θ_23 upper octant).
-   Both testable at DUNE / JUNO / Hyper-Kamiokande.
-4. **PMNS conditional support on the chamber** as `f(H)` under the listed
-   conditions. The downstream flavor / cosmology / leptogenesis lanes remain
-   open pending the full retained closure; the conditional support still gives
-   a concrete chamber point for evaluation.
+The corrected primary note supplies a conditional matrix map and one
+numerically fitted candidate. The physical source/branch and hierarchy
+selection, global solution census, absolute mass scale, solar gap and Majorana
+phases remain open. No retained promotion or downstream closure follows.
+The separate historical upper-octant analysis is not established by this
+phase correction or finite candidate fit.
 
 ### What is NOT claimed
 
@@ -392,8 +346,8 @@ point lie inside the NuFit 5.3 NO 3σ ranges (9/9 PASS).
   commutation premise is not derived.
 - **NOT retained-theorem selector for basin uniqueness.** The source-branch
   selector is an imposed branch-choice / conditional admissibility rule.
-- **Not sole-axiom closure.** The microscopic-polynomial impossibility
-  theorem proves sole-axiom closure at that level is IMPOSSIBLE.
+- **Not sole-axiom closure.** No source-selection principle is derived here;
+  the corrected source-only polynomial result does not prove impossibility.
 - **Not solar-gap `Δm²_21`** (different carrier than H).
 - **Not absolute neutrino mass scale** (different carrier).
 - **Not Majorana CP phases** (separate sector).
@@ -419,9 +373,8 @@ point lie inside the NuFit 5.3 NO 3σ ranges (9/9 PASS).
 1. Solar gap `Δm²_21` (different carrier).
 2. Absolute neutrino mass scale (different carrier).
 3. Majorana CP phases `α_21, α_31` (separate Majorana sector).
-4. Sole-axiom closure of the selector principle: impossible at
-   microscopic-polynomial level (proven); a nonlocal sole-axiom route
-   remains hypothetically possible.
+4. Sole-axiom source selection remains open. The corrected polynomial
+   calculation does not require that any successful route be nonlocal.
 5. P1 / P2 alternative promotion lanes — identified by the observable-
    bank exhaustion theorem, complementary to the realized P3 closure.
 6. **Live-sheet Schur commutation premise (Option B item 1 — OPEN).**
@@ -470,7 +423,7 @@ landing reduces the residual conditional load from three to two.
 
 ## Runner verification
 
-All 15 runners pass on the current surface. Reproduce with:
+Historical aggregate runner inventory (not refreshed by this scoped repair):
 
 ```
 PYTHONPATH=scripts python3 scripts/frontier_*_theorem.py
@@ -480,7 +433,7 @@ PYTHONPATH=scripts python3 scripts/frontier_pmns_from_dm_neutrino_source_h_diago
 PYTHONPATH=scripts python3 scripts/frontier_higgs_z3_charge_pmns_gauge_redundancy_theorem.py
 ```
 
-Expected: total PASS = 502, FAIL = 0.
+Historical total: PASS=502, FAIL=0. Do not use this total as current execution evidence.
 
 ## Position on the flagship paper surface (honest Option-A labels)
 
@@ -495,19 +448,9 @@ for inclusion as a support track describing the chamber pin and its
 falsifiable `sin δ_CP` / upper-octant consequences, _given_ the stated
 conditionality.
 
-Suggested conditional / support wording (for future inclusion rather than
-current arxiv-level promotion):
-
-> The DM-neutrino source-oriented sheet admits a retained-grade map
-> `(m, δ, q_+) → (θ_ij, δ_CP)` on the chamber. Under the imposed branch-
-> choice admissibility rule that the physical closure remains on the
-> baseline-connected (signature-preserving) non-caustic component, PDG 2024
-> central PMNS angles pin a unique chamber point
-> `(m_*, δ_*, q_+*) = (0.657061, 0.933806, 0.715042)` and the map then
-> forces `sin δ_CP = −0.9874` together with the falsifiable θ_23 upper-octant
-> threshold `s_23² ≥ 0.5410`. This is a conditional-support closure; the
-> branch-choice rule and the Schur scalar-baseline lemma are flagged as
-> conditional / commutant-class ingredients rather than retained theorems.
+For future use, describe P3 as a supplied-chart numerical fit with a
+conditional phase value. Global uniqueness, a component classification and
+physical source selection are not provided by the present finite search.
 
 ## What this file must never say
 
@@ -518,9 +461,8 @@ current arxiv-level promotion):
   commutation premise is not derived).
 - that the source-branch selector is a retained theorem (it is an imposed
   branch-choice / conditional admissibility rule).
-- that the δ_CP prediction is a fit parameter (it is a forced geometric
-  consequence of the retained map, given the conditional selector).
-- that PMNS is closed sole-axiom (the map is retained-grade; the pinning
+- that the δ_CP prediction is a fit parameter (it is a consequence of the supplied map at the fitted candidate).
+- that PMNS is closed sole-axiom (the map is conditional; the pinning
   uses 3 observational PMNS values plus the conditional selector).
 - that the DM flagship cascade is now fully sole-axiom.
 - that a Frobenius / operator-norm scale bound is the primary basin
@@ -529,3 +471,11 @@ current arxiv-level promotion):
   Basin 1 amplitude (the log-det observable is defined on any non-caustic
   component by direct diagonalisation; the series-disk `ρ < 1` is an
   honest analytic-representation boundary, not a retained selector).
+
+## Phase reconstruction correction (2026-10-21)
+
+The former −81° / 279° value used only `asin(sin δ)`, which loses the
+quadrant. At the same supplied chamber pin the matrix gives
+`sin δ ≈ −0.98736` and `cos δ ≈ −0.15849`; `atan2` gives
+`δ ≈ 260.88°`. No input angles, source parameters, or pairing were changed.
+This is a conditional matrix output, not independent validation of the fit.

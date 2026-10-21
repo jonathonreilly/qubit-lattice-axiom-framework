@@ -1,23 +1,14 @@
 #!/usr/bin/env python3
-"""Bounded proof-walk for time-dimension d_t = 1 lattice-action independence.
+"""Conditional anomaly/parity arithmetic with supplied reconstruction and clock cap.
 
-This runner supports
-docs/DT1_TIME_DIMENSION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-08.md.
-It checks the exact algebraic facts that feed the time-piece argument
-of the cited time theorem (Steps 1--4 of ANOMALY_FORCES_TIME_THEOREM.md)
-and verifies that the note's load-bearing proof-walk is limited to
-chiral-content multiplicities, group-index bookkeeping, exact rational
-arithmetic, the Clifford-algebra classification of the volume element,
-the cited chirality grading, and the cited single-clock codimension-1
-evolution structure.
-
-Honest scope: the spatial dimension d_s = 3 is given by the framework
-axiom A2 (Z^3 substrate); it is NOT derived from a proof-walk in this
-note and NOT derived from anomaly cancellation in the source theorem.
-The narrow proof-walked claim here is the temporal piece d_t = 1 only.
+No full-chain lattice-independence or physical time derivation is checked.
+Metadata checks concern source identity/presence only.
 """
 
 from __future__ import annotations
+
+# Bind actual documentary reads/existence checks to cache identity.
+AUDIT_INPUT_PATHS = ['docs/DT1_TIME_DIMENSION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-08.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/ANOMALY_FORCES_TIME_THEOREM.md', 'docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md', 'docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md', 'docs/LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md', 'docs/ONE_TIME_DIMENSION_DT1_REDUCES_TO_EMERGENT_DYNAMICS_GATE_OPEN_GATE_NOTE_2026-06-17.md', 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md']
 
 from fractions import Fraction
 from pathlib import Path
@@ -47,6 +38,14 @@ def check(name: str, ok: bool, detail: str = "") -> bool:
     return ok
 
 
+def metadata(name: str, ok: bool, detail: str = "") -> bool:
+    global FAIL
+    print(f"  [METADATA {'OK' if ok else 'FAIL'}] {name} {detail}")
+    if not ok:
+        FAIL += 1
+    return ok
+
+
 def section(title: str) -> None:
     print()
     print("-" * 88)
@@ -59,67 +58,25 @@ NOTE_FLAT = re.sub(r"\s+", " ", NOTE_TEXT)
 
 
 def check_note_structure() -> None:
-    section("note structure and scope")
-    required = [
-        "Claim type:** bounded_theorem",
-        "Proposal allowed:** false",
-        "source-note proposal only",
-        "does not add a new axiom",
-        "does not use lattice-action machinery",
-        "Proof-Walk",
-        "Exact Arithmetic Check",
-        "Boundaries",
-        "ANOMALY_FORCES_TIME_THEOREM",
-        "AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03",
-        "CPT_EXACT_NOTE",
-        "MINIMAL_AXIOMS_2026-05-03",
-        "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03",
-    ]
-    for marker in required:
-        check(f"contains marker: {marker[:56]}", marker in NOTE_TEXT or marker in NOTE_FLAT)
-
-    blocked_broad_language = [
-        ("broad framing phrase 1", ("algebraic", "universality")),
-        ("broad framing phrase 2", ("(S)+(T)+(J)", "joint")),
-        ("broad framing phrase 3", ("joint", "forcing")),
-        ("broad framing phrase 4", ("two-axiom", "claim")),
-        ("broad framing phrase 5", ("Every", "prediction", "listed")),
-    ]
-    lower = NOTE_TEXT.lower()
-    for label, parts in blocked_broad_language:
-        marker = " ".join(parts)
-        check(f"broad framing stripped: {label}", marker.lower() not in lower)
+    section("source metadata, not mathematical evidence")
+    for marker in ["Claim type:** bounded_theorem", "Proposal allowed:** false",
+                   "P-HY", "P-COMP", "P-REC", "B-AXIS",
+                   "full-chain", "d_t<=1", "doubled representations"]:
+        metadata(f"scope marker: {marker}", marker in NOTE_TEXT)
 
 
 def check_honest_scope() -> None:
-    section("honest scope (d_s = 3 from A2, not derived)")
-    # The note must explicitly name d_s = 3 as an A2 substrate-axiom input.
-    must_state_a2_input = [
-        "d_s = 3` is given directly by the\n  framework axiom A2",
-        "NOT derived from a proof-walk in this",
-        "NOT derived from\n  anomaly cancellation",
-        "narrow proof-walked claim here is the temporal piece `d_t = 1`",
-    ]
-    for marker in must_state_a2_input:
-        check(
-            f"states honest A2 scope: {marker[:60].splitlines()[0]}",
-            marker in NOTE_TEXT,
-        )
+    metadata("full-chain independence withdrawn", "withdraws the older full-chain assertion" in NOTE_TEXT)
 
 
 def check_dependencies_exist() -> None:
-    section("dependency files")
-    deps = [
-        "docs/ANOMALY_FORCES_TIME_THEOREM.md",
-        "docs/CPT_EXACT_NOTE.md",
-        "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
-        "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
-        "docs/LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
-        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
-    ]
-    for rel in deps:
-        check(f"dependency exists: {rel}", (ROOT / rel).exists())
+    for rel in ["MINIMAL_AXIOMS_2026-06-29.md", "ANOMALY_FORCES_TIME_THEOREM.md",
+                "CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+                "STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md",
+                "LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md",
+                "ONE_TIME_DIMENSION_DT1_REDUCES_TO_EMERGENT_DYNAMICS_GATE_OPEN_GATE_NOTE_2026-06-17.md",
+                "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"]:
+        metadata(f"dependency exists: {rel}", (ROOT / "docs" / rel).exists())
 
 
 def check_exact_lh_anomaly_traces() -> None:
@@ -202,59 +159,48 @@ def check_clifford_volume_classification() -> None:
     # omega = gamma_1 ... gamma_n satisfies
     #   omega gamma_mu = (-1)^{n-1} gamma_mu omega
     # n even: anticommutes with all generators -> chirality gamma_5 exists.
-    # n odd:  commutes (central) -> no element anticommutes with all -> no chirality.
-    for n in range(0, 9):
+    # n odd: volume commutes; this does not exclude other gradings on doubled representations.
+    for n in range(1, 9):
         sign = (-1) ** (n - 1)
         # We define "anticommutes" iff sign == -1.
         anticommutes = sign == -1
         chirality_exists = anticommutes
         if n % 2 == 0:
             check(
-                f"n={n} (even): omega anticommutes with gamma_mu, chirality exists",
+                f"n={n} (even): omega anticommutes with gamma_mu, volume anticommutes",
                 chirality_exists,
             )
         else:
             check(
-                f"n={n} (odd): omega is central, no chirality grading",
+                f"n={n} (odd): omega is central, volume is central (no claim about doubled representations)",
                 not chirality_exists,
             )
 
 
 def check_d_s_from_a2_then_d_t_odd() -> None:
-    section("d_s = 3 from A2, then d_t must be odd (Step 3 conclusion)")
+    section("supplied d_s=3 and volume grading imply odd d_t")
     # A2 supplies d_s = 3 directly. Not derived here.
     d_s = 3
-    check("d_s comes from A2 axiom (Z^3 substrate)", d_s == 3)
+    print("INFO: current Lattice axiom supplies d_s=3; legacy A2 label is historical.")
 
-    # Chirality requires d_s + d_t even, so d_t must be odd given d_s = 3.
+    # The supplied volume-element grading requires d_s + d_t even.
     for d_t in range(0, 8):
         n_total = d_s + d_t
         chirality_ok = (n_total % 2) == 0
         if d_t % 2 == 1:
             check(
-                f"d_t = {d_t} (odd): d_s + d_t = {n_total} even, chirality OK",
+                f"d_t = {d_t} (odd): d_s + d_t = {n_total} even, volume grading OK",
                 chirality_ok,
             )
         else:
             check(
-                f"d_t = {d_t} (even): d_s + d_t = {n_total} odd, chirality fails",
+                f"d_t = {d_t} (even): d_s + d_t = {n_total} odd, volume grading fails",
                 not chirality_ok,
             )
 
 
 def check_single_clock_excludes_dt_gt_1() -> None:
-    section("single-clock codim-1 evolution excludes d_t > 1 (Step 4)")
-    # Cited theorem: AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md
-    # is treated as a black box; this check encodes the conclusion only.
-    def single_clock_admits(d_t: int) -> bool:
-        return d_t == 1
-
-    for d_t in range(0, 8):
-        admits = single_clock_admits(d_t)
-        if d_t == 1:
-            check(f"single-clock admits d_t = {d_t}", admits)
-        else:
-            check(f"single-clock excludes d_t = {d_t}", not admits)
+    print("INFO: d_t=1 single-clock exclusion is a separate supplied premise, not tested here.")
 
 
 def check_d_t_unique_one() -> None:
@@ -264,59 +210,19 @@ def check_d_t_unique_one() -> None:
     for d_t in range(0, 8):
         chirality_ok = ((d_s + d_t) % 2) == 0   # Step 3 (Clifford)
         odd_ok = (d_t % 2) == 1                 # Step 3 conclusion (parity)
-        single_clock_ok = d_t == 1              # Step 4 (cited theorem)
+        single_clock_ok = d_t <= 1              # Step 4 (cited theorem)
         if chirality_ok and odd_ok and single_clock_ok:
             survivors.append(d_t)
-    check("only d_t = 1 survives the three constraints", survivors == [1], str(survivors))
+    check("conditional filter with supplied single clock", survivors == [1], str(survivors))
+    check("oddness alone leaves multiple tested dimensions", [d for d in range(8) if (3+d)%2==0] == [1,3,5,7])
 
 
 def check_lattice_action_boundary() -> None:
-    section("load-bearing input boundary")
-    allowed_inputs = {
-        "chiral-content multiplicities",
-        "Dynkin-index bookkeeping",
-        "exact rational arithmetic",
-        "Clifford-algebra classification",
-        "Clifford-volume / sublattice-parity chirality grading",
-        "single-clock codimension-1 evolution structure",
-    }
-    forbidden_inputs = {
-        "Wilson plaquette action",
-        "staggered phases",
-        "Brillouin-zone labels",
-        "link unitaries",
-        "lattice scale",
-        "u_0",
-        "Monte Carlo measurement",
-        "fitted observational value",
-    }
-    for marker in allowed_inputs:
-        check(f"allowed input named: {marker}", marker in NOTE_TEXT)
-    for marker in forbidden_inputs:
-        check(f"forbidden input named only as excluded: {marker}", marker in NOTE_TEXT)
-
-    boundary_items = [
-        "the spatial dimension `d_s = 3`",
-        "bare external ABJ anomaly-to-inconsistency admission",
-        "the staggered-Dirac realization gate",
-        "any continuum-limit numerical claim",
-        "any parent theorem/status promotion",
-    ]
-    for marker in boundary_items:
-        check(f"boundary names non-closed item: {marker}", marker in NOTE_TEXT)
+    print("INFO: absence of lattice-action runtime inputs does not certify transitive premise independence.")
 
 
 def check_no_status_promotion_language() -> None:
-    section("no status-promotion language")
-    forbidden_promotion_phrases = [
-        "retained promotion",
-        "promote to retained",
-        "promote to positive_theorem",
-        "claim_type: positive_theorem",
-        "claim_type: retained",
-    ]
-    for marker in forbidden_promotion_phrases:
-        check(f"absent: {marker}", marker not in NOTE_TEXT)
+    metadata("audit authority disclosed", "independent audit lane" in NOTE_TEXT)
 
 
 def main() -> int:
@@ -335,9 +241,9 @@ def main() -> int:
     print()
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
-        print("VERDICT: bounded proof-walk passes; the time-dimension forcing chain")
-        print("that gives d_t = 1 uses no lattice-action quantity as a load-bearing")
-        print("input.")
+        print("VERDICT: conditional arithmetic checks and source metadata pass.")
+        print("Oddness alone does not select d_t=1; the separate single-clock")
+        print("premise and its dynamics are not derived by this runner.")
     return 0 if FAIL == 0 else 1
 
 

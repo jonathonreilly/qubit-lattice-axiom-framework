@@ -1,5 +1,6 @@
 # Alternative Coupled-Field Probe
 
+**Claim type:** bounded_theorem (supplied conditional scope; no audit status change)
 **Date:** 2026-04-05  
 **Status:** bounded positive for an edge-carried minimal coupled-field architecture on the exact 3D lattice
 
@@ -27,7 +28,7 @@ The frozen probe uses:
 
 - exact 3D lattice with `h = 0.5`, `W = 6`, `L = 30`
 - source strengths `s = 0.001, 0.002, 0.004, 0.008`
-- edge-transport calibration gain `1.427390e-46`
+- edge-transport calibration gain `1.427390e-46`, computed as `FIELD_TARGET_MAX/ref_max`: the chosen ceiling is `FIELD_TARGET_MAX=0.08`, and the unscaled field at the largest source `s=0.008` has `ref_max=5.604634852972827e44` on this geometry. The same gain is held fixed across the sweep. The unnormalized sum of positive path gains produces the large raw field. This is numerical weak-field normalization, not a derived physical coupling, stability result or continuum normalization.
 - transport decay `0.72`
 - transport exponent `0.85`
 

@@ -1,10 +1,11 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_brocard_q_polynomial_perfect_square_decomposition.py
-runner_sha256: 768dd7b9c41d74234363822dfc270b26279cc5d4bee1c3ba3af5b823d9a7076b
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.97
-status: ok
+runner_sha256: c0f3b1bff55025d355eec9594c339fb3539d7d0dba5560b9a3f5e9250498b88b
+input_fingerprint_sha256: 46a334e68cd9b42833a0988f2140367ade46faf27158ff430f91c5b0ee9f1fa4
+timeout_sec: 300
+exit_code: 1
+elapsed_sec: 0.54
+status: nonzero_exit
 ----- stdout -----
 ========================================================================================
 Brocard / Q polynomial scalar-multiple square decomposition audit
@@ -17,19 +18,19 @@ Ground-up status verification of each cited authority
   RETAINED-TIER (load-bearing for closure):
 
     [CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md]
-      Status (extracted): 'proposed_retained NLO CKM-structure corollary on the proposed_promoted atlas/axiom'
-      Tier classification: retained
-  [PASS] Retained-tier verified: CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [FAIL] Retained-tier verified: CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md
 
     [CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md]
-      Status (extracted): 'proposed_retained structural-identity subtheorem of the proposed_promoted CKM'
-      Tier classification: retained
-  [PASS] Retained-tier verified: CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [FAIL] Retained-tier verified: CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
 
     [CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md]
-      Status (extracted): 'proposed_retained standalone structural-identity theorem on `main`.'
-      Tier classification: retained
-  [PASS] Retained-tier verified: CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md
+      Status (extracted): ''
+      Tier classification: unknown
+  [FAIL] Retained-tier verified: CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md
 
 
 ----------------------------------------------------------------------------------------
@@ -178,7 +179,7 @@ Summary of NEW retained content
   All identities exact via sympy; closure on retained-tier authorities only.
 
 ========================================================================================
-TOTAL: PASS=28, FAIL=0
+TOTAL: PASS=25, FAIL=3
 ========================================================================================
 
 ----- stderr -----

@@ -69,6 +69,9 @@ Status: line; closure derived only at extracted retained values.
 
 from __future__ import annotations
 
+# Actual documentary reads/existence checks; presence is not scientific authority.
+AUDIT_INPUT_PATHS = ['docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md', 'docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md', 'docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md']
+
 import math
 import re
 import sys

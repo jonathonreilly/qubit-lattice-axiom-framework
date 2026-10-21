@@ -1,5 +1,6 @@
 # DM Neutrino Weak Even Swap-Reduction Theorem
 
+**Type:** bounded_theorem
 **Date:** 2026-04-15  
 **Status:** support - structural or confirmatory support note
 transfer leg  
@@ -8,7 +9,9 @@ transfer leg
 ## Framework sentence
 
 In this note, “axiom” means only the single framework axiom `Cl(3)` on `Z^3`.
-Everything else is a derived atlas row.
+This is historical terminology. The calculation below separately assumes
+a swap-invariant linear readout; this premise is not derived from carrier
+closure or from the current framework axioms.
 
 ## Question
 
@@ -24,7 +27,7 @@ law beyond a generic `2 x 2` matrix
 
 ## Bottom line
 
-Yes.
+Only with the supplied invariant-readout premise.
 
 The exact weak tensor carrier
 
@@ -33,8 +36,9 @@ The exact weak tensor carrier
 is closed under source-column swap and carries no exact `E/T`-distinguishing
 datum on the current single-axiom stack.
 
-Therefore any exact linear even-response readout defined only on this current
-source carrier must descend to the swap quotient. That forces
+If a linear readout is additionally required to be invariant under the
+source-column swap, it descends to the swap quotient. Under that supplied
+readout premise, the fixed-point equation forces
 
 `M_even = [[v_1, v_1], [v_2, v_2]] = v_even [1, 1]`
 
@@ -46,8 +50,8 @@ Equivalently:
 
 `[E1, E2]^T = v_even (tau_E + tau_T)`.
 
-So the live even-response blocker is no longer a generic `2 x 2` matrix. It is
-only the two-real target vector `v_even`.
+Within the supplied invariant-readout class the remaining object is the
+two-real vector `v_even`; the generic readout problem remains four-real.
 
 ## Exact source-side reason
 
@@ -65,9 +69,9 @@ with
 
 So the exact current source family is closed under `E/T` exchange.
 
-If the even-response readout is exact and built only from this current source
-carrier, then it cannot depend on a column label that the current exact source
-family itself does not distinguish. Therefore it must satisfy
+Family closure does not imply that a readout is invariant. For example,
+`M_even=I_2` is a linear readout on this labeled carrier, but
+`I_2 P_ET != I_2`. We separately impose the readout-invariance premise
 
 `M_even = M_even P_ET`.
 
@@ -93,8 +97,8 @@ Then the exact current even law is simply
 
 `[E1, E2]^T = v_even tau_+`.
 
-This reduces the remaining coefficient problem from four even coefficients to
-two.
+This reduces the coefficient count from four to two only under the supplied
+swap-invariance condition.
 
 ## Why this does not contradict the old Route-2 staging tools
 
@@ -110,39 +114,24 @@ But both are already recorded as **bounded**, not exact.
 So they do not yet supply an exact single-axiom `E/T`-distinguishing readout.
 They remain staging tools, not theorem-grade coefficient laws.
 
-## What this closes
+## Conditional reduction and open premise
 
-This closes the strongest remaining overstatement about the even leg.
-
-The branch can no longer honestly say only:
-
-- “the odd leg is closed but the even leg is still a generic `2 x 2` matrix”
-
-The sharper statement is:
-
-- the current exact source carrier already forces the even map to factor
-  through the symmetric source combination
-- so the live even-response blocker is only the target vector `v_even`
-
-## What this does not close
-
-This note does **not** derive:
-
-- the value of `v_1`
-- the value of `v_2`
-- a new exact two-channel readout that would break the swap quotient
-
-So the even leg is still open, but it is now a two-real problem, not a
-four-real one.
+Given `M_even P_ET=M_even`, the matrix has equal columns and rank at most
+one (rank zero when v_even=0). The coefficient problem then has two real
+parameters. Without that readout-invariance premise a generic real 2x2
+linear map still has four parameters. Source-family closure alone does not
+remove them, nor does it select the values of v_1 or v_2.
 
 ## Benchmark consequence
 
-This sharpening does **not** change the current benchmark:
+This sharpening originally used the following historical, prerepair benchmark
+(not the current direct-ODE result; see the branch table in
+`DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md`):
 
 - `eta = 1.81e-10`
 - `eta / eta_obs ~= 0.30`
 
-The benchmark remains bounded because `v_even` is still not fixed, even though
+That historical benchmark was bounded because `v_even` is still not fixed, even though
 the odd normalization is now closed and the even transfer shape is reduced.
 
 ## Command

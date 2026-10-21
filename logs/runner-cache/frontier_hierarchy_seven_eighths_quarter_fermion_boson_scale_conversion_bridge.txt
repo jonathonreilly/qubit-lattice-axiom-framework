@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge.py
-runner_sha256: 69e555c9e1179bc5129ef95f4856d68f60e623c46926238ce64ee9e0b10fcb67
-timeout_sec: 120
+runner_sha256: a23eadc51347529c710231be6d278e578ea28620c491ad28b0aa5c8d85822c63
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.54
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 Section 1: Named support witnesses for 7/8 at d=4
@@ -19,6 +19,7 @@ Section 2: named competitor spot checks
 Section 3: Stefan-Boltzmann inversion at d=4 (B2)
   PASS: (B1) at d=4, alpha = 1/4 (dimensional fourth-root compression)
   PASS: (B4) ratio inversion: (7/8)^(1/4) ≈ 0.967168 (10⁻¹² precision)
+  PASS: equal-energy T_B/T_F=(7/8)^(1/4); inverse old direction fails
   PASS: d-dependence: (eta(d)/zeta(d))^(1/d) values for d in {2,3,4,5,6}
 
 Section 4: Numerical absorption witness (illustrative)
@@ -38,7 +39,7 @@ Section 6: follow-up diagnostics
   PASS: (F3 diagnostic) d=4 is closest among checked d=3,4,5
 
 ========================================================================
-TOTAL: PASS=18 FAIL=0
+TOTAL: PASS=19 FAIL=0
 VERDICT: bounded support bridge passes; the exact d=4 Stefan-Boltzmann conversion factor is (7/8)^(1/4), with named support witnesses for 7/8 and no fitted observational value used as a load-bearing input.
 
 ----- stderr -----

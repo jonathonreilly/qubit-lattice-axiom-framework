@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
-runner_sha256: ce2d4ef40ce82ef74c05308e14d0b5bf73e90930bd24c7bbfc94a8a5ea2af614
-timeout_sec: 120
+runner_sha256: 392fe7a6a0ddd4b0dbbb94004f297e8ae05b83c345a76e9113482926b2f4d00a
+input_fingerprint_sha256: 4b26c7404e475d03950a84387bf7fa8ffce129df1daab223edd4eebe4bbb053d
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.34
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -28,7 +29,7 @@ PASS non-demolition: system pointer populations preserved by recording :: pops=[
 ------------------------------------------------------------------------------
 Part 2: ADDITIVITY of the record readout over disjoint fragments
 ------------------------------------------------------------------------------
-PASS supplied singleton bridge plus Record additivity is compatible with I_mass(F1 U F2) - J(F1 U F2) = (m-1)*H_S :: 2.0894 - 0.5224 = 3*0.5224
+PASS supplied singleton bridge plus additive extension is compatible with I_mass(F1 U F2) - J(F1 U F2) = (m-1)*H_S :: 2.0894 - 0.5224 = 3*0.5224
 PASS recoverable content J is strictly SUB-additive (saturation, NOT additivity): J(F1 U F2) = J(F1) = J(F2) = H_S :: J(F1)=0.5224, J(F2)=0.5224, J(union)=0.5224, sum-minus-union=0.5224
 PASS two-functional split: recovered pointer info saturates at H_S (no super-additivity) despite redundant copies :: I(S:F1F2)=0.5224=H_S, record-mass=2.0894=4*H_S
 PASS objectivity: every pair of fragments shares exactly the pointer record H_S (one consistent value) :: pairwise I = [0.5224, 0.5224, 0.5224, 0.5224, 0.5224, 0.5224] (H_S=0.5224)
@@ -148,7 +149,7 @@ BOUNDED ALGEBRAIC RESULTS, with explicit scope:
       t = pi/(4g), forms a perfect redundant persistent objective record:
       R_delta = n_env, plateau = H_S, finished idle fragments persist, and
       fragments objectively agree. The bounded model supplies the singleton
-      bridge I({k}) := J({k}); Record additivity extends it to
+      bridge I({k}) := J({k}); a separately supplied additive extension gives
       I_mass(F)=sum_k J({k}), while recoverable union content J(F) SATURATES
       at H_S. Part 2 checks the plateau compatibility identity
       I_mass-J=(m-1)H_S without claiming to derive the singleton bridge.
@@ -194,7 +195,7 @@ HONEST LIMITS (no over-claim):
     record-formation result is a controlled-copy construction on
     the explicit finite model, conditional on modelling 'record' as a
     redundantly-imprinted, objective, persistent system observable (the
-    quantum-Darwinism bridge) and on I({k}) := J({k}). The Lattice, Qubit,
+    quantum-Darwinism bridge) on I({k}) := J({k}), and on its additive extension. The Lattice, Qubit,
     Admissibility, and Record axioms do not supply those identifications, the
     selected carrier/pointer, or the dynamics.
   - We do NOT claim arbitrary pointer-non-demolition Hamiltonians form records.

@@ -12,15 +12,16 @@ ingredients. (audit-prep refresh: 2026-05-06)
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
 **Runner:** `scripts/frontier_universal_gr_discrete_global_closure.py`
-(PASS=5 FAIL=0 on current source; verifies (i) the closure-stack source notes
+(Current corrected runner: PASS=6 FAIL=0; checks (i) the closure-stack source notes
 exist, (ii) `K_GR` has no zero eigenvalues on the chosen Lorentzian
 background, (iii) overlap covariance error < 1e-12, (iv) action mismatch
 across the chart change < 1e-12, (v) stationary representatives patch with
-mismatch < 1e-12).
+mismatch < 1e-12, and (vi) the supplied Hessian has inertia
+(3 positive, 7 negative)).
 
 ## Audit boundary
 
-The runner numerically certifies the four operator-level overlap properties
+The runner numerically checks the four operator-level overlap properties
 above on a single nondegenerate Lorentzian background `D0` and one explicit
 chart change `S`. The note's structural-assembly statement (the eight bullets
 under "What this means") is **conditional** on the prior closure-stack notes
@@ -32,7 +33,7 @@ being independently accepted; it does not re-derive their content here.
 - [`UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md`](UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md)
   — the exact local
   bilinear density `B_D(h,k) = -Tr(D^-1 h D^-1 k)` and the negative-definite
-  Hessian `H_D` (sign character corrected 2026-05-01)
+  Hessian `H_D` on positive-definite backgrounds only (sign character corrected 2026-05-01)
 - [`UNIVERSAL_GR_LORENTZIAN_SIGNATURE_EXTENSION_NOTE.md`](UNIVERSAL_GR_LORENTZIAN_SIGNATURE_EXTENSION_NOTE.md)
   — extension of the
   exact local family from positive-symmetric to nondegenerate Lorentzian
@@ -89,10 +90,29 @@ The exact local bilinear density
 
 `B_D(h,k) = -Tr(D^-1 h D^-1 k)`
 
-is defined on every nondegenerate Lorentzian background in the route (per the
-positive-background and signature-class notes; sign character is
-**negative-definite** as a quadratic form, see the positive-background note's
-sign-correction history).
+is defined for any invertible real symmetric D, on the full real symmetric
+variation space. Its sign is **indefinite on Lorentzian backgrounds**;
+the positive-background negative-definiteness proof does not extend there.
+For diagonal D with nonzero eigenvalues d_i,
+
+`B_D(h,h) = -sum_i h_ii^2/d_i^2 - 2 sum_{i<j} h_ij^2/(d_i d_j)`.
+
+If D has p negative and q positive eigenvalues, B has pq positive and
+p(p+1)/2+q(q+1)/2 negative directions, with no zero eigenvalues (equivalently, a trivial radical).
+Nonzero isotropic variations with B_D(h,h)=0 do exist for this indefinite form. Orthogonal
+diagonalization transports this statement to any such symmetric D. In four
+Lorentzian dimensions the inertia is (3 positive, 7 negative), so a stationary
+point with a positive-definite Lambda_R is a saddle, not a maximum/minimum.
+A minimal counterexample is D=diag(-1,1): h=[[0,1],[1,0]] gives B(h,h)=+2,
+whereas h=diag(1,0) gives -1. Restricted variation spaces would require their
+own sign/nondegeneracy analysis.
+
+The corrected runner uses H_D=gram(B_D), consistent with the displayed
+bilinear and the positive-background source; its former H_D=-gram(B_D)
+implemented the opposite overall sign. Both signs are indefinite here, but
+aligning the convention matters for the action and stationary source response.
+The same covariance, action and patching thresholds are retained, and an
+explicit (3,7) inertia check is added.
 
 The exact slice generator `Lambda_R` is already present on the branch (cited
 input, not derived here).
@@ -176,9 +196,9 @@ This source refresh:
    theorem).
 5. Re-queues the changed source for independent audit.
 
-The runner output (PASS=5 FAIL=0) is unchanged by this refresh; only the
-note text was scope-tightened. Runner-verified algebraic content is
-identical to the pre-refresh state.
+The earlier audit-prep refresh left the five-check runner unchanged. The
+2026-10-21 sign correction aligns H_D with B_D and adds an inertia check;
+it does not establish any new GR identification or global atlas theorem.
 
 ## Honest status
 
@@ -196,3 +216,12 @@ global_closure.py`.
 Anything stricter than the bounded scope above is a question of how far one
 wants to identify this single-overlap structural-assembly statement with
 other formulations of GR beyond the current project setting.
+
+## Current execution boundary
+
+The four cited files are read only for phrase-presence checks; this does not
+verify their theorems. Lambda_R is the supplied numerical 3-by-3 matrix in
+the runner, D0=diag(-2,3,5,7), one block rotation/rescaling S at angle .37,
+and seed41 supplies the two 30-component numerical vectors. No equation
+in this finite matrix check derives Einstein/Regge dynamics, spacetime
+topology or the physical interpretation of the supplied ingredients.

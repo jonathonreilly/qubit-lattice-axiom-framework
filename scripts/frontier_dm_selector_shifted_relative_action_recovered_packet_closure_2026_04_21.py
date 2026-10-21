@@ -1,46 +1,13 @@
 #!/usr/bin/env python3
-"""
-DM selector shifted-relative-action recovered-packet closure theorem.
-
-Question:
-  After the projection and shifted-imaginary sign reductions, does the same
-  exact scalar observable-principle law already select the preferred recovered
-  lift directly on the current recovered selector packet?
-
-Answer:
-  Yes, on the current recovered packet.
-
-  Transport the exact observable-relative-action grammar to any common
-  positive comparison window
-
-      A_mu(H) = H + mu I,
-
-  and evaluate the same LogDet/Bregman scalar against the fixed seed window
-
-      S_mu(H || H_seed)
-        = Tr(A_mu(H_seed)^(-1) A_mu(H))
-          - log det(A_mu(H_seed)^(-1) A_mu(H)) - 3.
-
-  Then on the recovered bank:
-
-    - the preferred recovered lift 0 is the unique minimizer on every audited
-      common positive shift in the current selector packet,
-    - the same preferred lift stays the unique minimizer on a dense admissible
-      stress range from the positivity threshold out to large shifts,
-    - and that same lift is exactly the unique recovered point on the positive
-      side of Im(K_Z3[1,2]) = 0.
-
-  So the review-surface selector residue closes on the current recovered
-  packet. By itself this theorem is not a pure target-free global
-  source-chart/sign theorem from Cl(3)/Z^3 alone, but the companion exact
-  target-surface source-cubic theorem removes any separate native A-BCC
-  residue once the exact PMNS target surface is granted.
+"""Finite numerical comparison on supplied relative-action/recovered packets.
+No physical selector, exact uniqueness, all-shift or DM closure is established.
+The relative-action source uses an imposed observed-target equality and local
+optimization. Checks below compare finite fixtures and sampled shifts only.
 """
 
 from __future__ import annotations
 
 import sys
-from pathlib import Path
 
 import numpy as np
 
@@ -50,7 +17,8 @@ from frontier_dm_selector_shifted_doublet_imag_sign_support_2026_04_21 import (
     imag12_from_h,
 )
 
-ROOT = Path(__file__).resolve().parents[1]
+
+AUDIT_TIMEOUT_SEC = 300
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -70,12 +38,8 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
     return condition
 
 
-def read(rel: str) -> str:
-    return (ROOT / rel).read_text(encoding="utf-8")
 
 
-def flat(text: str) -> str:
-    return " ".join(text.split())
 
 
 def unique_argmin(values: np.ndarray) -> tuple[int, float]:
@@ -106,66 +70,55 @@ def dense_shift_grid(mu_floor: float) -> np.ndarray:
 
 def main() -> int:
     print("=" * 88)
-    print("DM SELECTOR SHIFTED-RELATIVE-ACTION RECOVERED-PACKET CLOSURE THEOREM")
+    print("DM SHIFTED-RELATIVE-ACTION FINITE RECOVERED-PACKET COMPARISON")
     print("=" * 88)
 
-    rel_note = read("docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md")
-    proj_note = read("docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_PROJECTION_SUPPORT_THEOREM_NOTE_2026-04-21.md")
-    sign_note = read("docs/DM_SELECTOR_SHIFTED_DOUBLET_IMAG_SIGN_SUPPORT_THEOREM_NOTE_2026-04-21.md")
-    exact_target = read("docs/DM_ABCC_EXACT_TARGET_SURFACE_SOURCE_CUBIC_CLOSURE_THEOREM_NOTE_2026-04-21.md")
 
     _lifts, hs_bank, repairs_bank, _targets = recovered_bank()
     mu_floor = float(np.max(repairs_bank))
     imag_bank = np.array([imag12_from_h(h) for h in hs_bank], dtype=float)
+    tested_shifts = list(mu_floor + np.asarray(SHIFT_OFFSETS, dtype=float)) + list(dense_shift_grid(mu_floor)) + [mu_floor + 1.0e6]
+    check("All compared seed/bank matrices are positive definite at every tested shift",
+          all(np.min(np.linalg.eigvalsh(np.asarray(h, dtype=complex) + mu*np.eye(3))) > 0
+              for mu in tested_shifts for h in [H_SEED, *hs_bank]))
 
     print("\n" + "=" * 88)
     print("PART 1: THE SAME EXACT SCALAR LAW EXTENDS TO THE COMMON POSITIVE WINDOWS")
     print("=" * 88)
 
     check(
-        "The original selector note still records the exact scalar observable-relative-action grammar",
-        "exact relative bosonic action" in flat(rel_note)
-        and "S_rel(H_e || H_seed)" in rel_note
-        and "exact scalar `log|det|` observable" in rel_note,
-    )
-    check(
         "One common positivity threshold mu_floor exists on the recovered bank",
         mu_floor > 0.0,
         f"mu_floor = {mu_floor:.15f}",
     )
-    check(
-        "So the same scalar law can be transported to the common positive windows A_mu(H) = H + mu I",
-        True,
-        "shifted LogDet / Bregman continuation of the exact seed-relative action",
-    )
 
     print("\n" + "=" * 88)
-    print("PART 2: EVERY AUDITED COMMON POSITIVE SHIFT PICKS THE SAME PREFERRED LIFT")
+    print("PART 2: EVERY TESTED COMMON POSITIVE SHIFT PICKS THE SAME PREFERRED LIFT")
     print("=" * 88)
 
-    audited = []
+    tested = []
     for offset in SHIFT_OFFSETS:
         mu = mu_floor + float(offset)
         vals = np.array([shifted_relative_action_to_seed(h, mu) for h in hs_bank], dtype=float)
         idx, margin = unique_argmin(vals)
-        audited.append((mu, idx, margin))
+        tested.append((mu, idx, margin))
 
-    audited_ok = all(idx == 0 and margin > 1.0e-9 for _mu, idx, margin in audited)
-    audited_margin = min(margin for _mu, _idx, margin in audited)
+    tested_ok = all(idx == 0 and margin > 1.0e-9 for _mu, idx, margin in tested)
+    tested_margin = min(margin for _mu, _idx, margin in tested)
     check(
-        "Across the full audited shift family, the shifted relative action uniquely minimizes at recovered lift 0",
-        audited_ok,
-        f"worst audited margin = {audited_margin:.12f}",
+        "Across the full tested shift family, the shifted relative action uniquely minimizes at recovered lift 0",
+        tested_ok,
+        f"worst tested margin = {tested_margin:.12f}",
     )
     check(
-        "At the first audited shift above positivity, lift 0 is already unique",
-        audited[0][1] == 0 and audited[0][2] > 1.0e-9,
-        f"(mu, margin)=({audited[0][0]:.15f}, {audited[0][2]:.12f})",
+        "At the first tested shift above positivity, lift 0 is already unique",
+        tested[0][1] == 0 and tested[0][2] > 1.0e-9,
+        f"(mu, margin)=({tested[0][0]:.15f}, {tested[0][2]:.12f})",
     )
     check(
-        "At the largest audited shift, lift 0 is still unique",
-        audited[-1][1] == 0 and audited[-1][2] > 1.0e-9,
-        f"(mu, margin)=({audited[-1][0]:.15f}, {audited[-1][2]:.12f})",
+        "At the largest tested shift, lift 0 is still unique",
+        tested[-1][1] == 0 and tested[-1][2] > 1.0e-9,
+        f"(mu, margin)=({tested[-1][0]:.15f}, {tested[-1][2]:.12f})",
     )
 
     print("\n" + "=" * 88)
@@ -193,7 +146,7 @@ def main() -> int:
     large_vals = np.array([shifted_relative_action_to_seed(h, large_mu) for h in hs_bank], dtype=float)
     large_idx, large_margin = unique_argmin(large_vals)
     check(
-        "Even in the far-shift asymptotic regime, lift 0 remains the unique minimizer",
+        "At the single tested large shift, lift 0 has the smallest computed value",
         large_idx == 0 and large_margin > 1.0e-18,
         f"(large_mu, margin)=({large_mu:.1f}, {large_margin:.12e})",
     )
@@ -204,18 +157,13 @@ def main() -> int:
 
     positive_idx = np.where(imag_bank > 0.0)[0]
     check(
-        "The earlier packet note still records that only recovered lift 0 lies on the positive side of Im(K_Z3[1,2]) = 0",
-        "lift `0`: `Im(K_Z3[1,2]) > 0`" in sign_note
-        and "lifts `1,2,3,4`: `Im(K_Z3[1,2]) < 0`" in sign_note,
-    )
-    check(
         "Exactly one recovered lift has positive shifted-imaginary doublet mixing",
         len(positive_idx) == 1 and int(positive_idx[0]) == 0,
         f"Im(K12)_bank = {np.round(imag_bank, 12)}",
     )
     check(
         "So the same shifted relative-action law and the odd doublet-sign packet select the same preferred lift",
-        audited_ok and dense_ok and len(positive_idx) == 1 and int(positive_idx[0]) == 0,
+        tested_ok and dense_ok and len(positive_idx) == 1 and int(positive_idx[0]) == 0,
         "same recovered lift 0",
     )
 
@@ -224,37 +172,17 @@ def main() -> int:
     print("=" * 88)
 
     check(
-        "The projection note still records that the exact internal selector already has the same preferred recovered image",
-        "exact observable-relative-action law" in flat(proj_note) and "preferred recovered lift `0`" in flat(proj_note),
-    )
-    check(
-        "So on the current recovered selector packet, the remaining review-surface selector residue is closed by the same exact scalar law",
-        audited_ok and dense_ok and len(positive_idx) == 1 and int(positive_idx[0]) == 0,
-        "packet-local closure only",
-    )
-    check(
-        "The companion exact-target theorem removes any separate native A-BCC residue once the PMNS target surface is granted",
-        "no separate native branch-choice residue remains" in flat(exact_target)
-        or "A-BCC is already downstream of the native chamber plus the coefficient-free source-cubic law" in flat(exact_target),
-        "pure target-free global sign/source-chart derivation remains outside this theorem alone",
+        "The sampled shifted-action and sign comparisons agree on recovered lift zero",
+        tested_ok and dense_ok and len(positive_idx) == 1 and int(positive_idx[0]) == 0,
+        "finite numerical agreement only",
     )
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  On the current recovered selector packet, the same exact scalar")
-    print("  observable-principle law already closes point selection.")
-    print("  After transporting the seed-relative LogDet/Bregman law to the common")
-    print("  positive windows A_mu(H)=H+mu I, the preferred recovered lift 0 is the")
-    print("  unique minimizer across the full audited shift family and on a dense")
-    print("  admissible stress range, and it is exactly the unique recovered point")
-    print("  with Im(K_Z3[1,2]) > 0.")
-    print("  So the review-surface DM selector residue is closed on the current")
-    print("  recovered packet. By itself this theorem is not a pure target-free")
-    print("  global sign/source-chart theorem, but the companion exact-target")
-    print("  source-cubic theorem removes any separate native A-BCC residue once")
-    print("  the PMNS target surface is granted.")
-    print()
+    print("  The sampled shifted-action comparisons select the same finite-bank index.")
+    print("  Physical minimization, all-shift persistence and DM closure remain open.")
+    print("[SCOPE] Supplied finite numerical comparisons; physical selection remains open.")
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1
 

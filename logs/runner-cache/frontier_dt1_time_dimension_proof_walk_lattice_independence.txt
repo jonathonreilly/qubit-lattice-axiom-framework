@@ -1,53 +1,34 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dt1_time_dimension_proof_walk_lattice_independence.py
-runner_sha256: 4de18f1c42bf38fca80a618e777b4dc8a9fd6f22ddf77f181b70a344b7d0b62d
-timeout_sec: 120
+runner_sha256: 78d091aed423c666a17a6f9ba8361bc1fd3d46e658cb5b371f49706c577768a7
+input_fingerprint_sha256: a0d5df17efbcdbdd1d24f0c750ee5fe9a6cb94748ba3dc9177153b24461fd78c
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 frontier_dt1_time_dimension_proof_walk_lattice_independence.py
 
 ----------------------------------------------------------------------------------------
-note structure and scope
+source metadata, not mathematical evidence
 ----------------------------------------------------------------------------------------
-  [PASS] contains marker: Claim type:** bounded_theorem
-  [PASS] contains marker: Proposal allowed:** false
-  [PASS] contains marker: source-note proposal only
-  [PASS] contains marker: does not add a new axiom
-  [PASS] contains marker: does not use lattice-action machinery
-  [PASS] contains marker: Proof-Walk
-  [PASS] contains marker: Exact Arithmetic Check
-  [PASS] contains marker: Boundaries
-  [PASS] contains marker: ANOMALY_FORCES_TIME_THEOREM
-  [PASS] contains marker: AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_
-  [PASS] contains marker: CPT_EXACT_NOTE
-  [PASS] contains marker: MINIMAL_AXIOMS_2026-05-03
-  [PASS] contains marker: STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03
-  [PASS] broad framing stripped: broad framing phrase 1
-  [PASS] broad framing stripped: broad framing phrase 2
-  [PASS] broad framing stripped: broad framing phrase 3
-  [PASS] broad framing stripped: broad framing phrase 4
-  [PASS] broad framing stripped: broad framing phrase 5
-
-----------------------------------------------------------------------------------------
-honest scope (d_s = 3 from A2, not derived)
-----------------------------------------------------------------------------------------
-  [PASS] states honest A2 scope: d_s = 3` is given directly by the
-  [PASS] states honest A2 scope: NOT derived from a proof-walk in this
-  [PASS] states honest A2 scope: NOT derived from
-  [PASS] states honest A2 scope: narrow proof-walked claim here is the temporal piece `d_t = 
-
-----------------------------------------------------------------------------------------
-dependency files
-----------------------------------------------------------------------------------------
-  [PASS] dependency exists: docs/ANOMALY_FORCES_TIME_THEOREM.md
-  [PASS] dependency exists: docs/CPT_EXACT_NOTE.md
-  [PASS] dependency exists: docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md
-  [PASS] dependency exists: docs/NATIVE_GAUGE_CLOSURE_NOTE.md
-  [PASS] dependency exists: docs/LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md
-  [PASS] dependency exists: docs/MINIMAL_AXIOMS_2026-05-03.md
-  [PASS] dependency exists: docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md
+  [METADATA OK] scope marker: Claim type:** bounded_theorem 
+  [METADATA OK] scope marker: Proposal allowed:** false 
+  [METADATA OK] scope marker: P-HY 
+  [METADATA OK] scope marker: P-COMP 
+  [METADATA OK] scope marker: P-REC 
+  [METADATA OK] scope marker: B-AXIS 
+  [METADATA OK] scope marker: full-chain 
+  [METADATA OK] scope marker: d_t<=1 
+  [METADATA OK] scope marker: doubled representations 
+  [METADATA OK] full-chain independence withdrawn 
+  [METADATA OK] dependency exists: MINIMAL_AXIOMS_2026-06-29.md 
+  [METADATA OK] dependency exists: ANOMALY_FORCES_TIME_THEOREM.md 
+  [METADATA OK] dependency exists: CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md 
+  [METADATA OK] dependency exists: STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md 
+  [METADATA OK] dependency exists: LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md 
+  [METADATA OK] dependency exists: ONE_TIME_DIMENSION_DT1_REDUCES_TO_EMERGENT_DYNAMICS_GATE_OPEN_GATE_NOTE_2026-06-17.md 
+  [METADATA OK] dependency exists: STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md 
 
 ----------------------------------------------------------------------------------------
 exact LH-anomaly traces (Step 1 input)
@@ -68,82 +49,41 @@ full SM spectrum cancels anomaly (Step 2 output)
 ----------------------------------------------------------------------------------------
 Clifford volume-element parity (Step 3 input)
 ----------------------------------------------------------------------------------------
-  [PASS] n=0 (even): omega anticommutes with gamma_mu, chirality exists
-  [PASS] n=1 (odd): omega is central, no chirality grading
-  [PASS] n=2 (even): omega anticommutes with gamma_mu, chirality exists
-  [PASS] n=3 (odd): omega is central, no chirality grading
-  [PASS] n=4 (even): omega anticommutes with gamma_mu, chirality exists
-  [PASS] n=5 (odd): omega is central, no chirality grading
-  [PASS] n=6 (even): omega anticommutes with gamma_mu, chirality exists
-  [PASS] n=7 (odd): omega is central, no chirality grading
-  [PASS] n=8 (even): omega anticommutes with gamma_mu, chirality exists
+  [PASS] n=1 (odd): omega is central, volume is central (no claim about doubled representations)
+  [PASS] n=2 (even): omega anticommutes with gamma_mu, volume anticommutes
+  [PASS] n=3 (odd): omega is central, volume is central (no claim about doubled representations)
+  [PASS] n=4 (even): omega anticommutes with gamma_mu, volume anticommutes
+  [PASS] n=5 (odd): omega is central, volume is central (no claim about doubled representations)
+  [PASS] n=6 (even): omega anticommutes with gamma_mu, volume anticommutes
+  [PASS] n=7 (odd): omega is central, volume is central (no claim about doubled representations)
+  [PASS] n=8 (even): omega anticommutes with gamma_mu, volume anticommutes
 
 ----------------------------------------------------------------------------------------
-d_s = 3 from A2, then d_t must be odd (Step 3 conclusion)
+supplied d_s=3 and volume grading imply odd d_t
 ----------------------------------------------------------------------------------------
-  [PASS] d_s comes from A2 axiom (Z^3 substrate)
-  [PASS] d_t = 0 (even): d_s + d_t = 3 odd, chirality fails
-  [PASS] d_t = 1 (odd): d_s + d_t = 4 even, chirality OK
-  [PASS] d_t = 2 (even): d_s + d_t = 5 odd, chirality fails
-  [PASS] d_t = 3 (odd): d_s + d_t = 6 even, chirality OK
-  [PASS] d_t = 4 (even): d_s + d_t = 7 odd, chirality fails
-  [PASS] d_t = 5 (odd): d_s + d_t = 8 even, chirality OK
-  [PASS] d_t = 6 (even): d_s + d_t = 9 odd, chirality fails
-  [PASS] d_t = 7 (odd): d_s + d_t = 10 even, chirality OK
-
-----------------------------------------------------------------------------------------
-single-clock codim-1 evolution excludes d_t > 1 (Step 4)
-----------------------------------------------------------------------------------------
-  [PASS] single-clock excludes d_t = 0
-  [PASS] single-clock admits d_t = 1
-  [PASS] single-clock excludes d_t = 2
-  [PASS] single-clock excludes d_t = 3
-  [PASS] single-clock excludes d_t = 4
-  [PASS] single-clock excludes d_t = 5
-  [PASS] single-clock excludes d_t = 6
-  [PASS] single-clock excludes d_t = 7
+INFO: current Lattice axiom supplies d_s=3; legacy A2 label is historical.
+  [PASS] d_t = 0 (even): d_s + d_t = 3 odd, volume grading fails
+  [PASS] d_t = 1 (odd): d_s + d_t = 4 even, volume grading OK
+  [PASS] d_t = 2 (even): d_s + d_t = 5 odd, volume grading fails
+  [PASS] d_t = 3 (odd): d_s + d_t = 6 even, volume grading OK
+  [PASS] d_t = 4 (even): d_s + d_t = 7 odd, volume grading fails
+  [PASS] d_t = 5 (odd): d_s + d_t = 8 even, volume grading OK
+  [PASS] d_t = 6 (even): d_s + d_t = 9 odd, volume grading fails
+  [PASS] d_t = 7 (odd): d_s + d_t = 10 even, volume grading OK
+INFO: d_t=1 single-clock exclusion is a separate supplied premise, not tested here.
 
 ----------------------------------------------------------------------------------------
 uniqueness: d_t = 1 (Step 5 combine)
 ----------------------------------------------------------------------------------------
-  [PASS] only d_t = 1 survives the three constraints ([1])
+  [PASS] conditional filter with supplied single clock ([1])
+  [PASS] oddness alone leaves multiple tested dimensions
+INFO: absence of lattice-action runtime inputs does not certify transitive premise independence.
+  [METADATA OK] audit authority disclosed 
 
-----------------------------------------------------------------------------------------
-load-bearing input boundary
-----------------------------------------------------------------------------------------
-  [PASS] allowed input named: Dynkin-index bookkeeping
-  [PASS] allowed input named: Clifford-volume / sublattice-parity chirality grading
-  [PASS] allowed input named: exact rational arithmetic
-  [PASS] allowed input named: chiral-content multiplicities
-  [PASS] allowed input named: single-clock codimension-1 evolution structure
-  [PASS] allowed input named: Clifford-algebra classification
-  [PASS] forbidden input named only as excluded: lattice scale
-  [PASS] forbidden input named only as excluded: fitted observational value
-  [PASS] forbidden input named only as excluded: link unitaries
-  [PASS] forbidden input named only as excluded: staggered phases
-  [PASS] forbidden input named only as excluded: Wilson plaquette action
-  [PASS] forbidden input named only as excluded: u_0
-  [PASS] forbidden input named only as excluded: Brillouin-zone labels
-  [PASS] forbidden input named only as excluded: Monte Carlo measurement
-  [PASS] boundary names non-closed item: the spatial dimension `d_s = 3`
-  [PASS] boundary names non-closed item: bare external ABJ anomaly-to-inconsistency admission
-  [PASS] boundary names non-closed item: the staggered-Dirac realization gate
-  [PASS] boundary names non-closed item: any continuum-limit numerical claim
-  [PASS] boundary names non-closed item: any parent theorem/status promotion
-
-----------------------------------------------------------------------------------------
-no status-promotion language
-----------------------------------------------------------------------------------------
-  [PASS] absent: retained promotion
-  [PASS] absent: promote to retained
-  [PASS] absent: promote to positive_theorem
-  [PASS] absent: claim_type: positive_theorem
-  [PASS] absent: claim_type: retained
-
-TOTAL: PASS=88 FAIL=0
-VERDICT: bounded proof-walk passes; the time-dimension forcing chain
-that gives d_t = 1 uses no lattice-action quantity as a load-bearing
-input.
+TOTAL: PASS=26 FAIL=0
+VERDICT: conditional arithmetic checks and source metadata pass.
+Oddness alone does not select d_t=1; the separate single-clock
+premise and its dynamics are not derived by this runner.
 
 ----- stderr -----
 

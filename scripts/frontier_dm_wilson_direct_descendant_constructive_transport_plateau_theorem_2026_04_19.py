@@ -1,16 +1,8 @@
 #!/usr/bin/env python3
-"""
-DM Wilson direct-descendant constructive transport plateau theorem.
-
-Purpose:
-  Test whether the constructive endpoint used by the new canonical path law
-  can be made canonical just by appealing to constructive-sign transport
-  extremality.
-
-  Result:
-    no. The constructive sign chamber carries multiple distinct interior
-    witnesses with the same extremal eta_1 value. So transport extremality
-    does not uniquely pick the constructive endpoint.
+"""Numerical constructive transport candidates on a supplied seed surface.
+Four finite-precision candidates have matching eta_1 within tolerance and
+small finite-difference gradient residuals. This is neither a global optimizer
+certificate nor an exact nonuniqueness theorem or physical selector.
 """
 
 from __future__ import annotations
@@ -34,6 +26,8 @@ from frontier_dm_leptogenesis_ne_projected_source_triplet_sign_theorem import (
 from frontier_dm_leptogenesis_pmns_projector_interface import canonical_h
 
 
+AUDIT_TIMEOUT_SEC = 300
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
@@ -43,7 +37,7 @@ PLATEAU_LABELS = ("W0", "W1", "W2", "W3")
 
 # Three additional deterministic constructive anchors discovered on the current
 # branch. Local refinement from these anchors converges to distinct witnesses
-# with the same extremal eta_1 value as the original constructive witness.
+# with the matching eta_1 values within tolerance as the original constructive witness.
 ANCHOR_PARAMS = [
     np.array([0.71344014, -0.26273824, 1.71146102, -3.48360500, 2.24893600], dtype=float),
     np.array([1.92652621, 0.95570364, 2.32191686, -3.09066300, 1.48058900], dtype=float),
@@ -159,7 +153,7 @@ def quiet_call(fn, *args, **kwargs):
 
 def main() -> int:
     print("=" * 88)
-    print("DM WILSON DIRECT-DESCENDANT CONSTRUCTIVE TRANSPORT PLATEAU THEOREM")
+    print("DM WILSON DIRECT-DESCENDANT CONSTRUCTIVE TRANSPORT NUMERICAL CANDIDATES")
     print("=" * 88)
 
     witness_ref = witness_params()
@@ -168,10 +162,10 @@ def main() -> int:
 
     with contextlib.redirect_stdout(io.StringIO()):
         x_ext, y_ext, delta_ext, _packet_ext, etas_ext = cand.part2_transport_search_finds_an_off_seed_overshoot_witness()
-    global_extremal = float(np.max(etas_ext))
+    searched_benchmark = float(np.max(etas_ext))
 
     print("\n" + "=" * 88)
-    print("PART 1: THE CONSTRUCTIVE WITNESS SATURATES THE KNOWN GLOBAL EXTREMAL VALUE")
+    print("PART 1: THE CONSTRUCTIVE CANDIDATE MATCHES A SEARCHED BENCHMARK")
     print("=" * 88)
     witness_eta = eta1_from_params(witness_ref)
     witness_signs = sign_constraints(witness_ref)
@@ -181,13 +175,13 @@ def main() -> int:
         f"min(gamma,E1,E2)={min(witness_signs):.12f}",
     )
     check(
-        "Its favored constructive column eta_1 matches the known unconstrained global extremal value",
-        abs(witness_eta - global_extremal) < ETA_TOL,
-        f"(witness,global)=({witness_eta:.12f},{global_extremal:.12f})",
+        "Its favored constructive column eta_1 matches the unconstrained searched benchmark within tolerance",
+        abs(witness_eta - searched_benchmark) < ETA_TOL,
+        f"(witness,benchmark)=({witness_eta:.12f},{searched_benchmark:.12f})",
     )
 
     print("\n" + "=" * 88)
-    print("PART 2: THREE ADDITIONAL CONSTRUCTIVE INTERIOR MAXIMIZERS EXIST")
+    print("PART 2: THREE ADDITIONAL NUMERICAL INTERIOR CANDIDATES")
     print("=" * 88)
     interior_ok = True
     eta_ok = True
@@ -205,18 +199,18 @@ def main() -> int:
             f"min sign margin={min(signs):.12f}",
         )
         check(
-            f"{label} attains the same extremal eta_1 value as the constructive witness",
+            f"{label} attains the matching eta_1 values within tolerance as the constructive witness",
             abs(float(etas[1]) - witness_eta) < ETA_TOL,
             f"eta_1={etas[1]:.12f}",
         )
         check(
-            f"{label} is an interior stationary constructive extremizer on the fixed seed surface",
+            f"{label} has a small finite-difference gradient residual on the fixed seed surface",
             float(np.linalg.norm(grad)) < GRAD_TOL,
             f"||grad eta_1||={float(np.linalg.norm(grad)):.3e}",
         )
 
     print("\n" + "=" * 88)
-    print("PART 3: THE CONSTRUCTIVE EXTREMAL SET IS OBSERVABLY NONUNIQUE")
+    print("PART 3: THE SAMPLED CANDIDATES HAVE DISTINCT OBSERVABLES")
     print("=" * 88)
     source_vectors = [source_vector_from_params(params) for params in maximizer_params]
     observable_vectors = [observable_vector_from_params(params) for params in maximizer_params]
@@ -231,7 +225,7 @@ def main() -> int:
         for j in range(i + 1, len(observable_vectors))
     )
     check(
-        "The four constructive extremal witnesses are pairwise distinct in source coordinates",
+        "The four constructive numerical candidates are pairwise distinct in source coordinates",
         min_source_sep > 4.0e-1,
         f"min source separation={min_source_sep:.12f}",
     )
@@ -245,15 +239,11 @@ def main() -> int:
     print("PART 4: BOTTOM LINE")
     print("=" * 88)
     check(
-        "Constructive-sign transport extremality therefore does not uniquely canonicalize the endpoint",
+        "Four distinct interior candidates satisfy the numerical matching and gradient tolerances",
         interior_ok and eta_ok and stationarity_ok and min_source_sep > 4.0e-1,
-        "multiple distinct constructive witnesses attain the same extremal eta_1",
+        "finite sampled candidates; no exact or global conclusion",
     )
-    check(
-        "So the canonical path law still needs extra selector content beyond transport extremality",
-        True,
-        "transport picks a plateau, not a unique constructive endpoint",
-    )
+    print("[SCOPE] Global optimality, exact nonuniqueness and physical endpoint selection remain unproved.")
 
     print()
     for label, params in zip(labels, maximizer_params):

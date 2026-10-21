@@ -17,6 +17,9 @@ readouts.
 
 from __future__ import annotations
 
+# Actual documentary reads/existence checks; presence is not scientific authority.
+AUDIT_INPUT_PATHS = ['docs/CKM_ATLAS_AXIOM_CLOSURE_NOTE.md', 'docs/ALPHA_S_DERIVED_NOTE.md']
+
 from dataclasses import dataclass
 from fractions import Fraction
 from pathlib import Path
@@ -35,8 +38,11 @@ ALPHA_S_V = CANONICAL_ALPHA_S_V
 
 PDG_V_CD = 0.22500
 PDG_V_CD_ERR = 0.00400
-PDG_V_CS = 0.99700
-PDG_V_CS_ERR = 0.01100
+# PDG 2025 CKM review Eq. (12.10), direct extraction (not global fit).
+# https://pdg.lbl.gov/2025/reviews/rpp2025-rev-ckm-matrix.pdf
+# V_cd and V_cb below retain the note's historical comparator inputs.
+PDG_V_CS = 0.97500
+PDG_V_CS_ERR = 0.00600
 PDG_V_CB = 0.04100
 PDG_V_CB_ERR = 0.00140
 
@@ -118,11 +124,8 @@ def audit_m1_vcd() -> None:
     check("M1 coefficient is rational 1/2", M1_VCD_SQ.coefficient == Fraction(1, 2))
     check("M1 alpha-power is 1", M1_VCD_SQ.alpha_power == 1)
     check("|V_cd|^2 reads as alpha_s(v)/2", close(vcd_sq_struct, vcd_sq_atlas))
-    check(
-        "framework |V_cd| matches PDG within 5 sigma",
-        abs(vcd - PDG_V_CD) < 5.0 * PDG_V_CD_ERR,
-        f"PDG {PDG_V_CD} +/- {PDG_V_CD_ERR}",
-    )
+    print(f"  Historical V_cd residual / quoted uncertainty = {(vcd-PDG_V_CD)/PDG_V_CD_ERR:+.4f}; descriptive only")
+
 
 
 def audit_m2_vcb() -> None:
@@ -146,11 +149,8 @@ def audit_m2_vcb() -> None:
         close(vcb, vcb_clean_form),
     )
 
-    check(
-        "framework |V_cb| matches PDG within 2 sigma",
-        abs(vcb - PDG_V_CB) < 2.0 * PDG_V_CB_ERR,
-        f"PDG {PDG_V_CB} +/- {PDG_V_CB_ERR}",
-    )
+    print(f"  Historical V_cb residual / quoted uncertainty = {(vcb-PDG_V_CB)/PDG_V_CB_ERR:+.4f}; descriptive only")
+
 
 
 def audit_m3_vcs() -> None:
@@ -177,12 +177,9 @@ def audit_m3_vcs() -> None:
         f"|V_cb|^2 correction = {vcb_sq:.3e}",
     )
 
-    leading_truncated_match = abs(vcs - PDG_V_CS) < 6.0 * PDG_V_CS_ERR
-    check(
-        "framework |V_cs| within leading-Wolfenstein truncation band of PDG",
-        leading_truncated_match,
-        f"PDG {PDG_V_CS} +/- {PDG_V_CS_ERR}, framework {vcs:.5f}",
-    )
+    print(f"  PDG 2025 direct V_cs: {PDG_V_CS} +/- {PDG_V_CS_ERR}")
+    print(f"  Residual / quoted comparator uncertainty = {(vcs-PDG_V_CS)/PDG_V_CS_ERR:+.4f}")
+    print("  Descriptive comparison only; no theory truncation band is inferred from comparator uncertainties.")
 
 
 def audit_row_equivalences() -> None:
@@ -234,19 +231,9 @@ def audit_full_second_row() -> None:
 def audit_extension_boundary() -> None:
     banner("Status boundary")
 
-    check("theorem is leading-Wolfenstein on retained atlas", True)
-    check("theorem does not derive alpha_s(v) (separately retained)", True)
-    check(
-        "theorem does not promote higher-order Wolfenstein closure",
-        True,
-        "leading-Wolfenstein truncation is the explicit scope",
-    )
-    check(
-        "theorem does not introduce hadronic |V_cs| extraction",
-        True,
-        "no semileptonic D-meson form factors are used",
-    )
-    check("theorem does not introduce BSM or fourth-generation matter", True)
+    print("  Scope: supplied leading forms and row residual completion; no all-orders CKM closure.")
+    print("  alpha_s is imported; document presence is not retained authority or physics proof.")
+    print("  No hadronic extraction, BSM result, or theory uncertainty is computed here.")
 
 
 def main() -> int:

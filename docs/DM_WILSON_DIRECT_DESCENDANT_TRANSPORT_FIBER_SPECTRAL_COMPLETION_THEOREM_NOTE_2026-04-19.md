@@ -1,5 +1,7 @@
 # DM Wilson Direct-Descendant Transport-Fiber Spectral Completion Theorem
 
+**Type:** bounded_theorem
+
 **Date:** 2026-04-19
 **Status:** support - structural or confirmatory support note
 fiber theorem. The remaining `3`-real source ambiguity above the canonical

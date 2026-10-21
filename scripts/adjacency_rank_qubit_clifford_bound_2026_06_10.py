@@ -6,69 +6,20 @@ Adjacency rank bounded by the qubit's anticommuting capacity
 Companion runner for
 docs/ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026-06-10.md.
 
-CONTEXT.  The axiom set states the number 3 twice: the Lattice axiom posits
-Z^3, and the Quantum axiom's one qubit per site carries Cl(3,0) ~= M_2(C),
-whose maximal mutually anticommuting self-adjoint-unitary family has exactly
-three members (the Pauli frame).  AXIOM_REDUCTION_NOTE.md lists d = 3 as the
-one unforced discrete choice (C1), with the qubit/dimension link recorded only
-as matched-pair consistency.  This runner checks the consolidation theorem
-that converts half of that coincidence into structure:
-
-THE THEOREM (exact).
-  (T1)  MAXIMALITY.  In M_2(C), any family of mutually anticommuting
-        self-adjoint unitaries has at most 3 members.  (Anticommutation with
-        an invertible partner forces tracelessness; traceless self-adjoint
-        unitaries are Bloch vectors n.sigma with |n| = 1; pairwise
-        anticommutation is pairwise orthogonality of the n's in R^3; and the
-        extension system {X, sigma_a} = 0, a = 1,2,3 has nullspace exactly 0.)
-  (T2)  CROSS-TERM FORCING.  A translation-covariant nearest-neighbor
-        first-order hopping operator D = sum_mu gamma_mu (x) nabla_mu on
-        Z^d satisfies the Dirac-square condition  D^2 = I (x) Laplacian
-        (no spin-lattice cross terms) iff the per-site coefficients
-        gamma_mu are mutually anticommuting self-adjoint unitaries.
-  (T3)  THE BOUND.  Hence on the one-qubit-per-site lattice, a Dirac-square
-        NN carrier exists iff d <= 3.  Z^3 is the SATURATING case, and the
-        saturating family is the Pauli frame (up to the retained uniqueness).
-  (T4)  REALIZATION TIE.  The d = 3 matrix carrier is unitarily equivalent,
-        by the Kawamoto-Smit site-dependent frame W = blockdiag T(x),
-        T(x) = sigma_1^{x1} sigma_2^{x2} sigma_3^{x3}, to TWO identical
-        copies of the framework's eta-phase staggered operator:
-        W^dag D W = I_2 (x) D_staggered(eta), with
-        eta_1 = 1, eta_2 = (-1)^{x1}, eta_3 = (-1)^{x1+x2}, EXACTLY.
-        The theorem's carrier class is the framework's realized carrier,
-        not an analogy.
-  (T5)  CHIRALITY COHERENCE.  The on-site extension to a 4th anticommuting
-        element is impossible (T1: X = 0), while on a doubled space
-        C^2 (x) C^2 the 4-family Gamma_mu = sigma_mu (x) tau_1,
-        Gamma_4 = I (x) tau_2 exists with grading gamma_5 = I (x) tau_3 (up
-        to phase) anticommuting with all four: chirality CANNOT live inside
-        the per-site qubit and CAN live on a separate factor -- exactly the
-        retained separate-factor chirality boundary, reproduced here from
-        saturation alone.
-
-WHAT THE CONSOLIDATION DOES AND DOES NOT DO.  It converts the UPPER bound
-d <= 3 into qubit-forced structure for the Dirac-square carrier class and
-ties Z^3 to saturation of the qubit's anticommuting capacity.  It does NOT
-exclude sub-saturating dimensions (d = 1, 2 carriers exist and are exhibited:
-Part F); "the realized lattice saturates the capacity" is a NAMED RESIDUAL
-(the saturation reading), and "the realized kinetic carrier is in the
-Dirac-square class" rides on the landed staggered realization surface
-(Kawamoto-Smit forcing; scheme forcing), with conditionality inherited.
-
-EVERY CLAIM GETS A HOSTILE WITNESS:
-  drop anticommutation -> Part C: gamma_2' = (sigma_1 + sigma_2)/sqrt(2) is a
-                          self-adjoint unitary but D^2 grows cross terms;
-  try a 4th element    -> Part D: the linear system {X, sigma_a} = 0 has
-                          nullspace dimension exactly 0; a general 4-family
-                          would need 4 orthonormal Bloch vectors in R^3
-                          (Gram-rank obstruction, exact);
-  sub-saturating d     -> Part F: d = 1, 2 Dirac-square carriers exist
-                          (the bound is a bound, not a selection).
-
-WHAT THIS DOES NOT CLAIM.  No audit status is set or predicted.  d = 3 is
-NOT derived from nothing: the theorem upgrades C1's status to "upper bound
-qubit-forced within the Dirac-square class + saturation residual".  No new
-axiom, no new primitive, no Tier-A admission, no change to any axiom memo.
+Checks a supplied Hermitian central-difference carrier on one-site M_2(C).
+Current Lattice/Qubit premises supply Z^3 and the one-site algebra, not a
+Hamiltonian, Dirac-square ansatz, staggered dynamics or saturation rule.
+T1: Hermitian anticommuting unitary families in M_2(C) have size at most3.
+T2: For constant Hermitian gamma and nabla=(S-S^-1)/2 on infinite Z^d,
+D^2=I tensor sum(nabla_mu^2) iff gamma_mu^2=I and pairs anticommute.
+The operator sum(nabla_mu^2) is not the one-step graph Laplacian.
+Hermiticity is supplied; nonunitary Pauli similarity is a counterexample
+to inferring it from the square condition alone.
+T3-T5: supplied Pauli carriers exist for d<=3, their Kawamoto-Smit frame
+identity gives two staggered copies, and a doubled algebra admits four
+generators. Physical carrier identification remains an additional bridge.
+Symbolic checks are exact; NumPy tolerance/rank checks are numerical support.
+No axiom or audit status is changed.
 
 Run: python3 scripts/adjacency_rank_qubit_clifford_bound_2026_06_10.py
 """
@@ -79,6 +30,8 @@ import sys
 
 import numpy as np
 import sympy as sp
+
+AUDIT_TIMEOUT_SEC = 120
 
 PASS, FAIL = 0, 0
 TOL = 1e-12
@@ -189,6 +142,14 @@ target = -(sp.sin(p1)**2 + sp.sin(p2)**2 + sp.sin(p3)**2) * sp.eye(2)
 check("C4 Fourier side, symbolic: D(p)^2 = -(sum sin^2 p_mu) I exactly for the Pauli frame",
       sp.simplify(Dk2 - target) == sp.zeros(2, 2))
 
+# Exact control: Clifford squares do not imply Hermiticity.
+nonunitary = sp.diag(2, 1)
+similar = [nonunitary*g*nonunitary.inv() for g in (sx,sy,sz)]
+check("C5 Dirac-square alone does not force Hermiticity",
+      all(a*b+b*a == 2*sp.eye(2)*(1 if i==j else 0)
+          for i,a in enumerate(similar) for j,b in enumerate(similar))
+      and any(a != a.conjugate().T for a in similar))
+
 # ----------------------------------------------------------------------------
 print("\nPART D -- the 4th element is exactly zero (the saturation wall, exact)")
 print("=" * 78)
@@ -245,7 +206,7 @@ check("E2 W unitary (the site-dependent Clifford frame)",
       np.allclose(W.conj().T @ W, np.eye(2 * N), atol=TOL))
 check("E3 W^dag D W = I_2 (x) D_staggered(eta) EXACTLY: the matrix carrier IS two staggered copies",
       np.allclose(W.conj().T @ D3 @ W, np.kron(I2, Dst), atol=TOL),
-      "the theorem's carrier class is the framework's realized carrier, not an analogy")
+      "supplied-operator identity; physical realization is not established")
 
 # ----------------------------------------------------------------------------
 print("\nPART F -- sub-saturating dimensions exist: the bound is a bound, not a selection")
@@ -283,13 +244,13 @@ ok4 = all(np.allclose(G4[a] @ G4[b] + G4[b] @ G4[a],
                       2 * np.eye(4) * (1 if a == b else 0), atol=TOL)
           for a in range(4) for b in range(4))
 check("G1 doubled space C^2 (x) C^2: Gamma_mu = sigma_mu (x) tau_1, Gamma_4 = I (x) tau_2 mutually anticommute",
-      ok4, "the Cl(3,1) separate-factor route, reproduced from saturation")
+      ok4, "four positive-square generators on a supplied doubled space")
 g5 = G4[0] @ G4[1] @ G4[2] @ G4[3]
 anti5 = all(np.allclose(g5 @ G4[a] + G4[a] @ g5, 0, atol=TOL) for a in range(4))
 ph = np.trace(g5 @ np.kron(I2, S[2])) / 4
 check("G2 the grading gamma_5 = Gamma_1..Gamma_4 anticommutes with all four and equals I (x) tau_3 up to phase",
       anti5 and abs(abs(ph) - 1) < 1e-9,
-      "on-site gamma_5 is impossible (Part D); separate-factor gamma_5 exists -- the retained chirality boundary")
+      "on-site gamma_5 is impossible (Part D); separate-factor gamma_5 exists -- the supplied algebraic chirality boundary")
 
 print("\n" + "=" * 78)
 print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")

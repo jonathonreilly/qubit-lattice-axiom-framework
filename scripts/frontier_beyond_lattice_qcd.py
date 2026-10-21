@@ -2,14 +2,13 @@
 """Beyond lattice gauge theory: gravity-QM and Sorkin diagnostics.
 
 ==========================================================================
-QUESTION: What concrete result does this framework produce that lattice
-gauge theory CANNOT reproduce?
+QUESTION: What do the supplied graph-field and quadratic-readout models show?
 ==========================================================================
 
 Lattice gauge theory (lattice QCD) and this graph-first framework share
 superficial features: both use graphs, Laplacians, path integrals, and
 gauge phases. The overlap is real and must be acknowledged. But two concrete
-results separate them.
+diagnostics are compared here; no impossibility theorem is asserted.
 
 RESULT 1: GRAVITY-QM INSEPARABILITY
 ------------------------------------
@@ -26,7 +25,7 @@ that coupling (f=0) changes the propagator diagnostics. Specifically:
   Test: compute propagator density with and without gravitational
   backreaction. Show that:
     (a) Deflection angle changes (gravitational lensing)
-    (b) Interference fringe visibility changes (gravity modifies coherence)
+    (b) Central-window density contrast changes
     (c) The density profile is NOT a simple rescaling -- the SHAPE changes
 
 This means the runner's graph-field coupling changes quantum propagation.
@@ -229,7 +228,7 @@ def test_gravity_qm_inseparability():
     t_grav = time.time() - t0
     print(f"  Case C (with gravity):     {t_grav:.1f}s")
 
-    # Case D: Self-consistent (one iteration: propagate -> source Poisson -> propagate)
+    # Case D: One feedback step ( propagate -> source Poisson -> propagate)
     t0 = time.time()
     # First pass with point-mass field
     rho_first = propagate_wavepacket(N, phi_grav, k, source_y, source_z)
@@ -242,7 +241,7 @@ def test_gravity_qm_inseparability():
     phi_sc = solve_poisson(N, rho_source)
     rho_sc = propagate_wavepacket(N, phi_sc, k, source_y, source_z)
     t_sc = time.time() - t0
-    print(f"  Case D (self-consistent):  {t_sc:.1f}s")
+    print(f"  Case D (one feedback step):  {t_sc:.1f}s")
     print()
 
     # --- Measure 1: Centroid shift (deflection) ---
@@ -263,7 +262,7 @@ def test_gravity_qm_inseparability():
     print("  Measure 1: Y-centroid at detector plane (deflection)")
     print(f"    Free:            {cy_free:.4f}")
     print(f"    With gravity:    {cy_grav:.4f}  (shift = {cy_grav - cy_free:+.4f})")
-    print(f"    Self-consistent: {cy_sc:.4f}  (shift = {cy_sc - cy_free:+.4f})")
+    print(f"    One feedback step: {cy_sc:.4f}  (shift = {cy_sc - cy_free:+.4f})")
     print()
 
     # --- Measure 2: Profile shape difference (not just a shift) ---
@@ -297,24 +296,24 @@ def test_gravity_qm_inseparability():
         return shifted
 
     # Shift gravity profile to align centroid with free
-    shift_grav = cy_grav - cy_free
+    shift_grav = cy_free - cy_grav
     prof_grav_aligned = shift_profile(prof_grav, shift_grav)
-    shift_sc = cy_sc - cy_free
+    shift_sc = cy_free - cy_sc
     prof_sc_aligned = shift_profile(prof_sc, shift_sc)
 
     # Shape difference: L2 norm of (aligned_grav - free) profiles
     shape_diff_grav = np.sqrt(np.sum((prof_grav_aligned - prof_free)**2))
     shape_diff_sc = np.sqrt(np.sum((prof_sc_aligned - prof_free)**2))
 
-    print("  Measure 2: Profile shape difference (centroid-aligned)")
+    print("  Measure 2: Profile shape difference (centroid-shifted; finite-window interpolation)")
     print(f"    |profile_grav - profile_free|_2 = {shape_diff_grav:.6f}")
     print(f"    |profile_sc   - profile_free|_2 = {shape_diff_sc:.6f}")
 
     if shape_diff_grav > 0.001:
         print("    -> Gravity changes the SHAPE, not just the position.")
-        print("    -> The gravitational field modifies quantum coherence.")
+        print("    -> This density diagnostic does not measure quantum coherence.")
     else:
-        print("    -> Shape difference is small (deflection only, no coherence change).")
+        print("    -> The shifted density difference is small on this diagnostic.")
     print()
 
     # --- Measure 3: Spread (second moment) change ---
@@ -336,10 +335,10 @@ def test_gravity_qm_inseparability():
     print("  Measure 3: Y-spread (RMS width) at detector")
     print(f"    Free:            {spread_free:.4f}")
     print(f"    With gravity:    {spread_grav:.4f}  (change = {spread_grav - spread_free:+.4f})")
-    print(f"    Self-consistent: {spread_sc:.4f}  (change = {spread_sc - spread_free:+.4f})")
+    print(f"    One feedback step: {spread_sc:.4f}  (change = {spread_sc - spread_free:+.4f})")
     print()
 
-    # --- Measure 4: Fringe visibility (peak-to-trough ratio) ---
+    # --- Measure 4: Central-window density contrast ---
     def fringe_visibility(prof):
         """Measure fringe contrast as (max - min) / (max + min) in central region."""
         center = len(prof) // 2
@@ -357,10 +356,10 @@ def test_gravity_qm_inseparability():
     vis_grav = fringe_visibility(prof_grav)
     vis_sc = fringe_visibility(prof_sc)
 
-    print("  Measure 4: Fringe visibility (central region)")
+    print("  Measure 4: Density contrast (central region)")
     print(f"    Free:            {vis_free:.6f}")
     print(f"    With gravity:    {vis_grav:.6f}  (change = {vis_grav - vis_free:+.6f})")
-    print(f"    Self-consistent: {vis_sc:.6f}  (change = {vis_sc - vis_free:+.6f})")
+    print(f"    One feedback step: {vis_sc:.6f}  (change = {vis_sc - vis_free:+.6f})")
     print()
 
     # --- Summary ---
@@ -371,7 +370,7 @@ def test_gravity_qm_inseparability():
     print("  SUMMARY:")
     if grav_changes_qm:
         print("  [PASS] Gravity modifies the propagator's quantum structure.")
-        print("         The coupled field changes deflection, coherence, and spread.")
+        print("         At least one centroid, shifted-profile, or spread threshold is exceeded.")
         print("         Physical graph-gravity identification remains a separate bridge.")
     else:
         print("  [INCONCLUSIVE] Gravity effects too small at this grid size.")
@@ -400,7 +399,8 @@ def test_sorkin_structural():
     probability readout. The path integral formalism computes amplitudes;
     it still needs a readout rule to get probabilities.
 
-    Here, the propagator is a sum of complex amplitudes over graph paths.
+    Here, one additive slit mask is inserted in a common linear transfer.
+    With the supplied quadratic readout, amplitude additivity cancels I_3.
     The runner shows I_3 = 0 to machine precision. That verifies the Sorkin
     pairwise-interference diagnostic, not the full probability/readout theorem.
 
@@ -412,7 +412,7 @@ def test_sorkin_structural():
     print("=" * 72)
     print()
     print("Reference contrast: the quadratic probability readout is an input.")
-    print("Runner surface: linear path-sum should give vanishing Sorkin I_3.")
+    print("Runner surface: common linear transfer, additive slit masks, quadratic readout.")
     print("Test: Sorkin three-slit parameter I_3 vanishes numerically.")
     print()
 
@@ -558,9 +558,9 @@ def test_sorkin_structural():
     print("  CONTROL: Nonlinear (cubic) propagator => I_3 != 0")
     def propagate_2d_nonlinear(open_slits: set, k_val: float,
                                 nonlinear_strength: float = 0.05) -> np.ndarray:
-        """Nonlinear propagator: adds cubic nonlinearity to break I_3 = 0.
+        """Nonlinear control: slit-dependent normalization plus cubic update.
 
-        The nonlinearity makes the evolution slit-dependent in a way that
+        The normalization and cubic update make the evolution slit-dependent in a way that
         violates the inclusion-exclusion identity, producing I_3 != 0.
         """
         psi = np.zeros(Ly, dtype=complex)
@@ -661,7 +661,7 @@ def main():
         print(f"    - Centroid shift:     {result1['centroid_shift']:+.4f}")
         print(f"    - Shape difference:   {result1['shape_diff']:.6f}")
         print(f"    - Spread change:      {result1['spread_change']:+.4f}")
-        print(f"    - Visibility change:  {result1['visibility_change']:+.6f}")
+        print(f"    - Density contrast change:  {result1['visibility_change']:+.6f}")
         print("  This is a runner diagnostic on the coupled graph-field surface.")
         print("  A framework-vs-lattice-QCD theorem is not claimed here.")
     else:

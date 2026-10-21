@@ -1,7 +1,7 @@
 # DM Leptogenesis PMNS Reduced-Surface Selector Diagnostic
 
 **Status:** bounded - bounded or caveated result note
-**Type:** bounded_theorem
+**Type:** open_gate
 **Date:** 2026-04-16; scope corrected 2026-07-16
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py`
 **Framework baseline:** Lattice, Qubit, Admissibility, and Record axioms.
@@ -59,3 +59,12 @@ construction, and physical readout factors.
 ```bash
 python3 scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py
 ```
+
+## Execution boundary recorded 2026-10-21
+
+This wrapper remains an open research gate: the current canonical diagnostic
+failed, and no numerical expectation or tolerance has been relaxed. The finite
+chart statements above are retained at their supplied-model scope.
+[Preserved failure evidence](review_evidence/dm-canonical-failures-2026-10-21/manifest.json)
+records the command and source recovery identity. This classification does not
+turn a failed execution into successful evidence.

@@ -1,93 +1,44 @@
-# DM Leptogenesis PMNS Microscopic Selector Reduction Theorem
+# Supplied PMNS witnesses and conditional right-orbit non-identifiability
 
-**Status:** bounded - bounded or caveated result note
-**Date:** 2026-04-17  
+**Type:** open_gate
+**Status:** supplied-model algebra with numerical examples; physical selection open
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_microscopic_selector_reduction_theorem.py`
 
-## Statement
+## Claims and premises
 
-On the current review branch, once the constructive PMNS chamber is known to
-contain an exact `eta / eta_obs = 1` point and the DM same-surface thermal map
-is already rigorously bounded, the remaining open microscopic object is not a
-transport theorem, not a thermal theorem, and not a generic PMNS even-response
-fit.
+For any supplied matrix Y and unitary U, replacing Y by YU† preserves H=YY† and changes K=Y†Y to UKU†. If both matrices belong to a stipulated admissible domain and a target distinguishes them, no single-valued function of H alone recovers that target on both. This is a conditional non-identifiability statement on that domain, not proof that a physical microscopic selector must take any particular form or that existing axioms cannot select a frame.
 
-It is exactly a **right-sensitive microscopic selector law** on
+The runner displays a right rotation by 0.41, checks unitarity and K conjugation, and numerically compares the imported slot and CP readouts. Their differences refer to the fixed supplied basis and target definitions. Physical admissibility of the orbit and status of those basis-dependent targets are not established here.
 
-`dW_e^H = Schur_Ee(D_-)`,
+## Numerical examples, not physical closure
 
-equivalently the intrinsic `2`-real `Z_3` doublet-block point-selection law.
+The imported path and transport functional yield a Brent root with lambda approximately 0.795532193595 and a computed eta residual below 1e-12. Its supplied triplet is positive. This is numerical evidence at a chosen sample, not an exact certified root or derivation of a physical source.
 
-## Reduction chain
+The displayed reflection pair agrees in E1,E2 and eta while A13 changes sign. A different displayed pair has positive gamma but opposite signs of E1,E2, showing that the odd sign alone does not determine those even responses on the supplied collection. The three supplied affine matrices share the helper-defined signature but differ in coordinate targets. These are finite comparisons; they neither exhaust all selectors nor prove that a two-real law is the only missing microscopic object.
 
-### 1. Constructive exact closure already exists
+All original numerical tolerances and numerical computations in these five comparisons are retained. The former failed prose guard and literal-True conclusion have been removed because wording cannot establish mathematics. Prior source is recoverable at Git `5cdc3053ebe202748c218fccee1d9d798ece5c92`; its failed canonical log is preserved in the repository-linked evidence below. The unrelated reduced-surface three-candidate failure and imported stationary-refinement failure remain unresolved; success of these finite examples does not replace them.
 
-The constructive projected-source chamber on the fixed native `N_e` seed
-surface contains an exact `eta = eta_obs` point. So the last-mile blocker is
-not the existence of a constructive PMNS closure point.
+## Supplied computational dependencies
 
-### 2. The odd selector is already reduced
+The runner imports path/transport from the constructive-continuity helper, triplet/carrier examples from the even-response helper, the reflection witness from the oriented-phase helper, right-frame matrices/readouts from the postcanonical helper, and signature/coordinate functions through the Z3 boundary helper. Their formula definitions and supplied constants are computational dependencies; their broader physical or global claims are not premises of this note. No repository note text is read at runtime.
 
-Upstream of `dW_e^H`, the residual odd microscopic selector is already
+- [Constructive path and transport](DM_LEPTOGENESIS_PMNS_CONSTRUCTIVE_CONTINUITY_CLOSURE_THEOREM_NOTE_2026-04-17.md)
+- [Right-frame definitions](DM_NEUTRINO_POSTCANONICAL_RIGHT_FRAME_OBSTRUCTION_NOTE_2026-04-15.md)
 
-- `sign(A13) = sign(2 gamma) = sign(sin(delta))`
-
-on the positive seed surface.
-
-### 3. Fixing the odd bit still does not choose the constructive point
-
-With the same positive odd sheet, the canonical near-closing sample and the
-constructive witness still carry opposite even-response pairs:
-
-- canonical: `E1 < 0`, `E2 < 0`
-- constructive: `E1 > 0`, `E2 > 0`
-
-So the odd selector bit alone does not finish the PMNS gate.
-
-### 4. The atlas source bank compresses further than generic even-response
-
-The current source-facing atlas bank already collapses to one sharp tuple,
-including fixed
-
-- `gamma = 1/2`
-- `E1 = sqrt(8/3)`
-- `E2 = sqrt(8)/3`
-
-Yet distinct live-sheet points still carry the same complete current-bank
-signature while differing in the intrinsic `2`-real source target
-`(delta, q_+)`.
-
-Therefore the remaining source-facing object is not another free even-response
-coefficient fit. It is the intrinsic point-selection law for `(delta, q_+)`,
-equivalently the right-sensitive `Z_3` doublet-block law.
-
-### 5. H-only data cannot supply that selector
-
-Along an exact right-unitary orbit,
-
-- `H = Y Y^dag` stays fixed,
-- but the right-sensitive kernel `K = Y^dag Y` changes,
-- the slot amplitudes change,
-- and the heavy-basis CP tensor changes.
-
-So any positive last-mile selector must be right-sensitive or right-frame-fixing.
-
-## Conclusion
-
-The remaining review-branch blocker is exactly:
-
-- a theorem-grade microscopic selector law on `dW_e^H = Schur_Ee(D_-)`,
-- equivalently the intrinsic `2`-real `Z_3` doublet-block point-selection law.
-
-That is the precise object still separating constructive existence from
-constructive selection on the current branch.
-
-## Audit dependency repair links
-
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+The following sources supply formulas or context, with no renewed endorsement of their entire claims:
 
 - [dm_leptogenesis_ne_charged_source_response_reduction_note_2026-04-16](DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md)
 - [dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16](DM_LEPTOGENESIS_PMNS_SELECTOR_BANK_CP_SHEET_BLINDNESS_THEOREM_NOTE_2026-04-16.md)
 - [dm_neutrino_source_surface_z3_doublet_block_full_closure_boundary_note_2026-04-16](DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_FULL_CLOSURE_BOUNDARY_NOTE_2026-04-16.md)
 - [dm_leptogenesis_pmns_even_response_sole_axiom_boundary_note_2026-04-16](DM_LEPTOGENESIS_PMNS_EVEN_RESPONSE_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md)
 - [dm_leptogenesis_pmns_oriented_phase_sheet_selector_theorem_note_2026-04-16](DM_LEPTOGENESIS_PMNS_ORIENTED_PHASE_SHEET_SELECTOR_THEOREM_NOTE_2026-04-16.md)
+
+## Preserved failed execution evidence
+
+[Historical full-command failure stdout](review_evidence/dm-canonical-failures-2026-10-21/frontier_dm_leptogenesis_pmns_microscopic_selector_reduction_theorem.log) and [recovery/hash manifest](review_evidence/dm-canonical-failures-2026-10-21/manifest.json) remain evidence of the prior failed command, not the new bounded result.
+
+[Conditional-boundary and alternative-route record](review_evidence/dm-canonical-failures-2026-10-21/NO_GO_DISCIPLINE_CHECKLIST.md): partial narrowing, not a universal no-go or packet PASS.
+
+The wrapper is classified as an open gate for this partial narrowing. The
+explicit supplied algebra is preserved, but no complete negative-claim packet
+or physical selector conclusion is submitted for certification here.

@@ -48,6 +48,8 @@ geometric stencil covariance fails. It is not a framework-native physical
 counterexample to this theorem. This note relies only on the explicit channel
 and product-family assumptions below, not on B6 or old audit status.
 
+**Standard channel-theory context.** The obstruction is an application of information–disturbance reasoning, related to [Barnum et al., Noncommuting Mixed States Cannot Be Broadcast (1996)](https://arxiv.org/abs/quant-ph/9511010). The specific step here is that this product family’s tangents generate the full matrix algebra: preserving the family forces the identity marginal and hence a constant complementary output. This is not a new general no-broadcasting theorem or an axiom-level prohibition on classical Records.
+
 ## Exact channel target
 
 Write the Block-10 parameters as

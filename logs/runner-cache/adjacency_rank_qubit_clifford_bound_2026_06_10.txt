@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/adjacency_rank_qubit_clifford_bound_2026_06_10.py
-runner_sha256: 81b6cb9e3e09d1914dab8361cee379cc7ce7ff2e53cb8ec50b6fdfea49a6daf1
+runner_sha256: 0de3c30f1e2f20aafc4c314c2d3a09a704f0d544a4999e222f82e2efa1aff15c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.82
+elapsed_sec: 0.61
 status: ok
 ----- stdout -----
 PART A -- Bloch correspondence and anticommutator inner product (symbolic, exact)
@@ -23,6 +23,7 @@ PART C -- cross-term forcing on Z^3 (torus, exact) with hostile witness
   [PASS] C2 hostile witness gamma_2' = (s1+s2)/sqrt2 is itself a self-adjoint unitary
   [PASS] C3 dropping anticommutation grows cross terms: D'^2 != I (x) Laplacian  --  ||cross||_F = 8.000 (the Dirac-square condition is exactly anticommutation)
   [PASS] C4 Fourier side, symbolic: D(p)^2 = -(sum sin^2 p_mu) I exactly for the Pauli frame
+  [PASS] C5 Dirac-square alone does not force Hermiticity
 
 PART D -- the 4th element is exactly zero (the saturation wall, exact)
 ==============================================================================
@@ -33,7 +34,7 @@ PART E -- realization tie: Kawamoto-Smit conjugation onto the staggered carrier 
 ==============================================================================
   [PASS] E1 T(x)^dag sigma_mu T(x+e_mu) = eta_mu(x) I at every site and direction of Z_4^3  --  eta_1 = 1, eta_2 = (-1)^{x1}, eta_3 = (-1)^{x1+x2}: the landed staggered phases
   [PASS] E2 W unitary (the site-dependent Clifford frame)
-  [PASS] E3 W^dag D W = I_2 (x) D_staggered(eta) EXACTLY: the matrix carrier IS two staggered copies  --  the theorem's carrier class is the framework's realized carrier, not an analogy
+  [PASS] E3 W^dag D W = I_2 (x) D_staggered(eta) EXACTLY: the matrix carrier IS two staggered copies  --  supplied-operator identity; physical realization is not established
 
 PART F -- sub-saturating dimensions exist: the bound is a bound, not a selection
 ==============================================================================
@@ -42,11 +43,11 @@ PART F -- sub-saturating dimensions exist: the bound is a bound, not a selection
 
 PART G -- chirality coherence: the 4-family lives on a separate factor, never on-site
 ==============================================================================
-  [PASS] G1 doubled space C^2 (x) C^2: Gamma_mu = sigma_mu (x) tau_1, Gamma_4 = I (x) tau_2 mutually anticommute  --  the Cl(3,1) separate-factor route, reproduced from saturation
-  [PASS] G2 the grading gamma_5 = Gamma_1..Gamma_4 anticommutes with all four and equals I (x) tau_3 up to phase  --  on-site gamma_5 is impossible (Part D); separate-factor gamma_5 exists -- the retained chirality boundary
+  [PASS] G1 doubled space C^2 (x) C^2: Gamma_mu = sigma_mu (x) tau_1, Gamma_4 = I (x) tau_2 mutually anticommute  --  four positive-square generators on a supplied doubled space
+  [PASS] G2 the grading gamma_5 = Gamma_1..Gamma_4 anticommutes with all four and equals I (x) tau_3 up to phase  --  on-site gamma_5 is impossible (Part D); separate-factor gamma_5 exists -- the supplied algebraic chirality boundary
 
 ==============================================================================
-SCORECARD: PASS=18 FAIL=0
+SCORECARD: PASS=19 FAIL=0
 ==============================================================================
 
 ----- stderr -----

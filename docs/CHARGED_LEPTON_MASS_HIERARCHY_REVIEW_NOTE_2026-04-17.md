@@ -46,7 +46,7 @@ fourth order.
 The charged-lepton sector therefore enters the repo as a **bounded**
 package. The 3→3 observational pin produces no genuinely new numerical
 forecast, unlike the 3→4 neutrino-mixing map which produces
-`δ_CP ≈ −81°` as a retained forecast.
+`δ_CP ≈ 260.88°` as an output conditional on the fitted angles and hierarchy pairing.
 
 ## 1. Retained foundations
 
@@ -549,7 +549,7 @@ Then:
 **Repo status:** bounded. The charged-lepton
 closure is a 3→3 observational pin and produces no spare observable
 forecast analogous to the neutrino sector's 3→4 map producing
-`δ_CP ≈ −81°`. Four structural consequences of the shape theorem are
+`δ_CP ≈ 260.88°`. Four structural consequences of the shape theorem are
 testable but SM-consistent: lepton-flavor-violation zeros at leading
 order, no charged-lepton EDM beyond SM, electron-hopping-ratio
 asymmetry `12.30` (equals the PDG ratio-of-ratios tautologically),
@@ -658,7 +658,7 @@ Nineteen runners, 518 PASS / 0 FAIL on `origin/main` base:
 
 - The retained framework does **not** derive Koide `Q = 2/3` as a sole-axiom theorem output.
 - The charged-lepton hierarchy does **not** fall out of the neutrino-mixing closure as a corollary (Theorem 3 rigorously blocks this route).
-- The bounded charged-lepton package does **not** produce a numerical forecast analogous to `δ_CP ≈ −81°`. The 3→3 pin map has no spare observable.
+- The bounded charged-lepton package does **not** produce a numerical forecast analogous to `δ_CP ≈ 260.88°`. The 3→3 pin map has no spare observable.
 - The "four falsifiable predictions" that emerge structurally from the shape theorem are SM-consistent and do not distinguish the framework from the Standard Model at current experimental precision.
 - The observational-pin triple is unique **as a set** up to overall scale; a residual `S_2` labeling ambiguity on `w_a ↔ w_b` persists on the retained surface.
 
@@ -666,3 +666,11 @@ Nineteen runners, 518 PASS / 0 FAIL on `origin/main` base:
 
 **REVIEW** — ready for editorial review against the retained
 `Cl(3)/Z^3` publication bar.
+
+## Phase reconstruction correction (2026-10-21)
+
+The former −81° / 279° value used only `asin(sin δ)`, which loses the
+quadrant. At the same supplied chamber pin the matrix gives
+`sin δ ≈ −0.98736` and `cos δ ≈ −0.15849`; `atan2` gives
+`δ ≈ 260.88°`. No input angles, source parameters, or pairing were changed.
+This is a conditional matrix output, not independent validation of the fit.

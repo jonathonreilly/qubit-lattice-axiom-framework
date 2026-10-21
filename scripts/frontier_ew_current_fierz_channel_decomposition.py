@@ -4,7 +4,7 @@
 Verifies the structural and arithmetic content of
 ``docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md``.
 
-The note derives the (N_c^2 - 1)/N_c^2 connected-channel ratio from the
+The note derives the (N_c^2 - 1)/N_c^2 channel DIMENSION fraction from the
 SU(N_c) Fierz completeness identity + Hilbert-space dimension counting
 (exact at any finite N_c, no 1/N_c expansion). This runner verifies:
 
@@ -16,11 +16,14 @@ SU(N_c) Fierz completeness identity + Hilbert-space dimension counting
   5. Matching rule (M) is explicitly named as NOT derived in the note.
   6. Forbidden-imports clause is present.
 
-Result: PASS=N FAIL=0 confirms the cycle-breaking note is internally
-consistent and structurally avoids citing the 3 cycle nodes.
+Result: PASS=N FAIL=0 confirms the displayed finite checks only.
+Dimension counting does not supply a physical amplitude or matching weight.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md']
 
 import math
 import sys
@@ -274,6 +277,23 @@ def part7_forbidden_imports() -> None:
     )
 
 
+def part8_reflection_and_weight_controls() -> None:
+    section("Part 8: reflection sign and dimension-versus-amplitude controls")
+    for n in (2, 3):
+        gens = su_n_generators(n)
+        for label, M, expected in (
+            ("identity", np.eye(n, dtype=complex), 0.0),
+            ("traceless", np.diag([1, -1] + [0]*(n-2)).astype(complex), 1.0),
+        ):
+            T = float(np.vdot(M, M).real)
+            C = 2 * sum(abs(np.trace(M @ t))**2 for t in gens)
+            parity_ok = all(np.allclose(np.trace(M @ (p*M.conj().T)), p*T)
+                            for p in (-1, 1))
+            check(f"N={n}, {label}: raw trace=p*T, C/T={expected}, not dimension fraction",
+                  parity_ok and abs(C/T-expected) < 1e-12
+                  and abs(C/T-(n*n-1)/(n*n)) > 1e-3)
+
+
 def main() -> int:
     section("EW current Fierz-channel decomposition verification")
     part1_note_structure()
@@ -283,6 +303,7 @@ def main() -> int:
     part5_exact_8_over_9()
     part6_matching_rule_named()
     part7_forbidden_imports()
+    part8_reflection_and_weight_controls()
 
     print()
     print("-" * 88)

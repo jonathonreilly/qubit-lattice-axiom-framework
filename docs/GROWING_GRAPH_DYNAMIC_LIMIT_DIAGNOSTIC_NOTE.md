@@ -1,12 +1,14 @@
 # Growing Graph Dynamic Limit Diagnostic Note
 
+**Type:** no_go
+
 **Date:** 2026-04-06  
 **Status:** bounded static-control no-go
 
 ## Artifact chain
 
-- [`scripts/growing_graph_dynamic_limit_diag.py`](/Users/jonreilly/Projects/Physics/scripts/growing_graph_dynamic_limit_diag.py)
-- [`logs/2026-04-06-growing-graph-dynamic-limit.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-growing-graph-dynamic-limit.txt)
+- [`scripts/growing_graph_dynamic_limit_diag.py`](../scripts/growing_graph_dynamic_limit_diag.py)
+- [`logs/2026-04-06-growing-graph-dynamic-limit.txt`](../logs/2026-04-06-growing-graph-dynamic-limit.txt)
 
 ## Why this exists
 

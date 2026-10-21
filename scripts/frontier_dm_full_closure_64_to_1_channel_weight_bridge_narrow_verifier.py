@@ -11,6 +11,8 @@ source-boundary constraints.
 
 from __future__ import annotations
 
+AUDIT_INPUT_PATHS = ['docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md']
+
 import math
 import subprocess
 import sys

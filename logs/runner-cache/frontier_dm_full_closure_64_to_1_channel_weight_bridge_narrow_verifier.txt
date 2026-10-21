@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.py
-runner_sha256: 61913a7f27f6acaf4a5c1732073aa10bb1745e6b42511d8b33d4fccf2779d054
-timeout_sec: 120
+runner_sha256: b63205467a61046dc09437f741b2b60a10ee2b4316b8f179166032a3773fab4c
+input_fingerprint_sha256: 4700ba4d747549e087bb17c747fcb8840c0522ff7242148c4c859d5b3f09c1f9
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ========================================================================

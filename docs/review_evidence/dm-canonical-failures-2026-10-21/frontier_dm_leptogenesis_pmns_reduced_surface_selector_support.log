@@ -1,0 +1,27 @@
+========================================================================================
+DM LEPTOGENESIS PMNS REDUCED-SURFACE SELECTOR SUPPORT
+========================================================================================
+
+Framework convention:
+  current baseline: Lattice, Qubit, Admissibility, and Record.
+
+Question:
+  Does the supplied compact-chart diagnostic recover its expected
+  three-candidate fixture under deterministic local polishing?
+
+Scope:
+  The chart, transport, equality, and readout are supplied. This runner
+  does not exclude candidates outside the chart or prove a global minimum.
+  [FAIL] The deterministic chart diagnostic stabilizes to the required three candidates  (finite deterministic chart diagnostic did not stabilize to exactly three stationary candidates (found 2))
+
+========================================================================================
+RESULT
+========================================================================================
+  Conditional chart diagnostic:
+    - the required three-candidate fixture was not recovered
+    - no branch-count, minimum, or selector conclusion follows
+
+  This remains a finite diagnostic using known anchors and local polishing;
+  it is not an exhaustion, uniqueness, or physical-selection theorem.
+
+PASS=0  FAIL=1

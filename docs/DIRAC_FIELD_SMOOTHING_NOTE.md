@@ -1,5 +1,8 @@
 # Dirac Field Smoothing Note — Finite m₀ = 0.10 Runner Output (Binding)
 
+**Type:** bounded_theorem
+**Current scope:** Finite supplied m0=0.10 scan output only; nearby-mass robustness and physical readout remain outside this claim.
+
 Date: 2026-04-10 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: binding scope is the finite m₀ = 0.10 runner output only; nearby-mass robustness and physical-readout interpretation split out)
 
 ## Scope narrowing (2026-05-17 audited_conditional repair)
@@ -79,10 +82,12 @@ This note records the source-field broadening scan in
 - TOWARD count: `5/5`
 - offset power law: `alpha = 3.053`, `R^2 = 0.8098`
 
-## Nearby Mass Checks
+## Nearby Mass Checks — historical, outside binding scope
+
+No completed logs for these masses are registered. The following is an unverified historical observation, not evidence for the binding result at `m0 = 0.10`.
 
 Spot checks at `m0 = 0.08` and `m0 = 0.12` did not restore N monotonicity. In both cases, the Gaussian profile remained the best offset-law candidate, reaching `5/5` TOWARD offsets, while the localized profile still failed the N trend.
 
 ## Interpretation
 
-Broadening the source field helps the offset-distance law, and the Gaussian control is clearly better than the current localized profile on that metric. It does not fix the N-monotonicity failure, though, and the nearby mass spot checks did not reveal a better local operating point that changes that conclusion.
+Broadening the source field helps the offset-distance law, and the Gaussian control is clearly better than the current localized profile on that metric. It does not fix the N-monotonicity failure, though, and no robustness conclusion at nearby masses is established by the unlogged historical spot checks.

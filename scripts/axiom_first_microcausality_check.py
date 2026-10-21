@@ -21,6 +21,8 @@ free_bilinear_quasilocal_lr_bridge_2026_06_10.py.
 """
 from __future__ import annotations
 
+AUDIT_INPUT_PATHS = ['docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md', 'docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md']
+
 import math
 import os
 import sys

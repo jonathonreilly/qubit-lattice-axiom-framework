@@ -1,143 +1,47 @@
-# DM Leptogenesis PMNS Selector-Bank CP-Sheet Blindness Theorem
+# Supplied PMNS parity data: conditional sign non-identifiability
 
-**Claim type:** positive_theorem
-
-**Date:** 2026-04-16  
-**Status:** exact negative theorem on the current PMNS-side selector-law bank  
+**Type:** open_gate
+**Status:** conditional algebra; numerical selector and physical selection remain open
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py`
 
-## Question
+## Statement and assumptions
 
-Do any of the current PMNS-side selector laws or positive closure candidates on
-this branch already fix the constructive mainline CP sheet?
+Let x,y be real triples and d a real phase. Supply a domain and constraints invariant under d -> -d. Supply an objective even under that reflection. For
 
-## Bottom line
+    gamma = x1*y3*sin(d)
+    E1 = ((x2²+y2²)-(x3²+y3²)+x2*y1-x1*y3*cos(d))/2
+    E2 = x1²+y1²+(x2*y1+x1*y3*cos(d))/2
+    cp = (-2*gamma*E1/3, 2*gamma*E2/3)
 
-No.
+gamma and cp are odd, while E1,E2 are even. Thus admitted reflected points have identical objective and even data. When cp is nonzero, those data cannot uniquely determine its sign. At cp=0 there are no distinct nonzero CP sheets. This does not exclude a point with the desired sign pattern or require abandoning the family or adding an axiom.
 
-The current PMNS-side selector bank is already **transport-constructive** but
-still **CP-sheet blind**.
+## Matrix and objective scope
 
-The reason is structural:
+For the supplied real cyclic matrix C and Y=diag(x)+diag(y1,y2,y3*exp(i*d))*C, H=YY† obeys H(-d)=conjugate(H(d)). With simple eigenvalues and consistent ordering, conjugating eigenvectors preserves their squared component moduli. At degeneracy an individual eigenvector packet needs a basis convention; no unrestricted packet assertion is made. A real positive-definite seed and positive-definite H make the real trace/log-determinant relative action reflection-even. The supplied information cost has a phase-independent KL part and 1-cos(d), hence is even. Transport is reflection-even only when defined as the same functional of the invariant packet. These premises do not assert a complete bank of all possible selector laws.
 
-1. every current PMNS-side selector objective on this branch is even under
-   `delta -> -delta`
-2. the baryogenesis source channel
+## Evidence and unresolved diagnostics
 
-   `gamma = x_1 y_3 sin(delta)`
+The default runner checks symbolic parity and matrix conjugation identities plus a supplied exact sign-pattern control. It does not construct a stationary point, prove a branch count or certify physical admissibility. Numerical eta equality remains tolerance-based, and finite search is not global extremality.
 
-   is odd under `delta -> -delta`
-3. the interference channels `E1` and `E2` are even
-4. therefore every current selected source or candidate comes with an equally
-   selected opposite-CP partner
+`python3 scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py --numerical-diagnostic` is a separate numerical diagnostic with unchanged upstream solver tolerances and nonzero failure. The previous canonical batch's stationary refinement failure and removed-API failure are preserved in the repository-linked failed-execution evidence below; their recovery source is Git commit `5cdc3053ebe202748c218fccee1d9d798ece5c92`. Default algebra success does not erase or replace those failures. Physical CP selection, admissible-domain determination and numerical branch certification remain open.
 
-So none of the current PMNS-side selector laws yet gives a constructive
-source-oriented mainline baryogenesis witness.
+## Related supplied constructions
 
-## What current laws are covered
-
-This theorem covers the current PMNS-side selector bank on the branch:
-
-- the minimum-information exact closure law
-- the observable-relative-action exact closure law
-- the transport-extremal overshooting source candidate
-- the exact `eta = 1` continuity closure point generated from that candidate
-
-## Exact consequences
-
-### 1. The exact closure laws are CP-sheet blind
-
-The minimum-information closure law and the observable-relative-action closure
-law both reach exact `eta = 1` on the fixed native seed surface.
-
-But in both cases:
-
-- closure is unchanged under `delta -> -delta`
-- the selector objective is unchanged under `delta -> -delta`
-- `E1` and `E2` are unchanged
-- `gamma`, `cp1`, and `cp2` flip sign
-
-So their displayed representatives are not constructive CP witnesses. They are
-only one member of an equally selected opposite-CP pair.
-
-### 2. Even the positive transport-side overshoot/closure candidates are still CP-sheet blind
-
-The transport-extremal candidate already overshoots:
-
-- `eta/eta_obs = 1.0522203130495849`
-
-and the exact continuity construction already gives a closure point with
-
-- `eta/eta_obs = 1`.
-
-So the PMNS side has already solved **transport existence** on the fixed native
-seed surface.
-
-But the same parity problem remains:
-
-- the transport objective is unchanged under `delta -> -delta`
-- the overshooting source has an equally transport-extremal opposite-CP partner
-- the exact closure point has an equally selected opposite-CP partner
-
-In the displayed representative, the exact closure point lands at
-
-- `gamma < 0`
-- `E1 > 0`
-- `E2 < 0`
-
-so its CP pair is
-
-- `cp1 > 0`
-- `cp2 > 0`
-
-not the mainline source-oriented pattern `(-,+)`.
-
-## What this closes
-
-This closes the natural objection:
-
-> didn’t the DM lane already construct closure candidates?
-
-Yes, it did.
-
-But those current selector laws and closure candidates do **not** yet close the
-baryogenesis-side CP problem, because they do not fix the CP sheet.
-
-So the remaining PMNS-side baryogenesis issue is no longer:
-
-- existence of an off-seed source
-- existence of `eta = 1` closure
-- existence of `eta > 1` overshoot
-
-It is specifically:
-
-- a microscopic `D_- / dW_e^H` sign-law problem that must break the current
-  `delta -> -delta` blindness and land on the constructive mainline sheet
-
-## Consequence for the live target
-
-The live PMNS comparator target is now sharp:
-
-- derive a `D_- / dW_e^H` law that fixes the projected-source signs
-  `gamma > 0`, `E1 > 0`, `E2 > 0`
-
-or else
-
-- prove that no such law exists on the current PMNS branch.
-
-## Upstream selector-law / candidate / channel sources
-
-The runner imports four PMNS-side modules whose framework wrapper notes
-supply the law/candidate/channel definitions enumerated in this CP-sheet
-blindness theorem:
+These references provide context for the numerical diagnostic; the displayed parity proof is self-contained and does not import their closure or global-selection claims.
 
 - [DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md) — observable-relative action law (`relaw` module).
 - [DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md) — transport-extremal source candidate (`cand` module).
 - [DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md) — breaking-triplet source law (`triplet_channels_from_active_data` from `breaking_triplet_source_law` module).
 - [DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) — minimum-information source-law module (`minlaw`) used as the explicit selector comparator.
 
-## Command
+## Preserved failed execution evidence
 
-```bash
-python3 scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py
-```
+[Historical full-command failure stdout](review_evidence/dm-canonical-failures-2026-10-21/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.log) and [recovery/hash manifest](review_evidence/dm-canonical-failures-2026-10-21/manifest.json) remain evidence of the prior failed command, not the new bounded result.
+
+The optional numerical diagnostic now replays only minimum-information initialization and local-candidate checks. It does not replay the former relative-action or transport-candidate portions, nor does it claim their success.
+
+[Conditional-boundary and alternative-route record](review_evidence/dm-canonical-failures-2026-10-21/NO_GO_DISCIPLINE_CHECKLIST.md): partial narrowing, not a universal no-go or packet PASS.
+
+The wrapper is classified as an open gate for this partial narrowing. The
+explicit supplied algebra is preserved, but no complete negative-claim packet
+or physical selector conclusion is submitted for certification here.

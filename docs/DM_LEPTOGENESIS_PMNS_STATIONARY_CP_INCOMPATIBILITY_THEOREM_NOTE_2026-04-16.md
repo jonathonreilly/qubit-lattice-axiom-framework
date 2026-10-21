@@ -1,113 +1,47 @@
-# DM Leptogenesis PMNS Stationary CP Incompatibility Theorem
+# Supplied PMNS parity data: conditional sign non-identifiability
 
-**Date:** 2026-04-16  
-**Status:** support - structural or confirmatory support note
-as constructive witnesses for the source-oriented mainline leptogenesis branch  
+**Type:** open_gate
+**Status:** conditional algebra; numerical selector and physical selection remain open
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py`
 
-## Question
+## Statement and assumptions
 
-Can the current exact PMNS selector families on the fixed native `N_e` seed
-surface serve as constructive witnesses for the source-oriented mainline CP
-branch?
+Let x,y be real triples and d a real phase. Supply a domain and constraints invariant under d -> -d. Supply an objective even under that reflection. For
 
-## Bottom line
+    gamma = x1*y3*sin(d)
+    E1 = ((x2²+y2²)-(x3²+y3²)+x2*y1-x1*y3*cos(d))/2
+    E2 = x1²+y1²+(x2*y1+x1*y3*cos(d))/2
+    cp = (-2*gamma*E1/3, 2*gamma*E2/3)
 
-No.
+gamma and cp are odd, while E1,E2 are even. Thus admitted reflected points have identical objective and even data. When cp is nonzero, those data cannot uniquely determine its sign. At cp=0 there are no distinct nonzero CP sheets. This does not exclude a point with the desired sign pattern or require abandoning the family or adding an axiom.
 
-The current exact PMNS selector families are transport selectors only. On the
-current branch they are CP-sheet-indeterminate with respect to the mainline
-charged-sector bridge.
+## Matrix and objective scope
 
-The reason is exact and simple:
+For the supplied real cyclic matrix C and Y=diag(x)+diag(y1,y2,y3*exp(i*d))*C, H=YY† obeys H(-d)=conjugate(H(d)). With simple eigenvalues and consistent ordering, conjugating eigenvectors preserves their squared component moduli. At degeneracy an individual eigenvector packet needs a basis convention; no unrestricted packet assertion is made. A real positive-definite seed and positive-definite H make the real trace/log-determinant relative action reflection-even. The supplied information cost has a phase-independent KL part and 1-cos(d), hence is even. Transport is reflection-even only when defined as the same functional of the invariant packet. These premises do not assert a complete bank of all possible selector laws.
 
-1. the current selector observables are even under `delta -> -delta`
-   on the fixed native `N_e` seed surface:
-   - the exact closure data are unchanged
-   - the seed-relative selector action is unchanged
-   - the current minimum-information deformation cost is unchanged
-2. the charged-sector bridge law gives
+## Evidence and unresolved diagnostics
 
-   `gamma = x_1 y_3 sin(delta)`
+The default runner checks symbolic parity and matrix conjugation identities plus a supplied exact sign-pattern control. It does not construct a stationary point, prove a branch count or certify physical admissibility. Numerical eta equality remains tolerance-based, and finite search is not global extremality.
 
-3. while the interference channels
+`python3 scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py --numerical-diagnostic` is a separate numerical diagnostic with unchanged upstream solver tolerances and nonzero failure. The previous canonical batch's stationary refinement failure and removed-API failure are preserved in the repository-linked failed-execution evidence below; their recovery source is Git commit `5cdc3053ebe202748c218fccee1d9d798ece5c92`. Default algebra success does not erase or replace those failures. Physical CP selection, admissible-domain determination and numerical branch certification remain open.
 
-   `E1 = delta + rho`
+## Related supplied constructions
 
-   `E2 = A + b - c - d`
-
-   are even under `delta -> -delta`
-4. therefore the intrinsic mainline CP tensor flips sign:
-
-   `cp1(-delta) = -cp1(delta)`
-
-   `cp2(-delta) = -cp2(delta)`.
-
-So the current PMNS selector families cannot realize the constructive
-source-oriented mainline CP sheet.
-
-## What this closes
-
-This closes the real remaining ambiguity in the PMNS lane.
-
-Before this theorem, the PMNS route still had two live readings:
-
-- maybe the current PMNS selector family is already the right constructive CP
-  witness and only needs better packaging
-- or maybe it is only a transport selector and not a baryogenesis witness
-
-The theorem closes that ambiguity negatively for the **current selector
-families**:
-
-- they are transport-useful
-- they are not the constructive mainline CP witness
-- they determine parity classes, not a theorem-grade CP sign choice
-- each selected family has an equally selected opposite-CP partner
-
-## Scope
-
-This theorem is about the **current exact selector families**:
-
-- the exact reduced-surface stationary branches
-- the current minimum-information selector law
-
-It does **not** prove that every conceivable PMNS-inspired charged-sector law
-is impossible.
-
-It proves only that the current selector families on the fixed native `N_e`
-seed surface are CP-sheet-indeterminate on the mainline charged-sector bridge.
-
-## Consequence for the live target
-
-If a positive PMNS-side bridge is still desired, it must move off the current
-selector families.
-
-The live constructive target is therefore no longer:
-
-- better transport selection on the current PMNS reduced surface
-
-It is instead:
-
-- a new charged-sector / full-`D` law that breaks the current
-  `delta -> -delta` ambiguity and enforces the source-oriented sign pattern
-  `gamma > 0`, `E1 > 0`, `E2 > 0`
-
-or else
-
-- a stronger exact no-go proving that no such PMNS-side law exists on the
-  current branch.
-
-## Upstream authorities (selector-family + relative-action / min-info + charged-sector)
-
-The runner imports four PMNS-side modules; three have framework wrapper notes:
+These references provide context for the numerical diagnostic; the displayed parity proof is self-contained and does not import their closure or global-selection claims.
 
 - [DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md) — selector-family construction (`selector` module).
 - [DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md) — relative-action stationarity (`stat` module).
 - [DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md) — charged-sector triplet-channel source law (`triplet_channels_from_active_data`).
 - [DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) — minimum-information source-law module (`minlaw`).
 
-## Command
+## Preserved failed execution evidence
 
-```bash
-python3 scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py
-```
+[Historical full-command failure stdout](review_evidence/dm-canonical-failures-2026-10-21/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.log) and [recovery/hash manifest](review_evidence/dm-canonical-failures-2026-10-21/manifest.json) remain evidence of the prior failed command, not the new bounded result.
+
+The optional numerical diagnostic now replays only multistart branch construction. It does not replay the former minimum-information or branch-parity portions, nor does it claim their success.
+
+[Conditional-boundary and alternative-route record](review_evidence/dm-canonical-failures-2026-10-21/NO_GO_DISCIPLINE_CHECKLIST.md): partial narrowing, not a universal no-go or packet PASS.
+
+The wrapper is classified as an open gate for this partial narrowing. The
+explicit supplied algebra is preserved, but no complete negative-claim packet
+or physical selector conclusion is submitted for certification here.

@@ -1,59 +1,20 @@
 #!/usr/bin/env python3
 """
-EW kappa_EW object-pin + Monte-Carlo-undecidability runner
-==========================================================
+Conditional EW color-algebra and readout-identifiability diagnostics.
 
-PStack experiment: ew-kappa-self-energy-object-pin
-
-Companion runner for
-  docs/EW_KAPPA_SELF_ENERGY_OBJECT_PIN_MC_UNDECIDABLE_NO_GO_NOTE_2026-06-08.md
-
-This runner reproves -- from group-theory / linear-algebra primitives, with no
-PDG or experimental inputs -- the load-bearing bridges that PIN the object the
-named matching coefficient kappa_EW lives on, and that demonstrate kappa_EW is
-NOT a Monte-Carlo-decidable quantity.
-
-It does NOT introduce any new axiom, new selector, or new audit verdict, and it
-does NOT privilege either completion (kappa=0 or kappa=1). It sharpens the
-already-landed EW kappa_EW no-go family by:
-
-  (A) re-deriving the SU(N_c) Fierz completeness identity
-        Tr[M^dag M] = (1/N_c)|Tr M|^2 + 2 sum_A |Tr[M t^A]|^2 = S + C ;
-
-  (B) IDENTIFYING THE OBJECT (conditionally): for the framework's own color-blind
-      point-split EW current (internal generator Q_EW (x) I_color), the bare
-      connected two-current correlator color factor is
-        Tr_internal(Q_EW^2) * Tr_color[G(x,y) G(y,x)] = Tr_internal(Q_EW^2)*(S+C),
-      the full color trace. (This is the expression in the landed traceless-
-      generator no-go.) This is the OBJECT the ensemble computes; the physical
-      readout weight kappa is a SEPARATE, external functional choice;
-
-  (C) showing the channel split is KINEMATIC: <S>/<T> = 1/N_c^2 for BOTH a free
-      propagator in a random gauge orbit AND a Haar-random color matrix, so
-      R_conn = C/T = (N_c^2-1)/N_c^2 = 8/9 is a gauge-orbit fraction, the same
-      at every beta (no continuum trend);
-
-  (D) showing color-blindness fixes NEITHER completion: a color-scalar (I_color)
-      renormalization scales S and C equally, so it does not select kappa
-      (MATCHING_RULE sec2). kappa=0 is an active singlet projection (OZI / planar /
-      leading-N_c, a non-color-blind operation); kappa=1 is the identity readout
-      (retain the full trace); selecting either as physical is an external scheme
-      choice, and the color-blind lattice current privileges neither;
-
-  (E) the structural Monte-Carlo-undecidability: the lattice ensemble outputs the
-      channel data {<S>, <C>, <T>=<S>+<C>} -- of which only <T>=Tr[GG^dag] is
-      pointwise gauge-invariant, while <S>,<C> are gauge-orbit-averaged channel
-      diagnostics (per-config S,C are gauge-variant); kappa_EW is the
-      EXTERNAL weight of S in the physical readout Pi_phys = C + kappa S.
-      kappa=0 (K_EW=9/8) and kappa=1 (K_EW=1) are both functions of the same
-      measured {S,C,T}; no MC observable is a function of kappa alone; neither is
-      privileged by any lattice measurement;
-
-  (F) sin^2(theta_W) is kappa-invariant (the K_EW(kappa) factor cancels in the
-      g_1/g_2 ratio), so it survives either completion.
-
-Self-contained: numpy + sympy only.
+Companion: docs/EW_KAPPA_SELF_ENERGY_OBJECT_PIN_MC_UNDECIDABLE_NO_GO_NOTE_2026-06-08.md
+Checks finite Fierz identities, a supplied tensor-product bilocal kernel,
+epsilon-hermiticity on one finite background, independent-endpoint Haar
+averaging, scalar rescaling, formal readouts and common-factor cancellation.
+The full point-split physical current is not identified: vertex links,
+displaced endpoints, Wick signs and continuum matching remain open.
+An external kappa absent from the supplied channel data is not inferred from
+those data alone. This is not universal Monte Carlo impossibility and does
+not establish either formal readout as an admissible physical scheme.
+Self-contained: numpy + sympy; no repository or experimental inputs.
 """
+
+AUDIT_TIMEOUT_SEC = 300
 
 import numpy as np
 import sympy as sp
@@ -142,22 +103,24 @@ def part_A():
 
 
 # ============================================================
-# (B) OBJECT PIN: connected color-blind two-current loop = full trace,
+# (B) Supplied tensor-product bilocal kernel = full trace,
 #     and the singlet channel S genuinely carries weight Tr(Q^2).
 # ============================================================
 def part_B():
-    print("\n(B) The bare connected color-blind correlator computes Tr(Q^2)*(S+C): the OBJECT (not the readout)")
+    print("\n(B) Supplied tensor-product bilocal kernel has sign-adjusted color factor Tr(Q^2)*(S+C)")
     n = 3
     okall = True
 
     # B1: color-blind loop color factor equals Tr[G G^dag] = S + C for the
-    #     reflected pair G(y,x) = G(x,y)^dag.
+    #     sign-adjusted reflected pair; both raw parity signs are checked.
     G = RNG.standard_normal((n, n)) + 1j * RNG.standard_normal((n, n))
-    loop = np.trace(G @ G.conj().T)  # Tr_color[ I G I G^dag ]
+    loop = np.trace(G @ G.conj().T)  # sign-adjusted trace
+    parity_ok = all(abs(np.trace(G @ (p * G.conj().T)) - p * loop) < 1e-9
+                    for p in (-1, 1))
     S, C, T = fierz_S_C(G, n)
     okall &= check(
-        f"color-blind loop Tr[G G^dag] = S+C = T (loop {np.real(loop):.4f} vs T {T:.4f})",
-        abs(np.real(loop) - T) < 1e-9 and abs(np.imag(loop)) < 1e-9,
+        f"both parities: raw loop=p_xy*T; sign-adjusted Tr[G G^dag]=S+C=T (loop {np.real(loop):.4f} vs T {T:.4f})",
+        parity_ok and abs(np.real(loop) - T) < 1e-9 and abs(np.imag(loop)) < 1e-9,
     )
 
     # B2: internal (weak/hypercharge) factorization for a DIRECT-PRODUCT generator
@@ -236,10 +199,28 @@ def part_Bp():
     herm_err = np.max(np.abs(D.conj().T - E @ D @ E))
     G = np.linalg.inv(D)
     refl_err = np.max(np.abs(G.conj().T - E @ G @ E))
+    # Inspect every site-pair color block of the actual inverse, rather than
+    # constructing a reflected partner by definition. Odd pairs refute the
+    # former unsigned trace identity whenever their norm is nonzero.
+    block_err = 0.0
+    odd_unsigned_error = 0.0
+    for x in range(vol):
+        for y in range(vol):
+            ix = np.arange(nc) * vol + x
+            iy = np.arange(nc) * vol + y
+            Gxy = G[np.ix_(ix, iy)]
+            Gyx = G[np.ix_(iy, ix)]
+            raw = np.trace(Gxy @ Gyx)
+            norm = np.vdot(Gxy, Gxy).real
+            parity = eps[x] * eps[y]
+            block_err = max(block_err, abs(raw - parity * norm))
+            if parity == -1:
+                odd_unsigned_error = max(odd_unsigned_error, abs(raw - norm))
     ok = check(
         f"staggered D_m^dag = eps D_m eps (err {herm_err:.1e}) => G^dag = eps G eps (err {refl_err:.1e}); "
-        f"reflection is a theory property, not an assumption",
-        herm_err < 1e-9 and refl_err < 1e-9,
+        f"site-pair signed-trace error {block_err:.1e}; unsigned odd-pair error {odd_unsigned_error:.1e}",
+        herm_err < 1e-9 and refl_err < 1e-9 and block_err < 1e-9
+        and odd_unsigned_error > 1e-6,
     )
     return ok
 
@@ -299,11 +280,11 @@ def part_C():
 # (D) Color-blindness fixes NEITHER completion: it leaves kappa free.
 #     kappa=0 (singlet projection) is an active non-color-blind operation; kappa=1
 #     (retain S+C) is the identity readout; selecting either as physical is an
-#     external scheme choice the lattice current does not make.  (Symmetric
+#     additional readout choice the lattice current does not make.  (Symmetric
 #     statement, consistent with MATCHING_RULE sec2.)
 # ============================================================
 def part_D():
-    print("\n(D) Color-blindness leaves kappa free: both kappa=1 and kappa=0 are external scheme choices")
+    print("\n(D) Color-blindness leaves kappa free: kappa=1 and kappa=0 are formal readouts; physical admissibility is open")
     n = 3
     okall = True
     G = RNG.standard_normal((n, n)) + 1j * RNG.standard_normal((n, n))
@@ -324,8 +305,8 @@ def part_D():
     )
 
     # The two completions: kappa=0 is an ACTIVE singlet projection (OZI / planar / leading-N_c);
-    # kappa=1 is the IDENTITY readout (retain the full trace S+C, the exact connected correlator).
-    # Selecting which the physical coupling uses is an external continuum scheme choice either way.
+    # kappa=1 is the IDENTITY readout (retain the full trace S+C, the supplied norm).
+    # Selecting which the physical coupling uses is an additional matching choice, with physical admissibility unproved either way.
     G_adj = G - (np.trace(G) / n) * np.eye(n)
     S0, C0, T0 = fierz_S_C(G_adj, n)
     okall &= check(
@@ -337,7 +318,7 @@ def part_D():
         abs((S + C) - T) < 1e-9,
     )
     print("    => color-blindness fixes neither completion; kappa=0 (OZI/planar projection) and kappa=1 (identity")
-    print("       readout) are both external continuum scheme choices -- neither is privileged by the lattice current")
+    print("       readout) are formal alternatives; physical matching and admissibility remain open")
     return okall
 
 
@@ -345,7 +326,7 @@ def part_D():
 # (E) Structural MC-undecidability of kappa_EW.
 # ============================================================
 def part_E():
-    print("\n(E) Structural Monte-Carlo-undecidability of kappa_EW")
+    print("\n(E) Nonidentifiability of external kappa from the supplied channel data alone")
     n = 3
     F_adj = sp.Rational(n ** 2 - 1, n ** 2)  # 8/9
     kappa = sp.symbols("kappa", nonnegative=True)
@@ -360,26 +341,26 @@ def part_E():
     # The lattice ensemble measures the channel data {<S>,<C>,<T>=<S>+<C>}; only <T>=Tr[GG^dag]
     # is pointwise gauge-invariant, while <S>,<C> are gauge-orbit-averaged channel diagnostics.
     # The bare correlator computes the full trace <T>=<S>+<C>.  kappa is the EXTERNAL weight of
-    # S in the *physical readout functional* Pi_phys = C + kappa S; both
+    # S in the formal readout family Pi_phys = C + kappa S; both
     # completions are functions of the SAME measured data and neither is forced by it.
     S_meas, C_meas = sp.Rational(1, 9), sp.Rational(8, 9)  # any measured split; T=1
     T_meas = S_meas + C_meas
-    bare_correlator = T_meas  # what the ensemble actually computes; independent of kappa
+    bare_correlator = T_meas  # the supplied norm data; independent of kappa
     Pi0 = C_meas + 0 * S_meas
     Pi1 = C_meas + 1 * S_meas
     okall &= check(
-        f"bare gauge-invariant correlator = <T> = {bare_correlator} (full trace S+C); this is the OBJECT, "
+        f"supplied gauge-invariant norm = <T> = {bare_correlator} (full trace S+C); this is the supplied matrix object, "
         f"not yet the physical readout",
         bare_correlator == sp.Integer(1),
     )
     okall &= check(
         f"Pi_phys(kappa=0)={Pi0} (singlet-subtracted) and Pi_phys(kappa=1)={Pi1} (full trace) are BOTH built "
-        f"from the SAME measured {{S={S_meas},C={C_meas},T={T_meas}}} -> no MC observable is a function of kappa alone",
+        f"from the SAME measured {{S={S_meas},C={C_meas},T={T_meas}}} ; these data alone supply no equation for kappa",
         Pi0 == C_meas and Pi1 == T_meas,
     )
-    print("    => kappa_EW is not Monte-Carlo-decidable: the channel split is an ensemble observable, but the readout")
-    print("       weight (which channels the matched physical coupling retains) is a continuum scheme choice external")
-    print("       to it; neither completion is privileged by any lattice measurement")
+    print("    => The supplied channel data do not fix the independently introduced readout")
+    print("       weight. An additional physical matching relation or parameter-dependent observable could constrain it;")
+    print("       physical admissibility of either formal readout remains unproved.")
     return okall
 
 
@@ -406,7 +387,7 @@ def part_F():
 #     exact constants rather than any sampled average.
 # ============================================================
 def part_G():
-    print("\n(G) N5 execution certificate: what this runner resolves")
+    print("\n(G) Resolution scope and limits (not physical bridge certificates)")
     print(
         "  per_element: checked — the generator basis is built entry by entry and then "
         "validated exhaustively: every ordered pair of basis generators is tested against "
@@ -415,11 +396,10 @@ def part_G():
         "independently for each color rank tested."
     )
     print(
-        "  per_site: checked and not executed — although the correlator is written at a "
-        "point-split pair, positions enter only as labels on the propagator and no site "
-        "index, lattice sum or geometry is ever realized; the color factor is evaluated as "
-        "pure matrix algebra. That absence is the note's own result: kappa_EW is an "
-        "external readout weight that no site-resolved lattice measurement can decide."
+        "  per_site: executed on the finite staggered background in B': every site-pair "
+        "color block of its inverse is checked against raw_trace=p_xy*(S+C). Odd pairs "
+        "also falsify the unsigned identity. This is a finite algebraic control, not a "
+        "continuum or ensemble validation of the physical current readout."
     )
     print(
         "  per_mode: checked — the adjoint channel is not taken from a closed form but "
@@ -437,24 +417,24 @@ def part_G():
         "at every rank tested."
     )
     print(
-        "  lattice_wide: checked and not executed — no lattice ensemble is generated and "
+        "  lattice_wide: not executed — no lattice ensemble is generated and "
         "no beta, volume or continuum limit is taken. Beta-independence is obtained "
         "through a gauge-orbit average rather than a coupling scan: the singlet fraction "
         "is shown dressing-independent for an arbitrary non-unitary dressed propagator, "
-        "which is exactly why R_conn carries no continuum trend and why no lattice-wide "
-        "measurement decides kappa_EW."
+        "under the independent-endpoint averaging hypotheses. No universal statement about "
+        "lattice measurements determining a matched physical coefficient follows."
     )
     return True
 
 
 def main():
     print("=" * 78)
-    print("EW kappa_EW object-pin + MC-undecidability runner (zero PDG inputs)")
+    print("EW supplied color algebra and conditional readouts (zero PDG inputs)")
     print("=" * 78)
     results = [part_A(), part_B(), part_Bp(), part_C(), part_D(), part_E(), part_F(), part_G()]
     print("\n" + "=" * 78)
     print(f"RUNNER STATUS: {'PASS' if all(results) and FAIL == 0 else 'FAIL'} (PASS={PASS} FAIL={FAIL})")
-    print(f"runner_check_breakdown = {{A: {PASS}, B: 0, C: 0, D: 0, total_pass: {PASS}}}")
+    print(f"runner_check_totals = {{total_pass: {PASS}, total_fail: {FAIL}}}")
     print("=" * 78)
     return 0 if (all(results) and FAIL == 0) else 1
 

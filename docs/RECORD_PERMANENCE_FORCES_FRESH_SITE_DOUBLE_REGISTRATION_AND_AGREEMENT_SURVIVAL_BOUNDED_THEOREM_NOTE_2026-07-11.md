@@ -1,7 +1,7 @@
 # Record Permanence Forces Fresh-Site Double Registration, and Persistence Equals Agreement-Conditioned Survival (Bounded Theorem Note)
 
 **Date:** 2026-07-11
-**Review repair:** 2026-07-12
+**Review repair:** 2026-07-12; axiom-quotation correction 2026-10-21
 **Type:** bounded_theorem
 **Claim scope:** Under the explicit site-tagged monotone-history reading below,
 the Record axiom gives a necessary fresh-site and retention condition for any
@@ -53,8 +53,12 @@ The runner guards the following Record text from
 > A site never carries more than one record; records are permanent.
 
 > Only records are readable. A readout value is determined by record content
-> alone. For any finite collection of pairwise-disjoint records, scalar readout
-> `I` is additive, with `I(empty)=0`.
+> alone. A site with no record cannot be read.
+
+The August 13 revision removed scalar collection additivity and `I(empty)=0`.
+The algebraic aggregate example below supplies addition as an extra model
+condition; it is not a quotation or consequence of current Record. T1 uses
+only permanence and one-record-per-site, so its argument is unchanged.
 
 The supplied algebraic surface comes from the
 [`agreement-conditioned double-registration anatomy note`](RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md):
@@ -157,11 +161,11 @@ it defined every epoch to have the same value and then concluded persistence.
 The repaired common-rule premise fixes only the readout mapping; equality of
 the resulting values is the persistence predicate tested by the theorem.
 
-### Record additivity does not supply the common rule
+### Supplied additive aggregates do not supply the common rule
 
-The Record axiom states additivity for a scalar readout `I` on disjoint
-records. It does not define the lane coordinate or its aggregation. On the
-supplied algebraic content assignment
+Current Record does not supply a scalar collection functional or additivity.
+Even if additive aggregates are separately supplied, they do not define the
+lane coordinate or its aggregation. On the supplied algebraic content assignment
 
 ```text
 record 1: (a_1^2,|b_1|^2)=(2,1) -> r_1=1/2,
@@ -170,7 +174,7 @@ pooled aggregates: A=3, B=2 -> B/A=2/3,
 ```
 
 the two per-record ratios and the pooled ratio are three distinct observables.
-This does not make one observable “multi-valued”; it shows that Record
+This does not make one observable “multi-valued”; it shows that supplied aggregate
 additivity alone does not say which observable is the cross-epoch lane
 readout. When both per-record ratios agree, their pooled ratio agrees as well,
 which is the positive control.
@@ -210,7 +214,7 @@ For every finite `N`, both bounds are nonzero and the interval contains
 nonzero offsets. Therefore finite persistence narrows the allowed initial
 offset but never proves `u_0=0`.
 
-For an illustrative positive offset `epsilon` and upper band edge, the exact
+For an illustrative positive offset `0<epsilon<B<1/2` and upper band edge, the exact
 escape step is
 
 ```text
@@ -269,7 +273,8 @@ do not select between `f` and `psi`; bookkeeping multiplicity remains open.
 - **Constant-orbit/fixed-point equivalence:** exact, conditional on the
   supplied transition and common epoch-comparable readout rule (T2).
 - **Common epoch-comparable readout rule:** supplied and not adopted. Record
-  content-determination and additive `I` do not define this ratio rule.
+  content-determination does not define this ratio rule, and additive `I` is
+  no longer axiom content.
 - **Independent outcome composition and agreement filtering:** supplied by
   the anatomy surface and unaudited for this use; not derived here.
 - **Finite-horizon offset constraint:** exact under `f`; exact siting is not a
@@ -316,7 +321,7 @@ exact. It is not a universal derivation no-go.
    instantiated; it may further restrict or generate record histories.
 4. **Record-production dynamics — OPEN.** A concrete dynamics could supply the
    physical re-registration identification or the common readout rule.
-5. **Additive scalar readout — ATTEMPTED.** The constructed ratio example shows
+5. **Supplied additive scalar aggregates — ATTEMPTED.** The ratio example shows
    that additive aggregates do not select a cross-epoch ratio observable.
 6. **Agreement-conditioned anatomy — ATTEMPTED.** It supplies exact kernel
    algebra but explicitly leaves independent outcome composition as a
@@ -347,7 +352,7 @@ identification is hidden in a PASS condition.
 
 | source | source role | residual used here | match |
 |---|---|---|---|
-| [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | Record permanence, one-record-per-site, content-determined and additive readout | whether Record also supplies re-registration dynamics or a ratio rule | yes |
+| [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | Record permanence, one-record-per-site and content-determined readout; no additive scalar axiom | whether Record also supplies re-registration dynamics or a ratio rule | yes |
 | [`RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md`](RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md) | conditional map and independent-composition residual | whether its supplied map is physically selected | yes |
 | [paired runner](../scripts/frontier_record_permanence_double_registration_2026_07_11.py) | finite site histories and exact map checks | whether the displayed necessary and conditional implications hold | yes |
 
@@ -386,10 +391,11 @@ applied here: fresh-site record geometry does not silently supply outcome
 factorization or an energy/readout law. Historical admission or campaign
 language is not reused.
 
-**No-Go Discipline result:** `PASS` for the narrow current-source
-nonselection and finite-observation boundary. It would be `FAIL` for a claim
-that future Record-compatible dynamics cannot derive the bridge; this note
-makes no such claim.
+**No-Go Discipline result:** partial scope inventory, not a packet `PASS`.
+Four routes above are marked attempted and four remain open; the procedural
+five-attempted-family requirement is not met. The exact finite-observation
+bound remains a mathematical result under its stated map. No claim that future
+Record-compatible dynamics cannot derive the bridge is made.
 
 ## Consumers and citation stability
 

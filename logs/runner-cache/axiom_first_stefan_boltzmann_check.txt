@@ -1,18 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_stefan_boltzmann_check.py
-runner_sha256: 828c84434aabbfd493ff37ff3930c479e47b38f8445922ba36e13e02f20b1f22
-timeout_sec: 120
+runner_sha256: 8968d1247ac56cdd5bc4c45471a6244c1fce4d509285ca9fa5cf8cea3a25f022
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.95
+elapsed_sec: 0.88
 status: ok
 ----- stdout -----
 ========================================================================
-AXIOM-FIRST STEFAN-BOLTZMANN CHECK
+CONDITIONAL CONTINUUM-PHOTON STEFAN-BOLTZMANN CHECK
 ========================================================================
 
 Setup:
   Block 01 KMS (Gibbs state on harmonic oscillator → Planck dist)
-  retained framework EW + emergent Lorentz (3D photon dispersion)
+  supplied continuum photon dispersion and two polarizations
   natural units hbar = c = k_B = 1
 
 Stefan-Boltzmann: u(T) = (pi^2 / 15) T^4 in natural units
@@ -96,6 +96,8 @@ TEST 6: Stefan-Boltzmann constant sigma_SB in SI units
   relative diff           = 1.871e-09
   STATUS: PASS
 
+Positive two-level counterexample: 0.2689414213699951; PASS=True
+Fixed-cutoff u/T^4: [0.6516899396770054, 0.02277752773972636]; nonconstant PASS=True
 ========================================================================
 SUMMARY
 ========================================================================
@@ -116,7 +118,7 @@ Note: this runner verifies the Stefan-Boltzmann law via
 (d) the Wien displacement law (Test 5), and
 (e) the SI Stefan-Boltzmann constant matching CODATA 2018 (Test 6).
 The proof in the companion theorem note composes Block 01 KMS
-with retained framework EW + emergent Lorentz + 3D mode-counting.
+with supplied oscillator spectrum, linear continuum dispersion and mode-counting.
 
 ----- stderr -----
 

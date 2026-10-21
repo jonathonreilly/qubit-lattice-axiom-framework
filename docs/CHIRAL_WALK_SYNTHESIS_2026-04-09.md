@@ -207,15 +207,23 @@ to be narrowed.
    law and boundary regime. They do not show that distortion alone guarantees
    attraction.
 
-## The F∝M Mechanism (explained)
+## Local amplitude response and the historical F∝M fit
 
-Phase coupling: |e^{ikf}|² = 1 → zero first-order probability shift → F∝M²
-Theta coupling: sin²(θ(1-f)) has linear f-dependence → F∝M=1.0
+For the supplied angle θ(f)=θ₀(1−f), a single mixing probability obeys
 
-The coin angle θ directly modulates transition probability. The field
-enters through the AMPLITUDE of mixing, not just the phase. This is
-why F∝M=1.0 is exact: the centroid shift is proportional to the
-first-order probability perturbation, which is linear in f.
+`sin²(θ₀(1−f)) = sin²θ₀ − θ₀ sin(2θ₀) f + O(f²)`.
+
+This permits a first-order local response when its coefficient is nonzero.
+It does not prove an exactly linear centroid force: propagation, interference,
+geometry and the chosen readout remain necessary. The historical F∝M numbers
+above are tested-surface fits, not exact identities at arbitrary source strength.
+At θ₀=π/2, for example, the displayed linear coefficient vanishes.
+
+Likewise `|exp(ikf)|²=1` does not imply that a phase coupling has no linear
+observable response: interference with a second amplitude can produce one.
+For example `|1+i exp(ikf)|²=2−2 sin(kf)` has derivative −2k at f=0.
+The earlier phase-versus-amplitude argument therefore did not establish a
+universal F∝M² versus F∝M discriminator.
 
 ## Current Gravity Mechanism Read
 
@@ -238,10 +246,10 @@ wavepacket sweep does not support achromatic measured deflection.
 ## Connection to Known Physics
 
 The 1+1D chiral walk is equivalent to the Feynman checkerboard / Dirac
-quantum walk. What's NEW:
+quantum walk in the historical interpretation. Program-specific observations and prior-art context:
 
-1. Gravitational coupling via θ-modulation (not in the literature)
-2. F∝M=1.0 from amplitude coupling (new mechanism)
+1. Gravitational coupling via θ-modulation in this tested harness. Angle-dependent curved-spacetime quantum walks predate this program: [Di Molfetta, Brachet and Debbasch (2013)](https://arxiv.org/abs/1212.5821) and [Arrighi, Facchini and Forets (2015)](https://arxiv.org/abs/1505.07023). These are relevant prior art; no general priority claim is made here.
+2. Approximate F∝M scaling from the chosen amplitude coupling on the historical tested surface
 3. 10/10 closure cards at retained operating points, with the 3+1D claim
    narrowed to an operating-point closure card plus a TOWARD basin
 4. The connection to the sharpened axiom program, especially transport-law

@@ -1,5 +1,9 @@
 # Brocard / Q Polynomial Perfect-Square Decomposition
 
+**Type:** bounded_theorem
+**Review scope:** conditional supplied algebra and the specifically reviewed comparisons;
+physical interpretation, inherited authority checks, and audit status are not certified.
+
 **Date:** 2026-04-25
 
 **Status:** proposed_retained CKM-structure corollary on the proposed_promoted CKM atlas
@@ -8,7 +12,7 @@
 `(P(α_s), Q(α_s))` — the two fundamental quartic polynomials of the
 retained NLO Wolfenstein protected-γ̄ surface — into **two distinct
 scalar-multiple square-channel linear combinations**, each tied to a specific
-physical observable channel (Jarlskog vs Perimeter).
+normalized geometric channel (normalized area vs perimeter).
 
 The headline closed forms:
 
@@ -17,7 +21,7 @@ The headline closed forms:
                                  =  320 (4 - alpha_s)^2.
 
       Scalar-multiple square channel in (4 - alpha_s); proportional to Wolfenstein
-      eta_bar (and hence to Jarlskog J_bar).
+      eta_bar^2 (and hence to normalized area squared J_norm^2).
 
 (D3)  P(alpha_s) + 3 Q(alpha_s)  =  N_pair^2 (alpha_s^2 - 4 alpha_s + 96)^2
                                   =  4 (48 perim_sq)^2
@@ -29,14 +33,14 @@ The headline closed forms:
 
 So **the (P, Q) algebraic module decomposes into two scalar-multiple square
 channels**:
-- **Jarlskog channel** `Q − P = N_pair^10 N_quark^2 · η̄²`
-  (proportional to `J̄²` in the normalized Wolfenstein plane),
+- **normalized-area channel** `Q − P = N_pair^10 N_quark^2 · η̄²`
+  (proportional to `J_norm²` in the normalized Wolfenstein plane),
 - **Perimeter channel** `P + 3Q = N_pair^8 N_quark^2 · perim_sq²`.
 
 Together they span the (P, Q) module:
 ```text
-P  =  ((P + 3Q) − 3(Q − P))/4  =  (perimeter-channel − 3 Jarlskog-channel)/4,
-Q  =  ((P + 3Q) + (Q − P))/4   =  (perimeter-channel + Jarlskog-channel)/4.
+P  =  ((P + 3Q) − 3(Q − P))/4  =  (perimeter-channel − 3 normalized-area-channel)/4,
+Q  =  ((P + 3Q) + (Q − P))/4   =  (perimeter-channel + normalized-area-channel)/4.
 ```
 
 Throughout this note, "perfect-square channel" means a scalar multiple of
@@ -73,7 +77,7 @@ Brocard-points branch).
        alpha P + beta Q  =  (alpha + beta) (alpha_s^2 - 4 alpha_s + 96)^2
                             + (-240 alpha + 80 beta) (4 - alpha_s)^2.
 
-(D2) NEW scalar-multiple square decomposition (1) -- Jarlskog channel:
+(D2) NEW scalar-multiple square decomposition (1) -- normalized-area channel:
        Q(alpha_s) - P(alpha_s)  =  N_pair^6 (N_quark - 1) (N_pair^2 - alpha_s)^2
                                   =  320 (4 - alpha_s)^2.
 
@@ -101,13 +105,13 @@ Brocard-points branch).
      so the scalar-multiple square-channel subset = (Line A) union (Line B), a
      1-dimensional union of two 1-D affine subspaces (modulo origin).
 
-(D5) Physical interpretation -- Jarlskog vs Perimeter channels:
+(D5) Normalized geometric interpretation -- normalized area vs perimeter channels:
        Q - P  =  N_pair^10 N_quark^2 eta_bar^2,
        P + 3Q  =  N_pair^8 N_quark^2 perim_sq^2.
 
      where:
-       eta_bar  =  sqrt(5) (4 - alpha_s)/24  =  Jarlskog J_bar in the
-                   Wolfenstein-normalized unitarity plane (J_bar = eta_bar),
+       eta_bar  =  sqrt(5) (4 - alpha_s)/24  =  normalized area J_norm in the
+                   Wolfenstein-normalized unitarity plane (J_norm = eta_bar),
        perim_sq  =  (alpha_s^2 - 4 alpha_s + 96)/48  =  a^2 + b^2 + c^2
                     of the unitarity triangle (sum of squared sides).
 
@@ -169,12 +173,12 @@ single-square channel. The runner verifies this generically by coefficient
 comparison against an arbitrary quadratic square, not only by testing one
 off-line example.
 
-### D2: Q − P scalar-multiple square channel (Jarlskog channel)
+### D2: Q − P scalar-multiple square channel (normalized-area channel)
 
 Setting `α = −1, β = 1` in Line B:
 
 ```text
-Q - P  =  -(-240 + 80) (4 - alpha_s)^2  =  320 (4 - alpha_s)^2.
+Q - P  =  (240 + 80) (4 - alpha_s)^2  =  320 (4 - alpha_s)^2.
 ```
 
 In structural integers: `320 = 64 · 5 = N_pair⁶ (N_quark − 1)`. So:
@@ -211,11 +215,11 @@ P + 3Q  =  N_pair^8 N_quark^2 perim_sq^2  =  (N_pair^4 N_quark perim_sq)^2.
 This is a perfect square equal to `(N_pair⁴ N_quark × perim_sq)²` —
 clean structural-integer form.
 
-### D5: physical interpretation
+### D5: normalized geometric interpretation
 
-The two scalar-multiple square channels are tied to **physical CKM observables**:
+The two scalar-multiple square channels are tied to **normalized CKM triangle quantities**:
 
-- **Jarlskog channel** `Q − P`: proportional to `(4 − α_s)²` and hence to
+- **normalized-area channel** `Q − P`: proportional to `(4 − α_s)²` and hence to
   `η̄² = 5(4 − α_s)²/576`. So `Q − P = 320(4−α_s)² = 320 × 576/5 × η̄² = 36864 η̄²`.
   In structural integers: `36864 = N_pair^10 N_quark² = 1024 × 36`. So:
 
@@ -223,14 +227,12 @@ The two scalar-multiple square channels are tied to **physical CKM observables**
   Q - P  =  N_pair^10 N_quark^2 eta_bar^2.
   ```
 
-  Since `J̄ = η̄` in the Wolfenstein-normalized unitarity plane (the
-  Jarlskog invariant equals twice the area of the unitarity triangle,
-  which equals `η̄` after unit-base normalization), this is exactly
-  proportional to `J̄²`:
-
-  ```text
-  Q - P  =  N_pair^10 N_quark^2 J_bar^2.
-  ```
+  Define `J_norm = eta_bar`, twice the signed area of the unit-base
+  triangle. This is not the physical Jarlskog invariant. For an exact
+  unitary CKM matrix with nonzero `V_cd V_cb*` and `z_bar = -V_ud V_ub*/(V_cd V_cb*)`,
+  `|J| = |V_cd V_cb*|^2 |eta_bar|`. Consequently
+  `Q - P = 36864 J_norm^2 = 36864 J^2 / |V_cd V_cb*|^4`.
+  This conversion requires CKM magnitudes in addition to the apex.
 
 - **Perimeter channel** `P + 3Q`: proportional to `(α_s² − 4α_s + 96)²`
   and hence to `(48 perim_sq)²`. So:
@@ -239,7 +241,7 @@ The two scalar-multiple square channels are tied to **physical CKM observables**
   P + 3Q  =  N_pair^8 N_quark^2 perim_sq^2.
   ```
 
-These are the two **physical observable channels** of the (P, Q)
+These are the two **normalized geometric channels** of the (P, Q)
 module on the retained surface.
 
 ### D6: cross-channel identity
@@ -260,13 +262,13 @@ This is a perfect square of `√(1280) (α_s² − 4α_s + 96)(4 − α_s) =
 N_pair⁴ √(N_quark − 1) (α_s² − 4α_s + 96)(4 − α_s)`, since
 `√(N_pair⁸) = N_pair⁴`.
 
-In physical terms: the cross-channel product `(P + 3Q)(Q − P) ∝ perim_sq² · η̄² = perim_sq² · J̄²`,
+In normalized geometric terms: the cross-channel product `(P + 3Q)(Q − P) ∝ perim_sq² · η̄² = perim_sq² · J_norm²`,
 i.e. proportional to the product of the **perimeter-squared and the
-Jarlskog-squared** of the unitarity triangle.
+normalized-area squared** of the unitarity triangle.
 
 ### D7: module decomposition
 
-From `Line A: P + 3Q = X` (perimeter channel) and `Line B: Q − P = Y` (Jarlskog channel),
+From `Line A: P + 3Q = X` (perimeter channel) and `Line B: Q − P = Y` (normalized-area channel),
 solving for `(P, Q)`:
 
 ```text
@@ -280,8 +282,8 @@ Subtracting: (P + 3Q) - 3(Q - P) = X - 3Y => P + 3Q - 3Q + 3P = X - 3Y => 4P = X
 So:
 
 ```text
-P  =  ((P + 3Q) - 3(Q - P)) / 4  =  (perimeter channel - 3 * Jarlskog channel) / 4,
-Q  =  ((P + 3Q) + (Q - P)) / 4   =  (perimeter channel + Jarlskog channel) / 4.
+P  =  ((P + 3Q) - 3(Q - P)) / 4  =  (perimeter channel - 3 * normalized-area channel) / 4,
+Q  =  ((P + 3Q) + (Q - P)) / 4   =  (perimeter channel + normalized-area channel) / 4.
 ```
 
 This is the **inverse decomposition**. The two scalar-multiple square channels
@@ -300,7 +302,7 @@ All identities verified via sympy:
 | D4 Line A | `P + 3Q proportional to (α_s² − 4α_s + 96)²` | sympy exact |
 | D4 Line B | `Q − P proportional to (4 − α_s)²` | sympy exact |
 | D4 generic classification | coefficient comparison against an arbitrary quadratic square forces `β = 3α` or `β = −α` | sympy exact |
-| D5 Jarlskog | `Q − P = 36864 η̄² = N_pair^10 N_quark² η̄²` | sympy `simplify(diff) == 0` |
+| D5 normalized area | `Q − P = 36864 η̄² = N_pair^10 N_quark² η̄²` | sympy `simplify(diff) == 0` |
 | D5 Perimeter | `P + 3Q = 9216 perim_sq² = N_pair⁸ N_quark² perim_sq²` | sympy `simplify(diff) == 0` |
 | D6 cross | `(P + 3Q)(Q − P) = 1280 (α_s²−4α_s+96)² (4−α_s)²` | sympy `simplify(diff) == 0` |
 | D6 sqrt | `sqrt = N_pair⁴ √(N_quark−1) (α_s²−4α_s+96)(4−α_s)` | sympy `simplify(diff) == 0` |
@@ -324,7 +326,7 @@ This note delivers:
 
 1. **NEW scalar-multiple square decomposition** of the (P, Q) module into two
    distinct channels, each with structural-integer scaling:
-   - Jarlskog channel `Q − P = N_pair^10 N_quark² η̄²`,
+   - normalized-area channel `Q − P = N_pair^10 N_quark² η̄²`,
    - Perimeter channel `P + 3Q = N_pair⁸ N_quark² perim_sq²`.
 
 2. **NEW characterization of scalar-multiple square channels**: the
@@ -333,8 +335,8 @@ This note delivers:
    and `(Line B: β = −α)`. All other `(α, β)` give mixed-channel
    combinations.
 
-3. **NEW physical interpretation**: the two scalar-multiple square channels
-   correspond to two specific physical observables — Jarlskog squared
+3. **NEW normalized geometric interpretation**: the two scalar-multiple square channels
+   correspond to two specific normalized geometric quantities — normalized area squared
    and perimeter-squared — and their structural-integer scalings are
    exact powers of `N_pair, N_quark`.
 
@@ -343,7 +345,7 @@ This note delivers:
 
 5. **NEW module decomposition**: `P` and `Q` are recovered as linear
    combinations of the two scalar-multiple square channels:
-   `P = (perimeter − 3·Jarlskog)/4`, `Q = (perimeter + Jarlskog)/4`.
+   `P = (perimeter − 3·normalized area)/4`, `Q = (perimeter + normalized area)/4`.
 
 ### Why this counts as pushing the science forward
 
@@ -351,11 +353,11 @@ The Brocard polynomial `P(α_s)` and Q-polynomial `Q(α_s)` are the
 **two fundamental quartic polynomials** of the retained NLO Wolfenstein
 protected-γ̄ surface. This note shows that the algebraic structure of
 the (P, Q) pair has a **canonical scalar-multiple square decomposition** into
-two channels, each tied to a specific physical observable:
+two channels, each tied to a normalized triangle quantity:
 
-- The **Jarlskog channel** `Q − P` is purely a scalar-multiple square in
-  `(4 − α_s)`, proportional to `J̄²`. This decouples the
-  CP-violation magnitude from the rest.
+- The **normalized-area channel** `Q − P` is purely a scalar-multiple square in
+  `(4 − α_s)`, proportional to `J_norm²`. This separates the normalized area from the perimeter; conversion to
+  physical CP violation additionally requires CKM magnitudes.
 - The **Perimeter channel** `P + 3Q` is purely a scalar-multiple square in
   `(α_s² − 4α_s + 96)`, proportional to `perim_sq²`. This decouples
   the triangle-shape magnitude from the rest.
@@ -364,7 +366,7 @@ The fact that the (P, Q) module decomposes **exactly** into these two
 scalar-multiple square channels — with structural-integer scaling factors —
 is a strong algebraic statement about the retained surface. It says:
 the protected-γ̄ structure forces a clean separation of the algebraic
-content into "CP-violation magnitude" and "perimeter magnitude"
+content into "normalized area" and "sum of squared side lengths"
 components, with no mixed terms when expressed in the right linear basis.
 
 This is the **algebraic skeleton of the (P, Q) system** on the retained
@@ -380,7 +382,7 @@ The closure (D2-D7) is sharp:
 The retained NLO Wolfenstein protected-γ̄ surface
   + retained CKM_MAGNITUDES (N_pair = 2, N_color = 3, N_quark = 6)
 forces:
-  Q - P  =  N_pair^6 (N_quark - 1) (N_pair^2 - alpha_s)^2  (Jarlskog channel),
+  Q - P  =  N_pair^6 (N_quark - 1) (N_pair^2 - alpha_s)^2  (normalized-area channel),
   P + 3Q  =  N_pair^8 N_quark^2 perim_sq^2                  (Perimeter channel).
 
   The set of scalar-multiple square-channel linear combinations alpha P + beta Q is
@@ -401,13 +403,13 @@ analogous one for Q are tied to the retained `tan(γ̄) = √5`.
   `P + 3Q = N_pair² (α_s² − 4α_s + 96)²`.
 - `(D4)`: NEW retained characterization of the two scalar-multiple square
   subspaces of the (P, Q) module.
-- `(D5)`: NEW retained physical interpretation: Jarlskog channel
+- `(D5)`: NEW retained normalized geometric interpretation: normalized-area channel
   `Q − P = N_pair^10 N_quark² η̄²`; Perimeter channel
   `P + 3Q = N_pair⁸ N_quark² perim_sq²`.
 - `(D6)`: NEW retained cross-channel identity
   `(P + 3Q)(Q − P) = N_pair⁸ (N_quark − 1) (α_s² − 4α_s + 96)² (4 − α_s)²`.
-- `(D7)`: NEW retained module decomposition: `P = (Perimeter − 3 Jarlskog)/4`,
-  `Q = (Perimeter + Jarlskog)/4`.
+- `(D7)`: NEW retained module decomposition: `P = (Perimeter − 3 normalized area)/4`,
+  `Q = (Perimeter + normalized area)/4`.
 
 ## What This Does NOT Claim
 

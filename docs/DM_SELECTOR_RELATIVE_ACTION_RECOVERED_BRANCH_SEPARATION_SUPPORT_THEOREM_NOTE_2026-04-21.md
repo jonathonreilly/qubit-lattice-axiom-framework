@@ -1,18 +1,19 @@
 # DM Selector Relative-Action / Recovered-Branch Separation Support Theorem
 
 **Date:** 2026-04-21  
-**Status:** selector-side support theorem on the open DM gate  
+**Type:** bounded_theorem
+**Scope:** numerical comparison of supplied selector constructions
 **Primary runner:** `scripts/frontier_dm_selector_relative_action_recovered_branch_separation_support_2026_04_21.py`
 
 ## Statement
 
-The strongest current framework-internal selector law still does **not**
+The adopted constrained relative-action prescription still does **not**
 collapse to the recovered right-sensitive selector branch.
 
 Concretely, the observable-relative-action law from
 `docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md`
-selects one exact `eta / eta_obs = 1` source on the fixed native `N_e` seed
-surface. But that exact source:
+numerically constructs one source satisfying the imposed `eta / eta_obs = 1` constraint on the fixed native `N_e` seed
+surface. But that numerical source:
 
 - does not coincide with any recovered-bank point;
 - does not coincide with any recovered active target;
@@ -21,19 +22,24 @@ surface. But that exact source:
 - and instead carries its own later breakpoint `tau_b,rel`.
 
 So the remaining selector burden is sharper than “derive minimal relative
-action.” The live theorem object must bridge the current exact internal
-selector law to the recovered right-sensitive selector branch, or replace it
+action.” The live theorem object must bridge the current conditional
+selection prescription to the recovered right-sensitive selector branch, or replace it
 with a finer microscopic law.
+
+The equality `eta / eta_obs = 1` is imposed in this prescription. The
+objective identity does not derive that constraint or a physical minimization
+law. The separation calculations below compare supplied constructions and do
+not resolve source selection.
 
 ## Inputs already on branch
 
-### 1. Strongest current framework-internal selector law
+### 1. Adopted constrained relative-action prescription
 
-The observable-relative-action note already fixed the strongest current
-framework-internal selector law:
+The observable-relative-action note uses the following supplied
+constrained source-selection prescription:
 
 1. stay on the exact fixed native `N_e` seed surface;
-2. fix the favored transport column from the exact transport-extremal class;
+2. select a favored transport column from a finite numerical search witness;
 3. among exact-closure points on that surface, minimize the exact relative
    bosonic action
 
@@ -42,7 +48,7 @@ S_rel(H_e || H_seed)
   = Tr(H_seed^{-1} H_e) - log det(H_seed^{-1} H_e) - 3.
 ```
 
-That law selects the exact source
+Local constrained optimization gives the approximate source
 
 ```text
 x_rel = (0.47167533, 0.55381069, 0.66451397),
@@ -79,7 +85,7 @@ on the recovered bank.
 
 ### 1. The relative-action source stays off the recovered selector branch
 
-Using the exact reconstructed relative-action source and the same recovered
+Using the numerically reconstructed relative-action source and the same recovered
 bank as the selector-support packet:
 
 - the smallest Frobenius distance from the relative-action `H_rel` to the
@@ -99,7 +105,7 @@ min_j ||T_rel - T_j||_2 = 0.496150820200...
 
   again at the preferred recovered lift.
 
-So the strongest current internal selector law does not already land on the
+So the adopted constrained selection prescription does not already land on the
 recovered selector branch.
 
 ### 2. The relative-action source is not selected by the recovered-bank canonical breakpoint
@@ -146,8 +152,8 @@ V_tau_b,rel(H_rel) = 0.030950966183...
 min_j V_tau_b,rel(H_j) = 0.58078354...
 ```
 
-So the current exact internal selector law and the recovered-bank canonical
-threshold candidate are two distinct exact selector objects, not one object in
+So the current conditional selection prescription and the recovered-bank canonical
+threshold candidate are two numerically distinct supplied constructions, not one object in
 two notations.
 
 ## Consequence
@@ -162,14 +168,14 @@ Before this note, the selector-side positive target could be phrased as:
 
 After this note, the open object is stricter:
 
-- either bridge the current exact observable-relative-action selector to the
+- either bridge the current numerical observable-relative-action candidate to the
   recovered right-sensitive selector branch;
 - or replace both by a finer microscopic selector law that explains why the
   physical source branch chooses one of them and not the other.
 
 So the remaining burden is no longer just “force minimal relative action” in
-the abstract. It is to close the separation between the strongest current
-internal selector law and the recovered right-sensitive selector target.
+the abstract. It is to close the separation between the supplied numerical
+selection prescription and the recovered right-sensitive selector target.
 
 ## Boundary
 
@@ -177,9 +183,9 @@ This is a support theorem, not closure.
 
 It does **not** prove that the observable-relative-action law is unphysical,
 and it does **not** prove that the recovered-bank threshold route is the final
-selector. It proves only that the two exact constructions now live as
-distinct objects on the current branch, so a genuine bridge or finer law is
-still required.
+selector. The computations distinguish the supplied numerical constructions in the
+reported finite bank. They do not certify global minimization, uniqueness,
+or exhaustive exclusion of other branches. Physical source selection remains open.
 
 ## Reproduction
 
@@ -190,7 +196,7 @@ PYTHONPATH=scripts python3 scripts/frontier_dm_selector_relative_action_recovere
 Expected:
 
 ```text
-SUMMARY: PASS=14 FAIL=0
+SUMMARY: PASS=9 FAIL=0
 ```
 
 ## Audit dependency repair links

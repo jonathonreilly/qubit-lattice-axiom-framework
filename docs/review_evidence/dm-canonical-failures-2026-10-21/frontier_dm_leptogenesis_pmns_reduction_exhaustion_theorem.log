@@ -1,0 +1,65 @@
+========================================================================================
+DM LEPTOGENESIS PMNS CONDITIONAL REDUCTION-FACTORIZATION DIAGNOSTIC
+========================================================================================
+
+Framework convention:
+  current baseline: Lattice, Qubit, Admissibility, and Record.
+
+Question:
+  Which supplied chart is consumed by the named finite computation, and
+  what domain-exhaustion claims remain open?
+
+========================================================================================
+PART 1: THE SUPPLIED N_e SEED-SURFACE CHART ROUND-TRIPS
+========================================================================================
+  [PASS] The active source chart preserves the exact native seed sums  ((xbar,ybar)=(0.563333,0.306667))
+  [PASS] The soft3 chart is exactly invertible on the positive fixed-sum surface  (err=3.93e-17)
+  [PASS] So the active parameter chart is surjective onto the interior of the fixed native N_e seed surface  (max sampled inverse-chart error=3.07e-16)
+
+  exemplar x = [0.471675, 0.55381 , 0.664515]
+  exemplar y = [0.208063, 0.464382, 0.247555]
+  inverse-chart params = [-0.342767, -0.182236, -0.173792,  0.629075,  0.      ]
+  recovered x = [0.471675, 0.55381 , 0.664515]
+  recovered y = [0.208063, 0.464382, 0.247555]
+  recovered delta = 0.000000
+
+========================================================================================
+PART 2: THE SUPPLIED ETA FIXTURE FACTORS THROUGH THE CHART
+========================================================================================
+  [PASS] On the one-sided N_e lane, the PMNS packet equals the active packet transpose exactly  (err=4.52e-16)
+  [PASS] The supplied finite transport output is a scalar functional of active packet columns  (F(P)=[0.025582 0.019421 0.012397])
+  [PASS] The named helper eta fixture factors through H_e and its active packet  (favored column=0)
+
+  active packet:
+[[0.035657 0.417923 0.54642 ]
+ [0.8949   0.103521 0.001578]
+ [0.069443 0.478556 0.452002]]
+  exact column functionals = [0.025582 0.019421 0.012397]
+
+========================================================================================
+PART 3: IMPORTED CANDIDATE BRANCHES LIE ON THE SUPPLIED SURFACE
+========================================================================================
+
+========================================================================================
+PART 1: ENUMERATE THE CLOSURE STATIONARY BRANCHES
+========================================================================================
+  [FAIL] The imported constrained candidate refinement completes  (constrained refinement failed)
+
+========================================================================================
+PART 4: BOTTOM LINE
+========================================================================================
+  Nature-review read:
+    - the named finite computation factors through the supplied seed surface
+    - no check proves that surface is the whole admissible physical domain
+    - disconnected or omitted components and global uniqueness remain open
+
+========================================================================================
+RESULT
+========================================================================================
+  Conditional factorization answer:
+    - the supplied chart round-trips on tested fixed-sum points
+    - the finite eta exemplar factors through that chart
+    - imported candidate refinement did not complete
+    - admissible-domain exhaustion and global uniqueness remain open
+
+PASS=6  FAIL=1

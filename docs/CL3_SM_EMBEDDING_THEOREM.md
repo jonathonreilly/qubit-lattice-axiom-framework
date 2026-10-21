@@ -1,192 +1,91 @@
-# Cl(3) → SM Embedding Theorem: Cl⁺(3) ⊃ SU(2)×U(1) with SM Quantum Numbers
+# Supplied Cl(3) carrier: commuting actions and a restricted determinant identity
 
-**Date:** 2026-04-19
-**Status:** reviewed exact algebraic support theorem on current `main`; 95/95 checks verified; not part of the accepted minimal-input stack
-**Claim boundary authority:** this note
-**Script:** `scripts/verify_cl3_sm_embedding.py`
+**Date:** 2026-04-19; correction 2026-10-21
+**Type:** bounded_theorem
+**Primary runner:** `scripts/verify_cl3_sm_embedding.py`
+**Status authority:** independent audit lane only.
 
----
+## Supplied construction
 
-## Statement
+On `V=(C^2)^tensor3`, supply Pauli matrices and
+`Gamma1=X tensor I tensor I`, `Gamma2=Z tensor X tensor I`,
+`Gamma3=Z tensor Z tensor X`. They obey the Euclidean Clifford relations.
+The real even algebra has basis `I,e12,e13,e23` and is isomorphic to `H`.
+Its unit quaternions form SU(2); the Lie algebra has three generators, not four.
+The central `omega=Gamma1 Gamma2 Gamma3` squares to `-I` and is independent
+of that four-dimensional even span. It defines a central U(1) action; identifying
+it with physical hypercharge is an additional bridge.
 
-Let Cl(3) be the Clifford algebra over ℝ³ acting on the 8-dimensional taste space
-`V = (ℂ²)^{⊗3}` via staggered-lattice generators:
+Supply a base/fiber split `C^4 tensor C^2` and swap the two base bits.
+`P_sym=(I+swap)/2` has rank six and `P_asym` rank two. The selected operator
+`Y=(1/3)P_sym-P_asym` has eigenvalues1/3 and−1 with those multiplicities and
+trace zero. It commutes with the separately supplied fiber generators
+`Jf_i=I4 tensor sigma_i/2`. An SU(3) action embedded on the symmetric
+three-dimensional base also commutes with the fiber action and Y. These are
+matrix constructions, not a derivation of physical color, weak interactions,
+charges, anomaly cancellation or three generations from a one-site algebra.
+The bare three-state axis orbit does not even have uniform restricted Y values.
 
-```
-Γ₁ = σ₁ ⊗ I₂ ⊗ I₂
-Γ₂ = σ₃ ⊗ σ₁ ⊗ I₂
-Γ₃ = σ₃ ⊗ σ₃ ⊗ σ₁
-```
+## Coupling normalization remains supplied
 
-satisfying `{Γᵢ, Γⱼ} = 2δᵢⱼ I₈`.
+The dimensions4 and5 are algebraic facts. Defining `g2^2=1/4` and `gY^2=1/5`
+is a separate normalization prescription. Neither dimension counting nor
+`L=(1/g^2)Tr(F^2)` fixes the coefficient multiplying an invariant kinetic term.
+Any positive coefficient preserves its algebraic symmetries. The identity
+matrix is not a fourth su(2) Lie generator.
 
-**Theorem:** The sub-algebra structure of Cl(3) forces:
+In this eight-dimensional realization, the ordinary trace gives
+`Tr(Jf_i Jf_j)=2 delta_ij`, not `delta_ij/2`; the latter is the usual
+fundamental two-dimensional trace convention. A normalized trace may be
+chosen, but that convention still cannot select a physical coupling.
+Given the supplied reciprocal-dimension prescription, the arithmetic
+`gY^2/(g2^2+gY^2)=4/9` follows. This is not a prediction of a measured angle.
 
-1. `Cl⁺(3) ≅ ℍ` (quaternions): the even sub-algebra is 4-dimensional and contains
-   an abstract SU(2) as its group of unit quaternions.
+## Restricted L-sector determinant: valid conclusion, corrected proof
 
-2. The pseudoscalar `ω = Γ₁Γ₂Γ₃` is central in Cl(3,0) with `ω² = -I₈`,
-   generating a U(1) direction distinct from Cl⁺(3).
-
-3. `dim(Cl⁺(3)) = 4 = d+1` and `dim(Cl⁺(3) + span{ω}) = 5 = d+2` for `d = 3`,
-   fixing the bare gauge couplings `g₂² = 1/(d+1)` and `g_Y² = 1/(d+2)`.
-
-4. The physical SU(2)_weak = fiber operators `{I₄ ⊗ σᵢ/2}` commute with
-   hypercharge Y and are isomorphic to the Cl⁺(3) SU(2) as abstract Lie algebras.
-
-5. Hypercharge `Y = (+1/3)P_symm + (-1)P_antisymm` (where `P_symm` projects onto
-   the 6D symmetric base ⊗ fiber block) has SM-correct eigenvalues: +1/3 on 6D
-   (quark-like: 3 color × 2 weak-doublet) and −1 on 2D (lepton-like: 1 antisym × 2
-   weak-doublet).
-
-6. On the chiral L-sector (even-parity states), the Cl⁺(3) SU(2) generators satisfy
-   Kramers `T² = −(1/4)I₄ < 0`, forcing every eigenvalue of any Hermitian `H_L` in
-   the algebraically induced L-sector class to be doubly degenerate, hence
-   `det(H_L) = λ₁²λ₂² ≥ 0`. This is L-sector determinant support only; it is
-   necessary but not sufficient for full A-BCC.
-
----
-
-## Proof Sketch
-
-### A. Cl⁺(3) ≅ ℍ
-
-The even sub-algebra is spanned by `{I₈, e₁₂=Γ₁Γ₂, e₁₃=Γ₁Γ₃, e₂₃=Γ₂Γ₃}`.
-Each bivector squares to `−I₈` and they satisfy quaternionic multiplication:
-`e₂₃ · e₁₃ = +e₁₂`.
-
-The SU(2) generators `Jₖ = (i/2) · eᵢⱼ` (Hermitian) satisfy `[J₁,J₂] = iJ₃`
-cyclically with Casimir `J₁² + J₂² + J₃² = (3/4)I₈` (spin-1/2).
-
-### B. ω Central and dim = d+2
-
-`ω = Γ₁Γ₂Γ₃` satisfies:
-- `ω² = −I₈`
-- `[ω, Γᵢ] = 0` for all i (central in Cl(3,0) for the Euclidean case)
-- ω ∉ Cl⁺(3) (ω is odd grade)
-- `{I, e₁₂, e₁₃, e₂₃, ω}` are linearly independent → rank 5 = d+2
-
-### C. Bare Couplings from Dimension Counting
-
-The normalization of the kinetic term in the gauge sector picks out the natural
-measure on the sub-algebra manifold. The number of independent generators fixes
-the coupling:
-
-- `g₂² = 1/dim(Cl⁺(3)) = 1/4 = 1/(d+1)` — not direction counting, but algebraic
-- `g_Y² = 1/dim(Cl⁺(3) + {ω}) = 1/5 = 1/(d+2)` — ω adds exactly one central direction
-
-The coupling normalisation follows from the partition-function measure on the gauge
-field: with generators T^a normalised as `Tr(T^aT^b) = δ^{ab}/2` in the 8D taste
-representation (giving the spin-1/2 Casimir = 3/4), the kinetic term
-`L = (1/g²) Tr(F²)` with `F = F^a T^a` implies `g² ∝ 1/N_gen` where `N_gen` is the
-number of independent generators. For SU(2): 3 bivector generators, but Cl⁺(3)
-carries 4 basis elements (including the scalar I); the factor 1/(d+1) = 1/4 is the
-dimension of the even subalgebra, reflecting that the scalar direction participates
-in the measure. For U(1)_Y: the central element ω extends the generating set to
-d+2 = 5 independent directions, giving g_Y² = 1/5.
-
-Bare Weinberg angle: `sin²θ_W(bare) = g_Y²/(g₂² + g_Y²) = (1/5)/(1/4 + 1/5) = 4/9`
-
-### D. Physical SU(2) and Hypercharge Commute
-
-The physical weak SU(2) acts on the fiber (b₃ coordinate only):
-`Jf_i = I₄ ⊗ σᵢ/2`.
-
-The hypercharge `Y = (+1/3)P_symm + (−1)P_antisymm` where `P_symm = (I₈ + P_{b₁b₂})/2`
-and `P_{b₁b₂}` swaps coordinates 1 and 2.
-
-By the tensor product structure `Y` acts on the base while `Jf_i` acts on the fiber,
-so `[Y, Jf_i] = 0` exactly.
-
-The Clifford bivector SU(2) and the fiber SU(2) are distinct 8×8 operators but
-isomorphic as abstract Lie algebras (same Casimir, same structure constants).
-
-### E. SM Quantum Number Assignment
-
-| Block | dim | Y | SU(2)_weak | SM particle |
-|-------|-----|---|------------|-------------|
-| P_symm ⊗ fiber | 6 | +1/3 | doublet | quark L doublet (3 colors × 2 iso) |
-| P_antisymm ⊗ fiber | 2 | −1 | doublet | lepton L doublet (ν, e)_L |
-
-`Tr(Y) = 6·(+1/3) + 2·(−1) = 2 − 2 = 0` ✓ (anomaly cancellation precondition)
-
-### F. L-Sector Kramers Support: `det(H_L) ≥ 0`
-
-The bilinear condensate operator H_L on the chiral L-sector
-`{|000⟩, |011⟩, |101⟩, |110⟩}` (even-parity states, Hamming weight 0 or 2)
-is constrained by the quaternionic structure of Cl⁺(3).
-
-The SU(2) generators `J_i = (i/2)eᵢⱼ` restricted to L give a 4D representation
-that closes: `[J_i_L, J_j_L] = iεᵢⱼₖ J_k_L` with Casimir `J²_L = (3/4)I₄`.
-
-The anti-unitary time-reversal `T = J₂_L · K` (K = complex conjugate) satisfies:
-```
-T² = J₂_L · J₂_L* = −(1/4)I₄  < 0
-```
-
-**Kramers theorem:** for T with T² < 0 (fermionic), every eigenvalue of any T-invariant
-Hermitian operator is doubly degenerate. Therefore any Hermitian `H_L` in the span of
-`{I₄, J₁_L, J₂_L, J₃_L}` has eigenvalues in degenerate pairs `(λ₁, λ₁, λ₂, λ₂)`, and:
+Restrict `J1=(i/2)e23`, `J2=(i/2)e13`, `J3=(i/2)e12` to the four-dimensional
+even-parity subspace. They are Hermitian and satisfy
+`{Ji,Jj}=(delta_ij/2)I4`, `Tr(Ji)=0`.
+For real `a,b1,b2,b3`, write `H=a I4+B`, `B=sum bi Ji`. Then
+`B^2=(|b|^2/4)I4`. If `b!=0`, tracelessness gives eigenvalues
+`+|b|/2` and `−|b|/2`, each twice. If `b=0`, H is scalar. Thus exactly
 
 ```
-det(H_L) = λ₁² λ₂² ≥ 0
+det(H) = (a^2-|b|^2/4)^2 >= 0.
 ```
 
-The quaternionic structure of `Cl⁺(3)` therefore forces `det(H_L) ≥ 0` on the
-restricted chiral L-sector class.
+This is a statement about that explicit four-real-parameter class. It says
+nothing about every Hermitian matrix on the same space: `diag(-1,2,3,4)` has
+determinant−24. Nor does nonnegative determinant imply positive definiteness.
 
-This is a useful algebraic support result for the broader matter package, but it
-does not by itself select the physical A-BCC sheet.
+The old Kramers proof omitted the commutation hypothesis. With the supplied
+matrices, `U=2J2` is unitary and the antiunitary `T=U K` satisfies `T^2=-I`.
+But `T J2 T^-1=-J2`, so a generic H in the displayed span is not T-invariant.
+The unnormalized `J2 K` is not antiunitary. Kramers degeneracy applies to
+Hermitian H satisfying `U conjugate(H) U^dagger=H`; it is not applicable merely
+because the vector space admits such a T. The polynomial proof above retains
+the restricted determinant result without that invalid inference.
+No A-BCC sheet, positivity of a physical charged matrix or experimental
+exclusion follows from this identity.
 
-This is verified numerically in `scripts/verify_cl3_sm_embedding.py` Section J.
+## Related mathematical constructions and limits
 
----
+The [native gauge note](NATIVE_GAUGE_CLOSURE_NOTE.md) and
+[systematic budget note](YT_EXPLICIT_SYSTEMATIC_BUDGET_NOTE.md) record additional
+physical conventions and bridges; they are not supplied by these matrix identities.
+The [current axiom memo](MINIMAL_AXIOMS_2026-06-29.md) remains the foundation.
+Original arguments are recoverable at `f24d17d97d372df977476e4a69674577f31af575`.
+Stable filenames do not preserve withdrawn coupling or Kramers claims.
 
-## Numerical Verification
+Prior work includes [Susskind, Lattice fermions (1977)](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.16.3031),
+[Furey, Standard model physics from an algebra? (2016)](https://arxiv.org/abs/1611.09182),
+and [Stoica, The Standard Model Algebra (2017)](https://arxiv.org/abs/1702.04336).
+These are related lattice/Clifford constructions, not proofs of this supplied
+carrier's physical identification. No priority or equivalence claim is made.
 
-Script: `scripts/verify_cl3_sm_embedding.py` (sections A–F)
+## Verification
 
-| Check | Result |
-|-------|--------|
-| `{Γᵢ, Γⱼ} = 2δᵢⱼ I₈` | exact (0) |
-| `e²ᵢⱼ = −I₈` | exact (0) |
-| `e₂₃ · e₁₃ = +e₁₂` | exact (0) |
-| `[J₁,J₂] = iJ₃`, Casimir = 3/4 | exact (0) |
-| `ω² = −I₈`, `[ω, Γᵢ] = 0` | exact (0) |
-| `rank({I,e₁₂,e₁₃,e₂₃,ω}) = 5` | exact |
-| `g₂² = 1/4`, `g_Y² = 1/5` | exact |
-| `sin²θ_W(bare) = 4/9` | exact |
-| `[Y, Jf_i] = 0` | max err < 10⁻¹⁶ |
-| Y eigenvalues: +1/3 (×6), −1 (×2) | exact |
-| `Tr(Y) = 0` | max err < 10⁻¹⁶ |
-
----
-
-## What This Theorem Sharpens
-
-- exact algebraic origin of the `Cl⁺(3)` / ω dimension counts that underlie the
-  reviewed `g_2^2 = 1/(d+1)` and `g_Y^2 = 1/(d+2)` support readings
-- the Y = `+1/3` / `−1` block splitting used by the existing electroweak support stack
-- the L-sector Kramers determinant support statement used as a bounded matter-side input
-
-## What Remains Bounded
-
-- Radiative running g₂(v), g_Y(v) still inherit the bridge budget from
-  `YT_EXPLICIT_SYSTEMATIC_BUDGET_NOTE.md`
-- The identification "fiber = weak SU(2)" is provided by the graph-first axis
-  selection procedure (see `NATIVE_GAUGE_CLOSURE_NOTE.md`)
-- Full anomaly-cancellation story is derived at the framework level, not in this note
-
-## Reading Rule
-
-This note is the claim boundary for this reviewed algebraic support packet.
-It sharpens the existing matter / electroweak support layer on current `main`,
-but it does not replace [MINIMAL_AXIOMS_2026-04-11.md](MINIMAL_AXIOMS_2026-04-11.md)
-or the accepted three-generation authority stack.
-
-## Audit dependency repair links
-
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [native_gauge_closure_note](NATIVE_GAUGE_CLOSURE_NOTE.md)
-- [yt_explicit_systematic_budget_note](YT_EXPLICIT_SYSTEMATIC_BUDGET_NOTE.md)
+The runner checks finite matrix identities, the chosen normalization arithmetic,
+T-invariance controls and the restricted determinant formula. Numerical checks
+are finite support for the displayed hand proof, not physical selection evidence.
+A nonzero failure count exits nonzero when run as a script.

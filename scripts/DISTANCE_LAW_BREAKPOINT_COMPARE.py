@@ -1,13 +1,8 @@
 #!/usr/bin/env python3
-"""Distance-law breakpoint compare across retained structured families.
+"""Render supplied historical distance-law rows and untested causal hypotheses.
 
-This runner isolates which architecture features preserve or break the
-near-Newtonian distance tail across the retained families on main.
-
-The claim surface is intentionally small:
-- first two grown families as the preservation baseline
-- newer retained families as breakpoint diagnostics
-- no universality claim beyond the tested retained rows
+No distances, directions or exponents are recomputed. Architecture features
+co-vary between rows; their causal roles require matched ablations.
 """
 
 from __future__ import annotations
@@ -88,22 +83,22 @@ def main() -> int:
     print("# Distance Law Breakpoint Compare")
     print()
     print(
-        "This note isolates which architecture features preserve or break the "
-        "near-Newtonian distance tail across the retained families."
+        "Historical finite-table rendering: supplied values are not recomputed; "
+        "retention labels are historical, not current audit judgments."
     )
     print()
-    print("| family | retained row | architecture feature | alpha | direction | class |")
+    print("| family | supplied row | architecture feature | alpha | direction | class |")
     print("| --- | --- | --- | ---: | --- | --- |")
     for row in ROWS:
         print(render_row(row))
     print()
-    print("Breakpoint classifier:")
+    print("Conjectural feature interpretation (not tested by this renderer):")
     print(
-        "The tail survives only when the architecture keeps open directed transport "
-        "without shell-locking, reflection closure, or deep branch rotation."
+        "The table motivates testing open directed transport against shell-locking, "
+        "reflection closure and deep branch routing with matched ablations."
     )
     print()
-    print("Break features:")
+    print("Historical causal hypotheses requiring ablations:")
     print(
         "- parity-tapered shell routing plus dense fallback rotates the response away"
     )
@@ -117,11 +112,10 @@ def main() -> int:
         "- radial-shell confinement preserves direction but over-locks transport and flattens the exponent"
     )
     print()
-    print("Safe read:")
+    print("Scope:")
     print(
-        "the distance tail is a stricter subset than the signed-control invariant; "
-        "it is portable across the first two grown families, but the newer families "
-        "split into break or boundary cases depending on transport symmetry"
+        "Only the supplied finite rows are rendered. Their association with features "
+        "does not identify a causal mechanism or prove necessity across families."
     )
     return 0
 

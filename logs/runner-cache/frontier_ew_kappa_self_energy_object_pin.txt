@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ew_kappa_self_energy_object_pin.py
-runner_sha256: 28dbc8b0b680b3bd597ae3c9549b6426bdcc3bdf5543eba1b600c0d3e00f40aa
+runner_sha256: acb77daf590340b909e766bcd5c5b161e7699e10f54235c4ba4cd22ebe51b553
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 16.34
+elapsed_sec: 18.27
 status: ok
 ----- stdout -----
 ==============================================================================
-EW kappa_EW object-pin + MC-undecidability runner (zero PDG inputs)
+EW supplied color algebra and conditional readouts (zero PDG inputs)
 ==============================================================================
 
 (A) SU(N_c) Fierz completeness: Tr[M^dag M] = (1/N_c)|Tr M|^2 + 2 sum|Tr[M t^A]|^2
@@ -16,14 +16,14 @@ EW kappa_EW object-pin + MC-undecidability runner (zero PDG inputs)
   [PASS] N_c=4: gens orthonormal=True, count 15=N_c^2-1=True, C=2*sum|Tr[M t^A]|^2 (err 0.0e+00), S+C=T=True
   [PASS] N_c=5: gens orthonormal=True, count 24=N_c^2-1=True, C=2*sum|Tr[M t^A]|^2 (err 1.4e-14), S+C=T=True
 
-(B) The bare connected color-blind correlator computes Tr(Q^2)*(S+C): the OBJECT (not the readout)
-  [PASS] color-blind loop Tr[G G^dag] = S+C = T (loop 17.5890 vs T 17.5890)
+(B) Supplied tensor-product bilocal kernel has sign-adjusted color factor Tr(Q^2)*(S+C)
+  [PASS] both parities: raw loop=p_xy*T; sign-adjusted Tr[G G^dag]=S+C=T (loop 17.5890 vs T 17.5890)
   [PASS] direct-product factorization Tr[(Q⊗I)(V⊗G)(Q⊗I)(V'⊗G†)] = Tr(QVQV')*Tr(GG†) (err 3.6e-15)
   [PASS] trivial-internal weight of (S+C) = Tr(Q^2) = 1/2 (got 0.5000)
   [PASS] counterexample M=I_color: S=N_c=3, C=0 (got 0.0e+00); singlet carries Tr(T_3^2)*S = 1.50
 
 (B') Color reflection G(y,x)=eps(x)eps(y)G(x,y)^dag from staggered eps-hermiticity (real lattice, random SU(3))
-  [PASS] staggered D_m^dag = eps D_m eps (err 0.0e+00) => G^dag = eps G eps (err 5.0e-15); reflection is a theory property, not an assumption
+  [PASS] staggered D_m^dag = eps D_m eps (err 0.0e+00) => G^dag = eps G eps (err 3.7e-15); site-pair signed-trace error 8.5e-15; unsigned odd-pair error 4.8e+00
 
 (C) Channel split is a kinematic gauge-orbit fraction: <S>/<T> = 1/N_c^2 for ANY dressing
   [PASS] N_c=2: arbitrary-dressing orbit-avg <S>/T=0.2507 (=1/N_c^2=0.2500, Weingarten); cross-check free+gauge=0.2490, Haar=0.2507 => R_conn=0.7500
@@ -32,27 +32,34 @@ EW kappa_EW object-pin + MC-undecidability runner (zero PDG inputs)
   [PASS] N_c=5: arbitrary-dressing orbit-avg <S>/T=0.0399 (=1/N_c^2=0.0400, Weingarten); cross-check free+gauge=0.0396, Haar=0.0398 => R_conn=0.9600
     => the gauge-orbit singlet fraction is dressing(beta)-independent: R_conn = 8/9 has no continuum trend
 
-(D) Color-blindness leaves kappa free: both kappa=1 and kappa=0 are external scheme choices
+(D) Color-blindness leaves kappa free: kappa=1 and kappa=0 are formal readouts; physical admissibility is open
   [PASS] multiplicative color-scalar renorm scales S,C equally -> R_conn invariant (0.995014 -> 0.995014); color-blindness selects neither completion
   [PASS] kappa=0 = active singlet projection removes S (S 0.086 -> 9.2e-33, C unchanged); a non-color-blind op
   [PASS] kappa=1 = identity readout, retain full trace T=S+C (17.256); selecting it as physical is still external
     => color-blindness fixes neither completion; kappa=0 (OZI/planar projection) and kappa=1 (identity
-       readout) are both external continuum scheme choices -- neither is privileged by the lattice current
+       readout) are formal alternatives; physical matching and admissibility remain open
 
-(E) Structural Monte-Carlo-undecidability of kappa_EW
+(E) Nonidentifiability of external kappa from the supplied channel data alone
   [PASS] K_EW(0) = 9/8 (got 9/8) ; K_EW(1) = 1 (got 1)
-  [PASS] bare gauge-invariant correlator = <T> = 1 (full trace S+C); this is the OBJECT, not yet the physical readout
-  [PASS] Pi_phys(kappa=0)=8/9 (singlet-subtracted) and Pi_phys(kappa=1)=1 (full trace) are BOTH built from the SAME measured {S=1/9,C=8/9,T=1} -> no MC observable is a function of kappa alone
-    => kappa_EW is not Monte-Carlo-decidable: the channel split is an ensemble observable, but the readout
-       weight (which channels the matched physical coupling retains) is a continuum scheme choice external
-       to it; neither completion is privileged by any lattice measurement
+  [PASS] supplied gauge-invariant norm = <T> = 1 (full trace S+C); this is the supplied matrix object, not yet the physical readout
+  [PASS] Pi_phys(kappa=0)=8/9 (singlet-subtracted) and Pi_phys(kappa=1)=1 (full trace) are BOTH built from the SAME measured {S=1/9,C=8/9,T=1} ; these data alone supply no equation for kappa
+    => The supplied channel data do not fix the independently introduced readout
+       weight. An additional physical matching relation or parameter-dependent observable could constrain it;
+       physical admissibility of either formal readout remains unproved.
 
 (F) sin^2(theta_W) is kappa-invariant (K_EW cancels in the g_1/g_2 ratio)
   [PASS] sin^2(theta_W) independent of kappa (residual 0)
 
+(G) Resolution scope and limits (not physical bridge certificates)
+  per_element: checked — the generator basis is built entry by entry and then validated exhaustively: every ordered pair of basis generators is tested against Tr[t^A t^B] = (1/2) delta_AB at 1e-10, so orthonormality is established on all pairs individually rather than by a single Gram-matrix norm, and this is redone independently for each color rank tested.
+  per_site: executed on the finite staggered background in B': every site-pair color block of its inverse is checked against raw_trace=p_xy*(S+C). Odd pairs also falsify the unsigned identity. This is a finite algebraic control, not a continuum or ensemble validation of the physical current readout.
+  per_mode: checked — the adjoint channel is not taken from a closed form but rebuilt mode by mode. C is recomputed as twice the sum of |Tr[M t^A]|^2 over each of the N_c^2 - 1 adjoint generator modes separately, and that explicit per-mode sum is required to reproduce the closed value T - S, which is what makes the Fierz completeness identity an executed check rather than a quoted one.
+  per_block: checked — the generator basis is assembled in two structurally distinct blocks and both are validated. The off-diagonal block supplies symmetric and antisymmetric generators built pairwise from index pairs, and the Cartan block supplies the diagonal generators with their own 1/sqrt(2k(k+1)) normalization; the two blocks together are required to total exactly N_c^2 - 1 at every rank tested.
+  lattice_wide: not executed — no lattice ensemble is generated and no beta, volume or continuum limit is taken. Beta-independence is obtained through a gauge-orbit average rather than a coupling scan: the singlet fraction is shown dressing-independent for an arbitrary non-unitary dressed propagator, under the independent-endpoint averaging hypotheses. No universal statement about lattice measurements determining a matched physical coefficient follows.
+
 ==============================================================================
 RUNNER STATUS: PASS (PASS=20 FAIL=0)
-runner_check_breakdown = {A: 20, B: 0, C: 0, D: 0, total_pass: 20}
+runner_check_totals = {total_pass: 20, total_fail: 0}
 ==============================================================================
 
 ----- stderr -----

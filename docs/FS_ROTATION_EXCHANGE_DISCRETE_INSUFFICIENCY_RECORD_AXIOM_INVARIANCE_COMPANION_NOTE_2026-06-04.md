@@ -350,7 +350,7 @@ Load-bearing (markdown-linked):
 - **Axiom-minimality policy and explicit-owner-approval ledger:**
   [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](audit/AXIOM_MINIMALITY_POLICY.md).
 - **Audit lane authority statement:**
-  [`docs/audit/AUDIT_LANE_AUTHORITY.md`](audit/AUDIT_LANE_AUTHORITY.md).
+  `docs/audit/AUDIT_LANE_AUTHORITY.md` (historical filename; unavailable in this checkout and not consumed as a premise).
 - **Audit pipeline ground rules:**
   [`docs/audit/README.md`](audit/README.md).
 
@@ -435,4 +435,4 @@ non-overlapping statement — confirmed by direct reading of
 - Axiom-minimality policy and explicit-owner-approval ledger:
   [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](audit/AXIOM_MINIMALITY_POLICY.md)
 - Audit lane authority statement:
-  [`docs/audit/AUDIT_LANE_AUTHORITY.md`](audit/AUDIT_LANE_AUTHORITY.md)
+  `docs/audit/AUDIT_LANE_AUTHORITY.md` (historical filename; unavailable in this checkout and not consumed as a premise)

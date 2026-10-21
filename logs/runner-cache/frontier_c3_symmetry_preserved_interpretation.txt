@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_c3_symmetry_preserved_interpretation.py
-runner_sha256: 1a65a4592d50a26698e5ff1db29aa415f67a31bb04f91060479fa5246da1774a
-timeout_sec: 120
+runner_sha256: e5e02b4f19e1f1109095923c85957e76255cccee3ef8a0f2da02da9d2ac090dc
+input_fingerprint_sha256: 1f91bfff31984c2722396ba7fce010837e2038809445d4d8b3b05c03722734f7
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 C_3 symmetry preserved interpretation check

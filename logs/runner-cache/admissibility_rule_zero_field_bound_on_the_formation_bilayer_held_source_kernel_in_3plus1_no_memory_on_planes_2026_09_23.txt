@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_zero_field_bound_on_the_formation_bilayer_held_source_kernel_in_3plus1_no_memory_on_planes_2026_09_23.py
 runner_sha256: 59a3d274d67a469a8d85c21bb585a995839d874255ed9b6eb6b2823e7401e634
-input_fingerprint_sha256: 3e6443849adf01e4567c4c02ca884eee7b93c6b7590ca1bc72068a325901681f
+input_fingerprint_sha256: be677a3f79740a3a4868238501cb022bd34137e66083a1c7d29579679af83f95
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.41
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

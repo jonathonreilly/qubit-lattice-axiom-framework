@@ -1,5 +1,8 @@
 # Axiom Reduction: Honest Minimal Assumption Inventory
 
+**Superseded inventory:** this legacy two-axiom proposal is not the current axiom set. See `MINIMAL_AXIOMS_2026-06-29.md` for the current four-axiom statement. The original wording is recoverable at commit f24d17d97d372df977476e4a69674577f31af575. Conditional model choices and historical numerical reports below do not establish reductions from the current axioms.
+
+
 **Date:** 2026-04-12 (originally); 2026-05-10 (audit-narrowing as
 `audited_conditional`: explicit `claim_type: meta` framing as
 inventory-only under named upstream pending derivation rows);
@@ -86,7 +89,7 @@ corresponding authority surface to close on its own audit row.
 
 ## Part 1: Complete Inventory of All Assumptions
 
-Every ingredient the framework uses, with no omissions. The "Type" /
+Historical candidate inventory; completeness is not established. The "Type" /
 "Description" columns are inventory labels referring to in-flight
 authority surfaces; they are **not** in-note derivations (see "Audit
 boundary" above).
@@ -94,17 +97,17 @@ boundary" above).
 | # | Ingredient | Type | Description |
 |---|-----------|------|-------------|
 | A1 | Discrete graph | **Axiom** | Reality is a set of nodes with pairwise directed edges (a DAG or lattice). This is the substrate. |
-| A2 | Unitarity | **Axiom** | Probability is conserved: the propagator preserves total amplitude norm. Equivalently, amplitudes propagate linearly. |
+| A2 | Unitarity | **Axiom** | A complex linear norm-preserving propagator is supplied. Norm preservation alone is not equivalent to linearity. |
 | C1 | d = 3 spatial dimensions | **Choice** | The graph is embedded in or has the topology of 3D space. Not derived from the two legacy inventory rows. |
-| D1 | Complex amplitudes on edges | **Derived from A2** | Linear probability-conserving propagation on a graph requires complex amplitudes (real amplitudes cannot produce interference; see below). |
-| D2 | Linear superposition | **Derived from A2** | Unitarity on a graph IS linearity of the propagator. Nonlinear propagation breaks both Born rule and gravity sign simultaneously. |
-| D3 | Born rule (pairwise interference) | **Derived from D2** | For a linear propagator, the Sorkin parameter I_3 = 0 identically. This is a mathematical theorem, not a physical assumption. |
-| D4 | Scalar coupling (action depends on field along path) | **Derived from A1** | On a graph with scalar node values, the simplest local coupling is S = function(path length, field values along path). Tensor or vector coupling requires additional structure (orientation, gauge group) not present in A1. |
-| D5 | Poisson field equation | **Derived from self-consistency** | The propagator's own density rho = \|psi\|^2 sources the field. Self-consistency forces the field operator to be the graph Laplacian. Only Poisson produces attractive, monotonically decaying fields. |
-| D6 | Valley-linear action S = L(1-f) | **Derived from D5 + attraction + mass law** | Attractive gravity requires a phase valley (S decreasing near mass). Newtonian mass scaling F proportional to M requires weak-field linearity in f. Together these select S = L(1-f) from the space of possible actions. |
+| D1 | Complex amplitudes on edges | **Supplied complex formalism** | Real orthogonal evolution also permits interference under quadratic readout; unitarity does not select the complex field. |
+| D2 | Linear superposition | **Derived from A2** | Unitarity on a graph IS linearity of the propagator. The exhibited nonlinear controls alter the interference diagnostic and centroid sign; this is not a universal implication. |
+| D3 | Born rule (pairwise interference) | **Conditional identity** | Additive amplitudes plus a quadratic readout imply I_3 = 0. The readout is an additional premise, not derived from linearity. |
+| D4 | Scalar coupling (action depends on field along path) | **Supplied scalar model** | Scalar node values and their coupling to a path action are model choices; a graph alone supplies neither a field nor its dynamics. |
+| D5 | Poisson field equation | **Supplied Poisson model** | The density readout, inverse graph-Laplacian source relation and propagator feedback are supplied. A finite operator comparison does not prove their uniqueness. |
+| D6 | Valley-linear action S = L(1-f) | **Selected using attraction + desired mass law** | Attractive gravity requires a phase valley (S decreasing near mass). Newtonian mass scaling F proportional to M requires weak-field linearity in f. Together these select S = L(1-f) from the space of possible actions. |
 | D7 | Coupling constant c = 1 | **Fixed by observation** | The identification f = 2GM/rc^2 (matching the Schwarzschild weak-field limit) fixes the normalization. This is the standard procedure of matching to observed light bending. |
 | D8 | Conformal spatial metric g_ij = (1-f)^2 delta_ij | **Derived from D6** | The action S = L(1-f) defines an effective distance ds = (1-f)dx. Isotropy of the scalar field f makes this conformal. The metric is not an extra assumption. |
-| D9 | Kernel 1/L^(d-1) | **Derived from A2 + C1** | Transfer-norm stability in the continuum limit selects the kernel power. In d spatial dimensions, p = d-1 is the unique power giving finite, non-divergent propagation. |
+| D9 | Kernel 1/L^(d-1) | **Historical kernel candidate** | The reported logarithmic transfer-norm growth does not have a finite continuum limit without an additional normalization prescription; no unique power is proved here. |
 | D10 | M1 * M2 product law | **Derived from D5** | Poisson linearity (phi proportional to M_source) times test-mass response (F proportional to M_test) gives F proportional to M1*M2 without any bilinear ansatz. |
 
 ---
@@ -116,12 +119,11 @@ The logical dependency structure:
 ```
 A1 (graph) + A2 (unitarity)
     |
-    +---> D1 (complex amplitudes): unitarity on a graph requires
-    |     complex propagation to produce interference
+    +---> D1 (complex amplitudes): unitarity on a graph does not force the complex field
     |
     +---> D2 (linear superposition): unitarity IS linearity
     |       |
-    |       +---> D3 (Born rule): I_3 = 0 is a theorem of linearity
+    |       +---> D3 (Born rule): I_3 = 0 requires additive amplitudes AND quadratic readout
     |
     +---> D4 (scalar coupling): simplest local coupling on a graph
     |       with no extra structure
@@ -141,46 +143,30 @@ A1 (graph) + A2 (unitarity)
 
 ### Step-by-step justification:
 
-**D1: Complex amplitudes from unitarity.**
-On a graph, probability-conserving propagation that produces interference
-requires complex-valued amplitudes. Real-valued linear propagation gives
-classical diffusion (no interference fringes). The path from unitarity to
-complex amplitudes is: unitarity demands a unitary transfer matrix, which
-requires complex entries to produce the oscillatory behavior needed for
-wave-like interference.
+**D1: Complex amplitudes are not forced by interference.**
+Real orthogonal matrices preserve the squared norm. Real amplitudes interfere: `(1 + (-1))^2 = 0`, whereas `1^2 + (-1)^2 = 2`. Thus the former claim that real propagation can only diffuse was false. A complex state space needs its own premise; the current Qubit axiom supplies one.
 
 **D2: Linearity from unitarity.**
 A unitary propagator K satisfies K^dagger K = I. This IS a linear map.
 Nonlinear modifications (quadratic, cubic) simultaneously break the Born
 rule (I_3 jumps from 10^-16 to 0.2) AND flip the gravity sign from
-attractive to repulsive. This is not a choice; it is forced.
+attractive to repulsive in those particular controls, not for every nonlinear map.
 
-**D3: Born rule from linearity.**
-For any linear propagator, the three-slit Sorkin parameter I_3 = 0
-identically. This is verified at machine precision (I_3/P < 10^-14) across
-7 different kernels, all dimensions d = 2, 3, 4, and all field strengths
-tested. It is a mathematical consequence of amplitude additivity.
+**D3: Pairwise interference under supplied quadratic readout.**
+For additive slit amplitudes and `P(S)=|sum_{i in S} a_i|^2`, expansion cancels all terms in `I_3`. Linearity alone does not determine `P`: with additive real amplitudes all equal to one and `P(S)=|sum a_i|^4`, `I_3=81-3*16+3=36`. The historical finite diagnostics use the quadratic readout and do not derive it.
 
-**D4: Scalar coupling from graph structure.**
-A1 provides nodes and edges with no intrinsic orientation, spin, or gauge
-structure. The only local quantity that can be defined without additional
-assumptions is a scalar field on nodes. Vector or tensor fields require
-choosing an embedding or frame, which is additional structure beyond A1.
-This makes scalar coupling "the simplest choice" rather than a free
-parameter. One could add gauge structure, but that is an extension, not
-a requirement.
+**D4: Supplied scalar coupling.**
+A scalar field on nodes is an available construction. A graph also admits
+edge functions and other data; it does not by itself select a scalar field,
+a path action or an interaction. The historical simplicity argument is not
+a uniqueness theorem.
 
-**D5: Poisson from self-consistency.**
-Tested 21 operators across four categories (fractional Laplacians
-alpha = 0.25 to 3.0, anisotropic Laplacians, non-local operators,
-higher-order stencils). Only the graph Laplacian (alpha = 1) produces
-attractive, convergent, monotonically decaying fields. The discriminator
-is sharp: all non-Poisson operators produce either repulsive fields,
-divergent iteration, or wrong decay exponents.
-
-Additionally, the propagator's Green's function IS the inverse Laplacian
-on a nearest-neighbor graph. Self-consistency (field sourced by propagator
-density, propagator evolving in that field) therefore forces L = nabla^2.
+**D5: Supplied Poisson source relation.**
+The historical 21-operator comparison is finite evidence for its chosen
+harness, not a proof over all operators. A propagator Green function is an
+inverse of its specified operator; being on a nearest-neighbor graph does
+not itself identify that operator with the Laplacian. The field equation,
+quadratic source readout and feedback law remain model premises here.
 
 **D6: Valley-linear action from attraction + mass scaling.**
 Phase-hill actions (S increasing with f) give repulsive gravity. Phase-valley
@@ -189,7 +175,7 @@ actions (S decreasing with f) give attractive gravity. Among valleys:
 - S = L(1-f): F proportional to M^1.0 (Newtonian)
 - S = L(1-f^2): F proportional to M^2.0 (wrong mass law)
 
-Newtonian mass scaling uniquely selects weak-field linearity in f.
+Imposing the desired Newtonian mass scaling selects weak-field linearity within this tested action family; that mass law is a model-selection input, not an axiom-derived result.
 All weak-field-linear valleys (L(1-f), L*exp(-f), L/(1+f)) give identical
 mass scaling. The valley-linear form is the universality class, not a
 single formula.
@@ -206,12 +192,12 @@ scalar (direction-independent), the metric is conformal: g_ij = (1-f)^2
 delta_ij. Verified numerically: isotropy holds to 0.4%, and the resulting
 factor-of-2 light bending matches GR (ratio 1.985 +/- 0.012).
 
-**D9: Kernel power from transfer-norm stability.**
-The transfer norm T = sum_edges w * h^(d-1) / L^p must remain finite as
-h -> 0 (continuum limit). For kernel 1/L^p with measure h^(d-1) in d
-spatial dimensions, finiteness requires p = d-1. At p = d-1, T grows only
-logarithmically (~4.3 + 1.1*ln(1/h)), ensuring a well-defined continuum
-limit.
+**D9: Kernel candidate and a failed finiteness argument.**
+The historical report `T ≈ 4.3 + 1.1 ln(1/h)` diverges as `h → 0`.
+Logarithmic divergence is weaker than a power divergence but is not a finite
+limit. Neither unique selection of `p=d−1` nor a normalized continuum
+propagator follows from that fit. A specified normalization and convergence
+argument would be needed; this inventory supplies neither.
 
 **D10: Product law from Poisson linearity.**
 F proportional to M1*M2 emerges from two independent linearities:
@@ -231,8 +217,7 @@ R^2 = 0.9999.
    and relational ontology.
 
 2. **Unitarity** (probability-conserving propagation). This is the SECOND
-   assumption. It forces complex amplitudes, linear superposition, and
-   the Born rule.
+   historical assumption. Unitary maps are linear; neither complex scalars nor the quadratic readout follow from norm preservation alone.
 
 3. **Three spatial dimensions** (C1). This is a CHOICE, not derivable from
    the two legacy graph-and-unitarity inventory rows. However:
@@ -243,7 +228,7 @@ R^2 = 0.9999.
 
 ### The honest count:
 
-**2 axioms + 1 dimensional choice.**
+**Historical proposed count: 2 axioms + 1 dimensional choice; not a valid current premise count.**
 
 Not quite "two axioms." The dimensional choice is real and cannot currently
 be eliminated. However, it is a single discrete parameter (an integer),
@@ -265,7 +250,7 @@ selection mechanism has not been demonstrated.
 
 | Framework | Free parameters | Structural assumptions | Total burden |
 |-----------|----------------|----------------------|--------------|
-| **This work** | **0 continuous** | **2 axioms + 1 integer choice** | **~3** |
+| **This work** | **observation-fixed coupling plus supplied model choices** | **superseded inventory** | **not established** |
 | Standard Model | 25+ continuous (masses, couplings, mixing angles) | QFT axioms + gauge group SU(3)xSU(2)xU(1) + 3+1D spacetime + Lorentz invariance + CPT | ~30+ |
 | General Relativity | 1 (Lambda) or 2 (Lambda + G) | Differentiable manifold + metric + Einstein-Hilbert action + equivalence principle + 3+1D | ~7 |
 | Loop Quantum Gravity | 1 (Immirzi parameter) | GR action + quantization prescription + Ashtekar variables + 3+1D | ~5 |
@@ -274,11 +259,7 @@ selection mechanism has not been demonstrated.
 | Causal Dynamical Triangulations | 2-3 (bare couplings) | Einstein-Hilbert action + discrete triangulation + causality constraint + 3+1D | ~7 |
 | Wolfram Physics Project | 0 continuous | Hypergraph + rewriting rules (specific rule chosen) + causal invariance + 3+1D emergent | ~4 |
 
-The framework's assumption count is the lowest of any approach listed.
-The key advantage: no continuous free parameters at all (the coupling is
-fixed by observation, not tuned). The closest competitor is causal set theory,
-which also has no continuous parameters but requires more structural
-assumptions (Lorentz invariance, faithful embedding).
+No comparable minimum assumption count is established by this inventory. Fixing a coupling by observation is an empirical input; it does not remove the continuous scale from the model's premise budget.
 
 ---
 
@@ -286,7 +267,7 @@ assumptions (Lorentz invariance, faithful embedding).
 
 | Step | What is derived | From what | Numerical evidence | Script |
 |------|----------------|-----------|-------------------|--------|
-| Born rule | I_3 = 0 at machine precision | Linear propagator (A2) | I_3/P < 10^-14 across 7 kernels, d=2,3,4 | `frontier_nonlinear_born_gravity.py` |
+| Quadratic-readout interference | I_3 = 0 at machine precision | Additive amplitudes and supplied quadratic readout | I_3/P < 10^-14 across 7 kernels, d=2,3,4 | `frontier_nonlinear_born_gravity.py` |
 | Two exhibited nonlinear examples (not a universal claim) | I_3 >> 0 AND centroid sign flip on the chosen 2D setup; mass-law beta stays near 1 in these runs (so mass law does NOT break, only the sign does) | Quadratic / cubic pointwise rules | I_3 = 0.19-0.24, centroid sign flips, beta = 0.99-1.0 | `frontier_nonlinear_born_gravity.py` |
 | Poisson uniqueness | nabla^2 is unique self-consistent operator | 21 operators tested | Only alpha=1 gives attractive, convergent field | `frontier_poisson_exhaustive_uniqueness.py` |
 | Poisson self-consistency | phi = (nabla^2)^(-1) rho converges | Propagator density sources field | 10-iteration convergence, susceptibility correlation 0.93 | `frontier_self_consistent_field_equation.py` |
@@ -341,15 +322,7 @@ authority surfaces in "Audit boundary" closing on their own audit rows.
 This note itself does not close any of those surfaces; it records the
 inventory only.
 
-**Do say (only when the named upstream authority rows close clean):**
-- "The framework has two axioms (graph + unitarity) and one dimensional
-  choice (d=3)."
-- "Other ingredients (Born rule, Poisson field equation, valley-linear
-  action, conformal metric, `M1*M2` product law) have in-flight
-  derivation-target rows naming self-consistency or attraction-and-mass-
-  law constraints; each is recorded with a separate authority surface
-  (see Audit boundary)."
-- "The framework has zero continuous free parameters."
+**Current framing:** enumerate the actual four axioms and all supplied dynamics, quadratic readout, action choices and observation-fixed scales. This old inventory does not reduce that premise list. The historical recommendation to claim two axioms and zero continuous inputs is withdrawn.
 
 **Current-state caveat (2026-05-16):** The upstream surfaces are
 **mixed**, not uniformly closed. Two of the five named one-hop rows
@@ -366,10 +339,7 @@ upstream surfaces have or have not closed.
 **Do not say:**
 - "Two axioms derive all of gravity." (Omits the dimensional choice and
   the named upstream pending derivation rows.)
-- "The Born rule is predicted." (It is a mathematical consequence of the
-  assumed linearity, which is itself a consequence of unitarity. Saying
-  "predicted" implies it could have come out differently, which it cannot
-  for a linear propagator.)
+- "The Born rule is predicted." Additive amplitudes imply pairwise interference only after a quadratic readout is supplied.
 - "Poisson is derived from first principles." (The current authority
   surface
   [`POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md`](POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md)
@@ -379,13 +349,4 @@ upstream surfaces have or have not closed.
   meta-inventory; the D-row derivations are upstream authority surfaces
   with their own audit rows.)
 
-**The strongest honest claim (conditional):**
-Two axioms and one discrete choice (d=3) plus the named upstream pending
-derivation rows produce Newtonian gravity with the correct mass law,
-distance law, equivalence principle, time dilation, light bending factor
-of 2, and Born rule, with zero continuous free parameters. This is a
-significantly more minimal starting point than competing frameworks
-**when the named upstream authority surfaces close**. This note records
-the inventory; promotion of any item to a retained-grade derivation
-requires the corresponding authority surface to close on its own audit
-row.
+**Current limited claim:** this historical inventory lists candidate reductions and model diagnostics. It derives neither a physical Born rule nor gravity from two axioms, and it establishes no comparative minimum premise count. Source mathematics and physical identification require separate validation; the observation-fixed coupling remains an input.

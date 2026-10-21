@@ -5,8 +5,8 @@ T1: in the uniform product state at density rho, the expected rate at which reco
 6 rho <max(0, s.e)>/sqrt 3 with <max(0, s_z)> = 1/4, that is (sqrt 3/2) rho, and for the six-axis menu 6 (rho/6) = rho: the kinetic capture
 rate q_1 of one capturing site.  T2: for a body of capturing sites the same expectation is (number of exposed faces) rho/(4 sqrt 3): isolated
 sites add (6 faces each), adjacent sites share faces (10 for a pair, 24 for a 2x2x2 cube; 78, 174, 294, 486 for lattice balls of radius 2 to 5).
-T3: with block 45's free-streaming force K_0 Q_1 Q_2/r^2, K_0 = sqrt3/(4 pi rho (1 - rho)), two transparent bodies of N_1 and N_2 capturing sites
-attract with G N_1 N_2/r^2, G = K_0 q_1^2 = 3 sqrt3 rho/(16 pi (1 - rho)); in rational form (4 pi G)^2 = 27 rho^2/(16 (1 - rho)^2).
+T3: assuming isotropic inflow, first-harmonic wind, balanced faces and negligible depletion, with the supplied free-streaming expression K_0 Q_1 Q_2/r^2, K_0 = sqrt3/(4 pi rho (1 - rho)), two transparent bodies of N_1 and N_2 capturing sites
+have the conditional coefficient G in G N_1 N_2/r^2, G = K_0 q_1^2 = 3 sqrt3 rho/(16 pi (1 - rho)); in rational form (4 pi G)^2 = 27 rho^2/(16 (1 - rho)^2).
 Exact arithmetic only (integers and Fractions); the runner scans its own source for floating-point literals.
 """
 
@@ -225,7 +225,7 @@ def main(argv) -> int:
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print("scope: transparent bodies in the inertial record gas — kinetic capture rate (sqrt 3/2) rho per site, capture by exposed faces, and the coefficient G = 3 sqrt3 rho/(16 pi (1 - rho)) of the force N1 N2/r^2; exact expectations in the product state")
+    print("scope: transparent bodies in the inertial record gas — kinetic capture rate (sqrt 3/2) rho per site, capture by exposed faces, and the coefficient G = 3 sqrt3 rho/(16 pi (1 - rho)) of the force N1 N2/r^2 conditional on isotropic inflow, first harmonic and balanced geometry; exact capture expectations in the product state, not all-direction gas dynamics")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

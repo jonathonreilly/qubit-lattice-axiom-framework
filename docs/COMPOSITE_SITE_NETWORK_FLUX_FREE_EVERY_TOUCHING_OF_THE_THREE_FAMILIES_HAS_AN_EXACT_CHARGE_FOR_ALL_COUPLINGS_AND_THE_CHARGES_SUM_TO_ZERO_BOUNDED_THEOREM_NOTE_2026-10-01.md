@@ -34,6 +34,8 @@ treats the merged points at `κ_h`.
 the kernel projector and the derivatives are taken in the fractional
 momenta.
 
+**Model context.** [Hermanns, O’Brien and Trebst, Weyl Spin Liquids (2015)](https://arxiv.org/abs/1411.7379) established Weyl physics for a magnetic-field-perturbed hyperhoneycomb Kitaev model. The present claim concerns the displayed supplied hopping convention and symbolic charge formulas for three families. Equality with that spin model, priority for all these formulas and completeness between certified couplings are not established here.
+
 ## Method
 
 **The algebra the nodes live in.** At a node, each `z_j = e^{2πif_j}` lies in

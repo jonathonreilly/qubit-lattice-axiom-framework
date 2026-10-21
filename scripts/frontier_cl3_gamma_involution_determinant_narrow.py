@@ -26,6 +26,8 @@ import sys
 
 import sympy as sp
 
+AUDIT_TIMEOUT_SEC = 120
+
 
 def make_symbolic_M():
     """Build a symbolic 2x2 complex matrix."""
@@ -62,7 +64,7 @@ def test_symplectic_adjoint():
 
 
 def test_gamma_norm_symbolic():
-    """M · γ(M) = det(M) · I_2 and ⟨M·γ(M)⟩_0 = det(M)."""
+    """M · γ(M) = det(M) · I_2 and c(M·γ(M)) = det(M)."""
     s0, s1, s2, s3 = make_pauli()
     M = make_symbolic_M()
     gM = gamma_involution(M, s2)
@@ -72,12 +74,12 @@ def test_gamma_norm_symbolic():
     diff = sp.simplify(prod - expected)
     ok = diff == sp.zeros(2, 2)
     print(f"[gamma-norm symbolic] M·γ(M) = det(M)·I_2:  {'PASS' if ok else 'FAIL'}")
-    # Scalar (identity-coefficient) part of M·γ(M) is the (0,0) entry of prod
+    # Complex central coefficient (not the real grade-zero component) of M·γ(M) is the (0,0) entry of prod
     # (and equals the (1,1) entry since prod is scalar · I).
     scalar_part = sp.simplify(prod[0, 0])
     ok_scalar = sp.simplify(scalar_part - detM) == 0
     print(
-        f"[gamma-norm symbolic] ⟨M·γ(M)⟩_0 = det(M):  {'PASS' if ok_scalar else 'FAIL'}"
+        f"[gamma-norm symbolic] c(M·γ(M)) = det(M):  {'PASS' if ok_scalar else 'FAIL'}"
     )
     return ok and ok_scalar
 
@@ -177,8 +179,8 @@ def test_full_lattice_readout_boundary(n_trials: int = 5, rng_seed: int = 202605
     Construct D_lat = M_1 ⊕ M_2 (4x4 block diagonal). Compute
     |det(D_lat)|^{1/2} (the geometric-mean readout at N_modes = 2).
     Show this equals √|det(M_1) · det(M_2)| (a per-determinant product
-    fact), which is NOT in general equal to |M_1|_γ + |M_2|_γ or
-    other per-element γ-norm combinations.
+    fact). It equals the product of block γ-norms, not in general
+    their sum or a single block readout.
     """
     s0, s1, s2, s3 = make_pauli()
     rng = random.Random(rng_seed)
@@ -287,6 +289,23 @@ def test_basis_grade_action():
     return all_ok
 
 
+def test_reversion_and_real_grade_boundary():
+    """Distinguish adjugation from reversion and real scalar projection."""
+    identity, _, s2, s3 = make_pauli()
+    M = identity + s3
+    reversion_product = M * M.H
+    ok_reversion = (reversion_product == sp.diag(4, 0)
+                    and reversion_product != M.det() * identity
+                    and M * gamma_involution(M, s2) == sp.zeros(2))
+    N = (1 + sp.I) * identity
+    product = sp.simplify(N * gamma_involution(N, s2))
+    coefficient = sp.simplify(sp.trace(product) / 2)
+    ok_center = coefficient == 2 * sp.I and sp.re(coefficient) == 0
+    print(f"[boundary] reversion differs from adjugate: {'PASS' if ok_reversion else 'FAIL'}")
+    print(f"[boundary] complex center differs from real grade zero: {'PASS' if ok_center else 'FAIL'}")
+    return ok_reversion and ok_center
+
+
 def main():
     print("=" * 72)
     print("Cl(3) γ-involution determinant identity — narrow theorem runner")
@@ -326,6 +345,8 @@ def main():
     print("[Part 8] Per-element γ-norm vs per-determinant readout boundary")
     tests.append(("readout-boundary", test_full_lattice_readout_boundary()))
     print()
+
+    tests.append(("reversion-real-grade-boundary", test_reversion_and_real_grade_boundary()))
 
     print("=" * 72)
     passes = sum(1 for _, ok in tests if ok)

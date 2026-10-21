@@ -1,5 +1,27 @@
 # DM Wilson Direct-Descendant Canonical-Fiber Schur-Entropy Candidate / No-Go
 
+## Current dependency and proof boundary (2026-10-21)
+
+The archived spectral-isotropy and normalized-determinant selector notes are
+historical provenance, not retained premises. Their claims of certified W1
+selection, exact transport-optimality and unique path crossings are not imported
+here. For a supplied positive 3-by-3 Hermitian matrix H, the definitions
+T=Tr(H), Q=Tr(H²), Delta=det(H) give q3=Delta/T³ and J_iso=27q3 directly.
+AM-GM gives 0<J_iso<=1, with equality only for three equal eigenvalues.
+If supplied normalized spectra satisfy strict majorization, every strictly
+Schur-concave function orders them accordingly. This conditional mathematical
+implication does not establish that the numerical source witnesses satisfy
+exact fiber constraints or that a physical selector has been derived.
+
+Numerical witness membership, tangent ranks and optimization results below
+remain finite diagnostics. Any exact local exclusion is conditional on a
+smooth positive three-dimensional fiber and an actual nonsingular (T,Q,Delta)
+coordinate chart; a numerical rank at sampled points is not that proof.
+Those realization/rank obligations remain unresolved here. Historical audit
+and closure language below is not a new certification of those obligations.
+
+**Type:** no_go
+
 **Date:** 2026-04-19  
 **Status:** proposed_no_go — bounded follow-on no-go on the DM source-fiber
 lane (canonical-fiber Schur-entropy candidate)
@@ -78,8 +100,7 @@ That is the no-go.
 
 There is also one honest conditional positive result:
 
-- if one adds the extra axiom that the normalized spectral law must be the
-  unique continuous symmetric additive entropy, then Shannon is selected;
+- if one explicitly chooses Shannon entropy as an additional functional,
 - that picks an explicit canonical-fiber endpoint candidate `S_H`.
 
 But even then the source problem is not supplied physically, because the unique
@@ -121,9 +142,10 @@ The follow-on question is then:
 
 ## Theorem 1: plateau spectral isotropy does not extend canonically
 
-On the certified plateau witness set `W0..W3`, the earlier same-day plateau
-note proved a clean majorization statement, so all strictly Schur-concave
-symmetric normalized spectral laws agreed there and selected `W1`.
+The archived plateau note reported finite-witness majorization and a W1
+ranking. That historical report is not an exact premise here. Conditional on
+strict majorization of supplied spectra, agreement of strictly Schur-concave
+laws follows mathematically; it need not extend to other spectra.
 
 That agreement does **not** survive promotion to the full canonical fiber.
 
@@ -221,27 +243,14 @@ That matters because it rules out a tempting but false shortcut:
 The new theorem shows that extension step is exactly where the difficulty
 returns.
 
-## Conditional candidate: entropy additivity singles out Shannon
+## Conditional candidate: Shannon entropy is an additional choice
 
-There is one clean extra axiom that does pick a specific spectral law.
-
-If one requires the normalized spectral law to be:
-
-- continuous,
-- permutation-symmetric,
-- scale-free after normalization,
-- and additive in the entropy sense on independent positive spectral factors,
-
-then Shannon entropy is the unique law in that class up to an overall scale.
-
-Under that extra axiom, the branch gets a concrete source-fiber endpoint
-candidate:
-
-> choose `S_H`, the maximizer of normalized Schur spectral Shannon entropy on
-> the positive canonical orbit-level fiber.
-
-That is a real scientific sharpening, because it identifies exactly what extra
-axiom would be load-bearing if one wanted a single scalar law here.
+Continuity, permutation symmetry, normalization and additivity on independent
+products do not uniquely select Shannon entropy: Renyi-2 entropy
+`-log(sum p_i²)` satisfies them too. A Shannon characterization requires
+stronger hypotheses, such as an appropriate grouping/recursion axiom, not
+supplied here. Choosing Shannon explicitly yields the numerical candidate
+S_H below; neither global optimality nor a physical selection law follows.
 
 ## Why this still does not supply the physical selector
 
@@ -259,7 +268,7 @@ So the crossing leaves the constructive chamber because `E1 < 0`.
 
 That means:
 
-- the entropy-additivity axiom would select an explicit endpoint candidate,
+- the explicitly chosen Shannon functional yields a numerical endpoint candidate,
 - but it still would **not** supply the physical point required by the older
   constructive/positive route.
 
@@ -274,7 +283,7 @@ That means:
 
 ## What remains open
 
-- a retained derivation of the entropy-additivity axiom from `Cl(3)` on `Z^3`;
+- a physical justification of the chosen entropy functional from `Cl(3)` on `Z^3`;
 - a theorem that the Shannon endpoint is the physical direct-descendant source;
 - the constructive physical selector on the DM source-fiber lane.
 
@@ -297,7 +306,7 @@ That is the sharpest honest post-fiber statement now available.
 ## Cross-references
 
 - [`docs/DM_WILSON_DIRECT_DESCENDANT_CANONICAL_TRANSPORT_COLUMN_FIBER_THEOREM_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CANONICAL_TRANSPORT_COLUMN_FIBER_THEOREM_NOTE_2026-04-19.md)
-- [`docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_SCHUR_SPECTRAL_ISOTROPY_SELECTOR_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_SCHUR_SPECTRAL_ISOTROPY_SELECTOR_NOTE_2026-04-19.md)
+- Historical archived source: `archive/notes/docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_SCHUR_SPECTRAL_ISOTROPY_SELECTOR_NOTE_2026-04-19.md` (provenance only; no active theorem authority)
 - [`docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_OBSERVABLE_AFFINE_NO_GO_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_OBSERVABLE_AFFINE_NO_GO_NOTE_2026-04-19.md)
 - [`docs/DM_WILSON_DIRECT_DESCENDANT_LOCAL_SCHUR_BRANCH_DISCRIMINANT_THEOREM_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_LOCAL_SCHUR_BRANCH_DISCRIMINANT_THEOREM_NOTE_2026-04-19.md)
 - [`docs/DM_WILSON_DIRECT_DESCENDANT_LOCAL_OBSERVABLE_COORDINATE_THEOREM_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_LOCAL_OBSERVABLE_COORDINATE_THEOREM_NOTE_2026-04-19.md)

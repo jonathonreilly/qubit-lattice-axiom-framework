@@ -3,8 +3,8 @@
 rescaled NN harness.
 
 This script extends the upstream LO C_arm support note and NLO saddle note
-by two distinct types of NNLO correction and combines them to predict
-alpha_eff on the standard four-point fit window of the continuum diagnostic.
+by comparing bulk corrections and a separate aperture q^2 model on the
+standard four-point fit window of the continuum diagnostic.
 
 Companion work:
 
@@ -15,9 +15,10 @@ Companion work:
     Closes 67% of the empirical residual.
   - Continuum diagnostic: alpha = 0.5256, C = 2.7107 (4-point fit).
 
-The remaining 33% gap is closed in this note by the FINITE-SLIT-APERTURE
-correction, which is the dominant NNLO term in the lateral-coordinate
-variance.  Two saddle-internal NNLO candidates -- O(h^4) phase and the q^6
+The aperture-truncated q^2 Gaussian is a separate comparator which closes
+the remaining fit-window gap. It does not include the bulk q^4 or q^6
+perturbations; their separate calculation is not an additive aperture model.
+Two saddle-internal NNLO candidates -- O(h^4) phase and the q^6
 saddle term -- are also computed and turn out to be sub-leading by orders
 of magnitude in this window.
 
@@ -39,7 +40,8 @@ for the full math).
    The NLO runner already uses the exact cos(omega h) expression -- not the
    h^2 truncation -- so further orders of this series contribute ZERO new
    information at any h.  We verify this explicitly: the h^2+h^4+h^6 partial
-   sum agrees with delta_a_exact(h) to better than 1e-6 for h <= 0.25 already.
+   sum differs from delta_a_exact(h) by about 6.5e-6 at h=0.25, within
+   the 1e-5 guard; the smaller tabulated points agree more closely.
 
 2. q^6 SADDLE NNLO
 
@@ -78,12 +80,12 @@ for the full math).
    resulting log-log alpha = 0.5247, within +/- 0.0009 of the empirical 0.5256
    (strong-closure band: residual <= 0.005).
 
-Caveat (honored): the closed form assumes the COMPLEX-GAUSSIAN saddle remains
-the dominant contribution to the wavefunction at the slit position y = SLIT_Y.
-At h <= 0.015625 the slit sits in the deep saddle tail and the actual numerical
-wavefunction is sourced by sub-leading ballistic terms outside the q^2 saddle
-universality.  This is reported as a sharp-null SUB-CASE and not used to
-extend the alpha fit.
+Numerical scope: the original erf subtraction lost precision in the deep
+tail at h=0.015625. Complementary-error-function differences reproduce direct
+scaled aperture integration on the four fit points and h=0.015625, 0.0078125.
+This corrects a numerical artifact, not evidence for ballistic physics. More
+extreme complex arguments require separate stability checks; no asymptotic
+validity or lattice equivalence is established by these finite comparisons.
 
 Usage:
     python3 scripts/lattice_nn_rescaled_C_arm_NNLO_saddle.py
@@ -96,7 +98,7 @@ import math
 import sys
 
 import numpy as np
-from scipy.special import erf as scipy_erf
+from scipy.special import erfc as scipy_erfc
 
 
 # ---------------------------------------------------------------------------
@@ -256,8 +258,9 @@ def delta_a_series(h: float, n_terms: int = 3) -> float:
 # with mu = 1/(4 alpha_2):
 #     X_4(y) = 12 mu^2 - 48 mu^3 y^2 + 16 mu^4 y^4
 #     X_6(y) = 120 mu^3 - 720 mu^4 y^2 + 480 mu^5 y^4 - 64 mu^6 y^6
-# (from d^6/dy^6 exp(-mu y^2) = (120 mu^3 - 720 mu^4 y^2 + 480 mu^5 y^4 - 64 mu^6 y^6)
-#  exp(-mu y^2); verified by direct differentiation.)
+# X_6 is MINUS the sixth derivative divided by the Gaussian. The inverse
+# Fourier transform of q^6 contributes that minus sign; the polynomial
+# above, and hence the implemented variance correction, retain their signs.
 #
 # The variance correction is dV_6 = -2 Re( alpha_6 ( <y^2 X_6> - sigma_0^2 <X_6> ) )
 # evaluated under the unperturbed Gaussian P_0(y) of REAL variance
@@ -326,7 +329,11 @@ def q4_q6_saddle_dV(h: float) -> tuple:
 
 def slit_arm_moments(h: float, n_grid: int = 4000) -> tuple:
     """Return (mu_arm, sigma_arm) by 1D quadrature of |psi_det(y)|^2 with the
-    closed-form aperture-truncated complex-Gaussian psi_det."""
+    closed-form aperture-truncated complex-Gaussian psi_det.
+
+    Stability is checked on the four fit points and h=1/64, 1/128 only.
+    This is not a guarantee for arbitrarily extreme complex arguments.
+    """
     a0h = a_zero(h)
     aph = a_plus(h)
     g0 = a0h + 2.0 * aph
@@ -350,7 +357,10 @@ def slit_arm_moments(h: float, n_grid: int = 4000) -> tuple:
     y_c = y_grid / (a_post * M)
     u_a_arr = (SLIT_Y - y_c) * sqrtM_half
     u_b_arr = (SLIT_Y + SLIT_W - y_c) * sqrtM_half
-    Phi = scipy_erf(u_b_arr) - scipy_erf(u_a_arr)
+    # erf(u_b)-erf(u_a) loses the small tail when both terms round to 1.
+    # The algebraically identical erfc difference preserves it on our checked
+    # domain. Extreme complex arguments may need scaled erfcx or quadrature.
+    Phi = scipy_erfc(u_a_arr) - scipy_erfc(u_b_arr)
 
     # Log-density to avoid underflow in the wings.
     log_exp = (-y_grid * y_grid / (4.0 * a_total)).real * 2.0  # log|exp(-y^2/(4 a_total))|^2
@@ -387,7 +397,7 @@ def sigma_pred_NNLO_q(h: float) -> float:
 
 
 def sigma_pred_NNLO_full(h: float) -> float:
-    """NNLO = aperture-truncated complex Gaussian (closed form)."""
+    """Aperture-truncated q^2 Gaussian; no additive bulk q^4/q^6 terms."""
     _, sig = slit_arm_moments(h)
     return sig
 
@@ -508,11 +518,11 @@ def report() -> int:
     print(f"  Max |residual| on 4-point fit window (h in {FIT_HS}): "
           f"{max_abs_res_window:.3f}%")
     print()
-    print("  Note: at h = 0.015625, the slit y = 3 lies deep in the saddle tail")
-    print("  (exp(-y^2 * 2 Re(1/(4 alpha_total))) ~ 1e-46 at h = 0.0156), and the")
-    print("  closed-form Gaussian approximation underpredicts the true amplitude")
-    print("  sourced by ballistic non-Gaussian lattice terms.  This is OUTSIDE")
-    print("  the alpha fit window and reported for completeness.")
+    print("  The finer point is outside the unchanged four-point fit window.")
+    print("  Stable erfc differences give sigma=0.3115126 at h=0.015625.")
+    print("  The earlier 0.2884 was cancellation, not a physical saddle failure.")
+    print("  Direct aperture integration checks this numerical repair; no")
+    print("  universal small-h or physical lattice-equivalence claim follows.")
     print()
 
     # ------------------------------------------------------------------
@@ -530,7 +540,7 @@ def report() -> int:
     print(f"  LO     (C_arm support)    {al_LO:.4f}      {C_LO_fit:.4f}   {abs(al_LO - ALPHA_NUMERIC):.4f}")
     print(f"  NLO    (phase note)       {al_NLO:.4f}      {C_NLO_fit:.4f}   {abs(al_NLO - ALPHA_NUMERIC):.4f}")
     print(f"  NNLO_q (phase + q^4+q^6)  {al_NNLO_q:.4f}      {C_NNLO_q:.4f}   {abs(al_NNLO_q - ALPHA_NUMERIC):.4f}")
-    print(f"  NNLO_full (+ aperture)    {al_NNLO_full:.4f}      {C_NNLO_full:.4f}   {abs(al_NNLO_full - ALPHA_NUMERIC):.4f}  <-- this note")
+    print(f"  Aperture q^2 model        {al_NNLO_full:.4f}      {C_NNLO_full:.4f}   {abs(al_NNLO_full - ALPHA_NUMERIC):.4f}  <-- this note")
     print(f"  EMPIRICAL  (continuum)    {al_emp:.4f}      {C_emp:.4f}   --")
     print()
 

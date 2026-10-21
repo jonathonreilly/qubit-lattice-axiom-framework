@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_d4_record_past_nondisturbing_causal_preparation_gate_2026_08_29.py
-runner_sha256: b5487871dd88ae44d94e69210674eae9f33770d874e26c294c6c0d0f92e1ab8d
-input_fingerprint_sha256: 13135a1d1a60a4713cebcff9cd15d42318c3cdd53943609454391901b9f5716a
+runner_sha256: cf409d7ee9f41bcadb10b21e80e69cd2289c6c11536a7934b173fceecb9dbc9c
+input_fingerprint_sha256: 90a91a4f9c33cecbcf1ca94336dfb05174652b17399a0fde8e84aa3337db1727
 timeout_sec: 30
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.65
 status: ok
 ----- stdout -----
 PASS: open nine-parameter maximally mixed anchor | (9, 3/16384)

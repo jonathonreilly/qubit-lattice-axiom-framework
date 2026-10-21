@@ -80,6 +80,11 @@ def main() -> int:
             text=True,
             timeout=600,
         )
+        if result.returncode != 0:
+            print(f"  [FAIL] {script:<{max_name_len}}  (exit code {result.returncode})")
+            all_ok = False
+            continue
+
         # Extract "PASSED: X/Y" line
         passed_line = None
         for line in result.stdout.splitlines():

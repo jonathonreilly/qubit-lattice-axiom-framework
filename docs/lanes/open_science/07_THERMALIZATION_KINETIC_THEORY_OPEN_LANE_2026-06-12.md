@@ -86,9 +86,8 @@ is the framework-side work.
   of the initial condition.
 - Born rule / `I_3 = 0` — DERIVED (supplies the within-sector outcome weights
   the equilibrium ensemble needs).
-- `AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01` — a matter
-  second law `δS_matter ≥ 0` under unital evolution, *direction-relative* to
-  the low-entropy initial.
+- `AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01` — corrected conditional
+  entropy bookkeeping; its former exterior-entropy/GSL proof is withdrawn.
 - `dispersion_relation_note` (retained_bounded) — free propagation / kinetic
   energy of a lattice excitation.
 
@@ -139,15 +138,16 @@ is the framework-side work.
 under record-forming dynamics is the maximum-entropy (Gibbs) state subject to
 the additive Record readout `I`. Use the nonselective ensemble object
 `sum_r K_r ρ K_r^*` from the classicalization firewall (§4) as the ensemble
-layer, and the generalized-second-law monotonicity to identify the stationary
-point as the entropy maximizer.
+layer. Establish appropriate dynamics and a monotone functional before
+identifying a stationary point as an entropy maximizer; the corrected GSL
+note supplies no such theorem.
 
 **Approachability:** Tier B-C. Tractable first on the explicit small-region
 construction; the general-region statement is Tier C.
 
 ### 7B. H-theorem / monotone approach to equilibrium
 
-**Target:** strengthen the *direction-relative* `δS_matter ≥ 0` into a
+**Target:** derive, for an explicitly specified dynamics and state class,
 quantitative monotone relaxation of a free / weakly-interacting lattice-
 excitation gas toward the 7A equilibrium, with an explicit relaxation
 functional. Must remain modulo the past-hypothesis boundary (7F).
@@ -215,7 +215,7 @@ claim to remove it.
   (bounded_theorem) — pre-/record/post-record typed surfaces; ensemble vs.
   realized-record distinction; unbounded recorded history.
 - [AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01.md](../../AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01.md)
-  — `δS_matter ≥ 0` under unital evolution (direction-relative).
+  — conditional entropy bookkeeping, not a derived relaxation theorem.
 - `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   — comparison only for how accepted inputs are governed; this lane does not
   register the past hypothesis there.
@@ -272,7 +272,8 @@ claim to remove it.
 ## 7. Cross-references
 
 - Depends on: Born rule (derived), arrow-from-record (retained_bounded),
-  generalized second law, the classicalization firewall, decoherence Gate A.
+  the classicalization firewall, decoherence Gate A. The corrected generalized
+  entropy note is context only, not an available monotonicity theorem.
 - Gated by: Lane 2 (atomic scale) for the literal gas/pressure targets (7D–7E);
   Lane 2 in turn depends on Lanes 6 and 1.
 - Connects to: DM/cosmology thermal bridge rows (`g*`, leptogenesis thermal

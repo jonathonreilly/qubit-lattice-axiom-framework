@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_possibilitys_odds_carry_content_not_record_count_at_long_range_2026_09_23.py
 runner_sha256: 4979656a5eb40b3e83bcf1acf4b03b753069eaff4f141baf2ecad78e7e0ba252
-input_fingerprint_sha256: c3b0da8ebec9805071dd8b9bbaa4431bb45eade929c3073b906a5d6a1aac881f
+input_fingerprint_sha256: 6723e564ae507174eb2a7b001a462e533dbcb8e72b7b247606bf256d6acbb9e6
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 10.35
+elapsed_sec: 13.40
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

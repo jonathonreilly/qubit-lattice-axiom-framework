@@ -1,5 +1,25 @@
 # DM Wilson Direct-Descendant Transport-Fiber Minimal Local Spectral-Law No-Go
 
+## Current dependency and proof boundary (2026-10-21)
+
+The archived spectral-isotropy and normalized-determinant selector notes are
+historical provenance, not retained premises. Their claims of certified W1
+selection, exact transport-optimality and unique path crossings are not imported
+here. For a supplied positive 3-by-3 Hermitian matrix H, the definitions
+T=Tr(H), Q=Tr(H²), Delta=det(H) give q3=Delta/T³ and J_iso=27q3 directly.
+AM-GM gives 0<J_iso<=1, with equality only for three equal eigenvalues.
+If supplied normalized spectra satisfy strict majorization, every strictly
+Schur-concave function orders them accordingly. This conditional mathematical
+implication does not establish that the numerical source witnesses satisfy
+exact fiber constraints or that a physical selector has been derived.
+
+Numerical witness membership, tangent ranks and optimization results below
+remain finite diagnostics. Any exact local exclusion is conditional on a
+smooth positive three-dimensional fiber and an actual nonsingular (T,Q,Delta)
+coordinate chart; a numerical rank at sampled points is not that proof.
+Those realization/rank obligations remain unresolved here. Historical audit
+and closure language below is not a new certification of those obligations.
+
 **Date:** 2026-04-19  
 **Status:** exact search-plus-no-go on the completed local spectral carrier
 **Claim type:** no_go
@@ -296,7 +316,7 @@ It is now
 
 - [`docs/DM_WILSON_DIRECT_DESCENDANT_TRANSPORT_FIBER_SPECTRAL_COMPLETION_THEOREM_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_TRANSPORT_FIBER_SPECTRAL_COMPLETION_THEOREM_NOTE_2026-04-19.md)
 - [`docs/DM_WILSON_DIRECT_DESCENDANT_CANONICAL_TRANSPORT_COLUMN_FIBER_THEOREM_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CANONICAL_TRANSPORT_COLUMN_FIBER_THEOREM_NOTE_2026-04-19.md)
-- [`docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_NORMALIZED_SCHUR_DETERMINANT_SELECTOR_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_NORMALIZED_SCHUR_DETERMINANT_SELECTOR_NOTE_2026-04-19.md)
+- Historical archived source: `archive/notes/docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_NORMALIZED_SCHUR_DETERMINANT_SELECTOR_NOTE_2026-04-19.md` (provenance only; no active theorem authority)
 - [`docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_J_ISO_DERIVATION_AND_SCHUR_ISOTROPY_NO_GO_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_J_ISO_DERIVATION_AND_SCHUR_ISOTROPY_NO_GO_NOTE_2026-04-19.md)
 - [`docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_OBSERVABLE_AFFINE_NO_GO_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_OBSERVABLE_AFFINE_NO_GO_NOTE_2026-04-19.md)
 
@@ -330,7 +350,7 @@ upstream transport-fiber rows are visible.
 | Audit-lane runner cache | [`logs/runner-cache/frontier_dm_wilson_direct_descendant_transport_fiber_minimal_local_spectral_law_no_go_2026_04_19.txt`](../logs/runner-cache/frontier_dm_wilson_direct_descendant_transport_fiber_minimal_local_spectral_law_no_go_2026_04_19.txt) | runner-cache copy under `scripts/runner_cache.py` | runner-cache replay verifying `PASS=17 FAIL=0` |
 | Upstream one-hop dep — transport-fiber spectral-completion theorem | [`docs/DM_WILSON_DIRECT_DESCENDANT_TRANSPORT_FIBER_SPECTRAL_COMPLETION_THEOREM_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_TRANSPORT_FIBER_SPECTRAL_COMPLETION_THEOREM_NOTE_2026-04-19.md) | `audited_conditional` | establishes `(T, Q, Delta) = (Tr(H_e), Tr(H_e^2), det(H_e))` as local coordinates on the 3-real transport fiber (cited at top of note) |
 | Upstream one-hop dep — canonical transport-column fiber theorem | [`docs/DM_WILSON_DIRECT_DESCENDANT_CANONICAL_TRANSPORT_COLUMN_FIBER_THEOREM_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CANONICAL_TRANSPORT_COLUMN_FIBER_THEOREM_NOTE_2026-04-19.md) | `audited_conditional` | reduces the live object to a local scalar law on the positive source fiber over the canonical favored column orbit (sibling chain with the canonical-fiber mixed-spectral-branch-weight no-go) |
-| Upstream one-hop dep — constructive transport-plateau normalized-Schur-determinant selector | [`docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_NORMALIZED_SCHUR_DETERMINANT_SELECTOR_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_NORMALIZED_SCHUR_DETERMINANT_SELECTOR_NOTE_2026-04-19.md) | `audited_conditional` | supplies the canonically normalized determinant ratio `q_3 = Delta / T^3` referenced in §1 of the runner check |
+| Upstream one-hop dep — constructive transport-plateau normalized-Schur-determinant selector | Historical archived source: `archive/notes/docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_NORMALIZED_SCHUR_DETERMINANT_SELECTOR_NOTE_2026-04-19.md` (provenance only; no active theorem authority) | `audited_conditional` | supplies the canonically normalized determinant ratio `q_3 = Delta / T^3` referenced in §1 of the runner check |
 | Upstream one-hop dep — constructive transport-plateau `J_iso` derivation + Schur-isotropy no-go | [`docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_J_ISO_DERIVATION_AND_SCHUR_ISOTROPY_NO_GO_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_J_ISO_DERIVATION_AND_SCHUR_ISOTROPY_NO_GO_NOTE_2026-04-19.md) | `audited_conditional` | supplies the prior `J_iso` and normalized Schur-isotropy programs that this no-go subsumes (cited in §"This is the exact local reason the earlier normalized Schur-isotropy and J_iso programs could never have been the whole answer") |
 | Upstream one-hop dep — constructive transport-plateau observable-affine no-go | [`docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_OBSERVABLE_AFFINE_NO_GO_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_OBSERVABLE_AFFINE_NO_GO_NOTE_2026-04-19.md) | `audited_conditional` | supplies the prior observable-affine no-go that this row's affine-law no-go generalizes (cited in §"affine spectral laws fail for the same basic reason as the earlier observable-affine lane") |
 | Sibling no-go — canonical-fiber mixed spectral / branch-weight no-go | [`docs/DM_WILSON_DIRECT_DESCENDANT_CANONICAL_FIBER_MIXED_SPECTRAL_BRANCH_WEIGHT_NO_GO_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_CANONICAL_FIBER_MIXED_SPECTRAL_BRANCH_WEIGHT_NO_GO_NOTE_2026-04-19.md) | `audited_conditional` (this PR's other dm_wilson row) | sibling on the dm_wilson direct-descendant lane; same pattern of leaf no-go conditional on upstream canonical-fiber retention |

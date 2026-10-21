@@ -1,40 +1,15 @@
 #!/usr/bin/env python3
-"""
-DM leptogenesis PMNS microscopic selector reduction theorem.
-
-Question:
-  Once the constructive PMNS chamber is known to contain an exact eta = eta_obs
-  point and the DM thermal layer is already certified, what exact microscopic
-  object is still missing on the current branch?
-
-Answer:
-  The remaining object is not transport closure, not the DM thermal map, and
-  not a generic PMNS even-response fit.
-
-  The constructive exact point already exists on the fixed native N_e seed
-  surface. Upstream of dW_e^H the odd selector is already reduced to
-
-      sign(A13) = sign(2 gamma) = sign(sin(delta)).
-
-  But fixing that odd bit does not yet choose the constructive point: the
-  remaining PMNS object is the even-response law. The atlas then compresses the
-  source-facing side further: the current exact bank already collapses to one
-  sharp source tuple, while distinct live points in the exact 2-real
-  Z_3-doublet block still carry the same current-bank signature.
-
-  Therefore the remaining positive theorem target is exactly a right-sensitive
-  microscopic selector law on
-
-      dW_e^H = Schur_Ee(D_-),
-
-  equivalently the intrinsic 2-real Z_3 doublet-block point-selection law.
+"""Supplied numerical witnesses and conditional right-orbit non-identifiability.
+No physical selection, exact numerical closure, or sole remaining blocker is claimed.
 """
 
 from __future__ import annotations
 
+
+AUDIT_TIMEOUT_SEC = 600
+
 import math
 import sys
-from pathlib import Path
 
 import numpy as np
 from scipy.optimize import brentq
@@ -70,7 +45,6 @@ from frontier_dm_neutrino_source_surface_z3_doublet_block_full_closure_boundary 
     same_signature,
 )
 
-ROOT = Path(__file__).resolve().parents[1]
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -90,13 +64,11 @@ def check(name: str, condition: bool, detail: str = "", cls: str = "C") -> bool:
     return condition
 
 
-def read(rel: str) -> str:
-    return (ROOT / rel).read_text(encoding="utf-8")
 
 
 def part1_the_constructive_exact_eta_one_point_already_exists() -> None:
     print("\n" + "=" * 88)
-    print("PART 1: THE CONSTRUCTIVE EXACT ETA=1 POINT ALREADY EXISTS")
+    print("PART 1: SUPPLIED NUMERICAL CLOSURE SAMPLE")
     print("=" * 88)
 
     lam_star = brentq(lambda lam: constructive_column_eta(lam) - 1.0, 0.0, 1.0)
@@ -105,17 +77,17 @@ def part1_the_constructive_exact_eta_one_point_already_exists() -> None:
     eta_star = constructive_column_eta(lam_star)
 
     check(
-        "The constructive chamber contains an exact eta = 1 point on the fixed native seed surface",
+        "The supplied interpolated sample satisfies eta = 1 within 1e-12",
         0.0 < lam_star < 1.0 and abs(eta_star - 1.0) < 1e-12,
         f"lambda_*={lam_star:.12f}",
     )
     check(
-        "That exact closure point is still constructive",
+        "The supplied numerical sample has positive gamma, E1 and E2",
         triplet["gamma"] > 0.0 and triplet["E1"] > 0.0 and triplet["E2"] > 0.0,
         f"(gamma,E1,E2)=({triplet['gamma']:.12f},{triplet['E1']:.12f},{triplet['E2']:.12f})",
     )
     check(
-        "So the remaining blocker is not existence of a constructive eta = 1 point",
+        "The interpolated numerical sample has nonzero source norms and phase",
         np.linalg.norm(x_star) > 0.0 and np.linalg.norm(y_star) > 0.0 and abs(delta_star) > 1e-6,
         f"delta_*={delta_star:.12f}",
     )
@@ -123,7 +95,7 @@ def part1_the_constructive_exact_eta_one_point_already_exists() -> None:
 
 def part2_the_odd_microscopic_selector_bit_is_already_closed() -> None:
     print("\n" + "=" * 88)
-    print("PART 2: THE ODD MICROSCOPIC SELECTOR BIT IS ALREADY CLOSED")
+    print("PART 2: SUPPLIED ODD-SIGN PAIR")
     print("=" * 88)
 
     data = witness_pair()
@@ -131,20 +103,20 @@ def part2_the_odd_microscopic_selector_bit_is_already_closed() -> None:
     a13_neg = data["resp_neg"][6]
 
     check(
-        "On the positive seed surface sign(A13) is exactly sign(sin(delta))",
+        "The two supplied samples match sign(A13) to sign(sin(delta))",
         math.copysign(1.0, a13_pos) == math.copysign(1.0, math.sin(data["delta_pos"]))
         and math.copysign(1.0, a13_neg) == math.copysign(1.0, math.sin(data["delta_neg"])),
         f"(A13+,A13-)=({a13_pos:.12f},{a13_neg:.12f})",
     )
     check(
-        "The constructive witness pair shares all current exact even active data",
+        "The supplied pair agrees in E1, E2 and the computed eta vector",
         abs(data["tri_pos"]["E1"] - data["tri_neg"]["E1"]) < 1e-12
         and abs(data["tri_pos"]["E2"] - data["tri_neg"]["E2"]) < 1e-12
         and np.linalg.norm(data["eta_pos"] - data["eta_neg"]) < 1e-12,
         f"eta={np.round(data['eta_pos'], 12)}",
     )
     check(
-        "So the residual odd selector upstream of dW_e^H is already just sign(A13)",
+        "The supplied pair has opposite nonzero A13 signs",
         a13_pos > 0.0 and a13_neg < 0.0,
         "equivalently sign(sin(delta))",
     )
@@ -179,7 +151,7 @@ def part3_fixing_the_odd_bit_still_does_not_choose_the_constructive_point() -> N
         f"canonical=({c_e1:.12f},{c_e2:.12f}), constructive=({w_e1:.12f},{w_e2:.12f})",
     )
     check(
-        "Equivalently the remaining PMNS object is the even-response pair (E1,E2) = (delta+rho, const*sigma sin(2v))",
+        "The supplied carrier readouts also distinguish these even-response signs",
         c_e1_car < 0.0 and c_sigma_sin_2v < 0.0 and w_e1_car > 0.0 and w_sigma_sin_2v > 0.0,
         f"(delta+rho,sigma sin2v)=({c_e1_car:.12f},{c_sigma_sin_2v:.12f}) vs ({w_e1_car:.12f},{w_sigma_sin_2v:.12f})",
     )
@@ -187,7 +159,7 @@ def part3_fixing_the_odd_bit_still_does_not_choose_the_constructive_point() -> N
 
 def part4_the_atlas_source_bank_already_compresses_further_to_a_right_sensitive_2_real_target() -> None:
     print("\n" + "=" * 88)
-    print("PART 4: THE ATLAS SOURCE BANK ALREADY COMPRESSES TO A RIGHT-SENSITIVE 2-REAL TARGET")
+    print("PART 4: SUPPLIED SIGNATURE AND COORDINATE SAMPLES")
     print("=" * 88)
 
     pkg = exact_package()
@@ -203,14 +175,14 @@ def part4_the_atlas_source_bank_already_compresses_further_to_a_right_sensitive_
     tgt_c = active_target_from_h(h_c)
 
     check(
-        "The current source-facing bank is already collapsed to one sharp tuple",
+        "The supplied package contains the stated gamma, E1 and E2 constants",
         abs(pkg.gamma - 0.5) < 1e-12
         and abs(pkg.E1 - math.sqrt(8.0 / 3.0)) < 1e-12
         and abs(pkg.E2 - math.sqrt(8.0) / 3.0) < 1e-12,
         f"(gamma,E1,E2)=({pkg.gamma:.12f},{pkg.E1:.12f},{pkg.E2:.12f})",
     )
     check(
-        "Distinct live-sheet points still carry the same complete current-bank signature",
+        "The three supplied matrices share the helper-defined signature",
         same_signature(sig_a, sig_b) and same_signature(sig_a, sig_c),
         "same (gamma,E1,E2,cp1,cp2,a_*,b_*,T_slot)",
     )
@@ -220,15 +192,15 @@ def part4_the_atlas_source_bank_already_compresses_further_to_a_right_sensitive_
         f"targets={tgt_a}, {tgt_b}, {tgt_c}",
     )
     check(
-        "So the remaining source-side object is the intrinsic 2-real point-selection law for (delta,q_+)",
+        "The first supplied coordinate sample satisfies its declared q-floor inequality",
         q_floor(0.2) < q_common,
-        "equivalently the right-sensitive Z3 doublet-block law",
+        "This finite inequality does not select physical coordinates.",
     )
 
 
 def part5_h_only_data_cannot_supply_that_selector() -> None:
     print("\n" + "=" * 88)
-    print("PART 5: H-ONLY DATA CANNOT SUPPLY THAT SELECTOR")
+    print("PART 5: SUPPLIED RIGHT-UNITARY ORBIT CONTROL")
     print("=" * 88)
 
     x = np.array([1.0, 0.8, 1.1], dtype=float)
@@ -246,7 +218,7 @@ def part5_h_only_data_cannot_supply_that_selector() -> None:
     cp1 = cp_tensor_from_kz(kz1)
 
     check(
-        "An exact right-unitary orbit leaves H fixed",
+        "The supplied right-unitary pair preserves H within 1e-12",
         np.linalg.norm(h0 - h1) < 1e-12,
         f"H error={np.linalg.norm(h0 - h1):.2e}",
     )
@@ -261,81 +233,29 @@ def part5_h_only_data_cannot_supply_that_selector() -> None:
         f"CP0={cp0}, CP1={cp1}",
     )
     check(
-        "So any positive selector that finishes the microscopic gate must be right-sensitive or right-frame-fixing",
-        True,
-        "H-only data are insufficient",
+        "The supplied rotation is unitary and conjugates K as specified",
+        np.linalg.norm(right_rotation(0.41).conj().T @ right_rotation(0.41)-np.eye(3)) < 1e-12
+        and np.linalg.norm(y1.conj().T @ y1-right_rotation(0.41) @ (y0.conj().T @ y0) @ right_rotation(0.41).conj().T) < 1e-12,
+        "Non-identifiability is conditional on admitting both supplied orbit members",
     )
 
 
-def part6_the_notes_record_the_same_last_mile_object() -> None:
-    print("\n" + "=" * 88)
-    print("PART 6: THE NOTES RECORD THE SAME LAST-MILE OBJECT")
-    print("=" * 88)
 
-    dwh_note = read("docs/DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md")
-    blind_note = read("docs/DM_LEPTOGENESIS_PMNS_SELECTOR_BANK_CP_SHEET_BLINDNESS_THEOREM_NOTE_2026-04-16.md")
-    z3_note = read("docs/DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_FULL_CLOSURE_BOUNDARY_NOTE_2026-04-16.md")
-    note = read("docs/DM_LEPTOGENESIS_PMNS_MICROSCOPIC_SELECTOR_REDUCTION_THEOREM_NOTE_2026-04-17.md")
 
-    check(
-        "The charged-source reduction note records dW_e^H as the exact Schur pushforward and remaining transport-facing target",
-        "`dW_e^H` is the exact charged-sector Schur pushforward" in dwh_note
-        and "What is now the right target:" in dwh_note
-        and "`dW_e^H`" in dwh_note,
-        cls="B",
-    )
-    check(
-        "The selector-bank blindness note records the remaining PMNS problem as a D_- / dW_e^H sign-law problem",
-        "`D_- / dW_e^H` sign-law problem" in blind_note,
-        cls="B",
-    )
-    check(
-        "The Z3 full-closure boundary note records the remaining source object as the right-sensitive 2-real doublet-block law",
-        "(delta, q_+)" in z3_note and "doublet-block law" in z3_note,
-        cls="B",
-    )
-    check(
-        "The new note records the unified last-mile reduction to a right-sensitive microscopic selector on dW_e^H / the Z3 doublet block",
-        "right-sensitive microscopic selector law" in note
-        and "dW_e^H = Schur_Ee(D_-)" in note
-        and "`Z_3` doublet-block point-selection law" in note,
-        cls="B",
-    )
 
 
 def main() -> int:
-    print("=" * 88)
-    print("DM LEPTOGENESIS PMNS MICROSCOPIC SELECTOR REDUCTION THEOREM")
-    print("=" * 88)
-    print()
-    print("Question:")
-    print("  Once constructive exact closure exists and the DM thermal layer is")
-    print("  already bounded, what exact microscopic object is still missing on the")
-    print("  current branch?")
-
+    print("SUPPLIED NUMERICAL WITNESSES AND RIGHT-ORBIT CONTROL")
+    print("Imported constants, transport and source families are supplied, not derived here.")
     part1_the_constructive_exact_eta_one_point_already_exists()
     part2_the_odd_microscopic_selector_bit_is_already_closed()
     part3_fixing_the_odd_bit_still_does_not_choose_the_constructive_point()
     part4_the_atlas_source_bank_already_compresses_further_to_a_right_sensitive_2_real_target()
     part5_h_only_data_cannot_supply_that_selector()
-    part6_the_notes_record_the_same_last_mile_object()
-
-    print("\n" + "=" * 88)
-    print("RESULT")
-    print("=" * 88)
-    print("  Exact reduction answer:")
-    print("    - the constructive eta = 1 point already exists")
-    print("    - the odd microscopic selector bit is already reduced to sign(A13)")
-    print("    - fixing that odd bit still leaves the constructive point unchosen")
-    print("    - the atlas source bank already compresses the live source object to")
-    print("      the intrinsic 2-real Z3 doublet-block point-selection law")
-    print("    - H-only data cannot supply that selector")
-    print("    - so the remaining blocker is exactly a right-sensitive microscopic")
-    print("      selector law on dW_e^H = Schur_Ee(D_-), equivalently the intrinsic")
-    print("      Z3 doublet-block point-selection law")
-    print()
+    print("The finite examples do not identify the only remaining physical obligation.")
+    print("H-only non-identifiability applies only if both displayed orbit members are admitted.")
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
-    return 0 if FAIL_COUNT == 0 else 1
+    return 1 if FAIL_COUNT else 0
 
 
 if __name__ == "__main__":

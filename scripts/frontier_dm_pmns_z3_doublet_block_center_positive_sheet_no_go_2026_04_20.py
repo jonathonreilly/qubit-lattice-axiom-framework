@@ -24,6 +24,8 @@ Answer:
 
 from __future__ import annotations
 
+AUDIT_INPUT_PATHS = ['docs/DM_PMNS_Z3_DOUBLET_BLOCK_CENTER_POSITIVE_SHEET_NO_GO_THEOREM_NOTE_2026-04-20.md', 'docs/DM_PMNS_LOCAL_SELECTOR_FAMILY_NO_GO_THEOREM_NOTE_2026-04-20.md']
+
 import math
 import sys
 from pathlib import Path

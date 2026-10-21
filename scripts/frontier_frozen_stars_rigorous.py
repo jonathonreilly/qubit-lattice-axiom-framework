@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Frozen stars — analytical proof, larger lattice, LIGO echo prediction.
+"""Frozen stars — exploratory Newtonian Hartree probes and historical echo ansatz.
 
 Physics context
 ---------------
 The original frozen-star investigation (frontier_frozen_stars.py) showed
 numerically on small (N=100-200) 1D lattices that Fermi pressure halts
-gravitational collapse.  This script makes the argument rigorous:
+gravitational collapse.  These finite numerical probes do not establish relativistic stability:
 
   1. ANALYTICAL SCALING (lattice-size independent)
      Derive R_min from energy minimization on a d-dimensional lattice.
@@ -260,94 +260,13 @@ def self_consistent_3d(L: int, n_particles: int, G: float,
 # ============================================================================
 
 def probe1_analytical_scaling():
-    """Derive R_min from energy balance on a d-dimensional lattice.
+    """Evaluate a supplied nonrelativistic Fermi estimate and packing floor.
 
-    On a lattice with spacing a, for N fermions confined to radius R:
-
-      E_kinetic ~ N * hbar^2 / (2 m a^2)   [bandwidth of tight-binding band]
-
-    But if confined to R < N^{1/d} * a (i.e. fewer sites than particles
-    would naturally occupy), the Pauli exclusion forces occupation of
-    higher-momentum states.  The Fermi energy on a d-dim lattice of
-    side L = R/a sites is:
-
-      E_F ~ (hbar^2 / 2m) * (pi/a)^2 * (N_p / N_sites)^{2/d}
-
-    where N_sites = (R/a)^d.
-
-    Total energy (3D):
-      E_kin = N_p * (hbar^2 / 2m) * (pi/a)^2 * (N_p / (R/a)^3)^{2/3}
-            = (hbar^2 pi^2 / 2m a^2) * N_p^{5/3} * (a/R)^2
-
-      E_grav = -alpha_G * G * (N_p * m)^2 / R
-             = -alpha_G * G * N_p^2 * m^2 / R
-
-    where alpha_G ~ 3/5 for a uniform sphere.
-
-    Minimize E_total = E_kin + E_grav w.r.t. R:
-
-      dE/dR = 0  =>  -2 E_kin / R + E_grav / R = 0  (from R-dependences)
-      => R_min = 2 * E_kin_prefactor / |E_grav_prefactor|
-
-    Explicitly:
-      R_min^3 = (hbar^2 pi^2 / (alpha_G * G * m^3)) * N_p^{-1/3} * a
-
-    Or equivalently:
-      R_min = (hbar^2 pi^2 / (alpha_G * G * m^3))^{1/3} * N_p^{-1/9} * a^{1/3}
-
-    Let me redo this carefully:
-
-      E_kin = C_k * N_p^{5/3} / R^2     where C_k = hbar^2 pi^2 a / (2m)
-      E_grav = -C_g * N_p^2 / R          where C_g = alpha_G * G * m^2
-
-      dE/dR = -2 C_k N_p^{5/3} / R^3 + C_g N_p^2 / R^2 = 0
-      => R_min = 2 C_k / (C_g * N_p^{1/3})
-      => R_min = (hbar^2 pi^2 a) / (alpha_G * G * m^3 * N_p^{1/3})
-
-    wait — let me be more careful about the a-dependence.
-
-    For N_p fermions in a box of side R on a lattice of spacing a:
-      Number of sites: N_s = (R/a)^3
-      Filling fraction: nu = N_p / N_s = N_p * (a/R)^3
-      Fermi momentum: k_F ~ (6 pi^2 nu)^{1/3} / a  (bounded by pi/a)
-
-    If nu < 1 (not yet at band edge):
-      E_F = hbar^2 k_F^2 / (2m) = (hbar^2 / 2m a^2) * (6 pi^2 N_p)^{2/3} * (a/R)^2
-
-    Total kinetic energy (Thomas-Fermi):
-      E_kin = (3/5) * N_p * E_F = (3 hbar^2 / 10 m a^2) * (6 pi^2)^{2/3} * N_p^{5/3} * (a/R)^2
-
-    Gravitational energy:
-      E_grav = -(3/5) * G * (N_p * m)^2 / R
-
-    dE/dR = 0:
-      2 * (3 hbar^2 / 10 m a^2) * (6pi^2)^{2/3} * N_p^{5/3} * a^2 / R^3
-      = (3/5) * G * N_p^2 * m^2 / R^2
-
-      R_min = 2 * (hbar^2 / (2m)) * (6pi^2)^{2/3} * N_p^{-1/3} / (G m^2)
-            = (hbar^2 (6pi^2)^{2/3}) / (G m^3 N_p^{1/3})
-
-    This is the standard Chandrasekhar result! The lattice spacing a
-    cancels because we assumed nu < 1 (not at band filling).
-
-    The LATTICE correction appears when nu -> 1 (band filling):
-      k_F is bounded by pi/a, so E_F_max = hbar^2 pi^2 / (2 m a^2)
-      E_kin_max = (3/5) * N_p * hbar^2 pi^2 / (2 m a^2)
-
-    This provides a HARD FLOOR:
-      R_min >= a * (N_p)^{1/3}  (every particle on its own site)
-
-    And the UV-cutoff-limited equilibrium:
-      R_min_lattice = max(R_min_Fermi, N_p^{1/3} * a)
-
-    The lattice cutoff matters when R_min_Fermi < N_p^{1/3} * a, i.e.:
-      (hbar^2 (6pi^2)^{2/3}) / (G m^3 N_p^{1/3}) < N_p^{1/3} * a
-      => N_p^{2/3} > hbar^2 (6pi^2)^{2/3} / (G m^3 a)
-      => N_p > [hbar^2 (6pi^2)^{2/3} / (G m^3 a)]^{3/2} = N_Chandrasekhar
-
-    Above the Chandrasekhar number, the standard Fermi pressure fails
-    but the LATTICE CUTOFF provides additional support via the bandwidth
-    limit.  This is the frozen star regime.
+    E(R)=C_k N^(5/3)/R^2-C_g N^2/R has stationary radius
+    R_Fermi=2C_k/(C_g N^(1/3)). With this model's coefficients this is
+    hbar^2(6pi^2)^(2/3)/(G m^3 N^(1/3)). The distinct packing floor is
+    a N^(1/3). Neither formula establishes a relativistic stellar solution,
+    a horizon statement or the physical Chandrasekhar mass limit.
     """
     print("=" * 72)
     print("PROBE 1: Analytical scaling — lattice-size independent")
@@ -365,12 +284,12 @@ def probe1_analytical_scaling():
     C_F = HBAR**2 * (6 * math.pi**2)**(2/3)
     print(f"  C_F = hbar^2 (6pi^2)^(2/3) = {C_F:.4e} J m^2 kg")
 
-    # Chandrasekhar number: N_Ch = [C_F / (G m^3 a)]^{3/2}
+    # Model packing crossover number: N_Ch = [C_F / (G m^3 a)]^{3/2}
     a = L_PLANCK
     m = M_NUCLEON
     N_Ch = (C_F / (G_SI * m**3 * a))**(3/2)
     M_Ch = N_Ch * m
-    print(f"\n  Chandrasekhar number (a = l_Planck, m = m_nucleon):")
+    print(f"\n  Model packing crossover number (a = l_Planck, m = m_nucleon):")
     print(f"    N_Ch = (C_F / G m^3 a)^(3/2) = {N_Ch:.4e}")
     print(f"    M_Ch = N_Ch * m = {M_Ch:.4e} kg = {M_Ch/M_SUN:.2f} M_sun")
 
@@ -431,12 +350,12 @@ def probe1_analytical_scaling():
     # ------------------------------------------------------------------
     print(f"\n  C) Key scaling laws (lattice-size INDEPENDENT)")
     print("  " + "-" * 60)
-    print(f"  Below Chandrasekhar mass ({M_Ch/M_SUN:.2f} M_sun):")
+    print(f"  Below Model packing crossover mass ({M_Ch/M_SUN:.2f} M_sun):")
     print(f"    R_min = C_F / (G m^3 N^{{1/3}})  [standard Fermi]")
     print(f"    R_min / R_S = (C_F c^2 / 2G^2 m^4) N^{{-4/3}}")
-    print(f"    => R_min >> R_S (white dwarf / neutron star regime)")
+    print(f"    Compare R_min with R_S separately; Newtonian validity is not guaranteed.")
     print()
-    print(f"  Above Chandrasekhar mass (frozen star regime):")
+    print(f"  Above Model packing crossover mass (frozen star regime):")
     print(f"    R_min = N^{{1/3}} a  [lattice hard floor]")
     print(f"    R_min / R_S = a c^2 / (2 G m) * N^{{-2/3}}")
 
@@ -448,8 +367,8 @@ def probe1_analytical_scaling():
     print()
     print(f"  Critical finding: R_min/R_S -> 0 as M -> infinity")
     print(f"  But R_min > 0 ALWAYS (lattice provides hard floor)")
-    print(f"  => No singularity, no event horizon in the lattice framework")
-    print(f"  => The object is a \"frozen star\" with Planck-scale surface")
+    print(f"  => No conclusion about curvature singularities or event horizons follows.")
+    print(f"  => This is a model packing bound, not a relativistic solution.")
 
     return {
         "N_Ch": N_Ch,
@@ -1024,7 +943,7 @@ def probe6_gw150914():
 
 def main():
     t0 = time.time()
-    print("Frozen Stars — Analytical Proof, Larger Lattice, LIGO Echo Prediction")
+    print("Frozen Stars — Exploratory Hartree Probes and Historical Echo Ansatz")
     print("=" * 72)
 
     r1 = probe1_analytical_scaling()
@@ -1038,26 +957,26 @@ def main():
     # SUMMARY
     # ====================================================================
     print("\n" + "=" * 72)
-    print("SUMMARY: Rigorous Frozen Star Predictions")
+    print("SUMMARY: Exploratory Hartree and historical echo calculations")
     print("=" * 72)
 
     print(f"""
   1. ANALYTICAL SCALING (lattice-size independent):
-     Chandrasekhar number: N_Ch = {r1['N_Ch']:.4e}
-     Chandrasekhar mass: {r1['M_Ch_solar']:.2f} M_sun
+     Model packing crossover number: N_Ch = {r1['N_Ch']:.4e}
+     Model packing crossover mass: {r1['M_Ch_solar']:.2f} M_sun
      Above M_Ch: R_min = N^(1/3) * a  (lattice hard floor)
      R_min / R_S = (a c^2 / 2Gm) * N^(-2/3) -> 0 but NEVER zero
-     => No singularity, no horizon: the lattice provides a hard floor
+     => Positive packing floor does not determine horizon or singularity structure
 
   2. LARGE 1D LATTICE (N up to 1000):
-     Width CONVERGES as N -> infinity (lattice-size independent)
-     N_crit is independent of lattice size (physical, not artifact)
-     Fermi pressure stabilization is ROBUST at all tested sizes
+     Historical 1D widths agree at the displayed finite sizes
+     No infinite-volume independence is established
+     Finite widths are diagnostics, not dynamical stability certificates
 
   3. 3D LATTICE (L up to 14, N_sites up to 2744):
      Fermi stabilization persists in full 3D
-     Width converges with lattice size
-     The 1D results extrapolate correctly to 3D
+     Displayed 3D widths grow with lattice size
+     No astrophysical or infinite-volume extrapolation is established
 
   4. COMPACTNESS (numerical):
      R_frozen / R_S decreases with mass (more compact at higher M)
@@ -1076,10 +995,9 @@ def main():
      Abedi et al. claimed ~100 ms; our prediction differs because
      we place the surface at the Planck scale (not just outside R_S).
 
-  KEY RESULT: The frozen star prediction is lattice-size independent.
-  The analytical scaling argument works at ALL masses, not just the
-  small lattices tested numerically. The echo time is a specific,
-  testable prediction for LIGO/Einstein Telescope.
+  SCOPE: finite Newtonian Hartree probes and a supplied historical echo ansatz.
+  No relativistic stability, horizon exclusion, infinite-volume convergence
+  or physical echo prediction is established by this runner.
 """)
 
     elapsed = time.time() - t0

@@ -1,170 +1,50 @@
-# DPLE Cannot Close A-BCC: Sign-Blindness No-Go
+# Log absolute determinant does not select a determinant sign
 
-**Date:** 2026-04-19
-**Status:** Formal no-go theorem. DPLE is a scalar-selector support
-theorem on the open DM gate; it cannot derive the A-BCC axiom
-(physical sheet = C_base).
-**Companion to:**
-`docs/DM_DPLE_DIMENSION_PARAMETRIC_EXTREMUM_THEOREM_NOTE_2026-04-19.md`
+**Type:** bounded_theorem
+**Date:** 2026-04-19; scope corrected 2026-10-21.
+**Status:** bounded observable-level limitation; no general impossibility theorem for the framework and no physical selector closure.
+**Companion:** [DPLE mathematical correction](DM_DPLE_DIMENSION_PARAMETRIC_EXTREMUM_THEOREM_NOTE_2026-04-19.md).
+**Runner:** `scripts/frontier_dm_dple_theorem.py`.
 
----
+## Exact invariant and its scope
 
-## 1. Precise statement
+For an odd-dimensional Hermitian pencil H(t), the second pencil -H(t) has opposite determinant sign but exactly the same W(t)=log|det H(t)| wherever defined. Thus any rule depending **only** on W and its derivatives assigns the same result to the pair. Such a rule cannot prefer a determinant sign on a class that includes both pencils.
 
-**Theorem (DPLE sign-blindness no-go).** The DPLE principle — that
-W(t) = log|det H(t)| has at most floor(d/2) interior Morse-index-0
-critical points on any open interval — cannot derive the A-BCC axiom
-(identification of C_base = {det H > 0} as the physical PMNS sheet).
+The distinction “a class that includes both” is essential: negating H also negates its baseline. No invariance of a fixed source chamber, preparation, Hamiltonian dynamics or physical identification follows merely from Hermiticity. Additional structure may select one member. This argument does not prove that every axiom-based route to a physical sheet must fail.
 
----
+An exact witness is H_plus(t)=diag(-1,B(t)), where B(t)=[[t-1/2,1],[1,-(t-1/2)]]. Its determinant is (t-1/2)^2+1>0. H_minus=-H_plus has negative determinant. Both have the same W, with W''(1/2)=2>0. Their polynomial curvatures have opposite signs. The runner verifies these identities symbolically; no sampling fraction or literal True is used as evidence.
 
-## 2. Background: what A-BCC and DPLE each say
+## What the corrected DPLE statement does and does not imply
 
-**A-BCC (axiom, still open on DM flagship).** Among the connected
-components of {det(H_base + J) ≠ 0}, the physically realized PMNS sheet
-is the baseline-connected component C_base containing J = 0, i.e. the
-component where det(H_base + J) > 0 (same sign as det H_base). This
-is stated as an open item in `DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17`
-(section "Still open", item 7).
+The polynomial/logarithmic-derivative proof gives an upper bound floor(d/2) on W's nondegenerate minima. It does not imply existence, a positive sign, or selection of a basin. d=2 and d=3 both have an at-most-one bound; d=2 has explicit nonvacuous examples. The former claim that DPLE derives conditions (1)–(3) of an existing-minimum selector is withdrawn.
 
-**DPLE (theorem, this cycle).** On the retained linear Hermitian pencil
-H(t) = H_0 + t H_1 with H_0 invertible, the observable
+At a critical point, W''=p''/p. The old p''>0 test agrees with a W minimum only when p>0. A positive-sign restriction remains an added chart predicate, not a consequence of a W-count theorem. Determinant-sign agreement at one point is also weaker than full inertia agreement or nonsingularity of an entire path. The companion gives explicit counterexamples.
 
-    W(t) = log|det H(t)|
+## Baseline component and conditional PNS implication
 
-has at most floor(d/2) interior Morse-index-0 critical points. The
-vertical bars denote absolute value of det.
+Define C_base to be the connected component of the nonsingular source domain containing the supplied baseline. It is a subset of the positive-determinant locus when the baseline determinant is positive. Equality with the entire positive locus requires a separate connectedness argument and is not assumed here.
 
-**F_3 (the retained F4 condition at d=3).** Four conditions:
+If H(t) is continuous and nonsingular for every t in [0,1], its inertia is constant. Thus a positive baseline determinant remains positive. This is the conditional PNS implication. Continuity alone allows zero crossings; invoking a path already chosen to end at Basin 1 does not select Basin 1 as physical. A finite scan of a path is numerical evidence, not a universal nonsingularity proof.
 
-  (1) Delta_ret = c_2^2 - 3 c_1 c_3 > 0       [real interior CP]
-  (2) t_* = (-c_2 + sqrt(Delta_ret))/(3 c_3) in (0,1)  [in interval]
-  (3) p''(t_*) > 0                              [Morse-index-0]
-  (4) p(t_*) > 0  AND  sign(p(t_*)) = sign(c_0) [positive det, = C_base]
+The [P3 note](DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md) addresses a specified path. Its physical endpoint identification, the source dynamics and PNS premise remain separate obligations. No experimental CP-phase exclusion is established by the present observable argument.
 
-DPLE derives (1)-(3): at d = 3, the floor(3/2) = 1 bound makes the
-interior minimum unique, so (1)-(3) are provably theorem-grade. Condition
-(4) is a SIGN condition on det (not |det|).
+## Historical provenance and unresolved scope
 
----
+The original April note referred to a T8 negative-sheet random campaign. The raw prompt capture `docs/ai_methodology/raw/prompts_session_b5ee8c6c_jonreilly.md` records that historical task, but the f24 runner contains T1–T7 and no T8. That historical claim is not fresh evidence for the current classifier. The present exact opposite-sign witness replaces the current evidentiary gap without editing raw prompts or historical logs.
 
-## 3. Proof of the no-go
+The invariant leaves open physically supplied asymmetric dynamics, a proved nonsingular preparation path, or an independently justified physical sector. It does not add any such premise. The older “F4 axiom closed,” “d=3 uniquely binary,” and “single remaining input” summaries are superseded here. Stable filenames and identifiers are preserved; source corrections do not write audit verdicts.
 
-**Step 1: DPLE uses |det|, not det.**
+## No-Go Discipline Gate
 
-W(t) = log|det H(t)|. Its critical points satisfy
+This is a **partial narrowing of the old no-go**, not a packet PASS or an exhaustive framework impossibility claim.
 
-    W'(t) = Tr[H(t)^{-1} H_1] = p'(t) / p(t)  =  0  iff  p'(t) = 0.
+- **N1 — Routes:** one invariant family was actually checked: odd-dimensional negation, with exact opposite-sign determinant/log-derivative witness. A fixed baseline/chamber, asymmetric dynamics, a nonsingular preparation path, or a sector identification are admissible extra-structure routes outside the W-only domain; none is ruled out here. Fewer than five distinct attempted families means the procedural five-family packet requirement is not met. This does not invalidate the displayed invariant identity.
+- **N2 — Walls:** no multiple-wall independence or minimal residual count is asserted. The sole theorem domain is a sign-paired pencil class and a W-only rule; relations among possible additional physical inputs are unresolved.
+- **N3 — Hidden premises:** Hermiticity, odd dimension, invertible domain, sign-pair closure of the class and W-only dependence are explicit. A fixed chart need not obey sign-pair closure. The polynomial count theorem is not a physical premise.
+- **N4 — Residual matching:** the companion's section 4 and exact runner sign-flip fixture address only W's lost determinant sign. P3 and PNS context address supplied path nonsingularity, not existence of a physical selector, and are not witnesses for a broader no-go.
+- **N5 — Resolution:** individual matrix entries and determinant/curvature values are checked; finite eigenvalue/critical-point modes and 2/3/4-dimensional blocks are exercised. No site dynamics, all-chamber classification or lattice limit is tested or ruled out.
+- **N6 — Partial closure:** choosing a sign convention can label the two members but does not physically select one. Additional physical asymmetry or a proved path may select a member. No new axiom is asserted necessary, no primitive absence is claimed, and no registration is proposed.
+- **N7 — Steelman:** a physical preparation law might fix H0 and confine its source trajectory to a nonsingular component. That excludes the negated baseline, so the exact W symmetry on the enlarged pencil class cannot refute such a law. The actionable obligation is to derive nonsingularity for that preparation without selecting the desired endpoint first. This is outside the narrow invariant theorem and remains open.
+- **N8 — Prior echo:** `DM_ABCC_PMNS_NONSINGULARITY_THEOREM_NOTE_2026-04-19.md` section 2 supplies the conditional IVT implication, while its opening calls PNS an input. That is a partial conditional route, not an established retirement by dynamics. The broader headline equivalence, physical-mass assertions and current empirical wording are not validated here. The raw April prompt records the same endpoint-circularity concern; it is history, not current proof.
 
-The Morse-index-0 condition is W''(t_*) > 0. None of these conditions
-reference the SIGN of p(t_*); they reference only whether the derivative
-vanishes and whether the second derivative is positive. The floor(d/2)
-bound counts CPs of W = log|p|, which is the same for p > 0 and for p < 0
-(since |p| is the same either way in terms of local geometry).
-
-**Step 2: The DPLE bound holds for C_neg pencils (det H_0 < 0).**
-
-Take any H_0 with det H_0 < 0 (i.e., H_0 in C_neg). The same Morse-index
-argument applies: log|det(H_0 + t H_1)| has at most floor(d/2) interior
-Morse-index-0 CPs. This is verified numerically in runner T8
-(`frontier_dm_dple_theorem.py`): over 500 random C_neg pencils at d = 3,
-the maximum interior Morse-index-0 CP count is <= 1.
-
-**Step 3: The sign-match analog F_3^{neg} also produces a unique-basin selector on C_neg.**
-
-For a C_neg pencil (det H_0 < 0), define F_3^{neg} by replacing condition
-(4) with sign(p(t_*)) = sign(c_0) < 0. By DPLE, there is at most one
-interior Morse-index-0 CP. Runner T8 finds explicit C_neg pencils
-satisfying F_3^{neg} = True (interior minimum with p(t_*) < 0). The
-sign-matched analog exists on C_neg just as on C_base.
-
-**Step 4: DPLE cannot prefer C_base over C_neg.**
-
-From steps 2-3: DPLE's generic structure is sign-symmetric. For any
-(H_base, J_*) pair where F_3 = True on C_base, the analogous C_neg
-setup supports F_3^{neg} = True on C_neg. DPLE has no mechanism to
-distinguish the two.
-
-Therefore: any argument of the form "DPLE => Basin 1 is the physical
-basin" must smuggle in the sign condition (4), which is A-BCC. DPLE
-cannot supply that sign condition from the log|det| observable alone.
-
-**Step 5: The sign condition in F_3 IS A-BCC encoded.**
-
-Condition (4) requires sign(p(t_*)) = sign(det H_base) > 0. This is
-equivalent to: "the linear path from J = 0 to J_physical passes through
-an interior minimum of det at which det > 0, i.e., the path stays on
-C_base." This is A-BCC restricted to linear paths. P3 Sylvester confirms
-that the physical Basin 1 path satisfies this as a theorem (det > 0 on
-[0,1]); but that confirmation uses A-BCC as its premise (Basin 1 is the
-physical basin), not as its conclusion.
-
-**Conclusion.** DPLE derives conditions (1)-(3) of F_3. Condition (4)
-encodes A-BCC. DPLE cannot derive A-BCC. QED.
-
----
-
-## 4. What DPLE does buy (correct account)
-
-DPLE is a genuine and non-trivial scalar-selector theorem:
-
-- It demotes F4 from an imposed axiom to a theorem on the retained
-  scalar-selector sub-gate (conditioned on A-BCC).
-- It proves the d = 3 uniqueness of the clean binary selector structure:
-  at d = 2 the condition is vacuous; at d >= 4 it fragments (multiple
-  interior Morse-index-0 CPs possible).
-- Combined with the other scalar-selector closures (MRU, Berry), it unifies
-  the three Tier-1 scalar-selector routes as `d = 3`
-  specializations of dim-parametric principles.
-
-None of this implies source-side closure.
-
----
-
-## 5. What remains open
-
-A-BCC: deriving from the Cl(3)/Z^3 axiom why the physical PMNS sheet is
-C_base. Candidate routes:
-
-- **Observable-continuity / Grassmann-additivity** on W[J] = log|det|:
-  derive that the physical sheet must be the connected component
-  containing the zero-source baseline J = 0.
-- **Structural sign theorem**: derive from retained source-package
-  theorems that det(H_base) > 0 is an algebraic necessity, and that
-  physical J-deformations preserve sign.
-
-Neither route has been supplied. The A-BCC CP-phase no-go theorem
-(main, `ABCC_CP_PHASE_NO_GO_THEOREM_NOTE_2026-04-19.md`) provides
-observational grounding: all known C_neg chi^2=0 basins give
-sin(delta_CP) > +0.247, which is T2K-excluded at >3sigma. This is strong
-observational support for A-BCC but is not a derivation from retained
-framework structure.
-
----
-
-## 6. Relationship to the P3 Sylvester theorem
-
-P3 Sylvester (`DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md`)
-proves that the linear path from J = 0 to J_*(Basin 1) stays in C_base:
-det(H_base + t J_*) > 0 for all t in [0, 1]. This is the pointwise
-signature theorem AT the P3 pin.
-
-P3 Sylvester proves Basin 1 is ON C_base (given that Basin 1 is the pin).
-DPLE proves that on C_base, the unique interior minimum of det is at t_*
-(F_3 structure). Neither P3 Sylvester nor DPLE derives WHY Basin 1 is the
-physical pin, i.e., neither derives A-BCC. A-BCC is the input that
-converts "Basin 1 is on C_base" into "Basin 1 is the physical basin."
-
----
-
-## 7. Verdict
-
-**DPLE is an honest support theorem on the open DM scalar-selector gate.**
-
-It closes the F4 axiom on the conditioned sub-gate. It does not close
-A-BCC. The source-side physical-sheet identification remains the single
-open input on the DM flagship.
-
-The this cycle synthesis description "DM A-BCC basin: axiom cost 1 -> 0"
-refers to the F4 scalar-selector axiom only. The DM flagship lane remains
-open pending A-BCC closure.
+No audit verdict, no-go ledger or historical snapshot is altered by this source correction. The unfulfilled packet requirement is reported for independent review; no fresh no-go promotion is requested.

@@ -1,19 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_c_iso_su3_nlo_2026_05_08_su3nlo.py
-runner_sha256: 4226676cecb16de88a3a405816f47b7f7c8ad381078a6d412431fb9cb41cb8d0
-timeout_sec: 120
+runner_sha256: ee5d8f35090eab421798f5754808d143e06608b9282373c59c1d7078a2a8e306
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.28
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
 
-=== SU(3) NLO Convention C-iso Closure ===
+=== SU(3) finite diagnostics; physical closure open ===
 Date: 2026-05-08  |  Workspace: outputs/action_first_principles_2026_05_08/c_iso_su3_nlo_closure
-Hamilton-limit input: <P>_KS = 0.441 ± 0.0006
+Supplied historical scenario input: <P>_KS = 0.441 ± 0.0006
 
+Scope: numerical fit only; missing analytic proof and physical transfer remain open.
 
 ======================================================================
-SELF-TEST: SU(3) NLO Analytic Derivation
+SELF-TEST: finite fit versus supplied SU(3) NLO coefficient
 ======================================================================
   beta=    12  <P>_W = 0.3223280  (P_W*beta-4)*beta = -1.58477
   beta=    24  <P>_W = 0.1645476  (P_W*beta-4)*beta = -1.22059
@@ -26,7 +27,7 @@ SELF-TEST: SU(3) NLO Analytic Derivation
   beta=  3000  <P>_W = 0.0013332  (P_W*beta-4)*beta = -1.00145
 
   Fit: y = c_2 + c_3/beta + c_4/beta^2
-    c_2 = -1.00000  (analytic prediction: -1)
+    c_2 = -1.00000  (supplied target: -1)
     c_3 = -4.32820
     c_4 = -19.89960
 
@@ -35,7 +36,7 @@ SELF-TEST: SU(3) NLO Analytic Derivation
   PASS = True
 
 ======================================================================
-PATH A: SU(3) Convention C-iso analytic NLO comparison
+PATH A: SU(3) single-plaquette numerical/supplied-series comparison
 ======================================================================
   At g^2 = 1; s_t = g^2 / (2 xi) = 1/(2 xi);  beta_W = 3/s_t
 
@@ -55,14 +56,14 @@ PATH A: SU(3) Convention C-iso analytic NLO comparison
     Order 2: a_1=+0.59578, a_2=-0.18879
     Order 3: a_1=+0.58195, a_2=+0.01854, a_3=-0.61199
 
-  Analytic LO of rel_shift_SU(3): 7/12 = 0.583333
+  Conditional LO of rel_shift_SU(3): 7/12 = 0.583333
   (vs SU(2) proxy: 1/4 = 0.250000; ratio SU(3)/SU(2) = 2.33)
 
 ======================================================================
-PATH B: SU(3) C-iso absolute shift on <P>_KS
+PATH B: assumed transfer-rule scenario on supplied <P>_KS
 ======================================================================
-  Hamilton-limit input: <P>_KS = 0.441 ± 0.0006
-  (from PR #685 thermodynamic-limit extrapolation L=3,4,6)
+  Supplied historical scenario input: <P>_KS = 0.441 ± 0.0006
+  (old extrapolation attribution is unverified; see corrected source note)
 
      xi        s_t    rel(LO)   rel(num)    abs_shift   <P>_KS bound
   ------------------------------------------------------------------------
@@ -76,15 +77,15 @@ PATH B: SU(3) C-iso absolute shift on <P>_KS
 
   ε_witness target absolute shift: 0.0003
   → C-iso shift above ε_witness for all xi tested (max xi = 64)
-  → Projected: xi ≈ 429 required to drop C-iso below ε_witness.
+  → Conditional scenario projection: xi ≈ 429 required to drop C-iso below ε_witness.
 
 ======================================================================
-PATH C: Total error budget on Hamilton-limit <P>_KS
+PATH C: supplied-scenario quadratic error combination
 ======================================================================
-  ε_stat (PR #685 multi-seed)        = 0.0002
-  ε_vol  (PR #685 L→∞ extrapolation) = 0.0006
+  ε_stat (supplied historical value)        = 0.0002
+  ε_vol  (supplied historical value) = 0.0006
 
-  ε_C-iso (this work, SU(3) NLO):
+  ε_C-iso (assumed transfer scenario):
     xi=  1: ε_C-iso = 0.08237  ε_total = 0.08237  (C-iso dominates)
     xi=  2: ε_C-iso = 0.06045  ε_total = 0.06046  (C-iso dominates)
     xi=  4: ε_C-iso = 0.03168  ε_total = 0.03169  (C-iso dominates)
@@ -98,9 +99,9 @@ PATH C: Total error budget on Hamilton-limit <P>_KS
   → ε_total cannot reach ε_witness with current stat+vol; need to tighten those first.
 
 ======================================================================
-CLOSURE SUMMARY
+CONDITIONAL DIAGNOSTIC SUMMARY
 ======================================================================
-Path A (SU(3) NLO analytic):
+Path A (supplied SU(3) NLO hypothesis):
   rel_shift_SU(3)(s_t) = (7/12) s_t + O(s_t^2) ≈ 0.5833 s_t
   vs SU(2) proxy used in PR #685: rel_shift = (1/4) s_t = 0.25 s_t
   Ratio SU(3)/SU(2) = 7/3 ≈ 2.33  (C-iso is LARGER than prior estimate)
@@ -111,13 +112,13 @@ Path B (absolute shift on <P>_KS = 0.441):
   xi= 32: |Δ<P>| = 0.00402 (0.911% relative)
   xi= 64: |Δ<P>| = 0.00201 (0.456% relative)
 
-Path C (total error budget):
+Path C (supplied-scenario error arithmetic):
   xi=  4: ε_total = 0.03169  (C-iso dominates)
   xi= 16: ε_total = 0.00805  (C-iso dominates)
   xi= 32: ε_total = 0.00407  (C-iso dominates)
   xi= 64: ε_total = 0.00211  (C-iso dominates)
 
-Wall time: 0.1 s
+Wall time: 0.2 s
 Saved: outputs/action_first_principles_2026_05_08/c_iso_su3_nlo_closure/results_mode-all.json
 
 ----- stderr -----

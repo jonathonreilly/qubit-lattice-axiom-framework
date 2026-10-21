@@ -1,5 +1,8 @@
 # Higgs / Vacuum Authority
 
+**Type:** open_gate
+**Current scope:** The displayed route comparison has an unresolved discrepancy and no demonstrated common error budget. This metadata does not certify the inherited Higgs derivation or physical matching claims.
+
 **Date:** 2026-04-17
 **Status:** derived quantitative lane on the current package
 **Primary runner:** `scripts/frontier_higgs_mass_full_3loop.py` ([scripts/frontier_higgs_mass_full_3loop.py](../scripts/frontier_higgs_mass_full_3loop.py))

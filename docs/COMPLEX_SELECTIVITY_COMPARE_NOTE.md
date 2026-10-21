@@ -49,7 +49,7 @@ below.
 - [`scripts/COMPLEX_SELECTIVITY_COMPARE.py`](../scripts/COMPLEX_SELECTIVITY_COMPARE.py)
 - [`logs/2026-04-06-complex-selectivity-compare.txt`](../logs/2026-04-06-complex-selectivity-compare.txt)
 - retained family cards:
-  - [`archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md`](../archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md)
+  - `archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md` (historical provenance only; excluded original-grown row is not an active premise)
   - [`docs/SECOND_GROWN_FAMILY_COMPLEX_NOTE.md`](SECOND_GROWN_FAMILY_COMPLEX_NOTE.md)
   - [`docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md`](ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md)
   - [`docs/THIRD_GROWN_FAMILY_SIGN_NOTE.md`](THIRD_GROWN_FAMILY_SIGN_NOTE.md)
@@ -120,7 +120,7 @@ edges are visible.
 | Wired one-hop dep — alt sign | [`docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md`](ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md) | `retained_bounded` | supplies the alt-family signed-source positive |
 | Wired one-hop dep — third family | [`docs/THIRD_GROWN_FAMILY_SIGN_NOTE.md`](THIRD_GROWN_FAMILY_SIGN_NOTE.md) | `retained_bounded` | supplies the third-family signed-source basin |
 | Wired one-hop dep — fourth family | [`docs/FOURTH_FAMILY_QUADRANT_NOTE.md`](FOURTH_FAMILY_QUADRANT_NOTE.md) | `retained_bounded` | supplies the fourth-family signed-source basin |
-| Unwired authority — original grown basin signed-source | [`archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md`](../archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md) | not wired as one-hop edge (archived under `archive_unlanded/`); cited only in `source_notes` of the runner row | needed for the original grown-basin signed-source row |
+| Unwired authority — original grown basin signed-source | `archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md` (historical provenance only; excluded original-grown row is not an active premise) | not wired as one-hop edge (archived under `archive_unlanded/`); cited only in `source_notes` of the runner row | needed for the original grown-basin signed-source row |
 | Unwired authority — original grown complex companion | [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md) | not wired as one-hop edge | needed for the original grown-basin complex-action row (`gamma=0 -> AWAY`) |
 | Unwired authority — alt complex failure | [`docs/ALT_CONNECTIVITY_FAMILY_COMPLEX_FAILURE_NOTE.md`](ALT_CONNECTIVITY_FAMILY_COMPLEX_FAILURE_NOTE.md) | not wired as one-hop edge from this row | needed for the alt-family `clean boundary failure` row |
 | Unwired authority — second-family boundary | [`docs/SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md`](SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md) | not wired as one-hop edge | needed for the second-family `tighter AWAY-at-gamma=0 boundary` |

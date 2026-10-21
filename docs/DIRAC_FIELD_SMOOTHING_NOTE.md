@@ -1,5 +1,8 @@
 # Dirac Field Smoothing Note — Finite m₀ = 0.10 Runner Output (Binding)
 
+**Type:** bounded_theorem
+**Current scope:** Finite supplied m0=0.10 scan output only; nearby-mass robustness and physical readout remain outside this claim.
+
 Date: 2026-04-10 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: binding scope is the finite m₀ = 0.10 runner output only; nearby-mass robustness and physical-readout interpretation split out)
 
 ## Scope narrowing (2026-05-17 audited_conditional repair)

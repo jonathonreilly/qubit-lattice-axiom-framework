@@ -1,5 +1,8 @@
 # Fixed Field Grown Transfer Scout Note
 
+**Type:** bounded_theorem
+**Current scope:** Supplied single-seed grown-row numerical comparison and cancellation checks; no general geometry or physical electromagnetic theorem.
+
 **Date:** 2026-04-06  
 **Status:** proposed_retained narrow grown-geometry signed-source positive
 

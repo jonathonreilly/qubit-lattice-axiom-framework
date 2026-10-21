@@ -277,9 +277,9 @@
       "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
     },
     "scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py": {
-      "source_sha256": "539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091",
+      "source_sha256": "06fd8d713acae2a1ce01f36bed892113f839bb2f41f6fc2f143a05c4c9a9fcd8",
       "timeout_sec": 120,
-      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science."
+      "reason": "Historical/provenance affected-change packaging cap; no inherited physics certification. Source changes invalidate this declaration."
     },
     "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py": {
       "source_sha256": "3b9111df0ce6dc81dfd1002cfb5097e84f7c3bb68e593d21530b68a08c9d44ab",
@@ -445,6 +445,26 @@
       "source_sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
       "timeout_sec": 300,
       "reason": "Review cap for unchanged Regge geometry helper imported by the six-PR gravity unit; enclosing primary caps bound actual execution. Source-hash changes invalidate this declaration; no audit runtime policy change."
+    },
+    "scripts/COMPLEX_SELECTIVITY_COMPARE.py": {
+      "source_sha256": "ed6624c31b25f91539a920124c32f39440314be3d9fca4c45539cffb44abd4cb",
+      "timeout_sec": 120,
+      "reason": "Historical/provenance affected-change packaging cap; no inherited physics certification. Source changes invalidate this declaration."
+    },
+    "scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py": {
+      "source_sha256": "324f73e90284c7c39141090b4a321dc45160a9c40841d34a0824925b2ddb81fe",
+      "timeout_sec": 300,
+      "reason": "Historical/provenance affected-change packaging cap; no inherited physics certification. Source changes invalidate this declaration."
+    },
+    "scripts/fixed_field_grown_transfer_scout.py": {
+      "source_sha256": "3187c78a5095e0a73958c020c267755f1bad9567d16ab177ff5ffe70ab54bbe9",
+      "timeout_sec": 300,
+      "reason": "Historical/provenance affected-change packaging cap; no inherited physics certification. Source changes invalidate this declaration."
+    },
+    "scripts/frontier_higgs_mass_full_3loop.py": {
+      "source_sha256": "564fb6f991105b31195d2d0120f3a36112d833dc8c0887e2a26bdc631aee5868",
+      "timeout_sec": 300,
+      "reason": "Historical/provenance affected-change packaging cap; no inherited physics certification. Source changes invalidate this declaration."
     }
   }
 }

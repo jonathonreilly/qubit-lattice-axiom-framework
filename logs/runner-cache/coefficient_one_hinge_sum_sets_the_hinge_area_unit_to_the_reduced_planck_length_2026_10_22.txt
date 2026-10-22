@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/coefficient_one_hinge_sum_sets_the_hinge_area_unit_to_the_reduced_planck_length_2026_10_22.py
+runner_sha256: 719b9973f9683adf8936f109dc1b2e9e5968b33e31635e4dc55141afed75c3f9
+input_fingerprint_sha256: 593e0ee5cbd5fae84ecbd7ca87b01b8da5a7d3208282e4872a48839ac122d799
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.81
+status: ok
+----- stdout -----
+== A. the coefficient of the hinge sum
+[PASS] A1 [T] hinge identity: on 20 random convex polyhedra the vertex deficits sum to 4 pi = (1/2) int sqrt(g) R, so int sqrt(g) R = 2 sum_h A_h delta_h (the codim-2 cone; coupling-G (PR #9856) found the same 1/2 per cell on Kuhn and coned-D4 4D carriers) | max |sum delta - 4 pi| = 1.2e-14
+[PASS] A2 [T] coefficient one in the total phase <=> u^2 = 8 pi G hbar / c^3: the hinge area unit u is the reduced Planck length sqrt(8 pi) l_P = 5.013 l_P, whatever lattice length u is | u = 2*sqrt(2)*sqrt(pi)*sqrt(G)*sqrt(hbar)
+[PASS] A3 [T] scaling: areas go as b^2 and dihedral angles (deficits) are scale-free, so block edges of b_e cells have stiffness Lambda_b = b_e^2 Lambda_cell with the same G: G fixes u, not the block (edge-block C1) | area ratio 49.000000, dihedral change 1.7e-15
+[PASS] A4 [T] the lapse clause and the dressed-cone clauses are unit-free (N -> N/lambda, gamma^ii -> lambda^2 gamma^ii): nothing in CL-1 fixes u; only CL-3's "fixed proper units" does, and the text never names the unit
+== B. the two readings (l_P = 1.616e-35 m, M_P = 1.2209e19 GeV)
+   A: u = site spacing; site 5.013 l_P, rung L 10.027 l_P (1.62e-34 m), Lambda_cell = L^2/(8 pi G hbar) = 4, hbar c/L = 1.218e+18 GeV
+   B: u = cell rung L; site 2.507 l_P, rung L 5.013 l_P (8.10e-35 m), Lambda_cell = L^2/(8 pi G hbar) = 1, hbar c/L = 2.435e+18 GeV
+[PASS] B1 [B] reading A (u = site, register "Lambda ~ 4", volume-mode, tick-law, predictions) and reading B (u = rung, the brief's l_rung = sqrt(8 pi) l_P) differ by exactly 2 in L and 4 in Lambda_cell; hbar c/L under B is the reduced Planck mass the particle probes already call the cell scale
+== C. register numbers that move (A -> B) against measurement
+   A: one-cell spread 0.20 L; b_e min weak 5.0, J0740 core 13.5, causal max 38.2
+   B: one-cell spread 0.40 L; b_e min weak 10.0, J0740 core 27.0, causal max 76.4
+[PASS] C1 [E] graviton-mass margin (22 zero-point spreads to the floor): b_e >= 5.0 / 13.5 / 38 under A becomes 10.0 / 27 / 76 under B; the register's "10 to 16 cells" is right only for weak fields under B
+[PASS] C2 [E] register sites per cell at the weak-field minimum: A b_e 6 (s 158) 39/cell; B b_e 10 (s 132) 7/cell, b_e 27 (J0740) 0.9/cell: the larger block under B is cheaper per cell (cost ~ 1/b_e^2), so B costs no fit | A 39.0, B 7.1, B(J0740) 0.91 sites/cell
+[PASS] C3 [E] photon decay to e+e- (copy-mass c6 K^2, K per cell): threshold 78 / 110 PeV under A becomes 110 / 156 PeV under B (x sqrt 2); LHAASO's 1.4 PeV tests neither | A 78/110, B 110/156 PeV
+[PASS] C4 [E] v^2 over the cell scale: 2.5e-5 eV (register) is the B value (A would give 5.0e-5); vs m3 = 0.05 eV the seesaw shortfall stays > 100 either way | A 4.98e-05 eV, B 2.49e-05 eV
+[PASS] C5 [E] nucleon decay at the cell scale: register 5e42 yr is the B value (proton-theta used M_P/sqrt(8 pi)); A's cell would give 3e41 yr; Super-K 2.4e34 yr is passed by > 1e7 either way | A 3.3e+41, B 5.3e+42 yr
+[PASS] C6 [E] |c_g - 1| ~ 0.1 (k L)^2 at 100 Hz: A 1.2e-80, B 2.9e-81 (register 4e-81); GW170817 allows 1e-15 | A 1.2e-80, B 2.9e-81
+[PASS] C7 [E] free-fall spread (mu/eps)^2/4, mu = m x tick ~ L: 2e-33 (A) -> 5e-34 (B) vs MICROSCOPE 3e-15
+[PASS] C8 [E] single-cell classical spread 0.18 (A) -> 0.36 (B): edges are classical only on blocks either way; Hubble patch at recombination (independent/correlated) 9e-85/3e-56 (A) -> 6e-85/1e-56 (B) vs CMB 1e-5 | A 0.18: 9e-85/3e-56; B 0.36: 6e-85/1e-56
+[PASS] C9 [E] splits keep up for H below 0.22/tick: H_max 1.0 (A) -> 2.0 (B) inverse Planck times at eps0 0.0375, >1e4 above the r < 0.036 inflation scale either way | A 1.01, B 2.03 t_P^-1
+== D. probe census (lengths read from runners, in units of sqrt(8 pi) l_P)
+   cube = 2 sqrt(8 pi) l_P (A): 16; length sqrt(8 pi) l_P as cell or site (B-cell / A-site, ambiguous): 15; coarse 4: 2
+[PASS] D1 [B] the probes split, and the sqrt(8 pi) l_P length is called a site in some runners (cosmology, lambda-split, dark-matter: tick 2a/sqrt3) and a cell in others (qcrush, edge-source, proton-theta): no single convention is in use
+supplied: the radian (phase = deficit in radians), the codim-2 cone identity in 4D (cited from coupling-G), s1 = 0.2 at Lambda 4 and the 22-sigma margin (edge-block), c6 (links-metric), 5.3e42 yr (proton-theta).
+elapsed 0.1 s
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

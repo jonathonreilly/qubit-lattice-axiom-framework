@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/edge_registers_advance_once_per_block_half_tick_and_the_cube_tick_has_a_local_quasi_energy_density_2026_10_22.py
+runner_sha256: 08c6dd7088a99d1b2d06ac1a9c398ff1fff518b058e0285f497d460038d43c78
+input_fingerprint_sha256: 6fc0d02e0cd8ccc8919a93741080f1a54d43bdcb6c1decbfd0e8a6e67dc12d1d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.10
+status: ok
+----- stdout -----
+== A. edge cadence
+[PASS] [T] A1 lapse rule read at the block rung gives N_B = b_e N for every metric (b_e 2..12, max rel err 3.3e-16): one block half-tick has the proper time of b_e cube half-ticks, the same fraction sin(eps0) of the block's light crossing
+[PASS] [T] A2 b_e=3: block half-tick (b_e cube half-ticks controlled on the held register, then the edge unitary) is unitary (err 4e-16); cube layers commute with every register projector (err 0e+00), so register odds are unchanged between edge updates (max 3e-17) and change only at them (0.02)
+[PASS] [T] A2 b_e=4: block half-tick (b_e cube half-ticks controlled on the held register, then the edge unitary) is unitary (err 2e-15); cube layers commute with every register projector (err 0e+00), so register odds are unchanged between edge updates (max 3e-17) and change only at them (0.02)
+[PASS] [T] A3 2D toy: for register lengths l_x = 0.5..2 (l_y = 1) the proper cone speed is the same on x, y and the diagonal (spread 2.5e-06) and the proper rest energy is m (spread 1.0e-14); Omega(K) = sqrt(m^2 + c^2 K^2) to 1.6e-04: matter's effective metric is diag(-N^2, l_x^2, l_y^2), the block's
+[PASS] [T] A4 kickback: T = 37 ticks of the edge-controlled cube tick give the register branch n the phase T m N_n (err 9e-16), the rest-phase part of the total phase; an edge tick that also applies the matter phase counts it twice
+[PASS] [D] A4b the filled band's kickback changes by 7.5e-03 per cell per tick across the register range, 6.0e-02 on the 8-cell chain, vs 2.8e-02 for one rest particle: it grows with volume, so the vacuum share needs a counter-phase on the edges
+[PASS] [D] A5 strict cone of matter + held registers + brickwork edge hops: 1.53 (b_e 4), 1.52 (b_e 8) sites per cube half-tick, finite and b_e-independent; the dressed cone (~0.100 sites per half-tick at eps 0.1) lies inside: causal
+== B. per-cube quasi-energy
+[PASS] [T] B1 local density: q_c = own term + equal shares of the nested commutators of the cubes it touches; sum_c q_c = H_F^(3) (err 3e-17); non-touching cube terms commute (max 0e+00), so q_c lives on its cube and its neighbours
+[PASS] [D] B2 L=10 interacting chain (V=1): |H_F - H^(n)| ~ eps^{2.00,3.00,4.02} and per-tick change |U'H^(n)U - H^(n)| ~ eps^{2.99,4.01,4.99} for n = 1,2,3: order n misses H_F by eps^(n+1) and changes by eps^(n+2) per tick, without accumulating
+[PASS] [D] B3 600 ticks: sum_c <q_c> oscillates by 1.3e-05 with no drift (7.9e-07) while single cubes change by up to 0.10: the total is kept, each cube's mean moves by currents
+[PASS] [D] B4 continuity: J = sum_(c<=4)(U'q_cU - q_c) acts at the cut (0.01) and only at 5.2e-06 at the chain ends: d<q_c>/tick = -(face currents), so zero mean in every cube is kept iff the mean face currents vanish
+[PASS] [D] B5 exact i log U_F (L=8 full Fock): Pauli weight at span 3..6 relative to span 2: eps 0.1 3e-03,4e-06,1e-08,2e-11; eps 0.25 2e-02,1e-04,2e-06,2e-08: quasi-local, faster decay at smaller step
+[PASS] [T] B6 free tick: one-particle i log U is exactly conserved (no heating) and local, |h(x,x+r)| ~ exp(-2.6 r) while the bands stay below pi (band max 2 eps0 < pi)
+[PASS] [D] B7 diagonal-ensemble absorbed fraction of H^(2) (L=10, N=5) at eps 0.1/0.3/0.6/1.2: V=1 4.1e-06/4.7e-04/1.3e-02/7.6e-01; free 6.9e-07/7.0e-05/1.9e-03/7.8e-02: small at small step (finite chain cannot show the exponent)
+[PASS] [D] B8 1D walk: with the step at its cone value (uncalibrated, c^2 is off by 6.2e-02 = (mu/2eps)^2) the mean quasi-energy current E v_g equals c^2 K (the momentum) to 2.8e-06 at Ka = 0.05 and 6.2e-03 at 0.2 (vanishing as Ka -> 0): face currents are the momentum density, so the momentum constraint on the mean keeps zero mean per cube
+[PASS] [D] B9 split passing at fixed momentum, both rungs cone-calibrated: parent/child proper quasi-energy mismatch 7.8e-07, 5.9e-06, 1.5e-04 at pa 0.05/0.1/0.2 (slope 3.79): zero mean maps to zero mean only up to ~(pa)^4 E per passed quantum
+[PASS] [T] B10 a flat tetrahedron cut into 8 children keeps its volume (err 0e+00); new hinges inside a flat parent or on a shared face have zero deficit and split hinges keep theirs, so the Regge and Lambda terms map exactly
+== C. heating time vs the age (Planck units, cell l_c = 1 l_P supplied)
+   eps0 0.0075: ticks in the age 1.9e+63; need ln(1/Gamma) > 453 (one cube outliving the age: > 146); wrap needs 210 pairs, vertex amplitude <= eps0 gives 2055; exp(-kappa/eps0) needs kappa > 3.4
+   eps0 0.02: ticks in the age 7.0e+62; need ln(1/Gamma) > 450 (one cube outliving the age: > 145); wrap needs 79 pairs, vertex amplitude <= eps0 gives 618; exp(-kappa/eps0) needs kappa > 9.0
+   eps0 0.0375: ticks in the age 3.7e+62; need ln(1/Gamma) > 448 (one cube outliving the age: > 144); wrap needs 42 pairs, vertex amplitude <= eps0 gives 276; exp(-kappa/eps0) needs kappa > 16.8
+[PASS] [E] C1 heating: the free tick never heats; interacting wrap processes need ceil(pi/2eps0) pairs; with vertex amplitude <= eps0 the injection bound holds for eps0 below ~0.026 (inside the register's 0.0075-0.0375 window, cutting its top)
+theorems: A1-A4, B1, B6, B10; diagnostics: A4b, A5, B2-B5, B7-B9; estimates: C1
+supplied: 2D plaquette phases, toy register lengths, toy eps 0.1, V = 1 interaction stand-in, cell = l_P, 1e-5 rho_crit bound
+elapsed_seconds 1.8
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

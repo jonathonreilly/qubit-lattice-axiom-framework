@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/a_cube_tick_read_from_its_edge_lengths_and_duration_in_weak_static_fields_2026_10_21.py
+runner_sha256: c5aabe5effd62a47ea0bb57074dc507fdc5675d9002e68a51be83d267b42cc44
+input_fingerprint_sha256: 49c5bd27dce873de38291ead6e83fb5c3f961510fdf5c8a70d2f279abb45fefa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.21
+status: ok
+----- stdout -----
+== A. rule algebra (exact)
+[PASS] A1 theorem: sqrt3 x (axis parts of W) are Clifford generators, W = their sum/sqrt3; so R(f) is a traceless reflection for every edge set and each half-tick is unitary with det 1  7.3e-15
+[PASS] A2 theorem: all 8 bands of the box tick obey cos w = A S_f(K) + (cos2eps + cos mu)/2, S_f = sum f_i^2 cos K_i/sum f^2; at K = 0 every phase is +-mu for any edges, so a clock at rest runs at m x proper time  bands 3.7e-15, rest 1.0e-15
+[PASS] A3 cone reading: with sin eps = sqrt3 tau rms(1/L_i) the massless cone is the null ellipsoid v_i = tau/L_i of the edges in every direction (the reading is forced: v_i is exactly (f_i/f_rms) sin(eps)/sqrt3)  max rel dev 3.9e-08 at |K| = 1e-3
+[PASS] A4 covariance: each of the 24 proper cube rotations is a unitary on the 8 corners that fixes W and maps R(f) to R(rotated f): the reading rotates with the edges  24 rotations, 3.1e-15
+[PASS] A5 theorem (limit of the box reading): w(K) = w(-K) and the cone has no K_i K_j cross terms, so a cube read from its axis lengths and duration cannot carry a shift (tilted tick edges) or a shear between axes
+[PASS] A6 Weyl blindness: a massless species evolves identically under (N, L) and Omega(z)(N, L), a massive one does not; null geodesics are conformally invariant, so this is the right invariance for light  massless 4.7e-16, massive 1.1e-01 after 300 ticks
+== B. weak static field: N = 1 + Phi, L = 1 - gamma Phi, Phi = g z (eps0 = 0.3, g = 2e-5, cone reading)
+[PASS] B1 free fall: a slow packet falls at a = -c_m^2 dPhi/dz for gamma = 0 and 1 (1/sigma^2-extrapolated packets; c_m^2 = rest energy/inertial mass of the band): the lapse alone drives the fall  max |a/(c_m^2 g) - 1| = 2.8e-04
+[PASS] B2 universality: species differ only through c_m^2(eps, mu)/c_0^2 = 1 + mu^2 (1/6 - 1/(4 sin^2 eps)) + O(mu^4), a lattice term in (mu/eps)^2  eta(mu .03 vs .12, eps .3): packets 0.0365, band 0.0365, leading formula 0.0364
+[PASS] B3 light: a massless packet moving along x is pulled across by (1 + gamma) c^2 dPhi/dz (cone reading): twice the Newtonian pull for gamma = 1. The hop-angle reading multiplies it by eps cot eps  cone: 0.99980, 1.99982 (gamma 0, 1); angle/cone 0.96981 vs eps cot eps 0.96982
+[PASS] B4 a photon climbing a lapse step keeps its quasi-energy (static tick), so its frequency over the local clock rate (m N, A2) falls by N_low/N_high: the redshift is exact for clocks at rest; its wavenumber and exit speed follow the band  transmitted 1.000000; k2 0.36145 vs 0.36146; speed 0.18560 vs 0.18561
+== C. sea response under the reading
+[PASS] C1 the massless sea responds to the cone ratio F = tau/L at every step: dPhi/dF = -9.55 c0 (eps -> 0) to -16.0 c0 (eps -> pi/2) per block per tick, traceless by Weyl blindness; the zero at pi/2 exists only for the hop-angle reading  eps 0.04: cone -9.55, angle -9.5495, eps 0.80: cone -11.35, angle -8.8165, eps 1.57: cone -16.03, angle -0.0025
+[PASS] C2 theorem: for g = e^{2s} eta, sqrt(-g) R = -6 e^{2s}(s'' + s'^2) = total derivative + 6 e^{2s} s'^2, so the Einstein-Hilbert action depends on the conformal factor; a sea that sees only tau/L cannot induce it, and any q^2 term it does induce breaks the covariance relating tensor and Newtonian couplings  residual 0
+[PASS] C3 rung arithmetic (induced-response R2_TT = 0.00483 c0 per Dirac copy, Regge 0.5 c0 at the site rung): G ~ a_rung^2 and the sea lives on sites, so the sea/Regge ratio grows as 4^n; no CL-5 rung lets the bare term dominate  rung 0,1,2: 0.23, 0.93, 3.71 vs Hulse-Taylor 0.002
+== D. uniform edge growth at fixed tick duration, then a 2^3 or 2^4 split (eps0 = 0.3)
+[PASS] D1 edges growing at fixed tau: K is conserved, the photon keeps its band and its quasi-energy falls as 1/L while the rest phase m tau stays: photons redshift against atoms by L_obs/L_emit (by Weyl blindness, for any lapse schedule)  kept 0.9999999, 0.9999979; ratio 0.49994 (|K| .37), 0.4999987 (|K| .05); rest 0.1000 -> 0.1000
+[PASS] D2 a 2^3 split at fixed tau resets eps: frequency stays continuous but ~0.06 eps^2 of every light mode, at all K, flips band; a 2^4 split (ticks halved too) keeps eps, flips only O(K^2), and photon and atom phases per tick halve together. A fixed-step reading halves the photon alone  2^3: ratio 0.98850, extra flip/eps^2 0.061, 0.055 (eps .3, .1); 2^4: ratio 0.499999, flip/K^2 0.043, 0.042; fixed step 0.5010
+[PASS] D3 the matter phase per tick is -E tau to O(eps^2): dw/dtau = proper energy, which is the deposit E(1/2)d(l^2) and the radiation energy E ~ 1/L that CL-5 work supplied  max rel dev 9.9e-05 (eps = 0.087)
+== E. ESTIMATES with measured numbers (not theorems)
+   Pound-Rebka: N_low/N_high - 1 = gh/c^2 = 2.455e-15 (exact at rest, A2/B4); measured/predicted 0.9990(76); GP-A 1.4e-4
+   deflection at the limb (1+gamma)/2 x 1.751 arcsec; cone reading adds nothing; hop-angle reading gives gamma_light - 1 = -2eps^2/3, so Cassini (2.1 +- 2.3)e-5 needs eps < 0.0061
+   lattice eta ~ mu^2/(4 sin^2 eps) for electron: 1.5e-44 (independent of eps); MICROSCOPE |eta| < ~3e-15
+   lattice eta ~ mu^2/(4 sin^2 eps) for top: 1.7e-33 (independent of eps); MICROSCOPE |eta| < ~3e-15
+   lattice eta ~ mu^2/(4 sin^2 eps) for 1 GeV binding: 5.6e-38 (independent of eps); MICROSCOPE |eta| < ~3e-15
+   missing shift: g_0i = -4 U w in the lattice frame is unseen, i.e. alpha1 = -8, alpha2 = -1 vs LLR 1e-4, pulsars 1.6e-9
+[PASS] E1 arithmetic: Pound-Rebka 2.46e-15; lattice eta for the top quark below 1e-30
+supplied: CL-2 hop and its phases, the box reading (axis lengths + duration), eps0, masses, packets, fields, split map,
+  the sea branch, induced-response R2_TT, a = sqrt(8 pi) l_P, all measured numbers.
+elapsed 3 s
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/split_epoch_step_in_h_is_geometric_of_order_hl_squared_with_zero_vacuum_jump_2026_10_22.py
+runner_sha256: 00e43fbd1606de701dfc5eefbd80eebceb4c34c8b76734261fd1b06370a4d19a
+input_fingerprint_sha256: 635dad586e6eeb3c2851282713a98b6bfb694be82308af8a4b087f466888f3fc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.38
+status: ok
+----- stdout -----
+== A. counting at a split (exact)
+[PASS] A1 THEOREM (CL-3 count): Lambda per proper 4-volume summed over the 8 children x 2 child ticks equals the parent frustum's exactly, so the vacuum energy density does not jump at a split (a per-cell-per-tick count would jump x1/16)  Lambda*(sum children - parent) = 0; child cell-ticks per parent 16
+[PASS] A2 THEOREM (register arithmetic): trigger at 4s, children at parent - s: the edge halves exactly for every s, so the step is set by the factor 2, not by 1/s; between splits the edge moves in steps of 2^(1/s)  l(4s)/l(3s) = 2
+[PASS] A3 THEOREM (flat-edge band at K = 0): cos w = cos mu, so the rest phase per tick is mu; mu and the proper tick both scale with the edge, so a split keeps every rest energy; matter changes only through state mismatch (O(K^2), O(mu^2))  cos w(K=0) = cos(mu); rest energy l-free: 3*kappa
+== B. the step in H on the hinge carrier (triggered split: X = 8 pi G rho/3 continuous, Lambda kept)
+[PASS] B1 THEOREM (series): A(u) = u^2 + 2u^4 + O(u^6) with A(u) = X l^2/4, u = H l/2, so H^2 = X - X^2 l^2/2: delta ln H = -(H l)^2/4 at leading order  A = 2*u**4 + u**2
+[PASS] B2 THEOREM + exact check: at a split (l: 2L -> L, X continuous) ln H jumps by +(3/4)(H L)^2; the vacuum density does not move (A1), the jump is geometric  jump/(HL)^2: HL 0.001: 0.74999891; HL 0.01: 0.74989064; HL 5.93e-61: 0.75
+   today: (H0 L)^2 = 3.516e-121; jump in ln H = 2.64e-121 at z = 0, 5.41e-120 at z = 3; dH^2/H^2 sawtooth -(1/2)(H l)^2
+== C. synchronous or smeared
+[PASS] C1 THEOREM (trigger at a fixed local edge; spectral-tilt D1): splits fire at a fixed local edge, so a spread of split TIMES does not smooth the step in 1+z (the edge ratio); only the neighbour wait smears the firing edge  structural
+[PASS] C2 finite diagnostic (independent Born offsets per edge, sd sigma in ln l; trigger = own 18-edge mean and 36 neighbour face edges full): the ripple fundamental keeps |F| of its size; the wall margin (>= 22 spreads in ln 2 Delta, Delta = 1) gives sigma <= 0.0315: synchronous to ~1% (the mean lag is a phase shift); the one-cell spread 0.2 (excluded) leaves ~0.6  sigma 0.0315: |F| 0.9881 (gauss 0.9881), phase lag 0.604 rad; sigma 0.2000: |F| 0.6285 (gauss 0.6176), phase lag -2.509 rad
+   supplied Poisson stepping (spectral-tilt B3, coupled var 1.8 ln2^2/(ms), m 18, s >= 135) if read as a firing-edge spread: |F| = 0.985
+== D. H(z), w(z) for 0 < z < 3 and the DESI comparison (per unit (H0 L)^2, then x 3.52e-121)
+[PASS] D1 THEOREM (period): splits at 1 + z_k = 2^k (1 + z_0), period ln 2 in ln(1+z); exactly 2 steps in 0 < z <= 3 for every phase (ln 4 = 2 ln 2); 10 or 11 since recombination; the phase z_0 is not fixed by any law  z<=3: [2]; z*: 10 for 0.90, 11 for 0.10
+[PASS] D2 THEOREM: between splits w + 1 = (H l)^2 (1 + 2 dlnH/dlna)/(3 Omega_L(0)) x E^2 (desi-de form at z = 0); at each split a phantom spike, integral of (w+1) dln a = -(H L)^2 E^2/(2 Omega_L)  w+1 per (H0L)^2 at z 0/0.5/1/2 (phase .37): 0.0565 -3.49 -10.9 -209
+[PASS] D3 finite diagnostic: CPL fit of the inferred rho_DE(z) on 0 < z < 3, all 16 phases: |w0 + 1|, |wa| <= C (H0 L)^2  C = 1274; w0+1 in [122, 497], wa in [-1274, -369] per (H0L)^2, wa/(1+w0) in [-3.03, -2.55]; times (H0L)^2: |dw| <= 4.5e-118
+[PASS] D4 finite diagnostic (DESI-like 1% BAO at the DR2 redshifts + theta*, r_d held; fit w0, wa, h; 8 phases): the hinge sawtooth projects to |dw| <= C (H0 L)^2  C = 2.7e+08 with the sawtooth out to z* (theta* lever, (H l)^2 grows as E^2), 195 from z < 3 alone; |dw| <= 9.6e-113: 1e+110 below a 0.01 sensitivity
+[PASS] D5 the DESI hint (w0, wa) = (-0.75, -0.86): the sign pattern (w0 > -1, wa < 0) appears for 16 of 16 phases, but the size needs (H0 l)^2 ~ 0.25/C, an edge ~ 0.014 of the Hubble length: the step cannot mimic DESI  needed (H0 l)^2 ~ 2.0e-04 vs 3.5e-121
+   log-periodic step sources (fraction of H^2 per split, z = 0 / z = 3):
+     hinge jump in ln H at z = 0..3 (B2, THEOREM)                                     2.6e-121 5.4e-120
+     dark-constant kick (H L)^2/8 per split if zero mean not kept (register; cited)   4.4e-122 9.0e-121
+     massive-matter split energy change 0.05 mu^2, protons (desi-de ESTIMATE, cited)   9.2e-39  3.0e-38
+     radiation 0.04 K^2 per split, CMB photons (split-junction; cited)                 1.1e-66  5.1e-65
+[PASS] D6 ESTIMATE: the largest known-content step is the proton split-energy ceiling ~1e-38 per split, the law-level geometric step ~1e-121; every source is >1e30 below a 0.01 w-sensitivity  max 9.2e-39
+== E. the tensor ripple (discrete ticks, vacuum-carrying splits; edge-seeds machinery, 1D axis modes)
+[PASS] E1 finite diagnostic (one octave, 128 log-spaced k; the octave repeats exactly, edge-seeds A3): the period-ln 2 fundamental of the frozen tensor spectrum is second order, |c1| <= 1.1 (H l_c)^2; the first-order structure (ptp ~1.5 H l_c) is a fast lattice oscillation at ~0.32/(H l_c) cycles per octave, amplitude ~0.4 H l_c  Hl 0.08: ptp 1.2e-01, c1/(Hl)^2 1.08, peak n*Hl 0.32, |c_peak|/Hl 0.50; Hl 0.04: ptp 5.9e-02, c1/(Hl)^2 0.79, peak n*Hl 0.32, |c_peak|/Hl 0.51; Hl 0.02: ptp 3.3e-02, c1/(Hl)^2 0.40, peak n*Hl 0.32, |c_peak|/Hl 0.45; Hl 0.01: ptp 1.6e-02, c1/(Hl)^2 0.83, peak n*Hl 0.33, |c_peak|/Hl 0.35
+[PASS] E2 ESTIMATE: in the laws' only de Sitter phase (today, P_t ~ 7e-122) the period-ln 2 ripple is ~4e-121 of P_t and the fast oscillation ~2e-61 at ~5e+59 cycles per octave (unresolvable); under a supplied H = 1e13 GeV inflation (not in the laws): 2e-11 and 2e-06 at 8e+04 cycles  absolute fundamental today ~3e-242
+supplied: frustum hinge carrier A(u); unit map L = sqrt(8 pi) l_P, edges in [L, 2L); H0 67.7, Om 0.31; independent Gaussian
+  edge offsets (C2); wall margin 22 spreads, Delta = 1; DESI-like 1% errors, r_d held; 1D axis tensor modes, sin eps0 = 0.3.
+elapsed 0.9 s
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

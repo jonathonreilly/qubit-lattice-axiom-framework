@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/frame_split_spin_family_tests_ruleset_b_2026_10_22.py
+runner_sha256: 0b69fa7234137929a649cdce3d1eff3c78b5dbf9e5fc4d6e387885520ace876e
+input_fingerprint_sha256: 614cd932ac3403204b957c7d13a147cab4c6a3276e749f66cc95cbee94d6ebed
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+name                              n  Kst KfU KfB chiral anomfree states
+C1+C3   qubit=1 mode, owned links  4    4   7  19 False  True     8
+C2+C3   ruleset B                  5    5  13  33 True   True     16
+C2xC3   tensor (level,axis)        6    6  25  55 False  True     32
+C1+C6   qubit=1 mode, 6 links      7    7  13  55 True   True     64
+C2+C6   6 oriented links           8    8  25  81 False  True     128
+C2+C3+C3 fwd/back blocks           8    8  43  99 False  True     128
+C1+C4   other split of 5           5    5   9  29 True   True     16
+C5      unsplit                    5    5   1  21 True   True     16
+PASS 1a chirality of the even half = n odd, for every split and the tensor
+PASS 1b tensor C2xC3 (6 modes) and oriented C2+C6 (8 modes) are vectorlike
+PASS 1c chiral + anomaly-free is NOT unique to C2+C3: C1+C4, C5, C1+C6 also pass
+PASS 1d splits of C5 are indistinguishable by consistency (same Cartan, rank 4)
+PASS 1e least frame information fixed (IM: privilege no frames) picks C5 unsplit, not C2+C3 | KfU: C5=1, C1+C4=9, C2+C3=13; vs Bogoliubov C2+C3 fixes 33 of 45
+PASS 1f least state bits (Kst=n) overall picks C1+C3 (vectorlike, 16 states)
+PASS 1g count: one qubit is Lambda(C^1) (dim 2); Lambda(C^2) has dim 4 = two qubits | C2 counts levels, C3 counts binary links: unequal rule
+PASS 1h 'owned forward links' is lopsided: stabiliser 6 of 48 in O_h, 3 bits of convention | orbit=8
+PASS 1i C2+C3 is the Kst minimum only after conditioning on: qubit=2 modes, 2 blocks, chirality | '+' vs 'x' cost one rule token each: rule text ties
+PASS 2a commutant of S(U2xU3) on Lambda(C^5): dim 14 = 10 sectors + M2 on {|0>,|full>} | null=14; only (0,0)~(3,2) are isomorphic (both Y=0 singlets)
+PASS 2b its only su(2) acts on 2 neutral singlet states and kills every charged sector: not spin
+PASS 2c rotation generators of the R2 reading lie inside s(u2+u3): rotations ARE frame changes
+R2-reading spin content: {'nu^c': [0.0], 'e^c': [0.0], 'Q': [0.5, 1.5], 'u^c': [1.0], 'd^c': [1.0], 'L': [0.5]}
+PASS 2d R2 reading contradicts measured spin-1/2 of all SM fermions (e^c spin 0, u^c spin 1)
+PASS 2e cell Clifford spin su(2) on C^8 x C^2 exists, j=1/2, commutes with the qubit SU(2)
+PASS 2f but it carries 4 tastes (commutant M4: dim 16): 2 spin x 4 taste x 2 qubit = 16 | commutant dim=16
+PASS 2g if link mode i moves along axis i, transport breaks colour SU(3) to its torus | |[H,l1]|=14.70, |[H,l3]|=0e+00
+PASS 3a the three record-axis 'families' span 32 states, not 96: same family, rotated basis | rank=32
+PASS 3b the axis change is an SU(2)_qubit frame change (gauge), so sectors are gauge-equivalent
+PASS 3c S3_L x S3_R invariants: dim 1 (democratic J); diagonal S3 invariants: dim 2 (aI + bJ)
+PASS 3d a cubic rotation permutes axes once for all fields (diagonal S3): generic rank 3 | masses=[0.223 0.223 0.32 ]; rank 1 needs a=0 (extra rule)
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

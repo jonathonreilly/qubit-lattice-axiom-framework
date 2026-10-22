@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/a_link_free_nu_c_on_the_coarsest_rung_misses_the_neutrino_mass_by_1e8_at_every_law_fixed_rung_and_the_corner_and_edge_routes_give_none_2026_10_22.py
+runner_sha256: 2d5e5e5218947aea7e4b4b97b719ddb7643f1b60a4d74f5f3506e42a56b89a35
+input_fingerprint_sha256: 29696538e4134c8fe0bc14a4350fea257fe3b13fae60a5f7141c52d64dd9074b
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+== A. exact structure
+[PASS] [T] A1 nested block-uniform readings on rungs a, b overlap by 2^(-3|a-b|/2) (16^3, rungs 0-4) | max dev 2.2e-16
+[PASS] [T] A2 the k = 0 Dirac coupling of a coarse nu^c is 2^(-3n/2) (one contact per coarse site), 2^(+3n/2) (every fine site) or 1 (domain-normalised): the overlap theorem gives suppression only under the one-contact reading; that contact's weight spreads evenly over the 2^(3n) folded fine momenta (shares sum to 1), the rest pairs with heavy fine bands | n=1: 0.3536/2.828/1.000, sum 1.000 over 8; n=2: 0.1250/8.000/1.000, sum 1.000 over 64
+[PASS] [T] A3 one family, no light Yukawa: rows (nu, N), columns (nu^c, N^c), [[0, y v], [mu, Delta]]: m_light * m_heavy = y v mu exactly, so m_light = y v mu/Delta (1 + O(.)) (200 random) | max rel dev 1.7e-13
+[PASS] [T] A4 three families: light Dirac masses = singular values of Y mu/Delta to O((mu/Delta)^2) (100 random, Delta = 1e4) | max rel dev 2.4e-07
+[PASS] [T] A5 a corner-only light-mirror pairing mu(K) = lam f(K), f(0) = 0: crystal momentum is conserved, so the K = 0 Dirac mass is exactly 0 and grows as k^2 (no rest mass); full size at R | m(0) = 0.0e+00, m(2k)/m(k) = 4.0000, 4.0000, m(R) = 0.030
+[PASS] [T] A6 edge registers carry no Y or B - L and here conserve nu^c number: with y_nu = 0 the edge-coupled evolution never mixes nu and nu^c (exact); with y_nu != 0 the induced coupling is y_nu <F> with F the flavour-blind edge dressing (linear in y_nu) | leak 0.0e+00, ratio 2.000000, <F> = 1.003
+== B. estimates against measurement
+   needed Dirac Yukawa y3 = sqrt2 m3/v = 2.878e-13 = 2^-41.66 (m1 -> 0, normal ordering)
+   needed rung n (y0 = 1): one-contact p=3/2: n=27.77, b_e=2^n=2.29e+08; covariant 8-site p=3/2: n=29.77, b_e=2^n=9.18e+08; coarse-update p=5/2: n=16.66, b_e=2^n=1.04e+05
+   b_e = 32 (budget, s1=0.4)  n=  5.00: m3 = 9.6e+08, 7.7e+09, 3.0e+07 eV
+   b_e = 40                   n=  5.32: m3 = 6.9e+08, 5.5e+09, 1.7e+07 eV
+   b_e = 45 (budget, s1=0.2)  n=  5.49: m3 = 5.8e+08, 4.6e+09, 1.3e+07 eV
+   floor-to-split 16          n=  4.00: m3 = 2.7e+09, 2.2e+10, 1.7e+08 eV
+   window 4+Delta, Delta=1    n=  5.00: m3 = 9.6e+08, 7.7e+09, 3.0e+07 eV
+   horizon c/H0 over L        n=200.08: m3 = 7.9e-80, 6.3e-79, 4.7e-140 eV
+[PASS] [E] B1 every law-available coarsest rung misses m3 by >= 1e8: b_e at its budget floor 32-45, the floor-to-split ratio and the window top (Delta = 1) give MeV-GeV Dirac masses (excluded by KATRIN 0.45 eV and Sigma); the horizon (n ~ 200) gives < 1e-70 eV (excluded by two splittings) | closest miss 10^8.4
+[PASS] [E] B2 fitting the rung: b_e = 2.3e8 (p=3/2), 9.3e8 (8-site), 1.1e5 (p=5/2), or Delta = 23.8 / 25.8 / 12.7; b_e and Delta are bounded only below, so these are allowed but FITTED | Delta=23.8, Delta=25.8, Delta=12.7
+[PASS] [E] B3 look-elsewhere: with an integer rung the target lies within x2 with P = 1 (p=3/2) and 0.80 (p=5/2), and b_e is continuous: a hit carries no evidence | P = 1.000, 0.800
+[PASS] [E] B4 one rung for all three nu^c (the rule's 'coarsest rung'): masses = scale x singular values of an O(1) matrix; r within x1.5 in 0.81% (normal) vs 0.003% (inverted-type); with Sigma < 0.064 0.10% (P(Sigma ok | r ok) = 12%); conditional median Sigma 0.073 eV, m1 0.0089 eV: the one-rung rule fixes no ratio
+[PASS] [E] B5 (b) the mirror seesaw needs mu/Delta = 2.9e-13 (y = 1): a cell-local mu and Delta give O(1), a corner-only mu gives 0 at rest (A5), a singlet mu cannot carry v (hypercharge), and mu ~ v^2/M gives 1.8e-05 eV; (c) edge dressing is universal and departs from the vacuum by (H0 L)^2 = 3.5e-121 today: no neutrino-specific suppression
+   Dirac routes: m_ee = 0 exactly (Z4); normal ordering at m1 = 0: m = (0, 0.0087, 0.0501) eV, Sigma = 0.0588 eV, m_beta ~ 0.0088 eV
+GATE: (a) b_e/Delta/integer n FITTED -> FAIL (1); parameter-free readings EXCLUDED (B1); (b) FAIL (supplied mu/Delta, or m = 0 at rest); (c) FAIL (universal, no suppression).
+supplied: contact reading (p, which sites), y0 ~ 1, b_e/Delta/rung, mu, Delta, form factor; measured: splittings, Sigma bound, v, H0, hbar c/L.
+elapsed_seconds 0.5
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

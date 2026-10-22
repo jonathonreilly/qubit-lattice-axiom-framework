@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/a_path_sum_flavour_rule_with_forced_rungs_is_family_blind_or_flat_and_its_structural_theta_bar_zeros_kill_cp_or_tie_down_to_up_2026_10_22.py
+runner_sha256: b397378f57e960bad54ab539879ec7c074d9c963e0a393761cf0f75b4b1ba685
+input_fingerprint_sha256: ef4698947bf315fdf51ade4bb2cab25973da30b19b1fe9e7c1c4f9b2e854623d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.34
+status: ok
+----- stdout -----
+Forced rungs for the path-sum family mass rule (seed 20261022)
+A. Exact structure
+PASS: A1 family-blind rungs (any function of charges) give M = G(b-a) x ones: rank 1, m3 = 3|G| | ranks {1} over 60 seeded (G, rungs); err 2.2e-16
+PASS: A2 factor-set rungs: r(u^c) = r(d^c) forces m_b/m_t = 1 exactly (both down senses) | measured m_b/m_t = 0.0169
+PASS: A3 same doublet and singlet rungs: M Hermitian, det real (60 seeded) | max 7.9e-18
+PASS: A4 sense-flipped down on up rungs: arg det(Mu Md) = 0 exactly, down spectrum = up spectrum | max sin 4.3e-17, spectrum diff 0.0e+00
+B. Candidate (a): copy-sign gap depth
+  copy sign s = i R1 R2 R3 R: s^2 = 1 (2.2e-16), tr s = 0.0e+00; built from the undressed hops alone
+PASS: B1 undressed copy sign: one gap depth for all species -> all rungs 0, M = ones | masses per sector (3, 0, 0): m_c/m_t = 0 (meas 3.7e-3), m_b/m_t = 1 (meas 0.0169)
+  dressed-cone depth (rungs, rounded) S=1/2: {'Q': 6, 'u': 4, 'd': 4, 'L': 4, 'e': 2, 'n': 0}; S=3/2: {'Q': 2, 'u': 2, 'd': 2, 'L': 2, 'e': 1, 'n': 0}; S=275: {'Q': 0, 'u': 0, 'd': 0, 'L': 0, 'e': 0, 'n': 0}
+PASS: B2 dressed-cone depths: charge-only (family-blind, rank 1) and r(u^c) = r(d^c) at every S | so m_b/m_t = 1 and m_s = m_c = m_u = m_d = 0 in every variant
+C. Candidate (b): rung set by the acting link factors (B_f rungs supplied)
+PASS: C1 all 1024 (B_3, B_2, B_Y) rung triples, coarsest- or finest-factor reading: rank 1, m_b = m_t | the gauge content cannot tell families apart; exceptions 0
+  a charge-magnitude reading (V^q, q_u = -4, q_d = +2 in Y/6 units) could split t from b,
+  but is still family-blind (rank 1): two massless families per sector, excluded
+D. Candidate (c): first split generation
+PASS: D1 zoom-3 family characters share one support -> one first generation -> rank 1 | supports {(True, True, True)}
+  octree (one 16 per rung): Q, u^c, d^c of family f all on rung f-1 = (0,1,2)
+  lam 1.0 h_d +1: m1/m3 0.334 m2/m3 0.642 |Vus| 6.55e-17 |Vcb| 1.69e-16 |Vub| 1.42e-16 J 2.7e-49 sin(tb) 0e+00
+  lam 1.0 h_d -1: m1/m3 0.334 m2/m3 0.642 |Vus| 8.03e-01 |Vcb| 5.94e-01 |Vub| 4.59e-01 J -4.0e-17 sin(tb) 0e+00
+  lam 3.0 h_d +1: m1/m3 0.348 m2/m3 0.522 |Vus| 1.69e-16 |Vcb| 3.38e-16 |Vub| 1.12e-16 J 6.3e-48 sin(tb) 0e+00
+  lam 3.0 h_d -1: m1/m3 0.348 m2/m3 0.522 |Vus| 4.40e-01 |Vcb| 8.90e-01 |Vub| 4.47e-01 J -1.5e-16 sin(tb) 0e+00
+PASS: D2 octree rungs: |sin theta-bar| = 0 for every lam and both down senses (Hermitian sectors) | max 1.6e-17 (measured |theta-bar| < 1e-10)
+PASS: D3 octree rungs: m1/m3 >= 0.33 for every lam (measured m_u/m_t 7.3e-6, m_d/m_b 9.4e-4): excluded | no hierarchy: unit diagonal G(0) = 1 dominates
+PASS: D4 octree rungs, same sense for down: V = 1 (|V_us| = 0, J = 0); measured 0.224 | max |V_us| 2.3e-16
+E. Structural strong CP: layouts with arg det(Mu Md) in {0, pi} for every lam, theta
+  cells 395136 (distinct rungs 0..8); structural zeros by class: {'herm': 28, 'flip': 2302, 'mirror': 126, 'self': 40}
+  max |J| by class: {'herm': '1.0e-47', 'flip': '9.6e-02', 'mirror': '6.6e-02', 'self': '2.2e-15'}
+  max |ln(up ratio) - ln(down ratio)| by class: {'herm': '0.0e+00', 'flip': '0.0e+00', 'mirror': '3.1e-13', 'self': '3.0e+00'}
+PASS: E1 every structural theta-bar zero is Hermitian, self-mirror, sense-flip or u<->d mirror | rung reflection n -> c - n with conjugation is the antiunitary that makes det real
+PASS: E2 Hermitian and self-mirror classes have J = 0 (the reflection is a CP of every sector) | measured J = 3.08e-5
+PASS: E3 sense-flip and mirror classes allow J != 0 but force the down tower = the up tower | measured m_d/m_b / (m_u/m_t) = 129
+  best structural cell (Q, u, d, h_d, lam) ((0, 1, 5), (5, 6, 8), (5, 6, 8), -1, 2.0): m ratios 9.6e-05 1.9e-02 9.6e-05 1.9e-02
+  self-mirror to c = 20: best (c, lam, h_d, x, y) (20, 1.5, 1, 9, 7) ratios 5.5e-04 1.0e-03 4.6e-03 4.6e-03 |J| 2e-20
+PASS: E4 no structural-theta-bar layout holds both quark towers (best rms log-dev > 1, all classes) | rms 1.91 (rungs 0..8), 2.49 (self-mirror, c <= 20)
+F. Gate
+  (a),(b),(c): no measured number chosen in the rung assignment; lam scanned, not fitted
+  (b) and dressed (a) read the multiplets' observed charges (supplied content); (c) the 16
+PASS: F1 gate: unfitted predictions exist and FAIL measurement in all three candidates | rank 1 or m_b = m_t (a, b, c-characters); no hierarchy, V = 1 (c-octree)
+runtime 2.2 s
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

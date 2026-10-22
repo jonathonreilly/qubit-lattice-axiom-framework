@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/isotropic_collapse_on_the_cubic_frustum_carrier_has_a_stationary_point_at_every_tick_and_no_bounce_2026_10_22.py
+runner_sha256: be59d548b2d5ca40c0dbe696558163e4ff68682639d9e7f0b1be3e74d8237942
+input_fingerprint_sha256: c8c2711c072fe989546ae1ccc1cd4733e701d03e414243c0c7e9d4c1dbd4d283
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 48.53
+status: ok
+----- stdout -----
+== A. the edge equation on the cubic-frustum carrier with the fixed-step tick (exact algebra)
+[PASS] A1 THEOREM: dS/dl_k = 12 l_k dAtanh + 4 phi_k (1.5 sig p_k s_k + 3 u_k l_k+1/s_k) + 4 phi_k-1 (1.5 sig p_k-1 s_k-1 - 3 u_k-1 l_k-1/s_k-1) - M sig (Schlaefli; s = sqrt(1-2u^2)); it runs from -inf (u_k -> -1/sqrt2) to +inf (u_k -> +1/sqrt2) as -/+ 3 sqrt2 pi l_k+1/s_k, all else bounded: CL-3 has a stationary point at every tick, for any edges and content  | vs complex-step action 3e-14; limit ratios 1.000000000000..1.000000000000
+[PASS] A2 DIAGNOSTIC: the stationary point is unique: one root over the whole Lorentzian window in every sampled state  | 60 states (sig 0.0043-0.17, M 1e-3..1e3, l 1e-3..1e2, any u_k-1): roots [1]
+[PASS] A3 THEOREM: |u| < 1/sqrt2 gives l_k+1/l_k > r_b = (1 - sin(eps0)/sqrt6)/(1 + sin(eps0)/sqrt6) > 0, so l_k >= l_0 r_b^k: a = 0 is reached at no finite tick; on the limiting sequence the remaining proper time is exactly l_k/sqrt2 (the cell shrinks at sqrt2 edges per light crossing)  | remaining proper time / l_k = 0.707106781187 (= 1/sqrt2) for sin eps0 = 0.0075, 0.04, 0.3
+[PASS] A4 THEOREM: with the tick following the edges a radiation phase -C T/lbar = -C sig per slab is edge-independent, so radiation leaves the edge equation and enters only through the first slab; gravity is homogeneous of degree 2, so the map of ratios is scale-free: one collapse orbit for every size  | radiation term in dS/dl 0e+00; u sequences at scale 1 and 1e-25 agree to 0e+00 over 401 ticks
+== B. dust collapse (M = 1 per cube, kappa = 1, l_c = M/12 where A = 1; mid read; sig = sin(eps0)/sqrt3)
+[PASS] B1 DIAGNOSTIC: up to Hl = 1.3 the carrier follows the exact expansion law A(Hl/2) = M/(12 l) with ticks dn = dtau/(sig l) (within 2 ticks); the cell reaches its Hubble radius (Hl = 1) at l = 2.0-2.1 l_c; GR (A = u^2) would crunch at the Hl = 1.3 tick  | sig 0.1706: ticks at Hl 0.3/1/1.3 158/191/198 (law 158/190/198; GR crunch 198), l/l_c at Hl=1 2.01; sig 0.0499: ticks at Hl 0.3/1/1.3 372/483/509 (law 372/483/508; GR crunch 510), l/l_c at Hl=1 2.13; sig 0.0231: ticks at Hl 0.3/1/1.3 442/682/737 (law 441/682/737; GR crunch 739), l/l_c at Hl=1 2.10
+[PASS] B2 DIAGNOSTIC: the null crush: Hl -> sqrt2, s_k+1/s_k -> r_b^2 exactly, A l^2 -> const (radiation-like), one decade of l per ln10/ln(1/r_b) ticks for ever; no tick lacks a root  | sig 0.1706: s ratio/r_b^2 - 1 = 2e-15, ticks/decade 10 (9.5), 351 ticks to s = 1e-30; sig 0.0499: s ratio/r_b^2 - 1 = 3e-15, ticks/decade 32 (32.6), 1047 ticks to s = 1e-30; sig 0.0231: s ratio/r_b^2 - 1 = 3e-15, ticks/decade 70 (70.5), 1925 ticks to s = 1e-30
+[PASS] B3 DIAGNOSTIC: the fixed lapse does not keep its lost lapse equation through the crush: a positive dark constant D = (6pA - M) lbar -> (0.165 +- 0.002) sig^2 M l_c per cube (weakly start-dependent), over three quarters of it made after Hl = 0.5, then kept  | D/(sig^2 M l_c) 0.1677, 0.1657, 0.1643; at Hl = 0.5 0.232, 0.229, 0.220 of final
+[PASS] B4 DIAGNOSTIC: radiation collapse (scale-free orbit) also ends in the null crush with no tick lacking a root; the radiation constant leaves larger by a sig-fixed factor  | ('smin', 1494); C_final/C_initial 1.000178 (sig 0.0231)
+== C. the two options
+[PASS] C1 THEOREM (A1 + A3): CL-1's crushed-cube clause never acts in homogeneous isotropic collapse: CL-3 always has its stationary point. The carrier freezes itself in proper terms instead: proper tick sig l, rest phase m sig l and the remaining proper time l/sqrt2 all fall by r_b per tick, while the odds keep their unitary half-ticks  | after Hl = 1.3, each tick multiplies them by r_b = 0.967873 (sin eps0 0.04)
+[PASS] C2 THEOREM: no bounce: A(u) = 0 only at u = 0, so a turning slab needs total energy M + D/lbar = 0, i.e. a negative dark constant; the one made is positive (B3); the time-mirrored slice is not stationary (residual / momentum term = O(1))  | mirror residual/(12 l atanh|u|) at Hl = 1: +2.993, +2.880, +2.878
+[PASS] C3 THEOREM (A3, A4, CL-1 text): reaching a = 0 in one tick needs |u| = 1/sig >= sqrt3 > 1/sqrt2 for every step, so continuation through a = 0 is unavailable (a = 0 is at tick +inf). In site labels the massless half-tick on equal edges is the same unitary every tick (R = W, step eps0): the scale-free circuit simply continues for ever, quasi-energy kept exactly, mass angles m sig l -> 0, records written every half-tick  | min 1/sig = 1.7321; records inside grow ~ n (unbounded) within proper time l/sqrt2; they never condition the odds
+== D. ESTIMATES (cube 2 sqrt(8 pi) l_P; measured numbers)
+[PASS] D1 neutron-star-density collapse: the null crush starts when a/a0 = (H0 l0/c)^2, at a density far above Planck, after ~2/(sig H0 l0) ticks; the proper time left is ~l/c  | H0 l0/c 9.0e-39; a/a0 8.2e-77; rho 9e+245 kg/m^3 = 2e+149 rho_P; ticks 9.6e+39; time left 4e-119 s
+[PASS] D2 black-hole exteriors: nothing in the interior is undefined, and the exterior is its own domain of dependence, so a 10 M_sun exterior persists; Hawking flux from the exterior circuit, lattice corrections ~ (l/r_s)^2; evaporation takes a finite number of ticks, during which the interior cells shrink by r_b per tick  | (l/r_s)^2 3e-77; t_evap 2.1e+70 yr = 5e+121 ticks
+[PASS] D3 a time-symmetric bounce (not a CL-3 solution, C2) would re-emerge as a white hole after ~ (r_s/c) ln(r_s/l): for Cyg X-1 excluded by its persistence by > 1e10 and Sgr A* by > 1e5; a Planck-delayed (M^2) route needs a non-stationary exterior region, which CL-3 forbids  | 10 M_sun: 8.7e-03 s; Cyg X-1 (14.8 M_sun) 1.3e-02 s vs 1.9e+09 s; Sgr A* 4e+03 s vs 9e+08 s
+supplied: cubic isotropic frustum carrier, mid-slab tick read, dust -M T and radiation -C T/lbar phases, zero initial
+  dark constant, kappa = 1, unit map, measured numbers; not built: anisotropic (Kasner) crush, inhomogeneous junction.
+elapsed 47.8 s
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

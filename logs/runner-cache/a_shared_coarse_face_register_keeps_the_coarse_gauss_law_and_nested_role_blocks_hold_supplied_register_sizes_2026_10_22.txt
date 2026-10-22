@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/a_shared_coarse_face_register_keeps_the_coarse_gauss_law_and_nested_role_blocks_hold_supplied_register_sizes_2026_10_22.py
+runner_sha256: 8585269c22d3075a47204ca86efdb485239595952f0fa63d860b2fead86b42e2
+input_fingerprint_sha256: fcbb6132ddec37d2140b620ce56be087101bf1aa2c70aacc45e34c96baf0a61a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.91
+status: ok
+----- stdout -----
+== A. exact: one coarse register shared by the fine bonds crossing a coarse face
+[PASS] A1 [T] coarse Gauss law: hops inside a coarse block undressed, every fine hop crossing the face dressed by ONE shared register: [H,G_X]=[H,G_Y]=0; a fine-site generator is not conserved (gauge group = coarse) | S=3: 0e+00, 0e+00; fine-site 1.00
+[PASS] A2 [T] domain-normalised V: crossing hops commute off the extremes ([A1,A2^+] = b1 b2^+ (P_-S - P_S)), so fine cube gates sharing a register are order-free on |E| <= S-2; plain S^+/S is not | [A1,A2] 0e+00; [A1,A2+]P_int 0e+00 (full 1.0); gate order on |E|<=S-2 0e+00; plain 0.44, order 0.13
+[PASS] A3 [T] charges 1 and 4 (units of 1/6) cross by V^q of the same register; coarse Gauss law holds | 0e+00
+[PASS] A4 [T] SU(2): one colour-rishon register per coarse face shared by both crossing bonds; G^a_X, G^a_Y and the cluster number commute with H | max 0e+00, cluster 0e+00 (12 modes, sparse)
+== B. coarse-block photon against the fine photon; form factor below the block
+[PASS] B1 [D] static potential, coarse-block links (charges summed per cell) vs links on every fine bond, same g: ratio-1 at R = n*B on a 96^3 torus falls ~1/n^2; Coulomb coefficient unchanged | B=2: +0.062,+0.019,+0.005; B=3: +0.080,+0.024,+0.008
+[PASS] B2 [T] vertex form factor F(q) = mean_u e^{iq.u} over the cell's matter labels: r^2 = (B^2 - b0^2)/4 fine units; umklapp only at the coarse reciprocal vector | max rel dev 2.7e-06
+   [E] B=27: r_rms = 1.1e-33 m vs electron point-likeness ~1e-18 m: margin 9e+14; block energy hbar c/(B a) = 9.0e+16 GeV (quadratic photon LV bound E_QG2 > ~1e11 GeV)
+== C. register vacuum spread vs register size
+[PASS] C1 [E] harmonic register vacuum <E^2> = cE/g^2, g^2 = 4/sqrt(F(F+2)) set by the register: sigma_E/S ~ sqrt(cE/2S) -> 0 | cE = 0.796 (lattice transverse mean)
+   S=1.5: sigma_E=0.88, sigma/S=0.585, weight beyond extremes 2.3e-02
+   S=14.5: sigma_E=2.44, sigma/S=0.168, weight beyond extremes 8.2e-10
+   S=29.0: sigma_E=3.43, sigma/S=0.118, weight beyond extremes 7.3e-18
+   S=327.5: sigma_E=11.42, sigma/S=0.035, weight beyond extremes 2.9e-181
+== D. exact nested capacities (24 rotations about each block centre)
+[PASS] D1 [T] K = (b^3-10b+9)/6 (odd b), (b^3-4b)/6 (even) reproduced; the set left by matter + a finer level's fill is invariant under the 24 rotations about the coarser centre: nested covariant layouts exist | 24 rotations, 0 violations
+   b0=3,k=3: sides [3, 9, 27, 81]; K/end alone [1, 107, 3129, 85203]; after finer fills [1, 80, 240, 720]
+   b0=3,k=2: sides [3, 6, 12, 24, 48]; K/end alone [1, 32, 272, 2208, 17728]; after finer fills [1, 24, 16, 32, 64]
+   b0=4,k=2: sides [4, 8, 16, 32, 64]; K/end alone [8, 64, 512, 4096, 32768]; after finer fills [8, 0, 0, 0, 0]
+   b0=4,k=3: sides [4, 12, 36]; K/end alone [8, 216, 5832]; after finer fills [8, 0, 0]
+[PASS] D2 [T] maximal fill starves coarser levels: they keep only the finer blocks' 8-/12-orbit sites, capacity ~ (B/B_f)^3 B_f, not B^3 | b0=3,k=3 level 27: 240 vs 3129 alone
+== E. couplings: needed register sizes, nested fixed rules, look-elsewhere
+   needed at 1/(1a): F_Y 655, F_2 29.0, F_3 29.4 per colour per end; modes/end 801
+   needed at 1/(9a): F_Y 682, F_2 28.3, F_3 27.8 per colour per end; modes/end 822
+   needed at 1/(27a): F_Y 696, F_2 28.0, F_3 27.0 per colour per end; modes/end 833
+[PASS] E1 [E] b = 3 hosts no measured factor: F = 1 colour registers go strong far above M_Z; SU(2), SU(3) need F ~ 27-29, so every factor sits on a coarser block | SU(2) F=1: 1/alpha 3.51 at 1/(3a), strong at 8e+14 GeV; SU(3) F=1: 1/alpha 4.16 at 1/(3a), strong at 2e+16 GeV
+[PASS] E2 [E] nested fixed rules (4 ladders 3x3,3x2,4x2,4x3; every assignment of Y,SU2,SU3 to a level; maximal fill split equal-F or equal-modes; or face pooling S ~ B^2; cell scale 1/(B a) or 1/a): 2046 trials, 0 within 6% on all three, 0 within 15%
+   best: ladder (3, 2) sides-level {'Y': 1, '2': 3, '3': 3} equalF planck: 1/a_Y 44.0, 1/a_2 34.3, 1/a_3 12.6 (meas 98.4, 29.6, 8.47); worst dev 0.55
+   best: ladder (3, 3) sides-level {'Y': 0, '2': 2, '3': 2} face planck: 1/a_Y 41.3, 1/a_2 46.8, 1/a_3 4.7 (meas 98.4, 29.6, 8.47); worst dev 0.58
+[PASS] E3 [E] the miss is not marginal: nearest trial off by 55%, 2 of 2046 trials within a factor 2 of all three measured values; the family would hit a random target (log-uniform rescale x[1/2,2]) at 6% with probability 0.00
+[PASS] E4 [E] with F fitted (supplied), nested layouts hold the measured sizes (S_Y ~ 340) with sites to spare: the size conflict is a single-b artefact | (3, 2) blocks {'Y': 24, '2': 24, '3': 24} fill 0.40; (3, 2) blocks {'Y': 24, '2': 12, '3': 24} fill 0.57; (3, 2) blocks {'Y': 24, '2': 24, '3': 12} fill 0.65
+   [E] edge registers (Delta=0, s=26.3 b_e) fit a free fraction 0.8 only for b_e >= 40: edges are the coarsest role
+[PASS] E5 [E] ratio pattern: equal F per colour for SU(2), SU(3) on one level matches F_2/F_3 = 1.019 (the SM near-crossing of alpha_2, alpha_3 near the cell scale, not new); F_Y/F needed 24.8; ladder-step laws k^p (k=2,3,5; p=2 face, 3 volume) within 15%: {(3, 3): 27, (5, 2): 25}; look-elsewhere p ~ 0.49: chance level, and no fixed fill gives the absolute F ~ 28
+supplied: ring-exchange coupling alpha(F) (coupling-blocks/link-zoom), SM one-loop betas, 1/a = 2.435e18 GeV, measured MZ couplings, the nesting ladders tried, the hypercharge unit 1/6; edge bound s >= 26.3 b_e (register).
+elapsed_seconds 1.4
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

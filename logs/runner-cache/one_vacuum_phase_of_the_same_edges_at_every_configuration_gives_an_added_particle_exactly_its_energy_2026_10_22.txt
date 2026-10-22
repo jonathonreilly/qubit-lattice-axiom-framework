@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/one_vacuum_phase_of_the_same_edges_at_every_configuration_gives_an_added_particle_exactly_its_energy_2026_10_22.py
+runner_sha256: 47341ad5cdde41f2b89e1fa9972e3bc8abebf4c9849402f4ac86b2827757c96a
+input_fingerprint_sha256: 72133208c8acb8be0b32c2381b9cf2dc6478e9af044f483175caf639a955d9e3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.72
+status: ok
+----- stdout -----
+== A. Fock toy: L = 12 periodic, vacuum N = 6 (924 configs), electron N = 7 (792), t = m = 0.5, V = 0.3, read lapse N = l, edges l = (1.00, 1.25)
+[PASS] A1 [T] vacuum eigenstate on fixed edges: its per-configuration phase (sum over sites) is E_vac(e) at EVERY configuration: the register's subtraction is the constant E_vac(e); per-site shares fluctuate at O(1) | Born std of total 1.3e-14; max per-site std 0.118; sum of Born-mean shares - E_vac 5.3e-15
+[PASS] A1b [T] same on the Floquet tick (eps = 0.6, L = 8) | spread 1.2e-12 rad over 70 configs
+[PASS] A2 [T] number is conserved, so the vacuum (and the vacuum carried along any edge history) has zero amplitude on every N+1 configuration: the per-configuration subtraction is defined on none | N+1 configurations 792, defined on 0
+[PASS] A3 [T] option (a), lowest state of the same charge sector: the electron at rest sources ZERO at every configuration and exerts zero force on the edges; a moving one sources only its kinetic excess | (a) source at rest -1.4e-14, moving 0.2884; (b1) source 1.0848, 1.3731; (b1) edge forces dE_dep/dl = 0.8898, 0.1766
+[PASS] A4 [T] option (b1), the vacuum phase of the same edges at every configuration of every sector: an electron eigenstate sources exactly E_N+1 - E_vac at every configuration; for V = 0 this is N sqrt(m^2 + (2t cos k)^2), rest energy mN plus kinetic | (b1) max Born std over 3 electron levels 1.2e-14; V=0, l=1.25: departures 0.6250, 0.8004, 0.8004, 1.0680 vs dispersion 0.6250, 0.8004, 0.8004, 1.0680
+[PASS] A5 [T] Born mean of Re[(H psi)/psi] = <H>, of |.|^2 = <H^2>: the configuration-resolved total source has Born std <= the state's own energy spread, never the sea's | packet of 4 levels: Born std 0.0927 <= dE 0.1566; vacuum per-site share std 0.118 for scale
+[PASS] A6 [D] the sea's force on the edges: (b1) removes it at every edge configuration; an edge-blind per-site constant leaves all of it; a flat density per proper length leaves its nonlinear part | raw/edge-blind -0.9580, -1.0556; per-proper-length +1.4276, +1.3300; (b1) 0 by construction
+[PASS] A7 [D] option (c), the carried vacuum (smooth ramp from rest): its per-configuration phase is one number up to O(omega^2) (the O(omega) part is probability flow, Im) and its Born mean exceeds E_vac at O(omega^2): (c) = (b1) + the kinetic half | omega 0.02/0.04: Re-spread 4.1e-06/1.6e-05 (slope 2.00), Im-spread 4.2e-04/8.4e-04 (1.00), mean-E_vac 9.0e-08/3.6e-07 (2.00)
+== B. conservation, static 1D slice, N = 1: hop 1/(2 l_b), m = 0.2, l_b = 1 + 0.2 cos(4 pi b/L)
+[PASS] B1 [D] rms divergence of the coarse (Gaussian, 4 bonds) edge source (conservation: 0). The sea's stress follows l_b (cutoff in cells): violated at first order in the gradient, cell size; (b1) cancels it, leaving the departure's own, > 1e4 smaller | L=100: sea 1.1e-02 (x L = 1.07), rest 4e-19, moving 8.2e-07; L=200: sea 6.0e-03 (x L = 1.20), rest 2e-19, moving 1.7e-08; L=400: sea 3.1e-03 (x L = 1.23), rest 1e-19, moving 3.0e-10; mean |T_sea| per bond 0.323
+[PASS] B2 [D] relative to its own pressure the moving electron's coarse divergence is a lattice term vanishing in the smooth limit; per bond it is O(1) (staggered cell-internal oscillation): conservation holds at the block rung (zoom); (b2) keeps the sea's violation | L=100: div/|p| 6.4e-04, L=200: div/|p| 8.6e-05, L=400: div/|p| 1.1e-05; per bond at L=200 15.4; (b2) = sea
+[PASS] B3 [T] Noether: Bianchi needs d_xi(E_psi - E_ref)(e) = 0 for every displacement xi; with E_ref = E_vac(e) of the same tick and edges any breaking cancels but the departure's own; it commutes with the momentum constraint iff the raw tick does | structural
+== C. quantum edges: L = 8 chain (N = 4, 5) x two registers n = -4..4, l = 1 + 0.1 n, hop w = 0.05, supplied hinge stand-in 0.05 n^2/2
+[PASS] C1 [D] joint odds: under (b1) the vacuum leaves the edges at rest and an electron moves them as its departure surface E_N+1(e) - E_vac(e) gives (BO); raw, the sea moves them by cell sizes; (a) hides the electron | <n_1>: vac raw +1.357, vac (b1) +1.1e-04; electron shift (b1) -1.0738 vs BO on departure -1.0727; (a) shift -1.1e-03; raw electron +0.193
+[PASS] C2 [D] no extra edge noise from the electron's O(1) per-configuration stress: the edge spread changes exactly as the departure surface gives | Var n_1: vacuum 0.6383, electron 0.7024, BO on departure 0.7045
+[PASS] C3 [D] (b1) leaves the sea's induced edge kinetic term: the edge hop becomes w <vac_e|vac_e'> (quantum metric) plus a virtual mass 2 sum |<k|dH|0>|^2/dE^3; a diagonal phase cannot change a hop | Omega bare 0.063859, joint shift -1.572e-05 vs projection -1.382e-05 + virtual -1.84e-06 = -1.565e-05; 1 - <vac_0|vac_1> 3.72e-04 vs (1/2) quantum metric 4.02e-04
+[PASS] C4 [D] the dressed-weight clause absorbs it (its vacuum including the sea): the carried reference = (b1) for the phase + dressed weights | w'/w - 1 = 4.46e-04 (estimate 1 - <vac_0|vac_1> = 3.72e-04); residual -1.5e-15
+== D. estimates against measurement (supplied inputs)
+[PASS] D1 [E] (a) removes every body's rest energy from its source: G M would be at most ~1e-3 of M (binding differences from the sector's lowest state), against G M = inertial mass to 1e-15 (MICROSCOPE, LLR): excluded at O(1) | <~1e-3 vs 1
+[PASS] D2 [E] (b1): the source is the tick's own departure energy, so gravitational = inertial energy identically (electron: m_e c^2 times N plus kinetic) | eta = 0 at tree level
+[PASS] D3 [E] without (b1) the sea's non-conservation is a Planck pressure hbar c/L^4 times the fractional edge variation; (b1) leaves the departure's own, ~(p L/hbar)^2 relative for a 300 K electron | hbar c/L^4 = 7.3e+110 Pa; (pL/hbar)^2 = 4e-51
+theorems: A1, A1b, A2, A3, A4, A5, B3; diagnostics: A6, A7, B1, B2, C1-C4; estimates: D1-D3
+supplied: 1D chains, staggered mass, V, read-lapse form N = l, edge hinge stand-in kappa n^2/2, register size, hop weight w, coupling dl
+elapsed 3.2 s
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

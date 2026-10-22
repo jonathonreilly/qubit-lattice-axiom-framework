@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/spin10_pair_square_gives_unique_gapped_symmetric_mirror_cell_ground_state_2026_10_21.py
+runner_sha256: 804af6dffdcba48cbc8fad0e90ac1730275c7f7a655b831fb3ba60c3472f3212
+input_fingerprint_sha256: fe8a07368ebd89246911d03c45179342edf32b75c1fbf42d0676fbb1d94c77e9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.57
+status: ok
+----- stdout -----
+== A. Fock-level identities (32 modes, bit-level states)
+[PASS] A1 [T] M_a symmetric and unitary, t^T M_c + M_c t = i(d_ac M_b - d_bc M_a): B_a is a Spin(10) vector and SU(2) singlet; Tr M_a M_b^dag = 16 d_ab gives [B_a, B_a^dag] = 16 - N; Omega lowers N by 4, so its phase is removable and only Z4 of N survives | |Omega^dag|0>| has 240 terms
+[PASS] A2 [T] the one-body (number-conserving) stabiliser of Omega in gl(32) has dimension 48 = so(10) + sl(2): no flavour symmetry beyond Spin(10) x SU(2)_spin and no U(1)_N; the pairs B_a, B_a^dag close on a 66-dim algebra (so(12)) in which [B_a, B_a^dag] = 2J has J-spectrum +-1/2 on (c, c^dag) | stabiliser 48, closure 66
+== B. exact so(12) x SU(2)_spin content of the Fock space
+[PASS] B1 [T] under so(12) x SU(2)_spin the 2^32 Fock space is a sum of 63 irreducibles, each so(12) irrep occurring once and with one spin: H, a polynomial in so(12), can only be degenerate inside one so(12) irrep (times 2j+1) | 63 irreps, sum (2j+1) dim = 2^32
+[PASS] B2 [T] |0> and |F> lie in L* = (8,0,0,0,0,0) (dim 63206, spin 0, once); the so(12) singlets are the 17 fully spin-polarised states (spin 8), so the ground state need not and does not lie in an so(12) singlet
+== C. Gelfand-Tsetlin coefficients for o_N > o_{N-1}
+[PASS] C1 [T] Gelfand-Tsetlin coefficients: o_3..o_8 (11 irreps, spinorial and both signs) satisfy the consecutive-generator relations and give Casimir <L, L+2 rho>; on all 63 so(12) irreps 2J is integral, e^{i pi J} commutes with C_so(11), and Tr J^2 = dim C_so(12)/66; the blocks exhaust each irrep | errors 1e-14, 1e-14, 3e-13, 1e-16; largest block 24
+== D. H = g(Omega + Omega^dag) = 2g sum_p (L_{p,11}^2 - L_{p,12}^2) = g [J,[J,C_so(11)]]
+[PASS] D0 [T] Casimir localisation: on the so(10) block la of irrep L, H/2g >= -(C_so(11)' - C_so(10)) >= -(max c11(mu) - c10(la)); over every block except the Spin(10) singlet of L* this bound is >= -127 (the 10 of L*), above E0/2g = -134.377: the ground state lies in that 9-dim block (solved exactly in D1), and from Casimirs alone Delta >= 14.75 g, Delta_f >= 25.75 g
+[PASS] D1 [T] ground state unique: the minimum over all 63 irreps is a simple level of L* in its Spin(10)-singlet block, E0 = -2g sqrt(11088 + 48 sqrt 21081); that block is the 9-state Jacobi chain beta_k^2 = 16k(9-k)(k+4)(13-k), and the exact Gelfand-Tsetlin, harmonic-polynomial and chain characteristic polynomials agree | E0/g = -268.754630; Lanczos-vs-formula err 3e-13; P0 = lambda*(lambda**4 - 88704*lambda**2 + 1189969920)*(lambda**4 - 42624*lambda**2 + 154828800)
+[PASS] D2 [T] gap Delta = 19.0715 g to the Spin(10) 10 (spin 0, N = 2 mod 4, 10 states; chain 16k(8-k)(k+5)(13-k)); fermion gap 33.5804 g (64 states: 16 + 16bar, spin 1/2, chain 16k(8-k)(k+4)(13-k)); 54: chain 16k(7-k)(k+6)(13-k) | next: 42.330 g x54; 54.733 g x576; 59.593 g x360
+[PASS] D3 [T] the so(12) chains are the Fock chains: ||Om^dag|0>||^2, ||Om^dag^2|0>||^2, ||Om^dag c^dag|0>||^2, ||Om^dag^2 c^dag|0>||^2 = beta_1^2, beta_1^2 beta_2^2 of the two chains (normalisation fixed, |beta| = 1) | Fock 7680, 113541120, 6720, 85155840
+[PASS] D4 [T] symmetric: Spin(10) singlet, spin singlet, N in {0,4,...,32} so Z4 = +1 and fermion parity even; <N> = 16, <c^dag_a c_b> = d_ab/2 (Spin(10) x SU(2) irreducible on the 32 modes), all pair and vector expectations zero | P(N=0,4,..,16) = 0.0029, 0.0269, 0.1048, 0.2231, 0.2847
+[PASS] D5 [T] main-branch atom: its singlet (|0> + e^{i phi}|F>)/sqrt2 lies in L* with overlap <= 2 P(N=0) = 5.7e-03 with this ground state; both carry trivial Spin(10) x SU(2) x Z4 charges (one 0D class); its Casimir term lam C_Spin(10) leaves E0 and raises the 10 by 9 lam; Q, C_2 and number projections are not needed | gap with lam = g: 28.0715 g
+   lowest (E-E0)/g x deg (so(12); so(10)): 0.000 x1 (8,0,0,0,0,0; 0,0,0,0,0); 19.071 x10 (8,0,0,0,0,0; 1,0,0,0,0); 33.580 x64 (7.5,0.5,0.5,0.5,0.5,-0.5; 1/2,1/2,1/2,1/2,-1/2); 42.330 x54 (8,0,0,0,0,0; 2,0,0,0,0)
+== E. one site with hopping t: strong-coupling estimates
+[PASS] E1 [T/E] c^dag|GS> lies 99.9816% in the lowest fermion level (weights sum to 1/2; alpha_k^2 = 1 - k/8 exactly), so the site Green function is z/(z^2 - Delta_f^2) up to 2e-04: a zero at z = 0, as in the main-branch atom; second-order bond energy 0.2382 t^2/g (bound 8/Delta_f = 0.2382)
+[PASS] E2 [E] cubic lattice (z = 6), hopping t c^dag_i c_j on all 32 modes: the gapped symmetric phase persists for t < t_* > 0 (stability of a unique gapped product state, cited); second-order estimate z kappa t_c^2 = Delta gives t_c = 3.65 g, the first-order fermion band Delta_f = z t gives 5.60 g; as a per-tick term the site spectrum (width 537.5 g) needs g tau < 0.0117
+== F. against measurement
+[PASS] F1 [E/M] with the tick hop t = eps/(sqrt3 tau) (= 1/(2a) at c = 1, block 2a), the window eps/(3.65 sqrt3) < g tau < 0.0117 is open for eps < 0.074, containing the register bound eps < 0.04; the mirror fermion mass Delta_f = 33.6 g > 4.6/a, ~1e19 GeV for a of a few Planck lengths, vs LHC limits near 1.5 TeV on extra quarks and leptons; the singlet ground state breaks no gauge symmetry
+theorems: A1-A2, B1-B2, C1, D0-D5 (exact finite; uniqueness needs only D0 + the exact singlet block).
+estimates: E1-E2, F1.  cited: gap stability for weak hopping, 0D classification by symmetry charges, anomaly reason for
+  breaking U(1)_N to Z4, LHC limits.  supplied: the mirror content (16 x 2 per cell), the pair-square term alone, g,
+  the hopping model (z = 6, mode-diagonal), t = eps/(sqrt3 tau), the lattice spacing.
+elapsed_seconds 3.9
+
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

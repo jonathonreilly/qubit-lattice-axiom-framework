@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/untuned_all_direction_massless_crossings_select_space_dimension_equal_to_the_bloch_ball_dimension_2026_10_22.py
+runner_sha256: c950f89a870d2fc97cf8900b82be826fea52ddc608b941a1c82d2f870646b33a
+input_fingerprint_sha256: 6fcdbf6b1561a2b17ea385dcff8cca237ac14064e7f8c50ae27541016c84d97c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.67
+status: ok
+----- stdout -----
+== A: crossing codimension = Bloch-ball dimension ==
+PASS: A1 codim of a 2-fold crossing = beta+1 = Bloch-ball dim (R,C,H -> 2,3,5) | {1: 2, 2: 3, 4: 5}
+== B: generic nearest-neighbour two-level bands on Z^d ==
+PASS: B1 d=1,2 complex two-level bands: all 12+12 random NN models gapped (min 2|h| > 1e-2) | min|h| d=1 0.149, d=2 0.036
+PASS: B2 d=3 complex: nodes are isolated cones (det J != 0) in 4 random models | 8 nodes, charges ++-+-+--; 2 nodes, charges -+; 4 nodes, charges -+-+; 6 nodes, charges +-++--
+PASS: B3 d=3 nodes survive a random 1e-2 change of every hop (no symmetry used)
+PASS: B4 d=4 complex: zero set is a line (node continues as k4 moves, dk4=1e-3), with a flat direction | 9/12 k4-slices hold nodes, 9 tracked over dk4=1e-3; max (kernel/transverse) splitting slope 1.2e-04 at t=1e-4
+PASS: B5 d=2 real (rebit) class: point nodes exist; a complex hop eps opens a gap ~ eps | 4 real nodes; gap(1e-2)/gap(1e-3) = 10.00
+PASS: B6 d=5 quaternionic class: Kramers-pair bands, nodes isolated with det J != 0 | 10 nodes found
+== C: at a d=3 cone, space rotations act as qubit rotations ==
+PASS: C1 chirality of each cone = sign det J = solid-angle degree (exactly +-1)
+PASS: C2 charges sum to zero in every model (Nielsen-Ninomiya mirrors are forced)
+PASS: C3 every Bloch rotation is a momentum rotation for metric J^T J, realised by an SU(2) lift | lift err 9.4e-16, metric err 1.8e-15
+== D: clause checks for candidate (a) ==
+PASS: D1 Clifford volume element grades (chirality exists) iff D = d+1 even, i.e. d odd (D=2..7)
+PASS: D2 propagating photon (d-1) / graviton ((d+1)(d-2)/2) polarisations: both > 0 first at d = 3 | d1:0/-1 d2:1/0 d3:2/2 d4:3/5 d5:4/9
+PASS: D3 d=1 is NOT excluded by gauge anomaly: 3-4-5-0 has 3^2+4^2-5^2-0^2 = 0
+== E: candidate (c) recurrence and binding ==
+PASS: E1 Polya: u(3) = 1.516386, return prob 0.3405 (transient); d = 1, 2 Green integral diverges | u3=1.516386 P=0.3405; d1 25->252, d2 3.04->4.51
+PASS: E2 d=3 Coulomb: E0 -> -alpha^2/4 as cutoff -> 0 (stable for any alpha) | -0.241 -0.247 -0.249 -0.250
+PASS: E3 d=5: E0 runs away as cutoff -> 0 (no stable atom) | 0.0 0.0 -255.8 -4339.2
+PASS: E4 d=4 scale-free: alpha=0.5 no bound state (E0>=0); alpha=2 collapses ~ -1/a^2 | alpha=0.5: min E0 0.0074; alpha=2, a=.4..05: -0 -1 -4 -17
+== F: candidate (d) 2^d cell Clifford counting ==
+PASS: F1 the 2^d corner space carries Cl(2d) irreducibly (d = 1, 3, 5)
+PASS: F2 one mode per site: Weyl species per chirality = 2^((d-1)/2); reaches 16 only at d = 9 | {1: 1, 3: 2, 5: 4, 7: 8, 9: 16}
+PASS: F3 staggered Z^3 (one mode/site): H^2 spectrum = sum sin^2 p, 8 zero modes = 2 Weyl per chirality | zero modes 8
+elapsed 1.6 s
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

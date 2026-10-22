@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/grabowska_kaplan_far_layers_pass_the_nielsen_ninomiya_count_but_induce_a_gauge_invariant_cutoff_scale_photon_mass_above_the_smoothing_scale_2026_10_22.py
+runner_sha256: 28f167f1751ec95c4b40be69e3ae9aa80bd6b6482e5549f169ba7b8ecbea3743
+input_fingerprint_sha256: 3ab99d8ad6801d5e0c9a1e8c5c1b7e5dcb13a3822c454276f966a6581a372909
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 14.67
+status: ok
+----- stdout -----
+== A. spectrum count, free 2D slab (Ls = 8, M = 1): the theorem's setting is gauge-off
+[PASS] A1 THEOREM argument principle on the zone torus: windings of a chiral propagator element sum to 0; the light end alone has its pole at p = 0 and zeros of opposite net chirality at the three doubler corners (kinematical zeros); the mirror element is the mirror image: the boundary field is one vector-like pair, as the generalized Nielsen-Ninomiya theorem demands | windings (0,0),(pi,0),(0,pi),(pi,pi): light [1, -1, -1, 1], mirror [-1, 1, 1, -1]; |light| near corners ['7e+02', '5e-04', '5e-04', '9e-05']
+   A2 THEOREM which assumption fails: none of GS 2505.20436's (finite-range fermion-only H, unbroken G, free massless continuum, zero-free interpolating set); the gauge-off slab meets them and is vector-like (A1). GK evades only the corollary 'vector-like spectrum => vector-like gauge theory', which needs both ends to couple through the local current; the mirror reads a range-r functional A_* with f(0) = 1, so it is chiral only for 1/r << k << 1/a
+== B. far layers that read A_* != A: Gamma gains c (A - A_*)^2, gauge invariant, unprotected
+[PASS] B1 DIAGNOSTIC 4D Shamir slab (DW - PV), constant layer fields: Ward rows -> 0; near layers read A, far A_* = 0 (window k >> 1/r): a mass term c A^2 per q^2, the same for every cut position, ramp width and Ls: an end term, not a bulk F_s mu^2 | Ward max 7e-04 (N=16); c at cut j=1..7: [-0.0199 -0.0219 -0.0221 -0.0221 -0.0221 -0.0219 -0.0199]; ramps n=1,2,4: [-0.0221 -0.0221 -0.022 ]; Ls=16 -0.0217 vs Ls=8 -0.0218 (N=12)
+[PASS] B2 THEOREM overlap form (Ls -> inf): |det| = |<v(A)|v(A_*)>|^2 per momentum, so for A_* = 0 the mass coefficient is c = 2 <g_00>, the zone mean of the quantum metric of H_W's filled bands: positive, zero only if the filled projector is momentum independent (trivial bands, no light chiral mode): the topology that makes the light end chiral forces the mass | c_overlap 0.09970, 2<g> 0.09970, min g 6e-05
+[PASS] B3 ESTIMATE window photon: Pi(k) = e^2 c sum Q^2 (1 - f(kr))^2 / a^2, a Planck-scale mass (tachyonic for Shamir) for all k > 1/r, so no electromagnetism below r (and r >> 1/m_e is needed); no local A^2 counterterm is gauge invariant; only a tuned -c(A - A_*)^2, to ~1e-90 | sum Q^2 = 16, alpha = 1/137: m_gamma a = 0.18 (Shamir, m^2 < 0), 0.38 (overlap) -> |m| = 4.4e+17, 9.3e+17 GeV
+   B4 DIAGNOSTIC 2D: the same term is c2 = 0.2268 per q^2 (overlap), dimensionless: e^2 c2 sum q^2 is a fraction 1.43 of the Weyl Schwinger-type term e^2 sum q^2/(2 pi): marginal, which is why the 2D toy (gk-smoothed-layers C2: smoothed/unsmoothed 0.26-0.33, not 1/2) passed; in 4D it is relevant (dimension 2, coefficient 1/a^2)
+== C. what scales with r (abelian; slab gauge invariance is exact at every r)
+[PASS] C1 THEOREM mirror's residual field-strength coupling at fixed k: block (box) reading |sin(kb/2)/(b sin(k/2))| <= 2/(kb), a power 1/r in amplitude (1/r^2 in the action); flow (1 - eps khat^2)^n, gaussian in r = sqrt(n); the induced mass c(1 - f)^2 grows to its full value instead: gauge non-invariance does not appear at any r, but the mass does not fall with r | k = 2pi*37/4096, b=[16, 64, 256, 1024]: leak [0.966 0.534 0.114 0.024], kb*leak [0.88 1.94 1.66 1.41]; flow n=400..25600: ['9e-01', '5e-01', '8e-02', '3e-05']
+== D. SU(2) on 8 x 8: rung-b spreading with anchor (comb-tree) transports
+[PASS] D1 THEOREM per-site covariance: the tree-frame links turn by the anchor's g(c) only, W^(1/b^2) is conjugation covariant, so spread[g.U] = g.spread[U]; the closure V_(X+b) = 1 holds exactly (X^(b^2) = W), every block plaquette becomes a conjugate of one X; link averaging without transports is not covariant | rough field: residual b=2 1e-15, b=4 2e-15; closure 2e-15; within-block angle spread 2e-14; max plaquette angle 2.61 -> 0.67 (b=2), 0.12 (b=4); naive 1.57
+[PASS] D2 THEOREM topology in 2D SU(2): block loops and the torus holonomies along block-boundary lines are untouched, so the 't Hooft twist (commutator [P_x, P_y] = -1) is kept exactly while its thin plaquette is spread smooth; a thin vortex pair with commuting holonomies (twist +1) is spread likewise; the twist is never lost, unlike the abelian anchor reading's Q (gk-smoothed-layers A2) | (1/2 tr[Px,Py] before, after, |dP|, max angle before, after): twisted (-0.926, -0.926, 0e+00, 3.03, 0.19); vortex (1.000, 1.000, 0e+00, 3.05, 0.19)
+== E. 'mirror starts empty': 1+1D Hamiltonian slab (Chern strip, u = -1, N = 32, Ls = 8)
+[PASS] E1 THEOREM inversion (x, s) -> (-x, Ls-1-s) with sigma_z is a symmetry of the slab exchanging the ends; a fold (period-2 order on every site) that ends suddenly respects it, so it fills light and mirror edge modes equally; only a rule that singles out the near layers fills the light end alone | edge quanta (near, far): layer-blind (0.6606, 0.6606); layer 0 only (0.5773, 4.5e-04)
+   E2 ESTIMATE the CL rules that make excitations are layer-blind (the fold, its misfolds on every layer of the role block, the split's flips), so reheating gives the mirror the SM temperature: Delta N_eff = 2.25 vs Planck 2.99 +- 0.17 (14 sigma); allowed needs rho_mirror/rho_SM <~ 0.1, a lopsided reheating no rule supplies
+   E3 ESTIMATE after reheating: gravity Gamma/H ~ (T/M_P)^3 <= 1e-30; sphalerons give only the r-cell net winding (rho ratio ~1e-45 at 130 GeV, r = R_Earth); smoothed fields with E^2 > B^2 or E.B != 0 pair-make the massless mirror, so r must exceed every coherent field (r ~ c/H0 is safe)
+verdict: 2D toy survives; 3+1D route FAILS as stated (B: Planck-scale photon mass above 1/r) unless a tuned (A - A_*)^2 clause is added; it also needs lopsided reheating (E); D passes
+supplied: Shamir and overlap kernels, M = 1, Ls, grids, PV, profiles, SU(2) fields, Chern strip, measured inputs | 14.5 s
+cited: gk-smoothed-layers, rung-dimension-chirality, fold-inflaton; Golterman-Shamir 2505.20436; Grabowska-Kaplan 1511.03649; Ago-Kikukawa 1911.10925
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

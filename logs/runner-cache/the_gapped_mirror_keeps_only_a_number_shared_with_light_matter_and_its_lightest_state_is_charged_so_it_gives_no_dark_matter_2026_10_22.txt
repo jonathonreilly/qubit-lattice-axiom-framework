@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/the_gapped_mirror_keeps_only_a_number_shared_with_light_matter_and_its_lightest_state_is_charged_so_it_gives_no_dark_matter_2026_10_22.py
+runner_sha256: a1836202852f8b6358bf3050a70c2bafeff8cee2773f755801a7ef5b0c94ae78
+input_fingerprint_sha256: 35118208821e8d9d56a74650cd7871b51f0789d54a990b4b580d0a60fc20d917
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.41
+status: ok
+----- stdout -----
+== A. symmetries of mirror 16 + pair square + species-diagonal hops + SM gauging
+[PASS] A1 [T] C Gamma_a C^-1 = -Gamma_a^T; M_a = C Gamma_a on the 16 is symmetric; the quartic tensor sum_a M_a x M_a is Spin(10) invariant (45 generators)  | devs 0e+00, 0e+00, 0e+00
+[PASS] A2 [T] diagonal phases of the 16 weight states keeping every pair-square monomial: U(1)^5 (the Spin(10) torus), no torsion  | 40 monomials; continuous 5, torsion []
+[PASS] A3 [T] species phases (the commutant of SM gauging and species-diagonal hops, U(1)^6) keeping the pair square: exactly U(1)_Y x U(1)_X, X = 5(B-L) - 4Y = (1,1,-3,-3,1,5) on (Q,u^c,d^c,L,e^c,nu^c), no discrete remnant  | 7 species monomials; continuous 2, torsion []
+[PASS] A4 [T] mode number N changes by 4 only (Z4 survives), and i^N = exp(i pi X/2) on every mirror state (X = 1 mod 4 per mode): the Z4 is the Spin(10) centre, inside U(1)_X; B' and L' are broken (in integer steps: only the Z3 of 3B' that colour already contains remains, L' fully), B'-L' is exact  | dN [4]; 3B' -> Z3, L' -> Z1; d(B-L) ['0']
+[PASS] A5 [T] U(1)_X has no anomaly with SM gauge fields, itself or gravity on one 16: the mirror's X is exact, also under electroweak instantons  | SU3^2 X 0, SU2^2 X 0, Y^2 X 0, Y X^2 0, X^3 0, grav X 0
+[PASS] A6 [T] light + mirror: without mixing U(1)^6_light x U(1)_Y x U(1)_X^mirror (8); with any species-diagonal light-mirror bilinear only U(1)_Y x U(1)_X^total (2): mirror number then shared with light B-L  | no mixing 8 []; mixing 2 []
+== B. CL-1 cube tick: is any one-body mirror (copy, turn) label conserved for moving states?
+[PASS] B1 [F] cell-local one-body operators commuting with both half-ticks: 16-dim at K = 0 (copy sign and turn labels exact at rest), 1-dim (identity) at three random K: no mirror, copy or turn number when moving (rederives dark-matter-candidate A5)  | commutant dims K=0 16, 3 random K 1
+[PASS] B2 [T] Nielsen-Ninomiya per sector (1D witness): in 20 random periodic bands right- minus left-movers at E = 0 is 0; so an exact one-body mirror number makes the light sector a lattice theory by itself, vector-like  | net chiralities [0]
+== C. quantum numbers of the cell spectrum (Spin(10) irreps -> SM)
+[PASS] C1 [T] SM-singlet content (colour, SU(2)_L and Y all zero): 10 none, 16 one (nu'^c, X = 5, B-L = 1), 45 two (the Y and X generators), 54 one (X = 0)  | 10: 0 [], 16: 1 [5.0], 45: 2 [0.0], 54: 1 [0.0]
+[PASS] C2 [T] 16 x 16bar = 1 + 45 + 210 and 10 x 10 = 1 + 45 + 54 (Casimir multiplicities): the 45 occurs once, so in the Spin(10)-symmetric phase every gauge-current matrix element inside a 16 or 10 band is one form factor times the generator's own eigenvalue (Wigner-Eckart)  | 16x16bar [1, 45, 210]; 10x10 [1, 45, 54]
+[PASS] C3 [T] so nu'^c (T3 = Q = Y = 0) has zero photon and Z couplings to all orders in the mirror dynamics (charge radius, magnetic moment, anapole all vanish in the Spin(10) limit); the 10's neutral members have T3 = +-1/2: a vector Z coupling  | nu'^c (T3,Q,Y) [0.0, 0.0, 0.0]; T3 on the two Q=0 states of the 10 [-0.5, 0.5]
+== D. atomic-limit cell energies (Jacobi chains cited from smg-verify; H/g has off-diagonals beta_k)
+[PASS] D1 [T] chains reproduce E0 = -2 sqrt(11088 + 48 sqrt 21081) g and the gaps: 10 (spin 0, X = +-2) at 19.07 g, 16 + 16bar (spin 1/2) at 33.58 g, 54 at 42.33 g  | E0 -268.75463 g; gaps 19.0715, 33.5804, 42.3302 g
+[PASS] D2 [F] ordering (atomic limit): the lightest mirror excitation is the SM-charged 10 (Delta_b = 0.568 Delta_f, X = +-2, no SM singlet); the lightest SM singlet is nu'^c at Delta_f, below the two-cell 10 x 10 singlets (2 Delta_b, X = 0) and the 54 singlet (X = 0)  | Delta_b/Delta_f 0.5679; 2 Delta_b/Delta_f 1.1359; 54/Delta_f 1.2606
+[PASS] D3 [F] with X exact every (X, fermion parity, SM charge) sector's lightest state is stable: nu'^c (fermion-odd, X = 5) cannot reach another 16 member (Delta X = 4 costs >= 2 Delta_b > 0) and the 10 (X = +-2) is the absolute lightest; a Casimir term lam C_Spin(10) raises the 16 faster than the 10, so it never lifts the 10 above the 16  | C(16)/C(10) = 1.2500
+== E. estimates against measurement (supplied: unit map, freeze-out formula, sigma v ~ 4 pi kappa/m^2, bounds approximate)
+  thermal freeze-out (strong annihilation, unitarity-saturating kappa = 1; kappa = 0.1): Omega h^2 = 0.12 at m = 56 TeV (18 TeV)
+  law-fixed gap: smg-verify window g tau in (eps/(3.65 sqrt3), 0.0117) puts Delta_f near the cell (1 rad/tick = 2.1e+18 GeV): if ever thermal,
+    Omega h^2 >~ 0.12 (m/56 TeV)^2 = 4e+25 at 1e18 GeV (unitarity-limited; overclosure); a stable relic there needs T_RH << Delta and a supplied abundance Y m = 4.4e-10 GeV
+  with the tick's light-mirror mixing (B1; vertex O(1) at recoil, dark-matter-candidate A6 g >= 0.30, quasi-particle weight 1/2):
+    nu'^c -> nu^c + graviton: tau ~ 3e+06 s at 1.5 TeV, 5e+01 s at 56 TeV, 9e-39 s at 1e18 GeV; DM needs > 1e26 s
+    (> 8e18 s invisible) -> m < 103 MeV, against the mirror's >= 1.5 TeV (mirror-condensate-ew): excluded at every gap
+  if a mirror number were supplied: the stable 10's neutral complex doublet member couples to Z (C3): sigma_n ~ 6e-40 cm^2 vs ~1e-46 (m/TeV) cm^2 (LZ-type,
+    approximate): excluded below m ~ 6e+06 TeV; charged members (Q = +-1, colour triplets) are stable CHAMPs/heavy hadrons
+  nu'^c itself: Z/photon couplings zero (C3), induced at O(alpha/4pi) by Spin(10)-breaking gauge loops; self-interaction 4 pi/m^3 = 2e-17 cm^2/g at 56 TeV (bound ~1)
+  N_eff: no massless mirror state, so Delta N_eff = 0 below Delta (massless far layers: 2.25); empty start -> T_RH << Delta if stable
+theorems: A1-A6, B2, C1-C3, D1; finite: B1, D2, D3; estimates: E. cited: chains (smg-verify), copy vertex g (dark-matter-candidate)
+elapsed_seconds 0.7
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

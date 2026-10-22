@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/one_mode_free_sites_carry_no_exact_3450_charge_and_rotor_matter_admits_an_exact_depth_three_chiral_disentangler_in_1plus1d_2026_10_22.py
+runner_sha256: a380a94098dc134922dc94fd5f730b2a79bebdb116e522818a8af34056f1c664
+input_fingerprint_sha256: 3ffa8b8f5cdf8d61b90b73f3f0fbbc47b8ad2e3ee7c4dcef7ad3514bfeb12e53
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.90
+status: ok
+----- stdout -----
+== A. one-mode fermion chains (staggered hop, one Dirac flavour per chain)
+[PASS] A1 [T] free chain: Q_V and the Kitaev-pairing axial Q_A are conserved, quantised (Q_A^2 = 1) and do not commute; K = 0 moves right with Q_A = +1, K = pi left with Q_A = -1 | v(0) = +1.00, v(pi) = -1.00
+[PASS] A2 [T] the 3450 combination 4Q_V + Q_A (flavour 1) + 2Q_V - 2Q_A (flavour 2) is conserved with node charges L(3,4), R(5,0), but its one-body levels sqrt(17 + 8 cos K), 4|sin(K/2)| are not integers (many-body too, 4 + 4 modes): no U(1), and no circuit, interacting or not, can make one | distance to Z 0.417, 0.464; many-body 0.343
+[PASS] A3 [T] T1: a quantised one-body charge of a free one-mode update has #R(+-q) = #L(+-q); 3450 fails, so no free one-mode lattice carries it, on-site or not
+== B. TPF matter: per flavour a rotor angle phi_j in [0,1), a winding integer n_j per link (exact rational arithmetic)
+[PASS] B1 [T] Q_V (turns) and Q_A (windings) are commuting integers; the kinetic gate (turn phi_j, relabel windings) commutes with every e^{2 pi i b Q}, is a U(1) action and keeps Q_A | 300 configurations, failures 0
+[PASS] B2 [T] disentangler W = [turn flavours by qV theta_j] x prod_j e^{-2 pi i theta_j y~_j} (TPF eq. 23, rederived; one on-site and two link layers, interacting; single-valued on the rotor circle only with its -d round(sum qA phi) term): W^dag e^{2 pi i b Q} W = e^{2 pi i b Q_anc} | fails 3450 0, TPF (3,3),(9,-1) 0, 3 flavours 0; circle 0 vs 148 without
+[PASS] B3 [T] anomalous sets fail, exactly by the predicted phase -c sum_j theta_j (k_{j+1} - k_j) (c = sum qV qA, k: ancilla wraps) | Dirac(2,0) c=2: 182/300 fail, formula 300/300; 3452 c=-2: 191/300 fail, formula 300/300
+[PASS] B4 [T] anomaly = endpoint charge: the 2 pi axial turn cut to an interval is exactly e^{2 pi i sum qA (phi_b - phi_a)}, endpoint charges +-sum qV qA; nonzero forbids every disentangler | 3450: +0, Dirac(2,0): +2, 3452: -2
+[PASS] B5 [T] dressed charges rho_j = W L_j W^dag commute, are integers, touch sites j-1..j+1 only and sum exactly to Q (3450); for an anomalous set they sum to another U(1) | fails 0, 0; anomalous 92/150
+[PASS] B6 [T] qubit version: with Z_5 clocks (all carriers finite) the same circuit disentangles the exact Z_5 chiral symmetry iff sum qV qA = 0 mod 5; only Z_5 is exact, the chiral U(1) can only emerge in a critical clock phase (which needs N >= 5) | fails 3450 0, (5,1) c=5 0, Dirac(2,0) c=2 135, 3452 c=-2 156
+== C. light content (U = 1/pi, J = pi: v = 1, Dirac radius)
+[PASS] C1 [T] Trotterised Gaussian update: cos Om_K = 1 - 2 (eps v)^2 sin^2(K/2), stable for eps v < 1, one zero (K = 0) per flavour: no doublers; ancillas gapped by U_a L^2 | Om(pi) = 1.047 < pi
+[PASS] C2 [T] exact zero modes (E = 2 pi v/L sum(p^2 + w^2/4), P = 2 pi/L sum pw): the lowest one-flavour spin +2 states carry Q = +-6, +-8, spin -2 ones +-10, 0, 0: twice L(3,4) and R(5,0); the vector control gives equal sets | +2: [-8, -6, 6, 8], -2: [-10, 0, 0, 10]
+[PASS] C3 [T] folding (update, not Hamiltonian): at eps 2 pi v/L = pi/8 the zero modes with E = 16m sit exactly at quasi-energy 0, some with Q = 0; for any step a rotor's kinetic phases come within any delta of 0 (Weyl): unbounded carriers leave no quasi-energy gap above the vacuum | 288 states (|p|,|w| <= 8), 6 with Q = 0, e.g. (-4, 0, 8, 0)
+== D. linking (link angle a, electric E; Gauss G_j = E_{j+1/2} - E_{j-1/2} - rho_j)
+[PASS] D1 [T] Gauss law: the linked potential ({D phi - qV a} - n)^2 and the linked kinetic gate W (on-site linked gate) W^dag commute with every finite Gauss transformation and reduce to the unlinked gates at a = 0 | 300 configurations, failures 0
+[PASS] D2 [T] on-site frame: W^dag L_j W = L_j - qV P_j + y~_j, W^dag K_j W = (relabel through D phi + qV D theta) x e^{2 pi i d (theta_j - theta_{j-1})}, d = half-integer crossings of X_j = sum qA phi_j: qA acts only as whole flux units; Gauss's law eats the ancillas | failures 0
+[PASS] D3 [T] Schwinger term: continuous chiral densities qV P_j + qA dphi_j obey [rho_j, rho_{j-1}] = -i c/(2 pi): Gauss generators commute iff sum qV qA = 0 | 3450 0.0000, Dirac(2,0) 0.3183, 3452 0.3183
+[PASS] D4 [T] linked Gaussian modes (g = 0.2, K = 0.005): 3450 keeps one massless neutral mode and a photon with m^2 = (g^2/pi)(sum qL^2 + sum qR^2)/2 = 25 g^2/pi; anomalous: a chiral branch Om ~ g^2|c|/(pi K) (non-local) | m 0.56421 vs 0.56419; anomalous 5.16 vs 5.09
+== E. 3+1D: TPF blocks of four left-handed Weyls, (V, A) = (1,1), (-1,1), (0,-1), (0,-1); Y x 6
+[PASS] E1 [T] SM 16: sum Y = sum Y^3 = 0; quark blocks -3V - A = (-4,2,1,1) x 3, lepton 3V + 3A = (6,0,-3,-3); sum a^2 b = -27 + 27 = 0; 3(B - L) = -A, 3A: jointly anomaly-free with Y; a block has only the AVV anomaly (2); without nu_R (15) or for (1,5,9,-7,-8) no grouping; no SU(2)_L disentangler
+[PASS] E2 [T] Kuhn triangulation of Z^3: 7 edges, 12 triangles, 6 tetrahedra per vertex; TPF per site per generation: 4 charged vertex rotors (matter), 1 ancilla per linked U(1) (eaten), 48 fermion modes (one per triangle per block), 7 link rotors; rules: 1 mode | per vertex (7, 12, 6), Euler 0
+   [M] V - A (TWIST P_mu xi = 1.0008) needs chiral SU(2)_L, not built by TPF; nu_R is required but sterile (N_nu 2.984 +- 0.008)
+elapsed_seconds 2.4
+all [T] (D4 in the Gaussian reading, zero modes excluded). Supplied: rotor matter with winding integers, the 3450 charges and pairing (L3,R5), (L4,R0), the Dirac radius, ancillas, round-half-up, g, eps. Cited: TPF 2601.04304, Chatterjee-Pace-Shao, TWIST, PDG.
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

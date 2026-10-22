@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/a_covariant_momentum_term_keeps_the_volume_rate_shift_hyperbolic_through_collapse_and_static_stars_attract_2026_10_22.py
+runner_sha256: 0adebe3ce695a43fe679fad7a8916ed04aad17e90f7b624c265273f8040cfb45
+input_fingerprint_sha256: 0ecdd5a8db723dd292676f0400d22ca4d286ab4cf913bf1b642313bb7747d18c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 58.81
+status: ok
+----- stdout -----
+== A. exact: off-constraint symbol of ADM + tied lapse + shift law (plane wave, edges A, 1, 1)
+[PASS] A1 THEOREM: with the momentum term read on shell (as matter), the free system at kappa = kappa_max is only weakly hyperbolic on isotropic cubes (l_r = l_t): the fast longitudinal gauge mode moves exactly at c, as the light-speed constraint-violating mode does, and the two form a Jordan block; constraint violations then grow like k t | char poly ~ (v^2-1)(12v^4-13v^2+3-3kappa) [mu=3/4, q=1/3]; Jordan off-diagonals 2.00000000000000
+[PASS] A2 THEOREM: reading the momentum term covariantly, -2 D_j(K^j_i - delta^j_i K) with the cube's own edges, leaves the constraint-surface speeds unchanged (same characteristic polynomial) and is diagonalizable at kappa_max; over l_r/l_t in [1/2, 2] its eigenvector conditioning stays at the generic (variable-scaling) level while the on-shell reading's diverges at kappa_max | max cond (kappa .5,.6,.65,2/3): on-shell 5e+03 2e+03 3e+03 6e+07, covariant 4e+03 6e+02 6e+02 6e+02
+[PASS] A3 THEOREM: a shift perturbation of a static star with unchanged edges, K and matter is pure gauge: slice shift f and label shift xi obey N f_t = dN_tied(xi) - xi N', xi_t = b + N^2 f'/A, dK_ij = -D_iD_j(N f) + f D_iD_j N, dS_r = -(rho+P) N f' | identity dM_r = 8 pi dS_r checked in B7
+== B. finite diagnostics
+[PASS] B1 DIAGNOSTIC: periodic planar ADM from seeded noise (1e-6, 40 M, h = 0.1): the on-shell reading at kappa_max amplifies edge perturbations ~100-fold (secular growth of the Jordan block); the covariant reading and kappa = 0 stay within a few-fold | on-shell 2/3 x62.4, covariant 2/3 x3.6, kappa 0 x5.2
+[PASS] B2 DIAGNOSTIC: dust ball from rest at R0 = 6 M (3 r_s), adopted law read on shell: the shift at 6M after 8 M (before any horizon) does not converge: the finer grid crashes first (grid-scale growth at the isotropic core); covariant reading (with the core device of the boundary) converges | Q(6M) h .05/.025 (nan = crashed): on-shell 4.81/nan, covariant 4.811/4.814
+   t     AH   | ext l_r max l_t min | untrapped l in      | N(2M)  Q6    Q12   R_gs  rest mass
+     0.0   0.00 |  1.31  1.013 | [1.013, 1.32] | 1.310  0.00  0.00   nan 1.119
+    20.0 X 2.02 |  1.75  0.645 | [0.645, 1.75] | 0.757 11.12 18.07  2.25 0.001
+    40.0 X 2.38 |  1.71  0.621 | [0.621, 1.71] | 0.673 13.04 23.83  2.49 0.000
+    60.0 X 2.29 |  1.68  0.548 | [0.548, 1.68] | 0.609 14.44 30.19  2.51 0.000
+    80.0 X 2.11 |  1.90  0.524 | [0.524, 1.90] | 0.605 12.00 23.73  2.50 0.000
+   100.0 X 2.33 |  1.80  0.527 | [0.527, 1.80] | 0.577 12.39 23.37  2.49 0.000
+   110.0 X 2.26 |  1.79  0.506 | [0.506, 1.79] | 0.562 12.66 24.80  2.48 0.000
+[PASS] B3 DIAGNOSTIC: covariant reading: through horizon formation (AH R >= 1.5 M by t = 15.5 M), the crunch of the core (excised then, once the trapped region reaches R = 1.2 M; all rest mass through the excision by t ~ 20 M) and on to 110 M, every untrapped edge stays inside [1/8, 2] (Delta = 1, all far phases); no floor anywhere on the grid; the shift-wave sonic surface forms outside 2M | untrapped l in [0.506, 1.91]; any edge >= 0.202; R_gs 2.48 M
+[PASS] B4 DIAGNOSTIC: the vacuum attractor is the same under the covariant and on-shell readings (vacuum: the readings differ only by constraint violation), and the post-crunch matter exterior at 110 M is near it: edges within 5%, lapse within 10%, shift charge above it and still relaxing | attractor l_r 1.81 l_t 0.493 N(2M) 0.593 Q6 9.67 Q12 14.10; cov spread 0.002; collapse rel. diff lr -0.01 lt +0.03 N2 -0.05 Q6 +0.31 Q12 +0.76
+[PASS] B5 DIAGNOSTIC: the literal flat-lattice divergence, Lap beta_i - 2 d_j(K_ij - delta_ij K) with flat d_j, still runs away under the normal-frame law (post-crunch C3 persists): the vacuum attractor data fail within ~11 M | failed at t 10.8 M
+   NS1: M 1.400, R* 9.59, 2M/R* 0.292, N_c 0.670, label r/R at 208: 1.0136 | gauge amplitude peak 1.5e-02, t >= 190: 4.1e-05, by t: 0:6e-03 30:8e-03 60:2e-03 90:7e-04 120:5e-04 150:3e-04 180:5e-05 210:3e-05
+   NS2: M 1.637, R* 7.62, 2M/R* 0.430, N_c 0.461, label r/R at 208: 1.0159 | gauge amplitude peak 3.5e-02, t >= 190: 3.6e-03, by t: 0:6e-03 30:3e-02 60:3e-02 90:2e-02 120:1e-02 150:7e-03 180:4e-03 210:3e-03
+[PASS] B6 DIAGNOSTIC: static stars are attractors of the adopted law: a pure-gauge shift perturbation radiates away (M = 1.40, N_c 0.67: amplitude falls > 100-fold from its peak by 190-210 M_sun; M = 1.64, N_c 0.46 < kappa: > 5-fold and still falling), no growth; the tied-lapse static labels exist with a regular centre (r = e^(-nu_c) R) and flatten to r/R -> 1 | late/peak 2.7e-03 (NS1), 0.10 (NS2)
+[PASS] B7 DIAGNOSTIC: in the compact star (N_c = 0.46 < kappa) the same source per proper time (K, not N K) blows up within 6 M_sun (the ill-posed constant term of the shift-charge-law symbol), the per-tick form does not; the momentum identity dM_r = 8 pi dS_r holds on the evolved gauge data (h = 0.05) | K-form fails at t 6.1; identity residual 4.0e-04
+== C. estimates
+[PASS] C1 ESTIMATE: the 1.4 M_sun star sheds a shift perturbation in ~0.3 ms, the 1.64 M_sun one in a few ms; J0740-class cores (N_c ~ 0.4-0.5) need the per-tick form; no gauge-invariant observable changes | 1 M_sun = 4.9 us
+[PASS] C2 ESTIMATE: candidate fix (revision of the adopted sentence): read the momentum term with the cube's own connection, -2 D_j(K^j_i - delta^j_i K): block-local like the Laplacian, equal to the matter momentum on every constraint-obeying state, and it removes both the kappa_max Jordan block (A1-A2, B1) and the flat-lattice runaway (B5) | no new register or constant
+supplied: continuum ADM limit, spherical symmetry (B1 planar), mu = 3/4, kappa = 2/3, dust ball R0 = 6 M (tanh edge 6%), the core
+  device (on-shell, kappa 0.3 at labels r < 2, inside the horizon after excision), excision, KO 0.8, grids, TOV polytrope K = 100, Gamma = 2.
+elapsed 57.4 s
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

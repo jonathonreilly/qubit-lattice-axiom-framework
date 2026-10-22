@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/far_layers_reading_a_smoothed_field_decouple_the_mirror_from_field_strength_but_not_from_gauge_turns_topology_or_long_wavelengths_2026_10_22.py
+runner_sha256: 54e3149aafd218065b11e1f42930cf9fb47726afeef2967926a6f181b6bf09be
+input_fingerprint_sha256: e6fb792c508189b8ce00fdddc7862e15a2e58b6793ad4b71dae043613de1f7b7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.86
+status: ok
+----- stdout -----
+== A. layer smoothing rules: covariance, topology, holonomy, reach (2D U(1), L = 8)
+[PASS] A1 THEOREM per-site covariance th_s[g.th] = g.th_s[th], so the slab is gauge invariant (all layers at p turn with g(p)): yes for flow (force sin F), block-flux averaging (added a[F] is gauge invariant), anchor transports; no for link averaging without transports | rough field, 40 steps, b = 4: residuals flow 2e-15, block 2e-15, anchor 2e-15, naive 3.09
+[PASS] A2 THEOREM flow keeps Q and the mean holonomy exactly and relaxes to the uniform flux 2 pi Q/L^2; block averaging keeps Q (whole-torus block: uniform at once); coarse Wilson lines with anchor transports (naive zoom reading) pile block flux onto corner plaquettes and lose Q mod 2 pi | Q=1 lump+noise (Q, hol, max|F|, max|F-F_unif|): field (1, -2.537, 0.80, 0.70); flow200 (1, -2.537, 0.098, 6e-08); block4 (1, -, 0.25, 0.15); block8 (1, -, 0.098, 3e-15); anchor4 (0, -, 2.28, -)
+[PASS] A3 THEOREM reach: a nearest-neighbour step is stable iff eps <= 1/(2d), and flux variance grows 2 d eps <= 1 per step, so n layer-local steps smooth over r <= sqrt(n) cells; the zoom reading (layer s reads rung-s blocks) reaches 2^s | r^2/step: eps 1/8 0.500, 1/4 0.999; eps 0.26: staggered mode x 5e+06 in 200 steps
+== B. free slab (Shamir, M = 1, Ls = 8, antiperiodic 8 x 8, mf = 0)
+[PASS] B1 DIAGNOSTIC the eight lowest modes (a light pair at each momentum (+-pi/8, +-pi/8)) sit on the end layers, P_- on layer 0, P_+ on layer Ls-1; the rest is gapped | min end-layer chiral weight 0.9768; lowest singular value 0.541 (x8), next 1.00
+== C. GK layers: light end keeps the charge, far end decouples from smooth fields
+[PASS] C1 DIAGNOSTIC field seen by each end (B1 layer weights x field per layer): light end sees a photon mode in full, the far mirror ~0; both see a pure-gauge mode in full: the mirror is blind to field strength but turns under gauge transformations (GK 'fluff') | weight on layers >= 4: near 3e-07, far 1.0000; (flow, block) x k = 2pi/8, 4pi/8: photon near [1. 1. 1. 1.], far [0.0001 0.0005 0.     0.    ]; pure-gauge far [1. 1. 1. 1.]
+[PASS] C2 DIAGNOSTIC effective action (DW - PV): smoothed slabs are exactly gauge invariant and their photon response equals the light end's alone (far layers cut) to < 3%; the cut slab has an imaginary pure-gauge x photon term, the light Weyl's anomaly, which the far end's fluff cancels | photon TT/unsmoothed k1,k2: flow [0.2578 0.3282], block [0.2624 0.3286], cut [0.2562 0.328 ]; smoothed pure-gauge rows <= 5e-15; cut LxT [-0.+0.1533j -0.+0.1908j], mirror cut [0.-0.1533j 0.-0.1908j]
+[PASS] C3 THEOREM 3-4-5-0, quadratic order: responses scale as q^2 and the mirror-image slab's is the complex conjugate (g5-R5 hermiticity), so the cut slab's anomalous terms sum to sum chi q^2 = 9+16-25 = 0, but its real pure-gauge term sums to sum q^2 > 0 (needs a counterterm); the smoothed slab needs none | cut sums k1, k2: anomalous ['1e-15', '2e-15'], real pure-gauge [ 7.76 22.7 ]
+== D. topology: Q = 1 lump; the far layers read its flow-time-200 field
+[PASS] D1 DIAGNOSTIC index (spectral asymmetry of g5 D_W(-1)) of the near-layer field and the flowed far-layer field: both q Q for each 3-4-5-0 charge, so the far mirror keeps q Q zero modes | (q, near, far): (1, 1, 1), (3, 3, 3), (4, 4, 4), (5, 5, 5)
+[PASS] D2 DIAGNOSTIC Q = 1 slab: one near-zero mode with or without smoothing, right vector the near-end left-handed zero mode at the lump, left vector the far mirror's (psi-bar P_-) zero mode, only spread by smoothing: every topological event moves chi q Q light units and the opposite in the mirror; the 't Hooft vertex includes the mirror, unsuppressed | (sig0, sig1, near wt, far wt, IPR near, IPR far): unsmoothed (5e-04, 0.45, 0.942, 0.942, 2.31, 2.31); GK (4e-07, 0.43, 0.942, 0.998, 2.31, 1.19)
+   D3 THEOREM holonomy: smoothing keeps the harmonic part (A2), so under a 2 pi winding the mirror's levels still cross q times (rung-dimension-chirality B2/E2); in 1+1D a winding in time is the topological charge (D1-D2)
+== E. estimates (a = sqrt(8 pi) l_P = 8.10e-35 m; r = the far layer's smoothing radius)
+[PASS] E1 ESTIMATE layers to smooth over r: layer-local flow n >= (r/a)^2 (A3); zoom reading log2(r/a) | (r: local, zoom) 1/M_Z: 1e33, 54.6, 1/m_e: 1e43, 72.0, R_Earth: 1e82, 135.9, c/H0: 1e120, 200.1
+   E2 ESTIMATE Gamma_Z, alpha: the mirror couples at momentum k through the filter f(k) (flow exp(-k^2 t); block ~1/(k b) per direction): for r >> 1/m_e nothing added to Gamma_Z (unsmoothed e^c' alone: +35.5 MeV per family) or to alpha running m_e..M_Z; equal layer gaps, no tower
+   E3 ESTIMATE left over: a massless conjugate copy, fully charged for wavelengths > r, holonomy and topology, plus gravity; if ever thermal with the SM above the EW scale, Delta N_eff = 48 (10.75/106.75)^(4/3) = 2.25 vs Planck 2.99 +- 0.17 (excluded): it must never thermalise; soft production at r = R_Earth: Gamma/H ~ alpha^2 M_P r^-3 T^-4 = 6e-03 at T_CMB (larger T: smaller); topology makes k ~ 1/r quanta only: Delta N_eff ~ 0
+   E4 SPECULATION dark sector: as is, dark radiation of zero abundance, not dark matter; a far-layer Yukawa reading the smoothed Higgs (vev = k=0 mode, survives) would make it a stable, nearly inert massive copy; untested
+supplied: 2D U(1) toy, L = 8, Ls = 8, M = 1, mf, PV subtraction, antiperiodic BC, flow profile NF and eps, block profile BB, probes, lump, measured inputs | 2.5 s
+cited: rung-dimension-chirality, ladder-wall E3, toy-qmc, Grabowska-Kaplan 2016, Shamir, Neuberger, Jackiw-Rajaraman, Planck 2018
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

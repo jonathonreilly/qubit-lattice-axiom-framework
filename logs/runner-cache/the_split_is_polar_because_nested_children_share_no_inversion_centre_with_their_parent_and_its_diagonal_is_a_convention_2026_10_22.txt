@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/the_split_is_polar_because_nested_children_share_no_inversion_centre_with_their_parent_and_its_diagonal_is_a_convention_2026_10_22.py
+runner_sha256: 54d31ea1d545bfd4779d0b5d148d3ef25384f48b725df84d2c361cdf9ad6e3b7
+input_fingerprint_sha256: 148da4cf7a9450ca7f1b5a377735858c6abc5a1ab4ad6762dbb452874722281c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.12
+status: ok
+----- stdout -----
+== A. half-tick order (block rung, unit = 1 site)
+[PASS] A1 THEOREM: the odd tiling offset (1,1,1) equals all 8 body-diagonal offsets mod 2; it names no diagonal | distinct tilings from the 8 offsets: 1
+[PASS] A2 THEOREM: all 48 cube operations about the block centre keep each tiling and the half-tick order, and the block's causal past after 1-4 half-ticks keeps all 48 | past sizes [64, 216, 512, 1000]; ops 48
+[PASS] A3 THEOREM (causal no-go): under either reading of 'settled' (all edges; edges outside even cubes) the settled set keeps T_d about the block centre (maps +x to -x faces); the read set keeps only C3v | T_d 24; settled sets 384,240 edges/period, invariant; read 48+36=84, group 6, fixed dim 1
+== B. nestings: child lattice a + 4Z^3 (eighths), children of site p = child even cube with least corner 8p + a
+[PASS] B1 THEOREM: a parent site is a child vertex only in the 8 coincident nestings (offset 0 or a half child cell per axis); otherwise it lies inside a child edge, face or tetrahedron | coincident 8/125; centred (-2,-2,-2): parent site in a child simplex of dim 3
+[PASS] B2 THEOREM: every parent edge (axis and diagonal) is a union of child edges, so a parent hinge's deficit can sit on child hinges, exactly for the 4 coincident nestings whose parent sites are even-sum child sites (corner u with |u| even) | nested corners u: [(0, 0, 0), (0, 1, 1), (1, 0, 1), (1, 1, 0)]
+[PASS] B3 THEOREM: the centred (cell) nesting keeps T_d about the block centre (no vector) but nests no parent edge: its children cannot carry a curved parent geometry | order 24, polar False; parent site inside a child tetrahedron (dim 3)
+[PASS] B4 THEOREM: every coincident nesting keeps only a C3v of the parent background (6 operations, one fixed vector, no inversion), whatever the split rule | orders [6, 6, 6, 6, 6, 6, 6, 6]
+[PASS] B5 THEOREM (the reason): inversion centres are cell centres at each rung; coincident child cell centres sit 1/4 parent cell off every parent one, so no point inverts both rungs | common inversion centres: coincident 0, centred 8
+[PASS] B6 THEOREM: the 4 nested choices form ONE orbit of the parent background (conjugate laws); their offset vectors are the 4 tetrahedral diagonals, summing to zero: picking (1,1,1) is a coordinate convention | orbits 1; directions [(1, 1, 1), (1, -1, -1), (-1, 1, -1), (-1, -1, 1)]
+[PASS] B7 THEOREM (all depths): one child per residue mod 2^k is never symmetric about a child-lattice point (only about half-points), so no number of generations of a coincident nesting restores inversion about a parent site or cell centre | symmetric about lattice points 0; about half-points 415 (n = 2,4,8)
+[PASS] B8 THEOREM (window): a parent edge passes as two children inside their windows [L,2L] only if full: l1 + l2 = l <= 2L, l1, l2 >= L force l = 2L; with no child edge along a parent edge (non-coincident) the held-interface mechanism has no analogue | l1 = l2 = L
+== C. exclusive ownership (rederived) and new symmetric rules
+[PASS] C1 THEOREM (exhaustive, rederives collar-symmetry A6): every exclusive block ownership of the parent edges is polar: at most C3 (end-blocks), C3v (nearby blocks) | 30 subgroups of T_d; max admitting: end 3, near 6; non-polar admitting 0
+[PASS] C2 THEOREM: a shared-boundary split (refine the 8 cells around a site, read both faces, bisect a shared edge once) is O_h for its cells, but the parent's tilings cut a site to C3v (its even cube fills one octant) and the children's keep it: no gain | cells+triangulation about the site 48; parent tilings 6; with child tilings 6
+[PASS] C3 THEOREM: cycling the corner over the 4 conjugate choices by generation keeps, exactly, only the identity (the 4 C3v's meet trivially); it removes the drift (E2), not the polarity of any one split | common group order 1
+[PASS] C4 CHECK: with pass-once shared edges (bisected iff some adjacent region is split) raises commute and are injective on patterns, so the shared-boundary split is a well-defined glued operator; it costs a second owner state per shared edge | commute True; injective True
+== D. copy mass: which tiling's cubes are single-level and tick on every pattern
+[PASS] D1 THEOREM (exhaustive, 254 non-uniform patterns of a 2^3-block torus): even cubes are always single-level and tick; parent odd cubes are mixed in every pattern; an isolated split's child odd cubes never tick | mixed even 0; isolated: mixed parent odd 8, complete child odd 1, ticking 0; 2^3 cluster in 4^3: complete 27, ticking 1
+[PASS] D2 CONSEQUENCE: a copy mass on odd cubes would be absent in every interface shell; only the split's owner tiling carries it on every pattern (both tilings: Crab-excluded, register) | odd-cube mass absent on 26/27 complete child odd cubes of a 2^3 cluster
+== E. consequences and estimates
+[PASS] E1 THEOREM + check: same index map, so vertex = cell passing + rigid translation of 1/4 parent cell per axis for every state: no dispersion, no birefringence | shift (parent units) 0.2500 on 5 random states, spread 5e-15
+[PASS] E2 per split the polar nesting moves excitations by (sqrt3/2) L along its diagonal (relative to records, which stay on coincident sites); cycling the 4 choices returns the drift to zero every 4 generations | delta 7.0e-35 m; same-corner drift v 2.2e-52 m/s = 7e-61 c; cycled partial sums max 3 L/2
+[PASS] E3 ESTIMATE: drift 7e-61 c is >40 orders below lab c-anisotropy (~1e-18); helicity/energy-blind, so no birefringence or dispersion bound applies | delay per crossing 2.3e-43 s
+supplied: copy-mass symmetry and the Crab exclusion of both tilings (register); junction rule (CL-1 text); locality radius for 'near' owners; H0, l_P.
+elapsed 3.0 s
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

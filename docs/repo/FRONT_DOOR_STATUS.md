@@ -31,7 +31,7 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 5919 |
+| Ledger rows | 5933 |
 | Applied audit verdicts | 0 |
 | Retained-grade rows, including boxed decorations | 0 |
 | Retained positive theorems | 0 |
@@ -39,7 +39,7 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 0 |
 | Boxed decorations under retained parents | 0 |
 | Open gates | 0 |
-| Unaudited rows | 5542 |
+| Unaudited rows | 5556 |
 | Retained-pending-chain rows | 0 |
 | Audited conditional rows | 0 |
 | Audited renaming rows | 0 |
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 5542 |
-| Ready rows | 1884 |
+| Total pending rows | 5556 |
+| Ready rows | 1901 |
 | Cycle-break targets | 81 |
-| Critical pending | 746 |
+| Critical pending | 747 |
 | High pending | 426 |
-| Medium pending | 1425 |
-| Leaf pending | 2945 |
+| Medium pending | 1424 |
+| Leaf pending | 2959 |
 
 Next ready rows by queue order:
 
@@ -686,8 +686,8 @@ Hypothetical next dispatch top-10 under OFF-ONLY banded interleave (ready rows, 
 - 6. sim `s3_mass_matrix_conditional_degeneracy_note_2026-07-11` / actual `s3_mass_matrix_conditional_degeneracy_note_2026-07-11`
 - 7. sim `site_phase_cube_shift_intertwiner_note` / actual `site_phase_cube_shift_intertwiner_note`
 - 8. sim `s3_taste_cube_decomposition_note` / actual `s3_taste_cube_decomposition_note`
-- 9. sim `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` / actual `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
-- 10. sim `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10` / actual `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10`
+- 9. sim `plaquette_self_consistency_note` / actual `plaquette_self_consistency_note`
+- 10. sim `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` / actual `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
 
 Simulation assumptions: ready-only rows, banded lane-first 1:1 alternation, no re-queue dynamics. Lane and gap come from THIS pipeline pass (stage 16 runs after the publication renderer); churn state persists in the tracked dispatch_shadow_state.json. Cutover flags remain OFF; see the dispatch-retarget design note's Ratification Log.
 
@@ -697,19 +697,19 @@ Source: deferred package (`archive/publication/ci3_z3/`).
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 7407 |
-| Critical nodes | 779 |
-| High nodes | 484 |
-| Medium nodes | 1615 |
-| Leaf nodes | 4529 |
+| Citation-graph nodes | 7422 |
+| Critical nodes | 780 |
+| High nodes | 485 |
+| Medium nodes | 1614 |
+| Leaf nodes | 4543 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2963 descendants; score 607.533
-- `three_generation_observable_theorem_note` - critical; 1273 descendants; score 57.315
-- `observable_principle_from_axiom_note` - critical; 1004 descendants; score 53.973
-- `graph_first_su3_integration_note` - critical; 1626 descendants; score 52.168
-- `kinetic_isotropy_primitive` - critical; 965 descendants; score 49.916
-- `plaquette_self_consistency_note` - critical; 1302 descendants; score 47.848
-- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 43.514
-- `key_terminology` - critical; 1354 descendants; score 43.404
+- `minimal_axioms` - critical; 2970 descendants; score 612.037
+- `three_generation_observable_theorem_note` - critical; 1272 descendants; score 57.314
+- `observable_principle_from_axiom_note` - critical; 1003 descendants; score 53.972
+- `graph_first_su3_integration_note` - critical; 1657 descendants; score 52.195
+- `kinetic_isotropy_primitive` - critical; 964 descendants; score 49.914
+- `plaquette_self_consistency_note` - critical; 1335 descendants; score 47.884
+- `minimal_axioms_2026-05-03` - critical; 1066 descendants; score 43.559
+- `key_terminology` - critical; 1380 descendants; score 43.431

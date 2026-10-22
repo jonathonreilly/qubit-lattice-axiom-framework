@@ -30,13 +30,13 @@
     "hubble_lane5_eta_retirement_gate_audit_note_2026-04-26",
     "hubble_lane5_c3_vacuum_topology_no_active_route_note_2026-04-27"
   ],
-  "direct_in_degree": 11,
+  "direct_in_degree": 10,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.144,
+  "load_bearing_score": 9.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -129,6 +129,6 @@
   },
   "runner_path": "scripts/frontier_hubble_lane5_two_gate_dependency_firewall.py",
   "title": "Hubble Lane 5 Two-Gate Dependency Firewall",
-  "transitive_descendants": 24,
+  "transitive_descendants": 23,
   "verdict_rationale": null
 }

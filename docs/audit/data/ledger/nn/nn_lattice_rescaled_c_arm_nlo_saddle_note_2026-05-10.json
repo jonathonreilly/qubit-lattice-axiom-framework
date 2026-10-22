@@ -38,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "e7d12e5c6944bb8b3ef98b4bd5aaddc8189d7f266c617b43c32fb38cbb80be08",
+  "note_hash": "5b21676b71ec4feb2b8ab6f747de89a30bcc2ced4307021ea45837b43be5bf98",
   "note_path": "docs/NN_LATTICE_RESCALED_C_ARM_NLO_SADDLE_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -109,7 +109,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

@@ -18,9 +18,9 @@
  },
  "evidence_repair": {
   "queue_available": true,
-  "total": 409,
+  "total": 407,
   "by_gate_family": {
-   "forensic_runner_cache_not_fresh": 344,
+   "forensic_runner_cache_not_fresh": 342,
    "forensic_n5_execution_certificate_incomplete": 30,
    "runner_declared_input_missing": 21,
    "runner_declared_inputs_invalid": 9,

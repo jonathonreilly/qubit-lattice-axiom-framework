@@ -14,17 +14,15 @@
   "chain_closure_explanation": null,
   "claim_id": "frozen_stars_rigorous_note",
   "claim_scope": null,
-  "claim_type": "bounded_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "gw_echo_null_result_note"
-  ],
+  "deps": [],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
@@ -36,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "18c414526b12f71c273d250d321318d121983e1fe32facdaa5274ed4ff007705",
+  "note_hash": "fcb53731c68e9a96906090f58f0f7a56cd398a5f9055086d9b403dc7dbb2ba9f",
   "note_path": "docs/FROZEN_STARS_RIGOROUS_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -95,7 +93,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_frozen_stars_rigorous.py",
-  "title": "Frozen Stars Rigorous: Bounded Hartree Note",
+  "title": "Finite Newtonian Hartree diagnostics",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

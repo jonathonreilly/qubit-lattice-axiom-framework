@@ -44,7 +44,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4cfc58338d32585ebaf727cd20098640d3a351bb909679e3bbaa5db9e4ec542c",
+  "note_hash": "8459563cc9483f14293d1d16b500cd7b830060802f4e412a69ca6215331d395f",
   "note_path": "docs/ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026-06-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

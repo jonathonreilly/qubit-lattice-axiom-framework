@@ -31,13 +31,13 @@
     "gravity_cosmology_tower_lambda_spectral_bridge_theorem_note_2026-04-25",
     "primordial_spectrum_note"
   ],
-  "direct_in_degree": 4,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.7,
+  "load_bearing_score": 6.144,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -98,6 +98,6 @@
   },
   "runner_path": null,
   "title": "Lane 5 `(C3)` Class: No Active Vacuum/Topology Route \u2014 Audit-No-Go",
-  "transitive_descendants": 25,
+  "transitive_descendants": 24,
   "verdict_rationale": null
 }

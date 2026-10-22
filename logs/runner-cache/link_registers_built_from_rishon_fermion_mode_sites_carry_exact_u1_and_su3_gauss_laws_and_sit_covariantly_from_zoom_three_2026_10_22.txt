@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/link_registers_built_from_rishon_fermion_mode_sites_carry_exact_u1_and_su3_gauss_laws_and_sit_covariantly_from_zoom_three_2026_10_22.py
+runner_sha256: 6ffe0a025664495385be34b4e88d83e7ee462c91b11c6ffe487aa6b1d4c5df97
+input_fingerprint_sha256: 1d2ddcf4183f6de581a34c7a81ef76df94a7a25ce5979b1440c73e0e4c4ea7c2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.84
+status: ok
+----- stdout -----
+== A. U(1) link of spin 1/2 = two one-mode sites (rishons at the bond ends)
+[PASS] A1 [T] U = b^+ a, E = (n_b - n_a)/2 obey [E,U] = U, [U,U^+] = 2E on n_a + n_b = 1: a spin-1/2 link; U is nilpotent, not unitary | ||P(UU^+)P - P|| = 1.00, U^2 = 0
+[PASS] A3 [T] on a cubic site with six links, div E = 3 - N_rishon(x) exactly: Gauss's law n_psi - div E = (n_psi + N_rishon) - 3 is the cluster's fermion number; the source is the matter number (a charge, not a dipole) | 64 end patterns
+== B. 1D chain: 4 matter sites + 3 spin-1/2 links (10 modes, dense 1024 < 2^11)
+[PASS] B1 [T] the rishon-dressed hop psi_x^+ b^+ a psi_y commutes with every cluster number G_x and every link number; the bare hop psi_x^+ psi_y does not | [H,G] 0e+00, [H,N_link] 0e+00, bare 1.0
+[PASS] A2 [T] the link register is not a group-valued clock: E has 2 levels, yet exp(i sum_x alpha_x G_x) leaves H invariant for arbitrary real alpha_x, an exact continuous U(1) gauge group; block-reading E1's N | 2^(k-1) bounds unitary clocks only | random alpha, ||V H V^+ - H|| = 2e-16
+[PASS] B2 [T] the dynamical sector reached from a Gauss state keeps every G_x fixed (Gauss's law is preserved, not imposed) and E^2 = 1/4 on every spin-1/2 link: no electric energy at S = 1/2 | sector dim 5, gap 2.234
+== C. 1D chain: 4 matter + 3 spin-1 links (2 rishon flavours per end; 16 modes, sector only)
+[PASS] C1 [T] two flavours per end, two rishons per link: the flavour-singlet sector is exactly spin 1 (dim 3, su(2) relations), E in {-1, 0, 1} so E^2 has levels {0, 1}; every term is flavour-blind, so the singlet sector is preserved | singlet dim 3, E [-1.  0.  1.], [H,F] 0e+00
+[PASS] C2 [T] pure gauge without charges: div-free fluxes are uniform, E_l = e, with energies (g^2/2) 3 e^2 = {0, 1.5, 1.5}: a nonzero electric gap g^2/2 per link; with hopping (t = 0.5, m = 0.1, g^2 = 2) the Gauss sector stays gapped | pure-gauge [np.float64(0.0), np.float64(1.5), np.float64(1.5)], gap at t=0.5: 1.697
+[PASS] C3 [T] frozen matter (t = 0): an electric string of r links costs (g^2/2) r, linear in r (the 1D Coulomb law) | E(r) = 0.500, 1.000, 1.500
+[PASS] C4 [D] dynamical matter (t = 1, m = 0.1, g^2 = 4, 4 sites): H keeps every cluster number; the 2- and 3-link strings cost less than frozen (pairs screen them); the 1-link string costs more, as it also blocks the sea's hopping | [H,G] 0e+00; E(r) - E_vac = 2.554, 3.056, 5.160 vs frozen 2, 4, 6
+== D. one plaquette, four spin-1/2 links (8 modes)
+[PASS] D1 [T] the plaquette U1U2U3U4 is an 8-rishon term commuting with all corner numbers; the div-free sector is the two circulating fluxes, split by the plaquette into -J, +J (magnetic gap 2J) | sector dim 2, levels [-1.  1.]
+== E. SU(3) link: 3 colour rishons per bond end + quark triplets at both ends (12 modes, sparse)
+[PASS] E1 [T] colour Gauss law: q_x^+a c_x^a c_y^b+ q_y^b commutes with all 16 generators G^A = sum over the cluster (quarks + rishon end) of f^+ T^A f; the det term (a colour-singlet rishon triple crossing the link) is SU(3)-invariant but moves the x-cluster end number by 3 (it breaks the cluster U(1) the hop keeps), so the gauge group is SU(3), not U(3) | [H,G] 6e-17, [det,G] 6e-17, [det,N_x] 3, [hop,N_x] 0e+00
+[PASS] E2 [T] the one-rishon SU(3) link has 2N = 6 states = (3,1)+(1,3): the minimum of the several-qubits note, here on six one-mode sites
+[PASS] E3 [T] CL-2 records every mode's occupation: on rishon sites that records the U(1) electric value (E = (n_b - n_a)/2, A1) and, for colour, a gauge-variant number; so rishon roles must get no record | ||[n_c1, G^A]|| = 0.50
+== F. role placement: rotation orbits of a block and the six-bond-end representation
+[PASS] F1 [T] the six bond ends of a vertex carry the representation A1 + E + T1 of the 24 rotations | {'A1': 1, 'E': 1, 'T1': 1}
+[PASS] F2 [T] a site-centred (odd) block has face 6-orbits, so one rishon per bond end sits covariantly from b = 3; a cube-centred (even) block has none and its smallest orbit holding A1+E+T1 has 24 sites (four per end); only odd blocks have a fixed centre | b2:0/None/0 b3:1/6/1 b4:0/24/0 b5:2/6/1 b6:0/24/0 b7:3/6/1 (6-orbits/min host/fixed)
+[PASS] F3 [T] b = 3 layout: matter at the block centre, rishons at the six face centres, so along each axis the chain is matter(0)-rishon(1)-rishon(2)-matter(3) on adjacent fine sites; the gauge-invariant hop is the product of two nearest-neighbour bilinears (psi_0^+ c_1)(c_2^+ psi_3), a 4-site line gate
+   modes per coarse site (rishons at the site's own six ends): U(1) S=1/2: 6, U(1) S: 12 S, SU(2): 12, SU(3): 18; SM links at S_Y=2: 54 + matter; blocks 3^3=27, 5^3=125, 7^3=343
+[PASS] F4 [T] budget: U(1) at S = 1/2 fits b = 3 (1 + 6 of 27); SU(3)xSU(2)xU(1)_(S=2) rishons (54) plus 16 matter modes fit b = 5 (125), with rotation-invariant combinations for colour indices (only one site of a block is rotation-fixed)
+== G. estimates against measurement
+   SM 1-loop: alpha_s(M_Pl) = 0.0191 (1/g^2 = 4.17), alpha_Y(M_Pl) = 0.0180; alpha_s(m_tau) 1-loop from M_Z 0.272 (meas. 0.314)
+[PASS] G1 [E] SU(3) quantum links are quantum, so gluon loops run: b0 = 11 - 2nf/3 > 0 for nf <= 16 (asymptotic freedom, sign as measured), against b0 = -2nf/3 for definite links (definite-links D1)
+[PASS] G2 [E] reaching alpha_s(M_Pl) by dimensional reduction, 1/g4^2 = N5/g5^2 with g5^2 ~ 6/4.3 (5D Coulomb side of the bulk transition, literature value, uncertain): N5 of order 6 layers | N5 ~ 5.8
+[PASS] G3 [E] U(1): a Coulomb phase needs bare alpha below about 1/(4 pi) (compact U(1), beta_c ~ 1.01); the S = 1/2 spin-ice estimate alpha ~ 0.08 (literature, other lattice) exceeds alpha_Y(M_Pl) ~ 0.018 by ~4, so S = 1/2 is likely too strongly coupled and the hypercharge link needs larger S (more rishon flavours)
+supplied: role assignment, Gauss/flavour sectors, t, m, g^2, J, S, N5. cited: 3+1D U(1) QLM Coulomb phase, SU(N) QLM dimensional reduction (BCW), compact U(1) beta_c.
+elapsed_seconds 0.5
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

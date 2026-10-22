@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/hypercube_spin10_breaking_ruleset_a_2026_10_22.py
+runner_sha256: 9c3a99744d4019e1ed9d5a32aa55f4f88b7c42999710b0dcb116b293427d2e15
+input_fingerprint_sha256: 1b765d75899be4a4729125437a5dd224e1ac04d7f7c07cd7b47c9d832366fa6a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 6.22
+status: ok
+----- stdout -----
+== A. involutions of so(10): conjugation by a product of k Clifford generators
+[PASS] A1 THEOREM flipping k generators leaves so(k)+so(10-k): Pati-Salam (21) is k = 4, Spin(9) (36) is k = 1 | dims k=1..9: [36, 29, 24, 21, 20, 21, 24, 29, 36]
+[PASS] A2 THEOREM Theta = G1G2G3G4 (square +1) flips the 4, splits 16 = 8 + 8 = (4,2,1) + (4b,1,2) | Theta^2 = +1, 16 eigenvalues +1 x8, -1 x8
+== B. the 4D hypercubic group W(B4) acting on the 10 generators
+[PASS] B1 THEOREM commutants in so(10) of W(B4) (rotations): PS (21) only if the lattice acts through a sign on 4 generators | 4v+6.1: 15 (15); 4v+Lambda2: 0 (0); 4v+4v+2.1: 2 (2); 4v+|4|+2.1: 3 (3); 4.det+6.1: 21 (45); 10.1: 45 (45)
+[PASS] B2 THEOREM Gamma_mu realisation: inversion -> Theta, but each axis reflection -> Gamma_mu, so C = so(6), not 21 | C(G1..G4) = 15, C(Theta) = 21
+[PASS] B3 THEOREM so(4) as Lorentz: 16 = (2,1,4)+(1,2,4b), 8 Weyl, no internal SU(2), SU(4)^3 anomalous | dims L 8, R 8; tr_L H^3 - tr_R H^3 = -12.00
+[PASS] B4 THEOREM twisted (gamma_mu x Gamma_mu): all j_a + j_b integer, against measured spin 1/2 | (j_a, j_b) present: [(0.0, 0.0), (0.5, 0.5), (1.0, 0.0)]
+== C. the last step SU(2)_R x U(1)_B-L -> U(1)_Y is not a one-body commutant
+[PASS] C1 Y = (N1+N2)/2 - (N3+N4+N5)/3, X = 2N - 5: SM hypercharges and chi charges | Y values [-0.6667, -0.5, 0.0, 0.1667, 0.3333, 1.0] x [3, 2, 1, 6, 3, 1]; X [-5.0, -1.0, 3.0]
+[PASS] C2 THEOREM C(SM) = span(X,Y), abelian in gl(16) (dim 6): any one-body C(F) >= SM contains C(C(SM)) = 13 | C(SM) 2, gl(16) commutant 6, double commutant 13
+[PASS] C3 THEOREM C(Theta, J) = u(2)+u(3) = 13, C(J) = u(5) = 25 | C(Theta,J) 13, C(J) 25
+[PASS] C4 THEOREM W(B4) (and rotations) commutant on R^4 = scalars: no hypercube J, u(2) in so(4) not selected | gl(4) commutants 1, 1
+[PASS] C5 nu^c unique Y = 0 state: U(1)_chi breaking needs nu^c nu^c, odd under the protecting Z4 = exp(i pi X/2) | Z4 on 16 = -i; Y = 0 states: 1
+== D. vacuum orientation (Casimir exchange, mean field)
+[PASS] D1 THEOREM C16 = 45/4; Casimir multiplicities below: one chiral 16 has no 45 bilinear (needs mirror/composite) | 16x16 {9.0: 10, 21.0: 120, 25.0: 126}; 16x16b {0.0: 1, 16.0: 45, 24.0: 210}
+   binding Delta C = (2 C16 - C_R)/2: 1 +11.25, 45 +3.25, 210 -0.75, 10 +6.75, 120 +0.75, 126 -1.25
+[PASS] D2 THEOREM the 10 pairing has uniform gaps in every direction | sv spread 6.7e-16
+[PASS] D3 DIAGNOSTIC g0 = 0.25: F order singlet < 10 < 45 J12 < aX+bY | singlet -5.085e+00, 10 (Spin9) -1.649e+00, 45 J12 -1.173e-01, 45 best aX+bY -6.787e-02, 45 X -6.248e-02, 45 Y -6.215e-02
+[PASS] D3 DIAGNOSTIC g0 = 0.4: F order singlet < 10 < 45 J12 < aX+bY | singlet -1.117e+01, 10 (Spin9) -4.707e+00, 45 J12 -7.733e-01, 45 best aX+bY -4.535e-01, 45 X -4.179e-01, 45 Y -4.150e-01
+[PASS] D4 DIAGNOSTIC J_12 (C = 29) beats every aX+bY; best of 82 Cartan directions is one plane | Y zeros 1, best aX+bY angle 2.461, best Cartan |theta| max 1.000, C(J12) 29
+[PASS] D5 a Theta selector does not help: singlet, J_12, X, Y all commute with Theta | all four commute with Theta
+== E. owner principle: the 5 (10 = 4 + 6) from covariant clusters of one-mode sites, not one site
+[PASS] E1 THEOREM no covariant 5-site cluster: site-centred orbits even >= 8 (O_h: >= 6), body-centred even >= 16 (other centres: inversion pairs sites, argued) | site orbits [8, 16, 24, 32, 48, 64]..., body [16, 64, 96]...
+[PASS] E2 THEOREM (Frobenius, cited) group orders 384, 768, 12288, 48, 96 are 2^a 3^b: no protected 5 or 10 multiplet
+[PASS] E3 THEOREM smallest orbit carrying each 1-dim character (trivial on stabiliser) | perm sign: 192 at (0, 1, 2, 3); flip sign: 16 at (1, 1, 1, 1); det: 384 at (1, 2, 3, 4)
+[PASS] E4 THEOREM 33-site cluster (centre, corners at 1, 2): trivial x3 + flip x2 -> C = PS (21); with mode number J: 13 | multiplicities 3, 2; C = 21, with J 13
+[PASS] E5 THEOREM (Schur) a generic invariant update leaves an abelian commutant: the 3+2 degeneracy costs 3 tuned equalities | distinct levels 11; commutant of the lattice 25 (sum m^2), with a generic invariant update 11 (sum m)
+supplied: Cl(10) on 5 modes (an abstract algebra; one site holding 5 modes is a smuggling risk, see E), the W(B4) actions listed in B1, the Casimir-exchange (one-gauge-boson) channel strengths, flat-band BCS with unit cutoff, couplings g0; cited: involution classification of so(n) (Cartan), MAC heuristic
+elapsed 6.0 s
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

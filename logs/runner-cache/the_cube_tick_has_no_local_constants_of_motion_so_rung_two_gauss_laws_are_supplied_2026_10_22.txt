@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/the_cube_tick_has_no_local_constants_of_motion_so_rung_two_gauss_laws_are_supplied_2026_10_22.py
+runner_sha256: f28d238acb43fffd0575d2436e186d08be1d0521630f8d5b5287fb7de408eb5a
+input_fingerprint_sha256: c1db628d5375fed3638808e1322ff830d96007c5e7ce4ef8f6d417e050286cc3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.45
+status: ok
+----- stdout -----
+[PASS] A0 lemma: local commutant on 2 of 5 modes = Lambda-fixed count of the invariant mode space | many-body dims [1, 2, 4] (pred 1,2,4); invariant one-mode dims [0, 1, 2]
+[PASS] A1 involution eps=pi/2: no local constant of motion on star, plaquette or boxes | inv dims [0, 0, 0, 0, 0]; distinct quasienergies 13
+[PASS] A1 eps=0.3: no local constant of motion on star, plaquette or boxes | inv dims [0, 0, 0, 0, 0]; distinct quasienergies 13
+[PASS] A1 eps=0.3 mu=0.1: no local constant of motion on star, plaquette or boxes | inv dims [0, 0, 0, 0, 0]; distinct quasienergies 14
+[PASS] A1 eps=0.3 mu=0.1 MN=0.2: no local constant of motion on star, plaquette or boxes | inv dims [0, 0, 0, 0, 0]; distinct quasienergies 40
+[PASS] A1 seeded eps=0.997 mu=0.277 MN=0.15: no local constant of motion on star, plaquette or boxes | inv dims [0, 0, 0, 0, 0]; distinct quasienergies 40
+[PASS] A2 every cube hop R is an involution (R^2 = 1, face phase -1) | max err 2.2e-16
+[PASS] A3 control mu = 2 eps: even half-tick trivial, constants of motion live in single odd cubes | inv dims [2, 0, 8, 8, 64] (box4 holds 1 odd cube = 8, box6 holds 8 = 64); distinct quasienergies 2
+[PASS] A4 quasienergy range matches |A| -/+ (cos2b-cos mu)/2: flat iff A = 0 iff cos mu = cos 2eps | max 0.993956 vs 0.993956, min 0.738469 vs 0.738469
+[PASS] D1 on-site phase symmetries of the tick: one U(1) (support graph connected), number conserved | component size 512/512
+[PASS] B1 tick symmetries (mod 2Z^3) and rung-2 role symmetries share 24 of 96 maps | tiling 96, roles(+dual) 96, both 24, role-strict 12, proper role-strict 6
+[PASS] C1 2x2x2 Margolus: restrictions of stars+plaquettes span the full Pauli group of each cube's 3 edge sites | 16 cubes, both tilings: rank 6, frozen = edge sites
+[PASS] C2 covariant image set (stars and plaquettes at every site): every cube site frozen | rank 16 of 16 on all 16 cubes
+[PASS] C3 zoom: 4^3 blocks leave edge sites unfrozen in at least one tiling (theorem evaded at a coarser rung) | frozen per tiling [72, 72] of 192; free in some tiling 192/192
+[PASS] C4 random Clifford cube gates (same on all cubes, two tilings): none keeps the stars over a full tick | 0/200 keep all 32 stars+plaquettes (finite diagnostic)
+[PASS] C5 control: the identity (least information, moves nothing) keeps every star
+elapsed 2.0 s (AUDIT_TIMEOUT_SEC = 120)
+SUPPLIED: CL-1 flat-edge tick (no links, no edge registers, no split); the star/plaquette sets;
+  Clifford-only gates in C4. CITED: register band formula (A4 checks it numerically).
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

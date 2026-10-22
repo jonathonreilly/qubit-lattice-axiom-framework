@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/the_zone_corner_pairing_is_electroweak_neutral_and_its_only_doublets_carry_two_units_of_b_minus_l_2026_10_22.py
+runner_sha256: 6bff7c485949c41767170d619a5bee45d3cd6452693861f01af98977c254eca1
+input_fingerprint_sha256: 6c3bb6ce259bc1b1108f819c5415c99f4ba1b9d6a8c30e08ab8d139df5aaf056
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+== A. weight census (exact rationals)
+[PASS] A1 16 weights (+-1/2)^5, odd minus signs, B-L = (2/3)(w1+w2+w3), T3L,R = (w4 +- w5)/2, Y = T3R + (B-L)/2: content {'e^c': 1, 'n^c': 1, 'q': 6, 'd^c': 3, 'u^c': 3, 'L': 2}
+[PASS] A2 so(10): 40 roots +-e_i +- e_j (+5 Cartan); colour-zero roots with T3L = +-1/2: 0. No generator of Spin(10) is a colour-singlet doublet, so no Goldstone of any Spin(10)-breaking vacuum is one
+[PASS] A3 16bar x 16 (Dirac, psi^dag chi): every colour-zero, T3L = +-1/2 component comes from lepton x lepton (so it is a colour singlet); (Y, B-L) = [('-1/2', '-2'), ('-3/2', '-2'), ('1/2', '2'), ('3/2', '2')]; constituents [('L', 'e^c'), ('L', 'n^c'), ('e^c', 'L'), ('n^c', 'L')]. The Y = +1/2 doublet is Lbar n^c with B-L = +2: no B-L = 0 doublet
+[PASS] A4 16 x 16 (pair psi chi): colour-zero doublet components have (Y, B-L) = [('-1/2', '0'), ('1/2', '0')] only, from [('L', 'e^c'), ('L', 'n^c'), ('d^c', 'q'), ('e^c', 'L'), ('n^c', 'L'), ('q', 'd^c'), ('q', 'u^c'), ('u^c', 'q')]: the B-L = 0 Higgs-type doublets live in pairs, not in Dirac bilinears
+== B. CL-1 cube band and H' at the zone corner R
+[PASS] B1 at R, H'(R) = 0 and each (eps, s) block is one Weyl of chirality -eps*s ({(1, 1): -1, (1, -1): 1, (-1, 1): 1, (-1, -1): -1}). Same eps: light (s=+) and mirror (s=-) have OPPOSITE chirality, so their Lorentz scalar is Dirac psi^dag chi (internal 16bar x 16, A3). Same chirality needs opposite eps: an eps-odd pair (internal 16 x 16, A4)
+[PASS] B2 eps-preserving masses at R: dim 4, all purely s+ <-> s- (max diagonal block 3e-16): the corner pairing chirality needs is light-mirror Dirac; its eigenmodes are exactly half mirror (s- weight [0.5 0.5]), so the corner modes feel the mirror term at full strength
+[PASS] B3 max |[s, H'(K)]| off the nodes = 1.53 (0 at the nodes, 1e-16); cell-local commutant of H' has dim 2 = span(1, eps); the CL-1 hops anticommute with eps (0e+00). So no update has a separate light or mirror rotation: the free generator's internal symmetry is at most U(16N)_eps+ x U(16N)_eps- (H') or U(16N) (CL-1), and both rotate the light and mirror corner modes together
+   => a gauge-invariant corner pairing is sum over the six SM multiplets of w_f (f^dag f'), each Y = 0, T = 0: EW-neutral;
+      the Spin(10)-singlet one (w_f all equal) commutes with every internal rotation: it breaks no continuous symmetry, so
+      its 210 doublet fluctuations (A3) are not Goldstones (estimate: two-fermion states near twice the corner gap).
+== C. conditional: grant separate light/mirror rotations at R (U(16) x U(16) -> U(16), not in the laws)
+[PASS] C1 Sigma = exp(i theta X), X = |n^c><nu| + h.c. (the neutral Lbar n^c direction of A3): colour Casimir 4/3 on quarks; colour breaking 0e+00, charge breaking 0e+00 at every theta; m_W^2(theta)/m_W^2(pi) = sin^2(theta/2) exactly, so v = f sin(theta/2); B-L broken (2.38). Unlike the 10's S^9, this coset HAS a colour-safe misalignment angle
+[PASS] C2 Yukawa-type terms Phi psi psi with a colour-singlet |Y| = 1/2 doublet Phi and a light Lorentz-scalar pair: allowed by Z4 = i^(B-L): 16 weight-pairings for a B-L = 0 Phi (q u^c, q d^c, L e^c, L n^c), 0 for the corner doublet (B-L = +-2, Z4 charge 2). Any odd number of corner doublets has Z4 charge 2, so it gives no fermion a mass at ANY order; its vev breaks the Z4 (two vacua)
+[PASS] C3 gauge-loop invariant sum g^2 |[T, Sigma]|^2 = a sin^2(theta/2) + b sin^2(theta), a = 1.699, b = 0.276 > 0: with the standard positive vector-like sign (supplied) the vacuum aligns at theta = 0. Misaligning needs a Z4-odd source; the laws have none
+== D. edge-dressed composites and the copy pair
+[PASS] D1 edge registers are gauge singlets with no B-L (Y = 0, centre-blind): on matter x edge the gauge generators are T x 1, so a dressed bilinear has its matter bilinear's Casimir, Y and B-L exactly; edge dressing reduces (b) to A3/A4
+[PASS] D2 copy factor: operators commuting with the copy mass diag(0, M) span dim 2 = u(1) + u(1): abelian, no doublet generator; the copies carry the same 16, so copy-pair bilinears are 16bar x 16 or 16 x 16 (A3/A4), with the s = -1 member at M
+[PASS] D3 the B-L = 0 doublets (A4) sit in the pair-square 10: on n = cos(theta) t + sin(theta) h the W sum is sin^2(theta)/2 and the colour-breaking sum (4/3) cos^2(theta), so unbroken colour forces v = f (mirror-condensate C3 rederived)
+== E. scale estimate and gate
+   corner modes sit at quasi-energy 2 eps0 = 0.60 per tick (cell scale), so f ~ M = 2.44e18 GeV and the conditional coset
+   needs sin(theta/2) = v/f ~ 1.0e-16: FITTED (and Z4-odd). m_H and v/f are not computed: no unfitted input exists.
+[PASS] E1 estimate: f at the corner gap gives v/f ~ 1e-16; the angle would be a fitted 1e-16 with no source in the laws
+   GATE (tested candidate 'conserved copy sign at R'): (1) sin(theta/2) FITTED; (2) names no content (pass);
+   (3) predicts no Yukawa-type mass from the doublet (C2) -> contradicted by m_t = 172.6 GeV; Z4 breaking (Majorana nu, walls);
+   (4) bends Admissibility/CL-1 (s is not conserved off the nodes, B3). RESULT: FAIL; no structure yields a light B-L = 0 doublet.
+elapsed_seconds 0.1
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

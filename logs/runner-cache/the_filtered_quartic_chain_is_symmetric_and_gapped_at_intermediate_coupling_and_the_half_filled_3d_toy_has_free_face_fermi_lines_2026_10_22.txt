@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/the_filtered_quartic_chain_is_symmetric_and_gapped_at_intermediate_coupling_and_the_half_filled_3d_toy_has_free_face_fermi_lines_2026_10_22.py
+runner_sha256: 23d24243bd93c18c7e924e82f17d76d43b0cea734d66e4956555654731d7c79b
+input_fingerprint_sha256: d7f300087bb7344cec1b1e91e6b94b75298e74a72e5601334569df648ed32879
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 17.55
+status: ok
+----- stdout -----
+== A. exact structure of the quasi-1D geometries and of the half-filled toy
+[PASS] A1 THEOREM width-2 cross-sections: on the L x 2 x 2 torus (L = 6) the cube vectors span exactly the L - 1 off-face modes of the transverse-symmetric sector and each equals the 1D two-site filter (a_x + a_{x+1})/sqrt2 four times, so H_int is the filtered chain with coupling 4g; every k_perp != 0 mode is a free face spectator. With the toy-qmc hopping at mu = 0 that sector has band -2t cos q - 4t <= -2t: a filled band, gapped at g = 0, so the L x 2 x 2 ladder cannot test the massless-to-gapped question. The genuine quasi-1D test is the bare chain (band -2t cos q, Dirac points at pi/2) | rank 5 = L - 1; k_perp = 0 band max -2.000 t
+[PASS] A2 THEOREM in the toy-qmc model (NN hopping at mu = 0, cube filter) the face planes k_i = pi carry the free Fermi lines cos k_j + cos k_l = 1, where the filter prod cos^2(k/2) vanishes, so those modes commute with H_int: on every L^3 torus below they are exactly free zero modes, and the half-filled 3D toy is gapless through free face fermions at every g/t. A fully gapped symmetric phase of that toy is excluded; only the off-face (interacting) sector can be gapped. In 1D the face q = pi sits at +2t, away from the Fermi points | L=4: 12 of 20 zero-energy momenta lie on faces; L=6: 12 of 24 zero-energy momenta lie on faces; L=8: 12 of 68 zero-energy momenta lie on faces
+[PASS] A3 THEOREM-CHECK the open-chain alternating mode (-1)^x is orthogonal to every filter vector, so its number commutes with H_int ([n_face, H_int] = 0 on the L = 4 sector); the automaton MPO (quartic, hopping, face lift, sector penalty) equals the explicit Jordan-Wigner Hamiltonian | |[n_face, H_int]| 1.1e-16; |MPO - ED| 8.9e-16, with penalty 1.5e-13
+== B. exact diagonalisation, open chain L = 4 (sectors Q = (n0-n3, n1-n3, n2-n3); g = 1, t = 1/r; face lift 10)
+   r = g/t =  1.0: p  0.603t (0.98x free) h  0.777t (1.49x free) pair  1.169t (0.95x free) adj  1.384t (1.22x free) ex  1.342t (1.18x free)
+   r = g/t =  2.0: p  0.626t (1.01x free) h  1.409t (2.71x free) pair  1.132t (0.92x free) adj  2.012t (1.77x free) ex  1.825t (1.60x free)
+   r = g/t =  4.0: p  0.929t (1.50x free) h  1.623t (3.12x free) pair  1.403t (1.13x free) adj  3.923t (3.44x free) ex  1.949t (1.71x free)
+   r = g/t =  8.0: p  1.935t (3.13x free) h  2.532t (4.86x free) pair  2.494t (2.02x free) adj  8.521t (7.48x free) ex  3.300t (2.90x free)
+   r = g/t = 16.0: p  4.100t (6.63x free) h  4.666t (8.96x free) pair  4.911t (3.97x free) adj 18.038t (15.84x free) ex  6.464t (5.68x free)
+[PASS] B1 FINITE DIAGNOSTIC L = 4 exact: unique neutral ground state in every coupling; from g/t = 4 every sector gap exceeds its free value (all > 1.1x), the pair (charge-2, SU(4) 6) channel being the softest ratio; at g/t = 1 the gaps stay within 1.5x of free | pair ratio 1: 0.95, 2: 0.92, 4: 1.13, 8: 2.02, 16: 3.97
+== C. DMRG (two-site, unlabelled MPS, sector chosen by an exact penalty lam sum_i (Q_i - t_i)^2, chi <= 64)
+[PASS] C1 consistency DMRG (chi 64) reproduces the L = 4 exact sector energies (Q = 0 and pair) at g/t = 4 within 1e-2 g (0.04 t, below 3% of the gaps it resolves) | max error 6.0e-03 (g units)
+   L = 6, g/t = 4: E0 -5.8359; pair gap 1.870t (1.74x free), particle gap 1.425t (2.65x free); S_pair(0) 0.495 (free 0.500); <P+_1 P_y> y = 3..: [0.0249, 0.009, 0.0074]; centre density 1.701, 1.701 [17 s]
+[PASS] C2 FINITE DIAGNOSTIC g/t = 4, L = 4 -> 6: the pair gap and the particle gap stay of order t while the free gaps fall as 1/L, so their ratios to free grow with L (no 1/L closing as quasi-long-range pair order would give); the pair structure factor stays at its free value 1/2 (no enhancement) and <P+_1 P_y> is below 0.01 beyond distance 2 | pair ratio 1.13 -> 1.74; particle ratio 1.50 -> 2.65; pair gap 1.40 -> 1.87 t
+[PASS] C3 FINITE DIAGNOSTIC no translation breaking at the centre of the L = 6 chain: the two centre sites carry equal density (reflection-symmetric profile, no period-2 density wave beyond the edge Friedel pattern) | centre densities 1.701, 1.701
+L = 8 (DMRG chi 96, and the full g/t scan at L = 6, 8) are production runs recorded in the note, not recomputed here
+supplied: toy content (4 flavours, SU(4)-singlet quartic c1c2c3c4 + h.c. on the two-site filter), toy-qmc hopping at mu = 0, open chains, the face lift (10) on the exactly decoupled alternating mode, sizes, chi, seeds, penalty lam = 6
+cited: composite-band-3d (sheared tori, 6-ring), filtered-smg-1d, toy-qmc (3D pair order at g = infinity)
+elapsed 17.2 s
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/fine_rate_octree_ladder_charged_coarse_sea_magnetic_response_doubles_per_rung_2026_10_21.py
+runner_sha256: 73295434c88379efc0d7e3dc709ec477ba38b1db9eb6eff37437d6a4d102aa7d
+input_fingerprint_sha256: dd214c8912b38c2fac8e461720ca80c38b1703440c8e6b5a1a146963873f5761
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 27.49
+status: ok
+----- stdout -----
+== A. exact: coarse links, charges, per-rung scaling
+[PASS] A1 THEOREM coarse holonomy = enclosed flux: rung-j plaquette phase = 4^j x fine plaquette flux, gauge invariant (Stokes; any local covariant transport gives the same up to O(dF)) | rungs 1, 2, random gauge: max error 4e-15
+[PASS] A2 THEOREM the ladder graph is connected, so a U(1) commuting with it gives coarse modes the fine charge: coarse rungs are charged (neutral coarse modes would make the light charge leak through H5) | components 1 of 288 modes
+[PASS] A3 THEOREM power counting at the fine rate (energy per rung-j cell in ticks, cell volume 8^j): B^2 per volume x 2^j, E^2 x 2^-j, B^4 x 32^j; so d(1/mu)_j = 8 pi alpha q^2 (c_b/v) 2^j and d(eps)_j ~ 2^-j | exact for j = 0..5
+== B. field-induced compensating modes (mu = 0, X' = W(1+g5)/2; slopes in units v/Lz)
+[PASS] B1 R = 1, 16x16x4: flux F gives |F| rung-0 lowest-Landau-level branches and |F| compensating branches of opposite slope on rung 1; compensating velocity / light velocity = <2^j> within 10% | F=1,2,3: ratio 1.86, 1.86, 1.82; <2^j> 1.98, 1.98, 1.93; rung-0 slope 1.96
+[PASS] B2 R = 2: the compensating branch moves at <2^j> times the light speed (middle rung 8^3, top rung 16x8x8) within 10%: velocity 2^j* c on the landing rung j* | (8, 8, 8): 2.20 vs 2.23; (16, 8, 8): 2.77 vs 2.92
+[PASS] B3 DIAGNOSTIC hybridisation of rung-0 and compensating branches (avoided crossing at k_z = 0, one rung apart): small, sublinear in F | gap F=1,2,3: 4.0e-04, 6.9e-04, 7.6e-04 rad/tick (bulk gap 1.6e-2)
+== C. coarse-rung bulk magnetic response (species mass mu on every rung gaps the ladder; energy = sum of sea quasi-energies)
+[PASS] C1 DIAGNOSTIC 32x32x8-equivalent tori (Bloch twists): gapped (min |w| >= 0.7 mu), quadratic in flux (c(F=2)/c(F=1) = 1 +- 0.1), field costs energy (diamagnetic) on every rung | gap/mu 1.00, 0.78; c(2)/c(1) 0.996, 0.956
+[PASS] C2 DIAGNOSTIC per-site coefficients dE = c Phi^2 (Phi = plaquette flux, rad/tick): single rung c0; R = 1 total and by rung; bulk rung c_b = (c1 - 2c0 + c_rung0)/2 > 0 in its own units | c0 5.99e-04; c1 2.15e-03 = 7.18e-04 (rung 0) + 1.44e-03 (rung 1); c_b 8.37e-04
+[PASS] C3 DIAGNOSTIC rung locality of the self-similar recursion E_R(Phi) = E_(R-1)(4 Phi on the coarse lattice) + A(Phi): A independent of R, so the coefficient grows as 2^R (c0 + A) | A(R=1) -9.6894e-03, A(R=2) -9.6396e-03 (F = 1, plain tori)
+== D. against measurement (estimates; a = sqrt(8 pi) l_P = 8.10e-35 m site spacing, light speed = rung-0 speed)
+   compensating modes: rung j*(B) = 87 (1 T), 86 (5.4 T), 71 (1e10 T, magnetar), 62 (1e15 T, heavy ions); 1D chiral branch along B, velocity 2^j* c = 1.5e+26 c at 1 T; next Landau level ~ E_a = 2.4e18 GeV; rung-0 overlap amplitude ~ 10^-2303 (octree-unify D1 law); net charge inflow 0 (sum q^3), conductance along B ~ sum |q|^3 != 0
+   bulk stiffness: K = 8 pi alpha (16/3) c_b / v = 0.018; d(1/mu) = 1.7e+20 (electron Compton length), 3.5e+26 (1 um), 2.3e+31 (0.1 m); electric d(eps) converges (sum 2^-j)
+   light: photon/matter speed at 1 um = 1.9e+13 (bound |dc/c| < 3e-19, photon decay at 1.4 PeV); static vs atomic 1/mu ratio 1.4e+11 (current balances vs alpha agree to ~1e-6; Weber-Kohlrausch/Rosa-Dorsey ratio of units = c)
+   PVLAS 2.5 T: nonlinear rung-j* anisotropy dn ~ 1.4e+24; compensating-branch polarisability (2 cm field line, 1 mm beam) dn ~ 3.8e-19; measured (12 +- 17)e-23, QED 2.5e-23
+   IXPE magnetars (1e10 T): coarse anisotropy ~ 4.2e+19 vs QED vacuum term 6.3e-04 (polarisation 12-80% fits QED mode physics)
+   Penning g-2 (5.4 T): loop photons at k ~ m_e see d(1/mu) ~ 2e+20, an O(1) change of a_e = alpha/2pi vs agreement to 1e-10; compensating mixing 10^-2303: no direct shift
+   energy loss: photon -> compensating pair absorption length ~ 2e+19 m at 1 T, 1.17 eV; thermal weight c/v = 6e-27: sterile
+[PASS] D1 estimates: bulk stiffness exceeds the light-speed bound by > 1e30, the static/atomic ratio by > 1e10, PVLAS by > 1e40; compensating branches are sterile in mixing and emission but their polarisability exceeds PVLAS (geometry-dependent) | 27.0 s
+supplied: octree sites, fine rate, X', kap = 0.5, M = st = 0.04, the species mass mu = st used to gap the ladder in C, tori and twists, axis-ordered transport, the sea as vacuum, a = sqrt(8 pi) l_P, landing threshold pi/4, PVLAS geometry.
+cited: octree-16 C1/C2 counts, octree-unify D1 law, induced-action velocity rescaling, measured values.
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

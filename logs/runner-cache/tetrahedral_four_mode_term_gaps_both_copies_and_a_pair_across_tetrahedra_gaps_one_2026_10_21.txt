@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/tetrahedral_four_mode_term_gaps_both_copies_and_a_pair_across_tetrahedra_gaps_one_2026_10_21.py
+runner_sha256: 69deea6ccf1ebaaecb8b99959cb156f9dd380a0a1892a679fb49d9a135009d30
+input_fingerprint_sha256: ee6768bb7e1cb7b91713103955eef053c44b1f8e21a23deb329c098b3d483616
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 7.61
+status: ok
+----- stdout -----
+== A. one cube (rung 0): tetrahedral top forms, copies, mirror
+[PASS] A1 [theorem] a tetrahedron has one four-mode term (top form O_e, O_o); the 12 even turns fix each (det 1), the 12 odd turns swap them, so O_e + O_o is the only rotation-covariant one (O_e - O_o is A2); inversion swaps them; M fixes both with one phase, so M survives every tetrahedral term | Lambda^4: 70 terms, 7 rotation-invariant (5 M-even, 2 M-odd), 10 tetrahedral-invariant; M phases +1, +1; M U(K) M^+ = U(-R K) to 5e-15
+[PASS] A2 [theorem] the two light copies (C3 character w, w^2) are the eigenspaces of s3 = -S F, F the face-diagonal spin-3/2 hop (F^2 = 1, [F,S] = 0, {F,W} = 0); s3 commutes with W and every [C_a, W], so with the light algebra at every step (broken at O(K^2)); each tetrahedron holds one F-pair of each copy; S = g5 s3 (g5 = -F) at step pi/2 | copies vs -SF: 1e-11, 4e-11, 3e-10 (steps pi/2, .3, .04); |[s3,U(K)]| slope 2.00; |S - g5 s3| = 0.70, 0.96 at .3, .04
+[PASS] A3 [theorem] pair products: O_e = (B-pair)(A-pair) of one tetrahedron; O_A, O_B = one F-pair from each tetrahedron = top form of one copy. C3 charges (1,1,w,w^2); odd turns swap O_e<->O_o, O_A<->O_B; inversion fixes O_A, O_B; M fixes O_e, O_o, swaps O_A<->O_B; the 12 even turns forbid all copy-mixing bilinears | C3 alone would allow 4 mixing bilinears; terms with the character of O_B: 6 (4 inversion-even), O_B the only one-copy one
+== B. K = 0 (0+1D): Fidkowski-Kitaev and which copy is gapped
+[PASS] B1 [theorem] K = 0 tick = 1 at mu = 0 (8 zero modes, every step); on a tetrahedron (8 Majoranas, even under the antiunitary c -> c^dag) generic invariant interactions leave a unique state only for 8 Majoranas (Z8); top form + h.c. is a real quartic Majorana term: the FK term | degeneracies {2: 2, 4: 2, 6: 2, 8: 1}; Majorana orders in top form [4]
+[PASS] B2 [theorem] one cube, K = 0: g(O_e + O_o + h.c.) has a unique ground state (both copies gapped; copy A carries 2 ln 2 entanglement); g(O_B + h.c.) leaves exactly 2^4 states = copy A free x copy B unique, gap g; tr(W P_B) = 0, so O_B commutes with every free half-tick, O_e does not | (degeneracy, gap): tetra (1, 1.000), one tetrahedron (16, 1.000), copy B (16, 1.000); |[G(e^iW), O]| 4e-16 / 0.36
+== C. two-cube chain (4x2x2 torus, both tilings, 16 modes, sparse 2^16)
+[PASS] C1 free 16-mode tick: 8 zero modes (uniform, K = 0) and the K = (pi,0,0) modes at |w| = arccos(1/3) (step pi/2), ~1.15 st (step .04) | |w| = 1.231, 0.0462
+[PASS] C2 [finite] H = h + g sum_cubes(term + h.c.), g = 1, all N mod 4: the tetrahedral term leaves a unique gapped ground state; the one-copy term leaves exactly 16 states (uniform copy-A modes, 2/4/6/4 over N mod 4) and gaps the rest | gaps (tetra, copy B): step 1.57: 0.395, 1.028; step 0.04: 0.826, 0.343  [6 s]
+[PASS] C3 [finite] Floquet form, term inside each cube unitary exp(-i(st W + g T)), step .04: the uniform copy-A modes commute with the interacting tick for the one-copy term (light copy exactly free at K = 0), not for the tetrahedral term | max |U a - a U| on random states: one-copy 5e-16, tetrahedral 0.46  [7 s]
+== D. rung 1: one 2x2x2 cell = C^4 (body diagonals) x C^2 (tetrahedron parity)
+[PASS] D1 [theorem] the intra-cell tetrahedral top form is a colour singlet, B - L = 0, but weak isospin 2 (T3 = X/2) and on odd cells hypercharge -2..2: it breaks SU(2)_L or U(1)_Y. Invariant four-mode terms of a cell: none on even cells, two on odd cells (uude, uddn), both dN = 4, d(B-L) = 0 | Casimir 6; Y weights [0.0625, 0.25, 0.375, 0.25, 0.0625]; under CL-5 the literal term deletes the W and hypercharge links
+== E. anomalies of the residual Z4 (left-handed Weyl basis, exact fractions)
+[PASS] E1 [theorem] on every Weyl field X = 5(B-L) - 4Y = 1 mod 4 and exp(i pi X/2) = exp(i pi N/2)(-1)^F z_SU(2): the residual Z4 of mode number is the Spin-Z4 symmetry up to gauge | N - X mod 4 = 0 on doublets, 2 on singlets
+[PASS] E2 [theorem] per family with n^c: U(1)_N anomalies N-Y^2 = -2, N-SU(2)^2 = 2; Z4 anomalies SU(2)^2: 4 = 0 mod 4, SU(3)^2: 0, (6Y)^2: -72 = 0 mod 4, gravity: 0; Z16 index 0 (N) and 16 = 0 mod 16 (X); without n^c 1 and 15: so a family is symmetric-gappable only with n^c, and Z_k of N survives instantons iff k | 4 (Z4 or Z2)
+[PASS] E3 [theorem] Z4 selection rule dN = 3dB + dL = 0 mod 4: allows B-L-conserving proton decay and dL = 4; forbids Majorana masses, 0nubb, n-nbar and B+L-conserving proton decay to all orders
+== F. estimates against measurement
+   proton: O(1) coefficient at Lambda = M_P/3, W0 = 0.15 GeV^2: tau(p -> e+ pi0) ~ 3e+46 yr vs > 2.4e34 (Super-K); safe for Lambda > 4e+15 GeV;
+     via the one-copy term the light family reaches it only through copy mixing ~ (ka)^2 per leg
+   n-nbar: forbidden by Z4 (measured tau > 8.6e7 s free, > 4.7e8 s bound); Majorana nu and 0nubb forbidden (T1/2(Xe) > 3.8e26 yr): neutrinos Dirac, no seesaw
+   baryon excess: every dN = 4 piece here conserves B - L, so sphalerons leave B = (28/79)(B-L) = 0, against eta_B = 6.1e-10; the term is in equilibrium only above ~7e+18 GeV
+   links: U(1)_N is broken (no N link); B - L is kept by the tetrahedral and Spin(10) forms, so its massless link survives unless a dL = 4 term is added
+[PASS] F1 estimates: proton safe by > 1e10 in rate; n-nbar, 0nubb forbidden; B - L conserved so no surviving baryon excess from this term
+theorems: A1-A3, B1-B2, D1, E1-E3.  finite: C1-C3 (C2 uses the static stand-in h = i log(tick)).  estimates: F.
+cited: Z16 (Spin-Z4), SMG existence for an anomaly-free 16, sphaleron factor 28/79, lattice W0, measured bounds.
+supplied: the four-mode terms, g, which copy is the mirror (one handedness bit), the rung-1 gauge generators, h = i log(tick).
+elapsed_seconds 7.1
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

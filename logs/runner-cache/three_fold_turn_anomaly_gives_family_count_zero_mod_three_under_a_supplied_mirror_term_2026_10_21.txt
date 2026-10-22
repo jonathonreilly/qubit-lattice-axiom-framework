@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/three_fold_turn_anomaly_gives_family_count_zero_mod_three_under_a_supplied_mirror_term_2026_10_21.py
+runner_sha256: 8f70b6935e4ade96db3101a9feab8f3d67f1272eeae938ef9e28525d8a9fe3c4
+input_fingerprint_sha256: b34f07872e9900e1ae24d474fecccf91a62ab035d753ea6af8603d9e13a2f359
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.20
+status: ok
+----- stdout -----
+== A. windows of H'
+[PASS] A1 H'(K+R) = -H'(K), the turn maps H'(K) to H'(R3 K), zeros of H' on an 8^3 grid only at Gamma and R | residual 1e-15, zeros 2
+[PASS] A2 Gamma: even sublattice (q2, L) + (q1, R), odd (q1, L) + (q2, R); at R the same copy charges with handedness flipped | q = copy charge of the internal part of the turn (rho^3 = 1)
+[PASS] A3 theorem: per doublet the Z3_k x SU(2)_e^2 window index is +1 at Gamma and -1 at R for every twist k (each window holds one L and one R doublet, so the twist cancels); with 4 doublets per family: +-4N, total 0
+[PASS] A4 geometric reading: the turn on the 8 corners of a cell has charges {0^4, 1^2, 2^2} (sum 6); if it commutes with the weak SU(2) each doublet has one charge and the 4 doublets add 3 = 0 mod 3, so 4N(q + k) is reading-independent
+== B. twist selection
+[PASS] B1 theorem: copy A (s3 = +1) is the q1 copy; the plain turn gives its top form O_A charge 1 and O_B charge 2; a twist k multiplies a four-mode term by w^(4k) = w^k, so O_A keeps only k = 2 = -q1 and O_B only k = 1 = -q2
+[PASS] B2 one-cube four-mode terms covariant under the 12 twisted tetrahedral turns, by copy content (n_A, n_B): every twist has number-changing terms, the single-copy one only for k = 2 (mirror-type O_A) and k = 1 (O_B) | {0: {(2, 2): 10}, 1: {(0, 4): 1, (2, 2): 1, (3, 1): 4}, 2: {(1, 3): 4, (2, 2): 1, (4, 0): 1}}
+== C. anomalies of the gapped set S = {Gamma-b, R-a, R-b}, light = Gamma-a (q_a = 2)
+[PASS] C1 theorem, per family: Z3_k x SU(2)_e^2 of S = -4(q_a + k), x SU(2)_o^2 = +4(q_a + k); U(1)_N x SU(2)_e^2 = -4 (N must break; Z4 part 0 mod 4); 12 doublets per SU(2) (no Witten anomaly); Z16, Z3^3, Z3-gravity and translation-Z2 parts 0; the mirror pair {Gamma-b, R-b} is anomaly-free for every k
+[PASS] C2 conditional theorem: S can be gapped keeping SU(2)_e x SU(2)_o and the k-twisted turn only if N(q_a + k) = 0 mod 3. The mirror top form fixes k = -q_b = 2: N = 0 mod 3, smallest N = 3 (no further anomaly). At k = -q_a = 1 every N passes | allowed N per twist k: {0: [3, 6, 9], 1: [1, 2, 3, 4, 5, 6, 9], 2: [3, 6, 9]}; from the A2 pieces with light = q1 (SU(2)_o weak): mirror O_B (k = 1) [3, 6, 9]
+[PASS] C3 theorem: sublattice twists exp(2 pi i (k_e N_e + k_o N_o)/3) kept by O_A (2 + 2 modes, so 1 + 2(k_e + k_o) = 0) never rescue N = 1, 2, 4, 5: SU(2)_e needs k_e = -q_a, SU(2)_o needs k_o = -q_a, and O_A then has charge 2 | O_A-compatible (k_e, k_o): [(0, 1), (1, 0), (2, 2)]
+[PASS] C4 theorem (chiral-smg C6, narrowed): the R window alone carries -4 per family for every twist, so a gap acting on R alone needs N = 0 mod 3; translations allow terms with two R fields, so the R window need not be gapped alone
+[PASS] C5 family-dependent twists (k = 2 plus t_f; O_A on family f needs t_f = 0): O_A on every family forces t = 0 (C2); with O_A on at least one family, family-dependent rules allow every N >= 2 (N = 1 never), e.g. N = 2 with t = (0,1) | solutions: N=2 2, N=4 22
+== D. 1+1D toy: each taste is a 3-4-5-0 multiplet; even sector (U(1)_e) and odd sector (U(1)_o, handedness flipped)
+[PASS] D1 lemma (proof in report): a neutral Lagrangian L forces K t in L, so z.K t = 0 mod 3; the toy anomaly of S is -2N(q_a + k) per sector (3 + 4 - 5 = 2 replaces the 4 doublets)
+[PASS] D2 exact toy, N = 1,2,3,4,6: every case is either obstructed (anomaly nonzero) or gapped by an explicit Lagrangian (null, neutral under U(1)_e, U(1)_o, Z3_k, translation; Smith form all 1): gapped iff N(q_a + k) = 0 mod 3 | k=0 xxGxG, k=1 GGGGG, k=2 xxGxG (G gap, x obstructed)
+[PASS] D3 the mirror-only pair term is neutral only at k = -q_b = 2; a gap acting on the R window alone is obstructed for N = 1, 2, 4 at every k; the family-twisted N = 2 case (k = 2, t = (0,1)) has an explicit Lagrangian
+== E. estimates
+   N_nu (LEP 2.984 +- 0.008): an ungapped R-a taste doubles the active neutrinos: N=1 -> 2 (123 sigma), N=3 -> 6 (377 sigma); N=3 with S gapped -> 3 (2.0 sigma)
+   breaking every twisted turn: lattice-scale loops give light-cone anisotropy >~ alpha/4pi = 6e-04 vs |c_jk| < ~1e-18 (electron, trapped-ion tests): excluded by ~1e14, so one twisted turn must stay exact
+   4th family: k = 2 forbids N = 4 (and 5); N = 6 is allowed by the anomaly but N_nu = 6 or heavy chiral copies are excluded
+   family supply: (2m)^3 cells hold m^3 rung-1 families, m^3 mod 3 = {1: 1, 2: 2, 3: 0, 4: 1, 6: 0, 8: 2}; 2^n zooms never give 3 | N, so with k = 2 the one-family rung-1 reading is excluded and zoom 3 (6^3, 27 per cell) is the smallest cubic supply
+   k = 2: every light field has twisted charge q_a - q_b = 1, so Lorentz-scalar light Delta N = 4 operators (charge 4 = 1) are forbidden; family-blind, so no mass or mixing pattern follows
+elapsed_seconds 0.1
+theorems: A3, B1, C1-C5, D1 lemma; finite: A1, A2, A4, B2, D2, D3; estimates: E. Supplied: H', rung-1 (4,2) with SU(2)_e as weak group, which copy is light, the twist rule, the toy charges.
+
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

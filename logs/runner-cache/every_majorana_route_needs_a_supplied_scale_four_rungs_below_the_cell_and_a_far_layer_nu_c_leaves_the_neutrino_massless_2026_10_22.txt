@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/every_majorana_route_needs_a_supplied_scale_four_rungs_below_the_cell_and_a_far_layer_nu_c_leaves_the_neutrino_massless_2026_10_22.py
+runner_sha256: bcff636e177239c1ee1a317ff16b0127125848932cd35ac8c356a30bf50db140
+input_fingerprint_sha256: ee670fab26aa0b38262f0cfa22724dddd5069e4776fd38d636aff548a41f17d3
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+== A. exact statements
+   Z4 charges: L H nu^c (Dirac) 0, nu^c nu^c (Majorana) 2, L L H H (Weinberg) 2, (nu^c)^4 0, nu^c N 0, L H N 2, N N 2
+[PASS] [T] A1 every Majorana-type mass (nu^c nu^c, LLHH, N N, L H N) has Z4 charge 2 and every Dirac-type term (L H nu^c, nu^c N) charge 0; registers carry B - L = 0, so no register, fold or edge configuration can break the Z4: only a matter vev of charge 2 (a lepton-number-2 condensate) or an explicit bilinear can
+[PASS] [T] A2 a charge-2 condensate breaks Z4 -> Z2 with |Z4/Z2| = 2 degenerate vacua (phi, -phi): a spontaneous route to a Majorana mass makes domain walls | orbit [-1.0, 1.0]
+[PASS] [T] A3 any number of heavy Majorana states with masses >= M gives ||m_nu|| <= ||Y||^2 v^2/M (checked on 300 random instances, 1-30 heavy states); a Dirac seesaw via a vector-like singlet pair gives m = m_D mu/M: with v the only light scale both are capped by (coupling)^2 v^2/M | max ratio 1.000; Dirac-seesaw light/(mD mu/M) 1.00000, 0.99999, 0.99980
+[PASS] [T] A4 mirror mixing (d): Z4 allows nu^c N (charge 0) but no N N, nu N or L H N; rows (nu, N) share nu^c, so the number of light massive neutrinos is 3 - rank(nu^c N block); measured (two splittings) needs rank <= 1: mirror mixing removes masses, never makes one | light massive for rank 0..3: [3, 2, 1, 0]
+[PASS] [D] A5 rectangular (index-1, mirror-free) far-layer nu^c: light Dirac mass = y0 v sqrt(1-q^2) q^(Ls-1)/sqrt(1-q^(2Ls)) (Ls=10, q=1/2) | SVD 1.6915e-06 vs 1.6915e-06
+[PASS] [T] A6 the register's square slab with a reversed (far-layer) nu^c puts its mirror xi on layer 0 with charge -1 like nu: rows (nu, xi) exceed columns by one, so one state is exactly massless; the light block is [eps chi0; sigma], sigma ~ q^Ls/a the slab's own leak, and since eps chi0/sigma ~ y0 v a/q ~ 1e-16 the massless state is the neutrino | toy eps=1e-3: nu share 0.999996 (pred 0.999995); lightest massive 7.324e-04 vs hypot(sigma, eps chi0) 7.324e-04
+[PASS] [T] A7 at the wall height M = 1 of the smoothed-layer slab, q(p) = sum(1 - cos p_i) vanishes at rest: the far-layer overlap is 0 exactly at p = 0 and ~ p^(2(Ls-1)) away from it: no neutrino mass | Ls=8: overlap at p=0,0.1,0.2: 0.0e+00, 7.8e-17, 1.3e-12
+== B. estimates against measurement
+   NO m1=0: m = 0.0000, 0.0087, 0.0501 eV, Sigma 0.0588, Majorana m_bb 0.0015-0.0037 eV; IO m3=0: Sigma 0.0989, m_bb 0.0183-0.0482
+[PASS] [E] B1 Sigma < 0.064 eV excludes inverted ordering (Sigma_min 0.099) and needs NO with m1 < 0.0041 eV; Majorana routes then give m_bb <= 0.0068 eV (below LEGEND-1000 / nEXO reach of ~0.01), Dirac routes m_ee = 0 exactly
+   y_t(M_cell) = 0.414, kappa run 0.755; scale needed for m3 = 0.0501 eV (rungs below cell):
+     type-I y=y_t(M) 7.81e+13 (14.9); type-I y=1 4.57e+14 (12.4); Weinberg c=1 (v=246) 9.14e+14 (11.4); type-I y^2=4pi 5.74e+15 (8.7); NDA c=16pi^2 1.44e+17 (4.1)
+   m3 at y=1 / at NDA strong coupling: cell 1/L [fixed] 9.4e-06 / 3.0e-03 eV; 1/l_P [fixed] 1.9e-06 / 5.9e-04 eV; floor 8/L [fixed] 1.2e-06 / 3.7e-04 eV; window top, Delta=1 [Delta>=1 supplied] 3.8e-05 / 1.2e-02 eV; nested block /24 [size supplied] 2.3e-04 / 7.1e-02 eV; edge block /b_e=40 [b_e>=40 supplied] 3.8e-04 / 1.2e-01 eV
+[PASS] [E] B2 (a)+(b) with every heavy state at a law-fixed scale (cell, Planck, floor) even maximal strong coupling (NDA 16 pi^2) gives m3 <= 3.0e-03 eV, 17x short; at y = 1 the scale must be 12.4 rungs below the cell, and only scales carrying a supplied size (window Delta, block or edge-block size) reach it
+[PASS] [E] B3 look-elsewhere: with a free integer rung 2^-n the target is always within x2 for steps <= 4, so a rung hit at n ~ 11-12 (brief's 1.2e15) is no evidence unless a law fixes n | P(hit) for step 2,4,8: 1.00, 1.00, 0.67
+[PASS] [E] B4 (b) spontaneous Z4 -> Z2 at M_R ~ 4.6e+14 GeV: walls of tension ~M_R^3 dominate at T ~ 2e+12 GeV (>> MeV) and exceed the Zel'dovich-Kobzarev-Okun bound sigma^(1/3) < ~1 MeV by 5e+17: excluded unless a dilution phase after the break or a supplied Z4-breaking bias
+   y_nu = 2.88e-13; far-layer slab needs y0=1.00 q=0.10: Ls-1=12.5; y0=1.00 q=0.25: Ls-1=20.8; y0=1.00 q=0.50: Ls-1=41.5; y0=1.00 q=0.80: Ls-1=127.1; y0=0.41 q=0.10: Ls-1=12.2; y0=0.41 q=0.25: Ls-1=20.2; y0=0.41 q=0.50: Ls-1=40.2; y0=0.41 q=0.80: Ls-1=123.2
+[PASS] [E] B5 (c) the mirror-free far-layer slab trades y_nu for (q, Ls): integer Ls and any q >= 1/4 always hit within x2 (no evidence); exponential spacing makes m1 << m2 << m3 natural (NO), while IO needs two equal Ls and order-one entries whose singular values agree to 1.5% (0 of 40000 anarchic draws); Dirac, so m_ee = 0; Sigma = 0.0588-0.0604 eV for m1 = 0 to q m2 (q ~ m2/m3 = 0.17): just under the 0.064 bound
+[PASS] [E] B6 one slab for all species (shared q, Ls; free-slab reading in which the leak q^Ls M pairs every light fermion with its far mirror): q^Ls M < m_e and q^(Ls-1) = y_nu force q < 7.3e-10 and Ls - 1 < 1.37, i.e. Ls = 2 with the wall height tuned to 1 - 3e-13: the nu^c slab must be its own (supplied) slab
+   nu^c on the doublet's rung N: N=49 one-site 1e-11 eV; N=49 8-site 1e-10 eV; N=49 lapse-owned 2e-26 eV; N=49 domain-norm 2e+11 eV; N=52 one-site 6e-13 eV; N=52 8-site 5e-12 eV; N=52 lapse-owned 1e-28 eV; N=52 domain-norm 2e+11 eV
+[PASS] [E] B7 nu^c placed on the doublet register's rung (depth N ~ 49-52 from the weak-scale ladder) gives, for every nu-rung contact reading, a Dirac m3 outside [m3/30, 30 m3] (at most 1e-10 eV, or 2e11 eV): excluded; the needed exponent 41.7/N = 0.80-0.85 is no reading
+theorems: A1-A4, A6, A7; finite diagnostic: A5; estimates: B1-B7.
+supplied: B-L charges of the 16, measured splittings and angles (NuFIT-6-like), Sigma bound, v, unit map M = 2.44e18 GeV, SM inputs at m_t (1-loop), slab q, Ls, y0, toy eps; window Delta, block sizes, b_e (register bounds); doublet depth N.
+elapsed_seconds 0.2
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

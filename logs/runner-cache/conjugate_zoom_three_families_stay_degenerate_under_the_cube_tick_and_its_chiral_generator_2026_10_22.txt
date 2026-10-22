@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/conjugate_zoom_three_families_stay_degenerate_under_the_cube_tick_and_its_chiral_generator_2026_10_22.py
+runner_sha256: e4a2539fdbe2ff3379e663406398642a549fda52b36f9ece7ea829b02bbf8730
+input_fingerprint_sha256: 84553497713ed04b425ea093cc1c3f96e3dee4ca4cd5cfaf13d77bb18021d279
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.24
+status: ok
+----- stdout -----
+== A. the cube: flux, real gauge, copy sign
+[PASS] [T] A1 the spin-S overlap gives each face flux 2 pi S/3 (S = 1/2, 1, 3/2, 3: 1.047, 2.094, 3.142, 0.000): T-even (0 or pi) only for S in (3/2)Z; CL-1's S = 3/2 is pi flux, so R is real in a gauge, R^2 = 1 | imag 4e-15
+[PASS] [T] A2 in that gauge the copy sign s = i R1R2R3R is purely imaginary, [s, R] = 0, s^2 = 1: complex conjugation K maps s -> -s, so the copy mass breaks plain time reversal and keeps only K composed with an odd rotation
+== B. the operators that send family j to -j (48 cube-centred point maps x -> c + g(x - c), c = (1/2,1/2,1/2), each unitary or x K)
+[PASS] [T] B1 ties (point maps with j -> -j and quasi-energy kept; + proper, - improper, K antiunitary): no copy mass [('+', 3), ('-', 3), ('K+', 3), ('K-', 3)] = the 3 C2' about face diagonals, inversion I and S6 = I C3, time reversal K and K C3; with the copy mass [('-', 3), ('K-', 3)] = I, S6 and K sigma_d (the C2' are odd rotations); adding the chiral generator [('-', 3)] = I, S6 only (Hc is imaginary in the real gauge, so K-type ties break); adding the I-odd pseudoscalar eta s [] = none
+[PASS] [T] B2 inversion about a cube centre (with its gauge) fixes R, each R_i, the copy sign s, and the chiral generator (both tilings are mapped to themselves): every CL-1 term and (i/2)[W_o, W_e] commutes with it; it flips the sublattice sign, so eta s is I-odd and invariant under all 24 rotations | max comm 1e-14
+== C. family spectra with and without the chiral term (sectors j = 1, 2 on the turn-fixed line)
+[PASS] [F] C1 the families j = 1, 2 stay exactly isospectral (signed quasi-energies) for the tick, with the chiral generator at every strength, with the I-odd pseudoscalar and with both: tick 8e-16, no copy 3e-16, Hc 0.05 4e-16, Hc 0.2 3e-16, Hc 0.5 7e-16, eta s 0.1 7e-16, eta s 0.1 unpal 8e-16, Hc 0.2 + eta s 0.3 1e-15
+[PASS] [F] C2 the free chiral generator alone has identical family spectra [-0.866 -0.866 -0.866 -0.866  0.866  0.866  0.866  0.866] (exp(-i t Hc) for every t)
+[PASS] [T] C3 the tie that survives eta s is algebraic, not a point map: a unitary Y with Y G_(j=1) Y^+ = G_(j=2) for every generator (both tilings' reflections, copy sign, Hc, eta s) exists; commutant dimensions [16, 8, 8, 4]; so every free tick that is a word in these generators keeps families 1 and 2 degenerate (interactions not tested: Y is a per-sector map, not shown to be a lattice operator)
+== D. what does split them
+[PASS] [F] D1 a polar term along the turn axis (a cube potential graded by |c|: an axial vector, rotations broken to C3v, I broken) placed palindromically keeps K sigma_d and the families stay tied (1e-15); placed once per tick (a time-ordering choice) it splits them at order 1.0 in its strength (1.8e-03 at 0.04); palindromic plus the chiral generator splits at order 1.0 in the polar strength and 1.0 in the chiral one (bilinear: split = 1.59 kap lam at small strengths); a generic cube term splits at order 0.9; no j=1 -> j=2 intertwiner (dim 0)
+[PASS] [F] D2 a T-odd hop alone does not split: the spin-1/2 overlap (flux pi/3 per face) keeps inversion, split 4e-16
+   reading: the tie is not parity alone; it survives the copy mass, the chiral generator, a T-odd flux and the O-invariant I-odd term;
+   it breaks only with a term carrying a direction (an axial vector along the family turn axis, breaking the cubic rotations)
+   together with a time-reversal breaker (the chiral generator or a non-palindromic placement): first order in each,
+   so with only small breakings the pair split is second order (kap lam), far below the order-one split measurement needs (E3).
+== E. Z3 differences and mass estimates
+[PASS] [T] E1 the family group is the order-3 subgroup {0, psi, psi^2}: pair differences are psi, psi, psi^2, so with k -> -k one spurion distance and without it at most two (pairs 12 and 23 always share psi); breaking k -> -k never gives three distances
+[PASS] [E] E2 with k -> -k broken, a translation-invariant Dirac matrix on that group is a Z3 circulant c0 + c1 eps P + c2 eps^n P^2, eigenvalues |c0 + c1 eps w^j + c2 eps^n w^2j|: with unit coefficients and eps <= 1/2 the largest ratio is 4.0 against measured m_t/m_u = 1.4e5, m_tau/m_e = 3.5e3
+[PASS] [E] E3 measured: no two families of a sector are degenerate, so the rules must untie a conjugate pair; under the reading with the two lighter families as the pair, the needed relative splitting (m2 - m1)/(m2 + m1) is lep 0.990, up 0.996, down 0.904: order one, not a small breaking
+elapsed_seconds 1.0
+theorems: A1, A2, B1, B2, C3, E1; finite: C1, C2, D1, D2; estimates: E2, E3.
+supplied: zoom-3 family reading, eps/mu/MN and term strengths, the test terms (eta s, polar |c| potential, generic term), unit coefficients in E2; PDG masses.
+
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

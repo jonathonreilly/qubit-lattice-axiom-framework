@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/a_cube_tick_that_reads_its_own_lapse_and_edges_is_weyl_blind_so_its_vacuum_entropy_counts_cut_bonds_not_proper_area_2026_10_22.py
+runner_sha256: 70b575f06b4f0baf9470467f493ce7dd68b032f1abf2f326d30f16d13ec60e01
+input_fingerprint_sha256: bdc7039c4b01ea019a6ea0bb5265c0a1ce879000b34825fb03fb6887b1046394
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 15.54
+status: ok
+----- stdout -----
+== A. hop = N/(proper length), no per-cube normalisation: what changes in the tick
+[PASS] A1 [T] W_i anticommute, so the unnormalised hop N sum_i W_i/l_i squares to (N|w|)^2; with CL-1's lapse clause N|w| = sin eps0 the CL-1 cube unitary IS cos(eps0) - i N sum_i W_i/l_i: the per-cube normalisation is the lapse clause tying N to the edges | one cube, l = (0.7, 1.3, 2.1): |R_un^2 - sin^2 eps0| = 4e-20, |U_CL1 - U_un| = 2e-18
+[PASS] A2 [T] tick's max group velocity = (2/sqrt3) sin(eps) sites/tick at every step (Bloch): with the step read as sin(eps_c) = N_c|w_c| the cone is exact cube by cube for ANY lapse (variant R2, needs N|w| <= 1); step eps0 on the unnormalised hop (variant R1) scales light speed by sin(eps0|w|)/sin(eps0) | v/((2/sqrt3) sin eps): 0.0375: 0.99997, 0.3: 0.99997, 0.6: 0.99997, 1.0: 0.99998, 1.3: 0.99998; R1 at edge l = 1/8: light speed x 7.88, at l = 4: x 0.250
+[PASS] A3 [D] massive tick: rest phase = mu = mN per tick EXACTLY at every step (rest energy couples to the lapse universally); inertial factor 1 - (mu/eps)^2/4 plus a step-dependent remainder ~0.07 mu^2: species-dependent, negligible for observed m l | eps, mu/eps: rest/mu - 1, inertial remainder: 0.0375,0.5: -2e-14, +2.6e-05; 0.0375,1.0: -6e-15, +8.7e-05; 0.3,0.5: -1e-15, +1.7e-03; 0.3,1.0: -1e-15, +5.6e-03; 0.6,0.5: -9e-16, +6.6e-03; 0.6,1.0: -8e-16, +2.2e-02
+[PASS] A4 [T] 4D Weyl theorem: a cube reads only ratios of its own N and l_i, so (N, l) -> Omega (N, l) cube-wise leaves tick, vacuum and every entropy unchanged while proper areas scale by Omega^2; spatial-only rescaling at fixed N (the repair) moves S | 8^3 Floquet, random cube N, l: Weyl factors in [1/8, 4]: |dS| = 7.4e-13; spatial factors in [1/2, 2] at fixed N: |dS| = 0.413
+== B. does S track proper area under the repair?
+[PASS] B1 [T] uniform rescaling of all edges at fixed N: the static vacuum is exactly unchanged (ground state of c H = ground state of H); in the tick only the step moves (sin eps = N|w|), an O(eps^2) Floquet effect: dlnS/dlnA ~ 0, area law needs 1 | static |dS| = 3e-13; tick at eps0 = 0.0375: dlnS/dlnA = -4.3e-04
+[PASS] B2 [D] homogeneous strains (planar (100) cut, transverse-momentum chains): the repair and CL-1 give the SAME vacuum (only the overall hop scale differs), so the shape responses are unchanged: transverse stretch gives less than half the area-law response, normal stretch at fixed area moves S | eta_100 = 0.196645; dlnS/dlnA transverse = 0.457 (area law 1); dlnS/eps normal, dA = 0: -0.911 (area law 0)
+[PASS] B3 [D] random cube-wise edge factors (ln lambda ~ N(0, 0.35^2)) at fixed N, static 8^3: S moves, but ln S does not follow ln(proper cut area): the vacuum sees gradients of ln(N/l), not area | 10 draws: regression slope dlnS/dlnA = -0.309 (area law 1); spread of ln S 0.056, of ln A 0.131
+[PASS] B4 [D] a mass is the only scale the sea can compare with l: with hop N/l and rest phase mN the vacuum depends on m l; staggered mass m enters the chains as sqrt(M^2 + m^2) (exact on 8^3); eta falls with m l, so at fixed N/l, dlnS/dlnA = (1/2) dln eta/dln(ml) < 0: the wrong sign for an area law | 8^3 slab m = 0.7: 3D 22.70463714 = chains 22.70463714; eta(m): 0.25: 0.1933, 0.5: 0.1858, 1.0: 0.1647, 2.0: 0.1195; dlnS/dlnA: 0.25: -0.015, 0.5: -0.048, 1.0: -0.141
+== C. G = 1/(4 eta) and the induced static couplings of the same sea
+[PASS] C1 [E] Jacobson with the lattice cutoff: S = eta x (cut bonds), so in proper units eta_prop = eta/a^2 and G_J = a^2/(4 eta): constant in lattice units, varying as a^2 in proper units (x1024 across the edge window [1/8, 4]); unit map 8 pi G = L^2 with L = 2a (B) or a (A) | G_J = 1.271 a^2; G_J/G = 7.99 (B), 32.0 (A); per cell (2a)^2: eta = 0.787
+[PASS] C2 [T] induced static action (Sakharov, same sea, E = -L): Weyl invariance forces (grad sigma)^2 : grad phi.grad sigma : (grad phi)^2 = 1 : -2 : 1 (Einstein-Hilbert 2 : 4 : 0), so the field equations force rho = 0: NO Newtonian limit; N sqrt(h) R3 part: 1/(4G) = 4 pi alpha | Lx = 32, 2x2 Bloch cell, nk = 8^2: e_ss 0.04956, e_pp 0.04956, e_ps -0.09911; 1/(4 pi G_N) = 0e+00; det = 0e+00; 4 pi alpha = 0.311 vs eta 0.197
+[PASS] C3 [D] how the hop reads a non-uniform edge (straight-edge proper length, geometric or arithmetic mean) moves the induced coefficient x2: a reading the rule must supply | 4 pi alpha = 2 pi e_ss (chains, Lx 48, 24^2 k): exact: 0.416, geometric: 0.311, arithmetic: 0.624; vs eta 0.197; G_alpha/G (B) = 3.8, 5.0, 2.5
+[PASS] C4 [E] a mass (staggered, both copies; supplied) breaks Weyl invariance and induces a POSITIVE (attractive) static Newtonian coupling 1/(4 pi G_N) = B^2/(2A) - 2C, weak: G_N far above the hinge-sum G | m: G_N/a^2, G_N/G (B), (A): 0.5: 9.69, 61, 243; 1.0: 4.65, 29, 117
+verdict: the repair (hop N/l with no lapse clause; step read from sin eps_c = N_c|w_c|) FAILS its target: S is exactly blind to the 4D Weyl factor (A4), moves with ln(N/l) gradients only (B1-B3), and masses push it the wrong way (B4); S is eta x (cut bonds), not eta x proper area. Cost (A1-A3): the lapse becomes a free datum per cube; the cone and the EP survive.
+Sakharov: the massless sea induces no Newtonian limit (C2); masses induce a weak attractive one (C4). Jacobson's G_J = 1.27 a^2 fixes nothing unless proper area per cut bond is one universal unit. Gate: no number chosen, no structure inserted, G not inserted; bends CL-1's lapse clause (no axiom); its built prediction (area law) FAILS.
+theorems: A1, A2, A4, B1, C2; diagnostics: A3, B2, B3, B4, C3; estimates: C1, C4
+elapsed 13.2 s
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

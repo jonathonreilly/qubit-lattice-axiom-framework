@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/one_three_fold_turn_fixes_three_register_copies_as_protected_families_2026_10_21.py
+runner_sha256: 99fe1fbb883f8f46b2a29982af15135088649a66da4af6e42c471d30ddd84f7d
+input_fingerprint_sha256: 292dc99657bd9075efce363775c937c7c3cd28381830603bc52ea6d7aabe27e1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.34
+status: ok
+----- stdout -----
+== A. register fixed points and the exact mirror anomaly
+[PASS] A1 theorem: in a (2m)^3 cell one three-fold turn fixes m of the m^3 copies (sub-cubes or moduli) and moves the rest in (m^3-m)/3 three-cycles (m = 1..9); |X| = F3 mod 3 for every register; blocks of a factor-2 rung have F3 = 2^n, never 0 mod 3 | 6^3: 27 = 3 fixed + 8 three-cycles
+[PASS] A2 theorem: every site lies on one body diagonal d shared by its even and odd cube; the rotations about the site that keep both tilings are the three turns about d; in the site's 3^3 block they fix exactly the spine {x-d, x, x+d} (the site and the far corners of its two cubes) and move the other 24 in 8 three-cycles | all 8 site classes
+[PASS] A3 fixed copies of one turn: axes 0, body diagonals 1, aligned tilings 2, shells 3, site block 3, 6^3 cell 3
+[PASS] A4 theorem: on a permuting register Z3_k x SU(2)_e^2 of S is -4(|X|(q_a+k) + n_1 + 2n_2) = -4 F3 (q_a+k) mod 3; at k = 2 the doublers gap iff 3 | F3 (all registers; at k = 1 always). One three-cycle carries 0, so the count is set by the fixed copies; its t = 2 sector alone is also anomaly-free, so the anomaly alone does not force removals in threes | 6^3: S -528, three-cycle -60, fixed copy -16, 3 fixed -48
+== B. bilinear protection on H' (3D cube objects)
+[PASS] B1 theorem (chiral-step D1, rederived): eps-keeping Dirac masses at Gamma span 4 dims, every one pairs the light copy with the mirror copy, the turn gives them charges w, w^2 (twice each), none is invariant under the 12 turns, all are PW-odd | the twist k acts trivially on bilinears
+[PASS] B2 theorem (Lefschetz count; finite check on 12 registers, with and without P and PW): a generic turn-invariant Dirac mass leaves exactly 8 F3 massless states, which carry F3 copies of the cube's representation: protected families = F3 | rung-1 cell 1, pos m=1 1, pos m=2 2, pos m=3 3, pos m=4 4, mod m=2 2, mod m=3 3, axes 0, diagonals 1, tilings 2, shells 3, site block 3
+[PASS] B3 6^3 register (27 copies) with an invariant mass, 7^3 grid: 24 massless states at Gamma and at R, gapped at every other point | min gap off the windows 0.504
+== C. 1+1D toy: copies x 4 tastes x (3-4-5-0) x 2 sectors; the turn permutes copies and adds z = q + k
+[PASS] C1 theorem (twisted Haldane criterion, proof in report: a pi-invariant Lagrangian gaps symmetrically iff z.l = 0 mod 3 on its pi-fixed part): light-mirror backscattering on the 8 three-cycles is null, neutral, primitive and twisted-neutral; on a fixed copy it carries z.l = 1 | 384 vectors on 24 copies
+[PASS] C2 theorem + finite: lemma (pi-invariant neutral Lagrangian => K t in L^pi => z.Kt = 0 mod 3 on the gapped set); the (2m)^3 register gaps S on the fixed copies and everything on the three-cycles iff 2 F3 (q_a+k) = 0 mod 3, else obstructed: at k = 2 only m = 3 | m = 1..4: k=0 xxGx, k=1 GGGG, k=2 xxGx; V4, D8 Smith form 1
+[PASS] C3 the three protected families are removable together (D8 on their Gamma-a: null, neutral, z-neutral): the anomaly does not protect them; only bilinears are excluded. In 3D a term made of light-copy modes alone has turn charge = its mode change, so with Z4 it changes mode number by 12
+== D. which three stay light; masses and mixing
+[PASS] D1 theorem: on the protected space the turns act as 3 copies of the cube, so the allowed family operators are (cube commutant) x M_3: any hierarchy and any mixing are allowed, none predicted | dim 72 = 8 x 9
+[PASS] D2 diagnostic (supplied random textures): with a register-diagonal mass the light families are exactly the fixed copies (the spine); off-diagonal parts d tilt them inside the 11-dim turn-invariant sector | weight on fixed copies d=0.0: 1.000, d=0.05: 0.916, d=0.2: 0.393, d=1.0: 0.322
+[PASS] D3 theorem + [M]: the light left and right families factor as spin x register (C^2 x V_e, C^2 x V_o), so a register-blind vacuum gives every sector the mass matrix y_s V_o^+ V_e: equal ratios in all sectors and no mixing; measured ratios differ by sector and |V_us| = 0.2243, so the vacuum must depend on the register | register-blind ratios [1.    0.415 0.118] both sectors, |V12| 3e-16; register-dependent |V12| 0.34; measured ln-ratio 1.889/1.299/0.787
+== E. against measurement
+   N_nu (LEP, Janot-Jadach 2020: 2.9963 +- 0.0074): F3 = 3 gives 3 (0.5 sigma); next allowed F3 = 6 (12^3 cell) 406 sigma, F3 = 9 (zoom 9) 811 sigma; F3 = 1, 2, 4, 5 are anomaly-forbidden (A4): no 4th chiral family on any register
+   the 24 three-cycle families are vector-like with masses ~ (copy-mixing coefficient) x cell scale: vector-like quark limits (~1.5 TeV) need a coefficient above ~1e-16 for a Planck-scale cell; no light remnant (B3)
+   each light family keeps its right-handed neutrino in an SU(2)_odd doublet (Dirac only, Z4): Delta N_eff = 0.14 (decoupling above the weak scale) to 0.29 (just above QCD) vs Planck 2.99 +- 0.17 (not specific to the register)
+elapsed_seconds 3.6
+theorems: A1-A4, B1, B2 (Lefschetz), C1-C2 lemma, D1, D3 (factorisation); finite: B2, B3, C2 grid, C3; diagnostics: D2; estimates: E. Supplied: H', O_A (k = 2), the zone-corner term, the register reading, generic register masses.
+
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

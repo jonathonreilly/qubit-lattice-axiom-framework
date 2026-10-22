@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/the_copy_sign_is_exact_only_at_rest_and_no_copy_edge_or_split_structure_of_the_candidate_laws_gives_a_stable_cold_link_free_species_2026_10_22.py
+runner_sha256: 47d4ab22efdff690c50df8960f5e88784feded2c0a2a4924ae6ac7ebe12d250e
+input_fingerprint_sha256: b1729ac838dfd97f24ff3f5fd0be0d37a405656f17cad797849a47c782474fca
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.73
+status: ok
+----- stdout -----
+== A. copy sector (CL-1 cube tick with copy mass)
+[PASS] A1 [T] R_i = sqrt3 W_i are Clifford generators, so R(c)^2 = 1 for every diagonal metric  max dev 6.4e-16
+[PASS] A2 [T] G = iR1R2R3 is central in Cl(3), so s = G R commutes with R: the even half-tick and copy mass keep s at every metric  [G,R_i] 1.0e-15
+[PASS] A3 [F] at K = 0 the s = -1 copy (4 states) has rest phase mu + M, the s = +1 copy mu  phases s=-1 [0.9], s=+1 [0.4]
+[PASS] A4 [F] the odd half-tick keeps s exactly at K = 0 (flat and a random diagonal metric) and not at random K: s is exact for states at rest only  ||[s,Uo]|| 7e-16, 7e-16 (metric) at K=0; 0.524 at random K
+[PASS] A5 [F] cell-local charges commuting with the tick at 3 random K (and 3 metrics): only the identity (particle number)  commutant dims: K=0 16, 3 K 1, 3 K x 3 metrics 1
+[PASS] A6 [F] one-cube strain vertex, heavy copy at rest -> light copy at recoil q: zero at q = 0, ~ q/M below M, O(1) at a real decay's recoil q = 0.87 M for every M (no suppression); conformal strain zero  amp(q=0.1M, 0.87M): M=0.5 0.038, 0.297; M=0.05 0.046, 0.358; M=0.05 mu=1e-3 0.769, 0.929
+[PASS] A7 [T] Fock (8 cube modes, dim 256): [S_hat, N_hat] = 0, so each copy carries its species' link charges (q x number)
+== B. nu^c (one chiral family, hand-entered table: SU3 dim, SU2 dim, Y, B-L)
+[PASS] B1 [T] link-free Weyl state and gauge-singlet bilinear of one family  ['nu^c'], [('nu^c', 'nu^c')]
+[PASS] B2 [T] Z4 = i^(B-L): nu^c nu^c odd (i^2 = -1, no Majorana mass), L H nu^c and (nu^c)^4 even
+== C. edge registers
+[PASS] C1 [T] on a 9-level register {hop, value} has trivial commutant: no conserved register number (hop alone: only its own functions)  dims 9, 1
+[PASS] C2 [T] the hop anticommutes with (-1)^n: no register parity
+== D. split and geometry defects
+[PASS] D1 [T] squared edge lengths are a linear bijection of the tetrahedron's Gram matrix (rank 6): positive volume is a convex cone, the window a box, their intersection over all tetrahedra convex, the flat vacuum manifold PD(3) contractible: no topological geometry charge  rank 6
+[PASS] D2 [F] every positive-volume tetrahedron state (s = 2, Delta = 0, 1; corner and central) joins the flat state by single register steps: no frozen geometry  D0 corner 8052/531441 in 1 comp; D0 central 8849/531441 in 1 comp; D1 corner 12876/1771561 in 1 comp; D1 central 13959/1771561 in 1 comp
+[PASS] D3 [T] passing: a child edge at the parent's value minus s is exactly half the parent's length, so a split's children in their vacuum read the parent's geometry (zero departure, no CL-3 source)
+== E. estimates against measurement (supplied: unit map, M, y, alpha_s, b_e; cited bounds approximate)
+  cell unit: 1 rad/tick = 2.11e+18 GeV (tau = 3.12e-43 s); at the supplied M = 0.5: heavy copy 1.1e+18 GeV, recoil q ~ 1, no suppression: tau ~ 1e-42 s
+  (a) N_c = s = -1 copy of nu^c: s is exact only at rest (A2-A4) and the copy-changing vertex is O(1) at real recoil for every M (A6, g >= 0.30):
+      graviton channel Gamma ~ g^2 M^3/(32 pi Mbar^2): tau = 4e+06 s at 1 TeV, 4e-03 s at 1e6 GeV; tau > 8e18 s (invisible) needs M < 82 MeV,
+      but M is one law-text constant for every copy, and a heavy electron copy below ~100 GeV is excluded (LEP); a Yukawa leg y ~ 3e-13
+      gives Gamma ~ y^2 g^2 M/(8 pi): tau = 2e+00 s at 1 TeV. Excluded at every M (scope: universal M, vertex read from the edge reading).
+  (c) Dirac nu^c: sum m < 0.07 eV -> Omega h^2 <= 7.5e-04 even if thermal, and hot; freeze-in via h -> L nu^c: Y ~ 2e-13, Omega h^2 ~ 3e-15
+      heavy reading: Majorana mass Z4-odd (B2); in a Z4-breaking vacuum it decays through L H nu^c. Excluded.
+  (b) edge quanta: lowest massive root 1.49 per block tick (cited, dm-revisit) -> 7.9e+16 GeV (b_e = 40), 3.1e+16 (b_e = 100);
+      no number or parity (C1, C2): decays to gravitons at the cell rate. Excluded.
+  (d) split bubbles: children read the parent's flat geometry (D3): zero departure, no gravitating mass; no geometry charge (D1, D2);
+      link monopoles: stable but magnetic (cited, dm-revisit). Excluded.
+  ranking: 1 N' (cited dm-revisit; needs a supplied label parity) > 2 N_c (needs a supplied copy parity: then the N' case)
+           > 3 Dirac nu^c (hot, < 1%) > 4 edge quanta > 5 split / geometry defects. Abundance from the rules: none.
+theorems: A1, A2, A7, B1, B2, C1, C2, D1, D3; finite: A3, A4, A5, A6, D2; estimates: E
+elapsed_seconds 0.4
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

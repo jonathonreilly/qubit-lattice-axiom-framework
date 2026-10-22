@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/supplied_chiral_terms_keep_a_z4_of_b_minus_l_and_leave_strong_cp_unfixed_2026_10_22.py
+runner_sha256: a568fca155aa4d66ef117677b40442f14183c704d30615036b77ccb7e8d587e9
+input_fingerprint_sha256: ed161b4b83d7c0552a5ff0f55601248a7dbb17f7822bd94cf7d734ff52601ea5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.78
+status: ok
+----- stdout -----
+== A. abelian symmetry group of each term set; allowed baryon-number-changing operators (one-family charges)
+   610 gauge-, Lorentz-admissible operators with Delta B != 0, dim <= 10
+   S1 Yukawa + (nu^c)^4: U(1)^2 x Z4; Z-charges {4: [0, 0, 0, 3, 1, 1, 0]}; allowed (|dB|, dL) : min dim {}
+   S2 S1 + uddn: U(1)^1 x Z4; Z-charges {4: [1, 1, 1, 1, 1, 1, 2]}; allowed (|dB|, dL) : min dim {(1, -3): 10, (1, 1): 6}
+   S3 S2 + uude: U(1)^1 x Z4; Z-charges {4: [1, 1, 1, 1, 1, 1, 2]}; allowed (|dB|, dL) : min dim {(1, -3): 10, (1, 1): 6}
+   Sm Yukawa + nu^c nu^c (Majorana): U(1)^1 x Z2; Z-charges {2: [1, 1, 1, 1, 1, 1, 0]}; allowed (|dB|, dL) : min dim {(1, -3): 10, (1, -1): 7, (1, 1): 6, (1, 3): 9, (2, 0): 9}
+[PASS] [T] S1 (forced content without B-violating terms): no Delta B != 0 operator at any order in the terms (B is an exact U(1) of the term list; sphalerons give only Delta B = Delta L = 3 per three families)
+[PASS] [T] S2, S3: exact group U(1)_Y x Z4; on every admissible operator, allowed <=> Delta(B-L) = 0 mod 4 (610 operators checked)
+[PASS] [T] Delta B = Delta L = 1 is allowed at dimension 6 (uddn: p -> pi+ nubar_R, n -> pi0 nubar_R; uude, QQQL: p -> e+ pi0); Delta B = 1, Delta L = -1 (n -> e- pi+, dim 7) is forbidden | (1,1): dim 6, (1,-3): dim 10
+[PASS] [T] Z4 of mode number counted on left-handed Weyl fields (H charge 2 from the Yukawa-type terms) equals Z4 of B-L on every Lorentz- and SU(2)-admissible operator
+== B. nucleon decay from dimension-6 terms with a rule-size coefficient g at the cell (estimates)
+   1/a = 2.435e+18 GeV (a = sqrt(8 pi) l_P = 5.0 l_P); C = g/Lam^2, Lam = 2.62e+18 (site) .. 9.25e+17 GeV (cell)
+   p -> e+ pi0 (uude, QQQL)     g=1: tau ~ 2.8e+45 yr (worst 1.1e+43); bound 2.4e+34; g_max 2.1e+04
+   p -> nubar K+ (uds nu^c)     g=1: tau ~ 1.1e+46 yr (worst 1.8e+43); bound 5.9e+33; g_max 5.5e+04
+   p -> pi+ nubar (uddn)        g=1: tau ~ 1.4e+45 yr (worst 5.3e+42); bound 3.9e+32; g_max 1.2e+05
+   n -> pi0 nubar (uddn)        g=1: tau ~ 2.8e+45 yr (worst 1.1e+43); bound 1.1e+33; g_max 9.8e+04
+[PASS] [E] every channel passes at g = 1 by >= 8 orders (worst case: cell reading, A = 3, largest lattice W) | min margin 4.4e+08
+[PASS] [E] worst case: a unit-coefficient Delta B term must sit within ~7 rungs of the sites (cells below ~1e2 a): on rung k the scale is Lam/2^k | Lam_min = 6.4e+15 GeV, k_max = 7
+   with the baryogenesis-fitted g ~ 0.01: tau(p -> pi+ nubar) ~ 1e+49 yr (Hyper-K reach ~1e35): no nucleon decay is predicted to be seen
+== C. Delta B = 2 (n-nbar), dinucleon and Delta L = 2 under the Z4
+[PASS] [T] n-nbar (Delta B = 2, Delta L = 0, dim 9 udd udd) is forbidden at every order: Delta(B-L) = 2 != 0 mod 4; consistent with tau_nnbar > 4.7e8 s | 6 udd udd operators
+[PASS] [T] with a Majorana nu^c nu^c instead of (nu^c)^4 the group is U(1)_Y x Z2 and n-nbar is allowed: the n-nbar ban is a consequence of the (nu^c)^4 form (an ESS/NNBAR signal would falsify it)
+[PASS] [T] Delta L = 2 at Delta B = 0 (0nubb, Majorana neutrino mass, LLHH) has Delta(B-L) = -2: forbidden; Delta B = Delta L = 2 dinucleon decay (pp -> e+e+) is allowed only at dimension 12 | LLHH, nu^c nu^c: forbidden (allowed with Majorana)
+== D. theta_bar = theta - arg det(Y_u Y_d): what the rules fix
+[PASS] [T] the CL-3-set doublet cannot fix theta_bar: its phase enters Q u H and Q d H* oppositely, so arg det(Y_u Y_d) is independent of it (any number of families) | max shift 3e-16
+[PASS] [T, checked] an exact antiunitary of the update (T x C4 or PH x C4 kept by every term) makes Yukawa-type terms real in its basis: arg det in {0, pi} and J = 0 exactly; generic complex terms give J != 0 and arg det uniform | max J 6e-16, generic median J 0.03
+[PASS] [T, checked] Nelson-Barr block form (heavy-light entry only in one off-diagonal block, real CP-even masses): arg det = 0 exactly while J != 0 when the CP-odd mixing is comparable to the heavy mass, J -> 0 when it is small | J median 8.9e-03 (F ~ M_H), 4.3e-08 (F = 1e-3 M_H)
+[PASS] [E] generic order-one theta_bar is excluded: d_n = 2.4e-16 theta e cm with d_n < 1.8e-26 gives |theta_bar| < 7.5e-11; a uniform phase lands there with probability 2.4e-11 | |theta| < 7.5e-11
+[PASS] [E] theta is physical: the eta' (958 MeV) exceeds Weinberg's no-anomaly bound sqrt(3) m_pi = 234 MeV; Witten-Veneziano needs topological susceptibility chi = (179 MeV)^4, so making theta unobservable is excluded | chi^(1/4) = 179 MeV
+   m_u = 0 is excluded (FLAG m_u/m_d = 0.47(2)); CL-3 links only exact symmetries, and U(1)_A is anomalous, so no CL-3 field relaxes theta
+theorems: A1-A4, C1-C3, D1-D3.  estimates: B1-B2, D4-D5.
+supplied: chiral 16 x 3 content and SM links (chirality wall open); Yukawa-type, uddn, uude, (nu^c)^4 terms as listed;
+  unit map (G = a^2/8pi, 2.11e18 GeV per rad/tick), lattice W, A, Super-K, ILL, nEDM, eta/eta'/K/pi masses, f_pi, d_n/theta.
+elapsed_seconds 0.6
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/the_mirror_pair_condensate_breaks_the_weak_group_at_its_own_scale_and_its_only_vacuum_angle_runs_to_colour_breaking_2026_10_22.py
+runner_sha256: 7fb2b75c9138d7fefbb15196834f7bbb6d235d081800c4f4f03d4fc356532cc5
+input_fingerprint_sha256: 46d7b36da0294b7b2bc68ee4cd4996457e505be06ced28968b1820e578f8ad47
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+== A. toy quartic = Spin(6) vector-channel pair square
+[PASS] A1 [T] vector-channel pairing of a chiral Spin(2k) spinor: k=3 (4x4->6) antisymmetric, k=5 (16x16->10) symmetric; k=3: sum_a M_a(ij)M_a(kl) = lam eps_ijkl, so the toy quartic c1c2c3c4 is the Spin(6) pair square and Spin(10)'s is the k=5 member (spinless toy pair <-> spin-singlet Weyl pair) | k=3 |M+M^T| 0e+00, span 6; k=5 |M-M^T| 0e+00, span 10; |T - lam eps| 0e+00
+[PASS] A2 [T] toy SU(4) -> Sp(4) = SO(6) -> SO(5) (S^5); Spin(10) analogue SO(10) -> SO(9) (S^9) | Goldstones of a generic vector: SO(6) 5, SO(10) 9
+== B. weights of the 16, 10, 45 and u(16)
+[PASS] B1 [T] 16 weights give the measured hypercharges; 10 = (1,2,2) + (6,1,1); its colour-singlet part is a Y = +-1/2 bidoublet with B-L = 0: a (1,2,2) mirror pair condensate carries SU(2)_L x U(1)_Y, keeps Z4 of B-L | 16 hypercharges ok; colour-singlet 10 components 4, B-L 0, |Y| 1/2
+[PASS] B2 [T] no 45 weight has zero colour weight and T3L = +-1/2: adj(Spin(10) x family) holds no colour-singlet doublet, so no condensate of a Spin(10)-symmetric mirror sector, any channel, has a pNGB Higgs doublet | 45 weights 45; colour-zero doublet weights 0
+[PASS] B3 [T] u(16N) (all symmetries of free 16s): colour-zero doublet generators have |B-L| = 2; B-L-neutral ones only in light x mirror (16 x 16), broken at O(g) by a mirror-only quartic | u(16) doublet B-L ['-2', '2'], Y ['-3/2', '-1/2', '1/2', '3/2']; 16x16 doublet B-L ['0']
+== C. the pair-square vacuum manifold S^9
+[PASS] C1 [T] on the 10: Casimirs colour 4/3, SU(2)_L 3/4, Y^2 1/4 | 1/9; commutant of colour in so(10) has dim 7, so no SU(4) on mirror modes commutes with colour | commutant dim 7
+[PASS] C2 [T] S^9: 9 Goldstones; at the (1,2,2) end colour kept, 3 eaten + 6 colour-triplet; no SM-fixed point | goldstones 9; colour broken 0; EW broken 3; SM-fixed directions 0
+[PASS] C3 [T] n = cos(th) t + sin(th) h: W-mass sum = sin^2(th)/2, colour-breaking sum = (4/3)cos^2(th) exactly; the only angle on S^9 runs EW -> COLOUR breaking; unbroken colour forces th = pi/2, v = f | errors: m_W 2e-16, colour 4e-16
+[PASS] C4 [T/E] gauge-loop potential sum g^2|T n|^2 is exactly linear in sin^2(th): no interior minimum; measured or unified couplings pick the (1,2,2) end | GUT-equal: A_h 0.900 < A_t 1.400; m_Z: A_h 0.351 < A_t 1.990; 1 TeV: A_h 0.340 < A_t 1.513; linearity 4e-16
+== D. the toy's SU(4)/Sp(4) on SM-charged modes
+[PASS] D1 [T] SU(4)/Sp(4), 4 = (2)_0 + (1)_+-1/2: stabiliser 10 (5 = doublet + singlet), th = 0 keeps SU(2)_L x U(1)_Y, Q kept at all th, m_W^2 ~ sin^2(th) | stabiliser 10; m_W^2(theta)/m_W^2(pi/2) [0.0, 0.067, 0.25, 0.5, 0.75, 0.933, 1.0]
+[PASS] D2 [T] 4 = (2)_yD + (1)_y1 + (1)_y2: neutral th = 0 end with Y = 1/2 pNGB forces yD = 0, y = +-1/2; 16/16bar doublets have Y = +-1/6, +-1/2 (NEW content); mirror (L', L'^c) four: th = 0 end charged | doublet Y in 16, 16bar: ['-1/2', '-1/6', '1/6', '1/2']; |Q Sigma_B| leptonic 1.00
+[PASS] D3 [T] spinful Weyl modes pair symmetrically (10 of SU(4)): EW-invariant vacua rank <= 2, and 4 modes hold one (Witten-anomalous) doublet; the toy's 6 needs a two-valued antisymmetric index: 8 Weyl modes per cell | max rank of EW-invariant symmetric vacuum 2; doublets per 4 modes {'no index': 1, 'two-valued index': 2}
+[PASS] D4 [T] toy SU(4) on the mirror 16: (a) SU(4)_PS: 6 = (6,1,1), colour breaking; (b) Spin(6) on bidoublet + 2 colour directions: colour generators; (c) leptonic (L', L'^c): charged end. None gives a neutral EW-safe end | (a) B1, (b) C1, (c) D2
+== E. estimates against measurement
+[PASS] E1 [E] condensed mirror (v = f, degenerate, T = 0): S, gg->h, Pagels-Stokar mass | S = 0.212 (1 fam, 3.7 sigma), 0.637 (3 fam, 9.8 sigma); sigma(gg->h)/SM = 8.6, 46 vs ~1.0(1); m* (cutoff M) = 89, 51 GeV vs charged-lepton bound 100.8; strong (log~1) 774, 447 GeV
+[PASS] E2 [E] new-content candidate: kappa_V = cos th bounds xi; IR S, T; f from rung n or near-critical g | xi <= 0.051, f >= 1092 GeV, mirror-free; dS ~ 0.013, dT ~ -0.037; (g-g_c)/g_c ~ 2e-31 at the cell; rung n ~ 51.0 (kappa = 1)
+[PASS] E3 [E] condensed mirror's colour-triplet pNGBs (Y -+1/3): colour-loop mass at f = v | m ~ 524 GeV (pair-produced by QCD)
+supplied: toy quartic and its phase (toy-qmc), Spin(10) pair square on the mirror 16 (CL-1 mirror term), SM gauge embedding in Spin(10), gauge-loop sign (vacuum alignment), new content (2)_0 + (1)_+-1/2 x 2, top coupling, cutoff M = 2.44e18 GeV, Pagels-Stokar leading log, kappa = 1; measured: v, m_h, m_t, couplings, S = -0.05(7), kappa_V = 1.035(31), mu_ggF ~ 1.0(1), LEP heavy lepton 100.8 GeV.
+elapsed_seconds 0.0
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

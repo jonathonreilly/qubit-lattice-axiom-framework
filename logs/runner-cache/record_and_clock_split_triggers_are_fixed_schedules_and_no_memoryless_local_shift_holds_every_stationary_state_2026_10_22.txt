@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/record_and_clock_split_triggers_are_fixed_schedules_and_no_memoryless_local_shift_holds_every_stationary_state_2026_10_22.py
+runner_sha256: 0e529f78fef83dcd92527e40088e5802d7a32b2e62a8411aaa5a511c586db91f
+input_fingerprint_sha256: 8c6ab1a80255482b36cbb93c6f9b0d0b8c384c1d2a5bceb77858e825512f6556
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 2.35
+status: ok
+----- stdout -----
+== A. what a split trigger can read (theorems)
+[PASS] A1 [T+E] CL-2 gives one record per site per half-tick and ticks are global, so "split after N records" (or N ticks, or a fixed proper time or 4-volume per split) is a fixed schedule; no schedule tracks the measured expansion from 1 s to today within the 4-octave window | 32.3 octaves needed; best schedule misses by 14.0 octaves
+[PASS] A2 [T] a block of fixed sites changes volume under a displacement only through its boundary (flux of xi): interior moves leave it invariant, boundary moves do not; block volume is not displacement-invariant | dV/eps interior-only 4.9e-07, all sites 4.59
+[PASS] A3 [T] keeping h_00 = -h_kk/3 under x -> x + xi forces d_t xi^0 = div(xi)/3: an instantaneous spatial relabelling drags the slicing, so K (delta K = -lap xi^0), the lapse, proper time and 4-volume at a label all respond at first order; a label-local trigger is causal only if the labels (the shift) are | d_t xi^0 = Derivative(X1(t, x, y, z), x)/3 + Derivative(X2(t, x, y, z), y)/3 + Derivative(X3(t, x, y, z), z)/3
+[PASS] A4 [T] expansion is not local curvature: radiation FRW (a ~ t^1/2) has Ricci scalar 0 and Weyl 0 with H = 1/2t, so a trigger must read a congruence (edges or their rate), not a curvature invariant | R = 0
+== B. causal frames (linear, k = 1, rho or J switched on with consistent data; T = 400)
+   Z             speeds<= 1.000 growth 1.1e-16 | static: h 11.0->11.0 beta 0.0->0.0 | rotating: h 400.0->800.0
+   MS            speeds<= 1.000 growth 2.8e-17 | static: h 1.0->1.0 beta 0.0->0.0 | rotating: h 0.0->0.0
+   harmonic      speeds<= 1.000 growth 2.8e-17 | static: h 1.0->1.0 beta 200.0->400.0 | rotating: h 2.0->2.0
+   strain mu1/3  speeds<= 1.000 growth 3.4e-09 | static: h 3.0->3.0 beta 133.9->267.2 | rotating: h 3.5->3.5
+   strain eta.5  speeds<= 1.000 growth 1.4e-16 | static: h 5.0->5.0 beta 4.0->4.0 | rotating: h 4.3->3.0
+   strain eta5   speeds<= 1.000 growth 3.2e-16 | static: h 9.2->5.0 beta 0.7->0.4 | rotating: h 30.0->30.0
+   val 5/3 mu.1  speeds<= 1.000 growth 1.1e-16 | static: h 11.0->11.0 beta 0.9->0.9 | rotating: h 6.3->6.3
+[PASS] B1 [T+D] zero shift: speeds 1, 1/sqrt3, 0 (causal, no parameter), static star bounded, but a stationary current winds the edges linearly (h_xz = -2 K_xz t, R_xz = 0) | rotating h 400 -> 800
+[PASS] B2 [D] minimal strain: bounded for both (its fault is only the instantaneous elliptic solve) | 1.00, 0.0e+00
+[PASS] B3 [T] a uniform trace-free K (momentum constraint holds) is kept static only by beta = K.x + Killing: a shift that is a local function of the fields at a point is constant there, so no memoryless local shift unwinds every stationary state | beta = (y, x, 0) up to rotations/translations
+[PASS] B4 [D] with memory but no damping (harmonic labels, strain driver at eta = 0) every gauge speed is <= 1, rotation stays bounded, but around a static star the shift grows linearly (a slice tilt running to null) | beta 200->400 (harmonic), 134->267 (strain)
+[PASS] B5 [T] value drivers: longitudinal omega^2 = k^2 (1 + 6(mu1 + mu2))/3; a static tied-lapse star (h_zz = 10U, tr h = 6U) is stationary only if mu2 = -5 mu1/3, then omega^2 = k^2 (1 - 4 mu1)/3: stable only for mu1 < 1/4, a supplied mu1, and only for Psi = Phi | I*omega*(k - omega)*(k + omega)*(4*k**2*mu1 - k**2 + 3*omega**2)/3
+[PASS] B6 [D] damping eta > 0 bounds the static tilt (beta = 10 mu U k/eta) but an overdamped driver leaves a rotating strain offset h = 2 eta K/(mu k^2): eta must sit in a window set by each system size | eta 5: static beta 0.40, rotating h -> 30.0 (predicted 30)
+== C. estimates against measurement (c = 3e8, window ln 16 = 2.77)
+   zero-shift winding 3 w_LT x age: Earth (J 5.86e33, age 1.4e17 s) 1.4e+04; Sun (J 1.9e41) 3.5e+05; Milky Way disk (J 1e67, R 3e20) 2.3e-04
+[PASS] C1 [E] zero shift winds measured rotators out of the window by 1e3-1e5 window widths | galaxies stay inside
+[PASS] C2 [E] undamped drivers tilt to null in r/(10 mu c |U|), far below the ages | Earth 105 d, Sun 3.8 d
+[PASS] C3 [E] the static-compatible value driver (mu1 = 0.1) tilts to null around a magnetar (B = 1e15 G anisotropic stress, Psi - Phi ~ 1.5e-8) in hours, against ages of 1e3-1e4 yr | 1.9 h
+[PASS] C4 [E] a constant eta cannot serve both: neutron star (tilt < c) needs eta > 10 mu c U/r, spinning Sgr A* (offset < ln 16) needs eta < ln16 mu c^2/(2 r^2 w); linear formulas at the horizon, indicative | eta > 1.7e+04/s vs eta < 8.7e-02/s
+== D. the slip: a whole-site relabelling triggered by the zero-shift frame (planar shear toy, 64 layers)
+[PASS] D1 [T+D] slipping the sites above a layer by one cube when its shear passes 1/2 (where the relabelled cube is less strained) keeps every cube within shear 1/2, with no rate parameter | max shear 0.500 vs unslipped 9.5; slips 630, shear total 600
+[PASS] D2 [T] simple shear keeps volume, so a volume trigger ignores the residual shear, while the log-mean-edge trigger moves by up to the listed amount at shear 1/2 | d ln(log-mean edge) at s = 1/2: +0.059 (det = 1 exactly)
+[PASS] D3 [E] zero-shift collapse (quasi-static uniform ball, floor-horizon D2 method): the centre reaches the floor (lapse ratio 1/16 .. 1/8) when the surface is at 1.16-1.21 r_s, after the centre entered the event horizon (surface 2.25 r_s) | R/r_s 1.16 (1/16), 1.21 (1/8)
+supplied: linear ADM + dust/current sources, the tied lapse as h_00 = -h_kk/3, the driver families, LCDM-like a(t) (A1),
+  measured J, R, ages; magnetar stress ratio; Sgr A* spin 0.5 (C4 indicative); planar shear only in D (rings and
+  dislocations not built); quasi-static collapse (D3). not built: register-level slip, the constraint on registers.
+elapsed 1.7 s
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

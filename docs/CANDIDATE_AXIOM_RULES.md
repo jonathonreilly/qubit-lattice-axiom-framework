@@ -2,6 +2,9 @@
 
 Separate from the axioms (docs/MINIMAL_AXIOMS_2026-06-29.md, unchanged) and from the candidate laws (docs/CANDIDATE_LAWS.md, which references this file). Rules here bend or reread an axiom. They are iterated here and folded into ONE comprehensive axiom update only after the owner reviews a ruleset that unifies observed physics.
 
+## Design principle (owner 2026-10-22)
+Composite before atomic: nothing is placed on a single site (the atomic unit) that a covariant combination of sites could provide.
+
 ## Anti-smuggling gate (every entry must pass before it is listed)
 1. No measured number is chosen to make the rule pass (a fitted value is listed as FITTED with the measurement it matches, and does not count as a derivation).
 2. No observed structure is inserted by name (no gauge group, particle content, mass, mixing angle or scale written into the rule because it is observed); a rule may only constrain sites, possibilities, records, neighbours and updates.

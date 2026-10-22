@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/number_conserving_tick_fixes_u5_frame_half_link_split_is_orbital_2026_10_22.py
+runner_sha256: fa76f9ddaee501dd845d0831b4ef5e43a5f2d04c5b1489bcadf81b2438fdc600
+input_fingerprint_sha256: 54b06671827bf2f49530ec120758630aa8e8956d580b9013a649f57683d2abe6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.16
+status: ok
+----- stdout -----
+== T. Does the tick supply J? ==
+[PASS] T0 N_J = iF(J) + 5/2 reproduces the JW occupation number for the mode complex structure J0
+[PASS] T1a J_A = A(-A^2)^(-1/2) is an orthogonal complex structure commuting with A (6 random ticks)
+[PASS] T1b the tick H_A = iF(A) conserves the number N_{J_A} (fermion number is the tick's own)
+[PASS] T1c positive frequency: ground state of H_A is the N_{J_A} = 0 state, E0 = -sum(omega)/2
+[PASS] T1d C_so10(J_A) has dim 25 = u(5); the J-orbit SO(10)/U(5) has dim 20 (a choice of J is 20 numbers) | dim 25
+[PASS] T1e (-1)^{N_J} = c Pf(J) Gamma_11 with one fixed c: reversing time (A->-A, J->-J) swaps 16 <-> 16bar | c = -1
+[PASS] T2 C_so10(A) = sum u(m_k) over frequency multiplicities: (5)25 (3,2)13 (4,1)17 (2,2,1)9 (1^5)5 | [25, 13, 17, 9, 5]
+[PASS] T3 the amplitude i is central on Fock space: it commutes with all 45 so(10) generators (selects nothing)
+[PASS] T4 Z^3 x tick point group on R^4: commutant dim 2 = R(+)R (W(B4): 1), contains no J (odd real blocks) | W(B3)xT 2, W(B4) 1
+[PASS] T5a generic Majorana tick with pairing: positive-frequency J(k) varies with k; on-site commutant 0 | |J(.3)-J(1.9)| = 2.25, commutant 0
+[PASS] T5b number-conserving tick (CL-1 hops move occupations): k-independent J0 commutes; commutant 1 = U(1)_X | commutant 1
+[PASS] T5c pi/2 half-tick exp(-i pi/2 R) squares to -1 (a J), but it is the hop R itself: site-nonlocal; eps=.37 not
+== S. The second split: composite half-link patterns ==
+[PASS] S0 rotation group of the cube: 24 signed permutations
+[PASS] S1 2d half-link patterns = A1 + (d-1) + d, irreducible and inequivalent (d=2,3,4): SU(d-1)xSU(d) at d=3 | d=2: 1+1+2, d=3: 1+2+3, d=4: 1+3+4
+[PASS] S1b E-multiplicity: unoriented axes 1, oriented axes (vector) 0, 2^3 cube corners 0, 6 half-links 1 | [1, 0, 0, 1]
+[PASS] S2a star (site + 6 half-links, site-link hop only): spectrum +-sqrt6, 0^5; the zero space is E+T1 -> u(5)
+[PASS] S2b covariant half-link terms split it: antipode swap E +1 / T1 -1; adjacency E -2 / T1 0 (A1 4) | E [1.0, -2.0] T1 [-1.0, 0.0]
+[PASS] S3a cubic-invariant on-site tick on E+T1: 2 parameters (omega_E, omega_T); generic omega_E != omega_T | 2
+[PASS] S3b its so(10) commutant is u(2)+u(3) = 13 (= SM x U(1)_chi floor of the merged ruleset) | 13
+[PASS] S3c the tick generator itself is the 45 orientation a X + b Y (+const): residual 0 | a=+0.141 b=-0.401
+[PASS] S4a the 16 (even N_{J_A}) is Q u^c d^c L e^c nu^c with Y = 1/6,-2/3,1/3,-1/2,1,0 | nu^c:+0.00 e^c:+1.00 Q(3,2):+0.17 u^c(3b,1):-0.67 d^c(3b,1):+0.33 L(1,2):-0.50
+[PASS] S4b anomaly-free: Y, Y^3, SU3^2 Y, SU2^2 Y, X, X^3, X^2Y, XY^2, SU3^2 X, SU2^2 X all 0; doublets even (Witten) | doublets 4
+[PASS] S4c X = 2N_J - 5 (time's own number, twisted into so(10)) has charges -5,-1,3 on 1,10,5b: U(1)_chi | [-5.0, -1.0, 3.0]
+[PASS] S5a SU(2) lifts of the 24 rotations act on sigma as the vector
+[PASS] S5b cubic-covariant k-linear terms on (E+T1) x spin: space dim > 2; the 2 colour/weak-blind cones lie in it | covariant dim 13, blind 2, tuned 11
+[PASS] S5c internal commutant: blind cone 13 = u(2)+u(3); generic covariant cone 1 = U(1)_X only | blind 13, generic 1, E-T1 mixing 1.18
+[PASS] S5d the generic covariant cone mixes E with T1 (N_E, N_T, hence Y, not conserved)
+[PASS] S6 qubit-spinor reading of the 2: the cone sigma.k leaves commutant dim 1 on it (the 2 is spin, not weak)
+[PASS] S7 keeping the A1 half-link mode: Spin(12) half-spinor 32 = 16 + 16bar (a mirror family comes along)
+[PASS] S8 7-site stars tile Z^3 exactly (Golomb-Welch); the tiling keeps only a C3 of the 24 rotations, whose generic invariant tick on the 5 is non-degenerate (no protected 2+3) | 49 stars on 7^3, stabiliser 3, invariants 9, min gap 0.156
+elapsed 0.6 s
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

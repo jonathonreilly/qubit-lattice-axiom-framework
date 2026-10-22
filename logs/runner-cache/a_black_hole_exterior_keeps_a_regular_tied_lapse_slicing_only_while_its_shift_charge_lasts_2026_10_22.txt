@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/a_black_hole_exterior_keeps_a_regular_tied_lapse_slicing_only_while_its_shift_charge_lasts_2026_10_22.py
+runner_sha256: 9a455f7bca0dda30289b3c78741286c6bf6e077bd6b71d5fd76b763410527532
+input_fingerprint_sha256: dbc3323d7d592a98835ab91a920b719c9cdc72fdad3334425cfc11f0bfc49b84
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 34.18
+status: ok
+----- stdout -----
+== A. stationary tied-lapse slicings of Schwarzschild, label shift beta^r (exact)
+[PASS] A1 THEOREM: stationary slicing: N^2 gamma_RR = 1; tied lapse + label shift give dr/dR = sqrt(gamma(3gamma-2s^2)), 3f gamma^2 - (3+2s^2 f-beta^2) gamma + 2s^2 = 0 (s = r/R), l_r = (3gamma-2s^2)^-1/2, l_t = 1/s; vacuum shift Q/r^2 + a r | residuals 0
+[PASS] A2 THEOREM: discriminant (2(x-sqrt1.5)^2-beta^2)(2(x+sqrt1.5)^2-beta^2), x = s sqrt f; the flat-far root diverges at the horizon as (3-beta^2)/(3f) (static type: N, l_r -> 0), the regular horizon root is 2s^2/(3-beta^2): a regular slicing must pass a double-root (sonic-type) point outside the horizon -- tuned, one label constant per Q | far roots [2/3, 1]; horizon root 2s^2/(3-beta^2)
+[PASS] A3 THEOREM: at a regular stationary horizon N/sqrt(A) = beta^r: outgoing light sits at a fixed label while the label-frame wave shift moves sqrt(mu) labels/tick: the shift carries core data out of the horizon; radially superluminal where l_r/l_t > sqrt((3/mu-1)/2) | mu = 3/4: l_r/l_t > 1.225
+[PASS] A4 THEOREM: Q(t) = -(16pi/3) int r^3 S^r/A dr - (1/3mu) int r^3 d_t^2 beta dr: a stationary charge is the matter's radial momentum moment | stationary check 449.08154 vs 449.06528
+[PASS] A5 THEOREM: Q is time-odd, so a time-symmetric core bounce sends Q -> -Q; edges see beta^2 only, but Q < 0 slices cross only the PAST horizon, so with Q <= 0 a collapse exterior keeps only the static root (floor at R = 2M/(1-4^(-3-m))) | F(beta) = F(-beta)
+== B. the regular stationary family (separatrices), one per shift charge Q = r^2 beta^r
+<lambdifygenerated-5>:2: RuntimeWarning: invalid value encountered in sqrt
+  return sqrt(gamma)*sqrt(3*gamma - 2*r**2/R**2)
+   Q     R_c  | 2M: N   l_r   l_t | ext l_r max l_t min | labels end R
+   0.25  3.16 | 0.392 61.27 0.320 |  61.07  0.320 |  0.05
+   1     3.35 | 0.411 14.59 0.335 |  14.59  0.335 |  0.02
+   2     3.52 | 0.433  6.93 0.354 |   6.88  0.355 |  0.02
+   3     3.65 | 0.458  4.35 0.375 |   4.35  0.375 |  0.02
+   3.6   3.72 | 0.474  3.49 0.389 |   3.49  0.389 |  0.02
+   4     3.77 | 0.485  3.07 0.398 |   3.04  0.400 |  0.02
+   5     3.86 | 0.514  2.29 0.423 |   2.28  0.427 |  0.02
+   5.5   3.90 | 0.532  2.00 0.439 |   2.00  0.439 |  0.02
+   6     3.93 | 0.550  1.76 0.457 |   1.76  0.457 |  0.14
+   8     4.02 | 0.633  1.05 0.551 |   1.24  0.551 |  1.08
+   10    3.90 | 0.566  0.42 0.734 |   1.13  0.620 |  1.92
+[PASS] B1 DIAGNOSTIC: each Q in [0.25, 10] has one tuned separatrix, flat at infinity, critical at R = 3.2-4.0 M, regular through 2M; l_t >= 0.32 outside; l_r peaks at the horizon for Q <= 6 and falls with Q | l_r(2M) 61.3 (Q 0.25) .. 0.42 (Q 10)
+[PASS] B2 DIAGNOSTIC: the family ends at Q_max ~ 10 M^2: at Q = 10.5 the flat separatrix meets a second critical point outside the horizon | Q 10.5: labels end at R 3.33
+== C. vacuum ADM, tied lapse, excised inside the horizon (R_in ~ 1.4M), Q = 4 separatrix data, h 0.1
+   Q held  t  0.0 | ext l_r max 2.92 l_t min 0.414 | 2M: N 0.478 l_r 3.12 | Q(6M)  4.00 | R_in 1.36
+   Q held  t 20.0 | ext l_r max 2.92 l_t min 0.414 | 2M: N 0.479 l_r 3.12 | Q(6M)  4.00 | R_in 1.36
+   Q held  t 40.0 | ext l_r max 2.92 l_t min 0.414 | 2M: N 0.479 l_r 3.12 | Q(6M)  4.00 | R_in 1.36
+[PASS] C1 DIAGNOSTIC: the Q = 4 separatrix is stationary in the nonlinear code with the core holding Q (40 M) | max drift l_r(2M) 0.000, Q 0.000
+   causal  t  0.0 | ext l_r max 2.92 l_t min 0.414 | 2M: N 0.478 l_r 3.12 | Q(6M)  4.00 | R_in 1.36
+   causal  t 16.0 | ext l_r max 3.40 l_t min 0.398 | 2M: N 0.455 l_r 3.71 | Q(6M)  3.28 | R_in 1.41
+   causal  t 32.0 | ext l_r max 4.84 l_t min 0.365 | 2M: N 0.405 l_r 5.56 | Q(6M)  1.21 | R_in 1.67
+[PASS] C2 DIAGNOSTIC: causal wave ((d_t - beta d_r)^2 beta = mu (N^2/A) Lap beta; nothing enters the excision): the charge falls in, Q(6M) drains and l_r passes 4 outside the horizon within ~30 M | Q(6M) 4.00 -> 1.21, max l_r 5.08 by t 32
+   literal t  0.0 | ext l_r max 2.92 l_t min 0.414 | 2M: N 0.478 l_r 3.12 | Q(6M)  4.00 | R_in 1.36
+   literal t  3.0 | ext l_r max 2.97 l_t min 0.405 | 2M: N 0.468 l_r 3.13 | Q(6M)  3.08 | R_in 1.37
+   literal t  6.0 | ext l_r max 3.49 l_t min 0.347 | 2M: N 0.424 l_r 3.49 | Q(6M) -0.77 | R_in 1.39
+[PASS] C3 DIAGNOSTIC: the literal flat-lattice source Lap beta_i - 2 d_j(K_ij - delta_ij K) (not its on-shell value) has a vacuum part that drives Q through zero in ~6 M (runaway) | Q(6M) 4.00 -> -0.77 by t 6
+== D. estimates: window [2^(-3-m), 2^(1+Delta-m)], far phase m in [0, 1)
+   phases inside (Delta 1/2): 0.25:0.00/0.00 1:0.00/0.00 2:0.00/0.22 3:0.00/0.88 3.6:0.20/1.00 4:0.39/1.00 5:0.81/1.00 5.5:1.00/1.00 6:1.00/1.00 8:1.00/1.00 10:1.00/1.00
+[PASS] D1 ESTIMATE: all far phases inside outside the horizon iff 5.5 <~ Q <~ 10 (Delta 1) or 3.2 <~ Q <~ 10 (Delta 2); the top is the wall | Q 4: l_r max 3.04, phases inside 0.39 (Delta 1)
+[PASS] D2 ESTIMATE (fix: trapped cells keep their shift): the exterior keeps its charge at trapping, 3.6-5.0 M^2 (wave-shift-collapse), l_r max 3.5-2.3: all far phases inside iff Delta >= 2 | Q 3.6: phases inside 0.20 (Delta 1), 1.00 (Delta 2)
+[PASS] D3 ESTIMATE: a flux-memory source gives Q ~ 0.4 M R0^2 (ball from rest at R0), past Q_max for R0 >~ 5 M: excluded | R0 = 10 M: Q ~ 40 M^2
+[PASS] D4 ESTIMATE: under the current law the A5 flip reaches R = 6M in ~(label distance)/sqrt(mu): ms for stellar holes, not Hawking times | floor label 3.94 -> 6M label 8.35: ~5.1 M
+supplied: continuum ADM as CL-3 limit, spherical symmetry, the on-shell (matter) form of the shift source unless stated, mu = 3/4,
+  flat-label Laplacian, Q at trapping from wave-shift-collapse; excision boundary conditions; KO dissipation.
+elapsed 31.8 s
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

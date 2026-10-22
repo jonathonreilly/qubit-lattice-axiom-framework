@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/a_normal_frame_wave_shift_fed_by_the_per_tick_volume_rate_gives_black_hole_exteriors_an_attracting_horizon_regular_slicing_2026_10_22.py
+runner_sha256: 79afd603c1cadd93dd9f578490432ac58d9faf69feb34462214820a4f1aeb7d5
+input_fingerprint_sha256: 1e7f6fc9281ab5b0c40108bd0f65e5b10f1fbd4923299d0e66916a69b8c0e4ea
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 44.35
+status: ok
+----- stdout -----
+== A. exact (sympy): principal symbol on the constraint surface, causality, vanishing, parity
+[PASS] A1 THEOREM: with the per-tick volume rate N K as source, the longitudinal symbol is v^4 - (mu+q) v^2 + mu q (1-kappa) = 0 (v in local light speeds, q = l_t^2/(l_t^2+2 l_r^2) the tied lapse speed^2); with K per proper time the constant term is mu q (1 - kappa/N): ill-posed wherever N < kappa (deep wells), so the per-tick form is forced | kappa = 0 gives roots mu and q (register)
+[PASS] A2 THEOREM: speeds are real for every kappa >= 0 (discriminant (mu-q)^2 + 4 mu q kappa), positive iff kappa < 1 at every edge ratio and lapse; subluminal iff (1-mu)(1-q) >= mu q kappa, so in weak fields (q = 1/3) kappa <= 2(1-mu)/mu; at equality the fast mode is exactly c and, wherever l_r >= l_t, no gauge mode is faster than light | mu = 3/4: kappa_max = 2/3, speeds [sqrt(3)/6, 1]
+[PASS] A3 THEOREM: the source -kappa d_i(N K) and the advection vanish for static slices (K = 0), homogeneous ones (N K uniform) and stationary axisymmetric azimuthal shifts (K = D_i beta^i / N = 0): beta = 0 around static stars, FRW and Bianchi I, and the rotating-body equation is the register one up to the local light-speed factor | D_i beta^i = 0, beta.d beta = 0
+[PASS] A4 THEOREM: the law is time-reversal invariant (beta, K, d_t odd; (d_t - beta d)^2, d(NK)/beta even): no time-even source is needed; a white-hole (Q < 0) trumpet is the time reverse of the attractor and repels | parity count
+[PASS] A5 THEOREM: in labels every characteristic moves at -beta +- v c_l (c_l = N/l_r); inside the surface beta = v_max c_l (at or outside the horizon, since v_max <= 1 for kappa <= kappa_max where l_r >= l_t) all point inward, so a core bounce cannot reach the exterior; in the register's label frame the shift moves sqrt(mu) labels/tick at every beta and does (post-crunch A3) | normal frame vs label frame
+== B. finite diagnostics: spherical vacuum ADM, tied lapse, normal-frame wave shift, mu = 3/4, kappa = 2/3, excised inside 2M
+   start       t   | ext l_r max  l_t min | 2M: N   l_r  | r^2 beta @6M @12M | R_gs
+   Q0 4        0.0 |   3.02   0.403 | 0.491  3.02 |   4.00   4.00 |  2.04
+   Q0 4      120.0 |   1.81   0.493 | 0.593  1.81 |   9.67  14.10 |  2.15
+   Q0 8        0.0 |   1.24   0.552 | 0.630  1.03 |   8.00   8.00 |  2.17
+   Q0 8      120.0 |   1.80   0.492 | 0.576  1.85 |   9.62  13.74 |  2.17
+   Q0 6+bump   0.0 |   1.76   0.458 | 0.552  1.76 |   7.18   6.00 |  2.12
+   Q0 6+bump 120.0 |   1.78   0.497 | 0.582  1.83 |   9.69  14.01 |  2.09
+[PASS] B1 DIAGNOSTIC: three different starting slicings (label-family Q0 = 4, 8, and 6 with a 20% shift bump) end on one stationary horizon-regular exterior: an attractor, not a family | spread l_r max 0.013, l_t min 0.011, N(2M) 0.030
+[PASS] B2 DIAGNOSTIC: on the attractor every exterior edge is inside the window at every far phase with Delta = 1 (l_r <= 2^Delta, every edge >= 1/8); the shift-wave sonic surface sits outside the horizon | l_r max 1.81 (log2 0.85), l_t min 0.493, R_gs 2.15 M
+[PASS] B3 DIAGNOSTIC: stationary: exterior edges and lapse drift < 3% between t = 80 and 120 M (400 M scratch run: l_r max 1.78-1.86) | drift 0.0156
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/land-shift-charge-law/scripts/a_normal_frame_wave_shift_fed_by_the_per_tick_volume_rate_gives_black_hole_exteriors_an_attracting_horizon_regular_slicing_2026_10_22.py:89: RuntimeWarning: invalid value encountered in sqrt
+  A, B, KA, KB, be, Bb = Y; al = np.sqrt(3 / (1 / A + 2 / B))
+[PASS] B4 DIAGNOSTIC: core signal (shift seed at R = 1.0 M, inside the horizon; grid to 0.51 M): under the normal-frame law the exterior response stays at the numerical-leak level for 15 M; under the label-frame law it is order one at 2-3 M within 1.4 M (that law then fails on this data) | response/seed: normal 2.1e-04 (2-8 M, t 15.0), 1.0e-05 (2-3 M, 1.4 M); label 3.4e-01 (2-3 M, t 1.40)
+[PASS] B5 DIAGNOSTIC: weak field: a compact shift bump on a flat slice spreads no faster than light (front speed ~ fast root 1) | front 32.70 -> 42.00, speed 0.930 c
+[PASS] B6 DIAGNOSTIC: kappa is supplied: at kappa = 1/2 the attractor's radial edge is 2.49 (needs Delta = 2); Delta = 1 needs kappa within ~10% of its causal maximum 2/3 | l_r max 2.49 (kappa 1/2) vs 1.81 (2/3)
+[PASS] B7 DIAGNOSTIC: resolution h = 0.05 vs 0.1 at 80 M agree | max rel diff 0.0184
+== C. estimates
+[PASS] C1 ESTIMATE: Earth/Kerr frame-dragging: the stationary rotating equation differs from the register one only by the light-speed factor N^2 gamma^jj, a relative O(GM/Rc^2) = 7e-10 at the Earth; the ~4e-15 edge ring is unchanged (extreme Kerr not recomputed) | 7e-10
+[PASS] C2 ESTIMATE: the exterior keeps its slicing through any core history (B4), so a core bounce stays behind the horizon until the (L/r_s)^2 per light-crossing leak of the register estimate: no prompt re-emergence | Cyg X-1 bound not challenged
+supplied: continuum ADM limit, spherical symmetry, mu = 3/4, kappa (here at its causal maximum), on-shell matter reading of the
+  momentum-constraint part, flat-label Laplacian times N^2/A, excision, KO dissipation, Dirichlet outer boundary at r = 70.
+elapsed 42.8 s
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

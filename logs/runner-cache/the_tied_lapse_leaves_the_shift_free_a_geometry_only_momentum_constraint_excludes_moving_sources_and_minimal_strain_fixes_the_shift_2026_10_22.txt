@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/the_tied_lapse_leaves_the_shift_free_a_geometry_only_momentum_constraint_excludes_moving_sources_and_minimal_strain_fixes_the_shift_2026_10_22.py
+runner_sha256: 3d144e309e3b800b141e5ac454a27f6b7846731f86b6a138e89da3902f74a23f
+input_fingerprint_sha256: 17a7e1a4fdbe17c1392b575d253fd5847800cfafc34d84cd2a71ccedd12dcc79
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.84
+status: ok
+----- stdout -----
+== A. linearised GR with the fixed-step lapse (h_00 = -h_kk/3)
+[PASS] A1 THEOREM: the tied lapse does not fix the spatial gauge: at every (omega, k) the action on (h_ij, beta_i) has a kernel of exactly 3 (spatial displacements with a compensating time relabelling) whose beta-projection has rank 3, so every shift is a stationary shift of some edge history; "the shift at which the total phase is stationary" fixes nothing | kernel dims [3]; beta rank of kernel [3]
+[PASS] A2 THEOREM: given the edge history, the beta-beta block has rank 2 (K_ijK^ij - K^2 is blind to a longitudinal shift), and the beta equation is the momentum constraint G_0i = 8 pi T_0i: it constrains the edges and the shift together | beta-beta ranks [2]
+[PASS] A3 THEOREM: for a moving source the linearised solution has G_0i = (8 pi) T_0i != 0 in its geometry part; CL-3's edge-only displacement generator is the geometry part of G_0i (the vacuum momentum constraint), so "odds invariant under every edge shift" forces T_0i = 0 (no matter momentum) or excludes the GR field of every moving mass in every gauge | |G_0i|/|G_00| = 0.316 = |T_0i|/|T_00| = 0.316; G = 25.1327 T
+== B. edge registers: the displacement shift as an operator
+[PASS] B1 THEOREM: on finite registers the displacement shift is a partial isometry, and the only odds invariant under it are zero (iterate psi = S^k psi until some raised edge leaves the window); a cyclic (clock) shift has invariant odds, but it wraps a length from 2L to L/8. So CL-3's "only odds invariant under every such shift occur" is empty as written | invariant dim: truncated 0, cyclic 216 (of 1296)
+[PASS] B2 THEOREM: with the invariance read on the window (both ends inside), physical odds are functions on orbit segments; each ends where the next gauge step leaves the window, so a single edge value (and "an edge at the floor") is not gauge-invariant: imposing the constraint spreads it, while displacement-invariant combinations are class functions | segments 336: n_+x + n_-x constant on each, n_+x never; var(n_+x) 0.26 -> 2.90; P(an edge within one step of the floor) 0.67
+[PASS] B3 THEOREM: moving a cube's 8 corners outward (a pure displacement, no curvature) lengthens all 18 of its edges, so the split trigger "every edge full" and the floor are reachable by gauge alone; and one corner displaced by u changes the fixed-step lapse at first order: CL-1's lapse ties the slicing to the spatial gauge | all 18 edges grow: True; d ln N/du = 0.0278 per cube edge
+== C. Oppenheimer-Snyder from rest at R0 (E^2 = 1 - r_s/R0)
+[PASS] C1 THEOREM (edge-only generator, matter on labels): the dust surface keeps its label sphere (rho_b sites across) and its areal radius R_b is a spacetime scalar, so its mean tangential edge is l0 R_b/R0 on every slicing for unwrinkled representatives; it meets L/8 before R_b = r_s iff R0 > 8 (l0/L) r_s, i.e. for every window phase once R0 > 16 r_s | R0/r_s 10: l0/10, floor first at 32% of phases; R0/r_s 16: l0/16, floor first at 100% of phases; R0/r_s 100: l0/100, floor first at 100% of phases; R0/r_s 100000: l0/100000, floor first at 100% of phases
+[PASS] C2 THEOREM (full generator: matter may move through the labels): the T = const slices of ds^2 = -dT^2 + E^-2 (dr + V dT)^2, V^2 = 2M/r - 2M/R0, are Schwarzschild, glued to the dust proper-time slices of the closed FRW interior; on a static areal grid gamma_RR = 1/E^2 outside and 1/(1 - R^2 sin^2 chi0/R_b^2) in [1, 1/E^2] inside, so every edge stays in [l0, l0/E] at every tick: inside [L/8, 2L] whenever 1/E <= 16 (R0 > 1.004 r_s) | R0/r_s 1.5: 1/E 1.732; R0/r_s 3: 1/E 1.225; R0/r_s 10: 1/E 1.054; R0/r_s 100: 1/E 1.005; R0/r_s 100000: 1/E 1.000
+[PASS] C3 THEOREM: the PG-type grid is static until the shift needs more than one cube per tick (sin 2 theta = 1), at R_sat ~ (2/3) sin^2(eps0) M / (1 + ...) deep inside the horizon; the floor is no obstruction outside horizons | eps0 0.0075 R0/r_s 1.5: R_sat/r_s 2.4e-05; eps0 0.0075 R0/r_s 10: R_sat/r_s 1.9e-05; eps0 0.0075 R0/r_s 100000: R_sat/r_s 1.9e-05; eps0 0.0375 R0/r_s 1.5: R_sat/r_s 6.0e-04; eps0 0.0375 R0/r_s 10: R_sat/r_s 4.8e-04; eps0 0.0375 R0/r_s 100000: R_sat/r_s 4.7e-04
+[PASS] C4 ESTIMATE: CL-1's fixed step on this grid gives N = sqrt(3/(2 + 1/gamma_RR)) x const: uniform outside (a rescaled PG tick), and inside rising by at most sqrt(3/(2 + E^2)) - 1 ~ r_s/(6 R0) over the dust proper-time lapse; exact for marginally bound collapse (E = 1, floor-horizon D3), a small drift to be followed by the shift law otherwise | R0/r_s 1.5: 0.1339; R0/r_s 3: 0.0607; R0/r_s 10: 0.0171; R0/r_s 100: 0.0017
+== D. the minimal-strain shift (Smarr-York 1978) as the gauge partner of the displacement generator
+[PASS] D1 THEOREM: the minimal-strain shift (least sum of squared edge rates) removes exactly the displacement part of the edge motion and leaves the rate orthogonal to every displacement (J^T dn = 0 on the lattice): it fixes beta uniquely (up to Killing motions) and is zero-strain on the marginally bound PG grid (C2 with E = 1, gamma static) | beta = xi to 1e-10; residual rate fraction (TT + trace, invariant) 0.43, 0.54, 0.31, 0.59, 0.38
+[PASS] D2 THEOREM: with the full generator imposed and the shift fixed by minimal strain, the shift is still the multiplier of the momentum constraint (A2), so the constraint holds and no ghost pair returns (the gauge is fixed, not broken); the condition is elliptic: beta is nonlocal within a slice but, being gauge, carries no signal | cf. momentum-constraint D1: the ghost pair needs a breaking that touches the shift in the action, not a gauge condition
+supplied: linearised GR (A, D), the CL-3 generator text (B), Martel-Poisson PG coordinates and the OS interior (C), eps0 0.0075-0.0375, unwrinkled representatives (C1).
+not built: CL-1 tick under the full generator; block-pair current as matter translation; register-level collapse.
+elapsed 0.5 s
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/transmutation_removes_the_weak_scale_tuning_but_only_colour_binds_a_doublet_pair_and_no_rule_vacuum_has_a_misalignment_angle_2026_10_22.py
+runner_sha256: a02529bbeed532b8129eee3425dded52eb7081157382bf38f40ee4b61e1aefda
+input_fingerprint_sha256: 6292cdee8f26e8d9c87c7e7777a9b4efdf71a9512a44623590978c117b9a9aa3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+== A. dynamical breaking (transmutation along the rungs)
+[PASS] A1 [T] one-loop coefficients from content (b > 0 asymptotically free): SM (U1 GUT-norm, SU2, SU3) = (-41/10, 19/6, 7); Pati-Salam (SU4, SU2_L) one family 40/3, 6, three families 32/3, 10/3; an Sp(2) factor on 4 Weyl doublets 6 | exact Fractions
+[PASS] A2 [T] colourless |Y| = 1/2 doublet pairs of one family: exactly q u^c, q d^c, L e^c, L n^c; the only non-abelian factor holding both members is colour (quark pairs); SU(2)_L never holds both (one member is a singlet); lepton pairs have no non-abelian binder | [('q', 'u^c', ['SU3']), ('q', 'd^c', ['SU3']), ('L', 'e^c', []), ('L', 'n^c', [])]
+[PASS] A3 [T] one-loop transmutation: v/M = 2^-n with n = 2pi/(b0 alpha_cell ln2), and |d ln v / d ln alpha_cell| = n ln2 for any b0: a 1e-16 hierarchy costs sensitivity 37, not the four-mode route's 1/delta | v/M = 1.01e-16, n = 53.1, sensitivity 36.8; factor 2 in v <-> d(1/alpha_cell) = 1.18 (PS, 3 fam), 0.66 (Sp2); four-mode delta (sphere) 3.8e-31
+[PASS] A4 [T/E] with the per-mode count as the cell coupling the rung count is fixed by content (n = 8 pi^2 kappa T/(b0 ln2), exact), but the readings double n per step and none lands within 3 rungs of the needed 53.1; a hit would be look-elsewhere (3 groups x 6 readings, spacing x2) | PS3: 5.3,10.7,21.4,42.7,85.4,170.9; PS1: 4.3,8.5,17.1,34.2,68.3,136.7; Sp2: 9.5,19.0,38.0,75.9,151.9,303.8; closest miss 10.4 rungs = x1e+03 in v
+[PASS] A5 [E/M] colour (the only binder of a doublet pair) reaches the ladder critical alpha_c = pi/(3 C_F) only at the QCD scale; its own condensate breaks SU(2) x U(1) with v = sqrt(3) f_pi | alpha_c 0.7854 at mu = 0.35 GeV; alpha_s(v) = 0.1036 (x7.6 short); m_W(QCD) = 52 MeV vs 80377; v/M from colour 6.5e-20 vs 1.0e-16
+[PASS] A6 [E/M] top-pair condensation (compositeness 1/y^2 = 0 at the cutoff, one-loop SM running): the quasi-fixed point gives y_t(m_t) far above measured at every cutoff up to the cell; bubble scalar at 2 m_t | L=1e+04: y=2.368, y v/sqrt2~412; L=1e+10: y=1.480, y v/sqrt2~258; L=2e+18: y=1.281, y v/sqrt2~223 vs y=0.936 (y v/sqrt2 = 163, pole 172.6); m_H(bubble) = 345 vs 125.1
+== B. the scalar as a neighbourhood-configuration composite
+[PASS] B1 [T] the global SU(2)_L centre -1 acts trivially on every link register (Ad(-g) = Ad(g)), on edges (singlets) and on every rishon string of fixed per-bond number (even length); adj^k has integer spin only: no configuration of links, rishons and edges is a doublet; a Y = 1/2 doublet needs an odd number of doublet fermion modes, so a boson needs a singlet fermion too: the A2 pairs, dressed by links | |Ad(g)-Ad(-g)| 0e+00; spins in adj^1..4 [0.0, 1.0, 2.0, 3.0, 4.0]; rishon strings <= 6 even: True
+[PASS] B2 [F] four-mode bilinear binding at mean field on a 20^3 lattice: the pseudoscalar (eaten) pole sits at q0 = 0 and the scalar at the threshold 2m for any coupling above critical (identities of the gap equation); no scalar below 2m | G = 1.3 G_c, m = 1.656/a; 1 - Pi_P(0) = 2e-16; 1 - Pi_S(2m) = 2e-09
+[PASS] B3 [E/M] a bubble scalar at 125.1 GeV needs constituents at 62.6 GeV; with K = 3 (one coloured Dirac doublet member) the decay-constant sum needs a cutoff far above the cell; at the cell K >= 8 degenerate chiral states, whose S is excluded | ln(Lambda/m) = 102 (cell: 38.2); K_min = 8.01; K = 10: S = 0.27 vs -0.05+-0.07 (4.5 sigma)
+== C. protection of a light scalar
+[PASS] C1 [T] every nonzero colour-singlet psi chi condensate breaks SU(2)_L x U(1)_Y to at most one U(1) (any real combination of SU(2)_L generators is invertible), and SU(2)_L acts on one index only, so the charged-W mass sum_(a=1,2) |T_a Sigma|^2 = |Sigma|^2/2 for every Sigma (fixed by f alone): v = f, no misalignment angle, no doublet pNGB | max unbroken over 62 vacua 1; W-mass ratio 0.500000000000, spread 4e-16
+[PASS] C2 [T] pair-square 10: colour fixes only the (1,2,2) block and colour + SU(2)_L fix no direction, so a colour-safe pair condensate breaks EW at its own scale; its 9 Goldstones are a colour triplet (6 real, Casimir 4/3; its Y = -+1/3 is the (6,1,1) charge) + 3 eaten: no light doublet | fixed dims colour 4, colour+SU2_L 0; broken 9 = 6 (C3 = 4/3) + 3 (singlet)
+[PASS] C3 [T] contrast: four Weyl doublets of a pseudoreal factor give the SU(4)/Sp(4) vacuum manifold, where m_W^2 is proportional to sin^2 theta (theta = 0 keeps SU(2) x U(1)); v = f sin theta needs content the rules do not have (A2: no pseudoreal binder holds a doublet pair) | m_W^2(theta)/m_W^2(pi/2) = [0.0, 0.066987, 0.25, 0.5, 0.75, 0.933013, 1.0]
+[PASS] C4 [T/F] CL-3 measures the response from the vacuum: subtracting the vacuum's value (a constant in the condensate) leaves the cell-sized m^2 coefficient of the sea energy unchanged; a subtraction that moves with the condensate makes the potential identically flat and fixes no v | dE/d(m^2) at 0: -0.9100/a^2 (subtracted -0.9100); = -2 I0, I0 = 0.4550
+supplied: one chiral family x3 (CL-1 content), Pati-Salam and Sp(2) factors as readings, plaquette count
+  1/alpha = 4 pi kappa T, ladder alpha_c = pi/(3 C_F), mean-field bubble, single-cone 20^3 band, G = 1.3 G_c,
+  M = 2.44e18 GeV; measured: alpha_s(MZ), f_pi, g, gauge couplings at m_t, y_t(m_t), m_H, v, S = -0.05(7).
+elapsed_seconds 0.2
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/a_fold_ladder_family_mass_rule_gives_rank_three_and_handed_cp_but_its_content_is_the_fitted_rungs_and_it_leaves_theta_bar_order_one_2026_10_22.py
+runner_sha256: 7898f735b83aa0d9e4d9c1f16ab0adc0a6eb13359ec5a733314e2f6e24517cf1
+input_fingerprint_sha256: 2dd85761f9ea183640017acd200cfac2109fee95cd481630f68970da6ea9a86a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 12.83
+status: ok
+----- stdout -----
+Fold-ladder family-mass rule (seed 20261022)
+A. Exact structure
+PASS: A1 nested block-uniform overlap = 2^(-3|a-b|/2), so eps = 2^(-3/2) = 0.3536 | max err 2.2e-16
+PASS: A2 path-sum rank = number of contact ranges (1->1, 2->2, 3->3; 40 seeded each) | {1: {1}, 2: {2}, 3: {3}}
+PASS: A3 J = 0 for one range or phases linear in r; J != 0 with sin(r theta) phases | J_lin 1.9e-33, J_fold -2.87e-05
+PASS: A4 mirror (h -> -h): masses and |V| equal, J flips sign | J(+h) -2.865e-05, J(-h) 2.865e-05
+PASS: A5 rung triple (0,1,3) has 3 distinct distances (no cyclic negation ceiling) | [1, 2, 3]
+PASS: A6 commutant of {Hu, Hd} is 1-dimensional (no shared unitary, mixing lemma met) | dim 1, next sv 1.5e-04
+B. Fit (all integers and lam FITTED)
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/land-flavour-rule/scripts/a_fold_ladder_family_mass_rule_gives_rank_three_and_handed_cp_but_its_content_is_the_fitted_rungs_and_it_leaves_theta_bar_order_one_2026_10_22.py:173: RuntimeWarning: divide by zero encountered in log
+  sc = eu[i] + ed[j] + np.sum(np.log(p / OBS[4:]) ** 2)
+  best: lam=1.5 Q-rungs=(4, 1, 0) u-rungs=(13, 10, 7) d-rungs=(6, 5, 4)  sum(ln^2)=0.60
+  mu/mt 7.45e-06/7.31e-06  mc/mt 0.00391/0.00368  md/mb 0.00117/0.00094  ms/mb 0.0262/0.0187  Vus 0.126/0.224  Vcb 0.0502/0.0411  Vub 0.00492/0.00382  J -2.87e-05/3.08e-05
+PASS: B1 best fit: 8 observables at rms log-deviation <= 0.35 (FITTED: 8 integers + lam + sign) | rms 0.27; cells searched 2.77e+08
+PASS: B2 look-elsewhere: BC pitch fits no better than the median of 6 seeded random pitches (pitch UNTESTED) | BC 0.60, random median 0.43, min 0.23
+C. Predictions with only the 4 quark mass ratios fitted (factor 1.5)
+  mass-fitting cells 601; CKM medians Vus 0.174 Vcb 0.108 Vub 0.0190 |J| 4.44e-05
+PASS: C1 CKM predicted from mass-fitting cells: all four within x2 in under 5% of cells (disfavoured) | hit 0.013; Vcb median/meas 2.6, Vub 5.0
+PASS: C2 strong CP: arg det(Mu Md) is O(1) (median 1.59 rad), never < 1e-3 (measured < 1e-10) | fraction < 1e-3: 0.000
+PASS: C3 Koide not predicted: of 12648 lepton cells fitting m_mu/m_tau, 0.020 within 1e-3 of 2/3, 0.0000 within 1e-5 | measured Q 0.666664; cell median 0.661
+PASS: C4 BC pitch as the Koide phase (delta = 0.2061 vs 0.2222) misses m_e/m_tau by > x1.5 | pred 5.75e-04 meas 2.88e-04
+D. Gate
+  chosen: 8 rung integers (quarks) + lam + sense bit (FITTED); 5 lepton integers (FITTED)
+  by name: doublet/singlet multiplets read per family; sense tied to weak handedness
+  unfitted: rank 3 (consistent), CKM given masses (disfavoured), theta-bar O(1) (fails), Koide (not predicted)
+PASS: D1 gate: content is the fit (13 integers + 1 coupling + 1 bit for 13 observables) -> FAILS gate item 1 | bends Admissibility (rung contacts of range 2, 3) and Lattice (rung role reading)
+runtime 12.7 s
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

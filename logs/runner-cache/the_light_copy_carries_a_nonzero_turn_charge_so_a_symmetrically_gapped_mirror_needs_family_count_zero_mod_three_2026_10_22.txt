@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/the_light_copy_carries_a_nonzero_turn_charge_so_a_symmetrically_gapped_mirror_needs_family_count_zero_mod_three_2026_10_22.py
+runner_sha256: df9c8307f8dd904dde98ebfcfa7eb4673529ed85fd76850daa29ced075b7a553
+input_fingerprint_sha256: d0d10202eb6faf8581c13b2ebc91f201c4ccee411e990bf93622676ae58f75e3
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 5.32
+status: ok
+----- stdout -----
+== A. CL-1 cell: one mode per site per internal component, face phase -1, cube tick ==
+PASS A1 all 24 cube-centred rotations are tick symmetries up to a +-1 site gauge, unique up to overall sign
+PASS A2 the copy mass keeps exactly the 12 even (tetrahedral) rotations, including all 8 three-fold turns  [kept 12, turns kept 8]
+PASS A3 velocity matrices give Cl(3) (one cone), spin su(2), chirality chi = iA1A2A3 traceless (n_L = n_R)
+== B. C3 taste charge q of the light copy (det of the turn on a light chirality block = lambda^2) ==
+PASS B1 copy mass leaves one light taste per chirality (2 spin states each) at k = 0, both signs, eps = 0.3, 0.5
+PASS B2 on each light block the turn factorises as spin-1/2 rotation x a scalar taste phase lambda
+PASS B3 every three-fold turn has NONZERO taste charge on the light copy (q in {1,2}, never 0)  [q values seen [1, 2]]
+PASS B4 light L and light R carry the same q (the free tick is anomaly-free: the cone-rule sum q_L - q_R = 0)
+PASS B5 q(turn^-1) = -q(turn) and q is independent of the step eps (a topological, not dynamical, number)
+PASS B6 q is blind to the copy-mass sign; the copy-sign projector (1 -+ s) picks which E taste stays light (q -> -q), and neither gives q = 0
+PASS B7 without the copy mass the two light tastes per chirality are E with q = {1, 2} (one of each spin pair): sum 0  [taste phases per L state -> q [1, 1, 2, 2]]
+== C. Spin(10) on the 16: zero modes, centre, fermion-number steps ==
+PASS C1 Dynkin index ratio T(16)/T(10) = 2, so a unit Spin(10) instanton has 2T(16) = 4 zero modes per 16  [T16 = 4.0, T10 = 2.0]
+PASS C2 explicit: an SU(2)_A instanton in Spin(4) x Spin(6) sees 4 doublets in the 16; zero-mode weights sum to zero on every centraliser Cartan (Spin(10)-twists leave the vertex phase 1)
+PASS C3 the centre element exp(i pi sum H) acts on the 16 as one phase of order 4 (Z4, square = (-1)^F)
+PASS C4 a Spin(10)-invariant term changes fermion number by Delta n = 0 mod 4 (needs centre charge 1)
+PASS C5 the mirror 16bar alone has U(1)_F x Spin(10)^2 = 4 per family != 0: symmetric gapping must break U(1)_F
+== D. N family-blind copies, mirror gapped keeping Spin(10) and one turn ==
+PASS D1 light vertex phase w^(4Nq), q != 0: the turn survives mirror gapping only for N = 0 mod 3; smallest N = 3  [q = 2, allowed N <= 12: [3, 6, 9, 12]]
+PASS D2 the mixed turn-gravity (16Nq) and cubic (16Nq^3) conditions give the same set (cited normalisations)
+PASS D3 contrast: with both E tastes light (no copy mass) the light charges sum to 1 + 2 = 0: every N allowed
+PASS D4 a Z3 inside the residual fermion-number group Z_m (m | 4N, mirror anomaly-free) exists only if 3 | N: no fermion-number twist rescues N != 0 mod 3
+PASS D5 a family twist h is allowed on the mirror only if det(h)^4 = 1, which leaves the light phase w^(4Nq) != 1 for N = 1, 2, 4, 5
+PASS D6 the copy-mass tick's exact internal commutant (three generic k) is dim 1 per mode: a twist acts alike on L and R  [dim 1]
+PASS D7 loophole: family-dependent copy-sign projectors (q_f in {1,2}) allow every N >= 2; N = 1 is obstructed under every choice
+PASS D8 candidate SU(3)_family on the light 16s: cubic anomaly 16 x tr(l8^3) != 0, so a family SU(N >= 3) cannot be gauged and gives no count
+== E. doubling counts with the 16 ==
+PASS E1 per family the massless tick has 2 light 16 + 2 light 16bar (E + E), the copy mass 1 + 1; never 3 (counts are powers of 2 times 1)
+PASS E2 the hw = 1 corner triplet (the 3 of 8 = 1+3+3+1) carries turn charges {0,1,2}: sum 0, so the anomaly is silent there (the triplet route gets no count from (b))
+PASS E3 Nielsen-Ninomiya on the cell: tr chi = 0 for any N copies (n_16 = n_16bar before mirror removal)
+== F. cone-rule corollary 'charges sum to zero' over many cones ==
+PASS F1 for N family-blind copies every cone-rule sum is tr(chi) x tr(Q) = 0 for EVERY N: linear sums select nothing
+PASS F2 the only N-sensitive datum is the multiplicative vertex phase after the mirror is removed (= D1)
+== G. estimate against measurement (not a check of the rule) ==
+  LEP N_nu = 2.984 +- 0.0082: N = 3 at 2.0 sigma, N = 6 at 368 sigma; N = 1 (copy mass, one family) at 242 sigma
+PASS G1 among the allowed set {3, 6, 9, ...} only N = 3 survives the Z width (>300 sigma for N = 6)
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

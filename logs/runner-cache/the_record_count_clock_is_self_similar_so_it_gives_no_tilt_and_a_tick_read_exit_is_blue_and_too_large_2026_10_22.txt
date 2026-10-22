@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/the_record_count_clock_is_self_similar_so_it_gives_no_tilt_and_a_tick_read_exit_is_blue_and_too_large_2026_10_22.py
+runner_sha256: 5721eacf407f9ee65ddc00b02fd1fd0d5e6a36e64e559d072fd254a52847234f
+input_fingerprint_sha256: 10440b9ff477ca33e97b4e475c1de833de561cb6de602e7149e382bf3d11db76
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.41
+status: ok
+----- stdout -----
+== A. record arithmetic through splits
+[PASS] A1 [T+D] every matter site gets one record per half-tick, so a block is unrecorded only on its 7S new sites for the one half-tick after its split; the unrecorded share per generation is (7/8)/T_gen, the same every generation: no factor per split (lam = 1)  share by gen ['0.02194', '0.02187', '0.02195', '0.02183', '0.02187']; ratios ['0.9969', '1.0033', '0.9945', '1.0019'] (S=8, T_gen=40, sd=4.0 supplied)
+[PASS] A2 [T] the share of a region's records laid in the latest generation is 8^l/sum 8^j -> 7/8; its per-split ratio is 1 + O(8^-l): a start transient, not a constant lam  lam_l ['0.88889', '0.98630', '0.99829', '0.99979']; log2 lam ['-0.1699', '-0.0199', '-0.0025', '-0.0003']; running per ln k ['+0.216', '+0.025', '+0.003']
+[PASS] A3 [T+D] records never condition the odds, so the vacuum energy of recorded and unrecorded modes is the same function of the odds: no 'unrecorded share' of vacuum energy exists; a collapse reading would remove it all in one half-tick (factor 0, and heat), not 0.98  8-mode ring: E0 -4.8284, after record -4.8284, collapse reading 0.0e+00
+[PASS] A4 [T] the tied lapse makes proper time per tick proportional to the cube's proper length, so a generation (l_c -> 2 l_c) takes 1/(2 k l_c H) ticks: equal at every level of a de Sitter cascade, and the records per block per generation are a fixed number; the record clock is self-similar  ticks/gen = 1/(2*H*k*l_c)
+[PASS] A5 [T] a pointer (a mode the update acts on as a control only) has the same occupation odds at every half-tick, so it holds no tick count; the read, monotone registers are the edge registers, i.e. local length (zeta = 0)  control P(0) spread over 50 half-ticks 3.2e-15
+== B. supplied tick-reading exit: exact edge register, fewest-change transport
+[PASS] B1 [D] a tick-reading exit makes the Born spread of the register's actual value a split-time spread, delta N = ln2 sigma_T/T_gen per level, independent of H; its minimum over packet widths sits far above the 3.82e-05 per level that A_s needs  min delta N: s23 x0.5: 0.2167 (sig0 6); s23 x0.99: 0.0771 (sig0 2); s64 x0.5: 0.1187 (sig0 8); s64 x0.99: 0.0400 (sig0 3); s113 x0.5: 0.0901 (sig0 12); s113 x0.99: 0.0289 (sig0 4); s113 x0.9999: 0.0235 (sig0 3); overshoot (rms) >= 617
+[PASS] B2 [D] under the null energy condition H falls, so the register moves slower each split (x = v/2J falls by eps ln2) and its packet spreads more: lam = (dN_l+1/dN_l)^2 > 1, n_s - 1 = p eps with p > 0 (blue)  p = (n_s-1)/eps: s64 x0.5: +1.42, s64 x0.9: +5.43, s23 x0.5: +1.01 (eps=0.02 supplied)
+[PASS] B3 [T+D] in de Sitter every level repeats the same register problem (children at parent value - s, same x, same ticks per generation, A4), so a tick-reading exit gives lam = 1 exactly: n_s = 1  same-problem spread 0.19785 = 0.19785
+== C. tensors
+[PASS] C1 [T+E] the record clock adds no tensor channel (the trigger reads tensors at second order only); P_t = 2(H/M_p)^2/pi^2 needs a supplied plateau H, and the record-clock A_s does not depend on H, so r is free  r < 0.036 needs H/M_p < 1.93e-05; the laws' only de Sitter phase is today's (r ~ 0)
+== E. estimates against measurement
+   needed lam = 0.9760 (Planck), 0.9821 (ACT+DESI); A_s per-level rms 3.82e-05
+   A2 transient: log2 lam = -0.1699, -0.0199 at levels 1,2; running +0.216 (levels 1-2), +0.025 (2-3) per ln k vs measured -0.0045 +- 0.0067 (33, 4.4 sigma); tilt gone by level 4 (-0.0003) while the CMB spans ~10 octaves
+   tick-read exit implies (de Sitter): lam = 1, n_s = 1, A_s >= 8.0e-04 per octave (vs 2.1e-09); r = 2(H/M_p)^2/(pi^2 A_s) <= 9.5e-08 at H/M_p < 1.9e-05
+   numerology (s supplied 23-113): 1-1/s: s in [42,55]; 1-ln2/s: s in [29,38]; 2^(-1/s): s in [29,38]; (7/8)^(1/s): none; 1-1/(8s): none
+[PASS] E1 [E] no record-clock channel gives a constant red lam: record shares are self-similar (A1, A4), the start transient runs 8x per level (A2), a tick-read exit is blue under NEC and overshoots A_s (B1, B2); the window is reached only by picking s  lam = 1 -> n_s = 1 (8.4 sigma Planck)
+supplied: S, T_gen, Born sd (A1); 8-mode ring (A3); random controlled unitary (A5); tight-binding register,
+  J = 1, x = v/2J, Gaussian packets, quantile transport (B); eps (B2); plateau H (C); measured numbers (E only).
+runtime 2.0 s
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

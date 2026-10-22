@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/a_sharp_dark_constant_freezes_the_odds_and_per_cube_operator_constraints_have_no_common_solution_so_the_hamiltonian_constraint_holds_on_the_mean_2026_10_22.py
+runner_sha256: df88fc5e4112223e5174943c93e5ccaf1f77332b8f5a84f8f14357731e97c8b6
+input_fingerprint_sha256: ca6360683312d78f239a67273d6948950fecffd3e9734e5fb4b44c1bc160e99d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 12.03
+status: ok
+----- stdout -----
+== A. the Hamiltonian constraint as an operator on the odds
+[PASS] A1 [T] | sharp dark constant (eigen-phase of the tick): max|dP| over 300 ticks 5.2e-15 -> odds frozen for EVERY value of c, not only c = 0; spectral weights of a random state conserved 7.7e-15: restricting to the c = 0 eigenspace IS the fixed-point space of the tick
+[PASS] A2 [T+D] | K psi = 0 at t=0; max|K U^t psi| over 40 tick-units = 5.12e-03, 2.56e-03, 1.28e-03 at eps = .2/.1/.05 (ratios 2.00, 2.00 -> O(eps)): the half-ticks keep the shadow i log U_F, not K
+[PASS] A3 [T] | spectrum of K on a 61-value register is discrete (min level spacing 1.85e-04); random supplied constant E0: dist(0, spec K) = 5.5e-03..4.7e-02 > 0, ker K = {0}; a kernel needs E0 in a finite set (codim 1)
+[PASS] A4 [T+D] | two cubes (338 states): ||[H1,H2]|| rel 0.23; min over the supplied constant of sigma_min([H1-E0; H2-E0]) = 0.308 at E0 = -0.53 > 0: NO odds obey both cube constraints for ANY E0; the sum H1 + H2 - 2E0 has a kernel at E0 = 0.552 (one global condition)
+[PASS] A5 [T] | Gauss: [U, G_x] = 0e+00, integer spectra, sector (G1,G2) = (1,0) has dim 2, and the tick acts on it non-trivially (|U - phase| = 1.21): Gauss's law is a symmetry, the Hamiltonian constraint is the tick's own generator
+== B. relational time (Page-Wootters) and the actual configuration
+[PASS] B1 [T] | Omega = 0.2: the sharp state nearest c = 0 has atom energy weight 1.000 on one level (other 1.1e-16): a non-degenerate sharp sector is ONE state, the atom is in a stationary level, nothing changes relative to anything
+[PASS] B2 [T+D] | tuned (E0, Omega) = (1.5004, 0.20488): sharp c = 0 state with both levels; conditional <sigma_y>(n) = 0e+00 for every n (real K: forward and backward histories superposed, no time direction); forward branch (analytic signal in n): relative phase / (Omega x proper time on the orbit) slope 0.9994, max dev 0.06 rad over 25 rad, and its <sigma_y> swings to 1.00
+[PASS] B3 [D] | packet (dark constant <c> +0.002, spread 0.204/tick): actual edge value advances 29.6 units in 30 ticks, mean path follows <n>_t (max dev 0.42, Sinkhorn marginal residual 7e-05), corr(record count, actual n) 1.000: the half-tick record count is a clock with something to time
+[PASS] B4 [D] | sharp sector (overlap 0.06 with the packet): odds frozen; actual edge moves in 0.000 of ticks, net drift +0.00 +- 0.00 units over 300 ticks, mean |corr(t, n)| 0.00: CL-2's history exists but records no expansion; the record count advances, nothing it times does
+[PASS] B4b [D] | both half-ticks move edges: actual edge changes between whole ticks in 0.000 of ticks: the fewest-change transports P -> P' -> P act on the edge as monotone (quantile) maps, so their composition returns each value to itself
+[PASS] B5 [T] | packet: <c> = +0.002, spread dK = 0.204 per tick (conserved exactly with the whole distribution); |<Phi|U^t Phi>| >= cos(dK t) holds; overlap < 0.1 after 10 ticks: a history of T distinguishable ticks needs dK >~ pi/(2T)
+== C. estimates
+[PASS] C1 [E] | a global dark-constant spread of one Planck energy (enough to change the state every tick) vs the N_eff room for dark radiation in a Hubble volume 1.9e+74 GeV: ratio 6e-56; the mean is bounded by N_eff, the spread is invisible
+supplied: one-cube hop-form ghost kinetic + conformal-lapse dust/atom terms (volume-mode A3 form), A/B split as
+  edges/matter (not the even/odd tilings), two-cube shared terms halved, CL-2 transport via entropic OT (reg 0.05),
+  edge units counted in the cost (law text); not built: lattice cube tick, momentum constraint as operator, splits.
+elapsed 10.8 s
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

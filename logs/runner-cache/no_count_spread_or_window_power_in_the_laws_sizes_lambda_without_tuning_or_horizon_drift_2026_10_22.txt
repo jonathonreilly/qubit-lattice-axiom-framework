@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/no_count_spread_or_window_power_in_the_laws_sizes_lambda_without_tuning_or_horizon_drift_2026_10_22.py
+runner_sha256: 6f503628ab9e7822891a0e3f165c10e46e279e5ad239b9bec526d08ed0a69cdc
+input_fingerprint_sha256: 4a90750e0f7ca02bf1102fecb3f4d9391ca9ddf9dcc96ba1f07455b1875ebb99
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.52
+status: ok
+----- stdout -----
+== M. measured
+[PASS] Lambda L^2 = 3 Omega_L (H0 L)^2 (Planck 2018; brief quotes 7.3e-121) | 7.151e-121; H0 L = 5.900e-61; ln(1/Lambda L^2) = 276.65
+== A. inverse count of splits / cells / records
+[PASS] THEOREM (CL-2 text): records each half-tick at every site, and splits are 1 -> 8 by rule, so cell, split and record counts are fixed by the geometry: Fano 0; a Poisson-sprinkled control has Fano 1 | one-cube start, 3 splits, 5 ticks each: cells 512, records 46800 (variance 0); Poisson control Fano 0.999
+[PASS] THEOREM (no freeze): the split trigger fires whenever the log-mean edge doubles, so splits never stop while H > 0; in de Sitter the past-cone 4-volume grows linearly, V4 = (4pi/3) H^-3 (t - 11/(6H)) + O(e^-Ht), at the horizon-volume rate | int_0^T (1-e^-x)^3 dx - T -> -11/6; cells in a comoving region ~ a^3
+[PASS] FINITE DIAGNOSTIC (LambdaCDM): today's past cone and its drift; V4 never freezes | V4 H0^4 = 0.0044 (a=.5), 0.1229 (1), 1.021 (2), 3.464 (4); dlnV4/dlna = 3.963 today, 5.484 at a=.5
+[PASS] ESTIMATE (drift): rho_L ~ V4^-q gives w = -1 + (q/3) dlnV4/dlna: count (q=1) and Sorkin (q=1/2) forms both sit far from -1 and their wa has the opposite sign to DESI's | q=1: w0 0.32, wa +1.01; q=1/2: w0 -0.34, wa +0.51; DESI (-0.752, -0.86); measured w0 = -1 within ~0.06
+[PASS] THEOREM (horizon counts): Lambda L^2 = C N^-p with N = k (HL)^-d and H^2 = Lambda/3 gives (Lambda L^2)^(1-pd/2) = C k^-p 3^(pd/2): rung-sized unless C is tuned; pd = 2 is scale-free (size free, Sorkin p = 1/2, d = 4) | C = 1: N = horizon cells, p=1: 0.65; N = horizon cell-ticks, p=1: 1.07e+02; p=2, d=3: 0.19; measured needs C ~ 1.5e+122 (p=1, d=4)
+[PASS] ESTIMATE: today's past cone holds N ~ 1e242 cell-ticks; 1/N misses by ~1e-121, 1/sqrt(N) lands within a factor ~10 of the measured value (the known Sorkin coincidence; it tracks H^2) | N = 2.34e+242 .. 4.69e+241; 1/N = 2.1e-242; N^-1/2 / Lambda L^2 = 0.20 .. 0.09
+== B. zero-mean dark-constant spread
+[PASS] THEOREM: the tick's conserved value is N sqrt(gamma) rho_D = const, so rho_D ~ a^-(n+3), w = n/3; fixed lapse (n = 1) makes every dark-constant spread dark radiation, w = 1/3; only n = -3 (unimodular lapse) gives w = -1 | w(n) = n/3
+[PASS] FINITE (exact enumeration): N zero-mean cells, 3-valued skewed spread: the sum has mean 0 exactly, variance N sigma^2 exactly, and either sign (P(neg) -> 1/2): a Hubble-volume average of size sigma/sqrt(N_H), random sign, w = 1/3 | P(sum<0) at N=1,4,16,48: 0.400, 0.486, 0.514, 0.497
+[PASS] ESTIMATE (Sorkin variant, NOT the current law): counts are exact, so only edge-length spread moves V4; Delta Lambda L^2 = 1/(r sqrt(sig <x^4>) sqrt(V4/L^4)) with r = std(x^4)/<x^4> | least-kinetic edge vacuum (s=23): Lambda_min L^2 0.083, r 0.74; Delta Lambda/Lambda_meas = 13.4, 6.0; uniform window r 2.14: 8.0; sharper edges (r -> 0) raise it
+[PASS] ESTIMATE (tracking): with today's Omega_L = 0.685 the Sorkin size |rho_L|/rho_c ~ 1/(sqrt(V4) H^2) stays order one at BBN and recombination (need < 0.05 and < 0.02 for early dark energy): its ratio to today is fixed by the background, so no prefactor fits both | BBN 1.96, rec 1.50
+== C. window ratio 2^(4+Delta) per rung
+[PASS] ESTIMATE: rungs from the cell to the Hubble (Lambda) radius k = 200.1 (200.4); 2^-(4+Delta)k misses by ~1e-120 (it is ~ (Lambda L^2)^2); a hit needs 4+Delta = 2, the horizon tautology Lambda = 3/R^2 | k 200.1 (200.4); Delta=0: 1.2e-241, Delta=1: 7.1e-302; needed 4+Delta = 1.992
+[PASS] THEOREM + ESTIMATE: a horizon-counted rung number tracks: rho ~ H^p gives w = -1 + p eps/3 (eps = -dlnH/dlna = 0.47 today), wa > 0 (DESI wa < 0); its self-consistent de Sitter fixed point is Lambda L^2 = 3^((4+D)/(2+D)), rung-sized | p=2: w0 -0.68, wa +0.65; p=4: w0 -0.37, wa +1.30; p=5: w0 -0.21, wa +1.62; fixed point 9.0 (D=0), 6.24 (D=1)
+[PASS] LOOK-ELSEWHERE: a frozen rule integer, 2^-(4+Delta)s = 1/(states of one edge-register end), lands on the measured value for s = 99.8 (Delta=0) inside the allowed s range 23-113, but with s free the chance of a factor-2 hit is 2/(4+Delta): a fit of s, not a derivation (no law ties Lambda to that dimension) | D=0: s 99.8, s=100 gives x0.54; D=1: s 79.8, s=80 gives x0.54; D=2: s 66.5, s=67 gives x0.14; D=3: s 57.0, s=57 gives x1.08; P(factor 2) 0.50..0.29
+== D. scoreboard (number | inputs | drift | w)
+  (a) 1/N_past: 2e-242 | V4, sig | grows, no freeze | w0 0.32; dS fixed points rung-sized
+  (b) D spread: free, either sign | sigma supplied | dilutes a^-4 | w = 1/3 exactly (fixed lapse)
+      Sorkin variant: x6..13 meas | unimodular clause, edge spread | tracks H^2 | w0 -0.34, wa>0
+  (c) window^rungs: 1e-241 | k from horizon | tracks H^4 | w0 -0.37; frozen-s variant = fit
+runtime 1.1 s
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

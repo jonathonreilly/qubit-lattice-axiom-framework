@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_nn_rescaled_C_arm_NLO_saddle.py
-runner_sha256: 7c615300822f46491299dd0dea348debaf7f22056c756eff0cc21a46ce7d1554
-timeout_sec: 120
+runner_sha256: 2d5cc14a60a90bfc5c6cb40db472988a4b17e6b332a951ccad2aa864fab7f68c
+timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -46,8 +46,13 @@ PER-H CLOSED FORM: delta(h) and predicted sigma^2(h)
    0.01562    0.000281    0.000281     0.0123%    0.096556     0.096568
 
   Observation: delta_a(h) ~ d2_phase * h^2 to high accuracy on this
-  h range; the q^4 saddle correction (candidate b) is < 0.4% of the
-  phase correction at h <= 0.25. Candidate (a) DOMINATES.
+  h range; q^4 contributes < 1% of the full phase-corrected variance
+  on the fit window, not < 1% of the phase increment.
+  q^4 / phase increment on the fit window:
+    h=0.25000: 3.5808%
+    h=0.12500: 5.8817%
+    h=0.06250: 11.1659%
+    h=0.03125: 22.0380%
 
 ------------------------------------------------------------------------------
 CROSS-CHECK vs upstream measured sigma_arm(h)
@@ -80,16 +85,16 @@ EFFECTIVE ALPHA (log-log linear fit on upstream four-point window)
 VERDICT
 ------------------------------------------------------------------------------
 
-  Closed-form NLO leading correction: delta(h) = d2 * h^2,
+  Leading phase correction: delta_a(h) ~ d2 * h^2,
      d2 = (A / (A + B)) * [k (sqrt(2) - 1)]^2 / 2 = 1.1510
-     This shifts alpha_eff (LSQ on 4-point window) from 0.5000 to 0.5170.
+     With q^4, alpha_eff (LSQ on 4-point window) shifts from 0.5000 to 0.5170.
 
   Empirical alpha_eff = 0.5256.  Predicted alpha_eff = 0.5170.
   Residual gap |delta alpha| = 0.0086
 
-  BOUNDED THEOREM: NLO saddle has the right sign and ~5% magnitude
-  but does not fully close the alpha gap. Residual O(h^4) phase or
-  finite-slit-aperture corrections remain unaccounted for.
+  BOUNDED THEOREM: NLO saddle recovers about 67% of the alpha shift
+  but does not fully close the alpha gap. Exact cosine already
+  includes higher phase orders; finite-aperture effects remain separate.
 
   Bounded-support guards:
     PASS: delta(h) > 0 in fit window
@@ -97,8 +102,8 @@ VERDICT
     PASS: alpha_eff < 0.5256 (NLO undershoots, not overshoots)
     PASS: |delta alpha| <= 0.020 (right magnitude)
     PASS: max per-h sigma^2 residual <= 5%
-    PASS: candidate (a) dominates (b): max dV/sig^2 < 1% on fit window
-    PASS: h -> 0 limit recovers C_LO^2 = 6.178
+    PASS: q^4 / full phase-corrected variance < 1% on fit window
+    PASS: supplied model at h=1e-6 is close to C_LO^2 (numerical check only)
 
   Outcome class: BOUNDED
 

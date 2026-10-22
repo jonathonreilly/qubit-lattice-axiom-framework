@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/copy_selective_mass_and_mirror_pair_square_on_the_cube_tick_2026_10_21.py
+runner_sha256: 28a1bd49b30d8930aa5757984b88b23c45c6347fc1b5f710018e8e3d47f6559e
+input_fingerprint_sha256: 0c656ea45b566808dda8017b846faef4b5a7301c024c67bc6f77c4231f7bdb07
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.01
+status: ok
+----- stdout -----
+== A. tick and copies
+[PASS] A1 tick unitary, 24/24 covariant, bands exactly fourfold, cos w = A <cos K> - (cos2b - cos mu)/2 | steps pi/2, .3, .04; worst 3e-15
+[PASS] A2 long-wavelength Dirac algebra: Clifford relations, speed sin(st)/sqrt3 | speeds 0.57735, 0.17062, 0.02309
+[PASS] A3 internal part of a three-fold turn is diag(w, w^2) on the copies (4+4); |copy character| (E,C2f,C4,C3,C2e) = (2,2,0,1,0) | E irrep, every step
+[PASS] A4 the 12 even (tetrahedral) turns keep the copy sign s3, the 12 odd turns (C4, edge C2) flip it
+[PASS] A5 copy sign broken at O(K^2) at every step; the block-local commutant is span{1, eps} only at step pi/2, mu = 0, else scalars | slopes [2.0, 2.0, 2.0]; dims [2, 1, 1, 1, 1]; at pi/2 eps = -g5 s3
+   no exact internal copy swap: no internal twist restores the 12 odd turns
+[PASS] A6 time reversal and particle-hole exist and swap the copies; the chiral map and the inversion keep them (mu = 0.2) | an antiunitary commuting with a 3-fold turn maps w <-> w^2
+== B. what the 12 tetrahedral turns give
+[PASS] B1 invariants (T, O): velocity and Weyl-cone tensors V x V (1,1), Sym2 (1,1), Sym4 (2,2); T alone adds Sym3 (xyz) and V x Sym2 | extras: parity-odd xyz and the spin term s_a d_abc k_b k_c
+[PASS] B2 copy-selective factor (M = .5 on the w-copy): all 12 tetrahedral turns kept, all 12 odd turns broken | odd-turn residual >= 0.16
+[PASS] B3 it keeps inversion and the chiral map (so their product, the CPT analogue); loses time reversal and particle-hole, keeps T x C4 | solution counts (I, chiral, T, PH, T.C4) = [1, 1, 0, 0, 1]
+[PASS] B4 at K = 0 the light copy keeps the species mass (.1) and the other copy gets .1 + M: no tuning
+[PASS] B5 light band with the factor: no helicity splitting, and w/(v|K|) - 1 ~ K^2 (dimension-6 anisotropy, no dimension-5 term) | slopes [2.0, 2.0, 2.0, 2.0]
+[PASS] B6 strong-coupling projection on the light copy: deviation from the exact band ~ K^3 (relative K^2) | slopes [3.0, 3.0]
+== C. step pi/2: chiral SU(2)s exist; what mirror gapping needs
+[PASS] C1 w = 0 and w = pi windows hold the same pieces (copy charge, handedness, sublattice); even cells: (L, q=2) + (R, q=1) | pieces [(1, -1, -1), (1, 1, 1), (2, -1, 1), (2, 1, -1)]
+[PASS] C2 per window and family: Z3(turn) x SU(2)_even^2 = 4 x (+2 light - 1 mirror) = 4 = 1 mod 3 (light 8 = 2, mirror -4 = 2)
+[PASS] C3 number-conserving terms cannot gap the mirror alone: U(1)_N x SU(2)_even^2 = +4 light (q=2), -4 mirror (q=1), 0 in total | the B+L-type anomaly (matching cited); every link-mediated (current-current) term of CL-5 conserves N
+[PASS] C4 the SO(10) pair square on the mirror breaks the plain three-fold turn (chi^4, xi^4 charged) but keeps turn x exp(-2 pi i N/3) | twisted: mirror 0, light 1; light pair square 1 != 0 (light protected)
+[PASS] C5 Z16: X = 5(B-L) - 4Y = 1 mod 4 on all 16 Weyl of a family, nu = 16 = 0 mod 16 (15 without nu^c); a copy per cell = 8 x (L, R) = 16 | so the mirror copy of one cell is exactly an anomaly-free 16
+[PASS] C6 window index for N stacked families = 4N mod 3: the light band top at K = pi(1,1,1) is protected unless N = 0 mod 3 | {1: 1, 2: 2, 3: 0, 4: 1, 5: 2, 6: 0}; this does not select N by itself (see C7)
+[PASS] C7 the chiral SU(2)s need step pi/2 and mu = 0; there the band reaches w = pi, against 2 st = .08 at the CL vacuum bound st < .04 | band max 3.142 vs 0.080; |[eps,U]| at mu=.2: 0.21. Two-body umklapp needs band max >= pi/2
+[PASS] C8 sublattice-even cube generators: O-invariant span{1, g5}, g5 = face-diagonal spin-3/2 hop; its tick has bandwidth 2 th but zeros on whole body diagonals (no cone), also with + .3 s3 (T) | zero grid points [33, 33] of 729, Clifford error [1.0, 1.55], band max 0.200
+== D. toys
+[PASS] D1 0+1D: T forbids mirror-only and light-only bilinears; the copy-selective FK quartic is T-invariant and commuting
+[PASS] D2 FK on the mirror 8 only: lowest level 16-fold = (mirror unique) x (light 2^4 untouched), gap 2 | Fock dim 256, sparse operators
+[PASS] D3 Z8: a T-invariant interaction leaves a unique state of N same-sign Majoranas only for N = 8 | {2: 2, 4: 2, 6: 2, 8: 1}
+[PASS] D4 two-half-tick circuit (copy mixing t, then FK): light 16 split only at order t^4 (static slope), mirror stays apart | slopes [4.004, 4.017]; Floquet gap 0.88 at t=.1
+[PASS] D5 1+1D Margolus swap: even sites move right, odd sites left, sublattice exactly conserved (chirality = sublattice)
+[PASS] D6 3-4-5-0: light and mirror each U(1)^2-anomaly-free; mixed Z3 x U(1)_A: mirror -2, light -2, total -4 (= 2 mod 3, the swap index) | twisted (z+1 per fermion): mirror 0, 0
+[PASS] D7 one mirror: the neutral null lattice is span{l1, l2} (primitive); l1, l2 carry plain Z3 charge 1 -> no plain-Z3 Lagrangian; twisted: both neutral | so the twisted turn allows gapping one mirror; the plain one needs Z3 breaking
+[PASS] D8 three mirrors, plain Z3: an explicit Lagrangian of six neutral, Z3-neutral null vectors with Smith form all 1 (generation-mixing terms)
+== E. estimates
+[PASS] E1 a dimension-5 cubic birefringence, if allowed, would be ~ (alpha/4pi)/M_lat = 1e-22 /GeV vs GRB bound 1e-34: excluded by 1e12 | B3/B5: the chiral map kills it on the tetrahedral rule; the rule must keep that map
+[PASS] E2 one light copy removes the doubled electron g-2 term (8.5e-8, 6.5e5 x precision) and the doubled N_nu (2.984 +- .008)
+[PASS] E3 mirror mass M/tick with M <= 2 st ~ .08 (vacuum cap): up to 1e+18 GeV, far above LHC limits on extra quarks and leptons (~1.5 TeV)
+E4 (estimate) at step pi/2 SU(2)_odd is exact, so its link is massless unless the rule breaks it; measured W_R > ~6 TeV
+elapsed_seconds 1.5
+finite/exact: A, B, C1-C2, C4-C8, D. Cited: anomaly matching (C3, C6), Z16 (C5), Haldane (D7-D8). E: estimates.
+
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

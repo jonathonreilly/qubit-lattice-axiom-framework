@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/the_nested_sea_orders_its_face_flux_to_pi_but_the_flux_fold_is_a_scale_free_quartic_hilltop_and_a_split_cannot_pass_pi_flux_2026_10_22.py
+runner_sha256: 7c0f6e14e7169de0f6e01f74a601e67692c7551617a41af23ed9f91bdf2becb8
+input_fingerprint_sha256: 411ab88e3afdaf29048b9f8750e57c98480d8aefb529a4c30f371fc9401a3453
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 19.30
+status: ok
+----- stdout -----
+AUDIT_TIMEOUT_SEC = 120; seed 20261022; hop 1, half filling, energies per site; supplied in C: J a = sqrt3, M_P a = 1 at the flat rung (reduced Planck), N* = 55; Planck n_s = 0.9649 +- 0.0042, A_s = 2.1e-9
+== A. energy landscape E(Phi) at uniform face-flux magnitude Phi
+[PASS] A1 [D] end points reproduce the main flux-sector note (Theorem 6 Bloch integrals): zero flux and pi flux  E(0) = -1.00243, E(pi) = -1.19380, Lieb gain 0.19137
+[PASS] A2 [T+D] divergence-free separable face-sign patterns on the 2^3 cell (|flux| = Phi on every face, zero mean, local A): all reach the same pi-flux class at Phi = pi; the lowest at Phi = 0.2 pi is the pattern family carrying the nesting vector (pi,pi,pi) (path N; cubic images degenerate)  288 patterns, E(pi) spread 2.2e-16; lowest 24 at -1.02810, all with (pi,pi,pi): True; |face flux| = 0.3 pi exactly on N and S
+[PASS] A3 [D] E(Phi) falls monotonically from 0 to pi on N and S; N lies lowest, the uniform field (Hofstadter) highest  Phi/pi 0.25,0.5,0.75: N -1.0387, -1.1019, -1.1651; S -1.0200, -1.0737, -1.1521; U -1.0114, -1.0353, -1.1138
+[PASS] A4 [D] top of the landscape: Phi = 0 is a maximum on both paths; on S quadratic, V = V0 - (k/2) Phi^2; on N the nesting log, E - E0 ~ -alpha Phi^2 ln(1/Phi): the zero-flux nested sea is unstable to flux at any strength  S (E-E0)/Phi^2 = -0.0276, -0.0277, -0.0280 (k = 0.0555); N = -0.1180, -0.0980, -0.0780 (alpha = 0.0288 per ln)
+[PASS] A5 [D] random face flux (12^3 torus, seeded) sits part-way down, not at the top: 'random' and 'zero' pre-role flux are not the same start  Z2 random -1.05800, U(1) random -1.05796; fraction of the Lieb drop already released 0.29, 0.29
+== B. stiffness: nested surface, nodal lines, Dirac points
+[PASS] B1 [D] gapless set (box count n = 12 -> 24; x4 surface, x2 lines): S keeps a surface, N leaves lines, Dirac points appear only at Phi = pi exactly  Phi=0.25pi S 640->2832 N 264->544; Phi=0.5pi S 496->1984 N 88->168; pi: 0
+[PASS] B2 [T] no flux pattern gaps the whole nested surface: m(k + Q) = -m(k) maps the surface to itself, so m changes sign on it and vanishes on a curve (the density wave's scalar coupling does not)  sign change on the surface for 50/50 random non-gauge couplings
+[PASS] B3 [T+D] S stiffness pole: Z_S = [1/(32 pi) + (ln(16/Phi) - 1)/(32 pi^2)]/Phi + O(1): the (pi,0,0) crossing lines give 1/(32 pi), the (pi,pi,0) lines ride the square-lattice van Hove log (exact two-level quadrature at Phi = 1e-3)  Phi Z_Q2 at 1e-3: 0.02749 vs 0.02748; int u^2 ln u/(1+u^2)^2 = 0.785398 (pi/4)
+[PASS] B4 [D] lattice cranking mass on S (40^3 cells) matches the asymptotic pole; a 1/Phi pole gives a FINITE field distance (int sqrt(Z) dPhi converges), not the plateau's 1/Phi^2  Phi=0.05pi Z 0.1360 (asym 0.1364); Phi=0.1pi Z 0.0593 (asym 0.0612); Phi=0.2pi Z 0.0244 (asym 0.0271)
+[PASS] B5 [D] on N the zero-energy nodal lines make the adiabatic stiffness grow ~ L (Ohmic: the roll is damped into the sea, not inertial); at pi the Dirac points give only a log  N at 0.4pi, L=16,32,48: 0.144, 0.343, 0.590; S at pi: 0.0067, 0.0082, 0.0090
+== C. slow roll on S from the computed V and Z (zeta = (J a)^-1/2/(M_P a_r))
+[PASS] C1 [D] the computed S potential with its own stiffness is a quartic-hilltop (log-corrected) roll: n_s ~ 1 - 3/N*, tiny r, eps = 1 before pi (exit)  rung 0: n_s 0.9491 r 9.4e-08 Phi*/pi 5.0e-04 Phi_end/pi 0.20; rung 2: n_s 0.9479 r 5.9e-10 Phi*/pi 3.9e-05 Phi_end/pi 0.09; rung 4: n_s 0.9479 r 3.3e-12 Phi*/pi 2.9e-06 Phi_end/pi 0.04; 1 - 3/55 = 0.9455
+[PASS] C2 [T+E] against measurement: n_s is low by more than 3 sigma, and A_s cannot be met at ANY rung: V ~ 2^-4r while the canonical field ~ 2^-r sqrt(Phi), so the quartic coupling V0 lambda is rung-free (a scale-free quartic hilltop) and P ~ lambda N^3 stays ~1e14 times A_s (only the stiffness log drifts); P > 1 also means the roll near the top is diffusion-dominated  n_s(rung 0) 0.9491 (3.8 sigma low); ln(P/A_s) at rungs 0: 32.4, 20: 29.8, 60: 27.9, 120: 26.6, 200: 25.6; P(rung 0) = 2.4e+05
+== D. passing: a split that keeps parent loop holonomies
+[PASS] D1 [T] parent face holonomy = product of its four child faces: children at pi each read 0 at the parent; a parent pi face forces an odd number of pi children (Z2) or mean pi/4 (U(1)); per-face flux is kept only at 0, 2pi/3, 4pi/3  Stokes error 6e-16 (20 random U(1) fields); 4 pi -> 0; fixed points of Phi -> 4 Phi: [np.float64(0.0), np.float64(0.6667), np.float64(1.3333)] pi
+[PASS] D2 [D] born children: the self-similar field passes Phi -> Phi/4 (child pi/4); the Z2 lift (child KS x parent KS on half links) keeps every parent face at pi; both start far up the child landscape (x = share of the Lieb drop not yet released)  U(1) pi/4: E -1.0114, x = 0.953; Z2 lift on 8^3: E -1.1302 vs child pi -1.1902, zero -0.9894, x = 0.299
+[PASS] D3 [T+D] clock arithmetic: during one split interval (ln 2 e-folds) a slow roll grows Phi by 2^|eta| while faithful passing divides it by 4, so the order is reset each split (a fixed born share x: power law or de Sitter, no clock); keeping pi per face needs a passing that inserts a pi flux line through every parent face, which writes the clock into the rule  2^|eta| at N* = 55, rung 0: 1.0178 < 4
+== E. exit and reheating;  F. the flux sign
+[PASS] E1 [D] pi flux is a stable minimum on both paths (exit lands on the Dirac sea; released energy V0 per site; oscillations decay into Dirac particle-hole pairs, whose q = 0 density ~ omega^2 is nonzero at every omega > 0)  V''/2 at pi: S 0.0745, N 0.0509; V0 = 0.19137
+[PASS] F1 [T+D] E(Phi) = E(-Phi) (complex conjugation); +pi and -pi are one holonomy, and every pattern ends in the same class, so the T-breaking domains of the roll merge at exit: no selector and no surviving walls  |E(Phi)-E(-Phi)| on N 0e+00; E(-pi) - E(pi) = 0e+00
+time 18.3 s
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

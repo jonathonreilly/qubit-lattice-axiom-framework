@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/the_merged_rulesets_own_states_leave_gauge_unification_unchanged_and_the_couplings_do_not_meet_at_the_cell_scale_2026_10_22.py
+runner_sha256: f4f4959de612b10c9f02e918d2fe06fdc325f05a3eed6192c7770d3de252a2bf
+input_fingerprint_sha256: 01e5d88b41e07c9fd6883f34e104e9f5de59741e78f7e85f314ca31e6b0784cd
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 6.02
+status: ok
+----- stdout -----
+== G. coefficients rebuilt from content
+PASS G1 [T] one-loop SM b = (41/10, -19/6, -7) from 3 x 16 + one Higgs doublet | ['41/10', '-19/6', '-7']
+PASS G2 [T] two-loop SM B_ij rebuilt (Machacek-Vaughn) = standard matrix
+PASS G3 [T] a complete 16 (and its mirror 16bar: same T, C2) shifts b_i by 4/3 for all i; the heavy singlet-taste 16 is also complete | db = (4/3, 4/3, 4/3)
+PASS G4 [T] nu^c, the U(1)_chi boson and a nu^c nu^c condensate are SM singlets: db_i = 0
+PASS G5 [T] on the 16: Tr X = 0 and Tr(Y X) = 0, so fermions induce no Y-chi kinetic mixing
+   theorem (G3-G5): every intermediate state the merged ruleset names is a complete Spin(10) multiplet or an SM
+   singlet, so at one loop it moves all 1/alpha_i by the same amount: M_U, sin^2 and alpha_s predictions unchanged.
+== R. SM running from measured M_Z couplings (boundary values, comparison only)
+PASS R1 [E] one-loop reproduces the merged ruleset's W3: alpha1 = alpha2 at ~1e13 GeV, 1/alpha3 off by ~5.6 | M12 = 1.02e+13, 1/a3 - 1/a12 = -5.60
+PASS R2 [T/E] B-test: data need (b3-b2)/(b2-b1) = 0.718, SM gives 0.528; universal shifts (G3) leave it unchanged
+   two-loop: M12 = 1.08e+13 (1/a = 42.20), M13 = 1.71e+14, M23 = 2.93e+16; 1/a3 - 1/a12 at M12 = -4.92
+   at M_cell(A) = 1.22e+18: 1/a1,2,3 = 34.56, 48.01, 50.32
+   at M_cell(B) = 2.44e+18: 1/a1,2,3 = 34.10, 48.35, 51.10
+PASS R3 [E] two-loop: no common point; triangle spans M12..M23 = 1.1e+13..2.9e+16 GeV | 1/a3 mismatch -4.92
+PASS R4 [E] M_U vs M_cell: M12 is 5.4 decades below M_cell(B); even the 2-3 crossing is 1.9 decades below
+== T. thresholds the ruleset fixes
+PASS T1 [T] mirror 3 x 16bar + singlet-taste 16 gapped at M_cell (QMC: symmetric gap ~ cell scale; M4): running below M_cell identical | M12 = 1.076e+13
+PASS T2 [T] U(1)_chi breaking at the nu^c nu^c scale (unfixed; m3 would need ~5e14 GeV, FITTED): SM couplings blind at 1 and 2 loops (G4, G5)
+PASS T3 [E] counterfactual (not the ruleset): mirror family ungapped from 1 TeV: one-loop M12 unchanged, two-loop shift only | M12 = 1.73e+13, 1/a3 mismatch -5.17, 1/a12 = 26.6
+== P. predictions (number of FITTED scales stated)
+PASS P1 [E] 0 FITTED, M_U = M_cell(B), input alpha_em only, one loop: sin^2 = 0.161 (meas 0.2313), 1/alpha_s = -2.4 (non-perturbative; meas 8.47) | 1/alpha_U = 39.7
+PASS P2 [E] 0 FITTED, M_U = M_cell, two loop, pairwise: a1=a2 there needs sin^2 = 0.162; a2=a3 there needs alpha_s = 0.179
+PASS P3 [E] 1 FITTED (M_U set by a1 = a2), two loop: predicted alpha_s(M_Z) = 0.074 vs 0.1180 +- 0.0009
+PASS P4 [T] PS one-loop b(4, 2L, 2R) from the supplied content = (-23/3, -3, 11/3)
+PASS P5 [E] PS chain, 2 FITTED (M_I, M_U from the three measured couplings, no coupling predicted): M_I = 1.41e+11, M_U = 7.97e+15, 1/alpha_U = 45.2
+PASS P6 [E] PS cannot put M_U at M_cell: over M_I in [1e4, M23] the a4 = a2L point never exceeds 2.9e+16 < M_cell(A)
+== L. cutoff scheme constant (Wilson pure gauge, Hasenfratz^2; supplied action, estimate)
+PASS L1 [E] equal lattice couplings at the cutoff give 1/a3 - 1/a2 = -2.40 (MSbar); data need +2.74 at M_cell(B): wrong sign | D3 = 5.88, D2 = 3.49
+PASS L2 [E] data need 1/a1 - 1/a2 = -14.2 at M_cell(B): ~4x any one-loop scheme or threshold constant (|D| <= 6)
+== K. p -> e+ pi0 via Spin(10) gauge exchange, M_X = M_U
+   A_L = 1.232; tau(M12 = 1.1e+13) = 1.4e+24 yr; tau(PS M_U) = 4.4e+35 yr; tau(M_cell(B), 1/a = 48) = 4.0e+45 yr
+PASS K1 [E] 1-FITTED SM point (M_X = M12): excluded by Super-K 2.4e34 yr | 1.4e+24 yr
+PASS K2 [E] PS 2-FITTED point passes Super-K, but only by the size of its own error (x/: ~30 from M_X/M_U = 1/2..2, hadronic) | 4.4e+35 yr, ratio 1.8e+01
+PASS K3 [E] M_X = M_cell: allowed by > 1e9 (agrees in order with proton-theta's cell-scale contact estimate) | 4.0e+45 yr
+supplied: M_Z couplings (boundary/comparison), y_t(M_Z) = 0.975, PS scalar content, Wilson Lambda ratio, lattice W0, A_L at one loop.
+elapsed 0.9 s
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

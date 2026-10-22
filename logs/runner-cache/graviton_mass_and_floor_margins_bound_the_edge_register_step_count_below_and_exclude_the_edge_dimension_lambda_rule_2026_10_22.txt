@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/graviton_mass_and_floor_margins_bound_the_edge_register_step_count_below_and_exclude_the_edge_dimension_lambda_rule_2026_10_22.py
+runner_sha256: 96c2baac18c5bb749f48ceed3c9e8f0566e617d84731522b06017ae38291f479
+input_fingerprint_sha256: 204377e3a71fa82d0b02d6662e3c984c0b5f2e2591c5aaa33c43b13e4d29bfcb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.79
+status: ok
+----- stdout -----
+== M. inputs (no Lambda until part D)
+   m_g L < 5.34e-51 (B), 2.67e-51 (A); floor 1/8; alpha_c J0740 (0.45, 0.55), causal max 0.24; eps0 < 0.026
+== A. pinning: integer register values give the long-wavelength edge field a mass
+[PASS] [T] A1 a register with quadratic phase (k/2)(n-f)^2 on integer n: E0(f) = E - A cos 2 pi f, the theta-circle instanton (Mathieu q = 8t/k, sigma_n^2 = sqrt(t/2k)) gives k_pin/k ~ exp(-16 sigma_n^2); exact tridiagonal ground states reproduce the slope | fitted slope 15.96 (WKB 16) over sigma_n = 0.69..1.10
+[PASS] [E] A2 ESTIMATE: the graviton-mass bound needs every register's zero-point spread sigma_n >= sigma_pin steps (block edges: mass per block length moves it by < 0.05) | B (L = rung): 3.88; A (L = site): 3.90; bare e^(-8 sigma^2): 3.80; hop-recheck D3 quoted 3.79
+== B. a hard wall t spreads away: edge-local mass
+[PASS] [T] B1 ground-energy shift of a mode with a hard wall t zero-point spreads away: exact D_nu(-t) = 0 against nu = t e^(-t^2/2)/sqrt(2 pi) (ratio -> 1) | t 3: 0.873; t 4: 0.926; t 5: 0.956; t 6: 0.970
+[PASS] [E] B2 ESTIMATE: m a = sqrt(2 nu''(t)) below the graviton-mass bound needs every wall >= t_wall spreads away | B (L = rung): 21.9; A (L = site): 22.0; edge-block B2 (Weiss/RPA, log register) 22.0
+== C. the allowed (s, Delta) region from pinning + walls + floor (no Lambda)
+[PASS] [T] C1 THEOREM (given A2, B2): s >= 2 ln2 sigma_pin t_wall / d, with d the floor distance in flat units; the unknown spread normalisation s1 and the block size b_e cancel, so the bound is reading-independent (weak field d = 7/8; J0740 d = 0.55-1/8 .. 0.45-1/8; causal max-mass d = 0.115) | s1 0.2: b 5.0 s 135, b 10.3 s 278, b 13.5 s 363, b 38.1 s 1027 ; s1 0.4: b 10.0 s 135, b 20.6 s 278, b 27.0 s 363, b 76.3 s 1027
+[PASS] [E] C2 the moving bound s >= 0.85/sin eps0 (>= 32.7 at the heating cap) is weaker than the pinning bound; the split trigger at mean value 4s and the 3s birth value are integer for every s (no constraint) | s_min: moving 32.7, weak field 135.0, J0740 278..363, causal max-mass 1027
+[PASS] [T] C3 the top-wall margin (gap H5) Delta s >= t_wall sigma_n at the split reads Delta >= log2(1 + t s1/(2b)) = log2(1 + d/2) at the floor-limited b: s cancels again, and Delta >= 1 (post-crunch exterior) already satisfies it; Delta >= 2 with the trapped-shift cure | needed Delta: weak 0.52, J0740 0.22
+[PASS] [E] C4 ESTIMATE (strong-field variant): radially stretched exterior edges reach 2^(1+Delta) b L; keeping them unpinned there multiplies the bound by 2^Delta | Delta 1: s >= 270, Delta 2: s >= 540, Delta 3: s >= 1080
+[PASS] [E] C5 ESTIMATE: the register site budget 12(4+Delta)s/b_e^3 <= 0.8 per cell (block-hierarchy) is only an upper bound on s at given b_e, and b_e is free above, so no upper bound on s follows: s is NOT fixed, only bounded below | s1 0.2: s = 26.9 b_e, b_e >= 45, s >= 1210 ; s1 0.4: s = 13.5 b_e, b_e >= 32, s >= 428 (Delta = 1)
+[PASS] [E] C6 ESTIMATE: with dressed weights and sigma_n >= sigma_pin, the value lattice enters GW dispersion only through the pinning mass (A2) and lattice terms (k b_e L)^2; uniform dilations are exact whole shifts; collinear-shift deficits (sigma_n ln2/s)^2 = (s1/2b)^2 are s-independent: no further bound on s | (k b_e L)^2 at LIGO, b_e 40: 4.6e-77
+== D. Lambda L^2 = 2^-(4+Delta)s against the region (Lambda used here only)
+[PASS] [T] D1 the rule needs s = 398.9/(4+Delta) <= 80 for Delta >= 1, below the weak-field bound alone: the s ~ 57-100 hits are outside the allowed region | Delta 0: s* 99.8, Delta 1: s* 79.8, Delta 2: s* 66.5, Delta 3: s* 57.0
+[PASS] [E] D2 PREDICTION at the smallest allowed s: Lambda L^2 <= 2^-(4+Delta)s_min, far below the measured value: a miss, not a prediction | D1 weak s 135: <= 1e-203 (-83 dec) ; D1 J0740 s 278: <= 1e-418 (-298 dec) ; D2 weak s 135: <= 1e-244 (-124 dec) ; D2 J0740 s 278: <= 1e-502 (-382 dec)
+[PASS] [E] D3 LOOK-ELSEWHERE: other bit counts c per end; s is only bounded below, so any c <= 398.9/s_min fits at s = 398.9/c (chance 1); c = 3 lands at the weak-field bound (log coincidence: s_min ~ sqrt2 ln2 ln(1/m_g L)/d), excluded by J0740; c = 1 survives J0740, not the causal max-mass bound | c=1(octave): s 399 J0740 ok ; c=3(floor-birth): s 133 out ; c=4: s 100 out ; c=5(4+D,D=1): s 80 out ; c=6(D=2): s 67 out ; c=10(register): s 40 out ; c=60(block-site): s 7 out ; 3 s_min(weak) = 405
+== E. is a phase per 4-volume = 1/(Fock dimension of an end) a law?
+[PASS] [T] E1 uniform odds give every end configuration weight 2^-N, but CL-3 responds only to departures from the vacuum of the same edges: a vacuum-share 2^-N cancels exactly (response 0 in the vacuum, nonzero only on departures), so the rule cannot arise as a response; the length reads n only (N+1 values, C(N,n) configurations each), so 1/(readable dimension) = 1/(N+1) ~ 1e-3 | N 8: weight 3.906e-03, vacuum response 0.0e+00, departure response -3.63e-03, sum C(N,n) = 256
+[PASS] [E] E2 normalisation ambiguity: per end (N bits), per register (2N), per block site (12N); per cell 4-volume or per block 4-volume (factor b_e^4); the CL text fixes none of these, so 'one end per cell 4-volume' is a choice | log2 b_e^4 at b_e 40: 21.3 bits of 398.9
+theorems: A1, B1, C1, C3, D1, E1; estimates: A2, B2, C2, C4-C6, D2, D3, E2
+supplied: m_g < 1.3e-23 eV, hbar c/L (readings A/B), floor 1/8, alpha_c (J0740, causal), eps0 < 0.026, Delta >= 1 (>= 2 cure), s1 (cancels), budget 0.8/cell; Lambda only in part D
+runtime 0.0 s
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

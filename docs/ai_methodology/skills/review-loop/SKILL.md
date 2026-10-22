@@ -163,6 +163,34 @@ mechanical contract requires them without inventing exhaustive route coverage.
 This section controls review depth and report granularity in the detailed
 referenced checklists. Formal audit remains deferred until a solid TOE is ready.
 
+## Evidence reuse and coordination efficiency (owner-directed 2026-10-21)
+
+Reduce repeated context and coordination before reducing scientific work. Keep
+owner-selected models and reasoning effort for derivations, premise judgments
+and decisive checks; never silently downgrade them to save usage. Read applicable
+instructions once per coherent task and source revision. Reuse verified evidence
+only while its identities, premises, scope and coverage remain valid; refresh
+changed dependencies or uncertain coverage. Read complete changed arguments and
+necessary premises. A truncated output is not completed verification.
+
+Use deterministic scripts for inventories, hashes and bookkeeping. Batch
+independent reads and aggregate their results; retain full logs on disk and
+return concise findings and paths, opening the specific evidence needed. When
+delegation is authorized, send a bounded neutral brief with exact sources and
+one deliverable, without unrelated conversation history. Maintain one current
+checkpoint with source identities, open obligations, failed routes and next
+decisions. Consult original evidence whenever that checkpoint is insufficient.
+Report meaningful changes, findings and failures rather than repeated status.
+
+Reuse completed independent scientific review across unrelated main advances
+under [the actual-main reuse checks](references/REVIEW_UNITS.md#preserve-frozen-source-across-unrelated-main-advances).
+Do not wake a reviewer solely to repeat bookkeeping. Changed or uncertain
+scientific dependencies still require affected independent review. Collect
+already confirmed compatible units in one readiness sweep and run one combined
+gate on the frozen integrated candidate; do not wait for unfinished science.
+These rules never waive independent checks, counterexamples, complete source
+accounting, fresh PR heads, current-main preservation or audit separation.
+
 ## Premise Authority
 
 <!-- BEGIN GENERATED: axiom-baseline (generate_skill_axiom_baselines.py) -->

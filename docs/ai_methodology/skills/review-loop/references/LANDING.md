@@ -152,6 +152,10 @@ review-only flags contradict the drain's land-end-to-end contract).
    The train scheduler is a double buffer:
 
    - collect compatible confirmed units while the coordinator is occupied;
+   - when available, make one readiness sweep across already science-confirmed
+     units, batching deterministic freshness and preservation checks and the
+     actual-main interaction assessments in REVIEW_UNITS.md; collect all
+     compatible ready units up to eight, without reopening unchanged reviews;
    - depart with the useful ready batch as soon as the coordinator is available;
      do not wait for an arbitrary collection deadline or an unfinished reviewer;
    - eight eligible units close the collecting train immediately;

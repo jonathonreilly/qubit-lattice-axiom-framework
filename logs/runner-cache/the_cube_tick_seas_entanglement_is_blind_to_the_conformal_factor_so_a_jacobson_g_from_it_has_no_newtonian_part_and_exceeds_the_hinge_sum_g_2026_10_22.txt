@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/the_cube_tick_seas_entanglement_is_blind_to_the_conformal_factor_so_a_jacobson_g_from_it_has_no_newtonian_part_and_exceeds_the_hinge_sum_g_2026_10_22.py
+runner_sha256: b02b209d9eea2b4ab8067f12d9cc32d79c3670624039d2a045b0267ad8169326
+input_fingerprint_sha256: c945648d40e88b66f212b147a8b8324abbe12acbcb97968105171f8b82ac0d7c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.73
+status: ok
+----- stdout -----
+== A. area coefficient of the pi-flux sea (both tick copies, eps -> 0)
+[PASS] A1 [D] one transverse-momentum chain per (ky,kz): hop 1, staggered mass M = 2 sqrt(cos^2 ky + cos^2 kz); its half-line entropy has the c = 1 tail -(1/6) ln M; eta_100 = BZ mean, grid-converged | tail slope -0.1666 (-1/6); eta_100 = 0.196645 nats/site^2 (grid 400: 0.196645); pi/16 = 0.196350 is NOT it
+[PASS] A2 [T] exact: the 3D slab entropy on the 8^3 antiperiodic torus equals the sum over transverse momenta of 1D chain entropies (the (ky, ky+pi) pair decouples into two chains with mass +-M) | real space 24.7041949901, chain sum 24.7041949901, gap 1.326; per site^2 0.1930
+[PASS] A3 [D] cubes l = 3..8 in the infinite lattice (C from a Bessel integral): fit S = eta 6 l^2 + b 12 l + c ln l + d reproduces eta_100 | S(l): 3:8.52, 4:15.93, 5:25.70, 6:37.83, 7:52.31, 8:69.15; eta_cube = 0.1966 vs eta_100 0.1966
+[PASS] A4 [D] balls R = 2.5..6 (A = 4 pi R_eff^2, R_eff from the site count): S = eta_ball A + c; per GEOMETRIC area the orientation-averaged coefficient exceeds the (100) one, so the vacuum's entropy per area depends on the cut's orientation | eta_ball = 0.2292 (c = -0.87), eta_ball/eta_100 = 1.166; S(R=6, 925 sites) = 104.08
+== B. the cube tick itself (8^3 torus, Floquet vacuum = occupied quasi-energy band)
+[PASS] B1 [D] the tick's Floquet vacuum tends to the pi-flux sea as eps0 -> 0, correction ~eps0^2: at the register's small eps0 the pi-flux sea is its equivalent to <0.1% | R^2-1 = 2e-16; S_tick/S_piflux - 1: eps 0.005: +7.7e-06, eps 0.0375: +4.3e-04, eps 0.3: +2.8e-02
+[PASS] B2 [D] CL-1's copy mass (exp(i(MN/4)(1-s)R) before and after each even half-tick; band gapped, half filled) dimerises the heavy copy between the tilings; the cut-averaged eta moves by at most x1.7, not the x8 needed in E | MN/eps0: S/S(0) odd cut, even cut, mean; min|q|: 0.5: 1.222, 0.765, 0.994; 0.0276; 1.0: 1.392, 0.839, 1.115; 0.0277; 1.9: 1.224, 2.205, 1.714; 0.0275
+== C. response of the vacuum entropy to edge lengths (hop weight = 1/length, R normalised per cube)
+[PASS] C1 [T] theorem: each cube normalises its own hop (R^2 = 1) and the lapse clause fixes the step, so any cube-wise common rescaling of edges (a spatial conformal factor) leaves every half-tick and every entropy unchanged while proper areas scale: dS = 0 at dA != 0, so S is not eta x proper area; shape deformations do move S | random cube factors in [1/8, 4] (edge window): |dS| = 3.6e-13 with mean area factor 2.31; shape deformation |dS| = 0.510
+[PASS] C2 [D] planar cut, linear response (eps = 0.01): stretching the transverse edges raises the area by 2 eps but S by less than half of that fraction; stretching the normal edges (area fixed) lowers S; at fixed volume the area response defines eta_T | dlnS/dlnA (transverse) = 0.457 (area law: 1); dlnS/eps (normal, dA = 0) = -0.911 (area law: 0); eta_T = dS/dA|_V = 0.2695 vs eta_100 0.1966; conformal dS = 0e+00
+== D. entanglement first law and the modular Hamiltonian
+[PASS] D1 [T] first law dS = d<K>, K = ln((1-C)/C): an identity at first order for any state change (random edge lengths, 4^3 cube in 8^3); d<K> - dS (relative entropy) is positive, second order; it imposes no equation on the edges by itself | d 1e-03: dS +1.295e-04, d<K> +1.299e-04; d 1e-02: dS +1.296e-03, d<K> +1.331e-03; rel. ent. ratio 100 (d^2: 100)
+[PASS] D2 [D] Bisognano-Wichmann: per transverse mode K = (2 pi/v) x local energy (v = 2) near the cone, not for cell-scale modes, which carry most of eta | u, K_bond(j=1)/pi, K_bond(j=3)/(3pi): 0.1: 0.999, 0.999; 0.3: 0.994, 0.994; 1.0: 0.945, 0.945; 2.0: 0.835, 0.834; share of eta_100 from modes with M < 0.3: 0.023
+== E. Jacobson's G = 1/(4 eta) against the hinge-sum G
+[PASS] E1 [E] ESTIMATE: massless lattice scalar by the same chain method; photon = 2 scalars (edge/centre term and rishons omitted) | eta_scalar = 0.0243/site^2 (tail slope -0.166); photon ~ 0.0485
+[PASS] E2 [E] Jacobson 1/(4G) = eta per site^2 vs hinge sum 8 pi G = L^2, L = cell rung = 2 sites (reading B: eta needed pi/2) or L = site (reading A: 2 pi); KILL criterion abs(ln(G_A4/G)) > ln 2 met for every content | sea, two copies: eta 0.197 -> G_A4/G = 7.99 (B), 32.0 (A); sea + photon est.: eta 0.245 -> G_A4/G = 6.41 (B), 25.6 (A); fixed-volume eta_T + photon: eta 0.318 -> G_A4/G = 4.94 (B), 19.8 (A); sea x largest copy-mass factor: eta 0.337 -> G_A4/G = 4.66 (B), 18.6 (A)
+[PASS] E3 [E] rescue by the omitted rishon/edge-register sites would need > ln 2 per site^2 of cut (over one Bell pair per cut bond), set by supplied register sizes: FITTED | missing eta = 1.326 nats/site^2 (ln 2 = 0.693)
+[PASS] E4 [T] theorem (from C1): no response to the spatial conformal factor, so A4 gives no Newtonian coupling (1/G_N = 0), only a shape response; over the edge window [L/8, 2^(1+Delta) L] the vacuum entropy per proper area varies by >= 256 4^Delta | agrees with induced-response (the tick sea induces no Newtonian sector)
+verdict: A4 KILLED as the source of G (exact conformal blindness; G_A4/G = 4.7-8.0 at reading B, 19-32 at A; orientation-dependent eta). Gate: chooses no measured number, inserts no observed structure, bends no axiom; its built-in prediction G = 1/(4 eta) was tested and FAILS. The cell rung stays FITTED (hinge-sum unit map).
+theorems: A2, C1, D1, E4; diagnostics: A1, A3, A4, B1, B2, C2, D2; estimates: E1-E3
+supplied: pi-flux sea / cube tick at eps0 = 0.0375, hop = 1/length, (100) and lattice-ball cuts, photon = 2 scalars, readings A/B of the unit map; omitted: rishon and edge-register entanglement
+elapsed 7.2 s
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

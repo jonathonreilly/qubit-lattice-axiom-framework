@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/site_bond_link_registers_need_skew_loop_plaquettes_to_gap_the_extra_mode_and_give_an_isotropic_photon_coulomb_law_and_a_gauss_consistent_split_2026_10_22.py
+runner_sha256: 0a062923f03fbd806e1186e71f6c49ec4b1e9e332609ebfc20d97080414720d6
+input_fingerprint_sha256: fff6c6679436698de9aff26d35835a027e0a1c61e31488237fe2b3ab9cffa1dd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.20
+status: ok
+----- stdout -----
+== A. geometry of the site-bond layout
+[PASS] A1 [T] each site is the midpoint of its own bond from even to odd centre (offset in {+-1}^3); bonds <-> sites is a bijection; the centres form the body-centred lattice and these are its nearest-neighbour bonds (8 per centre) | 512 sites, 512 bonds, 64 cells
+[PASS] A2 [T] smallest register loops (4-cycles) per 2^3 cell: 12 skew quads (both diagonals along axes; the mixed plaquettes) + 12 planar rhombi (one axis diagonal, one face diagonal; rhombic-dodecahedron faces); each register lies in 6 of each kind | skew 12, planar 12; 4*12/8 = 6 loops of each kind per register
+== B. quadratic spectrum of the plaquette phase on the register bonds (eigenvalues lambda of curl^T curl)
+[PASS] B1 [T] CL-3 as written (even-centre squares; each centre bond = mean of its four two-site paths) has NO stiffness for the extras: of the 6 gauge-invariant values per cell exactly 4 have lambda = 0 at every momentum (flat, unconstrained) | zero physical branches at 30 random q: [4]; nonzero at q_r: [0.896 2.694]
+[PASS] B1b [T] adding the odd tiling's centre squares the same way still leaves 2 flat zero branches per cell | zero physical branches: 2
+[PASS] B2 [T/D] skew register loops: zeros only the photon pair at q -> 0; the one extra branch per centre is gapped over the whole primitive zone; photon isotropic at O(q^2), polarisations degenerate | extra at q=0 24.000, min over zone 8.000; kappa 2.0000; O(q^4) c4 axis/face/body/gen/(2,1,0) -0.0833/-0.0833/-0.0833/-0.0833/-0.0833
+[PASS] B4 [T/D] all register loops: zeros only the photon pair at q -> 0; the one extra branch per centre is gapped over the whole primitive zone; photon isotropic at O(q^2), polarisations degenerate | extra at q=0 24.000, min over zone 16.780; kappa 6.0000; O(q^4) c4 axis/face/body/gen/(2,1,0) -0.0833/-0.1389/-0.1574/-0.1389/-0.1189
+[PASS] B2c [D] skew loops: the photon pair splits only at O(q^4): lambda_pm = 2 q^2 (1 - q^2/12 +- b q^2), b = 0 on axes and body diagonals, 1/12 on face diagonals (dimension-six birefringence, Delta v/c = b (qa)^2) | b axis/face/body/gen/(2,1,0) = 0.0000/0.0833/0.0000/0.0507/0.0533
+[PASS] B3 [T/D] planar rhombi alone are not enough: the extra branch is gapless at q = 0 (a third massless mode, lambda_extra ~ q^2), so the planar faces cannot be the plaquette set by themselves | extra at q=0 4.0e-14; lambda_extra/q^2 = 4.000 (photon kappa 4.000)
+[PASS] B2b [T] the gapped extra at q = 0 is the pattern A_d = d1 d2 d3 on the four bond directions (+ toward one tetrahedron of each cube, - toward the other): invariant under the 12 tetrahedral turns, odd under the 12 the copy mass breaks (the copy-sign channel) | overlap 1.000000000000; lambda = 24.000
+[PASS] B5 [T] zone folding: the 6 conventional-cell branches are the primitive cell's 3 (photon pair + 1 extra) at q and at q + (pi,pi,pi); so of the 4 "extras" per cell, 2 are the photon's own folded copy and only 2 (one per centre) are new modes | max dev 3.6e-15
+   skew loops, conventional Gamma (7 values beyond the 1 gauge): [-0. -0.  0.  8.  8.  8. 24.]  (= 3 flat holonomies + T2 triplet [folded photon/extra at zone point H] + singlet [the extra])
+== C. Coulomb law from Gauss's law with least electric energy; alpha for ring exchange on register loops
+[PASS] C1 [T/D] least electric energy under Gauss's law on the register lattice: E = -grad phi, Lap phi = q; static +-1 charges (even centres) shift the energy by -U G(R) with 4 pi R G -> 1 isotropically (8 bonds of length sqrt3 per centre, 1/4 centre per site volume: (8*3/6)(1/4) = 1), so Coulomb with alpha = U/(4 pi c) | axis R=8,12,16: 0.987,0.991,0.984; body R=4,6,8 sqrt3: 1.014,1.007,1.007 (48^3 cells)
+[PASS] C2 [E] large-S pure ring on register loops: alpha(S) = sqrt(N_p/(kappa S(S+1)))/(4 pi) (N_p loops per register); at CL-1's S = 3/2 it is O(0.1), far above the hypercharge-unit target 5.0e-4 (cubic edge layout: 1/(2 pi sqrt(S(S+1)))) | S=3/2: skew 0.0712, planar 0.0503, both 0.0581, cubic 0.0822; sqrt(S(S+1)) for 5e-4: skew 275, planar 195, both 225
+== D. split: children's site registers from the parent's
+[PASS] D1 [T] coarse totals for site registers: each parent register's value = flux of its even cube's children into the child centres on the cube's boundary nearest its odd end (the corner itself 1, edge midpoints 1/2, face centres 1/4); then every parent Gauss law is the weighted sum of child Gauss laws (R D_c = D_p S exactly) | 2^3 parent cells -> 4^3 child cells: max |R D_c - D_p S| = 0.0e+00; ties per boundary centre: {1: 8, 2: 24, 4: 24}
+[PASS] D2 [T] no covariant integer assignment exists: a face-centre (edge-midpoint) child centre is equidistant from 4 (2) parent odd centres that the parent cube's symmetries permute transitively, and putting it in a parent even centre would join two even centres | nearest-parent-odd counts {1: 8, 2: 24, 4: 24}
+[PASS] D3 [T] skeleton passing: a parent register's bond is two collinear child bonds; its value rides the outer half (child even centre -> parent odd centre), the inner half carries child charge minus that value, all other child values 0: integer, local, covariant, every child Gauss law holds for any split of the parent charge over its children, and the coarse totals return the parent values | 20 random parent Gauss configurations with charges: max residual 0.0e+00
+[PASS] D4 [T/D] the coarse map is level-matched at long wavelength: it sends each child photon (electric mode, transverse, skew loops) into the parent photon pair at the same momentum, with leakage into the parent extras falling as q^2 | weight on parent photon pair at |q| = 0.02, 0.05, 0.1 (child units): 2.5e-05, 1.6e-04, 6.2e-04 (leakage)
+supplied: loop set, U/K from |S^+|, large S, target 5.0e-4, skeleton rest (the law uses the vacuum-weighted rest).
+elapsed_seconds 1.0
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

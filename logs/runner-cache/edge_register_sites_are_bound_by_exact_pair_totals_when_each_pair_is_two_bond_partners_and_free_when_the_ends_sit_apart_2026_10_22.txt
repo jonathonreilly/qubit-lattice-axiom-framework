@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/edge_register_sites_are_bound_by_exact_pair_totals_when_each_pair_is_two_bond_partners_and_free_when_the_ends_sit_apart_2026_10_22.py
+runner_sha256: 2573c8654a6c3b10f3dc00d72e68517c968ed512d1ceb9d58c9c67ad212b1f99
+input_fingerprint_sha256: 9c65292ed901d4f5f225d10e0bfb769701c52fb8f7522933301b60bd243f4155
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 11.31
+status: ok
+----- stdout -----
+== A. one edge register at site level (N = 2S sites per end)
+[PASS] A1 [T] every pair total n_1a + n_2a and the end total n_1 + n_2 commute with the register's terms (normalised S+ hop and any function of n1), at every S: the pair form of the register hop conserves each pair  S=1: pair 0e+00, end 0e+00; S=2: pair 0e+00, end 0e+00; S=3: pair 0e+00, end 0e+00
+[PASS] A1b [T, control] a flavour-mixing hop c+_1 Q c_2 (Q random orthogonal) breaks the pair totals but keeps the end total, so then only the whole-end set pair can bind (needs the ends to be mirror layers)  S=1: pair comm 0.65, end 0e+00; S=2: pair comm 0.38, end 0e+00; S=3: pair comm 0.34, end 0e+00
+[PASS] A2 [T] with e empty and d doubly filled pairs the length value runs over [d, N - e] only, so the full window n = 0..N (an eighth to 2^(1+Delta) of the flat length) needs exactly one unit in every pair  enumerated for S = 2, all (e, d)
+[PASS] A3 [T+D] in the register's vacuum each site is indefinite while each pair holds exactly one unit; with partners as bond partners the rule (|A| <= 2) binds every register site  S=1: min site var 0.249, pair var -2e-16, bound 4/4; S=2: min site var 0.244, pair var -7e-16, bound 8/8; S=3: min site var 0.241, pair var 9e-16, bound 12/12
+[PASS] A4 [T+D] the site-level vacuum is the value-level one (top multiplet): same energy and length law, so value-level registers (section B) stand for the sites, every site having P(occupied) = <n>/N  S=1: dE 2e-16, dP 3e-16; S=2: dE 4e-16, dP 8e-16; S=3: dE 1e-15, dP 1e-15
+== B. one corner tetrahedron, six registers (value level, positive-volume projector)
+[PASS] B1 [D] in a tetrahedron of six registers with the positive-volume projector and one- and two-register hops, no register sits surely at an extreme value in the vacuum or in an evolved random state, so every register site is indefinite (variance p(1-p), p = <n>/N) while its pair is exact (A1): every edge site bound  S=1: allowed 0.02, min site var gs 0.241 / evolved 0.204, max P(extreme) 0.45; S=2: allowed 0.01, min site var gs 0.192 / evolved 0.178, max P(extreme) 0.39; S=3: allowed 0.01, min site var gs 0.230 / evolved 0.226, max P(extreme) 0.20
+[PASS] B2 [T+D] the projected tick never leaves the allowed set and is unitary there; the projector is a function of the values, so it commutes with every pair total (A1) at every S  S=1: leak 0e+00, norm err 8e-16; S=2: leak 0e+00, norm err 2e-16; S=3: leak 0e+00, norm err 0e+00
+== C. register (S = 1) + 12-site matter ring, 16-site chain, two layouts
+[PASS] C1 [T+D] partners as bond partners: the rule binds all 4 register sites and no matter site, in the coupled vacuum and an evolved random state, with |A| <= 2 and with every set (pairs covering the whole matter ring aside); the value-controlled matter hop binds no matter site  (register, matter) bound: vacuum ((4, 0), (4, 0)), evolved ((4, 0), (4, 0))
+[PASS] C2 [T+D] ends far apart (the edge's two vertices): no set pair is definite, so every register site is FREE under the rule as written and would be recorded each half-tick  vacuum ((0, 0), (0, 0)), evolved ((0, 0), (0, 0))
+[PASS] C3 [T, finite-size] in a finite toy a set pair covering the whole matter ring (with partners adjacent the ring alone is a closed component) holds its conserved number and binds every matter site; on Z^3 the sea is infinite, no finite set pair covers it and its region counts fluctuate, so this is a finite-size artefact (a closed universe would show it)  with covering pairs: adjacent (4, 12), far (4, 12); dims 3696, herm err 0e+00
+[PASS] C4 [T+D, variant] reading variant 'mirror across any lattice plane' (A need not touch the plane): binds the far-apart register too, and still no matter site (covering pairs aside); it makes the role read correlations at the edge's length  (register, matter): far vacuum (4, 0), evolved (4, 0); adjacent (4, 0)
+== D. BMV numbers and decoherence (estimates against the register's prediction)
+[PASS] D1 [E] the register's BMV numbers: inner-branch phase G m^2 T/(hbar d) and concurrence |sin(dphi/2)| for the linear two-arm geometry  phi_in 0.791 rad, dphi 0.314, concurrence 0.156
+[PASS] D2 [E] records never condition the odds (CL-2), so readable distributions, and the witness, do not depend on which sites are recorded (matter sites of the masses are already recorded every half-tick); the decoherence that does act is in the odds: quadrupole gravitons emitted per run, the same whether edges are recorded or not  N_graviton ~ 5.1e-60 per run
+[PASS] D3 [E] if edge sites were free: records per cell per half-tick from edge registers, 12(4+Delta)s/b_e^3 (6 registers per block site, two ends)  0.127 at s = 135, Delta = 1, b_e = 40
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

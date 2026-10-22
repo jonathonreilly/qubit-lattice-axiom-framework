@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/edge_and_square_graph_weight_has_no_cubic_ordered_phase_2026_10_22.py
+runner_sha256: 4386884ecf4feb76ea71dc8df5d5d65b31621ceb0f0e8c16707969072b720d2a
+input_fingerprint_sha256: 040588f2d536b55b47c2e4f99731b35393182ab5b33bbcec74f31ee106af1b05
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 17.62
+status: ok
+----- stdout -----
+== Ruleset B4: E = a*#edges - b*#(4-cycles); a = 1
+-- 0. estimator calibration on exact tori
+   Z1 ring 216  ds=0.98 dH-slope=0.77 B(1..3)=[3.0, 5.0, 7.0]
+   Z2 15x15     ds=2.17 dH-slope=1.46 B(1..3)=[5.0, 13.0, 25.0]
+   Z3 6^3       ds=3.40 dH-slope=1.94 B(1..3)=[7.0, 25.0, 60.0]
+   Z4 4^4       ds=4.23 dH-slope=2.12 B(1..3)=[9.0, 37.0, 93.0]
+PASS: spectral-dimension estimator orders Z1<Z2<Z3<Z4
+PASS: Z3 6^3 torus reads ds in [2.4,3.6] | ds=3.40
+   Z3 5^3        <k>= 6.00 kmax=  6 C4/v=    3.00 giant=125 ds= 3.62 dH=1.90 cub=1.00
+   rand 6-reg 125 <k>= 6.00 kmax=  6 C4/v=    1.08 giant=125 ds= 4.23 dH=2.32 cub=0.00
+PASS: local cubic order: Z3 5^3 -> 1, random 6-regular -> 0
+-- 1. single-toggle stability of the cubic lattice (6^3 torus, exact)
+PASS: 4-cycle formula: C4/vertex = 3 on Z^3 | C4=648
+PASS: every lattice edge lies in exactly 4 squares
+PASS: max new 4-cycles from one added edge = 6 (body diagonal)
+PASS: THEOREM: stability needs b/a >= 1/4 AND b/a <= 1/6: window EMPTY | remove: b/a>=0.2500, add: b/a<=0.1667
+-- 2. ground-state bounds (exact)
+   N= 64: complete graph K_N beats empty AND lattice for b/a > 1.06e-03
+   N=125: complete graph K_N beats empty AND lattice for b/a > 2.67e-04
+   N=216: complete graph K_N beats empty AND lattice for b/a > 8.78e-05
+PASS: uncapped: K_N wins for b/a > 4/((N-2)(N-3)) -> 0, non-extensive collapse
+   cap 6: ground state = empty for b/a < 0.160, disjoint K_{6,6} for b/a > 0.160
+   per vertex: K66 = 18.75*b vs lattice = 3b (C4 per vertex 18.75 vs 3)
+PASS: K_{6,6} has (c-1)^2=25 squares per edge, C4=225
+PASS: THEOREM (cap 6): lattice is never the ground state for any b/a>0
+   cap 6 metastability: additions blocked at degree 6, so lattice is a LOCAL min iff b/a>=1/4;
+   for Z^d with cap 2d the same holds iff b/a>=1/(2(d-1)): the cap, not B4, picks d.
+-- 3a. uncapped, start = 5^3 cubic torus, fixed T=0.15, 6 sweeps of all pairs
+   b/a=0.05 <k>= 0.08 kmax=  1 C4/v=    0.00 giant=  2 ds=  nan dH= nan cub=0.00
+   b/a=0.12 <k>= 0.22 kmax=  2 C4/v=    0.00 giant=  4 ds=  nan dH= nan cub=0.00
+   b/a=0.20 <k>=123.70 kmax=124 C4/v=230317.70 giant=125 ds=10.21 dH=0.00 cub=0.00
+   b/a=0.30 <k>=123.63 kmax=124 C4/v=229845.50 giant=125 ds=10.21 dH=0.00 cub=0.00
+   b/a=0.60 <k>=123.74 kmax=124 C4/v=230676.07 giant=125 ds=10.21 dH=0.00 cub=0.00
+   b/a=1.20 <k>=123.65 kmax=124 C4/v=229966.18 giant=125 ds=10.21 dH=0.00 cub=0.00
+PASS: uncapped lattice start: no b/a keeps a cubic-like phase
+-- 3b. uncapped, start = random graph <k>=6, anneal T 2->0.15, N=64, 25 sweeps
+   b/a=0.05 <k>=63.00 kmax= 63 C4/v=29783.25 giant= 64 ds=10.33 dH=0.00 cub=0.00
+   b/a=0.12 <k>=63.00 kmax= 63 C4/v=29783.25 giant= 64 ds=10.33 dH=0.00 cub=0.00
+   b/a=0.20 <k>=63.00 kmax= 63 C4/v=29783.25 giant= 64 ds=10.33 dH=0.00 cub=0.00
+   b/a=0.30 <k>=63.00 kmax= 63 C4/v=29783.25 giant= 64 ds=10.33 dH=0.00 cub=0.00
+   b/a=0.60 <k>=63.00 kmax= 63 C4/v=29783.25 giant= 64 ds=10.33 dH=0.00 cub=0.00
+   b/a=1.20 <k>=63.00 kmax= 63 C4/v=29783.25 giant= 64 ds=10.33 dH=0.00 cub=0.00
+PASS: uncapped random start: no b/a reaches degree~6 with ds~3
+PASS: uncapped phases are only 'empty' (small b) or 'dense clump' (large b) | empty at [], clump at [0.05, 0.12, 0.2, 0.3, 0.6, 1.2]
+-- 3c. CONTROL cap=6, start = 5^3 torus, T=0.15, 6 sweeps
+   b/a=0.12 <k>= 0.18 kmax=  2 C4/v=    0.00 giant=  3 ds=  nan dH= nan cub=0.00
+   b/a=0.20 <k>= 0.16 kmax=  3 C4/v=    0.00 giant=  7 ds=  nan dH= nan cub=0.00
+   b/a=0.30 <k>= 3.98 kmax=  6 C4/v=    6.00 giant= 63 ds= 2.03 dH=1.18 cub=0.00
+   b/a=0.60 <k>= 6.00 kmax=  6 C4/v=    3.00 giant=125 ds= 3.62 dH=1.90 cub=1.00
+   b/a=1.20 <k>= 6.00 kmax=  6 C4/v=    3.00 giant=125 ds= 3.62 dH=1.90 cub=1.00
+PASS: cap 6: lattice survives only at b/a >= 1/4 (metastable; b=0.3 melts at T=0.15) | survives at [0.6, 1.2]
+-- 3d. CONTROL cap=6, random start (cap-pruned <k>~6), anneal T 2b->0.1b, N=64, 300 sweeps
+   b/a=0.40 <k>= 5.88 kmax=  6 C4/v=   13.33 giant= 38 ds= 2.07 dH=1.07 cub=0.00
+   b/a=1.20 <k>= 5.97 kmax=  6 C4/v=    8.80 giant= 64 ds= 2.43 dH=1.41 cub=0.00
+PASS: cap 6 from disorder: annealing never finds local cubic order (cub < 0.05)
+PASS: cap 6 from disorder: C4/vertex > 2x lattice (flows toward K_{6,6} ground state) | C4/v = [13.3, 8.8] (lattice 3, K66 18.75)
+-- 3e. CONTROL: the cap picks the dimension (lattice start, b/a=1.2, T=0.15, 6 sweeps; 1.5 for 5^4)
+   cap=4 Z^2 start: <k>= 4.00 kmax=  4 C4/v=    1.00 giant=121 ds= 2.27 dH=1.46 cub=1.00
+   cap=6 Z^3 start: <k>= 6.00 kmax=  6 C4/v=    3.00 giant=125 ds= 3.62 dH=1.90 cub=1.00
+   cap=8 Z^4 start: <k>= 8.00 kmax=  8 C4/v=    6.00 giant=625 ds= 4.09 dH=2.35 cub=1.00
+PASS: each cap c keeps Z^(c/2) metastable with ds ordered by c (cap inserts d) | ds = [2.27, 3.62, 4.09]
+-- verdict: B4 gives NO cubic phase: the lattice is not even a local minimum of B4
+   (window empty, exact), ground states are empty or non-geometric clumps/bicliques;
+   a degree cap makes the lattice metastable only, and the cap value inserts d.
+PASS: runtime under 90 s | 17.4 s
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

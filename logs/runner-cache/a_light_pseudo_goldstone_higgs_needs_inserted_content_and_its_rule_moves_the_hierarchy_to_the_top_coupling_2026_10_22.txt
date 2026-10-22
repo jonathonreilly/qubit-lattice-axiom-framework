@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/a_light_pseudo_goldstone_higgs_needs_inserted_content_and_its_rule_moves_the_hierarchy_to_the_top_coupling_2026_10_22.py
+runner_sha256: 9749631b6fd94f898b59282ae583358cdc3905d7e8c30c0657d93e8057fe05b8
+input_fingerprint_sha256: a1cc52dca7772af3e2a3c21ca1fc93b6e6247ef40819583460e88ca856994a93
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.74
+status: ok
+----- stdout -----
+== A. derivation attempt from the laws' structure
+[PASS] A1 [T] family 16 + mirror 16bar: no Y = 0 doublet, no Y = +-1/2 singlet, every charge in Z/3 (none = +-1/2); the needed modes have Q = +-1/2, so no family or mirror mode is one | doublet Y ['-1/2', '-1/6', '1/2', '1/6']; singlet Y ['-1', '-1/3', '-2/3', '0', '1', '1/3', '2/3']
+[PASS] A2 [T] link, rishon and edge registers are centre-blind (Ad(-g) = Ad(g)); no register configuration is an SU(2)_L doublet, so the new doublet must be fermion modes | |Ad(g)-Ad(-g)| = 0e+00
+[PASS] A3 [T] tick's two copies as the index: the copy mass (extra M on s = -1) commutes only with u(1) + u(1), not Sp(2); the index is not a symmetry, CL-1's link rule gives no Sp(2), and the s = -1 copy sits at the cell rung (decoupled at f) | commutant dim 2 (Sp(2) would need 4)
+[PASS] A4 [T] Grassmann check (Jordan-Wigner): eps_spin pair is flavour-SYMMETRIC without an index (no SU(4)/Sp(4)), ANTISYMMETRIC with an Sp(2)-singlet index; with per-site single modes the index needs 8 new sites per cell, which no clause of the laws carries | exact operator identities
+   GATE (a) result: no structure of the laws yields the content; inserting it fails criterion (2).
+== B. conditional test of the inserted-content rule (gate FAIL; physics check only)
+[PASS] B1 [T] coset SU(4)/Sp(4): 5 broken generators at every theta, Q kept, theta = 0 keeps SU(2)_L x U(1)_Y, m_W^2(theta)/m_W^2(pi/2) = sin^2 theta (v = f sin theta) | unitarity 1e-16, Pf 1, ratios [0.0, 0.067, 0.25, 0.5, 0.75, 0.933, 1.0]
+[PASS] B2 [T] Goldstones at theta = 0: one Y = 1/2 doublet (SU2 Casimir 3/4, Y^2 = 1/4) + one neutral singlet eta | C2 [-0.    0.75  0.75  0.75  0.75], Y^2 [-0.    0.25  0.25  0.25  0.25]
+[PASS] B3 [T] with the index: Y, Y^3, SU2_L^2 Y, Sp2^2 Y anomalies vanish and both Witten counts are even; without it the single (2)_0 has an odd SU(2)_L Witten count | ('0', '0', '0', '0'); doublets SU2_L 2, Sp2 4; no-index 1
+[PASS] B4 [T] the top's Yukawa-type term (q t^c)(D S+) gives m_t = y f sin theta exactly; its O(y^2) and the gauge O(g^2) invariants are linear in sin^2 theta: no interior minimum without a further term | linear-fit residual 4e-16
+   species-mass term -B cos(theta) (Sp(4)-keeping mass of the new modes, supplied):
+   V = -A sin^2 - B cos  ->  cos th* = B/2A;  V''(th*) = 2A sin^2 th*;  d ln xi/d ln B = -2 cot^2 th*
+[PASS] B5 [F] one-loop sea energy (4D cutoff Lt on top and W/Z terms) + species mass tuned to the minimum: m_H grows with Lt/f (~0.26 (Lt/f) m_t at large Lt); 125.1 GeV needs Lt/f FITTED | m_H(Lt/f=1,2,3,5,10; xi=.05) = 84,124,162,241,447; FITTED Lt/f = 2.03 (xi .05), 1.78 (.02), 2.81 (m_t 150); vacuum-angle sensitivity 2cot^2 = 38, 98, 798 at xi = .05, .02, .0025
+[PASS] B6 [F] mean-field binder: f/Lambda <= 0.105, so a top term cut at Lambda gives m_H >= ~3x measured; cut at the constituent mass m_psi, m_H runs from ~430 GeV (Lambda ~ m) down to tens of GeV (Lambda = cell); 125 needs Lambda/m FITTED | Lambda/f >= 9.6 -> m_H >= 429; Lt = m_psi: FITTED Lambda/m = 17.94; Lambda = cell: m_H = 60 GeV
+[PASS] B7 [E] a cell-local Yukawa-type term (coefficient 1/M^2, the laws' only scale) gives m_t = <psi psi>_M/M^2; raising its coefficient to fit m_t makes the top's mass local up to the cell and m_H cell-sized | m_t(natural) ~ 1e-25 GeV vs 172.6; else cancellation (m_H/m_H,nat)^2 ~ 2e-30
+== C. the scale f
+[PASS] C1 [T/E] the index's Sp(2) (forced by the link rule once the index exists): b0 = 6, b1 = 29; f/M = 2^-n with 1/alpha_cell FITTED; count readings and an SU(2)_L-equal cell coupling miss | needed n 49.5-51.0, FITTED 1/alpha_cell 32.8-33.8 (sensitivity 35); readings n 9.5,19.0,38.0,75.9,151.9,303.8; 1/alpha_2(M) 44.9 -> n 67.8
+[PASS] C2 [T/E] quartic binder at the cell without a gauge factor: f << M needs (g - g_c)/g_c ~ (m/M)^2 ln(M^2/m^2) | 1.0e-28 (FITTED)
+[PASS] C3 [E/M] sector read on a coarse rung (f = 2^-n M by an integer): its lattice enters the photon's dispersion through the charged constituents' loop, quadratic LV scale ~ Lambda_B/sqrt(alpha/3pi) | bound E_QG2 > ~1e11 GeV -> Lambda_B > 3e+09 GeV, rung n <= 31; TeV rung n ~ 51 excluded
+== D. estimates against measurement (conditional on the inserted content)
+[PASS] D1 [E/M] kappa_V = kappa_t = cos theta bounds xi; T = 0 at tree level (custodial Sp(4)); the IR running (dS > 0, dT < 0, Lambda = 4 pi f) plus a constituent S gives a stronger bound than kappa_V with these (approximate, U = 0) S, T inputs | kappa_V: xi <= 0.051 (f >= 1.09 TeV); xi = .05: dS = 0.018, dT = -0.037, dchi2 = 14.0; S,T: xi <= 0.016 (f >= 1.93 TeV)
+supplied: the 8 modes and their charges (INSERTED, gate FAIL), Sp(2) index, top term, species mass B,
+  4D sharp cutoff, NJL mean field, gamma0/(2b0) enhancement, LV bound 1e11 GeV; measured: v, m_H, m_t, g, g',
+  kappa_V = 1.035(31), S = -0.05(7), T = 0.00(6). FITTED: Lt/f or Lambda/m, B (vacuum angle), 1/alpha_cell.
+   GATE: (1) FITTED numbers above; (2) content inserted by charge -> FAIL; (3) kappa_V = kappa_t = cos th and
+   an eta singlet are consequences, untested against data beyond the bounds; (4) bends Lattice (new role sites).
+elapsed_seconds 0.0
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

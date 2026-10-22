@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/the_link_registers_cannot_supply_the_cube_ticks_pi_faces_and_the_hop_phases_reduce_to_minus_one_around_every_unit_face_2026_10_22.py
+runner_sha256: 747b464b931ab0220e4ee1507fcd926c5b4f504dfcc217f8517d7bf7a6274de7
+input_fingerprint_sha256: cd20c983126091df0e170fd0835695921bbb6bdf1821c5467466c581dd743132
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 25.55
+status: ok
+----- stdout -----
+AUDIT_TIMEOUT_SEC = 120; seed 20261022; hop 1 or CL-1 tick (proper units), per site; CL-3 magnetic (1/g^2)(1 - cos) l/S per loop (l/S = 1/B_f); n_m = modes per site per register
+== A. the existing Links layout (B_f-block face registers; crossing odd hops dressed; fixed phases removed)
+[PASS] A1 [T+D] reach: without the fixed phases, registers put flux only on block-edge fine faces (1/B_f^2 per orientation, odd-cube faces); even-cube and inter-cube faces read 0, so R_even is the bare hop (R^2 != 1) at every register value: the pi sector is unreachable  B_f=2: 48/192 nonzero, at block edges True, max even/mixed 0e+00; B_f=4: 96/1536 nonzero, at block edges True, max even/mixed 0e+00; R_even spectrum [-1.7321 -0.5774  1.7321]
+[PASS] A2 [D] reachable energetics (pi on every block-edge loop vs magnetic 6/(g^2 B_f^4) per site): the sea gains; a lone pi flux line binds (gain per length converges), so n_m g_c^2 ~ 2/(lambda B_f^2): at large B_f the zero-flux photon vacuum goes to a pi flux-line crystal, still with no fine Dirac cone  gain/site B_f=2: 0.0351 (n_m g_c^2 10.7), B_f=4: 0.0049 (4.8); line gain per length B=2: 0.0142, B=4: 0.0191, B=6: 0.0182, B=8: 0.0180; lambda ~ 0.0181; n_m g_c^2 at B_f = 12, 27: 0.77, 0.152
+[PASS] A3 [D] current law: on CL-1's pi background the same register flux COSTS energy, so the registers' vacuum is zero flux at every g^2 and B_f  cost/site B_f=2: 0.0491, 4: 0.0161; flux line on pi background, cost per length B=4: 0.1021, B=8: 0.1074
+[PASS] A4 [D] CL-1 tick (Floquet vacuum, proper units): same ordering at finite step  eps=0.3: full-pi gain 0.1872, B_f=2 register gain 0.0356; eps=0.8: full-pi gain 0.1527, B_f=2 register gain 0.0375; eps=1.2: full-pi gain 0.1058, B_f=2 register gain 0.0763
+== B. a register on every matter edge (new carrier): R^2 = 1 fixes cube faces only; the sea fixes the rest
+[PASS] B1 [D] even cube fixed, all 128 odd-cube fields with R^2 = 1 (2^3 cell): the 12 inter-cube faces per cell are free; energy falls with each inter-cube pi face (static, eps 0.8); least = pi on every face; inter-cube all 0 lies above the zero-flux sea  static: 0 pi: -0.99643, 4 pi: -1.07969, 6 pi: -1.09512, 8 pi: -1.14110, 12 pi: -1.19381 (zero flux -1.002431); eps=0.8: -1.0891, -1.1633, -1.1745, -1.2159, -1.2599
+[PASS] B2 [D] winner against CL-3's (1/g^2)(1 - cos) per fine face: zero flux until n_m g^2 = 6/0.191, then pi on every face at once; Floquet thresholds 6/gain (A4)  switch at n_m g^2 = 31.5; intermediate winners: none; eps .3/.8/1.2: 32.1, 39.3, 56.7; alpha_c = g_c^2/(4 pi) = 2.49/n_m
+== C. the photon about the vacuum
+[PASS] C1 [D] uniform field delta = 2 pi/q per xy face: about pi the sea is diamagnetic, growing with ln(1/delta) (Dirac vacuum polarisation); about 0 paramagnetic: the matter's magnetic minimum is at pi  c = dE/delta^2 about pi: q=8: 0.0421, q=16: 0.0582, q=32: 0.0707, q=48: 0.0775 (slope/ln 0.0177, not asymptotic; continuum 1/(48 pi^2) = 0.0021); about 0: -0.0027, -0.0064, -0.0044, -0.0044
+[PASS] C2 [T+D] photon stiffness per xy face: CL-3's term read from 1 gives -1/(2g^2) about pi, so pi with photons needs n_m c > 1/(2g^2); read from the vacuum holonomy (n - Re tr(U_vac^dag U)) it gives +1/(2g^2) about the sea-selected vacuum (pi; B1), stiffness 1/(2g^2) + n_m c > 0 at every g  n_m g^2 needed (read from 1), by q: 8: 11.9, 16: 8.6, 32: 7.1, 48: 6.4
+[PASS] C3 [T] no element of SU(3) x SU(2) x U(1)_Y acts as -1 on every measured multiplet (u_R, d_R force exp(i theta) = 1, then e_R gets +1): pi must sit in a factor acting alike on all modes (fermion parity Z2; a U(1)_F photon is excluded)  min_g max_multiplet |g + 1| = 1.618
+== D. the simplified hop clause: 'phase -1 around every unit face' (no spin-3/2 construction)
+[PASS] D1 [T] -1 on every cube face <=> {W_i, W_j} = 0 <=> (sum w_i W_i)^2 = sum w_i^2 for any positive weights; one flipped link breaks it  max |R^2 - 1| (5 weights, random gauge) 2e-16; flipped 0.67
+[PASS] D2 [T+D] the spin-3/2 field has -1 on EVERY face (cube faces and the 12 inter-cube faces per cell): gauge-equivalent to '-1 around every unit face'; the tick with mu and copy mass has identical quasi-energies, copy-sign spectrum and Dirac point  max ||F| - pi| 7e-15; |quasi diff| (eps .3, mu .1, MN .3) 9e-16; s = [-1.0, 1.0] x4; min |w| (mu = 0) 0e+00
+[PASS] D3 [T] rotations: each maps the all-minus class to itself, so is a symmetry of R up to a site gauge (90, 120, 180 deg); compensated half-turns about z and x anticommute: half-integer spin, the double cover, derived  max |O R O^dag - R| 5e-16; O_z O_x O_z^-1 O_x^-1 = -1 x 1
+[PASS] D4 [T+D] dressed hops: the same random registers on crossing odd hops (B_f = 2) give the same dressed tick for both fields: dressed cones, species eps and mu, and the split's C3v are unchanged  |quasi difference| on 4^3 cells 4e-15
+== E. passing; the cost of a dynamical face register
+[PASS] E1 [T+D] Stokes: children at pi read +1 around a parent face, so a dynamical face register cannot pass pi per face (pi-flux-fold D1); each split seeds visons (one flipped link), each costing the sea; the kinematic clause fixes each rung directly  vison cost 0.3683 (4^3 cells), 0.3715 (6^3)
+time 25.4 s
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

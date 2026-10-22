@@ -494,6 +494,11 @@
       "source_sha256": "319d534873ad6c905d9c5467873d9fa2dac1e39ab6d8e8636336b9e7409bab8d",
       "timeout_sec": 60,
       "reason": "Bounded read-only D3 metadata diagnostic after unrelated review-queue insertion; existing status failures remain evidence, not repaired or certified. Source changes invalidate this declaration."
+    },
+    "scripts/su2_equivariant_one_qubit_qca_translation_rigidity_2026_10_21_helpers.py": {
+      "source_sha256": "796ecb829a10f1603fb2330f77acbbdbbe761ee67e1ef7248496501995db0807",
+      "timeout_sec": 120,
+      "reason": "Explicit bounded review cap for the C9 finite-matrix helper, matching its primary runner capture. Source-hash changes invalidate this declaration; no mathematical predicate or audit runtime policy is changed."
     }
   }
 }

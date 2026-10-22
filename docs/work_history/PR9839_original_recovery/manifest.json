@@ -141,6 +141,21 @@
       "sha256": "1a73ae8e11b22dabbca616f09ea0fab5efb7ed636781ebb6839d83520b0f5ce9",
       "archive": "docs/work_history/PR9839_original_recovery/logs/runner-cache/frontier_gw_echo_derived.txt.gz",
       "provenance": "Pre-attribution-repair consumer at frozen base f24d17d97d372df977476e4a69674577f31af575; not part of original 31 paths."
+    },
+    "docs/HADRON_LANE1_SQRT_SIGMA_B5_FRAMEWORK_LINK_AUDIT_NOTE_2026-04-30.md": {
+      "sha256": "e63cec5190f2e85fe514a960ae1c580082310f4d04cdfbb44234e545a57a6f8a",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/HADRON_LANE1_SQRT_SIGMA_B5_FRAMEWORK_LINK_AUDIT_NOTE_2026-04-30.md.gz",
+      "provenance": "Affected G_BARE consumer, unchanged at frozen base f24; outside original31."
+    },
+    "scripts/frontier_hadron_lane1_sqrt_sigma_b5_framework_link_audit.py": {
+      "sha256": "48779d313455b5eec344123fa9e68747ce9e19828c4063a827aab04dbe09e0a2",
+      "archive": "docs/work_history/PR9839_original_recovery/scripts/frontier_hadron_lane1_sqrt_sigma_b5_framework_link_audit.py.gz",
+      "provenance": "Affected G_BARE consumer, unchanged at frozen base f24; outside original31."
+    },
+    "logs/runner-cache/frontier_hadron_lane1_sqrt_sigma_b5_framework_link_audit.txt": {
+      "sha256": "189aca75962be23baaaee5ae897a28374534ceb1d02582c66a0910bad2578ce1",
+      "archive": "docs/work_history/PR9839_original_recovery/logs/runner-cache/frontier_hadron_lane1_sqrt_sigma_b5_framework_link_audit.txt.gz",
+      "provenance": "Affected G_BARE consumer, unchanged at frozen base f24; outside original31."
     }
   }
 }

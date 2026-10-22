@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/same_edge_vacuum_subtraction_removes_the_induced_edge_action_and_edge_loops_move_g_as_one_over_the_block_area_2026_10_22.py
+runner_sha256: ceffd35d1c6600bfdbf73c681f1c53754651cf250821810dd38dc346dc621be9
+input_fingerprint_sha256: 8aa35d46ea8d288a9f42ee5bf7e33fb1693df1f0a02b46714cd9b4f8df61b2d1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.88
+status: ok
+----- stdout -----
+== A. the sea under the vacuum standard (same edges)
+[PASS] A1 [T] theorem: the vacuum standard subtracts, at each joint configuration, the same site shares for the vacuum odds of the same edges, so for vacuum odds the total matter phase is zero at every configuration and for EVERY edge configuration: the sea's induced edge action (cosmological, Einstein-Hilbert, R^2 and nonlocal parts alike) is removed exactly, not just its constant; subtracting a fixed (flat) vacuum instead leaves minus the sea's static susceptibility | max share diff 0e+00; raw d2E0/dh2 -8.947, flat-reference -1.780, same-edge 0
+[PASS] A2 [D] with an added particle the response is the departure's own: d2/dh2 of (E1 - E0) stays O(1) or less while the vacuum's raw d2E0/dh2 grows as the area N^2; so no N_species x volume x curvature term survives, only the matter's stress (and its O(1/V) density-dependent dressing) | N, raw/N^2, departure: 8, -0.8416, -0.0000; 12, -0.8183, +0.0000; 16, -0.8099, -0.0000; 24, -0.8038, +0.0000
+[PASS] A3 [D] time-dependent edges: the sea's response is a function of q^2 - omega^2 (ratio of the omega^2 and -q^2 coefficients -> 1 in the continuum limit), so subtracting only the INSTANTANEOUS vacuum removes the static half and leaves the omega^2 half: a non-covariant induced kinetic term as large as the removed gradient term | m, coef ratio: 0.1, 0.8265; 0.05, 0.9070; 0.025, 0.9518; 0.0125, 0.9755; linear extrapolation m->0 0.9991
+[PASS] A4 [T] an ADIABATIC reference (the vacuum carried along the same edge history, expanded to all orders in omega/gap) removes every order: the remainder after order 2n falls as (omega/2m)^(2n+2); what it does not remove is real pair creation above threshold, which is a physical departure | remainder after order 0/2/4/6: 5.8e-03, 1.5e-04, 5.4e-06, 2.2e-07
+== B. the edges' own zero-point loops (not subtracted)
+[PASS] B1 [T] lattice tadpole of the 4D block lattice: W4 = int_BZ d^4k/(2pi)^4 / k_hat^2 = int_0^inf (e^-2t I0(2t))^4 dt; a field on blocks of b cells has G(0) = W4/(b L)^2 | W4 = 0.154933
+[PASS] B2 [T] theorem: the one-loop term (1/2) ln det of the edges' quadratic form does not depend on its overall stiffness, while the bare hinge sum scales as the stiffness b_e^2 (same G): the edges' own loop correction to 1/G is O(1) per block against b_e^2, i.e. dG/G = C W4 / b_e^2 | d2/dh2 at K = 1: -18.889054, K = 100: -18.889053
+[PASS] B3 [E] ESTIMATE: one minimally coupled component gives |dG/G| = W4/(6 b_e^2); the edge field's curvature couplings and ghosts enter as an unknown lattice sum C, envelope |C| <= 10: at one-cell edges (b_e = 1) the correction is O(1) and uncontrolled, at the rules' blocks it is small | b_e, per-component, envelope: 1, 2.6e-02, 1.5e+00; 10, 2.6e-04, 1.5e-02; 27, 3.5e-05, 2.1e-03; 76, 4.5e-06, 2.7e-04
+== C. estimates against measurement
+[PASS] C1 [E] the reference vacuum matters: with no subtraction the sea adds f = 23% to the TT term and 0 to the Newtonian one (G_T/G_N 0.81, induced-response); with an instantaneous reference it adds f to the TT kinetic term only, |c_g - 1| ~ 0.1 against GW170817's 3e-15, unless the dressed-weight clause's 'vacuum' includes the sea; with the adiabatic (carried) reference it adds nothing | f = 0.232; instantaneous-reference |c_g - 1| = 0.099
+[PASS] C2 [E] sea modes slower than the edges' zero-point motion (below ~1/(b_e L)) are not adiabatic, but carry at most the fraction 1/b_e^2 of the induced term: an upper bound f/b_e^2 | b_e 10: 2.3e-03; b_e 27: 3.2e-04; b_e 76: 4.0e-05
+[PASS] C3 [E] unit map: L/l_P = sqrt(8 pi) (1 + dG/(2G)): with the adiabatic vacuum standard the sea gives zero and the edges' own loops at most ~1.6e-2 at b_e = 10 (2e-3 at 27, 3e-4 at 76): L moves by under 1%, not by an O(1) factor; it is fixed by G, not an independent observable | sqrt(8 pi) = 5.0133, range at b_e 10: 4.969 .. 5.058; L = 8.103e-35 m
+theorems: A1, A4, B1, B2; diagnostics: A2, A3; estimates: B3, C1-C3
+supplied: toy seas (2D staggered, 1D Wilson-Dirac), scalar vertex, lattice C envelope |C|<=10,
+  heat-kernel normalisation (1/2)(1/6-xi)G(0), f = 23% from induced-response, b_e from edge-block
+elapsed 0.2 s
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

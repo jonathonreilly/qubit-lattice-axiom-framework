@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/label_copies_carry_linked_families_and_only_a_supplied_label_parity_or_magnetic_charge_stabilises_a_massive_relic_2026_10_22.py
+runner_sha256: 720e35e8131b1de45d510d850d064a5695f8b7a5c7aead41b97a73f83e6e24a2
+input_fingerprint_sha256: 3d82eb3e88221a0472e6238924ff8242e09e5454038ae51e68d6715f63d5351b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.31
+status: ok
+----- stdout -----
+== A. block labels at zoom b (exact U(b^3) of the parallel-carriage circuit; label terms supplied)
+[PASS] A1 [T] links read per coarse cube alike for every label: gauge generators T x 1 commute with all of U(b^3), so every label carries one whole linked family
+[PASS] A2 [T] per label the only link-free Weyl state is ['nu^c']; the only gauge-invariant bilinear of a chiral family is [('nu^c', 'nu^c')] (Majorana, Z4-forbidden); a chiral copy takes no label mass: heavy labels are vector-like
+[PASS] A3 [T] any quadratic label term keeps one exact U(1) per label-mass eigenspace (8 here, commutator 2e-15); CL-1 links them, so the light label's number is a massless link on matter (MICROSCOPE < ~1e-25): excluded alone
+[PASS] A4 [T] Fock toy (2 labels x 3 modes): terms even in each label break label number (no dark link) but keep label parity (-1)^N_k; one mixing bilinear breaks it; the fine tick has cell commutant 1 (hidden-sector A2): parity is supplied
+   with parity: lightest odd state N' (label nu^c) exactly stable, link-free; with mixing tau ~ 1e-39 s
+[PASS] A5 [E] coloured/charged label states decay to N' only through cell-scale contacts, releasing dm ~ (1.4-5)e-3 m: tau(m = 10 TeV) = 4e+44 s >> age; tau < 1 s (BBN) needs m > 8.5e+12-3.0e+13 GeV
+[PASS] A6 [E] thermal history: a coannihilating label family gives Omega h^2 = 0.12 at m ~ 0.4-39 TeV (alpha_eff .03-.3), but there its stable coloured relics (n/n_B >~ 1e-12) exceed heavy-isotope bounds (<~1e-28) by >1e16: excluded
+[PASS] A7 [E] non-thermal window (gravitational production at reheating, Y ~ 1e-3 (T/M_P)^3 e^(-2m/T), supplied): T_reh/m = 0.42, 0.18, 0.11 at m = 1e13,1e14,1e15 GeV; T_reh < 5.8e+15 GeV (r < 0.036) caps m < 1.0e+17 GeV; dlnY/dlnT = 8/14/22 (tuned)
+[PASS] A8 [E] couplings of N': contact only, sigma_SI ~ m_n^2/(pi Lambda^4) = 3e-102 cm^2 (no direct-detection signal), sigma/m negligible, cold; label masses at the natural cell scale give e^(-2 Lambda/T_max) = e^-842: none made, abundance only from the start
+== B. link registers: the site-bond extra mode, rishon sectors, compact-link monopoles
+[PASS] B1 [T] spin-3/2 register: C (m -> -m) maps E -> -E, U -> U^dag, keeps ring exchange: n photons have C = (-1)^n; the extra d1 d2 d3 mode is C-odd and trivial under the kept turns: 3 photons allowed, no selection rule
+   extra at the cell scale (lowest frequency 2x the per-site light frequency, ~2e+18 GeV): Gamma ~ alpha^2 m/(4 pi)^3 -> tau ~ 1e-41 s; not dark matter
+[PASS] B2 [T] the register raiser (rishon hop between the bond's two ends, 2S = 2) conserves the bond's rishon number: other link-spin sectors are superselected and never occur (not a relic)
+[PASS] B3 [T, cubic] compact link angles: every cube's magnetic charge (reduced plaquette flux / 2pi) is an integer, the total is 0, and 312 continuous-evolution events all changed charges in +- pairs: monopole number is locally conserved, a lone monopole is stable; G(0) = 0.2498 (Watson 0.2527)
+   monopole M = (pi/2alpha) G(0) Lambda = 1.3e+19 GeV (S = 3/2 natural); MACRO (1.4e-16 /cm2/s/sr at beta 1e-3) allows a DM fraction < 3.6e-03
+   monopole M = (pi/2alpha) G(0) Lambda = 1.9e+21 GeV (hypercharge unit target); MACRO (1.4e-16 /cm2/s/sr at beta 1e-3) allows a DM fraction < 5.1e-01
+[PASS] B4 [E] monopoles are stable but magnetically charged (not dark); MACRO excludes them as all DM at the natural coupling; inflation leaves ~none
+== C. edge registers on the six-edge block triangulation (sync slab, fixed lapse, zero shift)
+[PASS] C1 [T/D] 48 registers per 8 block sites = 6 per site = the metric count, so no non-metric light strain exists; at |K| = 0.05 the light roots are [0.05 0.05] (two tensor polarisations) and every other real root >= 1.49 per block tick: cell-scale
+[PASS] C2 [T] the one-register hop V_e + V_e^dag changes every edge value by +-1 (anticommutes with (-1)^n): no edge-register number or parity is conserved; with crystal momentum alone and threshold 0 at K = 0 (back-to-back massless pairs), K ~ 0 massive edge quanta are open to decay
+   b_e = 6: m ~ 6.1e+17 GeV, universal coupling Gamma ~ N m^3/(32 pi M_P^2) -> tau ~ 2e-41-2e-39 s
+   b_e = 38: m ~ 9.6e+16 GeV, universal coupling Gamma ~ N m^3/(32 pi M_P^2) -> tau ~ 4e-39-4e-37 s
+   caveat [D]: near-zero transfer roots at generic K are ill-conditioned (Jordan blocks of the gauge zeros);
+   a kinematically closed band minimum near the zone edge is not excluded here; even so it is cell-scale and made
+   only at T ~ m/20 > T_max = 6e+15 GeV or by splits, which carry vacuum to vacuum: no rule-set abundance
+== D. conserved numbers of the new laws, as stabilisers
+   exact U(b^3) (zoom-b circuit only): must break (LEP); quadratic terms leave linked U(1)s
+   label parity (-1)^N_k: not in the fine tick; if supplied: N' stable (A4-A8)
+   Z4 of B - L: lightest carrier = light neutrino: hot, < 1% of DM (sum m_nu < 0.07 eV)
+   rishon number per bond: superselection; fixes S, no excitation (B2)
+   Gauss sectors: only zero static charge occurs
+   magnetic charge (compact links): exact: monopoles, not dark (B3-B4)
+   edge value, copy sign, turn charges: not conserved
+   crystal momentum, pattern: not particle charges
+   dark constant: zero mean in every cube (CL-3): no carrier
+   so only label parity (supplied) and magnetic charge (not dark) stabilise a massive relic
+== E. verdict against measurement
+   extra link mode, rishon sectors, edge strains, copy, zoom-3 copies: unstable or absent; monopoles not dark
+   conditional survivor: N' with a SUPPLIED label parity, m ~ 3e+13-1e+17 GeV, non-thermal; Omega not rule-set
+theorems: A1-A4, B1-B3, C2; diagnostic: C1; estimates: A5-A8, B4, C decay times.
+supplied: label terms+parity, alpha_eff, Y_grav, splittings, a = sqrt(8pi) l_P, [cubic] monopole, slab; cited: MICROSCOPE,
+  heavy-isotope searches, BICEP/Keck, MACRO, Planck.
+elapsed_seconds 0.9
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

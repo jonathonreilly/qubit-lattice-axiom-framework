@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/one_running_cell_coupling_sets_the_colour_to_weak_rung_ratio_but_fits_the_weak_and_seesaw_ranks_and_fails_for_the_electroweak_factors_2026_10_22.py
+runner_sha256: 00c7bd6ab3931541131824c0c0ce1c5797fb24b90eece29f63ec1fd16fe250f6
+input_fingerprint_sha256: 74fff46b747cb378ac86173d1c317933832744c613110d5939140af7f8ec108c
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 1.24
+status: ok
+----- stdout -----
+== A. exact
+[PASS] A1 [T] n_X = 2pi(1/a_cell - 1/a_cX)/(b_X ln2); n_X b_X is common at equal a_c, so rung ratios are content-fixed | n*b invariant residual 0; dn/d(1/a) = 2*pi/(b*log(2))
+[PASS] A2 [T] b (>0 = AF): SM (U1 GUT, SU2, SU3) = (-41/10, 19/6, 7); Sp(2N) + 4 Weyl F: 11(N+1)/3 - 4/3; +6 Weyl A: -4(N-1) | Sp(2N) N=1..4: ['6', '29/3', '40/3', '17']; +6A N=2..4: ['17/3', '16/3', '5']
+[PASS] A3 [T] explicit generators: Sp(2N) C2(F) = (2N+1)/4, C_A = N+1; SU(4) 15/8, 9/2 (10), 5/2 (6); SU(2) 3/4, 2 (3) | Sp(2): dim 3, C2 0.7500, CA 2.000; Sp(4): dim 10, C2 1.2500, CA 3.000
+[PASS] A4 [T] the only neutral colourless B-L = 2 scalar bilinear is n^c n^c, PS (10,1,3); every content factor is trivial or repulsive there (2C2(F) - C2(R) < 0): no content factor binds a Z4-breaking pair | channels ['e^c e^c', 'e^c n^c', 'n^c n^c']; dC SU(4) 10 = -0.750, SU(2)_R 3 = -0.500
+[PASS] A5 [T] a cell quartic at rung n has strength g 2^(-2n): it gaps at the cell or not at all; a hidden B-L = 2 condensate reaches n^c via (n^c n^c)(chi chi)/M^2: M_R rung = 3 n_S (L H n^c forbids n^c charged) | g(n)/g(0) = ['1', '0.25', '0.0625', '0.01562']; n_S = 4 -> M_R rung 12
+[PASS] A6 [T/F] mean-field cell quartic: (G - G_c)/G = m^2 ln((1+m^2)/m^2): a sub-cell quartic gap is a tune | m=1e-02: 9.210e-04; m=1e-03: 1.382e-05; m=1e-04: 1.842e-07; tune(1.5 TeV) = 2.6e-29; tune(2^-12) = 9.9e-07
+[PASS] A7 [T] CL-3's vacuum standard subtracts every condensation energy: the rule's condensates give no Lambda | D=0.0: condensation energy +0.0000, response 0e+00; D=0.5: condensation energy -0.2831, response 6e-17; D=1.0: condensation energy -0.7440, response 1e-16
+== B. estimates against measurement (one-loop unless stated)
+[PASS] B1 [E] 1/a(cell) from MZ: SU(3) within 1.6% of the reading kappa T = 4 (16 pi; chance p_hit, look-elsewhere); SU(2)_L 4% off, U(1)_Y 32% off: one cell coupling FAILS for the electroweak factors | 1L [34.34 48.65 50.62]; 2L [34.08 48.32 51.07]; 16pi = 50.27; p_hit = 0.05
+[PASS] B2 [E] colour reaches a_c = pi/(3 C_F) at rung ~61-63; f_pi sits 2-3.6 rungs lower (offset = f calibration) | 16pi,1L: n_c=62.19, off=2.33; 16pi,2L: n_c=60.93, off=3.59; meas,1L: n_c=62.54, off=1.98; meas,2L: n_c=61.26, off=3.27; f_pi rung 64.52
+[PASS] B3 [E] light-Higgs factor, 16 pi, 1L/2L: AX-6's Sp(2) gives f << v (fails); Sp(4)+4F f ~ 7-10 TeV, xi ~ 1e-3; Sp(6), Sp(8) xi < 1e-10; top partners (6A) push Sp(4) to f << v | Sp(2): b=6.00 f-rung 77.2/76.2 xi=3e+14/8e+13; Sp(4): b=9.67 f-rung 48.3/47.6 xi=1e-03/5e-04; Sp(6): b=13.33 f-rung 35.4/34.8 xi=2e-11/1e-11; Sp(8): b=17.00 f-rung 28.0/27.6 xi=7e-16/4e-16; Sp(4)+6A: b=5.67 f-rung 80.8/82.7 xi=5e+16/6e+17; window xi in [1e-4, 0.1] <-> f rung [46.5, 51.5]
+[PASS] B4 [E] Sp(4) modes are SU(2)_L doublets: 1/a_2(cell) drops 6.8, 17% from the one coupling | Lambda_HC = 3.4e+04 GeV; 1/a_2(cell) 48.65 -> 41.88 vs 50.27
+[PASS] B5 [E/T] seesaw needs a NEW factor (A4) with b ~ 90-120 (k = 3; pure SU(24-32)): its rank is a FIT of M_R; its spontaneous Z4 break keeps the walls (neutrino-mass B4) | Weinberg c=1 (rung 11.4): b=117 (N~32); k=1 b=39; type I y=1 (rung 12.4): b=107 (N~29); k=1 b=36; type I y=y_t(M) (rung 14.9): b=89 (N~24); k=1 b=30
+[PASS] B6 [E/F] mirror: g/t >= 8 gaps at the cell (A5), 50 rungs above 1.5 TeV; an inequality, release problem untouched | gap rung 0.15 vs bound rung 50.53
+[PASS] B7 [E] f_HC rung = f_pi rung - (n_q - n_HC) is stable (< 0.1 rung) over the measured 1/a_cell band | 16pi 1/a=50.27: n_q=62.19 n_HC=46.02 f-rung=48.35; 1L 1/a=50.62: n_q=62.54 n_HC=46.35 f-rung=48.32; 2L 1/a=51.07: n_q=63.00 n_HC=46.77 f-rung=48.29; v rung 53.14
+[PASS] B8 [E] Lambda^(1/4) at rung 99.8 (2^-399); rule sets none (A7); power laws miss (rung gaps x4 in Lambda) | (v^2/M): 106.3; m3: 95.3; m2: 97.8; rung 99.78; 125 monomials, 0% within 0.5; best v^1 f_HC^1 (101.5)
+[PASS] B9 [E] count: supplied numbers vs scales | supplied: 1/a_cell (a reading, kappa T = 4, 1 of 6); Sp(2N) rank (1 of 4); sin(theta) (xi ~ 1e-3); S rank N (fit of M_R); mirror g/t >= 8 (inequality); y_nu, top weights || scales: colour scale: calibration (1.6% reading near-hit); weak f: FITTED by rank; mirror: cell, inequality; seesaw: restated as N; Lambda: not set
+[PASS] G [gate] anti-smuggling gate: the rule FAILS (fits 3 numbers by choice, names groups; its one unfitted test, a common cell coupling, fails for SU(2)_L and U(1)_Y) | fitted: ['1/a_cell reading (picked by alpha_s)', 'Sp(4) rank (picked by v)', 'S rank (picked by M_R)'] / named: ['Sp(2N) hypercolour + SU(4)/Sp(4) coset', 'new SU(N_S)', 'n^c n^c channel'] / tests: ['SU2_L/U1_Y at the one coupling: FAIL (B1, B4)', 'mirror >= 1.5 TeV: pass (inequality)'] / Lambda: UNTESTED (not set)
+supplied: measured MZ couplings, f_pi, v, m_t, Delta m^2's, M_R(y)=neutrino-mass B2, Lambda L^2; ladder a_c;
+  one/two-loop running; colour offset as the f calibration; xi window [1e-4, 0.1]; g/t >= 8 from block-quartic-smg.
+elapsed_seconds 0.5
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

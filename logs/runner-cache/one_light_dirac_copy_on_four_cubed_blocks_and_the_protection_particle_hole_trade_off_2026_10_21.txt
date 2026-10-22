@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/one_light_dirac_copy_on_four_cubed_blocks_and_the_protection_particle_hole_trade_off_2026_10_21.py
+runner_sha256: 2d7ccf98da0416032b6fae83a365fc82ce3e36a58ff0af61481241f4296c1432
+input_fingerprint_sha256: 8f8ca72057f658b0ca1f0f59a455f090140bd36d94eff9ebe6f6f57ab4b4594d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.56
+status: ok
+----- stdout -----
+== 1. 2^3 cubes: every spinorial site action
+[PASS] with inversion, every site action gives G3/2g+G3/2u at both invariant momenta (no E1/2, no E5/2)
+[PASS] rotations only: spin-3/2 corner gives 2 G3/2; the m=+-1/2 corners give E1/2+E5/2+G3/2 (one E1/2 only)
+[PASS] tensor facts: E1/2 x E1/2 holds A1 and T1 (mass, k-linear term); E1/2 x E5/2 holds neither; G3/2 = E1/2 x E
+[PASS] 2Z^3 zone: every non-invariant momentum has a star of at least 3 points (only Gamma and R are fixed)  star sizes [1, 3, 6, 8, 12, 24]
+   => on 2^3 cubes a light Dirac needs two copies (Gamma/R) or a star of >= 3, for every covariant block unitary
+== 2. E1/2g multiplicity (inversion included)
+[PASS] E1/2g multiplicity at Gamma = m(m-1) + 2 C(m,3) for L = 2m: 0, 2, 8 (always even)  {2: [0], 4: [2], 6: [8]}
+== 3. 4^3 cell in CL-2's spin-3/2 gauge
+[PASS] CL-2's W is a reflection; spin-3/2 site phases give the 48 rotation lifts about the 4^3 block centre, which with a central inversion close into O_h' on 64 sites  closure 1.3e-14
+[PASS] W on the cubes of the nested 2^3 tiling commutes with the rotations and the (2,2,2) translation; it is odd under exactly one central inversion action and even under exactly one (up to sign)  16 central involutions
+[PASS] 4^3 content: E1/2g and E1/2u twice each (one copy on the edge-centre orbit, one on the face-centre orbit)
+== 4. opposite-step glide on 4^3 cells (odd half-tick = image of the inverse even one)
+[PASS] both tiling-exchanging maps (translation by (2,2,2), inversion through (2.5,2.5,2.5)) commute with O_h' at K=0 and fix no site mod 4, so every trace tr(g M) vanishes  max|tr| 0.0e+00
+[PASS] random covariant blocks: the two E1/2g levels at Gamma are always {w, -w}, so one light copy brings a second light copy or a copy at pi  max asym 4.4e-16
+== 5. W-glide: odd half-tick = (2,2,2)-translate of W V W
+[PASS] for every covariant block unitary V: Sigma = T_(2,2,2) W V commutes with U(K) and Sigma^2 = exp(-4iK.(1,1,1)) U(K)  7.2e-16, 8.0e-16
+[PASS] Sigma(0) anticommutes with the inversion, so every Gamma level is a g/u pair: E1/2g and E1/2u levels coincide (no tuning)  max |w_g - w_u| 8.9e-16 over 3 random blocks
+[PASS] mass from the step asymmetry e -+ mu/2 (breaks Sigma): light levels +-mu; covariant perturbations that keep the glide keep the light pair degenerate  2.6e-16
+== 6. doubling: protection and a w -> -w symmetry
+[PASS] glide + W-odd generator (both symmetries): the E1/2 Dirac points at Gamma sit at {w, -w}; a single light copy is impossible  3.3e-16
+   theorem: Sigma gives {w_g} = {w_u}, a w -> -w map gives {w_g} = -{w_u} or -{w_g}; with even E1/2g multiplicity (section 2) a second E1/2 pair sits at 0 or pi
+== 7. protected tick P: V = e^-ie P + e^ie (TW)P(TW)^-1 + e^-i phi Q (edge copy, e = 7pi/12, phi = pi/12)
+[PASS] P: 4 light states at Gamma (massless with no tuning), 60 at 2 phi; isotropic Dirac cone  v 2.230
+[PASS] P: no w -> -w symmetry (Gamma spectrum {0, 2phi}); the cone is particle-hole asymmetric, w+ + w- = 2 c k^2 with c != 0  c = -12.62 (lattice units)
+[PASS] P is not gapped: the strongly bent cone returns to w = 0 near |K| = v/|c| (zero found along (1,1,0))  |w| = 5.2e-10 at |K| = 0.1758; v/|c| = 0.1768
+[PASS] tuning c to 0 inside the glide class (second heavy phase on G3/2) opens light-level states elsewhere: an exact zero off Gamma  c = -2e-11 at f1 = 0.2342; |w| = 6e-14 at K = [0.708, 0.479, 0.216]
+== 8. particle-hole tick S: every block applies exp(-i[s e B + phi_s I Q]), light step sign s alternating
+[PASS] S: light copy P = (1+iT)/sqrt2 on the edge copy, B = P - WPW; Gamma: 4 light states (E1/2g + E1/2u), 30 at +2pi/3, 30 at -2pi/3
+[PASS] S: W is an exact Floquet chiral symmetry, W U(K) W = U(K)^-1 (spectrum symmetric under w -> -w at every K)  6.1e-15
+[PASS] S on the 8^3 torus: unitary, commutes with the C4 and C3 lifts, the inversion and the translation by 4; W U W = U^-1; Bloch gives all 512 quasi-energies  cov 5.1e-15, spec 1.8e-15
+[PASS] S: isotropic Dirac cone, each sign twofold, c = 0 exactly; mass from the light-step asymmetry: Gamma levels +-mu  v 2.0000 sites/tick, c +4.4e-11
+[PASS] S cone speed = sin(eps)/sqrt3 blocks per tick (CL-2's formula with the 4^3 block), independent of the heavy phases  ratios [0.999997, 0.999996, 0.999993, 0.999997]
+[PASS] S is not protected: a small covariant W-odd term in the even generator keeps W U W = U^-1 but moves the light pair off 0 (its zero is exact only in this form)  shift 8.5e-03
+[PASS] S certified over the zone (Lipschitz boxes on the O_h wedge): nothing within 0.35 of pi; for |K|_inf >= pi/32 nothing within 0.12 of 0; for |K|_inf <= pi/32 exactly 4 states with |w| < 0.5  True: 304 boxes, ||dU/dK_i|| <= 2.522, margins 0.003, O_h spectra 1e-14
+== 9. the other-cells tuned tick (induced site action, edge-orbit E1/2 pair, (1,0,2) imaginary odd hop, t = 0.4)
+[PASS] massless at the critical m0 = 0.29282 (Gamma: 4 states at 0, all other levels in [1.17, 1.98], none at negative w), so no w -> -w symmetry; the cone has c != 0  v 0.6666, c -0.0578
+[PASS] other-cells tick certified over the zone: nothing within 0.6 of pi; for |K|_inf >= pi/16 nothing within 0.08 of 0; for |K|_inf <= pi/16 exactly 4 states with |w| < 0.5 (one light Dirac copy, confirmed)  True: 336 boxes, ||dU/dK_i|| <= 0.819, margins 0.002, 0.1 s
+== 10. estimates (supplied lattice spacing a = 5 Planck lengths)
+   E(particle, antiparticle) = v|k| +- c k^2  ->  eta = 2 (c/v)(a/l_P); measured (Crab synchrotron, vacuum Cherenkov): |eta| < ~1e-7
+   P (protected)    : c/v = -5.657e+00 -> eta = -5.7e+01
+   other-cells tick : c/v = -8.677e-02 -> eta = -8.7e-01
+   S (particle-hole) : c = 0 by the exact W symmetry (numerical +4e-11)
+   runtime 2.1 s
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/the_zoom_ladder_adds_no_family_charge_so_its_characters_give_no_mass_tower_2026_10_22.py
+runner_sha256: 05515d78085b04eed1df5231da2cddbfb383a25f4594aa1fddf14885113b79cb
+input_fingerprint_sha256: 0c5bf769dfb430ef4cd7d11305c98cca0ea7d8ed31e4da38048160c69861e030
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.86
+status: ok
+----- stdout -----
+== A. targets [M] (as supplied in the task): m_t:m_c:m_u 1:7e-3:1e-5, m_b:m_s:m_d 1:2e-2:1e-3, m_tau:m_mu:m_e 1:6e-2:3e-4; |V_us|,|V_cb|,|V_ub| 0.225, 0.042, 0.0037
+== B. theorems
+[PASS] [T] inflation: the zoom-3 family characters (j,j,j) have exactly one image at every rung, 3^(n-1)(j,j,j) in Z_{3^n}^3, and the next rung's translations T(6e_i) act trivially on all three: the ladder adds no family charge, the families still form the order-3 subgroup {0, psi, psi^2} | images {9: [0, 3, 6], 27: [0, 9, 18], 81: [0, 27, 54]}
+[PASS] [T] no tower from any rung: pair characters are psi, psi, psi^2 = psi^*; any spurion set closed under conjugation (sigma and sigma^* at one weight) gives f(psi) = f(psi^*), so the 12, 23, 13 pairs open at ONE suppression whatever the rungs and weights (300 random spurion systems, zoom 9-81); holomorphic sets give at most two (12 = 23) | pure zoom-9 spurion: degree 3, eps^6; with the zoom-3 spurion: eps^1 for every pair
+[PASS] [T] k -> -k: in Z_N every family triple closed under negation is {0, k, -k} (or {N/2, k, -k}); its pair differences fall in at most two classes up to sign, so it has at most two spurion distances, while generic triples reach three: a three-distance texture needs k -> -k broken in the family sector | N: (sym max, all max) {6: (2, 3), 8: (2, 3), 9: (2, 3), 16: (2, 3), 18: (2, 3), 27: (2, 3), 32: (2, 3), 81: (2, 3)}
+[PASS] [T] Dirac entries carry differences: with doublet and singlet families on the same subgroup S (rule-forced), M = sum_g eps^f(g+h) P_g with P_g permutations, so the cheapest class is a full permutation and all three masses are of one order for every Higgs character h and every rung: the ladder gives no mass hierarchy | all h in Z_9, Z_27, rung-graded weights
+== C. fit-free ensembles (complex O(1) coefficients, |c| log-uniform in [1/3,3]; 200 samples/cell; hit = within x3 of each target)
+[PASS] [E] rule-forced assignment (inflated zoom-3 characters), every rung, h, weight law and eps in {1/2, 1/3}: median m1/m3 stays order one, no sample hits the quark mass ratios | 144 cells, min median m1/m3 0.18, max joint hit 0.000
+   best cell by median log-distance: N=27 S={0,+-4} law=unit h=15 eps=0.33 chi=5.17; medians u32 3.3e-02 u21 7.2e-03 d32 3.6e-02 d21 7.7e-03 Vus 2.1e-02 Vcb 1.0e+00 Vub 2.0e-02 e32 3.7e-02 e21 6.2e-03
+   look-elsewhere: 1548 cells (2 zooms x triples x 2 weight laws x all h x 2 eps) x 200; joint 7-hit samples 0, mass-4-hit samples 62
+   anarchy null: joint 0.000, masses 0.000; positive control (supplied U(1) FN, Q=(3,2,0), u=(4,1,0), d=(1,0,0), eps=0.22): joint 0.075, masses 0.135, chi 0.87
+[PASS] [E] a supplied ordered U(1) charge (three distinct distances) passes the same test while the best of the ladder's 1548 textures does not: the test can detect a tower, and the ladder does not supply one | joint 7-hit rate: best ladder cell 0.000, FN control 0.075; median log-distance chi best ladder 5.17 vs FN 0.87
+== D. Nelson-Barr on the two-rung assignment (Z_9^3 characters)
+[PASS] [T, checked] rule-forced two-rung assignment: zoom-9 vacua with non-inflated characters fill no entry at renormalisable order (every field character is inflated), so the zoom-3 Nelson-Barr texture is unchanged and arg det(M_u M_d) = 0 exactly | max |sin theta_bar| Nh=1 2e-16, Nh=2 2e-16, Nh=3 2e-16
+[PASS] [T, checked] a family-pair (tower) spurion lambda must carry a light-subgroup character; at renormalisable order it fills the heavy-heavy block qc_a X_b (a != b) with lambda above and lambda^* below the diagonal. The texture stays block-triangular, so theta_bar = arg det M_hh: real for N_h <= 2 (det = M_0 M_1 - c c' |lambda|^2), generic for N_h = 3 (the lambda^3 cycle of the three copies) | median |sin theta_bar| Nh=1 0.00, Nh=2 0.00, Nh=3 0.31
+[PASS] [E] even with N_h = 1, the same spurion enters the light block at dimension five (H lambda l Q / Lambda) with the tower's own strength eps = 1/3: theta_bar ~ eps, against |theta_bar| < 1e-10 | median |sin theta_bar| 0.10; CP-even tower spurion needed to 1e-10 (supplied)
+runtime 3.7 s
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

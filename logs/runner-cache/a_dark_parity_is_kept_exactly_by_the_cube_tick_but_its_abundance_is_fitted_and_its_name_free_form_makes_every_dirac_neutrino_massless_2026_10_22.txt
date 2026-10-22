@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/a_dark_parity_is_kept_exactly_by_the_cube_tick_but_its_abundance_is_fitted_and_its_name_free_form_makes_every_dirac_neutrino_massless_2026_10_22.py
+runner_sha256: 7790ab819587f342ce730134bdf0073ad255ccaa9583e18b2b945b336103d007
+input_fingerprint_sha256: 3467b017276e2ba7142bace8a353c00d9e8eeb61bf08c0c14690fdcad093900a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.89
+status: ok
+----- stdout -----
+== A. option (i): an exact copy parity on the cube tick's own copies
+[PASS] A1 [F] the copy sign s commutes with the tick at K = 0 (s = -1 rest phase mu + M) and not at a random K  ||[s,U]|| 5e-16 at K=0, 0.235 at random K
+[PASS] A2 [F] any copy parity equal to s at rest is broken by CL-1's own edge reading: the one-cube traceless strain vertex takes the heavy copy at rest to the light copy at recoil 0.87 M with O(1) amplitude (zero at q = 0)  amp(0.87M) 0.297 (M=0.5), 0.358 (M=0.05)
+   -> option (i) holds only if one species reads its edges through a band-projected (non-local) tick; option (ii), label parity, is not kept by the fine tick (dm-revisit). Rejected.
+== B. AX-5 dark parity P_D = (-1)^N_D, D one link-free species: consistency with the update
+[PASS] B1 [T] real-space 4^3 torus, both tilings, copy mass, a random metric per cube (edges vary in space), random links on E's odd hops: the update is unitary and commutes with the D projector exactly, and D's block is independent of E's links  unitarity 9e-16, [P_D,U] exactly 0
+[PASS] B2 [T] Fock (4 D + 4 E modes, dim 256): the second-quantised tick keeps (-1)^N_D; an odd term (one D mode, e.g. L H nu^c_D) breaks it; an even pair term keeps the parity while changing N_D  [U,P] 0e+00, odd 2.0, pair 0e+00
+== C. consequences
+[PASS] C1 [F] lightest D-odd state: over an 8^3 K grid the lowest positive quasienergy of D is mu_D at K = 0 (light copy at rest); the s = -1 copy sits at mu_D + M and may decay to it (both odd)  min 0.300000 at K=[0.0, 0.0, 0.0]
+[PASS] C2 [T] link-free: D's Gauss charge is 0 in every factor, so V^q = 1 on every D hop (B1: D's block is the undressed tick); its rest phase is mu_D = m_D N with no link correction
+[PASS] C3 [T] one family: nu^c is the only link-free Weyl state; its Majorana term is Z4 = i^(B-L)-odd and L H nu^c is Z4-even but D-odd: with Z4 and AX-5 the D species has only its tick's own Dirac mass
+[PASS] C4 [T] D = one family's nu^c: the Dirac neutrino mass matrix y_ij L_i H nu^c_j loses a column, rank 2: the lightest neutrino is exactly massless  singular values [2.6525, 1.0553, 0.0]
+[PASS] C5 [T] gate: the name-free form (every mode with zero charge in every link factor enters non-tick terms only in pairs) removes all three nu^c columns, and L L H H is Z4-odd: every neutrino is massless, against the measured splittings  rank 0; Dm21^2 = 7.4e-5 eV^2 > 0 measured: the name-free form is falsified under Z4; the one-family form names nu^c (gate item 2)
+   prediction: sum m_nu = 58.7 meV (normal), 99.2 meV (inverted); DESI DR2+CMB 95% bound ~64 meV keeps only normal; m_bb = 0 (Dirac)
+== E. estimates against measurement (supplied inputs in the header)
+[PASS] E1 [E] gravitational freeze-in from the bath gives Omega h^2 = 0.12 on a line m_D T_RH^3 = const (light branch); it needs T_RH >= Tmin  Tmin 9.5e+12 GeV; m_D = 1.4e+04 GeV at T_RH 5.8e+15 (r = 0.036), 2.1e+08 at 2.4e+14 (r = 1e-7, fold plateau)
+[PASS] E2 [E] one fitted number: on the light branch Omega ~ m_D T_RH^3 (power law); a heavy branch m_D ~ few T_RH is exponentially sensitive  T_RH 1e14: light m 2.8e+09 (dlnO/dlnm 1.00, /dlnT 3.00); heavy m 7.2e+14 (dlnO/dlnT 17)
+[PASS] E3 [E] cold: D is produced from a bath it never joins, with p ~ 3 T, so today v ~ 3 T_D0/m_D; every m_D on the E1 line (>= 1e4 GeV) is far colder than the ~5 keV warm-dark-matter bound needs  T_D0 7.8e-05 eV, v0 2e-17 c at m_D 1e+04 GeV
+[PASS] E4 [E] self-interaction is gravitational only: sigma/m << 1 cm^2/g for every allowed m_D (here up to the cell scale)  sigma/m 6e-61 (m_D 1e+04), 8e-47 cm^2/g at the cell scale, v = 100 km/s
+[PASS] E5 [E] direct detection: zero link couplings (C2), so nuclei see D only through gravity: alpha_G = m_D m_N/M_Pl^2, events per tonne-year << 1  alpha_G 9e-35, sigma(q > 10 MeV) 4e-85 cm^2, 5e-45 events/t/yr
+   N_eff: D never thermal, Delta N_eff ~ 0; s = -1 copy of D at M ~ 1e+18 GeV (M = 0.5 rad/tick) is Boltzmann-absent for T_RH << M and decays to light D at the cell rate
+   misalignment: none for a fermion; split cascade: the exact passing carries vacuum to vacuum (D pairs only from a heating kernel, supplied)
+theorems: B1, B2, C2, C3, C4, C5; finite: A1, A2, C1; estimates: E1-E5
+gate (owner 2026-10-22): (1) abundance FITTED (m_D T_RH^3 to 0.12), m_D supplied; (2) one-family form names nu^c, name-free form fails C5;
+   (3) unbuilt prediction only in the one-family form (m_lightest = 0, sum 58.7 meV); (4) bends Admissibility. RESULT: FAIL, not adopted
+elapsed_seconds 0.2
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

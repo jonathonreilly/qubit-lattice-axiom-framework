@@ -98,6 +98,7 @@ A check of the light copy shows a decisive problem for this route: the light cop
 ## Untested predictions
 
 - **Photon decay with a cubic sky pattern.** CL-1's copy mass makes the light fermion band slower than the photon by a dimension-six term, so photons above roughly 80 to 110 PeV can decay to electron-positron pairs, except along the four body diagonals of the lattice. LHAASO photons reach about 1.4 PeV; ultra-high-energy photon searches can test this.
+- **Dark energy is exactly constant.** Nothing in CL-1 to CL-3 moves w from -1 by more than about 1e-18 for the known content (1e-3 for the heaviest species allowed), and any log-periodic step in H(z) at the split epochs would be the only other signature. DESI DR2 prefers evolving dark energy at 2.8 to 4.2 sigma, so DESI's final data and Euclid can falsify CL-3 as written.
 - **No gravity-mediated entanglement.** A definite geometry responding to the actual configuration cannot entangle two masses, so tabletop tests of gravitational entanglement would find none.
 - **Dark matter has no non-gravitational signal,** since CL-3 links only exactly conserved currents and every linked slot is excluded.
 

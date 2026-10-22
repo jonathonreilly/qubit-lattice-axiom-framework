@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/cube_tick_keeps_a_chiral_weak_su2_only_at_step_half_pi_with_no_species_mass_2026_10_21.py
+runner_sha256: b49b9726446da6fe79bc053b02848ee2517b372bca93c47ad24e3c180c5a390b
+input_fingerprint_sha256: 24aaf2a8d11468c020ea122a028808ff453cf62a2d6165243096f826ae9036ce
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.77
+status: ok
+----- stdout -----
+== A. which rule keeps a weak SU(2) exact on the CL-2 tick
+[PASS] A1 [T] U - sUs = 2i(sin th_o cos th_e W_o(K) - cos th_o sin th_e W_e), th = eps +- mu/2: the sublattice sign s commutes with the tick iff eps = pi/2 and mu = 0  residual 3e-16; |[s,U]| 1e-16 vs >= 0.09
+[PASS] A2 [T] one-body commutant: span{1,s} at (pi/2, 0), scalars otherwise [2, 1, 1, 1, 1, 1]. With the (4,2) cell index in parallel: U(8)_even x U(8)_odd at (pi/2, 0), else one U(8) acting alike on both chiralities (g_A = 0); masses leave prod U(n_k), so T+ x 1 needs m_nu = m_e, m_u = m_d  |U(mu=.010) - U(mu=.012)| = 7.2e-04
+[PASS] A3 [T] at step pi/2: s = -g5 s3 on the light algebra, and the s = +1 cells hold (L, copy w) + (R, copy w^2): an SU(2) acting as T x (1+s)/2 links one copy's L and the other copy's R  traces (L1, L2, R1, R2) on s=+1: 2 0 0 2
+[PASS] A4 [T] CL-2's copy factor exp(i M P W/2) breaks s at step pi/2 (a copy mass is s-odd; only M = pi, a pi-shift, keeps it): CL-2 as written has no chiral SU(2) at any step  |[s,U]| = 0.76, 1.20, 6e-11 at M = .5, 1, pi
+[PASS] A5 [T] the block inversion V (V U(K) V+ = U(-K), unique, also at step pi/2) has V s V+ = -s: it swaps SU(2)_even and SU(2)_odd, so if both are linked their couplings are equal, g_L = g_R
+[PASS] A6 [T] mirror term = Spin(10) pair square on the mirror 16 = 8_odd + 8bar_even (Grassmann, two spin components; the commuting square vanishes by Fierz): stabiliser in gl(16) = 45 = so(10); inside u(8)_e + u(8)_o it is 21 = su(4)+su(2)+su(2), no U(1): CL-5 would link exactly Pati-Salam, no species-number link  dims 45, 21; block-U(1) residual >= 0.25
+[PASS] A7 [E] cost: at step pi/2 the band reaches quasi-energy pi (massless charged pi-cone) vs the vacuum bound eps < 0.037 (band top 0.074): the sublattice route conflicts with vacuum stability; a Xi-graded wall keeps U(8)_A x U(8)_B exact at small step by its block structure (cited, chiral-wall A6/A9)  band max 3.1416, 0.0740
+== B. decay test: degenerate doublets, a W link, and measured weak decays
+[PASS] B1 [T] a doublet with generators lam T^a keeps D = d - i g A.(lam T) covariant only for lam = 1 (defect i g lam(1-lam) eps^abc a^b A^c T^a psi, sympy): a non-abelian link gives every doublet one g; a U(1) link would not
+[PASS] B2 [T] contact limit (V-A): Gamma = G^2 m^5/(192 pi^3) f(m_e^2/m^2) from Dirac traces and exact phase space; m^5 exact; f reproduced at m_e/m_mu  1.000000000000, x32.000000, f 0.99981295
+[PASS] B3 [T/M] Michel: chiral link (V-A) gives rho, xi, delta = 0.7500, 1.0000, 0.7500; a vector-like link (pure V, A2 at small step) gives 0.3750, 0.0000; measured 0.74977(26), 1.0009(16): vector-like off by 1441 and 626 sigma
+[PASS] B4 [M] tau/mu universality: one g and m^5 predict (tau_mu/tau_tau) B_e (m_mu/m_tau)^5 = 1.00040 (phase space, W propagator 1.000293 numeric, QED); measured 1.0026 +- 0.0029: pull 0.8 sigma
+[PASS] B5 [M] m^5 needs a heavy W: the ratio alone gives M_W > 15.2 GeV (2 sigma); colour-only breaking (M_W = g f_pi sqrt3/2 = 52 MeV < m_mu) makes the W real and rates ~m^3, off by (m_tau/m_mu)^2 = 283
+== C. breaking without a fundamental scalar
+[PASS] C1 [T/M] every bilinear psi_R^dag psi_L of chiral content is a |Y| = 1/2 doublet, so any EM-neutral pattern of dynamical masses gives a massless photon and rho = 1 exactly: 1.000000000000 (24 random condensates); a T = 1 order parameter gives 0.9943 (Y = 1), 1.0115 (Y = 0); measured rho0 = 1.00038(20)
+[PASS] C2 [T] with SU(2)_R linked too (A6), bidoublet condensates leave 4 massless links if isospin-symmetric and 2 otherwise (photon, B-L); a B-L = 2 nu_R-pair (dN = 2) condensate leaves the photon alone (1), rho = 0.999928 at v_R = 40 v; W_R > 6 TeV needs v_R > 53 v
+[PASS] C3 [E] g_L = g_R (A5), g_4 = g_3: 1/alpha_Y = 1/alpha_R + (2/3)/alpha_4 meets the measured couplings (one loop, SM below) at M_R = 5.1e+13 GeV; breaking at the cell scale 2.44e+18 GeV gives sin^2 thW(MZ) = 0.193 vs 0.2312
+[PASS] C4 [T/M] all 11 colour- and Fermi-allowed dN = +-4 products of one family hold an even number of doublets, so none is the doublet of C1; the 3 with Y = 0 (QQQL, uude, uddn) are exactly the |B| = |L| = 1 ones: as condensates they break B and L (tau_p > 2.4e34 yr) with T = 0 or T >= 1; the rest have T = 0, Y != 0 and would break EM
+[PASS] C5 [T/E] top condensate on the step-pi/2 tick: sea hop = 4s sqrt((1+S)/(1-S+s^2(1+S))) (err 2e-16), g_c = 1/(4 I0), I0 = 1.15672; v needs g/g_c - 1 = 6e-32; Pagels-Stokar at the cell cutoff m_t = 103, bubble m_H = 206; compositeness RG (y_t -> inf, lambda = y_t^2; SM one loop) m_t = 202, m_H = 215 vs 172.69, 125.20: no 125 GeV scalar
+== D. hierarchy
+[PASS] D1 [T/E] Lambda = M exp(-2pi/(b0 alpha_M)); three families, no scalar: b0 = 7 (SU(3)), 10/3 (SU(2)_L), 32/3 (SU(4)), -2/3 (SU(2)_L above the mirror mass); U(1) screens. Measured couplings at the cell (1/alpha_3 = 50.6, 1/alpha_2 = 48.6) confine at 5e-02, 3e-24 GeV; v needs b0 alpha_cell = 0.171 (b0 = 8.6 at alpha_3): no group in the content
+[PASS] D2 [T/E] naturalness: no scalar, no quadratic sensitivity; at small step the mass zero is unprotected (A2), so each mu is tuned against O(alpha/4pi) dressing (electron mu = 2.4e-22: ~4e-19); an exact chiral SU(2)_L forbids mass terms, so vacuum masses are protected and transmutation needs only b0 alpha = 0.17
+supplied: CL-2 tick (eps, mu, copy factor); rung-1 index in parallel; Spin(10) mirror term; Dirac/Fermi contact or W
+  propagator; SM one-loop betas; PDG/TWIST: tau_mu, tau_tau, B_e, masses, M_W, rho, xi, rho0, alpha(MZ), sin^2, alpha_s, f_pi.
+elapsed_seconds 2.6
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

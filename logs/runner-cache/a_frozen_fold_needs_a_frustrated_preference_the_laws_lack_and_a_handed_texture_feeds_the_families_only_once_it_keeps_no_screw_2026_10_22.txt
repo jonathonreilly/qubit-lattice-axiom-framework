@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/a_frozen_fold_needs_a_frustrated_preference_the_laws_lack_and_a_handed_texture_feeds_the_families_only_once_it_keeps_no_screw_2026_10_22.py
+runner_sha256: d998b25b898b8756ed83f5a009debb523a43a752fb5671e8afefe60adc38acba
+input_fingerprint_sha256: 5597a29492e7840103a04662e262b905e5e7468c28ab8fa2334621238faa94b6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.56
+status: ok
+----- stdout -----
+== A. shared symmetries and the mixing matrix
+[PASS] [T] lemma: if up and down family terms share a unitary with eigenspaces of sizes d_i, |V| is block diagonal (at least n^2 - sum d_i^2 zeros) and a 1-dimensional eigenspace gives an entry 1 (50 seeded pairs per size set)
+   measured |V|: no zero, no unit entry, J = 3.1e-5, so a shared structure may leave no unitary with two distinct eigenvalues on the light family space
+== B. the protein-fold test
+   (1) CL-3's hinge sum is stationary at zero deficit, met by flat edges in every cell: no frustrated preference (stated)
+[PASS] [T] (1') a supplied frustrated preference: all-regular tetrahedra. The block cube's central tetrahedron is regular, its corner ones are not; 2 pi / arccos(1/3) = 5.104, so regular tetrahedra cannot close around an edge
+[PASS] [T] (2) fold: among the 3^9 face-sharing chains of 10 regular tetrahedra, the range-3 rule 'each new site bonds to the newest three' (mirror-blind) holds for exactly one chain, the Boerdijk-Coxeter helix, one sense throughout; the mirrored seed folds the other sense, so the sense is the seed's orientation
+[PASS] [F] (2') the funnel is not single: the preference alone leaves thousands of non-overlapping folds, and a longer contact rule (most i -> i+5 contacts) has several best chains, all helical for their first four steps and then branching | 9252 non-overlapping chains; 24 best by contacts (score 8)
+[PASS] [T] (3) the fold is a screw: per site a turn of arccos(-2/3) = 131.81 deg (cos rational and not 0, +-1/2, +-1, so the turn is an irrational part of a circle: no lattice period) and a rise of 1/sqrt10 edge | 131.8103 deg, rise 0.316228
+[PASS] [T] (4) a quantum register chain (Z_6 values per site, mirror-even frustrated preference -cos(d1) + 0.5 cos(d2), value hops t = 0.1): the classical minima are helices of both senses (6 sites: chirality +-2.6..4.3, none 0); the quantum vacuum is mirror-even with <chirality> = 0 and equal odds of each sense; the only sense-picking local term (sum sin d1, the DM form) is mirror-odd, so a mirror-keeping law cannot contain it | P(+) = P(-) = 0.4541, 0.4889, 0.4983
+[PASS] [F] (4') the mirror-even/odd splitting (tunnelling between senses) falls with length: the sense is chosen spontaneously in the long-chain limit, with no law preference | 4, 5, 6 sites: 0.0278, 0.0136, 0.0031
+== C. the matter sea on handed textures (copy-massed two-tiling tick, 6^3 sites)
+[PASS] [T] (a) handedness is odd under every improper operation: I U(h) I^-1 = U(-h) exactly; the diagonal mirror maps the helix of sense h to the -h helix shifted by one cube (so A = sigma_d K, the texture being real, does too) | I: 3e-16
+[PASS] [T] (b) the two senses have equal vacuum quasi-energy, with the polar term too (I broken, A kept) | polar: 0e+00
+[PASS] [F] (c) handed vs unhanded at equal rms strain: equal at order a^2 (the cross term is the mirror-odd Lifshitz term), differ at higher order, and the bare sea's energy rises for both (no instability) | dE(helix) a=0.1: 6.426e-04, a=0.2: 2.531e-03 (ratio 3.94); lin-helix rel 0.0073, 0.0213
+   (d) CL-3 subtracts the vacuum phase of the same edges: the vacuum sea adds nothing at any texture (law text)
+[PASS] [T] (e) the helical strain is traceless with no linear scalar curvature (q_i q_j h_ij = 0) but has a transverse-traceless part, which the hinge sum's static energy charges positively: the flat vacuum is the minimum | TT fraction 0.333, 0.333
+== D. the family term of handed textures (up mu = 0.20, down mu = 0.35, eps 0.5, M 0.6, a = 0.3)
+[PASS] [T] (a) the commensurate helix (pitch 3 cubes along the family axis) is a screw: T(2 e_x) C3 commutes with its tick exactly, and on the six light family states its eigenvalues have multiplicities 3, 2, 1 | [S, U] 3e-16
+   helix                            max|V| 1.000000  zeros 22  max|J| 4.13e-08
+   helix + polar split              max|V| 1.000000  zeros 22  max|J| 2.07e-06
+   linear (unhanded)                max|V| 0.999988  zeros 16  max|J| 6.08e-06
+   triple helix (x, y, z)           max|V| 1.000000  zeros 22  max|J| 1.41e-10
+   distorted helix (+ 0.15 linear)  max|V| 0.999852  zeros  0  max|J| 3.19e-06
+[PASS] [T] (b) every symmetric texture fails by the lemma: the helix and helix + polar split keep the screw (unit entry); the triple helix keeps the pure turn C3 about the family axis (unit entry); the unhanded wave keeps I (zeros)
+[PASS] [F] (c) a distorted helix (no screw, no turn, no I, no A) gives a mixing matrix with no zero and no unit entry and J != 0: the needed structure is a LOW-symmetry handed texture | max|V| 0.9999, max|J| 3.19e-06
+   [E] family quasi-energies (rad/tick) up [0.545 0.525 0.515 0.493 0.195 0.193], down [0.604 0.58  0.568 0.543 0.343 0.342]: smallest/largest 0.35 (up), 0.57 (down), set by the band at the three family momenta, not by the texture; measured m_u/m_t = 1.3e-5, m_d/m_b = 1.1e-3: no hierarchy
+== E. weak chirality, pitch and the zoom ladder
+[PASS] [T] (a) a time-even handed background reaches a Dirac field as b0 gamma5 (P-odd, T-even): E = +-sqrt(m^2 + (|p| +- b0)^2), both helicities present at every momentum (20 seeded p): a shift, not a missing helicity, so a fold's handedness is not weak chirality
+   [S] the fold's turn is 0.36614 of a circle: its multiples come within 0.0053 (n=10), 0.0105 (n=20), 0.0223 (n=21), 0.0328 (n=1) of a family character (1/3, 2/3): an incommensurate fold has no exact family hop; near-commensurate orders would stage it (not derived)
+   [S] zoom ladder: a fold of folds (a coiled coil) needs a frustrated preference at each rung; CL-1..CL-3 supply none
+elapsed 5.0 s
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

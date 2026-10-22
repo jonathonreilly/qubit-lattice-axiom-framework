@@ -127,6 +127,16 @@ Evidence:
 - `docs/VECTOR_RESPONSE_TO_LABELLED_RELAY_VALUES_FORCES_LIE_ALGEBRA_SELF_COUPLING_BOUNDED_THEOREM_NOTE_2026-10-21.md`;
 - `docs/RELAY_VALUE_CURRENT_AND_THE_VECTOR_FIELD_IT_SOURCES_BOUNDED_THEOREM_NOTE_2026-10-21.md`.
 
+## Axiom-level working rules (logged 2026-10-22 on owner direction)
+
+The owner's instruction (2026-10-22): solve each open decision with a rule; where the rule departs from an axiom, log it here as a working rule; revisit the axioms once a simplified ruleset unifies observed physics. These entries are working rules, not axiom edits, and each names the axiom it bends.
+
+- AX-1 (Record reading). "A record locks one admissible local possibility and fixes no other site's possibility; a removed site keeps its records." Bends: Record (reading of "exactly one"). Used by: CL-2 bound/free exclusion.
+- AX-2 (Role layout). "Sites take roles (matter, rishon, edge register) by the nested role blocks of CL-1." Bends: Lattice ("no site is privileged"). Status: working; the neighbourhood-configuration reading (fold) derives exclusion but not yet the layout.
+- AX-3 (Copy mass). "The copy mass acts on even cubes only." Bends: Lattice (keeps 12 of 24 rotations). Reason: forced once the split is polar (polar-split-reason); Crab excludes both tilings.
+- AX-4 (Window coupling). "kappa and Delta take the values that keep every black-hole exterior edge inside the window (kappa = 2/3 at mu_s = 3/4, Delta = 1)." Not an axiom; a supplied CL constant pair, logged here as owner decision 4.
+- AX-5 (Dark matter), AX-6 (light Higgs sector), AX-7 (chirality structure): rules under test (probes launched 2026-10-22 midday); entries to be filled with tested law text.
+
 ## What follows without a further law
 
 - **Born reading.** CL-2 keeps the configuration distributed as its odds; for a mixing update the squared magnitude is the only local, phase-blind reading that this preserves (`docs/RELAY_CONSERVATION_SELECTS_THE_SQUARED_MAGNITUDE_READING_OF_THE_ODDS_BOUNDED_THEOREM_NOTE_2026-10-21.md`).

@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/site_read_links_in_the_full_metric_bend_light_by_two_on_every_ray_2026_10_21.py
+runner_sha256: c509fa52901c74411d220c9e8df61b06d5b631656bb908a2908e061f5501d554
+input_fingerprint_sha256: 4e83754924a4aab513bf41486e5e64210b9526ee7d0598b474683775aa1669e1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 9.77
+status: ok
+----- stdout -----
+== A. the link reading (exact)
+[PASS] A1 theorem (3+1 identity, exact rationals): -1/4 sqrt(-g) F.F = 1/2 (sqrt(gamma)/N) gamma^ij Et_i Et_j - 1/2 (N/sqrt(gamma)) gamma_ij B^i B^j, Et_i = F_0i - beta^k F_ki: lapse, shift, inverse metric and shear all sit in two site weights | difference = 0
+   (A2 on a z line of 16 cells, random strong lapse, shift, shear per site; Bloch K = (0.7, -1.1))
+[PASS] A2 theorem: the action depends on links only through B = curl A and the normal-taken electric plaquettes, so static pure gauge solves the field equation and the Gauss charge div D is conserved by every tick, for any lapse, shift and shear | |curl grad| = 0e+00; |M(0) grad| = 2e-15; Gauss drift over 200 ticks 3e-12
+[PASS] A3 theorem (continuum limit = covariant Maxwell): for strong lapse, shift (0.1 c) and shear (0.15) both polarisations obey (w + beta.K)^2 = N^2 gamma^ij K_i K_j up to the lattice O(K^2); no birefringence at leading order | max rel. deviation 6.0e-08 at |K| 1e-3, x4.00 at 2e-3; polarisation split 1e-08
+[PASS] A4 theorem: in a diagonal cell (lapse N, gamma^ii = f_i^2) the link band (2 sin w/2)^2 = N^2 tau^2 sum f_i^2 (2 sin K_i/2)^2 is the CL-1 band sin^2(w/2) = sin^2(eps) sum f_i^2 sin^2(K_i/2)/sum f_i^2 at EVERY K, since sin eps = sqrt3 N tau rms f. The copy mass moves the light fermion band by a dimension-six term dv/c = c6 K^2 | 160 K, no copy mass: 1e-15; copy mass M .5, eps .3: c6 axis -0.0833, generic -0.0208, body +2e-10
+== B. the centre-bond (Yee) placement and the shear
+[PASS] B1 theorem: pairing each link only with its own dual face (the one-to-one Yee Hodge) makes every weight diagonal, so the band is even in each K_i separately and the cone has no K_i K_j term: the plain placement cannot read shear | max |w(K) - w(reflected K)| 2e-16; cone off-diagonal one-to-one 4e-07, target 0.161
+[PASS] B2 minimal change: let each site pair the three links that meet at its even centre (shear couples links sharing a centre, range one cell). Same carriers, same gauge group, weights positive for any positive gamma, equal to Yee when gamma is diagonal, stable: every tick eigenvalue on |z| = 1 | site cone - target 6e-08; min weight eigenvalue 0.141; max ||z| - 1| of the 4 radiating roots 5e-13 (shear .15, shift .15 c, 105 K); diagonal = Yee 0e+00
+[PASS] B3 the shift drags both photon polarisations by exactly b at every order in b (0.15 c tested); the error is the lattice O(K^2) | drift/b - 1 up to 7e-07
+== C. photon packets in metric gradients (z line, 2048 cells; Bloch along x, y; energy centroid)
+[PASS] C1 lattice photon packets follow the eikonal of the lattice dispersion (transverse push = -w_KzKz dw/dz) for lapse, gamma_ii, shear, shift and the radial-gauge gradient on rays | lapse 1.0000; gamma_ii 1.0001; shear xy, K ~ (1,1) 1.0001; shear xy, K ~ (1,-1) 1.0000; curl shift b_x(z) 1.0000; radial gauge, axis ray at s = b 1.0000; radial gauge, face ray at s = b 0.9999
+[PASS] C2 shear pushes the (1,1) and (1,-1) packets oppositely; the one-to-one placement does not push (second order only); a curl-free shift b_z(z) pushes nothing (gravitomagnetism is the curl) | one-to-one/site 2e-04; curl-free/curl -8e-05
+   elapsed 6 s
+== D. weak static fields under the fixed-4-volume clause (lattice-measured local photon dispersion along rays)
+[PASS] D1 photon bending 1 + gamma = 2 on every ray, in the radial and the second trace-fixed gauge (and the isotropic one: the site reading is covariant); no out-of-plane bending. One-to-one placement: 1 + sum k^4 (4/3 on the body diagonal) | axis 2.000000/2.0000 face 2.000000/1.5000 face xz 2.000000/1.5000 body 2.000000/1.3333 generic 2.000000/1.4850 (site/one-to-one); 2nd gauge, iso: max |dev| 9e-08; generic out-of-plane +4e-08/+0.2318 GM/b
+[PASS] D2 Shapiro delay (packet group delay along the ray): coefficient of -4 GM ln b is (1 + gamma)/2 = 1 on every ray | axis 1.000000 body 1.000000 generic 1.000000
+[PASS] D3 photon frame dragging: the Lense-Thirring shift g_0i = -2G (J x r)_i / r^3 delays the photon by -4 G J.(e x k)/b, the GR value (8GJ/b between prograde and retrograde), as for every species (B3: drag coefficient 1) | axis 1.000000 generic 1.000000 body 1.000000 (b = 1); at b = 2: max dev 1e-07
+   elapsed 8 s
+[PASS] D4 photon = fermion cone in every direction, at every order in the field: shear .15 (fermion hop weights and shear parts fixed by CL-1's null-cone clause; the site-read link needs no calibration) and shift .15 c (both drift by b) | |G_fermion - G_link|/tau^2 4e-07 (fermion before calibration 8e-03); drift - b: fermion 2e-07, link 2e-07
+   O(K^2) link-fermion mismatch from shear: |dv/c| <= 0.02 sigma K^2 (|K| .05, .1: 0.02, 0.02); flat: copy-mass c6 (A4)
+   elapsed 9 s
+== E. ESTIMATES against measurement (not theorems)
+   LHAASO 1.4 PeV photon decay: link - fermion speed: copy mass c6 K^2 = 1e-25, shear 0.02 sigma K^2 (sigma ~ 1e-6) = 3e-32 vs 3e-19
+   LEP 104.5 GeV electrons: link - fermion speed: copy mass c6 K^2 = 6e-34, shear 0.02 sigma K^2 (sigma ~ 1e-6) = 2e-40 vs 1e-11
+   VLBI (gamma - 1 = 1e-4) and Cassini (2.3e-5): tree-level 1 + gamma = 2 exactly at leading order; lattice part ~ K^2 = 8e-64 at 8.4 GHz
+   SPECULATION (not computed): the sea's link term is cut off at the proper cell; a cell anisotropic at order U (no static gauge is diagonal
+   and trace-fixed) would give the dressed cone an anisotropy (b/A) c U = 1.2e-02 c U, i.e. gamma - 1 ~ 1e-02 c vs Cassini 2.3e-5,
+   unless the dressed cone is held to the edges' null cone in every cell (proposed CL-3 clause); the shape coefficient c is open
+supplied: the covariant Maxwell form of the plaquette phase (proper area extended to shift and shear), the site pairing, the normal-taken
+  electric plaquette with mid-tick B, temporal gauge, CL-1 fermion code, fields, gauges, packets, rescaled local response, measured numbers.
+elapsed 9 s
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

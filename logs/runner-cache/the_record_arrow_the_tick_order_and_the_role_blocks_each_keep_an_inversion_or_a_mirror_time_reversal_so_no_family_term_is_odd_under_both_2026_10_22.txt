@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/the_record_arrow_the_tick_order_and_the_role_blocks_each_keep_an_inversion_or_a_mirror_time_reversal_so_no_family_term_is_odd_under_both_2026_10_22.py
+runner_sha256: e2a7682fcabb1238ddedc0eb2605daaf8e7e6e9b11831cb627d0a6a3de2c044a
+input_fingerprint_sha256: fd636d078d383b26c30bf948a84750d32fdbe9626864ea873ea68da02d5243fd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.78
+status: ok
+----- stdout -----
+== A. requirement (3 families, character basis; P swaps the conjugate pair)
+[PASS] [T] up and down terms sharing the inversion have a common eigenvector (0,1,-1)/sqrt2: |V| has an entry 1; sharing the antiunitary P K gives J = 0; generic pairs give neither (200 seeded pairs each) | I: min max|V| 1.000000000000; T: max|J| 1.0e-16; generic min|J| 7.3e-05
+   measured |V_ub| = 0.0037, |V_cb| = 0.042 (no unit entry) and J = 3.1e-5 (nonzero): the family term must break the inversion and the antiunitary of both sectors
+== B. the two-tiling tick (L = 6, cube momenta Z_3^3, families k_j = (2pi/3) j (1,1,1))
+[PASS] [T] cube hop: R^2 = 1 (every face phase -1), copy sign s = i W1 W2 W3 R Hermitian with s^2 = 1, [s,R] = 0, s purely imaginary (odd under K)
+[PASS] [T] rest phase at the zone centre is the mass angle (|w| = mu, 8-fold without the copy mass); with it the light copy keeps mu and the other copy has mu + M | [-0.8 -0.8 -0.2 -0.2  0.2  0.2  0.8  0.8]
+[PASS] [T] the Bloch tick equals the 216-site real-space tick in the family sector (gp = 0.3)
+[PASS] [T] symmetries of the copy-massed tick: cube-centred inversion I = (-1)^y P_(x->1-x) commutes with both half-ticks; the antiunitary A = (-1)^(xy) sigma_d K maps the symmetric-frame tick to its inverse; the polar term breaks I and keeps A | I: 2e-16 / polar 0.86; A: 4e-15 / polar 3e-15
+[PASS] [T] (b) the screw is a frame: U_odd U_even and U_even U_odd are similar (max eigenphase difference over three momenta); without the copy mass the even-first Floquet generator at the zone centre has an imaginary part, the symmetric-frame one is real, and their spectra agree | order 2e-15; |Im H| even-first 0.155, symmetric 1e-15
+[PASS] [T] (b) the conjugate family pair (1,1,1)/(2,2,2) stays degenerate in every arrangement of the tick's own terms (A survives the polar split, the copy mass and either order) | copy mass 7e-16; + polar on even cubes 8e-16; + polar both tilings 7e-16; + polar, even-first order reversed 3e-16; polar, no copy mass 4e-16
+[PASS] [F] control: the T-odd polar current (breaks I, K and A) splits the pair at first order | split / g_j = 3.286 rad per tick per unit weight
+== C. the record arrow
+[PASS] [T] (a) CL-2: the actual configuration moves by a coupling of successive Born odds (fewest-changes form checked exact over 12 ticks) and its record stack only grows, but nothing in it enters the odds, so the family quasi-energies are those of the unitary tick: the arrow adds no family term at any order
+[PASS] [T] (a') counterfactual records that DO condition the odds (dephasing p per record set): with I kept the f / -f return curves agree in every cadence (I commutes with the dephasing) | 2e-15
+[PASS] [F] (a') with I broken by the polar term: one record set per half-tick, as CL-2 takes them, still gives equal curves (3 parameter sets, 60 ticks) | 2e-15
+[PASS] [F] (a') a once-per-tick cadence (not CL-2's) gives a first-order dissipative asymmetry ~ p g_p (a decay rate, not a quasi-energy) | first-tick difference / p = 1.05e-03 at g_p = 0.3
+== D. role blocks (b, B_f, b_e): ranges and inversion centres
+[PASS] [T] blocks of whole even cubes (B = 1..40 cubes) have centres and corners at cube centres; every inversion-symmetric odd-period pattern (all 3^P for P = 3, 5, 7) has a cube-centred inversion centre; nested blocks share one
+[PASS] [F] (c) role patterns of period 3 sites (b = 3) and 6 sites (3-cube block) both hop between families (two ranges), yet the tick with both keeps I and A, so by A every such layout gives a unit mixing entry and J = 0 | family-hop norms P3 0.01,0.01,0.02; P6 0.18,0.18,0.16; I 2e-16, A 2e-14
+== E. weights against measurement [E]
+   needed: an I- and T-odd family weight of order 1 (CKM J = 3.1e-5 with sines 0.22, 0.04, 0.004; lepton Brannen phase 2/9 rad off the inversion values); available in the bulk: 0 exactly (B, C, D)
+   split fronts (register): ~ t_tick H ~ 1e-61 per tick; counterfactual record conditioning: matter-wave coherence over ~1 s bounds p < t_P/tau = 5e-44, so p g_p < 1e-104
+[PASS] [E] nothing in CL-1..CL-3 reaches the needed weight: the best is below 1e-60 against order 1
+elapsed 0.4 s
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

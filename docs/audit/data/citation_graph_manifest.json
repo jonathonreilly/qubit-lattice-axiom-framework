@@ -1,5 +1,5 @@
 {
- "edge_count": 16348,
+ "edge_count": 16350,
  "node_count": 7422,
  "nodes": {
   "3d_correction_master_note": {
@@ -19663,8 +19663,8 @@
    "out_degree": 0
   },
   "repo.active_review_queue": {
-   "deps_hash": "369a4135272d",
-   "out_degree": 6
+   "deps_hash": "87dfaab890f0",
+   "out_degree": 8
   },
   "repo.controlled_vocabulary": {
    "deps_hash": "14354d83e2fa",

@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/step_half_pi_cube_tick_has_no_continuous_log_but_conserves_a_local_chiral_generator_2026_10_21.py
+runner_sha256: 2543c713a472dce22f6de1f168293c13386c51c3c5f53e554a44e1639eed37b5
+input_fingerprint_sha256: 94f043984f377367080947d14e4b52584a0aeeedd2de46573693bdc58ccf4c9e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.02
+status: ok
+----- stdout -----
+== A. Floquet reading
+[PASS] A1 theorem: band max of the CL-2 tick and of its Courant-matched photon is 2 eps; a pair carries <= 4 eps, so a wrap to 2pi needs >= ceil(pi/(2 eps)) pairs | pairs needed at eps .04/.3/(pi/4)/(pi/2): [40, 6, 2, 1]
+[PASS] A2 two particle-hole pairs at total momentum 0: at step pi/2 the mismatch to 2pi changes sign over the sample (open resonance, rate ~ alpha^2 per cell-tick); at eps .04 it stays below 8 eps - 2pi | step pi/2 fraction >0: 0.500; eps .04 max -5.976
+   estimate: wraps inject 2pi hbar/tau each; rho_crit over the age caps the rate at 1.1e-180 per cell-tick; rate ~ exp(-kappa pi/eps) gives eps_max = 0.0076, 0.0152, 0.0373 for kappa = 1, 2, ln(1/alpha); step pi/2 (alpha^2) misses by 1e175
+   cited (onecopy-verify tick S, e = pi/3): Gamma levels +-2pi/3, zone band max 2.618 (scratch scan) -> two pairs reach 10.5 > 2pi, same bound; scaled S (e .04, phases .06/.02): band max 0.100, 4 light states kept (scratch explore_S.py)
+== B. exact-energy reading
+[PASS] B1 eps < pi/2: the principal log H_F of the tick is continuous at R and its hops fall off fast; eps H_F eps = -H_F at every eps and mass, so this reading has no conserved chiral charge | eps .3 shells 1..5: 2e-01 9e-04 5e-06 4e-08 2e-10; anti 3e-15
+[PASS] B2 theorem (rank lemma, proof in report): at step pi/2, U(0) = 1 and U(R) = -1 with conical bands, and no continuous log exists; the principal log jumps at R by a q-independent amount and its hops fall off only as a power | jump at R 3.628 (q 1e-4), at Gamma 7e-05; shells 6e-01 8e-02 2e-02 7e-03 4e-03; shell ratios >= 0.24 (eps .3: <= 7e-03)
+[PASS] B3 theorem: H' = (i/2)[W_o,W_e] = (i/2)(U - U^+) commutes with the step-pi/2 tick, with eps and with the 24 turns; its bands are +-sqrt(1 - S^2), fourfold, zero only at Gamma and R; H'(K+R) = -H'(K) | max residual 4e-15
+[PASS] B4 cones: velocity at Gamma is the step-pi/2 Clifford triple alpha_a = C_a - W C_a W (speed 1/sqrt3 block), at R it is -alpha, so gamma5 flips; each eps-sector holds one L and one R Weyl at each node | speed 0.577350
+[PASS] B5 real space (6^3 torus): H' has no on-site term; each site s carries one term moving a mode from the 3 neighbours of s in its even cube to the 3 in its odd cube: straight 2-steps (|amp| 1/6) and face diagonals (1/3, two mediators), never inside one cube | hops {(0, 0, 2): 0.1667, (0, 1, 1): 0.3333}, intra-cube 0
+[PASS] B6 the flow exp(-i tau H') keeps eps exactly at every tau and has band max <= tau; its strict cone becomes a Lieb-Robinson cone (tau = .04: shells beyond the range of H' are nonzero, each <= 5 tau x the previous) | band max 0.0400; shells 1..4 1e-02 2e-05 1e-07 8e-11
+== C. cube layers with exact chirality
+[PASS] C1 theorem: the site-local charges covariant under the 12 even turns are span{1, eps} (orbits T+, T-)
+[PASS] C2 theorem: in a two-layer tick whose layers are both sublattice-odd no mode returns to its site (every bond lies in one cube only), so the zone average of tr U is 0 and some quasi-energy reaches |w| >= pi/2 | on-site amplitude 2e-16; CL-2 step pi/2 <cos w> = 8e-17
+[PASS] C3 theorem: an eps-conserving word of definite-parity layers obeys U(K+R) = sigma U(K), sigma = product of the even-tiling parities: the Gamma content recurs at R at quasi-energy 0 (sigma = +1) or pi (sigma = -1, so the band reaches pi/2) | 60 random words, residual 2e-15
+   with the cited Floquet Nielsen-Ninomiya per eps-sector (net chirality 0 at w = 0), C3 gives >= 4 Dirac tastes: 2 at 0 + 2 at pi (step-pi/2 type) or 4 at 0
+[PASS] C4 small-band eps-exact ticks (all big layers cancel): every K-linear term at Gamma, at every order, is M Q_a with Q_a = -i[C_a, G5] (O: real span {Q, iG5 Q}; T: adds eps Q, i eps G5 Q); sum_a Q_a has a 2-dim kernel in each eps-sector that every sampled term kills: zero modes along the body diagonals, no isotropic cone; alpha is orthogonal | ranks O 2, T 4; kernel per sector [2, 2]; kill 6e-10
+[PASS] C5 example: U = e^{i d G5}_o W_e e^{i d G5}_o W_e keeps eps exactly at every d with band max ~ 1.8 d, but its Gamma node has zero velocity (quadratic) | band max / d: 1.886, 1.886, 1.882; |dU/dK| at Gamma 1e-10
+== D. estimates (H' as the chiral generator)
+[PASS] D1 masses {X, +-alpha} = 0 that keep eps span 4 dims with none invariant under the 12 even turns, so no covariant chiral mass gaps the R doubler; the CL-2 mass (W_e + W_o) vanishes at R; bands fourfold (no helicity splitting), c = 0 | chiral masses 4, T-invariant 0
+[PASS] D2 the gamma5 term b G5 (a CPT-odd b_0 coefficient at Gamma) is eps-even and O-invariant; the inversion P flips eps and G5, while PW keeps eps (so SU(2)_even), maps H'(K) to -H'(-K) and G5 to +G5: PW (the CPT analogue) forbids b | a mirror-gapping rule must keep PW; lattice-scale b vs electron b-bounds << 1e-20 GeV
+   N_nu: 4 tastes per species -> 2 light tastes per family after mirror gapping -> N_nu = 6 vs 2.984 +- 0.008 (377 sigma) unless the R doubler is gapped (no covariant eps-even mass at R; needs N = 0 mod 3, chiral-smg C6)
+   W_R: SU(2)_odd is as exact as SU(2)_even, so CL-5 allows a massless W_R; M_WR > 5-6.4 TeV needs v_R >~ 11-14 TeV from a breaking no law supplies
+   V-A: SU(2)_even acts on light-L + mirror-R at Gamma (L doublet after mirror gapping); at R the copies swap roles
+   light cone: speed 1/sqrt3 block for every species built on H'; anisotropy is O(K^2): (E/M_lat)^2 ~ 6e-30 at 10 TeV; the photon must ride C = lambda/sqrt3 (symmetric-stress clause)
+   masses: every fermion mass is sublattice-odd, so it breaks eps; a mass needs an SU(2)_even x SU(2)_odd-charged field
+elapsed_seconds 0.6
+theorems: A1, B2 (rank lemma), B3, C1-C3, D1-D2; finite: A2, B1, B4-B6, C4, C5; estimates: A3, D text. Supplied: tick, W, filling, quantised links, rate model, unit map, covariance group, the continuous-time reading of B.
+
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

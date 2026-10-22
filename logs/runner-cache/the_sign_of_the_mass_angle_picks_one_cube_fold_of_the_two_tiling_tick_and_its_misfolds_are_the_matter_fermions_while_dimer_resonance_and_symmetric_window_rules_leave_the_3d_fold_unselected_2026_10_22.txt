@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/the_sign_of_the_mass_angle_picks_one_cube_fold_of_the_two_tiling_tick_and_its_misfolds_are_the_matter_fermions_while_dimer_resonance_and_symmetric_window_rules_leave_the_3d_fold_unselected_2026_10_22.py
+runner_sha256: f275a5cfe0e940e496571736c0956cee84e518283c05aad7fbbd6272c143ed5e
+input_fingerprint_sha256: 607807ba9088a4064d50a78475a3bf0f69aa57909b80e3c7e8946a58ccae614e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 6.47
+status: ok
+----- stdout -----
+== A. the landscape
+[PASS] A1 [T] 2D control: pair coverings of the 4x4 and 6x6 tori (exact enumeration); neighbourhood-roles' 121/28561 omit wrapping coverings (a lower bound; its conclusion stands)  4x4 272, 6x6 90176; ln(count)/site 0.350, 0.317 (Catalan/pi 0.2916)
+[PASS] A2 [T] 3D: a 2x2x2 cube has 9 internal pair coverings, so even-cube pairings alone give 9^(N/8) zero-phase folds of any partner-in-star rule  cube coverings 9; bound 0.2747 nats/site
+== B. quantum dimer resonance H = -t sum_p flip_p + v sum_p flippable_p (t = 1)
+[PASS] B1 [T] v/t -> -inf: N_f <= N (a pair is in <= 4 flippable plaquettes); equality forces the columnar states: 3 axes x 2 offsets, each inside ONE CL-1 tiling, breaking rotations to one axis  max-N_f coverings 4x4x4 6 (N_f = 64), 6x6 4; each in one tiling and one axis: True
+[PASS] B2 [T+D] v/t > 1: ground states = coverings with no flippable plaquette; 2D 4(2^(L/2)-1); 3D far more: no unique fold  2D 4x4,6x6,8x8: [12, 28, 60]; 3D 4x4x4: >= 20000 (cap)
+[PASS] B3 [T] v/t = 1 (RK): equal-weight sum per sector; the (1,1,1) translation swaps the tilings and maps sector W to -W, so the zero-flux sector holds exactly half the pairs per tiling: no fold (3D: Coulomb liquid, cited)  2D 6x6 all coverings: fraction of pairs inside even plaquettes 0.500000000000
+[PASS] B4 [T] one cube: 9 coverings (3 uniform with 4 flippable faces, 6 mixed with 2), unique gapped resonating ground state e_c = 3v - sqrt(v^2 + 8); at v = 0 it is -2 sqrt2  e_c(-1,0,0.5,1) = -6.0000, -2.8284, -1.3723, -0.0000
+[PASS] B5 [T] product crystals per site: cube crystal e_c/8 + v/6 beats columnar (v) and staggered (0) for -0.802 < v/t < 0.671  window (-0.802, 0.671); at v = 0 cube -0.3536 vs columnar 0
+[PASS] B6 [D] 2D control: the exact 6x6 ground energy lies below every product crystal by ~0.06 per site, so B5 is a candidate ordering, not a selection theorem  E0/N v=0: -0.3150 (plaquette -0.2500); v=-1: -0.6867 (plaq -0.6250, col -0.5000)
+   (t = 4.0 s)
+== C. the CL-1 cube tick as the selector
+[PASS] C1 [T] cube hop R (edge hops with the phase of the spin-3/2 overlap along the body diagonals): R^2 = 1, every face phase -1, eigenvalues +-1 four times each; the copy sign s commutes with R and splits each into 2 + 2  |R^2-1| 2e-15; face phases [-1.0, -1.0, -1.0, -1.0, -1.0, -1.0]
+[PASS] C2 [T+D] the cube's four-unit vacuum (filled R = -1 level) is 91% in the span of its 9 pair coverings (bond orbitals); the hop leaks out of the span: the cube tick is NOT a dimer-plaquette flip  span rank 9; |P_dimer F|^2 0.9120; best single covering 0.3869; leak 1.142
+[PASS] C3 [T+D] two-tiling tick on the 8^3 torus, even step eps - mu/2, odd step eps + mu/2: the quasi-energy gap is exactly |mu| (cos w = cos a cos b + sin a sin b S, S in [-1, 1]), closing only at mu = 0: every mu < 0 vacuum connects to mu = -2 eps, every mu > 0 to +2 eps  gap/|mu| 1.000000, 1.000000, 1.000000, 1.000000, 1.000000, 1.000000, 1.000000, 1.000000, 1.000000, 1.000000; gap at 0 1.1e-16
+[PASS] C4 [T+D] the two fold limits are the cube folds: at mu = -2 eps every even cube holds exactly 4 units (n_A + n_A' definite for a face A and its mirror face A', n_A not), at mu = +2 eps every odd cube does; every site bound, none free; mu -> -mu swaps tilings. The SIGN of the mass angle picks the fold; mu = 0 is unfolded  Var N_even/Var N_odd -1:-0.000/2.000, -0.25:0.524/1.608, +0:1.092/1.096, +0.25:1.608/0.524, +1:2.000/-0.000; face var 0.333, face+mirror var 9e-16
+[PASS] C5 [D+E] fold strength at small mass: the tiling imbalance of cube-number variance grows from zero about linearly in |mu| (slope ~9 on 8^3); at physical mass angles the vacuum is unfolded at the cell scale  imbalance at |mu| = 0.03: 0.3043, at 0.06: 0.5186; electron estimate ~4e-22
+[PASS] C6 [D] with the copy mass (M = 0.2 on even cubes) and mu = 0 the light copy stays gapless but the vacuum is no longer tiling-balanced: the copy mass is a second fold selector  gap 2.2e-16; Var N_even 1.504, Var N_odd 0.664
+[PASS] C7 [T] point misfolds: a cube holding 5 (or 3) units is an odd-parity excitation of the fold, so it is a FERMION (the modes anticommute), in a 4-state level split 2 + 2 by the copy sign (CL-1's doublet x copy), costing |mu|: the misfold is CL-1's matter particle  level dim 4, copy signs [-1.0, -1.0, 1.0, 1.0], cost 0.600 = 2 eps
+[PASS] C8 [D] wall misfolds: a wall between the even and odd folds (mass-sign wall, bulk gap 0.3) carries gapless 2+1 fermions (count grows with area): extended, not point matter  16xLxL, two walls: zero modes L=4 8, L=6 8; in-gap states 20 -> 40 (area 16 -> 36)
+   (t = 5.6 s)
+== D. symmetric frustration-free window rules (tile level: a window is satisfied when it holds a whole tile)
+[PASS] D1 [T] the Majumdar-Ghosh-type rule 'every 3^d window holds a whole 2^d tile' is met by every tiling incl. sliding ones: 2^O(L^(d-1)) folds, zero entropy/site, not unique  tilings passing/total 8x8 60/60, 12x12 252/252, 4^3 744/744 (aligned 8)
+[PASS] D2 [T+D] an anti-slide window (tiles at (0,0),(0,1),(1,2),(1,3), all 8 square symmetries) leaves only the 4 aligned crystals in 2D; it spans 2x5 sites (not cube-local); 3D untested; qubit kernel assumed  8x8 pass 4 (aligned 4), 12x12 pass 4
+== E. the fewest-change transport as a selector
+[PASS] E1 [T+D] CL-2 moves only the actual configuration and never conditions the odds, so it cannot pick a fold; half-tick odds are stationary only at the two fold limits, which tie  odds change across the even half-tick: -1: 7.4e-16, -0.5: 4.8e-02, +0: 7.7e-02, +0.5: 4.8e-02, +1: 0.0e+00
+supplied: eps = 0.3, mu scan, M = 0.2, sizes 4^3/8^3/16xLxL/6x6, product ansatze, windows, cap 20000, seed 20261022
+runtime 6.0 s
+peak memory 184 MB
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

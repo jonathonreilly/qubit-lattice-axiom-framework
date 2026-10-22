@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/hinge_response_law_keeps_w_at_minus_one_far_below_the_desi_departure_2026_10_21.py
+runner_sha256: 325abaaa4e397494251a662fd5901eb616c4bea83d912b246b141bf2bfeff6c5
+input_fingerprint_sha256: 8f9ee527dcbfe4ec594bcc015c14c2356ce20b628fe93a403fa1c069714d9e35
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 1.48
+status: ok
+----- stdout -----
+== A. hinge Friedmann law and the inferred dark-energy w
+[PASS] THEOREM (series): A(u) = u^2 + 2u^4 + O(u^6), so H^2 = X - X^2 l^2/2 + O(l^4), X = (8 pi G/3) rho  A = 11*u**6/3 + 2*u**4 + u**2
+[PASS] hinge law, H0 a = 5.93e-61 (a = sqrt(8 pi) l_P): w + 1 = -(H0 l)^2 (3 Om - 1)/(3 OL) with edges growing (l ~ a), -(H0 l)^2 Om/OL at fixed edge; exact A(u) at 420 digits matches  l = a: 1.19e-122; l = a fixed: -1.58e-121; l = 2a: 4.76e-122; l = 2a fixed: -6.32e-121
+== B. CPL projection (BAO + CMB theta*, omega_m and omega_b fixed by the CMB; fit h, w0, wa)
+[PASS] engine self-test: a CPL universe (w0, wa) = (-0.75, -0.86) is recovered by the fit  fit w0 -0.7500, wa -0.8600; forecast sigma(w0, wa) = 0.123, 0.310
+[PASS] THEOREM: a uniform rescaling H -> lam H at all z (a constant G_cosmo/G_N, e.g. a constant induced kinetic term) leaves every D/r_d and theta* unchanged: it projects onto (w0, wa) = (-1, 0) exactly  max |d obs/obs| = 2e-16 at lam = 1.07
+== C. rule effects as perturbations f(z) = dH^2/H^2, projected per unit amplitude, times their size today
+[PASS] split step response: matter losing a fraction delta at a split epoch z_s gives |dw0|, |dwa| <= C delta  C = 7.04; z_s 0.3: (+0.60, -0.52), z_s 0.6: (-0.71, +2.66), z_s 1.0: (-2.98, +7.04), z_s 1.5: (-2.31, +3.18), z_s 2.2: (-0.95, -1.92)
+[PASS] log-periodic sawtooth in H^2 (period ln 2 in ln a: one split cycle), amplitude s, worst phase: |dw| <= C s  C = 3.87
+   DESI-like (w0, wa) = (-0.75, -0.86) needs |dH^2/H^2| up to 0.037 at z < 2.5; rule effects (size f, |dw| <= C f):
+   hinge law (THEOREM, part A; |w+1| directly)                                          f 6.3e-121  |dw| 6.3e-121
+   triggered-split junction: ln H steps (3/4)u^2 (split-junction, THEOREM there)        f 5.3e-121  |dw| 3.7e-120
+   step roll: Lambda never sees eps (rule text); matter via (K l)^2, CMB                f  1.3e-66  |dw|  5.2e-66
+   split energy change of excitations, radiation 0.04 K^2 (split-junction)              f  1.1e-66  |dw|  7.5e-66
+   split energy change of massive matter, ~0.05 mu^2 (ESTIMATE), protons                f  9.2e-39  |dw|  6.5e-38
+     same, heaviest species the vacuum-stability cap allows (mu <= 0.075)               f  8.7e-05  |dw|  6.1e-04
+   sea heating at splits: CL-1 nearest unitary maps sea onto sea (sea-split C3)         f  0.0e+00  |dw|  0.0e+00
+   adiabatic reference: non-adiabatic creation ~ (H l)^2 (ESTIMATE)                     f 1.4e-120  |dw| 5.4e-120
+   instantaneous reference: nu < 1e-15 (GW170817) x eps sawtooth 0.14 x 1.6e-3 (ESTIMATE) f  2.2e-19  |dw|  8.7e-19
+[PASS] no rule effect reaches the DESI level: largest known-content |dw| vs needed ~0.1; the cap-allowed ceiling also misses  known content 9e-19; heaviest-allowed ceiling 6e-04; needed f 0.04
+== D. the DESI direction
+   DR2 BAO+CMB     (w0, wa) = (-0.420, -1.75): w = -1 at z = 0.50, wa/(1+w0) = -3.02
+   DR2 +Pantheon+  (w0, wa) = (-0.838, -0.62): w = -1 at z = 0.35, wa/(1+w0) = -3.83
+   DR2 +Union3     (w0, wa) = (-0.667, -1.09): w = -1 at z = 0.44, wa/(1+w0) = -3.27
+   DR2 +DESY5      (w0, wa) = (-0.752, -0.86): w = -1 at z = 0.41, wa/(1+w0) = -3.47
+   THEOREM (continuity): with Lambda constant and matter conserved, rho_DE,inferred is constant; a phantom crossing needs energy exchange with a varying vacuum term or a non-standard matter/G history
+   decrement q = 0.20 rho_L0 per split: CPL fit (w0, wa) = (-0.902, -0.037), wa/(1+w0) = -0.37
+   decrement q = 0.35 rho_L0 per split: CPL fit (w0, wa) = (-0.830, -0.092), wa/(1+w0) = -0.54
+   decrement q = 0.50 rho_L0 per split: CPL fit (w0, wa) = (-0.761, -0.157), wa/(1+w0) = -0.66
+[PASS] SPECULATIVE (not adopted): a constant vacuum decrement per split is thawing (w >= -1, wa < 0) but lies off the DESI degeneracy line wa/(1+w0) ~ -3.4; it needs q ~ 0.4 rho_L0 per split by hand, and CL-3 keeps Lambda constant  q = 0.5: (-0.761, -0.157)
+supplied: unit map a = sqrt(8 pi) l_P, edge in [a, 2a], H0 67.7, Om 0.31, omega_m/b/r, DESI-like 1% errors, DR2 central values
+  (quoted), massive split coefficient 0.05 mu^2 (estimate), induced-kinetic GW bound 1e-15, eps range 0.04 -> 0.01.
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

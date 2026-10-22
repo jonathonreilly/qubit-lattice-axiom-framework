@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/first_slab_fixes_lambda_only_at_the_planck_scale_and_a_record_count_multiplier_gives_a_wrong_sign_or_a_drifting_lambda_2026_10_22.py
+runner_sha256: 83e18b0870d6d7aed4ad85bca069535bf381e724ae9e85ba88f754fc9f1b7bd3
+input_fingerprint_sha256: f5a9684bfbf803eec164b1ad0e8104e4183f951146475467d2d1796291502951
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.88
+status: ok
+----- stdout -----
+== M. measured: Lambda L^2 = 7.151e-121, H0 L = 5.900e-61, w = -1 (constant-w fits -1.03 +- 0.03)
+== A. conserved quantities of CL-1..CL-3 and their equation of state
+[PASS] THEOREM: a conserved total (fermion number, Gauss charges, total dark constant at fixed energy per unit) dilutes as a^-3 (w = 0); the tick's conserved quasi-energy under lapse a^n has w = n/3 (fixed lapse n = 1: w = 1/3) | w_total = 0, w_D = n/3
+[PASS] THEOREM: only a quantity copied per cell at splits and carried per proper 4-volume is Lambda-like: the per-4-volume phase over a split is conserved (8 children x 2 ticks x 2^-4 = 1); a per-cell energy copied at splits is w = -1 only on average, with a factor-8 sawtooth per cycle | cascade 10 cycles: w_fit total -0.000, per-cell -0.990 (ripple x8.0), per-4-volume -1.000
+  ledger: fermion number, Gauss charges, edge-pair totals (n1+n2 = 1 per pair, no phase) -> totals or labels; total dark constant -> w = 1/3; the only Lambda-like carrier is CL-3's constant itself, fixed in each cube by the mean-zero dark constant <K> = Lambda <v> (edge terms not subtracted)
+== B. first-slab rule: Lambda = <K>/<v> of the one-cube start (rebuilt lambda-quantum construction)
+[PASS] FINITE DIAGNOSTIC (closed top): Lambda_min L^2 > 0 for every s and Delta, Planck-sized; the mean form admits every Lambda >= Lambda_min, so the measured value lies BELOW the allowed set | s=23,D=0: 8.346e-02; s=23,D=1: 1.300e-03; s=50,D=0: 9.142e-02; s=50,D=1: 1.424e-03; s=113,D=0: 9.562e-02; s=113,D=1: 1.489e-03; excess >= 1.8e+117
+[PASS] FINITE DIAGNOSTIC (transparent top): Lambda_min falls as (top length)^-6, so the start fixes the sign only; the measured value needs a top of ~1e20 L, a length no law contains | tops 2,8,32 L: 1.66e-02, 4.04e-06, 9.87e-10; slope -6.00; top needed 1.1e+20 L = 8.5e-15 m
+[PASS] ESTIMATE: a matter-filled first cube, Lambda <v> = <K> - <E_m>, reaches the measured value only by cancelling K and E_m to 1 part in ~1e119 (initial-data tuning, FITTED) | required <E_m>/<K> = 1 - 8.6e-120
+[PASS] THEOREM (split-stable): every newborn cube is born at the flat length on the same register, so its mean-zero constraint gives the same Lambda_min: the rule kicks nothing at splits and predicts w = -1, wa = 0 exactly | prediction: Lambda > 0 (correct sign), w0 = -1, wa = 0 (consistent with Planck; DESI DR2 hint (-0.75, -0.86) at 2.8-4.2 sigma)
+== C. fixed 4-volume per record: Lambda = multiplier of the record count
+[PASS] THEOREM (CL-2): records once per site per half-tick and 1 -> 8 splits make the record count exact (Fano 0); a Sorkin fluctuation dV4 ~ sqrt(N) needs a Poisson count the laws do not have (seeded Poisson control Fano ~1) | one-cube start, 3 splits x 5 ticks: 46800 records, variance 0; control Fano 0.999
+[PASS] THEOREM: with V4 = N v_r exactly (v_r = sig/2 L^4 per record), the Lambda phase is (Lambda L^2) v_r N, N an integer: Lambda L^2 is defined only mod 2pi/v_r, a Planck-sized circle; the conjugate count being sharp leaves the point on the circle free | period 4pi/sig = 581 to 2902 (eps0 0.0375 .. 0.0075); measured value is 1.2e-123 of a turn
+[PASS] THEOREM (global count): a fixed TOTAL record count of the history needs a finite total 4-volume; for Lambda > 0 the future 4-volume of the one-cube cascade diverges (splits never stop while H > 0), so a finite total forces Lambda <= 0 (recollapse): wrong sign | int_0^oo e^(3Ht) dt = oo
+[PASS] ESTIMATE (to-date count): Lambda L^2 = N^-q with N the records to date (past cone, or Hubble volume x age) misses by 1e-2..1e-1 (q = 1/2) or ~1e-122 (q = 1) and drifts with wa > 0, opposite to DESI; a horizon-tied N is not conserved, so it is no first-slab charge | past cone q=0.5: size 6.5e-02..1.4e-01 x meas, w0 -0.34, wa +0.51; past cone q=1.0: size 3.0e-123..1.5e-122 x meas, w0 +0.32, wa +1.01; Hubble vol x t q=0.5: size 1.1e-02..2.5e-02 x meas, w0 -0.58, wa +0.81; Hubble vol x t q=1.0: size 9.2e-125..4.6e-124 x meas, w0 -0.17, wa +1.63
+  N today (records): past cone 9.4e+241..4.7e+242; Hubble volume x age 3.0e+243..1.5e+244
+== D. other: first-slab integer charge Q per 4-volume to date
+[PASS] ESTIMATE: Lambda L^2 = Q / (V4/L^4) with Q a first-slab integer (fermion number 4 of the half-filled cube) is ~4e-240 (1e-119 of the measured value) and tracks as V4^-1 (w0 ~ +0.3): FAIL | 3.9e-240 (5.5e-120 x meas)
+== E. gate (1 no measured number chosen, 2 no observed structure, 3 untargeted prediction, 4 axiom bent)
+  B first-slab (closed top): 1 yes 2 yes 3 Lambda>0, w=-1, wa=0 AND size >= 1.3e-3: size FALSIFIED by 1e117-1e119; 4 none beyond CL-1 window
+  B first-slab (open top): 1 yes 2 yes 3 sign + w only; size free: does not fix Lambda
+  C global record total: 1 yes 2 yes 3 Lambda <= 0: FALSIFIED; 4 Record (records each half-tick, CL-2's departure)
+  C to-date N^-1/2: 1 yes (C=1) 2 yes 3 size 1e-2..1e-1 and wa>0: FALSIFIED; also needs Poisson counts CL-2 forbids
+  C mod-2pi circle: 1 yes 2 yes 3 Planck-sized period only: does not fix Lambda
+[PASS] GATE RESULT: no rule here fixes Lambda's size without a fitted number; the first-slab rule passes items 1, 2, 4 and predicts the sign and w = -1 correctly, but its size is Planckian or free | reported as a FAILURE of the size goal, not adopted
+supplied: LambdaCDM numbers, eps0 range, window [L/8, 2^(1+Delta) L] and hop kinetic (lambda-quantum), v_r = sig/2, Q = 4, DESI central values
+runtime 0.2 s
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

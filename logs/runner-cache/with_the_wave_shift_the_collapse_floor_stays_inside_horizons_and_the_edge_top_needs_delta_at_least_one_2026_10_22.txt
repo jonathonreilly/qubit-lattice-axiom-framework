@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/with_the_wave_shift_the_collapse_floor_stays_inside_horizons_and_the_edge_top_needs_delta_at_least_one_2026_10_22.py
+runner_sha256: 3f07e7577d65f1c4c802b65b7aa3b47b3a1e93dd956e369cafb0f3efd2807e42
+input_fingerprint_sha256: 77836f813752501529b286e558e448960edbb5c88ca3a364480b71a1a4d065f0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 31.81
+status: ok
+----- stdout -----
+== A. linear theorems (flat background, tied lapse n = tr h/6, Newtonian potential Phi = Psi)
+[PASS] A1 THEOREM: in the scalar sector the wave law is beta = grad phi, phi_tt = mu Lap phi + 4 mu dPhi/dt: the infalling momentum density sources the shift through the rate of the Newtonian potential (outward for infall, the sign of the PG shift) | from d_t^2 beta = mu(Lap beta - 16 pi j), Lap psi = -rho_t, Lap Phi = 4 pi rho
+[PASS] A2 THEOREM: mean ln(edge) under tied lapse: zero shift and wave shift agree at quasi-static order (both -> Phi: edges follow the potential, not the dust); the wave shift changes the departure from -Psi by the factor (mu k^2 + (2mu-1) w^2)/(mu k^2 - w^2) = 1 + O(v^2/c^2) | quasi-static limits Phi, Phi
+[PASS] A3 THEOREM: the PG grid (flat slices, N = 1, beta^r = sqrt(2M/r)) is NOT a stationary state of the wave law: on a flat slice the constraint part vanishes for a radial shift and the residual is Lap beta = -(9/4) sqrt(2M) r^-5/2; the only stationary radial vacuum shifts are a r + Q/r^2, so the wave shift cannot settle onto the minimal-strain grid | residual -9*sqrt(2)*sqrt(M)/(4*r**(5/2))
+[PASS] A4 THEOREM: the tied lapse gives l_min <= N on every cube, so a stationary zero-shift exterior (static slicing, N = sqrt(1 - 2M/R), floor-horizon B2) puts an edge at the floor 2^(-3-m) at R >= 2M/(1 - 4^(-3-m)), OUTSIDE the horizon | far phase m = 0, 0.5, 1: floor reached by R = 2.032, 2.0157, 2.0078 M
+== B. nonlinear spherical collapse from rest (smooth dust ball, areal R0; regularised ADM, tied lapse; wave shift
+   d_t^2 beta^r = mu[Lap_flat beta^r - 16 pi S^r] (on-shell form), mu = 3/4; edges in far-edge units; AH = trapped surface)
+   z10  R0  5 r_s zero h 0.10: AH at t 38.5 (R_AH 1.95 M), run ends t 42.0 | outside AH: l_t >= 0.371 (R 2.06), l_r <= 1.968 (R 2.28) | anywhere: l in [0.060, 1.968] | beta(2M) 0.00, max beta 0.00, r^2 beta 0.0..0.0 | floor 1/8: t 42.0 at R 0.04-0.27 M, outside AH False
+   w10  R0  5 r_s wave h 0.10: AH at t 37.5 (R_AH 1.92 M), run ends t 39.0 | outside AH: l_t >= 0.509 (R 2.06), l_r <= 1.326 (R 3.93) | anywhere: l in [0.419, 1.326] | beta(2M) 0.23, max beta 1.21, r^2 beta 3.6..5.0 | floor 1/8: none
+   w10f R0  5 r_s wave h 0.05: AH at t 37.5 (R_AH 1.93 M), run ends t 39.0 | outside AH: l_t >= 0.503 (R 2.00), l_r <= 1.322 (R 3.95) | anywhere: l in [0.348, 1.322] | beta(2M) 0.22, max beta 0.98, r^2 beta 3.6..5.0 | floor 1/8: none
+   z20  R0 10 r_s zero h 0.10: AH at t 108.5 (R_AH 1.82 M), run ends t 111.0 | outside AH: l_t >= 0.381 (R 2.00), l_r <= 1.646 (R 2.70) | anywhere: l in [0.171, 1.646] | beta(2M) 0.00, max beta 0.00, r^2 beta 0.0..0.0 | floor 1/8: none
+   w20  R0 10 r_s wave h 0.10: AH at t 107.0 (R_AH 1.81 M), run ends t 108.0 | outside AH: l_t >= 0.521 (R 2.00), l_r <= 1.222 (R 5.09) | anywhere: l in [0.381, 1.222] | beta(2M) 0.25, max beta 0.75, r^2 beta 4.1..4.4 | floor 1/8: none
+[PASS] B1 DIAGNOSTIC: the code is consistent: momentum constraint residual outside the AH <= 3e-3 and h = 0.1 vs 0.05 agree on the exterior edge extremes to 0.01 | l_t 0.509 vs 0.503, l_r 1.326 vs 1.322
+[PASS] B2 DIAGNOSTIC: through horizon formation and up to the crunch of the core (the tied lapse, Bona-Masso f = 1/3, is not singularity-avoiding), no edge outside the trapped region comes near the floor (>= 0.37 vs 1/8 .. 1/16) for either shift; the first floor is in the crushing core inside the horizon (zero shift), or not reached before the crunch (wave shift) | min exterior l_t: wave 0.51/0.52, zero 0.37/0.38 (R0 = 5/10 r_s)
+[PASS] B3 DIAGNOSTIC: the wave shift points outward (PG sign) and halves the slice stretching of zero shift near the horizon, but reaches only about a quarter of the PG shift at R = 2M; outside the matter it is the stationary Q/r^2 form | beta(2M) 0.25 / PG ~0.95; Q = r^2 beta 4.1-4.4 M^2
+== C. estimates
+[PASS] C1 ESTIMATE (eps0 0.0075): one-cube-per-tick cap b = beta sin(eps0)/sqrt3 is not reached anywhere up to the crunch | max b 0.0052
+[PASS] C1 ESTIMATE (eps0 0.0375): one-cube-per-tick cap b = beta sin(eps0)/sqrt3 is not reached anywhere up to the crunch | max b 0.0261
+[PASS] C2 ESTIMATE: the binding wall outside the horizon is the TOP, not the floor: radial edges stretch while tangential ones shrink (no glued split), and with far edges at 2^m L, m in [0, 1), the top 2^(1+Delta-m) is passed for a fraction log2(l_r) - Delta of phases | w10 l_r 1.33: Delta=0 41%, Delta=1 0%; w20 l_r 1.22: Delta=0 29%, Delta=1 0%; z10 l_r 1.97: Delta=0 98%, Delta=1 0%; z20 l_r 1.65: Delta=0 72%, Delta=1 0%
+[PASS] C3 ESTIMATE: quasi-static Newtonian shift charge Q = (4/5) M R_b |dR_b/dt| ~ 1.6 M^2 at R_b = 2M vs measured r^2 beta ~4 M^2 (labels r > R, strong field): order of magnitude only | ratio 2.7
+supplied: GR (ADM) as CL-3's continuum limit, smooth OS-like dust ball (tanh edge 6%), M = 1, on-shell (matter) form of the wave source (the geometric form is origin-unstable in this code), flat-label vector Laplacian as nonlinear completion, mu = 3/4.
+not followed: the exterior after the core crunch (late-time slice stretching), register-level odds, non-spherical collapse.
+elapsed 31.2 s
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/link_register_photon_gives_the_light_copy_schwingers_one_loop_magnetic_moment_with_an_exact_dressed_hop_ward_identity_2026_10_22.py
+runner_sha256: 905095022a0ec8f494ed5687ceb01990b416d1b3d5d5b77b8c69fb10220b1a87
+input_fingerprint_sha256: c4a3b04ffa82c57fdaf91deb1855c464841d3cf72bd12d894a7a886967d6dc96
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 59.22
+status: ok
+----- stdout -----
+== A. fermion rules: CL-1 tick -> Hamiltonian limit, light copy = Dirac (exact/finite)
+[PASS] A1 tick generator (i/eta) log U(K) -> H(K) = even hop (e0 - mu/2) W - M PH W, odd hop -(e0 + mu/2) W, error O(eta) | 5.7e-04, 2.8e-04
+[PASS] A2 K = 0: light copy +-m (x2), heavy copy +-(m + M) (x2); zone corner: +-|2 e0 - M|, +-2 e0; [s, W] = 0 | corner 1.1321, 1.7321
+[PASS] A3 light block at small p is the Dirac Hamiltonian c alpha.p + beta m: {v_i, v_j} = 2 c^2 delta_ij, {v_i, beta} = 0, c = 1 | Clifford defect 4.4e-11
+[PASS] A4 tree level: the dressed-hop vertex gives g = 2 against the kinetic cone (c_kin^2 = 1 - m^2/3 + ...), copy mass on | g/2 - 1 = 8e-07, 8e-07, 9e-07; c_kin^2 0.9467, 0.9867, 0.9967
+== B. photon rules: Gaussian site-bond registers, skew-loop plaquettes (flat cell)
+[PASS] B1 6 skew loops per bcc cell; plaquettes gauge invariant (K g = 0 at random k) | |K g| = 5e-16
+[PASS] B2 small k: two transverse modes and the gauge mode on omega = |k| (c_gamma = c_fermion = 1), the A4 mode too (w = 4/3), error O(k^2); fourth (copy-sign) mode gapped | max |omega/k - 1| 2.4e-06 at k = .005; A4 9.7e-06; extra omega^2 >= 12.00
+[PASS] B3 medium: electric constant eps_c = 4/3 per cell of volume 4 and every small-k mode has Cartesian residue 1/eps_c: alpha = e^2 V_c/(4 pi eps_c c) = 3 e^2/(4 pi) | eps_c 1.333333; residues x eps_c 1.000000, 1.000000, 1.000000
+== C. Ward identities
+[PASS] C1 THEOREM (exact, all orders in the site phase; checked at random finite k, k0): pure-gauge register mode x vertex = i(Lambda G^-1(K) - G^-1(K+k) Lambda) | 7e-16
+[PASS] C2 one-loop Ward identity at fixed loop momentum: zero-transfer vertex + seagulls + tadpole = d Sigma/dA (vertex alone fails) | rel. miss 1e-10; vertex alone 1.03
+== D. engine validation
+[PASS] D1 residue formulas for the two- and one-propagator frequency integrals = quadrature | 4e-16
+[PASS] D2 continuum Dirac + Feynman-Stueckelberg photon (same engine, cutoff region |k_i| + |k_j| < pi): F2/(alpha/2pi) = int 2z(1-z)^2/((1-z)^2 + z r^2), r = lam/m | r 1.0: 0.20955 vs 0.20920; r 0.25: 0.57190 vs 0.57193  (Schwinger: r -> 0 gives 1)
+   [2 s]
+== E. lattice one-loop F2/(alpha/2pi), photon mass lam = r m, copy mass M = .6, e0 = sqrt3/2 (c = 1)
+   m = .05 parts: vertex +0.43872, seagull -0.38926, tadpole +0.00000, legs -0.00052, ct -0.00000;  mass counterterm dmu = -0.4000 e^2 = -1.676 alpha
+[PASS] E1 external-leg spinor corrections + mass-angle counterterm cancel to < 2e-3 (tree g = 2 holds across the CL-1 family); structure fits the tree spin matrix | legs + ct = -5.2e-04; fit residual 2e-09
+   m a       vertex    seagull    total     total - F(1)   (F(1) = 0.20920, continuum, r = 1)
+   0.2       +0.66521  -0.83745  -0.17224  -0.38144
+   0.1       +0.55181  -0.60187  -0.05006  -0.25926
+   0.05      +0.43872  -0.38926  +0.04946  -0.15974
+   0.025     +0.35226  -0.23718  +0.11508  -0.09412
+   0.0125    +0.29476  -0.13932  +0.15544  -0.05376
+   0.00625   +0.25869  -0.07986  +0.17883  -0.03037
+[PASS] E2 continuum limit: the lattice deviation shrinks monotonically, about halving with m (m ln m), and the fits F + m(a ln m + b) [+ c m^2] extrapolate to the continuum F(1) within 3% | last ratio 0.565; extrapolations 0.2079 .. 0.2137 vs 0.2092
+[PASS] E3 the lattice deviation is an ultraviolet term: at r = 1/4 it is within 10% of its r = 1 value (so with lam -> 0, a -> (alpha/2pi)(1 + dev)) | -0.1724 vs -0.1597, -0.0999 vs -0.0941
+[PASS] E4 copy mass M = .3, .6, 1.0 at m = .05: the deviation is not set by m/M (changes < 15%, non-monotonic): copies enter only through the lattice term | -0.1490, -0.1469 vs -0.1597
+[PASS] E5 zone-grid convergence at m = .05 (18x5x5 -> 24x7x7 per pyramid) | 0.04946 -> 0.04886
+== F. ESTIMATES (measured numbers supplied; not theorems)
+   alpha/2pi = 1.161409734e-03 (Schwinger term; measured a_e = 1.15965218059e-03 +- 1.3e-13, the rest is higher-order QED)
+   lattice term at site spacing sqrt(8 pi) l_P: m a = 2.10e-22; dev ~ m a (0.93 ln(m a) -0.42) -> delta a ~ -1.1e-23 (9e-11 x precision)
+   second LIGHT copy (M = 0): one-loop vacuum polarisation inside the photon, i.e. TWO loops in a_e: (alpha/pi)^2 (119/36 - pi^2/3) = 8.464e-08 = 6.5e+05 x precision
+   heavy copy / zone-corner partners (mass ~ .6/a): one loop inside the lattice term above; two-loop VP (alpha/pi)^2 (m a/M)^2/45 = 1e-50
+[PASS] F1 arithmetic: the lattice term and the heavy partners are below the a_e precision by > 1e8; a light second copy is excluded (> 1e5 x)
+theorem-grade: C1 (exact Ward identity of the dressed hop); finite/numerical: A, B, C2, D, E; estimates: F.
+supplied: Hamiltonian limit of the tick, flat cell, Gaussian registers, gauge fixing w = 4/3, Stueckelberg photon mass,
+  straight-bond external field, one loop, alpha = 3 e^2/4pi from B3; not included: finite step (Floquet), the cone (step) counterterm.
+elapsed 58 s
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

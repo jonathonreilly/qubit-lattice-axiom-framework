@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/the_bare_axis_hop_sea_folds_slowly_by_a_staggered_density_wave_but_the_fold_is_not_the_mass_angle_the_dirac_sea_needs_the_face_phases_and_the_split_cannot_pass_the_fold_2026_10_22.py
+runner_sha256: 1619d7db59bd5b4db269da896765d8a09b2819a3ec7916d9d7f7f9c36e1e7d5c
+input_fingerprint_sha256: b4cf1ebf7f5330b800020107ef47b52ca1c1136a173bdc2f833e537930758fcb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.49
+status: ok
+----- stdout -----
+== A. (a) the bare axis hop in the two-tiling tick: nested surface; Dirac points need the face phases
+[PASS] A1 [T] every nearest-neighbour bond lies in exactly one cube of exactly one tiling (bond along i at x: even tiling iff x_i even), so the two-tiling tick of the bare axis hop is a split of the 6-NN hop; the odd step's opposite sign is the gauge prod_i f(x_i), f = (1,1,-1,-1)  4^3: 192 bonds, 96 even, all in one cube: True; gauge residual 0
+[PASS] A2 [T] cube level: R^2 = 1 holds for exactly the 128 sign fields of the all-minus-face class (Cauchy-Schwarz, main flux-sector note); the bare axis hop has faces +1 and spectrum +-sqrt3, +-1/sqrt3 (not a reflection); CL-1's spin-3/2-overlap tick has the same quasi-energies as the Kogut-Susskind pi-flux tick  R^2=3/3 fields 128, all-minus 128; bare spectrum [-1.732051, -0.57735, 0.57735, 1.732051]; |spec CL-1 - KS| 1e-15
+[PASS] A3 [D] box count of the gapless set (|w| < 0.6/n, n = 12 -> 24; 4 = surface, 1 = points), eps = 0.3: the bare tick keeps a nested SURFACE, also at mu = 0.1; CL-1's tick has Dirac POINTS  bare: 436->1972; bare mu=0.1: 462->1938; CL-1: 1->1
+[PASS] A4 [T+D] answer to (a): folding the 6-NN sea into 2^3 cubes with even/odd steps does NOT make the Dirac sea; the face phase -1 (pi flux) does. Half-filled energy per site (hop 1, eps -> 0): zero flux vs pi flux (Lieb's flux phase; the cube's unique minimiser is the all-minus class)  E(0 flux) -1.00244, E(pi flux) -1.19380, gain 0.1914
+== B. (b) the nested sea's density wave: a fold at any repulsion, a Dirac mass, but not the mass angle
+[PASS] B1 [T+D] the (pi,pi,pi) staggered phase m gaps the bare tick's nested surface fully and is a Dirac mass of CL-1's tick; with mu the gaps add in QUADRATURE: m and mu are two anticommuting masses (a chiral pair), not one  bare+m 0.0868, CL-1+m 0.0955, CL-1+mu 0.1000, CL-1+mu+m 0.1383; sqrt(mu^2+m^2) 0.1383
+[PASS] B2 [T+D] no mixing (24^3 sites): the density-wave vacuum has Var N_even = Var N_odd (binds neither tiling), the mu vacuum has zero staggered density; no site definite, so every site stays free in CL-2's reading  max |VarE-VarO| at m only 5e-15; stagger at mu only -1e-17; bare m=.6: 0.343/0.343/-0.411; CL-1 m=.6: 0.395/0.395/-0.395; CL-1 mu=.2,m=.2: 1.430/0.335/-0.199
+== C. potential and stiffness of the 3D nested sea's density-wave fold (Hartree, spinless NN repulsion g)
+[PASS] C1 [T+D] simple-cubic density of states from the square-lattice elliptic form; normalisation, <|e|> against a 96^3 grid  rho(0) 0.14267; norm 1.000015; <|e|> 2.00489 vs 2.00485
+[PASS] C2 [T+D] perfect nesting: the gap equation 1 = 3g int rho/E has a solution at EVERY g > 0, ln D* ~ -1/(6 g rho0) (BCS form); the pi-flux Dirac sea folds only above g_c = 1/(3<1/eps>)  D* g=0.15: 2.72e-03, g=0.2: 1.90e-02, g=0.5: 6.41e-01, g=1.0: 2.30e+00; slope -1.168 vs -1.168; g_c 0.732
+[PASS] C3 [T+D] cranking mass of the fold (M = 2 sum |<n|dH|0>|^2/dE^3 per site) has the pole M -> rho0/(12 D^2); released energy W = V0 - V ~ D^2 ln^2(1/D), tending to 3 g rho0^2 D^2 ln^2: the same exponential-plateau class as the 1D toy  M D^2 0.0118894 (rho0/12 0.0118894); pole ratio 4.000; W/(D ln)^2 0.0864, 0.0690, 0.0646 -> 0.0611
+[PASS] C4 [D] slow roll on the computed V and M (chi = zeta int sqrt(M) dD, zeta = (J a)^-1/2/(M_P a_r), J a = sqrt3, M_P a = 1 at the flat rung, N* = 55): n_s = 1 - 2/N independent of g and rung, tiny r, eps = 1 reached before D* (exit)  g=0.5 r0: n_s 0.9631 r 6.2e-06 D_end/D* 0.08; g=0.5 r2: n_s 0.9633 r 3.6e-07 D_end/D* 0.03; g=0.5 r4: n_s 0.9634 r 2.2e-08 D_end/D* 0.01; g=1.0 r0: n_s 0.9631 r 6.3e-06 D_end/D* 0.06; g=1.0 r2: n_s 0.9633 r 3.7e-07 D_end/D* 0.02; g=1.0 r4: n_s 0.9634 r 2.2e-08 D_end/D* 0.01
+[PASS] C5 [T+E] amplitude: A_s = 2.1e-9 fixes the fold rung (supplied g); H/M_P and r follow  g=0.5: V0 0.0145, D* 0.64, rung 18.6, n_s 0.9636, r 3e-17, H/M_P 5.7e-13; g=1.0: V0 0.1673, D* 2.30, rung 20.4, n_s 0.9636, r 3e-18, H/M_P 1.7e-13; Planck n_s 0.9649
+== D. (c) Hubble friction and the CL-3 reading
+[PASS] D1 [T+D] a fold phase summed per proper 4-volume (weight a^3, CL-3's total phase) is stationary only if (a^3 chi')' = -a^3 V': friction exactly 3H (terminal velocity -V'/3H); a phase per CELL (count x8 at splits) damps only at splits and gives a cycle-mean drift 27 ln2/14 = 1.34 times -V'/(3H): friction needs the 4-volume weight  proper-volume weight: v*3H/(-V') 1.0015; per-cell weight: 1.338 (27 ln2/14 1.337)
+[PASS] D2 [R] CL-3 reads departures from 'the update's vacuum', every negative-quasi-energy mode filled: for the bare tick that is the UNFOLDED nested sea, so the plateau's departure is 0 (H = 0, no friction, no e-folds) and the folded vacuum sits at -V0; the clock needs the vacuum standard read from the folded lowest state (then V0 drives H)  departure of the plateau: free-vacuum reading 0, folded reading V0 = 0.1673 per site (g = 1)
+== E. (d) can the split pass the fold order to the children?
+[PASS] E1 [T] momentum mismatch: the parent's nesting vector pi/a_p lifts to pi/a_p or 3pi/a_p (mod the child's 4pi/a_p), never the child's 2pi/a_p; for every coincident nesting offset the child staggering is constant on parent sites, so a passed parent density wave has zero overlap with the child's fold coordinate  lifts (units 1/a_p) [1.0, 3.0] pi; child stagger constant on parent sites: True; overlap 0
+[PASS] E2 [D] child nested sea (40^3 sites): the passed parent pattern releases ~D^2 with no log and leaves the child gapless; the child's own density wave has the log and the full gap. Children are born UNFOLDED (x = 1 in q = 1/8 + 7x/8)  D=0.4: own 0.235/0.400, passed 0.094/0.030; D=0.2: own 0.283/0.200, passed 0.091/0.008; D=0.1: own 0.329/0.100, passed 0.089/0.006 (dE/D^2 / gap)
+supplied: eps = 0.3; Hartree spinless NN repulsion g (0.5, 1); J a = sqrt3; M_P a = 1 at the flat rung; N* = 55; semiclassical FRW; staggered phase m added per half-tick
+elapsed 4.6s
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

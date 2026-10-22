@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/link_dressing_gives_the_one_copy_block_tick_an_unprotected_additive_mass_2026_10_21.py
+runner_sha256: 7fbc704027eb6892086ff2cfad096fa18c426f88f6c34bef5411328e5728fa7a
+input_fingerprint_sha256: 6944f57d7c2f6935613df223a8b787b23aa3bec38ed4f88d9f8d026d8762eb8d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 26.22
+status: ok
+----- stdout -----
+== 1. exact algebra of S
+[PASS] S: 4 light states at Gamma; W U W = U^-1; IP U(K) IP = U(-K)
+[PASS] U = W eps with eps a Hermitian involution, so D = 1 - U obeys W D + D W = D W D, at mu = 0 and mu = 0.04: the relation holds for every mass and forbids none  4.9e-15
+[PASS] G5 = i W IP: Hermitian involution, commutes with the 48 rotation lifts, anticommutes with IP and W, G5 U(K) G5 = U(-K)^-1; it is not a symmetry of S (|[G5, U(K)]| = O(1))  |[G5,U]| = 1.00
+[PASS] minimal coupling: one phase per nested 2^3 cube (= per bond of the block-centre lattice) commutes with W, a phase per site does not; W maps a magnetic configuration to itself and an electric one to its negative (W acts as CT)  |[W, site phases]| = 0.92
+== 2. validation
+[PASS] toy (4 modes, 3 kicks, 2 insertions, 1 quantised mode, omega = 0.9 and 2.2): formula = exact many-body shift for every added particle and removed hole  max rel. dev 3.3e-06
+[PASS] Ward identity: a static pure-gauge configuration (odd- or even-block phases) gives zero second-order shift  3.6e-18
+[PASS] static transverse field on a 12x4x4 torus: exact light-level shifts (pair means) = formula at omega = 0  exact [-0.4112, -0.4095, 0.4095, 0.4112], formula +-0.41036 (units eps^2)
+== 3. S in single static backgrounds (exact diagonalisation, 12x4x4 torus): mass part tr(beta H_eff)/4
+[PASS] S is unprotected even by static backgrounds: magnetic and electric configurations both move the mass part at O(eps^2)  magnetic +0.4103, electric -0.1192 (units eps^2)
+== 4. one loop, units e^2 = 4 pi alpha, quasi-energy per tick (shift of the u doublet = the +mu level)
+[PASS] Coulomb exchange: real-space 8^3 computation (block projectors, full sea) = momentum sum at n = 2  eps_g +0.023438 vs +0.023438
+[PASS] Coulomb exchange with the sea (frame block charges, Gauss law): eps_g = -eps_u (W) and nonzero; n = 8, 12, 16  eps_u = -0.025566, -0.025726, -0.025784 -> -0.02586 (1/n^2)
+[PASS] transverse links (2 polarisations, photon band = lowest positive band of S, extras frozen): delta_g = -delta_u, no g-u mixing, real  delta_u = -0.11473, -0.11510, -0.11540 -> -0.1161
+[PASS] photon-law variants keep the sign: linear dispersion v|q| (n=10); all six non-gauge cube modes dynamical (n=6)  -0.0443, -0.3386
+[PASS] heavy-phase scan fe + fo = pi/2, pi/3, pi/6 (n = 6): the Coulomb shift stays nonzero at each tested gapped choice  -0.0295, -0.0284, -0.0221
+   delta m (u level) = Coulomb -0.0259 + transverse -0.1161 = -0.1419 e^2 = -1.78 alpha per tick  [law range -0.88 .. -4.58 alpha]
+== 5. control: W-glide tick P (odd half-tick = (2,2,2)-translate of W V W), same machinery
+[PASS] P: Coulomb and transverse mass parts vanish identically; only the common (non-mass) shift is nonzero  mass parts 0e+00, 1e-17; common -0.0234
+== 6. overlap tick: H_GW = IP - i W sign(i W H_S), kernel H_S = H_e + H_o(K) with light Wilson mass -0.6
+[PASS] H_GW: Hermitian, W-odd, GW relation exact, chirality X = (G5 - sign)/2 commutes with H_GW; Gamma: 4 light at 0, 60 at +-2; kernel gapped and no light state off Gamma on a 12^3 grid  kernel gap 0.224, min |E|/|K| off Gamma 1.47
+[PASS] H_GW and its tick exp(-i tau H_GW) (tau: speed of S) are quasi-local, not block-local: block amplitudes at 1, 2, 4, 6 blocks never vanish (a Margolus tick stops at 1)  H 2.4e-01, 9.5e-03, 2.7e-03, 2.3e-04; U 8.5e-02, 3.5e-03, 9.3e-04, 8.1e-05
+[PASS] 8^3 torus, random magnetostatic cube phases: [X, H_GW] = 0 exactly, but X does not commute with a block charge  |[X, Pi_block]| = 0.294
+[PASS] overlap tick in single static backgrounds: the magnetic mass part vanishes, the electric one does not  magnetic +2.3e-11, electric -0.2500 (eps^2)
+[PASS] overlap tick dressed at one loop: Coulomb exchange (n=8) and dynamical transverse links (n=6, static part removed: it vanishes by the exact chirality) both give a mass  Coulomb eps_g +0.0705, dynamical +0.0232 (e^2, H_GW units; x c_GW/c_S = 2.59 for alpha)
+== 7. estimates (supplied: site spacing a = 5 l_P, light speed 2 sites per tick -> tick = 10 t_P)
+   electron rest level per tick m_e c^2 tau / hbar = 4.19e-22;  |delta m| = 1.30e-02 per tick (range 6.4e-03 .. 3.3e-02): bare mu must cancel it to 1 part in 3e+19
+   runtime 25.7 s
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

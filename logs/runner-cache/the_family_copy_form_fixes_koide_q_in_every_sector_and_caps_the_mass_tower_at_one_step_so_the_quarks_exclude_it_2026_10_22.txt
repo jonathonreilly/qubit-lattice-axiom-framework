@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/the_family_copy_form_fixes_koide_q_in_every_sector_and_caps_the_mass_tower_at_one_step_so_the_quarks_exclude_it_2026_10_22.py
+runner_sha256: 980c80020c1bafcca865cfd8333d376adc58cfc4550148d32a7466a38bd8435a
+input_fingerprint_sha256: 8ccd196c98f3085ba8e82845904500354410b0b8ead2d12eec6176650a65c1d5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.85
+status: ok
+----- stdout -----
+== A. the suggested routes against CL-1
+[PASS] [T] (a) rung span: CL-1's flat band cos w = A S - (cos2b - cos mu)/2 at K = 0 (S = 1) gives cos w = cos mu, so the rest phase per tick is the mass angle; with the dressed-cone clause mu = m N, the proper rest energy is m at every rung, and spanning more rungs suppresses nothing
+[PASS] [E] (a') a fixed angle per tick instead (mass 2^-n at rung n, integers supplied): no integer pair n <= 30 comes within 1e-3 of the lepton Q, and the closest misses the ratios | best (n2,n3)=(4,13): Q=0.6682, m_mu/m_tau 0.0625 vs 0.0595, m_e/m_tau 1.22e-04 vs 2.88e-04
+[PASS] [T] (c) polar nesting: on a two-tiling cube tick (L = 6, 216 modes, random cube generators) the conjugate family characters (1,1,1)/(2,2,2) have equal spectra if the cube generator keeps cube-centred inversion (T broken) or is real (polar C3v term, T kept); only polar AND complex splits them | max split: P kept 8.9e-16, polar real 1.4e-15, polar complex 1.16
+   the split's nesting is real geometry (T-even) and a uniform split is a pure translation (register), so even where present it cannot split the pair; drift-weighted effect ~ t_tick H ~ 1e-61
+== B. the family copy-form law: sqrt(m) = c (1 - s), s traceless, unit mean square
+[PASS] [T] Q = (3 + 2 S1 + S2)/(3 + S1)^2 for sqrt(m) = 1 + x; S1 = 0, S2 = 3 (traceless, unit mean square) gives Q = 2/3 exactly, for any eigenvectors (signed readout); the same form on CL-1's two copies (1 - s, s^2 = 1) gives Q_2 = 1, one massless copy
+[PASS] [T] the unit-mean-square traceless triples are exactly sqrt2 cos(delta + 2 pi k/3): one free phase per sector
+[PASS] [T] seeded check: 200 random Hermitian s give Q = 2/3 to 1e-12
+[PASS] [T] with only CL-1..CL-3, s is diagonal in the translation characters and cube-centred inversion sets x1 = x2: delta in (pi/3)Z, so sqrt(m) = (1+sqrt2, 1-1/sqrt2, 1-1/sqrt2) (or the signed pi/3 pattern): no three distinct masses | m2/m3 at delta=0: 0.0147, m1 = m2
+[PASS] [T] translation-invariant s_u, s_d share the character eigenbasis: |V| is a permutation for every pair of phases (no mixing), so mixing needs a supplied translation breaker | max off-permutation |V| 8.6e-14
+[PASS] [T] one-step cap: under the copy form m2/m3 lies in [0.0147, 1] and equals (2 - sqrt3)^2 = 0.0718 when m1 = 0; any phase with m1/m2 < 0.1 has m2/m3 > 0.035, so no sector holds a two-step tower (up: 1.7e-3 and 7.4e-3; down: 0.05 and 0.022; leptons 4.8e-3 and 0.060 fit) | min m2/m3 0.0147 (= 0.0147 at delta=0), at m1=0 0.0718, min m2/m3 given m1/m2<0.1: 0.0357
+[PASS] [T] a link-dressed family hop, weight kappa <= 1 (domain-normalised raisers have norm <= 1), gives Q = (1 + kappa^2)/3 <= 2/3: dressing can only lower Q
+== C. the copy form against measurement [M: PDG 2024; NuFIT 6.0; DESI DR2+CMB sum m_nu < 0.064 eV]
+[PASS] [E] charged leptons: Q = 2/3 is the measured value; it predicts m_tau from m_e, m_mu within 1 sigma | Q_meas 0.6666645; m_tau pred 1776.969 vs 1776.93 +- 0.09 MeV
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/land-mass-tower-law/scripts/the_family_copy_form_fixes_koide_q_in_every_sector_and_caps_the_mass_tower_at_one_step_so_the_quarks_exclude_it_2026_10_22.py:135: RuntimeWarning: divide by zero encountered in log
+  fr = [(abs(np.log(me_of(np.pi * pn / qd) / (me / mt))), pn, qd) for qd in range(1, 49) for pn in range(0, 2 * qd)]
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/land-mass-tower-law/scripts/the_family_copy_form_fixes_koide_q_in_every_sector_and_caps_the_mass_tower_at_one_step_so_the_quarks_exclude_it_2026_10_22.py:139: RuntimeWarning: divide by zero encountered in log
+  lee = np.mean([np.min(np.abs(np.log(mof / me_of(t)))) <= bf[0] for t in tg])
+[PASS] [E] the lepton phase (Brannen delta, 2/9 within 2e-5) is no lattice phase: the best pi p/q with q <= 48 misses m_e/m_tau by more than 1%, and a random target is matched that well by some fraction in most cases (look-elsewhere) | delta 0.222239; best pi*66/47: m_e off 3.1%; 1424 fractions; random targets matched as well: 0.95
+[PASS] [E] hierarchy is tuned, not produced: a phase uniform on (0, pi/3) gives m1/m3 <= m_e/m_tau in a few % of cases | fraction 0.077
+[PASS] [E] quarks falsify the copy form: Q_u ~ 0.85-0.89 and Q_d ~ 0.73-0.75 at either scale, above 2/3 (as is the signed readout), so they need kappa > 1, which dressing forbids; and m_c/m_t = 0.0074 is below the copy-form floor 0.0147 | u PDG: Q 0.849 (signed 0.860) +- 0.001, kappa^2 1.55; d PDG: Q 0.731 (signed 0.822) +- 0.001, kappa^2 1.19; u M_Z: Q 0.888 (signed 0.897) +- 0.001, kappa^2 1.66; d M_Z: Q 0.748 (signed 0.833) +- 0.007, kappa^2 1.24; min pull 12 sigma
+[PASS] [E] neutrinos (if the copy form is universal): no all-positive solution; the signed readout gives one normal-ordering solution inside the cosmology bound and one inverted solution outside it | NO: m1 0.364 meV, sum 0.0592 eV; IO: m3 2.92 meV, sum 0.102 eV
+   count: the copy form uses 3 scales + 3 phases (the phases are not in CL-1..CL-3) for 9 charged masses; it predicts the 3
+   Q values (leptons pass, up and down fail by > 5 sigma) and gives no mixing; the SM uses 9 + 4.
+runtime 0.7 s
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

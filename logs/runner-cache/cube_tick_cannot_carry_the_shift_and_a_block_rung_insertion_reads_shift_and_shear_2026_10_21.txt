@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/cube_tick_cannot_carry_the_shift_and_a_block_rung_insertion_reads_shift_and_shear_2026_10_21.py
+runner_sha256: e5bdddfbd9689f71ee39c6d25796faa7cc85505af3cc31fbbcfe787dd64745c9
+input_fingerprint_sha256: 994a9fe627edda0311d767a5a58dd5aac8c4ba2b0392ceefacea32fe7966b8ca
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 12.90
+status: ok
+----- stdout -----
+== A. cube rung (2^3)
+[PASS] A1 sqrt3 W_i and i[N_i, sqrt3 W_i]: six anticommuting generators; copy sign s3 = i sqrt3 sum W_jW_k commutes with the light Dirac algebra, kept by the 12 tetrahedral turns, flipped by the 12 odd; light copy = e^(4 pi i/3) copy | 7e-15
+[PASS] A2 theorem (flow): det U(K) = det U_o det U_e for every reading, so the 8 quasi-energies sum to a constant at each K: a -b drag needs +b on 4 other bands; no copy-blind cube reading tilts the cone | random cube unitaries: spread of sum w 3e-15
+[PASS] A3 theorem: with reflection half-ticks and the light content exact at rest, first-order velocities anticommute with R: +- symmetric spectrum, no shift | random reflections: max |{H_i, R}| 3e-16
+[PASS] A4 theorem (shear sign), any copy-blind massless reading, any step: diag {H1,H2} >= 0 on face-main-diagonal corners, <= 0 on the rest, so no scalar K1K2 term: two degenerate copies cannot be sheared | 6 random readings, |diag| up to 1.37
+[PASS] A5 theorem (cube rung): exact-at-rest readings are insertions S, S^-1 across the two tilings; light image rank 40/48 holds every stretch, shear, rotation, but the shift only with (sqrt3/2)(K2 S3 + K3 S2) per unit K1 shift | rank 40; pure-shift residual 0.7746 = sqrt(3/5); partner coefficients +0.8660, +0.8660
+[PASS] A6 copy mass in every half-tick (old text) splits light helicities as K^2 off the axes; wrapped around the even half-tick (the copy-mass probe's form) no splitting, same rest phases | every: 1.69e-04 at |K| .08 (slope 2.00); even: 2e-15
+== B. block rung: 2x2x2 blocks of cubes, two block tilings offset by one cube
+[PASS] B1 zoom: insertions on blocks of 2x2x2 cubes (2nd block tiling offset by one cube) reach all 48 light terms, the pure shift included: moving whole cubes keeps each site's overlap state | rank 48
+[PASS] B2 X = sum_i J_i (x) (-theta_i + shear), sin 2theta_i = b_i, J_i the cube-pair current, on block tiling 1 after the even half-tick, undone on tiling 2: rest phases exact; all species, both copies drift by -b; det constant | rest 6e-16; tilt/(-b.K): light 0.99998..1.00004, heavy 0.99998..1.00004; helicity split 1e-15
+[PASS] B3 anisotropic box + shift + shear: (w + b.K)^2 = v_i v_j (1 + sigma)_ij K_i K_j, errors second order; massive shear weight sin(eps+mu/2)/(sin eps cos(mu/2))/(c_m/c)^2 = 1 + O(mu/eps) | (tilt, shear) err at 1x 6e-07,5e-03; at 0.1x 2e-07,5e-04; mu/eps 1/6: 1.0877 vs 1.0882
+[PASS] B4 covariance: insertion is a vector/tensor under the 24 block rotations; tick with copy mass keeps the 12 tetrahedral (24 at M = 0); J_i is odd under inversion: the inversion-odd piece | insertion 1e-17, tick 1e-15, odd turns with M: >= 0.46
+== C. packets (one real axis, Bloch along the others)
+[PASS] C1 gravitomagnetism: a packet moving along y in b_y(x) is pushed along x at g K_y w_xx (eikonal of w - b.K; v x curl b as K -> 0); curl-free b_x(x) pushes nothing | massless, massive: lattice/eikonal 1.0022, 0.9976; curl-free/curl -1e-05, -1e-04; eikonal/(g v_y) 1.0151, 1.0150
+[PASS] C2 light in h_xy(z): packets along (1,+-1,0) bend along z at the eikonal rate with opposite signs; the box reading does not bend them | lattice/eikonal 0.9999, 0.9999; box 3e-10, 6e-10; dw/dsigma over continuum v k/2: +0.9973, -0.9973
+== D. coordinator checks
+[PASS] D1 (a) fixed-4-volume (unimodular) gauges: lattice-measured light speeds give 1 + gamma = 2.0000 on every ray and no out-of-plane bending; the box gives 1 + sum k^4 | axis 2.0000/2.0000 face 2.0000/1.5000 face xz 2.0000/1.5000 body 2.0000/1.3333 generic 2.0000/1.4850 (full/box); max |full - 2| 1e-05 incl. 2nd gauge; generic out-of-plane +7e-05/+0.2319 GM/b
+[PASS] D2 (b) parts feel v x B, so a rotor precesses at -B/2; coefficient 1 gives GP-B frame dragging G J cos(dec)/(2 c^2 a^3) = GR and LAGEOS 2GJ/(c^2 a^3) | 39.1 mas/yr (GR papers 39.2); measured/this 0.95 +- 0.18; LAGEOS 30.7 mas/yr, measured 0.99 +- 0.10 of GR
+[PASS] D3 (c) source moving at w = (.12,-.09,.07) through the lattice: lattice-read lapse, shift and cone equal the boosted metric; preferred-frame terms vanish, alpha1 = alpha2 = 0; box: order one | full: alpha1 +1.3e-06, alpha2 +7.6e-07 (from g00: -1.9e-06); box (boosted radial gauge): alpha1 -6.62, alpha2 -0.75 (g00: -2.41)
+== E. earlier results; ESTIMATES (not theorems)
+[PASS] E1 no shift or shear: insertion = 1, static results unchanged; drift -b for every step and mass; shift part spin-blind (g = 2 kept); sheared cone helicity-degenerate; step from lapse and lengths | drag dev over eps .05/.3/1, mu 0/.2: 3e-07; spin commutator 0e+00; sheared helicity split 2e-15
+[PASS] E2 exact reading: sin 2theta = b gives the drift to all orders (below the light speed); for a strong shear (0.15) the hop weights and shear amplitudes fixed by "the light cone is the null cone of the edges" converge: the implicit rule is well posed | drift/b - 1 3e-07 at |b| .15; calibration error 8e-03 1e-04 3e-06
+   shift in the lattice frame ~ 4 U w: galaxy 4e-09 (U ~ 5e-7, w ~ 2e-3), Sun at 1 AU 5e-11, Earth 3e-12
+   cube-rung shift reading (A5) would add (sqrt3/2) b d_ijk K_j S_k: a 3.1 GeV muon gets 11 eV of spin energy against a g-2 precession of 1e-9 eV measured to 2e-7: excluded, hence the block rung
+   copy mass in every half-tick: helicity split 2.64e-02 K^2 at eps .04 -> eta = (c5/v)(a/l_P) ~ 1.1e+01 (a = 10.0 l_P per cube) vs Crab electrons |eta| < ~1e-7: excluded; wrapped around the even half-tick: 1e-15
+   block rung: GP-B, LAGEOS = GR; alpha1 = alpha2 = 0 (LLR 1e-4, pulsars 1.6e-9); residual drift O((E a)^2) ~ 1e-36 at 1 GeV;
+   massive shear weight 1 + O(mu/eps) < 1e-16 off; h_xy is read, so both GW polarisations act with GR antenna patterns
+supplied: CL-1 hop, copy projector, steps, masses, packets, fields, metric gauges, measured numbers; the block tiling one rung up
+  (insertion range: one cube) is a proposal, not derived from the axioms.
+elapsed 13 s
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

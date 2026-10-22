@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/the_cube_tick_sea_induces_neither_a_lorentz_invariant_maxwell_term_nor_a_newtonian_sector_2026_10_21.py
+runner_sha256: 6c90d5133c89b703c52d040aaf148ae8de570828c07e0b3351423e4209de72a3
+input_fingerprint_sha256: f50964407fa85e60753c631308f445269eefb0f8a57a2e071ddb2331f0453237
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 49.86
+status: ok
+----- stdout -----
+== A. engine (exact checks)
+[PASS] A1 all 8 bands obey cos w = A S + (cos2eps + cos mu)/2; U + U^+ = 2 cos w; P_F algebraic, rank 4  2.6e-13
+[PASS] A2 Bloch second-order sums (link phases, bond hop moduli) = exact diagonalisation of the (8 site)^3 torus  max rel dev 1.9e-07 (finite-difference amplitude 1e-3)
+[PASS] A2b theorem: det U is unchanged at second order, so filling the other half (pi-reading) flips the sign of every induced coefficient; positive-energy photons select the 0-reading  (dF + dE)/dF = 6.7e-09
+[PASS] A3 pure-gauge link field gives zero response on the commensurate torus (exact gauge invariance)  3.8e-13 vs 1.6e+00
+[PASS] A4 theorem: every link response is odd under (eps,mu) -> (pi/2-mu/2, pi-2eps), i.e. 0-cone mass mu <-> pi-cone mass pi-2eps; it vanishes at mu = pi-2eps  rel 2.5e-15; at exchange point 3.0e-13
+== B. induced Maxwell term of the CL-2 sea (one species = two Dirac copies)
+[PASS] B1 log coefficient d(1/e^2)/d ln(1/m) = 2/(6 pi^2) (two Dirac copies) for both E and B (eps = 0.05)  E 0.986, B 1.021 x kappa
+   C_E(m) = [1.4008 1.3907 1.3859], C_B(m) = [1.2351 1.2464 1.2535] at m = (0.5, 0.35, 0.25); m -> 0: C_E = 1.3807, C_B = 1.2647
+[PASS] B2 1/e^2_E = kappa[ln(1/m) + C_E], 1/e^2_B = kappa[ln(1/m) + C_B]: the finite parts differ (Lorentz-violating split)  dC = C_E - C_B = 0.1160: induced photon speed^2 = c^2 (L + C_B)/(L + C_E)
+   at m = 0.35: eps=0.05: C_E=+1.391 dC=+0.1443, eps=0.6: C_E=+1.262 dC=+0.1429, eps=1.2: C_E=+0.399 dC=+0.0845, eps=1.4: C_E=-0.477 dC=+0.0247
+[PASS] B3 the split stays positive and falls only as eps -> pi/2 (the pi-cone, mass pi - 2eps, becomes a Pauli-Villars image)  no eps < pi/2 makes the induced Maxwell term Lorentz invariant
+[PASS] B4 near pi/2 the coupling is Pauli-Villars: C_E -> ln(m_pi) with m_pi the pi-cone inverse Compton length  eps = 1.4: C_E - ln(m_pi) = +0.038
+[PASS] B5 signs: 1/e^2 > 0 (positive-energy photons) for mu < pi - 2eps; < 0 (ghost) beyond the exchange point  eps=1.4, m=0.9: -0.0145, -0.0135
+== C. induced gravity (static; R per block per h^2, units of c0 = sin(eps)/sqrt3)
+[PASS] C1 TT strain: gradient term R2 > 0 (positive-energy TT waves), robust to bond vs cube sampling; uniform term R0 < 0  R2 = 0.00945/0.00956 (m = .35/.25) -> 0.00967; cube 0.00998; R0 = -0.3137
+[PASS] C2 static scalar sector: lapse and spatial dilation enter a massless tick only via bond hop / proper time, so their induced forms coincide; numerically ~0 (bond) or < 0 (cube lapse); Einstein needs (0, -4, +4) x R2_TT  R2: lapse(bond) -0.00007, dilation +0.00077, lapse(cube) -0.07187
+[PASS] C3 the TT uniform-strain term falls toward 0 as eps -> pi/2 (exact zero there for the massless sea, D2)  R0(1.45) = -0.1066, R2(1.45) = +0.00202
+== D. vacuum phase Phi = sum of filled quasi-energies per block per tick
+   eps dPhi/deps: 0.02:-0.110, 0.30:-1.620, 0.60:-3.011, 0.90:-3.831, 1.20:-3.466, 1.40:-2.095, 1.50:-0.970, 1.57:+0.000
+[PASS] D1 massless sea: Phi(eps) strictly decreasing, stationary only at eps = pi/2 where Phi = -2pi (0 mod 2pi); there EVERY mode has dw/deps = 0, so the zero is a decoupling of light from the lapse, not a cancellation  Phi(pi/2) + 2pi = 0.0e+00; max dw/deps 0.0e+00 (pi/2) vs 2.00 (0.04)
+[PASS] D2 theorem: at eps = pi/2 the massless sea phase is -2pi for EVERY uniform hop anisotropy (K -> K + R pairing), so its stress and uniform-shear response vanish only there  8.9e-16
+[PASS] D3 mass residual at eps = pi/2: Phi + 2pi = -I0 mu^2 (I0 = 1.157); Hamiltonian-limit sea energy -9.55 c0 per block  I0 = 1.1563, E_vac/c0 = -9.5504
+== E. ESTIMATES with measured numbers (supplied SM charges and masses; not theorems)
+   1/e^2 needed 10.905. eps->0: one copy 5.926 (1/alpha = 74.5); two copies 11.853 (1/alpha = 148.9)
+   two copies match alpha only at eps* = pi/2 - 0.0344 (pi-cone at 1.5e+17 GeV), beyond the eps < 0.04 stability bound; one light + one heavy copy: M_2 = 479 GeV
+   photon speed: fully induced dc/c = -1.4e-03; bare + one loop (one copy) -7.2e-04 unless the clause fixes the dressed photon; LEP 104.5 GeV electrons need |dc/c| < 1e-11
+   gravity: induced TT R2 = 0.00483 c0 per Dirac copy vs Regge 0.5 c0 (site rung): SM (24 Dirac) adds 23% to the TT term and 0 to the Newtonian one -> G_TT/G_N = 0.81 vs Hulse-Taylor 0.998(2)
+   vacuum: eps->0 rho = -2.1e+73 GeV^4 (radiation-like, p = rho/3); at eps = pi/2 the top residual (3 colours) -8.9e+40 vs measured 2.5e-47
+[PASS] E1 arithmetic: 1/alpha(induced, one copy) < 137 < 1/alpha(two copies); fully induced photon misses LEP by > 1e6
+supplied: tick, sea branch, site-phase coupling, straight links, vielbein reading (bond 1/length, proper-time generator,
+  bond or cube sampling), static fields, free sea, SM content and masses, measured hadronic running, a = sqrt(8 pi) l_P.
+elapsed 50 s
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

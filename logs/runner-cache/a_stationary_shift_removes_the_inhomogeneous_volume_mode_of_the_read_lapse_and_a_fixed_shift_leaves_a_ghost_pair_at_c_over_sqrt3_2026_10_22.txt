@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/a_stationary_shift_removes_the_inhomogeneous_volume_mode_of_the_read_lapse_and_a_fixed_shift_leaves_a_ghost_pair_at_c_over_sqrt3_2026_10_22.py
+runner_sha256: 81bfdc59ad8c3849b9165b9fc2f6e0265c1f26694d78c0482191212e8fb0637a
+input_fingerprint_sha256: 069a778a6f5f41fb90bc0aee2a6ee613a21b57a44443d2afbdf2f10bdcc332dc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.76
+status: ok
+----- stdout -----
+== A. the lapse rule as a function of the edges
+[PASS] A1 [T] CL-1 lapse N = sin(eps0)/sqrt(sum_a gamma^aa) linearised: dN/N0 = tr h/6 exactly (rotation-invariant at first order, blind to transverse-vector and tensor parts); on traceless h the second order is -N0 h_ab h_ab/6 | first-order residual 0; traceless second-order residual 0
+[PASS] A2 [T] a lapse N = a^n that is read, not varied, turns the dropped constraint into a conserved fluid with w = n/3: n = 0 (projectable Horava-Lifshitz) dust, n = 1 (CL-1, N = sig l) radiation (= volume-mode A3: dark constant = dark radiation), n = -3 (unimodular) a cosmological constant | w for n = 0, 1, -3: [0, 1/3, -1]
+[PASS] A3 [T] the lapse is not a spatial scalar, so the momentum constraints H_k = 0 are kept only if d_i(H Pi^i_k) = 0, Pi^i_k = 2 gamma_kj dN/dgamma_ij = s Sigma^(-3/2) gamma^ik = N gamma^ik/Sigma; on isotropic cells Pi = (N/3) delta, so d_k(N H) = 0: the dark pressure must be uniform (for unimodular N the same identity gives the known d_k Lambda = 0) | Pi vs closed form 3e-16; Lie-derivative identity at a point 0e+00; isotropic Pi_11 at a = 2: 0.384900 = N/3
+== B. linear scalar sector on flat space (lattice multipliers K, K_R; any k != 0)
+[PASS] B1 [T] control, GR (lapse varied): the lapse equation forces zeta = 0 at every k != 0 and the rest is two gauge directions: no scalar degree of freedom | det 0; gauge directions 2, zeta component 0
+[PASS] B2 [T] (A) fixed lapse, shift stationary: the shift equation is the momentum constraint d_t zeta = 0, and the E equation, which now carries the dropped Hamiltonian constraint times dN/dE, gives d^2(d_t^2 zeta - K_R zeta/3) = 0; together zeta = 0 for every k != 0. The leftover (E, B) direction is a gauge symmetry (a spatial shift xi combined with the time shift d_t alpha = -K xi/3 that keeps N = N(gamma)). No inhomogeneous volume mode exists: no dispersion, no ghost, and the dark constant cannot vary between cells | zeta coefficients in the E and B rows: -4*K*(K_R - 3*omega**2)/3, 4*I*K*omega; det 0; gauge vector (zeta,E,B) = [0, -3*I*omega/(K_R - 3*omega**2), 1]
+[PASS] B3 [T] (B) fixed lapse, shift not varied: two scalar fields (zeta, E) remain with det = -(16K^2/9)(K_R - 3w^2)^2: a DOUBLE root w^2 = K_R/3 (continuum w = k/sqrt3, the Bona-Masso gauge speed sqrt(dlnN/dln sqrt(gamma)) made physical), kinetic matrix of signature (+,-): a propagating ghost scalar paired with a normal one at the same frequency | det = -16*K**2*(K_R - 3*omega**2)**2/9; kinetic matrix det -16*K**2 < 0
+== C. time domain (exact linear evolution, periodic 16^3 lattice modes)
+[PASS] C1 [D] (B) the ghost-normal pair at one frequency is a Jordan block: from zeta(0) = 1e-3 at rest the state (fields and rates) grows linearly in time with exactly conserved total energy (ghost and normal parts cancel), at every lattice k | K=0.15: x212 after 50 periods, x425 after 100, dE/E 1e-11; K=6.00: x1333 after 50 periods, x2666 after 100, dE/E 1e-09; K=12.00: x1885 after 50 periods, x3770 after 100, dE/E 1e-09
+== D. background with a dark constant (case A)
+[PASS] D1 [T] (A) around cells with a uniform dark constant c0 = N H: the kept momentum constraints fix the dark-constant perturbation to dc = (4/3) c0 d^2 E (zeta drops out), force transverse vector strains to vanish (c0 d^2 F_k = 0), and leave tensors free; since N H is conserved at each cell, d_t d^2 E = 0: the pattern is static. The dark constant never propagates between cells, so the photon + two dark quanta channel (volume-mode D2) has no dark quanta | scalar: dc = 4*Et*c0*(-k1**2 - k2**2 - k3**2)/3; transverse vector rows [F1*c0*k3**2/3, F2*c0*k3**2/3, 0]
+[PASS] D2 [T] the same kept constraint gives the tensors a mass term from the dark constant: -N0 h_ab h_ab/6 per unit dark density (A1), i.e. m^2 = (32 pi G/3) rho_D = 4 H_D^2 in the frame of the cells, with H_D^2 = 8 pi G rho_D/3; its sign follows the sign of rho_D (tachyonic for negative dark density; sign convention flagged, not lattice-checked) | coefficient from A1 second order
+== E. estimates against measurement
+[PASS] E1 [E] (B) is excluded: a gravitationally coupled ghost with a Lorentz-violating cutoff makes the vacuum decay to photons + ghosts at Gamma ~ Lambda^8/M_P^4 (Cline-Jeon-Moore 2004: Lambda <~ 3 MeV from the diffuse gamma-ray background); the cell cutoff is Lambda ~ M_P/10, and the lattice terms leave the pair gapless (w -> 0 as k -> 0); even without matter the zero-point amplitude of each cell-scale pair grows by ~t0/l_c | cutoff 1.2e+18 GeV; rate excess over bound ~ (Lambda/3 MeV)^8 = 7e+164; cell-scale Jordan growth over the age 5e+59
+[PASS] E2 [E] (A) passes: no scalar quanta, so no decay channel and no fifth force; the only trace is the global dark radiation (N_eff bounds it below ~0.04 of radiation) and the tensor mass of D2: today m ~ 2 sqrt(Omega_D) H0 against the LIGO bound 1.3e-23 eV; in the radiation era |m^2|/H^2 <~ 0.16, an untested (sign-flagged) superhorizon tensor tilt | m_g today <~ 5e-36 eV; radiation era |m|/H <~ 0.40
+supplied: continuum ADM limit of the hinge sum with lattice multipliers K, K_R (not the frustum hinge sum itself);
+  flat background, linear order; the two shift readings (CL-1 does not say whether the shift is stationary).
+not built: lattice momentum constraints on the edge registers (Regge breaks diffeos off flat cells), nonlinear
+  consistency with a dark constant, the sign of rho_D in D2 from the lattice phase.
+elapsed 1.8 s
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

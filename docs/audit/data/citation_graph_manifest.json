@@ -1,6 +1,6 @@
 {
- "edge_count": 16345,
- "node_count": 7413,
+ "edge_count": 16346,
+ "node_count": 7415,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16982,6 +16982,10 @@
    "deps_hash": "9bc80da04358",
    "out_degree": 3
   },
+  "one_qubit_split_step_walk_relay_source_and_doublers_bounded_theorem_note_2026-10-21": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "one_time_dimension_dt1_reduces_to_emergent_dynamics_gate_open_gate_note_2026-06-17": {
    "deps_hash": "6b456ae72212",
    "out_degree": 3
@@ -19345,6 +19349,10 @@
   "record_iid_typicality_firewall_2026-06-06": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "record_information_accounting_lossless_odds_and_read_once_records_bounded_theorem_note_2026-10-21": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "record_instrument_composite_link_pointer_erasure_exact_slaving_bounded_theorem_note_2026-06-09": {
    "deps_hash": "a3f1c33837e5",

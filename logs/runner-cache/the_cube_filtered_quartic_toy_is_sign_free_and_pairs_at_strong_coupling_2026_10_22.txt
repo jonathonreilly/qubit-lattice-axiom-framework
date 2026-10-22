@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/the_cube_filtered_quartic_toy_is_sign_free_and_pairs_at_strong_coupling_2026_10_22.py
+runner_sha256: 41038e341266e7eb72a338980c3b3b9ac684f164c048749ebab7c207cc1019cc
+input_fingerprint_sha256: cd18ecc337952cbcc1f2e3a756a0f0a14a170a424ba455540fbe83b135d370ac
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 68.91
+status: ok
+----- stdout -----
+== A. sign: weight of a CT-INT configuration (n C-vertices, n C^+-vertices) = g^2n det(M)^4, M real
+[PASS] A1 THEOREM the exact time-ordered trace of every sampled configuration (n = 1, 2, 3; generic real hopping, generic real non-orthogonal filter) equals det(M)^4 >= 0: four flavours share one real determinant, vertex reordering sign +1, so the SU(4) cube-filtered quartic plus any real free band is sign-free at every g, L, beta | max|trace - det^4| 5.4e-16; min trace 2.7e-15
+[PASS] A2 THEOREM-CHECK reality is load-bearing: with a complex (flux) hop the same traces are complex (det^4 of a complex matrix) | max |Im trace| 0.012
+== B. engine vs exact thermal values (3-site ring, 2-site filter, t = 0.3, beta = 3, 12 Fock modes)  [0 s]
+[PASS] B1 FINITE CHECK CT-INT reproduces exact ED: <H_int> and the pair correlator <D_0 D_1^+> (D = c1 c2, conditional estimator G^2) within 4 sigma | <H_int> -1.2171+-0.0128 vs -1.2337; pair 0.0736+-0.0046 vs 0.0682 (20000 sweeps)
+== C. control: 1D ring L = 16, 2-site filter, t = 0, beta = 16 (symmetric by composite-band-3d C5)  [12 s]
+[PASS] C1 DIAGNOSTIC the same estimator in 1D shows exponential pair decay (no plateau): the 3D plateau below is not an artefact | pair(d = 1, 2, 4, 8) 0.1627, 0.0399, 0.0091, 0.0023
+== D. live seeded 3D runs on L^3 tori (fixed sweep counts; g = 1, atom units)  [20 s]
+   L4b4   L=4 t=0.00 beta=4 1500 sweeps: E/term -0.553 | chi_h max 0.51 mean 0.17 | pair(1,1,1) 0.065 pair(rmax) 0.050(0.001) | xi/L 0.387(0.006) | drift 9e-13  [24 s]
+   L4b8   L=4 t=0.00 beta=8 1500 sweeps: E/term -0.614 | chi_h max 0.34 mean 0.12 | pair(1,1,1) 0.072 pair(rmax) 0.059(0.002) | xi/L 0.412(0.004) | drift 3e-11  [36 s]
+   L6b4   L=6 t=0.00 beta=4 900 sweeps: E/term -0.490 | chi_h max 0.80 mean 0.26 | pair(1,1,1) 0.051 pair(rmax) 0.035(0.002) | xi/L 0.429(0.009) | drift 2e-12  [55 s]
+   L4b8t  L=4 t=0.25 beta=8 1200 sweeps: E/term -0.486 | chi_h max 0.79 mean 0.22 | pair(1,1,1) 0.037 pair(rmax) 0.028(0.003) | xi/L 0.460(0.017) | drift 9e-13  [68 s]
+[PASS] D1 FINITE DIAGNOSTIC (no translation order) in every t = 0 run the Q-average of chi_h is <= 0.4 and its largest Q value <= 1.5, and at L = 4 the Q-average falls from beta = 4 to 8; the best product pattern ordered at beta = 8 would give ~18 (beta N sigma^2 / 8 Q) | Q-mean chi_h beta 4 -> 8: 0.17 -> 0.12
+[PASS] D2 FINITE DIAGNOSTIC (pair plateau) at t = 0 the pair correlation is flat beyond one cube: pair(r_max) >= 0.6 pair(1,1,1) and >= 0.025 in every t = 0 run (the 1D control, C1, falls 17-fold from d = 2 to d = 8) | pair(rmax)/pair(1,1,1) 0.78, 0.82, 0.68
+[PASS] D3 FINITE DIAGNOSTIC (ordering trend) at beta = 4 the pair correlation length grows faster than L: xi/L rises by >= 0.02 from L = 4 to 6 | xi/L 0.387(0.006) -> 0.429(0.009)
+[PASS] D4 FINITE DIAGNOSTIC (g/t = 4 drop) at L = 4, beta = 8 a free band t = 0.25 cuts pair(r_max) by more than 1.5x | pair(rmax) t = 0: 0.0590, t = 0.25: 0.0283
+== E. variational ladder at g -> infinity (energy per filtered term)
+[PASS] E1 THEOREM + DIAGNOSTIC best translation-breaking mode-product state (quartimax) > uniform pair state, -2 (K_xx/2)^2 = -1/2 exactly > live QMC thermal energy at L = 4, beta = 8 (an upper bound on the ground energy): products are not competitive | product -0.368; pair state -0.500; QMC -0.614(0.003)
+== F. recorded production values (prod.py, 3.6e3-9e3 sweeps; recorded, not recomputed; no PASS depends on them)
+   recorded production value (not recomputed): xi/L t=0 beta=4: L=4 0.387(4), L=6 0.436(10), L=8 0.521(14); beta=8: 0.417(7), 0.509(9), 0.658(21)
+   recorded production value (not recomputed): pair(rmax) t=0 beta=8: L=4 0.060(2), L=6 0.049(2), L=8 0.048(3); E/term L=4 beta=16 -0.6209(22)
+   recorded production value (not recomputed): g/t=4 beta=8: xi/L L=4 0.451(6) -> L=6 0.299(14); pair(rmax) 0.0275(10) -> 0.0078(22)
+supplied: toy content (4 modes, SU(4)-singlet quartic, not Spin(10)), real NN free band, sizes, betas, seeds, atom units g = 1
+cited: composite-band-3d A1/A3/B1/C5, smg-qmc A1
+elapsed 68.5 s
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

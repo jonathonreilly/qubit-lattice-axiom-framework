@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/no_configuration_or_record_rule_sources_the_response_and_the_copy_mass_sea_motion_is_a_particle_hole_shuttle_2026_10_22.py
+runner_sha256: d9f575bc9e22357a4c7fa613aa6def5b5b700ba3beebc57c628bb18a723e9e68
+input_fingerprint_sha256: 3453d82c31b07b84224fe5222eab3faf65d673dba24dc651efef3909e860944c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.23
+status: ok
+----- stdout -----
+== A. the copy-massed sea at the two half-tick stages (12-site 3x2x2 patch, 8^3 cubes)
+[PASS] A1 finite diagnostic: the copy mass makes the sea's odds differ between half-ticks (zero at M = 0); CL-2 then flips at least TV/12 occupations per site per half-tick (real space = Bloch at 4^3)  TV M=0 4e-16, M=.5 2.99e-03; >= 2.5e-04 flips/site/half-tick
+[PASS] A2 finite diagnostic (exact to rounding): stage 1 is stage 0 with particles and holes exchanged, equally its fourfold turn or yz mirror; PH x fourfold turn and the half turn keep each stage. The forced motion is a period-2 shuttle P -> P o PH -> P  PH: 3e-03/6e-16; R4x: 3e-03/6e-16; Myz: 3e-03/6e-16; PH.R4x: 4e-16/3e-03; R2x: 5e-16/3e-03 (TV to stage 0/1)
+[PASS] A3 consequence: every even-order density statistic (|C_ij|, 4-loops) is the same at both stages; odd orders flip sign, third cumulant of three sites  d|C| 2e-16; 4-loop 1e-19; max|k3| 1.24e-04, k3_0 + k3_1 6e-18
+[PASS] A4 THEOREM (from A2): a region mapped to itself by the fourfold turn has the same count distribution at both stages (P1(N) = P0(n-N) = P0(N)); the shuttle is invisible to every coarse cube count  3x2x2 counts TV 4e-16, 2x2x2 4e-16 (patterns 3.0e-03)
+[PASS] A5 finite diagnostic: the density structure factor is the same at both stages and falls as q^2 (gapped, number conserved): the vacuum configuration's large-scale noise is fixed, and |C| decays exponentially  S(q_1,2,4) 3.01e-03 1.18e-02 4.33e-02; slope 1.97; max|C| at 1..4 cells 2e-01, 2e-03, 3e-03, 2e-04
+== B. one-cube start and the split cascade (antiperiodic, same per-tick angles)
+[PASS] B1 finite diagnostic: on the one-cube start nothing moves (tick mass-blind there); from 2 cubes across the forced rate is set to within 5% by 4 cubes, then fixed: a one-split transient, not a clock  TV 1 cube 1e-15; 2, 3, 4, 8 cubes across: 5.22e-03, 3.58e-03, 3.12e-03, 2.99e-03
+[PASS] B2 finite diagnostic: the rate depends only on the per-tick angles (eps0, mu N, M N): linear in M N at small M, and linear in eps at fixed ratios; CL-1 fixes eps0 and every split cycle repeats the same N(t), so every level gets the same rate (lambda = 1)  M .05, .1: 5.88e-04, 1.10e-03; eps .3, .15: 2.42e-03, 1.23e-03; birth angles (mu, M)/2: 5.94e-03
+== C. what CL-3 sees; B and C-odd parts
+[PASS] C1 THEOREM (CL-1 + CL-2 text): CL-2 never changes the odds and the vacuum odds return every tick, so the odds' departure from the vacuum stays 0 at every k; CL-3 subtracts the vacuum odds at the SAME configuration, so its source is 0 for every configuration: no actuality-only rule (any rate, record reading or cost) seeds anything  |C(3 ticks) - C_vac| 3e-15; created modes 0 vs >= 1e80
+[PASS] C2 THEOREM: the half-ticks are one-body unitaries, so CL-2's transitions conserve the number exactly (Delta B = 0); the only C-odd part is A3's odd cumulants, which flip sign every half-tick and average to 0 over each tick: no CP-odd bias  eta = 0 vs 6.1e-10; tick-mean k3 6e-18
+== D. ESTIMATES vs measurement (not theorems)
+   CL-2 shuttle: >= 2.5e-04 flips/site/half-tick forever; odds departures 0; coarse counts unchanged; lambda = 1; eta = 0
+   escape 1 (records condition the odds at the shuttle rate, ~hbar/tau each): today allows <= 8e-181 per site-tick, 3e+176 below the forced rate, with no rule variable to switch it off
+   escape 2 (CL-3 reads the configuration): coarse cubes see 0 (A4); the static noise S ~ q^2 gives Delta^2 ~ q^5 (n - 1 = 4), and cell-scale noise of 1/4 per site today
+[PASS] D1 arithmetic: the shuttle and both escapes each miss a measured fact (matter, switch-off, n_s, eta)
+supplied: tick and angles, vacuum branch, tori, patches, unit map, measured numbers.
+elapsed 2 s
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

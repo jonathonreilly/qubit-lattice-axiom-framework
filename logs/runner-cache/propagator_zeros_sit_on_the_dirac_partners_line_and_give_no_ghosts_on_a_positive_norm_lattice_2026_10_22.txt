@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/propagator_zeros_sit_on_the_dirac_partners_line_and_give_no_ghosts_on_a_positive_norm_lattice_2026_10_22.py
+runner_sha256: 93d7fe26d5f26e7ba4797d82ef83887fbb0714709f51135e923e6536d689e71a
+input_fingerprint_sha256: f722800957c506cc19fd97093ed14ffb96c3767e84d4a5b3eacd4a0989f1e3de
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.74
+status: ok
+----- stdout -----
+== A. exact algebra (sympy)
+[PASS] A1 THEOREM the elementary propagator of a field b Dirac-paired (mass m) with a charged partner chi has its zero exactly on the partner's bare line z = h_chi(k), and its self-energy m^2/(z - h_chi) has the partner's pole: a zero is a pole of the composite, not an absence | G_bb = (z-h_chi)/((z-h_b)(z-h_chi)-m^2), Sigma = m^2/(z-h_chi)
+[PASS] A2 THEOREM det(z - H) = (z - h_chi) * G_bb^-1: the GS nonlocal kernel m^2 psi (1/D_A) psi (inverse of the zero) has determinant det(full)/det(D_A^chi), i.e. the GS 'bosonic spinor' det^-1(D_A) is exactly the dropped composite's fermion determinant; restoring the composite makes the gauged sector an ordinary massive Dirac fermion
+== B. free lattice, L = 400 antiperiodic, charge 1 on b and chi (Peierls twist theta)
+[PASS] B1 FINITE DIAGNOSTIC (exact free) the gapped b-chi pair has stiffness (1+1D photon mass^2 per e^2) ~ 0: a gapped charged sector decouples | D_full = 0.0e+00, pair gap 1.00
+[PASS] B2 FINITE DIAGNOSTIC the composite chi alone (naive chain, two Weyl nodes) has D_chi = 1/pi > 0, and the GS truncation D_full - D_chi is NEGATIVE: GS's 'zeros lower the photon mass' is exactly the subtracted composite | D_chi = 0.31831 (1/pi = 0.31831), D_GS = -0.31831
+[PASS] B3 FINITE DIAGNOSTIC current spectral function at q = 2pi/L: the full pair has zero weight below its gap (absorptive part starts at 2 Delta); chi alone has positive weight at omega ~ q; so Im Pi_GS = Im Pi_full - Im Pi_chi < 0 at low omega: GS's 'optical-theorem violation' is the composite's particle-hole line with its sign removed | full weight below gap 0.0e+00 (total 5.000e-01), chi weight at node 5.00e-03
+== C. filtered 3450 ladder, L = 3 antiperiodic, corners kept, exact U(1)_3450 twist on both legs
+ sector (Q_A, Q_B, K) = (36, 12, 0), dim 64444; build 0.3 s
+ g=   0: gap 2.000; D_curv 16.6664, D_Kohn 16.6690 (dia 33.331 - para 16.662); J-weight below omega=1: 0.000, lowest J pole 2.000
+ g=   8: gap 1.976; D_curv 16.5207, D_Kohn 16.5234 (dia 33.328 - para 16.805); J-weight below omega=1: 0.000, lowest J pole 1.961
+ g=  16: gap 1.799; D_curv 15.9814, D_Kohn 15.9840 (dia 33.428 - para 17.444); J-weight below omega=1: 0.000, lowest J pole 1.712
+[PASS] C1 THEOREM-CHECK the twisted Hamiltonian is Hermitian and keeps (Q_A, Q_B, K) at every theta (Tong terms are 3450- and Q_B-neutral, so the Peierls phases cancel in momentum conservation): the gauge coupling is exact on the lattice | Hermiticity defect 2.8e-17
+[PASS] C2 THEOREM-CHECK Kohn decomposition D = L(<d2H> - 2<J (H-E0)^-1 J>) equals the curvature of E0(theta) at every g: the induced gauge action IS the positive current spectral sum | max |D_curv - D_Kohn| 2.7e-03
+[PASS] C3 THEOREM-CHECK every current spectral weight is >= 0 and they sum to |J|0>|^2 (Kallen-Lehmann positivity on a positive-norm Hilbert space; for a CL-1 step U = exp(-i eps H) the same weights give a positive-definite Toeplitz autocorrelation), so no ghost (negative weight) can occur | min weight >= -1e-12 (roundoff level)
+[PASS] C4 FINITE DIAGNOSTIC stiffness D(g)/D(0) of the gauged ladder stays positive at g = 8, 16 (GS-ghost class predicts the mirror's share to flip sign; decoupling predicts it to vanish); L = 3 cannot separate the light and mirror shares, so this only bounds, it does not decide | D(g)/D(0) [1.0, 0.991, 0.959]
+== E. measured EM-current spectral function vs the three response classes
+[PASS] E1 ESTIMATE R(e+e- -> hadrons) near sqrt(s) = 30-35 GeV is the measured absorptive part of the EM-current two-point function: decoupling class (light chiral content, mirror gapped above) gives (11/3)(1 + alpha_s/pi); GS-ghost class (zeros cancel the light share, total fermion beta = 0) gives 0; a light mirror gives twice. Measured ~3.9 | decoupling 3.84, ghost 0.0, light mirror 7.67; measured ~3.9 (PETRA/TRISTAN, approx.)
+supplied: Wilson ladder, 3450 charges, Tong vectors, two-site filter, g, L = 3 antiperiodic, twist on Q_A; free toy masses m0 = 0.5, r = 1; alpha_s(30 GeV) = 0.145 and R ~ 3.9 quoted approximately; cited: filtered-smg-1d, GS 2311.12790
+time 4.0 s
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

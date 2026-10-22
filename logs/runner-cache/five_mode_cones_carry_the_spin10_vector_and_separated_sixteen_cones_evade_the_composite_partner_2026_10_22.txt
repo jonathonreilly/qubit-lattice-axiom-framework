@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/five_mode_cones_carry_the_spin10_vector_and_separated_sixteen_cones_evade_the_composite_partner_2026_10_22.py
+runner_sha256: 1f567ac60885ffeb3bfc8c5385d47662a2b54e4d2c34b7bffe2c64feecce4cf5
+input_fingerprint_sha256: 26c99034ee6df0b8eea2c2920c19b9f2fe5d029ad80bdfd70719c22fa6885c3e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.02
+status: ok
+----- stdout -----
+== A. five modes per site: what a cone can carry (exact)
+[PASS] A1 THEOREM the 32-state Fock space of one site is the spinor 16 + 16bar of Spin(10): Casimir 45/4 on every state, even half of dimension 16 | Casimir err 0e+00
+[PASS] A2 THEOREM every fermionic (odd) operator on a site is an SO(10) TENSOR: adjoint Casimir p(10-p) = 9, 21, 25 on degree 1, 3, 5, never the spinor value 45/4; so no single-particle excitation, at a cone or anywhere, carries the 16 | Casimirs {1: [9.0], 3: [21.0], 5: [25.0]}; err 0e+00
+[PASS] A3 THEOREM (Schur) the only Spin(10)-invariant hop between two five-mode sites is sum_a g_a(x) g_a(y), so every invariant free band is H_orb(k) x 1_10 and each cone carries the vector 10; the 10 has an invariant symmetric mass form (real, unprotected), the 16 has none | commutant(10) 1; invariant bilinears 10: 1, 16: 0
+[PASS] A4 THEOREM+DIAGNOSTIC a Spin(10)-invariant (Majorana) band has H(-k) = -H(k)*, det H(k) real, so its zero-energy set has codimension 1: surfaces, not cones; random 4-orbital bands: sign-change counts scale as n^2 (surface) | bands with zero surfaces 4/4; count ratio n=24/12 [4.01, 4.0, 4.19, 4.07] (surface 4, point 1)
+== B. the 16-component reading: one band h(k) x 1_16, light and mirror cones
+[PASS] B1 FINITE DIAGNOSTIC generic cone band (CONE: no symmetry): isolated cones at separated generic momenta, charges sum to 0; no node sits at a quarter point Q (4Q in 2pi Z^3), so the first-order projection of any translation-invariant charge-4 term onto a cone, ell^-3 sum_x exp(4i(k-Q).x), is small | seed 20261022: 8 nodes, chi [1, 1, -1, -1, -1, 1, -1, 1]; |k-Q| [0.81, 0.84, 0.77, 0.25, 0.47, 0.98, 0.7, 1.09]; umklapp factor [0.0, 0.0, 0.001, 0.081, 0.0, 0.0, 0.002, 0.0]
+[PASS] B2 THEOREM pinned two-cone band d(p).sigma (Karsten-Wilczek form on the unimodular map k = (p1-p2, p2-p3, p3), r = 1): zeros only at K = 0 and R = pi(1,1,1), chirality +1 and -1; both are quarter points; x 1_16 this is one 16 per cone | grid zeros/pi [[0.0, 0.0, 0.0], [1.0, 1.0, 1.0]]; chi K 1, R -1
+[PASS] B3 THEOREM (crystal momentum + Spin(10) centre Z4, low-energy constituents) a light-mirror hybridisation psi_L O or psi_L^+ O with O built from mirror fields near Q_M (net number n, |n| <= 7) is allowed iff Q_L = Q_M: the Golterman-Shamir composite partner needs the light cone at the mirror's own quarter point; light at R, mirror at K: forbidden | exhaustive 64 x 64 quarter-point pairs: allowed 64 (all with Q_L = Q_M), mismatches 0
+[PASS] B4 THEOREM Spin(10) on the 16: tr X^3 = 0 (no perturbative anomaly); the centre Z4 acts as a uniform +-i with z^2 = -1, Z16 index 16 = 0; charge-4 invariants: none with one orbital, exactly one (the pair square) with the two-component cone slot, so the mirror's SMG term exists and is unique | |tr X^3| 2e-13; zero-weight dims 40, 640; singlets 0, 1
+[PASS] B5 THEOREM momentum selection without non-locality: the cube-averaged field (range one cube, the zoom kernel) has form factor prod(1 + e^{ip_i})/sqrt8, exactly 0 at R and sqrt8 at K, so a charge-4 term of filtered fields never touches the light R cone (all orders, finite volume) and acts fully on the mirror K cone; for a generic light node kL the range-one complex filter prod(1 - e^{i(p - kL)})/2 does the same | L=4: max|<row, R>| 7e-33, max|<row, K>| 0.354; generic band |F(kL)| 0e+00, |F(kM)| 0.016
+[PASS] B6 FINITE DIAGNOSTIC (CONE genericity) a random local change of max size eps = 0.05 (also in the identity part) moves both cones by O(eps) and keeps their chiralities: the mirror lies |dk| from K (SMG term detuned by 4|dk|, harmless while 4 v |dk| << mirror gap: an open condition, not a tuned point); the light cone gets filter weight |F| ~ prod|dk_i|; the node energies split by dE (a light-cone chemical potential: Fermi pocket, not a mass) | |dk_M| 0.049; |dk_L| 0.065; |F(light)| 2.3e-06; dE 0.030
+[PASS] B7 THEOREM (contrast) same-momentum pairing w (block-quartic, light-partner notes): a symmetric mirror with a propagator zero RELEASES the light mode it was gapping (pole at 0); separated cones: translation sets w(k_L) = 0, nothing was paired, nothing is released, and the light cone is the isolated Weyl node itself | |G_l(i 1e-3)|: free paired 0.0160, SMG mirror paired 1067, separated 1000
+supplied: 5-mode Fock (N=5), random orbital bands (seeded), KW pinned band (r=1), cube filter, eps=0.05, L=4, ell=16
+cited: why-three-dims (CONE), why-five-modes, site-so10 (item 8, A4), light-partner-gap, block-quartic-smg, momentum-selective-mirror, ax7-chirality-16weyl
+not computed: interacting Spin(10) dynamics (SMG gap of the K mirror), gauge links, light-cone chemical potential
+elapsed 2.5 s
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+
